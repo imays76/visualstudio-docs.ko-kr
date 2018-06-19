@@ -1,14 +1,14 @@
 ---
-title: "IJsDebugDataTarget 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IJsDebugDataTarget 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: a9b784d6-958f-4d55-b3f6-c2d6b260a16b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729283"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget 인터페이스
 액세스 하 고 대상 디버거 프로세스의 상태를 변경 하는 기능을 제공 하도록 디버거에 의해 구현 됩니다.  

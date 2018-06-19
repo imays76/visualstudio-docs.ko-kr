@@ -15,6 +15,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704917"
 ---
 # <a name="diff"></a>/Diff
 두 파일을 비교합니다. 차이점은 특별한 Visual Studio 창에 표시됩니다.

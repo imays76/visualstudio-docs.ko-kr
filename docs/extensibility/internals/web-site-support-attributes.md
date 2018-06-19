@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140838"
 ---
 # <a name="web-site-support-attributes"></a>웹 사이트의 지원 속성
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 웹 사이트 프로젝트 프로그래밍 언어 웹에 대 한 지원을 제공 하기 위해 확장할 수 있습니다. 언어를 사용 하 여 등록 해야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 템플릿에 나타날 수 있도록는 **새 웹 사이트** 대화 상자는 언어를 선택 합니다.

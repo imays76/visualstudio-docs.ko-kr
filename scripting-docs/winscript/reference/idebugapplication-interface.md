@@ -1,16 +1,16 @@
 ---
-title: "IDebugApplication 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugApplication 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplication interface
 ms.assetid: 5dfa941b-4cd9-46fa-a230-3f41df9ea205
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727443"
 ---
 # <a name="idebugapplication-interface"></a>IDebugApplication 인터페이스
 언어 엔진 및 호스트에서 사용 하기 위해 원격이 아닌 디버깅 메서드를 노출합니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704202"
 ---
 # <a name="open-solution-command"></a>솔루션 열기 명령
 기존 솔루션을 열고 다른 열려 있는 솔루션을 모두 닫습니다.

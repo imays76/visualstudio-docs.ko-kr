@@ -23,9 +23,10 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "29899947"
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>프로토타입 및 프로토타입 상속
 JavaScript에서 `prototype`은 함수의 속성이며 생성자 함수에서 만든 개체의 속성입니다. 함수의 프로토타입은 개체입니다. 이는 함수가 생성자로 사용될 때 주로 사용됩니다.  

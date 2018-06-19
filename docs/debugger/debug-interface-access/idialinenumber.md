@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465225"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 원본 파일 줄 번호를 이미지 텍스트의 바이트 블록에서 매핑 프로세스를 설명 하는 정보를 액세스 합니다.  

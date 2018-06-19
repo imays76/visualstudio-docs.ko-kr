@@ -1,12 +1,13 @@
 ---
-title: "일부 메서드 (Array) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 일부 메서드 (Array) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript], some method
 - some method [JavaScript]
 ms.assetid: 7b6822f9-c406-4f4e-bfec-a93459745992
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641763"
 ---
 # <a name="some-method-array-javascript"></a>some 메서드(Array)(JavaScript)
 지정 된 콜백 함수 반환 하는지 여부를 결정 `true` 배열의 모든 요소에 대 한 합니다.  

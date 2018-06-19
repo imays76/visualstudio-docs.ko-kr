@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 구독"
+title: Visual Studio 구독
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795320"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 구독
 Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플랫폼 및 장치에서 유용한 응용 프로그램을 만들고 배포하고 관리하는 데 필요한 포괄적인 리소스 집합입니다.  구독 혜택으로는 개발자 도구, 클라우드 서비스 및 소프트웨어, 교육에 대한 액세스와 개발 및 테스트 요구 사항에 대한 지원이 있습니다.

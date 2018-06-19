@@ -1,16 +1,16 @@
 ---
-title: "Windows 스크립트 인터페이스 참조 | Microsoft Docs"
-ms.custom: 
+title: Windows 스크립트 인터페이스 참조 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Windows Script interfaces
 ms.assetid: e87b6b8b-e1ec-4280-a1b8-a8ef2f26cf36
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733963"
 ---
 # <a name="windows-script-interfaces-reference"></a>Windows 스크립트 인터페이스 참조
 다음 섹션에서는 Windows 스크립트 인터페이스를 설명 합니다.  

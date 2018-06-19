@@ -26,6 +26,7 @@ ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30307271"
 ---
 # <a name="variables-javascript"></a>변수(JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]에서 변수에는 “hello” 또는 5라는 값이 포함됩니다. 변수를 사용하면 해당 변수가 나타내는 데이터를 참조합니다(예; `NumberOfDaysLeft = EndDate - TodaysDate`).  

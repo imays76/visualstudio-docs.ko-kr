@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142710"
 ---
 # <a name="localizing-menu-commands"></a>메뉴 명령 지역화
 메뉴에 대 한 지역화 된 텍스트를 제공할 수 있습니다 및 도구 모음 지역화 된.vsct 파일을 작성 하 여 명령 및.resx 파일 VSPackage를 제거한 다음 프로젝트 파일을 업데이트 하 여 변경 내용을 통합에 대 한 지역화 합니다.  

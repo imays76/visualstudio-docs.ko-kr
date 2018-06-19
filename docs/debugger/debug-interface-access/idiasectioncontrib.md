@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465592"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 섹션 기여도 설명 하는 데이터를 검색, 즉, 연속 된 메모리 블록을 제공한 이미지에는 컴파일 대상입니다.  

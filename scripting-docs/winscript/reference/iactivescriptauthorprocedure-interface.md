@@ -1,16 +1,16 @@
 ---
-title: "IActiveScriptAuthorProcedure 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IActiveScriptAuthorProcedure 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptAuthorProcedure interface
 ms.assetid: d1014c46-f14f-4cdc-b79d-a0c8c972b74e
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645633"
 ---
 # <a name="iactivescriptauthorprocedure-interface"></a>IActiveScriptAuthorProcedure 인터페이스
 상속 된 메서드 외에도 `IUnknown`, `IScriptAuthorProcedure` 인터페이스는 다음 메서드를 노출 합니다.  

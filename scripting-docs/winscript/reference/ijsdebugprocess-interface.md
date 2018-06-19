@@ -1,14 +1,14 @@
 ---
-title: "IJsDebugProcess 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IJsDebugProcess 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: a7ad5525-55b7-4c68-a4f7-c508f7877712
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728573"
 ---
 # <a name="ijsdebugprocess-interface"></a>IJsDebugProcess 인터페이스
 검사 하 고 대상 프로세스 제어 루틴을 제공 합니다.  

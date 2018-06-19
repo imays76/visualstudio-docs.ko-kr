@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135068"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>항목에 추가 된 새 항목 추가 대화 상자
 항목을 추가 하기 위한 프로세스는 **새 항목 추가** 레지스트리 키를 가진 대화 상자를 시작 합니다. 경로 이름에서 사용할 수 있게 하는 항목에 있는 디렉터리의 AddItemTemplates 섹션에 포함 되어 다음 레지스트리 항목에 나와 있는 것 처럼는 **새 항목 추가** 대화 상자에 배치 됩니다.  

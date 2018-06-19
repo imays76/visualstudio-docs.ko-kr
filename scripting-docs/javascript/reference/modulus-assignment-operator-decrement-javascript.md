@@ -29,6 +29,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753525"
 ---
 # <a name="remainder-assignment-operator--javascript"></a>나머지 할당 연산자 (JavaScript)
 변수 값을 식 값으로 나누고 나머지를 변수에 할당합니다.  

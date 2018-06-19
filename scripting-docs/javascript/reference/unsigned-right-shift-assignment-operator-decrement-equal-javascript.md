@@ -1,13 +1,13 @@
 ---
-title: "부호 없는 오른쪽 시프트 할당 연산자 (&gt;&gt;&gt;=) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 부호 없는 오른쪽 시프트 할당 연산자 (&gt;&gt;&gt;=) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '>>>='
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - unsigned right shift assignment operator (>>>=)
 - assignment operators, JavaScript
 ms.assetid: f67c3737-7d39-41ae-9c11-8b16d38f6179
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641393"
 ---
 # <a name="unsigned-right-shift-assignment-operator-gtgtgt-javascript"></a>부호 없는 오른쪽 시프트 할당 연산자 (&gt;&gt;&gt;=) (JavaScript)
 부호를 유지하지 않고 변수 값을 식 값에 지정된 비트 수만큼 오른쪽으로 이동하고 결과를 변수에 할당합니다.  

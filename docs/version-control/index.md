@@ -1,8 +1,8 @@
 ---
 layout: LandingPage
-title: "Visual Studio의 버전 제어 | VSTS 및 TFS"
-description: "Visual Studio에서 버전 제어 시작 가이드"
-keywords: "VSTS, TFS, 버전 제어"
+title: Visual Studio의 버전 제어 | VSTS 및 TFS
+description: Visual Studio에서 버전 제어 시작 가이드
+keywords: VSTS, TFS, 버전 제어
 author: steved0x
 ms.manager: douge
 ms.author: sdanie
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795354"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio의 버전 제어
 

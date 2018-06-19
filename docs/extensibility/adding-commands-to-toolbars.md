@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102371"
 ---
 # <a name="adding-commands-to-toolbars"></a>도구 모음에 명령 추가
 도구 모음은 단추 명령에 바인딩된 포함 하는 수평 또는 수직 스트립입니다. Visual Studio에서 여러 다른 windows 도구 모음에 직접 명령을 추가할 수 있습니다: Visual Studio의 주 창, 솔루션 탐색기 및 사용자 고유의 사용자 지정 도구 창입니다.  

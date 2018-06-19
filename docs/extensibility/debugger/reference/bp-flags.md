@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109953"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 중단점을 설정할 때 추가 정보를 지정 하는 데 사용할 수 있는 선택적 플래그를 제공 합니다.  

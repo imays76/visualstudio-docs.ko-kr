@@ -1,13 +1,13 @@
 ---
-title: "부호 없는 오른쪽 시프트 연산자 (&gt;&gt;&gt;) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 부호 없는 오른쪽 시프트 연산자 (&gt;&gt;&gt;) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '>>>'
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - unsigned right shift operator (>>>)
 - '>>> operator'
 ms.assetid: df48bdfc-8741-46ab-b681-449da57ac95c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641643"
 ---
 # <a name="unsigned-right-shift-operator-gtgtgt-javascript"></a>부호 없는 오른쪽 시프트 연산자 (&gt;&gt;&gt;) (JavaScript)
 오른쪽으로 부호를 유지 하지는 식의 비트를 이동 합니다.  

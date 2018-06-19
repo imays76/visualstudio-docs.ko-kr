@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099960"
 ---
 # <a name="command-handling"></a>명령 처리
 편집기에는 새 명령을 정의할 수 있습니다. 명령은 도구 모음 또는 상황에 맞는 메뉴에서 메뉴에 일반적으로 표시 됩니다.  

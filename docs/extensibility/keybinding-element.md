@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139171"
 ---
 # <a name="keybinding-element"></a>KeyBinding 요소
 키 바인딩 요소는 명령에 대 한 바로 가기 키를 지정합니다.  

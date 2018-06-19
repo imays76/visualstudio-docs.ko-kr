@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141722"
 ---
 # <a name="supporting-multiple-document-views"></a>여러 문서 보기를 지원합니다.
 편집기에 대 한 별도 문서 데이터 및 문서 보기 개체를 만들어 문서의 둘 이상의 보기를 제공할 수 있습니다. 추가 문서 보기는 유용할 수 있는 몇 가지 경우가 있습니다.  

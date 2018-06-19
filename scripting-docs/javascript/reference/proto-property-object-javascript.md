@@ -25,6 +25,7 @@ ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/15/2018
+ms.locfileid: "29899577"
 ---
 # <a name="proto-property-object-javascript"></a>__proto__ 속성 (Object) (JavaScript)
 지정된 된 개체의 내부 프로토타입에 대 한 참조를 포함합니다.  

@@ -1,16 +1,16 @@
 ---
-title: "IRemoteDebugApplication 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IRemoteDebugApplication 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IRemoteDebugApplication interface
 ms.assetid: 96bf2a3f-049f-46ba-86ad-57fc184343a2
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729603"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication 인터페이스
 실행 중인 응용 프로그램을 나타냅니다. 운영 체제 프로세스에 맞게 필요는 없습니다. 일반적으로 디버거는 디버깅을 위해 응용 프로그램을 대상 으로합니다. 디버그 프로세스 관리자는 일반적으로 응용 프로그램 개체를 구현합니다.  

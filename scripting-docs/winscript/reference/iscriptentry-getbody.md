@@ -1,11 +1,11 @@
 ---
 title: IScriptEntry::GetBody | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptEntry.GetBody
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptEntry::GetBody
 ms.assetid: 419c8c11-a1f8-4b97-ab00-e8af2b2f9bfc
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729023"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
 본문에 해당 하는 텍스트를 반환 합니다.는 `IScriptEntry` 스크립트 블록, 함수 블록 또는 스크립틀릿 합니다.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30864273"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독
 
@@ -55,7 +56,7 @@ MPSA 고객으로서 MPSA을 통해 구매한 자산을 관리할 수 있는 포
 
 위의 다섯 번째 단락에서 설명한 것처럼 회사 계정이 아닌("Azure AD"(Azure Active Directory)에 등록되지 않은) 이메일을 사용하여 비즈니스 센터에 등록한 경우 테넌트 연결이 약간 달라집니다. 이른 바 “도메인 인수”를 수행해야 합니다. 이 프로세스 동안 사용자 스스로 전역 관리자가 되어 관리되지 않는 테넌트에서 관리되는 테넌트로 변경해야 합니다.
 
-이 프로세스에 대한 자세한 내용은 [빠른 시작 안내](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx)를 참조합니다. 도메인 인수 과정을 안내해 줄 *"온라인 서비스 설치 및 사용"*이라는 가이드를 다운로드합니다. 이 작업이 완료되면 사용자의 구매 계정이 테넌트에 연결됩니다.
+이 프로세스에 대한 자세한 내용은 [빠른 시작 안내](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx)를 참조합니다. 도메인 인수 과정을 안내해 줄 *"온라인 서비스 설치 및 사용"* 이라는 가이드를 다운로드합니다. 이 작업이 완료되면 사용자의 구매 계정이 테넌트에 연결됩니다.
 
 > [!NOTE]
 > 도메인 인수 과정을 완료한 후 사용자는 사전 테넌트 연결(관리되는)에 대한 섹션에서 다섯 단계의 모든 조건을 준수해야 합니다. 이러한 조건이 충족되면 추가 Visual Studio 구독 관리자를 프로비전하기 위해 MPSA 고객 지원 팀에 문의해야 합니다.

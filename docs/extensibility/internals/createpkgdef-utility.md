@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135793"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 유틸리티
 매개 변수로 Visual Studio 확장에 대해.dll 파일을 사용 하 고.dll 함께.pkgdef 파일을 만듭니다. 그렇지 않으면 작성 될 수 있는 시스템 레지스트리에 확장이 설치 될 때 모든 정보를 포함 하는.pkgdef 파일.  

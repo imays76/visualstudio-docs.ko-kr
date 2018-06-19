@@ -1,12 +1,13 @@
 ---
-title: "Object.isSealed 함수 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Object.isSealed 함수 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - isSealed function [JavaScript]
 - Object.isSealed [JavaScript]
 ms.assetid: af4f192e-cebe-44b9-8eef-90c096f5ae8f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642003"
 ---
 # <a name="objectissealed-function-javascript"></a>Object.isSealed 함수(JavaScript)
 개체에서 기존 속성 특성을 수정할 수 없고 개체에 새 속성을 추가할 수 없으면 `true`를 반환합니다.  

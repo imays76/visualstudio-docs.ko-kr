@@ -1,13 +1,13 @@
 ---
-title: "substr 메서드 (String) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: substr 메서드 (String) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substr
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - substr method
 ms.assetid: f12541c1-2623-482e-941d-2e22bc3c4a4a
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640033"
 ---
 # <a name="substr-method-string-javascript"></a>substr 메서드(String)(JavaScript)
 지정된 된 위치에서 시작 하 고 지정 된 길이가 부분 문자열을 가져옵니다.  

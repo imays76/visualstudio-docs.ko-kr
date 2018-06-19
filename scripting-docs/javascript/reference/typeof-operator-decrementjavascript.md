@@ -27,6 +27,7 @@ ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/15/2018
+ms.locfileid: "29899632"
 ---
 # <a name="typeof-operator-javascript"></a>typeof 연산자(JavaScript)
 식의 데이터 형식을 식별하는 문자열을 반환합니다.  
