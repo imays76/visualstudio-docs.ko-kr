@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924306"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>방법: 코드 분석 사전 사용자 지정
 코드 분석은 기본 제공 사전 검사 오류 맞춤법, 문법 대/소문자 및의 다른 명명 규칙에 대 한 코드의 식별자를 사용 하 여는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 지침입니다. 사용자 지정 사전 Xml 파일을 추가, 제거 또는 수정 용어, 약어 및 기본 제공 된 사전에 머리 글자어를 만들 수 있습니다.

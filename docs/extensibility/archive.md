@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097213"
 ---
 # <a name="archive"></a>보관
 이 섹션에는 계속 지원 하지만 최신인 교체 기술 않는 Visual Studio 확장성 기술에 대해 포함 되어 있습니다.  

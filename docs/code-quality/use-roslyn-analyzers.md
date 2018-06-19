@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925122"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>구성 하 고 Roslyn 분석기 규칙 사용
 

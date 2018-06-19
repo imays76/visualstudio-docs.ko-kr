@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947302"
 ---
 # <a name="properties-window"></a>속성 창
 이 창을 사용하여 편집기 및 디자이너에 있는 디자인 타임 속성 및 선택된 개체의 이벤트를 변경할 수 있습니다. **속성** 창을 사용하여 파일, 프로젝트 및 솔루션 속성을 편집하고 볼 수도 있습니다. **보기** 메뉴에서 **속성 창**을 찾을 수 있습니다. F4 키를 누르거나 **빠른 실행** 창에서 **속성**을 입력하여 열 수도 있습니다.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105569"
 ---
 # <a name="operational-modes"></a>작업 모드
 세 가지 모드는 IDE 작동할 수, 다음과 같습니다.  

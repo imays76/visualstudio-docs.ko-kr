@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101263"
 ---
 # <a name="notifying-the-port"></a>포트에 게 알리는
 프로그램을 시작한 후 포트 알림을 받아야, 다음과 같습니다.  

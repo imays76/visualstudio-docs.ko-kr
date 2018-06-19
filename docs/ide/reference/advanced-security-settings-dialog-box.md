@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943038"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>고급 보안 설정 대화 상자
 이 대화 상자를 사용하면 영역 디버깅과 관련된 보안 설정을 지정할 수 있습니다.

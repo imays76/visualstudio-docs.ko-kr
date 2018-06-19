@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101890"
 ---
 # <a name="com-constants-in-managed-code"></a>관리 코드에서 COM 상수
 관리 되는 패키지 프레임 워크 (MPF)를 사용 하면 일부 표준 COM 상수 관리 되는 코드에서 사용할 수 있습니다. 이러한 상수는 참조할 수 있도록 아래 나와 있습니다.  

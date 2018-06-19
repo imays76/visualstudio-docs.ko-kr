@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947432"
 ---
 # <a name="list-threads-command"></a>스레드 목록 표시 명령
 현재 프로그램의 스레드 목록을 표시합니다.

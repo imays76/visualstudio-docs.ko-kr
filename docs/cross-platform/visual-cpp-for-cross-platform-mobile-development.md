@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066636"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>플랫폼 간 모바일 개발용 Visual C++
 플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS, Android 및 Windows 장치용 네이티브 C++ 앱을 빌드하고 iOS, Android 및 Windows용으로 빌드된 라이브러리의 공통 코드를 공유할 수 있습니다. 이는 공유 라이브러리 및 네이티브 앱의 플랫폼 간 개발에 필요한 도구와 SDK를 설치하는, Visual Studio 2015에서 사용할 수 있는 옵션입니다. 설치된 경우 Visual C++를 사용하여 iOS 및 Android 장치와 플랫폼, Windows, Windows Phone 및 Xbox에서 실행되는 코드를 만들 수 있습니다.  

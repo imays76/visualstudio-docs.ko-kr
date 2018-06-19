@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926968"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>C/c + +에 대 한 빠른 시작: 코드 분석
 

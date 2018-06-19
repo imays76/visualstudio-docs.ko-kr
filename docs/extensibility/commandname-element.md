@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097616"
 ---
 # <a name="commandname-element"></a>CommandName 요소
 `CommandName` 키보드 범주에 표시 되는 텍스트를 지정 하는 요소는 **옵션** 대화 상자 및는 **명령을** 목록에 **사용자 지정** 대화 상자 상자입니다.  

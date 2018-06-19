@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942580"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 간단한 설명과 함께 `devenv` 스위치를 모두 나열하는 메시지 상자를 표시합니다.

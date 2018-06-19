@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925978"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거
 A *서비스 참조* 하면 하나 이상의 액세스 하려면 프로젝트 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]합니다. 사용 하 여는 **서비스 참조 추가** 대화 상자를 검색할 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 인터넷 또는 로컬 영역 네트워크에서 로컬에서 현재 솔루션의 합니다.

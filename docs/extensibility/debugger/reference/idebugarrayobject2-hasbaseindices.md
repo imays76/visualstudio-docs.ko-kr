@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099098"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 배열에 정의 된 기본 인덱스 (하위 범위)를 포함 하는 경우를 결정 합니다.  

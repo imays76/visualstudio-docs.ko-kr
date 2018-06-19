@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100181"
 ---
 # <a name="buttontext-element"></a>ButtonText 요소
 이 필드를 사용 하면 다양 한 메뉴에 표시 되는 텍스트를 지정할 수 있습니다. 기본적으로는 `ButtonText` 요소 메뉴 컨트롤러에 나타납니다. `ButtonText` 다른 텍스트 필드가 비어 있으면도 요소의 기본값이 됩니다. `ButtonText` 다른 텍스트 필드가 지정 된 경우에 요소를 비워 둘 수 없습니다.  

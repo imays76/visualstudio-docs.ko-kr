@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103879"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 이 인터페이스는 코드 명령의 시작 위치를 나타냅니다. 대부분 런타임 아키텍처에 대 한 현재 코드 컨텍스트 생각할 수 있습니다 프로그램의 실행 스트림의 주소로 합니다.  

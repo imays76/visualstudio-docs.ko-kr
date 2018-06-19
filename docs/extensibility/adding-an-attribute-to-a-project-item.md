@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104539"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>프로젝트 항목에 특성 추가
 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 가져오고 프로젝트 항목의 특성 값을 설정 합니다. SetItemAttribute 특성을 만듭니다는 이미 존재 하지 않는 경우 프로젝트의 항목 메타 데이터에 추가 합니다.  

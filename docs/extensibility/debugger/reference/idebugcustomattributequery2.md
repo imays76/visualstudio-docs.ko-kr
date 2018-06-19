@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107623"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 이 필드에 대 한 사용자 지정 특성의 존재를 확인 하 고 있는 경우 특성 정보를 반환 합니다.  

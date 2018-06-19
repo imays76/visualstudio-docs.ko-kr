@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100686"
 ---
 # <a name="creating-a-custom-start-page"></a>사용자 지정 시작 페이지 만들기
 이 문서의 단계를 수행 하 여 사용자 지정 시작 페이지를 만들 수 있습니다.  

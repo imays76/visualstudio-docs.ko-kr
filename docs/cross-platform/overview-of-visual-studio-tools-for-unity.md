@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31065555"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 개요
 이 섹션에서는 Visual Studio Tools for Unity가 제공하는 기능과 Unity를 사용하여 생산성을 높일 수 있는 방법에 대해 알아봅니다.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104097"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>시작 페이지에 사용자 정의 컨트롤 추가
 이 연습에서는 사용자 지정 시작 페이지에 대 한 DLL 참조를 추가 하는 방법을 보여 줍니다. 이 예제에서는 솔루션에 사용자 정의 컨트롤 사용자 정의 컨트롤을 빌드하고 시작 페이지.xaml 파일에서 빌드된 어셈블리를 참조 하는 다음을 추가 합니다. 새 탭의 기능을 기본 웹 브라우저 사용자 정의 컨트롤을 호스팅합니다.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31065597"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>플랫폼 간 모바일 개발 예제
 플랫폼 간 모바일 개발용 Visual C++에 의해 설치된 템플릿 중 일부는 학습에 사용할 수 전체 예제를 생성합니다. 또한 Windows 개발자 센터에는 다운로드하여 Visual Studio에서 사용해 볼 수 있는 여러 가지 예제 응용 프로그램이 있습니다.  

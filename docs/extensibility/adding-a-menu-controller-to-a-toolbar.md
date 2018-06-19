@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104633"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>도구 모음에 메뉴 컨트롤러 추가
 이 연습은 [도구 창에는 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 연습 및 도구 창 도구 모음에 메뉴 컨트롤러를 추가 하는 방법을 보여 줍니다. 여기에 나와 있는 단계도 적용할 수에서 생성 된 도구 모음에는 [도구 모음 추가](../extensibility/adding-a-toolbar.md) 연습 합니다.  

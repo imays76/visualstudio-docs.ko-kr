@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097785"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 텍스트 보기에 액세스
 텍스트 뷰는 텍스트 버퍼에 저장 된 텍스트를 표시 합니다. 다음 섹션에 나와 있는 것 처럼 레거시 API를 사용 하 여 텍스트 보기에 액세스할 수 있습니다.

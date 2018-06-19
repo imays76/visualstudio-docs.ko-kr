@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924293"
 ---
 # <a name="save-a-dataset-as-xml"></a>데이터 집합을 XML로 저장 합니다.
 

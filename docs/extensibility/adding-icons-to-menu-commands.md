@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098394"
 ---
 # <a name="adding-icons-to-menu-commands"></a>메뉴 명령에 아이콘 추가
 명령 메뉴 및 도구 모음을 둘 다에 나타날 수 있습니다. 이 도구 모음에서 일반적으로 아이콘 및 텍스트와 함께 표시 되며 명령 아이콘만 (공간을 절약 하려면) 하는 동안 메뉴에 함께 표시 되도록 하려면 명령에 대 한 일반적입니다.  
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
     -   설정의 `guid` 값의 이름으로는 `<GuidSymbol>` 이전 단계에서 만든 요소입니다.  
   
-    -   설정의 `href` 값 비트맵 파일의 상대 경로입니다 (이 경우 **리소스\\< 아이콘 파일 이름\>**합니다.  
+    -   설정의 `href` 값 비트맵 파일의 상대 경로입니다 (이 경우 **리소스\\< 아이콘 파일 이름\>** 합니다.  
   
     -   설정의 `usedList` 값 앞에서 만든 IDSymbol입니다. 이 특성에는 VSPackage에 사용할 아이콘의 쉼표로 구분 된 목록을 지정 합니다. 목록에 없는 아이콘이는 제외 된 폼을 컴파일하지 않습니다.  
   

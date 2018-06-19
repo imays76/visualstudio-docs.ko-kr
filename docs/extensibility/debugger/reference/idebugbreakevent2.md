@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103298"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 이 인터페이스는 비동기 나누기가 성공적으로 완료 되었습니다 세션 디버그 관리자 (SDM)을 알려 줍니다.  

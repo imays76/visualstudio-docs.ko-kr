@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947601"
 ---
 # <a name="project-and-solution-file-types"></a>프로젝트 및 솔루션 파일 형식
 

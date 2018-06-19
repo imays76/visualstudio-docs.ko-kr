@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942772"
 ---
 # <a name="symbol-path-command"></a>기호 경로 명령
 디버거에서 기호를 검색할 디렉터리 목록을 설정합니다.

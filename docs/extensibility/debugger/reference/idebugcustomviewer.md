@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107542"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 이 인터페이스를 사용 하는 식 계산기 (EE)에 어떤 형식이 필요한 속성의 값을 표시 합니다.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942656"
 ---
 # <a name="keyboard-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 키보드
 이 페이지를 사용하여 키보드 매핑을 설정할 수 있습니다. 매핑에 대한 자세한 내용은 [바로 가기 키 식별 및 사용자 지정](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)을 참조하세요.

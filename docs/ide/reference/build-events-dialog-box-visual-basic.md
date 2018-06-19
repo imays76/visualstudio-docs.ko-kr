@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944137"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>빌드 이벤트 대화 상자(Visual Basic)
 **빌드 이벤트** 대화 상자를 사용하여 빌드 구성 지침을 지정합니다. 또한 빌드 전후 이벤트를 실행할 조건을 지정할 수 있습니다. 자세한 내용은 [방법: 빌드 이벤트 지정(Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)을 참조하세요.

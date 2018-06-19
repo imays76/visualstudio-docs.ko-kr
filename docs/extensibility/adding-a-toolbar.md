@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100233"
 ---
 # <a name="adding-a-toolbar"></a>도구 모음 추가
 이 연습에서는 Visual Studio IDE에 도구 모음을 추가 하는 방법을 보여 줍니다.  

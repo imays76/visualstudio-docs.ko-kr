@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102150"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>도구 창 확장 만들기
 이 절차의 VSIX 프로젝트 템플릿을 사용 하는 방법을 배웁니다 및 **사용자 지정 도구 창** 항목 템플릿을 확장 프로그램을 만들려면 도구 창을 사용 합니다.  

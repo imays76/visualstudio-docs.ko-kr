@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947848"
 ---
 # <a name="t4-text-template-directives"></a>T4 텍스트 템플릿 지시문
 지시문은 텍스트 템플릿 변형 엔진에 명령을 제공합니다.

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099215"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace(Visual Studio 템플릿)
 프로젝트를 만들 및 지정된 된 위치에 매개 변수 대체를 수행 하거나 임시 위치에 매개 변수 대체를 수행 하 고 지정된 된 위치에 프로젝트를 저장 한 다음 것인지 지정 합니다.  

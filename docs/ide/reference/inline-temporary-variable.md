@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945612"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>임시 변수 인라인 리팩터링
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925044"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>관리 코드에 대한 보안 규칙 규칙 집합
 Microsoft 보안 규칙 규칙 집합을 보고 되는 잠재적 보안 문제의 수를 최대화 하기 위해 포함 되어야 합니다.

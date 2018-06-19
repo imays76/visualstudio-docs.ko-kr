@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105293"
 ---
 # <a name="creating-custom-editors-and-designers"></a>사용자 지정 편집기 및 디자이너 만들기
 Visual Studio 통합된 개발 환경 (IDE)는 다양 한 유형의 편집기를 호스팅할 수 있습니다.  

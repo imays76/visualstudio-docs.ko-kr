@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947120"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 웹 브라우저
 내부 웹 브라우저 및 Internet Explorer에 대한 옵션을 설정합니다. 이 대화 상자에 액세스하려면 **도구** 메뉴에서 **옵션**을 클릭하고, **환경** 폴더를 확장하고, **웹 브라우저**를 선택합니다.

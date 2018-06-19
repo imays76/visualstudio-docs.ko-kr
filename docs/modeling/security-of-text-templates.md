@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947523"
 ---
 # <a name="security-of-text-templates"></a>텍스트 템플릿 보안
 텍스트 템플릿은 다음과 같은 보안 문제가 있습니다.

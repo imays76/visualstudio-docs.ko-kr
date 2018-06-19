@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106050"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>소스 제어 플러그 인을 구현 하기 위한 모범 사례
 다음 기술 세부 정보 수 안정적으로 구현할 수는 소스 제어 플러그 인에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  

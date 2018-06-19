@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944413"
 ---
 # <a name="application-property-page-uwp-projects"></a>응용 프로그램 속성 페이지(UWP 프로젝트)
 

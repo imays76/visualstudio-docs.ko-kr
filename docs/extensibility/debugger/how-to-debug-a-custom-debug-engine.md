@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106983"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>방법: 디버깅 하는 사용자 지정 디버그 엔진
 디버그 엔진 (DE)를 시작 하는 프로젝트 형식에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> 메서드. 즉, 인스턴스의 제어는 DE가 시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 형식을 제어 합니다. 그러나의 해당 인스턴스에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 DE를 디버깅할 수 없습니다. 다음은 사용자 지정 사용자 DE 디버깅할 수 있도록 하는 단계입니다.  
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  첫 번째 인스턴스에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (DE 프로젝트)를 선택 **프로세스에 연결** 에서 **디버그** 메뉴.  
   
-8.  에 **프로세스에 연결** 대화 상자에서 변경 된 **전송** 를 **원격 (네이티브만 인증 안 함)**합니다.  
+8.  에 **프로세스에 연결** 대화 상자에서 변경 된 **전송** 를 **원격 (네이티브만 인증 안 함)** 합니다.  
   
 9. 변경 된 **한정자** 컴퓨터의 이름으로 (참고:이 이름에 한 번만 입력 해야 할 항목의 기록을 이므로).  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 일반 레지스트리 하이브 및 부하에 프로젝트 (이것은, 원본으로 사용할 프로젝트 형식, 프로젝트 형식의 인스턴스화 하지)을 입력 합니다.  
   
-2.  프로젝트 속성을 열고로 이동 된 **디버그** 페이지. 에 대 한는 **명령**, 경로를 입력는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (기본적으로이 *[드라이브]*files\microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2.  프로젝트 속성을 열고로 이동 된 **디버그** 페이지. 에 대 한는 **명령**, 경로를 입력는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (기본적으로이 *[드라이브]* files\microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
 3.  에 대 한는 **명령 인수**, 형식 `/rootsuffix exp` 실험 레지스트리 하이브에서 (VSIP를 설치할 때 만든)에 대 한 합니다.  
   

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926326"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용 하는 c + +를 사용 하 여 디버그
 

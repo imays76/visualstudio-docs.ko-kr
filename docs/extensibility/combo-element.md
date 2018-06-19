@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100941"
 ---
 # <a name="combo-element"></a>콤보 요소
 콤보 상자에 표시 되는 명령을 정의 합니다. 다음과 같이 네 가지 유형의 콤보 상자, 가지 있습니다: DropDownCombo, DynamicCombo, IndexCombo, 및 MRUCombo 합니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100379"
 ---
 # <a name="attaching-directly-to-a-program"></a>프로그램에 직접 연결
 일반적으로 이미 실행 중인 프로세스에서 프로그램을 디버깅 하려는 사용자는이 프로세스를 따릅니다.  

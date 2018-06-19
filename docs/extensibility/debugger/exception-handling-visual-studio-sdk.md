@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100792"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>예외 처리 (Visual Studio SDK)
 다음 예외가 throw 되 면 발생 하는 프로세스에 설명 합니다.  

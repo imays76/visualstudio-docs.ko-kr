@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099085"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>명령의 모양 변경
 명령의 모양을 변경 하 여 여 사용자에 게 피드백을 제공할 수 있습니다. 예를 들어 명령을 사용할 수 없는 경우 다른 모양으로 좋습니다. 사용 가능 여부가 명령을 확인, 숨기기 또는 표시 하거나 수 있습니다, 또는 확인 메뉴에서의 선택을 취소 합니다.  

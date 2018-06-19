@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926703"
 ---
 # <a name="query-datasets"></a>쿼리 데이터 집합
 데이터 집합의 특정 레코드를 검색 하려면 FindBy 메서드를 사용 하 여 DataTable에서, 테이블의 행 컬렉션을 반복 하거나 사용 하 여 해당 하는 foreach 문을 작성 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)합니다.

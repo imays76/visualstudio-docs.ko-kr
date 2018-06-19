@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098325"
 ---
 # <a name="mtaskid-field"></a>m_taskId 필드
 에 대 한 지원 필드는 <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> 속성입니다.  

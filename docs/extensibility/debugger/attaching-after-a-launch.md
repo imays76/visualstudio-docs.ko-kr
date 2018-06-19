@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104708"
 ---
 # <a name="attaching-after-a-launch"></a>연결을 시작한 후
 프로그램 시작 되었습니다 후 디버그 세션을 언급된 프로그램 디버그 엔진 (DE) 연결할 수 있습니다.  

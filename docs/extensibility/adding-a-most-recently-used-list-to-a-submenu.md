@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105267"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>하위 메뉴에는 목록에 사용 되는 가장 최근에 추가
 이 연습에서 데모에 빌드 [하위 메뉴는 메뉴에 추가](../extensibility/adding-a-submenu-to-a-menu.md), 동적 목록을 하위 메뉴에 추가 하는 방법을 보여 줍니다. 동적 목록 mru (가장 최근에 사용 됨) 목록이 만들기 위한 기본을 형성 합니다.  

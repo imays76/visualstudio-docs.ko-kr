@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100288"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>중단 모드에 있는 식 계산
 다음 디버거가 중단 모드에 있는 식 평가 수행 해야 하는 경우 발생 하는 프로세스를 설명 합니다.  

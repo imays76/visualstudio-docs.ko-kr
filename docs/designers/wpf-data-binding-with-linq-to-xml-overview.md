@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925158"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML로 WPF 데이터 바인딩 개요
 

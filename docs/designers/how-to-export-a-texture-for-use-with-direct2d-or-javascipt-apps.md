@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925014"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>방법: Direct2D 또는 Javascript 앱과 함께 사용하기 위해 질감 내보내기
 이미지 콘텐츠 파이프라인은 Direct2D의 내부 렌더링 규칙에 부합되는 질감을 생성할 수 있습니다. 이 종류의 질감은 Direct2D를 사용하는 앱 및 JavaScript를 사용하여 만든 UWP 앱에서 사용하는 데 적합합니다.

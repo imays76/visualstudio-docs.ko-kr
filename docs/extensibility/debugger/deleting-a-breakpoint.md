@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104432"
 ---
 # <a name="deleting-a-breakpoint"></a>중단점 삭제
 다음 프로세스 보류 중단점을 삭제할 때 설명.  

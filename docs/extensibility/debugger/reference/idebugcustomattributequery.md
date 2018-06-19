@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105127"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 메서드 또는 형식에 사용자 지정 특성에 대 한 쿼리를 나타냅니다.  
