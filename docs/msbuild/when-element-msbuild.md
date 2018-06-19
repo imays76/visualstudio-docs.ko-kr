@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577791"
 ---
 # <a name="when-element-msbuild"></a>When 요소(MSBuild)
 `Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다.  

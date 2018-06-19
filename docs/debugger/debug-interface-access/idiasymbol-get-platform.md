@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470958"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
 컴파일 대상 컴파일한 플랫폼 형식을 검색 합니다.  

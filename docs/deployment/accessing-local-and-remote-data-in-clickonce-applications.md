@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562756"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce 응용 프로그램의 로컬 및 원격 데이터 액세스
 대부분 응용 프로그램에서는 데이터를 사용하거나 생성합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서는 로컬에서 또는 원격으로 데이터를 읽고 쓰는 다양한 옵션을 제공합니다.  

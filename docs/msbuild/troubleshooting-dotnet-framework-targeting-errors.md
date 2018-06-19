@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571359"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework 대상 지정 오류 문제 해결
 이 항목에서는 참조 문제로 인해 발생할 수 있는 MSBuild 오류와 이러한 문제를 해결하는 방법을 설명합니다.  

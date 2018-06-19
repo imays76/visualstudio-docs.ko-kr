@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265777"
 ---
 # <a name="inside-the-editor"></a>편집기 내부에서
 편집기는 다양 한 텍스트 보기 및 사용자 인터페이스에서 텍스트 모델 별도로 편집기를 관리 하도록 설계 된 다른 하위 시스템 구성 됩니다.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31469700"
 ---
 # <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
 행렬 또는 strided 배열의 진행 속도 검색합니다.  

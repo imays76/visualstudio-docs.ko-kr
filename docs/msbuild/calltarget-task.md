@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571674"
 ---
 # <a name="calltarget-task"></a>CallTarget 작업
 프로젝트 파일 내의 지정된 대상을 호출합니다.  

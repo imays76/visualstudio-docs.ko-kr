@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482037"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>호출 스택 보기 및 Visual Studio 디버거에서 호출 스택 창 사용
 
@@ -108,7 +109,7 @@ Visual Studio Enterprise (전용)를 사용 하는 경우 디버그 하는 동�
 
 ## <a name="change-the-optional-information-displayed"></a>표시 되는 선택적 정보를 변경 합니다.  
   
--   마우스 오른쪽 단추로 클릭는 **호출 스택** 창 및 세트나 clear **표시 \< ***정보를***>**합니다.  
+-   마우스 오른쪽 단추로 클릭는 **호출 스택** 창 및 세트나 clear **표시 \< ***정보를***>** 합니다.  
   
 ## <a name="bkmk_symbols"></a> 모듈에 대 한 기호 로드
 에 **호출 스택** 창에서 기호가 로드 현재 되어 하지 않은 코드에 대 한 디버깅 기호를 로드할 수 있습니다. 이러한 기호는 Microsoft 공용 기호 서버에서 다운로드한 .NET Framework 또는 시스템 기호일 수도 있고 디버깅 중인 컴퓨터의 기호 경로에 있는 기호일 수도 있습니다.  

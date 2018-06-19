@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570745"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 작업
 XML 파일에서 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.  

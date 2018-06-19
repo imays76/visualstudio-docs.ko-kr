@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447819"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>방법: 편집기의 글꼴 및 색 변경
 코드 편집기에서 다양한 텍스트 **표시 항목**의 기본 글꼴을 변경하고, 글꼴 크기를 조정하고, 전경색 및 배경색을 변경할 수 있습니다. 글꼴 설정을 변경할 경우 다음 정보를 고려하세요.

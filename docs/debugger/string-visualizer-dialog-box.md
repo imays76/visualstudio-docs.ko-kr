@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476977"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Visual Studio에서 문자열 시각화 도우미에 문자열을 봅니다.
 디버깅 하는 동안 너무 길어 데이터 팁 또는 디버거 창에서 볼 수 있는 보기 문자열을 문자열 시각화 도우미를 열 수 있습니다. 대부분의 시나리오에서 시각화 도우미 하는 데 도움이 잘못 된 형식의 문자열을 식별 합니다.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481339"
 ---
 # <a name="vtableshape"></a>VTableShape
 [VTable](../../debugger/debug-interface-access/vtable.md) 기호에 의해 식별 되는 클래스 자식 기호는 `SymTagVTableShape` 태그입니다.  

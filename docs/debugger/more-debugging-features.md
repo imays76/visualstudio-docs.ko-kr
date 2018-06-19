@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482128"
 ---
 # <a name="more-debugging-features"></a>추가 디버그 기능
 이 섹션에는 Visual Studio 디버거와 함께 사용할 수 있는 추가 기능이 포함되어 있습니다.  

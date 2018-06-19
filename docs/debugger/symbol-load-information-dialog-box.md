@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475420"
 ---
 # <a name="symbol-load-information-dialog-box"></a>기호 로드 정보 대화 상자
 **기호 로드 정보** 마우스 오른쪽 단추로 클릭할 때 대화 상자가 열립니다는 **모듈** 창을 선택 하 고 **기호 로드 정보**합니다.  

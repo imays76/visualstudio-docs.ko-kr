@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473834"
 ---
 # <a name="label-debug-interface-access-sdk"></a>레이블(디버그 인터페이스 액세스 SDK)
 프로그램 코드의 위치는으로 식별 되는 `SymTagLabel` 기호입니다.  

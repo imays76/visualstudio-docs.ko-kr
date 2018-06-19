@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565694"
 ---
 # <a name="application-deployment-prerequisites"></a>응용 프로그램 배포 필수 구성 요소
 응용 프로그램을 올바르게 설치 및 실행하려면 응용 프로그램이 사용할 모든 구성 요소가 대상 컴퓨터에 이미 설치되어 있는지를 먼저 확인해야 합니다. 예를 들어 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]를 사용하여 만드는 대부분의 응용 프로그램은 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]를 사용하므로 응용 프로그램을 설치하기 전에 올바른 공용 언어 런타임 버전을 대상 컴퓨터에 설치해야 합니다.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476226"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>방법: WPF 추적 정보 표시
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] WPF 응용 프로그램에서 디버그 추적 정보를 수신 하 고 해당 정보를 표시할 수는 **출력** 창. 디버그 추적 정보를 표시 하려면 WPF 추적을 사용할 수 있어야 합니다.  

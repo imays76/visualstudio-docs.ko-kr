@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480455"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>방법: 활성화 및 편집을 사용 하지 않도록 설정 하 고, (C#, VB, + +)를 계속 합니다.
 편집 하며 계속 하기에서 사용 하거나 사용 하지 않도록 설정할 수는 **옵션** 디자인 타임에 대화 상자. 디버깅 중에는 이 설정을 변경할 수 없습니다.  

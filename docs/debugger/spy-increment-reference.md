@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481592"
 ---
 # <a name="spy-reference"></a>Spy++ 참조
 각 Spy + + 메뉴 및 대화 상자에 대 한 설명은 아래에 나열 된 섹션을 참조 하십시오.  

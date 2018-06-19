@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569282"
 ---
 # <a name="message-task"></a>메시지 작업
 빌드하는 동안 메시지를 로깅합니다.  

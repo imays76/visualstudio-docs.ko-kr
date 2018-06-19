@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567618"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 작업
 이 작업은 목록 구성 문자열을 허용하고 여기에 지정된 프로젝트를 할당합니다.  

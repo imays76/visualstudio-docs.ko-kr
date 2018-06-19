@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474416"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Visual Studio에서 레지스터 창 정보
 **등록** 기간을 주소 수준 디버깅을 활성화 한 경우에 사용할 수는 **옵션** 대화 상자, **디버깅** 노드.  

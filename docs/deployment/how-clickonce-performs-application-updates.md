@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557699"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce에서 응용 프로그램 업데이트가 수행되는 방식
 ClickOnce 응용 프로그램의 배포 매니페스트에 지정 된 파일 버전 정보를 사용 하 여 응용 프로그램의 파일을 업데이트 여부를 결정 합니다. ClickOnce 기술을 사용 하 여 업데이트가 시작 된 후 *파일 패치* 응용 프로그램 파일의 중복 다운로드를 방지 합니다.  

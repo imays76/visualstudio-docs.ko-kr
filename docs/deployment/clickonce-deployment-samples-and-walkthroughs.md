@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563377"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 배포 샘플 및 연습
 이 섹션에는 샘플 응용 프로그램, 예제 코드 및 구문, 구조, 및 Windows Forms, WPF 및 콘솔 응용 프로그램을 배포 하는 데 사용 하는 기술을 설명 하는 단계별 연습이 포함 되어 있습니다.  

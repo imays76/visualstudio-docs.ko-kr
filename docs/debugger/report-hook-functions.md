@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481180"
 ---
 # <a name="report-hook-functions"></a>보고서 후크 함수
 보고서 후크 함수를 사용 하 여 설치 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), 때마다 호출 됩니다 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 디버그 보고서를 생성 합니다. 보고서 후크 함수를 사용하여 특정한 할당 형식에 맞게 보고서를 필터링할 수 있습니다. 보고서 후크 함수에는 다음과 같이 프로토타입이 있어야 합니다.  

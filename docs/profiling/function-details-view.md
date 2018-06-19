@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578311"
 ---
 # <a name="function-details-view"></a>함수 정보 뷰
 **함수 정보 뷰** 창에는 다음과 같은 정보가 표시됩니다.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569172"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 멀티 타기팅 개요
 MSBuild를 사용하면 .NET Framework의 여러 버전 중 하나 및 여러 시스템 플랫폼 중 하나에서 실행되는 응용 프로그램을 컴파일할 수 있습니다. 예를 들어 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 응용 프로그램을 컴파일하고 동일한 응용 프로그램을 64비트 플랫폼의 .NET Framework 4.5에서 실행되도록 컴파일할 수 있습니다.  

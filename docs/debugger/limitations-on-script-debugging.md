@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476837"
 ---
 # <a name="limitations-on-script-debugging"></a>스크립트 디버깅의 제한 사항
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]는 클라이언트 쪽 스크립트의 디버깅을 지원하며, 여기에는 이 항목의 제한 사항이 적용됩니다.  

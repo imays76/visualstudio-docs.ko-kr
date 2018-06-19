@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577355"
 ---
 # <a name="output-element-msbuild"></a>Output 요소(MSBuild)
 항목 및 속성에서 태스크 출력 값을 저장합니다.  
