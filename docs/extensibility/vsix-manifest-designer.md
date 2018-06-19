@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148121"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 매니페스트 디자이너
 VSIX 패키지 매니페스트 파일을 설정 하는 Visual Studio 확장에 대 한 설치 동작을 수정 합니다.  

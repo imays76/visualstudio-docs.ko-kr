@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138644"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 개체
 코드 창은 일반적으로 하나 이상의 텍스트 뷰를 포함할 수 있는 특수 한 문서 창에서 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> 개체입니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131740"
 ---
 # <a name="legacy-language-service-features"></a>레거시 언어 서비스 기능
 관리 되는 패키지 프레임 워크 (MPF) 언어 서비스는 하나 이상의 지원할 수 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 구문 강조, IntelliSense 및 중단점 유효성 검사 등의 기능입니다. 각 기능 독립적으로 구현할 수 있지만 파서와 스캐너만 필요로 하는 구문 강조 표시를 제외 하 고 스캐너 모두 필요 합니다.  

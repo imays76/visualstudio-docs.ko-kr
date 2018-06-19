@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133308"
 ---
 # <a name="include-element"></a>요소를 포함 합니다.
 찾을 수 있는 파일을 지정 하는 Include 요소에 제공 된 현재 파일에 삽입할 수 있도록 경로 포함 합니다.  기호 및 정의 된 형식의 모든 컴파일된 결과에 포함 됩니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128945"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>방법: 찾기 구현 및 메커니즘을 바꾸기
 Visual Studio 찾기/바꾸기를 구현 하는 두 가지를 제공 합니다. 한 가지 방법은 텍스트 이미지 셸에 전달할 검색, 강조 표시 및 바꿀 텍스트를 처리 하도록 합니다. 따라서 사용자가 여러 텍스트 범위를 지정할 수 있습니다. 또는, VSPackage 자체에서 이러한 기능을 제어할 수 있습니다. 두 경우 모두 현재 대상과 열려 있는 모든 문서에 대 한 대상으로 하는 방법에 대 한 셸에 알려야 합니다.  

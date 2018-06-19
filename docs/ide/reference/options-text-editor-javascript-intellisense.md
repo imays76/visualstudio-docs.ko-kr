@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948810"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>옵션, 텍스트 편집기, JavaScript, IntelliSense
 **옵션** 대화 상자의 **IntelliSense** 페이지를 사용하여 JavaScript용 IntelliSense의 동작에 영향을 주는 설정을 수정합니다. 메뉴 모음에서 **도구** , **옵션**, **텍스트 편집기** , **IntelliSense**, **IntelliSense**, **도구.** 페이지에 액세스할 수 있습니다.

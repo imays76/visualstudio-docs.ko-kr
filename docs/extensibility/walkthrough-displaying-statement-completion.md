@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147117"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>연습: 표시 문 완성
 완성 기능을 제공 하려면 식별자를 정의 하 고 다음 완료 세션을 트리거하지 언어 기반의 문 완성을 구현할 수 있습니다. 기존 콘텐츠 형식에 대 한 완료를 트리거할 수 또는 언어 서비스의 컨텍스트에서 문 완성을 정의 하, 고유한 파일 이름 확장명 및 내용 유형을 정의 하 고 다음 해당 형식만 대 한 완료를 표시할 수-예를 들어 일반 "텍스트"입니다. 이 연습에서는 텍스트 파일의 콘텐츠 형식인 "일반 텍스트" 콘텐츠 형식에 대 한 문 완성을 트리거할는 방법을 보여 줍니다. "Text" 콘텐츠 형식은 모든 다른 콘텐츠 형식 코드 및 XML 파일 등의 상위 항목입니다.  

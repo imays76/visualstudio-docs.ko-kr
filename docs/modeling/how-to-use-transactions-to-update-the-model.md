@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950009"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>방법: 트랜잭션을 사용하여 모델 업데이트
 트랜잭션은 변경 내용을 저장소에 대 한 그룹으로 취급 됩니다 있는지 확인 합니다. 그룹화 된 변경 내용은 커밋하거나 하나의 단위로 롤백할 수 있습니다.

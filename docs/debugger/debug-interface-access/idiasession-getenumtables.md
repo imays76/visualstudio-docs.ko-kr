@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460943"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 기호 저장소에 포함 된 모든 테이블에 대 한 열거자를 검색 합니다.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474884"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>방법: 런타임 오류 보고 함수 작성
 사용자 지정 런타임 오류 보고 함수는 `_CrtDbgReportW`와 동일하게 선언해야 합니다. 이 함수는 디버거에 1을 값으로 반환해야 합니다.  

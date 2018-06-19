@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584164"
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Python 코드에 대해 단위 테스트 설정
 

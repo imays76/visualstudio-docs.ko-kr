@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103359"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바인딩 바로 가기 키
 바로 가기 키 사용자 지정 메뉴 명령에 바인딩할 방금.vsct 파일 패키지에 대 한 항목을 추가 합니다. 이 기본 편집기에서 키보드 매핑을 적용 하거나 사용자 지정 편집기를 제한 하는 방법과 사용자 지정 단추, 메뉴 항목 또는 도구 모음 명령에 바로 가기 키를 매핑하는 방법을 설명 합니다.  

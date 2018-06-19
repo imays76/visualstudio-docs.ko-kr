@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131013"
 ---
 # <a name="projects"></a>프로젝트
 Visual Studio에서 프로젝트는 개발자가 사용할 소스 코드 파일 및에 표시 되는 기타 리소스를 구성 하는 컨테이너 **솔루션 탐색기**합니다. 일반적으로 프로젝트는 소스 코드 파일 및 비트맵 파일 등의 리소스에 대 한 참조를 저장 하는 파일 (예를 들어 C# 프로젝트의.csproj 파일). 프로젝트를 통해 구성, 빌드, 디버깅 및 소스 코드를 배포, 웹 서비스 및 데이터베이스를 다른 리소스에 대 한 참조입니다. Vspackage는 세 가지 주요 방법으로 Visual Studio 프로젝트 시스템을 확장할 수: *프로젝트 형식*, *프로젝트 하위 형식*, 및 *사용자 지정 도구*합니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130679"
 ---
 # <a name="important-commands-for-language-service-filters"></a>언어 서비스 필터에 대 한 중요 한 명령
 모든 기능 갖춘된 언어 서비스 필터를 만들려면 다음 명령을 처리 하는 것이 좋습니다. 명령 식별자의 전체 목록에 정의 된는 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 관리 되지 않는 리소스에 대 한 관리 코드와 Stdidcmd.h 헤더에 대 한 열거형 파일 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 코드입니다. Stdidcmd.h 파일을 찾을 수 *Visual Studio SDK 설치 경로*\VisualStudioIntegration\Common\Inc 합니다.  

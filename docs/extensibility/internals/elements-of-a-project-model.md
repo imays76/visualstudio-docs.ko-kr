@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135561"
 ---
 # <a name="elements-of-a-project-model"></a>프로젝트 모델의 요소
 인터페이스와의 모든 프로젝트의 구현을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기본 구조를 공유: 프로젝트 형식에 대 한 프로젝트 모델입니다. 프로젝트 모델을 개발 하는 VSPackage는 디자인 관련 결정 사항을 따르고 IDE에서 제공 하는 전역 기능와 함께 작동 하는 개체를 만듭니다. 프로젝트 항목을 유지 하는 방법을 제어할 수 있지만 예를 들어 제어 하지 않으면 파일을 유지 해야 하는 알림입니다. 사용자 현재 열려 있는 프로젝트 항목에 포커스를 배치 하 고 선택 **저장** 에 **파일** 메뉴에는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 메뉴 모음, 프로젝트 형식 코드 해야 가로채 IDE에서 명령, 파일을 보존 하 고 파일을 더 이상 변경 알림을 IDE에 다시 보냅니다.  

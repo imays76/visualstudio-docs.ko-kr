@@ -19,6 +19,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704956"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe(devenv.exe)
 디버깅하도록 지정된 실행 파일을 엽니다.

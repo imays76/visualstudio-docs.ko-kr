@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474390"
 ---
 # <a name="reference-programmatic-capture"></a>참조(프로그램 방식 캡처)
 그래픽 진단에서는 프로그래밍 방식 캡처 API를 통해 해당 캡처 기능을 프로그래밍 방식으로 제어할 수 있습니다. 이 API를 사용하면 메시지를 전환하여 그래픽 진단 HUD(헤드업 디스플레이)에 추가하고, 그래픽 로그 파일을 초기화하고 만들며, 그래픽 정보를 캡처할 수 있습니다.  

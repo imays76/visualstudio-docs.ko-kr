@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137107"
 ---
 # <a name="parent-element"></a>부모 요소
 단추 또는 콤보 상자의 부모 그룹 수만 있습니다. 메뉴 또는 그룹의 부모는 다른 메뉴 또는 그룹 수 있습니다. 에 [CommandPlacement 요소](../extensibility/commandplacement-element.md),이 요소는 필수 이며, 다른 모든 경우에 선택 사항입니다. 이 요소를 생략 하면의 부모 `Group_Undefined:0` 암시 됩니다.  

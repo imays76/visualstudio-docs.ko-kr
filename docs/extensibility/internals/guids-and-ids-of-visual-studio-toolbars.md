@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133991"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 및 Id를 Visual Studio 도구 모음
 이 항목의 도구 모음을 Visual Studio 통합된 개발 환경 (IDE)에 포함 된 GUID 및 ID 값을 열거 하며 그룹 포함. 이러한 값은 Visual Studio SDK의 일부로 설치 되는.vsct 파일에서 정의 됩니다. 자세한 내용은 참조 [IDE-Defined 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  

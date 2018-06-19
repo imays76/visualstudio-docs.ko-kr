@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475199"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>방법: 숨겨진 디버거 명령 복원
 Visual Studio를 설치할 때 주 프로그래밍 언어의 기본 IDE 설정 집합을 선택하는 단계가 있습니다. 일부 언어의 기본 IDE 설정에서는 특정 디버거 명령이 표시되지 않을 수 있습니다.  

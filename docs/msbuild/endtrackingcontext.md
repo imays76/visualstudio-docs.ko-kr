@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577069"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 현재 추적 컨텍스트를 종료합니다.  

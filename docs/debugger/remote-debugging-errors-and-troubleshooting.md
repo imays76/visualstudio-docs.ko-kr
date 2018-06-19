@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474365"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>원격 디버깅 오류 및 문제 해결
 원격으로 디버깅할 때 다음과 같은 오류가 발생할 수 있습니다.  

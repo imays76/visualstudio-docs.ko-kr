@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577485"
 ---
 # <a name="createitem-task"></a>CreateItem 작업
 항목 컬렉션을 입력 항목으로 채웁니다. 이를 통해 한 목록의 항목을 다른 목록으로 복사할 수 있습니다.  

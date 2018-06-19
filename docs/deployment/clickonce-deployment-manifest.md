@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560325"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 배포 매니페스트
 배포 매니페스트는 배포할 현재 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 버전의 ID를 포함하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 설명하는 XML 파일입니다.  

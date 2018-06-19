@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134264"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>속성 창에 속성 노출
 이 연습에 개체의 공용 속성을 노출 된 **속성** 창. 이러한 속성에 변경에 반영 된 **속성** 창.  

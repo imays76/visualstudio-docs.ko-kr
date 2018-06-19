@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129643"
 ---
 # <a name="elimination-of-sak-files"></a>제거로 인해 ~ SAK 파일
 소스 제어 플러그 인 API 1.2에는 ~ SAK 파일 기능 플래그 및 MSSCCPRJ 파일 및 공유 체크 아웃 원본 제어 플러그 인을 지원 하는지 여부를 검색 하는 새로운 기능으로 대체 되었습니다.  

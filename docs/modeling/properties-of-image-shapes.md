@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952630"
 ---
 # <a name="properties-of-image-shapes"></a>이미지 모양의 속성
 도메인 클래스는 생성 된 디자이너에 표시 되는 방식을 지정 하려면 이미지 셰이프를 사용할 수 있습니다. 설정 하 여 이미지 셰이프를 정의 고 `Image` 미리 정의 된 이미지 파일에 클래스의 속성입니다. 다음과 같은 형식이 지원 됩니다.

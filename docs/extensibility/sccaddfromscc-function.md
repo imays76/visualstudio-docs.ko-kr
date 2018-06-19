@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139954"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 함수
 이 함수를 소스 제어 시스템에 이미 있는 파일을 찾아보려면 허용 하 고 이후에 현재 프로젝트의 해당 파일 요소를 만들 수 있습니다. 예를 들어이 함수 파일을 복사 하지 않고 현재 프로젝트에 공통 헤더 파일을 가져올 수 있습니다. 파일의 반환 배열 `lplpFileNames`, 사용자가을 IDE 프로젝트에 추가 하는 파일의 목록을 포함 합니다.  

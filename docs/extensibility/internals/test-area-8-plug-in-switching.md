@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148862"
 ---
 # <a name="test-area-8-plug-in-switching"></a>테스트 영역 8: 플러그 인 전환
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 현재 소스 제어 플러그 인을 변경 하려면 사용자 인터페이스 (UI)에 있습니다. 이 테스트 영역을 선택 하는 솔루션 소스 제어에 사용할 플러그 인 프로세스에 대 한 테스트 사례를 제공 합니다.  

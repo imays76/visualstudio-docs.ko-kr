@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138342"
 ---
 # <a name="using-and-providing-services"></a>사용 하 고 서비스를 제공 합니다.
 서비스는 두 개의 Vspackage 사이의 계약입니다. 하나의 VSPackage를 사용할 다른 VSPackage에 대 한 인터페이스의 특정 집합을 제공 합니다. 예를 들어 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 제공는 <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> 그것을 제공 하는 VSPackage를 로드 합니다. 이 서비스는 제공 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 활동 로그에 쓰는 데 사용할 수 있는 인터페이스입니다. 자세한 내용은 참조 [하는 방법: 작업 로그를 사용 하 여](../extensibility/how-to-use-the-activity-log.md)합니다.  

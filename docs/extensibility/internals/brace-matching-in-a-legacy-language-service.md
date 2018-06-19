@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131965"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>중괄호 일치 레거시 언어 서비스
 중괄호 일치 괄호와 중괄호와 같은 함께 발생 하는 언어 요소를 추적 하는 개발자는 데 도움이 됩니다. 개발자가 닫는 중괄호를 여는 중괄호 강조 표시 됩니다.  

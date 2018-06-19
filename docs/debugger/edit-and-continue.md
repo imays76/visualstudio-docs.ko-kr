@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471972"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>코드를 편집 하 고 (C#, VB, c + +) Visual Studio에서 디버깅을 계속
 편집하며 계속하기는 프로그램이 중단 모드에 있는 동안 소스 코드를 변경하여 시간을 절약할 수 있는 기능입니다. 같은 실행 명령을 선택 하 여 프로그램 실행을 다시 시작 하면 **계속** 또는 **단계**, 편집 하 고 자동으로 계속 몇 가지 제한 사항이 코드 변경 내용을 적용 합니다. 이 기능을 사용하면 전체 프로그램을 중지하고 다시 컴파일한 다음 디버깅 세션을 다시 시작하는 대신 디버깅 세션을 진행하는 과정에서 코드를 변경할 수 있습니다.  

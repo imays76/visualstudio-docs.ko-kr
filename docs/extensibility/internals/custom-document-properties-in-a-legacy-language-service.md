@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132497"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>레거시 언어 서비스에서 사용자 지정 문서 속성
 문서 속성에 표시 될 수는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **속성** 창. 프로그래밍 언어 개별 소스 파일과 관련 된 속성이 없는 일반적으로 합니다. 그러나 XML 인코딩, 스키마 및 스타일 시트에 영향을 주는 문서 속성을 지원 합니다.  

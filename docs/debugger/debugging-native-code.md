@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472908"
 ---
 # <a name="debugging-native-code"></a>네이티브 코드 디버깅
 이 단원에서는 네이티브 응용 프로그램의 몇 가지 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. Visual Studio 디버거를 사용 하는 방법을 참조 하세요. [디버거 로드맵](../debugger/debugger-basics.md)합니다.  

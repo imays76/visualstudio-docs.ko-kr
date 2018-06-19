@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134115"
 ---
 # <a name="making-commands-available"></a>명령을 사용 가능
 Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이스 (UI) 명령을 사용 하 여 들어오지 될 수 있습니다. 다음과 같이이 문제를 줄이기 위해 패키지를 프로그래밍할 수 있습니다.

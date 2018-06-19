@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134141"
 ---
 # <a name="registering-a-legacy-language-service"></a>레거시 언어 서비스를 등록 하는 중
 다음 섹션에서는 레지스트리 항목의 목록이 다양 한 언어에 대 한 서비스 옵션에서 사용할 수 있는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  
@@ -68,7 +69,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |이름|형식|범위|설명|  
 |----------|----------|-----------|-----------------|  
-|(기본값)|REG_SZ|텍스트|문서 언어의 이름에 기본 값을 사용할 수 있습니다. 이 키의 이름에 해당 하는 항목이 있는 식 계산기의 GUID는  *\<VS Reg 루트 >*\AD7Metrics\Expression 계산기 합니다.|  
+|(기본값)|REG_SZ|텍스트|문서 언어의 이름에 기본 값을 사용할 수 있습니다. 이 키의 이름에 해당 하는 항목이 있는 식 계산기의 GUID는  *\<VS Reg 루트 >* \AD7Metrics\Expression 계산기 합니다.|  
   
 ### <a name="example"></a>예제  
   
@@ -159,7 +160,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>논리적 보기 옵션에 대 한 레지스트리 항목  
- *VS Reg 루트*\Editors\\*편집기 GUI >*\LogicalViews 키에 다음 값이 포함 될 수 있습니다.  
+ *VS Reg 루트*\Editors\\*편집기 GUI >* \LogicalViews 키에 다음 값이 포함 될 수 있습니다.  
   
 |이름|형식|범위|설명|  
 |----------|----------|-----------|-----------------|  

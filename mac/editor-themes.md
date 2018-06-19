@@ -10,6 +10,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865021"
 ---
 # <a name="editor-themes"></a>편집기 테마
 **Visual Studio > 기본 설정... > 텍스트 편집기 > 색 테마** 메뉴 옵션을 통해 편집기 테마를 Mac용 Visual Studio에서 기본적으로 제공되는 색 구성표 10개 중 하나로 변경할 수 있습니다.

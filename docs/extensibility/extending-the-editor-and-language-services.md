@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132576"
 ---
 # <a name="extending-the-editor-and-language-services"></a>편집기 및 언어 서비스 확장
 사용자 고유의 편집기 언어 서비스 기능 (IntelliSense) 등을 추가할 수 있으며 Visual Studio code 편집기의 기능을 대부분 확장.  확장할 수의 전체 목록을 참조 하십시오. [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)합니다.  

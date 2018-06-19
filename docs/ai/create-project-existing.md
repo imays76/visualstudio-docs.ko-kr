@@ -5,6 +5,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33870618"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>기존 코드로 AI 프로젝트를 만듭니다.
 

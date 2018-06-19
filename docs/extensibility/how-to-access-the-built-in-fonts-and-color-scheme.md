@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131149"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>방법: 기본 제공 글꼴 및 색 구성표에 액세스
 Visual Studio 통합된 개발 환경 (IDE)에 편집기 창에 연결 되는 글꼴 및 색 구성표가 있습니다. 이 체계를 통해 액세스할 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 인터페이스입니다.
@@ -51,7 +52,7 @@ Visual Studio 통합된 개발 환경 (IDE)에 편집기 창에 연결 되는 �
 
 1.  특수 한 유형의 범주 레지스트리 항목의 다음 위치에서 구성 됩니다.
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>*\FontAndColors\\*\<Category>*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]
 
      *\<범주 >* 범주의 지역화 되지 않은 이름입니다.
 

@@ -44,6 +44,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480604"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 기능 사용
 Visual C++에서는 네이티브 [runtime_checks](/cpp/preprocessor/runtime-checks) 를 사용하여 다음과 같은 일반적인 런타임 오류를 catch할 수 있습니다.  

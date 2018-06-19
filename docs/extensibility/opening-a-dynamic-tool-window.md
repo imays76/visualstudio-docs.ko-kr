@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138290"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>동적 도구 창 열기
 도구 창은 일반적으로 메뉴나 해당 바로 가기 명령에서 열립니다. 하지만 때때로 특정 UI 컨텍스트 적용 되며 UI 컨텍스트가 더 이상 적용 될 때 닫힙니다 때마다 열리는 도구 창을 할 수 없습니다. 이러한 유형의 도구 창 호출 *동적* 또는 *자동 표시*합니다.  

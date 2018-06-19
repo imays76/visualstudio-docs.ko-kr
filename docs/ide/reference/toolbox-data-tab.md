@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949713"
 ---
 # <a name="toolbox-data-tab"></a>도구 상자, 데이터 탭
 폼 및 구성 요소에 추가할 수 있는 데이터 개체를 표시합니다. 연결된 디자이너가 있는 프로젝트를 만들 경우 **도구 상자**의 **데이터** 탭이 표시됩니다. Visual Studio 통합 개발 환경에는 기본적으로 **도구 상자**가 표시됩니다. **도구 상자**를 표시해야 할 경우 **보기** 메뉴에서 **도구 상자**를 선택합니다.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137549"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 요소(Visual Studio 템플릿)
 저장 위치를 통해 프로젝트에 대해 묻는 메시지가 있는지 여부를 지정 된 **새 프로젝트** 프로젝트를 만들 때 대화 상자. 이 요소 설정 된 경우 `true`, 저장에 대 한 사용자 묻는 위치 경우 `false`, 다음 묻지 않습니다. (즉, 임시 프로젝트 생성 됩니다.)  

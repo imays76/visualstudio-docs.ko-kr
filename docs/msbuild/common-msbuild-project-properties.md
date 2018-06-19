@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979190"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 .targets 파일에 포함된 자주 사용하는 속성을 보여 줍니다.  

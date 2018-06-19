@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463291"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 함수에 있는지 여부를 지정 하는 플래그를 검색 된 [naked](/cpp/cpp/naked-cpp) 특성 (즉, 함수에 프롤로그 / 에필로그 코드 컴파일러에 의해 추가).  

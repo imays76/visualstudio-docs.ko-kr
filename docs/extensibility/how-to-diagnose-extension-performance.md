@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133275"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>시작에 확장 영향을 측정합니다.
 

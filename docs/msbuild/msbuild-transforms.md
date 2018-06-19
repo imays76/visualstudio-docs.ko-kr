@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571622"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 변형
 변환은 항목 목록 간의 일대일 변환입니다. 변환을 수행하면 프로젝트가 항목 목록을 변환할 수 있을 뿐만 아니라, 대상이 입력과 출력 간의 직접 매핑을 식별할 수 있습니다. 이 항목에서는 변환 및 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 변환을 사용하여 보다 효율적으로 프로젝트를 빌드하는 방법을 설명합니다.  

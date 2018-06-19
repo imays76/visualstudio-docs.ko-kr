@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951728"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>방법: 응용 프로그램 및 배포 매니페스트 서명
 

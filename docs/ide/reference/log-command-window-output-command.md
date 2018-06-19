@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704683"
 ---
 # <a name="log-command-window-output-command"></a>명령 창 출력 로그 명령
 **명령** 창의 모든 입력 및 출력을 파일로 복사합니다.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471059"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 일부 기호 네임 스페이스에 의해 참조 될 수 있습니다 및로 식별 되었을 것 이후에 `SymTagUsingNameSpace` 태그입니다.  

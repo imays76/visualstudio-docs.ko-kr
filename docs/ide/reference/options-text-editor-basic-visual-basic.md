@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945859"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>옵션, 텍스트 편집기, 기본(Visual Basic)
 **옵션**(**도구** 메뉴), **텍스트 편집기**의 **기본** 폴더에 있는 **VB 관련** 속성 페이지 대화 상자에는 다음 속성이 포함되어 있습니다.

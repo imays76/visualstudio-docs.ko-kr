@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130044"
 ---
 # <a name="template-policy-and-the-properties-window"></a>정책 템플릿 및 속성 창
 프로젝트는 엔터프라이즈 템플릿 프로젝트 내에 포함 되 면 하는 경우 해당 엔터프라이즈 템플릿 프로젝트 정책을 적용할 수 있습니다. 템플릿 정책을 속성에 대 한 기본값 설정, 속성 숨기기, 속성을 추가 및 등을 사용할 수 있는 제약 시스템 됩니다.  

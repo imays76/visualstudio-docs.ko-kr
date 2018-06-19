@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133560"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>방법: 소스 제어 플러그 인 설치
 소스 제어 플러그 인을 만드는 세 가지 단계가 포함 됩니다.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>등록 하려면 소스 제어 플러그 인 DLL  
   
-1.  제품 이름 하위 뒤에 회사 이름 하위 키를 지정 하는 소프트웨어 하위 키에서 HKEY_LOCAL_MACHINE 키 아래에서 두 개의 항목을 추가 합니다. 이 패턴은 HKEY_LOCAL_MACHINE\SOFTWARE\\*[회사 이름]*\\*[product name]*\\*[항목]* = value입니다. 두 항목이 SCCServerName 및 SCCServerPath 항상 호출 됩니다. 각 일반 문자열입니다.  
+1.  제품 이름 하위 뒤에 회사 이름 하위 키를 지정 하는 소프트웨어 하위 키에서 HKEY_LOCAL_MACHINE 키 아래에서 두 개의 항목을 추가 합니다. 이 패턴은 HKEY_LOCAL_MACHINE\SOFTWARE\\ *[회사 이름]*\\ *[product name]*\\ *[항목]* = value입니다. 두 항목이 SCCServerName 및 SCCServerPath 항상 호출 됩니다. 각 일반 문자열입니다.  
   
      예를 들어 들어 회사 이름이 Microsoft와 원본 제어 제품 이름이 SourceSafe 있으면이 레지스트리 경로 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe 합니다. 이 하위 키는 SCCServerName, 첫 번째 항목은에 제품 이름 사용자가 읽을 수 있는 문자열입니다. 두 번째 항목 SCCServerPath, IDE에 연결 해야 하는 플러그 인 DLL을 제어 하는 소스에 전체 경로입니다. 다음 샘플 레지스트리 항목을 제공합니다.  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  하위 키를 SourceCodeControlProvider, 소프트웨어 하위 키에서 HKEY_LOCAL_MACHINE 키 아래에 추가 합니다.  
   
-     이 하위 키 아래 레지스트리 항목 ProviderRegKey 설정은 1 단계에서 레지스트리에 저장 하는 하위 키를 나타내는 문자열입니다. 이 패턴은 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey 소프트웨어 =\\*[회사 이름]*\\*[product name]*합니다.  
+     이 하위 키 아래 레지스트리 항목 ProviderRegKey 설정은 1 단계에서 레지스트리에 저장 하는 하위 키를 나타내는 문자열입니다. 이 패턴은 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey 소프트웨어 =\\ *[회사 이름]*\\ *[product name]* 합니다.  
   
      다음은이 하위 키에 대 한 샘플 콘텐츠입니다.  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  SourceCodeControlProvider 하위 키 아래 InstalledSCCProviders 라는 하위 키를 만들고 해당 하위 키 아래에서 하나의 항목을 배치 합니다.  
   
-     이 항목의 이름 (동일 SCCServerName 항목에 대 한 지정 된 값), 공급자의 사용자가 읽을 수 있는 이름 이므로 값을 다시 한 번, 1 단계에서 만든 하위 키입니다. 이 패턴은 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[이름 표시]* 소프트웨어 =\\*[회사 이름]* \\ *[product name]*합니다.  
+     이 항목의 이름 (동일 SCCServerName 항목에 대 한 지정 된 값), 공급자의 사용자가 읽을 수 있는 이름 이므로 값을 다시 한 번, 1 단계에서 만든 하위 키입니다. 이 패턴은 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[이름 표시]* 소프트웨어 =\\ *[회사 이름]* \\ *[product name]* 합니다.  
   
      예를 들어:  
   

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571557"
 ---
 # <a name="overriding-toolsversion-settings"></a>ToolsVersion 설정 재정의
 다음 세 가지 방법 중 하나로 프로젝트 및 솔루션에 대한 도구 집합을 변경할 수 있습니다.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946834"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>다이어그램의 프레젠테이션 사용자 지정
 DSL 언어 디자이너의 주 표시 영역은 다이어그램입니다. 사용자는 일반적으로 다이어그램을 사용해 모델을 생성합니다. 다음 항목의 설명에 따라 다이어그램을 사용자 지정할 수 있습니다.
