@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128034"
 ---
 # <a name="extending-menus-and-commands"></a>확장 메뉴 및 명령
 주석은 Visual Studio에 작업 및 프로세스를 추가 하는 방법은 있습니다. 대부분의 경우에서 명령은 메뉴 또는 도구 모음에 표시 됩니다. VSPackage 프로젝트 템플릿으로 매우 기본적인 명령을 구현 하는 방법을 보여 줍니다. 시간이 약간 더는 여전히 기본적인 구현에 대 한 참조 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  

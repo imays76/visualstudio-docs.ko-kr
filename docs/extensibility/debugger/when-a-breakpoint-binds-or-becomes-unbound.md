@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134410"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>중단점 바인딩합니다 또는 언바운드 되 면
 호출할 때 중단점을 바인딩할 수 없는 경우는 [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 메서드, 바인드 중단점의 시간을 만들고 시간 서로 다릅니다.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952960"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>모델에서 앱 생성 및 구성
 모델에서 응용 프로그램의 일부를 생성하거나 구성할 수 있습니다.

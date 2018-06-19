@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922444"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>XAML 디자이너에 대한 바로 가기 키
 XAML 디자이너의 바로 가기 키를 사용하면 마우스 단추를 여러 번 클릭해야 하는 동작을 바로 가기 키 하나로 줄일 수 있으므로 작업 속도를 향상시킬 수 있습니다.

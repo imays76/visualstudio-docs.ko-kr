@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133801"
 ---
 # <a name="project-subtypes-design"></a>프로젝트 하위 형식 디자인
 Microsoft Build Engine (MSBuild)에 따라 프로젝트를 확장 하는 Vspackage를 사용 하는 프로젝트 하위 형식입니다. 집계 사용 하면 대량의에서 구현 되는 핵심 관리 되는 프로젝트 시스템을 다시 사용할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 하면서도 여전히 특정 시나리오에 대 한 동작을 사용자 지정 합니다.  

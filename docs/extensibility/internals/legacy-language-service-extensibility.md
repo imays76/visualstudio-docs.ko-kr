@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129724"
 ---
 # <a name="legacy-language-service-extensibility"></a>레거시 언어 서비스 확장성
 IDE에서 소스 코드를 편집 하기 위한 언어별 지원을 제공 하는 언어 서비스 합니다.  

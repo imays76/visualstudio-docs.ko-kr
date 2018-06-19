@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126174"
 ---
 # <a name="symbol-provider"></a>기호 공급자
 식 계산기 구현 변수 및 식 평가 하려면 언어 컴파일러에서 생성 된 기호화 된 디버그 정보에 액세스 해야 합니다. 기호 처리기를 호출 또한 기호 공급자 (SP) 인터페이스를 사용 하 여 수행 합니다.  

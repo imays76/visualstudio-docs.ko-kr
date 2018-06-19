@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923431"
 ---
 # <a name="saving-data"></a>데이터 저장
 데이터를 저장 하면 원래 데이터 저장소, 일반적으로 SQL Server와 같은 관계형 데이터베이스에 다시 변경 된 응용 프로그램의 데이터 모델의 데이터를 유지 하는 과정입니다.

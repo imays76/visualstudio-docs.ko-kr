@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923841"
 ---
 # <a name="customize-the-help-viewer"></a>도움말 뷰어 사용자 지정
 글꼴 크기, 최대 결과 수 및 영어 콘텐츠 포함 여부 등의 다른 옵션은 물론, 도움말 뷰어 창의 레이아웃을 사용자 지정할 수 있습니다.

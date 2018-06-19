@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133664"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Visual Studio의 다른 부분을 확장합니다.
 확장할 수 있는 Visual Studio UI의 더 많은 부분이 있습니다. 여기 보여줍니다 일부에 불과합니다.  

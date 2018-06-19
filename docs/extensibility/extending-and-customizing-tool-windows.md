@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129237"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>확장 및 도구 창을 사용자 지정
 Visual Studio에는 몇 가지 유형의 windows, 예를 들어 도구 창, 문서 창 및 대화 상자 창을 제공합니다. 속성 창, 출력 창 및 작업 목록 창 등의 다른 windows 도구 창의 종류가 있습니다.  

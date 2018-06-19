@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130776"
 ---
 # <a name="error-codes"></a>오류 코드
 소스 제어 플러그 인 API 함수에서 오류를 반환 하는 경우 다음 오류 코드 중 하나를 사용할 수 있습니다. 모든 오류를 경고 또는 정보 제공 용 이므로 오류 코드는 양수, 음수 이면 고, 성공이 0입니다.  

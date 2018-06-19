@@ -14,6 +14,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263069"
 ---
 # <a name="code-maps-for-c-projects"></a>C + + 프로젝트에 대 한 코드 맵
 

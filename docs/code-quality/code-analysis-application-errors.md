@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921025"
 ---
 # <a name="code-analysis-application-errors"></a>코드 분석 응용 프로그램 오류
 이 섹션은 관리 코드 분석 도구에서 생성 되는 오류 메시지의 참조입니다. 특정 오류 메시지에 대 한 도움말을 보려면 입력에 오류 번호는 **찾아보십시오** 인덱스 상자로 합니다.

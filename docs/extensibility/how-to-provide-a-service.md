@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129458"
 ---
 # <a name="how-to-provide-a-service"></a>방법: 서비스 제공
 VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 수 있습니다. 서비스를 제공 하려면 VSPackage는 Visual Studio와 함께 서비스를 등록 하 고 서비스를 추가 해야 합니다.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951780"
 ---
 # <a name="options-page-debugging-node-properties"></a>옵션 페이지, 디버깅 노드 속성
 다음 표에서는 **옵션** 대화 상자의 **디버깅** 범주, `DTE.Properties("Debugging", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다.

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957435"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>클래스 디자이너에서 클래스 및 형식 리팩터링
 

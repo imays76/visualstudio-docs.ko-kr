@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132236"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Visual Studio SDK에에서는 이벤트를 노출
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 있습니다 자동화를 사용 하 여 이벤트 소스입니다. 프로젝트 및 프로젝트 항목에 대 한 이벤트 소스는 것이 좋습니다.  

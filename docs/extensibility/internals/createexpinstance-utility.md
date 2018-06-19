@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128093"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 유틸리티
 다시 설정, 만들려는 CreateExpInstance 유틸리티를 사용 하거나 Visual Studio의 실험적 인스턴스를 삭제 합니다. 디버깅 하 고 기본 제품을 변경 하지 않고 Visual Studio 확장을 테스트 실험적 인스턴스를 사용할 수 있습니다.  

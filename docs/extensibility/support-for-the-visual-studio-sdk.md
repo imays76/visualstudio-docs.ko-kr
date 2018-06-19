@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141690"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK에 대 한 지원
 몇 가지 지원 옵션은 Visual Studio 통합된 개발 환경 (IDE)를 확장 하는 방법에 대 한 고객을 위해 사용할 수 있습니다.  

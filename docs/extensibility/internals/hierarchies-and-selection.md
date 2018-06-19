@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128561"
 ---
 # <a name="hierarchies-and-selection"></a>계층 및 선택
 사용자 지정할 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]를 이해 해야 어떻게 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트와 사용자에 게 표시 되는 내용을 확인 하려면 선택 항목 컨텍스트를 사용 하는 방식 같은 계층 구조를 처리 합니다. 이 섹션에서는의 개념과 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 계층 및 선택 합니다.  

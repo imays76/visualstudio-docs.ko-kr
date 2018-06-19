@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134775"
 ---
 # <a name="authoring-vsct-files"></a>제작 합니다. Vsct 파일
 이 문서에는 Visual Studio 통합된 개발 환경 (IDE)에 메뉴 항목, 도구 모음 및 기타 사용자 인터페이스 (UI) 요소를 추가 하려면.vsct 파일을 작성 하는 방법을 보여 줍니다. 이미.vsct 파일을 맺지 않은 Visual Studio 패키지 (VSPackage)에 UI 요소를 추가 하는 경우 다음이 단계를 사용 합니다.  

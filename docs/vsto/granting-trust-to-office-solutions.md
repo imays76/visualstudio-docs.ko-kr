@@ -23,6 +23,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447247"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Office 솔루션에 신뢰를 부여
   Office 솔루션으로 각 대상 컴퓨터의 보안 정책을 수정 솔루션 어셈블리, 응용 프로그램 매니페스트, 배포 매니페스트 및 문서를 신뢰할 신뢰를 부여 합니다. 또는 최종 사용자 하 여 Office 솔루션에 신뢰를 부여할 수 있습니다.  

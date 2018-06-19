@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127865"
 ---
 # <a name="creating-a-source-control-plug-in"></a>소스 제어 플러그 인 만들기
 소스 제어에 기능을 추가할 수 있도록 하는 리소스를 제공 하는 Visual Studio SDK는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE). 사용이 설명서에 설명 된 소스 제어 플러그 인 API와 호환 되 플러그 인 DLL을 사용할 수 있습니다.  

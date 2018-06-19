@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130586"
 ---
 # <a name="project-modeling"></a>모델링 프로젝트
 표준 프로젝트 개체를 구현 하는 프로젝트에 대 한 자동화를 제공 하는 다음 단계:는 <xref:EnvDTE.Projects> 및 `ProjectItems` 컬렉션; `Project` 및 <xref:EnvDTE.ProjectItem> 개체; 및 나머지 개체 구현에 고유 합니다. 이러한 표준 개체 Dteinternal.h 파일에 정의 됩니다. 표준 개체의 구현은 BscPrj 샘플에 제공 됩니다. 나란히 구분할 수 있도록 표준 프로젝트 개체를 직접 만드는를 모델으로 이러한 클래스를 사용할 수 있습니다 다른 프로젝트 형식에서 프로젝트 개체와 사용 합니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133247"
 ---
 # <a name="test-area-2-get-from-source-control"></a>소스 제어에서 가져올 테스트 영역 2:
 이 테스트 영역 Get 명령을 통해 버전 저장소에서 항목을 검색 하기 위한 테스트 사례를 설명 합니다. 로컬 하 고 웹 프로젝트에 이러한 테스트 사례를 적용할 수 있습니다.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065691"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>ClickOnce 업데이트 전략 선택
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]는 자동 응용 프로그램 업데이트를 제공할 수 있습니다. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 배포 매니페스트 파일을 응용 프로그램 업데이트를 사용할 수 있는지 여부를 확인 하려면를 주기적으로 읽어서 합니다. 사용 가능한 경우 새 버전의 응용 프로그램을 다운로드하여 실행합니다. 효율성을 위해 변경된 파일만 다운로드합니다.  

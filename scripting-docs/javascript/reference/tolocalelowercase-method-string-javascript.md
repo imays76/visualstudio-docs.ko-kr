@@ -1,13 +1,13 @@
 ---
-title: "toLocaleLowerCase 메서드 (String) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: toLocaleLowerCase 메서드 (String) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toLocaleLowerCase
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toLocaleLowerCase method
 ms.assetid: add894d3-d14a-4dbc-a9b9-7ad1d3a2e581
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640473"
 ---
 # <a name="tolocalelowercase-method-string-javascript"></a>toLocaleLowerCase 메서드(String)(JavaScript)
 호스트 환경의 현재 로캘을 고려 하는 모든 알파벳 문자를 소문자로 변환 합니다.  

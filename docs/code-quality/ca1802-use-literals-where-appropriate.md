@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915843"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: 가능하면 리터럴을 사용하십시오.
 |||

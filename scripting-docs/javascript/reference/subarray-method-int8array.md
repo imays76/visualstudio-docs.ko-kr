@@ -1,19 +1,20 @@
 ---
-title: "subarray 메서드 (Int8Array) | Microsoft Docs"
-ms.custom: 
+title: subarray 메서드 (Int8Array) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 46271ed6-a3c3-41fb-bd6f-81efa9e8dedc
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640013"
 ---
 # <a name="subarray-method-int8array"></a>subarray 메서드(Int8Array)
 시작 요소를 포함하고 끝 요소를 제외하여 참조하는 이 배열에 대한 ArrayBuffer 스토어의 새로운 Int8Array 뷰를 가져옵니다.  

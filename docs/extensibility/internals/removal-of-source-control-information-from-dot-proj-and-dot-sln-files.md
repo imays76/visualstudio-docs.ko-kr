@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128989"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>소스 제어 정보를 제거 합니다. Proj 및 합니다. Sln 파일
 SCC는 소스 제어 플러그 인 API의 버전 1.2의에서 정보는 MSSCCPRJ에 저장 됩니다. SCC 파일입니다. MSSCCPRJ 활용 합니다. SCC 파일을 SCC 정보는 원본이 아닌-.proj 및.sln 파일 만큼 제어입니다.  

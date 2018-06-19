@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132275"
 ---
 # <a name="how-to-create-custom-text-markers"></a>방법: 사용자 지정 텍스트 표식 만들기
 강조 하거나 코드를 구성 하는 사용자 지정 텍스트 표식을 만들려는 경우에 다음 단계를 수행 해야 합니다.  
@@ -34,9 +35,9 @@ ms.lasthandoff: 04/16/2018
   
 1.  다음과 같이 레지스트리 항목을 만듭니다.  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<버전 >*\Text Editor\External 표식\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<버전 >* \Text Editor\External 표식\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*는 `GUID` 추가 중인 마커를 식별 하는 데 사용  
+     *\<MarkerGUID >* 는 `GUID` 추가 중인 마커를 식별 하는 데 사용  
   
      *\<버전 >* 의 버전이 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], 예를 들어 8.0  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]
     >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio의 루트 경로\\*\<버전 >* 자세한 내용은 Visual Studio shell 초기화 될 때 대체 루트로 재정의할 수 있습니다 [명령줄 스위치](../extensibility/command-line-switches-visual-studio-sdk.md)합니다.  
   
-2.  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio에서 4 개의 값을 만들\\*\<버전 >*\Text Editor\External 표식\\*\<MarkerGUID >*  
+2.  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio에서 4 개의 값을 만들\\*\<버전 >* \Text Editor\External 표식\\*\<MarkerGUID >*  
   
     -   (기본값)  
   

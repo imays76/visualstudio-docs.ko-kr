@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954154"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>파일 저장소 및 XML Serialization을 사용자 지정
 

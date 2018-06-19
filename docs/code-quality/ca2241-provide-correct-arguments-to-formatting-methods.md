@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919005"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: 형식 메서드에 올바른 인수를 제공하십시오.
 |||

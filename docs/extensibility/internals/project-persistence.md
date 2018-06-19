@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131126"
 ---
 # <a name="project-persistence"></a>프로젝트 지 속성
 지 속성은 프로젝트에 대 한 중요 한 설계 고려 합니다. 대부분의 프로젝트 파일; 나타내는 프로젝트 항목 사용 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 도 데이터가 파일 기반이 아닌 된 프로젝트를 지원 합니다. 프로젝트 및 프로젝트 파일을 소유한 파일 모두 유지 해야 합니다. IDE 자체 또는 프로젝트 항목을 저장 하려면 프로젝트에 지시 합니다.  

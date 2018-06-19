@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132017"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>프로젝트 시스템을 확장 하기 위한 명령을 IDE 정의
 프로젝트 시스템 확장 하려는 경우 명령을 사용 하는 명령에서 제공 하는 그룹의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  

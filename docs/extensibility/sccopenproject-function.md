@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143376"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 함수
 이 함수는 기존 소스 제어 프로젝트를 열거나 새를 만듭니다.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126073"
 ---
 # <a name="extending-properties-and-the-property-window"></a>확장 속성 및 속성 창
 **속성** 창은 보고 디자인 타임 속성 및 선택한 개체의 이벤트를 편집 하는 데 사용 됩니다.  

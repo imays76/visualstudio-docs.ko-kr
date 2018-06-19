@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920950"
 ---
 # <a name="intrinsic-functions"></a>내장 함수
 의도 하지 않은 식 않는다는 점을 SAL에 식을 C/c + + 식 수-예를 들어, + +,--, 및이 컨텍스트에서 의도 하지 않은 모든 함수 호출 합니다.  그러나 SAL는 일부 함수와 비슷한 개체 및 SAL 식에 사용할 수 있는 일부 예약 된 기호를 제공 합니다. 이 라고 *내장 함수*합니다.

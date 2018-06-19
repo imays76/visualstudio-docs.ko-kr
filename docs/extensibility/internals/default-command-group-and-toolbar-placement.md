@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130533"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>기본 명령, 그룹 및 도구 모음 배치
 제품 통일성 및 안정성에 대 한 UI 기본적으로 특정 명령 그룹을 표시 하 고 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령과 명령 그룹에 대 한 정의 제공 합니다. 표준 명령 및 명령 그룹 Vspackage를 사용할 수도 있습니다.  

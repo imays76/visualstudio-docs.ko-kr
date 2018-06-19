@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127108"
 ---
 # <a name="seekstart"></a>SEEK_START
 디스어셈블리 스트림에서 검색을 시작 하려는 위치를 지정 합니다.  

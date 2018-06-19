@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922655"
 ---
 # <a name="insert-new-records-into-a-database"></a>데이터베이스에 새 레코드를 삽입 합니다.
 데이터베이스에 새 레코드를 삽입 하려면 사용할 수 있습니다는 `TableAdapter.Update` 메서드 또는 TableAdapter의 DBDirect 메서드 중 하나 (특히 여 `TableAdapter.Insert` 메서드). 자세한 내용은 참조 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)합니다.

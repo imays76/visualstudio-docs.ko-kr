@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915817"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>코드 분석 체크 인 정책에 대한 버전 호환성
 코드 분석 체크 인 정책을의 서로 다른 버전을 사용 하 여 작성 하 고 평가 해야 하는 경우 [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)], 방법의 차이점을 알고 있어야 [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] 및 [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] 체크 인 정책을 평가 합니다.

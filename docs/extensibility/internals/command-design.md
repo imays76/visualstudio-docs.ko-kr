@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132177"
 ---
 # <a name="command-design"></a>명령 디자인
 VSPackage에 명령을 추가할 때 표시 될 위치를 사용할 수 있으면 하 고 처리 하는 방법 지정 해야 합니다.  

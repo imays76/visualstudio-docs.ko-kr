@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129224"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>에 기여 하는 새 항목 추가 대화 상자
 프로젝트 하위 형식에 대 한 항목의 전체 새 디렉터리를 제공할 수는 **새 항목 추가** 등록 하 여 대화 상자 **항목 추가** 에서 템플릿은 `Projects` 레지스트리 하위 키입니다.  

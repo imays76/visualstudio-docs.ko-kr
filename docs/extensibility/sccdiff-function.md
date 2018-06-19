@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138579"
 ---
 # <a name="sccdiff-function"></a>SccDiff 함수
 이 함수 표시 (또는 필요에 따라 확인에 대 한) 원본에는 로컬 디스크에 현재 파일과 해당 마지막 체크 인 버전 간의 차이점 제어 시스템입니다.  

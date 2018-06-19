@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126912"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>사용자 지정 뷰어와 형식 시각화 도우미
 형식 시각화 도우미는 매우 구체적인 형식으로 데이터를 표시 하는 구성 요소입니다. 이 형식은 전적으로 시각화 도우미의 구현자에 따라, 최종 사용자 또는 타사 공급 업체가 제공한 시각화 도우미의 수입니다.  

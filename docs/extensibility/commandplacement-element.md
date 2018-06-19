@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267977"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 요소
 CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹이 나 메뉴에 포함 될 수 있습니다. CommandPlacement 요소를 사용 하 여 완전히 사용자 인터페이스의 모양을 수정 하기 위해 이러한 항목을 다시 정의할 필요가 없습니다.  

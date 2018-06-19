@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134677"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 이 cookbook 지침과 Visual Studio 이미지 서비스 및 Visual Studio 2015에 도입 된 이미지 카탈로그에 대 한 유용한 정보를 포함 합니다.  
@@ -165,7 +166,7 @@ ms.lasthandoff: 04/16/2018
 |-|-|  
 |**특성**|**정의**|  
 |URI|[필수] 이미지를 로드할 수 수를 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) 응용 프로그램을 사용 하 여: / / / 기관<br />-An 절대 구성 요소 리소스 참조<br />-네이티브 리소스를 포함 하는 파일 경로|  
-|배경|[선택 사항] 유형의 원본을 사용 하려고 합니다. 백그라운드에서 작업을 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *조명:* 연한 배경에 소스를 사용할 수 있습니다.<br /><br /> *어두운:*에 어두운 화면에서 소스를 사용할 수 있습니다.<br /><br /> *고: 대비* 고대비 모드에서 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> *HighContrastLight:* 고대비 모드에서 연한 배경에 소스를 사용할 수 있습니다.<br /><br /> *HighContrastDark:* 고대비 모드에 어두운 화면에서 소스를 사용할 수 있습니다.<br /><br /> 배경 특성을 생략 하는 경우 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> 배경이 *Light*, *어두운*, *HighContrastLight*, 또는 *HighContrastDark*, 소스의 색 반전 되지 됩니다. 배경 생략 되거나로 설정 된 경우 *고 대비*, 소스의 색 반전은 이미지의 제어 **AllowColorInversion** 특성입니다.|  
+|배경|[선택 사항] 유형의 원본을 사용 하려고 합니다. 백그라운드에서 작업을 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *조명:* 연한 배경에 소스를 사용할 수 있습니다.<br /><br /> *어두운:* 에 어두운 화면에서 소스를 사용할 수 있습니다.<br /><br /> *고: 대비* 고대비 모드에서 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> *HighContrastLight:* 고대비 모드에서 연한 배경에 소스를 사용할 수 있습니다.<br /><br /> *HighContrastDark:* 고대비 모드에 어두운 화면에서 소스를 사용할 수 있습니다.<br /><br /> 배경 특성을 생략 하는 경우 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> 배경이 *Light*, *어두운*, *HighContrastLight*, 또는 *HighContrastDark*, 소스의 색 반전 되지 됩니다. 배경 생략 되거나로 설정 된 경우 *고 대비*, 소스의 색 반전은 이미지의 제어 **AllowColorInversion** 특성입니다.|  
 |||  
   
  A \<소스 > 요소는 다음과 같은 선택적 하위 요소 중 하나만 포함할 수 있습니다.  

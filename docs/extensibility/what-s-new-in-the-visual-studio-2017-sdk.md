@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144829"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>어떤&#39;의 새로운 Visual Studio 2017 SDK
 

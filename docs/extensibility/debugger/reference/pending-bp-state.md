@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125918"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 (아직 바인딩되지 않은 중단점) 보류 중인 중단점의 상태를 지정 합니다.  

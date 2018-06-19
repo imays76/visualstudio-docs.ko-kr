@@ -1,14 +1,14 @@
 ---
-title: "PROFILER_RELATIONSHIP_INFO 열거형 | Microsoft Docs"
-ms.custom: 
+title: PROFILER_RELATIONSHIP_INFO 열거형 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: fae69317-6224-4a6a-8e9e-ccaa6a330818
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733933"
 ---
 # <a name="profilerrelationshipinfo-enumeration"></a>PROFILER_RELATIONSHIP_INFO 열거형
 관계에서 개체에 대 한 정보를 나타냅니다. 에 사용 된 [PROFILER_HEAP_OBJECT_RELATIONSHIP 구조체](../../winscript/reference/profiler-heap-object-relationship-structure.md)합니다.  

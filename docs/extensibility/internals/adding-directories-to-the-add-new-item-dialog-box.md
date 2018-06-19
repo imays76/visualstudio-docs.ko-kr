@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127750"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>디렉터리에 추가 된 새 항목 추가 대화 상자
 다음 코드 예제에서는 새로운 집합이 대 한 디렉터리를 등록 하는 방법을 보여 줍니다는 **새 항목 추가** 대화 상자. 에 대 한 디렉터리는 **새 항목 추가** 대화 상자에서 각 프로젝트에 대 한 서로 다릅니다. 디렉터리에서 발견 하는 프로젝트 하위 키 아래에 등록 되며 따라서 \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  

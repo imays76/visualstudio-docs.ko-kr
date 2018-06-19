@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951374"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>아이콘 또는 데코레이터의 가시성 제어
 A *decorator* 아이콘이 나 DSL ()는 도메인 특정 언어의 모양에 표시 되는 텍스트의 줄은 합니다. Decorator 표시 하 고 모델의 속성의 상태에 따라 사라질 수 있습니다. 예를 들어 개인을 나타낼 셰이프를 개인의 성별, 자식, 수에 따라 표시 하는 서로 다른 아이콘이 있을 수 있습니다.

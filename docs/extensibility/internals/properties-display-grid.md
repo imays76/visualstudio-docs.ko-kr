@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134066"
 ---
 # <a name="properties-display-grid"></a>눈금 속성 표시
 **속성** grid 필드 창에 표시 됩니다. 왼쪽된 열에 속성 이름이; 오른쪽 열 속성 값을 포함합니다.  

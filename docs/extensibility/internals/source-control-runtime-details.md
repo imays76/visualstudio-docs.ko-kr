@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130314"
 ---
 # <a name="source-control-runtime-details"></a>소스 제어에 대 한 런타임 세부 정보
 사용자는 마법사와 같은 자동화 컨트롤러를 통해 또는 소스 제어에 파일을 프로젝트에 추가 하는 경우 프로젝트를 소스 제어에 추가 됩니다. 프로젝트를 지정 하지 않습니다 자체에 대 한 소스 제어; 인지 이 원본 제어를 지원 하지만 수동으로에 추가 해야 합니다.  

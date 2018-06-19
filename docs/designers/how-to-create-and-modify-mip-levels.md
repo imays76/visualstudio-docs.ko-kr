@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925627"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>방법: MIP 수준 만들기 및 수정
 이 문서에서는 **이미지 편집기**를 사용하여 질감 공간 LoD(세밀도)에 대한 *MIP 수준*을 생성하고 수정하는 방법을 보여 줍니다.

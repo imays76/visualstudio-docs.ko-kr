@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140370"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 함수
 이 함수는 현재 상태에 대 한 정규화 된 디렉터리 목록이 있는지 검사합니다.  

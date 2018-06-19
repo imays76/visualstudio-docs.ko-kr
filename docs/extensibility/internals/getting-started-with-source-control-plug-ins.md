@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128920"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>소스 제어 플러그 인 시작
 소스 제어 플러그 인을 만들려면 소스 제어 플러그 인 API에 정의 된 함수를 구현 하는 DLL 만들어야 DLL을 등록 한 다음 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 코드 버전 제어에서 사용 하기 위해 사용할 수 있도록 합니다.  

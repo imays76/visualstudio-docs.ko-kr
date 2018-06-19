@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142188"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 이것은에 지정 된 콜백 함수는 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) (선택 사항) 파일 이름 및 디렉터리를 확인 하는 소스 제어의 컬렉션을 업데이트 하는 함수입니다.  

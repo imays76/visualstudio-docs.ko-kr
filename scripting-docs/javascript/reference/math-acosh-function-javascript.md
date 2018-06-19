@@ -1,19 +1,20 @@
 ---
-title: "Math.acosh 함수 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Math.acosh 함수 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 881dd2a0-36a5-403b-a3dc-523d8e1e1317
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639043"
 ---
 # <a name="mathacosh-function-javascript"></a>Math.acosh 함수(JavaScript)
 숫자의 쌍곡 아크코사인(또는 쌍곡선 역코사인)을 반환합니다.  

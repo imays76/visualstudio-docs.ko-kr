@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129260"
 ---
 # <a name="how-to-open-standard-editors"></a>방법: 표준 편집기 열기
 표준 편집기를 열면 IDE 파일에 대 한 프로젝트 관련 편집기를 지정 하는 대신 지정 된 파일 형식에 대해 표준 편집기를 결정 하도록 할 수 있습니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131316"
 ---
 # <a name="source-control-design-decisions"></a>소스 제어에 대 한 디자인 관련 결정
 다음과 같은 디자인 관련 결정 소스 제어를 구현 하는 경우 프로젝트에 대해 고려할 수 있습니다.  

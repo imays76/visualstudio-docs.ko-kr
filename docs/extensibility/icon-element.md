@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126879"
 ---
 # <a name="icon-element"></a>Icon 요소
 아이콘 태그의 guid 특성은 정의 된 비트맵의 guid입니다.  Id 특성 비트맵 스트립의 슬롯을 선택합니다. 이 요소는 선택적입니다.  이 요소를 생략 하면 값 **guidOfficeIcon:msotcidNoIcon** 암시 됩니다.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920549"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>방법: 트랜잭션을 사용 하 여 데이터 저장
 사용 하 여 트랜잭션에서 데이터를 저장 된 <xref:System.Transactions> 네임 스페이스입니다. 사용 된 <xref:System.Transactions.TransactionScope> 개체가 자동으로 관리 되는 트랜잭션에 참여 하도록 합니다.

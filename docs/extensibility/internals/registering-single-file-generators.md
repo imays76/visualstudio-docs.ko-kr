@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132184"
 ---
 # <a name="registering-single-file-generators"></a>단일 파일 생성기를 등록 하는 중
 사용자 지정 도구에서 사용할 수 있도록 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 따라서에 등록 해야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인스턴스화할 수는 특정 프로젝트 형식에 연결 합니다.  

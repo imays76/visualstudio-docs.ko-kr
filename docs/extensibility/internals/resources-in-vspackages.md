@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130954"
 ---
 # <a name="resources-in-vspackages"></a>Vspackage의 리소스
 자체 관리 되는 VSPackage 또는 네이티브 위성 UI Dll에 관리 되는 위성 Dll에서에서 지역화 된 리소스를 포함할 수 있습니다.  

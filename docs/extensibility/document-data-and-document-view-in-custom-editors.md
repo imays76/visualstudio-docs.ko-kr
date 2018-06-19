@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130262"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>문서 데이터와 사용자 지정 편집기에서 문서 보기
 사용자 지정 편집기 두 부분으로 이루어져: 문서 데이터 개체와 문서 뷰 개체입니다. 이름을 통해 알으로 문서 데이터 개체로 텍스트 데이터를 표시할 수를 나타내며 문서 뷰 개체 (또는 "view") 문서 데이터 개체로 표시 하는 하나 이상의 창.  

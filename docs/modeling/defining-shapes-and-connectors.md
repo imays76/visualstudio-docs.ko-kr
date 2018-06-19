@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949425"
 ---
 # <a name="defining-shapes-and-connectors"></a>모양 및 연결선 정의
 DSL(Domain-Specific Language)에서 다이어그램에 정보를 표시하는 데 사용할 수 있는 다양한 기본 모양 형식이 있습니다.

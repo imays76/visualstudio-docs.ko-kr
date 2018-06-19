@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127039"
 ---
 # <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED 필드
 작업 실행 중 상태에 도달 했으므로 하거나 해당 취소를 승인 하 고 예외 없이 완료 전에 취소 되었습니다.  

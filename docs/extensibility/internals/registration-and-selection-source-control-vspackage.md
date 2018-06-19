@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133039"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>등록 및 선택 (소스 제어 VSPackage)
 에 노출 하려면 VSPackage를 등록 해야 하는 소스 제어는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 둘 이상의 소스 제어 VSPackage를 등록 하는 경우 적절 한 시간에 로드 하는 VSPackage 선택할 수 있습니다. 참조 [Vspackage](../../extensibility/internals/vspackages.md) Vspackage 및 등록 하는 방법에 대 한 자세한 내용은 합니다.  

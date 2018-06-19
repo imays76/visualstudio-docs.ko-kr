@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126305"
 ---
 # <a name="registering-the-program"></a>프로그램을 등록합니다.
 디버그 엔진에는 포트를 가져온 후 나타내는 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 인터페이스는 프로그램을 디버깅할 수 있도록 다음 단계는 포트에 등록 합니다. 등록 되 면 프로그램은 다음과 같은 방법 중 하나를 통해 디버깅을 위해 제공 됩니다.  

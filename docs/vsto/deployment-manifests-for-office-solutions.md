@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263492"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office 솔루션의 배포 매니페스트
   배포 매니페스트는 Office 솔루션의 배포 설정에 설명 하 고 현재 응용 프로그램 버전을 식별 하는 XML 파일입니다.  

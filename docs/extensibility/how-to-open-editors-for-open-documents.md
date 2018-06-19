@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129812"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>방법: 열려 있는 문서에 대 한 편집기 열기
 프로젝트 문서 창이 열리기 전에 프로젝트 먼저 결정 해야 여부는 파일이 이미 열려 다른 편집기에 대 한 문서 창에 있습니다. 파일은 프로젝트 관련 편집기에 열거나 수 또는 표준 편집기 중 하나에 등록 된 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  

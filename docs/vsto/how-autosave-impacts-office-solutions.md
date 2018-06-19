@@ -20,6 +20,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548852"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>자동 저장 Office 솔루션에 미치는 영향
 

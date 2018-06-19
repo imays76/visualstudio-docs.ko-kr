@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133408"
 ---
 # <a name="solution-sln-file"></a>솔루션 (합니다. Sln) 파일
 솔루션에 Visual Studio에서 프로젝트를 구성 하기 위한 구조입니다. 솔루션은 프로젝트 (텍스트 기반, 공유).sln 및.suo (이진, 사용자 고유의 솔루션 옵션) 파일에 대 한 상태 정보를 유지 관리합니다. .Suo 파일에 대해 보다 자세한 정보를 참조 하십시오. [솔루션 사용자 옵션 (합니다. Suo) 파일](../../extensibility/internals/solution-user-options-dot-suo-file.md)합니다.  

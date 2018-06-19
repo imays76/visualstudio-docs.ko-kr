@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137342"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 함수
 이 함수에는 선택한 파일 또는 파일의 내용을 체크 아웃 이전 상태로 복원 하는 이전 체크 아웃 작업을 실행 취소 합니다. 파일 체크 아웃 이후에 발생 한 모든 변경 내용이 손실 됩니다.  

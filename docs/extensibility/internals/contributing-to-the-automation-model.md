@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130520"
 ---
 # <a name="contributing-to-the-automation-model"></a>Contributing to the Automation Model
 Visual Studio 환경 사용자 지정에 대 한 자동화 인터페이스의 집합을 제공 합니다. 자동화 모델은 최종 사용자가 Visual Studio 추가 기능 및 확장을 만들 수 있는 개체 모델입니다.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949503"
 ---
 # <a name="property-pages-javascript"></a>속성 페이지, JavaScript
 **속성 페이지**에서 프로젝트 설정에 액세스할 수 있습니다. **속성 페이지**에 표시되는 페이지를 사용하여 프로젝트 속성을 변경할 수 있습니다.

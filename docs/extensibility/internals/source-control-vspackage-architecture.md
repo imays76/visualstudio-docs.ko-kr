@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131896"
 ---
 # <a name="source-control-vspackage-architecture"></a>소스 제어 VSPackage 아키텍처
 소스 제어 패키지 되는 서비스를 사용 하는 VSPackage는는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE를 제공 합니다. 소스 제어 패키지는 원본 제어 서비스와 해당 기능을 제공합니다. 또한, 소스 제어 패키지는 원본 제어 플러그 인에 소스 제어 통합을 보다 더 융통성 대체 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  

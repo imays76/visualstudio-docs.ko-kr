@@ -16,6 +16,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33958531"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>빠른 시작: 기존 코드에서 Python 프로젝트를 만들려면
 

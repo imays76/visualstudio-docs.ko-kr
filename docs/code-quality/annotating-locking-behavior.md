@@ -39,6 +39,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31901530"
 ---
 # <a name="annotating-locking-behavior"></a>잠금 동작에 주석 지정
 다중 스레드 프로그램에서 동시성 버그를 방지하려면 항상 적절한 잠금 규칙을 따르고 SAL 주석을 사용합니다.
