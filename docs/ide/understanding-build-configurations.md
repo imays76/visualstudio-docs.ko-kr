@@ -32,6 +32,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425127"
 ---
 # <a name="understand-build-configurations"></a>빌드 구성 이해
 
