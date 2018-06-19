@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptAuthorProcedure::ParseProcedureText | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptAuthorProcedure.ParseProcedureText
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptAuthorProcedure::ParseProcedureText
 ms.assetid: cb6c29c5-c749-48d7-a6a8-ccbf0f9119ec
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645643"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
 코드 프로시저를 구문 분석 엔진을 제작 하는 스크립트에 코드 프로시저의 텍스트를 추가 하 고 만듭니다는 `IScriptEntry` 코드 프로시저에 해당 하는 개체입니다.  

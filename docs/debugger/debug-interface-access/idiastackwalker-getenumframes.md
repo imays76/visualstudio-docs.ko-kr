@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467510"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 X86에 대 한 스택 프레임 열거자를 검색 플랫폼입니다.  

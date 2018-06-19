@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976434"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>연습: 가상 사용자 동작 차트를 사용하여 문제 격리
 

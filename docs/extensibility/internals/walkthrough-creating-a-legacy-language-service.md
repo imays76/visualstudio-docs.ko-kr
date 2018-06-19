@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144936"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>연습: 레거시 언어 서비스 만들기
 관리 되는 패키지 프레임 워크 (MPF) 언어 클래스를 사용 하 여에서 언어 서비스를 구현 하 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 은 간단 합니다. 언어 서비스, 언어 서비스 자체 및 해당 하는 언어에 대 한 파서를 호스팅하는 VSPackage 필요 합니다.  

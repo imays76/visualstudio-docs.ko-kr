@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147583"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>연습: c + +를 사용 하 여 SDK 만들기
 이 연습에는 네이티브 c + + 수학 라이브러리 SDK, SDK로는 VSIX Visual Studio Extension (), 패키지를 만들고 다음 앱을 만드는 데 사용 하는 방법을 보여 줍니다. 이 연습에서는 다음이 단계도 구분 됩니다.  
@@ -43,9 +44,9 @@ ms.lasthandoff: 04/16/2018
   
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]  
   
-5.  **솔루션 탐색기**, 바로 가기 메뉴를 열고 **솔루션 'NativeMath'**를 선택한 후 **추가**, **새 프로젝트**합니다.  
+5.  **솔루션 탐색기**, 바로 가기 메뉴를 열고 **솔루션 'NativeMath'** 를 선택한 후 **추가**, **새 프로젝트**합니다.  
   
-6.  템플릿 목록에서 확장 **Visual c + +**를 선택한 후는 **Windows 런타임 구성 요소** 템플릿. 에 **이름** 상자를 지정 `NativeMathWRT`를 선택한 후는 **확인** 단추입니다.  
+6.  템플릿 목록에서 확장 **Visual c + +** 를 선택한 후는 **Windows 런타임 구성 요소** 템플릿. 에 **이름** 상자를 지정 `NativeMathWRT`를 선택한 후는 **확인** 단추입니다.  
   
 7.  이 코드와 일치 하도록 Class1.h를 업데이트 합니다.  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
 ##  <a name="createVSIX"></a> NativeMathVSIX 확장 프로젝트를 만들려면  
   
-1.  **솔루션 탐색기**, 바로 가기 메뉴를 열고 **솔루션 'NativeMath'**를 선택한 후 **추가**, **새 프로젝트**합니다.  
+1.  **솔루션 탐색기**, 바로 가기 메뉴를 열고 **솔루션 'NativeMath'** 를 선택한 후 **추가**, **새 프로젝트**합니다.  
   
 2.  템플릿 목록에서 확장 **Visual C#**, **확장성**를 선택한 후 **VSIX 프로젝트**합니다. 에 **이름** 상자를 지정 **NativeMathVSIX**를 선택한 후는 **확인** 단추입니다.
   
@@ -95,7 +96,7 @@ ms.lasthandoff: 04/16/2018
                 \Neutral  
     ```  
   
-9. **솔루션 탐색기**, 바로 가기 메뉴를 열고 **솔루션 'NativeMath'**를 선택한 후 **파일 탐색기에서 폴더 열기**합니다.  
+9. **솔루션 탐색기**, 바로 가기 메뉴를 열고 **솔루션 'NativeMath'** 를 선택한 후 **파일 탐색기에서 폴더 열기**합니다.  
   
 10. **파일 탐색기**, 복사 $SolutionRoot$\NativeMath\NativeMath.h, 한 다음 **솔루션 탐색기**에 **NativeMathVSIX** 프로젝트에서 $는 $SolutionRoot에 붙여 \ NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include\ 폴더입니다.  
   

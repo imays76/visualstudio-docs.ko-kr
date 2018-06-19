@@ -1,13 +1,13 @@
 ---
-title: "multiline 속성 (Regular Expression) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: multiline 속성 (Regular Expression) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - multiline
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - multiline property
 ms.assetid: ca7b276a-1fe2-4189-ac27-f089ab3e9974
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639653"
 ---
 # <a name="multiline-property-regular-expression-javascript"></a>multiline 속성(Regular Expression)(JavaScript)
 여러 줄로 된 플래그의 상태를 나타내는 부울 값을 반환 합니다 (**m**) 정규식 함께 사용 합니다. 기본값은 **false**합니다. 읽기 전용입니다.  

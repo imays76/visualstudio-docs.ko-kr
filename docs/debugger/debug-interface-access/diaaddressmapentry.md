@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459807"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 주소 맵에서 항목을 설명 합니다.  

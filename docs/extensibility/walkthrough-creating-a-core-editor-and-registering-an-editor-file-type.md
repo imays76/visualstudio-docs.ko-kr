@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147411"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>연습: 코어 편집기 연결을 만들고 편집기 파일 형식 등록
 이 연습을 시작 하는 VSPackage를 만드는 방법을 보여 줍니다는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 코어 편집기.myext 파일 이름 확장명을 가진 파일 로드 됩니다.  

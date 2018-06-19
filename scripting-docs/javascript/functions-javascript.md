@@ -1,13 +1,13 @@
 ---
-title: "함수(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 함수(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - intrinsic JavaScript functions
 ms.assetid: e2a72b5a-3edd-43d8-95e8-91721b38c1c1
-caps.latest.revision: 
+caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/13/2018
+ms.locfileid: "27797533"
 ---
 # <a name="functions-javascript"></a>함수(JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 함수는 작업을 수행하고 값을 반환할 수도 있습니다. 경우에 따라 이들 값은 계산 또는 비교 결과입니다. 함수를 "전역 메서드"라고도 합니다.  

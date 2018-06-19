@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966369"
 ---
 # <a name="reporting-load-tests-results-for-test-comparisons-or-trend-analysis"></a>테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고
 

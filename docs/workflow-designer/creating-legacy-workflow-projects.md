@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31969806"
 ---
 # <a name="creating-legacy-workflow-projects"></a>레거시 워크플로 프로젝트 만들기
 

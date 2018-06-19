@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979453"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 SharePoint 응용 프로그램 테스트
 

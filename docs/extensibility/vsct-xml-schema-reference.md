@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143542"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 스키마 참조
 각 요소와 특성 명령 테이블 컴파일러 스키마 요소의 테이블 허용 되는 자식으로 제공합니다.  

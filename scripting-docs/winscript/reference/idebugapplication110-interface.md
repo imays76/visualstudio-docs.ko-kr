@@ -1,16 +1,16 @@
 ---
-title: "IDebugApplication110 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugApplication110 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplication110 Interface
 ms.assetid: ae943133-eb65-4ddc-a29f-9280a82dd8d6
-caps.latest.revision: 
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726063"
 ---
 # <a name="idebugapplication110-interface"></a>IDebugApplication110 인터페이스
 `IDebugApplication110` 의 기능을 확장 하는 인터페이스는 [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)합니다. 구현에서 QueryInterface를 호출 하 여이 인터페이스의 인스턴스를 가져올 수 [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)합니다.  

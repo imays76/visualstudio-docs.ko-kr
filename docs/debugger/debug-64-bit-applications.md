@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461440"
 ---
 # <a name="debug-64-bit-applications"></a>64비트 응용 프로그램 디버그
 로컬 컴퓨터나 원격 컴퓨터에서 실행되는 64비트 응용 프로그램을 디버깅할 수 있습니다.  

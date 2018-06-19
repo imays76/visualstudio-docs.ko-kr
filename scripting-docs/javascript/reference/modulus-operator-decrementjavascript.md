@@ -28,6 +28,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753260"
 ---
 # <a name="remainder-operator--javascript"></a>나머지 연산자 (JavaScript)
 숫자 식의 값을 다른 숫자 식의 값으로 나누고 나머지를 생성 합니다.  

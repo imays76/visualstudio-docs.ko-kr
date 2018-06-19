@@ -1,13 +1,13 @@
 ---
-title: "substring 메서드 (String) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: substring 메서드 (String) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - substrings
 - substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640933"
 ---
 # <a name="substring-method-string-javascript"></a>substring 메서드(String)(JavaScript)
 내에서 지정 된 위치의 부분 문자열을 반환는 `String` 개체입니다.  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="remarks"></a>설명  
  `substring` 의 부분 문자열을 포함 하는 문자열을 반환 하는 메서드 `start` 포함 하지 않고 까지의 `end`합니다.  
   
- **부분 문자열** 메서드의 더 낮은 값을 사용 하 여 `start` 및 `end` 부분 문자열의 시작 지점으로 합니다. 예를 들어 strvar.substring (0, 3**)** 및 (3, 0) strvar.substring 동일한 부분 문자열을 반환 합니다.  
+ **부분 문자열** 메서드의 더 낮은 값을 사용 하 여 `start` 및 `end` 부분 문자열의 시작 지점으로 합니다. 예를 들어 strvar.substring (0, 3 **)** 및 (3, 0) strvar.substring 동일한 부분 문자열을 반환 합니다.  
   
  경우 `start` 또는 `end` 은 `NaN` 또는 0으로 대체 음수 이면 됩니다.  
   

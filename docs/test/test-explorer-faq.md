@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975630"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 테스트 탐색기 FAQ
 

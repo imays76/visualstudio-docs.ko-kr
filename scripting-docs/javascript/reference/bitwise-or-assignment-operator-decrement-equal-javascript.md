@@ -1,13 +1,13 @@
 ---
-title: "비트 OR 할당 연산자 (| =) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 비트 OR 할당 연산자 (| =) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '|='
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - bitwise operators, OR operator
 - OR operator
 ms.assetid: 9b424ff6-4442-4621-b3b6-83e7fd1e5cd5
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633893"
 ---
 # <a name="bitwise-or-assignment-operator--javascript"></a>비트 논리합 할당 연산자(|=)(JavaScript)
 변수 값과 식 값의 비트 OR 연산을 수행하고 결과를 변수에 할당합니다.  

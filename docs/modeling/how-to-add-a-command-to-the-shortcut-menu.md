@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954749"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
 사용자가 DSL(Domain-Specific Language) 관련 작업을 수행할 수 있도록 DSL에 메뉴 명령을 추가할 수 있습니다. 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭하면 상황에 맞는(바로 가기) 메뉴에 명령이 표시됩니다. 특정 상황에서만 메뉴에 표시되도록 명령을 정의할 수 있습니다. 예를 들어 사용자가 특정 형식의 요소나 특정 상태의 요소를 클릭할 때만 메뉴가 표시되도록 지정할 수 있습니다.

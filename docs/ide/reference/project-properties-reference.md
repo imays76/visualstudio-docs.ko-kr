@@ -18,6 +18,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33102656"
 ---
 # <a name="project-properties-reference"></a>프로젝트 속성 참조
 프로젝트 속성을 구성 및 사용자 지정하는 방법을 자세히 알아봅니다.

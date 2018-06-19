@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461862"
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 종료 하는 디버깅은 함수에 정의 된 지점에 있으면, 디버그 시작 지점에 대 한 기호도 식별 되는 `SymTagFuncDebugEnd` 태그입니다.  

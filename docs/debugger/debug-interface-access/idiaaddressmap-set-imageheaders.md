@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458481"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 설정 이미지 헤더 상대 가상 주소 변환을 사용 하도록 설정 합니다.  

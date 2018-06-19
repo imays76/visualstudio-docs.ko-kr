@@ -1,13 +1,13 @@
 ---
-title: "bind 메서드 사용(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: bind 메서드 사용(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this object [JavaScript]
 ms.assetid: f608f95b-3b9d-437a-a67a-5a4ef8f6c07f
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +26,7 @@ ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/05/2018
+ms.locfileid: "28987869"
 ---
 # <a name="using-the-bind-method-javascript"></a>bind 메서드 사용(JavaScript)
 JavaScript `bind` 메서드는 여러 가지 용도가 있습니다. 일반적으로 이 메서드는 다른 컨텍스트에서 실행되는 함수에 대한 실행 컨텍스트를 유지하는 데 사용됩니다. `bind`는 원본 함수와 동일한 본문을 갖는 새 함수를 만듭니다. `bind`로 전달되는 첫 번째 인수는 바인딩된 함수에서 `this` 키워드의 값을 지정합니다. 또한, 추가로 선택적 인수를 `bind`로 전달할 수 있습니다. 다른 사용 예는 [bind 메서드(함수)](../../javascript/reference/bind-method-function-javascript.md)를 참조하세요. `bind`를 사용하여 함수를 부분적으로 적용하는 예제는 [Hilo JavaScript(Windows 스토어)의 비동기 프로그래밍 패턴 및 팁](http://msdn.microsoft.com/library/windows/apps/jj649740.aspx)을 참조하세요.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967141"
 ---
 # <a name="how-to-add-comments-while-analyzing-a-completed-load-test"></a>방법: 완료된 부하 테스트를 분석하는 동안 주석 추가
 

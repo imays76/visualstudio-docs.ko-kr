@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464578"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 기호의 클래스 부모에 대 한 참조를 검색합니다.  

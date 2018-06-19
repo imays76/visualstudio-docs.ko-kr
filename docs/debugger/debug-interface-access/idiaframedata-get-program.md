@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459599"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 현재 함수를 호출 하기 전에 설정 하는 레지스터를 계산 하는 데 사용 되는 프로그램 문자열을 검색 합니다.  

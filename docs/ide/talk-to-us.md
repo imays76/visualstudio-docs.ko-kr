@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064076"
 ---
 # <a name="talk-to-us"></a>의견 보내기
 제품과 설명서를 개선할 수 있는 아이디어를 보내 주세요. 항상 개인적으로 회신을 드릴 수는 없지만 피드백을 담당자에게 전해 드리겠습니다.  

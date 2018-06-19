@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144569"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 파일의 구조
 VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함합니다. Visual Studio에서 [Content_Types].xml 파일을 사용 하 여 패키지를 설치 하지만 파일 자체를 설치 하지 않습니다.  

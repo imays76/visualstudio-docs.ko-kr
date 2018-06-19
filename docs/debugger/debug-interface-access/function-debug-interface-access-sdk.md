@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465540"
 ---
 # <a name="function-debug-interface-access-sdk"></a>함수(디버그 인터페이스 액세스 SDK)
 각 함수로 식별 되는 `SymTagFunction` 기호입니다.  

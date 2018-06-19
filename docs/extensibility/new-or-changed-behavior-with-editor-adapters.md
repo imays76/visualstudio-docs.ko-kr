@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148664"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>편집기 어댑터로 새롭거나 변경 된 동작
 편집기 어댑터의 동작에 다음과 같은 차이점을 알고 있어야 이전 버전의 Visual Studio 핵심 편집기에 대해 작성 된 코드를 업데이트 하는 새로운 API를 사용 하는 대신 편집기 어댑터 (또는 shim)를 사용 하려는 경우 와 관련 하 여 이전 코어 편집기입니다.  

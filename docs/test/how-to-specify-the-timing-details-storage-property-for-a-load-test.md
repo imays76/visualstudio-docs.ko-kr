@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974059"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 타이밍 정보 저장소 속성 지정
 

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458992"
 ---
 # <a name="com-debugging-tools"></a>COM 디버깅 도구
 이 항목에서는 COM 프로그램의 테스트 및 검사를 도와 주는 도구를 소개합니다.  

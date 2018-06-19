@@ -25,6 +25,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753273"
 ---
 # <a name="operators-javascript"></a>연산자(JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 산술, 논리, 비트 연산, 할당 및 일부 기타 연산자를 포함한 모든 범위의 연산자가 있습니다. 설명 및 예제를 보려면 특정 연산자에 대한 항목을 참조하세요.  

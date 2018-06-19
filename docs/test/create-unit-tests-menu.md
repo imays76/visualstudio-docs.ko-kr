@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31970402"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>단위 테스트 만들기 명령을 사용하여 단위 테스트 메서드 스텁 만들기
 

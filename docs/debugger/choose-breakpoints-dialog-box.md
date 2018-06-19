@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458247"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>중단점 선택 대화 상자
 **중단점 선택** 에서 모호한 입력에서 중단점을 설정 하려고 할 때 대화 상자가 열립니다는 **새 중단점** 대화 상자. 모호한 입력의 일반적인 예로 오버 로드 된 함수 이름입니다.  

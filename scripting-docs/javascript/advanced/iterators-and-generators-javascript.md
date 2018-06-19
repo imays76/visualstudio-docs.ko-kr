@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977272"
 ---
 # <a name="iterators-and-generators-javascript"></a>반복기 및 생성기(JavaScript)
 반복기는 목록처럼 컨테이너 개체를 트래버스하는 데 사용되는 개체입니다. JavaScript에서 반복기 개체는 고유한 기본 제공 개체가 아니라 `next` 메서드를 구현하여 컨테이너 개체의 다음 항목에 액세스하는 개체입니다.  

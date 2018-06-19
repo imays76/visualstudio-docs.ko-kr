@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976899"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>방법: 어려운 문제 디버깅에 도움이 되는 IntelliTrace 데이터 수집
 

@@ -1,12 +1,13 @@
 ---
-title: "JavaScript 런타임 오류 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 런타임 오류 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT-32725
@@ -38,7 +39,7 @@ helpviewer_keywords:
 - errors [JavaScript]
 - run-time errors, JavaScript
 ms.assetid: c111469d-8f31-4bde-9d46-16d58775db7d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -47,6 +48,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640803"
 ---
 # <a name="javascript-run-time-errors"></a>JavaScript 런타임 오류
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 런타임 오류는 시스템이 실행할 수 없는 작업을 스크립트에서 수행하려고 시도하면 발생하는 오류입니다. 변수 식을 평가하거나 메모리를 할당할 때 런타임 오류가 발생할 수 있습니다.  

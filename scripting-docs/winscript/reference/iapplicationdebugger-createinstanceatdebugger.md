@@ -1,11 +1,11 @@
 ---
 title: IApplicationDebugger::CreateInstanceAtDebugger | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IApplicationDebugger.CreateInstanceAtDebugger
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IApplicationDebugger::CreateInstanceAtDebugger
 ms.assetid: 6763afac-c86a-4e88-9580-77108fb242fb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725773"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
 디버거 프로세스에서 코드에 의해 개체 만들기를 허용 하 고 디버거 프로세스 아웃 즉 합니다.  

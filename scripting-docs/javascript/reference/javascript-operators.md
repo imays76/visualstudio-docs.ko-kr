@@ -25,6 +25,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753286"
 ---
 # <a name="javascript-operators"></a>JavaScript 연산자
 다음 표에서는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 연산자를 보여 줍니다.  

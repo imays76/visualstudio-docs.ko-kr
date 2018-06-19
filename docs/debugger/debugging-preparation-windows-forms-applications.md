@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471676"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비: Windows Forms 응용 프로그램
 Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만듭니다. 이러한 형식의 응용 프로그램은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 쉽게 디버깅할 수 있습니다. 자세한 내용은 참조 [Windows 응용 프로그램 프로젝트 만들기](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)합니다.  

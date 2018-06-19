@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965548"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 임계값 규칙 추가
 

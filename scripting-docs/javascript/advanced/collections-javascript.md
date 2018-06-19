@@ -1,19 +1,20 @@
 ---
-title: "컬렉션(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 컬렉션(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 23c26185-6a7b-4b69-9d22-63e1841b4905
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27783054"
 ---
 # <a name="collections-javascript"></a>컬렉션(JavaScript)
 [Map](../../javascript/reference/map-object-javascript.md), [Set](../../javascript/reference/set-object-javascript.md) 및 [WeakMap](../../javascript/reference/weakmap-object-javascript.md)의 컬렉션 개체를 사용하여 값과 개체를 저장할 수 있습니다. 이러한 개체는 인덱스 대신 키 또는 값을 사용하여 멤버를 추가 및 검색하기 위한 편리한 메서드를 제공합니다. 인덱스를 사용하여 컬렉션의 멤버에 액세스하려면 `Array` 개체를 사용합니다. 자세한 내용은 [배열 사용](../../javascript/advanced/using-arrays-javascript.md)을 참조하세요.  

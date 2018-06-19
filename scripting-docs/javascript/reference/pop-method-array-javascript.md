@@ -1,13 +1,13 @@
 ---
-title: "pop 메서드 (Array) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: pop 메서드 (Array) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - pop
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Pop method
 ms.assetid: 4fae7f98-29f1-4041-ba43-601f2e5145ec
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639283"
 ---
 # <a name="pop-method-array-javascript"></a>pop 메서드(Array)(JavaScript)
 배열의 마지막 요소를 제거하여 반환합니다.  

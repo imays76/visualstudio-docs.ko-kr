@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457867"
 ---
 # <a name="basetype"></a>BaseType
 기본 형식으로 식별 됩니다 `SymTagBaseType` 기호입니다.  

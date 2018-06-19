@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143893"
 ---
 # <a name="strings-element"></a>문자열 요소
 문자열 요소 있어야 최소한 **ButtonText** 자식 요소입니다. 다른 모든 자식 요소는 선택적입니다. 와 같은 잘못 된 XML 문자 '&' 및 ' <' 엔터티로 코드를 작성 해야 합니다 ('&amp;'및'&lt;' 등).  

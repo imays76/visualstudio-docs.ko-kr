@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464328"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 로컬 기호는 유효한 주소 범위의 길이 반환 합니다.  

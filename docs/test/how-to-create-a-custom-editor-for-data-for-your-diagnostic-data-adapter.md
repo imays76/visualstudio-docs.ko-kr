@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976310"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 데이터용 사용자 지정 편집기 만들기
 

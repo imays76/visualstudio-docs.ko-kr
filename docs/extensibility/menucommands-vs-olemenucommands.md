@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147192"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 및 OleMenuCommand
 <xref:System.ComponentModel.Design.MenuCommand> 또는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체에서 파생하고 적절한 이벤트 처리기를 구현하여 메뉴 명령을 만들 수 있습니다. 대부분의 경우 <xref:System.ComponentModel.Design.MenuCommand>를 VSPackage 프로젝트 템플릿으로 사용할 수 있지만 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>를 사용해야 할 때가 있습니다.  

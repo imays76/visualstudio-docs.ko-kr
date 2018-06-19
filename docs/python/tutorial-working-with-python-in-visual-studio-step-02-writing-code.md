@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031552"
 ---
 # <a name="step-2-writing-and-running-code"></a>2단계 - 코드 작성 및 실행
 

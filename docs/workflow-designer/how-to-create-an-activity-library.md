@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974046"
 ---
 # <a name="how-to-create-an-activity-library"></a>방법: 활동 라이브러리 만들기
 사용자 지정 활동은 워크플로의 특정 비즈니스 프로세스를 모델링하는 데 사용됩니다. 시각적으로 Windows 워크플로 디자이너를 사용 하 여 이러한 사용자 지정 활동을 만들 수 있도록 활동 라이브러리 템플릿은 Visual Studio 2010에서 제공 되었습니다.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148739"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio에 대 한 색 값 참조
 이 항목은 새 색 토큰을 만들기에 대 한 참조입니다. 새 UI를 만들 때 각 주제에 대 한 색 및 고대비 테마의 해당 요소에 대 한 시스템 색 이름을 선택 하려면 기존 UI에서 유사한 색을 사용할 수 있습니다. 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464289"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 사용 하는 함수에 포함 되어 있는지 여부를 지정 하는 플래그를 검색는 [setjmp](/cpp/c-runtime-library/reference/setjmp) 명령 (이루는 [longjmp](/cpp/c-runtime-library/reference/longjmp) 명령, 예외 처리의 C 스타일 메서드를 형성 하는 이러한).  

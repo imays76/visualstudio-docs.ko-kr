@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31971547"
 ---
 # <a name="runtime-activity-designers"></a>런타임 활동 디자이너
 Runtime 활동 디자이너는 워크플로 활동을 지속하고 종료하는 데 사용됩니다. 이 섹션에 포함 된 항목 워크플로 디자이너의 활동 디자이너를 사용 하는 방법에 지침을 제공 합니다.

@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466181"
 ---
 # <a name="continuing-execution-after-an-exception"></a>예외 후 실행 계속
 예외로 인해 디버거에서 실행을 중단 될 때 표시 됩니다는 **예외 도우미**, 기본적으로 합니다. 사용 하지 않도록 설정한 경우는 **예외 도우미** 에 **옵션** 대화 상자, 표시 됩니다는 **예외 도우미** (C# 또는 Visual Basic) 또는 **예외**  대화 상자 (c + +).  

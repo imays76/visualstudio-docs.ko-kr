@@ -1,13 +1,13 @@
 ---
-title: "JavaScript 이후 버전 예약어 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 이후 버전 예약어 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - extends_JavaScriptKeyword
@@ -31,7 +31,7 @@ dev_langs:
 helpviewer_keywords:
 - reserved keywords (JavaScript)
 ms.assetid: 570de156-8e5c-413c-ac04-51120bdbb634
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -40,6 +40,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637513"
 ---
 # <a name="javascript-future-reserved-words"></a>JavaScript 이후 버전 예약어
 JavaScript에서 미래의 예약 된 키워드 수 사용 안 식별자로 하지만 현재 버전에서 특별 한 의미를 갖습니다.  

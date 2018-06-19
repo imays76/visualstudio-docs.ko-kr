@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973296"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>방법: 상태 시스템 워크플로 라이브러리 만들기(레거시)
 

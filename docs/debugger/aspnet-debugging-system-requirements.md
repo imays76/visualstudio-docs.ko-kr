@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466372"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 디버깅: 시스템 요구 사항
 이 항목에서는 다음과 같은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 디버깅 시나리오에 대한 소프트웨어 및 보안 요구 사항을 설명합니다.  

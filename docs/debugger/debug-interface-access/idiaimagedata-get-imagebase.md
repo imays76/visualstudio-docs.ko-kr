@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458683"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 여기서는 이미지의 기준이 되는 메모리 위치를 검색 합니다.  

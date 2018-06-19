@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31976691"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>프로젝트에 사용되는 Python 환경을 할당하는 방법
 

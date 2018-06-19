@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032257"
 ---
 # <a name="debugging-your-python-code"></a>Python 코드 디버깅
 

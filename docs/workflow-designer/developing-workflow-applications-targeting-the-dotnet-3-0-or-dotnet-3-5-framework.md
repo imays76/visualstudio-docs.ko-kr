@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968708"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>.NET 3.0 또는 .NET 3.5 Framework를 대상으로 하는 워크플로 응용 프로그램 개발
 

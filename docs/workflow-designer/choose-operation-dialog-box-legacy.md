@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975584"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>작업 선택 대화 상자(레거시)
 

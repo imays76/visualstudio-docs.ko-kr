@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459414"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 문이나 식이 끝나는 1부터 소스 줄 번호를 검색 합니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142778"
 ---
 # <a name="symbols-element"></a>기호 요소
 Guid 및 다른 VSCT 요소에 의해 사용 되는 Id를 정의 합니다. 비관리 코드에 대 한이 정보는 일반적으로 제공 하 여 지정 된 헤더 파일에서 [Extern 요소](../extensibility/extern-element.md)합니다. 코드에서는이 정보를 정의 하는 기호 요소의 자식 요소를 관리 합니다.  

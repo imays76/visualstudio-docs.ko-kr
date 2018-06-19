@@ -1,19 +1,20 @@
 ---
-title: "WeakSet 개체 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: WeakSet 개체 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: f97e6e7c-d678-4e32-978e-d949a7cafa3a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641603"
 ---
 # <a name="weakset-object-javascript"></a>WeakSet 개체(JavaScript)
 임의의 형식일 수 있는 고유 개체 컬렉션입니다.  

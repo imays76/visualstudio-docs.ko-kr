@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459496"
 ---
 # <a name="arraytype"></a>ArrayType
 배열으로 식별 되는 `SymTagArray` 기호입니다.  

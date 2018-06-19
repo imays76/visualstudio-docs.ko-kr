@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145414"
 ---
 # <a name="writing-to-the-user-settings-store"></a>사용자 설정 저장소에 쓰기
 사용자 설정은 같은 쓰기 가능 설정이 **도구 / 옵션** 대화 상자, 속성 창 및 다른 특정 대화 상자. Visual Studio 확장명 적은 양의 데이터를 저장 하려면이 사용할 수 있습니다. 이 연습에서는 읽기 및 사용자 설정 저장소에 기록 하 여 Visual Studio에는 외부 도구도 메모장을 추가 하는 방법을 보여 줍니다.  

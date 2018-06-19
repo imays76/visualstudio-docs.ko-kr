@@ -1,19 +1,20 @@
 ---
-title: "subarray 메서드 (Uint8ClampedArray) | Microsoft Docs"
-ms.custom: 
+title: subarray 메서드 (Uint8ClampedArray) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 309ed9e8-5805-47ab-b3ed-501cae1323dd
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640553"
 ---
 # <a name="subarray-method-uint8clampedarray"></a>subarray 메서드(Uint8ClampedArray)
 새 가져옵니다 [Uint8ClampedArray](../../javascript/reference/uint8array-object.md) 볼 수는 [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) 고 하위 배열의 첫 번째 및 마지막 멤버를 지정 하는이 배열에 대 한 저장소입니다.  

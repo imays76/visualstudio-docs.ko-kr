@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973221"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>방법: 순차 워크플로 콘솔 응용 프로그램 만들기(레거시)
 

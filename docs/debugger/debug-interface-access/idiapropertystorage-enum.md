@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459092"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 이 집합 내의 속성에 대 한 열거자를 가져옵니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464799"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 데이터 기호 집계 또는 다른 기호;의 컬렉션으로 분리 되었습니다 있는지 여부를 지정 하는 플래그를 검색 합니다. 컴파일러는 실제로 더 큰 기호의 일부 경우에 별도 엔터티로 기호를 처리 합니다.  

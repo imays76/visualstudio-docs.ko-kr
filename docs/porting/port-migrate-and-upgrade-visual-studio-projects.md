@@ -24,6 +24,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032205"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조
 

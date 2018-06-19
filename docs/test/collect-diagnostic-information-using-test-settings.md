@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974886"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>테스트 설정을 사용하여 진단 정보 수집
 

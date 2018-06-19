@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031184"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 구독자 검색 및 필터링
 Visual Studio 구독 관리 포털을 사용하면 다양한 조건에 따라 구독자의 특정 하위 집합을 찾을 수 있습니다. 이름, 이메일 주소, 구독 수준 및 기타 다양한 정보를 기준으로 구독자 목록을 필터링할 수 있습니다. 

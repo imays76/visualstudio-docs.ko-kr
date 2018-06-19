@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458455"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>사용자 지정(디버그 인터페이스 액세스 SDK)
 일부 컴파일러에서는 표준 어휘 기호 형식으로 식별 되지 않은 기호를 소개 합니다. 이러한 기호에 의해 식별 됩니다는 `SymTagCustom` 태그입니다.  

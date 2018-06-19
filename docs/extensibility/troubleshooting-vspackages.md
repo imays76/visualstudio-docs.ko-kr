@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146198"
 ---
 # <a name="troubleshooting-vspackages"></a>Vspackage를 문제 해결
 다음은 일반적인 문제는 VSPackage와 다를 수 있으며 문제를 해결 하기 위한 팁입니다.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  레지스트리의 패키지 섹션에서 VSPackage의 CLSID를 찾습니다.  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<버전 >*\Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<버전 >* \Packages  
   
     2.  SatelliteDll 하위 키를 제공한 경로가 정확한 지 확인 합니다.  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  비관리 코드에 대 한 찾기에 VSPackage의 CLSID는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID 레지스트리 노드:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<버전 >*\CLSID  
+     HKLM\Software\Microsoft\Visual Studio\\*\<버전 >* \CLSID  
   
  InprocServer32 항목 VSPackage dll의 올바른 경로 있는지 확인 합니다.  
   

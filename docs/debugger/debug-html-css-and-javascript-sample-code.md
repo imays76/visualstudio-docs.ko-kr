@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456795"
 ---
 # <a name="debug-html-and-css-sample-code"></a>샘플 코드를 HTML 및 CSS 디버그
   

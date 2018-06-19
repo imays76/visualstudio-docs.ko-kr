@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967910"
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>원격 컴퓨터에서 워크플로 디버깅(레거시)
 
