@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120637"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 이 인터페이스의 또는 함수를 단계별로 실행 후 디버그 엔진 (DE)에 의해 세션 디버그 관리자 (SDM)에 전송 됩니다.  

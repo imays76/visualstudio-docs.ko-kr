@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115439"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 이 인터페이스는 식 계산에 대 한 컨텍스트를 나타냅니다.  

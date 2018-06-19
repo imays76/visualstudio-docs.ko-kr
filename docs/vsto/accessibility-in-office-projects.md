@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262319"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 프로젝트의 내게 필요한 옵션
   Microsoft Visual Studio 및 Microsoft Office 내게 필요한 옵션 표준 요구 사항을 충족 하는 사용자 지정 솔루션을 구축할 수 있도록 하는 여러 접근성 기능이 포함 됩니다. Microsoft는 웹에서 내게 필요한 옵션에 대 한 지침을 게시합니다. 자세한 내용은 참조는 [내게 필요한 옵션 웹 사이트](http://go.microsoft.com/fwlink/?LinkID=37113)합니다.  

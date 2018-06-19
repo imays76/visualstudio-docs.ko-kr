@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120038"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 이 인터페이스는 프로세스 및 프로그램 만들기 및 소멸 특정 포트에서의 수신기를 (일반적으로 세션 디버그 관리자 [SDM] 또는 디버그 엔진)에 게 알립니다. 프로세스 및 포트에서 실행 중인 프로그램의 실시간 보기를 표시 하이 정보를 사용할 수 있습니다.  

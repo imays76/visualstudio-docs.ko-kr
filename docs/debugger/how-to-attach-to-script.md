@@ -25,6 +25,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454347"
 ---
 # <a name="how-to-attach-to-script"></a>방법: 스크립트에 연결
 이 항목에서는 디버깅을 위해 스크립트 파일에 Visual Studio 디버거를 수동으로 연결하는 방법에 대해 설명합니다.  

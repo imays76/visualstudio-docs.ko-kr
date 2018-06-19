@@ -20,6 +20,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865337"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>연습: 생성된 된 지시문 프로세서를 호스트에 연결
 

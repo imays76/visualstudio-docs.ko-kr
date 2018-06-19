@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266374"
 ---
 # <a name="c-library-reference"></a>C 라이브러리 참조
 이 섹션에는 동시성 시각화 도우미 SDK에 대한 참조 정보가 포함되어 있습니다.  

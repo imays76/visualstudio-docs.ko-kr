@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549105"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>방법: 사용할 XML 스키마를 선택 합니다.
 

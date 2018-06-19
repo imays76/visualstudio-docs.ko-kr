@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575860"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 작업
 지정된 어셈블리에 종속된 모든 어셈블리를 결정합니다. 여기에는 2차 및 `n`차 종속성이 포함됩니다.  

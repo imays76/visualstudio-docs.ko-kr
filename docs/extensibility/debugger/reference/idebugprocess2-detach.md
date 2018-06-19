@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114218"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 모든 프로그램 프로세스에서 분리 하 여이 프로세스에서 디버거를 분리 합니다.  

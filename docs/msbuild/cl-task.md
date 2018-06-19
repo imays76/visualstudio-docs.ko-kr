@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578057"
 ---
 # <a name="cl-task"></a>CL 작업
 Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행(.exe) 파일, 동적 연결 라이브러리(.dll) 파일 또는 코드 모듈(.netmodule) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.  

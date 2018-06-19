@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572907"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName 작업
 지정된 .resx 파일 이름 또는 기타 리소스에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 스타일 매니페스트 이름을 만듭니다.  

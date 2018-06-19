@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122849"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 이 메서드를 기준으로 알려진 레지스트리 값을 설정 합니다.  
