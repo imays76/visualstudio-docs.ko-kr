@@ -1,13 +1,13 @@
 ---
-title: "GetObject 함수 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: GetObject 함수 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - GetObject
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - GetObject function
 ms.assetid: 62efcdbc-8b86-491d-9000-ef38aa9942a9
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637463"
 ---
 # <a name="getobject-function-javascript"></a>GetObject 함수(JavaScript)
 파일에서 자동화 개체에 대 한 참조를 반환합니다.  

@@ -1,12 +1,13 @@
 ---
-title: "배열 사용(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 배열 사용(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: 785c5acd-b8b3-4152-af9a-dd42ecdd75ba
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569163"
 ---
 # <a name="using-arrays-javascript"></a>배열 사용(JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]의 배열은 *스파스*입니다. 즉, 0, 1 및 2로 번호가 지정된 세 개의 요소가 포함된 배열이 있으면 요소 3~49를 고려하지 않으면서 요소 50을 만들 수 있습니다. 배열에 자동 길이 변수(배열 길이 자동 모니터링에 대한 설명은 [내장 개체](../../javascript/intrinsic-objects-javascript.md) 참조)가 있으면 길이 변수는 4가 아니라 51로 설정됩니다. 요소의 번호를 지정할 때 간격이 없는 배열을 만들 수 있지만 필수는 아닙니다.  

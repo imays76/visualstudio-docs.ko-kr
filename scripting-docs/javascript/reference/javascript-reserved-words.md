@@ -1,13 +1,13 @@
 ---
-title: "JavaScript 예약어 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 예약어 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - reserved words
 ms.assetid: ab2c246c-99c7-4594-b598-c91909653e09
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637683"
 ---
 # <a name="javascript-reserved-words"></a>JavaScript 예약어
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]다양 한 식별자로 사용할 수 없는 예약 된 단어에 있습니다. 예약 된 단어에 특정 의미를 지니는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 언어, 언어 구문의 일부인 것 처럼 합니다. 예약어를 사용 하 여 스크립트를 로드 하는 경우 컴파일 오류가 발생 합니다.  

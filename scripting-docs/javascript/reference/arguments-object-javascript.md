@@ -1,13 +1,13 @@
 ---
-title: "arguments 개체 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: arguments 개체 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - arguments
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - arguments, arguments object
 - arguments object
 ms.assetid: 5eb79ca9-bbb8-4a42-aaf5-16a93ecb425f
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634223"
 ---
 # <a name="arguments-object-javascript"></a>arguments 개체(JavaScript)
 현재 실행 중인 함수 및 해당 함수를 호출한 함수에 대한 인수를 나타내는 개체입니다.  

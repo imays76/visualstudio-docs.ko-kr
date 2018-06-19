@@ -1,12 +1,13 @@
 ---
-title: "if... else 문 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: if... else 문 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - else_JavaScriptKeyword
@@ -19,7 +20,7 @@ helpviewer_keywords:
 - if statement, if...else
 - loop structures, if...else statements
 ms.assetid: dfbe86e8-9c1e-4ef5-bb9c-7d1db7ce2506
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637333"
 ---
 # <a name="ifelse-statement-javascript"></a>if...else 문(JavaScript)
 식의 값에 따라 문 그룹을 조건부로 실행합니다.  

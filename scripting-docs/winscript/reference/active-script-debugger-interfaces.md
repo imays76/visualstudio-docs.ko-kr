@@ -1,17 +1,17 @@
 ---
-title: "액티브 스크립트 디버거 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: 액티브 스크립트 디버거 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugger interfaces
 - activdbg.h
 ms.assetid: bf4750b1-4e58-442b-ab56-254e640de61d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642673"
 ---
 # <a name="active-script-debugger-interfaces"></a>액티브 스크립트 디버거 인터페이스
 activdbg.h 및 activdbg100.h 헤더 파일은 이 섹션에 나열된 인터페이스, 열거형 및 구조를 제공합니다. 이 헤더 파일은 스크립트를 디버깅하기 위한 것입니다.  

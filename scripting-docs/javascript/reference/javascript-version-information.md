@@ -25,6 +25,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753499"
 ---
 # <a name="javascript-version-information"></a>JavaScript 버전 정보
 각 버전의 JavaScript마다 지원되는 JavaScript 요소 집합이 다릅니다. [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 앱은 Internet Explorer와 조금 다른 기능 집합을 지원합니다.  

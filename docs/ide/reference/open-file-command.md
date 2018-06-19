@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703823"
 ---
 # <a name="open-file-command"></a>파일 열기 명령
 기존 파일을 열고 편집기를 지정할 수 있습니다.

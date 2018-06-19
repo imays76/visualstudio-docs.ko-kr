@@ -1,12 +1,13 @@
 ---
-title: "WinRTError 개체 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: WinRTError 개체 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - WinRTError object [JavaScript]
 - JavaScript, WinRTError object
 ms.assetid: d75ab8e5-e729-4d86-90fd-ea228c30dd66
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640893"
 ---
 # <a name="winrterror-object-javascript"></a>WinRTError 개체(JavaScript)
 Windows 런타임 호출 시 오류를 나타내는 HRESULT가 반환되면 JavaScript는 해당 HRESULT를 특수한 Windows 런타임 오류로 변환합니다. 이 오류는 Windows 런타임을 사용할 수 있을 때 전역 JavaScript 네임스페이스의 일부분으로 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 앱에서만 사용 가능합니다.  

@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::AddTypeLib | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.AddTypeLib
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_AddTypeLib
 ms.assetid: 8e507ea8-c80a-471c-b482-ae753c6e8595
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640873"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 스크립트에 대 한 네임 스페이스에 형식 라이브러리를 추가합니다. 이 비슷합니다는 `#include` C/c + +에서 지시문입니다. 클래스 정의 같은 미리 정의 된 항목의 집합을 통해 `typedefs`, 명명 된 스크립트에 사용할 수 있는 런타임 환경에 추가할 상수 및 합니다.  

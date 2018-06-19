@@ -1,13 +1,13 @@
 ---
-title: "비트 오른쪽 시프트 연산자 (&gt;&gt;) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 비트 오른쪽 시프트 연산자 (&gt;&gt;) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '>>'
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - '>> operator, bitsets'
 - bitwise operators, right shift operator
 ms.assetid: 89dc57e0-0b0d-49a4-a8ed-56d8bb20f3e3
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634273"
 ---
 # <a name="bitwise-right-shift-operator-gtgt-javascript"></a>비트 오른쪽 시프트 연산자 (&gt;&gt;) (JavaScript)
 오른쪽 부호를 유지 하는 식의 비트를 이동 합니다.  

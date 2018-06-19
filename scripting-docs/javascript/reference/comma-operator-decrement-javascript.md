@@ -1,13 +1,13 @@
 ---
-title: "쉼표 연산자 (,) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 쉼표 연산자 (,) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '%2C'
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - comma operator
 ms.assetid: 699fa0bf-cd0a-45ee-a291-2fbed4ecd470
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634183"
 ---
 # <a name="comma-operator--javascript"></a>쉼표 연산자(,)(JavaScript)
 두 식을 순차적으로 실행합니다.  

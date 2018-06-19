@@ -1,12 +1,13 @@
 ---
-title: "Object.getOwnPropertyNames 함수 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Object.getOwnPropertyNames 함수 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - getOwnPropertyNames method [JavaScript]
 - Object.getOwnPropertyNames method [JavaScript]
 ms.assetid: 59f4b6b1-02be-44b3-a06c-a5ca8f70c3d8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639933"
 ---
 # <a name="objectgetownpropertynames-function-javascript"></a>Object.getOwnPropertyNames 함수(JavaScript)
 개체의 고유 속성의 이름을 반환합니다. 개체의 고유한 속성은 해당 개체에 직접 정의 되 고 개체의 프로토타입에서 상속 되지 않습니다. 개체의 속성에는 필드 (개체) 및 함수를 모두 포함 됩니다.  

@@ -1,16 +1,16 @@
 ---
-title: "IApplicationDebuggerUI 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IApplicationDebuggerUI 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IApplicationDebuggerUI interface
 ms.assetid: b8828817-ca24-4012-802c-7dcaeea65dc8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725143"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>IApplicationDebuggerUI 인터페이스
 디버거 통합된 개발 환경 (IDE)에서 구현 된 (외에 `IApplicationDebugger`) 디버거 사용자 인터페이스 (UI)를 보다 상세하게 외부 구성 요소를 제공 합니다.  

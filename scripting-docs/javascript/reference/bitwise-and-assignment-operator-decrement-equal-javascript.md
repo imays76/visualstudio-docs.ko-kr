@@ -1,13 +1,13 @@
 ---
-title: "비트 논리곱 할당 연산자 (&amp;=) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 비트 논리곱 할당 연산자 (&amp;=) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '&='
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - AND operator
 - bitwise operators, AND operator
 ms.assetid: e7e2eabb-4fc1-4fdc-9dd8-1e6d715371fa
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634043"
 ---
 # <a name="bitwise-and-assignment-operator-amp-javascript"></a>비트 논리곱 할당 연산자 (&amp;=) (JavaScript)
 변수 값에 비트 AND 연산의 결과 식의 값을 설정 합니다. 변수 및 식 32 비트 정수로 처리 됩니다.  

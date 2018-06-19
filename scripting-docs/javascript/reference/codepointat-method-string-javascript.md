@@ -1,19 +1,20 @@
 ---
-title: "codePointAt 메서드 (String) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: codePointAt 메서드 (String) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 7979018f-1be3-4a13-9e8f-c84c7ed35288
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633613"
 ---
 # <a name="codepointat-method-string-javascript"></a>codePointAt 메서드(문자열)(JavaScript)
 유니코드 UTF-16 문자에 대한 코드 포인트를 반환합니다.  

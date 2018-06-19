@@ -1,13 +1,13 @@
 ---
-title: "인코딩할 URI에 잘못 된 문자가 | Microsoft Docs"
-ms.custom: 
+title: 인코딩할 URI에 잘못 된 문자가 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5024
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a3f0fdbb-8d4b-41ae-a396-43dfc9483760
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632933"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>인코딩될 URI에 잘못된 문자가 있습니다.
 문자열 URI (Uniform Resource Identifier)로 인코딩하 하려고 했지만 잘못 된 문자를 포함 합니다. 대부분의 문자 Uri에 변환 된 문자열 내 유효 하지만, 일부 유니코드 문자 시퀀스를 사용할 수 없습니다.  

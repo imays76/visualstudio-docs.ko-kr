@@ -1,13 +1,13 @@
 ---
-title: "JSON 개체 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: JSON 개체 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JSON
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - JSON object
 ms.assetid: 0279a0e0-70bf-451a-a78e-0da4e2fdeb9a
-caps.latest.revision: 
+caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638053"
 ---
 # <a name="json-object-javascript"></a>JSON 개체(JavaScript)
 JSON(JavaScript Object Notation) 형식 간 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 값을 변환하는 함수를 제공하는 내장 개체입니다. `JSON.stringify` 함수는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 값을 JSON 텍스트로 serialize합니다. `JSON.parse` 함수는 JSON 텍스트를 deserialize하여 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 값을 생성합니다.  

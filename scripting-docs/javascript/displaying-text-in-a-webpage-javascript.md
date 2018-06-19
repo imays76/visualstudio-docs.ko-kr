@@ -1,12 +1,13 @@
 ---
-title: "웹 페이지에서 텍스트 표시(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 웹 페이지에서 텍스트 표시(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - JavaScript, write
 - JavaScript, writing text
 ms.assetid: 3c2455e7-2402-45f2-9545-77a2b2490527
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569263"
 ---
 # <a name="displaying-text-in-a-webpage-javascript"></a>웹 페이지에서 텍스트 표시(JavaScript)
 웹 페이지에 텍스트를 표시하는 방법은 여러 가지입니다. 각각 장점과 단점이 있고 특정 용도를 지원합니다.  

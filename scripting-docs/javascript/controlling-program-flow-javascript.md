@@ -1,12 +1,13 @@
 ---
-title: "프로그램 흐름 제어(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 프로그램 흐름 제어(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - break statement
 - control flow, about control flow
 ms.assetid: 4ef58c82-e5d6-4b09-9458-cf0aa3b39bf5
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569713"
 ---
 # <a name="controlling-program-flow-javascript"></a>프로그램 흐름 제어(JavaScript)
 일반적으로 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 스크립트의 문들은 작성된 순서대로 하나씩 실행됩니다. 이는 순차적 실행이라고 하며 프로그램 흐름의 기본 방향입니다.  
@@ -109,7 +111,7 @@ var AMorPM = (theHour >= 12) ? "PM" : "AM";
   
  마찬가지로 여러 조건 중 하나가 **true**여야 하는 경우(|| 연산자 사용) 하나의 조건이 테스트에 통과하는 즉시 테스트가 중지됩니다. 이러한 방식은 테스트할 조건에 함수 호출 또는 기타 복잡한 식의 실행이 포함된 경우에 유용합니다. 이 점을 염두에 두고 Or 식을 작성할 때는 **true**일 가능성이 가장 큰 조건을 먼저 배치합니다. And 식을 작성할 때는 **false**일 가능성이 가장 큰 조건을 먼저 배치하십시오.  
   
- 이런 식으로 스크립트를 만들면 다음 예제와 같이 **runfirst()**가 0을 반환할 경우 **runsecond()**가 실행되지 않는다는 이점이 있습니다.  
+ 이런 식으로 스크립트를 만들면 다음 예제와 같이 **runfirst()** 가 0을 반환할 경우 **runsecond()** 가 실행되지 않는다는 이점이 있습니다.  
   
 ```JavaScript  
 if ((runfirst() == 0) || (runsecond() == 0)) {  

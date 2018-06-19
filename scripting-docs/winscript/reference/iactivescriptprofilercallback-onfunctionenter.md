@@ -1,16 +1,18 @@
 ---
 title: IActiveScriptProfilerCallback::OnFunctionEnter | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptProfilerCallback.OnFunctionEnter
-apilocation: scrobj.dll
+apiname:
+- IActiveScriptProfilerCallback.OnFunctionEnter
+apilocation:
+- scrobj.dll
 ms.assetid: 12dab2b4-df4e-444d-99cb-25e1c278e6e8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724603"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionenter"></a>IActiveScriptProfilerCallback::OnFunctionEnter
 스크립팅 엔진 문서 개체 모델 (DOM)에 대 한 호출 하지 않은 함수 호출을 실행 하려고 하는 프로파일러 개체를 알립니다.  

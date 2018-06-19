@@ -1,13 +1,13 @@
 ---
-title: "Debug.write 함수 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Debug.write 함수 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Write
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - write method [JavaScript]
 ms.assetid: fd1cfbb3-46cb-47cc-896c-a70d457dd413
-caps.latest.revision: 
+caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636303"
 ---
 # <a name="debugwrite-function-javascript"></a>Debug.write 함수(JavaScript)
 스크립트 디버거를 문자열을 보냅니다.  

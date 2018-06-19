@@ -1,19 +1,20 @@
 ---
-title: "valueOf 메서드 (Boolean) | Microsoft Docs"
-ms.custom: 
+title: valueOf 메서드 (Boolean) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: ac6ad343-7663-406a-a2b7-4cc5025ca3d6
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640243"
 ---
 # <a name="valueof-method-boolean"></a>valueOf 메서드(Boolean)
 지정 된 부울 값의 기본 값을 반환합니다.  

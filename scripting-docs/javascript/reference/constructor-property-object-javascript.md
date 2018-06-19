@@ -1,13 +1,13 @@
 ---
-title: "constructor 속성 (Object) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: constructor 속성 (Object) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - constructor
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - constructor property
 ms.assetid: 6f5d0e9d-e85f-4fde-b558-744510483d69
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636263"
 ---
 # <a name="constructor-property-object-javascript"></a>constructor 속성(Object)(JavaScript)
 개체를 만드는 함수를 지정합니다.  

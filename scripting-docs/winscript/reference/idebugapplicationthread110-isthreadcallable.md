@@ -1,16 +1,16 @@
 ---
 title: IDebugApplicationThread110::IsThreadCallable | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplicationThread110::IsThreadCallable
 ms.assetid: 2a75a366-801d-47e0-bba3-51aa669e03a7
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725573"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
 이 스레드는 PDM 스레드 전환 SynchronousCallInThread 같은 메커니즘을 사용 하 여 호출에서 처리 하는 상태 인지 여부를 결정 합니다.  

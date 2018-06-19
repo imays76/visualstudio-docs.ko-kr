@@ -1,13 +1,13 @@
 ---
-title: "indexOf 메서드 (String) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: indexOf 메서드 (String) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - indexOf
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - indexOf method, string
 - string, indexOf method
 ms.assetid: a17372fa-669b-471b-9240-46927a265152
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637653"
 ---
 # <a name="indexof-method-string-javascript"></a>indexOf 메서드(String)(JavaScript)
 처음으로 나오는 부분 문자열의 위치를 반환합니다.  

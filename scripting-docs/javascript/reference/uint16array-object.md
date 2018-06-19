@@ -1,19 +1,20 @@
 ---
-title: "Uint16Array 개체 | Microsoft Docs"
-ms.custom: 
+title: Uint16Array 개체 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: e684647d-04d0-41a9-9089-16612e18ec7d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641703"
 ---
 # <a name="uint16array-object"></a>Uint16Array 개체
 16 비트 부호 없는 정수 값의 형식화 된 배열입니다. 콘텐츠가 0으로 초기화됩니다. 요청된 바이트 수를 할당할 수 없으면 예외가 발생합니다.  

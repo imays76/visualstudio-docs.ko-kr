@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptError | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptError interface
 ms.assetid: c8e0288d-38ff-4145-a7e3-f8cdfb72eefe
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645783"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
 이 인터페이스를 구현 하는 개체에 전달 되는 [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) 메서드 때마다 스크립팅 엔진에서 처리 되지 않은 오류가 발생 합니다. 호스트는 다음에 발생 한 오류에 대 한 정보를 얻으려면이 개체에서 메서드를 호출 합니다.  

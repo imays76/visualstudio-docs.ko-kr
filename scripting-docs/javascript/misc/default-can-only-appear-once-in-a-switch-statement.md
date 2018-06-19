@@ -1,13 +1,13 @@
 ---
-title: "&#39; 기본 &#39; 하나만 사용할 수 있습니다에 &#39; 스위치 &#39; 문 | Microsoft Docs"
-ms.custom: 
+title: '&#39; 기본 &#39; 하나만 사용할 수 있습니다에 &#39; 스위치 &#39; 문 | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1027
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633103"
 ---
 # <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; 기본 &#39; 하나만 사용할 수 있습니다에 &#39; 스위치 &#39; 문
 사용 하려는 **기본** switch 문 내에서 두 번 이상 문을 합니다. Default case는 switch 문 (통해가 대/소문자는)의 마지막 case 문과 항상입니다.  

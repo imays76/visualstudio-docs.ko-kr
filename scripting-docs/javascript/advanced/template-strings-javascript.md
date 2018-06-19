@@ -1,19 +1,20 @@
 ---
-title: "템플릿 문자열(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 템플릿 문자열(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: f2e525a5-b0fc-49c3-95a0-641788e5c12a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569153"
 ---
 # <a name="template-strings-javascript"></a>템플릿 문자열(JavaScript)
 [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)]에서 템플릿 문자열을 사용하여 포함된 식으로 문자열 리터럴을 구성할 수 있습니다. 템플릿 문자열은 여러 줄 문자열에 대한 기본 제공 지원도 제공합니다.  

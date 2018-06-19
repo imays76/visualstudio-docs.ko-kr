@@ -1,12 +1,13 @@
 ---
-title: "데이터 복사, 전달 및 비교(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 데이터 복사, 전달 및 비교(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -23,7 +24,7 @@ helpviewer_keywords:
 - ByVal argument
 - string comparison, testing data
 ms.assetid: fbccd877-7249-45d4-bd9f-6bcd8ba94a6b
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -32,6 +33,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569333"
 ---
 # <a name="copying-passing-and-comparing-data-javascript"></a>데이터 복사, 전달 및 비교(JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]에서 데이터 처리 방법은 데이터 형식에 따라 달라집니다.  
@@ -46,7 +48,7 @@ ms.lasthandoff: 10/27/2017
  마지막 문자열은 참조로 복사 및 전달되지만 값으로 비교됩니다. **새** 문자열("something")을 사용하여 만든 **String** 개체가 두 개 있는 경우 두 개체는 참조로 비교되지만 값 중 하나 또는 둘 다가 문자열 값이면 값으로 비교됩니다.  
   
 > [!NOTE]
->  ASCII 및 ANSI 문자 집합이 구성된 방식 때문에 대문자가 소문자보다 순서상 우선합니다. 예를 들어, "Zoo"가 "aardvark"보다 *앞에* 옵니다. 대소문자를 구분하려면 두 문자열에 **toUpperCase()** 또는 **toLowerCase()**를 호출할 수 있습니다.  
+>  ASCII 및 ANSI 문자 집합이 구성된 방식 때문에 대문자가 소문자보다 순서상 우선합니다. 예를 들어, "Zoo"가 "aardvark"보다 *앞에* 옵니다. 대소문자를 구분하려면 두 문자열에 **toUpperCase()** 또는 **toLowerCase()** 를 호출할 수 있습니다.  
   
 ## <a name="passing-parameters-to-functions"></a>함수에 매개 변수 전달  
  매개 변수를 값으로 함수에 전달하는 경우 함수 내부에만 있는 별개의 매개 변수 복사본을 만들게 됩니다. 개체와 배열을 참조로 전달하더라도 함수에서 새 값으로 직접 덮어쓰면 새 값은 함수 외부에 반영되지 않습니다. 개체 속성 또는 배열 요소에 대한 변경 내용만 함수 외부에 표시됩니다.  

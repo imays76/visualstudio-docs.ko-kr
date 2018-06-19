@@ -1,16 +1,16 @@
 ---
-title: "IActiveScriptSiteDebug 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IActiveScriptSiteDebug 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSiteDebug interface
 ms.assetid: 2557ee09-688b-4c03-a821-180c24dfa0e6
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724743"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug 인터페이스
 스마트 호스트를 구현 하는 `IActiveScriptSiteDebug` 문서 관리를 수행 하 고 디버깅에 참여 하는 인터페이스입니다. `IActiveScriptSite` 개체는 일반적으로의 구현을 제공는 `IActiveScriptSiteDebug` 인터페이스입니다. 이 도구를 실행 하는 경우 호출 된 `IActiveScriptSite::QueryInterface` 를 얻는 메서드를는 `IActiveScriptSiteDebug` 인터페이스입니다.  

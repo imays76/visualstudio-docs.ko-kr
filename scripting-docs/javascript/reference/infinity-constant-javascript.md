@@ -1,13 +1,13 @@
 ---
-title: "Infinity 상수 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Infinity 상수 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Infinity
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Infinity property
 ms.assetid: 5598224b-e03c-4553-985e-9cc6c21223b4
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637563"
 ---
 # <a name="infinity-constant-javascript"></a>Infinity 상수(JavaScript)
 가장 큰 부동 소수점 숫자 보다 큰 숫자입니다. 초기 값이 반환 `Number.POSITIVE_INFINITY`합니다. 음의 무한대 (-무한대)는 가장 작은 부동 보다 작으면 소수점 숫자입니다.  

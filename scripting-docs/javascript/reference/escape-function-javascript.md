@@ -1,13 +1,13 @@
 ---
-title: "escape 함수 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: escape 함수 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - escape
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - hexadecimal
 - String object, encoding
 ms.assetid: caa92bea-ba69-4109-a68a-6e2debda463a
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636513"
 ---
 # <a name="escape-function-javascript"></a>escape 함수(JavaScript)
 모든 컴퓨터에서 읽을 수 있도록 문자열을 인코딩합니다. 더 이상 사용되지 않습니다.  

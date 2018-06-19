@@ -1,13 +1,13 @@
 ---
-title: "0... n 속성 (arguments) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 0... n 속성 (arguments) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - 0...n
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - 0...n properties
 ms.assetid: 52857c4b-3d56-4500-93ff-4db4729c2578
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634013"
 ---
 # <a name="0n-properties-arguments-javascript"></a>0...n 속성(arguments)(JavaScript)
 개별 인수로의 실제 값을 반환 된 **인수** 에서 반환 된 개체는 **인수** 실행 중인 함수의 속성입니다.  

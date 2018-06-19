@@ -1,12 +1,13 @@
 ---
-title: "날짜 및 시간 계산(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 날짜 및 시간 계산(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - date comparison [JavaScript]
 - date and time calculations [JavaScript]
 ms.assetid: ea976f78-d934-479b-9056-880390d8bddd
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569503"
 ---
 # <a name="calculating-dates-and-times-javascript"></a>날짜 및 시간 계산(JavaScript)
 [Date 개체](../javascript/reference/date-object-javascript.md)를 사용하여 날짜 비교 및 경과 시간 계산과 같은 일반적인 달력 및 시계 작업을 수행할 수 있습니다.  

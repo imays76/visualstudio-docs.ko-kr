@@ -1,13 +1,13 @@
 ---
-title: "빼기 연산자 (-) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 빼기 연산자 (-) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '-'
@@ -23,7 +23,7 @@ helpviewer_keywords:
 - arithmetic operators, subtraction
 - operators, subtraction
 ms.assetid: cd0681d3-15cd-49fe-b4dd-e087de55d778
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -32,6 +32,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640653"
 ---
 # <a name="subtraction-operator---javascript"></a>빼기 연산자(-)(JavaScript)
 단일 식으로 단항 부정 연산자를 제공 하거나 다른 한 식의 값을 뺍니다.  

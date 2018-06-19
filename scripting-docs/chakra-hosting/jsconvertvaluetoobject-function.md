@@ -1,18 +1,18 @@
 ---
-title: "JsConvertValueToObject 함수 | Microsoft Docs"
-ms.custom: 
+title: JsConvertValueToObject 함수 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsConvertValueToObject
 helpviewer_keywords:
 - JsConvertValueToObject function
 ms.assetid: 6528b28a-1d2b-417f-bf78-bf05547c52e1
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567683"
 ---
 # <a name="jsconvertvaluetoobject-function"></a>JsConvertValueToObject 함수
 표준 JavaScript 의미 체계를 사용하여 값을 개체로 변환합니다.  

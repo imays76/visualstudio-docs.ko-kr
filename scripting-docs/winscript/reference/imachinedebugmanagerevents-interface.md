@@ -1,16 +1,16 @@
 ---
-title: "IMachineDebugManagerEvents 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IMachineDebugManagerEvents 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IMachineDebugManagerEvents interface
 ms.assetid: 468de2f4-49e0-4f6f-ba0c-0f5f6832c092
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727633"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>IMachineDebugManagerEvents 인터페이스
 실행에 대 한 변경 내용을 알리는 컴퓨터 디버그 관리자 유지 관리 하는 응용 프로그램 목록입니다. 이 인터페이스 응용 프로그램의 동적 목록을 표시 하려면 IDE 디버거에서 사용할 수 있습니다.  

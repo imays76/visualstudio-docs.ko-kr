@@ -1,19 +1,20 @@
 ---
-title: "toString 메서드 (Date) | Microsoft Docs"
-ms.custom: 
+title: toString 메서드 (Date) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: d3037289-d805-409b-8781-045c59a2c404
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640253"
 ---
 # <a name="tostring-method-date"></a>toString 메서드(Date)
 날짜의 문자열 표현을 반환합니다. 문자열의 형식은 로캘에 따라 다릅니다. 미국 영어 (en-미국)은 다음과 같습니다.  

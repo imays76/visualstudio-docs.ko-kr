@@ -1,12 +1,13 @@
 ---
-title: "숫자 상수 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 숫자 상수 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -26,7 +27,7 @@ helpviewer_keywords:
 - Number.NaN constant [JavaScript]
 - Number.MAX_VALUE constant [JavaScript]
 ms.assetid: e0701b41-99ae-4916-9ec0-f79bb15386fb
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -35,6 +36,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639203"
 ---
 # <a name="number-constants-javascript"></a>Number 상수(JavaScript)
 다음 숫자 상수는 `Number` 개체의 속성입니다.  

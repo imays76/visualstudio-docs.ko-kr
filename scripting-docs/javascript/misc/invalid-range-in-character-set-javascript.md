@@ -1,13 +1,13 @@
 ---
-title: "문자에 잘못 된 범위 설정 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 문자에 잘못 된 범위 설정 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5021
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633003"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>문자 집합의 범위가 잘못되었습니다.(JavaScript)
 잘못 된 문자 집합 범위와 정규식을 만들려고 했습니다. A-z 또는 0-9와 같은 단일 문자만에서 문자 집합 사이 여야 합니다. 문자 집합에서 \w 등의 문자 클래스를 포함할 수 없습니다. 범위에서 첫 번째 문자 범위에서 두 번째 문자 보다 이전 이어야 합니다. 예:  

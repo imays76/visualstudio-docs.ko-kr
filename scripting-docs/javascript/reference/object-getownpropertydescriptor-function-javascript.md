@@ -1,13 +1,13 @@
 ---
-title: "Object.getOwnPropertyDescriptor 함수 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Object.getOwnPropertyDescriptor 함수 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - getOwnPropertyDescriptor method [JavaScript]
 ms.assetid: 8f0e1c90-c4f9-44c4-bf76-726bacecbc14
-caps.latest.revision: 
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639033"
 ---
 # <a name="objectgetownpropertydescriptor-function-javascript"></a>Object.getOwnPropertyDescriptor 함수(JavaScript)
 지정된 개체의 고유한 속성 설명자를 가져옵니다. 고유한 속성 설명자는 개체의 프로토타입에서 상속된 것이 아니라 개체에 직접 정의된 설명자입니다.  

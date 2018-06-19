@@ -1,19 +1,20 @@
 ---
-title: "스프레드 연산자 (...) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 스프레드 연산자 (...) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 10263a4c-bd27-4d87-9917-fb4b6bf373db
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640233"
 ---
 # <a name="spread-operator--javascript"></a>스프레드 연산자(...)(JavaScript)
 배열 리터럴의 일부를 반복 가능한 식(다른 배열 리터럴 등)에서 초기화하거나 식을 함수 호출에서 여러 인수로 확장할 수 있습니다.  
