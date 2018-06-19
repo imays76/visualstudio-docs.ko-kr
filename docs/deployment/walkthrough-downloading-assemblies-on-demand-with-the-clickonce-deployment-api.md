@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565772"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>연습: ClickOnce 배포 API에서 요청 시 어셈블리 다운로드
 기본적으로 모든 어셈블리에 포함 된 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 처음 실행할 때 응용 프로그램 다운로드 됩니다. 그러나 응용 프로그램의 작은 집합이 사용자에서 사용 되는 부분을 할 수 있습니다. 이 경우 해당 형식 중 하나를 만들 때에만 어셈블리를 다운로드하고자 할 수 있습니다. 다음 연습에는 "optional"로 응용 프로그램의 특정 어셈블리를 표시 하는 방법을 보여 줍니다 및의 클래스를 사용 하 여이 다운로드 하는 방법의 <xref:System.Deployment.Application> 공용 언어 런타임 (CLR) 요청할 때 네임 스페이스입니다.  

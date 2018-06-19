@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472931"
 ---
 # <a name="debugging-preparation-console-projects"></a>디버깅 준비: 콘솔 프로젝트
 콘솔 프로젝트 디버깅을 준비하는 과정은 Windows 프로젝트 디버깅을 준비하는 과정과 비슷하지만 몇 가지 사항을 추가로 고려해야 합니다. 자세한 내용은 참조 [Windows Forms 응용 프로그램](../debugger/debugging-preparation-windows-forms-applications.md), 및 [디버깅 준비: Windows Forms 응용 프로그램 (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)합니다. 콘솔 응용 프로그램은 모두 비슷하므로 이 항목에서는 다음과 같은 프로젝트 형식을 다룹니다.  

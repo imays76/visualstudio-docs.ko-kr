@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466060"
 ---
 # <a name="dia2dumpcpp-source-file"></a>Dia2dump.cpp 소스 파일
 다음 Dia2dump.cpp 소스 코드에는.pdb 파일의 내용을 표시합니다. 이 소스 코드를 사용 하 여 [Dia2dump 샘플](../../debugger/debug-interface-access/dia2dump-sample.md)합니다.  

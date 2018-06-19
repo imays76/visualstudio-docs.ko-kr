@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566201"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;명령&gt; 요소 (부트스트래퍼)
 `Commands` 요소 아래에 설명 된 테스트를 구현 하는 `InstallChecks` 요소인 패키지를 선언 하 고는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 부트스트래퍼 테스트가 실패 하는 경우 설치 해야 합니다.  

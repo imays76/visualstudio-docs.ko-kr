@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264014"
 ---
 # <a name="bookmark-control"></a>Bookmark 컨트롤
   <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤은 고유한 이름이 있고 이벤트를 노출하며 데이터에 바인딩될 수 있는 책갈피입니다. 책갈피는 Microsoft Office Word 문서에서 항목 또는 위치를 표시하는 자리 표시자로 사용할 수 있습니다. <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤은 <xref:Microsoft.Office.Interop.Word.Bookmark> 개체 및 <xref:Microsoft.Office.Interop.Word.Range> 개체의 조합입니다.

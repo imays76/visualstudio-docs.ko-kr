@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464240"
 ---
 # <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
 사용자 정의 데이터 형식이 중첩 있는지 여부를 지정 하는 플래그를 검색 합니다.  

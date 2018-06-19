@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566123"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>방법: SignTool.exe를 사용하여 설치 파일에 서명(ClickOnce)
 SignTool.exe를 사용하여 설치 프로그램(setup.exe)에 서명을 할 수 있습니다. 이 프로세스를 수행하면 최종 사용자 컴퓨터에 훼손된 파일이 설치되지 않습니다.  

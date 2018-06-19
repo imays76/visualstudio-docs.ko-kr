@@ -30,6 +30,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560715"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 응용 프로그램의 코드 액세스 보안
 ClickOnce 응용 프로그램은 .NET Framework를 기반으로 하며 코드 액세스 보안 제약 조건의 적용을 받습니다. 따라서 코드 액세스 보안의 의미를 이해하여 ClickOnce 응용 프로그램을 적절하게 작성해야 합니다.  

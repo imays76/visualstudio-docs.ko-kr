@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479746"
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거를 사용 하 여 코드 탐색
 디버거에서 코드를 탐색 하는 명령 및 바로 가기를을 잘 알고 있으며 있는 빠르고 쉽게 찾아 앱의 문제를 해결 하려면. 디버거에서 코드를 탐색 하는 동안 응용 프로그램의 상태를 검사 또는 실행 흐름에 해당 하는 방법에 대 한 자세한 정보 수 있습니다.  

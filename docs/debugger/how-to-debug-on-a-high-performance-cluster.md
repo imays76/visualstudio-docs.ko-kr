@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477666"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>방법: 고성능 클러스터에서 디버깅
 고성능 클러스터에서 다중 처리 프로그램을 디버깅하는 방법은 원격 컴퓨터에서 일반적인 프로그램을 디버깅하는 방법과 비슷합니다. 그러나 여기에는 몇 가지 추가로 고려해야 할 사항이 있습니다. 일반 원격 설치 요구 사항에 대 한 참조 [원격 디버깅](../debugger/remote-debugging.md)합니다.  

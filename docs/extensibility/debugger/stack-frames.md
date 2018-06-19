@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128001"
 ---
 # <a name="stack-frames"></a>스택 프레임
 디버거 아키텍처를 기준으로 한 **스택 프레임**:  

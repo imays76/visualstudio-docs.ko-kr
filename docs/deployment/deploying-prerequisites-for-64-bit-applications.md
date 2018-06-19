@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566006"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>64비트 응용 프로그램의 필수 구성 요소 배포
 ClickOnce 배포에서는 64비트 플랫폼에 응용 프로그램을 설치할 수 있습니다. 대상 플랫폼은 **x86** 32 비트 플랫폼에 대 한 **x64** AMD64 / EM64T 명령 집합을 지 원하는 컴퓨터 및 **Itanium** 64 비트 Itanium 프로세서에 대 한 합니다.  

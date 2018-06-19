@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480334"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>연습: Web Form 디버깅
 이 연습 과정에서는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램(Web Form)의 디버깅 방법을 보여 줍니다. 시작 및 실행을 중지 하 고, 중단점을 설정 하 고에서 변수를 검사 하는 방법을 보여는 **조사식** 창.  

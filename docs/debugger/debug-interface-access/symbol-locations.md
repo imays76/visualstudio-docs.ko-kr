@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480269"
 ---
 # <a name="symbol-locations"></a>기호 위치
 대부분 기호는 이미지 파일 내에서 정의 된 위치는 있습니다. 값으로 지정 된 기호 위치는 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 열거 합니다. 기호 위치에 따라 추가 속성을 지원할 수 있습니다.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571310"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 파일
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 일반 시나리오용 항목, 속성, 대상 및 작업이 들어 있는 여러 .targets 파일을 포함합니다. 이러한 파일은 대부분의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 파일로 자동 가져오기되므로 쉽게 유지 관리하고 읽을 수 있습니다.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560442"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램에 대한 사용자 지정 권한 설정
 인터넷 또는 로컬 인트라넷 영역에 대한 기본 권한을 사용하는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 배포할 수 있습니다. 또는 응용 프로그램에 필요한 특정 사용 권한에 대한 사용자 지정 영역을 만들 수 있습니다. 이렇게 하려면 **프로젝트 디자이너** 의 **보안**페이지에서 보안 권한을 사용자 지정할 수 있습니다.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/19/2018
   
      **ClickOnce 보안 권한** 섹션의 컨트롤이 사용됩니다.  
   
-5.  **설치할 응용 프로그램을 가져올 영역** 드롭다운 목록에서 **(사용자 지정)**을 클릭합니다.  
+5.  **설치할 응용 프로그램을 가져올 영역** 드롭다운 목록에서 **(사용자 지정)** 을 클릭합니다.  
   
 6.  **권한 XML 편집**을 클릭합니다.  
   

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572542"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>방법: 빌드 시 환경 변수 사용
 프로젝트를 빌드할 때 프로젝트 파일이나 프로젝트를 구성하는 파일에 없는 정보를 사용하여 빌드 옵션을 설치해야 하는 경우가 많습니다. 이 정보는 대개 환경 변수에 저장되어 있습니다.  

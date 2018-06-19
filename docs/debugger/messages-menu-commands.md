@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481725"
 ---
 # <a name="messages-menu-commands"></a>메시지 메뉴 명령
 **메시지** 메뉴는 메시지 뷰 제어 하기 위한 명령을 제공 합니다.  

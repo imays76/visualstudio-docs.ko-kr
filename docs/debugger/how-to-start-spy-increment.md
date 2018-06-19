@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473860"
 ---
 # <a name="how-to-start-spy"></a>방법: Spy++ 시작
 시작할 수 있습니다 Spy + + 또는 Visual Studio에서 명령 프롬프트에서.  
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/18/2018
   
 ### <a name="to-start-spy-from-visual-studio"></a>Visual Studio에서 Spy + +를 시작 하려면  
   
--   에 **도구** 메뉴를 클릭 하 여 **Spy + +**합니다.  
+-   에 **도구** 메뉴를 클릭 하 여 **Spy + +** 합니다.  
   
      Spy + + 독립적으로 실행을 시작 하면, 때문에 Visual Studio를 닫을 수 있습니다.  
   

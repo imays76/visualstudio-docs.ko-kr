@@ -10,6 +10,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957738"
 ---
 # <a name="connected-services-walkthrough"></a>연결된 서비스 연습
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33956947"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>빠른 시작: Cookiecutter 템플릿에서 프로젝트 만들기
 

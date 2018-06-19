@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473055"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>전경 프로그램을 디버깅하는 동안 디버거 창을 어떻게 사용합니까?
 ## <a name="problem-description"></a>문제 설명  

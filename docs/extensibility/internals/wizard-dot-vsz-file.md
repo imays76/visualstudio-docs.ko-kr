@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142879"
 ---
 # <a name="wizard-vsz-file"></a>마법사 (합니다. Vsz) 파일
 통합된 개발 환경 (IDE) 마법사를 시작 하려면.vsz 파일을 사용 합니다. 이러한.vsz 파일 IDE 사용 하 여 호출 하는 마법사를 결정 하는 정보와 마법사 전달할 정보를 포함 합니다.  

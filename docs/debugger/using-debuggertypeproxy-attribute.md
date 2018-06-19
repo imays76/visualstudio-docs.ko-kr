@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477890"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>DebuggerTypeProxy 특성 사용
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>는 형식에 대한 프록시 또는 대리 항목을 지정하고 형식이 디버거 창에 표시되는 방식을 변경합니다. 프록시가 있는 변수를 볼 때 대신 프록시가 원본 형식에 **표시**합니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 개인 멤버는 표시되지 않습니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134349"
 ---
 # <a name="custom-parameters"></a>사용자 지정 매개 변수
 사용자 지정 매개 변수는 마법사를 시작한 후에 마법사를 작동을 제어 합니다. 관련된.vsz 파일에는 통합된 개발 환경 (IDE)에서 패키지 되 고 마법사를 시작할 때 문자열의 배열로 마법사에 전달 하는 사용자 정의 매개 변수 배열을 제공 합니다. 마법사는 다음 문자열의 배열을 구문 분석 하 고 마법사의 실제 작동을 제어 하는 정보를 사용 합니다. 이러한 방식으로 마법사.vsz 파일의 내용에 따라 기능을 사용자 지정할 수 있습니다.  

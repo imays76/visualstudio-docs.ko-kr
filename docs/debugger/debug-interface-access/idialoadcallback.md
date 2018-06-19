@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466155"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 프로시저를 찾는 위치 시도의 진행률을 보고할 수 있는 사용자 인터페이스를 지원할 DIA 기호에서 콜백을 받습니다.  

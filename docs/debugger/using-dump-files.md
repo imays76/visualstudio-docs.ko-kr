@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481829"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Visual Studio와 함께 사용 하 여 덤프 파일
 또는 힙을; 포함 하지 않는 덤프 파일 덤프 파일; 만들기 덤프 파일; 열기 이진 파일, pdb의 및 덤프 파일에 대 한 소스 파일을 찾습니다.

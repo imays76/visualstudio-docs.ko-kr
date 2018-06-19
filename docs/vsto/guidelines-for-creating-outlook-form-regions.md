@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548169"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Outlook 양식 영역을 만드는 지침
   다음 정보를 통해 양식 영역을 최적화하고 잠재적인 문제를 방지할 수 있습니다.  

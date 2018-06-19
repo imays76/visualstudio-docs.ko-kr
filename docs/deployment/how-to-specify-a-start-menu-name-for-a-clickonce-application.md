@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558869"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램의 시작 메뉴 이름 지정
 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 온라인 및 오프 라인 사용 하 여 응용 프로그램 설치에 항목이 추가 되는 **시작** 메뉴 및 **프로그램 추가 / 제거** 목록입니다. 기본적으로는 표시 이름은 응용 프로그램 어셈블리의 이름과 동일 같지만 표시 이름을 설정 하 여 변경할 수 있습니다 **제품 이름** 에 **게시 옵션** 대화 상자.  

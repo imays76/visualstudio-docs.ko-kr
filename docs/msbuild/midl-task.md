@@ -33,6 +33,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575727"
 ---
 # <a name="midl-task"></a>MIDL 작업
 MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 midl.exe를 래핑합니다. 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "MIDL 명령줄 참조"를 참조하세요.  

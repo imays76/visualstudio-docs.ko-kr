@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477604"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>방법: 스레드에 플래그 지정 및 스레드의 플래그 해제
 스레드를 사용할 때 특히 주의에서 아이콘으로 표시 하 여 제공 하려는 플래그를 설정할 수 있습니다는 **스레드**, **병렬 스택** (스레드 뷰) **병렬 조사식**, 및  **GPU 스레드** windows 합니다. 이 아이콘은 플래그 설정된 스레드를 다른 스레드와 구분하는 데 도움이 됩니다.  

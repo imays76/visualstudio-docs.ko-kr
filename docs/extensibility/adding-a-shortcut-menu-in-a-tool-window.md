@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568671"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>도구 창에서 바로 가기 메뉴를 추가합니다.
 이 연습에서는 도구 창에서 바로 가기 메뉴를 넣습니다. 바로 가기 메뉴에 단추, 텍스트 상자 또는 창 배경 단추로 클릭할 때 표시 되는 메뉴가입니다. 바로 가기 메뉴에 명령을 다른 메뉴나 도구 모음에서 명령과 동일 하 게 동작 합니다. 바로 가기 메뉴를 지원 하려면.vsct 파일에서 지정 하 고 마우스 오른쪽 단추로 클릭에 대 한 응답에 표시 합니다.  

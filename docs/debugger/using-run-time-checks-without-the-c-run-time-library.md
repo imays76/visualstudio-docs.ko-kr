@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481761"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>C 런타임 라이브러리 없이 런타임 검사 사용
 C 런타임 라이브러리 없이 프로그램을 링크 하는 경우 사용 하 여 **/NODEFAULTLIB**, 런타임 검사 기능을 사용 하려면 runtmchk.lib에 연결 해야 합니다.  

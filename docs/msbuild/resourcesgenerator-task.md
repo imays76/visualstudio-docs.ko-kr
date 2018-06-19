@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575977"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 작업
 <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 작업은 하나 이상의 리소스(.jpg, .ico, .bmp, 이진 형식의 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 및 기타 확장 형식)를 .resources 파일에 포함합니다.  

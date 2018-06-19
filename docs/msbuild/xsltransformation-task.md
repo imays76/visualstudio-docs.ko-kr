@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578509"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 작업
 XSLT 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 장치 또는 파일로 변환합니다.  

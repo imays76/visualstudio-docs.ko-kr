@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704904"
 ---
 # <a name="list-registers-command"></a>레지스터 목록 표시 명령
 선택된 레지스터의 값을 등록하고 표시할 레지스터의 목록을 수정합니다.

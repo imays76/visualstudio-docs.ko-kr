@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571609"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 작업
 지정된 항목 컬렉션의 항목에 지정된 폴더 및 모든 하위 폴더에 있는 경로가 있는지를 확인합니다.  

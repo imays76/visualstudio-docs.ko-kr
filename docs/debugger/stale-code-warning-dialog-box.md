@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481478"
 ---
 # <a name="stale-code-warning-dialog-box"></a>부실 코드 경고 대화 상자
 이 대화 상자가 나타납니다 했으면 변경 내용을 네이티브 코드에 **편집 하며 계속 하기** 즉시 적용 하지 못했습니다. 그 결과 현재 스택 프레임의 일부 네이티브 코드가 만료되어 부실 코드가 됩니다. 자세한 내용은 참조 [하는 방법: 부실 코드 작업](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4)합니다.  

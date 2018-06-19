@@ -31,6 +31,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065080"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>다른 사용자가 배포할 수 있는 ClickOnce 응용 프로그램 만들기
 ClickOnce 배포를 만들고 있는 일부 개발자는 자체 응용 프로그램을 배포 하도록 계획 합니다. 그 중 대부분 방금 ClickOnce를 사용 하 여 해당 응용 프로그램을 패키지 하 대기업 등의 고객에 게 파일 전달 합니다. 고객 워크시트가 네트워크에서 응용 프로그램을 호스트 하는 일을 담당 합니다. 이 항목에서는 버전의.NET Framework 버전 3.5 이전에서는 이러한 배포의 문제 중 일부에 대해 설명 합니다. .NET Framework 3.5의 새로운 "매니페스트 사용 하 여 신뢰에 대 한" 기능을 사용 하 여 제공 하는 새 솔루션에 설명 합니다. 마지막으로, 이전 버전의.NET Framework를 계속 사용 하는 고객에 대 한 ClickOnce 배포를 만들기 위한 권장된 사항을 문으로 끝납니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127479"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>방법: Atom 만들기 전용 갤러리에 대 한 피드
 Atom RSS 피드 확장을 포함 하는 피드를 추가 하는 인트라넷 위치를 만들 수 있습니다 **확장명 및 업데이트** 전용 갤러리로 합니다. 자세한 내용은 [Private Galleries](../extensibility/private-galleries.md)를 참조하세요.  

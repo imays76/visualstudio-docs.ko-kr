@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466785"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 DIA 기호 찾기 프로시저, 찾기 프로세스에 적용할 수를 제한할 수에서 콜백을 받습니다.  

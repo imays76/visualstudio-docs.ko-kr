@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470766"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>솔루션 속성 페이지 대화 상자, 공용 속성, 소스 파일 디버그
 이 속성 페이지에서는 솔루션을 디버깅할 때 디버거가 소스 파일을 찾을 위치를 지정합니다.  

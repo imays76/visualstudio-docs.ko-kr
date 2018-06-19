@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135447"
 ---
 # <a name="legacy-language-service-essentials"></a>레거시 언어 서비스 Essentials
 Visual Studio에는 프로그래밍 언어를 통합 하는 언어 서비스를 제공 해야 합니다. 이 항목에서는 레거시 언어 서비스에서 사용할 수 있는 기능을 설명 합니다.  

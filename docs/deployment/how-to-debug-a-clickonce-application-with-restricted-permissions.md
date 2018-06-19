@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562002"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>방법: 제한된 권한으로 ClickOnce 응용 프로그램 디버깅
 개발자는 대부분 완전 신뢰 사용 권한으로 개발 컴퓨터를 실행하므로, ClickOnce 응용 프로그램을 디버그할 때 제한된 권한으로 실행하는 최종 사용자에게 표시될 수 있는 것과 동일한 보안 예외가 표시되지 않습니다.  

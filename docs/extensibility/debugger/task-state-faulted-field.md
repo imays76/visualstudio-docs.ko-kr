@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135691"
 ---
 # <a name="taskstatefaulted-field"></a>TASK_STATE_FAULTED 필드
 작업이 처리되지 않은 예외 때문에 완료되었습니다.  

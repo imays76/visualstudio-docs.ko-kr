@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457464"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 확장성을 위한 API 참조
 이 단원의 정보는 IntelliTrace 확장성 API를 사용하여 응용 프로그램에서 .itrace 파일을 읽고 디코딩하는 데 도움을 줍니다.  

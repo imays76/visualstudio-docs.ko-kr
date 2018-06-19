@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267778"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office 솔루션 공동 개발
   여러 개발자가 다른 Visual Studio 프로젝트에서 공동으로 작업 하는 동일한 방식으로 Office 프로젝트를 작업할 수 있습니다. Visual Studio 서로 다른 위치에 Office가 설치 된 경우에 각 컴퓨터에 Microsoft Office 설치를 제대로 찾습니다. 그러나 알아두어야 할 몇 가지 중요 한 고려 사항이 있습니다.  

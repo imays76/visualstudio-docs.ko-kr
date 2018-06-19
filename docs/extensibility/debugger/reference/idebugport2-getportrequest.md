@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114783"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 이전에 (있는 경우) 포트를 만드는 데 사용 하는 포트에 대 한 설명을 가져옵니다.  

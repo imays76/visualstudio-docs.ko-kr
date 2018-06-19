@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472034"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>오류: 없는 프로세스를 조사할 수&#39;s identity
 프로세스의 ID를 검사할 수 있는 권한이 없습니다. 시스템의 구성에 문제가 있는 것 같습니다.  

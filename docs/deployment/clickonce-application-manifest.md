@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565083"
 ---
 # <a name="clickonce-application-manifest"></a>ndptecclick
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 매니페스트를 사용 하 여 배포 된 응용 프로그램을 설명 하는 XML 파일은 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]합니다.  

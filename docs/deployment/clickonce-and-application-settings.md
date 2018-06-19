@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561703"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 및 응용 프로그램 설정
 Windows Forms에 대 한 응용 프로그램 설정 하면 쉽게 만들고, 저장 및 사용자 지정 응용 프로그램과 사용자 기본 설정 클라이언트에서 유지 관리할 수 있습니다. 다음 문서에는 응용 프로그램 설정 파일 ClickOnce 응용 프로그램에서 작업 하는 방법 및 사용자는 다음 버전으로 업그레이드 하면 ClickOnce가 설정을 마이그레이션하 하는 방법을 설명 합니다.  

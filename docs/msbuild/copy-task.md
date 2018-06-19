@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570166"
 ---
 # <a name="copy-task"></a>Copy 작업
 파일 시스템의 새 위치에 파일을 복사합니다.  

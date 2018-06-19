@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480217"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>디버그하는 동안 XAML 속성 검사
 사용 하 여 실행 중인 XAML 코드의 실시간 보기를 얻을 수는 **라이브 시각적 트리** 및 **라이브 속성 탐색기**합니다. 이러한 도구는 실행 중인 XAML 응용 프로그램의 UI 요소에 대한 트리 뷰를 제공하고 선택한 UI 요소의 런타임 속성을 보여 줍니다.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475796"
 ---
 # <a name="using-spy"></a>Spy++ 사용
 Spy + + (SPYXX 합니다. EXE)는 시스템의 프로세스, 스레드, 창 및 창 메시지에 대 한 그래픽 뷰를 제공 하는 Win32 기반 유틸리티입니다. Spy + + 도움말의이 섹션에는 다음 도움말 항목에 포함 됩니다.  

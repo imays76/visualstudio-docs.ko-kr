@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578382"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 작업
 지정된 항목의 경로를 지정된 텍스트 파일에 씁니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571863"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>방법: Visual Studio 빌드 프로세스 확장
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드 프로세스는 프로젝트 파일로 가져온 일련의 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 파일로 정의됩니다. 이러한 가져온 파일 중 하나인 Microsoft.Common.targets는 빌드 프로세스의 여러 지점에서 사용자 지정 작업을 실행할 수 있도록 확장될 수 있습니다. 이 항목에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드 프로세스를 확장하는 데 사용할 수 있는 두 가지 방법을 설명합니다.  

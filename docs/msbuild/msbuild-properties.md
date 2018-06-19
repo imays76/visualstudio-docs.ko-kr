@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573962"
 ---
 # <a name="msbuild-properties"></a>MSBuild 속성
 빌드를 구성하는 데 사용될 수 있는 이름/값 쌍인 속성은 작업에 값을 전달하고, 조건을 평가하고, 프로젝트 파일 전체에서 참조할 값을 저장하는 데 유용합니다.  

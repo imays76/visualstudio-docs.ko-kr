@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476418"
 ---
 # <a name="thread-properties-dialog-box"></a>스레드 속성 대화 상자
 이 대화 상자 찾기 특정 스레드에 대 한 자세한 정보를 사용 합니다. 이 대화 상자를 표시 하려면 포커스를 이동 하는 [스레드 뷰](../debugger/threads-view.md) 창 또는 열기 [메시지 뷰](../debugger/messages-view.md) 메시지를 확장 합니다. 트리에서 스레드 노드를 선택한 후 선택 **속성** 에서 **보기** 메뉴.  

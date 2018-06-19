@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144332"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 색 컴파일러
 Visual Studio 확장 색 컴파일러 도구는.pkgdef 파일 하 인스턴스별로 Visual Studio에서 사용할 수 있도록 하는 변환 하 고 기존 Visual Studio 테마에 대 한 색을 나타내는.xml 파일을 사용 하는 콘솔 응용 프로그램에는. 쉽게.xml 파일 간의 차이점을 비교할 수 있기 때문에이 도구는 소스 제어에서 사용자 지정 색을 관리 하는 데 유용 합니다. 것도 연결할 수 빌드 환경에 빌드 출력이 잘못.pkgdef 파일 되도록 합니다.  

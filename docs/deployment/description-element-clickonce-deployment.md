@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564248"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;설명&gt; 요소 (ClickOnce 배포)
 만들 셸 존재 하는 데 사용 되는 응용 프로그램 정보를 식별 및 **프로그램 추가 / 제거** 제어판 항목입니다.  

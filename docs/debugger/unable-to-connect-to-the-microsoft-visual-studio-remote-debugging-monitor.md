@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478241"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 이 메시지는 원격 디버깅 모니터는 하지 제대로 설정 원격 컴퓨터에서 또는 원격 컴퓨터에 네트워크 문제 또는 방화벽으로 인해 액세스할 수 없기 때문에 발생할 수 있습니다.

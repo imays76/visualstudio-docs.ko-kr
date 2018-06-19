@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576445"
 ---
 # <a name="getting-started-with-performance-tools"></a>성능 도구 시작
 이 섹션에서는 Visual Studio 성능 도구를 사용하여 코드 성능을 수집, 표시 및 분석할 때 적용할 개념과 작업을 간단히 살펴봅니다.  

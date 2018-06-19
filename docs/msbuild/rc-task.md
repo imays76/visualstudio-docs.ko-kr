@@ -29,6 +29,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574570"
 ---
 # <a name="rc-task"></a>RC 작업
 Microsoft Windows 리소스 컴파일러 도구, rc.exe를 래핑합니다. **RC** 작업은 커서, 아이콘, 비트맵, 대화 상자 및 글꼴과 같은 리소스를 리소스(.res) 파일로 컴파일합니다. 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "리소스 컴파일러"를 참조하세요.  

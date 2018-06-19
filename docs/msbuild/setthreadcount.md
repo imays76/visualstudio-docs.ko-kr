@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567228"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 전역 스레드 개수를 설정하고 해당 개수를 현재 스레드에 할당합니다.  

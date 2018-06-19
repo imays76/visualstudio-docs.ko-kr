@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575106"
 ---
 # <a name="generateresource-task"></a>GenerateResource 작업
 .txt 및 .rest(XML 기반 리소스 형식) 파일과 런타임 이진 실행 파일에 포함되거나 위성 어셈블리로 컴파일할 수 있는 공용 언어 런타임 이진 .resources 파일 간을 변환합니다. 이 작업은 일반적으로 .txt 또는 .resx 파일을 .resource 파일로 변환하는 데 사용됩니다. `GenerateResource` 작업은 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)와 기능적으로 비슷합니다.  

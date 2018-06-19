@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562834"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 보안 및 배포
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 설치 하 고 최소한의 사용자 상호 작용을 통해 실행할 수 있는 자동 업데이트 Windows 기반 응용 프로그램을 만들 수 있도록 하는 배포 기술이입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 게시 하 고 Visual Basic 및 Visual C# 프로젝트를 개발한 경우 ClickOnce 기술을 통해 배포 된 응용 프로그램 업데이트에 대 한 모든 지원을 제공 합니다. Visual C++ 응용 프로그램을 배포 하는 방법에 대 한 내용은 [Visual C++ 응용 프로그램에 대 한 ClickOnce 배포](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473350"
 ---
 # <a name="addmessage"></a>AddMessage
 그래픽 진단에 사용자 지정 메시지를 추가 *HUD* (헤드업 디스플레이).  

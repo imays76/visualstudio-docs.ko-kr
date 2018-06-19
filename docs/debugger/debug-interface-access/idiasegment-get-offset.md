@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467945"
 ---
 # <a name="idiasegmentgetoffset"></a>IDiaSegment::get_offset
 섹션을 시작 하는 세그먼트의 오프셋을 검색 합니다.  

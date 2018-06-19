@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472399"
 ---
 # <a name="debugging-web-applications"></a>웹 응용 프로그램 디버깅
 이 단원에서는 다양한 형식의 웹 응용 프로그램을 디버깅하는 방법에 대해 설명합니다.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548738"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>방법: 워크시트에 Chart 컨트롤 추가
   추가할 수 있습니다 <xref:Microsoft.Office.Tools.Excel.Chart> 디자인 타임 및 런타임에 문서 수준 사용자 지정에서 Microsoft Office Excel 워크시트에 컨트롤입니다. 추가할 수도 있습니다 <xref:Microsoft.Office.Tools.Excel.Chart> VSTO 추가 기능에서 런타임에 컨트롤입니다.  

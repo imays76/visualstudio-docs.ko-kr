@@ -10,6 +10,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34453818"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 일반적인 바로 가기 키
 

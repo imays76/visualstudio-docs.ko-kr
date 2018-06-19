@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135786"
 ---
 # <a name="handling-specialized-deployment"></a>처리 특수화 배포
 배포는 선택 사항에 대 한 프로젝트입니다. 예를 들어, 웹 프로젝트의 경우 웹 서버를 업데이트 하는 프로젝트 수 있도록 배포를 지원 합니다. 마찬가지로, 한 **스마트 장치** 프로젝트 대상 장치에 작성된 된 응용 프로그램을 복사 하는 배포를 지원 합니다. 프로젝트 하위 형식 구현 하 여 특수 한 배포 동작을 제공할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 인터페이스입니다. 이 인터페이스는 배포 작업의 전체 집합을 정의합니다.  

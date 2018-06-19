@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125905"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>참조 (Visual Studio 디버깅 Api)
 Visual Studio Debugging SDK 참조의 런타임 아키텍처 및 디버거 및 해당 구성 요소 기능에 대 한 기본 모델에 간략하게 설명 합니다. 설명서에서는 인터페이스를 통해 정의 하는 동작 외에도 설명 구성 요소 및 인터페이스에 대해 최대한 적은 가정 합니다.  
