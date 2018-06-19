@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107636"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>열거형 (Visual Studio 디버깅)
 다음에 대 한 열거형은는 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugging SDK입니다.  

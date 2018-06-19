@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116632"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 이 메서드가 명시적으로 편집 하며 계속 하기가 비활성화가이 프로세스에 (및 모든 프로그램 포함). 사용자 지정 포트 공급자는 항상 반환 `E_NOTIMPL`합니다.  

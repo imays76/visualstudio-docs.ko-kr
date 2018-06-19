@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125520"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 이 구조 (일반적으로 함수 또는 메서드)는 범위 내에서 로컬 변수의 주소를 나타냅니다.  

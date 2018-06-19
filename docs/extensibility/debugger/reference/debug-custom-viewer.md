@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109992"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 사용자 지정 뷰어를 식별 하는 구조체 하거나 시각화 도우미를 입력 합니다.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109180"
 ---
 # <a name="creating-a-software-development-kit"></a>소프트웨어 개발 키트 만들기
 소프트웨어 개발 키트 (SDK)은 Visual Studio에서 단일 항목으로 참조할 수 있는 Api의 컬렉션입니다. **참조 관리자** 대화 상자는 프로젝트에 관련 된 모든 Sdk를 나열 합니다. 프로젝트에 SDK를 추가 하면 Api는 Visual Studio에서 사용할 수 있습니다.  
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  References 폴더: Api를 포함 하는 이진 파일입니다. Windows 메타 데이터 (WinMD) 파일 또는 어셈블리를 사용할 수 있습니다.  
   
-3.  Redist 폴더: 런타임/디버깅을 위해 필요 하 고 사용자의 응용 프로그램의 일부로 패키지 될 해야 하는 파일입니다. \Redist 아래 모든 이진 파일을 배치 해야\\< 구성\>\\< arch\>, 이진 이름 고유성을 보장 하려면 다음과 같은 형식에 있어야 합니다:  **\<회사 >.\< 제품 > 합니다. \<목적 > 합니다. \<확장 >**합니다. 예를 들어: Microsoft.Cpp.Build.dll 다른 Sdk (예: javascript, css, pri, xaml, png 및 jpg 파일)에서 파일 이름으로 이름이 충돌할 수 있습니다 하는 모든 파일 \redist 아래를 배치할\\< 구성\>\\< arch\> \\< sdkname\>\ XAML와 연결 된 파일을 제외 하 고 제어 합니다. 이러한 파일은 \redist 아래 저장할\\< 구성\>\\< arch\>\\< componentname\>\\합니다.  
+3.  Redist 폴더: 런타임/디버깅을 위해 필요 하 고 사용자의 응용 프로그램의 일부로 패키지 될 해야 하는 파일입니다. \Redist 아래 모든 이진 파일을 배치 해야\\< 구성\>\\< arch\>, 이진 이름 고유성을 보장 하려면 다음과 같은 형식에 있어야 합니다:  **\<회사 >.\< 제품 > 합니다. \<목적 > 합니다. \<확장 >** 합니다. 예를 들어: Microsoft.Cpp.Build.dll 다른 Sdk (예: javascript, css, pri, xaml, png 및 jpg 파일)에서 파일 이름으로 이름이 충돌할 수 있습니다 하는 모든 파일 \redist 아래를 배치할\\< 구성\>\\< arch\> \\< sdkname\>\ XAML와 연결 된 파일을 제외 하 고 제어 합니다. 이러한 파일은 \redist 아래 저장할\\< 구성\>\\< arch\>\\< componentname\>\\합니다.  
   
 4.  DesignTime 폴더: 유일한 사전-run/디버깅에 필요한 파일이 고 사용자의 응용 프로그램의 일부로 패키지할 수 없습니다. 이러한 XML 문서, 라이브러리, 머리글, 디자인 타임 이진 도구 상자, MSBuild 아티팩트 등 수 있습니다. 네이티브 프로젝트 사용가지고 있어야 되는 모든 SDK는 *SDKName*.props 파일입니다. 다음이 유형의 파일의 예제를 보여 줍니다.  
   

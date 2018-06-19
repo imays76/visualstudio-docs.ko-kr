@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141417"
 ---
 # <a name="keybindings-element"></a>KeyBindings 요소
 키 바인딩 요소와 다른 KeyBindings 그룹화 키 바인딩 요소를 그룹화합니다.  

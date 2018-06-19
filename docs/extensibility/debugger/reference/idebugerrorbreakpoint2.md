@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113348"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 이 인터페이스는 오류 또는 경고 중단점에 잘못 된 위치, 잘못 된 식 또는 보류 중인 중단점에 바인딩하지 (코드 등, 아직 로드 되지) 않습니다 이유는 이유 등을 나타냅니다.  

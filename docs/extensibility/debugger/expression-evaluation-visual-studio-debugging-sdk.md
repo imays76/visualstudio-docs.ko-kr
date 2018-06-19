@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109807"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>식 계산 (Visual Studio 디버깅 SDK)
 중단 모드에서는 IDE 프로그램의 여러 변수가 포함 된 간단한 식을 계산할 수 있어야 합니다. 이를 위해 디버그 엔진 (DE) 구문 분석 하 고 IDE의 창 중 하나에 입력 된 식을 계산할 수 있어야 합니다.  

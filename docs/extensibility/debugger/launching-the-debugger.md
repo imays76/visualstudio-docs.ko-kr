@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108932"
 ---
 # <a name="launching-the-debugger"></a>디버거 시작
 디버거 시작 메서드 및 이벤트와 해당 하는 적절 한 특성의 순서를 전송 해야 합니다.  

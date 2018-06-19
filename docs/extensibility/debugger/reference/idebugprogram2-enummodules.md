@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114724"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 이 프로그램을 로드 하 고 실행 되는 모듈의 목록을 검색 합니다.  

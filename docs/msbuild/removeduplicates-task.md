@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574196"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 작업
 지정된 항목 컬렉션에서 중복된 항목을 제거합니다.  

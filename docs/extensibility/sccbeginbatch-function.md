@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138238"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 함수
 이 함수는 소스 제어 작업의 일괄 처리 순서를 시작합니다. [SccEndBatch](../extensibility/sccendbatch-function.md) 일괄 처리를 종료 하려면 호출 됩니다. 이러한 일괄 처리를 중첩할 수 있습니다.  

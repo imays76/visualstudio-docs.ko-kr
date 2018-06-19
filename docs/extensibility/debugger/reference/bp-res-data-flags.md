@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108725"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 데이터 중단점 에뮬레이트 되는 여부 또는에서 구현 된 하드웨어를 지정 합니다.  

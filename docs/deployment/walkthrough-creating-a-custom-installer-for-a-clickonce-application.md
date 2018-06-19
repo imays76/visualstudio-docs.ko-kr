@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565421"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>연습: ClickOnce 응용 프로그램용 사용자 지정 설치 관리자 만들기
 ClickOnce 응용 프로그램은.exe 파일에 따라 자동으로 설치 및 사용자 지정 설치 관리자에 의해 업데이트 수입니다. 사용자 지정 설치 관리자는 보안 및 유지 관리 작업에 대 한 사용자 지정 대화 상자를 포함 하 여 설치 하는 동안 사용자 지정 고객 환경을 구현할 수 있습니다. 사용자 지정 설치 관리자 설치 작업을 수행 하려면 사용 하 여는 <xref:System.Deployment.Application.InPlaceHostingManager> 클래스입니다. 이 연습에는 ClickOnce 응용 프로그램을 설치 하는 사용자 지정 설치 관리자를 만드는 방법을 보여 줍니다.  

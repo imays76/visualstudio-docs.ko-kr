@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116021"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 참조의 부모 참조를 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.  

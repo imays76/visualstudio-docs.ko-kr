@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107753"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows Forms 도구 상자 컨트롤 만들기
 Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상자 컨트롤 항목 템플릿에 자동으로 추가 하는 컨트롤을 만들 수 있습니다는 **도구 상자** 확장 기능이 설치 됩니다. 이 항목에는 다른 사용자에 게 배포할 수 있는 간단한 카운터 컨트롤을 만드는 템플릿을 사용 하는 방법을 보여 줍니다.  

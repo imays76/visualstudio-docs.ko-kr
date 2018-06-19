@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113555"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 이 인터페이스 세션 디버그 관리자 (SDM) 프로그램이 로드 되 면 있지만 모든 코드를 실행 하기 전에 디버그 엔진 (DE)에 의해 보내집니다.  

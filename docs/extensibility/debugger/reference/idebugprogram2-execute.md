@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115413"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 중지 된 상태에서이 프로그램을 실행을 계속 합니다. 이전 실행 상태 (예: 단계)의 선택을 취소 하면, 프로그램 실행을 다시 시작 합니다.  

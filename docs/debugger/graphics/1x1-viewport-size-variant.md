@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472060"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 뷰포트 크기 변형
 모든 렌더링 대상의 뷰포트 크기를 1x1 픽셀로 줄입니다.  

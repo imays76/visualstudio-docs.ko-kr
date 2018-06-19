@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138108"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>파일 이름 확장명에 대 한 동사를 등록 하는 중
 응용 프로그램 파일 이름 확장명의 연결에는 일반적으로 사용자 파일을 두 번 클릭할 때 발생 하는 기본 작업을 있습니다. 이 기본 동작 동사, 예를 들어 열기 작업에 해당 하는에 연결 됩니다.  

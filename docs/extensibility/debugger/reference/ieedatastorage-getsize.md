@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119830"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 이 개체에 포함 된 바이트 수를 반환 합니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125439"
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 디버깅 샘플
 두 개의 샘플에 사용 하 여 Visual Studio 디버거를 확장 하는 방법을 보여 줍니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다.  

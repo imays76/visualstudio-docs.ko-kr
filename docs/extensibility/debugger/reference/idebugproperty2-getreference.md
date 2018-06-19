@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115098"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 속성의 값에 대 한 참조를 반환합니다.  

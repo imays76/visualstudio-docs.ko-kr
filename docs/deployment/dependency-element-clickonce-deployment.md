@@ -32,6 +32,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563055"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;종속성&gt; 요소 (ClickOnce 배포)
 를 설치 하려면 응용 프로그램의 버전 및 응용 프로그램 매니페스트의 위치를 식별 합니다.  

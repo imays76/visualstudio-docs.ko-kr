@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122745"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 이 인터페이스에는 디버그 관리자 (SDM) 디버그 엔진 (DE)을 나타내는 인터페이스를 검색 하는 세션 수 있습니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108416"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 사용할 수 있는 디버그 엔진에 대 한 고유 식별자의 배열에 설명합니다.  
