@@ -1,19 +1,20 @@
 ---
-title: "ArrayBuffer 개체 | Microsoft Docs"
-ms.custom: 
+title: ArrayBuffer 개체 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9fda1261-f450-493b-b3db-ecfa9ca93cd7
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634323"
 ---
 # <a name="arraybuffer-object"></a>ArrayBuffer 개체
 다른 형식화된 배열용으로 데이터를 저장하는 데 사용되는 이진 데이터의 원시 버퍼를 나타냅니다. `ArrayBuffers`읽거나를 직접 쓸 수 없는 형식화 된 배열에 전달 될 수 있지만 또는 [DataView 개체](../../javascript/reference/dataview-object.md) 필요에 따라 원시 버퍼를 해석 하 합니다.  

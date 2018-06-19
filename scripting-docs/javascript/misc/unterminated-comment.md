@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633703"
 ---
 # <a name="unterminated-comment"></a>종결되지 않은 주석입니다.
 여러 줄의 주석 블록을 시작 하지만 제대로 종료 되지 않았습니다. 여러 줄 주석을로 시작는 "/\*" 조합과로 끝나야 "\*/" 조합 합니다. 예를 들면 다음과 같습니다.  

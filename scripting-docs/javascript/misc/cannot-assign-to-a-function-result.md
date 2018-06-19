@@ -1,13 +1,13 @@
 ---
-title: "함수 결과에 할당할 수 없습니다 | Microsoft Docs"
-ms.custom: 
+title: 함수 결과에 할당할 수 없습니다 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5003
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632983"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>함수 결과에 할당할 수 없습니다.
 함수 결과에 값을 할당 하려고 했습니다. 함수의 결과 변수에 할당할 수 있습니다 하지만 변수로 사용할 수 없습니다. 함수 자체에 새 값을 할당 하려는 경우 (함수 호출 연산자) 괄호를 생략 합니다. 다음 예제에서는이 오류가 생성 되는 상황을 보여 줍니다.  

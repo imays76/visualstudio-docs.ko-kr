@@ -1,12 +1,13 @@
 ---
-title: "내장 개체(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 내장 개체(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - built-in objects [JavaScript]
 - intrinsic objects [JavaScript]
 ms.assetid: 6520c634-a7d1-4a05-8c1b-2e79f449d2e4
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569613"
 ---
 # <a name="intrinsic-objects-javascript"></a>내장 개체(JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]에서는 내장(또는 "기본 제공") 개체를 제공합니다. `Array`, `Boolean`, `Date`, `Error`, `Function`, **Global**, **JSON**, **Math**, **Number**, `Object`, `RegExp` 및 `String` 개체입니다. 내장 개체에는 [언어 참조](../javascript/reference/javascript-reference.md)에서 자세히 설명하는 연결된 메서드, 함수, 속성 및 상수가 있습니다.  

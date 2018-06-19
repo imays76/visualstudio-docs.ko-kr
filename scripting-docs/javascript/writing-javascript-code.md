@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571503"
 ---
 # <a name="writing-javascript-code"></a>JavaScript 코드 작성
 다른 많은 프로그래밍 언어와 마찬가지로 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]는 명령문, 관련 명령문 집합으로 구성된 블록 및 주석으로 구성됩니다. 명령문 내에서 변수, 문자열, 숫자 및 식을 사용할 수 있습니다.  

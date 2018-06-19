@@ -1,13 +1,13 @@
 ---
 title: JsSerializedScriptUnloadCallback typedef | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d18c392-cca0-411e-9f2b-0d788b16161a
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568573"
 ---
 # <a name="jsserializedscriptunloadcallback-typedef"></a>JsSerializedScriptUnloadCallback typedef
 스크립트 실행과 관련된 모든 리소스를 완료하면 런타임에서 호출됩니다.     이때 바이트 코드, 컨텍스트 등 소스가 로드되면 호출자는 소스를 해제해야 합니다.  

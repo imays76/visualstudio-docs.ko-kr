@@ -1,18 +1,18 @@
 ---
-title: "JavaScript에서 Windows 런타임 사용 | Microsoft Docs"
-ms.custom: 
+title: JavaScript에서 Windows 런타임 사용 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/03/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime
 ms.assetid: 90658546-f746-4e34-a7d1-71cf9ee322a2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571463"
 ---
 # <a name="using-the-windows-runtime-in-javascript"></a>JavaScript에서 Windows 런타임 사용
 유니버설 Windows 플랫폼(UWP) 앱을 작성할 때 네이티브 JavaScript 개체, 메서드 및 속성을 사용하는 것과 거의 동일한 방법으로 Windows 런타임 클래스, 메서드 및 속성을 사용할 수 있습니다. 이 항목에서는 Windows 런타임 형식이 표현되는 방법, 비동기 Windows 런타임 메서드를 사용하는 방법 및 Windows 런타임 이벤트를 수신 대기 및 처리하는 방법에 대한 설명을 비롯하여 JavaScript에서 Windows 런타임 API를 사용하는 방법의 기본 개념을 설명하는 기본적인 정보와 이러한 설명 항목의 링크를 제공합니다.  

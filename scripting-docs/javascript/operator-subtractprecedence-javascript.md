@@ -1,12 +1,13 @@
 ---
-title: "연산자 우선 순위(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 연산자 우선 순위(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - operator precedence
 - order of precedence
 ms.assetid: cf3c510a-2214-4b47-b8fe-3521298efaab
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569353"
 ---
 # <a name="operator-precedence-javascript"></a>연산자 우선 순위(JavaScript)
 연산자 우선 순위는 식이 계산될 때 연산을 수행하는 순서에 대해 설명합니다. 우선 순위가 높은 연산이 우선 순위가 낮은 연산보다 먼저 수행됩니다. 예를 들어, 곱하기가 더하기보다 먼저 수행됩니다.  

@@ -1,19 +1,20 @@
 ---
-title: "BYTES_PER_ELEMENT 상수 (Float64Array) | Microsoft Docs"
-ms.custom: 
+title: BYTES_PER_ELEMENT 상수 (Float64Array) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: e1afc629-4df3-49ce-baf5-5b51a6340621
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634073"
 ---
 # <a name="bytesperelement-constant-float64array"></a>BYTES_PER_ELEMENT 상수(Float64Array)
 배열에서 각 요소의 크기(바이트)입니다.  

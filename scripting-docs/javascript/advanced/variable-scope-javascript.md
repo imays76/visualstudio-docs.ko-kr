@@ -1,12 +1,13 @@
 ---
-title: "변수 범위(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 변수 범위(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - variable scope [JavaScript]
 - variables, scope [JavaScript]
 ms.assetid: a811a9a6-856f-46e9-8be3-f2d22a0c245f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569323"
 ---
 # <a name="variable-scope-javascript"></a>변수 범위(JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]에는 전역 및 지역의 두 가지 범위가 있습니다. 함수 정의의 외부에 선언된 변수는 전역 변수이며 프로그램 전체에서 이 값에 액세스하여 수정할 수 있습니다. 함수 정의의 내부에 선언된 변수는 지역 변수입니다. 이 변수는 함수가 실행될 때마다 만들어지고 소멸되므로 함수 외부의 코드에서 액세스할 수 없습니다. 블록 범위 변수의 특별한 경우를 제외하고는 JavaScript는 블록 범위를 지원하지 않습니다(중괄호 집합 `{. . .}`에서 새 범위를 정의).  

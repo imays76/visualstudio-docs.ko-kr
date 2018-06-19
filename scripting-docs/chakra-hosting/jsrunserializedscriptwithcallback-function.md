@@ -1,13 +1,13 @@
 ---
-title: "JsRunSerializedScriptWithCallback 함수 | Microsoft Docs"
-ms.custom: 
+title: JsRunSerializedScriptWithCallback 함수 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0608d778-f65b-4dc5-a745-364aac57ef59
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568863"
 ---
 # <a name="jsrunserializedscriptwithcallback-function"></a>JsRunSerializedScriptWithCallback 함수
 serialize된 스크립트를 실행합니다.     필요한 경우에만 스크립트 원본을 지연 로드하는 기능을 제공합니다.  

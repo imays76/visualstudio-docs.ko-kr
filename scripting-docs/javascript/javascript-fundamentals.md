@@ -1,13 +1,13 @@
 ---
-title: "JavaScript 기본 사항 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 기본 사항 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, fundamentals
 ms.assetid: 0441e1e5-34e4-4d32-b188-f7fc35613478
-caps.latest.revision: 
+caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569453"
 ---
 # <a name="javascript-fundamentals"></a>JavaScript 기본 사항
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]는 해석된 개체 기반 스크립팅 언어입니다.  

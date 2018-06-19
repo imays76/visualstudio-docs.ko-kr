@@ -1,13 +1,13 @@
 ---
-title: "예외가 throw 되었지만 잡히지 | Microsoft Docs"
-ms.custom: 
+title: 예외가 throw 되었지만 잡히지 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5022
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633123"
 ---
 # <a name="exception-thrown-and-not-caught"></a>예외가 throw되었지만 catch할 수 없습니다.
 포함 되어 있습니다는 `throw` 사용자 코드에서 문 내에 포함 하지는 **시도** 블록 또는 더 연결 했습니다 **catch** 오류를 트래핑 하는 블록입니다. 내에서 예외가 throw 됩니다는 **시도** 사용 하 여는 **throw** 문, 및 외부 검색 되었습니다는 **시도** 블록와 함께 한 **catch** 문입니다.  

@@ -1,19 +1,20 @@
 ---
-title: "has 메서드 (Set) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: has 메서드 (Set) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: fb80f2e0-fc5e-4508-af14-1c3b3b833636
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636723"
 ---
 # <a name="has-method-set-javascript"></a>has 메서드(Set)(JavaScript)
 반환 `true` 집합에 지정된 된 요소입니다.  

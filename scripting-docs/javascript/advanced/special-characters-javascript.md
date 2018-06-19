@@ -1,12 +1,13 @@
 ---
-title: "특수 문자(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 특수 문자(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -19,7 +20,7 @@ helpviewer_keywords:
 - escape sequence
 - backslash (\)
 ms.assetid: 3b38b1bd-1f0f-4748-b13e-55cab36fd126
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569633"
 ---
 # <a name="special-characters-javascript"></a>특수 문자(JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]는 직접 입력할 수 없는 문자를 만들기 위해 문자열에 포함시킬 수 있는 이스케이프 시퀀스를 제공합니다.  

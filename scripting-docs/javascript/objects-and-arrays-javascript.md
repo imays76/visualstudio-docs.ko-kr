@@ -1,12 +1,13 @@
 ---
-title: "Object 및 Array(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Object 및 Array(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569343"
 ---
 # <a name="objects-and-arrays-javascript"></a>Object 및 Array(JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 개체는 속성과 메서드의 컬렉션입니다. 메서드는 개체의 한 멤버인 함수입니다. 속성은 개체의 멤버이며 배열이나 개체 형식의 값 또는 값 집합입니다. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]에서는 네 가지 종류의 개체를 지원합니다.  

@@ -1,13 +1,13 @@
 ---
-title: "정의 되지 않은 식별자 | Microsoft Docs"
-ms.custom: 
+title: 정의 되지 않은 식별자 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5009
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633583"
 ---
 # <a name="undefined-identifier"></a>식별자가 정의되지 않았습니다.
 식별자를 사용 하려고 하는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 컴파일러 인식 하지 못합니다. 정의 되지 않은 값은 사용할 때마다 반환 됩니다.  
