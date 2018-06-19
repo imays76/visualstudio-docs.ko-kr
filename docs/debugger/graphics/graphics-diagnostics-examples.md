@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474306"
 ---
 # <a name="graphics-diagnostics-examples"></a>그래픽 진단 예제
 다음 예제에서는 DirectX 기반 앱에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 렌더링 문제를 디버깅하는 방법을 보여줍니다.  

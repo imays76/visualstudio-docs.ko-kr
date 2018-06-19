@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264778"
 ---
 # <a name="reduce-method-array-javascript"></a>reduce 메서드(Array)(JavaScript)
 배열의 모든 요소에 대해 지정 된 콜백 함수를 호출합니다. 호출 함수의 반환 값은 누적된 결과이며, 호출 함수에 대한 다음 호출에서 인수로 제공됩니다.  

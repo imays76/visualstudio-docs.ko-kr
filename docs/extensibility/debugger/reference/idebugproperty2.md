@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121575"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 이 인터페이스는 스택 프레임 속성, 프로그램 문서 속성 또는 일부 다른 속성을 나타냅니다. 속성 식 평가의 결과 일반적으로 합니다.  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575321"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 작업
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 매니페스트 또는 네이티브 매니페스트를 생성합니다. 네이티브 매니페스트는 구성 요소의 고유 ID를 정의하고 구성 요소를 구성하는 모든 어셈블리와 파일을 식별하는 방식으로 구성 요소를 설명합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 매니페스트는 응용 프로그램의 진입점을 지정하고 응용 프로그램 보안 수준을 지정하여 네이티브 매니페스트를 확장합니다.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479613"
 ---
 # <a name="diagnose-problems-after-deployment"></a>배포 후 문제 진단
 IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하려면 Visual Studio에서 IntelliTrace 로그를 디버그하는 데 필요한 올바른 소스 파일과 기호 파일을 자동으로 찾을 수 있도록 릴리스에 빌드 정보를 포함합니다.  

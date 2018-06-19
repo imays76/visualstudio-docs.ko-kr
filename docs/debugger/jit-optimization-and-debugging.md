@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477357"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 최적화 및 디버깅
 **최적화.NET에서 작동 하는 방법:** 코드를 디버깅 하려는 경우 더 쉽게 때 코드는 **하지** 최적화 합니다. 코드가 최적화 되 면 컴파일러와 런타임은 변경할 내보낸된 CPU 코드를 더 빨리 실행 하지만 원래 소스 코드에 직접 매핑을 않도록 때문입니다. 즉, 디버거를 자주 코드 단계별 실행 및 지역 변수의 값을 알 수 없는 중단점 예상 대로 작동 하지 않을 수 있습니다.

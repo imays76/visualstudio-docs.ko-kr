@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574472"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>디자인 타임에 어셈블리 확인
 참조 추가 대화 상자의 .NET 탭을 통해 어셈블리에 참조를 추가할 때, 참조는 중간 참조 어셈블리를 가리킵니다. 이 어셈블리는 모든 형식 및 시그니처 정보를 포함하지만 코드를 반드시 포함하지는 않습니다. .NET 탭에는 .NET Framework의 런타임 어셈블리에 해당하는 참조 어셈블리가 표시됩니다. 또한 타사에서 사용되는 등록된 AssemblyFoldersEx 폴더의 런타임 어셈블리에 해당하는 참조 어셈블리도 표시됩니다.  

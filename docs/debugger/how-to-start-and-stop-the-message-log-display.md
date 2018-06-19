@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481076"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>방법: 메시지 로그 표시 시작 및 중지
 경우는 [메시지 뷰](../debugger/messages-view.md) 창이 활성화 되는 **로깅 시작** 또는 **로깅 중지** Spy + +에 선택 표시 **메시지** 메뉴 및 해당 **로깅 시작** 또는 **로깅 중지** 도구 모음 단추가 활성화 됩니다.  

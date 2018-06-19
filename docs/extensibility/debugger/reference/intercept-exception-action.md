@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31124459"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
 예외를 가로챌 때 수행할 동작을 지정 합니다.  

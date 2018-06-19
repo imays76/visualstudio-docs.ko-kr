@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475770"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 변형
 모든 렌더링 대상 및 스왑 체인에서 MSAA(MultiSample Anti-Aliasing) 설정을 재정의합니다.  

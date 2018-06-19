@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565642"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>방법: ClickOnce 게시 버전 자동 증가
 게시 하는 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 변경 하는 응용 프로그램의 `Publish Version` 속성으로 인해 응용 프로그램이 업데이트로 게시 합니다. 기본적으로 Visual Studio 자동 증가 `Revision` 의 숫자는 `Publish Version` 응용 프로그램을 게시할 때마다 합니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116798"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 다른에 대 한 참조가 비교합니다. 나중에 사용하기 위해 예약되어 있습니다.  

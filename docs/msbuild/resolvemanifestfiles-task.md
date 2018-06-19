@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573208"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles 작업
 빌드 프로세스에서 빌드된 항목, 종속성, 위성, 콘텐츠, 디버그 기호 및 설명서 등의 항목을 확인합니다.  

@@ -39,6 +39,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478046"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거를 사용한 예외 관리
 
@@ -134,7 +135,7 @@ ms.lasthandoff: 04/18/2018
     }  
     ```  
   
-     있는 경우 **AccessViolationException** 체크 인 **예외 설정**를 디버거에서 실행이 코드를 실행 하면 중단 됩니다는 `throw` 줄에서  **ThrowHandledException()** 및 **ThrowUnhandledException()**합니다.  
+     있는 경우 **AccessViolationException** 체크 인 **예외 설정**를 디버거에서 실행이 코드를 실행 하면 중단 됩니다는 `throw` 줄에서  **ThrowHandledException()** 및 **ThrowUnhandledException()** 합니다.  
   
  예외 설정을 기본값으로 복원하려는 경우에는 도구 모음에서 **복원** 단추를 클릭하면 됩니다.  
   

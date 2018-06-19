@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573117"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>표준 및 사용자 지정 도구 집합 구성
 MSBuild 도구 집합은 응용 프로그램 프로젝트를 빌드하는 데 사용할 수 있는 작업, 대상 및 도구에 대한 참조를 포함합니다. MSBuild는 표준 도구 집합을 포함하지만 사용자 지정 도구 집합을 만들 수도 있습니다. 도구 집합을 지정하는 방법에 대한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)을 참조하세요.  

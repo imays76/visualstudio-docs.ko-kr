@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558622"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>How to: Enable ClickOnce Security Settings
 응용 프로그램을 게시 하려면 ClickOnce 응용 프로그램에 대 한 코드 액세스 보안을 사용 해야 합니다. 게시 마법사를 사용 하 여 응용 프로그램을 게시할 때 자동으로 수행 됩니다.  

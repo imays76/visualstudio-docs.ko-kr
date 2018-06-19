@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482076"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 셰이더 디버거
 Visual Studio Graphics Analyzer의 HLSL 디버거를 사용하면 앱의 실제 조건에서 HLSL 셰이더 코드가 작동하는 방식을 이해할 수 있습니다.  

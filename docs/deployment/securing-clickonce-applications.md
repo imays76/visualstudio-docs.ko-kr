@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562470"
 ---
 # <a name="securing-clickonce-applications"></a>ClickOnce 응용 프로그램 보안
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에서는 .NET Framework의 코드 액세스 보안 제한에 따라 보호된 리소스 및 작업에 대한 코드의 액세스를 제한합니다. 따라서 코드 액세스 보안의 의미를 이해하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 적절하게 작성해야 합니다. 응용 프로그램에서는 완전 신뢰 영역이나 부분 신뢰 영역(예: 인터넷 및 인트라넷 영역)을 사용하여 액세스를 제한할 수 있습니다.  

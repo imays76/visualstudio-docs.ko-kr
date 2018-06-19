@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567956"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 작업
 `AspNetCompiler` 작업은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램을 미리 컴파일하는 유틸리티인 aspnet_compiler.exe를 래핑합니다.  

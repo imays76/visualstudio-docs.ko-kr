@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115504"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
 프로그램 또는 프로그램 노드는 디버그 엔진 (DE)이이 프로그램을 디버깅 하는 데 알려 줍니다.  
