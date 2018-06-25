@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795320"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327192"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 구독
 Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플랫폼 및 장치에서 유용한 응용 프로그램을 만들고 배포하고 관리하는 데 필요한 포괄적인 리소스 집합입니다.  구독 혜택으로는 개발자 도구, 클라우드 서비스 및 소프트웨어, 교육에 대한 액세스와 개발 및 테스트 요구 사항에 대한 지원이 있습니다.
@@ -149,7 +149,6 @@ Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server 및 TFS CAL</li>
                         </ul>                        
                     </div>
@@ -166,8 +165,8 @@ Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플
                         <p>Visual Studio 구독이 있으면 월간 Azure 크레딧을 받고 Azure 서비스에 무료로 액세스할 뿐만 아니라 개발 및 테스트 요금 할인 혜택을 누리고 미리 구성된 가상 머신으로 구독자 전용 이미지 갤러리에 단독으로 액세스할 수 있습니다. 구독에 따라 클라우드 서비스에는 다음이 포함될 수 있습니다.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365 개발자 구독</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Windows 개발자 계정</a></li>
                             <li>PowerBI Pro</li>
