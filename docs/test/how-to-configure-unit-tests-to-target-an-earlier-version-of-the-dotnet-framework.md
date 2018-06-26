@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 4bb2cd04d005700ac0a4f647d04e495f717d0ed7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750742"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
 
@@ -63,11 +64,11 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 5.  **컴파일** 탭에서 다음 그림과 같이 **고급 컴파일 옵션**을 선택합니다.
 
-     ![고급 컴파일 옵션](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
+     ![고급 컴파일 옵션](../test/media/howtoconfigureunittest35frameworka.png)
 
 6.  **대상 프레임워크(모든 구성)** 드롭다운 목록을 사용하여 다음 그림의 설명선 B에 표시된 대로 대상 프레임워크를 **.NET Framework 3.5** 이상으로 변경합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
-     ![대상 프레임워크 드롭다운 목록](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![대상 프레임워크 드롭다운 목록](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Visual C# 단위 테스트 프로젝트용 특정 버전 .NET Framework로 대상 다시 지정
 
@@ -85,7 +86,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 5.  **응용 프로그램** 탭에서 **대상 프레임워크**를 선택합니다. 드롭다운 목록에서 다음 그림과 같이 **.NET Framework 3.5** 이상 버전을 선택합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
-     ![대상 프레임워크 드롭다운 목록](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![대상 프레임워크 드롭다운 목록](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>C++/CLI 단위 테스트 프로젝트용 특정 버전 .NET Framework로 대상 다시 지정
 

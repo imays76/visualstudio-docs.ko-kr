@@ -10,26 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c61d95758597b09b28ee5acd6268c44ea1bf0869
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c40350019d0878893568977df6db88c30fdc734
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764858"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 네이티브 서비스에 프로파일러를 연결하여 응용 프로그램 통계 수집
-이 항목에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 네이티브 서비스에 연결하고 샘플링 방법을 통해 성능 통계를 수집하는 방법에 대해 설명합니다.  
+이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 네이티브 서비스에 연결하고 샘플링 방법을 통해 성능 통계를 수집하는 방법에 대해 설명합니다.  
   
 > [!NOTE]
 >  Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
   
 > [!NOTE]
->  프로파일링 도구의 명령줄 도구는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 설치 디렉터리의 \Team Tools\Performance Tools 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.  
+>  프로파일링 도구의 명령줄 도구는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 설치 디렉터리의 *\Team Tools\Performance Tools* 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.  
   
  프로파일러가 서비스에 연결되면 데이터 수집을 일시 중지하고 다시 시작할 수 있습니다.  
   
  프로파일링 세션을 종료하려면 프로파일러를 서비스에서 분리하고 명시적으로 종료해야 합니다.  
   
-## <a name="starting-the-application-with-the-profiler"></a>프로파일러를 사용하여 응용 프로그램 시작  
+## <a name="start-the-application-with-the-profiler"></a>프로파일러를 사용하여 응용 프로그램 시작  
  프로파일러를 네이티브 서비스에 연결하려면 **VSPerfCmd.exe**[/start](../profiling/start.md) 및 [/attach](../profiling/attach.md) 옵션을 사용하여 프로파일러를 초기화하고 대상 응용 프로그램에 연결합니다. **/start** 및 **/attach**와 해당 개별 옵션을 단일 명령줄에서 지정할 수 있습니다. [/globaloff](../profiling/globalon-and-globaloff.md) 옵션을 추가하여 대상 응용 프로그램 시작 시 데이터 수집을 일시 중지할 수도 있습니다. 그런 다음 [/globalon](../profiling/globalon-and-globaloff.md)을 사용하여 데이터 수집을 시작할 수 있습니다.  
   
 #### <a name="to-attach-the-profiler-to-a-native-service"></a>네이티브 서비스에 프로파일러를 연결하려면  
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/19/2018
   
     -   **/start:sample** 옵션은 프로파일러를 초기화합니다.  
   
-    -   **/start**에는 **/output:**`OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.vsp) 파일의 이름과 위치를 지정합니다.  
+    -   **/start**에는 **/output:**`OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.*vsp*) 파일의 이름과 위치를 지정합니다.  
   
      **/start:sample** 옵션과 다음 옵션을 함께 사용할 수 있습니다.  
   
@@ -74,8 +75,8 @@ ms.lasthandoff: 04/19/2018
     |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|샘플링 이벤트를 운영 체제 커널에 대한 프로세스의 시스템 호출로 변경합니다(syscalls). `Interval`이 지정되면 샘플 간의 호출 수를 설정합니다. 기본값은 10입니다.|  
     |[/counter](../profiling/counter.md) **:** `Config`|샘플링 이벤트 및 간격을 `Config`에 지정된 프로세서 성능 카운터 및 간격으로 변경합니다.|  
   
-## <a name="controlling-data-collection"></a>데이터 컬렉션 제어  
- 대상 응용 프로그램이 실행되는 동안 **VSPerfCmd.exe** 옵션을 사용하여 프로파일러 데이터 파일에 대한 데이터 쓰기를 시작하고 중지할 수 있습니다. 데이터 수집을 제어하면 응용 프로그램의 시작 또는 종료와 같이 프로그램 실행의 특정 부분에 대한 데이터를 수집할 수 있습니다.  
+## <a name="control-data-collection"></a>데이터 수집 제어  
+ 대상 응용 프로그램이 실행되는 동안 *VSPerfCmd.exe* 옵션을 사용하여 프로파일러 데이터 파일에 대한 데이터 쓰기를 시작하고 중지할 수 있습니다. 데이터 수집을 제어하면 응용 프로그램의 시작 또는 종료와 같이 프로그램 실행의 특정 부분에 대한 데이터를 수집할 수 있습니다.  
   
 #### <a name="to-start-and-stop-data-collection"></a>데이터 수집을 시작 및 중지하려면  
   
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|프로세스 ID(`PID`)로 지정된 프로세스에 대한 데이터 수집을 시작(**/processon**) 또는 중지(**/processoff**)합니다.|  
     |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach**는 프로세스 ID 또는 프로세스 이름으로 지정된 프로세스에 대한 데이터 수집을 시작합니다. **/detach**는 지정된 프로세스 또는 모든 프로세스(프로세스가 지정되지 않은 경우)에 대한 데이터 수집을 중지합니다.|  
   
-## <a name="ending-the-profiling-session"></a>프로파일링 세션 종료  
+## <a name="end-the-profiling-session"></a>프로파일링 세션 종료  
  프로파일링 세션을 종료하려면 프로파일러를 서비스에서 분리한 다음 명시적으로 종료해야 합니다. 서비스를 중지하거나 **VSPerfCmd /detach** 옵션을 호출하여 샘플링 방법으로 프로파일링 중인 네이티브 서비스를 분리할 수 있습니다. 그런 다음 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 옵션을 호출하여 프로파일러를 끄고 프로파일링 데이터 파일을 닫습니다.  
   
 #### <a name="to-end-a-profiling-session"></a>프로파일링 세션을 종료하려면  

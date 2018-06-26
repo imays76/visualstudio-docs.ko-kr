@@ -18,11 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b86f079feceebf00bb1a39adcf3ab84622474d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6ff94e67291bff8dc00d3fa63976f283da485f6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745791"
 ---
 # <a name="class-view-and-object-browser-icons"></a>클래스 뷰 및 개체 브라우저 아이콘
 
@@ -30,19 +31,19 @@ ms.lasthandoff: 04/26/2018
 
 |아이콘|설명|아이콘|설명|
 |----------|-----------------|----------|-----------------|
-|![네임스페이스 기호](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|네임스페이스|![선언 기호](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|메서드 또는 함수|
-|![클래스 아이콘](../ide/media/vxclass_icon.gif "vxClass_Icon")|클래스|![연산자 기호](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|연산자|
-|![롤리팝 인터페이스 기호](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|인터페이스|![속성 기호](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|속성|
-|![구조체 기호](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|구조체|![필드 아이콘](../ide/media/vxfield_icon.gif "vxField_Icon")|필드 또는 변수|
-|![공용 구조체 기호](../ide/media/vxunion_icon.gif "vxUnion_Icon")|공용 구조체|![이벤트 기호](../ide/media/vxevent_icon.gif "vxEvent_Icon")|이벤트(event)|
-|![열거형 기호](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Enum|![상수 아이콘](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|상수|
-|![형식 정의 기호](../ide/media/vxtypedef_icon.gif "vxTypeDef_Icon")|TypeDef|![항목 열거 기호](../ide/media/vxenumitem_icon.gif "vxEnumItem_Icon")|항목 열거|
-|![Visual Studio 모듈 기호](../ide/media/vxmodule_icon.gif "vxModule_Icon")|Module|![맵 항목 기호](../ide/media/vxmapitem_icon.gif "vxMapItem_Icon")|맵 항목|
-|![확장명 메서드 기호](../ide/media/extensionmethod.gif "ExtensionMethod")|확장명 메서드|![선언 기호](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|외부 선언|
-|![대리자 기호](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|대리자|![클래스 뷰 및 개체 브라우저의 오류 아이콘](../ide/media/erroricon.gif "ErrorIcon")|Error|
-|![예외 기호](../ide/media/vxexception_icon.gif "vxException_Icon")|예외|![템플릿 기호](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|템플릿|
-|![맵 기호](../ide/media/vxmap_icon.gif "vxMap_Icon")|맵|![오류 느낌표 기호](../ide/media/vxerror_icon.gif "vxError_Icon")|알 수 없음|
-|![형식 전달 기호](../ide/media/ob_type_forward.gif "ob_type_forward")|형식 전달|||
+|![네임스페이스 기호](../ide/media/vxnamespace_icon.gif)|네임스페이스|![선언 기호](../ide/media/vxmethod_icon.gif)|메서드 또는 함수|
+|![클래스 아이콘](../ide/media/vxclass_icon.gif)|클래스|![연산자 기호](../ide/media/vxoperator_icon.gif)|연산자|
+|![롤리팝 인터페이스 기호](../ide/media/vxinterface_icon.gif)|인터페이스|![속성 기호](../ide/media/vxproperty_icon.gif)|속성|
+|![구조체 기호](../ide/media/vxstruct_icon.gif)|구조체|![필드 아이콘](../ide/media/vxfield_icon.gif)|필드 또는 변수|
+|![공용 구조체 기호](../ide/media/vxunion_icon.gif)|공용 구조체|![이벤트 기호](../ide/media/vxevent_icon.gif)|이벤트(event)|
+|![열거 기호](../ide/media/vxenum_icon.gif)|Enum|![상수 아이콘](../ide/media/vxconstant_icon.gif)|상수|
+|![형식 정의 기호](../ide/media/vxtypedef_icon.gif)|TypeDef|![항목 열거 기호](../ide/media/vxenumitem_icon.gif)|항목 열거|
+|![Visual Studio 모듈 기호](../ide/media/vxmodule_icon.gif)|Module|![맵 항목 기호](../ide/media/vxmapitem_icon.gif)|맵 항목|
+|![확장명 메서드 기호](../ide/media/extensionmethod.gif)|확장명 메서드|![선언 기호](../ide/media/vxmethod_icon.gif)|외부 선언|
+|![대리자 기호](../ide/media/vxdelegate_icon.gif)|대리자|![클래스 뷰 및 개체 브라우저의 오류 아이콘](../ide/media/erroricon.gif)|Error|
+|![예외 기호](../ide/media/vxexception_icon.gif)|예외|![템플릿 기호](../ide/media/vxtemplate_icon.gif)|템플릿|
+|![맵 기호](../ide/media/vxmap_icon.gif)|맵|![오류 느낌표 기호](../ide/media/vxerror_icon.gif)|알 수 없음|
+|![형식 전달 기호](../ide/media/ob_type_forward.gif)|형식 전달|||
 
 ## <a name="signal-icons"></a>신호 아이콘
 
@@ -51,11 +52,11 @@ ms.lasthandoff: 04/26/2018
 |아이콘|설명|
 |----------|-----------------|
 |\<신호 없음 아이콘>|공개. 이 구성 요소 및 참조하는 구성 요소의 모든 곳에서 액세스할 수 있습니다.|
-|![신호 보호됨 기호](../ide/media/vxsignal_icon_key.gif "vxSignal_Icon_Key")|보호됨. 포함하는 클래스 또는 형식이나, 여기에서 파생된 클래스 또는 형식에서 액세스할 수 있습니다.|
-|![신호 비공개 기호](../ide/media/vxsignal_icon_lock.gif "vxSignal_Icon_Lock")|비공개. 포함하는 클래스 또는 형식에서만 액세스할 수 있습니다.|
-|![신호 Sealed 기호](../ide/media/vxsignal_icon_envelope.gif "vxSignal_Icon_Envelope")|Sealed.|
-|![신호 Friend&#47;내부 기호](../ide/media/vxsignal_icon_diamond.gif "vxSignal_Icon_Diamond")|Friend/내부. 프로젝트에서만 액세스할 수 있습니다.|
-|![신호 아이콘 화살표](../ide/media/vxsignal_icon_arrow.gif "vxSignal_Icon_Arrow")|바로 가기. 개체에 대한 바로 가기.|
+|![신호 Protected 기호](../ide/media/vxsignal_icon_key.gif)|보호됨. 포함하는 클래스 또는 형식이나, 여기에서 파생된 클래스 또는 형식에서 액세스할 수 있습니다.|
+|![신호 Private 기호](../ide/media/vxsignal_icon_lock.gif)|비공개. 포함하는 클래스 또는 형식에서만 액세스할 수 있습니다.|
+|![신호 Sealed 기호](../ide/media/vxsignal_icon_envelope.gif)|Sealed.|
+|![신호 Friend&#47;내부 기호](../ide/media/vxsignal_icon_diamond.gif)|Friend/내부. 프로젝트에서만 액세스할 수 있습니다.|
+|![신호 아이콘 화살표](../ide/media/vxsignal_icon_arrow.gif)|바로 가기. 개체에 대한 바로 가기.|
 
 > [!NOTE]
 > 프로젝트가 소스 제어 데이터베이스에 포함되어 있는 경우, 추가 신호 아이콘이 표시되어 체크 인 또는 체크 아웃과 같은 소스 제어 상태를 나타낼 수 있습니다.

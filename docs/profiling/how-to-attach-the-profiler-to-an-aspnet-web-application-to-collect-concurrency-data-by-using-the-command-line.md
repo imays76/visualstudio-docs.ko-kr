@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 56a3daa0f20a62c8b7410ba5b339179fbf9c5521
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 09ba7884d9c8bd1abf9762046b9e8f7fb534d530
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766011"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 ASP.NET 웹 응용 프로그램에 프로파일러를 연결하여 동시성 데이터 수집
-이 항목은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 ASP.NET 응용 프로그램에 연결하고 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.  
+이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 ASP.NET 응용 프로그램에 연결하고 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.  
   
- 프로파일링 도구의 명령줄 도구는 Visual Studio 설치 디렉터리의 \Team Tools\Performance Tools 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 명령 프롬프트에서 프로파일러를 사용하려면 도구 경로를 **명령 프롬프트** 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.  
+ 프로파일링 도구의 명령줄 도구는 Visual Studio 설치 디렉터리의 *\Team Tools\Performance Tools* 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 명령 프롬프트에서 프로파일러를 사용하려면 도구 경로를 **명령 프롬프트** 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.  
   
- 동시성 데이터를 수집하려면 웹 사이트를 호스트하는 프로파일러를 ASP.NET 작업자 프로세스에 연결합니다. 프로파일러가 응용 프로그램에 연결되면 데이터 수집을 일시 중지하고 다시 시작할 수 있습니다. 프로파일링 세션을 종료하려면 프로파일러가 응용 프로그램에 연결되어 있으면 안 되고 프로파일러가 명시적으로 종료되어야 합니다. 대부분의 경우 세션 종료 시 프로파일링 환경 변수를 지워야 합니다.  
+ 동시성 데이터를 수집하려면 웹 사이트를 호스트하는 프로파일러를 ASP.NET 작업자 프로세스에 연결합니다. 프로파일러가 응용 프로그램에 연결되면 데이터 수집을 일시 중지하고 다시 시작할 수 있습니다. 프로파일링 세션을 종료하려면 Profiler가 응용 프로그램에 연결되어 있으면 안 되고 프로파일러가 명시적으로 종료되어야 합니다. 대부분의 경우 세션 종료 시 프로파일링 환경 변수를 지워야 합니다.  
   
-## <a name="attaching-the-profiler"></a>프로파일러 연결  
+## <a name="attach-the-profiler"></a>프로파일러 연결  
   
 #### <a name="to-attach-the-profiler-to-a-aspnet-application"></a>ASP.NET 응용 프로그램에 프로파일러를 연결하려면  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/19/2018
     |[/crosssession](../profiling/crosssession.md)|프로세스 프로파일링 기능을 다른 로그온 세션에서 사용하도록 설정합니다.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|프로파일링 중에 수집할 Windows 성능 카운터를 지정합니다.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|**/wincounter**와 함께 사용해야 합니다. Windows 성능 카운터 수집 이벤트 사이에 경과하는 시간(밀리초)을 지정합니다. 기본값은 500입니다.|  
-    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|프로파일링 중에 수집할 ETW(Windows용 이벤트 추적) 이벤트를 지정합니다. ETW 이벤트는 별도의 파일(.etl)로 수집됩니다.|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|프로파일링 중에 수집할 ETW(Windows용 이벤트 추적) 이벤트를 지정합니다. ETW 이벤트는 별도의 파일(.*etl*)로 수집됩니다.|  
   
 2.  일반적인 방법으로 ASP.NET 응용 프로그램을 시작합니다.  
   
@@ -53,8 +54,8 @@ ms.lasthandoff: 04/19/2018
   
     -   [/targetclr](../profiling/targetclr.md) **:** `Version`은 한 응용 프로그램에 두 개 이상의 런타임 버전이 로드된 경우 프로파일링할 CLR(공용 언어 런타임) 버전을 지정합니다. 이 매개 변수는 선택적 요소입니다.  
   
-## <a name="controlling-data-collection"></a>데이터 컬렉션 제어  
- 응용 프로그램이 실행 중이면 VSPerfCmd.exe 옵션을 사용하여 파일에 대한 데이터 쓰기를 시작하고 중지하는 방식으로 데이터 수집을 제어할 수 있습니다. 데이터 수집을 제어하여 응용 프로그램의 시작 또는 종료와 같이 프로그램 실행의 특정 부분에 대한 데이터를 수집할 수 있습니다.  
+## <a name="control-data-collection"></a>데이터 수집 제어  
+ 응용 프로그램이 실행 중이면 *VSPerfCmd.exe* 옵션을 사용하여 파일에 대한 데이터 쓰기를 시작하고 중지하는 방식으로 데이터 수집을 제어할 수 있습니다. 데이터 수집을 제어하여 응용 프로그램의 시작 또는 종료와 같이 프로그램 실행의 특정 부분에 대한 데이터를 수집할 수 있습니다.  
   
 #### <a name="to-start-and-stop-data-collection"></a>데이터 수집을 시작 및 중지하려면  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|프로세스 ID(`PID`)로 지정된 프로세스에 대한 데이터 수집을 시작(**/processon**) 또는 중지(**/processoff**)합니다.|  
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach**는 프로세스 ID(`PID`) 또는 프로세스 이름(*ProcName*)으로 지정된 프로세스에 대한 데이터 수집을 시작합니다. **/detach**는 지정된 프로세스 또는 모든 프로세스(프로세스가 지정되지 않은 경우)에 대한 데이터 수집을 중지합니다.|  
   
-## <a name="ending-the-profiling-session"></a>프로파일링 세션 종료  
+## <a name="end-the-profiling-session"></a>프로파일링 세션 종료  
  프로파일링 세션을 종료하려면 프로파일러가 데이터를 수집하고 있지 않아야 합니다. ASP.NET 작업자 프로세스를 다시 시작하거나 **VSPerfCmd /detach** 옵션을 호출하여 동시성 방법으로 프로파일링된 응용 프로그램에서 데이터를 수집하는 작업을 중지할 수 있습니다. 그러고 나서 **VSPerfCmd /shutdown** 옵션을 호출하여 프로파일러를 끄고 프로파일링 데이터 파일을 닫습니다. **VSPerfClrEnv /globaloff** 명령은 프로파일링 환경 변수를 지우지만 컴퓨터가 다시 시작될 때까지 시스템 구성이 다시 설정되지 않습니다.  
   
 #### <a name="to-end-a-profiling-session"></a>프로파일링 세션을 종료하려면  

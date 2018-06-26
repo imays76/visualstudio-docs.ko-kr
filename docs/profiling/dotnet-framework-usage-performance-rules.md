@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddfe3d7bdc4cb274a7b70dca48e45794d5f1cac
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1903b61fce39bdd68b471472530857d720bac906
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766024"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 사용 성능 규칙
 .NET Framework 사용 범주의 성능 규칙은 최적화할 수 있는 특정 방법을 확인하고 성능 문제가 있는지 조사할 수 있는 가비지 수집 및 잠금 경합과 같은 더 일반적인 사용 패턴도 확인합니다.  
@@ -33,6 +34,6 @@ ms.lasthandoff: 04/19/2018
 |[DA0021: Gen 1 가비지 컬렉션의 비율이 높습니다.](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|비교적 많은 .NET 메모리 개체가 1세대 가비지 수집에서 회수됩니다. 너무 많은 단기 유지 개체가 0세대 수집에서 생존하면 메모리 관리 비용이 쉽게 과도해질 수 있습니다.|  
 |[DA0022: Gen 2 가비지 수집의 비율이 높습니다.](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|많은 .NET 메모리 개체가 2세대 가비지 수집에서 회수됩니다. 너무 많은 단기 유지 개체가 1세대 수집에서 생존하면 메모리 관리 비용이 쉽게 과도해질 수 있습니다. 잠금 경합 비율이 규칙 DA0005의 임계값 상한을 초과할 경우 이 규칙이 실행됩니다.|  
 |[DA0023: GC CPU 시간이 깁니다.](../profiling/da0023-high-gc-cpu-time.md)|프로파일링 중에 수집되는 시스템 성능 데이터가 가비지 수집에 걸린 시간이 총 응용 프로그램 처리 시간에 비해 크다는 것을 나타냅니다.|  
-|[DA0024: GC CPU 시간이 너무 깁니다.](../profiling/da0024-excessive-gc-cpu-time.md)|프로파일링 중에 수집되는 시스템 성능 데이터가 가비지 수집에 걸린 시간이 총 응용 프로그램 처리 시간에 비해 지나치게 크다는 것을 나타냅니다. 가비지 수집에 걸린 시간이 규칙 DA0023의 임계값 상한을 초과할 경우 이 규칙이 실행됩니다.|  
+|[DA0024: 과도한 GC CPU 시간](../profiling/da0024-excessive-gc-cpu-time.md)|프로파일링 중에 수집되는 시스템 성능 데이터가 가비지 수집에 걸린 시간이 총 응용 프로그램 처리 시간에 비해 지나치게 크다는 것을 나타냅니다. 가비지 수집에 걸린 시간이 규칙 DA0023의 임계값 상한을 초과할 경우 이 규칙이 실행됩니다.|  
 |[DA0038: 높은 비율의 잠금 경합](../profiling/da0038-high-rate-of-lock-contentions.md)|프로파일링 데이터와 함께 수집되는 시스템 성능 데이터가 응용 프로그램 실행 중에 발생한 잠금 경합의 비율이 상당히 높다는 것을 나타냅니다. 동시성 프로파일링 방법을 통해 다시 프로파일링하여 경합의 원인을 찾아 보세요.|  
-|[DA0039: 잠금 경합의 비율이 매우 높습니다.](../profiling/da0039-very-high-rate-of-lock-contentions.md)|프로파일링 데이터와 함께 수집되는 시스템 성능 데이터가 응용 프로그램 실행 중에 발생한 잠금 경합의 비율이 지나치게 높다는 것을 나타냅니다. 동시성 프로파일링 방법을 통해 다시 프로파일링하여 경합의 원인을 찾아 보세요. 잠금 경합 비율이 규칙 DA0038의 임계값 상한을 초과할 경우 이 규칙이 실행됩니다.|
+|[DA0039: 매우 높은 비율의 잠금 경합](../profiling/da0039-very-high-rate-of-lock-contentions.md)|프로파일링 데이터와 함께 수집되는 시스템 성능 데이터가 응용 프로그램 실행 중에 발생한 잠금 경합의 비율이 지나치게 높다는 것을 나타냅니다. 동시성 프로파일링 방법을 통해 다시 프로파일링하여 경합의 원인을 찾아 보세요. 잠금 경합 비율이 규칙 DA0038의 임계값 상한을 초과할 경우 이 규칙이 실행됩니다.|

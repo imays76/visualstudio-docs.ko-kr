@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765871"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>빠른 시작: XAML 및 C&#35를 사용하여 Visual Studio에서 첫 번째 유니버설 Windows 플랫폼 응용 프로그램 만들기
 
 5~10분 분량의 Visual Studio IDE(통합 개발 환경)에 대한 소개에서는 모든 Windows 10 장치에서 실행되는 "Hello World" 앱을 만듭니다. 이렇게 하려면 UWP(유니버설 Windows 플랫폼) 프로젝트 템플릿, XAML(Extensible Application Markup Language) 및 C# 프로그래밍 언어를 사용합니다.
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
   ![솔루션 탐색기에서 MainPage.xaml 열기 ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  디자인 캔버스를 포함하는 **XAML 디자이너** 및 코드를 추가하거나 변경할 수 있는 **XAML 편집기**라는 두 개의 창이 있습니다.    
+  디자인 캔버스를 포함하는 **XAML 디자이너** 및 코드를 추가하거나 변경할 수 있는 **XAML 편집기**라는 두 개의 창이 있습니다.
 
   ![XAML 편집기의 XAML 디자이너 창](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ ms.lasthandoff: 04/26/2018
 
 1. **로컬 컴퓨터**를 선택하여 응용 프로그램을 시작합니다.
 
-   ![UWP 앱을 시작하고 디버그하려면 로컬 컴퓨터 클릭](../ide/media/uwp-start-or-debug.png "UWP 앱을 시작하고 디버그하려면 로컬 컴퓨터 클릭")
+   ![로컬 컴퓨터를 클릭하여 UWP 앱을 시작 및 디버그](../ide/media/uwp-start-or-debug.png)
 
    (또는 앱을 시작하려면 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하거나 **F5** 키를 누릅니다.)
 

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748740"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 및 Windows 카운터
 
@@ -45,7 +46,7 @@ Visual Studio 프로파일러는 특정 플랫폼에 대한 특정 이벤트를 
 
 Portable Events는 특정 프로세서에만 한정되지 않은 CPU 카운터 그룹입니다. 다른 모든 CPU 카운터는 Platform Events라고 하며, 다양한 플랫폼에서 지원되지 않을 수 있습니다.
 
- Portable Events와 Platform Events 둘 다에 대한 카운터는 카운터와 관련된 구체적인 값을 제공하는 .XML 파일에 정의되어 있습니다. 예를 들어 Intel 및 AMD CPU에 대한 데이터가 서로 다르므로 다양한 CPU에 대한 여러 파일이 있습니다. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 프로파일러는 이 정보를 사용하여 성능 측정에 대한 Portable Events와 Platform Events 둘 다의 적절한 카운터를 사용자에게 제공합니다.
+ Portable Events와 Platform Events 둘 다에 대한 카운터는 카운터와 관련된 구체적인 값을 제공하는 .*xml* 파일에 정의되어 있습니다. 예를 들어 Intel 및 AMD CPU에 대한 데이터가 서로 다르므로 다양한 CPU에 대한 여러 파일이 있습니다. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 프로파일러는 이 정보를 사용하여 성능 측정에 대한 Portable Events와 Platform Events 둘 다의 적절한 카운터를 사용자에게 제공합니다.
 
 ### <a name="portable-events"></a>Portable Events
 
@@ -78,7 +79,7 @@ Portable Events에는 다음 이벤트가 포함됩니다.
 |L2 Cache Read Misses|두 번째 수준의 캐시 읽기 누락의 수를 나타냅니다.|
 |L2 Cache Read References|두 번째 수준의 캐시 읽기 참조의 수를 나타냅니다. 소유권(RFO) 누락 및 적중에 대한 로드 누락과 읽기가 포함됩니다.|
 
-## <a name="viewing-available-counters"></a>사용 가능한 카운터 보기
+## <a name="view-available-counters"></a>사용 가능한 카운터 보기
 
 Visual Studio IDE의 명령 프롬프트 창에서 사용 가능한 CPU 카운터를 나열할 수 있습니다.
 
@@ -126,9 +127,9 @@ Visual Studio IDE에서 컴퓨터에 사용 가능한 카운터를 나열하려�
 
      **\<Visual Studio 성능 도구 디렉터리>\VSPerfCmd /querycounters**
 
-     여기서 **\<Visual Studio 성능 도구 디렉터리>** 는 Visual Studio 설치의 성능 도구 디렉터리 경로이며, 일반적으로 다음과 같습니다.
+     여기서 *\<Visual Studio 성능 도구 디렉터리>* 는 Visual Studio 설치의 성능 도구 디렉터리 경로이며, 일반적으로 다음과 같습니다.
 
-     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 ## <a name="see-also"></a>참고 항목
 

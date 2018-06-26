@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765670"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -135,6 +136,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 
 ## <a name="see-also"></a>참고 항목
 
+* [Visual Studio의 네트워크 설치 만들기](create-a-network-installation-of-visual-studio.md)
 * [Visual Studio에서 네트워크 관련 오류 문제 해결](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
-* [Visual Studio 2017 설치](install-visual-studio.md)
+

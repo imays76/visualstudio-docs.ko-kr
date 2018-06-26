@@ -12,17 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec882cc5797eb99370beac5e28b87ca0b981cf2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477550"
 ---
-# <a name="understanding-instrumentation-data-values"></a>계측 데이터 값 이해
+# <a name="understand-instrumentation-data-values"></a>계측 데이터 값 이해
 
 Visual Studio의 ‘계측’ 프로파일링 방법은 함수 호출, 줄 및 프로파일링된 응용 프로그램의 명령에 대해 자세한 타이밍 정보를 기록합니다.
 
-계측 메서드는 프로파일링된 바이너리에서 대상 함수의 시작 및 끝 부분에 코드를 삽입하고 다른 함수들에 대한 이러한 함수의 각 호출 이전 및 다음 위치에 코드를 삽입합니다. 주입되는 코드는 다음 항목을 기록합니다.
+계측 메서드는 프로파일링된 바이너리에서 대상 함수의 시작 및 끝 부분에 코드를 삽입하고 다른 함수들에 대한 이러한 함수의 각 호출 이전 및 다음 위치에 코드를 삽입합니다. 주입되는 코드는 다음 정보를 기록합니다.
 
 - 이 수집 이벤트와 이전 수집 이벤트 사이의 간격
 

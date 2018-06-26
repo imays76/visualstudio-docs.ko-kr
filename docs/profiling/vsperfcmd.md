@@ -16,20 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573143"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
-**VSPerfCmd.exe** 도구는 성능 데이터 수집을 시작하고 중지하는 데 사용됩니다. 이 도구는 다음 구문을 사용합니다.  
+*VSPerfCmd.exe* 도구는 성능 데이터 수집을 시작하고 중지하는 데 사용됩니다. 이 도구는 다음 구문을 사용합니다.  
   
 ```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   
- 다음 표에는 **VSPerfCmd.exe** 도구 옵션이 설명되어 있습니다.  
+ 다음 표에는 *VSPerfCmd.exe* 도구 옵션이 설명되어 있습니다.  
   
 |옵션|설명|  
 |------------|-----------------|  
@@ -43,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[QueryCounters](../profiling/querycounters.md)|현재 컴퓨터의 유효한 CPU 카운터 목록이 표시됩니다.|  
 |[WinCounter](../profiling/wincounter.md) **:** *path*|프로필 표시 데이터와 함께 포함할 Windows 성능 카운터 이벤트를 지정합니다. **Start**와 함께 사용하는 것만 가능합니다.|  
 |[AutoMark](../profiling/automark.md) **:** *n*|Windows 성능 카운터 데이터 수집 이벤트 간 시간 간격(밀리초)을 지정합니다. **WinCounter**와 함께 사용합니다.|  
-|[Events](../profiling/events-vsperfcmd.md) **:** `option`|지정된 ETW(Windows용 이벤트 추적) 이벤트에 대한 수집을 제어합니다. ETW 데이터는 프로파일링 데이터(.vsp) 파일이 아닌 .itl 파일에 수집됩니다.|  
+|[Events](../profiling/events-vsperfcmd.md) **:** `option`|지정된 ETW(Windows용 이벤트 추적) 이벤트에 대한 수집을 제어합니다. ETW 데이터는 프로파일링 데이터(.*vsp*) 파일이 아닌 .*itl* 파일에 수집됩니다.|  
 |[Status](../profiling/status.md)|프로파일러 상태, 현재 프로파일링 중인 프로세스에 대한 정보 및 프로파일러 제어 권한이 있는 계정을 표시합니다.|  
 |[Shutdown](../profiling/shutdown.md)[**:**`n`]|프로파일링 데이터 파일을 닫고 프로파일러를 해제합니다.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|**VSPerfCmdGlobalOff** 호출 후 데이터 수집을 다시 시작합니다.|  

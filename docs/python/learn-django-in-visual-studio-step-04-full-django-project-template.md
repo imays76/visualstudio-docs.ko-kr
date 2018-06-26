@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750365"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>자습서 4단계: 전체 Django 웹 프로젝트 템플릿 사용
 
 **이전 단계: [정적 파일 제공, 페이지 추가 및 템플릿 상속 사용](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-Visual Studio에서 “빈 Django 앱 프로젝트” 템플릿을 기반으로 앱을 작성하여 Django의 기본 사항을 살펴보았으므로 “Django 웹 프로젝트” 템플릿에 의해 생성된 전체 앱을 쉽게 이해할 수 있습니다.
+Visual Studio에서 “빈 Django 웹 프로젝트” 템플릿을 기반으로 앱을 작성하여 Django의 기본 사항을 살펴보았으므로 “Django 웹 프로젝트” 템플릿에 의해 생성된 전체 앱을 쉽게 이해할 수 있습니다.
 
 이 단계에서는 다음을 수행합니다.
 
@@ -40,7 +41,7 @@ Visual Studio에서 “빈 Django 앱 프로젝트” 템플릿을 기반으로 
 
 1. 템플릿에는 `requirements.txt` 파일이 포함되어 있으므로 Visual Studio에서 해당 종속성을 설치할 위치를 묻습니다. **가상 환경에 설치** 옵션을 선택하고 **가상 환경 추가** 대화 상자에서 **만들기**를 선택하여 기본값을 그대로 사용합니다.
 
-1. Python에서 가상 환경 설정이 완료되면 표시된 `readme.html`의 지침에 따라 Django 슈퍼 사용자(즉, 관리자)를 만듭니다. Visual Studio 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Python** > **Django Create Superuser**(Django 슈퍼 사용자 만들기) 명령을 선택한 다음, 프롬프트에 따릅니다. 앱의 인증 기능을 연습할 때 사용하게 되므로 사용자 이름과 암호를 기록해 두어야 합니다.
+1. Visual Studio에서 가상 환경 설정이 완료되면 표시된 `readme.html`의 지침에 따라 Django 슈퍼 사용자(즉, 관리자)를 만듭니다. Visual Studio 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Python** > **Django Create Superuser**(Django 슈퍼 사용자 만들기) 명령을 선택한 다음, 프롬프트에 따릅니다. 앱의 인증 기능을 연습할 때 사용하게 되므로 사용자 이름과 암호를 기록해 두어야 합니다.
 
 1. **솔루션 탐색기**에서 해당 프로젝트를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 선택하여 “DjangoWeb” 프로젝트가 Visual Studio 솔루션의 기본값이 되도록 설정합니다. 굵게 표시된 시작 프로젝트는 디버거를 시작할 때 실행됩니다.
 

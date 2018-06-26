@@ -1,7 +1,7 @@
 ---
 title: Python 환경 창 참조
 description: Visual Studio의 [Python 환경] 창에 나타나는 각 탭에 대한 세부 정보입니다.
-ms.date: 03/05/2018
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572126"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 환경 창 탭 참조
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 05/07/2018
 
 또한 이전 버전에서 “pip”로 레이블이 지정됩니다.
 
-pip를 사용하여 환경에 설치된 패키지를 관리하여 종속성을 비롯한 새 패키지를 검색 및 설치할 수 있습니다. Visual Studio 2017 버전 15.7 이상에서는 conda 패키지 관리자를 대신 사용하는 **패키지(Conda)** 옵션이 표시됩니다. 이 선택 항목이 표시되지 않으면 **도구** > **옵션** > **Python** > **실험** > **사용 가능한 경우 conda 패키지 관리자 사용(pip 대신)** 옵션을 선택하고 Visual Studio를 다시 시작합니다.
+pip를 사용하여 환경에 설치된 패키지를 관리하여 종속성을 비롯한 새 패키지를 검색 및 설치할 수 있습니다. Visual Studio 2017 버전 15.7 이상에서는 conda 패키지 관리자를 대신 사용하는 **패키지(Conda)** 탭이 표시됩니다. 이 선택 항목이 표시되지 않으면 **도구** > **옵션** > **Python** > **실험** > **사용 가능한 경우 conda 패키지 관리자 사용(pip 대신)** 옵션을 선택하고 Visual Studio를 다시 시작합니다.
 
 이미 설치된 패키지는 패키지 업데이트(위쪽 화살표) 및 제거(원 안의 X) 컨트롤과 함께 표시됩니다.
 
@@ -85,11 +86,19 @@ pip를 사용하여 환경에 설치된 패키지를 관리하여 종속성을 �
 
 ![“num” 검색이 있는 Python 환경 패키지 탭](media/environments-pip-tab.png)
 
-검색 상자에 `--user` 또는 `--no-deps` 등의 플래그를 포함하여 `pip install` 명령을 직접 입력할 수도 있습니다.
+위의 이미지에서 볼 수 있듯이 검색 결과에는 검색어와 일치하는 여러 패키지가 표시되지만 목록의 첫 번째 항목은 `pip install <name>`을 직접 실행하는 명령입니다. **패키지(Conda)** 탭에 있는 경우 대신 `conda install <name>`을 참조하세요.
+
+![conda 설치 명령을 표시하는 conda 패키지 탭](media/environments-conda-tab-install.png)
+
+두 경우 모두 패키지 이름 뒤에 있는 검색 상자에서 인수를 추가하여 설치를 사용자 지정할 수 있습니다. 인수를 포함하면 검색 결과에 `pip install` 또는 `conda install`이 표시되고 그 뒤에 검색 상자의 콘텐츠가 표시됩니다.
+
+![pip 및 conda 설치 명령에 인수 사용](media/environments-pip-tab-arguments.png)
 
 패키지를 설치하면 파일 시스템에서 환경의 `Lib` 폴더 안에 하위 폴더가 생성됩니다. 예를 들어 `c:\Python36`에 Python 3.6이 설치되어 있는 경우 패키지는 `c:\Python36\Lib`에 설치됩니다. `c:\Program Files\Anaconda3`에 Anaconda3이 설치되어 있는 경우 패키지는 `c:\Program Files\Anaconda3\Lib`에 설치됩니다.
 
-후자의 경우 환경이 파일 시스템의 보호된 영역인 `c:\Program Files`에 있기 때문에 Visual Studio에서 패키지 하위 폴더를 만들 수 있도록 권한이 상승된 `pip install`을 실행해야 합니다. 권한 상승이 요구되는 경우 Visual Studio에서 “이 환경용 패키지를 설치, 업데이트 또는 제거하려면 관리자 권한이 필요할 수 있습니다.” 프롬프트가 표시됩니다.
+### <a name="granting-administrator-privileges-for-package-install"></a>패키지 설치에 대한 관리자 권한 부여
+
+`c:\Program Files\Anaconda3\Lib`과 같이 파일 시스템의 보호된 영역에 있는 환경에 패키지를 설치할 때, Visual Studio에서 패키지 하위 폴더를 만들 수 있도록 권한이 상승된 `pip install`을 실행해야 합니다. 권한 상승이 요구되는 경우 Visual Studio에서 “이 환경용 패키지를 설치, 업데이트 또는 제거하려면 관리자 권한이 필요할 수 있습니다.” 프롬프트가 표시됩니다.
 
 ![패키지 설치를 위한 권한 상승 프롬프트](media/environments-pip-elevate.png)
 
@@ -98,6 +107,18 @@ pip를 사용하여 환경에 설치된 패키지를 관리하여 종속성을 �
 **패키지를 설치하거나 제거할 때 항상 권한 상승**을 선택하면 해당 환경에 대해 대화 상자가 표시되지 않습니다. 대화 상자를 다시 표시하려면 **도구 > 옵션 > Python 도구 > 일반**으로 이동한 다음 **영구적으로 숨겨진 모든 대화 상자 다시 설정** 단추를 선택합니다.
 
 동일한 옵션 탭에서 **항상 관리자로 pip 실행**을 선택하여 모든 환경에 대해 대화 상자를 표시하지 않을 수도 있습니다. [옵션 - 일반 탭](python-support-options-and-settings-in-visual-studio.md#general-options)을 참조하세요.
+
+### <a name="security-restrictions-with-older-versions-of-python"></a>이전 버전의 Python으로 보안 제한
+
+Python 2.6, 3.1 및 3.2를 사용하는 경우 Visual Studio에 "보안 제한으로 인해 이 버전의 Python에서 인터넷 설치가 작동하지 않을 수 있음"이라는 경고가 표시됩니다.
+
+![이전 버전의 Python을 사용한 pip 설치 제한에 대한 메시지](media/environments-old-version-restriction.png)
+
+이 경고가 표시되는 이유는 이전 버전의 Python에서 `pip install`은 패키지 소스인 pypi.org에서 패키지를 다운로드하는 데 필요한 전송 계층 보안(TLS) 1.2를 지원하지 않기 때문입니다. 사용자 지정 Python 빌드는 TLS 1.2를 지원할 수 있습니다. 이 경우 `pip install`이 작동할 수 있습니다.
+
+[bootstrap.pypa.io](https://bootstrap.pypa.io/)에서 패키지의 적절한 `get-pip.py`를 다운로드하고 [pypi.org](https://pypi.org/)에서 수동으로 패키지를 다운로드한 다음, 해당 로컬 복사본에서 패키지를 설치할 수 있습니다.
+
+그러나 권장 사항은 단순히 Python 2.7 또는 3.3+로 업그레이드하는 것입니다. 이 경우 경고는 표시되지 않습니다.
 
 ## <a name="intellisense-tab"></a>IntelliSense 탭
 

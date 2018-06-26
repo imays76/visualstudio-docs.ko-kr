@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750508"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>자습서 2단계: 보기 및 페이지 템플릿을 사용하여 Django 앱 만들기
 
@@ -106,7 +107,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 코드를 변경하고 성공적으로 테스트했으므로 이제 변경 내용을 검토하고 소스 제어에 커밋해야 합니다. 이 자습서의 이후 단계에서는 소스 제어에 다시 커밋해야 하는 적절한 시간을 알려주므로 이 섹션을 다시 참조하세요.
 
-1. Visual Studio의 아래쪽(원 아래)에 있는 변경 단추를 선택하여 **팀 탐색기**로 이동합니다.
+1. Visual Studio의 아래쪽(아래 원)에 있는 변경 단추를 선택하여 **팀 탐색기**로 이동합니다.
 
     ![Visual Studio 상태 표시줄의 소스 제어 변경 단추](media/django/step02-source-control-changes-button.png)
 
@@ -210,9 +211,7 @@ Django 페이지 템플릿은 `{{ content }}`에서처럼 `{{` 및 `}}`로 표�
 
 1. 프로젝트를 실행하고 출력을 확인합니다. 2-2단계와 유사한 메시지가 표시되어 템플릿이 작동함을 나타냅니다.
 
-    그러나 `content` 속성에 사용된 HTML은 `render` 함수가 해당 HTML을 자동으로 이스케이프하기 때문에 일반 텍스트로만 렌더링됩니다. 이스케이프를 해결할 수 있지만 첫 번째 위치에서는 인라인 HTML을 사용하지 않는 것이 좋습니다. 형식 및 스타일 지정은 코드가 아닌 페이지 템플릿에서 가장 잘 유지되며 필요한 경우 추가 변수를 만드는 것이 간단합니다.
-
-    예를 들어 다음 태그와 일치하도록 `templates/index.html`을 변경하여 페이지 제목을 추가하고 페이지 템플릿의 모든 형식을 유지합니다.
+    그러나 `content` 속성에 사용된 HTML은 `render` 함수가 해당 HTML을 자동으로 이스케이프하기 때문에 일반 텍스트로만 렌더링됩니다. 자동 이스케이프는 주입 공격에 대한 우발적인 취약성을 방지합니다. 개발자는 종종 한 페이지에서 입력을 수집하고 템플릿 자리 표시자를 통해 다른 페이지의 값으로 사용합니다. 이스케이프는 HTML을 페이지 템플릿에 두고 코드에는 넣지 않는 것이 최선이라는 것을 상기시켜 주는 역할도 합니다. 다행히 필요한 경우 추가 변수를 만드는 것이 간단합니다. 예를 들어 다음 태그와 일치하도록 `templates/index.html`을 변경하여 페이지 제목을 추가하고 페이지 템플릿의 모든 형식을 유지합니다.
 
     ```html
     <html>

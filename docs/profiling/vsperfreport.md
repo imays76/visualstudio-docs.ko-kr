@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572217"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
-VSPerfReport 명령줄 도구는 데이터 파일을 프로파일링하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하여 보고서를 만드는 데 사용됩니다. 기본 보고서 형식은 .csv 파일입니다.  
+VSPerfReport 명령줄 도구는 데이터 파일을 프로파일링하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하여 보고서를 만드는 데 사용됩니다. 기본 보고서 형식은 .*csv* 파일입니다.  
   
  VSPerfReport는 다음 구문을 사용합니다.  
   
@@ -32,15 +33,15 @@ VSPerfReport 명령줄 도구는 데이터 파일을 프로파일링하는 [!INC
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
- `filename`은 유효한 .vsp 또는 .vsps 파일이어야 합니다.  
+ `filename`은 유효한 .*vsp* 또는 .*vsps* 파일이어야 합니다.  
   
- VSPerfReport 명령줄 도구는 .vsp 또는 .vsps 파일을 비교하는 데도 사용됩니다. 차이("diff") 보고서를 생성하려면 다음 구문을 사용합니다.  
+ VSPerfReport 명령줄 도구는 .*vsp* 또는 .*vsps* 파일을 비교하는 데도 사용됩니다. 차이("diff") 보고서를 생성하려면 다음 구문을 사용합니다.  
   
 ```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   
- `vspfilename1 and vspfilename2`는 유효한 .vsp 또는 .vsps 파일이어야 합니다.  
+ `vspfilename1 and vspfilename2`는 유효한 .*vsp* 또는 .*vsps* 파일이어야 합니다.  
   
 ## <a name="symbol-files"></a>기호 파일  
  함수 이름 및 줄 번호와 같은 기호 정보를 표시하려면 VSPerfReport가 프로파일링된 구성 요소의 기호(.PDB) 파일과 Windows 기호 파일에 액세스할 수 있어야 합니다. 자세한 내용은 [방법: 명령줄에서 기호 파일 위치 지정](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)을 참조하세요.  
@@ -57,7 +58,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**ClearPackedSymbols**|프로파일러 데이터 파일에서 이전에 포함된 기호를 제거합니다. PackSymbols를 두 번째로 실행하기 전에 이 명령을 실행합니다.|  
 |**SymbolPath:** `path`|프로파일러 데이터 파일에 대한 기호를 포함하는 하나 이상의 검색 경로 또는 기호 서버를 지정합니다.|  
 |**DebugSymPath**|기호가 검색된 위치 및 찾았는지 여부를 나열합니다. 이 옵션은 기호 확인 문제를 해결하는 데 유용합니다.|  
-|**PackSymbols**|기호(.pdb) 파일이 분석에 필요 없도록 프로파일링 데이터(.vsp) 파일에 기호를 저장합니다.|  
+|**PackSymbols**|기호(.*pdb*) 파일이 분석에 필요 없도록 프로파일링 데이터(.vsp) 파일에 기호를 저장합니다.|  
 |**Output:** *path*&#124;*filename*|생성된 보고서 파일에 대한 대체 위치를 지정합니다. 기본적으로 보고서는 현재 디렉터리에 만들어집니다.|  
 |**SummaryFile**|분석을 수행한 후 분석한 정보를 .vsps 요약 파일에 저장합니다.|  
 |**PrintMarks**|지정한 vsp 파일에 있는 모든 표시의 이름 및 타임스탬프를 표시합니다.|  
@@ -84,7 +85,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |옵션|설명|  
 |-------------|-----------------|  
-|**Diff**  `vspfile1 vspfile2`|두 개의 보고서 파일(.vsp 또는 .vsps)을 비교합니다. diff 옵션을 사용하면 Summary 옵션은 무시됩니다.|  
+|**Diff**  `vspfile1 vspfile2`|두 개의 보고서 파일(.*vsp* 또는 .*vsps*)을 비교합니다. diff 옵션을 사용하면 Summary 옵션은 무시됩니다.|  
 |**Diff:**[*value*]|이 임계값 아래에서는 두 값의 차이가 무시됩니다. 또한 이 임계값보다 낮은 값을 갖는 새 데이터는 표시되지 않습니다.|  
 |**DiffTable:**[*tablename*]|이 특정 테이블을 사용하여 파일을 비교합니다. 기본값은 함수 테이블입니다.|  
 |**DiffColumn:**[*columnname*]|이 특정 열 비교 값을 사용합니다. 기본값은 전용 샘플 백분율 열입니다.|  

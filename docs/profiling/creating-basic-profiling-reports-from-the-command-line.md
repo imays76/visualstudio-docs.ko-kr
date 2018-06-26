@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6b076023f725ac037ae5863bc8955e6952285ac
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764909"
 ---
-# <a name="creating-basic-profiling-reports-from-the-command-line"></a>명령줄에서 기본 프로파일링 보고서 만들기
-이 항목에서는 .vsp 또는 .vsps 프로파일링 데이터 파일에서 쉼표로 구분된 값(.csv) 보고서를 생성하는 기본 VSPerfReport 명령을 설명합니다. 모든 보고서 옵션에 대한 설명은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.  
+# <a name="create-basic-profiling-reports-from-the-command-line"></a>명령줄에서 기본 프로파일링 보고서 만들기
+이 문서에서는 .*vsp* 또는 .*vsps* 프로파일링 데이터 파일에서 쉼표로 구분된 값(.*csv*) 보고서를 생성하는 기본 VSPerfReport 명령을 설명합니다. 모든 보고서 옵션에 대한 설명은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.  
   
 ## <a name="report-commands"></a>보고서 명령  
  다음 명령 중 하나를 사용하여 지정된 프로파일링 데이터 파일에 대한 보고서를 만듭니다.  
   
  **VSPerfReport** `VSPFile` **/Summary:All**  
- .vsp 또는 .vsps 파일에 사용할 수 있는 모든 보고서를 생성합니다.  
+ .*vsp* 또는 .*vsps* 파일에 사용할 수 있는 모든 보고서를 생성합니다.  
   
  **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
  지정된 보고서 형식을 생성합니다.  

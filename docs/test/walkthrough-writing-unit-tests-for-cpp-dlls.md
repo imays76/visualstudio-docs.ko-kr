@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751834"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>C/C++ DLL에 대한 단위 테스트 작성
 
@@ -45,11 +46,11 @@ ms.lasthandoff: 04/26/2018
 
      이 연습에서 테스트 프로젝트 이름은 `NativeRooterTest`입니다.
 
-     ![C++ 단위 테스트 프로젝트 만들기](../test/media/utecpp01.png "UteCpp01")
+     ![C++ 단위 테스트 프로젝트를 만드는 중](../test/media/utecpp01.png)
 
 2.  새 프로젝트에서 **unittest1.cpp**를 조사합니다.
 
-     ![TEST&#95;CLASS 및 TEST&#95;METHOD를 사용하여 프로젝트 테스트](../test/media/utecpp2.png "UteCpp2")
+     ![TEST&#95;CLASS 및 TEST&#95;METHOD가 있는 테스트 프로젝트](../test/media/utecpp2.png)
 
      다음 사항을 참고하세요.
 
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/26/2018
 
          **테스트에 통과함**아래에 테스트가 나타납니다.
 
-         ![테스트 하나가 통과한 단위 테스트 탐색기](../test/media/utecpp04.png "UteCpp04")
+         ![통과한 테스트 1개가 있는 단위 테스트 탐색기](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a> DLL 프로젝트 만들기
 
@@ -90,17 +91,17 @@ ms.lasthandoff: 04/26/2018
 
      이 연습에서 프로젝트 이름은 `RootFinder`입니다.
 
-     ![C++ Win32 프로젝트 만들기](../test/media/utecpp05.png "UteCpp05")
+     ![C++ Win32 프로젝트를 만드는 중](../test/media/utecpp05.png)
 
 2.  Win32 응용 프로그램 마법사에서 **DLL** 및 **내보내기 기호** 를 선택합니다.
 
      **내보내기 기호** 옵션은 내보낸 메서드를 선언하는 데 사용할 수 있는 편리한 매크로를 생성합니다.
 
-     ![DLL 및 내보내기 기호에 대한 C++ 프로젝트 마법사 설정](../test/media/utecpp06.png "UteCpp06")
+     ![DLL에 대한 C++ 프로젝트 마법사 집합 및 기호 내보내기](../test/media/utecpp06.png)
 
 3.  주 .h 파일에서 내보낸 함수를 선언합니다.
 
-     ![새 DLL 코드 프로젝트 및 API 매크로가 있는 .h 파일](../test/media/utecpp07.png "UteCpp07")
+     ![새 DLL 코드 프로젝트 및 API 매크로가 있는 .h 파일](../test/media/utecpp07.png)
 
      `__declspec(dllexport)` 선언자는 클래스의 공용 및 보호되는 멤버가 DLL 외부에 표시되도록 만듭니다. 자세한 내용은 [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)을 참조하세요.
 
@@ -120,13 +121,13 @@ ms.lasthandoff: 04/26/2018
 
     1.  테스트 프로젝트의 속성을 열고 **공용 속성**, **프레임워크 및 참조**를 선택합니다.
 
-         ![C++ 프로젝트 속성 | 프레임워크 및 참조](../test/media/utecpp08.png "UteCpp08")
+         ![C++ 프로젝트 속성 | 프레임워크 및 참조](../test/media/utecpp08.png)
 
     2.  **새 참조 추가**를 선택합니다.
 
          **참조 추가** 대화 상자에서 DLL 프로젝트를 선택하고 **추가**를 선택합니다.
 
-         ![C++ 프로젝트 속성 | 새 참조 추가](../test/media/utecpp09.png "UteCpp09")
+         ![C++ 프로젝트 속성 | 새 참조 추가](../test/media/utecpp09.png)
 
 2.  주 단위 테스트 .cpp 파일에서 DLL 코드의 .h 파일을 포함합니다.
 
@@ -160,7 +161,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  테스트 탐색기에서 **모두 실행**을 선택합니다.
 
-     ![단위 테스트 탐색기 &#45; 기본 테스트 통과](../test/media/utecpp10.png "UteCpp10")
+     ![단위 테스트 탐색기 &#45; 기본 테스트 통과](../test/media/utecpp10.png)
 
  테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.
 
@@ -189,7 +190,7 @@ ms.lasthandoff: 04/26/2018
 
      새 테스트가 실패합니다.
 
-     ![RangeTest 실패](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest 실패](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > 테스트 작성 후 즉시 각 테스트가 실패하는지 확인합니다. 이렇게 하면 결코 실패하지 않는 테스트를 작성하게 되는 간단한 실수를 방지하는 데 도움이 됩니다.
@@ -217,7 +218,7 @@ ms.lasthandoff: 04/26/2018
 
      두 테스트가 모두 통과합니다.
 
-     ![단위 테스트 탐색기 &#45; RangeTest 통과](../test/media/utecpp12.png "UteCpp12")
+     ![단위 테스트 탐색기 &#45; 범위 테스트 통과](../test/media/utecpp12.png)
 
     > [!TIP]
     > 한 번에 하나씩 테스트를 추가하여 코드를 개발합니다. 각 반복 후 모든 테스트가 통과하는지 확인합니다.
@@ -263,7 +264,7 @@ ms.lasthandoff: 04/26/2018
 
      실패한 어설션이 강조 표시됩니다. 오류 메시지는 테스트 탐색기의 세부 정보 창에 표시됩니다.
 
-     ![NegativeRangeTest 실패](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests 실패](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  테스트가 실패한 이유를 확인하려면 함수를 단계별로 실행합니다.
 
@@ -291,10 +292,10 @@ ms.lasthandoff: 04/26/2018
 
 6.  이제 모든 테스트가 통과합니다.
 
-     ![모든 테스트 통과](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![모든 테스트 통과](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
+> 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
 
 ##  <a name="refactor"></a> 테스트를 변경하지 않고 코드 리팩터링

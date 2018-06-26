@@ -12,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745997"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Visual Studio 2017의 문제를 보고하는 방법
 
@@ -30,14 +31,14 @@ Visual Studio에 문제가 발생하는 경우와 관련하여 자세히 알려�
 2. 로그인되지 않은 경우 다음 스크린샷과 같이 도구 오른쪽에 있는 **로그인**을 선택합니다.
 3. 화면의 지침에 따라 로그인합니다.
 
- ![문제 보고를 위한 로그인](../ide/media/sign-in-new-ux.png "문제 보고를 위한 로그인")
+ ![로그인하여 문제 보고](../ide/media/sign-in-new-ux.png)
 
 ## 유사한 문제 검색 및 투표<a name="search_and_vote"></a>
 
 1. 문제를 검색하고 다른 사용자가 이미 보고했는지 확인합니다.
-2. 다른 사용자가 이미 보고한 경우 “투표”하여 알려 주시기 바랍니다.
+2. 다른 사용자가 이미 보고한 경우 "투표"하여 알려 주시기 바랍니다.
 
-  ![검색 및 유사한 문제에 투표](../ide/media/search-and-vote.png "검색 및 유사한 문제에 투표")
+  ![유사한 문제 검색 및 투표](../ide/media/search-and-vote.png)
 
 ## 새 문제 보고<a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ Visual Studio에 문제가 발생하는 경우와 관련하여 자세히 알려�
 2. 올바른 Visual Studio 팀에게 전달될 수 있도록 문제에 대한 설명이 포함된 제목을 입력합니다.
 3. 추가 세부 정보와 문제를 재현을 위한 단계(가능한 경우)를 제공합니다.
 
-  ![새 문제 보고](../ide/media/report-new-problem.png "새 문제 보고")
+  ![새 문제 보고](../ide/media/report-new-problem.png)
 
 ## 스크린샷 및 첨부 파일 제공(선택 사항)<a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ Visual Studio에 문제가 발생하는 경우와 관련하여 자세히 알려�
 1. **레코드** 탭을 선택합니다.
 2. **기록 시작**을 선택합니다. 도구를 실행할 수 있는 권한을 제공합니다.
 
-  ![추적 및 힙 덤프 파일을 제공하도록 “기록 시작” 선택] (../ide/media/record-dialog-box.png "추적 및 힙 덤프 파일 제공")
+  ![추적 및 힙 덤프 파일을 제공하도록 [기록 시작] 선택 ](../ide/media/record-dialog-box.png)
 
 3. **단계 레코더** 도구가 나타나면 문제를 재현하는 단계를 수행합니다.
 4. 완료되면 **기록 중지** 단추를 선택합니다.

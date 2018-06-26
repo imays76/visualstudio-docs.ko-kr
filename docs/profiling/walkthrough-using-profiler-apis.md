@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572985"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>연습: 프로파일러 API 사용
 연습에서는 C# 응용 프로그램을 사용하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 API를 사용하는 방법을 보여 줍니다. 프로파일러 API를 사용하여 계측 프로파일링 동안 수집되는 데이터 양을 제한합니다.  
@@ -30,9 +31,9 @@ ms.lasthandoff: 05/22/2018
   
  Visual Studio 프로파일러를 사용하면 데이터의 수집을 제한할 수 있습니다. 이 연습에서는 프로파일러 API를 사용하여 데이터의 수집을 제한하는 방법의 예를 제공합니다. Visual Studio 프로파일러는 응용 프로그램 내에서 데이터 수집 제어에 대한 API를 제공합니다.  
   
- 네이티브 코드의 경우 Visual Studio 프로파일러 API는 VSPerf.dll에 있습니다. 헤더 파일, VSPerf.h 및 가져오기 라이브러리, VSPerf.lib는 Microsoft Visual Studio 9\Team Tools\Performance Tools 디렉터리에 있습니다.  
+ 네이티브 코드의 경우 Visual Studio 프로파일러 API는 *VSPerf.dll*에 있습니다. 헤더 파일, *VSPerf.h* 및 가져오기 라이브러리, *VSPerf.lib*는 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 디렉터리에 있습니다.  
   
- 관리되는 코드의 경우 프로파일러 API는 Microsoft.VisualStudio.Profiler.dll에 있습니다. 이 DLL은 Microsoft Visual Studio 9\Team Tools\Performance Tools 디렉터리에 있습니다. 자세한 내용은 <xref:Microsoft.VisualStudio.Profiler>을 참조하세요.  
+ 관리되는 코드의 경우 프로파일러 API는 *Microsoft.VisualStudio.Profiler.dll*에 있습니다. 이 DLL은 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 디렉터리에 있습니다. 자세한 내용은 <xref:Microsoft.VisualStudio.Profiler>을 참조하세요.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습에서는 사용자가 선택한 개발 환경이 디버깅 및 샘플링을 지원하도록 구성되었다고 가정합니다. 다음 항목에서는 이러한 필수 구성 요소의 개요를 제공합니다.  
@@ -58,7 +59,7 @@ DataCollection.CurrentId);
 1.  Visual Studio에서 새 C# 프로젝트를 만들거나 기본 설정에 따라 명령줄 빌드를 사용합니다.  
   
     > [!NOTE]
-    >  빌드는 Microsoft Visual Studio 9\Team Tools\Performance Tools 디렉터리에 있는 Microsoft.VisualStudio.Profiler.dll 라이브러리를 참조해야 합니다.  
+    >  빌드는 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 디렉터리에 있는 *Microsoft.VisualStudio.Profiler.dll* 라이브러리를 참조해야 합니다.  
   
 2.  다음 코드를 복사하여 프로젝트에 붙여넣습니다.  
   
@@ -117,7 +118,7 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Visual Studio IDE에서 데이터를 수집하고 보려면  
   
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 엽니다. **분석** 메뉴에서 **프로파일러**를 가리킨 다음 **새 성능 세션**을 선택합니다.  
+1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 엽니다. **분석** 메뉴에서 **프로파일러**를 가리킨 다음, **새 성능 세션**을 선택합니다.  
   
 2.  **성능 탐색기** 창의 **대상** 목록에 컴파일된 이진 파일을 추가합니다. **대상**을 마우스 오른쪽 단추로 클릭한 다음 **대상 이진 파일 추가**를 선택합니다. **대상 이진 파일 추가** 대화 상자에서 이진 파일을 찾은 다음 **열기**를 클릭합니다.  
   
@@ -157,7 +158,7 @@ DataCollection.CurrentId);
   
 8.  **VSPerfReport /calltrace:\<filename>.vsp** 명령을 입력합니다.  
   
-     결과 성능 데이터와 함께 현재 디렉터리에 .csv 파일이 만들어집니다.  
+     결과 성능 데이터와 함께 현재 디렉터리에 .*csv* 파일이 만들어집니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Profiler>   

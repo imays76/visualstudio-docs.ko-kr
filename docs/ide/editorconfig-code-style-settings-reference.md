@@ -18,11 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: caedbf46ce3d56d57a22541f1ddc042d8e41eb48
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572649"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig에 대한 .NET 코딩 규칙 설정
 
@@ -74,6 +75,7 @@ suggestion | 이 스타일 규칙을 위반하는 경우 이를 사용자에게 
         - dotnet\_style\_require\_accessibility_modifiers
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
+        - dotnet\_style\_readonly\_field
     - [식 수준 기본 설정](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
@@ -238,7 +240,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_ parameters_members | IDE0012 및 IDE0014 | C# 및 Visual Basic | true:none |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 및 IDE0014 | C# 및 Visual Basic | true:none |
 | dotnet_style_predefined_type_for_member_access | IDE0013 및 IDE0015 | C# 및 Visual Basic | true:none |
 
 **dotnet\_style\_predefined\_type\_for\_locals\_parameters_members**
@@ -298,7 +300,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers"></a>한정자 기본 설정
 
-이 섹션의 스타일 규칙은 액세스 가능성 한정자 요구 및 원하는 한정자 정렬 순서 지정을 비롯한 한정자 기본 설정과 관련이 있습니다.
+이 섹션의 스타일 규칙은 액세스 가능성 한정자 요구, 원하는 한정자 정렬 순서 지정 및 읽기 전용 한정자 요구를 포함한 한정자 기본 설정과 관련이 있습니다.
 
 다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
 
@@ -307,6 +309,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | dotnet_style_require_ accessibility_modifiers | IDE0040 | C# 및 Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | 공용, 개인, 보호됨, 내부, 고정, 외부, 새로운, 가상, 추상, 봉인됨, 재정의, 읽기 전용, 안전하지 않음, 변동, 비동기: 없음 | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | 부분, 기본, 개인, 보호됨, 공용, 친구, NotOverridable, 재정의 가능, MustOverride, 오버로드, 재정의, MustInherit, NotInheritable, 고정, 공유, 그림자, 읽기 전용, 쓰기 전용, 차원, Const, WithEvents, 확대, 축소, 사용자 지정, 비동기: 없음 | 15.5 |
+| dotnet_style_readonly_field | IDE0044 | C# 및 Visual Basic | true:suggestion | 15.7 |
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
@@ -315,7 +318,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 | 값 | 설명 |
 | ----- |:----------- |
 | always | 액세스 가능성 한정자를 지정하는 것이 좋습니다. |
-| for\_non\_interface_members | 공용 인터페이스 멤버를 제외하고 액세스 가능성 한정자를 선언하는 것을 선호합니다. 이것은 현재 **always**와 다르지 않으며 C#에서 기본 인터페이스 메서드를 추가할 경우 향후 교정으로 작동합니다. |
+| for\_non\_interface_members | 공용 인터페이스 멤버를 제외하고 액세스 가능성 한정자를 선언하는 것을 선호합니다. 이는 **always**와 같으며 C#에서 기본 인터페이스의 메서드를 추가할 경우 향후 교정을 위해 추가되었습니다. |
 | never | 액세스 가능성 한정자를 지정하지 않는 것이 좋습니다. |
 
 코드 예제:
@@ -325,13 +328,13 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 // dotnet_style_require_accessibility_modifiers = for_non_interface_members
 class MyClass
 {
-    private const string thisFieldIsConst= "constant";
+    private const string thisFieldIsConst = "constant";
 }
 
 // dotnet_style_require_accessibility_modifiers = never
 class MyClass
 {
-    const string thisFieldIsConst= "constant";
+    const string thisFieldIsConst = "constant";
 }
 ```
 
@@ -364,12 +367,35 @@ Public Class MyClass
 End Class
 ```
 
+**dotnet_style_readonly_field**
+
+- 이 규칙이 **true**로 설정된 경우 인라인으로만 할당되거나 생성자 내부에 있으면 필드를 `readonly`(C#) 또는 `ReadOnly`(Visual Basic)로 표시해야 합니다.
+- 이 규칙이 **false**로 설정된 경우 필드를 `readonly`(C#) 또는 `ReadOnly`(Visual Basic)로 표시할지 여부를 지정하지 않습니다.
+
+코드 예제:
+
+```csharp
+// dotnet_style_readonly_field = true
+class MyClass
+{
+    private readonly int _daysInYear = 365;
+}
+```
+
+```vb
+' dotnet_style_readonly_field = true
+Public Class MyClass
+    Private ReadOnly daysInYear As Int = 365
+End Class
+```
+
 이러한 규칙은 *.editorconfig* 파일에서 다음과 같이 표시될 수 있습니다.
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
+dotnet_style_readonly_field = true:warning
 
 # CSharp code style settings:
 [*.cs]

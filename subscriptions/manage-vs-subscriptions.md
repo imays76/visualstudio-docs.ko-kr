@@ -9,11 +9,12 @@ description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548725"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -27,7 +28,7 @@ Visual Studio 구독을 시작합니다!  구독을 통해 소프트웨어, 월�
 
 #### <a name="microsoft-store"></a>Microsoft Store
 Microsoft Store를 통해 Visual Studio 구독을 구입한 경우 결제 **확인 페이지** 또는 **확인 전자 메일**에서 정품 인증 단계를 시작할 수 있습니다.  
-1.  '확인 페이지' 또는 '확인 전자 메일'에서 **로그인하려면 여기를 클릭하십시오.**를 클릭합니다.  https://my.visualstudio.com/subscriptions/activate에 리디렉션됩니다.
+1.  '확인 페이지' 또는 '확인 전자 메일'에서 **로그인하려면 여기를 클릭하십시오.** 를 클릭합니다.  https://my.visualstudio.com/subscriptions/activate에 리디렉션됩니다.
 2.  구독자 포털에 로그인하는 데 사용할 이메일 주소를 입력하고 **계속**을 클릭합니다.
 3.  이메일 주소에 따라 Microsoft 계정 로그인 페이지 또는 회사/학교의 로그인 페이지로 리디렉션될 수 있습니다.
 4.  암호를 입력하거나 로그인 요구 사항을 완료합니다.
@@ -118,3 +119,21 @@ Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다
 ![대체 계정](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 대체 계정을 추가하면 언제든지 **구독** 탭을 클릭하고 **관련 링크** 섹션에서 적절한 옵션을 선택하여 해당 계정을 업데이트하거나 제거할 수 있습니다.  
+
+## <a name="frequently-asked-questions"></a>질문과 대답   
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q: 구독을 갱신하지 않으면 Microsoft에서 내 데이터를 얼마나 보관합니까?
+A: Microsoft가 고객 데이터를 유지하는 기간은 구매 채널에 따라 다릅니다.
+
+| 채널                                                | 기간(일) |
+|--------------------------------------------------------|-----------------|
+|    소매(예: Microsoft Store를 통해)               |    360          |
+|    VLSC(볼륨 라이선스 서비스 센터)              |    180          |
+|    MPSA(Microsoft 제품 및 서비스 계약)    |    180          |
+|    Visual Studio 클라우드 구독                   |    180          |
+|    프로그램(예: MCT, BizSpark, MPN, Imagine)          |    180          |
+|    재판매 금지(예: MVP, MSP)                      |    180          |
+|    DevEssentials                                       |    30           |
+
+> [!NOTE]
+> - Microsoft 계정 또는 Azure AD를 폐쇄하기로 선택하면 개인 데이터는 즉시 익명 처리됩니다.  
+> - 활성 구독이 있는 경우 모든 개인 데이터가 완전히 제거되지는 않습니다. 
