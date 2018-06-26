@@ -1,4 +1,5 @@
 # [Visual Studio 구독](index.md)
+## [새로운 기능](whats-new-in-subscriptions.md)
 ## 구독자 환경
 ### [구독자 포털 사용](using-the-subscriber-portal.md)
 #### [정품 구독 활성화](activate-store-subscriptions.md)
