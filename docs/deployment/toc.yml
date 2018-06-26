@@ -8,12 +8,12 @@
   items:
     - name: 배포 소개
       href: deploying-applications-services-and-components.md
-    - name: 로컬 폴더에 배포
-      href: quickstart-deploy-to-local-folder.md
+    - name: Azure App Service에 배포
+      href: quickstart-deploy-to-azure.md
     - name: 웹 사이트에 배포
       href: quickstart-deploy-to-a-web-site.md
-    - name: Azure에 배포
-      href: quickstart-deploy-to-azure.md
+    - name: 로컬 폴더에 배포
+      href: quickstart-deploy-to-local-folder.md
 - name: 자습서
   items:
     - name: .NET
