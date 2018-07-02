@@ -12,11 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749462"
 ---
 # <a name="custom-native-etw-heap-events"></a>사용자 지정 네이티브 ETW 힙 이벤트
 
@@ -136,7 +137,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>메모리 사용량 추적
+## <a name="track-memory-usage"></a>메모리 사용량 추적
 이제 이러한 호출을 적절히 배치하여 Visual Studio의 표준 **메모리 사용량** 도구를 통해 사용자 지정 힙 사용량을 추적할 수 있습니다.  이 도구를 사용하는 방법에 대한 자세한 내용은 [메모리 사용량](../profiling/memory-usage.md) 설명서를 참조하세요. 스냅숏을 사용하여 힙 프로파일링을 설정해야 합니다. 그러지 않으면 표시된 사용자 지정 힙 사용량이 나타나지 않습니다. 
 
 ![힙 프로파일링 사용](media/heap-enable-heap.png)
@@ -154,7 +155,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 표준 Windows 힙과 마찬가지로 이 도구를 사용하여 스냅숏을 비교하고 사용자 지정 힙의 누수 및 손상을 확인할 수도 있습니다. 자세한 내용은 기본 [메모리 사용량](../profiling/memory-usage.md) 설명서를 참조하세요.
 
 > [!TIP]
-> Visual Studio의 **성능 프로파일링** 도구 집합에도 **메모리 사용량** 도구가 포함되어 있습니다. 이 도구 집합은 **디버그 > 성능 프로파일러** 메뉴 옵션 또는 **Alt+F2** 키보드 조합을 통해 사용하도록 설정할 수 있습니다.  이 기능은 힙 추적을 포함하지 않으므로 여기서 설명하는 사용자 지정 힙을 표시하지 않습니다.  **진단 도구** 창(**디버그 > Windows > 진단 도구 표시** 메뉴 또는 **Ctrl+Alt+F2** 키보드 조합을 사용하여 설정 가능)에만 이 기능이 포함되어 있습니다.
+> Visual Studio의 **성능 프로파일링** 도구 집합에도 **메모리 사용량** 도구가 포함되어 있습니다. 이 도구 집합은 **디버그**>**성능 프로파일러** 메뉴 옵션 또는 **Alt**+**F2** 키보드 조합을 통해 활성화됩니다.  이 기능은 힙 추적을 포함하지 않으므로 여기서 설명하는 사용자 지정 힙을 표시하지 않습니다.  **진단 도구** 창(**디버그**>**Windows**>**진단 도구 표시** 메뉴 또는 **Ctrl**+**Alt**+**F2** 키보드 조합을 사용하여 설정 가능)에만 이 기능이 포함되어 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 [프로파일링 도구](../profiling/profiling-tools.md)  

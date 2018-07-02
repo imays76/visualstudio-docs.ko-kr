@@ -11,16 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc3f85e776fa7ec45bd157a9cffe99f6ac0b1aac
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: fd9703e6d18f075cb1033a03552caa7708b719b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751390"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio에서 Python 지원 설치
 
 > [!Note]
-> Python 지원은 현재 Windows용 Visual Studio에서만 사용할 수 있으며, Visual Studio Code를 통해 Mac 및 Linux에서 사용할 수 있습니다. [질문과 대답](overview-of-python-tools-for-visual-studio.md#questions-and-answers)을 참조하세요.
+> Python 지원은 현재 Windows용 Visual Studio에서만 사용할 수 있으며, [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial)를 통해 Mac 및 Linux에서 사용할 수 있습니다.
 
 1. Windows용 최신 Visual Studio 2017 설치 관리자를 다운로드하고 실행합니다(Python 지원은 릴리스 15.2 이상에 있음). Visual Studio가 이미 설치되어 있는 경우 Visual Studio 설치 관리자를 실행하고 2단계로 이동합니다.
 

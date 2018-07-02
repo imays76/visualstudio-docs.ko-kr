@@ -1,7 +1,7 @@
 ---
 title: Python용 웹 응용 프로그램 템플릿
 description: 디버깅 구성 및 Azure App Service에 게시를 포함하여 Bottle, Flask 및 Django 프레임워크를 사용하는, Python으로 작성된 웹 응용 프로그램용 Visual Studio 템플릿에 대한 개요입니다.
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752042"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 응용 프로그램 프로젝트 템플릿
 
@@ -41,7 +42,7 @@ Pyramid와 같은 다른 프레임워크에 대한 일반 “웹 프로젝트”
 | --- | --- |
 | 빈 Bottle 웹 프로젝트 | 매우 짧은 인라인 페이지 템플릿을 사용하여 `<name>`을 에코하는 `/hello/<name>` 페이지 및 `/`에 대한 홈페이지를 사용하여 `app.py`에 최소 앱을 생성합니다. |
 | 빈 Django 웹 프로젝트 | 코어 Django 사이트 구조를 사용하지만 Django 앱은 포함되지 않은 Django 프로젝트를 생성합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 1단계](learn-django-in-visual-studio-step-01-project-and-solution.md)를 참조하세요. |
-| 빈 Flask 웹 프로젝트 | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?context=visualstudio/python/default)의 자세한 단계를 수행한 결과와 유사합니다.
+| 빈 Flask 웹 프로젝트 | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?context=visualstudio/python/default)의 자세한 단계를 수행한 결과와 유사합니다. [Flask 학습 1단계](learn-flask-visual-studio-step-01-project-solution.md)도 참조하세요.
 
 ### <a name="web-group"></a>웹 그룹
 
@@ -51,19 +52,19 @@ Pyramid와 같은 다른 프레임워크에 대한 일반 “웹 프로젝트”
 | --- | --- |
 | Bottle 웹 프로젝트 | 정적 파일이 `static` 폴더에 포함되고 `app.py`의 코드를 통해 처리되는 앱을 생성합니다. 개별 페이지에 대한 라우팅은 `routes.py`에 포함되며, `views` 폴더에는 페이지 템플릿이 포함되어 있습니다.|
 | Django 웹 프로젝트 | 세 개의 페이지, 인증 지원 및 SQLite 데이터베이스(데이터 모델 없음)를 사용하여 Django 프로젝트 및 Django 앱을 생성합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 4단계](learn-django-in-visual-studio-step-04-full-django-project-template.md)를 참조하세요. |
-| Flask 웹 프로젝트 | 정적 파일이 `static` 폴더에 포함되는 앱을 생성합니다. `views.py`의 코드는 `templates` 폴더에 포함된 Jinja 엔진을 사용하는 페이지 템플릿을 사용하여 라우팅을 처리합니다. `runserver.py` 파일은 시작 코드를 제공합니다. |
-| Flask/Jade 웹 프로젝트 | “Flask 웹 프로젝트” 템플릿과 동일한 앱을 생성하지만 Jade 템플릿 엔진을 사용합니다. |
+| Flask 웹 프로젝트 | 정적 파일이 `static` 폴더에 포함되는 앱을 생성합니다. `views.py`의 코드는 `templates` 폴더에 포함된 Jinja 엔진을 사용하는 페이지 템플릿을 사용하여 라우팅을 처리합니다. `runserver.py` 파일은 시작 코드를 제공합니다. [Flask 학습 4단계](learn-flask-visual-studio-step-04-full-flask-project-template.md)를 참조하세요. |
+| Flask/Jade 웹 프로젝트 | “Flask 웹 프로젝트” 템플릿과 동일한 앱을 생성하지만 Jinja 템플레이팅 엔진용 Jade 확장을 사용합니다. |
 
 ### <a name="polls-group"></a>설문 조사 그룹
 
-“설문 조사 (프레임워크) 웹 프로젝트” 템플릿은 사용자가 다양한 설문 조사 질문에 투표할 수 있는 시작 웹앱을 만듭니다. 각 앱은 데이터베이스를 사용하여 설문 조사 및 사용자 응답을 관리하는 “웹” 프로젝트 템플릿의 구조를 기반으로 합니다. 앱에는 적절한 데이터 모델과 `samples.json` 파일에서 설문 조사를 로드하는 특수한 앱 페이지(“/seed”)가 포함됩니다.
+“설문 조사 (프레임워크) 웹 프로젝트” 템플릿은 사용자가 다양한 설문 조사 질문에 투표할 수 있는 시작 웹앱을 만듭니다. 각 앱은 데이터베이스를 사용하여 설문 조사 및 사용자 응답을 관리하는 “웹” 프로젝트 템플릿의 구조를 기반으로 합니다. 앱에는 적절한 데이터 모델과 `samples.json` 파일에서 설문 조사를 로드하는 특수한 앱 페이지(/seed)가 포함됩니다.
 
 | 템플릿 | 설명 |
 | --- | --- |
 | 설문 조사 Bottle 웹 프로젝트 | 메모리 내 데이터베이스, MongoDB 또는 Azure Table Storage에 대해 실행할 수 있는 앱을 생성하며, `REPOSITORY_NAME` 환경 변수를 사용하여 구성합니다. 데이터 모델 및 데이터 저장소 코드는 `models` 폴더에 포함되고 `settings.py` 파일에는 사용되는 데이터 저장소를 확인하는 코드가 포함되어 있습니다. |
 | 설문 조사 Django 웹 프로젝트 | 세 개의 페이지와 SQLite 데이터베이스를 사용하여 Django 프로젝트 및 Django 앱을 생성합니다. 인증된 관리자가 설문 조사를 만들고 관리할 수 있도록 하는 Django 관리 인터페이스에 대한 사용자 지정을 포함합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 6단계](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)를 참조하세요. |
-| 설문 조사 Flask 웹 프로젝트 | 메모리 내 데이터베이스, MongoDB 또는 Azure Table Storage에 대해 실행할 수 있는 앱을 생성하며, `REPOSITORY_NAME` 환경 변수를 사용하여 구성합니다. 데이터 모델 및 데이터 저장소 코드는 `models` 폴더에 포함되고 `settings.py` 파일에는 사용되는 데이터 저장소를 확인하는 코드가 포함되어 있습니다. 앱은 페이지 템플릿에 Jinja 엔진을 사용합니다. |
-| 설문 조사 Flask/Jade 웹 프로젝트 | “설문 조사 Flask 웹 프로젝트” 템플릿과 동일한 앱을 생성하지만 Jade 템플릿 엔진을 사용합니다. |
+| 설문 조사 Flask 웹 프로젝트 | 메모리 내 데이터베이스, MongoDB 또는 Azure Table Storage에 대해 실행할 수 있는 앱을 생성하며, `REPOSITORY_NAME` 환경 변수를 사용하여 구성합니다. 데이터 모델 및 데이터 저장소 코드는 `models` 폴더에 포함되고 `settings.py` 파일에는 사용되는 데이터 저장소를 확인하는 코드가 포함되어 있습니다. 앱은 페이지 템플릿에 Jinja 엔진을 사용합니다. [Flask 학습 5단계](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)를 참조하세요. |
+| 설문 조사 Flask/Jade 웹 프로젝트 | “설문 조사 Flask 웹 프로젝트” 템플릿과 동일한 앱을 생성하지만 Jinja 템플레이팅 엔진용 Jade 확장을 사용합니다. |
 
 ## <a name="installing-project-requirements"></a>프로젝트 요구 사항 설치
 
@@ -71,7 +72,7 @@ Pyramid와 같은 다른 프레임워크에 대한 일반 “웹 프로젝트”
 
 ![프로젝트 템플릿에 대해 필요한 패키지를 설치하는 대화 상자](media/template-web-requirements-txt-wizard.png)
 
-소스 제어를 사용하는 경우 가상 환경은 `requirements.txt`만 사용하여 다시 만들 수 있기 때문에 일반적으로 가상 환경 폴더를 생략합니다. 폴더를 제외하는 가장 좋은 방법은 먼저 위에 표시된 프롬프트에서 **직접 설치**를 선택한 다음, 가상 환경을 만들기 전에 자동 커밋을 사용하지 않도록 설정하는 것입니다. 자세한 내용은 [Django 알아보기 자습서 - 1-2 및 1-3단계](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)를 참조하세요.
+소스 제어를 사용하는 경우 가상 환경은 `requirements.txt`만 사용하여 다시 만들 수 있기 때문에 일반적으로 가상 환경 폴더를 생략합니다. 폴더를 제외하는 가장 좋은 방법은 먼저 위에 표시된 프롬프트에서 **직접 설치**를 선택한 다음, 가상 환경을 만들기 전에 자동 커밋을 사용하지 않도록 설정하는 것입니다. 자세한 내용은 [Django 자습서 학습 - 1-2 및 1-3단계](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) 및 [Flask 자습서 학습 - 1-2와 1-3단계](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)를 참조하세요.
 
 Microsoft Azure App Service에 배포할 때는 [사이트 확장](https://aka.ms/PythonOnAppService)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 `requirements.txt` 파일에서 패키지를 자동으로 설치하지 **않으므로** [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService)의 구성 세부 정보를 따릅니다.
 

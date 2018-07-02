@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 28ba3f0abd948714e17ef0c69267eb7c1df9162e
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7caabbe6875f6c51b0c84d0bb8f4b5e4e18a10d2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750872"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>IntelliTest를 사용하여 코드에 대한 단위 테스트 생성
 IntelliTest는 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스트 도구 모음을 생성합니다. 코드의 모든 문에 대해 해당 문을 실행할 테스트 입력이 생성됩니다. 코드의 모든 조건부 분기에 대해 사례 분석이 수행됩니다. 예를 들어 `if` 문, 어설션 및 예외를 throw할 수 있는 모든 작업이 분석됩니다. 이 분석은 각 메서드에 대해 매개 변수가 있는 단위 테스트용 테스트 데이터를 생성하는 데 사용됩니다(높은 코드 검사가 포함된 단위 테스트 생성).
@@ -41,15 +42,15 @@ IntelliTest는 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스
 
 2.  코드에서 메서드를 마우스 오른쪽 단추로 클릭하고 **IntelliTest 실행** 을 선택하여 메서드의 코드에 대한 단위 테스트를 생성합니다.
 
-     ![메서드를 마우스 오른쪽 단추로 클릭하여 단위 테스트 생성](../test/media/runpex.png "RunPEX")
+     ![메서드를 마우스 오른쪽 단추로 클릭하여 단위 테스트 생성](../test/media/runpex.png)
 
      IntelliTest는 서로 다른 입력을 사용하여 코드를 여러 번 실행합니다. 각 실행은 입력 테스트 데이터 및 결과 출력 또는 예외와 함께 표에 나타납니다.
 
-     ![탐색 결과 창은 테스트와 함께 표시됨](../test/media/pexexplorationresults.png "PEXExplorationResults")
+     ![탐색 결과 창은 테스트와 함께 표시됨](../test/media/pexexplorationresults.png)
 
      클래스의 모든 공용 메서드에 대해 단위 테스트를 생성하려는 경우 특정 메서드가 아니라 해당 클래스를 마우스 오른쪽 단추로 클릭하면 됩니다. 그런 다음 **IntelliTest 실행**을 선택합니다. 탐색 결과 창의 드롭다운 목록을 사용하여 클래스의 각 메서드에 대한 단위 테스트 및 입력 데이터를 표시합니다.
 
-     ![테스트 결과를 선택하여 목록에서 보기](../test/media/selectpextest.png "SelectPEXTest")
+     ![테스트 결과를 선택하여 목록에서 보기](../test/media/selectpextest.png)
 
      통과한 테스트의 경우, 결과 열에 보고된 결과가 코드에 대한 예상과 일치하는지 확인합니다. 테스트가 실패하는 경우 코드를 적절하게 수정하세요. 그런 다음 IntelliTest를 다시 실행하여 수정 사항의 유효성을 검사합니다.
 
@@ -57,11 +58,11 @@ IntelliTest는 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스
 
 1.  매개 변수가 있는 단위 테스트와 함께 테스트 프로젝트에 저장할 데이터 행을 선택합니다.
 
-     ![테스트를 선택하고 마우스 오른쪽 단추로 클릭한 다음 저장 선택](../test/media/savepextests.png "SavePEXTests")
+     ![테스트를 선택하고 마우스 오른쪽 단추로 클릭한 다음, 저장 선택](../test/media/savepextests.png)
 
      생성된 매개 변수가 있는 단위 테스트 및 테스트 프로젝트를 볼 수 있습니다. 각 행에 해당하는 개별 단위 테스트는 테스트 프로젝트의 .g.cs 파일에 저장되고, 매개 변수가 있는 단위 테스트는 해당 .cs 파일에 저장됩니다. 수동으로 만든 단위 테스트와 마찬가지로 단위 테스트를 실행하고 테스트 탐색기에서 결과를 볼 수 있습니다.
 
-     ![테스트 메서드의 클래스 파일을 열어 단위 테스트 보기](../test/media/testmethodpex.png "TestMethodPEX")
+     ![테스트 메서드의 클래스 파일을 열어 단위 테스트 보기](../test/media/testmethodpex.png)
 
      필요한 참조도 테스트 프로젝트에 추가됩니다.
 
@@ -73,11 +74,11 @@ IntelliTest는 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스
 
      경고를 보고 수행할 작업을 결정합니다.
 
-     ![경고 보기](../test/media/pexviewwarning.png "PEXViewWarning")
+     ![경고 보기](../test/media/pexviewwarning.png)
 
 2.  코드를 검토하고 테스트할 내용을 파악했으면 경고를 수정하여 인터페이스를 테스트하는 데 사용할 클래스를 선택할 수 있습니다.
 
-     ![경고를 마우스 오른쪽 단추로 클릭하고 수정 선택](../test/media/pexfixwarning.png "PEXFixWarning")
+     ![경고를 마우스 오른쪽 단추로 클릭하고 수정 선택](../test/media/pexfixwarning.png)
 
      선택한 클래스는 PexAssemblyInfo.cs 파일에 추가됩니다.
 
@@ -85,7 +86,7 @@ IntelliTest는 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스
 
 3.  이제 IntelliTest를 다시 실행하여 수정한 클래스만 사용해 매개 변수가 있는 단위 테스트 및 테스트 데이터를 생성할 수 있습니다.
 
-     ![IntelliTest를 다시 실행하여 테스트 데이터 생성](../test/media/pexwarningsfixed.png "PEXWarningsFixed")
+     ![IntelliTest를 다시 실행하여 테스트 데이터 생성](../test/media/pexwarningsfixed.png)
 
 ## <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>선택: IntelliTest를 사용하여 코드에서 지정하는 정확성 속성의 유효성을 검사합니다.
 
@@ -131,11 +132,11 @@ IntelliTest는 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스
 
 **A:** 예, 클래스 또는 메서드를 마우스 오른쪽 단추로 클릭하고 **IntelliTest 만들기**를 선택합니다.
 
- ![편집기를 마우스 오른쪽 단추로 클릭하고 IntelliTest 만들기 선택](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
+ ![편집기를 마우스 오른쪽 단추로 클릭하고 IntelliTest 만들기 선택](../test/media/pexcreateintellitest.png)
 
  기본 형식을 적용하여 테스트를 생성하거나 프로젝트 및 테스트 이름 지정 방법을 변경합니다. 새 테스트 프로젝트를 만들거나 기존 프로젝트에 테스트를 저장할 수 있습니다.
 
- ![MSTest 기본값으로 IntelliTest 만들기](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
+ ![MSTest 기본값을 사용하여 IntelliTest 만들기](../test/media/pexcreateintellitestmstest.png)
 
 <a name="extend-framework"></a>
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Q: IntelliTest와 함께 다른 단위 테스트 프레임워크를 사용할 수 있나요?
@@ -149,7 +150,7 @@ IntelliTest는 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스
 
 Visual Studio를 다시 시작하고 솔루션을 다시 연 후 클래스 또는 메서드를 마우스 오른쪽 단추로 클릭하고 **IntelliTest 만들기**를 선택합니다. 여기서 설치된 프레임워크를 선택합니다.
 
-![IntelliTest에 대한 다른 단위 테스트 프레임워크 선택](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
+![IntelliTest에 대한 다른 단위 테스트 프레임워크 선택](../test/media/pexcreateintellitestextensions.png)
 
 그런 다음 IntelliTest를 실행하여 해당 .g.cs 파일에 개별 단위 테스트를 생성합니다.
 

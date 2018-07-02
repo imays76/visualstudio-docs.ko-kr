@@ -1,26 +1,28 @@
 ---
 title: Visual Studio 구독
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327192"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946928"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 구독
+
 Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플랫폼 및 장치에서 유용한 응용 프로그램을 만들고 배포하고 관리하는 데 필요한 포괄적인 리소스 집합입니다.  구독 혜택으로는 개발자 도구, 클라우드 서비스 및 소프트웨어, 교육에 대한 액세스와 개발 및 테스트 요구 사항에 대한 지원이 있습니다.
 
-##  <a name="get-started"></a>시작
+## <a name="get-started"></a>시작
+
 관리자는 [https://manage.visualstudio.com](https://manage.visualstudio.com)에 로그인하여 팀에게 구독을 할당합니다.<br>
 구독자는 [https://my.visualstudio.com](https://my.visualstudio.com)에 로그인하여 구독 혜택에 액세스합니다.
 
@@ -134,6 +136,12 @@ Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플
         </a>
     </li>   
 </ul>
+
+---
+
+## <a name="whats-new"></a>새로운 기능
+
+Microsoft에서는 사용자가 구독을 훨씬 더 유용하게 사용할 수 있도록 구독 혜택을 자주 추가하고 업데이트합니다. 자세한 내용은 [구독의 새로운 기능](whats-new-in-subscriptions.md) 페이지를 참조하세요.
 
 ---
 

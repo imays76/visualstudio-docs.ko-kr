@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751717"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>연습: UWP 앱의 유닛 테스트 만들기 및 실행
 
@@ -45,11 +46,11 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
 
 6.  **솔루션용 디렉터리 만들기** 옵션을 선택한 상태에서 **확인** 단추를 선택합니다.
 
-     ![맞춤형 단위 테스트 라이브러리](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![맞춤형 단위 테스트 라이브러리](../test/media/unit_test_win8_1.png)
 
      솔루션 탐색기는 UWP 단위 테스트 프로젝트로 채워지며 코드 편집기에는 UnitTest1이라는 제목의 기본 단위 테스트가 표시됩니다.
 
-     ![새 맞춤형 단위 테스트 프로젝트](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![새 맞춤형 단위 테스트 프로젝트](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>단위 테스트 프로젝트의 UWP 앱 매니페스트 파일 편집
 
@@ -99,7 +100,7 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
     >
     > 또한 **선택한 테스트 디버그**, **테스트 열기**를 선택하고 **속성** 옵션을 사용할 수 있습니다.
     >
-    > ![단위 테스트 탐색기 &#45; 단위 테스트 컨텍스트 메뉴](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![단위 테스트 탐색기 &#45; 단위 테스트 바로 가기 메뉴](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     단위 테스트가 실행됩니다. 완료되면, 테스트 탐색기는 테스트 상태와 경과된 시간을 표시하고 소스에 대한 링크를 제공합니다.
 

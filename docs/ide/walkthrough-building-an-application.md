@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748220"
 ---
 # <a name="walkthrough-build-an-application"></a>연습: 응용 프로그램 빌드
 
@@ -33,31 +34,31 @@ ms.lasthandoff: 05/03/2018
 
 1. **구성 관리자** 대화 상자를 엽니다.
 
-   ![빌드 메뉴, 구성 관리자 명령](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+   ![빌드 메뉴, 구성 관리자 명령](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. **활성 솔루션 구성** 목록에서 **\<새로 만들기...\>** 를 선택합니다.
 
 1. **새 솔루션 구성** 대화 상자에서 새 구성의 이름을 `Test`로 지정하고, 기존 **디버그** 구성에서 설정을 복사하고, **확인** 단추를 선택합니다.
 
-   ![새 솔루션 구성 대화 상자](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+   ![새 솔루션 구성 대화 상자](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
 1. **활성 솔루션 플랫폼** 목록에서 **\<새로 만들기...\>** 를 선택합니다.
 
 1. **새 솔루션 플랫폼** 대화 상자에서 **x64**를 선택하지만 x86 플랫폼에서 설정을 복사하지 않습니다.
 
-   ![새 솔루션 플랫폼 대화 상자](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+   ![새 솔루션 플랫폼 대화 상자](../ide/media/buildwalk_newsolutionplatform.png)
 
 1. **확인** 단추를 선택합니다.
 
    활성 솔루션 구성이 **Test**로 변경되고 활성 솔루션 플랫폼이 x64로 설정되었습니다.
 
-   ![테스트 구성이 있는 구성 관리자](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![테스트 구성이 있는 구성 관리자](../ide/media/buildwalk_configmanagertestconfig.png)
 
 1. **닫기**를 선택합니다.
 
 **표준** 도구 상자에서 **솔루션 구성** 목록을 사용하여 활성 솔루션 구성을 빠르게 확인하거나 변경할 수 있습니다.
 
-![솔루션 구성 옵션 표준 도구 모음](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+![솔루션 구성 옵션 표준 도구 모음](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
 ## <a name="build-the-application"></a>응용 프로그램 빌드
 
@@ -83,9 +84,9 @@ ms.lasthandoff: 05/03/2018
 
 **출력** 창에는 빌드 결과가 표시됩니다. 빌드에 성공했지만 경고가 발생했습니다.
 
-![출력 창(Visual Basic)](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+![출력 창(Visual Basic)](../ide/media/buildwalk_vbbuildoutputwnd.png)
 
-![출력 창(Visual C&#35;)](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![출력 창(Visual C&#35;)](../ide/media/buildwalk_csharpbuildoutputwnd.png)
 
 빌드 출력을 어지럽히지 않도록 빌드하는 동안 특정 경고 메시지를 일시적으로 숨길 수 있습니다.
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 05/03/2018
 
 1. **빌드** 페이지를 선택하고 **경고 표시 안 함** 상자에서 경고 번호 **0168**을 지정합니다.
 
-     ![프로젝트 디자이너, 빌드 페이지](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+     ![프로젝트 디자이너, 빌드 페이지](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      자세한 내용은 [프로젝트 디자이너, 빌드 페이지(C#)](../ide/reference/build-page-project-designer-csharp.md)를 참조하세요.
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 05/03/2018
 
      **출력** 창에는 빌드에 대한 요약 정보만 표시됩니다.
 
-     ![출력 창, Visual C&#35; 빌드 경고](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![출력 창, Visual C&#35; 빌드 경고](../ide/media/buildwalk_visualcsharpbuildwarnings.png)
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>모든 Visual Basic 빌드 경고 표시 안 함
 
@@ -119,7 +120,7 @@ ms.lasthandoff: 05/03/2018
 
 1. **컴파일** 페이지에서 **모든 경고 사용 안 함** 확인란을 선택합니다.
 
-     ![프로젝트 디자이너, 컴파일 페이지](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+     ![프로젝트 디자이너, 컴파일 페이지](../ide/media/buildwalk_vbsupresswarnings.png)
 
      자세한 내용은 [Visual Basic에서 경고 구성](../ide/configuring-warnings-in-visual-basic.md)을 참조하세요.
 
@@ -127,7 +128,7 @@ ms.lasthandoff: 05/03/2018
 
  **출력** 창에는 빌드에 대한 요약 정보만 표시됩니다.
 
- ![출력 창, Visual Basic 빌드 경고](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+ ![출력 창, Visual Basic 빌드 경고](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
  자세한 내용은 [방법: 컴파일러 경고 표시 안 함](../ide/how-to-suppress-compiler-warnings.md)을 참조하세요.
 
@@ -143,7 +144,7 @@ ms.lasthandoff: 05/03/2018
 
 1. **옵션** 대화 상자를 엽니다.
 
-     ![도구 메뉴의 옵션 명령](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+     ![도구 메뉴의 옵션 명령](../ide/media/exploreide-toolsoptionsmenu.png)
 
 1. **프로젝트 및 솔루션** 범주를 선택하고 나서 **빌드 및 실행** 페이지를 선택합니다.
 
@@ -174,7 +175,7 @@ ms.lasthandoff: 05/03/2018
 
 1. **프로젝트 디자이너**를 엽니다.
 
-     ![보기 메뉴, 속성 페이지 명령](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![보기 메뉴, 속성 페이지 명령](../ide/media/buildwalk_viewpropertypages.png)
 
 1. **컴파일** 페이지를 선택합니다.
 
@@ -191,13 +192,13 @@ ms.lasthandoff: 05/03/2018
 
 1. 응용 프로그램을 빌드합니다.
 
-     ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png)
 
 ### <a name="specify-a-release-build-for-c"></a>C#에 대한 릴리스 빌드 지정 #
 
 1. **프로젝트 디자이너**를 엽니다.
 
-     ![보기 메뉴, 속성 페이지 명령](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![보기 메뉴, 속성 페이지 명령](../ide/media/buildwalk_viewpropertypages.png)
 
 1. **빌드** 페이지를 선택합니다.
 
@@ -216,7 +217,7 @@ ms.lasthandoff: 05/03/2018
 
 1. 응용 프로그램을 빌드합니다.
 
-     ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png)
 
    실행 파일이 지정한 네트워크 경로에 복사됩니다. 해당 경로는 `\\myserver\builds\\FileName.exe`입니다.
 

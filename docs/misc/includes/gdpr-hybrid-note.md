@@ -1,0 +1,18 @@
+---
+title: 파일 포함
+ms.date: 05/01/2018
+ms.prod: visual-studio-dev15
+ms.topic: include
+author: eross-msft
+ms.author: lizross
+ms.openlocfilehash: 66672b4f53f755dac37d15ac59115deac700e0aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34573406"
+---
+> [!NOTE]
+> 개인 데이터를 보거나 삭제하려면 [GDPR에 대한 Windows 데이터 주체 요청](/microsoft-365/compliance/gdpr-dsr-windows)에서 Microsoft의 지침을 살펴보세요. GDPR에 대한 일반 정보를 찾고 있는 경우 [서비스 신뢰 포털](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)의 GDPR 섹션을 참조하세요.
+
+[//]: # (2018/5/22: 이 파일이 분리될 수도 있지만 삭제하지 마세요.)

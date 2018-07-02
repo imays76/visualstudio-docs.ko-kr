@@ -12,11 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748753"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>.NET 개발자용 Visual Studio 2017 생산성 가이드
 
@@ -88,7 +89,7 @@ Visual Studio 2017에는 많은 리팩터링, 코드 생성 작업 및 코드 �
   - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Visual Studio에서 리팩터링](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![Visual Studio에서 리팩터링](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>사용량 찾기, 구현으로 이동, 디컴파일된 어셈블리 탐색이 필요
 Visual Studio 2017에는 코드베이스를 검색하고 탐색하는 데 도움이 되는 여러 가지 기능이 있습니다. [코드 탐색 기능](../ide/navigating-code.md)에 대해 자세히 알아보기
@@ -119,7 +120,7 @@ Visual Studio 2017에는 새로운 디버깅 기능이 추가되었습니다.
 - [뒤로 이동](../debugger/how-to-use-intellitrace-step-back.md) 디버깅을 사용하면 이전 중단점 또는 단계로 돌아가서 과거의 응용 프로그램 상태를 볼 수 있습니다.
 - [스냅숏 디버깅](/azure/application-insights/app-insights-snapshot-debugger)을 사용하면 예외가 throw되는 때에 라이브 웹 응용 프로그램의 상태를 확인할 수 있습니다(Azure에 있어야 함).
 
-![VS2017의 새 예외 도우미](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![VS2017의 새 예외 도우미](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>내 프로젝트에서 버전 제어를 사용하고 싶습니다.
 git 또는 TFVC를 사용하여 Visual Studio에서 코드를 저장하고 업데이트할 수 있습니다.

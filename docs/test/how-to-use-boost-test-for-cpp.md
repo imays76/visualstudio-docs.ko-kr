@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751626"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio에서 Boost.Test for C++를 사용하는 방법
 
 **Visual Studio 2017 버전 15.5** 이상에서 Boost.Test 테스트 어댑터는 **C++로 데스크톱 개발** 워크로드의 구성 요소로 Visual Studio IDE에 통합되어 있습니다.
 
-![Test Adapter for Boost.Test](media/cpp-boost-component.png "Test Adapter for Boost.Test 구성 요소")
+![Test Adapter for Boost.Test](media/cpp-boost-component.png)
 
 **C++를 사용한 데스크톱 개발** 워크로드가 설치되지 않은 경우 **Visual Studio 설치 관리자**를 열고 **수정**을 선택합니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음 **수정** 단추를 선택합니다.
 
@@ -43,7 +44,7 @@ Boost.Test에는 [Boost](http://www.boost.org/)가 필요합니다! Boost가 설
 
 1. 테스트에 대한 .cpp 파일을 만들려면 **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **새 항목 추가**를 선택합니다.
 
-   ![Boost.Test 항목 템플릿](media/boost_test_item_template.png "Boost.Test 항목 템플릿")
+   ![Boost.Test 항목 템플릿](media/boost_test_item_template.png)
 
 1. 새 파일에 샘플 테스트 메서드가 있습니다. **테스트 탐색기**에서 메서드를 검색할 수 있도록 프로젝트를 빌드합니다.
 
@@ -87,7 +88,7 @@ Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 
 
 1. .cpp 테스트 파일에서 필요한 `#include` 지시문을 추가하여 프로그램의 형식과 함수를 테스트 코드에 표시되게 합니다. 일반적으로 프로그램은 폴더 계층 구조에서 한 수준 위에 있습니다. `#include "../"`를 입력하면 IntelliSense 창이 표시되어 헤더 파일에 대한 전체 경로를 선택할 수 있습니다.
 
-   ![#include 지시문 추가](media/cpp-gtest-includes.png ".cpp 테스트 파일에 include 지시문 추가")
+   ![#include 지시문 추가](media/cpp-gtest-includes.png)
 
    다음과 함께 독립 실행형 라이브러리를 사용할 수 있습니다.
 

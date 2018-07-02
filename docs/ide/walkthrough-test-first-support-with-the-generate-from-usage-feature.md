@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748194"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>연습: 관례에서 생성 기능을 통한 테스트 우선 개발
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/22/2018
 
 3.  가운데 창에서 **단위 테스트 프로젝트**를 선택하고 기본 이름인 `UnitTestProject1`을 적용합니다. 다음 그림에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]에 표시되는 경우의 대화 상자를 보여 줍니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서도 대화 상자가 유사하게 표시됩니다.
 
-     ![새 테스트 프로젝트 대화 상자](../ide/media/newproject_test.png "NewProject_Test")
+     ![새 테스트 프로젝트 대화 상자](../ide/media/newproject_test.png)
 
 4.  **확인** 을 선택하여 **새 프로젝트** 대화 상자를 닫습니다.
 
@@ -66,9 +67,9 @@ ms.lasthandoff: 05/22/2018
 
 3.  `TestMethod1()` 메서드를 찾아서 이름을 `DefaultAutomobileIsInitializedCorrectly()`로 바꿉니다. 이 메서드 내에서 다음 스크린샷과 같이 `Automobile`이라는 클래스의 새 인스턴스를 만듭니다. 컴파일 타임 오류를 나타내는 물결선이 표시되고 왼쪽 여백(C#에만 해당) 또는 가리키는 경우 오류 표시선 바로 아래에 [빠른 작업](../ide/quick-actions.md) 전구가 나타납니다.
 
-     ![Visual Basic의 빠른 작업](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Visual Basic의 빠른 작업](../ide/media/genclass_underlinevb.png)
 
-     ![C&#35;의 빠른 작업](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![C&#35;의 빠른 작업](../ide/media/genclass_underline.png)
 
 4.  **빠른 작업** 전구를 선택하거나 클릭합니다. `Automobile` 유형이 정의되지 않았다는 오류 메시지가 표시됩니다. 또한 몇 가지 솔루션이 표시됩니다.
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 05/22/2018
 
 6. **프로젝트** 목록에서 **GFUDemo\_VB** 또는 **GFUDemo_CS**를 클릭하여 테스트 프로젝트 대신 클래스 라이브러리 프로젝트에 파일을 추가하도록 Visual Studio에 지시합니다. 선택되어 있지 않은 경우 **새 파일 만들기**를 선택하고 이름을 *Automobile.cs* 또는 *Automobile.vb*로 지정합니다.
 
-     ![새 형식 생성 대화 상자](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![새 형식 생성 대화 상자](../ide/media/genotherdialog.png)
 
 6.  **확인** 을 클릭하여 대화 상자를 닫고 새 파일을 만듭니다.
 
@@ -133,7 +134,7 @@ ms.lasthandoff: 05/22/2018
 
      다음 그림에는 **테스트 결과** 창이 나와 있습니다.
 
-     ![실패한 테스트 결과](../ide/media/testsfailed.png "TestsFailed")
+     ![실패한 테스트 결과](../ide/media/testsfailed.png)
 
 2.  **테스트 결과** 창에서 각 테스트 결과 행을 두 번 클릭하면 각 테스트 위치로 이동할 수 있습니다.
 
@@ -155,7 +156,7 @@ ms.lasthandoff: 05/22/2018
 
      이번에는 테스트가 성공합니다. 다음 그림에는 **테스트 결과** 창이 나와 있습니다.
 
-     ![통과한 테스트 결과](../ide/media/testspassed.png "TestsPassed")
+     ![성공한 테스트 결과](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>참고 항목
 

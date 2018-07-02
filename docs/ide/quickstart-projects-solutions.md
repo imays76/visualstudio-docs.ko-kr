@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747510"
 ---
 # <a name="quickstart-projects-and-solutions"></a>빠른 시작: 프로젝트 및 솔루션
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/26/2018
 
    **새 프로젝트 추가** 대화 상자가 열립니다.
 
-1. 왼쪽 창에서 **Visual C#** 을 확장하고 **Windows 클래식 바탕 화면**을 선택합니다. 그런 다음 가운데 창에서 **빈 프로젝트(.NET Framework)** 를 선택합니다. 프로젝트 이름을 "QuickDate"로 지정한 다음 **확인** 단추를 선택합니다.
+1. 왼쪽 창에서 **Visual C#** 을 확장하고 **Windows 데스크톱**을 선택합니다. 그런 다음 가운데 창에서 **빈 프로젝트(.NET Framework)** 를 선택합니다. 프로젝트 이름을 "QuickDate"로 지정한 다음 **확인** 단추를 선택합니다.
 
    "QuickDate"라는 프로젝트는 **솔루션 탐색기**의 솔루션 아래에 나타납니다. 현재 *App.config*라는 단일 파일이 포함됩니다.
 

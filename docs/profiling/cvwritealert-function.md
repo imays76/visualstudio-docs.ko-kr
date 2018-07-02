@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d885a09551510e38e54efa4b30a02d16b57a728
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 9d9def71b21fc68b7347ce9fb0596fd73bd44393
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749322"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 함수
 동시성 시각화 도우미 추적 파일에 경고를 씁니다.  
@@ -69,7 +70,7 @@ HRESULT CvWriteAlertVA(
  메시지가 성공적으로 작성되는 경우 S_OK입니다. 오류가 발생한 경우 오류 코드입니다. SUCCEEDED/FAILED 매크로를 사용하여 오류 조건을 확인할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** cvmarkers.h  
+ **헤더:** *cvmarkers.h*  
   
  **유니코드:** CvWriteAlertW, CvWriteAlertVW  
   

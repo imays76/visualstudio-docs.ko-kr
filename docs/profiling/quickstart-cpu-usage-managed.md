@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8381aacf45763a0d2436126957c8443085a563dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750287"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터 분석(관리 코드)
 
@@ -32,7 +33,7 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
 
 1. Visual Studio에서 **파일 > 새 프로젝트**를 선택합니다.
 
-2. **Visual C#** 또는 **Visual Basic** 아래에서 **클래식 Windows 데스크톱**을 선택한 다음 가운데 창에서 **콘솔 앱(.NET Framework)** 을 선택합니다.
+2. **Visual C#** 또는 **Visual Basic** 아래에서 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 을 선택합니다.
 
 3. **MyProfilerApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
 
@@ -40,14 +41,14 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
 
 2. Program.cs를 열고 모든 코드를 다음 코드로 바꿉니다.
 
-    ```cs
+    ```csharp
     using System;
     using System.Threading;
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
         const int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
         long m_totalIterations = 0;
         readonly object m_totalItersLock = new object();
         // The method that will be called when the thread is started.
@@ -55,10 +56,10 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
         {
             Console.WriteLine(
                 "ServerClass.InstanceMethod is running on another thread.");
-    
+
             var x = GetNumber();
         }
-    
+
         private int GetNumber()
         {
             var rand = new Random();
@@ -68,8 +69,8 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -77,7 +78,7 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
             return result;
         }
     }
-    
+
     public class Simple
     {
         public static void Main()
@@ -90,14 +91,14 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
         public static void CreateThreads()
         {
             ServerClass serverObject = new ServerClass();
-    
+
             Thread InstanceCaller = new Thread(new ThreadStart(serverObject.DoWork));
             // Start the thread.
             InstanceCaller.Start();
-    
+
             Console.WriteLine("The Main() thread calls this after "
                 + "starting the new InstanceCaller thread.");
-    
+
         }
     }
     ```
@@ -105,21 +106,21 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
     ```vb
     Imports System
     Imports System.Threading
-    
+
     Namespace MyProfilerApp
         Public Class ServerClass
             Const MIN_ITERATIONS As Integer = Integer.MaxValue / 1000
             Const MAX_ITERATIONS As Integer = MIN_ITERATIONS + 10000
-    
+
             Private m_totalIterations As Long = 0
             ReadOnly m_totalItersLock As New Object()
             ' The method that will be called when the thread is started.
             Public Sub DoWork()
                 Console.WriteLine("ServerClass.InstanceMethod is running on another thread.")
-    
+
                 Dim x = GetNumber()
             End Sub
-    
+
             Private Function GetNumber() As Integer
                 Dim rand = New Random()
                 Dim iters = rand.[Next](MIN_ITERATIONS, MAX_ITERATIONS)
@@ -127,15 +128,15 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
                 SyncLock m_totalItersLock
                     m_totalIterations += iters
                 End SyncLock
-                ' we're just spinning here  
-                ' and using Random to frustrate compiler optimizations  
+                ' we're just spinning here
+                ' and using Random to frustrate compiler optimizations
                 For i As Integer = 0 To iters - 1
                     result = rand.[Next]()
                 Next
                 Return result
             End Function
         End Class
-    
+
         Public Class Simple
             Public Shared Sub Main()
                 For i As Integer = 0 To 199
@@ -144,13 +145,13 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
             End Sub
             Public Shared Sub CreateThreads()
                 Dim serverObject As New ServerClass()
-    
+
                 Dim InstanceCaller As New Thread(New ThreadStart(AddressOf serverObject.DoWork))
                 ' Start the thread.
                 InstanceCaller.Start()
-    
+
                 Console.WriteLine("The Main() thread calls this after " + "starting the new InstanceCaller thread.")
-    
+
             End Sub
         End Class
     End Namespace
@@ -159,8 +160,8 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
     > [!NOTE]
     > Visual Basic에서는 시작 개체가 `Sub Main`으로 설정되었는지 확인합니다(**속성 > 응용 프로그램 > 시작 개체**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1단계: 프로파일링 데이터 수집 
-  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1단계: 프로파일링 데이터 수집
+
 1.  먼저 `Main` 함수의 이 코드 줄에서 앱에 중단점을 설정합니다.
 
     `for (int i = 0; i < 200; i++)`
@@ -177,7 +178,7 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
 
     > [!TIP]
     > 두 개의 중단점을 설정하여, 분석하려는 코드 부분으로 데이터 수집을 제한할 수 있습니다.
-  
+
 3.  사용자가 닫지 않았다면 **진단 도구** 창이 이미 표시되어 있을 것입니다. 창을 다시 표시하려면 **디버그/Windows/진단 도구 표시**를 클릭합니다.
 
 4.  **디버그/디버깅 시작**을 클릭합니다(또는 도구 모음에서 **시작** 또는 **F5** 누름).
@@ -197,7 +198,7 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
      이제 구체적으로 두 개의 중단점 사이에서 실행되는 코드 영역에 대한 응용 프로그램의 성능 데이터가 제공됩니다.
 
      프로파일러는 스레드 데이터 준비를 시작합니다. 끝날 때까지 기다립니다.
-  
+
      CPU 사용량 도구는 **CPU 사용량** 탭에 보고서를 표시합니다.
 
      이 시점에서 데이터 분석을 시작할 수 있습니다.
@@ -215,7 +216,7 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 
 2. 함수 목록에서 `ServerClass::GetNumber` 함수를 두 번 클릭합니다.
 
-    함수를 두 번 클릭하면 **호출자/호출 수신자** 뷰가 왼쪽 창에 열립니다. 
+    함수를 두 번 클릭하면 **호출자/호출 수신자** 뷰가 왼쪽 창에 열립니다.
 
     ![진단 도구 호출자 호출 수신자 뷰](../profiling/media/quickstart-cpu-usage-caller-callee.png "DiagToolsCallerCallee")
 
@@ -234,7 +235,7 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 - [CPU 사용량 분석](../profiling/cpu-usage.md)은 CPU 사용량 도구에 대한 더 상세한 정보를 제공합니다.
 - 디버거를 연결하지 않고 또는 실행 중인 앱을 대상으로 지정하여 CPU 사용량을 분석합니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)의 [디버깅을 사용하지 않고 프로파일링 데이터 수집](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고 항목
 
- [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+- [Visual Studio의 프로파일링](../profiling/index.md)
+- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)

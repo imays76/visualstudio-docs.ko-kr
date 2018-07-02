@@ -83,7 +83,7 @@
       href: /vsts/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
     - name: 질문과 대답
       href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-- name: 리소스
+- name: 자료
   items:
-    - name: Git 알아보기
-      href: 'https://www.visualstudio.com/learn-git/'
+    - name: Git이란?
+      href: /azure/devops/git/what-is-git
