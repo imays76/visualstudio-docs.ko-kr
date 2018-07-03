@@ -155,8 +155,6 @@
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
             - name: 프로젝트 항목 추가 및 제거
               href: ide/adding-and-removing-project-items.md
-            - name: 프로젝트 및 솔루션 파일 형식
-              href: ide/reference/project-and-solution-file-types.md
             - name: 프로젝트 및 솔루션 속성 관리
               href: ide/managing-project-and-solution-properties.md
             - name: 프로젝트에서 참조 관리
@@ -604,11 +602,6 @@
           href: ide/how-to-specify-build-events-csharp.md
         - name: Configuring Warnings in Visual Basic
           href: ide/configuring-warnings-in-visual-basic.md
-        - name: 호스팅 프로세스 비활성화
-          href: ide/how-to-disable-the-hosting-process.md
-          items:
-            - name: 호스팅 프로세스(vshost.exe)
-              href: ide/hosting-process-vshost-exe.md
         - name: '연습: 여러 컴퓨터 빌드 환경 만들기'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: 디버그...
@@ -1062,6 +1055,9 @@
           href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default
     - name: Visual Studio의 문제 보고
       href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+      items:
+        - name: 개발자 커뮤니티 데이터 개인 정보
+          href: ide/developer-community-privacy.md
     - name: 사용자 환경 개선 프로그램
       href: ide/visual-studio-experience-improvement-program.md
       items:
