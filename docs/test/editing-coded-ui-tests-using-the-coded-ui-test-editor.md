@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 88c42b710b08ca7dae8d779da3d6e093179ddca6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692371"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35669417"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>코딩된 UI 테스트 편집기를 사용하여 코딩된 UI 테스트 편집
 
@@ -92,9 +92,9 @@ UI 작업에 대한 속성을 수정하려면 **UI 작업** 창에서 속성을 
 
 - 코딩된 UI 테스트 편집기 도구 모음에 있는 **찾기** 단추를 사용하여 Visual Studio의 찾기 및 바꾸기 도구를 열 수 있습니다. 그런 다음, 찾기 컨트롤을 사용하여 코딩된 UI 테스트 편집기에서 UI 작업을 찾을 수 있습니다. 예를 들어 “’로그인’ 단추 클릭”을 찾아볼 수 있습니다. 대규모 테스트에 유용할 수 있는 기능입니다. 코딩된 UI 테스트 편집기의 찾기 및 바꾸기 도구에서는 바꾸기 기능을 사용할 수 없습니다. 자세한 내용은 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)의 컨트롤 찾기를 참조하세요.
 
-- 경우에 따라 테스트 중인 응용 프로그램의 UI에서 컨트롤이 위치한 지점을 시각화하기 어려울 수 있습니다. 코딩된 UI 테스트 편집기의 기능 중 하나를 사용하면, UI 컨트롤 맵에 나열된 컨트롤을 선택하고 테스트 중인 응용 프로그램에서 해당 컨트롤의 위치를 볼 수 있습니다. 자세한 내용은 이 문서 아래쪽에 있는 [테스트 중인 응용 프로그램에서 UI 컨트롤 찾기](#CodedUITestEditor_LocateUIControl)를 참조합니다.
+- 경우에 따라 테스트 중인 응용 프로그램의 UI에서 컨트롤이 위치한 지점을 시각화하기 어려울 수 있습니다. 코딩된 UI 테스트 편집기의 기능 중 하나를 사용하면, UI 컨트롤 맵에 나열된 컨트롤을 선택하고 테스트 중인 응용 프로그램에서 해당 컨트롤의 위치를 볼 수 있습니다. 자세한 내용은 이 문서 아래쪽에 있는 [테스트 중인 응용 프로그램에서 UI 컨트롤 찾기](#locate-a-ui-control-in-the-application-under-test)를 참조합니다.
 
-- 편집하려는 컨트롤이 포함된 컨테이너 컨트롤을 확장해야 할 수도 있습니다. 자세한 내용은 이 문서 아래쪽에 있는 [컨트롤 및 해당 하위 요소 찾기](#CodedUITestEditor_LocateDecendants)를 참조합니다.
+- 편집하려는 컨트롤이 포함된 컨테이너 컨트롤을 확장해야 할 수도 있습니다. 자세한 내용은 이 문서 아래쪽에 있는 [컨트롤 및 해당 하위 요소 찾기](#locate-a-control-and-its-descendants)를 참조합니다.
 
 ## <a name="delete-unwanted-ui-actions"></a>원치 않는 UI 작업 삭제
 

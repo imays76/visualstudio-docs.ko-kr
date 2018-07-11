@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ad00d05bf6eba2a3853c0af79bf9decaaba236f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4b9e63b930122d36903187128d4bebeb1ff96143
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751730"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35669241"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI 자동화를 사용하여 코드 테스트
 
@@ -35,7 +35,7 @@ Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램�
 
 코딩된 UI 테스트는 만들기 쉽습니다. **코딩된 UI 테스트 빌더**가 백그라운드에서 실행되는 동안 테스트를 수동으로 간단하게 수행할 수 있습니다. 또한 특정 필드에 나타나야 하는 값을 지정할 수도 있습니다. **코딩된 UI 테스트 빌더**는 사용자의 작업을 기록하고 이러한 작업으로부터 코드를 생성합니다. 테스트를 만든 후 작업 시퀀스를 수정할 수 있는 특수 편집기에서 테스트를 편집할 수 있습니다.
 
-또는 Microsoft Test Manager에 기록된 테스트 사례가 있는 경우에서 해당 사례에서 코드를 생성할 수 있습니다. 자세한 내용은 [수동 테스트 기록 및 재생](/vsts/manual-test/getting-started/record-play-back-manual-tests)을 참조하세요.
+또는 Microsoft Test Manager에 기록된 테스트 사례가 있는 경우에서 해당 사례에서 코드를 생성할 수 있습니다. 자세한 내용은 [수동 테스트 기록 및 재생](/vsts/test/mtm/record-play-back-manual-tests)을 참조하세요.
 
 특수 **코딩된 UI 테스트 빌더** 및 편집기를 사용하면 사용자의 주요 기술이 코딩이 아니라 테스트하는 것이더라도 코딩된 UI 테스트를 쉽게 만들고 편집할 수 있습니다. 그러나 개발자가 보다 수준 높은 방식으로 테스트를 확장하려는 경우 쉽게 복사하고 변경할 수 있도록 코드가 구조화되어 있습니다. 예를 들어 웹 사이트에서 무언가를 구매하는 테스트를 기록한 다음 생성된 코드를 편집하여 여러 품목을 구매하는 루프를 추가할 수 있습니다.
 
@@ -105,7 +105,7 @@ Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램�
     > [!TIP]
     > 작업 기록과 값 확인을 번갈아 가며 수행합니다. 작업 또는 확인의 각 시퀀스 종료 시 코드를 생성합니다. 필요한 경우 나중에 새 작업 및 확인을 삽입할 수 있습니다.
 
-     자세한 내용은 [컨트롤 속성의 유효성 검사](#VerifyingCodeUsingCUITGenerateAssertions)를 참조하세요.
+     자세한 내용은 [컨트롤 속성의 유효성 검사](#validate-the-properties-of-ui-controls)를 참조하세요.
 
 5. 생성된 테스트 코드를 확인합니다.
 
@@ -140,7 +140,7 @@ Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램�
 
 8. 테스트를 실행합니다.
 
-   테스트 탐색기를 사용하거나 테스트 메서드에서 바로 가기 메뉴를 열고 **테스트 실행**을 선택합니다. 테스트 실행 방법에 대한 자세한 내용은 이 항목의 끝에 있는 [다음 단계](#VerifyCodeUsingCUITWhatsNext) 섹션의 [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md) 및 *실행 중인 코딩된 UI 테스트의 추가 옵션*을 참조하세요.
+   테스트 탐색기를 사용하거나 테스트 메서드에서 바로 가기 메뉴를 열고 **테스트 실행**을 선택합니다. 테스트 실행 방법에 대한 자세한 내용은 이 항목의 끝에 있는 [다음 단계](#what's-next?) 섹션의 [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md) 및 *실행 중인 코딩된 UI 테스트의 추가 옵션*을 참조하세요.
 
 이 항목의 나머지 섹션에서는 이 절차의 단계에 대해 자세히 설명합니다.
 
@@ -284,13 +284,13 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 코딩된 UI 테스트를 만든 후 Visual Studio에서 다음 도구 중 하나를 사용해 편집할 수 있습니다.
 
-- **코딩된 UI 테스트 빌더**를 사용하여 테스트에 컨트롤 및 유효성 검사를 더 추가할 수 있습니다. 이 항목의 [컨트롤 추가 및 해당 컨트롤 속성에 대한 유효성 검사](#VerifyingCodeUsingCUITGenerateAssertions) 섹션을 참조하세요.
+- **코딩된 UI 테스트 빌더**를 사용하여 테스트에 컨트롤 및 유효성 검사를 더 추가할 수 있습니다. 이 항목의 [컨트롤 추가 및 해당 컨트롤 속성에 대한 유효성 검사](#validate-the-properties-of-ui-controls) 섹션을 참조하세요.
 
 - **코딩된 UI 테스트 편집기**에서는 코딩된 UI 테스트를 쉽게 수정할 수 있습니다. **코딩된 UI 테스트 편집기**를 사용하면 테스트 메서드를 찾아서 보고 편집할 수 있습니다. 또한 UI 작업을 편집하고 UI 컨트롤 맵에서 관련 컨트롤을 편집할 수도 있습니다. 자세한 내용은 [코딩된 UI 테스트 편집기를 사용하여 코딩된 UI 테스트 편집](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)을 참조하세요.
 
 - **코드 편집기:**
 
-    - 이 항목의 [UI 컨트롤 작업 및 속성 코딩](#VerifyingCodeCUITActionsandProperties) 섹션에서 설명하는 것처럼 테스트에서 컨트롤에 대한 코드를 수동으로 추가합니다.
+    - 이 항목의 [UI 컨트롤 작업 및 속성 코딩](#coded-ui-control-actions-and-properties) 섹션에서 설명하는 것처럼 테스트에서 컨트롤에 대한 코드를 수동으로 추가합니다.
 
     - 코딩된 UI 테스트를 만든 후 데이터 기반이 되도록 수정할 수 있습니다. 자세한 내용은 [데이터 기반의 코딩된 UI 테스트 만들기](../test/creating-a-data-driven-coded-ui-test.md)를 참조하세요.
 
@@ -454,7 +454,7 @@ UI 컨트롤 관련 속성 값을 얻고 설정하기 위해 컨트롤의 속성
 
 - [코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-코딩된 UI 테스트는 일반적으로 수동 테스트를 자동화하는 데 사용됩니다. 수동 테스트에 대한 자세한 내용은 [Microsoft Test Manager를 사용하여 수동 테스트 실행](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager)을 참조하세요. 자동화된 테스트에 대한 자세한 내용은 [Visual Studio에서 도구 테스트](../test/improve-code-quality.md)를 참조하세요.
+코딩된 UI 테스트는 일반적으로 수동 테스트를 자동화하는 데 사용됩니다. 수동 테스트에 대한 자세한 내용은 [Microsoft Test Manager를 사용하여 수동 테스트 실행](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager)을 참조하세요. 자동화된 테스트에 대한 자세한 내용은 [Visual Studio에서 도구 테스트](../test/improve-code-quality.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
