@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d81438ef284464fb23ebc5a41c19e59d20739cf4
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "36235470"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -83,7 +84,7 @@ Team Foundation Server 또는 Visual Studio Team Services에서 TFVC(Team Founda
 
 ![CodeLens: TFVC에서 코드에 대한 변경 기록 가져오기](../ide/media/codelens-code-changes.png)
 
-기본 기간은 지난 12 개월입니다. 코드가 Team Foundation Server에 저장되는 경우 [TFSConfig 명령](/vsts/tfs-server/command-line/tfsconfig-cmd)을 [CodeIndex 명령](../ide/codeindex-command.md) 및 **/indexHistoryPeriod** 플래그와 함께 실행하여 기간을 변경할 수 있습니다.
+기본 기간은 지난 12 개월입니다. 코드가 Team Foundation Server에 저장되는 경우 [TFSConfig 명령](/tfs/server/ref/command-line/tfsconfig-cmd)을 [CodeIndex 명령](../ide/codeindex-command.md) 및 **/indexHistoryPeriod** 플래그와 함께 실행하여 기간을 변경할 수 있습니다.
 
 1년 이상 전의 변경 내용을 포함하여 모든 변경 내용에 대한 자세한 기록을 보려면 **모든 파일 변경 내용 표시**를 선택합니다.
 
@@ -205,23 +206,25 @@ Team Foundation Server 또는 Visual Studio Team Services에서 TFVC(Team Founda
 
 1. 연결된 [단위 테스트 코드](../test/unit-test-your-code.md)가 있는 응용 프로그램 코드로 이동합니다.
 
-2. **Alt**+**3**을 눌러 코드에 대한 테스트를 검토합니다.
+2. 아직 수행하지 않은 경우 CodeLens 테스트 지표를 로드하도록 응용 프로그램을 빌드합니다. [빌드된 어셈블리에 의한 검색](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)이 설정되어 있는지 확인합니다.
+
+3. **Alt**+**3**을 눌러 코드에 대한 테스트를 검토합니다.
 
      ![CodeLens - 코드 편집기에서 테스트 상태 선택](../ide/media/codelens-choose-test-indicator.png)
 
-3. 경고 아이콘 ![경고 아이콘](../ide/media/codelenstestwarningicon.png)테스트가 아직 실행되지 않았으므로 실행합니다.
+4. 경고 아이콘 ![경고 아이콘](../ide/media/codelenstestwarningicon.png)테스트가 아직 실행되지 않았으므로 실행합니다.
 
      ![CodeLens - 아직 실행하지 않은 단위 테스트 보기](../ide/media/codelens-tests-not-yet-run.png)
 
-4. 테스트의 정의를 검토하려면 CodeLens 표시기 창에서 테스트 항목을 두 번 클릭하여 편집기에서 코드 파일을 엽니다.
+5. 테스트의 정의를 검토하려면 CodeLens 표시기 창에서 테스트 항목을 두 번 클릭하여 편집기에서 코드 파일을 엽니다.
 
      ![CodeLens - 단위 테스트 정의로 이동](../ide/media/codelens-unit-test-definition.png)
 
-5. 테스트 결과를 검토하려면 테스트 상태 표시기(![테스트 실패 아이콘](../ide/media/codelenstestfailedicon.png) 또는 ![테스트 성공 아이콘](../ide/media/codelenstestpassedicon.png))를 선택하거나 **Alt**+**1**을 누릅니다.
+6. 테스트 결과를 검토하려면 테스트 상태 표시기(![테스트 실패 아이콘](../ide/media/codelenstestfailedicon.png) 또는 ![테스트 성공 아이콘](../ide/media/codelenstestpassedicon.png))를 선택하거나 **Alt**+**1**을 누릅니다.
 
      ![CodeLens - 단위 테스트 결과 표시](../ide/media/codelens-unit-test-result.png)
 
-6. 이 테스트를 변경한 사용자와 그 수 또는 이 테스트에 대해 수행된 변경 작업 수를 확인하려면 [코드 기록 및 연결된 항목을 찾아보세요](#find-code-history).
+7. 이 테스트를 변경한 사용자와 그 수 또는 이 테스트에 대해 수행된 변경 작업 수를 확인하려면 [코드 기록 및 연결된 항목을 찾아보세요](#find-code-history).
 
 ## <a name="keyboard-shortcuts"></a>바로 가기 키
 
@@ -252,7 +255,7 @@ Team Foundation Server 또는 Visual Studio Team Services에서 TFVC(Team Founda
 
 - CodeLens가 설정되어 있는지 확인합니다. **도구** > **옵션** > **텍스트 편집기** > **모든 언어**  >  **CodeLens**로 이동합니다.
 
-- 코드가 TFS에 저장되는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](/vsts/tfs-server/command-line/tfsconfig-cmd)을 함께 사용하여 코드 인덱싱이 설정되어 있는지 확인합니다.
+- 코드가 TFS에 저장되는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](/tfs/server/ref/command-line/tfsconfig-cmd)을 함께 사용하여 코드 인덱싱이 설정되어 있는지 확인합니다.
 
 - TFS 관련 지표는 작업 항목이 코드와 링크되어 있는 경우 및 링크된 작업 항목을 열 권한이 있는 경우에만 나타납니다. [팀 멤버 권한](/vsts/work/scale/multiple-teams)이 있는지 확인합니다.
 
@@ -320,7 +323,11 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Q: CodeLens가 코드를 처리하여 기록 및 연결된 항목을 표시하는 방법을 관리할 수 있나요?
 
-**A:** 예. 코드가 TFS에 있는 경우 [CodeIndex 명령](../ide/codeindex-command.md)과 [TFS 구성 명령](/vsts/tfs-server/command-line/tfsconfig-cmd)을 함께 사용합니다.
+**A:** 예. 코드가 TFS에 있는 경우 [CodeIndex 명령](../ide/codeindex-command.md)과 [TFS 구성 명령](/tfs/server/ref/command-line/tfsconfig-cmd)을 함께 사용합니다.
+
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q: 내 CodeLens 테스트 지표는 솔루션을 처음 열 때 내 파일에 더 이상 나타나지 않습니다. 로드하려면 어떻게 하나요?
+
+**A:** CodeLens 테스트 지표를 가져오는 프로젝트를 다시 빌드하여 파일에서 로드합니다. [빌드된 어셈블리에 의한 검색](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)이 설정되어 있는지 확인합니다. 성능을 향상시키기 위해 코드 파일을 로드하는 경우 Visual Studio는 테스트 지표에 대한 원본 정보를 더 이상 페치하지 않습니다. 빌드 후에 또는 **테스트 탐색기**를 두 번 클릭하여 테스트로 이동할 때 테스트 지표가 로드됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

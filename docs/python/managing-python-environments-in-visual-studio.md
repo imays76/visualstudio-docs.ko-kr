@@ -1,7 +1,7 @@
 ---
 title: Python 환경 및 인터프리터 관리
 description: Python 환경 창을 사용하여 전역, 가상 및 conda 환경을 관리하고 Python 인터프리터 및 패키지를 설치하며 Visual Studio 프로젝트에 환경을 할당합니다.
-ms.date: 05/22/2018
+ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477576"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37342754"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
@@ -87,7 +87,7 @@ Visual Studio에서 인식하는 환경이 **Python 환경** 창에 표시됩니
 
 ![Python 환경 창](media/environments-default-view.png)
 
-목록에 원하는 환경이 표시되지 않으면 [기존 환경 수동 식별](#manually-identify-an-existing-environment)을 참조하세요.
+Visual Studio는 [PEP 514](https://www.python.org/dev/peps/pep-0514/)에 따라 레지스트리를 사용하여 설치된 환경을 식별합니다. 목록에 원하는 환경이 표시되지 않으면 [기존 환경 수동 식별](#manually-identify-an-existing-environment)을 참조하세요.
 
 목록에서 환경을 선택하면 **개요** 탭에 해당 환경에 대한 다양한 속성과 명령이 표시됩니다. 예를 들어 위의 이미지에서 인터프리터의 위치가 `C:\Python36-32`임을 알 수 있습니다. 환경 목록 아래의 드롭다운 목록을 사용하여 **패키지** 및 **IntelliSense**와 같은 다른 탭으로 전환합니다. 이러한 탭은 [Python 환경 창 탭 참조](python-environments-window-tab-reference.md)에 설명되어 있습니다.
 
@@ -118,7 +118,27 @@ Visual Studio에서 인식하는 환경이 **Python 환경** 창에 표시됩니
 >
 > 그러나 파일 시스템을 사용하여 인터프리터 및 해당 환경을 수동으로 이동할 경우 Visual Studio에서는 새 위치를 알 수 없습니다. 자세한 내용은 [인터프리터 이동](installing-python-interpreters.md#moving-an-interpreter)을 참조하세요.
 
-<a name="manually-identifying-an-existing-environment></a>
+## <a name="fix-invalid-environments"></a>잘못된 환경 수정
+
+Visual Studio에서 환경에 대한 레지스트리 항목을 찾았지만 인터프리터에 대한 경로가 올바르지 않은 경우 Python 환경 창은 취소선 글꼴을 사용하여 이름을 표시합니다.
+
+![잘못된 환경을 보여주는 Python 환경 창](media/environments-invalid-entry.png)
+
+유지할 환경을 수정하려면 먼저 해당 설치 관리자의 **복구** 프로세스를 사용해 보세요. 예를 들어 표준 Python 3.x에 대한 설치 관리자에는 해당 옵션이 포함됩니다.
+
+복구 옵션이 포함되지 않은 환경을 수정하거나 잘못된 환경을 제거하려면 다음 단계를 사용하여 레지스트리를 직접 수정합니다. Visual Studio는 레지스트리를 변경하는 경우 Python 환경 창을 자동으로 업데이트합니다.
+
+1. `regedit.exe`를 실행합니다.
+1. 32비트 인터프리터의 경우 `HKEY_LOCAL_MACHINE\SOFTWARE\Python`으로 이동하거나 64비트 인터프리터의 경우 `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python`으로 이동합니다. IronPython의 경우 대신 `IronPython`을 찾습니다.
+1. CPython의 경우 `PythonCore` 또는 Anaconda의 경우 `ContinuumAnalytics`와 같은 분포와 일치하는 노드를 확장합니다. IronPython의 경우 버전 번호 노드를 확장합니다.
+1. `InstallPath` 노드 아래의 값을 검사합니다.
+
+    ![표준 CPython 설치를 위한 레지스트리 항목](media/environments-registry-entries.png)
+
+    - 환경이 컴퓨터에 여전히 있는 경우 `ExecutablePath`의 값을 변경하여 위치를 수정합니다. 또한 필요에 따라 `(Default)` 및 `WindowedExecutablePath` 값을 수정합니다.
+    - 환경이 컴퓨터에 더 이상 존재하지 않고 Python 환경 창에서 제거하려는 경우 위의 이미지에서 `3.6`과 같은 `InstallPath`의 부모 노드를 삭제합니다.
+
+<a name="manually-identifying-an-existing-environment"></a>
 
 ## <a name="manually-identify-an-existing-environment"></a>기존 환경 수동 식별
 
