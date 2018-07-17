@@ -1,36 +1,37 @@
 ---
-title: .NET 개발자용 Visual Studio 2017
-description: 더 나은.NET 코드를 더 빠르게 작성할 수 있도록 Visual Studio 2017 기능의 개요를 제공합니다.
+title: .NET 개발을 위한 생산성 향상
+description: .NET 코드를 더 신속하게 작성할 수 있는 탐색, 코드 분석, 단위 테스트 및 기타 기능의 개요입니다.
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.date: 01/16/2018
+ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748753"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37175306"
 ---
-# <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>.NET 개발자용 Visual Studio 2017 생산성 가이드
+# <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 생산성 가이드
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/)은 개발자를 어느 때 보다 더 생산적이게 합니다! 솔루션 시작 및 로드, 테스트 검색 및 입력 대기 시간을 위해 성능과 안정성을 개선했습니다. 또한 더 나은 코드를 더 빠르게 쓸 수 있도록 기능을 향상시키고 추가했습니다. 이러한 기능 중 일부는 디컴파일된 어셈블리에 대한 탐색, 입력 시 변수 이름 제안, **테스트 탐색기**에서 계층 구조 보기, 파일/유형/멤버/기호 선언 탐색하려면 전체로 이동(**Ctrl**+**T**), 지능형 **예외 도우미**, 코드 스타일 구성 및 적용, 많은 리팩터링 및 코드 수정을 포함합니다.
-
-이 가이드를 따라 생산성을 최적화합니다.
+[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)이 개발자의 생산성을 높이는 방법을 알아봅니다. 디컴파일된 어셈블리에 대한 탐색, 입력 시 변수 이름 제안, **테스트 탐색기**에서 계층 구조 보기, 파일/유형/멤버/기호 선언 탐색하려면 전체로 이동(**Ctrl**+**T**), 지능형 **예외 도우미**, 코드 스타일 구성 및 적용, 많은 리팩터링 및 코드 수정과 같은 성능 및 생산성 향상 기능을 활용합니다.
 
 ##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>다른 확장/편집기/IDE에서 내 바로 가기 키에 익숙합니다.
 
-다른 IDE 또는 코딩 환경에서 왔다면 다음 확장 중 하나를 설치하면 유용할 수 있습니다.
+**Visual Studio 2017 버전 15.8의 새로운 기능** 다른 IDE 또는 코딩 환경에서 전환하는 경우 키보드 구성표를 *Visual Studio Code* 또는 *ReSharper(Visual Studio)* 로 변경할 수 있습니다.
 
-- [Emacs 에뮬레이션](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
+![Visual Studio의 키보드 구성표](../ide/media/VS2017Guide-Keyboard.png)
+
+또한 일부 확장은 키보드 구성표를 제공합니다.
 - [Visual Studio용 바로 가기 키(ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+- [Emacs 에뮬레이션](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
 다음은 많이 사용되는 Visual Studio 바로 가기입니다.
@@ -44,14 +45,18 @@ ms.locfileid: "34748753"
 | **Ctrl**+**.** (또는 C# 프로필에서 **Alt**+**Enter**) | 빠른 작업 및 리팩터링 | 커서 위치 또는 코드 선택에서 사용 가능한 코드 해결, 코드 생성 작업, 리팩터링, 또는 기타 빠른 작업 확인 |
 | **Ctrl**+**D** | 중복된 줄 | 커서가 있는 코드 줄 복제(**Visual Studio 2017 버전 15.6** 이상에서 사용 가능) |
 | **Shift**+**Alt**+**+**/**-** | 선택 영역을 확대/축소 | 편집기(**Visual Studio 2017 버전 15.5** 이상에서 사용 가능)에서 현재 선택 영역을 확장하거나 축소 |
+| **Shift** + **Alt** + **Ins** | 일치하는 다음 캐럿 삽입 | 현재 선택 영역과 일치하는 다음 위치에서 선택 영역 및 캐럿 추가(**Visual Studio 2017 버전 15.8** 이상에서 사용할 수 있음) |
 | **Ctrl**+**Q** | 빠른 실행 | 모든 Visual Studio 설정 검색 |
 | **F5** | 디버깅 시작 | 응용 프로그램 디버깅 시작 |
 | **Ctrl**+**F5** | 디버깅하지 않고 실행 | 디버깅하지 않고 응용 프로그램을 로컬에서 실행 |
 | **Ctrl**+**K**,**D**(기본 프로필) 또는 **Ctrl**+**E**,**D**(C# 프로필) | 문서 서식 | 줄 바꿈, 간격 및 들여쓰기 설정에 따라 파일에서 서식 위반 정리 |
 | **Ctrl**+**\\**,**E**(기본 프로필) 또는 **Ctrl**+**W**,**E**(C# 프로필) | 오류 목록 보기 | 문서, 프로젝트 또는 솔루션의 모든 오류 보기 |
+| **Alt** + **PgUp/PgDn** | 다음/이전 문제로 이동 | 문서에서 이전/다음 오류, 경고, 제안으로 이동(**Visual Studio 2017 버전 15.8** 이상에서 사용할 수 있음) |
 
 > [!NOTE]
-> 기본 Visual Studio keybindings의 바인딩을 해제한 일부 확장 다음과 같은 명령을 사용하려면 **도구** > **설정 가져오기 및 내보내기** > **모든 설정 다시 설정** 또는 **도구** > **옵션** > **키보드** > **다시 설정**으로 이동하여 Visual Studio의 기본값으로 키 바인딩을 복원합니다.
+> 기본 Visual Studio keybindings의 바인딩을 해제한 일부 확장 위의 명령을 사용하려면 **도구** > **설정 가져오기 및 내보내기** > **모든 설정 다시 설정** 또는 **도구** > **옵션** > **키보드** > **다시 설정**으로 이동하여 Visual Studio의 기본값으로 키 바인딩을 복원합니다.
+
+[설명서](..\ide\tips-and-tricks-for-visual-studio.md)의 Visual Studio에 있는 바로 가기 키 및 명령을 자세히 알아봅니다.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>파일 또는 형식을 빠르게 탐색하는 방법이 있어야 합니다.
 Visual Studio 2017에 **전체로 이동**(**Ctrl**+**T**)이라는 기능이 있습니다. 전체로 이동은 사용자를 모든 파일, 형식, 멤버 또는 기호 선언으로 빠르게 이동하게 할 수 있습니다.
@@ -85,6 +90,7 @@ Visual Studio 2017에는 많은 리팩터링, 코드 생성 작업 및 코드 �
   - 더 많은 내용은 [설명서](https://aka.ms/refactorings) 참조
 - [Roslyn 분석기](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix)를 사용하여 고유한 리팩터링 또는 코드 수정을 작성하세요.
 - 여러 커뮤니티 회원이 다음과 같은 추가적인 코드 검사를 추가하는 ‘무료’ 확장을 작성했습니다.
+  - [FXCop 분석기](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -120,7 +126,7 @@ Visual Studio 2017에는 새로운 디버깅 기능이 추가되었습니다.
 - [뒤로 이동](../debugger/how-to-use-intellitrace-step-back.md) 디버깅을 사용하면 이전 중단점 또는 단계로 돌아가서 과거의 응용 프로그램 상태를 볼 수 있습니다.
 - [스냅숏 디버깅](/azure/application-insights/app-insights-snapshot-debugger)을 사용하면 예외가 throw되는 때에 라이브 웹 응용 프로그램의 상태를 확인할 수 있습니다(Azure에 있어야 함).
 
-![VS2017의 새 예외 도우미](../ide/media/VSGuide_Debugging.png)
+![Visual Studio 2017의 새 예외 도우미](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>내 프로젝트에서 버전 제어를 사용하고 싶습니다.
 git 또는 TFVC를 사용하여 Visual Studio에서 코드를 저장하고 업데이트할 수 있습니다.
@@ -141,8 +147,6 @@ git 또는 TFVC를 사용하여 Visual Studio에서 코드를 저장하고 업�
 | 완료/제안 모드 | IntelliSense의 완료 동작 변경 -- IntelliJ 배경 개발자는 기본값에서 설정을 변경하는 경향이 있습니다. | **메뉴** > **편집** > **IntelliSense** > **완료 모드 설정/해제** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 편집기에서 코드 참조 정보 및 변경 내용 표시 | **도구** > **옵션** > **텍스트 편집기** > **모든 언어** > **CodeLens** |
 | [코드 조각](../ide/visual-csharp-code-snippets.md) | 일반 상용구를 없애는 도움말 |  코드 조각 이름을 입력하고 **탭** 키를 두 번 누릅니다. |
-
-![Visual Studio의 코드 조각](../ide/media/VSGuide_SmartEditor.png)
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>생산적으로 만드는 기능이 누락되거나 성능 저하를 경험합니까?
 여러 가지 방법으로 피드백을 남길 수 있습니다.
