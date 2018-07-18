@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099885"
 ---
 # <a name="breakpoint-errors"></a>중단점 오류
 다음 코드에 중단점을 바인딩하려는 경우에 프로세스를 설명 하지만 실패 합니다.  

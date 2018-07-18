@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977766"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>여러 UI 맵이 포함된 대형 응용 프로그램 테스트
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142986"
 ---
 # <a name="single-and-multi-tab-views"></a>단일 및 다중 탭 뷰
 편집기는 여러 유형의 보기를 만들 수 있습니다. 한 가지 예는 코드 편집기 창, 양식 디자이너입니다.  

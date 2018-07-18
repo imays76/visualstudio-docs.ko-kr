@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562704"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>방법: ClickOnce 응용 프로그램의 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가
 신뢰할 수 있는 응용 프로그램 배포를 사용하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램이 사용자 프롬프트 없이 더 높은 신뢰 수준으로 실행되도록 클라이언트 컴퓨터를 구성할 수 있습니다. 다음 절차에서는 명령줄 도구 CertMgr.exe를 사용하여, 클라이언트 컴퓨터의 신뢰할 수 있는 게시자 저장소에 게시자의 인증서를 추가하는 방법을 보여 줍니다.  

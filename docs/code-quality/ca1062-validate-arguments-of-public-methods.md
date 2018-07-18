@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900880"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: public 메서드의 인수의 유효성을 검사하십시오.
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463252"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>열거형(디버그 인터페이스 액세스 SDK)
 열거형으로 식별 됩니다 `SymTagEnum` 기호입니다. 각 열거형 값을 가진 클래스 자식으로 표시는 `SymTagConstant` 태그입니다.  

@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptSite::GetItemInfo | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptSite.GetItemInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptSite_GetItemInfo
 ms.assetid: f859ed3b-02c1-4924-99f8-5f5bf1bf8405
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725423"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
 스크립팅 엔진에 추가 된 항목에 대 한 정보를 얻을 수 있습니다는 [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) 메서드.  

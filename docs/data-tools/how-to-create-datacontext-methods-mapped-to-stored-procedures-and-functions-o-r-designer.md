@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923444"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>방법: 저장된 프로시저 및 함수 (O/R 디자이너)에 매핑된 DataContext 메서드 만들기
 저장된 프로시저 및 함수에 추가할 수는 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] 으로 <xref:System.Data.Linq.DataContext> 메서드. 메서드를 호출 하 고 필요한 매개 변수에 전달은 데이터베이스에서 저장된 프로시저 또는 함수를 실행 하 고 데이터의 반환 형식에 반환 된 <xref:System.Data.Linq.DataContext> 메서드. 에 대 한 자세한 내용은 <xref:System.Data.Linq.DataContext> 메서드 참조 [DataContext 메서드 (O/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md)합니다.

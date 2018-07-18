@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472840"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>오류: SQL 수&#39;SSDEBUGPS를 찾을 수 없습니다
 

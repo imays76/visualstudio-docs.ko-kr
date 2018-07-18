@@ -20,6 +20,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264664"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; 요소 (Visual Studio에서 Office 개발)
   **appAddin** 의 요소는 `vstov4` 네임 스페이스는 VSTO 추가 기능에 대 한 사용자 지정 관련 정보를 저장 합니다.  

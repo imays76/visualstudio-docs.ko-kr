@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478163"
 ---
 # <a name="visualizer-architecture"></a>시각화 도우미 아키텍처
 디버거 시각화 도우미의 아키텍처는 두 부분으로 구성되어 있습니다.  

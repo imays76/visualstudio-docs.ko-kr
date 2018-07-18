@@ -49,6 +49,18 @@
           href: learn-django-in-visual-studio-step-05-django-authentication.md
         - name: 6 - 설문 조사 Django 웹 프로젝트 템플릿 사용
           href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: Visual Studio의 Flask 알아보기
+      items:
+        - name: 1 - 프로젝트 및 솔루션 만들기
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: 2 - Flask 앱 만들기
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3 - 정적 파일 제공 및 페이지 추가
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: 4 - Flask 웹 프로젝트 템플릿 사용
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: 5 - 설문조사 Flask 웹 프로젝트 템플릿 사용
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: 개념
   items:
     - name: Python 프로젝트

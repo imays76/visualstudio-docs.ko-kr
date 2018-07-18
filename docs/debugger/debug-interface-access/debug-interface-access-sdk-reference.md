@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468708"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>디버그 인터페이스 액세스 SDK 참조
 모든 인터페이스 및 지원 열거형 및 구조 DIA sdk에서에 대 한 전체 참조 합니다.  

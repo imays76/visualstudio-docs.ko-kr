@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562015"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
 이 섹션에서는 Visual Stuio Tools for Unity와 관련된 일반적인 문제에 대한 솔루션, 알려진 문제의 설명을 찾아보고 오류를 보고하여 Visual Studio Tools for Unity를 개선하는 데 도움이 되는 방법을 알아봅니다.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108390"
 ---
 # <a name="capability-flags"></a>기능 플래그
 SCC_CAP_*xxx* 플래그는 비트 플래그를 소스 제어 플러그 인의 기능을 나타내는 데 사용 합니다. SCC_EXCAP_*xxx* 플래그는 확장된 기능을 나타내는 정수 값을 확인 하는 플래그를 증분 합니다.  

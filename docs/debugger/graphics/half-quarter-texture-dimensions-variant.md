@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481842"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>절반/분기 텍스처 크기 변형
 렌더링 대상이 아닌 질감의 질감 크기를 줄입니다.  

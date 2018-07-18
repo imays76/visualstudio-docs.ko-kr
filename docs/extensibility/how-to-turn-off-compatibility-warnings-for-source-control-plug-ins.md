@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129552"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>방법: 소스 제어 플러그 인에 대 한 호환성 경고를 해제
 사용자의 소스 제어를 적용 하는 경우 몇 가지 호환성 경고를 표시 될 수 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 제공 경고 소스 제어 플러그 인의 기능에 좌우 되며 자세한 다음과 같이 비활성화할 수 있습니다.  

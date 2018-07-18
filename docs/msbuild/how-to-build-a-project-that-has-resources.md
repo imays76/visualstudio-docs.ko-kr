@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569504"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>방법: 리소스를 사용하는 프로젝트 빌드
 프로젝트의 현지화된 버전을 빌드할 경우 모든 사용자 인터페이스 요소를 언어에 따라 다른 리소스 파일로 분리해야 합니다. 프로젝트에서 문자열만 사용할 경우 리소스 파일에는 텍스트 파일이 사용됩니다. 또는 .resx 파일을 리소스 파일로 사용할 수 있습니다.  

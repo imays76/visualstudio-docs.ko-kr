@@ -16,6 +16,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425753"
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>3단계: 대화형 REPL 창 사용
 

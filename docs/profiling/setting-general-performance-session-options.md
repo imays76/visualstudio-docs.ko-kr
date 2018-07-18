@@ -16,6 +16,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263562"
 ---
 # <a name="set-general-performance-session-options"></a>일반 성능 세션 옵션 설정
 

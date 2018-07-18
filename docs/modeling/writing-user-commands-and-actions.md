@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965179"
 ---
 # <a name="writing-user-commands-and-actions"></a>사용자 명령 및 작업 작성
 다이어그램에 명령을 추가하고 끌어서 놓기, 클릭, 두 번 클릭 이벤트와 같은 제스처에 응답하여 DSL을 사용자 지정할 수 있습니다.

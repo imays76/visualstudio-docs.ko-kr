@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132158"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>레거시 언어 서비스에 대 한 요약 정보
 사용자 중 하나는 식별자에 캐럿 배치를 선택 하는 경우 IntelliSense 요약 정보 원본에는 식별자에 대 한 정보를 표시 **요약 정보** 에서 **IntelliSense** 메뉴 또는 마우스를 보유 합니다. 커서 식별자입니다. 이렇게 하면 식별자에 대 한 정보에 표시 될 도구 설명 됩니다. 이 정보는 식별자 형식을 일반적으로 구성 됩니다. 디버그 엔진 활성화 되 면 현재 값이이 정보에 포함 될 수 있습니다. 디버그 엔진은 언어 서비스 식별자만 처리 하는 동안 식 값을 제공 합니다.  

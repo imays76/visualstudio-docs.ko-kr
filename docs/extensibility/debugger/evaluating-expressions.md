@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102794"
 ---
 # <a name="evaluating-expressions"></a>식 계산
 식은 자동, 조사식, 간략 한 조사식, 또는 직접 실행 창에서 전달 되는 문자열에서 만들어집니다. 식이 계산 되는 이름 및 유형의 변수 또는 인수 및 값을 포함 하는 인쇄 가능한 문자열을 생성 됩니다. 이 문자열은 해당 IDE 창에 표시 됩니다.  

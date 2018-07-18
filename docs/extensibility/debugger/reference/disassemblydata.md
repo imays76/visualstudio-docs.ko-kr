@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31619704"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 표시할 통합된 개발 환경 (IDE)에 대 한 하나의 디스어셈블리 명령에 설명 합니다.  

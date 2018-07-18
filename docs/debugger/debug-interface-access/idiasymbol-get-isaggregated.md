@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464705"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 데이터 기호는 집계 또는 컬렉션 기호의;의 일부 인지 여부를 지정 하는 플래그를 검색 합니다. 컴파일러는 별도 엔터티로 집계 된 기호를 처리 하지만 단일 큰 기호의 일부는 실제로 합니다.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137663"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 요소
 UsedCommand 요소와 다른 UsedCommands 그룹화 UsedCommands 요소를 그룹화합니다.  

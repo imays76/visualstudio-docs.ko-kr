@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477838"
 ---
 # <a name="graphics-event-list"></a>그래픽 이벤트 목록
 Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 게임 또는 앱의 프레임 렌더링 중 기록된 Direct3D 이벤트를 살펴봅니다.  

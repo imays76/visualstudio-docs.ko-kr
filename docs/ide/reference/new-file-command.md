@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704748"
 ---
 # <a name="new-file-command"></a>새 파일 명령
 새 파일을 만들고 엽니다. 파일은 기타 파일 폴더 아래에 나타납니다.

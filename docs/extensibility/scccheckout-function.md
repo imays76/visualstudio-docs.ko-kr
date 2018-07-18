@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137751"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 함수
 정규화 된 파일 이름의 목록을 지정 된 경우이 함수 확인 로컬 드라이브에 있습니다. 체크 아웃 되 고 모든 파일에 주석을 적용 됩니다. 주석 인수 수는 `null` 문자열입니다.  

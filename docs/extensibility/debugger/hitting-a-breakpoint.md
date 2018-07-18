@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109144"
 ---
 # <a name="hitting-a-breakpoint"></a>중단점
 다음 설명 디버그 엔진 (DE)을 실행 하거나 단계별로 실행 하는 동안 중단점에 도달 하면 프로세스.  

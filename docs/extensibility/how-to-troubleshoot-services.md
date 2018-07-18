@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128677"
 ---
 # <a name="how-to-troubleshoot-services"></a>방법: 서비스 문제 해결
 서비스 가져오기 하려고 할 때 발생할 수 있는 몇 가지 일반적인 문제가 있습니다.  

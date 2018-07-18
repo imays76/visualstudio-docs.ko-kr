@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473139"
 ---
 # <a name="edit-and-continue-dialog-box"></a>편집하며 계속하기 대화 상자
 (네이티브 전용) 디버깅 하는 동안 코드를 편집 하는 경우이 대화 상자가 나타납니다 및 **편집 하며 계속 하기** 코드 변경 내용을 적용할 수 있다고 인식 합니다. 자세한 내용은 참조 [편집 하며 계속 하기](../debugger/edit-and-continue.md)합니다.  

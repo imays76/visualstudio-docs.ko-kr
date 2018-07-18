@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566188"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>명령줄에서 ClickOnce 응용 프로그램 빌드
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], 통합된 개발 환경 (IDE)에서 만들어진 경우에 명령줄에서 프로젝트를 빌드할 수 있습니다. 사용 하 여 만든 프로젝트를 다시 작성할 수는 실제로 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 만 있는 다른 컴퓨터에는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 설치 합니다. 이 자동화 된 프로세스를 사용 하 여 빌드를 재현할 수 있습니다, 그리고 예를 들어 중앙의 빌드 랩 또는 사용 하 여 고급 스크립팅 기술을 자체 프로젝트의 범위를 벗어납니다.  

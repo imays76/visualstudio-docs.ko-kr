@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133374"
 ---
 # <a name="custom-colorable-items"></a>사용자 지정 색 항목
 언어 서비스의 일부로 사용자 지정 색 항목을 구현 하 여 키워드 및 주석 등의 색을 지정 하는 것에 대 한 형식의 목록을 재정의할 수 있습니다.  

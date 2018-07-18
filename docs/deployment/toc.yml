@@ -8,12 +8,12 @@
   items:
     - name: 배포 소개
       href: deploying-applications-services-and-components.md
-    - name: 로컬 폴더에 배포
-      href: quickstart-deploy-to-local-folder.md
+    - name: Azure App Service에 배포
+      href: quickstart-deploy-to-azure.md
     - name: 웹 사이트에 배포
       href: quickstart-deploy-to-a-web-site.md
-    - name: Azure에 배포
-      href: quickstart-deploy-to-azure.md
+    - name: 로컬 폴더에 배포
+      href: quickstart-deploy-to-local-folder.md
 - name: 자습서
   items:
     - name: .NET
@@ -34,10 +34,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: 게시 설정 가져오기 및 IIS에 배포
           href: tutorial-import-publish-settings-iis.md
+        - name: 웹 배포를 사용하여 IIS에 배포
+          href: deploy-iis-with-web-deploy.md
         - name: Git를 사용하여 Azure에 ASP.NET Core 연속 배포
           href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
-        - name: IIS에 ASP.NET 배포
-          href: /iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+        - name: Visual Studio Kubernetes 도구를 사용하여 Kubernetes에 게시
+          href: tutorial-kubernetes-tools.md
     - name: 네이티브
       items:
         - name: Visual C++에서 배포...

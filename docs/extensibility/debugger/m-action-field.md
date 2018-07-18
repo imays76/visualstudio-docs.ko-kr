@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109251"
 ---
 # <a name="maction-field"></a>m_action 필드
 실행할 코드를 나타내는 대리자는 <xref:System.Threading.Tasks.Task> 개체입니다.  

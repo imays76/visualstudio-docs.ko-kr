@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479957"
 ---
 # <a name="graphics-pixel-history"></a>그래픽 픽셀 기록
 Visual Studio Graphics Analyzer의 그래픽 픽셀 기록 창을 사용하면 게임 또는 앱의 프레임 중에 발생하는 Direct3D 이벤트가 특정 픽셀에 어떻게 영향을 주는지를 파악할 수 있습니다.  

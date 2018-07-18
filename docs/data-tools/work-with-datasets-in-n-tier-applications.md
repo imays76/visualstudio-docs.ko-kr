@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926117"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>N 계층 응용 프로그램에서 데이터 집합 작업
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919372"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: 투명한 메서드는 네이티브 코드를 호출해서는 안 됩니다.
 |||

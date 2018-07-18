@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475040"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>중단점이 적중될 때 대화 상자
 이 대화 상자는 중단점이 적중 될 때 발생 하는 동작을 사용자 지정할 수 있습니다.  

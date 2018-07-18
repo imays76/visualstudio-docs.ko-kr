@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126177"
 ---
 # <a name="sending-the-required-events"></a>필요한 이벤트 보내기
 필요한 이벤트를 보내는 데이 절차를 따르세요.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138056"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>프로젝트 항목의 속성이 유지
 소스 파일의 작성자와 같은 프로젝트 항목에 추가 하는 속성을 유지 하려는 경우. 이렇게 하려면 프로젝트 파일에 속성을 저장 합니다.

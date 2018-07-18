@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31117659"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 디버그 이벤트의 알림을 보냅니다.  

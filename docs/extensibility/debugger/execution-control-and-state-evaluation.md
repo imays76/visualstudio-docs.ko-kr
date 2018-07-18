@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098175"
 ---
 # <a name="execution-control-and-state-evaluation"></a>실행 제어 및 상태 평가
 응용 프로그램을 디버깅 해야 함수를 한 단계씩 실행, 중단점에서 중지 하 고 실행을 계속 등 실행 제어 기능을 구현 합니다. 자료를 디버깅 하는 visual Studio 디버거 구성 요소 사이 전송 하는 이벤트에 해당 실행 제어  

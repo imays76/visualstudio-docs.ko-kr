@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917165"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>연습: LinqToXmlDataBinding 예제
 이 연습에서는 LinqToXmlDataBinding 예제에 대해 설명하고 두 가지 기본 소스 파일인 L2DBForm.xaml과 L2DBForm.xaml.cs의 몇 가지 흥미로운 내용을 살펴봅니다.

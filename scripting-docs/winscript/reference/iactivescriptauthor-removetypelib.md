@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24645533"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
 엔진 네임 스페이스를 제작 하는 스크립트에서 형식 라이브러리를 제거 합니다.  

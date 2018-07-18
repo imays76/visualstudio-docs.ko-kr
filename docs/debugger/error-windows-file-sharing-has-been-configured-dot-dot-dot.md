@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472791"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>오류: ...Windows 파일 공유가 구성되었습니다.
 원격 컴퓨터에 다른 사용자 이름을 사용하여 연결하도록 Windows 파일 공유가 구성되었습니다. 이러한 구성은 원격 디버깅과 호환되지 않습니다.  

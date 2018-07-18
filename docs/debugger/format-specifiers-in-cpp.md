@@ -34,6 +34,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478124"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서의 c + +에서 형식 지정자
 형식 지정자를 사용하여 **조사식** 창에 값이 표시되는 형식을 변경할 수 있습니다.  
@@ -57,7 +58,7 @@ int main() {
 }  
 ```  
   
- 추가 `my_var1` 변수를 **조사식** 창 (디버깅 하는 동안 **디버그 > Windows > 조사식 > 조사식 1**), 표시를 16 진수로 설정 합니다 (에 **시청**창에서 변수를 마우스 오른쪽 단추로 클릭 하 고 선택 **16 진수 표시**). 이제는 조사식 창에서 변수의 값이 0x0065로 표시됩니다. 정수 대신 문자로 표현된 이 값을 보려면 이름 열에서 변수 이름 뒤에 문자 형식 지정자 **, c**를 추가합니다. 이제 **값** 열에 **101 'e'**가 표시됩니다.  
+ 추가 `my_var1` 변수를 **조사식** 창 (디버깅 하는 동안 **디버그 > Windows > 조사식 > 조사식 1**), 표시를 16 진수로 설정 합니다 (에 **시청**창에서 변수를 마우스 오른쪽 단추로 클릭 하 고 선택 **16 진수 표시**). 이제는 조사식 창에서 변수의 값이 0x0065로 표시됩니다. 정수 대신 문자로 표현된 이 값을 보려면 이름 열에서 변수 이름 뒤에 문자 형식 지정자 **, c**를 추가합니다. 이제 **값** 열에 **101 'e'** 가 표시됩니다.  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   

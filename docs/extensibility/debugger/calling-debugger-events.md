@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100029"
 ---
 # <a name="calling-debugger-events"></a>호출 디버거 이벤트
 디버깅 세션에 이벤트는 특정 순서로 발생 합니다.  

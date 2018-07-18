@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130687"
 ---
 # <a name="supporting-source-control"></a>소스 제어를 지원합니다.
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 파일 체크 아웃, 체크 인 및 프로젝트 또는 편집기에 대해 다른 소스 제어 작업을 지원합니다. 소스 제어 클라이언트도 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 와 같은 원본 제어 패키지와 상호 작용 하도록 설계 되었습니다 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], 보관, 버전 관리 및 동적으로 정의 된 파일 집합에 대 한 제어 기능도 제공 합니다.  

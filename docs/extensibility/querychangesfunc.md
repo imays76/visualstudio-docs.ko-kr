@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139811"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 사용 하는 콜백 함수는 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 작업을 파일 이름 컬렉션을 열거 하 고 각 파일의 상태를 확인 합니다.  

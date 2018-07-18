@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464760"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 지정 하는 플래그를 검색 여부는 [Compiland](../../debugger/debug-interface-access/compiland.md) 링커 스위치와 연결 된 [/LTCG (링크 타임 코드 생성)](/cpp/build/reference/ltcg-link-time-code-generation)는 전체 프로그램 최적화를 지원 합니다. 이 스위치는 관리 코드에만 적용 됩니다.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949895"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK에서는 사용자 지정 코드를 사용하여 생성된 디자이너의 배경 이미지를 설정할 수 있습니다.

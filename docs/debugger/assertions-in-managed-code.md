@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465410"
 ---
 # <a name="assertions-in-managed-code"></a>관리 코드에 어설션 사용
 어설션 또는 `Assert` 문은 `Assert` 문에 대한 인수로 지정하는 조건을 테스트합니다. 조건이 true로 평가되면 동작이 발생하지 않고, 조건이 false로 평가되면 어설션이 실패합니다. 디버그 빌드로 실행 중인 경우 프로그램 중단 모드가 시작됩니다.  

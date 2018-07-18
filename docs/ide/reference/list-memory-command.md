@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703421"
 ---
 # <a name="list-memory-command"></a>메모리 목록 표시 명령
 지정된 메모리 범위의 내용을 표시합니다.

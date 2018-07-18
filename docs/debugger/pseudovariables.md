@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926838"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 의사 변수
 의사 변수는 변수 창에서 특정 정보를 표시 하는 데 사용 되는 용어 또는 **간략 한 조사식** 대화 상자. 일반적인 변수와 같은 방식으로 의사 변수를 입력할 수 있습니다. 하지만 의사 변수는 변수가 아니며 프로그램에서 변수 이름에 해당되지 않습니다.  

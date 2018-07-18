@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c371f50accf52c3c2702c3f09770f0bbe9b49
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746210"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>방법: 빌드 이벤트 지정(Visual Basic)
 
@@ -128,7 +129,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 
 1.  프로젝트를 게시할 Windows 응용 프로그램을 만듭니다. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-2.  **새 프로젝트** 대화 상자의 **Visual Basic**에서 **Windows 클래식 바탕 화면** 및 **Windows Forms 앱** 템플릿을 차례로 선택합니다. 프로젝트 이름을 `VBWinApp`로 지정합니다.
+2.  **새 프로젝트** 대화 상자의 **Visual Basic**에서 **Windows 바탕 화면** 및 **Windows Forms 앱** 템플릿을 차례로 선택합니다. 프로젝트 이름을 `VBWinApp`로 지정합니다.
 3.  **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.
 
 4.  **프로젝트 디자이너**에서 **게시** 페이지로 이동하고 **게시 위치**를 *C:\TEMP*로 설정합니다.

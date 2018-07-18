@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106658"
 ---
 # <a name="control-of-execution"></a>실행 제어
 디버그 엔진 (DE) 일반적으로 보내는 다음 이벤트 중 하나가 마지막 시작 이벤트로:  

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7855ddd258faf6b5c7b4b7825a67171d0fce0818
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9964da1521852d942490c09b83135c62f6be3ed9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749501"
 ---
 # <a name="current-tab"></a>현재 탭
 **현재** 탭을 클릭하면 CPU 스레드 세그먼트가 선택된 경우 타임라인에서 현재 선택 지점과 가장 가까운 호출 스택(사용 가능한 경우)을 볼 수 있습니다.  이 경우, 선택 지점은 타임라인 위에 검은색 화살표 또는 캐럿으로 표시됩니다. 차단 세그먼트가 선택되어 있으면 이 세그먼트에는 실행 항목이 없었으므로 캐럿이 표시되지 않습니다. 하지만 세그먼트가 여전히 강조 표시되어 있고 호출 스택이 표시됩니다.  

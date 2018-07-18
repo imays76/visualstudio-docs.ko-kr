@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264549"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>방법: Office 문서에 Windows Forms 컨트롤 추가
   디자인 타임에 문서 수준 프로젝트에서 Microsoft Office Excel 및 Microsoft Office Word 문서에 Windows Forms 컨트롤을 추가할 수 있습니다. 런타임에 문서 수준 사용자 지정에서 및 VSTO 추가 기능에서 컨트롤을 추가할 수 있습니다. 예를 들어 사용자가 옵션 목록에서 선택할 수 있도록 워크시트에 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 컨트롤을 추가할 수 있습니다.  

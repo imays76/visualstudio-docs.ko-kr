@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147221"
 ---
 # <a name="walkthrough-highlighting-text"></a>연습: 텍스트를 강조 표시
 편집기 프레임 워크 MEF (Managed Extensibility) 구성 요소 부분을 만들어 다양 한 시각적 효과 추가할 수 있습니다. 이 연습에서는 텍스트 파일에서 현재 단어의 모든 위치를 강조 표시 하는 방법을 보여 줍니다. 단어가 텍스트 파일에 여러 번 발생 한 항목에 캐럿을 배치 하는 경우 발생할 때마다이 강조 표시 됩니다.  

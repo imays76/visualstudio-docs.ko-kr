@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572793"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 작업
 기본 매니페스트, `TargetZone` 및 `ExcludedPermissions` 매개 변수에서 응용 프로그램 신뢰를 생성합니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128722"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드를 주석 달기
 프로그래밍 언어에는 일반적으로 코드를 주석 처리 하거나 주석을 달 수 있는 방법을 제공 합니다. 주석을 코드에 대 한 추가 정보를 제공 하지만 컴파일 또는 해석 하는 동안 무시 하는 텍스트의 섹션입니다.  

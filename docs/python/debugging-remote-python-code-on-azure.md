@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031893"
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Azure에서 Python 코드 원격 디버깅
 

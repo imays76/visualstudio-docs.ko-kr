@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107883"
 ---
 # <a name="adding-a-tool-window"></a>도구 창을 추가합니다.
 이 연습에서는 도구 창을 만들고 다음과 같은 방법으로 Visual Studio로 통합 하는 방법에 설명 합니다.  

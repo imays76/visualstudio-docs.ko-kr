@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750336"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>자습서 3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
 **이전 단계: [보기 및 페이지 템플릿을 사용하여 Django 앱 만들기](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-이 자습서의 이전 단계에서는 자체 포함된 HTML의 단일 페이지로 최소 Django 앱을 만드는 방법을 학습했습니다. 그러나 최신 웹앱은 일반적으로 여러 페이지로 구성되며 CSS 및 JavaScript와 같은 공유 리소스와 파일을 사용하여 일관된 스타일 및 동작을 제공합니다.
+이 자습서의 이전 단계에서는 자체 포함된 HTML의 단일 페이지로 최소 Django 앱을 만드는 방법을 학습했습니다. 그러나 최신 웹앱은 일반적으로 여러 페이지로 구성되며 CSS 및 JavaScript 파일과 같은 공유 리소스를 사용하여 일관된 스타일과 동작을 제공합니다.
 
 이 단계에서는 다음 방법을 학습합니다.
 
@@ -40,8 +41,6 @@ Django 앱을 개발하는 경우 일반적으로 더 많은 Python, HTML, CSS �
 ![Visual Studio의 새 항목 추가 대화 상자](media/django/step03-add-new-item-dialog.png)
 
 템플릿을 사용하려면 원하는 템플릿을 선택하고 파일 이름을 지정한 후 **확인**을 선택합니다. 이런 방식으로 항목을 추가하면 파일이 Visual Studio 프로젝트에 자동으로 추가되고 소스 제어에 대한 변경 내용이 표시됩니다.
-
-또한 Visual Studio에서는 자주 사용하는 몇 가지 옵션을 **추가** 메뉴에 직접 추가할 수 있습니다. 예를 들어 Python 프로젝트에서 이름을 묻는 메시지를 표시하고 파일을 만드는 **HTML 페이지** 또는 **스타일시트** 명령이 **추가** 메뉴 아래에 표시될 수 있습니다.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>질문: Visual Studio에서는 제공할 항목 템플릿을 어떻게 알 수 있나요?
 
@@ -187,7 +186,7 @@ Django의 템플릿 시스템은 여러 템플릿에서 특정 요소를 다시 
 
 다음 단계에서는 상속을 보여줍니다.
 
-1. 앱의 `templates/HelloDjangoApp` 폴더에서 `layout.html`이라는 새 HTML 파일을 만들고(**추가** > **새 항목** 상황에 맞는 메뉴 또는 **추가** > **HTML 페이지** 사용) 아래의 콘텐츠에 붙여넣습니다. 참조 페이지에서 바꿔야 하는 “content”라는 블록이 이 템플릿에 포함되어 있음을 알 수 있습니다.
+1. 앱의 `templates/HelloDjangoApp` 폴더에서 `layout.html`이라는 새 HTML 파일을 만들고(**추가** > **새 항목** 상황에 맞는 메뉴 또는 **추가** > **HTML 페이지** 사용) 아래의 마크업으로 대체합니다. 참조 페이지에서 바꿔야 하는 “content”라는 블록이 이 템플릿에 포함되어 있음을 알 수 있습니다.
 
     ```html
     <!DOCTYPE html>

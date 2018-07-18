@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952040"
 ---
 # <a name="application-page-project-designer-c"></a>프로젝트 디자이너, 응용 프로그램 페이지(C#)
 

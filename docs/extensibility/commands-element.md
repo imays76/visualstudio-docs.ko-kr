@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108484"
 ---
 # <a name="commands-element"></a>Commands 요소
 VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 최대 5 개 하위 섹션을 다음과 같이 있을 수 있습니다: 메뉴, 그룹, 단추, 바로 가기 단축키 +, 및 비트맵입니다.  

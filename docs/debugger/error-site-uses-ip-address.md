@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470906"
 ---
 # <a name="error-site-uses-ip-address"></a>오류: 사이트에서 IP 주소를 사용합니다.
 이 오류는 디버거에서 IP 주소를 사용하는 웹 응용 프로그램에 자동으로 연결하려고 할 때 발생합니다. 변경 하는 경우이 발생 **웹 사이트 확인** 를 **특정 IP 주소를 사용 하 여** IIS에서 합니다.  

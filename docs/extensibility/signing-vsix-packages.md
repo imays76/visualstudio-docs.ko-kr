@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142294"
 ---
 # <a name="signing-vsix-packages"></a>VSIX 패키지 서명
 확장 프로그램 어셈블리는 Visual Studio에서 실행할 수 있지만 이렇게 하는 것이 좋습니다 전에 서명할 필요가 없습니다.  

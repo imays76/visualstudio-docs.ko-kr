@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099111"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 요소(Visual Studio 템플릿)
 템플릿을 사용 하 여 해당 어셈블리의 참조를 프로젝트에 추가 하는 어셈블리에 대 한 정보를 지정 합니다.  

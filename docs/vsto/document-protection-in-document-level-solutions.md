@@ -24,6 +24,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447871"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>문서 수준 솔루션의 문서 보호
   문서 수준 프로젝트에서 Microsoft Office Word 및 Microsoft Office Excel의 보호 기능을 사용할 수 있습니다. 이러한 기능 권한이 없는 사용자가 문서 보호 된 부분을 변경 하지 못하도록 차단 합니다.  

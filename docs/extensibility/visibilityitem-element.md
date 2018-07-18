@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143467"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 요소
 `VisibilityItem` 요소 명령 및 도구 모음 정적 표시 여부를 결정 합니다. 명령 또는 메뉴 및 관련된 명령 UI 컨텍스트는 모든 항목을 식별합니다. Visual Studio 명령, 메뉴 및 도구 모음 및 표시 여부를 정의 하는 Vspackage를 로드 하지 않고 검색 합니다. 사용 하 여 IDE는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 명령 UI 컨텍스트 활성 상태 인지 확인 하는 메서드.  

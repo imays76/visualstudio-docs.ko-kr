@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129337"
 ---
 # <a name="implementing-a-legacy-language-service"></a>레거시 언어 서비스를 구현합니다.
 구문 강조, 중괄호 일치 및 IntelliSense 완성 등을 지 원하는 다양 한 기능을 레거시 언어 서비스를 구현 하 관리 패키지 프레임 워크 (MPF)에서 클래스를 사용할 수 있습니다.  

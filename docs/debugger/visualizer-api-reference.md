@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476954"
 ---
 # <a name="visualizer-api-reference"></a>시각화 도우미 API 참조
 시각화 도우미 API는 Visual Studio 디버거용 시각화 도우미를 작성하려는 사용자를 위해 제공됩니다. 시각화 도우미는 Visual Studio 디버거 사용자 인터페이스의 기능을 확장하는 작은 응용 프로그램입니다. 시각화 도우미 수 표시 (및 필요에 따라 편집)를 설계 하는 특정 종류의 데이터 개체입니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979336"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 템플릿 디자이너
 

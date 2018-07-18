@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c51b981e7863db371d8e50ae13e48afbc7f270fc
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8a46a236e58887a86eb51bf44efde58fba8584e4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765543"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 .NET Framework 독립 실행형 응용 프로그램에 프로파일러를 연결하여 응용 프로그램 통계 수집
-이 항목은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 실행 중인 .NET Framework 독립 실행형(클라이언트) 응용 프로그램에 프로파일러를 연결하고 샘플링 방법을 사용하여 성능 통계를 수집하는 방법을 설명합니다.  
+이 문서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 실행 중인 .NET Framework 독립 실행형(클라이언트) 응용 프로그램에 프로파일러를 연결하고 샘플링 방법을 사용하여 성능 통계를 수집하는 방법을 설명합니다.  
   
 > [!NOTE]
 >  Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  

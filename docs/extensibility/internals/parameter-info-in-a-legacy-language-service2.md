@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134609"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>레거시 언어 서비스에 대 한 매개 변수 정보
 IntelliSense 매개 변수 정보는 다음 사용자가 매개 변수 목록 메서드 시그니처를 표시 하는 도구 설명이 메서드 매개 변수 목록에 대 한 문자 (일반적으로 여는 괄호)를 시작 합니다. 각 매개 변수를 입력 하 고 매개 변수 구분 기호 (쉼표)은 입력을 도구 설명 굵게 표시 된 다음 매개 변수를 표시 하도록 업데이트 됩니다.  

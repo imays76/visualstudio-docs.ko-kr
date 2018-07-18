@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097798"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>다중 인스턴스 도구 창 만들기
 여러 인스턴스를 동시에 열릴 수 있도록 도구 창을 프로그래밍할 수 있습니다. 기본적으로 도구 창을 열고 하나의 인스턴스만을 가질 수 있습니다.  

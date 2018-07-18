@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128750"
 ---
 # <a name="adding-project-and-project-item-templates"></a>프로젝트 및 프로젝트 항목 템플릿 추가
 표준을 사용 하 여 새 프로젝트 및 프로젝트 항목을 추가 하는 것에 대 한 지원을 제공 해야 사용자 고유의 프로젝트 형식을 만들 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합 개발 환경 (IDE) 대화 상자. 다음 항목에는 프로젝트와 프로젝트 항목을 추가 하기 위한 다양 한 기술을 설명 합니다.  

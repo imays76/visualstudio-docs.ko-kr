@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109690"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE에 의해 구현 되는 콜백 함수
 와 통합으로 최대한와 통합 된 최종 사용자 환경을 제공 하기 위해 완벽 한 통합된 개발 환경 (IDE) 소스 제어 플러그 인 사용할 수는 IDE에 의해 구현 되는 콜백 함수입니다. 플러그 인 이러한 함수는 소스 제어 작업; IDE에 정보를 전달 하는 동안 적절 한 시간에 호출할 수 있습니다. 그런 다음 IDE 해당 네이티브 UI에 포함 된 요소와이 정보를 표시할 수 있습니다. 사용자에 게이 시나리오는 플러그 인 사용 자체 UI 경우 보다 덜 조각난된 경험 합니다.  

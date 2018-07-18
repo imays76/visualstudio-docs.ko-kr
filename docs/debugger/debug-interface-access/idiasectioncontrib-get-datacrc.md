@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466301"
 ---
 # <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
 섹션에 있는 데이터의 순환 중복 검사 (CRC)를 검색합니다.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570478"
 ---
 # <a name="msbuild-reference"></a>MSBuild 참조
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]용 빌드 시스템입니다. 다음 링크를 통해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 참조 정보가 포함된 항목으로 이동할 수 있습니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122940"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 호출자에 게 고유 하 게 다른 모든 속성에서에서이 속성을 식별 더 이상 더 관심이 있는지를 나타내는이 속성과 연결 된 고유 ID를 제거 합니다.  

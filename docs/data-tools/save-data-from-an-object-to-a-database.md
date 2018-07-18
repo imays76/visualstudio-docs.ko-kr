@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924719"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>개체에서 데이터를 데이터베이스에 저장
 TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 여 개체를 데이터베이스에 데이터를 저장할 수 있습니다 (예를 들어 `TableAdapter.Insert`). 자세한 내용은 참조 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)합니다.

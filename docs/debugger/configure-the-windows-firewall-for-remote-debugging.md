@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465202"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>원격 디버깅을 위해 Windows 방화벽 구성
 이 항목에서는 다음 운영 체제를 실행하는 컴퓨터에서 원격 디버깅을 사용하도록 방화벽을 구성하는 방법을 설명합니다.  

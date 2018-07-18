@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477394"
 ---
 # <a name="vsperf"></a>VSPerf
 **VsPerf** 명령줄 도구를 사용하면 다음을 수행할 수 있습니다.  
@@ -25,16 +26,7 @@ ms.lasthandoff: 05/22/2018
   
  프로 파일링 옵션에 대한 자세한 내용은 [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
   
-##  <a name="BKMK_In_this_topic"></a> 항목 내용  
- 이 항목에서는 `vsperf.exe` 명령줄 도구와 함께 사용할 수 있는 옵션에 대해 설명합니다. 이 항목에는 다음과 같은 단원이 포함되어 있습니다.  
-  
- [UWP 앱만](#BKMK_windows_store_apps_only)  
-  
- [Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램 전용](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
-  
- [모든 응용 프로그램](#BKMK_All_applications)  
-  
-##  <a name="BKMK_windows_store_apps_only"></a> UWP 앱만  
+## <a name="uwp-apps-only"></a>UWP 앱만  
  이러한 옵션은 UWP 앱에만 적용됩니다.  
   
 |||  
@@ -45,7 +37,7 @@ ms.lasthandoff: 05/22/2018
 |**/noclr**|선택 사항입니다. CLR 데이터를 수집하지 않습니다.<br /><br /> /package 또는 /attach와 함께 사용해야 합니다.<br /><br /> 최적화 상태이며 관리되는 기호를 확인하지 않습니다.|  
 |**/listapps**|설치된 응용 프로그램 Name 및 PackageFullNames의 목록을 표시합니다.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램 전용  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램 전용  
  이러한 옵션은 UWP 앱에서 작동하지 않습니다.  
   
 |||  
@@ -54,7 +46,7 @@ ms.lasthandoff: 05/22/2018
 |**/args:{ExecutableArguments}**|**/launch** 대상을 전달할 명령줄 인수를 지정합니다.|  
 |**/console**|새 명령 창에서 **/launch** 대상을 실행합니다.|  
   
-##  <a name="BKMK_All_applications"></a> 모든 응용 프로그램  
+## <a name="all-applications"></a>모든 응용 프로그램  
  이러한 옵션은 모든 Windows 8 또는 Windows Server 2012 응용 프로그램에 적용됩니다.  
   
 |||  

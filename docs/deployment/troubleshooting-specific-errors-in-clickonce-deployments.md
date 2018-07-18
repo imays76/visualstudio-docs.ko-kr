@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564508"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
 이 항목에서는 배포할 때 발생할 수 있는 다음과 같은 일반적인 오류는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 각 문제를 해결 하는 단계를 제공 합니다.  

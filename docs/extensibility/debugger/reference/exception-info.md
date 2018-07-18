@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103421"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 예외 또는 디버깅 중인 프로그램에 의해 throw 되는 런타임 오류를 설명 합니다.  

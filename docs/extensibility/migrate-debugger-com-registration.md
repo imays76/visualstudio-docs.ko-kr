@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140448"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>COM 클래스를 등록 하는 64 비트 디버거 마이그레이션
 

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139265"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 요소(Visual Studio 템플릿)
 파일 또는 프로젝트에 추가할 디렉터리를 지정 합니다.  

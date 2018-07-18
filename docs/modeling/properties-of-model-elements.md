@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947718"
 ---
 # <a name="properties-of-model-elements"></a>모델 요소의 속성
 이 섹션에서에서 DSL 정의 다이어그램 또는 DSL 탐색기에서 요소를 선택 하면 속성 창에서 표시 되는 속성을 나열 합니다.

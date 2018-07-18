@@ -1,13 +1,13 @@
 ---
-title: "함수가 필요 합니다. | Microsoft Docs"
-ms.custom: 
+title: 함수가 필요 합니다. | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5002
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632953"
 ---
 # <a name="function-expected"></a>함수가 필요합니다.
 중 하나를 호출 하려고 하거나는 **함수 프로토타입** 되지 않은 개체에 대 한 메서드는 `Function` 개체 또는 하면 함수 호출 컨텍스트의 개체를 사용 합니다. 때문에 다음 코드에서이 오류를 생성 하는 예를 들어 **예제** 는 함수가 아닙니다.  

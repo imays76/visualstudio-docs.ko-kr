@@ -1,16 +1,16 @@
 ---
-title: "IDebugApplicationNodeEvents 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugApplicationNodeEvents 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplicationNodeEvents interface
 ms.assetid: 02e0bb17-84ce-458b-bae6-608a9899e535
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726573"
 ---
 # <a name="idebugapplicationnodeevents-interface"></a>IDebugApplicationNodeEvents 인터페이스
 에 대 한 이벤트 인터페이스를 제공는 `IDebugApplicationNode` 인터페이스입니다.  

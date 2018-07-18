@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562626"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 인터넷 정보 서비스 (IIS)를 사용 하 여 Windows Server에서 배포에는 Windows에서 인식 하지 못하는 파일 형식을 포함 하는 경우 해당 파일을 전송 하는 데 Microsoft Word 파일을 같은 IIS 거부 합니다 및 배포에 실패 합니다.  

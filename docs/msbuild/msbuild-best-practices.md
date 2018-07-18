@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571125"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 모범 사례
 MSBuild 스크립트를 작성할 때는 다음 모범 사례를 따르는 것이 좋습니다.  

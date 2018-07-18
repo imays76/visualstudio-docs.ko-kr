@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098994"
 ---
 # <a name="implementing-a-port-supplier"></a>포트 공급자 구현
 포트 공급자 세션 디버그 관리자 (SDM)에 요청에서 포트를 제공합니다. 포트 공급자 때나 새 장치를 지원 해야 합니다. DCOM이 아닌 컴퓨터에 디버깅할 때 구현 해야 합니다. 예를 들어 휴대 전화에 디버깅을 제공 하려면 (아마도 IR 또는 연결을 통해는 셀) 휴대 전화에 연결 하 고 휴대폰에서 실행 되는 프로그램 및 프로세스를 열거 하는 포트를 제공 하는 포트 공급자를 구현할 수 있습니다.  

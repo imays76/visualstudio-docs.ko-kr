@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099840"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>이벤트 원본 (Visual Studio SDK)
 두 가지 이벤트 소스가: 디버그 엔진 (DE) 및 세션 (SDM) 관리자를 디버그 합니다. DE에서 전송 되는 이벤트는 NULL이 아닌 엔진 있고은 SDM에서 전송 되는 이벤트는 NULL 엔진입니다.  

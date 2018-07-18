@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a143502c875acabca7b36bdd3070e5a441b842bd
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b32fc71efadbf319f3d713c3eaf4d86f382646a5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34476835"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio 제거
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/20/2018
 
 1. Visual Studio 설치 관리자를 닫습니다.
 2. 관리자 명령 프롬프트를 엽니다. 관리자 명령 프롬프트를 열려면 다음 단계를 따릅니다.
-   * **시작** 메뉴에서 **실행**을 클릭합니다([시작] + R).
+   * **시작** 메뉴를 클릭합니다.
    * **cmd**를 입력합니다.
    * **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.
 3. `InstallCleanup.exe` 유틸리티의 전체 경로를 입력하고 원하는 명령줄 스위치를 전달합니다. 기본적으로 유틸리티 경로는 다음과 같습니다.

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460009"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend(디버그 인터페이스 액세스 SDK)
 Friend 함수 및 Friend 클래스도 식별 됩니다 `SymTagFriend` 기호입니다. 프로필은 사용자 정의 형식 (Udt) 부모 자식 요소인 하며 포함 된 [idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) 속성입니다.  

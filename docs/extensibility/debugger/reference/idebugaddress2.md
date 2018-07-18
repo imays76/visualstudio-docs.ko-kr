@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100275"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 이 인터페이스를 제공 주소가 개체를 소유 하는 프로세스의 ID에 대 한 액세스는이 인터페이스에서 표시 됩니다.  

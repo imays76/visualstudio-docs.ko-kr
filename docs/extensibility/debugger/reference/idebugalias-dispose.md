@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099326"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 제거를 위해이 별칭을 표시합니다.  

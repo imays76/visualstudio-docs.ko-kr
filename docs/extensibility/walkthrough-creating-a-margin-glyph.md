@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142632"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>연습: 여백 문자 모양 만들기
 사용자 지정 편집기 확장을 사용 하 여 편집기의 여백과의 모양을 사용자 지정할 수 있습니다. 이 연습에서는 코드 주석에 "todo" 이라는 단어가 표시 될 때마다 표시기 여백에 사용자 지정 문자를 넣습니다.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479678"
 ---
 # <a name="historical-debugging"></a>기록 디버깅
 기록 디버깅은 IntelliTrace에서 수집된 정보에 의존하는 디버깅 모드입니다. 이 디버깅을 사용하면 응용 프로그램 실행 도중 앞이나 뒤로 이동하며 상태를 검사할 수 있습니다.  

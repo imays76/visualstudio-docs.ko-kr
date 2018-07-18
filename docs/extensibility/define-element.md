@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126964"
 ---
 # <a name="define-element"></a>요소를 정의 합니다.
 기호 이름 / 값 쌍을 정의합니다. 이 기호는 조건부 특성으로 평가할 수 있습니다. 자세한 내용은 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다. 참고 항목에서 [요소 기호](../extensibility/symbols-element.md)합니다.  

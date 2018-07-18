@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138774"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>연습: 사용자 지정 편집기 만들기
 VSPackage 프로젝트 템플릿으로 c + +에서 간단한 사용자 지정 편집기를 만들 수 있습니다.  VSPackage 프로젝트 템플릿으로 더 이상 C# 또는 Visual Basic 프로젝트를 지원합니다. 자세한 내용은 참조 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  

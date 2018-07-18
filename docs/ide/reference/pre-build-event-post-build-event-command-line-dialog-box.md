@@ -40,6 +40,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947975"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자
 편집 상자에서 직접 [빌드 이벤트 페이지, 프로젝트 디자이너(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)에 대한 빌드 전후 이벤트를 입력할 수 있습니다. 또는 사용 가능한 매크로 목록에서 빌드 전후 매크로를 선택할 수 있습니다.

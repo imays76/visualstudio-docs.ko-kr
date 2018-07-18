@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570361"
 ---
 # <a name="touch-task"></a>Touch 작업
 파일의 액세스 및 수정 시간을 설정합니다.  

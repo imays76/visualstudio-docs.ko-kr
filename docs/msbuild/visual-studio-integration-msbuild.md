@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575938"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
 Visual Studio는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 를 호스팅하여 관리되는 프로젝트를 로드하고 빌드합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 에서 프로젝트를 관리하므로 프로젝트가 다른 도구에서 작성되어 사용자 지정된 빌드 프로세스를 가지더라도 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 형식의 프로젝트는 대부분 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용될 수 있습니다.  

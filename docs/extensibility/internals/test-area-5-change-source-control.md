@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134360"
 ---
 # <a name="test-area-5-change-source-control"></a>테스트 영역 5: 소스 제어 변경
 이 소스 제어 플러그 인 테스트 기능은 통한 소스 제어 변경는 **소스 제어 변경** 명령입니다.  

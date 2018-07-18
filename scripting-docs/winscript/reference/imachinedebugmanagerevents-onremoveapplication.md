@@ -1,11 +1,11 @@
 ---
 title: IMachineDebugManagerEvents::onRemoveApplication | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IMachineDebugManagerEvents.onRemoveApplication
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IMachineDebugManagerEvents::onRemoveApplication
 ms.assetid: 3ba71bd8-fd69-4a41-99c6-c736c416f227
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728683"
 ---
 # <a name="imachinedebugmanagereventsonremoveapplication"></a>IMachineDebugManagerEvents::onRemoveApplication
 응용 프로그램 실행에서 제거 될 때 이벤트를 처리 응용 프로그램 목록입니다.  

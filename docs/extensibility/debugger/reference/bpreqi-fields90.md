@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104071"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
 중단점 요청에 대 한 정보를 검색할 수를 지정 하는 유효한 값을 열거 합니다. 이 열거형 확장는 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 열거 합니다.  

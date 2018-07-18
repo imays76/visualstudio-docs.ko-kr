@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475407"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>메시지 옵션 대화 상자, 출력 탭
 사용 하 여는 **출력** 탭의 목록에 각 메시지에서 데이터를 지정할 수 [메시지 뷰](../debugger/messages-view.md)합니다. 표시 하는 [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md), 선택 **로그 메시지** 에서 **Spy** 메뉴.  

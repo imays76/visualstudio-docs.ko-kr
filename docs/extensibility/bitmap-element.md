@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098110"
 ---
 # <a name="bitmap-element"></a>비트맵 요소
 비트맵을 정의합니다. 비트맵의 리소스에서 또는 파일에서 로드 됩니다.  

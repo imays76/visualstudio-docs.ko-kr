@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926981"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>혼합 권장 규칙 규칙 집합
 

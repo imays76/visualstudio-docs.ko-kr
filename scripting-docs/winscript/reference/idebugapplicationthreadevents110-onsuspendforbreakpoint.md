@@ -1,16 +1,16 @@
 ---
 title: IDebugApplicationThreadEvents110::OnSuspendForBreakPoint | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
 ms.assetid: 224245ac-2aa2-43ae-97ed-493afc3d0122
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725693"
 ---
 # <a name="idebugapplicationthreadevents110onsuspendforbreakpoint"></a>IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
 스레드 완전 하 게 일시 중단 된 중단점에 대 한 정상적인 실행 아직 다시 시작할 수 없는 결정 합니다.  

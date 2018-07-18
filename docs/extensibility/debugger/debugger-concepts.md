@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102683"
 ---
 # <a name="debugger-concepts"></a>디버거 개념
 Visual Studio 디버그 패키지를 빌드하려면 패키지 디자인에 사용 되는 아키텍처 개념을 숙지 해야 해야 합니다.  

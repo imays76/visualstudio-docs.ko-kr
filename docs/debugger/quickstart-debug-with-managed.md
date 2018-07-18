@@ -18,6 +18,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34476884"
 ---
 # <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용 하 여 관리 되는 코드를 사용 하 여 디버그
 

@@ -1,13 +1,13 @@
 ---
-title: "없습니다 지정 &#39;이 &#39; | Microsoft Docs"
-ms.custom: 
+title: 없습니다 지정 &#39;이 &#39; | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5000
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633163"
 ---
 # <a name="cannot-assign-to-39this39"></a>없습니다 지정 &#39;이 &#39;
 값을 할당 하려고 했습니다. **이**합니다. **이** 는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 키워드 중 하나를 참조입니다.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   에 할당 하려고 하지 마십시오 **이**합니다. 점 연산자를 사용 하 여 인스턴스화된 개체의 메서드나 속성에 액세스 하려면 (예: circle**.** radius)입니다.  
+-   에 할당 하려고 하지 마십시오 **이**합니다. 점 연산자를 사용 하 여 인스턴스화된 개체의 메서드나 속성에 액세스 하려면 (예: circle **.** radius)입니다.  
   
     > [!NOTE]
     >  사용자가 만든 변수 이름을 지정할 수 없습니다 **이**; 이기는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 예약어입니다.  

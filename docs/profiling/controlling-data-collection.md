@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262282"
 ---
 # <a name="control-data-collection"></a>데이터 수집 제어
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하면 성능 세션 중 프로파일링 데이터가 수집되는 시기를 제어하고 프로파일링되는 함수를 지정할 수 있습니다. 이 섹션에서는 **성능 탐색기** 및 **데이터 수집 제어** 창에서 데이터 수집을 시작하고 중지하는 방법 및 프로파일링 데이터가 수집되는 개체를 제한하는 방법을 설명합니다.  

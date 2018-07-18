@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31583166"
 ---
 # <a name="using-pylint-to-check-python-code"></a>PyLint를 사용하여 Python 코드 검사
 

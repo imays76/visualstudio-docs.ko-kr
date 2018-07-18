@@ -17,6 +17,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448820"
 ---
 # <a name="set-bookmarks-in-code"></a>코드에 책갈피 설정
 

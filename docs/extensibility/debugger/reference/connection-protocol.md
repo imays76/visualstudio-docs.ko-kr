@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110005"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 디버그 하는 서버와 디버그 패키지 (DE) 간의 통신에 사용 되는 프로토콜을 나타냅니다.  

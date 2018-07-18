@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108445"
 ---
 # <a name="addressing-dpi-issues"></a>DPI 문제 해결
 "고해상도" 화면 장치 증가 함에 제공 합니다. 이 화면에는 일반적으로 200 개가 넘는 픽셀 (ppi) 필요. 이러한 컴퓨터에서 응용 프로그램 사용 콘텐츠를 장치에 대 한 일반 보기로 거리에 있는 콘텐츠를 표시 하는 요구 사항에 맞게 확장할 수 있어야 합니다. 2014 년 현재 고밀도 디스플레이 대 한 기본 대상은 모바일 장치 (태블릿, 클램쉘 랩톱 및 휴대폰)를 계산 합니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138856"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 함수
 이 함수를 이전에 체크 아웃 된 파일 변경 내용을 저장 하 고 새 버전을 만드는 소스 제어 시스템을 확인 합니다. 이 함수는 작업 항목 및 체크 인 파일의 이름 배열을 수 함께 호출 되었습니다.  

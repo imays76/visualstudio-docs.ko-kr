@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949568"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>하나의 솔루션에 여러 DSL 포함
 여러 DSL이 함께 설치되도록 단일 솔루션의 일부분으로 패키지할 수 있습니다.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032072"
 ---
 # <a name="adding-search-to-a-tool-window"></a>도구 창으로 검색 추가
 를 작성 하거나 확장 프로그램에서 도구 창을 업데이트할 때 Visual Studio에서 다른 위치에 표시 되는 동일한 검색 기능을 추가할 수 있습니다. 이 기능에는 다음과 같은 기능이 포함 됩니다.  

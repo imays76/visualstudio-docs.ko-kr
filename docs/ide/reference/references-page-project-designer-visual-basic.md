@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950295"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>참조 페이지, 프로젝트 디자이너(Visual Basic)
 **프로젝트 디자이너**의 **참조** 페이지를 사용하여 프로젝트에서 참조, 웹 참조 및 가져온 네임스페이스를 관리합니다. 프로젝트에는 COM 구성 요소, XML 웹 서비스, .NET Framework 클래스 라이브러리나 어셈블리 또는 기타 클래스 라이브러리에 대한 참조가 포함될 수 있습니다. 참조 사용에 대한 자세한 내용은 [프로젝트의 참조 관리](../../ide/managing-references-in-a-project.md)를 참조하세요.

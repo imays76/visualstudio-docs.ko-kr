@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109632"
 ---
 # <a name="button-element"></a>Button 요소
 사용자와 상호 작용할 수 있는 요소를 정의 합니다. 다른 종류의 단추 수: 단추, MenuButton, 및 SplitDropDown 합니다.  

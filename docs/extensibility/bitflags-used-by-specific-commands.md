@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108788"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>특정 명령에서 사용 하는 비트
 단일 값에서 하나 이상의 비트를 설정 하 여 다양 한 소스 제어 플러그 인 API의 함수 동작을 수정할 수 있습니다. 이러한 값을 비트 라고 합니다. 소스 제어 플러그 인 API에서 사용 하는 다양 한 비트를 사용 하는 기능에 따라 그룹화 여기에서 자세히 나와 있습니다.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131274"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>선택 및 IDE에서 통화
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 선택을 사용 하 여 현재 선택한 개체에 대 한 사용자의 정보를 유지 관리 *컨텍스트*합니다. 선택 항목 컨텍스트 Vspackage 두 가지 방법으로 추적 하는 통화의 일부를 사용할 수 있습니다.  

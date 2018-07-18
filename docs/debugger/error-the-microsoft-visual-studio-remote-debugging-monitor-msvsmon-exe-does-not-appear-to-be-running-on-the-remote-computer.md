@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476067"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>오류: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.
 이 오류 메시지는 Visual Studio가 원격 컴퓨터에서 Visual Studio 원격 디버깅 모니터의 올바른 인스턴스를 찾을 수 없음을 의미합니다. 원격으로 디버깅을 수행하려면 Visual Studio 원격 디버깅 모니터를 설치해야 합니다. 다운로드 하 고 원격 디버거를 설정 하는 방법에 대 한 정보를 참조 하십시오. [원격 디버깅](../debugger/remote-debugging.md)합니다.  
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/18/2018
 ## <a name="more-help"></a>자세한 도움말  
  명령줄 스위치를 포함 하 여 더 많은 원격 디버거 도움말을 보려면 클릭 **도움말 > 사용량** 원격 디버거 창에 있습니다. 열이 없는 경우에 다음 줄을 복사 하 여 웹 페이지를 볼 수는 **파일 탐색기** 창. (바꾸면 \<Visual Studio 설치 디렉터리 > Visual Studio 설치의 위치를 사용 합니다.)  
   
- res: / /*\<Visual Studio 설치 디렉터리 >*\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
+ res: / /*\<Visual Studio 설치 디렉터리 >* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
   
 ## <a name="see-also"></a>참고 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)

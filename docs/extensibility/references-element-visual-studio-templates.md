@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136499"
 ---
 # <a name="references-element-visual-studio-templates"></a>References 요소(Visual Studio 템플릿)
 서식 파일 프로젝트에 추가 하는 어셈블리 참조를 그룹화 합니다.  

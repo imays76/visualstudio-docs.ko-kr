@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557673"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램의 기본 웹 페이지 사용자 지정
 ClickOnce 응용 프로그램 웹에 게시, 웹 페이지 자동으로 생성 되 고 응용 프로그램과 함께 게시 합니다. 기본 페이지에는 응용 프로그램 및 응용 프로그램을 설치, 필수 구성 요소를 설치 하거나 MSDN에서 도움말에 액세스 하는 링크의 이름을 포함 합니다.  

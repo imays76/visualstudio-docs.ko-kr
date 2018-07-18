@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135976"
 ---
 # <a name="exposing-types-to-visual-designers"></a>비주얼 디자이너 형식을 노출합니다.
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 비주얼 디자이너를 표시 하기 위해 디자인 타임에 클래스 및 형식 정의에 액세스할 수 있어야 합니다. 클래스는 미리 정의 된 집합이 (참조 및 해당 종속성)은 현재 프로젝트의 전체 종속성 집합을 포함 하는 어셈블리에서 로드 됩니다. 또한 액세스 클래스 및 사용자 지정 도구에서 생성 된 파일에 정의 된 형식에 대 한 비주얼 디자이너에 필요한 수 있습니다.  

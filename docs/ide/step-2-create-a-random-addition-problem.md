@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747869"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2단계: 난수 더하기 문제 만들기
 이 자습서의 2단계에서는 난수 기반 수학 문제를 추가하여 퀴즈를 좀 더 어렵게 만듭니다. 문제를 채우고 카운트다운 타이머를 시작하는 `StartTheQuiz()`라는 메서드도 추가합니다. 이 자습서의 뒷부분에서는 빼기, 곱하기 및 나누기 문제를 추가합니다.
@@ -52,14 +53,14 @@ ms.lasthandoff: 04/28/2018
      [!code-csharp[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]
      [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]
 
-5.  Random 개체의 <xref:System.Random.Next> 메서드를 사용하여 레이블에 난수를 표시하는 `StartTheQuiz()`라는 메서드를 추가합니다. `StartTheQuiz()`는 모든 문제를 채우고 타이머를 시작합니다. 주석을 추가하세요. 함수는 다음과 같습니다.
+5.  Random 개체의 <xref:System.Random.Next> 메서드를 사용하여 레이블에 난수를 표시하는 `StartTheQuiz()`라는 메서드를 추가합니다. `StartTheQuiz()`는 모든 문제를 채우고 타이머를 시작합니다. 주석을 추가하십시오. 함수는 다음과 같습니다.
 
      [!code-csharp[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]
      [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]
 
      코드에서 `randomizer` 다음에 점(.)을 입력하면 IntelliSense 창이 열리고 호출 가능한 Random 개체의 모든 메서드가 표시됩니다. 예로 들면 다음과 같이 IntelliSense는 `Next()` 메서드를 나열합니다.
 
-     ![Next 메서드](../ide/media/express_randomwhite.png "Express_RandomWhite") Next 메서드
+     ![Next 메서드](../ide/media/express_randomwhite.png) Next 메서드
 
      개체 뒤에 점을 입력하면 IntelliSense에 속성, 메서드, 이벤트 등 개체의 멤버 목록이 표시됩니다.
 
@@ -88,7 +89,7 @@ ms.lasthandoff: 04/28/2018
 
      다음 그림과 같이 난수 더하기 문제가 나타납니다.
 
-     ![임의의 덧셈 문제](../ide/media/express_additionproblem.png "Express_AdditionProblem") 임의의 덧셈 문제
+     ![임의의 덧셈 문제](../ide/media/express_additionproblem.png)임의의 덧셈 문제
 
      자습서의 다음 단계에서는 합계를 추가합니다.
 

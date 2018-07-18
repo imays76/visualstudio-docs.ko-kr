@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262371"
 ---
 # <a name="call-tree-view---sampling-data"></a>호출 트리 뷰 - 샘플링 데이터
 호출 트리 뷰에는 프로파일링 된 응용 프로그램에서 이동한 함수 실행 경로가 표시됩니다.  

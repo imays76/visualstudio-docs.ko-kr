@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473474"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>프로그램에서 단계별로 실행하는 경우 어떻게 포커스를 유지할 수 있습니까?
 ## <a name="description"></a>설명  

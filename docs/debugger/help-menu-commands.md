@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472016"
 ---
 # <a name="help-menu-commands"></a>도움말 메뉴 명령
 **도움말** 메뉴는 도움말 파일을 여는 명령을 제공 합니다.  

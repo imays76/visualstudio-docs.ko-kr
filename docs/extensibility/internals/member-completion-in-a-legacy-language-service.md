@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134034"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>레거시 언어 서비스에서 멤버 완성
 IntelliSense 멤버 완성 클래스, 구조체, 열거형 또는 네임 스페이스와 같은 특정 범위의 가능한 멤버 목록을 표시 하는 도구 설명입니다. 예를 들어 C#에서 "this" 뒤에 마침표, 사용자가 현재 범위에서 구조체 또는 클래스의 모든 구성원의 목록이 표시 됩니다 선택할 수 있는 목록에서.  

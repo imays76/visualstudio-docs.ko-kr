@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31462742"
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 비동기 (구조적된) 예외 처리 함수에 포함 되어 있는지 여부를 지정 하는 플래그를 검색 합니다.  

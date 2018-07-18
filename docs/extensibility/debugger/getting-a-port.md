@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102995"
 ---
 # <a name="getting-a-port"></a>포트 가져오기
 포트는 프로세스가 실행 될 컴퓨터에 대 한 연결을 나타냅니다. 해당 컴퓨터를 로컬 컴퓨터나 원격 컴퓨터를 수 있습니다 (있는 가능 실행 될 수는 Windows 기반 운영 체제; 참조 [포트](../../extensibility/debugger/ports.md) 자세한 정보에 대 한).  

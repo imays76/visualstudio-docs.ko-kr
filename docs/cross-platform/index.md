@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31060953"
 ---
 # <a name="mobile-development-with-c-documentation"></a>C++을 사용한 모바일 개발 설명서
 

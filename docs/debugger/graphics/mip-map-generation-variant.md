@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475724"
 ---
 # <a name="mip-map-generation-variant"></a>MIP 맵 생성 변형
 렌더링 대상이 아닌 질감에 대해 Mip 맵을 사용합니다.  

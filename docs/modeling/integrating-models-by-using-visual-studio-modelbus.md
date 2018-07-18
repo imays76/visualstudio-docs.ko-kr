@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954274"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus를 사용하여 모델 통합
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 모델로 다른 도구 및 모델 간의 링크를 만드는 방법을 제공 합니다. 예를 들어 (DSL) 도메인 특정 언어 모델 및 UML 모델을 연결할 수 있습니다. 통합 DSL 집합을 만들 수 있습니다.

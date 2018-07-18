@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127528"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 요소
 `IDSymbol` 요소 메뉴, 그룹 또는 명령 나타내는 guid: id 쌍의 ID를 포함 합니다. 부모에서 가져온 GUID `GuidSymbol` 요소입니다. `IDSymbol` 요소에는 `name` 특성에 포함 되어 있는 ID에 대 한 알기 쉬운 이름을 지정 하는 `value` 특성입니다.  

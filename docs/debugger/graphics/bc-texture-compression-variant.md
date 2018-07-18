@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474403"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 텍스처 압축 변형
 B8G8R8X8, B8G8R8A8 또는 R8G8B8A8의 변형인 픽셀 형식이 있는 질감에 대한 블록 압축을 사용하도록 설정합니다.  

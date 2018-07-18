@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptParseProcedureOld 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IActiveScriptParseProcedureOld 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptParseProcedureOld
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptParseProcedureOld interface
 ms.assetid: d94b391e-4c24-46da-a01f-2c134ca4f041
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724423"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>IActiveScriptParseProcedureOld 인터페이스
 스크립트에 추가 하는 절차에 대 한 소스 코드 텍스트를 수 있습니다. VBScript 같은 독립 제작 환경을 갖지 않는 해석 된 스크립팅 언어에 대 한 대체 메커니즘이 제공 (이외의 `IActiveScriptParse` 또는 `IPersist*`) 네임 스페이스에 프로시저 스크립트를 추가 하려면.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573091"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 작업
 생성된 특정 코드 조각에서 임시 코드 파일을 생성합니다. 파일을 삭제하지는 않습니다.  

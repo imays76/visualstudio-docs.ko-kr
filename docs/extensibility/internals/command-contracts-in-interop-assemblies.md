@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127382"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Interop 어셈블리에 있는 명령 계약
 통해 명령을 처리 하기 위한 기본 계약은 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스는 환경을 호출 하는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드를 확인 하는 명령을 사용할 수 있는지 여부를 고 지원 되는 경우, 해당 상태와 텍스트를 결정 하 합니다. 그런 다음 환경에서 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 명령을 실행 하는 메서드.  

@@ -7,6 +7,7 @@ ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/19/2018
+ms.locfileid: "29989215"
 ---
 # <a name="scripting-technologies"></a>스크립팅 기술
 

@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptParse::AddScriptlet | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptParse.AddScriptlet
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptParse_AddScriptlet
 ms.assetid: 824929f4-4dd3-473a-92d9-0b96acea2f14
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724653"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
 스크립트에 코드 스크립틀릿을 추가 합니다. 스크립트의 영구 상태는 호스트 문서와 얽혀 호스트는 스크립트를 복원 하는 환경에서이 메서드는 통하지 않고는 `IPersist*` 인터페이스입니다. 기본 예제는 내부 이벤트에 연결 될 HTML 문서에 포함 된 코드의 스크립틀릿을 허용 하는 HTML 스크립팅 언어 (예를 들어, ONCLICK="button1.text='Exit'").  

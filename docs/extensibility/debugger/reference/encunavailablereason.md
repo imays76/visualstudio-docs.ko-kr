@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101773"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` 이유를 나타내는 **편집 하며 계속 하기** 를 사용할 수 없습니다.  

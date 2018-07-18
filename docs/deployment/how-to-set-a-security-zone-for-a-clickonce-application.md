@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564550"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램의 보안 영역 설정
 ClickOnce 응용 프로그램에 대한 코드 액세스 보안 권한을 설정할 때에는 **프로젝트 디자이너** 의 **보안**페이지에서 기본 권한 집합으로 시작해야 합니다.  

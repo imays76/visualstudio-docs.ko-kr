@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923907"
 ---
 # <a name="accessibility-products-and-services-blend"></a>내게 필요한 옵션 제품 및 서비스(Blend)
 Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽게 만들기 위해 최선을 다하고 있습니다. 다음 섹션에서는 장애가 있는 사용자가 Microsoft Windows를 보다 쉽게 사용할 수 있도록 하는 기능, 제품 및 서비스에 대한 정보를 제공합니다.

@@ -1,14 +1,14 @@
 ---
-title: "SCRIPT_E_RECORDED 오류 코드 | Microsoft Docs"
-ms.custom: 
+title: SCRIPT_E_RECORDED 오류 코드 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 3908bb0b-db5d-4262-8d61-3aedc4c21de5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733953"
 ---
 # <a name="scripterecorded-error-code"></a>SCRIPT_E_RECORDED 오류 코드
 스크립트 엔진와 호스트 간에 오류가 전달 되었습니다. 호스트 오류 코드는 호출자에 게 전달 해야 합니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138225"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 함수
 이 함수는 일괄 처리의 소스 제어 작업을 완료 했습니다. 이러한 일괄 처리를 중첩할 수 있습니다.  

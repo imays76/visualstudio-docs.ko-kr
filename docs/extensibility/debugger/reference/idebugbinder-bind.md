@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100067"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 이 메서드는 메모리 내 컨텍스트에 또는 기호의 현재 값이 포함 된 개체를 가져옵니다.  

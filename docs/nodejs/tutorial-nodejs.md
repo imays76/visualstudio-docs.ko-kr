@@ -13,11 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c364c977ebd7f1160bd9265f2a0228bd2e514442
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765832"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 Express 앱 만들기
 Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자습서에서는 Node.js 웹 응용 프로그램을 만들고, 일부 코드를 추가하며, IDE의 일부 기능을 살펴보고, 앱을 실행합니다. 아직 Visual Studio를 설치하지 않은 경우 [여기](http://www.visualstudio.com)에서 평가판을 설치합니다.
@@ -26,17 +27,33 @@ Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * 일부 코드를 추가합니다.
-> * IntelliSense 사용
+> * IntelliSense를 사용하여 코드 편집
 > * 앱 실행
-> * 중단점 도달
+> * 디버거에서 중단점에 도달
+
+## <a name="before-you-begin"></a>시작하기 전에
+
+다음은 몇 가지 주요 개념을 소개하는 빠른 FAQ입니다.
+
+### <a name="what-is-nodejs"></a>Node.js란?
+
+Node.js는 JavaScript 서버 쪽을 실행하는 서버 쪽 JavaScript 런타임 환경입니다.
+
+### <a name="what-is-npm"></a>npm이란?
+
+npm는 Node.js에 대한 기본 패키지 관리자입니다. 패키지 관리자는 프로그래머가 Node.js 라이브러리의 소스 코드를 쉽게 게시 및 공유하게 하며, 라이브러리의 설치, 업데이트 및 제거를 간소화하도록 설계되었습니다.
+
+### <a name="what-is-express"></a>Express란?
+
+Express는 웹 응용 프로그램을 빌드하기 위해 Node.js에 대한 서버 프레임워크로 사용된 웹 응용 프로그램 프레임워크입니다. Express를 사용하면 Pug(이전의 Jade) 같은 UI를 만들기 위해 다양한 프런트 엔드 프레임 워크를 선택할 수 있습니다. Pug가 이 자습서에 사용됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
 * Node.js 개발 워크로드와 Visual Studio 2017이 설치되어 있어야 합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우 [여기](http://www.visualstudio.com)에서 평가판을 설치합니다.
+    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
-    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다(**파일** > **새로 만들기** > **프로젝트**를 선택합니다). Visual Studio 설치 관리자가 시작됩니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
 * Node.js 런타임을 설치해야 합니다.
 
@@ -44,32 +61,41 @@ Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자
 
     이 자습서는 Node.js 8.10.0를 사용하여 테스트했습니다.
 
-## <a name="create-a-project"></a>프로젝트 만들기
-먼저 Node.js 웹 응용 프로그램 프로젝트를 만듭니다.
+## <a name="create-a-new-nodejs-project"></a>새 Node.js 프로젝트 만들기
+
+Visual Studio는 *프로젝트*에서 단일 응용 프로그램에 대한 파일을 관리합니다. 프로젝트에는 소스 코드, 리소스 및 구성 파일이 포함됩니다.
+
+이 자습서에서는 Node.js 및 Express 앱에 대한 코드를 포함한 간단한 프로젝트부터 시작합니다.
 
 1. Visual Studio 2017을 엽니다.
 
-1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트...** 를 차례로 선택합니다.
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 후 **Node.js**를 선택합니다. 가운데 창에서 **기본 Azure Node.js Express 4 응용 프로그램**을 선택한 후 **확인**을 선택합니다.
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 후 **Node.js**를 선택합니다. 가운데 창에서 **기본 Azure Node.js Express 4 응용 프로그램**을 선택한 후, **확인**을 선택합니다.
 
-     **기본 Azure Node.js Express 4 응용 프로그램** 프로젝트 템플릿이 표시되지 않으면 먼저 **Node.js 개발** 워크로드를 설치해야 합니다.
+     **기본 Azure Node.js Express 4 응용 프로그램** 프로젝트 템플릿이 표시되지 않으면 먼저 **Node.js 개발** 워크로드를 설치해야 합니다(지침에 대한 필수 조건 참조).
 
-    Visual Studio가 새 솔루션을 만들고 프로젝트를 엽니다. *app.js* 프로젝트 파일이 편집기에 열립니다(왼쪽 창).
+    Visual Studio가 새 솔루션을 만들고 오른쪽 창에서 프로젝트를 엽니다. *app.js* 프로젝트 파일이 편집기에 열립니다(왼쪽 창).
 
-    - 굵게 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 파일 시스템에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다. 속성을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 프로젝트와 연결된 환경 변수와 속성을 설정할 수 있습니다. 프로젝트 파일이 Node.js 프로젝트 소스에 사용자 지정 변경을 하지 않으므로 다른 개발 도구와 라운드트립을 수행할 수 있습니다.
+    ![프로젝트 구조](../nodejs/media/tutorial-project-structure.png)
 
-    - 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
+    (1) **bold** 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 파일 시스템에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다. 속성을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 프로젝트와 연결된 환경 변수와 속성을 설정할 수 있습니다. 프로젝트 파일이 Node.js 프로젝트 소스에 사용자 지정 변경을 하지 않으므로 다른 개발 도구와 라운드트립을 수행할 수 있습니다.
 
-    - npm 노드에는 설치된 npm 패키지가 있으면 표시됩니다. npm 노드를 마우스 오른쪽 버튼으로 클릭하고 대화 상자를 사용하여 npm 패키지를 검색하고 설치할 수 있습니다.
+    (2) 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
 
-    - *app.js*와 같은 프로젝트 파일은 프로젝트 노드 아래 표시됩니다. *app.js*는 프로젝트 시작 파일입니다.
+    (3) npm 노드에는 설치된 모든 npm 패키지가 표시됩니다. 대화 상자를 사용하여 npm 패키지를 검색하고 설치하거나 *package.json*에서 설정 및 npm 노드에서 마우스 오른쪽 단추로 클릭 옵션을 사용하여 업데이트 패키지를 설치 및 업데이트하려면 Npm 노드를 마우스 오른쪽 단추로 클릭할 수 있습니다.
+
+    (4) *package.json*은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다.
+
+    (5) *app.js*와 같은 프로젝트 파일은 프로젝트 노드 아래 표시됩니다. *app.js*는 프로젝트 시작 파일이므로 **굵게** 표시됩니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **Node.js 시작 파일로 설정**을 선택하여 시작 파일을 설정할 수 있습니다.
 
 1. **npm** 노드를 열고 모든 필수 npm 패키지가 존재하는지 확인합니다.
 
-    무엇인가 누락된(느낌표 아이콘) 경우는 **npm** 노드를 마우스 오른쪽 버튼으로 클릭하고 **누락된 npm 패키지 설치**를 선택합니다.
+    패키지가 누락된(느낌표 아이콘) 경우는 **npm** 노드를 마우스 오른쪽 버튼으로 클릭하고 **누락된 npm 패키지 설치**를 선택합니다.
 
 ## <a name="add-some-code"></a>일부 코드를 추가합니다.
+
+응용 프로그램은 프런트 엔드 JavaScript 프레임워크에 대해 Pug를 사용합니다. Pug은 HTML로 컴파일되는 간단한 표시 코드를 사용합니다. (Pug은 *app.js*에서 뷰 엔진으로 설정됩니다. *app.js*에서 뷰 엔진을 설정하는 코드는 `app.set('view engine', 'pug');`입니다.)
 
 1. 솔루션 탐색기(오른쪽 창)에서 Views 폴더를 연 다음, *index.pug*를 엽니다.
 
@@ -95,7 +121,7 @@ Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-    앞의 코드는 제목 및 환영 메시지가 있는 HTML 페이지를 동적으로 생성하기 위해 변경 내용을 추가합니다. 페이지에는 단추를 누를 때마다 변경되는 이미지를 표시하는 코드도 포함됩니다.
+    앞의 코드는 제목 및 환영 메시지가 있는 HTML 페이지를 동적으로 생성하기 위해 사용됩니다. 페이지에는 단추를 누를 때마다 변경되는 이미지를 표시하는 코드도 포함됩니다.
 
 1. Routes 폴더에서 *index.js*를 엽니다.
 
@@ -122,15 +148,17 @@ Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자
     });
     ```
     
-    앞의 코드는 Express 라우터 개체를 사용하여 현재 페이지를 설정하고 페이지를 렌더링하여 제목 및 데이터 개체를 페이지에 전달합니다.
+    앞의 코드는 Express 라우터 개체를 사용하여 현재 페이지를 설정하고 페이지를 렌더링하여 제목 및 데이터 개체를 페이지에 전달합니다. *index.pug* 파일은 *index.js*가 실행될 때 로드될 페이지로 여기에 지정됩니다. *index.js*는 *app.js* 코드에서 기본 경로로 구성됩니다(표시되지 않음).
 
     Visual Studio의 여러 기능을 보여주기 위해 `res.render`가 포함된 코드 줄에 오류를 포함했습니다. 앱을 실행하려면 먼저 오류를 수정해야 합니다. 다음 섹션에서 이 오류를 해결합니다.
 
 ## <a name="use-intellisense"></a>IntelliSense 사용
 
+IntelliSense는 코드를 작성할 때 지원하는 Visual Studio 도구입니다.
+
 1. *index.js*에서 `res.render`을 포함한 코드 줄으로 이동합니다.
 
-1. `data` 문자열 뒤에 커서를 놓고 `: get`을 입력하면 IntelliSense가 `getData` 함수를 표시합니다. `getData`를 선택합니다.
+1. `data` 문자열 뒤에 커서를 놓고 `: get`을 입력하면 IntelliSense가 앞서 코드에서 정의된 `getData` 함수를 표시합니다. `getData`를 선택합니다.
 
     ![IntelliSense 사용](../nodejs/media/tutorial-nodejs-intellisense.png)
 
@@ -140,7 +168,7 @@ Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자
 
     이 메시지의 마지막 줄에 JavaScript 인터프리터가 쉼표(`,`)를 예상했다는 메시지가 나타납니다.
 
-1. **오류 목록** 탭을 클릭합니다.
+1. 아래쪽 창에서 **오류 목록** 탭을 클릭합니다.
 
     경고 및 설명이 파일 이름 및 줄 번호와 함께 표시됩니다.
 
@@ -148,7 +176,11 @@ Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자
 
 1. `"data"` 앞에 쉼표(`,`)를 추가하여 코드를 수정합니다.
 
+    수정되면 코드 줄은 다음과 같습니다. `res.render('index', { title: 'Express', "data": getData() });`
+
 ## <a name="set-a-breakpoint"></a>중단점 설정
+
+Visual Studio 디버거가 연결된 앱을 실행하겠습니다. 그 전에 중단점을 설정해야 합니다.
 
 1. *index.js*에서 다음 코드 줄 앞의 왼쪽 여백을 클릭하여 중단점을 설정합니다.
 

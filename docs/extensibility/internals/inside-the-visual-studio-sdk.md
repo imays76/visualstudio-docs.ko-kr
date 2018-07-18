@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134564"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK 기본 사항
 이 섹션에서는 Visual Studio 아키텍처, 구성 요소, 서비스, 스키마, 유틸리티 및 like를 포함 하 여 Visual Studio 확장에 대 한 자세한 정보를 제공 합니다.  

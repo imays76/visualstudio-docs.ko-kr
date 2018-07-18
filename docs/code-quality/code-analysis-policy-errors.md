@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922457"
 ---
 # <a name="code-analysis-policy-errors"></a>코드 분석 정책 오류
 체크 인 시에 코드 분석 정책이 충족 되지 않은 다음과 같은 오류가 발생 합니다.

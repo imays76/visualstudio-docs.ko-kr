@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31579851"
 ---
 # <a name="performance-rules-reference"></a>성능 규칙 참조
 프로파일링 도구의 성능 규칙은 응용 프로그램 성능에 대한 추가 경고 및 정보를 제공합니다. 성능 규칙은 Windows 및 프로세서 성능 카운터와 같은 출처에서 수집한 프로파일링 실행의 데이터를 분석합니다. [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 통합 개발 환경의 오류 출력 창에 규칙 메시지가 표시됩니다. 메시지는 다음 규칙 수준 중 하나로 나열됩니다.  

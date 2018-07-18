@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143987"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 함수
 이 함수는 소스 제어 플러그 인의 동작을 제어 하는 옵션을 설정 합니다.  

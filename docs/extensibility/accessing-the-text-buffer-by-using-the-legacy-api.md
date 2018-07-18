@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099475"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 텍스트 버퍼에 액세스
 텍스트는 텍스트 스트림 및 파일 유지 관리 담당 합니다. 버퍼를 읽거나 쓰게 다른 형식, 있지만 버퍼와 모든 일반 통신은 유니코드를 사용 하 여 수행 됩니다. 레거시 Api에서 텍스트 버퍼가 1 개 또는 2 차원 좌표계 버퍼에서 문자 위치를 식별 하기 사용할 수 있습니다.  

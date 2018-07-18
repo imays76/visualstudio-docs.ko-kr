@@ -22,6 +22,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447337"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;문서&gt; 요소 (Visual Studio에서 Office 개발)
   `document` 의 요소는 `vstov4` 네임 스페이스는 문서 수준 사용자 지정에 대 한 사용자 지정 관련 정보를 저장 합니다.  

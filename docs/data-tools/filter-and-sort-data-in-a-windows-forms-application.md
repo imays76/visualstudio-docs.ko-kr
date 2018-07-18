@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924971"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Windows Forms 응용 프로그램에서 데이터 필터링 및 정렬
 설정 하 여 데이터를 필터링 할는 <xref:System.Windows.Forms.BindingSource.Filter%2A> 속성을 원하는 레코드를 반환 하는 문자열 식입니다.

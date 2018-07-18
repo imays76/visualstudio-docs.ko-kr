@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924546"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 

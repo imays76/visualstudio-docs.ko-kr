@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139278"
 ---
 # <a name="private-galleries"></a>Private Galleries
 컨트롤, 템플릿 및 하도록 게시 하 여 개발 하는 도구를 공유할 수는 *전용 갤러리* 다음과 같이 조직에 대 한 인트라넷에:  

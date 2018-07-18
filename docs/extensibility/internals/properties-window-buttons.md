@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130705"
 ---
 # <a name="properties-window-buttons"></a>속성 창 단추
 개발 언어와 제품 종류에 따라 특정 단추에 대 한 도구 모음에서 기본적으로 표시 되는 **속성** 창. 모든 경우에는 **항목별**, **Alphabetized**, **속성**, 및 **속성 페이지** 단추가 표시 됩니다. Visual C# 및 Visual Basic의 경우에 **이벤트** 단추가 표시 됩니다. 특정 Visual c + + 프로젝트에는 **VC + + 메시지** 및 **VC 재정의** 단추가 표시 됩니다. 다른 프로젝트 형식에 대 한 추가 단추가 표시 될 수 있습니다. 단추에 대 한 자세한 내용은 **속성** 창 참조 [속성 창](../../ide/reference/properties-window.md)합니다.  

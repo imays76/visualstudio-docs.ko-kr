@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102982"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>단추의 다시 사용할 수 있는 그룹 만들기
 명령 그룹은 항상 메뉴 또는 도구 모음에 함께 표시 되는 명령 컬렉션입니다. 모든 명령 그룹.vsct 파일의 CommandPlacements 섹션에서 다른 부모 메뉴에 할당 하 여 다시 사용할 수 있습니다.  

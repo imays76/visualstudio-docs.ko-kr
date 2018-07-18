@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470633"
 ---
 # <a name="udtkind"></a>UdtKind
 다양 한 사용자 정의 형식 (UDT)에 대해 설명합니다.  

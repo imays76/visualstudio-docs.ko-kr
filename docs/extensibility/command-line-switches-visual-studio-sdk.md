@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098188"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>명령줄 스위치 (Visual Studio SDK)
 Devenv.exe, 실행 파일을 시작 하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) vspackage 개발에 특히 명령줄 스위치를 지원 합니다. Vspackage 수 또한 자신의 스위치에서 사용할 수 있도록 Devenv 명령줄입니다. 다음 항목에서는 IDE에서 명령줄 스위치를 사용 하는 방법에 대 한 정보를 제공 합니다.  

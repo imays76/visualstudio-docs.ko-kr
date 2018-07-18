@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134993"
 ---
 # <a name="implementing-a-legacy-language-service"></a>레거시 언어 서비스를 구현합니다.
 관리 패키지 프레임 워크 MPF ()를 사용 하는 언어 서비스를 구현 하려면에서 클래스를 파생 해야 합니다는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스와 다음과 같은 추상 메서드 및 속성을 구현 합니다.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30306723"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>클라우드에서 TensorFlow 모델 학습
 

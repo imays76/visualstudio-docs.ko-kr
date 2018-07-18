@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aee8da6d1faaa68bfc7b72d54760745f1566d219
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691188"
 ---
 # <a name="concurrency-visualizer-sdk"></a>동시성 시각화 도우미 SDK
 동시성 시각화 도우미에서 추가 정보를 표시하도록 동시성 시각화 도우미 SDK를 사용하여 소스 코드를 계측할 수 있습니다. 코드의 단계 및 이벤트와 추가 데이터를 연결할 수 있습니다. 이러한 추가 시각화를 *표식*이라고 합니다.  소개 연습에 대해서는 [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405)(동시성 시각화 도우미 SDK 소개)를 참조하세요.  
@@ -120,7 +121,7 @@ ms.lasthandoff: 05/14/2018
     CvWriteFlag(series, _T("Writing a flag"));  
     ```  
   
-## <a name="related-topics"></a>관련 항목  
+## <a name="see-also"></a>참고 항목  
   
 |제목|설명|  
 |-----------|-----------------|  

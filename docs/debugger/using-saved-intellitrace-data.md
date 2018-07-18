@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479600"
 ---
 # <a name="using-saved-intellitrace-data"></a>저장된 IntelliTrace 데이터 사용
 IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프로그램 실행의 특정 지점으로 이동합니다. 이 파일에는 응용 프로그램이 실행되는 동안 IntelliTrace가 기록하는 성능 이벤트, 예외, 스레드, 테스트 단계 및 기타 시스템 정보가 포함될 수 있습니다.  

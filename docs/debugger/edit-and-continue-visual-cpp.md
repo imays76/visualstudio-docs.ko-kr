@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474550"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 Visual C++ 프로젝트에서 편집하며 계속하기를 사용할 수 있습니다. 참조 [지원 코드 변경 내용 (c + +)](../debugger/supported-code-changes-cpp.md) 편집 하며 계속 하기의 제한 사항에 대 한 정보에 대 한 합니다.

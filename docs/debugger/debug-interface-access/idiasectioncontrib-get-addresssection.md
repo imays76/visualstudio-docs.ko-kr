@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459177"
 ---
 # <a name="idiasectioncontribgetaddresssection"></a>IDiaSectionContrib::get_addressSection
 섹션에 대 한 부분이 차지 하는 주소를 검색합니다.  

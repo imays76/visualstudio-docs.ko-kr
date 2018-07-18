@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099638"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 마찬가지로 덤프 하려면 프로그램의 상태 (예: 실행 중인 스레드, 스택 프레임 및 현재 명령의 주소)의 크기를 지정 합니다.  

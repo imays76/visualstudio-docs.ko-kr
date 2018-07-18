@@ -15,6 +15,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454677"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio에서 Xamarin.Forms를 사용한 앱 빌드 기본 사항 알아보기
 

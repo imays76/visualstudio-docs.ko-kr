@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467958"
 ---
 # <a name="crt-debug-library-use"></a>CRT 디버그 라이브러리 사용
 C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. 와 연결 해야 CRT 디버그 라이브러리 중 하나를 사용 하려면 [/debug](/cpp/build/reference/debug-generate-debug-info) 컴파일하여 **/MDd**, **/MTd**, 또는 **/LDd**합니다.  

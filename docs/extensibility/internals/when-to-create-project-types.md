@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140422"
 ---
 # <a name="when-to-create-project-types"></a>프로젝트 형식 만들어야 하는 경우
 사용자 지정 하기 위한 기반을 제공 하는 새 프로젝트 형식을 만드는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자에 대 한 합니다. 그러나 만들 새 프로젝트 형식을 필요는 없습니다 모든 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 지정 합니다. 새 프로젝트 형식을 시나리오에 필요한 지 여부를 결정 합니다. 다음 지침 도움이 됩니다.  

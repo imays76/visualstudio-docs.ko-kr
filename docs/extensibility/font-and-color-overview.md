@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130233"
 ---
 # <a name="font-and-color-overview"></a>글꼴 및 색 개요
 이 항목의 텍스트 글꼴 및 색 설정에 설명 된 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE). 또한 범주 및 표시 항목의 개념을 소개 하 고 Vspackage 및 코어 편집기 텍스트 특성을 사용 방법에 대해 설명 합니다.  

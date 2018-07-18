@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136831"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>런타임 시 프로젝트의 하위 형식을 확인 하는 중
 사용자 지정 프로젝트 하위 형식에 따라 달라 지는 VSPackage를 찾도록 하위 형식에 나타나지 않으면 안정적으로 실패할 수 있도록 하위 유형을 하는 논리를 포함 해야 합니다. 다음 절차에는 지정 된 하위의 존재 여부를 확인 하는 방법을 보여 줍니다.  

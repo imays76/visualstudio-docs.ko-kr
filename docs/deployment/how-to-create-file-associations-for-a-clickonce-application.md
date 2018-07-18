@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557764"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램에 대한 파일 연결 만들기
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 시작 될 때 사용자가 해당 형식의 파일을 열 수 있도록 응용 프로그램은 하나 이상의 파일 이름 확장명에 연결할 수 있습니다. 에 파일 이름 확장명 지원을 추가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 간단 합니다.  

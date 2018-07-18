@@ -17,6 +17,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548214"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>방법: XML 리터럴과 함께 XML 스키마 디자이너를 사용 합니다.
 

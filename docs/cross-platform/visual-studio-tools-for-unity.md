@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31063254"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 이 섹션에서는 Visual Studio를 Unity를 사용하여 게임을 빌드하기 위한 강력한 도구로 만드는 무료 Visual Studio 확장인 Visual Studio Tools for Unity에 대해 알아봅니다.

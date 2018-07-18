@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136464"
 ---
 # <a name="restrictions-on-string-lengths"></a>문자열 길이에 대 한 제한
 소스 제어 플러그 인 API는 다양 한 기능에 사용 되는 문자열의 길이 제한 합니다.  

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d3c83feb1a5fcb65940ee05344cb88cf08de74
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 153b979dffed48dbce355faae7125f2bd338fd08
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750443"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: 매우 높은 비율의 잠금 경합
 |||  

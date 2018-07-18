@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475537"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 디스어셈블리 코드 보기
 이 기능은 주소 수준 디버깅을 설정한 경우에 사용할 수는 **옵션** 대화 상자, **디버깅** 노드. 스크립트 또는 SQL 디버깅에는 사용할 수 없습니다.  

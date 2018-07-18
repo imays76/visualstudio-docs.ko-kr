@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134749"
 ---
 # <a name="automation-model-overview"></a>자동화 모델 개요
 자동화 모델 된 Visual Studio 추가 기능을 이나 확장을 작성할 수 있습니다 하는 개체의 집합으로 구성 됩니다. 추가 기능에 Visual Studio 환경을 조작 하 고 일반적인 작업을 자동화할 수 있는 응용 프로그램. Visual Studio 확장 Visual Studio의 사용자 지정 구성 요소를 만들 수도 있고 텍스트 편집기와 같은 표준 구성 요소 기능에 추가 됩니다.  

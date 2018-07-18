@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559441"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;제품&gt; 요소 (부트스트래퍼)
 `Product` 요소는 요소는 제품 파일 내의 최상위 XML 요소입니다.  

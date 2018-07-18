@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947939"
 ---
 # <a name="environment-options-dialog-box"></a>옵션 대화 상자, 환경
 **옵션** 대화 상자의 **환경** 폴더에 있는 페이지를 사용하여 IDE(통합 개발 환경)에서 특정 요소의 표시 및 작동 방법을 설정할 수 있습니다. 메뉴 모음의 **도구**, **옵션**을 선택한 다음 **환경**을 선택하여 환경 페이지에 액세스할 수 있습니다.

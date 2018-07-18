@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578733"
 ---
 # <a name="al-assembly-linker-task"></a>AL(어셈블리 링커) 작업
 AL 작업은 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]와 함께 배포되는 도구인 AL.exe를 래핑합니다. 이 어셈블리 링커 도구는 모듈 또는 리소스 파일에 해당하는 하나 이상의 파일에 있는 매니페스트로 어셈블리를 생성하는 데 사용됩니다. 컴파일러 및 개발 환경에서 이러한 기능을 이미 제공할 수 있으므로 이 작업을 직접 사용할 필요가 없는 경우가 많습니다. 어셈블리 링커는 혼합 언어 개발에서 생성될 수 있는 것과 같은 여러 구성 요소 파일에서 단일 어셈블리를 만들어야 하는 개발자에게 가장 유용합니다. 이 작업은 모듈을 단일 어셈블리 파일로 결합하지 않습니다. 결과 어셈블리가 올바르게 로드되려면 여전히 개별 모듈이 분산되어야 하고 사용 가능해야 하기 때문입니다. AL.exe에 대한 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)를 참조하세요.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466991"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 컴파일 프로세스의 다른 구성 요소 또는 특성 공급자가 기호 저장소에 배치 된 소스의 목록을 검색 합니다.  

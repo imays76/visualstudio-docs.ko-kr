@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967640"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>매개 변수 추가 및 인수 추가 대화 상자
 

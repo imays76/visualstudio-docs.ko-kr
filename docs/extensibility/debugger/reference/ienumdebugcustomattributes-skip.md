@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121211"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 열거형 시퀀스의 사용자 지정 특성의 지정 된 수를 건너뜁니다.  

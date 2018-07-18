@@ -19,6 +19,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31620455"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio의 네트워크 기반 설치 업데이트
 

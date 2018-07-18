@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456570"
 ---
 # <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 계산 및 상대 가상 주소 (RVA)의 사용을 사용 하지 않도록 설정 하거나 설정 하려면 클라이언트가 수 있습니다.  

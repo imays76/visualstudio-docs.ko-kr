@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704787"
 ---
 # <a name="add-existing-project-command"></a>기존 프로젝트 추가 명령
 현재 솔루션에 기존 프로젝트를 추가합니다.

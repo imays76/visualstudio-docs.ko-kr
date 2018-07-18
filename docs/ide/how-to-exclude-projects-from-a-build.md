@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949986"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>방법: 빌드에서 프로젝트 제외
 

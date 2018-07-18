@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264371"
 ---
 # <a name="cache-data"></a>데이터 캐시
   오프 라인으로 또는 Microsoft Office Word 또는 Microsoft Office Excel을 열지 않고 데이터를 액세스할 수 있도록 문서 수준 사용자 지정에서 데이터 개체를 캐시할 수 있습니다. 개체를 캐시 하려면 개체는 특정 요구 사항을 충족 하는 데이터 형식이 있어야 합니다. .NET Framework의 많은 일반 데이터 형식을 포함 하는 이러한 요구 사항을 충족 <xref:System.String>, <xref:System.Data.DataSet>, 및 <xref:System.Data.DataTable>합니다.  

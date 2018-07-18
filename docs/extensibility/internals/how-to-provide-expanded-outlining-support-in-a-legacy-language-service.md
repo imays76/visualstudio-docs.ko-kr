@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132151"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 개요를 지 원하는 확장
 해당 언어를 지원할에 대 한 개요 지원을 확장 하기 위한 다음과 같은 **정의 부분만** 명령입니다. 편집기 제어 개요 영역을 추가 하 고 클라이언트에서 제어 되는 개요 영역 수 있습니다.  

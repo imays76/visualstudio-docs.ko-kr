@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578811"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath 작업
 절대 경로 또는 참조를 상대 경로로 변환합니다.  

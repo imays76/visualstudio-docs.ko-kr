@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3295a5aee03badc52b980183e88f484e0d4bcc3a
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 31c76ba53e858d9eab41d6579950f47b16f8c9b8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37056357"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 작업
 
@@ -34,7 +35,7 @@ XML 파일로의 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.
   
 |매개 변수|설명|
 |---------------|-----------------|
-|`Namespaces`|선택적 `String` 매개 변수입니다.<br /><br /> XPath 쿼리 접두사에 대한 네임스페이스를 지정합니다.|
+|`Namespaces`|선택적 `String` 매개 변수입니다.<br /><br /> XPath 쿼리 접두사에 대한 네임스페이스를 지정합니다. `Namespaces`는 `Prefix` 및 `Uri` 특성을 포함한 `Namespace` 요소로 이루어진 XML 코드 조각입니다. `Prefix` 특성은 `Uri` 특성에 지정된 네임스페이스와 연결할 접두사를 지정합니다. 빈 `Prefix`를 사용하지 않습니다.|
 |`Query`|선택적 `String` 매개 변수입니다.<br /><br /> XPath 쿼리를 지정합니다.|
 |`Value`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 지정된 경로에 삽입할 값을 지정합니다.|
 |`XmlInputPath`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> XML 입력을 파일 경로로 지정합니다.|
@@ -42,6 +43,43 @@ XML 파일로의 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.
 ## <a name="remarks"></a>설명
 
  이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.
+
+## <a name="example"></a>예
+
+수정할 sample.xml은 다음과 같습니다.
+
+```
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" >
+<Identity Name="Sample.Product " Publisher="CN=1234" Version="1.0.0.0" />
+<mp:PhoneIdentity PhoneProductId="456" PhonePublisherId="0" />
+</Package>
+```
+
+이 예제에서 `/Package/mp:PhoneIdentity/PhonePublisherId`를 수정하려는 경우 다음을 사용합니다.
+
+```
+<Project>
+  <PropertyGroup>
+    <Namespace>
+        <Namespace Prefix="dn" Uri="http://schemas.microsoft.com/appx/manifest/foundation/windows10" />
+        <Namespace Prefix="mp" Uri="http://schemas.microsoft.com/appx/2014/phone/manifest" />
+        <Namespace Prefix="uap" Uri="http://schemas.microsoft.com/appx/manifest/uap/windows10" />
+    </Namespace>
+</PropertyGroup>
+
+<Target Name="Poke">
+  <XmlPoke
+    XmlInputPath="Sample.xml"
+    Value="MyId"
+    Query="/dn:Package/mp:PhoneIdentity/@PhoneProductId"
+    Namespaces="$(Namespace)"/>
+</Target>
+</Project>
+```
+
+여기에서 `dn`은 기본 네임스페이스의 인위적인 네임스페이스 접두사로 사용됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

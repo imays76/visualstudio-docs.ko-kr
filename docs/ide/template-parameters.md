@@ -17,6 +17,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32066536"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
 

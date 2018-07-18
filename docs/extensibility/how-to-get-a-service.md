@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132458"
 ---
 # <a name="how-to-get-a-service"></a>방법: 서비스 가져오기
 다른 기능에 액세스 하려면 Visual Studio 서비스를 가져올 해야 하는 경우가 많습니다. 일반적으로 Visual Studio 서비스 사용할 수 있는 하나 이상의 인터페이스를 제공 합니다. VSPackage에서 대부분의 서비스를 가져올 수 있습니다.  

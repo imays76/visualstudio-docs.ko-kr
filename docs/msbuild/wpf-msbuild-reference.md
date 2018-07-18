@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567969"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 참조
 WPF(Windows Presentation Foundation)는 이 섹션에서 설명되는 추가 빌드 지원을 사용하여 Microsoft Build Engine(MSBuild)을 확장합니다.  

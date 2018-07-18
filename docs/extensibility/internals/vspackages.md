@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142830"
 ---
 # <a name="vspackages"></a>VSPackages
 Vspackage는을 확장 하는 소프트웨어 모듈의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI 요소, 서비스, 프로젝트, 편집기 및 디자이너를 제공 하 여 통합된 개발 환경 (IDE).  

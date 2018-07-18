@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110070"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>연결 및 분리 하는 프로그램
 디버거를 연결 메서드 및 특정 속성을 가진 이벤트의 순서를 전송 해야 합니다.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863000"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>관리자 책임의 개요
 관리자는 조직에 대한 구독을 관리할 수 있습니다.  또한 관리자 역할에는 사용 약관에 따라 구독이 관리되도록 해야 할 책임이 있습니다. 이 문서에서는 관리자 역할의 책임, 혜택 및 제한 사항에 대해 간략하게 설명합니다.

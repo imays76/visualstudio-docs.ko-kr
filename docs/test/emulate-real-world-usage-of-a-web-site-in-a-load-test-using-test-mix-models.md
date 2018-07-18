@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977046"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>테스트 조합 모델을 사용하여 부하 테스트에서 웹 사이트 또는 응용 프로그램의 예상 실제 사용법 에뮬레이트
 

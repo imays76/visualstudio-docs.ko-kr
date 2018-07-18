@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140231"
 ---
 # <a name="test-area-6-delete"></a>테스트 영역 6: 삭제
 이 소스 제어 플러그 인 테스트 영역 삭제 동작에 설명 합니다.  

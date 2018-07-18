@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923329"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>방법: 밉 맵을 포함하는 질감 내보내기
 

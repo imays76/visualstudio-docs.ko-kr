@@ -1,9 +1,8 @@
 ---
-title: 전역 Windows Forms 및 Web Forms를 위한 문화권 관련 클래스 | Microsoft 문서
-ms.custom: ''
+title: 전역 Windows Forms 및 Web Forms을 위한 문화권 관련 클래스
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Windows Forms], classes
@@ -31,11 +30,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ce8f0e60ae45bfe290ae806d3963dbd30cbb48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8289b44359508d788b43fa155c6f91b58d304138
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917002"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>전역 Windows Forms 및 Web Forms을 위한 문화권 관련 클래스
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="using-the-culture-setting"></a>문화권 설정 사용
 
-앱 또는 **국가별 옵션** 제어판에 저장된 문화권 설정을 사용하여 런타임에 문화권 규칙을 확인하고 그에 따라 정보의 서식을 지정합니다. 문화권 설정에 대한 자세한 내용은 [방법: ASP.NET 웹 페이지 세계화를 위한 문화권 및 UI 문화권 설정](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)을 참조하세요. 문화권 설정에 따라 자동으로 정보의 서식을 지정하는 클래스를 *문화권 관련* 클래스라고 합니다. 일부 문화권 관련 메서드는 
+앱 또는 **국가별 옵션** 제어판에 저장된 문화권 설정을 사용하여 런타임에 문화권 규칙을 확인하고 그에 따라 정보의 서식을 지정합니다. 문화권 설정에 대한 자세한 내용은 [방법: ASP.NET 웹 페이지 세계화를 위한 문화권 및 UI 문화권 설정](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)을 참조하세요. 문화권 설정에 따라 자동으로 정보의 서식을 지정하는 클래스를 *문화권 관련* 클래스라고 합니다. 일부 문화권 관련 메서드는
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>
@@ -56,37 +56,37 @@ ms.lasthandoff: 04/16/2018
 예를 들어 다음 코드는 <xref:System.IFormattable.ToString%2A> 메서드를 사용하여 현재 문화권에 대한 통화 서식을 지정하는 방법을 보여 줍니다.
 
 ```vb
-' Put the Imports statements at the beginning of the code module  
-Imports System.Threading  
-Imports System.Globalization  
-' Display a number with the culture-specific currency formatting  
-Dim MyInt As Integer = 100  
+' Put the Imports statements at the beginning of the code module
+Imports System.Threading
+Imports System.Globalization
+' Display a number with the culture-specific currency formatting
+Dim MyInt As Integer = 100
 Console.WriteLine(MyInt.ToString("C", Thread.CurrentThread.CurrentCulture))
 ```
 
 ```csharp
-// Put the using statements at the beginning of the code module  
-using System.Threading;  
-using System.Globalization;  
-// Display a number with the culture-specific currency formatting  
-int myInt = 100;  
-Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));  
+// Put the using statements at the beginning of the code module
+using System.Threading;
+using System.Globalization;
+// Display a number with the culture-specific currency formatting
+int myInt = 100;
+Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
 ```
 
-문화권이 "fr-FR"로 설정된 경우 출력 창에 다음과 같이 표시됩니다.  
+문화권이 "fr-FR"로 설정된 경우 출력 창에 다음과 같이 표시됩니다.
 
 `100,00`
 
-문화권이 "en-US"로 설정된 경우 출력 창에 다음과 같이 표시됩니다.  
+문화권이 "en-US"로 설정된 경우 출력 창에 다음과 같이 표시됩니다.
 
 `$100.00`
 
 ## <a name="see-also"></a>참고 항목
 
-<xref:System.IFormattable.ToString%2A?displayProperty=fullName>   
-<xref:System.Globalization.DateTimeFormatInfo>   
-<xref:System.Globalization.NumberFormatInfo>   
-<xref:System.Globalization.Calendar>   
-<xref:System.Console.WriteLine%2A?displayProperty=fullName>   
-<xref:System.String.Format%2A?displayProperty=fullName>   
-[응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)
+- <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
+- <xref:System.Globalization.DateTimeFormatInfo>
+- <xref:System.Globalization.NumberFormatInfo>
+- <xref:System.Globalization.Calendar>
+- <xref:System.Console.WriteLine%2A?displayProperty=fullName>
+- <xref:System.String.Format%2A?displayProperty=fullName>
+- [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)

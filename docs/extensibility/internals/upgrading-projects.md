@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148248"
 ---
 # <a name="upgrading-projects"></a>프로젝트 업그레이드
 프로젝트 모델에의 한 버전에서 변경 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다음 해야 최신 버전에서 실행 될 수 있도록 프로젝트 및 솔루션 업그레이드할 수 있습니다. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 사용자의 프로젝트에 업그레이드 지원을 구현 하는 데 사용할 수 있는 인터페이스를 제공 합니다.  

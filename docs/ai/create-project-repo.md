@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708776"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Visual Studio에서 Python 코드의 리포지토리 복제
 

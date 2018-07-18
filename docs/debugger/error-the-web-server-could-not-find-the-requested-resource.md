@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454318"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>오류: 요청한 리소스를 웹 서버에서 찾지 못했습니다.
 보안 고려 사항 때문에 IIS에서 일반 오류를 반환했습니다.  

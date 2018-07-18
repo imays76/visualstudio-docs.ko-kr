@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099228"
 ---
 # <a name="bptype"></a>BP_TYPE
 중단점이 코드 위치에, 데이터 위치 또는 지정는 중단점의 또 다른 유형.  

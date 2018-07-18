@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565252"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt; 요소 (ClickOnce 응용 프로그램)
 되어야 하는 어셈블리를 식별 될 때 실행이 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램이 클라이언트 컴퓨터에서 실행 됩니다.  

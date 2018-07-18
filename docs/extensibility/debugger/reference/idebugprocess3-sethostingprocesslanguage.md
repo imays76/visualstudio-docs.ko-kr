@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115163"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 이 메서드는 프로세스에서 호스팅하는 언어를 설정 합니다. 이 언어 적절 한 식 계산기를 로드 하는 디버그 엔진 (DE)에 의해 사용 수 있습니다.  

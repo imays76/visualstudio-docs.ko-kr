@@ -22,6 +22,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454729"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>ClickOnce 배포 전략 선택
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 배포하는 전략에는 세 가지가 있으며, 주로 배포하는 응용 프로그램 종류에 따라 전략을 선택합니다. 세 가지 배포 전략은 다음과 같습니다.  

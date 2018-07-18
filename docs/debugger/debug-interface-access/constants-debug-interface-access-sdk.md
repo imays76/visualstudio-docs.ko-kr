@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458920"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>상수(디버그 인터페이스 액세스 SDK)
 DIA SDK를 통해 프로그램 디버그 데이터베이스 (PDB) 파일의 다양 한 섹션을 식별 하 이러한 문자열 상수를 사용할 수 있습니다.  

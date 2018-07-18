@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108471"
 ---
 # <a name="about-file-name-extensions"></a>파일 이름 확장명에 대 한
 버전과 연결 하는 VSPackage의 파일 확장명을 등록 하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 이 중요 한 경우 두 개 이상의 한 버전의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 컴퓨터에 설치 합니다.  

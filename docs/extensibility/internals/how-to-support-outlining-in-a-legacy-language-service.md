@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130247"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스의 개요 기능을 지원 합니다.
 개요 확장 또는 텍스트의 다른 영역을 축소 하는 데 사용 됩니다. 사용 되는 방식으로 개요 표시 다른 언어에서 다르게 정의할 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31462145"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
 섹션 메모 또는 비슷한 정보에 포함 되는지 여부를 나타내는 플래그를 검색 합니다.  

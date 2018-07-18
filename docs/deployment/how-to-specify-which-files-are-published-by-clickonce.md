@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561417"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>방법: ClickOnce를 통해 게시할 파일 지정
 게시 하는 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램, 모든 비 코드 파일이 프로젝트에 응용 프로그램과 함께 배포 됩니다. 경우에 따라 원하는 또는 특정 파일을 게시 해야 할 수 있습니다 또는 조건에 따라 특정 파일을 설치 하는 것이 좋습니다. Visual Studio를 파일을 제외 하 고 파일을 데이터 파일 또는 필수 구성 요소를 표시할 조건부 설치에 대 한 파일 그룹을 만들 수 있는 기능을 제공 합니다.  

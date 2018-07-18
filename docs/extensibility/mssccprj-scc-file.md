@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139353"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ 합니다. SCC 파일
 Visual Studio 솔루션이 나 프로젝트를 IDE를 사용 하는 소스 제어에 배치 되 면 IDE 문자열의 형태로 플러그 인 소스 제어에서 두 가지 주요 정보를 받습니다. 이러한 문자열에 "AuxPath" 및 "ProjName"는 불투명 IDE에는 있지만 사용 플러그 인에서 버전 제어에서 솔루션이 나 프로젝트를 찾으려고 합니다. IDE 일반적으로 이러한 문자열 처음으로 호출 하 여 가져옵니다는 [SccGetProjPath](../extensibility/sccgetprojpath-function.md), 이후 호출에 대 한 솔루션 또는 프로젝트 파일에 다음 저장 하 고는 [SccOpenProject](../extensibility/sccopenproject-function.md)합니다. 솔루션 및 프로젝트 파일에 포함 된, "AuxPath" 및 "ProjName" 문자열은 자동으로 업데이트 되지 사용자 분기를 분기 지점 또는 버전 제어에 있는 솔루션 및 프로젝트 파일을 복사 하는 경우. 사용자가 솔루션 및 프로젝트 파일 버전 제어에서의 올바른 위치를 가리키는지 확인 하기 위해 문자열 수동으로 업데이트 해야 합니다. 문자열은 불투명으로 제공, 때문에 것 항상 않을 지우기 업데이트 방법을 합니다.  

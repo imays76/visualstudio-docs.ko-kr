@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103655"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 두 문서 컨텍스트를 비교 하기 위한 조건을 지정 합니다.  

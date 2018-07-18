@@ -826,3 +826,5 @@
   items:
     - name: Visual Studio 디버거의 새로운 기능
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: 완전 초보자를 디버깅
+      href: debugging-absolute-beginners.md

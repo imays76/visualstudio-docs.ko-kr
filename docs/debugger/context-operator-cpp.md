@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466047"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>컨텍스트 연산자는 Visual Studio 디버거에서 (c + +)
 C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름 또는 식을 한정할 수 있습니다. 컨텍스트 연산자는 로컬 이름에 의해 숨겨진 외부 범위에서 이름을 지정하는 데 유용합니다.  

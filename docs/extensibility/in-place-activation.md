@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131635"
 ---
 # <a name="in-place-activation"></a>내부 활성화
 편집기 뷰에서 ActiveX 또는 기타 활성 컨트롤을 호스트하는 경우 바로 활성화 모델을 사용하여 ActiveX 컨트롤 또는 활성 문서 데이터 개체로 편집기 뷰를 구현해야 합니다.  

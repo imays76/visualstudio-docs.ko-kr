@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf719eec2b9695e6019cf78e16ec5018639a92ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751048"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>웹 성능 테스트에서 검색할 수 없는 동적 매개 변수 수정
 
@@ -36,13 +37,13 @@ ms.lasthandoff: 04/26/2018
 
 1.  DynamicParamaterSample이라는 새 ASP.NET 프로젝트를 만듭니다.
 
-     ![빈 ASP.NET 웹 응용 프로그램 프로젝트 만들기](../test/media/web_test_dynamicparameter_aspproject.png "Web_Test_DynamicParameter_ASPProject")
+     ![빈 ASP.NET 웹 응용 프로그램 프로젝트 만들기](../test/media/web_test_dynamicparameter_aspproject.png)
 
 2.  Querystring.aspx라는 웹 폼을 추가합니다.
 
 3.  디자인 뷰에서 HiddenField를 페이지로 끌어 놓고 (ID) 속성의 값을 HiddenFieldSessionID로 변경합니다.
 
-     ![HiddenField 추가](../test/media/web_test_dynamicparameter_hiddenfield.png "Web_Test_DynamicParameter_HiddenField")
+     ![HiddenField 추가](../test/media/web_test_dynamicparameter_hiddenfield.png)
 
 4.  Querystring 페이지에 대한 소스 보기로 변경하고 모의 세션 ID 동적 매개 변수를 생성하는 데 사용되는 다음의 강조 표시된 ASP.NET 및 JavaScript 코드를 추가합니다.
 
@@ -77,19 +78,19 @@ ms.lasthandoff: 04/26/2018
 
 7.  디자인 뷰에서 레이블을 페이지로 끈 다음 (ID) 속성의 값을 IndexLabel로 변경합니다.
 
-     ![웹 양식에 레이블 추가](../test/media/web_test_dynamicparameter_label.png "Web_Test_DynamicParameter_Label")
+     ![Web Form에 레이블 추가](../test/media/web_test_dynamicparameter_label.png)
 
 8.  하이퍼링크를 페이지로 끌어 해당 텍스트 속성에 대한 베일을 뒤로 변경합니다.
 
-     ![웹 양식에 하이퍼링크 추가](../test/media/web_test_dynamicparameter_hyperlink.png "Web_Test_DynamicParameter_Hyperlink")
+     ![Web Form에 하이퍼링크 추가](../test/media/web_test_dynamicparameter_hyperlink.png)
 
 9. NavigationURL 속성에 대한 (…)를 선택합니다.
 
-     ![NavigateURL 속성 편집](../test/media/web_test_dynamicparameter_hyperlink_navurl.png "Web_Test_DynamicParameter_Hyperlink_NavURL")
+     ![NavigateURL 속성 편집](../test/media/web_test_dynamicparameter_hyperlink_navurl.png)
 
      Querystring.aspx를 선택합니다.
 
-     ![Querystring.aspx가 될 URL 선택](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png "Web_Test_DynamicParameter_Hyperlink_NavURL2")
+     ![Querystring.aspx가 될 URL 선택](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png)
 
 10. ASPQuery.aspx.cs 파일을 열고, Page_Load 메서드에 다음에 강조 표시된 코드를 추가합니다.
 
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/26/2018
 
      두 번째 페이지에 대해 했던 것처럼 레이블을 폼으로 끌어 (ID) 속성을 IndexLabel로 설정하고 하이퍼링크를 폼으로 끌어 텍스트 속성을 Back, NavigationURL 속성을 Querystring.aspx로 설정합니다.
 
-     ![세 번째 웹 양식 추가 및 구성](../test/media/web_test_dynamicparameter_addwebform3.png "Web_Test_DynamicParameter_AddWebForm3")
+     ![세 번째 Web Form을 추가하고 구성](../test/media/web_test_dynamicparameter_addwebform3.png)
 
 12. JScriptQuery.aspx.cs 파일을 열고, Page_Load 메서드에 다음에 강조 표시된 코드를 추가합니다.
 
@@ -119,33 +120,33 @@ ms.lasthandoff: 04/26/2018
 
 14. 솔루션 탐색기에서 Querystring.aspx를 시작 페이지로 설정합니다.
 
-     ![Querystring.aspx에 시작 페이지 설정](../test/media/web_test_dynamicparameter_setstartpage.png "Web_Test_DynamicParameter_SetStartPage")
+     ![Querystring.aspx에 시작 페이지 설정](../test/media/web_test_dynamicparameter_setstartpage.png)
 
 15. Ctrl+F5를 눌러 브라우저에서 해당 웹 응용 프로그램을 실행합니다. URL을 복사합니다. 테스트를 기록할 때 필요합니다.
 
 16. 두 링크를 모두 시도합니다. "성공"이라는 메시지를 각각 표시해야 합니다. Dynamic querystring parameter was found."라는 메시지가 나타납니다.
 
-     ![웹앱 실행](../test/media/web_test_dynamicparameter_runapp.png "Web_Test_DynamicParameter_RunApp")
+     ![웹 앱 실행](../test/media/web_test_dynamicparameter_runapp.png)
 
-     ![성공&#33;](../test/media/web_test_dynamicparameter_runapp2.png "Web_Test_DynamicParameter_RunApp2")
+     ![성공&#33;](../test/media/web_test_dynamicparameter_runapp2.png)
 
 ## <a name="create-a-web-performance-test"></a>웹 성능 테스트를 만듭니다.
 
 1.  웹 성능 및 부하 테스트 프로젝트를 솔루션에 추가합니다.
 
-     ![웹 성능 및 부하 테스트 프로젝트 추가](../test/media/web_test_dynamicparameter_addtestproject.png "Web_Test_DynamicParameter_AddTestProject")
+     ![웹 성능 및 부하 테스트 프로젝트 추가](../test/media/web_test_dynamicparameter_addtestproject.png)
 
 2.  WebTest1.webtest를 DynamicParameterSampleApp.webtest로 이름을 바꿉니다.
 
-     ![웹 성능 테스트 이름 바꾸기](../test/media/web_test_dynamicparameter_renametest.png "Web_Test_DynamicParameter_RenameTest")
+     ![웹 성능 테스트 이름 바꾸기](../test/media/web_test_dynamicparameter_renametest.png)
 
 3.  테스트를 기록합니다.
 
-     ![웹 성능 테스트 기록](../test/media/web_test_dynamicparameter_recordtest.png "Web_Test_DynamicParameter_RecordTest")
+     ![웹 성능 테스트 기록](../test/media/web_test_dynamicparameter_recordtest.png)
 
 4.  테스트하는 웹 사이트에서 URL을 복사하여 브라우저에 붙여 넣습니다.
 
-     ![테스트할 웹 사이트에서 URL 붙여넣기](../test/media/web_test_dynamicparameter_recordtest2.png "Web_Test_DynamicParameter_RecordTest2")
+     ![테스트할 웹 사이트에서 URL 붙여넣기](../test/media/web_test_dynamicparameter_recordtest2.png)
 
 5.  웹 응용 프로그램을 통해 찾아봅니다. ASP.NET 링크, 뒤로 링크, javascript 링크, 뒤로 링크를 차례로 선택합니다.
 
@@ -159,15 +160,15 @@ ms.lasthandoff: 04/26/2018
 
      Querystring.aspx에 추출 규칙을 추가하려면 확인을 선택하고, ASPQuery 페이지에 바인딩합니다.
 
-     ![검색된 동적 매개 변수 승격](../test/media/web_test_dynamicparameter_promotedialog.png "Web_Test_DynamicParameter_PromoteDialog")
+     ![검색된 동적 매개 변수 승격](../test/media/web_test_dynamicparameter_promotedialog.png)
 
      추출 규칙은 Querystring.aspx에 대한 첫 번째 요청에 추가됩니다.
 
-     ![요청에 추가된 추출 규칙](../test/media/web_test_dynamicparameter_autoextractionrule.png "Web_Test_DynamicParameter_AutoExtractionRule")
+     ![요청에 추가된 추출 규칙](../test/media/web_test_dynamicparameter_autoextractionrule.png)
 
      ASPQuery.aspx에 대한 요청 트리에서 두 번째 요청을 확장하고 CustomQueryString의 값이 추출 규칙에 바인딩되어 있는지 확인합니다.
 
-     ![추출 규칙에 바인딩된 CustomQueryString](../test/media/web_test_dynamicparameter_autoextractionrule2.png "Web_Test_DynamicParameter_AutoExtractionRule2")
+     ![추출 규칙에 바인딩된 CustomQueryString](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
 8.  테스트를 저장합니다.
 
@@ -175,19 +176,19 @@ ms.lasthandoff: 04/26/2018
 
 1.  테스트를 실행합니다.
 
-     ![웹 성능 테스트 실행](../test/media/web_test_dynamicparameter_runtest.png "Web_Test_DynamicParameter_RunTest")
+     ![웹 성능 테스트 실행](../test/media/web_test_dynamicparameter_runtest.png)
 
 2.  JScriptQuery.aspx 페이지에 대한 네 번째 요청이 실패합니다. 웹 테스트로 이동합니다.
 
-     ![테스트 결과의 동적 매개 변수 오류](../test/media/web_test_dynamicparameter_runresults.png "Web_Test_DynamicParameter_RunResults")
+     ![테스트 결과의 동적 매개 변수 오류](../test/media/web_test_dynamicparameter_runresults.png)
 
      JScriptQuery.aspx 요청 노드는 편집기에서 강조 표시됩니다. 노드를 확장하고 CustomQueryString의 "1v0yhyiyr0raa2w4j4pwf5zl" 부분이 동적으로 표시됩니다.
 
-     ![CustomQueryString의 의심스러운 동적 매개 변수](../test/media/web_test_dynamicparameter_runresults2.png "Web_Test_DynamicParameter_RunResults2")
+     ![CustomQueryString의 의심스러운 동적 매개 변수](../test/media/web_test_dynamicparameter_runresults2.png)
 
 3.  웹 성능 테스트 결과 뷰어로 돌아가서 실패한 JScriptQuery.aspx 페이지를 선택합니다. 요청 탭을 누르고, 원시 데이터 표시 확인란의 선택이 취소되었는지 확인하고, 아래로 스크롤하여 CustomQueryString에서 빠른 찾기를 선택합니다.
 
-     ![빠른 찾기를 사용하여 동적 매개 변수 격리](../test/media/web_test_dynamicparameter_runresultsquckfind.png "Web_Test_DynamicParameter_RunResultsQuckFind")
+     ![빠른 찾기를 사용하여 동적 매개 변수 격리](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4.  테스트 편집기를 보면 JScriptQuery.aspx 요청의 CustomQueryString에 `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`의 값이 할당되었고 의심되는 동적 부분은 "1v0yhyiyr0raa2w4j4pwf5zl"이라는 것을 알 수 있습니다. 찾을 내용 드롭다운 목록에서 검색 문자열의 의심 가는 부분을 제거합니다. 그러면 검색 문자열은 "CustomQueryString=jScriptQueryString___"이 됩니다.
 
@@ -206,43 +207,43 @@ ms.lasthandoff: 04/26/2018
 
 5.  HiddenFieldSessionID에서 빠른 찾기를 사용해서 검색 확인란을 비우고 현재 요청을 선택합니다.
 
-     ![HiddenFieldSession에 빠른 찾기 사용](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png "Web_Test_DynamicParameter_RunResultsQuckFindHiddenSession")
+     ![HiddenFieldSession에 빠른 찾기 사용](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png)
 
      반환된 값은 원래 웹 성능 테스트 기록의 값과 동일한 문자열이 아닙니다. 이 테스트 실행의 경우 반환 값은 "5w4v3yrse4wa4axrafykqksq"이고 원래 기록에서는 값이 "1v0yhyiyr0raa2w4j4pwf5zl"입니다. 값이 원래 기록의 값과 일치하지 않기 때문에 오류가 생성된 것입니다.
 
 6.  원래 기록에서 동적 매개 변수를 해결해야 하므로 도구 모음에서 기록된 결과를 선택합니다.
 
-     ![기록된 결과 선택](../test/media/web_test_dynamicparameter_recordedresult.png "Web_Test_DynamicParameter_RecordedResult")
+     ![기록된 결과 선택](../test/media/web_test_dynamicparameter_recordedresult.png)
 
 7.  기록된 결과에서 테스트 실행 결과에 격리된 같은 Querystringrequest.aspx 요청에 있는 세 번째 요청을 선택합니다.
 
-     ![기록된 결과에서 동일한 요청 선택](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png "Web_Test_DynamicParameter_RecordedResultsSelectNode")
+     ![기록된 결과에서 동일한 요청 선택](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
      응답 탭을 선택하고 아래로 스크롤하여 이전에 격리한 "1v0yhyiyr0raa2w4j4pwf5zl"의 원래 동적 매개 변수 값을 선택하고 추출 규칙을 추가합니다.
 
-     ![동적 매개 변수에 대한 추출 규칙 추가](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png "Web_Test_DynamicParameter_RecordedResultAddExtractionRule")
+     ![동적 매개 변수에 대한 추출 규칙 추가](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png)
 
      새 추출 규칙이 Querystring.aspx 요청에 추가되고 'Param0' 값이 할당됩니다.
 
      매개 변수를 바인딩할 추출한 텍스트와 일치하는 항목이 있다는 메시지가 대화 상자에 표시되는 경우 예를 선택합니다.
 
-     ![추출 규칙 생성](../test/media/web_test_dynamicparameter_addextractiondialog.png "Web_Test_DynamicParameter_AddExtractionDialog")
+     ![추출 규칙 생성됨](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
 8.  다음 찾기를 선택합니다. 첫 번째 일치 항목은 변경해야 하는 항목이며 JScriptQuery 페이지의 CustomQueryString에 대한 매개 변수입니다.
 
-     ![매개 변수에 대한 텍스트를 찾아 바꾸기](../test/media/web_test_dynamicparameter_addextractionfindreplace.png "Web_Test_DynamicParameter_AddExtractionFindReplace")
+     ![매개 변수에 대한 텍스트를 찾아 바꾸기](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
 9. 바꾸기를 선택합니다.
 
-     ![텍스트를 매개 변수로 바꾸기](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png "Web_Test_DynamicParameter_AddExtractionFindReplace2")
+     ![텍스트를 매개 변수로 대체](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
      JScriptQuery.aspx 요청 아래의 QueryString 매개 변수는 새 컨텍스트 매개 변수인 CustomQueryString=jScriptQueryString___{{Param0}}을 사용하여 업데이트되어 있습니다.
 
-     ![querystring에 적용된 매개 변수](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png "Web_Test_DynamicParameter_AddExtractionFindReplace3")
+     ![querystring에 적용된 매개 변수](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
 10. 찾기 및 바꾸기 대화 상자를 닫습니다. 검색된 동적 매개 변수와 사용자가 연결한 검색되지 않은 동적 매개 변수 사이에서 요청 트리의 유사한 구조를 확인합니다.
 
-     ![검색되고 연관된 동적 매개 변수](../test/media/web_test_dynamicparameter_conclusion.png "Web_Test_DynamicParameter_Conclusion")
+     ![검색되고 연관된 동적 매개 변수](../test/media/web_test_dynamicparameter_conclusion.png)
 
 11. 테스트를 실행합니다. 이제 오류 없이 실행됩니다.
 

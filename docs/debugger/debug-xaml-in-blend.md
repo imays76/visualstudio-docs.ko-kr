@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477455"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend에서 XAML 디버그
 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)]의 도구를 사용하여 앱에서 XAML을 디버그할 수 있습니다. 프로젝트를 빌드할에 오류가 표시 됩니다는 **결과** 패널입니다. 오류를 두 번 클릭하여 오류와 관련된 태그를 찾습니다. 작업 공간이 더 필요한 경우 숨길 수 있습니다는 **결과** F12 키를 눌러 패널입니다.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/18/2018
   
 2.  프로젝트 형식 목록에서 클릭 **Windows 유니버설**합니다.  
   
-3.  프로젝트 템플릿 목록에서 클릭 **비어 있는 앱 (유니버설 Windows)**합니다.  
+3.  프로젝트 템플릿 목록에서 클릭 **비어 있는 앱 (유니버설 Windows)** 합니다.  
   
 4.  에 **이름** 텍스트 상자에서 `DebuggingSample`합니다.  
   

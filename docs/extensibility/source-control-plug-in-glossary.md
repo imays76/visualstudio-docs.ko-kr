@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139028"
 ---
 # <a name="source-control-plug-in-glossary"></a>소스 제어 플러그 인 용어집
 다음과 같은 유용한 용어 및 정의 소스 제어 플러그 인 SDK 설명서에 적용 됩니다.  

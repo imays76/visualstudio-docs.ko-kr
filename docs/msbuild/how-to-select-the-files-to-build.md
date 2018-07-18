@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570680"
 ---
 # <a name="how-to-select-the-files-to-build"></a>방법: 빌드할 파일 선택
 여러 파일이 포함된 프로젝트를 빌드할 경우 각 파일을 프로젝트 파일에 개별적으로 나열하거나, 와일드카드를 사용하여 모든 파일을 하나의 디렉터리 또는 중첩된 디렉터리 집합에 포함할 수 있습니다.  

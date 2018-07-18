@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143529"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 통합된 개발 환경 (IDE) 내에서 소스 제어 작업을 실행 하는 사용자, 소스 제어 플러그 인 작업에 오류 또는 상태 메시지를 전달 하기 위해 할 수 있습니다. 플러그 인이 목적을 위해 자체 메시지 상자를 표시할 수 있습니다. 그러나 더 원활한 통합에 대 한 플러그 인을 전달할 수 문자열 IDE, 상태 정보를 표시 하는 기본 방법에서 표시 합니다. 이 메커니즘은는 `LPTEXTOUTPROC` 함수 포인터입니다. IDE 오류 및 상태를 표시 하기 위한 (아래에서 자세히 설명)이이 함수를 구현 합니다.  

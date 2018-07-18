@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133538"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션
 

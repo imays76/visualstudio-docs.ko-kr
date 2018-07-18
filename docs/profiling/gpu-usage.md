@@ -14,6 +14,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575561"
 ---
 # <a name="gpu-usage"></a>GPU 사용량
 Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 Direct3D 앱의 개략적인 하드웨어 사용률을 더 잘 이해할 수 있습니다. 앱의 성능이 CPU에 의존하는지 아니면 GPU에 더 의존하는지를 확인하고 플랫폼 하드웨어를 더 효율적으로 사용할 수 있는 방법에 대해 통찰력을 얻을 수 있습니다. GPU 사용량 도구는 Direct3D 12, Direct3D 11 및 Direct3D 10을 사용하는 앱을 지원하며 Direct2D 또는 OpenGL과 같은 다른 그래픽 API는 지원하지 않습니다.  

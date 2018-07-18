@@ -1,11 +1,11 @@
 ---
 title: IDebugApplication::DebugOutput | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplication.DebugOutput
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplication::DebugOutput
 ms.assetid: 6c02939c-3c2d-474a-ab15-49a37e22b4a7
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725463"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
 디버거 통합된 개발 환경 (IDE)에서 표시할에 지정 된 문자열로 하면 됩니다.  

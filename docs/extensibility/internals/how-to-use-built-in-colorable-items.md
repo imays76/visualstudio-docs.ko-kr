@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129685"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>방법: 기본 제공 색 항목 사용
 기본 제공 색 항목을 사용 하기 전에 하면 먼저 알려야 통합된 개발 환경 (IDE)에 있는 경우 사용자 고유의 사용자 지정 색 항목을 제공 하지 않는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 개체입니다. 언어 서비스에 대 한 레지스트리 항목을 설정 하 여이 작업을 수행 합니다.  

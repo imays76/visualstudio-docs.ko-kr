@@ -1,11 +1,11 @@
 ---
 title: IDebugExtendedProperty::GetExtendedPropertyInfo | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugExtendedProperty.GetExtendedPropertyInfo
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugExtendedProperty::GetExtendedPropertyInfo
 ms.assetid: 56edf538-5082-4653-82b6-e6640d6f61ba
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727083"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
 보다 단순한 보다 더 많은 정보는 확장된 속성에 대 한 확장된 정보 인출 `IDebugProperty`합니다.  

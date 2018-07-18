@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140074"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 언어 서비스 컨텍스트를 제공 합니다.
 사용 하 여 사용자 컨텍스트를 제공 하는 언어 서비스에 대 한 다음과 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 코어 편집기: 텍스트 표식 컨텍스트를 제공 하거나 모든 사용자 컨텍스트를 제공 합니다. 각각의 차이점 여기에서 설명 합니다.  

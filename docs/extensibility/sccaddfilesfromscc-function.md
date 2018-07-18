@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137861"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 함수
 이 함수는 현재 열려 있는 프로젝트를 소스 제어에서 파일 목록을 추가 합니다.  

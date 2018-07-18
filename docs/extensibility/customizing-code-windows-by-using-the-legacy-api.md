@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109966"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 코드 창을 사용자 지정
 코드 창에는 지 원하는 하나 이상의 텍스트 뷰 문서 창 개체입니다. 코드 창의 기능 관련 된 언어 서비스에 따라 달라 집니다. (Mdi 다중) 다중 문서 인터페이스 모드로 코드 MDI 자식 프레임입니다.  

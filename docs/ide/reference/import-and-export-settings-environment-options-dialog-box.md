@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942528"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 설정 가져오기 및 내보내기
 

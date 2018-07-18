@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577537"
 ---
 # <a name="msbuild-items"></a>MSBuild 항목
 MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파일을 나타냅니다. 항목은 해당 요소 이름에 따라 항목 종류로 그룹화됩니다. 항목 종류는 작업의 매개 변수로 사용할 수 있는 명명된 항목 목록입니다. 작업은 항목 값을 사용하여 빌드 프로세스의 단계를 수행합니다.  

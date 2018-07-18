@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459677"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 프로그램 소스에 식을 보다는 문의 시작 부분이 줄 정보를 설명 한다는 사실을 나타내는 플래그를 검색 합니다.  

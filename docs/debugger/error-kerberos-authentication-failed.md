@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474218"
 ---
 # <a name="error-kerberos-authentication-failed"></a>오류: Kerberos 인증에 실패했습니다.
 원격 디버깅을 시작할 때 다음 오류 메시지가 나타날 수 있습니다.  

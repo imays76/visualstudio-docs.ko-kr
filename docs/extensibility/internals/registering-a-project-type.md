@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134635"
 ---
 # <a name="registering-a-project-type"></a>프로젝트 형식 등록
 새 프로젝트 형식을 만들 수 있도록 하는 레지스트리 항목 만들어야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인식 하 고 프로젝트 유형으로 동작 합니다. 일반적으로 레지스트리 스크립트 (.rgs) 파일을 사용 하 여 이러한 레지스트리 항목을 만듭니다.  

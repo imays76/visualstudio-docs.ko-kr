@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108533"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 이 인터페이스는 프로세스에서 실행 중인 서버에 대 한 정보에 액세스할 수 있습니다.  

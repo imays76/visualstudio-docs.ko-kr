@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567901"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 모든 추적을 중지하고 추적 세션에 사용된 메모리를 해제합니다.  

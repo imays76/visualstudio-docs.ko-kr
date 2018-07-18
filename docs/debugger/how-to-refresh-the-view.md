@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480087"
 ---
 # <a name="how-to-refresh-the-view"></a>방법: 뷰 새로 고침
 Spy + + 시스템 테이블의 "스냅숏" 하 고이 정보에 따라 보기를 새로 고칩니다. 주기적으로 시스템 뷰를 새로 고치는 것입니다. Spy + + 보기를 열고 뷰가 새로 고쳐지지를 설정한 경우 프로세스, 스레드 및 나중에 만들어진 windows 되지 표시 됩니다. 또한 더 이상 존재 하는 항목을 볼 수 없습니다. **새로 고침** 메시지 뷰를 제외한 모든 보기에 사용할 수 있는 명령입니다.  

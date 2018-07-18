@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140325"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 요소(Visual Studio 템플릿)
 중 하나에 표시 된 대로 동일한 범주에 다른 템플릿 간에 템플릿을 정렬 하는 데 사용 되는 값을 지정 된 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.  

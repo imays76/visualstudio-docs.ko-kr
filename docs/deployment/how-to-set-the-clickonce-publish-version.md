@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558336"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>방법: ClickOnce 게시 버전 설정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` 속성 게시 하려는 응용 프로그램 업데이트로 간주할지 여부를 결정 합니다. 각 시간 버전 번호가 증가, 응용 프로그램이 업데이트로 게시 됩니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31622057"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>지시 파일에서 설정을 정의하는 방법
 

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765391"
 ---
 # <a name="how-to-choose-collection-methods"></a>방법: 수집 방법 선택
 
@@ -52,7 +53,7 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가
 
 1. **성능 탐색기**에서 성능 세션을 선택합니다.
 
-     성능 세션 파일 이름의 확장명은 .psess입니다.
+     성능 세션 파일 이름의 확장명은 .*psess*입니다.
 
 2. 성능 세션을 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다.
 

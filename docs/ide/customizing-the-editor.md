@@ -18,6 +18,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446146"
 ---
 # <a name="customize-the-editor"></a>편집기 사용자 지정
 

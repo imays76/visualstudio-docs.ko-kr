@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576835"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 작업
 COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [RegisterAssembly 작업](../msbuild/registerassembly-task.md)의 역작업을 수행합니다.  

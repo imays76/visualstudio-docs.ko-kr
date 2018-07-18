@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569689"
 ---
 # <a name="exec-task"></a>Exec 작업
 지정된 인수를 사용하여 지정한 프로그램 또는 명령을 실행합니다.  

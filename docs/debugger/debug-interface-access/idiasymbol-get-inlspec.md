@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468959"
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
 이 함수는 함수를 인라인으로 표시 여부를 나타내는 플래그를 가져옵니다 (중 하나를 사용 하는 [인라인, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) 특성).  

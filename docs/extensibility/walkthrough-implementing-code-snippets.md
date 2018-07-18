@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148690"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>연습: 코드 조각 구현
 코드 조각을 만들고 확장 프로그램의 사용자가 자신의 코드에 추가할 수 있도록 편집기 확장에 포함할 수 있습니다.  

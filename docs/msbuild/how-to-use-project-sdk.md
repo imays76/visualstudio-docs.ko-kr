@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569890"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>방법: MSBuild 프로젝트 SDK 사용
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0은 속성 및 대상을 가져오는 데 필요한 소프트웨어 개발 키트 사용을 간소화하는 “프로젝트 SDK”의 개념을 도입했습니다.

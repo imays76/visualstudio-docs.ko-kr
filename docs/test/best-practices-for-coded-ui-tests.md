@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967030"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>최선의 코딩된 UI 테스트 방법
 

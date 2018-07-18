@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562548"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램에 대한 업데이트 관리
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 업데이트를 자동으로 또는 프로그래밍 방식으로 확인할 수 있습니다. 개발자는 다양 한 업데이트 검사를 수행 하는 방법과 시기, 필수, 업데이트 인지 및 업데이트를 확인 하는 위치를 지정 하는 유연성 해야 합니다.  

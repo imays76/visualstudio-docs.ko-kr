@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127988"
 ---
 # <a name="how-to-add-standard-text-markers"></a>방법: 표준 텍스트 표식을 추가
 와 함께 제공 되는 기본 텍스트 표식 유형 중 하나를 만들려면 다음 절차는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 코어 편집기입니다.  

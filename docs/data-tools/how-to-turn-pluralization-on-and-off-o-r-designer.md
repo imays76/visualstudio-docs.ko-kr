@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921685"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>방법: 복수형 설정 및 해제 (O/R 디자이너)
 기본적으로 s 또는에서 ies 이름을 가진 데이터베이스 개체를 끌 때 **서버 탐색기**/**데이터베이스 탐색기** 에 [LINQ to SQL 도구VisualStudio에서](../data-tools/linq-to-sql-tools-in-visual-studio2.md), 생성된 된 엔터티 클래스의 이름이 복수형에서 단 수로 바뀝니다. 이렇게 하면 인스턴스화된 엔터티 클래스를 데이터의 단일 레코드에 매핑하는 것을 보다 정확하게 나타낼 수 있습니다. 예를 들어 Customers 테이블을 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]에 추가하면 단일 고객에 대한 데이터만 해당 클래스에 보유되므로 Customer라는 엔터티 클래스가 만들어집니다.

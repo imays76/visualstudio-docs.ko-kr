@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466233"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 검색 함수를 반환 되지로 표시 되었습니다 있는지 여부를 지정 하는 플래그는 [noreturn](/cpp/cpp/noreturn) 특성입니다.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31469752"
 ---
 # <a name="managedtype"></a>ManagedType
 관리 되는 형식 (메타 데이터 또는 네이티브 C#과 같은 언어의 메모리 및 리소스 관리 기능에 의해 정의 된 모든 기호)으로 식별 되는 `SymTagManagedType` 기호입니다.  

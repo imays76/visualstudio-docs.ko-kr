@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478765"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>조사식 및 간략 한 조사식 창에서 Visual Studio를 사용 하 여 변수에 대 한 조사식을 설정
 디버깅 하는 동안 사용할 수 있습니다는 **조사식** 및 **간략 한 조사식** 변수 및 식을 조사 하려면 windows 합니다.  차이점은 **조사식** 창에는 여러 변수가 표시될 수 있는 반면 **간략한 조사식** 창에는 한 번에 하나의 변수가 표시된다는 것입니다. 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480048"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>연습: 음영으로 인한 렌더링 오류 디버깅
 이 연습에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 셰이더 버그로 인해 색상이 잘못 지정된 개체를 조사하는 방법을 보여 줍니다.  

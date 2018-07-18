@@ -23,6 +23,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425350"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio에서 정규식 사용
 

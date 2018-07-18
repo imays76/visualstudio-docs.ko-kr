@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127303"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Vspackage에 대 한 보안 모범 사례
 설치 하는 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 컴퓨터에 관리 자격 증명으로 컨텍스트 실행 되어야 합니다. 보안 및 배포의 기본 단위는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 응용 프로그램은는 [Vspackage](../../extensibility/internals/vspackages.md)합니다. 사용 하 여 VSPackage를 등록 해야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 관리 자격 증명이 필요 합니다.  

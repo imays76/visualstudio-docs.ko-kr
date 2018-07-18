@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765101"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
 
-CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 데 사용됩니다. 이 항목에서는 계측 프로파일링 방법을 사용하는 경우 이벤트 카운터 데이터를 수집하는 방법을 보여 줍니다.
+CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 데 사용됩니다. 이 문서에서는 계측 프로파일링 방법을 사용하는 경우 이벤트 카운터 데이터를 수집하는 방법을 보여 줍니다.
 
 두 가지 형식의 CPU 카운터 이벤트가 발생합니다.
 

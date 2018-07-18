@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133762"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>새 프로젝트 생성: 내부적으로 1 부
 사용자 고유의 프로젝트 형식을 만드는 방법에 대 한 것? 새 프로젝트를 만들 때 실제로 일어나 궁금해? 기본적인 이해 보아 하 고 실제로 실행 중인 참조 살펴보겠습니다.  
@@ -80,7 +81,7 @@ devenv /installvstemplates
   
  \<Visual Studio 설치 경로 > \VC#\VCSPackages\1033\csprojui.dll  
   
- 이 확인 하려면 파일 탐색기를 열고 및 Visual Studio 디렉터리 csprojui.dll 끌어... 문자열 테이블 리소스 #2345 캡션을 있는지를 보여 줍니다 **Visual C#**합니다.  
+ 이 확인 하려면 파일 탐색기를 열고 및 Visual Studio 디렉터리 csprojui.dll 끌어... 문자열 테이블 리소스 #2345 캡션을 있는지를 보여 줍니다 **Visual C#** 합니다.  
   
 ##### <a name="sortpriority"></a>SortPriority  
  루트 노드는 위치를 결정은 **프로젝트 형식** 트리 합니다.  

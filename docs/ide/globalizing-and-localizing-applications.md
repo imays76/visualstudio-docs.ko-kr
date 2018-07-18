@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942470"
 ---
 # <a name="globalizing-and-localizing-applications"></a>응용 프로그램 전역화 및 지역화
 

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31914655"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하십시오.
 |||

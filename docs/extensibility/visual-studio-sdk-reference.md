@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146847"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 참조
 이 섹션에는 Visual Studio SDK를 사용 하는 개발자에 대 한 Visual Studio 네임 스페이스, 관련된 네임 스페이스 및 관심 있는 다른 영역에 대 한 정보가 포함 됩니다.  

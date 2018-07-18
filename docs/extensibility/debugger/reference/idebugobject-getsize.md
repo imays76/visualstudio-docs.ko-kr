@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112495"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 개체의 크기를 바이트 단위로 가져옵니다.  

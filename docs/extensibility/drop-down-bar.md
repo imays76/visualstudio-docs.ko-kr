@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128276"
 ---
 # <a name="drop-down-bar"></a>드롭다운 표시줄
 드롭다운 표시줄 코드 창 위쪽에 제공 하며 드롭 다운 목록 두 개를 포함 합니다.  

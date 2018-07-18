@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135009"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>명령 및 Interop 어셈블리를 사용 하는 메뉴
 Interop 어셈블리를 사용 하 여 메뉴 및 도구 모음 명령을 구현 하는 VSPackage 수행 해야 합니다.  

@@ -1,11 +1,11 @@
 ---
 title: IPerPropertyBrowsing2::GetPredefinedStrings | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IPerPropertyBrowsing2.GetPredefinedStrings
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IPerPropertyBrowsing2::GetPredefinedStrings
 ms.assetid: d2fa30f7-a566-4dbd-8b47-ffdc00419771
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729253"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
 호출자에 게가 계산된 하는이 속성에 대 한 잠재적인 값을 나타내는 문자열 포인터 배열을 사용 하 여 목록 상자를 채울 수 있습니다.  

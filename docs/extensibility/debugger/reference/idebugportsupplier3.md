@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116999"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 이 인터페이스는 호출자가 포트 공급자의 디버거 호출 사이의 (디스크에 작성) 하 여 포트를 유지 하 고 다음 유지 된 포트 목록을 받을 수 있는지 여부를 확인할 수 있습니다.  

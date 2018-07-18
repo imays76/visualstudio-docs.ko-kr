@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472664"
 ---
 # <a name="debugging-applications"></a>응용 프로그램 디버깅
 다음 섹션에서는 특정 유형의 응용 프로그램에 대한 디버그를 설명합니다. 다른 응용 프로그램 종류와 다른 언어는 다른 설정과 기술을 필요로 하며, 디버그해야 하는 다양한 문제를 발생시킵니다.  

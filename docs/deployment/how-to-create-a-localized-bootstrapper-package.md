@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566019"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>방법: 지역화된 부트스트래퍼 패키지 만들기
 부트스트래퍼 패키지를 만든 후에는 각 로캘에 대해 두 파일, 즉 eula.rtf와 같은 소프트웨어 사용 약관 파일과 패키지 매니페스트(package.xml)를 추가로 만들어 부트스트래퍼 패키지의 지역화된 버전을 만들 수 있습니다.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578850"
 ---
 # <a name="vbc-task"></a>Vbc 작업
 실행 파일(.exe), 동적 링크 라이브러리(.dll) 또는 코드 모듈(.netmodule)을 생성하는 vbc.exe를 래핑합니다. vbc.exe에 대한 자세한 내용은 [Visual Basic 명령줄 컴파일러](/dotnet/visual-basic/reference/command-line-compiler/index)를 참조하세요.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065008"
 ---
 # <a name="debugger-security"></a>디버거 보안
 다른 프로세스를 디버깅하는 기능을 사용하면 특히 원격으로 디버깅하는 경우 등과 같이 일반적으로 얻을 수 없는 매우 강력한 성능을 발휘할 수 있습니다. 이 경우 디버깅 중인 컴퓨터에 대해 악의적인 사용자가 디버거를 통해 광범위한 손상을 입힐 수 있습니다.  

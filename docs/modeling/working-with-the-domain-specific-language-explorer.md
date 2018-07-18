@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965163"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>도메인별 언어 탐색기 작업
 **DSL 탐색기** 트리 보기에서 여러 종류의 정보를 표시 합니다. 대부분의 경우 DSL 탐색기에서 항목에 대 한 자세한 내용은 참조 [도메인 특정 언어를 정의 하는 방법을](../modeling/how-to-define-a-domain-specific-language.md)합니다.

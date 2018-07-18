@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097766"
 ---
 # <a name="combos-element"></a>바로 가기 단축키 + 요소
 그룹 [콤보 요소](../extensibility/combo-element.md) 요소입니다.  

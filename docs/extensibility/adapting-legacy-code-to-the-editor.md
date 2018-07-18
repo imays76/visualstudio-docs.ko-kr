@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105140"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>레거시 코드 편집기를 적용합니다.
 Visual Studio 편집기에 기존 코드 구성 요소에서 액세스할 수 있는 다양 한 기능이 있습니다. 다음 지침에는 비 MEF 구성 요소, 예를 들어 VSPackage, 편집기 기능을 사용 하도록 조정 하는 방법을 보여 줍니다. 지침에는 서비스를 가져올 편집기의 관리 및 비관리 코드에서 어댑터를 사용 하는 방법을 보여 줍니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114445"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 세션 디버그 관리자 (SDM) 프로세스를 분리할 수 하는 경우를 결정 합니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101305"
 ---
 # <a name="call-stack-evaluation"></a>호출 스택 평가
 중단 모드에 있는 동안 호출 스택의 스택 프레임을 보려면 구현 해야 하는 [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 메서드.  

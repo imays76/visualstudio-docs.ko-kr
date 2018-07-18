@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c70ddc12b2c790a360f5124e7deeb8e99189742c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b7f673adc1c5f93c3cf356218c510cad7f8d229
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749868"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: 제어 흐름에는 예외를 사용하지 마십시오.
 |||  
@@ -41,6 +42,6 @@ ms.lasthandoff: 04/19/2018
  자세한 내용은 MSDN의 **Microsoft Patterns and Practices** 라이브러리에 있는 **.NET 응용 프로그램 성능 및 확장성 향상** 볼륨에서 **5장 - 관리되는 코드 성능 향상**의 [예외 관리](http://go.microsoft.com/fwlink/?LinkID=177825) 섹션을 참조하세요.  
   
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법  
- [오류 목록] 창에서 메시지를 두 번 클릭하여 표시 뷰로 이동합니다. **.NET CLR Exceptions(@ProcessInstance)\\# of Exceps Thrown / sec** 측정값이 포함된 열을 찾습니다. 다른 단계보다 예외 처리가 더 빈번한 특정 프로그램 실행 단계가 있는지 확인합니다. 샘플링 프로필을 사용하여 빈번한 예외를 생성하는 throw 문과 try/catch 블록을 확인해 보세요. 필요하면 어떤 예외가 가장 빈번히 처리되는지 파악할 수 있는 논리를 catch 블록에 추가하세요. 가능할 경우 빈번히 실행되는 thorw 문이나 catch 블록을 단순 흐름 제어나 유효성 검사 코드로 바꿉니다.  
+ [오류 목록] 창에서 메시지를 두 번 클릭하여 표시 뷰로 이동합니다. **.NET CLR Exceptions(@ProcessInstance)\\# of Excels Thrown / sec** 측정값이 포함된 열을 찾습니다. 다른 단계보다 예외 처리가 더 빈번한 특정 프로그램 실행 단계가 있는지 확인합니다. 샘플링 프로필을 사용하여 빈번한 예외를 생성하는 throw 문과 try/catch 블록을 확인해 보세요. 필요하면 어떤 예외가 가장 빈번히 처리되는지 파악할 수 있는 논리를 catch 블록에 추가하세요. 가능할 경우 빈번히 실행되는 thorw 문이나 catch 블록을 단순 흐름 제어나 유효성 검사 코드로 바꿉니다.  
   
- 예를 들어 응용 프로그램이 빈번한 DivideByZeroException 예외를 처리하는지 확인하려는 경우 0 값으로 분모가 있는지 확인하는 논리를 프로그램에 추가하면 응용 프로그램의 성능이 향상됩니다.
+ 예를 들어 응용 프로그램이 빈번한 DivideByZeroException 예외를 처리하는지 확인하려는 경우, 0 값으로 분모가 있는지 확인하는 논리를 프로그램에 추가하면 응용 프로그램의 성능이 향상됩니다.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116401"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 프로그램이 다음 실행을 중지 하는 요청 시간 자신의 스레드 실행 시도 중 하나입니다.  

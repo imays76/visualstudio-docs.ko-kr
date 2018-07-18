@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138202"
 ---
 # <a name="scchistory-function"></a>SccHistory 함수
 이 함수에는 지정 된 파일의 기록을 표시합니다.  

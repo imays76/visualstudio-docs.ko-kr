@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750495"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>자습서 6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-여기에 사용된 보다 복잡한 정규식에 익숙하지 않은 경우 식을 [regex101.com](https://regex101.com/)에 붙여넣어 일반 언어로 된 설명을 볼 수 있습니다. 이때 식 앞에 백슬래시(`\`)를 추가하여 슬래시(`/`)를 이스케이프해야 합니다. Python에서는 문자열에서 “원시”를 의미하는 `r` 접두사로 인해 이스케이프가 필요하지 않습니다.
+여기에 사용된 보다 복잡한 정규식에 익숙하지 않은 경우 식을 [regex101.com](https://regex101.com/)에 붙여넣어 일반 언어로 된 설명을 볼 수 있습니다. (이때 식 앞에 백슬래시(`\`)를 추가하여 슬래시(`/`)를 이스케이프해야 합니다. Python에서는 문자열에서 “원시”를 의미하는 `r` 접두사로 인해 이스케이프가 필요하지 않습니다.)
 
 Django에서 `?P<name>pattern` 구문은 `name`이라는 그룹을 만들어 표시되는 순서대로 보기에 대한 인수로 전달합니다. 위의 코드에서 `PollsDetailView` 및 `PollsResultsView`는 `pk`라는 인수를 받고 `app.views.vote`는 `poll_id`라는 인수를 받습니다.
 

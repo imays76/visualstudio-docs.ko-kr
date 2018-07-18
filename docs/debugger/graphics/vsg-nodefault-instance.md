@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473162"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 기본 인스턴스에 있는지 여부를 존재로 정의 된 [VsgDbg 클래스](vsgdbg-class.md) 클래스-프로그래밍 캡처 인터페이스를 제공 하는-제공 됩니다.  

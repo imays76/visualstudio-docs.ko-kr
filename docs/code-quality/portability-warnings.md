@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920446"
 ---
 # <a name="portability-warnings"></a>이식성 경고
 이식성 경고 서로 다른 운영 체제 간의 이식성을 지원 합니다.

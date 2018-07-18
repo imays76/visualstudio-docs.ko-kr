@@ -19,6 +19,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704709"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 솔루션 파일 및 모든 프로젝트 파일이나 지정한 프로젝트 파일을 이러한 파일의 현재 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 형식으로 업데이트합니다.

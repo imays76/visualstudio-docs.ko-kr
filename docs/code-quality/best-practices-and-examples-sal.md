@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900996"
 ---
 # <a name="best-practices-and-examples-sal"></a>모범 사례 및 예제(SAL)
 SAL(Source Code Annotation Language)을 최대한 활용하고 몇 가지 일반적인 문제를 방지하는 방법은 다음과 같습니다.

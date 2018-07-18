@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c40c484a4a14ed103c1d29f979f4a767066a4a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751519"
 ---
 # <a name="unit-test-basics"></a>단위 테스트 기본 사항
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 
 이 항목에서는 `MyBank` 라는 가상의 응용 프로그램 개발이 예제로 사용됩니다. 이 항목의 설명을 이해하는 데에는 실제 코드가 필요하지 않습니다. 테스트 메서드는 C#으로 작성되고 관리 코드에 대한 Microsoft 단위 테스트 프레임워크를 사용하여 제공됩니다. 하지만 이러한 개념은 다른 언어 및 프레임워크에서도 쉽게 적용할 수 있습니다.
 
- ![MyBank 솔루션](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![MyBank 솔루션](../test/media/ute_mybanksolution.png)
 
  `MyBank` 응용 프로그램을 설계할 때의 첫 번째 작업에는 개별 계좌 및 은행과의 트랜잭션을 나타내는 계좌 구성 요소와 개별 계좌를 집계하고 관리하는 기능을 나타내는 데이터베이스 구성 요소가 포함됩니다.
 
@@ -85,15 +86,15 @@ public void Withdraw(double amount)
 
 1.  코드 편집기 창에서 마우스 오른쪽 단추를 클릭하고 상황에 맞는 메뉴에서 **단위 테스트 만들기** 를 선택합니다.
 
-     ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+     ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/createunittestsrightclick.png)
 
 2.  확인을 클릭하여 단위 테스트를 만드는 기본값을 그대로 사용하거나, 단위 테스트 프로젝트와 단위 테스트를 만들고 이름을 지정하는 데 사용되는 값을 변경합니다. 단위 테스트 메서드에 기본적으로 추가되는 코드를 선택할 수 있습니다.
 
-     ![편집기에서 마우스 오른쪽 단추를 클릭하고 [단위 테스트 만들기]를 선택](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![편집기에서 마우스 오른쪽 단추를 클릭하고 단위 테스트 만들기를 선택](../test/media/createunittestsdialog.png)
 
 3.  단위 테스트 스텁은 클래스의 모든 메서드에 대한 새 단위 테스트 프로젝트에서 만들어집니다.
 
-     ![단위 테스트가 생성됨](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+     ![단위 테스트가 생성됨](../test/media/createunittestsstubs.png)
 
 4.  이제 [단위 테스트 메서드에 코드를 추가](#BKMK_Writing_your_tests) 하여 단위 테스트에 의미를 부여하는 방법과 코드를 철저히 테스트하기 위해 추가할 수 있는 추가 단위 테스트에 대해 알아보겠습니다.
 
@@ -204,7 +205,7 @@ public void My_Test ()
 
 테스트 프로젝트를 빌드하면 테스트가 테스트 탐색기에 나타납니다. 테스트 탐색기가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **Windows**를 선택한 다음 **테스트 탐색기**를 선택합니다.
 
- ![단위 테스트 탐색기](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![단위 테스트 탐색기](../test/media/ute_failedpassednotrunsummary.png)
 
  테스트를 실행, 작성 및 다시 실행할 때 테스트 탐색기의 기본 보기에는 **실패한 테스트**, **통과한 테스트**, **건너뛴 테스트** 및 **실행하지 않은 테스트**그룹으로 결과를 표시합니다. 그룹 제목을 선택하면 해당 그룹의 모든 테스트를 표시하는 보기를 열 수 있습니다.
 
@@ -214,11 +215,11 @@ public void My_Test ()
 
 테스트 탐색기 도구 모음을 사용하면 원하는 테스트를 검색, 구성 및 실행할 수 있습니다.
 
- ![테스트 탐색기 도구 모음에서 테스트 실행](../test/media/ute_toolbar.png "UTE_ToolBar")
+ ![테스트 탐색기 도구 모음에서 테스트 실행](../test/media/ute_toolbar.png)
 
  사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다. 일련의 테스트들을 실행한 다음에는 테스트 탐색기 창의 맨 아래에 테스트 실행의 요약이 나타납니다. 테스트를 선택하면 아래쪽 창에 해당 테스트의 세부 정보가 표시됩니다. 컨텍스트 메뉴에서 **테스트 열기** 선택하여(키보드: F12) 선택된 테스트에 대한 소스 코드를 표시합니다.
 
- 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
+ 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
 ### <a name="run-tests-after-every-build"></a>각 빌드 후 테스트 실행
 
@@ -227,17 +228,17 @@ public void My_Test ()
 
 |||
 |-|-|
-|![빌드 후 실행](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|각 로컬 빌드 후 단위 테스트를 실행하려면 표준 메뉴에서 **테스트** 를 선택한 후 테스트 탐색기 도구 모음에서 **빌드 후 테스트 실행** 을 선택합니다.|
+|![빌드 후 실행](../test/media/ute_runafterbuild_btn.png)|각 로컬 빌드 후 단위 테스트를 실행하려면 표준 메뉴에서 **테스트** 를 선택한 후 테스트 탐색기 도구 모음에서 **빌드 후 테스트 실행** 을 선택합니다.|
 
 ### <a name="filter-and-group-the-test-list"></a>테스트 목록 필터링 및 그룹화
 
 많은 수의 테스트가 있으면 테스트 탐색기 검색 상자에 입력하여 지정된 문자열로 목록을 필터링할 수 있습니다. 필터 목록에서 선택하여 필터 이벤트를 더 제한할 수 있습니다.
 
- ![검색 필터 범주](../test/media/ute_searchfilter.png "UTE_SearchFilter")
+ ![검색 필터 범주](../test/media/ute_searchfilter.png)
 
 |||
 |-|-|
-|![테스트 탐색기 그룹 단추](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|범주에 따라 테스트를 그룹화하려면 **그룹화 방법** 단추를 선택합니다.|
+|![테스트 탐색기 그룹 단추](../test/media/ute_groupby_btn.png)|범주에 따라 테스트를 그룹화하려면 **그룹화 방법** 단추를 선택합니다.|
 
  자세한 내용은 [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)을 참조하세요.
 
@@ -260,7 +261,7 @@ public void My_Test ()
 
  **A:** IntelliSense를 사용해서 프로젝트 코드에서 클래스 및 메서드를 생성합니다. 테스트 메서드에서 생성하려는 클래스 또는 메서드를 호출하는 문을 작성한 후 해당 호출에서 IntelliSense 메뉴를 엽니다. 새 클래스의 생성자에 대한 호출인 경우에는 메뉴에서 **새 형식 생성** 을 선택하고 마법사에 따라 코드 프로젝트에 클래스를 삽입합니다. 메서드에 대한 호출인 경우에는 IntelliSense 메뉴에서 **새 메서드 생성** 을 선택합니다.
 
- ![메서드 스텁 IntelliSense 메뉴 생성](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
+ ![메서드 스텁 IntelliSense 메뉴 생성](../test/media/ute_generatemethodstubintellisense.png)
 
  **Q: 테스트를 실행하기 위한 입력으로 여러 데이터 집합을 사용하는 단위 테스트를 만들 수 있나요?**
 
@@ -304,9 +305,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  검사 결과는 코드 검사 결과 창에 나타납니다.
 
- ![코드 검사 결과](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")
+ ![코드 검사 결과](../test/media/ute_codecoverageresults.png)
 
- 자세한 내용은 [코드 검사](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)를 참조하세요.
+ 자세한 내용은 [코드 검사](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) 를 참조하세요.
 
  **Q: 외부 종속성이 있는 코드에서 메서드를 테스트하려면 어떻게 해야 하나요?**
 
@@ -326,6 +327,6 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  **A:** 예, 다음 단계에 따라 [다른 프레임워크를 찾아서 설치](../test/install-third-party-unit-test-frameworks.md)합니다. Visual Studio를 다시 시작한 후 솔루션을 다시 열어 단위 테스트를 만들고 여기서 설치된 프레임워크를 선택합니다.
 
- ![다른 설치된 단위 테스트 프레임워크 선택](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")
+ ![다른 설치된 단위 테스트 프레임워크 선택](../test/media/createunittestsdialogextensions.png)
 
  선택한 프레임워크를 사용하여 단위 테스트 스텁이 생성됩니다.

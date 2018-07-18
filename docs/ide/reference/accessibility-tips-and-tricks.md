@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebcf8adb89a2e152f1f4dd1cd0e324d1b25a782
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747458"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio의 내게 필요한 옵션 팁과 요령
 
@@ -34,13 +35,13 @@ Visual Studio에는 화면 판독기 및 기타 보조 기술과 호환되는 �
 
 일부 사용자의 경우 어떤 색을 보기 어렵습니다. 사용자 코드로 대비하지만 일반적인 "고대비" 테마를 사용하지 않으려는 경우 이제 "파랑(추가 대비)" 테마를 제공합니다.
 
-  ![파랑 테마 및 파랑 추가 대비 테마 비교](media/blue-extra-contrast-theme.png "파랑 테마와 파랑 추가 대비 테마의 차이를 참조하세요.")
+  ![파랑 테마 및 파랑 추가 대비 테마 비교](media/blue-extra-contrast-theme.png)
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>주석을 사용하여 코드에 대한 유용한 정보 노출
 
 Visual Studio 편집기에는 코드 줄에서 특정 시점에 특성 및 기능에 대해 알려주는 여러 텍스트 "도구 영역"(전구, 오류 및 경고 "물결선", 책갈피 등)이 포함되어 있습니다. "줄 주석 표시" 명령을 사용하여 이러한 도구 영역 간을 검색하고 탐색할 수 있도록 설정할 수 있습니다.
 
-  ![줄 주석 표시 명령 집합 사용](media/show-line-annotations-command-set.png "줄 주석 표시 명령 집합을 설정하는 방법을 보여줍니다.")
+  ![줄 주석 표시 명령 집합 사용](media/show-line-annotations-command-set.png)
 
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>바로 가기 키 조합을 사용하여 도구 모음 액세스
 
@@ -82,18 +83,18 @@ Windows에서 소리 애플릿을 사용하여 Visual Studio 프로그램 이벤
 
 1. Windows 10을 실행하는 컴퓨터의 **검색** 상자에서 **시스템 소리 변경**을 입력합니다.
 
-  ![Windows 10의 검색 상자](media/type-here-to-search.png "Windows 10을 실행하는 컴퓨터의 검색 상자에서 소리를 입력합니다.")
+  ![Windows 10에서 검색 상자](media/type-here-to-search.png)
 
   (또는 Cortana를 사용하도록 설정한 경우 "Hey Cortana" 및 "시스템 소리 변경"이라고 차례로 말합니다.)
 
 2. **시스템 소리 변경**을 두 번 클릭합니다.
 
-  ![Windows 10에서 검색 결과](media/change-system-sounds.png "검색 결과에서 시스템 소리 변경을 두 번 클릭합니다.")
+  ![Windows 10에서 검색 결과](media/change-system-sounds.png)
 
 3. **소리** 대화 상자에서 **소리** 탭을 클릭합니다. <br><br>
  그런 다음 **프로그램 이벤트**에서 **Microsoft Visual Studio**로 스크롤하여 사용자가 선택한 이벤트에 적용하려는 소리를 선택합니다.
 
-  ![Windows 10에서 소리 애플릿 소리 탭](media/sound-applet.png "검색 결과에서 시스템 소리 변경을 두 번 클릭합니다.")
+  ![Windows 10에서 소리 애플릿의 소리 탭](media/sound-applet.png)
 
 4. **확인**을 클릭합니다.
 

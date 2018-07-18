@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132036"
 ---
 # <a name="source-control-integration-essentials"></a>소스 제어 통합 Essentials
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에서는 두 가지 소스 제어 통합: (이전의 MSSCCI API), 소스 제어 플러그 인 API 및 VSPackage 기반 소스 제어 통합 솔루션을 사용 하 여 만들어집니다 및 기본 기능을 제공 하는 소스 제어 플러그 인입니다 보다 강력한 기능을 제공 합니다.  

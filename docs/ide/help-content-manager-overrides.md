@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8baf096a0ead512cddf9f33801c4504c2a5a4502
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8a02f4af740910fe666af295aa8535c8aef8245c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571740"
 ---
 # <a name="help-content-manager-overrides"></a>도움말 콘텐츠 관리자 재정의
 
@@ -67,4 +68,3 @@ Visual Studio IDE에서 도움말 뷰어와 도움말 관련 기능의 기본 �
 - [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)
 - [도움말 콘텐츠 관리자에 대한 명령줄 인수](../ide/command-line-arguments-for-the-help-content-manager.md)
 - [Microsoft 도움말 뷰어](../ide/microsoft-help-viewer.md)
-- [.pkgdef 파일을 사용하여 격리 셸 수정](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

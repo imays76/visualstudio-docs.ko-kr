@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459076"
 ---
 # <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
 현재 이미지 맞춤을 검색합니다.  

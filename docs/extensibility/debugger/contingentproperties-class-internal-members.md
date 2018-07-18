@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097850"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 클래스-내부 멤버
 에 대 한 추가 속성을 포함 한 <xref:System.Threading.Tasks.Task> 개체입니다.  

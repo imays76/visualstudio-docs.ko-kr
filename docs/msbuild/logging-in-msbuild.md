@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567995"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 로그인
 로깅은 빌드의 진행률을 모니터링할 수 있는 방법을 제공합니다. 로깅은 빌드 이벤트, 메시지, 경고 및 오류를 로그 파일에 캡처합니다.  

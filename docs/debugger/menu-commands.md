@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476038"
 ---
 # <a name="menu-commands"></a>메뉴 명령
 이 섹션의 도움말 항목 Spy + + 메뉴에서 사용할 수 있는 명령을 보여 줍니다.  

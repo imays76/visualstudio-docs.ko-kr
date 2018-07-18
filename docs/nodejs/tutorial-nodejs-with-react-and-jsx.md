@@ -2,7 +2,7 @@
 title: Node.js 및 React 앱 만들기
 description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
 ms.custom: mvc
-ms.date: 02/19/2018
+ms.date: 05/23/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,11 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9958711ea64daee9876d3b16330685786b6d5825
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 9b7703c1e8884a5b65e4cdfbd91f2cc9b88c7f68
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765845"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSense 및 Node.js를 지원하는 다른 기본 제공 기능을 활용할 수 있습니다. Visual Studio용 이 자습서에서는 Visual Studio 템플릿에서 Node.js 웹 응용 프로그램 프로젝트를 만듭니다. 그런 다음, React를 사용하여 간단한 앱을 만듭니다.
@@ -34,22 +35,22 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
 * Node.js 개발 워크로드와 Visual Studio 2017이 설치되어 있어야 합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우 [여기](http://www.visualstudio.com)에서 평가판을 설치합니다.
+    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
     워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
 * Node.js 런타임을 설치해야 합니다.
 
-    아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다).
+    이 자습서는 버전 8.11.2를 사용하여 테스트했습니다.
 
-    이 자습서는 버전 8.9.4를 사용하여 테스트했습니다.
+    아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다).
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 먼저 Node.js 웹 응용 프로그램 프로젝트를 만듭니다.
 
 1. Visual Studio 2017을 엽니다.
 
-1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트...** 를 차례로 선택합니다.
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
 1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 후 **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 응용 프로그램**을 선택하고 **NodejsWebAppBlank**의 이름을 입력한 다음, **확인**을 선택합니다.
 
@@ -88,7 +89,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
     ![npm 패키지 설치](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    **출력** 창에 패키지를 설치하는 진행률이 표시됩니다. 설치 시 패키지가 **npm** 노드 아래 표시됩니다.
+    패키지를 설치 진행률을 확인하려면 **출력** 창을 클릭합니다(**출력 보기** 필드에서 **Npm**선택). 설치 시 패키지가 **npm** 노드 아래 표시됩니다.
 
     프로젝트의 *package.json* 파일은 패키지 버전을 포함하여 새 패키지 정보로 업데이트됩니다.
 
@@ -98,8 +99,8 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
     "dependencies": {
       "express": "4.16.2",
       "path": "0.12.7",
-      "react": "16.2.0",
-      "react-dom": "16.2.0",
+      "react": "16.4.0",
+      "react-dom": "16.4.0",
       "ts-loader": "4.0.1",
       "typescript": "2.7.2",
       "webpack": "4.1.1",
@@ -107,9 +108,9 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
     }
     ```
 
-1. 프로젝트에서 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **누락된 npm 패키지 설치**를 선택합니다.
+1. 프로젝트에서 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 업데이트**를 선택합니다.
 
-    **출력** 창에 패키지를 설치하는 진행률이 표시됩니다.
+    패키지 설치 진행률을 확인하려면 **출력** 창을 클릭합니다. 몇 분 정도 걸릴 수 있으며 즉시 결과를 확인할 수는 없습니다.
 
     설치된 후 솔루션 탐색기에 표시된 대로 여기 npm 모듈이 있습니다.
 
@@ -133,7 +134,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
 1. **새 항목 추가** 대화 상자에서 **TypeScript JSX 파일**을 선택하고 *app.tsx* 이름을 입력하고 **확인**을 클릭합니다.
 
-1. *webpack-config.js*를 추가하려면 이러한 단계를 반복합니다.
+1. *webpack-config.js*를 추가하려면 이러한 단계를 반복합니다. TypeScript JSX 파일 대신 **JavaScript 파일**을 선택합니다.
 
 1. *index.html*을 프로젝트에 추가하려면 동일한 단계를 반복합니다. JavaScript 파일 대신 **HTML 파일**을 선택합니다.
 
@@ -229,7 +230,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
     Webpack 구성 코드는 Webpack에게 TypeScript 로더를 사용해 JSX를 트랜스파일하도록 지시합니다.
 
-1. tsconfig.json을 열고 다음 코드를 추가하여 TypeScript 컴파일러 옵션을 지정합니다.
+1. *tsconfig.json*을 열고 다음 코드로 기본 코드를 대체하여 TypeScript 컴파일러 옵션을 지정합니다.
 
     ```json
     {
@@ -251,7 +252,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
     }
     ```
 
-    소스 파일로 app.tsx를 지정합니다.
+    소스 파일로 *app.tsx*를 지정합니다.
 
 ## <a name="transpile-the-jsx"></a>JSX 트랜스파일
 
@@ -331,7 +332,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
     ![중단점 설정](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-1. Visual Studio에서 디버그 대상으로 선택된 크롬을 사용하여 **Ctrl + F5**(**디버그** > **디버깅하지 않고 시작**) 키를 눌러 브라우저에서 앱을 실행합니다.
+1. Visual Studio에서 디버그 대상으로 선택된 크롬을 사용하여 **Ctrl**+**F5**(**디버그** > **디버깅하지 않고 시작**) 키를 눌러 브라우저에서 앱을 실행합니다.
 
     앱이 새 브라우저 탭에서 열립니다.
 
@@ -346,7 +347,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
     DOM 탐색기와 JavaScript 콘솔이 Visual Studio에서 열릴 때 디버거가 올바르게 연결됐는지 알 수 있습니다. 이러한 디버깅 도구는 크롬 개발자 도구 및 F12 Tools for Edge와 유사합니다.
 
     > [!NOTE]
-    > 디버거가 연결되지 않고 “프로세스에 연결할 수 없습니다. 현재 상태에서는 작업을 수행할 수 없습니다.”라는 메시지가 표시되는 경우 디버깅 모드로 Chrome을 시작하기 전에 작업 관리자를 사용하여 Chrome의 모든 인스턴스를 닫습니다. 크롬 확장 프로그램을 실행하여 전체 디버그 모드를 방지할 수 있습니다.
+    > 디버거가 연결되지 않고 “프로세스에 연결할 수 없습니다. 작업이 현재 상태에서 잘못되었으므로 디버깅 모드로 Chrome을 시작하기 전에 작업 관리자를 사용하여 Chrome의 모든 인스턴스를 닫습니다. 크롬 확장 프로그램을 실행하여 전체 디버그 모드를 방지할 수 있습니다.
 
 1. 중단점이 있는 코드가 이미 실행됐기 때문에 중단점을 적중하려면 브라우저 페이지를 새로 고치기 합니다.
 
@@ -354,7 +355,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
     환경 및 브라우저 상태에 따라 *app.tsx*에서 매핑된 위치 또는 *app-bundle.js*에서 중단점을 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
 
-    * *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 그런 다음, **스크립트 문서** > **app.tsx**를 열어 솔루션 탐색기에서 동적으로 생성된 *app.tsx* 파일을 열고, 중단점을 설정하고, 브라우저에서 페이지를 새로 고칩니다.
+    * *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 그런 다음, **스크립트 문서** > **app.tsx**를 열어 솔루션 탐색기에서 동적으로 생성된 *app.tsx* 파일을 열고, 중단점을 설정하고, 브라우저에서 페이지를 새로 고칩니다(`return` 문 또는 `var` 선언 같은 중단점을 허용하는 코드 줄에서 중단점을 설정합니다).
 
         또는 *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app.tsx*에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구에서 중단점을 설정합니다.
 

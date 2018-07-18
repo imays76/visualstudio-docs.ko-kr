@@ -23,6 +23,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425363"
 ---
 # <a name="understand-build-platforms"></a>빌드 플랫폼 이해
 

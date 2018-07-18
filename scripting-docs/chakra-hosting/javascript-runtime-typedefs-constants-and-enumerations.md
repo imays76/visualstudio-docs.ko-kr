@@ -1,14 +1,14 @@
 ---
-title: "JavaScript 런타임 Typedefs, 상수 및 열거형 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 런타임 Typedefs, 상수 및 열거형 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 1aa107ed-e144-4947-b5bb-90284a537174
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569043"
 ---
 # <a name="javascript-runtime-typedefs-constants-and-enumerations"></a>JavaScript 런타임 Typedef, 상수 및 열거형
 JavaScript 런타임(JsRT) 형식 정의, 상수 및 열거형은 Windows에서 실행되는 데스크톱 및 서버 쪽 응용 프로그램에 스크립팅 기능 추가를 지원합니다.  

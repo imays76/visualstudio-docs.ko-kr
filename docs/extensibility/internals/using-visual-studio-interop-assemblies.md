@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146821"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Visual Studio Interop 어셈블리를 사용 하 여
 Visual Studio interop 어셈블리는 Visual Studio 확장성을 제공 하는 COM 인터페이스를 액세스 하는 관리 되는 응용 프로그램을 허용 합니다. 직선 COM 인터페이스 및 해당 interop 버전 간의 차이가 있습니다. 예를 들어 Hresult int 값으로 표시 일반적으로 되 고 동일한 방식으로 예외를 처리 해야 및 (특히 out 매개 변수) 매개 변수는 다르게 처리 됩니다.  

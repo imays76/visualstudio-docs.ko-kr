@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569932"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 작업
 빌드 플랫폼에는 빌드 프로세스 중에 동작을 필요한 수만큼 실행할 수 있는 기능이 필요합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 *작업*을 통해 이러한 동작을 수행합니다. 작업은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 원자성 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다.  

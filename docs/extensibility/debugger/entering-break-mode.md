@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098211"
 ---
 # <a name="entering-break-mode"></a>중단 모드
 다음 함수를 한 단계씩 실행, 커서, 된 소스 코드의 줄에 실행 또는 중단점까지 실행 한 후 중단점 도달할 때 발생 하는 프로세스에 설명 합니다.  

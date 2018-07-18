@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121377"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 이 인터페이스는 포트에서 실행 되는 프로세스를 나타냅니다. 포트의 경우 로컬 포트 다음 `IDebugProcess2` 일반적으로 로컬 컴퓨터에 실제 프로세스를 나타냅니다.  

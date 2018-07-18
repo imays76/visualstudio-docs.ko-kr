@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133312"
 ---
 # <a name="project-configuration-for-building"></a>만들기에 대 한 프로젝트 구성
 지정된 된 솔루션에 대 한 솔루션 구성 목록에는 솔루션 구성 대화 상자에서 관리 됩니다.  

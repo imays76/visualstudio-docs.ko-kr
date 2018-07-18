@@ -1,5 +1,5 @@
 ---
-title: 설치 문제 해결
+title: Visual Studio 2017 설치 문제 해결
 description: 때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치 또는 업그레이드에 실패할 경우 이 페이지가 도움이 될 수 있습니다.
 ms.date: 11/21/2017
 ms.technology: vs-acquisition
@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766040"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 설치 및 업그레이드 문제 해결
 
@@ -112,4 +113,5 @@ Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및.NET Framewo
 
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 * [Visual Studio 인스턴스 검색 및 관리 도구](tools-for-managing-visual-studio-instances.md)
+* [방화벽 또는 프록시 서버 뒤에 Visual Studio 설치](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 2017 제거](remove-visual-studio.md)

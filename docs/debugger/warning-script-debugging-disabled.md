@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476795"
 ---
 # <a name="warning-script-debugging-disabled"></a>경고: 스크립트 디버깅 사용 안 함
 Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습니다.  
@@ -36,7 +37,7 @@ Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습�
   
 3.  에 **고급** 탭, 찾는 위치는 **설정** 상자 **탐색** 범주입니다.  
   
-4.  지우기 **스크립트 디버깅 (Internet Explorer)**합니다.  
+4.  지우기 **스크립트 디버깅 (Internet Explorer)** 합니다.  
   
 5.  **확인**을 클릭합니다.  
   

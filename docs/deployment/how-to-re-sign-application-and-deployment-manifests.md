@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566136"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 응용 프로그램 및 배포 매니페스트에 다시 서명
 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램 (xbap) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트의 배포 속성을 변경한 후 응용 프로그램을 다시 서명 해야 사용 및 배포 매니페스트에 인증서입니다. 이 프로세스는 변조 된 파일은 최종 사용자 컴퓨터에 설치 되지 않았는지 확인 하는 데 도움이 됩니다.  

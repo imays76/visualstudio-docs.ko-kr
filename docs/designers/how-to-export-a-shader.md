@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924997"
 ---
 # <a name="how-to-export-a-shader"></a>방법: 셰이더 내보내기
 이 문서에서는 앱에서 사용할 수 있도록 셰이더 디자이너를 사용하여 DGSL(Directed Graph Shader Language) 셰이더를 내보내는 방법을 보여 줍니다.

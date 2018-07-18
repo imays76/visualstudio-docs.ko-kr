@@ -26,11 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48f8d5ac3b53650398f707f67f1d5806b72bce58
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750118"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 함수
 새 범위의 시작을 표시합니다.  
@@ -125,7 +126,7 @@ HRESULT CvEnterSpanExVA(
  메시지가 성공적으로 작성되는 경우 S_OK입니다. 오류가 발생한 경우 오류 코드입니다. SUCCEEDED/FAILED 매크로를 사용하여 오류 조건을 확인할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** cvmarkers.h  
+ **헤더:** *cvmarkers.h*  
   
  **유니코드:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
   

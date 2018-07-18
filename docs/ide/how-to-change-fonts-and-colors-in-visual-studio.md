@@ -1,9 +1,8 @@
 ---
-title: '방법: Visual Studio에서 글꼴 및 색 변경 | Microsoft Docs'
-ms.custom: ''
+title: '방법: Visual Studio에서 글꼴 및 색 변경'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
@@ -14,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dd1ce6aa91054ffee2f82386c016acc0fe5ba7c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 047ec49b48d955591d89cd9c392d72381c57b84e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942171"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>방법: Visual Studio에서 글꼴 및 색 변경
 
@@ -69,6 +69,5 @@ IDE에서 모든 창 및 대화 상자의 글꼴 및 텍스트 크기를 변경�
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md)  
-
-[방법: 편집기의 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md)
+- [방법: 편집기의 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

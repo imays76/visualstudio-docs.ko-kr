@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477955"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>연습: Windows Form 디버깅
 Windows Form에는 가장 일반적인 관리 되는 응용 프로그램 중 하나입니다. Windows Form Windows 표준 응용 프로그램을 만듭니다. Visual Basic, C# 또는 c + +를 사용 하 여이 연습을 완료할 수 있습니다.  

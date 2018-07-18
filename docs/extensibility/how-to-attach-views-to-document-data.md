@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128463"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>방법: 뷰 문서 데이터를 연결 합니다.
 새 문서 보기를 설정한 경우 기존 문서 데이터 개체에 연결할 수 있습니다.  

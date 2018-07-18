@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559337"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램을 사용하여 필수 구성 요소 설치
 모든 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에 올바른 버전의.NET Framework 실행 되기 전에 컴퓨터에 설치 되어 있는지 필요 있으며 대부분의 응용 프로그램 필수 구성 요소 뿐입니다. 게시 하는 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 응용 프로그램과 함께 패키징되 필수 구성 요소 집합을 선택할 수 있습니다. 설치 시에는 확인을 수행 하는 경우 이미 존재 합니다; 확인 하려면 각 필수 구성 요소에 대 한 설치 하기 전에 설치 됩니다 하지 하는 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램입니다.  

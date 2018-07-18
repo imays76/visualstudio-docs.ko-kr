@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108945"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 중단점 요청에 대 한 중단점의 위치 유형을 지정합니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110031"
 ---
 # <a name="debug-package"></a>패키지를 디버그 합니다.
 디버그 패키지가 Visual Studio shell에서 실행 되 고 모든 UI를 처리 합니다. 디버깅 인터페이스는 Visual Studio를 사용 하 고 세션 디버그 관리자 (SDM)와 통신 합니다.  

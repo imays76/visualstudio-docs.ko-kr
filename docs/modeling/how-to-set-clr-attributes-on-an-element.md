@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948914"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>방법: 요소에 CLR 특성 설정
 사용자 지정 특성은 도메인 요소, 셰이프, 커넥터 및 다이어그램에 추가할 수 있는 특수 한 특성입니다. 상속 되는 모든 특성을 추가할 수는 `System.Attribute` 클래스입니다.

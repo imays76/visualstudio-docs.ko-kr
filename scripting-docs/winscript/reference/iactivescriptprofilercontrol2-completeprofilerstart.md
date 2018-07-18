@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptProfilerControl2::CompleteProfilerStart | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptProfilerControl2::CompleteProfilerStart
 ms.assetid: e14d94a2-39d3-40a1-84d9-6300fbe2b339
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724503"
 ---
 # <a name="iactivescriptprofilercontrol2completeprofilerstart"></a>IActiveScriptProfilerControl2::CompleteProfilerStart
 적용 가능한 모든 스크립팅 엔진에서 프로 파일링 시작 했다고 프로파일러에 알립니다. 이 방법을 사용 하면 얻을 수 경우 완전 한 호출 스택이 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 프로 파일링을 시작 하는 경우를 실행 합니다.  

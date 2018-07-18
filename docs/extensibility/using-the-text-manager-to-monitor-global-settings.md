@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141674"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>전역 설정을 모니터링 하는 텍스트 관리자를 사용 하 여
 코어 편집기를 구현 하는 경우 이러한 변경 내용은 편집기 인스턴스에 영향을 줄 수 있으므로 전역 설정에 대 한 변경 내용을 모니터링 해야 합니다. 텍스트 관리자에서 발생 한 이벤트를 수신 하 여 변경 내용을 추적할 수 있습니다. 예를 들어 해당 문서 데이터 개체와 같은 핵심 편집기에서 기본 모양이 나 구성 요소의 동작에 대 한 전역 설정을 지정 하는 경우 텍스트 관리자는이 정보를 저장 및 영향을 받는 모든 클라이언트와 통신 합니다.  

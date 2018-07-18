@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103866"
 ---
 # <a name="launching-a-program"></a>프로그램을 시작
 프로그램을 디버깅 하려는 사용자는 IDE에서 디버거를 실행 하려면 f5 수 있습니다. 이 일련의 IDE의 다시 연결 하거나 연결, 프로그램에 다음과 같이 디버그 엔진 (DE)에 연결 하면 결국 이벤트가 시작 됩니다.  

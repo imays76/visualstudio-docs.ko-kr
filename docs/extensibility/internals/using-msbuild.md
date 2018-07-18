@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141453"
 ---
 # <a name="using-msbuild"></a>MSBuild를 사용 하 여
 MSBuild를 잘 정의 된 확장 가능한 XML 형식 완벽 하 게 빌드할 수, 작업, 빌드 및 빌드 구성 프로젝트 항목을 설명 하는 프로젝트 파일을 만들기 위한를 제공 합니다.  

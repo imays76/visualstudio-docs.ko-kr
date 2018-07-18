@@ -1,15 +1,16 @@
 ---
-title: Mac용 Visual Studio의 빌드 구성 이해
+title: 빌드 구성 이해
 description: 이 문서에서는 Mac용 Visual Studio의 다양한 빌드 구성을 설명합니다.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: b0ab3786f9bbb713fdc2b4726b29148c4bcd9f34
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: fb1db4325aef6c5328646a5ad1123c88aa751481
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957881"
 ---
 # <a name="understanding-build-configurations"></a>빌드 구성 이해
 

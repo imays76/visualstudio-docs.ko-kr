@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129630"
 ---
 # <a name="source-control"></a>소스 제어
 이 섹션에서는의 통합된 기능으로 소스 제어를 구현 하기 위한 옵션을 설명 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 소스 제어 VSPackage 또는 소스 제어 플러그 인을 통해.  

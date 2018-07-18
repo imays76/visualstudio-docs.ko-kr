@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559597"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>방법: 최종 사용자의 설치 원본 위치 지정
 게시 하는 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 다운로드 하 고 응용 프로그램을 설치 하려면 사용자가 이동 하지 일 필요는 처음 응용 프로그램을 게시할 위치입니다. 예를 들어 일부 조직에서는 개발자 응용 프로그램을 스테이징 서버에 게시 될 수로 이동한 다음 관리자는 웹 서버에 응용 프로그램입니다.  

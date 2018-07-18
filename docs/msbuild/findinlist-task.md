@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31579006"
 ---
 # <a name="findinlist-task"></a>FindInList 작업
 지정된 목록에서 일치하는 itemspec이 있는 항목을 찾습니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459729"
 ---
 # <a name="idiaframedatagetfunctionparent"></a>IDiaFrameData::get_functionParent
 바깥쪽 함수에 대 한 프레임 데이터 인터페이스를 검색합니다.  

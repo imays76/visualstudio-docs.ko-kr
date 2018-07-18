@@ -1,16 +1,16 @@
 ---
-title: "ISimpleConnectionPoint 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: ISimpleConnectionPoint 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ISimpleConnectionPoint interface
 ms.assetid: f632a82f-942d-4291-963e-e9fa2b162493
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733913"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>ISimpleConnectionPoint 인터페이스
 설명 하 고 특정 연결 지점에서 발생 하는 이벤트를 열거 하기 위한 간단한 방법을 제공 합니다. 이 인터페이스 쉽게 로드를 연결 하는 `IDispatch` 이러한 이벤트에는 개체입니다. 이 인터페이스에서의 프로세스 디버깅 관리자 (PDM), 구현 되며 스크립트 엔진 사용 됩니다.  

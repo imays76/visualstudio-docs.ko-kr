@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470857"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>웹 응용 프로그램 디버깅: 문제 해결
 이 단원에는 오류를 해결하는 데 사용할 수 있는 일반적인 절차가 포함되어 있습니다.  

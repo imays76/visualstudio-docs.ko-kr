@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474848"
 ---
 # <a name="processes-view"></a>프로세스 뷰
 프로세스 뷰에 시스템에서 모든 활성 프로세스의 트리를 표시합니다. 프로세스 ID 및 모듈 이름이 표시 됩니다. 프로세스 뷰를 사용 하 여 실행 중인 프로그램에 해당 하는 일반적으로 특정 시스템 프로세스를 검사 하려는 경우. 프로세스는 모듈 이름으로 식별 되거나 "시스템 프로세스입니다."로 지정 됩니다.  

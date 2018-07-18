@@ -25,6 +25,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549040"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>방법: Outlook 추가 기능 프로젝트에 양식 영역 추가
   **새 Outlook 양식 영역** 마법사를 사용하여 표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장하는 양식 영역을 만듭니다. Visual Studio에서 새 양식 영역을 만들어서 사용자 인터페이스를 디자인하거나 Outlook에서 디자인한 양식 영역을 가져와서 Visual Basic 또는 C# 코드를 추가할 수 있습니다.  

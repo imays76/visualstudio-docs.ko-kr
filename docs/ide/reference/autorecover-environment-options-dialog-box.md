@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943204"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 자동 저장
 [옵션] 대화 상자의 이 페이지를 사용하여 파일을 자동으로 백업할지 여부를 지정합니다. 이 페이지에서는 IDE(통합 개발 환경)가 예기치 않게 종료될 때 수정된 파일을 복원할지 여부를 지정할 수도 있습니다. 이 대화 상자에 액세스하려면 **도구** 메뉴, **옵션**, **환경** 폴더, **자동 복구** 페이지를 차례로 선택합니다. 이 페이지가 목록에 나타나지 않으면 **옵션** 대화 상자에서 **모든 설정 표시**를 선택합니다.

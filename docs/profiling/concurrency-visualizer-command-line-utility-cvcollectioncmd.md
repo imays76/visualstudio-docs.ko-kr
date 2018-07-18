@@ -12,20 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: d47afc99a16b2501cadc70f8820b295675d98aa0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691149"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)
-동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio용 동시성 시각화 도우미에서 확인할 수 있습니다. 이러한 도구는 Visual Studio가 설치되어 있지 않은 컴퓨터에서도 사용할 수 있습니다.  
+동시성 시각화 도우미 명령줄 유틸리티(*CVCollectionCmd.exe*)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio용 동시성 시각화 도우미에서 확인할 수 있습니다. 이러한 도구는 Visual Studio가 설치되어 있지 않은 컴퓨터에서도 사용할 수 있습니다.  
   
 > [!NOTE]
 >  Visual Studio 2013부터 동시성 시각화 도우미는 선택적 확장입니다. (이전에는 Visual Studio에 포함되었습니다.) 다운로드 센터에서 [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/en-in/download/details.aspx?id=49103)를 다운로드할 수 있습니다.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>동시성 시각화 도우미 명령줄 유틸리티 다운로드  
- 명령줄 유틸리티를 다운로드하여 설치하려면 Microsoft 다운로드 센터 웹 사이트에서 [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/en-in/download/details.aspx?id=49103) 로 이동한 후 아래 지침을 따르세요. 기본적으로 CVCollectionCmd.exe는 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\(%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ on x64 computers)에 설치됩니다.  
+ 명령줄 유틸리티를 다운로드하여 설치하려면 Microsoft 다운로드 센터 웹 사이트에서 [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/en-in/download/details.aspx?id=49103) 로 이동한 후 아래 지침을 따르세요. 기본적으로 *CVCollectionCmd.exe*는 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\(%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ on x64 computers)에 설치됩니다.  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>CVCollectionCmd를 사용하여 추적 수집  
  CVCollectionCmd를 사용하여 앱을 시작하거나 CVCollectionCmd에 연결하여 추적을 수집할 수 있습니다. 옵션은 아래의 명령 참조를 참조하세요. 예  
@@ -51,13 +52,13 @@ ms.lasthandoff: 05/14/2018
 |프로세스|Attach 명령이 실행되면 연결할 프로세스 또는 Analyze 명령이 실행되면 분석할 추적의 프로세스를 지정합니다. Attach 및 Analyze 명령에 적용됩니다.|프로세스의 PID 또는 이름|없음|  
 |Config|기본값 이외의 수집 설정이 필요한 경우 구성 파일의 경로를 지정합니다.   Launch, Attach 및 Analyze 명령에 적용됩니다.|XML 구성 파일의 디렉터리 경로 또는 상대 경로|없음|  
   
-## <a name="customizing-configuration-settings"></a>구성 설정 사용자 지정  
+## <a name="customize-configuration-settings"></a>구성 설정 사용자 지정  
  CVCollectionCmd를 사용해 추적을 수집하고 수집 설정을 사용자 지정하려는 경우 구성 파일을 사용해 설정을 지정합니다.  
   
 > [!NOTE]
 >  Visual Studio를 사용해 추적을 수집하는 경우에는 구성 파일을 직접 수정하지 마세요.  대신 [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자를 사용해 설정을 수정합니다.  
   
- 수집 설정을 수정하려면 CVCollectionCmd 유틸리티를 실행할 컴퓨터에 구성 파일을 만듭니다. 구성 파일을 처음부터 만들거나 Visual Studio 설치된 컴퓨터에서 구성 파일을 복사하고 수정할 수 있습니다. 이 파일의 이름은 `UserConfig.xml` 로 **Local AppData** 폴더에 있습니다. 이 유틸리티를 실행하면 Launch, Attach 또는 Analyze 명령과 함께 Config 옵션을 사용합니다.  Config 옵션과 관련된 매개 변수에서 구성 파일의 경로를 지정합니다.  
+ 수집 설정을 수정하려면 CVCollectionCmd 유틸리티를 실행할 컴퓨터에 구성 파일을 만듭니다. 구성 파일을 처음부터 만들거나 Visual Studio 설치된 컴퓨터에서 구성 파일을 복사하고 수정할 수 있습니다. 이 파일의 이름은 *UserConfig.xml*이며, *Local AppData* 폴더에 있습니다. 이 유틸리티를 실행하면 Launch, Attach 또는 Analyze 명령과 함께 Config 옵션을 사용합니다.  Config 옵션과 관련된 매개 변수에서 구성 파일의 경로를 지정합니다.  
   
 ### <a name="configuration-file-tags"></a>구성 파일 태그  
  구성 파일은 XML 기반입니다. 올바른 태그 및 값은 다음과 같습니다.  

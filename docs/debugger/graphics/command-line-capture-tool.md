@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477929"
 ---
 # <a name="command-line-capture-tool"></a>명령줄 캡처 도구
 DXCap.exe는 그래픽 진단 캡처 및 재생을 위한 명령줄 도구로, 모든 기능 수준에서 Direct3D 10 - Direct3D 12를 지원합니다.  

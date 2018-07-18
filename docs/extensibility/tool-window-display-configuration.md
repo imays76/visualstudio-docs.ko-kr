@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143695"
 ---
 # <a name="tool-window-display-configuration"></a>도구 창 디스플레이 구성
 VSPackage는 도구 창, 기본 위치, 크기, 도킹 스타일 및 기타 표시 유형 정보를 등록할 때이 옵션 값에 지정 됩니다. 도구 창 등록에 대 한 자세한 내용은 참조 하십시오. [레지스트리에 도구 창](../extensibility/tool-windows-in-the-registry.md)  

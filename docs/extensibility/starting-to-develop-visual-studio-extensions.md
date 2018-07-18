@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144465"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio 확장 개발 하기 시작
 하기 전에 Visual Studio 확장을 작성해 본 경험이 있는 경우 몇 가지 질문 있을 수도 있습니다. 여기에 가장 일반적인 것 중 일부 나열한 했습니다. 피드백 단추를 사용 하 여 원하는 정보 보이지 않으면 (**이 페이지가 도움이 되었나요?** 화면 맨 아래에) 대상에 게 요청 합니다.  

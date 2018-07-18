@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116544"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 이름이 지정 된 메트릭 값 문자열을 검색 합니다.  

@@ -31,6 +31,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578759"
 ---
 # <a name="mt-task"></a>MT 작업
 Microsoft 매니페스트 도구, mt.exe를 래핑합니다. 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "Mt.exe"를 참조하세요.  

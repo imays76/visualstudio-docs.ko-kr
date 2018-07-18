@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570462"
 ---
 # <a name="build-loggers"></a>빌드 로거
 로거는 빌드 출력을 사용자 지정하고 특정 빌드 이벤트에 대한 응답에 메시지, 오류 또는 경고를 표시하는 방법을 제공합니다. 각 로거는 <xref:Microsoft.Build.Framework.ILogger> 인터페이스를 구현하는 .NET 클래스로 구현됩니다. 이 인터페이스는 Microsoft.Build.Framework.dll 어셈블리에서 정의됩니다.  

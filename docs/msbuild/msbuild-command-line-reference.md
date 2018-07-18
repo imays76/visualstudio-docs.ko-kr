@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576016"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 명령줄 참조
 MSBuild.exe를 사용하여 프로젝트 또는 솔루션 파일을 빌드할 경우 여러 스위치를 포함하여 프로세스의 다양한 측면을 지정할 수 있습니다.  

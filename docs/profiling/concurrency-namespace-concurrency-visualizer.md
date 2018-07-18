@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362c8e87c104dbed859421e21b43d309a6eab8b4
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: aec7bc6373644b81dd45eeeadefa33ab3af88396
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548140"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>동시성 네임스페이스(동시성 시각화 도우미)
 `Concurrency` 네임스페이스는 C++용 동시 프로그래밍 프레임워크인 동시성 런타임에 액세스하는 데 사용할 수 있는 클래스와 함수를 제공합니다. 자세한 내용은 [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)을 참조하세요.  

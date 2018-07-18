@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144709"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>어떤&#39;의 새로운 Visual Studio 2015 SDK
 Visual Studio SDK는 Visual Studio 2015, Visual Studio 2015 업데이트 및 Visual Studio 2017에 대 한 다음과 같은 새로운 기능과 업데이트 된 기능에 있습니다.  

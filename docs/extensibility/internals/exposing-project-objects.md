@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130455"
 ---
 # <a name="exposing-project-objects"></a>프로젝트 개체 노출
 사용자 지정 프로젝트 형식을 자동화 인터페이스를 사용 하 여 프로젝트에 대 한 액세스를 허용 하기 위해 자동화 개체를 제공할 수 있습니다. 모든 프로젝트 형식을 표준 제공 될 <xref:EnvDTE.Project> 에서 액세스 되는 자동화 개체 <xref:EnvDTE.Solution>, IDE에서 열려 있는 모든 프로젝트의 컬렉션이 들어 있는입니다. 프로젝트의 각 항목을 표시 해야 사용할 수는 <xref:EnvDTE.ProjectItem> 개체를 사용 하 여 액세스할 `Project.ProjectItems`합니다. 이러한 표준 자동화 개체 외에도 프로젝트 프로젝트 관련 자동화 개체를 제공 하도록 선택할 수 있습니다.  

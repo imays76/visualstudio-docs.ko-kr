@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109335"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 프로그램 실행의 특정 지점에 도달한 후 실행을 중지할 수는 경우를 결정 하는 데 사용 합니다.  

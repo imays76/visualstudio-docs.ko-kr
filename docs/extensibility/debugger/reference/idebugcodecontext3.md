@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108510"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 확장 된 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 인터페이스 모듈 및 프로세스 인터페이스를 검색할 수 있도록 합니다.  

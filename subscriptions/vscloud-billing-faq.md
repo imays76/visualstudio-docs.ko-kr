@@ -14,6 +14,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957134"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://www.visualstudio.com/vs/pricing/)를 하십시오.

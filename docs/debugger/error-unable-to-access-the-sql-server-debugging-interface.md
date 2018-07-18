@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471634"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>오류: SQL 서버 디버깅 인터페이스에 액세스할 수 없습니다.
 이 메시지는 SQL 디버깅이 활성화되어 있지 않은 컴퓨터에서 SQL 디버깅을 시도하는 경우에 발생합니다.  

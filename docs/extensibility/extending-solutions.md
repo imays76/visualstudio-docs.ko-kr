@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134284"
 ---
 # <a name="extending-solutions"></a>솔루션 확장
 솔루션은 응용 프로그램을 만드는 함께 작동 하는 하나 이상의 프로젝트를 그룹화 합니다.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560910"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; 요소 (부트스트래퍼)
 `PackageFiles` 요소에 포함 되어 `PackageFile` 의 결과로 실행 설치 패키지를 정의 하는 요소는 `Command` 요소입니다.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919845"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: 안전하지 않은 XSLT 스크립트 실행
 

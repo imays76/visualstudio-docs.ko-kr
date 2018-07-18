@@ -19,6 +19,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269130"
 ---
 # <a name="channels-threads-view"></a>채널(스레드 뷰)
 동시성 시각화 도우미는 스레드 채널, 디스크 채널, 표식 채널 및 GPU 채널의 4가지 채널을 보여줍니다.  

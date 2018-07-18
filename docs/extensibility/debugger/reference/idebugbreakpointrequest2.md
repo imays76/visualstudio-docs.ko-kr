@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103311"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 이 인터페이스를 만들고 모든 유형의 중단점을 바인딩하는 데 필요한 정보를 나타냅니다.  

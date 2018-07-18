@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114267"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 이 메서드는 세션에서 프로세스를 디버깅 더 이상이 프로세스에 알립니다.  

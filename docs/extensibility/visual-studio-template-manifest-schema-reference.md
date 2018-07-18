@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142581"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 템플릿 매니페스트 스키마 참조
 이 스키마는 Visual Studio 프로젝트 또는 항목 템플릿에서 생성 하는 Visual Studio 템플릿 매니페스트 (.vstman) 파일의 형식을 설명 하 고 위치 및 서식 파일에 대 한 기타 관련 정보를 설명 합니다.  

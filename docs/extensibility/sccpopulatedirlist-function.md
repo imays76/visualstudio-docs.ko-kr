@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137146"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 함수
 이 함수는 디렉터리와 선택적으로 파일을 검사 하는 디렉터리 목록을 제공 하는 소스 제어에 저장 됩니다 확인 합니다.  

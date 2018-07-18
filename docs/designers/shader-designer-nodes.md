@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926446"
 ---
 # <a name="shader-designer-nodes"></a>셰이더 디자이너 노드
 설명서의 이 섹션에 있는 문서에는 그래픽 효과를 만드는 데 사용할 수 있는 다양한 셰이더 디자이너 노드에 대한 정보가 포함되어 있습니다.

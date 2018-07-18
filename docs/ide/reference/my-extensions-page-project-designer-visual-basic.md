@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948963"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>프로젝트 디자이너, My 확장 페이지(Visual Basic)
 **프로젝트 디자이너**의 **내 확장** 페이지를 사용하여 프로젝트에서 `My` 네임스페이스 확장을 관리합니다. `My` 네임스페이스 확장을 사용하면 `My` 네임스페이스를 사용자 지정하여 고유한 사용자 지정 멤버를 추가할 수 있습니다. 사용자 지정 `My` 네임스페이스 확장을 만드는 방법에 대한 내용은 [Visual Basic에서 내 네임스페이스 확장](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)을 참조하세요.

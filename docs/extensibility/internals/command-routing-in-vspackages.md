@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135805"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage의 명령 라우팅
 명령에 라우팅됩니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 실행 되는 컨텍스트를 기반 합니다. 전역 컨텍스트를 바깥쪽으로 초기 컨텍스트를 라우팅됩니다.  

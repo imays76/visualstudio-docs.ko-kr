@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468823"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 함수가 인라인 불가능 한 것으로 표시 되었는지 여부를 지정 하는 플래그를 검색 (사용 하는 [noinline](/cpp/cpp/noinline) 특성).  

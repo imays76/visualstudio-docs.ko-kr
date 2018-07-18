@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472944"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>방법: 호출 스택 창에 네이티브 프레임이 없을 때 관리 코드에서 나가기
 코드에 네이티브 프레임에 표시 되는 경우는 **호출 스택** 창, 관리 코드에서 나가면 예기치 않은 결과가 발생할 수 있습니다. 이 문제를 해결 대신 중단점을 사용 하면 **나가기**합니다.  

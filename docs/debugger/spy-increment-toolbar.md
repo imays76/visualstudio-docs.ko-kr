@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477383"
 ---
 # <a name="spy-toolbar"></a>Spy++ 도구 모음
 도구 모음 Spy + +의 메뉴 모음 아래에 나타납니다. 표시 하거나 도구 모음에서 숨기기는 **보기** 메뉴를 클릭 하 여 **도구 모음**합니다.  

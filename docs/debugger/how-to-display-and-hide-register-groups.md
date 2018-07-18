@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474091"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>방법: 레지스터 그룹 표시 및 숨기기
 **등록** 기간을 주소 수준 디버깅을 활성화 한 경우에 사용할 수는 **옵션** 대화 상자, **디버깅** 노드를 **일반**범주입니다.  

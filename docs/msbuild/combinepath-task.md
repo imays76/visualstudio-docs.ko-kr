@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567072"
 ---
 # <a name="combinepath-task"></a>CombinePath 작업
 지정된 경로를 단일 경로로 결합합니다.  

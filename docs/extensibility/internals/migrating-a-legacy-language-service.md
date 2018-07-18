@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135859"
 ---
 # <a name="migrating-a-legacy-language-service"></a>레거시 언어 서비스 마이그레이션
 프로젝트를 업데이트 하는 프로젝트 source.extension.vsixmanifest 파일을 추가 하 여 Visual Studio의 이후 버전으로 레거시 언어 서비스를 마이그레이션할 수 있습니다. Visual Studio 편집기에 맞게 변경 하기 때문에 자체 언어 서비스는 이전과 같이 작동 계속 됩니다.  
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/16/2018
   
     -   에 **응용 프로그램** 탭으로 변경 **대상 프레임 워크** 를 **4.6.1**합니다.  
   
-    -   에 **디버그** 탭에 **시작 외부 프로그램** 상자에 입력 합니다  **\<Visual Studio 설치 경로 > \Common7\IDE\devenv.exe.**합니다.  
+    -   에 **디버그** 탭에 **시작 외부 프로그램** 상자에 입력 합니다  **\<Visual Studio 설치 경로 > \Common7\IDE\devenv.exe.** 합니다.  
   
          에 **명령줄 인수** 상자에서 입력 /**rootsuffix Exp**합니다.  
   

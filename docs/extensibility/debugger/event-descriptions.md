@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101026"
 ---
 # <a name="event-descriptions"></a>이벤트 설명
 이벤트의 각 형식은 특정 목적을 갖습니다.  

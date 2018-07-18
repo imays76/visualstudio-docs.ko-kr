@@ -1,13 +1,13 @@
 ---
-title: "조건부 컴파일 변수(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 조건부 컴파일 변수(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - conditional compilation, variables
 ms.assetid: d6f9827d-c558-412c-8e68-de04c19c3d9d
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569123"
 ---
 # <a name="conditional-compilation-variables-javascript"></a>조건부 컴파일 변수(JavaScript)
 다음과 같은 미리 정의된 변수를 조건부 컴파일에 사용할 수 있습니다. 변수가 **true**가 아니면 정의되지 않으며 액세스 시 `NaN`으로 동작합니다.  

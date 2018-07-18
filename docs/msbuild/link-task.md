@@ -37,6 +37,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575899"
 ---
 # <a name="link-task"></a>링크 작업
 Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일(.exe) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options)을 참조하세요.  

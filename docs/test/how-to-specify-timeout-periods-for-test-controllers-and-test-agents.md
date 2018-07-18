@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979050"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>방법: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간 지정
 

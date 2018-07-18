@@ -37,6 +37,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950035"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>옵션, 텍스트 편집기, XAML, 서식
 **서식** 속성 페이지를 사용하여 XAML 문서에서 요소와 특성의 형식 지정 방법을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 **도구** 메뉴를 클릭한 후 **옵션**을 클릭합니다. **서식** 속성 페이지에 액세스하려면 **텍스트 편집기**, **XAML**, **서식** 노드를 확장합니다.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107766"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 이 인터페이스 사용자 지정 특성을 나타내고 이름, 부모 및 특성의 클래스 형식을 제공할 수 있습니다.  

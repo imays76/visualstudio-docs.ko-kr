@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950061"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>사용자 지정 호스트를 사용 하 여 프로세스 텍스트 템플릿
 

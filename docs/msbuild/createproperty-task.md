@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566695"
 ---
 # <a name="createproperty-task"></a>CreateProperty 작업
 전달된 값으로 속성을 채웁니다. 이를 통해 하나의 속성 또는 문자열에서 다른 속성 또는 문자열로 값을 복사할 수 있습니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136128"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>방법: 라이브러리의 기호를 식별 합니다.
 기호 검색 도구 기호의 계층적 뷰를 표시합니다. 기호는 네임 스페이스, 개체, 클래스, 클래스 멤버 및 다른 언어 요소를 나타냅니다.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927115"
 ---
 # <a name="design-warnings"></a>디자인 경고
 디자인 경고는.NET Framework 디자인 지침 준수를 지원 합니다.

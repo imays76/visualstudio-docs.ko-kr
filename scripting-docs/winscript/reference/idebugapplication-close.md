@@ -1,11 +1,11 @@
 ---
 title: IDebugApplication::Close | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplication.Close
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplication::Close
 ms.assetid: d19baa07-3f3b-47de-8185-5eb3e7ac8b46
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725503"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
 이 응용 프로그램을 모든 참조를 해제 하 고 비활성 상태를 입력 하면 됩니다.  

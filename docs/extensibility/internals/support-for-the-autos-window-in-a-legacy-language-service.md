@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135824"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>레거시 언어 서비스에서 자동 창에 대 한 지원
 **자동** 디버깅 중인 프로그램 (중 하나 중단점 또는 예외 발생) 일시 중지 되 면 범위에 있는 매개 변수 및 변수와 같은 식 창에 표시 됩니다. 식은 변수, 지역 또는 전역 및 로컬 범위에서 변경 된 매개 변수를 포함할 수 있습니다. **자동** 창 클래스, 구조체 또는 일부 다른 형식이의 인스턴스화를 포함할 수도 있습니다. 식 계산기를 평가할 수 있는 모든 항목에 잠재적으로 표시할 수는 **자동** 창.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548428"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>일반 참조 (Visual Studio에서 Office 개발)
   이 섹션에는 Visual Studio의 Microsoft Office 프로젝트에 대 한 기술 정보가 포함 됩니다.  

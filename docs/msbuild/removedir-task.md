@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578135"
 ---
 # <a name="removedir-task"></a>RemoveDir 작업
 지정한 디렉터리와 모든 파일 및 하위 디렉터리를 제거합니다.  

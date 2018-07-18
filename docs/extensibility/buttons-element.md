@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097652"
 ---
 # <a name="buttons-element"></a>단추 요소
 그룹 [단추](../extensibility/button-element.md) 개별 명령을 나타내는 요소입니다.  

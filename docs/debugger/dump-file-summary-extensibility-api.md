@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471023"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>덤프 파일 요약 확장성 API
 이 단원의 확장성 Api 사용을 확장할 수 있습니다는 합니다. Exe 프로젝트 시스템 및 **덤프 요약** 사용자 고유의 사용자 지정 디버그 엔진에 사용 하기 위해 페이지입니다.  

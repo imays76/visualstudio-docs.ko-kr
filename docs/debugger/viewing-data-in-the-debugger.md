@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482180"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 데이터의 사용자 지정 뷰 만들기
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거는 프로그램의 상태를 검사하고 수정하는 여러 가지 도구를 제공합니다. 이러한 도구의 대부분은 중단 모드에서만 작동합니다.

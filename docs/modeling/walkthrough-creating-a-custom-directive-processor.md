@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979037"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
 

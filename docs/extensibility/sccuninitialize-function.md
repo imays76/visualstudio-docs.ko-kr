@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140497"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize 함수
 이 함수를 한 할당 이나 열려 있는 연결에 대 한 이전 호출에서 만든 정리는 [SccInitialize](../extensibility/sccinitialize-function.md) 소스 제어 플러그 인을 종료 하는 준비 과정에서 합니다.  

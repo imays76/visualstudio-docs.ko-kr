@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128574"
 ---
 # <a name="automation-support-for-options-pages"></a>옵션 페이지에 대 한 자동화 지원
 Vspackage는 사용자 지정을 제공할 수 **옵션** 대화 상자에 **도구** 메뉴 (도구 옵션 페이지)에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 있습니다 사용할 수 있도록 자동화 모델을 합니다.  

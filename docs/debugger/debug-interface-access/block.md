@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31462382"
 ---
 # <a name="block"></a>블록
 각 코드 블록으로 식별 되는 `SymTagBlock` 기호입니다. 블록 기호는 함수 내에서 중첩 된 범위를 식별 하는 데 사용 됩니다.  

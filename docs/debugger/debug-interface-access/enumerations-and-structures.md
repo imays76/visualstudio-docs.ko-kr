@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31462054"
 ---
 # <a name="enumerations-and-structures"></a>열거형 및 구조체
 이들은, 열거형 및 DIA SDK에서 사용 되는 구조입니다.  

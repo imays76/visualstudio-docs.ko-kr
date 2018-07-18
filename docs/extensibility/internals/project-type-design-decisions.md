@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131498"
 ---
 # <a name="project-type-design-decisions"></a>프로젝트 형식에 대 한 디자인 관련 결정
 새 프로젝트 형식을 만들기 전에 프로젝트 형식에 대 한 몇 가지 디자인 결정 해야 합니다. 사용할 항목을 프로젝트에 포함 됩니다, 프로젝트 파일은 지속 방법, 및 어떤 약정 모델의 유형을 결정 해야 합니다.  

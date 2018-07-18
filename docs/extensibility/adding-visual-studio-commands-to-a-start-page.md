@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101796"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>시작 페이지에 Visual Studio 명령 추가
 사용자 지정 시작 페이지를 만들 때 Visual Studio 명령에 추가할 수 있습니다. 이 문서에서는 Visual Studio 명령 시작 페이지에서 XAML 개체를 바인딩할는 여러 가지 방법을 설명 합니다.  

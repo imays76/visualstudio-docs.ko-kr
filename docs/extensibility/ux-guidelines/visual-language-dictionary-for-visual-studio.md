@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148849"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio에 대 한 비주얼 언어 사전
 Visual Studio는 그의 해 및 다른 이미지의 구성 요소는 개념을 설명 하기 위해 공용 시각적 언어를 사용 합니다. 새 아이콘을 디자인할 때 사용자 고유의 이미지에 전달 하려는 개념 식별 하려면이 사전을 사용 합니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108351"
 ---
 # <a name="debugger-components"></a>디버거 구성 요소
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 디버거는 VSPackage로 구현 되었으며 전체 디버그 세션을 관리 합니다. 디버그 세션에는 다음과 같은 요소가 구성 됩니다.  

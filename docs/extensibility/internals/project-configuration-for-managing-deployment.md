@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132259"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>배포를 관리 하기 위한 프로젝트 구성
 배포는 실제로 디버깅 및 설치에 대 한 예상된 위치를 빌드 프로세스에서 출력 항목을 이동 하는 작업입니다. 예를 들어 웹 응용 프로그램 로컬 컴퓨터에서 구축 되며 다음 서버에 배치 될 수 있습니다.  

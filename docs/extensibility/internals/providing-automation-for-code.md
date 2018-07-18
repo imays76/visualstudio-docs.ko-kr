@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130683"
 ---
 # <a name="providing-automation-for-code"></a>코드에 대 한 자동화를 제공합니다.
 코드에 대 한 자동화 모델을 만들 필요는 없습니다. 환경 SDK 작업에 대 한 예제를 제공 하지 않습니다. 코드 모델에 대 한 정보를 참조 하십시오.는 <xref:EnvDTE.CodeModel> 개체입니다.  

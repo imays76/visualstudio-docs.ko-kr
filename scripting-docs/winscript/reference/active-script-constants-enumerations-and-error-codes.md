@@ -1,14 +1,14 @@
 ---
-title: "액티브 스크립트 상수, 열거형 및 오류 코드 | Microsoft Docs"
-ms.custom: 
+title: 액티브 스크립트 상수, 열거형 및 오류 코드 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: aab24471-5817-45c0-be07-ffe4648923ed
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641573"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>액티브 스크립트 상수, 열거형 및 오류 코드
 이 섹션에서는 열거형 및 Windows 스크립트 엔진에서 사용 되는 오류 코드에 설명 합니다.  

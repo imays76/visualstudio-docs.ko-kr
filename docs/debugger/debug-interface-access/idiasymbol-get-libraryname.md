@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464201"
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
 개체가 로드 된 개체 또는 라이브러리 파일의 파일 이름을 검색 합니다.  

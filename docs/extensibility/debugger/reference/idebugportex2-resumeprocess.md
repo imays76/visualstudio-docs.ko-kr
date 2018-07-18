@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113278"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 프로세스의 실행을 다시 시작 합니다.  

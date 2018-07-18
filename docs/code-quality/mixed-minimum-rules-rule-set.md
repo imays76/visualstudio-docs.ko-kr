@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927271"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>혼합 최소 규칙 규칙 집합
 Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 포함 하 여, 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만드는이 규칙 사용자 지정 규칙 집합에 있는 집합을 포함 해야 합니다.

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917720"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: 가변 인수로 params를 사용하십시오.
 |||

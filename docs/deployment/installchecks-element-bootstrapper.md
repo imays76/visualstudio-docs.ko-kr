@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566175"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; 요소 (부트스트래퍼)
 `InstallChecks` 요소에서 다양 한 응용 프로그램에 대 한 필수 구성 요소가 모두 설치 되었는지 확인 하려면 로컬 컴퓨터에 대 한 테스트를 지원 합니다.  

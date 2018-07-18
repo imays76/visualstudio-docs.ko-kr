@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: 결과 뷰어용 추가 기능 만들기
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: UI 자동화를 사용하여 코드 테스트
+- name: UI 테스트 자동화
   href: use-ui-automation-to-test-your-code.md
   items:
     - name: '연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: 코딩된 UI 테스트를 사용하여 Windows UWP 앱 테스트
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: 코딩된 UI 테스트를 사용하여 Windows UWP 및 8.1 Phone 앱 테스트
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: 테스트를 위해 UWP 컨트롤에 대한 고유 자동화 속성 설정
+    - name: 코딩된 UI 테스트를 사용하여 UWP 앱 테스트
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: UWP 컨트롤에 대한 고유한 Automation 속성 설정
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: 코딩된 UI 테스트에서 HTML5 컨트롤 사용
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: 데이터 기반의 코딩된 UI 테스트 만들기
       href: creating-a-data-driven-coded-ui-test.md
-    - name: 코딩된 UI 테스트가 재생 중 특정 이벤트를 기다리도록 지정
+    - name: 재생 중 특정 이벤트 대기
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: 코딩된 UI 테스트에 다른 웹 브라우저 사용
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: 컨트롤의 코딩된 UI 테스트 사용
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: 코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼
+    - name: 지원되는 구성 및 플랫폼
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: Microsoft Excel을 지원하도록 기록된 UI 테스트 및 작업 기록 확장
+    - name: 코딩된 UI 테스트 프레임워크 확장
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: 코딩된 UI 테스트에 대한 샘플 Excel 추가 기능
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: 샘플 Excel Communicator 인터페이스
-          href: sample-excel-communicator-interface.md
-        - name: Excel용 샘플 코딩된 UI 테스트 확장명
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: '샘플 Excel 확장: ExtensionPackage 클래스'
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: '샘플 Excel 확장: TechnologyManager 클래스'
-              href: sample-excel-extension-technologymanager-class.md
-            - name: '샘플 Excel 확장: PropertyProvider 클래스'
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: '샘플 Excel 확장: 요소 클래스'
-              href: sample-excel-extension-element-classes.md
-            - name: '샘플 Excel 확장: ActionFilter 클래스'
-              href: sample-excel-extension-actionfilter-class.md
 - name: Lab Management 테스트
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:

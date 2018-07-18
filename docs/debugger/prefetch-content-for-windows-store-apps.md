@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475926"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Visual Studio에서 프리페치된 콘텐츠를 사용 하 여 UWP 앱 디버그
   

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470475"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak 및 __debugbreak
 DebugBreak Win32 함수를 호출할 수 있습니다 또는 [__debugbreak](/cpp/intrinsics/debugbreak) 코드에서 언제 든 지 내장 함수입니다. `DebugBreak` 및 `__debugbreak`는 해당 위치에 중단점을 설정하는 것과 같은 효과가 있습니다.  

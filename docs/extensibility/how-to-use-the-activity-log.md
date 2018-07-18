@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127105"
 ---
 # <a name="how-to-use-the-activity-log"></a>방법: 작업 로그를 사용 하 여
 Vspackage 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 특히 소매 환경에서 Vspackage를 디버깅 하는 데 유용 합니다.  
@@ -48,7 +49,7 @@ Vspackage 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 특�
   
 1.  Visual Studio와 실행의 [/로그 사용](../ide/reference/log-devenv-exe.md) 명령줄 스위치 세션 동안 ActivityLog.xml 디스크에 쓸 수입니다.
 
-2.  Visual Studio를 닫은 후에 작업 로그 하위 폴더에 Visual Studio 데이터 찾기: *% AppData %*\Microsoft\VisualStudio\15.0\ActivityLog.xml 합니다.  
+2.  Visual Studio를 닫은 후에 작업 로그 하위 폴더에 Visual Studio 데이터 찾기: *% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml 합니다.  
   
 3.  텍스트 편집기로 활동 로그를 엽니다. 다음은 일반적인 항목이입니다.  
   

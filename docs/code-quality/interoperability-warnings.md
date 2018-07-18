@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921858"
 ---
 # <a name="interoperability-warnings"></a>상호 운용성 경고
 상호 운용성 경고 COM 클라이언트와 상호 작용을 지원 합니다.

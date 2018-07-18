@@ -16,6 +16,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103140"
 ---
 # <a name="tutorial-step-5-authenticate-users-in-django"></a>자습서 5단계: Django에서 사용자 인증
 

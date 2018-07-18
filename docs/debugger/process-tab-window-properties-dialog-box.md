@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473399"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>창 속성 대화 상자, 프로세스 탭
 사용 하 여는 **프로세스** 탭을 선택 된 창의 프로세스를 식별 합니다. 표시 하는 [창 속성 대화 상자](../debugger/window-properties-dialog-box.md), 포커스를 이동 하는 [창 뷰](../debugger/windows-view.md) 창. 트리에서 창 노드를 선택한 후 선택 **속성** 에서 **보기** 메뉴.  

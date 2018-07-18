@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bb48c27ab305908ddbf68334fd818bb9c07cfd1e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748802"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 사용량 분석
 앱 성능 문제를 검토해야 하는 경우 앱에서 CPU를 사용하는 방식을 파악하는 것부터 시작하는 것이 좋습니다. **CPU 사용량** 도구는 CPU에서 Visual C++, Visual C#/Visual Basic 및 JavaScript 코드 실행에 시간을 소모하는 상황을 보여 줍니다. Visual Studio 2015 업데이트 1부터 디버거를 종료하지 않고 CPU 사용의 기능별 분석 결과를 볼 수 있습니다. 디버그하는 동안 CPU 프로파일링을 켜고 끌 수 있으며, 실행이 중지되면(예: 중단점에서) 결과를 볼 수 있습니다.  
@@ -26,7 +27,7 @@ ms.lasthandoff: 05/17/2018
 > [!NOTE]
 > .NET Core 및 ASP.NET Core에 대한 CPU 사용량 도구는 현재 휴대용 PBD를 통해 정확한 결과를 제공하지 않습니다. 대신 전체 PDB를 사용합니다.
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> CPU 사용량 데이터 수집  
+##  <a name="collect-cpu-usage-data"></a>CPU 사용량 데이터 수집  
   
 1.  Visual Studio에서 솔루션 구성을 **릴리스** 으로 설정하고 배포 대상을 선택합니다.  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 05/17/2018
 |![4단계](../profiling/media/procguid_4.png "ProcGuid_4")|메서드의 자식 노드에는 부모 메서드 호출에 대한 데이터만 포함되어 있습니다. **외부 코드 표시** 가 사용하지 않도록 설정되어 있으면 앱 메서드에 **[External Code]** 노드를 포함할 수 있습니다.|  
   
 ####  <a name="BKMK_External_Code"></a> 외부 코드  
- 외부 코드는 사용자가 작성한 코드에서 실행된 시스템 및 프레임워크 구성 요소의 함수입니다. 외부 코드에는 앱을 시작 및 중지하고, UI를 그리며, 스레딩을 제어하고, 앱에 다른 낮은 수준 서비스를 제공하는 함수가 포함되어 있습니다. 대부분의 경우 외부 코드에 관심이 없으므로 CPU 사용량 호출 트리에서 사용자 메서드의 외부 함수를 하나의 **[External Code]** 노드로 수집합니다.  
+ 외부 코드는 사용자가 작성한 코드에서 실행되는 시스템 및 프레임워크 구성 요소의 함수입니다. 외부 코드에는 앱을 시작 및 중지하고, UI를 그리며, 스레딩을 제어하고, 앱에 다른 낮은 수준 서비스를 제공하는 함수가 포함되어 있습니다. 대부분의 경우 외부 코드에 관심이 없으므로 CPU 사용량 호출 트리에서 사용자 메서드의 외부 함수를 하나의 **[External Code]** 노드로 수집합니다.  
   
  외부 코드의 호출 경로를 보려면 **필터 뷰** 목록에서 **외부 코드 보기** 를 선택한 다음 **적용**을 선택합니다.  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 05/17/2018
 |**총 CPU(%)**|![총 % 데이터 수식](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 함수 호출 및 함수가 호출한 함수에 사용된 선택한 시간 범위의 앱 CPU 활동에 대한 백분율입니다. 이 값은 시간 범위에서 앱의 총 활동을 사용 가능한 총 CPU 용량과 비교하는 **CPU 사용률** 타임라인 그래프와 다릅니다.|  
 |**셀프 CPU(%)**|![자체 % 수식](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 함수 호출에 사용된 선택한 시간 범위의 앱 CPU 활동에 대한 백분율로, 함수가 호출한 함수의 활동은 제외됩니다.|  
 |**총 CPU(밀리초)**|선택한 시간 범위에서의 함수 호출과 함수가 호출한 함수에 소요된 시간(밀리초)입니다.|  
-|**셀프 CPU(밀리초)**|선택한 시간 범위에서의 함수 호출과 함수가 호출한 함수에 소요된 시간(밀리초)입니다.|  
+|**셀프 CPU(밀리초)**|선택한 시간 범위에서의 함수 호출과 함수가 호출한 함수에 소요된 시간(밀리초)입니다(함수에서 호출한 함수 활동 제외).|  
 |**모듈**|함수가 포함된 모듈의 이름 또는 [External Code] 노드에 함수가 포함된 모듈의 수입니다.|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리의 비동기 함수  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120561"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 등록 된이 인터페이스에서는 세션 디버그 (SDM) "게시 된"을 통해 프로그램에 대 한 정보를 얻으려면 관리자는 [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) 인터페이스입니다.  

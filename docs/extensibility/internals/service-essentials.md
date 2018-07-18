@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132657"
 ---
 # <a name="service-essentials"></a>서비스 Essentials
 서비스는 두 개의 Vspackage 사이의 계약입니다. 하나의 VSPackage를 사용할 다른 VSPackage에 대 한 인터페이스의 특정 집합을 제공 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다른 Vspackage에 서비스를 제공 하는 Vspackage의 수집 됩니다.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943750"
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>보안 및 지역화된 위성 어셈블리
 

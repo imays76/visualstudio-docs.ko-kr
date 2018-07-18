@@ -80,6 +80,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465449"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 디버그 힙 정보
 이 항목에서는 CRT 디버그 힙에 대해 자세히 설명합니다.  

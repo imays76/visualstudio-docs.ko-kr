@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475641"
 ---
 # <a name="how-to-debug-net-framework-source"></a>방법: .NET Framework 소스 디버깅
 .NET Framework 소스를 디버깅 하려면 코드에 대 한 디버깅 기호에 액세스할 수 있어야 합니다. 또한.NET Framework 소스를 한 단계씩를 사용 하도록 설정 해야 합니다.  

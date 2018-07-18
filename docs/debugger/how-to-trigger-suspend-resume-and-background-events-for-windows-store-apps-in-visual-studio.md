@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481231"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>트리거하는 방법 일시 중단, 다시 시작 및 백그라운드 이벤트를 Visual Studio에서 UWP 앱을 디버깅 하는 동안
 디버깅하고 있지 않을 때는 Windows PLM( **프로세스 수명 관리** )에서 응용 프로그램의 실행 상태(장치 상태 및 사용자 작업에 응답하여 응용 프로그램 시작, 일시 중단, 다시 시작 및 종료)를 제어합니다. 디버깅하는 중에는 Windows가 이러한 활성화 이벤트를 사용하지 않도록 설정합니다. 이 항목에서는 디버거에서 이러한 이벤트를 발생시키는 방법에 대해 설명합니다.  
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/18/2018
   
 3.  다음 작업 중 하나를 수행합니다.  
   
-    -   Visual C# 및 Visual Basic 프로젝트의 경우 **시작하지 않음(시작 시 코드 디버그)**을 선택합니다.  
+    -   Visual C# 및 Visual Basic 프로젝트의 경우 **시작하지 않음(시작 시 코드 디버그)** 을 선택합니다.  
   
          ![C&#35;&#47;VB 디버그 시작 응용 프로그램 속성](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   

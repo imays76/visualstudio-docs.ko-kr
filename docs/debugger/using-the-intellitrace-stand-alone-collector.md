@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479005"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace 독립 실행형 수집기 사용
 **IntelliTrace 독립 실행형 수집기** 를 사용하면 대상 컴퓨터에 Visual Studio를 설치하거나 대상 시스템 환경을 변경하지 않고도 프로덕션 서버 또는 기타 환경에서 앱에 대해 IntelliTrace 진단 데이터를 수집할 수 있습니다. IntelliTrace 독립 실행형 수집기는 웹, SharePoint, WPF 및 Windows Forrms 앱에서 작동합니다. 데이터 수집을 마쳤으면 컬렉터를 삭제하여 제거하면 됩니다.  
@@ -156,7 +157,7 @@ ms.lasthandoff: 04/18/2018
   
             -   64비트 운영 체제에서는 **Windows PowerShell**의 바로 가기 메뉴를 엽니다. **관리자 권한으로 실행**을 선택합니다.  
   
-            -   32비트 운영 체제에서는 **Windows PowerShell(x86)**의 바로 가기 메뉴를 엽니다. **관리자 권한으로 실행**을 선택합니다.  
+            -   32비트 운영 체제에서는 **Windows PowerShell(x86)** 의 바로 가기 메뉴를 엽니다. **관리자 권한으로 실행**을 선택합니다.  
   
     2.  PowerShell 명령 창에서 **Import-Module** 명령을 사용하여 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**을 가져옵니다.  
   

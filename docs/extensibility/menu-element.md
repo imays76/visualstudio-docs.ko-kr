@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143454"
 ---
 # <a name="menu-element"></a>Menu 요소
 메뉴 항목을 정의합니다. 메뉴의 6 개 종류 이들은: 컨텍스트, 메뉴, MenuController, MenuControllerLatched, 도구 모음 및 ToolWindowToolbar 합니다.  

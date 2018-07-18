@@ -28,6 +28,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031568"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/c + + 개요에 대 한 코드 분석
 

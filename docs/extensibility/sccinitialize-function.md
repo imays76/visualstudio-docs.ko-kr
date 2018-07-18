@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139125"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 함수
 이 함수 소스 제어 플러그 인을 초기화 하 고 기능 및 통합된 개발 환경 (IDE)에 대 한 제한을 제공 합니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102319"
 ---
 # <a name="expression-evaluator"></a>식 계산기
 식 계산기 (EE) IDE가 중단 모드에 있을 때 사용자가 볼 수 있도록 하는 언어를 구문 분석 하 고 실행할 때 변수 및 식 평가의 구문을 검사 합니다.  

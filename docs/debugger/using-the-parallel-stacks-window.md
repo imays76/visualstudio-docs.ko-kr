@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478293"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>스레드 및 병렬 스택 창 사용 하 여 작업 보기
 **병렬 스택** 창은 다중 스레드 응용 프로그램을 디버깅할 때 유용 합니다. 해당 **스레드 뷰** 응용 프로그램의 모든 스레드에 대 한 호출 스택 정보를 표시 합니다. 따라서 스레드와 스레드 스택 프레임 간을 탐색할 수 있습니다. 관리 코드에는 **작업 보기** 의 호출 스택이 표시 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 개체입니다. 네이티브 코드에는 **작업 보기** 의 호출 스택이 표시 [작업 그룹](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [병렬 알고리즘](/cpp/parallel/concrt/parallel-algorithms), [비동기 에이전트](/cpp/parallel/concrt/asynchronous-agents), 및 [간단한 작업](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)합니다.  

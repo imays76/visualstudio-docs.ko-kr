@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31556594"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>방법: 기술 지원을 위한 링크 지정
 게시 하는 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에는 **지원 URL** 웹 페이지 또는 사용자가 응용 프로그램에 대 한 정보를 가져오려면 이동할 파일 공유 속성을 식별 합니다. 이 속성은 선택 사항입니다. 응용 프로그램의 항목에 URL은 표시를 제공 하면 **프로그램 추가 / 제거** 대화 상자.  

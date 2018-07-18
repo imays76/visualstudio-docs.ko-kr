@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949594"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 정의의 속성
 DslDefinition 속성 정의 *도메인 특정 언어* 버전 번호와 같은 정의 속성입니다. DslDefinition 속성에 표시 된 **속성** 창에서 다이어그램의 빈 영역을 클릭할 때는 *도메인 특정 언어 디자이너*합니다.

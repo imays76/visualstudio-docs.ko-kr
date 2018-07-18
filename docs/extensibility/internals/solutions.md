@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129712"
 ---
 # <a name="solutions"></a>솔루션
 솔루션은 응용 프로그램을 만드는 함께 작동 하는 하나 이상의 프로젝트를 그룹화 합니다. 솔루션에 관련 된 프로젝트 및 상태 정보는 두 개의 솔루션 파일, 텍스트 기반 솔루션 (.sln) 파일 및 이진 솔루션 사용자 옵션 (.suo) 파일에 저장 됩니다.  

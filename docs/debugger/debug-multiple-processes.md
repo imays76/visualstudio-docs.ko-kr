@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478228"
 ---
 # <a name="debug-multiple-processes"></a>여러 프로세스 디버깅
 프로세스 디버깅 시작, 프로세스 간 전환, 중단 및 계속 실행, 소스 단계별, 디버깅을 중지 하 고 프로세스 종료 또는 프로세스에서 분리 하는 방법은 다음과 같습니다.  

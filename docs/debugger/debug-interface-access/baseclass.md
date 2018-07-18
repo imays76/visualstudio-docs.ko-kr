@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465423"
 ---
 # <a name="baseclass"></a>BaseClass
 사용자 정의 형식 (UDT) 기호에 대 한 각 기본 클래스와 자식으로 식별 되는 `SymTagBaseClass` 태그입니다. [idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) 기본 UDT에 대 한 기호를 포함 하는 속성 및 기본 UDT의 모든 속성은 사용할 수 있는이 BaseClass 기호의 일환으로 합니다.  

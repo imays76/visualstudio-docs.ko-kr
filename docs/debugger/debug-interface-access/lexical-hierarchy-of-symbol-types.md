@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473425"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>기호 형식의 어휘 계층 구조
 다음 표에서 어휘 계층 구조에서 기호 형식을 보여 줍니다.  

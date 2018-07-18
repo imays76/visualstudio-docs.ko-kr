@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126290"
 ---
 # <a name="registering-a-custom-debug-engine"></a>사용자 지정 디버그 엔진을 등록 하는 중
 디버그 엔진 해야 COM 규칙을 따르는 클래스 팩터리로 자신을 등록할 뿐만 아니라 Visual Studio 레지스트리 하위 키를 통해 Visual Studio와 함께 등록 합니다.  

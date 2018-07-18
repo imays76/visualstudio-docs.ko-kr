@@ -1,16 +1,16 @@
 ---
-title: "IMachineDebugManagerCookie 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IMachineDebugManagerCookie 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IMachineDebugManagerCookie interface
 ms.assetid: 04770935-3ccf-41e9-b0c1-c78376ab1e3c
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729623"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>IMachineDebugManagerCookie 인터페이스
 비슷합니다는 `IMachineDebugManager` 인터페이스는 `IMachineDebugManagerCookie` 인터페이스에서 디버그 쿠키를 지원 합니다.  

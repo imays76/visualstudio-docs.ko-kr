@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135654"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>레거시 언어 서비스에서 개요
 개요 기능 개요 또는 개요로 복잡 한 프로그램을 축소할 수 있습니다. 예를 들어 C#에서 모든 메서드는 메서드 시그니처를 보여 주는, 한 줄으로 축소할 수 있습니다. 또한 구조체와 클래스 구조체와 클래스의 이름에만 표시 하도록 축소할 수 있습니다. 메서드 내에서 단일 복잡 한 논리와 같은 문 중 첫 번째 줄만 표시 하 여 전체 흐름을 표시 하려면 축소 있습니다 `foreach`, `if`, 및 `while`합니다.  

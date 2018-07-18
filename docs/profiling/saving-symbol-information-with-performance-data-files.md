@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584934"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>성능 데이터 파일을 사용하여 기호 정보 저장
 

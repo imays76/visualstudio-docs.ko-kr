@@ -21,6 +21,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957829"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>방법: 클래스 디자이너에서 클래스를 부분 클래스로 분할
 

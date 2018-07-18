@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127046"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>방법: 편집기 포커스를 잃을 때 이벤트 발생
 경우에 따라 편집기 창 프레임에 포커스를 잃을 때 확인 해야 합니다. 예를 들어 편집기에 포커스를 잃을 후 코드 창에서 코드를 추출 해야 합니다. 다음 절차는 포커스를 잃을 편집기에 대 한 알림을 수신 하는 단계를 제공 합니다.  

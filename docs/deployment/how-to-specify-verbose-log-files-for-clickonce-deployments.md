@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557985"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>방법: ClickOnce 배포에 대한 자세한 로그 파일 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 모든 배포에 대 한 활동 로그 파일을 유지 관리합니다. 이러한 로그를 설치, 초기화, 업데이트 및 제거와 관련 된 정보가 문서는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 합니다. 세부 정보를 높이기 위해 하는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 레지스트리 편집기를 사용 하 여 이러한 로그 파일에 대 한 쓰기 (**regedit.exe**) 자세한 정도 수준을 지정 합니다.  

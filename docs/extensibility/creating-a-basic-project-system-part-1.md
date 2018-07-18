@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108338"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>기본 프로젝트 시스템을 1 부 만들기
 Visual Studio에서 프로젝트는 소스 코드 파일 및 기타 자산을 구성 하려면 개발자가 사용 하는 컨테이너입니다. 프로젝트에서 솔루션의 자식으로 나타나며는 **솔루션 탐색기**합니다. 프로젝트 구성, 빌드, 디버깅 및 소스 코드를 배포 및 웹 서비스, 데이터베이스 및 기타 리소스에 대 한 참조를 만들 수 있습니다.  

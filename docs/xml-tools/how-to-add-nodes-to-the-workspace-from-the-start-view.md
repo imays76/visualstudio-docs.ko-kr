@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548676"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>방법: 시작 뷰에서 작업 영역에 노드 추가
 

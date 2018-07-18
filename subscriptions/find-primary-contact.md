@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30862798"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Visual Studio 구독에 연결된 기본 연락처 찾기
 

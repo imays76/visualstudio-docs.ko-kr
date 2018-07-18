@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576861"
 ---
 # <a name="makedir-task"></a>MakeDir 작업
 디렉터리 및 부모 디렉터리(필요한 경우)를 만듭니다.  

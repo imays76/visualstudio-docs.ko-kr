@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548663"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>명령줄에서 계층 상호 작용 데이터 추가
 

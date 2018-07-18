@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100743"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>도구 창에는 도구 모음 추가
 이 연습에서는 도구 창으로 도구 모음을 추가 하는 방법을 보여 줍니다.  
@@ -113,7 +114,7 @@ ms.lasthandoff: 04/16/2018
   
      제목 바로 아래 도구 창의 왼쪽 맨 위에 있는 (같이 기본 아이콘) 도구 모음 표시 됩니다.  
   
-3.  도구 모음에서 메시지를 표시할 아이콘을 클릭 **TWTestCommandPackage 내 TWToolbar.TWTestCommand.MenuItemCallback()**합니다.  
+3.  도구 모음에서 메시지를 표시할 아이콘을 클릭 **TWTestCommandPackage 내 TWToolbar.TWTestCommand.MenuItemCallback()** 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [도구 모음 추가](../extensibility/adding-a-toolbar.md)

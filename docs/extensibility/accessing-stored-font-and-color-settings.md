@@ -20,12 +20,13 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105797"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>저장 된 글꼴 및 색 설정에 액세스
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 글꼴에 대 한 수정 된 설정을 저장 하 고 레지스트리에 색을 지정 합니다. 사용할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 이러한 설정에 액세스 하는 인터페이스입니다.
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>글꼴 및 색의 상태 지 속성을 시작 하려면
- 글꼴 및 색 정보는 다음 레지스트리 위치를에서 범주별으로 저장 됩니다: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 버전 >*\FontAndColors\\  *\<CategoryGUID >*] 여기서  *\<CategoryGUID >* 범주 GUID입니다.
+ 글꼴 및 색 정보는 다음 레지스트리 위치를에서 범주별으로 저장 됩니다: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 버전 >* \FontAndColors\\  *\<CategoryGUID >*] 여기서  *\<CategoryGUID >* 범주 GUID입니다.
 
  따라서 지 속성을 시작 하려면 VSPackage 수행 해야 합니다.
 

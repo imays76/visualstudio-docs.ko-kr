@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138927"
 ---
 # <a name="the-experimental-instance"></a>실험적 인스턴스
 Visual Studio 개발 환경에서 테스트 되지 않은 응용 프로그램을 변경할 수 있는 데이터를 보호 하려면 VSSDK 실험 하는 데 사용할 수 있는 한 실험적 공간을 제공 합니다. 일반적으로 Visual Studio를 사용 하 여 새 응용 프로그램을 개발 하지만이 실험적 인스턴스를 사용 하 여 실행할 수 있습니다.  
@@ -28,7 +29,7 @@ Visual Studio 개발 환경에서 테스트 되지 않은 응용 프로그램을
   
  특정 솔루션 외부 Visual Studio의 실험적 인스턴스를 시작 하려면 명령 창에서 다음 명령을 실행 합니다.  
   
- "*\<Visual studio 설치 경로 >*\Common7\IDE\devenv.exe" RootSuffix Exp  
+ "*\<Visual studio 설치 경로 >* \Common7\IDE\devenv.exe" RootSuffix Exp  
   
 > [!NOTE]
 >  실험적 인스턴스에서 레지스트리의 아래에 기록 되는 `<version number>Exp` 및 `<version number>Exp_Config` 노드. 예를 들어 Visual Studio 2015 실험적 레지스트리 영역은  

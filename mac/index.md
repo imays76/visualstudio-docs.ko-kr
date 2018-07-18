@@ -5,15 +5,16 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693694"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Mac용 Visual Studio 소개
 
-Mac용 Visual Studio는 모바일, 데스크톱 및 웹 응용 프로그램을 만들기 위한 다양한 기능을 갖춘 정교한 최신 IDE입니다. 다음 개발을 지원합니다.
+Mac용 Visual Studio는 모바일, 데스크톱 및 웹 응용 프로그램을 만들기 위한 다양한 기능을 갖춘 정교한 최신 IDE입니다. 다음과 같은 응용 프로그램의 개발을 지원합니다.
 
 * .NET을 사용하는 모바일: Android, iOS, tvOS, watchOS
 * Mac 데스크톱 앱

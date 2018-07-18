@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902297"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055: URI 반환 값은 문자열이면 안 됩니다.
 |||

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482063"
 ---
 # <a name="debugging-native-code-faqs"></a>네이티브 코드 디버깅 FAQ
 다음 항목은 자주 문의되는 몇 가지 질문에 대한 답입니다.  

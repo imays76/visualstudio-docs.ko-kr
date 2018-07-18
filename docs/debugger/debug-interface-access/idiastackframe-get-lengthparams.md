@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460871"
 ---
 # <a name="idiastackframegetlengthparams"></a>IDiaStackFrame::get_lengthParams
 매개 변수는 스택에의 바이트 수를 검색 합니다.  

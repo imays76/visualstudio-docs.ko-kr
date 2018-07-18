@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574209"
 ---
 # <a name="lc-task"></a>LC 작업
 licx 파일에서 .license 파일을 생성하는 LC.exe를 래핑합니다. LC.exe에 대한 자세한 내용은 [Lc.exe(라이선스 컴파일러)](/dotnet/framework/tools/lc-exe-license-compiler)를 참조하세요.  

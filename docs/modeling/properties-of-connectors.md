@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952733"
 ---
 # <a name="properties-of-connectors"></a>연결선의 속성
 커넥터 생성 된 디자이너에서 도메인 관계를 나타냅니다.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134384"
 ---
 # <a name="supported-event-types"></a>지원 되는 이벤트 유형
 Visual Studio 디버깅 현재는 다음 이벤트 유형을 지원합니다.  

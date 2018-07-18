@@ -1,14 +1,14 @@
 ---
-title: "Iactivescriptprofilercontrol3:: Enumheap 메서드 | Microsoft Docs"
-ms.custom: 
+title: 'Iactivescriptprofilercontrol3:: Enumheap 메서드 | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 2799d06d-20dd-4c12-9646-554c0ea3606e
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724563"
 ---
 # <a name="iactivescriptprofilercontrol3enumheap-method"></a>IActiveScriptProfilerControl3::EnumHeap 메서드
 인터페이스를 반환 ([IActiveScriptProfilerHeapEnum 인터페이스](../../winscript/reference/iactivescriptprofilerheapenum-interface.md))는 관련된 스크립트 엔진의 컨텍스트에서 GC 힙 개체에 대 한 반복 사용할 수 있는 합니다.  

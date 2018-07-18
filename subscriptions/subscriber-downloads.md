@@ -14,6 +14,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065159"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 구독자 다운로드 사용
 구독자 혜택의 일환으로 다양한 소프트웨어 다운로드에 액세스할 수 있습니다.  

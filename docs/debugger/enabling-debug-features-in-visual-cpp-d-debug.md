@@ -31,6 +31,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472580"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Visual C++에서 디버그 기능 활성화(/D_DEBUG)
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], 어설션을 기호를 사용 하 여 프로그램을 컴파일할 때 사용 하도록 설정 같은 디버깅 기능 **_DEBUG** 정의 합니다. 정의한 **_DEBUG** 두 가지 방법 중 하나에서:  

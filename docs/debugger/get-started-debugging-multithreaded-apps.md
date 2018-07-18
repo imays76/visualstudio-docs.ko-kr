@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926262"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Visual Studio에서 다중 스레드 응용 프로그램 디버깅을 시작.
 Visual Studio는 여러 가지 도구와 다중 스레드 응용 프로그램을 디버그할 수 있도록 사용자 인터페이스 요소를 제공 합니다. 스레드 마커를 사용 하는 방법을 보여 주는이 자습서는 **병렬 스택** 창 고 **병렬 조사식** 창과 조건부 중단점, 중단점 필터입니다. 이 자습서에서는 몇 분 정도 걸리지만 완료에 익숙해질 수 다중 스레드 응용 프로그램 디버깅을 위한 기능입니다.

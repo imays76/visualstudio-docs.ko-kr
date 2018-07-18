@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471810"
 ---
 # <a name="udt"></a>UDT
 각 클래스, 구조체 및 공용으로 식별 되는 `SymTagUDT` 기호입니다. 각 멤버, 함수, 데이터 또는 중첩된 형식 및 각 기본 클래스의 사용자 정의 형식 (UDT) 클래스 자식으로 나타납니다.  

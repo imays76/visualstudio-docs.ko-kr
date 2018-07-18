@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114640"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 이 인터페이스는 바인딩 및 평가 대 한 구문 분석 된 식 준비를 나타냅니다.  

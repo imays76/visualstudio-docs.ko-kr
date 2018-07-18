@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098721"
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>AsyncTaskMethodBuilder.m_builder 필드
 이 제네릭이 아닌 인스턴스 위임 하는 일반 작성기 개체를 나타냅니다.  

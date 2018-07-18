@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915393"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: serialization 생성자를 안전하게 하십시오.
 |||

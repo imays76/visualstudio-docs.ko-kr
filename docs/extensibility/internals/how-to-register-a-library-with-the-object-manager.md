@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132997"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>방법: 개체 관리자는 라이브러리를 등록 합니다.
 와 같은 도구 기호 검색 **클래스 뷰**, **개체 브라우저**, **호출 브라우저** 및 **기호 찾기 결과**를 볼 수 있도록 외부 구성 요소 또는 프로젝트의 기호입니다. 기호는 네임 스페이스, 클래스, 인터페이스, 메서드 및 다른 언어 요소를 포함 합니다. 라이브러리 이러한 기호를 추적 하 고 노출 하는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용 하 여 데이터를 사용 하 여 도구를 채울 개체 관리자입니다.  

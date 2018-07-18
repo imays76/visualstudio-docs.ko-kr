@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108013"
 ---
 # <a name="core-interfaces"></a>코어 인터페이스
 다음 인터페이스는 디버거를 사용 하 여 확장 하기 위한 핵심 인터페이스는 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]합니다.  

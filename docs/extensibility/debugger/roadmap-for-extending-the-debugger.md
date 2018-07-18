@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128106"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>디버거에서 확장에 대 한 로드맵
 확장 하기 위한 가이드 및 참조 정보를 제공 하는이 설명서는 [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] 으로 디버거는 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다.  

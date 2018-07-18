@@ -25,6 +25,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477693"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 다른 컴퓨터에 배포된 Visual Studio 응용 프로그램을 디버그할 수 있습니다. 이렇게 하려면 Visual Studio 원격 디버거를 사용합니다.

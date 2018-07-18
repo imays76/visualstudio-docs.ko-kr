@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459924"
 ---
 # <a name="idiaimagedatagetvirtualaddress"></a>IDiaImageData::get_virtualAddress
 이미지의 가상 메모리 내의 위치를 검색합니다.  

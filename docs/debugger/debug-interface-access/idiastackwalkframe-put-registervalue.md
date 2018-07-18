@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464166"
 ---
 # <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
 레지스터의 값을 설정합니다.  

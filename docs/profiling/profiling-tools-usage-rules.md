@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31582087"
 ---
 # <a name="profiling-tools-usage-rules"></a>프로파일링 도구 사용 규칙
 프로파일링 도구 사용 범주의 성능 규칙은 프로파일러를 사용하여 데이터를 가장 효율적으로 수집하기 위한 지침을 제공합니다.  

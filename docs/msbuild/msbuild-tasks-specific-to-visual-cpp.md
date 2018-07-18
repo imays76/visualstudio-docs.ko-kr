@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573761"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visaul C++ 관련 MSBuild 작업
 작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. Visual C++가 설치되면 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]와 함께 설치되는 작업 외에 다음 작업을 사용할 수 있습니다. 자세한 내용은 [MSBuild(Visual C++) 개요](/cpp/build/msbuild-visual-cpp-overview)를 참조하세요.  

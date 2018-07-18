@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465332"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 방법으로는 스택 워크.pdb 파일에 정보를 사용 하 여 제공 합니다.  

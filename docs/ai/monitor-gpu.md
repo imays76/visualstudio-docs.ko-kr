@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709104"
 ---
 # <a name="monitoring-gpu-utilization"></a>GPU 사용률 모니터
 원격 Linux 컴퓨터의 GPU 사용률을 모니터링하려면:

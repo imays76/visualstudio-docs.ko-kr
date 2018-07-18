@@ -1,11 +1,11 @@
 ---
 title: IProcessDebugManager::AddApplication | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IProcessDebugManager.AddApplication
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IProcessDebugManager::AddApplication
 ms.assetid: 73828299-11eb-4c58-ad70-f80f2d0eede8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729523"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
 실행 중인 응용 프로그램의 컴퓨터 디버그 관리자 목록에 응용 프로그램을 추가 합니다.  

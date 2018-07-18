@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31118741"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 계속 중지 된 상태에서이 프로세스를 실행 합니다. 이전 실행 상태 (예: 단계) 지워지고 프로세스를 다시 실행을 시작 합니다.  

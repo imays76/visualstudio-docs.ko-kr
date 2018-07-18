@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131978"
 ---
 # <a name="commands-menus-and-toolbars"></a>명령, 메뉴 및 도구 모음
 메뉴와 도구 모음 방식으로 사용자가 VSPackage의 명령에 액세스 합니다. 명령은 문서 인쇄, 보기 새로 고침 또는 새 파일 만들기 등의 작업을 수행하는 함수입니다. 메뉴 및 도구 모음은 사용자에게 명령을 제공하는 편리한 그래픽 방법입니다. 일반적으로 관련 명령은 동일한 메뉴 또는 도구 모음에 함께 클러스터됩니다.  

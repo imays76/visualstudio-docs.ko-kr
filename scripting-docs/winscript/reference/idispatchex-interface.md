@@ -1,17 +1,17 @@
 ---
-title: "IDispatchEx 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDispatchEx 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDispatchEx interface, about IDispatchEx
 - IDispatchEx interface
 ms.assetid: 37a3303f-f78e-4b5b-aac8-b836c92819de
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24730303"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx 인터페이스
 `IDispatchEx`의 확장은 `IDispatch` 인터페이스 등 두 가지 스크립팅 언어의 언어와 동적에 적절 한 기능을 지원 합니다. 이 섹션에서는 설명는 `IDispatchEx` 간의 차이점을 자체 인터페이스 `IDispatch` 및 `IDispatchEx`, 및 확장에 대 한 설명입니다. 판독기에 익숙한 것으로 예상 `IDispatch` 고에 대 한 액세스는 `IDispatch` 설명서입니다.  

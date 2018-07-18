@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570602"
 ---
 # <a name="msbuild-targets"></a>MSBuild 대상
 대상은 특정 순서로 작업을 그룹화하며 빌드 프로세스를 더 작은 단위로 팩터링될 수 있도록 합니다. 예를 들어 하나의 대상이 빌드에 대한 준비를 위해 출력 디렉터리에서 모든 파일을 삭제할 수 있는 반면 다른 대상은 프로젝트에 대한 입력을 컴파일하고 빈 디렉터리에 배치합니다. 작업에 대한 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  

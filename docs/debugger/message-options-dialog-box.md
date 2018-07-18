@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474923"
 ---
 # <a name="message-options-dialog-box"></a>메시지 옵션 대화 상자
 에 표시 되는 메시지를 선택 하려면이 대화 상자를 사용 하 여 [메시지 뷰](../debugger/messages-view.md)합니다. 이 대화 상자를 표시 하려면 선택 **로그 메시지** 에서 **Spy** 메뉴.  

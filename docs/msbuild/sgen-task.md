@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570017"
 ---
 # <a name="sgen-task"></a>SGen 작업
 지정된 어셈블리의 형식에 대한 XML serialization 어셈블리를 만듭니다. 이 작업은 XML Serializer 생성기 도구(Sgen.exe)를 래핑합니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)를 참조하세요.  

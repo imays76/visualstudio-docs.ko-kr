@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463278"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 데이터 소스에 포함 된 다양 한 줄 번호를 열거 합니다.  

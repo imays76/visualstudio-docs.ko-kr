@@ -23,6 +23,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548559"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가
   작업 창에 Microsoft Office Word 문서 또는 Microsoft Excel 통합 문서를 추가 하려면 먼저 Windows Forms 사용자 정의 컨트롤을 만듭니다. 그런 다음 사용자 정의 컨트롤을 추가 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 속성은 `ThisDocument.ActionsPane` 필드 (Word) 또는 `ThisWorkbook.ActionsPane` 프로젝트에서 필드 (Excel).  

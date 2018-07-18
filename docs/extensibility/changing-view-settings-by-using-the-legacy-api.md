@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099339"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 보기 설정 변경
 가상 공간, 자동 줄 바꿈 및 선택 영역 여백을 등의 핵심 편집기 기능에 대 한 설정을 통해 사용자가 변경할 수 있습니다는 **옵션** 대화 상자. 하지만 이러한 설정을 변경할 수 이기도 프로그래밍 방식으로 합니다.  

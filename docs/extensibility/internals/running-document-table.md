@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134102"
 ---
 # <a name="running-document-table"></a>실행 중인 문서 테이블
 IDE에는 실행 중인 문서 테이블 (RDT) 라는 내부 구조에 현재 열려 있는 모든 문서 목록을 유지 관리 합니다. 이 목록은 이러한 문서 편집 현재는 여부에 관계 없이 메모리에 열려 있는 모든 문서를 포함 합니다. 문서는 프로젝트 또는 주 프로젝트 파일 (예를 들어.vcxproj 파일)에서 파일을 포함 하 여 유지 되는 모든 항목입니다.  

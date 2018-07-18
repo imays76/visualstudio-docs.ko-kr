@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919054"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>관리 코드에 대 한 설정 관리 최소 규칙 규칙
 관리 최소 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 비롯 하 여 코드의 가장 중요 한 문제에 집중 합니다. 프로젝트에 대해 만드는이 규칙 사용자 지정 규칙 집합에 있는 집합을 포함 해야 합니다.

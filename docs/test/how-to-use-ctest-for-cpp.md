@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ec0dd78b7bfdc3389a9867478e546c5456e42437
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751035"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Visual Studio에서 CTest for C++를 사용하는 방법 | Microsoft Docs
 
@@ -29,7 +30,7 @@ Visual Studio 2017 버전 15.6에서 CTest는 **테스트 탐색기**에 완전�
 
 다음 그림은 Google Test 프레임워크를 사용하여 실행되는 CTest의 결과를 보여줍니다.
 
-![VS2017 15.6에서 Google Test 프레임워크를 사용한 CTest](media/ctest-test-explorer.png "테스트 탐색기의 CTest 및 Google Test")
+![VS2017 15.6의 Google Test 프레임워크를 사용한 CTest](media/ctest-test-explorer.png)
 
 CTest를 사용하지만 Google 또는 Boost 어댑터를 사용하지 않는 경우 개별 테스트 메서드 수준 대신 CTest 수준에서 결과가 표시됩니다. CTest 전용 실행 파일을 디버그하고 단계별로 실행할 수 있지만 개별 테스트에 대한 스택 추적은 지원되지 않습니다.
 
@@ -37,7 +38,7 @@ CTest를 사용하지만 Google 또는 Boost 어댑터를 사용하지 않는 �
 
 **Visual Studio 2017 버전 15.5**에서 CTest는 **테스트 탐색기**에 통합되어 있지 않습니다. CMake 주 메뉴나, **솔루션 탐색기**에서 **CMakeLists.txt** 파일의 바로 가기 메뉴에서 테스트를 실행할 수 있습니다. 테스트 결과는 Visual Studio **출력 창**으로 전달됩니다.
 
-![VS2017 15.5에서 CTest 테스트 실행](media/cpp-cmake-run-tests.png "15.5에서 CTest 테스트 실행")
+![VS2017 15.5에서 CTest 테스트 실행](media/cpp-cmake-run-tests.png)
 
 ## <a name="see-also"></a>참고 항목
 

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267732"
 ---
 # <a name="chart-control"></a>차트 컨트롤
   <xref:Microsoft.Office.Tools.Excel.Chart> 컨트롤은 이벤트를 노출하는 차트 개체입니다. 워크시트에 차트를 추가하면 Visual Studio에서 Microsoft Office Excel 개체 모델을 트래버스하지 않고 직접 프로그래밍할 수 있는 <xref:Microsoft.Office.Tools.Excel.Chart> 개체를 만듭니다.  

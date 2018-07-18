@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917582"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: 투명한 메서드는 보안 요청을 사용해서는 안 됩니다.
 |||

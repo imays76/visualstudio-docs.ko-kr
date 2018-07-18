@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132563"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>솔루션에 대 한 부모 컨테이너 폴더 만들기
 소스 제어 플러그 인 API 버전 1.2에서에서 사용자 솔루션 내에서 모든 웹 프로젝트에 대 한 단일 루트 소스 제어 위치를 지정할 수 있습니다. 이 단일 루트는 슈퍼 통합 루트 (도메인 이름 얻기) 라고 합니다.  

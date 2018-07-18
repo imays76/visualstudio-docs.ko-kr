@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578690"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 작업
 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]에 대한 경로를 검색합니다.  

@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da44be7f972a75e143e00346bf4a39d0bdf65c27
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8af903abb15d06d8d76d73cca4a9c337d45ee45
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765634"
 ---
 # <a name="how-to-choose-sampling-events"></a>방법: 샘플링 이벤트 선택
 기본적으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구는 프로파일링된 프로세스에 사용되는 프로세서 주기 수로 지정된 간격으로 성능 데이터를 수집합니다. 간격의 기본 주기 수는 10,000,000이며, 1GH 컴퓨터에서 약 0.01초가 걸립니다. 간격의 주기 수를 변경하고 샘플 이벤트를 변경할 수 있습니다. 다음 샘플 이벤트를 사용할 수 있습니다.  

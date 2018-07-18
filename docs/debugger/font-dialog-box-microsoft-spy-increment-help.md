@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471166"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>글꼴 대화 상자(Microsoft Spy++ 도움말)
 이 대화 상자를 사용 하 여 사용 되는 문자 글꼴을 구성 하는 [Spy + + 뷰](../debugger/spy-increment-views.md) 창. 이 대화 상자를 표시 하려면 확장 된 **보기** 메뉴 선택 **글꼴**합니다.  

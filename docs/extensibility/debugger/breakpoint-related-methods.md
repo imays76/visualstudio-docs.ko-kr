@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107292"
 ---
 # <a name="breakpoint-related-methods"></a>중단점 관련 메서드
 디버그 엔진 (DE)에 중단점 설정을 지원 해야 합니다. Visual Studio 디버깅 중단점의 형식을 지원 합니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144371"
 ---
 # <a name="source-control-plug-in-api-functions"></a>소스 제어 플러그 인 API 함수
 소스 제어 플러그 인 API에는이 API에 따라 플러그 인 소스 제어에서 구현 해야 하는 다음 함수를 제공 합니다. 비트 플래그와 연결 된 각 함수와 의미 체계의 서명 및 다른 매개 변수는이 참조에 자세히 설명 합니다.  
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="requirements"></a>요구 사항  
  헤더: scc.h  
   
- (환경 SDK에 제공 된 공통 폴더는 기본적으로 포함 *[드라이브]*\Program Files\VSIP 8.0\EnvSDK\common\inc; MSSCCI 샘플을 사용 하 여 VSIP 폴더에도 제공 된 *[드라이브]*\Program Files\VSIP 8.0\MSSCCI)입니다.  
+ (환경 SDK에 제공 된 공통 폴더는 기본적으로 포함 *[드라이브]* \Program Files\VSIP 8.0\EnvSDK\common\inc; MSSCCI 샘플을 사용 하 여 VSIP 폴더에도 제공 된 *[드라이브]* \Program Files\VSIP 8.0\MSSCCI)입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)   

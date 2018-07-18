@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125553"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 이 구조체는 클래스의 메서드에의 주소를 나타냅니다.  

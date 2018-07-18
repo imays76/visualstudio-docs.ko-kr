@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101380"
 ---
 # <a name="creating-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 만들기
 디버그 엔진 (DE)는 구성 요소로, 특정 런타임 아키텍처를 디버깅할 수 있습니다. 일반적으로 런 타인 환경 당 하나만 DE 구현이 됩니다.  

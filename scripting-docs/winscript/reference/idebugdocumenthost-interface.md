@@ -1,16 +1,16 @@
 ---
-title: "IDebugDocumentHost 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugDocumentHost 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentHost interface
 ms.assetid: 2fed4220-b6a2-47c6-bf28-daad7dd5c42d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726993"
 ---
 # <a name="idebugdocumenthost-interface"></a>IDebugDocumentHost 인터페이스
 구문 색 지정 하 고 디버거 등의 호스트 관련 기능을 노출 합니다. `IDebugDocumentHelper::SetDebugDocumentHost` 메서드는이 인터페이스를 인수로 사용 합니다.  

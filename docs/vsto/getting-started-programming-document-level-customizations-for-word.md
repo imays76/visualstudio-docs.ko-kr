@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448856"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word 용 문서 수준 사용자 지정 프로그래밍 시작
   바로 시작 하는 Visual Studio를 사용 하 여 Microsoft Office Word 용 문서 수준 사용자 지정 만들기를 경우 알아야 할 다음과 같습니다.  

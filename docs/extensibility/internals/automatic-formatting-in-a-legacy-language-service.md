@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126702"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>자동 레거시 언어 서비스에서 형식 지정
 자동 서식을 사용 하 여 언어 서비스는 자동으로 코드 조각을 삽입 코드의 사용자가 알려진된 코드 구문을 입력 하기 시작할 때입니다.  

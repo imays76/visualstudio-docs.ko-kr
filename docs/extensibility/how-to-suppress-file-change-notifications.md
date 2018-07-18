@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128774"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>방법: 파일 변경 알림 표시 안 함
 메시지와 함께 대화 상자는 표시 텍스트 버퍼를 나타내는 물리적 파일 변경 되었을 때 **다음 항목에 변경 내용을 저장 하 시겠습니까?** 이 파일 변경 알림을 라고 합니다. 하지만 많은 변경 하는 경우 파일을 되도록이 대화 상자를 반복 해 서 다시 표시 될 수 있습니다 신속 하 게 번거로울.  

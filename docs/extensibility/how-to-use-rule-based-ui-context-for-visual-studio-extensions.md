@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133711"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>방법: Visual Studio 확장에 대 한 규칙 기반 UI 컨텍스트를 사용 합니다.
 Visual Studio에서는 특정 때 Vspackage의 로드 잘 알려진 <xref:Microsoft.VisualStudio.Shell.UIContext>s 활성화 됩니다. 이러한 UI 컨텍스트가 하지 매우가 덜 세분화 된 옵션이 없음 확장 작성자를 종료 하지만 않으며 지점 앞를 활성화 하는 사용 가능한 UI 컨텍스트를 선택할 수 있습니다 않았는지 확인 하 고 VSPackage를 로드 합니다. 잘 알려진 UI 컨텍스트 목록이 참조 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>합니다.  

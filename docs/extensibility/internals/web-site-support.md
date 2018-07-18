@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139853"
 ---
 # <a name="web-site-support"></a>웹 사이트 지원
 웹 사이트 프로젝트 시스템은 웹 프로젝트를 만드는 프로젝트 시스템. 웹 프로젝트는 웹 응용 프로그램에 만듭니다. 웹 사이트 프로젝트 코드를 연결 된 각 웹 페이지에 대 한 하나의 실행 파일을 생성 합니다. 실행 파일을 추가 /App_Code 폴더의 소스 코드 파일에서 생성 됩니다.  

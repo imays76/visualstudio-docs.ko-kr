@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704238"
 ---
 # <a name="evaluate-statement-command"></a>문 실행 명령
 지정된 문을 평가 및 표시합니다.

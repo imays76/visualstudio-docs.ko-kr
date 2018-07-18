@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102696"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>디버거 확장성 시작
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 만들고 프로그램 내에서 디버그 하는 데 사용 되는 디버거 구성 요소를 사용자 지정 하는 데 필요한 정보를 제공는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 환경입니다.  

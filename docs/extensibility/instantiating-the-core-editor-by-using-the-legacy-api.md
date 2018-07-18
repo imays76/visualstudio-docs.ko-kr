@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132339"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>코어 편집기 레거시 API를 사용 하 여 인스턴스화
 편집기는 텍스트 삽입, 삭제, 복사 및 붙여넣기 등의 기능을 편집 합니다. 텍스트 색 지정, 들여쓰기 및 IntelliSense 문 완성 등의 언어 서비스에서 제공 하는 설정과 이러한 함수를 결합 합니다.  

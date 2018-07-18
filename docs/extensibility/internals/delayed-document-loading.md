@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134445"
 ---
 # <a name="delayed-document-loading"></a>문서 로드를 지연합니다.
 사용자가 Visual Studio 솔루션을 대부분의 관련된 문서 즉시 로드 되지 않습니다. 문서 창 프레임 초기화 보류 중 상태에 만들어지고 (스텁 프레임 라고 함) 자리 표시자 문서에는 실행 중인 문서 테이블 (RDT)에 배치 됩니다.  
@@ -64,4 +65,4 @@ ms.lasthandoff: 04/16/2018
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>초기화를 수행 하는 경우 이러한 참조에 대 한 확장 테스트  
  확장 프로그램에서 초기화 하는 경우 강제로 찾기 어려울 수 있도록 문서 초기화 되었는지 여부를 나타내는 시각적 없습니다 표시 있습니다. 텍스트 완전히 초기화 되지 않은 모든 문서 제목을 발생 하기 때문에 보다 쉽게 확인 하는 레지스트리 키를 설정할 수 있습니다 `[Stub]` 제목에서입니다.  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**설정, **StubTabTitleFormatString** 를 **[스텁] {0}**합니다.
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** 설정, **StubTabTitleFormatString** 를 **[스텁] {0}** 합니다.
