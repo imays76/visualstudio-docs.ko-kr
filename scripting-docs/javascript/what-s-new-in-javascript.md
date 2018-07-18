@@ -1,4 +1,4 @@
----
+﻿---
 title: JavaScript의 새로운 기능 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
