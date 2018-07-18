@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입 | Microsoft Docs'
+title: '방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bbbcc0543ce6017ac83ed2d1fcc09fed201e466f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257214"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입
   Microsoft Office Word 문서에 텍스트를 삽입하는 기본 방법에는 다음 세 가지가 있습니다.  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
 -   <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 개체의 <xref:Microsoft.Office.Interop.Word.Selection> 메서드를 사용하여 커서 또는 선택 영역에 텍스트를 삽입합니다.  
   
 > [!NOTE]  
->  콘텐츠 컨트롤 및 책갈피에 텍스트를 삽입할 수도 있습니다. 자세한 내용은 참조 [콘텐츠 컨트롤](../vsto/content-controls.md) 및 [책갈피 컨트롤](../vsto/bookmark-control.md)합니다.  
+>  콘텐츠 컨트롤 및 책갈피에 텍스트를 삽입할 수도 있습니다. 자세한 내용은 [콘텐츠 컨트롤](../vsto/content-controls.md) 하 고 [Bookmark 컨트롤](../vsto/bookmark-control.md)합니다.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="inserting-text-in-a-range"></a>범위에 텍스트 삽입  
+## <a name="insert-text-in-a-range"></a>범위에 텍스트 삽입  
  <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 개체의 <xref:Microsoft.Office.Interop.Word.Range> 속성을 사용하여 문서에 텍스트를 삽입합니다.  
   
-#### <a name="to-insert-text-in-a-range"></a>범위에 텍스트를 삽입하려면  
+### <a name="to-insert-text-in-a-range"></a>범위에 텍스트를 삽입하려면  
   
 1.  문서의 시작 부분에 범위를 지정하고 **New Text**텍스트를 삽입합니다.  
   
@@ -61,10 +62,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
   
-## <a name="replacing-text-in-a-range"></a>범위에서 텍스트 바꾸기  
+## <a name="replace-text-in-a-range"></a>범위에서 텍스트 바꾸기  
  지정된 범위에 텍스트가 포함되어 있는 경우 범위에 있는 모든 텍스트가 삽입된 텍스트로 바뀝니다.  
   
-#### <a name="to-replace-text-in-a-range"></a>범위의 텍스트를 바꾸려면  
+### <a name="to-replace-text-in-a-range"></a>범위의 텍스트를 바꾸려면  
   
 1.  문서의 처음 12자로 구성된 <xref:Microsoft.Office.Interop.Word.Range> 개체를 만듭니다.  
   
@@ -88,10 +89,10 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
-## <a name="inserting-text-using-typetext"></a>TypeText를 사용하여 텍스트 삽입  
+## <a name="insert-text-using-typetext"></a>TypeText를 사용 하 여 텍스트 삽입  
  <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 메서드는 선택 영역에 텍스트를 삽입합니다. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 는 사용자 컴퓨터에 설정된 옵션에 따라 다르게 동작합니다. 다음 프로시저의 코드에서는 <xref:Microsoft.Office.Interop.Word.Selection> 개체 변수를 선언하고 **Overtype** 옵션이 설정된 경우 해제합니다. **Overtype** 옵션이 활성화된 경우 커서 옆에 있는 텍스트를 모두 덮어씁니다.  
   
-#### <a name="to-insert-text-using-the-typetext-method"></a>TypeText 메서드를 사용하여 텍스트를 삽입하려면  
+### <a name="to-insert-text-using-the-typetext-method"></a>TypeText 메서드를 사용하여 텍스트를 삽입하려면  
   
 1.  <xref:Microsoft.Office.Interop.Word.Selection> 개체 변수를 선언합니다.  
   
@@ -120,16 +121,16 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
      [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- 키보드에 있는 백스페이스 키의 기능과 유사한 <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> 개체의 <xref:Microsoft.Office.Interop.Word.Selection> 메서드를 사용할 수도 있습니다. 그러나 텍스트 삽입 및 조작의 경우 <xref:Microsoft.Office.Interop.Word.Range> 개체가 더 많은 제어를 제공합니다.  
+ 사용할 수도 있습니다는 <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> 메서드를 <xref:Microsoft.Office.Interop.Word.Selection> 의 기능을 모방 하는 개체를 **백스페이스** 키보드의 키. 그러나 텍스트 삽입 및 조작의 경우 <xref:Microsoft.Office.Interop.Word.Range> 개체가 더 많은 제어를 제공합니다.  
   
  다음 예제에서는 전체 코드를 보여 줍니다. 이 예제를 사용하려면 프로젝트의 `ThisDocument` 또는 `ThisAddIn` 클래스에서 코드를 실행합니다.  
   
  [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
  [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [방법: 프로그래밍 방식으로 문서의 텍스트 서식 지정](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
   
   

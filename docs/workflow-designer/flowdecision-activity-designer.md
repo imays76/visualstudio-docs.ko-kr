@@ -1,5 +1,5 @@
 ---
-title: 워크플로 디자이너-FlowDecision 활동 디자이너
+title: FlowDecision 활동 디자이너-워크플로 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 033eeff34c095b4598a02a386794379d06086450
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08c8aadb3c452a59f1b44cd030331164384d23bb
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978137"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758339"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 활동 디자이너
 
@@ -28,16 +28,18 @@ ms.locfileid: "31978137"
 흐름이 두 경로로 분기될 수 있는 경우 <xref:System.Activities.Statements.FlowDecision>을 사용합니다. <xref:System.Activities.Statements.FlowDecision> 노드에는 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 또는 <xref:System.Activities.Statements.FlowNode>의 두 가지 결과와 각각 연결된 <xref:System.Activities.Statements.FlowDecision.True%2A>와 <xref:System.Activities.Statements.FlowDecision.False%2A>이 있습니다. <xref:System.Activities.Statements.FlowDecision.Condition%2A>을 평가하고 이 평가의 값으로 <xref:System.Activities.Statements.FlowNode>에서 처리할 다음 번 <xref:System.Activities.Statements.Flowchart>를 결정합니다.
 
 ### <a name="using-the-flowdecision-designer"></a>FlowDecision 디자이너 사용
- **FlowDecision** 디자이너에서 확인할 수 있습니다는 **순서도** 의 범주는 **도구 상자**를 클릭 하 여 액세스는 **도구 상자** 워크플로 디자이너에는 탭 (또는 선택 **도구 모음** 에서 **보기** 메뉴나 CTRL + ALT + X.)
 
- **FlowDecision** 에서 디자이너를 끌 수 있습니다는 **도구 상자** 내에서 워크플로 디자이너 화면에 끌어 놓 및는 **순서도** 활동 디자이너입니다. 그렇기 때문에 <xref:System.Activities.Statements.FlowDecision> 레이블이 **의사 결정** 내에서 <xref:System.Activities.Statements.Flowchart> 활동입니다. 디자이너 위로 마우스 및 **True** 및 **False** 두 분기 정사각형 핸들이 나타납니다.
+**FlowDecision** 디자이너에서 찾을 수 있습니다 합니다 **순서도** 범주의 **도구 상자**를 클릭 하 여 액세스를 **도구 상자** 워크플로 디자이너의 탭입니다. 또는 선택할 **도구 상자** 에서 합니다 **뷰** 메뉴 또는 키를 눌러 **Ctrl**+**Alt** + **X**합니다.
 
- 끌어 놓은 후는 **FlowDecision** 디자이너와 다른 디자이너를는 **순서도**, 노드를 연결 될 수의 실행 순서를 지정 하는 함께 합니다. 소스 노드 간의 링크를 만들려면 (포함 하는 **True** 및 **False** 의 분기는 **FlowDecision**)와 마우스 소스 노드의 디자이너 위로 가져가면 대상 노드 및 정사각형 핸들이 양쪽에 나타납니다. 정사각형 핸들 중 하나를 클릭한 후 마우스 단추를 누른 상태에서 핸들 중 하나로 끕니다. 대상 노드 위로 마우스를 가져가면 대상 노드 주변에도 이 핸들이 비슷한 방식으로 나타납니다. 마우스 단추를 놓으면 두 노드 간 연결이 만들어지고 소스 디자이너에서 대상 디자이너를 향하는 화살표로 표시됩니다.
+**FlowDecision** 디자이너에서 끌 수 있습니다 합니다 **도구 상자** 내에서 워크플로 디자이너 화면에 끌어 놓 및를 **순서도** 활동 디자이너입니다. 이렇게를 <xref:System.Activities.Statements.FlowDecision> 레이블이 지정 된 **의사 결정** 내에서 <xref:System.Activities.Statements.Flowchart> 활동입니다. 디자이너 위로 마우스와 **True** 하 고 **False** 두 분기에 대 한 정사각형 핸들이 나타납니다.
 
- 명시 하는 식을 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 에 입력할 수 있습니다는 **조건** 상자는 **속성** 힌트 텍스트가 "VB 식 입력" 이라고 표시를 클릭 하 여 창.
+위로 끌어 놓은 후는 **FlowDecision** 디자이너와 다른 디자이너를 합니다 **순서도**, 노드를 연결할 수 있습니다 실행 순서를 지정 하는 함께 합니다. 소스 노드 간의 링크를 만드는 (포함 된 **True** 및 **False** 의 분기를 **FlowDecision**) 및 대상 노드를 소스 노드의 디자이너 위로 마우스 및 정사각형 핸들이 양쪽에 나타납니다. 정사각형 핸들 중 하나를 클릭한 후 마우스 단추를 누른 상태에서 핸들 중 하나로 끕니다. 대상 노드 위로 마우스를 가져가면 대상 노드 주변에도 이 핸들이 비슷한 방식으로 나타납니다. 마우스 단추를 놓으면 두 노드 간 연결이 만들어지고 소스 디자이너에서 대상 디자이너를 향하는 화살표로 표시됩니다.
+
+명시 하는 식을 합니다 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 에 입력할 수 있습니다 합니다 **조건** 상자는 **속성** 힌트 텍스트를 "VB 식 입력" 이라고 표시를 클릭 하 여 창.
 
 ### <a name="the-flowdecision-properties"></a>FlowDecision 속성
- 다음 표에서는 <xref:System.Activities.Statements.FlowDecision> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표 또는 디자이너 화면에서 편집할 수 있습니다.
+
+다음 표에서는 <xref:System.Activities.Statements.FlowDecision> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표 또는 디자이너 화면에서 편집할 수 있습니다.
 
 |속성 이름|필수|용도|
 |-------------------|--------------|-----------|

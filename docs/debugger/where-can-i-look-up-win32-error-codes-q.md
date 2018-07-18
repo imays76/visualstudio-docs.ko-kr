@@ -20,22 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d919733f1caf654460cf342da05f2549dfa167
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ecddd2a8ca87d4c86b3cdf776fcf2e475efb8836
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476213"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056926"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Win32 오류 코드를 어디에서 찾을 수 있습니까?
 기본 시스템 설치의 INCLUDE 디렉터리에 있는 WINERROR.H에는 Win32 API 함수에 대한 오류 코드 정의가 포함되어 있습니다.  
   
- 코드를 입력 하 여 오류 코드를 조회할 수 있습니다는 **조사식** 창 또는 **간략 한 조사식** 대화 상자. 예를 들어:  
+ 코드를 입력 하 여 오류 코드를 조회할 수 있습니다 합니다 **Watch** 창 또는 **간략 한 조사식** 대화 상자. 예를 들어:  
   
-```  
-0x80000004,hr  
-```  
+`0x80000004,hr` 
+
   
 ## <a name="see-also"></a>참고 항목  
- [네이티브 코드 디버깅 Faq](../debugger/debugging-native-code-faqs.md)   
+ [네이티브 코드 디버그 Faq](../debugger/debugging-native-code-faqs.md)   
  [네이티브 코드 디버그](../debugger/debugging-native-code.md)

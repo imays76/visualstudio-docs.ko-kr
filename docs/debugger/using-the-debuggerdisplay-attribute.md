@@ -1,5 +1,5 @@
 ---
-title: DebuggerDisplay 특성을 사용 하 여 | Microsoft Docs
+title: DebuggerDisplay 특성 사용 | Microsoft Docs
 ms.custom: ''
 ms.date: 08/09/2017
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573247"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057588"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 사용
-[DebuggerDisplayAttribute 클래스](/dotnet/api/system.diagnostics.debuggerdisplayattribute) 개체, 속성 또는 필드가 디버거 변수 창에 표시 되는 방식을 제어 합니다. 이 특성은 형식, 대리자, 속성, 필드 및 어셈블리에 적용할 수 있습니다.  
+합니다 [DebuggerDisplayAttribute 클래스](/dotnet/api/system.diagnostics.debuggerdisplayattribute) 개체, 속성 또는 필드가 디버거 변수 창에 표시 되는 방법을 제어 합니다. 이 특성은 형식, 대리자, 속성, 필드 및 어셈블리에 적용할 수 있습니다.  
   
  `DebuggerDisplay` 특성에는 형식 인스턴스에 대한 값 열에 표시되는 문자열인 단일 인수가 있습니다. 이 문자열에는 중괄호(`{` 및 `}`)가 포함될 수 있습니다. 중괄호 쌍 안의 텍스트는 필드, 속성 또는 메서드로 확인됩니다.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "34573247"
   
  Autoexp.cs를 빌드하려면 VS2015용 개발자 명령 프롬프트를 열고 다음 명령을 실행합니다.  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  
@@ -61,7 +61,7 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>DebuggerDisplay에서 식 사용  
  DebuggerDisplay 특성에서는 중괄호 사이에 일반 식을 사용할 수 있지만 이런 방식은 사용하지 않는 것이 좋습니다.  
   
- DebuggerDisplay의 일반 식에서는 대상 형식의 현재 인스턴스에 한해 `this` 포인터에 암시적으로 액세스할 수 있습니다. 식에서 별칭, 지역 변수 또는 포인터에는 액세스할 수 없습니다. 식에서 속성을 참조하는 경우 해당 속성의 특성은 처리되지 않습니다. 예를 들어 C# 코드 `[DebuggerDisplay("Object {count - 2}")]` 표시 `Object 6` 경우 필드 `count` 가 8입니다.  
+ DebuggerDisplay의 일반 식에서는 대상 형식의 현재 인스턴스에 한해 `this` 포인터에 암시적으로 액세스할 수 있습니다. 식에서 별칭, 지역 변수 또는 포인터에는 액세스할 수 없습니다. 식에서 속성을 참조하는 경우 해당 속성의 특성은 처리되지 않습니다. 예를 들어 C# 코드 `[DebuggerDisplay("Object {count - 2}")]` 표시 됩니다 `Object 6` 하는 경우 필드 `count` 8 인 합니다.  
   
  DebuggerDisplay에서 식을 사용하면 다음과 같은 문제가 발생할 수 있습니다.  
   
@@ -88,7 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
-", nq" 접미사 지시 최종 값을 표시할 때 따옴표를 제거 하는 식 계산기 (nq = 따옴표 없음). 
+", nq" 접미사 지시 최종 값을 표시 하는 경우 따옴표를 제거 하는 식 계산기 (nq = 따옴표 없음). 
   
 ## <a name="example"></a>예  
  다음 코드 예제에서는 `DebuggerDisplay`와 `DebuggerBrowseable` 및 `DebuggerTypeProxy`를 함께 사용하는 방법을 보여 줍니다. **조사식** 창과 같은 디버거 변수 창에 이 코드가 표시될 때는 다음과 같은 확장이 생성됩니다.  
