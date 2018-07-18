@@ -1,9 +1,7 @@
 ---
 title: '방법: 찾기 구현 및 메커니즘을 바꾸기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
@@ -13,32 +11,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26d1866d9b816dfca3f82f98db372865f9d27a68
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45d0b1307d86b32f1def3c4474e1ca25959915c0
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128945"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056448"
 ---
-# <a name="how-to-implement-the-find-and-replace-mechanism"></a>방법: 찾기 구현 및 메커니즘을 바꾸기
-Visual Studio 찾기/바꾸기를 구현 하는 두 가지를 제공 합니다. 한 가지 방법은 텍스트 이미지 셸에 전달할 검색, 강조 표시 및 바꿀 텍스트를 처리 하도록 합니다. 따라서 사용자가 여러 텍스트 범위를 지정할 수 있습니다. 또는, VSPackage 자체에서 이러한 기능을 제어할 수 있습니다. 두 경우 모두 현재 대상과 열려 있는 모든 문서에 대 한 대상으로 하는 방법에 대 한 셸에 알려야 합니다.  
-  
-### <a name="to-implement-findreplace"></a>찾기/바꾸기를 구현 하려면  
-  
-1.  구현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget> 프레임 속성에서 반환 된 개체 중 하나에서 인터페이스 <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>합니다. 사용자 지정 편집기를 만드는 경우에 사용자 지정 편집기 클래스의 일부로이 인터페이스를 구현 해야 합니다.  
-  
-2.  사용 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetCapabilities%2A> 메서드 편집기 지원 옵션을 지정 하 고 텍스트 이미지 검색 구현 여부를 나타냅니다.  
-  
-     편집기 텍스트 이미지 검색을 지 원하는 경우 구현 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>합니다.  
-  
-     그렇지 않은 경우 구현 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A> 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>합니다.  
-  
-3.  구현 하는 경우는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A> 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A> 메서드를 호출 하 여 검색 작업을 간소화할 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper> 인터페이스입니다.  
-  
-## <a name="see-also"></a>참고 항목  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>   
- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>
+# <a name="how-to-implement-the-find-and-replace-mechanism"></a>방법: 메커니즘을 바꾸고 찾기 구현
+
+Visual Studio 찾기/바꾸기를 구현 하는 두 가지를 제공 합니다. 한 가지 방법은 셸에 텍스트 이미지를 전달 하 고 검색, 강조 표시 및 대체 텍스트를 처리 하도록 하는 것입니다. 이 여러 텍스트 범위를 지정할 수가 있습니다. 또는 VSPackage는 자체에서 이러한 기능을 제어할 수 있습니다. 두 경우 모두 현재 대상 및 열려 있는 모든 문서에 대 한 대상에 대 한 shell에 알려야 합니다.
+
+## <a name="to-implement-findreplace"></a>찾기/바꾸기 구현 하려면
+
+1. 구현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget> 프레임 속성에서 반환한 개체 중 하나에서 인터페이스 <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocView> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocData>합니다. 사용자 지정 편집기를 만드는 경우 사용자 지정 편집기 클래스의 일부로이 인터페이스를 구현 해야 합니다.
+
+2. 사용 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetCapabilities%2A> 메서드 편집기를 지 원하는 옵션을 지정 하 고 텍스트 이미지 검색를 구현 하는지 여부를 나타냅니다.
+
+   편집기 텍스트 이미지 검색을 지 원하는 경우 구현 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>합니다.
+
+   그렇지 않으면 구현 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A> 고 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>입니다.
+
+3. 구현 하는 경우는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A> 하 고 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A> 메서드를 호출 하 여 검색 작업을 간소화할 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper> 인터페이스입니다.
+
+## <a name="see-also"></a>참고자료
+
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>

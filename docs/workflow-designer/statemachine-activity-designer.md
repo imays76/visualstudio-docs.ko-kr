@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a9860d4c6025e6d77a869573b133c6a034aff96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c7afb2131ae6e05c8232eb8dc735e5131698a69
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974925"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758234"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine 활동 디자이너
 
@@ -26,7 +26,7 @@ ms.locfileid: "31974925"
 
 ## <a name="using-the-statemachine-activity-designer"></a>StateMachine 활동 디자이너 사용
 
-추가 하려면는 <xref:System.Activities.Statements.StateMachine> 활동을 끌어는 **StateMachine** 활동 디자이너를는 **상태 시스템** 의 섹션은 **도구 상자** Windows Workflow에 놓습니다. 디자이너 화면입니다. 이 자식 상태를 추가 하려면 <xref:System.Activities.Statements.StateMachine> 활동을 끌어는 <xref:System.Activities.Statements.State> 또는 <xref:System.Activities.Core.Presentation.FinalState> 에서 **도구 상자** 놓습니다는 **StateMachine**합니다.
+추가할를 <xref:System.Activities.Statements.StateMachine> 활동을 끌어서를 **StateMachine** 활동 디자이너의를 **상태 시스템** 섹션을 **도구 상자** 놓습니다 워크플로 디자이너 화면입니다. 이 자식 상태를 추가할 <xref:System.Activities.Statements.StateMachine> 활동을 끌어서를 <xref:System.Activities.Statements.State> 또는 <xref:System.Activities.Core.Presentation.FinalState> 에서 **도구 상자** 놓습니다 합니다 **StateMachine**합니다.
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>워크플로 디자이너의 StateMachine 활동 속성
 

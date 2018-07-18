@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그래밍 방식으로 Visio 문서에 셰이프를 추가 | Microsoft Docs'
+title: '방법: 프로그래밍 방식으로 Visio 문서에 셰이프 추가'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1cc4369977e1989960fe9448d4dd7d56e67ed7a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32fc1b61505711cbcf353819372bcd1452bf3716
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256671"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>방법: 프로그래밍 방식으로 Visio 문서에 셰이프 추가
   스텐실에서 마스터를 검색하고 활성 페이지로 셰이프를 끌어 놓아 Microsoft Office Visio 문서에 셰이프를 추가할 수 있습니다.  
   
  자세한 내용은 [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) 메서드, [Microsoft.Office.Interop.Visio.Application.ActivePage](http://msdn.microsoft.com/library/office/ff765484.aspx) 속성 및 [Microsoft.Office.Interop.Visio.Page.Drop](http://msdn.microsoft.com/library/office/ff765054.aspx) 메서드에 대한 VBA 참조 설명서를 참조하세요.  
   
-## <a name="adding-shapes-to-a-visio-document"></a>Visio 문서에 셰이프 추가  
+## <a name="add-shapes-to-a-visio-document"></a>Visio 문서에 셰이프 추가  
   
-#### <a name="to-add-shapes-to-a-visio-document"></a>Visio 문서를 셰이프를 추가하려면  
+### <a name="to-add-shapes-to-a-visio-document"></a>Visio 문서를 셰이프를 추가하려면  
   
 -   문서를 활성화하고 Documents.Masters 컬렉션에서 마스터를 검색하여 활성 문서에 셰이프를 끌어 놓습니다. 인덱스 또는 마스터 이름을 사용하여 마스터를 검색할 수 있습니다.  
   
@@ -38,10 +39,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visio 솔루션](../vsto/visio-solutions.md)   
  [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)   
  [Visio 셰이프 작업](../vsto/working-with-visio-shapes.md)   
- [방법: 프로그래밍 방식으로 Visio 문서에서 셰이프 복사 및 붙여넣기](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [방법: 프로그래밍 방식으로 복사 하 고 Visio 문서에서 셰이프를 붙여 넣습니다.](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

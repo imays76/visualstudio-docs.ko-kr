@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907b47aacf7ad0d63c79f22dcf992ac042dd2e7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0542912c15a92728cd7476b7482782fa7cf65fb2
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457464"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433147"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 확장성을 위한 API 참조
 이 단원의 정보는 IntelliTrace 확장성 API를 사용하여 응용 프로그램에서 .itrace 파일을 읽고 디코딩하는 데 도움을 줍니다.  
@@ -31,5 +31,5 @@ ms.locfileid: "31457464"
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace를 사용한 디버깅 방법에 대한 정보를 제공합니다.  
   
- [MSDN 코드 갤러리](http://go.microsoft.com/fwlink/?LinkId=166091)  
+ [MSDN 코드 갤러리](https://code.msdn.microsoft.com/)  
  IntelliTrace 확장성의 사용 방법을 보여 주는 샘플 응용 프로그램을 호스팅합니다.

@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c8a8328fda71be7124b0ebd7fcd389d2b4f6dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e0d1d520f54a2b9da958342a34019aef7998727a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966737"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758513"
 ---
 # <a name="error-handling-activity-designers"></a>오류 처리 활동 디자이너
 
-Windows 워크플로 디자이너에서 오류 처리를 관리 하는 오류 처리 활동 디자이너 사용 됩니다. 이 섹션에 포함 된 항목 워크플로 디자이너의 활동 및 템플릿 디자이너를 사용 하는 방법에 지침을 제공 합니다.
+Error Handling 활동 디자이너는 워크플로 디자이너에서 오류 처리를 관리 하는 데 사용 됩니다. 이 단원의 항목에서는 워크플로 디자이너 활동 및 템플릿 디자이너를 사용 하는 방법에 지침을 제공 합니다.

@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그래밍 방식으로 문서 속성으로 Word 표 채우기 | Microsoft Docs'
+title: '방법: 프로그래밍 방식으로 문서 속성을 사용 하 여 Word 표 채우기'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0feb203e517cffcd859e3094abcee95d532eafc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c202a663f87a77da9a40116b76c2f09e84464ceb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257448"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>방법: 프로그래밍 방식으로 문서 속성을 사용하여 Word 표 채우기
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>방법: 프로그래밍 방식으로 문서 속성을 사용 하 여 Word 표 채우기
   다음 예제에서는 문서의 맨 위에 Microsoft Office Word 표를 만들고 호스트 문서의 속성으로 채웁니다.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="populating-tables-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 표 채우기  
+## <a name="populate-tables-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 표 채우기  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>표를 만들고 문서 속성으로 채우려면  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>표를 만들고 문서 속성으로 채우려면  
   
 1.  범위를 문서의 맨 위로 설정합니다.  
   
@@ -61,9 +62,9 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
  [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]  
   
-## <a name="populating-tables-in-a-vsto-add-in"></a>VSTO 추가 기능에서 표 채우기  
+## <a name="populate-tables-in-a-vsto-add-in"></a>VSTO 추가 기능에서 표 채우기  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>표를 만들고 문서 속성으로 채우려면  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>표를 만들고 문서 속성으로 채우려면  
   
 1.  범위를 문서의 맨 위로 설정합니다.  
   
@@ -95,10 +96,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
  [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [방법: 프로그래밍 방식으로 Word 표 만들기](../vsto/how-to-programmatically-create-word-tables.md)   
- [방법: 프로그래밍 방식으로 Word 표 셀에 텍스트 및 서식 추가](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [방법: 프로그래밍 방식으로 Word 표에 행과 열 추가](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [방법: 프로그래밍 방식으로 추가 되는 텍스트 및 Word 표 셀에에서 서식 지정](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [방법: 프로그래밍 방식으로 Word 표에 행 및 열 추가](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
   
   
