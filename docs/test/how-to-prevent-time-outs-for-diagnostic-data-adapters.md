@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d7d15f2e65d30235e67fd0775684fd22e8eed0fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844240"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>방법: 진단 데이터 어댑터에 대한 시간 제한 방지
 
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/26/2018
 
 4.  제한 시간 값을 늘리려면 테스트 실행 설정 섹션을 수정해야 합니다. 이 섹션의 형식은 다음과 같습니다.
 
-    ```
+    ```text
     <!-- Begin: Test execution settings -->
 
         <!-- How long test runner will wait for an event raised to all local data collectors to complete.  Default is 300. -->
@@ -81,7 +82,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  버그에 대해 수집된 데이터의 전송 제한 시간 또는 테스트가 테스트를 실행하는 컴퓨터에서 종료되는 제한 시간을 늘리려면 파일의 appSettings 섹션에서 **mtm.exe.config**에 다음 제한 시간을 추가해야 합니다.
 
-    ```
+    ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->
     <add key="GetCollectorDataTimeout" value="300"/>
     ```

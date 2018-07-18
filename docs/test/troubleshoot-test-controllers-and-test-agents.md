@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c1ddfedc1a88300bb01b5113304f2b8893e2857
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35669268"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>부하 테스트에서 테스트 컨트롤러 및 테스트 에이전트 문제를 해결하기 위한 전략
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  파일의 시스템 진단 섹션에서 `EqtTraceLevel` 스위치 항목을 편집합니다. 코드는 다음과 비슷합니다.
 
-    ```
+    ```xml
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
             <listeners>
@@ -136,7 +137,7 @@ ms.lasthandoff: 04/26/2018
 
 -   테스트 에이전트 설치를 다시 실행합니다. 이번에는 테스트 컨트롤러 이름 대신 테스트 컨트롤러의 IP 주소를 지정합니다.
 
- 이 내용은 테스트 컨트롤러, 테스트 에이전트 서비스 및 테스트 에이전트 프로세스에 적용됩니다. 네트워크 어댑터가 둘 이상인 컴퓨터에서 실행되는 프로세스마다 `BindTo` 속성을 설정해야 합니다. `BindTo` 속성을 설정하는 절차는 앞에서 테스트 컨트롤러를 대상으로 설명한 내용과 같으며 세 가지 프로세스에서 모두 동일합니다. 테스트 에이전트 서비스 및 테스트 에이전트 프로세스의 로깅 수준을 설정하려면 [테스트 컨트롤러 컴퓨터의 로깅 수준 설정](#Logging)에 나열된 구성 파일을 사용합니다.
+ 이 내용은 테스트 컨트롤러, 테스트 에이전트 서비스 및 테스트 에이전트 프로세스에 적용됩니다. 네트워크 어댑터가 둘 이상인 컴퓨터에서 실행되는 프로세스마다 `BindTo` 속성을 설정해야 합니다. `BindTo` 속성을 설정하는 절차는 앞에서 테스트 컨트롤러를 대상으로 설명한 내용과 같으며 세 가지 프로세스에서 모두 동일합니다. 테스트 에이전트 서비스 및 테스트 에이전트 프로세스의 로깅 수준을 설정하려면 [테스트 컨트롤러 컴퓨터의 로깅 수준 설정](#setting-the-logging-level-on-a-test-controller-computer)에 나열된 구성 파일을 사용합니다.
 
 ## <a name="see-also"></a>참고 항목
 
