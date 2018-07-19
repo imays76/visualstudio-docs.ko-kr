@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6294b2e2392c81e20c984972ec875c589a7167
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef7fc3e956c6b31b1df8346e9b347ca3e094d878
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967841"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755722"
 ---
 # <a name="flowchart-activity-designers"></a>순서도 활동 디자이너
 
-Windows 워크플로 디자이너에는 다양 한 워크플로 생성할 때 사용할 수 있는 시스템 제공 활동이 포함 되어 있습니다. 이 단원에서는 워크플로의 순서도를 관리하는 데 사용되는 시스템 제공 활동에 대해 다룹니다. 다음 항목을 통해 이러한 활동에 대해 설명하고 사용 방법에 대한 지침을 제공합니다.
+워크플로 디자이너는 여러를 가지 워크플로 생성할 때 사용할 수 있는 시스템 제공 활동이 포함 되어 있습니다. 이 단원에서는 워크플로의 순서도를 관리하는 데 사용되는 시스템 제공 활동에 대해 다룹니다. 다음 항목을 통해 이러한 활동에 대해 설명하고 사용 방법에 대한 지침을 제공합니다.
 
 ## <a name="reference"></a>참조
  <xref:System.Activities.Activity>

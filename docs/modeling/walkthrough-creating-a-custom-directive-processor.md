@@ -15,16 +15,16 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e0ee905cf4ddaec6a05d5c0722b80c345489acd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979037"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234426"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
 
-*지시문 프로세서* 코드를 추가 하 여 작동는 *생성 된 변환 클래스*합니다. 호출 하는 경우는 *지시문* 에서 *텍스트 템플릿*, 텍스트 템플릿을 작성 하는 코드의 나머지 부분에서 지시문이 제공 하는 기능을 사용할 수 있습니다.
+*지시문 프로세서* 코드를 추가 하 여 작동 합니다 *생성 된 변형 클래스*합니다. 호출 하는 경우는 *지시문* 에서 *텍스트 템플릿*를 텍스트 템플릿에 작성 하는 코드의 나머지 부분에서 지시문이 제공 하는 기능을 사용할 수 있습니다.
 
 사용자 고유의 사용자 지정 지시문 프로세서를 작성할 수 있으며, 이 프로세서를 사용하여 텍스트 템플릿을 사용자 지정할 수 있습니다. 사용자 지정 지시문 프로세서를 만들려면 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 또는 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>에서 상속하는 클래스를 만듭니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "31979037"
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-사용자 지정 지시문 프로세서는 생성된 변형 클래스에 변수와 속성을 추가합니다. 작성하는 지시문은 <xref:System.CodeDom> 클래스를 사용하여 엔진이 생성된 변환 클래스에 추가하는 코드를 만듭니다. <xref:System.CodeDom> 클래스에 지정 된 언어에 따라 Visual C# 또는 Visual Basic의 경우에서 코드를 만들는 `language` 의 매개 변수는 `template` 지시문입니다. 지시문 프로세서의 언어와 지시문 프로세서에 액세스하는 텍스트 템플릿의 언어는 일치하지 않아도 됩니다.
+사용자 지정 지시문 프로세서는 생성된 변형 클래스에 변수와 속성을 추가합니다. 작성하는 지시문은 <xref:System.CodeDom> 클래스를 사용하여 엔진이 생성된 변환 클래스에 추가하는 코드를 만듭니다. 합니다 <xref:System.CodeDom> 클래스에 지정 된 언어에 따라 Visual C# 또는 Visual Basic에서 코드를 만들기는 `language` 의 매개 변수는 `template` 지시문입니다. 지시문 프로세서의 언어와 지시문 프로세서에 액세스하는 텍스트 템플릿의 언어는 일치하지 않아도 됩니다.
 
 지시문이 만드는 코드는 다음과 같습니다.
 
@@ -82,7 +82,7 @@ End Property
 1. Visual Studio에서 CustomDP라는 C# 또는 Visual Basic 클래스 라이브러리 프로젝트를 만듭니다.
 
     > [!NOTE]
-    > 둘 이상의 컴퓨터에 지시문 프로세서를 설치 하려면 VSIX Visual Studio Extension () 프로젝트를 사용 하 고 확장에서.pkgdef 파일을 포함 하는 것이 좋습니다. 자세한 내용은 참조 [사용자 지정 지시문 프로세서 배포](../modeling/deploying-a-custom-directive-processor.md)합니다.
+    > 둘 이상의 컴퓨터에 지시문 프로세서를 설치 하려는 경우 Visual Studio 확장 (VSIX) 프로젝트를 사용 하 여 확장의.pkgdef 파일을 포함 하는 것이 좋습니다. 자세한 내용은 [사용자 지정 지시문 프로세서 배포](../modeling/deploying-a-custom-directive-processor.md)합니다.
 
 2. 이러한 어셈블리에 대 한 참조를 추가 합니다.
 
@@ -90,7 +90,7 @@ End Property
 
     - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-3. 코드 **Class1** 다음 코드를 사용 합니다. 이 코드에서는 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 클래스에서 상속하는 CustomDirectiveProcessor 클래스를 정의하고 필요한 메서드를 구현합니다.
+3. 코드를 바꿔 **Class1** 다음 코드를 사용 합니다. 이 코드에서는 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 클래스에서 상속하는 CustomDirectiveProcessor 클래스를 정의하고 필요한 메서드를 구현합니다.
 
     ```csharp
     using System;
@@ -127,7 +127,7 @@ End Property
 
             // These are the errors that occur during processing. The engine passes
             // the errors to the host, and the host can decide how to display them,
-            // for example the the host can display the errors in the UI
+            // for example the host can display the errors in the UI
             // or write them to a file.
             // ---------------------------------------------------------------------
             private CompilerErrorCollection errorsValue;
@@ -386,7 +386,7 @@ End Property
 
             ' These are the errors that occur during processing. The engine passes
             ' the errors to the host, and the host can decide how to display them,
-            ' for example the the host can display the errors in the UI
+            ' for example the host can display the errors in the UI
             ' or write them to a file.
             ' ---------------------------------------------------------------------
             Private errorsValue As CompilerErrorCollection
@@ -601,9 +601,9 @@ End Property
     End Namespace
     ```
 
-4. Visual Basic에 대 한 열은 **프로젝트** 메뉴를 **CustomDP 속성**합니다. 에 **응용 프로그램** 탭 **루트 네임 스페이스**, 기본 값을 삭제 `CustomDP`합니다.
+4. Visual Basic에 대 한 열을 **프로젝트** 메뉴 **CustomDP 속성**합니다. 에 **응용 프로그램** 탭의 **루트 네임 스페이스**, 기본 값을 삭제 `CustomDP`합니다.
 
-5. 에 **파일** 메뉴를 클릭 하 여 **모두 저장**합니다.
+5. 에 **파일** 메뉴에서 클릭 **모두 저장**합니다.
 
 6. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
@@ -613,10 +613,10 @@ End Property
 
 ## <a name="register-the-directive-processor"></a>지시문 프로세서 등록
 
-Visual Studio에서 텍스트 템플릿에서 지시문을 호출 하기, 전에 지시문 프로세서에 대 한 레지스트리 키를 추가 해야 합니다.
+Visual Studio에서 텍스트 템플릿에서 지시문을 호출 하기, 지시문 프로세서에 대 한 레지스트리 키를 추가 해야 합니다.
 
 > [!NOTE]
-> 둘 이상의 컴퓨터에 지시문 프로세서를 설치 하려는 경우 해당 정의 하는 것을 VSIX Visual Studio Extension ()를 포함 하는 *.pkgdef* 하려면 어셈블리와 함께 파일입니다. 자세한 내용은 참조 [사용자 지정 지시문 프로세서 배포](../modeling/deploying-a-custom-directive-processor.md)합니다.
+> 둘 이상의 컴퓨터에 지시문 프로세서를 설치 하려는 경우 것이 좋습니다 Visual Studio 확장 (VSIX)를 포함 하는 정의 하는 *.pkgdef* 어셈블리와 함께 파일입니다. 자세한 내용은 [사용자 지정 지시문 프로세서 배포](../modeling/deploying-a-custom-directive-processor.md)합니다.
 
 지시문 프로세서에 대한 키는 다음 위치의 레지스트리에 있습니다.
 
@@ -639,7 +639,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 1. 실행 된 `regedit` 시작 메뉴 또는 명령줄을 사용 하 여 명령입니다.
 
-2. 위치를 찾아 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**, 한 노드를 클릭 합니다.
+2. 위치를 찾습니다 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**, 노드를 클릭 합니다.
 
    64 비트 시스템에서 사용 하 여 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
@@ -656,7 +656,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      레지스트리 키의 값은 다음과 같습니다.
 
-    |이름|형식|데이터|
+    |name|형식|데이터|
     |----------|----------|----------|
     |(기본값)|REG_SZ|(값 설정 안 됨)|
     |클래스|REG_SZ|CustomDP.CustomDirectiveProcessor|
@@ -664,7 +664,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      GAC에 어셈블리를 배치한 경우 값은 다음과 같습니다.
 
-    |이름|형식|데이터|
+    |name|형식|데이터|
     |----------|----------|----------|
     |(기본값)|REG_SZ|(값 설정 안 됨)|
     |클래스|REG_SZ|CustomDP.CustomDirectiveProcessor|
@@ -676,11 +676,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 지시문 프로세서를 테스트하려면 지시문 프로세서를 호출하는 텍스트 템플릿을 작성해야 합니다.
 
-이 예제에서 텍스트 템플릿은 지시문을 호출하고 클래스 파일에 대한 문서가 포함된 XML 파일의 이름을 전달합니다. 텍스트 템플릿을 사용 하 여는 <xref:System.Xml.XmlDocument> 지시문이 만드는 XML을 탐색 하 고 문서 주석을 인쇄 하는 속성입니다.
+이 예제에서 텍스트 템플릿은 지시문을 호출하고 클래스 파일에 대한 문서가 포함된 XML 파일의 이름을 전달합니다. 텍스트 템플릿을 사용 하 여 <xref:System.Xml.XmlDocument> 지시문이 만드는 XML을 탐색 하 고 문서 주석을 인쇄 하는 속성입니다.
 
 ### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>지시문 프로세서 테스트에 사용할 XML 파일을 만들려면
 
-1. 라는 파일을 만들어 *DocFile.xml* 임의의 텍스트 편집기 (예: 메모장)를 사용 하 여 합니다.
+1. 이라는 파일을 만듭니다 *DocFile.xml* 임의의 텍스트 편집기 (예: 메모장)를 사용 하 여 합니다.
 
     > [!NOTE]
     > 모든 위치에서이 파일을 만들 수 있습니다 (예를 들어 *C:\Test\DocFile.xml*).
@@ -734,12 +734,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 2. TestDP.tt라는 새 텍스트 템플릿 파일을 추가합니다.
 
-3. 다음 사항을 확인는 **사용자 지정 도구** TestDP.tt의 속성이로 설정 되어 `TextTemplatingFileGenerator`합니다.
+3. 있는지 확인 합니다 **사용자 지정 도구** TestDP.tt의 속성이 `TextTemplatingFileGenerator`합니다.
 
 4. TestDP.tt의 내용을 다음 텍스트로 변경 합니다.
 
     > [!NOTE]
-    > 문자열 `<YOUR PATH>` 경로 *DocFile.xml* 파일입니다.
+    > 문자열 대체 `<YOUR PATH>` 에 대 한 경로 사용 하 여 합니다 *DocFile.xml* 파일입니다.
 
     텍스트 템플릿의 언어는 지시문 프로세서의 언어와 일치하지 않아도 됩니다.
 
@@ -832,11 +832,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-test-the-directive-processor"></a>지시문 프로세서를 테스트하려면
 
-1. **솔루션 탐색기**, TestDP.tt를 마우스 오른쪽 단추로 클릭 하 고 클릭 **사용자 지정 도구 실행**합니다.
+1. **솔루션 탐색기**에서 TestDP.tt를 마우스 오른쪽 단추로 클릭 하 고 클릭 **사용자 지정 도구 실행**합니다.
 
-   Visual Basic 사용자를 위한 TestDP.txt에 표시 될 **솔루션 탐색기** 기본적으로 합니다. 프로젝트에 할당 된 모든 파일을 표시 하려면 열고는 **프로젝트** 메뉴 **모든 파일 표시**합니다.
+   Visual Basic 사용자의 경우 TestDP.txt 나타나지 않을 수도 있습니다 **솔루션 탐색기** 기본적으로 합니다. 프로젝트에 할당 된 모든 파일을 표시 하려면 열을 **프로젝트** 메뉴를 클릭 **모든 파일 표시**합니다.
 
-2. **솔루션 탐색기**TestDP.txt 노드를 확장 한 다음 TestDP.txt를 편집기에서 열을 두 번 클릭 합니다.
+2. **솔루션 탐색기**TestDP.txt 노드를 확장 한 다음 편집기에서 엽니다 TestDP.txt를 두 번 클릭 합니다.
 
     생성된 텍스트 출력이 나타납니다. 출력은 다음과 같습니다.
 
@@ -876,10 +876,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-add-html-to-the-generated-text"></a>생성된 텍스트에 HTML을 추가하려면
 
-1. 코드 *TestDP.tt* 다음으로 합니다. HTML이 강조 표시되어 있습니다. 문자열을 대체 해야 `YOUR PATH` 경로 *DocFile.xml* 파일입니다.
+1. 코드를 바꿔 *TestDP.tt* 다음을 사용 하 여 합니다. HTML이 강조 표시되어 있습니다. 문자열을 바꿔야 `YOUR PATH` 에 대 한 경로 사용 하 여 합니다 *DocFile.xml* 파일입니다.
 
     > [!NOTE]
-    > 추가로 삽입 \<#와 닫는 #> 태그가 문 코드를 HTML 태그에서 구분 합니다.
+    > 추가로 \<#와 닫는 #> 태그는 HTML 태그에서 문 코드를 구분 합니다.
 
     ```csharp
     <#@ assembly name="System.Xml" #>
@@ -961,8 +961,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>
     ```
 
-2. 에 **파일** 메뉴를 클릭 하 여 **TestDP.txt 저장**합니다.
+2. 에 **파일** 메뉴에서 클릭 **TestDP.txt 저장**합니다.
 
-3. 출력을 보려면 브라우저에서에 **솔루션 탐색기**TestDP.htm을 마우스 오른쪽 단추로 클릭 하 고 클릭 **브라우저에서 보기**합니다.
+3. 브라우저에서 출력에서 보려는 **솔루션 탐색기**TestDP.htm을 마우스 오른쪽 단추로 클릭 하 고 클릭 **브라우저에서 보기**.
 
-   HTML 형식이 적용 된 되었다는 점만 제외 하면 출력 원래 텍스트와 동일 해야 합니다. 각 항목 이름이 굵게 표시 됩니다.
+   적용 된 HTML 형식을 제외 하면 출력 원래 텍스트와 동일 해야 합니다. 각 항목 이름이 굵게 표시 됩니다.

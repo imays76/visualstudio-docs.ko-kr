@@ -1,5 +1,5 @@
 ---
-title: '연습: 꼭 짓 점 음영으로 인해 개체가 누락 된 | Microsoft Docs'
+title: '연습: 꼭 짓 점 음영으로 인해 개체 누락 된 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482011"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234259"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>연습: 꼭짓점 음영으로 인해 누락된 개체
 이 연습에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단 도구를 사용하여 꼭짓점 셰이더 단계 동안 발생하는 오류로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.  
@@ -67,7 +67,7 @@ ms.locfileid: "31482011"
   
 4.  누락된 개체에 해당하는 그리기 호출에 도달하면 중지합니다. 이 시나리오에서 **그래픽 파이프라인 단계** 창은 기하 도형이 GPU에 만들어졌으나(입력 어셈블러 축소판 그림으로 표시) 꼭지점 셰이더 단계 동안에는 문제가 발생하여 렌더링 대상에 나타나지 않는다는 것(꼭지점 셰이더 축소판 그림으로 표시)을 보여 줍니다.  
   
-     ![DrawIndexed 이벤트 및 파이프라인에 대 한 효과](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
+     ![DrawIndexed 이벤트 및 파이프라인에 미치는 영향](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
   
  앱이 누락된 개체의 기하 도형에 대한 그리기 호출을 실행했는지 확인하고 꼭지점 셰이더 단계 동안 해당 문제가 발생하는 것을 검색한 후에는 HLSL 디버거를 사용하여 꼭지점 셰이더를 검사하고 개체의 기하 도형에서 발생한 결과를 확인할 수 있습니다. 실행하는 동안 HLSL 디버거를 사용하여 HLSL 변수의 상태를 검사하고, HLSL 코드를 단계별로 진행하고, 문제 진단을 위한 중단점을 설정할 수 있습니다.  
   
@@ -79,19 +79,19 @@ ms.locfileid: "31482011"
   
 3.  `output` 이 처음 수정되면 멤버 `worldPos` 가 기록됩니다.  
   
-     !["Output.worldpos" 값이 적절 한 표시](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
+     !["Output.worldpos" 값이 적절 한 나타납니다](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
      해당 값에 문제가 없어 보이므로 `output`을 수정하는 다음 줄까지 코드를 계속 단계별로 진행합니다.  
   
 4.  `output` 이 수정되는 다음 번에 멤버 `pos` 가 기록됩니다.  
   
-     !["Output.pos" 값이 제거](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
+     !["Output.pos" 값에 비중요](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
      이번에는 `pos` 멤버의 값(모두 0)에 문제가 있어 보입니다. 다음으로 `output.pos` 가 어떻게 모두 0 값을 갖게 되었는지 확인하려 합니다.  
   
 5.  `output.pos` 는 `temp`라는 변수에서 해당 값을 가져옵니다. 이전 줄에서 `temp` 값은 이전 값을 `projection`이라는 상수와 곱한 결과임을 알 수 있습니다. `temp`의 의심스러운 값이 이러한 곱하기의 결과인지 의심하게 됩니다. `projection`에 포인터를 두면 해당 값 역시 모두 0임을 알 수 있습니다.  
   
-     ![프로젝션 매트릭스에 잘못 된 변형이 포함 되어](media/gfx_diag_demo_missing_object_shader_step_6.png "gfx_diag_demo_missing_object_shader_step_6")  
+     ![프로젝션 매트릭스에 잘못 된 변형이 포함](media/gfx_diag_demo_missing_object_shader_step_6.png "gfx_diag_demo_missing_object_shader_step_6")  
   
      이 시나리오에서는 검사를 진행하면 `temp`의 의심스러운 값이 `projection`에 의한 곱하기의 결과일 가능성이 크고, `projection` 이 투영 행렬을 포함해야 하는 상수이므로 모두 0이면 안 된다는 것을 알게 됩니다.  
   
@@ -108,7 +108,7 @@ ms.locfileid: "31482011"
     > [!TIP]
     >  앱을 동시에 디버깅하는 경우 이 위치에 중단점을 설정할 수 있으며 다음 프레임이 렌더링될 때 중단됩니다. `m_marbleConstantBufferData` 의 멤버를 검사하여 상수 버퍼가 채워질 때 `projection` 멤버의 값이 모두 0으로 설정되어 있는지 확인할 수 있습니다.  
   
- 상수 버퍼가 채워지는 위치를 확인하고 해당 값을 `m_marbleConstantBufferData`변수에서 가져온 것인지 확인한 후에는 `m_marbleConstantBufferData.projection` 멤버가 모두 0으로 설정된 위치를 찾아야 합니다. **모든 참조 찾기** 를 사용하여 `m_marbleConstantBufferData.projection`값을 변경하는 코드를 빠르게 검색할 수 있습니다.  
+ 상수 버퍼가 채워지는 위치를 확인 하 고 해당 값 변수에서 제공 되는 검색 한 후 `m_marbleConstantBufferData`, 위치를 확인 하려면 다음 단계는는 `m_marbleConstantBufferData.projection` 멤버가 모두 0으로 설정 됩니다. **모든 참조 찾기** 를 사용하여 `m_marbleConstantBufferData.projection`값을 변경하는 코드를 빠르게 검색할 수 있습니다.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>앱 소스 코드에서 투영 멤버가 설정되는 위치를 찾으려면  
   
@@ -126,4 +126,4 @@ ms.locfileid: "31482011"
   
  .코드를 수정한 후 다시 빌드하고 앱을 다시 실행하여 렌더링 문제가 해결되었는지 확인할 수 있습니다.  
   
- ![이제 개체가 표시 됩니다. ] (media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")
+ ![에 이제 개체가 표시 됩니다. ] (media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")
