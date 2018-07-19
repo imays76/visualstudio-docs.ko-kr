@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cba770195ced84083e67ae42afbef53631e5ba1
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
-ms.translationtype: HT
+ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890216"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131871"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>초보자를 위한 디버깅 하는 방법
 
@@ -41,7 +41,7 @@ ms.locfileid: "37890216"
 
 ## <a name="examine-your-assumptions"></a>한 가정을 검토합니다
 
-버그 또는 오류를 조사 하기 전에 발생 하는 특정 결과 예상 하는 가정이 생각 하면 됩니다. 숨김 또는 알 수 없는 가정을 디버거에서 오른쪽 문제의 원인을 찾는 경우에 문제를 식별 하는 방해 가져올 수 있습니다. 가능한 가정의 긴 목록이 있을 수 있습니다. 다음은 몇 가지 질문이 가정이 올바른지 점검 하는 합니다.
+버그 또는 오류를 조사 하기 전에 발생 하는 특정 결과 예상 하는 가정이 생각 하면 됩니다. 숨김 또는 알 수 없는 가정을 디버거에서 오른쪽 문제의 원인을 찾는 경우에 문제를 식별 하는 방해 가져올 수 있습니다. 가능한 가정의 긴 목록이 있을 수 있습니다. 다음은 가정이 올바른지 점검 하는 데는 몇 가지 질문입니다.
 
 * 올바른 API (즉, 오른쪽 개체, 함수, 메서드 또는 속성)를 사용 중 입니까? 사용 중인 API 수 생각 수행 하는 것을 수행 하지 않습니다. (디버거에서 API 호출을 검토 한 후 수정 해야 올바른 API를 안전 하 게 식별할 설명서 여정 합니다.)
 
@@ -322,7 +322,7 @@ Visual Studio에서 코드 줄 옆에 있는 왼쪽된 여백을 클릭 하 여 
 
 * [변수 검사](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) 포함 해야 하는 값의 형식에 포함 되어 있는지 여부를 확인 합니다. 잘못 된 값을 찾을 경우 잘못 된 값이 설정 하는 위치 확인 (값이 설정 된 위치를 찾으려면 해야 하거나 디버거를 다시 시작을 확인 합니다 [호출 스택](../debugger/how-to-use-the-call-stack-window.md), 또는 둘 다).
 
-* 응용 프로그램 해야 하는 코드를 실행 하 고 있는지 확인 합니다. (예를 들어 galaxy 유형을 비정상으로 설정 하려면 switch 문 용 코드를 예상 샘플 응용 프로그램에서 하지만 앱의 오타로 인해 코드를 건너뜁니다.)
+* 응용 프로그램 해야 하는 코드를 실행 하 고 있는지 확인 합니다. (예를 들어 샘플 응용 프로그램에서는 galaxy 유형을 비정상으로 설정 하려면 switch 문 용 코드를 예상 하지만 앱의 오타로 인해 코드를 건너뜁니다.)
 
 > [!TIP]
 > 디버거를 사용 하 여 버그를 찾는 데 도움이 됩니다. 디버깅 도구에서 버그를 찾을 수 *하기* 코드의 의도 인식 하는 경우에 합니다. 만 도구를 개발자, express는 의도 하는 경우 코드의 의도 파악할 수 있습니다. 작성할 [단위 테스트](../test/improve-code-quality.md) 그 방법은 됩니다.
