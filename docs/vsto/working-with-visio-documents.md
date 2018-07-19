@@ -1,5 +1,5 @@
 ---
-title: Visio 문서 작업 | Microsoft Docs
+title: Visio 문서 작업
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3c9d5f3ad8344e2ae231a5c3680226fa945f4c46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 832c0cc7cfc6ad40c45e5134b57b1fc32cf8896b
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258829"
 ---
-# <a name="working-with-visio-documents"></a>Visio 문서 작업
-  이 섹션의 항목의 Microsoft Office Visio 개체 모델을 사용 하 여 Office 프로젝트의 문서 작업에 대 한 단계별 절차 및 코드 예제를 제공 합니다.  
+# <a name="work-with-visio-documents"></a>Visio 문서 작업
+  이 섹션의에서 항목에서는 Microsoft Office Visio의 개체 모델을 사용 하 여 Office 프로젝트에서 문서를 사용 하 여 작업에 대 한 단계별 절차 및 코드 예제를 제공 합니다.  
   
 |작업|프로시저|  
 |----------|---------------|  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
 |동일한 이름이나 새 이름으로 문서를 저장합니다.|[방법: 프로그래밍 방식으로 Visio 문서 저장](../vsto/how-to-programmatically-save-visio-documents.md)|  
 |전체 문서 또는 지정된 된 페이지를 인쇄 합니다.|[방법: 프로그래밍 방식으로 Visio 문서 인쇄](../vsto/how-to-programmatically-print-visio-documents.md)|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visio 솔루션](../vsto/visio-solutions.md)   
  [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)   
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  

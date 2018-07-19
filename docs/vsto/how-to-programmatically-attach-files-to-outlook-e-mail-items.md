@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일을 첨부 | Microsoft Docs'
+title: '방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일을 첨부'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,22 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec34d1276f239ecc62a7a9ca5d64e9e53d42cb90
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fab5d954136fced3a68b1aaa62233ca5ec9af91b
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256629"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-e-mail-items"></a>방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일 첨부
-  이 예제에서는 한 파일을 새 메일 항목을 연결 하 고 Armando Pinto를 보냅니다. 이 예제에서는 Armando Pinto 라는 사람은 받는 사람으로 있다고 가정 합니다.  
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일을 첨부
+  이 예제에서는 파일을 새 메일 항목에 연결 및 Armando Pinto로 보냅니다. 받는 사람으로 Armando Pinto 사람의 있다고 가정 하는 합니다.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)]
  [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [메일 항목 작업](../vsto/working-with-mail-items.md)   
  [방법: 프로그래밍 방식으로 전자 메일 보내기](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
  [방법: 프로그래밍 방식으로 Outlook 전자 메일 항목의 첨부 파일 저장](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
