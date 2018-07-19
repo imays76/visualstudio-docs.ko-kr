@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a01fb5d47f390c311f119e669e7fdb75619b058
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b9d73e1748be34dda6913937ce71858b1c3648ea
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572597"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326734"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>다중 프로세서 인식 로거 작성
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다중 프로세서를 사용할 수 있기 때문에 프로젝트 빌드 시간을 줄일 수 있는 반면 이벤트 로깅 빌드 과정이 복잡해집니다. 단일 프로세서 환경에서 이벤트, 메시지, 경고 및 오류는 예측 가능하고 순차적인 방식으로 로거에 도착합니다. 그러나 다중 프로세서 환경에서 여러 원본의 이벤트는 동시에 또는 순서 없이 도착할 수 있습니다. 이러한 문제를 방지하기 위해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다중 프로세서 인식 로거와 새 로깅 모델이 제공되며, 사용자 지정 "전달 로거"를 만들 수 있습니다.  
@@ -75,7 +75,7 @@ public interface INodeLogger: ILogger
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>단순 분산 로깅에 ConfigurableForwardingLogger 사용  
  ConfigurableForwardingLogger 또는 사용자 지정 전달 로거를 연결하려면 MSBuild.exe 명령줄 빌드에서 `/distributedlogger` 스위치(간단하게 `/dl`)를 사용합니다. 로거 형식 및 클래스의 이름을 지정하기 위한 형식은 분산 로거가 항상 하나 대신 두 개의 로깅 클래스(전달 로거 및 중앙 로거)를 가진 것을 제외하고 `/logger` 스위치에 대한 것과 동일합니다. 다음은 XMLForwardingLogger라는 사용자 지정 전달 로거를 연결하는 방법의 예입니다.  
   
-```  
+```cmd  
 msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
 ```  
   
@@ -86,7 +86,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
   
  예를 들어 빌드가 시작하거나 끝날 때 및 오류가 발생할 때 알림을 받으려는 경우 매개 변수로 `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` 및 `ERROREVENT`를 전달합니다. 세미콜론으로 구분하여 여러 매개 변수를 전달할 수 있습니다. 다음은 ConfigurableForwardingLogger를 사용하여 `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` 및 `ERROREVENT` 이벤트만 전달하는 방법의 예입니다.  
   
-```  
+```cmd  
 msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
 ```  
   

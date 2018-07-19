@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Azure 혜택을 활성화하는 �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: af36faf2345364386c85814b685dcd3211884fe2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336086"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280659"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 
@@ -94,7 +94,7 @@ Visual Studio Azure 크레딧 및 할인을 계속 사용하려면 다음 단계
 1.  Visual Studio Marketplace를 통해 연간 Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) 또는 [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) 클라우드 구독을 구매합니다.
 2.  [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription)를 통해 현재 구독을 갱신하여 50% 이상의 할인을 활용합니다.
 
-[구독 및 해당 이점](https://www.visualstudio.com/vs/pricing/)을 모두 비교합니다.
+[구독 및 해당 이점](https://visualstudio.microsoft.com/vs/pricing/)을 모두 비교합니다.
 
 Microsoft 계정에서 **동일한** 구독 수준의 다른 활성 Visual Studio 구독이 있는 경우 Visual Studio 구독 포털에서 [대체 계정](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions)을 추가하여 이 Azure 혜택에 연결할 수 있습니다. 제대로 작동하지 않을 경우 활성 Visual Studio 구독으로 [Azure 혜택을 전송](/azure/billing/billing-subscription-transfer/)해 볼 수도 있습니다.
 
@@ -111,5 +111,5 @@ Microsoft 계정에서 **다른** 구독 수준의 다른 활성 Visual Studio �
 -  Azure와 관련하여 도움이 필요하세요?  다음 리소스를 확인하세요.
     - 기술 지원: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Azure 설명서](/azure/)
--  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://www.visualstudio.com/subscriptions/support/)에 문의하세요.
--  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://www.visualstudio.com/support/)을 참조하세요.
+-  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+-  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

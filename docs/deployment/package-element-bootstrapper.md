@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b304cc3bee93b367cc3b401328749ee6aca89625
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a0c1ab7a2e304fcaede2a51a1047691343f34783
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815602"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080788"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;패키지&gt; 요소 (부트스트래퍼)
-`Package` 요소는 요소는 패키지 파일 내의 최상위 XML 요소입니다.  
+`Package` 요소는 패키지 파일 내에서 최상위 XML 요소입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -143,16 +143,16 @@ ms.locfileid: "34815602"
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- `Package` 요소는 필수입니다. 다음과 같은 특성이 있습니다.  
+ `Package` 요소는 필수입니다. 다음 특성을 가집니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Culture`|필수. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 한 키의 `Strings` 요소를 설치 하는 동안 제품 이름과 오류 메시지에 대 한 culture 관련 문자열을 나열 합니다.|  
-|`Name`|필수. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 이 특성은 한 키는 `Strings` 포함 해야 하는 요소는 `String` 인 요소는 `Name` 및 `Culture` 속성과 일치 하도록 설정는 `Name` 및 `Culture` 의 속성 `Package`합니다.|  
-|`LicenseAgreement`|선택 사항입니다. (EULA (최종 사용자 사용권 계약)를 포함 하는 배포 패키지에서 파일의 이름을 지정 합니다.  이 파일에는 일반 텍스트 (.txt) 또는 서식 있는 텍스트 형식 수 있습니다. (.rtf)|  
+|`Culture`|필수. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 키로는 `Strings` 요소를 설치 하는 동안 제품 이름 및 오류 메시지에 대 한 문화권 관련 문자열을 나열 합니다.|  
+|`Name`|필수. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]입니다. 이 특성은 키로는 `Strings` 있어야 하는 요소를를 `String` 요소를 `Name` 및 `Culture` 속성과 일치 하도록 설정 합니다 `Name` 및 `Culture` 의 속성 `Package`.|  
+|`LicenseAgreement`|선택 사항입니다. 최종 사용자 사용권 계약 (EULA)을 포함 하는 배포 패키지에 파일의 이름을 지정 합니다.  이 파일에 일반 텍스트 수 있습니다 (*.txt*) 또는 서식 있는 텍스트입니다. (*.rtf*)|  
   
 ## <a name="example"></a>예  
- 다음 코드 예제에서는 재배포 하기 위한 완전 한 패키지 파일을 보여 줍니다.는 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.  
+ 다음 코드 예제에는 재배포에 대 한 완전 한 패키지 파일을 보여 줍니다는 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -189,5 +189,5 @@ ms.locfileid: "34815602"
 </Package>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

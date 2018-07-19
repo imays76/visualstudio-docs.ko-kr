@@ -21,12 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57387cecfdf58667998cc3766617d37c62e0f4ab
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: HT
+ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757083"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131975"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Tableadapter를 사용 하 여 데이터 집합 채우기
 
@@ -106,7 +106,7 @@ Tableadapter에 대 한 읽기 및 쓰기 데이터베이스에서 데이터 명
 TableAdapter를 사용 하면 효과적으로 일반적으로 수행 하는 명령 사용 하 여 동일한 작업을 수행 합니다. 예를 들어, 호출 하는 경우 어댑터의 `Fill` 메서드는 어댑터에서 실행 됩니다 데이터 명령을 해당 `SelectCommand` 속성 데이터 판독기를 사용 하 고 (예를 들어 <xref:System.Data.SqlClient.SqlDataReader>) 결과 집합을 데이터 테이블에 로드 합니다. 마찬가지로, 호출 하는 경우 어댑터의 `Update` 메서드를 적절 한 명령을 실행 (에 `UpdateCommand`를 `InsertCommand`, 및 `DeleteCommand` 속성) 각각에 대 한 데이터 테이블의 레코드를 변경 합니다.
 
 > [!NOTE]
-> 기본 쿼리에서 충분 한 정보가 있는 경우는 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand` 명령이 만들어지면 기본적으로 때는 TableAdapter 생성 됩니다. TableAdapter의 주 쿼리를 단일 테이블 보다 더 많은 `SELECT` 디자이너를 생성할 수 없습니다. 가능한 것이 문 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand`합니다. 이러한 명령은 생성 되지 않습니다. 하는 경우 오류가 발생할 수 있습니다를 실행 하는 경우는 `TableAdapter.Update` 메서드.
+> 기본 쿼리에서 충분 한 정보가 있는 경우는 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand` 명령을 TableAdapter를 생성할 때 기본적으로 생성 됩니다. TableAdapter의 주 쿼리를 단일 테이블 보다 더 많은 `SELECT` 디자이너를 생성할 수 없습니다. 가능한 것이 문 `InsertCommand`, `UpdateCommand`, 및 `DeleteCommand`합니다. 이러한 명령은 생성 되지 않습니다. 하는 경우 오류가 발생할 수 있습니다를 실행 하는 경우는 `TableAdapter.Update` 메서드.
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
 

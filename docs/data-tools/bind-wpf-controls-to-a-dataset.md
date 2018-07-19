@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9dcf9079a444b581cacbe4e013149259b3ecb87
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: HT
+ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38801125"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131962"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>데이터 집합으로 WPF 컨트롤 바인딩
 
@@ -240,7 +240,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 ## <a name="next-steps"></a>다음 단계
 
-이 연습을 완료 하면 확인할 수 있습니다 다음 관련 태스크:
+이 연습을 완료 한 후 다음과 같은 관련된 작업을 볼 수 있습니다.
 
 - 사용 방법 알아보기 합니다 **데이터 원본** 다른 유형의 데이터 원본에 컨트롤을 WPF 바인딩할 Visual Studio의 창. 자세한 내용은 [WCF 데이터 서비스에 WPF 바인딩 컨트롤](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)합니다.
 

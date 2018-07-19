@@ -1,10 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: b629de8144e08c7c0019a0a116f84e5877c3a477
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0ee0234e91cdf07c2b52c39d065d527a776dc4ce
+ms.sourcegitcommit: 64bf371ffe294e9b3cf769db03cf0f5c1a9b680c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/15/2018
+ms.locfileid: "35666980"
 ---
 ### <a name="create-a-project-using-django-20"></a>Django 2.0을 사용하여 프로젝트 만들기
 
@@ -16,7 +17,7 @@ ms.lasthandoff: 04/27/2018
 
 1. `pip install django`를 실행하여 전역 Python 환경에 최신 Django 패키지를 설치합니다.
 
-1. `django-admin startproject <project_name>`을 실행합니다. 이때 `<project_name>`을 1단계에서 사용한 것과 동일한 프로젝트 이름(예: “HelloDjango”)으로 바꿉니다. `startproject` 명령은 `__init.py__`, `settings.py`, `urls.py` 및 `wsgi.py` 파일을 포함하는, `<project_name>`과 일치하는 폴더와 함께 `manage.py` 파일을 만듭니다.
+1. `django-admin startproject <project_name>`을 실행합니다. 이때 `<project_name>`을 1단계에서 사용한 것과 동일한 프로젝트 이름(예: “HelloDjango”)으로 바꿉니다. `startproject` 명령은 `__init__.py`, `settings.py`, `urls.py` 및 `wsgi.py` 파일을 포함하는, `<project_name>`과 일치하는 폴더와 함께 `manage.py` 파일을 만듭니다.
 
 1. Visual Studio에서 프로젝트의 Django 1.x 파일을 다음과 같이 Django 2.x 파일로 바꿉니다.
 

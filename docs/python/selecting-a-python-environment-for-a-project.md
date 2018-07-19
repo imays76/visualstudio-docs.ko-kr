@@ -1,7 +1,7 @@
 ---
 title: 프로젝트에 대한 Python 인터프리터 및 환경 선택
 description: Visual Studio 프로젝트와 가상 환경 만들기에 대한 지침에 사용하도록 Python 환경을 할당하는 방법입니다.
-ms.date: 03/21/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c38436c5cf3d89b4224fbdbe9bd072f2a6c10d0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976691"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117110"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>프로젝트에 사용되는 Python 환경을 할당하는 방법
 

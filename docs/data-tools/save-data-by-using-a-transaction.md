@@ -18,35 +18,35 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f4c865dcf55f8796748308822b8a6dde5f96ef8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c5d8d9f961db7c6560f1dd7a73f2ea62a974bac
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920549"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174220"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>방법: 트랜잭션을 사용 하 여 데이터 저장
-사용 하 여 트랜잭션에서 데이터를 저장 된 <xref:System.Transactions> 네임 스페이스입니다. 사용 된 <xref:System.Transactions.TransactionScope> 개체가 자동으로 관리 되는 트랜잭션에 참여 하도록 합니다.
+사용 하 여 트랜잭션에서 데이터를 저장 합니다 <xref:System.Transactions> 네임 스페이스입니다. 사용 된 <xref:System.Transactions.TransactionScope> 개체를 자동으로 관리 되는 트랜잭션에 참여할 수 있습니다.
 
-트랜잭션을 사용 하는 프로젝트에 대 한 참조를 수동으로 추가 해야 하므로 System.Transactions 어셈블리에 대 한 참조는 프로젝트 생성 되지 않습니다.
+프로젝트에 대 한 참조를 사용 하 여 만들어지지 합니다 *System.Transactions* 어셈블리를 수동으로 트랜잭션을 사용 하는 프로젝트에 대 한 참조를 추가 해야 합니다.
 
-트랜잭션을 구현 하는 가장 쉬운 방법은를 인스턴스화하는 <xref:System.Transactions.TransactionScope> 개체는 `using` 문. (자세한 내용은 참조 [문을 사용 하 여](/dotnet/visual-basic/language-reference/statements/using-statement), 및 [문을 사용 하 여](/dotnet/csharp/language-reference/keywords/using-statement).) 내에서 실행 되는 코드는 `using` 문을 트랜잭션에 참여 합니다.
+인스턴스화하는 가장 쉬운 방법은 트랜잭션을 구현 하는 것을 <xref:System.Transactions.TransactionScope> 개체는 `using` 문입니다. (자세한 내용은 [문을 사용 하 여](/dotnet/visual-basic/language-reference/statements/using-statement), 및 [문을 사용 하 여](/dotnet/csharp/language-reference/keywords/using-statement).) 내에서 실행 되는 코드는 `using` 문을 트랜잭션에 참여 합니다.
 
-트랜잭션을 커밋하는 호출 하는 <xref:System.Transactions.TransactionScope.Complete%2A> 사용 하 여 마지막 문으로 메서드를 차단 합니다.
+트랜잭션을 커밋하려면 호출을 <xref:System.Transactions.TransactionScope.Complete%2A> 마지막 문으로 사용 하 여 메서드를 차단 합니다.
 
-트랜잭션을 롤백하려면를 호출 하기 전에 예외가 throw 된 <xref:System.Transactions.TransactionScope.Complete%2A> 메서드.
+트랜잭션을 롤백하려면를 호출 하기 전에 예외를 throw 합니다 <xref:System.Transactions.TransactionScope.Complete%2A> 메서드.
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>System.Transactions.dll에 대 한 참조를 추가 하려면
 
-1.  에 **프로젝트** 메뉴 선택 **참조 추가**합니다.
+1.  에 **프로젝트** 메뉴에서 **참조 추가**합니다.
 
 2.  에 **.NET** 탭 (**SQL Server** SQL Server 프로젝트에 대 한 탭)을 선택 **System.Transactions**를 선택한 후 **확인**합니다.
 
-     System.Transactions.dll에 대 한 참조는 프로젝트에 추가 됩니다.
+     에 대 한 참조가 *System.Transactions.dll* 프로젝트에 추가 됩니다.
 
 ## <a name="to-save-data-in-a-transaction"></a>트랜잭션에서 데이터를 저장 하려면
 
--   Using 내에서 데이터를 저장 하는 코드를 추가 트랜잭션이 포함 된 문입니다. 다음 코드를 만들고 인스턴스화하는 방법을 보여 줍니다는 <xref:System.Transactions.TransactionScope> 개체를 사용 하 여 문:
+-   내에서 데이터를 저장 하는 코드를 추가 합니다. 트랜잭션을 포함 하는 문입니다. 다음 코드를 만들고 인스턴스화하는 방법을 보여 줍니다는 <xref:System.Transactions.TransactionScope> 개체를 사용 하 여 문:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

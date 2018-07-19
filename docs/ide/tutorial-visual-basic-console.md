@@ -13,18 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ce1c40a7031145a13eb2eebf8adaee4eba51e9fc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764935"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280340"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Visual Studio에서 Visual Basic 시작
 
 VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 몇 가지 콘솔 앱을 만들어 실행하고, 그 과정에서 [Visual Studio IDE(통합 개발 환경)](visual-studio-ide.md)의 일부 기능을 살펴봅니다.
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -58,7 +58,7 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
 2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *HelloWorld*로 지정합니다.  
+3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *HelloWorld*로 지정합니다.
 
    ![Visual Studio IDE의 새 프로젝트 대화 상자의 콘솔 앱(.NET Core) 프로젝트 템플릿](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -113,7 +113,7 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
 1. Visual Studio 2017을 열고 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-2. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *CalculateThis*로 지정합니다.  
+2. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *CalculateThis*로 지정합니다.
 
 3. `Module Program` 줄과 `End Module` 줄 사이에 다음 코드를 입력합니다.
 
@@ -136,7 +136,7 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
    ![Calculate This code를 표시하는 코드 창](../ide/media/vb-codewindow-calculate-this.png)
 
-4. **CalculateThis**를 클릭하여 프로그램을 실행합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.       
+4. **CalculateThis**를 클릭하여 프로그램을 실행합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
 
     ![수행할 작업을 선택하는 프롬프트가 포함된 CaluculateThis 앱이 표시된 콘솔 창](../ide/media/vb-console-calculate-this.png)
 

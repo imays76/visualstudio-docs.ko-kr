@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48e4f28ae9015f446401556e4ba5f4b65a56a285
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 452a30b6af12045d2812b9cd84a4f03664fbe45f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619369"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282026"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio 제거
 
@@ -35,13 +35,13 @@ ms.locfileid: "31619369"
      >[!NOTE]
      일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. 설치 관리자를 클릭하여 시작하고 ![세부 정보 아이콘](media/vs2017uninstall-UninstallIcon.png "옵션 선택 아이콘") 아이콘을 클릭한 다음 **제거**를 클릭합니다.  
+2. 설치 관리자를 클릭하여 시작하고 ![세부 정보 아이콘](media/vs2017uninstall-UninstallIcon.png "옵션 선택 아이콘") 아이콘을 클릭한 다음 **제거**를 클릭합니다.
 
-     ![Visual Studio 2017 수정: 수정, 시작, 복구 또는 제거](media/vs2017-uninstall.PNG "Visual Studio 2017 복구 또는 제거")  
+     ![Visual Studio 2017 수정: 수정, 시작, 복구 또는 제거](media/vs2017-uninstall.PNG "Visual Studio 2017 복구 또는 제거")
 
 3. **확인**을 클릭하여 선택을 확인합니다.
 
-     ![Visual Studio 2017 수정: 제품 제거](media/vs2017-uninstall-confirm.PNG "Visual Studio 2017 제거 확인")  
+     ![Visual Studio 2017 수정: 제품 제거](media/vs2017-uninstall-confirm.PNG "Visual Studio 2017 제거 확인")
 
 나중에 마음이 바뀌어 Visual Studio 2017을 다시 설치하려면 Visual Studio 설치 관리자를 다시 시작한 다음 선택 영역 화면에서 **설치**를 선택하면 됩니다.
 
@@ -49,13 +49,13 @@ ms.locfileid: "31619369"
 
 컴퓨터에서 Visual Studio 2017과 Visual Studio 설치 관리자의 모든 설치를 완전히 제거하려면 [앱 및 기능]에서 제거합니다.
 
-1. [앱 및 기능]을 엽니다. 예를 들어 Windows 10에서는 **시작**을 선택하고 검색 창에 **앱 및 기능**을 입력합니다.  
-2. **Microsoft Visual Studio 2017**을 찾습니다.  
-3. **제거**를 클릭합니다.  
+1. [앱 및 기능]을 엽니다. 예를 들어 Windows 10에서는 **시작**을 선택하고 검색 창에 **앱 및 기능**을 입력합니다.
+2. **Microsoft Visual Studio 2017**을 찾습니다.
+3. **제거**를 클릭합니다.
 
 ## <a name="get-support"></a>지원 받기
 
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 

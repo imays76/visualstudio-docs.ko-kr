@@ -19,11 +19,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 5690abe8e155c33d8e998ea0a18749e172da7e34
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949503"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797534"
 ---
 # <a name="property-pages-javascript"></a>속성 페이지, JavaScript
 **속성 페이지**에서 프로젝트 설정에 액세스할 수 있습니다. **속성 페이지**에 표시되는 페이지를 사용하여 프로젝트 속성을 변경할 수 있습니다.

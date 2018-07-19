@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 0ac6bd2e9b2c15f64e0232e46267a87c210b5b69
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3ea3669f3c66a36a10e63dde9d98b0f951d58f1e
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751457"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844936"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
@@ -240,7 +240,7 @@ shim을 사용하려면 응용 프로그램 코드를 수정하거나 특정 방
 
 이전 예제에서는 정적 메서드에 대해 shim을 사용합니다. 인스턴스 메서드에 shim을 사용하려면 형식 이름과 메서드 이름 사이에 `AllInstances`를 씁니다.
 
-```
+```vb
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ```
 

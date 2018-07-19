@@ -10,11 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0a2688b540b9256b43b674714c6c123e90acaaeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa1c2e97b52027c81749d0e4cd75ea767f2d1c13
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280392"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
 이 섹션에서는 Visual Studio Tools for Unity를 설치하고 Visual Studio와 함께 작동하도록 Unity 프로젝트를 구성하는 방법을 설명합니다.
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 
 -   Visual Studio Community, Professional, Premium 또는 Enterprise와 같은 확장을 지원하는 **Visual Studio** 버전. Visual Studio Community를 무료로 다운로드할 수 있습니다.
 
-     [Visual Studio Community 다운로드](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+     [Visual Studio Community 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 -   **Unity** 버전 4.0.0 이상. Visual Studio Tools for Unity 2.1 이상에 대한 기본 제공 지원을 활용하려면 **Unity** 버전 5.2.0 이상
 

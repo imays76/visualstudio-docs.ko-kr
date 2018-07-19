@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694085"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282527"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017의 기능
 
@@ -24,7 +24,7 @@ ms.locfileid: "34694085"
 
 Visual Studio의 모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드*를 선택하여 설치할 수 있습니다. 이 전략을 통해 Visual Studio 설치에 필요한 공간을 더 작게 유지할 수 있습니다. 즉 Visual Studio를 설치하고 업데이트하는 속도도 매우 빨라집니다.
 
-아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 시스템에 Visual Studio를 설치하는 방법에 대한 자세한 내용은 [Visual Studio 2017 설치](../install/install-visual-studio.md)를 참조하세요.
 
@@ -52,17 +52,17 @@ Visual Studio의 [클라우드 탐색기](/azure/vs-azure-tools-resources-managi
 
 ![Visual Studio에 연결된 서비스](media/connected-services.png)
 
-자세한 내용은 [Visual Studio 및 Azure를 사용하여 클라우드로 이동](https://www.visualstudio.com/vs/azure-tools/)을 참조하세요.
+자세한 내용은 [Visual Studio 및 Azure를 사용하여 클라우드로 이동](https://visualstudio.microsoft.com/vs/azure-tools/)을 참조하세요.
 
 ## <a name="create-apps-for-the-web"></a>웹앱 만들기
 
 웹은 현대 세계를 이끌고 있고, Visual Studio에서 이를 위한 앱을 작성할 수 있습니다. ASP.NET, Node.js, Python, JavaScript 및 TypeScript를 사용하여 웹앱을 만들 수 있습니다. Visual Studio는 Angular, jQuery, Express 등과 같은 웹 프레임워크를 이해합니다. ASP.NET Core 및 .NET Core는 Windows, Mac 및 Linux 운영 체제에서 실행됩니다. [ASP.NET Core](http://www.asp.net/core/overview)는 MVC, WebAPI 및 SignalR에 대한 주요 업데이트이며 Windows, Mac 및 Linux에서 실행됩니다.  ASP.NET Core는 최신 클라우드 기반 웹앱 및 서비스를 빌드하기 위한 간결하고 구성 가능한 .NET 스택을 제공하도록 처음부터 다시 설계되었습니다.
 
-자세한 내용은 [최신 웹 도구](https://www.visualstudio.com/vs/modern-web-tooling/)를 참조하세요.
+자세한 내용은 [최신 웹 도구](https://visualstudio.microsoft.com/vs/modern-web-tooling/)를 참조하세요.
 
 ## <a name="build-cross-platform-apps-and-games"></a>플랫폼 간 앱 및 게임 제작
 
-Visual Studio를 사용하여 Android, iOS 및 기타 [모바일 장치](https://www.visualstudio.com/vs/mobile-app-development/)뿐 아니라 macOS, Linux, Windows용 앱과 게임을 빌드할 수 있습니다.
+Visual Studio를 사용하여 Android, iOS 및 기타 [모바일 장치](https://visualstudio.microsoft.com/vs/mobile-app-development/)뿐 아니라 macOS, Linux, Windows용 앱과 게임을 빌드할 수 있습니다.
 
 - Windows, macOS 및 Linux에서 실행되는 [.NET Core](/dotnet/core/) 앱을 빌드합니다.
 
@@ -122,7 +122,7 @@ TFS(Team Foundation Server)는 Visual Studio용 응용 프로그램 수명 주�
 
 Microsoft 개발자와 개발 커뮤니티에서 만든 [기존 Visual Studio용 확장](https://marketplace.visualstudio.com/vs)을 찾아 보세요.
 
-Visual Studio 확장에 대한 자세한 내용은 [Visual Studio IDE 확장](https://www.visualstudio.com/vs/extend/)을 참조하세요.
+Visual Studio 확장에 대한 자세한 내용은 [Visual Studio IDE 확장](https://visualstudio.microsoft.com/vs/extend/)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
