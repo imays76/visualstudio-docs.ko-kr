@@ -1,5 +1,5 @@
 ---
-title: '방법: SharePoint 프로젝트 확장 만들기 | Microsoft Docs'
+title: '방법: SharePoint 프로젝트 확장명 만들기 | Microsoft Docs'
 ms.custom: ''
 ms.date: 04/28/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a47e7c4fbd78241d52b30ed80ab59eb548ab97d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 25644a11ddbef3f8d493b64f8ca288dbaa87a14c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119440"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>방법: SharePoint 프로젝트 확장명 만들기
-  Visual Studio에서 열려 있는 모든 SharePoint 프로젝트에 기능을 추가 하려는 경우 프로젝트 확장을 만듭니다. 자세한 내용은 참조 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)합니다.  
+  Visual Studio에서 열려 있는 SharePoint 프로젝트에 기능을 추가 하려는 경우 프로젝트 확장을 만듭니다. 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)합니다.  
 
 ### <a name="to-create-a-project-extension"></a>프로젝트 확장을 만들려면  
 
@@ -38,12 +39,12 @@ ms.lasthandoff: 04/16/2018
 
 3.  <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 인터페이스를 구현하는 클래스를 만듭니다.  
 
-4.  추가 된 <xref:System.ComponentModel.Composition.ExportAttribute> 클래스에 있습니다. 이 특성을 찾아 로드할 Visual Studio을 사용 하 여 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 구현 합니다. 전달 된 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 형식을 특성 생성자에 있습니다.  
+4.  추가 된 <xref:System.ComponentModel.Composition.ExportAttribute> 클래스입니다. 이 특성을 검색 하 고 로드 되도록 Visual Studio를 사용 하면 프로그램 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 구현 합니다. 전달 된 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 특성 생성자에는 형식입니다.  
 
-5.  구현에서는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> 메서드를 사용 하 여 멤버는 *projectService* 매개 변수를 확장 프로그램의 동작을 정의 합니다. 이 매개 변수는 한 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 개체에 정의 된 이벤트에 대 한 액세스를 제공 하는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> 인터페이스입니다.  
+5.  구현에서의 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> 메서드를 사용 하 여 멤버를 *projectService* 확장 프로그램의 동작을 정의 하는 매개 변수입니다. 이 매개 변수는 프로그램 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 에 정의 된 이벤트에 대 한 액세스를 제공 하는 개체는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> 인터페이스.  
 
 ## <a name="example"></a>예제  
- 다음 코드 예제에는 여 정의 된 SharePoint 프로젝트 이벤트의 대부분을 처리 하는 간단한 프로젝트 확장을 만드는 방법을 보여 줍니다는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> 인터페이스입니다. SharePoint 프로젝트를 만들고 코드를 테스트 하려면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 및 다음 솔루션에 프로젝트를 추가, 프로젝트 속성 값을 변경 또는 삭제 하거나 프로젝트를 제외 합니다. 확장 알려 이벤트의 메시지를 작성 하 여는 **출력** 창 및 **오류 목록** 창.  
+ 다음 코드 예제에 정의 된 SharePoint 프로젝트 이벤트의 대부분을 처리 하는 간단한 프로젝트 확장명 만들기 하는 방법에 설명 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> 인터페이스입니다. 코드를 테스트 하려면에서 SharePoint 프로젝트를 만듭니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 및 다음 솔루션에 프로젝트를 추가, 프로젝트 속성 값을 변경 또는 삭제 하거나 프로젝트를 제외 합니다. 확장 이벤트의 메시지를 작성 하 여 알립니다 합니다 **출력** 창 및 **오류 목록** 창입니다.  
 
   ```vb  
     Imports Microsoft.VisualStudio.SharePoint
@@ -187,21 +188,21 @@ ms.lasthandoff: 04/16/2018
   }  
   ```  
 
-SharePoint 프로젝트 서비스를 사용 하 여 메시지를 작성 하는이 예제는 **출력** 창 및 **오류 목록** 창. 자세한 내용은 참조 [SharePoint 프로젝트 서비스를 사용 하 여](../sharepoint/using-the-sharepoint-project-service.md)합니다.  
+SharePoint 프로젝트 서비스를 사용 하 여 메시지를 작성 하는이 예제는 **출력** 창 및 **오류 목록** 창입니다. 자세한 내용은 [SharePoint 프로젝트 서비스를 사용 하 여](../sharepoint/using-the-sharepoint-project-service.md)입니다.  
 
- 처리 하는 방법을 보여 주는 예제는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> 및 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> 이벤트를 참조 [하는 방법: 바로 가기 메뉴 항목을 SharePoint 프로젝트에 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md) 및 [하는 방법: SharePoint 프로젝트에속성추가](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
+ 처리 하는 방법을 보여 주는 예제는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> 및 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> 이벤트를 참조 하세요 [방법: 바로 가기 메뉴 항목을 SharePoint 프로젝트에 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md) 및 [하는 방법: SharePoint 프로젝트에속성을추가](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
 
-## <a name="compiling-the-code"></a>코드 컴파일  
+## <a name="compile-the-code"></a>코드 컴파일  
  이 예제에는 다음 어셈블리에 대 한 참조가 필요합니다.  
 
 -   Microsoft.VisualStudio.SharePoint  
 
 -   System.ComponentModel.Composition  
 
-## <a name="deploying-the-extension"></a>확장 배포  
- 확장을 배포 하려면 만듭니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장과 함께 하려는 다른 파일에 대 한 패키지 (VSIX) 확장 합니다. 자세한 내용은 참조 [Visual Studio에서 SharePoint 도구에 대 한 확장명 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)합니다.  
+## <a name="deploy-the-extension"></a>확장 배포  
+ 확장 배포를 만들려면를 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 파일에 대 한 패키지 (VSIX) 확장 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 용 확장 프로그램 배포 도구](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)합니다.  
 
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
  [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)   
  [방법: SharePoint 프로젝트에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [방법: SharePoint 프로젝트에 속성 추가](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
