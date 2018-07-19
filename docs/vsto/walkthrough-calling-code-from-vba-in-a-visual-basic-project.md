@@ -1,5 +1,5 @@
 ---
-title: '연습: Visual Basic 프로젝트에서 vba의 코드 호출 | Microsoft Docs'
+title: '연습: Visual Basic 프로젝트에서 VBA에서 코드 호출'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: efb8f6c2759760fe2eb5c5d5ccf23e0942eac93a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808939"
 ---
-# <a name="walkthrough-calling-code-from-vba-in-a-visual-basic-project"></a>연습: Visual Basic 프로젝트에서 VBA의 코드 호출
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>연습: Visual Basic 프로젝트에서 VBA에서 코드 호출
   이 연습에서는 문서의 VBA(Visual Basic for Applications) 코드에서 Microsoft Office Word에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다. 이 절차에는 세 가지 기본 단계( `ThisDocument` 호스트 항목 클래스에 메서드 추가, VBA 코드에 메서드 노출, 문서의 VBA 코드에서 메서드 호출)가 포함됩니다.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -57,21 +58,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Word  
   
-## <a name="creating-a-document-that-contains-vba-code"></a>VBA 코드를 포함하는 문서 만들기  
+## <a name="create-a-document-that-contains-vba-code"></a>VBA 코드를 포함 하는 문서 만들기  
  첫 번째 단계는 간단한 VBA 매크로를 포함하는 매크로 사용 문서를 만드는 것입니다. 해당 문서를 기반으로 하는 Visual Studio 프로젝트를 만들기 전에 문서에 VBA 프로젝트가 포함되어야 합니다. 그렇지 않으면 Visual Studio가 VBA 코드에서 사용자 지정 어셈블리를 호출할 수 있도록 VBA 프로젝트를 수정할 수 없습니다.  
   
  사용하려는 VBA 코드를 포함하는 문서가 이미 있는 경우 이 단계를 건너뛸 수 있습니다.  
   
-#### <a name="to-create-a-document-that-contains-vba-code"></a>VBA 코드를 포함하는 문서를 만들려면  
+### <a name="to-create-a-document-that-contains-vba-code"></a>VBA 코드를 포함하는 문서를 만들려면  
   
 1.  Word를 시작합니다.  
   
-2.  현재 문서 단어 저장 **매크로 사용 문서 (\*.docm)** 이름의 **DocumentWithVBA**합니다. 통합 문서를 바탕 화면과 같은 편리한 위치에 저장합니다.  
+2.  활성 문서를 단어로 저장 **매크로 사용 문서 (\*.docm)** 이름의 **DocumentWithVBA**합니다. 통합 문서를 바탕 화면과 같은 편리한 위치에 저장합니다.  
   
 3.  리본에서 **개발자** 탭을 클릭합니다.  
   
     > [!NOTE]  
-    >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)을 참조하세요.  
+    >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
   
 4.  **코드** 그룹에서 **Visual Basic**을 클릭합니다.  
   
@@ -83,17 +84,17 @@ ms.lasthandoff: 04/16/2018
   
 6.  다음 VBA 코드를 코드 파일에 추가합니다. 이 코드는 아무 작업도 수행하지 않는 간단한 함수를 정의합니다. 이 함수의 유일한 목적은 VBA 프로젝트가 문서에 있는지 확인하는 것입니다. 이 작업은 이 연습의 이후 단계에 필요합니다.  
   
-    ```  
+    ```vb  
     Sub EmptySub()  
     End Sub  
     ```  
   
 7.  문서를 저장하고 Word를 종료합니다.  
   
-## <a name="creating-the-project"></a>프로젝트 만들기  
+## <a name="create-the-project"></a>프로젝트를 만듭니다.  
  이제 이전에 만든 매크로 사용 문서를 사용하는 Word용 문서 수준 프로젝트를 만들 수 있습니다.  
   
-#### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
+### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
 1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.  
   
@@ -117,10 +118,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 의 디자이너에 **DocumentWithVBA** 문서가 열리고 **CallingCodeFromVBA** 프로젝트가 **솔루션 탐색기**에 추가됩니다.  
   
-## <a name="trusting-the-location-of-the-document"></a>문서 위치 신뢰  
+## <a name="trust-the-location-of-the-document"></a>문서 위치 신뢰  
  문서의 VBA 코드에 솔루션의 코드를 노출하려면 먼저 실행할 문서의 VBA를 신뢰해야 합니다. 다음과 같은 여러 가지 방법으로 이 작업을 수행할 수 있습니다. 이 연습의 경우 Word의 **보안 센터** 에서 문서 위치를 신뢰합니다.  
   
-#### <a name="to-trust-the-location-of-the-document"></a>문서 위치를 신뢰하려면  
+### <a name="to-trust-the-location-of-the-document"></a>문서 위치를 신뢰하려면  
   
 1.  Word를 시작합니다.  
   
@@ -148,10 +149,10 @@ ms.lasthandoff: 04/16/2018
   
 13. Word를 종료합니다.  
   
-## <a name="adding-a-method-to-the-thisdocument-class"></a>ThisDocument 클래스에 메서드 추가  
+## <a name="add-a-method-to-the-thisdocument-class"></a>ThisDocument 클래스에 메서드를 추가 합니다.  
  이제 VBA 프로젝트가 설정되었으므로 VBA 코드에서 호출할 수 있는 `ThisDocument` 호스트 항목 클래스에 메서드를 추가합니다.  
   
-#### <a name="to-add-a-method-to-the-thisdocument-class"></a>ThisDocument 클래스에 메서드를 추가하려면  
+### <a name="to-add-a-method-to-the-thisdocument-class"></a>ThisDocument 클래스에 메서드를 추가하려면  
   
 1.  **솔루션 탐색기**에서 **ThisDocument.vb**를 마우스 오른쪽 단추로 클릭한 다음 **코드 보기**를 클릭합니다.  
   
@@ -163,10 +164,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  프로젝트를 빌드합니다.  
   
-## <a name="exposing-the-method-to-vba-code"></a>VBA 코드에 메서드 노출  
+## <a name="expose-the-method-to-vba-code"></a>VBA 코드에 메서드 노출  
  문서의 VBA 코드에 `CreateTable` 메서드를 노출하려면 **호스트 항목의** EnableVbaCallers `ThisDocument` 속성을 **True**로 설정합니다.  
   
-#### <a name="to-expose-the-method-to-vba-code"></a>VBA 코드에 메서드를 노출하려면  
+### <a name="to-expose-the-method-to-vba-code"></a>VBA 코드에 메서드를 노출하려면  
   
 1.  **솔루션 탐색기**에서 **ThisDocument.vb**를 두 번 클릭합니다.  
   
@@ -178,15 +179,15 @@ ms.lasthandoff: 04/16/2018
   
 4.  프로젝트를 빌드합니다.  
   
-## <a name="calling-the-method-from-vba-code"></a>VBA 코드에서 메서드 호출  
+## <a name="call-the-method-from-vba-code"></a>VBA 코드에서 메서드를 호출 합니다.  
  이제 문서의 VBA 코드에서 `CreateTable` 메서드를 호출할 수 있습니다.  
   
 > [!NOTE]  
->  이 연습에서는 프로젝트를 디버그하는 동안 문서에 VBA 코드를 추가합니다. Visual Studio에서 빌드 출력 폴더의 문서를 주 프로젝트 폴더의 문서 복사본으로 바꾸기 때문에 이 문서에 추가하는 모든 VBA 코드는 다음번에 프로젝트를 빌드할 때 덮어쓰입니다. VBA 코드를 저장하려는 경우 프로젝트 폴더의 문서에 복사할 수 있습니다. 자세한 내용은 [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)을 참조하세요.  
+>  이 연습에서는 프로젝트를 디버그하는 동안 문서에 VBA 코드를 추가합니다. Visual Studio에서 빌드 출력 폴더의 문서를 주 프로젝트 폴더의 문서 복사본으로 바꾸기 때문에 이 문서에 추가하는 모든 VBA 코드는 다음번에 프로젝트를 빌드할 때 덮어쓰입니다. VBA 코드를 저장하려는 경우 프로젝트 폴더의 문서에 복사할 수 있습니다. 자세한 내용은 [결합 VBA 및 문서 수준 사용자 지정](../vsto/combining-vba-and-document-level-customizations.md)합니다.  
   
-#### <a name="to-call-the-method-from-vba-code"></a>VBA 코드에서 메서드를 호출하려면  
+### <a name="to-call-the-method-from-vba-code"></a>VBA 코드에서 메서드를 호출하려면  
   
-1.  F5 키를 눌러 프로젝트를 실행합니다.  
+1.  키를 눌러 **F5** 프로젝트를 실행 합니다.  
   
 2.  **개발자** 탭의 **코드** 그룹에서 **Visual Basic**을 클릭합니다.  
   
@@ -198,13 +199,13 @@ ms.lasthandoff: 04/16/2018
   
      이 코드는 사용자 지정 어셈블리의 `CreateTable` 메서드를 호출합니다. 매크로는 `CallVSTOAssembly` 개체의 `ThisDocument` 속성을 사용하여 이 메서드에 액세스합니다. 이 속성은 이 연습의 앞부분에서 **EnableVbaCallers** 속성을 설정할 때 자동으로 생성되었습니다.  
   
-    ```  
+    ```vb  
     Sub CreateTable()  
         Call ThisDocument.CallVSTOAssembly.CreateTable("Employee Name", "Start Date")  
     End Sub  
     ```  
   
-5.  F5 키를 누릅니다.  
+5.  **F5**키를 누릅니다.  
   
 6.  문서에 새 테이블이 추가되었는지 확인합니다.  
   
@@ -213,15 +214,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>다음 단계  
  다음 항목에서는 VBA에서 Office 솔루션의 코드를 호출하는 방법에 대해 자세히 알아볼 수 있습니다.  
   
--   VBA에서 Visual C# 사용자 지정의 코드를 호출합니다. 이 프로세스는 Visual Basic 프로세스와 다릅니다. 자세한 내용은 참조 [연습: Visual C에서 vba의 코드 호출&#35; 프로젝트](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)합니다.  
+-   VBA에서 Visual C# 사용자 지정의 코드를 호출합니다. 이 프로세스는 Visual Basic 프로세스와 다릅니다. 자세한 내용은 [연습: Visual C에서 vba의 코드를 호출 합니다.&#35; 프로젝트](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)합니다.  
   
--   VBA에서 VSTO 추가 기능의 코드를 호출합니다. 자세한 내용은 참조 [연습: VSTO 추가 기능에서 VBA에서 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)합니다.  
+-   VBA에서 VSTO 추가 기능의 코드를 호출합니다. 자세한 내용은 [연습: VBA에서 VSTO 추가 기능에서 코드를 호출할](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)   
  [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)   
- [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
  [방법: Visual C에서 VBA로 코드 노출&#35; 프로젝트](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [연습: Visual C에서 vba의 코드 호출&#35; 프로젝트](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
+ [연습: Visual C에서 vba의 코드를 호출할&#35; 프로젝트](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
   
   
