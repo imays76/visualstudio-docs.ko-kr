@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750482"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282975"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -50,7 +50,7 @@ Visual Studio 2017에서 가장 두드러진 개선 사항과 새로운 기능�
 
 ### <a name="a-new-setup-experience"></a>새로운 설치 환경
 
-[Visual Studio 2017 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 또는 [Visual Studio 시스템 요구 사항 확인](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Visual Studio 2017 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 또는 [Visual Studio 시스템 요구 사항 확인](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
 
  Visual Studio를 사용하면 필요할 때 필요한 기능만 쉽고 빠르게 설치할 수 있습니다. 또한 완전히 제거됩니다.
 
@@ -338,8 +338,8 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 Visual Studio 2017은 개발 환경을 훨씬 더 좋게 만들어 줄 수 있는 새 기능으로 자주 업데이트됩니다. 실험적 미리 보기에 있는 가장 주목할 만한 업데이트 몇 가지를 요약하면 다음과 같습니다.
 
-* **[실시간 공유](https://www.visualstudio.com/services/live-share/)** - Visual Studio 내에서 바로 코드베이스와 컨텍스트를 팀원과 공유하고 즉각적인 양방향 공동 작업을 수행할 수 있는 새로운 도구. 실시간 공유를 사용하면 귀하가 공유한 프로젝트를 팀원이 원활하고 안전하게 읽고, 탐색하고, 편집하고, 디버깅할 수 있습니다.<br><br>자세한 내용은 [실시간 공유 FAQ](/visualstudio/liveshare/faq)를 참조하세요.<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)** - AI를 사용하여 더 나은 컨텍스트 인식 코드 완성 기능을 제공하고, 개발자에게 팀의 패턴과 스타일에 맞게 코딩하도록 안내하고, 찾기 어려운 코드 문제를 발견하고, 코드 검토를 정말로 중요한 영역에 집중시켜서 소프트웨어 개발을 개선하는 새로운 기능입니다. <br><br>자세한 내용은 [IntelliCode FAQ](../ide/not-in-toc/intellicode-faq.md)를 참조하세요.
+* **[실시간 공유](https://visualstudio.microsoft.com/services/live-share/)** - Visual Studio 내에서 바로 코드베이스와 컨텍스트를 팀원과 공유하고 즉각적인 양방향 공동 작업을 수행할 수 있는 새로운 도구. 실시간 공유를 사용하면 귀하가 공유한 프로젝트를 팀원이 원활하고 안전하게 읽고, 탐색하고, 편집하고, 디버깅할 수 있습니다.<br><br>자세한 내용은 [실시간 공유 FAQ](/visualstudio/liveshare/faq)를 참조하세요.<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)** - AI를 사용하여 더 나은 컨텍스트 인식 코드 완성 기능을 제공하고, 개발자에게 팀의 패턴과 스타일에 맞게 코딩하도록 안내하고, 찾기 어려운 코드 문제를 발견하고, 코드 검토를 정말로 중요한 영역에 집중시켜서 소프트웨어 개발을 개선하는 새로운 기능입니다. <br><br>자세한 내용은 [IntelliCode FAQ](../ide/not-in-toc/intellicode-faq.md)를 참조하세요.
 
 Visual Studio 2017에서 진행 중인 다른 기능에 대해 더 알고 싶은가요? [Visual Studio 로드맵](/visualstudio/productinfo/vs2018-roadmap) 페이지를 참조하세요.
 
@@ -358,5 +358,5 @@ Visual Studio를 개선하는 방법을 제안하거나 제품 지원 옵션에 
 * [Visual Studio 2017 릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Visual C++의 새로운 기능](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C#의 새로운 기능](/dotnet/csharp/whats-new)
-* [Team Foundation Server의 새로운 기능](https://www.visualstudio.com/docs/whats-new)
-* [Mac용 Visual Studio의 새로운 기능](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Team Foundation Server의 새로운 기능](/tfs/server/whats-new?view=vsts)
+* [Mac용 Visual Studio의 새로운 기능](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

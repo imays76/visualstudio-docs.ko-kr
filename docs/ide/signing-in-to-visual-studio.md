@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948342"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282233"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
@@ -26,9 +26,10 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
 로그인하면 Visual Studio 환경이 향상됩니다. 몇 가지 예를 들자면, 로그인한 후에는 여러 장치에서 설정을 동기화하고 평가판을 연장하고 Azure 서비스에 자동으로 연결할 수 있습니다.
 
-다음은 로그인 후 예상할 수 있고 수행할 수 있는 작업의 전체 목록입니다.  
+다음은 로그인 후 예상할 수 있고 수행할 수 있는 작업의 전체 목록입니다.
 
-- **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 를 참조하세요.
+- 
+  **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 를 참조하세요.
 
 - **Visual Studio 설정 동기화** – 아무 장치에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요.
 
@@ -62,9 +63,9 @@ Visual Studio를 처음 시작할 때 로그인할지 묻는 메시지가 나타
 
 ## <a name="troubleshooting"></a>문제 해결
 
-로그인하는 동안 문제가 발생하는 경우 도움이 필요하면 [계정 지원 페이지](https://www.visualstudio.com/subscriptions/support/)를 참조하세요.
+로그인하는 동안 문제가 발생하는 경우 도움이 필요하면 [계정 지원 페이지](https://visualstudio.microsoft.com/subscriptions/support/)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)  
+* [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 개요](../ide/visual-studio-ide.md)

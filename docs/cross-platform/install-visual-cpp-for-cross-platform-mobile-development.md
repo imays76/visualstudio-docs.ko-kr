@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5013f1ce5ed9c20ba51feef7dd73d80adc152103
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454703"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281105"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>C++를 사용하여 플랫폼 간 모바일 개발 설치
 
@@ -25,7 +25,7 @@ Visual Studio에서 C++를 사용하여 Windows 데스크톱 앱, UWP(유니버�
 
 ## <a name="requirements"></a>요구 사항
 
-- 설치 요구 사항은 [Visual Studio 제품군 시스템 요구 사항](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)을 참조하세요.
+- 설치 요구 사항은 [Visual Studio 제품군 시스템 요구 사항](/visualstudio/productinfo/vs2017-system-requirements-vs)을 참조하세요.
 
    > [!IMPORTANT]
    > Windows 7 또는 Windows Server 2008 R2를 사용하는 경우 Windows 데스크톱 응용 프로그램용 코드, Android Native Activity 앱 및 라이브러리, iOS용 앱 및 코드 라이브러리를 개발할 수 있지만 Windows Phone 또는 UWP 앱은 개발할 수 없습니다.

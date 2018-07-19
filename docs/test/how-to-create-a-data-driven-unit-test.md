@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b72f2099f629a35659d67832f4ec583f1409f1c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117599"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>방법: 데이터 기반 단위 테스트 만들기
 
@@ -113,13 +114,13 @@ public void AddIntegers_FromDataSourceTest()
 ###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> DataSourceAttribute 지정
  `DataSource` 특성은 테스트 메서드에 사용할 테이블의 이름 및 데이터 소스의 연결 문자열을 지정합니다. 연결 문자열의 정확한 정보는 어떤 종류의 데이터 소스를 사용하는지에 따라 달라집니다. 이 예제에서는 SqlServerCe 데이터베이스를 사용했습니다.
 
-```
+```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
 DataSource 특성에는 세 개의 생성자가 있습니다.
 
-```
+```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
@@ -127,7 +128,7 @@ DataSource 특성에는 세 개의 생성자가 있습니다.
 
  app.config 파일을 사용하면 단위 테스트 자체를 변경하지 않고 데이터 소스의 위치를 변경할 수 있습니다. app.config 파일을 만들고 사용하는 방법에 대한 자세한 내용은 [연습: 구성 파일을 통한 데이터 소스 정의](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)를 참조하세요.
 
-```
+```csharp
 [DataSource(connectionString, tableName)]
 ```
 
@@ -135,7 +136,7 @@ DataSource 특성에는 세 개의 생성자가 있습니다.
 
  연결 문자열은 데이터 소스의 형식에 따라 달라지지만 데이터 공급자의 고정 이름을 지정하는 Provider 요소를 포함해야 합니다.
 
-```
+```csharp
 [DataSource(
     dataProvider,
     connectionString,
@@ -152,7 +153,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
 ##  <a name="BKMK_Running_the_test_and_viewing_results"></a> 테스트 실행 및 결과 보기
- 테스트 메서드 작업을 완료하면 테스트 프로젝트를 빌드합니다. 테스트 메서드는 [테스트 탐색기]에서 **테스트 실행 안 함** 그룹에 표시됩니다. 테스트를 실행, 작성 및 재실행할 때 [테스트 탐색기]에는 **실패한 테스트**, **통과한 테스트** 및 **테스트 실행 안 함** 그룹에 결과가 표시됩니다. **모두 실행**을 선택해서 모든 테스트를 실행하거나 **실행...** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다.
+ 테스트 메서드 작업을 완료하면 테스트 프로젝트를 빌드합니다. 테스트 메서드는 [테스트 탐색기]에서 **테스트 실행 안 함** 그룹에 표시됩니다. 테스트를 실행, 작성 및 재실행할 때 [테스트 탐색기]에는 **실패한 테스트**, **통과한 테스트** 및 **테스트 실행 안 함** 그룹에 결과가 표시됩니다. 사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다.
 
  테스트가 실행되면 탐색기 위쪽에 테스트 결과 표시줄에 애니메이션 효과가 적용됩니다. 테스트 실행이 끝날 때 모든 테스트가 통과했으면 표시줄이 녹색이 되고 테스트가 실패하면 빨간색이 됩니다. [테스트 탐색기] 창 아래쪽의 세부 정보 창에 테스트 실행의 요약이 표시됩니다. 테스트를 선택하면 아래쪽 창에 해당 테스트의 세부 정보가 표시됩니다.
 

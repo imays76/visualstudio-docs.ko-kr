@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 607bc4646a6bacd0ae119d07e832ffca2f279152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845381"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>자동화된 테스트를 위해 Lab Management 대신 Build 및 Release Management 사용
 
@@ -58,8 +59,8 @@ Lab Center의 셀프 서비스 프로비전 기능에는 두 가지 목표가 �
 
 | 단계 | Lab Center 사용 | Build 또는 Release Management 사용 |
 |-------|----------------------|-----------------|
-| 환경 템플릿 라이브러리를 관리합니다. | 랩 환경을 만듭니다. 가상 컴퓨터에 필요한 소프트웨어를 설치합니다. 환경을 Sysprep하고 라이브러리의 템플릿으로 저장합니다. | SCVMM 관리 콘솔을 사용하여 직접 가상 컴퓨터 템플릿 또는 서비스 템플릿을 만들고 관리합니다. Azure를 사용하는 경우 [Azure 빠른 시작 템플릿](/resources/templates/)중 하나를 선택합니다. |
-| 랩 환경을 만듭니다. | 라이브러리에서 환경 템플릿을 선택하고 배포합니다. 가상 컴퓨터 구성을 사용자 지정하는 데 필요한 매개 변수를 제공합니다. | SCVMM 관리 콘솔을 사용하여 직접 템플릿을 기반으로 VM 또는 서비스 인스턴스를 만듭니다. Azure Portal을 사용하여 직접 리소스를 만듭니다. 또는 환경을 사용하여 릴리스 정의를 만듭니다. Azure 작업 또는 [SCVMM 통합 확장](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)의 작업을 사용하여 새 가상 컴퓨터를 만듭니다. 이 정의의 새 릴리스를 만드는 것은 Lab Center에서 새 환경을 만드는 것과 같습니다. |
+| 환경 템플릿 라이브러리를 관리합니다. | 랩 환경을 만듭니다. 가상 컴퓨터에 필요한 소프트웨어를 설치합니다. 환경을 Sysprep하고 라이브러리의 템플릿으로 저장합니다. | SCVMM 관리 콘솔을 사용하여 직접 가상 머신 템플릿 또는 서비스 템플릿을 만들고 관리합니다. Azure를 사용하는 경우 [Azure 빠른 시작 템플릿](https://azure.microsoft.com/resources/templates/)중 하나를 선택합니다. |
+| 랩 환경을 만듭니다. | 라이브러리에서 환경 템플릿을 선택하고 배포합니다. 가상 머신 구성을 사용자 지정하는데 필요한 매개 변수를 제공합니다. | SCVMM 관리 콘솔을 사용하여 직접 템플릿을 기반으로 VM 또는 서비스 인스턴스를 만듭니다. Azure Portal을 사용하여 직접 리소스를 만듭니다. 또는 환경을 사용하여 릴리스 정의를 만듭니다. Azure 작업 또는 [SCVMM 통합 확장](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)의 작업을 사용하여 새 가상 컴퓨터를 만듭니다. 이 정의의 새 릴리스를 만드는 것은 Lab Center에서 새 환경을 만드는 것과 같습니다. |
 | 컴퓨터에 연결합니다. | 환경 뷰어에서 랩 환경을 엽니다. | SCVMM 관리 콘솔을 사용하여 직접 가상 컴퓨터에 연결합니다. 또는 가상 컴퓨터의 IP 주소 또는 DNS 이름을 사용하여 원격 데스크톱 세션을 엽니다. |
 | 환경 검사점을 만들거나 환경을 새로운 검사점으로 복원합니다. | 환경 뷰어에서 랩 환경을 엽니다. 검사점을 만들거나 이전 검사점으로 복원하는 옵션을 선택합니다. | SCVMM 관리 콘솔을 사용하여 컴퓨터에서 이러한 작업을 수행합니다. 또는 더 큰 자동화의 일부로 이러한 단계를 수행하려면 [SCVMM 통합 확장](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)의 검사점 작업을 환경의 일부로 릴리스 정의에 포함합니다. |
 

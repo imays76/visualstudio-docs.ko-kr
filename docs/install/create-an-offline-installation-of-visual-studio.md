@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d70005a7e876b299e93ac2891ce6774a6300792
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1ef917b4e8aa5cde8d95c036523bb525799cc19e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279965"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017의 오프라인 설치 만들기
 
@@ -31,10 +32,10 @@ Visual Studio 2017 설치 관리자는 매우 다양한 네트워크 및 컴퓨�
 - 설치하는 동안 바이러스 백신 및 프록시 소프트웨어의 간섭을 최소화하기 위해 세 가지 다운로드 기술(WebClient, BITS 및 WinInet)이 시도됩니다.
 - Visual Studio 설치에 필요한 파일은 전역 배달 네트워크에 배포되므로 로컬 서버에서 해당 파일을 가져올 수 있습니다.
 
-따라서 [Visual Studio 웹 설치 관리자](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)&mdash;를 시도하는 것이 좋습니다. 좋은 경험이 될 것입니다.
+따라서 [Visual Studio 웹 설치 관리자](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;를 시도하는 것이 좋습니다. 좋은 경험이 될 것입니다.
 
  > [!div class="button"]
- > [Visual Studio 2017 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Visual Studio 2017 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 인터넷 연결을 사용할 수 없거나 인터넷 연결이 불안정하여 오프라인으로 설치하려는 경우 [낮은 대역폭 또는 불안정한 네트워크 환경에 Visual Studio 2017 설치](../install/install-vs-inconsistent-quality-network.md)를 참조하세요. 명령줄을 사용하여 오프라인 설치를 완료하기 필요한 파일의 로컬 캐시를 만들 수 있습니다. 이 프로세스는 이전 버전에 사용 가능한 ISO 파일을 대체합니다.
 
@@ -43,7 +44,7 @@ Visual Studio 2017 설치 관리자는 매우 다양한 네트워크 및 컴퓨�
 
 ## <a name="get-support"></a>지원 받기
 
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 

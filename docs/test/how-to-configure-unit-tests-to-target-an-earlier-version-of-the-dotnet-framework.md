@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750742"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233492"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
 
@@ -32,7 +32,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 **SharePoint 응용 프로그램 테스트**
 
-위에 나열된 기능을 통해 Visual Studio를 사용하는 SharePoint 응용 프로그램에 대한 단위 테스트 및 통합 테스트를 작성할 수 있습니다. Visual Studio를 사용하여 SharePoint 응용 프로그램을 개발하는 방법에 대한 자세한 내용은 [SharePoint 솔루션 만들기](/office-dev/office-dev/create-sharepoint-solutions), [SharePoint 솔루션 빌드 및 디버깅](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) 및 [SharePoint 코드 확인 및 디버깅](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)을 참조하세요.
+위에 나열된 기능을 통해 Visual Studio를 사용하는 SharePoint 응용 프로그램에 대한 단위 테스트 및 통합 테스트를 작성할 수 있습니다. Visual Studio를 사용하여 SharePoint 응용 프로그램을 개발하는 방법에 대한 자세한 내용은 [SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md), [SharePoint 솔루션 빌드 및 디버깅](../sharepoint/building-and-debugging-sharepoint-solutions.md) 및 [SharePoint 코드 확인 및 디버깅](../sharepoint/verifying-and-debugging-sharepoint-code.md)을 참조하세요.
 
 **제한 사항**
 
@@ -126,6 +126,6 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 ## <a name="see-also"></a>참고 항목
 
-- [SharePoint 솔루션 만들기](/office-dev/office-dev/create-sharepoint-solutions)
-- [SharePoint 솔루션 빌드 및 디버깅](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md)
+- [SharePoint 솔루션 빌드 및 디버깅](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [고급 컴파일러 설정 대화 상자(Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

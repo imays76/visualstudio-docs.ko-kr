@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ed99b0e7dbccbee99dbc290d79d2b25b9c84874
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b16d3b5feeadc033083cbd051497cb973372c3bb
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578590"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302794"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 요소
 `UsingTask``TaskFactory`에 의해 생성된 작업에 존재할 매개 변수의 선택적 목록을 포함합니다. 자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.  
@@ -34,7 +34,7 @@ ms.locfileid: "31578590"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <ParameterGroup />  
 ```  
 

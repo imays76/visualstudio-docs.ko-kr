@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eaa3a852ad67b0d1ffb4e0fb5c121adca81091a9
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815167"
 ---
 # <a name="exploration-bounds"></a>탐색 경계
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/26/2018
 
 이와 관련된 명명된 속성 및 파생 특성을 사용하여 설정을 수정할 수 있습니다.
 
-```
+```csharp
 [PexClass(MaxRuns = 10)]
 public partial class FooTest {...}
 ```
@@ -75,7 +76,7 @@ IntelliTest가 프로그램 실행 경로를 더 깊게 탐색할수록 IntelliT
 
 예를 들어 다음 코드는 대략 100개의 분기를 사용합니다.
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
@@ -104,7 +105,7 @@ for (int i=0; i<100; i++) { }
 
 예를 들어 다음 코드의 각 경로는 n+1개 조건을 사용합니다.
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) 
 {

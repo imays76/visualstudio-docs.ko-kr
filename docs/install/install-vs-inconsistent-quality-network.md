@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297628"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>낮은 대역폭 또는 불안정한 네트워크 환경에 Visual Studio 2017 설치
 
 따라서 Visual Studio 웹 설치 관리자를 시도하는 것이 좋습니다.&mdash;대부분 좋은 경험이 될 것입니다.
 
  > [!div class="button"]
- > [Visual Studio 2017 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Visual Studio 2017 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 그러나 인터넷 연결을 찾을 수 없거나 안정적이지 않다면 명령줄을 사용하여 오프라인 설치를 완료하기 필요한 파일의 로컬 캐시를 만들 수 있습니다. 방법은 다음과 같습니다.
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="step-2---create-a-local-install-cache"></a>2다계 - 로컬 설치 캐시 만들기
 
-이 단계를 완료하려면 인터넷 연결이 있어야 합니다. 로컬 레이아웃을 만들려면 명령 프롬프트를 열고 다음 예제에 나오는 명령 중 하나를 사용합니다(여기에 있는 예제는 Visual Studio의 커뮤니티 에디션을 사용하고 있는 것으로 가정하고, 에디션에 적절하게 명령을 조정합니다).
+이 단계를 완료하려면 인터넷 연결이 있어야 합니다. 로컬 레이아웃을 만들려면 명령 프롬프트를 열고 다음 예제의 명령 중 하나를 사용합니다. 이 문서의 예제에서는 Visual Studio의 Community Edition을 사용한다고 가정합니다. 사용 중인 버전에 맞게 명령을 조정하세요.
 
 - .NET 웹 및 .NET 데스크톱 개발의 경우 다음을 실행합니다.
 
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="get-support"></a>지원 받기
 
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 
@@ -120,3 +121,4 @@ ms.lasthandoff: 04/20/2018
 * [Visual Studio 설치](install-visual-studio.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 * [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio 2017 워크로드 및 구성 요소 ID](workload-and-component-ids.md)

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 19de1453722629e880a5fc64ad0b5f4d63175eba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815797"
 ---
 # <a name="warnings-and-errors"></a>경고 및 오류
 
@@ -62,13 +63,13 @@ IntelliTest는 [입력 생성](input-generation.md) 중에 탐색하는 실행 �
 
 예를 들어 다음 코드는 대략 100개의 분기를 사용합니다.
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
 [PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxBranches** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다.
 
-```
+```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -79,7 +80,7 @@ public void MyTest(...) {
 
 테스트 코드에서 [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)를 사용하여 루프 조건에서 생성된 제약 조건을 무시할 수 있습니다.
 
-```
+```csharp
 for (int i=0; 
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
     i++) 
@@ -102,7 +103,7 @@ IntelliTest는 [입력 생성](input-generation.md) 중에 탐색하는 실행 �
 
 예를 들어 다음 코드의 각 경로는 **n+1**개 조건을 사용합니다.
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     // conditions are "0<n", "1<n", ..., "!(n<n)"
@@ -117,7 +118,7 @@ void ParameterizedTest(int n) {
 
 [PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxConditions** 옵션을 편집할 수 있습니다. 예:
 
-```
+```csharp
 [PexMethod(MaxConditions=10000)]
 void ParameterizedTest(int n) {
     // ...
@@ -128,7 +129,7 @@ void ParameterizedTest(int n) {
 
 [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)를 사용하여 루프 조건에서 생성된 제약 조건을 무시할 수 있습니다.
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
@@ -148,7 +149,7 @@ IntelliTest는 [입력 생성](input-generation.md) 중에 탐색하는 실행 �
 
 [PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxCalls** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다.
 
-```
+```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -164,7 +165,7 @@ IntelliTest는 [입력 생성](input-generation.md) 중에 탐색하는 실행 �
 
 [PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxStack** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다(권장되지 않음).
 
-```
+```csharp
 [PexMethod(MaxStack=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -182,7 +183,7 @@ IntelliTest가 특정 입력을 사용하여 매개 변수가 있는 테스트�
 
 [PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxRuns** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다(권장되지 않음).
 
-```
+```csharp
 [PexMethod(MaxRuns=2000)]
 public void MyTest(...) {
     // ....
@@ -200,7 +201,7 @@ IntelliTest는 처음에 많은 흥미로운 테스트 입력을 찾지만, 잠�
 
 [PexClass](attribute-glossary.md#pexclass) 또는 [PexMethod](attribute-glossary.md#pexmethod) 같이 **PexSettingsAttributeBase**에서 파생된 특성의 **MaxRunsWithoutNewTests** 옵션을 편집할 수 있습니다. 다음 예제에서는 이 경계를 효과적으로 제거합니다(권장되지 않음).
 
-```
+```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
 public void MyTest(...) {
     // ....
@@ -236,7 +237,7 @@ IntelliTest는 모든 .NET 형식에 대한 [테스트 입력을 생성](input-g
 
   예를 들어 IntelliTest가 “**System.Collections.IDictionary**에 할당할 수 있는 형식을 알 수 없다”고 보고할 경우 다음 **PexUseTypeAttribute**를 테스트 또는 설비 클래스에 연결하면 도움이 될 수 있습니다.
 
-  ```
+  ```csharp
   [PexMethod]
   [PexUseType(typeof(System.Collections.Hashtable))]
   public void MyTest(IDictionary[] dictionaries) { ... }
@@ -244,7 +245,7 @@ IntelliTest는 모든 .NET 형식에 대한 [테스트 입력을 생성](input-g
 
 * **어셈블리 수준 특성**
 
-  ```
+  ```csharp
   [assembly: PexUseType(typeof(System.Collections.Hashtable))]
   ```
 

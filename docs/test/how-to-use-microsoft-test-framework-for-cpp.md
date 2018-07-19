@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751691"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845495"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio에서 Microsoft Unit Testing Framework for C++ 사용
 
@@ -32,7 +32,7 @@ DLL에서 내보내지 않은 함수 테스트 등, 일부 경우에는 테스�
 
     3.  다음 행에서 아래쪽 화살표를 클릭하고 **<Edit>** 를 선택합니다.
 
-        |||
+        |디렉터리|속성|
         |-|-|
         |**포함 디렉터리**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**라이브러리 디렉터리**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -67,7 +67,7 @@ DLL에서 내보내지 않은 함수 테스트 등, 일부 경우에는 테스�
 
  단위 테스트에서 정의된 특성(trait)을 사용하려면 다음과 같습니다.
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1a7ba3bff8265e6e707605f02e0bbaba85aff5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571622"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325297"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 변형
 변환은 항목 목록 간의 일대일 변환입니다. 변환을 수행하면 프로젝트가 항목 목록을 변환할 수 있을 뿐만 아니라, 대상이 입력과 출력 간의 직접 매핑을 식별할 수 있습니다. 이 항목에서는 변환 및 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 변환을 사용하여 보다 효율적으로 프로젝트를 빌드하는 방법을 설명합니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "31571622"
   
 다음 예제에서는 *.resx* 파일 목록이 *.resources* 파일의 목록으로 변환됩니다. %(Filename) 변환 한정자는 각 *.resources* 파일이 해당하는 *.resx* 파일과 동일한 파일 이름을 갖도록 지정합니다.  
   
-```  
+```xml  
 @(RESXFile->'%(filename).resources')  
 ```
 
@@ -41,7 +41,7 @@ ms.locfileid: "31571622"
 ## <a name="using-multiple-modifiers"></a>여러 한정자 사용  
  변환 식은 순서에 관계 없이 결합되고 반복될 수 있는 여러 개의 한정자를 포함할 수 있습니다. 다음 예제에서는 파일을 포함하는 디렉터리의 이름을 변경하지만 파일의 원래 이름 및 파일 이름 확장명을 유지합니다.  
   
-```  
+```xml  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   

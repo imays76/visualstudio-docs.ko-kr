@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4067dae0d75f5fbd4e4dfb3ff7bacfc1ff269512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297598"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 포트 구성
 
@@ -33,22 +34,22 @@ ms.lasthandoff: 04/26/2018
 
 테스트 컨트롤러에 사용되는 기본 포트는 6901이고 테스트 에이전트의 기본 포트는 6910입니다. 클라이언트에서는 기본적으로 테스트 컨트롤러로부터 테스트 결과를 받는 데 사용되는 임의의 포트를 사용합니다. 테스트 컨트롤러에서는 들어오는 모든 연결에 대해 발신자를 인증하고 해당 발신자가 특정 보안 그룹에 속하는지 확인합니다.
 
-- **테스트 컨트롤러** 들어오는 연결에는 TCP 포트 6901이 사용됩니다. 필요한 경우 수신 포트를 구성할 수 있습니다. 자세한 내용은 [수신 포트 구성](#ConfigurePorts)을 참조하십시오.
+- **테스트 컨트롤러** 들어오는 연결에는 TCP 포트 6901이 사용됩니다. 필요한 경우 수신 포트를 구성할 수 있습니다. 자세한 내용은 [수신 포트 구성](#configure-the-incoming-ports)을 참조하세요.
 
     테스트 컨트롤러에서는 테스트 에이전트와 클라이언트로 나가는 연결을 만들 수 있어야 합니다.
 
     > [!NOTE]
     > 테스트 컨트롤러에서 들어오는 **파일 및 프린터 공유** 연결이 열려 있어야 합니다.
 
-- **테스트 에이전트** 들어오는 연결에는 TCP 포트 6910이 사용됩니다. 필요한 경우 수신 포트를 구성할 수 있습니다. 자세한 내용은 [수신 포트 구성](#ConfigurePorts)을 참조하십시오.
+- **테스트 에이전트** 들어오는 연결에는 TCP 포트 6910이 사용됩니다. 필요한 경우 수신 포트를 구성할 수 있습니다. 자세한 내용은 [수신 포트 구성](#configure-the-incoming-ports)을 참조하세요.
 
    테스트 에이전트에서는 테스트 컨트롤러로 나가는 연결을 만들 수 있어야 합니다.
 
-- **클라이언트** 기본적으로 들어오는 연결에는 임의의 TCP 포트가 사용됩니다. 필요한 경우 수신 포트를 구성할 수 있습니다. 자세한 내용은 [수신 포트 구성](#ConfigurePorts)을 참조하십시오.
+- **클라이언트** 기본적으로 들어오는 연결에는 임의의 TCP 포트가 사용됩니다. 필요한 경우 수신 포트를 구성할 수 있습니다. 자세한 내용은 [수신 포트 구성](#configure-the-incoming-ports)을 참조하세요.
 
    테스트 컨트롤러에서 클라이언트에 처음으로 연결할 때는 방화벽 알림이 표시될 수 있습니다.
 
-   Windows Server 2008에서는 방화벽 알림이 기본적으로 해제되어 있으므로 들어오는 연결을 허용할 수 있도록 클라이언트 프로그램(devenv.exe, mstest.exe, mlm.exe)에 대한 방화벽 예외를 수동으로 추가해야 합니다.
+   Windows Server 2008에서는 방화벽 알림이 기본적으로 해제되어 있으므로 들어오는 연결을 허용할 수 있도록 클라이언트 프로그램(*devenv.exe*, *mstest.exe*, *mlm.exe*)에 대한 방화벽 예외를 수동으로 추가해야 합니다.
 
 ## <a name="outgoing-connections"></a>나가는 연결
 
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/26/2018
 
 테스트 컨트롤러와 테스트 에이전트에 대한 포트를 구성하려면 다음 지침에 따르십시오.
 
-- **Controller Service** Modify the port's value by editing the %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config file:
+- **컨트롤러 서비스** *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* 파일을 편집하여 포트의 값을 수정합니다.
 
     ```xml
     <appSettings>
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/26/2018
     </appSettings>
     ```
 
-- **Agent Service** Modify the port by editing the %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config file:
+- **에이전트 서비스** *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* 파일을 편집하여 포트를 수정합니다.
 
     ```xml
     <appSettings>
@@ -80,11 +81,11 @@ ms.lasthandoff: 04/26/2018
     </appSettings>
     ```
 
-- **클라이언트** 레지스트리 편집기를 사용하여 다음 레지스트리(DWORD) 값을 추가합니다. 클라이언트에서는 테스트 컨트롤러로부터 데이터를 받기 위해 지정된 범위의 포트 중 하나를 사용합니다.
+- **클라이언트** 레지스트리 편집기를 사용하여 다음 레지스트리(**DWORD**) 값을 추가합니다. 클라이언트에서는 테스트 컨트롤러로부터 데이터를 받기 위해 지정된 범위의 포트 중 하나를 사용합니다.
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
 ## <a name="see-also"></a>참고 항목
 

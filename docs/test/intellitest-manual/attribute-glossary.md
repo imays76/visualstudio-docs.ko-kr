@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1e42b9cae54186ed723c6c0567b5af247796d23d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 64e02cae39497a14cc087791a60b4f61c9bcd8fd
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815914"
 ---
 # <a name="attribute-glossary"></a>특성 용어집
 
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/26/2018
 
 * 매개 변수가 있는 테스트 메서드의 **매개 변수**
 
-  ```
+  ```csharp
   // assume foo is not null
   [PexMethod]
   public void SomeTest([PexAssumeNotNull]IFoo foo, ...) {}
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
 * **필드**
 
-  ```
+  ```csharp
   public class Foo {
      // this field should not be null
      [PexAssumeNotNull]
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/26/2018
 
 * **형식**
 
-  ```
+  ```csharp
   // never consider null for Foo types
   [PexAssumeNotNull]
   public class Foo {}
@@ -94,7 +95,7 @@ IntelliTest가 클래스의 일부인 새 테스트를 별도의 파일로 생�
 
 **추가 도구 모음 및 범주**:
 
-```
+```csharp
 [TestClass] // MSTest test fixture attribute
 [PexClass(Suite = "checkin")] // fixture attribute
 public partial class MyTests { ... }
@@ -102,7 +103,7 @@ public partial class MyTests { ... }
 
 **테스트 중인 형식 지정**:
 
-```
+```csharp
 [PexClass(typeof(Foo))] // this is a test for Foo
 public partial class FooTest { ... }
 ```
@@ -131,7 +132,7 @@ IntelliTest는 다양한 매개 변수를 사용하여 [매개 변수가 있는 
 
 **예제**
 
-```
+```csharp
 [PexClass]
 public partial class MyTests {
      [PexMethod]
@@ -150,7 +151,7 @@ public partial class MyTests {
 
 이 특성은 어셈블리 수준에서 모든 탐색에 대한 기본 설정 값을 재정의하도록 설정될 수 있습니다.
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
 [assembly: PexAssemblySettings(TestFramework = "Naked")]
@@ -161,7 +162,7 @@ using Microsoft.Pex.Framework;
 
 이 특성은 현재 테스트 프로젝트에서 테스트 중인 어셈블리를 지정합니다. 
 
-```
+```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]
 ```
 
@@ -172,7 +173,7 @@ using Microsoft.Pex.Framework;
 
 **예제**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 
 // the assembly containing ATypeFromTheAssemblyToInstrument should be instrumented
@@ -189,7 +190,7 @@ using Microsoft.Pex.Framework;
 
 **예제**
 
-```
+```csharp
 [PexMethod]
 [PexUseType(typeof(A))]
 [PexUseType(typeof(B))]
@@ -208,7 +209,7 @@ public void MyTest(object testParameter)
 
 다음 테스트는 **Stack**의 생성자가 **ArgumentOutOfRangeException**을 throw할 수 있도록 지정합니다.
 
-```
+```csharp
 class Stack {
   int[] _elements;
   int _count;
@@ -223,7 +224,7 @@ class Stack {
 
 필터는 다음과 같이 설비에 연결됩니다(어셈블리 또는 테스트 수준에서 정의될 수도 있음).
 
-```
+```csharp
 [PexMethod]
 [PexAllowedException(typeof(ArgumentOutOfRangeException))]
 class CtorTest(int capacity) {

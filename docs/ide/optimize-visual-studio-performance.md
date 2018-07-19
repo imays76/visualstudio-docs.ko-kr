@@ -9,14 +9,16 @@ ms.author: gewarren
 manager: douge
 f1_keywords:
 - vs.performancecenter
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce1f0e8b7ab522cf9272918a794d61e09cd243d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280353"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio 성능 최적화
 
@@ -24,9 +26,9 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Visual Studio 2017 버전 15.6 이상으로 업그레이드
 
-현재 Visual Studio 2015를 사용하는 경우 무료로 [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)을 다운로드하여 향상된 성능을 확인해보십시오. 솔루션은 다른 영역에서도 성능 향상으로 Visual Studio 2017에서 2-3배 더 빠르게 로드합니다. Visual Studio 2017은 Visual Studio 2015와 호환가능하므로 2017을 사용해도 어떤 손실도 없습니다.
+현재 Visual Studio 2015를 사용하는 경우 무료로 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)을 다운로드하여 향상된 성능을 확인해보십시오. 솔루션은 다른 영역에서도 성능 향상으로 Visual Studio 2017에서 2-3배 더 빠르게 로드합니다. Visual Studio 2017은 Visual Studio 2015와 호환가능하므로 2017을 사용해도 어떤 손실도 없습니다.
 
-현재 Visual Studio 2017을 사용 중인 경우 버전 15.6 이상을 실행하고 있는지 확인합니다. 데이터에 따르면 버전 15.6에서 솔루션이 최대 2-3배 더 빠르게 로드됩니다. [여기서](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 다운로드하세요.
+현재 Visual Studio 2017을 사용 중인 경우 버전 15.6 이상을 실행하고 있는지 확인합니다. 데이터에 따르면 버전 15.6에서 솔루션이 최대 2-3배 더 빠르게 로드됩니다. [여기서](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 다운로드하세요.
 
 ## <a name="extensions-and-tool-windows"></a>확장명 및 도구 창
 
