@@ -15,36 +15,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63db98df400333216f5e753f8b6f82a61e785cd5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 78ffb4e98ce8589f20d4a0253ce675e546f15ae4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104633"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078731"
 ---
-# <a name="adding-a-menu-controller-to-a-toolbar"></a>도구 모음에 메뉴 컨트롤러 추가
-이 연습은 [도구 창에는 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 연습 및 도구 창 도구 모음에 메뉴 컨트롤러를 추가 하는 방법을 보여 줍니다. 여기에 나와 있는 단계도 적용할 수에서 생성 된 도구 모음에는 [도구 모음 추가](../extensibility/adding-a-toolbar.md) 연습 합니다.  
+# <a name="add-a-menu-controller-to-a-toolbar"></a>도구 모음에 메뉴 컨트롤러 추가
+이 연습은 합니다 [도구 창에 도구 모음을 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 연습 및 도구 창 도구 모음에 메뉴 컨트롤러를 추가 하는 방법을 보여 줍니다. 여기에 나와 있는 단계도 적용할 수 있습니다에서 만든 도구 모음에는 [도구 모음 추가](../extensibility/adding-a-toolbar.md) 연습 합니다.  
   
- 메뉴 컨트롤러는 분할 컨트롤입니다. 클릭 하 여 실행할 수 있습니다 및 메뉴 컨트롤러의 왼쪽에 마지막으로 사용 된 명령을 보여 줍니다. 메뉴 컨트롤러의 오른쪽 화살표입니다를 클릭 하면 추가 명령 목록이 열립니다. 목록의 명령 실행 명령을 클릭 하면 메뉴 컨트롤러의 왼쪽에 있는 명령 대체 시점과 합니다. 이러한 방식으로에 메뉴 컨트롤러는 항상 목록에서 마지막으로 사용 된 명령을 보여 주는 명령 단추 처럼 작동 합니다.  
+ 메뉴 컨트롤러 분할 컨트롤입니다. 클릭 하 여 실행할 수 있습니다 및 메뉴 컨트롤러의 왼쪽에 마지막으로 사용한 명령을 보여 줍니다. 메뉴 컨트롤러의 오른쪽에 있는 화살표는,를 클릭 하면 추가 명령의 목록을 엽니다. 명령 실행 목록에서 명령을 클릭 하면 시간과 메뉴 컨트롤러의 왼쪽에 있는 명령을 대체 합니다. 이 이렇게 하면에 메뉴 컨트롤러는 항상 목록에서 마지막으로 사용한 명령을 보여 주는 명령 단추 처럼 작동 합니다.  
   
- 메뉴 컨트롤러는 메뉴에 표시 될 수 있습니다 하지만 도구 모음에서 가장 자주 사용 됩니다.  
+ 메뉴에 메뉴 컨트롤러 나타날 수 있지만 도구 모음에서 가장 자주 사용 됩니다.  
   
-## <a name="prerequisites"></a>필수 조건  
- Visual Studio 2015를 시작 하면 설치 하지 마십시오 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 참조 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
+## <a name="prerequisites"></a>전제 조건  
+ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
   
-## <a name="creating-a-menu-controller"></a>메뉴 컨트롤러 만들기  
+## <a name="create-a-menu-controller"></a>메뉴 컨트롤러 만들기  
   
-#### <a name="to-create-a-menu-controller"></a>메뉴 컨트롤러를 만들려면  
+1.  에 설명 된 절차를 따르십시오 [도구 창에 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 도구 모음에 있는 도구 창을 만들 수 있습니다.  
   
-1.  에 설명 된 절차에 따라 [도구 창에는 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 도구 모음에 있는 도구 창을 만들 수 있습니다.  
-  
-2.  TWTestCommandPackage.vsct, 기호 섹션으로 이동 합니다. 명명 된 GuidSymbol 요소가에서 **guidTWTestCommandPackageCmdSet**, 메뉴 컨트롤러, 메뉴 컨트롤러 그룹 및 세 가지 메뉴 항목을 선언 합니다.  
+2.  *TWTestCommandPackage.vsct*Symbols 섹션으로 이동 합니다. GuidSymbol 요소에서 **guidTWTestCommandPackageCmdSet**, 메뉴 컨트롤러, 메뉴 컨트롤러 그룹과 세 가지 메뉴 항목을 선언 합니다.  
   
     ```xml  
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
     ```  
   
-3.  메뉴 섹션에서 마지막 메뉴 항목 다음 메뉴로 메뉴 컨트롤러를 정의 합니다.  
+3.  메뉴 섹션에서 메뉴 항목을 마지막 후 메뉴로 메뉴 컨트롤러를 정의 합니다.  
   
     ```xml  
     <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
@@ -59,9 +57,9 @@ ms.locfileid: "31104633"
     </Menu>  
     ```  
   
-     `TextChanges` 및 `TextIsAnchorCommand` 플래그 마지막 선택한 명령에 맞게 메뉴 컨트롤러를 사용 하도록 설정 하려면 포함 되어야 합니다.  
+     합니다 `TextChanges` 고 `TextIsAnchorCommand` 플래그 마지막 선택한 명령에 맞게 메뉴 컨트롤러를 사용 하도록 설정 하려면 포함 되어야 합니다.  
   
-4.  그룹의 마지막 그룹 항목 다음 섹션 메뉴 컨트롤러 그룹을 추가 합니다.  
+4.  그룹의 마지막 그룹 항목, 다음 섹션의 메뉴 컨트롤러 그룹을 추가 합니다.  
   
     ```xml  
     <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
@@ -69,9 +67,9 @@ ms.locfileid: "31104633"
     </Group>  
     ```  
   
-     메뉴 컨트롤러 부모로 설정 하 여이 그룹에 배치 하는 모든 명령 메뉴 컨트롤러에 표시 됩니다. `priority` 특성을 생략 기본값인 0으로 설정 하는 메뉴 컨트롤러에서 유일한 그룹 수 있으므로 합니다.  
+     메뉴 컨트롤러 부모로 설정 하면이 그룹에 배치 하는 모든 명령 메뉴 컨트롤러에 나타납니다. `priority` 특성을 생략 하면 기본값인 0으로 설정 하는 메뉴 컨트롤러에서 전용 그룹 이기 때문에 있습니다.  
   
-5.  단추 섹션에서 마지막 단추 항목 후 각 메뉴 항목에 대 한 Button 요소를 추가 합니다.  
+5.  단추 섹션에서 마지막 단추 항목 후 각 메뉴 항목에 대 한 단추 요소를 추가 합니다.  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
@@ -103,19 +101,19 @@ ms.locfileid: "31104633"
     </Button>  
     ```  
   
-6.  이 시점에서 메뉴 컨트롤러 볼 수 있습니다. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스를 표시 되어야 합니다.  
+6.  이 시점에서 메뉴 컨트롤러를 살펴볼 수 있습니다. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스를 확인 해야 합니다.  
   
-    1.  에 **보기 / 다른 창** 메뉴를 열고 **테스트 ToolWindow**합니다.  
+    1.  에 **보기 / 기타 Windows** 메뉴를 열고 **테스트 ToolWindow**합니다.  
   
-    2.  메뉴 컨트롤러 도구 창에서 도구 모음에 나타납니다.  
+    2.  도구 창의 도구 모음에 메뉴 컨트롤러 표시 됩니다.  
   
     3.  세 가지 가능한 명령을 보려면 메뉴 컨트롤러의 오른쪽에 있는 화살표를 클릭 합니다.  
   
-     명령을 클릭 하면 메뉴 컨트롤러의 제목을 해당 명령을 표시 하려면 변경 확인 합니다. 다음 섹션에서 이러한 명령을 활성화 하는 코드를 추가 합니다.  
+     명령을 클릭 하면 메뉴 컨트롤러 제목의 명령을 표시할 변경 되는지 확인 합니다. 다음 섹션에서는 이러한 명령을 활성화 하는 코드를 추가 합니다.  
   
-## <a name="implementing-the-menu-controller-commands"></a>메뉴 컨트롤러 명령 구현  
+## <a name="implement-the-menu-controller-commands"></a>메뉴 컨트롤러 명령 구현  
   
-1.  TWTestCommandPackageGuids.cs에서 세 가지 메뉴 항목에 대 한 명령 Id를 기존 명령 Id 뒤에 추가 합니다.  
+1.  *TWTestCommandPackageGuids.cs*, 기존 명령 Id 뒤에 세 가지 메뉴 항목에 대 한 명령 Id를 추가 합니다.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -123,7 +121,7 @@ ms.locfileid: "31104633"
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  TWTestCommand.cs에서 위쪽 TWTestCommand 클래스에 다음 코드를 추가 합니다.  
+2.  *TWTestCommand.cs*, 맨 위에 있는 다음 코드를 추가 합니다 `TWTestCommand` 클래스입니다.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
@@ -150,7 +148,7 @@ ms.locfileid: "31104633"
     }  
     ```  
   
-4.  액세스 수준 선택으로 선택한 명령 표시 하려면 TWTestCommand 클래스에 이벤트 처리기를 추가 합니다.  
+4.  이벤트 처리기를 추가 합니다 **TWTestCommand** 선택으로 선택한 명령을 표시 하는 클래스입니다.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -163,7 +161,7 @@ ms.locfileid: "31104633"
     }  
     ```  
   
-5.  메뉴 컨트롤러에서 명령을 선택할 때 MessageBox를 표시 하는 이벤트 처리기를 추가 합니다.  
+5.  사용자가 메뉴 컨트롤러에서 명령을 선택할 때 MessageBox를 표시 하는 이벤트 처리기를 추가 합니다.  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -213,20 +211,20 @@ ms.locfileid: "31104633"
     }  
     ```  
   
-## <a name="testing-the-menu-controller"></a>메뉴 컨트롤러를 테스트합니다.  
+## <a name="testing-the-menu-controller"></a>메뉴 컨트롤러 테스트  
   
-1.  프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스를 표시 되어야 합니다.  
+1.  프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스를 확인 해야 합니다.  
   
-2.  열기는 **테스트 ToolWindow** 에 **보기 / 다른 창** 메뉴.  
+2.  엽니다는 **테스트 도구 창** 에 **보기 / 다른 Windows** 메뉴.  
   
-     메뉴 컨트롤러 도구 창에서 도구 모음에 나타나고 표시 **MC 항목 1**합니다.  
+     메뉴 컨트롤러 도구 창의 도구 모음에 나타나고 표시 **MC 항목 1**합니다.  
   
 3.  메뉴 컨트롤러 단추 왼쪽의 화살표를 클릭 합니다.  
   
-     세 항목의 선택 되어 있으며 해당 아이콘 주위에 강조 표시 상자가 표시 됩니다. 클릭 **MC 항목 3**합니다.  
+     세 항목의 첫 번째 선택한 아이콘 주위에 강조 표시 상자에 표시 됩니다. 클릭 **MC 항목 3**합니다.  
   
-     메시지와 함께 대화 상자가 나타납니다 **메뉴 컨트롤러 항목 3 선택한**합니다. 메뉴 컨트롤러 단추 텍스트에 해당 하는지 확인 합니다. 메뉴 컨트롤러 단추를 사용 하는 이제 표시 **MC 항목 3**합니다.  
+     메시지와 함께 대화 상자가 나타납니다 **선택한 메뉴 컨트롤러 항목 3**합니다. 메시지 메뉴 컨트롤러 단추의 텍스트에 해당 하는지 확인 합니다. 메뉴 컨트롤러 단추 표시 **MC 항목 3**합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [도구 창에는 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
+## <a name="see-also"></a>참고자료  
+ [도구 창에 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [도구 모음 추가](../extensibility/adding-a-toolbar.md)
