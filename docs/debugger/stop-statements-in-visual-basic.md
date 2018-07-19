@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5909d8ac37ee77c43b5ddbd2625c3de92de32cad
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 74be447f523713cdef9ee5c52876ee0acf4c25b2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474897"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056145"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic의 Stop 문
 중단점을 설정하는 대신 Visual Basic의 Stop 문을 사용하는 프로그래밍 방식을 제공합니다. 디버거에서는 Stop 문이 나올 경우 프로그램 실행을 중단하여 중단 모드를 시작합니다. C# 프로그래머는 System.Diagnostics.Debugger.Break에 대한 호출을 사용하여 동일한 결과를 얻을 수 있습니다.  
@@ -35,11 +35,11 @@ ms.locfileid: "31474897"
   
  End 문과 달리, Stop 문은 변수를 다시 설정하거나 사용자를 디자인 모드로 되돌리지 않습니다. 디버그 메뉴에서 계속을 선택하면 계속 응용 프로그램을 실행할 수 있습니다.  
   
- 디버거 외부에서 Visual Basic 응용 프로그램을 실행할 경우, Just-in-Time 디버깅이 활성화되면 Stop 문이 디버거를 실행합니다. Just-in-Time 디버깅이 활성화되지 않으면, Stop 문이 실행을 종료하는 End 문처럼 동작합니다. QueryUnload 이벤트나 Unload 이벤트가 발생하지 않으므로, Visual Basic 응용 프로그램의 릴리스 버전에서 모든 Stop 문을 제거해야 합니다. 자세한 내용은 참조 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)합니다.  
+ 디버거 외부에서 Visual Basic 응용 프로그램을 실행할 경우, Just-in-Time 디버깅이 활성화되면 Stop 문이 디버거를 실행합니다. Just-in-Time 디버깅이 활성화되지 않으면, Stop 문이 실행을 종료하는 End 문처럼 동작합니다. QueryUnload 이벤트나 Unload 이벤트가 발생하지 않으므로, Visual Basic 응용 프로그램의 릴리스 버전에서 모든 Stop 문을 제거해야 합니다. 자세한 내용은 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)합니다.  
   
  다음과 같은 조건부 컴파일을 사용하면 이 경우에 Stop 문을 제거하지 않아도 됩니다.  
   
-```  
+```cpp
 #If DEBUG Then  
    Stop  
 #Else  
@@ -47,15 +47,15 @@ ms.locfileid: "31474897"
 #End If  
 ```  
   
- 또 다른 방법은 Stop 문 대신 Assert 문을 사용하는 것입니다. Debug.Assert 문은 지정된 조건이 충족되지 않을 경우에만 실행을 중단하고, 릴리스 버전을 빌드하면 자동으로 제거됩니다. 자세한 내용은 참조 [관리 코드에 어설션](../debugger/assertions-in-managed-code.md)합니다. 디버그 버전에서 Assert 문이 항상 실행을 중단하도록 하려면 다음과 같이 지정하십시오.  
+ 또 다른 방법은 Stop 문 대신 Assert 문을 사용하는 것입니다. Debug.Assert 문은 지정된 조건이 충족되지 않을 경우에만 실행을 중단하고, 릴리스 버전을 빌드하면 자동으로 제거됩니다. 자세한 내용은 [관리 코드에 어설션](../debugger/assertions-in-managed-code.md)합니다. 디버그 버전에서 Assert 문이 항상 실행을 중단하도록 하려면 다음과 같이 지정하십시오.  
   
-```  
+```csharp
 Debug.Assert(false)  
 ```  
   
  다음과 같이 Debug.Fail 메서드를 사용할 수도 있습니다.  
   
-```  
+```csharp
 Debug.Fail("a clever output string goes here")  
 ```  
   
