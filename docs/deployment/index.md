@@ -3,22 +3,23 @@ layout: LandingPage
 title: Visual Studio에서 앱 배포 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 응용 프로그램, 서비스 및 구성 요소를 배포하는 방법을 알아봅니다.
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 83013d3baf0c9c041a3873a223cd218c773ae20c
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815326"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030405"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio에서 배포
 
 Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다.
 
-<h2>5 분 퀵 스타트를 사용한 Visual Studio 배포 환경</h2>
+<h2>5분 빠른 시작을 사용하여 Visual Studio 배포 사용</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>

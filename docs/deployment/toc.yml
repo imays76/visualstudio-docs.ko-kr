@@ -19,9 +19,9 @@
     - name: .NET
       items:
         - name: 게시 도구를 사용하여 .NET Core 응용 프로그램 배포
-          href: /dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /dotnet/core/deploying/deploy-with-vs
         - name: Microsoft Store의 데스크톱 앱(데스크톱 브리지) 패키지
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: ClickOnce를 사용하여 데스크톱 앱 배포
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: 명령줄에서 ClickOnce 응용 프로그램 빌드
@@ -29,15 +29,15 @@
     - name: ASP.NET
       items:
         - name: Azure에 ASP.NET Core 앱 게시
-          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+        - name: 웹 배포를 사용하여 IIS에 배포
+          href: deploy-iis-with-web-deploy.md
         - name: 게시 설정 가져오기 및 Azure에 배포
           href: tutorial-import-publish-settings-azure.md
         - name: 게시 설정 가져오기 및 IIS에 배포
           href: tutorial-import-publish-settings-iis.md
-        - name: 웹 배포를 사용하여 IIS에 배포
-          href: deploy-iis-with-web-deploy.md
         - name: Git를 사용하여 Azure에 ASP.NET Core 연속 배포
-          href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/publishing/azure-continuous-deployment
         - name: Visual Studio Kubernetes 도구를 사용하여 Kubernetes에 게시
           href: tutorial-kubernetes-tools.md
     - name: 네이티브
@@ -45,21 +45,21 @@
         - name: Visual C++에서 배포...
           href: /cpp/ide/deployment-in-visual-cpp
         - name: Microsoft Store의 데스크톱 앱(데스크톱 브리지) 패키지
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: ClickOnce를 사용하여 네이티브 앱 배포...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
         - name: Visual Studio를 사용하여 UWP 앱 패키지
-          href: /windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: 웹 배포를 사용하여 Azure 웹 사이트에 게시
-          href: 'https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json'
+        - name: Linux App Service에 게시
+          href: /visualstudio/javascript/publish-nodejs-app-azure
     - name: Python
       items:
         - name: Azure App Service에 게시
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
 - name: 방법 가이드
   items:
     - name: ClickOnce 보안 및 배포

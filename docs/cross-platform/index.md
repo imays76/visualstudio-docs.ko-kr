@@ -3,17 +3,18 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: C++를 사용한 모바일 개발 설명서 | Microsoft Docs
 description: Visual Studio에서 iOS, Android 및 Windows 장치용 네이티브 C++ 앱을 만듭니다.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060953"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924176"
 ---
 # <a name="mobile-development-with-c-documentation"></a>C++을 사용한 모바일 개발 설명서
 
@@ -31,8 +32,8 @@ Visual Studio에서 iOS, Android 및 Windows 장치용 네이티브 C++ 앱을 �
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Install Visual C++ for Cross-Platform Mobile Development</h3>
-                        <p>플랫폼 간 모바일 앱을 빌드하는 데 필요한 도구를 설치합니다.</p>
+                        <h3>플랫폼 간 모바일 개발용 Visual C++ 설치</h3>
+                        <p>플랫폼 간 모바일 앱을 빌드하는 데 필요한 도구를 설정합니다.</p>
                     </div>
                 </div>
             </div>
@@ -69,8 +70,8 @@ Visual Studio에서 iOS, Android 및 Windows 장치용 네이티브 C++ 앱을 �
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cross-Platform Mobile Development Examples</h3>
-                        <p>플랫폼 간 모바일 개발을 시작하기 위한 샘플입니다.</p>
+                        <h3>플랫폼 간 모바일 개발 예제</h3>
+                        <p>플랫폼 간 모바일 개발을 시작하는 데 도움이 되는 샘플을 참조하세요.</p>
                     </div>
                 </div>
             </div>

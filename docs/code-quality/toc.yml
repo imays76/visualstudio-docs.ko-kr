@@ -1,16 +1,18 @@
+- name: 코드 분석 설명서
+  href: index.md
 - name: 개요
   items:
     - name: 관리 코드에 대한 코드 분석
       href: code-analysis-for-managed-code-overview.md
     - name: Roslyn 분석기
       href: roslyn-analyzers-overview.md
-    - name: C/C++ 코드 분석
+    - name: C/C++용 코드 분석
       href: code-analysis-for-c-cpp-overview.md
     - name: 코드 메트릭으로 코드 유지 가능성 측정
       href: code-metrics-values.md
 - name: 빠른 시작
   items:
-    - name: '빠른 시작: C/C++ 코드 분석'
+    - name: '빠른 시작: C/C++용 코드 분석'
       href: quick-start-code-analysis-for-c-cpp.md
 - name: 자습서
   items:
@@ -48,7 +50,7 @@
           href: anonymous-methods-and-code-analysis.md
         - name: 관리 코드 오류에 대한 작업 항목 만들기
           href: how-to-create-a-work-item-for-a-managed-code-defect.md
-    - name: C/C++ 코드 분석
+    - name: C/C++용 코드 분석
       items:
         - name: C++ Core Guidelines 검사기 사용
           href: using-the-cpp-core-guidelines-checkers.md

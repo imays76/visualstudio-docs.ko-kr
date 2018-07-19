@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: IntelliTrace 뒤로 이동을 사용하여 스냅숏 보기
       href: how-to-use-intellitrace-step-back.md
+    - name: 완전 초보자를 위한 디버깅
+      href: debugging-absolute-beginners.md
 - name: 방법 가이드
   items:
     - name: 디버거로 코드 탐색
@@ -105,8 +107,6 @@
           items:
             - name: 편집하며 계속하기를 사용하여 중단 모드에서 편집 적용
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: Visual Basic 편집하며 계속하기에서 지원되지 않는 편집
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'F#에 편집하며 계속하기가 지원되지 않음'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 디버거 데이터 보기
@@ -826,5 +826,3 @@
   items:
     - name: Visual Studio 디버거의 새로운 기능
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: 완전 초보자를 디버깅
-      href: debugging-absolute-beginners.md
