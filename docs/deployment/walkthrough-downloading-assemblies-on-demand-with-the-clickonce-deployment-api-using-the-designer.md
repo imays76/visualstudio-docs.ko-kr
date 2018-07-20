@@ -1,5 +1,5 @@
 ---
-title: '연습: ClickOnce 배포 디자이너를 사용 하 여 API에서 요청 시 어셈블리 다운로드 | Microsoft Docs'
+title: '연습: ClickOnce 배포 디자이너를 사용 하 여 API 사용 하 여 요청 시 어셈블리 다운로드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fef9486f6bbcbea0d330aaf16fe625642f1e662f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bc632f78a130064e44d9a0ea0bb172e81db98538
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565460"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151518"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>연습: 디자이너를 사용하여 ClickOnce 배포 API에서 요청 시 어셈블리 다운로드
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>연습: ClickOnce 배포 API 디자이너를 사용 하 여 요청 시 어셈블리 다운로드
 기본적으로 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에 포함된 모든 어셈블리는 응용 프로그램을 처음 실행할 때 다운로드됩니다. 그러나 소수의 사용자가 사용하는 응용 프로그램의 일부가 있을 수 있습니다. 이 경우 해당 형식 중 하나를 만들 때에만 어셈블리를 다운로드하고자 할 수 있습니다. 다음 연습에서는 응용 프로그램의 특정 어셈블리를 "선택 사항"으로 표시하는 방법 및 공용 언어 런타임에서 요청할 때 <xref:System.Deployment.Application> 네임스페이스에 있는 클래스를 사용하여 이를 다운로드하는 방법을 설명합니다.  
   
 > [!NOTE]
@@ -35,7 +35,7 @@ ms.locfileid: "31565460"
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 클릭합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.  
   
-## <a name="creating-the-projects"></a>프로젝트 만들기  
+## <a name="create-the-projects"></a>프로젝트 만들기  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Visual Studio와 함께 요청 시 어셈블리를 사용하는 프로젝트를 만들려면  
   
@@ -69,7 +69,7 @@ ms.locfileid: "31565460"
      [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
      [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
   
-## <a name="marking-assemblies-as-optional"></a>어셈블리를 선택 사항으로 표시  
+## <a name="mark-assemblies-as-optional"></a>선택 사항으로 어셈블리 표시  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Visual Studio를 사용하여 ClickOnce 응용 프로그램에서 어셈블리를 선택 사항으로 표시하려면  
   
@@ -77,21 +77,21 @@ ms.locfileid: "31565460"
   
 2.  **응용 프로그램 파일** 단추를 클릭합니다.  
   
-3.  ClickOnceLibrary.dll에 대한 목록을 찾습니다. **게시 상태** 드롭다운 상자를 **포함**으로 설정합니다.  
+3.  에 대 한 목록을 찾아봅니다 *ClickOnceLibrary.dll*합니다. **게시 상태** 드롭다운 상자를 **포함**으로 설정합니다.  
   
 4.  **그룹** 드롭다운 상자를 확장하고 **새로 만들기**를 선택합니다. `ClickOnceLibrary` 라는 이름을 새 그룹 이름으로 입력합니다.  
   
-5.  에 설명 된 대로 응용 프로그램을 게시 계속 [하는 방법: ClickOnce 응용 프로그램 게시 마법사를 사용 하 여 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)합니다.  
+5.  에 설명 된 대로 응용 프로그램을 게시 계속 [방법: ClickOnce 응용 프로그램 게시 마법사를 사용 하 여 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)합니다.  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>매니페스트 생성 및 편집 도구 — 그래픽 클라이언트(MageUI.exe)를 사용하여 ClickOnce 응용 프로그램에서 어셈블리를 선택 사항으로 표시하려면  
   
-1.  만들 프로그램 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 설명 된 대로 매니페스트 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다.  
+1.  만들 하 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 설명 된 대로 매니페스트 [연습: ClickOnce 응용 프로그램을 수동으로 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다.  
   
 2.  MageUI.exe를 닫기 전에 배포의 응용 프로그램 매니페스트를 포함하는 탭을 선택하고 해당 탭에서 **파일** 탭을 선택합니다.  
   
 3.  응용 프로그램 파일의 목록에서 ClickOnceLibrary.dll을 찾고 **파일 형식** 열을 **없음**으로 설정합니다. **그룹** 열에 `ClickOnceLibrary.dll`을 입력합니다.  
   
-## <a name="testing-the-new-assembly"></a>새 어셈블리 테스트  
+## <a name="test-the-new-assembly"></a>새 어셈블리 테스트  
   
 #### <a name="to-test-your-on-demand-assembly"></a>요청 시 어셈블리를 테스트하려면  
   
@@ -99,5 +99,5 @@ ms.locfileid: "31565460"
   
 2.  기본 폼이 나타나면 <xref:System.Windows.Forms.Button>을 누릅니다. 메시지 상자 창에 "Hello, World!"라는 문자열이 표시됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  <xref:System.Deployment.Application.ApplicationDeployment>

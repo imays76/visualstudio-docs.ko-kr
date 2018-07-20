@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 121171dc71746f2c9f91df32b103be8292cce3fa
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234012"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153601"
 ---
-# <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
 이 문서에서는 배포 하는 경우 발생할 수 있는 다음과 같은 일반적인 오류가 나열 된 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 하 고 각 문제를 해결 하는 단계를 제공 합니다.  
   
 ## <a name="general-errors"></a>일반 오류  
@@ -36,7 +36,7 @@ ms.locfileid: "36234012"
 #### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>경우 응용 프로그램 파일을 찾으려고 아무 일도 발생 하거나 Internet Explorer에서 XML 렌더링 또는 실행 하거나 다른 이름으로 저장 대화 상자가 나타나면  
  이 오류는 콘텐츠 형식 (MIME 형식 라고도 함)는 서버 또는 클라이언트에 잘못 등록 되었을 원인일 가능성이 큽니다.  
   
- 먼저 서버에 연결 하도록 구성 되어 있는지 확인 합니다 `.application` 콘텐츠 형식 "application/x-ms-application"입니다.  
+ 먼저 서버에 연결 하도록 구성 되어 있는지 확인 합니다 *.application* 콘텐츠 형식 "application/x-ms-application"입니다.  
   
  서버가 올바르게 구성 되어, 경우에 확인을 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 컴퓨터에 설치 됩니다. 경우는 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 가 설치 되어 계속 나타나면이 문제를 제거 하 고 다시 설치 하 고는 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 를 다시 클라이언트에서 콘텐츠 형식을 등록 합니다.  
   
@@ -45,20 +45,20 @@ ms.locfileid: "36234012"
   
 -   하는 경우 로그 파일 표시 "(403) 사용할 수 없음" 또는 "(404) 찾을 수 없음"이이 파일의 다운로드를 차단 하지 않도록 웹 서버에 구성 되어 있는지 확인 합니다. 자세한 내용은 [ClickOnce 배포 시 서버 및 클라이언트 구성 문제](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)를 참조하세요.  
   
--   .Config 파일 서버에서 차단 되어 섹션을 참조 "다운로드를 설치 하려고 할 때 오류를 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .config 파일에 있는 응용 프로그램"이이 문서의 뒷부분에 나오는.  
+-   경우는 *.config* 파일을 서버에서 차단 되는 섹션을 참조 하십시오 "다운로드를 설치 하려고 할 때 오류를 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .config 파일에 있는 응용 프로그램"이이 문서의 뒷부분에 나오는.  
   
--   이 때문에 발생 했는지 여부를 결정 합니다 `deploymentProvider` 배포 매니페스트의 URL가 정품 인증에 사용 된 URL 다른 위치를 가리키는 합니다.  
+-   때문에이 오류가 발생 하는지 여부를 결정 합니다 `deploymentProvider` 배포 매니페스트의 URL가 정품 인증에 사용 된 URL 다른 위치를 가리키는 합니다.  
   
 -   서버에서 모든 파일이 있는지 확인 합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 로그 알려 주어 야는 파일을 찾을 수 없습니다.  
   
 -   네트워크 연결 문제; 있는지 여부를 참조 하세요. 다운로드 하는 동안 클라이언트 컴퓨터가 오프 라인으로 전환한 경우이 메시지를 받을 수 있습니다.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>.Config 파일에 있는 ClickOnce 응용 프로그램을 설치 하려고 할 때 다운로드 오류  
- 기본적으로 Visual Basic Windows 기반 응용 프로그램을 App.config 파일을 포함합니다. 사용자가 해당 운영 체제 보안상의 이유로.config 파일의 설치를 차단 하기 때문에 Windows Server 2003을 사용 하는 웹 서버에서 설치 하려고 할 때 문제가 됩니다. 설치할.config 파일을 사용 하도록 설정 하려면 **".deploy" 파일 확장명을 사용 하 여** 에 **게시 옵션** 대화 상자.  
+ 기본적으로 Visual Basic Windows 기반 응용 프로그램을 App.config 파일을 포함합니다. 사용자가 해당 운영 체제의 설치를 차단 하기 때문에 Windows Server 2003을 사용 하는 웹 서버에서 설치 하려고 할 때 문제가 됩니다 *.config* 보안상의 이유로 파일입니다. 사용 하도록 설정 하려면를 *.config* 파일을 설치할 **".deploy" 파일 확장명을 사용 하 여** 에 **게시 옵션** 대화 상자.  
   
  또한 설정 해야 콘텐츠 형식 (MIME 형식 라고도 함) 적절 하 게.application,.manifest 및.deploy 파일에 대 한 합니다. 자세한 내용은 웹 서버 설명서를 참조 하세요.  
   
- 자세한 내용은 "Windows Server 2003:: 선택 콘텐츠 형식"을 참조 [서버 및 클라이언트 구성 문제 ClickOnce 배포에서](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)합니다.  
+ 자세한 내용은 "Windows Server 2003:: 선택 콘텐츠 형식"을 참조 [ClickOnce 배포에서 서버 및 클라이언트 구성 문제](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)합니다.  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>오류 메시지: "응용 프로그램의 형식이 잘못 되었습니다." 로그 파일에 "XML 서명이 잘못 되었습니다."  
  매니페스트 파일을 업데이트 하 고 다시 서명 확인 합니다. 사용 하 여 응용 프로그램을 다시 게시 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 하거나 마법사를 사용 하 여 응용 프로그램을 다시 로그인 합니다.  
@@ -138,6 +138,6 @@ ms.locfileid: "36234012"
 |네트워크를 통해 바로 가기 키를 활성화할 수 없습니다.|바로 가기는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 로컬 하드 디스크에만 시작할 수 있습니다. 원격 서버에서 바로 가기 파일을 가리키는 URL을 열어 시작할 수는 없습니다.|  
 |응용 프로그램이 부분 신뢰 환경에서 온라인으로 실행 하려면 너무 큽니다. 응용 프로그램 공급 업체 또는 시스템 관리자에 게 문의 합니다.|부분 신뢰에서 실행 되는 응용 프로그램을 기본적으로 250MB 온라인 응용 프로그램 할당량 크기의 절반 보다 클 수 없습니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)

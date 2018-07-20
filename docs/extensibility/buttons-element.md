@@ -1,5 +1,5 @@
 ---
-title: 요소는 단추 | Microsoft Docs
+title: 요소 단추 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a89d40d1f9c9a994269045dd674a533a0bcd32c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 522a69dc703a83ef601a5c7f0c54a5e0c224366e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097652"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155414"
 ---
-# <a name="buttons-element"></a>단추 요소
+# <a name="buttons-element"></a>Buttons 요소
 그룹 [단추](../extensibility/button-element.md) 개별 명령을 나타내는 요소입니다.  
   
 ## <a name="syntax"></a>구문  
@@ -40,14 +40,14 @@ ms.locfileid: "31097652"
   
 |특성|설명|  
 |---------------|-----------------|  
-|조건|선택적 요소. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
+|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
 |[Buttons 요소](../extensibility/buttons-element.md)|단추 요소를 그룹화합니다.|  
-|[Button 요소](../extensibility/button-element.md)|사용자와 상호 작용할 수 있는 명령을 정의 합니다.|  
+|[Button 요소](../extensibility/button-element.md)|사용자가 상호 작용할 수 있는 명령을 정의 합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -55,7 +55,7 @@ ms.locfileid: "31097652"
 |-------------|-----------------|  
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다.|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 <Buttons>  
@@ -69,6 +69,6 @@ ms.locfileid: "31097652"
 </Buttons>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

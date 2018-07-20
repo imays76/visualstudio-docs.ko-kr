@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3d1aa14e404cbc4e8efdc425a4c3099f7a42f5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078854"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154387"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포에서 서버 및 클라이언트 구성 문제
 인터넷 정보 서비스 (IIS)를 사용 하 여 Windows Server에서 배포에는 Windows에서 인식 하지 못하는 파일 형식을 포함 하 고 Microsoft Word 파일을 같은 IIS는 해당 파일을 전송할 거부 하 고 배포에 실패 합니다.  
@@ -93,7 +93,7 @@ ms.locfileid: "39078854"
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce 및 매핑된 드라이브  
  ClickOnce 응용 프로그램을 게시 하려면 Visual Studio를 사용 하는 경우에 설치 위치로 매핑된 드라이브를 지정할 수 없습니다. 그러나 ClickOnce 응용 프로그램 매니페스트 생성기 및 편집기 (Mage.exe 및 MageUI.exe)를 사용 하 여 매핑된 드라이브에서 설치를 수정할 수 있습니다. 자세한 내용은 [Mage.exe (매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) 하 고 [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)합니다.  
   
-## <a name="ftp-protocol-nt-supported-for-installing-applications"></a>FTP 프로토콜 nt 응용 프로그램을 설치 하는 것에 대 한 지원  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>응용 프로그램을 설치 하는 것에 대 한 지원 되지 않는 프로토콜 FTP  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] HTTP 1.1 웹 서버나 파일 서버에서 응용 프로그램을 설치 하도록 지원 합니다. 응용 프로그램을 설치 하는 것에 대 한 FTP (파일 전송 프로토콜) 지원 되지 않습니다. 응용 프로그램에만 게시에 FTP를 사용할 수 있습니다. 다음 표에서 이러한 차이점을 보여 줍니다.  
   
 |URL 형식|설명|  
