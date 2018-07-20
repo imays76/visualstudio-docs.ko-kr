@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdef0199aa55d6981761a20804f9f209a1a0fdc4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 939fd64873a2aab9d5652768ad4ecfa4a93b5122
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565421"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152245"
 ---
-# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>연습: ClickOnce 응용 프로그램용 사용자 지정 설치 관리자 만들기
-ClickOnce 응용 프로그램은.exe 파일에 따라 자동으로 설치 및 사용자 지정 설치 관리자에 의해 업데이트 수입니다. 사용자 지정 설치 관리자는 보안 및 유지 관리 작업에 대 한 사용자 지정 대화 상자를 포함 하 여 설치 하는 동안 사용자 지정 고객 환경을 구현할 수 있습니다. 사용자 지정 설치 관리자 설치 작업을 수행 하려면 사용 하 여는 <xref:System.Deployment.Application.InPlaceHostingManager> 클래스입니다. 이 연습에는 ClickOnce 응용 프로그램을 설치 하는 사용자 지정 설치 관리자를 만드는 방법을 보여 줍니다.  
+# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>연습: ClickOnce 응용 프로그램에 대 한 사용자 지정 설치 관리자 만들기
+ClickOnce 응용 프로그램에 따라 프로그램 *.exe* 파일을 자동으로 설치 하 고 사용자 지정 설치 관리자에서 업데이트할 수 있습니다. 사용자 지정 설치 관리자는 보안 및 유지 관리 작업에 대 한 사용자 지정 대화 상자를 포함 하 여 설치 하는 동안 사용자 지정 사용자 경험을 구현할 수 있습니다. 설치 작업을 수행 하려면 사용자 지정 설치 관리자를 사용 하 여 <xref:System.Deployment.Application.InPlaceHostingManager> 클래스입니다. 이 연습에는 자동으로 ClickOnce 응용 프로그램을 설치 하는 사용자 지정 설치 관리자를 만드는 방법을 보여 줍니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
   
@@ -36,9 +36,9 @@ ClickOnce 응용 프로그램은.exe 파일에 따라 자동으로 설치 및 �
   
 1.  ClickOnce 응용 프로그램에서 System.Deployment 및 System.Windows.Forms에 대 한 참조를 추가 합니다.  
   
-2.  응용 프로그램에 새 클래스를 추가 하 고 임의의 이름을 지정 합니다. 이 연습에서는 이름 `MyInstaller`합니다.  
+2.  응용 프로그램에 새 클래스를 추가 하 고 모든 이름을 지정 합니다. 이 연습에서는 이름을 `MyInstaller`입니다.  
   
-3.  다음 추가 `Imports` 또는 `using` 문을 새 클래스의 맨 위에 있습니다.  
+3.  다음을 추가 합니다 `Imports` 또는 `using` 문을 새 클래스의 맨 위로 이동 합니다.  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -52,15 +52,15 @@ ClickOnce 응용 프로그램은.exe 파일에 따라 자동으로 설치 및 �
   
 4.  클래스에 다음 메서드를 추가 합니다.  
   
-     이러한 메서드는 호출 <xref:System.Deployment.Application.InPlaceHostingManager> 배포 매니페스트를 다운로드 하는 메서드를 설치 하 고 다운로드 한 다음 ClickOnce 캐시에 응용 프로그램을 설치 하는 권한에 대 한 사용자에 게 적절 한 권한을 어설션 합니다. 사용자 지정 설치 관리자 미리 신뢰할 수 또는 ClickOnce 응용 프로그램 신뢰 결정을 내리도록을 연기할 수를 지정할 수는 <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> 메서드를 호출 합니다. 이 코드는 응용 프로그램을 미리 신뢰 합니다.  
+     이러한 메서드는 호출 <xref:System.Deployment.Application.InPlaceHostingManager> 배포 매니페스트를 다운로드 하는 메서드를 설치 하 고 다운로드 하 고 ClickOnce 캐시에 응용 프로그램을 설치 하 고 사용자에 게 적절 한 권한을 어설션 합니다. ClickOnce 응용 프로그램을 신뢰할 수 있는 미리 인지, 아니면 신뢰 결정을 내리도록을 연기할 수는 사용자 지정 설치 관리자를 지정할 수는 <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> 메서드를 호출 합니다. 이 코드는 미리 응용 프로그램을 신뢰합니다.  
   
     > [!NOTE]
-    >  미리를 신뢰 하 여 할당 된 사용 권한 사용자 지정 설치 관리자 코드의 사용 권한을 초과할 수 없습니다.  
+    >  미리 신뢰 하 여 할당 된 사용 권한 사용자 지정 설치 관리자 코드의 사용 권한을 초과할 수 없습니다.  
   
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]  
   
-5.  호출 코드에서 설치를 시도 하는 `InstallApplication` 메서드. 예를 들어, 클래스의 이름을 `MyInstaller`를 호출할 수 있는 `InstallApplication` 다음과 같은 방식으로 합니다.  
+5.  코드에서 설치를 위해 호출 된 `InstallApplication` 메서드. 예를 들어, 클래스 이름을 `MyInstaller`를 호출할 수 있습니다 `InstallApplication` 다음과 같은 방식입니다.  
   
     ```vb  
     Dim installer As New MyInstaller()  
@@ -75,8 +75,8 @@ ClickOnce 응용 프로그램은.exe 파일에 따라 자동으로 설치 및 �
     ```  
   
 ## <a name="next-steps"></a>다음 단계  
- ClickOnce 응용 프로그램 업데이트 과정에서 표시 하기 위한 사용자 지정 사용자 인터페이스를 포함 하 여 사용자 지정 업데이트 논리를 추가할 수도 있습니다. 자세한 내용은 <xref:System.Deployment.Application.UpdateCheckInfo>을 참조하세요. ClickOnce 응용 프로그램 에서도 표시 하지 않을 수 시작 메뉴 항목, 바로 가기를 마우스 항목 프로그램 추가 / 제거를 사용 하 여 한 `<customUX>` 요소입니다. 자세한 내용은 참조 [ \<entryPoint > 요소](../deployment/entrypoint-element-clickonce-application.md) 및 <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>합니다.  
+ ClickOnce 응용 프로그램에는 업데이트 과정에서 표시 하기 위한 사용자 지정 사용자 인터페이스를 포함 하 여 사용자 지정 업데이트 논리를 추가할 수도 있습니다. 자세한 내용은 <xref:System.Deployment.Application.UpdateCheckInfo>을 참조하세요. ClickOnce 응용 프로그램을 숨길 수도 있습니다 시작 메뉴 항목, 바로 가기를 마우스 항목이 프로그램 추가 / 제거를 사용 하 여를 `<customUX>` 요소입니다. 자세한 내용은 [ \<entryPoint > 요소](../deployment/entrypoint-element-clickonce-application.md) 고 <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)   
  [\<entryPoint > 요소](../deployment/entrypoint-element-clickonce-application.md)

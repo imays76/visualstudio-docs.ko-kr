@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816005"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151066"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 요소 (ClickOnce 응용 프로그램)
 응용 프로그램을 클라이언트 컴퓨터에서 실행하는 데 필요한 최소 보안 권한을 설명합니다.  
@@ -163,7 +163,7 @@ ms.locfileid: "34816005"
   
  `defaultAssemblyRequest` 및 `assemblyRequest` 을(를) 사용하여 요청된 모든 권한은 배포 매니페스트에 유효한 트러스트 라이선스가 있는 경우 사용자 프롬프트 없이 부여됩니다.  
   
- 권한 상승에 대 한 자세한 내용은 참조 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)합니다. 정책 배포에 대한 자세한 내용은 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)의 내용을 를 참조하세요.  
+ 권한 상승에 대 한 자세한 내용은 참조 하세요. [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)합니다. 정책 배포에 대한 자세한 내용은 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)의 내용을 를 참조하세요.  
   
 ## <a name="examples"></a>예제  
  다음 세 가지 코드 예제는 `trustInfo` 배포의 응용 프로그램 매니페스트에서 사용할 수 있는 기본 명명된 보안 영역(Internet, LocalIntranet, FullTrust)에 대한 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 요소를 설명합니다.  
@@ -269,6 +269,6 @@ ms.locfileid: "34816005"
 </trustInfo>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)   
  [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
