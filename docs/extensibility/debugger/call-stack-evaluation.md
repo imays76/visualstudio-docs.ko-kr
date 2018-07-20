@@ -14,31 +14,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcfc2f2afa622534772390df59597f6972463de8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f59ce938d2b37c5967856dc64c9116fa9a695dbe
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101305"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151436"
 ---
 # <a name="call-stack-evaluation"></a>호출 스택 평가
-중단 모드에 있는 동안 호출 스택의 스택 프레임을 보려면 구현 해야 하는 [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 메서드.  
+중단 모드에 있는 동안 호출 스택의 스택 프레임을 보려면 구현 해야 합니다 [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 메서드.  
   
-## <a name="methods-for-evaluation"></a>평가 대 한 메서드  
- 간단한 디버그 엔진 (DE)에 대 한 스택 프레임을 하나만 있을 수 있습니다. 중단 모드에서 스택 프레임을 검사 하려면는 다음과 같은 방법을 구현 해야 [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)합니다.  
+## <a name="methods-for-evaluation"></a>평가 위한 메서드  
+ 간단한 디버그 엔진 (DE)에 대 한 스택 프레임을 하나만 있을 수 있습니다. 중단 모드에서 스택 프레임을 검사할의 다음 메서드를 구현 해야 합니다 [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
 |[GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|스택 프레임에 대 한 코드 컨텍스트를 가져옵니다. 코드 컨텍스트 스택 프레임의 현재 명령 포인터를 나타냅니다.|  
-|[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|스택 프레임에 대 한 문서 컨텍스트를 가져옵니다. 문서 컨텍스트 스택 프레임에 대 한 소스 코드에서 현재 위치를 나타냅니다. 프로그램에서 중지 하면 소스 코드 보기에 필요 합니다.|  
+|[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|스택 프레임에 대 한 문서 컨텍스트를 가져옵니다. 문서 컨텍스트 스택 프레임에 대 한 소스 코드의 현재 위치를 나타냅니다. 프로그램에서 중지 되 면 소스 코드 보기에 필요 합니다.|  
   
- 이러한 방법의 몇 가지 상황에 맞는 관련 인터페이스 및 메서드에 구현을 해야합니다. 따라서 구현 해야 합니다는 [GetDocumentContext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) 메서드와 다음과 같은 방법을 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)합니다.  
+ 이러한 메서드는 여러 상황에 맞는 관련 인터페이스 및 메서드 구현의 필요합니다. 따라서 구현 해야 합니다 [GetDocumentContext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) 메서드와의 다음 메서드 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|문서 컨텍스트의 파일 문의 범위를 가져옵니다.|  
+|[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|문서 컨텍스트 파일 문의 범위를 가져옵니다.|  
   
- 코드 컨텍스트 열거의 모든 메서드를 구현 해야 [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)합니다.  
+ 코드 컨텍스트 열거의 모든 메서드를 구현 해야 합니다 [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)
