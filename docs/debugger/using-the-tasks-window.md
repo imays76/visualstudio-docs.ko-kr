@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d840f6c12de20fb613ee27d59395afeb15a5c34b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059301"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179998"
 ---
 # <a name="using-the-tasks-window"></a>작업 창 사용
 
@@ -96,7 +96,7 @@ JavaScript에서 사용할 수는 프라미스를 사용 하 여 작업할 때 �
 
 ## <a name="see-also"></a>참고자료
 
-- [디버거 기본 사항](../debugger/debugger-basics.md)
+- [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)
 - [관리 코드 디버그](../debugger/debugging-managed-code.md)
 - [병렬 프로그래밍](/dotnet/standard/parallel-programming/index)
 - [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)

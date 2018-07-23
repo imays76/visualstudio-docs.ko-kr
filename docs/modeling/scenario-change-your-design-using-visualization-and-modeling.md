@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f60b2f1cdb609c5686f834ef147a2f121dc27b11
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5e87ece3deb5d55f1e184974135eeddcec1ebbfc
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281338"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177333"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -55,11 +55,11 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 
 ## <a name="scenario-overview"></a>시나리오 개요
 
-이 시나리오에서는 Dinner Now 및 Lucerne Publishing이라는 가상 회사 두 개의 소프트웨어 개발 수명 주기에 따른 에피소드를 설명합니다. Dinner Now는 시애틀에서 웹 기반 음식 배달 서비스를 제공합니다. 고객은 Dinner Now 웹 사이트에서 음식을 주문하고 결제할 수 있습니다. 주문은 배달을 위해 해당 현지 음식점에 전송됩니다. 뉴욕에 있는 회사인 Lucerne Publishing은 오프라인과 온라인으로 여러 가지 비즈니스를 운영합니다. 예를 들어 고객이 음식점 리뷰를 게시할 수 있는 웹 사이트를 운영합니다.
+이 시나리오에서는 Dinner Now 및 Lucerne Publishing이라는 가상 회사 두 개의 소프트웨어 개발 수명 주기에 따른 에피소드를 설명합니다. Dinner Now는 시애틀에서 웹 기반 음식 배달 서비스를 제공합니다. 고객이는 음식을 주문 하 고 Dinner Now 웹 사이트에서 요금을 지불할 수 있습니다. 주문은 배달을 위해 해당 현지 음식점에 전송됩니다. 뉴욕에 있는 회사인 Lucerne Publishing은 오프라인과 온라인으로 여러 가지 비즈니스를 운영합니다. 예를 들어 고객이 음식점 리뷰를 게시할 수 있는 웹 사이트를 실행 합니다.
 
 Lucerne은 최근에 Dinner Now를 인수했고, 다음과 같이 변경하고자 합니다.
 
-- Dinner Now에 음식점 리뷰 기능을 추가하여 웹 사이트를 통합합니다.
+- Dinner Now에 음식점 리뷰 기능을 추가 하 여 웹 사이트를 통합 합니다.
 
 - Dinner Now의 결제 시스템을 Lucerne 시스템으로 바꿉니다.
 

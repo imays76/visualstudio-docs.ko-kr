@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ff3c50274c9860033d247df14c17d5fe745d1893
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056299"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178428"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Visual Studio에서 레지스터 창 정보
 합니다 **등록** 기간은 주소 수준 디버깅을 활성화 하는 경우에 사용할 수 있습니다 합니다 **옵션** 대화 상자에서 **디버깅** 노드.  
@@ -52,4 +52,4 @@ ms.locfileid: "37056299"
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 레지스터 창 사용](../debugger/how-to-use-the-registers-window.md)   
- [디버거 기본 사항](../debugger/debugger-basics.md)
+ [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)
