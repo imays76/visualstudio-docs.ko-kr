@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058739"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176969"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>스레드 및 병렬 스택 창을 사용 하 여 작업 보기
 합니다 **병렬 스택** 창은 다중 스레드 응용 프로그램을 디버깅할 때 유용 합니다. 해당 **스레드 뷰** 응용 프로그램에서 모든 스레드에 대 한 호출 스택 정보를 표시 합니다. 따라서 스레드와 스레드 스택 프레임 간을 탐색할 수 있습니다. 관리 코드에는 **작업 보기** 의 호출 스택이 표시 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 개체입니다. 네이티브 코드에는 **작업 보기** 의 호출 스택이 표시 [작업 그룹](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)를 [병렬 알고리즘](/cpp/parallel/concrt/parallel-algorithms), [비동기 에이전트](/cpp/parallel/concrt/asynchronous-agents), 및 [간단한 작업](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)합니다.  
@@ -118,7 +118,7 @@ ms.locfileid: "37058739"
 ## <a name="see-also"></a>참고 항목  
  [다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)   
  [연습: 병렬 응용 프로그램 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Debugger Basics](../debugger/debugger-basics.md) (디버거 기본 사항)  
+ [Debugger Basics](../debugger/getting-started-with-the-debugger.md) (디버거 기본 사항)  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) (관리 코드 디버그)  
  [병렬 프로그래밍](/dotnet/standard/parallel-programming/index)   
  [작업 창 사용](../debugger/using-the-tasks-window.md)   

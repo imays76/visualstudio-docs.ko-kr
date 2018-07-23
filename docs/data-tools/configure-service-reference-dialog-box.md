@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d39aedc04cbdaebc35c892a8393ca394f44898
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281068"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180466"
 ---
 # <a name="configure-service-reference-dialog-box"></a>서비스 참조 구성 대화 상자
 
@@ -96,7 +96,7 @@ ms.locfileid: "36281068"
 
  **참조 된 어셈블리 목록**
 
- 프로젝트 또는 웹 사이트의 참조된 어셈블리 목록을 포함합니다. 선택 하면 **지정된 된 어셈블리의 형식 재사용**를 선택 하거나 개별 어셈블리를 지울 수 있습니다.
+ 프로젝트 또는 웹 사이트에 대 한 참조 된 어셈블리의 목록을 포함합니다. 선택 하면 **지정된 된 어셈블리의 형식 재사용**를 선택 하거나 개별 어셈블리를 지울 수 있습니다.
 
  **웹 참조 추가**
 

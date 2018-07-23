@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cec8887ddf2023a8abd08f409b93f47efdc7001
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: fd3f565d8bb58ae290b0b569bb61d4cb57e8edaa
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155570"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179777"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>방법:-Just-in-time 디버거에 응답
 
@@ -50,4 +50,4 @@ ms.locfileid: "39155570"
     IIS 관리자에서 서버 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **기능 보기로 전환**합니다. ASP.NET 섹션에서 선택 **.NET 컴파일** 한 다음 선택 했는지 확인 하 고 **False** (단계는 이전 버전의 IIS 다릅니다) 디버그 동작으로 합니다.
 
 ## <a name="see-also"></a>참고 항목
- [디버거 기본 사항](../debugger/debugger-basics.md)
+ [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)

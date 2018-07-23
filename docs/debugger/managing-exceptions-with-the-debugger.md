@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1437728a75e0c6e8babff690bb18c7bd30d3add4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: c514458d6b7e8cfd4837ca907d14055af8a624ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057472"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180220"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거를 사용한 예외 관리
 
@@ -197,4 +197,4 @@ public class GenericException<T> : Exception
  [방법: 예외 발생 후 시스템 코드 검사](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [방법: 네이티브 런타임 검사 사용](../debugger/how-to-use-native-run-time-checks.md)   
  [C 런타임 라이브러리 없이 런타임을 사용 하 여 확인](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [디버거 기본 사항](../debugger/debugger-basics.md)
+ [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)

@@ -37,18 +37,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e56e1129bfdd4b49dcf5b54614af715a20207750
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175319"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178880"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services
 Visual Studio는 Windows Communication Foundation (WCF)를 사용 하 여 작업에 대 한 도구를 제공 하 고 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], 분산 응용 프로그램을 만들기 위한 Microsoft 기술입니다. 이 항목에서는 Visual Studio의 관점에서 서비스를 소개 합니다. 전체 설명서를 참조 하세요 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)합니다.
 
 ## <a name="what-is-wcf"></a>새로운 WCF 기능
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 보안, 신뢰할 수 있는, 트랜잭션 및 상호 운용 가능한 분산된 응용 프로그램을 만들기 위한 통합 된 프레임 워크입니다. ASMX 웹 서비스,.NET Remoting, Enterprise Services (DCOM) 및 MSMQ와 같은 이전 프로세스 간 통신 기술을 대체합니다. WCF 통합된 프로그래밍 모델에서 이러한 모든 기술의 기능을 결합 합니다. 이 분산된 응용 프로그램 개발 환경을 간소화 합니다.
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 보안, 신뢰할 수 있는, 트랜잭션 및 상호 운용 가능한 분산된 응용 프로그램을 만들기 위한 통합 된 프레임 워크입니다. ASMX 웹 서비스,.NET Remoting, Enterprise Services (DCOM) MSMQ와 같은 이전 프로세스 간 통신 기술을 대체합니다. WCF 통합된 프로그래밍 모델에서 이러한 모든 기술의 기능을 결합 합니다. 이 분산된 응용 프로그램 개발 환경을 간소화 합니다.
 
 ### <a name="what-are-wcf-data-services"></a>WCF Data Services 란
  [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 표준 OData (개방형 데이터) 프로토콜의 구현입니다.  WCF Data Services와 같은 표준 HTTP 동사를 사용 하 여 데이터 가져오기, POST, PUT 또는 DELETE 키를 반환할 수 있도록 하는 REST Api의 집합으로 테이블 형식 데이터를 노출할 수 있습니다. 서버 쪽에서 WCF Data Services에 의해 대체 되 [ASP.NET Web API](http://www.asp.net/web-api) 새 OData 서비스 만들기에 대 한 합니다. WCF Data Services 클라이언트 라이브러리를 계속 적합 한 Visual Studio에서.NET 응용 프로그램에서 OData 서비스를 이용할 수 있습니다 (**프로젝트 &#124; 서비스 참조 추가**). 자세한 내용은 [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)합니다.
@@ -90,7 +90,7 @@ Visual Studio는 Windows Communication Foundation (WCF)를 사용 하 여 작업
  고유한 서비스를 신속 하 게 만들려면 WCF Visual Studio 템플릿을 기반으로 사용할 수 있습니다. 그런 다음 디버그 및 테스트 서비스를 WCF 서비스 자동 호스트 및 WCF 테스트 클라이언트를 사용할 수 있습니다. 이러한 도구는 함께 빠르고 편리 하 게 디버그 및 테스트 주기를 제공 하 고 초기 단계에서 호스팅 모델에 대 한 커밋 요구 사항을 제거 합니다.
 
 #### <a name="wcf-templates"></a>WCF 템플릿
- WCF Visual Studio 템플릿은 서비스 개발을 위한 기본 클래스 구조를 제공합니다. 몇 가지 WCF 템플릿을 사용할 수는 **새 프로젝트 추가** 대화 상자. 여기에 WCF 서비스 라이브러리 프로젝트, WCF 서비스 웹 사이트 및 WCF 서비스 항목 템플릿 포함 됩니다.
+ WCF Visual Studio 템플릿은 서비스 개발을 위한 기본 클래스 구조를 제공합니다. 몇 가지 WCF 템플릿을 사용할 수는 **새 프로젝트 추가** 대화 상자. 여기에 WCF 서비스 lLibrary 프로젝트, WCF 서비스 웹 사이트 및 WCF 서비스 항목 템플릿 포함 됩니다.
 
  서식 파일을 선택 하면 서비스 계약, 서비스 구현 및 서비스 구성 파일이 추가 됩니다. 모든 필요한 특성이 이미 추가 되 면 서비스의 간단한 "Hello World" 형식 만들기 및 않은 코드를 작성할 필요가 없습니다. 물론, 함수 및 실제 서비스의 메서드를 제공 하는 코드를 추가 하려면 싶지만 템플릿을 기본 기초를 제공 합니다.
 
