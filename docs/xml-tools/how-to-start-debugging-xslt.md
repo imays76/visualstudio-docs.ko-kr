@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 01028cd0c2a838335cdaab2705bf5c9bbcd73b44
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548413"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178350"
 ---
 # <a name="how-to-start-debugging-xslt"></a>방법: XSLT 디버깅 시작
 
@@ -30,13 +30,13 @@ XML 편집기에서 디버거를 시작할 수 있습니다. 그러면 스타일
 
 1. XML 편집기에서 스타일시트를 엽니다.
 
-1. 선택 **XSL 디버깅** 에서 **XML** 메뉴.
+1. 선택 **XSL 디버깅** 에서 합니다 **XML** 메뉴.
 
 ### <a name="to-start-debugging-from-an-xml-input-document"></a>XML 입력 문서에서 디버깅을 시작하려면
 
 1. XML 편집기에서 XML 문서를 엽니다.
 
-1. 선택 **XSL 디버깅** 에서 **XML** 메뉴.
+1. 선택 **XSL 디버깅** 에서 합니다 **XML** 메뉴.
 
 ## <a name="xslt-from-other-languages"></a>다른 언어의 XSLT
 
@@ -93,5 +93,5 @@ namespace ConsoleApplication
 
 ## <a name="see-also"></a>참고자료
 
-- [연습: XSLT 스타일 시트를 디버깅 합니다.](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [디버거 기본 사항](../debugger/debugger-basics.md)
+- [연습: XSLT 스타일 시트 디버깅](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)

@@ -18,19 +18,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b796bf5b17460425d25ec91f3ecca7c147784039
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174988"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178389"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>연습: WPF 및 Entity Framework를 사용 하 여 WCF 데이터 서비스 만들기
 이 연습에는 간단한을 만드는 방법을 보여 줍니다 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] 에서 호스팅되는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램 및 Windows Forms 응용 프로그램에서 액세스 합니다.
 
 이 연습에 있습니다.
 
--   [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]를 호스팅하는 웹 응용 프로그램을 만듭니다.
+-   호스트에 웹 응용 프로그램을 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]입니다.
 
 -   만들기는 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 나타내는 `Customers` Northwind 데이터베이스의 테이블입니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "37174988"
        짧은 시간 후 쿼리 실행이 완료 하 고 Northwind 데이터베이스 생성 됩니다.
 
 ## <a name="creating-the-service"></a>서비스 만들기
-[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]를 만들려면 웹 프로젝트를 추가하고 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]을 만든 다음 이 모델에서 서비스를 만듭니다.
+만들려는 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], 추가 웹 프로젝트를 만들기는 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]을 만든 다음 모델에서 서비스 합니다.
 
 첫 번째 단계에서는 서비스를 호스팅할 웹 프로젝트를 추가할 수 있습니다.
 
