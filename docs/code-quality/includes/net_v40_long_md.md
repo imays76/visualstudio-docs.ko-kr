@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 204a4b668feab3b46e5aa20ae90b0864792daa1c
+ms.openlocfilehash: 073a94e498d978b139395de460c274d7d269fb2f
 ms.sourcegitcommit: 39dd38ccc24de96818c065e8af2ef8382e9c94ca
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/21/2018
-ms.locfileid: "39190409"
+ms.locfileid: "39191694"
 ---
-WPF(Windows Presentation Foundation)
+.NET Framework 4
