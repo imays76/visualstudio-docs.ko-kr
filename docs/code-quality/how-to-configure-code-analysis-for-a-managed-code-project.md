@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179562"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204234"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>방법: 관리 코드 프로젝트에 대한 코드 분석 구성
 
-Visual Studio에서 코드 분석의 목록에서 선택할 수 있습니다 *규칙 집합* 관리 코드 프로젝트에 적용 합니다. 기본 규칙 집합이 *Microsoft 최소 권장 규칙*합니다. 프로젝트 또는 솔루션의 모든 프로젝트를 설정 하는 다른 규칙을 적용할 수 있습니다.
+Visual Studio에서 코드 분석의 목록에서 선택할 수 있습니다 [규칙 집합](../code-quality/rule-set-reference.md))을 관리 코드 프로젝트에 적용 합니다. 기본적으로 **Microsoft 최소 권장 규칙** 규칙 집합 선택 되어 있지만 원하는 경우 설정 하는 다른 규칙을 적용할 수 있습니다. 솔루션의 프로젝트에 하나 이상의 규칙 집합을 적용할 수 있습니다.
 
 > [!TIP]
 > ASP.NET 웹 응용 프로그램에 대해 설정 하는 규칙을 구성 하는 방법에 대 한 정보를 참조 하세요 [방법: 웹 응용 프로그램을 ASP.NET에 대 한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)합니다.
@@ -76,4 +76,5 @@ Visual Studio에서 코드 분석의 목록에서 선택할 수 있습니다 *�
 
 ## <a name="see-also"></a>참고자료
 
+- [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)
 - [방법: ASP.NET 웹 응용 프로그램에 대 한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
