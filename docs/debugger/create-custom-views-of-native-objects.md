@@ -2,7 +2,7 @@
 title: 네이티브 개체의 사용자 지정 뷰 만들기
 description: Natvis 프레임 워크를 사용 하 여 Visual Studio 디버거에서 네이티브 형식을 표시 하는 방식을 사용자 지정 하려면
 ms.custom: ''
-ms.date: 06/27/2017
+ms.date: 067/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49cb94e11f4ce5c472ef4fa445037cfcd2861fd4
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: b03e7809cb0958760e1a4fcc7b4bb5b4260a7429
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433576"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204247"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 네이티브 개체의 사용자 지정 뷰 만들기
 Visual Studio Natvis 프레임 워크를 사용 하면 Visual Studio 디버거 변수 창에 네이티브 형식을 표시 하는 방식을 사용자 지정할 수 있습니다 (예를 들어 합니다 **Watch** 창 **지역** 창 및  **DataTips**합니다.
@@ -631,7 +631,7 @@ Visual Studio Natvis 프레임 워크를 사용 하면 Visual Studio 디버거 �
 </Type>  
 ```  
   
- 메모리 내 비트맵을 확인하는 데 사용되는 이미지 조사식 확장에서 UIVisualizer의 예제를 볼 수 있습니다( [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)).  
+ 메모리 내 비트맵을 확인 하는 데는 이미지 조사식 확장에서 UIVisualizer의 예제를 볼 수 있습니다: [ImageWatch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)  
   
 ### <a name="customvisualizer-element"></a>CustomVisualizer 요소  
  `CustomVisualizer` 는 Visual Studio에서 실행되는 코드에서 시각화를 제어하기 위해 작성할 수 있는 VSIX 확장을 지정하는 확장성 지점입니다. VSIX 확장 작성 방법에 대한 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)를 참조하세요. 사용자 지정 시각화 도우미 작성 XML natvis 정의 작성 하는 보다 많은 작업이 있지만 어떤 natvis 지원 하거나 지원 하지 않습니다 하는 방법에 대 한 제약 조건에서 무료. 사용자 지정 시각화 도우미는 디버기 프로세스를 쿼리하고 수정하거나 Visual Studio의 다른 부분과 통신하는 데 사용할 수 있는 전체 디버거 확장성 API에 액세스할 수 있습니다.  
