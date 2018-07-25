@@ -2,7 +2,7 @@
 title: Visual Studio를 사용하여 C#으로 ASP.NET Core 웹앱 만들기
 description: C#을 사용하여 단계별로 Visual Studio에서 ASP.NET Core 웹앱을 만드는 방법을 알아봅니다.
 ms.custom: mvc
-ms.date: 10/10/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,17 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9d8aa6a6147ff57ba72f1cc69240ef5a7137cd73
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089301"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
 Visual Studio IDE(통합 개발 환경)에 대한 이 5 ~ 10분 분량의 소개에서는 간단한 C # ASP.NET Core 웹 응용 프로그램을 만듭니다.
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -52,7 +53,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5 ~ 10분 분량의 소개
 
    ![[정의로 이동] 바로 가기 메뉴](../ide/media/quickstart-aspnet-gotodefinition.png)
 
-1. 다음으로, 간단한 바로 가기를 사용하여 파일 맨 위에서 `using` 지시문을 정리합니다. 회색으로 표시된 using 지시문을 선택하면 [빠른 작업](../ide/quick-actions.md) 전구 메뉴가 캐럿 바로 아래 또는 왼쪽 여백에 나타납니다. 전구 메뉴를 선택한 후 **불필요한 Using 제거**를 선택합니다.
+1. 그런 다음, 간단한 바로 가기를 사용하여 파일 맨 위에서 `using` 지시문을 정리합니다. 회색으로 표시된 using 지시문을 선택하면 [빠른 작업](../ide/quick-actions.md) 전구 메뉴가 캐럿 바로 아래 또는 왼쪽 여백에 나타납니다. 전구 메뉴를 선택한 후 **불필요한 Using 제거**를 선택합니다.
 
      파일에서 불필요한 using이 삭제됩니다.
 
@@ -86,7 +87,10 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5 ~ 10분 분량의 소개
 이 빠른 시작을 완료한 것을 축하 드립니다! Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 해당 기능을 보다 자세히 알아보려면 목차에서 **자습서** 섹션에 있는 자습서를 읽어보세요.
 
 ## <a name="next-steps"></a>다음 단계
-이 빠른 시작을 완료한 것을 축하 드립니다! C#, ASP.NET Core 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 자세히 알아보려면 계속 다음 자습서를 사용하세요.
+
+이 빠른 시작을 완료한 것을 축하 드립니다! C#, ASP.NET Core 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 공용 서버에서 실행 중인 앱을 보려면 다음 단추를 선택합니다.
 
 > [!div class="nextstepaction"]
-> [Visual Studio에서 C# 및 ASP.NET 시작](tutorial-csharp-aspnet-core.md)
+> [앱을 Azure App Service에 배포](..//deployment/quickstart-deploy-to-azure.md)
+
+자세히 알아보려면 자습서 [Visual Studio에서 C# 및 ASP.NET 시작](tutorial-csharp-aspnet-core.md) 및 [ASP.NET Core MVC 및 Visual Studio 시작](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)을 계속하세요.

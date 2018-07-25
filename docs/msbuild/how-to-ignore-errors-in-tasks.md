@@ -11,17 +11,17 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578603"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081477"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>방법: 작업의 오류 무시
 경우에 따라 빌드에서 특정 작업의 폴트 발생을 허용하고자 합니다. 중요하지 않은 작업이 실패할 경우 필요한 출력이 계속 생성될 수 있으므로 빌드를 계속 진행하고자 합니다. 예를 들어 각 구성 요소가 빌드된 후 프로젝트에서 `SendMail` 작업을 사용하여 전자 메일 메시지를 보낸다면 메일 서버를 사용할 수 없고 상태 메시지를 보낼 수 없는 경우에도 완료될 때까지 빌드를 진행하도록 허용할 수 있습니다. 또는 예를 들어 일반적으로 빌드 중에 중간 파일이 삭제된다면 해당 파일을 삭제할 수 없는 경우에도 완료될 때까지 빌드를 진행하도록 허용할 수 있습니다.  
   
-## <a name="using-the-continueonerror-attribute"></a>ContinueOnError 특성 사용  
+## <a name="use-the-continueonerror-attribute"></a>ContinueOnError 특성 사용  
  `Task` 요소의 `ContinueOnError` 특성은 작업 실패가 발생할 경우 빌드를 중지하거나 계속할지 여부를 제어합니다. 이 특성은 빌드를 계속할 경우 오류를 오류 또는 경고로 처리할지 여부를 제어합니다.  
   
  `ContinueOnError` 특성은 다음 값 중 하나를 포함할 수 있습니다.  
@@ -63,5 +63,5 @@ ms.locfileid: "31578603"
   
 ## <a name="see-also"></a>참고 항목
 [MSBuild](../msbuild/msbuild.md)  
- [작업 참조](../msbuild/msbuild-task-reference.md)   
- [작업](../msbuild/msbuild-tasks.md)
+[작업 참조](../msbuild/msbuild-task-reference.md)   
+[작업](../msbuild/msbuild-tasks.md)

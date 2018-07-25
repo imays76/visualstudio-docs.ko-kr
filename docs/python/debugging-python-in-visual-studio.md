@@ -1,7 +1,7 @@
 ---
 title: Python 코드 디버깅
 description: 중단점 설정, 단계별 실행, 값 검사, 예외 확인, 대화형 창에서 디버깅을 포함하여 특히 Python 코드에 대한 Visual Studio의 디버깅 기능 연습입니다.
-ms.date: 03/05/2018
+ms.date: 07/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 14716aa85245dcbd7c1ba0bc85824f5a53bece2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032257"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079825"
 ---
-# <a name="debugging-your-python-code"></a>Python 코드 디버깅
+# <a name="debug-your-python-code"></a>Python 코드 디버그
 
 Visual Studio에서는 실행 중인 프로세스에 연결하고, 조사식 및 직접 실행 창에서 식을 계산하고, 지역 변수, 중단점, 문 단계별 실행/프로시저 나가기/프로시저 단위 실행, 다음 문 설정 등을 검사하는 작업을 포함한 포괄적인 디버깅 환경을 Python에 제공합니다.
 
@@ -193,6 +193,49 @@ Python 대화형 디버그 창(**디버그 > 창 > Python 대화형 디버그**)
 대화형 디버그 창에는 **도구 > 옵션 > Python 도구 > 대화형 디버그 창**를 통해 액세스할 수 있는 고유한 옵션 집합이 있습니다. 각 Python 환경마다 별도의 인스턴스가 있는 일반 Python 대화형 창과 달리, 하나의 [대화형 디버그] 창만 있으며, 디버깅 중인 프로세스에 대해 항상 Python 인터프리터를 사용합니다. [옵션 - 디버깅 옵션](python-support-options-and-settings-in-visual-studio.md#debugging-options)을 참조하세요.
 
 ![대화형 디버그 창 옵션](media/debugging-interactive-options.png)
+
+## <a name="use-the-experimental-debugger"></a>실험적 디버거 사용
+
+Visual Studio 2017 미리 보기 4.0부터는 ptvsd 버전 4.1 이상에 기반한 "실험적 디버거"를 사용하여 옵트인할 수 있습니다. 옵트인하려면 **도구** > **옵션** 메뉴 명령을 선택한 다음, 옵션 대화 상자에서 **Python** > **실험적**으로 이동하고, **실험적 디버거 사용**을 선택합니다.
+
+실험적 디버거는 다음 표에 설명된 대로 제한된 Python 환경과 호환될 수 있습니다.
+
+| Python 버전 | 실험적 디버거와 호환 가능 |
+| --- | --- |
+| 2.6 | 아니요 |
+| 2.7 | 예 |
+| 3.1~3.4 | 아니요 |
+| 3.5 이상 | 예 |
+| IronPython | 아니요 |
+
+호환되지 않는 환경에서 실험적 디버거를 사용하려는 경우 Visual Studio에서는 "디버거가 환경과 호환되지 않습니다."라는 오류를 표시합니다.
+
+![실험적 디버거를 사용하는 경우 디버거는 이 환경 오류와 호환되지 않습니다.](media/debugging-experimental-incompatible-error.png)
+
+**실험적 디버거 사용 않 함** 명령을 선택합니다. 그러면 **실험적 디버거 사용** 옵션의 선택을 취소합니다.
+
+> [!Note]
+> 경고는 현재 Python 3.3 및 3.4에 대해 표시되지 않습니다.
+
+현재 환경에 ptvsd의 이전 버전을 설치한 경우(예: 원격 디버깅에 필요한 3.x 버전보다 앞선 4.0.x 버전) Visual Studio에서는 "디버거 패키지를 로드할 수 없습니다."라는 오류 또는 "디버거 패키지가 만료되었습니다."라는 경고 중 하나를 표시합니다.
+
+![실험용 디버거를 사용할 때 디버거 패키지는 로드된 오류가 아닐 수 있습니다.](media/debugging-experimental-version-error.png)
+
+![실험용 디버거를 사용할 때 디버거 패키지는 오래된 경고입니다.](media/debugging-experimental-version-warning.png)
+
+ptvsd 설치를 관리하려면 **Python 환경** 창에서 **패키지** 탭을 사용하거나 명령줄에서 다음 명령을 사용합니다.
+
+```ps
+# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
+pip uninstall ptvsd
+
+# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
+# -pre is required to allow pre-release versions as currently required by the experimental debugger.
+pip install --upgrade ptvsd -pre
+```
+
+> [!Important]
+> ptvsd의 일부 버전에 대한 경고를 무시하도록 선택할 수 있지만 Visual Studio가 제대로 작동하지 않을 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

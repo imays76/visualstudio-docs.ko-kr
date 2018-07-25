@@ -22,17 +22,20 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f1b67e86120ae4604d12b53acdafd3e7f5f3b56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 981e04d94ac803c76705cd7014f5d29721188512
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24569303"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962660"
 ---
 # <a name="javascript-language-reference"></a>JavaScript 언어 참조
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 는 웹 페이지 및 기타 응용 프로그램에 포함할 수 있는 스크립트 언어입니다.  
   
  이 설명서는 ECMAScript 언어 사양(5번째 버전)과 호환되는 JavaScript의 Microsoft 구현에 대해 설명합니다. 또한 ECMA 표준에 포함되어 있지 않은 추가 기능도 제공합니다.  
+
+> [!NOTE]
+> 모든 Microsoft의 JavaScript API 참조(500개 이상의 페이지)를 docs.microsoft.com에서 MDN 사본으로 리디렉션하여 [MDN 웹 문서](https://developer.mozilla.org/en-US/)를 웹의 원스톱, 초연 개발 리소스로 만들려는 커뮤니티 차원의 노력에 동참하였습니다. 자세한 내용은 이 [공지](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)를 참조하세요.
   
  HTML 및 브라우저 개체를 나타내는 HTML, CSS 및 DOM(문서 개체 모델)과 함께 브라우저 응용 프로그램에서 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 코드를 사용할 수 있습니다.  
   
@@ -53,21 +56,6 @@ ms.locfileid: "24569303"
 -   JavaScript와 함께 Windows 런타임 API를 사용하는 방법에 대한 자세한 내용은 [Using the Windows Runtime in JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md)을 참조하세요.  
   
  Visual Studio의 JavaScript 편집기는 IntelliSense를 지원합니다. 자세한 내용은 [JavaScript IntelliSense](http://go.microsoft.com/fwlink/p/?LinkId=256499)를 참조하세요.  
-  
-## <a name="in-this-section"></a>단원 내용  
- 다음 단원에서는 JavaScript에 대한 자세한 정보를 제공합니다.  
-  
- [JavaScript의 새로운 기능](../javascript/what-s-new-in-javascript.md)  
- JavaScript의 새로운 기능에 대해 설명합니다.  
-  
- [JavaScript 기본 사항](../javascript/javascript-fundamentals.md)  
- JavaScript의 기본 구조에 대해 소개합니다.  
-  
- [고급 JavaScript](../javascript/advanced/advanced-javascript.md)  
- 재귀, 배열, 문제 해결 등과 같은 고급 JavaScript 기능에 대해 설명합니다.  
-  
- [JavaScript 참조](../javascript/reference/javascript-reference.md)  
- JavaScript 언어의 요소에 대해 설명합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [문서 개체 모델](http://go.microsoft.com/fwlink/?LinkId=148095)

@@ -1,5 +1,6 @@
 ---
-title: 테스트 탐색기를 사용하여 단위 테스트 실행
+title: 테스트 탐색기를 사용하여 단위 테스트 실행, 빌드 및 디버그
+description: Visual Studio에서 테스트 탐색기를 사용하여 테스트를 실행하는 방법을 알아봅니다. 이 항목에서는 빌드 후 자동 테스트 실행을 사용하도록 설정하고, 테스트 결과를 보고, 테스트 목록을 그룹화 및 필터링하고, 재생 목록을 만들고, 테스트 를 디버그하고, 테스트 바로 가기를 사용하는 방법을 설명합니다.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752068"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977793"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -44,7 +45,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 
 - 솔루션의 모든 테스트를 실행하려면 **모두 실행**을 선택합니다.
 
-- 기본 그룹의 모든 테스트를 실행하려면 **실행...** 을 선택한 다음 메뉴에서 그룹을 선택합니다.
+- 기본 그룹의 모든 테스트를 실행하려면 **실행**을 선택한 다음, 메뉴에서 그룹을 선택합니다.
 
 - 실행할 개별 테스트를 선택하고 선택한 테스트에 대한 상황에 맞는 메뉴를 연 다음 **선택한 테스트 실행**을 선택합니다.
 
@@ -54,7 +55,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 
 ### <a name="run-tests-after-every-build"></a>각 빌드 후 테스트 실행
 
-|||
+|단추|설명|
 |-|-|
 |![빌드 후 실행](../test/media/ute_runafterbuild_btn.png)|각 로컬 빌드 후 단위 테스트를 실행하려면 표준 메뉴에서 **테스트** 를 선택한 다음 테스트 탐색기 도구 모음에서 **빌드 후 테스트 실행** 을 선택합니다.|
 
@@ -126,7 +127,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 
 테스트 탐색기 필터를 사용하여 프로젝트에서 보고 실행하는 테스트 메서드를 제한할 수 있습니다.
 
-테스트 탐색기 검색 상자에 문자열을 입력하고 Enter 키를 선택하면 테스트 목록이 필터링되어 정규화된 이름에 문자열이 포함된 테스트만 표시됩니다.
+테스트 탐색기 검색 상자에 문자열을 입력하고 ENTER 키를 선택하면 테스트 목록이 필터링되어 정규화된 이름에 문자열이 포함된 테스트만 표시됩니다.
 
 다른 기준으로 필터링하려면
 
@@ -153,7 +154,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 
 필터 결과의 하위 집합을 제외하려면 다음 구문을 사용합니다.
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

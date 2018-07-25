@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 포팅, 마이그레이션 및 업그레이드
 description: 이전 버전의 Visual Studio에서 만든 프로젝트에 대한 Visual Studio 2017의 지원에 대한 참조 및 Visual Studio에서 프로젝트 마이그레이션이 필요한 경우를 결정하는 방법입니다.
-ms.date: 03/14/2018
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,24 +19,23 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032205"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058752"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조
 
-새 버전의 Visual Studio에서는 일반적으로 이전 형식의 프로젝트, 파일 및 기타 자산을 대부분 지원합니다. 이러한 항목을 [이전처럼](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다. 최신 기능에 의존하지 않을 경우 Visual Studio에서는 일반적으로 Visual Studio 2015, Visual Studio 2013, Visual Studio 2012 등과 같은 이전 버전과의 호환성을 유지하려 합니다. 버전별로 특정한 기능은 [릴리스 정보](https://www.visualstudio.com/vs/release-notes/)를 참조하세요.
+새 버전의 Visual Studio에서는 일반적으로 이전 형식의 프로젝트, 파일 및 기타 자산을 대부분 지원합니다. 이러한 항목을 [이전처럼](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다. 최신 기능에 의존하지 않을 경우 Visual Studio에서는 일반적으로 Visual Studio 2015, Visual Studio 2013, Visual Studio 2012 등과 같은 이전 버전과의 호환성을 유지하려 합니다. 버전별로 특정한 기능은 [릴리스 정보](https://visualstudio.microsoft.com/vs/release-notes/)를 참조하세요.
 
 일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio에서 특정 프로젝트를 더 이상 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트할 수 있습니다. 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티 사이트](https://developercommunity.visualstudio.com)를 참조하세요.
 
-> [!Important]
-> 이 현재 문서에서는 마이그레이션과 관련된 Visual Studio 2017의 프로젝트 형식에 대한 세부 정보만 제공합니다. 마이그레이션 문제가 없는 지원되는 프로젝트 형식은 포함되지 않습니다. 해당 목록은 [플랫폼 대상 지정 및 호환성](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)에서 확인할 수 있습니다. 또한 일부 프로젝트 형식은 Visual Studio 2017에서 더 이상 지원되지 않으므로 마이그레이션할 수 없습니다.
+이 현재 문서에서는 Visual Studio 2017에서 마이그레이션할 수 있는 프로젝트 형식에 대해서만 세부 정보를 제공합니다. 이 문서에서는 Visual Studio 2017에서 더 이상 지원되지 않는 프로젝트 유형을 제외하므로 마이크레이션할 수 없습니다. 이 문서에서는 마이그레이션 문제가 없는 지원되는 프로젝트 유형도 제외됩니다. 해당 목록은 [플랫폼 대상 지정 및 호환성](/visualstudio/productinfo/vs2017-compatibility-vs)에서 확인할 수 있습니다.
 
 > [!Important]
-> 특정 프로젝트 형식은 Visual Studio 설치 관리자를 통해 적절한 워크로드를 설치해야 합니다. 워크로드가 설치되어 있지 않으면 Visual Studio에서 알 수 없거나 호환되지 않는 프로젝트 형식을 보고합니다. 이 경우 설치 옵션을 확인하고 다시 시도하세요. Visual Studio 2017의 프로젝트 지원에 대한 자세한 내용은 [플랫폼 대상 지정 및 호환성](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) 문서를 참조하세요.
+> 특정 프로젝트 형식은 Visual Studio 설치 관리자를 통해 적절한 워크로드를 설치해야 합니다. 워크로드가 설치되어 있지 않으면 Visual Studio에서 알 수 없거나 호환되지 않는 프로젝트 형식을 보고합니다. 이 경우 설치 옵션을 확인하고 다시 시도하세요. Visual Studio 2017의 프로젝트 지원에 대한 자세한 내용은 [플랫폼 대상 지정 및 호환성](/visualstudio/productinfo/vs2017-compatibility-vs) 문서를 참조하세요.
 
 ## <a name="project-types"></a>프로젝트 형식
 
@@ -76,7 +75,7 @@ ms.locfileid: "32032205"
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio가 프로젝트를 마이그레이션하는 시기를 결정하는 방식
 
-새 버전의 각 Visual Studio는 일반적으로 동일한 프로젝트가 다른 버전에서 열리고 수정되고 빌드될 수 있도록 이전 버전과 호환성을 유지하려 합니다. 그러나 일부 프로젝트 형식이 더 이상 지원되지 않을 정도로 시간이 흐르면 변경을 피할 수가 없습니다. (Visual Studio 2017에서 지원되는 프로젝트 형식에 대한 [플랫폼 타키팅 및 호환성](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)을 참조합니다.) 이러한 경우에는 최신 버전의 Visual Studio가 프로젝트를 로드하지 않고 마이그레이션 경로를 제공하지 않습니다. Visual Studio 이전 버전의 프로젝트가 이를 지원하도록 유지해야 하기 때문입니다.
+새 버전의 각 Visual Studio는 일반적으로 동일한 프로젝트가 다른 버전에서 열리고 수정되고 빌드될 수 있도록 이전 버전과 호환성을 유지하려 합니다. 그러나 일부 프로젝트 형식이 더 이상 지원되지 않을 정도로 시간이 흐르면 변경을 피할 수가 없습니다. (Visual Studio 2017에서 지원되는 프로젝트 형식에 대한 [플랫폼 타키팅 및 호환성](/visualstudio/productinfo/vs2017-compatibility-vs)을 참조합니다.) 이러한 경우에는 최신 버전의 Visual Studio가 프로젝트를 로드하지 않고 마이그레이션 경로를 제공하지 않습니다. Visual Studio 이전 버전의 프로젝트가 이를 지원하도록 유지해야 하기 때문입니다.
 
 다른 경우에 최신 버전의 Visual Studio는 프로젝트를 열 수 있지만 이전 버전과 호환되지 않게 렌더링하는 방식으로 프로젝트를 업데이트하거나 마이그레이션해야 합니다. Visual Studio는 이러한 마이그레이션이 필요한지 여부를 결정하는 많은 기준을 사용합니다.
 
@@ -92,7 +91,7 @@ ms.locfileid: "32032205"
 
 이러한 단방향 변경이 프로젝트 파일에서 `ToolsVersion` 속성의 변경을 포함할 수 있습니다. 이는 정확하게 MSBuild의 버전이 프로젝트의 소스 코드를 사용자가 원하는 실행가능하고 배포가능한 아티팩트로 바꿀 수 있음을 나타냅니다. 곧 이전 버전의 Visual Studio와 호환되지 않는 프로젝트를 렌더링한 것은 *Visual Studio* 버전이 아니라 `ToolsVersion`에서 결정한 대로 *MSBuild* 버전입니다. Visual Studio 버전이 프로젝트의 `ToolsVersion`과 일치하는 MSBuild 도구 체인을 포함하는 한은 Visual Studio는 해당 도구 체인이 프로젝트를 빌드하도록 호출할 수 있습니다.
 
-이전 버전에서 만든 프로젝트와 최대한 호환성을 유지하기 위해 Visual Studio 2017은 `ToolsVersion` 15, 14, 12 및 4를 지원하는 데 필요한 MSBuild 도구 체인을 포함합니다. 이러한 `ToolsVersion` 값 중 하나를 사용하는 프로젝트는 성공적인 빌드를 발생해야 합니다. ([플랫폼 대상 지정 및 호환성](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)에 설명된 대로 Visual Studio 2017이 프로젝트 형식을 항상 지원하는지 여부의 주제.)
+이전 버전에서 만든 프로젝트와 최대한 호환성을 유지하기 위해 Visual Studio 2017은 `ToolsVersion` 15, 14, 12 및 4를 지원하는 데 필요한 MSBuild 도구 체인을 포함합니다. 이러한 `ToolsVersion` 값 중 하나를 사용하는 프로젝트는 성공적인 빌드를 발생해야 합니다. ([플랫폼 대상 지정 및 호환성](/visualstudio/productinfo/vs2017-compatibility-vs)에 설명된 대로 Visual Studio 2017이 프로젝트 형식을 항상 지원하는지 여부의 주제.)
 
 이 컨텍스트에서 수동으로 프로젝트를 최신 `ToolsVersion` 값으로 업데이트하거나 마이그레이션해야 하는지 여부의 의문이 자연스럽게 발생합니다. 이러한 변경은 필요하지 않으며, 프로젝트를 다시 빌드하도록 수정해야 하는 많은 오류 및 경고를 발생시킬 가능성이 있습니다. 또한 Visual Studio가 향후 특정 `ToolsVersion`에 대한 지원을 중단하는 경우 특히 `ToolsVersion` 값을 변경해야 하기 때문에 프로젝트를 열면 프로젝트 마이그레이션 프로세스를 트리거하게 됩니다. 이러한 경우 해당 특정 프로젝트 형식에 대한 하위 시스템은 변경될 사항을 정확히 알고 이 아티클의 앞에서 설명한 대로 자동으로 이러한 변경을 수행할 수 있습니다.
 

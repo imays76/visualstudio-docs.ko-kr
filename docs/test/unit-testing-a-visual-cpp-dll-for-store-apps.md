@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751873"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117630"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL 테스트 방법
 
@@ -26,7 +26,7 @@ ms.locfileid: "34751873"
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> 솔루션 및 단위 테스트 프로젝트 만들기
 
-1.  **파일** 메뉴에서 **새로 만들기** > **새 프로젝트...** 를 선택합니다.
+1.  **파일** 메뉴에서 **새로 만들기** > **새 프로젝트**를 선택합니다.
 
 2.  새 프로젝트 대화 상자에서 **설치됨** > **Visual C++** 를 확장하고 **Windows 유니버설**을 선택합니다. 그런 다음 프로젝트 템플릿 목록에서 **유닛 테스트 앱(유니버설 Windows)** 을 선택합니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "34751873"
 
     -   테스트 메서드는 `TEST_CLASS(YourClassName){...}`를 사용해서 클래스로 그룹화됩니다.
 
-         테스트를 실행하면 각 테스트 클래스의 인스턴스가 생성됩니다. 테스트 메서드는 지정되지 않은 순서로 호출됩니다. 각 모듈, 클래스 또는 메서드의 전/후에 호출되는 특별한 메서드를 정의할 수 있습니다. 자세한 내용은 MSDN 라이브러리의 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)을 참조하세요.
+         테스트를 실행하면 각 테스트 클래스의 인스턴스가 생성됩니다. 테스트 메서드는 지정되지 않은 순서로 호출됩니다. 각 모듈, 클래스 또는 메서드의 전/후에 호출되는 특별한 메서드를 정의할 수 있습니다. 자세한 내용은 MSDN 라이브러리의 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](how-to-use-microsoft-test-framework-for-cpp.md)을 참조하세요.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> 테스트 탐색기에서 테스트가 실행되는지 확인
 
@@ -113,7 +113,7 @@ ms.locfileid: "34751873"
 
 5.  선언된 함수의 최소 구현을 추가합니다. **RooterLib.cpp**를 열고 다음 코드를 추가합니다.
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -131,11 +131,11 @@ ms.locfileid: "34751873"
 
 1.  RooterLibTests 프로젝트에 RooterLib를 추가합니다.
 
-    1.  솔루션 탐색기에서 **RooterLibTests** 프로젝트를 선택한 다음 바로 가기 메뉴에서 **참조...** 를 선택합니다.
+    1.  솔루션 탐색기에서 **RooterLibTests** 프로젝트를 선택한 다음, 바로 가기 메뉴에서 **참조**를 선택합니다.
 
     2.  RooterLib 프로젝트 속성 대화 상자에서 **공용 속성**을 확장하고 **프레임워크 및 참조**를 선택합니다.
 
-    3.  **새 참조 추가...** 를 선택합니다.
+    3.  **새 참조 추가** 선택
 
     4.  **참조 추가** 대화 상자에서 **솔루션**을 확장한 다음 **프로젝트**를 선택합니다. 그런 다음 **RouterLib** 항목을 선택합니다.
 
@@ -151,7 +151,7 @@ ms.locfileid: "34751873"
 
 3.  가져온 함수를 사용하는 테스트를 추가합니다. **unittest1.cpp**에 다음 코드를 추가합니다.
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ ms.locfileid: "34751873"
 
 1.  **unittest1.cpp**에 다른 테스트를 추가합니다.
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ ms.locfileid: "34751873"
 
     3.  예외를 catch하는 코드를 **RooterLib.cpp**에 추가합니다.
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

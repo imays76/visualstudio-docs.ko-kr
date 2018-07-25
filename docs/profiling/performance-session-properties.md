@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e2daf2b92073db6b2c9eca9b1ea482142eb3ba4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254695"
 ---
 # <a name="performance-session-properties"></a>성능 세션 속성
 
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/19/2018
 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.
 
 ## <a name="binary"></a>이항
-이러한 설정을 사용하면 계측된 이진 파일을 다른 위치로 옮길지 여부를 지정할 수 있습니다. 예를 들어 My.DLL을 프로파일링할 때 계측된 이진 파일을 옮기지 않도록 선택하면 My.Orig.DLL이라는 My.DLL의 백업 복사본이 만들어집니다. 그런 후에는 데이터를 수집하기 위한 프로브를 삽입하여 My.DLL이 수정됩니다. 계측된 이진 파일을 옮기도록 선택하면 원본 이진 파일 이름이 바뀌지 않으며 계측 중에 사용하기 위해 계측된 이진 파일이 지정한 위치에 복사됩니다.
+이러한 설정을 사용하면 계측된 이진 파일을 다른 위치로 옮길지 여부를 지정할 수 있습니다. 예를 들어 *My.DLL*을 프로파일링할 때 계측된 이진 파일을 옮기지 않도록 선택하면 *My.Orig.DLL*이라는 *My.DLL*의 백업 복사본이 만들어집니다. 그런 후에는 데이터를 수집하기 위한 프로브를 삽입하여 *My.DLL*이 수정됩니다. 계측된 이진 파일을 옮기도록 선택하면 원본 이진 파일 이름이 바뀌지 않으며 계측 중에 사용하기 위해 계측된 이진 파일이 지정한 위치에 복사됩니다.
 
 자세한 내용은 [방법: 시작할 이진 파일 지정](../profiling/how-to-specify-the-binary-to-start.md)을 참조하세요.
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="windows-events"></a>Windows 이벤트
 
-프로파일링 중에 이벤트 추적 공급자의 데이터를 수집할 수 있습니다. VSPerfReport.exe 명령줄 도구 `/calltrace` 옵션을 사용하면 데이터를 확인할 수 있습니다. ETW(Windows용 이벤트 추적)에 대한 자세한 내용은 [이벤트 추적 정보](http://go.microsoft.com/fwlink/?linkid=90752)를 참조하세요.
+프로파일링 중에 이벤트 추적 공급자의 데이터를 수집할 수 있습니다. *VSPerfReport.exe* 명령줄 도구 `/calltrace` 옵션을 사용하면 데이터를 확인할 수 있습니다. ETW(Windows용 이벤트 추적)에 대한 자세한 내용은 [이벤트 추적 정보](http://go.microsoft.com/fwlink/?linkid=90752)를 참조하세요.
 
 자세한 내용은 다음을 참조하세요.
 

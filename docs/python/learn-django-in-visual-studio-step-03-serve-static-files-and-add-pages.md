@@ -1,7 +1,7 @@
 ---
 title: 자습서 - Visual Studio의 Django 알아보기, 3단계
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, 정적 파일을 제공하고 앱에 페이지를 추가하고 템플릿 상속을 사용하는 방법을 구체적으로 설명합니다.
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750336"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089589"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>자습서 3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
 **이전 단계: [보기 및 페이지 템플릿을 사용하여 Django 앱 만들기](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -277,8 +277,9 @@ Django의 템플릿 시스템은 여러 템플릿에서 특정 요소를 다시 
 > [!div class="nextstepaction"]
 > [전체 Django 웹 프로젝트 템플릿 사용](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="going-deeper"></a>자세히 알아보기
+## <a name="go-deeper"></a>자세히 알아보기
 
+- [Azure App Service에 웹앱 배포](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 3 (views)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/)(첫 번째 Django 앱 작성, 3부(보기))(docs.djangoproject.com)
 - 제어 흐름과 같은 Django 템플릿의 추가 기능은 [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/)(Django 템플릿 언어)(docs.djangoproject.com)를 참조하세요.
 - `{% url %}` 태그 사용에 대한 자세한 내용은 [Built-in template tags and filters for Django templates reference](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/)(Django 템플릿 참조용 기본 제공 템플릿 태그 및 필터)(docs.djangoproject.com)에서 [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url)을 참조하세요.

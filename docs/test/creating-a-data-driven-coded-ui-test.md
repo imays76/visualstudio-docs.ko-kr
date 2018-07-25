@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0343058b2ae2910e81f345e81139d6f5114e330b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692189"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303042"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>데이터 기반의 코딩된 UI 테스트 만들기
 
@@ -40,7 +40,7 @@ ms.locfileid: "34692189"
    > [!NOTE]
    > **코딩된 UI 테스트 프로젝트** 템플릿이 표시되지 않으면, [코딩된 UI 테스트 구성 요소를 설치](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)해야 합니다.
 
-2.  작업을 기록하도록 선택합니다.
+2.  **작업을 기록**하도록 선택합니다.
 
      ![작업을 기록하도록 선택](../test/media/cuit_datadriven_generatecodedialog.png)
 
@@ -65,7 +65,7 @@ ms.locfileid: "34692189"
 
 5.  `AddNumbers()` 메서드를 사용하여 테스트가 실행되는지 확인합니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 상황에 맞는 메뉴를 열고 **테스트 실행**을 선택합니다. (바로 가기 키: **Ctrl**+**R**,**T**).
 
-     테스트 성공 여부를 보여 주는 테스트 결과가 테스트 탐색기 창에 표시됩니다. 테스트 탐색기 창을 열려면 **테스트** 메뉴에서 **Windows**와 **테스트 탐색기**를 차례로 선택합니다.
+     테스트 성공 여부를 보여 주는 테스트 결과가 **테스트 탐색기** 창에 표시됩니다. 테스트 탐색기 창을 열려면 **테스트** 메뉴에서 **Windows**와 **테스트 탐색기**를 차례로 선택합니다.
 
 6.  테스트에서 필요한 값을 확인하는 데 사용되는 어설션 매개 변수 값에는 데이터 소스도 사용할 수 있으므로, 어설션을 추가해 두 숫자의 합이 올바른지 유효성을 검사해 보겠습니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 상황에 맞는 메뉴를 열고 **코딩된 UI 테스트에 대한 코드 생성**과 **코딩된 UI 테스트 빌더 사용**을 차례로 선택합니다.
 
@@ -98,7 +98,7 @@ ms.locfileid: "34692189"
 
 ### <a name="step-2---create-a-data-set"></a>2단계 - 데이터 집합 만들기
 
-1.  이름이 `data.csv`인 dataDrivenSample 프로젝트에 텍스트 파일을 추가합니다.
+1.  dataDrivenSample 프로젝트 *data.csv*에 텍스트 파일을 추가합니다.
 
      ![프로젝트에 쉼표로 구분된 값 파일 추가](../test/media/cuit_datadriven_addcsvfile.png)
 
@@ -180,7 +180,7 @@ ms.locfileid: "34692189"
 
      데이터를 코딩할 검색 속성을 확인하려면 코딩된 UI 테스트 편집기를 사용합니다.
 
-    -   UIMap.uitest 파일을 엽니다.
+    -   *UIMap.uitest* 파일을 엽니다.
 
          ![코딩된 UI 테스트 편집기 열기](../test/media/cuit_datadriven_opentesteditor.png)
 
@@ -188,7 +188,7 @@ ms.locfileid: "34692189"
 
          ![코딩에 도움을 받으려면 코딩된 UI 테스트 편집기 사용](../test/media/cuit_datadriven_testeditor.png)
 
-    -   속성 창에서 **검색 속성**을 엽니다. 검색 속성 **Name** 값은 코드에서 데이터 소스를 사용하여 조작하는 항목입니다. 예를 들어 `SearchProperties`에는 다음과 같이 각 데이터 행의 첫 번째 열 값이 할당됩니다. `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. 이 테스트는 3회 반복하는 동안 검색 속성의 **Name** 값을 3, 5, 6의 순서로 변경합니다.
+    -   **속성** 창에서 **검색 속성**을 엽니다. 검색 속성 **Name** 값은 코드에서 데이터 소스를 사용하여 조작하는 항목입니다. 예를 들어 `SearchProperties`에는 다음과 같이 각 데이터 행의 첫 번째 열 값이 할당됩니다. `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. 이 테스트는 3회 반복하는 동안 검색 속성의 **Name** 값을 3, 5, 6의 순서로 변경합니다.
 
          ![코딩에 도움을 받으려면 검색 속성 사용](../test/media/cuit_datadriven_searchproperties.png)
 
@@ -230,9 +230,9 @@ ms.locfileid: "34692189"
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q: UIMap.Designer 파일에서 코드를 수정할 수 없는 이유는 무엇인가요?
 
-**A**: UIMap - 코딩된 UI 테스트 빌더를 사용하여 코드를 생성할 때마다 UIMapDesigner.cs 파일에서 수정된 코드 변경 내용을 덮어씁니다. 이 샘플에서 그리고 대부분의 경우에는 테스트가 데이터 소스를 사용하도록 설정하는 데 필요한 코드 변경을 테스트의 소스 코드 파일(CodedUITest1.cs)에서 수행할 수 있습니다.
+**A**: UIMap - 코딩된 UI 테스트 빌더를 사용하여 코드를 생성할 때마다 *UIMapDesigner.cs* 파일에서 수정된 코드 변경 내용을 덮어씁니다. 이 샘플에서 그리고 대부분의 경우에는 테스트가 데이터 소스를 사용하도록 설정하는 데 필요한 코드 변경을 테스트의 소스 코드 파일(즉, *CodedUITest1.cs*)에서 수행할 수 있습니다.
 
-기록된 메서드를 수정해야 하는 경우에는 해당 메서드를 UIMap.cs 파일에 복사한 후 이름을 바꾸어야 합니다. UIMap.cs 파일을 사용하여 UIMapDesigner.cs 파일의 메서드와 속성을 재정의할 수 있습니다. 코딩된 UITest.cs 파일에서 원래 메서드에 대한 참조를 제거하고 이름을 바꾼 메서드 이름으로 바꾸어야 합니다.
+기록된 메서드를 수정해야 하는 경우에는 해당 메서드를 *UIMap.cs* 파일에 복사한 후 이름을 바꾸어야 합니다. *UIMap.cs* 파일을 사용하여 *UIMapDesigner.cs* 파일의 메서드와 속성을 재정의할 수 있습니다. 코딩된 *UITest.cs* 파일에서 원래 메서드에 대한 참조를 제거하고 이름을 바꾼 메서드 이름으로 바꾸어야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -240,5 +240,5 @@ ms.locfileid: "34692189"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md)
-- [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)
+- [코딩된 UI 테스트에 대한 모범 사례](../test/best-practices-for-coded-ui-tests.md)
 - [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

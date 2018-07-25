@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: e0bf21ec99bd7b98ce90cd49c3edf5e3738c25b1
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32066536"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978400"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
 
@@ -121,3 +121,4 @@ namespace $safeprojectname$
 
 - [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)
 - [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)
+- [템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

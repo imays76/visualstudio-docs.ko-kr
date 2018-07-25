@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cd3f7e6c5075ad024e227c847ff05f186f7b016
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0a261c6c692fe0a1bc08f185f0b37c73e8838375
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570166"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945925"
 ---
 # <a name="copy-task"></a>Copy 작업
 파일 시스템의 새 위치에 파일을 복사합니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "31570166"
 |`OverwriteReadOnlyFiles`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 파일이 읽기 전용으로 표시된 경우에 파일을 덮어씁니다.|  
 |`Retries`|선택적 `Int32` 매개 변수입니다.<br /><br /> 이전 시도가 모두 실패한 경우 복사를 시도할 횟수를 지정합니다. 기본값은 0입니다.<br /><br /> **참고:** 다시 시도하면 빌드 프로세스에서 동기화 문제를 마스킹할 수 있습니다.|  
 |`RetryDelayMilliseconds`|선택적 `Int32` 매개 변수입니다.<br /><br /> 필요한 다시 시도 간의 지연 시간을 지정합니다. 기본값은 CopyTask 생성자에 전달되는 RetryDelayMillisecondsDefault 인수입니다.|  
-|`SkipUnchangedFiles`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 소스와 대상 간에 변경되지 않은 파일의 복사를 건너뜁니다. 파일 크기가 같고 마지막으로 수정된 시간이 같으면 `Copy` 작업에서 파일이 변경되지 않은 것으로 간주합니다. **참고:**  이 매개 변수를 `true`로 설정하면 포함 대상에 대한 종속성 분석을 사용하지 않아야 합니다. 소스 파일의 마지막으로 수정된 시간이 대상 파일의 마지막으로 수정된 시간보다 더 최신일 경우에만 작업을 수행하기 때문입니다.|  
+|`SkipUnchangedFiles`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 소스와 대상 간에 변경되지 않은 파일의 복사를 건너뜁니다. 파일 크기가 같고 마지막으로 수정된 시간이 같으면 `Copy` 작업에서 파일이 변경되지 않은 것으로 간주합니다. <br /><br /> **참고:**  이 매개 변수를 `true`로 설정하면 포함 대상에 대한 종속성 분석을 사용하지 않아야 합니다. 소스 파일의 마지막으로 수정된 시간이 대상 파일의 마지막으로 수정된 시간보다 더 최신일 경우에만 작업을 수행하기 때문입니다.|  
 |`SourceFiles`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 복사할 파일을 지정합니다.|  
 |`UseHardlinksIfPossible`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 파일을 복사 하는 대신 복사된 파일에 대한 하드 링크를 만듭니다.|  
   
@@ -70,10 +70,10 @@ ms.locfileid: "31570166"
 ## <a name="remarks"></a>설명  
  `DestinationFolder` 또는 `DestinationFiles` 매개 변수 중 하나(둘 다가 아닌)를 지정해야 합니다. 둘 다를 지정하는 경우 작업이 실패하고 오류가 기록됩니다.  
   
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 `MySourceFiles` 항목 컬렉션의 항목을 c:\MyProject\Destination 폴더로 복사합니다.  
+ 다음 예제에서는 `MySourceFiles` 항목 컬렉션의 항목을 *c:\MyProject\Destination* 폴더로 복사합니다.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -93,7 +93,7 @@ ms.locfileid: "31570166"
 ```  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 재귀적 복사를 수행하는 방법을 보여 줍니다. 이 프로젝트는 디렉터리 구조를 유지하면서 c:\MySourceTree의 모든 파일을 재귀적으로 c:\MyDestinationTree에 복사합니다.  
+ 다음 예제에서는 재귀적 복사를 수행하는 방법을 보여 줍니다. 이 프로젝트는 디렉터리 구조를 유지하면서 *c:\MySourceTree*의 모든 파일을 재귀적으로 *c:\MyDestinationTree*에 복사합니다.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

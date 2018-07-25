@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28eb8a61163ad731629e4d5e71d75d8c7b24ccf3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ba779446e3cfd450d50d71f21fd2e2434db158f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916857"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077051"
 ---
 # <a name="value-xelement-dynamic-property"></a>값(XElement 동적 속성)
 
@@ -23,7 +23,7 @@ ms.locfileid: "31916857"
 
 ## <a name="syntax"></a>구문
 
-```
+```xaml
 elem.Value
 ```
 
@@ -38,5 +38,5 @@ elem.Value
 ## <a name="see-also"></a>참고 항목
 
 - <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=fullName>
-- [XAttribute 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md)
+- [XElement 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md)
 - [Xml](../designers/xml-xelement-dynamic-property.md)

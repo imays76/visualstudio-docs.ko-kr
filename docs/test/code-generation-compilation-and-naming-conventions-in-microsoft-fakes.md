@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50b066020b04ce39dffa5c7267b89b889cf986e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976389"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282108"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 
@@ -32,9 +32,9 @@ ms.locfileid: "31976389"
 
 ### <a name="configure-code-generation-of-stubs"></a>스텁의 코드 생성 구성
 
-스텁 형식의 생성은 .fakes 파일 확장명을 가진 XML 파일에서 구성됩니다. Fakes 프레임워크는 사용자 지정 MSBuild 작업을 통해 빌드 프로세스에서 통합되고 빌드 시 해당 파일을 검색합니다. Fakes 코드 생성기는 스텁 형식을 어셈블리로 컴파일하고 프로젝트에 대한 참조를 추가합니다.
+스텁 형식의 생성은 *.fakes* 파일 확장명을 가진 XML 파일에서 구성됩니다. Fakes 프레임워크는 사용자 지정 MSBuild 작업을 통해 빌드 프로세스에서 통합되고 빌드 시 해당 파일을 검색합니다. Fakes 코드 생성기는 스텁 형식을 어셈블리로 컴파일하고 프로젝트에 대한 참조를 추가합니다.
 
-다음 예제에서는 FileSystem.dll에 정의된 스텁 형식을 보여 줍니다.
+다음 예제에서는 *FileSystem.dll*에 정의된 스텁 형식을 보여 줍니다.
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -44,9 +44,9 @@ ms.locfileid: "31976389"
 
 ### <a name="type-filtering"></a>형식 필터링
 
-.fakes 파일에서 필터를 설정하여 스텁해야 하는 형식을 제한할 수 있습니다. StubGeneration 요소 아래에 Clear, Add, Remove 요소를 무제한으로 추가하여 선택한 형식 목록을 빌드할 수 있습니다.
+*.fakes* 파일에서 필터를 설정하여 스텁해야 하는 형식을 제한할 수 있습니다. StubGeneration 요소 아래에 Clear, Add, Remove 요소를 무제한으로 추가하여 선택한 형식 목록을 빌드할 수 있습니다.
 
-예를 들어 다음의 .fakes 파일은 형식에 대한 스텁을 System 및 System.IO 네임스페이스에 생성하지만 System에서 "Handle"을 포함하는 형식은 제외합니다.
+예를 들어 다음의 *.fakes* 파일은 형식에 대한 스텁을 System 및 System.IO 네임스페이스에 생성하지만 System에서 "Handle"을 포함하는 형식은 제외합니다.
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -86,7 +86,7 @@ ms.locfileid: "31976389"
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>구체적인 클래스 및 가상 메서드 스텁
 
-기본적으로 스텁 형식은 봉인되지 않은 모든 클래스에 대해 생성됩니다. .fakes 구성 파일을 통해 스텁 형식을 추상 클래스로 제한할 수 있습니다.
+기본적으로 스텁 형식은 봉인되지 않은 모든 클래스에 대해 생성됩니다. *.fakes* 구성 파일을 통해 스텁 형식을 추상 클래스로 제한할 수 있습니다.
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -128,7 +128,7 @@ Fakes 코드 생성기는 생성된 Fakes 어셈블리에 표시되는 형식에
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-shim된 어셈블리에 강력한 이름을 지정하는 경우 Fakes 프레임워크는 생성된 Fakes 어셈블리에 자동으로 강력하게 설명합니다. 테스트 어셈블리에 강력하게 서명해야 합니다. [강력한 이름의 어셈블리](/dotnet/framework/app-domains/strong-named-assemblies)를 참조합니다.
+shim된 어셈블리에 강력한 이름을 지정하는 경우 Fake 프레임워크는 생성된 Fake 어셈블리에 자동으로 강력하게 서명합니다. 테스트 어셈블리에 강력하게 서명해야 합니다. [강력한 이름의 어셈블리](/dotnet/framework/app-domains/strong-named-assemblies)를 참조하세요.
 
 Fakes 프레임워크는 동일한 키를 사용하여 생성된 모든 어셈블리에 서명하므로 이 코드 조각을 시작 지점으로 사용하여 fakes 어셈블리에 대한 **InternalsVisibleTo** 특성을 shim된 어셈블리 코드에 추가할 수 있습니다.
 
@@ -136,7 +136,7 @@ Fakes 프레임워크는 동일한 키를 사용하여 생성된 모든 어셈�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-대체 키를 `KeyFile` 특성 값으로 **.fakes** 파일의 `Fakes`\\`Compilation` 요소에 포함하는 **.snk** 파일의 전체 경로를 지정하면 shim된 어셈블리에 대해 만든 키와 같은 다른 공용 키를 Fakes 어셈블리에 지정할 수 있습니다. 예:
+대체 키를 `KeyFile` 특성 값으로 *.fakes* 파일의 `Fakes`\\`Compilation` 요소에 포함하는 *.snk* 파일의 전체 경로를 지정하면 shim된 어셈블리에 대해 만든 키와 같은 다른 공용 키를 Fakes 어셈블리에 지정할 수 있습니다. 예:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -145,7 +145,7 @@ Fakes 프레임워크는 동일한 키를 사용하여 생성된 모든 어셈�
 </Fakes>
 ```
 
-그런 다음 대체 **.snk** 파일의 공용 키를 Fakes 어셈블리에 대한 InternalVisibleTo 특성의 두 번째 매개 변수로 shim된 어셈블리 코드에서 사용해야 합니다.
+그런 다음 대체 *.snk* 파일의 공용 키를 Fakes 어셈블리에 대한 InternalVisibleTo 특성의 두 번째 매개 변수로 shim된 어셈블리 코드에서 사용해야 합니다.
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -163,11 +163,11 @@ Fakes 어셈블리를 컴파일하면 빌드 시간이 현저하게 길어질 �
 
 단위 테스트 프로젝트에서 프로젝트 폴더의 FakesAssemblies 아래에 배치된 컴파일된 Fakes 어셈블리에 대한 참조를 추가합니다.
 
-1.  테스트 프로젝트와 일치하는 .NET 런타임 버전을 사용하여 새 클래스 라이브러리를 만듭니다. 이 라이브러리를 Fakes.Prebuild라고 하겠습니다. 프로젝트에서 필요 없는 class1.cs 파일을 제거합니다.
+1.  테스트 프로젝트와 일치하는 .NET 런타임 버전을 사용하여 새 클래스 라이브러리를 만듭니다. 이 라이브러리를 Fakes.Prebuild라고 하겠습니다. 프로젝트에서 필요 없는 *class1.cs* 파일을 제거합니다.
 
 2.  Fakes가 필요한 모든 시스템 및 타사 어셈블리에 대한 참조를 추가합니다.
 
-3.  각 어셈블리에 대한 .fakes 파일을 추가하고 빌드합니다.
+3.  각 어셈블리에 대한 *.fakes* 파일을 추가하고 빌드합니다.
 
 4.  테스트 프로젝트에서 다음을 수행합니다.
 
@@ -175,17 +175,17 @@ Fakes 어셈블리를 컴파일하면 빌드 시간이 현저하게 길어질 �
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Fakes를 만든 각 어셈블리에 대해 프로젝트의 Fakes.Prebuild\FakesAssemblies 폴더에서 해당 DLL 파일에 대한 참조를 추가합니다.
+    -   Fakes를 만든 각 어셈블리에 대해 프로젝트의 *Fakes.Prebuild\FakesAssemblies* 폴더에서 해당 DLL 파일에 대한 참조를 추가합니다.
 
 ### <a name="avoid-assembly-name-clashing"></a>어셈블리 이름 충돌 방지
 
-팀 빌드 환경에서는 모든 빌드 출력이 단일 디렉터리에 병합됩니다. 여러 프로젝트가 Fakes를 사용하는 경우 서로 다른 버전의 Fakes 어셈블리가 서로를 재정의할 수 있습니다. 예를 들어 .NET Framework 2.0의 TestProject1 fakes mscorlib.dll과 .NET Framework 4의 TestProject2 fakes mscorlib.dll 모두 mscorlib.Fakes.dll Fakes 어셈블리를 생성할 수 있습니다.
+팀 빌드 환경에서는 모든 빌드 출력이 단일 디렉터리에 병합됩니다. 여러 프로젝트가 Fakes를 사용하는 경우 서로 다른 버전의 Fakes 어셈블리가 서로를 재정의할 수 있습니다. 예를 들어 .NET Framework 2.0의 TestProject1 fakes *mscorlib.dll*과 .NET Framework 4의 TestProject2 fakes *mscorlib.dll* 모두 *mscorlib.Fakes.dll* Fakes 어셈블리를 생성할 수 있습니다.
 
- 이 문제를 방지하려면 Fakes가 .fakes 파일을 추가할 때 프로젝트 이외 참조에 대해 버전 정규화된 Fakes 어셈블리 이름을 자동으로 만들어야 합니다. 버전 정규화된 Fakes 어셈블리 이름은 Fakes 어셈블리 이름을 만들 때 버전 번호를 포함합니다.
+ 이 문제를 방지하려면 Fakes가 *.fakes* 파일을 추가할 때 프로젝트 이외 참조에 대해 버전 정규화된 Fakes 어셈블리 이름을 자동으로 만들어야 합니다. 버전 정규화된 Fakes 어셈블리 이름은 Fakes 어셈블리 이름을 만들 때 버전 번호를 포함합니다.
 
  어셈블리에 MyAssembly 및 버전 1.2.3.4를 지정하는 경우 Fakes 어셈블리 이름은 MyAssembly.1.2.3.4.Fakes입니다.
 
- 이 버전은 .fakes에서 어셈블리 요소의 버전 특성을 편집하여 변경하거나 제거할 수 있습니다.
+ 이 버전은 *.fakes*에서 어셈블리 요소의 버전 특성을 편집하여 변경하거나 제거할 수 있습니다.
 
 ```xml
 attribute of the Assembly element in the .fakes:

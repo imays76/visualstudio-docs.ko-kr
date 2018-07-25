@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b26b89232b0a0c1c01c6e3c5fe5cbca8cdb3eb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238162"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile` 메서드는 .vsp 파일에 프로필 표시를 삽입합니다. 해당 표시를 삽입하려면 `MarkProfile` 함수를 포함하는 스레드에 대한 프로파일링이 ON이어야 합니다.  
+`MarkProfile` 메서드는 .*vsp* 파일에 프로필 표시를 삽입합니다. 해당 표시를 삽입하려면 `MarkProfile` 함수를 포함하는 스레드에 대한 프로파일링이 ON이어야 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,9 +47,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|MARK_OK는 성공을 나타내기 위해 반환됩니다.|  
   
 ## <a name="remarks"></a>설명  
- MarkProfile 함수를 포함하는 스레드가 프로파일링되면 코드가 실행될 때마다 .vsp 파일에 표시 값이 삽입됩니다. MarkProfile을 여러 번 호출할 수 있습니다.  
+ MarkProfile 함수를 포함하는 스레드가 프로파일링되면 코드가 실행될 때마다 .*vsp* 파일에 표시 값이 삽입됩니다. MarkProfile을 여러 번 호출할 수 있습니다.  
   
- 프로필 표시는 범위 내에서 전역입니다. 예를 들어 한 스레드에 삽입된 프로필 표시를 사용하여 .vsp 파일의 스레드에 있는 데이터 세그먼트의 시작이나 끝을 표시할 수 있습니다.  
+ 프로필 표시는 범위 내에서 전역입니다. 예를 들어 한 스레드에 삽입된 프로필 표시를 사용하여 .*vsp* 파일의 스레드에 있는 데이터 세그먼트의 시작이나 끝을 표시할 수 있습니다.  
   
  표시 및 주석을 Mark 명령 또는 API 함수(CommentMarkAtProfile, CommentMarkProfile 또는 MarkProfile)를 사용하여 삽입한 경우 표시 프로필 함수를 포함하는 스레드의 프로파일링 상태는 ON입니다.  
   
@@ -56,12 +57,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 >  MarkProfile 메서드는 계측 프로파일링에서만 사용해야 합니다.  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>함수 정보  
- 헤더: VSPerf.h에서 선언됨  
+ 헤더: *VSPerf.h*에서 선언됨  
   
- 가져오기 라이브러리: VSPerf.lib  
+ 가져오기 라이브러리: *VSPerf.lib*  
   
 ## <a name="example"></a>예  
  다음 코드에서는 MarkProfile 함수를 보여 줍니다.  

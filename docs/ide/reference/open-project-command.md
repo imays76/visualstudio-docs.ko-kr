@@ -6,6 +6,7 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
+- file.opensolution
 helpviewer_keywords:
 - op command
 - File.OpenProject command
@@ -16,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6663ef73f87ea0fa80eb16a3deef6765265882db
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704134"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924150"
 ---
 # <a name="open-project-command"></a>프로젝트 열기 명령
-기존 프로젝트를 엽니다.
+
+기존 프로젝트 또는 솔루션을 엽니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,19 +35,23 @@ File.OpenProject filename
 ```
 
 ## <a name="arguments"></a>인수
- `filename`
 
- 필수. 열 프로젝트의 전체 경로와 파일 이름입니다.
+`filename`
 
- `filename` 인수 구문에서 공백을 포함하는 경로에는 따옴표를 사용해야 합니다.
+필수. 열려는 프로젝트 또는 솔루션의 전체 경로와 파일 이름입니다.
+
+> [!NOTE]
+> `filename` 인수 구문에서 공백을 포함하는 경로에는 따옴표를 사용해야 합니다.
 
 ## <a name="remarks"></a>설명
- 입력 시 자동 완성에서 올바른 경로와 파일 이름을 찾으려고 합니다.
 
- 디버깅 중에는 이 명령을 사용할 수 없습니다.
+입력 시 자동 완성에서 올바른 경로와 파일 이름을 찾으려고 합니다.
+
+디버깅 중에는 이 명령을 사용할 수 없습니다.
 
 ## <a name="example"></a>예
- 이 예제는 Test1이라는 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 프로젝트를 엽니다.
+
+다음 예제에서는 Visual Basic 프로젝트 **Test1**을 엽니다.
 
 ```cmd
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"

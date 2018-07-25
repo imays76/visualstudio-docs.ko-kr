@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2da34d180a59212b171e484129df27d94f580a1a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924546"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978179"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 
@@ -115,7 +115,7 @@ ms.locfileid: "31924546"
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-페이지나 페이지의 특정 영역을 스크롤할 수 있습니다. **ScrollViewer**에 개체를 하나만 추가할 수 있으므로 **Grid** 또는 **StackPanel** 등과 같은 레이아웃 패널을 추가합니다.
+사용자가 페이지나 페이지의 특정 영역을 스크롤할 수 있습니다. **ScrollViewer**에 개체를 하나만 추가할 수 있으므로 **Grid** 또는 **StackPanel** 등과 같은 레이아웃 패널을 추가합니다.
 
 ![ScrollViewer 레이아웃 컨트롤](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 

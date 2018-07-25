@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978920"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117799"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio에서 Live Unit Testing 시작
 
@@ -41,7 +41,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
 솔루션은 하나 이상의 프로젝트에 대한 컨테이너일 뿐입니다. 솔루션을 만들려면 Visual Studio 2017을 열고 다음을 수행합니다.
 
-1. 최상위 Visual Studio 메뉴에서 **파일**, **새로 만들기**, **프로젝트**를 선택합니다.
+1. 최상위 Visual Studio 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
 1. **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 노드를 확장하고 **Visual Studio 솔루션**을 선택합니다. 오른쪽 창의 **빈 솔루션** 템플릿을 선택하고 다음 그림과 같이 **이름** 텍스트 상자에 `UtilityLibraries`를 입력합니다.
 
@@ -52,7 +52,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 이제 솔루션을 만들었으므로 문자열 작업을 위한 여러 가지 확장 메서드가 포함된 `StringLibrary`라는 클래스 라이브러리를 만듭니다.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**, **새 프로젝트**를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
 1. **새 프로젝트 추가** 대화 상자에서 C# 노드를 선택한 후 **.NET Standard**를 선택합니다.
 
@@ -80,7 +80,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 1.  최상위 Visual Studio 메뉴에서 **빌드**, **솔루션 빌드**를 선택합니다. Visual Studio에서 라이브러리가 성공적으로 빌드됩니다.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**, **새 프로젝트**를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
 1. **새 프로젝트 추가** 대화 상자에서 Visual Basic 노드를 선택한 후 **.NET Standard**를 선택합니다.
 
@@ -118,7 +118,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 다음 단계는 `StringLibrary` 라이브러리를 테스트하기 위한 단위 테스트 프로젝트를 만드는 것입니다. 다음 단계를 수행하여 단위 테스트를 만듭니다.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**, **새 프로젝트**를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
 1. **새 프로젝트 추가** 대화 상자에서 C# 노드를 선택한 후 **.NET Core**를 선택합니다.
 
@@ -156,7 +156,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**, **새 프로젝트**를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
 1. **새 프로젝트 추가** 대화 상자에서 Visual Basic 노드를 선택한 후 **.NET Core**를 선택합니다.
 

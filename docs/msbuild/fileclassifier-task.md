@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a754f5aef53eed581deb9ccafa0bf5c453d8086d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6533154b81afb96ab6874c686f0c85000ae3fef1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568352"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946721"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 작업
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> 작업은 소스 리소스 집합을 어셈블리에 포함될 항목으로 분류합니다. 리소스를 지역화할 수 없는 경우 주 응용 프로그램 어셈블리에 포함되고, 그렇지 않으면 위성 어셈블리에 포함합니다.  

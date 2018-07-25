@@ -23,18 +23,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396253865e01ddfe5566e6cd97424af644bd9246
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0b668e2a5f63011730cb731a4966df0bccd4721e
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578057"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946003"
 ---
 # <a name="cl-task"></a>CL 작업
-Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행(.exe) 파일, 동적 연결 라이브러리(.dll) 파일 또는 코드 모듈(.netmodule) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.  
+Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행(*.exe*) 파일, 동적 연결 라이브러리(*.dll*) 파일 또는 코드 모듈(*.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.  
   
 ## <a name="parameters"></a>매개 변수  
- 다음 표에서는 **CL** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.  
+ 다음 목록에서는 **CL** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.  
   
 -   **AdditionalIncludeDirectories**  
   
@@ -48,7 +48,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      선택적 문자열 매개 변수입니다.  
   
-     명령줄 옵션의 목록입니다. 예를 들어 "/*option1* /*option2* /*option#*"과 같습니다. 이 매개 변수를 사용하여 다른 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.  
+     명령줄 옵션의 목록입니다. 예: “/\<option1> /\<option2> /\<option#>”. 이 매개 변수를 사용하여 다른 작업 매개 변수로 표현되지 않는 명령줄 옵션을 지정합니다.  
   
      자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.  
   
@@ -114,7 +114,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      `true`인 경우 찾아보기 정보 파일을 만듭니다.  
   
-     자세한 내용은 [/FR, /Fr(.Sbr 파일 만들기)](/cpp/build/reference/fr-fr-create-dot-sbr-file)의 **/FR** 옵션을 참조하세요.  
+     자세한 내용은 [/FR, /Fr(.sbr 파일 만들기)](/cpp/build/reference/fr-fr-create-dot-sbr-file)의 **/FR** 옵션을 참조하세요.  
   
 -   **BrowseInformationFile**  
   
@@ -122,7 +122,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      찾아보기 정보 파일에 대한 파일 이름을 지정합니다.  
   
-     자세한 내용은 이 표의 **BrowseInformation** 매개 변수를 참조하고 [/FR, /Fr(.Sbr 파일 만들기)](/cpp/build/reference/fr-fr-create-dot-sbr-file)도 참조하세요.  
+     자세한 내용은 이 표의 **BrowseInformation** 매개 변수를 참조하고 [/FR, /Fr(.sbr 파일 만들기)](/cpp/build/reference/fr-fr-create-dot-sbr-file)도 참조하세요.  
   
 -   **BufferSecurityCheck**  
   
@@ -202,7 +202,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      선택적 문자열 매개 변수입니다.  
   
-     프로그램용으로 생성되는 디버깅 정보 형식과 이 정보를 개체(.obj) 파일에 유지할지 아니면 프로그램 데이터베이스(PDB)에 유지할지를 선택합니다.  
+     프로그램용으로 생성되는 디버깅 정보 형식과 이 정보를 개체(*.obj*) 파일에 유지할지 아니면 프로그램 데이터베이스(PDB)에 유지할지를 선택합니다.  
   
      각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
@@ -380,9 +380,9 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      선택적 `Boolean` 매개 변수입니다.  
   
-     `true`인 경우 컴파일러가 소스 코드 파일의 문서 주석을 처리하고 문서 주석이 포함된 각 소스 코드 파일에 대한 .xdc 파일을 만들도록 합니다.  
+     `true`인 경우 컴파일러가 소스 코드 파일의 문서 주석을 처리하고 문서 주석이 포함된 각 소스 코드 파일에 대한 *.xdc* 파일을 만들도록 합니다.  
   
-     자세한 내용은 [/doc(문서 주석 처리)(C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp)를 참조하세요. 또한 이 표의 **XMLDocumentationFileName** 매개 변수도 참조하세요.  
+     자세한 내용은 [/doc(문서 주석 처리) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp)를 참조하세요. 또한 이 표의 **XMLDocumentationFileName** 매개 변수도 참조하세요.  
   
 -   **IgnoreStandardIncludePath**  
   
@@ -452,7 +452,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      선택적 `Boolean` 매개 변수입니다.  
   
-     `true`인 경우 개체(.obj) 파일에서 기본 C 런타임 라이브러리 이름을 생략합니다. 기본적으로 컴파일러는 올바른 라이브러리로 링커를 보내기 위해 라이브러리 이름을 .obj 파일에 넣습니다.  
+     `true`인 경우 개체(*.obj*) 파일에서 기본 C 런타임 라이브러리 이름을 생략합니다. 기본적으로 컴파일러는 올바른 라이브러리로 링커를 보내기 위해 라이브러리 이름을 *.obj* 파일에 넣습니다.  
   
      자세한 내용은 [/Zl(기본 라이브러리 이름 생략)](/cpp/build/reference/zl-omit-default-library-name)를 참조하세요.  
   
@@ -494,7 +494,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      선택적 **문자열** 매개 변수입니다.  
   
-     빌드 중 미리 컴파일된 헤더(.pch) 파일을 만들거나 사용합니다.  
+     빌드 중 미리 컴파일된 헤더(*.pch*) 파일을 만들거나 사용합니다.  
   
      각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
@@ -520,7 +520,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      기본 경로 이름을 사용하는 대신 미리 컴파일된 헤더의 경로 이름을 지정합니다.  
   
-     자세한 내용은 [/Fp(.Pch 파일 이름 지정)](/cpp/build/reference/fp-name-dot-pch-file)를 참조하세요.  
+     자세한 내용은 [/Fp(.pch 파일 이름 지정)](/cpp/build/reference/fp-name-dot-pch-file)를 참조하세요.  
   
 -   **PreprocessKeepComments**  
   
@@ -536,7 +536,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      소스 파일에 대한 전처리 기호를 정의합니다.  
   
-     자세한 내용은 [/D(전처리기 정의)](/cpp/build/reference/d-preprocessor-definitions)를 참조하세요.  
+     자세한 내용은 [/D(전처리가 정의)](/cpp/build/reference/d-preprocessor-definitions)를 참조하세요.  
   
 -   **PreprocessOutput**  
   
@@ -558,7 +558,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      `true`인 경우 C 및 C++소스 파일을 전처리하고, 표준 출력 장치에 전처리된 파일을 복사합니다.  
   
-     자세한 내용은 [/EP(#line 지시문 없이 stdout으로 전처리)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives)를 참조하세요.  
+     자세한 내용은 [/EP(#line 지시문 없이 stdout로 전처리)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives)를 참조하세요.  
   
 -   **PreprocessToFile**  
   
@@ -666,7 +666,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      `true`인 경우 작업을 시작할 때 저작권과 버전 번호 메시지가 표시되지 않도록 합니다.  
   
-     자세한 내용은 [/nologo(시작 배너 표시 안 함)(C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp)를 참조하세요.  
+     자세한 내용은 [/nologo(시작 배너 표시 안 함) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp)를 참조하세요.  
   
 -   **TrackerLogDirectory**  
   
@@ -768,7 +768,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      생성된 XML 문서 파일의 이름을 지정합니다. 이 매개 변수는 파일 또는 디렉터리 이름일 수 있습니다.  
   
-     자세한 내용은 [/doc(문서 주석 처리)(C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp)의 `name` 인수를 참조하세요. 또한 이 표의 **GenerateXMLDocumentationFiles** 매개 변수도 참조하세요.  
+     자세한 내용은 [/doc(문서 주석 처리) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp)의 `name` 인수를 참조하세요. 또한 이 표의 **GenerateXMLDocumentationFiles** 매개 변수도 참조하세요.  
   
 -   **MinimalRebuildFromTracking**  
   
@@ -782,7 +782,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      *읽기 파일 추적 로그*를 나타내는 항목의 배열을 지정합니다.  
   
-     읽기 파일 추적 로그(.tlog)에는 작업에서 읽은 입력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.  
+     읽기 파일 추적 로그(*.tlog*)에는 작업에서 읽은 입력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.  
   
 -   **TLogWriteFiles**  
   
@@ -790,7 +790,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      *쓰기 파일 추적 로그*를 나타내는 항목의 배열을 지정합니다.  
   
-     쓰기 파일 추적 로그(.tlog)에는 작업에서 작성한 출력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.  
+     쓰기 파일 추적 로그(*.tlog*)에는 작업에서 작성한 출력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.  
   
 -   **TrackFileAccess**  
   

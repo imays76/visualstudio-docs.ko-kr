@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 02fd481455c5198a1d8ae0828072f8085d1d027a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0e5d3e501138ede3679214650e29d602a6b7cf94
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966162"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282833"
 ---
-# <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 추출 규칙 코딩
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 추출 규칙 코딩
 
 사용자 고유의 추출 규칙을 만들 수 있습니다. 이렇게 하려면 추출 규칙 클래스에서 사용자 고유의 규칙을 파생시킵니다. 추출 규칙은 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 기본 클래스에서 파생됩니다.
 

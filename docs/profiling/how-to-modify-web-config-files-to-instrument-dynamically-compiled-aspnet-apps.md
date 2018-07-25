@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336034"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844767"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>방법: 계측할 Web.Config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 응용 프로그램 프로파일링
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 계측 방법을 사용하여 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램에서 세부 타이밍 데이터, .NET 메모리 할당 데이터 및 .NET 개체 수명 데이터를 수집할 수 있습니다.  
   
- 이 항목에서는 web.config 구성 파일을 수정하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램의 계측 및 프로파일링을 사용하도록 설정하는 방법을 설명합니다.  
+ 이 항목에서는 *web.config* 구성 파일을 수정하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램의 계측 및 프로파일링을 사용하도록 설정하는 방법을 설명합니다.  
   
 > [!NOTE]
->  샘플링 프로파일링 방법을 사용할 경우 또는 미리 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 모듈을 계측하고자 할 경우 web.config 파일을 수정할 필요가 없습니다.  
+>  샘플링 프로파일링 방법을 사용할 경우 또는 미리 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 모듈을 계측하고자 할 경우 *web.config* 파일을 수정할 필요가 없습니다.  
   
- web.config 파일의 루트는 **configuration** 요소입니다. 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램을 계측 및 프로파일링하려면 다음 요소를 추가하거나 수정해야 합니다.  
+ *web.config* 파일의 루트는 **configuration** 요소입니다. 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램을 계측 및 프로파일링하려면 다음 요소를 추가하거나 수정해야 합니다.  
   
 -   **configuration/runtime/assemblyBinding/dependentAssembly** 요소 - 프로파일링을 제어하는 Microsoft.VisualStudio.Enterprise.ASPNetHelper 어셈블리를 식별합니다. **dependentAssembly** 요소에는 두 개의 자식 요소인 **assemblyIdentity** 및 **codeBase**가 포함됩니다.  
   
@@ -33,7 +33,7 @@ ms.locfileid: "34336034"
   
 -   프로파일링 도구의 위치를 식별하는 두 개의 **add** 요소가 **configuration/appSettings** 섹션에 추가됩니다.  
   
- 응용 프로그램 구성을 복원하는 데 사용할 수 있는 원래 web.config 파일의 복사본을 만드는 것이 좋습니다.  
+ 응용 프로그램 구성을 복원하는 데 사용할 수 있는 원래 *web.config* 파일의 복사본을 만드는 것이 좋습니다.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>ASPNetHelper 어셈블리를 configuration/runtime/assemblyBinding/dependentAssembly 요소로 추가하려면  
   
@@ -176,7 +176,7 @@ ms.locfileid: "34336034"
 ```  
   
 ## <a name="example"></a>예  
- 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램의 계측 및 프로파일링을 사용하도록 설정하는 전체 web.config 파일은 다음과 같습니다. 이 예제에서는 수정하기 전에 파일에 다른 설정이 없었다고 가정합니다.  
+ 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램의 계측 및 프로파일링을 사용하도록 설정하는 전체 *web.config* 파일은 다음과 같습니다. 이 예제에서는 수정하기 전에 파일에 다른 설정이 없었다고 가정합니다.  
   
 ```xml  
 <?xml version="1.0"?>  

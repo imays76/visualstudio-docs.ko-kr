@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: af2074770a97dbef1f9c8598ec8b6560bdd7f344
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88387485b952bf201a222741a6b3d02861df186c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235530"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio용 R 도구 시작
 
@@ -23,8 +24,8 @@ RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for
 ## <a name="create-an-r-project"></a>R 프로젝트 만들기
 
 1. Visual Studio를 시작합니다.
-1. **파일 > 새로 만들기 > 프로젝트...** 를 선택합니다. (Ctrl+Shift+N)
-1. **템플릿 > R** 아래에서 “R 프로젝트”를 선택하고, 프로젝트의 이름과 위치를 입력한 후 **확인**을 선택합니다.
+1. **파일** > **새로 만들기** > **프로젝트**(**Ctrl**+**Shift**+**N**) 선택
+1. **템플릿** > **R** 아래에서 “R 프로젝트”를 선택하고, 프로젝트의 이름과 위치를 입력한 후 **확인**을 선택합니다.
 
    ![Visual Studio의 R(VS2017의 RTVS)에 대한 새 프로젝트 대화 상자](media/getting-started-01-new-project.png)
 
@@ -35,11 +36,11 @@ RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for
     - 왼쪽 아래에 있는 **R 대화형** 창에서는 대화형으로 코드를 개발 및 테스트할 수 있습니다.
 
 > [!Note]
-> 프로젝트를 열 필요 없이 다른 프로젝트 형식이 로드된 경우에도 **R 대화형** 창을 사용할 수 있습니다. 언제든지 **R 도구 > 창 > R 대화형**을 선택하면 됩니다.
+> 프로젝트를 열 필요 없이 다른 프로젝트 형식이 로드된 경우에도 **R 대화형** 창을 사용할 수 있습니다. 언제든지 **R 도구** > **창** > **R 대화형**을 선택하면 됩니다.
 
 ## <a name="explore-the-interactive-window-and-intellisense"></a>대화형 창 및 IntelliSense 살펴보기
 
-1. `3 + 4`를 입력하여 대화형 창이 작동하는지 테스트하고 Enter 키를 눌러 결과를 확인합니다.
+1. `3 + 4`를 입력하여 대화형 창이 작동하는지 테스트한 다음, **Enter**를 눌러 결과를 확인합니다.
 
     ![Visual Studio 2017(VS2017)의 R 대화형 창](media/getting-started-02-interactive1.png)
 
@@ -47,7 +48,7 @@ RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for
 
     ![Visual Studio의 R에 대한 추가 대화형 예제](media/getting-started-03-interactive2.png)
 
-1. `mean(ds)`을 입력하지만 `m` 또는 `me`를 입력하자마자 Visual Studio IntelliSense에서 자동 완성 옵션을 제공합니다. 목록에서 원하는 완성이 선택되면 Tab 키를 눌러 완성을 삽입합니다. 화살표 키 또는 마우스를 사용하여 선택을 변경할 수 있습니다.
+1. `mean(ds)`을 입력하지만 `m` 또는 `me`를 입력하자마자 Visual Studio IntelliSense에서 자동 완성 옵션을 제공합니다. 목록에서 원하는 완성이 선택되면 **Tab**을 눌러 완성을 삽입합니다. 화살표 키 또는 마우스를 사용하여 선택을 변경할 수 있습니다.
 
     ![코드를 입력할 때 나타나는 IntelliSense](media/getting-started-04-intellisense1.png)
 
@@ -71,7 +72,7 @@ RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for
 
 대화형 창에서 잠시 작업하면 코드 편집기에서도 작동하는 IntelliSense 등의 기본 편집 기능을 확인할 수 있습니다. 이전과 같은 코드를 입력하면 동일한 자동 완성 및 IntelliSense 프롬프트가 표시되지만 출력은 표시되지 않습니다.
 
-`.R` 파일에 코드를 작성하면 모든 코드를 한 번에 확인할 수 있고, 사소한 변경을 수행한 다음 대화형 창에서 코드를 실행하여 결과를 빠르게 확인하기가 더 쉽습니다. 프로젝트에 원하는 개수만큼 파일을 포함할 수도 있습니다. 코드가 파일에 있으면 디버거에서 코드를 단계별로 실행할 수도 있습니다(이 문서의 뒷부분에서 설명). 이러한 기능은 계산 알고리즘을 개발하고 코드를 작성하여 하나 이상의 데이터 집합을 조작할 경우, 특히 모든 중간 결과를 조사하려는 경우에 유용합니다.
+*.R* 파일에 코드를 작성하면 모든 코드를 한 번에 확인할 수 있고, 사소한 변경을 수행한 다음, 대화형 창에서 코드를 실행하여 결과를 빠르게 확인하기가 더 쉽습니다. 프로젝트에 원하는 개수만큼 파일을 포함할 수도 있습니다. 코드가 파일에 있으면 디버거에서 코드를 단계별로 실행할 수도 있습니다(이 문서의 뒷부분에서 설명). 이러한 기능은 계산 알고리즘을 개발하고 코드를 작성하여 하나 이상의 데이터 집합을 조작할 경우, 특히 모든 중간 결과를 조사하려는 경우에 유용합니다.
 
 예제와 같이 다음 단계에서는 간단한 코드를 만들어 [중심 극한 정리](https://en.wikipedia.org/wiki/Central_limit_theorem)(Wikipedia)를 살펴봅니다. 이 예제는 Paul Teetor에 의해 *R Cookbook*에서 변형되었습니다.
 
@@ -85,14 +86,14 @@ RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for
     plot(density(pop), main = "Population Density", xlab = "X", ylab = "")
     ```
 
-1. 결과를 빠르게 확인하려면 모든 코드를 선택하고(Ctrl+A), Ctrl+Enter를 누르거나 마우스 오른쪽 단추를 클릭하고 **대화형으로 실행**을 선택합니다. 선택한 모든 코드가 직접 입력한 것처럼 대화형 창에서 실행되고 결과가 플롯 창에 표시됩니다.
+1. 결과를 빠르게 확인하려면 모든 코드를 선택(**Ctrl**+**A**)한 다음, **Ctrl**+**Enter**를 누르거나 마우스 오른쪽 단추를 클릭하고 **대화형으로 실행**을 선택합니다. 선택한 모든 코드가 직접 입력한 것처럼 대화형 창에서 실행되고 결과가 플롯 창에 표시됩니다.
 
     ![Visual Studio의 플롯 표시](media/getting-started-08-plot1.png)
 
-1. 한 줄의 경우 언제든지 Ctrl+Enter만 누르면 대화형 창에서 해당 줄이 실행됩니다.
+1. 한 줄의 경우 언제든지 **Ctrl**+**Enter**만 누르면 대화형 창에서 해당 줄이 실행됩니다.
 
 > [!Tip]
-> 편집하고 Ctrl+Enter를 눌러(또는 Ctrl+A로 모든 내용을 선택하고 Ctrl+Enter를 눌러) 코드를 빠르게 실행하는 패턴을 알아봅니다. 이 방법은 같은 작업에 마우스를 사용하는 것보다 훨씬 더 효율적입니다.
+> 편집하고 **Ctrl**+**Enter**를 눌러(또는 **Ctrl**+**A**로 모든 내용을 선택한 다음, **Ctrl**+**Enter**를 누름) 코드를 빠르게 실행하는 패턴을 알아봅니다. 이 방법은 같은 작업에 마우스를 사용하는 것보다 훨씬 더 효율적입니다.
 > 
 > 또한 Visual Studio 프레임에서 플롯 창을 끌어서 놓고 디스플레이에서 필요할 때마다 다른 곳에 배치할 수 있습니다. 그런 다음 플롯 창을 원하는 크기로 조정하고 이미지 또는 PDF 파일에 저장할 수 있습니다.
 
@@ -104,7 +105,7 @@ RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for
     lines(density(samp.means))
     ```
 
-1. Ctrl+A 및 Ctrl+Enter를 다시 눌러 코드를 실행하고 다음 결과를 생성합니다.
+1. **Ctrl**+**A** 및 **Ctrl**+**Enter**를 다시 눌러 코드를 실행하고 다음 결과를 생성합니다.
 
     ![Visual Studio의 업데이트된 이중 플롯](media/getting-started-09-plot2.png)
 
@@ -126,23 +127,23 @@ RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for
     lines(density(samp.means))
     ```
 
-1. Ctrl+A 및 Ctrl+Enter를 다시 누르면 결과가 표시됩니다.
+1. **Ctrl**+**A** 및 **Ctrl**+**Enter**를 다시 누르면 결과가 표시됩니다.
 
     ![제대로 크기 조정된 Visual Studio의 업데이트된 이중 플롯](media/getting-started-10-plot3.png)
 
-편집기에서 더 많은 작업을 수행할 수 있습니다. 자세한 내용은 [편집 코드](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md) 및 [코드 조각](code-snippets-for-r.md)을 참조하세요.
+편집기에서 더 많은 작업을 수행할 수 있습니다. 자세한 내용은 [편집 R 코드](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md) 및 [코드 조각](code-snippets-for-r.md)을 참조하세요.
 
-## <a name="debugging-your-code"></a>코드 디버그
+## <a name="debug-your-code"></a>코드 디버그
 
-Visual Studio의 키 수준 중 하나는 디버깅 UI입니다. RTVS는 이 강력한 기초 위에 빌드되고 [변수 탐색기 및 데이터 테이블 뷰어](variable-explorer.md)와 같은 혁신적인 UI를 추가합니다. 여기서 디버깅의 개요를 살펴보겠습니다.
+Visual Studio의 키 수준 중 하나는 디버깅 UI입니다. RTVS는 이 강력한 기초 위에 빌드되고 [변수 탐색기](variable-explorer.md)와 같은 혁신적인 UI를 추가합니다. 여기서 디버깅의 개요를 살펴보겠습니다.
 
-1. 시작하려면 **R 도구 > 세션 > 다시 설정** 메뉴 명령을 통해 현재 작업 영역을 다시 설정하여 지금까지 수행한 모든 작업을 지웁니다. 기본적으로 대화형 창에서 수행한 모든 작업은 현재 세션에서 생성된 후 디버거에서 사용됩니다. 세션을 다시 설정하면 디버깅 세션이 기존 데이터 없이 시작됩니다. 그러나 **다시 설정** 명령은 `script.R` 소스 파일에 영향을 주지 않습니다. 소스 파일이 작업 영역 외부에서 관리 및 저장되기 때문입니다.
+1. 시작하려면 **R 도구** > **세션** > **다시 설정** 메뉴 명령을 통해 현재 작업 영역을 다시 설정하여 지금까지 수행한 모든 작업을 지웁니다. 기본적으로 대화형 창에서 수행한 모든 작업은 현재 세션에서 생성된 후 디버거에서 사용됩니다. 세션을 다시 설정하면 디버깅 세션이 기존 데이터 없이 시작됩니다. 그러나 **다시 설정** 명령은 *script.R* 원본 파일에 영향을 주지 않습니다. 소스 파일이 작업 영역 외부에서 관리 및 저장되기 때문입니다.
 
-1. 이전 섹션에서 생성된 `script.R` 파일을 사용하여 `pop <-`로 시작하는 줄에 캐럿을 배치하고 F9 키를 누르거나 **디버그 > 중단점 설정/해제** 메뉴 명령을 선택하여 해당 줄에서 중단점을 설정합니다. 또는 빨간색 중단점이 나타나는 줄의 왼쪽 여백을 클릭하면 됩니다.
+1. 이전 섹션에서 생성된 *script.R* 파일을 사용하여 `pop <-`로 시작하는 줄에 캐럿을 배치한 다음, **F9**를 누르거나 **디버그** > **중단점 설정/해제** 메뉴 명령을 선택하여 해당 줄에서 중단점을 설정합니다. 또는 빨간색 중단점이 나타나는 줄의 왼쪽 여백을 클릭하면 됩니다.
 
     ![편집기에서 중단점 설정](media/getting-started-11-debug1.png)
 
-1. 도구 모음에서 **소스 시작 파일** 단추를 선택하거나, **디버그 > 소스 시작 파일** 메뉴 항목을 선택하거나, F5 키를 눌러 `script.R`의 코드를 사용하여 디버거를 시작합니다. Visual Studio가 디버깅 모드로 전환되고 코드 실행이 시작됩니다. 하지만 코드는 중단점을 설정한 줄에서 중지합니다.
+1. 도구 모음에서 **소스 시작 파일** 단추를 선택하거나, **디버그** > **소스 시작 파일** 메뉴 항목을 선택하거나, **F5**를 눌러 *script.R*의 코드를 사용하여 디버거를 시작합니다. Visual Studio가 디버깅 모드로 전환되고 코드 실행이 시작됩니다. 하지만 코드는 중단점을 설정한 줄에서 중지합니다.
 
     ![Visual Studio 디비거의 중단점에서 중지](media/getting-started-12-debug2.png)
 
@@ -150,7 +151,7 @@ Visual Studio의 키 수준 중 하나는 디버깅 UI입니다. RTVS는 이 강
 
     ![Visual Studio의 디버그 도구 모음](media/getting-started-13-debug3.png)
 
-1. 중단점에서 중지한 경우 변수 값을 검사할 수 있습니다. Visual Studio에서 **자동** 창을 찾고 아래쪽 가장자리에 있는 **로컬**이라는 탭을 선택합니다. **로컬** 창에는 프로그램의 현재 지점에 있는 로컬 변수가 표시됩니다. 이전에 설정한 중단점에서 중지된 경우 `pop` 변수가 아직 정의되지 않은 것으로 표시됩니다. 이제 **디버그 > 프로시저 단위 실행** 명령(F10 키)을 사용하면 `pop` 값이 나타납니다.
+1. 중단점에서 중지한 경우 변수 값을 검사할 수 있습니다. Visual Studio에서 **자동** 창을 찾고 아래쪽 가장자리에 있는 **로컬**이라는 탭을 선택합니다. **로컬** 창에는 프로그램의 현재 지점에 있는 로컬 변수가 표시됩니다. 이전에 설정한 중단점에서 중지된 경우 `pop` 변수가 아직 정의되지 않은 것으로 표시됩니다. 이제 **디버그** > **프로시저 단위 실행** 명령(**F10**)을 사용하면 `pop`의 값이 나타납니다.
 
     ![Visual Studio의 로컬 창](media/getting-started-14-debug4.png)
 
@@ -158,7 +159,7 @@ Visual Studio의 키 수준 중 하나는 디버깅 UI입니다. RTVS는 이 강
 
     ![변수 탐색기의 확장된 보기](media/variable-explorer-expanded-results.png)
 
-1. 계속해서 프로그램을 한 줄씩 단계별로 실행하거나 **계속**(F5)을 선택하여 완료될 때까지(또는 다음 중단점까지) 실행할 수 있습니다.
+1. 계속해서 프로그램을 한 줄씩 단계별로 실행하거나 **계속**(**F5**)을 선택하여 완료될 때까지(또는 다음 중단점까지) 실행할 수 있습니다.
 
 자세한 내용은 [디버깅](debugging-r-in-visual-studio.md) 및 [변수 탐색기](variable-explorer.md)를 참조하세요.
 

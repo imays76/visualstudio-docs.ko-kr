@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f9813ce610979cd50a1ced7f510240299a612
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3bb1c2f43504a89ede3e9ad9e6f13c05130c9c34
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575795"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303055"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>연습: 인라인 작업 만들기
 MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 자세한 내용은 [인라인 작업](../msbuild/msbuild-inline-tasks.md)을 참조하세요.  
@@ -65,7 +65,9 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
 1.  루트 `Project` 노드에서 `DefaultTargets` 특성을 `TestBuild`로 변경합니다. 결과 `Project` 노드는 다음 예제와 비슷합니다.  
   
-     `<Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">`  
+    ```xml
+    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    ```
   
 2.  다음 인라인 작업 및 대상을 프로젝트 파일에서 `</Project>` 태그 바로 앞에 추가합니다.  
   
@@ -225,9 +227,13 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
 3.  **명령 프롬프트 창**에서 출력을 검토합니다. 다음 줄이 표시됩니다.  
   
-     `Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
-     `Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs`  
+    ```
+    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+    ```  
   
  이 코드는 RegX로 지칭되고 다음과 같은 세 개의 매개 변수를 갖는 인라인 작업을 정의합니다.  
   
@@ -242,16 +248,16 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 ### <a name="handling-reserved-characters"></a>예약된 문자 처리  
  MSBuild 파서는 인라인 작업을 XML로 처리합니다. XML에서 예약된 의미를 갖는 문자(예: "\<" 및 ">")는 검색된 후 .NET 소스 코드가 아니라 마치 XML인 것처럼 처리됩니다. `Files.Length > 0`과 같은 코드 식에 예약된 문자를 포함하려면 다음과 같이 해당 콘텐츠가 CDATA 식에 포함되도록 `Code` 요소를 씁니다.  
   
- `<Code Type="Fragment" Language="cs">`  
+ ```xml
+<Code Type="Fragment" Language="cs">  
+  <![CDATA[  
   
- `<![CDATA[`  
+  // Your code goes here.  
   
- `// Your code goes here.`  
-  
- `]]>`  
-  
- `</Code>`  
-  
+  ]]>  
+</Code>  
+```  
+
 ## <a name="see-also"></a>참고 항목  
  [인라인 작업](../msbuild/msbuild-inline-tasks.md)   
  [작업](../msbuild/msbuild-tasks.md)   

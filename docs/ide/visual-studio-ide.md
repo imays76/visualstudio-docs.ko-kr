@@ -13,78 +13,96 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a7667cac2a26a3e98d2e92dfeb13cee36d870e9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 38491757da5010d015553f1d3c562e27914b28a9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691162"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078981"
 ---
-# <a name="visual-studio-ide-overview"></a>Visual Studio IDE 개요
+# <a name="visual-studio-overview"></a>Visual Studio 개요
 
-Visual Studio IDE(대화형 개발 환경)는 코드를 보고 편집한 다음, 앱을 디버그, 빌드 및 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다.
+Visual Studio *대화형 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(대화형 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio에서는 대부분의 IDE가 제공하는 표준 편집기 및 디버거를 능가하여 컴파일러, 코드 완성 도구, 그래픽 디자이너 및 소프트웨어 개발 프로세스를 간편하게 하는 많은 기능을 포함합니다.
 
 Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2017과 동일한 기능이 많이 있으며 플랫폼 간 및 모바일 앱 개발을 위한 최적화되어 있습니다.
 
-이 문서에서는 Windows용 Visual Studio 2017에 대해 중점적으로 설명합니다. IDE의 기본 기능을 소개합니다. 간단한 프로젝트 만들기, 코딩 도구로 IntelliSense 사용, 앱을 디버깅하여 프로그램 실행 중 변수 값을 확인하는 방법 등 Visual Studio로 수행할 수 있는 몇 가지 작업을 살펴보겠습니다. 또한 다양한 도구 창을 살펴보겠습니다.
+이 문서에서는 Windows용 Visual Studio 2017에 대해 중점적으로 설명합니다. IDE의 기본 기능을 소개합니다. 간단한 프로젝트 만들기, 코딩 도구로 [IntelliSense](using-intellisense.md) 사용, 앱을 디버깅하여 프로그램 실행 중 변수 값을 확인하는 방법 등 Visual Studio로 수행할 수 있는 몇 가지 작업을 살펴보겠습니다. 또한 다양한 도구 창을 살펴보겠습니다.
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE 설치
 
-시작하려면 [Visual Studio 2017을 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)하여 시스템에 설치합니다.
+시작하려면 [Visual Studio 2017을 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)하여 시스템에 설치합니다.
 
-모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드*를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다. [Visual Studio에서 C++ 시작](getting-started-with-cpp-in-visual-studio.md)과 같은 빠른 시작 항목에는 다른 워크로드를 설치하는 방법에 대한 지침이 포함되어 있습니다.
+모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드*를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
 
-![Visual Studio 설치 관리자](../ide/media/overview-net-core-workload.png)
+![Visual Studio 설치 관리자에서 .NET Core 플랫폼 간 개발 워크로드](../ide/media/dotnet-core-cross-platform-workload.png)
 
-Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회사 또는 학교 계정으로 로그인할 수 있습니다.
+Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회사 또는 학교 계정으로 [로그인](signing-in-to-visual-studio.md)할 수 있습니다.
 
 ## <a name="tour-of-the-ide"></a>IDE 둘러보기
 
-다음 이미지에서는 Visual Studio에 대한 높은 수준의 시각적 개요를 제공하기 위해 열려 있는 프로젝트가 있는 Visual Studio와 가장 많이 사용하는 몇 가지 주요 도구 창을 보여 줍니다.
+다음 이미지에서는 Visual Studio에 대한 높은 수준의 시각적 개요를 제공하기 위해 열려 있는 프로젝트가 있는 Visual Studio와 많이 사용하는 몇 가지 주요 도구 창을 보여 줍니다.
 
 ![Visual Studio IDE](../ide/media/visualstudioide.png)
 
-- [솔루션 탐색기](../ide/solutions-and-projects-in-visual-studio.md) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. 솔루션 탐색기에서 파일을 솔루션 및 프로젝트로 그룹화하여 코드를 구성할 수 있습니다.
+- [**솔루션 탐색기**](../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](quickstart-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
 
-- 대부분의 시간을 보낼 가능성이 있는 [편집기](../ide/writing-code-in-the-code-and-text-editor.md) 창은 코드를 보여주고 이를 통해 소스 코드를 편집하고 UI를 디자인할 수 있습니다.
+- [편집기 창](../ide/writing-code-in-the-code-and-text-editor.md)(가운데) - 대부분 작업을 수행하는 곳으로 파일 콘텐츠가 표시됩니다. 코드를 편집하거나 단추 및 텍스트 상자를 사용하여 창과 같은 사용자 인터페이스를 디자인할 수 있습니다.
 
-- [출력 창](../ide/reference/output-window.md)에는 디버깅 및 오류 메시지, 컴파일러 경고, 게시 상태 메시지 등의 Visual Studio 알림이 표시됩니다. 각 메시지 원본에 해당하는 탭이 있습니다.
+- [출력 창](../ide/reference/output-window.md)(가운데 아래) - 디버깅 및 오류 메시지, 컴파일러 경고, 게시 상태 메시지 등의 Visual Studio 알림이 표시됩니다. 각 메시지 원본에 해당하는 탭이 있습니다.
 
-- [팀 탐색기(VSTS)](/vsts/user-guide/work-team-explorer) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/vsts/tfvc/overview) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
+- [팀 탐색기](/vsts/user-guide/work-team-explorer)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/vsts/tfvc/overview) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
 
-다음은 Visual Studio의 다른 인기 있는 생산성 기능입니다.
+### <a name="popular-productivity-features"></a>주요 생산성 향상 기능
 
-- [리팩터링](../ide/refactoring-in-visual-studio.md)에는 변수의 지능형 이름 바꾸기, 선택한 코드 줄을 별도 함수로 이동, 코드를 다른 위치로 이동, 함수 매개 변수 다시 정렬 등의 작업이 포함되어 있습니다.
+소프트웨어를 개발할 때 생산성을 높이는 데 도움이 되는 Visual Studio에서 인기 있는 기능 몇 가지는 다음과 같습니다.
 
-   ![리팩터링](../ide/media/VSIDE_refactor.png)
+- [리팩터링](../ide/refactoring-in-visual-studio.md)
 
-- [IntelliSense](../ide/using-intellisense.md) 는 편집기에서 직접 코드에 대한 형식 정보를 표시하고 경우에 따라 약간의 코드를 자동으로 작성하는 인기 있는 기능 집합에 대한 포괄적인 용어입니다. IntelliSense는 별도의 도움말 창에서 형식 정보를 조회할 필요가 없도록 기본 설명서를 편집기에 인라인으로 포함하는 것과 같습니다. IntelliSense 기능은 언어에 따라 달라집니다. 자세한 내용은 [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) 및 [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)를 참조하세요. 다음 그림에서는 일부 IntelliSense 기능의 작동을 보여 줍니다.
+   리팩터링에는 변수의 지능형 이름 바꾸기, 새 메서드로 코드 줄을 하나 이상 추출, 메서드 매개 변수의 순서 변경 등과 같은 작업이 포함됩니다.
 
-   ![Visual Studio 멤버 목록](../ide/media/vs2017_Intellisense.png)
+   ![Visual Studio에서 리팩터링](../ide/media/refactoring-menu.png)
 
-- [빠른 실행](../ide/reference/quick-launch-environment-options-dialog-box.md) 검색 상자는 Visual Studio에서 필요한 항목을 빠르게 찾을 수 있는 좋은 방법입니다. 찾으려는 이름을 입력하기만 하면 Visual Studio는 원하는 곳으로 정확하게 안내하는 결과를 나열합니다. **빠른 실행**은 작업 또는 개별 구성 요소에 대한 **Visual Studio 설치 관리자**를 시작하는 링크도 표시합니다.
+- [IntelliSense](../ide/using-intellisense.md)
 
-   ![빠른 실행 검색 상자](../ide/media/VSIDE_Tour_QuickLaunch.png)
+   IntelliSense는 편집기에서 직접 코드에 대한 정보를 표시하고 경우에 따라 약간의 코드를 자동으로 작성하는 기능 집합에 대한 포괄적인 용어입니다. IntelliSense는 다른 곳에서 형식 정보를 조회할 필요가 없도록 기본 설명서를 편집기에 인라인으로 포함하는 것과 같습니다. IntelliSense 기능은 언어에 따라 달라집니다. 자세한 내용은 [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) 및 [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)를 참조하세요. 다음 그림에서는 IntelliSense에서 형식에 대한 멤버 목록을 표시하는 방법을 보여 줍니다.
 
-- **오류 표시선**은 물결 모양의 밑줄이며, 입력할 때 코드의 오류 또는 잠재적인 문제를 실시간으로 알려줍니다. 이렇게 하면 컴파일 또는 런타임 중에 오류를 발견할 때까지 기다리지 않고 바로 수정할 수 있습니다. 오류 표시선 위로 마우스를 가져가면 오류에 대한 추가 정보가 표시됩니다. 오류를 수정하기 위한 작업과 함께 전구가 왼쪽 여백에 나타날 수도 있습니다. 자세한 내용은 [빠른 작업](../ide/quick-actions.md)을 참조하세요.
+   ![Visual Studio 멤버 목록](../ide/media/intellisense-list-members.png)
 
-   ![오류 표시선](../ide/media/vs2017_squiggle.png)
+- [빠른 실행](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
-- 텍스트 편집기의 상황에 맞는 메뉴에서 [호출 계층 구조](../ide/reference/call-hierarchy.md) 창을 열어 캐럿(삽입 지점) 아래에서 호출하는 메서드와 이 메서드로 호출되는 메서드를 표시할 수 있습니다.
+   Visual Studio는 메뉴, 옵션 및 속성이 매우 다양하여 때때로 버거울 수도 있습니다. **빠른 실행** 검색 상자는 Visual Studio에서 필요한 항목을 빠르게 찾을 수 있는 좋은 방법입니다. 찾으려는 이름을 입력하기만 하면 Visual Studio는 원하는 곳으로 정확하게 안내하는 결과를 나열합니다. 예를 들어 다른 프로그래밍 언어를 위한 지원을 추가하도록 Visual Studio에 기능을 추가하는 경우 **빠른 실행**을 사용하면 워크로드 또는 개별 구성 요소를 설치하도록 Visual Studio 설치 관리자가 열립니다.
 
-   ![호출 계층 구조 창](../ide/media/VSIDE_call_hierarchy.png)
+   ![Visual Studio의 빠른 실행 검색 상자](../ide/media/quick-launch-nuget.png)
 
-- [코드 렌즈](../ide/find-code-changes-and-other-history-with-codelens.md)를 사용하면 편집기 내에서 코드 참조, 코드 변경 내용, 연결된 버그, 작업 항목, 코드 검토 및 단위 테스트를 확인할 수 있습니다.
+- 오류 표시선 및 [빠른 작업](../ide/quick-actions.md)
+
+   오류 표시선은 물결 모양의 밑줄로, 입력할 때 코드의 오류 또는 잠재적인 문제를 알려줍니다. 이러한 시각적 단서를 사용하면 빌드하는 동안이나 프로그램을 실행할 때 오류가 검색될 때까지 기다리지 않고 즉시 문제를 해결할 수 있습니다. 오류 표시선 위로 마우스를 가져가면 오류에 대한 추가 정보가 표시됩니다. 오류를 수정하기 위한 작업(빠른 작업이라고 함)과 함께 전구가 왼쪽 여백에 나타날 수도 있습니다.
+
+   ![Visual Studio의 오류 표시선](../ide/media/squiggles-error.png)
+
+- [호출 계층 구조](../ide/reference/call-hierarchy.md)
+
+   **호출 계층 구조** 창은 선택한 메서드를 호출하는 방법을 보여 줍니다. 이는 메서드를 변경하거나 제거하려고 하거나 버그를 추적하려는 경우 유용한 정보가 됩니다.
+
+   ![호출 계층 구조 창](../ide/reference/media/call-hierarchy-csharp-expanded.png)
+
+- [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
+
+   CodeLens를 사용하면 편집기 내에서 코드 참조, 코드 변경 내용, 연결된 버그, 작업 항목, 코드 검토 및 단위 테스트를 확인할 수 있습니다.
 
    ![CodeLens](../ide/media/codelensoverview.png)
 
-- [정의 보기](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) 창은 현재 컨텍스트를 벗어나지 않고 메서드 또는 형식 정의를 인라인으로 표시합니다.
+- [정의로 이동](../ide/go-to-and-peek-definition.md)
 
-   ![정의 보기](../ide/media/VSIDE_peek_definition.png)
+  정의로 이동 기능은 함수 또는 형식이 정의된 위치로 직접 이동합니다.
 
-- [정의로 이동](../ide/go-to-and-peek-definition.md) 상황에 맞는 메뉴 옵션은 함수 또는 개체가 정의된 위치로 바로 이동합니다. 편집기에서 마우스 오른쪽 단추를 클릭하면 다른 탐색 명령도 사용할 수 있습니다.
+   ![정의로 이동](../ide/media/go-to-definition-menu.png)
 
-   ![정의로 이동](../ide/media/VSIDE_go_to_definition.png)
+- [정의 보기](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+
+   **정의 보기** 창은 실제로 개별 파일을 열지 않고 메서드 또는 형식의 정의 보여 줍니다.
+
+   ![정의 보기](../ide/media/peek-definition.png)
 
 ## <a name="create-a-program"></a>프로그램 만들기
 
@@ -92,24 +110,22 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
 1. Visual Studio를 엽니다. 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-  ![메뉴 모음의 파일 > 새 프로젝트](../ide/media/VSIDE_Tour_NewProject1.png)
+   ![메뉴 모음의 파일 > 새 프로젝트](../ide/media/file-new-project-menu.png)
 
 1. **새 프로젝트** 대화 상자에는 여러 프로젝트 *템플릿*이 표시됩니다. 템플릿에는 지정된 프로젝트 형식에 필요한 기본 파일과 설정이 포함되어 있습니다. **Visual C#** 에서 **.NET Core** 범주를 선택한 다음 **콘솔 앱(.NET Core)** 템플릿을 선택합니다. **이름** 텍스트 상자에 **HelloWorld**를 입력한 다음, **확인** 단추를 선택합니다.
 
-  ![.NET Core 앱 템플릿](../ide/media/overview-new-project-dialog.png)
+   ![.NET Core 앱 템플릿](../ide/media/overview-new-project-dialog.png)
 
-   Visual Studio가 프로젝트를 만듭니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 응용 프로그램입니다. 콘솔 창에 표시합니다.
+   Visual Studio가 프로젝트를 만듭니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 응용 프로그램입니다. 콘솔(프로그램 출력) 창에서
 
   > [!NOTE]
-  > **.NET Core** 범주가 표시되지 않으면 **.NET Core 플랫폼 간 개발** 워크로드를 설치해야 합니다. 이를 수행하려면 **새 프로젝트** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. **Visual Studio 설치 관리자**가 열리면 아래로 스크롤하여 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+  > **.NET Core** 범주가 표시되지 않으면 **.NET Core 플랫폼 간 개발** 워크로드를 설치해야 합니다. 이를 수행하려면 **새 프로젝트** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 열리면 아래로 스크롤하여 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
    잠시 후 다음과 같은 정보가 표시됩니다.
 
    ![Visual Studio IDE](../ide/media/overview-ide-console-app.png)
 
-   응용 프로그램의 C# 코드는 대부분의 공간을 차지하는 편집기 창에 표시됩니다. 텍스트는 지정된 색으로 자동으로 표시되어 다른 측면(예: 키워드 또는 형식)을 나타냅니다. 또한 코드에서 작은 세로 파선은 서로 일치하는 중괄호를 나타내며, 줄 번호는 나중에 코드를 찾는 데 도움이 됩니다. 작은 상자 안에 있는 빼기 기호를 선택하여 코드를 축소하거나 확장할 수 있습니다. 이 코드 개요 기능을 사용하면 필요 없는 코드를 숨길 수 있으므로 화면 상의 혼란을 최소화할 수 있습니다.
-
-   프로젝트 파일은 **솔루션 탐색기**라는 창의 오른쪽에 나열됩니다.
+   응용 프로그램의 C# 코드는 대부분의 공간을 차지하는 편집기 창에 표시됩니다. 텍스트는 지정된 색으로 자동으로 표시되어 다른 부분(예: 키워드 또는 형식)을 나타냅니다. 또한 코드에서 작은 세로 파선은 서로 일치하는 중괄호를 나타내며, 줄 번호는 나중에 코드를 찾는 데 도움이 됩니다. 작은 상자 안에 있는 빼기 기호를 선택하여 코드 블록을 축소하거나 확장할 수 있습니다. 이 코드 개요 기능을 사용하면 필요 없는 코드를 숨길 수 있으므로 화면 상의 혼란을 최소화할 수 있습니다. 프로젝트 파일은 **솔루션 탐색기**라는 창의 오른쪽에 나열됩니다.
 
   ![빨간색 상자가 있는 Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
 
@@ -158,7 +174,7 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
 1. `name` 변수를 두 번 클릭하여 선택합니다.
 
-1. 변수의 새 이름 `username`을 입력합니다.
+1. 변수의 새 이름 **username**을 입력합니다.
 
    변수 주위에 회색 상자가 나타나고 여백에 전구가 나타납니다.
 
@@ -206,7 +222,7 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
 ## <a name="debug-code"></a>코드 디버그
 
-코드를 작성할 때 코드를 실행하고 버그를 테스트해야 합니다. Visual Studio의 디버깅 시스템을 사용하면 코드를 단계별로 진행하면서 명령문을 한 번에 하나씩 실행하면서 변수를 검사할 수 있습니다. 지정된 조건이 true인 경우에만 적중되는 중단점을 설정할 수 있습니다. 코드 실행 등과 같은 변수 값을 모니터링할 수 있습니다.
+코드를 작성할 때 코드를 실행하고 버그를 테스트해야 합니다. Visual Studio의 디버깅 시스템을 사용하면 코드를 단계별로 진행하면서 명령문을 한 번에 하나씩 실행하면서 변수를 검사할 수 있습니다. 특정 줄에서 코드의 실행을 중지하는 *중단점*을 설정할 수 있습니다. 코드를 실행함에 따라 변수의 값이 변경되는 방법 등을 확인할 수 있습니다.
 
 중단점을 설정하여 프로그램이 "이동 중"일 때 `username` 변수의 값을 확인하겠습니다.
 
@@ -232,7 +248,7 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 
 ## <a name="customize-visual-studio"></a>Visual Studio 사용자 지정
 
-기본 색 테마 변경을 포함하여 IDE를 개인 설정할 수 있습니다. **어둡게** 테마로 변경하려면:
+기본 색 테마 변경을 비롯하여 Visual Studio 사용자 인터페이스를 꾸밀 수 있습니다. **어둡게** 테마로 변경하려면:
 
 1. 메뉴 모음에서 **도구** > **옵션**을 선택하여 **옵션** 대화 상자를 엽니다.
 
@@ -255,6 +271,6 @@ Android 또는 iOS 휴대폰용 앱을 만들고 싶으십니까? 3D 게임 또�
 ## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 추가 기능](../ide/advanced-feature-overview.md)
-* [www.visualstudio.com](https://www.visualstudio.com/vs/)
+* [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 * [Visual Studio 블로그](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+* [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

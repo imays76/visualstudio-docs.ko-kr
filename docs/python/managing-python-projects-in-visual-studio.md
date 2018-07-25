@@ -1,7 +1,7 @@
 ---
 title: Python 응용 프로그램 프로젝트 관리
 description: Visual Studio의 프로젝트 용도, Python 코드용 프로젝트를 만들고 관리하는 방법 및 Python에 사용할 수 있는 다양한 프로젝트 템플릿에 대해 설명합니다.
-ms.date: 03/05/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 7a4374a389176273f7ceaa63b680868fd546398e
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032192"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38778523"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio의 Python 프로젝트
 
@@ -63,7 +63,7 @@ Visual Studio는 처음부터 작성하거나 기존 코드에서 작성하는 �
 
 ![Python 템플릿이 있는 새 프로젝트 대화 상자](media/projects-new-project-dialog.png)
 
-다음 표에서는 Visual Studio 2017에서 사용 가능한 템플릿을 요약하여 보여줍니다(일부 템플릿만 이전 모든 버전에서 사용 가능).
+다음 표에서는 Visual Studio 2017에서 사용 가능한 템플릿을 요약하여 보여 줍니다(일부 템플릿만 이전 모든 버전에서 사용 가능).
 
 | 템플릿 | 설명 |
 | --- | --- |
@@ -109,7 +109,7 @@ Visual Studio는 처음부터 작성하거나 기존 코드에서 작성하는 �
 - 연결된 파일에는 프로젝트 계층 구조 외부 상대 경로인 링크 경로와 링크 메타데이터가 포함됩니다.
 - 링크 경로가 루트임
 
-### <a name="working-with-linked-files"></a>연결된 파일 작업
+### <a name="work-with-linked-files"></a>연결된 파일 작업
 
 기존 항목을 링크로 추가하려면 파일을 추가할 프로젝트에서 폴더를 마우스 오른쪽 단추로 클릭하고 **추가 > 기존 항목...** 을 선택합니다. 표시되는 대화 상자에서 파일을 선택하고 **추가** 단추의 드롭다운에서 **링크로 추가**를 선택합니다. 충돌하는 파일이 없다면 이 명령은 선택한 폴더에 링크를 만듭니다. 하지만 같은 이름의 파일이 이미 있거나 해당 파일에 대한 링크가 프로젝트에 이미 있는 경우 링크가 추가되지 않습니다.
 

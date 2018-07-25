@@ -10,17 +10,18 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3cc04188695daaf15821707350a84df9dfa5d891
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235439"
 ---
-# <a name="debugging-r-in-visual-studio"></a>Visual Studio에서 R 디버그
+# <a name="debug-r-in-visual-studio"></a>Visual Studio에서 R 디버그
 
 RTVS(Visual Studio용 R 도구)는 Visual Studio의 전체 디버깅 환경과 통합됩니다([Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md) 참조). 이러한 지원에는 중단점, 실행 중인 프로세스에 연결, 변수 검사 및 감시, 호출 스택 검사 등이 포함됩니다. 이 문서에서는 R 및 RTVS에 고유한 디버깅 측면을 살펴봅니다.
 
-R 프로젝트에서 시작 R 파일에 대한 디버거를 시작하는 방법은 다른 프로젝트 형식의 경우도 동일합니다. **디버그 > 디버깅 시작**, F5 키 또는 디버그 도구 모음의 **소스 시작 파일**을 사용합니다. 
+R 프로젝트에서 시작 R 파일에 대한 디버거를 시작하는 방법은 다른 프로젝트 형식의 경우도 동일합니다. **디버그** > **디버깅 시작**, **F5** 키 또는 디버그 도구 모음의 **소스 시작 파일**을 사용합니다. 
 
 ![R에 대한 디버거 시작 단추](media/debugger-start-button.png)
 
@@ -36,7 +37,7 @@ Sourcing: c:\proj\rproject1\rproject1\Settings.R
 
 `rtvs::debug_source` 함수를 사용하여 스크립트가 원본 제공되고 있음을 확인합니다. RTVS는 디버깅 준비 시 코드를 수정해야 하므로 이 함수가 필요합니다. RTVS 원본 제공 명령을 사용 중이며 디버거가 연결되어 있으면 Visual Studio에서 자동으로 `rtvs::debug_source`를 사용합니다.
 
-대화형 창의 도구 모음에서 **R 도구 > 세션 > 디버거 연결** 명령, **디버그 > R 대화형에 연결** 명령 또는 **디버거 연결** 명령을 사용하여 대화형 창에서 직접 디버거를 수동으로 연결할 수도 있습니다. 작업을 완료했으면 디버그할 파일을 원본 제공해야 합니다. 수동으로 파일을 원본 제공하려는 경우 R에서 일반적인 `source` 명령 대신 `rtvs::debug_source`를 사용해야 합니다.
+대화형 창의 도구 모음에서 **R 도구** > **세션** > **디버거 연결** 명령, **디버그** > **R 대화형에 연결** 명령 또는 **디버거 연결** 명령을 사용하여 대화형 창에서 직접 디버거를 수동으로 연결할 수도 있습니다. 작업을 완료했으면 디버그할 파일을 원본 제공해야 합니다. 수동으로 파일을 원본 제공하려는 경우 R에서 일반적인 `source` 명령 대신 `rtvs::debug_source`를 사용해야 합니다.
 
 디버거와 대화형 창 간의 이 연결을 통해 다양한 매개 변수 값을 사용한 함수 호출(및 디버그) 같은 작업을 더 쉽게 수행할 수 있습니다. 예를 들어 원본 제공된 파일에 다음과 같은 함수가 있다고 가정해 보겠습니다(세션으로 로드되었음을 의미함).
 

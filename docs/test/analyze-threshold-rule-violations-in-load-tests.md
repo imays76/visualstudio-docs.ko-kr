@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750911"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234987"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트에서 임계값 규칙 위반 분석
 
 임계값 규칙은 특정 성능 카운터와 연결되며, 위반이 발생하면 성능 카운터가 설정된 값을 초과하거나 이러한 값 아래로 떨어진 것입니다. 부하 테스트를 실행할 때 이전에 설정한 임계값 규칙에서 발생하는 위반을 분석할 수 있습니다.
 
-위반이 발생한 경우 부하 테스트 분석기의 상태 표시줄에 **임계값 위반** 하이퍼링크가 표시되고 발생한 위반 개수가 지정됩니다. 이 하이퍼링크를 선택하면 임계값 위반 테이블이 표시됩니다. **카운터** 창 및 그래프에서도 임계값 위반을 볼 수 있습니다.
+위반이 발생한 경우 **부하 테스트 분석기**의 상태 표시줄에 **임계값 위반** 하이퍼링크가 표시되고 발생한 위반 개수가 지정됩니다. 이 하이퍼링크를 선택하면 임계값 위반 테이블이 표시됩니다. **카운터** 창 및 그래프에서도 임계값 위반을 볼 수 있습니다.
 
 ## <a name="view-threshold-violations-in-the-table"></a>테이블에서 임계값 위반 보기
 

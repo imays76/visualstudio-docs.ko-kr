@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c55bd7be84b118f08fbedff1931c4517e963b5a7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9cbe01c15e9798a29d4832b8c189718d95cf5a0d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573567"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078994"
 ---
 # <a name="item-metadata-in-task-batching"></a>작업 일괄 처리의 항목 메타데이터
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에는 항목 목록을 항목 메타데이터에 따라 여러 다른 범주 또는 일괄 처리로 나누고 각 일괄 처리를 사용하여 한 번에 하나의 작업을 실행하는 기능이 있습니다. 어떤 항목이 어떤 일괄 처리를 통해 전달될지 정확히 이해하는 것은 어려울 수 있습니다. 이 항목에서는 일괄 처리와 관련된 다음과 같은 일반적인 시나리오를 다룹니다.  
@@ -32,10 +32,10 @@ ms.locfileid: "31573567"
 -   한 번에 하나씩 일괄 처리  
   
 -   항목 목록 필터링  
+
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 사용한 일괄 처리에 대한 자세한 내용은 [일괄 처리](../msbuild/msbuild-batching.md)를 참조하세요.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 사용한 일괄 처리에 대한 자세한 내용은 [일괄 처리](../msbuild/msbuild-batching.md)를 참조하세요.  
-  
-## <a name="dividing-an-item-list-into-batches"></a>하나의 항목 목록을 일괄 처리로 나누기  
+## <a name="divide-an-item-list-into-batches"></a>하나의 항목 목록을 일괄 처리로 나누기  
  일괄 처리를 사용하면 항목 목록이 항목 메타데이터에 따라 여러 다른 일괄 처리로 나뉜 후 각 일괄 처리가 따로 작업으로 전달될 수 있습니다. 이 방식은 위성 어셈블리를 빌드하는 데 유용합니다.  
   
  다음 예제에서는 항목 목록을 항목 메타데이터에 따라 일괄 처리로 나누는 방법을 보여 줍니다. `ExampColl` 항목 목록은 `Number` 항목 메타데이터에 따라 세 개의 일괄 처리로 나뉩니다. `Text` 특성에 `%(ExampColl.Number)`가 있으면 일괄 처리가 수행되어야 한다는 알림이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 제공됩니다. `ExampColl` 항목 목록은 `Number` 메타데이터에 따라 세 개의 일괄 처리로 나뉘고 각 일괄 처리가 작업에 따로 전달됩니다.  
@@ -72,8 +72,8 @@ ms.locfileid: "31573567"
   
 </Project>  
 ```  
-  
- [메시지 작업](../msbuild/message-task.md) 작업은 다음 정보를 표시합니다.  
+
+[메시지 작업](../msbuild/message-task.md)은 다음 정보를 표시합니다.  
   
  `Number: 1 -- Items in ExampColl: Item1;Item4`  
   
@@ -81,13 +81,13 @@ ms.locfileid: "31573567"
   
  `Number: 3 -- Items in ExampColl: Item3;Item6`  
   
-## <a name="dividing-several-item-lists-into-batches"></a>여러 항목 목록을 일괄 처리로 나누기  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 여러 항목 목록을 동일한 메타데이터에 따라 일괄 처리로 나눌 수 있습니다. 이렇게 하면 쉽게 여러 다른 항목 목록을 일괄 처리로 나누어 여러 어셈블리를 빌드할 수 있습니다. 예를 들어 .cs 파일의 항목 목록을 응용 프로그램 일괄 처리 및 어셈블리 일괄 처리로 나누고, 리소스 파일의 항목 목록을 응용 프로그램 일괄 처리 및 어셈블리 일괄 처리로 나눌 수 있습니다. 그런 후 일괄 처리를 사용하여 이러한 항목 목록을 하나의 작업에 전달하고 응용 프로그램 및 어셈블리를 둘 다 빌드할 수 있습니다.  
+## <a name="divide-several-item-lists-into-batches"></a>여러 항목 목록을 일괄 처리로 나누기  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 여러 항목 목록을 동일한 메타데이터에 따라 일괄 처리로 나눌 수 있습니다. 이렇게 하면 쉽게 여러 다른 항목 목록을 일괄 처리로 나누어 여러 어셈블리를 빌드할 수 있습니다. 예를 들어 *.cs* 파일의 항목 목록을 응용 프로그램 일괄 처리 및 어셈블리 일괄 처리로 나누고, 리소스 파일의 항목 목록을 응용 프로그램 일괄 처리 및 어셈블리 일괄 처리로 나눌 수 있습니다. 그런 후 일괄 처리를 사용하여 이러한 항목 목록을 하나의 작업에 전달하고 응용 프로그램 및 어셈블리를 둘 다 빌드할 수 있습니다.  
   
 > [!NOTE]
 >  작업에 전달되는 항목 목록에 참조된 메타데이터가 있는 항목이 없으면 해당 항목 목록의 모든 항목이 모든 일괄 처리로 전달됩니다.  
   
- 다음 예제에서는 여러 항목 목록을 항목 메타데이터에 따라 일괄 처리로 나누는 방법을 보여 줍니다. `ExampColl` 및 `ExampColl2` 항목 목록은 `Number` 항목 메타데이터에 따라 세 개의 일괄 처리로 나뉩니다. `Text` 특성에 `%(Number)`가 있으면 일괄 처리가 수행되어야 한다는 알림이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 제공됩니다. `ExampColl` 및 `ExampColl2` 항목 목록은 `Number` 메타데이터에 따라 세 개의 일괄 처리로 나뉘고 각 일괄 처리가 작업에 따로 전달됩니다.  
+다음 예제에서는 여러 항목 목록을 항목 메타데이터에 따라 일괄 처리로 나누는 방법을 보여 줍니다. `ExampColl` 및 `ExampColl2` 항목 목록은 `Number` 항목 메타데이터에 따라 세 개의 일괄 처리로 나뉩니다. `Text` 특성에 `%(Number)`가 있으면 일괄 처리가 수행되어야 한다는 알림이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 제공됩니다. `ExampColl` 및 `ExampColl2` 항목 목록은 `Number` 메타데이터에 따라 세 개의 일괄 처리로 나뉘고 각 일괄 처리가 작업에 따로 전달됩니다.  
   
 ```xml  
 <Project  
@@ -125,7 +125,7 @@ ms.locfileid: "31573567"
 </Project>  
 ```  
   
- [메시지 작업](../msbuild/message-task.md) 작업은 다음 정보를 표시합니다.  
+[메시지 작업](../msbuild/message-task.md)은 다음 정보를 표시합니다.  
   
  `Number: 1 -- Items in ExampColl: Item1 ExampColl2: Item4`  
   
@@ -161,7 +161,7 @@ ms.locfileid: "31573567"
 </Project>  
 ```  
   
- [메시지 작업](../msbuild/message-task.md) 작업은 다음 정보를 표시합니다.  
+[메시지 작업](../msbuild/message-task.md)은 다음 정보를 표시합니다.  
   
 ```  
 Identity: "Item1" -- Items in ExampColl: Item1  
@@ -213,7 +213,7 @@ Identity: "Item6" -- Items in ExampColl: Item6
 </Project>  
 ```  
   
- [메시지 작업](../msbuild/message-task.md) 작업은 다음 정보를 표시합니다.  
+[메시지 작업](../msbuild/message-task.md)은 다음 정보를 표시합니다.  
   
 ```  
 Items in ExampColl: Item2;Item5  

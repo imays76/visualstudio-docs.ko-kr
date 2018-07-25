@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1b0aa0c55c0da2a6f9af58f5d54ff607a409ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7255753445d014b1ab59f6e2e8143b341b28a892
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925403"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890255"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>하위 항목(XElement 동적 속성)
 
@@ -23,7 +23,7 @@ ms.locfileid: "31925403"
 
 ## <a name="syntax"></a>구문
 
-```
+```xaml
 elem.Descendants[{namespaceName}localName]
 ```
 
@@ -41,5 +41,5 @@ elem.Descendants[{namespaceName}localName]
 
 ## <a name="see-also"></a>참고 항목
 
-- [XAttribute 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md)
+- [XElement 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md)
 - [요소](../designers/elements-xelement-dynamic-property.md)

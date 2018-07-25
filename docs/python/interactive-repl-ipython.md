@@ -1,7 +1,7 @@
 ---
 title: IPython REPL(대화형 창)
 description: IPython 모드의 Visual Studio 대화형 창은 대화형 병렬 컴퓨팅 기능이 있는, 사용자에게 친숙한 대화형 개발 환경에 사용합니다.
-ms.date: 07/13/2017
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1581c9cd7cb317a50932e85bb46159c508d8522
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: adfd037cc7362a4aa088d57c3776379caf6de5e3
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582529"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057663"
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>대화형 창에서 IPython 사용
 
@@ -27,29 +27,32 @@ IPython 모드의 Visual Studio 대화형 창은 사용자에게 친숙한 고�
 > [!Note]
 > Interactive 옵션 양식에서 IPython을 선택할 수는 있지만 IronPython은 IPython을 지원하지 않습니다. 자세한 내용은 [기능 요청](https://github.com/Microsoft/PTVS/issues/84)을 참조하세요.
 
-1. Visual Studio를 열고 Python 환경 창(**보기 > 다른 창 > Python 환경**)으로 전환한 다음 IPython을 시작할 때 표시된 Python 환경을 선택합니다.
+1. Visual Studio를 열고 Python 환경 창(**보기 > 다른 Windows > Python 환경**)으로 전환하고 Anaconda 환경을 선택합니다.
 
-1. **패키지**(또는 **pip**) 탭을 확인하여 `IPython` 및 `matplotlib`가 나열되는지 확인합니다. 그렇지 않은 경우 여기에서 설치하세요.
+1. 해당 환경의 **패키지(Conda)** 탭(**pip** 또는 **패키지**로 나타낼 수 있음)을 검사하여 `ipython` 및 `matplotlib`가 나열되는지 확인합니다. 그렇지 않은 경우 여기에서 설치하세요. ([Python 환경 Windows - 패키지 탭](python-environments-window-tab-reference.md)을 참조하세요.)
 
 1. **개요** 탭을 선택한 다음 **IPython 대화형 모드 사용**을 선택합니다. Visual Studio 2015에서는 **대화형 옵션 구성**을 선택하여 **옵션** 대화 상자를 열고 **대화형 모드**를 IPython으로 설정한 다음 **확인**을 선택합니다.
 
-1. **대화형 창 열기**를 선택하여 IPython 모드에서 대화형 창을 표시합니다. 대화형 모드를 방금 변경한 경우 창을 다시 설정해야 할 수 있습니다. >>> 프롬프트만 표시되는 경우 Enter 키를 눌러야 할 수도 있습니다.
+1. **대화형 창 열기**를 선택하여 IPython 모드에서 대화형 창을 표시합니다. 대화형 모드를 방금 변경한 경우 창을 다시 설정해야 할 수 있습니다. >>> 프롬프트만 표시되는 경우 "In [2]"와 같은 프롬프트를 받을 수 있도록 Enter를 눌러야 할 수도 있습니다.
 
     ![IPython 모드의 대화형 창](media/ipython-repl-03.png)
 
 1. 다음 코드를 입력합니다.
 
   ```python
-  x = linspace(0, 5, 10)
+  import matplotlib.pyplot as plt
+  import numpy as np
+  
+  x = np.linspace(0, 5, 10)
   y = x ** 2
-  plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
+  plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
   ```
 
 1. 마지막 줄을 입력한 후 원할 경우 인라인 그래프(오른쪽 아래 모서리에서 끌어서 크기를 조정할 수 있음)가 표시되어야 합니다.
 
     ![대화형 창의 인라인 그래프](media/ipython-repl-04.png)
 
-1. REPL을 입력하는 대신 편집기에서 코드를 작성하여 선택하고 마우스 오른쪽 단추를 클릭한 다음 **Interactive로 보내기** 명령을 선택할 수 있습니다(또는 Ctrl+Enter 누름). 아래 코드를 편집기의 새 파일에 붙여넣고 Ctrl+A로 선택한 다음 대화형 창으로 보내보세요. Visual Studio는 중간 또는 부분 그래프가 제공되지 않도록 코드를 한 단위로 보냅니다. 또한 다른 환경을 선택하여 Python 프로젝트가 열린 경우가 아니라면 Visual Studio는 **Python 환경** 창에서 기본값으로 선택된 환경과 관계없이 대화형 창을 엽니다.
+1. REPL을 입력하는 대신 편집기에서 코드를 작성하여 선택하고 마우스 오른쪽 단추를 클릭한 다음, **Interactive로 보내기** 명령을 선택할 수 있습니다(또는 Ctrl+Enter 누름). 아래 코드를 편집기의 새 파일에 붙여넣고 Ctrl+A로 선택한 다음 대화형 창으로 보내보세요. (Visual Studio는 중간 또는 부분 그래프가 제공되지 않도록 코드를 한 단위로 보냅니다. 그리고 다른 환경을 선택하여 Python 프로젝트가 열린 경우가 아니라면 Visual Studio는 **Python 환경** 창에서 기본값으로 선택된 환경과 관계없이 대화형 창을 엽니다.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -82,4 +85,4 @@ IPython에는 시스템 셸로 이스케이프, 변수 대체, 캡처 출력과 
 
 - 설치하지 않고 쉽게 Jupyter를 사용하려면 노트북을 유지하고 다른 사용자와 공유할 수 있도록 해주는 무료 [Azure Notebook 호스티드 서비스](https://notebooks.azure.com/)를 시도해보세요.
 
-- Azure의 해당 Windows 또는 Linux 가상 컴퓨터에서 Jupyter(이전의 IPython)를 실행할 수도 있습니다. 자세한 내용은 [Azure VM 만들기, Jupyter 설치, Azure에서 Jupyter Notebook 실행](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook)을 참조하세요.
+- Azure의 해당 Windows 또는 Linux 가상 머신에서 Jupyter(이전의 IPython)를 실행할 수도 있습니다. 자세한 내용은 [Azure VM 만들기, Jupyter 설치, Azure에서 Jupyter Notebook 실행](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook)을 참조하세요.

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4c50a7b6e3fe14f27bfd78e6814f9e120864d60
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c463fdde3c22986211ed7345c3552b288516a4de
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752194"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947454"
 ---
-# <a name="tutorial-step-4-use-the-full-flask-web-project-template"></a>자습서 4단계: 전체 Flask 웹 프로젝트 템플릿 사용
+# <a name="step-4-use-the-full-flask-web-project-template"></a>4단계: 전체 Flask 웹 프로젝트 템플릿 사용
 
 **이전 단계: [정적 파일 제공, 페이지 추가 및 템플릿 상속 사용](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
@@ -231,8 +231,8 @@ Jinja 및 Jade 구문 모두를 원하는 대로 실험해 보고 어떤 것이 
 > [!div class="nextstepaction"]
 > [설문조사 Flask 웹 프로젝트 템플릿](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
-## <a name="going-deeper"></a>자세히 알아보기
+## <a name="go-deeper"></a>자세히 알아보기
 
 - [Writing your first Flask app, part 4 - forms and generic views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/)(첫 번째 Flask 앱 작성, 4부 - 양식 및 일반 보기)(docs.djangoproject.com)
 - [GitHib의 Jade(문서)](https://github.com/liuliqiang/pyjade)(github.com)
-- GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learn-flask](https://github.com/Microsoft/python-sample-vs-learn-flask)
+- GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
