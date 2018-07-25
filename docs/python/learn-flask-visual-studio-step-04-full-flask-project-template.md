@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c463fdde3c22986211ed7345c3552b288516a4de
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: cf6283b909229e2e4dc4713814cf5e4f850688a3
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947454"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232298"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>4단계: 전체 Flask 웹 프로젝트 템플릿 사용
 
@@ -166,63 +166,63 @@ Jade를 사용하도록 설정하려면 먼저 프로젝트 템플릿은 `requir
 
 앱의 `__init__.py` 파일은 다음 줄을 포함합니다.
 
-    ```python
-    app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
-    ```
+```python
+app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
+```
 `templates` 폴더에는 `.html` 템플릿 대신 `.jade` 파일이 있고, `views.py`의 보기는 `flask.render_template`에 대한 호출에서 이러한 파일을 참조합니다. 그렇지 않은 경우 보기 코드는 동일합니다.
 
 `.jade` 파일 중 하나를 열면 템플릿의 보다 간결한 표현을 확인할 수 있습니다. 예를 들어, 다음은 “Flask/Jade 웹 프로젝트” 템플릿으로 만들어진 `templates/layout.jade`의 내용입니다.
 
-    ```jade
-    doctype html
-    html
-      head
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title #{title} - My Flask/Jade Application
-        link(rel='stylesheet', type='text/css', href='/static/content/bootstrap.min.css')
-        link(rel='stylesheet', type='text/css', href='/static/content/site.css')
-        script(src='/static/scripts/modernizr-2.6.2.js')
-      body
-        .navbar.navbar-inverse.navbar-fixed-top
-          .container
-            .navbar-header
-              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-              a.navbar-brand(href='/') Application name
-            .navbar-collapse.collapse
-              ul.nav.navbar-nav
-                li
-                  a(href='/') Home
-                li
-                  a(href='/about') About
-                li
-                  a(href='/contact') Contact
-        .container.body-content
-          block content
-          hr
-          footer
-            p &copy; #{year} - My Flask/Jade Application
+```jade
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title} - My Flask/Jade Application
+    link(rel='stylesheet', type='text/css', href='/static/content/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/static/content/site.css')
+    script(src='/static/scripts/modernizr-2.6.2.js')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Application name
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+              a(href='/about') About
+            li
+              a(href='/contact') Contact
+    .container.body-content
+      block content
+      hr
+      footer
+        p &copy; #{year} - My Flask/Jade Application
 
-        script(src='/static/scripts/jquery-1.10.2.js')
-        script(src='/static/scripts/bootstrap.js')
-        script(src='/static/scripts/respond.js')
+    script(src='/static/scripts/jquery-1.10.2.js')
+    script(src='/static/scripts/bootstrap.js')
+    script(src='/static/scripts/respond.js')
 
-        block scripts
-    ```
+    block scripts
+```
 
 `templates/about.jade`의 내용은 다음과 같습니다. 자리 표시자로 `#{ <name>}`을 사용하는 것을 확인할 수 있습니다.
 
-    ```jade
-    extends layout
+```jade
+extends layout
 
-    block content
-      h2 #{title}.
-      h3 #{message}
-      p Use this area to provide additional information.
-    ```
+block content
+  h2 #{title}.
+  h3 #{message}
+  p Use this area to provide additional information.
+```
 
 Jinja 및 Jade 구문 모두를 원하는 대로 실험해 보고 어떤 것이 가장 적합한지 확인해 보세요.
 
