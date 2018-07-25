@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2420beaa7f200ca281e04189667c1534e2a0f991
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a9e69986b74928b9488f468283b9dc1c7aff03f0
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752181"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947117"
 ---
-# <a name="tutorial-step-1-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서 1단계: Visual Studio에서 Flask 웹 프레임워크 시작
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Flask 웹 프레임워크 시작
 
 [Flask](http://flask.pocoo.org/)는 URL 라우팅 및 페이지 렌더링을 위한 기본 사항을 제공하는 웹 응용 프로그램용 경량 Python 프레임워크입니다.
 
@@ -251,7 +251,7 @@ def hello(name, msg):
 > [!div class="nextstepaction"]
 > [보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기](learn-flask-visual-studio-step-02-create-app.md)
 
-## <a name="going-deeper"></a>자세히 알아보기
+## <a name="go-deeper"></a>자세히 알아보기
 
 - [Flask 빠른 시작](http://flask.pocoo.org/docs/1.0/quickstart/)(flask.pocoo.org)
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
