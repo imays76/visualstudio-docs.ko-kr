@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346de998052ba68dfadf74a09fe0d4339be1614
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757164"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232175"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio에서 배포 개요
 
@@ -42,9 +42,9 @@ Visual Studio 내에서 응용 프로그램 게시할 수 있습니다 다음 �
 
 ## <a name="azure-app-service"></a>Azure App Service
 
-[Azure App Service](/azure/app-service/app-service-web-overview)는 개발자가 인프라를 유지 관리하지 않고 확장 가능한 여러 웹 응용 프로그램과 서비스를 빠르게 만드는 데 도움이 됩니다.
+[Azure App Service](/azure/app-service/app-service-web-overview) 하 고 [Linux의 App Service](/azure/app-service/containers/app-service-linux-intro) 개발자가 인프라를 유지 관리 하지 않고 다양 한 확장 가능한 웹 응용 프로그램 및 서비스를 신속 하 게 만들 수 있도록 합니다.
 
-선택 하 여에 계산 능력을 APp Service를 확인 하는 [가격 책정 계층 또는 계획](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) 포함 하는 App Service에 대 한 합니다. 여러 웹에 있는 앱 (및 다른 앱 형식) 동일한 App Service 가격 책정 계층을 변경 하지 않고 공유 합니다. 예를 들어, 개발, 스테이징 및 프로덕션 웹 앱을 동일한 App Service에서 함께 호스트할 수 있습니다.
+선택 하 여에 계산 능력을 App Service를 확인 하는 [가격 책정 계층 또는 계획](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) 포함 하는 App Service에 대 한 합니다. 여러 웹에 있는 앱 (및 다른 앱 형식) 동일한 App Service 가격 책정 계층을 변경 하지 않고 공유 합니다. 예를 들어, 개발, 스테이징 및 프로덕션 웹 앱을 동일한 App Service에서 함께 호스트할 수 있습니다.
 
 App Service는 Azure의 클라우드 호스트 가상 컴퓨터에서 실행되지만 이러한 가상 컴퓨터가 자동으로 관리됩니다. App Service의 각 앱에 할당할 고유한 \*. azurewebsites.net URL; 가격 책정 무료 이외의 모든 계층 사이트에 사용자 지정 도메인 이름 할당을 허용 합니다.
 
@@ -57,7 +57,7 @@ App Service는 Azure의 클라우드 호스트 가상 컴퓨터에서 실행되�
 
 > 사용자 고유의 데이터 센터 또는 다른 온-프레미스 컴퓨터에서 Azure App Service를 사용하려는 경우 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)을 사용하면 됩니다.
 
-App Service에 게시에 대 한 자세한 내용은 참조 하세요. [빠른 시작-Azure App Service에 게시](quickstart-deploy-to-azure.md)합니다.
+App Service에 게시에 대 한 자세한 내용은 참조 하세요. [빠른 시작-Azure App Service에 게시](quickstart-deploy-to-azure.md) 하 고 [빠른 시작-Linux에 ASP.NET Core 게시](quickstart-deploy-to-linux.md)합니다.
 
 ## <a name="azure-virtual-machines"></a>Azure Virtual Machines
 

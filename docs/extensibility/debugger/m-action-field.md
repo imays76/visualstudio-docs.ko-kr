@@ -1,5 +1,5 @@
 ---
-title: 필드 m_action | Microsoft Docs
+title: m_action 필드 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,30 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bd045c19b08ec5b3ba5db71e72e6380e65093a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2ed825569809568269726e6ba592118f8b03c80b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109251"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232379"
 ---
 # <a name="maction-field"></a>m_action 필드
-실행할 코드를 나타내는 대리자는 <xref:System.Threading.Tasks.Task> 개체입니다.  
+실행할 코드를 나타내는 대리자를 <xref:System.Threading.Tasks.Task> 개체입니다.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **어셈블리:** (mscorlib.dll)에 mscorlib  
+ **어셈블리:** mscorlib (에서 *mscorlib.dll*)  
   
- .NET Framework에서이 내부 멤버에 액세스할 수 없으므로, 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.  
+ .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```csharp  
 .field assembly object m_action  
 ```  
   
 ## <a name="remarks"></a>설명  
- 이는 `action` 에서 매개 변수는 <xref:System.Threading.Tasks.Task.%23ctor%2A> 생성자입니다.  
+ 이 `action` 의 매개 변수는 <xref:System.Threading.Tasks.Task.%23ctor%2A> 생성자입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [작업 클래스](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>참고자료  
+ [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

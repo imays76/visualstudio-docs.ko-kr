@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9198e39be5149440b09ebab5115e803d60716423
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080266"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231228"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>빠른 시작: Visual Studio에서 배포 소개
 
@@ -57,9 +57,9 @@ ms.locfileid: "39080266"
 
     Python 앱에 대 한 참조도 [Python-Azure App Service에 게시](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)합니다.
 
-    Visual Studio로 Azure App Service에서 게시 프로필 가져오기에 대 한 자세한 내용은 [게시 설정을 가져와서 Azure에 배포](../deployment/tutorial-import-publish-settings-azure.md)합니다.
+    간략 한 소개를 참조 하세요 [Azure에 게시](quickstart-deploy-to-azure.md) 하 고 [Linux에 게시](quickstart-deploy-to-linux.md)합니다. 도 참조 하세요 [ASP.NET Core 앱을 Azure에 게시](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)합니다. Git를 사용 하 여 배포를 참조 하세요 [Git 사용 하 여 Azure에 ASP.NET Core 연속 배포](/aspnet/core/publishing/azure-continuous-deployment)합니다.
 
-    간략 한 소개를 참조 하세요 [Azure에 게시](quickstart-deploy-to-azure.md)합니다. 도 참조 하세요 [ASP.NET Core 앱을 Azure에 게시](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)합니다. Git를 사용 하 여 배포를 참조 하세요 [Git 사용 하 여 Azure에 ASP.NET Core 연속 배포](/aspnet/core/publishing/azure-continuous-deployment)합니다.
+    Visual Studio로 Azure App Service에서 게시 프로필 가져오기에 대 한 자세한 내용은 [게시 설정을 가져와서 Azure에 배포](../deployment/tutorial-import-publish-settings-azure.md)합니다.
 
     > [!NOTE]
     > Azure 계정이 아직 없는 경우 [여기서 등록](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)합니다.
