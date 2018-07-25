@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752094"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978251"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 
@@ -51,7 +51,7 @@ ms.locfileid: "34752094"
 > - 관리되지 않은(네이티브) 코드를 사용하는 경우 디버그 빌드 사용
 > - 각 어셈블리에 대해 .pdb(기호) 파일을 생성하고 있는지 확인합니다.
 
-예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. 이어야 합니다. 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
+예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. . 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
 
 ## <a name="report-in-blocks-or-lines"></a>블록 또는 줄에서 보고
 
@@ -266,9 +266,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 빌드 실행 후 코드 검사 결과가 테스트 실행에 첨부되고 빌드 요약에 나타납니다.
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>명령줄에서 코드 검사 분석
+## <a name="analyze-code-coverage-from-the-command-line"></a>명령줄에서 코드 검사 분석
 
-명령줄에서 테스트를 실행하려면 vstest.console.exe를 사용합니다. 코드 검사는 vstest.console.exe 유틸리티의 옵션입니다.
+명령줄에서 테스트를 실행하려면 *vstest.console.exe*를 사용합니다. 코드 검사는 *vstest.console.exe* 유틸리티의 옵션입니다.
 
 1.  Visual Studio 개발자 명령 프롬프트를 시작합니다.
 
@@ -277,6 +277,8 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 2.  다음 명령을 실행합니다.
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
+
+자세한 내용은 [MSTest.exe 명령줄 옵션](vstest-console-options.md)을 참조하세요.
 
 ## <a name="troubleshoot"></a>문제 해결
 

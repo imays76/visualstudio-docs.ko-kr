@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 테스트 에이전트 및 테스트 컨트롤러 설치
-ms.date: 03/02/2018
+title: 테스트 에이전트 및 테스트 컨트롤러 설치
+ms.date: 07/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8914b6b876b27b94add446a627087fb34e5082ea
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972107"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890411"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>테스트 에이전트 및 테스트 컨트롤러 설치
 
@@ -28,15 +28,15 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 
 | 항목 | 요구 사항 |
 | ---- | ------------ |
-| **에이전트** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 서비스 팩 1<br />Windows XP 서비스 팩 3<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008 릴리스 2, 서비스 팩 1 |
-| **컨트롤러** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 서비스 팩 1<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008 릴리스 2, 서비스 팩 1 |
+| **에이전트** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 서비스 팩 1<br />Windows Server 2016 Standard 및 Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
+| **컨트롤러** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 서비스 팩 1<br />Windows Server 2016 Standard 및 Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 설치
 
-[visualstudio.com](https://www.visualstudio.com/downloads/?q=agents)에서 Agents for Visual Studio 2017을 다운로드할 수 있습니다. 페이지의 아래쪽으로 스크롤하여 *Agents for Visual Studio 2017*를 찾습니다. *에이전트* 또는 *컨트롤러* 중 하나를 선택한 다음, *다운로드*합니다. 다운로드한 실행 파일을 실행하여 컨트롤러 또는 테스트 에이전트를 설치합니다.
+[visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents)에서Visual Studio 2017용 에이전트를 다운로드할 수 있습니다. 페이지의 아래쪽으로 스크롤하여 *Agents for Visual Studio 2017*를 찾습니다. *에이전트* 또는 *컨트롤러* 중 하나를 선택한 다음, *다운로드*합니다. 다운로드한 실행 파일을 실행하여 컨트롤러 또는 테스트 에이전트를 설치합니다.
 
-[이전 다운로드](https://www.visualstudio.com/vs/older-downloads/) 페이지에서 Agents for Visual Studio 2015 및 Agents for Visual Studio 2013을 다운로드할 수 있습니다.
+[이전 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/) 페이지에서 Agents for Visual Studio 2015 및 Agents for Visual Studio 2013을 다운로드할 수 있습니다.
 
 이러한 설치 관리자는 가상 머신에 쉽게 설치할 수 있도록 ISO 파일로 제공됩니다.
 

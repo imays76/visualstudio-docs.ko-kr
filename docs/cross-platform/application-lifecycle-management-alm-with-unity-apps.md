@@ -10,13 +10,15 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa36dd0f213cffa1c5f44915de6794ecc6efa0c0
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237512"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>ALM(Application Lifecycle Management) 및 Unity 앱
+
 최신 플랫폼용 앱을 개발하려면 코드 작성 이외에도 많은 작업을 수행해야 합니다. DevOps(개발+운영)라는 이러한 활동은 앱의 전체 수명 주기에 걸쳐 있으며 민첩한 작업 계획 및 추적, 코드 디자인 및 구현, 소스 코드 리포지토리 관리, 빌드 실행, 연속 통합 및 배포 관리, 테스트(단위 테스트 및 UI 테스트 포함), 개발 및 프로덕션 환경에서 다양한 형태의 진단 실행, 원격 분석 및 분석을 통해 실시간으로 앱 성능과 사용자 동작 모니터링을 포함합니다.
 
  Visual Studio Team Services 및 Team Foundation Server와 더불어 Visual Studio는 다양한 DevOps 기능(애플리케이션 수명 주기 관리 또는 ALM이라고도 함)을 제공합니다. 이러한 기능은 특히 스크립트 언어로 C#을 사용하는 경우 Unity로 만든 게임 및 몰입형 그래픽 앱을 포함하여 플랫폼 간 프로젝트에 대부분 적용할 수 있습니다. 그러나 Unity에는 자체 개발 환경과 런타임 엔진이 있기 때문에 많은 ALM 기능은 Visual Studio에 빌드된 다른 종류의 프로젝트에 적용되는 것과 같이 적용되지 않습니다.
@@ -24,9 +26,10 @@ ms.lasthandoff: 04/16/2018
  아래 표에서는 Unity로 작업할 때 어떤 Visual Studio ALM 기능이 적용되는지 확인할 수 있습니다. 기능 자체에 대한 자세한 내용은 연결된 설명서를 참조하세요.
 
 ## <a name="agile-tools"></a>Agile 도구
- 참조 링크: **[작업](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**(Visual Studio Team Services 또는 TFS 사용, Team Explorer Everywhere 포함)
 
- 일반 설명: 모든 계획 및 추적 기능은 프로젝트 형식 및 코딩 언어와 독립적입니다.
+참조 링크: [Agile 도구 및 Agile 프로젝트 관리 정보](/vsts/work/backlogs/overview?view=vsts)(Visual Studio Team Services 또는 TFS 사용, Team Explorer Everywhere 포함)
+
+일반 설명: 모든 계획 및 추적 기능은 프로젝트 형식 및 코딩 언어와 독립적입니다.
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
@@ -37,9 +40,10 @@ ms.lasthandoff: 04/16/2018
 |보고 및 진행률 시각화|예||
 
 ## <a name="modeling"></a>모델링
- 참조 링크: **[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)**
 
- 일반 설명: 이러한 디자인 기능은 코딩 언어에 독립적이거나 C#과 같은 .NET 언어로 작동하지만 개체 계층 구조 및 클래스 관계를 포함하는 기존 응용 프로그램 패러다임에서 작동합니다. Unity 내에서 게임을 디자인하는 경우 완전히 다른 패러다임, 즉 그래픽 개체, 소리, 셰이더, 스크립트 등의 관계가 필요합니다. 이러한 이유로 Visual Studio 모델링 다이어그램 도구는 Unity 프로젝트 전체와 특별한 관련이 없습니다. C# 스크립트 내에서 관계를 관리하는 데 사용될 수 있지만 전체의 일부일 뿐입니다.
+참조 링크: **[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)**
+
+일반 설명: 이러한 디자인 기능은 코딩 언어에 독립적이거나 C#과 같은 .NET 언어로 작동하지만 개체 계층 구조 및 클래스 관계를 포함하는 기존 응용 프로그램 패러다임에서 작동합니다. Unity 내에서 게임을 디자인하는 경우 완전히 다른 패러다임, 즉 그래픽 개체, 소리, 셰이더, 스크립트 등의 관계가 필요합니다. 이러한 이유로 Visual Studio 모델링 다이어그램 도구는 Unity 프로젝트 전체와 특별한 관련이 없습니다. C# 스크립트 내에서 관계를 관리하는 데 사용될 수 있지만 전체의 일부일 뿐입니다.
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
@@ -56,9 +60,9 @@ ms.lasthandoff: 04/16/2018
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
-|[Team Foundation 버전 제어](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) 또는 Visual Studio Team Services 사용|예|Unity 프로젝트는 단순히 다른 프로젝트와 마찬가지로 버전 제어 시스템에 배치할 수 있는 파일 모음이지만, 특별히 고려해야 하는 몇 가지 사항을 뒤에서 설명합니다.|
-|[Team Services에서 Git 시작하기](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|예|표 뒤에 나오는 설명을 참조하세요.|
-|[코드 품질 향상](/visualstudio/test/improve-code-quality)|예||
+|[Team Foundation 버전 제어](/vsts/tfvc/overview?view=vsts) 또는 Visual Studio Team Services 사용|예|Unity 프로젝트는 단순히 다른 프로젝트와 마찬가지로 버전 제어 시스템에 배치할 수 있는 파일 모음이지만, 특별히 고려해야 하는 몇 가지 사항을 뒤에서 설명합니다.|
+|[Team Services에서 Git 시작하기](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|예|표 뒤에 나오는 설명을 참조하세요.|
+|[코드 품질 향상](../test/improve-code-quality.md)|예||
 |[코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)|예||
 |[코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)|예||
 
@@ -94,7 +98,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="improve-code-quality"></a>코드 품질 향상
 
-참조 링크: **[코드 품질 향상](/visualstudio/test/improve-code-quality)**
+참조 링크: **[코드 품질 향상](../test/improve-code-quality.md)**
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
@@ -105,7 +109,8 @@ ms.lasthandoff: 04/16/2018
 |[.NET Framework 메모리 문제 분석](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|아니요|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크(Unity에서 사용)에 대한 후크가 없습니다. [Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 설명서)를 사용합니다.|
 
 ## <a name="release-management"></a>릴리스 관리
- 참조 링크: **[릴리스 관리로 배포 자동화](https://msdn.microsoft.com/library/vs/alm/release/overview)**
+
+참조 링크: [빌드 및 릴리스 개요](/vsts/pipelines/overview?view=vsts)
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
@@ -114,7 +119,8 @@ ms.lasthandoff: 04/16/2018
 |앱 스토어에 업로드|Partial|일부 앱 스토어의 경우 이 프로세스를 자동화할 수 있는 확장을 사용할 수 있습니다.  [Visual Studio Team Services용 확장](https://marketplace.visualstudio.com/VSTS)(예: [Google Play용 확장](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play))을 참조하세요.|
 
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp으로 모니터링
- 참조 링크: **[HockeyApp으로 모니터링](https://www.hockeyapp.net/features/)**
+
+참조 링크: **[HockeyApp으로 모니터링](https://www.hockeyapp.net/features/)**
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|

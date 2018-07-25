@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 709f9b62844a209450daa427efdb3333796828b8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 904ebf55e7920bfd79fec3afb502d59e5dc82a33
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254620"
 ---
 # <a name="overviews-performance-tools"></a>개요(성능 도구)
 이 섹션에서는 개발 중인 응용 프로그램의 성능 특성을 측정하는 데 사용할 수 있는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 개념과 용어를 간략하게 설명합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  [성능 세션 개요](../profiling/performance-session-overview.md)  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용한 성능 프로파일링의 기본 사항에 대해 알아봅니다.  
   

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03747e9271b9eea71236a4ec3fea373b992f9068
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 25fb85642b7eb6a92c11d3d04d2c44eb6c683cff
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578070"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946318"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 작업
 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 어셈블리에 대한 경로를 검색합니다.  
@@ -45,7 +45,7 @@ ms.locfileid: "31578070"
 ## <a name="remarks"></a>설명  
  여러 버전의 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]를 설치한 경우 이 작업은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 실행하도록 설계한 버전을 반환합니다.  
   
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
 ## <a name="example"></a>예  
  다음 예제에서는 `GetFrameworkPath` 작업을 사용하여 `FrameworkPath` 속성에서 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]에 대한 경로를 저장합니다.  

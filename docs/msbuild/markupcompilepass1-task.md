@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0abf8f5b2c77281325853f744f54513fb897ecc6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d2a10d3dba6494a7afaa6ff626db15ebcf164ed2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574950"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079594"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 작업
 
@@ -38,7 +38,7 @@ ms.locfileid: "31574950"
 |`AlwaysCompileMarkupFilesInSeparateDomain`|선택적 **Boolean** 매개 변수입니다.<br /><br /> 별도의 <xref:System.AppDomain>에서 작업을 실행할지 여부를 지정합니다. 이 매개 변수가 **false**를 반환하는 경우 작업은 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]와 동일한 <xref:System.AppDomain>에서 더 빠르게 실행됩니다. 이 매개 변수가 **true**를 반환하는 경우 작업은 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)]에서 분리된 또 다른 <xref:System.AppDomain>에서 실행되며 더 느리게 실행됩니다.|
 |`ApplicationMarkup`|선택적 **ITaskItem[]** 매개 변수입니다.<br /><br /> 응용 프로그램 정의 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 파일의 이름을 지정합니다.|
 |`AssembliesGeneratedDuringBuild`|선택적 **String[]** 매개 변수입니다.<br /><br /> 빌드 프로세스 중에 변경되는 어셈블리에 대한 참조를 지정합니다. 예를 들어 Visual Studio 솔루션에는 다른 프로젝트의 컴파일된 출력을 참조하는 하나의 프로젝트가 포함될 수 있습니다. 이 경우 두 번째 프로젝트의 컴파일된 출력을 **AssembliesGeneratedDuringBuild** 매개 변수에 추가할 수 있습니다.<br /><br /> 참고: **AssembliesGeneratedDuringBuild** 매개 변수는 빌드 솔루션에 의해 생성되는 어셈블리의 전체 집합에 대한 참조를 포함해야 합니다.|
-|`AssemblyName`|필수 **문자열** 매개 변수입니다.<br /><br /> 프로젝트에 대해 생성되는 어셈블리의 약식 이름을 지정합니다. 예를 들어 프로젝트가 이름이 **WinExeAssembly.exe**인 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 실행 파일을 생성하는 경우 **AssemblyName** 매개 변수는 **WinExeAssembly** 값을 갖습니다.|
+|`AssemblyName`|필수 **문자열** 매개 변수입니다.<br /><br /> 프로젝트에 대해 생성되는 어셈블리의 약식 이름을 지정합니다. 예를 들어 프로젝트가 이름이 *WinExeAssembly.exe*인 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 실행 파일을 생성하는 경우 **AssemblyName** 매개 변수는 **WinExeAssembly** 값을 갖습니다.|
 |`AssemblyPublicKeyToken`|선택적 **문자열** 매개 변수입니다.<br /><br /> 어셈블리의 공개 키 토큰을 지정합니다.|
 |`AssemblyVersion`|선택적 **문자열** 매개 변수입니다.<br /><br /> 어셈블리의 버전 번호를 지정합니다.|
 |`ContentFiles`|선택적 **ITaskItem[]** 매개 변수입니다.<br /><br /> 느슨한 콘텐츠 파일의 목록을 지정합니다.|
@@ -50,7 +50,7 @@ ms.locfileid: "31574950"
 |`HostInBrowser`|선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 어셈블리가 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)]인지 여부를 지정합니다. 유효한 옵션은 **true** 및 **false**입니다. **true**이면 브라우저 호스팅을 지원하기 위한 코드가 생성됩니다.|
 |`KnownReferencePaths`|선택적 **String[]** 매개 변수입니다.<br /><br /> 빌드 프로세스 중에 변경되지 않는 어셈블리에 대한 참조를 지정합니다. [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)], [!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] 설치 디렉터리 등에 있는 어셈블리를 포함합니다.|
 |`Language`|필수 **String** 매개 변수입니다.<br /><br /> 컴파일러가 지원하는 관리되는 언어를 지정합니다. 유효한 옵션은 **C#**, **VB**, **JScript** 및 **C++** 입니다.|
-|`LanguageSourceExtension`|선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 관리되는 코드 파일의 확장에 추가되는 확장명을 지정합니다.<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> **LanguageSourceExtension** 매개 변수가 특정 값으로 설정되지 않으면 언어에 대한 기본 소스 파일 이름 확장명이 사용됩니다. 즉, [!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)]의 경우 **.vb**이고, [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]의 경우 **.csharp**입니다.|
+|`LanguageSourceExtension`|선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 관리되는 코드 파일의 확장에 추가되는 확장명을 지정합니다.<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> **LanguageSourceExtension** 매개 변수가 특정 값으로 설정되지 않으면 언어에 대한 기본 소스 파일 이름 확장명이 사용됩니다. 즉, [!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)]의 경우 *.vb*이고, [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]의 경우 *.csharp*입니다.|
 |`LocalizationDirectivesToLocFile`|선택적 **문자열** 매개 변수입니다.<br /><br /> 각 소스 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 파일에 대한 지역화 정보를 생성하는 방법을 지정입니다. 유효한 옵션은 **None**, **CommentsOnly** 및 **All**입니다.|
 |`OutputPath`|필수 **String** 매개 변수입니다.<br /><br /> 생성된 관리 코드 파일 및 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 이진 형식 파일이 생성되는 디렉터리를 지정합니다.|
 |`OutputType`|필수 **String** 매개 변수입니다.<br /><br /> 프로젝트에서 생성되는 어셈블리의 형식을 지정합니다. 유효한 옵션은 **winexe**, **exe**, **library** 및 **netmodule**입니다.|
@@ -100,7 +100,7 @@ ms.locfileid: "31574950"
 
 ## <a name="example"></a>예
 
-다음 예제에서는 3개의 `Page`[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 파일을 이진 형식 파일로 변환하는 방법을 보여 줍니다. `Page1`에는 형식 `Class1`에 대한 참조가 포함됩니다. 이 형식은 프로젝트의 루트 네임스페이스에 있으므로 이 태그 컴파일 패스에서 이진 형식 파일로 변환되지 않습니다. 대신 [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)가 실행된 다음 [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)가 실행됩니다.
+다음 예제에서는 3개의 *Page* [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 파일을 이진 형식 파일로 변환하는 방법을 보여줍니다. *Page1*에는 `Class1` 형식에 대한 참조가 포함됩니다. 이 형식은 프로젝트의 루트 네임스페이스에 있으므로 이 태그 컴파일 패스에서 이진 형식 파일로 변환되지 않습니다. 대신 [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)가 실행된 다음 [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)가 실행됩니다.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -124,8 +124,8 @@ ms.locfileid: "31574950"
 ## <a name="see-also"></a>참고 항목
 
 [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)  
-[작업 참조](../msbuild/wpf-msbuild-task-reference.md)  
+[WPF MSBuild 작업 참조](../msbuild/wpf-msbuild-task-reference.md)  
 [MSBuild 참조](../msbuild/msbuild-reference.md)  
-[작업 참조](../msbuild/msbuild-task-reference.md)  
+[MSBuild 작업 참조](../msbuild/msbuild-task-reference.md)  
 [WPF 응용 프로그램 빌드(WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
 [WPF XAML 브라우저 응용 프로그램 개요](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

@@ -10,26 +10,27 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297818"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>부하 테스트에서 시나리오 시작 시간 지연 구성
 
-부하 테스트 편집기와 속성 창을 사용하여 부하 테스트에서 시나리오가 시작되기 전의 지연을 지정합니다.
+부하 테스트 편집기와 **속성** 창을 사용하여 부하 테스트에서 시나리오가 시작되기 전의 지연을 지정합니다.
 
 예를 들어 다른 시나리오에서 사용하는 항목을 만들기 시작할 시나리오가 필요한 경우 **지연 시작 시간** 속성을 사용할 수 있습니다. 항목을 사용하는 시나리오를 지연하여 항목을 만드는 시나리오에 일부 데이터를 만들 시간을 부여할 수 있습니다.
 
 또 다른 예로는 특정 시각에만 실행될 시나리오가 있는 경우를 들 수 있습니다. 시나리오 시작을 지연하여 특정 시간에 시작되도록 만들 수 있습니다.
 
-## <a name="specifying-the-delay-start-time-of-a-scenario"></a>시나리오의 지연 시작 시간 지정
+## <a name="specify-the-delay-start-time-of-a-scenario"></a>시나리오의 지연 시작 시간 지정
 
-부하 테스트 편집기의 속성 창에서 **지연 시작 시간** 속성을 변경하여 부하 테스트에서 시나리오를 시작하기 전의 지연 시간을 지정할 수 있습니다.
+부하 테스트 편집기의 **속성** 창에서 **지연 시작 시간** 속성을 변경하여 부하 테스트에서 시나리오를 시작하기 전의 지연 시간을 지정할 수 있습니다.
 
 > [!NOTE]
-> 부하 테스트 시나리오 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
+> 부하 테스트 시나리오 속성과 해당 설명의 전체 목록을 보려면 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
 
  **지연 시작 시간** 속성을 사용해야 하는 예로는 다른 시나리오가 사용하는 항목을 만들기 시작하는 시나리오가 필요한 경우를 들 수 있습니다. 항목을 사용하는 시나리오를 지연하여 항목을 만드는 시나리오에 일부 데이터를 만들 시간을 부여할 수 있습니다.
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/22/2018
 
 3. **보기** 메뉴에서 **속성 창**을 선택합니다.
 
-     시나리오의 범주와 속성이 속성 창에 표시됩니다.
+     시나리오의 범주와 속성이 **속성** 창에 표시됩니다.
 
 4. 부하 테스트가 실행될 때 부하 테스트 시작 후 어느 정도의 시간을 기다렸다가 시나리오를 시작할 것인지를 나타내는 시간 값을 **지연 시작 시간** 속성의 텍스트 상자에 입력합니다.
 
@@ -57,11 +58,11 @@ ms.lasthandoff: 05/22/2018
 
 5. 속성을 변경한 후 **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **지연 시작 시간** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
-## <a name="enabling-and-disabling-whether-a-scenario-runs-during-the-warm-up-period"></a>준비 시간 동안 시나리오 실행 사용 및 사용 안 함
+## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>준비 시간 동안 시나리오 실행 사용 및 사용 안 함
 
-**준비 시간 동안 사용 안 함** 속성은 속성 창을 사용하여 설정할 수 있습니다. 부하 테스트 시나리오 속성은 부하 테스트 편집기에서 편집하여 설정할 수 있습니다.
+**준비 시간 동안 사용 안 함** 속성은 **속성** 창을 사용하여 설정할 수 있습니다. 부하 테스트 시나리오 속성은 부하 테스트 편집기에서 편집하여 설정할 수 있습니다.
 
- **준비 시간 동안 사용 안 함** 속성은 **지연 시작 시간** 속성에 지정한 준비 기간 동안 시나리오를 실행해야 하는지 여부를 나타내는 데 사용됩니다. 자세한 내용은 이전 절차인 [시나리오의 지연 시작 시간 지정](../test/configure-scenario-start-delays.md#ConfiguringScenarioStartDelayHowTo)을 참조하십시오.
+ **준비 시간 동안 사용 안 함** 속성은 **지연 시작 시간** 속성에 지정한 준비 기간 동안 시나리오를 실행해야 하는지 여부를 나타내는 데 사용됩니다. 자세한 내용은 이전 절차인 [시나리오의 지연 시작 시간 지정](#specify-the-delay-start-time-of-a-scenario)을 검토하세요.
 
 > [!NOTE]
 > 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.

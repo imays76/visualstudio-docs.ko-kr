@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6bd02ae2a89f8ea8e66cb6d7b943344450375
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844640"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>방법: 계측 전 명령 및 계측 후 명령 지정
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
 
  **32비트 컴퓨터**
 
-32비트 컴퓨터에서 기본 프로파일러 도구가 위치한 디렉터리는 드라이브\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools입니다.
+32비트 컴퓨터에서 기본 프로파일러 도구가 위치한 디렉터리는 *드라이브\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*입니다.
 
 **64비트 컴퓨터**
 
@@ -40,11 +41,11 @@ ms.lasthandoff: 04/19/2018
 
 - 32비트 응용 프로그램의 경우 기본 프로파일러 도구 디렉터리는 다음과 같습니다.
 
-     *드라이브*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *드라이브\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 - 64비트 응용 프로그램의 경우 기본 프로파일러 도구가 위치한 디렉터리는 다음과 같습니다.
 
-     *드라이브*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     *드라이브\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
 
 ## <a name="to-specify-pre-instrument-commands"></a>계측 전 명령을 지정하려면
 

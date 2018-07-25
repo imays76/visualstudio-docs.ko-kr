@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbc83a2d3fe1b2f5bb32a6baaf336c0a6c46e7d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ba68d0d369d178606777944c9dc4dcd633a503f4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572636"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280646"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 사용자 환경 개선 프로그램
 
@@ -40,13 +40,11 @@ VSCEIP는 기본적으로 켜져 있습니다. 다음 지침을 따라 이 기�
 
 ### <a name="registry-settings"></a>레지스트리 설정
 
-[Visual Studio용 빌드 도구](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)를 설치하는 경우, VSCEIP를 구성하도록 레지스트리를 업데이트해야 합니다. Enterprise 고객은 레지스트리 기반 정책을 설정하여 VSCEIP를 옵트인하거나 옵트아웃하는 그룹 정책을 구성할 수 있습니다.
+[Visual Studio용 빌드 도구](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017)를 설치하는 경우, VSCEIP를 구성하도록 레지스트리를 업데이트해야 합니다. Enterprise 고객은 레지스트리 기반 정책을 설정하여 VSCEIP를 옵트인하거나 옵트아웃하는 그룹 정책을 구성할 수 있습니다.
 
 관련 레지스트리 키와 설정은 다음과 같습니다.
 
-64비트 OS의 경우, 키 = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**  
-32비트 OS의 경우, 키 = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**  
-그룹 정책을 사용하는 경우, 키 = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**  
+64비트 OS에서 Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** 32비트 OS에서 Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** 그룹 정책을 사용하는 경우 Key = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 항목 = **OptIn**
 

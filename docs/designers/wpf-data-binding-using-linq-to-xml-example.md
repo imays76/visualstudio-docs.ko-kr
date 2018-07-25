@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a436ff48e923f34bf5baa72857a6f82e8258cbfa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c206e19ec94e2644cfec35bb7e33551dddb713d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921432"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080739"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>LINQ to XML 예제를 사용한 WPF 데이터 바인딩
 
 이 단원에서는 포함된 XML 데이터 소스에 사용자 인터페이스 구성 요소를 바인딩하는 WPF(Windows Presentation Foundation) 예제를 제공합니다. 이 예제(및 이 예제에 포함된 Visual Studio 프로젝트)의 이름은 *LinqToXmlDataBinding*입니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 |항목|설명|
 |-----------|-----------------|

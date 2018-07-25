@@ -9,12 +9,12 @@ description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548725"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327000"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -102,8 +102,8 @@ Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다
 3.  **정보** 탭에서 이름, 전자 메일, 국가/지역, 프로필 사진 및 연락처 기본 설정을 변경할 수 있습니다.  **기본 설정** 탭에서 기본 설정된 언어, 날짜 및 시간 패턴, 시간대 및 사용자 인터페이스 테마를 선택할 수 있습니다.  
 4.  변경이 완료되면 **저장**을 클릭합니다. 
 5.  브라우저의 **뒤로** 단추를 클릭하여 [혜택] 페이지로 돌아갑니다. 
+    ![프로필 정보 편집](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![프로필 정보 편집](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>내 구독을 기존 VSTS 또는 Azure 구독에 연결
 개인 MSA(Microsoft 계정)를 사용하여 구독에 로그인하고 Azure에서 관리하는 회사 또는 학교 계정을 사용하여 Visual Studio Team Services 또는 Microsoft Azure를 포함한 구독이 있는 경우 두 구독을 연결할 수 있습니다. 이를 "대체 계정"이라고 하며, 학교 또는 회사 계정과 연결된 기존 Azure, VSTS 또는 IDE 리소스에 액세스하는 동안 MSA를 계속 사용하여 구독에 로그인할 수 있습니다. 
@@ -111,12 +111,11 @@ Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다
 두 계정이 모두 동일한 이메일 주소를 사용하더라도 두 계정 모두에서 혜택을 사용하려면 회사/학교 계정을 대체 계정으로 추가해야 합니다. 
 
 대체 계정을 추가하려면
-1. MSA(Microsoft 계정)를 사용하여 [구독자 포털](https://my.visualstudio.com)에 로그인합니다.
+1. MSA(Microsoft 계정)를 사용하여 [구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인합니다.
 2. **구독** 탭을 클릭합니다.
 3. **관련 링크** 아래에서 **대체 계정 추가**를 선택합니다.
 4. 회사/학교 계정 이메일 주소를 입력하고 **추가**를 클릭합니다. 
-
-![대체 계정](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![대체 계정](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 대체 계정을 추가하면 언제든지 **구독** 탭을 클릭하고 **관련 링크** 섹션에서 적절한 옵션을 선택하여 해당 계정을 업데이트하거나 제거할 수 있습니다.  
 

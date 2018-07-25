@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750827"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283291"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>웹 성능 테스트에 데이터 소스 추가
 
@@ -24,7 +24,7 @@ ms.locfileid: "34750827"
 
  ![웹 성능 테스트에 데이터 바인딩](../test/media/web_test_databinding_conceptual.png)
 
- 여기에서는 샘플 ASP.NET 응용 프로그램을 사용합니다. 세 개의 .aspx 페이지(기본 페이지, 빨강 페이지, 파랑 페이지)가 있습니다. 기본 페이지는 빨강 또는 파랑 및 전송 단추를 선택할 수 있는 라디오 컨트롤이 포함됩니다. 다른 두 .aspx 페이지는 매우 간단합니다. 한 페이지의 레이블이 빨강이면, 다른 한 페이지의 레이블은 파랑입니다. 기본 페이지에서 제출을 선택하면 다른 페이지 중 하나가 표시됩니다. [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 샘플을 다운로드하거나, 사용자 고유의 웹앱과 함께 따를 수 있습니다.
+ 여기에서는 샘플 ASP.NET 응용 프로그램을 사용합니다. 세 개의 *.aspx* 페이지(기본 페이지, 빨강 페이지, 파랑 페이지)가 있습니다. 기본 페이지는 빨강 또는 파랑 및 전송 단추를 선택할 수 있는 라디오 컨트롤이 포함됩니다. 다른 두 *.aspx* 페이지는 매우 간단합니다. 한 페이지의 레이블이 빨강이면, 다른 한 페이지의 레이블은 파랑입니다. 기본 페이지에서 제출을 선택하면 다른 페이지 중 하나가 표시됩니다. [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 샘플을 다운로드하거나, 사용자 고유의 웹앱과 함께 따를 수 있습니다.
 
  ![테스트할 웹 응용 프로그램 실행](../test/media/web_test_databinding_runwebapp.png)
 
@@ -34,7 +34,7 @@ ms.locfileid: "34750827"
 
 ## <a name="create-a-sql-database"></a>SQL 데이터베이스 만들기
 
-1. Visual Studio Enterprise가 없는 경우 [Visual Studio 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 페이지에서 다운로드합니다.
+1. Visual Studio Enterprise가 없는 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지에서 다운로드할 수 있습니다.
 
 2. SQL 데이터베이스를 만듭니다.
 
@@ -90,11 +90,11 @@ ms.locfileid: "34750827"
 
 ## <a name="bind-the-data"></a>데이터 바인딩
 
-1. ColorName 필드에 바인딩합니다.
+1. **ColorName** 필드에 바인딩합니다.
 
      ![RadioButtonList1 값에 ColorName 필드 바인딩](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. 솔루션 탐색기에서 Local.testsettings 파일을 열고, 데이터 소스 행마다 한 번씩 실행 옵션을 선택합니다.
+2. **솔루션 탐색기**에서 *Local.testsettings* 파일을 열고, **데이터 소스 행마다 한 번씩 실행** 옵션을 선택합니다.
 
      ![테스트 설정 파일 편집](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -106,13 +106,13 @@ ms.locfileid: "34750827"
 
      ![웹 성능 테스트를 실행하여 바인딩 확인](../test/media/web_test_databinding_sql_runtest.png)
 
-     각 데이터 행에 대해 두 가지 실행이 표시됩니다. 실행 1은 페이지 Red.aspx에 대한 요청을 보내고 실행 2는 페이지 Blue.aspx에 대한 요청을 보냅니다.
+     각 데이터 행에 대해 두 가지 실행이 표시됩니다. 실행 1은 페이지 *Red.aspx*에 대한 요청을 보내고 실행 2는 페이지 *Blue.aspx*에 대한 요청을 보냅니다.
 
      ![테스트 실행 결과](../test/media/web_test_databinding_sql_runresults.png)
 
-     데이터 소스에 바인딩할 때는 기본 응답 URL 규칙을 위반할 수 있습니다. 이 경우 2 실행의 오류는 원래 테스트 기록의 Red.aspx 페이지에서 발생할 것으로 예상되지만 데이터 바인딩이 Blue.aspx 페이지로 이동하는 규칙으로 인한 것입니다.
+     데이터 소스에 바인딩할 때는 기본 응답 URL 규칙을 위반할 수 있습니다. 이 경우 2 실행의 오류는 원래 테스트 기록의 *Red.aspx* 페이지에서 발생할 것으로 예상되지만 데이터 바인딩이 *Blue.aspx* 페이지로 이동하는 규칙으로 인한 것입니다.
 
-2. 응답 URL 유효성 검사 규칙을 삭제하고 테스트를 다시 실행하여 유효성 검사 오류를 수정합니다.
+2. **응답 URL** 유효성 검사 규칙을 삭제하고 테스트를 다시 실행하여 유효성 검사 오류를 수정합니다.
 
      ![응답 URL 유효성 검사 규칙 삭제](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
@@ -152,13 +152,13 @@ ms.locfileid: "34750827"
 
 3. 텍스트 파일을 편집하여 다음을 추가합니다.
 
-    ```
+    ```text
     ColorId, ColorName
     0,Red
     1,Blue
     ```
 
-4. [SQL 데이터 바인딩](#AddingDataBindingWebTest_BindSQLData)의 단계를 따르지만 사용자의 데이터 소스에 맞게 CSV 파일을 선택합니다.
+4. [데이터 소스 추가](#add-the-data-source)의 단계를 사용하되 사용자의 데이터 소스에 맞게 CSV 파일을 선택합니다.
 
      ![이름을 입력하고 CSV 파일을 선택](../test/media/web_test_databinding_adddatasourcedialog.png)
 
@@ -166,13 +166,13 @@ ms.locfileid: "34750827"
 
 **A:** 열 머리글을 추가할 수 없는 경우 스키마 설명 파일을 사용하여 CSV 파일을 데이터베이스로 취급할 수 있습니다.
 
-1. schema.ini라는 새 텍스트 파일을 추가합니다.
+1. *schema.ini*라는 새 텍스트 파일을 추가합니다.
 
      ![schema.ini 파일 추가](../test/media/web_test_databinding_schemafile.png)
 
-2. schema.ini 파일을 편집하여 데이터 구조를 설명하는 정보를 추가합니다. 예를 들어, CSV 파일을 설명하는 스키마 파일은 다음과 같습니다.
+2. *schema.ini* 파일을 편집하여 데이터 구조를 설명하는 정보를 추가합니다. 예를 들어, CSV 파일을 설명하는 스키마 파일은 다음과 같습니다.
 
-    ```
+    ```text
     [testdata.csv]
     ColNameHeader=False
     ```
@@ -181,7 +181,7 @@ ms.locfileid: "34750827"
 
      ![웹 성능 테스트에 데이터 소스 추가](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. schema.ini 파일을 사용하는 경우 데이터베이스(CSV 파일이 아님)를 데이터 소스로 선택하고 이름을 지정합니다.
+4. *schema.ini* 파일을 사용하는 경우 **데이터베이스**(CSV 파일이 아님)를 데이터 소스로 선택하고 이름을 지정합니다.
 
      ![데이터베이스 데이터 소스 추가](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -193,11 +193,11 @@ ms.locfileid: "34750827"
 
      ![.NET Framework OLE DB 데이터 공급자 선택](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. 고급을 선택합니다.
+7. **고급**을 선택합니다.
 
      ![고급 선택](../test/media/web_test_databinding_advanced.png)
 
-8. 공급자 속성의 경우 Microsoft.Jet.OLEDB.4.0을 선택한 다음 확장 속성을 Text;HDR=NO로 설정합니다.
+8. 공급자 속성의 경우 Microsoft.Jet.OLEDB.4.0을 선택한 다음, **확장 속성**을 Text;HDR=NO로 설정합니다.
 
      ![고급 속성 적용](../test/media/web_test_databinding_advancedproperties.png)
 
@@ -241,7 +241,7 @@ ms.locfileid: "34750827"
     </ColorData>
     ```
 
-4. [SQL 데이터 바인딩](#AddingDataBindingWebTest_BindSQLData)의 단계를 따르지만 사용자의 데이터 소스에 맞게 XML 파일을 선택합니다.
+4. [데이터 소스 추가](#add-the-data-source)의 단계를 사용하되 사용자의 데이터 소스에 맞게 XML 파일을 선택합니다.
 
      ![이름을 입력하고 XML 파일을 선택](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
@@ -255,7 +255,7 @@ ms.locfileid: "34750827"
 
 2. 다음 구문을 사용하여 SOAP 본문의 값을 데이터 바인딩된 값으로 바꿉니다.
 
-    ```
+    ```xml
     {{DataSourceName.TableName.ColumnName}}
     ```
 

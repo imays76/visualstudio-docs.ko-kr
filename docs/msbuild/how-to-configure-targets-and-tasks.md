@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a09f2ec1af511cb789f2101e2df0a675dd065e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ceb9415648d4ad5bcfa4c16ca7f10b3a88a6db4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578415"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078116"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>방법: 대상 및 작업 구성
 선택된 MSBuild 작업은 개발 컴퓨터의 환경에 관계 없이 대상으로 지정된 환경에서 실행되도록 설정할 수 있습니다. 예를 들어 64비트 컴퓨터를 사용하여 32비트 아키텍처를 대상으로 하는 응용 프로그램을 빌드할 경우 선택한 작업은 32비트 프로세스에서 실행됩니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "31578415"
   
 -   `Architecture` 특성(있는 경우)은 플랫폼 및 비트를 설정하고 `x86`, `x64`, `CurrentArchitecture` 또는 `*`(임의 아키텍처) 값 중 하나를 사용할 수 있습니다.  
   
--   `TaskFactory` 특성은(있는 경우) 작업 인스턴스를 만들고 실행하는 작업 팩터리를 설정하고 값 `TaskHostFactory`만 사용합니다. 자세한 내용은 이 문서 뒷부분에 나오는 작업 팩터리 섹션을 참조하세요.  
+-   `TaskFactory` 특성은(있는 경우) 작업 인스턴스를 만들고 실행하는 작업 팩터리를 설정하고 값 `TaskHostFactory`만 사용합니다. 자세한 내용은 이 문서 뒷부분에 나오는 [작업 팩터리](#task-factories)를 참조하세요.  
   
 ```xml  
 <UsingTask TaskName="SimpleTask"   
@@ -107,7 +107,7 @@ ms.locfileid: "31578415"
  `MSBuildRuntime` 및 `MSBuildArchitecture` 매개 변수는 대상 컨텍스트 뿐만 아니라 가장 제한적인 범위를 설정하는 가장 유연한 방법을 제공합니다.  한편 이러한 매개 변수는 작업 인스턴스 자체에서 설정되고 작업이 실행된 다음에야 평가되기 때문에 평가 시간과 빌드 시간에 모두 사용할 수 있는 전체 범위의 속성에서 값을 파생시킬 수 있습니다.  반면 이러한 매개 변수는 특정 대상에 있는 특정 작업 인스턴스에만 적용됩니다.  
   
 > [!NOTE]
->  작업 매개 변수는 작업 호스트의 컨텍스트가 아니라 부모 노드의 컨텍스트에서 평가됩니다. 런타임 종속적 또는 아키텍처 종속적 환경 변수(예: 프로그램 파일 위치)는 부모 노드와 일치하는 값으로 평가됩니다.  그러나 동일한 환경 변수를 작업에서 직접 읽을 경우 작업 호스트의 컨텍스트에서 올바르게 평가됩니다.  
+>  작업 매개 변수는 작업 호스트의 컨텍스트가 아니라 부모 노드의 컨텍스트에서 평가됩니다. 런타임 종속적 또는 아키텍처 종속적 환경 변수(예: *프로그램 파일* 위치)는 부모 노드와 일치하는 값으로 평가됩니다.  그러나 동일한 환경 변수를 작업에서 직접 읽을 경우 작업 호스트의 컨텍스트에서 올바르게 평가됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [대상 및 작업 구성](../msbuild/configuring-targets-and-tasks.md)

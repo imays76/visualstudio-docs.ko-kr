@@ -1,6 +1,6 @@
 ---
 title: 옵션, 텍스트 편집기, C/C++, 서식
-ms.date: 11/04/2016
+ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,82 +11,47 @@ dev_langs:
 - CPP
 helpviewer_keywords:
 - Text Editor Options dialog box, formatting
+- ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 913413b4178a087c524ef26173fcbcc8c1d8b09b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946067"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235143"
 ---
 # <a name="options-text-editor-cc-formatting"></a>옵션, 텍스트 편집기, C/C++, 서식
-C 또는 C++로 프로그래밍할 때 코드 편집기의 기본 동작을 변경할 수 있습니다.
+
+이러한 속성 페이지를 사용하여 C 또는 C++로 프로그래밍할 때 코드 편집기의 기본 동작을 변경할 수 있습니다.
+
+[C++ Formatting 속성 페이지](media/cpp-formatting.png)
 
  이 페이지에 액세스하려면 왼쪽 창의 **옵션** 대화 상자에서 **텍스트 편집기**, **C/C++** 를 차례로 확장한 다음 **서식**을 클릭합니다.
 
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
+## <a name="general-page"></a>일반 페이지
 
-## <a name="cc-options"></a>C/C++ 옵션
- **요약 정보 자동 표시 도구 설명 사용**
+이 페이지에는 명령문과 블록을 입력할 때 서식을 지정하는 옵션이 있습니다.
 
- 요약 정보 IntelliSense 기능을 사용하거나 사용하지 않도록 설정합니다.
+**Visual Studio 2017 버전 15.7 이상**: 이 페이지에는 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 버전 5.0에 대한 지원을 구성하는 옵션도 있습니다. ClangFormat은 .clang-format 또는 _clang-format 파일로 구성할 수 있는 규칙 집합을 기반으로 코드의 스타일과 서식을 쉽게 지정할 수 있는 유틸리티입니다.
 
-## <a name="inactive-code"></a>비활성 코드
- **비활성 코드 블록 표시**
+### <a name="configuring-clangformat-options"></a>ClangFormat 옵션 구성
 
- `#ifdef` 선언으로 인해 비활성화된 코드는 이를 식별할 수 있도록 다른 색으로 표시됩니다.
+Visual Studio 2017 버전 15.7 이상에서는 ClangFormat 지원이 기본적으로 사용하도록 설정됩니다. LLVM, Google, Chromium, Mozilla 또는 WebKit 등 모든 프로젝트에 적용할 수 있는 공통의 서식 지정 규칙을 선택할 수 있습니다. 또한 사용자 지정 서식 정의 .clang-format 또는 _clang-format 파일을 만들 수도 있습니다. 이러한 파일이 프로젝트 폴더에 있는 경우 Visual Studio는 이 파일을 사용하여 해당 폴더 및 하위 폴더의 모든 소스 코드 파일에 서식을 지정합니다. 
 
- **비활성 코드 불투명 사용 안 함**
+기본적으로 Visual Studio는 clangformat.exe를 백그라운드에서 실행하여 입력과 동시에 서식을 적용합니다. 수동으로 호출된 서식 명령 **문서 서식(Ctrl+K, Ctrl+D)** 또는 **선택 영역 서식(Ctrl + K, Ctrl + F)** 에 대해서만 실행하도록 지정할 수도 있습니다.
 
- 비활성 코드는 투명도 대신 색상을 사용하여 식별할 수 있습니다.
 
- **비활성 코드 불투명도(%%)**
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>들여쓰기, 새 줄, 간격, 페이지 줄 바꿈
 
- 비활성 코드 블록에 대한 불투명도 수준은 사용자 지정할 수 있습니다.
-
-## <a name="indentation"></a>들여쓰기
- **중괄호 들여쓰기**
-
- 함수 또는 `for` 루프 같은 코드 블록을 시작한 후에 Enter 키를 누르면 괄호가 정렬되는 방법을 구성할 수 있습니다. 중괄호는 코드 블록 또는 들여쓴 첫 번째 문자에 정렬할 수 있습니다.
-
- **탭에서 자동 들여쓰기**
-
- Tab 키를 누르면 현재 코드 줄에 발생하는 동작을 구성할 수 있습니다. 줄이 들여쓰기되거나 탭이 삽입됩니다.
-
-## <a name="miscellaneous"></a>기타
- **작업 목록 창에 주석 열거**
-
- 편집기에서는 주석에 있는 미리 설정된 단어에 대한 오픈 소스 파일을 검색할 수 있습니다. **작업 목록** 창에서 발견한 모든 키워드에 대한 항목을 만듭니다.
-
- **일치 토큰 강조 표시**
-
- 커서가 중괄호 옆에 있을 때 편집기에서 포함된 코드를 보다 쉽게 볼 수 있도록 짝이 되는 중괄호를 강조 표시할 수 있습니다.
-
-## <a name="outlining"></a>개요
- **개요 모드로 파일 열기**
-
- 파일을 텍스트 편집기로 가져오면 개요 기능을 사용할 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요. 이 옵션을 선택하고 파일을 열면 개요 기능이 활성화됩니다.
-
- **#pragma 영역 블록을 자동으로 개요 표시**
-
- 이 옵션을 선택하면 [pragma 지시문](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)의 자동 개요 표시를 사용할 수 있습니다. 개요 모드에서 이 pragma 영역 블록을 확장하거나 축소할 수 있습니다.
-
- **문 블록을 자동으로 개요 표시**
-
- 이 옵션이 선택되면 다음 구문에 대해 자동 개요가 활성화됩니다.
-
--   [if-else](/dotnet/csharp/language-reference/keywords/if-else)
-
--   [switch 문(C++)](/cpp/cpp/switch-statement-cpp)
-
--   [while 문(C++)](/cpp/cpp/while-statement-cpp)
+이러한 페이지를 통해 사용자 지정에 대해 다양한 서식을 지정할 수 있지만 ClangFormat이 사용된 경우에는 무시됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

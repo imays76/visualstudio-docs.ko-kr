@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750365"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090051"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>자습서 4단계: 전체 Django 웹 프로젝트 템플릿 사용
+# <a name="step-4-use-the-full-django-web-project-template"></a>4단계: 전체 Django 웹 프로젝트 템플릿 사용
 
 **이전 단계: [정적 파일 제공, 페이지 추가 및 템플릿 상속 사용](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ Visual Studio에서 “빈 Django 웹 프로젝트” 템플릿을 기반으로 
   - `requirements.txt`: Django 1.x에 대한 종속성 포함
   - `readme.html`: 프로젝트를 만든 후 Visual Studio에 표시되는 파일. 이전 섹션에서 설명한 대로 여기에 표시되는 지침에 따라 앱에 대한 슈퍼 사용자(관리자) 계정을 만듭니다.
 - `app` 폴더에는 보기, 모델, 테스트, 양식, 템플릿 및 정적 파일을 포함한 모든 앱 파일이 포함됩니다(4-2단계 참조). 일반적으로 보다 고유한 앱 이름을 사용하려면 이 폴더의 이름을 바꿉니다.
-- `DjangoWeb`(Django 프로젝트) 폴더에는 일반적인 Django 프로젝트 파일(`__init.py__`, `settings.py`, `urls.py` 및 `wsgi.py`)이 포함됩니다. 프로젝트 템플릿을 사용하여 `settings.py`는 앱 및 데이터베이스 파일에 대해 이미 구성하고 `urls.py`는 로그인 양식을 포함하여 모든 앱 페이지에 대한 경로로 이미 구성했습니다.
+- `DjangoWeb`(Django 프로젝트) 폴더에는 일반적인 Django 프로젝트 파일(`__init__.py`, `settings.py`, `urls.py` 및 `wsgi.py`)이 포함됩니다. 프로젝트 템플릿을 사용하여 `settings.py`는 앱 및 데이터베이스 파일에 대해 이미 구성하고 `urls.py`는 로그인 양식을 포함하여 모든 앱 페이지에 대한 경로로 이미 구성했습니다.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>질문: Visual Studio 프로젝트 간에 가상 환경을 공유할 수 있나요?
 
@@ -215,7 +215,8 @@ urlpatterns = [
 > [!div class="nextstepaction"]
 > [Django에서 사용자 인증](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>자세히 알아보기
+## <a name="go-deeper"></a>자세히 알아보기
 
+- [Azure App Service에 웹앱 배포](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 4 - forms and generic views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/)(첫 번째 Django 앱 작성, 4부 - 양식 및 일반 보기)(docs.djangoproject.com)
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

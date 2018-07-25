@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c6f96c09755d5bce3b7586c749286bdbde3891c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7d1d4b8093e9cd5e4c41e88573fa80c131fd7caf
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570361"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154897"
 ---
 # <a name="touch-task"></a>Touch 작업
 파일의 액세스 및 수정 시간을 설정합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "31570361"
 |`TouchedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 성공적으로 터치한 항목 컬렉션을 포함합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
 ## <a name="example"></a>예  
  다음 예제에서는 `Touch` 작업을 사용하여 `Files` 항목 컬렉션에 지정된 파일의 액세스 및 수정 시간을 변경하고 성공적으로 터치한 파일을 `FilesTouched` 항목 컬렉션에 추가합니다.  

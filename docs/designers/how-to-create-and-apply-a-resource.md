@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1b76c5790c255a3c1ca2ed0fe38bc0d13a8d02
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 49f2559ecd2937ed1d54940416d5653b9dd59dbb
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746649"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924009"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>방법: 리소스 만들기 및 적용
 XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는 다시 사용 가능한 엔터티에 저장됩니다. 스타일을 사용하면 요소 속성을 설정하고 여러 요소에 걸쳐 일관된 모양을 위해 이러한 설정을 통해 다시 사용할 수 있습니다. [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx)은 컨트롤의 모양을 정의하며 리소스로 적용될 수도 있습니다. 자세한 내용은 [빠른 시작: 컨트롤 스타일 지정](http://go.microsoft.com/fwlink/?LinkID=248239) 및 [빠른 시작: 컨트롤 템플릿](http://go.microsoft.com/fwlink/?LinkID=247982)을 참조하세요.
@@ -43,7 +43,7 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
 
     -   현재 문서에서만 리소스를 사용할 수 있도록 하려면 **이 문서**를 선택합니다.
 
-    -   리소스를 만든 요소 또는 그 자식 요소에만 리소스를 사용할 수 있도록 하려면 요소에만 **이 문서**를 선택하고 드롭다운 목록에서 *요소*: *이름*을 선택합니다.
+    -   리소스를 만든 요소 또는 그 자식 요소에만 리소스를 사용할 수 있도록 하려면 요소에만 **이 문서**를 선택하고 드롭다운 목록에서 **요소**: **이름**을 선택합니다.
 
     -   다른 프로젝트에서 다시 사용할 수 있는 리소스 사전 파일에 리소스를 정의하려면 **리소스 사전**을 클릭한 다음 드롭다운 목록에서 **StandardStyles.xaml**과 같은 기존 리소스 사전 파일을 선택합니다.
 
@@ -62,7 +62,7 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
     -   컨트롤에 스타일 또는 컨트롤 템플릿 리소스를 적용합니다. [문서 개요] 창에서 컨트롤에 대한 상황에 맞는 메뉴를 열고, **템플릿 편집** 또는 **추가 템플릿 편집**을 선택하고, **리소스 적용**을 선택한 다음, 표시되는 목록에서 컨트롤 템플릿의 이름을 선택합니다.
 
         > [!NOTE]
-        >  **템플릿 편집**은 컨트롤 템플릿을 적용하는 데 사용됩니다. **추가 템플릿 편집**은 다른 템플릿 형식을 적용하는 데 사용됩니다.
+        >  **템플릿 편집**은 컨트롤 템플릿을 적용합니다. **추가 템플릿 편집**은 다른 템플릿 형식을 적용합니다.
 
      호환되는 모든 위치에 리소스를 적용할 수 있습니다. 예를 들어 <xref:Windows.UI.Xaml.Controls.TextBox> 컨트롤의 **Foreground** 속성에 브러시 리소스를 적용할 수 있습니다.
 

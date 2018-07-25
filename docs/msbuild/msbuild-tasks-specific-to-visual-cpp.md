@@ -1,7 +1,7 @@
 ---
 title: Visual C++ 관련 MSBuild 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 446326fb8219183774d3f90d70a0263e0fc057e0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0aaec01c24e68c42d2dc87e71875f664b7b61def
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573761"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056513"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visaul C++ 관련 MSBuild 작업
 작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. Visual C++가 설치되면 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]와 함께 설치되는 작업 외에 다음 작업을 사용할 수 있습니다. 자세한 내용은 [MSBuild(Visual C++) 개요](/cpp/build/msbuild-visual-cpp-overview)를 참조하세요.  
@@ -47,9 +47,12 @@ ms.locfileid: "31573761"
 |[MT 작업](../msbuild/mt-task.md)|Microsoft 매니페스트 도구(mt.exe)를 래핑합니다.|  
 |[RC 작업](../msbuild/rc-task.md)|Microsoft Windows 리소스 컴파일러 도구(rc.exe)를 래핑합니다.|  
 |[SetEnv 작업](../msbuild/setenv-task.md)|지정된 환경 변수의 값을 설정하거나 삭제합니다.|  
-|[VCMessage 작업](../msbuild/vcmessage-task.md)|빌드 중에 경고 메시지 및 오류 메시지를 로깅합니다.|  
+|[VCMessage 작업](../msbuild/vcmessage-task.md)|빌드 중에 경고 메시지 및 오류 메시지를 로깅합니다. (확장할 수 없습니다. 내부 전용입니다.)|  
 |[XDCMake 작업](../msbuild/xdcmake-task.md)|XML 문서 주석(.xdc) 파일을 .xml 파일에 병합하는 XML 문서 도구(xdcmake.exe)를 래핑합니다.|  
-|[XSD 작업](../msbuild/xsd-task.md)|소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구(xsd.exe)를 래핑합니다.|  
+|[XSD 작업](../msbuild/xsd-task.md)|소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구(xsd.exe)를 래핑합니다. *다음 참고를 참조하세요.*|  
 |[MSBuild 참조](../msbuild/msbuild-reference.md)|MSBuild 시스템 요소에 대해 설명합니다.|  
 |[작업](../msbuild/msbuild-tasks.md)|결합되어 빌드를 생성할 수 있는 코드 단위인 작업에 대해 설명합니다.|  
 |[작업 작성](../msbuild/task-writing.md)|작업을 만드는 방법을 설명합니다.|
+
+> [!NOTE]
+> Visual Studio 2017에서 xsd.exe에 대한 C++ 프로젝트 지원이 사용되지 않습니다. **CppCodeProvider.dll**을 수동으로 GAC에 추가하여 **Microsoft.VisualC.CppCodeProvider** API를 계속 사용할 수 있습니다.

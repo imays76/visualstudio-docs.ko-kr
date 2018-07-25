@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb0ff0bfb8f4b7abf3abc7f31204d963c1f0a68b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 72b93d497a68ba09237c28fc56159c379b50c9c1
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254565"
 ---
 # <a name="message-markers"></a>메시지 표식
 메시지 표식은 로그 출력을 나타냅니다. 메시지는 특정 시간에 특정 스레드에서 생성되는 문자열입니다. 다른 도구에 사용할 수 있도록 메시지를 텍스트 파일로 내보낼 수 있습니다. 동시성 시각화 도우미에서 메시지에 포인터를 두면 메시지 문자열을 볼 수 있습니다. 또한 [표식 보고서](../profiling/markers-report.md)에서 모든 메시지 표식을 볼 수 있습니다.  다음 그림은 메시지 표식을 보여줍니다.  

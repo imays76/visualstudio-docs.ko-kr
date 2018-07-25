@@ -12,17 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbd7e03ef5e8272d3decee9b6f7a344f5f659e67
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d19671e0f9280f02a012ad02b5421f2d62d30926
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255212"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 PROFILE_CURRENTID는 NameProfile, StartProfile, StopProfile, SuspendProfile 및 ResumeProfile 함수에 대한 호출에서 스레드 ID 또는 프로세스 ID에 대한 의사(pseudo) 토큰을 반환합니다. 구체적으로 지정된 것보다 현재 스레드 또는 프로세스에서 작동하는 함수를 발생하는 데 사용합니다.  
   
 ## <a name="example"></a>예  
- PROFILE_CURRENTID는 VSPerf.h에서 다음으로 정의됩니다.  
+ PROFILE_CURRENTID는 *VSPerf.h*에서 다음으로 정의됩니다.  
   
 ```cpp  
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  

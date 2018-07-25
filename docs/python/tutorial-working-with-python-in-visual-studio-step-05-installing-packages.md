@@ -1,7 +1,7 @@
 ---
 title: Python 작업 자습서, 5단계, 패키지 설치
 description: Visual Studio의 Python 기능에 대한 핵심 연습의 5단계로, Python 환경에서 패키지를 관리하는 Visual Studio의 기능을 보여줍니다.
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d67ec84271534de84de588cd29376e2cdb437294
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33875320"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37055983"
 ---
-# <a name="step-5-installing-packages-in-your-python-environment"></a>5단계: Python 환경에서 패키지 설치
+# <a name="step-5-install-packages-in-your-python-environment"></a>5단계: Python 환경에서 패키지 설치
 
 **이전 단계: [디버거에서 코드 실행](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
@@ -72,6 +72,6 @@ Python 개발자 커뮤니티에서는 사용자 소유의 프로젝트에 통�
 > [!div class="nextstepaction"]
 > [Git 작업](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-### <a name="going-deeper"></a>자세히 알아보기
+### <a name="go-deeper"></a>자세히 알아보기
 
 - [Python 환경](managing-python-environments-in-visual-studio.md)

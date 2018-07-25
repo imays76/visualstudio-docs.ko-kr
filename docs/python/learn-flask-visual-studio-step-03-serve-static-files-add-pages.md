@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752186"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089804"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>자습서 3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
 **이전 단계: [보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -283,8 +283,9 @@ Flask의 템플릿 시스템(기본적으로 Jinja)은 템플릿에서 특정 �
 > [!div class="nextstepaction"]
 > [전체 Flask 웹 프로젝트 템플릿 사용](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>자세히 알아보기
+## <a name="go-deeper"></a>자세히 알아보기
 
+- [Azure App Service에 웹앱 배포](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - 제어 흐름과 같은 Jinja 템플릿의 더 많은 기능을 보려면, [Jinja 템플릿 디자이너 문서](http://jinja.pocoo.org/docs/2.10/templates)(jinja.pocoo.org)를 참조하세요.
 - `url_for` 사용에 대한 자세한 내용은 Flask 응용 프로그램 개체 설명서(flask.pocoo.org) 내의 [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for)를 참조하세요.
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

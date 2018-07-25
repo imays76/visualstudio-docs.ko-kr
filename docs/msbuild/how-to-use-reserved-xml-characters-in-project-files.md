@@ -13,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8538ffdb1093accc8446d072ecc980586b73ee7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 647dba94840383410d06f6e5bf96ec3b0146c394
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567254"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077661"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>방법: 프로젝트 파일에서 예약된 XML 문자 사용
 프로젝트 파일을 작성할 경우 속성 값이나 작업 매개 변수 값 등에서 예약된 XML 문자를 사용해야 합니다. 그러나 프로젝트 파일을 구문 분석할 수 있도록 일부 예약된 문자를 명명된 엔터티로 바꿔야 합니다.  
   
-## <a name="using-reserved-characters"></a>예약된 문자 사용  
+## <a name="use-reserved-characters"></a>예약 문자 사용  
  다음 표에서는 프로젝트 파일을 구문 분석할 수 있도록 해당 명명된 엔터티로 대체되어야 하는 예약된 XML 문자를 설명합니다.  
   
 |예약된 문자|명명된 엔터티|  

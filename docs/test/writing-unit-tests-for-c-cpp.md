@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752081"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235445"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -38,7 +38,7 @@ Visual Studio에는 다음 C++ 테스트 기능이 포함되어 있으며 추가
 
 - **Boost.Test**는 **C++를 통한 데스크톱 개발** 워크로드의 기본 구성 요소로 포함되어 있습니다. **테스트 탐색기**와 통합되지만 현재는 프로젝트 템플릿을 갖지 않으므로 수동으로 구성해야 합니다. 자세한 내용은 [방법: Visual Studio에서 Boost.Test 사용](how-to-use-boost-test-for-cpp.md)을 참조하세요.
 
-- **CTest** 지원은 **C++를 통한 데스크톱 개발** 워크로드의 일부인 [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-cpp) 구성 요소에 포함되어 있습니다. 그러나 CTest는 아직 **테스트 탐색기**에 완전히 통합되지는 않았습니다. 자세한 내용은 [방법: Visual Studio에서 CTest 사용](how-to-use-ctest-for-cpp.md)을 참조하세요.
+- **CTest** 지원은 **C++를 통한 데스크톱 개발** 워크로드의 일부인 [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) 구성 요소에 포함되어 있습니다. 그러나 CTest는 아직 **테스트 탐색기**에 완전히 통합되지는 않았습니다. 자세한 내용은 [방법: Visual Studio에서 CTest 사용](how-to-use-ctest-for-cpp.md)을 참조하세요.
 
 **Visual Studio 2015 및 이전 버전**
 
@@ -69,7 +69,7 @@ Google Test 어댑터와 Boost.Test 어댑터 확장은 Visual Studio Marketplac
 ### <a name="write-test-methods"></a>테스트 메서드 작성
 
 > [!NOTE]
-> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 이 내용은 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)에서 설명합니다. Google Test 문서는 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
+> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 이 내용은 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)에서 설명합니다. Google Test 문서는 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
 
 테스트 프로젝트의 .cpp 파일에는 테스트 코드 작성 방법의 예제로 정의된 스텁 클래스와 메서드가 있습니다. 서명은 메소드를 테스트 탐색기 창에서 검색 가능하게 하는 TEST_CLASS 및 TEST_METHOD 매크로를 사용합니다.
 

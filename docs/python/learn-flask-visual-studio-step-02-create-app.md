@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9aeba681e1a4ab7bae77197d8af10a90f49a40d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752187"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118202"
 ---
-# <a name="tutorial-step-2-create-a-flask-app-with-views-and-page-templates"></a>자습서 2단계: 보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기
 
 **이전 단계: [Visual Studio 프로젝트 및 솔루션 만들기](learn-flask-visual-studio-step-01-project-solution.md)**
 
@@ -36,7 +36,7 @@ ms.locfileid: "34752187"
 
 1. 프로젝트 폴더에서 `HelloFlask`라는 앱 폴더를 만듭니다(**솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 폴더**를 선택함).
 
-1. `HelloFlask` 폴더에서 다음 콘텐츠가 포함된 `__init.py__`라는 파일을 만듭니다. 이 파일은 `Flask` 인스턴스를 만들고 앱의 보기를 로드합니다(다음 단계에서 생성).
+1. `HelloFlask` 폴더에서 다음 콘텐츠가 포함된 `__init__.py`라는 파일을 만듭니다. 이 파일은 `Flask` 인스턴스를 만들고 앱의 보기를 로드합니다(다음 단계에서 생성).
 
     ```python
     from flask import Flask
@@ -217,7 +217,7 @@ ms.locfileid: "34752187"
 > [!div class="nextstepaction"]
 > [정적 파일 제공, 페이지 추가 및 템플릿 상속 사용](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
-## <a name="going-deeper"></a>자세히 알아보기
+## <a name="go-deeper"></a>자세히 알아보기
 
 - [Flask 빠른 시작 - 렌더링 템플릿](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates)(flask.pocoo.org)
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

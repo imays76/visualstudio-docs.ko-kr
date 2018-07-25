@@ -17,11 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 8634017862a12b3a399f003d6f16c9689b7aaa20
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 61c07c92f751a768451414e6bef876cbc22ec962
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281253"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio Build Tools 2017 구성 요소 디렉터리
 
@@ -350,7 +351,7 @@ Microsoft.VisualStudio.Component.VC.Tools.14.13 | VC++ 2017 버전 15.6 v14.13 �
 
 ## <a name="get-support"></a>지원 받기
 
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 
@@ -361,6 +362,7 @@ Microsoft.VisualStudio.Component.VC.Tools.14.13 | VC++ 2017 버전 15.6 v14.13 �
 
 ## <a name="see-also"></a>참고 항목
 
+* [Visual Studio 2017용 Build Tools](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017#build-tools-for-visual-studio-2017)
 * [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 * [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)

@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751626"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945486"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio에서 Boost.Test for C++를 사용하는 방법
 
@@ -48,20 +48,20 @@ Boost.Test에는 [Boost](http://www.boost.org/)가 필요합니다! Boost가 설
 
 1. 새 파일에 샘플 테스트 메서드가 있습니다. **테스트 탐색기**에서 메서드를 검색할 수 있도록 프로젝트를 빌드합니다.
 
-항목 템플릿은 Boost.Test의 단일 헤더 변형을 사용하지만 독립 실행형 라이브러리 변형을 사용하도록 #include 경로를 수정할 수 있습니다. 자세한 내용은 [include 지시문 추가](#add_include_directives)를 참조하세요.
+항목 템플릿은 Boost.Test의 단일 헤더 변형을 사용하지만 독립 실행형 라이브러리 변형을 사용하도록 #include 경로를 수정할 수 있습니다. 자세한 내용은 [include 지시문 추가](#add-include-directives)를 참조하세요.
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>테스트 프로젝트를 만듭니다(Visual Studio 2017 버전 15.5).
 
 Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 또는 항목 템플릿을 Boost.Test에 사용할 수 없습니다. 따라서 테스트를 포함할 콘솔 응용 프로그램 프로젝트를 만들고 구성해야 합니다.
 
-1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트...** 를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 차례로 선택합니다.
 
 1. 왼쪽 창에서 **Visual C++** > **Windows 데스크톱**을 선택한 다음 **Windows 콘솔 응용 프로그램** 템플릿을 선택합니다.
 
 1. 프로젝트 이름을 지정하고 **확인**을 선택합니다.
 1. .cpp 파일에서 `main` 함수를 삭제합니다.
 
-1. Boost.Test의 단일 헤더 또는 동적 라이브러리 버전을 사용하는 경우 [include 지시문 추가](#add_include_directives)로 이동합니다. 정적 라이브러리 버전을 사용하는 경우 일부 추가 구성을 수행해야 합니다.
+1. Boost.Test의 단일 헤더 또는 동적 라이브러리 버전을 사용하는 경우 [include 지시문 추가](#add-include-directives)로 이동합니다. 정적 라이브러리 버전을 사용하는 경우 일부 추가 구성을 수행해야 합니다.
 
    a. 프로젝트 파일을 편집하려면 먼저 언로드하세요. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택합니다. 그런 다음 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **<name\>.vcxproj 편집**을 선택합니다.
 
@@ -112,7 +112,7 @@ Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 
 #include "../MyProgram/MyClass.h" // project being tested
 #include <string>
 
-BOOST_AUTO_TEST_CASE(my\_boost_test)
+BOOST_AUTO_TEST_CASE(my_boost_test)
 {
     std::string expected_value = "Bill";
 

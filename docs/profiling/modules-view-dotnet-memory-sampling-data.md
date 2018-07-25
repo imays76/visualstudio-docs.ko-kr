@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aba425823de9f6c9e935e987e2f574ac0733d262
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5cbae58aeaa1164aab6c254f62e0959da02d31c
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257675"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>모듈 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하여 수집되는 .NET 메모리 할당 데이터의 모듈 뷰에서는 프로파일링 실행에서 실행된 모듈을 기준으로 메모리 데이터를 그룹화합니다. 각 모듈은 계층 트리의 루트입니다. 모듈의 함수는 모듈 노드 아래에 나열됩니다.  

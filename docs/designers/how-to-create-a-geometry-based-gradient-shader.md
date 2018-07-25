@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745778"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923909"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>방법: 기하 도형 기반 그라데이션 셰이더 만들기
 
@@ -27,7 +27,7 @@ ms.locfileid: "34745778"
 
 시작하기 전에 **속성** 창과 **도구 상자**가 표시되는지 확인하세요.
 
-1.  사용할 DGSL 셰이더를 만듭니다. DGSL 셰이더를 프로젝트에 추가하는 방법에 대한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 시작 섹션을 참조하세요.
+1.  작업할 DGSL 셰이더를 만듭니다. DGSL 셰이더를 프로젝트에 추가하는 방법에 대한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 시작 섹션을 참조하세요.
 
 2.  **최종 색** 노드에서 **점 색** 노드의 연결을 끊습니다. **점 색** 노드의 **RGB** 터미널을 선택하고 **연결 끊기**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
 

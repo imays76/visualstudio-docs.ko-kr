@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 25e56d77ef9094338455b3a3f576fe8bc58387b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947364"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116990"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio에서 클래스 또는 형식 생성
 
@@ -68,7 +68,7 @@ ms.locfileid: "31947364"
    > [!TIP]
    > 미리 보기 창 맨 아래에 있는 **변경 내용 미리 보기** 링크를 사용하여 선택하기 전에 적용될 [모든 변경 내용을 확인](../../ide/preview-changes.md)합니다.
 
-1. **새 형식 생성...** 항목을 선택한 경우 **형식 생성** 대화 상자가 열립니다. 새 형식의 내게 필요한 옵션, 종류 및 위치를 구성합니다.
+1. **새 형식 생성** 항목을 선택한 경우 **형식 생성** 대화 상자가 열립니다. 새 형식의 내게 필요한 옵션, 종류 및 위치를 구성합니다.
 
    ![형식 생성](media/class-newtype-cs.png)
 

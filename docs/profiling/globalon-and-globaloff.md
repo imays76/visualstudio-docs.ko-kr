@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fa7c836ba27202cff04b846c1e5d744ff0493f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238006"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 및 GlobalOff
-VSPerfCmd.exe **GlobalOff** 및 **GlobalOn** 옵션은 명령줄 프로파일링 세션에서 모든 프로세스 및 스레드에 대한 프로파일링을 일시 중지 및 재개합니다.  
+*VSPerfCmd.exe* **GlobalOff** 및 **GlobalOn** 옵션은 명령줄 프로파일링 세션에서 모든 프로세스 및 스레드에 대한 프로파일링을 일시 중지 및 재개합니다.  
   
- VSPerfCmd.exe 명령줄에서 **GlobalOn** 및 **GlobalOff**를 유일한 옵션으로 지정하거나, **Start**, **Launch** 또는 **Attach** 옵션도 포함하는 명령줄에 포함할 수 있습니다.  
+ *VSPerfCmd.exe* 명령줄에서 **GlobalOn** 및 **GlobalOff**를 유일한 옵션으로 지정하거나, **Start**, **Launch** 또는 **Attach** 옵션도 포함하는 명령줄에 포함할 수 있습니다.  
   
  **GlobalOn** 및 **GlobalOff**를 **ProcessOn**, **ProcessOff**, **ThreadOn** 및 **ThreadOff** 옵션과 함께 사용할 수도 있습니다.  
   

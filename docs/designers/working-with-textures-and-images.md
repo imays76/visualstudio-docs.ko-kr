@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c93b77cde590209b9217666dd1ac8382dbdd4475
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb7cc97a797d02bd8353cbcfb19af6b8f9edf674
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925513"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079662"
 ---
 # <a name="work-with-textures-and-images"></a>질감 및 이미지 작업
 

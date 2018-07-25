@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 211da971bc7e4e275ef43b88531fe46a7fc0b4eb
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747055"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924068"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>방법: 기본 질감 셰이더 만들기
 
@@ -29,7 +29,7 @@ ms.locfileid: "34747055"
 
 1.  사용할 DGSL 셰이더를 만듭니다. DGSL 셰이더를 프로젝트에 추가하는 방법에 대한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 시작 섹션을 참조하세요.
 
-2.  **점 색** 노드를 삭제합니다. **선택** 모드에서 **점 색** 노드를 선택하고 메뉴 표시줄에서 **편집**, **삭제**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
+2.  **점 색** 노드를 삭제합니다. **선택** 모드에서 **점 색** 노드를 선택한 다음, 메뉴 모음에서 **편집** > **삭제**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
 
 3.  그래프에 **질감 샘플** 노드를 추가합니다. **도구 상자**의 **질감**에서 **질감 샘플**을 선택하고 디자인 화면으로 이동합니다.
 

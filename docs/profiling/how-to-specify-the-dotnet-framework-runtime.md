@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c52cecb30bdaa4daab46c7359e255d52d71d1597
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e85e1c571ecb900d5ce7ffdecf8e85b8c367de5c
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844136"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>방법: .NET Framework 런타임 지정
 
@@ -37,9 +38,9 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>프로파일러를 응용 프로그램에 연결할 때 프로파일링할 .NET Framework 런타임을 지정하려면
 
-1. [분석] 메뉴에서 [프로파일러]를 가리키고 [연결/분리]를 클릭합니다.
+1. **분석** 메뉴에서 **프로파일러**를 가리키고 **연결/분리**를 클릭합니다.
 
-2. [프로세스에 프로파일러 연결] 대화 상자에서 프로파일링할 프로세스를 클릭합니다.
+2. **프로세스에 프로파일러 연결** 대화 상자에서 프로파일링할 프로세스를 클릭합니다.
 
      **대상 CLR 버전** 목록 상자에는 **자동** 및 컴퓨터에 설치된 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 런타임 버전이 표시됩니다.
 

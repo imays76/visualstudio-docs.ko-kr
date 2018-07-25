@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdd33968958c2f8423f16ae1ac964915fc12489
-ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
+ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39030418"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231264"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 작업
 
@@ -42,7 +42,7 @@ XML 파일로의 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
- 이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.
+ 이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예
 

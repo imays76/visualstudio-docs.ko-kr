@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235434"
 ---
 # <a name="frequently-asked-questions"></a>질문과 대답
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
 대답: 물론입니다! 실제로 R을 사용하는 사용자들이 많이 사용하는 몇 가지 확장은 다음과 같습니다.
 
 - [vim 키 바인딩을 위한 VsVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
-- [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
+- [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
 - [실시간 미리 보기를 제공하는 Markdown 편집기](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 자세한 내용은 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)를 참조하세요.
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/19/2018
 
 **질문: 실제로 저는 현재 Visual Studio 설정을 좋아하지만 새 데이터 과학 설정을 사용해 보고 싶습니다. 어떻게 할까요?**
 
-대답: **도구 > 설정 가져오기 및 내보내기...** 를 사용하여 현재 Visual Studio 설정을 저장하고 데이터 과학 설정으로 전환합니다. 저장된 설정을 복원하려면 **설정 가져오기 및 내보내기...** 명령을 다시 사용합니다.
+대답: **도구** > **설정 가져오기 및 내보내기**를 사용하여 현재 Visual Studio 설정을 저장하고 데이터 과학 설정으로 전환합니다. 저장된 설정을 복원하려면 **설정 가져오기 및 내보내기** 명령을 다시 사용합니다.
 
 **질문: 네트워크 공유에 내 Visual Studio 프로젝트를 저장할 수 있나요?**
 
@@ -78,9 +79,9 @@ Q **Microsoft R Server가 무엇인가요?**
 
 대답: 예, Visual Studio에 통합된 모든 소스 제어 시스템을 사용할 수 있습니다.
 
-**질문: RTVS 프로젝트에 대해 권장되는 `.gitignore` 설정은 무엇인가요?**
+**질문: RTVS 프로젝트에 대해 권장되는 *.gitignore* 설정은 무엇인가요?**
 
-대답: Github에서는 권장되는 `.gitignore` 파일의 마스터 리포지토리를 유지 관리합니다. 이 항목은 [R.gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)에서 볼 수 있습니다.
+대답: Github에서는 권장되는 *.gitignore* 파일의 마스터 리포지토리를 유지 관리합니다. 이 항목은 [R.gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)에서 볼 수 있습니다.
 
 ## <a name="remote-services"></a>원격 서비스
 
@@ -88,9 +89,9 @@ Q **Microsoft R Server가 무엇인가요?**
 
 대답: Visual Studio용 원격 R 서비스를 사용하면 Windows 또는 Linux 컴퓨터를 설정한 다음 RTVS에서 해당 컴퓨터에 연결할 수 있습니다. [원격 작업 영역 설정](setting-up-remote-r-workspaces.md)을 참조하세요.
 
-질문. **RTVS는 Microsoft R Server에 연결할 수 있나요?**
+질문. **RTVS에서 Microsoft Machine Learning Server에 연결할 수 있나요?**
 
-대답: 아니요, Microsoft R Server는 다른 기술이며 RTVS에서 요구하는 같은 연결 메커니즘을 제공하지 않습니다.
+대답: 아니요, Microsoft ML Server는 다른 기술이며 RTVS에서 요구하는 같은 연결 메커니즘을 제공하지 않습니다.
 
 질문. **RTVS가 Azure의 데이터 과학 VM 이미지를 사용하여 만든 VM에 연결할 수 있나요?**
 

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 322e0bdc98751cda670206667cc8580bd498f682
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752195"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232321"
 ---
-# <a name="tutorial-step-5-use-the-polls-flask-web-project-template"></a>자습서 5단계: 설문 조사 Flask 웹 프로젝트 템플릿 사용
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>5단계: 설문조사 Flask 웹 프로젝트 템플릿 사용
 
 **이전 단계: [전체 Flask 웹 프로젝트 템플릿 사용](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
@@ -78,35 +78,35 @@ Visual Studio의 “Flask 웹 프로젝트” 템플릿을 이해했으면 이�
 
 앱의 데이터 모델은 `models/__init__.py`에 정의된 Poll 및 Choice라는 Python 클래스입니다. Poll은 질문을 나타내며, Choice 인스턴스 컬렉션은 이 질문에 사용 가능한 답변을 나타냅니다. Poll은 모든 선택 사항에 대한 총 투표 수와 보기를 생성하는 데 사용되는 통계를 계산하는 메서드를 유지합니다.
 
-    ```python
-    class Poll(object):
-        """A poll object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u''):
-            """Initializes the poll."""
-            self.key = key
-            self.text = text
-            self.choices = []
-            self.total_votes = None
+```python
+class Poll(object):
+    """A poll object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u''):
+        """Initializes the poll."""
+        self.key = key
+        self.text = text
+        self.choices = []
+        self.total_votes = None
 
-        def calculate_stats(self):
-            """Calculates some statistics for use in the application views."""
-            total = 0
-            for choice in self.choices:
-                total += choice.votes
-            for choice in self.choices:
-                choice.votes_percentage = choice.votes / float(total) * 100 \
-                    if total > 0 else 0
-            self.total_votes = total
+    def calculate_stats(self):
+        """Calculates some statistics for use in the application views."""
+        total = 0
+        for choice in self.choices:
+            total += choice.votes
+        for choice in self.choices:
+            choice.votes_percentage = choice.votes / float(total) * 100 \
+                if total > 0 else 0
+        self.total_votes = total
 
-    class Choice(object):
-        """A poll choice object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u'', votes=0):
-            """Initializes the poll choice."""
-            self.key = key
-            self.text = text
-            self.votes = votes
-            self.votes_percentage = None
-    ```
+class Choice(object):
+    """A poll choice object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u'', votes=0):
+        """Initializes the poll choice."""
+        self.key = key
+        self.text = text
+        self.votes = votes
+        self.votes_percentage = None
+```
 
 이러한 데이터 모델은 다음 단계에서 설명하는 여러 가지 백업 데이터 저장소에서 앱의 보기가 작동할 수 있도록 하는 일반 추상화입니다.
 
@@ -189,32 +189,32 @@ Visual Studio의 “Flask 웹 프로젝트” 템플릿을 이해했으면 이�
 
 처음에는 선택한 데이터 저장소에 설문 조사가 없으므로 앱의 홈 페이지에 **샘플 설문 만들기** 단추와 함께 "사용할 수 있는 설문 조사가 없음"이라는 메시지가 표시됩니다. 그러나 단추를 선택하면 사용 가능한 설문 조사가 표시되도록 보기가 변경됩니다. 이러한 전환은 `templates\index.html`의 조건부 태그를 통해 이루어집니다(간결하게 하기 위해 일부 빈 줄 생략).
 
-    ```html
-    {% extends "layout.html" %}
-    {% block content %}
-    <h2>{{title}}.</h2>
+```html
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{title}}.</h2>
 
-    {% if polls %}
-    <table class="table table-hover">
-        <tbody>
-            {% for poll in polls %}
-            <tr>
-                <td>
-                    <a href="/poll/{{poll.key}}">{{poll.text}}</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No polls available.</p>
-    <br />
-    <form action="/seed" method="post">
-        <button class="btn btn-primary" type="submit">Create Sample Polls</button>
-    </form>
-    {% endif %}
-    {% endblock %}
-    ```
+{% if polls %}
+<table class="table table-hover">
+    <tbody>
+        {% for poll in polls %}
+        <tr>
+            <td>
+                <a href="/poll/{{poll.key}}">{{poll.text}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No polls available.</p>
+<br />
+<form action="/seed" method="post">
+    <button class="btn btn-primary" type="submit">Create Sample Polls</button>
+</form>
+{% endif %}
+{% endblock %}
+```
 
 템플릿의 `polls` 변수는 `repository.get_polls`에 대한 호출에서 비롯된 것으로, 데이터 저장소가 초기화될 때까지 아무것도 반환하지 않습니다.
 

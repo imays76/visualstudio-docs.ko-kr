@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 C# 및 ASP.NET Core 시작
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 40aba1d8847b405c3e80f0d6890471f0e2065a86
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765517"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089453"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Visual Studio에서 C# 및 ASP.NET 시작
 
 Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자습서에서는 C# ASP.NET Core 웹앱을 만들고, 해당 앱에 코드를 추가하며, IDE의 일부 기능을 살펴보고 앱을 실행합니다. 
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -41,7 +41,7 @@ ASP.NET Core는 웹앱 및 서비스처럼 인터넷으로 연결된 응용 프�
 
 ### <a name="what-is-visual-studio"></a>Visual Studio란?
 
-Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. 프로그램과 응용 프로그램을 만드는 데 사용할 수 있는 프로그램으로 생각하면 됩니다.  
+Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. 프로그램과 응용 프로그램을 만드는 데 사용할 수 있는 프로그램으로 생각하면 됩니다.
 
 ## <a name="start-developing"></a>개발 시작
 
@@ -65,9 +65,9 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>옵션 1: 새 프로젝트 대화 상자 사용
 
-1. **새 프로젝트** 대화 상자에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다.
+1. **새 프로젝트** 대화 상자에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다.
 
-   ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크를 클릭합니다.](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크 선택](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
@@ -81,7 +81,7 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
 #### <a name="add-a-project-template"></a>프로젝트 템플릿 추가
 
-1. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자에서 **웹 응용 프로그램모델-뷰-컨트롤러)** 프로젝트 템플릿을 선택합니다.  
+1. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자에서 **웹 응용 프로그램모델-뷰-컨트롤러)** 프로젝트 템플릿을 선택합니다.
 
 2. 상단 드롭다운 메뉴에서 **ASP.NET Core 2.0**을 선택합니다. (목록에 **ASP.NET Core 2.0**이 표시되지 않으면 대화 상자 맨 위에 있는 노란색 표시줄에 나타나는 **다운로드** 링크에 따라 설치합니다.) **확인**을 선택합니다.
 
@@ -134,7 +134,7 @@ MVC 패턴을 통해 기존 모놀리식 응용 프로그램보다 테스트 및
 
 1. IDE에서 **IIS Express** 단추를 선택하여 디버그 모드에서 앱을 빌드 및 실행합니다. 또는 **F5**를 누르거나 메뉴 모음에서 **디버그 > 디버깅 시작**을 선택합니다.
 
-   ![Visual Studio에서 IIS Express 단추 클릭](../ide/media/csharp-aspnet-iis-express-button.png)
+   ![Visual Studio에서 IIS Express 단추 선택](../ide/media/csharp-aspnet-iis-express-button.png)
 
   > [!NOTE]
   > **'IIS Express' 웹 서버에 연결할 수 없습니다**라는 오류 메시지가 발생하면 Visual Studio를 닫은 후 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 엽니다. 그런 다음 응용 프로그램을 다시 실행합니다.
@@ -179,11 +179,13 @@ MVC 패턴을 통해 기존 모놀리식 응용 프로그램보다 테스트 및
 
 11. 도구 모음에서 **디버깅 중지** 단추를 선택하여 디버깅을 중지합니다. 또는 **Shift**+**F5**를 누르거나 메뉴 모음에서 **디버그** > **디버깅 중지**를 선택합니다.
 
-   ![도구 모음에서 디버깅 중지 단추 클릭](../ide/media/csharp-aspnet-stop-debugging.png)
+   ![도구 모음에서 디버깅 중지 단추 선택](../ide/media/csharp-aspnet-stop-debugging.png)
 
 ## <a name="next-steps"></a>다음 단계
 
-축하합니다. 이 자습서를 마쳤습니다. C#, ASP.NET Core 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 자세히 알아보려면 계속 다음 자습서를 사용하세요.
+축하합니다. 이 자습서를 마쳤습니다. C#, ASP.NET Core 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 공용 서버에서 실행 중인 앱을 보려면 다음 단추를 선택합니다.
 
- > [!div class="nextstepaction"]
- > [ASP.NET Core MVC 및 Visual Studio 시작](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [앱을 Azure App Service에 배포](..//deployment/quickstart-deploy-to-azure.md)
+
+또한 자습서([ASP.NET Core MVC 및 Visual Studio 시작](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x))에 따라 ASP.NET Core에서 MVC(모델-뷰-컨트롤러) 프레임워크를 사용하는 방법을 배울 수 있습니다.

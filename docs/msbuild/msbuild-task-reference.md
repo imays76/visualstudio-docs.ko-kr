@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939a1220d1106330ffbec7fa1af705567ff66dd6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6cbaeaeca87c4e32a0c9db9a463e1f5f417527ae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576042"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058648"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 작업 참조
 작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. 다음 목록의 작업이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 포함되어 있습니다. [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]가 설치되면 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 빌드하는 데 사용되는 추가 작업을 사용할 수 있습니다. 자세한 내용은 [Visual C++ 작업](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)을 참조하세요.  
@@ -88,6 +88,9 @@ ms.locfileid: "31576042"
   
  [Delete 작업](../msbuild/delete-task.md)  
  지정한 파일을 삭제합니다.  
+
+ [DownloadFile 작업](../msbuild/downloadfile-task.md)  
+ 지정된 위치로 파일을 다운로드합니다.  
   
  [Error 작업](../msbuild/error-task.md)  
  빌드를 중지하고 평가된 조건부 문에 따라 오류를 기록합니다.  
@@ -200,6 +203,9 @@ ms.locfileid: "31576042"
  [UnregisterAssembly 작업](../msbuild/unregisterassembly-task.md)  
  COM interop 용도로 지정된 어셈블리의 등록을 취소합니다.  
   
+ [작업 압축 풀기](../msbuild/unzip-task.md)  
+ 지정된 위치로 `.zip` 보관 압축을 풉니다.
+  
  [UpdateManifest 작업](../msbuild/updatemanifest-task.md)  
  매니페스트에서 선택한 속성을 업데이트하고 다시 서명합니다.  
   
@@ -223,6 +229,9 @@ ms.locfileid: "31576042"
   
  [XslTransformation 작업](../msbuild/xsltransformation-task.md)  
  XSLT(*Extensible Stylesheet Language Transformation*) 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 장치 또는 파일로 변환합니다.  
+  
+  [ZipDirectory 작업](../msbuild/zipdirectory-task.md)  
+ 디렉터리의 콘텐츠에서 `.zip` 보관을 만듭니다.
   
 ## <a name="see-also"></a>참고 항목  
  [MSBuild 참조](../msbuild/msbuild-reference.md)   

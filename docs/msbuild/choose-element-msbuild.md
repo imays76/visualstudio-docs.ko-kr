@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc467b859e3a02282c6d6165dc263931900c5bc2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569523"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945771"
 ---
 # <a name="choose-element-msbuild"></a>Choose 요소(MSBuild)
 자식 요소를 평가하여 평가할 `ItemGroup` 요소 및/또는 `PropertyGroup` 요소의 집합 하나를 선택합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "31569523"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <Choose>  
     <When Condition="'StringA'=='StringB'">... </When>  
     <Otherwise>... </Otherwise>  
@@ -50,7 +50,7 @@ ms.locfileid: "31569523"
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
  없음  

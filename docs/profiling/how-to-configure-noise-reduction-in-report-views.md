@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2ec4a797b7018a7a9e017760afd8849912cd35
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815186"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>방법: 보고서 뷰에서 노이즈 감소 구성
 호출 트리 뷰 및 할당 뷰에 제공되는 데이터 양을 제한하여 노이즈 감소를 위한 성능 보고서를 구성할 수 있습니다. 노이즈 감소를 사용하면 성능 문제가 더 두드러집니다. 성능 보고서를 분석할 경우 이 방법이 유용합니다.  

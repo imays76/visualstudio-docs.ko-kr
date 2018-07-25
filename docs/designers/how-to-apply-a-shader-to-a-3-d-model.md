@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08e1a6b8bab7e6336f764f871328e0d56ad0c2f2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 12fc18532888dbf688c3fcc0e5695edfaf47d953
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917398"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924137"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>방법: 3D 모델에 셰이더 적용
 
@@ -27,9 +27,9 @@ ms.locfileid: "31917398"
 
 시작하기 전에 **속성** 창이 표시되는지 확인하세요.
 
-1. 하나 이상의 모델이 포함된 3D 장면으로 시작합니다. 적합한 3D 장면이 없으면 [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)에 설명된 대로 장면을 만듭니다. 모델에 적용할 수 있는 DGSL 셰이더가 준비되어 있어야 합니다. 적합한 셰이더가 없으면 [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)에 설명된 대로 셰이더를 만들고 계속하기 전에 파일에 저장했는지 확인합니다.
+1. 하나 이상의 모델이 포함된 3D 장면으로 시작합니다. 적합한 3D 장면이 없으면 [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)에 설명된 대로 장면을 만듭니다. 또한 모델에 적용할 수 있는 DGSL 셰이더가 있어야 합니다. 적합한 셰이더가 없으면 [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)에 설명된 대로 셰이더를 만들고 계속하기 전에 파일에 저장했는지 확인합니다.
 
-2. **선택** 모드에서 셰이더를 적용할 모델을 선택하고 **속성** 창에 있는 **효과** 속성 그룹의 **파일 이름** 속성에서 모델에 적용할 DGSL 셰이더를 지정합니다.
+2. **선택** 모드에서 셰이더를 적용할 모델을 선택한 다음, **속성** 창에 있는 **효과** 속성 그룹의 **파일 이름** 속성에서 모델에 적용할 DGSL 셰이더를 지정합니다.
 
 다음은 기본 색 효과가 적용된 모델입니다.
 

@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7418334e5621076a10b6887371cf7da76a7488
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918143"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890359"
 ---
 # <a name="display-data-in-blend"></a>Blend에서 데이터 표시
 
-페이지의 레이아웃을 사용자 지정할 때 디자이너에서 예제 데이터를 볼 수 있습니다. 예제 데이터는 처음부터 새로 또는 기존 클래스를 사용하여 생성할 수 있습니다. 예제 데이터 실행 시 앱에 표시되는 *라이브 데이터* 에 연결할 수도 있습니다.
+페이지의 레이아웃을 사용자 지정할 때 디자이너에서 예제 데이터를 볼 수 있습니다. 예제 데이터는 처음부터 새로 또는 기존 클래스를 사용하여 생성할 수 있습니다. 예제 데이터를 실행시 앱에 표시되는 *라이브 데이터*에 연결할 수도 있습니다.
 
 ## <a name="generate-sample-data"></a>예제 데이터 생성
 

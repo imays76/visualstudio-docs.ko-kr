@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71ea82ea9588315748a9c79eb9abd7b06eace680
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d48393a2d160e3691069a4b5f86dd814b63d935d
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237684"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>함수 뷰 - .NET 메모리 계측 데이터
 계측 방법을 사용하여 수집된 .NET 메모리 할당 프로파일링 데이터의 함수 뷰는 프로파일링 실행 중 메모리를 할당한 함수를 나열합니다. 함수 행은 할당의 크기와 수 및 함수에 대한 타이밍 데이터를 보고합니다.  
@@ -64,8 +65,8 @@ ms.lasthandoff: 04/19/2018
 |**경과된 최대 포괄 시간**|이 함수 호출의 최대 경과된 포괄 시간입니다.|  
 |**최소 경과된 포괄 시간**|이 함수 호출의 최소 경과된 포괄 시간입니다.|  
   
-## <a name="elapsed-exclusive-values"></a>경과된 전용 값  
- 경과된 전용 값은 함수가 호출 스택의 맨 위에서 직접 실행 중이던 시간을 나타냅니다. 시간에는 컨텍스트 전환 및 입/출력 작업과 같이 운영 체제에 대한 호출 시간이 포함됩니다. 그러나 자식 함수에서 소요된 시간은 포함되지 않습니다.  
+## <a name="elapsed-exclusive-values"></a>경과된 전용 시간값  
+ 경과된 전용 시간값은 함수가 호출 스택의 맨 위에서 직접 실행 중이던 시간을 나타냅니다. 시간에는 컨텍스트 전환 및 입/출력 작업과 같이 운영 체제에 대한 호출 시간이 포함됩니다. 그러나 자식 함수에서 소요된 시간은 포함되지 않습니다.  
   
 |열|설명|  
 |------------|-----------------|  
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/19/2018
 |**최대 경과된 전용 시간**|이 함수 호출의 최대 경과된 전용 시간입니다.|  
 |**경과된 최소 전용 시간**|이 함수 호출의 최소 경과된 전용 시간입니다.|  
   
-## <a name="application-inclusive-values"></a>응용 프로그램 포괄 시간값  
+## <a name="application-inclusive-values"></a>응용 프로그램 포괄 값  
  응용 프로그램 포괄 값은 함수가 호출 스택에 있던 시간을 나타냅니다. 시간에는 컨텍스트 전환 및 입/출력 작업처럼 운영 체제에 대한 호출에 소요된 시간이 포함되지 않습니다. 그러나 자식 함수에서 소요된 시간은 포함됩니다.  
   
 |열|설명|  
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/19/2018
 |**최대 응용 프로그램 포괄 시간**|이 함수에 대한 호출의 최대 응용 프로그램 포괄 시간입니다.|  
 |**최소 응용 프로그램 포괄 시간**|이 함수에 대한 호출의 최소 응용 프로그램 포괄 시간입니다.|  
   
-## <a name="application-exclusive-values"></a>응용 프로그램 전용 시간값  
+## <a name="application-exclusive-values"></a>응용 프로그램 전용 값  
  응용 프로그램 전용 값은 함수가 호출 스택의 맨 위에서 직접 실행 중이던 시간을 나타냅니다. 시간에는 컨텍스트 전환 및 입/출력 작업처럼 운영 체제에 대한 호출에 소요된 시간이 포함되지 않으며 자식 함수에서 소요된 시간도 포함되지 않습니다.  
   
 |열|설명|  

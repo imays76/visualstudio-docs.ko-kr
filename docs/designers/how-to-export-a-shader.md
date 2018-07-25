@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632cd61d3844dc6f405090081ef76e5a2d6967b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1eb69a4662521c08fc8d2df34bbbfa41a5d1d7ea
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924997"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924081"
 ---
 # <a name="how-to-export-a-shader"></a>방법: 셰이더 내보내기
 이 문서에서는 앱에서 사용할 수 있도록 셰이더 디자이너를 사용하여 DGSL(Directed Graph Shader Language) 셰이더를 내보내는 방법을 보여 줍니다.
@@ -27,13 +27,13 @@ ms.locfileid: "31924997"
 ## <a name="exporting-a-shader"></a>셰이더 내보내기
  셰이더 디자이너를 사용하여 셰이더를 만든 후, 앱에서 사용하기 전에 그래픽 API가 이해하는 형식으로 셰이더를 내보내야 합니다. 요구 사항에 따라 다양한 방법으로 셰이더를 내보낼 수 있습니다.
 
-#### <a name="to-export-a-shader"></a>셰이더를 내보내려면
+### <a name="to-export-a-shader"></a>셰이더를 내보내려면
 
 1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 **시각적 셰이더 그래프(.dgsl)** 파일을 엽니다.
 
      열 수 있는 **시각적 셰이더 그래프(.dgsl)** 파일이 없으면 [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)에 설명된 대로 파일을 만듭니다.
 
-2.  **셰이더 디자이너** 도구 모음에서 **고급**, **내보내기**, **다른 이름으로 내보내기**를 선택합니다. **셰이더 내보내기** 대화 상자가 표시됩니다.
+2.  **셰이더 디자이너** 도구 모음에서 **고급** > **내보내기** > **다른 이름으로 내보내기**를 선택합니다. **셰이더 내보내기** 대화 상자가 나타납니다.
 
 3.  **파일 형식** 드롭다운 목록에서 내보내려는 형식을 선택합니다.
 

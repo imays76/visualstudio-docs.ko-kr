@@ -9,53 +9,45 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c9b51137c6b66fe2895bcc0e70e3ffab8ebd637e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303005"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 
-기본적으로 Visual Studio Code 검사 도구는 단위 테스트 중 로드된 모든 솔루션 어셈블리를 분석합니다. 이 기본값은 대부분은 문제 없이 작동하므로 유지하는 것이 좋습니다. 자세한 내용은 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
+기본적으로 코드 검사는 단위 테스트 중에 로드되는 모든 솔루션 어셈블리를 분석합니다. 이 기본 동작은 대부분은 문제 없이 작동하므로 사용하는 것이 좋습니다. 자세한 내용은 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
 
-코드 검사 동작을 사용자 지정하기 전에 몇 가지 다른 방법을 고려하세요.
+코드 검사 결과에서 테스트 코드를 제외하고 응용 프로그램 코드만 포함하려면 테스트 클래스에 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> 특성을 추가합니다.
 
-- *코드 검사 결과에서 테스트 코드를 제외하고 응용 프로그램 코드만 포함하려고 합니다.*
+솔루션의 일부가 아닌 어셈블리를 포함하려면 이러한 어셈블리에 대한 *.pdb* 파일을 얻어서 어셈블리 *.dll* 파일과 동일한 폴더에 복사합니다.
 
-     테스트 클래스에 `ExcludeFromCodeCoverage Attribute`를 추가합니다.
+## <a name="run-settings-file"></a>실행 설정 파일
 
-- *솔루션에 속하지 않는 어셈블리를 포함하려고 합니다.*
+[실행 설정 파일](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)은 유닛 테스트 도구에서 사용하는 구성 파일입니다. 고급 코드 검사 설정은 *.runsettings* 파일에서 지정합니다.
 
-     이러한 어셈블리에 대한 .pdb 파일을 얻어서 어셈블리 .dll 파일과 동일한 폴더에 복사합니다.
+코드 검사를 사용자 지정하려면 다음 단계를 수행합니다.
 
-코드 검사 동작을 사용자 지정하려면 [이 항목 끝 부분에 있는 샘플](#sample)을 복사한 다음, *.runsettings* 파일 확장명을 사용하여 솔루션에 추가합니다. 자신의 요구 사항에 맞게 편집한 다음 **테스트** 메뉴에서 **테스트 설정**, **테스트 설정 선택** 파일을 선택합니다. 이 아티클의 나머지 부분에서는 이 절차에 대해 자세히 설명합니다.
+1. 실행 설정 파일을 솔루션에 추가합니다. **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서 **추가** > **새 항목**, **XML File**을 차례로 선택합니다. 파일을 *CodeCoverage.runsettings*와 같은 이름으로 저장합니다.
 
-## <a name="the-run-settings-file"></a>실행 설정 파일
+1. 이 문서의 끝 부분에 있는 예제 파일에서 콘텐츠를 추가한 다음, 다음 섹션에 설명된 대로 각자의 요구 사항에 맞게 사용자 지정합니다.
 
-고급 코드 검사 설정은 *.runsettings* 파일에서 지정합니다. 실행 설정 파일은 유닛 테스트 도구에서 사용하는 구성 파일입니다. [이 항목의 끝 부분에 있는 샘플](#sample)을 복사한 다음 자신의 요구 사항에 맞게 편집하는 것이 좋습니다.
+1. 실행 설정 파일을 선택하려면 **테스트** 메뉴에서 **테스트 설정** > **테스트 설정 파일 선택**을 선택합니다. 명령줄 또는 빌드 워크플로에서 테스트를 실행하기 위한 실행 설정 파일을 지정하려면 [ *.runsettings* 파일을 사용하여 단위 데스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)을 참조하세요.
 
-코드 검사를 사용자 지정하려면 실행 설정 파일을 솔루션에 추가합니다.
+   **코드 검사 분석**을 선택하면 실행 설정 파일에서 구성 정보를 읽습니다.
 
-1. .xml 파일을 *.runsettings* 확장명으로 솔루션 항목으로 추가합니다.
+   > [!TIP]
+   > 테스트를 실행하거나 코드를 업데이트하면 이전 코드 검사 결과 및 코드 강조가 자동으로 숨겨지지 않습니다.
 
-     솔루션 탐색기의 솔루션 바로 가기 메뉴에서 **추가** > **새 항목**, **XML File**을 차례로 선택합니다. 파일을 *CodeCoverage.runsettings*로 끝나는 이름으로 저장합니다.
+사용자 지정 설정을 해제했다 다시 사용하도록 설정하려면 **테스트** > **테스트 설정** 메뉴에서 파일을 선택 취소 또는 선택합니다.
 
-2. 이 아티클 끝 부분에 있는 예제에서 콘텐츠를 추가한 다음, 다음 섹션에 설명된 대로 각자의 요구 사항에 맞게 사용자 지정합니다.
+![사용자 지정 설정 파일로 설정 메뉴 테스트](../test/media/codecoverage-settingsfile.png)
 
-3. **테스트** 메뉴에서 **테스트 설정** > **테스트 설정 파일 선택**을 차례로 선택하고 파일을 선택합니다.
+### <a name="specify-symbol-search-paths"></a>기호 검색 경로 지정
 
-4. 이제 **코드 검사 분석**을 실행하면 실행 설정 파일이 해당 동작을 제어합니다. 반드시 코드 검사를 다시 실행해야 합니다. 테스트를 실행하거나 코드를 업데이트하면 이전 검사 결과 및 코드 강조가 자동으로 숨겨지지 않습니다.
-
-5. 사용자 지정 설정을 해제했다 다시 사용하도록 설정하려면 **테스트** > **테스트 설정** 메뉴에서 파일을 선택 취소 또는 선택합니다.
-
- ![사용자 지정 설정 파일로 설정 메뉴 테스트](../test/media/codecoverage-settingsfile.png)
-
-유닛 테스트의 다른 측면은 동일한 실행 설정 파일에서 구성할 수 있습니다. 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요.
-
-### <a name="specifying-symbol-search-paths"></a>기호 검색 경로 지정
-
-어셈블리가 존재하려면 코드 검사에 기호(.pdb 파일)가 필요합니다. 솔루션에서 빌드한 어셈블리의 경우 기호 파일은 대개 이진 파일과 함께 있으며 코드 검사는 자동으로 실행됩니다. 하지만 코드 검사 분석에 참조된 어셈블리를 포함하려는 경우가 있습니다. 이런 경우에 .pdb 파일이 이진 파일과 가깝지 않을 수 있지만 .runsettings 파일에서 기호 검색 경로를 지정할 수 있습니다.
+코드 검사에는 어셈블리에 대한 기호 파일(*.pdb* 파일)이 필요합니다. 솔루션에서 빌드한 어셈블리의 경우 기호 파일은 대개 이진 파일과 함께 있으며 코드 검사는 자동으로 실행됩니다. 하지만 코드 검사 분석에 참조된 어셈블리를 포함하려는 경우가 있습니다. 이런 경우에 *.pdb* 파일이 이진 파일과 가깝지 않을 수 있지만 *.runsettings* 파일에서 기호 검색 경로를 지정할 수 있습니다.
 
 ```xml
 <SymbolSearchPaths>
@@ -64,10 +56,10 @@ ms.lasthandoff: 04/26/2018
 </SymbolSearchPaths>
 ```
 
-> [!WARNING]
-> 기호 확인은 어셈블리가 많은 원격 파일 위치를 사용할 경우 특히 오래 걸릴 수 있습니다. 따라서 원격 .pdb 파일을 이진(.dll 및.exe) 파일과 같은 로컬 위치에 복사하는 것이 좋습니다.
+> [!NOTE]
+> 기호 확인은 어셈블리가 많은 원격 파일 위치를 사용할 경우 특히 오래 걸릴 수 있습니다. 따라서 *.pdb* 파일을 이진(*.dll* 및.*exe*) 파일과 같은 로컬 위치에 복사하는 것이 좋습니다.
 
-### <a name="excluding-and-including"></a>제외 및 포함
+### <a name="exclude-and-include"></a>포함 및 제외
 
 코드 검사 분석에서 지정한 어셈블리를 제외할 수 있습니다. 예:
 
@@ -91,13 +83,13 @@ ms.lasthandoff: 04/26/2018
 </ModulePaths>
 ```
 
-`<Include>`가 비어 있을 경우, 코드 검사 처리에는 로드된 모든 어셈블리 및 .pdb 파일이 검색되는 모든 어셈블리가 포함됩니다. 코드 검사에는 `<Exclude>` 목록의 절과 일치하는 항목이 포함되지 않습니다.
+**Include**가 비어 있을 경우, 코드 검사 처리에는 로드된 모든 어셈블리 및 *.pdb* 파일이 검색되는 모든 어셈블리가 포함됩니다. 코드 검사에는 **Exclude** 목록의 절과 일치하는 항목이 포함되지 않습니다.
 
-`Include`는 `Exclude`보다 먼저 처리됩니다.
+**Include**는 **Exclude** 전에 처리됩니다.
 
 ### <a name="regular-expressions"></a>정규식
 
-Include 및 exclude 노드는 정규식을 사용합니다. 자세한 내용은 [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)을 참조하세요. 정규식은 와일드 카드와 다릅니다. 특히 다음과 같습니다.
+Include 및 exclude 노드는 정규식을 사용합니다. 자세한 내용은 [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)을 참조하세요. 정규식은 와일드카드와 다릅니다. 특히 다음과 같습니다.
 
 - **.\*** 은(는) 모든 문자의 문자열과 일치합니다.
 
@@ -105,7 +97,7 @@ Include 및 exclude 노드는 정규식을 사용합니다. 자세한 내용은 
 
 - **\\(   \\)** 는 괄호 “(  )”와 일치합니다.
 
-- **\\\\** 파일 경로 구분 기호 “\\”와 일치합니다.
+- **\\\\**파일 경로 구분 기호 “\\”와 일치합니다.
 
 - **^** 는 문자열의 시작과 일치합니다.
 
@@ -131,87 +123,48 @@ Include 및 exclude 노드는 정규식을 사용합니다. 자세한 내용은 
 ```
 
 > [!WARNING]
-> 이스케이프되지 않은 괄호, 일치하지 않는 괄호와 같이 정규식에 오류가 있는 경우 코드 검사 분석이 실행되지 않습니다.
+> 이스케이프되지 않은 괄호 또는 일치하지 않는 괄호와 같이 정규식에 오류가 있는 경우 코드 검사 분석이 실행되지 않습니다.
 
 ### <a name="other-ways-to-include-or-exclude-elements"></a>요소를 포함 또는 제외하는 다른 방법
 
-예제를 보려면 [이 항목의 끝 부분에 있는 샘플](#sample)을 참조하세요.
+- **ModulePath** - 어셈블리 파일 경로로 지정한 어셈블리와 일치시킵니다.
 
-- `ModulePath` - 어셈블리 파일 경로로 지정한 어셈블리입니다.
+- **CompanyName** – 어셈블리를 **회사** 특성으로 일치시킵니다.
 
-- `CompanyName` – 어셈블리를 회사 특성으로 일치시킵니다.
+- **PublicKeyToken** – 서명된 어셈블리를 공개 키 토큰으로 일치시킵니다.
 
-- `PublicKeyToken` – 서명된 어셈블리를 공개 키 토큰으로 일치시킵니다. 예를 들어, 모든 Visual Studio 구성 요소 및 확장과 일치시키려면 `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`을 사용합니다.
+- **소스** – 요소를 소스 파일이 정의된 경로 이름으로 일치시킵니다.
 
-- `Source` – 요소를 소스 파일이 정의된 경로 이름으로 일치시킵니다.
+- **특성** – 특정 특성이 연결된 요소에 일치시킵니다. 특성의 전체 이름을 지정하고 이름 끝의 "특성"을 포함합니다.
 
-- `Attribute` – 특정 특성이 연결된 요소에 일치시킵니다. 이름 끝의 "특성"을 포함하여 특성의 전체 이름을 지정합니다.
+- **함수** – 절차, 함수 또는 메서드를 정규화된 이름으로 일치시킵니다. 함수 이름을 일치시키려면 정규식은 네임스페이스, 클래스 이름, 메서드 이름, 매개 변수 목록을 포함한 함수의 정규화된 이름과 일치해야 합니다. 예:
 
-- `Function` – 절차, 함수 또는 메서드를 정규화된 이름으로 일치시킵니다.
+   ```csharp
+   Fabrikam.Math.LocalMath.SquareRoot(double);
+   ```
 
-**함수 이름 일치**
+   ```cpp
+   Fabrikam::Math::LocalMath::SquareRoot(double)
+   ```
 
-정규식은 네임스페이스, 클래스 이름, 메서드 이름, 매개 변수 목록을 포함한 함수의 정규화된 이름과 일치해야 합니다. 예를 들어 개체에 적용된
+   ```xml
+   <Functions>
+     <Include>
+       <!-- Include methods in the Fabrikam namespace: -->
+       <Function>^Fabrikam\..*</Function>
+       <!-- Include all methods named EqualTo: -->
+       <Function>.*\.EqualTo\(.*</Function>
+     </Include>
+     <Exclude>
+       <!-- Exclude methods in a class or namespace named UnitTest: -->
+       <Function>.*\.UnitTest\..*</Function>
+     </Exclude>
+   </Functions>
+   ```
 
-- C# 또는 Visual Basic의 경우: `Fabrikam.Math.LocalMath.SquareRoot(double)`입니다.
+## <a name="sample-runsettings-file"></a>샘플 .runsettings 파일
 
-- C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`
-
-```xml
-<Functions>
-  <Include>
-    <!-- Include methods in the Fabrikam namespace: -->
-    <Function>^Fabrikam\..*</Function>
-    <!-- Include all methods named EqualTo: -->
-    <Function>.*\.EqualTo\(.*</Function>
-  </Include>
-  <Exclude>
-    <!-- Exclude methods in a class or namespace named UnitTest: -->
-    <Function>.*\.UnitTest\..*</Function>
-  </Exclude>
-</Functions>
-```
-
-## <a name="how-to-specify-run-settings-files-while-running-tests"></a>테스트 실행 중 실행 설정 파일을 지정하는 방법
-
-### <a name="to-customize-run-settings-in-visual-studio-tests"></a>Visual Studio 테스트에서 실행 설정을 사용자 지정하려면
-
-**테스트** > **테스트 설정** > **테스트 설정 파일 선택**을 차례로 선택하고 *.runsettings* 파일을 선택합니다. 테스트 설정 메뉴에 파일이 나타나고 해당 파일을 선택 또는 취소할 수 있습니다. 파일이 선택된 상태에서 **코드 검사 분석**을 사용할 때마다 실행 설정 파일이 적용됩니다.
-
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>명령줄 테스트에서 실행 설정을 사용자 지정하려면
-
-명령줄에서 테스트를 실행하려면 *vstest.console.exe*를 사용합니다. 설정 파일은 이 유틸리티의 매개 변수입니다.
-
-1. Visual Studio 개발자 명령 프롬프트를 시작합니다.
-
-    Windows **시작** 메뉴에서 **Visual Studio 2017** > **VS 2017용 개발자 명령 프롬프트**를 선택합니다.
-
-2. 다음 명령을 실행합니다.
-
-    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
-
-### <a name="to-customize-run-settings-in-a-build-definition"></a>빌드 정의에서 실행 설정을 사용자 지정하려면
-
-팀 빌드에서 코드 검사 데이터를 가져올 수 있습니다.
-
-![빌드 정의에 runsettings 지정](../test/media/codecoverage-buildrunsettings.png)
-
-1. 실행 설정 파일이 체크 인되었는지 확인하세요.
-
-2. 팀 탐색기에서 **빌드**를 연 다음 빌드 정의를 추가하거나 편집합니다.
-
-3. **프로세스** 페이지에서 **자동화된 테스트** > **테스트 소스** > **실행 설정**을 확장합니다. *.runsettings* 파일을 선택합니다.
-
-   > [!TIP]
-   > **테스트 어셈블리**가 **테스트 소스** 대신 표시되고 *.testsettings* 파일만 선택할 수 있는 경우 다음과 같이 **Test Runner** 속성을 설정합니다. **자동화된 테스트**에서 **테스트 어셈블리**를 선택한 다음, 줄 끝에서 **[...]** 를 선택합니다. **테스트 실행 추가/편집** 대화 상자에서 **Test Runner**를 **Visual Studio Test Runner**로 설정합니다.
-
-빌드 보고서의 요약 섹션에 결과가 표시됩니다.
-
-##  <a name="sample"></a> 샘플 .runsettings 파일
-
-이 코드를 복사하고 자신의 필요에 따라 편집합니다.
-
-(실행 설정 파일의 다른 용도에 대해서는 [실행 설정 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)을 참조하세요.)
+이 코드를 복사하고 필요에 따라 편집합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -326,5 +279,6 @@ Included items must then not match any entries in the exclude list to remain inc
 
 ## <a name="see-also"></a>참고 항목
 
+- [실행 설정 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 - [코드 단위 테스트](../test/unit-test-your-code.md)

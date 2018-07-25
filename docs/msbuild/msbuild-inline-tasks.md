@@ -12,20 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39bc1acd059c9a915f330c74140c89d5f4fa40ff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c8390638179443b5e8abe847a0f0421402361f25
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574642"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080394"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 인라인 작업
 MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
   
  .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 따라서 소스 코드를 추적하기 위해 더 쉽고 작업을 배포하기도 더 쉽습니다. 소스 코드는 스크립트에 통합됩니다.  
   
+
+ MSBuild 15.8에서 .NET Standard 플랫폼 간 인라인 작업을 만들 수 있도록 [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md)가 추가되었습니다.  .NET Core에서 인라인 작업을 사용하는 경우 RoslynCodeTaskFactory를 사용해야 합니다.
 ## <a name="the-structure-of-an-inline-task"></a>인라인 작업의 구조  
- 인라인 작업은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소에 의해 포함됩니다. 인라인 작업 및 이 작업을 포함하는 `UsingTask` 요소는 일반적으로 .targets 파일에 포함되며 필요할 때 다른 프로젝트 파일로 가져옵니다. 다음은 기본 인라인 작업입니다. 이 작업은 아무 것도 수행하지 않습니다.  
+ 인라인 작업은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소에 의해 포함됩니다. 인라인 작업 및 이 작업을 포함하는 `UsingTask` 요소는 일반적으로 *.targets* 파일에 포함되며 필요할 때 다른 프로젝트 파일로 가져옵니다. 다음은 기본 인라인 작업입니다. 이 작업은 아무 것도 수행하지 않습니다.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -55,7 +57,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
  `DoNothing` 작업의 나머지 요소는 비어 있으며 인라인 작업의 순서 및 구조를 보여 주기 위해 제공됩니다. 이 항목의 뒷부분에 보다 강력한 예제가 제공됩니다.  
   
--   `ParameterGroup` 요소는 선택적입니다. 이 요소를 지정하면 작업에 대한 매개 변수를 선언합니다. 입력 및 출력 매개 변수에 대한 자세한 내용은 이 항목 뒷부분에 나오는 "입력 및 출력 매개 변수"를 참조하세요.  
+-   `ParameterGroup` 요소는 선택적입니다. 이 요소를 지정하면 작업에 대한 매개 변수를 선언합니다. 입력 및 출력 매개 변수에 대한 자세한 내용은 이 항목 뒷부분에 나오는 [입력 및 출력 매개 변수](#input-and-output-parameters)를 참조하세요.  
   
 -   `Task` 요소는 작업 소스 코드를 설명하고 포함합니다.  
   
@@ -88,7 +90,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 > [!NOTE]
 >  소스 파일에서 클래스 이름을 정의할 때 클래스 이름은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소의 `TaskName` 특성에 부합되어야 합니다.  
   
-## <a name="hello-world"></a>Hello World  
+## <a name="helloworld"></a>HelloWorld  
  다음은 좀 더 강력한 인라인 작업입니다. HelloWorld 작업은 일반적으로 시스템 콘솔 또는 Visual Studio **출력** 창에 해당하는 기본 오류 로깅 장치에 "Hello, world!"를 표시합니다. 이 예제의 `Reference` 요소는 단지 설명을 위해 포함되었습니다.  
   
 ```xml  
@@ -114,7 +116,7 @@ Log.LogError("Hello, world!");
 </Project>  
 ```  
   
- HelloWorld.targets라는 파일에 HelloWorld 작업을 저장하고 다음과 같이 프로젝트에서 호출할 수 있습니다.  
+ *HelloWorld.targets*라는 파일에 HelloWorld 작업을 저장한 다음, 다음과 같이 프로젝트에서 호출할 수 있습니다.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -142,7 +144,7 @@ Log.LogError("Hello, world!");
   
 -   `Output`는 기본적으로 `false`인 선택적 특성입니다. `true`이면 먼저 매개 변수에 값이 지정되어야 Execute 메서드에서 반환될 수 있습니다.  
   
- 예를 들어 개체에 적용된  
+예를 들어 개체에 적용된  
   
 ```xml  
 <ParameterGroup>  
@@ -152,7 +154,7 @@ Log.LogError("Hello, world!");
 </ParameterGroup>  
 ```  
   
- 다음과 같은 세 개의 매개 변수를 정의합니다.  
+다음과 같은 세 개의 매개 변수를 정의합니다.  
   
 -   `Expression`은 System.String 형식의 필수 입력 매개 변수입니다.  
   

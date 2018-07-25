@@ -15,32 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e9af303b91cc0cdabc184f7ced329289eb7bd8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578222"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079124"
 ---
 # <a name="how-to-clean-a-build"></a>방법: 빌드 정리
 빌드를 정리할 때 프로젝트 및 구성 요소 파일을 그대로 두고 모든 중간 파일과 출력 파일이 삭제됩니다. 그런 다음 프로젝트 및 구성 요소 파일에서 중간 파일과 출력 파일의 새 인스턴스를 빌드할 수 있습니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 통해 제공되는 일반 작업 라이브러리에는 시스템 명령을 실행하는 데 사용할 수 있는 [Exec](../msbuild/exec-task.md) 작업이 포함됩니다. 작업의 라이브러리에 자세한 내용은 [작업 참조](../msbuild/msbuild-task-reference.md)를 참조하세요.  
   
-## <a name="creating-a-directory-for-output-items"></a>출력 항목에 대한 디렉터리 만들기  
- 기본적으로 프로젝트를 컴파일할 때 만들어진 .exe 파일은 프로젝트 및 원본 파일과 동일한 디렉터리에 배치됩니다. 그러나 일반적으로 출력 항목은 별도 디렉터리에 생성됩니다.  
+## <a name="create-a-directory-for-output-items"></a>출력 항목에 대한 디렉터리 만들기  
+ 기본적으로 프로젝트를 컴파일할 때 만들어진 *.exe* 파일은 프로젝트 및 원본 파일과 동일한 디렉터리에 배치됩니다. 그러나 일반적으로 출력 항목은 별도 디렉터리에 생성됩니다.  
   
 #### <a name="to-create-a-directory-for-output-items"></a>출력 항목에 대한 디렉터리를 만들려면  
   
-1.  `Property` 요소를 사용하여 디렉터리의 위치 및 이름을 정의합니다. 예를 들어 프로젝트 및 원본 파일이 포함된 디렉터리에 `BuiltApp`이라는 디렉터리를 만듭니다.  
+1.  `Property` 요소를 사용하여 디렉터리의 위치 및 이름을 정의합니다. 예를 들어 프로젝트 및 원본 파일이 포함된 디렉터리에 *BuiltApp*이라는 디렉터리를 만듭니다.  
   
      `<builtdir>BuiltApp</builtdir>`  
   
 2.  디렉터리가 없는 경우 [MakeDir](../msbuild/makedir-task.md) 작업을 사용하여 디렉터리를 만듭니다. 예:  
   
-     `<MakeDir Directories = "$(builtdir)"`  
+     ```xml
+     <MakeDir Directories = "$(builtdir)"  
+      Condition = "!Exists('$(builtdir)')" />
+     ```
   
-     `Condition = "!Exists('$(builtdir)')" />`  
-  
-## <a name="removing-the-output-items"></a>출력 항목 제거  
+## <a name="remove-the-output-items"></a>출력 항목 제거  
  중간 파일 및 출력 파일의 새 인스턴스를 만들기 전에 중간 파일 및 출력 파일의 모든 이전 인스턴스를 취소할 수 있습니다. [RemoveDir](../msbuild/removedir-task.md) 작업을 사용하여 디렉터리 및 모든 파일과 디스크에서 포함하는 디렉터리를 삭제합니다.  
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>디렉터리에 포함된 디렉터리 및 모든 파일을 제거하려면  

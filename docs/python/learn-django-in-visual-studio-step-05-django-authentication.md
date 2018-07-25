@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103140"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946977"
 ---
-# <a name="tutorial-step-5-authenticate-users-in-django"></a>자습서 5단계: Django에서 사용자 인증
+# <a name="step-5-authenticate-users-in-django"></a>5단계: Django에서 사용자 인증
 
 **이전 단계: [전체 Django 웹 프로젝트 템플릿 사용](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
@@ -62,7 +62,7 @@ ms.locfileid: "33103140"
     {% endif %}
     ```
 
-1. 처음으로 앱을 시작하면 인증된 사용자가 없기 때문에 이 템플릿 코드는 “로그인” 링크를 상대 경로 “login”으로만 렌더링합니다. 이전 섹션에 표시된 `urls.py`에 지정된 대로 해당 경로는 다음 데이터가 제공되는 `django.contrib.auth.views.login` 보기에 매핑됩니다.
+1. 처음으로 앱을 시작하면 인증된 사용자가 없기 때문에 이 템플릿 코드는 “로그인” 링크를 상대 경로 “login”으로만 렌더링합니다. 이전 섹션에 표시된 `urls.py`에 지정된 대로 해당 경로는 `django.contrib.auth.views.login` 보기에 매핑됩니다. 해당 보기는 다음 데이터를 수신합니다.
 
     ```python
     {
@@ -144,13 +144,13 @@ ms.locfileid: "33103140"
     {% endblock %}
     ```
 
-1. 양식을 제출하면 Django는 사용자가 제공한 자격 증명(예: 슈퍼 사용자의 자격 증명)을 인증하려고 합니다. 인증에 실패하면 동일한 페이지에 유지되지만 `form.errors`는 true로 설정됩니다. 인증에 성공하면 Django는 “next” 필드 `<input type="hidden" name="next" value="/" />`의 상대 URL(이 경우 홈페이지(`/`))로 이동합니다.
+1. 양식을 제출하면 Django는 사용자 자격 증명(예: 슈퍼 사용자의 자격 증명)을 인증하려고 합니다. 인증에 실패하면 현재 페이지에 유지되지만 `form.errors`는 true로 설정됩니다. 인증에 성공하면 Django는 “next” 필드 `<input type="hidden" name="next" value="/" />`의 상대 URL(이 경우 홈페이지(`/`))로 이동합니다.
 
 1. 이제 홈페이지를 다시 렌더링하면 `loginpartial.html` 템플릿이 렌더링될 때 `user.is_authenticated` 속성은 true입니다. 따라서 “Hello (사용자 이름)” 메시지와 “로그오프”가 표시됩니다. 앱의 다른 부분에서 `user.is_authenticated`를 사용하여 인증을 확인할 수 있습니다.
 
     ![Django 웹 프로젝트 앱 페이지의 Hello 메시지 및 로그오프 컨트롤](media/django/step05-logoff-control.png)
 
-1. 인증된 사용자에게 특정 리소스에 액세스할 수 있는 권한이 있는지 확인하려면 해당 사용자에 대한 데이터베이스에서 사용자 관련 권한을 검색해야 합니다. 자세한 내용은 [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization)(Django 인증 시스템 사용)(Django 문서)을 참조하세요.
+1. 인증된 사용자에게 특정 리소스에 액세스할 수 있는 권한이 있는지 확인하려면 데이터베이스에서 사용자별 사용 권한을 검색해야 합니다. 자세한 내용은 [Django 인증 시스템 사용](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization)(Django 문서)을 참조하세요.
 
 1. 특히 슈퍼 사용자 또는 관리자는 상대 URL “/admin/” 및 “/admin/doc/”를 사용하여 기본 제공 Django 관리자 인터페이스에 액세스할 수 있습니다. 이러한 인터페이스를 사용하려면 Django 프로젝트의 `urls.py`를 열고 다음 항목에서 주석을 제거하세요.
 
@@ -200,14 +200,14 @@ ms.locfileid: "33103140"
 
 ### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>질문: \<form\> 요소에 나타나는 {% crsf_token %} 태그의 용도는 무엇인가요?
 
-대답: `{% crsf_token %}` 태그에는 Django의 기본 제공 [CSRF(교차 사이트 요청 위조) 보호](https://docs.djangoproject.com/en/2.0/ref/csrf/)(Django 문서)가 포함됩니다. 일반적으로 양식과 같이 POST, PUT 또는 DELETE 요청 메서드를 포함하는 요소에 이 태그를 추가합니다. 그러면 템플릿 렌더링 함수(`render`)에서 필요한 보호를 삽입합니다.
+대답: `{% crsf_token %}` 태그에는 Django의 기본 제공 [CSRF(교차 사이트 요청 위조) 보호](https://docs.djangoproject.com/en/2.0/ref/csrf/)(Django 문서)가 포함됩니다. 일반적으로 양식과 같이 POST, PUT 또는 DELETE 요청 메서드를 포함하는 요소에 이 태그를 추가합니다. 그런 다음, 템플릿 렌더링 함수(`render`)에서 필요한 보호를 삽입합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
 > [!div class="nextstepaction"]
 > [설문 조사 Django 웹 프로젝트 템플릿 사용](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="going-deeper"></a>자세히 알아보기
+## <a name="go-deeper"></a>자세히 알아보기
 
 - [User authentication in Django](https://docs.djangoproject.com/en/2.0/topics/auth/)(Django의 사용자 인증)(docs.djangoproject.com)
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
