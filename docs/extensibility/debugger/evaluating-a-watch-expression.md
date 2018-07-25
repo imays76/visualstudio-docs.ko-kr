@@ -1,5 +1,5 @@
 ---
-title: 조사식 평가 | Microsoft Docs
+title: 조사식 창 계산 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d86b94a457934547037f2428e6284f20de1660d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7959dbb29b6248bb56caefef56d2d7786118fcf0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106996"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231368"
 ---
-# <a name="evaluating-a-watch-expression"></a>조사식 평가
+# <a name="evaluate-a-watch-expression"></a>조사식 평가
 > [!IMPORTANT]
->  Visual Studio 2015에서 구현 하는 식 계산기의 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하십시오 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+>  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
- Visual Studio 조사식 식의 값을 표시할 준비가 되 면 호출 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 를 호출 하 여 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)합니다. 이렇게 하면이 생성 한 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 값과 식의 형식이 포함 된 개체입니다.  
+ Visual Studio 조사식 값을 표시할 준비가 되 면 호출한 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)를 호출 하 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)합니다. 이 프로세스 생성을 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 값 및 식의 형식을 포함 하는 개체입니다.  
   
- 이 구현에서 `IDebugParsedExpression::EvaluateSync`, 식이 구문 분석 되 고 동시에 평가 합니다. 이 구현에서는 다음 작업을 수행합니다.  
+ 이 구현에서 `IDebugParsedExpression::EvaluateSync`, 식을 구문 분석 되 고 동시에 평가 합니다. 이 구현은 다음 작업을 수행합니다.  
   
-1.  구문 분석 하 고 식을 계산 하는 값과 해당 형식을 보유 하는 일반 개체를 생성 합니다. C#에서는 처럼 나타냅니다는 `object` c + +에서 처럼 나타냅니다 동안는 `VARIANT`합니다.  
+1.  구문 분석 하 고 해당 형식과 값을 보유 하는 일반 개체를 생성 하는 식을 계산 합니다. C#으로 표시 됩니다는 `object` 하는 동안 c + +에서는이 구조로 표시 됩니다는 `VARIANT`합니다.  
   
-2.  클래스를 인스턴스화하 (호출 `CValueProperty` 이 예에서)를 구현 하는 `IDebugProperty2` 인터페이스 및 클래스에 반환 될 값을 저장 합니다.  
+2.  클래스를 인스턴스화합니다 (호출 `CValueProperty` 이 예제의)를 구현 하는 `IDebugProperty2` 인터페이스 및 클래스의 반환 값을 저장 합니다.  
   
-3.  반환 된 `IDebugProperty2` 에서 인터페이스는 `CValueProperty` 개체입니다.  
+3.  반환 된 `IDebugProperty2` 에서 인터페이스를 `CValueProperty` 개체입니다.  
   
 ## <a name="managed-code"></a>관리 코드  
- 이의 구현에서 `IDebugParsedExpression::EvaluateSync` 관리 코드에서. 도우미 메서드는 `Tokenize` 식을 구문 분석 트리로 구문 분석 합니다. 도우미 함수 `EvalToken` 토큰 값으로 변환 합니다. 도우미 함수 `FindTerm` 구문 분석 트리를 이동 하는 재귀적으로 호출 `EvalToken` (더하기 또는 빼기)는 모든 작업을 식에 적용 된 값을 나타내는 각 노드에 대해 합니다.  
+ 이 구현의 `IDebugParsedExpression::EvaluateSync` 관리 코드에서. 도우미 메서드 `Tokenize` 는 식 구문 분석 트리를 구문 분석 합니다. 도우미 함수 `EvalToken` 토큰 값으로 변환 합니다. 도우미 함수 `FindTerm` 재귀적으로 구문 분석 트리를 트래버스 호출 `EvalToken` 값을 나타내는 식의 모든 작업 (더하기 또는 빼기)를 적용 및 각 노드에 대 한 합니다.  
   
 ```csharp  
 namespace EEMC  
@@ -82,10 +82,10 @@ namespace EEMC
 }  
 ```  
   
-## <a name="unmanaged-code"></a>비관리 코드  
- 이의 구현에서 `IDebugParsedExpression::EvaluateSync` 비관리 코드에서. 도우미 함수 `Evaluate` 구문 분석 하 고 반환 된 식을 평가 `VARIANT` 결과 값을 보유 합니다. 도우미 함수 `VariantValueToProperty` 번들은 `VARIANT` 에 `CValueProperty` 개체입니다.  
+## <a name="unmanaged-code"></a>관리 되지 않는 코드  
+ 이 구현의 `IDebugParsedExpression::EvaluateSync` 비관리 코드에서. 도우미 함수 `Evaluate` 구문 분석 하 고 반환 하는 식 평가 `VARIANT` 결과 값을 보유 합니다. 도우미 함수 `VariantValueToProperty` 번들의 `VARIANT` 에 `CValueProperty` 개체입니다.  
   
-```  
+```cpp  
 [C++]  
 STDMETHODIMP CParsedExpression::EvaluateSync(   
     in  DWORD                 evalFlags,  
@@ -175,6 +175,6 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [조사식 창 식 평가](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [식 계산의 샘플 구현](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
