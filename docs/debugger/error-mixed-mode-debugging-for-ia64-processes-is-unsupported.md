@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471361"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>오류: IA64 프로세스에 대해서는 혼합 모드 디버깅을 수행할 수 없습니다.
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거에서는 Itanium 기반 프로세스의 혼합 네이티브 및 관리 코드에 대한 디버깅이 지원되지 않습니다.  

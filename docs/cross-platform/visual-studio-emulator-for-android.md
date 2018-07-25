@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Emulator for Android | Microsoft Docs
 ms.custom: ''
-ms.date: 07/17/2017
+ms.date: 07/03/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
@@ -10,19 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e1e24a1482f40664d3f0c154d362c08bb9fa17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5fffd9ac865b281dc921997f48d7609a9429f64
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890229"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터
+
 Android용 Visual Studio 에뮬레이터는 Android 장치를 에뮬레이트하는 데스크톱 응용 프로그램입니다. 물리적 장치를 사용하지 않고도 Android 앱을 디버그하고 테스트할 수 있는 가상화된 환경을 제공합니다. 또한 응용 프로그램 프로토타입을 위한 격리된 환경을 제공합니다.  
 
 > [!IMPORTANT]
 > 대부분의 시나리오에서 Android용 Visual Studio 에뮬레이터 대신 Google Android 에뮬레이터를 사용하는 것이 좋습니다.
-> - Android용 Visual Studio 에뮬레이터에 사용하기 위해 Android 이미지 이전 버전 6.0을 게시할 계획이 없기 때문에 Android 7.0 이상을 포함하는 에뮬레이터 이미지가 필요한 경우.
-> - Apache Cordova용 Visual Studio Tools를 사용하는 경우. 자세한 내용은 [Android에서 Apache Cordova 앱 실행](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)을 참조하세요.
+> - Visual Studio 2015 이후에는 Android용 Visual Studio 에뮬레이터가 지원되지 않습니다.
+> - Android 6.0 이상인 에뮬레이터 이미지는 Android용 Visual Studio 에뮬레이터에서 사용할 수 없습니다.
+> - Google Android 에뮬레이터는 이제 [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v)를 지원합니다.
+> - Apache Cordova용 Visual Studio Tools는 Google Android 에뮬레이터와 함께 작동합니다. 자세한 내용은 [Android에서 Apache Cordova 앱 실행](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)(이 문서에서 설명된 대로 더 이상 Hyper-v를 사용 중지할 필요가 없음)을 참조하세요.
+>
+> Google Android 에뮬레이터를 구성하고 사용하는 방법에 대한 자세한 내용은 [Android 에뮬레이터 설정](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)을 참조하세요.
   
  Android용 Visual Studio 에뮬레이터는 실제 장치와 비슷한 성능을 제공하도록 설계되었습니다. 하지만 앱을 게시하기 전에 물리적 장치에서 앱을 테스트하는 것이 좋습니다.  
   

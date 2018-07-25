@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477013"
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>등록 값을 확인 하 고 Visual Studio 디버거에서 레지스터 창 사용
 레지스터 창은 되 주소 수준 디버깅을 활성화 한 경우에 사용할 수는 **옵션** 대화 상자, **디버깅** 노드를 **일반** 범주입니다.  

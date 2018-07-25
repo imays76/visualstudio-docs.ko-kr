@@ -1,14 +1,14 @@
 ---
-title: "IEnumJsStackFrames 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IEnumJsStackFrames 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 49e7b425-df17-4d7f-87ff-0bc82715c911
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727323"
 ---
 # <a name="ienumjsstackframes-interface"></a>IEnumJsStackFrames 인터페이스
 스택을 제공 하도록 디버거를 구현한 JavaScript 위한 jscript9diag.dll를 해제 합니다.  

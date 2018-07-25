@@ -10,25 +10,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd65344520d003c138b7250bec7cd6f1cc9da79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890050"
 ---
 # <a name="accessibility-products-and-services-blend"></a>내게 필요한 옵션 제품 및 서비스(Blend)
 Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽게 만들기 위해 최선을 다하고 있습니다. 다음 섹션에서는 장애가 있는 사용자가 Microsoft Windows를 보다 쉽게 사용할 수 있도록 하는 기능, 제품 및 서비스에 대한 정보를 제공합니다.
 
--   "Windows의 접근성 기능"
+-   Windows의 접근성 기능
 
--   "대체 형식의 설명서"
+-   대체 형식의 설명서
 
--   "청각 장애가 있는 사용자를 위한 고객 서비스"
+-   청각 장애가 있는 사용자를 위한 고객 서비스
 
--   "추가 정보"
+-   추가 정보
 
 > [!NOTE]
->  이 섹션의 정보는 미국에서 Microsoft 제품 사용 허가를 받은 사용자에게만 적용될 수 있습니다. 미국 이외의 지역에서 이 제품을 구입한 경우 소프트웨어 패키지와 함께 제공된 Microsoft 자회사 정보 카드를 사용하거나 [Microsoft 접근성 사이트](http://go.microsoft.com/fwlink/?LinkID=75069) 를 방문하여 Microsoft 지원 서비스 전화 번호와 주소를 볼 수 있습니다. 자회사에 연락하여 이 섹션에서 설명하는 제품 및 서비스 유형이 해당 지역에서 제공되는지 확인할 수 있습니다. 내게 필요한 옵션에 대한 정보는 일본어, 프랑스어 등 다른 언어로도 제공됩니다.
+>  이 섹션의 정보는 미국에서 Microsoft 제품 사용 허가를 받은 사용자에게만 적용될 수 있습니다. 미국 이외의 지역에서 이 제품을 구입한 경우 소프트웨어 패키지와 함께 제공된 Microsoft 자회사 정보 카드를 사용하거나 [Microsoft 접근성 사이트](http://go.microsoft.com/fwlink/?LinkID=75069)를 방문하여 Microsoft 지원 서비스 전화 번호와 주소를 볼 수 있습니다. 자회사에 연락하여 이 섹션에서 설명하는 제품 및 서비스 유형이 해당 지역에서 제공되는지 확인할 수 있습니다. 내게 필요한 옵션에 대한 정보는 일본어, 프랑스어 등 다른 언어로도 제공됩니다.
 
 ## <a name="accessibility-features-of-windows"></a>Windows의 접근성 기능
  Windows 운영 체제에는 키보드 입력 또는 마우스를 사용하는 데 어려움이 있거나 시력 또는 청각 장애가 있는 사용자에게 유용한 여러 접근성 기능이 기본 제공됩니다. 해당 기능은 설치 중에 설치됩니다. 이러한 기능에 대한 자세한 내용은 Windows 도움말 및 [Microsoft 접근성 사이트](http://go.microsoft.com/fwlink/?LinkID=75069)를 참조하세요.
@@ -60,11 +61,11 @@ Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽�
 
  팩스: (609) 987-8116
 
- [Learning Ally 사이트](http://go.microsoft.com/fwlink/?LinkId=111110)
+ [Learning ally 사이트](http://go.microsoft.com/fwlink/?LinkId=111110)
 
  웹 주소는 변경될 수 있으므로 여기에 나와 있는 사이트에 연결되지 않을 수도 있습니다.
 
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>청각 장애인을 위한 고객 서비스
+## <a name="customer-service-for-people-with-hearing-impairments"></a>청각 장애가 있는 사용자를 위한 고객 서비스
  난청이나 청각 장애가 있는 경우 문자 전화(TTY/TDD) 서비스를 통해 Microsoft 제품 및 고객 서비스를 모두 이용할 수 있습니다.
 
  고객 서비스를 받으려면 월요일 ~ 금요일(공휴일 제외), 오전 6시 30분부터 오후 5시 30분(태평양 표준시)까지 Microsoft Sales Information Center((800) 892-5234)로 문의하세요.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122394"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 이 개체와 개체를 비교합니다.  

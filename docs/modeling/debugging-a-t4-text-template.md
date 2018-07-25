@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954354"
 ---
 # <a name="debugging-a-t4-text-template"></a>T4 텍스트 템플릿 디버깅
 텍스트 서식 파일에서 중단점을 설정할 수 있습니다. 디자인 타임 텍스트 서식 파일을 디버깅 하려면 텍스트 템플릿 파일을 저장 한 다음 선택 **T4 템플릿 디버깅** 솔루션 탐색기에서 파일의 바로 가기 메뉴. 런타임 텍스트 서식 파일을 디버깅 하려면 단순히 속해 있는 응용 프로그램을 디버깅 합니다.

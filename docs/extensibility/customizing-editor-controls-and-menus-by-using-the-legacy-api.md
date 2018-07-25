@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102384"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 편집기 컨트롤 및 메뉴를 사용자 지정
 언어 서비스 또는 텍스트 보기 상황에 맞는 메뉴 및 편집기에서 컨트롤을 제어할 수 있습니다. 이 섹션의 페이지에는 이러한 기능을 사용 하는 방법을 자세히 설명 합니다.  

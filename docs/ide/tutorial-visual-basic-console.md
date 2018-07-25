@@ -13,17 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: ce1c40a7031145a13eb2eebf8adaee4eba51e9fc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280340"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Visual Studio에서 Visual Basic 시작
 
 VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 몇 가지 콘솔 앱을 만들어 실행하고, 그 과정에서 [Visual Studio IDE(통합 개발 환경)](visual-studio-ide.md)의 일부 기능을 살펴봅니다.
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="before-you-begin"></a>시작하기 전에
 
@@ -51,20 +52,22 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
 ### <a name="create-a-project"></a>프로젝트 만들기
 
-먼저 Visual Basic 응용 프로그램 프로젝트를 만들겠습니다. 아무것도 추가하지 않아도 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
+먼저 Visual Basic 응용 프로그램 프로젝트를 만들겠습니다. 아무 것도 추가하지 않아도 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
 
 1. Visual Studio 2017을 엽니다.
 
 2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *HelloWorld*로 지정합니다.  
+3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *HelloWorld*로 지정합니다.
 
    ![Visual Studio IDE의 새 프로젝트 대화 상자의 콘솔 앱(.NET Core) 프로젝트 템플릿](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 #### <a name="add-a-workgroup-optional"></a>(선택 사항) 작업 그룹 추가
+
 **콘솔 앱(.NET Core)** 프로젝트 템플릿이 표시되지 않는 경우, **.NET Core 플랫폼 간 개발** 워크로드를 추가하여 얻을 수 있습니다. 컴퓨터에 Visual Studio 2017 업데이트가 설치되었는지 여부에 따라 다음 두 방법 중 하나로 이 워크로드를 추가할 수 있습니다.
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>옵션 1: 새 프로젝트 대화 상자 사용
+
 1. **새 프로젝트** 대화 상자에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다.
 
   ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크를 클릭합니다.](../ide/media/vs-open-visual-studio-installer-generic.png)
@@ -74,11 +77,12 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
    ![Visual Studio Installer에서 .NET Core 플랫폼 간 개발 워크로드](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>옵션 2: 도구 메뉴 모음 사용
+
 1. **새 프로젝트** 대화 상자를 취소하고 나가 상단 메뉴 모음에서 **도구** > **도구 및 기능 가져오기**를 선택합니다.
 
-2. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.   
+2. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
-## <a name="create-a-what-is-your-name-application"></a>“What Is Your Name” 응용 프로그램 만들기
+## <a name="create-a-what-is-your-name-application"></a>"What Is Your Name" 응용 프로그램 만들기
 
 사용자 이름 입력을 요청한 다음 날짜 및 시간과 함께 해당 이름을 표시하는 앱을 만들어 보겠습니다. 방법은 다음과 같습니다.
 
@@ -105,10 +109,11 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
 5. 콘솔 창을 닫으려면 아무 키나 누릅니다.
 
-## <a name="create-a-calculate-this-application"></a>“Calculate This” 응용 프로그램 만들기
+## <a name="create-a-calculate-this-application"></a>"Calculate This" 응용 프로그램 만들기
+
 1. Visual Studio 2017을 열고 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-2. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *CalculateThis*로 지정합니다.  
+2. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *CalculateThis*로 지정합니다.
 
 3. `Module Program` 줄과 `End Module` 줄 사이에 다음 코드를 입력합니다.
 
@@ -131,7 +136,7 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
    ![Calculate This code를 표시하는 코드 창](../ide/media/vb-codewindow-calculate-this.png)
 
-4. **CalculateThis**를 클릭하여 프로그램을 실행합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.       
+4. **CalculateThis**를 클릭하여 프로그램을 실행합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
 
     ![수행할 작업을 선택하는 프롬프트가 포함된 CaluculateThis 앱이 표시된 콘솔 창](../ide/media/vb-console-calculate-this.png)
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139070"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 요소
 다른.vsct 파일에 정의 된 명령에 액세스 하기 위해 VSPackage를 수 있습니다. 예를 들어 VSPackage는 표준을 사용 하 여 **복사** 문자로 정의 되는 명령에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 셸 명령을 추가할 수 있습니다는 메뉴 또는 도구 모음을 다시 구현 하지 않고도 합니다.  

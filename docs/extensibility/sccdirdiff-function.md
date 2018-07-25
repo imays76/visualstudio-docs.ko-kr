@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138024"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 함수
 이 함수는 클라이언트 디스크에서 현재 로컬 디렉터리와 해당 소스 제어에서 프로젝트 간의 차이 표시합니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704150"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode(devenv.exe)
 안전 모드에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]을(를) 시작하고 기본 환경 및 서비스만 로드합니다.

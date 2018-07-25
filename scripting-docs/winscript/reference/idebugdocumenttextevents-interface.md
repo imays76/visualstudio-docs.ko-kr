@@ -1,16 +1,16 @@
 ---
-title: "IDebugDocumentTextEvents 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugDocumentTextEvents 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentTextEvents interface
 ms.assetid: 341b20fd-994c-4030-a06b-6c66ad38c35d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728003"
 ---
 # <a name="idebugdocumenttextevents-interface"></a>IDebugDocumentTextEvents 인터페이스
 연결 된 텍스트 문서에 대 한 변경 되었음을 나타내는 이벤트를 제공 합니다.  

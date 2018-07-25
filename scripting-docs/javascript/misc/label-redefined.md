@@ -1,13 +1,13 @@
 ---
-title: "레이블을 재정의 했습니다 | Microsoft Docs"
-ms.custom: 
+title: 레이블을 재정의 했습니다 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1025
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633023"
 ---
 # <a name="label-redefined"></a>레이블이 다시 정의되었습니다.
 새 레이블을 만들었지만 기존 레이블의 이름을 지정 합니다. 레이블을 코드 블록을 표시 하려면 사용할 수 있지만 지정된 된 범위 내에서 고유 해야 합니다.  

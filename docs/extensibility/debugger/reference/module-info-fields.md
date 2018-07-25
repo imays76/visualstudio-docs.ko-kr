@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125931"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 디버그 모듈 정보에 대 한 플래그를 지정합니다.  

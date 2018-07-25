@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147130"
 ---
 # <a name="web-site-support-templates"></a>웹 사이트 지원 서식 파일
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 웹 사이트 프로젝트 및 항목 템플릿을 처음부터 새 웹 사이트 프로젝트와 항목을 만들 필요성을 제거 하 여 개발 프로세스를 가속화할 재사용 및 사용자 지정 가능한 웹 사이트 프로젝트와 항목 스텁을 제공 합니다. 대 한 자세한 내용은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 템플릿 참조 [프로젝트 만들기 및 항목 템플릿](../../ide/creating-project-and-item-templates.md)합니다.

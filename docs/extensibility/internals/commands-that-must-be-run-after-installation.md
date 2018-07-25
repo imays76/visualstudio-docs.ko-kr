@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132340"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>설치 후 실행 해야 하는 명령
 .Msi 파일을 통해 확장 프로그램을 배포 하는 경우 실행 해야 `devenv /setup` Visual Studio 확장을 검색 하는 순서로 설치의 일부로 합니다.  

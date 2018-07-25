@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473847"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>방법: 창 찾기에서 메시지 뷰 열기
 사용 하기 어려운 찾을 수 있습니다는 **창 찾기** 대화 상자의 대상 창을 선택 하 고 다음 해당 창 메시지 뷰를 엽니다.  

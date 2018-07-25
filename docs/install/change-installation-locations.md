@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a6d8741982efd5329e7c14f0a32fb66bbdd377f5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282062"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Visual Studio 2017에서의 설치 위치 변경
 
@@ -53,7 +54,7 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="get-support"></a>지원 받기
 
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하여 도움을 받으세요. [실시간 채팅](https://www.visualstudio.com/vs/support/#talktous)(영어 전용)을 통해 설치 도움말에 대한 문의할 수 있습니다. 자세한 내용은 [Visual Studio “사용자 의견”](https://www.visualstudio.com/vs/support/#talktous)을 참조하세요.
+때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하여 도움을 받으세요. [실시간 채팅](https://visualstudio.microsoft.com/vs/support/#talktous)(영어 전용)을 통해 설치 도움말에 대한 문의할 수 있습니다. 자세한 내용은 [Visual Studio “사용자 의견”](https://visualstudio.microsoft.com/vs/support/#talktous)을 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 

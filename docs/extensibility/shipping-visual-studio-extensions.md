@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142758"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 확장 전달
 확장 프로그램 개발을 완료 한 후 다른 컴퓨터에 설치할 친구와 동료와 공유 하거나 Visual Studio 마켓플레이스에 게시할 수 있습니다. 게시 하 고 확장 프로그램을 유지 하기 위해 수행 해야 하는 모든 것이이 섹션의 설명:.vsix 파일을 게시 하 고 지역화, 업데이트를 사용 합니다.  

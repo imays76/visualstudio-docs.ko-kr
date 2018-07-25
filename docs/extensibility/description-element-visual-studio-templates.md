@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128921"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 요소(Visual Studio 템플릿)
 서식 파일의 설명을 지정 중 하나에 표시 되는 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.  

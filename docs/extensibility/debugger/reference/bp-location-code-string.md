@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108840"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 사용자는 통합된 개발 환경 (IDE)에서 입력할 수 있는 문자열을 기반으로 코드 중단점을 설정 하기 위한 사용.  

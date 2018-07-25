@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470672"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 이 기호에 대 한 컴파일러 관련 형식 식별자 값의 배열을 검색합니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129604"
 ---
 # <a name="services-provided-source-control-vspackage"></a>서비스 제공 (소스 제어 VSPackage)
 서비스는 있는 기능 및 Visual Studio 통합된 개발 환경 (IDE)와 해당 설치 된 Vspackage Vspackage 간에 공유 되는 기본 메커니즘입니다. 서비스 및 Visual Studio IDE에서 중요도 자세한 설명을 참조 하십시오.[사용 및 서비스 제공](../../extensibility/using-and-providing-services.md)합니다.  

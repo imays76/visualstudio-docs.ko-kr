@@ -22,14 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57f1e559452c64f9f1a7b019d75b52384081d65
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180193"
 ---
 # <a name="debugging-native-code"></a>네이티브 코드 디버깅
-이 단원에서는 네이티브 응용 프로그램의 몇 가지 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. Visual Studio 디버거를 사용 하는 방법을 참조 하세요. [디버거 로드맵](../debugger/debugger-basics.md)합니다.  
+이 단원에서는 네이티브 응용 프로그램의 몇 가지 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. Visual Studio 디버거를 사용 하는 방법은 참조 하세요 [디버거 로드맵](../debugger/getting-started-with-the-debugger.md)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [방법: 최적화된 코드 디버그](../debugger/how-to-debug-optimized-code.md)  
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/18/2018
  특성을 사용하는 코드의 디버깅 방법에 대해 설명합니다. 여기에는 소스 주석을 표시하는 방법, 삽입한 코드를 보는 방법, 현재 실행 위치에서 디스어셈블리 코드를 보는 방법 등의 내용이 들어 있습니다.  
   
  [연습: 병렬 응용 프로그램 디버그](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 사용 하는 방법에 설명 된 **병렬 작업** 및 **병렬 스택** 도구 창을 병렬 응용 프로그램의 디버깅.  
+ 사용 하는 방법에 설명 합니다 **병렬 작업** 및 **병렬 스택** 병렬 응용 프로그램을 디버깅 하는 windows 도구입니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  [Visual C++ 프로젝트 형식](../debugger/debugging-preparation-visual-cpp-project-types.md)  
@@ -73,4 +74,4 @@ ms.lasthandoff: 04/18/2018
   
 ## <a name="see-also"></a>참고 항목  
  [디버거 보안](../debugger/debugger-security.md)  
- [Visual Studio의 디버깅](../debugger/index.md) [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
+ [Visual Studio에서 디버깅](../debugger/index.md) [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)

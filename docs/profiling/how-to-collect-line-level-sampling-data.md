@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4438e7967a15384887d00503bde93b7bbd40fe6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765702"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>방법: 줄 수준 샘플링 데이터 수집
 줄 수준 샘플링은 전용 샘플 수가 많은 함수와 같이 프로세서를 많이 사용하는 함수의 코드에서 프로세서가 대부분의 시간을 사용하는 위치를 확인하는 프로파일러 기능입니다.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/19/2018
  **모듈** 뷰에서 함수에 줄 수준 통계가 있으면 통계가 각 함수 아래에 중첩됩니다. 또한 각 줄 아래에 중첩된 IP 수준 통계가 제공됩니다.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>관리 코드의 줄 수준 샘플링 끄기  
- 줄 수준 샘플링은 기본적으로 켜집니다. 다음 중 하나를 수행하여 관리 코드의 줄 수준 데이터 수집을 끌 수 있습니다.  
+ 줄 수준 샘플링은 기본적으로 켜집니다. 다음 명령 중 하나를 사용하여 관리 코드의 줄 수준 데이터 수집을 끌 수 있습니다.  
   
 -   프로파일링하기 전에 **VSPerfCLREnv /samplelineoff**를 입력합니다. 이는 응용 프로그램 및 서비스에 모두 영향을 미칩니다.  
   

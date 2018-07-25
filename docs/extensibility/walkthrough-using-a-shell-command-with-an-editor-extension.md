@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148381"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>연습: 셸 명령을 사용 하 여 편집기 확장명이
 VSPackage에서 편집기로 메뉴 명령과 같은 기능을 추가할 수 있습니다. 이 연습에 메뉴 명령을 호출 하 여 편집기에서 텍스트 보기로 adornment를 추가 하는 방법을 보여 줍니다.  

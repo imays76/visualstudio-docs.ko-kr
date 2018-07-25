@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 97c7728cf784c3ef11bb72cdb7abc9b441cd68cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 65331aa24eee140bcba983f1360c02f0227905fe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750856"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>코딩된 웹 성능 테스트 생성 및 실행
 
@@ -75,11 +76,11 @@ ms.lasthandoff: 04/26/2018
 
 6.  테스트를 실행합니다.
 
-     ![코딩된 웹 성능 테스트 실행](../test/media/web_test_coded_generate_run.png "Web_Test_Coded_Generate_Run")
+     ![코딩된 웹 성능 테스트 실행](../test/media/web_test_coded_generate_run.png)
 
      테스트 실행일이 수요일이었으므로…
 
-     ![코딩된 웹 성능 테스트 결과](../test/media/web_test_coded_generate_results.png "Web_Test_Coded_Generate_Results")
+     ![코딩된 웹 성능 테스트 결과](../test/media/web_test_coded_generate_results.png)
 
 ## <a name="qa"></a>Q&A
 

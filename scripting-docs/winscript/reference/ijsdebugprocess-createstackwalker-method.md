@@ -1,16 +1,18 @@
 ---
-title: "Ijsdebugprocess:: Createstackwalker 메서드 | Microsoft Docs"
-ms.custom: 
+title: 'Ijsdebugprocess:: Createstackwalker 메서드 | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IJsDebugProcess.CreateStackWalker
-apilocation: jscript9diag.dll
+apiname:
+- IJsDebugProcess.CreateStackWalker
+apilocation:
+- jscript9diag.dll
 ms.assetid: 9d02e21d-7900-4942-8d17-cd04a2261463
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727773"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker 메서드
 스택 워크에 대 한 팩터리 메서드입니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129378"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>레거시 언어 서비스의 개요와 숨겨진 텍스트
 개요 하면 텍스트 줄의 시퀀스를 한 줄으로 축소할 수 있습니다. 예를 들어 c + +에서 모든 메서드는 메서드 시그니처를 보여 주는, 한 줄으로 축소할 수 있습니다. 숨겨진된 텍스트에는 표시 하거나 숨길 수 있는 텍스트 줄의 시퀀스입니다.  

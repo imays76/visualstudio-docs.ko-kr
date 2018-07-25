@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282563"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio의 네트워크 기반 설치 업데이트
 
@@ -40,10 +41,10 @@ ms.lasthandoff: 04/20/2018
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* 다음은 이 동일한 레이아웃을 최신 버전으로 업데이트하는 방법입니다. 명령줄 매개 변수를 추가로 지정할 필요가 없습니다. 이전 설정이 저장되어 이 레이아웃 폴더의 모든 후속 레이아웃 명령에 사용됩니다.  
+* 다음은 이 동일한 레이아웃을 최신 버전으로 업데이트하는 방법입니다. 명령줄 매개 변수를 추가로 지정할 필요가 없습니다. 이전 설정이 저장되어 이 레이아웃 폴더의 모든 후속 레이아웃 명령에 사용됩니다.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * 무인 방식으로 레이아웃에 최신 버전으로 업데이트하는 방법은 다음과 같습니다. 레이아웃 작업은 새 콘솔 창에서 설치 프로세스를 실행합니다. 사용자가 최종 결과는 물론, 발생했을 수 있는 오류에 대한 요약을 볼 수 있도록 창이 열려 있습니다. 무인 방식으로 레이아웃 작업을 수행하고 있는 경우(예를 들어 레이아웃을 최신 버전으로 업데이트하기 위해 정기적으로 실행되는 스크립트가 있는 경우) `--passive` 매개 변수를 사용하면 프로세스는 창을 자동으로 종료하니다.
@@ -95,7 +96,7 @@ vs_enterprise.exe는 layoutDir 내에서 호출할 수 있습니다.
 > [!NOTE]
 > `--verify` 옵션에 필요한 몇 가지 중요한 메타데이터 파일이 레이아웃 오프라인 캐시에 있어야 합니다. 이러한 메타데이터 파일을 사용할 수 없으면 “--verify”가 실행될 수 없고 설치 프로그램에서 오류가 발생합니다. 이 오류가 발생하는 경우 새 오프라인 레이아웃을 다른 폴더나 같은 오프라인 캐시 폴더에 다시 만듭니다. 이렇게 하려면 초기 오프라인 레이아웃을 만드는 데 사용한 동일한 레이아웃 명령을 실행합니다. 예를 들어, `Vs_enterprise.exe --layout <layoutDir>`을 입력합니다.
 
-Microsoft에서 Visual Studio 업데이트를 정기적으로 제공하므로, 만드는 새 레이아웃은 초기 레이아웃과 버전이 같지 않을 수 있습니다.  
+Microsoft에서 Visual Studio 업데이트를 정기적으로 제공하므로, 만드는 새 레이아웃은 초기 레이아웃과 버전이 같지 않을 수 있습니다.
 
 ## <a name="how-to-fix-a-layout"></a>레이아웃을 수정하는 방법
 
@@ -113,9 +114,9 @@ vs_enterprise.exe는 layoutDir 내에서 호출할 수 있습니다.
 
 이렇게 하려면 이러한 사용되지 않는 패키지를 포함하는 카탈로그 매니페스트에 대한 파일 경로가 필요합니다. 카탈로그 매니페스트는 오프라인 레이아웃 캐시의 “보관” 폴더에서 찾을 수 있으며 레이아웃을 업데이트할 때 이 위치에 저장됩니다. “보관” 폴더에는 하나 이상의 “GUID” 폴더가 있고 각 폴더에는 사용되지 않는 카탈로그 매니페스트가 포함되어 있습니다. “GUID” 폴더의 수는 오프라인 캐시를 업데이트한 수와 동일합니다.
 
-소수의 파일이 각 “GUID” 폴더 안에 저장됩니다. 가장 관심이 가는 두 파일은 “catalog.json” 파일과 “version.txt” 파일입니다. “catalog.json” 파일은 `--clean` 옵션에 전달해야 하는 사용되지 않는 카탈로그 매니페스트입니다. 다른 version.txt 파일에는 이 사용되지 않는 카탈로그 매니페스트의 버전이 포함되어 있습니다. 버전 번호를 기준으로 이 카탈로그 매니페스트에서 사용되지 않는 패키지를 제거할지를 결정할 수 있습니다. 다른 “GUID” 폴더를 확인할 때도 동일한 작업을 수행할 수 있습니다. 정리할 카탈로그를 결정한 후 이러한 카탈로그의 파일 경로를 지정하여 `--clean` 명령을 실행합니다.  
+소수의 파일이 각 “GUID” 폴더 안에 저장됩니다. 가장 관심이 가는 두 파일은 “catalog.json” 파일과 “version.txt” 파일입니다. “catalog.json” 파일은 `--clean` 옵션에 전달해야 하는 사용되지 않는 카탈로그 매니페스트입니다. 다른 version.txt 파일에는 이 사용되지 않는 카탈로그 매니페스트의 버전이 포함되어 있습니다. 버전 번호를 기준으로 이 카탈로그 매니페스트에서 사용되지 않는 패키지를 제거할지를 결정할 수 있습니다. 다른 “GUID” 폴더를 확인할 때도 동일한 작업을 수행할 수 있습니다. 정리할 카탈로그를 결정한 후 이러한 카탈로그의 파일 경로를 지정하여 `--clean` 명령을 실행합니다.
 
-다음은 --clean 옵션을 사용하는 방법에 대한 몇 가지 예입니다.   
+다음은 --clean 옵션을 사용하는 방법에 대한 몇 가지 예입니다.
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -127,7 +128,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 vs_enterprise.exe를 &lt;layoutDir&gt; 내에서 호출할 수도 있습니다. 예를 들면 다음과 같습니다.
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
@@ -135,7 +136,7 @@ c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layo
 
 ## <a name="get-support"></a>지원 받기
 
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 

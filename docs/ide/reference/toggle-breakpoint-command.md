@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946808"
 ---
 # <a name="toggle-breakpoint-command"></a>중단점 설정/해제 명령
 파일의 현재 위치에서 현재 상태에 따라 중단점을 켜거나 끕니다.

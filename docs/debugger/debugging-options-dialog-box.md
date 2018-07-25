@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472892"
 ---
 # <a name="debugging-options-dialog-box"></a>옵션 대화 상자, 디버깅
 **디버깅** 폴더에는 **옵션** 대화 상자에는 **도구** 메뉴를 사용 하면 디버거를 지정할 수 있는 다음과 같은 페이지가 도구 옵션을 제공 합니다.  

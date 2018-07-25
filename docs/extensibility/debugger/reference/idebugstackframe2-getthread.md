@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119736"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 스택 프레임과 연결 된 스레드를 가져옵니다.  

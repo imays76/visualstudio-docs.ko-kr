@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477081"
 ---
 # <a name="messages-view"></a>메시지 뷰
 각 창에는 관련된 메시지 스트림을 합니다. 메시지 보기 창에는이 메시지 스트림을 표시 됩니다. 창 핸들, 메시지 코드 및 메시지 표시 됩니다. 스레드 또는 프로세스에 대 한 메시지 보기를 만들 수 있습니다. 이 옵션을 사용 하면 특정 프로세스 또는 스레드는 창 초기화 메시지를 캡처하는 데 특히 유용가 소유 하는 모든 창에 보낸 메시지를 볼 수 있습니다.  

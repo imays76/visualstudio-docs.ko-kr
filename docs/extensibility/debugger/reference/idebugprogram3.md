@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121767"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 이 인터페이스는 프로세스에서 실행 되 고 확장 하는 프로그램 나타냅니다 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) 스레드 정보를 제공 합니다.  

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0dd74f25ed5dc7f76b9d35ae3d2d9833f8e4ab8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255527"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>모듈 뷰 - .NET 메모리 계측 데이터
 계측 방법을 사용하여 수집되는 .NET 메모리 할당 데이터의 모듈 뷰에서는 프로파일링 실행에서 실행된 모듈을 기준으로 메모리 및 타이밍 데이터를 그룹화합니다. 모듈의 함수에 대한 프로파일링 데이터는 모듈 노드 아래에 나열됩니다.  
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/19/2018
 |**최대 경과된 전용 시간**|-   함수의 경우 이 함수에 대한 호출의 최대 경과된 전용 시간입니다.<br />-   모듈의 경우 모듈 내 함수에 대한 모든 호출의 최대 경과된 전용 시간입니다.|  
 |**경과된 최소 전용 시간**|-   함수의 경우 이 모듈 또는 함수에 대한 호출의 최소 경과된 전용 시간입니다.<br />-   모듈의 경우 모듈 내 함수에 대한 모든 호출의 최소 경과된 전용 시간입니다.|  
   
-## <a name="application-inclusive-values"></a>응용 프로그램 포괄 시간값  
+## <a name="application-inclusive-values"></a>응용 프로그램 포괄 값  
  응용 프로그램 포괄 값은 함수가 호출 스택에 있던 시간을 나타냅니다. 시간에는 컨텍스트 전환 및 입/출력 작업처럼 운영 체제에 대한 호출에 소요된 시간이 포함되지 않습니다. 그러나 자식 함수에서 소요된 시간은 포함됩니다.  
   
 |열|설명|  
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/19/2018
 |**최대 응용 프로그램 포괄 시간**|-   함수의 경우 이 함수에 대한 호출의 최대 응용 프로그램 포괄 시간입니다.<br />-   모듈의 경우 모듈 내 함수에 대한 모든 호출의 최대 응용 프로그램 포괄 시간입니다.|  
 |**최소 응용 프로그램 포괄 시간**|-   함수의 경우 이 모듈이나 함수에 대한 호출의 최소 응용 프로그램 포괄 시간입니다.<br />-   모듈의 경우 모듈 내 함수에 대한 모든 호출의 최소 응용 프로그램 포괄 시간입니다.|  
   
-## <a name="application-exclusive-values"></a>응용 프로그램 전용 시간값  
+## <a name="application-exclusive-values"></a>응용 프로그램 전용 값  
  응용 프로그램 전용 값은 자식 함수에서 소요된 시간을 제외하고 모듈이나 함수에서 소요된 시간을 나타냅니다. 표시된 값에는 컨텍스트 전환 및 입/출력 작업처럼 운영 체제에 대한 호출도 제외됩니다.  
   
 |열|설명|  

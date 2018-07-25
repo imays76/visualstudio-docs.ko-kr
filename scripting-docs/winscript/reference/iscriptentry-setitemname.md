@@ -1,11 +1,11 @@
 ---
 title: IScriptEntry::SetItemName | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptEntry.SetItemName
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptEntry::SetItemName
 ms.assetid: 9551a7ec-38f8-466a-9722-09367763f380
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729303"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
 식별 하는 항목 이름을 설정 하는 `IScriptEntry` 개체입니다.  

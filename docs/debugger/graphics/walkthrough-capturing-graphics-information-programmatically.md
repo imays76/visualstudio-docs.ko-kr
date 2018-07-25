@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a2caae8a3ef2a6342cf98094994d5ebccbe3275
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 641e98d1bbe5d54f69f458cec6642ceac484eff1
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433220"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>연습: 프로그래밍 방식으로 그래픽 정보 캡처
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 Direct3D 앱에서 그래픽 정보를 프로그래밍 방식으로 캡처할 수 있습니다.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/18/2018
 -   수동 테스트로는 렌더링 문제를 예측하고 캡처하기 어려워도 런타임의 앱 상태에 대한 정보를 사용하여 프로그래밍 방식으로 예측할 수 있는 경우 `CaptureCurrentFrame`을 호출합니다.  
   
 ##  <a name="CaptureDX11_2"></a> Windows 10의 프로그래밍 방식 캡처  
- 이 연습 부분에서는 강력한 캡처 방법을 사용 하 여 Windows 10에서 DirectX 11.2 API를 사용 하는 앱의 프로그래밍 방식 캡처를 보여 줍니다.
+ 이 연습 부분에는 강력한 캡처 방법을 사용 하는 Windows 10에서 DirectX 11.2 API를 사용 하는 앱에서 프로그래밍 캡처를 보여 줍니다.
   
  이 섹션에서는 다음 작업을 수행하는 방법을 보여줍니다.  
   
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/18/2018
 -   그래픽 정보 캡처  
   
 > [!NOTE]
->  에 대 한 Visual Studio 용 원격 도구에 의존 하는 프로그래밍 방식 캡처의 이전 구현에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 캡처 기능을 제공 합니다.
+>  프로그래밍 방식 캡처의 이전 구현에 대 한 Visual Studio 용 원격 도구 의존 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 캡처 기능을 제공 합니다.
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>프로그래밍 캡처를 사용하도록 앱 준비  
  앱에서 프로그래밍 방식 캡처를 사용하려면 필요한 헤더를 포함해야 합니다. 이러한 헤더는 Windows 10 SDK의 일부입니다.  
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/18/2018
   
 -   IDXGraphicsAnalysis 인터페이스를 정의할 소스 파일에 다음 헤더 파일을 포함합니다.  
   
-    ```  
+    ```cpp
     #include <DXGItype.h>  
     #include <dxgi1_2.h>  
     #include <dxgi1_3.h>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/18/2018
     ```  
   
     > [!IMPORTANT]
-    >  헤더 파일 vsgcapture.h—which 지원 프로그래밍 방식 캡처 Windows 8.0 및 이전 버전을 포함 하지 마십시오-Windows 10 앱에서 프로그래밍 캡처를 수행할 수 있습니다. 이 헤더는 DirectX 11.2와 호환되지 않습니다. D3d11_2.h 헤더를 포함 한 후이 파일이 포함 되어 있으면 컴파일러는 경고가 발생 합니다. Vsgcapture.h d3d11_2.h 전에 ´ â, 응용 프로그램 시작 되지 않습니다.  
+    >  헤더 파일 vsgcapture.h—which 지원 프로그래밍 방식 캡처를 Windows 8.0 및 이전 버전을 포함 하지 마십시오-Windows 10 앱에서 프로그래밍 캡처를 수행 합니다. 이 헤더는 DirectX 11.2와 호환되지 않습니다. D3d11_2.h 헤더를 포함 한 후이 파일이 포함 되어 있으면 컴파일러는 경고를 실행 합니다. D3d11_2.h 전에 vsgcapture.h는 포함 하는 경우 앱이 시작 되지 않습니다.  
   
     > [!NOTE]
     >  컴퓨터에 June 2010 DirectX SDK가 설치되어 있고 프로젝트의 포함 경로에 `%DXSDK_DIR%includex86`이 포함되어 있으면 이 부분을 포함 경로의 끝으로 옮깁니다. 라이브러리 경로에 대해서도 동일하게 수행합니다.  
@@ -64,20 +65,20 @@ ms.lasthandoff: 04/18/2018
  DirectX 11.2에서 그래픽 정보를 캡처하려면 DXGI 디버그 인터페이스를 가져와야 합니다.  
   
 > [!IMPORTANT]
->  프로그래밍 방식 캡처를 사용 하는 경우 여전히 그래픽 진단 모드로 응용 프로그램를 실행 해야 (Alt + f 5에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) 또는 [명령줄 캡처 도구](command-line-capture-tool.md)합니다.  
+>  프로그래밍 방식 캡처를 사용 하는 경우 여전히 그래픽 진단 모드로 앱을 실행 해야 합니다 (에서 Alt + F5 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) 또는 합니다 [명령줄 캡처 도구](command-line-capture-tool.md)합니다.  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis 인터페이스를 가져오려면  
   
 -   다음 코드를 사용하여 IDXGraphicsAnalysis 인터페이스를 DXGI 디버그 인터페이스에 연결합니다.  
   
-    ```  
+    ```cpp
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     반드시 확인는 `HRESULT` 반환한 [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) 를 확인 하는 유효한 인터페이스를 사용 하기 전에:  
+     확인 해야 합니다 `HRESULT` 반환한 [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) 사용 하기 전에 올바른 인터페이스를 표시 하도록:  
   
-    ```  
+    ```cpp
     if (FAILED(getAnalysis))  
     {  
         // Abort program or disable programmatic capture in your app.  
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/18/2018
     ```  
   
     > [!NOTE]
-    >  경우 `DXGIGetDebugInterface1` 반환 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), 앱이 그래픽 진단에서 실행 되 고 있는지 확인 하십시오 (Alt + f 5에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
+    >  경우 `DXGIGetDebugInterface1` 반환 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), 그래픽 진단 모드로 앱이 실행 중인지 확인 하십시오 (Alt + F5에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>그래픽 정보 캡처  
  이제 유효한 `IDXGraphicsAnalysis` 인터페이스가 있으므로 `BeginCapture` 및 `EndCapture` 를 사용하여 그래픽 정보를 캡처할 수 있습니다.  
@@ -94,7 +95,7 @@ ms.lasthandoff: 04/18/2018
   
 - 그래픽 정보 캡처를 시작하려면 다음과 같이 `BeginCapture`를 사용합니다.  
   
-    ```  
+    ```cpp
     ...  
     pGraphicsAnalysis->BeginCapture();  
     ...  
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/18/2018
   
      `BeginCapture` 가 호출되면 즉시 캡처가 시작됩니다. 다른 프레임이 시작되도록 기다리지 않습니다. 현재 프레임이 표시되거나 다음과 같이 `EndCapture`를 호출하면 캡처가 중지됩니다.  
   
-    ```  
+    ```cpp
     ...  
     pGraphicsAnalysis->EndCapture();  
     ...  

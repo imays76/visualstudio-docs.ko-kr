@@ -7,11 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 553a8ceeae16b660115ea3c8e32e544e903a72af
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 336ec5ef0779bcd67302bea7b51851dced531a7d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957391"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>사용자 지정 EditorConfig 파일 만들기 및 편집
 
@@ -73,7 +74,7 @@ EditorConfig는 또한 C#의 [코드 스타일 서식 지정](https://docs.micro
 
 기존의 `.editorconfig` 파일을 프로젝트에서 재사용하는 것이 좋습니다. 기존 파일을 추가하려면 먼저 **터미널**에 다음 명령을 입력하여 Finder에서 숨겨진 파일을 표시해야 합니다.
 
-```
+```bash
 $ defaults write com.apple.Finder AppleShowAllFiles true
 $ killall Finder
 ```

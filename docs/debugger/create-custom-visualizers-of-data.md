@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464838"
 ---
 # <a name="create-custom-visualizers-of-data"></a>데이터의 사용자 지정 시각화 도우미 만들기
  시각화 도우미는의 구성 요소는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 디버거 사용자 인터페이스입니다. A *시각화 도우미* 대화 상자나 다른 인터페이스의 데이터 형식에 적합 한 방식으로 변수나 개체를 표시 하려면를 만듭니다. 예를 들어 HTML 시각화 도우미는 HTML 문자열을 해석하고 브라우저 창에서와 마찬가지로 그 결과를 표시합니다. 비트맵 시각화 도우미는 비트맵 구조를 해석하고 그 구조가 표현하는 그래픽을 표시합니다. 일부 시각화 도우미에서는 데이터를 볼 수 있을 뿐만 아니라 수정할 수도 있습니다.

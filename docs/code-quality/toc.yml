@@ -1,16 +1,19 @@
+- name: 코드 분석 설명서
+  href: index.md
 - name: 개요
+  expanded: true
   items:
     - name: 관리 코드에 대한 코드 분석
       href: code-analysis-for-managed-code-overview.md
     - name: Roslyn 분석기
       href: roslyn-analyzers-overview.md
-    - name: C/C++ 코드 분석
+    - name: C/C++용 코드 분석
       href: code-analysis-for-c-cpp-overview.md
     - name: 코드 메트릭으로 코드 유지 가능성 측정
       href: code-metrics-values.md
 - name: 빠른 시작
   items:
-    - name: '빠른 시작: C/C++ 코드 분석'
+    - name: '빠른 시작: C/C++용 코드 분석'
       href: quick-start-code-analysis-for-c-cpp.md
 - name: 자습서
   items:
@@ -48,7 +51,7 @@
           href: anonymous-methods-and-code-analysis.md
         - name: 관리 코드 오류에 대한 작업 항목 만들기
           href: how-to-create-a-work-item-for-a-managed-code-defect.md
-    - name: C/C++ 코드 분석
+    - name: C/C++용 코드 분석
       items:
         - name: C++ Core Guidelines 검사기 사용
           href: using-the-cpp-core-guidelines-checkers.md
@@ -78,10 +81,12 @@
     - name: 규칙 집합
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: 분석기 패키지에 대한 규칙 집합
+          href: analyzer-rule-sets.md
         - name: 관리 코드에 대한 규칙 집합
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
-            - name: ASP.NET 웹 응용 프로그램에 대한 코드 분석 구성
+            - name: ASP.NET 웹 앱에 대한 코드 분석 구성
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: C++ 코드에 대한 규칙 집합
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -124,7 +129,7 @@
         - name: 관리 코드에 대한 전역화 규칙 규칙 집합
           href: globalization-rules-rule-set-for-managed-code.md
         - name: 관리 코드에 대한 관리 최소 규칙 규칙 집합
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: 관리 코드에 대한 관리 권장 규칙 규칙 집합
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: 혼합 최소 규칙 규칙 집합

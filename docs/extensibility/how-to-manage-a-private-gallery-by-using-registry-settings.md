@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126785"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>방법: 레지스트리 설정을 사용 하 여 전용 갤러리를 관리 합니다.
 격리 셸 확장의 개발자 또는 관리자 인 경우에 컨트롤, 템플릿 및 Visual Studio 갤러리, 샘플 갤러리 또는 전용 갤러리의 도구에 대 한 액세스를 제어할 수 있습니다. 사용 가능 여부가 갤러리는 하 게 하려면 수정 된 레지스트리 키와 해당 값을 설명 하는.pkgdef 파일을 만듭니다.  

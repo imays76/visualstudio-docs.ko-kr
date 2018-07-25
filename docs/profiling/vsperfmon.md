@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c5932e37d11fc1b49efb6464255858d0527535
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e9754d4f324c178c117e14ff5949bd6c8ef352e9
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254812"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
-VSPerfMon 도구를 사용하면 응용 프로그램의 성능 데이터를 수집할 수 있습니다. 일반적으로는 VSPerfCmd.exe를 사용하여 이 도구를 실행합니다. VSPerfMon에는 VSPerfCmd 도구를 사용하는 경우에는 제공되지 않는 프로세스 연결 또는 분리에 대한 추가 정보가 표시됩니다. 이 정보를 보려면 별도의 창에서 VSPerfMon을 시작합니다. VSPerfMon을 호출하려면 다음 구문을 사용합니다.  
+VSPerfMon 도구를 사용하면 응용 프로그램의 성능 데이터를 수집할 수 있습니다. 일반적으로는 *VSPerfCmd.exe*를 사용하여 이 도구를 실행합니다. VSPerfMon에는 VSPerfCmd 도구를 사용하는 경우에는 제공되지 않는 프로세스 연결 또는 분리에 대한 추가 정보가 표시됩니다. 이 정보를 보려면 별도의 창에서 VSPerfMon을 시작합니다. VSPerfMon을 호출하려면 다음 구문을 사용합니다.  
   
 ```cmd  
 VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTPUT <file name> [/WINCOUNTER:cfg] [/USER [DOMAIN\]username]  

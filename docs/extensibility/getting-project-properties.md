@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127626"
 ---
 # <a name="getting-project-properties"></a>프로젝트 속성 가져오기
 이 연습에서는 도구 창에서 프로젝트 속성을 표시 하는 방법입니다.  

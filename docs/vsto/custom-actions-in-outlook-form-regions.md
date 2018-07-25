@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264091"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 양식 영역의 사용자 지정 작업
   작업은 사용자가 Microsoft Office Outlook 항목에 응답할 수 있도록 하는 단추를 표시 합니다. 예를 들어 메일 항목에 응답, 사용자가 클릭는 **회신**, **전체 회신**, 또는 **앞으로** 실행 단추입니다. 이러한 각 작업을 새 메일 항목을 만들고 원본 항목의 정보를 사용 하 여 항목의 필드를 채웁니다.  

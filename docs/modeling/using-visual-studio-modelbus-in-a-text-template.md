@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952828"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>텍스트 템플릿에서 Visual Studio ModelBus 사용
 포함 하는 모델을 읽을 하는 텍스트 템플릿을 작성 하는 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 참조, 액세스 대상 모델에 대 한 참조를 확인 하는 것이 좋습니다. 이 경우 텍스트 템플릿 및 참조 도메인 특정 언어 (Dsl)를 적용 해야 할 수도 있습니다.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138482"
 ---
 # <a name="language-services-and-the-core-editor"></a>언어 서비스 및 핵심 편집기
 Visual Studio의 편집기는 언어 서비스에 자주 연결 됩니다. 특히, 구문 색 지정, 문 완성, IntelliSense 및 텍스트 서식 지정 언어 서비스를 제공합니다.  

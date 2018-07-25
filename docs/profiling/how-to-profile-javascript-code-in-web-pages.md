@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da608523430724e279efc3d5c7c5d5b27564845
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843925"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>방법: 웹 페이지에서 JavaScript 코드 프로파일링
 
@@ -46,7 +47,7 @@ JavaScript 프로파일링을 지정하면 브라우저에서 실행되는 JavaS
 
 5. 마법사의 세 번째 페이지에서 **JavaScript 프로파일링** 확인란을 선택하고 **다음**을 클릭합니다.
 
-6. 마법사의 네 번째 페이지에서 **마침** 을 클릭하여 브라우저에서 웹 응용 프로그램을 시작합니다.
+6. 마법사의 네 번째 페이지에서 **마침**을 클릭하여 브라우저에서 웹 응용 프로그램을 시작합니다.
 
 7. 프로파일링하려는 기능을 실행합니다.
 

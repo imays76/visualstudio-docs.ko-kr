@@ -1,5 +1,5 @@
 ---
-title: 워크플로 디자이너-e x&lt;T&gt; 활동 디자이너
+title: 워크플로 디자이너-ExistsInCollection&lt;T&gt; 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,33 +12,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5625f42489752647da57fad9956cff8c64b8f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83ae11cad7e132bd13bb930607abd40011e0392a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756469"
 ---
-# <a name="existsincollectiont-activity-designer"></a>E x\<T > 활동 디자이너
+# <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > 활동 디자이너
 
-**e x\<T >** 활동 디자이너는 만들고 구성 하는 데 사용 되는 <xref:System.Activities.Statements.ExistsInCollection%601> 활동입니다.
+합니다 **ExistsInCollection\<T >** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.Activities.Statements.ExistsInCollection%601> 활동입니다.
 
-## <a name="the-existsincollectiont-activity"></a>e x\<T > 활동
+## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T > 활동
  <xref:System.Activities.Statements.ExistsInCollection%601> 활동은 지정된 항목이 특정 컬렉션에 있는지 여부를 결정합니다.
 
-### <a name="using-the-existsincollectiont-activity-designer"></a>e x를 사용 하 여\<T > 활동 디자이너
- **e x\<T >** 활동 디자이너에서 확인할 수 있습니다는 **컬렉션** 의 범주는 **도구 상자**는 를클릭하여액세스 **도구 상자** 워크플로 디자이너의 탭 (또는 선택 **도구 모음** 에서 **보기** 메뉴나 CTRL + ALT + X.)
+### <a name="using-the-existsincollectiont-activity-designer"></a>ExistsInCollection를 사용 하 여\<T > 활동 디자이너
+ **ExistsInCollection\<T >** 활동 디자이너에서 찾을 수 있습니다 합니다 **컬렉션** 범주의 합니다 **도구 상자**, 를클릭하여액세스 **도구 상자** 워크플로 디자이너의 탭 합니다. 또는 선택할 **도구 상자** 에서 합니다 **뷰** 메뉴 또는 키를 눌러 **Ctrl**+**Alt** + **X**합니다.
 
- **e x\<T >** 에서 활동 디자이너를 끌 수 있습니다는 **도구 상자** 활동은 일반적으로, 등 배치 때마다 워크플로 디자이너 화면에 끌어 놓 및 <xref:System.Activities.Statements.Sequence>합니다. 그렇기 때문에 <xref:System.Activities.Statements.ExistsInCollection%601> 기본값 활동 <xref:System.Activities.Activity.DisplayName%2A> e x의 < i n t 32\>합니다. (기본적으로는 *TypeArgument* 은 **Int32**합니다. 속성 표에서 이를 변경할 수 있습니다.  <xref:System.Activities.Activity.DisplayName%2A> 헤더의 값을 편집할 수 있습니다는 **e x < T\>**  활동 디자이너 또는 **DisplayName** 속성 표의 상자입니다. 다른 속성은 속성 표에서 편집해야 합니다.
+ 합니다 **ExistsInCollection\<T >** 활동 디자이너에서 끌 수 있습니다 합니다 **도구 상자** 활동은 일반적으로, 등 배치 위치는 워크플로 디자이너 화면에 끌어 놓 및 <xref:System.Activities.Statements.Sequence>합니다. 이렇게 한 <xref:System.Activities.Statements.ExistsInCollection%601> 기본값을 사용 하 여 활동 <xref:System.Activities.Activity.DisplayName%2A> ExistsInCollection의 < Int32\>합니다. (기본적으로 *TypeArgument* 됩니다 **Int32**합니다. 속성 표에서 이를 변경할 수 있습니다.  <xref:System.Activities.Activity.DisplayName%2A> 헤더의 값을 편집할 수 있습니다 합니다 **ExistsInCollection < T\>**  활동 디자이너 또는 합니다 **DisplayName** 속성 그리드의 상자. 다른 속성은 속성 표에서 편집해야 합니다.
 
-### <a name="the-existsincollectiont-properties"></a>e x\<T > 속성
+### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T > 속성
  다음 표에서는 <xref:System.Activities.Statements.ExistsInCollection%601> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다.
 
 |속성 이름|필수|용도|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> 활동의 이름입니다. 기본값은 e x < i n t 32\>합니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|컬렉션에 추가할 항목\<T >. 이 항목은 형식의 *T* 유형의 *TypeArgument*합니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|항목이 추가될 컬렉션입니다. 이 컬렉션은 형식의 **c t i o < TypeArgument\>합니다.** 컬렉션을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
-|*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601>에 포함된 항목의 형식 T입니다. 기본적으로이 *TypeArgument* 유형이으로 설정 되어 **Int32**합니다. 값을 변경의 종류를 변경 하려면는 *TypeArgument* 속성 표의 콤보 상자에 있습니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> 활동의 이름입니다. 기본값은 ExistsInCollection < Int32\>합니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|컬렉션에 추가할 항목\<T >입니다. 이 항목은 형식의 *T* 유형의 *TypeArgument*합니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|항목이 추가될 컬렉션입니다. 이 컬렉션은 형식 **ICollection < TypeArgument\>합니다.** 컬렉션을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
+|*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601>에 포함된 항목의 형식 T입니다. 기본적으로이 *TypeArgument* 유형이 설정 되어 **Int32**합니다. 유형을 변경 하려면 값을 변경 합니다 *TypeArgument* 속성 표의 콤보 상자에서.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|지정된 항목이 컬렉션에 있는지 여부를 나타내는 값입니다. 결과에 바인딩할 변수를 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
 
 ## <a name="see-also"></a>참고자료

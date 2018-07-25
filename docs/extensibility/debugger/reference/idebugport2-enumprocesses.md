@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122352"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 포트에서 실행 중인 모든 프로세스 목록을 반환 합니다.  

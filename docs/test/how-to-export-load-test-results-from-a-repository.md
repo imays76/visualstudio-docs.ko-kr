@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31969631"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>방법: 리포지토리에서 부하 테스트 결과 내보내기
 

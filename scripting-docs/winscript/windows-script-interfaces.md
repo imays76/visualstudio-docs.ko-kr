@@ -1,14 +1,14 @@
 ---
-title: "Windows 스크립트 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: Windows 스크립트 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571853"
 ---
 # <a name="windows-script-interfaces"></a>Windows 스크립트 인터페이스
 Microsoft Windows 스크립트 인터페이스는 응용 프로그램에서 스크립팅 및 OLE 자동화를 추가할 수 있는 방법을 제공합니다. Windows 스크립트를 사용하는 스크립팅 호스트는 여러 원본 및 공급업체의 스크립팅 엔진을 사용하여 구성 요소 간의 스크립팅을 관리할 수 있습니다. 스크립트 자체의 구현(언어, 구문, 영구 형식, 실행 모델 등)은 스크립트 공급업체에 위임합니다.  

@@ -9,11 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e1b86508b803844255458f3aa2c7f33d859af93
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f1287d97ed50e781a0b7bf30be1f77d558c908f
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945444"
 ---
 # <a name="best-practices-and-examples-sal"></a>모범 사례 및 예제(SAL)
 SAL(Source Code Annotation Language)을 최대한 활용하고 몇 가지 일반적인 문제를 방지하는 방법은 다음과 같습니다.
@@ -45,7 +46,7 @@ void Func2(_Inout_ PCHAR p1)
 
 ## <a name="opt"></a>\_opt\_
 
-호출자가 Null 포인터를 전달하도록 허용되지 않는 경우 `_In_` 또는 `_Out_` 대신 `_In_opt_` 또는 `_Out_opt_`을 사용합니다. 이 규칙은 해당 매개 변수를 확인하고 매개 변수가 NULL이 아니어야 하는데 NULL인 경우 오류를 반환하는 함수에도 적용됩니다. 예기치 않은 null의 매개 변수를 확인 하 고 정상적으로 반환 함수가 좋은 방어적 인 코딩 습관 이지만 의미 하지 않는 매개 변수 주석이 선택적인 형식 수 있습니다 (`_*Xxx*_opt_`).
+호출자가 Null 포인터를 전달하도록 허용되지 않는 경우 `_In_` 또는 `_Out_` 대신 `_In_opt_` 또는 `_Out_opt_`을 사용합니다. 이 규칙은 해당 매개 변수를 확인하고 매개 변수가 NULL이 아니어야 하는데 NULL인 경우 오류를 반환하는 함수에도 적용됩니다. 매개 변수 주석이 선택적인 형식 수 있음을 좋은 방어적 인 코딩 습관을 예기치 않은 null의 매개 변수를 확인 하 고 정상적으로 반환 함수가 있지만 방법은 의미 하지 않습니다 (`_*Xxx*_opt_`).
 
 ```cpp
 
@@ -63,7 +64,7 @@ void Func2(_Out_ int *p1)
 
 ```
 
-## <a name="predefensive-and-postdefensive"></a>\_Pre\_방어\_ 및 \_Post\_방어\_
+## <a name="predefensive-and-postdefensive"></a>\_Pre\_방어\_ 하 고 \_Post\_방어\_
 
 함수가 신뢰 경계에 나타날 경우에는 `_Pre_defensive_` 주석을 사용하는 것이 좋습니다.  "방어적" 수정자는 호출 시점에 인터페이스가 엄격하게 검사되도록 특정 주석을 수정하지만, 구현 본문에서는 잘못된 매개 변수가 전달될 수 있다고 가정해야 합니다. 이 경우에는 NULL을 전달하려고 시도할 경우 호출자에게 오류가 표시되더라도 매개 변수가 NULL일 수 있는 것처럼 함수 본문을 분석하고 먼저 NULL을 확인하지 않고 포인터에 대한 참조를 해제하려는 모든 시도가 플래깅되도록 신뢰 경계에서 `_In_ _Pre_defensive_`가 선호됩니다.  신뢰할 수 있는 당사자가 호출자인 것으로 간주되고 신뢰할 수 없는 코드가 호출된 코드인 콜백에서는 `_Post_defensive_` 주석도 사용할 수 있습니다.
 
@@ -150,7 +151,7 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 
 ```
 
-## <a name="outrange"></a>\_Out_range\_
+## <a name="outrange"></a>\_Out\_범위\_
 
 매개 변수가 포인터이고 포인터로 가리키는 요소의 값 범위를 표시하려면 `_Deref_out_range_` 대신 `_Out_range_`를 사용합니다. 다음 예제에서는 pcbFilled가 아니라 *pcbFilled의 범위가 표시됩니다.
 
@@ -174,7 +175,7 @@ void Func2(
 
  `_Deref_out_range_(0, cbSize)`는 `_Out_writes_to_(cbSize,*pcbFilled)`에서 유추될 수 있기 때문에 일부 도구의 경우 엄밀히 말해서 필수는 아니지만 여기에서는 모든 항목을 설명하기 위해 포함되었습니다.
 
-## <a name="wrong-context-in-when"></a>잘못 된 컨텍스트 \_때\_
+## <a name="wrong-context-in-when"></a>잘못 된 컨텍스트에서 \_때\_
 
 또 다른 일반적인 실수는 사전 조건을 위해 사후 상태 평가를 사용하는 것입니다. 다음 예제에서 `_Requires_lock_held_`는 사전 조건입니다.
 
@@ -192,7 +193,7 @@ int Func2(_In_ MyData *p, int flag);
 
  `result` 식은 사전 상태에서 사용할 수 없는 사후 상태 값을 참조합니다.
 
-## <a name="true-in-success"></a>TRUE \_성공\_
+## <a name="true-in-success"></a>사실 \_성공\_
 
 반환 값이 0이 아닐 때 함수가 성공하면 `return != 0` 대신 `return == TRUE`을 성공 조건으로 사용합니다. 0이 아닌 값이라고 해서 컴파일러가 `TRUE`에 대해 제공하는 실제 값과 반드시 동일하지는 않습니다. `_Success_`에 대한 매개 변수는 식이고, `return != 0`, `return != false`, `return != FALSE` 및 매개 변수 또는 비교가 없는 `return`과 같은 식이 동일 항목으로 평가됩니다.
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461599"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 이 기호 저장소의 기호에 해당 하는 실행 파일에 대 한 부하 주소를 검색 합니다.  

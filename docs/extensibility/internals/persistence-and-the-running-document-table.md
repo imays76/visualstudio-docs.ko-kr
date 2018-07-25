@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129737"
 ---
 # <a name="persistence-and-the-running-document-table"></a>지 속성 및 실행 중인 문서 테이블
 에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, 프로젝트는 서비스를 사용 하 여을 수행할 때 해당 프로젝트 항목의 지 속성 관리를 완전히 담당 <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>합니다. 문서는 Visual Studio 환경에서 지 속성의 기본 단위입니다. 프로젝트 열기, 저장 및 실행 중인 문서 테이블 (RDT) 열려 있는 모든 문서의 상태를 추적 하는 리소스를 사용 하 여 문서의 이름 바꾸기를 조정 합니다.  

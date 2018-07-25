@@ -1,11 +1,11 @@
 ---
 title: IDebugHelper::CreatePropertyBrowserEx | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugHelper.CreatePropertyBrowserEx
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugHelper::CreatePropertyBrowserEx
 ms.assetid: 87ad322f-09da-4ce8-bb68-0b0bbeec645b
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727573"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
 VARIANT를 배치 하 고 VARIANT 값 이나 VARTYPE 형식 문자열을 사용자 지정 변환 허용 하는 속성 브라우저를 반환 합니다.  

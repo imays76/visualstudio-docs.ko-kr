@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138313"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 요소
 VisibilityConstraints 요소 명령 및 도구 모음 그룹의 정적 표시 여부를 결정 합니다. 에 의해 표시 유형을 제어 먼저 됩니다는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage를 로드 하지 않고 통합된 개발 환경 (IDE).  

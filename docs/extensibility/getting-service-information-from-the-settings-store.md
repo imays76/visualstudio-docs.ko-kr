@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127505"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>설정 저장소에서 서비스 정보 가져오기
 모든 사용 가능한 서비스를 확인 하거나 특정 서비스가 설치 되어 있는지 여부를 확인 하려면 설정 저장소를 사용할 수 있습니다. 서비스 클래스의 형식을 알고 있어야 합니다.  

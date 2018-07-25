@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31111240"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 이 메서드를 호출 하 여 시작 될 때 비동기 식 계산 취소는 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 메서드.  

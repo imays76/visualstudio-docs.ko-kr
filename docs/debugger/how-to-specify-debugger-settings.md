@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472726"
 ---
 # <a name="how-to-specify-debugger-settings"></a>방법: 디버거 설정 지정
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 변수 표시 방법, 특정 경고 표시 여부, 중단점 설정 방법, 프로그램 중단이 실행 프로그램에 미치는 영향 등을 포함하여 디버거 작동에 대한 여러 가지 설정을 지정할 수 있습니다. 디버거 설정에 지정 된 **옵션** 대화 상자.  

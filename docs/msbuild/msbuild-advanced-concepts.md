@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da69a99e00c84514b51c958215baf6a87e498f17
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d521dbe0f72ccc5622da37495641349a9ec24a8a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077457"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 고급 개념
 이 섹션의 문서에서는 MSBuild를 사용하여 실행되는 빌드를 개선하기 위해 고급 기술을 사용하는 방법에 대해 설명합니다.  

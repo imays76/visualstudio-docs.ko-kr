@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc9ccb3788246e359183cff889f0996b4e74aecb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a53bbac8f1d4549b49183d0e90b2f33c925654d6
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945302"
 ---
 # <a name="createitem-task"></a>CreateItem 작업
 항목 컬렉션을 입력 항목으로 채웁니다. 이를 통해 한 목록의 항목을 다른 목록으로 복사할 수 있습니다.  
@@ -43,12 +44,12 @@ ms.lasthandoff: 04/19/2018
 |`PreserveExistingMetadata`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `True`인 경우 추가 메타데이터만 적용합니다(아직 존재하지 않을 경우).|  
   
 ## <a name="remarks"></a>설명  
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
 ## <a name="example"></a>예  
  다음 코드 예제에서는 항목 컬렉션 `MySourceItems`에서 `MySourceItemsWithMetadata`라는 새 항목 컬렉션을 만듭니다. `CreateItem` 작업은 `MySourceItems` 항목에 있는 항목으로 새 항목 컬렉션을 채웁니다. 그런 다음 값이 `Hello`인 `MyMetadata`라는 추가 메타데이터 항목을 새 컬렉션의 각 항목에 추가합니다.  
   
- 작업이 실행된 후 `MySourceItemsWithMetadata` 항목 컬렉션에는 `MyMetadata`에 대한 메타데이터 항목을 포함하는 `file1.resx` 및 `file2.resx` 항목이 포함됩니다. `MySourceItems` 항목 컬렉션은 변경되지 않습니다.  
+ 작업이 실행된 후 `MySourceItemsWithMetadata` 항목 컬렉션에는 `MyMetadata`에 대한 메타데이터 항목을 포함하는 *file1.resx* 및 *file2.resx* 항목이 포함됩니다. `MySourceItems` 항목 컬렉션은 변경되지 않습니다.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -75,7 +76,7 @@ ms.lasthandoff: 04/19/2018
   
 |항목 컬렉션입니다.|목차|  
 |---------------------|--------------|  
-|`MySourceItemsWithMetadata`|`file1.resx` (`MyMetadata="Hello"`)<br /><br /> `file2.resx` (`MyMetadata="Hello"`)|  
+|`MySourceItemsWithMetadata`|*file1.resx*(`MyMetadata="Hello"`)<br /><br /> *file2.resx*(`MyMetadata="Hello"`)|  
   
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   

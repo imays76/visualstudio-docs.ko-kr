@@ -1,7 +1,7 @@
 ---
 title: Python 프로젝트에 대한 사용자 지정 메뉴 명령을 정의하는 방법
 description: Visual Studio에서 프로젝트 및 대상 파일을 편집하여 Python 프로젝트 상황에 맞는 메뉴에 사용자 지정 명령을 추가하는 방법을 보여 줍니다. 명령은 실행 프로그램, 스크립트, 모듈, 인라인 코드 조각 및 pip에서 호출할 수 있습니다.
-ms.date: 02/02/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 93d7e01037712d633ed4c23534163924647183f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d6113b9c102ff367d4b41bd4780c365c1928705
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117913"
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Python 프로젝트에 대한 사용자 지정 명령 정의
 
@@ -92,7 +93,7 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 이미 자체의 `.targ
 
     ![Python 상황에 맞는 서브 메뉴에 나타나는 사용자 지정 명령](media/custom-commands-walkthrough-menu-item.png)
 
-1. **시작 파일 실행** 명령을 선택하고 명령 창에 텍스트 "Hello 사용자 지정 명령"에 이어서 "계속하려면 아무 키나 누르십시오. 이어야 합니다. ."가 표시되는지 확인합니다.  아무 키나 눌러 창을 닫습니다.
+1. **시작 파일 실행** 명령을 선택하고 명령 창에 텍스트 "Hello 사용자 지정 명령"에 이어서 "계속하려면 아무 키나 누르십시오. . ."가 표시되는지 확인합니다.  아무 키나 눌러 창을 닫습니다.
 
     ![콘솔 창의 사용자 지정 명령 출력](media/custom-commands-walkthrough-console.png)
 

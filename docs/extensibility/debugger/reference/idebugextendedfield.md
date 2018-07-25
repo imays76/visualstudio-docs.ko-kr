@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116427"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 관리 코드 제네릭을 지 원하는 데 사용할 수 있는 필드의 형식을 확장 합니다.  

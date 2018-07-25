@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134095"
 ---
 # <a name="support-for-user-settings"></a>사용자 설정에 대 한 지원
 VSPackage는 상태 변수를 사용자가 유지 되는 그룹인 하나 이상 설정 범주를 정의할 수는 **설정 가져오기/내보내기** 명령을 **도구** 메뉴. 이 지 속성을 설정 하려면 설정을 Api 사용에 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다.  
@@ -33,14 +34,14 @@ VSPackage는 상태 변수를 사용자가 유지 되는 그룹인 하나 이상
      단일 VSPackage 지원 몇 가지 사용자 지정 설정 지점을, 각 사용자 지정 설정 지점 별도 클래스에서 구현 되 고 각각의 고유 인스턴스를 등록 하는 경우는 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 클래스입니다. 따라서 클래스를 구현 하는 설정이 여러 개 설정 범주를 지원할 수 있습니다.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>사용자 지정 설정 지점 레지스트리 항목 세부 정보  
- 다음 위치에 레지스트리 항목에 사용자 지정 설정 지점을 생성 됩니다: HKLM\Software\Microsoft\VisualStudio\\*\<버전 >*\UserSettings\\`<CSPName>`여기서 `<CSPName>` 의 이름인 사용자 지정 설정 지점 VSPackage 지원 및  *\<버전 >* 의 버전이 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 예를 들어 8.0 합니다.  
+ 다음 위치에 레지스트리 항목에 사용자 지정 설정 지점을 생성 됩니다: HKLM\Software\Microsoft\VisualStudio\\*\<버전 >* \UserSettings\\`<CSPName>`여기서 `<CSPName>` 의 이름인 사용자 지정 설정 지점 VSPackage 지원 및  *\<버전 >* 의 버전이 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 예를 들어 8.0 합니다.  
   
 > [!NOTE]
 >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio의 루트 경로\\*\<버전 >* 대체로 재정의할 수 있습니다 때 루트는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE)가 초기화 합니다. 자세한 내용은 참조 [명령줄 스위치](../../extensibility/command-line-switches-visual-studio-sdk.md)합니다.  
   
  레지스트리 항목의 구조는 아래 표시 되어 있습니다.  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<버전 >*\UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<버전 >* \UserSettings\  
   
  `<CSPName`> = ' #12345 ' s  
   

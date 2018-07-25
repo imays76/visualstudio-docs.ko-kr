@@ -16,10 +16,11 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38783820"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 **프로젝트 디자이너**의 **빌드** 페이지를 사용하여 프로젝트의 빌드 구성 속성을 지정합니다. 이 페이지는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 프로젝트에만 적용됩니다.

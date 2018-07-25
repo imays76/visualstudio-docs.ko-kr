@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138830"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 요소(Visual Studio 템플릿)
 웹 항목 템플릿에 여러 언어에 대해 동일 여부 및 여부를 지정 된 **언어** 옵션이 설정 되었는지는 **새 항목 추가** 대화 상자.  

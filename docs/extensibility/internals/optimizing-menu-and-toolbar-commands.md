@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130731"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>메뉴 및 도구 모음 명령 최적화
 Vspackage 및 해당 입력 한 명령에 추가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 꽉된 UI 발생할 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI 명령을 혼동을 최소화 하기 위해 방법을 제공 합니다.  

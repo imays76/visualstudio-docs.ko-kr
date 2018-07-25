@@ -1,7 +1,7 @@
 ---
 title: Python에 대한 Azure 원격 디버깅 문제 해결
 description: Visual Studio를 사용하여 Azure App Service에서 실행 중인 Python 응용 프로그램을 디버그할 때 문제를 해결하는 방법입니다.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,11 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3d792a411867686abe0734fc67dfe654320d8b38
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 111a166e561bccb0eb5a14143479b7ad251d9b61
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058554"
 ---
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Python 및 Azure에 대한 원격 디버깅 문제 해결사
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 04/19/2018
 
 | 이유 | 해결 |
 | --- | --- |
-| Visual Studio 2013 업데이트 4 이상이 설치되어 있지 않습니다. | [visualstudio.com](https://www.visualstudio.com/downloads/)에서 적절한 버전을 설치합니다. | 
+| Visual Studio 2013 업데이트 4 이상이 설치되어 있지 않습니다. | [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)에서 적절한 버전을 설치합니다. |
 | App Service에 배포된 프로젝트가 Visual Studio에서 열리는 프로젝트와 일치하지 않습니다. | Visual Studio에 올바른 프로젝트를 로드합니다. |
 | 프로젝트가 디버그 구성을 사용하여 배포되지 않았습니다. | [솔루션 탐색기]에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택하여 응용 프로그램을 다시 배포합니다. **설정** 탭에서 **디버그**가 선택한 구성인지 확인합니다. |
 | App Service가 실행되고 있지 않습니다. | Visual Studio의 [서버 탐색기] 또는 Azure Portal에서 시작합니다. |

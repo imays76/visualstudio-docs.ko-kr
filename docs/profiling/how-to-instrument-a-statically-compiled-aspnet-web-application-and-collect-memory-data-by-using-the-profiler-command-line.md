@@ -10,17 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76c9f5ca61c2950dfc2cc705a1e574e275ba1246
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a1081f0f0f1cc261179192520108e49f5cf4aaa5
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815758"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>방법: 프로파일러 명령줄을 통해 정적으로 컴파일된 ASP.NET 웹 응용 프로그램 계측 및 메모리 데이터 수집
-이 항목에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 미리 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 구성 요소 또는 웹 사이트를 계측하고 .NET 메모리 할당, 개체 수명 및 자세한 타이밍 데이터를 수집하는 방법을 설명합니다.  
+이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 미리 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 구성 요소 또는 웹 사이트를 계측하고 .NET 메모리 할당, 개체 수명 및 자세한 타이밍 데이터를 수집하는 방법을 설명합니다.  
   
 > [!NOTE]
->  프로파일링 도구의 명령줄 도구는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 설치 디렉터리의 \Team Tools\Performance Tools 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.  
+>  프로파일링 도구의 명령줄 도구는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 설치 디렉터리의 *\Team Tools\Performance Tools* 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.  
   
  계측 방법을 사용하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 구성 요소에서 데이터를 수집하려면 [VSInstr.exe](../profiling/vsinstr.md) 도구를 사용하여 계측된 구성 요소의 버전을 생성합니다. 구성 요소를 호스팅하는 컴퓨터에서 구성 요소의 계측되지 않은 버전을 계측된 버전으로 바꿉니다. 그런 다음 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 도구를 사용하여 전역 프로파일링 환경 변수를 초기화하고 호스트 컴퓨터를 다시 시작합니다. 그런 다음 프로파일러를 시작합니다.  
   
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/19/2018
   
  프로파일링 세션을 종료하려면 구성 요소를 호스팅하는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스를 닫은 다음 프로파일러를 명시적으로 종료합니다. 대부분의 경우 세션 종료 시 프로파일링 환경 변수를 지우는 것이 좋습니다.  
   
-## <a name="starting-to-profile"></a>프로파일링 시작  
+## <a name="start-to-profile"></a>프로파일링 시작  
   
 #### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>ASP.NET 웹 구성 요소 계측 및 프로파일링을 시작하려면  
   
@@ -67,8 +68,8 @@ ms.lasthandoff: 04/19/2018
   
     |옵션|설명|  
     |------------|-----------------|  
-    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|ASP.NET 작업자 프로세스를 소유한 계정의 선택적 도메인 및 사용자 이름을 지정합니다. 이 옵션은 로그온된 사용자와 다른 사용자로 프로세스가 실행 중인 경우에 필요합니다. 이름은 Windows 작업 관리자의 프로세스 탭에서 사용자 이름 열에 나열됩니다.|  
-    |[/crosssession](../profiling/crosssession.md)|프로세스 프로파일링 기능을 다른 세션에서 사용하도록 설정합니다. 이 옵션은 응용 프로그램이 다른 세션에서 실행 중인 경우 필요합니다. [Windows 작업 관리자]의 [프로세스] 탭에 있는 [세션 ID] 열에 세션 ID가 나열됩니다. **/CS**를 **/crosssession**에 대한 약어로 지정할 수 있습니다.|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|ASP.NET 작업자 프로세스를 소유한 계정의 선택적 도메인 및 사용자 이름을 지정합니다. 이 옵션은 로그온된 사용자와 다른 사용자로 프로세스가 실행 중인 경우에 필요합니다. 이름은 Windows 작업 관리자의 **프로세스** 탭에서 **사용자 이름** 열에 나열됩니다.|  
+    |[/crosssession](../profiling/crosssession.md)|프로세스 프로파일링 기능을 다른 세션에서 사용하도록 설정합니다. 이 옵션은 응용 프로그램이 다른 세션에서 실행 중인 경우 필요합니다. Windows 작업 관리자의 **프로세스** 탭에 있는 [세션 ID] 열에 세션 ID가 나열됩니다. **/CS**를 **/crosssession**에 대한 약어로 지정할 수 있습니다.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|프로파일링 중에 수집할 Windows 성능 카운터를 지정합니다.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|**/wincounter**와 함께 사용해야 합니다. Windows 성능 카운터 수집 이벤트 사이에 경과하는 시간(밀리초)을 지정합니다. 기본값은 500ms입니다.|  
     |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|프로파일링 중에 수집할 ETW(Windows용 이벤트 추적) 이벤트를 지정합니다. ETW 이벤트는 별도의 파일(.etl)로 수집됩니다.|  
@@ -76,8 +77,8 @@ ms.lasthandoff: 04/19/2018
   
 7.  계측된 구성 요소를 포함하는 웹 사이트를 엽니다.  
   
-## <a name="controlling-data-collection"></a>데이터 컬렉션 제어  
- 대상 응용 프로그램이 실행 중이면 **VSPerfCmd.exe** 옵션을 사용하여 파일에 대한 데이터 쓰기를 시작하고 중지하는 방식으로 데이터 수집을 제어할 수 있습니다. 데이터 수집을 제어하면 응용 프로그램의 시작 또는 종료와 같이 프로그램 실행의 특정 부분에 대한 데이터를 수집할 수 있습니다.  
+## <a name="control-data-collection"></a>데이터 수집 제어  
+ 대상 응용 프로그램이 실행 중이면 *VSPerfCmd.exe* 옵션을 사용하여 파일에 대한 데이터 쓰기를 시작하고 중지하는 방식으로 데이터 수집을 제어할 수 있습니다. 데이터 수집을 제어하면 응용 프로그램의 시작 또는 종료와 같이 프로그램 실행의 특정 부분에 대한 데이터를 수집할 수 있습니다.  
   
 #### <a name="to-start-and-stop-data-collection"></a>데이터 수집을 시작 및 중지하려면  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|프로세스 ID(`PID`)로 지정된 프로세스에 대한 데이터 수집을 시작(**/processon**) 또는 중지(**/processoff**)합니다.|  
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|스레드 ID(`TID`)로 지정된 스레드에 대한 데이터 수집을 시작(**/threadon**) 또는 중지(**/threadoff**)합니다.|  
   
-## <a name="ending-the-profiling-session"></a>프로파일링 세션 종료  
+## <a name="end-the-profiling-session"></a>프로파일링 세션 종료  
  프로파일링 세션을 종료하려면 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램을 닫은 다음, IIS(인터넷 정보 서비스) **IISReset** 명령을 사용하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스를 닫습니다. **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 옵션을 호출하여 프로파일러를 끄고 프로파일링 데이터 파일을 닫습니다. **VSPerfClrEnv /globaloff** 명령은 프로파일링 환경 변수를 지웁니다. 새 환경 설정을 적용하려면 컴퓨터를 다시 시작해야 합니다.  
   
 #### <a name="to-end-a-profiling-session"></a>프로파일링 세션을 종료하려면  

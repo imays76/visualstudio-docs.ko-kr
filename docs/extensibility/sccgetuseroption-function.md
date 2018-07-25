@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136512"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 함수
 이 함수는 다양 한 사용자 고유의 옵션을 가져옵니다.  

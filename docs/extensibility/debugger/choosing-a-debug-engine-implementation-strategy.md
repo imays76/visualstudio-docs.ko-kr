@@ -13,25 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c3715bac00b25cd2080a1162c8e2ce8cb33e63a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 058e3d3087a46de4bb3c5d9b721d3c9111b77526
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203714"
 ---
-# <a name="choosing-a-debug-engine-implementation-strategy"></a>디버그 엔진 구현 전략 선택
-런타임 아키텍처를 사용 하 여 디버그 엔진 (DE) 구현 전략을 결정 합니다. 디버그 엔진에는 in-process에 프로그램을 디버깅, Visual Studio 세션 디버그 관리자 (SDM) 또는 둘 모두를 프로세스 아웃 프로세스를 만들 수 있습니다. 다음 지침은 이러한 세 가지 전략 중에서 선택할 수 있습니다는 데 도움이 되어야 합니다.  
+# <a name="choose-a-debug-engine-implementation-strategy"></a>디버그 엔진 구현 전략 선택
+런타임 아키텍처를 사용 하 여 디버그 엔진 (DE) 구현 전략을 결정 합니다. 디버그 엔진 in-process 디버깅할 프로그램을 만들 수 있습니다. 디버그 엔진 in-process Visual Studio 세션 디버그 관리자 SDM ()를 만듭니다. 또는 디버그 엔진-out-of-process 둘 다에 만듭니다. 다음 지침은 이러한 세 가지 전략 중에서 선택 하는 데 도움이 됩니다.  
   
 ## <a name="guidelines"></a>지침  
- Out of process를 DE에 대 한 가능 하지만 모두은 SDM 및 프로그램 디버깅, 일반적으로 없는 이유는 이렇게 하려면. 프로세스 경계를 넘어 호출은 상대적으로 속도가 느립니다.  
+ de-out-of-process를 할 수 있지만 SDM와 디버깅 중인 프로그램에 일반적으로 이유는 없습니다 이렇게 하려면. 프로세스 경계를 넘어 호출 속도가 비교적 느립니다.  
   
- 디버그 하 고 공용 언어 런타임 환경에 대 한 Win32 네이티브 런타임 환경에 대 한 엔진 이미 제공 합니다. 이러한 환경 중 하나에 대 한는 DE 바꿔야 DE in-process은 SDM를 만들어야 합니다.  
+ 디버그 엔진은 공용 언어 런타임 환경 및 Win32 기본 런타임 환경에 대 한 이미 제공 됩니다. 환경 중 하나에 대 한 장치를 교체 해야 할 경우 SDM을 사용 하 여는 DE-프로세스를 만들어야 합니다.  
   
- 그렇지 않으면 응용 프로그램은 SDM에 프로세스 또는 디버깅할 프로그램에 프로세스는 DE 만들기를 선택할 수 있습니다. 식 계산기는 DE의 프로그램 기호 저장소에 자주 액세스를 해야 하는 여부 및 빠른 액세스를 위해 메모리에 기호 저장소를 로드할 수 있는지 여부를 고려 하는 것이 유용 합니다. 다음 사항도 고려 하십시오.  
+ 이 고, 그렇지 DE in-process SDM 만들거나 수 또는 디버그 중인 프로그램에는 프로세스에서. 식 계산기는 DE의 프로그램 기호 저장소에 자주 액세스 해야 하는 경우 고려해 야 할 해야 합니다. 아니면, 기호 저장소 빠른 액세스를 위해 메모리에 로드할 수 있습니다. 또한 다음 방법 중 하나를 고려 합니다.  
   
--   식 계산기와 기호 저장소 간의 많은 호출 하지 않습니다. 또는 SDM 메모리 공간에 기호 저장소를 읽을 수 있으면은 SDM에 프로세스에서 DE 만듭니다. 프로그램에 연결할 때는 SDM에 디버그 엔진의 CLSID를 반환 해야 합니다. SDM이이 CLSID를 사용 하 여는 DE의 프로세스에서 인스턴스를 만듭니다.  
+-   식 계산기 및 기호 저장소 간의 호출 수 없는 경우, SDM 메모리 공간에 기호 저장소를 읽을 수 있으면 DE in-process SDM 만듭니다. 프로그램에 연결할 때 SDM을 디버그 엔진의 CLSID를 반환 해야 합니다. SDM이이 CLSID를 사용 하 여는 DE의 in process 인스턴스를 만듭니다.  
   
--   DE 기호 저장소에 액세스 하는 프로그램을 호출 해야 하는 경우 DE in-process 프로그램으로 만듭니다. 이 경우 프로그램은 DE의 인스턴스를 만듭니다.  
+-   DE 기호 저장소에 액세스 하는 프로그램을 호출 해야 프로그램과 DE-프로세스를 만듭니다. 이 경우 프로그램은 DE의 인스턴스를 만듭니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

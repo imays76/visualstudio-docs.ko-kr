@@ -1,14 +1,14 @@
 ---
-title: "IJsDebugStackWalker 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IJsDebugStackWalker 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 3fe30394-49c8-48e9-bde9-ffe5d79b2121
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728553"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>IJsDebugStackWalker 인터페이스
 지정 된 스레드의 스택 워크를 나타냅니다.  

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0263aba7d732c766d08bda05c6700c47d58f3d44
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890372"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML로 WPF 데이터 바인딩 개요
 
@@ -78,13 +79,13 @@ C#에서는 <xref:System.ComponentModel> 네임스페이스에서 제공하는 �
 
 그러나 XML 원본에서는 이와 대조적으로 다음과 같은 형태의 간단한 표기법을 통해 동적 속성에 액세스할 수 있습니다.
 
-```
+```xml
 <object>.<dynamic-property>
 ```
 
 이러한 두 클래스의 동적 속성은 직접 사용할 수 있는 값이나 결과 값 또는 값 컬렉션을 얻기 위해 인덱스와 함께 제공되어야 하는 인덱서로 확인됩니다. 후자의 구문은 다음과 같습니다.
 
-```
+```xml
 <object>.<dynamic-property>[<index-value>]
 ```
 

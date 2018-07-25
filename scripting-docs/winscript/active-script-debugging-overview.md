@@ -1,16 +1,16 @@
 ---
-title: "액티브 스크립트 디버깅 개요 | Microsoft Docs"
-ms.custom: 
+title: 액티브 스크립트 디버깅 개요 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571543"
 ---
 # <a name="active-script-debugging-overview"></a>액티브 스크립트 디버깅 개요
 액티브 스크립트 디버깅 인터페이스는 언어 중립적, 호스트 중립적 디버깅을 허용하고 다양한 개발 환경을 지원합니다.  

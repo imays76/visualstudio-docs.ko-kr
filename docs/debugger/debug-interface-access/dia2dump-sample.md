@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457828"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 샘플
 Dia2dump 샘플 Visual Studio와 함께 설치 되어 있고 Dia2dump.cpp 소스 파일을 포함 합니다. 명령줄에서 실행 하 고 전체 프로그램 데이터베이스 (.pdb) 파일의 내용을 표시 하는 컴파일된 실행 파일입니다.  

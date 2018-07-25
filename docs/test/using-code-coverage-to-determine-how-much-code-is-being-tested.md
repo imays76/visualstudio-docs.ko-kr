@@ -15,11 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec694fc904df2fd15ada008d9cb9f64f1df8492e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978251"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/26/2018
 > - 관리되지 않은(네이티브) 코드를 사용하는 경우 디버그 빌드 사용
 > - 각 어셈블리에 대해 .pdb(기호) 파일을 생성하고 있는지 확인합니다.
 
-예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. 이어야 합니다. 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
+예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. . 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
 
 ## <a name="report-in-blocks-or-lines"></a>블록 또는 줄에서 보고
 
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/26/2018
 
  예를 들어, 입력 "2"로 테스트를 실행할 경우를 가정하면 특정 함수의 50%만 검사됩니다. 입력 "-2"로 다시 테스트를 실행하면 검사 강조 보기에서 함수의 나머지 50%가 검사된 것을 확인할 수 있습니다. 이제 두 테스트 실행의 결과를 병합하면 보고서와 검사 강조 보기에 함수의 100%가 검사된 것으로 나타납니다.
 
- ![코드 검사 창의 병합 단추 아이콘](../test/media/codecoverage-mergeicon.png "CodeCoverage MergeIcon")**코드 검사 결과 병합**을 사용하여 이 작업을 수행합니다. 최근의 실행 또는 가져온 결과의 조합을 선택할 수 있습니다. 내보낸 결과를 결합하려면 내보낸 결과를 가져와야 합니다.
+ ![코드 검사 창의 병합 단추 아이콘](../test/media/codecoverage-mergeicon.png)**코드 검사 결과 병합**을 사용하여 이 작업을 수행합니다. 최근의 실행 또는 가져온 결과의 조합을 선택할 수 있습니다. 내보낸 결과를 결합하려면 내보낸 결과를 가져와야 합니다.
 
  병합 작업 결과를 저장하려면 **코드 검사 결과 내보내기**를 사용합니다.
 
@@ -258,16 +259,16 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
    테스트 소스 정의가 두 개 이상일 경우 각각에 대해 이 단계를 반복합니다.
 
-   ![코드 검사를 위한 빌드 정의 설정 중](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![코드 검사를 위한 빌드 정의 설정 중](../test/media/codecoverage-plaincc.png)
 
 > [!TIP]
 > **실행 설정 파일 유형**이라는 이름의 필드가 없으면 **테스트 실행기** 특성을 변경합니다. **자동화된 테스트**에서 **테스트 어셈블리**를 선택한 다음 줄임표 단추 **[...]** 를 선택합니다. **테스트 실행 추가/편집** 대화 상자의 **Test Runner**에서 **Visual Studio Test Runner**를 선택합니다.
 
 빌드 실행 후 코드 검사 결과가 테스트 실행에 첨부되고 빌드 요약에 나타납니다.
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>명령줄에서 코드 검사 분석
+## <a name="analyze-code-coverage-from-the-command-line"></a>명령줄에서 코드 검사 분석
 
-명령줄에서 테스트를 실행하려면 vstest.console.exe를 사용합니다. 코드 검사는 vstest.console.exe 유틸리티의 옵션입니다.
+명령줄에서 테스트를 실행하려면 *vstest.console.exe*를 사용합니다. 코드 검사는 *vstest.console.exe* 유틸리티의 옵션입니다.
 
 1.  Visual Studio 개발자 명령 프롬프트를 시작합니다.
 
@@ -276,6 +277,8 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 2.  다음 명령을 실행합니다.
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
+
+자세한 내용은 [MSTest.exe 명령줄 옵션](vstest-console-options.md)을 참조하세요.
 
 ## <a name="troubleshoot"></a>문제 해결
 

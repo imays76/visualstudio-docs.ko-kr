@@ -14,10 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 0f23b4a602b707dbe126d0a97824694fc51d3ddf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38809269"
 ---
 ### <a name="supported-operating-systems"></a>Supported Operating Systems  
 원격 컴퓨터에서 다음 운영 체제 중 하나를 실행해야 합니다.  
@@ -33,13 +34,13 @@ ms.lasthandoff: 10/27/2017
 -   Windows Server 2008 서비스 팩 2, Windows Server 2008 R2 서비스 팩 1
 
 > [!NOTE]
-> Windows Phone 디버깅 한 USB 연결이 필요한 (원격 도구가 필요 하지 않습니다).
+> Windows Phone 디버그 USB 연결 해야 (원격 도구가 필요 하지 않습니다).
   
 ### <a name="supported-hardware-configurations"></a>지원되는 하드웨어 구성  
   
 -   1.6GHz 이상의 프로세서  
   
--   1GB RAM(가상 컴퓨터에서 실행하는 경우 1.5GB)  
+-   1GB RAM(가상 머신에서 실행하는 경우 1.5GB)  
   
 -   1GB의 하드 디스크 여유 공간  
   
@@ -48,4 +49,4 @@ ms.lasthandoff: 10/27/2017
 -   1024x768 이상 디스플레이 해상도로 실행되는 DirectX 9 지원 비디오 카드  
   
 ### <a name="network-configuration"></a>네트워크 구성  
- 원격 컴퓨터와 Visual Studio 컴퓨터는 네트워크, 작업 그룹 또는 홈 그룹을 통해 연결되거나 이더넷 케이블을 통해 직접 연결되어야 합니다. 프록시를 통해 연결 된 두 컴퓨터 간에 디버깅이 지원 되지 않습니다. 국가 간 대기 시간이 긴 또는 전화 접속, 인터넷 등 낮은 대역폭 연결을 통해 또는 인터넷을 통해 디버깅 권장 되지 않습니다 및 실패 하거나 느리고 수입니다.
+ 원격 컴퓨터와 Visual Studio 컴퓨터는 네트워크, 작업 그룹 또는 홈 그룹을 통해 연결되거나 이더넷 케이블을 통해 직접 연결되어야 합니다. 프록시를 통해 연결 하는 두 컴퓨터 간에 디버깅이 지원 되지 않습니다. 국가 간 높은 대기 시간 또는 낮은 대역폭 연결에서는 인터넷에 접속 등을 통해 또는 인터넷을 통해 디버깅 권장 되지 않습니다 및 실패 하거나 느리고 수 있습니다.

@@ -18,12 +18,10 @@
     - name: 'Mac 사용자용 설정, 설치 및 확인'
       href: setup-install-and-verifications-for-mac-users.md
 - name: Apache Cordova용 Visual Studio Tools
-  href: visual-studio-tools-for-apache-cordova.md
+  href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools for Unity
   href: visual-studio-tools-for-unity.md
   items:
-    - name: Visual Studio Tools for Unity 개요
-      href: overview-of-visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity 시작
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity 사용

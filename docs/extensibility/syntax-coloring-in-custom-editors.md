@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139463"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>사용자 지정 편집기에서 색을 지정 하는 구문
 코어 편집기를 포함 하 여 visual Studio 환경 SDK 편집기 특정 구문 항목을 식별 하는 지정 된 문서 보기에 대 한 지정 된 색으로 표시할 언어 서비스를 사용 합니다.

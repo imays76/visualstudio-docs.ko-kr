@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107500"
 ---
 # <a name="creating-a-settings-category"></a>설정 범주 만들기
 이 연습에서는 Visual Studio 설정 범주 만들고 사용 하 여 값을 저장 하 고 설정 파일에서 값을 복원 합니다. 설정 범주는 "사용자 지정 설정 지점;"으로 표시 되는 관련된 속성 그룹 즉,에 확인란으로는 **가져오기 및 내보내기 설정을** 마법사. (에서 찾을 수 있습니다는 **도구** 메뉴.) 설정을 저장 또는 범주를 복원 및 개별 설정 마법사에 표시 되지 않습니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.  

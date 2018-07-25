@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130882"
 ---
 # <a name="project-priority"></a>프로젝트 우선 순위
 프로젝트 항목에는 일반적으로 솔루션에 프로젝트를 하나만의 구성원은 합니다. 따라서 IDE 쉽게 확인할 수 있는 프로젝트 항목을 열려면 사용 됩니다. 그러나 항목이 둘 이상의 프로젝트의 멤버인 경우 IDE는 항목을 열에 대 한 최상의 프로젝트를 확인할 우선 순위 체계를 사용 합니다.  

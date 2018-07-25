@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122147"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 이 메서드는 생성 및 소멸 프로세스 및 포트에서 프로그램의 발생을 나타내는 이벤트를 보냅니다.  

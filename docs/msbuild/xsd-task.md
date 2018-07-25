@@ -1,7 +1,7 @@
 ---
 title: XSD 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -22,14 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7505f3d18e0b32ebdbc8b82d447e49b26fe4182e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b292c0bf1bc80f811cbf2f845385f91987184674
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057374"
 ---
 # <a name="xsd-task"></a>XSD 작업
 소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구(xsd.exe)를 래핑합니다.  
+
+> [!NOTE]
+> Visual Studio 2017에서 xsd.exe에 대한 C++ 프로젝트 지원이 사용되지 않습니다. **CppCodeProvider.dll**을 수동으로 GAC에 추가하여 **Microsoft.VisualC.CppCodeProvider** API를 계속 사용할 수 있습니다. 
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 **XSD** 작업의 매개 변수에 대해 설명합니다.  

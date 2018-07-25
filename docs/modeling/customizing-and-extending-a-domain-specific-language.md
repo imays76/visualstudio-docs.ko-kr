@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953377"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>도메인별 언어 사용자 지정 및 확장
 Visual Studio 모델링 및 시각화 SDK (VMSDK)을 모델링 도구를 정의할 수 있습니다 하는 여러 개의 수준이 제공 합니다.

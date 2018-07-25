@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460985"
 ---
 # <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
 프레임의 기본 주소를 검색 합니다.  

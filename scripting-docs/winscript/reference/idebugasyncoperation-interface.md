@@ -1,16 +1,16 @@
 ---
-title: "IDebugAsyncOperation 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugAsyncOperation 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugAsyncOperation interface
 ms.assetid: ebb2ea75-1443-4d8a-812d-171a166f5f9d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726103"
 ---
 # <a name="idebugasyncoperation-interface"></a>IDebugAsyncOperation 인터페이스
 디버그 프로세스 관리자 구현 하는 `IDebugAsyncOperation` 인터페이스입니다. 호출 하는 언어 엔진에서 `IDebugApplication::CreateAsyncDebugOperation` 이 인터페이스에 대 한 참조를 얻는 메서드를 합니다. 언어 엔진에서 사용할 수는 `IDebugAsyncOperation` 동기 디버그 작업에 대 한 비동기 액세스를 제공 하는 인터페이스입니다.  

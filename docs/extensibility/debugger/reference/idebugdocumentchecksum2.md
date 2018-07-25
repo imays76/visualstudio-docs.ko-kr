@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106720"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 디버그 문서에 대 한 체크섬 나타내며 체크섬 구성 요소 간에 전달 수 있습니다.  

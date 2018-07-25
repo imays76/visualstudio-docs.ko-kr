@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c94e8f2ba852600c14ede7419619c711b70f0b0b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2b1e2291ff5c4b7ff072e45df9e2d32768011bca
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815784"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>방법: 내 코드만 표시하도록 프로파일링 도구 보고서 뷰 필터링
 

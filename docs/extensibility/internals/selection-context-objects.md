@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131267"
 ---
 # <a name="selection-context-objects"></a>컨텍스트 개체 선택
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 전역 선택 컨텍스트 개체를 사용 하 여 IDE에서 표시 되어야 할 사항을 결정 합니다. IDE의 각 창 글로벌 선택 항목 컨텍스트를 푸시할 자체 선택 컨텍스트 개체를 가질 수 있습니다. IDE는 해당 창에 포커스가 있을 때 창에서 값을 가진 전역 선택 항목 컨텍스트를 업데이트 합니다. 자세한 내용은 참조 [사용자에 게 피드백](../../extensibility/internals/feedback-to-the-user.md)합니다.  

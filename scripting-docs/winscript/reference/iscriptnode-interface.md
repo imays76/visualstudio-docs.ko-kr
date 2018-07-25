@@ -1,16 +1,16 @@
 ---
-title: "IScriptNode 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IScriptNode 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IScriptNode interface
 ms.assetid: cfa76c4a-6543-48e8-a946-d212cd0bf934
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733783"
 ---
 # <a name="iscriptnode-interface"></a>IScriptNode 인터페이스
 구현 하는 개체는 `IScriptNode` 인터페이스 웹 페이지를 나타냅니다.  

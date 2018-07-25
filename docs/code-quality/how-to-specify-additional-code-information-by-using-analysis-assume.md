@@ -19,6 +19,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031529"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>방법: _Analysis_assume를 사용 하 여 추가 코드 정보를 지정 합니다.
 C/c + + 코드를 분석 프로세스는 데 도움이 되 고 줄어들지만 경고에 대 한 코드 분석 도구에 대 한 힌트를 제공할 수 있습니다. 추가 정보를 제공 하려면 다음 함수를 사용 합니다.

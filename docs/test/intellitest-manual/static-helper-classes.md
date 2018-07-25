@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815901"
 ---
 # <a name="static-helper-classes"></a>정적 도우미 클래스
 
@@ -41,7 +42,7 @@ IntelliTest는 [매개 변수가 있는 단위 테스트](test-generation.md#par
 
 다음 매개 변수가 있는 테스트에서는 **j=0**을 간주하지 않습니다.
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 위의 코드는 거의 다음과 같습니다.
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ public void TestSomething(int i, int j) {
 
 다음은 정수의 절대 값이 양수가 되도록 어설션합니다.
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ public void TestSomething(int i) {
 
 * **PexChoose.Value**를 호출해서 새 값을 생성하면 됩니다.
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ public int Foo() {
 
 IntelliTest가 코드를 탐색할 때 **PexObserve**는 형식 문자열 표현으로 계산된 값을 기록하는 데 사용됩니다. 이 값은 고유한 이름과 연결됩니다.
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **예제**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ public partial class MathExTests {
 
 이 예제에서는 **PexAssume.Arrays.ElementsAreNotNull** 메서드의 구현을 보여 줍니다. 이 메서드에서는 배열 값 길이에 대한 제약 조건을 무시하여 IntelliTest가 다양한 크기의 배열을 생성하지 않도록 합니다. 제약 조건은 여기에서만 무시됩니다. 테스트된 코드가 배열 길이에 따라 다르게 동작할 경우 IntelliTest는 테스트된 코드의 제약 조건에서 다양한 크기의 배열을 생성할 수 없습니다.
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {

@@ -17,17 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 760d79677ea43602f000748d1eb0d65203c2c787
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234987"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트에서 임계값 규칙 위반 분석
 
 임계값 규칙은 특정 성능 카운터와 연결되며, 위반이 발생하면 성능 카운터가 설정된 값을 초과하거나 이러한 값 아래로 떨어진 것입니다. 부하 테스트를 실행할 때 이전에 설정한 임계값 규칙에서 발생하는 위반을 분석할 수 있습니다.
 
-위반이 발생한 경우 부하 테스트 분석기의 상태 표시줄에 **임계값 위반** 하이퍼링크가 표시되고 발생한 위반 개수가 지정됩니다. 이 하이퍼링크를 선택하면 임계값 위반 테이블이 표시됩니다. **카운터** 창 및 그래프에서도 임계값 위반을 볼 수 있습니다.
+위반이 발생한 경우 **부하 테스트 분석기**의 상태 표시줄에 **임계값 위반** 하이퍼링크가 표시되고 발생한 위반 개수가 지정됩니다. 이 하이퍼링크를 선택하면 임계값 위반 테이블이 표시됩니다. **카운터** 창 및 그래프에서도 임계값 위반을 볼 수 있습니다.
 
 ## <a name="view-threshold-violations-in-the-table"></a>테이블에서 임계값 위반 보기
 
@@ -53,15 +54,15 @@ ms.lasthandoff: 04/26/2018
 
  이러한 아이콘은 다음 중 하나입니다.
 
- ![임계값 위반 없음](../test/media/icon_ltest_1.gif "Icon_LTest_1") 임계값 위반이 없습니다.
+ ![임계값 위반 없음](../test/media/icon_ltest_1.gif) 임계값 위반 없음
 
- ![마지막 기간에서 중요 임계값 위반](../test/media/icon_ltest_2.gif "Icon_LTest_2") 마지막 기간에서 중요 임계값 위반이 발생했습니다.
+ ![마지막 기간에서 중요한 임계값 위반 발생](../test/media/icon_ltest_2.gif) 마지막 간격에서 중요 임계값 위반이 발생함
 
- ![이전 기간에서 중요 임계값 위반](../test/media/icon_ltest_3.gif "Icon_LTest_3") 이전 기간에서 중요 임계값 위반이 발생했습니다.
+ ![이전 기간에서 중요한 임계값 위반 발생](../test/media/icon_ltest_3.gif) 이전 간격에서 중요 임계값 위반이 발생함
 
- ![마지막 기간에서 경고 임계값 위반](../test/media/icon_ltest_4.gif "Icon_LTest_4") 마지막 기간에서 경고 임계값 위반이 발생했습니다.
+ ![마지막 기간에서 경고 임계값 위반 발생](../test/media/icon_ltest_4.gif) 마지막 간격에서 경고 임계값 위반이 발생함
 
- ![이전 기간에서 경고 임계값 위반](../test/media/icon_ltest_5.gif "Icon_LTest_5") 이전 기간에서 경고 임계값 위반이 발생했습니다.
+ ![이전 기간에서 경고 임계값 위반 발생](../test/media/icon_ltest_5.gif) 이전 간격에서 경고 임계값 위반이 발생함
 
  그래프에 임계값 위반이 표시될 수도 있습니다. 임계값 아이콘은 그래프에서 임계값 위반이 발생한 데이터 요소 옆에 표시됩니다.
 

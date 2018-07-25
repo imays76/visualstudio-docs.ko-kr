@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3f65920a1f47895ab6caf4bc84dd75c8100487a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35669132"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>방법: 부하 테스트 분석기를 사용하여 부하 테스트의 웹 페이지 응답 시간 보기
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  각 페이지에 대한 데이터가 표로 표시됩니다. 다음 열이 일반적으로 표시됩니다.
 
-    |||
+    |열 머리글|설명|
     |-|-|
     |**페이지**|웹 페이지의 이름입니다.|
     |**시나리오**|시나리오 이름입니다. 웹 성능 테스트에 시나리오가 둘 이상인 경우 이 정보가 중요합니다.|

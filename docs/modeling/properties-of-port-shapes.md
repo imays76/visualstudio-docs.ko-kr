@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951247"
 ---
 # <a name="properties-of-port-shapes"></a>포트 모양의 속성
 생성 된 디자이너에서 도메인 클래스를 나타냅니다 port 셰이프를 사용할 수 있습니다.

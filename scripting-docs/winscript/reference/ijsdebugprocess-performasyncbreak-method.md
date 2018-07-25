@@ -1,16 +1,18 @@
 ---
-title: "Ijsdebugprocess:: Performasyncbreak 메서드 | Microsoft Docs"
-ms.custom: 
+title: 'Ijsdebugprocess:: Performasyncbreak 메서드 | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IJsDebugProcess.PerformAsyncBreak
-apilocation: jscript9diag.dll
+apiname:
+- IJsDebugProcess.PerformAsyncBreak
+apilocation:
+- jscript9diag.dll
 ms.assetid: 2a6ee369-ea99-4332-8521-a1741ccb6292
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728093"
 ---
 # <a name="ijsdebugprocessperformasyncbreak-method"></a>IJsDebugProcess::PerformAsyncBreak 메서드
 다음 스크립트 명령에서 중단 하도록 프로그램이 중단 모드에서 스크립트 엔진을 넣습니다.  

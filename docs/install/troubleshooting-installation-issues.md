@@ -1,5 +1,5 @@
 ---
-title: 설치 문제 해결
+title: Visual Studio 2017 설치 문제 해결
 description: 때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치 또는 업그레이드에 실패할 경우 이 페이지가 도움이 될 수 있습니다.
 ms.date: 11/21/2017
 ms.technology: vs-acquisition
@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0009aa15919cf04c3ff8e56edf4f10adcb7e0ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282956"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 설치 및 업그레이드 문제 해결
 
@@ -32,7 +33,7 @@ Visual Studio 2017을 설치 또는 업데이트할 때 작업이 실패합니�
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>1단계 - 이 문제가 알려진 문제인지 확인
 
-Microsoft에서 수정을 진행하고 있는 Visual Studio 설치 관리자에 관련된 몇 가지 알려진 문제가 있습니다. 문제에 대한 해결 방법이 있는지 확인하려면 [릴리스 정보의 알려진 문제 섹션](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues)을 확인하세요.
+Microsoft에서 수정을 진행하고 있는 Visual Studio 설치 관리자에 관련된 몇 가지 알려진 문제가 있습니다. 문제에 대한 해결 방법이 있는지 확인하려면 [릴리스 정보의 알려진 문제 섹션](/visualstudio/releasenotes/vs2017-relnotes#-known-issues)을 확인하세요.
 
 ### <a name="step-2---check-with-the-developer-community"></a>2단계 - 개발자 커뮤니티에서 확인
 
@@ -47,7 +48,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 1. Visual Studio 설치 관리자를 닫습니다.
 2. Visual Studio 설치 관리자 디렉터리를 삭제합니다. 일반적으로 디렉터리는 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`입니다.
-3. Visual Studio 설치 관리자 부트스트래퍼를 실행합니다. Downloads 폴더에서 `vs_[Visual Studio edition]__*.exe` 패턴을 따르는 파일 이름을 사용하는 부트스트래퍼를 찾을 수 있습니다. 해당 응용 프로그램을 찾을 수 없으면 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/) 페이지로 이동하고 해당 버전의 Visual Studio에 대한 **다운로드**를 클릭하여 부트스트래퍼를 다운로드할 수 있습니다. 실행 파일을 실행하여 설치 메타데이터를 다시 설정합니다.
+3. Visual Studio 설치 관리자 부트스트래퍼를 실행합니다. Downloads 폴더에서 `vs_[Visual Studio edition]__*.exe` 패턴을 따르는 파일 이름을 사용하는 부트스트래퍼를 찾을 수 있습니다. 해당 응용 프로그램을 찾을 수 없으면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하고 해당 버전의 Visual Studio에 대한 **다운로드**를 클릭하여 부트스트래퍼를 다운로드할 수 있습니다. 실행 파일을 실행하여 설치 메타데이터를 다시 설정합니다.
 4. Visual Studio를 다시 설치하거나 업데이트해 보세요. 설치 관리자가 계속 실패하면 다음 단계로 이동합니다.
 
 ### <a name="step-4---report-a-problem"></a>4단계 - 문제 보고
@@ -70,7 +71,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 ### <a name="step-6---contact-us-optional"></a>6단계-문의(선택 사항)
 
-문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>오프라인 설치 관리자 문제를 해결하는 방법
 
@@ -99,7 +100,7 @@ Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및.NET Framewo
 
 ## <a name="more-support-options"></a>추가 지원 옵션
 
-문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 몇 가지 추가 옵션은 다음과 같습니다.
 
@@ -112,4 +113,5 @@ Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및.NET Framewo
 
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 * [Visual Studio 인스턴스 검색 및 관리 도구](tools-for-managing-visual-studio-instances.md)
+* [방화벽 또는 프록시 서버 뒤에 Visual Studio 설치](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 2017 제거](remove-visual-studio.md)

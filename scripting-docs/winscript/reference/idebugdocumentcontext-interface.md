@@ -1,16 +1,16 @@
 ---
-title: "IDebugDocumentContext 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugDocumentContext 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentContext interface
 ms.assetid: 665ee08a-5c6a-4ab1-ab93-de376acc9a74
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726233"
 ---
 # <a name="idebugdocumentcontext-interface"></a>IDebugDocumentContext 인터페이스
 디버깅 중인 문서 부분의 추상적 표현을 제공 합니다. 텍스트 문서에 대 한이 표현은 문자 위치 범위의 구성 됩니다.  

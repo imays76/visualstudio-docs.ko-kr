@@ -24,6 +24,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425159"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>연습: 코드 조각 만들기
 몇 가지 단계로 코드 조각을 만들 수 있습니다. XML 파일을 만들고, 적절한 요소를 입력하고, 코드를 추가하기만 하면 됩니다. 또한 코드에 참조 및 대체 매개 변수를 추가할 수 있습니다. **코드 조각 관리자**(**도구** > **코드 조각 관리자**)에서 **가져오기** 단추를 사용하여 Visual Studio 설치에 코드 조각을 추가할 수 있습니다.

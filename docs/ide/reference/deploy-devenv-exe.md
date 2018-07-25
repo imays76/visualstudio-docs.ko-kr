@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945118"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 빌드 또는 다시 빌드 후 솔루션을 배포합니다. 관리 코드 프로젝트에만 적용됩니다.

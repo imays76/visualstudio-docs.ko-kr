@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633413"
 ---
 # <a name="object-doesn39t-support-this-property-or-method"></a>개체 원본이&#39;t이 속성 또는 메서드를 지원 합니다.
 이 개체에 대해 없는 속성이나 메서드를 지정했습니다. 모든 개체에서 모든 속성과 메서드를 지원하는 것은 아닙니다.  

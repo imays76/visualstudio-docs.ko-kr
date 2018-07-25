@@ -10,19 +10,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 857c9436b3a1279671702575d3ab479d9c2282f4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db0ac06d26e7e597d9f8d4b3c11a9cf8db188e80
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174129"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>응용 프로그램 설정 파일에서 연결 속성이 없거나 잘못되었습니다.
 
-응용 프로그램 설정 파일의 연결 속성이 없거나 잘못되었습니다. .dbml 파일의 연결 문자열이 대신 사용되었습니다.
+응용 프로그램 설정 파일의 연결 속성이 없거나 잘못되었습니다. 연결 문자열을 *.dbml* 해당 위치에 파일을 사용 했습니다.
 
-.dbml 파일에는 찾을 수 없는 응용 프로그램 설정 파일의 연결 문자열에 대한 참조가 포함되어 있습니다. 이 메시지는 정보를 제공 합니다. 연결 문자열 설정이 만들어집니다 때 **확인** 를 클릭 합니다.
+합니다 *.dbml* 파일을 찾지 못하면 응용 프로그램 설정 파일에서 연결 문자열에 대 한 참조를 포함 합니다. 이 메시지는 정보를 제공 합니다. 연결 문자열 설정은 만들어집니다 시기 **확인** 를 클릭 합니다.
 
-이 메시지에 응답 하려면 선택 **확인**합니다. .dbml 파일에 포함된 연결 정보는 응용 프로그램 설정에 추가됩니다.
+이 메시지에 응답 하려면 선택 **확인**합니다. 에 포함 된 연결 정보를 *.dbml* 파일이 응용 프로그램 설정에 추가 됩니다.
 
 ## <a name="see-also"></a>참고자료
 

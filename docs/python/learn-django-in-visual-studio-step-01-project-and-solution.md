@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 8ff4d56673f4de12189111b47e6a38f4b6a60dab
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947130"
 ---
-# <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>자습서 1단계: Visual Studio에서 Django 웹 프레임워크 시작
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Django 웹 프레임워크 시작
 
 [Django](https://www.djangoproject.com/)는 신속하고 안전하며 확장성 있는 웹 개발을 위해 고안된 상위 수준 Python 프레임워크입니다. 이 자습서에서는 Django 기반 웹앱 만들기를 간소화하기 위해 Visual Studio에서 제공하는 프로젝트 템플릿의 컨텍스트에서 Django 프레임워크를 살펴봅니다.
 
@@ -33,11 +34,13 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 다음 옵션을 포함하는 Visual Studio 2017:
+- 다음 옵션을 포함하는 Windows의 Visual Studio 2017:
   - **Python 개발** 워크로드(설치 관리자의 **워크로드**) 자세한 내용은 [Visual Studio에서 Python 지원 설치](installing-python-support-in-visual-studio.md)를 참조하세요.
   - **코드 도구**의 **개별 구성 요소** 탭에 있는 **Git for Windows** 및 **Visual Studio용 GitHub 확장**
 
 Django 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 버전에도 포함되어 있지만 세부 정보는 이 자습서에 설명된 내용과 다를 수 있으며 특히 이전 버전의 Django 프레임워크와 다릅니다.
+
+현재 Mac용 Visual Studio에서는 Python 개발이 지원되지 않습니다. Mac 및 Linux의 경우, [Visual Studio Code의 Python 확장](https://code.visualstudio.com/docs/python/python-tutorial)을 사용합니다.
 
 ### <a name="visual-studio-projects-and-django-projects"></a>“Visual Studio 프로젝트” 및 “Django 프로젝트”
 
@@ -116,7 +119,7 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>1-3단계: 가상 환경을 만들고 소스 제어에서 제외
 
-프로젝트에 대해 소스 제어를 구성했으므로 프로젝트에 필요한 Django 패키지로 가상 환경을 만들 수 있습니다. 그런 다음, **팀 탐색기**를 사용하여 소스 제어에서 환경의 폴더를 제외할 수 있습니다.
+프로젝트에 대한 소스 제어를 구성했으므로 프로젝트에 필요한 Django 패키지가 포함된 가상 환경을 만들 수 있습니다. 그런 다음, **팀 탐색기**를 사용하여 소스 제어에서 환경의 폴더를 제외할 수 있습니다.
 
 1. **솔루션 탐색기**에서 **Python 환경** 노드를 마우스 오른쪽 단추로 클릭하고 **가상 환경 추가**를 선택합니다.
 
@@ -204,7 +207,7 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
 > [!div class="nextstepaction"]
 > [보기 및 페이지 템플릿을 사용하여 Django 앱 만들기](learn-django-in-visual-studio-step-02-create-an-app.md)
 
-## <a name="going-deeper"></a>자세히 알아보기
+## <a name="go-deeper"></a>자세히 알아보기
 
 - Django 프로젝트 코드: [Writing your first Django app, part 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)(첫 번째 Django 앱 작성, 1부)(docs.djangoproject.com)
 - 관리 유틸리티: [django-admin and manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/)(django-admin 및 manage.py)(docs.djangoproject.com)

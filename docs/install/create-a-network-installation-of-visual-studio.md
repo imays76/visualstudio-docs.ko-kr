@@ -14,11 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057998"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017의 네트워크 설치 만들기
 
@@ -120,7 +121,7 @@ response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 
 > [!TIP]
 > `--wait` 옵션을 배치 파일의 일부로 실행하면 `vs_enterprise.exe` 프로세스는 설치가 완료될 때까지 기다린 후에 종료 코드를 반환합니다. 엔터프라이즈 관리자가 완료된 설치에 대한 추가 작업을 수행하려는 경우(예: [성공적인 설치에 제품 키 적용](automatically-apply-product-keys-when-deploying-visual-studio.md)) 이 방법이 유용하지만, 해당 설치에서 반환 코드를 처리하려면 설치가 완료될 때까지 기다려야 합니다.  `--wait`를 사용하지 않으면 설치가 완료되기 전에 `vs_enterprise.exe` 프로세스가 종료되고 설치 작업 상태를 나타내지 않는 부정확한 종료 코드가 반환됩니다.
 
-레이아웃에서 설치하는 경우 설치되는 콘텐츠는 레이아웃에서 가져옵니다. 그러나 레이아웃에 없는 구성 요소를 선택하면 인터넷에서 해당 구성 요소를 가져옵니다.  Visual Studio 설치 프로그램이 레이아웃에 없는 콘텐츠를 다운로드하지 못하도록 하려면 `--noWeb` 옵션을 사용합니다.  `--noWeb`을 사용하고 설치하도록 선택한 콘텐츠가 레이아웃에 없으면 설치가 실패합니다.  
+레이아웃에서 설치하는 경우 설치되는 콘텐츠는 레이아웃에서 가져옵니다. 그러나 레이아웃에 없는 구성 요소를 선택하면 인터넷에서 해당 구성 요소를 가져옵니다.  Visual Studio 설치 프로그램이 레이아웃에 없는 콘텐츠를 다운로드하지 못하도록 하려면 `--noWeb` 옵션을 사용합니다.  `--noWeb`을 사용하고 설치하도록 선택한 콘텐츠가 레이아웃에 없으면 설치가 실패합니다.
 
 ### <a name="error-codes"></a>오류 코드
 
@@ -139,7 +140,7 @@ response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>이전 Visual Studio 2017 릴리스에 대한 레이아웃을 만드는 방법
 
 > [!NOTE]
-> [VisualStudio.com](http://www.visualstudio.com)에서 제공되는 Visual Studio 2017 부트스트래퍼는 실행될 때마다 사용 가능한 최신 Visual Studio 2017 릴리스를 다운로드하여 설치합니다. 오늘 Visual Studio 부트스트래퍼를 다운로드하고 지금부터 6개월 동안 실행하면 이 부트스트래퍼는 나중 그때 사용 가능한 Visual Studio 2017 릴리스를 설치합니다. 레이아웃을 만들 경우 해당 레이아웃에서 Visual Studio를 설치하면 레이아웃에 있는 특정 버전의 Visual Studio가 설치됩니다. 온라인에 더 새로운 버전이 있더라도 레이아웃에 있는 Visual Studio 버전이 설치됩니다.
+> [visualstudio.microsoft.com](http://visualstudio.microsoft.com)에서 제공되는 Visual Studio 2017 부트스트래퍼는 실행될 때마다 사용 가능한 최신 Visual Studio 2017 릴리스를 다운로드하여 설치합니다. 오늘 Visual Studio 부트스트래퍼를 다운로드하고 지금부터 6개월 동안 실행하면 이 부트스트래퍼는 나중 그때 사용 가능한 Visual Studio 2017 릴리스를 설치합니다. 레이아웃을 만들 경우 해당 레이아웃에서 Visual Studio를 설치하면 레이아웃에 있는 특정 버전의 Visual Studio가 설치됩니다. 온라인에 더 새로운 버전이 있더라도 레이아웃에 있는 Visual Studio 버전이 설치됩니다.
 
 이전 버전의 Visual Studio 2017에 대한 레이아웃을 만들어야 하는 경우 https://my.visualstudio.com으로 이동하여 "최종" 버전의 Visual Studio 2017 부트스트래퍼를 다운로드할 수 있습니다.
 
@@ -151,7 +152,7 @@ response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 
 
 ## <a name="get-support"></a>지원 받기
 
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 

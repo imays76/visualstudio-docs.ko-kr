@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c4b8bb09795f35e3ae67065322e926a09dda0f19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302936"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>개발자 테스트 도구, 시나리오 및 호환성
 
@@ -30,8 +31,8 @@ IntelliTest를 사용하여 검사를 개선하고 재발을 방지합니다. In
 ![작동 중인 IntelliTest](media/devtest-intellitest.png)
 
 * [Introduction to IntelliTest with Visual Studio](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)(Visual Studio의 IntelliTest 소개)
-* [IntelliTest – One Test to rule them all](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)(IntelliTest - 한 번 테스트로 모두 제어)
-* [IntelliTest Videos](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)(IntelliTest 비디오)
+* [IntelliTest - 한 번 테스트로 모두 제어](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)
+* [IntelliTest 비디오](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [IntelliTest 시작](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest 참조 설명서](intellitest-manual/index.md)
 
@@ -47,12 +48,11 @@ IntelliTest를 사용하여 검사를 개선하고 재발을 방지합니다. In
 
 * [UI 자동화를 사용하여 코드 테스트](use-ui-automation-to-test-your-code.md)
 * [코딩된 UI 테스트 만들기, 편집 및 유지 관리 시작](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [코딩된 UI 테스트를 사용하여 UWP 앱 테스트](test-windows-store-8-1-apps-with-coded-ui-tests.md)
-* [코딩된 UI 테스트를 사용하여 Windows Phone 앱 테스트](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
+* [코딩된 UI 테스트를 사용하여 UWP 앱 테스트](test-uwp-app-with-coded-ui-test.md)
 * [코딩된 UI 테스트를 사용하여 SharePoint 응용 프로그램 테스트](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
-* [Introduction to Coded UI Tests with Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)(Visual Studio Enterprise의 코딩된 UI 테스트 소개(랩))
+* [Visual Studio Enterprise의 코딩된 UI 테스트 소개(랩)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
-## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Visual Studio Code 검사를 사용한 효과적인 유닛 테스트
+## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Visual Studio 코드 검사를 사용한 효과적인 유닛 테스트
 
 프로젝트의 코드 중 단위 테스트와 같은 코딩된 테스트를 사용하여 실제로 테스트할 부분을 결정하려면 Visual Studio의 코드 검사 기능을 사용합니다. 버그로부터 효과적으로 보호하려면 코드의 상당한 부분을 실행 또는 ‘검사’해야 합니다.
 
@@ -63,7 +63,7 @@ IntelliTest를 사용하여 검사를 개선하고 재발을 방지합니다. In
 ![Visual Studio Team Services 및 Team Foundation Server를 사용하여 테스트](media/devtest-codecoverage.png)
 
 * [코드 검사를 사용하여 테스트할 코드 범위 결정](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Unit Testing, Code Coverage and Code Clone Analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)(Visual Studio의 유닛 테스트, 코드 검사 및 코드 복제본 분석(랩))
+* [Visual Studio의 유닛 테스트, 코드 검사 및 코드 복제본 분석(랩)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [코드 검사 분석 사용자 지정](customizing-code-coverage-analysis.md)
 
 ## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>고성능 테스트 탐색기에서 임의 프레임워크를 사용하여 유닛 테스트
@@ -84,6 +84,6 @@ Visual Studio는 확장 가능하고 이제 NUnit 및 xUnit.net과 같은 타사
 ## <a name="see-also"></a>참고 항목
 
 * [유닛 테스트 시작](getting-started-with-unit-testing.md)
-* [Speed up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)(Team Foundation Server의 단위 테스트 실행 시간 단축)
-* [Parallel and Context Sensitive Unit Test Execution](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)(병렬 및 상황에 맞는 단위 테스트 실행)
-* [Unit Testing, Code Coverage and Code Clone Analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)(Visual Studio의 유닛 테스트, 코드 검사 및 코드 복제본 분석(랩))
+* [Team Foundation Server의 단위 테스트 실행 시간 단축](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
+* [병렬 및 컨텍스트 단위 테스트 실행](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Visual Studio의 유닛 테스트, 코드 검사 및 코드 복제본 분석(랩)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)

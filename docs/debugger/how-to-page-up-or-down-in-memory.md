@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472713"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>방법: 메모리에서 위 또는 아래로 한 페이지 이동
 메모리 내용을 볼 때는 **메모리** 창 또는 **디스어셈블리** 창, 메모리 공간에서 위로 또는 아래로 이동 하려면 세로 스크롤 막대를 사용할 수 있습니다.  

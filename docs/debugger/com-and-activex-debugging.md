@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468435"
 ---
 # <a name="com-and-activex-debugging"></a>COM 및 ActiveX 디버깅
 이 단원에서는 COM 응용 프로그램과 ActiveX 컨트롤의 디버깅에 대한 팁을 제공합니다.  

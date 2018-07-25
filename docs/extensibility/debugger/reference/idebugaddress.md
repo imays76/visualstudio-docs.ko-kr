@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100246"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 이 인터페이스는 항목의 주소를 나타냅니다. 기호 처리기에 의해 반환 됩니다.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479821"
 ---
 # <a name="debugging-wpf"></a>WPF 디버깅
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]에서는 WPF 응용 프로그램을 보다 쉽게 디버깅할 수 있는 추가 기능을 제공합니다.  

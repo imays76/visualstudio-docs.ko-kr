@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146834"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio에 대 한 UX Essentials
 ## <a name="best-practices"></a>최선의 구현 방법  

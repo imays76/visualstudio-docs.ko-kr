@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705088"
 ---
 # <a name="set-current-process"></a>현재 프로세스 설정
 디버거에서 지정한 프로세스를 활성 프로세스로 설정합니다.

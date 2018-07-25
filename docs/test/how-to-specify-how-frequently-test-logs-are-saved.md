@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966656"
 ---
 # <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 테스트 로그를 저장할 빈도 지정
 

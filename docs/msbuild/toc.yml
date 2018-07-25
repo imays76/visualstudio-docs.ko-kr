@@ -84,6 +84,8 @@
               items:
                 - name: '연습: 인라인 작업 만들기'
                   href: walkthrough-creating-an-inline-task.md
+            - name: RoslynCodeTaskFactory를 사용한 MSBuild 인라인 작업
+              href: msbuild-roslyncodetaskfactory.md
         - name: 속성 및 항목 비교
           href: comparing-properties-and-items.md
         - name: MSBuild 특수 문자
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Delete 작업
               href: delete-task.md
+            - name: DownloadFile 작업
+              href: downloadfile-task.md
             - name: 오류 작업
               href: error-task.md
             - name: Exec 작업
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: UnregisterAssembly 작업
               href: unregisterassembly-task.md
+            - name: 작업 압축 풀기
+              href: unzip-task.md
             - name: UpdateManifest 작업
               href: updatemanifest-task.md
             - name: Vbc 작업
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: XslTransformation 작업
               href: xsltransformation-task.md
+            - name: ZipDirectory 작업
+              href: zipdirectory-task.md
         - name: MSBuild 조건
           href: msbuild-conditions.md
         - name: MSBuild 조건부 구문

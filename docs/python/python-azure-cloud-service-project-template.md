@@ -1,7 +1,7 @@
 ---
 title: Python용 Azure 클라우드 서비스 프로젝트 템플릿
 description: 역할 배포, 종속성 및 문제 해결을 포함하여 Python으로 작성된 Azure 클라우드 서비스용 Visual Studio 템플릿에 대한 개요입니다.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,11 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2e1518b387f859e4be4427b05b2010167c7205c6
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058661"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python용 Azure Cloud Service 프로젝트
 
@@ -28,7 +29,7 @@ Visual Studio는 Python을 사용하여 Azure Cloud Services 만들기를 시작
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-1. Cloud Service 템플릿을 사용하는 데 필요한 [Visual Studio용 Azure .NET SDK](https://www.visualstudio.com/vs/azure-tools/)를 설치합니다.
+1. Cloud Service 템플릿을 사용하는 데 필요한 [Visual Studio용 Azure .NET SDK](https://visualstudio.microsoft.com/vs/azure-tools/)를 설치합니다.
 1. Visual Studio에서 **파일 > 새로 만들기 > 프로젝트...** 를 선택한 후 "Azure Python"을 검색하고 목록에서 **Azure Cloud Service**를 선택합니다.
 
     ![Python용 Azure 클라우드 프로젝트 템플릿](media/template-azure-cloud-project.png)

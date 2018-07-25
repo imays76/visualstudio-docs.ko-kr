@@ -12,11 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 41abc73cce121ae4ebc247e20c0fcd2c60b8ec56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9d4c919347b42229bd0c73164281f3cbf2254a66
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757716"
 ---
 # <a name="state-activity-designer"></a>상태 활동 디자이너
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="using-the-state-activity-designer"></a>상태 활동 디자이너 사용
 
-추가 하는 <xref:System.Activities.Statements.State> 워크플로로 드래그는 **상태** 활동 디자이너를는 **상태 시스템** 섹션은 **도구 상자** 에 놓습니다는 <xref:System.Activities.Statements.StateMachine> Windows 워크플로 디자이너 화면에 활동입니다. <xref:System.Activities.Statements.State> 활동은 <xref:System.Activities.Statements.StateMachine>에 끌어 놓고 나중에 전환을 추가하거나 <xref:System.Activities.Statements.State> 활동을 끌어 놓을 때 전환을 만들 수 있습니다. 추가 하는 <xref:System.Activities.Statements.State> 활동 한꺼번에 끌어서 전환을 만들려면는 **상태** 에서 활동을는 **상태 시스템** 섹션은 **도구 상자** 다른 위로 가져갑니다 워크플로 디자이너의 상태입니다. 끌어 온 <xref:System.Activities.Statements.State>를 다른 <xref:System.Activities.Statements.State> 위로 가져가면 <xref:System.Activities.Statements.State> 주위에 삼각형 4개가 표시됩니다. <xref:System.Activities.Statements.State>를 삼각형 4개 중 하나에 놓으면 상태 시스템에 추가되고, 소스 <xref:System.Activities.Statements.State>에서 놓은 대상 <xref:System.Activities.Statements.State>로의 전환이 만들어집니다. 자세한 내용은 참조 [전환](../workflow-designer/transition-activity-designer.md)합니다.
+추가할를 <xref:System.Activities.Statements.State> 워크플로 끌어 옵니다.를 **상태** 활동 디자이너의를 **상태 시스템** 섹션을 **도구 상자** 에 놓습니다를 <xref:System.Activities.Statements.StateMachine> 워크플로 디자이너 화면에서 작업입니다. <xref:System.Activities.Statements.State> 활동은 <xref:System.Activities.Statements.StateMachine>에 끌어 놓고 나중에 전환을 추가하거나 <xref:System.Activities.Statements.State> 활동을 끌어 놓을 때 전환을 만들 수 있습니다. 추가할를 <xref:System.Activities.Statements.State> 활동 고 한 단계로 끌어서 전환을 만들려면를 **상태** 활동에서를 **상태 시스템** 섹션을 **도구 상자** 다른 위로 가져갑니다 워크플로 디자이너의 상태입니다. 끌어 온 <xref:System.Activities.Statements.State>를 다른 <xref:System.Activities.Statements.State> 위로 가져가면 <xref:System.Activities.Statements.State> 주위에 삼각형 4개가 표시됩니다. <xref:System.Activities.Statements.State>를 삼각형 4개 중 하나에 놓으면 상태 시스템에 추가되고, 소스 <xref:System.Activities.Statements.State>에서 놓은 대상 <xref:System.Activities.Statements.State>로의 전환이 만들어집니다. 자세한 내용은 [전환](../workflow-designer/transition-activity-designer.md)합니다.
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>워크플로 디자이너의 State 활동 속성
 
@@ -33,8 +34,8 @@ ms.lasthandoff: 04/26/2018
 |속성 이름|필수|용도|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|머리글에 <xref:System.Activities.Statements.State> 활동 디자이너의 이름을 지정합니다. 기본값은 **상태**합니다. 속성 표에서 또는 활동 디자이너의 머리글에서 직접 값을 편집할 수 있습니다. <xref:System.Activities.Statements.State.DisplayName%2A>은 Workflow Designer 상단에 표시되는 이동 경로 탐색에 사용됩니다.<br /><br /> <xref:System.Activities.Statements.State.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.State.Entry%2A>|False|이 상태가 전환될 때 발생하는 동작을 지정합니다. 경우는 <xref:System.Activities.Statements.State> 에서 활동을 끌어이 값을 설정할 수 있습니다, 활동이 확장 되는 **도구 상자** 놓으면는 **항목** 상태 섹션.|
-|<xref:System.Activities.Statements.State.Exit%2A>|False|이 상태가 다른 상태로 전환될 때 발생하는 동작을 지정합니다. 때는 <xref:System.Activities.Statements.State> 에서 활동을 끌어이 값을 설정할 수 있습니다, 활동이 확장 되는 **도구 상자** 놓으면는 **종료** 상태 섹션.|
+|<xref:System.Activities.Statements.State.Entry%2A>|False|이 상태가 전환될 때 발생하는 동작을 지정합니다. 경우는 <xref:System.Activities.Statements.State> 활동을 확장에서 활동을 끌어이 값을 설정할 수 있습니다 합니다 **도구 상자** 놓으면를 **항목** 상태 섹션.|
+|<xref:System.Activities.Statements.State.Exit%2A>|False|이 상태가 다른 상태로 전환될 때 발생하는 동작을 지정합니다. 경우는 <xref:System.Activities.Statements.State> 활동을 확장에서 활동을 끌어이 값을 설정할 수 있습니다 합니다 **도구 상자** 놓으면를 **종료** 상태 섹션.|
 |<xref:System.Activities.Statements.State.Transitions%2A>|False|<xref:System.Activities.Statements.State>에서 가능한 전환을 나열합니다. 목록의 각 항목에는 관련 <xref:System.Activities.Statements.Transition> 및 대상 <xref:System.Activities.Statements.State>에 대한 링크가 있습니다. 링크를 클릭하면 디자이너가 <xref:System.Activities.Statements.Transition> 또는 <xref:System.Activities.Statements.State>의 확장된 보기로 전환됩니다.|
 
 ## <a name="see-also"></a>참고자료

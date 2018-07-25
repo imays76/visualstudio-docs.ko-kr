@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135354"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>관련된 서비스 및 인터페이스 (소스 제어 VSPackage)
 이 섹션에서는 모든 소스 제어에서 VSPackage 관련 인터페이스는 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다. 소스 제어 VSPackage 이러한 인터페이스의 일부를 구현 하 고 소스 제어 작업을 수행 하기 위해 다른 사용자를 사용 합니다.  

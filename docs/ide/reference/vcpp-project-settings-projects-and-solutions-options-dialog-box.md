@@ -25,6 +25,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103439"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>옵션 대화 상자, 프로젝트 및 솔루션, VC++ 프로젝트 설정
 이 대화 상자를 사용하면 로깅, 성능 및 지원 파일 형식과 관련된 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 빌드 및 프로젝트 설정을 정의할 수 있습니다.

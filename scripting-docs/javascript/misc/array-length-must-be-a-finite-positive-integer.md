@@ -1,13 +1,13 @@
 ---
-title: "배열 길이 유한한 양의 정수 여야 합니다. | Microsoft Docs"
-ms.custom: 
+title: 배열 길이 유한한 양의 정수 여야 합니다. | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5029
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 1a467040-4702-4178-848f-418a5974e907
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632723"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>배열의 길이는 유한한 양의 정수여야 합니다.
 호출 하는 **배열** 생성자 인수 (정수 0을 더한 양의 정수 집합으로 구성)는 정수를 사용 합니다.  

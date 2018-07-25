@@ -1,16 +1,16 @@
 ---
-title: "IActiveScriptWinRTErrorDebug 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IActiveScriptWinRTErrorDebug 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptWinRTErrorDebug Interface
 ms.assetid: 58b45096-633f-479f-95c4-8eae7376d3a1
-caps.latest.revision: 
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725433"
 ---
 # <a name="iactivescriptwinrterrordebug-interface"></a>IActiveScriptWinRTErrorDebug 인터페이스
 확장 된 Windows 런타임 오류 정보를 제공 하는 JavaScript 엔진에 의해 구현 된 [BREAKREASON 열거형](../../winscript/reference/breakreason-enumeration.md) 이벤트입니다. 가져올에서 QueryInterface를 수행할 수 있습니다는 [IActiveScriptError](../../winscript/reference/iactivescripterror.md) 개체입니다.  

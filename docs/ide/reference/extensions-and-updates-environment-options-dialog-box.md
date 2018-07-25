@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943308"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 확장 및 업데이트
 이 페이지를 사용하면 Visual Studio에서 업데이트를 수행하는 방식 및 확장명을 업데이트 및 검색하는 방식에 대해 옵션을 설정할 수 있습니다.

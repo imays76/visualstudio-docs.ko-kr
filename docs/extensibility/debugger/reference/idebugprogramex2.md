@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120964"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 이 인터페이스를 사용 하면 세션을 디버그 관리자 (SDM) 프로그램에 연결 하 고 프로그램과 연결 된 프로그램 노드를 가져오고 있습니다.  

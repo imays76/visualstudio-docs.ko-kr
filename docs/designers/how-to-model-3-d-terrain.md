@@ -1,6 +1,7 @@
 ---
 title: '방법: 3D 지형 모델 만들기'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3108ff6c04ccae459e977601446d3d16efa8ebfa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977748"
 ---
 # <a name="how-to-model-3d-terrain"></a>방법: 3D 지형 모델 만들기
 
@@ -25,7 +27,7 @@ ms.lasthandoff: 04/19/2018
 
 작업을 완료하면 모델이 다음과 같이 나타납니다.
 
-![지형 모델을 보여 주는 3D 장면](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![지형 모델을 보여 주는 3D 장면](../designers/media/digit-terrain-model.png)
 
 시작하기 전에 **속성** 창과 **도구 상자**가 표시되는지 확인합니다.
 
@@ -51,7 +53,7 @@ ms.lasthandoff: 04/19/2018
 
 지형 모델이 완료되었습니다. 다음은 다시 퐁 음영이 적용된 최종 모델입니다.
 
-![지형 모델을 보여 주는 3D 장면](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![지형 모델을 보여 주는 3D 장면](../designers/media/digit-terrain-model.png)
 
 이 지형 모델을 사용하여 [방법: 기하 도형 기반 그라데이션 셰이더 만들기](../designers/how-to-create-a-geometry-based-gradient-shader.md)에 설명된 그라데이션 셰이더의 효과를 표시할 수 있습니다.
 

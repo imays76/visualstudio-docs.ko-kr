@@ -15,16 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081659"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>방법: 동일한 소스 파일을 다른 옵션을 사용하여 빌드
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>방법: 다른 옵션을 사용하여 동일한 원본 파일 빌드
 프로젝트를 빌드할 때 같은 구성 요소를 서로 다른 빌드 옵션으로 자주 컴파일하게 됩니다. 예를 들어 기호 정보가 포함된 디버그 빌드를 만들거나 기호 정보가 없지만 최적화가 사용하도록 설정된 릴리스 빌드를 만들 수 있습니다. x86 또는 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] 등의 특정 플랫폼에서 실행되는 프로젝트를 빌드할 수도 있습니다. 이러한 모든 경우에 대부분의 빌드 옵션은 동일하게 유지되고, 빌드 구성을 제어하기 위해 몇 가지 옵션만 변경됩니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 통해 속성과 조건을 사용하여 다양한 빌드 구성을 만듭니다.  
   
-## <a name="using-properties-to-modify-projects"></a>속성을 사용하여 프로젝트 수정  
+## <a name="use-properties-to-modify-projects"></a>속성을 사용하여 프로젝트 수정  
  `Property` 요소는 임시 디렉터리의 위치와 같이 프로젝트 파일에서 여러 번 참조되는 변수를 정의하고 디버그 빌드 및 릴리스 빌드 등의 여러 구성에서 사용되는 속성 값을 설정합니다. 속성에 대한 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.  
   
  속성을 사용하면 프로젝트 파일을 변경할 필요 없이 빌드의 구성을 변경할 수 있습니다. `Property` 요소 및 `PropertyGroup` 요소의 `Condition` 특성을 사용하여 속성 값을 변경할 수 있습니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.  
@@ -48,20 +49,20 @@ ms.lasthandoff: 04/19/2018
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
     ```  
   
-## <a name="specifying-properties-on-the-command-line"></a>명령줄에서 속성 지정  
+## <a name="specify-properties-on-the-command-line"></a>명령줄에서 속성 지정  
  프로젝트 파일이 여러 구성을 허용하도록 작성되면 프로젝트를 빌드할 때마다 해당 구성을 변경하는 기능을 포함해야 합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 **/property** 또는 **/p** 스위치를 사용하여 명령줄에서 속성을 지정할 수 있게 하는 방식으로 이 기능을 제공합니다.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>명령줄에서 프로젝트 속성을 설정하려면  
   
 -   **/property** 스위치와 속성 및 속성 값을 함께 사용합니다. 예:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - 또는  
+    또는  
   
-    ```  
+    ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
@@ -69,13 +70,13 @@ ms.lasthandoff: 04/19/2018
   
 -   **/property** 또는 **/p** 스위치와 속성 및 속성 값을 함께 여러 번 사용하거나, 하나의 **/property** 또는 **/p** 스위치와 세미콜론(;)으로 구분된 여러 속성을 사용합니다. 예:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
-     - 또는-  
+    또는
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
@@ -90,13 +91,13 @@ ms.lasthandoff: 04/19/2018
   
  이 프로젝트의 디버그 버전을 빌드하려면 다음을 입력합니다.  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
  이 프로젝트의 일반 정품 버전을 빌드하려면 다음을 입력합니다.  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=retail  
 ```  
   
@@ -157,7 +158,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
   
  프로젝트를 빌드하려면 다음 명령을 입력합니다.  
   
-```  
+```cmd  
 msbuild colortest.proj /t:go /property:Color=Green  
 ```  
   

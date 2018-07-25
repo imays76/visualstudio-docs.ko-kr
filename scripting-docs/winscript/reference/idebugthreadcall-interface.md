@@ -1,16 +1,16 @@
 ---
-title: "IDebugThreadCall 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugThreadCall 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugThreadCall interface
 ms.assetid: 9a9a9892-f310-4ef3-8db2-4f868be52d7e
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726943"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall 인터페이스
 `IDebugThreadCall` 인터페이스는 일반적으로 사용 하 여 크로스 스레드 호출 하는 구성 요소에서 구현에서 `IDebugThread` 마샬링 구현 프로세스 디버그 관리자 (PDM)에서 제공 합니다.  

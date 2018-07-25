@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129960"
 ---
 # <a name="creating-project-types"></a>프로젝트 형식 만들기
 확장할 수 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 새 프로젝트 형식을 만들어 합니다. 새 프로젝트 형식을 만들려는 몇 가지 개념을 이해 하 고 몇 가지 단계를 완료 해야 합니다. 다음 항목 프로젝트 유형을 만드는 방법에 대 한 개요를 제공 합니다.  

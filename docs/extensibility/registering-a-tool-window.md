@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136480"
 ---
 # <a name="registering-a-tool-window"></a>도구 창을 등록 하는 중
 도구 창을 사용 하 여 등록할 수 있는 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 및  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>  

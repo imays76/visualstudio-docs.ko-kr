@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973072"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>워크플로 디자이너에서 지원되지 않는 디버깅 시나리오
 

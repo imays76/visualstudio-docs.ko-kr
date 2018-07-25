@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122407"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 디버그 엔진 메트릭 설정의 읽을을 원격으로 합니다.  

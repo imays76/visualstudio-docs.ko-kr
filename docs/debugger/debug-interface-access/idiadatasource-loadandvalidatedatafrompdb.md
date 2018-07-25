@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460139"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 엽니다 및 프로그램 데이터베이스 (.pdb) 파일에 제공 된 서명 정보과 일치 하는지 확인 하 고 디버그 데이터 소스로.pdb 파일을 준비 합니다.  

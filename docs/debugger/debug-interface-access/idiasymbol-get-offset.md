@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465111"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 기호 위치 오프셋을 검색합니다. 사용 하는 경우는 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 은 `LocIsRegRel` 또는 `LocIsBitField`합니다.  

@@ -1,11 +1,11 @@
 ---
 title: IScriptEntry::SetBody | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptEntry.SetBody
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IScriptEntry::SetBody
 ms.assetid: 719062e4-98e4-4a7b-946d-6e5dbbcc5225
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729143"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
 본문에 있는 텍스트를 설정 하는 `IScriptEntry` 스크립트 블록 또는 `IScriptScriptlet` 스크립틀릿 합니다.  

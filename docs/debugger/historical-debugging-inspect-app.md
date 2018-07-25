@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476824"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>기록 디버깅 Visual Studio에서 IntelliTrace로 앱을 검사 합니다.
 사용할 수 있습니다 [기록 디버깅](../debugger/historical-debugging.md) 하 뒤로 이동 하 고 응용 프로그램의 실행 도중 앞의 상태를 검사 합니다.  

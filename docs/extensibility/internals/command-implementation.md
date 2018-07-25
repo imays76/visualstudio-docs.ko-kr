@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133325"
 ---
 # <a name="command-implementation"></a>명령 구현
 Vspackage에서는 명령을 구현 하려면 다음 작업을 수행 해야 합니다.  

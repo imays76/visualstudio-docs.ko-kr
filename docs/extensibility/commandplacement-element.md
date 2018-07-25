@@ -14,16 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c5da750b3f33127fdcfdf2e2a76d4df1556561b2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232431"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 요소
-CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹이 나 메뉴에 포함 될 수 있습니다. CommandPlacement 요소를 사용 하 여 완전히 사용자 인터페이스의 모양을 수정 하기 위해 이러한 항목을 다시 정의할 필요가 없습니다.  
+CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹 또는 메뉴에 포함 될 수 있습니다. CommandPlacement 요소를 사용 하 여 사용자 인터페이스의 모양을 수정 하려면 이러한 항목을 완전히 다시 정의할 필요가 없습니다.  
   
- 자세한 내용은 참조 [단추의 다시 사용할 수 있는 그룹 만들기](../extensibility/creating-reusable-groups-of-buttons.md)합니다.  
+ 자세한 내용은 [단추의 다시 사용할 수 있는 그룹을 만들](../extensibility/creating-reusable-groups-of-buttons.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,16 +35,16 @@ CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹이 
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수. 에 정의 된 명령 집합의 guid는 [기호 요소](../extensibility/symbols-element.md)합니다.|  
-|ID|필수. 메뉴, 그룹 또는 명령에 정의 된 대로 배치할의 id는 `Symbols Element`합니다.|  
-|priority|필수. 부모 요소에는 항목의 시각적 위치를 결정합니다.|  
-|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
+|guid|필수. 에 정의 된 대로 명령 집합의 guid를 [Symbols 요소](../extensibility/symbols-element.md)합니다.|  
+|ID|필수. 메뉴, 그룹 또는 명령에 정의 된 대로 배치할의 id를 `Symbols Element`입니다.|  
+|priority|필수. 부모 요소에서 항목의 표시 위치를 결정합니다.|  
+|조건|선택 사항입니다. 참조 [조건부 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
@@ -57,7 +58,7 @@ CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹이 
 |-------------|-----------------|  
 |[CommandPlacements 요소](../extensibility/commandplacements-element.md)|CommandPlacements 및 CommandPlacement 요소 그룹을 지정합니다.|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 <CommandPlacements>  
@@ -68,6 +69,6 @@ CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹이 
 </CommandPlacements>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [CommandPlacements 요소](../extensibility/commandplacements-element.md)   
- [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

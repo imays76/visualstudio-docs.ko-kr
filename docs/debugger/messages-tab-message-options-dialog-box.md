@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474702"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>메시지 옵션 대화 상자, 메시지 탭
 사용 하 여는 **메시지** 탭에 표시할 메시지 형식을 선택 하려면 [메시지 뷰](../debugger/messages-view.md), 및 메시지 검색 조건을 지정 하려면. 표시 하는 [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md), 선택 **로그 메시지** 에서 **Spy** 메뉴.  

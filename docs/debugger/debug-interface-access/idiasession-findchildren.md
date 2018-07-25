@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465345"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 지정한 부모 식별자의 이름 및 기호 형식에 일치 하는 모든 자식을 검색 합니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472047"
 ---
 # <a name="find-window-dialog-box"></a>창 찾기 대화 상자
 이 대화 상자를 사용 하 여 창을 선택 하 고 해당 속성이 나 메시지를 표시 합니다. 이 대화 상자를 표시 하려면 선택 **창 찾기** 에서 **Spy** 메뉴.  

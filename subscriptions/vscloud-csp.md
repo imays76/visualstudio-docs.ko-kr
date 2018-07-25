@@ -9,20 +9,21 @@ description: 고객에 대한 Visual Studio 클라우드 구독 구입 및 관�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283379"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>고객에 대한 Visual Studio 클라우드 구독 구입 및 관리
 
-[CSP(클라우드 솔루션 공급자)](https://partner.microsoft.com/en-US/cloud-solution-provider) 프로그램의 파트너는 고객에 대한 Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독을 구매할 수 있습니다. 
+[CSP(클라우드 솔루션 공급자)](https://partner.microsoft.com/en-US/cloud-solution-provider) 프로그램의 파트너는 고객에 대한 Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독을 구매할 수 있습니다.
 
-[클라우드 구독 옵션 비교](https://www.visualstudio.com/vs/pricing)
+[클라우드 구독 옵션 비교](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>전제 조건
-먼저 파트너 센터에서 고객 테넌트를 설정하고 이 테넌트에 대한 Azure 구독을 만들어야 합니다. 
+먼저 파트너 센터에서 고객 테넌트를 설정하고 이 테넌트에 대한 Azure 구독을 만들어야 합니다.
 [자세히](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
 
 ## <a name="how-to-buy"></a>구매 방법
@@ -57,9 +58,10 @@ ms.lasthandoff: 04/16/2018
 
 이 고객에 대해 1 초과 Azure 구독이 있는 경우 드롭 다운 메뉴를 사용하여 구매한 구독을 통해 Azure 구독을 선택합니다.  **라이선스 요약**은 할당된 구독 수 및 각 Visual Studio 클라우드 구독 옵션에 대해 사용할 수 있는 구독 수를 표시합니다.  또한 요약을 사용하면 추가로 구독을 구매하거나 구독 수를 줄일 수 있습니다.
 
-**추가**를 선택하여 새 사용자에게 구독을 할당합니다.  표시된 개수를 업데이트하면 최종 사용자가 이메일 알림을 받습니다. 그런 다음, 최종 사용자는 [Visual Studio 구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에서 Visual Studio 구독을 활성화하기 위해 제공된 이메일 주소를 사용하여 로그인할 수 있습니다.
+**추가**를 선택하여 새 사용자에게 구독을 할당합니다.  표시된 개수를 업데이트하면 최종 사용자가 이메일 알림을 받습니다.
+그런 다음, 최종 사용자는 [Visual Studio 구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에서 Visual Studio 구독을 활성화하기 위해 제공된 이메일 주소를 사용하여 로그인할 수 있습니다.
 
-Visual Studio 구독을 다른 사용자에게 다시 할당하려면 현재 구독자를 지우고 새 구독자를 추가할 수 있습니다. 
+Visual Studio 구독을 다른 사용자에게 다시 할당하려면 현재 구독자를 지우고 새 구독자를 추가할 수 있습니다.
 
 구독자가 Visual Studio 구독을 활성화하지 않았다면 초대 이메일을 누락했을 수 있습니다.  Visual Studio 관리자 포털 내에서 사용자에게 활성화 초대를 다시 전송하도록 요청할 수 있습니다.
 
@@ -80,15 +82,17 @@ CSP 파트너에 대한 Visual Studio 가격 책정을 보려면 [파트너 센�
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>질문: **월간** 클라우드 구독 요금은 어떻게 처리됩니까?
-답변: 첫 번째 구매에 현재 달의 남은 날짜를 포함하기 위해 비례 배분된 수량을 청구합니다. 예를 들어, 10개 Visual Studio Professional 월간 클라우드 구독을 4월 15일에 구매했다면 한 달 30일 중 15일, 즉 50%가 남았으므로 단위 5를 청구하게 되며 청구 단위는 50%로 비례 배분합니다. 5월 1일에 그리고 그 이후 취소할 때까지 매월 전체 10단위 요금이 청구됩니다.
+답변: 첫 번째 구매에 현재 달의 남은 날짜를 포함하기 위해 비례 배분된 수량을 청구합니다. 예를 들어, 10개 Visual Studio Professional 월간 클라우드 구독을 4월 15일에 구매했다면 한 달 30일 중 15일, 즉 50%가 남았으므로 단위 5를 청구하게 되며 청구 단위는 50%로 비례 배분합니다.
+5월 1일에 그리고 그 이후 취소할 때까지 매월 전체 10단위 요금이 청구됩니다.
 
-나중에 유료 수량이 증가할 경우 현재 달의 남은 날짜를 포함하려면 증가된 단위를 비례 배분합니다. 따라서 1 초과 Visual Studio Professional 월간 클라우드 구독을 5월 10일에 구입했다면 대략 0.677단위(한 달 31일 중 남은 21일)를 청구하게 됩니다. 
+나중에 유료 수량이 증가할 경우 현재 달의 남은 날짜를 포함하려면 증가된 단위를 비례 배분합니다. 따라서 1 초과 Visual Studio Professional 월간 클라우드 구독을 5월 10일에 구입했다면 대략 0.677단위(한 달 31일 중 남은 21일)를 청구하게 됩니다.
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>질문: **연간** 클라우드 구독 요금은 어떻게 처리됩니까?
 답변: 각 구매 시 즉시 구매한 전체 수량 요금을 청구합니다. 요금은 일년에 걸쳐 분배하지 않으며 비례 배분은 없습니다. 현재 연도의 다른 시기에 연간 클라우드 구독을 구입하는 경우 다른 달 내에 구독을 갱신하게 됩니다. 일반적으로 Microsoft 볼륨 라이선스 계약 구매에서 그런 것처럼 고객의 연간 클라우드 구독 모두를 동일하게 취급하지 않습니다.
 
 ### <a name="q-how-do-cancelations-work"></a>질문: 취소는 어떻게 합니까?
-답변: Visual Studio 클라우드 구독을 취소할 경우 자동 갱신을 취소합니다. 구독은 기본 갱신일까지 단순히 계속되다가 만료됩니다. 만료 시 Visual Studio 구독자는 Visual Studio나 구독으로 인한 기타 모든 혜택을 더 이상 사용할 수 없습니다.
+답변: Visual Studio 클라우드 구독을 취소할 경우 자동 갱신을 취소합니다. 구독은 기본 갱신일까지 단순히 계속되다가 만료됩니다.
+만료 시 Visual Studio 구독자는 Visual Studio나 구독으로 인한 기타 모든 혜택을 더 이상 사용할 수 없습니다.
 
 월간 클라우드 구독의 경우 취소는 다음 달의 첫째 날에 효력을 발휘합니다. 고객의 월간 클라우드 구독의 일부만 취소하는 경우 올바른 사용자가 활성화된 구독을 계속 할당받을 수 있도록 다음 달의 첫째 날에 취소한 사용자를 제거해야 합니다.
 
@@ -107,7 +111,7 @@ CSP 파트너에 대한 Visual Studio 가격 책정을 보려면 [파트너 센�
 
 할인은 지정된 월간 청구 기간에 청구된 요금에 대해서만 적용됩니다. 따라서 한 달에 5개 Visual Studio Professional 연간 구독을 구입하고 다음 달에 5개를 더 구입하는 경우 10개 구독 모두 일반 가격을 지불합니다.
 
-이러한 할인 정책은 [파트너 센터](https://partnercenter.microsoft.com) 내의 가격 책정 데이터에 반영됩니다. 
+이러한 할인 정책은 [파트너 센터](https://partnercenter.microsoft.com) 내의 가격 책정 데이터에 반영됩니다.
 
 ### <a name="q-are-there-renewal-discounts"></a>질문: 갱신 할인이 있습니까?
 

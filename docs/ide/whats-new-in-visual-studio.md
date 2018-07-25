@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282975"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -49,7 +50,7 @@ Visual Studio 2017에서 가장 두드러진 개선 사항과 새로운 기능�
 
 ### <a name="a-new-setup-experience"></a>새로운 설치 환경
 
-[Visual Studio 2017 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 또는 [Visual Studio 시스템 요구 사항 확인](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Visual Studio 2017 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 또는 [Visual Studio 시스템 요구 사항 확인](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
 
  Visual Studio를 사용하면 필요할 때 필요한 기능만 쉽고 빠르게 설치할 수 있습니다. 또한 완전히 제거됩니다.
 
@@ -57,7 +58,7 @@ Visual Studio 2017에서 가장 두드러진 개선 사항과 새로운 기능�
 
 필요한 작업을 선택하고, 필요할 때 변경합니다.
 
- ![Visual Studio 2017 설치 대화 상자](../install/media/install-visual-studio-enterprise.png "Visual Studio 2017 설치 화면")
+ ![Visual Studio 2017 설정 대화 상자](../install/media/install-visual-studio-enterprise.png)
 
 또한 설치를 상세 조정하는 옵션도 있습니다.
 
@@ -89,7 +90,7 @@ Visual Studio 2017에서 가장 두드러진 개선 사항과 새로운 기능�
 
 Visual Studio는 IDE 시작이 아닌 요청 시에 로드되도록 확장을 전환하고 있습니다(타사 확장과도 작업). 어떤 확장이 시작, 솔루션 로드 및 입력 성능에 영향을 주는지 궁금하세요? 이 정보는 **도움말** > **Visual Studio 성능 관리**에서 확인할 수 있습니다.
 
-  ![Visual Studio 2017의 옵션 대화 상자](../ide/media/vs2017ide-manage-vs-perf.png "Visual Studio 도움말 대화 상자 - 성능 관리")
+  ![옵션 대화 상자(Visual Studio 2017)](../ide/media/vs2017ide-manage-vs-perf.png)
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>로밍 중인 확장 관리자를 사용하여 확장 관리
 
@@ -97,19 +98,19 @@ Visual Studio에 로그인할 때 즐겨찾는 확장으로 각 개발 환경을
 
 Visual Studio의 확장 목록을 보려면 **도구** > **확장 및 업데이트**를 클릭한 다음, **로밍 중인 확장 관리자**를 클릭합니다.
 
-![Visual Studio 2017 - 확장 및 업데이트 대화 상자](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 - 도구 > 확장 및 업데이트 대화 상자")
+![Visual Studio 2017 - 확장 및 업데이트 대화 상자](../ide/media/vs2017ide-extensions-and-updates.png)
 
 로밍 중인 확장 관리자는 설치하는 모든 확장을 추적하지만 로밍 목록에 추가할 확장을 선택할 수 있습니다.
 
-![Visual Studio 2017 - 확장 및 업데이트 대화 상자](../ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017 - 로밍 중인 확장 관리자")
+![Visual Studio 2017 - 확장 및 업데이트 대화 상자](../ide/media/vs2017ide-RoamingExtensionManager.png)
 
 로밍 중인 확장 관리자를 사용하는 경우 3개의 아이콘 형식이 목록에 표시됩니다.
 
-* ![로밍 아이콘](../ide/media/vs2017ide-roamedicon.png "로밍 아이콘") ***로밍***: 이 로밍 목록에 포함되어 있지만, 컴퓨터에 설치되지 않은 확장입니다.
+* ![로밍 아이콘](../ide/media/vs2017ide-roamedicon.png)***로밍***: 이 로밍 목록에 포함되어 있지만, 컴퓨터에 설치되지 않은 확장입니다.
   **다운로드** 단추를 사용하여 이러한 확장을 설치할 수 있습니다.
-* ![로밍 및 설치 아이콘](../ide/media/vs2017ide-roamedinstalledicon.png "로밍 및 설치 아이콘") ***로밍 및 설치***: 이 로밍 목록에 포함되어 있고, 개발 환경에 설치된 모든 확장입니다.
+* ![로밍 및 설치 아이콘](../ide/media/vs2017ide-roamedinstalledicon.png)***로밍 및 설치***: 이 로밍 목록에 포함되어 있고, 개발 환경에 설치된 모든 확장입니다.
   로밍하지 않도록 결정하는 경우 **로밍 중지** 단추를 사용하여 이러한 확장을 제거할 수 있습니다.
-* ![설치 아이콘](../ide/media/vs2017ide-installedicon.png "설치 아이콘") ***설치***: 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
+* ![설치 아이콘](../ide/media/vs2017ide-installedicon.png)***설치***: 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
   **로밍 시작** 단추를 사용하여 로밍 목록에 확장을 추가할 수 있습니다.
 
 로그인되어 있는 동안 다운로드한 모든 확장은 목록에 **로밍 및 설치**로 추가됩니다. 그런 다음, 확장이 로밍 목록에 포함되고, 모든 컴퓨터에서 액세스할 수 있습니다.
@@ -118,7 +119,7 @@ Visual Studio의 확장 목록을 보려면 **도구** > **확장 및 업데이�
 
 Visual Studio Enterprise 2017에서 라이브 단위 테스트는 코딩하는 동안 편집기에 라이브 단위 테스트 결과와 코드 검사를 제공합니다. .NET Framework 및 .NET Core용 C# 및 Visual Basic 프로젝트에서 작동하고, MSTest, xUnit, NUnit의 세 가지 테스트 프레임워크를 지원합니다.
 
-![Live Unit Testing](../ide/media/lut-codewindow.png "Visual Studio Enterprise 버전에 있는 새로운 Live Unit Testing 기능의 예")
+![Live Unit Testing](../ide/media/lut-codewindow.png)
 
 자세한 내용은 [Live Unit Testing 소개](../test/live-unit-testing-intro.md)를 참조하세요. Visual Studio Enterprise 2017의 각 릴리스에 추가된 새로운 기능 목록은 [Live Unit Testing의 새로운 기능](../test/live-unit-testing-whats-new.md)을 참조하세요.
 
@@ -153,27 +154,27 @@ Visual Studio Enterprise 2017에서 라이브 단위 테스트는 코딩하는 �
 
 Visual Studio에서 프로젝트를 작업할 때 코드를 설정하고 빠르게 커밋하여 Git 서비스에 게시할 수 있습니다. 또한 IDE의 오른쪽 아래 모서리에 있는 단추의 메뉴 클릭을 사용하여 Git 리포지토리를 관리할 수도 있습니다.
 
-![Visual Studio 2017과 Git 대화 상자의 상호 작용](../ide/media/vsIDE-GitInteraction.png "Visual Studio IDE의 Git 도구")
+![Git 대화 상자와 상호 작용하는 Visual Studio 2017](../ide/media/vsIDE-GitInteraction.png)
 
 #### <a name="experience-improved-navigation-controls"></a>향상된 컨트롤 탐색 환경
 
 A에서 B로 이동하는 데 도움이 되는 탐색 환경을 새로 고쳐 자신감 있게 더욱 집중할 수 있게 했습니다.
 
-* **15.4의 새로운 기능**: **정의로 이동**(**Ctrl**+**클릭** 또는 **F12**)&ndash;마우스 사용자는 **Ctrl** 키를 누르고 해당 멤버를 클릭하여 멤버 정의로 이동할 수 있는 더 쉬운 방법이 있습니다. **Ctrl** 키를 누르고 코드 기호에 마우스를 올려 놓으면 밑줄이 쳐지고 링크로 바뀝니다. 자세한 내용은 [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)을 참조하세요.  
+* **15.4의 새로운 기능**: **정의로 이동**(**Ctrl**+**클릭** 또는 **F12**)&ndash;마우스 사용자는 **Ctrl** 키를 누르고 해당 멤버를 클릭하여 멤버 정의로 이동할 수 있는 더 쉬운 방법이 있습니다. **Ctrl** 키를 누르고 코드 기호에 마우스를 올려 놓으면 밑줄이 쳐지고 링크로 바뀝니다. 자세한 내용은 [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)을 참조하세요.
 
 * **구현으로 이동** (**Ctrl**+**F12**)&ndash; 모든 베이스 형식 또는 멤버에서 다양한 구현으로 이동합니다.
 
 * **전체로 이동**(**Ctrl**+**T** 또는 **Ctrl**+**,**) &ndash;모든 파일/형식/멤버/기호 선언으로 직접 이동합니다. 결과 목록을 필터링하거나 쿼리 구문을 사용할 수 있습니다(예: 파일의 경우 “f searchTerm”, 형식의 경우 “t searchTerm”).
 
-  ![향상된 모두로 이동](../ide/media/vs2017ide-navigation-go-to.png "향상된 모두로 이동 기능의 예")
+  ![전체로 이동 기능 향상](../ide/media/vs2017ide-navigation-go-to.png)
 
 * **모든 참조 찾기(Shift+F12)** (**Shift**+**F12**) &ndash; 구문 색 지정을 사용하면 프로젝트, 정의 및 경로의 조합에 따라 [모든 참조 찾기] 결과를 그룹화할 수 있습니다. 또한 결과를 “잠그면” 원래 결과를 잃지 않고 다른 참조를 계속 찾을 수 있습니다.
 
-  ![새로운 모든 참조 찾기 도구](../ide/media/vs2017ide-find-all-references.png "새로운 모든 참조 찾기 도구의 예")
+  ![새로운 모든 참조 찾기 도구](../ide/media/vs2017ide-find-all-references.png)
 
-* **구조체 시각화 도우미** &ndash; 회색 세로 점선(들여쓰기 가이드)은 코드에서 랜드마크로 작용하여 보기의 프레임 내에서 컨텍스트를 제공합니다. 이러한 기능은 인기 있는 생산성 파워 도구에서 확인할 수 있습니다. 이 안내선을 사용하면 언제든지 스크롤하지 않고도 작업 중인 코드 블록을 시각화하고 검색할 수 있습니다. 선 위로 마우스를 가리키면 해당 블록과 그 부모를 열어서 볼 수 있는 도구 설명이 표시됩니다. TextMate 문법 검사뿐만 아니라 C#, Visual Basic 및 XAML을 통해 지원되는 모든 언어에서 사용할 수 있습니다.  
+* **구조체 시각화 도우미** &ndash; 회색 세로 점선(들여쓰기 가이드)은 코드에서 랜드마크로 작용하여 보기의 프레임 내에서 컨텍스트를 제공합니다. 이러한 기능은 인기 있는 생산성 파워 도구에서 확인할 수 있습니다. 이 안내선을 사용하면 언제든지 스크롤하지 않고도 작업 중인 코드 블록을 시각화하고 검색할 수 있습니다. 선 위로 마우스를 가리키면 해당 블록과 그 부모를 열어서 볼 수 있는 도구 설명이 표시됩니다. TextMate 문법 검사뿐만 아니라 C#, Visual Basic 및 XAML을 통해 지원되는 모든 언어에서 사용할 수 있습니다.
 
-  ![Visual Studio 2017 구조 시각화 도우미](../ide/media/vsIDE-StructureVisualizer.png "Visual Studio의 구조 시각화 도우미")
+  ![Visual Studio 2017 구조체 시각화 도우미](../ide/media/vsIDE-StructureVisualizer.png)
 
 새로운 생산성 기능에 대한 자세한 내용은 Mark Wilson-Thomas의 [Visual Studio 2017의 생산성](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/)(영문) 블로그 게시물을 참조하세요.
 
@@ -191,13 +192,13 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 이제 원하는 줄에서 중지하도록 중단점을 설정하지 않고도 디버깅 중에 더 쉽게 건너뛸 수 있습니다. 디버거에서 멈췄을 때 코드 줄 옆에 나타나는 아이콘을 클릭하면 됩니다. 코드가 실행되어 다음에 코드 경로에서 이 줄에 도달하면 해당 줄에서 중지됩니다.
 
-![Visual Studio 2017 디버그 - 실행하려면 클릭](../ide/media/vs2017ide-RunToClick.png "Visual Studio 디버깅 및 진단의 실행하려면 클릭")
+![Visual Studio 2017 디버그 - 실행하려면 클릭](../ide/media/vs2017ide-RunToClick.png)
 
 #### <a name="the-new-exception-helper"></a>새 예외 도우미
 
 새 예외 도우미를 사용하면 예외 정보를 한눈에 볼 수 있습니다. 정보는 내부 예외에 즉시 액세스할 수 있는 간결한 양식으로 제공됩니다. NullReferenceException을 진단할 때 예외 도우미 내부에서 null인 항목을 빠르게 확인할 수 있습니다.
 
-![Visual Studio의 새 예외 도우미 대화 상자](../ide/media/vs2017ide-ExceptionHelper.png "새 예외 도우미 대화 상자")
+![Visual Studio의 새 예외 도우미 대화 상자](../ide/media/vs2017ide-ExceptionHelper.png)
 
 자세한 내용은 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)(Visual Studio에서 새 예외 도우미 사용) 블로그 게시물을 참조하세요.
 
@@ -247,7 +248,7 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 UWP(Universal Windows Platform)는 Windows 10용 앱 플랫폼입니다. API 집합 하나, 앱 패키지 하나 및 스토어 하나만으로 UWP용 앱을 개발하여 모든 Windows 10 장치 &ndash; PC, 태블릿, 전화, Xbox, HoloLens, Surface Hub 등에 연결할 수 있습니다. UWP는 다양한 화면 크기와 터치, 마우스와 키보드, 게임 컨트롤러 또는 펜을 비롯한 다양한 인터랙션 모델을 지원합니다. UWP 앱의 핵심은 작업 환경이 사용자의 모든 장치에서 이동이 가능하여 현재 진행 중인 작업에 가장 편리하거나 생산적인 장치를 사용하기를 바란다는 점입니다.
 
- ![유니버설 Windows 플랫폼](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+ ![유니버설 Windows 플랫폼](../cross-platform/media/uwp_coreextensions.png)
 
 &mdash;C#, Visual Basic, C++ 또는 JavaScript&mdash; 중에서 원하는 개발 언어를 선택하여 Windows 10 장치용 유니버설 Windows 플랫폼 앱을 만듭니다. Visual Studio 2017은 모든 장치에 대해 단일 프로젝트를 만들 수 있도록 각 언어에 UWP 앱 템플릿을 제공합니다. 작업을 마치면 Visual Studio 내에서 앱 패키지를 생성하고 Microsoft Store에 제출하여 Windows 10 장치를 사용하는 고객에게 앱을 제공할 수 있습니다.
 
@@ -270,7 +271,7 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 **15.3의 새로운 기능**: iOS 개발 요구 사항을 해결하기 위해 독립 실행형 자격 편집기를 추가했습니다. 이 편집기에는 쉽게 검색할 수 있는 사용자에게 친숙한 UI가 포함되어 있습니다. 시작하려면 *entitlements.plist* 파일을 두 번 클릭합니다.
 
-![Xamarin용 자격 편집기](../ide/media/xamarin-entitlements-editor.png "Xamarin용 자격 편집기")
+![Xamarin에 대한 권한 편집기](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
@@ -309,9 +310,9 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 .NET Core 플랫폼은 관리되는 컴파일러, 런타임, 기본 클래스 라이브러리 및 ASP.NET Core와 같은 다양한 응용 프로그램 모델을 포함하는 여러 요소로 구성됩니다. .NET Core는 Windows, Linux 및 macOS의 세 개 주요 운영 체제를 지원합니다. 장치, 클라우드 및 포함/IoT 시나리오에 .NET Core를 사용할 수 있습니다.
 
-그리고 이제 Docker 지원도 포함합니다.  
+그리고 이제 Docker 지원도 포함합니다.
 
-**15.3의 새로운 기능**: Visual Studio 2017 버전 15.3은 .NET Core 2.0 개발을 지원합니다. .NET Core 2.0을 사용하려면 .NET Core 2.0 SDK를 별도로 다운로드하여 설치해야 합니다.  
+**15.3의 새로운 기능**: Visual Studio 2017 버전 15.3은 .NET Core 2.0 개발을 지원합니다. .NET Core 2.0을 사용하려면 .NET Core 2.0 SDK를 별도로 다운로드하여 설치해야 합니다.
 
 자세한 내용은 [.NET Core 가이드](/dotnet/core/index) 페이지를 참조하세요.
 
@@ -337,8 +338,8 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 Visual Studio 2017은 개발 환경을 훨씬 더 좋게 만들어 줄 수 있는 새 기능으로 자주 업데이트됩니다. 실험적 미리 보기에 있는 가장 주목할 만한 업데이트 몇 가지를 요약하면 다음과 같습니다.
 
-* **[실시간 공유](https://www.visualstudio.com/services/live-share/)** - Visual Studio 내에서 바로 코드베이스와 컨텍스트를 팀원과 공유하고 즉각적인 양방향 공동 작업을 수행할 수 있는 새로운 도구. 실시간 공유를 사용하면 귀하가 공유한 프로젝트를 팀원이 원활하고 안전하게 읽고, 탐색하고, 편집하고, 디버깅할 수 있습니다.<br><br>자세한 내용은 [실시간 공유 FAQ](/visualstudio/liveshare/faq)를 참조하세요.<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)** - AI를 사용하여 더 나은 컨텍스트 인식 코드 완성 기능을 제공하고, 개발자에게 팀의 패턴과 스타일에 맞게 코딩하도록 안내하고, 찾기 어려운 코드 문제를 발견하고, 코드 검토를 정말로 중요한 영역에 집중시켜서 소프트웨어 개발을 개선하는 새로운 기능입니다. <br><br>자세한 내용은 [IntelliCode FAQ](../ide/not-in-toc/intellicode-faq.md)를 참조하세요.
+* **[실시간 공유](https://visualstudio.microsoft.com/services/live-share/)** - Visual Studio 내에서 바로 코드베이스와 컨텍스트를 팀원과 공유하고 즉각적인 양방향 공동 작업을 수행할 수 있는 새로운 도구. 실시간 공유를 사용하면 귀하가 공유한 프로젝트를 팀원이 원활하고 안전하게 읽고, 탐색하고, 편집하고, 디버깅할 수 있습니다.<br><br>자세한 내용은 [실시간 공유 FAQ](/visualstudio/liveshare/faq)를 참조하세요.<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)** - AI를 사용하여 더 나은 컨텍스트 인식 코드 완성 기능을 제공하고, 개발자에게 팀의 패턴과 스타일에 맞게 코딩하도록 안내하고, 찾기 어려운 코드 문제를 발견하고, 코드 검토를 정말로 중요한 영역에 집중시켜서 소프트웨어 개발을 개선하는 새로운 기능입니다. <br><br>자세한 내용은 [IntelliCode FAQ](../ide/not-in-toc/intellicode-faq.md)를 참조하세요.
 
 Visual Studio 2017에서 진행 중인 다른 기능에 대해 더 알고 싶은가요? [Visual Studio 로드맵](/visualstudio/productinfo/vs2018-roadmap) 페이지를 참조하세요.
 
@@ -357,5 +358,5 @@ Visual Studio를 개선하는 방법을 제안하거나 제품 지원 옵션에 
 * [Visual Studio 2017 릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Visual C++의 새로운 기능](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C#의 새로운 기능](/dotnet/csharp/whats-new)
-* [Team Foundation Server의 새로운 기능](https://www.visualstudio.com/docs/whats-new)
-* [Mac용 Visual Studio의 새로운 기능](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Team Foundation Server의 새로운 기능](/tfs/server/whats-new?view=vsts)
+* [Mac용 Visual Studio의 새로운 기능](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

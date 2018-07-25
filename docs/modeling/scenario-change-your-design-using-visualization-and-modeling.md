@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 5e87ece3deb5d55f1e184974135eeddcec1ebbfc
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177333"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -54,11 +55,11 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 
 ## <a name="scenario-overview"></a>시나리오 개요
 
-이 시나리오에서는 Dinner Now 및 Lucerne Publishing이라는 가상 회사 두 개의 소프트웨어 개발 수명 주기에 따른 에피소드를 설명합니다. Dinner Now는 시애틀에서 웹 기반 음식 배달 서비스를 제공합니다. 고객은 Dinner Now 웹 사이트에서 음식을 주문하고 결제할 수 있습니다. 주문은 배달을 위해 해당 현지 음식점에 전송됩니다. 뉴욕에 있는 회사인 Lucerne Publishing은 오프라인과 온라인으로 여러 가지 비즈니스를 운영합니다. 예를 들어 고객이 음식점 리뷰를 게시할 수 있는 웹 사이트를 운영합니다.
+이 시나리오에서는 Dinner Now 및 Lucerne Publishing이라는 가상 회사 두 개의 소프트웨어 개발 수명 주기에 따른 에피소드를 설명합니다. Dinner Now는 시애틀에서 웹 기반 음식 배달 서비스를 제공합니다. 고객이는 음식을 주문 하 고 Dinner Now 웹 사이트에서 요금을 지불할 수 있습니다. 주문은 배달을 위해 해당 현지 음식점에 전송됩니다. 뉴욕에 있는 회사인 Lucerne Publishing은 오프라인과 온라인으로 여러 가지 비즈니스를 운영합니다. 예를 들어 고객이 음식점 리뷰를 게시할 수 있는 웹 사이트를 실행 합니다.
 
 Lucerne은 최근에 Dinner Now를 인수했고, 다음과 같이 변경하고자 합니다.
 
-- Dinner Now에 음식점 리뷰 기능을 추가하여 웹 사이트를 통합합니다.
+- Dinner Now에 음식점 리뷰 기능을 추가 하 여 웹 사이트를 통합 합니다.
 
 - Dinner Now의 결제 시스템을 Lucerne 시스템으로 바꿉니다.
 
@@ -87,8 +88,8 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 |코드 맵|||예|예|예|
 |클래스 디자이너(코드 기반)||||예||
 
-종속성 다이어그램을 그리려면 모델링 프로젝트는 기존 솔루션이 나 새 솔루션의 일부로 만들어야 합니다. 이들 다이어그램은 모델링 프로젝트에서 만들어야 합니다.
-종속성 다이어그램의 항목 모델링 프로젝트에 있지만 일반 모델에 저장 되지 않습니다. 코드에서 생성된 코드 맵 및 .NET 클래스 다이어그램은 모델링 프로젝트 외부에 있습니다.
+종속성 다이어그램을 그리려면 모델링 프로젝트를 기존 솔루션이 나 새의 일부로 만들어야 합니다. 이들 다이어그램은 모델링 프로젝트에서 만들어야 합니다.
+종속성 다이어그램의 항목은 모델링 프로젝트에 있지만 일반 모델에 저장 되지 않습니다. 코드에서 생성된 코드 맵 및 .NET 클래스 다이어그램은 모델링 프로젝트 외부에 있습니다.
 
 참조
 
@@ -102,18 +103,18 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-두 팀에서는 또한 종속성 유효성 검사를 사용 하 여 개발 중인 코드와 디자인의 일관성이 유지 되도록 합니다. 참조
+또한 두 팀에서는 개발 중인 코드와 디자인의 일관성이 유지 되는지 확인 하려면 종속성 유효성 검사를 사용 합니다. 참조
 
 - [코드와 디자인의 일관성 유지](#ValidatingCode)
 
-- [논리적 아키텍처 설명: 종속성 다이어그램](#DescribeLayers)
+- [논리적 아키텍처를 설명 합니다: 종속성 다이어그램](#DescribeLayers)
 
 - [종속성 다이어그램을 사용하여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
 > 일부 버전의 Visual Studio 시각화 및 모델링에 대 한 종속성 유효성 검사 및 코드 맵 읽기 전용 버전을 지원합니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
-## <a name="understand-and-communicate-information-about-the-system"></a>이해 및 시스템에 대 한 정보를 전달 합니다.
+## <a name="understand-and-communicate-information-about-the-system"></a>시스템에 대 한 정보를 주고 이해
 
 Visual Studio 모델링 다이어그램을 사용하는 데는 미리 정의된 순서가 없으므로 요구나 접근 방식에 맞게 사용할 수 있습니다. 일반적으로 팀에서는 프로젝트 내내 모델을 반복적으로 자주 다시 확인합니다. 각 다이어그램은 개발 중인 시스템의 다양한 측면을 이해, 설명 및 전달하도록 도와주는 특정 기능을 제공합니다.
 
@@ -137,7 +138,7 @@ Lucerne은 다이어그램을 사용하여 다음 작업을 수행합니다.
 
 다이어그램은 Team Foundation Server와 통합되므로 팀에서는 작업을 더 쉽게 계획, 관리 및 추적할 수 있습니다. 예를 들어 모델을 사용하여 테스트 사례 및 개발 작업을 식별하고 작업을 예측합니다. Lucerne은 Team Foundation Server 작업 항목을 모델 요소에 연결하여 진행 상황을 모니터링하고 시스템이 사용자 요구 사항을 충족하는지 확인할 수 있습니다. 예를 들어 사용 사례를 테스트 사례 작업 항목에 연결하여 모든 테스트를 통과할 때 사용 사례가 처리되는지 확인할 수 있습니다.
 
-팀에서는 해당 변경 내용에서 체크 전에 유효성을 검사 하면 테스트 및 디자인에 대해 코드 종속성 유효성 검사 및 자동화 된 테스트를 포함 하는 빌드를 실행 하 여 합니다. 이렇게 하면 업데이트된 코드가 디자인과 충돌하지 않고 코드로 인해 이전에 작동한 기능이 중단되지 않는지 확인할 수 있습니다.
+팀의 변경 내용 체크 인, 전에 종속성 유효성 검사 및 자동화 된 테스트를 포함 하는 빌드를 실행 하 여 테스트 및 디자인에 대해 코드를 검사 합니다. 이렇게 하면 업데이트된 코드가 디자인과 충돌하지 않고 코드로 인해 이전에 작동한 기능이 중단되지 않는지 확인할 수 있습니다.
 
 ### <a name="identify-changes-to-the-existing-system"></a>기존 시스템의 변경 내용을 식별합니다
 
@@ -150,13 +151,13 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
  예를 들어 개발자는 코드 맵을 만듭니다. 범위를 조정하여 새 시나리오가 영향을 미치는 영역에 초점을 맞춥니다. 맵에서 다음 영역이 선택되고 강조 표시됩니다.
 
- ![Namespace 종속성 그래프](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![네임스페이스 종속성 그래프](../modeling/media/namespace_reviewsystem.png)
 
  **네임스페이스 코드 맵**
 
  개발자는 선택된 네임스페이스를 확장하여 클래스, 메서드 및 관계를 표시합니다.
 
- ![확장 된 네임 스페이스 종속성 그래프](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![확장된 네임스페이스 종속성 그래프](../modeling/media/dep_reviewsystem.png)
 
  **그룹 간 링크가 표시된 확장된 네임스페이스 코드 맵**
 
@@ -168,20 +169,20 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 |------------------|-------------------|
 |*코드 기반 클래스 다이어그램*<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스.|
 
-###  <a name="ValidatingCode"></a> 코드와 디자인의 일관성이 유지
- Dinner Now는 업데이트된 코드와 디자인의 일관성이 유지되는지 확인해야 합니다. 시스템의 기능 레이어를 설명, 및 연결 솔루션 아티팩트를 레이어에 간에 허용 되는 종속성을 지정 하는 종속성 다이어그램을 만듭니다.
+###  <a name="ValidatingCode"></a> 코드와 디자인의 일관성 유지
+ Dinner Now는 업데이트된 코드와 디자인의 일관성이 유지되는지 확인해야 합니다. 시스템의 기능 레이어를 설명 및 연결 솔루션 아티팩트를 레이어에 간에 허용 되는 종속성을 지정 하는 종속성 다이어그램을 만듭니다.
 
 |**다이어그램**|**설명 내용**|
 |-----------------|-------------------|
-|*종속성 다이어그램*<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램으로 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 종속성 다이어그램을 구성 하 고의 아티팩트를 매핑하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 추상 그룹에는 솔루션 *레이어*합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 레이어 다이어그램은 의도한 시스템 디자인을 설명하고 해당 디자인에 대해 발전하는 코드의 유효성을 검사하는 데 유용합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 레이어 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|
+|*종속성 다이어그램*<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 종속성 다이어그램을 구성 하 고 아티팩트를 매핑하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 추상 그룹에는 솔루션 *레이어*합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 레이어 다이어그램은 의도한 시스템 디자인을 설명하고 해당 디자인에 대해 발전하는 코드의 유효성을 검사하는 데 유용합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 레이어 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|
 
  예를 들어 다음 종속성 다이어그램에서는 레이어 간 종속성 및 각 레이어와 연결 된 아티팩트의 수를 설명 합니다:
 
- ![통합된 지불 시스템의 종속성 다이어그램](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![통합된 지불 시스템의 종속성 다이어그램](../modeling/media/layer_integrated_dnlucerne.png)
 
  **종속성 다이어그램**
 
-코드 개발 중에 디자인 충돌이 발생 하지 않는 하려면 빌드에 종속성 유효성 검사에 사용 하 여 팀이 Team Foundation Build에서 실행 됩니다. 체크 인 작업에서 종속성 유효성 검사를 요구 하는 사용자 지정 MSBuild 작업을 만들 수도 있습니다. 빌드 보고서를 사용하여 유효성 검사 오류를 수집합니다.
+되도록 코드 개발 하는 동안 디자인 충돌이 발생 하지 않습니다에서 종속성 유효성 검사 빌드를 사용 하 여 팀은 Team Foundation Build에서 실행 됩니다. 체크 인 작업에서 종속성 유효성 검사를 요구 하도록 사용자 지정 MSBuild 작업을 만들 수도 있습니다. 빌드 보고서를 사용하여 유효성 검사 오류를 수집합니다.
 
 참조
 
@@ -221,9 +222,9 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 - [Project를 사용하여 백로그 및 작업 만들기](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
-### <a name="TestValidateCheckInCode"></a> 테스트, 유효성 검사 및 코드에서 확인 하십시오.
+### <a name="TestValidateCheckInCode"></a> 테스트, 유효성 검사 및 코드에서 확인
 
-팀에서 각 작업을 완료하면 코드를 Team Foundation 버전 제어에 체크 인하고 잊지 않도록 Team Foundation Server에서 미리 알림을 수신합니다. Team Foundation Server가 체크 인을 승인, 하기 전에 팀에서는 단위 테스트 및 테스트 사례 및 디자인에 대 한 코드를 확인 하는 종속성 유효성 검사를 실행 합니다. Team Foundation Server를 사용 하 여 빌드를 실행 하는 이러한 자동화 된 단위 테스트 및 종속성 유효성 검사를 정기적으로 합니다. 이렇게 하면 코드가 다음 기준을 충족하는지 확인할 수 있습니다.
+팀에서 각 작업을 완료하면 코드를 Team Foundation 버전 제어에 체크 인하고 잊지 않도록 Team Foundation Server에서 미리 알림을 수신합니다. Team Foundation Server 체크 인을 승인 하기 전에 팀에서는 단위 테스트와 해당 테스트 사례 및 디자인에 대해 코드를 확인 하려면 종속성 유효성 검사를 실행 합니다. Team Foundation Server를 사용 하 여 빌드를 실행 하는 자동화 된 단위 테스트 및 종속성 유효성 검사를 정기적으로 합니다. 이렇게 하면 코드가 다음 기준을 충족하는지 확인할 수 있습니다.
 
 - 예상대로 작동합니다.
 
@@ -233,11 +234,11 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 Dinner Now의 자동화된 대규모 테스트 컬렉션은 지금도 거의 모두 적용되고 있기 때문에 Lucerne이 다시 사용할 수 있습니다. Lucerne은 이들 테스트를 기반으로 빌드하고 새 기능을 다루는 새 테스트를 추가할 수 있습니다. 두 팀에서는 모두 Visual Studio를 사용한 수동 테스트도 실행합니다.
 
-을 코드의 디자인을 따르는지 확인 하기 위해 팀에서는 종속성 유효성 검사를 포함 하도록 Team Foundation Build에서 해당 빌드를 구성 합니다. 충돌이 발생하면 세부 정보가 포함된 보고서가 생성됩니다.
+코드 디자인을 따르는지 확인 되도록 팀 종속성 유효성 검사를 포함 하도록 Team Foundation Build에서 해당 빌드를 구성 합니다. 충돌이 발생하면 세부 정보가 포함된 보고서가 생성됩니다.
 
 참조
 
-- [응용 프로그램 테스트](https://www.visualstudio.com/docs/test/overview)
+- [응용 프로그램 테스트](/vsts/test/overview?view=vsts)
 
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)
 
@@ -245,7 +246,7 @@ Dinner Now의 자동화된 대규모 테스트 컬렉션은 지금도 거의 모
 
 - [빌드 및 릴리스](/vsts/build-release/index)
 
-## <a name="update-the-system-using-visualization-and-modeling"></a>업데이트 시스템을 사용 하 여 시각화 및 모델링
+## <a name="update-the-system-using-visualization-and-modeling"></a>시스템 사용 하 여 시각화 및 모델링 업데이트
 
 Lucerne과 Dinner Now는 결제 시스템을 통합해야 합니다. 다음 섹션에서는 이 작업을 하는 데 도움이 되는 Visual Studio의 모델링 다이어그램을 보여 줍니다.
 
@@ -253,7 +254,7 @@ Lucerne과 Dinner Now는 결제 시스템을 통합해야 합니다. 다음 섹�
 
 - [형식 용어집 정의: 클래스 다이어그램](#DefineClasses)
 
-- [논리적 아키텍처 설명: 종속성 다이어그램](#DescribeLayers)
+- [논리적 아키텍처를 설명 합니다: 종속성 다이어그램](#DescribeLayers)
 
 참조
 
@@ -271,25 +272,25 @@ Lucerne과 Dinner Now는 결제 시스템을 통합해야 합니다. 다음 섹�
 
 - 제안된 변경이 기존 코드에 영향을 미칠 수 있는 경우 및 방식을 이해합니다.
 
-- 복잡성, 자연 스러운 종속성 또는 패턴의 영역이 나 향상 된 기능을 이용할 수 있는 기타 영역을 찾습니다.
+- 복잡성, 자연 종속성 또는 패턴의 영역이 나 향상 된 기능을 이용할 수 있는 다른 영역을 찾습니다.
 
 예를 들어 Dinner Now는 PaymentProcessing 구성 요소 업데이트 비용을 예측해야 합니다. 비용은 부분적으로 이 변경이 시스템의 다른 부분에 얼마나 영향을 미치는지에 따라 달라집니다. 이 흐름을 이해하는 데 도움이 되도록 Dinner Now 개발자의 한 명이 코드에서 코드 맵을 생성하고 변경이 영향을 미칠 수 있는 영역에서 범위 초점을 조정합니다.
 
 다음 맵은 PaymentProcessing 클래스와 선택된 것으로 표시되는 Dinner Now 시스템 다른 파트 간의 종속성을 보여 줍니다.
 
-![Dinner Now 결제 시스템에 대 한 종속성 그래프](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Dinner Now 지불 시스템의 종속성 그래프](../modeling/media/dep_dnpayment.png)
 
 **Dinner Now 결제 시스템에 대한 코드 맵**
 
 개발자는 PaymentProcessing 클래스를 확장하고 해당 구성원을 선택하여 영향을 받을 수 있는 영역을 확인하는 방식으로 맵을 살펴봅니다.
 
-![PaymentProcessing 내부 메서드 및 종속성](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![PaymentProcessing 내부 메서드 및 종속성](../modeling/media/depgraph_expandeddn.png)
 
 **PaymentProcessing 클래스 내부 메서드 및 해당 종속성**
 
 Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서드 및 종속성을 검사합니다. 팀에서는 Lucerne 시스템에 Dinner Now의 다른 부분과 상호 작용하기 위해 작업이 필요한지를 확인합니다.
 
-![Lucerne 결제 시스템에 대 한 종속성 그래프](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Lucerne 지불 시스템의 종속성 그래프](../modeling/media/depgraph_lucernepay.png)
 
 **Lucerne 결제 시스템에 대한 코드 맵**
 
@@ -297,7 +298,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 코드를 재구성하고 나서 팀에서는 새 코드 맵을 생성하여 업데이트된 구조와 관계를 확인합니다.
 
-![종속성 그래프를 재구성된 한 코드](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![코드를 재구성한 종속성 그래프](../modeling/media/depgraph_integrated.png)
 
 **코드를 재구성한 코드 맵**
 
@@ -330,7 +331,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 |**다이어그램**|**설명 내용**|
 |-----------------|-------------------|
-|종속성 다이어그램|시스템의 논리적 아키텍처. 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되도록 합니다.<br /><br /> 를 기존 dependencys 또는 의도 된 dependencys 식별할 수 있도록 코드 맵을 만들고 관련된 항목을 그룹화 합니다. 종속성 다이어그램을 만들려면 다음을 참조 하세요:<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
+|종속성 다이어그램|시스템의 논리적 아키텍처. 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되는지 확인 합니다.<br /><br /> 를 기존 dependencys 또는 의도 한 dependencys 식별할 수 있도록 하려면 코드 맵을 만들고 관련된 항목을 그룹화 합니다. 종속성 다이어그램을 만들려면 다음을 참조 하세요:<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
 |클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|
 
 ### <a name="DefineClasses"></a> 형식 용어집 정의: 클래스 다이어그램
@@ -338,7 +339,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
  Lucerne은 Process Payment 사용 사례에 참가하는 엔터티를 설명하고 논의하는 데 도움이 되도록 다음 클래스 다이어그램을 그립니다.
 
- ![클래스 다이어그램의 process Payment 엔터티](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![클래스 다이어그램의 Process Payment 엔터티](../modeling/media/uml_payentities.png)
 
  **클래스 다이어그램의 Process Payment 엔터티**
 
@@ -346,7 +347,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
  개발 중에 Lucerne은 다음 클래스 다이어그램을 사용하여 각 클래스의 세부 정보를 설명하고 논의합니다.
 
- ![Process Payment 엔터티 세부 정보를 클래스 다이어그램에](../modeling/media/uml_payment.png "UML_Payment")
+ ![클래스 다이어그램의 Process Payment 엔터티 세부 정보](../modeling/media/uml_payment.png)
 
  **클래스 다이어그램의 Process Payment 세부 정보**
 
@@ -376,7 +377,8 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 - *종속성* 은 한 분류자의 정의를 변경하면 다른 분류자의 정의가 변경될 수 있음을 나타냅니다.
 
-- *일반화* 는 특정 분류자가 일반 분류자에서 정의 파트를 상속함을 나타냅니다. *인식* 은 클래스가 인터페이스에서 제공된 작업 및 특성을 구현함을 나타냅니다.
+- *일반화* 는 특정 분류자가 일반 분류자에서 정의 파트를 상속함을 나타냅니다. 
+  *인식*은 클래스가 인터페이스에서 제공된 작업 및 특성을 구현함을 나타냅니다.
 
      이들 관계를 만들려면 **상속** 도구를 사용합니다. 인식이 *롤리팝*으로 표시될 수도 있습니다.
 
@@ -389,9 +391,9 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 #### <a name="summary-strengths-of-class-diagrams"></a>요약: 클래스 다이어그램의 장점
  클래스 다이어그램을 통해 다음을 정의할 수 있습니다.
 
-- 사용자 요구 및 시스템에 참가하는 엔터티에 대해 논의할 때 사용할 일반 용어집. 참조 [사용자 요구 사항을 모델링할](../modeling/model-user-requirements.md)합니다.
+- 사용자 요구 및 시스템에 참가하는 엔터티에 대해 논의할 때 사용할 일반 용어집. 참조 [사용자 요구 사항 모델](../modeling/model-user-requirements.md)합니다.
 
-- 구현과 관계없이 구성 요소와 같은 시스템 파트에서 사용되는 형식. 참조 [응용 프로그램의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)합니다.
+- 구현과 관계없이 구성 요소와 같은 시스템 파트에서 사용되는 형식. 참조 [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)합니다.
 
 - 종속성과 같은 형식 간 관계. 예를 들어 한 형식을 다른 형식의 여러 인스턴스와 연결할 수 있다는 것을 표시할 수 있습니다.
 
@@ -399,15 +401,15 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 |**다이어그램**|**설명**|
 |-----------------|---------------------|
-|종속성 다이어그램|시스템의 논리적 아키텍처를 클래스에 대한 관계로 설명합니다.<br /><br /> 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되도록 합니다.<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램으로 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|
+|종속성 다이어그램|시스템의 논리적 아키텍처를 클래스에 대한 관계로 설명합니다.<br /><br /> 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되는지 확인 합니다.<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|
 |코드 맵|기존 코드에서 구성 및 관계를 시각화합니다.<br /><br /> 클래스, 해당 관계 및 해당 메서드를 식별하려면 해당 요소를 표시하는 코드 맵을 만듭니다.<br /><br /> 참조<br /><br /> - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)|
 
-### <a name="DescribeLayers"></a> 논리적 아키텍처 설명: 종속성 다이어그램
- 솔루션의 아티팩트를 추상 그룹으로 구성 하 여 시스템의 논리적 아키텍처를 설명 하는 종속성 다이어그램 또는 *레이어*합니다. 아티팩트는 네임스페이스, 프로젝트, 클래스, 메서드 등 다양한 항목에 해당할 수 있습니다. 레이어는 아티팩트가 시스템에서 수행하는 역할 또는 작업을 표시하고 설명합니다. 빌드 및 체크 인 작업에 레이어 유효성 검사를 포함하여 코드와 디자인의 일관성이 유지되는지 확인할 수도 있습니다.
+### <a name="DescribeLayers"></a> 논리적 아키텍처를 설명 합니다: 종속성 다이어그램
+ 종속성 다이어그램 솔루션에서 아티팩트를 추상 그룹으로 구성 하 여 시스템의 논리적 아키텍처를 설명 하거나 *레이어*합니다. 아티팩트는 네임스페이스, 프로젝트, 클래스, 메서드 등 다양한 항목에 해당할 수 있습니다. 레이어는 아티팩트가 시스템에서 수행하는 역할 또는 작업을 표시하고 설명합니다. 빌드 및 체크 인 작업에 레이어 유효성 검사를 포함하여 코드와 디자인의 일관성이 유지되는지 확인할 수도 있습니다.
 
  코드와 디자인의 일관성을 유지 하기 위해 Dinner Now 및 Lucerne 발전 함에 따라 코드의 유효성을 검사 하려면 다음 종속성 다이어그램을 사용 합니다:
 
- ![통합된 지불 시스템의 종속성 다이어그램](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![통합된 지불 시스템의 종속성 다이어그램](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Lucerne과 Dinner Now에 대 한 종속성 다이어그램 통합**
 
@@ -417,13 +419,13 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
  다음 코드 맵은 Dinner Now와 PaymentApprover 간의 새로운 호출을 보여 줍니다.
 
- ![통합된 시스템으로 업데이트 된 종속성 그래프](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![통합 시스템으로 업데이트된 종속성 그래프](../modeling/media/depgraph_intsystem.png)
 
  **메서드 호출이 업데이트된 코드 맵**
 
  시스템이 예상대로 작동하는지 확인하고 나서 Dinner Now는 PaymentProcessing 코드를 주석으로 처리합니다. 레이어 유효성 검사 보고서는 분명하며, 결과 코드 맵은 PaymentProcessing 종속성이 존재하지 않음을 보여 줍니다.
 
- ![PaymentProcessing 없는 종속성 그래프](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![PaymentProcessing 없는 종속성 그래프](../modeling/media/depgraph_nomore.png)
 
  **PaymentProcessing이 없는 코드 맵**
 
@@ -445,11 +447,11 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
     - 레이어가 아티팩트에 연결된 다른 레이어를 포함하면 컨테이너 레이어가 이 아티팩트에도 연결됩니다. 단, 컨테이너 레이어의 숫자에는 이러한 아티팩트가 포함되지 않습니다.
 
-     계층에 연결 된 아티팩트를 보려면 종속성을 마우스 오른쪽 단추로 클릭 하 고 클릭 **링크 보기** 열려는 **레이어 탐색기**합니다.
+     계층에 연결 된 아티팩트를 확인 하려면 종속성을 마우스 오른쪽 단추로 클릭 하 고 클릭 **보기 링크** 열려는 **레이어 탐색기**합니다.
 
 - *종속성* 은 한 레이어에서 다른 레이어의 기능을 사용할 수 있지만 반대의 경우는 불가능함을 나타냅니다. *양방향 종속성* 은 한 레이어에서 다른 레이어의 기능을 사용할 수 있고 반대 방향으로도 가능함을 나타냅니다.
 
-     종속성 다이어그램에 기존 종속성을 표시 하려면 다이어그램 곡면을 마우스 오른쪽 단추로 클릭 하 고 클릭 **종속성 생성**합니다. 의도한 종속성을 설명하려면 새 종속성을 그립니다.
+     종속성 다이어그램에 기존 종속성을 표시 하려면 다이어그램 곡면을 마우스 오른쪽 단추로 클릭 한 다음 클릭 **종속성 생성**합니다. 의도한 종속성을 설명하려면 새 종속성을 그립니다.
 
 참조
 
@@ -473,7 +475,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 |**다이어그램**|**설명**|
 |-----------------|---------------------|
-|코드 맵|기존 코드에서 구성 및 관계를 시각화합니다.<br /><br /> 레이어를 만들려면 코드 맵을 생성하고 맵에서 항목을 잠재적인 레이어로 그룹화합니다. 맵에서 그룹 종속성 다이어그램으로 끌어 옵니다.<br /><br /> 참조<br /><br /> - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [찾아보기 및 코드 맵을 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)|
+|코드 맵|기존 코드에서 구성 및 관계를 시각화합니다.<br /><br /> 레이어를 만들려면 코드 맵을 생성하고 맵에서 항목을 잠재적인 레이어로 그룹화합니다. 맵에서 종속성 다이어그램에는 그룹을 끌어 옵니다.<br /><br /> 참조<br /><br /> - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [찾아보기 및 코드 맵을 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>외부 리소스
 

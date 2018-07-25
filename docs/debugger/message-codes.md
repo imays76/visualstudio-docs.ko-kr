@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474445"
 ---
 # <a name="message-codes"></a>메시지 코드
 에 표시 된 각 메시지 줄 [메시지 뷰](../debugger/messages-view.md) 'P'를 포함의 '의 ' 또는 'R' 코드입니다. 이러한 코드는 다음과 같은 의미가 있습니다.  

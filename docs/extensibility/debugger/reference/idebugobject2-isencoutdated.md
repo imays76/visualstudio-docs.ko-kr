@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122524"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 이 메서드는이 개체 또는 부모 컨테이너의 편집 하며 계속 하기 상태 최신 인지 확인 합니다. 사용자 지정 식 계산기가 메서드와 항상 반환 구현 하지 않는 `E_NOTIMPL`합니다.  

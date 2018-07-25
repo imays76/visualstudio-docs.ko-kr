@@ -9,11 +9,12 @@ description: VSTS(Visual Studio 팀 서비스)를 Visual Studio 구독자로 사
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f5dc617f9baa801e17d2fd9862103d9079b3368
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281822"
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio 구독자용 VSTS(Visual Studio Team Services) 혜택
 
@@ -21,9 +22,10 @@ ms.lasthandoff: 04/16/2018
 
 Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는 [대체 ID](vs-alternate-identity.md)를 사용하여 VSTS에 로그인하면 자동으로 인식됩니다.
 
-[무료 VSTS 계정 등록](https://www.visualstudio.com/team-services/)
+[무료 VSTS 계정 등록](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>자격
+
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 연간 클라우드, 월간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup>, FTE  | 기본, 테스트 관리자, 패키지 관리, 자체 호스트된 CI/CD       |  예          |
@@ -33,10 +35,9 @@ Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는
 
 <sup>1</sup> *포함: NFR(전매금지), MVP(Microsoft Valued Partner), RD(Region Director), VSIP(Visual Studio 업계 파트너), Microsoft 파트너 네트워크(Enterprise), BizSpark, MCT Software & Services Developer. 제외: MCT Software & Services, Imagine.*
 
-
-
 VSTS 기능에 대해 알아봅니다.
-- [기본](https://www.visualstudio.com/team-services/compare-features/)
+
+- [기본](https://visualstudio.microsoft.com/team-services/compare-features/)
 - [테스트 관리자](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [패키지 관리](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
@@ -45,6 +46,6 @@ VSTS 기능에 대해 알아봅니다.
 
 ## <a name="support-resources"></a>지원 리소스
 
--  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://www.visualstudio.com/subscriptions/support/)에 문의하세요.
--  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://www.visualstudio.com/support/)을 참조하세요.
+-  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+-  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 -  전체 [Visual Studio Team Services 설명서](/vsts/).

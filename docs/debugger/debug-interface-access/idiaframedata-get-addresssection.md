@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466942"
 ---
 # <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
 프레임에 대 한 코드 주소 섹션 부분을 검색합니다.  

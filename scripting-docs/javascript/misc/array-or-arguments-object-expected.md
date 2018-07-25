@@ -1,13 +1,13 @@
 ---
-title: "Array 또는 arguments 개체가 필요 합니다. | Microsoft Docs"
-ms.custom: 
+title: Array 또는 arguments 개체가 필요 합니다. | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5028
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632743"
 ---
 # <a name="array-or-arguments-object-expected"></a>배열 또는 인수 개체가 필요합니다.
 배열을 인수로 제공 하지 않았습니다. 에 적용 되는이 오류는 **Function.prototype.apply** 메서드만 있습니다. 이 함수에 두 번째 인수 중 하나 여야 합니다를 지정 하는 경우는 `Array` 개체 또는 **인수** 개체입니다.  

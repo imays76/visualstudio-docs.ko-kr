@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148953"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio에 대 한 복합 패턴
 복합 패턴 고유 구성 요소 상호 작용 및 디자인 결합 요소로 결합 합니다. 일관성을 고려 하 여 Visual Studio에서 가장 중요 한 복합 패턴 중 일부는 다음과 같습니다.  

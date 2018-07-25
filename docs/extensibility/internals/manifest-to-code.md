@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132913"
 ---
 # <a name="manifest-to-code"></a>코드에 매니페스트
 코드 도구 매니페스트입니다 Visual Studio 이미지 서비스에 대 한.imagemanifest 파일 하 고 래퍼 파일 또는 c + +, C#, VB 또는 Visual Studio 확장에 대 한.vsct 파일에는 이미지 매니페스트 값 참조에 대 한 파일을 생성 하는 콘솔 응용 프로그램. 이 도구를 직접 Visual Studio 이미지 서비스에서 이미지를 요청 하거나 코드 자체 UI와 렌더링 중 처리 하지 않을 경우 Api 통해 매니페스트 값을 전달 하기 위해 사용할 수 있는 래퍼 파일을 생성 합니다.  

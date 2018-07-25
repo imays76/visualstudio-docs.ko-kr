@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130138"
 ---
 # <a name="properties-window-object-list"></a>속성 창의 개체 목록
 개체 목록에는 **속성** 창에 하나 이상의 선택 된 창 내에서 사용할 수 있는 다른 개체에 선택을 변경할 수 있는 드롭 다운 목록입니다. 에 대 한 호출을 트리거합니다이 목록 내에서 다른 개체를 선택 하면 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> 새 개체를 선택 하는 환경에 알릴 수 있습니다. 표시 되는 정보는 **속성** 창이 새로 선택 된 개체와 연결 된 속성을 표시 하려면 다음 변경 됩니다.  

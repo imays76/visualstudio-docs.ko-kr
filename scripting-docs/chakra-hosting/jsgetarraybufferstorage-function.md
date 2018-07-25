@@ -1,14 +1,14 @@
 ---
-title: "JsGetArrayBufferStorage 함수 | Microsoft Docs"
-ms.custom: 
+title: JsGetArrayBufferStorage 함수 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 712ae298-36a9-47ef-b089-e51835c056bc
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568183"
 ---
 # <a name="jsgetarraybufferstorage-function"></a>JsGetArrayBufferStorage 함수
 `ArrayBuffer`에서 사용되는 기본 메모리 저장소를 가져옵니다.  

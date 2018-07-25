@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 160990ad1e7ffd3dd31e445e167db0e14d08ca99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945990"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>혼합 최소 규칙 규칙 집합
-Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 포함 하 여, 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만드는이 규칙 사용자 지정 규칙 집합에 있는 집합을 포함 해야 합니다.
+Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그램 작동 중단을 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만든 모든 사용자 지정 규칙 집합에 설정 합니다.이 규칙을 포함 해야 합니다.
 
 |규칙|설명|
 |----------|-----------------|
@@ -84,13 +85,13 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |[C28182](../code-quality/c28182.md)|NULL 포인터를 역참조하고 있습니다. 포인터에 다른 포인터와 동일한 NULL 값이 포함되어 있습니다.|
 |[C28202](../code-quality/c28202.md)|비정적 멤버에 대한 잘못된 참조입니다.|
 |[C28203](../code-quality/c28203.md)|클래스 멤버에 대한 모호한 참조입니다.|
-|[C28205](../code-quality/c28205.md)|_Success\_ 또는 _On_failure\_가 잘못된 컨텍스트에서 사용되었습니다.|
+|[C28205](../code-quality/c28205.md)|\_성공\_ 또는 \_온\_오류\_ 불법적인 컨텍스트에 사용|
 |[C28206](../code-quality/c28206.md)|왼쪽 피연산자가 구조체를 가리킵니다. '->'를 사용하세요.|
 |[C28207](../code-quality/c28207.md)|왼쪽 피연산자가 구조체입니다. '.'를 사용하세요.|
 |[C28210](../code-quality/c28210.md)|__on_failure 컨텍스트에 대한 주석이 명시적 사전 컨텍스트에 없어야 합니다.|
 |[C28211](../code-quality/c28211.md)|SAL_context에 대해 정적 컨텍스트 이름이 필요합니다.|
 |[C28212](../code-quality/c28212.md)|주석에 대한 포인터 식이 있어야 합니다.|
-|[C28213](../code-quality/c28213.md)|이전 선언을 수정하지 않고 참조하려면 _Use_decl_annotations\_ 주석을 사용해야 합니다.|
+|[C28213](../code-quality/c28213.md)|합니다 \_사용 하 여\_선언\_주석\_ 이전 선언을 수정 하지 않고 참조 하려면 주석을 사용 해야 합니다.|
 |[C28214](../code-quality/c28214.md)|특성 매개 변수 이름은 p1...p9여야 합니다.|
 |[C28215](../code-quality/c28215.md)|typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.|
 |[C28216](../code-quality/c28216.md)|checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.|
@@ -132,22 +133,22 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |[C28267](../code-quality/c28267.md)|함수 주석에서 주석 구문 오류가 발견되었습니다.|
 |[C28272](../code-quality/c28272.md)|함수, 매개 변수에 대한 주석이 검사 시 함수 선언과 일치하지 않습니다.|
 |[C28273](../code-quality/c28273.md)|함수의 경우 단서가 함수 선언과 일치하지 않습니다.|
-|[C28275](../code-quality/c28275.md)|_Macro_value\_에 대한 매개 변수가 null입니다.|
+|[C28275](../code-quality/c28275.md)|매개 변수의 \_매크로\_값\_ isnull|
 |[C28279](../code-quality/c28279.md)|기호의 경우 일치하는 'end'가 없는 'begin'이 있습니다.|
 |[C28280](../code-quality/c28280.md)|기호의 경우 일치하는 'begin'이 없는 'end'가 있습니다.|
 |[C28282](../code-quality/c28282.md)|형식 문자열이 사전 조건에 있어야 합니다.|
 |[C28285](../code-quality/c28285.md)|함수의 경우 매개 변수에 구문 오류가 있습니다.|
 |[C28286](../code-quality/c28286.md)|함수의 경우 끝 부분 근처에 구문 오류가 있습니다.|
-|[C28287](../code-quality/c28287.md)|함수의 경우 _At\_() 주석에 구문 오류가 있습니다(인식할 수 없는 매개 변수 이름).|
-|[C28288](../code-quality/c28288.md)|함수의 경우 _At\_() 주석에 구문 오류가 있습니다(잘못된 매개 변수 이름).|
+|[C28287](../code-quality/c28287.md)|함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (인식할 수 없는 매개 변수 이름)|
+|[C28288](../code-quality/c28288.md)|함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (잘못 된 매개 변수 이름)|
 |[C28289](../code-quality/c28289.md)|함수의 경우 ReadableTo 또는 WritableTo에 limit-spec가 매개 변수로 포함되지 않았습니다.|
 |[C28290](../code-quality/c28290.md)|함수의 주석에 실제 매개 변수 개수보다 많은 외부 참조가 있습니다.|
 |[C28291](../code-quality/c28291.md)|함수의 경우 역참조 수준 0에서 post null/notnull이 의미가 없습니다.|
 |[C28300](../code-quality/c28300.md)|연산자에 호환되지 않는 형식의 식 피연산자입니다.|
 |[C28301](../code-quality/c28301.md)|함수의 첫 번째 선언에 대한 주석이 없습니다.|
-|[C28302](../code-quality/c28302.md)|주석에 추가 _Deref\_ 연산자가 있습니다.|
-|[C28303](../code-quality/c28303.md)|주석에 모호한 _Deref\_ 연산자가 있습니다.|
-|[C28304](../code-quality/c28304.md)|토큰에 부적절하게 배치된 _Notref\_ 연산자가 적용되었습니다.|
+|[C28302](../code-quality/c28302.md)|추가 \_Deref\_ 연산자에서 발견 되었습니다.|
+|[C28303](../code-quality/c28303.md)|모호한 \_Deref\_ 연산자에서 발견 되었습니다.|
+|[C28304](../code-quality/c28304.md)|부적절 하 게 배치 \_Notref\_ 토큰에 적용할 연산자를 찾을 수 있습니다.|
 |[C28305](../code-quality/c28305.md)|토큰을 구문 분석하는 동안 오류가 발생했습니다.|
 |[C28350](../code-quality/c28350.md)|주석이 조건부로 적용할 수 없는 상황을 설명합니다.|
 |[C28351](../code-quality/c28351.md)|주석이 동적 값(변수)을 조건에 사용할 수 없는 경우를 설명합니다.|

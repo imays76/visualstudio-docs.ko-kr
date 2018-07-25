@@ -1,4 +1,5 @@
 # [Visual Studio 구독](index.md)
+## [새로운 기능](whats-new-in-subscriptions.md)
 ## 구독자 환경
 ### [구독자 포털 사용](using-the-subscriber-portal.md)
 #### [정품 구독 활성화](activate-store-subscriptions.md)
@@ -64,7 +65,7 @@
 #### [만료된 구독](handle-expired-license.md)
 #### [개인 전자 메일 로그인이 있는 구독자](personal-email-sign-ins.md)
 ## Visual Studio 구독 취득
-### [구독 옵션 비교](https://www.visualstudio.com/vs/pricing)
+### [구독 옵션 비교](https://visualstudio.microsoft.com/vs/pricing)
 ### 클라우드 구독 구입
 #### [개요](vscloud-overview.md)
 #### [청구 FAQ](vscloud-billing-faq.md)
@@ -75,8 +76,8 @@
 #### [Microsoft for Startups](program-startups.md)
 ## 자료
 ### [Visual Studio 라이선스 백서](http://aka.ms/vslicensing)
-### [구독 옵션 및 가격 비교](https://www.visualstudio.com/vs/pricing)
-### [Visual Studio IDE 기능 비교](https://www.visualstudio.com/vs/compare)
-### [Visual Studio 관리 및 구독 지원](https://www.visualstudio.com/support/support-overview-vs)
+### [구독 옵션 및 가격 비교](https://visualstudio.microsoft.com/vs/pricing)
+### [Visual Studio IDE 기능 비교](https://visualstudio.microsoft.com/vs/compare)
+### [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [볼륨 라이선스 조건](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [MPSA(Microsoft 제품 및 서비스 계약)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

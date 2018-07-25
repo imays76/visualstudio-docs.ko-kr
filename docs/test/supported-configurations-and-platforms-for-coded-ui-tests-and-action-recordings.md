@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: caa1fd5317cf7f5bfd7a7f5a309734002112cc6a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34693889"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼
 
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/26/2018
 |Citrix/터미널 서비스|터미널 서버에는 작업을 기록하지 않는 것이 좋습니다. 레코더에서는 동시에 여러 인스턴스를 실행할 수 없습니다.|
 |PowerBuilder|부분적으로 지원됩니다.<br /><br /> 지원 범위는 PowerBuilder 컨트롤에서 액세스할 수 있는 범위까지입니다.|
 
- 다른 플랫폼을 지원하기 위한 확장을 만드는 방법에 대한 자세한 내용은 [컨트롤의 코딩된 UI 테스트 사용](../test/enable-coded-ui-testing-of-your-controls.md) 및 [Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)을 참조하세요.
+ 다른 플랫폼을 지원하기 위한 확장을 만드는 방법에 대한 자세한 내용은 [컨트롤의 코딩된 UI 테스트 사용](../test/enable-coded-ui-testing-of-your-controls.md) 및 [코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

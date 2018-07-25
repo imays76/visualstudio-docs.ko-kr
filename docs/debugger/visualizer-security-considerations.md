@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476519"
 ---
 # <a name="visualizer-security-considerations"></a>시각화 도우미 보안 고려 사항
 시각화 도우미를 작성할 때는 보안 문제를 고려해야 합니다. 당장은 이러한 잠재적 위협에 대한 취약점이 발견되지 않더라도 개발자는 이러한 문제의 가능성을 인식하고 여기서 설명하는 적절한 보안 예방책에 따라 향후 발생할 수 있는 위험에 대비해야 합니다.  

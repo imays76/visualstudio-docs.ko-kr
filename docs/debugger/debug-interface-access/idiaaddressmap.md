@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468972"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 DIA SDK 디버그 개체에 대 한 가상 및 상대 가상 주소를 계산 하는 방법에 대 한 제어를 제공 합니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134444"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>VSPackage에 대 한 설치 디렉터리를 선택합니다.
 VSPackage 및 해당 지원 파일 사용자의 파일 시스템에 있어야 합니다. 위치는 VSPackage는 관리 하거나 관리 되지 않는,-side-by-side 버전 관리 체계 및 사용자 선택에 따라 달라 집니다.  

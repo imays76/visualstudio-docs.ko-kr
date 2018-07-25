@@ -11,13 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a12cac4e3a0c7144fd2e2cca2044ad416ac966d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a514459e834e5652e544991eb061f0c96767dd32
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302642"
 ---
-# <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>진단 데이터 어댑터를 만들어 사용자 지정 데이터를 수집하거나 테스트 컴퓨터에 영향 주기
+# <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>진단 데이터 어댑터를 만들어 사용자 지정 데이터를 수집하거나 테스트 머신에 영향 주기
 
 테스트를 실행할 때 진단 데이터 어댑터를 직접 만들어 데이터를 수집하거나, 테스트의 일부로 컴퓨터에 영향을 줄 수 있습니다. 예를 들어, 테스트 중인 응용 프로그램에서 만든 로그 파일을 수집하고 테스트 결과에 연결하거나 컴퓨터에 남아 있는 디스크 공간이 제한적인 상황에서 테스트를 실행할 수 있습니다. Visual Studio Enterprise에서 제공하는 API를 사용하여 테스트 실행의 특정 지점에서 작업을 수행하는 코드를 작성할 수 있습니다. 예를 들어 테스트 실행을 시작할 때, 각 개별 테스트가 완료되기 전후, 그리고 테스트 실행이 완료될 때 작업을 수행할 수 있습니다.
 

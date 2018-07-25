@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104217"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 이 구조에 지역 변수, 매개 변수 또는 다른 필드에 설명 합니다.  

@@ -6,11 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 4ba57dde546ff6827c6d0d137e907174c0699dbb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178262"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
 
@@ -37,7 +38,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 
 확장 패키지는 이름, 버전, 종속성, 기타 정보에 대한 메타데이터를 C# 특성에 저장합니다. Add-in Maker는 `AddinInfo.cs` 및 `AssemblyInfo.cs`라는 두 개의 파일을 만들어 이 정보를 저장하고 구성합니다. 확장 패키지의 *Addin 특성*에 고유 ID와 네임스페이스가 지정되어 있어야 합니다.
 
-```
+```csharp
 [assembly:Addin (
    "DateInserter",
    Namespace = "DateInserter",
@@ -69,7 +70,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 
 명령 확장은 `/MonoDevelop/Ide/Commands` 확장 지점에 항목을 추가하여 정의합니다. 다음 코드를 사용하여 `Manifest.addin.xml`에서 확장을 정의했습니다.
 
- ```
+ ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
   <command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
@@ -89,7 +90,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 
 `/MonoDevelop/Ide/MainMenu/Edit` 확장 지점에 연결되는 CommandItem 확장은 다음 코드 조각에 나와 있습니다.
 
-```
+```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
   <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
@@ -101,7 +102,7 @@ CommandItem은 해당 id 특성에 지정된 명령을 메뉴에 배치합니다
 
 `InsertDateHandler`는 `CommandHandler` 클래스의 확장입니다. 두 가지 메서드 `Update` 및 `Run`을 재정의합니다. 명령이 메뉴에 표시되거나 키 바인딩을 통해 실행될 때마다 `Update` 메서드가 쿼리됩니다. 정보 개체를 변경하여 명령을 사용하지 않거나 보이지 않도록 설정하고, 배열 명령을 채우고, 기타 작업을 수행할 수 있습니다. 이 `Update` 메서드는 텍스트를 삽입할 *TextEditor*가 있는 활성 *문서*를 찾을 수 없는 경우 명령을 사용하지 않도록 설정합니다.
 
-```
+```csharp
 protected override void Update (CommandInfo info)
 {
     info.Enabled = IdeApp.Workbench.ActiveDocument?.Editor != null;
@@ -110,7 +111,7 @@ protected override void Update (CommandInfo info)
 
 명령을 사용하도록 설정하거나 숨기기 위한 특수 논리가 있는 경우에만 `Update` 메서드를 재정의해야 합니다. `Run` 메서드는 사용자가 명령을 실행할 때마다 실행되며, 이 경우 사용자가 편집 메뉴에서 명령을 선택할 때 발생합니다. 이 메서드는 텍스트 편집기의 캐럿에 날짜와 시간을 삽입합니다.
 
-```
+```csharp
 protected override void Run ()
 {
   var editor = IdeApp.Workbench.ActiveDocument.Editor;
@@ -121,7 +122,7 @@ protected override void Run ()
 
 `DateInserterCommands` 내에서 명령 형식을 열거형 멤버로 선언합니다.
 
-```
+```csharp
 public enum DateInserterCommands
 {
   InsertDate,

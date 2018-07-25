@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100457"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 기호 로드 하는 동안 메시지 표시줄 세션 디버그 관리자 (SDM) 상태를 설정 하려면이 인터페이스를 전송 하는 디버그 엔진 (DE).  

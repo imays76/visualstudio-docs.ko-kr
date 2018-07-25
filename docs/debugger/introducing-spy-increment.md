@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481449"
 ---
 # <a name="introducing-spy"></a>Spy++ 소개
 Spy++에서는 다음 작업을 수행할 수 있습니다.  

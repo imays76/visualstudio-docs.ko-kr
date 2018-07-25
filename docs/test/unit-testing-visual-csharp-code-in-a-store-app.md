@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b409e3faa44b19cf0018e770915c8a3868f9ead4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117403"
 ---
 # <a name="unit-testing-visual-c-code"></a>Visual C# 코드 유닛 테스트
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>솔루션 및 단위 테스트 프로젝트 만들기
 
-1. **파일** 메뉴에서 **새로 만들기** > **프로젝트...** 를 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
 2. **새 프로젝트** 대화 상자에서 **설치됨** > **Visual C#** 을 확장하고 **Windows 유니버설**을 선택합니다. 그런 다음 프로젝트 템플릿 목록에서 **새 응용 프로그램**을 선택합니다.
 
@@ -115,7 +116,7 @@ ms.lasthandoff: 04/26/2018
 
 1. Maths 응용 프로그램에 대한 참조를 RooterTests 프로젝트에 추가합니다.
 
-    1. 솔루션 탐색기에서 **RooterTests** 프로젝트를 선택한 다음 바로 가기 메뉴에서 **참조 추가...** 를 선택합니다.
+    1. 솔루션 탐색기에서 **RooterTests** 프로젝트를 선택한 다음, 바로 가기 메뉴에서 **참조 추가**를 선택합니다.
 
     2. **참조 추가 - RooterTests** 대화 상자에서 **솔루션**을 확장하고 **프로젝트**를 선택한 다음, **Maths** 항목을 선택합니다.
 

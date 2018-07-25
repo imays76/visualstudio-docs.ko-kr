@@ -26,9 +26,6 @@
   items:
     - name: CPU 사용량 분석
       href: cpu-usage.md
-      items:
-        - name: UWP(유니버설 Windows 앱)에서 CPU 사용량 분석
-          href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: 메모리 사용량 분석
       href: analyze-memory-usage.md
       items:
@@ -44,16 +41,10 @@
       href: perftips.md
     - name: JavaScript 메모리 분석
       href: javascript-memory.md
-      items:
-        - name: '연습: 메모리 누수 찾기(JavaScript)'
-          href: walkthrough-find-a-memory-leak-javascript.md
     - name: 네트워크 사용량 분석
       href: network-usage.md
     - name: HTML UI 응답성 분석
       href: html-ui-responsiveness.md
-      items:
-        - name: '연습: UI 응답성 개선(HTML)'
-          href: walkthrough-improving-ui-responsiveness-html.md
     - name: 성능 탐색기 사용
       href: performance-explorer.md
       items:

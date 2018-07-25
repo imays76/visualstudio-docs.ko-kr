@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131751"
 ---
 # <a name="legacy-language-service-overview"></a>레거시 언어 서비스 개요
 언어 서비스는 특정 구현할 수 있게 하는 편집기 지원 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기능입니다. 자주 사용 하는 기능 및 기타 기능에 대 한 부분 지원에 대 한 모든 지원을 제공 하는 관리 패키지 프레임 워크 (MPF) 언어 서비스 클래스.  

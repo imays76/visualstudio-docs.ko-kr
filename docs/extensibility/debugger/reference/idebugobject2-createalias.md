@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113047"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 에 고유 ID 또는이 개체에 대 한 별칭을 만들거나 기존 별칭을 반환 합니다.  

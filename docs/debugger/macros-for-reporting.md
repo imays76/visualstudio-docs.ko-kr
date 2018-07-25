@@ -24,23 +24,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd2dbb0651aa35243090fb554fa9142573e04e04
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 57b254323fac5d670cd44399cd8d22c9530c4510
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056604"
 ---
 # <a name="macros-for-reporting"></a>보고서 매크로
-사용할 수는 **_RPTn**, 및 **_RPTFn** crtdbg 매크로입니다. 사용 하 여 H `printf` 문을 디버깅 합니다. 이러한 매크로 사용 중인 버전에 자동으로 나타나지 않지만 빌드에서 **_DEBUG** 로 둘러쌀 필요가 없습니다 이므로 정의 되지 않은 **#ifdef**s입니다.  
+디버깅을 사용할 수 있습니다 합니다 **_RPTn** 하 고 **_RPTFn** crtdbg에서 정의 된 매크로 합니다. 사용을 대체 하려면 H `printf` 문입니다. 에 inclose 필요가 **#ifdef**s, 사용 중인 버전에서 자동으로 사라집니다 때문에 빌드에서 **_DEBUG** 정의 되어 있지 않습니다.  
   
 |매크로|설명|  
 |-----------|-----------------|  
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|메시지 문자열과 0을 네 개의 인수로 출력합니다. 통해 _RPT1에 대 한 **_RPT4**, 메시지 문자열이 인수에 대해 printf 스타일 서식 문자열로 사용 합니다.|  
-|**_RPTF0**, **_RPTF1**, **, _RPTF2**, **_RPTF4**|와 동일 **_RPTn**, 있지만 이러한 매크로 매크로 위치한 파일 이름과 줄 번호를 출력 합니다.|  
+|**_RPT0**, **_RPT1**를 **_RPT2**하십시오 **_RPT3**, **_RPT4**|메시지 문자열과 0을 네 개의 인수로 출력합니다. _Rpt1부터 **_RPT4**, 메시지 문자열 인수에 대해 printf 스타일 형식 지정 문자열 표현으로 사용 합니다.|  
+|**_RPTF0**하십시오 **_RPTF1**하십시오 **_RPTF2**, **_RPTF4**|동일 **_RPTn**, 있지만 이러한 매크로 매크로 위치한 파일 이름과 줄 번호를 출력 합니다.|  
   
  다음 예제를 참조하세요.  
   
-```  
+```cpp
 #ifdef _DEBUG  
     if ( someVar > MAX_SOMEVAR )  
         printf( "OVERFLOW! In NameOfThisFunc( ),  
@@ -49,15 +50,15 @@ ms.lasthandoff: 04/18/2018
 #endif  
 ```  
   
- 이 코드의 값을 출력 `someVar` 및 `otherVar` 를 **stdout**합니다. 다음 `_RPTF2` 호출을 사용하여 동일한 값과 파일 이름, 줄 번호를 보고할 수 있습니다.  
+ 이 코드의 값을 출력 `someVar` 하 고 `otherVar` 하 **stdout**합니다. 다음 `_RPTF2` 호출을 사용하여 동일한 값과 파일 이름, 줄 번호를 보고할 수 있습니다.  
   
-```  
+```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- 특정 응용 프로그램에서 C 런타임 라이브러리와 함께 제공된 매크로가 없다는 디버그 보고가 필요할 경우, 필요에 맞게 특별히 디자인된 매크로를 작성할 수 있습니다. 헤더 파일 중 하나에서 예를 들어 포함할 수는 매크로 정의 하려면 다음을 호출 하는 같은 코드 **ALERT_IF2**:  
+특정 응용 프로그램을 디버그 C 런타임 라이브러리를 사용 하 여 제공 된 매크로가 제공 하지 않는 보고 해야 함을 확인할 수 있습니다. 이러한 경우에 대 한 고유한 요구 사항에 맞게 특별히 디자인 된 매크로 작성할 수 있습니다. 헤더 파일 중 하나에서 예를 들어, 있습니다 수 같은 코드를 포함 매크로 정의 하려면 다음을 호출 **ALERT_IF2**:  
   
-```  
+```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */  
 #define  ALERT_IF2(expr, msg, arg1, arg2)  do {} while (0)  
 #else                           /* For DEBUG builds   */  
@@ -71,14 +72,14 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- 한 번 호출 **ALERT_IF2** 의 모든 기능을 수행할 수는 **printf** 이 항목의 시작 부분에 코드:  
+ 한 번 호출 **ALERT_IF2** 의 모든 기능을 수행할 수는 **printf** 코드:  
   
-```  
+```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
 someVar=%d, otherVar=%d.\n", someVar, otherVar );  
 ```  
   
- 사용자 지정 매크로를 보다 편리하게 변경하여 여러 대상에 다소간의 정보를 보고할 수 있기 때문에, 디버깅이 필요할 때 특히 유용한 방법입니다.  
+ 더 많거나 적은 다른 대상 정보를 보고 하는 사용자 지정 매크로 쉽게 변경할 수 있습니다. 디버깅 요구 진화 함에 따라이 방법은 특히 유용 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md)

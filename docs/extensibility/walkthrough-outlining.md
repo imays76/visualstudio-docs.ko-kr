@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143900"
 ---
 # <a name="walkthrough-outlining"></a>연습: 개요
 개요 확장 또는 축소 하려면 텍스트 영역의 종류를 정의 하 여 같은 언어 기반 기능을 구현할 수 있습니다. 언어 서비스의 컨텍스트에서 영역을 정의할 수 있습니다 또는 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 영역 정의 해당 형식에만 적용할 수 있습니다 또는 기존 콘텐츠 형식 (예: "text")는 영역 정의 적용할 수 있습니다. 이 연습에는 정의 개요 영역을 표시 하는 방법을 보여 줍니다.  

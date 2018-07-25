@@ -1,6 +1,7 @@
 ---
 title: '방법: 기본 질감 셰이더 만들기'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efe0031eed40424dbe9dc0219ecf82c69e44b33c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 211da971bc7e4e275ef43b88531fe46a7fc0b4eb
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924068"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>방법: 기본 질감 셰이더 만들기
 
@@ -27,7 +29,7 @@ ms.lasthandoff: 04/19/2018
 
 1.  사용할 DGSL 셰이더를 만듭니다. DGSL 셰이더를 프로젝트에 추가하는 방법에 대한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 시작 섹션을 참조하세요.
 
-2.  **점 색** 노드를 삭제합니다. **선택** 모드에서 **점 색** 노드를 선택하고 메뉴 표시줄에서 **편집**, **삭제**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
+2.  **점 색** 노드를 삭제합니다. **선택** 모드에서 **점 색** 노드를 선택한 다음, 메뉴 모음에서 **편집** > **삭제**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
 
 3.  그래프에 **질감 샘플** 노드를 추가합니다. **도구 상자**의 **질감**에서 **질감 샘플**을 선택하고 디자인 화면으로 이동합니다.
 
@@ -46,7 +48,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 > 이 그림에서 평면을 미리 보기 셰이프로 사용되고 셰이더의 효과를 더욱 효과적으로 표시하기 위해 질감이 지정되었습니다.
 
-![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")
+![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-texture-effect.png)
 
 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)를 참조하세요.
 

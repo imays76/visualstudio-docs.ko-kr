@@ -3,21 +3,23 @@ layout: LandingPage
 title: Visual Studio에서 앱 배포 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 응용 프로그램, 서비스 및 구성 요소를 배포하는 방법을 알아봅니다.
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 141348fc5521eb0ffe3989ba5a0d76a251308515
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 83013d3baf0c9c041a3873a223cd218c773ae20c
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030405"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio에서 배포
 
 Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다.
 
-<h2>5분 “빠른 시작”을 사용하여 Visual Studio 배포 사용</h2>
+<h2>5분 빠른 시작을 사용하여 Visual Studio 배포 사용</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -27,7 +29,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="Road map">
                         </div>
                     </div>
                     <div class="cardText">
@@ -45,7 +47,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to a local folder">
                         </div>
                     </div>
                     <div class="cardText">
@@ -63,7 +65,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to a website or network share">
                         </div>
                     </div>
                     <div class="cardText">
@@ -81,7 +83,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -104,7 +106,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy a .NET core app">
                         </div>
                     </div>
                     <div class="cardText">
@@ -122,7 +124,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Package a UWP for Microsoft Store">
                         </div>
                     </div>
                     <div class="cardText">
@@ -140,7 +142,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
                         </div>
                     </div>
                     <div class="cardText">
@@ -158,7 +160,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Package a desktop app for Microsoft Store (C#, C++)">
                         </div>
                     </div>
                     <div class="cardText">
@@ -176,7 +178,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Python.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Python.svg" alt="Deploy Python to Azure">
                         </div>
                     </div>
                     <div class="cardText">
@@ -194,7 +196,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -212,7 +214,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to IIS">
                         </div>
                     </div>
                     <div class="cardText">
@@ -230,7 +232,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy a desktop app using ClickOnce">
                         </div>
                     </div>
                     <div class="cardText">
@@ -248,7 +250,7 @@ Visual Studio는 앱을 배포할 수 있는 다양한 도구를 제공합니다
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="Learn about deployment in Visual C++">
                         </div>
                     </div>
                     <div class="cardText">

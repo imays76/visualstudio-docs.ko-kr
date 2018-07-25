@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e2ec53e78bc88e18d9ba8e77aa888ffa855b64ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 739c43b0ed6665684f0a38b35dfd6eccdf8f5b2c
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977814"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>XAML 디자이너 에서 컨트롤을 삽입하고 해당 동작을 수정
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/26/2018
 
 *트리거* 는 속성을 변경하거나 이벤트에 응답하여 작업을 수행하거나 다른 속성의 변경을 수행합니다. 예를 들어, 사용자가 마우스로 가리킬 때 단추의 색을 변경할 수 있습니다.
 
-!["트리거" 패널](../designers/media/custom_button_blend_propertytriggerinfo.png)
+![트리거 패널](../designers/media/custom_button_blend_propertytriggerinfo.png)
 
 ### <a name="behaviors"></a>동작
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476811"
 ---
 # <a name="process-properties-dialog-box"></a>프로젝트 속성 대화 상자
 이 대화 상자를 사용 하 여 특정 프로세스에 대 한 자세한 내용을 찾을 수 있습니다. 이 대화 상자를 표시 하려면 포커스를 이동 하는 [프로세스 뷰](../debugger/processes-view.md) 창. 트리에서 프로세스 노드를 선택한 후 선택 **속성** 에서 **보기** 메뉴.  

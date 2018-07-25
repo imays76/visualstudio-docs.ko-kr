@@ -1,5 +1,5 @@
 ---
-title: 텍스트 버퍼에 액세스 하는 레거시 API를 사용 하 여 | Microsoft Docs
+title: 레거시 API를 사용 하 여 텍스트 버퍼에 액세스 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,31 +13,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84bf79ea19fc0867643ce3e8ee6db0a645d9a0dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3347fc2fd03a2eb6b466145672d3aebb77ad71a6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078016"
 ---
-# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 텍스트 버퍼에 액세스
-텍스트는 텍스트 스트림 및 파일 유지 관리 담당 합니다. 버퍼를 읽거나 쓰게 다른 형식, 있지만 버퍼와 모든 일반 통신은 유니코드를 사용 하 여 수행 됩니다. 레거시 Api에서 텍스트 버퍼가 1 개 또는 2 차원 좌표계 버퍼에서 문자 위치를 식별 하기 사용할 수 있습니다.  
+# <a name="access-the-text-buffer-by-using-the-legacy-api"></a>기존 API를 사용 하 여 텍스트 버퍼에 액세스
+텍스트는 텍스트 스트림 및 파일 유지 관리 하는 일을 담당 합니다. 버퍼 수를 읽거나 쓰려면 다른 형식이 있지만 버퍼를 사용 하 여 모든 일반 통신 유니코드를 사용 하 여 수행 됩니다. 레거시 Api에서 텍스트 버퍼 1 개 또는 2 차원 좌표 시스템을 하 여 버퍼의 문자 위치를 식별 합니다.  
   
 ## <a name="one--and-two-dimension-coordinate-systems"></a>1 및 2 차원 좌표 시스템  
- 1 차원 좌표 위치 147 같은 버퍼의 첫 번째 문자에서는 문자 위치를 기반으로 합니다. 사용 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> 버퍼에서 1 차원 위치에 액세스 하는 인터페이스입니다. 2 차원 좌표계 쌍 선과 인덱스를 기반으로 합니다. 예를 들어 43 버퍼의 문자를 5 줄에 있게 됩니다 43 해당 줄의 첫 번째 문자의 오른쪽 다섯 문자. 사용 하 여 버퍼에서 2 차원 위치에 액세스 하는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> 인터페이스입니다. 둘 다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> 텍스트 버퍼 개체에 의해 구현 되는 인터페이스가 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>)를 사용 하 여 서로 액세스할 수 있습니다 `QueryInterface`합니다. 다음 다이어그램에서 이러한 오류 코드 및 다른 주요 인터페이스 보여줍니다 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>합니다.  
+ 1 차원 좌표 위치 147 같은 버퍼의 첫 번째 문자에서는 문자 위치를 기반으로 합니다. 사용 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> 버퍼에서 1 차원 위치에 액세스 하는 인터페이스입니다. 2 차원 좌표계 선과 인덱스 쌍을 기반으로 합니다. 예를 들어 43 버퍼의 문자를 5 것 줄 43 줄에서 첫 번째 문자의 오른쪽에 다섯 개의 문자입니다. 사용 하 여 버퍼에서 2 차원 위치에 액세스 하는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> 인터페이스입니다. 모두를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> 하며 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> 인터페이스 텍스트 버퍼 개체에 의해 구현 됩니다 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>)를 사용 하 여 서로 액세스할 수 있습니다 `QueryInterface`합니다. 다음 다이어그램에서 이러한 및 기타 핵심 인터페이스에서는 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>합니다.  
   
  ![텍스트 버퍼 개체](../extensibility/media/vstextbuffer.gif "vsTextBuffer")  
 텍스트 버퍼 개체  
   
- 하지만 텍스트 버퍼에서 작동 하는 좌표계 중 하나를 2 차원 좌표를 사용 하도록 최적화 되어 있습니다. 1 차원 좌표계 성능 오버 헤드를 만들 수 있습니다. 따라서 가능 하면 항상 같은 2 차원 좌표계를 사용 합니다.  
+ 좌표계 중 하나는 작동 하지만 텍스트 버퍼에서 2 차원 좌표를 사용 하도록 최적화 되었습니다. 1 차원 좌표계 성능 오버 헤드를 만들 수 있습니다. 따라서 가능한 한 2 차원 좌표 시스템을 사용 합니다.  
   
- 텍스트 버퍼의 두 번째 책임 파일 지 속성입니다. 이 작업을 수행 하기 위해 텍스트 버퍼 개체 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> 및 프로젝트 항목에 대 한 문서 데이터 개체 구성 요소와 다른 환경 구성 요소를 지 속성에 관련 된 역할을 합니다. 자세한 내용은 참조 [열기 및 프로젝트 항목 저장](../extensibility/internals/opening-and-saving-project-items.md)합니다.  
+ 텍스트 버퍼의 두 번째 책임에는 파일 지 속성입니다. 이렇게 하려면 텍스트 버퍼 개체는 다음과 같이 구현 됩니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> 및 프로젝트 항목에 대 한 문서 데이터 개체 구성 요소 및 기타 환경 구성 요소를 지 속성에 관련 된 역할을 합니다. 자세한 내용은 [열기 및 프로젝트 항목 저장](../extensibility/internals/opening-and-saving-project-items.md)합니다.  
   
 ## <a name="in-this-section"></a>단원 내용  
- [레거시 API를 사용 하 여 보기 설정 변경](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- 레거시 API를 사용 하 여 보기 설정을 변경 하는 방법에 설명 합니다.  
+ [기존 API를 사용 하 여 보기 설정 변경](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
+ 기존 API를 사용 하 여 보기 설정을 변경 하는 방법에 설명 합니다.  
   
  [전역 설정을 모니터링 하는 텍스트 관리자를 사용 하 여](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- 전역 설정을 모니터링 하는 텍스트 관리자를 사용 하는 방법에 설명...  
+ 전역 설정을 모니터링 하는 텍스트 관리자를 사용 하는 방법에 설명 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [코어 편집기 내](../extensibility/inside-the-core-editor.md)
+## <a name="see-also"></a>참고자료  
+ [핵심 편집기 내에서](../extensibility/inside-the-core-editor.md)

@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e2eb675b63d0c0e270e1a38bc005ae29b0595d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fb2c9bc8d0bcec6bc4a07c03dc18f07286cd77c1
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815498"
 ---
-# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>방법: 요약 시간 표시 막대에서 보고서 뷰 필터링
+# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>방법: 요약 타임라인에서 보고서 뷰 필터링
 요약 뷰의 시간 표시 막대 그래프에 시간 세그먼트를 지정하여 성능 보고서에 표시되는 데이터를 필터링할 수 있습니다. 보고서를 필터링할 때 지정된 시간 세그먼트만 포함하도록 프로파일링 데이터 파일이 다시 분석됩니다.  
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>요약 시간 표시 막대 그래프에서 프로파일링 보고서를 필터링하려면  

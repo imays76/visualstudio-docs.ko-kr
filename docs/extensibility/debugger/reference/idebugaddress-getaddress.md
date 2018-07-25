@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100928"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 개체 및 해당 범위 또는 컨테이너 내에서 위치를 설명 하는 구조를 반환 합니다.  

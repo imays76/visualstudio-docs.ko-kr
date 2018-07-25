@@ -1,16 +1,16 @@
 ---
 title: IActiveScriptSite | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSite interface
 ms.assetid: 4d604a11-5365-46cf-ab71-39b3dbbe9f22
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725013"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Windows 스크립트 엔진에 대 한 사이트를 만드는 호스트에서 구현 합니다. 일반적으로이 사이트 (예를 들어, ActiveX 컨트롤) 스크립트에 표시 되는 모든 개체의 컨테이너와 연결 됩니다. 일반적으로이 컨테이너는 문서 또는 보고 있는 페이지에 대응 됩니다. 예를 들어 Microsoft Internet Explorer는 표시 되 고 각 HTML 페이지에 대 한 이러한 컨테이너를 만들 합니다. 각 ActiveX 컨트롤 (또는 다른 자동화 개체)는 페이지와 자체 스크립팅 엔진에는이 컨테이너에 있는 열거 가능한 것입니다.  

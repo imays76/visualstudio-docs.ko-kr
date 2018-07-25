@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74b00a65dac65bc9b0f5f6b7a4084c1a0999f0e2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 62d15922404627b5b95f9782c46b70458fe14188
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571561"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>명령줄에서 프로파일링 도구 사용
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 명령줄 도구를 사용하면 명령 프롬프트에서 응용 프로그램을 프로파일링하고 배치 파일 및 스크립팅을 통해 프로파일링을 자동화할 수 있습니다. 또한 명령 프롬프트에서 보고서 파일을 생성할 수 있습니다. 간단한 독립 실행형 프로파일러를 사용하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]가 설치되어 있지 않은 컴퓨터에서 데이터를 수집할 수 있습니다.  
@@ -32,9 +33,9 @@ ms.lasthandoff: 05/22/2018
   
 |작업|관련 내용|  
 |----------|---------------------|  
-|**기호 위치 설정:** 함수 및 매개 변수의 이름을 표시하려면 프로파일러가 프로파일링된 이진 파일의 기호(.pdb) 파일에 액세스할 수 있어야 합니다. 이러한 파일은 분석에서 확인하려는 Microsoft 운영 체제 및 응용 프로그램의 기호 파일을 포함해야 합니다. 공용 Microsoft 기호 서버를 통해 올바른 Microsoft 이진 파일용 .pdb 파일이 있는지 확인할 수 있습니다.|-   [방법: 명령줄에서 기호 파일 위치 지정](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)|  
+|**기호 위치 설정:** 함수 및 매개 변수의 이름을 표시하려면 프로파일러가 프로파일링된 이진 파일의 기호(.*pdb*) 파일에 액세스할 수 있어야 합니다. 이러한 파일은 분석에서 확인하려는 Microsoft 운영 체제 및 응용 프로그램의 기호 파일을 포함해야 합니다. 공용 Microsoft 기호 서버를 통해 올바른 Microsoft 이진 파일용 .*pdb* 파일이 있는지 확인할 수 있습니다.|-   [방법: 명령줄에서 기호 파일 위치 지정](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)|  
 |**응용 프로그램 프로파일링:** 대상 응용 프로그램을 프로파일링하는 데 사용하는 명령줄 도구 및 옵션은 응용 프로그램의 유형, 프로파일링 방법 및 대상이 관리되는 응용 프로그램인지 아니면 기본 응용 프로그램인지에 따라 달라집니다.|-   [명령줄에서 프로파일링 방법 사용](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)|  
-|**.xml 및.csv 보고서 만들기:** 명령 프롬프트에서 프로파일링을 수행하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 인터페이스에서 볼 수 있는 데이터 파일이 만들어집니다. VSPerfReport 명령줄 도구를 사용하여 데이터의 .xml 또는 .csv(쉼표로 구분된 값) 파일을 생성할 수도 있습니다.|-   [명령줄에서 프로파일러 보고서 만들기](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md)|  
+|**.xml 및.csv 보고서 만들기:** 명령 프롬프트에서 프로파일링을 수행하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 인터페이스에서 볼 수 있는 데이터 파일이 만들어집니다. VSPerfReport 명령줄 도구를 사용하여 데이터의 .*xml* 또는 .*csv*(쉼표로 구분된 값) 파일을 생성할 수도 있습니다.|-   [명령줄에서 프로파일러 보고서 만들기](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md)|  
 |**Visual Studio가 없는 컴퓨터에서 코드 프로파일링:** 프로파일링 도구의 독립 실행형 프로파일러를 사용하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]가 설치되어 있지 않은 컴퓨터에서 응용 프로그램의 데이터를 수집할 수 있습니다.|-   [방법: 독립 실행형 프로파일러 설치](../profiling/how-to-install-the-stand-alone-profiler.md)|  
   
 ## <a name="reference"></a>참조  

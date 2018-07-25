@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919666"
 ---
 # <a name="mobility-warnings"></a>이동성 경고
 이동성 경고 효율적인 전원 사용을 지원 합니다.

@@ -1,5 +1,5 @@
 ---
-title: 중단점을 삭제 하면 | Microsoft Docs
+title: 중단점 삭제 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,20 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bff63c243590db91ea97055943b89d73ea00308
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc85104ca02922c1a28152d75550a821598d7b1e
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203867"
 ---
 # <a name="deleting-a-breakpoint"></a>중단점 삭제
-다음 프로세스 보류 중단점을 삭제할 때 설명.  
+다음은 보류 중인 중단점을 삭제 하는 경우 프로세스.  
   
 ## <a name="deletion-process"></a>삭제 프로세스  
- 세션 디버그 관리자 (SDM) 호출 하면 중지는 [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) 여기에서 바인딩된 보류 중인 중단점 및 바인딩된 모든 중단점을 제거 하는 메서드입니다.  
+ 세션 디버그 관리자 (SDM) 호출을 [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) 보류 중인 중단점 및 바인딩된 모든 중단점을 제거 하는 방법에서 바인딩됩니다.  
   
 > [!NOTE]
 >  호출 하 여 단일 바인딩된 중단점을 삭제할 수도 있습니다 [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

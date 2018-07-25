@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944676"
 ---
 # <a name="code-analysis-project-designer"></a>프로젝트 디자이너, 코드 분석
 코드에서 실행할 수 있는 코드 분석 도구가 들어 있습니다. 이 도구는 Microsoft .NET Framework 디자인 지침에 명시된 프로그래밍 및 디자인 규칙의 위반과 같은 어셈블리 관련 정보를 보고합니다.

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147950"
 ---
 # <a name="vsix-color-editor"></a>VSIX 색 편집기
 Visual Studio 확장 색 편집기 도구를 만들고 Visual Studio에 대 한 사용자 지정 색을 편집할 수 있습니다. 또한 도구는 코드에서 색을 사용할 수 있도록 테마 리소스 키를 생성 해야 합니다. 이 도구는 Visual Studio 확장을 지 원하는 테마 설정에 대 한 색을 만드는 데 유용 합니다. 이 도구는.pkgdef 및.xml 파일을 열 수 있습니다. Visual Studio 테마 (.vstheme 파일)를.xml으로 파일 확장명을 변경 하 여 Visual Studio 확장 색 편집기와 사용할 수 있습니다. 또한 현재.xml 파일로.vstheme 파일을 가져올 수 있습니다.  
@@ -55,7 +56,7 @@ Visual Studio 확장 색 편집기 도구를 만들고 Visual Studio에 대 한 
   
  **1 단계: 새 색 토큰에 대 한 토큰 이름이 및 범주를 확인 합니다.**  
   
- VSColor에 대 한 스키마 기본 명명 **[Category] [UI 유형] [상태]**합니다. 중복 되는 대로 VSColor 이름에 "color" 이라는 단어를 사용 하지 마십시오.  
+ VSColor에 대 한 스키마 기본 명명 **[Category] [UI 유형] [상태]** 합니다. 중복 되는 대로 VSColor 이름에 "color" 이라는 단어를 사용 하지 마십시오.  
   
  범주 이름 제공 논리 그룹 및 좁은 최대한으로 정의 해야 합니다. 예를 들어 단일 도구 창의 이름, 범주 이름을 변경할 수 있지만 전체 비즈니스 단위 또는 프로젝트 팀 이름이 아닙니다. 범주에 항목을 그룹화 이름이 같은 색상 사이의 혼동을 방지할 수 있습니다.  
   

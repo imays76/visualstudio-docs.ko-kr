@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128706"
 ---
 # <a name="detecting-system-requirements"></a>시스템 요구 사항 검색
 VSPackage는 Visual Studio를 설치 하지 않으면 작동 하지 않습니다. Microsoft Windows Installer를 사용 하 여 VSPackage의 설치를 관리 하는 경우 Visual Studio 설치 되어 있는지 여부를 검색 하는 설치 관리자를 구성할 수 있습니다. 예를 들어 다른 요구 사항에 대 한 시스템을 확인 하 여, 특정 버전의 Windows 또는 특정 양의 RAM 구성할 수도 있습니다.  

@@ -14,19 +14,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255995"
 ---
 # <a name="performance-report-overview"></a>성능 보고서 개요
 Visual Studio Team System Development Edition IDE(통합 개발 환경)의 **성능 보고서** 창에서 성능 세션의 프로파일링 데이터를 볼 수 있습니다. 프로파일링 데이터는 .vsps 및 .vsp 파일에 저장됩니다. 보고서 뷰 창에서는 응용 프로그램 성능 문제를 확인하고 분석할 수 있습니다.  
   
 > [!CAUTION]
->  프로파일링 데이터 파일에는 컴퓨터 이름, 운영 체제 버전, 파일 경로, 메모리 정보, 기타 컴퓨터 설정 정보 등의 중요한 정보가 포함됩니다. 따라서 기본 .vsp 형식을 사용할 때나 .csv 또는 .xml 파일로 내보낼 때 모두 데이터 배포를 엄격하게 제어해야 합니다.  
+>  프로파일링 데이터 파일에는 컴퓨터 이름, 운영 체제 버전, 파일 경로, 메모리 정보, 기타 컴퓨터 설정 정보 등의 중요한 정보가 포함됩니다. 따라서 기본 .*vsp* 형식을 사용할 때나 .*csv* 또는 .*xml* 파일로 내보낼 때 모두 데이터 배포를 엄격하게 제어해야 합니다.  
 >   
->  성능 세션의 일부분으로 이벤트 추적 데이터를 수집하는 경우에는 이벤트 추적 로그(.etl) 파일에 추가 정보가 표시될 수 있습니다. 이 정보에는 사용자의 도메인 및 사용자 이름이 포함되므로 로그 파일 배포 역시 엄격하게 제어해야 합니다.  
+>  성능 세션의 일부분으로 이벤트 추적 데이터를 수집하는 경우에는 이벤트 추적 로그(.*etl*) 파일에 추가 정보가 표시될 수 있습니다. 이 정보에는 사용자의 도메인 및 사용자 이름이 포함되므로 로그 파일 배포 역시 엄격하게 제어해야 합니다.  
   
 ## <a name="performance-report-window"></a>성능 보고서 창  
  성능 보고서 창은 성능 데이터를 확인/관리/필터링하는 데 사용되며 사용자 지정 가능한 쿼리 컨트롤을 포함하는 도구 창입니다.  

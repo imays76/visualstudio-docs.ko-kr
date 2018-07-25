@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19c31fdc648d59879e03d97862f2b9518720a3eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76b2f11e53f8fca5fdf277ce982bcb767d7c8828
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234607"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 이 스레드를 설명 하는 속성을 가져옵니다.  
@@ -42,19 +43,19 @@ int GetThreadProperties (
   
 #### <a name="parameters"></a>매개 변수  
  `dwFields`  
- [in] 플래그의 조합을 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 의 필드를 결정 하는 열거형 `ptp` 를 채워야 합니다.  
+ [in] 플래그의 조합 된 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 의 필드를 결정 하는 열거형 `ptp` 작성 해야 할 합니다.  
   
  `ptp`  
- [out에서] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조체 스레드 속성을 사용 하 여 입력은입니다.  
+ [out에서] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조 스레드의 속성을 사용 하 여 입력 됩니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드에서 반환 되는 정보에 일반적으로 표시 되는 **스레드** 디버그 창.  
+ 이 메서드에서 반환 되는 정보는 일반적으로에 표시 된 **스레드** 디버그 창입니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` 구현 하는 개체는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 인터페이스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` 를 구현 하는 개체를 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,  

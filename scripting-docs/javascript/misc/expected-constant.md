@@ -1,13 +1,13 @@
 ---
-title: "상수가 필요 합니다. | Microsoft Docs"
-ms.custom: 
+title: 상수가 필요 합니다. | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1031
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632943"
 ---
 # <a name="expected-constant"></a>상수가 필요합니다.
 조건부 컴파일 테스트 문에 (비 조건부 컴파일) 변수를 사용 하려고 했습니다. 조건부 컴파일 테스트 문은 상수 여야 합니다.  

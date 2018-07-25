@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900583"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: 참조로 참조 형식을 전달하지 않습니다.
 |||

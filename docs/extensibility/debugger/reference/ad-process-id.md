@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101461"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 프로세스 ID는 시스템 ID 또는 GUID 일 수를 지정 합니다.  

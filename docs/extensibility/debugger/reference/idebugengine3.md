@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114419"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 하나 이상의 모듈을 디버깅 하는 제어 하는 단일 디버그 엔진을 (DE)을 나타냅니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141761"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 유틸리티
 이 섹션의 항목 VSSDK와 함께 제공 되는 도구에 설명 합니다.  

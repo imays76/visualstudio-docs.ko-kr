@@ -38,6 +38,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33106754"
 ---
 # <a name="find-and-replace-text"></a>텍스트 찾기 및 바꾸기
 

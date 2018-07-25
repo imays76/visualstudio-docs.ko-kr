@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142084"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>연습: 텍스트 보기 사용자 지정
 해당 편집기 형식 맵에서 다음과 같은 속성을 수정 하 여 텍스트 보기를 사용자 지정할 수 있습니다.  

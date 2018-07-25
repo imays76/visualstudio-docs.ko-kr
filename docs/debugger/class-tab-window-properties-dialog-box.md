@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458907"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>창 속성 대화 상자, 클래스 탭
 사용 하 여는 **클래스** 탭을 선택된 된 창 클래스에 대 한 정보가 표시 됩니다. 표시 하는 [창 속성 대화 상자](../debugger/window-properties-dialog-box.md), 포커스를 이동 하는 [창 뷰](../debugger/windows-view.md) 창. 트리에서 창 노드를 선택한 후 선택 **속성** 에서 **보기** 메뉴.  

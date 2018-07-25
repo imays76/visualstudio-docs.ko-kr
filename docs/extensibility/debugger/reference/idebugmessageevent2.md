@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116177"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 이 인터페이스는 메시지를 보내는 사용자의 응답을 필요로 하는 Visual studio 디버그 엔진 (DE)에 의해 사용 됩니다.  

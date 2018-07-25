@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136434"
 ---
 # <a name="menus-element"></a>메뉴 요소
 모든 메뉴와 VSPackage를 구현 하는 도구 모음을 정의 합니다.  

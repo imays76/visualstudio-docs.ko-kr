@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c93c2d77f62fe22c682240b879b85af8040974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752413"
 ---
 # <a name="findcommand-box"></a>찾기/명령 상자
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 **찾기/명령** 상자는 입력된 마지막 20개 항목을 유지하고 드롭다운 목록에 표시합니다. **화살표 키**를 선택하여 목록을 이동할 수 있습니다.
 
-![찾기&#47;명령 상자](../ide/media/findcommandbox.png "FindCommandBox")
+![찾기&#47;명령 상자](../ide/media/findcommandbox.png)
 
 ## <a name="searching-for-text"></a>텍스트 검색
 

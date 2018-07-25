@@ -1,5 +1,5 @@
 ---
-title: 관리 코드에서 COM 상수 | Microsoft Docs
+title: 관리 코드의 COM 상수 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,16 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a8c6cbe2b3a2b5fa559a74dd165b7a729b814d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8a273c5e53f9f7086e8dc96bcb4c36e0b0223d0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231538"
 ---
-# <a name="com-constants-in-managed-code"></a>관리 코드에서 COM 상수
-관리 되는 패키지 프레임 워크 (MPF)를 사용 하면 일부 표준 COM 상수 관리 되는 코드에서 사용할 수 있습니다. 이러한 상수는 참조할 수 있도록 아래 나와 있습니다.  
+# <a name="com-constants-in-managed-code"></a>관리 코드의 COM 상수
+관리 패키지 프레임 워크 (MPF) 관리 코드에 사용 가능한 몇 가지 표준 COM 상수를 만듭니다. 이러한 상수는 참조용 아래 나열 됩니다.  
   
-## <a name="boolean-hresult-values"></a>HRESULT 부울 값  
+## <a name="boolean-hresult-values"></a>부울 HRESULT 값  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  
@@ -128,5 +129,5 @@ ms.lasthandoff: 04/16/2018
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [오류 처리 및 반환 값](../extensibility/error-handling-and-return-values.md)

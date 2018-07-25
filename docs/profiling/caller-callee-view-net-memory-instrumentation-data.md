@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265503"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터
 계측 방법을 사용하여 수집한 .NET 메모리 프로파일링 데이터의 호출자/호출 수신자 뷰는 선택한 함수와 선택한 해당 함수의 부모 및 자식 함수에 대한 할당 및 타이밍 데이터를 표시합니다. 호출자/호출 수신자 뷰에는 세 개의 표가 포함되어 있습니다.  

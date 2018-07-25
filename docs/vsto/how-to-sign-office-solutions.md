@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262193"
 ---
 # <a name="how-to-sign-office-solutions"></a>방법: Office 솔루션에 서명
   솔루션에 서명할 인증서를 사용 하 여 증명 정보로 솔루션에 신뢰를 부여할 수 있습니다. 동일한 인증서를 사용 하 여 여러 솔루션에 대 한 및 추가 보안 정책 업데이트가 없는 모든 솔루션 신뢰 됩니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927535"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>.NET 컴파일러 플랫폼 분석기를 설치 합니다.
 

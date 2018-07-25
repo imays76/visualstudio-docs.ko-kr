@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31111936"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 현재 컨텍스트에 지정된 된 값을 추가 하 고 새 컨텍스트를 반환 합니다.  

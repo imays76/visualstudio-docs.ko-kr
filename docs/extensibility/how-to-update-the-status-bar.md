@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134498"
 ---
 # <a name="how-to-update-the-status-bar"></a>방법: 상태 표시줄 업데이트
 **상태 표시줄** 하나 이상의 상태 텍스트 줄 또는 표시기를 포함 하는 많은 응용 프로그램 창의 맨 아래에 있는 컨트롤 막대입니다.  

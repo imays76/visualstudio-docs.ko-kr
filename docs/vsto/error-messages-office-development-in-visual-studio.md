@@ -20,6 +20,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263279"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>오류 메시지 (Visual Studio에서 Office 개발)
   각 오류 메시지 항목은 오류의 가능한 원인 및 잠재적인 해결책 또는 문제를 해결하기 위한 해결 방법에 대한 정보를 제공합니다.  

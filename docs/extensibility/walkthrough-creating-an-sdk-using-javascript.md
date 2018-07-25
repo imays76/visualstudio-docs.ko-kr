@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144218"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>연습: JavaScript를 사용 하 여 SDK 만들기
 이 연습에서는 JavaScript를 사용 하 여 간단한 수식을 SDK는 Visual Studio 확장 (VSIX)으로 만드는 방법에 설명 합니다.  이 연습에서는 이러한 부분으로 구분 됩니다.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
   
-2.  템플릿 범주 목록에서 아래 **Visual C#**선택, **확장성**, 선택한 후는 **VSIX 프로젝트** 서식 파일입니다.  
+2.  템플릿 범주 목록에서 아래 **Visual C#** 선택, **확장성**, 선택한 후는 **VSIX 프로젝트** 서식 파일입니다.  
   
 3.  에 **이름** 텍스트 상자를 지정 `SimpleMathVSIX` 선택 하 고는 **확인** 단추입니다.  
   

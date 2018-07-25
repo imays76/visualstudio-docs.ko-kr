@@ -1,18 +1,18 @@
 ---
-title: "JsDefineProperty 함수 | Microsoft Docs"
-ms.custom: 
+title: JsDefineProperty 함수 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsDefineProperty
 helpviewer_keywords:
 - JsDefineProperty function
 ms.assetid: b2cf48d6-eb40-457c-aa8b-b16a50dc5d6a
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567853"
 ---
 # <a name="jsdefineproperty-function"></a>JsDefineProperty 함수
 속성 설명자를 기반으로 새 개체의 속성을 정의합니다.  

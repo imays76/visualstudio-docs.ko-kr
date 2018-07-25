@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134462"
 ---
 # <a name="command-placement-guidelines"></a>명령 배치 지침
 Visual Studio 통합된 개발 환경 (IDE)에서 명령을 위치 지정에 대 한 유용한 명령 집합의 크기에 따라 달라 집니다. 명령 정의 되 고.vsct 파일의 정보에 따라 배치 됩니다.  

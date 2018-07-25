@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129445"
 ---
 # <a name="model-for-source-control-packages"></a>소스 제어 패키지에 대 한 모델
 다음과 같은 모델의 소스 제어 구현 예를 나타냅니다. 모델에 구현 해야 하는 인터페이스 및 환경 서비스 호출 해야 하는 것이 표시 됩니다. 모든 서비스와 마찬가지로 실제로 서비스를 통해 얻을 특정 인터페이스의 메서드를 호출 합니다. 클래스의 이름은 쉽게 소스 제어 수행 방법을 볼 수 있도록 식별 됩니다.  

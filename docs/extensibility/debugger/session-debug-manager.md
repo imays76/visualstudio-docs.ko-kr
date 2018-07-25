@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126235"
 ---
 # <a name="session-debug-manager"></a>세션 디버그 관리자
 세션 디버그 관리자 (SDM)는 개수에 관계 없이 원하는 수의 여러 컴퓨터에서 여러 프로세스에서 프로그램을 디버깅 디버그 엔진 (DE)을 관리 합니다. 멀티플렉서 디버그 엔진에 뿐은 SDM IDE에 디버그 세션의 통합된 뷰를 제공 합니다.  

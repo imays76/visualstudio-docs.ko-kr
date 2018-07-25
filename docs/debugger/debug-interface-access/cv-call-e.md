@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466385"
 ---
 # <a name="cvcalle"></a>CV_call_e
 함수에 대 한 호출 규칙을 지정합니다.  

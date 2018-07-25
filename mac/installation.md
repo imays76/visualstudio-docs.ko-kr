@@ -6,11 +6,12 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280496"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Mac용 Visual Studio 설정 및 설치
 
@@ -26,7 +27,7 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
 ## <a name="install"></a>설치
 
-1. [https://www.visualstudio.com/](https://www.visualstudio.com/)에서 Mac용 Visual Studio 다운로드
+1. [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)에서 Mac용 Visual Studio 다운로드
 
 2. 설치 관리자 패키지가 다운로드되면 **VisualStudioInstaller.dmg** 파일을 클릭하여 설치 관리자를 탑재하고 다음 이미지와 같이 로고를 두 번 클릭하여 실행합니다.
 
@@ -83,7 +84,7 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
   ![Visual Studio를 엽니다.](media/installer-image11.png)
 
 > [!NOTE]
-원래 설치 중 #6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 [설치 관리자](https://www.visualstudio.com/vs/)를 다시 실행해야 합니다.
+원래 설치 중 #6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 [설치 관리자](https://visualstudio.microsoft.com/vs/)를 다시 실행해야 합니다.
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치

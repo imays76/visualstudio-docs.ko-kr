@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927089"
 ---
 # <a name="naming-warnings"></a>이름 지정 경고
 이름 지정 경고 준수의 명명 규칙을 지 원하는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 하기도 합니다.

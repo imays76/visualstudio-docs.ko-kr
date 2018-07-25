@@ -1,5 +1,5 @@
 ---
-title: 첨부 파일 시작 기반 | Microsoft Docs
+title: 실행 기반 첨부 파일 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,26 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 892518cc92286f9415e39c96b6ed2afa8eb0d792
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 518a3f804298df6c0af98a6e5d2a6d851b645aee
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231706"
 ---
-# <a name="launch-based-attachment"></a>시작 기반 첨부 파일
-프로그램으로 시작 기반 첨부 파일은 자동입니다. 프로그램을 호스트 하는 프로세스는 SDM에 의해 시작 되 면 시작 기반 첨부 파일 수동 첨부 메서드와 비슷한 경로 따릅니다. 자세한 내용은 참조 [은 프로그램에 연결할](../../extensibility/debugger/attaching-to-the-program.md)합니다.  
+# <a name="launch-based-attachment"></a>실행 기반 첨부 파일
+프로그램 실행 기반 첨부 파일은 자동입니다. 프로그램을 호스트 하는 프로세스는 SDM에서 시작 되 면 실행 기반 첨부 파일의 수동 첨부 방법을 비슷한 경로 따릅니다. 정보를 참조 하세요 [프로그램을 연결할](../../extensibility/debugger/attaching-to-the-program.md)합니다.  
   
 ## <a name="the-attaching-process"></a>연결 프로세스  
- 주요 차이점은 다음 이벤트의 순서는 **연결** 다음과 같이 호출 합니다.  
+ 주요 차이점은 이벤트의 시퀀스를 **연결** 를 다음과 같이 호출 합니다.  
   
-1.  보내기는 **IDebugEngineCreateEvent2** 이벤트 개체는 SDM입니다. 자세한 내용은 참조 [이벤트를 보내는](../../extensibility/debugger/sending-events.md)합니다.  
+1.  보내기는 **IDebugEngineCreateEvent2** SDM 이벤트 개체입니다. 자세한 내용은 참조 하세요 [이벤트를 보낼](../../extensibility/debugger/sending-events.md)합니다.  
   
-2.  호출는 `IDebugProgram2::GetProgramId` 에서 메서드는 **IDebugProgram2** 인터페이스에 전달 되는 **연결** 메서드.  
+2.  호출를 `IDebugProgram2::GetProgramId` 메서드를 **IDebugProgram2** 인터페이스에 전달 합니다 **연결** 메서드.  
   
-3.  보내기는 **IDebugProgramCreateEvent2** 은 SDM 알리는 이벤트 개체는 로컬 **IDebugProgram2** 는 DE에 프로그램을 나타내는 개체를 만든 합니다.  
+3.  보내기는 **IDebugProgramCreateEvent2** SDM을 알리는 이벤트 개체는 로컬 **IDebugProgram2** 는 DE에 프로그램을 나타내는 개체를 만든 합니다.  
   
-4.  보내기는 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 이벤트 개체에 알리는 SDM 새 스레드가 시작 된 프로세스에 대해 생성 됩니다.  
+4.  보내기는 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 프로세스 시작에 대해 만든 새 스레드는 SDM을 알리는 이벤트 개체입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [필요한 이벤트 보내기](../../extensibility/debugger/sending-the-required-events.md)   
- [디버그할 프로그램을 사용하도록 설정](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+ [디버깅할 프로그램 사용 설정](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

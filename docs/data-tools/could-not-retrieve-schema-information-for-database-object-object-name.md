@@ -1,5 +1,5 @@
 ---
-title: 데이터베이스 개체에 대 한 스키마 정보를 검색할 수 없습니다.
+title: 데이터베이스 개체의 스키마 정보를 검색할 수 없습니다.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
@@ -10,15 +10,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30536dae7e0da76f0252240b98f1ed5af5f28916
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758285"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>데이터베이스 개체에 대 한 스키마 정보를 검색할 수 \<개체 이름 >
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>데이터베이스 개체에 대 한 스키마 정보를 가져오지 못했습니다 \<개체 이름 >
 
-경우에 개체에 일반적으로이 메시지가 표시 **서버 탐색기/데이터베이스 탐색기** 클립보드에 복사, 데이터베이스에서 삭제 하 고 디자이너에 붙여넣은 다음 됩니다. 즉, 데이터베이스 개체가 더 이상 존재하지 않으므로 이 메시지가 나타납니다.
+경우에 개체에 일반적으로이 메시지가 나타납니다 **서버 탐색기** 또는 **데이터베이스 탐색기** 클립보드에 복사, 삭제, 데이터베이스에서 되어 디자이너에 붙여넣은 후 합니다. 즉, 데이터베이스 개체가 더 이상 존재하지 않으므로 이 메시지가 나타납니다.
 
 이 오류를 해결 하려면 선택 **확인** 대화 상자를 닫습니다.
 

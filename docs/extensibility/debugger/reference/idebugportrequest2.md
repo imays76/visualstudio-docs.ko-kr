@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114906"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 이 인터페이스는 포트에 설명 합니다. 이 설명은 포트를 추가할 포트 공급 업체에 사용 됩니다.  

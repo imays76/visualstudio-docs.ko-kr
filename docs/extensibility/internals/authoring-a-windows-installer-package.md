@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127937"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Windows Installer 패키지를 작성합니다.
 데이터 드라이브는 Windows Installer 모델. 레지스트리 항목을 쓰고 파일을 복사 하는 절차적 스크립트를 작성 하는 대신 예를 들어 작성 파일 및 레지스트리 데이터를 포함 하는 데이터베이스 테이블의 행과 열입니다.  

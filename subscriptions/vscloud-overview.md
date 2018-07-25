@@ -9,22 +9,22 @@ description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73e8b5927d9d02fb8ebb1414a735c67604f750d9
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302833"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입
 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 Visual Studio Professional 및 Visual Studio Enterprise [구독](https://www.visualstudio.com/subscriptions/)을 구입할 수 있습니다. 이들은 이른 바 클라우드 구독입니다.
+[Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 Visual Studio Professional 및 Visual Studio Enterprise [구독](https://visualstudio.microsoft.com/subscriptions/)을 구입할 수 있습니다. 이를 클라우드 구독이라고 합니다.
 
-[클라우드 구독 혜택 및 가격 비교](https://www.visualstudio.com/vs/pricing/)
+[클라우드 구독 혜택 및 가격 비교](https://visualstudio.microsoft.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-*   구매를 청구하려면 [Azure 구독](https://azure.microsoft.com/pricing/purchase-options/)이 필요합니다.
-Visual Studio Marketplace에서 첫 번째 구매 전에 또는 첫 번째 구매를 진행하면서 [등록](https://portal.azure.com)할 수 있습니다.
+*   구매를 청구하려면 [Azure 구독](https://azure.microsoft.com/pricing/purchase-options/)이 필요합니다. Visual Studio Marketplace에서 첫 번째 구매 전에 또는 첫 번째 구매를 진행하면서 [등록](https://portal.azure.com)할 수 있습니다.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>클라우드 구독 구입 방법
 
@@ -56,16 +56,13 @@ Visual Studio Marketplace에서 첫 번째 구매 전에 또는 첫 번째 구�
 
     <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>구매한 클라우드 구독 갱신 취소
-
+## <a name="manage-subscriptions"></a>구매한 클라우드 구독 갱신 취소
 
 *   구매한 구독의 수를 변경하려면 다음을 수행합니다.
 
     <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-*   이러한 구독을 취소하려면 구독 수를 0으로 줄입니다.
-다음 청구 기간의 시작 시(월별 클라우드 구독의 경우 첫 번째 다음 달 및 연간 클라우드 구독의 경우 12개월 후)에 갱신되지 않습니다.
+*   이러한 구독을 취소하려면 구독 수를 0으로 줄입니다. 다음 청구 기간의 시작 시(월별 클라우드 구독의 경우 첫 번째 다음 달 및 연간 클라우드 구독의 경우 12개월 후)에 갱신되지 않습니다.
 
 ## <a name="buy-cloud-subscriptions-now"></a>지금 클라우드 구독 구입
 
@@ -77,6 +74,6 @@ Visual Studio Marketplace에서 첫 번째 구매 전에 또는 첫 번째 구�
 ## <a name="related-resources"></a>관련 참고 자료
 
 * [Visual Studio 구독 관리 포털](https://manage.visualstudio.com/)
-* [Visual Studio 구독 지원](https://www.visualstudio.com/vs/support/)
+* [Visual Studio 구독 지원](https://visualstudio.microsoft.com/vs/support/)
 * [Visual Studio 클라우드 구독 청구 FAQ](vscloud-billing-faq.md)
 * [CSP에 대한 Visual Studio 클라우드 구독 구매](vscloud-csp.md)

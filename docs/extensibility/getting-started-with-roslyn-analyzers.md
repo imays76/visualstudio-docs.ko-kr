@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126811"
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Roslyn 분석기를 시작 하기
 

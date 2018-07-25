@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263967"
 ---
 # <a name="customize-performance-tools-report-views"></a>성능 도구 보고서 뷰 사용자 지정
 이 섹션에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 통해 생성되는 보고서를 사용자 지정하는 방법을 설명합니다.  

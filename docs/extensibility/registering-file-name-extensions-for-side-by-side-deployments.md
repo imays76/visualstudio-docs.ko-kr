@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136312"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>병렬 배포를 위한 파일 이름 확장명을 등록 하는 중입니다.
 병렬 환경에 배포 된, Vspackage에 대 한 올바른 버전의 파일 연관 시킬 파일 이름 확장명을 등록 해야 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 프로젝트를 열고 프로젝트에 적절 한 버전의 파일 항목을 사용 하면 등록 버전별 파일 이름 확장명을 사용 하지 않는 한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  

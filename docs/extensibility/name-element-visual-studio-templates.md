@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136525"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 요소(Visual Studio 템플릿)
 에 표시 된 대로 서식 파일의 이름을 지정는 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.  

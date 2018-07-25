@@ -1,5 +1,5 @@
 ---
-title: 통합 개발 환경 오류를 해결하기 위한 리소스
+title: 오류 문제 해결을 위한 리소스
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -95,21 +95,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b0bd982e153e7213f36574b44f9060006ebc99
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 7ea3f5575f5ba09a4d3f4a69a6ed800bb703b732
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302628"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>통합 개발 환경 오류를 해결하기 위한 리소스
 
-일부 오류 메시지에만 특정 관련된 도움말 항목이 포함됩니다. 오류 메시지의 정보가 문제를 해결하는 데 도움이 되지 않는 경우 기술 자료 문서, 개발자 커뮤니티 또는 제품 지원과 같은 다른 리소스를 참조할 수 있습니다.
+일부 오류 메시지에만 특정 관련된 도움말 항목이 포함됩니다. 오류 메시지의 정보가 문제를 해결하는 데 도움이 되지 않는 경우 기술 자료 문서, 포럼 또는 제품 지원과 같은 다른 리소스를 참조할 수 있습니다.
 
 ## <a name="knowledge-base-articles"></a>기술 자료 문서
 
 KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색할 수 있습니다. 일부 문제에는 해당하는 KB 문서가 없지만 많은 고객에게 발생한 오류는 일반적으로 문서화되어 있습니다. [Microsoft 지원](https://support.microsoft.com) 웹 사이트에서 기술 자료 문서에 액세스할 수 있습니다.
 
-## <a name="the-developer-community"></a>개발자 커뮤니티
+## <a name="developer-forums"></a>개발자 포럼
 
 포럼을 통해 다른 개발자 및 Microsoft 직원과 상호 작용할 수 있습니다. 해결 방법을 찾을 수 없는 오류가 발생한 경우에는 문제에 대한 질문을 포럼에 게시할 수 있습니다. 뉴스 그룹을 검색하여 다른 사용자가 같은 문제를 게시했는지 알아볼 수 있습니다.
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475105"
 ---
 # <a name="spy-views"></a>Spy++ 뷰
 Spy + + 트리 뷰 창, 메시지, 프로세스 및 사용할 수 있는 스레드를 컴퓨터에 표시 됩니다.  

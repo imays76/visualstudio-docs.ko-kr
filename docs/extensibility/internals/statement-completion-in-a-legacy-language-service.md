@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131329"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>레거시 언어 서비스에서 문 완성
 문 완성은 언어 서비스는 기준인 언어 키워드 또는 코어 편집기에 입력 시작 요소를 완료 하는 사용자가 사용 하면 프로세스입니다. 이 항목에서는 문 완성이 작동 방식 및 언어 서비스에서 구현 하는 방법을 설명 합니다.  

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815024"
 ---
 # <a name="test-generation"></a>테스트 생성
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 다음은 예제 테스트 구조입니다.
 
-```
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -60,7 +61,7 @@ PUT(*매개 변수가 있는 단위 테스트*)는 매개 변수를 사용하는
 
 PUT는 MSTest(또는 NUnit, xUnit)와 비슷한 방식으로 [PexMethod](attribute-glossary.md#pexmethod) 사용자 지정 특성을 사용하여 정의됩니다. PUT는 [PexClass](attribute-glossary.md#pexclass) 태그가 지정된 클래스에서 논리적으로 그룹화되는 인스턴스 메서드입니다. 다음 예제에서는 **MyPexTest** 클래스에 저장된 간단한 PUT를 보여 줍니다.
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -72,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 여기서 **ReplaceFirstChar**은 문자열의 첫 번째 문제를 바꾸는 메서드입니다.
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -84,7 +85,7 @@ class StringHelper {
 
 이 테스트에서 IntelliTest는 테스트된 코드의 많은 실행 경로를 검사하는 PUT에 대한 [입력을 자동으로 생성](input-generation.md)할 수 있습니다. 다른 실행 경로를 검사하는 각 입력은 단위 테스트로 “직렬화”됩니다.
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -101,7 +102,7 @@ void ReplaceFirstChar10() {
 
 매개 변수가 있는 단위 테스트는 제네릭 메서드일 수 있습니다. 이 경우 사용자는 [PexGenericArguments](attribute-glossary.md#pexgenericarguments)를 사용하여 메서드를 인스턴스화하는 데 사용되는 형식을 지정해야 합니다.
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -119,7 +120,7 @@ IntelliTest는 예외를 예상된 예외 및 예기치 않은 예외로 심사�
 
 예상된 예외는 ***ExpectedException(typeof(* xxx**))와 같은 적절한 주석과 함께 부정적인 테스트 사례를 생성하지만, 예기치 않은 예외는 실패한 테스트 사례를 생성합니다.
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -136,7 +137,7 @@ void SomeTest() {...}
 
 IntelliTest는 볼 수 있는 internal 형식을 “테스트”할 수 있습니다. IntelliTest가 형식을 볼 수 있도록 Visual Studio IntelliTest 마법사를 통해 다음 특성이 제품 또는 테스트 프로젝트에 추가됩니다.
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -147,7 +148,7 @@ IntelliTest는 볼 수 있는 internal 형식을 “테스트”할 수 있습�
 
 어설션은 일반 단위 테스트 프레임워크에서 잘 알려진 개념이므로 IntelliTest는 각 지원되는 프레임워크에서 제공된 기본 제공 **Assert** 클래스를 이미 “이해”합니다. 그러나 대부분의 프레임워크는 **Assume** 클래스를 제공하지 않습니다. 이 경우 IntelliTest는 [PexAssume](static-helper-classes.md#pexassume) 클래스를 제공합니다. 기존 테스트 프레임워크를 사용하지 않을 경우에도 IntelliTest에는 [PexAssert](static-helper-classes.md#pexassert) 클래스가 있습니다.
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -159,7 +160,7 @@ public void Test1(object o) {
 
 특히 null이 아닌 가정은 사용자 지정 특성으로 인코드할 수 있습니다.
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -205,7 +206,7 @@ IntelliTest에서 [매개 변수가 있는 단위 테스트](#parameterized-unit
 
 **예제**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 

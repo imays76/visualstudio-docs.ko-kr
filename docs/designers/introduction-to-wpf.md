@@ -13,11 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bf6ba014d594dd6f5b26420ffa6ee7e61a79a1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978351"
 ---
 # <a name="introduction-to-wpf"></a>WPF 소개
 
@@ -37,7 +38,7 @@ WPF에는 속성 및 이벤트를 향상시키는 [종속성 속성](/dotnet/fra
 
 ## <a name="markup-and-code-behind"></a>태그 및 코드 숨김
 
-WPF를 사용하면 ASP.NET 개발자에게 익숙한 환경인 *태그* 및 *코드 숨김*둘 다를 통해 응용 프로그램을 개발할 수 있습니다. 일반적으로 XAML 태그를 사용하여 응용 프로그램의 모양을 구현하고 관리되는 프로그래밍 언어(코드 숨김)를 사용하여 해당 동작을 구현합니다. 모양 및 동작의 이러한 분리는 다음과 같은 이점이 있습니다.
+WPF를 사용하면 ASP.NET 개발자에게 익숙한 환경인 *태그* 및 *코드 숨김* 둘 다를 통해 응용 프로그램을 개발할 수 있습니다. 일반적으로 XAML 태그를 사용하여 응용 프로그램의 모양을 구현하고 관리되는 프로그래밍 언어(코드 숨김)를 사용하여 해당 동작을 구현합니다. 모양 및 동작의 이러한 분리는 다음과 같은 이점이 있습니다.
 
 - 모양 관련 태그가 동작 관련 코드와 밀접하게 결합되지 않으므로 개발 및 유지 관리 비용이 줄어듭니다.
 
@@ -47,7 +48,7 @@ WPF를 사용하면 ASP.NET 개발자에게 익숙한 환경인 *태그* 및 *�
 
 ### <a name="markup"></a>태그
 
-XAML은 선언적으로 응용 프로그램의 모양을 구현하는 데 사용되는 XML 기반 태그 언어입니다. 일반적으로 창, 대화 상자, 페이지 및 사용자 정의 컨트롤을 만들고 컨트롤, 도형 및 그래픽으로 채우는 데 사용됩니다.
+XAML은 선언적으로 응용 프로그램의 모양을 구현하는 XML 기반 태그 언어입니다. 일반적으로 창, 대화 상자, 페이지 및 사용자 정의 컨트롤을 만들고 컨트롤, 도형 및 그래픽으로 채우는 데 사용됩니다.
 
  다음 예제에서는 XAML을 사용하여 단일 단추가 포함된 창의 모양을 구현합니다.
 
@@ -67,7 +68,7 @@ XAML은 선언적으로 응용 프로그램의 모양을 구현하는 데 사용
 
  다음 그림은 이전 예제에서 XAML로 정의된 UI(사용자 인터페이스)를 보여 줍니다.
 
- ![단추가 있는 창](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")
+ ![단추가 있는 창](../designers/media/wpfintrofigure10.png)
 
  XAML은 XML 기반이기 때문에 XAML로 작성한 UI는 [요소 트리](/dotnet/framework/wpf/advanced/trees-in-wpf)라고 하는 중첩된 요소 계층 구조로 어셈블됩니다. 요소 트리는 UI를 만들고 관리하는 논리적이고 직관적인 방법을 제공합니다.
 
@@ -148,7 +149,7 @@ End Namespace
 
 ## <a name="controls"></a>컨트롤
 
-응용 프로그램 모델에서 제공하는 사용자 환경은 생성된 컨트롤입니다. WPF에서 "컨트롤"은 창이나 페이지에서 호스트되고 사용자 인터페이스가 있으며 일부 동작을 구현하는 WPF 클래스의 한 범주에 적용되는 포괄적인 용어입니다.
+응용 프로그램 모델에서 제공하는 사용자 환경은 생성된 컨트롤입니다. WPF에서 *컨트롤*은 창이나 페이지에서 호스트되고 사용자 인터페이스가 있으며 일부 동작을 구현하는 WPF 클래스의 한 범주에 적용되는 포괄적인 용어입니다.
 
 자세한 내용은 [컨트롤](/dotnet/framework/wpf/controls/index)을 참조하세요.
 
@@ -186,7 +187,7 @@ End Namespace
 
 컨트롤은 대체로 사용자 입력을 감지하고 응답합니다. [WPF 입력 시스템](/dotnet/framework/wpf/advanced/input-overview) 은 직접 및 라우트된 이벤트를 사용하여 텍스트 입력, 포커스 관리 및 마우스 위치 지정을 지원합니다.
 
-응용 프로그램에 복잡한 입력 요구 사항이 있는 경우가 많습니다. WPF는 사용자 입력 작업을 이러한 작업에 응답하는 코드에서 분리하는 [명령 시스템](/dotnet/framework/wpf/advanced/commanding-overview) 을 제공합니다.
+응용 프로그램에 복잡한 입력 요구 사항이 있는 경우가 많습니다. WPF는 사용자 입력 작업을 이러한 작업에 응답하는 코드에서 분리하는 [명령 시스템](/dotnet/framework/wpf/advanced/commanding-overview)을 제공합니다.
 
 ## <a name="layout"></a>레이아웃
 
@@ -300,7 +301,7 @@ WPF에서 제공하는 2D 도형은 기본 도형의 표준 집합을 포함합�
 
 <xref:System.Windows.Media.Geometry> 개체는 자르기, 적중 테스트 및 2D 그래픽 데이터 렌더링에 사용할 수 있습니다.
 
-![Path의 다양한 용도](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")
+![Path의 다양한 용도](../designers/media/wpfintrofigure5.png)
 
 자세한 내용은 [기하 도형 개요](/dotnet/framework/wpf/graphics-multimedia/geometry-overview)를 참조하세요.
 
@@ -308,7 +309,7 @@ WPF에서 제공하는 2D 도형은 기본 도형의 표준 집합을 포함합�
 
 WPF 2D 기능의 하위 집합에는 그라데이션, 비트맵, 그리기, 비디오로 그리기, 회전, 크기 조정 및 기울이기와 같은 시각 효과가 포함됩니다. 브러시를 통해 이러한 모든 효과를 얻을 수 있습니다. 다음 그림에서는 몇 가지 예를 보여 줍니다.
 
-![여러 브러시의 설명](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")
+![여러 브러시의 설명](../designers/media/wpfintrofigure6.png)
 
 자세한 내용은 [WPF 브러시 개요](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview)를 참조하세요.
 
@@ -316,7 +317,7 @@ WPF 2D 기능의 하위 집합에는 그라데이션, 비트맵, 그리기, 비�
 
 WPF에는 더 흥미로운 사용자 인터페이스를 만들 수 있도록 2D 그래픽을 통합하는 3D 렌더링 기능도 포함되어 있습니다. 예를 들어 다음 그림에서는 3D 도형에 렌더링된 2D 이미지를 보여줍니다.
 
-![Visual3D 샘플 스크린샷](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")
+![Visual3D 샘플 스크린샷](../designers/media/wpfintrofigure13.png)
 
 자세한 내용은 [3D 그래픽 개요](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview)를 참조하세요.
 
@@ -324,7 +325,7 @@ WPF에는 더 흥미로운 사용자 인터페이스를 만들 수 있도록 2D 
 
 WPF 애니메이션 지원을 사용하면 컨트롤이 커지거나, 흔들리거나, 회전하거나, 사라지도록 하여 흥미로운 페이지 전환 등을 만들 수 있습니다. 사용자 지정 클래스를 비롯한 대부분의 WPF 클래스에 애니메이션 효과를 줄 수 있습니다. 다음 그림에서는 간단한 애니메이션의 작동을 보여 줍니다.
 
-![애니메이션 효과가 적용된 큐브의 이미지](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")
+![애니메이션 효과가 적용된 큐브의 이미지](../designers/media/wpfintrofigure7.png)
 
 자세한 내용은 [애니메이션 개요](/dotnet/framework/wpf/graphics-multimedia/animation-overview)를 참조하세요.
 
@@ -336,7 +337,7 @@ WPF 애니메이션 지원을 사용하면 컨트롤이 커지거나, 흔들리�
 
 이미지는 대부분의 응용 프로그램에서 공통적으로 사용되며 WPF는 이미지를 사용하는 여러 방법을 제공합니다. 다음 그림에서는 미리 보기 이미지를 포함하는 목록 상자가 있는 사용자 인터페이스를 보여 줍니다. 미리 보기를 선택하면 이미지가 전체 크기로 표시됩니다.
 
-![축소판 이미지 및 전체 크기 이미지](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")
+![축소판 이미지 및 전체 크기 이미지](../designers/media/wpfintrofigure8.png)
 
 자세한 내용은 [이미징 개요](/dotnet/framework/wpf/graphics-multimedia/imaging-overview)를 참조하세요.
 
@@ -348,7 +349,7 @@ WPF 애니메이션 지원을 사용하면 컨트롤이 커지거나, 흔들리�
 
 다음 그림의 창에서는 <xref:System.Windows.Controls.MediaElement> 컨트롤의 작동을 보여 줍니다.
 
-![오디오와 비디오가 있는 MediaElement 컨트롤](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")
+![오디오와 비디오가 있는 MediaElement 컨트롤](../designers/media/wpfintrofigure1.png)
 
 자세한 내용은 [그래픽 및 멀티미디어](/dotnet/framework/wpf/graphics-multimedia)를 참조하세요.
 
@@ -397,7 +398,7 @@ WPF 애니메이션 지원을 사용하면 컨트롤이 커지거나, 흔들리�
 
 다음 그림에서는 결과를 보여 줍니다.
 
-![텍스트가 포함된 TextBox 컨트롤](../designers/media/wpfintrofigure21.png "WPFIntroFigure21")
+![텍스트가 포함된 TextBox 컨트롤](../designers/media/wpfintrofigure21.png)
 
 그러나 다른 컨트롤은 다양한 콘텐츠 형식의 여러 항목을 포함할 수 있습니다. <xref:System.Windows.Controls.ContentControl.Content%2A> 속성으로 지정된 <xref:System.Windows.Controls.Button>의 콘텐츠에는 레이아웃 컨트롤, 텍스트, 이미지 및 도형을 포함하여 다양한 항목이 포함될 수 있습니다. 다음 예제에서는 <xref:System.Windows.Controls.Button> , <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Label>및 <xref:System.Windows.Controls.Border>를 포함하는 콘텐츠가 있는 <xref:System.Windows.Controls.MediaElement>을 보여 줍니다.
 
@@ -423,7 +424,7 @@ WPF 애니메이션 지원을 사용하면 컨트롤이 커지거나, 흔들리�
 
 다음 그림에서는 이 단추의 콘텐츠를 보여 줍니다.
 
-![여러 형식의 콘텐츠가 포함된 단추](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")
+![여러 형식의 콘텐츠가 포함된 단추](../designers/media/wpfintrofigure22.png)
 
 다양한 컨트롤에서 지원하는 콘텐츠 종류에 대한 자세한 내용은 [WPF 콘텐츠 모델](/dotnet/framework/wpf/controls/wpf-content-model)을 참조하세요.
 
@@ -452,7 +453,7 @@ WPF 컨트롤의 기본 사용자 인터페이스는 일반적으로 다른 컨�
 
 컨트롤 템플릿을 사용하면 컨트롤의 모양을 지정할 수 있는 반면 데이터 템플릿을 사용하면 컨트롤 콘텐츠의 모양을 지정할 수 있습니다. 데이터 템플릿은 바인딩된 데이터가 표시되는 방식을 개선하는 데 자주 사용됩니다. 다음 그림은 각 작업에 이름, 설명 및 우선 순위가 있는 `Task` 개체의 컬렉션에 바인딩된 <xref:System.Windows.Controls.ListBox>의 기본 모양을 보여 줍니다.
 
-![기본 모양의 목록 상자](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")
+![기본 모양의 목록 상자](../designers/media/wpfintrofigure18.png)
 
 기본 모양은 <xref:System.Windows.Controls.ListBox>에서 예상되는 모양입니다. 그러나 각 작업의 기본 모양은 작업 이름만 포함합니다. 작업 이름, 설명 및 우선 순위를 표시하려면 <xref:System.Windows.Controls.ListBox> 을 사용하여 <xref:System.Windows.DataTemplate>컨트롤의 바인딩된 목록 항목에 대한 기본 모양을 변경해야 합니다. 다음 XAML은 <xref:System.Windows.DataTemplate>특성을 사용하여 각 작업에 적용되는 이러한 <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> 을 정의합니다.
 
@@ -649,7 +650,7 @@ WPF는 다양한 사용자 지정 지원을 제공하지만 기존 WPF 컨트롤
 
  다음 그림에서는 <xref:System.Windows.Window>에 호스트된 `NumericUpDown` 컨트롤을 보여 줍니다.
 
- ![사용자 지정 UserControl](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")
+ ![사용자 지정 UserControl](../designers/media/wpfintrofigure3.png)
 
 사용자 지정 컨트롤에 대한 자세한 내용은 [컨트롤 제작 개요](/dotnet/framework/wpf/controls/control-authoring-overview)를 참조하세요.
 

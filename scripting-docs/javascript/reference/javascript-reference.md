@@ -1,13 +1,13 @@
 ---
-title: "JavaScript 참조 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 참조 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - vs.htmldesigner.html
@@ -18,18 +18,22 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, reference
 ms.assetid: 29f83a2c-48c5-49e2-9ae0-7371d2cda2ff
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4fd8a514abcc42b7ec34340f963326cd9a66762
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41d2a3f72b07c947faae2f70f1f5f0b0dffac9ad
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962977"
 ---
 # <a name="javascript-reference"></a>JavaScript 참조
 이 단원에서는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 언어를 구성하는 요소에 대해 설명합니다.  
+
+> [!NOTE]
+> 확인에 대 한 커뮤니티 전체 노력에 가입한 것 [MDN 웹 문서](https://developer.mozilla.org/en-US/) 모든 (500 개 이상의 페이지)는 MDN에 docs.microsoft.com의 Microsoft의 JavaScript API 참조를 리디렉션하여 웹 원스톱, 고급 개발 리소스 대응 합니다. 세부 정보를 참조 하세요 [공지](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)합니다.
   
  Internet Explorer에서 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 코드는 HTML 및 브라우저 개체를 나타내는 HTML, CSS 및 DOM(문서 개체 모델)과 상호 작용할 수 있습니다.  
   
@@ -41,15 +45,15 @@ ms.lasthandoff: 10/27/2017
   
  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 코드는 브라우저 응용 프로그램에서 사용할 수 있을 뿐만 아니라 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 앱으로도 사용할 수 있습니다. [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 앱은 [!INCLUDE[win8](../../javascript/includes/win8-md.md)]를 사용하는 [!INCLUDE[vs_dev11_long](../../javascript/includes/vs-dev11-long-md.md)] 및 [!INCLUDE[win81](../../javascript/includes/win81-md.md)]을 사용하는 [!INCLUDE[vs_dev12](../../javascript/includes/vs-dev12-md.md)]에서 지원됩니다.  
   
--   JavaScript에 대 한 내용은 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 앱 참조 [JavaScript 로드맵](http://msdn.microsoft.com/en-us/4f28182b-1e4b-4bbd-8ae9-dcc504de4341)합니다.  
+-   JavaScript에 대 한 자세한 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 앱을 참조 하세요 [JavaScript 로드맵](http://msdn.microsoft.com/en-us/4f28182b-1e4b-4bbd-8ae9-dcc504de4341)합니다.  
   
--   HTML 및 CSS에 대 한 내용은 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 앱 참조 [Windows 스토어 앱 용 HTML/CSS](http://go.microsoft.com/fwlink/p/?LinkId=250939)합니다.  
+-   HTML 및 CSS에 대 한 내용은 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 앱을 참조 하세요 [Windows 스토어 앱 용 HTML/CSS](http://go.microsoft.com/fwlink/p/?LinkId=250939)합니다.  
   
--   에 대 한 내용은 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] Api 참조 [Windows 런타임 및 JavaScript 용 Windows 라이브러리에 대 한 API 참조](http://go.microsoft.com/fwlink/p/?LinkID=250938)합니다.  
+-   에 대 한 자세한 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] Api 참조 [Windows 런타임 및 JavaScript 용 Windows 라이브러리 API 참조](http://go.microsoft.com/fwlink/p/?LinkID=250938)합니다.  
   
- Visual Studio의 JavaScript 편집기는 IntelliSense를 지원합니다. 자세한 내용은 참조 [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense.md)합니다.  
+ Visual Studio의 JavaScript 편집기는 IntelliSense를 지원합니다. 자세한 내용은 [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense)합니다.  
   
-## <a name="in-this-section"></a>단원 내용  
+## <a name="reference-information"></a>참조 정보
  [버전 정보](../../javascript/reference/javascript-version-information.md)  
  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 언어 기능 목록 및 이러한 기능이 도입된 Internet Explorer 버전 목록을 제공합니다.  
   
@@ -87,8 +91,6 @@ ms.lasthandoff: 10/27/2017
  다음에 사용하기 위한 예약어 목록을 제공합니다. 이러한 예약어는 식별자로 사용할 수 없습니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [JavaScript 기본 사항](../../javascript/javascript-fundamentals.md)  
- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]를 사용하는 방법에 대한 정보를 제공합니다.  
-  
+
  [HTML 및 DHTML 참조](http://go.microsoft.com/fwlink/?LinkId=148095)  
  참조 정보에 대 한 DHTML (동적 HTML) API 제공 합니다.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132080"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild 프로젝트 파일에 데이터를 유지
 프로젝트 하위 형식 하위 형식의 특정 데이터를 나중에 사용할 프로젝트 파일에 유지 해야 합니다. 프로젝트 하위 형식에서는 다음 요구 사항을 충족 하기 위해 프로젝트 파일 지 속성을 사용 합니다.  

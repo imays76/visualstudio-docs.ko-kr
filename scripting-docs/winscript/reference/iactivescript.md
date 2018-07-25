@@ -1,16 +1,16 @@
 ---
 title: IActiveScript | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScript interface
 ms.assetid: d8acee11-7f0d-4999-b97a-66774af16f71
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645683"
 ---
 # <a name="iactivescript"></a>IActiveScript
 스크립팅 엔진을 초기화 하는 데 필요한 메서드를 제공 합니다. 스크립팅 엔진 구현 해야 합니다는 `IActiveScript` 인터페이스입니다.  

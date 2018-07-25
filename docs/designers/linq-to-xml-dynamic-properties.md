@@ -1,6 +1,7 @@
 ---
 title: LINQ to XML 동적 속성
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 184204011a3862522be37f458839d5a1b56b7052
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: abad2e8966bfc9fc2926c1ca985e1cb5450f1d68
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978140"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ to XML 동적 속성
 

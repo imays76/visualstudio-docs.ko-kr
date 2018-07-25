@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122433"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 이 중단점이 보류 중인 가상화 된 상태를 토글합니다. 보류 중인 중단점 가상화 되는 새 코드를 프로그램에 로드 될 때마다 바인딩할 디버그 엔진 시도 합니다.  

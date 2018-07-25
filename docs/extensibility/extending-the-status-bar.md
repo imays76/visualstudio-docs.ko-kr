@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130494"
 ---
 # <a name="extending-the-status-bar"></a>상태 표시줄을 확장합니다.
 IDE의 맨 아래에 정보를 표시 하려면 Visual Studio 상태 표시줄을 사용할 수 있습니다.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130895"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>파일 열기 명령을 사용 하 여 파일을 표시 합니다.
 다음 단계는 IDE에서 처리 하는 방법을 설명는 **열려 있는 파일** 명령에서 제공 되는 **파일** 의 메뉴 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 또한이 단계는 프로젝트가이 명령에서 발생 하는 호출에 응답 해야 방법을 나타냅니다.  

@@ -3,13 +3,14 @@ title: Mac용 Visual Studio Tools for Unity
 description: Visual Studio Tools for Unity 확장 소개
 author: dantogno
 ms.author: v-davian
-ms.date: 07/17/2017
+ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b8384c3595627e288e2ef05cf9135242d37e6d36
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c527a27bcca51748b146f60541dd02019e2853ac
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279852"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity
 
@@ -17,13 +18,15 @@ ms.lasthandoff: 05/23/2018
 
 Mac용 Visual Studio Tools for Unity는 Mac용 Visual Studio를 Unity 플랫폼을 사용한 플랫폼 간 게임 및 앱 개발을 위한 효과적인 도구로 전환하는 무료 Visual Studio 확장 기능입니다.
 
-## <a name="overview"></a>개요 
+Unity 통합은 Mac용 Visual Studio에 기본적으로 포함되어 있으며, Unity 2018.1부터 Mac용 Visual Studio는 Unity 프로젝트의 기본 C# IDE입니다.
+
+## <a name="overview"></a>개요
 
 Mac용 Visual Studio Tools for Unity의 주요 기능은 다음과 같습니다.
 
 ### <a name="compatible-with-visual-studio-for-mac-community-edition"></a>Mac용 Visual Studio Community Edition과 호환
 
-[Mac용 Visual Studio Community Edition](https://www.visualstudio.com/)은 무료로 제공됩니다.
+[Mac용 Visual Studio Community Edition](https://visualstudio.microsoft.com/)은 무료로 사용할 수 있으며, Unity 2018.1부터 Unity 설치와 함께 번들로 제공됩니다. 자세한 내용은 Mac용 Visual Studio Tools for Unity [설치 설명서](setup-vsmac-tools-unity.md)를 참조하세요.
 
 ### <a name="intellisense-for-unity-messages"></a>Unity 메시지에 대한 IntelliSense
 
@@ -33,13 +36,10 @@ IntelliSense를 사용하면 `OnCollisionEnter`와 같은 [Unity 메시지](usin
 
 Mac용 Visual Studio Tools for Unity는 Visual Studio만의 강력한 [디버깅](using-vsmac-tools-unity.md#unity-debugging) 기능을 모두 지원합니다.
 
-*   조건부 중단점을 포함하는 중단점을 설정합니다.
-
-*   조사식 창에서 복잡한 식을 평가합니다.
-
-*   변수 및 인수 값을 조사하고 수정합니다.
-
-*   복잡한 개체 및 데이터 구조로 드릴다운합니다.
+* 조건부 중단점을 포함하는 중단점을 설정합니다.
+* 조사식 창에서 복잡한 식을 평가합니다.
+* 변수 및 인수 값을 조사하고 수정합니다.
+* 복잡한 개체 및 데이터 구조로 드릴다운합니다.
 
 ### <a name="powerful-refactoring-and-context-actions"></a>효과적인 리팩터링 및 컨텍스트 작업
 

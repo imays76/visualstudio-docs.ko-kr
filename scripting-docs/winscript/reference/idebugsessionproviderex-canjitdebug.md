@@ -1,16 +1,18 @@
 ---
 title: IDebugSessionProviderEx:CanJITDebug | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugSessionProviderEx:CanJITDebug
-apilocation: scrobj.dll
+apiname:
+- IDebugSessionProviderEx:CanJITDebug
+apilocation:
+- scrobj.dll
 ms.assetid: 68f91bed-ca69-46b5-b517-ca9ca80b8803
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726873"
 ---
 # <a name="idebugsessionproviderexcanjitdebug"></a>IDebugSessionProviderEx:CanJITDebug
 지정된 된 프로세스를 디버깅 하는 시간에만 사용 하 여 디버깅 수 있는지 여부를 결정 합니다.  

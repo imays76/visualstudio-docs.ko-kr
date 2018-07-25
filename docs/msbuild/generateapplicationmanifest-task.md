@@ -21,11 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40e74dd8e7b2b83f6d4239e6b66c9852c6de604
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9368e752a2b3064c8f4b70bde6005fa5996d4f78
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945964"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 작업
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 매니페스트 또는 네이티브 매니페스트를 생성합니다. 네이티브 매니페스트는 구성 요소의 고유 ID를 정의하고 구성 요소를 구성하는 모든 어셈블리와 파일을 식별하는 방식으로 구성 요소를 설명합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 매니페스트는 응용 프로그램의 진입점을 지정하고 응용 프로그램 보안 수준을 지정하여 네이티브 매니페스트를 확장합니다.  
@@ -39,14 +40,14 @@ ms.lasthandoff: 04/19/2018
 |`AssemblyVersion`|선택적 `String` 매개 변수입니다.<br /><br /> 생성된 매니페스트에 대한 어셈블리 ID의 `Version` 필드를 지정합니다. 이 매개 변수를 지정하지 않으면 기본값 “1.0.0.0”이 사용됩니다.|  
 |`ClrVersion`|선택적 `String` 매개 변수입니다.<br /><br /> 응용 프로그램에 필요한 CLR(공용 언어 런타임 지원)의 최소 버전을 지정합니다. 기본값은 빌드 시스템에서 사용 중인 CLR 버전입니다. 작업에서 네이티브 매니페스트를 생성할 경우 이 매개 변수가 무시됩니다.|  
 |`ConfigFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 응용 프로그램 구성 파일이 포함된 항목을 지정합니다. 작업에서 네이티브 매니페스트를 생성할 경우 이 매개 변수가 무시됩니다.|  
-|`Dependencies`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 생성된 매니페스트에 대한 종속 어셈블리 집합을 정의하는 항목 목록을 지정합니다. 각 항목은 배포 상태 및 종속성 형식을 나타내는 항목 메타데이터를 통해 추가로 설명될 수 있습니다. 자세한 내용은 아래 “항목 메타데이터” 섹션을 참조하세요.|  
+|`Dependencies`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 생성된 매니페스트에 대한 종속 어셈블리 집합을 정의하는 항목 목록을 지정합니다. 각 항목은 배포 상태 및 종속성 형식을 나타내는 항목 메타데이터를 통해 추가로 설명될 수 있습니다. 자세한 내용은 [항목 메타데이터](#item-metadata)를 참조하세요.|  
 |`Description`|선택적 `String` 매개 변수입니다.<br /><br /> 응용 프로그램 및 구성 요소에 대한 설명을 지정합니다.|  
 |`EntryPoint`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 생성된 매니페스트 어셈블리에 대한 진입점을 나타내는 단일 항목을 지정합니다.<br /><br /> [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 매니페스트의 경우 이 매개 변수는 응용 프로그램 실행 시 시작되는 어셈블리를 지정합니다.|  
 |`ErrorReportUrl`|선택적 <xref:System.String?displayProperty=fullName> 매개 변수입니다.<br /><br /> ClickOnce 설치의 오류 보고 중에 대화 상자에 표시되는 웹 페이지의 URL을 지정합니다.|  
 |`FileAssociations`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> ClickOnce 배포 매니페스트와 연결된 하나 이상의 파일 형식 목록을 지정합니다.<br /><br /> .NET Framework 3.5 이상을 대상으로 할 경우에만 유효한 파일 연결입니다.|  
 |`Files`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 매니페스트에 포함할 파일입니다. 각 파일의 전체 경로를 지정합니다.|  
 |`HostInBrowser`|선택적 <xref:System.Boolean> 매개 변수입니다.<br /><br /> `true`의 경우 응용 프로그램이 브라우저에서 호스트됩니다(예: WPF 웹 브라우저 응용 프로그램).|  
-|`IconFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 응용 프로그램 아이콘 파일을 나타냅니다. 응용 프로그램 아이콘은 생성된 응용 프로그램 매니페스트에 표시되고 [시작] 메뉴 및 [프로그램 추가/제거] 대화 상자에 사용됩니다. 이 입력을 지정하지 않으면 기본 아이콘이 사용됩니다. 작업에서 네이티브 매니페스트를 생성할 경우 이 매개 변수가 무시됩니다.|  
+|`IconFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 응용 프로그램 아이콘 파일을 나타냅니다. 응용 프로그램 아이콘은 생성된 응용 프로그램 매니페스트에 표시되고 **시작 메뉴** 및 **프로그램 추가/제거** 대화 상자에 사용됩니다. 이 입력을 지정하지 않으면 기본 아이콘이 사용됩니다. 작업에서 네이티브 매니페스트를 생성할 경우 이 매개 변수가 무시됩니다.|  
 |`InputManifest`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 매니페스트 생성기에 대한 기본으로 사용되는 입력 XML 문서를 나타냅니다. 이를 통해 응용 프로그램 보안 또는 사용자 지정 매니페스트 정의와 같은 구조화된 데이터가 출력 매니페스트에 반영될 수 있습니다. XML 문서의 루트 요소는 asmv1 네임스페이스의 어셈블리 노드여야 합니다.|  
 |`IsolatedComReferences`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 생성된 매니페스트에서 격리할 COM 구성 요소를 지정합니다. 이 매개 변수는 “등록이 필요 없는 COM” 배포를 위해 COM 구성 요소를 격리하는 기능을 지원합니다. 이 기능은 표준 COM 등록 정의를 사용하여 매니페스트를 자동 생성하는 방식으로 작동합니다. 그러나 이 기능이 제대로 작동하려면 COM 구성 요소가 빌드 컴퓨터에 등록되어야 합니다.|  
 |`ManifestType`|선택적 `String` 매개 변수입니다.<br /><br /> 생성할 매니페스트의 형식을 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> 이 매개 변수를 지정하지 않으면 작업에서 기본적으로 `ClickOnce`가 사용됩니다.|  
@@ -54,8 +55,8 @@ ms.lasthandoff: 04/19/2018
 |`OSVersion`|선택적 `String` 매개 변수입니다.<br /><br /> 응용 프로그램에 필요한 최소 OS(운영 체제) 버전을 지정합니다. 예를 들어 값 “5.1.2600.0”은 운영 체제가 Windows XP임을 나타냅니다. 이 매개 변수를 지정하지 않으면 값 .NET Framework의 최소 지원 OS인 Windows 98 Second Edition을 나타내는 “4.10.0.0”이 사용됩니다. 작업에서 네이티브 매니페스트를 생성할 경우 이 입력이 무시됩니다.|  
 |`OutputManifest`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 출력 매개 변수입니다.<br /><br /> 생성된 출력 매니페스트 파일의 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 출력 파일의 이름이 생성된 매니페스트의 ID에서 유추됩니다.|  
 |`Platform`|선택적 `String` 매개 변수입니다.<br /><br /> 응용 프로그램의 대상 플랫폼을 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> 이 매개 변수를 지정하지 않으면 작업에서 기본적으로 `AnyCPU`가 사용됩니다.|  
-|`Product`|선택적 `String` 매개 변수입니다.<br /><br /> 응용 프로그램의 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 이름이 생성된 매니페스트의 ID에서 유추됩니다. 이 이름은 시작 메뉴의 바로 가기 이름에 사용되고 프로그램 추가/제거 대화 상자에 표시되는 이름의 일부입니다.|  
-|`Publisher`|선택적 `String` 매개 변수입니다.<br /><br /> 응용 프로그램의 게시자를 지정합니다. 이 매개 변수를 지정하지 않으면 이름이 등록된 사용자 또는 생성된 매니페스트의 ID에서 유추됩니다. 이 이름은 시작 메뉴의 폴더 이름에 사용되고 프로그램 추가/제거 대화 상자에 표시되는 이름의 일부입니다.|  
+|`Product`|선택적 `String` 매개 변수입니다.<br /><br /> 응용 프로그램의 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 이름이 생성된 매니페스트의 ID에서 유추됩니다. 이 이름은 **시작** 메뉴의 바로 가기 이름에 사용되고 **프로그램 추가/제거** 대화 상자에 표시되는 이름의 일부입니다.|  
+|`Publisher`|선택적 `String` 매개 변수입니다.<br /><br /> 응용 프로그램의 게시자를 지정합니다. 이 매개 변수를 지정하지 않으면 이름이 등록된 사용자 또는 생성된 매니페스트의 ID에서 유추됩니다. 이 이름은 **시작** 메뉴의 폴더 이름에 사용되고 **프로그램 추가/제거** 대화 상자에 표시되는 이름의 일부입니다.|  
 |`RequiresMinimumFramework35SP1`|선택적 `Boolean` 매개 변수입니다.<br /><br /> True인 경우 응용 프로그램에는 .NET Framework 3.5 SP1 이상의 최신 버전이 필요합니다.|  
 |`TargetCulture`|선택적 `String` 매개 변수입니다.<br /><br /> 응용 프로그램의 문화권을 식별하고 생성된 매니페스트에 대한 어셈블리 ID의 `Language` 필드를 지정합니다. 이 매개 변수를 지정하지 않으면 응용 프로그램은 문화권이 고정되어 있다고 가정합니다.|  
 |`TargetFrameworkMoniker`|선택적 `String` 매개 변수입니다.<br /><br /> 대상 프레임워크 모니커를 지정합니다.|  
@@ -314,9 +315,9 @@ ms.lasthandoff: 04/19/2018
 ```  
   
 ## <a name="example"></a>예  
- 이 예제에서는 `GenerateApplicationManifest` 작업을 통해 응용 프로그램 Test.exe에 대한 네이티브 매니페스트를 생성하여 네이티브 구성 요소 Alpha.dll 및 격리된 COM 구성 요소 Bravo.dll을 참조합니다.  
+ 이 예제에서는 `GenerateApplicationManifest` 작업을 통해 응용 프로그램 *Test.exe*에 대한 네이티브 매니페스트를 생성하여 네이티브 구성 요소 *Alpha.dll* 및 격리된 COM 구성 요소 *Bravo.dll*을 참조합니다.  
   
- 이 예제에서는 Test.exe.manifest를 생성하여 등록이 필요 없는 COM을 활용하는 응용 프로그램 XCOPY를 배포 가능하도록 만듭니다.  
+ 이 예제에서는 *Test.exe.manifest*를 생성하여 등록이 필요 없는 COM을 활용하는 응용 프로그램 XCOPY를 배포 가능하도록 만듭니다.  
   
 > [!NOTE]
 >  아래 예제에서는 매니페스트 생성 측면에 집합하도록 모든 응용 프로그램 이진 파일이 미리 빌드되어 있습니다. 이 예제에서는 완벽하게 작동하는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 생성합니다.  

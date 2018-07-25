@@ -1,16 +1,16 @@
 ---
-title: "IDebugApplicationThread 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugApplicationThread 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugApplicationThread interface
 ms.assetid: f869c328-4409-4b74-a6c3-9e63fc58c63d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725953"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread 인터페이스
 언어 엔진 및 스레드 동기화를 제공 하 고 스레드 관련 디버그 상태 정보를 유지 하는 호스트 수 있습니다. 이 인터페이스를 확장 된 `IRemoteDebugApplicationThread` 스레드에 원격이 아닌 액세스를 제공 하는 인터페이스입니다.  

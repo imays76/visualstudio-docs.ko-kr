@@ -17,21 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f4fed2cbf00717e4eaf9c1353370dbd96037491
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: a273e6a82bbf99d1a3d57f3759504fedaa5532e6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176283"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>코드 생성 및 T4 텍스트 템플릿
 
-Visual Studio에서는 *T4 텍스트 템플릿* 텍스트 파일을 생성할 수 있는 제어 논리 및 텍스트 블록의 혼합이 됩니다. 제어 논리는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 프로그램 코드 조각으로 작성되었습니다. Visual Studio 2015 업데이트 2 이상에서는 T4 템플릿 지시문에 C# 버전 6.0 기능을 사용할 수 있습니다. 생성된 파일은 웹 페이지, 리소스 파일 또는 임의 언어로 작성된 프로그램 소스 코드와 같은 임의 종류의 텍스트일 수 있습니다.
+Visual Studio에는 *T4 텍스트 템플릿* 텍스트 파일을 생성할 수 있는 제어 논리 및 텍스트 블록이 혼합 되어 있습니다. 제어 논리는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 프로그램 코드 조각으로 작성되었습니다. Visual Studio 2015 업데이트 2 이상에서는 T4 템플릿 지시문에 C# 버전 6.0 기능을 사용할 수 있습니다. 생성된 된 파일에는 웹 페이지 또는 리소스 파일, 모든 언어에서 프로그램 소스 코드 등 모든 종류의 텍스트일 수 있습니다.
 
-T4 텍스트 템플릿의 두 종류가: 런타임 및 디자인 타임.
+T4 텍스트 템플릿 두 종류가 있습니다: 런타임 및 디자인 타임.
 
 ## <a name="run-time-t4-text-templates"></a>런타임 T4 텍스트 템플릿
 
-라고도 런타임 템플릿 '전처리' 템플릿, 응용 프로그램에서 일반적으로 해당 출력의 일부로 텍스트 문자열을 생성 하 여 실행 됩니다. 예를 들어 HTML 페이지를 정의하는 템플릿을 만들 수 있습니다.
+라고도 런타임 템플릿 '전처리 된' 템플릿, 일반적으로 해당 출력의 일부로 텍스트 문자열을 생성 하기 위해 응용 프로그램에서 실행 됩니다. 예를 들어 HTML 페이지를 정의하는 템플릿을 만들 수 있습니다.
 
 ```
 <html><body>
@@ -49,17 +50,17 @@ T4 텍스트 템플릿의 두 종류가: 런타임 및 디자인 타임.
 string webResponseText = new MyTemplate().TransformText();
 ```
 
-응용 프로그램은 Visual Studio가 설치 되지 않은 컴퓨터에서 실행할 수 있습니다.
+응용 프로그램은 Visual Studio가 설치 되어 있지 않은 컴퓨터에서 실행할 수 있습니다.
 
 런타임 템플릿을 만들려면 **전처리된 텍스트 템플릿** 파일을 프로젝트에 추가합니다. 또는 일반 텍스트 파일을 추가하고 해당 **사용자 지정 도구** 속성을 **TextTemplatingFilePreprocessor**로 설정할 수 있습니다.
 
-자세한 내용은 참조 [T4 텍스트 템플릿을 사용 하는 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다. 서식 파일의 구문에 대 한 자세한 내용은 참조 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)합니다.
+자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다. 템플릿 구문에 대 한 자세한 내용은 참조 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.
 
 ## <a name="design-time-t4-text-templates"></a>디자인 타임 T4 텍스트 템플릿
 
-디자인 타임 tempaltes 소스 코드의 일부와 응용 프로그램의 다른 리소스를 정의합니다. 단일 입력된 파일이 나 데이터베이스의 데이터를 읽을 여러 템플릿을 사용 하 고의 일부를 생성 하는 일반적으로 프로그램 *.cs*, *.vb*, 또는 다른 소스 파일. 각 템플릿이 하나의 파일을 생성합니다. Visual Studio 또는 MSBuild 내에서 실행 됩니다.
+디자인 타임 템플릿을 소스 코드의 일부와 응용 프로그램의 다른 리소스를 정의합니다. 단일 입력된 파일이 나 데이터베이스의 데이터를 읽을 수 있는 몇 가지 템플릿을 사용 하 고 생성 하는 일반적으로 프로그램 *.cs*를 *.vb*, 또는 다른 소스 파일입니다. 각 템플릿이 하나의 파일을 생성합니다. MSBuild 또는 Visual Studio 내에서 실행 됩니다.
 
-예를 들어 입력 데이터는 구성 데이터의 XML 파일일 수 있습니다. 개발 하는 동안 XML 파일을 편집할 때마다 텍스트 템플릿을 응용 프로그램 코드의 일부를 생성 합니다. 템플릿 중 하나는 다음 예제와 유사할 수 있습니다.
+예를 들어 입력 데이터는 구성 데이터의 XML 파일일 수 있습니다. 개발 하는 동안 XML 파일을 편집할 때마다 텍스트 템플릿에 응용 프로그램 코드의 일부를 생성 합니다. 템플릿 중 하나는 다음 예제와 유사할 수 있습니다.
 
 ```
 <#@ output extension=".cs" #>
@@ -73,7 +74,7 @@ namespace Fabrikam.<#= configurationData.SelectSingleNode("jobName").Value #>
 }
 ```
 
-생성 된 XML 파일의 값에 따라 *.cs* 파일에는 다음과 같습니다.
+생성 된 XML 파일에서 값에 따라 *.cs* 파일은 다음과 유사 합니다.
 
 ```
 namespace Fabrikam.FirstJob
@@ -88,7 +89,7 @@ namespace Fabrikam.FirstJob
 
 디자인 타임 템플릿을 만들려면 **텍스트 템플릿** 파일을 프로젝트에 추가합니다. 또는 일반 텍스트 파일을 추가하고 해당 **사용자 지정 도구** 속성을 **TextTemplatingFileGenerator**로 설정할 수 있습니다.
 
-자세한 내용은 참조 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다. 서식 파일의 구문에 대 한 자세한 내용은 참조 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)합니다.
+자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다. 템플릿 구문에 대 한 자세한 내용은 참조 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.
 
 > [!NOTE]
 > *모델* 이란 용어는 때때로 하나 이상의 템플릿에서 읽은 데이터를 설명하는 데 사용됩니다. 모델은 모든 형식과 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 도메인 특정 언어 모델이 아니어도 됩니다. '모델'은 단지 데이터가 코드와 달리 비즈니스 개념 측면에서 정의될 수 있음을 나타냅니다.

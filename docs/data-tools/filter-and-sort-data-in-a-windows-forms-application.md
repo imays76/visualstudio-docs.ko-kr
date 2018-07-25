@@ -21,30 +21,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f693e0a370a05508753dc6881b99157c21ea47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 21ebae03dd2ba58a751a839f5e3151654faa39e0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757597"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Windows Forms 응용 프로그램에서 데이터 필터링 및 정렬
-설정 하 여 데이터를 필터링 할는 <xref:System.Windows.Forms.BindingSource.Filter%2A> 속성을 원하는 레코드를 반환 하는 문자열 식입니다.
+설정 하 여 데이터를 필터링 합니다 <xref:System.Windows.Forms.BindingSource.Filter%2A> 속성을 원하는 레코드를 반환 하는 문자열 식입니다.
 
- 설정 하 여 데이터를 정렬 된 <xref:System.Windows.Forms.BindingSource.Sort%2A> 속성을 열 이름에서 정렬할 않으면 추가 `DESC` 를 내림차순으로 정렬 하거나 추가 `ASC` 오름차순으로 정렬 해야 합니다.
+ 설정 하 여 데이터를 정렬 합니다 <xref:System.Windows.Forms.BindingSource.Sort%2A> 속성을 정렬 하려면; 추가 하는 열 이름 `DESC` 를 내림차순으로 정렬 하거나 추가 `ASC` 오름차순 정렬 합니다.
 
 > [!NOTE]
->  응용 프로그램을 사용 하지 않는 경우 <xref:System.Windows.Forms.BindingSource> 필터링 할 수 있습니다 구성 요소를 사용 하 여 데이터를 정렬 및 <xref:System.Data.DataView> 개체입니다. 자세한 내용은 참조 [데이터 보기](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)합니다.
+>  응용 프로그램을 사용 하지 않는 경우 <xref:System.Windows.Forms.BindingSource> 구성 요소를 필터링 할 수 있습니다 사용 하 여 데이터를 정렬 및 <xref:System.Data.DataView> 개체입니다. 자세한 내용은 [Dataview](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)합니다.
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>BindingSource 구성 요소를 사용 하 여 데이터를 필터링 하려면
 
--   설정의 <xref:System.Windows.Forms.BindingSource.Filter%2A> 속성을 반환할 식입니다. 다음 코드와 고객을 반환 하는 예를 들어 한 `CompanyName` "B"로 시작 하 합니다.
+-   설정 된 <xref:System.Windows.Forms.BindingSource.Filter%2A> 속성을 반환 하려는 식입니다. 다음 코드를 사용 하 여 고객을 반환 하는 예를 들어, 한 `CompanyName` "B"로 시작 합니다.
 
      [!code-csharp[VbRaddataDisplaying#6](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_1.cs)]
      [!code-vb[VbRaddataDisplaying#6](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_1.vb)]
 
 ## <a name="to-sort-data-by-using-a-bindingsource-component"></a>BindingSource 구성 요소를 사용 하 여 데이터를 정렬 하려면
 
--   설정의 <xref:System.Windows.Forms.BindingSource.Sort%2A> 속성을 기준으로 정렬 하려면 열입니다. 다음 코드에서 고객을 정렬 하는 예를 들어는 `CompanyName` 열을 내림차순:
+-   설정 된 <xref:System.Windows.Forms.BindingSource.Sort%2A> 에서 정렬 하려는 열에는 속성입니다. 다음 코드에서 고객을 정렬 하는 예를 들어를 `CompanyName` 내림차순 열:
 
      [!code-csharp[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]
      [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]

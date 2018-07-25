@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477823"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>상황에 맞는 메뉴 (XML 스키마 탐색기)
 

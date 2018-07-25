@@ -1,6 +1,7 @@
 ---
 title: '방법: 기본 색 셰이더 만들기'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4a30315014c4405b811c3e343aee170bfbd365
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 88a5b14d98dc9459aa0d0f87a4ddba52de18ac06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924358"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>방법: 기본 색 셰이더 만들기
 
@@ -27,7 +29,7 @@ ms.lasthandoff: 04/19/2018
 
 1.  사용할 DGSL 셰이더를 만듭니다. DGSL 셰이더를 프로젝트에 추가하는 방법에 대한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 시작 섹션을 참조하세요.
 
-2.  **점 색** 노드를 삭제합니다. **선택** 도구를 사용하여 **점 색** 노드를 선택하고 메뉴 표시줄에서 **편집**, **삭제**를 선택합니다.
+2.  **점 색** 노드를 삭제합니다. **선택** 도구를 사용하여 **점 색** 노드를 선택한 다음, 메뉴 모음에서 **편집** > **삭제**를 선택합니다.
 
 3.  **색 상수** 노드를 그래프에 추가합니다. **도구 상자**의 **상수**에서 **색 상수**를 선택하고 디자인 화면으로 이동합니다.
 
@@ -40,7 +42,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 > 그림에서 주황색은 셰이더 효과를 더 잘 보여 주기 위해 지정되었습니다.
 
-![셰이더 그래프 및 3D 모델에 대한 결과](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")
+![셰이더 그래프 및 3D 모델에 대한 결과](../designers/media/digit-flat-color-effect.png)
 
 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)를 참조하세요.
 

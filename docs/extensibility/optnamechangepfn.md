@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137247"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 이것이에 대 한 호출에 지정 된 콜백 함수는 [SccSetOption](../extensibility/sccsetoption-function.md) (옵션을 사용 하 여 `SCC_OPT_NAMECHANGEPFN`) 이름에서 변경한 소스 제어 플러그 인 IDE에 다시 통신 하는 데 사용 됩니다.  

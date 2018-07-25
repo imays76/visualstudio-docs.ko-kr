@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141199"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 함수
 이 함수는 지정된 된 명령에 대 한 고급 옵션에 대 한 사용자를 묻습니다.  

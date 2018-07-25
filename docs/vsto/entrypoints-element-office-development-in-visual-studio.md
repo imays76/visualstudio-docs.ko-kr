@@ -20,6 +20,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448391"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;t r y p&gt; 요소 (Visual Studio에서 Office 개발)
   `entryPoints` 네임스페이스의 `vstav3` 요소에는 Office 솔루션과 관련된 모든 `entryPoint` 요소가 포함됩니다.  

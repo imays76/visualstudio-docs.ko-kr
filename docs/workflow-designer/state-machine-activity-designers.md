@@ -10,15 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755511"
 ---
 # <a name="state-machine-activity-designers"></a>상태 시스템 활동 디자이너
 
-Windows 워크플로 디자이너는 워크플로 생성할 때 사용할 수 있는 활동 디자이너의 수를 포함 합니다. 이 단원에서는 상태 시스템 워크플로를 만들고 관리하는 데 사용되는 시스템 제공 활동 디자이너에 대해 다룹니다. 다음 항목을 통해 이러한 디자이너에 대해 설명하고 사용 방법에 대한 지침을 제공합니다.
+워크플로 디자이너는 워크플로 생성할 때 사용할 수 있는 activity designer의 수를 포함 합니다. 이 단원에서는 상태 시스템 워크플로를 만들고 관리하는 데 사용되는 시스템 제공 활동 디자이너에 대해 다룹니다. 다음 항목을 통해 이러한 디자이너에 대해 설명하고 사용 방법에 대한 지침을 제공합니다.
 
 ## <a name="reference"></a>참조
  <xref:System.Activities.Statements.StateMachine>

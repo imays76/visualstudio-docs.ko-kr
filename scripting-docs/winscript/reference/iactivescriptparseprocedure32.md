@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645873"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 구현 하는 Windows 스크립트 엔진에서는 스크립트에 추가 하는 절차에 대 한 소스 코드 텍스트를 허용 하는 경우는 `IActiveScriptParseProcedure32` 인터페이스입니다. 해석 된 스크립트 언어는 VBScript 같은 독립 제작 환경 없음이 제공 하는 대체 메커니즘 (이외의 `IActiveScriptParse32` 또는 `IPersist`*) 스크립트 프로시저 네임 스페이스에 추가 합니다.  

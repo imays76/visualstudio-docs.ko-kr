@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131622"
 ---
 # <a name="properties-window-overview"></a>속성 창 개요
 **속성** 창을 사용 하는 두 가지 주요 유형의에서 사용할 수 있는 windows에서 선택한 개체에 대 한 속성을 표시 하는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE). 이러한 두 창의 유형은 다음과 같습니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459512"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 스택 해제를 수행 하 고 스택 워크 프레임 인터페이스에서 결과 반환 합니다.  

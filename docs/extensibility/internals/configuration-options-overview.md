@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132471"
 ---
 # <a name="configuration-options-overview"></a>옵션 구성 개요
 프로젝트에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 디버깅, 실행, 및/또는 배포 된 빌드할 수 있는 여러 구성을 지원할 수 있습니다. 구성에는 컴파일러 스위치와 파일 위치 속성의 명명된 된 집합 설명 하는 경우 빌드 형식입니다. 기본적으로 새 솔루션 디버그 및 릴리스 구성을 포함 됩니다. 이러한 구성은 특정 프로젝트 및/또는 솔루션 요구 사항에 맞게 수정할 또는 해당 기본 설정을 사용 하 여 적용할 수 있습니다. 두 가지 방법으로 일부 패키지를 빌드할 수 있습니다: ActiveX 편집기로 또는 내부 구성 요소로 합니다. 그러나 여러 구성을 지원 하기 위해 프로젝트 필요가 없습니다. 사용할 수 있는 하나의 구성만 있으면 해당 구성은 솔루션 구성의 모든 열로 매핑됩니다.  

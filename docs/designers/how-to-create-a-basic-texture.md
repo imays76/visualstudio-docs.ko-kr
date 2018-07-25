@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924462"
 ---
 # <a name="how-to-create-a-basic-texture"></a>방법: 기본 질감 만들기
 이 문서에서는 이미지 편집기를 사용하여 기본 질감을 만드는 방법을 설명합니다.
@@ -34,15 +35,15 @@ ms.lasthandoff: 04/26/2018
 ## <a name="creating-a-basic-texture"></a>기본 질감 만들기
  [이미지 편집기]를 사용하여 게임 또는 앱에 대한 이미지와 질감을 만들고 수정할 수 있습니다.
 
- 다음 단계에서는 "bullseye" 대상을 나타내는 질감을 만드는 방법을 보여 줍니다. 작업을 마치면 질감이 다름 그림과 같이 표시됩니다. 질감에서 투명도를 더 잘 보여 주기 위해 [이미지 편집기]는 질감을 표시하는 데 녹색 체크무늬 패턴을 사용하도록 구성되었습니다.
+ 다음 단계는 "bullseye" 대상을 나타내는 질감을 만드는 방법을 보여 줍니다. 작업을 완료하면 질감이 다음 그림과 같아야 합니다. 질감에서 투명도를 더 잘 보여 주기 위해 [이미지 편집기]는 질감을 표시하는 데 녹색 체크무늬 패턴을 사용하도록 구성되었습니다.
 
- ![녹색으로 표시된 투명도가 있는 "Bullseye" 대상](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")
+ ![녹색으로 표시된 투명도가 있는 "Bullseye" 대상](../designers/media/digit-bullseye-texture-in-editor.png)
 
  시작하기 전에 **속성** 창이 표시되는지 확인하세요. **속성** 창을 사용하여 이미지 크기를 설정하고, 도구 속성을 변경하고, 작업 중에 색을 지정합니다.
 
 #### <a name="to-create-a-bullseye-target-texture"></a>"bullseye" 대상 질감을 만들려면
 
-1.  사용할 질감을 만듭니다. 질감을 프로젝트에 추가하는 방법에 대한 내용은 [이미지 편집기](../designers/image-editor.md)의 시작 섹션을 참조하세요.
+1.  작업할 수 있는 질감을 만듭니다. 질감을 프로젝트에 추가하는 방법에 대한 내용은 [이미지 편집기](../designers/image-editor.md)의 시작 섹션을 참조하세요.
 
 2.  이미지 크기를 512x512 픽셀로 설정합니다. **속성** 창에서 **너비** 및 **높이** 속성 값을 `512`로 설정합니다.
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/26/2018
 
 4.  전경색을 완전 투명 검은색으로 설정합니다. **속성** 창의 **색** 속성 그룹에서 **전경**을 선택합니다. 색 선택기 옆에 있는 **R**, **G**, **B** 및 **A** 속성의 값을 `0`으로 설정합니다.
 
-5.  [이미지 편집기] 도구 모음에서 **채우기** 도구를 선택하고 Shift 키를 누른 채 이미지에서 임의 점을 선택합니다. Shift 키를 사용하면 채우기 색의 알파 값이 이미지의 색을 대체합니다. 그렇지 않으면 알파 값이 채우기 색을 이미지의 색과 혼합하는 데 사용됩니다.
+5.  이미지 편집기 도구 모음에서 **채우기** 도구를 선택하고 **Shift** 키를 누른 채 이미지에서 임의 점을 선택합니다. **Shift** 키를 사용하면 채우기 색의 알파 값이 이미지의 색을 대체합니다. 그렇지 않으면 알파 값이 채우기 색을 이미지의 색과 혼합하는 데 사용됩니다.
 
     > [!IMPORTANT]
     >  이전 단계의 색 선택과 함께 이 단계에서는 그리려는 "bullseye" 대상 질감에 사용할 기본 이미지가 준비되어 있는지 확인합니다. 이미지가 투명 검은색으로 채워진 경우에는 대상의 테두리가 검은색이므로 대상 주변에 앨리어싱 아티팩트가 없게 됩니다.
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/26/2018
 
 10. 앤티앨리어싱이 사용하도록 설정되어 있는지 확인합니다. **속성** 창의 **모양** 속성 그룹에서 **앤티앨리어싱** 속성이 설정되어 있는지 확인합니다.
 
-11. **타원** 도구를 사용하여 픽셀 좌표 `(3, 3)`에서 픽셀 좌표 `(508, 508)`까지 원을 그립니다. 원을 더 쉽게 그리려면 그릴 때 Shift 키를 누르고 있습니다.
+11. **타원** 도구를 사용하여 픽셀 좌표 `(3, 3)`에서 픽셀 좌표 `(508, 508)`까지 원을 그립니다. 원을 더 쉽게 그리려면 그릴 때 **Shift** 키를 누르고 있습니다.
 
     > [!NOTE]
     >  현재 포인터 위치의 픽셀 좌표가 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 상태 표시줄에 표시됩니다.
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/26/2018
 
  "bullseye" 대상 질감이 완료되었습니다. 다음 그림은 투명도가 적용된 최종 이미지입니다.
 
- ![전체 "bullseye" 대상 질감](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![전체 "bullseye" 대상 질감](../designers/media/gfx_image_demo_bullseye.png)
 
  다음 단계로 이 질감에 대한 MIP 수준을 생성할 수 있습니다. 자세한 내용은 [방법: MIP 수준 만들기 및 수정](../designers/how-to-create-and-modify-mip-levels.md)을 참조하세요.
 

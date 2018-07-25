@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f03c5d6a7afec1010653c6e4a66a3770573ea5e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3953d889b6cd5c6c9b5abbfdb4aea9acbd940e27
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254646"
 ---
 # <a name="profiling-and-windows-vista-security"></a>프로파일링 및 Windows Vista 보안
 컴퓨터 관리자가 사용 가능하도록 설정한 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 사용자 액세스 권한 설정에 따라 개별 사용자에게 해당 컴퓨터에서 프로세스를 프로파일링하기 위한 보안 권한이 있을 수 있습니다. 다음 예제에서는 사용자 간에 가능한 차이점을 보여 줍니다.  

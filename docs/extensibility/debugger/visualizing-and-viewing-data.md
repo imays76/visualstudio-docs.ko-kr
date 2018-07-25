@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132484"
 ---
 # <a name="visualizing-and-viewing-data"></a>시각화 및 데이터 보기
 신속 하 게 개발자에 게 의미 있는 방식으로 시각화 도우미 및 데이터를 표시 하는 사용자 지정 뷰어를 입력 합니다. 식 계산기 (EE) 수 제 3 자 형식 시각화 도우미를 지원 뿐만 아니라 자체 사용자 지정 뷰어를 제공 합니다.  

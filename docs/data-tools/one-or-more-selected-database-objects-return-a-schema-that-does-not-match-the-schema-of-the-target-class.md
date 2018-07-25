@@ -10,11 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 84a910d75c7c91aa2abb381781a731dfbe646cfe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089466"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>선택한 데이터베이스 개체 중 하나 이상이 대상 클래스의 스키마와 일치하지 않는 스키마를 반환합니다.
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 클릭 **확인** 대화 상자를 닫습니다.
 
-2. O/R 디자이너에서 데이터베이스 개체를 끌어 놓는 대상 클래스의 스키마와 일치하는 데이터를 반환하는 데이터베이스 개체를 선택합니다.
+2. 대상 클래스의 스키마와 일치 하는 데이터를 반환 하는 데이터베이스 개체 선택 (데이터베이스 개체를 끌어 놓는에서 클래스를 **O/R 디자이너**).
 
 ## <a name="see-also"></a>참고자료
 

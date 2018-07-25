@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76c7217b9b4159a368575d5acef92b03775478b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e9de75488c297eef426fb5a93c71f0ff3bad148d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255608"
 ---
 # <a name="report-based-on-visible-time-range"></a>표시되는 시간 범위를 기반으로 하는 보고서
 프로필 뷰는 현재 표시된 시간 범위 및 채널을 기반으로 하는 보고서를 표시합니다. 다른 데이터 하위 집합에 대한 세부 정보를 보려면 범례에서 항목을 클릭합니다.  

@@ -9,24 +9,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77774f4460bab7b36fd3684175228e7522a67027
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e155457b250eaa03f56d0009ee434bd1ecb39b63
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945873"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>혼합 권장 규칙 규칙 집합
 
-Microsoft 혼합 권장 규칙을 지 원하는 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 포함 하 여 공용 언어 런타임 c + + 프로젝트에서 가장 일반적이 고 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만드는이 규칙 사용자 지정 규칙 집합에 있는 집합을 포함 해야 합니다.
+Microsoft 혼합 권장 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 일반적이 고 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만든 모든 사용자 지정 규칙 집합에 설정 합니다.이 규칙을 포함 해야 합니다.
 
 |규칙|설명|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|초기화되지 않은 메모리 사용|
 |[C6011](../code-quality/c6011.md)|Null 포인터 역참조|
 |[C6029](../code-quality/c6029.md)|확인되지 않은 값 사용|
-|[C6031](../code-quality/c6031.md)|반환 값이 무시|
+|[C6031](../code-quality/c6031.md)|반환 값 무시 됨|
 |[C6053](../code-quality/c6053.md)|호출의 0 종료|
-|[C6054](../code-quality/c6054.md)|종료 누락 0|
+|[C6054](../code-quality/c6054.md)|0 종료 없음|
 |[C6059](../code-quality/c6059.md)|잘못된 연결|
 |[C6063](../code-quality/c6063.md)|Format 함수에 문자열 인수 없음|
 |[C6064](../code-quality/c6064.md)|Format 함수에 정수 인수 없음|
@@ -35,46 +36,46 @@ Microsoft 혼합 권장 규칙을 지 원하는 잠재적 보안 허점, 응용 
 |[C6101](../code-quality/c6101.md)|초기화되지 않은 메모리 반환|
 |[C6200](../code-quality/c6200.md)|인덱스가 버퍼 최대값을 초과함|
 |[C6201](../code-quality/c6201.md)|인덱스가 스택 버퍼 최대값을 초과함|
-|[C6214](../code-quality/c6214.md)|잘못 된 캐스팅 BOOL로 HRESULT|
-|[C6215](../code-quality/c6215.md)|잘못 된 캐스팅 BOOL Hresult|
-|[C6216](../code-quality/c6216.md)|잘못 된 컴파일러 삽입 캐스팅 BOOL Hresult|
+|[C6214](../code-quality/c6214.md)|잘못 된 캐스트 BOOL로 HRESULT|
+|[C6215](../code-quality/c6215.md)|잘못 된 캐스트 Hresult BOOL|
+|[C6216](../code-quality/c6216.md)|잘못 된 컴파일러 삽입 캐스트 BOOL Hresult|
 |[C6217](../code-quality/c6217.md)|NOT 사용 하 여 잘못 된 HRESULT 테스트|
 |[C6220](../code-quality/c6220.md)|잘못 된 HRESULT와 비교할 때-1|
-|[C6226](../code-quality/c6226.md)|-1에 대 한 잘못 된 HRESULT 할당|
+|[C6226](../code-quality/c6226.md)|-1에 잘못 된 HRESULT 할당|
 |[C6230](../code-quality/c6230.md)|부울 값으로 사용 하 여 잘못 된 HRESULT|
-|[C6235](../code-quality/c6235.md)|논리적으로 0이 아닌 상수가-또는|
-|[C6236](../code-quality/c6236.md)|논리-또는 0이 아닌 상수|
-|[C6237](../code-quality/c6237.md)|논리곱이 0-이므로 의도|
+|[C6235](../code-quality/c6235.md)|논리를 사용 하 여 0이 아닌 상수가-또는|
+|[C6236](../code-quality/c6236.md)|논리-또는 0이 아닌 상수를 사용 하 여|
+|[C6237](../code-quality/c6237.md)|0 논리를 사용 하 여-부작용 논리곱|
 |[C6242](../code-quality/c6242.md)|강제 로컬 해제|
-|[C6248](../code-quality/c6248.md)|Null dacl|
+|[C6248](../code-quality/c6248.md)|Null DACL 작성|
 |[C6250](../code-quality/c6250.md)|릴리스되지 않은 주소 설명자|
 |[C6255](../code-quality/c6255.md)|보호 되지 않은 Alloca 사용|
 |[C6258](../code-quality/c6258.md)|스레드 종료를 사용 하 여|
-|[C6259](../code-quality/c6259.md)|데드 코드에서 비트-스위치 제한 또는|
+|[C6259](../code-quality/c6259.md)|배달 못 한 편지에 비트 코드-하거나 스위치를 제한 합니다.|
 |[C6260](../code-quality/c6260.md)|바이트 산술 사용|
 |[C6262](../code-quality/c6262.md)|과도 한 스택 사용|
 |[C6263](../code-quality/c6263.md)|루프에 Alloca 사용|
-|[C6268](../code-quality/c6268.md)|캐스팅에 괄호 없음|
+|[C6268](../code-quality/c6268.md)|캐스트에 괄호 없음|
 |[C6269](../code-quality/c6269.md)|포인터 역참조 무시|
 |[C6270](../code-quality/c6270.md)|Format 함수에 부동 인수 없음|
 |[C6271](../code-quality/c6271.md)|Format 함수의 추가 인수|
 |[C6272](../code-quality/c6272.md)|Format 함수의 비부동 인수|
-|[C6273](../code-quality/c6273.md)|Format 함수의 비 정수 인수|
+|[C6273](../code-quality/c6273.md)|Format 함수에 정수가 아닌 인수|
 |[C6274](../code-quality/c6274.md)|Format 함수의 비문자 인수|
 |[C6276](../code-quality/c6276.md)|잘못된 문자열 캐스팅|
 |[C6277](../code-quality/c6277.md)|잘못된 CreateProcess 호출|
 |[C6278](../code-quality/c6278.md)|배열-새 스칼라-삭제 불일치|
-|[C6279](../code-quality/c6279.md)|새 스칼라 배열-삭제 불일치|
-|[C6280](../code-quality/c6280.md)|메모리 할당 할당 취소 일치 하지 않습니다.|
+|[C6279](../code-quality/c6279.md)|스칼라-새 배열-삭제 불일치|
+|[C6280](../code-quality/c6280.md)|메모리 할당-할당 해제 불일치|
 |[C6281](../code-quality/c6281.md)|비트 관계 우선 순위|
-|[C6282](../code-quality/c6282.md)|대입이 대신 테스트|
+|[C6282](../code-quality/c6282.md)|할당에서 테스트 교체|
 |[C6283](../code-quality/c6283.md)|기본 배열-새 스칼라-삭제 불일치|
 |[C6284](../code-quality/c6284.md)|Format 함수의 개체 인수 잘못됨|
 |[C6285](../code-quality/c6285.md)|논리-또는 상수|
-|[C6286](../code-quality/c6286.md)|0이 아닌 논리-를 얻거나 잃는 부작용|
-|[C6287](../code-quality/c6287.md)|예비 테스트|
+|[C6286](../code-quality/c6286.md)|0이 아닌 논리-부작용을 손실 하거나|
+|[C6287](../code-quality/c6287.md)|중복 테스트|
 |[C6288](../code-quality/c6288.md)|논리로 상호 포함-False 이며|
-|[C6289](../code-quality/c6289.md)|논리로 상호 제외-True 또는|
+|[C6289](../code-quality/c6289.md)|논리를 통해 상호 배제-True 이거나|
 |[C6290](../code-quality/c6290.md)|논리 부정 비트 AND 우선 순위|
 |[C6291](../code-quality/c6291.md)|논리 부정 비트 OR 우선 순위|
 |[C6292](../code-quality/c6292.md)|루프가는 최대값부터 위로 계산 됨|
@@ -82,8 +83,8 @@ Microsoft 혼합 권장 규칙을 지 원하는 잠재적 보안 허점, 응용 
 |[C6294](../code-quality/c6294.md)|루프 본문이 실행 되지 않음|
 |[C6295](../code-quality/c6295.md)|무한 루프|
 |[C6296](../code-quality/c6296.md)|한 번만 실행 하는 루프|
-|[C6297](../code-quality/c6297.md)|더 큰 크기 시프트의 결과가 캐스팅|
-|[C6299](../code-quality/c6299.md)|부울 비교에 대 한 비트 필드|
+|[C6297](../code-quality/c6297.md)|더 큰 크기로 시프트의 결과가 캐스팅|
+|[C6299](../code-quality/c6299.md)|비트 필드와 부울 비교|
 |[C6302](../code-quality/c6302.md)|Format 함수에 대한 잘못된 문자열 인수|
 |[C6303](../code-quality/c6303.md)|Format 함수에 대한 잘못된 와이드 문자열 인수|
 |[C6305](../code-quality/c6305.md)|크기 및 개수 사용 불일치|
@@ -91,19 +92,19 @@ Microsoft 혼합 권장 규칙을 지 원하는 잠재적 보안 허점, 응용 
 |[C6308](../code-quality/c6308.md)|Realloc 누수|
 |[C6310](../code-quality/c6310.md)|잘못 된 예외 필터 상수|
 |[C6312](../code-quality/c6312.md)|예외 실행 루프 계속|
-|[C6314](../code-quality/c6314.md)|비트-Or 우선 순위|
-|[C6317](../code-quality/c6317.md)|하지 보수 하지|
-|[C6318](../code-quality/c6318.md)|검색을 계속 하는 예외|
-|[C6319](../code-quality/c6319.md)|쉼표 무시 됩니다.|
+|[C6314](../code-quality/c6314.md)|비트-또는 우선 순위|
+|[C6317](../code-quality/c6317.md)|하지 부 정의 보수 아님|
+|[C6318](../code-quality/c6318.md)|예외 계속 검색|
+|[C6319](../code-quality/c6319.md)|쉼표로 무시 됨|
 |[C6324](../code-quality/c6324.md)|문자열 비교 대신 문자열 복사|
 |[C6328](../code-quality/c6328.md)|잠재적 인수 형식 불일치|
-|[C6331](../code-quality/c6331.md)|VirtualFree 잘못 플래그 지정|
+|[C6331](../code-quality/c6331.md)|VirtualFree 잘못 플래그|
 |[C6332](../code-quality/c6332.md)|VirtualFree 잘못 된 매개 변수|
 |[C6333](../code-quality/c6333.md)|VirtualFree 잘못 된 크기|
 |[C6335](../code-quality/c6335.md)|프로세스 핸들 누수|
 |[C6381](../code-quality/c6381.md)|종료 정보 없음|
-|[C6383](../code-quality/c6383.md)|요소 수가 바이트-Count 버퍼 오버런|
-|[C6384](../code-quality/c6384.md)|포인터 크기 나누기|
+|[C6383](../code-quality/c6383.md)|요소 수가 바이트-개수 버퍼 오버런|
+|[C6384](../code-quality/c6384.md)|포인터 크기 분할|
 |[C6385](../code-quality/c6385.md)|읽기 오버런|
 |[C6386](../code-quality/c6386.md)|쓰기 오버런|
 |[C6387](../code-quality/c6387.md)|잘못된 매개 변수 값|
@@ -138,49 +139,49 @@ Microsoft 혼합 권장 규칙을 지 원하는 잠재적 보안 허점, 응용 
 |[C6705](../code-quality/c6705.md)|필요한 주석 인수 개수가 실제 주석 인수 개수와 일치하지 않습니다.|
 |[C6706](../code-quality/c6706.md)|예기치 않은 주석 오류가 발생했습니다.|
 |[C6995](../code-quality/c6995.md)|XML 로그 파일을 저장 하지 못했습니다.|
-|[C26100](../code-quality/c26100.md)|경쟁 조건|
-|[C26101](../code-quality/c26101.md)|연동된 작업을 제대로 사용 실패|
+|[C26100](../code-quality/c26100.md)|경합 상태|
+|[C26101](../code-quality/c26101.md)|연동된 작업을 제대로 사용 하지 못함|
 |[C26110](../code-quality/c26110.md)|호출자가 잠금 유지 실패|
-|[C26111](../code-quality/c26111.md)|호출자가 잠금 해제에 실패 합니다.|
+|[C26111](../code-quality/c26111.md)|호출자가 잠금 해제 실패|
 |[C26112](../code-quality/c26112.md)|호출자가 잠금을 유지할 수 없습니다.|
-|[C26115](../code-quality/c26115.md)|잠금 해제에 실패 했습니다|
+|[C26115](../code-quality/c26115.md)|잠금 해제 실패|
 |[C26116](../code-quality/c26116.md)|획득 또는 잠금 유지 실패|
-|[C26117](../code-quality/c26117.md)|해제할된 잠금 해제|
-|[C26140](../code-quality/c26140.md)|동시성 SAL 주석 오류입니다.|
-|[C28020](../code-quality/c28020.md)|식은이 호출에 사실이 아닙니다.|
+|[C26117](../code-quality/c26117.md)|잠금을 해제할|
+|[C26140](../code-quality/c26140.md)|동시성 SAL 주석 오류|
+|[C28020](../code-quality/c28020.md)|식은이 호출에서 true 하지 않습니다.|
 |[C28021](../code-quality/c28021.md)|주석이 달린 매개 변수는 포인터여야 합니다.|
-|[C28022](../code-quality/c28022.md)|이 함수에 함수 클래스 정의에 사용 된 typedef의 함수 클래스를 일치 하지 않습니다.|
-|[C28023](../code-quality/c28023.md)|할당 되 고 있거나 전달 함수는 _Function_class 있어야 합니다.\_ 는 클래스 중 하나 이상에 대 한 주석|
-|[C28024](../code-quality/c28024.md)|함수 포인터에 할당 되는 함수 클래스 목록에 포함 되지 않은 함수 클래스와 주석 처리 됩니다.|
-|[C28039](../code-quality/c28039.md)|실제 매개 변수의 형식은 형식과 정확히 일치 해야|
+|[C28022](../code-quality/c28022.md)|이 함수에 함수 클래스 정의 하는 데 사용 된 typedef의 함수 클래스를 일치 하지 않습니다.|
+|[C28023](../code-quality/c28023.md)|할당 중이거나 전달 중인 함수에 있어야 합니다는 \_함수\_클래스\_ 클래스의 하나 이상에 대 한 주석|
+|[C28024](../code-quality/c28024.md)|할당 중인 함수 포인터는 함수 클래스 목록에 포함 되지 않습니다 함수 클래스를 사용 하 여 주석 처리 됩니다.|
+|[C28039](../code-quality/c28039.md)|실제 매개 변수의 형식은 형식과 정확히 일치 해야 합니다.|
 |[C28112](../code-quality/c28112.md)|Interlocked 함수를 통해 액세스할 수 있는 변수 항상 Interlocked 함수를 통해 액세스 해야 합니다.|
 |[C28113](../code-quality/c28113.md)|Interlocked 함수를 통해 로컬 변수에 액세스합니다.|
 |[C28125](../code-quality/c28125.md)|함수는 try / except 블록 내에서 호출 되어야 합니다.|
 |[C28137](../code-quality/c28137.md)|가변 인수 대신 (리터럴) 상수 여야|
-|[C28138](../code-quality/c28138.md)|상수 인수 대신 변수 여야|
+|[C28138](../code-quality/c28138.md)|상수 인수 대신 변수 여야 합니다.|
 |[C28159](../code-quality/c28159.md)|대신 다른 함수를 사용 하는 것이 좋습니다.|
 |[C28160](../code-quality/c28160.md)|오류 주석|
 |[C28163](../code-quality/c28163.md)|함수는 try / except 블록 내에서 호출 되지 해야|
-|[C28164](../code-quality/c28164.md)|인수는 개체 (포인터에 포인터가 아니라)에 대 한 포인터를 필요로 하는 함수에 전달 되 고|
+|[C28164](../code-quality/c28164.md)|인수 (대 한 포인터가 아닌 포인터로) 개체에 대 한 포인터를 필요로 하는 함수에 전달 되 고|
 |[C28182](../code-quality/c28182.md)|NULL 포인터를 역참조하고 있습니다. 포인터에 다른 포인터와 동일한 NULL 값이 포함되어 있습니다.|
-|[C28183](../code-quality/c28183.md)|인수 값이 두 개 될 수 있으며 포인터에서 찾은 값의 복사본은|
+|[C28183](../code-quality/c28183.md)|인수 값은 하나일 수 있습니다 및 포인터에서 찾은 값의 복사본입니다.|
 |[C28193](../code-quality/c28193.md)|변수에 검사 해야 하는 값|
 |[C28196](../code-quality/c28196.md)|요구 사항이 충족 되지 않습니다. (식이 true로 계산 되지 않습니다.)|
 |[C28202](../code-quality/c28202.md)|비정적 멤버에 대한 잘못된 참조입니다.|
 |[C28203](../code-quality/c28203.md)|클래스 멤버에 대한 모호한 참조입니다.|
-|[C28205](../code-quality/c28205.md)|_Success\_ 또는 _On_failure\_가 잘못된 컨텍스트에서 사용되었습니다.|
+|[C28205](../code-quality/c28205.md)|\_성공\_ 또는 \_온\_오류\_ 불법적인 컨텍스트에 사용|
 |[C28206](../code-quality/c28206.md)|왼쪽 피연산자가 구조체를 가리킵니다. '->'를 사용하세요.|
 |[C28207](../code-quality/c28207.md)|왼쪽 피연산자가 구조체입니다. '.'를 사용하세요.|
-|[C28209](../code-quality/c28209.md)|기호에 대 한 선언에 충돌 하는 선언|
+|[C28209](../code-quality/c28209.md)|기호의 선언에 충돌 하는 선언이|
 |[C28210](../code-quality/c28210.md)|__on_failure 컨텍스트에 대한 주석이 명시적 사전 컨텍스트에 없어야 합니다.|
 |[C28211](../code-quality/c28211.md)|SAL_context에 대해 정적 컨텍스트 이름이 필요합니다.|
 |[C28212](../code-quality/c28212.md)|주석에 대한 포인터 식이 있어야 합니다.|
-|[C28213](../code-quality/c28213.md)|이전 선언을 수정하지 않고 참조하려면 _Use_decl_annotations\_ 주석을 사용해야 합니다.|
+|[C28213](../code-quality/c28213.md)|합니다 \_사용 하 여\_선언\_주석\_ 이전 선언을 수정 하지 않고 참조 하려면 주석을 사용 해야 합니다.|
 |[C28214](../code-quality/c28214.md)|특성 매개 변수 이름은 p1...p9여야 합니다.|
 |[C28215](../code-quality/c28215.md)|typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.|
 |[C28216](../code-quality/c28216.md)|checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.|
 |[C28217](../code-quality/c28217.md)|함수의 경우 주석에 대한 매개 변수 개수가 파일에 있는 개수와 일치하지 않습니다.|
-|[C28218](../code-quality/c28218.md)|함수 매개 변수는 매개 변수와 일치 하지 않습니다 파일에 있는|
+|[C28218](../code-quality/c28218.md)|함수 매개 변수의 경우 주석의 매개 변수 일치 하지 않는 파일|
 |[C28219](../code-quality/c28219.md)|주석에 있는 매개 변수 주석에 열거의 멤버가 필요합니다.|
 |[C28220](../code-quality/c28220.md)|주석에 있는 매개 변수에 정수 식이 필요합니다.|
 |[C28221](../code-quality/c28221.md)|주석에 있는 매개 변수에 문자열 식이 필요합니다.|
@@ -205,7 +206,7 @@ Microsoft 혼합 권장 규칙을 지 원하는 잠재적 보안 허점, 응용 
 |[C28240](../code-quality/c28240.md)|매개 변수에 대한 주석에 param1이 아니라 param2가 있습니다.|
 |[C28241](../code-quality/c28241.md)|매개 변수에 대한 함수 주석이 인식되지 않습니다.|
 |[C28243](../code-quality/c28243.md)|매개 변수에 대한 함수 주석에 실제 형식 주석이 허용하는 것보다 많은 역참조가 필요합니다.|
-|[C28244](../code-quality/c28244.md)|함수에 대 한 주석 구문 분석할 수 없는 매개 변수/외부 주석이 있습니다|
+|[C28244](../code-quality/c28244.md)|함수에 대 한 주석에 구문 분석할 수 없는 매개 변수/외부 주석이|
 |[C28245](../code-quality/c28245.md)|함수에 대한 주석에서 멤버가 아닌 함수에 'this'를 주석으로 답니다.|
 |[C28246](../code-quality/c28246.md)|함수의 매개 변수 주석이 매개 변수 형식과 일치하지 않습니다.|
 |[C28250](../code-quality/c28250.md)|함수에 대한 주석이 일치하지 않습니다. 이전 인스턴스에 오류가 있습니다.|
@@ -218,25 +219,25 @@ Microsoft 혼합 권장 규칙을 지 원하는 잠재적 보안 허점, 응용 
 |[C28267](../code-quality/c28267.md)|함수 주석에서 주석 구문 오류가 발견되었습니다.|
 |[C28272](../code-quality/c28272.md)|함수, 매개 변수에 대한 주석이 검사 시 함수 선언과 일치하지 않습니다.|
 |[C28273](../code-quality/c28273.md)|함수의 경우 단서가 함수 선언과 일치하지 않습니다.|
-|[C28275](../code-quality/c28275.md)|_Macro_value\_에 대한 매개 변수가 null입니다.|
+|[C28275](../code-quality/c28275.md)|매개 변수의 \_매크로\_값\_ isnull|
 |[C28279](../code-quality/c28279.md)|기호의 경우 일치하는 'end'가 없는 'begin'이 있습니다.|
 |[C28280](../code-quality/c28280.md)|기호의 경우 일치하는 'begin'이 없는 'end'가 있습니다.|
 |[C28282](../code-quality/c28282.md)|형식 문자열이 사전 조건에 있어야 합니다.|
 |[C28285](../code-quality/c28285.md)|함수의 경우 매개 변수에 구문 오류가 있습니다.|
 |[C28286](../code-quality/c28286.md)|함수의 경우 끝 부분 근처에 구문 오류가 있습니다.|
-|[C28287](../code-quality/c28287.md)|함수의 경우 _At\_() 주석에 구문 오류가 있습니다(인식할 수 없는 매개 변수 이름).|
-|[C28288](../code-quality/c28288.md)|함수의 경우 _At\_() 주석에 구문 오류가 있습니다(잘못된 매개 변수 이름).|
+|[C28287](../code-quality/c28287.md)|함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (인식할 수 없는 매개 변수 이름)|
+|[C28288](../code-quality/c28288.md)|함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (잘못 된 매개 변수 이름)|
 |[C28289](../code-quality/c28289.md)|함수의 경우 ReadableTo 또는 WritableTo에 limit-spec가 매개 변수로 포함되지 않았습니다.|
 |[C28290](../code-quality/c28290.md)|함수의 주석에 실제 매개 변수 개수보다 많은 외부 참조가 있습니다.|
 |[C28291](../code-quality/c28291.md)|함수의 경우 역참조 수준 0에서 post null/notnull이 의미가 없습니다.|
 |[C28300](../code-quality/c28300.md)|연산자에 호환되지 않는 형식의 식 피연산자입니다.|
 |[C28301](../code-quality/c28301.md)|함수의 첫 번째 선언에 대한 주석이 없습니다.|
-|[C28302](../code-quality/c28302.md)|주석에 추가 _Deref\_ 연산자가 있습니다.|
-|[C28303](../code-quality/c28303.md)|주석에 모호한 _Deref\_ 연산자가 있습니다.|
-|[C28304](../code-quality/c28304.md)|토큰에 부적절하게 배치된 _Notref\_ 연산자가 적용되었습니다.|
+|[C28302](../code-quality/c28302.md)|추가 \_Deref\_ 연산자에서 발견 되었습니다.|
+|[C28303](../code-quality/c28303.md)|모호한 \_Deref\_ 연산자에서 발견 되었습니다.|
+|[C28304](../code-quality/c28304.md)|부적절 하 게 배치 \_Notref\_ 토큰에 적용할 연산자를 찾을 수 있습니다.|
 |[C28305](../code-quality/c28305.md)|토큰을 구문 분석하는 동안 오류가 발생했습니다.|
-|[C28306](../code-quality/c28306.md)|매개 변수에 대 한 주석이 더는|
-|[C28307](../code-quality/c28307.md)|매개 변수에 대 한 주석이 더는|
+|[C28306](../code-quality/c28306.md)|매개 변수에서 주석이 사용 되지 않습니다.|
+|[C28307](../code-quality/c28307.md)|매개 변수에서 주석이 사용 되지 않습니다.|
 |[C28350](../code-quality/c28350.md)|주석이 조건부로 적용할 수 없는 상황을 설명합니다.|
 |[C28351](../code-quality/c28351.md)|주석이 동적 값(변수)을 조건에 사용할 수 없는 경우를 설명합니다.|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
@@ -280,7 +281,7 @@ Microsoft 혼합 권장 규칙을 지 원하는 잠재적 보안 허점, 응용 
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|투명 메서드는 SuppressUnmanagedCodeSecurity 특성을 사용하여 메서드를 호출해서는 안 됩니다.|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|투명 코드는 보안에 중요한 항목을 참조해서는 안 됩니다.|
 |[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|투명 메서드는 LinkDemands를 충족해서는 안 됩니다|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|종류는 최소한 기본 형식 및 인터페이스 만큼 중요 해야 합니다.|
+|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|형식은 최소한 기본 형식 및 인터페이스 만큼 중요 해야 합니다.|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|투명 메서드는 보안 어설션을 사용할 수 없습니다.|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|투명 메서드는 네이티브 코드를 호출해서는 안 됩니다.|
 |[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|스택 정보를 유지하도록 다시 throw하십시오.|

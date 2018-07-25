@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 코드 분석 규칙 집합
+title: 코드 분석 규칙 집합
 ms.date: 04/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,23 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20e727fd331ebd98a74acbb63738e6921e5ad1a0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204429"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>코드 분석 규칙 그룹화를 사용 하 여 규칙 집합
 
-Visual Studio에서 코드 분석을 구성할 때의 기본 제공 목록에서 선택할 수 있습니다 *규칙 집합*합니다. 규칙 집합을 프로젝트에 적용 되며 코드의 그룹을 대상으로 지정 된 문제 및 해당 프로젝트에 대 한 특정 조건을 식별 하는 분석 규칙은. 예를 들어 공개적으로 사용할 수 있는 Api에 대 한 코드를 검색 하도록 디자인 된 규칙 집합을 적용할 수 있습니다 또는 최소 권장 규칙입니다. 또한 모든 규칙을 포함 하는 규칙 집합을 적용할 수 있습니다.
+Visual Studio에서 코드 분석을 구성할 때 기본 제공 목록에서 선택할 수 있습니다 *규칙 집합*합니다. 규칙 집합을 프로젝트에 적용 되며 코드의 그룹에는 해당 프로젝트에 대 한 특정 조건과 대상된 문제를 식별 하는 분석 규칙. 예를 들어 공개적으로 사용 가능한 Api에 대 한 코드를 스캔 하도록 설계 된 규칙 집합을 적용 하거나 방금 최소 권장 규칙. 모든 규칙을 포함 하는 규칙 집합을 적용할 수도 있습니다.
 
-규칙 집합 추가 또는 규칙을 삭제 하거나 규칙 심각도 변경 하 여 경고 또는 오류에서 전자 메일을 사용자 지정할 수 있습니다는 **오류 목록**합니다. 사용자 지정 된 규칙 집합에는 특정 개발 환경의 요구 사항을 충족할 수 있습니다. 규칙 집합을 사용자 지정 규칙 집합 편집기는 검색 및 필터링 하는 프로세스의 도구를 제공 합니다.
+규칙 경고 또는 오류를 표시할 추가 또는 삭제 규칙 또는 규칙 심각도 변경 하 여 집합을 사용자 지정할 수 있습니다 합니다 **오류 목록**합니다. 사용자 지정된 규칙 집합에는 특정 개발 환경의 요구 사항을 충족할 수 있습니다. 규칙 집합을 사용자 지정 규칙 집합 편집기 검색 및 필터링 프로세스에서 도움이 도구를 제공 합니다.
+
+규칙 집합에 사용할 수 있는 [관리 되는 코드의 정적 분석](how-to-configure-code-analysis-for-a-managed-code-project.md)를 [c + + 코드 분석](using-rule-sets-to-specify-the-cpp-rules-to-run.md), 및 [Roslyn 분석기](analyzer-rule-sets.md)합니다.
 
 ## <a name="rule-set-format"></a>규칙 집합 형식
 
-규칙 집합에 XML 형식에 지정 된 한 *.ruleset* 파일입니다. ID로 구성 되는 규칙 및 *작업*, 파일에서 네임 스페이스 및 분석기 ID로 그룹화 됩니다.
+규칙 집합에 XML 형식으로 지정 된 *.ruleset* 파일입니다. ID가 구성 된 규칙 및 *동작*, 분석기 ID 및 파일에 네임 스페이스 별로 그룹화 됩니다.
 
-XML 콘텐츠는 *.ruleset* 파일 다음과 비슷합니다.
+콘텐츠를 *.ruleset* 이 XML 파일 비슷합니다.
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -53,9 +56,9 @@ XML 콘텐츠는 *.ruleset* 파일 다음과 비슷합니다.
 ```
 
 > [!TIP]
-> 쉽습니다 [규칙 집합 편집](../code-quality/working-in-the-code-analysis-rule-set-editor.md) 그래픽에 **규칙 집합 편집기** 직접 보다 합니다.
+> 쉽습니다 [규칙 집합 편집](../code-quality/working-in-the-code-analysis-rule-set-editor.md) 에서 그래픽 **규칙 집합 편집기** 손으로 보다 합니다.
 
-규칙 집합에서 지정 된 프로젝트에 대 한는 `CodeAnalysisRuleSet` Visual Studio 프로젝트 파일에서 속성입니다. 예를 들어:
+규칙 집합으로 지정 된 프로젝트에 대 한 합니다 **CodeAnalysisRuleSet** Visual Studio 프로젝트 파일의 속성입니다. 예를 들어:
 
 ```xml
 <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>

@@ -1,11 +1,11 @@
 ---
-title: "IPerPropertyBrowsing2 인터페이스 1 | Microsoft Docs"
-ms.custom: 
+title: IPerPropertyBrowsing2 인터페이스 1 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IPerPropertyBrowsing2
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IPerPropertyBrowsing2 interface
 ms.assetid: 1e50b3f7-cc1c-495a-93c7-3ee03aea0b8a
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728393"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>IPerPropertyBrowsing2 인터페이스 1
 액세스 속성 페이지의 정보는 개체에서 제공 합니다.  

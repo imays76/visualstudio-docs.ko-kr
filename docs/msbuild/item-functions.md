@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c8a16b1ab15354deafc236d9f4845b051d58f7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 85dd03080a9dda58532d656161c3c44ae4943251
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081350"
 ---
 # <a name="item-functions"></a>항목 함수
 MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대한 정보를 얻기 위해 item 함수를 호출할 수 있습니다. 이러한 함수를 사용하면 Distinct() 항목을 간편하게 가져올 수 있으며 항목을 반복하는 방식보다 속도도 더 빠릅니다.  

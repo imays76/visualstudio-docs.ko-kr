@@ -10,6 +10,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33995831"
 ---
 # <a name="creating-new-projects-and-solutions"></a>새 프로젝트 및 솔루션 만들기
 

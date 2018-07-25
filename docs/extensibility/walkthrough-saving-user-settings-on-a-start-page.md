@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146093"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>연습: 시작 페이지에서 사용자 설정 저장
 시작 페이지에 대 한 사용자 설정을 유지할 수 있습니다. 이 연습을 수행 함으로써 사용자가 단추를 클릭 하 고 다음 시작 페이지가 로드 될 때마다이 설정 검색 레지스트리에 설정을 저장 하는 컨트롤을 만들 수 있습니다. 시작 페이지 프로젝트 템플릿을 사용자 지정 가능한 사용자 정의 컨트롤을 포함 하므로, 해당 컨트롤을 호출 하는 기본 시작 페이지 XAML 자체 시작 페이지를 수정할 필요가 없습니다.  

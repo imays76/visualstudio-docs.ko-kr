@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bd2b335635f4fc83eb4b0857f9b5d785eb9dccc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 17fc42eab94d98ceb636e53e3ed6efd39a08f920
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254272"
 ---
 # <a name="performance-report-view-filter"></a>성능 보고서 뷰 필터
-프로파일러 보고서 뷰 필터 창은 성능 보고서 창 위쪽에 있습니다. 이 창이 표시되지 않으면 **필터 표시** 단추를 클릭합니다.  
+**프로파일러 보고서 뷰 필터** 창은 **성능 보고서** 창 위쪽에 있습니다. 이 창이 표시되지 않으면 **필터 표시** 단추를 클릭합니다.  
   
  각 필터 절을 수정하여 결과를 구체화할 수 있습니다. 필터 작성기에서 사용 가능한 열은 다음과 같습니다.  
   
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/19/2018
   
  **표시** 보고서 뷰에서는 필터 절을 생성하여 보고서 뷰의 데이터를 두 표시 간에 수집되는 데이터로 제한할 수 있습니다. 이렇게 하려면 보고서 데이터를 시작하고 종료할 표시를 선택한 다음 마우스 오른쪽 단추를 클릭하고 **표시에 대한 필터 추가** 또는 **타임스탬프에 대한 필터 추가**를 선택합니다. 두 필터는 모두 현재 데이터 파일의 데이터를 같은 범위로 제한합니다. **표시에 대한 필터 추가**는 다른 .vsp 파일에 적용할 수 있습니다.  
   
- 필터를 저장하려면 성능 보고서 도구 모음에서 **필터 내보내기**를 클릭하고 .vspf 파일의 위치와 파일 이름을 지정합니다. 이전에 저장한 필터를 로드하려면 **필터 가져오기**를 클릭하고 저장된 필터 파일을 찾습니다. 필터 파일을 사용하여 독립 실행형 프로파일링 도구가 설치되어 있는 컴퓨터에서 데이터 파일을 필터링할 수도 있습니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.  
+ 필터를 저장하려면 **성능 보고서** 도구 모음에서 **필터 내보내기**를 클릭하고 .*vspf* 파일의 위치와 파일 이름을 지정합니다. 이전에 저장한 필터를 로드하려면 **필터 가져오기**를 클릭하고 저장된 필터 파일을 찾습니다. 필터 파일을 사용하여 독립 실행형 프로파일링 도구가 설치되어 있는 컴퓨터에서 데이터 파일을 필터링할 수도 있습니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)   

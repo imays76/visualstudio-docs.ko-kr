@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103242"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 참조 (Visual Studio 디버깅)
 API, 구문 및 모든 API 요소에 대 한 사용법을 보여 주는 가이드의 개념 개요와 다양 한 코드 예제 참조 섹션에 포함 되어 있습니다. 모든 참조 범주별으로 나열 됩니다.  

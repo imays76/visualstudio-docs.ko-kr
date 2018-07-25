@@ -1,5 +1,5 @@
 ---
-title: C 런타임 라이브러리 없이 검사 실행 시간을 사용 하 여 | Microsoft Docs
+title: C 런타임 라이브러리 없이 런타임을 사용 하 여 확인 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,18 +25,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 533e4254b6222af1713691a0c448cad1383cd273
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a4fb9f61242490b30e1b89132f4e79fbb56d48de
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056018"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>C 런타임 라이브러리 없이 런타임 검사 사용
-C 런타임 라이브러리 없이 프로그램을 링크 하는 경우 사용 하 여 **/NODEFAULTLIB**, 런타임 검사 기능을 사용 하려면 runtmchk.lib에 연결 해야 합니다.  
+C 런타임 라이브러리 없이 프로그램을 연결 하면 사용 하 여 **/NODEFAULTLIB**, 및 런타임 검사 기능을 사용 하려면 runtmchk.lib에 연결 해야 합니다.  
   
  `_RTC_Initialize`는 런타임 검사를 할 수 있도록 프로그램을 초기화합니다. C 런타임 라이브러리에 링크하지 않은 경우에는 다음과 같이 `_RTC_Initialize`를 호출하기 전에 런타임 오류 검사를 활성화한 상태에서 프로그램이 컴파일되었는지 확인해야 합니다.  
   
-```  
+```cpp
 #ifdef __MSVC_RUNTIME_CHECKS  
     _RTC_Initialize();  
 #endif  
@@ -44,7 +45,7 @@ C 런타임 라이브러리 없이 프로그램을 링크 하는 경우 사용 �
   
  C 런타임 라이브러리에 링크하지 않은 경우에는 `_CRT_RTC_INITW`라는 함수도 정의해야 합니다. `_CRT_RTC_INITW`는 다음과 같이 사용자 정의 함수를 기본 오류 보고 함수로 설정합니다.  
   
-```  
+```cpp
 // C version:  
 _RTC_error_fnW __cdecl _CRT_RTC_INITW(  
         void *res0, void **res1, int res2, int res3, int res4)  
@@ -62,7 +63,7 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 }  
 ```  
   
- 기본 오류 보고 함수를 설정한 후 `_RTC_SetErrorFuncW`를 사용하여 추가 오류 보고 함수를 설정할 수 있습니다. 자세한 내용은 참조 [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)합니다.  
+ 기본 오류 보고 함수를 설정한 후 `_RTC_SetErrorFuncW`를 사용하여 추가 오류 보고 함수를 설정할 수 있습니다. 자세한 내용은 [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 네이티브 런타임 검사 기능 사용](../debugger/how-to-use-native-run-time-checks.md)

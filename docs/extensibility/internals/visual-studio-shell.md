@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144358"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell에 통합의 주요 에이전트인은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 셸 공통 서비스를 공유 하는 Vspackage를 사용 하도록 설정 하려면 필요한 기능을 제공 합니다. 때문에의 아키텍처 목표 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , Vspackage의 기본 기능을 vest를 셸에 기본 기능을 제공 하 고 Vspackage의 구성 요소 간 간 통신을 지원 하기 위한 프레임 워크.  

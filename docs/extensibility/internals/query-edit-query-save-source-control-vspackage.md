@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131519"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>쿼리 (소스 제어 VSPackage) 저장 쿼리 편집
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 편집기에 쿼리 편집 쿼리 저장 (QEQS) 이벤트 브로드캐스트할 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 제어 스텁 QEQS 이벤트의 받는 사람 있도록 QEQS 서비스를 구현 합니다. 이러한 이벤트는 다음 현재 소스 제어 VSPackage에 위임 됩니다. VSPackage 구현 현재 소스 제어는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 및 해당 메서드. 메서드는 `IVsQueryEditQuerySave2` 인터페이스는 일반적으로 문서를 저장 하기 전에 즉시 및 처음으로 문서를 편집 하는 바로 전에 호출 됩니다.  

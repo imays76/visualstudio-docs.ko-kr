@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141355"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>연습: 설치 된 코드 조각 (레거시 구현) 목록 가져오기
 코드 조각으로 또는 (설치 된 코드 조각 중에서 선택할 수 있음)는 메뉴 명령을 사용 하 여 소스 버퍼에 삽입할 수 있는 코드의 일부는 조각 바로 가기를 IntelliSense 완성 목록에서 선택 합니다.  

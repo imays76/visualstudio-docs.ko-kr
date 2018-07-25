@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461723"
 ---
 # <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
 소스 파일의 줄 번호를 검색합니다.  

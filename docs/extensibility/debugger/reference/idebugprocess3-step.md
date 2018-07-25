@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116388"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 하나의 명령 또는 문을 한 단계씩 실행을 처리를 수행 합니다.  

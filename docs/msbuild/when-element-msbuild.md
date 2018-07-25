@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a1587a429c92fe1bac5d2cd0bcd63c0f27a68c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd42c94ba5e63cdc285242f0a48556c073337671
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303337"
 ---
 # <a name="when-element-msbuild"></a>When 요소(MSBuild)
 `Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <When Condition="'StringA'=='StringB'">  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  

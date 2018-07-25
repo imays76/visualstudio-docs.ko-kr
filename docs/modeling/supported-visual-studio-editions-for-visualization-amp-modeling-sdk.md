@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948196"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>시각화에 대 한 지원 되는 Visual Studio 버전 &amp; SDK 모델링
 다음은 지원 되는 Visual Studio 버전의 목록을 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 제작 및 배포 환경입니다. 이러한 버전에 대 한 자세한 내용은 Microsoft을 참조 하십시오. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [개발자 센터](http://go.microsoft.com/fwlink/?LinkId=75628)합니다.

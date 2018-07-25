@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704527"
 ---
 # <a name="immediate-window"></a>직접 실행 창
 **직접 실행** 창은 식을 디버깅 및 계산하고 문을 실행하며 가변 값을 인쇄하는 등에 사용됩니다. 디버깅 중에 개발 언어에 따라 실행되거나 계산되는 식을 입력할 수 있습니다. **직접 실행** 창을 표시하려면 편집할 프로젝트를 연 다음, **디버그** 메뉴에서 **창**을 선택하고 **즉시 실행**을 선택하거나 CTRL+ALT+I를 누릅니다.

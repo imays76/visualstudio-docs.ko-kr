@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126798"
 ---
 # <a name="extending-projects"></a>프로젝트 확장
 프로젝트 및 솔루션에는 Visual Studio는 컴파일 및 배포 단위로 코드 및 리소스 파일을 구분 하는 방법입니다. 프로젝트에 대 한 자세한 정보를 찾을 수 [프로젝트 (Visual Studio SDK)](../extensibility/extending-projects.md)합니다.  

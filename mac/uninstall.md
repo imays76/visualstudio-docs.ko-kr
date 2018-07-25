@@ -6,23 +6,33 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 14afeefac0bb5aa198b2f62ba00ba85831b23ffb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: dcd305cd7cb3759483c79b75629a688d852f7c7a
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433209"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac용 Visual Studio 제거
 
 Mac용 Visual Studio와 같은 독립형 앱을 포함하여 플랫폼 간 응용 프로그램 개발을 지원하는 여러 가지 Xamarin 제품이 있습니다.
 
-각 제품을 개별적으로 제거하려면 이 가이드의 관련 섹션을 참조하세요. 이 가이드의 모든 내용을 따라 수행하면 Xamarin 도구 집합 전체를 제거할 수 있습니다.
+이 가이드를 통해 관련 섹션으로 이동하여 각 제품을 개별적으로 제거하거나 [스크립트 제거](#uninstall-script) 섹션에 제공된 스크립트를 사용하여 모든 제품을 제거할 수 있습니다.
 
-이전에 Xamarin Studio를 컴퓨터에 설치한 경우 다음 단계에 더하여 developer.xamarin.com의 [설치 제거](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/uninstalling_xamarin/) 가이드의 안내에 따라야 할 수도 있습니다.
+이전에 Xamarin Studio를 머신에 설치한 경우 다음 단계에 더하여 [Xamarin의 제거](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) 가이드의 안내에 따라야 할 수도 있습니다.
 
 ## <a name="uninstall-script"></a>스크립트 제거
 
-[설치 제거 스크립트](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)를 사용하면 Visual Studio 및 관련 구성 요소를 한 번에 제거할 수 있습니다.
+Mac용 Visual Studio 및 머신의 모든 구성 요소를 제거하는 데 사용할 수 있는 두 가지 스크립트가 있습니다.
+
+- [Visual Studio 및 Xamarin 스크립트](#visual-studio-for-mac-and-xamarin-script)
+- [.NET Core 스크립트](#net-core-script)
+
+다음 섹션에서는 스크립트를 다운로드하고 사용하는 방법에 대한 정보를 제공합니다.
+
+### <a name="visual-studio-for-mac-and-xamarin-script"></a>Mac용 Visual Studio 및 Xamarin 스크립트
+
+[스크립트 제거](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)를 사용하면 Visual Studio 및 Xamarin 구성 요소를 한 번에 제거할 수 있습니다.
 
 이 제거 스크립트는 이 문서에 나와 있는 대부분의 명령을 포함합니다. 다음과 같은 두 가지 항목은 외부 종속성 문제의 소지가 있어 이 스크립트에 포함되지 않았습니다.
 
@@ -44,6 +54,26 @@ Mac용 Visual Studio와 같은 독립형 앱을 포함하여 플랫폼 간 응�
     $ sudo ./uninstall-vsmac.sh
     ```
 4. 마지막으로 제거 스크립트를 삭제합니다.
+
+### <a name="net-core-script"></a>.NET Core 스크립트
+
+.NET Core의 제거 스크립트는 [dotnet cli 리포지토리](https://raw.githubusercontent.com/dotnet/cli/master/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh)에 있습니다.
+
+스크립트를 실행하려면 다음 단계를 수행하십시오.
+
+1. 스크립트를 마우스 오른쪽 단추로 클릭하고 **다른 이름으로 저장...** 을 선택하여 Mac에 파일을 저장합니다.
+2. 터미널을 열고 스크립트를 다운로드한 위치로 작업 디렉터리를 변경합니다.
+
+    ```bash
+    $ cd /location/of/file
+    ```
+3. 스크립트를 실행 가능으로 설정하고 **sudo**로 실행합니다.
+
+    ```bash
+    $ chmod +x ./dotnet-uninstall-pkgs.sh
+    $ sudo ./dotnet-uninstall-pkgs.sh
+    ```
+4. 마지막으로 .NET Core 제거 스크립트를 삭제합니다.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Mac용 Visual Studio 제거
 

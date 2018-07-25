@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146025"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>연습: 추가 기능 사용자 지정 편집기
 사용자 지정 편집기를 만든 후에 더 많은 기능을 추가할 수 있습니다.  

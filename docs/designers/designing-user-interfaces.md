@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 192010763a5a00981ca65adc2cbb5fe8fa024aab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82b44b024b3914061bf79f70fedf76c81a3ebffc
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890024"
 ---
 # <a name="design-user-interfaces"></a>사용자 인터페이스 디자인
 

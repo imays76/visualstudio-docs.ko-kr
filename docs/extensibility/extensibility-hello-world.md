@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134810"
 ---
 # <a name="creating-your-first-extension-hello-world"></a>첫 번째 확장 프로그램을 만들기: Hello World
 
@@ -121,7 +122,7 @@ Hello World 예제에서는 Visual Studio에 대 한 첫 번째 확장 프로그
 
 ![실험적 인스턴스 제목 표시줄](media/hello-world-exp-instance.png)
 
-2단계. 에 **도구** 의 메뉴는 **실험적 인스턴스**, 클릭 **Say Hello World!**합니다.
+2단계. 에 **도구** 의 메뉴는 **실험적 인스턴스**, 클릭 **Say Hello World!** 합니다.
 
 ![최종 결과](media/hello-world-final-result.png)
 

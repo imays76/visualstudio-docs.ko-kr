@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145011"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>어떤&#39;의 새로운 소스 제어 플러그 인 API 버전 1.3
 소스 제어 플러그 인 API 버전 1.3에서는 보다 고급 수준의 제어를 제공 다음과 같은 새로운 함수입니다.  

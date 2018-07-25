@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e9cddadd65628e23ee6be366edbc72edb82498be
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327052"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
 Visual Studio는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 를 호스팅하여 관리되는 프로젝트를 로드하고 빌드합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 에서 프로젝트를 관리하므로 프로젝트가 다른 도구에서 작성되어 사용자 지정된 빌드 프로세스를 가지더라도 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 형식의 프로젝트는 대부분 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용될 수 있습니다.  
@@ -44,7 +45,7 @@ Visual Studio는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 ## <a name="configurations-and-platforms"></a>구성 및 플랫폼  
  구성은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 특성을 포함하는 `PropertyGroup` 요소에서 그룹화된 속성으로 `Condition` 프로젝트에 표시됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서는 표시할 프로젝트 구성과 플랫폼 목록을 만들기 위해 이러한 조건을 확인합니다. 이 목록을 추출하려면 조건의 형식이 다음과 비슷해야 합니다.  
   
-```  
+```xml  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
 Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  

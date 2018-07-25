@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148600"
 ---
 # <a name="language-service-and-editor-extension-points"></a>언어 서비스 및 편집기 확장 지점
 편집기는 프레임 워크 MEF (Managed Extensibility) 구성 요소 부분을 대부분 언어 서비스 기능으로 확장할 수 있는 확장명 지점을 제공 합니다. 다음은 기본 확장 지점 범주입니다.  

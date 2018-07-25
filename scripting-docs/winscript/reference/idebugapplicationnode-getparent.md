@@ -1,11 +1,11 @@
 ---
 title: IDebugApplicationNode::GetParent | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplicationNode.GetParent
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplicationNode::GetParent
 ms.assetid: 88ba3a53-0cd7-4e1f-8558-79c20ac76cc9
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725363"
 ---
 # <a name="idebugapplicationnodegetparent"></a>IDebugApplicationNode::GetParent
 이 응용 프로그램 노드의 부모 노드를 반환합니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132093"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>속성 및 프로젝트 하위 형식에 의해 확장 메서드
 프로젝트 하위 형식에는 전원 기본 프로젝트의 집계로 생성 된 때문에 프로젝트의 동작에 영향을 줍니다. 이 섹션에는 프로젝트 하위 형식에 의해 수정 되거나 향상 될 수 있는 기능 중 일부를 요약 합니다.  

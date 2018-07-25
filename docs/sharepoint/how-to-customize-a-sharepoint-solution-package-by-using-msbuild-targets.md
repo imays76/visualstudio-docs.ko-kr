@@ -1,5 +1,5 @@
 ---
-title: '방법: MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지를 사용자 지정 | Microsoft Docs'
+title: '방법: MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지 사용자 지정 | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,16 +17,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90358624f5de8fc7c90e3424f04617acab4388a4
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a8842396d90eff6f3beb9c05e8916e48411e82bd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119776"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>방법: MSBuild 대상을 사용하여 SharePoint 솔루션 패키지 사용자 지정
-  명령 프롬프트에서 MSBuild 대상을 사용하여 Visual Studio에서 SharePoint 패키지 파일(.wsp)을 만드는 방법을 사용자 지정할 수 있습니다. 예를 들어 MSBuild 속성을 사용자 지정하여 패키징 중간 디렉터리 및 열거되는 파일을 지정하는 MSBuild 항목 그룹을 변경할 수 있습니다.  
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>방법: MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지 사용자 지정
+  명령 프롬프트에서 MSBuild 대상을 사용 하 여 사용자 지정할 수 있습니다 Visual Studio에서 SharePoint 패키지 파일을 만드는 방법을 (*.wsp*). 예를 들어 MSBuild 속성을 사용자 지정하여 패키징 중간 디렉터리 및 열거되는 파일을 지정하는 MSBuild 항목 그룹을 변경할 수 있습니다.  
   
-## <a name="customizing-and-running-msbuild-targets"></a>사용자 지정 하 고 MSBuild 대상 실행  
+## <a name="customize-and-run-msbuild-targets"></a>사용자 지정 및 MSBuild 대상 실행  
  BeforeLayout 및 AfterLayout 대상을 사용자 지정하는 경우 패키지 레이아웃 전에 패키지될 파일의 추가, 제거, 수정 등의 작업을 수행할 수 있습니다.  
   
 #### <a name="to-customize-the-beforelayout-target"></a>BeforeLayout 대상 사용자 지정 하려면  
@@ -43,11 +44,11 @@ ms.lasthandoff: 05/22/2018
   
      이 예제에서는 이 대상의 패키징 전에 메시지를 표시합니다.  
   
-2.  파일 이름을 **CustomLayout.SharePoint.targets**, 한 다음 SharePoint 프로젝트에 대 한 폴더에 저장 합니다.  
+2.  파일 이름을 **CustomLayout.SharePoint.targets**, 한 다음 SharePoint 프로젝트의 폴더에 저장 합니다.  
   
-3.  프로젝트를 열고, 해당 바로 가기 메뉴를 연 다음 선택 **프로젝트 언로드**합니다.  
+3.  프로젝트를 열고 해당 바로 가기 메뉴를 열고, 선택한 **프로젝트 언로드**합니다.  
   
-4.  **솔루션 탐색기**를 프로젝트에 대 한 바로 가기 메뉴를 열고 다음을 선택 **편집***ProjectName***.vbproj** 또는 **편집***ProjectName*** .csproj**합니다.  
+4.  **솔루션 탐색기**선택한를 프로젝트에 대 한 바로 가기 메뉴를 열고 **편집**  *\<ProjectName >.vbproj* 또는 **편집**  *\<ProjectName >.csproj*합니다.  
   
 5.  프로젝트 파일의 끝 부분에 있는 `Import` 행 뒤에 다음 줄을 추가합니다.  
   
@@ -57,15 +58,15 @@ ms.lasthandoff: 05/22/2018
   
 6.  프로젝트 파일을 저장하고 닫습니다.  
   
-7.  **솔루션 탐색기**를 프로젝트에 대 한 바로 가기 메뉴를 열고 다음 선택 **프로젝트 다시 로드**합니다.  
+7.  **솔루션 탐색기**선택한를 프로젝트에 대 한 바로 가기 메뉴를 열고 **프로젝트 다시 로드**합니다.  
   
  프로젝트를 게시할 때 패키징이 시작되기 전에 메시지가 출력에 나타납니다.  
   
 #### <a name="to-customize-the-afterlayout-target"></a>AfterLayout 대상을 사용자 지정 하려면  
   
-1.  메뉴 모음에서 **파일**, **열려**, **파일**합니다.  
+1.  메뉴 모음에서 선택 **파일** > **Open** > **파일**합니다.  
   
-2.  에 **열려 있는 파일** 대화 상자에서 프로젝트 폴더로 이동, CustomLayout.target 파일을 선택한 다음 선택에서 **열려** 단추입니다.  
+2.  에 **열려 있는 파일** 대화 상자, 프로젝트 폴더로 이동, CustomLayout.target 파일을 선택한 다음는 **열려** 단추입니다.  
   
 3.  `</Project>` 태그 바로 앞에 다음 코드를 추가합니다.  
   
@@ -83,7 +84,6 @@ ms.lasthandoff: 05/22/2018
   
  프로젝트를 게시하면 패키징이 시작되기 전에 BeforeLayout 메시지가 나타나고 패키징이 완료된 후 AfterLayout 메시지가 나타납니다.  
   
-## <a name="see-also"></a>참고 항목  
- [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+## <a name="see-also"></a>참고자료
+ [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262625"
 ---
 # <a name="filter-report-views"></a>보고서 뷰 필터링
 프로파일링 데이터 파일에 필터를 적용하여 성능 보고서 뷰에 표시되고 보고서 파일로 내보내는 프로파일링 데이터를 제한할 수 있습니다. 타임스탬프 값 사이의 데이터로 보고서를 제한하고, 특정 프로세스 및 스레드로 데이터를 제한할 수 있습니다. 파일에 필터를 저장한 다음 저장된 필터를 가져와서 다른 프로파일링 데이터 파일에서 필터를 만들 수 있습니다.  

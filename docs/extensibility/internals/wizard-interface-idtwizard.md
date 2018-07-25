@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140705"
 ---
 # <a name="wizard-interface-idtwizard"></a>마법사 인터페이스 (IDTWizard)
 통합된 개발 환경 (IDE)을 사용 하 여 <xref:EnvDTE.IDTWizard> 마법사와 통신 하는 인터페이스입니다. 마법사는 IDE에서 설치 하려면이 인터페이스를 구현 해야 합니다.  

@@ -18,18 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c72dd684092784c88b1ef6dd76d410ac9ff84d5
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077092"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;어셈블리&gt; 요소 (ClickOnce 응용 프로그램)
 응용 프로그램 매니페스트에 대 한 최상위 요소입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
   
       <assembly  
    manifestVersion  
@@ -37,7 +38,7 @@ ms.lasthandoff: 05/07/2018
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- `assembly` 요소는 루트 요소와가 필요 합니다. 포함된 된 첫 번째 요소 여야 합니다는 `assemblyIdentity` 요소입니다. 매니페스트 요소는 다음 네임 스페이스 중 하나에 있어야 합니다.  
+ `assembly` 요소는 루트 요소와가 필요 합니다. 포함 된 첫 번째 요소 여야 합니다는 `assemblyIdentity` 요소입니다. 매니페스트 요소는 다음 네임 스페이스 중 하나 여야 합니다.  
   
  `urn:schemas-microsoft-com:asm.v1`  
   
@@ -45,18 +46,18 @@ ms.lasthandoff: 05/07/2018
   
  `http://www.w3.org/2000/09/xmldsig#`  
   
- 어셈블리의 자식 요소도이 네임 스페이스를 상속 하거나 태그를 지정 하 여에 있어야 합니다.  
+ 이러한 네임 스페이스를 상속 하거나 태그를 지정 하 여 어셈블리의 자식 요소 여야 합니다.  
   
  `assembly` 요소에는 다음 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`manifestVersion`|필수. `manifestVersion` 특성으로 설정 되어 있어야 `1.0`합니다.|  
+|`manifestVersion`|필수. 합니다 `manifestVersion` 특성으로 설정 되어 있어야 `1.0`합니다.|  
   
-## <a name="example"></a>예제  
- 다음 코드 예제는 `assembly` 요소에 대 한 응용 프로그램 매니페스트에서 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램입니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)합니다.  
+## <a name="example"></a>예  
+ 다음 코드 예제는 `assembly` 요소에 대 한 응용 프로그램 매니페스트에서 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램입니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)합니다.  
   
-```  
+```xml
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
   manifestVersion="1.0"   

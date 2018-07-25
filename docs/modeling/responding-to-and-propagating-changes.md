@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954007"
 ---
 # <a name="responding-to-and-propagating-changes"></a>변경 내용에 대한 대응 및 전파
 요소 생성, 삭제 또는 업데이트 하는 경우에 모델의 다른 부분 또는 파일, 데이터베이스 또는 다른 구성 요소와 같은 외부 리소스에 변경 내용을 전파 하는 코드를 작성할 수 있습니다.

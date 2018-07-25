@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133191"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>새 프로젝트 생성: 내부적으로 2 부
 [새 프로젝트 생성: 고급, 1 부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) 살펴본 방법을 **새 프로젝트** 대화 상자가 채워집니다. 선택한를 가정해 보겠습니다는 **Visual C# Windows 응용 프로그램**, 입력 한는 **이름** 및 **위치** 텍스트 상자 및 확인을 클릭된 합니다.  

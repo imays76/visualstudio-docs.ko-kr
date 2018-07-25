@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080407"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;제품&gt; 요소 (부트스트래퍼)
-`Product` 요소는 요소는 제품 파일 내의 최상위 XML 요소입니다.  
+`Product` 요소는 제품 파일 내의 최상위 XML 요소입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <Product  
 ProductCode  
 >  
@@ -139,16 +140,16 @@ ProductCode
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- `Product` 요소는 제품 파일에 필요 합니다. 다음과 같은 특성이 있습니다.  
+ `Product` 요소는 제품 파일에 필요 합니다. 다음 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
 |`ProductCode`|제품에 대 한 고유 식별자입니다.|  
   
-## <a name="example"></a>예제  
- 다음 코드 예제를 설치 하기 위한 완전 한 제품 파일을 보여 줍니다.는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다.  
+## <a name="example"></a>예  
+ 다음 코드 예제에는 설치에 대 한 완전 한 제품 파일을 보여 줍니다는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  
@@ -250,5 +251,5 @@ ProductCode
 </Product>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

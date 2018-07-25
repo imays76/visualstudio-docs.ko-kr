@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463665"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
 기호 참조 하는지 여부는 코드 주소를 지정 하는 플래그를 검색 합니다.  

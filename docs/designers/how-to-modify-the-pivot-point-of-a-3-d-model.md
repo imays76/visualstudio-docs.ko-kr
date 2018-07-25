@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f6cff8e8890b97e7aeddad69c4a1a3e0ff5db8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 352685e6b31aa688ff51f9564f141fa800c348d8
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977821"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>방법: 3D 모델의 피벗 점 수정
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 
 수정된 피벗 점이 있는 모델은 다음과 같습니다.
 
-![수정된 피벗 점이 있는 집 모델](../designers/media/digit-modified-model.png "Digit-Modified-Model")
+![수정된 피벗 점이 있는 집 모델](../designers/media/digit-modified-model.png)
 
 ## <a name="see-also"></a>참고 항목
 

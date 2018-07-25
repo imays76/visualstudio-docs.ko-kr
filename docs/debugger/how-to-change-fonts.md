@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472239"
 ---
 # <a name="how-to-change-fonts"></a>방법: 글꼴 변경
 글꼴, 글꼴 스타일 및 Spy + + 창에 대 한 글꼴 크기를 변경할 수 있습니다.  

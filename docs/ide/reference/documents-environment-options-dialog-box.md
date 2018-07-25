@@ -39,6 +39,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948979"
 ---
 # <a name="documents-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 문서
 **옵션** 대화 상자의 이 페이지를 사용하여 IDE(통합 개발 환경)에서 문서 표시를 제어하고 문서 및 파일에 대한 외부 변경 내용을 관리합니다. 이 대화 상자에 액세스하려면 **도구** 메뉴에서 **옵션**을 클릭하고 **환경** 노드에서 **문서**를 선택합니다. **문서**가 목록에 나타나지 않으면 **옵션** 대화 상자에서 **모든 설정 표시**를 선택합니다.

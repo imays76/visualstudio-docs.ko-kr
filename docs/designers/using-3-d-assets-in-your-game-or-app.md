@@ -1,6 +1,7 @@
 ---
 title: 게임 또는 앱에서 3D 자산 사용
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -16,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfd757a88ebfddb9f86eb233ba407fd7eb9b27e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081311"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>게임 또는 앱에서 3D 자산 사용
 
@@ -34,9 +36,9 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>프로젝트에 빌드 사용자 지정을 추가하려면
 
-1.  **솔루션 탐색기**에서 프로젝트에 대한 바로 가기 메뉴를 열고 **빌드 종속성**, **빌드 사용자 지정**을 차례로 선택합니다. **Visual C++ 빌드 사용자 지정 파일** 대화 상자가 표시됩니다.
+1.  **솔루션 탐색기**에서 프로젝트에 대한 바로 가기 메뉴를 연 다음, **빌드 종속성** > **빌드 사용자 지정**을 차례로 선택합니다. **Visual C++ 빌드 사용자 지정 파일** 대화 상자가 표시됩니다.
 
-2.  **사용 가능한 빌드 사용자 지정 파일**에서 다음 테이블에서 설명한 대로 프로젝트에서 사용하려는 자산 형식에 해당하는 확인란을 선택합니다.
+2.  **사용 가능한 빌드 사용자 지정 파일**에서는 다음 테이블에서 설명한 대로 프로젝트에서 사용하려는 자산 형식에 해당하는 확인란을 선택합니다.
 
     |자산 형식|빌드 사용자 지정 이름|
     |----------------|------------------------------|
@@ -62,13 +64,13 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 
 4.  **확인** 단추를 선택합니다.
 
-다음은 3가지 콘텐츠 파이프라인 항목 형식, 관련 소스 및 출력 파일 형식입니다.
+세 가지 콘텐츠 파이프라인 항목 형식, 연결된 해당 원본 및 출력 파일 형식은 다음과 같습니다.
 
 |항목 형식|원본 파일 형식|출력 파일 형식|
 |---------------|-----------------------|------------------------|
-|**이미지 콘텐츠 파이프라인**|Portable Network Graphics(.png)<br /><br /> JPEG(.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface(.dds)<br /><br /> Graphics Interchange Format(.gif)<br /><br /> Bitmap(.bmp, .dib)<br /><br /> Tagged Image File Format(.tif, .tiff)<br /><br /> Targa(.tga)|DirectDraw Surface(.dds)|
-|**메시 콘텐츠 파이프라인**|AutoDesk FBX 교환 파일(.fbx)<br /><br /> Collada DAE 파일(.dae)<br /><br /> Wavefront OBJ 파일(.obj)|3D 메시 파일(.cmo)|
-|**셰이더 콘텐츠 파이프라인**|시각적 셰이더 그래프(.dgsl)|컴파일된 셰이더 출력(.cso)|
+|**이미지 콘텐츠 파이프라인**|이동식 네트워크 그래픽(*.png*)<br /><br /> JPEG(*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface(*.dds*)<br /><br /> Graphics Interchange Format(*.gif*)<br /><br /> Bitmap(*.bmp*, *.dib*)<br /><br /> Tagged Image File Format(*.tif*, *.tiff*)<br /><br /> Targa(*.tga*)|DirectDraw Surface(*.dds*)|
+|**메시 콘텐츠 파이프라인**|AutoDesk FBX 교환 파일(*.fbx*)<br /><br /> Collada DAE 파일(*.dae*)<br /><br /> Wavefront OBJ 파일(*.obj*)|3D 메시 파일(*.cmo*)|
+|**셰이더 콘텐츠 파이프라인**|시각적 셰이더 그래프(*.dgsl*)|컴파일된 셰이더 출력(*.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>자산 콘텐츠 파이프라인 속성 구성
 
@@ -115,7 +117,7 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 
 ### <a name="use-textures-and-images"></a>질감 및 이미지 사용
 
-Direct3D에서는 질감 리소스를 만들기 위한 기능을 제공합니다. Direct3D 11에서 D3DX11 유틸리티 라이브러리는 이미지 파일에서 직접 질감 리소스 및 리소스 뷰를 만들 수 있는 추가 기능을 제공합니다. Direct3D 11에서 질감 리소스를 만드는 방법에 대한 자세한 내용은 [질감](http://go.microsoft.com/fwlink/p/?LinkID=246267)을 참조하세요. D3DX11 라이브러리를 사용하여 이미지 파일에서 질감 리소스 또는 리소스 뷰를 만드는 방법에 대한 자세한 내용은 [방법: 파일에서 질감 초기화](http://go.microsoft.com/fwlink/p/?LinkId=246268)를 참조하세요.
+Direct3D에서는 질감 리소스를 만들기 위한 기능을 제공합니다. Direct3D 11에서 D3DX11 유틸리티 라이브러리는 이미지 파일에서 직접 질감 리소스 및 리소스 뷰를 만들 수 있는 추가 기능을 제공합니다. Direct3D 11에서 질감 리소스를 만드는 방법에 대한 자세한 내용은 [질감](http://go.microsoft.com/fwlink/p/?LinkID=246267)을 참조하세요. D3DX11 라이브러리를 사용하여 이미지 파일에서 질감 리소스 또는 리소스 보기를 만드는 방법에 대한 자세한 내용은 [방법: 파일에서 질감 초기화](http://go.microsoft.com/fwlink/p/?LinkId=246268)를 참조하세요.
 
 ### <a name="use-3d-models"></a>3D 모델 사용
 
@@ -143,7 +145,7 @@ struct PixelShaderInput
 
 셰이더에서 사용하는 셰이더 디자이너 노드에 따라 다음 정의에 따른 형식으로 추가 데이터를 제공해야 합니다.
 
-```
+```hlsl
 Texture2D Texture1 : register( t0 );
 Texture2D Texture2 : register( t1 );
 Texture2D Texture3 : register( t2 );

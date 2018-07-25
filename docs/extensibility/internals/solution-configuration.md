@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132723"
 ---
 # <a name="solution-configuration"></a>솔루션 구성
 솔루션 구성 솔루션 수준 속성을 저장 합니다. 직접 실행의 동작에서 **시작** (F5) 키 및 **빌드** 명령입니다. 기본적으로 이들이 명령은 빌드하고 디버그 구성을 시작 합니다. 두 명령 모두 솔루션 구성의 컨텍스트에서 실행 됩니다. 즉, 사용자를 시작 및 빌드 설정을 통해 구성 된 모든 활성 솔루션 f5 키를 예상할 수 있도록 합니다. 환경이 빌드 및 실행 하는 데 있어 프로젝트 대신 솔루션을 위해 최적화 하도록 설계 되었습니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31124645"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>인터페이스 (Visual Studio 디버깅)
 메서드는 내용의 고 Vtable 순서의 인터페이스 페이지에는 테이블의 각 인터페이스에서 사전순으로 나열 됩니다.  

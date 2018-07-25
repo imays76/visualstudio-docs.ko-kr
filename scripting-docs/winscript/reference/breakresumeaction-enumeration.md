@@ -1,11 +1,11 @@
 ---
-title: "BREAKRESUMEACTION 열거형 | Microsoft Docs"
-ms.custom: 
+title: BREAKRESUMEACTION 열거형 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - BREAKRESUMEACTION
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - BREAKRESUMEACTION enumeration
 ms.assetid: b39fcc82-7776-4caa-8155-b398de68df03
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641223"
 ---
 # <a name="breakresumeaction-enumeration"></a>BREAKRESUMEACTION 열거형
 중단점에서 계속하는 방법을 설명합니다.  

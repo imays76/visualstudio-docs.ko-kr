@@ -1,13 +1,13 @@
 ---
-title: "함수에 유효한 프로토타입 개체가 | Microsoft Docs"
-ms.custom: 
+title: 함수에 유효한 프로토타입 개체가 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5023
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b9e34652-190f-4b57-b253-df2e8c4d09c6
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633013"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>함수에 유효한 프로토타입 개체가 없습니다.
 사용 하려는 **instanceof** 개체는 특정 함수 클래스에서 파생 되지만 개체의 재정의 확인 하려면 `prototype` 하나로 속성 `null`, 또는 외부 개체 형식 (모두 유효 하지 않은 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 개체). 외부 개체 (예를 들어 Internet Explorer의 문서 또는 창 개체)는 호스트 개체 모델에서 개체 또는 외부 COM 개체 수 있습니다.  

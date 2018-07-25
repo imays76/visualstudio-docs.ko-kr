@@ -1,14 +1,14 @@
 ---
-title: "IActiveScriptProfilerCallback3 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IActiveScriptProfilerCallback3 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: dbd39a4a-457e-4866-a86c-fa4da208121b
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724963"
 ---
 # <a name="iactivescriptprofilercallback3-interface"></a>IActiveScriptProfilerCallback3 인터페이스
 웹 작업자의 컨텍스트에서 프로 파일링된 실행 될 때 발생 하 고 프로파일러에 알리기 위해 메서드를 제공 합니다.  

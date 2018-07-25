@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943620"
 ---
 # <a name="list-source-command"></a>소스 목록 표시 명령
 소스 코드의 지정된 줄을 표시합니다.

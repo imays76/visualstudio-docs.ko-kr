@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477732"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>방법: 뷰와 XML 편집기 사이 전환
 

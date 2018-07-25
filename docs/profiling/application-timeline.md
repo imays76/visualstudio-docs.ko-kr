@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1e68542de70c868f6113348e519f866bf60bc381
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36759002"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>리소스 소비량 및 UI 스레드 활동 분석(XAML)
 **응용 프로그램 타임라인** 프로파일러를 사용하여 XAML 응용 프로그램에서 응용 프로그램 상호 작용 관련 성능 문제를 찾으세요. 이 도구를 사용하면 응용 프로그램의 리소스 소비에 대해 자세히 알 수 있어서 XAML 응용 프로그램의 성능을 개선하는 데 도움이 됩니다. 응용 프로그램 UI 프레임(레이아웃 및 렌더링)을 준비하고, 네트워크 및 디스크 요청을 처리하여, 응용 프로그램 시작, 페이지 로드 및 창 크기 조정과 같은 시나리오에서 응용 프로그램이 보낸 시간을 분석할 수 있습니다.  
@@ -34,10 +35,10 @@ ms.lasthandoff: 05/17/2018
 5.  Windows 7  
   
 > [!NOTE]
->  **응용 프로그램 타임라인** 데이터와 함께 CPU 사용량 데이터 및 에너지 소비량 데이터를 수집하고 분석할 수 있습니다. [디버그를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
+>  **응용 프로그램 타임라인** 데이터와 함께 CPU 사용량 데이터 및 에너지 소비량 데이터를 수집하고 분석할 수 있습니다. [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> 응용 프로그램 타임라인 데이터 수집  
- 로컬 시스템, 연결된 장치, Visual Studio 시뮬레이터 또는 에뮬레이터, 또는 원격 장치에서 앱 응답성을 프로파일링할 수 있습니다. [디버그를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
+## <a name="collect-application-timeline-data"></a>응용 프로그램 타임라인 데이터 수집  
+ 로컬 시스템, 연결된 장치, Visual Studio 시뮬레이터 또는 에뮬레이터, 또는 원격 장치에서 앱 응답성을 프로파일링할 수 있습니다. [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
   
 > [!TIP]
 >  가능한 경우 장치에서 앱을 직접 실행합니다. 시뮬레이터에서 또는 원격 데스크톱 연결을 통해 관찰한 응용 프로그램 성능은 장치의 실제 성능과 다를 수 있습니다. 반면에 Visual Studio 원격 도구를 사용하여 데이터를 수집하면 성능 데이터에 영향을 주지 않습니다.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 05/17/2018
 3.  **응용 프로그램 타임라인** 을 선택한 다음 창 하단의 **시작** 을 클릭합니다.  
   
     > [!NOTE]
-    >  VsEtwCollector.exe 실행 권한을 요청하는 사용자 계정 컨트롤 창이 나타날 수 있습니다. **예**를 클릭합니다.  
+    >  *VsEtwCollector.exe* 실행 권한을 요청하는 사용자 계정 컨트롤 창이 나타날 수 있습니다. **예**를 클릭합니다.  
   
 4.  성능 데이터를 수집하는 앱에서 프로파일링에 관심 있는 시나리오를 실행합니다.  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 05/17/2018
   
      ![타임라인 프로파일러 보고서](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> 타임라인 프로파일링 데이터 분석  
+## <a name="analyze-timeline-profiling-data"></a>타임라인 프로파일링 데이터 분석  
  프로파일링 데이터를 수집한 후 이러한 단계를 이용하여 분석을 시작할 수 있습니다.  
   
 1.  **UI 스레드 사용률** 과 **시각적 처리량(FPS)** 그래프의 정보를 검사한 다음 타임라인 탐색 모음을 사용하여 분석할 시간 범위를 선택합니다.  
@@ -96,7 +97,7 @@ ms.lasthandoff: 05/17/2018
 |||  
 |-|-|  
 |**구문 분석**|XAML 파일을 구문 분석하고 개체를 만드는 데 걸린 시간입니다.<br /><br /> **타임라인 세부 정보** 에서 **구문 분석** 노드를 확장하면 루트 이벤트의 결과로 구문 분석된 모든 XAML 파일의 종속성 체인이 표시됩니다. 이렇게 하면 성능이 중요한 시나리오에서 불필요한 파일 구문 분석 및 개체 만들기를 식별하고 최적화할 수 있습니다.|  
-|**레이아웃**|큰 응용 프로그램에서는 수천 개의 요소가 동시에 화면에 표시될 수 있습니다. 이로 인해 UI 프레임 속도가 느려지고 응용 프로그램의 응답성이 나빠질 수 있습니다. 레이아웃 이벤트는 각 요소의 레이아웃을 지정하는 비용(즉, Arrange, Measure, ApplyTemplate, ArrangeOverride 및 ArrangeOverride에서 보내는 시간)을 정확하게 결정하고 레이아웃 단계에 참여하는 시각적 트리를 빌드합니다. 이 시각화를 사용하여 정리할 논리 트리를 결정하거나 다른 지연 메커니즘을 평가하여 레이아웃 단계를 최적화할 수 있습니다.|  
+|**레이아웃**|큰 응용 프로그램에서는 수천 개의 요소가 동시에 화면에 표시될 수 있습니다. 이로 인해 UI 프레임 속도가 느려지고 응용 프로그램의 응답성이 나빠질 수 있습니다. 레이아웃 이벤트는 각 요소의 레이아웃을 지정하는 비용(즉, Arrange, Measure, ApplyTemplate 및 ArrangeOverride에 소요되는 시간)을 정확하게 결정하고 레이아웃 단계에 참여하는 시각적 트리를 빌드합니다. 이 시각화를 사용하여 정리할 논리 트리를 결정하거나 다른 지연 메커니즘을 평가하여 레이아웃 단계를 최적화할 수 있습니다.|  
 |**렌더링**|화면에 XAML 요소를 그리는 데 소요된 시간입니다.|  
 |**I/0**|로컬 디스크 또는 [Microsoft Windows 인터넷(WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx)를 통해 액세스된 네트워크 리소스에서 데이터를 검색하는 데 소요된 시간입니다.|  
 |**앱 코드**|구문 분석 또는 레이아웃과 관련이 없는 응용 프로그램(사용자) 코드를 실행하는 데 소요된 시간입니다.|  
@@ -116,8 +117,8 @@ ms.lasthandoff: 05/17/2018
 |![타임라인 세부 정보 사용자 지정](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|이벤트에 대한 주석을 지정할 수 있습니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)(WPF 팀 블로그: WPF 응용 프로그램의 새로운 UI 성능 분석 도구)  
+ [WPF 팀 블로그: WPF 응용 프로그램의 새로운 UI 성능 분석 도구](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [C++, C# 및 Visual Basic을 사용하는 UWP 앱의 성능 모범 사례](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [WPF 응용 프로그램 성능 최적화](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459651"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>원격 디버깅을 위한 방화벽 구성 대화 상자
 이 대화 상자는 Windows 방화벽에서 디버거가 네트워크를 통해 정보를 받는 것을 차단할 때 나타납니다. 원격 디버깅을 계속하려면 디버거가 정보를 받을 수 있도록 방화벽에서 한 지점을 열어야 합니다.  

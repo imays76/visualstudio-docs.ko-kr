@@ -1,16 +1,16 @@
 ---
-title: "IDebugExpression 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugExpression 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpression interface
 ms.assetid: 36c00ffb-7160-4c30-a2c9-c9d70c8213cd
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727793"
 ---
 # <a name="idebugexpression-interface"></a>IDebugExpression 인터페이스
 비동기적으로 평가 된 식을 나타냅니다. 스크립트 엔진은 일반적으로이 인터페이스를 구현 합니다. 일반적으로 디버거 IDE는 즉시 실행 창이 활성화 또는 조사식 창에이 인터페이스를 사용 합니다.  

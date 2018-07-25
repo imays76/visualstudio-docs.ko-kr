@@ -1,7 +1,7 @@
 ---
 title: '빠른 시작: Visual Studio를 사용하여 Python 웹앱 만들기'
 description: 이 빠른 시작에서 Visual Studio 및 Flask 프레임워크를 사용하여 Python에서 간단한 웹앱을 빌드합니다.
-ms.date: 05/07/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b8668bbdb686b3c8c60380dd5592a2897a43b45b
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089427"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기
 
 Python IDE인 Visual Studio에 대한 5~10분 분량의 소개에서는 Flask 프레임워크에 따라 간단한 Python 웹 응용 프로그램을 만듭니다. Visual Studio의 기본 기능에 대해 알 수 있는 불연속 단계를 통해 프로젝트를 만듭니다.
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)로 이동하여 체험용으로 설치합니다. 설치 관리자에서 **Python 개발** 워크로드를 선택하도록 합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)로 이동하여 체험용으로 설치합니다. 설치 관리자에서 **Python 개발** 워크로드를 선택하도록 합니다.
 
 ## <a name="create-the-project"></a>프로젝트를 만듭니다.
 
@@ -145,15 +146,12 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
 축하합니다! Visual Studio에서 첫 번째 Python 앱을 실행했습니다. 여기서 Python IDE인 Visual Studio를 사용하는 방법에 대해 알아보았습니다
 
-이 빠른 시작에서 수행한 단계가 매우 일반적이기 때문에 자동화될 수 있다고 추측할 수 있습니다. 이러한 자동화는 Visual Studio 프로젝트 템플릿의 역할입니다. 이 아티클에서 만든 것과 비슷한 웹앱을 더 적은 단계로 만드는 데모는 아래 단추를 선택합니다.
-
 > [!div class="nextstepaction"]
-> [빠른 시작 - 템플릿을 사용하여 Python 프로젝트 만들기](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
+> [앱을 Azure App Service에 배포](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-대화형 창 사용, 디버깅, 데이터 시각화 및 Git 작업을 포함하여, Visual Studio의 Python에 대한 자습서를 계속 진행하려면 아래 단추를 선택하십시오.
+이 빠른 시작에서 수행한 단계가 매우 일반적이기 때문에 자동화될 수 있다고 추측할 수 있습니다. 이러한 자동화는 Visual Studio 프로젝트 템플릿의 역할입니다. 이 문서에서 만든 것과 비슷하지만 단계가 더 적은 웹앱을 만드는 데모는 [빠른 시작 - 템플릿을 사용하여 Python 프로젝트 만들기](../python/quickstart-02-python-in-visual-studio-project-from-template.md)를 참조하세요.
 
-> [!div class="nextstepaction"]
-> [자습서: Visual Studio에서 Python 시작](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+대화형 창 사용, 디버깅, 데이터 시각화 및 Git 작업을 포함하여 Visual Studio의 Python에 대한 자세한 자습서를 계속 진행하려면 [자습서: Visual Studio에서 Python 시작](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)을 참조하세요.
 
 Visual Studio에서 제공하는 다른 기능을 탐색하려면 아래 링크를 선택합니다.
 

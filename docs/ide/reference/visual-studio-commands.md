@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f124ccc0a4eb7af470a9631bc2291dbeb089711e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924276"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 명령
 Visual Studio에서는 **명령** 창, **직접 실행** 창 또는 **찾기/명령** 상자에서 명령을 호출할 수 있습니다. 각각의 경우 검색 또는 디버그 작업이 아닌 명령을 따라야 함을 나타내기 위해 보다 큼 부호(`>`)가 사용됩니다.
@@ -60,7 +61,6 @@ Visual Studio에서는 **명령** 창, **직접 실행** 창 또는 **찾기/명
 |[새 파일](../../ide/reference/new-file-command.md)|새 파일을 만들고 현재 선택한 프로젝트에 추가합니다.|
 |[파일 열기](../../ide/reference/open-file-command.md)|기존 파일을 열고 편집기를 지정할 수 있습니다.|
 |[프로젝트 열기](../../ide/reference/open-project-command.md)|기존 프로젝트를 열고 현재 솔루션에 프로젝트를 추가할 수 있습니다.|
-|[솔루션 열기](../../ide/reference/open-solution-command.md)|기존 솔루션을 엽니다.|
 |[인쇄](../../ide/reference/print-command.md)|식을 계산하고 결과 또는 지정된 텍스트를 표시합니다.|
 |[간략한 조사식 명령](../../ide/reference/quick-watch-command.md)|**간략한 조사식** 대화 상자의 **식** 필드에 선택한 텍스트 또는 지정한 텍스트를 표시합니다.|
 |[바꾸기](../../ide/reference/replace-command.md)|**찾기 및 바꾸기** 컨트롤에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일의 텍스트를 바꿉니다.|

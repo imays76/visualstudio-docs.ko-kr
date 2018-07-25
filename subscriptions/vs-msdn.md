@@ -9,22 +9,23 @@ description: Visual Studio 구독에 포함된 MSDN Magazine 구독을 받기 �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 590cd180c8bdf5e2fcef4d16c84350bdc1d00273
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7139bbe46b931ce32ea521eab27e7a26f77652dc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280317"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 MSDN Magazine 혜택
 
-실제 문제에 대한 실용적인 솔루션을 위한 Microsoft 기술을 종합적으로 다루고 있습니다.  구독 정보에 따라 인쇄된 잡지 또는 디지털 버전에 빠르게 액세스할 수 있습니다.  
+실제 문제에 대한 실용적인 솔루션을 위한 Microsoft 기술을 종합적으로 다루고 있습니다.  구독 정보에 따라 인쇄된 잡지 또는 디지털 버전에 빠르게 액세스할 수 있습니다.
 
 
 ## <a name="activation-steps"></a>활성화 단계
-혜택을 활성화하는 단계는 선택하는 버전에 따라 달라집니다.  
+혜택을 활성화하는 단계는 선택하는 버전에 따라 달라집니다.
 
 ### <a name="digital-edition"></a>디지털 버전
-디지털 버전은 Visual Studio Dev Essentials 멤버에게 제공됩니다.  
+디지털 버전은 Visual Studio Dev Essentials 멤버에게 제공됩니다.
 
 1.  MSDN Magazine의 디지털 버전에 액세스하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 2.  전문적인 개발 섹션에서 MSDN Magazine 타일을 찾고 **액세스**를 클릭합니다.
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/16/2018
     ![MSDN Magazine 혜택 타일](_img\vs-msdn\vs-msdn-tile.png)
 
 
-3.  MSDN Magazine 페이지에서 기본 설정된 구독 유형을 선택합니다.  디지털 버전은 어디에 거주하든 무료로 선택할 수 있습니다.  인쇄 버전은 미국 거주자에게 무료로 제공됩니다.  미국이 아닌 주소로 보내는 인쇄 버전의 경우 배송 요금이 부과됩니다.  
+3.  MSDN Magazine 페이지에서 기본 설정된 구독 유형을 선택합니다.  디지털 버전은 어디에 거주하든 무료로 선택할 수 있습니다.  인쇄 버전은 미국 거주자에게 무료로 제공됩니다.  미국이 아닌 주소로 보내는 인쇄 버전의 경우 배송 요금이 부과됩니다.
 
     ![MSDN Magazine 혜택 구독](_img\vs-msdn\vs-msdn-subs-page-resized.png)
 
@@ -56,15 +57,15 @@ ms.lasthandoff: 04/16/2018
 |Visual Studio Enterprise, Visual Studio Professional(월간 클라우드)   | Azure |사용할 수 없음      |  해당 없음         |
 |Visual Studio Dev Essentials| 해당 없음 |디지털 버전       |  예|
 
-<sup>1</sup> *인쇄 버전: NFR(전매 금지), VSIP(Visual Studio 업계 파트너), FTE, Microsoft 파트너 네트워크(Enterprise), Imagine(프리미엄).*  
+<sup>1</sup> *인쇄 버전: NFR(전매 금지), VSIP(Visual Studio 업계 파트너), FTE, Microsoft 파트너 네트워크(Enterprise), Imagine(프리미엄).*
 
 *디지털 버전: MCT Software & Services, Microsoft Valued Partner(Professional), RD(Region Director).*
 
 *제외: Imagine(표준), BizSpark, MCT Software & Services Developer*
 
 
-어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다. 
+어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
 ## <a name="support-resources"></a>지원 리소스
--  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://www.visualstudio.com/subscriptions/support/)에 문의하세요.
--  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://www.visualstudio.com/support/)을 참조하세요. 
+-  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+-  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그래밍 방식으로 Outlook 연락처에 항목을 추가 | Microsoft Docs'
+title: '방법: 프로그래밍 방식으로 Outlook 연락처에 항목 추가'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,22 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dcaea2eb4141117ee55f04c1c54fd19dc8cb3e4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 690d3c71ab00d5d32f882529600a91769669a3b1
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255254"
 ---
-# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>방법: 프로그래밍 방식으로 Outlook 연락처에 엔트리 추가
-  이 예제에서는 새 연락처를 만들고 데이터 새 연락처를 입력 합니다.  
+# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>방법: 프로그래밍 방식으로 Outlook 연락처에 항목 추가
+  이 예제에서는 새 연락처를 만들고 데이터를 새 연락처를 입력 합니다.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  [!code-vb[Trin_OL_AddContact#1](../vsto/codesnippet/VisualBasic/Trin_OL_AddContact/thisaddin.vb#1)]
  [!code-csharp[Trin_OL_AddContact#1](../vsto/codesnippet/CSharp/Trin_OL_AddContact/thisaddin.cs#1)]  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [연락처 항목 작업](../vsto/working-with-contact-items.md)   
  [방법: 프로그래밍 방식으로 약속 만들기](../vsto/how-to-programmatically-create-appointments.md)   
  [방법: 프로그래밍 방식으로 Outlook 연락처 액세스](../vsto/how-to-programmatically-access-outlook-contacts.md)   

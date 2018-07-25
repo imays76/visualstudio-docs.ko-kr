@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953088"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
 개발 프로젝트에서 모델을 효과적으로 사용하려면 팀 멤버가 프로젝트의 다른 파트 모델에서 동시에 작업할 수 있어야 합니다. 이 항목에서는 전체 레이어 다이어그램의 레이어에 해당하는 여러 파트로 응용 프로그램을 나누는 체계를 제안합니다.

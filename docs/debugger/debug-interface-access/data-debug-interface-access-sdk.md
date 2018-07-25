@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468374"
 ---
 # <a name="data-debug-interface-access-sdk"></a>데이터(디버그 인터페이스 액세스 SDK)
 모든 변수, 매개 변수, 지역 변수, 전역 변수, 클래스 멤버 등으로 식별 됩니다 `SymTagData` 기호입니다. 상수 값 (`LocIsConstant`)이이 형식으로 구분 됩니다.  

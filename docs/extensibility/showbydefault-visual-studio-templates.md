@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137933"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault(Visual Studio 템플릿)
 경우 `false`, 템플릿을 표시 됨을 지정 합니다. 지정 된 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)합니다.  

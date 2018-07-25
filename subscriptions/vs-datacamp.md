@@ -3,17 +3,18 @@ title: 선택한 Visual Studio 구독의 DataCamp 혜택을 통해 데이터 과
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/20108
+ms.date: 05/30/2018
 ms.topic: Get-Started-Article
 description: 선택한 Visual Studio 구독에 포함된 DataCamp Training 구독에 대해 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ab16223378e8e985c636611bc4598b70bdef20f4
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890131"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 DataCamp Training 혜택
 
@@ -21,40 +22,40 @@ ms.lasthandoff: 05/22/2018
 
 DataCamp 혜택 기간은 Visual Studio 구독에 따라 다릅니다.
 
-## <a name="activation-steps"></a>활성화 단계  
+## <a name="activation-steps"></a>활성화 단계
 
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
 2. “전문 개발" 범주에서 DataCamp 혜택 타일을 찾고 **활성화**를 클릭합니다.
-
     ![DataCamp 혜택 타일](_img\vs-datacamp\vs-datacamp-tile-2.png)
 
 3. DataCamp 페이지에서 새 계정을 만들 수 있습니다.  이메일 주소와 암호를 입력하거나, Facebook, LinkedIn, Google 등의 기존 계정을 사용하여 로그인할 수 있습니다.  로그인 정보를 제공한 후 **시작**을 클릭합니다.
-
     ![DataCamp 새 계정 만들기](_img\vs-datacamp\vs-datacamp-create-account.png)
 
     > [!NOTE]
-    > 계정을 만들기 시작하면 다음과 같은 오류 메시지가 나타날 수 있습니다. “죄송합니다!  프로모션 코드가 잘못되었거나 만료되었습니다."  이것은 프로모션 코드가 만들어질 때 몇 분 후에 만료되기 때문에 발생합니다.  이런 메시지가 표시되면 [혜택](https://my.visualstudio.com/benefits) 페이지로 돌아가서 DataCamp 혜택 타일에서 **활성화** 링크를 클릭하면 됩니다.  
+    > 계정을 만들기 시작하면 다음과 같은 오류 메시지가 나타날 수 있습니다. “죄송합니다!  프로모션 코드가 잘못되었거나 만료되었습니다."  이것은 프로모션 코드가 만들어질 때 몇 분 후에 만료되기 때문에 발생합니다.  이런 메시지가 표시되면 [혜택](https://my.visualstudio.com/benefits) 페이지로 돌아가서 DataCamp 혜택 타일에서 **활성화** 링크를 클릭하면 됩니다.
 
 4. 계정을 만든 후에는 학습 경로를 선택할 수 있습니다.  다음 옵션을 사용할 수 있습니다.
     - 데이터 과학을 위한 R 학습
     - 데이터 과학을 위한 Python 학습 시작
     - 데이터 과학 역량 개발
 
-    시작하려면 선택한 경로를 클릭합니다.   
+
+    시작하려면 선택한 경로를 클릭합니다.
 
      ![DataCamp 경로 선택](_img\vs-datacamp\vs-datacamp-choose-path.png)
 
-5. 경로를 선택한 후 목표를 선택하여 학습 경로를 구체화할 수 있습니다.  예를 들어 "데이터 과학 역량 개발" 경로를 선택하면 다음 옵션이 표시됩니다. 옵션을 선택하거나 **I am not sure.  Show me all career paths**를 선택하면 더 광범위한 경로가 만들어집니다. 
+5. 경로를 선택한 후 목표를 선택하여 학습 경로를 구체화할 수 있습니다.  예를 들어 "데이터 과학 역량 개발" 경로를 선택하면 다음 옵션이 표시됩니다. 옵션을 선택하거나 **I am not sure.  Show me all career paths**를 선택하면 더 광범위한 경로가 만들어집니다.
 
     ![DataCamp 데이터 과학 역량](_img\vs-datacamp\vs-datacamp-datascience.png)
 
 
-6. 선택한 경로와 옵션에 따라 경력 트랙 선택이 표시됩니다.   원하는 트랙에 대해 **등록**을 클릭합니다. 
+6. 선택한 경로와 옵션에 따라 경력 트랙 선택이 표시됩니다.   원하는 트랙에 대해 **등록**을 클릭합니다.
 
     ![DataCamp 경력 트랙](_img\vs-datacamp\vs-datacamp-all-tracks.png)
 
-7. 트랙에 등록하면 해당 트랙의 맨 처음 코스가 열립니다.  탐색, 코스 연습 완료 등, 코스와 상호 작용하는 방법을 설명하는 자습서가 표시됩니다.  
+7. 트랙에 등록하면 해당 트랙의 맨 처음 코스가 열립니다.  탐색, 코스 연습 완료 등, 코스와 상호 작용하는 방법을 설명하는 자습서가 표시됩니다.
+
 
     ![DataCamp 시작](_img\vs-datacamp\vs-datacamp-getting-started.png)
 
@@ -77,13 +78,14 @@ DataCamp 혜택 기간은 Visual Studio 구독에 따라 다릅니다.
 <sup>1</sup> *포함: NFR(전매금지), FTE, MVP(Microsoft Valued Partner), RD(Region Director), MPN(Microsoft 파트너 네트워크), VSIP(Visual Studio 업계 파트너), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
-어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다. 
+
+어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
 
 ## <a name="support-resources"></a>지원 리소스
 -  DataCamp와 관련하여 도움이 필요하세요?  다음 리소스를 확인하세요.
     - 포럼 및 자습서를 제공하는 [DataCamp 커뮤니티](https://www.datacamp.com/community/tutorials).
-    - 지원 항목을 검색하고 사용자 질문을 요청하는 [DataCamp 도움말 센터](https://support.datacamp.com/hc)  
+    - 지원 항목을 검색하고 사용자 질문을 요청하는 [DataCamp 도움말 센터](https://support.datacamp.com/hc)
     - [지원 요청 제출](https://support.datacamp.com/hc/requests/new)
--  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://www.visualstudio.com/subscriptions/support/)에 문의하세요.
--  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://www.visualstudio.com/support/)을 참조하세요. 
+-  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+-  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

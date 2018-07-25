@@ -11,13 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66893198028fcd23e3d42e1e595764e723ed82da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a23c6da2f27ef5b25d33caa3a464ec0f4018b40b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280517"
 ---
-# <a name="reporting-load-tests-results-for-test-comparisons-or-trend-analysis"></a>테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고
+# <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고
 
 둘 이상의 테스트 결과를 기반으로 Microsoft Excel 부하 테스트 보고서를 생성할 수 있습니다. 다음과 같은 두 가지 유형의 부하 테스트 보고서를 사용할 수 있습니다.
 

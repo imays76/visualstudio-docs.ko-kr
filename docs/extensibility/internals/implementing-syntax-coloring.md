@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131857"
 ---
 # <a name="implementing-syntax-coloring"></a>구문 색 지정을 구현합니다.
 언어 서비스 제공 구문 색 지정, 파서가 색 항목 배열에 텍스트 줄을 변환한 색 이러한 항목에 해당 하는 토큰 형식을 반환 합니다. 파서가 색 항목 목록에 속해 있는 토큰 유형을 반환 해야 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 토큰 유형이 적절 한 색 지정 기 개체에 의해 할당 된 속성에 따라 코드 창에서 각 색 항목을 표시 합니다.  

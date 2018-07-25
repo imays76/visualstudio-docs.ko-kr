@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476607"
 ---
 # <a name="spy-help"></a>Spy++ 도움말
 Spy + + 유틸리티에 대 한 설명서에서 사용 하 여 Spy + +와 Spy + + 보기의 일반 항목 중 두 그룹에 포함 됩니다. 그 다음에 Spy + + 하는 참조를 각 사용 가능한 메뉴 명령과 대화 상자에서 추가 정보를 제공 합니다.  

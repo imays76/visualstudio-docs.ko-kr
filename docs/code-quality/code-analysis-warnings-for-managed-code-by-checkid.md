@@ -265,6 +265,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865324"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드의 CheckId 별 코드 분석 경고
 

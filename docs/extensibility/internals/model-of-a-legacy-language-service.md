@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131590"
 ---
 # <a name="model-of-a-legacy-language-service"></a>레거시 언어 서비스의 모델
 언어 서비스는 요소와는 특정 언어에 대 한 기능을 정의 하 고 해당 언어에 관련 정보 편집기를 제공 하는 데 사용 됩니다. 예를 들어 편집기 구문 색 지정을 지원 하기 위해 요소 및 언어의 키워드를 알고 있어야 합니다.  

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: db4b47582d03a7f040850dd69e61d5fee2b80020
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815258"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>연습: 샘플링을 사용하여 명령줄 프로파일링
 
@@ -42,7 +43,7 @@ ms.lasthandoff: 05/22/2018
 샘플링은 특정 프로세스를 주기적으로 폴링하여 활성 함수를 확인하는 프로파일링 방법입니다. 결과 데이터는 프로세스를 샘플링할 때 함수가 호출 스택 위에 있었던 빈도에 해당하는 수를 제공합니다.
 
 > [!NOTE]
-> 프로파일링 도구의 명령줄 도구는 Visual Studio 설치 디렉터리의 \Team Tools\Performance Tools 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용하려면 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요. PeopleTrax는 32비트 응용 프로그램입니다.
+> 프로파일링 도구의 명령줄 도구는 Visual Studio 설치 디렉터리의 *\Team Tools\Performance Tools* 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용하려면 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요. PeopleTrax는 32비트 응용 프로그램입니다.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>샘플링 방법을 사용하여 PeopleTrax 응용 프로그램을 프로파일링하려면
 
@@ -58,13 +59,13 @@ ms.lasthandoff: 05/22/2018
     VSPerfCLREnv /sampleon
     ```
 
-5. 프로파일러를 제어하는 명령줄 도구인 VSPerfCmd.exe를 실행하여 프로파일링을 시작합니다. 다음 명령은 샘플링 모드에서 응용 프로그램 및 프로파일러를 시작합니다.
+5. 프로파일러를 제어하는 명령줄 도구인 *VSPerfCmd.exe*를 실행하여 프로파일링을 시작합니다. 다음 명령은 샘플링 모드에서 응용 프로그램 및 프로파일러를 시작합니다.
 
     ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
-     프로파일러 프로세스가 시작되어 PeopleTrax.exe 프로세스에 연결됩니다. 프로파일러 프로세스가 수집된 프로파일링 데이터를 보고서 파일에 쓰기 시작합니다.
+     프로파일러 프로세스가 시작되어 *PeopleTrax.exe* 프로세스에 연결됩니다. 프로파일러 프로세스가 수집된 프로파일링 데이터를 보고서 파일에 쓰기 시작합니다.
 
 6. **사용자 가져오기**를 클릭합니다.
 
@@ -86,13 +87,13 @@ ms.lasthandoff: 05/22/2018
     VSPerfCLREnv /sampleoff
     ```
 
-11. 프로파일링 데이터는 .vsp 파일에 저장됩니다. 다음 방법 중 하나를 사용하여 결과를 분석합니다.
+11. 프로파일링 데이터는 .*vsp* 파일에 저장됩니다. 다음 방법 중 하나를 사용하여 결과를 분석합니다.
 
-    - Visual Studio IDE에서 .vsp 파일을 엽니다.
+    - Visual Studio IDE에서 .*vsp* 파일을 엽니다.
 
          — 또는 —
 
-    - VSPerfReport.exe 명령줄 도구를 사용하여 쉼표로 구분된 값 (.csv) 파일을 생성합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 외부에서 사용할 보고서를 생성하려면 다음 명령을 사용합니다.
+    - *VSPerfReport.exe* 명령줄 도구를 사용하여 쉼표로 구분된 값(.*csv*) 파일을 생성합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 외부에서 사용할 보고서를 생성하려면 다음 명령을 사용합니다.
 
         ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all

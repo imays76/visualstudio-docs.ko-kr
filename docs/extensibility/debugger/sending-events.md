@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125768"
 ---
 # <a name="sending-events"></a>이벤트 전송
 디버거와 디버그 엔진 (DE) 간의 통신에 대 한 메커니즘은 DCOM을 기반으로 하는 이벤트 모델. 이벤트는 COM 개체로 전송 되 고, 각 이벤트에 다음을 지정 하는 매개 변수:  

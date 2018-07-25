@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476321"
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ 뷰의 검색 도구
 Spy + + 뷰 창에 표시 되는 데이터를 지정 하려면 이러한 대화 상자를 사용 합니다.  

@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280613"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>역할을 테스트 컨트롤러와 테스트 에이전트에 할당
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-create-and-configure-a-test-setting"></a>테스트 설정을 만들고 구성하려면
 
-1.  솔루션 탐색기에서 **솔루션 항목**을 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음, **새 항목**을 선택합니다.
+1.  **솔루션 탐색기**에서 **솔루션 항목**을 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음, **새 항목**을 선택합니다.
 
      **새 항목 추가** 대화 상자가 나타납니다.
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/26/2018
 
 4.  **추가**를 선택합니다.
 
-     새 테스트의 TestSettingDistributedTestWalkthrough.testsettings 파일이 솔루션 탐색기의 **솔루션 항목** 폴더 아래에 나타납니다.
+     새 테스트의 *TestSettingDistributedTestWalkthrough.testsettings* 파일이 **솔루션 탐색기**의 **솔루션 항목** 폴더 아래에 나타납니다.
 
      **테스트 설정** 대화 상자가 표시됩니다. **일반** 페이지가 선택되어 있습니다.
 

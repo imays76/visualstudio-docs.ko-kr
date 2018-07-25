@@ -1,16 +1,16 @@
 ---
-title: "IEnumRemoteDebugApplications 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IEnumRemoteDebugApplications 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IEnumRemoteDebugApplications interface
 ms.assetid: ceb5fbe7-d131-4352-9dd1-af80acd3f3f7
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728333"
 ---
 # <a name="ienumremotedebugapplications-interface"></a>IEnumRemoteDebugApplications 인터페이스
 응용 프로그램 개체를 열거합니다. 이 인터페이스는 "응용 프로그램에 연결" 대화 상자에 대 한 컴퓨터에서 실행 중인 응용 프로그램을 열거 데 사용할 수 있습니다.  

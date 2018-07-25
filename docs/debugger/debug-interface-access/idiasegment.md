@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465566"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 지도 데이터는 섹션 번호 주소 공간의 세그먼트입니다.  

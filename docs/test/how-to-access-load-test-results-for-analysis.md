@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966689"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>방법: 분석을 위한 부하 테스트 결과 액세스
 

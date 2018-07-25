@@ -37,6 +37,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33106962"
 ---
 # <a name="analyze-and-model-your-architecture"></a>아키텍처 분석 및 모델링
 응용 프로그램 모델링 도구를 디자인 및 모델링 앱 및 Visual Studio 아키텍처를 사용 하 여 아키텍처 요구를 충족 하는지 확인 합니다.

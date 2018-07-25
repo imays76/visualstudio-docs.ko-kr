@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134684"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>방법: Visual Studio 확장을 업데이트
 사용 하 여 시스템에서 Visual Studio 확장을 업데이트 **확장명 및 업데이트** 업데이트 된 버전을 설치 합니다. 확장의 업데이트 된 버전을 만들면 VSIX 매니페스트의 버전 번호가 증가 하 여 업데이트 되었음을 표시할 수 있습니다.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143480"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>사용자 지정 프로젝트 및 Visual Studio 2017에 대 한 항목 템플릿 업그레이드
 

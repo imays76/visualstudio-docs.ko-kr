@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133211"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>검사 목록: 레거시 언어 서비스 만들기
 다음 검사 목록에 대 한 언어 서비스를 만들기 위해 수행 해야 하는 기본 단계를 요약는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 코어 편집기입니다. 언어 서비스에 통합할 수 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 디버그 식 계산기를 만들어야 합니다. 자세한 내용은 참조 [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) 에 [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)합니다.  

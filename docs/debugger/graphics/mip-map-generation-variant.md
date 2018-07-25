@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8804c4b559d2755dd0caec000a58751b9697b23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433170"
 ---
 # <a name="mip-map-generation-variant"></a>MIP 맵 생성 변형
 렌더링 대상이 아닌 질감에 대해 Mip 맵을 사용합니다.  
@@ -43,10 +44,10 @@ ms.lasthandoff: 04/18/2018
   
  질감에 대한 Mip 맵이 자동으로 생성된 경우 질감 샘플링 중 Mip 체인을 사용하도록 `ID3D11Device::CreateShaderResourceView`에 대한 호출이 재생 중 수정됩니다.  
   
-## <a name="example"></a>예제  
- **Mip 맵 생성** 변형은 다음과 같은 코드를 사용 하 여 재현할 수 있습니다.  
+## <a name="example"></a>예  
+ 합니다 **Mip 맵 생성** 변형은 다음과 같은 코드를 사용 하 여 재현할 수 있습니다.  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC texture_description;  
   
 // ...  
@@ -63,7 +64,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- 전체 Mip 체인이 있는 질감을 생성하려면 `D3D11_TEXTURE2D_DESC::MipLevels`를 0으로 설정합니다. 전체 mip 체인에 mip 수준의 수는 floor(log2(n) + 1), 여기서 n은 질감의 가장 큰 수치입니다.  
+ 전체 Mip 체인이 있는 질감을 생성하려면 `D3D11_TEXTURE2D_DESC::MipLevels`를 0으로 설정합니다. 전체 mip 체인에 mip 수준의 수는 floor(log2(n) + 1), 여기서 n은 질감의 최대 크기입니다.  
   
  `CreateTexture2D`에 초기 데이터를 제공하는 경우 각 Mip 수준에 대한 D3D11_SUBRESOURCE_DATA 개체를 제공해야 합니다.  
   

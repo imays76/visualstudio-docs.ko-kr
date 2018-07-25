@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126899"
 ---
 # <a name="security-issues"></a>보안 문제
 Visual Studio를 사용 하는 프로그램을 디버깅 하려면 권한만 필요한 프로그램을 실행 하는 개발자가 알아야 하는 것과 같은 됩니다. 대부분의 경우 (인터넷 정보 서비스 같은 다른 서비스와 관련 된 경우가 더 높은 수준의 권한 요구할 수 있음)에 대 한 원격 디버깅 포함 됩니다.  

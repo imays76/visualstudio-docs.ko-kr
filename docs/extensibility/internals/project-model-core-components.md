@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133130"
 ---
 # <a name="project-model-core-components"></a>프로젝트 모델에 대 한 핵심 구성 요소
 다음 표에서 프로젝트 모델에서 확장 됩니다. 테이블에는 인터페이스 및 모델, 인터페이스 및 특정 개체와 연결 된 서비스에서 식별 된 서비스에 대 한 간략 한 설명이 제공 합니다. 또한 테이블에는 다른 인터페이스는 프로젝트 생성 및 특정 프로젝트 형식이 요구 사항에 따라 유지 관리에서 선택적 요소를 자세히 설명 합니다.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478033"
 ---
 # <a name="windows-view"></a>창 뷰
 를 처음 연 Spy + + 창 뷰 시스템의 모든 창 및 컨트롤의 트리를 표시 합니다. 창 핸들 및 클래스 이름이 표시 됩니다. 트리의 맨 위에 있는 현재 데스크톱 창이입니다. 다른 모든 windows 데스크톱의 자식 이며 표준 창 계층 구조에 따라 나열 됩니다. 해당 부모의 아래 expansible 목록에 형제 창이 나타납니다.  

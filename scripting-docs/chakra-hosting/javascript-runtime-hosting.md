@@ -1,14 +1,14 @@
 ---
-title: "JavaScript 런타임 호스팅 | Microsoft Docs"
-ms.custom: 
+title: JavaScript 런타임 호스팅 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6615079-2df7-420f-a126-077e7d42486c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567773"
 ---
 # <a name="javascript-runtime-hosting"></a>JavaScript 런타임 호스팅
 JavaScript 런타임(JsRT) API를 사용하면 Microsoft Edge 및 Internet Explorer에서도 활용되는 표준 기반의 Chakra JavaScript 엔진을 통해 Windows 운영 체제에서 실행되는 데스크톱, Windows 스토어 및 서버 쪽 응용 프로그램이 앱에 스크립팅 기능을 추가할 수 있습니다. 이러한 API는 컴퓨터에 Internet Explorer 버전 11.0이 설치된 Windows 운영 체제의 모든 버전과 Windows 10에서 사용할 수 있습니다.  

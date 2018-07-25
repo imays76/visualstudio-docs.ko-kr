@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130604"
 ---
 # <a name="opening-and-saving-project-items"></a>열기 및 프로젝트 항목 저장
 새 프로젝트 형식을 추가 하면 열고 저장 하 여 프로젝트 파일에서 관리 해야는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE). 다음 항목 파일 열기 및 저장 하는 다른 방법에 설명 합니다.  

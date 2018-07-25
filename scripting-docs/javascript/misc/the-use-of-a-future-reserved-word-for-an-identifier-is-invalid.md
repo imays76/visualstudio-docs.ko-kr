@@ -1,13 +1,13 @@
 ---
-title: "예약어는 식별자에 대 한 사용 올바르지 않습니다. | Microsoft Docs"
-ms.custom: 
+title: 예약어는 식별자에 대 한 사용 올바르지 않습니다. | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1049
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b1c4648b-43a7-48e3-949a-e39b538edabd
-caps.latest.revision: 
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632973"
 ---
 # <a name="the-use-of-a-future-reserved-word-for-an-identifier-is-invalid"></a>식별자에 대해 다음에 사용하기 위한 예약어를 잘못 사용했습니다.
 1049: 식별자에 대 한 예약어의 사용 올바르지 않습니다.  

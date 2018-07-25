@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115179"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 이 인터페이스를 등록 하거나에서 실행 되는 포트와 디버깅할 수 있는 프로그램의 등록을 취소 합니다.  

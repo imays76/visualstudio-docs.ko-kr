@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31469284"
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
 사용자 정의 데이터 형식 비전역 어휘 범위에 표시 되는지 여부를 지정 하는 플래그를 검색 합니다.  

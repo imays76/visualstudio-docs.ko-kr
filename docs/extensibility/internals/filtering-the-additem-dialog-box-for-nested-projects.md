@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128860"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>중첩 된 프로젝트에 대 한 필터링 항목 추가 대화 상자
 표시할 때는 **AddItem** 중첩 된 프로젝트의 경우 부모 프로젝트 대화 상자 대화 상자에 표시 되는 항목을 제어할 수 있습니다.  

@@ -23,18 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 574b7180efb7495b755d823c798ffa0c21339390
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c541a9775025183a3b3ffbf21ef5b72c3f00cc87
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077809"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; 요소 (부트스트래퍼)
 `RelatedProducts` 요소에 종속 되거나 현재 제품에 포함 된 다른 제품을 정의 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <RelatedProducts>  
     <DependsOnProduct  
         Code  
@@ -51,37 +52,37 @@ ms.lasthandoff: 04/19/2018
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- `RelatedProducts` 의 자식인 요소는 `Product` 요소입니다. 특성이 없습니다.  
+ 합니다 `RelatedProducts` 요소인 자식은 `Product` 요소입니다. 특성이 없습니다.  
   
 ## <a name="dependsonproduct"></a>DependsOnProduct  
- `DependsOnProduct` 요소 의미 현재 전에 명명된 된 제품을 설치 해야 하 고 현재 제품 명명된 된 제품에 따라 달라 집니다. 자식인는 `RelatedProducts` 요소입니다. A `RelatedProducts` 하나 이상 있을 수 있습니다 `DependsOnProduct` 요소입니다.  
+ `DependsOnProduct` 요소 나타냅니다 현재 전에 명명된 된 제품을 설치 해야 하 고 현재 제품 명명된 된 제품에 따라 달라 집니다. 자식 이기는 `RelatedProducts` 요소입니다. A `RelatedProducts` 요소는 하나 이상의 있을 `DependsOnProduct` 요소입니다.  
   
- `DependsOnProduct` 에 다음 특성이 있습니다.  
+ `DependsOnProduct` 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Code`|에 지정 된 대로 포함된 된 제품의 코드명은 `ProductCode` 의 특성은 `Product` 요소입니다. 자세한 내용은 참조 [ \<제품 > 요소](../deployment/product-element-bootstrapper.md)합니다.|  
+|`Code`|에 지정 된 대로 포함된 된 제품의 코드명 합니다 `ProductCode` 특성을 `Product` 요소. 자세한 내용은 [ \<제품 > 요소](../deployment/product-element-bootstrapper.md)합니다.|  
   
 ## <a name="eitherproducts"></a>EitherProducts  
- `EitherProducts` 요소 0 개 이상의 정의 `DependsOnProduct` 요소 특성이 없습니다. 하나 이상의 `DependsOnProduct` 이 집합에는 현재 제품 하기 전에 설치 되어야 해야 합니다. A `RelatedProducts` 요소는 0 또는 그 이상 있을 수 있습니다 `EitherProducts` 요소입니다.  
+ `EitherProducts` 요소는 0 개 이상 정의 `DependsOnProduct` 요소에 특성이 없습니다. 하나 이상의 `DependsOnProduct` 이 집합의 현재 제품 하기 전에 설치 수 해야 합니다. A `RelatedProducts` 요소는 0 개 이상 포함할 수 있습니다 `EitherProducts` 요소입니다.  
   
 ## <a name="includesproduct"></a>IncludesProduct  
- `IncludesProduct` 요소 의미 제품이 현재 설치에 포함 되며 별도 설치는 필요 하지 않습니다. 자식인는 `RelatedProducts` 요소입니다. A `RelatedProducts` 하나 이상 있을 수 있습니다 `IncludesProduct` 요소입니다.  
+ `IncludesProduct` 제품 현재 설치에 포함 되며 별도 설치 하지 않아도 요소를 나타냅니다. 자식 이기는 `RelatedProducts` 요소입니다. A `RelatedProducts` 요소는 하나 이상의 있을 `IncludesProduct` 요소입니다.  
   
- `IncludesProduct` 에 다음 특성이 있습니다.  
+ `IncludesProduct` 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Code`|에 지정 된 대로 포함된 된 제품의 코드명은 `ProductCode` 의 특성은 `Product` 요소입니다. 자세한 내용은 참조 [ \<제품 > 요소](../deployment/product-element-bootstrapper.md)합니다.|  
+|`Code`|에 지정 된 대로 포함된 된 제품의 코드명 합니다 `ProductCode` 특성을 `Product` 요소. 자세한 내용은 [ \<제품 > 요소](../deployment/product-element-bootstrapper.md)합니다.|  
   
-## <a name="example"></a>예제  
- 다음 코드 예제에서는 지정 Microsoft 설치 관리자와 함께 설치 되는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], 별도 설치 필요 하지 것입니다.  
+## <a name="example"></a>예  
+ 다음 코드 예제에서는 지정 된 Microsoft 설치 관리자가 설치 되어 있는지를 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], 별도 설치 필요 하지 것입니다.  
   
-```  
+```xml  
 <RelatedProducts>  
     <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />  
 </RelatedProducts>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [\<제품 > 요소](../deployment/product-element-bootstrapper.md)

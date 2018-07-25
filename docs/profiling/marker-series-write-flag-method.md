@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce6d809794903c0247218ce3a082112d04dd020e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: faff304831f8f2ffabed925d2ab3dfc5d64c18af
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237460"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag 메서드
 동시성 시각화 도우미 추적 파일에 플래그를 씁니다.  
@@ -59,7 +60,7 @@ void write_flag(
  범주입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** cvmarkersobj.h  
+ **헤더:** *cvmarkersobj.h*  
   
  **네임스페이스:** Concurrency::diagnostic  
   

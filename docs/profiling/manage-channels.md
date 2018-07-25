@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 045059c1ab0c33026369b065649c4d4b82a480df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844433"
 ---
 # <a name="manage-channels"></a>채널 관리
 동시성 시각화 도우미의 **스레드 뷰**에서는 특정 패턴을 검사할 수 있도록 프로세스에 대한 채널을 구성할 수 있습니다. 채널을 정렬하고, 이를 위 또는 아래로 이동하고, 표시하거나 숨길 수 있습니다.  

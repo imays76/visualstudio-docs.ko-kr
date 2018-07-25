@@ -1,6 +1,7 @@
 ---
 title: 이미지 편집기 예제
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256d960004d09762139cd378cb385b502128bd42
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e8151c697ebe431da8799d4da98eceb1a00dd526
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977500"
 ---
 # <a name="image-editor-examples"></a>이미지 편집기 예제
 

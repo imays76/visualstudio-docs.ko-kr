@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136421"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>어떤&#39;의 새로운 소스 제어 플러그 인 API 버전 1.2
 이 섹션은 소스 제어 플러그 인 API 버전 1.2에서에서 고급 소스 코드 제어 기능을 강조 표시합니다. 다음은 버전 1.2의에서 새로운 기능에 대 한 설명입니다.  

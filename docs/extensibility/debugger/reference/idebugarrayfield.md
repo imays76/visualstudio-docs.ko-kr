@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102358"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 이 인터페이스는 배열 기호 또는 형식을 설명합니다.  

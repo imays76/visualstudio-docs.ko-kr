@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142343"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 함수
 이 함수에 대 한 소스 제어 플러그 인에 의미 있는 문자열 인 프로젝트 경로 라는 메시지를 표시 합니다. 사용자가 때 호출 됩니다.  

@@ -1,7 +1,7 @@
 ---
 title: R 도구의 현재 버전
 description: Visual Studio용 R 도구의 버전을 확인하고 업데이트를 설치하는 방법입니다.
-ms.date: 01/24/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,17 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 20811c10ddad6df18512f23aa1312f154c2e294b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 088d3048f33b998ebdb45b7a35b8b395cb3f525e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230985"
 ---
 # <a name="rtvs-current-version"></a>RTVS 최신 버전
 
-이 페이지의 마지막 업데이트를 기준으로 RTVS(Visual Studio용 R Tools)의 최신 버전은 **1.0.31108.1213**이었습니다. 미리 보기 채널 사용 여부 및 Visual Studio 버전에 따라 버전이 달라질 수 있습니다.
-
-Visual Studio에서 **도움말 > 정보**로 이동하고 **Visual Studio용 R 도구** 항목까지 아래로 스크롤하여 버전을 확인할 수 있습니다.
+Visual Studio에서 **도움말** > **정보**로 이동하고 **Visual Studio용 R 도구** 항목까지 아래로 스크롤하여 버전을 확인할 수 있습니다.
 
 ![Visual Studio(VS2017)에서 RTVS 버전 검사](media/current-version.png)
 
@@ -30,4 +29,4 @@ Visual Studio 2015의 경우 가장 최근 설치 관리자는 [aka.ms/rtvs-curr
 
 Visual Studio 및 Windows 요구 사항은 [설치](installing-r-tools-for-visual-studio.md)를 참조하세요.
 
-Microsoft R Open 및 Microsoft R Server의 업데이트에 대해서는 [Microsoft R 제품](http://aka.ms/rtvs-msft-r)을 참조하세요.
+Microsoft R Open 및 Microsoft Machine Learning Server(이전 Microsoft R Server)에 대한 업데이트는 [Microsoft R 제품](http://aka.ms/rtvs-msft-r)을 참조하세요.

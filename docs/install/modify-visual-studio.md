@@ -2,7 +2,7 @@
 title: Visual Studio 2017 수정 | Microsoft Docs
 description: Visual Studio를 수정하는 방법을 단계별로 알아봅니다.
 ms.custom: H1Hack27Feb2017
-ms.date: 04/06/2018
+ms.date: 06/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab0aa786dcaf5e99290dce79bc72deb9f0d5805
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1e63a21a6090f4d3c7b1a371fc667325eed9ba65
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297768"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>작업과 구성 요소를 추가하거나 제거하여 Visual Studio 2017 수정
 
@@ -36,20 +37,20 @@ ms.lasthandoff: 04/20/2018
 >[!IMPORTANT]
 >Visual Studio를 설치, 업데이트 또는 수정하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 자세한 내용은 [사용자 권한 및 Visual Studio](../ide/user-permissions-and-visual-studio.md)를 참조하세요.
 
-1. 컴퓨터에서 Visual Studio 설치 관리자를 찾습니다.  
+1. 컴퓨터에서 Visual Studio 설치 관리자를 찾습니다.
 
-     예를 들어 Windows 10을 실행하는 컴퓨터에서 **시작**을 선택한 다음, **Visual Studio 설치 관리자**로 나열되는 **V** 문자로 스크롤합니다.  
+     예를 들어 Windows 10을 실행하는 컴퓨터에서 **시작**을 선택한 다음, **Visual Studio 설치 관리자**로 나열되는 **V** 문자로 스크롤합니다.
 
      ![Visual Studio 설치 관리자](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio 설치 관리자 찾기")
 
      >[!NOTE]
-     일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     >일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. 설치 관리자를 클릭하거나 탭한 다음, **수정**을 선택합니다.  
+2. 설치 관리자를 클릭하거나 탭한 다음, **수정**을 선택합니다.
 
      ![Visual Studio 실행 또는 수정](media/modify-visual-studio.png "Visual Studio 2017 수정")
 
-     보류 중인 업데이트가 있는 경우 수정 단추는 다른 위치에 있습니다. **자세히**를 클릭한 다음, **수정**을 선택합니다.   
+     보류 중인 업데이트가 있는 경우 수정 단추는 다른 위치에 있습니다. 이러한 방식으로 Visual Studio를 업데이트하지 않고 수정할 수 있습니다. **자세히**를 클릭한 다음, **수정**을 선택합니다.
 
      ![Visual Studio 업데이트 또는 수정](media/modify-or-update-visual-studio.png "Visual Studio 2017 업데이트 또는 수정")
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/20/2018
 
     ![Visual Studio 2017 설치 대화 상자](media/vs2017-modify-workloads.PNG "Visual Studio 2017에서 작업 선택")
 
-4. **수정**을 다시 선택합니다.  
+4. **수정**을 다시 선택합니다.
 
 5. 새 워크로드 및 구성 요소가 설치된 후 **시작**을 선택합니다.
 
@@ -67,7 +68,7 @@ Visual Studio 설치를 사용자 지정하기 위해 편리한 작업 기능을
 
 ## <a name="get-support"></a>지원 받기
 
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하여 도움을 받으세요. [실시간 채팅](https://www.visualstudio.com/vs/support/#talktous)(영어 전용)을 통해 설치 도움말에 대한 문의할 수 있습니다. 자세한 내용은 [Visual Studio “사용자 의견”](https://www.visualstudio.com/vs/support/#talktous)을 참조하세요.
+때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하여 도움을 받으세요. [실시간 채팅](https://visualstudio.microsoft.com/vs/support/#talktous)(영어 전용)을 통해 설치 도움말에 대한 문의할 수 있습니다. 자세한 내용은 [Visual Studio “사용자 의견”](https://visualstudio.microsoft.com/vs/support/#talktous)을 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 

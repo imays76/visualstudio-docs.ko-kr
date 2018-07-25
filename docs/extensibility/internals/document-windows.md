@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129054"
 ---
 # <a name="document-windows"></a>문서 창
 Visual Studio에서는 *문서 창* 프레임된 자식 창 (MDI) 다중 문서 인터페이스 기간과 연결 된입니다. 문서 기간을 표시 하 고의 소스 코드 또는 텍스트를 수정할 일반적으로 사용 하지만 다른 기능 형식의 호스트할 수 있습니다. 문서 창:  

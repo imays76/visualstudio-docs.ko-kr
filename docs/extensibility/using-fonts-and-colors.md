@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141212"
 ---
 # <a name="using-fonts-and-colors"></a>글꼴 및 색을 사용 하 여
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 글꼴 및 색을 사용 하 여 텍스트를 표시 하는 것에 대 한 지원을 제공 합니다.  

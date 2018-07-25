@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109833"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 발생 하도록 중단점을 발생 시키는 중단점 패스 횟수와 연결 된 조건을 지정 합니다.  

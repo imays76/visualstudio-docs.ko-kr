@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca1d4fbe642d8b6c4673f99295d0544364a4e81a
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: cc361925d26bb6274a90d62c0b0c2085b47210c4
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34476703"
 ---
 # <a name="timer"></a>Timer
 VSPerfCmd.exe **Timer** 옵션은 프로세서 클록 주기로 샘플링되는 프로파일링 이벤트를 설정하고 경우에 따라 샘플링 간격의 주기 수를 기본값 10,000,000에서 변경합니다. 1GH(1기가헤르츠) 프로세서에서 10,000,000 클록 주기는 초당 샘플 100개입니다. 지정할 수 있는 최소 주기 수는 50,000입니다.  

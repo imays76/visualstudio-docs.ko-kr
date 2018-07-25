@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947169"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>색, 선 스타일 및 기타 모양 속성 제어
 일부 셰이프 속성 색 노출 될 수 있습니다' '-같은 즉, 연결 된 셰이프의 도메인 속성에 합니다. 일부는에 대 한 직접 제어 합니다.

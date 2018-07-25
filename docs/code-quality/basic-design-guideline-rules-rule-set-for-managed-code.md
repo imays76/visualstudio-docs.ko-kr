@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902274"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>관리 코드에 대한 기본 디자인 지침 규칙 규칙 집합
 Microsoft 기본 디자인 지침 규칙 규칙 집합 코드를 보다 쉽게 이해 하 고 사용에 초점을 사용할 수 있습니다. 프로젝트에 라이브러리 코드가 있거나 유지 관리 하기 쉬운 코드에 대 한 모범 사례를 적용 하려는 경우이 규칙 집합을 포함 해야 합니다.

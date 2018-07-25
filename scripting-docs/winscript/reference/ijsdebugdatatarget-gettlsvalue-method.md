@@ -1,16 +1,18 @@
 ---
-title: "Ijsdebugdatatarget:: Gettlsvalue 메서드 | Microsoft Docs"
-ms.custom: 
+title: 'Ijsdebugdatatarget:: Gettlsvalue 메서드 | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IJsDebugDataTarget.GetTlsValue
-apilocation: jscript9diag.dll
+apiname:
+- IJsDebugDataTarget.GetTlsValue
+apilocation:
+- jscript9diag.dll
 ms.assetid: db575be9-7b24-45c5-9008-e4f2f76d6757
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727883"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>IJsDebugDataTarget::GetTlsValue 메서드
 디버깅 중인 스레드에 대 한 지정된 된 TLS 인덱스에 대 한 스레드 로컬 저장소 (TLS) 슬롯의 값을 검색 합니다.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131162"
 ---
 # <a name="nesting-projects"></a>중첩 프로젝트
 VS 패키지를 사용 하는 엔터프라이즈 응용 프로그램 개발자 비슷한 형식의 프로젝트에서 함께 그룹화 편리 하 게 수 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 를 사용 하 여 *중첩 프로젝트*합니다. 예를 들어, 엔터프라이즈 템플릿 프로젝트 범주로 그룹 프로젝트에 대 한 중첩 된 프로젝트를 사용합니다. 비즈니스 외관 프로젝트, 웹 UI 프로젝트 및에 하나의 범주에 함께 그룹화 됩니다.  

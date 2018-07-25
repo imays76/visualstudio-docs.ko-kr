@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127904"
 ---
 # <a name="color-theming-tools"></a>색 테마 설정 도구
 VS SDK 만들고 색 테마를 관리할 수 있도록 여러 가지 도구를 제공 합니다.  

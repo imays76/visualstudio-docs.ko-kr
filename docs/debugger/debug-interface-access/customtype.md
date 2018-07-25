@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468257"
 ---
 # <a name="customtype"></a>CustomType
 공급 업체에서 정의한 형식 (컴파일러 관련 형식)으로 식별 됩니다는 `SymTagCustomType` 기호입니다.  

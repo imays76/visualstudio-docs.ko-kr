@@ -20,17 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0555ae538cb473d436727da67af40be037c992a4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11e4318b9a59f51e7e20ce36aa39d33d4b96725a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077176"
 ---
-# <a name="message-task"></a>메시지 작업
+# <a name="message-task"></a>Message 작업
 빌드하는 동안 메시지를 로깅합니다.  
   
 ## <a name="parameters"></a>매개 변수  
- 다음 표에서는 `Message` 작업의 매개 변수를 설명합니다.  
+ 다음 표에서는 `Message` 작업의 매개 변수에 대해 설명합니다.  
   
 |매개 변수|설명|  
 |---------------|-----------------|  
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/19/2018
   
  기본적으로 메시지는 MSBuild 콘솔 로거로 전송됩니다. <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> 매개 변수를 설정하여 이를 변경할 수 있습니다. 로거는 `Importance` 매개 변수를 해석합니다.  
   
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
 ## <a name="example"></a>예  
  다음 코드 예제에서는 등록된 모든 로거에 메시지를 로깅합니다.  

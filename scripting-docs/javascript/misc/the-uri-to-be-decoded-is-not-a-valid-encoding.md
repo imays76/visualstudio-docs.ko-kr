@@ -1,13 +1,13 @@
 ---
-title: "디코딩될 URI가 유효한 인코딩이 아닙니다. | Microsoft Docs"
-ms.custom: 
+title: 디코딩될 URI가 유효한 인코딩이 아닙니다. | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5025
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 029e0790-ffd1-496d-8700-3b3dbac1b6fd
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633333"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>디코딩될 URI가 유효한 인코딩이 아닙니다.
 형식이 잘못 된 URI (Uniform Resource Identifier)가 디코딩할 하려고 했습니다. Uri는 특수 구문을 사용 합니다. URI에서 사용 하려면 먼저 대부분의 영숫자가 아닌 문자를 인코딩해야 합니다. 사용할 수는 `encodeURI` 및 `encodeURIComponent` 에서 보통 URI를 만드는 메서드가 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 문자열입니다.  

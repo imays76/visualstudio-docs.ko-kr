@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465124"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 기호 (oem) ID 값을 검색합니다.  

@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc9900927218e543b4e7ba962d7ea019d927c8a8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c39e68c05f438b787bb7a0930f2ad0ba6a324ee1
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057543"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)
 
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/26/2018
 
  다음 옵션을 사용하여 고급 출력 옵션을 지정할 수 있습니다.
 
- **디버그 정보** 컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 응용 프로그램의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.
+ **디버그 정보** 컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 응용 프로그램의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.
 
 - **none**
 

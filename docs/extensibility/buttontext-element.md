@@ -14,18 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fca0fbb22bf51353eeaa64f519face53bfb23c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8ba4667a34594c764a57788ee468d32733ded8e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232015"
 ---
 # <a name="buttontext-element"></a>ButtonText 요소
-이 필드를 사용 하면 다양 한 메뉴에 표시 되는 텍스트를 지정할 수 있습니다. 기본적으로는 `ButtonText` 요소 메뉴 컨트롤러에 나타납니다. `ButtonText` 다른 텍스트 필드가 비어 있으면도 요소의 기본값이 됩니다. `ButtonText` 다른 텍스트 필드가 지정 된 경우에 요소를 비워 둘 수 없습니다.  
+이 필드를 사용 하면 다양 한 메뉴에 나타나는 텍스트를 지정할 수 있습니다. 기본적으로 `ButtonText` 요소 메뉴 컨트롤러에 표시 됩니다. `ButtonText` 요소 또한 기본값이 다른 텍스트 필드는 비어 있는 경우. `ButtonText` 기타 텍스트 필드에 지정 된 경우에 요소를 비워 둘 수 없습니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <ButtonText>My Command</ButtonText>  
 ```  
   
@@ -42,10 +43,10 @@ ms.lasthandoff: 04/16/2018
   
 |요소|설명|  
 |-------------|-----------------|  
-|[Strings 요소](../extensibility/strings-element.md)|와 같은 텍스트 요소를 그룹화 `ButtonText` 및 `CommandName`합니다.|  
+|[Strings 요소](../extensibility/strings-element.md)|텍스트 요소와 같은 그룹화 `ButtonText` 고 `CommandName`입니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
- 텍스트 값은 `ButtonText` 요소 메뉴 항목, 바로 가기 단축키 +, 및 표시 되는 텍스트에 있는 다른 사용자 인터페이스 (UI) 요소에 대해 표시 되는 텍스트를 제공 합니다.  
+ 텍스트 값을 `ButtonText` 요소 메뉴 항목과 combos, 표시 되는 텍스트에 있는 다른 사용자 인터페이스 (UI) 요소에 대 한 표시 되는 텍스트를 제공 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참고자료  
+ [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

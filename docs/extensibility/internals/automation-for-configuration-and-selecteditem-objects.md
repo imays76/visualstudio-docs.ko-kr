@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128204"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>구성 및 SelectedItem 개체에 대 한 자동화
 빌드 및 선택한 항목에는 프로세스를 자동화할 수 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456427"
 ---
 # <a name="assertion-failed-dialog-box"></a>어설션 오류 대화 상자
 어설션 문은 프로그램의 특정 지점에서 true를 유지하도록 조건을 지정합니다. 조건이 true를 유지하지 않으면 어설션 오류가 발생하고 프로그램 실행이 중단되며 이 대화 상자가 나타납니다.  

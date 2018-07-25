@@ -132,6 +132,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900448"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
 이 문서에서는 간단한 함수 매개 변수에 대 한 주석의 일반적 사용 범위 설명-스칼라 및 구조체와 클래스에 대 한 포인터-및 버퍼의 대부분 종류입니다.  이 문서에는 일반적인 사용 패턴에 대 한 주석 보여 줍니다. 함수에 관련 된 추가 주석이 참조 [함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md)

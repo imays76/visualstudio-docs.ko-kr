@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136540"
 ---
 # <a name="using-the-automation-model"></a>자동화 모델을 사용 하 여
 속성 및 메서드를 호출 하 여 얻을 수 자동화에 VSPackage를 연결한 후의 <xref:EnvDTE.DTEClass.GetObject%2A> 에서 메서드는 <xref:EnvDTE._DTE> 개체를 검색 하려면 개체를 나타내는 문자열을 전달 합니다.  

@@ -13,16 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c1ed02a32136d6c80e24f0644e0fab660e8ed0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8fe68d4d6d970ee0c1e5db566caf7c812436589c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077522"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>방법: 여러 프로젝트 파일에서 동일한 대상 사용
 여러 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일을 만들었으면 다른 프로젝트 파일에서 동일한 작업 및 대상을 사용해야 할 수 있다는 사실을 알게 되었을 것입니다. 모든 프로젝트 파일에 이러한 작업이나 대상에 대한 완전한 설명을 포함하는 대신, 대상을 별도 프로젝트 파일에 저장한 다음, 해당 대상을 사용해야 하나ㅡㄴ 다른 프로젝트로 해당 프로젝트를 가져올 수 있습니다.  
   
-## <a name="using-the-import-element"></a>Import 요소 사용  
+## <a name="use-the-import-element"></a>Import 요소 사용  
  `Import` 요소는 한 프로젝트 파일을 다른 프로젝트 파일에 삽입하는 데 사용됩니다. 가져올 프로젝트 파일은 유효한 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일이어야 하며 올바른 형식의 XML을 포함해야 합니다. `Project` 특성은 가져온 프로젝트 파일의 경로를 지정합니다. `Import` 요소에 대한 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)를 참조하세요.  
   
 #### <a name="to-import-a-project"></a>프로젝트를 가져오려면  
@@ -35,10 +36,10 @@ ms.lasthandoff: 04/19/2018
   
 3.  `Import` 요소 다음에, 가져온 프로젝트의 속성 및 항목의 기본 정의를 재정의해야 하는 모든 속성 및 항목을 프로젝트 파일에 정의합니다.  
   
-## <a name="order-of-evaluation"></a>확인 순서  
+## <a name="order-of-evaluation"></a>계산 순서  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]가 `Import` 요소에 도달하면 가져온 프로젝트는 `Import` 요소의 해당 위치에 있는 가져오기 프로젝트에 효과적으로 삽입됩니다. 따라서 `Import` 요소의 위치는 속성 및 항목의 값에 영향을 줄 수 있습니다. 가져온 프로젝트에 의해 설정된 속성 및 항목과 가져온 프로젝트가 사용하는 속성 및 항목을 이해하는 것이 중요합니다.  
   
- 프로젝트가 빌드될 때 모든 속성이 먼저 평가된 후 항목이 평가됩니다. 예를 들어, 다음 XML은 가져온 프로젝트 파일 MyCommon.targets를 정의합니다.  
+ 프로젝트가 빌드될 때 모든 속성이 먼저 평가된 후 항목이 평가됩니다. 예를 들어, 다음 XML은 가져온 프로젝트 파일 *MyCommon.targets*를 정의합니다.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/19/2018
 </Project>  
 ```  
   
- 다음 XML은 MyCommon.targets를 가져오는 MyApp.proj를 정의합니다.  
+ 다음 XML은 *MyCommon.targets*를 가져오는 *MyApp.proj*를 정의합니다.  
   
 ```xml  
 <Project  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/19/2018
   
  `Name="MyCommon"`  
   
- 속성 `Name`이 MyApp.proj에 정의된 이후에 프로젝트를 가져오므로 MyCommon.targets의 `Name` 정의가 MyApp.proj이 정의를 재정의합니다. 속성 Name이 정의되기 전에 프로젝트를 가져오면 빌드는 다음 메시지를 표시합니다.  
+ 속성 `Name`이 *MyApp.proj*에 정의된 이후에 프로젝트를 가져오므로 *MyCommon.targets*의 `Name` 정의가 *MyApp.proj*가 정의를 재정의합니다. 속성 Name이 정의되기 전에 프로젝트를 가져오면 빌드는 다음 메시지를 표시합니다.  
   
  `Name="MyApp"`  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/19/2018
 3.  가져온 프로젝트의 속성 및 항목의 기본 정의를 재정의해야 하는 모든 속성 및 항목을 프로젝트 파일에 정의합니다.  
   
 ## <a name="example"></a>예  
- 다음 코드 예제에서는 두 번째 코드 예제에서 가져오는 MyCommon.targets 파일을 보여 줍니다. .targets 파일은 가져오기 프로젝트의 속성을 평가하여 빌드를 구성합니다.  
+ 다음 코드 예제에서는 두 번째 코드 예제에서 가져오는 *MyCommon.targets* 파일을 보여 줍니다. *.targets* 파일은 가져오기 프로젝트의 속성을 평가하여 빌드를 구성합니다.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -100,7 +101,7 @@ ms.lasthandoff: 04/19/2018
 ```  
   
 ## <a name="example"></a>예  
- 다음 코드 예제에서는 MyCommon.targets 파일을 가져옵니다.  
+ 다음 코드 예제에서는 *MyCommon.targets* 파일을 가져옵니다.  
   
 ```xml  
 <Project DefaultTargets="Build"  

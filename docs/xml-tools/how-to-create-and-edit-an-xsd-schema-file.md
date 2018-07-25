@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477459"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>방법: XSD 스키마 파일 만들기 및 편집
 

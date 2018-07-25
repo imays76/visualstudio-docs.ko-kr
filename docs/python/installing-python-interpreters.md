@@ -1,7 +1,7 @@
 ---
 title: Python 인터프리터 선택 및 설치
 description: 설치 관리자를 찾을 위치에 대한 간단한 지침이 포함된 Visual Studio에서 지원되는 Python 인터프리터의 전체 목록입니다.
-ms.date: 02/20/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851853"
 ---
 # <a name="installing-python-interpreters"></a>Python 인터프리터 설치
 
@@ -25,7 +26,7 @@ Visual Studio 설치 관리자 외부에서 아래 표에 나열된 인터프리
 
 **Visual Studio 2015 이하**의 경우 인터프리터 중 하나를 수동으로 설치해야 합니다.
 
-Visual Studio(모든 버전)는 레지스트리를 확인하여 각 설치된 Python 인터프리터 및 해당 환경을 자동으로 검색합니다([Windows 레지스트리의 PEP 514 - Python 등록](https://www.python.org/dev/peps/pep-0514/)에 따라).
+Visual Studio(모든 버전)는 레지스트리를 확인하여 각 설치된 Python 인터프리터 및 해당 환경을 자동으로 검색합니다([Windows 레지스트리의 PEP 514 - Python 등록](https://www.python.org/dev/peps/pep-0514/)에 따라). Python 설치는 일반적으로 `HKEY_LOCAL_MACHINE\SOFTWARE\Python`(32비트) 및 `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python`(64비트) 아래에, “PythonCore”(CPython) 및 “ContinuumAnalytics”(Anaconda)와 같은 배포 노드 내에 있습니다.
 
 Visual Studio가 설치된 환경을 검색하지 않으면 [기존 환경 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)을 참조하세요.
 

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a285c95e3649cc7aaa53995070091f0abea509
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815615"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>방법: 독립 실행형 프로파일러 설치
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]은(는) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 설치하지 않고 실행할 수 있는 명령줄 기반 독립 실행형 프로파일러를 제공합니다. 이 경우는 컴퓨터에 설치된 개발 환경이 없거나 설치할 수 없는 경우에 발생합니다. 예를 들어 프로덕션 웹 서버에 개발 환경을 설치하면 안 됩니다.  
@@ -27,12 +28,12 @@ ms.lasthandoff: 04/19/2018
   
 ### <a name="to-install-the-stand-alone-profiler"></a>독립 실행형 프로파일러를 설치하려면  
   
-1.  \독립 실행형 프로파일러 경로를 포함하고 이를 실행하는 디렉터리의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 설치 미디어에서 독립 실행형 프로필 설치 관리자(vs_profiler.exe)를 찾습니다.  
+1.  *\독립 실행형 프로파일러* 경로를 포함하고 이를 실행하는 디렉터리의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 설치 미디어에서 독립 실행형 프로필 설치 관리자(*vs_profiler.exe*)를 찾습니다.  
   
-2.  vsintr.exe와 msdis150.dll의 경로를 시스템 경로에 추가합니다.  
+2.  *vsintr.exe*와 *msdis150.dll*의 경로를 시스템 경로에 추가합니다.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 기본 설치에서 vsinstr.exe와 msdis150.dll은 \Program Files\Visual Studio 10\Team Tools\Performance Tools에 있습니다.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 기본 설치에서 *vsinstr.exe*와 *msdis150.dll*은 *\Program Files\Visual Studio 10\Team Tools\Performance Tools*에 있습니다.  
   
 3.  명령 프롬프트에서 **VSInstr**을 입력합니다.  
   

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127242"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>방법: 레거시 API 사용 하 여 텍스트 버퍼 이벤트 등록
 텍스트 버퍼에 레거시 API를 사용 하 여 액세스 하는 경우에 다음 절차에 표시 된 대로 텍스트 버퍼 이벤트에 등록 해야 합니다.  

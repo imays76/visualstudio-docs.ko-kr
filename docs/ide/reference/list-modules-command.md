@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944663"
 ---
 # <a name="list-modules-command"></a>모듈 목록 표시 명령
 현재 프로세스에 대한 모듈을 나열합니다.

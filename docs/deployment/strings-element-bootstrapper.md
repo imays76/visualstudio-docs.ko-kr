@@ -20,18 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df186776e9f1fe431343c8643e5186ff522dfff6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077674"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;문자열&gt; 요소 (부트스트래퍼)
 제품 이름, 패키지 이름 및 설치 오류 메시지에 대 한 지역화 된 문자열을 정의합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <Strings>  
     <String  
         Name  
@@ -41,21 +42,21 @@ ms.lasthandoff: 04/19/2018
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- `Strings` 의 자식인 요소는 `Package` 요소입니다. 특성이 없습니다.  
+ 합니다 `Strings` 요소인 자식은 `Package` 요소입니다. 특성이 없습니다.  
   
 ## <a name="string"></a>문자열  
- `String` 의 자식인 요소는 `Strings` 요소입니다. A `Strings` 하나 이상의 요소를 가질 수 `String` 요소입니다.  
+ 합니다 `String` 요소인 자식은 `Strings` 요소입니다. A `Strings` 하나 이상의 요소를 가질 수 `String` 요소입니다.  
   
- `String` 에 다음 특성이 있습니다.  
+ `String` 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
 |`Name`|필수. 문자열의 이름입니다.|  
   
-## <a name="example"></a>예제  
- 다음 코드 예제에서는 지정에 대 한 영어 문자열의 모든 고 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 설치 관리자입니다.  
+## <a name="example"></a>예  
+ 다음 코드 예제 모두에 대 한 영어 문자열이 지정 된 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 설치 관리자입니다.  
   
-```  
+```xml  
 <Strings>  
     <String Name="DisplayName">.NET Framework 2.0</String>  
     <String Name="Culture">en</String>  
@@ -74,5 +75,5 @@ ms.lasthandoff: 04/19/2018
 </Strings>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [\<패키지 > 요소](../deployment/package-element-bootstrapper.md)

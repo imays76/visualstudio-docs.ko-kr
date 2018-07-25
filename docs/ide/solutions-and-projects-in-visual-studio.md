@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc94838423cea7eeab8cef6357267609394352b
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089661"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
 
@@ -52,7 +53,12 @@ Visual Studio에서 프로젝트 파일은 **솔루션 탐색기**에서 프로�
 
 프로젝트는 *솔루션*에 포함되어 있습니다. 솔루션에는 빌드 정보, Visual Studio 창 설정 및 특정 프로젝트와 관련이 없는 기타 파일과 함께 하나 이상의 관련된 프로젝트가 포함됩니다. 솔루션은 고유한 형식을 가진 텍스트 파일(*.sln* 확장명)으로 설명되고 직접 편집할 수 없습니다.
 
-솔루션에는 프로젝트에 참여한 각 사용자에 대한 설정, 기본 설정 및 구성 정보를 저장하는 연결된 *.suo* 파일이 있습니다.
+Visual Studio에서는 두 가지 파일 형식(*.sln* 및 *.suo*)을 사용하여 솔루션 관련 설정을 저장합니다.
+
+|확장명|이름|설명|
+|---------------|----------|-----------------|
+|.sln|Visual Studio 솔루션|솔루션에서 프로젝트, 프로젝트 항목 및 솔루션 항목을 구성합니다.|
+|.suo|솔루션 사용자 옵션|중단점과 같은 사용자 수준 설정 및 사용자 지정을 저장합니다.|
 
 ## <a name="create-new-projects"></a>새 프로젝트 만들기
 
@@ -64,7 +70,7 @@ Visual Studio에서 프로젝트 파일은 **솔루션 탐색기**에서 프로�
 
 새 프로젝트를 만든 후에 **솔루션 탐색기** 를 사용하여 프로젝트와 솔루션 및 연결된 항목을 볼 수 있고 관리할 수 있습니다. 다음 그림은 두 프로젝트가 포함되어 있으며, C# 솔루션을 사용하는 **솔루션 탐색기**를 보여 줍니다.
 
-![솔루션 탐색기](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
+![솔루션 탐색기](../ide/media/vs2015_solution_explorer.png)
 
 ## <a name="see-also"></a>참고 항목
 

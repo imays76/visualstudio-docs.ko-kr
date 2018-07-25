@@ -12,15 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283460"
 ---
 # <a name="features-of-the-code-editor"></a>코드 편집기의 기능
 
-Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 관리할 수 있는 다양한 기능을 제공합니다. 개요를 사용하여 여러 코드 블록을 확장 및 축소할 수 있습니다. IntelliSense, **개체 브라우저**및 호출 계층 구조를 사용하여 코드에 대해 자세히 알아볼 수 있습니다. **이동**, **정의로 이동**, 및 **모든 참조 찾기** 등의 기능을 사용하여 코드를 찾을 수 있습니다. 코드 조각이 있는 코드 블록을 삽입할 수 있고 **사용법에서 생성**과 같은 기능을 사용하여 코드를 생성할 수 있습니다. 이전에 Visual Studio 편집기를 사용한 적이 없을 경우 빠른 개요를 보려면 [코드 편집](https://www.visualstudio.com/vs/features/ide/)을 참조하세요.
+Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 관리할 수 있는 다양한 기능을 제공합니다. 개요를 사용하여 여러 코드 블록을 확장 및 축소할 수 있습니다. IntelliSense, **개체 브라우저**및 호출 계층 구조를 사용하여 코드에 대해 자세히 알아볼 수 있습니다. **이동**, **정의로 이동**, 및 **모든 참조 찾기** 등의 기능을 사용하여 코드를 찾을 수 있습니다. 코드 조각이 있는 코드 블록을 삽입할 수 있고 **사용법에서 생성**과 같은 기능을 사용하여 코드를 생성할 수 있습니다. 이전에 Visual Studio 편집기를 사용한 적이 없을 경우 빠른 개요를 보려면 [코드 편집](https://visualstudio.microsoft.com/vs/features/ide/)을 참조하세요.
 
 다양한 방법으로 코드를 볼 수 있습니다. 기본적으로 **솔루션 탐색기**는 파일별로 구성된 코드를 보여 줍니다. 창 아래쪽의 **클래스 뷰** 탭을 클릭하여 클래스별로 구성된 코드를 볼 수 있습니다.
 
@@ -87,6 +88,6 @@ Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 �
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
-- [Visual Studio에서 C++ 시작](../ide/quickstart-cpp.md)
+- [Visual Studio에서 C++ 시작](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Visual Studio에서 C# 및 ASP.NET 시작](../ide/tutorial-csharp-aspnet-core.md)
 - [Visual Studio에서 Python 시작](../ide/quickstart-python.md)

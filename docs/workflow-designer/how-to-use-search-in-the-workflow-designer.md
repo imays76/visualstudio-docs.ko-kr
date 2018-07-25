@@ -10,15 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b5dfdd4b4d05969406f93801bcf87880949e41a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757970"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 검색 사용
 
-더 크고 복잡한 워크플로를 쉽게 만들려면 워크플로 디자이너에서 검색 기능을 사용하여 키워드로 항목을 찾을 수 있습니다. 디자이너는 바꾸기를 지원하지 않습니다. 검색은 디자이너에서 다음을 찾습니다.
+큰 규모의 더 복잡 한 워크플로 만들기를 용이 하 게 키워드로 항목을 찾으려면 워크플로 디자이너 내에서 검색할 수 있습니다. 디자이너는 바꾸기를 지원하지 않습니다.
 
 ## <a name="quick-find"></a>빠른 찾기
 
@@ -32,24 +33,24 @@ ms.lasthandoff: 04/26/2018
 
 -   식
 
-### <a name="using-quick-find"></a>빠른 찾기 기능 사용
+### <a name="use-quick-find"></a>빠른 찾기 사용
 
-1.  워크플로 디자이너를 연, 키를 눌러 **Ctrl + F**, 선택 또는 **편집**, **찾기 및 바꾸기**, **빠른 찾기**합니다.
+1.  워크플로 디자이너를 연을 누릅니다 **Ctrl + F**를 선택 하거나 **편집** > **찾기 및 바꾸기** > **빠른 찾기**.
 
-2.  에 검색 조건을 입력는 **찾을 내용** 텍스트 상자를 클릭 하 고 **다음 찾기**합니다.
+2.  에 검색어를 입력 합니다 **찾을 내용** 텍스트 상자 클릭 **다음 찾기**합니다.
 
-3.  검색 조건은 현재 워크플로에 있습니다. 다음 스크린 샷은 디자이너에 있는 활동 표시 이름을 보여 줍니다.
+3.  검색어는 현재 워크플로에 있습니다. 다음 이미지에는 디자이너에 있는 중인 활동 표시 이름을 보여 줍니다.
 
-     ![워크플로 디자이너에서 검색 결과](../workflow-designer/media/designersearch.png "DesignerSearch")
+   ![워크플로 디자이너의 검색 결과](../workflow-designer/media/designersearch.png)
 
 ## <a name="find-in-files"></a>파일에서 찾기
 
-파일에서 찾기를 사용하여 워크플로 파일에서 XAML 파일을 포함한 문자열을 찾습니다.
+파일에서 찾기는 XAML 파일을 포함 하 여 워크플로 파일에서 문자열을 찾습니다.
 
-### <a name="using-find-in-files"></a>파일에서 찾기 사용
+### <a name="use-find-in-files"></a>파일에서 찾기 사용
 
-1.  키를 눌러 Visual Studio에서 **Ctrl + Shift + F**, 선택 또는 **편집**, **찾기 및 바꾸기**, **파일에서 찾기**
+1.  Visual Studio에서 눌러 **Ctrl**+**Shift**+**F**를 선택 하거나 **편집**  >   **찾기 및 바꾸기** > **파일에서 찾기**합니다.
 
-2.  에 검색 조건을 입력는 **찾을 내용** 텍스트 상자를 클릭 하 고 **모두 찾기**
+2.  에 검색 조건을 입력 합니다 **찾을 내용** 텍스트 상자 클릭 **모두 찾기**합니다.
 
-3.  찾기 결과 Visual Studio에 표시 될**찾기 결과** 보기. 결과 항목을 두 번 클릭하면 워크플로 디자이너의 일치 항목이 포함된 활동으로 이동됩니다.
+3.  찾기 결과가 표시 되는 **찾기 결과** 보기. 워크플로 디자이너의 일치 항목이 포함 된 활동을 탐색 결과 항목을 두 번 클릭 합니다.

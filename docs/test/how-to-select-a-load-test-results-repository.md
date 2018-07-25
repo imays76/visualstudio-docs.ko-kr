@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752003"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>방법: 부하 테스트 결과 리포지토리 선택
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  **부하 테스트** 도구 모음에서 **테스트 컨트롤러 관리**를 선택합니다. 테스트 컨트롤러 관리 대화 상자가 나타납니다. 에이전트를 원격으로 사용하는 경우 컨트롤러를 선택해야 합니다.
 
-     ![부하 테스트 결과 저장소 연결 속성](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties") 부하 테스트 결과 저장소 연결 속성
+     ![부하 테스트 결과 저장소 연결 속성](../test/media/loadtestconnectionproperties.png) 부하 테스트 결과 저장소 연결 속성
 
 3.  **부하 테스트 결과 저장소**에서 (…) 단추를 클릭하여 **연결 속성** 대화 상자를 표시합니다.
 

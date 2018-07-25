@@ -1,16 +1,16 @@
 ---
-title: "IMachineDebugManager 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IMachineDebugManager 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IMachineDebugManager interface
 ms.assetid: 0b7133bb-5a52-4036-b4db-d69260790db7
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728803"
 ---
 # <a name="imachinedebugmanager-interface"></a>IMachineDebugManager 인터페이스
 컴퓨터 디버그 관리자에 게는 기본 인터페이스입니다. 이 인터페이스는 비슷합니다는 `IMachineDebugManagerCookie` 인터페이스입니다.  

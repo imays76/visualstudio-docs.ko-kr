@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134762"
 ---
 # <a name="managing-configuration-options"></a>구성 옵션을 관리
 새 프로젝트 형식을 만들 때 프로젝트는 빌드되는 방식을, 패키지, 배포 및 실행 하는 프로젝트 및 솔루션 구성 설정을 관리 해야 합니다. 다음 항목 프로젝트 및 솔루션 구성에 설명 합니다.  

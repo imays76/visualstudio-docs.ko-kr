@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143321"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>연습: 일치 하는 중괄호를 표시합니다.
 중괄호 일치를 정의 하 고 다음 캐럿 중괄호 중 하나에 있으면 일치 하는 중괄호에 텍스트 표식 태그를 추가 하 여 일치 하는 중괄호와 같은 언어 기반 기능을 구현할 수 있습니다. 언어의 컨텍스트에서 중괄호를 정의할 수 있습니다 또는 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 해당 형식만에 태그를 적용할 수 있습니다 또는 기존 콘텐츠 형식 (예: "text")는 태그를 적용할 수 있습니다. 다음 연습에는 중괄호 일치 하는 "text" 콘텐츠 형식에는 태그를 적용 하는 방법을 보여 줍니다.  

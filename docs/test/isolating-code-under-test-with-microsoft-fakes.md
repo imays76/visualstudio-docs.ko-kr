@@ -12,11 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ea3669f3c66a36a10e63dde9d98b0f951d58f1e
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844936"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
@@ -28,7 +29,7 @@ Fakes는 두 가지 버전이 있습니다.
 
 -   [shim](#shims)은 지정된 메서드 콜을 실행하는 대신 테스트에서 제공하는 shim 코드를 실행할 수 있도록 런타임에 응용 프로그램의 컴파일된 코드를 수정합니다. shim은 .NET 어셈블리와 같이 수정할 수 없는 어셈블리에 대한 호출을 바꾸는 데 사용할 수 있습니다.
 
-![다른 구성 요소를 대체하는 Fakes](../test/media/fakes-2.png "Fakes-2")
+![다른 구성 요소를 대체하는 Fakes](../test/media/fakes-2.png)
 
 **요구 사항**
 
@@ -239,7 +240,7 @@ shim을 사용하려면 응용 프로그램 코드를 수정하거나 특정 방
 
 이전 예제에서는 정적 메서드에 대해 shim을 사용합니다. 인스턴스 메서드에 shim을 사용하려면 형식 이름과 메서드 이름 사이에 `AllInstances`를 씁니다.
 
-```
+```vb
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ```
 

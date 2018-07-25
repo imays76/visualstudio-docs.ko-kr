@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ddbffefe729f0b4c5b89b46b96b32a90f05f297
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7787e974b093156b27b2ace4353e94db05063d7d
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238227"
 ---
 # <a name="functions-view---instrumentation-data"></a>함수 뷰 - 계측 데이터
 함수 보고서 뷰는 함수 이름별로 프로파일링 데이터를 나열합니다.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/19/2018
 |**경과된 최대 포괄 시간**|이 함수 호출의 최대 경과된 포괄 시간입니다.|  
 |**최소 경과된 포괄 시간**|이 함수 호출의 최소 경과된 포괄 시간입니다.|  
   
-## <a name="elapsed-exclusive-values"></a>경과된 전용 값  
+## <a name="elapsed-exclusive-values"></a>경과된 전용 시간값  
  경과된 포괄 값은 함수가 함수 본문의 코드를 실행하고 있던(함수가 호출 스택의 맨 위에 있던) 시간을 나타냅니다. 시간에는 컨텍스트 전환, 입/출력 작업 등 운영 체제에 대한 호출에 소요된 시간이 포함되지만, 함수가 호출한 함수에서 소요된 시간은 포함되지 않습니다.  
   
 |열|설명|  
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/19/2018
 |**최대 경과된 전용 시간**|이 함수 호출의 최대 경과된 전용 시간입니다.|  
 |**경과된 최소 전용 시간**|이 함수 호출의 최소 경과된 전용 시간입니다.|  
   
-## <a name="application-inclusive-values"></a>응용 프로그램 포괄 시간값  
+## <a name="application-inclusive-values"></a>응용 프로그램 포괄 값  
  응용 프로그램 포괄 값은 함수가 호출 스택에 있던 시간을 나타냅니다. 시간에는 컨텍스트 전환, 입/출력 작업 등 운영 체제에 대한 호출에 소요된 시간이 포함되지만, 함수가 호출한 함수에서 소요된 시간이 포함됩니다.  
   
 |열|설명|  
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/19/2018
 |**최대 응용 프로그램 포괄 시간**|이 함수에 대한 호출의 최대 응용 프로그램 포괄 시간입니다.|  
 |**최소 응용 프로그램 포괄 시간**|이 함수에 대한 호출의 최소 응용 프로그램 포괄 시간입니다.|  
   
-## <a name="application-exclusive-values"></a>응용 프로그램 전용 시간값  
+## <a name="application-exclusive-values"></a>응용 프로그램 전용 값  
  응용 프로그램 전용 값은 함수가 호출 스택의 맨 위에서 직접 실행 중이던 시간을 나타냅니다. 시간에는 컨텍스트 전환, 입/출력 작업 등 운영 체제에 대한 호출에 소요된 시간이 포함되고 함수가 호출한 함수에서 소요된 시간은 포함되지 않습니다.  
   
 |열|설명|  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102709"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 식 계산을 제어 하는 플래그에 대 한 유효한 값을 열거 합니다. 이 열거형 확장는 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 열거 합니다.  

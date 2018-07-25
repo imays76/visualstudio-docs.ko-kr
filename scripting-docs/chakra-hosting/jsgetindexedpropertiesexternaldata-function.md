@@ -1,14 +1,14 @@
 ---
-title: "JsGetIndexedPropertiesExternalData 함수 | Microsoft Docs"
-ms.custom: 
+title: JsGetIndexedPropertiesExternalData 함수 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 2c313163-3462-42fd-8dee-3dfb3ac7f43f
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568023"
 ---
 # <a name="jsgetindexedpropertiesexternaldata-function"></a>JsGetIndexedPropertiesExternalData 함수
 개체의 인덱싱된 속성 외부 데이터 정보를 검색합니다.  

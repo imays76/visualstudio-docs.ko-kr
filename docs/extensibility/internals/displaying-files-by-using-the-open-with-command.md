@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128622"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>파일 열기 명령을 사용 하 여 표시
 프로젝트를 표시 하려면 IDE를 요청할 수는 **프로그램** 대화 상자. 이 요청 라는 표준 편집기는 선택 항목에 있는 파일을 열 수입니다. 다음 단계는이 프로세스를 설명 합니다.  

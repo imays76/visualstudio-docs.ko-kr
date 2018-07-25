@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1e03cbf8a0df91bc0cb02ce69ec615dd66d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b25d6cc6a88e1e5b7bd0b839cfdca5be713c6b7e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077189"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>XAttribute 클래스 동적 속성
 
 이 단원에서는 <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>의 동적 속성에 대해 설명합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 |항목|설명|
 |-----------|-----------------|
@@ -30,4 +31,4 @@ ms.lasthandoff: 04/26/2018
 
 - <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>
 - [LINQ to XML 동적 속성](../designers/linq-to-xml-dynamic-properties.md)
-- [XAttribute 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md)
+- [XElement 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md)

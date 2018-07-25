@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457360"
 ---
 # <a name="about-microsoft-spy"></a>Microsoft Spy++ 정보
 저작권, 버전, 소유권 및 Spy + +에 대 한 기타 정보를 표시 하려면이 대화 상자를 사용 합니다.

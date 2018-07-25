@@ -26,6 +26,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448378"
 ---
 # <a name="document-host-item"></a>문서 호스트 항목
   <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목은 Word용 주 interop 어셈블리의 <xref:Microsoft.Office.Interop.Word.Document> 형식을 확장한 형식입니다. <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목은 <xref:Microsoft.Office.Interop.Word.Document> 개체와 동일한 모든 속성, 메서드 및 이벤트를 제공할 뿐 아니라 추가 이벤트를 노출하고 호스트 컨트롤 및 Windows Forms 컨트롤에 대한 컨테이너 역할을 합니다.  

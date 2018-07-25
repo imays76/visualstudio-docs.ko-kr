@@ -9,21 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b39c4d1e515530f50d086cb107d4ec0d297d48
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746314"
 ---
 # <a name="manage-project-and-solution-properties"></a>프로젝트 및 솔루션 속성 관리
 
 프로젝트에는 컴파일, 디버깅, 테스트 및 배포의 다양한 측면을 제어하는 속성이 있습니다. 일부 속성은 모든 프로젝트 형식 간에 공통적으로 적용되고 일부 속성은 특정 언어 또는 플랫폼에 고유합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하거나 메뉴 모음의 **빠른 실행** 검색 상자에 "속성"을 입력하여 프로젝트 속성에 액세스합니다.
 
-![프로젝트 상황에 맞는 메뉴](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
+![프로젝트 상황에 맞는 메뉴](../ide/media/vs2015_proj_prop_menu.gif)
 
 .NET 프로젝트는 프로젝트 트리 자체에도 속성 노드가 있을 수 있습니다.
 
-![솔루션 탐색기 트리의 속성 노드](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
+![솔루션 탐색기 트리의 속성 노드](../ide/media/vs2015_props_se.png)
 
 ## <a name="project-properties"></a>프로젝트 속성
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
 C#, Visual Basic 및 F# 프로젝트에서는 속성이 **프로젝트 디자이너**에 노출됩니다. 다음 그림에서는 C# WPF 프로젝트에 대한 **빌드** 속성 페이지를 보여 줍니다.
 
-![Visual Studio 프로젝트 디자이너](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
+![Visual Studio 프로젝트 디자이너](../ide/media/vs2015_proppage_build.png)
 
 **프로젝트 디자이너**의 각 속성 페이지에 대한 자세한 내용은 [프로젝트 속성 참조](../ide/reference/project-properties-reference.md)를 참조하세요.
 
@@ -44,7 +45,7 @@ C#, Visual Basic 및 F# 프로젝트에서는 속성이 **프로젝트 디자이
 
 C++ 및 JavaScript 프로젝트에는 프로젝트 속성을 관리하기 위한 다른 사용자 인터페이스가 있습니다. 이 그림에서는 C++ 프로젝트 속성 페이지를 보여줍니다(JavaScript 페이지도 유사함):
 
-![Visual C&#43;&#43; 프로젝트 속성](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
+![Visual C&#43;&#43; 프로젝트 속성](../ide/media/vs2015_projprops_cpp.png)
 
 C++ 프로젝트 속성에 대한 자세한 내용은 [프로젝트 속성 작업 (C++)](/cpp/ide/working-with-project-properties)을 참조하세요. JavaScript 속성에 대한 자세한 내용은 [속성 페이지, JavaScript](../ide/reference/property-pages-javascript.md)를 참조하세요.
 

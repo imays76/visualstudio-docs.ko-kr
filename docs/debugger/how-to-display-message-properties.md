@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473279"
 ---
 # <a name="how-to-display-message-properties"></a>방법: 메시지 속성 표시
 에 나열 된 메시지에 대 한 자세한 내용을 [메시지 뷰](../debugger/messages-view.md)를 사용 하 여는 [메시지 속성 대화 상자](../debugger/message-properties-dialog-box.md)합니다.  

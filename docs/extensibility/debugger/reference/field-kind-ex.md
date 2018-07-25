@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101159"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 필드의 기타 종류를 열거 하는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체에 포함 될 수 있습니다. 이 열거형 확장는 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 열거 합니다.  

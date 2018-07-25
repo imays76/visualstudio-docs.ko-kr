@@ -1,13 +1,13 @@
 ---
-title: "예상된 16 진수 | Microsoft Docs"
-ms.custom: 
+title: 예상된 16 진수 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1023
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 67a86df7-49f9-43cb-99c6-99b1a427827a
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633093"
 ---
 # <a name="expected-hexadecimal-digit"></a>16진수가 필요합니다.
 잘못 된 유니코드 이스케이프 시퀀스를 만들었습니다. 유니코드 이스케이프 시퀀스 \u, 다음에 정확 하 게 4 자리 16 진수 (더 이상 및 더 작은)로 시작 합니다. 유니코드 16 진수는 숫자 0-9, A-F 대 문자가 소문자 문자 a-f를 포함할 수 있습니다. 다음 예제에서는 올바른 형식의 유니코드 이스케이프 시퀀스를 보여 줍니다.  

@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 720a5d7ca5dfd0d8ab21100fa41c5b249a99858d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751678"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>방법: 웹 성능 테스트 결과 뷰어에 대한 Visual Studio 추가 기능 만들기
 
@@ -135,7 +136,7 @@ ms.lasthandoff: 04/26/2018
 
 6.  도구 상자에서 <xref:System.Windows.Forms.DataGridView>를 userControl1의 화면으로 끌어옵니다.
 
-7.  <xref:System.Windows.Forms.DataGridView>의 오른쪽 위 모퉁이에서 작업 태그 문자 모양(![스마트 태그 문자 모양](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph"))을 클릭하고 다음 단계를 수행합니다.
+7.  <xref:System.Windows.Forms.DataGridView>의 오른쪽 위 모퉁이에서 작업 태그 문자 모양(![스마트 태그 문자 모양](../test/media/vs_winformsmttagglyph.gif))을 클릭합니다.
 
     1.  **부모 컨테이너에서 도킹**을 선택합니다.
 

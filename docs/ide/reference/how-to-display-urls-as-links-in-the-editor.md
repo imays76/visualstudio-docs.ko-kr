@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448054"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>방법: 편집기에서 URL을 링크로 표시
 코드 편집기에서 코드의 URL(Uniform Resource Locator)을 활성 링크로 포함하도록 선택할 수 있습니다. 이 기능을 사용할 경우 URL은 다음과 같습니다.

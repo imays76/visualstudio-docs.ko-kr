@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139291"
 ---
 # <a name="using-the-settings-store"></a>설정 저장소를 사용 하 여
 저장소 설정의 두 종류가 있습니다.  

@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 061ede31c0d3d0f72daf3417851aaa76adc3570d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80724e21a1c004bd99f194e76179d9c08d6b570a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119392"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 개발 샘플 및 연습
-  이 섹션에는 샘플 응용 프로그램, 예제 코드 및 구문, 구조 및 SharePoint 솔루션을 빌드하는 데 사용 하는 기술을 설명 하는 단계별 연습이 포함 되어 있습니다.  
+  이 섹션에서는 샘플 응용 프로그램, 예제 코드 및 구문, 구조 및 SharePoint 솔루션을 구축 하는 데 사용 되는 기술을 설명 하는 단계별 연습을 포함 합니다.  
   
- 예제 코드는 지침을 제공 하기 위한와 수정 하지 않고 배포 된 솔루션에서 사용할 수 없습니다. 특히 보안 더욱 주의를 기울여야 합니다.  
+ 샘플 코드는 교육 목적 제공 및 수정 하지 않고 배포 된 솔루션에서 사용할 수 없습니다. 특히 보안 더욱 주의를 기울여야 합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용
   
 |항목|설명|  
 |-----------|-----------------|  
-|[SharePoint 개발 샘플](../sharepoint/sharepoint-development-samples.md)|Visual Studio에서 SharePoint 개발 도구를 사용 하는 방법을 보여 주는 예제 응용 프로그램에 설명 합니다.|  
+|[SharePoint 개발 샘플](../sharepoint/sharepoint-development-samples.md)|Visual Studio에서 SharePoint 개발 도구를 사용 하는 방법을 보여 주는 샘플 응용 프로그램을 설명 합니다.|  
 |[SharePoint 개발 연습](../sharepoint/sharepoint-development-walkthroughs.md)|Visual Studio의 SharePoint 개발 도구를 소개하는 단계별 지침을 제공합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료
  [SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md)  
-  
   

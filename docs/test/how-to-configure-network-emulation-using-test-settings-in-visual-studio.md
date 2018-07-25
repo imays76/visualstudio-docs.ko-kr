@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31972422"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 

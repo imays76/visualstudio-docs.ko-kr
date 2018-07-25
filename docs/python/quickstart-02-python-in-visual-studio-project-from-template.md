@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dca1e37a0cde89a2a531d3fceea4337bb9e348dd
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 046aeb3d43066dbe0bd28ef76036478efdbda49f
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37057026"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>빠른 시작: Visual Studio의 템플릿에서 Python 프로젝트 만들기
 
@@ -36,11 +37,31 @@ ms.lasthandoff: 05/10/2018
     > [!Tip]
     > 프로젝트를 시작하는 경우 대부분의 Visual Studio 템플릿에서 요청한 대로 바로 가상 환경을 만드는 것이 좋습니다. 라이브러리를 추가하고 제거하면 가상 환경에서는 시간이 지남에 따라 프로젝트의 정확한 요구 사항을 유지 관리합니다. 그런 다음, 원본 제어를 사용할 때 및 프로덕션 서버에 프로젝트를 배포할 때 다른 개발 컴퓨터에 해당 종속성을 다시 설치하는 데 사용하는 `requirements.txt` 파일을 쉽게 생성할 수 있습니다. 가상 환경 및 해당 기능을 사용하는 이점에 대한 자세한 내용은 [가상 환경 사용](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) 및 [requirements.txt를 사용하여 필수 패키지 관리](../python/managing-required-packages-with-requirements-txt.md)를 참조하세요.
 
-1. Visual Studio에서 해당 환경을 만든 후에 **솔루션 탐색기**를 탐색하여 `requirements.txt`와 함께 `app.py` 파일이 있는지 확인합니다. `app.py`를 열어서 템플릿이 두 개의 섹션 추가이 추가된 [빠른 시작 - Flask를 사용하여 웹앱 만들기](../ide/quickstart-python.md)와 같은 코드를 제공하는지 확인합니다.
+1. Visual Studio에서 해당 환경을 만든 후에 **솔루션 탐색기**를 탐색하여 `requirements.txt`와 함께 `app.py` 파일이 있는지 확인합니다. `app.py`를 열어서 템플릿이 몇몇 섹션이 추가된 [빠른 시작 - Flask를 사용하여 웹앱 만들기](../ide/quickstart-python.md)와 같은 코드를 제공하는지 확인합니다. 아래에 표시된 코드는 모두 템플릿에서 만들어지므로 `app.py`를 직접 붙여넣을 필요가 없습니다.
 
-    먼저 웹 호스트에 앱을 배포할 때 도움이 될 수 있는 `wsgi_app = app.wsgi_app` 줄입니다.
+    필요한 가져오기를 사용하여 코드가 시작됩니다.
 
-    둘째는 하드 코딩하는 대신 환경 변수를 통해 호스트 및 포트를 설정할 수 있는 시작 코드입니다. 이러한 코드를 사용하면 코드를 변경하지 않고 개발 및 프로덕션 컴퓨터 모두에서 구성을 쉽게 제어할 수 있습니다.
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
+    ```
+
+    웹 호스트에 앱을 배포할 때 도움이 될 수 있는 줄은 다음과 같습니다.
+
+    ```python
+    wsgi_app = app.wsgi_app
+    ```
+
+    그런 다음, 뷰를 정의하는 간단한 함수에서 경로 데코레이터를 추가합니다.
+
+    ```python
+    @app.route('/')
+    def hello():
+        """Renders a sample page."""
+        return "Hello World!"
+    ```
+
+    마지막으로 아래 시작 코드를 사용하면 하드 코딩하는 대신 환경 변수를 통해 호스트 및 포트를 설정할 수 있습니다. 이러한 코드를 사용하면 코드를 변경하지 않고 개발 및 프로덕션 컴퓨터 모두에서 구성을 쉽게 제어할 수 있습니다.
 
     ```python
     if __name__ == '__main__':
@@ -55,7 +76,8 @@ ms.lasthandoff: 05/10/2018
 
 1. **디버그 > 디버깅하지 않고 시작**을 선택하여 앱을 실행하고 `localhost:5555`에 대한 브라우저를 엽니다.
 
-**질문: Visual Studio에서 제공하는 다른 Python 템플릿은 무엇인가요?**
+
+  **질문: Visual Studio에서 제공하는 다른 Python 템플릿은 무엇인가요?**
 
 **응답**: Python 워크로드를 설치하면 Visual Studio에서는 [Flask, Bottle 및 Django 웹 프레임워크](../python/python-web-application-project-templates.md), Azure 클라우드 서비스, 다른 기계 학습 시나리오 및 Python 앱을 포함하는 기존 폴더 구조에서 프로젝트를 만드는 템플릿을 비롯한 다양한 프로젝트 템플릿을 제공합니다. **Python** 언어 노드 및 해당 자식 노드를 선택하여 **파일 > 새로 만들기 > 프로젝트...** 대화 상자를 통해 이러한 항목에 액세스합니다.
 

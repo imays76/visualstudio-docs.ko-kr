@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136341"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix 요소(Visual Studio 템플릿)
 가장 최근에 사용한 (MRU) 경로 지정 된 **새 프로젝트** 및 **새 항목 추가** 대화 상자.  

@@ -14,16 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8339b475c3c93bac192f67de8234c5dab1b84abb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1e812be4927ee0232d1096fa272d8ff8e7358366
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078802"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>방법: 먼저 빌드할 대상 지정
 프로젝트 파일에는 프로젝트 빌드 방식을 정의하는 하나 이상의 `Target` 요소가 포함됩니다. 프로젝트 파일에 `DefaultTargets` 특성, `InitialTargets` 특성이 포함되거나 대상이 명령줄에서 **/target** 스위치를 사용하여 지정된 경우가 아니면 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 엔진은 발견한 첫 번째 프로젝트 및 모든 종속성을 빌드합니다.  
   
-## <a name="using-the-initialtargets-attribute"></a>InitialTargets 특성 사용  
+## <a name="use-the-initialtargets-attribute"></a>InitialTargets 특성 사용  
  대상이 명령줄 또는 `DefaultTargets` 특성에서 지정된 경우에도 `Project` 요소의 `InitialTargets` 특성은 먼저 실행할 대상을 지정합니다.  
   
 #### <a name="to-specify-one-initial-target"></a>하나의 초기 대상을 지정합니다.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/19/2018
   
      `<Project InitialTargets="Clean;Compile">`  
   
-## <a name="using-the-defaulttargets-attribute"></a>DefaultTargets 특성 사용  
+## <a name="use-the-defaulttargets-attribute"></a>DefaultTargets 특성 사용  
  `Project` 요소의 `DefaultTargets` 특성은 대상이 명령줄에서 명시적으로 지정되지 않은 경우 빌드되는 하나 이상의 대상을 지정합니다. 대상이 `InitialTargets` 및 `DefaultTargets` 특성에서 둘 다 지정되고 대상이 명령줄에서 지정되지 않은 경우 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 `InitialTargets` 특성에 지정된 대상을 실행하고 나서 `DefaultTargets` 특성에 지정된 대상을 실행합니다.  
   
 #### <a name="to-specify-one-default-target"></a>하나의 기본 대상을 지정하려면  
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/19/2018
   
      `<Project DefaultTargets="Clean;Compile">`  
   
-## <a name="using-the-target-switch"></a>/target 스위치 사용  
+## <a name="use-the-target-switch"></a>/target 스위치 사용  
  기본 대상이 프로젝트 파일에 정의되어 있지 않거나 기본 대상을 사용하지 않으려는 경우 명령줄 스위치 **/target**을 사용하여 다른 대상을 지정할 수 있습니다. `DefaultTargets` 특성으로 지정된 대상 대신 **/target** 스위치를 사용하여 지정된 하나 이상의 대상이 실행됩니다. `InitialTargets` 특성에 지정된 대상이 항상 먼저 실행됩니다.  
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>기본 대상 이외의 대상을 먼저 사용하려면  

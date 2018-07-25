@@ -1,5 +1,5 @@
 ---
-title: '연습: 음영으로 인해 오류 렌더링 디버깅 | Microsoft Docs'
+title: '연습: 음영으로 인 한 오류를 렌더링 디버깅 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b03a8f88c5daa421a3d6a10870b8d66b209402
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 62e64634d968e391b0414b55a5220c97e181d456
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433414"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>연습: 음영으로 인한 렌더링 오류 디버깅
-이 연습에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 셰이더 버그로 인해 색상이 잘못 지정된 개체를 조사하는 방법을 보여 줍니다.  
+이 연습에 사용 하는 방법을 보여 줍니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단 개체는 색상이 잘못 지정 셰이더 버그로 인해를 조사 합니다.  
   
  이 연습에서는 다음 방법을 설명합니다.  
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/18/2018
 ## <a name="scenario"></a>시나리오  
  개체 색상이 잘못 지정되는 문제는 일반적으로 꼭지점 셰이더가 픽셀 셰이더에 올바르지 않거나 불완전한 정보를 전달할 때 발생합니다.  
   
- 이 시나리오에서 사용자는 최근에 앱에 개체를 추가했으며 개체를 변환하고 고유한 모양을 부여하기 위해 새 꼭지점 및 픽셀 셰이더도 함께 추가했습니다. 테스트하는 동안 앱을 실행하는 경우 개체가 검은색으로 렌더링됩니다. 그래픽 진단을 사용하여 앱을 디버그할 수 있도록 그래픽 로그 문제를 포착합니다. 이 문제는 앱에서 다음과 같이 보입니다.  
+ 이 시나리오에서는 최근에 앱에 개체를 추가 합니다. 새 꼭 짓 점 및 픽셀 셰이더 모두 개체를 변환 하 고 고유한 모양을 부여를 추가할 수도 있습니다. 테스트하는 동안 앱을 실행하는 경우 개체가 검은색으로 렌더링됩니다. 그래픽 진단을 사용하여 앱을 디버그할 수 있도록 그래픽 로그 문제를 포착합니다. 문제는 앱에서이 이미지와 같습니다.  
   
  ![개체는 잘못 된 색으로 렌더링 됩니다. ] (media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")  
   
@@ -38,10 +39,10 @@ ms.lasthandoff: 04/18/2018
  그래픽 진단 도구를 사용하면 그래픽 로그 문서를 로드하여 테스트 중에 캡처한 프레임을 검사할 수 있습니다.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>그래픽 로그에서 프레임을 검사하려면  
+   
+1.  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 누락 된 모델을 보여 주는 프레임에 그래픽 로그를 로드 합니다. 새 그래픽 로그 문서 창에 표시 됩니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다. 이 창의 맨 윗 부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
   
-1.  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 누락된 모델을 보여 주는 프레임이 포함된 그래픽 로그를 로드합니다. 새 그래픽 로그 문서 창이 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에 나타납니다. 이 창의 맨 윗 부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
-  
-2.  **프레임 목록**에서 개체의 모양이 올바르지 않은 프레임을 선택합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서 그래픽 로그 문서 창은 다음과 같습니다.  
+2.  에 **프레임 목록**는 개체가 없는 올바른 모양을 프레임을 선택 합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서는 그래픽 로그 문서 창 같습니다가이 이미지:  
   
      ![그래픽 로그 문서를 Visual Studio에서 사용 합니다. ] (media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")  
   
@@ -51,17 +52,17 @@ ms.lasthandoff: 04/18/2018
   
 1.  **그래픽 픽셀 기록** 창을 엽니다. **그래픽 진단** 도구 모음에서 **픽셀 기록**을 선택합니다.  
   
-2.  픽셀을 선택하여 검사합니다. 그래픽 로그 문서 창에서 잘못 색이 지정된 개체의 픽셀 중 하나를 선택합니다.  
+2.  픽셀을 선택하여 검사합니다. 그래픽 로그 문서 창에서 색상이 잘못 된 개체의 픽셀 중 하나를 선택 합니다.  
   
-     ![픽셀을 선택 하면 해당 기록에 대 한 정보를 표시 합니다. ] (media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
+     ![픽셀을 선택 하면 해당 기록 하는 방법에 대 한 정보가 표시 됩니다. ] (media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
      **그래픽 픽셀 기록** 창은 선택된 픽셀을 반영하도록 업데이트됩니다. 이 시나리오에서 **그래픽 픽셀 기록** 창은 다음과 같습니다.  
   
      ![픽셀 기록은 DrawIndexed 이벤트 하나를 보여 줍니다. ] (media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")  
   
-     픽셀 셰이더의 결과는 완전히 불투명한 검은색(0, 0, 0, 1)입니다. **출력 병합기** 가 이 색상을 픽셀의 **이전** 색상과 결합하므로 **결과** 가 완전히 불투명한 검은색이 되는 것입니다.  
+     픽셀 셰이더의 결과 완전히 불투명 한 검은색 (0, 0, 0, 1)는는 **출력 병합기** 사용 하 여이 픽셀 셰이더를 결합 합니다 **이전** 방식으로 픽셀의 색은는  **결과** 가 완전히 불투명 한 검은색이 합니다.  
   
- 색상이 잘못된 픽셀을 검사하고 픽셀 셰이더 출력이 예상된 색이 아닌지 검색한 후에는 HLSL 디버거를 사용하여 픽셀 셰이더를 검사하고 개체 색상에 나타난 결과를 확인할 수 있습니다. 실행하는 동안 HLSL 디버거를 사용하여 HLSL 변수의 상태를 검사하고, HLSL 코드를 단계별로 진행하고, 문제 진단을 위한 중단점을 설정할 수 있습니다.  
+ 색상이 잘못 된 픽셀을 검사 하는 픽셀 셰이더 출력이 예상된 된 색 아닙니다. 검색 한 후에 픽셀 셰이더를 검사 하 여 개체의 색 변경 내용을 HLSL 디버거를 사용할 수 있습니다. 실행하는 동안 HLSL 디버거를 사용하여 HLSL 변수의 상태를 검사하고, HLSL 코드를 단계별로 진행하고, 문제 진단을 위한 중단점을 설정할 수 있습니다.  
   
 #### <a name="to-examine-the-pixel-shader"></a>픽셀 셰이더를 검사하려면  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/18/2018
   
 3.  `input.color`에 포인터를 놓습니다. 해당 값은 완전히 불투명한 검정색입니다(0, 0, 0, 1).  
   
-     !["Input"의 "color" 멤버가 검은색입니다. ] (media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")  
+     !["Input"의 "color" 멤버가 검정입니다. ] (media/gfx_diag_demo_render_error_shader_step_5.png "gfx_diag_demo_render_error_shader_step_5")  
   
      이 시나리오에서 검사를 통해 잘못된 색상은 수행할 픽셀 셰이더에 대한 올바른 색상 정보를 제공하지 않는 꼭짓점 셰이더의 결과일 수 있음을 알 수 있습니다.  
   
@@ -83,13 +84,13 @@ ms.lasthandoff: 04/18/2018
   
 2.  꼭지점 셰이더의 출력 구조를 찾습니다. 이것이 픽셀 셰이더의 입력에 해당합니다. 이 시나리오에서 이 구조의 이름은 `output`입니다. 꼭짓점 셰이더 코드를 검사하고 사용자의 디버깅 활동으로 인해 `color` 구조의 `output` 멤버가 완전히 불투명한 검정색으로 명시적으로 설정되어 있는지 확인합니다.  
   
-3.  색상 멤버가 입력 구조에서 복사되지 않았음을 확인합니다. 때문에 값 `output.color` 직전에 완전히 불투명 한 검정색으로 설정 되는 `output` 구조 반환 되 고, 확인 하는 것이 좋습니다 값 `output` 이전 줄에서 올바르게 초기화 되지 않았음을 합니다. `output.color` 의 값을 살펴보는 동안 `output.color`를 검정색으로 설정하는 줄에 도달할 때까지 꼭짓점 셰이더를 단계별로 수행합니다. `output.color` 값이 검정색으로 설정될 때까지 초기화되지 않음을 확인합니다. 이렇게 하면 `output.color` 를 검정색으로 설정하는 코드 줄을 삭제하기 보다는 수정해야 함을 확인할 수 있습니다.  
+3.  색상 멤버가 입력 구조에서 복사되지 않았음을 확인합니다. 때문에 값 `output.color` 직전 완전히 불투명 한 검정색으로 설정 될 합니다 `output` 구조 반환 되 고, 확인 하는 것이 좋습니다 값 `output` 이전 줄에서 올바르게 초기화 되지 않았습니다. `output.color` 의 값을 살펴보는 동안 `output.color`를 검정색으로 설정하는 줄에 도달할 때까지 꼭짓점 셰이더를 단계별로 수행합니다. `output.color` 값이 검정색으로 설정될 때까지 초기화되지 않음을 확인합니다. 이렇게 하면 `output.color` 를 검정색으로 설정하는 코드 줄을 삭제하기 보다는 수정해야 함을 확인할 수 있습니다.  
   
      !["Output.color"의 값은 검정입니다. ] (media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   
  렌더링 문제의 원인이 꼭짓점 셰이더가 픽셀 셰이더에 올바른 색상 값을 제공하지 않기 때문이라고 판단했다면 이 정보를 사용하여 문제를 해결할 수 있습니다. 이 시나리오에서는 꼭짓점 셰이더에서 다음 코드를 변경하여 문제를 해결할 수 있습니다.  
   
-```  
+```hlsl  
 output.color = float3(0.0f, 0.0f, 0.0f);  
 ```  
   

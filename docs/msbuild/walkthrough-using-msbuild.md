@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4e6599fc55143789e35aad5fd4848904ae0c37
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5240ebf307973c0ca6088053aabec4e19fa852a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327039"
 ---
 # <a name="walkthrough-using-msbuild"></a>연습: MSBuild 사용
 MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습에서는 MSBuild의 구성 요소를 소개하고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. 학습 내용은 다음과 같습니다.
@@ -128,7 +129,7 @@ MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되�
 
 3.  명령 스위치 /t:HelloWorld를 사용하여 msbuild를 실행합니다. 그러면 HelloWorld 대상이 선택 및 빌드됩니다.
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -177,7 +178,7 @@ MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되�
 ## <a name="examining-a-property-value"></a>속성값 검사
  속성값을 가져오려면 다음 구문을 사용합니다. 여기서 PropertyName는 속성의 이름입니다.
 
-```
+```xml
 $(PropertyName)
 ```
 
@@ -198,7 +199,7 @@ $(PropertyName)
 
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -236,7 +237,7 @@ $(PropertyName)
 
 1.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
     ```
 
@@ -265,7 +266,7 @@ $(PropertyName)
 
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -307,7 +308,7 @@ $(PropertyName)
 ## <a name="examining-item-type-values"></a>항목 종류 값 검사
  항목 종류의 값을 가져오려면 다음 구문을 사용합니다. 여기서 ItemType은 항목 종류의 이름입니다.
 
-```
+```xml
 @(ItemType)
 ```
 
@@ -327,7 +328,7 @@ $(PropertyName)
 
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -341,7 +342,7 @@ $(PropertyName)
 
  항목 종류의 구분 기호를 변경하려면 다음 구문을 사용합니다. 여기서 ItemType은 항목 종류이고 Separator는 하나 이상의 구분 문자를 포함하는 문자열입니다.
 
-```
+```xml
 @(ItemType, Separator)
 ```
 
@@ -359,7 +360,9 @@ $(PropertyName)
 
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
-     `msbuild buildapp.csproj /t:HelloWorld`
+    ```cmd
+    msbuild buildapp.csproj /t:HelloWorld
+    ```
 
 4.  출력을 검사합니다. 다음 줄이 표시됩니다.
 
@@ -437,7 +440,7 @@ $(PropertyName)
 
 4.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -462,7 +465,7 @@ $(PropertyName)
 
  항목 종류의 메타데이터 값을 가져오려면 다음 구문을 사용합니다. 여기서 ItemType은 항목 종류의 이름이고 MetaDataName은 메타데이터의 이름입니다.
 
-```
+```xml
 %(ItemType.MetaDataName)
 ```
 
@@ -478,7 +481,7 @@ $(PropertyName)
 
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -508,7 +511,7 @@ $(PropertyName)
 
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -528,7 +531,7 @@ $(PropertyName)
 ### <a name="metadata-transformations"></a>메타데이터 변환
  항목 목록을 새 항목 목록으로 변환할 수 있습니다. 항목 목록을 변환하려면 다음 구문을 사용합니다. 여기서 ItemType은 항목 종류의 이름이고 MetadataName은 메타데이터의 이름입니다.
 
-```
+```xml
 @(ItemType -> '%(MetadataName)')
 ```
 
@@ -546,7 +549,7 @@ $(PropertyName)
 
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303311"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>MSBuild를 사용하여 빌드 로그 가져오기
 MSBuild에서 스위치를 사용하면 검토할 빌드 데이터의 양과 하나 이상의 파일에 빌드 데이터를 저장할지를 지정할 수 있습니다. 빌드 데이터를 수집하는 사용자 지정 로거를 지정할 수도 있습니다. 이 항목에서 다루지 않는 MSBuild 명령줄 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.  
@@ -38,20 +39,20 @@ MSBuild에서 스위치를 사용하면 검토할 빌드 데이터의 양과 하
   
  **/verbosity**를 `detailed`로 설정하면 빌드 프로세스의 속도가 느려질 수 있으며, **/verbosity**를 `diagnostic`으로 설정하면 속도가 더욱 느려집니다.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>파일에 빌드 로그 저장  
  **/fileLogger**(**fl**) 스위치를 사용하여 빌드 데이터를 파일에 저장할 수 있습니다. 다음 예제에서는 이름이 `msbuild.log`인 파일에 빌드 데이터를 저장합니다.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  다음 예제에서 로그 파일의 이름은 `MyProjectOutput.log`이고 로그 출력의 자세한 표시 수준은 `diagnostic`으로 설정됩니다. **/filelogparameters**(`flp`) 스위치를 사용하여 이 두 설정을 지정합니다.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -62,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  파일 2 및 3에 대한 **/filelogparameters**(`flp`) 스위치는 각 파일에 지정할 이름 및 포함할 내용을 지정합니다. 파일 1에는 이름이 지정되지 않았으므로 기본 이름인 `msbuild1.log`가 사용됩니다.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -75,7 +76,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 
 다음 예제에서는 이진 로그 파일이 `binarylogfilename` 이름으로 만들어집니다.
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

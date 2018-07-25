@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ebff923667f76c350f17a08196369b4354151d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2efa8cf966967b07e1dbbfe5e2e1f6b7f8f6aef7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572883"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd를 사용한 빠른 웹 사이트 프로파일링
 
@@ -28,11 +29,11 @@ ms.lasthandoff: 04/19/2018
  동시성 데이터를 수집하거나 프로파일링을 일시 중지했닫가 다시 시작하는 등의 일부 시나리오에서는 기본 프로파일링 방법으로 **VSPerfCmd**를 사용합니다.
 
 > [!NOTE]
-> 프로파일링 도구의 명령줄 도구는 Visual Studio 설치 디렉터리의 \Team Tools\Performance Tools 하위 디렉터리에 있습니다. 64비트 컴퓨터의 경우 32 bit\Team Tools\Performance Tools 디렉터리에 있는 VSPerfASPNETCmd 도구를 사용합니다. 프로파일러 명령줄 도구를 사용하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.
+> 프로파일링 도구의 명령줄 도구는 Visual Studio 설치 디렉터리의 *\Team Tools\Performance Tools* 하위 디렉터리에 있습니다. 64비트 컴퓨터의 경우 32비트 *\Team Tools\Performance Tools* 디렉터리에 있는 VSPerfASPNETCmd 도구를 사용합니다. 프로파일러 명령줄 도구를 사용하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.
 
 ## <a name="profiling-an-aspnet-application"></a>ASP.NET 응용 프로그램 프로파일링
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램을 프로파일링하려면 다음 섹션에서 설명하는 명령 중 하나를 입력합니다. 그러면 웹 사이트가 시작되고 프로파일러가 데이터 수집을 시작합니다. 응용 프로그램을 사용한 후에 브라우저를 닫습니다. 프로파일링을 중지하려면 명령 프롬프트 창에서 Enter 키를 누릅니다.
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램을 프로파일링하려면 다음 섹션에서 설명하는 명령 중 하나를 입력합니다. 그러면 웹 사이트가 시작되고 프로파일러가 데이터 수집을 시작합니다. 응용 프로그램을 사용한 후에 브라우저를 닫습니다. 프로파일링을 중지하려면 명령 프롬프트 창에서 **Enter** 키를 누릅니다.
 
 > [!NOTE]
 > 기본적으로 명령 프롬프트는 **vsperfaspnetcmd** 명령을 실행한 후에 원래 상태로 돌아오지 않습니다. **/nowait** 옵션을 사용하면 명령 프롬프트가 원래 상태로 돌아오도록 강제 지정할 수 있습니다. [/NoWait 옵션 사용](#UsingNoWait)을 참조하세요.
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/19/2018
 
 **vsperfaspnetcmd /trace**  *websiteUrl*
 
-웹 응용 프로그램에서 정적으로 컴파일된 .dll 파일을 프로파일링하려는 경우에는 [VSInstr](../profiling/vsinstr.md) 명령줄 도구를 사용하여 파일을 계측해야 합니다. vsperfaspnetcmd /trace 명령을 실행하면 계측된 파일의 데이터가 포함됩니다.
+웹 응용 프로그램에서 정적으로 컴파일된 .*dll* 파일을 프로파일링하려는 경우에는 [VSInstr](../profiling/vsinstr.md) 명령줄 도구를 사용하여 파일을 계측해야 합니다. vsperfaspnetcmd /trace 명령을 실행하면 계측된 파일의 데이터가 포함됩니다.
 
 ## <a name="to-collect-net-memory-data"></a>.NET 메모리 데이터를 수집하려면
 
@@ -101,5 +102,5 @@ ms.lasthandoff: 04/19/2018
 
 |옵션|설명|
 |------------|-----------------|
-|**/Output:** `VspFile`|기본적으로는 현재 디렉터리에 파일 이름 **PerformanceReport.vsp**으로 프로파일링 데이터(.vsp) 파일이 만들어집니다. /output 옵션을 사용하면 다른 위치나 파일 이름 또는 둘 다를 지정할 수 있습니다.|
-|**/PackSymbols:Off**|VsPerfASPNETCmd는 기본적으로 .vsp 파일에 기호(함수 및 매개 변수 이름 등)를 포함합니다. 기호를 포함하면 프로파일링 데이터 파일이 매우 커질 수 있습니다. 데이터를 분석할 때 기호가 포함된 .pdb 파일에 액세스해야 하는 경우 /packsymbols:off 옵션을 사용하여 기호 포함을 사용하지 않도록 설정합니다.|
+|**/Output:** `VspFile`|기본적으로는 현재 디렉터리에 파일 이름 **PerformanceReport.vsp**로 프로파일링 데이터(.*vsp*) 파일이 만들어집니다. /output 옵션을 사용하면 다른 위치나 파일 이름 또는 둘 다를 지정할 수 있습니다.|
+|**/PackSymbols:Off**|VsPerfASPNETCmd는 기본적으로 .*vsp* 파일에 기호(함수 및 매개 변수 이름 등)를 포함합니다. 기호를 포함하면 프로파일링 데이터 파일이 매우 커질 수 있습니다. 데이터를 분석할 때 기호가 포함된 .*pdb* 파일에 액세스해야 하는 경우 /packsymbols:off 옵션을 사용하여 기호 포함을 사용하지 않도록 설정합니다.|

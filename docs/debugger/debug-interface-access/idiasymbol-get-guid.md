@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31461888"
 ---
 # <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
 심볼의 전역 고유 식별자 (GUID)를 검색합니다.  

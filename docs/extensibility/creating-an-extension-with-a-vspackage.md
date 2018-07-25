@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109453"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>VSPackage를 사용 하 여 확장 만들기
 이 연습에서는 VSIX 프로젝트를 만들고 VSPackage 프로젝트 항목을 추가 하는 방법을 보여 줍니다. 메시지 상자를 표시 하려면 UI 셸 서비스를 가져올 수는 VSPackage를 사용 합니다.  
@@ -75,4 +76,4 @@ ms.lasthandoff: 04/16/2018
   
 3.  프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 표시 됩니다.  
   
-4.  실험적 인스턴스에서 솔루션을 엽니다. 라고 표시 하는 메시지 상자가 표시 되어야 **첫 번째 패키지 내 initialize ()**합니다.
+4.  실험적 인스턴스에서 솔루션을 엽니다. 라고 표시 하는 메시지 상자가 표시 되어야 **첫 번째 패키지 내 initialize ()** 합니다.

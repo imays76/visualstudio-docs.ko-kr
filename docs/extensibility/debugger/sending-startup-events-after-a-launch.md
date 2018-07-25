@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135756"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>시작 후 시작 이벤트를 전송합니다.
 디버그 엔진 (DE) 프로그램에 연결 되 면 일련의 시작 이벤트는 디버그 세션에 다시 보냅니다.  

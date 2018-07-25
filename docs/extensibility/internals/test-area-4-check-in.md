@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133153"
 ---
 # <a name="test-area-4-check-in"></a>테스트 영역 4: 체크 인
 이 소스 제어 플러그 인 테스트 기능은 업데이트 된 항목을 통해 버전 저장소로 보내는 **체크 인** 명령입니다.  

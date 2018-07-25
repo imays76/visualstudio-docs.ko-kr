@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131582"
 ---
 # <a name="providing-automation-for-vspackages"></a>Vspackage에 대 한 자동화를 제공합니다.
 사용자 Vspackage에 대 한 자동화를 제공 하는 방법에 두 가지가: VSPackage와 관련 된 개체를 구현 하 여 및 표준 자동화 개체를 구현 하 여 합니다. 일반적으로 이러한 함께 사용 됩니다 환경의 자동화 모델을 확장 합니다.  

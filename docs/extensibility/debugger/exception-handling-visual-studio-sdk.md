@@ -13,42 +13,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 646479184061b093d5d84f81827a4106bd3cda47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab3a3aafdca83305b86ce083e53e654b637cf110
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232067"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>예외 처리 (Visual Studio SDK)
-다음 예외가 throw 되 면 발생 하는 프로세스에 설명 합니다.  
+다음 예외가 발생할 때 발생 하는 프로세스를 설명 합니다.  
   
 ## <a name="exception-handling-process"></a>예외 처리 프로세스  
   
-1.  먼저 예외가 있지만 디버그 엔진 (DE) 전송 전에 예외 처리기 디버깅 중인 프로그램에 의해 처리 되는 [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) stopping 이벤트로 세션 디버그 관리자 (SDM)에 있습니다. `IDebugExceptionEvent2` 첫째 예외 알림을 중지 하려면 사용자에 게 (디버그 패키지의 예외 대화 상자에 지정 됨) 예외에 대 한 설정을 지정 하는 경우에 전송 됩니다.  
+1.  먼저 예외가 있지만 디버그 엔진 (DE) 전송 전에 디버깅 중인 프로그램에 예외 처리기에서 처리 되는 [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) 중지 이벤트로 세션 디버그 관리자 (SDM). `IDebugExceptionEvent2` (디버그 패키지에 예외 대화 상자에서 지정) 예외에 대 한 설정을 지정 된 사용자가 첫째 예외 알림을 중지 하는 경우에 전송 됩니다.  
   
-2.  SDM 호출 [IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) 예외의 속성을 가져오려고 합니다.  
+2.  SDM 호출 [IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) 예외의 속성을 가져옵니다.  
   
-3.  패키지에서 호출 하 여 디버그 [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) 어떤 옵션을 사용자에 게 표시를 확인 하려면.  
+3.  디버그 패키지 호출 [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) 사용자에 게 제공할 옵션을 확인 하려면.  
   
-4.  디버그 패키지가 첫 번째 예외 대화 상자를 열어 예외를 처리 하는 방법을 사용자에 게 요청 합니다.  
+4.  디버그 패키지가 첫째 예외 대화 상자를 열어 예외를 처리 하는 방법을 사용자에 게 요청 합니다.  
   
-5.  사용자가 계속을 선택 하는 경우는 SDM 호출 [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)합니다.  
+5.  SDM를 호출 하는 경우 사용자가 계속 하기로 [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)합니다.  
   
     -   메서드가 S_OK를 반환 하는 경우 호출 [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)합니다.  
   
-         -또는-  
+         또는  
   
-         메서드가 프로그램 S_FALSE를 반환 하는 경우 디버깅 중인 예외를 처리할 수 있는 두 번째 기회가 제공 됩니다.  
+         메서드를 프로그램 S_FALSE를 반환 하는 경우 디버깅 중인 예외를 처리 하는 두 번째 기회 제공 됩니다.  
   
-6.  디버깅 중인 프로그램의 두 번째 예외에 대 한 처리기가 있으면는 DE 보냅니다는 `IDebugExceptionEvent2` 으로 SDM에 **EVENT_SYNC_STOP**합니다.  
+6.  디버그 중인 프로그램에 두 번째 예외에 대 한 처리기는 DE 보냅니다는 `IDebugExceptionEvent2` 으로 SDM 하 **EVENT_SYNC_STOP**합니다.  
   
-7.  디버그 패키지가 첫 번째 예외 대화 상자를 열어 예외를 처리 하는 방법을 사용자에 게 요청 합니다.  
+7.  디버그 패키지가 첫째 예외 대화 상자를 열어 예외를 처리 하는 방법을 사용자에 게 요청 합니다.  
   
-8.  패키지에서 호출 하 여 디버그 [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) 어떤 옵션을 사용자에 게 표시를 확인 하려면.  
+8.  디버그 패키지 호출 [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) 사용자에 게 제공할 옵션을 확인 하려면.  
   
 9. 디버그 패키지가 두 번째 예외 대화 상자를 열어 예외를 처리 하는 방법을 사용자에 게 요청 합니다.  
   
 10. 메서드가 S_OK를 반환 하는 경우 호출 `IDebugExceptionEvent2::PassToDebuggee`합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

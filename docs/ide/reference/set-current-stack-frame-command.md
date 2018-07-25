@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704800"
 ---
 # <a name="set-current-stack-frame-command"></a>현재 스택 프레임 설정 명령
 특정 스택 프레임을 설정할 수 있습니다.

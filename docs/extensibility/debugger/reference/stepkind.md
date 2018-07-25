@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134941"
 ---
 # <a name="stepkind"></a>STEPKIND
 단계별 코드 실행 단계 종류를 지정 합니다.  

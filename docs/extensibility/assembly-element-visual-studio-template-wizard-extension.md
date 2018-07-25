@@ -1,5 +1,5 @@
 ---
-title: Assembly 요소 (Visual Studio 템플릿 마법사 확장) | Microsoft Docs
+title: Assembly 요소 (Visual Studio 템플릿 마법사 확장명) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1610df76bfce303bd13c69cb8298ac62106fd7e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153859"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 요소(Visual Studio 템플릿 마법사 확장명)
-이름이 나 구현 하는 어셈블리의 강력한 이름 지정은 `IWizard` 인터페이스입니다.  
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 요소 (Visual Studio 템플릿 마법사 확장명)
+이름 또는 구현 하는 어셈블리의 강력한 이름을 지정 합니다 `IWizard` 인터페이스입니다.  
   
  \<VSTemplate>  
 \<WizardExtension >  
@@ -48,17 +49,17 @@ ms.lasthandoff: 04/16/2018
   
 |요소|설명|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|템플릿 마법사 사용자 지정 하기 위한 등록 요소를 포함 합니다.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|템플릿 마법사를 사용자 지정에 대 한 등록 요소를 포함 합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 구현 하는 어셈블리를 지정 하는이 텍스트는 `IWizard` 인터페이스입니다. 이 어셈블리 이름은 전체 어셈블리 이름으로 지정 해야 합니다. 예를 들어, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`을 입력합니다.  
+ 구현 하는 어셈블리를 지정 하는이 텍스트는 `IWizard` 인터페이스입니다. 전체 어셈블리 이름으로이 어셈블리 이름을 지정 해야 합니다. 예를 들어, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`을 입력합니다.  
   
 ## <a name="remarks"></a>설명  
  `Assembly`은 `WizardExtension`의 필수 자식 요소입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다.  
   
 ```  
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)

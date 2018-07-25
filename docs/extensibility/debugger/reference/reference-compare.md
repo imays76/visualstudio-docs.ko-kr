@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133571"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 참조에 대 한 비교 유형을 지정합니다.  

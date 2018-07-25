@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31117064"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 디버거가 프로그램을 실행합니다. 스레드를 사용자가 프로그램을 실행 하는 경우 보고 디버거 정보를 제공 하는 스레드 반환 됩니다.  

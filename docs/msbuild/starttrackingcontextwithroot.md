@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571323"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 루트 마커를 지정하는 지시 파일을 사용하여 추적 컨텍스트를 시작합니다.  

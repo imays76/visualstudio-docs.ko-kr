@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581177"
 ---
 # <a name="summary-view---resource-contention-view"></a>요약 뷰 - 리소스 경합 뷰
 요약 뷰에는 스레드 또는 프로세스가 리소스 액세스를 대기하던 중 일시 중단된 응용 프로그램의 이벤트에 대한 정보가 표시됩니다.  

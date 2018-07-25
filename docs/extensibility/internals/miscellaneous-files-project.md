@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129979"
 ---
 # <a name="miscellaneous-files-project"></a>기타 파일 프로젝트
 프로젝트 항목을 열려고 IDE에서 모든 항목을 솔루션의 모든 프로젝트의 구성원이 아닌 기타 파일 프로젝트에 할당 합니다.  

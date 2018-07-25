@@ -1,16 +1,16 @@
 ---
-title: "IDebugDocumentHelper 인터페이스 | Microsoft Docs"
-ms.custom: 
+title: IDebugDocumentHelper 인터페이스 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentHelper interface
 ms.assetid: b652a31e-b87b-45f1-b586-94f2b6e822db
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728953"
 ---
 # <a name="idebugdocumenthelper-interface"></a>IDebugDocumentHelper 인터페이스
 같은 스마트 호스트 하는 데 필요한 여러 인터페이스에 대 한 구현을 제공는 `IDebugDocument`, `IDebugDocumentContext`, `IDebugDocumentProvider`, `IDebugDocumentText`, 및 `IDebugDocumentTextEvents` 인터페이스입니다.  

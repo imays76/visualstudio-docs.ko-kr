@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954214"
 ---
 # <a name="properties-of-decorators"></a>데코레이터의 속성
 데코레이터는 아이콘, 텍스트 또는 셰이프 또는 연결선 다이어그램에 표시할 수 있는 확장/축소 펼침 단추입니다. 다음 표에서 세 가지 데코레이터에 대 한 속성을 나타냅니다. 속성의 일부 셰이프 데코레이터에 대해서만 또는 커넥터 데코레이터에 대해서만 표시 됩니다.

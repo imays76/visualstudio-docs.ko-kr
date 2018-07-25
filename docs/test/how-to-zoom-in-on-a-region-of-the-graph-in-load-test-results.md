@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750973"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>방법: 부하 테스트 결과에서 그래프의 영역으로 확대
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 > [!TIP]
 > 도구 모음의 **가로 확대/축소 컨트롤 동기화**를 사용하여 자동 가로 확대/축소 동기화를 설정하거나 해제할 수 있습니다. 동기화가 설정되어 있으면 그래프를 확대/축소할 때마다 그래프 뷰의 다른 그래프도 같은 수준으로 확대/축소됩니다.
 
- ![그래프 뷰 확대/축소 컨트롤](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") 그래프 뷰 확대/축소 컨트롤
+ ![그래프 뷰 확대/축소 컨트롤](../test/media/ltest_zoomcontrol.png) 그래프 뷰 확대/축소 컨트롤
 
  앞의 그림에서는 테스트 중인 시스템 그래프가 임계값 문제를 조사하기 위해 확대되어 있습니다. 임계값 위반을 사용하도록 설정하려면 도구 모음의 **그래프 옵션** 드롭다운에 있는 **그래프에 임계값 위반 표시**를 사용합니다.
 

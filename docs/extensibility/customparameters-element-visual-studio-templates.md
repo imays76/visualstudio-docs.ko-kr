@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099804"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 요소(Visual Studio 템플릿)
 사용자 지정 매개 변수 마법사 매개 변수 대체를 사용 하면 템플릿 마법사 전달 되는 그룹화 합니다.  

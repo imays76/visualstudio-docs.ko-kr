@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138716"
 ---
 # <a name="wizards"></a>마법사
 일반적으로에 추가 하려면 마법사를 만든 후의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다른 사용자가 사용할 수 있도록 통합 개발 환경 (IDE). 그러면 추가 마법사에 표시 된 **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자. 참조 하는 **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자에서 열린 솔루션을 마우스 오른쪽 단추로 클릭 **솔루션 탐색기**, 가리킨 **추가**, 및 클릭 **새 프로젝트** 또는 **새 항목**합니다.  

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078929"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 코드의 XAML에 또는 XAML 디자이너를 사용하여 컨트롤, 레이아웃 및 모양과 같은 요소를 추가할 수 있습니다. 이 항목에서는 Visual Studio 또는 Blend for Visual Studio의 XAML 디자이너에서 요소에 대해 작업하는 방법을 설명합니다.
@@ -28,14 +29,14 @@ ms.lasthandoff: 05/17/2018
 
 -   XAML 디자이너에서 다음 중 하나를 수행합니다.
 
-    -   **도구 상자**에서 요소를 두 번 클릭하거나 도구 상자에서 요소를 선택하고 Enter 키를 누릅니다.
+    -   **도구 상자**에서 요소를 두 번 클릭하거나 도구 상자에서 요소를 선택하고 **Enter** 키를 누릅니다.
 
     -   요소를 **도구 상자**에서 아트보드로 끌어 놓습니다.
 
     -   **도구 상자**에서 그리기 도구(예: [타원](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) 또는 [사각형](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) 중 하나를 선택한 다음 활성 패널에서 요소를 그립니다.
 
 ## <a name="changing-the-layering-order-of-elements"></a>요소의 쌓기 순서 변경
- XAML 디자이너의 아트보드에 두 요소가 있는 경우 한 요소가 쌓기 순서대로 다른 요소 앞에 표시됩니다. [문서 개요] 창의 요소 목록 아래쪽에는 맨 앞의 요소가 있습니다(요소에 대해 **ZIndex** 속성이 설정된 경우 제외). 페이지, 폼 또는 레이아웃 컨테이너에 요소를 삽입할 때 요소가 활성 컨테이너 요소의 다른 요소 앞에 자동으로 배치됩니다. 요소의 순서를 변경하려면 **Order** 명령을 사용하거나 [문서 개요] 창의 개체 트리에서 요소를 끌면 됩니다.
+ XAML 디자이너의 아트보드에 두 요소가 있는 경우 한 요소가 쌓기 순서대로 다른 요소 앞에 표시됩니다. 문서 개요 창의 요소 목록 아래쪽에는 맨 앞의 요소가 있습니다(요소에 대해 **ZIndex** 속성이 설정된 경우 제외). 페이지, 폼 또는 레이아웃 컨테이너에 요소를 삽입할 때 요소가 활성 컨테이너 요소의 다른 요소 앞에 자동으로 배치됩니다. 요소의 순서를 변경하려면 **Order** 명령을 사용하거나 [문서 개요] 창의 개체 트리에서 요소를 끌면 됩니다.
 
 #### <a name="to-change-the-layering-order"></a>쌓기 순서를 변경하려면
 
@@ -62,7 +63,7 @@ ms.lasthandoff: 05/17/2018
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>메뉴 명령을 사용하여 둘 이상의 요소를 맞추려면
 
-1.  맞출 요소를 선택합니다. 요소를 선택하는 동안 Ctrl 키를 누르고 두 개 이상의 요소를 선택할 수 있습니다.
+1.  맞출 요소를 선택합니다. 요소를 선택할 때 **Ctrl** 키를 누르고 선택하면 두 개 이상의 요소를 선택할 수 있습니다.
 
 2.  [속성] 창의 **레이아웃** 섹션에 있는 **HorizontalAlignment** 아래에서 **Left**, **Center**, **Right** 또는 **Stretch** 속성 중 하나를 선택합니다.
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 05/17/2018
 
 #### <a name="to-group-elements-into-a-new-layout-container"></a>새 레이아웃 컨테이너에 요소를 그룹화하려면
 
-1.  그룹화할 요소를 선택합니다. (여러 요소를 선택하려면 Ctrl 키를 누른 상태에서 요소를 클릭합니다.)
+1.  그룹화할 요소를 선택합니다. (여러 요소를 선택하려면 **Ctrl** 키를 누른 상태에서 요소를 클릭합니다.)
 
 2.  선택한 요소를 마우스 오른쪽 단추로 클릭하고, **그룹으로 묶기**를 가리킨 다음, 그룹을 배치할 레이아웃 컨테이너의 형식을 클릭합니다.
 
@@ -117,7 +118,7 @@ ms.lasthandoff: 05/17/2018
 
 #### <a name="to-reset-the-element-layout"></a>요소 레이아웃을 재설정하려면
 
--   [문서 개요] 창 또는 아트보드에서 요소를 마우스 오른쪽 단추로 클릭하고, **레이아웃**, *PropertyName* **다시 설정**을 차례로 선택하거나(여기서 *PropertyName*은 다시 설정하려는 속성), **레이아웃**, **모두 다시 설정**을 차례로 선택하여 요소에 대한 모든 레이아웃 속성을 다시 설정합니다.
+-   문서 개요 창 또는 아트보드에서 요소를 마우스 오른쪽 단추로 클릭하고, **레이아웃** > **다시 설정** *PropertyName*을 차례로 선택하거나(여기서 *PropertyName*은 다시 설정하려는 속성), **레이아웃** > **모두 다시 설정**을 차례로 선택하여 요소에 대한 모든 레이아웃 속성을 다시 설정합니다.
 
 ## <a name="see-also"></a>참고 항목
 

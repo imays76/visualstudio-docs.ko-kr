@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140997"
 ---
 # <a name="web-project-essentials"></a>웹 프로젝트 Essentials
 웹 프로젝트는 웹 응용 프로그램을 만듭니다. 스마트 웹 페이지에 있는 웹 응용 프로그램을 만들려면 웹 프로젝트를 사용할 수 있습니다. 스마트 웹 페이지에는 필요에 따라 웹 페이지를 렌더링 하는 서버 쪽 코드를 있습니다.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
     -   WAP ()는 웹 응용 프로그램 프로젝트 /App_Code 폴더의 모든 소스 파일 뿐만 아니라 모든 스마트 웹 페이지에 대 한 코드를 결합 하는 단일 실행 파일을 생성 합니다.  
   
--   웹 프로젝트에 대 한 솔루션 파일은 웹 사이트 자체에서 별도로 있습니다. 기본적으로 솔루션 파일은 \Documents and 설정을\\*사용자 계정*\My Documents\\*\<Visual Studio # # # >*\Projects\\ *YourWebSite*합니다.  
+-   웹 프로젝트에 대 한 솔루션 파일은 웹 사이트 자체에서 별도로 있습니다. 기본적으로 솔루션 파일은 \Documents and 설정을\\*사용자 계정*\My Documents\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*합니다.  
   
     > [!NOTE]
     >  웹 사이트에는 솔루션 파일을 유지 하려면 방금 이동 후 다시 여십시오.  

@@ -1,13 +1,13 @@
 ---
-title: "키워드를 사용 하는 식별자에 대해 올바르지 않습니다. | Microsoft Docs"
-ms.custom: 
+title: 키워드를 사용 하는 식별자에 대해 올바르지 않습니다. | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1048
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 04951b3b-a8b5-4d36-94f8-d2daee1ce0f8
-caps.latest.revision: 
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632993"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>식별자에 대해 키워드를 잘못 사용했습니다.
 1048: 키워드를 사용 하는 식별자에 대해 올바르지 않습니다.  

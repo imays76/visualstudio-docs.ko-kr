@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135383"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>방법: AsyncPackage를 사용 하 여 백그라운드에서 Vspackage를 로드 합니다.
 디스크 I/O 로드 되 고 VS 패키지 초기화 될 수 있습니다. UI 스레드에서 오류가 발생 해도 이러한 I/O 응답성 문제가 발생할 수 있습니다. 이 문제를 해결 하려면 Visual Studio 2015 도입는 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 백그라운드 스레드에서 로드 수 있는 클래스입니다.  

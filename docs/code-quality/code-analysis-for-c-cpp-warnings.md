@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919679"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++용 코드 분석 경고
 이 섹션에서는 제외에 의해 발생 하 고 C/c + + 코드 분석 경고는 [c + + 코어 지침 검사기](code-analysis-for-cpp-corecheck.md)합니다. 코드 분석에 대 한 정보를 참조 하십시오. [/analyze (코드 분석)](/cpp/build/reference/analyze-code-analysis) 및 [빠른 시작: C/c + +에 대 한 코드 분석](../code-quality/quick-start-code-analysis-for-c-cpp.md)합니다.

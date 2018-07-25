@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704735"
 ---
 # <a name="list-disassembly-command"></a>디스어셈블리 목록 표시 명령
 디버그 프로세스를 시작하고 오류 처리 방식을 지정할 수 있습니다.

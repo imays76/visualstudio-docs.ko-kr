@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140032"
 ---
 # <a name="sccremove-function"></a>SccRemove 함수
 이 함수는 소스 제어 시스템에서 파일을 삭제 합니다.  

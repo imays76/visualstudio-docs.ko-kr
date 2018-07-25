@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134128"
 ---
 # <a name="source-control-configuration-details"></a>소스 제어에 대 한 구성 세부 정보
 소스 제어를 구현 하려면 프로젝트 시스템 또는 다음을 수행 하는 편집기를 올바르게 구성 하려면 필요 합니다.

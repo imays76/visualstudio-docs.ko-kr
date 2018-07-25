@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2126f38053cc8f83be92aeb5d3939df07e58c2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae3b12ffa91b419717e91125b658f29e7d74deb6
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923896"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>방법: 밉 맵을 포함하는 질감 내보내기
 
@@ -26,13 +27,13 @@ ms.lasthandoff: 04/26/2018
 
 - MIP 맵을 생성하도록 이미지 콘텐츠 파이프라인 구성.
 
-## <a name="export-mipmaps"></a>MIP 맵 내보내기
+## <a name="export-mipmaps"></a>밉 맵 내보내기
 
 MIP 매핑은 3차원 게임이나 앱에서 질감이 적용된 표면에 대한 자동 화면 공간 수준 세부 정보를 제공합니다. 질감의 다운 샘플링 버전을 미리 계산하여 게임이나 앱의 렌더링 성능을 향상시킵니다. 다운 샘플링 버전을 미리 계산하면 샘플링할 때마다 전체 질감을 다운 샘플링할 필요가 없습니다.
 
 ### <a name="to-export-a-texture-that-has-mipmaps"></a>MIP 맵이 있는 질감을 내보내려면
 
-1.  기본 질감으로 시작합니다. 기존 이미지 파일을 로드하거나 [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)의 설명대로 질감을 만듭니다. MIP 맵을 지원하려면 너비 및 높이가 둘 다 동일한 2의 거듭제곱인 크기(예: 64x64, 256x256 또는 512x512)의 질감을 지정합니다.
+1.  기본 질감으로 시작합니다. 기존 이미지 파일을 로드하거나 [방법: 기본 질감 만들기](../designers/how-to-create-a-basic-texture.md)에서 설명된 대로 질감을 만듭니다. MIP 맵을 지원하려면 너비 및 높이가 둘 다 동일한 2의 거듭제곱인 크기(예: 64x64, 256x256 또는 512x512)의 질감을 지정합니다.
 
 2.  방금 만든 질감 파일이 이미지 콘텐츠 파이프라인에서 처리되도록 구성합니다. **솔루션 탐색기**에서 만들어 놓은 질감 파일에 대한 바로 가기 메뉴를 열고 **속성**을 선택합니다. **구성 속성** > **일반** 페이지에서 **항목 종류** 속성을 **이미지 콘텐츠 파이프라인**으로 설정합니다. **콘텐츠** 속성이 **예**로 설정되고 **빌드에서 제외**가 **아니요**로 설정되어야 합니다. **적용**을 선택합니다.
 

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c10695eacdf680d247be8ef95ae14c3208ae92af
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee31b1547f9607f54cc5db9d056b997f071633ff
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691589"
 ---
 # <a name="cores-view-legend"></a>코어 뷰 범례
 코어 뷰 범례는 색 및 이름으로 각 스레드를 식별합니다. 여기에는 코어 간 컨텍스트 전환 횟수, 총 컨텍스트 전환 및 코어 간 컨텍스트 전환 비율을 보여주는 열이 포함되어 있습니다. 범례의 행은 코어 간 컨텍스트 전환 횟수를 기준으로 내림차순으로 정렬됩니다.  

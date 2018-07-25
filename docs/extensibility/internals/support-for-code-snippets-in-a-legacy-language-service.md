@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135684"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 조각에 대 한 지원
 코드 조각은 소스 파일에 삽입할 수 있는 코드입니다. 코드 조각 자체는 필드 집합으로는 XML 기반 서식 파일입니다. 이러한 필드에는 코드 조각을 삽입 되 고 코드 조각 삽입 되는 컨텍스트에 따라 다른 값을 가질 수 후 강조 표시 됩니다. 코드 조각을 삽입 한 후에 즉시 코드 조각 언어 서비스에 서식을 지정할 수 있습니다.  
@@ -52,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
  코드 조각 템플릿 파일이 저장 되어 있는 두 위치는 일반적으로: 1) 설치 된 언어와 2) 사용자의 폴더입니다. 이러한 위치는 레지스트리에 추가 하므로 하는 Visual Studio **코드 조각 관리자** 조각을 찾을 수 있습니다. 사용자의 폴더는 사용자가 만든 조각을 저장 되는 위치입니다.  
   
- 설치 된 조각 템플릿 파일에 대 한 일반적인 폴더 레이아웃은 다음과 같습니다: *[InstallRoot]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets 합니다.  
+ 설치 된 조각 템플릿 파일에 대 한 일반적인 폴더 레이아웃은 다음과 같습니다: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets 합니다.  
   
  *[InstallRoot]*  는 해당 언어에 설치 된 폴더입니다.  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/16/2018
   
  *[LCID]*  로캘 ID입니다. 이 어떻게 지역화 된 버전의 조각 저장 됩니다. 예를 들어 영어에 대 한 로캘 ID가 1033 이면 하므로 *[LCID]* 1033으로 바뀝니다.  
   
- 하나의 추가 파일을 제공 해야 있고 일반적으로 SnippetsIndex.xml 또는 ExpansionsIndex.xml (.xml으로 끝나는 유효한 파일을 사용할 수 있음)를 호출 하는 인덱스 파일입니다. 이 파일은 일반적으로에 저장 되는 *[InstallRoot]*\\*[TestLanguage]* 폴더 snippets 폴더로으로 언어 ID의 정확한 위치 및 언어의 GUID를 지정 합니다. 코드 조각을 사용 하는 서비스입니다. 인덱스 파일의 정확한 경로 "레지스트리 항목 설치"의 뒷부분에 설명 된 대로 레지스트리에 배치 됩니다. SnippetsIndex.xml 파일의 예는 다음과 같습니다.  
+ 하나의 추가 파일을 제공 해야 있고 일반적으로 SnippetsIndex.xml 또는 ExpansionsIndex.xml (.xml으로 끝나는 유효한 파일을 사용할 수 있음)를 호출 하는 인덱스 파일입니다. 이 파일은 일반적으로에 저장 되는 *[InstallRoot]*\\ *[TestLanguage]* 폴더 snippets 폴더로으로 언어 ID의 정확한 위치 및 언어의 GUID를 지정 합니다. 코드 조각을 사용 하는 서비스입니다. 인덱스 파일의 정확한 경로 "레지스트리 항목 설치"의 뒷부분에 설명 된 대로 레지스트리에 배치 됩니다. SnippetsIndex.xml 파일의 예는 다음과 같습니다.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +82,7 @@ ms.lasthandoff: 04/16/2018
   
  이 예에서는 Visual Studio 설치 폴더에서 언어 서비스를 설치 하지 않으면 가정 합니다. % LCID % 바뀝니다 사용자의 현재 로캘 id입니다. 여러 \<SnippetDir > 태그를 하나씩 추가 각 다른 디렉터리와 로캘 합니다. 또한 코드 조각 폴더 하위 폴더를 사용 하 여 인덱스 파일에서 식별 되는 각각를 포함할 수 있습니다는 \<SnippetSubDir >에 포함 된 태그는 \<SnippetDir > 태그입니다.  
   
- 사용자는 해당 언어에 대해 직접 코드 조각을 만들 수도 있습니다. 일반적으로 저장 됩니다 사용자의 설정 폴더에 예를 들어 *[TestDocs]*\Code 조각\\*[TestLanguage]*\Test 코드 조각, 여기서 *[TestDocs]* 는 Visual Studio에 대 한 사용자의 설정 폴더의 위치입니다.  
+ 사용자는 해당 언어에 대해 직접 코드 조각을 만들 수도 있습니다. 일반적으로 저장 됩니다 사용자의 설정 폴더에 예를 들어 *[TestDocs]* \Code 조각\\ *[TestLanguage]* \Test 코드 조각, 여기서 *[TestDocs]* 는 Visual Studio에 대 한 사용자의 설정 폴더의 위치입니다.  
   
  다음 대체 요소에 저장 된 경로에 배치할 수 있습니다는 \<DirPath > 인덱스 파일의 태그에에서 있습니다.  
   
@@ -91,7 +92,7 @@ ms.lasthandoff: 04/16/2018
 |% InstallRoot %|루트 설치 폴더를 Visual Studio, 예를 들어, C:\Program Files\Microsoft Visual Studio 8입니다.|  
 |% ProjDir %|현재 프로젝트를 포함 하는 폴더입니다.|  
 |% ProjItem %|현재 프로젝트 항목을 포함 하는 폴더입니다.|  
-|% TestDocs %|사용자의 설정 폴더, 예를 들어 C:\Documents and Settings 폴더에에서\\*[username]*documents\visual Studio\8 합니다.|  
+|% TestDocs %|사용자의 설정 폴더, 예를 들어 C:\Documents and Settings 폴더에에서\\ *[username]* documents\visual Studio\8 합니다.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>언어 서비스에 대 한 코드 조각을 사용 하도록 설정  
  코드 조각 언어 서비스에 추가 하 여 사용할 수는 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> VSPackage를 특성 (참조 [레거시 언어 서비스를 등록 하는 중](../../extensibility/internals/registering-a-legacy-language-service1.md) 세부 정보에 대 한). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> 및 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> 매개 변수는 선택 사항 이지만 포함 해야는 `SearchPaths` 에 게 알리는 데 명명 된 매개 변수는 **코드 조각 관리자** 조각의 위치입니다.  

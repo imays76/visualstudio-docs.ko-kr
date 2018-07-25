@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01020148db1c5d34b4108d2c7ab25aa74fb1b308
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bf51cbc4cd20401f17f5e92def47713c6107f3d2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078757"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 용어
 이러한 용어는 Microsoft Build Engine(MSBuild) 및 해당 구성 요소를 설명하는 데 사용됩니다.  
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/19/2018
  전체 프레임워크의 하위 집합입니다. 컴퓨터에 다운로드해야 하는 항목의 양을 최소화하는 데 사용됩니다.  
   
  프로젝트 파일  
- 프로젝트 파일에는 빌드를 제어하는 MSBuild 스크립트가 포함되어 있습니다. 프로젝트 파일의 파일 확장명은 .csproj 또는 .vbproj와 같이 대개 "proj"로 끝납니다. 프로젝트 파일은 속성 파일과 대상 파일을 가져올 수 있습니다.  
+ 프로젝트 파일에는 빌드를 제어하는 MSBuild 스크립트가 포함되어 있습니다. 프로젝트 파일의 파일 확장명은 *.csproj* 또는 *.vbproj*와 같이 대개 *proj*로 끝납니다. 프로젝트 파일은 속성 파일과 대상 파일을 가져올 수 있습니다.  
   
  속성  
  속성은 빌드 프로세스를 제어하는 데 사용되는 키/값 쌍입니다. 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.  
@@ -93,7 +94,7 @@ ms.lasthandoff: 04/19/2018
  환경 속성은 이름이 같은 시스템 환경 변수의 값으로 자동 초기화되는 속성입니다. 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.  
   
  속성 파일  
- 속성 파일은 빌드를 안내하는 대부분의 속성 그룹 및 항목 그룹을 포함하는 프로젝트 파일입니다. 규칙에 따라 속성 파일의 확장명은 .props입니다. 일반적으로 관련 프로젝트 파일의 시작 부분에서 속성 파일을 가져옵니다.  
+ 속성 파일은 빌드를 안내하는 대부분의 속성 그룹 및 항목 그룹을 포함하는 프로젝트 파일입니다. 규칙에 따라 속성 파일의 확장명은 *.props*입니다. 일반적으로 관련 프로젝트 파일의 시작 부분에서 속성 파일을 가져옵니다.  
   
  속성, 함수  
  속성 함수는 MSBuild 스크립트를 평가하는 데 사용할 수 있는 시스템 속성 또는 메서드입니다. 속성 메서드를 사용하면 시스템 시간을 읽고 문자열을 비교하며 정규식을 일치시키고 다른 작업을 수행할 수 있습니다. 자세한 내용은 [속성 함수](../msbuild/property-functions.md)를 참조하세요.  
@@ -151,13 +152,13 @@ ms.lasthandoff: 04/19/2018
  증분 컴파일에서 모든 출력 파일이 최신 상태임이 확인되면 대상을 건너뜁니다. 즉, 대상이 평가는 되지만 대상 내의 작업이 실행되지는 않습니다. 자세한 내용은 대상, 평가를 참조하세요.  
   
  대상 프레임워크 모니커  
- 대상으로 지정하려는 프레임워크(예: .NET Framwork, Silverlight 등), 버전 및 프로필(예: 클라이언트, 서버 등)을 설명하는 이름입니다.  
+ 대상으로 지정하려는 프레임워크(예: .NET Framework, Silverlight 등), 버전 및 프로필(예: 클라이언트, 서버 등)을 설명하는 이름입니다.  
   
  타기팅 팩  
  지정된 프레임워크 및 해당 프레임워크용 참조 어셈블리 집합을 사용하여 배포되는 어셈블리의 목록입니다.  
   
  대상 파일  
- 대상 파일은 빌드를 안내하는 대부분의 대상 및 작업을 포함하는 프로젝트 파일입니다. 규칙에 따라 대상 파일의 확장명은 .targets입니다. 일반적으로 관련 프로젝트 파일의 끝부분에서 대상 파일을 가져옵니다.  
+ 대상 파일은 빌드를 안내하는 대부분의 대상 및 작업을 포함하는 프로젝트 파일입니다. 규칙에 따라 대상 파일의 확장명은 *.targets*입니다. 일반적으로 관련 프로젝트 파일의 끝부분에서 대상 파일을 가져옵니다.  
   
  작업  
  작업은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다. 예를 들어, 작업은 입력 파일을 컴파일하거나 외부 도구를 실행할 수 있습니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
@@ -169,4 +170,4 @@ ms.lasthandoff: 04/19/2018
  *메타데이터, 잘 알려짐*을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [Msbuild](../msbuild/msbuild.md)
+ [MSBuild](../msbuild/msbuild.md)

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140061"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>연습: 사용자 지정 XAML 시작 페이지에 추가
 이 연습에는 사용자 지정 Visual Studio 시작 페이지는 웹 브라우저를 포함 하는 방법을 보여 줍니다.  

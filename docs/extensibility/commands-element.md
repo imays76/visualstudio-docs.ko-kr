@@ -1,5 +1,5 @@
 ---
-title: 명령 요소 | Microsoft Docs
+title: 요소는 명령 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d905914c9819671cf8c77d81ec8d51302467a9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31f34dbf974ef860ddabd29af0e94b3c65a11f32
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231010"
 ---
 # <a name="commands-element"></a>Commands 요소
-VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 최대 5 개 하위 섹션을 다음과 같이 있을 수 있습니다: 메뉴, 그룹, 단추, 바로 가기 단축키 +, 및 비트맵입니다.  
+VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 수 최대 5 개의 하위 섹션에서는 다음과 같이: 메뉴, 그룹, 단추, combos, 및 비트맵입니다.  
   
- 각 하위 섹션 자식 요소를 \<메뉴 >, 인 고유한 명령 ID를 GUID 및 숫자 식별자 쌍으로 식별 됩니다. GUID "명령 집합"를 식별 하며 논리적으로 관련 된 명령을 그룹화 하는 데 사용 됩니다. VSPackage는 다른 Vspackage에서 정의한 명령 Id와 충돌 하지 않도록 설정 하는 자체 명령을 정의 해야 합니다.  
+ 각 하위 섹션에서는 자식 요소, 예를 들어 \<메뉴 >, GUID 및 숫자 식별자 쌍은 고유 명령 ID로 식별 됩니다. GUID는 "명령 집합"을 식별 하 고 논리적으로 관련 된 명령을 그룹화 하는 데 사용 됩니다. VSPackage는 자체 명령 다른 Vspackage에서 정의 된 명령 Id 사용 하 여 충돌을 방지 하려면 집합을 정의 해야 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <Commands package="GuidMyPackage" >  
   <Menus>... </Menus>  
   <Groups>... </Groups>  
@@ -52,7 +53,7 @@ VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 
   
 |요소|설명|  
 |-------------|-----------------|  
-|[Menus 요소](../extensibility/menus-element.md)|VSPackage 구현 하는 모든 메뉴를 정의 합니다.|  
+|[Menus 요소](../extensibility/menus-element.md)|VSPackage를 구현 하는 모든 메뉴를 정의 합니다.|  
 |[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|  
 |[Buttons 요소](../extensibility/buttons-element.md)|단추 요소를 그룹화합니다.|  
 |[Bitmaps 요소](../extensibility/bitmaps-element.md)|비트맵 요소를 그룹화합니다.|  
@@ -62,10 +63,10 @@ VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 
   
 |요소|설명|  
 |-------------|-----------------|  
-|[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage는 IDE에 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 가능한 요소는 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자입니다.|  
+|[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage는 IDE를 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 가능한 요소에는 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자는입니다.|  
   
-## <a name="example"></a>예제  
- 사용 하는 방법을 보여 주는 다음 예제는 [Commands 요소](../extensibility/commands-element.md)합니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 사용 하는 방법을 보여 줍니다는 [Commands 요소](../extensibility/commands-element.md)합니다.  
   
 ```  
 <Commands package="guidMyPackage">  
@@ -90,6 +91,6 @@ VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 
 <Commands>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

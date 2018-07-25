@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d88f1e258bf8aa9801555c256f825841fff9d476
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089505"
 ---
-# <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>자습서 6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
+# <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
 **이전 단계: [Django에서 사용자 인증](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
@@ -193,7 +194,7 @@ Django는 지정된 데이터베이스에 적용된 마이그레이션을 추적
 
 대답: 모델이 데이터베이스의 내용과 일치하지 않을 경우 Django가 런타임에 실패하고 관련 예외가 발생합니다. 예를 들어 이전 섹션에 표시된 모델 변경 내용을 마이그레이션하지 않을 경우 “no such column: app_poll.author” 오류가 표시됩니다.
 
-![모델 변경 내용이 마이그레이션되지 않은 경우 표시되는 오류](media/django/step06-exception-when-forgetting-to-migrate.png)이어야 합니다.
+![모델 변경 내용이 마이그레이션되지 않은 경우 표시되는 오류](media/django/step06-exception-when-forgetting-to-migrate.png).
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>질문: Django Make Migrations(Django 마이그레이션 만들기)를 실행한 후 솔루션 탐색기에 새로 생성된 스크립트가 표시되지 않는 이유는 무엇인가요?
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-여기에 사용된 보다 복잡한 정규식에 익숙하지 않은 경우 식을 [regex101.com](https://regex101.com/)에 붙여넣어 일반 언어로 된 설명을 볼 수 있습니다. 이때 식 앞에 백슬래시(`\`)를 추가하여 슬래시(`/`)를 이스케이프해야 합니다. Python에서는 문자열에서 “원시”를 의미하는 `r` 접두사로 인해 이스케이프가 필요하지 않습니다.
+여기에 사용된 보다 복잡한 정규식에 익숙하지 않은 경우 식을 [regex101.com](https://regex101.com/)에 붙여넣어 일반 언어로 된 설명을 볼 수 있습니다. (이때 식 앞에 백슬래시(`\`)를 추가하여 슬래시(`/`)를 이스케이프해야 합니다. Python에서는 문자열에서 “원시”를 의미하는 `r` 접두사로 인해 이스케이프가 필요하지 않습니다.)
 
 Django에서 `?P<name>pattern` 구문은 `name`이라는 그룹을 만들어 표시되는 순서대로 보기에 대한 인수로 전달합니다. 위의 코드에서 `PollsDetailView` 및 `PollsResultsView`는 `pk`라는 인수를 받고 `app.views.vote`는 `poll_id`라는 인수를 받습니다.
 
@@ -367,11 +368,11 @@ admin.site.register(Poll, PollAdmin)
 
 개발 컴퓨터에서 웹앱을 실행하는 것은 고객에게 앱을 제공하기 위한 과정의 한 단계일 뿐입니다. 다음 단계에는 다음과 같은 작업이 포함될 수 있습니다.
 
+- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. Django 앱에 필요한 특정 변경 내용이 포함된 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
+
 - `templates/404.html`이라는 템플릿을 만들어 404페이지를 사용자 지정합니다. 이미 있는 경우 Django는 기본 템플릿 대신 이 템플릿을 사용합니다. 자세한 내용은 Django 설명서의 [Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)(오류 보기)를 참조하세요.
 
 - `tests.py`에 단위 테스트를 작성합니다. Visual Studio 프로젝트 템플릿은 이러한 테스트에 대한 시작점을 제공하며, 자세한 내용은 Django 설명서의 [Writing your first Django app, part 5 - testing](https://docs.djangoproject.com/en/2.0/intro/tutorial05/)(첫 번째 Django 앱 작성, 5부 - 테스트) 및 [Testing in Django](https://docs.djangoproject.com/en/2.0/topics/testing/)(Django의 테스트)에서 확인할 수 있습니다.
-
-- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. Django 앱에 필요한 특정 변경 내용이 포함된 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
 
 - 앱을 SQLite에서 PostgreSQL, MySQL 및 SQL Server와 같은 프로덕션 수준 데이터 저장소(모두 Azure에서 호스트할 수 있음)로 변경합니다. [When to use SQLite](https://www.sqlite.org/whentouse.html)(SQLite를 사용하는 경우)(sqlite.org)에 설명된 대로 SQLite는 일별 방문 횟수가 100K보다 적은, 트래픽이 낮거나 중간 정도인 사이트에서 제대로 작동하지만 더 큰 볼륨에는 권장되지 않습니다. 또한 단일 컴퓨터로 제한되므로 부하 분산 및 지역에서 복제와 같은 모든 다중 서버 시나리오에서는 사용할 수 없습니다. Django의 다른 데이터베이스 지원에 대한 자세한 내용은 [데이터베이스 설치](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)를 참조하세요. 또한 [Python용 Azure SDK](azure-sdk-for-python.md)를 사용하여 테이블 및 Blob과 같은 Azure Storage 서비스 작업을 수행할 수도 있습니다.
 

@@ -1,16 +1,18 @@
 ---
-title: "Ijsdebugframe:: Getdocumentpositionwithname 메서드 | Microsoft Docs"
-ms.custom: 
+title: 'Ijsdebugframe:: Getdocumentpositionwithname 메서드 | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IJsDebugFrame.GetDocumentPositionWithName
-apilocation: jscript9diag.dll
+apiname:
+- IJsDebugFrame.GetDocumentPositionWithName
+apilocation:
+- jscript9diag.dll
 ms.assetid: 1d994714-2c87-4a9e-ae14-a15eec9520c7
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728053"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithname-method"></a>IJsDebugFrame::GetDocumentPositionWithName 메서드
 사용자 수준 문서 내에서이 스택 프레임의 현재 위치를 반환합니다.  

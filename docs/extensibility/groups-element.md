@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126925"
 ---
 # <a name="groups-element"></a>Groups 요소
 VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.  

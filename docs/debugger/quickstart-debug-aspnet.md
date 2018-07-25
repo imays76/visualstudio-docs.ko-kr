@@ -18,6 +18,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477472"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용 하 여 ASP.NET을 디버그
 

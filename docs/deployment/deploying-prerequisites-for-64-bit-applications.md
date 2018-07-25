@@ -20,14 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ffb52e73be1f86b9ae4be67d130807fc7e238
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 91935bc819987823f5a2f3ad0781e975c72f7e0d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077934"
 ---
-# <a name="deploying-prerequisites-for-64-bit-applications"></a>64비트 응용 프로그램의 필수 구성 요소 배포
-ClickOnce 배포에서는 64비트 플랫폼에 응용 프로그램을 설치할 수 있습니다. 대상 플랫폼은 **x86** 32 비트 플랫폼에 대 한 **x64** AMD64 / EM64T 명령 집합을 지 원하는 컴퓨터 및 **Itanium** 64 비트 Itanium 프로세서에 대 한 합니다.  
+# <a name="deploy-prerequisites-for-64-bit-applications"></a>64 비트 응용 프로그램에 대 한 필수 구성 요소 배포
+ClickOnce 배포에서는 64비트 플랫폼에 응용 프로그램을 설치할 수 있습니다. 대상 플랫폼 **x86** 32 비트 플랫폼에 대 한 **x64** AMD64와 EM64T 명령 집합을 지 원하는 컴퓨터 및 **Itanium** 64 비트 Itanium 프로세서에 대 한 합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  다음 테이블에는 64비트 응용 프로그램 설치의 필수 구성 요소로 사용할 수 있는 재배포 가능 파일이 나와 있습니다.  
@@ -42,7 +43,7 @@ ClickOnce 배포에서는 64비트 플랫폼에 응용 프로그램을 설치할
 |Microsoft .NET Framework 4(x86 및 x64)|예||  
 |Microsoft .NET Framework 4 Client Profile(x86 및 x64)|예||  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [응용 프로그램, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)   
- [방법: ClickOnce 응용 프로그램을 사용하여 필수 조건 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [64비트 응용 프로그램](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

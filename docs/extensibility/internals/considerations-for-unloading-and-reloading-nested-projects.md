@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127929"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>중첩 된 프로젝트 언로드 및 다시 로드에 대 한 고려 사항
 

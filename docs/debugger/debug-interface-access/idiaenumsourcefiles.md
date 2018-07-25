@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460536"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 데이터 원본에 포함 된 다양 한 소스 파일을 열거 합니다.  

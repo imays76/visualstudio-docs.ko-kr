@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584141"
 ---
 # <a name="resource-contentions-view---contention-data"></a>리소스 경합 뷰 - 경합 데이터
 리소스 경합 뷰에는 경합 이벤트의 출처인 리소스의 경합 데이터 목록이 표시됩니다. 다른 스레드의 함수가 리소스에 대한 배타적 액세스 권한을 확보하여 스레드가 해당 리소스 액세스를 대기해야 하는 경우 경합 이벤트가 발생합니다. 각 리소스는 경합 이벤트가 발생한 함수 실행 경로를 표시하는 호출 트리의 루트 노드입니다.  

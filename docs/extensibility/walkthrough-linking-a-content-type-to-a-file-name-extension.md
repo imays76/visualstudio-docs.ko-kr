@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144897"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>연습: 파일 이름 확장명에 콘텐츠 형식 연결
 사용자 고유의 내용 유형을 정의할 수 있으며 편집기 프레임 워크 MEF (Managed Extensibility) 확장을 사용 하 여 파일 이름 확장명에 연결. 경우에 따라 파일 이름 확장명 이미 정의 되어 언어 서비스가; 그럼에도 불구 하 고 MEF에 사용 하려면 계속 해야에 연결 콘텐츠 형식입니다.  

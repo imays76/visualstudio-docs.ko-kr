@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134885"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>사용자 지정 범주를 구현 하는 항목 표시
 글꼴의 제어 및 해당 텍스트의 색 VSPackage를 제공할 수는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 사용자 지정 범주 및 표시 항목을 통해 통합된 개발 환경 (IDE).
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="to-create-or-identify-categories"></a>만들거나 범주를 확인 하려면
 
--   아래에 레지스트리 항목 범주에는 특수 한 유형의 생성 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 버전 >*\FontAndColors\\`<Category>`]
+-   아래에 레지스트리 항목 범주에는 특수 한 유형의 생성 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 버전 >* \FontAndColors\\`<Category>`]
 
      *\<범주 >* 범주의 지역화 되지 않은 이름입니다.
 
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 
 ## <a name="to-create-or-identify-groups"></a>만들거나 그룹 식별
 
--   아래에 레지스트리 항목 범주에는 특수 한 유형의 생성 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 버전 >*\FontAndColors\\  *\<그룹 >*]
+-   아래에 레지스트리 항목 범주에는 특수 한 유형의 생성 [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 버전 >* \FontAndColors\\  *\<그룹 >*]
 
      *\<그룹 >* 그룹의 지역화 되지 않은 이름입니다.
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140016"
 ---
 # <a name="loading-vspackages"></a>Vspackage를 로드합니다.
 Vspackage는 해당 기능이 필요할 때에 Visual Studio에 로드 됩니다. 예를 들어 VSPackage는 Visual Studio 프로젝트 팩터리 또는 VSPackage 구현 하는 서비스를 사용 하는 경우 로드 됩니다. 이 기능은 성능 향상을 위해 가능 하면 사용 되는 지연된 로드를 라고 합니다.  

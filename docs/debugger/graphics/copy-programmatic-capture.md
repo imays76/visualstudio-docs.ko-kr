@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472096"
 ---
 # <a name="copy-programmatic-capture"></a>복사(프로그램 방식 캡처)
 활성 그래픽 로그(.vsglog) 파일 내용을 새 파일에 복사합니다.  

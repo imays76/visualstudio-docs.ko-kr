@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950545"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Windows Forms에 다이어그램 포함
 DSL 다이어그램에 표시 되는 Windows 컨트롤을 포함할 수도 있습니다는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 창.

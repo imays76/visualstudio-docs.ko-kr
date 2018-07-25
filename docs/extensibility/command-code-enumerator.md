@@ -14,14 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba40c0506bdeecc7d6438f83f2d4342c62cc2e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67c133339f47a3f15822e4ff79587f9a09253a66
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231976"
 ---
 # <a name="command-code-enumerator"></a>명령 코드 열거자
-이 열거자에 대 한 옵션에 사용 되는 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 및 [SccPopulateList](../extensibility/sccpopulatelist-function.md)옵션을 지정 된 명령을 나타냅니다.  
+이 열거자에 대 한 옵션에 사용 되는 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 하며 [SccPopulateList](../extensibility/sccpopulatelist-function.md)옵션 지정 되는 명령을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -75,7 +76,7 @@ enum SCCCOMMAND {
  SCC_COMMAND_OPTIONS  
  에 해당 하는 [SccSetOption](../extensibility/sccsetoption-function.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>참고자료  
+ [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md)   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)

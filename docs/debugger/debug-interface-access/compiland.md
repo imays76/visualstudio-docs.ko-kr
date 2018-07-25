@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457841"
 ---
 # <a name="compiland"></a>컴파일 대상
 하나의 `SymTagCompiland` .exe 파일에 연결 된 각 컴파일 대상에 대 한 기호입니다. 컴파일 대상 정보도 기호 분할는 `SymTagCompiland` 추가 컴파일 대상 기호를 로드 하지 않고 검색할 수 있는 태그와 기호만 `SymTagCompilandDetails` 태그 추가 기호를 로드 해야 할 수도 있습니다.  

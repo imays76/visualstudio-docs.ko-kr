@@ -10,18 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4da8c2b37ed13cfd8a0a6f47850cdc7f9e2c74b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 793f8ed4538568d588b4980226606d6cd1a6545a
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978205"
 ---
 # <a name="math-nodes"></a>수학 노드
 
 셰이더 디자이너에서 수학 노드는 대수, 논리, 삼각 및 기타 수학 연산을 수행합니다.
 
 > [!NOTE]
-> 셰이더 디자이너에서 수학 노드를 사용하면 형식 승격이 특히 뚜렷하게 나타납니다. 형식 승격이 입력 매개 변수에 어떻게 영향을 주는지 알아보려면 [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)에서 "입력의 승격" 섹션을 참조하세요.
+> 셰이더 디자이너에서 수학 노드를 사용하면 형식 승격이 특히 뚜렷하게 나타납니다. 형식 승격이 입력 매개 변수에 어떻게 영향을 주는지 알아보려면 [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)에서 “입력의 승격” 섹션을 참조하세요.
 
 ## <a name="math-node-reference"></a>수학 노드 참조
 

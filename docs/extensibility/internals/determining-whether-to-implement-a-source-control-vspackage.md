@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128879"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>소스 제어 VSPackage 구현 여부를 결정
 이 섹션 소스 제어 통합 적절 한 경로 선택 하는 방법에 대 한 솔루션 및 제공 광범위 한 지침을 확장 하기 위한 소스 제어 플러그 인 및 소스 제어 Vspackage의 선택 항목에서는 합니다.  

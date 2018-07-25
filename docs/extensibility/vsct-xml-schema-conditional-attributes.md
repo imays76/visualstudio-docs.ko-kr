@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138358"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 스키마에 대 한 조건부 특성
 모든 목록 및 항목에 조건부 특성을 적용할 수 있습니다. 논리 연산자와 기호 확장 식은 true 또는 false로 계산 합니다. True 이면 연결 된 목록 또는 항목 결과 출력에 포함 됩니다.  

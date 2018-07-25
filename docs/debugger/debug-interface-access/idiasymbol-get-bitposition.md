@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464182"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
 위치의 비트 위치를 검색합니다. 때 사용 되는 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 은 `LocIsBitField`합니다.  

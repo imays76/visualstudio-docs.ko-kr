@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecb590c4562c79853c86ee65e9c5d4e3c059d5da
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89a8fd27dbf16db2277b52b2def2fac1e9f06e68
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945207"
 ---
 # <a name="exec-task"></a>Exec 작업
 지정된 인수를 사용하여 지정한 프로그램 또는 명령을 실행합니다.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|`Command`|필수 `String` 매개 변수입니다.<br /><br /> 실행할 명령입니다. Attrib와 같은 시스템 명령이나 program.exe, runprogram.bat 또는 setup.msi와 같은 실행 파일일 수 있습니다.<br /><br /> 이 매개 변수는 여러 줄의 명령을 포함할 수 있습니다. 또는 여러 개의 명령을 하나의 배치 파일에 추가하고 이 매개 변수를 사용하여 실행할 수 있습니다.|  
+|`Command`|필수 `String` 매개 변수입니다.<br /><br /> 실행할 명령입니다. Attrib와 같은 시스템 명령이나 *program.exe*, *runprogram.bat* 또는 *setup.msi*와 같은 실행 파일일 수 있습니다.<br /><br /> 이 매개 변수는 여러 줄의 명령을 포함할 수 있습니다. 또는 여러 개의 명령을 하나의 배치 파일에 추가하고 이 매개 변수를 사용하여 실행할 수 있습니다.|  
 |`ConsoleOutput`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 각 항목 출력은 도구에서 생성하는 표준 출력 또는 표준 오류 스트림의 줄입니다. 이는 `ConsoleToMsBuild`가 `true`로 설정된 경우에만 캡처됩니다.|
 |`ConsoleToMsBuild`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`일 경우 작업이 도구의 표준 오류 및 표준 출력을 캡처하고, `ConsoleOutput` 출력 매개 변수에서 사용할 수 있게 합니다. 기본값은 `false`입니다.|
 |`CustomErrorRegularExpression`|선택적 `String` 매개 변수입니다.<br /><br /> 도구 출력에서 오류 줄을 찾는 데 사용되는 정규식을 지정합니다. 예외적으로 형식이 지정된 출력을 생성하는 도구에 유용합니다.|  
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="remarks"></a>설명  
  이 작업은 수행하려는 작업에 대한 특정 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업을 사용할 수 없을 때 유용합니다. 그러나 `Exec` 작업은 보다 구체적인 작업과 달리 실행하는 도구 또는 명령의 결과에 따라 추가 처리 또는 조건부 작업을 수행할 수 없습니다.
   
- `Exec` 작업은 프로세스를 직접 호출하지 않고 cmd.exe를 호출합니다.  
+ `Exec` 작업은 프로세스를 직접 호출하지 않고 *cmd.exe*를 호출합니다.  
   
  이 작업은 이 문서에 나와 있는 매개 변수 외에도 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.  
   

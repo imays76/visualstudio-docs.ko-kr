@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136328"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Windows Installer 배포에 대 한 확장을 준비 하는 중
 VSIX 패키지를 배포 하 여 Windows Installer 패키지 (MSI)를 사용할 수 없습니다. 그러나 MSI 배포에 대 한 VSIX 패키지의 내용을 추출할 수 있습니다. 이 문서에는 기본 출력을 가진는 설치 프로젝트에 포함 되도록 하는 VSIX 패키지 프로젝트를 준비 하는 방법을 보여 줍니다.  

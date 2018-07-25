@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea0806b1abc4febbdcf89c59025452c5879addb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e525d2529ce47059025e76dbefaeec1eb15ef81
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758396"
 ---
 # <a name="control-flow-activity-designers"></a>제어 흐름 활동 디자이너
 
-Windows 워크플로 디자이너에는 다양 한 워크플로 생성할 때 사용할 수 있는 시스템 제공 활동이 포함 되어 있습니다. 이 단원에서는 워크플로 내의 흐름 제어에 사용되는 시스템 제공 활동에 대해 다룹니다. 다음 항목을 통해 이러한 활동에 대해 설명하고 사용 방법에 대한 지침을 제공합니다.
+워크플로 디자이너는 여러를 가지 워크플로 생성할 때 사용할 수 있는 시스템 제공 활동이 포함 되어 있습니다. 이 단원에서는 워크플로 내의 흐름 제어에 사용되는 시스템 제공 활동에 대해 다룹니다. 다음 항목을 통해 이러한 활동에 대해 설명하고 사용 방법에 대한 지침을 제공합니다.
 
 ## <a name="reference"></a>참조
 
@@ -46,7 +47,7 @@ Windows 워크플로 디자이너에는 다양 한 워크플로 생성할 때 �
 
 ## <a name="related-sections"></a>관련 단원
 
-다른 형식의 활동 디자이너에 대 한 다음 항목을 참조 합니다.
+다른 형식의 활동 디자이너의 다음 항목을 참조 하세요.
 
  [활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)
 

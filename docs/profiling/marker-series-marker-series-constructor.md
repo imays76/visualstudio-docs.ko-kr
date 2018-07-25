@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22107cb7ecaf7c5f232b4377fc681a11720d1068
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: bbc397fa88c722f6a7f16ac92f4388525073c0fa
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845625"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 생성자
 `marker_series` 클래스의 새 인스턴스를 초기화합니다.  
@@ -47,7 +48,7 @@ marker_series(
  계열 공급자의 GUID입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** cvmarkersobj.h  
+ **헤더:** *cvmarkersobj.h*  
   
  **네임스페이스:** Concurrency::diagnostic  
   

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106905"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 이 인터페이스는 포트의 서버 및 알림 기능에 액세스 하는 여러 가지 방법을 제공 합니다.  

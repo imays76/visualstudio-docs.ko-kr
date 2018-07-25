@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114692"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 다음 프로그램 즉이 프로세스에서 코드를 실행 하는 요청을 중지 하 고 보낼는 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 이벤트 개체입니다.  

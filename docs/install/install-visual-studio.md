@@ -19,17 +19,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 51543921049082b4fca5a04f20b8adfc753d8112
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283447"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 설치
 
 Visual Studio를 설치하는 새로운 방법이 있습니다. 최신 버전에서는 필요한 기능만 보다 쉽게 선택하여 설치할 수 있도록 만들었습니다. 시스템에 미치는 영향을 이전보다 최소화하여 Visual Studio가 더 빨리 설치되도록 최소 사용 공간도 줄였습니다.
 
-이 버전의 다른 새로운 기능에 대해 자세히 알고 싶으세요? [릴리스 정보](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)를 참조하세요.
+이 버전의 다른 새로운 기능에 대해 자세히 알고 싶으세요? [릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes)를 참조하세요.
 
 설치할 준비가 되었나요? 설치 과정을 단계별로 안내합니다.
 
@@ -37,19 +38,19 @@ Visual Studio를 설치하는 새로운 방법이 있습니다. 최신 버전에
 
 Visual Studio 설치를 시작하기 전에
 
-1. [시스템 요구 사항](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)을 확인합니다. 이러한 요구 사항은 컴퓨터에서 Visual Studio 2017을 지원하는지 여부를 확인하는 데 도움이 됩니다.
+1. [시스템 요구 사항](/visualstudio/productinfo/vs2017-system-requirements-vs)을 확인합니다. 이러한 요구 사항은 컴퓨터에서 Visual Studio 2017을 지원하는지 여부를 확인하는 데 도움이 됩니다.
 2. 최신 Windows 업데이트를 적용합니다. 이러한 업데이트는 컴퓨터에 최신 보안 업데이트와 Visual Studio에 필요한 시스템 구성 요소가 모두 설치되어 있는지 확인합니다.
 3. 다시 부팅합니다. 다시 부팅하면 보류 중인 설치 또는 업데이트가 Visual Studio 설치를 방해하지 않습니다.
 4. 공간을 확보합니다. 예를 들어 디스크 정리 앱을 실행하여 %SystemDrive%에서 불필요한 파일 및 응용 프로그램을 제거합니다.
 
-Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행하는 방법에 대한 의문 사항은 [Visual Studio 호환성 정보](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases)를 참조하세요.
+Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행하는 방법에 대한 의문 사항은 [Visual Studio 호환성 정보](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases)를 참조하세요.
 
 ## <a name="step-2---download-visual-studio"></a>2단계 - Visual Studio 다운로드
 
 다음으로 Visual Studio 부트스트래퍼 파일을 다운로드합니다. 이렇게 하려면 다음 단추를 클릭하고, 원하는 Visual Studio 2017 버전을 선택하고, **저장**을 클릭하고, **폴더 열기**를 클릭합니다.
 
  > [!div class="button"]
- > [Visual Studio 2017 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Visual Studio 2017 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 |         |         |
@@ -68,7 +69,7 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 
   사용자 계정 컨트롤 알림을 받으면 **예**를 클릭합니다.
 
-2. Microsoft [사용 약관](https://www.visualstudio.com/license-terms/) 및 Microsoft [개인정보처리방침](https://go.microsoft.com/fwlink/?LinkID=824704)에 동의하도록 요청하는 메시지가 표시됩니다. **계속**을 클릭합니다.  
+2. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://go.microsoft.com/fwlink/?LinkID=824704)에 동의하도록 요청하는 메시지가 표시됩니다. **계속**을 클릭합니다.
 
    ![사용 조건 및 개인정보처리방침](media/vs2017-privacy-and-license-terms.PNG "Microsoft 사용 조건 및 개인정보처리방침")
 
@@ -80,16 +81,16 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 
  ![Visual Studio 2017 설정 대화 상자에서 작업을 선택합니다.](../install/media/install-visual-studio-community.png)
 
-     예를 들어 ".NET 데스크톱 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.  
+     예를 들어 ".NET 데스크톱 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
 2. 원하는 작업을 선택한 후 **설치**를 클릭합니다.
 
     다음으로 Visual Studio 설치 진행률을 보여 주는 상태 화면이 나타납니다.
 
-3. 새 작업과 구성 요소가 설치된 후 **시작**을 클릭합니다.  
+3. 새 작업과 구성 요소가 설치된 후 **시작**을 클릭합니다.
 
 > [!TIP]
-> 설치 후에 언제든지 초기에 설치하지 않은 워크로드 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...** 로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 여기서 설치하려는 워크로드 또는 구성 요소를 선택한 다음 **수정**을 클릭합니다.  
+> 설치 후에 언제든지 초기에 설치하지 않은 워크로드 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...** 로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 여기서 설치하려는 워크로드 또는 구성 요소를 선택한 다음 **수정**을 클릭합니다.
 
 |         |         |
 |---------|---------|
@@ -139,7 +140,7 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 
 ## <a name="get-support"></a>지원 받기
 
-때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 

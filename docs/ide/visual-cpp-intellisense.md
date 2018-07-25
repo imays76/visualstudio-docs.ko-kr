@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748087"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -35,29 +36,29 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 아이콘 목록과 해당 의미는 [클래스 뷰 및 개체 브라우저 아이콘](../ide/class-view-and-object-browser-icons.md)을 참조하세요.
 
-![Visual C&#43;&#43; 단어 자동 완성 창](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C++ 단어 자동 완성 창](../ide/media/vs2015_cpp_complete_word.png)
 
 멤버 목록을 처음 호출하는 경우 현재 컨텍스트에서 액세스할 수 있는 멤버만 표시됩니다. 그 후에 **Ctrl**+**J**를 사용하면 접근성과 관계없이 모든 멤버가 표시됩니다. 세 번째로 호출하면 보다 광범위한 프로그램 요소 목록이 표시됩니다. **텍스트 편집기** > **C/C++** > **일반** > **자동 목록 멤버** 아래에 있는 **옵션** 대화 상자에서 멤버 목록을 끌 수 있습니다.
 
-![Visual C&#43;&#43; 멤버 목록](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Visual C++ 멤버 목록](../ide/media/vs2015_cpp_list_members.png)
 
 ### <a name="parameter-help"></a>매개 변수 도움말
 
 클래스 템플릿 변수 선언에서 함수 호출을 여는 중괄호 또는 꺾쇠 괄호를 입력하면 편집기에서 함수 또는 생성자의 각 오버로드에 대한 매개 변수 형식이 포함된 작은 창을 표시합니다. &mdash;커서 위치에 따라&mdash; “현재” 매개 변수가 굵게 표시됩니다. **텍스트 편집기** > **C/C++** > **일반** > **매개 변수 정보** 아래에 있는 **옵션** 대화 상자에서 매개 변수 정보를 끌 수 있습니다.
 
-![Visual C&#43;&#43; 매개 변수 도움말](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Visual C++ 매개 변수 도움말](../ide/media/vs_2015_cpp_param_help.png)
 
 ### <a name="quick-info"></a>요약 정보
 
 변수 위에 마우스 커서를 놓으면 형식 정보 및 형식이 정의된 헤더를 표시하는 작은 창이 인라인으로 나타납니다. 함수 호출을 마우스로 가리키면 함수의 서명이 표시됩니다. **텍스트 편집기** > **C/C++** > **고급** > **자동 빠른 정보** 아래에 있는 **옵션** 대화 상자에서 빠른 정보를 끌 수 있습니다.
 
-![Visual C&#43;&#43; 요약 정보](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
 
 ### <a name="error-squiggles"></a>오류 표시선
 
 프로그램 요소(변수, 키워드, 중괄호, 형식 이름 등) 아래의 표시선은 코드의 오류 또는 잠재적 오류를 알립니다. 녹색 표시선은 정방향 선언을 작성할 때 나타나며, 여전히 구현을 작성해야 함을 알립니다. 현재 활성화되지 않은 코드에 오류가 있는 경우, 예를 들어 Windows 컨텍스트에서 작업하는데 Android 컨텍스트에서 오류가 발생하는 내용을 입력하는 경우 공유 프로젝트에 자주색 표시선이 나타납니다. 빨간색 표시선은 처리해야 하는 활성 코드의 컴파일러 오류 또는 경고를 나타냅니다.
 
-![Visual C&#43;&#43; 오류 표시선](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Visual C++ 오류 표시선](../ide/media/vs2015_cpp_error_quiggles.png)
 
 ### <a name="code-colorization-and-fonts"></a>코드 색 지정 및 글꼴
 
@@ -69,7 +70,7 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 다음은 Android 및 iOS를 위해 빌드하도록 구성된 OpenGLES 응용 프로그램입니다. 다음 그림은 편집 중인 공유 코드를 보여 줍니다. 첫 번째 이미지에서는 Android가 활성 프로젝트입니다.
 
-![Android 프로젝트는 활성 프로젝트입니다.](../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
+![Android 프로젝트는 활성 프로젝트입니다.](../ide/media/intellisensecppcrossplatform.png)
 
 다음 사항을 참고하십시오.
 
@@ -81,7 +82,7 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 이제, 활성 프로젝트를 **iOS.StaticLibrary**로 변경하고 물결 기호 변경 방법에 대해 살펴보겠습니다.
 
-![iOS가 활성 프로젝트로 선택됩니다.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
+![iOS가 활성 프로젝트로 선택됩니다.](../ide/media/intellisensecppcrossplatform2.png)
 
 다음 사항을 참고하십시오.
 
@@ -95,11 +96,11 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 프로젝트 외부의 단일 파일을 여는 경우에도 IntelliSense가 작동합니다. **텍스트 편집기** > **C/C++** > **고급** 아래에 있는 **옵션** 대화 상자에서 특정 IntelliSense 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다. 프로젝트의 일부가 아닌 단일 파일에 대해 IntelliSense를 구성하려면 **프로젝트가 아닌 파일에 대한 IntelliSense 및 검색**을 찾습니다.
 
-![Visual C&#43;&#43; 단일 파일 IntelliSense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Visual C++ 단일 파일 intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
 기본적으로 단일 파일 IntelliSense는 표준 포함 디렉터리만 사용하여 헤더 파일을 찾습니다. 디렉터리를 추가하려면 다음 그림에 표시된 것처럼 **솔루션** 노드에서 바로 가기 메뉴를 열고 해당 디렉터리를 **소스 코드 디버그** 목록에 추가합니다.
 
-![헤더 파일에 경로를 추가하는 중입니다.](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
+![헤더 파일에 경로를 추가하는 중](../ide/media/intellisensedebugyourcode.jpg)
 
 ## <a name="see-also"></a>참고 항목
 

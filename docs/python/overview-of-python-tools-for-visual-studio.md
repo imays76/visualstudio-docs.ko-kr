@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37175368"
 ---
-# <a name="working-with-python-in-visual-studio-on-windows"></a>Visual Studio에서 Python 작업(Windows)
+# <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
 Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 운영 체제에서 무료로 사용할 수 있으며, 유용한 개발자 커뮤니티와 다양한 무료 라이브러리에서 지원되며 널리 사용되는 프로그래밍 언어입니다. Python은 웹 응용 프로그램, 웹 서비스, 데스크톱 앱, 스크립팅 및 과학적 컴퓨팅 등 모든 방식의 개발을 지원하며 대학, 과학자, 아마추어 개발자 및 전문 개발자 등 많은 분야에 사용됩니다. [python.org](https://www.python.org) 및 [Python for Beginners](https://www.python.org/about/gettingstarted/)(초보자를 위한 Python)에서 이 언어에 대해 자세히 알아볼 수 있습니다.
 
@@ -46,7 +47,7 @@ Visual Studio의 **Python 환경** 창(넓게 확장된 뷰에서 아래에 표�
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>다양한 편집 기능, IntelliSense 및 코드 이해
 
-Visual Studio에서는 구문 색 지정, 모든 코드 및 라이브러리에 대한 자동 완성 기능, 코드 서식 지정, 서명 도움말, 리팩터링, Lint(아래 참조) 및 형식 힌트를 포함하는 고급 Python 편집기를 제공합니다. Visual Studio에서 클래스 뷰, 정의로 이동, 모든 참조 찾기 및 코드 조각 등의 고유한 기능을 제공합니다. [대화형 창](#interactive-window)과 직접 통합하여 파일에 이미 저장되어 있는 Python 코드를 신속히 개발할 수 있습니다.
+Visual Studio에서는 구문 색 지정, 모든 코드 및 라이브러리에 대한 자동 완성 기능, 코드 서식 지정, 서명 도움말, 리팩터링, linting 및 형식 힌트를 포함하는 고급 Python 편집기를 제공합니다. Visual Studio에서 클래스 뷰, 정의로 이동, 모든 참조 찾기 및 코드 조각 등의 고유한 기능을 제공합니다. [대화형 창](#interactive-window)과 직접 통합하여 파일에 이미 저장되어 있는 Python 코드를 신속히 개발할 수 있습니다.
 
 ![Visual Studio에서 Python 코드에 대한 코드 완성](media/code-editing-completions-simple.png)
 
@@ -54,9 +55,9 @@ Visual Studio에서는 구문 색 지정, 모든 코드 및 라이브러리에 �
 
 - 동영상(2분 30초): [Python 코드 편집](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Docs: [Python 코드 편집](editing-python-code-in-visual-studio.md)
-- Docs: [코드 서식 지정](formatting-python-code.md)
-- Docs: [리팩터링](refactoring-python-code.md)
-- Docs: [Lint](linting-python-code.md)
+- Docs: [코드 형식](formatting-python-code.md)
+- Docs: [코드 리팩터링](refactoring-python-code.md)
+- Docs: [Linter 사용](linting-python-code.md)
 - 일반 Visual Studio 기능 문서: [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>대화형 창
@@ -168,7 +169,7 @@ Visual Studio는 Azure에 웹앱 및 클라우드 서비스를 게시하기 위�
 
 [설치 가이드](installing-python-support-in-visual-studio.md)에 설명된 대로 Visual Studio의 다음 버전(edition)에 Python 기능을 설치할 수 있습니다.
 
-- [Visual Studio 2017(모든 버전)](https://www.visualstudio.com/vs/)
+- [Visual Studio 2017(모든 버전)](https://visualstudio.microsoft.com/vs/)
 - Visual Studio 2015(모든 버전)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express for Web 업데이트 2 이상
@@ -177,7 +178,7 @@ Visual Studio는 Azure에 웹앱 및 클라우드 서비스를 게시하기 위�
 - Visual Studio 2012(Pro 버전 이상)
 - Visual Studio 2010 SP1(Pro 버전 이상, .NET 4.5 필요)
 
-Visual Studio 2015 및 이전 버전은 [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/)에서 제공됩니다.
+Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/)에서 제공됩니다.
 
 > [!Important]
 > 기능이 Visual Studio의 최신 버전에 대해서만 완전하게 지원 및 유지 관리됩니다. 기능이 이전 버전에서 사용할 수 있지만 적극적으로 유지 관리되지 않습니다.

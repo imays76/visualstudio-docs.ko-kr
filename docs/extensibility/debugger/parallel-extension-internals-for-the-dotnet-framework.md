@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100613"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>.NET Framework에 대 한 병렬 확장 내부 기능
 이 섹션에서는 내부 형식, 메서드, 설명 및.NET Framework의 병렬 확장에 대 한 사용자 지정 디버거를 구현 하는 데 도움이 되는 클래스의 필드입니다.  

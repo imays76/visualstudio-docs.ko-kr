@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128948"
 ---
 # <a name="creating-a-source-control-vspackage"></a>소스 제어 VSPackage 만들기
 이 설명서는 링크와 통합 소스 제어 패키지의 아키텍처 개요를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 인터페이스를 구현 해야 하 고 사용할 수 있도록 서비스에서 정의 된 API 및 간단한 소스를 보여 주는 샘플 패키지 구현을 제어 합니다.  

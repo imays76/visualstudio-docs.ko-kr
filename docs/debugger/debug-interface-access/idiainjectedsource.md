@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464887"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 액세스는 DIA 데이터 원본에 저장 하는 소스 코드를 삽입 합니다.  

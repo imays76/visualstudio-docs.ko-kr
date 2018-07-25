@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263982"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>방법: 워크시트에 XMLMappedRange 컨트롤 추가
   Microsoft Office Excel의 셀에는 XML 요소를 매핑할 때 자동으로 추가 된 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 컨트롤을 워크시트입니다.  

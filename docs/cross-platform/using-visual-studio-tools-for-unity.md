@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31068990"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 사용
 이 섹션에서는 Visual Studio Tools for Unity의 통합 및 생산성 기능을 사용하는 방법과 Unity 개발을 위해 Visual Studio 디버거를 사용하는 방법에 대해 배워 봅니다.

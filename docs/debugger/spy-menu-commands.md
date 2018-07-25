@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473977"
 ---
 # <a name="spy-menu-commands"></a>Spy 메뉴 명령
 **Spy** 메뉴는 Spy + + 창 및 뷰를 사용 하는 명령을 제공 합니다.  

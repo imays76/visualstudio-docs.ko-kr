@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090051"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>자습서 4단계: 전체 Django 웹 프로젝트 템플릿 사용
+# <a name="step-4-use-the-full-django-web-project-template"></a>4단계: 전체 Django 웹 프로젝트 템플릿 사용
 
 **이전 단계: [정적 파일 제공, 페이지 추가 및 템플릿 상속 사용](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-Visual Studio에서 “빈 Django 앱 프로젝트” 템플릿을 기반으로 앱을 작성하여 Django의 기본 사항을 살펴보았으므로 “Django 웹 프로젝트” 템플릿에 의해 생성된 전체 앱을 쉽게 이해할 수 있습니다.
+Visual Studio에서 “빈 Django 웹 프로젝트” 템플릿을 기반으로 앱을 작성하여 Django의 기본 사항을 살펴보았으므로 “Django 웹 프로젝트” 템플릿에 의해 생성된 전체 앱을 쉽게 이해할 수 있습니다.
 
 이 단계에서는 다음을 수행합니다.
 
@@ -40,7 +41,7 @@ Visual Studio에서 “빈 Django 앱 프로젝트” 템플릿을 기반으로 
 
 1. 템플릿에는 `requirements.txt` 파일이 포함되어 있으므로 Visual Studio에서 해당 종속성을 설치할 위치를 묻습니다. **가상 환경에 설치** 옵션을 선택하고 **가상 환경 추가** 대화 상자에서 **만들기**를 선택하여 기본값을 그대로 사용합니다.
 
-1. Python에서 가상 환경 설정이 완료되면 표시된 `readme.html`의 지침에 따라 Django 슈퍼 사용자(즉, 관리자)를 만듭니다. Visual Studio 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Python** > **Django Create Superuser**(Django 슈퍼 사용자 만들기) 명령을 선택한 다음, 프롬프트에 따릅니다. 앱의 인증 기능을 연습할 때 사용하게 되므로 사용자 이름과 암호를 기록해 두어야 합니다.
+1. Visual Studio에서 가상 환경 설정이 완료되면 표시된 `readme.html`의 지침에 따라 Django 슈퍼 사용자(즉, 관리자)를 만듭니다. Visual Studio 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Python** > **Django Create Superuser**(Django 슈퍼 사용자 만들기) 명령을 선택한 다음, 프롬프트에 따릅니다. 앱의 인증 기능을 연습할 때 사용하게 되므로 사용자 이름과 암호를 기록해 두어야 합니다.
 
 1. **솔루션 탐색기**에서 해당 프로젝트를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 선택하여 “DjangoWeb” 프로젝트가 Visual Studio 솔루션의 기본값이 되도록 설정합니다. 굵게 표시된 시작 프로젝트는 디버거를 시작할 때 실행됩니다.
 
@@ -72,7 +73,7 @@ Visual Studio에서 “빈 Django 앱 프로젝트” 템플릿을 기반으로 
   - `requirements.txt`: Django 1.x에 대한 종속성 포함
   - `readme.html`: 프로젝트를 만든 후 Visual Studio에 표시되는 파일. 이전 섹션에서 설명한 대로 여기에 표시되는 지침에 따라 앱에 대한 슈퍼 사용자(관리자) 계정을 만듭니다.
 - `app` 폴더에는 보기, 모델, 테스트, 양식, 템플릿 및 정적 파일을 포함한 모든 앱 파일이 포함됩니다(4-2단계 참조). 일반적으로 보다 고유한 앱 이름을 사용하려면 이 폴더의 이름을 바꿉니다.
-- `DjangoWeb`(Django 프로젝트) 폴더에는 일반적인 Django 프로젝트 파일(`__init.py__`, `settings.py`, `urls.py` 및 `wsgi.py`)이 포함됩니다. 프로젝트 템플릿을 사용하여 `settings.py`는 앱 및 데이터베이스 파일에 대해 이미 구성하고 `urls.py`는 로그인 양식을 포함하여 모든 앱 페이지에 대한 경로로 이미 구성했습니다.
+- `DjangoWeb`(Django 프로젝트) 폴더에는 일반적인 Django 프로젝트 파일(`__init__.py`, `settings.py`, `urls.py` 및 `wsgi.py`)이 포함됩니다. 프로젝트 템플릿을 사용하여 `settings.py`는 앱 및 데이터베이스 파일에 대해 이미 구성하고 `urls.py`는 로그인 양식을 포함하여 모든 앱 페이지에 대한 경로로 이미 구성했습니다.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>질문: Visual Studio 프로젝트 간에 가상 환경을 공유할 수 있나요?
 
@@ -214,7 +215,8 @@ urlpatterns = [
 > [!div class="nextstepaction"]
 > [Django에서 사용자 인증](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>자세히 알아보기
+## <a name="go-deeper"></a>자세히 알아보기
 
+- [Azure App Service에 웹앱 배포](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Writing your first Django app, part 4 - forms and generic views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/)(첫 번째 Django 앱 작성, 4부 - 양식 및 일반 보기)(docs.djangoproject.com)
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137056"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 함수
 이 함수는 소스 제어 플러그 인은 MSSCCPRJ 만들기를 지원 하는지 여부를 결정 합니다. 지정 된 파일의 파일을 SCC입니다.  

@@ -17,21 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117695"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
-디자인 타임 T4 텍스트 템플릿을 사용하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트에서 프로그램 코드 및 기타 파일을 생성할 수 있습니다. 데이터에 따라 생성 하는 코드가 달라 지도록 템플릿을 작성 일반적으로 *모델*합니다. 모델은 파일 또는 응용 프로그램의 요구 사항에 대 한 키 정보가 포함 된 데이터베이스.
+디자인 타임 T4 텍스트 템플릿을 사용하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트에서 프로그램 코드 및 기타 파일을 생성할 수 있습니다. 데이터에 따라 생성 되는 코드를 달라 지도록 템플릿을 작성 일반적으로 *모델*합니다. 모델은 파일 또는 응용 프로그램의 요구 사항에 대 한 키 정보가 포함 된 데이터베이스.
 
- 워크플로를 테이블이나 다이어그램으로 정의하는 모델을 예로 들어 보겠습니다. 해당 모델에서 워크플로를 실행하는 소프트웨어를 생성할 수 있습니다. 사용자 요구 사항이 변경 될 때 사용자와 새 워크플로 설명 하기 쉽습니다. 워크플로에서 코드를 다시 생성하는 것이 코드를 직접 업데이트하는 것보다 안정적입니다.
+ 워크플로를 테이블이나 다이어그램으로 정의하는 모델을 예로 들어 보겠습니다. 해당 모델에서 워크플로를 실행하는 소프트웨어를 생성할 수 있습니다. 사용자 요구 사항이 변경 될 때 사용자를 사용 하 여 새 워크플로 설명 하기 쉽습니다. 워크플로에서 코드를 다시 생성하는 것이 코드를 직접 업데이트하는 것보다 안정적입니다.
 
 > [!NOTE]
->  A *모델* 은 응용 프로그램의 특정 측면을 설명 하는 데이터 원본입니다. 모든 형태와 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 DSL(Domain-Specific Language) 모델 등의 특정 형태가 아니어도 됩니다. 일반적인 모델은 테이블 또는 XML 파일 형식입니다.
+>  A *모델* 는 응용 프로그램의 특정 측면을 설명 하는 데이터 원본입니다. 모든 형태와 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 DSL(Domain-Specific Language) 모델 등의 특정 형태가 아니어도 됩니다. 일반적인 모델은 테이블 또는 XML 파일 형식입니다.
 
- 코드를 생성하는 방법에 대해서는 이미 잘 알고 계실 것입니다. 리소스를 정의 하는 경우는 **.resx** 파일을 여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션, 클래스 및 메서드 집합이 자동으로 생성 됩니다. 리소스 파일로 리소스를 편집하는 것이 클래스와 메서드를 편집하는 것보다 훨씬 쉽고 안정적입니다. 텍스트 템플릿을 사용하면 직접 디자인한 소스에서 같은 방식으로 코드를 생성할 수 있습니다.
+ 코드를 생성하는 방법에 대해서는 이미 잘 알고 계실 것입니다. 리소스를 정의 하는 경우는 **.resx** 파일에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션, 클래스 및 메서드 집합을 자동으로 생성 됩니다. 리소스 파일로 리소스를 편집하는 것이 클래스와 메서드를 편집하는 것보다 훨씬 쉽고 안정적입니다. 텍스트 템플릿을 사용하면 직접 디자인한 소스에서 같은 방식으로 코드를 생성할 수 있습니다.
 
  텍스트 템플릿에는 생성하려는 텍스트와 텍스트의 변수 부분을 생성하는 프로그램 코드가 혼합되어 있습니다. 프로그램 코드를 사용하면 생성된 텍스트의 일부분을 반복하거나 조건부로 생략할 수 있습니다. 생성된 텍스트 자체는 응용 프로그램 부분을 만드는 프로그램 코드일 수 있습니다.
 
@@ -39,15 +40,15 @@ ms.lasthandoff: 04/26/2018
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Visual Studio에서 디자인 타임 T4 텍스트 템플릿을 만들려면
 
-1.  만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트를 만들거나 기존을 엽니다.
+1.  만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트를 만들거나 기존 실험 열기.
 
-     예를 들어에 **파일** 메뉴 선택 **새로**, **프로젝트**합니다.
+     예를 들어 합니다 **파일** 메뉴에서 선택 **새로 만들기** > **프로젝트**합니다.
 
-2.  프로젝트에 텍스트 템플릿 파일을 추가 하 고는 확장명이 있는 이름 지정 **.tt**합니다.
+2.  텍스트 템플릿 파일을 프로젝트에 추가 하 고 이름을 확장명을 가진 **.tt**합니다.
 
-     이 수행 하려면 **솔루션 탐색기**, 프로젝트의 바로 가기 메뉴에서 선택 **추가**, **새 항목**합니다. 에 **새 항목 추가** 대화 상자 선택 **텍스트 템플릿** 가운데 창에서.
+     이렇게 하려면 **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴에서 선택 **추가** > **새 항목**합니다. 에 **새 항목 추가** 대화 상자 선택 **텍스트 템플릿** 가운데 창에서.
 
-     에 **사용자 지정 도구** 파일의 속성은 **TextTemplatingFileGenerator**합니다.
+     다음에 유의 합니다 **사용자 지정 도구** 파일의 속성은 **TextTemplatingFileGenerator**합니다.
 
 3.  파일을 엽니다. 다음 지시문이 이미 포함되어 있습니다.
 
@@ -66,12 +67,12 @@ ms.lasthandoff: 04/26/2018
 
 5.  파일을 저장합니다.
 
-     표시 될 수 있습니다는 **보안 경고** 템플릿을 실행 하려면 확인 메시지 상자입니다. **확인**을 클릭합니다.
+     표시 될 수 있습니다는 **보안 경고** 템플릿을 실행 하려는 것인지 묻는 메시지 상자입니다. **확인**을 클릭합니다.
 
-6.  **솔루션 탐색기**템플릿 파일 노드를 확장 하 고 있습니다.은 확장명을 가진 파일, **.txt**합니다. 이 파일에 템플릿에서 생성된 텍스트가 포함되어 있습니다.
+6.  **솔루션 탐색기**, 템플릿 파일 노드를 확장 하 고 확장명을 가진 파일을 보면 **.txt**합니다. 이 파일에 템플릿에서 생성된 텍스트가 포함되어 있습니다.
 
     > [!NOTE]
-    >  프로젝트는 Visual Basic 프로젝트를 클릭 하 여 **모든 파일 표시** 출력 파일을 보려면 합니다.
+    >  프로젝트는 Visual Basic 프로젝트를 클릭 해야 **모든 파일 표시** 하려면 출력 파일을 참조 하세요.
 
 ### <a name="regenerating-the-code"></a>코드 다시 생성
  다음과 같은 경우에는 템플릿이 실행되어 보조 파일이 생성됩니다.
@@ -82,9 +83,9 @@ ms.lasthandoff: 04/26/2018
 
 -   클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션에서 모든 템플릿이 변환됩니다.
 
--   **솔루션 탐색기**파일의 바로 가기 메뉴에서 선택, **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.
+-   **솔루션 탐색기**의 바로 가기 메뉴에서 파일, 선택 **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.
 
- 템플릿이 읽는 데이터 파일이 변경되면 템플릿이 실행되도록 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트를 설정할 수도 있습니다. 자세한 내용은 참조 [코드를 자동으로 다시 생성](#Regenerating)합니다.
+ 템플릿이 읽는 데이터 파일이 변경되면 템플릿이 실행되도록 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트를 설정할 수도 있습니다. 자세한 내용은 [코드를 자동으로 다시 생성](#Regenerating)합니다.
 
 ## <a name="generating-variable-text"></a>변수 텍스트 생성
  텍스트 템플릿에서는 프로그램 코드를 사용하여 생성된 파일 내용이 바뀌도록 할 수 있습니다.
@@ -120,7 +121,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  .tt 파일을 저장하고 생성된 .txt 파일을 다시 검사합니다. 숫자 0에서 10까지를 각각 제곱한 값이 표시됩니다.
 
- 위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 참조 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)합니다.
+ 위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.
 
  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.
 
@@ -133,7 +134,7 @@ ms.lasthandoff: 04/26/2018
 
 -   일반 코드에서와 같은 방식으로 템플릿에 중단점을 설정합니다.
 
--   선택 **T4 템플릿 디버깅** 솔루션 탐색기에서 텍스트 템플릿 파일의 바로 가기 메뉴에서.
+-   선택할 **T4 템플릿 디버그** 솔루션 탐색기에서 텍스트 템플릿 파일의 바로 가기 메뉴에서.
 
  템플릿이 실행된 후 중단점에서 중지됩니다. 일반적인 방식으로 변수를 점검하고 코드를 단계별로 실행할 수 있습니다.
 
@@ -297,10 +298,10 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
  소스 모델이 변경되면 솔루션에서 모든 템플릿을 다시 실행해야 합니다. 이렇게 하려면 수동으로 선택 **모든 템플릿 변형** 에 **빌드** 메뉴.
 
- Visual Studio Modeling SDK를 설치한 경우에 빌드를 수행할 때마다 자동으로 변환 되도록 모든 템플릿이 지정할 수 있습니다. 이렇게 하려면 프로젝트 파일(.csproj 또는 .vbproj)을 텍스트 편집기에서 편집하여 파일 끝부분의 다른 `<import>` 문 뒤에 다음 줄을 추가합니다.
+ Visual Studio 모델링 SDK를 설치한 경우에 빌드를 수행할 때마다 자동으로 변환 하는 모든 템플릿이 있습니다. 이렇게 하려면 프로젝트 파일(.csproj 또는 .vbproj)을 텍스트 편집기에서 편집하여 파일 끝부분의 다른 `<import>` 문 뒤에 다음 줄을 추가합니다.
 
 > [!NOTE]
-> Visual Studio의 특정 기능을 설치할 때에 Visual Studio 2017에 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK 자동으로 설치 됩니다. 자세한 내용은 참조 하십시오. [이 블로그 게시물](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
+> Visual Studio의 특정 기능을 설치한 경우에 Visual Studio 2017에서 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK에 자동으로 설치 됩니다. 자세한 내용은 참조 하세요. [이 블로그 게시물](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
 
 ```
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -310,7 +311,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>
 ```
 
- 자세한 내용은 참조 [빌드 프로세스에서 코드 생성](../modeling/code-generation-in-a-build-process.md)합니다.
+ 자세한 내용은 [빌드 프로세스에서 코드 생성](../modeling/code-generation-in-a-build-process.md)합니다.
 
 ## <a name="error-reporting"></a>오류 보고
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 오류 창에 오류 및 경고 메시지를 표시하려는 경우 다음 메서드를 사용할 수 있습니다.
@@ -321,7 +322,7 @@ Warning("A warning message");
 ```
 
 ##  <a name="Converting"></a> 기존 파일을 템플릿으로 변환
- 템플릿의 유용한 특징 중 하나는 삽입된 일부 프로그램 코드와 함께, 템플릿에서 생성한 파일과 매우 비슷하다는 점입니다. 이로 인해 템플릿을 만드는 유용한 방법이 제공됩니다. 먼저 일반 파일을 프로토타입으로 같은 만듭니다는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 파일을 선택한 다음 결과 파일을 변경 하는 생성 코드를 단계적으로 채택 합니다.
+ 템플릿의 유용한 특징 중 하나는 삽입된 일부 프로그램 코드와 함께, 템플릿에서 생성한 파일과 매우 비슷하다는 점입니다. 이로 인해 템플릿을 만드는 유용한 방법이 제공됩니다. 먼저 일반 파일을 프로토타입으로 같은 만들기는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 파일을 선택한 다음 결과 파일을 변경 하는 생성 코드를 점진적으로 도입 합니다.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>기존 파일을 디자인 타임 템플릿으로 변환하려면
 
@@ -331,7 +332,7 @@ Warning("A warning message");
 
 3.  솔루션 탐색기에서 파일 이름 확장명을 변경 **.tt**합니다.
 
-4.  다음 속성을 확인는 **.tt** 파일:
+4.  다음 속성을 확인 합니다 **.tt** 파일:
 
     |||
     |-|-|
@@ -351,14 +352,14 @@ Warning("A warning message");
 
 6.  파일을 저장합니다.
 
-     지정한 확장명으로 보조 파일이 작성됩니다. 이 파일은 해당 파일 형식에 적절한 속성을 포함합니다. 예를 들어는 **빌드 작업** .cs 파일의 속성이 **컴파일**합니다.
+     지정한 확장명으로 보조 파일이 작성됩니다. 이 파일은 해당 파일 형식에 적절한 속성을 포함합니다. 예를 들어 합니다 **빌드 작업** .cs 파일의 속성이 **컴파일**합니다.
 
      생성된 파일의 내용이 원래 파일과 같은지 확인합니다.
 
 7.  달라지도록 하려는 파일 부분을 확인합니다. 특정 상황에서만 표시되는 부분이나 반복되는 부분, 특정 값이 달라지는 부분을 예로 들 수 있습니다. 생성 코드를 삽입하고 파일을 저장한 다음 보조 파일이 올바르게 생성되는지 확인합니다. 이 단계를 반복합니다.
 
 ## <a name="guidelines-for-code-generation"></a>코드 생성 지침
- 참조 하십시오 [T4 텍스트 템플릿 작성 지침](../modeling/guidelines-for-writing-t4-text-templates.md)합니다.
+ 참조 하세요 [T4 텍스트 템플릿 작성에 대 한 지침](../modeling/guidelines-for-writing-t4-text-templates.md)합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

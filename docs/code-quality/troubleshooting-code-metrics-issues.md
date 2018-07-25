@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920591"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>코드 메트릭 문제 해결
 코드 메트릭을 수집할 때 다음 문제 중 일부가 발생할 수 있습니다.

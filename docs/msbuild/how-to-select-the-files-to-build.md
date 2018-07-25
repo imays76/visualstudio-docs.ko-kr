@@ -14,16 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 651570ef83f5f87d96ed27538cc4f6ffd569d41f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079701"
 ---
 # <a name="how-to-select-the-files-to-build"></a>방법: 빌드할 파일 선택
 여러 파일이 포함된 프로젝트를 빌드할 경우 각 파일을 프로젝트 파일에 개별적으로 나열하거나, 와일드카드를 사용하여 모든 파일을 하나의 디렉터리 또는 중첩된 디렉터리 집합에 포함할 수 있습니다.  
   
-## <a name="specifying-inputs"></a>입력 지정  
+## <a name="specify-inputs"></a>입력 지정  
  항목은 빌드의 입력을 나타냅니다. 항목에 대한 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.  
   
  빌드용 파일을 포함하려면 파일이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 항목 목록에 포함되어야 합니다. 파일을 개별적으로 포함하거나 와일드카드를 사용하여 많은 파일을 한 번에 포함하는 방식으로 여러 파일을 항목 목록에 추가할 수 있습니다.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
   
      `<CSFile Include="form1.cs"/>`  
   
-     - 또는  
+     또는 
   
      `<VBFile Include="form1.vb"/>`  
   
@@ -47,44 +48,44 @@ ms.lasthandoff: 04/19/2018
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
-     - 또는  
+     또는 
   
      `<VBFile Include="form1.vb;form2.vb"/>`  
   
-## <a name="specifying-inputs-with-wildcards"></a>와일드카드를 사용하여 입력 지정  
+## <a name="specify-inputs-with-wildcards"></a>와일드카드를 사용하여 입력 지정  
  와일드카드를 사용하여 하위 디렉터리의 모든 파일 또는 특정 파일만 빌드의 입력으로 재귀적으로 포함할 수도 있습니다. 와일드카드에 대한 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.  
   
- 다음 예제는 프로젝트 파일이 Project 디렉터리에 있는, 다음 디렉터리와 하위 디렉터리에 그래픽 파일이 포함된 프로젝트를 기반으로 합니다.  
+ 다음 예제는 프로젝트 파일이 *Project* 디렉터리에 있는, 다음 디렉터리와 하위 디렉터리에 그래픽 파일이 포함된 프로젝트를 기반으로 합니다.  
   
- Project\Images\BestJpgs  
+ *Project\Images\BestJpgs*  
   
- Project\Images\ImgJpgs  
+ *Project\Images\ImgJpgs*  
   
- Project\Images\ImgJpgs\Img1  
+ *Project\Images\ImgJpgs\Img1*  
   
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Images 디렉터리 및 하위 디렉터리의 모든 .jpg 파일을 포함하려면  
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>*Images* 디렉터리 및 하위 디렉터리의 모든 *.jpg* 파일을 포함하려면  
   
 -   다음 `Include` 특성을 사용합니다.  
   
      `Include="Images\**\*.jpg"`  
   
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>“img”로 시작하는 모든 .jpg 파일을 포함하려면  
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>*img*로 시작하는 모든 *.jpg* 파일을 포함하려면  
   
 -   다음 `Include` 특성을 사용합니다.  
   
      `Include="Images\**\img*.jpg"`  
   
-#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>디렉터리에서 이름이 “jpgs”로 끝나는 모든 파일을 포함하려면  
+#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>디렉터리에서 이름이 *jpgs*로 끝나는 모든 파일을 포함하려면  
   
 -   다음 `Include` 특성 중 하나를 사용합니다.  
   
      `Include="Images\**\*jpgs\*.*"`  
   
-     - 또는  
+     또는
   
      `Include="Images\**\*jpgs\*"`  
   
-## <a name="passing-items-to-a-task"></a>작업에 항목 전달  
+## <a name="pass-items-to-a-task"></a>작업에 항목 전달  
  프로젝트 파일에서 @() 표기법을 사용하여 전체 항목 목록을 빌드의 입력으로 지정할 수 있습니다. 모든 파일을 개별적으로 나열하든지, 와일드카드를 사용하든지 관계없이 이 표기법을 사용할 수 있습니다.  
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>모든 Visual C# 또는 Visual Basic 파일을 입력으로 사용하려면  
@@ -93,7 +94,7 @@ ms.lasthandoff: 04/19/2018
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
-     - 또는  
+     또는 
   
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
@@ -137,7 +138,7 @@ ms.lasthandoff: 04/19/2018
 ```  
   
 ## <a name="example"></a>예  
- 다음 코드 예제에서는 와일드카드를 사용하여 모든 .cs 파일을 포함합니다.  
+ 다음 코드 예제에서는 와일드카드를 사용하여 모든 *.cs* 파일을 포함합니다.  
   
 ```xml  
 <Project DefaultTargets="Compile"  

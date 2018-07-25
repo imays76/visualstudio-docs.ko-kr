@@ -1,11 +1,11 @@
 ---
 title: IMachineDebugManagerCookie::AddApplication | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IMachineDebugManagerCookie.AddApplication
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IMachineDebugManagerCookie::AddApplication
 ms.assetid: 4d5503c5-aca9-4cf7-9900-f77bf5f3263d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728633"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
 응용 프로그램을 실행 하는 추가 하는 응용 프로그램 목록입니다.  

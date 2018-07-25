@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263456"
 ---
 # <a name="data-in-office-solutions"></a>Office 솔루션의 데이터
   많은 Office 솔루션에서 사용자는 데이터를 검색하거나 수정할 수 있도록 합니다. Visual Studio를 사용하여 Office 솔루션을 만드는 경우 데이터로 작업할 수 있는 여러 가지 방법이 있습니다.  

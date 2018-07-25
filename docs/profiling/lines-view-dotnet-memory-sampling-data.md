@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb92e37a8bc1543cfdf2efa142768d9edbea4f69
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 518a05c72d25c5f1abc136e774d9867a9fc66c36
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845641"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>줄 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하는 .NET 메모리 할당 프로파일링 데이터에 대한 줄 뷰에는 프로파일링 실행 중 메모리를 할당한 문이 나열됩니다. 열에는 할당의 크기와 할당 수도 포함됩니다.  

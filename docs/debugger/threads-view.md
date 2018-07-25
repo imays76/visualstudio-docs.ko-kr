@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476899"
 ---
 # <a name="threads-view"></a>스레드 뷰
 스레드 뷰는 시스템에는 windows와 관련 된 모든 스레드의 플랫 목록입니다. 스레드 ID 및 각 스레드에 대 한 모듈 이름이 표시 됩니다. 프로세스 포함 되지 않으며 선택한 스레드에서 소유 하는 프로세스를 쉽게 찾을 수 있습니다.  

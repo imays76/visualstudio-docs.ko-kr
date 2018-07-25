@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139775"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 컴파일러 명령줄 플래그
 Visual Studio 명령 테이블 (VSCT) 컴파일러.vsct 파일의 컴파일 되도록 명령줄 스위치를 제공 합니다.  

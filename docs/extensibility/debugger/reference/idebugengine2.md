@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113096"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 이 인터페이스는 디버그 엔진을 (DE)를 나타냅니다. 중단점을 설정 하 고 예외를 지우기 만들지는 디버깅 세션의 다양 한 측면을 관리 하는 데 사용 됩니다.  

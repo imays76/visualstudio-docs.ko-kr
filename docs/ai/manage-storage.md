@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708279"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>저장소로 이동하여 데이터 업로드 또는 모델 및 로그 다운로드
 

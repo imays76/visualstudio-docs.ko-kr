@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: efc9c9af36e5484728b05db1171bb2e9bc30ba0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91d314d1903598392737d9f72fdfc9fa02239a47
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35669121"
 ---
 # <a name="edit-load-test-scenarios"></a>부하 테스트 시나리오 편집
 
@@ -32,9 +33,8 @@ ms.lasthandoff: 04/26/2018
 
 시나리오에는 다음 구성 요소가 포함됩니다.
 
-|||
-|-|-|
 |용어|정의|
+|-|-|
 |브라우저 조합|가상 사용자가 다양한 웹 브라우저를 통해 웹 사이트에 액세스하는 것을 시뮬레이션합니다.|
 |부하 패턴|부하 테스트 중에 활성인 가상 사용자 수와 새 사용자가 시작하는 속도를 지정합니다. 예를 들어 단계, 일정 및 목표 기반 패턴이 있습니다.|
 |테스트 조합 모델|부하 테스트 시나리오에서 가상 사용자가 지정한 테스트를 실행할 확률을 지정합니다. 예를 들어 TestA를 실행할 확률 20%, TestB를 실행할 확률 80%로 지정합니다. 테스트 조합 모델에는 특정 시나리오에 대한 테스트의 목표가 반영되어야 합니다.|

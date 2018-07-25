@@ -10,11 +10,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea8bf298f5847c779d2dc13154ddb27b2efeb214
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077816"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 오류 및 경고
 
@@ -31,7 +32,7 @@ XAML을 작성하면 Visual Studio에서는 입력한 코드를 분석합니다.
 |XAML 편집하며 계속하기|XECxxxx|
 
 > [!Note]
-> 일부 오류/경고에는 해당 코드가 포함됩니다. 이러한 오류는 일반적으로 XAML 디자이너 오류입니다.
+> 일부 오류 또는 경고에는 해당 코드가 포함됩니다. 이러한 오류는 일반적으로 XAML 디자이너 오류입니다.
 
 
 ## <a name="suppress-xaml-designer-errors"></a>XAML 디자이너 오류 표시 안 함
@@ -40,6 +41,6 @@ XAML을 작성하면 Visual Studio에서는 입력한 코드를 분석합니다.
 
 **XAML 디자이너에 의해 검색된 오류 표시** 확인란의 선택을 취소합니다.
 
-![XAML 디자이너 오류 표시 안 함](../designers/media/suppress_xaml_designer_errors.PNG "SuppressXAMLDesignerErrors")
+![XAML 디자이너 오류 표시 안 함](../designers/media/suppress_xaml_designer_errors.png)
 
 

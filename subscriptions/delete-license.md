@@ -9,11 +9,12 @@ description: 관리자가 구독 할당을 삭제하는 방법에 대해 알아�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1d96cc46a43e945f4ff59ba02ea6c132385f5908
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: e345b5e46317f039cdb01afa50e158e7122ded21
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325416"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 할당 삭제
 
@@ -21,5 +22,4 @@ ms.lasthandoff: 04/27/2018
 1.  제거하려는 구독자의 이름을 클릭합니다. 제거할 구독자를 여러 명 선택하려면 **CTRL** 키를 누른 채 제거할 각각의 구독자를 클릭하거나, **CTRL + A** 키를 눌러 모든 구독자를 선택하여 제거합니다. 아래 이미지에서는 세 명의 구독자를 선택했습니다.
 2.  선택한 구독자를 삭제하려면 **삭제**를 클릭합니다. 
 3.  삭제를 확인하는 메시지가 나타나면 **확인**을 클릭합니다. 
-
-![구독자 삭제](_img\delete-license\delete-subscribers.png)
+    ![구독자 삭제](_img\delete-license\delete-subscribers.png)

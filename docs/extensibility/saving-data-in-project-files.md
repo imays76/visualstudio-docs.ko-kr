@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140179"
 ---
 # <a name="saving-data-in-project-files"></a>프로젝트 파일에서 데이터를 저장합니다.
 프로젝트 하위 형식 저장 하 고 프로젝트 파일에서 하위 형식의 특정 데이터를 검색할 수 있습니다. 이 작업을 수행 하는 두 인터페이스를 제공 하는 관리 패키지 프레임 워크 (MPF):  

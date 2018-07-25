@@ -1,5 +1,5 @@
 ---
-title: 비트맵 요소 | Microsoft Docs
+title: Bitmaps 요소 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,13 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea89ae212a85ed2a164ce133d055aebe551cf545
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f407347946df5ddc537001fcb14bae909e52646
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153665"
 ---
-# <a name="bitmaps-element"></a>비트맵 요소
+# <a name="bitmaps-element"></a>Bitmaps 요소
 그룹 [비트맵 요소](../extensibility/bitmap-element.md) 요소입니다.  
   
 ## <a name="syntax"></a>구문  
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 |특성|설명|  
 |---------------|-----------------|  
-|조건|선택적 요소. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
+|조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
 |-------------|-----------------|  
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다.|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 <Bitmaps>  
@@ -64,6 +65,6 @@ ms.lasthandoff: 04/16/2018
 </Bitmaps>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

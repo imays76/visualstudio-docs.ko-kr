@@ -5,15 +5,16 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 738964deed9aa1e51d5a6e4788879bc3165284a7
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889887"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Mac용 Visual Studio 소개
 
-Mac용 Visual Studio는 모바일, 데스크톱 및 웹 응용 프로그램을 만들기 위한 다양한 기능을 갖춘 정교한 최신 IDE입니다. 다음 개발을 지원합니다.
+Mac용 Visual Studio는 모바일, 데스크톱 및 웹 응용 프로그램을 만들기 위한 다양한 기능을 갖춘 정교한 최신 IDE입니다. 다음과 같은 응용 프로그램의 개발을 지원합니다.
 
 * .NET을 사용하는 모바일: Android, iOS, tvOS, watchOS
 * Mac 데스크톱 앱
@@ -23,7 +24,7 @@ Mac용 Visual Studio는 모바일, 데스크톱 및 웹 응용 프로그램을 �
 
 고급 편집기, 디버깅, iOS, Mac 및 Android를 통한 네이티브 플랫폼 통합 및 통합 소스 제어와 같은 여러 기능을 포함하고 있습니다.
 
-이 문서에서는 Mac용 Visual Studio의 다양한 섹션을 살펴보면서 플랫폼 간 응용 프로그램을 만들기 위한 강력한 도구를 구성하는 기능 중 일부를 안내하겠습니다.
+이 문서에서는 Mac용 Visual Studio의 다양한 섹션을 살펴보면서 플랫폼 간 응용 프로그램을 만드는 강력한 도구가 되는 기능을 소개합니다.
 
 ## <a name="installation"></a>설치
 
@@ -35,7 +36,7 @@ Mac용 Visual Studio는 기본적으로 C# 및 F#에서의 개발을 지원합�
 
 ### <a name="c"></a>C#
 
-C#은 Mac용 Visual Studio에서 플랫폼 간 응용 프로그램을 만들기 위한 가장 일반적으로 사용되는 언어입니다. IDE에는 모든 C# 7 기능에 대한 완벽한 지원이 포함됩니다.
+C#은 Mac용 Visual Studio에서 플랫폼 간 응용 프로그램을 만드는 가장 일반적으로 사용되는 언어입니다. IDE에는 모든 C# 7 기능에 대한 완벽한 지원이 포함됩니다.
 
 ### <a name="f"></a>F#
 
@@ -45,7 +46,7 @@ F#은 .NET에서 실행되도록 설계된 강력한 형식의 함수형 프로�
 
 ## <a name="net-core"></a>.NET Core
 
-[.NET Core](https://www.microsoft.com/net/core#macos)는 Windows, Linux 및 Mac에서 실행되는 응용 프로그램을 만들기 위한 플랫폼입니다. Mac용 Visual Studio에서는 .NET Core 프로젝트의 로드, 생성, 실행 및 디버그를 지원합니다.
+[.NET Core](https://www.microsoft.com/net/core#macos)는 Windows, Linux 및 Mac에서 실행되는 응용 프로그램을 만드는 플랫폼입니다. Mac용 Visual Studio에서는 .NET Core 프로젝트를 로드, 생성, 실행 및 디버깅할 수 있습니다. 
 
 .NET Core 프로젝트를 실행하려면 .NET Core SDK를 다운로드 및 설치해야 합니다.
 
@@ -107,11 +108,11 @@ Xamarin Profiler에는 프로파일링에 사용할 수 있는 세 가지 기기
 
 ### <a name="inspector"></a>검사기
 
-Xamarin Inspector는 도구가 포함된 대화형 C# 콘솔 도구를 사용자에게 제공하고, 라이브 응용 프로그램을 검사할 때 디버깅이나 진단 도구로 사용할 수 있을뿐만 아니라 강의 도구, 설명서 도구 또는 실험 도구로도 사용할 수 있습니다.
+Xamarin Inspector는 사용자 도구가 포함된 대화형 C# 콘솔을 제공합니다. 라이브 응용 프로그램을 검사할 때 디버깅이나 진단 도구로 사용할 수 있을 뿐만 아니라 강의 도구, 설명서 도구 또는 실험 도구로도 사용할 수 있습니다.
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-또한 Xamarin Inspector는 IDE의 디버깅 워크플로에 통합되고 다양한 프로그래밍 플랫폼(Android, iOS, Mac 및 Windows)을 대상으로 하는 고급 C# 콘솔을 제공하는 독립 실행형 응용 프로그램으로 구성됩니다.
+Xamarin Inspector는 다양한 프로그래밍 플랫폼(Android, iOS, Mac 및 Windows)을 대상으로 하고 IDE의 디버깅 워크플로에 통합할 수 있는 고급 C# 콘솔을 제공하는 독립 실행형 응용 프로그램으로 구성됩니다. 
 
 자세한 내용은 [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) 가이드를 참조하세요.
 

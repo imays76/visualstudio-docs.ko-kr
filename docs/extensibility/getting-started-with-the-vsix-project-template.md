@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129195"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>VSIX 프로젝트 템플릿을 사용 하 여 시작 하기
 확장 프로그램을 만들려면 또는 기존 배포에 대 한 확장을 패키지 하려면 VSIX 프로젝트 템플릿을 사용할 수 있습니다. VSIX 프로젝트 템플릿을는 버전, Visual Basic 및 Visual C# 및 Visual Studio SDK의 일부로 설치 됩니다.  
@@ -35,11 +36,11 @@ ms.lasthandoff: 04/16/2018
   
     2.  **프로젝트** 메뉴에서 **템플릿 내보내기**를 클릭합니다. 마법사의 단계를 완료 합니다.  
   
-         %USERPROFILE%\My Documents\Visual Studio에서에서.zip 파일을 만들  *\<버전 >*\My 내보낸 템플릿\\합니다.  
+         %USERPROFILE%\My Documents\Visual Studio에서에서.zip 파일을 만들  *\<버전 >* \My 내보낸 템플릿\\합니다.  
   
 2.  빈 VSIX 프로젝트를 만듭니다.  
   
-     **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **프로젝트**를 클릭합니다. 선택 **Visual Basic** 또는 **Visual C#**합니다. 선택한 노드에서 선택 **확장성**를 선택한 후 **VSIX 프로젝트**합니다.  
+     **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **프로젝트**를 클릭합니다. 선택 **Visual Basic** 또는 **Visual C#** 합니다. 선택한 노드에서 선택 **확장성**를 선택한 후 **VSIX 프로젝트**합니다.  
   
 3.  .Zip 파일을 프로젝트에 추가 합니다. 설정의 **출력 디렉터리로 복사** 속성을 `Copy Always`합니다.  
   

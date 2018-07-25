@@ -32,6 +32,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947926"
 ---
 # <a name="file-properties-javascript"></a>파일 속성, JavaScript
 파일 속성을 사용하여 프로젝트 시스템이 파일에 대해 수행해야 하는 작업을 지정할 수 있습니다. 예를 들어 파일 속성을 설정하여 파일을 패키지에 리소스 파일로 추가해야 하는지 여부를 지정할 수 있습니다.

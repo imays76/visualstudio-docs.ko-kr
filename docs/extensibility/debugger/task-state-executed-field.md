@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125455"
 ---
 # <a name="taskstateexecuted-field"></a>TASK_STATE_EXECUTED 필드
 작업이 실행되고 있지만 완료되지 않았습니다.  

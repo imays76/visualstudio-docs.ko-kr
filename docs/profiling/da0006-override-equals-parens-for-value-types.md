@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b360c97e64842d46fe2b121e8505ac0f9cafebed
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b5e0d79b164c521bd3e0da53738d49451ff2a7af
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749985"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: 값 형식에 대해 Equals()를 재정의하십시오.
 |||  

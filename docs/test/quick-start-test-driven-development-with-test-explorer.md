@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845758"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 -   필요한 모든 정보를 하나의 창에서 확인합니다.
 
 ## <a name="using-test-explorer"></a>테스트 탐색기 사용
- ![모든 실행 단추를 표시하는 단위 테스트 탐색기](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![모두 실행 단추를 표시하는 단위 테스트 탐색기](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트를 실행하려면
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
     2.  각 단위 테스트를 메서드로 작성합니다. 각 테스트 메서드 앞에 `[TestMethod]` 특성을 접두사로 지정합니다.
 
-2.  개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
+2.  개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
 3.  메뉴 모음에서 **테스트**, **단위 테스트 실행**, **모든 테스트**를 선택합니다.
 
@@ -65,11 +66,11 @@ ms.lasthandoff: 04/26/2018
 
 
 > [!NOTE]
-> 테스트가 표시되지 않으면 어댑터를 설치하여 테스트 탐색기를 사용 중인 테스트 프레임워크에 연결했는지 확인하십시오. 자세한 내용은 [테스트 탐색기에서 다양한 테스트 프레임워크 사용](#frameworks)을 참조하십시오.
+> 테스트가 표시되지 않으면 어댑터를 설치하여 테스트 탐색기를 사용 중인 테스트 프레임워크에 연결했는지 확인하십시오. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](install-third-party-unit-test-frameworks.md)를 참조하세요.
 
 
 ##  <a name="walkthrough"></a> 연습: 단위 테스트를 사용하여 메서드 개발
- 이 연습에서는 Microsoft 단위 테스트 프레임워크를 사용하여 C#에서 테스트 메서드를 개발하는 방법을 보여 줍니다. 다른 언어에 맞게 쉽게 조정할 수 있으며 NUnit과 같은 다른 테스트 프레임워크에도 사용할 수 있습니다. 자세한 내용은 [다양한 테스트 프레임워크 사용](#frameworks)을 참조하십시오.
+ 이 연습에서는 Microsoft 단위 테스트 프레임워크를 사용하여 C#에서 테스트 메서드를 개발하는 방법을 보여 줍니다. 다른 언어에 맞게 쉽게 조정할 수 있으며 NUnit과 같은 다른 테스트 프레임워크에도 사용할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](install-third-party-unit-test-frameworks.md)를 참조하세요.
 
 #### <a name="creating-the-test-and-method"></a>테스트 및 메서드 만들기
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 
     -   **새 프로젝트** 대화 상자에서 **Visual C#** 을 선택하고 **테스트** 를 선택한 다음 **단위 테스트 프로젝트**를 선택합니다.
 
-         ![새 코드 및 테스트 프로젝트](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![새 코드 및 테스트 프로젝트](../test/media/unittestexplorerwalk1.png)
 
 3.  기본 테스트 메서드를 작성합니다. 특정 입력에 대해 얻은 결과를 확인합니다.
 
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  **스택 추적** 에서 테스트가 실패한 위치를 확인할 항목을 선택합니다.
 
- ![실패한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![실패한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough2.png)
 
  이제 테스트를 만들었으며 테스트를 통과하도록 수정할 스텁을 만들었습니다.
 
@@ -146,7 +147,7 @@ ms.lasthandoff: 04/26/2018
 
      테스트가 통과됩니다.
 
-     ![통과한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![통과한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>테스트를 추가하여 입력 범위 확장
 
@@ -189,7 +190,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  테스트 아래 메서드를 검사하여 잘못된 부분이 무엇인지 알아봅니다. `MyMath.Rooter` 클래스에서 코드를 다시 작성합니다.
 
-    ```
+    ```csharp
     public double SquareRoot(double input)
     {
       double result = input;
@@ -288,4 +289,4 @@ ms.lasthandoff: 04/26/2018
 
      이번에도 모든 테스트를 통과합니다.
 
-     ![통과한 테스트 3개를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![통과한 테스트 3개를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough4.png)

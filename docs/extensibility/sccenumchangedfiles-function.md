@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137133"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 함수
 로컬 파일의 목록에 지정 된 경우이 함수는 파일은 소스 코드 제어 데이터베이스에서 해당 버전의 다른 결정 합니다.  

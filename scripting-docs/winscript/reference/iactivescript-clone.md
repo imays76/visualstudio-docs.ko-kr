@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::Clone | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.Clone
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_Clone
 ms.assetid: aa000b2a-7085-448d-a422-f7adac7851cb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641593"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 현재 스크립팅 엔진 (모든 현재 실행 상태), 빼기는 현재 스레드의 사이트가 있는 로드할된 스크립팅 엔진 반환을 복제 합니다. 이 새로운 스크립팅 엔진의 속성을 원래 스크립팅 엔진 것에 초기화 된 상태로 전환 된 경우 속성과 동일 됩니다.  

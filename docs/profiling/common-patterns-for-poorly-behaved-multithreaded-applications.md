@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0937af4a697b3cf789738d06b5e2ad0282a7d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34549008"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>잘못 동작하는 다중 스레드 응용 프로그램의 일반 패턴
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/19/2018
 
 다음 그림과 같이 동시성 시각화 도우미가 CPU 사용률 뷰에 이 증상을 표시할 수 있습니다. 여기서 다중 스레드가 있더라도 응용 프로그램은 하나의 논리 코어만 사용합니다.
 
-자세한 내용은 MSDN 블로그 웹 사이트에 있는 Hazim Shafi의 [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569)(Windows용 병렬 성능 도구) 블로그에서 "Performance Pattern 1: Identifying Lock Contention"(성능 패턴 1: 잠금 경합 식별)을 참조하세요.
+자세한 내용은 MSDN 블로그 웹 사이트에 있는 Hazim Shafi의 [Parallel performance tools for Windows](http://go.microsoft.com/fwlink/?LinkID=160569)(Windows용 병렬 성능 도구) 블로그에서 "Performance pattern 1: Identifying lock contention"(성능 패턴 1: 잠금 경합 식별)을 참조하세요.
 
 ![잠금 경합](../profiling/media/lockcontention_2.png "LockContention_2")
 

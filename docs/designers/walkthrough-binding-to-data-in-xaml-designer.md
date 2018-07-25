@@ -1,6 +1,7 @@
 ---
 title: XAML 디자이너에서 데이터에 바인딩
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 557cdd14a37a52933df44c92b76fe608a1cc273c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079890"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>연습: XAML 디자이너에서 데이터에 바인딩
 
@@ -25,13 +27,13 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>데이터 원본으로 사용할 클래스를 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기**> **프로젝트**를 차례로 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
 1. **새 프로젝트** 대화 상자에서 **Visual C#** 또는 **Visual Basic** 노드를 선택하고, **Windows 바탕 화면** 노드를 펼친 다음, **WPF 응용 프로그램** 템플릿을 선택합니다.
 
 1. **BindingTest** 프로젝트 이름을 지정한 다음 **확인** 단추를 선택합니다.
 
-1. MainWindow.xaml.cs(또는 MainWindow.xaml.vb) 파일을 열고 다음 코드를 추가합니다. C#에서 `BindingTest` 네임스페이스에(파일의 마지막 닫는 괄호 앞에) 코드를 추가합니다. Visual Basic에서, 새 클래스를 추가합니다.
+1. **MainWindow.xaml.cs**(또는 **MainWindow.xaml.vb**) 파일을 열고 다음 코드를 추가합니다. C#에서 `BindingTest` 네임스페이스에(파일의 마지막 닫는 괄호 앞에) 코드를 추가합니다. Visual Basic에서, 새 클래스를 추가합니다.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -71,7 +73,7 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>ItemCount 속성을 TextBlock 컨트롤에 바인딩하려면
 
-1. [솔루션 탐색기]에서 MainWindow.xaml에 대한 바로 가기 메뉴를 연 다음 **뷰 디자이너**를 선택합니다.
+1. 솔루션 탐색기에서 **MainWindow.xaml**에 대한 바로 가기 메뉴를 열고 **뷰 디자이너**를 선택합니다.
 
 1. 도구 상자에서 [그리드](/uwp/api/Windows.UI.Xaml.Controls.Grid) 컨트롤을 선택하여 양식에 추가합니다.
 
@@ -81,7 +83,7 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
      다음 그림에서는 **ShoppingCart**가 선택된 **개체 선택** 대화 상자를 보여 줍니다.
 
-     ![개체 선택 대화 상자](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![개체 선택 대화 상자](../designers/media/blendselectobject.png)
 
 1. **도구 상자**에서, `TextBlock` 컨트롤을 선택하여 양식에 추가합니다.
 
@@ -91,7 +93,7 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
      다음 그림에서는 **ItemCount** 속성이 선택된 **데이터 바인딩 만들기** 대화 상자를 보여 줍니다.
 
-     ![데이터 바인딩 만들기 대화 상자](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![데이터 바인딩 만들기 대화 상자](../designers/media/xaml_create_data_binding.png)
 
 1. **F5** 키를 눌러 앱을 실행합니다.
 

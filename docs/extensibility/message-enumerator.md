@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140264"
 ---
 # <a name="message-enumerator"></a>메시지 열거자
 에 사용 되는 다음 플래그는 `TEXTOUTPROC` 함수를 호출할 때 IDE에서 제공 하는 콜백 함수는 [SccOpenProject](../extensibility/sccopenproject-function.md) (참조 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) 콜백에 대 한 자세한 내용은 함수 사용)입니다.  

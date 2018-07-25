@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f296349a6dfda80ff402b1ede0f1da591f6caa9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5772445bcfb201aef9a4248a77e28193429c9528
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924397"
 ---
 # <a name="toolbox"></a>도구 상자
 
@@ -29,18 +30,18 @@ ms.lasthandoff: 04/26/2018
 
 여러 컨트롤을 사용 중인 디자이너 화면에 끌어 놓은 다음 해당 컨트롤의 크기를 조정하고 배치할 수 있습니다.
 
-도구 상자는 XAML 파일의 디자이너 보기와 같은 디자이너 보기와 함께 나타납니다. 현재 디자이너에서 사용할 수 있는 컨트롤만 도구 상자에 표시됩니다. 도구 상자 내에서 검색하여 표시되는 항목을 추가로 필터링할 수 있습니다.
+도구 상자는 XAML 파일의 디자이너 보기와 같은 디자이너 보기와 함께 나타납니다. 현재 디자이너에서 사용할 수 있는 컨트롤만 **도구 상자**에 표시됩니다. **도구 상자** 내에서 검색하여 표시되는 항목을 추가로 필터링할 수 있습니다.
 
 > [!NOTE]
-> 일부 프로젝트 유형의 경우 도구 상자에 항목이 표시되지 않을 수 있습니다.
+> 일부 프로젝트 유형의 경우 **도구 상자**에 항목이 표시되지 않을 수 있습니다.
 
-프로젝트의 대상 .NET Framework 버전도 도구 상자에 표시되는 컨트롤 집합에 영향을 줍니다. 프로젝트 속성 페이지에서 .NET Framework의 다른 버전을 대상으로 지정하도록 프로젝트를 구성할 수 있습니다. **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음, 메뉴 모음에서 **프로젝트** > **\<프로젝트\> 속성**을 선택합니다. **응용 프로그램** 탭에서 **대상 프레임워크** 드롭다운을 사용합니다.
+프로젝트의 대상 .NET Framework 버전도 도구 상자에 표시되는 컨트롤 집합에 영향을 줍니다. 프로젝트 속성 페이지에서 .NET Framework의 다른 버전을 대상으로 지정하도록 프로젝트를 구성할 수 있습니다. **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음, 메뉴 모음에서 **프로젝트** > **프로젝트 이름 속성**을 선택합니다. **응용 프로그램** 탭에서 **대상 프레임워크** 드롭다운을 사용합니다.
 
-## <a name="managing-the-toolbox-window-and-its-controls"></a>도구 상자 창 및 해당 컨트롤 관리
+## <a name="manage-the-toolbox-window-and-its-controls"></a>도구 상자 창 및 해당 컨트롤 관리
 
-기본적으로 도구 상자는 Visual Studio IDE 왼쪽에 축소되어 있으며 커서를 위로 이동하면 표시됩니다. 도구 모음의 **핀** 아이콘을 클릭하여 도구 상자를 고정하면 커서를 이동해도 도구 상자가 열린 상태로 유지됩니다. 도구 상자 창의 도킹을 해제하고 화면의 원하는 위치로 끌어 올 수도 있습니다. 도구 모음을 마우스 오른쪽 단추로 클릭하고 옵션 중 하나를 선택하여 도구 상자를 도킹 및 도킹 해제하고 숨길 수 있습니다.
+기본적으로 **도구 상자**는 Visual Studio IDE 왼쪽에 축소되어 있으며 커서를 위로 이동하면 표시됩니다. 도구 모음의 **핀** 아이콘을 클릭하여 **도구 상자**를 고정하면 커서를 이동해도 도구 상자가 열린 상태로 유지됩니다. **도구 상자** 창의 도킹을 해제하고 화면의 원하는 위치로 끌어 올 수도 있습니다. 도구 모음을 마우스 오른쪽 단추로 클릭하고 옵션 중 하나를 선택하여 **도구 상자**를 도킹 및 도킹 해제하고 숨길 수 있습니다.
 
-상황에 맞는 메뉴에서 다음 명령을 사용하여 도구 상자 탭의 항목을 다시 정렬하거나 사용자 지정 탭과 항목을 추가할 수 있습니다.
+컨텍스트 메뉴에서 다음 명령을 사용하여 **도구 상자** 탭의 항목을 다시 정렬하거나 사용자 지정 탭과 항목을 추가할 수 있습니다.
 
 - **항목 이름 바꾸기** - 선택한 항목의 이름을 바꿉니다.
 
@@ -52,24 +53,26 @@ ms.lasthandoff: 04/26/2018
 
 - **항목 사전순 정렬** - 이름을 기준으로 항목을 정렬합니다.
 
-- **도구 모음 다시 설정** - 기본 도구 상자 설정 및 항목을 복원합니다.
+- **도구 모음 다시 설정** - 기본 **도구 상자** 설정 및 항목을 복원합니다.
 
-- **탭 추가** - 새 도구 상자 탭을 추가합니다.
+- **탭 추가** - 새 **도구 상자** 탭을 추가합니다.
 
 - **위로 이동** - 선택한 항목을 위로 이동합니다.
 
 - **아래로 이동** - 선택한 항목을 아래로 이동합니다.
 
-## <a name="creating-and-distributing-custom-toolbox-controls"></a>사용자 지정 도구 상자 컨트롤 만들기 및 배포
+## <a name="create-and-distribute-custom-toolbox-controls"></a>사용자 지정 도구 상자 컨트롤 만들기 및 배포
 
-[Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) 또는 [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md)를 기반으로 하는 프로젝트 템플릿으로 시작하는 사용자 지정 도구 상자 컨트롤을 만들 수 있습니다. 그런 후에 [도구 상자 컨트롤 설치 관리자](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)를 사용하여 사용자 지정 컨트롤을 팀원에게 배포하거나 웹에 게시할 수 있습니다.
+[Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) 또는 [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md)를 기반으로 하는 프로젝트 템플릿으로 시작하는 사용자 지정 **도구 상자** 컨트롤을 만들 수 있습니다. 그런 후에 [도구 상자 컨트롤 설치 관리자](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)를 사용하여 사용자 지정 컨트롤을 팀원에게 배포하거나 웹에 게시할 수 있습니다.
 
 ## <a name="help-on-toolbox-tabs"></a>도구 상자 탭에 대한 도움말
 
 다음 항목에서는 일부 사용 가능한 **도구 상자** 탭을 자세히 설명합니다.
 
 - [도구 상자, 데이터 탭](../../ide/reference/toolbox-data-tab.md)
-
 - [도구 상자, 구성 요소 탭](../../ide/reference/toolbox-components-tab.md)
-
 - [도구 상자, HTML 탭](../../ide/reference/toolbox-html-tab.md)
+
+## <a name="see-also"></a>참고 항목
+
+- [도구 상자 항목 선택, WPF 구성 요소](choose-toolbox-items-wpf-components.md)

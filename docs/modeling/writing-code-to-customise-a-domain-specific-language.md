@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965228"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>도메인 특정 언어를 지정 하기 위해 코드를 작성 합니다.
 

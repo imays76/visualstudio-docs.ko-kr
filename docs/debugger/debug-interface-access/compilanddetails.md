@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468810"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 컴파일 대상 정보도 기호 분할는 `SymTagCompiland` 태그 (낮은 세부 정보)와 `SymTagCompilandDetails` 태그 (높은 세부 정보). `SymTagCompilandDetails` 추가 기호를 로드 해야 합니다. 그러나 다양 한으로 사용할 수 없으면 컴파일 대상에 대 한 정보를 제공는 `SymTagCompiland` 기호입니다.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953042"
 ---
 # <a name="customizing-the-model-explorer"></a>모델 탐색기 사용자 지정
 변경할 수 있습니다 모양 및 동작 탐색기의 도메인 특정 언어 디자이너에 대 한 다음과 같습니다.

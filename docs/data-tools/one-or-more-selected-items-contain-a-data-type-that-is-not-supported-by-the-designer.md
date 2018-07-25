@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 710bd42ea87f4d994a3176a736a55f534d1d9fd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68d8675df54e37b9a6122b853e742addc0d8060c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089492"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>선택한 항목 중 하나 이상이 디자이너에서 지원되지 않는 데이터 형식을 포함하고 있습니다.
 
-하나 이상의 항목을 끌 **서버 탐색기**/**데이터베이스 탐색기** 에 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] 에서 지원 되지 않는 데이터 형식이 포함 되어는 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] 예를 들어 [CLR 사용자 정의 형식](/dotnet/framework/data/adonet/sql/clr-user-defined-types)합니다.
+끌어 온 하나 이상의 항목 **서버 탐색기** 또는 **데이터베이스 탐색기** 에 **O/R 디자이너** 에서 지원 되지 않는 데이터 형식을 포함 합니다 **O /R 디자이너**, 예를 들어 [CLR 사용자 정의 형식](/dotnet/framework/data/adonet/sql/clr-user-defined-types)합니다.
 
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
 1. 지원되지 않는 데이터 형식이 들어 있지 않은 테이블을 기초로 뷰를 만듭니다.
 
-2. 뷰를 끌어 놓을 **서버 탐색기**/**데이터베이스 탐색기** 디자이너에 끌어 합니다.
+2. 뷰를 끌어 **서버 탐색기** 하거나 **데이터베이스 탐색기** 디자이너로 합니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927061"
 ---
 # <a name="usage-warnings"></a>사용법 경고
 사용법 경고는.NET Framework의 적절 한 사용을 지원 합니다.

@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ea1d186f280c41d5330b3860f5b0802fb001bf84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487c5b4c730a4b49188857c2681aae6ff87a61e5
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237333"
 ---
 # <a name="unit-test-your-code"></a>코드 단위 테스트
 
@@ -60,4 +61,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>참고 항목
 
-- [코드 품질 향상](/visualstudio/test/improve-code-quality)
+- [코드 품질 향상](../test/improve-code-quality.md)

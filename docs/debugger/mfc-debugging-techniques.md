@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2ae47be54f175f798e321da7644540f8ea5049
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059318"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 디버깅 기술
 다음은 MFC 프로그램을 디버깅하는 데 유용한 디버깅 기술입니다.  
@@ -62,16 +63,16 @@ ms.lasthandoff: 04/18/2018
     -   [선택한 모듈의 디버그 정보를 사용하여 MFC 응용 프로그램 빌드](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC는 특별 한 [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) 소스 코드에 하드 코드 중단점에 대 한 함수:  
+ MFC는 특수 [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) 소스 코드에 하드 코드 중단점에 대 한 함수:  
   
-```  
+```cpp
 AfxDebugBreak( );  
   
 ```  
   
  Intel 플랫폼에서 `AfxDebugBreak` 는 커널 코드가 아닌 소스 코드에서 중단되는 다음과 같은 코드를 생성합니다.  
   
-```  
+```cpp
 _asm int 3  
 ```  
   
@@ -86,7 +87,7 @@ _asm int 3
   
  다음 예제에서는 **TRACE** 매크로 사용법을 몇 가지 보여 줍니다. `printf`와 같이 **TRACE** 매크로도 많은 인수를 처리할 수 있습니다.  
   
-```  
+```cpp
 int x = 1;  
 int y = 16;  
 float z = 32.0;  
@@ -101,7 +102,7 @@ TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
   
  TRACE 매크로 char * 및 wchar_t에 적절 하 게 처리\* 매개 변수입니다. 다음 예제에서는 TRACE 매크로와 다른 형식의 문자열 매개 변수를 함께 사용하는 방법을 보여 줍니다.  
   
-```  
+```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
   
 TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n", L"The number is:", 2);  
@@ -122,7 +123,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  `DEBUG_NEW` new **자리에**를 사용하기 위해 프로그램 전체를 다시 작성하는 대신, 다음과 같이 소스 파일에서 이 매크로를 정의할 수 있습니다.  
   
-```  
+```cpp
 #define new DEBUG_NEW  
 ```  
   
@@ -159,15 +160,15 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 메모리 스냅숏 만들기  
   
-1.  만들기는 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체와 호출 된 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) 멤버 함수입니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
+1.  만들기는 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체를 호출 합니다 [cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) 멤버 함수입니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
   
 2.  프로그램이 메모리 할당 작업과 할당 취소 작업을 수행하면 다른 `CMemoryState` 개체를 만들고 해당 개체에 대해 `Checkpoint` 를 호출합니다. 그러면 메모리 사용에 대한 두 번째 스냅숏이 만들어집니다.  
   
-3.  세 번째 `CMemoryState` 개체를 만들고 이전의 두 [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) 개체를 인수로 제공하여 `CMemoryState` 멤버 함수를 호출합니다. 두 메모리 상태가 서로 다르면 `Difference` 함수가 0이 아닌 값을 반환합니다. 이것은 할당이 취소되지 않은 메모리 블록이 있음을 나타냅니다.  
+3.  세 번째를 만들 `CMemoryState` 개체와 호출 해당 [cmemorystate:: Difference](/cpp/mfc/reference/cmemorystate-structure#difference) 멤버 함수에 인수로 제공 하 여 이전의 두 `CMemoryState` 개체입니다. 두 메모리 상태가 서로 다르면 `Difference` 함수가 0이 아닌 값을 반환합니다. 이것은 할당이 취소되지 않은 메모리 블록이 있음을 나타냅니다.  
   
      다음 예제는 해당 코드의 내용을 보여 줍니다.  
   
-    ```  
+    ```cpp
     // Declare the variables needed  
     #ifdef _DEBUG  
         CMemoryState oldMemState, newMemState, diffMemState;  
@@ -188,18 +189,18 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     메모리를 검사 문을으로 묶어야 사라졌는지 **#ifdef _DEBUG / #endif** 프로그램의 디버그 버전에만 컴파일되지 않도록 차단 합니다.  
+     메모리를 검사 문을으로 묶어야 **#ifdef _DEBUG / #endif** 프로그램의 디버그 버전 에서만에서 컴파일되지 않도록 차단 합니다.  
   
-     이제 메모리 누수가 확인되었으므로 다른 멤버 함수인 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) 를 사용하여 해당 위치를 찾을 수 있습니다.  
+     다른 멤버 함수를 사용할 수 이제 메모리 누수가 배웠으므로 [cmemorystate:: Dumpstatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) 찾을 수 있도록 합니다.  
   
  [항목 내용](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> 메모리 통계 보기  
- [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) 함수는 두 메모리 상태 개체를 살펴 상태의 시작과 끝 사이의 힙에서 할당 취소되지 않은 모든 개체를 검색합니다. 메모리 스냅숏을 만들고 `CMemoryState::Difference`를 사용하여 스냅숏을 비교한 후 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) 를 호출하여 할당이 취소되지 않은 개체에 대한 정보를 가져올 수 있습니다.  
+ 합니다 [cmemorystate:: Difference](/cpp/mfc/reference/cmemorystate-structure#difference) 함수는 두 메모리 상태 개체를 살펴를 상태의 시작과 끝 사이의 힙에서 할당 취소 되지 않은 모든 개체를 검색 합니다. 후 메모리 스냅숏을 비교 하를 사용 하 여 `CMemoryState::Difference`를 호출할 수 있습니다 [cmemorystate:: Dumpstatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) 할당이 취소 되지 않은 개체에 대 한 정보를 가져오려고 합니다.  
   
  다음 예제를 참조하세요.  
   
-```  
+```cpp  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -209,7 +210,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  다음 예제는 덤프 샘플을 보여 줍니다.  
   
-```  
+```cpp
 0 bytes in 0 Free Blocks  
 22 bytes in 1 Object Blocks  
 45 bytes in 4 Non-Object Blocks  
@@ -230,7 +231,7 @@ Total allocations: 67 bytes
  [항목 내용](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> 개체 덤프 수행  
- MFC 프로그램에서 사용할 수 있습니다 [cmemorystate:: Dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) 할당이 취소 되지 않은 힙에서 모든 개체에 대 한 설명을 덤프할 합니다. `DumpAllObjectsSince` 는 마지막 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint)를 단순히 호출할 뿐입니다. `Checkpoint` 를 호출할 수 없는 경우 `DumpAllObjectsSince` 가 현재 메모리에 있는 모든 개체와 비개체를 덤프합니다.  
+ MFC 프로그램에서 사용할 수 있습니다 [cmemorystate:: Dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) 할당이 취소 되지 않은 힙에서 모든 개체의 설명을 덤프할 수 있습니다. `DumpAllObjectsSince` 마지막 할당 된 모든 개체를 덤프 [cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)합니다. `Checkpoint` 를 호출할 수 없는 경우 `DumpAllObjectsSince` 가 현재 메모리에 있는 모든 개체와 비개체를 덤프합니다.  
   
 > [!NOTE]
 >  MFC 개체를 덤프하려면 먼저 [진단 추적을 활성화](#BKMK_Enabling_Memory_Diagnostics)해야 합니다.  
@@ -240,7 +241,7 @@ Total allocations: 67 bytes
   
  다음 코드는 두 메모리 상태를 비교하여 메모리 누수를 테스트하고 누수가 탐지되면 모든 개체를 덤프합니다.  
   
-```  
+```cpp
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -250,7 +251,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  덤프 내용은 다음과 같습니다.  
   
-```  
+```cmd
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -278,7 +279,7 @@ Phone #: 581-0215
 ####  <a name="BKMK_Interpreting_memory_dumps"></a> 메모리 덤프 해석  
  이 개체 덤프를 자세히 살펴보면 다음과 같습니다.  
   
-```  
+```cmd
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
 {4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
 {3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
@@ -293,7 +294,7 @@ Phone #: 581-0215
   
  이 덤프를 생성한 프로그램에는 스택과 힙에 각각 하나씩 두 개의 명시적 할당이 있습니다.  
   
-```  
+```cpp
 // Do your memory allocations and deallocations.  
 CString s("This is a frame variable");  
 // The next object is a heap object.  
@@ -302,7 +303,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` 생성자는 `char`의 포인터가 되는 세 인수를 가지며, 이들 인수는 `CString` 멤버 변수를 초기화하는 데 사용됩니다. 메모리 덤프에서 `CPerson` 개체와 세 개의 비개체 블록(3, 4, 5)을 볼 수 있습니다. 이들은 `CString` 멤버 변수 문자를 가지고 있으며 `CPerson` 개체 소멸자를 호출할 때 삭제되지 않습니다.  
   
- 블록 번호 2는 `CPerson` 개체 자신입니다. `$51A4` 는 블록 주소로서 다음에 개체 내용이 표시되며, 개체 내용은 `CPerson`DumpAllObjectsSince`Dump` 가 호출할 때 [::](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince)를 사용하여 출력됩니다.  
+ 블록 번호 2는 `CPerson` 개체 자신입니다. `$51A4` 블록의 주소를 나타내고 개체에 의해 출력 된 내용의 뒤 `CPerson`::`Dump` 호출한 경우 [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)합니다.  
   
  블록 번호 1은 `CString` 프레임 변수와 연결되어 있다고 볼 수 있습니다. 해당 시퀀스 번호와 크기가 프레임 `CString` 변수에 있는 문자의 번호와 일치하기 때문입니다. 프레임이 범위를 벗어나면 프레임에 할당된 변수는 자동으로 할당 취소됩니다.  
   
@@ -310,7 +311,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  프레임 변수가 범위를 벗어나면 할당이 자동으로 취소되기 때문에 프레임 변수와 연결된 힙 개체에 대해서는 신경쓸 필요가 없습니다. 메모리 진단 덤프의 혼란을 막으려면 `Checkpoint` 호출을 프레임 변수의 범위 밖에 배치해야 합니다. 예를 들어, 다음과 같이 이전 할당 코드를 범위 괄호로 묶어 주십시오.  
   
-```  
+```cpp
 oldMemState.Checkpoint();  
 {  
     // Do your memory allocations and deallocations ...  
@@ -323,7 +324,7 @@ newMemState.Checkpoint();
   
  범위 괄호를 추가하면 이 예제의 메모리 덤프가 다음과 같이 표시됩니다.  
   
-```  
+```cmd 
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -338,7 +339,7 @@ Phone #: 581-0215
   
  **비개체 할당**  
   
- 일부 할당은 `CPerson`과 같은 개체이며 일부는 비개체 할당입니다. "비개체 할당" 이란 개체에서 파생 되지 않은 `CObject` 또는와 같은 기본 C 형식의 할당 `char`, `int`, 또는 `long`합니다. **CObject**파생 클래스가 내부 버퍼와 같은 추가 공간을 할당하는 경우 해당 개체는 개체 할당과 비개체 할당을 모두 표시합니다.  
+ 일부 할당은 `CPerson`과 같은 개체이며 일부는 비개체 할당입니다. "비개체 할당" 이란 개체에서 파생 되지 않은 `CObject` 와 같은 기본 C 형식의 할당 `char`를 `int`, 또는 `long`합니다. **CObject**파생 클래스가 내부 버퍼와 같은 추가 공간을 할당하는 경우 해당 개체는 개체 할당과 비개체 할당을 모두 표시합니다.  
   
  **메모리 누수 방지**  
   
@@ -346,7 +347,7 @@ Phone #: 581-0215
   
  그러나 힙에 할당된 개체는 명시적으로 삭제하여 메모리 누수를 방지해야 합니다. 이전 예제의 마지막 메모리 누수를 해결하려면 힙에 할당된 `CPerson` 개체를 다음과 같이 삭제하십시오.  
   
-```  
+```cpp  
 {  
     // Do your memory allocations and deallocations.  
     CString s("This is a frame variable");  
@@ -359,7 +360,7 @@ Phone #: 581-0215
  [항목 내용](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> 개체 덤프 사용자 지정  
- [CObject](/cpp/mfc/reference/cobject-class)에서 클래스를 파생시키는 경우 `Dump` DumpAllObjectsSince [를 사용하여](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) 출력 창 [으로 개체를 덤프할 때](../ide/reference/output-window.md)멤버 함수를 재정의하여 추가 정보를 제공할 수 있습니다.  
+ 클래스를 파생 하는 경우 [CObject](/cpp/mfc/reference/cobject-class)를 재정의할 수 있습니다 합니다 `Dump` 멤버 함수를 사용 하는 경우 추가 정보를 제공 [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) 합니다 로개체를덤프할[출력 창](../ide/reference/output-window.md)합니다.  
   
  `Dump` 함수는 덤프 컨텍스트([CDumpContext](/cpp/mfc/reference/cdumpcontext-class))에 개체 멤버 변수의 텍스트 표현을 작성합니다. 덤프 컨텍스트는 I/O 스트림과 유사합니다. 추가 연산자(**<<**)를 사용하여 `CDumpContext`를 단순히 호출할 뿐입니다.  
   
@@ -367,7 +368,7 @@ Phone #: 581-0215
   
  `Dump` 함수 선언은 다음과 같습니다.  
   
-```  
+```cpp  
 class CPerson : public CObject  
 {  
 public:  
@@ -385,7 +386,7 @@ public:
   
  다음 예제에서는 `Dump` 함수가 먼저 기본 클래스의 `Dump` 함수를 호출합니다. 그런 다음 진단 스트림에 멤버 값과 함께 각 멤버 변수에 대한 간단한 설명을 씁니다.  
   
-```  
+```cpp  
 #ifdef _DEBUG  
 void CPerson::Dump( CDumpContext& dc ) const  
 {  
@@ -401,7 +402,7 @@ void CPerson::Dump( CDumpContext& dc ) const
   
  `CDumpContext` 인수를 추가하여 어디로 덤프 출력할지 지정해야 합니다. MFC의 디버그 버전에서는 미리 정의된 `CDumpContext` 개체인 `afxDump` 를 사용하여 출력을 디버거로 보냅니다.  
   
-```  
+```cpp 
 CPerson* pMyPerson = new CPerson;  
 // Set some fields of the CPerson object.  
 //...  
@@ -416,9 +417,9 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> MFC 디버그 빌드 크기 줄이기  
  대형 MFC 응용 프로그램의 디버그 정보는 디스크 공간을 많이 차지할 수 있습니다. 다음 절차 중 하나를 사용하여 크기를 줄일 수 있습니다.  
   
-1.  사용 하 여 MFC 라이브러리를 다시 작성은 [/Z7, /Zi, /ZI (디버깅 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 옵션을 대신 **/Z7**합니다. 이 옵션은 전체 라이브러리의 디버그 정보가 있는 프로그램 데이터베이스(PDB) 파일 하나를 빌드하여 중복을 없애고 공간을 절약합니다.  
+1.  사용 하 여 MFC 라이브러리를 다시 작성 합니다 [/z7, /Zi, /ZI (디버그 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 옵션을 대신 **/z7**합니다. 이 옵션은 전체 라이브러리의 디버그 정보가 있는 프로그램 데이터베이스(PDB) 파일 하나를 빌드하여 중복을 없애고 공간을 절약합니다.  
   
-2.  디버그 정보 없이 MFC 라이브러리를 다시 작성 (없음 [/Z7, /Zi, /ZI (디버깅 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 옵션). 이 경우 디버그 정보가 부족하여 MFC 라이브러리 코드의 디버거 기능을 대부분 사용할 수 없지만 MFC 라이브러리는 이미 모두 디버깅된 상태이므로 문제가 되지 않습니다.  
+2.  디버그 정보 없이 MFC 라이브러리를 다시 작성 (없습니다 [/z7, /Zi, /ZI (디버그 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 옵션). 이 경우 디버그 정보가 부족하여 MFC 라이브러리 코드의 디버거 기능을 대부분 사용할 수 없지만 MFC 라이브러리는 이미 모두 디버깅된 상태이므로 문제가 되지 않습니다.  
   
 3.  아래에 설명된 대로 선택한 모듈의 디버그 정보로 사용자 고유의 응용 프로그램을 빌드합니다.  
   
@@ -433,9 +434,9 @@ pMyPerson->Dump( afxDump );
   
 3.  먼저 새 프로젝트 구성을 만듭니다.  
   
-    1.  에  **\<프로젝트 > 속성 페이지** 대화 상자를 클릭는 **Configuration Manager** 단추입니다.  
+    1.  에  **\<프로젝트 > 속성 페이지** 대화 상자에서 클릭 합니다 **Configuration Manager** 단추입니다.  
   
-    2.  [구성 관리자 대화 상자](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)의 표에서 원하는 프로젝트를 찾습니다. 에 **구성** 열에서 선택  **\<새로 만들기 … >**합니다.  
+    2.  [구성 관리자 대화 상자](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)의 표에서 원하는 프로젝트를 찾습니다. 에 **Configuration** 열에서 선택  **\<새로 만들기... >** 합니다.  
   
     3.  [새 프로젝트 구성 대화 상자](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)의 **새 프로젝트 구성** 상자에 새 구성의 이름을 ?부분 디버그?등과 같이 입력합니다.  
   
@@ -471,11 +472,11 @@ pMyPerson->Dump( afxDump );
   
     4.  **속성 페이지** 대화 상자의 **구성 속성** 폴더에서 **C/C++** 폴더를 연 다음 **일반** 범주를 선택합니다.  
   
-    5.  속성 표에서 찾을 **디버깅 정보 형식.**  
+    5.  속성 표에서 찾을 **디버그 정보 형식입니다.**  
   
     6.  **디버깅 정보 형식** 설정을 클릭하고 디버그 정보에 대해 원하는 옵션(대개 **/ZI**)을 선택합니다.  
   
-    7.  응용 프로그램 마법사로 만든 응용 프로그램을 사용하거나 헤더를 미리 컴파일한 경우, 다른 모듈을 컴파일하기 전에 미리 컴파일한 헤더를 사용하지 않도록 하거나 다시 컴파일해야 합니다. 그렇지 않으면 경고 C4650과 오류 메시지 C2855를 받게 됩니다. 변경 하 여 미리 컴파일된 헤더를 해제할 수 있습니다는 **미리 컴파일된 헤더 만들기/사용** 에서 설정 된  **\<프로젝트 > 속성** 대화 상자 (**구성 속성**  폴더 **C/c + +** 하위 폴더를 **미리 컴파일된 헤더** 범주)입니다.  
+    7.  응용 프로그램 마법사로 만든 응용 프로그램을 사용하거나 헤더를 미리 컴파일한 경우, 다른 모듈을 컴파일하기 전에 미리 컴파일한 헤더를 사용하지 않도록 하거나 다시 컴파일해야 합니다. 그렇지 않으면 경고 C4650과 오류 메시지 C2855를 받게 됩니다. 변경 하 여 미리 컴파일된 헤더를 해제할 수 있습니다 합니다 **미리 컴파일된 헤더 만들기/사용** 에서 설정 된  **\<프로젝트 > 속성** 대화 상자 (**구성 속성**  폴더를 **C/c + +** 하위 폴더를 **미리 컴파일된 헤더** 범주).  
   
 7.  **빌드** 메뉴에서 **빌드** 를 선택하여 날짜가 지난 프로젝트 파일을 다시 빌드합니다.  
   

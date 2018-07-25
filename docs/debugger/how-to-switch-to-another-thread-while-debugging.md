@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475687"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>방법: Visual Studio에서 디버깅 하는 동안 다른 스레드로 전환
 다중 스레드 응용 프로그램을 디버깅할 때는 다른 스레드에 있는 작업 한 스레드에서 전환 하려면 여러 가지 방법 중 하나를 사용할 수 있습니다.

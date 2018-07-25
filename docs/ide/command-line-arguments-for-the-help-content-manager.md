@@ -15,6 +15,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704826"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>도움말 콘텐츠 관리자에 대한 명령줄 인수
 

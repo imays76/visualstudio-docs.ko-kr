@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131593"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>언어 서비스 및 편집기 확장 시작
 언어 서비스 기능 개요, 중괄호 일치, IntelliSense, 전구 등 선택한 프로그래밍 언어에 어떤 콘텐츠 형식 추가 하려면 편집기 확장을 사용할 수 있습니다. 모양 및 동작의 예를 들어 텍스트 색 지정, 여백, 장식, 및 기타 시각적 요소 Visual Studio 편집기에서 사용자 지정할 수도 있습니다. 사용자 고유의 유형의 콘텐츠를 정의 하 고 모양 및 동작 콘텐츠에 표시 되는 텍스트 뷰를 지정할 수도 있습니다.  
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="running-extensions-in-the-experimental-instance"></a>실험적 인스턴스에서 실행 중인 확장  
  (Windows Vista 및 Windows 7)에서 다음 실험 폴더에 배포 하 여 확장을 개발 하는 동안 Visual Studio 작업 버전을 분리 수 있습니다.:  
   
- *% LOCALAPPDATA %*\VisualStudio\10.0Exp\Extensions\\*회사*\\*확장 Id*  
+ *% LOCALAPPDATA %* \VisualStudio\10.0Exp\Extensions\\*회사*\\*확장 Id*  
   
  여기서 *% LOCALAPPDATA %* 로그온 한 사용자의 이름인 *회사* 확장명을 소유 하는 회사의 이름 및 *확장 Id* 확장의 ID입니다.  
   

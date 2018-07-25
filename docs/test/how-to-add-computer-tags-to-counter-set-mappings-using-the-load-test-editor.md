@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968137"
 ---
 # <a name="how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 카운터 집합 매핑에 컴퓨터 태그 추가
 

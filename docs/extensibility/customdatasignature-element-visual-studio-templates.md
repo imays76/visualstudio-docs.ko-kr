@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097330"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature 요소(Visual Studio 템플릿)
 사용자 지정 데이터를 찾을 텍스트 서명을 지정 합니다.  

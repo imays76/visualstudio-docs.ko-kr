@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704079"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 빌드, 정리, 다시 빌드 또는 배포하도록 솔루션 구성 내에서 단일 프로젝트를 식별합니다.

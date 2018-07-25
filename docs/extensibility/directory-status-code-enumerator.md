@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126086"
 ---
 # <a name="directory-status-code-enumerator"></a>디렉터리 상태 코드 열거자
 `SccDirStatus` 소스 제어 시스템의 디렉터리의 상태를 지정 하는 명명 된 상수 값을 포함 하는 열거자입니다. 이 열거형은에서 사용 된 [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)합니다. 이 옵션은 소스 제어 플러그 인 API의 버전 1.2에서에서 도입 되었습니다.  

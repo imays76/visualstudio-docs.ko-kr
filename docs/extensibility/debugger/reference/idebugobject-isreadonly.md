@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113665"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 이 개체는 읽기 전용으로 설정 하는 경우를 결정 합니다.  

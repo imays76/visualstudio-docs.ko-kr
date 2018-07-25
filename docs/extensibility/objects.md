@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137179"
 ---
 # <a name="objects"></a>개체
 다음 참조 정보는 핵심 텍스트 편집기의 인스턴스를 만드는 데 사용 되는 개체를 설명 합니다.  

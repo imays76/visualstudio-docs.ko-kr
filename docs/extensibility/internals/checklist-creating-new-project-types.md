@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131991"
 ---
 # <a name="checklist-creating-new-project-types"></a>검사 목록: 새 프로젝트 형식 만들기
 새 프로젝트 형식을 생성 하기 위한 몇 가지 작업을 완료 해야 합니다. 다음 검사 목록을 해당 작업에 대 한 지침을 제공합니다.  

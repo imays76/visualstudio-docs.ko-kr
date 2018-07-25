@@ -19,6 +19,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34064393"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Get 메서드를 속성으로 변환 / 속성을 Get 메서드로 변환 / 리팩터링
 

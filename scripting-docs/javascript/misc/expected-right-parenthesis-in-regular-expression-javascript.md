@@ -1,13 +1,13 @@
 ---
-title: "예상 &#39;) &#39; 정규식 (JavaScript)에서 | Microsoft Docs"
-ms.custom: 
+title: 예상 &#39;) &#39; 정규식 (JavaScript)에서 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5020
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 2087ba1d-9783-4d40-b609-e8542f579f7f
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633883"
 ---
 # <a name="expected-3939-in-regular-expression-javascript"></a>예상 &#39;) &#39; 정규식 (JavaScript)
 정규식 캡처, 어설션 또는 그룹을 만들려고 하지만 닫는 괄호를 포함 하지 않았습니다. 괄호는 정규식의 몇 가지 목적이 있습니다. 기본적으로, 사용 되는 하위 식에서 어설션을 지정 하거나 항목으로 하나의 단위로 처리 될 수 있도록 패턴을 그룹화 하 여 캡처 *, +,? 등입니다.  

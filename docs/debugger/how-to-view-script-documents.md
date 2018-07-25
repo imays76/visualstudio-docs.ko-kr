@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474731"
 ---
 # <a name="how-to-view-script-documents"></a>방법: 스크립트 문서 보기
 이전 버전의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 서버 쪽 스크립트에서 생성된 클라이언트 쪽 스크립트 파일이 스크립트 탐색기 창에 나타납니다. 스크립트 탐색기 창은 종종 숨겨지므로 클라이언트 쪽 스크립트를 사용할 수 있는지 확인할 수 없는 경우도 있습니다.  

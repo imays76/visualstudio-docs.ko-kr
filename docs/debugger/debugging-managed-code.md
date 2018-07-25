@@ -18,20 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 227dfcf82a179a83428900f75d0b5c9b85248479
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179481"
 ---
 # <a name="debugging-managed-code"></a>관리 코드 디버깅
 
-이 단원에서는 Visual Basic, C# 및 C++ 등 공용 언어 런타임을 대상으로 하는 언어로 작성된 관리되는 응용 프로그램의 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. 자세한 내용은 참조 [디버거를 사용 하 여](../debugger/debugger-basics.md)합니다.
+이 단원에서는 Visual Basic, C# 및 C++ 등 공용 언어 런타임을 대상으로 하는 언어로 작성된 관리되는 응용 프로그램의 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. 자세한 내용은 [디버거를 사용 하 여](../debugger/getting-started-with-the-debugger.md)입니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
 [출력 창에 표시되는 진단 메시지](../debugger/diagnostic-messages-in-the-output-window.md)  
-설명의 <xref:System.Diagnostics.Debug> 및 <xref:System.Diagnostics.Trace> 클래스는 런타임에 메시지를 작성할 수 있습니다는 **출력** 창. 이러한 클래스에는 실행을 중단하지 않고 정보를 출력하는 출력 메서드와 지정된 조건이 실패할 경우 실행을 중단하고 정보를 출력하는 출력 메서드가 포함되어 있습니다.
+에 대해 설명 합니다 <xref:System.Diagnostics.Debug> 및 <xref:System.Diagnostics.Trace> 클래스는 런타임에 메시지를 작성할 수 있습니다 합니다 **출력** 창. 이러한 클래스에는 실행을 중단하지 않고 정보를 출력하는 출력 메서드와 지정된 조건이 실패할 경우 실행을 중단하고 정보를 출력하는 출력 메서드가 포함되어 있습니다.
 
 [관리 코드에 어설션 사용](../debugger/assertions-in-managed-code.md)  
 `Assert` 메서드에 인수로 지정하는 조건을 테스트하는 관리 코드의 어설션에 대해 설명합니다. 또한 예제 코드, <xref:System.Diagnostics.Debug> 및 <xref:System.Diagnostics.Trace> 클래스 메서드의 사용 정보, 코드의 디버그 및 릴리스 버전에 대한 고려 사항, 의도하지 않은 연산, 어설션 인수, 어설션 동작 사용자 지정, 구성 파일 등의 내용을 제공합니다.
@@ -49,7 +50,7 @@ Windows Form 만들기 및 Windows Form 디버깅을 위한 단계별 지침을 
 혼합 모드 응용 프로그램을 디버깅하는 방법에 대해 설명합니다. 혼합 모드 응용 프로그램은 네이티브 코드와 관리 코드가 결합된 응용 프로그램입니다.
 
 [오류: 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
-관리 되는 코드를 디버깅 하려고 할 경우에 발생 하는 오류 메시지에 설명 된 [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], 또는 디버그 모드에서 시작 된 Windows NT 시스템입니다.
+관리 되는 코드를 디버그 하려는 경우에 발생 하는 오류 메시지에 설명 합니다는 [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], 또는 디버그 모드에서 시작 된 Windows NT 시스템입니다.
 
 [JIT 최적화 및 디버깅](../debugger/jit-optimization-and-debugging.md)  
 디버깅 시 JIT 최적화의 효과에 대해 설명합니다.
@@ -58,11 +59,11 @@ Windows Form 만들기 및 Windows Form 디버깅을 위한 단계별 지침을 
 LINQ 쿼리에 대한 디버깅 기술에 대해 설명합니다.
 
 [연습: 병렬 응용 프로그램 디버그](../debugger/walkthrough-debugging-a-parallel-application.md)  
-사용 하는 방법에 설명 된 **병렬 작업** 및 **병렬 스택** 도구 창을 병렬 응용 프로그램의 디버깅.
+사용 하는 방법에 설명 합니다 **병렬 작업** 및 **병렬 스택** 병렬 응용 프로그램을 디버깅 하는 windows 도구입니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[IntelliTrace](../debugger/intellitrace.md) IntelliTrace로 응용 프로그램의 실행 내역을 기록 하 여 빠르고 쉽게 버그를 찾습니다. 기록된 이벤트 및 호출에서 앞뒤로 이동하며 주요 시점의 응용 프로그램 상태를 확인합니다. 여러 중단점을 설정하거나 자주 응용 프로그램을 다시 시작하지 않고 코드를 디버깅합니다. Visual Studio Enterprise를 필요합니다.
+[IntelliTrace](../debugger/intellitrace.md) IntelliTrace 사용 하 여 앱의 실행 기록을 기록 하 여 빠르고 쉽게 버그를 찾습니다. 기록된 이벤트 및 호출에서 앞뒤로 이동하며 주요 시점의 응용 프로그램 상태를 확인합니다. 여러 중단점을 설정하거나 자주 응용 프로그램을 다시 시작하지 않고 코드를 디버깅합니다. Visual Studio Enterprise에 필요합니다.
 
 [응용 프로그램 추적 및 조율](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
 실행 중인 응용 프로그램의 실행을 모니터링하는 방법인 추적과 코드의 전략적 위치에 추적 문을 배치하는 방법인 조율에 대해 설명합니다. 이 항목에서는 계측 및 추적, 추적 스위치, 추적 수신기, 응용 프로그램의 코드 추적, 응용 프로그램 코드에 추적 문 추가, <xref:System.Diagnostics.Debug> 및 <xref:System.Diagnostics.Trace>를 사용하는 조건부 컴파일 등을 소개하는 정보로 연결되는 링크도 제공합니다.
@@ -87,7 +88,7 @@ LINQ 쿼리에 대한 디버깅 기술에 대해 설명합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[연습: 사용자 지정 Windows Forms 컨트롤 디버깅 디자인 타임에](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+[연습: 디자인 타임에 컨트롤을 Forms 사용자 지정 Windows 디버깅](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 [디버거 보안](../debugger/debugger-security.md)
-[Visual Studio의 디버깅](../debugger/index.md) 
+[Visual Studio에서 디버깅](../debugger/index.md) 
  [ 디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)

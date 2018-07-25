@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474744"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>인터페이스(디버그 인터페이스 액세스 SDK)
 메서드는 내용의 고 Vtable 순서의 인터페이스 페이지에는 테이블의 각 인터페이스에서 사전순으로 나열 됩니다.  

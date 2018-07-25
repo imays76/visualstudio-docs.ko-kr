@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132933"
 ---
 # <a name="options-and-options-pages"></a>옵션 및 옵션 페이지
 클릭 하면 **옵션** 에 **도구** 메뉴가 열립니다는 **옵션** 대화 상자. 이 대화 상자에서 옵션 전체적으로 옵션 페이지 라고 합니다. 탐색 창에서 트리 컨트롤 옵션 범주를 포함 되 고 모든 범주 옵션 페이지를 포함 합니다. 페이지를 선택 하면 해당 옵션이 오른쪽 창에 나타납니다. 이러한 페이지에는 VSPackage의 상태를 결정 하는 옵션의 값을 변경할 수 있습니다.  

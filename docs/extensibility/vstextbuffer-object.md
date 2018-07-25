@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141036"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 개체
 텍스트 버퍼 개체는 파일와 일반적으로 연결 되는 유니코드 텍스트 스트림을 나타냅니다. A <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 개체는 마법사의 경우 핵심 편집기의 컨텍스트 외부에서 사용할 수 있습니다.  

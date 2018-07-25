@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115901"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 선택 하 고 핵심 서버와 상호 작용 포트 공급자에 대 한 지원을 제공 합니다.  

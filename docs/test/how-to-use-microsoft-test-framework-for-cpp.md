@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845495"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio에서 Microsoft Unit Testing Framework for C++ 사용
 
@@ -31,7 +32,7 @@ DLL에서 내보내지 않은 함수 테스트 등, 일부 경우에는 테스�
 
     3.  다음 행에서 아래쪽 화살표를 클릭하고 **<Edit>** 를 선택합니다.
 
-        |||
+        |디렉터리|속성|
         |-|-|
         |**포함 디렉터리**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**라이브러리 디렉터리**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -55,7 +56,7 @@ DLL에서 내보내지 않은 함수 테스트 등, 일부 경우에는 테스�
 2.  테스트 탐색기에서 **모두 실행**을 선택하거나 실행하려는 특정 테스트를 선택합니다. 테스트를 마우스 오른쪽 단추로 클릭하면 중단점을 사용하는 디버그 모드에서 실행 등, 다른 옵션이 표시됩니다.
 3. **출력 창**의 드롭다운에서 **테스트**를 선택하여 `Logger` 클래스가 작성한 메시지를 확인합니다.
 
-  ![테스트 메시지를 표시하는 C++ 출력 창](media/cpp-test-output-window.png "출력 창")
+  ![테스트 메시지를 표시하는 C++ 출력 창](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>그룹화를 사용하도록 설정하는 특성 정의
 **테스트 탐색기**에서 테스트를 분류 및 그룹화할 수 있게 테스트 메서드에 대한 특성을 정의할 수 있습니다. 특성(trait)을 정의하려면 `TEST_METHOD_ATTRIBUTE` 매크로를 사용합니다. 예를 들어 `TEST_MY_TRAIT`라는 특성(trait)을 정의하는 경우 다음과 같습니다.
@@ -66,7 +67,7 @@ DLL에서 내보내지 않은 함수 테스트 등, 일부 경우에는 테스�
 
  단위 테스트에서 정의된 특성(trait)을 사용하려면 다음과 같습니다.
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)

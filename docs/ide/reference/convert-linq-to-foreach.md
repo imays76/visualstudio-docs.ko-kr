@@ -16,6 +16,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268327"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>LINQ를 foreach 문으로 변환하도록 리팩터링
 

@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bc8ffe0f6d3cdc0cd572c39dedb5f059e63525cb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1bb6779e0e8174dd10f209d9825ffb861d00455d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235428"
 ---
-# <a name="creating-r-markdown-documents"></a>R Markdown 문서 만들기
+# <a name="create-r-markdown-documents"></a>R Markdown 문서 만들기
 
 [R Markdown](https://rmarkdown.rstudio.com/)은 R의 분석을 고품질 문서, 보고서, 프레젠테이션 및 대시보드로 전환하는 문서 형식입니다.
 
@@ -34,7 +35,7 @@ RTVS(Visual Studio용 R 도구)는 R Markdown 항목 템플릿, 편집기 지원
     install.packages("rmarkdown")
 
     ```
-1. **파일 > 새로 만들기 > 파일** 메뉴 명령을 사용하고 목록에서 **R > R Markdown**을 선택하여 새로운 R Markdown 파일을 만듭니다. 프로젝트의 컨텍스트에서 솔루션 탐색기의 프로젝트를 마우스 오른쪽 단추로 클릭하고 **R Markdown 추가**를 선택(하거나 **추가 > 새 항목...** 을 선택하고 목록에서 **R Markdown**을 선택)합니다.
+1. **파일** > **새로 만들기** > **파일** 메뉴 명령을 사용하고 목록에서 **R** > **R Markdown**을 선택하여 새로운 R Markdown 파일을 만듭니다. 프로젝트의 컨텍스트에서 솔루션 탐색기의 프로젝트를 마우스 오른쪽 단추로 클릭하고 **R Markdown 추가**를 선택(또는 **추가** > **새 항목**을 선택하고 목록에서 **R Markdown**을 선택)합니다.
 
 1. 새 파일의 기본 콘텐츠는 다음과 같습니다.
 
@@ -64,8 +65,8 @@ RTVS(Visual Studio용 R 도구)는 R Markdown 항목 템플릿, 편집기 지원
 
 ## <a name="previews"></a>미리 보기
 
-Visual Studio 2017 버전 15.5 이상은 R Markdown에 대한 실시간 미리 보기를 자동으로 제공합니다. 편집기와 미리 보기 간에 자동 동기화를 설정하려면 **R 도구 > Markdown > 자동 동기화**(Ctrl+Shift+Y)를 선택합니다. 자동 동기화를 사용하지 않는 경우 **R 도구 > Markdown > R Markdown 미리 보기 다시 로드**를 사용하여 미리 보기를 새로 고칠 수 있습니다.
+Visual Studio 2017 버전 15.5 이상은 R Markdown에 대한 실시간 미리 보기를 자동으로 제공합니다. 편집기와 미리 보기 간에 자동 동기화를 설정하려면 **R 도구** > **Markdown** > **자동 동기화**(**Ctrl**+**Shift**+**Y**)를 선택합니다. 자동 동기화를 사용하지 않는 경우 **R 도구** > **Markdown** > **R Markdown 미리 보기 다시 로드**를 사용하여 미리 보기를 새로 고칠 수 있습니다.
 
-편집기에서 마우스 오른쪽 단추로 클릭하고 **미리 보기** 명령 중 하나를 선택하여 HTML, PDF 및 Microsoft Word 형식의 파일을 미리 볼 수 있습니다. 동일한 명령을 **R 도구 > Markdown** 메뉴에서 사용할 수 있습니다. (이전 버전의 Visual Studio인 경우 이러한 명령은 **R 도구 > 게시** 메뉴에 있습니다.)
+편집기에서 마우스 오른쪽 단추로 클릭하고 **미리 보기** 명령 중 하나를 선택하여 HTML, PDF 및 Microsoft Word 형식의 파일을 미리 볼 수 있습니다. 동일한 명령을 **R 도구** > **Markdown** 메뉴에서 사용할 수 있습니다. (이전 버전의 Visual Studio인 경우 이러한 명령은 **R 도구** > **게시** 메뉴에 있습니다.)
 
 ![R Markdown 실시간 미리 보기 및 기타 미리 보기 메뉴 명령](media/rmarkdown-live-preview.png)

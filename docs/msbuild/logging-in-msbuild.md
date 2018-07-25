@@ -12,16 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80a73f2433f942c35413f77143203c06cd9447a5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d866f0bc3181b6f338ec0b07df0ad5ff0e51010
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079163"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 로그인
 로깅은 빌드의 진행률을 모니터링할 수 있는 방법을 제공합니다. 로깅은 빌드 이벤트, 메시지, 경고 및 오류를 로그 파일에 캡처합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 로깅의 다양한 측면에 대해 설명합니다.  
   
@@ -37,6 +38,6 @@ ms.lasthandoff: 04/19/2018
  [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)  
  사용자 지정 전달 로거를 만드는 방법을 간략하게 설명합니다.  
   
-## <a name="related-sections"></a>관련 단원  
+## <a name="see-also"></a>참고 항목  
  [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  여러 프로젝트를 병렬로 실행하여 더 빠르게 여러 프로젝트를 빌드하는 방법에 대해 설명합니다.

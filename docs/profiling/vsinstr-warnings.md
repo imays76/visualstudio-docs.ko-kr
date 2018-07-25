@@ -16,19 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffe35d7b2467147c5f9f244357371f2d5dadb76b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a306276e015d06fe3becf297d0bb5834f640a1a7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571648"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 경고
-다음 표에는 VSInstr.exe 도구에서 발생되는 경고가 나와 있습니다. 경고 번호와 NOWARN 옵션을 함께 사용하여 경고가 표시되지 않도록 할 수 있습니다.  
+다음 표에는 *VSInstr.exe* 도구에서 발생되는 경고가 나와 있습니다. 경고 번호와 NOWARN 옵션을 함께 사용하여 경고가 표시되지 않도록 할 수 있습니다.  
   
 |경고 번호|설명|  
 |--------------------|-----------------|  
 |**VSP2000**|내부 오류입니다. 이 실행 파일에 대한 모듈 파일 이름을 가져올 수 없습니다.|  
-|**VSP2001**|\<assembly name>은 강력한 이름의 어셈블리입니다. 다시 서명해야 실행할 수 있습니다.<br /><br /> 이 경고는 서명된 어셈블리를 계측하는 경우에 발생합니다. sn.exe 도구를 사용하여 이진 파일에 다시 서명하거나 강력한 이름 요구를 일시적으로 해제할 수 있습니다. 자세한 내용은 [Sn.exe(강력한 이름 도구)](/dotnet/framework/tools/sn-exe-strong-name-tool)를 참조하세요.|  
+|**VSP2001**|\<assembly name>은 강력한 이름의 어셈블리입니다. 다시 서명해야 실행할 수 있습니다.<br /><br /> 이 경고는 서명된 어셈블리를 계측하는 경우에 발생합니다. *sn.exe* 도구를 사용하여 이진 파일에 다시 서명하거나 강력한 이름 요구를 일시적으로 해제할 수 있습니다. 자세한 내용은 [Sn.exe(강력한 이름 도구)](/dotnet/framework/tools/sn-exe-strong-name-tool)를 참조하세요.|  
 |**VSP2002**|\<filename> 파일에서 \<funcname> 함수를 찾을 수 없습니다.<br /><br /> 이 경고는 지정한 파일에는 함수를 찾을 수 없는 경우에 발생합니다.|  
 |**VSP2003**|\<filename> 파일에서 \<funcname> 함수로의 크로스 점프를 찾을 수 없습니다.<br /><br /> 이 경고는 VSInstr이 크로스 점프를 무효화할 수 없는 경우에 발생합니다. 크로스 점프는 코드 최적화를 위해 사용됩니다.|  
 |**VSP2004**|\<funcname> 함수가 EXCLUDE 명령줄 스위치를 통해 제외되었지만 이 함수에 크로스 점프가 들어 있으므로 필요합니다.<br /><br /> 이 경고는 함수가 EXCLUDE 옵션을 사용하여 제외되었으나 계측 프로세스 중에 필요한 경우에 발생합니다. 프로파일러에는 필요한 기능을 자동으로 포함합니다.|  

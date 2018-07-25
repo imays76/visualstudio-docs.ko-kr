@@ -1,18 +1,18 @@
 ---
-title: "JsCreateError 함수 | Microsoft Docs"
-ms.custom: 
+title: JsCreateError 함수 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsCreateError
 helpviewer_keywords:
 - JsCreateError function
 ms.assetid: dadbcac8-c56f-4f30-ba00-2d284daee191
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568963"
 ---
 # <a name="jscreateerror-function"></a>JsCreateError 함수
 새 JavaScript 오류 개체를 만듭니다.  

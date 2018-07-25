@@ -14,16 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156719cab40490b63ec945bf9c9600b3a92bda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c2f5afe7f58e85b1ddfc5671b635d4df7fad3bd3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078243"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>방법: 빌드 시 환경 변수 사용
 프로젝트를 빌드할 때 프로젝트 파일이나 프로젝트를 구성하는 파일에 없는 정보를 사용하여 빌드 옵션을 설치해야 하는 경우가 많습니다. 이 정보는 대개 환경 변수에 저장되어 있습니다.  
   
-## <a name="referencing-environment-variables"></a>환경 변수 참조  
+## <a name="reference-environment-variables"></a>환경 변수 참조  
  모든 환경 변수를 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 프로젝트 파일에 속성으로 사용할 수 있습니다.  
   
 > [!NOTE]
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/19/2018
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>속성의 기본값을 제공하려면  
   
--   속성에 값이 없는 경우에만 속성에서 `Condition` 특성을 사용하여 값을 설정합니다. 예를 들어 다음 코드는 `ToolsPath` 환경 변수가 설정되지 않은 경우에만 `ToolsPath` 속성을 c:\tools로 설정합니다.  
+-   속성에 값이 없는 경우에만 속성에서 `Condition` 특성을 사용하여 값을 설정합니다. 예를 들어 다음 코드는 `ToolsPath` 환경 변수가 설정되지 않은 경우에만 `ToolsPath` 속성을 *c:\tools*로 설정합니다.  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   

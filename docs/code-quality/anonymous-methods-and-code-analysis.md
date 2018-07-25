@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31892705"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>무명 메서드 및 코드 분석
 *무명 메서드* 는 이름이 없는 메서드입니다. 무명 메서드는 코드 블록을 대리자 매개 변수로 전달 하는 데 가장 자주 사용 됩니다.

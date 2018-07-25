@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127977"
 ---
 # <a name="deploying-project-types"></a>배포 프로젝트 형식
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 새 프로젝트 형식 aggregator (ProjectAggregator2.dll) 및 재배포 (ProjectAggregator2.msi)에 대 한 Windows Installer 패키지를 설치합니다. 관리 코드 프로젝트 형식에 대 한 새 집계를 사용 해야 합니다. ProjectAggregator2 방법 제한에서 작동 하는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aggregator 관리 코드 프로젝트 형식을 올바르게 작동 하지 못하게 하는 프로젝트입니다. 다음 단계에서는 새 집계를 사용 하 여 VSPackage를 변경 하는 방법에 설명 합니다.  

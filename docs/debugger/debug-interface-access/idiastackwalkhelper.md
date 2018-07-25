@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464968"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 프로그램 디버그 데이터베이스 (.pdb) 파일을 사용 하 여 스택을 탐색을 용이 하 게 합니다.  

@@ -1,6 +1,7 @@
 ---
 title: 게임 및 앱을 위한 3D 자산 작업
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -11,18 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd99cad3b63df1cf7ab3bcecb347df53f7408832
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079476"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>게임 및 앱을 위한 3D 자산 작업
 
 이 문서에서는 DirectX 기반 게임 및 앱에 대한 3D 모델, 질감 및 셰이더를 만들거나 수정하는 데 사용할 수 있는 Visual Studio Tools에 대해 설명합니다.
 
 ## <a name="directx-app-development-in-visual-studio"></a>Visual Studio에서 DirectX 앱 개발
- DirectX 앱은 일반적으로 프로그래밍 논리, DirectX API 및 HLSL(High Level Shading Language) 프로그램을 오디오 및 3D 시각 자산과 결합하여 풍부한 대화형 멀티미디어 환경을 제공합니다. Visual Studio에는 다른 도구를 사용하기 위해 IDE를 나가지 않고 이미지, 질감, 3D 모델 및 셰이더 작업에 사용할 수 있는 도구가 포함되어 있습니다. Visual Studio 도구는 특히 *자리 표시자* 자산을 만드는 데 적합합니다. 이 자산은 프로덕션 준비 자산을 위임하기 전에 코드를 테스트하거나 프로토타입을 생성하고, 앱을 디버그할 때 프로덕션 준비 자산을 검사 및 수정하는 데 사용할 수 있습니다.
+ DirectX 앱은 일반적으로 프로그래밍 논리, DirectX API 및 HLSL(High Level Shading Language) 프로그램과 오디오 및 3D 시각적 자산을 결합하여 풍부한 대화형 멀티미디어 환경을 제공합니다. Visual Studio에는 IDE에서 다른 도구를 사용하지 않고 이미지와 질감, 3D 모델 및 셰이더 작업에 사용할 수 있는 도구가 포함되어 있습니다. Visual Studio 도구는 특히 *자리 표시자* 자산을 만드는 데 적합합니다. 이 자산은 프로덕션 준비 자산을 위임하기 전에 코드를 테스트하거나 프로토타입을 생성하고, 앱을 디버그할 때 프로덕션 준비 자산을 검사 및 수정하는 데 사용할 수 있습니다.
 
  Visual Studio에서 사용할 수 있는 자산의 종류에 대한 자세한 정보는 다음과 같습니다.
 

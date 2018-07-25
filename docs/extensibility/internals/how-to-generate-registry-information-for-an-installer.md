@@ -20,12 +20,13 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131873"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>방법: 설치 관리자에 대 한 레지스트리 정보를 생성 합니다.
 관리 되는 VSPackage에 대 한 등록 매니페스트를 생성 하 RegPkg.exe 유틸리티를 사용할 수 있습니다. Windows Installer 설치 패키지에 매니페스트를 통합할 수 있습니다. RegPkg도 파일을 생성할 수에 따라 설치 원본 파일에 포함 될 수 있는 [Windows Installer XML 도구 집합](http://go.microsoft.com/fwlink/?LinkId=62238)합니다.  
   
 > [!IMPORTANT]
->  적절 한 Windows Installer 속성을 지정 되므로 RegPkg를 사용할 때마다 출력을 사용 하 여 편집 해야 하거나, RegPkg 개발 시스템에만 적용 되는 경로 이름을 생성 합니다. 예를 들어 InprocServer32 값 이어야 합니다 **[SystemFolder]mscoree.dll** 경로 사용 해야 하 고 **[#filekey]** 및 **[$componentkey]**합니다. 이러한 방식으로 출력 조정 또는 다른 디렉터리, 지역화 된 디렉터리 이름 및 경로 사용자가 선택할 수 있는 다른 드라이브에 설치 되어 windows 컴퓨터를 지원 합니다. 자세한 내용은 참조 [형식](http://go.microsoft.com/fwlink/?LinkId=71120) Windows Installer sdk에서입니다. 개발 시스템 경로 대 한 RegPkg 규칙을 따르는 경우-예를 들어 파일 형식 File_ Id*filename*-적은 변경할 필요 합니다.  
+>  적절 한 Windows Installer 속성을 지정 되므로 RegPkg를 사용할 때마다 출력을 사용 하 여 편집 해야 하거나, RegPkg 개발 시스템에만 적용 되는 경로 이름을 생성 합니다. 예를 들어 InprocServer32 값 이어야 합니다 **[SystemFolder]mscoree.dll** 경로 사용 해야 하 고 **[#filekey]** 및 **[$componentkey]** 합니다. 이러한 방식으로 출력 조정 또는 다른 디렉터리, 지역화 된 디렉터리 이름 및 경로 사용자가 선택할 수 있는 다른 드라이브에 설치 되어 windows 컴퓨터를 지원 합니다. 자세한 내용은 참조 [형식](http://go.microsoft.com/fwlink/?LinkId=71120) Windows Installer sdk에서입니다. 개발 시스템 경로 대 한 RegPkg 규칙을 따르는 경우-예를 들어 파일 형식 File_ Id*filename*-적은 변경할 필요 합니다.  
   
 ### <a name="to-create-a-registration-manifest"></a>등록 매니페스트를 만들려면  
   

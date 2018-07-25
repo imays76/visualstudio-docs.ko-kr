@@ -1,13 +1,13 @@
 ---
-title: "조건부 컴파일(JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 조건부 컴파일(JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - ConditionalComp_JavaScript
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - conditional compilation, overview
 - conditional compilation
 ms.assetid: a843de4e-3aae-43cd-ad64-477dd00814a2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569133"
 ---
 # <a name="conditional-compilation-javascript"></a>조건부 컴파일(JavaScript)
 조건부 컴파일을 사용하면 새로운 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 언어 기능을 지원하지 않는 이전 버전과 호환성을 유지하면서 새 언어 기능을 사용할 수 있습니다.  

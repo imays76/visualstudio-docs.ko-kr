@@ -1,7 +1,7 @@
 ---
 title: Python 대화형 창(REPL)
 description: 신속한 코드 개발을 위해 Visual Studio에서 Python 코드용 대화형 창(REPL)을 사용하는 방법입니다.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81c4b2cceb75874135f6d18cbf167f719ced48b9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a728c164121216b259e48b502f9ca29fa7ffd1d4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057920"
 ---
-# <a name="working-with-the-python-interactive-window"></a>Python 대화형 창 사용
+# <a name="work-with-the-python-interactive-window"></a>Python 대화형 창 사용
 
 Visual Studio는 각 Python 환경에 대화형 읽기-평가-인쇄 루프(REPL) 창을 제공하여 명령줄에서 `python.exe`와 관련한 REPL을 개선합니다. 대화형 창(**보기 > 다른 창 > &lt;환경&gt; 대화형** 창 메뉴 명령으로 열 수 있음)을 사용하면 임의의 Python 코드를 입력하고 즉각적인 결과를 확인할 수 있습니다. 이러한 방식의 코딩은 API 및 라이브러리와 관련된 내용을 배우고 실험하는 데 도움이 되고, 프로젝트에 포함할 작업 코드를 대화형으로 개발하는 데에도 유용합니다.
 

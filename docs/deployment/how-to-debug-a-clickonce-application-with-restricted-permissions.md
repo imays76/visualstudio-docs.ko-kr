@@ -18,13 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 318316c4c2a0f545f6e038581d94d9f7fb21eca4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c30766b50692052ec9fdd04c5ec1b156738c47b5
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152973"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>방법: 제한된 권한으로 ClickOnce 응용 프로그램 디버깅
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>방법: 제한 된 권한으로 ClickOnce 응용 프로그램 디버그
 개발자는 대부분 완전 신뢰 사용 권한으로 개발 컴퓨터를 실행하므로, ClickOnce 응용 프로그램을 디버그할 때 제한된 권한으로 실행하는 최종 사용자에게 표시될 수 있는 것과 동일한 보안 예외가 표시되지 않습니다.  
   
  이러한 예외를 catch하려면 최종 사용자와 동일한 사용 권한으로 응용 프로그램을 디버그해야 합니다. **프로젝트 디자이너** 의 **보안**페이지에서 제한된 권한으로 디버그를 사용하도록 설정할 수 있습니다.  
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/19/2018
 6.  **다음 URL에서 다운로드한 것처럼 이 응용 프로그램을 디버그** 텍스트 상자에 URL 또는 네트워크 경로를 입력합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: ClickOnce 응용 프로그램의 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 응용 프로그램의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 응용 프로그램에 대 한 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)

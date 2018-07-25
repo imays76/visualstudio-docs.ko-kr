@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129208"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>여러 프로젝트 연결을 통해 설정의 적용
 소스 제어 플러그 인 여러 프로젝트 또는 여러 연결 컨텍스트 같은 소스 제어 작업을 실행 하려면 일괄 처리 작업을 사용할 수 소스 제어 플러그 인 API 1.2를 사용 하 여 작성. 일괄 처리에서 중복 제거, 프로젝트 대화 상자에서 사용자 환경 데 사용할 수 있습니다.  

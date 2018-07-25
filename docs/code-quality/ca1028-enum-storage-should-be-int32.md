@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900290"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: 열거형 저장소는 Int32여야 합니다.
 |||

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112837"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 수 있도록는 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 안의 텍스트를 표시 하는 UI는 **전송 정보** 의 섹션은 **프로세스에 연결** 대화 상자.  
