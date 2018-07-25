@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fe0b8c2f8e6018924e3e85133158ae364a95bf3d
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924753"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131910"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기
 
@@ -110,3 +110,4 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 - [Node.js 및 Express에 대한 자습서](../nodejs/tutorial-nodejs.md) 살펴보기
 - [Node.js 및 React에 대한 자습서](../nodejs/tutorial-nodejs-with-react-and-jsx.md) 살펴보기
+- [앱을 Linux App Service에 배포](../javascript/publish-nodejs-app-azure.md)

@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 67443cdfa640c0dca020feb34f10ec3a636c982e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: e18f1e2063fd4007eba13d76473d634265b6a51f
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924501"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131858"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Node.js 앱 만들기
 
@@ -90,7 +90,7 @@ Visual Studio IDE 및 Node.js로 시작한 이 빠른 시작을 완료한 것을
 ## <a name="next-steps"></a>다음 단계
 
 > [!div class="nextstepaction"]
-> [앱을 Azure App Service에 배포](..//deployment/quickstart-deploy-to-azure.md)
+> [앱을 Linux App Service에 배포](../javascript/publish-nodejs-app-azure.md)
 
-- [Node.js 및 Express에 대한 자습서](../nodejs/tutorial-nodejs.md)
-- [Node.js 및 React에 대한 자습서](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+- [Node.js 및 Express에 대한 자습서](../javascript/tutorial-nodejs.md)
+- [Node.js 및 React에 대한 자습서](../javascript/tutorial-nodejs-with-react-and-jsx.md)

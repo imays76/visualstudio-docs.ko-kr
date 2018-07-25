@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb5d450f2556cf1205f39e220c8f3b3219e9d2a3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b93247fcce7502ce96a075dc5d297cd9c87fe640
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946747"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153191"
 ---
 # <a name="bscmake-task"></a>BscMake 작업
 > [!IMPORTANT]
@@ -46,8 +46,6 @@ ms.locfileid: "37946747"
 |**Sources**|선택적 **ITaskItem[]** 매개 변수입니다.<br /><br /> 작업에서 사용하고 내보낼 수 있는 MSBuild 소스 파일 항목의 배열을 정의합니다.|  
 |**SuppressStartupBanner**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`인 경우 작업을 시작할 때 저작권과 버전 번호 메시지가 표시되지 않도록 합니다.<br /><br /> 자세한 내용은 [BSCMAKE 옵션](/cpp/build/reference/bscmake-options)의 **/NOLOGO** 옵션을 참조하세요.|  
 |**TrackerLogDirectory**|선택적 **문자열** 매개 변수입니다.<br /><br /> 추적기 로그용 디렉터리를 지정합니다.|  
-  
-## <a name="remarks"></a>설명  
   
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)

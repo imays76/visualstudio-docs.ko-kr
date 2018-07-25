@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7928ceb1f99e86f84247af3376edd3119deac8ea
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ec7f52701e0748e2433d26aedf1c7b0e5dd2927c
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945785"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179715"
 ---
 # <a name="error-task"></a>Error 작업
 빌드를 중지하고 평가된 조건부 문에 따라 오류를 기록합니다.  

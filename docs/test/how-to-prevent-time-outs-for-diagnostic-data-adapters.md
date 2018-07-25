@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844240"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178321"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>방법: 진단 데이터 어댑터에 대한 시간 제한 방지
 
@@ -23,17 +23,17 @@ ms.locfileid: "34844240"
 
 -   테스트 컨트롤러 컴퓨터에서 테스트 컨트롤러 서비스가 실행되고 있지 않습니다. 서비스를 다시 시작해야 할 수 있습니다. 테스트 컨트롤러를 결정하고 테스트 컨트롤러를 관리하는 방법에 대한 자세한 내용은 [Visual Studio를 사용하여 테스트 컨트롤러 및 테스트 에이전트 관리](../test/manage-test-controllers-and-test-agents.md)를 참조하세요.
 
--   원격 컴퓨터에서 데이터를 수집하는 경우 방화벽이 Microsoft Test Manager를 차단할 수 있습니다. Microsoft Test Manager를 실행하는 컴퓨터에서는 테스트 컨트롤러로부터 들어오는 연결을 허용해야 합니다. 컨트롤러에서 보낸 메시지가 방화벽에 의해 차단되어 Microsoft Test Manager가 메시지를 받지 못할 경우 시간 초과가 발생합니다. Microsoft Test Manager를 실행하는 컴퓨터에서 방화벽 설정을 확인해야 합니다. 방화벽 설정에 대한 자세한 내용은 다음 [Microsoft 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=184980)를 참조하세요.
+-   원격 컴퓨터에서 데이터를 수집하는 경우 방화벽이 Microsoft Test Manager를 차단할 수 있습니다. Microsoft Test Manager를 실행하는 컴퓨터에서는 테스트 컨트롤러로부터 들어오는 연결을 허용해야 합니다. 컨트롤러에서 보낸 메시지가 방화벽에 의해 차단되어 Microsoft Test Manager가 메시지를 받지 못할 경우 시간 초과가 발생합니다. Microsoft Test Manager를 실행하는 컴퓨터에서 방화벽 설정을 확인해야 합니다.
 
 -   테스트 컨트롤러에서는 Microsoft Test Manager를 실행하는 컴퓨터의 이름을 확인할 수 없습니다. DNS에서 이 컴퓨터에 대한 잘못된 주소를 제공할 경우 이 문제가 발생할 수 있습니다. 이 문제를 해결하려면 네트워크 관리자에게 문의해야 합니다.
 
- 많은 양의 데이터를 수집해야 하는 장기 테스트를 실행하는 경우 데이터 수집 과정에서 시간 초과가 발생할 수 있습니다. 뒤에 나오는 절차에 따라 이 문제를 해결할 수 있습니다.
+많은 양의 데이터를 수집해야 하는 장기 테스트를 실행하는 경우 데이터 수집 과정에서 시간 초과가 발생할 수 있습니다. 뒤에 나오는 절차에 따라 이 문제를 해결할 수 있습니다.
 
- 이런 경우 Microsoft Test Manager의 구성 파일 또는 제한 시간을 초과하는 테스트 에이전트의 구성 파일을 업데이트하여 제한 시간을 늘릴 수 있습니다.
+이런 경우 Microsoft Test Manager의 구성 파일 또는 제한 시간을 초과하는 테스트 에이전트의 구성 파일을 업데이트하여 제한 시간을 늘릴 수 있습니다.
 
- Microsoft Test Manager의 경우 구성 파일은 **mtm.exe.config**입니다. 이 파일은 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 디렉터리에 있습니다.
+Microsoft Test Manager의 경우 구성 파일은 **mtm.exe.config**입니다. 이 파일은 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 디렉터리에 있습니다.
 
- 테스트 에이전트를 업데이트하려면 테스트 에이전트 컴퓨터에서 다음 구성 파일을 업데이트해야 합니다. 이러한 파일은 모두 테스트 에이전트 컴퓨터의 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 디렉터리에 있습니다.
+테스트 에이전트를 업데이트하려면 테스트 에이전트 컴퓨터에서 다음 구성 파일을 업데이트해야 합니다. 이러한 파일은 모두 테스트 에이전트 컴퓨터의 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 디렉터리에 있습니다.
 
 -   QTAgent.exe.config
 
@@ -43,9 +43,9 @@ ms.locfileid: "34844240"
 
 -   QTDCAgent32.exe.config
 
- 환경에서 수동 테스트를 실행하고 데이터를 수집하는 경우 버그가 만들어지거나 테스트 사례가 완료되면 진단 데이터 어댑터에서 수집된 모든 데이터가 수동 테스트를 실행하는 컴퓨터로 전송됩니다. 수집된 데이터의 양이 많거나 네트워크 연결 속도가 느린 경우에는 기본값인 60초보다 더 오랜 시간이 걸릴 수 있습니다. 예를 들어 많은 프로세스에 대한 IntelliTrace 이벤트와 호출 정보를 수집하도록 IntelliTrace 어댑터를 구성한 경우 데이터 전송 시간이 기본 제한 시간을 초과할 수 있습니다. 이 값을 늘리려면 다음 절차에 따라 **mtm.exe.config**를 업데이트합니다.
+환경에서 수동 테스트를 실행하고 데이터를 수집하는 경우 버그가 만들어지거나 테스트 사례가 완료되면 진단 데이터 어댑터에서 수집된 모든 데이터가 수동 테스트를 실행하는 컴퓨터로 전송됩니다. 수집된 데이터의 양이 많거나 네트워크 연결 속도가 느린 경우에는 기본값인 60초보다 더 오랜 시간이 걸릴 수 있습니다. 예를 들어 많은 프로세스에 대한 IntelliTrace 이벤트와 호출 정보를 수집하도록 IntelliTrace 어댑터를 구성한 경우 데이터 전송 시간이 기본 제한 시간을 초과할 수 있습니다. 이 값을 늘리려면 다음 절차에 따라 **mtm.exe.config**를 업데이트합니다.
 
- Test Runner 작업 또는 테스트 에이전트에서 제한 시간을 초과하면 오류 메시지가 표시됩니다. 테스트 에이전트의 오류 메시지에는 시간을 초과한 테스트 에이전트 컴퓨터에 대한 정보가 포함됩니다. 표시된 오류 메시지에 따라 다음 지침을 사용하여 구성 파일을 업데이트합니다.
+Test Runner 작업 또는 테스트 에이전트에서 제한 시간을 초과하면 오류 메시지가 표시됩니다. 테스트 에이전트의 오류 메시지에는 시간을 초과한 테스트 에이전트 컴퓨터에 대한 정보가 포함됩니다. 표시된 오류 메시지에 따라 다음 지침을 사용하여 구성 파일을 업데이트합니다.
 
 ## <a name="to-increase-the-time-outs-for-your-diagnostic-data-adapters"></a>진단 데이터 어댑터에 대한 제한 시간을 늘리려면
 

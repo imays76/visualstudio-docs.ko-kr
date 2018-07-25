@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b668e2a5f63011730cb731a4966df0bccd4721e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946003"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152619"
 ---
 # <a name="cl-task"></a>CL 작업
 Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행(*.exe*) 파일, 동적 연결 라이브러리(*.dll*) 파일 또는 코드 모듈(*.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.  
@@ -799,8 +799,6 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
      `true`인 경우 파일 액세스 패턴을 추적합니다.  
   
      자세한 내용은 이 표의 **TLogReadFiles** 및 **TLogWriteFiles** 매개 변수를 참조하세요.  
-  
-## <a name="remarks"></a>설명  
   
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)

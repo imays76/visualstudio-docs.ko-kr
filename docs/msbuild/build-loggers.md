@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e435b420377c2b8a1cf3c2b85769a418a2c3e7c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f8fc3ce425f2eaf6052d1e301d23c00d3503daec
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945756"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179985"
 ---
 # <a name="build-loggers"></a>빌드 로거
 로거는 빌드 출력을 사용자 지정하고 특정 빌드 이벤트에 대한 응답에 메시지, 오류 또는 경고를 표시하는 방법을 제공합니다. 각 로거는 <xref:Microsoft.Build.Framework.ILogger> 인터페이스를 구현하는 .NET 클래스로 구현됩니다. 이 인터페이스는 *Microsoft.Build.Framework.dll* 어셈블리에서 정의됩니다.  
@@ -70,8 +70,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ### <a name="code"></a>코드  
  [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]  
   
-### <a name="comments"></a>설명  
-  
 ## <a name="example"></a>예  
   
 ### <a name="description"></a>설명  
@@ -79,8 +77,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="code"></a>코드  
  [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]  
-  
-### <a name="comments"></a>설명  
   
 ## <a name="see-also"></a>참고 항목  
  [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)   

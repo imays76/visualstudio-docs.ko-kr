@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27bc6149ec82bd1c3d14e0c60e8d7747c290ccb
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: c0ecf9f52aef56e4652532e0bec836021a906038
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081142"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176319"
 ---
 # <a name="msbuild-batching"></a>MSBuild 일괄 처리
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에는 항목 목록을 항목 메타데이터에 따라 여러 다른 범주 또는 일괄 처리로 나누고 각 일괄 처리를 사용하여 한 번에 하나의 대상 또는 작업을 실행하는 기능이 있습니다.  
