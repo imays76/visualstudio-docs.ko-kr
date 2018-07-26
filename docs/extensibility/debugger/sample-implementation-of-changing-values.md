@@ -14,36 +14,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39c662af2aa9f1fed2f36aefc60b6b2e539a0200
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01d3a13762612f40240fb377698745088aae6618
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128635"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251792"
 ---
-# <a name="sample-implementation-of-changing-values"></a>값 변경의 샘플 구현
+# <a name="sample-implementation-of-changing-values"></a>값 변경 샘플 구현
 > [!IMPORTANT]
->  Visual Studio 2015에서 구현 하는 식 계산기의 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하십시오 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+>  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
- 모든 로컬에 표시 되는 **지역** 창에는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 개체가 연결 되어 있습니다. 이 `IDebugProperty2` 개체에는 지역 변수의 이름, 값 및 형식이 포함 되어 있습니다. Visual Studio를 호출 하는 사용자의 로컬 값을 변경 해도 때 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 로컬 메모리에 값을 업데이트 합니다. 이 예제에서 로컬으로 표시 됩니다는 `CFieldProperty` 구현 하는 클래스는 `IDebugProperty2` 인터페이스입니다.  
+ 에 표시 된 모든 로컬 합니다 **지역** 창에는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 연결 된 개체입니다. 이 `IDebugProperty2` 지역 변수의 이름, 값 및 형식 개체에 포함 되어 있습니다. Visual Studio를 호출 하는 사용자의 로컬 값 변경 되 면 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 로컬 메모리에 값을 업데이트 합니다. 이 예제에서는 로컬 표시 됩니다는 `CFieldProperty` 클래스를 구현 하는 `IDebugProperty2` 인터페이스입니다.  
   
 > [!NOTE]
->  에 대 한 **조사식** 및 **간략 한 조사식** 식 변경 되는 값으로 표시 됩니다는 `CValueProperty` MyCEE 샘플의 클래스. 그러나 구현의 `IDebugProperty2::SetValueAsString` 여기 표시 된 것과 같습니다.  
+>  에 대 한 **조사식** 하 고 **간략 한 조사식** 식을 변경할 값으로 표시 됩니다는 `CValueProperty` MyCEE 샘플의 클래스. 그러나 구현의 `IDebugProperty2::SetValueAsString` 여기에 표시 된 대로 똑같습니다.  
   
- 이 구현 `IDebugProperty2::SetValueAsString` 다음 작업을 수행 합니다.  
+ 구현의 `IDebugProperty2::SetValueAsString` 다음 작업을 수행 합니다.  
   
-1.  값을 생성 하기 위해 식을 계산 합니다.  
+1.  값을 생성 하는 식을 계산 합니다.  
   
-2.  연결 된 바인딩합니다 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 를 메모리 위치로 개체를 생성 한 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
+2.  연결 된 바인딩합니다 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 개체를 생성 하 고 해당 메모리 위치를 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
   
-3.  일련의 바이트를 변환합니다.  
+3.  값을 일련의 바이트로 변환합니다.  
   
 4.  호출 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 바이트 메모리에 저장할 수 있습니다.  
   
 ## <a name="managed-code"></a>관리 코드  
- 이의 구현 `IDebugProperty2::SetValueAsString` 관리 코드에서.  
+ 다음 코드는 구현의 `IDebugProperty2::SetValueAsString` 관리 코드에서.  
   
-```  
+```csharp  
 [C#]  
 namespace EEMC  
 {  
@@ -226,10 +226,10 @@ namespace EEMC
 }  
 ```  
   
-## <a name="unmanaged-code"></a>비관리 코드  
- 이의 구현 `IDebugProperty2::SetValueAsString` 관리 코드에서. 도우미 함수 `FieldCoerceValueType` (표시 되지 않음) 강제로 `VARIANT` 값이 유형 중 하나를 특정 형식 및 있는지는 `FieldSetValue` 처리할 수 있습니다.  
+## <a name="unmanaged-code"></a>관리 되지 않는 코드  
+ 다음 코드는 구현의 `IDebugProperty2::SetValueAsString` 관리 코드에서. 도우미 함수 `FieldCoerceValueType` (표시 되지 않음) 강제로 `VARIANT` 값이 유형 중 하나를 특정 형식 및 설정 `FieldSetValue` 처리할 수 있습니다.  
   
-```  
+```cpp  
 [C++]  
 STDMETHODIMP CFieldProperty::SetValueAsString(   
         in LPCOLESTR pszValueStr,  
@@ -425,6 +425,6 @@ HRESULT FieldSetValue(
   
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [로컬 값 변경](../../extensibility/debugger/changing-the-value-of-a-local.md)   
+## <a name="see-also"></a>참고자료  
+ [로컬 값을 변경](../../extensibility/debugger/changing-the-value-of-a-local.md)   
  [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)
