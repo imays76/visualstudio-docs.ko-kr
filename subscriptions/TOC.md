@@ -48,6 +48,7 @@
 #### [볼륨 라이선스의 경우](volume-license-admins.md)
 ##### [VLSC 관리 마이그레이션 FAQ](vlsc-admin-faq.md)
 ##### 조직 온보딩
+###### [마이그레이션 후 온보딩](post-migration-onboarding.md)
 ###### [온보딩 이메일 통신](volume-license-onboarding-email.md)
 ###### [PCN 찾기](find-pcn.md)
 ###### [기본 연락처 찾기](find-primary-contact.md)
