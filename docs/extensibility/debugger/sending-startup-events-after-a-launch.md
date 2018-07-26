@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6ffd1a47f4d1d82feecb35110151a8b32d7d245
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8439f4ff9e1195b558b44342a012ce319582eb69
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135756"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251168"
 ---
-# <a name="sending-startup-events-after-a-launch"></a>시작 후 시작 이벤트를 전송합니다.
-디버그 엔진 (DE) 프로그램에 연결 되 면 일련의 시작 이벤트는 디버그 세션에 다시 보냅니다.  
+# <a name="send-startup-events-after-a-launch"></a>시작 후 시작 이벤트 보내기
+디버그 엔진 (DE) 프로그램에 연결 된 후 디버그 세션에 다시 일련의 시작 이벤트를 보냅니다.  
   
- 디버그 세션에 다시 전송 되는 시작 이벤트는 다음과 같습니다.  
+ 디버그 세션에 다시 전송 하는 시작 이벤트는 다음과 같습니다.  
   
 -   엔진 생성 이벤트입니다.  
   
@@ -31,21 +31,21 @@ ms.locfileid: "31135756"
   
 -   스레드 생성 및 모듈 로드 이벤트입니다.  
   
--   코드는 로드 하 고 바로 실행할 수 있지만 모든 코드를 실행 하기 전에 전송 로드 완료 이벤트  
+-   로드 완료 이벤트를 전송한 코드가 로드 및 실행할 준비가 되 면 모든 코드가 실행 되기 전에 합니다. 
   
     > [!NOTE]
-    >  이 이벤트가 계속 되 면 전역 변수가 초기화 되 고 시작 루틴을 실행 합니다.  
+    >  이 이벤트가 계속 되 면 전역 변수 초기화 되 고 시작 루틴 실행 됩니다.  
   
 -   가능한 다른 스레드 생성 및 모듈 로드 이벤트입니다.  
   
--   프로그램의 주 진입점와 같은 도달에 신호를 보냅니다 항목 시점 이벤트, **Main** 또는 `WinMain`합니다. 이 이벤트는 DE 이미 실행 중인 프로그램에 연결 되 면 일반적으로 전송 되지 않습니다.  
+-   항목 지점 이벤트는 프로그램에 도달 했습니다 해당 주 진입점와 같은 신호를 보냅니다 **Main** 또는 `WinMain`합니다. 이 이벤트는 DE 이미 실행 중인 프로그램에 연결 하는 경우에 일반적으로 전송 되지 않습니다.  
   
- 프로그래밍 방식으로 DE 세션 디버그 관리자 (SDM)를 먼저 보냅니다는 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) 엔진 생성 이벤트를 나타내는 인터페이스 뒤는 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 을 프로그램 생성 이벤트를 나타냅니다.  
+ 프로그래밍 방식으로 DE 전송 세션 디버그 관리자 SDM ()는 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) 뒤에 엔진이 생성 이벤트를 나타내는 인터페이스를 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 프로그램 생성 이벤트를 나타내는입니다.  
   
- 일반적으로 다음 하나 이상의 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 스레드 만들기 이벤트 및 [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) 모듈 로드 이벤트입니다.  
+ 이러한 이벤트는 일반적으로 뒤에 하나 이상의 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 스레드 생성 이벤트 및 [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) 모듈 로드 이벤트입니다.  
   
- 코드는 로드 하 고 바로 실행할 수 있지만 DE은 SDM 보내는 모든 코드가 실행 되기 전에 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) 완료 이벤트를 로드 합니다. 마지막으로, 프로그램이 이미 실행 되지 않는 경우는 DE 보냅니다는 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 항목 시점 이벤트, 신호 프로그램에서의 주 진입점에 도달 하 고 디버깅을 위해 준비 합니다.  
+ 코드 로드 및 실행할 준비가 되었지만 경우는 DE SDM을 보내는 코드를 실행 하기 전에 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) 부하 완료 이벤트입니다. 마지막으로, 프로그램이 이미 실행 중이 아닌 경우는 DE 보냅니다는 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 항목 시점 이벤트, 신호 프로그램에서 해당 주 진입점에 도달 하 고 디버깅 하는 것에 대 한 준비가 되었습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [실행 제어](../../extensibility/debugger/control-of-execution.md)   
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

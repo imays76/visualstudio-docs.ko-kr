@@ -1,5 +1,5 @@
 ---
-title: 제어 프로그램 | Microsoft Docs
+title: 컨트롤 프로그램 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c227f38c926cb6d764ddf47541b8bd744eb6f7c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a60b766763ca5f68f8c379fbab9372e41c319671
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102092"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251100"
 ---
 # <a name="program-control"></a>프로그램 제어
-Visual Studio의 다음 단계별 실행의 모든 디버깅 및 루틴을 계속 프로그램 수준에서 발생 합니다.  
+Visual Studio에서 다음 단계별 실행의 모든 디버깅 및 루틴을 계속 프로그램 수준에서 발생 합니다.  
   
--   특정 프레임 환경에서 실행 될 다음 명령으로 컴퓨터를 설정 즉, 다음 문 설정  
+-   특정 프레임 환경에서 실행 될 다음 명령으로 컴퓨터를 설정, 다음 문 설정  
   
--   즉, 단계별 실행 모드에서 나가려면 계속 실행  
+-   즉, 단계별 실행 모드를 종료 하려면 계속 실행  
   
 -   다음 명령으로 단계별 실행  
   
--   현재 단계별 실행 모드를 계속  
+-   현재 단계별 실행 모드를 사용 하 여 계속합니다.  
   
--   프로그램에 포함 된 스레드 일시 중단  
+-   프로그램에 포함 된 스레드를 일시 중단  
   
 -   프로그램에 포함 된 스레드 재개  
   
 > [!NOTE]
->  호출 스택을 보려면 스레드 수준에서 구현 됩니다. 모든 메서드를 구현 해야 합니다는 스레드의 호출 스택을 볼 때 프레임 정보를 열거 하는 [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 인터페이스입니다.  
+>  호출 스택 보기는 스레드 수준에서 구현 됩니다. 스레드에 대 한 호출 스택을 볼 때 프레임 정보 열거의 모든 메서드를 구현 해야 합니다 [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 인터페이스입니다.  
   
-## <a name="methods-of-program-control"></a>프로그램 제어의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 최소 기능 디버그 엔진 (DE) 및 실행 제어에 대 한 구현 되어야 합니다.  
+## <a name="methods-of-program-control"></a>프로그램 제어 메서드  
+ 다음 표에서의 메서드를 보여 줍니다 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 최소로 작동 디버그 엔진 (DE) 및 실행 제어를 위해 구현 되어야 합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|계속 중지 된 상태에서 프로그램에 포함 된 모든 스레드를 실행 합니다. 실행 제어에 필요합니다.|  
-|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|계속 중지 된 상태에서 프로그램에 포함 된 모든 스레드를 실행 합니다. 실행 제어에 필요합니다.|  
-|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|지정 된 스레드에 대 한 단계를 수행합니다. 프로그램에 포함 된 모든 다른 스레드가 실행을 계속 합니다. 실행 제어에 필요합니다.|  
+|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|중지 된 상태에서 프로그램에 포함 된 모든 스레드의 실행을 계속 합니다. 실행 제어에 필요합니다.|  
+|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|중지 된 상태에서 프로그램에 포함 된 모든 스레드의 실행을 계속 합니다. 실행 제어에 필요합니다.|  
+|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|지정 된 스레드에서 단계를 수행합니다. 실행 중인 프로그램에 포함 된 다른 모든 스레드를 계속 합니다. 실행 제어에 필요합니다.|  
   
- 다중 스레드 프로그램에 대 한 구현 해야는 [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 메서드와의 모든 메서드는 [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) 인터페이스입니다.  
+ 다중 스레드 프로그램의 경우 구현 해야 합니다 [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 메서드와의 모든 메서드는 [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) 인터페이스입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

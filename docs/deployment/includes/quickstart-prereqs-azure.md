@@ -2,6 +2,7 @@
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 선택한 언어에 대 한 적절 한 워크 로드를 사용 하 여 설치 합니다.
   * ASP.NET: **ASP.NET 및 웹 개발**
+  * ASP.NET Core: ASP.NET 워크 로드 및 **.NET Core 플랫폼 간 개발** 워크 로드
   * Node.js: **Node.js 개발**
 
 * Azure 구독입니다. 수 없는 구독 하는 경우 [무료로 등록](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)를 포함 하는 200 달러 크레딧에서 30 일 및 12 개월 동안 인기 있는 무료 서비스에 대 한 합니다.

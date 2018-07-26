@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: e0268c2e65cd08274c2267ad2a4969f6015cbaf4
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39234857"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252364"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Visual Studio를 사용 하 여 Linux의 App Service에 ASP.NET Core 앱 게시
 
 사용할 수는 **게시** Linux의 Azure App Service에 ASP.NET Core 앱을 게시 하는 도구입니다.
+
+사용 하 여 Linux에서 App Service에 배포 합니다 **게시** 도구에는 Visual Studio 2017 버전 15.7에 있어야 합니다.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
