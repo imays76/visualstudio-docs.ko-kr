@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117656"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380745"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
 
@@ -152,7 +152,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>템플릿에서 코드
 
-저장할 때 패키지를 **.tt** 파일을 자회사 **.cs** 또는 **.vb** 파일이 생성 됩니다. 솔루션 탐색기에서이 파일을 보려면 확장 합니다 **.tt** 파일 노드. Visual Basic 프로젝트에서 먼저 선택할 **모든 파일 표시** 솔루션 탐색기 도구 모음에서입니다.
+저장할 때 패키지를 **.tt** 파일을 자회사 **.cs** 또는 **.vb** 파일이 생성 됩니다. 이 파일을 보려면 **솔루션 탐색기**를 확장 합니다 **.tt** 파일 노드. Visual Basic 프로젝트에서 먼저 선택할 **모든 파일 표시** 에 **솔루션 탐색기** 도구 모음입니다.
 
 보조 파일이 라는 메서드를 포함 하는 부분 클래스를 포함 하는 알림 `TransformText()`합니다. 응용 프로그램에서이 메서드를 호출할 수 있습니다.
 
