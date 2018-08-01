@@ -13,21 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6b34993e011a8bf539b6ec2dd70beddf9c96caf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976899"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203854"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>방법: 어려운 문제 디버깅에 도움이 되는 IntelliTrace 데이터 수집
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>방법: 어려운 문제 디버그에 도움이 되는 IntelliTrace 데이터 수집
 
 Visual Studio에서 특정 진단 추적 정보를 수집하도록 IntelliTrace용 진단 데이터 어댑터를 구성할 수 있습니다. 테스트에서 이 어댑터를 사용하여 응용 프로그램에 대한 중요한 진단 이벤트를 수집할 수 있습니다. 개발자는 나중에 이 데이터를 사용하여 코드를 추적하여 버그의 원인을 찾을 수 있습니다. IntelliTrace의 진단 데이터 어댑터는 수동 테스트나 자동화된 테스트에 사용할 수 있습니다.
 
 > [!NOTE]
 > IntelliTrace는 관리 코드를 사용하여 작성된 응용 프로그램에 대해서만 작동합니다. 브라우저를 클라이언트로 사용하는 웹 응용 프로그램을 테스트할 때는 추적할 수 있는 관리 코드가 없으므로 테스트 설정에서 클라이언트에 대해 IntelliTrace를 사용하지 않도록 설정해야 합니다. 이 경우 웹 서버에서 원격으로 환경을 설정하고 IntelliTrace 데이터를 수집할 수 있습니다.
 
-IntelliTrace 데이터는 확장명이 .iTrace인 파일에 저장됩니다. 테스트를 실행했을 때 테스트 단계가 실패하는 경우 버그를 만들 수 있습니다. 진단 정보를 포함하는 IntelliTrace 파일이 이 버그에 자동으로 연결됩니다.
+IntelliTrace 데이터는 확장명이 *.iTrace*인 파일에 저장됩니다. 테스트를 실행했을 때 테스트 단계가 실패하는 경우 버그를 만들 수 있습니다. 진단 정보를 포함하는 IntelliTrace 파일이 이 버그에 자동으로 연결됩니다.
 
 > [!NOTE]
 > 테스트가 성공적으로 통과하면 IntelliTrace의 진단 데이터 어댑터에서 IntelliTrace 파일이 만들어지지 않습니다. 이 파일은 테스트 사례가 실패하거나 테스터가 버그를 제출하는 경우에만 저장됩니다.
@@ -73,7 +73,7 @@ IntelliTrace 데이터는 확장명이 .iTrace인 파일에 저장됩니다. 테
 
 5.  **일반** 탭을 선택합니다. 테스트할 때 성능에 미치는 영향을 최소화하기 위해 중요 진단 이벤트만 기록하려면 **IntelliTrace 이벤트만**을 선택합니다.
 
-     **-** 또는
+     또는
 
      호출 정보를 표시하는 메서드 수준 추적 정보와 진단 이벤트를 모두 기록하려면 **IntelliTrace 이벤트 및 호출 정보**를 선택합니다. 이 수준의 추적을 사용하면 테스트를 실행할 때 성능이 저하될 수 있습니다.
 
@@ -101,7 +101,7 @@ IntelliTrace 데이터는 확장명이 .iTrace인 파일에 저장됩니다. 테
 11. (선택 사항) **고급** 탭을 선택합니다. 그런 다음, **기록할 수 있는 최대 디스크 공간** 옆에 있는 화살표를 선택하고 IntelliTrace 파일에 사용할 수 있도록 설정할 최대 크기를 선택합니다.
 
     > [!NOTE]
-    > 기록 크기를 늘리면 테스트 결과와 함께 이 기록을 저장할 때 시간 초과 문제가 발생할 수 있습니다. 진단 데이터 어댑터의 제한 시간 값을 늘리는 방법에 대한 자세한 내용은 [방법: 진단 데이터 어댑터의 시간 초과 방지](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md)를 참조하세요.
+    > 기록 크기를 늘리면 테스트 결과와 함께 이 기록을 저장할 때 시간 초과 문제가 발생할 수 있습니다. 진단 데이터 어댑터의 시간 제한 값을 늘리는 방법에 대한 자세한 내용은 [방법: 진단 데이터 어댑터의 시간 제한 방지](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md)를 참조하세요.
 
 12. Microsoft Test Manager를 사용하는 경우 **저장**을 선택합니다. Visual Studio를 사용하는 경우 **확인**을 선택합니다. 테스트 설정에 대해 IntelliTrace 설정이 구성 및 저장됩니다.
 

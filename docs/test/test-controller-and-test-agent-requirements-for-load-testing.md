@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6f2a598ba816b12ca7027495e3775d160a7aefd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974860"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178493"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
 
@@ -39,7 +39,7 @@ ms.locfileid: "31974860"
 |테스트 환경의 컴퓨터 수 30대의 N배. 테스트 대상 서버와 에이전트 포함|테스트 컨트롤러|N개의 2.6GHz 프로세서|||
 
 > [!NOTE]
-> 가상 사용자 수는 테스트에 따라 크게 달라집니다. 이러한 차이는 주로 *인지 시간*, 즉 사용자 지연에 차이가 있기 때문에 발생합니다. 자세한 내용은 [인지 시간을 편집하여 웹 사이트 사용자 상호 작용 지연 시뮬레이션](../test/edit-think-times-in-load-test-scenarios.md)을 참조하세요. 부하 테스트에서는 웹 테스트가 일반적으로 단위 테스트보다 더 효율적이며 더 많은 부하를 생성합니다. 앞의 표에 나온 숫자는 일반적인 웹 응용 프로그램에서 인지 시간이 3-5초인 상태로 웹 테스트를 실행할 경우에 유효합니다.
+> 가상 사용자 수는 테스트에 따라 크게 달라집니다. 이러한 차이는 주로 *인지 시간*, 즉 사용자 지연에 차이가 있기 때문에 발생합니다. 자세한 내용은 [인지 시간을 편집하여 웹 사이트 사용자 상호 작용 지연 시뮬레이션](../test/edit-think-times-in-load-test-scenarios.md)을 참조하세요. 부하 테스트에서는 웹 테스트가 일반적으로 단위 테스트보다 더 효율적이며 더 많은 부하를 생성합니다. 앞의 표에 나온 숫자는 일반적인 웹 응용 프로그램에서 인지 시간이 3~5초인 상태로 웹 테스트를 실행할 경우에 유효합니다.
 
 여기에 나오는 지침은 하드웨어 계획을 위한 일반적인 지침으로 제공됩니다. 테스트 성능은 테스트 데이터의 양과 테스트 에이전트의 개수에 따라 크게 달라집니다. 테스트 에이전트의 경우 CPU 속도와 사용 가능한 메모리에 따라 테스트 부하가 제한됩니다. 테스트 컨트롤러에는 테스트 에이전트의 개수와 테스트에 포함되는 데이터의 양에 따라 더 많은 리소스가 필요합니다.
 

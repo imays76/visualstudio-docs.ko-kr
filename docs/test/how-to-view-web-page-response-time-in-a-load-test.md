@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35669132"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178295"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>방법: 부하 테스트 분석기를 사용하여 부하 테스트의 웹 페이지 응답 시간 보기
 
-각 웹 페이지가 로드되는 시간을 *응답 시간*이라고 합니다. 웹 성능 테스트를 만들 때 웹 성능 테스트의 각 웹 페이지 요청에 대한 응답 시간 목표를 설정할 수 있습니다.
+각 웹 페이지가 로드되는 시간을 ‘응답 시간’이라고 합니다. 웹 성능 테스트를 만들 때 웹 성능 테스트의 각 웹 페이지 요청에 대한 응답 시간 목표를 설정할 수 있습니다.
 
 부하 테스트의 스트레스 환경에서 웹 성능 테스트를 실행하면 각 페이지에서 다음과 같은 정보를 분석할 수 있습니다.
 

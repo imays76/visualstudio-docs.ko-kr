@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 731e8091a91c49c8e17dbcd00c3aea32001115a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1ffbebd651087d9aa877d0e257947352a0d0275e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567901"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154826"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 모든 추적을 중지하고 추적 세션에 사용된 메모리를 해제합니다.  
@@ -37,7 +37,7 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
  추적이 중지된 경우 **SUCCEEDED** 비트가 설정된 **HRESULT**를 반환합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** FileTracker.h  
+ **헤더:** *FileTracker.h*  
   
 ## <a name="see-also"></a>참고 항목  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 부하 테스트에 대한 웹 사이트의 실제 사용법 에뮬레이트
+title: 부하 테스트에 대한 웹 사이트의 실제 사용법 에뮬레이트
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9ec5777bc1a2bfffc650497314a219d071057beb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977046"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177268"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>테스트 조합 모델을 사용하여 부하 테스트에서 웹 사이트 또는 응용 프로그램의 예상 실제 사용법 에뮬레이트
+# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>테스트 조합 모델을 사용하여 부하 테스트에서 웹 사이트 또는 응용 프로그램의 예상 실제 사용법 에뮬레이트
 
 부하 모델링 옵션을 사용하여 부하 테스트를 수행하는 웹 사이트 또는 응용 프로그램의 예상 실제 사용법을 보다 정확하게 예측할 수 있습니다. 정확한 부하 모델을 기반으로 하지 않는 부하 테스트에서는 잘못된 결과가 생성될 수 있으므로 부하 모델을 사용하는 것이 중요합니다.
 
@@ -66,16 +66,16 @@ ms.locfileid: "31977046"
 
  **테스트 반복 간 인지 시간** 설정은 테스트 조합 속도를 지정하여 사용할 때는 적용되지 않습니다.
 
-#### <a name="applying-distribution-to-pacing-delay"></a>속도 지연에 분포 적용
+#### <a name="apply-distribution-to-pacing-delay"></a>속도 지연에 분포 적용
  부하 테스트 시나리오의 **속도 지연에 분포 적용** 속성 값은 true 또는 false로 설정할 수 있습니다.
 
--   **True**: 테스트 조합 편집 대화 상자에서 **시간 및 사용자별 테스트** 열의 값으로 지정된 일반적인 통계 분포 지연이 시나리오에 적용됩니다. 자세한 내용은 [텍스트 조합 모델을 편집하여 가상 사용자가 테스트를 실행할 확률 지정](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)을 참조하세요.
+-   **True**: **테스트 조합 편집** 대화 상자에서 **시간 및 사용자별 테스트** 열의 값으로 지정된 일반적인 통계 분포 지연이 시나리오에 적용됩니다. 자세한 내용은 [텍스트 조합 모델을 편집하여 가상 사용자가 테스트를 실행할 확률 지정](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)을 참조하세요.
 
-     예를 들어 테스트 조합 편집 대화 상자에서 테스트에 대한 **시간 및 사용자별 테스트** 값이 시간당 2명의 사용자로 설정되어 있다고 가정합니다. 이 경우 **속도 지연에 분포 적용** 속성을 **True**로 설정하면 테스트 사이의 대기 시간에 일반적인 통계 분포가 적용됩니다. 즉, 테스트가 시간당 두 개씩 실행되기는 하지만 테스트 사이의 시간은 반드시 30분이 되지는 않습니다. 첫 번째 테스트는 4분 후에 실행되고 두 번째 테스트는 45분 후에 실행될 수도 있습니다.
+     예를 들어 **테스트 조합 편집** 대화 상자에서 테스트에 대한 **시간 및 사용자별 테스트** 값이 시간당 2명의 사용자로 설정되어 있다고 가정합니다. 이 경우 **속도 지연에 분포 적용** 속성을 **True**로 설정하면 테스트 사이의 대기 시간에 일반적인 통계 분포가 적용됩니다. 즉, 테스트가 시간당 두 개씩 실행되기는 하지만 테스트 사이의 시간은 반드시 30분이 되지는 않습니다. 첫 번째 테스트는 4분 후에 실행되고 두 번째 테스트는 45분 후에 실행될 수도 있습니다.
 
--   **False**: 테스트 조합 편집 대화 상자에서 **시간 및 사용자별 테스트** 열의 값으로 지정된 특정 속도로 테스트가 실행됩니다. 자세한 내용은 [텍스트 조합 모델을 편집하여 가상 사용자가 테스트를 실행할 확률 지정](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)을 참조하세요.
+-   **False**: **테스트 조합 편집** 대화 상자에서 **시간 및 사용자별 테스트** 열의 값으로 지정된 특정 속도로 테스트가 실행됩니다. 자세한 내용은 [텍스트 조합 모델을 편집하여 가상 사용자가 테스트를 실행할 확률 지정](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)을 참조하세요.
 
-     예를 들어 테스트 조합 편집 대화 상자에서 테스트에 대한 **시간 및 사용자별 테스트** 값이 시간당 2명의 사용자로 설정되어 있다고 가정합니다. 이 경우 **속도 지연에 분포 적용** 속성을 **False**로 설정하면 기본적으로 테스트가 실행될 때 변동 여지를 두지 않게 됩니다. 즉, 테스트가 30분마다 실행되므로 항상 한 시간에 두 개의 테스트를 실행하게 됩니다.
+     예를 들어 **테스트 조합 편집** 대화 상자에서 테스트에 대한 **시간 및 사용자별 테스트** 값이 시간당 2명의 사용자로 설정되어 있다고 가정합니다. 이 경우 **속도 지연에 분포 적용** 속성을 **False**로 설정하면 기본적으로 테스트가 실행될 때 변동 여지를 두지 않게 됩니다. 즉, 테스트가 30분마다 실행되므로 항상 한 시간에 두 개의 테스트를 실행하게 됩니다.
 
  자세한 내용은 [방법: 사용자 속도 테스트 조합 모델을 사용할 때 속도 지연에 분포 적용](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)을 참조하세요.
 

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 008275d4e0ff094c7933b4e0bae89055acd4bf8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978179"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176215"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>방법: 레코더 플러그 인 만들기
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하여 기록된 웹 성능 테스트를 수정할 수 있습니다. 수정 사항은 웹 성능 테스트 레코더 도구 모음의 **중지**를 선택한 후 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 적용됩니다.
 
-레코더 플러그 인을 사용하면 동적 매개 변수에서 사용자 지정 상관 관계를 수행할 수 있습니다. 웹 성능 테스트에서는 기본 제공 상관 관계 기능을 사용하여 테스트가 완료될 때 또는 사용자가 웹 성능 테스트 편집기 도구 모음의 **동적 매개 변수를 웹 테스트 매개 변수로 승격**을 사용할 때 웹 기록에서 동적 매개 변수를 검색합니다. 그러나 기본 제공 검색 기능으로 항상 모든 동적 매개 변수를 찾을 수 있는 것은 아닙니다. 예를 들어 대개 5-30분마다 값이 변경되는 세션 ID는 찾지 못합니다. 따라서 상관 관계 프로세스를 사용자가 직접 수행해야 합니다.
+레코더 플러그 인을 사용하면 동적 매개 변수에서 사용자 지정 상관 관계를 수행할 수 있습니다. 웹 성능 테스트에서는 기본 제공 상관 관계 기능을 사용하여 테스트가 완료될 때 또는 사용자가 웹 성능 테스트 편집기 도구 모음의 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기**를 사용할 때 웹 기록에서 동적 매개 변수를 검색합니다. 그러나 기본 제공 검색 기능으로 항상 모든 동적 매개 변수를 찾을 수 있는 것은 아닙니다. 예를 들어 대개 5-30분마다 값이 변경되는 세션 ID는 찾지 못합니다. 따라서 상관 관계 프로세스를 사용자가 직접 수행해야 합니다.
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하면 사용자 고유의 사용자 지정 플러그 인에 대한 코드를 작성할 수 있습니다. 이 플러그 인은 웹 성능 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 여러 가지 방법으로 상관 관계 연결을 수행하거나 웹 성능 테스트를 수정할 수 있습니다. 따라서 많은 기록에 대해 특정 동적 변수를 연결해야 하는 것으로 판단될 경우 이 프로세스를 자동화할 수 있습니다.
 
@@ -77,7 +77,7 @@ ms.locfileid: "31978179"
      이벤트 인수는 작업에 사용할 두 개의 개체, 즉 기록된 결과와 기록된 웹 성능 테스트 개체를 제공합니다. 따라서 결과를 반복하여 특정 값을 찾고 웹 성능 테스트 내의 동일한 요청으로 이동하여 수정 작업을 수행할 수 있습니다. 컨텍스트 매개 변수를 추가하거나 URL의 일부를 매개 변수화하려는 경우에 웹 성능 테스트를 수정할 수도 있습니다.
 
     > [!NOTE]
-    > 웹 성능 테스트를 수정할 경우에는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> 속성도 `e.RecordedWebTestModified = true;`로 설정해야 합니다.
+    > 웹 성능 테스트를 수정할 경우에는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> 속성도 true로 설정해야 합니다(`e.RecordedWebTestModified = true;`).
 
 11. 웹 기록이 발생한 후 레코더 플러그 인에서 실행할 작업에 따라 원하는 코드를 더 추가합니다. 예를 들어 다음 샘플과 같이 사용자 지정 상관 관계를 처리하는 코드를 추가할 수 있습니다. 주석을 트랜잭션으로 변환하거나 웹 성능 테스트에 유효성 검사 규칙을 추가하는 등의 작업을 위한 레코더 플러그 인을 만들 수도 있습니다.
 
@@ -118,7 +118,7 @@ ms.locfileid: "31978179"
 
 ## <a name="example"></a>예
 
-이 샘플에서는 사용자 지정된 웹 성능 테스트 레코더 플러그 인을 만들어 사용자 지정 동적 매개 변수 상관 관계 연결을 수행하는 방법을 보여 줍니다.
+이 샘플에서는 사용자 지정된 웹 성능 테스트 레코더 플러그 인을 만들어 사용자 지정 동적 매개 변수 상관 관계 연결을 수행하는 방법을 보여줍니다.
 
 > [!NOTE]
 > 전체 샘플 코드 목록은 이 항목의 맨 아래에 있습니다.
@@ -144,7 +144,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
 
 ## <a name="add-an-extraction-rule"></a>추출 규칙 추가
 
-응답을 찾았으면 추출 규칙을 추가해야 합니다. 이 코드 샘플 부분에서는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> 클래스를 사용하여 추출 규칙을 만든 다음 웹 성능 테스트에서 추출 규칙을 추가할 올바른 요청을 찾습니다. 각 결과 개체에는 웹 성능 테스트에서 올바른 요청을 가져오기 위해 코드에서 사용되는 DeclarativeWebTestItemId라는 새 속성이 추가되어 있습니다.
+응답을 찾았으면 추출 규칙을 추가해야 합니다. 이 코드 샘플 부분에서는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> 클래스를 사용하여 추출 규칙을 만든 다음, 웹 성능 테스트에서 추출 규칙을 추가할 올바른 요청을 찾습니다. 각 결과 개체에는 웹 성능 테스트에서 올바른 요청을 가져오기 위해 코드에서 사용되는 DeclarativeWebTestItemId라는 새 속성이 추가되어 있습니다.
 
 ```csharp
 ExtractionRuleReference ruleReference = new ExtractionRuleReference();

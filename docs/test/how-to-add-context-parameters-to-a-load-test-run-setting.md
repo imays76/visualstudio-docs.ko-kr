@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969108"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203756"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
 
@@ -36,9 +36,9 @@ ms.locfileid: "31969108"
 
 또한 다음과 같이 다른 부하 테스트 실행 설정에서 동일한 이름을 사용하는 컨텍스트 매개 변수에 다른 값을 할당하면 부하 테스트를 다른 환경에서 실행할 수 있습니다.
 
--   회사 스테이징 웹 서버 실행 설정: WebServer1=http://CorporateStagingWebServer라는 컨텍스트 매개 변수
+-   회사 스테이징 웹 서버 실행 설정: `WebServer1=http://CorporateStagingWebServer`라는 컨텍스트 매개 변수
 
--   회사 프로덕션 웹 서버 실행 설정: WebServer1=http://CorporateProductionWebServer라는 컨텍스트 매개 변수
+-   회사 프로덕션 웹 서버 실행 설정: `WebServer1=http://CorporateProductionWebServer`라는 컨텍스트 매개 변수
 
  **명령줄에서 실행 설정 변경**
 
@@ -64,9 +64,9 @@ ms.locfileid: "31969108"
 
      실행 설정에 이미 **컨텍스트 매개 변수** 폴더가 있는 경우 이 폴더를 마우스 오른쪽 단추로 클릭하고 **컨텍스트 매개 변수 추가**를 선택합니다.
 
-4.  속성 창에서 **이름** 값을 적절한 값(예: WebServer1)으로 변경합니다. 속성 창에서 **Value**를 사용할 매개 변수(예: http://CorporateStagingWebServer))로 변경합니다.
+4.  **속성** 창에서 **Name** 값을 적절한 값(예: WebServer1)으로 변경합니다. **속성** 창에서 **Value**을 사용할 매개 변수(예: `http://CorporateStagingWebServer`)로 변경합니다.
 
-5.  (선택 사항) **Value** 속성에 다른 문자열(예: http://CorporateProductionWebServer))을 사용하여 3-5단계를 반복합니다.
+5.  (선택 사항) **Value** 속성에 다른 문자열(예: `http://CorporateProductionWebServer`)을 사용하여 3-5단계를 반복합니다.
 
 6.  활성 상태로 설정할 실행 설정을 선택합니다. 실행 설정에 대한 바로 가기 메뉴를 열고 **활성 상태로 설정**을 선택합니다.
 

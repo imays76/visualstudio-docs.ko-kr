@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 65331aa24eee140bcba983f1360c02f0227905fe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b1920037b84871b388a1cc746b634b73577efd89
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750856"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179578"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>코딩된 웹 성능 테스트 생성 및 실행
 
@@ -85,10 +85,10 @@ ms.locfileid: "34750856"
 ## <a name="qa"></a>Q&A
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Q: 두 개 이상의 테스트를 동시에 실행할 수 있습니까?
- **A:** 예, 솔루션 탐색기에서 상황에 맞는 메뉴를 사용합니다.
+ **A:** 예, **솔루션 탐색기**에서 상황에 맞는 메뉴를 사용합니다.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q: 코딩된 테스트를 생성하기 전이나 후에 데이터 소스를 추가해야 합니까?
- **A:** 코드는 자동으로 생성되므로 코딩된 테스트를 생성하기 전에 [데이터 소스](../test/add-a-data-source-to-a-web-performance-test.md)로 쉽게 만들 수 있습니다.
+ **A:** 코드는 자동으로 생성되므로 코딩된 테스트를 생성하기 전에 [데이터 소스](../test/add-a-data-source-to-a-web-performance-test.md)로 쉽게 추가할 수 있습니다.
 
  데이터 소스로 코딩된 테스트를 실행하면 다음과 같은 오류 메시지가 표시될 수 있습니다.
 
@@ -97,4 +97,4 @@ ms.locfileid: "34750856"
  이 오류는 해당하는 DataBindingAttribute 없이 테스트 클래스에 DataSourceAttribute를 정의한 경우에 발생할 수 있습니다. 이 오류를 해결하려면 적절한 DataBindingAttribute를 추가하고, 이를 삭제하거나 코드에서 주석 처리합니다.
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Q: 코딩된 테스트를 생성하기 전이나 후에 유효성 검사 및 추출 규칙을 추가해야 합니까?
- **A:** 코딩된 테스트를 생성하기 전에 유효성 검사 규칙과 추출 규칙을 실행하기 쉽지만 유효성 검사에는 [코딩된 UI 테스트](../test/use-ui-automation-to-test-your-code.md)를 사용하는 것이 좋습니다.
+ **A:** 코딩된 테스트를 생성하기 전에 유효성 검사 규칙과 추출 규칙을 추가하기 쉽지만 유효성 검사에는 [코딩된 UI 테스트](../test/use-ui-automation-to-test-your-code.md)를 사용하는 것이 좋습니다.

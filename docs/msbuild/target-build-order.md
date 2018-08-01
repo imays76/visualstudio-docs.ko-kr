@@ -1,7 +1,7 @@
 ---
 title: 대상 빌드 순서 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/06/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178958"
 ---
 # <a name="target-build-order"></a>대상 빌드 순서
 단일 대상에 대한 입력이 다른 대상의 출력을 사용하는 경우에는 대상의 순서를 지정해야 합니다. 다음과 같은 특성을 사용하여 대상이 실행되는 순서를 지정할 수 있습니다.  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/19/2018
   
  위의 코드는 `Serve` 대상이 `Chop` 대상과 `Cook` 대상에 종속됨을 지시합니다. MSBuild는 `Chop` 대상, `Cook` 대상, `Serve` 대상을 순서대로 실행합니다.  
   
-## <a name="beforetargets-and-after-targets"></a>이전 대상 및 이후 대상  
+## <a name="beforetargets-and-aftertargets"></a>BeforeTargets 및 AfterTargets  
  MSBuild 4.0에서는 `BeforeTargets` 및 `AfterTargets` 특성을 사용하여 대상 순서를 지정할 수 있습니다.  
   
  다음 스크립트를 고려해 보세요.  
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/19/2018
 </Target>  
 ```  
   
-## <a name="determining-the-target-build-order"></a>대상 빌드 순서 결정  
+## <a name="determine-the-target-build-order"></a>대상 빌드 순서 결정  
  MSBuild는 다음처럼 대상 빌드 순서를 결정합니다.  
   
 1.  `InitialTargets` 대상이 실행됩니다.  
@@ -115,7 +116,7 @@ ms.lasthandoff: 04/19/2018
   
 4.  대상이 실행되기 전에 `DependsOnTargets` 대상이 실행됩니다.  
   
-5.  대상이 실행되기 전에 `BeforeTargets` 특성에 해당 대상이 나열되어 있는 모든 대상이 실행됩니다.  
+5.  대상을 실행하거나 건너뛰기 전에는 `BeforeTargets` 특성에 해당 대상이 나열되어 있는 모든 대상이 실행됩니다.  
   
 6.  대상이 실행되기 전에 `Inputs` 특성 및 `Outputs` 특성을 비교합니다. MSBuild는 해당하는 하나 이상의 입력 파일과 관련하여 출력 파일이 오래된 것으로 확인되면 대상을 실행합니다. 그렇지 않으면 MSBuild는 대상을 건너뜁니다.  
   

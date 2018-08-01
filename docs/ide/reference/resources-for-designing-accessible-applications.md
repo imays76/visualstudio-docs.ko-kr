@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c151c371346287ce27814d11540d7227bc058c86
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704176"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179023"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>액세스 가능한 응용 프로그램 설계를 위한 리소스
 
@@ -45,13 +45,13 @@ ms.locfileid: "33704176"
 
 ## <a name="websites"></a>웹 사이트
 
--   [연습: 이미지 컨트롤, 메뉴 컨트롤 및 AutoPostBack을 사용하기 위한 내게 필요한 옵션 지침](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 이 항목에서는 샘플 웹 페이지에 내게 필요한 옵션이 있는 컨트롤을 포함하는 방법과 웹에 대한 내게 필요한 옵션의 몇 가지 설계 팁을 단계적으로 설명합니다.
+-   [연습: 이미지 컨트롤, 메뉴 컨트롤 및 자동 포스트백을 사용하기 위한 내게 필요한 옵션 지침](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 이 항목에서는 샘플 웹 페이지에 내게 필요한 옵션이 있는 컨트롤을 포함하는 방법과 웹에 대한 내게 필요한 옵션의 몇 가지 설계 팁을 단계적으로 설명합니다.
 
 -   **DHTML을 사용하여 내게 필요한 옵션이 있는 웹 페이지 만들기** 이 기술 문서에서는 내게 필요한 옵션을 지원하는 HTML 4.0 요소와 내게 필요한 옵션의 웹 설계 팁을 설명합니다. 자세한 내용은 [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx)를 참조하세요.
 
 ### <a name="third-party-resources"></a>타사 리소스
 
--   **W3C의 웹 콘텐츠에 대한 내게 필요한 옵션 지침** 이 웹 사이트에는 내게 필요한 옵션이 있는 웹 사이트 개발에 필요한 지침 및 기술이 있습니다. 자세한 내용은 [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)를 참조하세요.
+-   **W3C(World Wide Web 컨소시엄)의 웹 콘텐츠에 대한 내게 필요한 옵션 지침** 이 웹 사이트에는 내게 필요한 옵션이 있는 웹 사이트 개발에 필요한 지침 및 기술이 있습니다. 자세한 내용은 [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bed3140653e586ee4fb4899e6eba2b83f97035b0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079098"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178564"
 ---
 # <a name="item-definitions"></a>항목 정의
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0에서는 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 요소를 사용하여 프로젝트 파일에서 항목의 정적 선언을 수행할 수 있습니다. 그러나 메타데이터는 모든 항목에 대해 동일하더라도 항목 수준에만 추가할 수 있습니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5부터 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md)이라는 프로젝트 요소가 이 제한 사항을 해결합니다. *ItemDefinitionGroup*을 사용하면 명명된 항목 형식의 모든 항목에 기본 메타데이터 값을 추가하는 항목 정의 집합을 정의할 수 있습니다.  
@@ -144,7 +144,7 @@ ms.locfileid: "39079098"
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>ItemDefinitionGroup에서 조건 사용  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>ItemDefinitionGroup에서 조건 사용  
  ItemDefinitionGroup에서 조건을 사용하여 메타데이터의 포함 여부를 제어할 수 있습니다. 예:  
   
 ```xml  
@@ -190,7 +190,7 @@ ms.locfileid: "39079098"
 
 위 예제에서 Condition은 항목 "yes"에 대한 항목 "i"의 메타데이터 값을 참조하므로 값 "m1"으로 설정됩니다. 
   
-## <a name="overriding-and-deleting-metadata"></a>메타데이터 재정의 및 삭제  
+## <a name="override-and-delete-metadata"></a>메타데이터 재정의 및 삭제  
  ItemDefinitionGroup 요소에 정의된 메타데이터는 메타데이터 값을 공백으로 설정하여 나중에 ItemDefinitionGroup 요소에서 재정의할 수 있습니다. 또한 빈 값으로 설정하면 메타데이터 항목을 효과적으로 삭제할 수 있습니다. 예:  
   
 ```xml  

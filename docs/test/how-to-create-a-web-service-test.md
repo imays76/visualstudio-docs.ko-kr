@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970706"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180076"
 ---
 # <a name="how-to-create-a-web-service-test"></a>방법: 웹 서비스 테스트 만들기
 
@@ -71,7 +71,7 @@ ms.locfileid: "31970706"
     > [!NOTE]
     > SOAP 본문에서 데이터 바인딩을 사용하면 `{{DataSourceName.TableName.ColumnName}}` 구문을 사용하여 자리 표시자 값을 데이터 바인딩 값으로 바꿀 수 있습니다.
 
-13. 테스트를 실행합니다. 웹 성능 테스트 결과 뷰어의 위쪽 창에서 웹 서비스 요청을 선택합니다. 아래쪽 창에서 웹 브라우저 탭을 선택합니다. 웹 서비스에서 반환되는 XML및 작업 결과가 표시됩니다.
+13. 테스트를 실행합니다. **웹 성능 테스트 결과 뷰어**의 위쪽 창에서 웹 서비스 요청을 선택합니다. 아래쪽 창에서 [웹 브라우저] 탭을 선택합니다. 웹 서비스에서 반환되는 XML및 작업 결과가 표시됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

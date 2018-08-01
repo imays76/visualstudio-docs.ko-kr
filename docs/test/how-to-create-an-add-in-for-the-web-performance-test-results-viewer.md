@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751678"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177255"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>방법: 웹 성능 테스트 결과 뷰어에 대한 Visual Studio 추가 기능 만들기
 
-다음 네임스페이스를 사용하여 웹 성능 테스트 결과 뷰어의 UI를 확장할 수 있습니다.
+다음 네임스페이스를 사용하여 **웹 성능 테스트 결과 뷰어**의 UI를 확장할 수 있습니다.
 
 -   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
@@ -28,7 +28,7 @@ ms.locfileid: "34751678"
 
 또한 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* 폴더에 있는 LoadTestPackage DLL에 대한 참조를 추가해야 합니다.
 
--   웹 성능 테스트 결과 뷰어의 UI를 확장하려면 Visual Studio 추가 기능과 사용자 정의 컨트롤을 만들어야 합니다. 다음 절차에서는 추가 기능 및 사용자 정의 컨트롤을 만드는 방법과 웹 성능 테스트 결과 뷰어의 UI를 확장하는 데 필요한 클래스를 구현하는 방법에 대해 설명합니다.
+-   **웹 성능 테스트 결과 뷰어**의 UI를 확장하려면 Visual Studio 추가 기능과 사용자 정의 컨트롤을 만들어야 합니다. 다음 절차에서는 추가 기능 및 사용자 정의 컨트롤을 만드는 방법과 **웹 성능 테스트 결과 뷰어**의 UI를 확장하는 데 필요한 클래스를 구현하는 방법에 대해 설명합니다.
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>ASP.NET 웹 응용 프로그램과 웹 성능 및 부하 테스트 프로젝트를 포함하는 솔루션 만들기 또는 열기
 
@@ -216,7 +216,7 @@ ms.locfileid: "34751678"
     using WebPerfTestResultsViewerControl;
     ```
 
-14. Connect.cs 파일의 맨 아래로 스크롤합니다. 웹 성능 테스트 결과 뷰어 인스턴스가 둘 이상 열려 있는 경우에는 <xref:System.Windows.Forms.UserControl>에 대한 GUID 목록을 추가해야 합니다. 나중에 이 목록을 사용하는 코드를 추가합니다.
+14. Connect.cs 파일의 맨 아래로 스크롤합니다. **웹 성능 테스트 결과 뷰어** 인스턴스가 둘 이상 열려 있는 경우에는 <xref:System.Windows.Forms.UserControl>에 대한 GUID 목록을 추가해야 합니다. 나중에 이 목록을 사용하는 코드를 추가합니다.
 
      문자열의 두 번째 List는 나중에 코딩할 OnDiscconection 메서드에 사용됩니다.
 
@@ -227,7 +227,7 @@ ms.locfileid: "34751678"
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. Connect.cs 파일은 <xref:Extensibility.IDTExtensibility2> 클래스에서 Connect라는 클래스를 인스턴스화하며, Visual Studio 추가 기능을 구현하기 위한 몇 가지 메서드도 포함합니다. 그 중 하나는 추가 기능이 로드되고 있다는 알림을 받는 OnConnection 메서드입니다. OnConnection 메서드에서 LoadTestPackageExt 클래스를 사용하여 웹 성능 테스트 결과 뷰어용 확장성 패키지를 만듭니다. OnConnection 메서드에 다음 코드를 추가합니다.
+15. Connect.cs 파일은 <xref:Extensibility.IDTExtensibility2> 클래스에서 Connect라는 클래스를 인스턴스화하며, Visual Studio 추가 기능을 구현하기 위한 몇 가지 메서드도 포함합니다. 그 중 하나는 추가 기능이 로드되고 있다는 알림을 받는 OnConnection 메서드입니다. OnConnection 메서드에서 LoadTestPackageExt 클래스를 사용하여 **웹 성능 테스트 결과 뷰어**용 확장성 패키지를 만듭니다. OnConnection 메서드에 다음 코드를 추가합니다.
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -283,7 +283,7 @@ ms.locfileid: "34751678"
 
 2.  **응용 프로그램** 탭을 선택하고 **대상 프레임워크** 드롭다운 목록을 선택한 다음, **.NET Framework 4**를 선택하고 속성을 닫습니다.
 
-     이 단계는 웹 성능 테스트 결과 뷰어를 확장하는 데 필요한 DLL 참조를 지원하기 위해 필요합니다.
+     이 단계는 **웹 성능 테스트 결과 뷰어**를 확장하는 데 필요한 DLL 참조를 지원하는 데 필요합니다.
 
 3.  솔루션 탐색기에서 WebPerfTestResultsViewerControl 프로젝트의 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
 
@@ -347,7 +347,7 @@ ms.locfileid: "34751678"
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>웹 테스트 결과 뷰어용 새 VS 추가 기능을 실행하려면
 
-1.  웹 성능 테스트를 실행하면 웹 성능 테스트 결과 뷰어에 WebPerfTestResultsViewerAddin 추가 기능에 해당하는 새 탭이 샘플이라는 제목으로 표시됩니다.
+1.  웹 성능 테스트를 실행하면 **웹 성능 테스트 결과 뷰어**에 WebPerfTestResultsViewerAddin 추가 기능에 해당하는 새 탭이 샘플이라는 제목으로 표시됩니다.
 
 2.  이 탭을 선택하여 DataGridView에 표시된 속성을 확인합니다.
 

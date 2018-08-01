@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3678e418680d034b3699286fd6e6a182936c0f8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b745920a6afd4fb07d1904b7587e32350bb796a3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945899"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177840"
 ---
 # <a name="al-assembly-linker-task"></a>AL(어셈블리 링커) 작업
 AL 작업은 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]와 함께 배포되는 도구인 *AL.exe*를 래핑합니다. 이 어셈블리 링커 도구는 모듈 또는 리소스 파일에 해당하는 하나 이상의 파일에 있는 매니페스트로 어셈블리를 생성하는 데 사용됩니다. 컴파일러 및 개발 환경에서 이러한 기능을 이미 제공할 수 있으므로 이 작업을 직접 사용할 필요가 없는 경우가 많습니다. 어셈블리 링커는 혼합 언어 개발에서 생성될 수 있는 것과 같은 여러 구성 요소 파일에서 단일 어셈블리를 만들어야 하는 개발자에게 가장 유용합니다. 이 작업은 모듈을 단일 어셈블리 파일로 결합하지 않습니다. 결과 어셈블리가 올바르게 로드되려면 여전히 개별 모듈이 분산되어야 하고 사용 가능해야 하기 때문입니다. *AL.exe*에 대한 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)를 참조하세요.  
@@ -59,7 +59,7 @@ AL 작업은 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]와 
 |`ProductVersion`|선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리의 `ProductVersion` 필드에 대한 문자열을 지정합니다. 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/productv[ersion]` 옵션에 대한 설명서를 참조하세요.|  
 |`ResponseFiles`|선택적 `String[]` 매개 변수입니다.<br /><br /> 어셈블리 링커를 통과하기 위한 추가 옵션을 포함하는 응답 파일을 지정합니다.|  
 |`SdkToolsPath`|선택적 `String` 매개 변수입니다.<br /><br /> resgen.exe와 같은 SDK 도구에 대한 경로를 지정합니다.|  
-|`SourceModules`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 어셈블리로 컴파일할 하나 이상의 모듈입니다. 모듈은 결과 어셈블리의 매니페스트에 나열되며 어셈블리가 로드되기 위해 여전히 분산되고 사용 가능해야 합니다. 이 매개 변수로 전달된 항목은 작업이 파일을 복사하는 경로 및 파일 이름을 지정하는 `Target`이라는 추가 메타데이터를 포함할 수 있습니다. 작업은 파일을 복사한 후에 이 새 파일을 어셈블리로 컴파일합니다. 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)에 대한 설명서를 참조하세요. 이 매개 변수는 특정 스위치 없이 Al.exe로 전달되는 모듈 목록에 해당합니다.|  
+|`SourceModules`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 어셈블리로 컴파일할 하나 이상의 모듈입니다. 모듈은 결과 어셈블리의 매니페스트에 나열되며 어셈블리가 로드되기 위해 여전히 분산되고 사용 가능해야 합니다. 이 매개 변수로 전달된 항목은 작업이 파일을 복사하는 경로 및 파일 이름을 지정하는 `Target`이라는 추가 메타데이터를 포함할 수 있습니다. 작업은 파일을 복사한 후에 이 새 파일을 어셈블리로 컴파일합니다. 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)에 대한 설명서를 참조하세요. 이 매개 변수는 특정 스위치 없이 *Al.exe*로 전달되는 모듈 목록에 해당합니다.|  
 |`TargetType`|선택적 `String` 매개 변수입니다.<br /><br /> 출력 파일의 파일 형식 즉, `library`(코드 라이브러리), `exe`(콘솔 응용 프로그램) 또는 `win`(Windows 기반 응용 프로그램)을 지정합니다. 기본값은 `library`입니다. 이 매개 변수는 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/t[arget]` 옵션에 해당합니다.|  
 |`TemplateFile`|선택적 `String` 매개 변수입니다.<br /><br /> culture 필드를 제외한 모든 어셈블리 메타데이터를 상속받을 상위 어셈블리를 지정합니다. 지정된 어셈블리에는 강력한 이름이 있어야 합니다.<br /><br /> `TemplateFile` 매개 변수를 사용하여 만든 어셈블리는 위성 어셈블리가 됩니다. 이 매개 변수는 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/template` 옵션에 해당합니다.|  
 |`Timeout`|선택적 `Int32` 매개 변수입니다.<br /><br /> 작업 실행 파일이 얼마 후에 종료될 지를 밀리초 단위로 지정합니다. 기본값은 시간 제한이 없음을 나타내는 `Int.MaxValue`입니다.|  

@@ -13,24 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 121be2e1eb608bde001422282c4387bb5a7290e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967959"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176764"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>테스트 조합을 편집하여 부하 테스트 시나리오의 웹 브라우저 형식 지정
 
 *브라우저 조합*을 통해 부하 테스트 시나리오에서 부하를 보다 사실적으로 시뮬레이션할 수 있습니다. 이 경우 단일 웹 브라우저가 아니라 서로 다른 종류의 웹 브라우저로 구성된 조합을 사용하여 부하가 생성됩니다. 따라서 응용 프로그램과 함께 사용될 웹 브라우저를 보다 정확하게 테스트할 수 있습니다.
 
- 브라우저 조합에서는 부하 테스트 시나리오에서 가상 사용자가 특정 웹 브라우저 종류를 실행할 가능성을 지정합니다. 부하 테스트를 만들 때 둘 이상의 웹 브라우저를 통해 부하가 생성되도록 시뮬레이션할 수 있습니다. 제공된 웹 브라우저 집합의 웹 브라우저 종류를 조합에 추가하면 선택한 웹 브라우저에 대한 관련 헤더 집합이 웹 성능 테스트 시 전송되는 각 HTTP 요청에 추가됩니다.
+ 브라우저 조합에서는 부하 테스트 시나리오에서 가상 사용자가 특정 웹 브라우저 종류를 실행할 가능성을 지정합니다. 부하 테스트를 만들 때 둘 이상의 웹 브라우저를 통해 부하가 생성되도록 시뮬레이트할 수 있습니다. 제공된 웹 브라우저 집합의 웹 브라우저 종류를 조합에 추가하면 선택한 웹 브라우저에 대한 관련 헤더 집합이 웹 성능 테스트 시 전송되는 각 HTTP 요청에 추가됩니다.
 
  브라우저 조합은 다른 목록 옵션과 마찬가지로 작동합니다. 웹 브라우저 종류는 브라우저 조합을 기반으로 가상 사용자와 임의로 연결됩니다. 해당 사용자의 테스트는 조합에 지정된 가능성에 따라 특정 웹 브라우저에서 실행됩니다.
 
  브라우저 조합을 지정한 후 필요에 따라 나중에 웹 브라우저 종류를 조합에 추가하고 제거할 수 있습니다. 목록 컨트롤을 사용하여 브라우저 조합의 분포를 변경할 수도 있습니다. 목록 컨트롤을 통해 시나리오의 브라우저 분포를 쉽게 조정할 수 있습니다.
 
-## <a name="adding-new-browsers-to-a-scenario"></a>시나리오에 새 브라우저 추가
+## <a name="add-new-browsers-to-a-scenario"></a>시나리오에 새 브라우저 추가
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>시나리오에 새 브라우저를 추가하려면
 
@@ -47,7 +47,7 @@ ms.locfileid: "31967959"
 
 4.  브라우저 추가를 마쳤으면 **확인**을 선택합니다.
 
-##  <a name="EditingTestMixSpecifyBrowserRemovingBrowserTypes"></a> 시나리오에서 브라우저 제거
+##  <a name="remove-browsers-from-a-scenario"></a>시나리오에서 브라우저 제거
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>시나리오에서 브라우저를 제거하려면
 
@@ -63,7 +63,7 @@ ms.locfileid: "31967959"
 
 5.  브라우저 제거를 마쳤으면 **확인**을 선택합니다.
 
-## <a name="about-the-mix-control"></a>목록 컨트롤 정보
+## <a name="about-the-mix-control"></a>조합 제어 정보
 
  목록 컨트롤을 사용하면 부하 테스트 시나리오에서 여러 테스트, 브라우저 종류 또는 네트워크 형식 간에 부하가 분산되는 백분율을 조정할 수 있습니다. 슬라이더를 움직이면 백분율 값이 조정됩니다. 브라우저 형식에 대한 조합을 조정하면 부하 테스트 시나리오에서 가상 사용자가 특정 브라우저 프로필을 실행할 가능성이 지정됩니다.
 

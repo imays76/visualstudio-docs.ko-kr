@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5fffd9ac865b281dc921997f48d7609a9429f64
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890229"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233154"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터
 
@@ -26,9 +26,9 @@ Android용 Visual Studio 에뮬레이터는 Android 장치를 에뮬레이트하
 > - Visual Studio 2015 이후에는 Android용 Visual Studio 에뮬레이터가 지원되지 않습니다.
 > - Android 6.0 이상인 에뮬레이터 이미지는 Android용 Visual Studio 에뮬레이터에서 사용할 수 없습니다.
 > - Google Android 에뮬레이터는 이제 [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v)를 지원합니다.
-> - Apache Cordova용 Visual Studio Tools는 Google Android 에뮬레이터와 함께 작동합니다. 자세한 내용은 [Android에서 Apache Cordova 앱 실행](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)(이 문서에서 설명된 대로 더 이상 Hyper-v를 사용 중지할 필요가 없음)을 참조하세요.
+> - Apache Cordova용 Visual Studio Tools는 Google Android 에뮬레이터와 함께 작동합니다. 자세한 내용은 [Android에서 Apache Cordova 앱 실행](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator)(이 문서에서 설명된 대로 더 이상 Hyper-v를 사용 중지할 필요가 없음)을 참조하세요.
 >
-> Google Android 에뮬레이터를 구성하고 사용하는 방법에 대한 자세한 내용은 [Android 에뮬레이터 설정](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)을 참조하세요.
+> Google Android Emulator를 구성하고 사용하는 방법에 대한 자세한 내용은 [Android Emulator 설정](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)을 참조하세요.
   
  Android용 Visual Studio 에뮬레이터는 실제 장치와 비슷한 성능을 제공하도록 설계되었습니다. 하지만 앱을 게시하기 전에 물리적 장치에서 앱을 테스트하는 것이 좋습니다.  
   
@@ -51,7 +51,7 @@ Android용 Visual Studio 에뮬레이터는 Android 장치를 에뮬레이트하
 ##  <a name="Requirements"></a> 시스템 요구 사항 및 이전 버전과의 호환성  
  Android용 Visual Studio 에뮬레이터의 하드웨어, 소프트웨어 및 구성 요구 사항에 대한 중요한 내용을 보려면 다음 항목을 참조하세요.  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Visual Studio Emulator for Android에 대한 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
  Android용 Visual Studio 에뮬레이터를 사용하려면 Visual Studio 2015가 필요합니다. 이전 버전의 Visual Studio와 호환되지 않습니다.  
   

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c323fd5f5f54bbc5c53934505c43dd20a9d58591
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 894328fed089ea631af41f7aa7ef1f08d6dc4d8f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950493"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179504"
 ---
 # <a name="publish-page-project-designer"></a>프로젝트 디자이너, 게시 페이지
 **프로젝트 디자이너** 의 **게시** 페이지를 통해 ClickOnce 배포를 위한 속성을 구성합니다.
@@ -43,7 +43,7 @@ ms.locfileid: "31950493"
 
  응용 프로그램을 **게시 위치** 에서 직접 실행할지( **온라인으로만 응용 프로그램 사용 가능** 선택 시), 또는 설치하여 **시작** 메뉴 및 **제어판** 의 **프로그램 추가/제거** 항목에 추가할지( **오프라인으로도 응용 프로그램 사용 가능** 선택 시)를 결정합니다.
 
- WPF 웹 브라우저 응용 프로그램의 경우 온라인으로만 사용 가능하므로, **오프라인으로도 응용 프로그램 사용 가능** 옵션을 사용할 수 없습니다.
+ WPF 웹 브라우저 앱의 경우 온라인으로만 사용 가능하므로, **오프라인으로도 응용 프로그램 사용 가능** 옵션을 사용할 수 없습니다.
 
  **응용 프로그램 파일**
 

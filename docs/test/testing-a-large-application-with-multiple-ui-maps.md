@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c87a8f350ecd38a4f0d1f8afd6918b560645e8f4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 126d5435bf5f5aa5e89120b1767a616d8ac35d51
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977766"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180375"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>여러 UI 맵이 포함된 대형 응용 프로그램 테스트
 
@@ -83,7 +83,7 @@ ms.locfileid: "31977766"
 
 다음 예는 다양한 UI 맵에서 생성된 클래스로 표현되는 각 구성 요소 및 해당 자식 컨트롤에 액세스할 수 있는 유틸리티 클래스의 일부입니다.
 
-이 예제에서는 `Contoso`라는 웹 응용 프로그램에 홈 페이지, 제품 페이지 및 쇼핑 카트 페이지가 있습니다. 이러한 각 페이지는 브라우저 창인 공통 최상위 창을 공유합니다. 각 페이지에 대한 UI 맵이 있으며 유틸리티 클래스에는 다음과 유사한 코드가 있습니다.
+이 예제에서는 `Contoso`라는 웹 응용 프로그램에 홈페이지, 제품 페이지 및 쇼핑 카트 페이지가 있습니다. 이러한 각 페이지는 브라우저 창인 공통 최상위 창을 공유합니다. 각 페이지에 대한 UI 맵이 있으며 유틸리티 클래스에는 다음과 유사한 코드가 있습니다.
 
 ```csharp
 using ContosoProject.UIMaps;

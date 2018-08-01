@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ae74ed310da6f937dcadf168630102c004877
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081441"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176117"
 ---
 # <a name="msbuild-targets"></a>MSBuild 대상
 대상은 특정 순서로 작업을 그룹화하며 빌드 프로세스를 더 작은 단위로 팩터링될 수 있도록 합니다. 예를 들어 하나의 대상이 빌드에 대한 준비를 위해 출력 디렉터리에서 모든 파일을 삭제할 수 있는 반면 다른 대상은 프로젝트에 대한 입력을 컴파일하고 빈 디렉터리에 배치합니다. 작업에 대한 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
   
-## <a name="declaring-targets-in-the-project-file"></a>프로젝트 파일에서 대상 선언  
+## <a name="declare-targets-in-the-project-file"></a>프로젝트 파일에서 대상 선언  
  [Target](../msbuild/target-element-msbuild.md) 요소로 프로젝트 파일에 대상을 선언합니다. 예를 들어 다음 XML은 Construct라는 대상을 만든 다음 컴파일 항목 형식으로 Csc 작업을 호출합니다.  
   
 ```xml  

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6ed3212affbcc7cee3587780116d435b19a4706f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968634"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178415"
 ---
 # <a name="edit-load-tests"></a>부하 테스트 편집
 
-부하 테스트는 웹 성능 테스트 또는 단위 테스트를 실행하여 많은 사용자가 동시에 서버에 액세스하는 것을 시뮬레이션합니다. 부하 테스트를 사용하여 응용 프로그램 스트레스 및 성능 데이터에 액세스할 수 있습니다. 부하 테스트에서 사용자 부하 및 네트워크 형식과 같은 여러 부하 조건을 에뮬레이트하도록 구성할 수 있습니다.
+부하 테스트는 웹 성능 테스트 또는 단위 테스트를 실행하여 많은 사용자가 동시에 서버에 액세스하는 것을 시뮬레이트합니다. 부하 테스트를 사용하여 응용 프로그램 스트레스 및 성능 데이터에 액세스할 수 있습니다. 부하 테스트에서 사용자 부하 및 네트워크 형식과 같은 여러 부하 조건을 에뮬레이트하도록 구성할 수 있습니다.
 
 > [!NOTE]
 > 부하 테스트는 Visual Studio 2017 Enterprise Edition에서만 사용할 수 있습니다.
@@ -37,13 +37,13 @@ ms.locfileid: "31968634"
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>성능 카운터 집합 구성 및 관리
 
-부하 테스트에서는 기술별로 구성된 명명된 카운터 집합을 제공하며 이러한 카운터 집합은 성능 카운터 데이터를 분석할 때 유용합니다. 카운터 집합에는 부하 테스트, IIS, ASP.NET 및 SQL이 포함됩니다. 부하 테스트 새로 만들기 마법사를 사용하여 부하 테스트를 만들 때 부하 테스트에 포함되도록 지정한 컴퓨터에 대해 미리 정의되고 중요한 초기 카운터 집합이 구성됩니다. 부하 테스트 편집기에서 카운터를 관리합니다.
+부하 테스트에서는 기술별로 구성된 명명된 카운터 집합을 제공하며 이러한 카운터 집합은 성능 카운터 데이터를 분석할 때 유용합니다. 카운터 집합에는 부하 테스트, IIS, ASP.NET 및 SQL이 포함됩니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 부하 테스트에 포함되도록 지정한 컴퓨터에 대해 미리 정의되고 중요한 초기 카운터 집합이 구성됩니다. **부하 테스트 편집기**에서 카운터를 관리합니다.
 
 자세한 내용은 [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)을 참조하세요.
 
 ## <a name="configure-and-manage-load-test-run-settings"></a>부하 테스트 실행 설정 구성 및 관리
 
-실행 설정은 부하 테스트 실행 방식에 영향을 미치는 속성입니다. 실행 설정은 속성 창에서 범주별로 구성됩니다.
+실행 설정은 부하 테스트 실행 방식에 영향을 미치는 속성입니다. 실행 설정은 **속성** 창에서 범주별로 구성됩니다.
 
 자세한 내용은 [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md) 및 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751535"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179010"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>방법: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기
 
@@ -56,7 +56,7 @@ ms.locfileid: "34751535"
     1.  부하 테스트를 완료한 후 **부하 테스트 결과** 페이지의 도구 모음에서 **Excel 보고서 만들기** 단추를 선택합니다.
 
         > [!NOTE]
-        > 웹 성능 테스트 결과 뷰어 도구 모음에서 **Excel 보고서 만들기** 단추를 사용할 수 없는 경우 Microsoft Excel을 한 번 실행하여 단추를 사용하도록 설정해야 할 수 있습니다. Visual Studio Enterprise를 설치하면 Visual Studio Enterprise 부하 테스트 추가 기능이 컴퓨터의 Microsoft Excel에 복사되지만, 추가 기능 설치 프로세스를 완료하려면 Microsoft Excel을 실행해야 합니다.
+        > **웹 성능 테스트 결과 뷰어** 도구 모음에서 **Excel 보고서 만들기** 단추를 사용할 수 없는 경우 Microsoft Excel을 한 번 실행하여 단추를 사용하도록 설정해야 할 수 있습니다. Visual Studio Enterprise를 설치하면 Visual Studio Enterprise 부하 테스트 추가 기능이 컴퓨터의 Microsoft Excel에 복사되지만, 추가 기능 설치 프로세스를 완료하려면 Microsoft Excel을 실행해야 합니다.
 
      Microsoft Excel이 열리고 **부하 테스트 보고서 생성** 마법사가 나타납니다.
 
@@ -111,7 +111,7 @@ ms.locfileid: "34751535"
     1.  부하 테스트를 완료한 후 **부하 테스트 결과** 페이지의 도구 모음에서 **Excel 보고서 만들기** 단추를 선택합니다.
 
         > [!NOTE]
-        > 웹 성능 테스트 결과 뷰어 도구 모음에서 **Excel 보고서 만들기** 단추를 사용할 수 없는 경우 Microsoft Excel을 한 번 실행하여 단추를 사용하도록 설정해야 할 수 있습니다. Visual Studio Enterprise를 설치하면 Visual Studio Enterprise 부하 테스트 추가 기능이 컴퓨터의 Microsoft Excel에 복사되지만, 추가 기능 설치 프로세스를 완료하려면 Microsoft Excel을 실행해야 합니다.
+        > **웹 성능 테스트 결과 뷰어** 도구 모음에서 **Excel 보고서 만들기** 단추를 사용할 수 없는 경우 Microsoft Excel을 한 번 실행하여 단추를 사용하도록 설정해야 할 수 있습니다. Visual Studio Enterprise를 설치하면 Visual Studio Enterprise 부하 테스트 추가 기능이 컴퓨터의 Microsoft Excel에 복사되지만, 추가 기능 설치 프로세스를 완료하려면 Microsoft Excel을 실행해야 합니다.
 
      Microsoft Excel이 열리고 **부하 테스트 보고서 생성** 마법사가 나타납니다.
 
