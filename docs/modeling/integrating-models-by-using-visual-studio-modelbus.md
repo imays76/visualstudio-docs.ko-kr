@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177281"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382050"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus를 사용하여 모델 통합
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus는 모델에 다른 도구에서 그리고 모델 간에 링크를 만드는 메서드를 제공 합니다. 예를 들어, 도메인 특정 언어 (DSL) 모델과 UML 모델을 연결할 수 있습니다. 통합 DSL 집합을 만들 수 있습니다.
@@ -127,10 +127,10 @@ ms.locfileid: "39177281"
 
 4.  모델의 요소를 참조하려는 경우 Company.FamilyTree.Person과 같이 사용자가 선택할 수 있는 형식의 목록을 추가할 수 있습니다.
 
-5.  클릭 **확인**를 클릭 하 고 **모든 템플릿 변환** 솔루션 탐색기 도구 모음에서입니다.
+5.  클릭 **확인**를 클릭 하 고 **모든 템플릿 변환** 에 **솔루션 탐색기** 도구 모음입니다.
 
     > [!WARNING]
-    >  올바른 모델이나 엔터티를 선택하지 않은 경우 확인 단추가 사용 가능한 것처럼 표시될 수 있지만 클릭해도 아무런 변화가 없습니다.
+    > 올바른 모델이나 엔터티를 선택하지 않은 경우 확인 단추가 사용 가능한 것처럼 표시될 수 있지만 클릭해도 아무런 변화가 없습니다.
 
 6.  Company.FamilyTree.Person과 같은 대상 형식 목록을 지정한 경우에는 Company.FamilyTree.Dsl.dll과 같은 대상 DSL의 DLL을 참조하는 어셈블리 참조를 DSL 프로젝트에 추가해야 합니다.
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177281"
 3.  디버깅 프로젝트의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 실험 인스턴스에서 각 DSL의 인스턴스인 파일을 추가합니다.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus는 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 항목인 모델에 대한 참조만 확인할 수 있습니다. 예를 들어 파일 시스템의 다른 부분에 있는 모델 파일에 대한 참조를 만들 수는 없습니다.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus는 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 항목인 모델에 대한 참조만 확인할 수 있습니다. 예를 들어 파일 시스템의 다른 부분에 있는 모델 파일에 대한 참조를 만들 수는 없습니다.
 
 4.  표시되는 DSL의 인스턴스에서 요소와 링크를 몇 개 만들고 해당 DSL을 저장합니다.
 

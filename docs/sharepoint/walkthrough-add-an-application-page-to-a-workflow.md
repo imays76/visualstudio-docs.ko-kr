@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 937fb2d5b41c2fce9fb11cc683f7abd771718e89
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 49cde761aa8974e80d81cfd038d65449c3c23a75
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119469"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379792"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>연습: 워크플로에 응용 프로그램 페이지 추가
   이 연습에서는 워크플로 프로젝트에는 워크플로에서 파생 된 데이터를 표시 하는 응용 프로그램 페이지를 추가 하는 방법에 설명 합니다. 항목에서 설명한 프로젝트 기반 [연습: 연결 및 초기화 폼을 사용 하 여 워크플로 만드는](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)합니다.  
@@ -75,7 +75,7 @@ ms.locfileid: "37119469"
   
 1.  경비 보고서 프로젝트를 선택한 다음, 메뉴 모음에서 **프로젝트** > **새 항목 추가**합니다.  
   
-2.  에 **템플릿** 창 선택 합니다 **응용 프로그램 페이지** 템플릿을 프로젝트 항목에 대 한 기본 이름을 사용 하 여 (**ApplicaitonPage1.aspx**), 선택한 합니다 **추가** 단추입니다.  
+2.  에 **템플릿** 창 선택 합니다 **응용 프로그램 페이지** 템플릿을 프로젝트 항목에 대 한 기본 이름을 사용 하 여 (**ApplicationPage1.aspx**), 선택한 합니다 **추가** 단추입니다.  
   
 3.  에 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx의 대체는 `PlaceHolderMain` 섹션을 다음:  
   
