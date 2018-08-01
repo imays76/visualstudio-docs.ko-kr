@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a3ff542ebb40ecd10a92db81b985a9ded461fa7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179036"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382424"
 ---
 # <a name="configure-load-test-run-settings"></a>부하 테스트 실행 설정 구성
 
@@ -33,7 +33,7 @@ ms.locfileid: "39179036"
 |-----------|-----------------------|
 |**부하 테스트에 더 많은 실행 설정 추가:** **부하 테스트 새로 만들기 마법사**를 실행할 때 만들어진 실행 설정 외에도 여러 가지 조건에서 테스트를 실행할 수 있도록 더 많은 실행 설정을 부하 테스트에 추가할 수 있습니다.|-   [방법: 부하 테스트에 실행 설정 추가](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**부하 테스트에 사용할 활성 실행 설정 지정:** 부하 테스트 편집기를 사용하여 부하 테스트에 사용할 실행 설정을 선택할 수 있습니다. 활성 실행 설정은 "[Active]"라는 접미사로 식별됩니다.|-   [방법: 부하 테스트에 대한 활성 실행 설정 선택](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**실행 설정 속성 편집:** 로깅 옵션(아래 참조)과 같은 실행 설정 속성을 편집하여 테스트 길이, 준비 시간, 보고되는 최대 오류 정보 수, 샘플링 주기, 연결 모델(웹 성능 테스트에만 해당), 결과 저장소 형식, 유효성 검사 수준, SQL 추적 등을 결정할 수 있습니다. 실행 설정에는 부하 테스트의 목표가 반영되어야 합니다.|-   [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)<br />-   [실행 설정 속성 변경](../test/load-test-run-settings-properties.md#LoadTestRunSettingsHowToChange)|
+|**실행 설정 속성 편집:** 로깅 옵션(아래 참조)과 같은 실행 설정 속성을 편집하여 테스트 길이, 준비 시간, 보고되는 최대 오류 정보 수, 샘플링 주기, 연결 모델(웹 성능 테스트에만 해당), 결과 저장소 형식, 유효성 검사 수준, SQL 추적 등을 결정할 수 있습니다. 실행 설정에는 부하 테스트의 목표가 반영되어야 합니다.|-   [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)<br />-   [실행 설정 속성 변경](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**부하 테스트 실행 설정의 테스트 반복 횟수 지정:** **테스트 반복** 속성을 구성하여 부하 테스트의 모든 시나리오에서 모든 웹 성능 및 단위 테스트를 실행할 횟수를 지정할 수 있습니다.|-   [방법: 실행 설정에서 테스트 반복 횟수 지정](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**부하 테스트 실행 설정의 샘플링 주기 지정:** **샘플링 주기** 속성을 구성하여 부하 테스트에서 성능 카운터 데이터가 수집되는 빈도를 지정할 수 있습니다.|-   [방법: 샘플링 주기 지정](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**타이밍 정보 저장소 옵션 지정:** **타이밍 정보 저장소** 속성을 구성하여 부하 테스트의 정보를 저장할 방식을 지정할 수 있습니다.|-   [방법: 타이밍 정보 저장소 속성 지정](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|

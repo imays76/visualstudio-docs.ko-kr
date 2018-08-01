@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335816"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276353"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 응용 프로그램에 대한 자세한 타이밍 데이터 수집
 이 섹션에서는 명령줄 도구에서 계측 방법을 사용하여 클라이언트(독립 실행형) 구성 요소에 대한 자세한 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.  
@@ -27,8 +27,8 @@ ms.locfileid: "34335816"
   
 |작업|관련 콘텐츠|  
 |----------|---------------------|  
-|**계측을 사용하여.NET Framework 응용 프로그램 프로파일링**|-   [방법: .NET 구성 요소 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**계측을 사용하여 C/C++ 응용 프로그램 프로파일링**|-   [방법: 네이티브 구성 요소 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**계측을 사용하여.NET Framework 응용 프로그램 프로파일링**|-   [방법: .NET 구성 요소 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**계측을 사용하여 C/C++ 응용 프로그램 프로파일링**|-   [방법: 네이티브 구성 요소 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**계층 상호 작용 데이터 추가**|-   [계층 상호 작용 데이터 수집](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>관련 작업
