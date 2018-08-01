@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 511e980b8c312803a82692042d7f88f389265c3a
-ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
+ms.openlocfilehash: 0f45cd451af252dbc62ea4ce0bc1d9edd90359a0
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36962582"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177294"
 ---
 # <a name="vbc-task"></a>Vbc 작업
 실행 파일(*.exe*), 동적 링크 라이브러리(*.dll*) 또는 코드 모듈(*.netmodule*)을 생성하는 *vbc.exe*를 래핑합니다. *vbc.exe*에 대한 자세한 내용은 [Visual Basic 명령줄 컴파일러](/dotnet/visual-basic/reference/command-line-compiler/index)를 참조하세요.  
@@ -45,7 +45,7 @@ ms.locfileid: "36962582"
 |`Deterministic`|선택적 `Boolean` 매개 변수입니다.<br/><br/> `true`인 경우 입력이 동일하면 컴파일 간에 이진 콘텐츠가 동일한 어셈블리를 컴파일러에서 출력하도록 합니다.<br/><br/>자세한 내용은 [-deterministic](/dotnet/visual-basic/reference/command-line-compiler/deterministic)을 참조하세요.|
 |`DisabledWarnings`|선택적 `String` 매개 변수입니다.<br /><br /> 지정한 경고를 표시하지 않습니다. 경고 식별자의 숫자 부분만 지정하면 됩니다. 경고가 여러 개인 경우 세미콜론으로 구분할 수 있습니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 스위치에 해당합니다.|  
 |`DocumentationFile`|선택적 `String` 매개 변수입니다.<br /><br /> 지정된 XML 파일에 대해 문서 주석을 처리합니다. 이 매개 변수는 `GenerateDocumentation` 특성을 재정의합니다. 자세한 내용은 [-doc](/dotnet/visual-basic/reference/command-line-compiler/doc)를 참조하세요.|  
-|`EmitDebugInformation`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업에서 디버깅 정보를 생성하여 .pdb 파일에 저장합니다. 자세한 내용은 [-debug(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)를 참조하세요.|  
+|`EmitDebugInformation`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업에서 디버깅 정보를 생성하여 *.pdb* 파일에 저장합니다. 자세한 내용은 [-debug(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)를 참조하세요.|  
 |`ErrorReport`|선택적 `String` 매개 변수입니다.<br /><br /> 작업에서 내부 컴파일러 오류를 보고하는 방식을 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   `prompt`<br />-   `send`<br />-   `none`<br /><br /> `prompt`가 지정되고 내부 컴파일러 오류가 발생하면 사용자에게 오류 데이터를 Microsoft에 보낼지 여부를 묻는 메시지가 표시됩니다.<br /><br /> `send`가 지정되고 내부 컴파일러 오류가 발생하면 작업에서 오류 데이터를 Microsoft에 보냅니다.<br /><br /> 기본값은 `none`으로, 오류를 텍스트 출력으로만 보고합니다.<br /><br /> 이 매개 변수는 *vbc.exe* 컴파일러의 [-errorreport](/dotnet/visual-basic/reference/command-line-compiler/errorreport) 스위치에 해당합니다.|  
 |`FileAlignment`|선택적 `Int32` 매개 변수입니다.<br /><br /> 출력 파일의 섹션에 맞출 위치(바이트)를 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   `512`<br />-   `1024`<br />-   `2048`<br />-   `4096`<br />-   `8192`<br /><br /> 이 매개 변수는 *vbc.exe* 컴파일러의 [-filealign](/dotnet/visual-basic/reference/command-line-compiler/filealign) 스위치에 해당합니다.|  
 |`GenerateDocumentation`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 문서 정보를 생성하여 이 정보를 작업에서 만든 실행 파일이나 라이브러리의 이름과 함께 XML 파일에 저장합니다. 자세한 내용은 [-doc](/dotnet/visual-basic/reference/command-line-compiler/doc)를 참조하세요.|  
@@ -59,7 +59,7 @@ ms.locfileid: "36962582"
 |`NoConfig`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 컴파일러에서 *vbc.rsp* 파일을 사용하지 않도록 지정합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-noconfig](/dotnet/visual-basic/reference/command-line-compiler/noconfig) 매개 변수에 해당합니다.|  
 |`NoLogo`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 컴파일러 배너 정보를 표시하지 않습니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-nologo](/dotnet/visual-basic/reference/command-line-compiler/nologo) 스위치에 해당합니다.|  
 |`NoStandardLib`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 컴파일러에서 표준 라이브러리를 참조하지 않도록 합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-nostdlib](/dotnet/visual-basic/reference/command-line-compiler/nostdlib) 스위치에 해당합니다.|  
-|`NoVBRuntimeReference`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 내부 전용입니다. true이면 Microsoft.VisualBasic.dll에 대한 자동 참조를 차단합니다.|  
+|`NoVBRuntimeReference`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 내부 전용입니다. true이면 *Microsoft.VisualBasic.dll*에 대한 자동 참조를 차단합니다.|  
 |`NoWarnings`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 작업에서 모든 경고를 표시하지 않습니다. 자세한 내용은 [-nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)을 참조하세요.|  
 |`Optimize`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 컴파일러 최적화를 사용할 수 있습니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-optimize](/dotnet/visual-basic/reference/command-line-compiler/optimize) 스위치에 해당합니다.|  
 |`OptionCompare`|선택적 `String` 매개 변수입니다.<br /><br /> 문자열 비교 방법을 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   `binary`<br />-   `text`<br /><br /> `binary` 값은 작업에서 이진 문자열 비교를 사용하도록 지정합니다. `text` 값은 작업에서 텍스트 문자열 비교를 사용하도록 지정합니다. 이 매개 변수의 기본값은 `binary`입니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) 스위치에 해당합니다.|  
@@ -86,7 +86,7 @@ ms.locfileid: "36962582"
 |`Verbosity`|선택적 `String` 매개 변수입니다.<br /><br /> 컴파일러의 출력에 대한 자세한 정도를 설정합니다. 자세한 정도는 `Quiet`, `Normal`(기본값) 또는 `Verbose`일 수 있습니다.|  
 |`WarningsAsErrors`|선택적 `String` 매개 변수입니다.<br /><br /> 오류로 처리할 경고 목록을 지정합니다. 자세한 내용은 [-warnaserror(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)를 참조하세요.<br /><br /> 이 매개 변수는 `TreatWarningsAsErrors` 매개 변수를 재정의합니다.|  
 |`WarningsNotAsErrors`|선택적 `String` 매개 변수입니다.<br /><br /> 오류로 처리하지 않을 경고 목록을 지정합니다. 자세한 내용은 [-warnaserror(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)를 참조하세요.<br /><br /> 이 매개 변수는 `TreatWarningsAsErrors` 매개 변수가 `true`로 설정된 경우에만 유용합니다.|  
-|`Win32Icon`|선택적 `String` 매개 변수입니다.<br /><br /> 파일 탐색기에서 출력 파일을 원하는 모양으로 표시하는 *.ico* 파일을 어셈블리에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) 스위치에 해당합니다.|  
+|`Win32Icon`|선택적 `String` 매개 변수입니다.<br /><br /> **파일 탐색기**에서 출력 파일을 원하는 모양으로 표시하는 *.ico* 파일을 어셈블리에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) 스위치에 해당합니다.|  
 |`Win32Resources`|선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스(*.res*) 파일을 출력 파일에 삽입합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) 스위치에 해당합니다.|  
   
 ## <a name="remarks"></a>설명  

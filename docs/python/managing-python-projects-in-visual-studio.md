@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a4374a389176273f7ceaa63b680868fd546398e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c28876a9bd8eaf055a5657047c966b0740b15765
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778523"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232272"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio의 Python 프로젝트
 
@@ -139,7 +139,18 @@ Visual Studio 프로젝트는 프로젝트 및 확장에 참조 추가를 지원
 
 IronPython으로 작업하는 경우 .NET 어셈블리에 참조를 추가하여 IntelliSense를 사용하도록 설정할 수 있습니다. 사용자 솔루션에 있는 .NET 프로젝트의 경우 Python 프로젝트에서 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**, **프로젝트** 탭을 차례로 선택한 후 원하는 프로젝트를 찾습니다. 별도로 다운로드한 DLL의 경우 원하는 대신 **찾아보기** 탭을 선택하여 원하는 DLL을 찾아봅니다.
 
-IronPython의 참조는 `clr.AddReference('AssemblyName')` 호출이 발생할 때까지 사용할 수 없으므로 어셈블리에 `clr.AddReference` 호출도 추가해야 합니다.
+IronPython의 참조는 `clr.AddReference('<AssemblyName>')`이 호출될 때까지 사용할 수 없으므로 어셈블리(일반적으로 코드의 시작 부분)에도 적절한 `clr.AddReference` 호출을 추가해야 합니다. 예를 들어 Visual Studio의 **IronPython Windows Forms 응용 프로그램** 프로젝트 템플릿에서 만든 코드는 파일의 맨 위에 두 개의 호출을 포함합니다.
+
+```python
+import clr
+clr.AddReference('System.Drawing')
+clr.AddReference('System.Windows.Forms')
+
+from System.Drawing import *
+from System.Windows.Forms import *
+
+# Other code omitted
+```
 
 ### <a name="webpi-projects"></a>WebPI 프로젝트
 

@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7d53a668014ba8f08b0715a0f0a02c351756435e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924475"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233089"
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin 환경 확인
 
@@ -30,9 +30,9 @@ ms.locfileid: "37924475"
 
 ## <a name="all-platforms"></a>모든 플랫폼
 
-Visual Studio에서 먼저 **도구 > 확장 및 업데이트**를 선택하고 Xamarin 구성 요소를 업데이트해야 하는지 확인합니다.
+Visual Studio에서 먼저 **도구** > **확장 및 업데이트**를 선택하고 Xamarin 구성 요소를 업데이트해야 하는지 확인합니다.
 
-그런 다음, **파일 > 새 프로젝트**를 사용하여 Visual Studio에서 새 Xamarin.Forms 솔루션을 만듭니다. 대화 상자에서 **Visual C# > 플랫폼 간**을 확장하고 **모바일 앱(Xamarin.Forms)** 을 선택한 후, 확인을 클릭합니다. 이어지는 대화 상자에서 **비어 있는 앱**을 선택합니다. **코드 공유 전략**에서 **.NET Standard**를 선택합니다. 확인을 클릭합니다.
+그런 다음, **파일** > **새 프로젝트**를 사용하여 Visual Studio에서 새 Xamarin.Forms 솔루션을 만듭니다. 대화 상자에서 **Visual C#** > **플랫폼 간**을 확장하고 **모바일 앱(Xamarin.Forms)** 을 선택한 후, **확인**을 클릭합니다. 이어지는 대화 상자에서 **비어 있는 앱**을 선택합니다. **코드 공유 전략**에서 **.NET Standard**를 선택합니다. **확인**을 클릭합니다.
 
 이러한 작업으로 공유 .NET Standard 2.0 라이브러리 프로젝트와 Android, iOS 및 UWP(유니버설 Windows 플랫폼)에 대한 응용 프로그램 프로젝트의 4개 프로젝트를 사용한 솔루션이 만들어집니다.
 
@@ -54,9 +54,9 @@ Visual Studio에서 먼저 **도구 > 확장 및 업데이트**를 선택하고 
 
   ![Visual Studio Emulator for Android를 디버그 대상으로 선택](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  자세한 내용은 [Introducing Visual Studio's Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)(Visual Studio Emulator for Android 소개) (Visual Studio ALM 블로그)를 참조하세요. 에뮬레이터를 작동시키는 중 문제가 발생하면 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요. **도구 > Android > Android Emulator 관리자**를 선택하여 에뮬레이터에 대한 새로운 장치 프로필을 만들 수도 있습니다.
+  자세한 내용은 [Introducing Visual Studio's Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)(Visual Studio Emulator for Android 소개) (Visual Studio ALM 블로그)를 참조하세요. 에뮬레이터를 작동하는 중 문제가 발생하면 [Visual Studio Emulator for Android 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요. **도구 > Android > Android Emulator 관리자**를 선택하여 에뮬레이터에 대한 새로운 장치 프로필을 만들 수도 있습니다.
 
-3. F5 키를 눌러 컴파일하고 프로그램을 Android 장치 또는 에뮬레이터에 배포합니다.
+3. **F5** 키를 눌러 컴파일하고 프로그램을 Android 장치 또는 에뮬레이터에 배포합니다.
 
 ## <a name="windows"></a>Windows
 
@@ -64,7 +64,7 @@ Visual Studio에서 먼저 **도구 > 확장 및 업데이트**를 선택하고 
 
 2.  **솔루션 플랫폼** 드롭다운 목록에서 **x86** 또는 **x64**를 선택합니다. **로컬 컴퓨터**를 선택합니다.
 
-3.  F5 키를 눌러 바탕 화면에 프로그램을 배포합니다.
+3.  **F5** 키를 눌러 바탕 화면에 프로그램을 배포합니다.
 
 ## <a name="ios"></a>iOS
 
@@ -76,19 +76,19 @@ Visual Studio에서 먼저 **도구 > 확장 및 업데이트**를 선택하고 
 
  ![IPhoneSimulator 빌드 대상 선택](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
 
- 시뮬레이터가 나열되지 않으면 Mac에서 Xcode를 시작하고 **Xcode > 기본 설정**을 선택한 후에 **다운로드**를 클릭합니다. **구성 요소** 제목에서 다운로드할 수 있는 시뮬레이터 버전이 표시되어야 합니다. 디버깅에 대한 추가 지침은 [iOS 디버깅](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator) 페이지에서 확인할 수 있습니다.
+ 시뮬레이터가 나열되지 않으면 Mac에서 Xcode를 시작하고 **Xcode** > **기본 설정**을 선택한 후에 **다운로드**를 클릭합니다. **구성 요소** 제목에서 다운로드할 수 있는 시뮬레이터 버전이 표시되어야 합니다. 디버깅에 대한 추가 지침은 [iOS 디버깅](/xamarin/ios/deploy-test/debugging-in-xamarin-ios) 페이지에서 확인할 수 있습니다.
 
 4.  Visual Studio 드롭다운에서 에뮬레이터 장치 대상을 선택합니다.
 
  ![iPhone 디버그 대상 선택](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
 
-5. F5 키를 눌러 디버거를 시작합니다. 앱을 조작할 Mac에서 시뮬레이터가 시작되고 동시에 Visual Studio에서 디버깅이 수행됩니다. 물리적 iPhone 또는 iPad가 Mac에 연결되어 있으면 여기에 나타나며, 해당 iPhone 또는 iPad를 대신 선택할 수 있습니다. 장치 또는 시뮬레이터가 나열되지 않으면 Mac에 대한 연결을 확인합니다. 위의 1단계에서 연결된 문서를 검토하거나 **도구 > iOS > Mac에 연결**로 이동합니다.
+5. **F5** 키를 눌러 디버거를 시작합니다. 앱을 조작할 Mac에서 시뮬레이터가 시작되고 동시에 Visual Studio에서 디버깅이 수행됩니다. 물리적 iPhone 또는 iPad가 Mac에 연결되어 있으면 여기에 나타나며, 해당 iPhone 또는 iPad를 대신 선택할 수 있습니다. 장치 또는 시뮬레이터가 나열되지 않으면 Mac에 대한 연결을 확인합니다. 위의 1단계에서 연결된 문서를 검토하거나 **도구** > **iOS** > **Mac에 연결**로 이동합니다.
 
-6.  Mac에 연결할 때 문제가 발생하면 [연결 문제 해결](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/)을 읽어 보세요.
+6.  Mac에 연결할 때 문제가 발생하면 [연결 문제 해결](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/)을 읽어보세요.
 
 7.  “No installed provisioning profiles match the installed iOS signing keys(설치된 프로비저닝 프로필이 설치된 iOS 서명 키와 일치하지 않습니다).”라는 오류가 표시되면 다음을 수행해 보세요.
 
-  - [Xcode에 사용자 계정 추가](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (영문)(apple.com)에 설명된 대로 Mac의 Xcode에 Apple Id 계정이 추가되어 있는지 확인합니다.  계정을 추가한 후 Visual Studio와 Xcode를 둘 다 다시 시작해야 합니다.
+  - [Add your account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1)(Xcode에 사용자 계정 추가)(apple.com)에 설명된 대로 Mac의 Xcode에 Apple Id 계정이 추가되어 있는지 확인합니다.  계정을 추가한 후 Visual Studio와 Xcode를 둘 다 다시 시작해야 합니다.
 
   - iOS 번들 서명 탭의 iOS 프로젝트 속성에서 활성 디버그 구성을 위한 사용자 지정 권한 부여 필드가 비어 있는지 확인합니다.  참고: 위의 오류 메시지가 발생하는 경우에만 이 설정을 제거합니다.
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051b7c7375c6b13a6f3805e358645eccdc0e33c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970951"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203965"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>방법: 네트워크 어댑터에 테스트 컨트롤러 또는 테스트 에이전트 바인딩
 
@@ -31,7 +31,7 @@ ms.locfileid: "31970951"
 >
 > 네트워크 어댑터가 둘 이상인 컴퓨터에 테스트 컨트롤러를 설치하는 경우 이 오류가 발생할 수 있습니다. 에이전트가 정상적으로 설치된 후 테스트를 실행할 때 비로소 이 문제가 발생할 수도 있습니다.
 
-## <a name="binding-a-test-controller-to-a-specific-network-adapter"></a>테스트 컨트롤러를 특정 네트워크 어댑터에 바인딩
+## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>테스트 컨트롤러를 특정 네트워크 어댑터에 바인딩
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>네트워크 어댑터의 IP 주소를 가져오려면
 

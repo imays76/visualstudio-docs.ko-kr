@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b292c0bf1bc80f811cbf2f845385f91987184674
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 3eb81e05a16eb504b14e94de2c1270057311b85a
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057374"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231599"
 ---
 # <a name="xsd-task"></a>XSD 작업
-소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구(xsd.exe)를 래핑합니다.  
+소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구(*xsd.exe*)를 래핑합니다.  
 
 > [!NOTE]
-> Visual Studio 2017에서 xsd.exe에 대한 C++ 프로젝트 지원이 사용되지 않습니다. **CppCodeProvider.dll**을 수동으로 GAC에 추가하여 **Microsoft.VisualC.CppCodeProvider** API를 계속 사용할 수 있습니다. 
+> Visual Studio 2017에서 *xsd.exe*에 대한 C++ 프로젝트 지원이 사용되지 않습니다. *CppCodeProvider.dll*을 수동으로 GAC에 추가하여 **Microsoft.VisualC.CppCodeProvider** API를 계속 사용할 수 있습니다. 
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 **XSD** 작업의 매개 변수에 대해 설명합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "37057374"
   
      선택적 **문자열** 매개 변수입니다.  
   
-     명령줄에 지정된 것처럼 옵션 목록입니다. 예를 들면 "*/option1 /option2 /option#*"과 같습니다. 이 매개 변수를 사용하여 다른 **XSD** 작업 매개 변수로 표현되지 않는 옵션을 지정합니다.  
+     명령줄에 지정된 것처럼 옵션 목록입니다. 예: /\<option1> /\<option2> /\<option#>. 이 매개 변수를 사용하여 다른 **XSD** 작업 매개 변수로 표현되지 않는 옵션을 지정합니다.  
   
 -   **GenerateFromSchema**  
   

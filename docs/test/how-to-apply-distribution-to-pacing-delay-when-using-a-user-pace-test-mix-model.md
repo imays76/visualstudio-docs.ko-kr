@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 268578638524ab4f5e5db605c3d394d28414547a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448521"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204078"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>방법: 사용자 속도 테스트 조합 모델의 속도 지연에 분포 적용
 
@@ -28,9 +28,9 @@ ms.locfileid: "34448521"
 
 **속도 지연에 분포 적용**의 값은 true 또는 false로 설정할 수 있습니다.
 
-- **True**: 테스트 조합 편집 대화 상자에서 **시간 및 사용자별 테스트** 열의 값으로 지정된 정규 통계 분포 지연이 시나리오에 적용됩니다. 자세한 내용은 [텍스트 조합 모델을 편집하여 가상 사용자가 테스트를 실행할 확률 지정](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)을 참조하세요.
+- **True**: **테스트 조합 편집** 대화 상자에서 **시간 및 사용자별 테스트** 열의 값으로 지정된 정규 통계 분포 지연이 시나리오에 적용됩니다. 자세한 내용은 [텍스트 조합 모델을 편집하여 가상 사용자가 테스트를 실행할 확률 지정](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)을 참조하세요.
 
-     예를 들어 테스트 조합 편집 대화 상자에서 테스트에 대한 **시간 및 사용자별 테스트** 값이 시간당 두 명의 사용자로 설정되어 있다고 가정합니다. 이 경우 **속도 지연에 분포 적용** 속성을 **True**로 설정하면 테스트 사이의 대기 시간에 정규 통계 분포가 적용됩니다. 즉, 테스트가 시간당 두 개씩 실행되기는 하지만 테스트 사이의 지연 시간은 반드시 30분이 되지는 않습니다. 첫 번째 테스트는 4분 후에 실행되고 두 번째 테스트는 45분 후에 실행될 수도 있습니다.
+     예를 들어 **테스트 조합 편집** 대화 상자에서 테스트에 대한 **시간 및 사용자별 테스트** 값이 시간당 두 명의 사용자로 설정되어 있다고 가정합니다. 이 경우 **속도 지연에 분포 적용** 속성을 **True**로 설정하면 테스트 사이의 대기 시간에 정규 통계 분포가 적용됩니다. 즉, 테스트가 시간당 두 개씩 실행되기는 하지만 테스트 사이의 지연 시간은 반드시 30분이 되지는 않습니다. 첫 번째 테스트는 4분 후에 실행되고 두 번째 테스트는 45분 후에 실행될 수도 있습니다.
 
 - **False**: **테스트 조합 편집** 대화 상자에서 **시간 및 사용자별 테스트** 열의 값으로 지정된 속도로 테스트가 실행됩니다. 자세한 내용은 [텍스트 조합 모델을 편집하여 가상 사용자가 테스트를 실행할 확률 지정](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)을 참조하세요.
 

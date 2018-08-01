@@ -10,14 +10,14 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: aa36dd0f213cffa1c5f44915de6794ecc6efa0c0
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237512"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232334"
 ---
-# <a name="application-lifecycle-management-alm-with-unity-apps"></a>ALM(Application Lifecycle Management) 및 Unity 앱
+# <a name="application-lifecycle-management-alm-with-unity-apps"></a>ALM(애플리케이션 수명 주기 관리) 및 Unity 앱
 
 최신 플랫폼용 앱을 개발하려면 코드 작성 이외에도 많은 작업을 수행해야 합니다. DevOps(개발+운영)라는 이러한 활동은 앱의 전체 수명 주기에 걸쳐 있으며 민첩한 작업 계획 및 추적, 코드 디자인 및 구현, 소스 코드 리포지토리 관리, 빌드 실행, 연속 통합 및 배포 관리, 테스트(단위 테스트 및 UI 테스트 포함), 개발 및 프로덕션 환경에서 다양한 형태의 진단 실행, 원격 분석 및 분석을 통해 실시간으로 앱 성능과 사용자 동작 모니터링을 포함합니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "35237512"
 
 ## <a name="modeling"></a>모델링
 
-참조 링크: **[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)**
+참조 링크: **[분석 및 모델 아키텍처](../modeling/analyze-and-model-your-architecture.md)**
 
 일반 설명: 이러한 디자인 기능은 코딩 언어에 독립적이거나 C#과 같은 .NET 언어로 작동하지만 개체 계층 구조 및 클래스 관계를 포함하는 기존 응용 프로그램 패러다임에서 작동합니다. Unity 내에서 게임을 디자인하는 경우 완전히 다른 패러다임, 즉 그래픽 개체, 소리, 셰이더, 스크립트 등의 관계가 필요합니다. 이러한 이유로 Visual Studio 모델링 다이어그램 도구는 Unity 프로젝트 전체와 특별한 관련이 없습니다. C# 스크립트 내에서 관계를 관리하는 데 사용될 수 있지만 전체의 일부일 뿐입니다.
 
@@ -93,7 +93,7 @@ ms.locfileid: "35237512"
 |수동 테스트|예||
 |테스트 관리자(테스트 기록 및 재생)|Windows 장치 및 Android 에뮬레이터에만 해당||
 |코드 검사|N/A|Visual Studio가 아니라 Unity 내에서 단위 테스트가 발생하는 경우에는 해당하지 않습니다. 아래를 참조하세요.|
-|[코드 단위 테스트](../test/unit-test-your-code.md)|Visual Studio가 아니라 Unity 내에서 발생|Unity는 [Unity 테스트 도구](https://www.assetstore.unity3d.com/en/#!/content/13802)(Unity 자산 스토어)의 일부로 자체 단위 테스트 프레임워크를 제공합니다. 단위 테스트 결과는 Unity 내에서 보고되고 Visual Studio 내에 표시되지 않습니다.|
+|[코드 단위 테스트](../test/unit-test-your-code.md)|Visual Studio가 아니라 Unity 내에서 발생|Unity는 [Unity 테스트 도구](https://www.assetstore.unity3d.com/en/#!/content/13802)(Unity Asset Store)의 일부로 자체 단위 테스트 프레임워크를 제공합니다. 단위 테스트 결과는 Unity 내에서 보고되고 Visual Studio 내에 표시되지 않습니다.|
 |[UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)|아니요|코딩된 UI 테스트는 앱 UI의 읽을 수 있는 컨트롤을 사용합니다. Unity 앱은 본질적으로 그래픽이므로 코딩된 UI 테스트 도구에서 콘텐츠를 읽을 수 없습니다.|
 
 ## <a name="improve-code-quality"></a>코드 품질 향상

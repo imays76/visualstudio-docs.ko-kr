@@ -9,12 +9,12 @@ description: 관리자가 구독자에게 라이선스를 할당하는 방법을
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e43e9050e2b021025ed4ae104f4345bce6e8eee3
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131933"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178402"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 구독 관리자 포털에서 라이선스 할당
 

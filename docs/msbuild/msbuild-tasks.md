@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2dcb47ec974d4c8735cbada4115c865f7ede4c0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6a380917f3a4eaba71a00ff32f1bc627f47f5d4d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569932"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153204"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 작업
 빌드 플랫폼에는 빌드 프로세스 중에 동작을 필요한 수만큼 실행할 수 있는 기능이 필요합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 *작업*을 통해 이러한 동작을 수행합니다. 작업은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 원자성 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "31569932"
   
  <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 관리되는 클래스를 만들어 자체의 작업을 작성할 수 있습니다. 자세한 내용은 [작업 작성](../msbuild/task-writing.md)을 참조하세요.  
   
-## <a name="executing-a-task-from-a-project-file"></a>프로젝트 파일에서 작업 실행  
+## <a name="execute-a-task-from-a-project-file"></a>프로젝트 파일에서 작업 실행  
  프로젝트 파일에서 작업을 실행하기 전에 먼저 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소를 사용하여 작업을 구현하는 어셈블리의 형식을 작업 이름에 매핑해야 합니다. 그러면 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]가 프로젝트 파일에서 작업을 찾을 때 작업의 실행 논리를 찾을 위치를 알 수 있습니다.  
   
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일에서 작업을 실행하려면 작업 이름을 포함하는 요소를 `Target` 요소의 자식으로 만듭니다. 작업이 매개 변수를 수락하면 해당 매개 변수가 요소의 특성으로 전달됩니다.  
@@ -64,7 +64,7 @@ ms.locfileid: "31569932"
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에는 파일을 복사하는 [Copy](../msbuild/copy-task.md), 디렉터리를 만드는 [MakeDir](../msbuild/makedir-task.md), [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 소스 코드 파일을 컴파일하는 [Csc](../msbuild/csc-task.md), 등의 여러 작업이 포함되어 있습니다. 사용 가능한 작업 및 사용법 정보의 전체 목록은 [작업 참조](../msbuild/msbuild-task-reference.md)를 참조하세요.  
   
 ## <a name="overridden-tasks"></a>재정의된 작업  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 여러 위치에서 작업을 찾습니다. 첫 번째 위치는 .NET Framework 디렉터리에 저장된 확장명이 .OverrideTasks인 파일입니다. 이러한 파일의 작업은 프로젝트 파일의 작업을 비롯하여 이름이 동일한 다른 작업을 재정의합니다. 두 번째 위치는 .NET Framework 디렉터리의 확장명이 .Tasks인 파일입니다. 이러한 위치 중 하나에 작업이 없으면 프로젝트 파일의 작업을 사용합니다.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 여러 위치에서 작업을 찾습니다. 첫 번째 위치는 .NET Framework 디렉터리에 저장된 확장명이 *.OverrideTasks*인 파일입니다. 이러한 파일의 작업은 프로젝트 파일의 작업을 비롯하여 이름이 동일한 다른 작업을 재정의합니다. 두 번째 위치는 .NET Framework 디렉터리의 확장명이 *.Tasks*인 파일입니다. 이러한 위치 중 하나에 작업이 없으면 프로젝트 파일의 작업을 사용합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   

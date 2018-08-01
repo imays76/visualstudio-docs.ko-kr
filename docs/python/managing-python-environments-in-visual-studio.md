@@ -1,7 +1,7 @@
 ---
 title: Python 환경 및 인터프리터 관리
 description: Python 환경 창을 사용하여 전역, 가상 및 conda 환경을 관리하고 Python 인터프리터 및 패키지를 설치하며 Visual Studio 프로젝트에 환경을 할당합니다.
-ms.date: 06/29/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37342754"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232220"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
@@ -118,7 +118,7 @@ Visual Studio는 [PEP 514](https://www.python.org/dev/peps/pep-0514/)에 따라 
 >
 > 그러나 파일 시스템을 사용하여 인터프리터 및 해당 환경을 수동으로 이동할 경우 Visual Studio에서는 새 위치를 알 수 없습니다. 자세한 내용은 [인터프리터 이동](installing-python-interpreters.md#moving-an-interpreter)을 참조하세요.
 
-## <a name="fix-invalid-environments"></a>잘못된 환경 수정
+## <a name="fix-or-delete-invalid-environments"></a>잘못된 환경 수정 또는 삭제
 
 Visual Studio에서 환경에 대한 레지스트리 항목을 찾았지만 인터프리터에 대한 경로가 올바르지 않은 경우 Python 환경 창은 취소선 글꼴을 사용하여 이름을 표시합니다.
 

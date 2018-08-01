@@ -13,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e56cc8671da9639344b6531a530029a97c02e707
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: cd6736242e6fa130fdbb356261cae8e63f3c952f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327156"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154790"
 ---
 # <a name="msbuild"></a>MSBuild
-[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]은 응용 프로그램을 빌드하기 위한 플랫폼입니다. MSBuild라고도 하는 이 엔진은 빌드 플랫폼에서 소프트웨어를 처리하고 빌드하는 방법을 제어하는 프로젝트 파일에 대한 XML 스키마를 제공합니다. Visual Studio는 MSBuild를 사용하지만 Visual Studio에 종속되지 않습니다. 프로젝트 또는 솔루션 파일에서 msbuild.exe를 호출하여 Visual Studio가 설치되지 않은 환경에서 제품을 조정하고 빌드할 수 있습니다.  
+[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]은 응용 프로그램을 빌드하기 위한 플랫폼입니다. MSBuild라고도 하는 이 엔진은 빌드 플랫폼에서 소프트웨어를 처리하고 빌드하는 방법을 제어하는 프로젝트 파일에 대한 XML 스키마를 제공합니다. Visual Studio는 MSBuild를 사용하지만 Visual Studio에 종속되지 않습니다. 프로젝트 또는 솔루션 파일에서 *msbuild.exe*를 호출하여 Visual Studio가 설치되지 않은 환경에서 제품을 조정하고 빌드할 수 있습니다.  
   
- Visual Studio는 MSBuild를 사용하여 관리되는 프로젝트를 로드하고 빌드합니다. Visual Studio의 프로젝트 파일(.csproj, .vbproj, vcxproj 등)에는 IDE를 사용하여 프로젝트를 빌드할 때 실행되는 MSBuild XML 코드가 들어 있습니다. Visual Studio 프로젝트는 필요한 모든 설정을 가져오고 일반적인 개발 작업을 수행하는 프로세스를 빌드하지만 Visual Studio 내에서 또는 XML 편집기를 사용하여 확장하거나 수정할 수 있습니다.  
+ Visual Studio는 MSBuild를 사용하여 관리되는 프로젝트를 로드하고 빌드합니다. Visual Studio의 프로젝트 파일(*.csproj*, *.vbproj*, *.vcxproj* 등)에는 IDE를 사용하여 프로젝트를 빌드할 때 실행되는 MSBuild XML 코드가 들어 있습니다. Visual Studio 프로젝트는 필요한 모든 설정을 가져오고 일반적인 개발 작업을 수행하는 프로세스를 빌드하지만 Visual Studio 내에서 또는 XML 편집기를 사용하여 확장하거나 수정할 수 있습니다.  
   
  C++의 MSBuild에 대한 자세한 내용은 [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp)를 참조하세요.  
   
@@ -44,36 +44,16 @@ ms.locfileid: "36327156"
     -   빌드 출력에서 압축 파일을 만듭니다.  
   
     -   후처리 단계를 수행합니다. 예를 들어 다른 버전으로 어셈블리에 스탬프를 지정할 수 있습니다.  
-  
- Visual Studio IDE에서 코드를 작성하지만 MSBuild를 사용하여 빌드를 실행할 수 있습니다. 또는 개발 컴퓨터의 IDE에서 코드를 빌드하지만 MSBuild 명령줄을 사용하여 여러 개발자로부터 통합된 코드를 빌드할 수 있습니다.  
+
+Visual Studio IDE에서 코드를 작성하지만 MSBuild를 사용하여 빌드를 실행할 수 있습니다. 또는 개발 컴퓨터의 IDE에서 코드를 빌드하지만 MSBuild 명령줄을 사용하여 여러 개발자로부터 통합된 코드를 빌드할 수 있습니다.  
   
 > [!NOTE]
 >  Team Foundation Build를 사용하여 응용 프로그램을 자동으로 컴파일, 테스트 및 배포할 수 있습니다. 개발자가 코드를 체크 인할 때(예: 연속 통합 전략의 일부로) 또는 일정에 따라(예: 야간 빌드 확인 테스트 빌드) 빌드 시스템에서 빌드를 자동으로 실행할 수 있습니다. Team Foundation Build는 MSBuild를 사용하여 코드를 컴파일합니다. 자세한 내용은 [빌드 및 릴리스](/vsts/build-release/index)를 참조하세요.  
   
  이 항목에서는 MSBuild에 대해 간략하게 설명합니다. 입문용 자습서는 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.  
-  
- **항목 내용**  
-  
--   [명령 프롬프트에서 MSBuild 사용](#BKMK_CommandPrompt)  
-  
--   [프로젝트 파일](#BKMK_ProjectFile)  
-  
-    -   [속성](#BKMK_Properties)  
-  
-    -   [항목](#BKMK_Items)  
-  
-    -   [작업](#BKMK_Tasks)  
-  
-    -   [대상](#BKMK_Targets)  
-  
--   [빌드 로그](#BKMK_BuildLogs)  
-  
--   [Visual Studio에서 MSBuild 사용](#BKMK_VisualStudio)  
-  
--   [멀티 타기팅](#BKMK_Multitargeting)  
-  
-##  <a name="BKMK_CommandPrompt"></a> 명령 프롬프트에서 MSBuild 사용  
- 명령 프롬프트에서 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 실행하려면 적절한 명령줄 옵션과 함께 프로젝트 파일을 MSBuild.exe에 전달합니다. 명령줄 옵션을 사용하여 속성을 설정하고 특정 대상을 실행하며 빌드 프로세스를 제어하는 다른 옵션을 설정할 수 있습니다. 예를 들어, 다음 명령줄 구문을 사용하여 `MyProj.proj` 속성을 `Configuration`로 설정하여 `Debug` 파일을 빌드합니다.  
+
+##  <a name="use-msbuild-at-a-command-prompt"></a>명령 프롬프트에서 MSBuild 사용  
+ 명령 프롬프트에서 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 실행하려면 적절한 명령줄 옵션과 함께 프로젝트 파일을 *MSBuild.exe*에 전달합니다. 명령줄 옵션을 사용하여 속성을 설정하고 특정 대상을 실행하며 빌드 프로세스를 제어하는 다른 옵션을 설정할 수 있습니다. 예를 들어 다음 명령줄 구문을 사용하여 `Configuration` 속성을 `Debug`로 설정하여 *MyProj.proj* 파일을 빌드합니다.  
   
 ```cmd  
 MSBuild.exe MyProj.proj /property:Configuration=Debug  
@@ -84,7 +64,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 > [!IMPORTANT]
 >  프로젝트를 다운로드하기 전에 코드를 신뢰할 수 있는지 확인하십시오.  
   
-##  <a name="BKMK_ProjectFile"></a> 프로젝트 파일  
+##  <a name="project-file"></a>프로젝트 파일  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 간단하고 확장 가능한 XML 기반 프로젝트 파일 형식을 사용합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일 형식을 통해 개발자는 빌드할 항목뿐만 아니라 항목을 다른 운영 체제 및 구성에 대해 빌드하는 방법을 설명합니다. 또한 프로젝트 파일 형식을 통해 개발자는 개별 파일로 분해될 수 있는 다시 사용 가능한 빌드 규칙을 작성하여 해당 제품 내의 여러 프로젝트에서 일관성 있는 빌드를 수행할 수 있습니다.  
   
  다음 단원에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일 형식의 몇 가지 기본 요소에 대해 설명합니다. 기본 프로젝트 파일을 만드는 방법에 대한 자습서는 [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 참조하세요.  
@@ -104,7 +84,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 <Configuration  Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
 ```  
   
- 프로젝트 파일 전체에서 $(*PropertyName*) 구문을 사용하여 속성을 참조할 수 있습니다. 예를 들어 `$(BuildDir)` 및 `$(Configuration)`을 사용하여 이전 예제의 속성을 참조할 수 있습니다.  
+ 프로젝트 파일 전체에서 $(\<PropertyName>) 구문을 사용하여 속성을 참조할 수 있습니다. 예를 들어 `$(BuildDir)` 및 `$(Configuration)`을 사용하여 이전 예제의 속성을 참조할 수 있습니다.  
   
  속성에 대한 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.  
   
@@ -120,7 +100,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </ItemGroup>  
 ```  
   
- 프로젝트 파일 전체에서 @(*ItemType*) 구문을 사용하여 항목 형식을 참조할 수 있습니다. 예를 들어, 예제의 항목 형식은 `@(Compile)`을 사용하여 참조됩니다.  
+ 프로젝트 파일 전체에서 @(\<ItemType>) 구문을 사용하여 항목 형식을 참조할 수 있습니다. 예를 들어, 예제의 항목 형식은 `@(Compile)`을 사용하여 참조됩니다.  
   
  MSBuild에서 요소 및 특성 이름은 대/소문자를 구분합니다. 그러나 속성, 항목 및 메타데이터 이름은 대/소문자를 구분하지 않습니다. 다음 예제에서는 항목 형식 `Compile`, `comPile` 또는 기타 대/소문자 변형을 만든 후 항목 형식에 값 "one.cs;two.cs"를 지정합니다.  
   
@@ -163,11 +143,11 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  고급 시나리오에서는 대상을 사용하여 서로의 관계를 설명하고 종속성 분석을 수행할 수 있습니다. 종속성 분석을 통해 대상이 최신 상태이면 빌드 프로세스의 전체 섹션을 건너뛸 수 있습니다. 대상에 대한 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요.  
   
-##  <a name="BKMK_BuildLogs"></a> 빌드 로그  
- 빌드 오류, 경고 및 메시지를 콘솔이나 다른 출력 장치에 기록할 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [MSBuild의 로그인](../msbuild/logging-in-msbuild.md)을 참조하세요.  
+##  <a name="build-logs"></a>빌드 로그  
+ 빌드 오류, 경고 및 메시지를 콘솔이나 다른 출력 장치에 기록할 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [MSBuild 로그인](../msbuild/logging-in-msbuild.md)을 참조하세요.  
   
-##  <a name="BKMK_VisualStudio"></a> Visual Studio에서 MSBuild 사용  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일 형식을 사용하여 관리되는 프로젝트에 대한 빌드 정보를 저장합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 인터페이스를 사용하여 추가되거나 변경된 프로젝트 설정은 모든 프로젝트에 대해 생성되는 .*proj 파일에 반영됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 관리되는 프로젝트를 로드 및 빌드하기 위해 호스팅된 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 인스턴스를 사용합니다. 즉, 관리되는 프로젝트는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 또는 명령 프롬프트([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]가 설치되지 않은 경우)에서 빌드할 수 있으며 그 결과는 동일합니다.  
+## <a name="use-msbuild-in-visual-studio"></a>Visual Studio에서 MSBuild 사용  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일 형식을 사용하여 관리되는 프로젝트에 대한 빌드 정보를 저장합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 인터페이스를 사용하여 추가되거나 변경된 프로젝트 설정은 모든 프로젝트에 대해 생성되는 *.\*proj* 파일에 반영됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 관리되는 프로젝트를 로드 및 빌드하기 위해 호스팅된 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 인스턴스를 사용합니다. 즉, 관리되는 프로젝트는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 또는 명령 프롬프트([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]가 설치되지 않은 경우)에서 빌드할 수 있으며 그 결과는 동일합니다.  
   
  Visual Studio에서 MSBuild를 사용하는 방법에 대한 자습서는 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.  
   
@@ -185,10 +165,10 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 -   현재 버전의 .NET Framework용 서비스 팩이 릴리스될 경우 해당 서비스 팩을 대상으로 지정할 수 있습니다.  
   
 -   다중 대상 지정은 대상 프레임워크 및 플랫폼에서 사용 가능한 기능만 응용 프로그램에서 사용되도록 합니다.  
+
+자세한 내용은 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요.  
   
- 자세한 내용은 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요.  
-  
-## <a name="related-topics"></a>관련 항목  
+## <a name="see-also"></a>참고 항목  
   
 |제목|설명|  
 |-----------|-----------------|  

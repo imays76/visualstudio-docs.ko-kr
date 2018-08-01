@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 361ff48c1363fc2e736f01c983b32a3ee229a839
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0f11f797955dd2b909b75c0bc758209e1a0a028
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569906"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152157"
 ---
-# <a name="task-base-class"></a>작업 기본 클래스
+# <a name="task-base-class"></a>Task 기본 클래스
 다양한 작업은 궁극적으로 <xref:Microsoft.Build.Utilities.Task> 클래스에서 상속됩니다. 이 클래스는 매개 변수에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 이러한 매개 변수가 이 문서에 나열되어 있습니다.  
   
 ## <a name="parameters"></a>매개 변수  

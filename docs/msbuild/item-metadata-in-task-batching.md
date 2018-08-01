@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbe01c15e9798a29d4832b8c189718d95cf5a0d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1804bde2c3da7f83658784ca1520791a930f901
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078994"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177197"
 ---
 # <a name="item-metadata-in-task-batching"></a>작업 일괄 처리의 항목 메타데이터
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에는 항목 목록을 항목 메타데이터에 따라 여러 다른 범주 또는 일괄 처리로 나누고 각 일괄 처리를 사용하여 한 번에 하나의 작업을 실행하는 기능이 있습니다. 어떤 항목이 어떤 일괄 처리를 통해 전달될지 정확히 이해하는 것은 어려울 수 있습니다. 이 항목에서는 일괄 처리와 관련된 다음과 같은 일반적인 시나리오를 다룹니다.  
@@ -133,7 +133,7 @@ ms.locfileid: "39078994"
   
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
-## <a name="batching-one-item-at-a-time"></a>한 번에 하나씩 일괄 처리  
+## <a name="batch-one-item-at-a-time"></a>한 번에 한 항목씩 일괄 처리  
  항목이 만들어질 때 모든 항목에 할당된 잘 알려진 항목 메타데이터에 대해서도 일괄 처리를 수행할 수 있습니다. 이를 통해 컬렉션에 있는 모든 항목이 일괄 처리에 사용할 메타데이터를 갖게 됩니다. `Identity` 메타데이터 값은 모든 항목에 대해 고유하므로 항목 목록에 있는 모든 항목을 별도 일괄 처리로 나누는 데 유용합니다. 잘 알려진 항목 메타데이터의 전체 목록은 [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조하세요.  
   
  다음 예제에서는 항목 목록의 각 항목을 한 번에 하나씩 일괄 처리로 지정하는 방법을 보여 줍니다. 모든 항목의 `Identity` 메타데이터 값은 고유하므로 `ExampColl` 항목 목록은 각각이 항목 목록의 항목 1개를 포함하는 6개의 일괄 처리로 나뉩니다. `Text` 특성에 `%(Identity)`가 있으면 일괄 처리가 수행되어야 한다는 알림이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 제공됩니다.  
@@ -172,7 +172,7 @@ Identity: "Item5" -- Items in ExampColl: Item5
 Identity: "Item6" -- Items in ExampColl: Item6  
 ```  
   
-## <a name="filtering-item-lists"></a>항목 목록 필터링  
+## <a name="filter-item-lists"></a>필터 항목 목록  
  일괄 처리를 사용하면 항목 목록이 작업에 전달되기 전에 특정 항목 목록을 필터링할 수 있습니다. 예를 들어 `Extension`의 잘 알려진 항목 메타데이터 값에 따라 필터링을 수행하면 특정 확장명을 갖는 파일에만 작업을 실행할 수 있습니다.  
   
  다음 예제에서는 항목 목록을 항목 메타데이터에 따라 일괄 처리로 나눈 다음 해당 일괄 처리가 작업에 전달될 때 필터링하는 방법을 보여 줍니다. `ExampColl` 항목 목록은 `Number` 항목 메타데이터에 따라 세 개의 일괄 처리로 나뉩니다. 작업의 `Condition` 특성은 `Number` 항목 메타데이터 값이 `2`인 일괄 처리만 작업으로 전달되도록 지정합니다.  

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa56cf0d0ae6d715685ee331cd60c95eedc5c60
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945977"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175958"
 ---
 # <a name="customize-your-build"></a>빌드 사용자 지정
 
 표준 빌드 프로세스(*Microsoft.Common.props* 및 *Microsoft.Common.targets* 가져오기)를 사용하는 MSBuild 프로젝트에는 빌드 프로세스를 사용자 지정하는 데 사용할 수 있는 몇 가지 확장성 후크가 있습니다.
 
-## <a name="adding-arguments-to-command-line-msbuild-invocations-for-your-project"></a>프로젝트에 대한 명령줄 MSBuild 호출에 인수 추가
+## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>프로젝트에 대한 명령줄 MSBuild 호출에 인수 추가
 
 원본 디렉터리 이상의 *Directory.Build.rsp* 파일은 프로젝트의 명령줄 빌드에 적용됩니다. 자세한 내용은 [MSBuild 지시 파일](../msbuild/msbuild-response-files.md#directorybuildrsp)을 참조하세요.
 
@@ -138,7 +138,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 
 동일한 디렉터리 구조는 사용자당 폴더 *%LOCALAPPDATA%\Microsoft\MSBuild*인 `$(MSBuildUserExtensionsPath)`에서 검색됩니다. 해당 폴더에 있는 파일을 해당 사용자의 자격 증명으로 실행되는 해당 프로젝트 형식의 모든 빌드에 가져옵니다. 사용자 확장은 패턴 `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`에서 가져오는 파일에 따라 명명된 속성을 설정하여 비활성화할 수 있습니다. 예를 들어 `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps`를 `false`로 설정하면 `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*` 가져오기를 방지합니다.
 
-## <a name="customizing-the-solution-build"></a>솔루션 빌드 사용자 지정
+## <a name="customize-the-solution-build"></a>솔루션 빌드 사용자 지정
 
 > [!IMPORTANT]
 > 이러한 방식의 솔루션 빌드 사용자 지정은 *MSBuild.exe*를 사용하여 명령줄 빌드에만 적용됩니다. Visual Studio 내의 빌드에 적용되지 **않습니다**.

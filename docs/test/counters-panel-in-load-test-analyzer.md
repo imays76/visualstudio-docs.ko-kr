@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304344"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176881"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>그래프 뷰 및 테이블 뷰의 카운터 패널 사용
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c13addcaa6e64cd337741708494875bcbe0aaf8
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a14d5560d424da9ad1ff83da7453048f3c8188c0
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281289"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176345"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>테스트 설정을 사용하여 진단 정보 수집
 
@@ -43,7 +43,7 @@ Visual Studio를 사용하여 단위, 코딩된 UI, 웹 성능 또는 부하 테
 
 |테스트 설정에 사용되는 진단 데이터 어댑터|로컬 컴퓨터의 수동 테스트|자동화된 테스트|수동 테스트: 역할 집합과 환경을 사용하여 데이터 수집|노트|
 |----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
-|**IntelliTrace 및 테스트 영향을 위한 ASP.NET 클라이언트 프록시:** 이 프록시를 사용하면 IntelliTrace 및 테스트 영향 진단 데이터 어댑터에 대한 클라이언트에서 웹 서버로의 http 호출에 대한 정보를 수집할 수 있습니다.|예|예|예|- 클라이언트 역할에 대해 IntelliTrace 또는 테스트 영향 진단 데이터 어댑터가 선택된 경우에만 사용하세요.|
+|**IntelliTrace 및 테스트 영향용 ASP.NET 클라이언트 프록시:** 이 프록시를 사용하면 IntelliTrace 및 테스트 영향 진단 데이터 어댑터와 관련하여 클라이언트에서 웹 서버로의 HTTP 호출에 대한 정보를 수집할 수 있습니다.|예|예|예|- 클라이언트 역할에 대해 IntelliTrace 또는 테스트 영향 진단 데이터 어댑터가 선택된 경우에만 사용하세요.|
 |**ASP.NET 프로파일러:** ASP.NET 웹 응용 프로그램의 성능 데이터를 수집하는 ASP.NET 프로파일링을 포함하는 테스트 설정을 만들 수 있습니다.|아니요|예(아래 설명 참조)|아니요|- 이 진단 데이터 어댑터는 Visual Studio에서 부하 테스트를 실행할 때만 지원됩니다.|
 |**코드 검사:** 테스트에서 검사하는 코드 범위를 조사하는 데 사용되는 코드 검사 정보를 포함하는 테스트 설정을 만들 수 있습니다.|아니요|예(아래 설명 참조)|아니요|- 코드 검사는 Visual Studio의 자동화된 테스트 또는 *mstest.exe*를 실행하는 경우 및 테스트를 실행하는 머신에서만 사용할 수 있습니다. 원격 컬렉션은 지원되지 않습니다.<br />- IntelliTrace 정보를 수집하도록 테스트 설정을 구성한 경우에는 코드 검사 데이터가 수집되지 않습니다. **참고:** 이 진단 데이터 어댑터는 Visual Studio 테스트 설정에만 적용할 수 있습니다. Microsoft Test Manager의 테스트 설정에는 사용되지 않습니다. 또한 이 어댑터는 Visual Studio 2010 테스트 프로젝트와의 호환성을 위해 필요합니다. **참고:** 호환성을 위해 자동 테스트가 Microsoft Test Manager 또는 레거시 MSTest Runner를 사용하는 Visual Studio의 원격 테스트 에이전트에서 실행될 때 코드 검사가 적용됩니다.|
 |**이벤트 로그:** 테스트 결과에 포함될 이벤트 로그 수집을 포함하도록 테스트 설정을 구성할 수 있습니다.|예|예|예||

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 862afc0755e8d478d5e8bca76019abd899d842f8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d9143306b9f3894e7f8f6742420f90aa30008340
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752016"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204091"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 사용자 지정 카운터 집합 추가
 
@@ -39,7 +39,7 @@ ms.locfileid: "34752016"
 3.  **카운터 집합** 노드를 마우스 오른쪽 단추로 클릭하고 **사용자 지정 카운터 집합 추가**를 선택합니다.
 
     > [!NOTE]
-    > 카운터 집합에 **Custom1** 등의 기본 이름이 지정됩니다. **속성** 창을 사용하여 이 이름을 변경할 수 있습니다. F4 키를 눌러 **속성** 창을 표시합니다.
+    > 카운터 집합에 **Custom1** 등의 기본 이름이 지정됩니다. **속성** 창을 사용하여 이 이름을 변경할 수 있습니다. **F4** 키를 눌러 **속성** 창을 표시합니다.
 
 4.  사용자 지정 카운터 집합에 카운터를 추가하려면 새 카운터 집합을 마우스 오른쪽 단추로 클릭하고 **카운터 추가**를 선택합니다. 카운터를 추가하는 방법에 대한 자세한 내용은 [방법: 카운터 집합에 카운터 추가](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)를 참조하세요.
 

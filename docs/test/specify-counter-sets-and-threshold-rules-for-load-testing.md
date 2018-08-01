@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751344"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180642"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정
 
@@ -58,7 +58,7 @@ ms.locfileid: "34751344"
 
 또한 웹 서버에서 성능 데이터를 쉽게 수집할 수 있도록 Visual Studio Enterprise에서는 부하 테스트에 사용되는 기술을 기반으로 미리 정의된 명명된 카운터 집합을 제공합니다. 이러한 집합은 IIS, ASP.NET 또는 SQL Server를 실행하는 서버를 분석할 때 유용합니다. 기본 카운터 집합에서 제공하지 않는 카운터는 부하 테스트 편집기를 사용하여 추가할 수 있습니다. 테스트 중인 컴퓨터 또는 서버를 부하 테스트에 추가하여 이러한 컴퓨터의 리소스 사용을 모니터링하는 것이 중요합니다. 자세한 내용은 [방법: 카운터 집합 관리](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)를 참조하세요.
 
-부하 실행 결과를 분석할 때 수집할 데이터, 임계값 규칙 설정 위치, 측정값이 응용 프로그램에서 특정 문제를 일으킬 때 이를 알리는 방법 등을 확인하기 위해 특정 영역의 도메인별 정보가 필요한 경우가 자주 있습니다. 자세한 내용은 [임계값 규칙 정보](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md#SpecifyingCounterSetsThresholdRulesAboutThresholdRules)를 참조하세요.
+부하 실행 결과를 분석할 때 수집할 데이터, 임계값 규칙 설정 위치, 측정값이 응용 프로그램에서 특정 문제를 일으킬 때 이를 알리는 방법 등을 확인하기 위해 특정 영역의 도메인별 정보가 필요한 경우가 자주 있습니다. 자세한 내용은 [임계값 규칙 정보](#about-threshold-rules)를 참조하세요.
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>성능 카운터 샘플링 간격 고려 사항
 

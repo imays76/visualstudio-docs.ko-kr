@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57fab4ee4205e9b1aaf7aaa44218134649257598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974977"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178363"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>방법: 웹 성능 테스트 플러그 인 만들기
 
@@ -100,7 +100,7 @@ ms.locfileid: "31974977"
 22. **선택한 플러그 인에 대한 속성** 창에서 런타임에 사용할 플러그 인의 초기 값을 설정합니다.
 
     > [!NOTE]
-    > 플러그 인에서 속성을 원하는 만큼 노출할 수 있습니다. 속성을 공용이고 설정 가능한 기본 형식(정수, 부울 또는 문자열 등)으로 지정하기만 하면 됩니다. 나중에 속성 창을 사용하여 웹 성능 테스트 플러그 인 속성을 변경할 수도 있습니다.
+    > 플러그 인에서 속성을 원하는 만큼 노출할 수 있습니다. 속성을 공용이고 설정 가능한 기본 형식(정수, 부울 또는 문자열 등)으로 지정하기만 하면 됩니다. 나중에 [속성] 창을 사용하여 웹 성능 테스트 플러그 인 속성을 변경할 수도 있습니다.
 
 23. **확인**을 선택합니다.
 
@@ -120,7 +120,7 @@ ms.locfileid: "31974977"
 
 다음 코드에서는 테스트 반복을 나타내는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext>에 항목을 추가하는 사용자 지정 웹 성능 테스트 플러그 인이 만들어집니다.
 
-웹 성능 테스트를 실행한 후 이 플러그 인을 사용하여 웹 성능 테스트 결과 뷰어의 **컨텍스트** 탭에서 **TestIteratnionNumber**라는 추가한 항목을 볼 수 있습니다.
+웹 성능 테스트를 실행한 후 이 플러그 인을 사용하여 **웹 성능 테스트 결과 뷰어**의 **컨텍스트** 탭에서 **TestIteratnionNumber**라는 추가한 항목을 볼 수 있습니다.
 
 ```csharp
 using System;

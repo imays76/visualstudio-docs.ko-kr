@@ -32,12 +32,12 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 3611268c17d26328d131eacafb92b1ce55c7d07f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b491257c561af337afdfd0d066c9ed8cd550c15
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065883"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230950"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang 링커 속성(Android C++)
 
@@ -63,4 +63,4 @@ ms.locfileid: "31065883"
 전체 보관 파일 | 전체 보관 파일이 소스와 추가 종속성의 모든 코드를 사용합니다.
 추가 옵션 | 추가 옵션입니다.
 추가 종속성 | 링크 명령줄에 추가할 추가 항목을 지정합니다.
-라이브러리 종속성 | 이 옵션을 사용하면 링커 명령줄에 추가할 추가 라이브러리를 지정할 수 있습니다. 추가 라이브러리는 링커 명령줄의 끝에 추가되며, 'lib'로 시작하고 '.a' 또는 '.so' 확장명으로 끝납니다.  (-lFILE)
+라이브러리 종속성 | 이 옵션을 사용하면 링커 명령줄에 추가할 추가 라이브러리를 지정할 수 있습니다. 추가 라이브러리는 링커 명령줄의 끝에 추가되며, *lib*로 시작하고 *.a* 또는 *.so* 확장명으로 끝납니다.  (-lFILE)

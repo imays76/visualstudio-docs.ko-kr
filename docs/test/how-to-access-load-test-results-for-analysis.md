@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d20754bc61a003b1b7f6d1eb84ce419c2c6e442b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966689"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175675"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>방법: 분석을 위한 부하 테스트 결과 액세스
 
-부하 테스트 편집기에서 부하 테스트를 실행할 경우 부하 테스트 결과가 자동으로 열리고 실행 중인 부하 테스트가 부하 테스트 분석기에 표시됩니다. 명령줄에서 부하 테스트를 실행할 때 부하 테스트 결과에 직접 액세스 해야 합니다.
+부하 테스트 편집기에서 부하 테스트를 실행할 경우 부하 테스트 결과가 자동으로 열리고 실행 중인 부하 테스트가 **부하 테스트 분석기**에 표시됩니다. 명령줄에서 부하 테스트를 실행할 때 부하 테스트 결과에 직접 액세스 해야 합니다.
 
 완료된 부하 테스트의 결과에는 테스트 대상 컴퓨터에서 주기적으로 수집된 성능 카운터 샘플 및 오류 정보가 포함되어 있습니다. 부하 테스트 실행 과정에서 많은 수의 성능 카운터 샘플이 수집될 수 있습니다. 수집되는 성능 데이터의 양은 테스트 실행의 길이, 샘플링 간격, 테스트 대상 컴퓨터의 수, 수집되는 카운터의 수, 구성된 데이터 수집기 및 로깅 수준에 따라 달라집니다. 대규모 부하 테스트의 경우 수집되는 성능 데이터의 양이 몇 기가바이트가 되기 쉽습니다. 자세한 내용은 [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)를 참조하세요.
 
@@ -48,9 +48,9 @@ ms.locfileid: "31966689"
 
 5.  **부하 테스트 결과** 목록에서 분석할 부하 테스트 결과를 선택하고 **열기**를 선택합니다.
 
-6.  부하 테스트 분석기가 나타나고 선택한 부하 테스트 결과가 요약 뷰에 표시됩니다. 자세한 내용은 [부하 테스트 결과 요약 개요](../test/load-test-results-summary-overview.md)를 참조하세요.
+6.  **부하 테스트 분석기**가 나타나고 선택한 부하 테스트 결과가 요약 뷰에 표시됩니다. 자세한 내용은 [부하 테스트 결과 요약 개요](../test/load-test-results-summary-overview.md)를 참조하세요.
 
-     결과 열기 및 관리 대화 상자에서 부하 테스트 결과 가져오기, 내보내기 및 제거를 비롯하여 부하 테스트 결과의 다양한 특성을 관리할 수 있습니다. 자세한 내용은 [부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리](../test/manage-load-test-results-in-the-load-test-results-repository.md)를 참조하세요.
+     **결과 열기 및 관리** 대화 상자에서 부하 테스트 결과 가져오기, 내보내기 및 제거를 비롯하여 부하 테스트 결과의 다양한 특성을 관리할 수 있습니다. 자세한 내용은 [부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리](../test/manage-load-test-results-in-the-load-test-results-repository.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877334"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232291"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>자습서: Azure Functions 시작
 
@@ -46,8 +46,10 @@ ms.locfileid: "33877334"
 
 1. **솔루션 패드**의 노드를 확장합니다. 기본 프로젝트 템플릿에는 Newtonsoft.Json 패키지뿐 아니라 여러 Azure WebJobs 패키지에 대한 NuGet 참조가 포함됩니다. 
 
-     또한 호스트에 대한 전역 구성 옵션을 설명하는 **host.json**과, 서비스 설정 구성을 위한 **local.settings.json** 등 3개 파일이 포함됩니다. 
-        - 프로젝트 템플릿은 기본 HttpTrigger도 만듭니다. 이 연습을 위해 프로젝트에서 **HttpTrigger.cs** 파일을 삭제해야 합니다.
+     다음과 같은 세 개의 파일도 있습니다.  
+        - **host.json** – 호스트에 대한 전역 구성 옵션을 설명합니다.  
+        - **local.settings.json** - 서비스 설정을 구성합니다.  
+        - 프로젝트 템플릿은 기본 HttpTrigger도 만듭니다. 이 연습을 위해 프로젝트에서 **HttpTrigger.cs** 파일을 삭제해야 합니다.  
 
     **local.settings.json**을 엽니다. 기본적으로 두 개의 빈 연결 문자열 설정을 갖습니다.
 

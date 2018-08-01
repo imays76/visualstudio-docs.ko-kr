@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ce653c1b7f8eb3b7118fac3ab61f40ba77082e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1cce49157ad4c9c811c51ba0c491b3e97fea1736
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945886"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177219"
 ---
 # <a name="csc-task"></a>Csc 작업
 *csc.exe*를 래핑하고 실행(*.exe* 파일), 동적 연결 라이브러리(*.dll* 파일) 또는 코드 모듈(*.netmodule* 파일)을 생성합니다. *csc.exe*에 대한 자세한 내용은 [C# 컴파일러 옵션](/dotnet/csharp/language-reference/compiler-options/index)을 참조하세요.  
@@ -60,12 +60,12 @@ ms.locfileid: "37945886"
 |`ModuleAssemblyName`|선택적 `String` 매개 변수입니다.<br /><br /> 이 모듈이 속할 어셈블리의 이름을 지정합니다.|  
 |`NoConfig`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 *csc.rsp* 파일을 사용하여 컴파일하지 않도록 컴파일러에 지시합니다. 자세한 내용은 [-noconfig(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option)를 참조하세요.|  
 |`NoLogo`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 컴파일러 배너 정보를 표시하지 않습니다. 자세한 내용은 [-nologo(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option)를 참조하세요.|  
-|`NoStandardLib`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 전체 시스템 네임스페이스를 정의하는 mscorlib.dll을 가져올 수 없습니다. 고유한 시스템 네임스페이스와 개체를 정의하거나 만들려면 이 매개 변수를 사용합니다. 자세한 내용은 [-nostdlib(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)를 참조하세요.|  
+|`NoStandardLib`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 전체 시스템 네임스페이스를 정의하는 *mscorlib.dll*을 가져올 수 없습니다. 고유한 시스템 네임스페이스와 개체를 정의하거나 만들려면 이 매개 변수를 사용합니다. 자세한 내용은 [-nostdlib(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)를 참조하세요.|  
 |`NoWin32Manifest`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 기본 Win32 매니페스트를 포함하지 않습니다.|  
 |`Optimize`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 최적화를 사용할 수 있습니다. `false`인 경우 최적화를 사용하지 않습니다. 자세한 내용은 [-optimize(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option)를 참조하세요.|  
 |`OutputAssembly`|선택적 `String` 출력 매개 변수입니다.<br /><br /> 출력 파일의 이름을 지정합니다. 자세한 내용은 [-out(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option)을 참조하세요.|  
 |`OutputRefAssembly`|선택적 `String` 매개 변수입니다.<br /><br /> 출력 참조 어셈블리 파일의 이름을 지정합니다. 자세한 내용은 [-refout(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option)을 참조하세요.|  
-|`PdbFile`|선택적 `String` 매개 변수입니다.<br /><br /> 디버그 정보 파일 이름을 지정합니다. 기본 이름은 확장명이 .pdb인 출력 파일 이름입니다.|  
+|`PdbFile`|선택적 `String` 매개 변수입니다.<br /><br /> 디버그 정보 파일 이름을 지정합니다. 기본 이름은 확장명이 *.pdb*인 출력 파일 이름입니다.|  
 |`Platform`|선택적 `String` 매개 변수입니다.<br /><br /> 출력 파일의 대상으로 프로세서 플랫폼을 지정합니다. 이 매개 변수는 `x86`, `x64` 또는 `anycpu` 값을 가질 수 있습니다. 기본값은 `anycpu`입니다. 자세한 내용은 [-platform(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)을 참조하세요.|  
 |`References`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 작업에서 지정된 항목의 공용 형식 정보를 현재 프로젝트로 가져옵니다. 자세한 내용은 [-reference(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option)를 참조하세요.<br /><br /> 메타데이터 `Aliases`를 원래 "참조" 항목에 추가하여 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 파일에서 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 참조 별칭을 지정할 수 있습니다. 예를 들어 다음 Csc 명령줄에서 별칭 “LS1”을 설정하려면<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> 다음과 같이 사용합니다.<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
 |`Resources`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 출력 파일에 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 리소스를 포함합니다.<br /><br /> 이 매개 변수로 전달된 항목에는 이름이 `LogicalName` 및 `Access`인 선택적 메타데이터 항목이 있을 수 있습니다. `LogicalName`은 `/resource` 스위치의 `identifier` 매개 변수에 해당하며, `Access`는 `accessibility-modifier` 매개 변수에 해당합니다. 자세한 내용은 [-resource(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option)를 참조하세요.|  
@@ -78,9 +78,9 @@ ms.locfileid: "37945886"
 |`WarningLevel`|선택적 `Int32` 매개 변수입니다.<br /><br /> 컴파일러에서 표시할 경고 수준을 지정합니다. 자세한 내용은 [-warn(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option)을 참조하세요.|  
 |`WarningsAsErrors`|선택적 `String` 매개 변수입니다.<br /><br /> 오류로 처리할 경고 목록을 지정합니다. 자세한 내용은 [-warnaserror(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)를 참조하세요.<br /><br /> 이 매개 변수는 `TreatWarningsAsErrors` 매개 변수를 재정의합니다.|  
 |`WarningsNotAsErrors`|선택적 `String` 매개 변수입니다.<br /><br /> 오류로 처리하지 않을 경고 목록을 지정합니다. 자세한 내용은 [-warnaserror(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)를 참조하세요.<br /><br /> 이 매개 변수는 `TreatWarningsAsErrors` 매개 변수가 `true`로 설정된 경우에만 유용합니다.|  
-|`Win32Icon`|선택적 `String` 매개 변수입니다.<br /><br /> 파일 탐색기에서 출력 파일을 원하는 모양으로 표시하는 .ico 파일을 어셈블리에 삽입합니다. 자세한 내용은 [-win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)을 참조하세요.|  
+|`Win32Icon`|선택적 `String` 매개 변수입니다.<br /><br /> **파일 탐색기**에서 출력 파일을 원하는 모양으로 표시하는 *.ico* 파일을 어셈블리에 삽입합니다. 자세한 내용은 [-win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)을 참조하세요.|  
 |`Win32Manifest`|선택적 `String` 매개 변수입니다.<br /><br /> 포함할 Win32 매니페스트를 지정합니다.|  
-|`Win32Resource`|선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스(.res) 파일을 출력 파일에 삽입합니다. 자세한 내용은 [-win32res(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)를 참조하세요.|  
+|`Win32Resource`|선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스(*.res*) 파일을 출력 파일에 삽입합니다. 자세한 내용은 [-win32res(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)를 참조하세요.|  
   
 ## <a name="remarks"></a>설명  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 상속하는 `Microsoft.Build.Tasks.ManagedCompiler` 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.  

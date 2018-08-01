@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0bef10ec68f5336e9bb80d008e18d6d972c756d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dea73a4f21a36907e3252530f68263e1a63a8819
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327091"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153919"
 ---
-# <a name="overriding-toolsversion-settings"></a>ToolsVersion 설정 재정의
+# <a name="override-toolsversion-settings"></a>ToolsVersion 설정 재정의
 다음 세 가지 방법 중 하나로 프로젝트 및 솔루션에 대한 도구 집합을 변경할 수 있습니다.  
   
-1.  명령줄에서 프로젝트 또는 솔루션을 빌드할 때 `/ToolsVersion` 스위치(또는 짧게 `/tv`) 사용  
+1.  명령줄에서 프로젝트 또는 솔루션을 빌드할 때 `/ToolsVersion` 스위치(또는 짧게 `/tv`) 사용.  
   
-2.  MSBuild 작업에서 `ToolsVersion` 매개 변수 설정  
+2.  MSBuild 작업에서 `ToolsVersion` 매개 변수 설정.  
   
 3.  솔루션 내의 프로젝트에서 `$(ProjectToolsVersion)` 속성 설정. 이 방법에서는 다른 프로젝트와는 다른 도구 집합 버전을 사용하여 솔루션에서 프로젝트를 빌드할 수 있습니다.  
   
@@ -36,14 +36,14 @@ ms.locfileid: "36327091"
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
- 이 예제에서 모든 프로젝트는 ToolsVersion 12.0을 사용하여 빌드됩니다. 그러나 이 항목의 뒷부분에서 “우선 순위”를 참조하세요.  
+ 이 예제에서 모든 프로젝트는 ToolsVersion 12.0을 사용하여 빌드됩니다. 그러나 이 항목의 뒷부분에서 [우선 순위](#order-of-precedence)를 참조하세요.  
   
  명령줄에서 `/tv` 스위치를 사용하면 개별 프로젝트에서 선택적으로 `$(ProjectToolsVersion)` 속성을 사용하여 솔루션의 다른 프로젝트와 다른 ToolsVersion 값으로 프로젝트를 빌드할 수 있습니다.  
   
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>MSBuild 작업의 ToolsVersion 매개 변수를 사용하여 ToolsVersion 설정 재정의  
  MSBuild 작업은 한 프로젝트로 다른 프로젝트를 빌드할 수 있는 기본 수단입니다. MSBuild 작업이 프로젝트에 지정된 것과 다른 ToolsVersion으로 프로젝트를 빌드할 수 있도록 `ToolsVersion`이라는 선택적 작업 매개 변수를 제공합니다. 다음 예제에서는 이 매개 변수를 사용하는 방법을 보여 줍니다.  
   
-1.  다음 코드가 포함된 `projectA.proj`라는 파일을 만듭니다.  
+1.  다음 코드가 포함된 *projectA.proj*라는 파일을 만듭니다.  
   
     ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  
@@ -61,7 +61,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
     </Project>  
     ```  
   
-2.  다음 코드가 포함된 `projectB.proj`라는 또 다른 파일을 만듭니다.  
+2.  다음 코드가 포함된 *projectB.proj*라는 또 다른 파일을 만듭니다.  
   
     ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  
@@ -111,7 +111,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     1.  프로젝트 파일의 [Project](../msbuild/project-element-msbuild.md) 요소에 대한 `ToolsVersion` 특성. 이 특성이 없으면 현재 버전이라고 간주합니다.  
   
-    2.  MSBuild.exe.config 파일의 기본 도구 버전.  
+    2.  *MSBuild.exe.config* 파일의 기본 도구 버전.  
   
     3.  레지스트리의 기본 도구 버전. 자세한 내용은 [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)을 참조하세요.  
   
@@ -119,7 +119,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     1.  환경 변수 `MSBUILDDEFAULTTOOLSVERSION`가 `ToolsVersion`으로 설정된 경우 이 값을 사용합니다.  
   
-    2.  MSBuild.exe.config에서 `DefaultOverrideToolsVersion`이 사용되는 경우 이 값을 사용합니다.  
+    2.  *MSBuild.exe.config*에서 `DefaultOverrideToolsVersion`이 사용되는 경우 이 값을 사용합니다.  
   
     3.  레지스트리에서 `DefaultOverrideToolsVersion`이 설정된 경우 이 값을 사용합니다.  
   

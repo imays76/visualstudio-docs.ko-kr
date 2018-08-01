@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c6ebe43bc4237ac55eea534f12fe4a9876f93de
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233544"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177511"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 SharePoint 응용 프로그램 테스트
 
@@ -28,7 +28,7 @@ SharePoint 응용 프로그램에 코딩된 UI 테스트를 포함하면 해당 
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>SharePoint 응용 프로그램에 대해 코딩된 UI 테스트 만들기
 
-SharePoint 응용 프로그램에 대한[코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md) 는 다른 유형의 응용 프로그램에 대해 테스트 만들기와 동일합니다. 기록 및 재생은 웹 편집 인터페이스의 모든 컨트롤에 대해 지원됩니다. 범주 및 웹 파트 선택 인터페이스는 모두 표준 웹 컨트롤입니다.
+SharePoint 응용 프로그램에 대한[코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md) 는 다른 유형의 응용 프로그램에 대해 테스트 만들기와 동일합니다. 기록 및 재생은 **웹 편집** 인터페이스의 모든 컨트롤에 대해 지원됩니다. 범주 및 웹 파트 선택 인터페이스는 모두 표준 웹 컨트롤입니다.
 
 ![SharePoint 웹 파트](../test/media/cuit_sharepoint.png)
 
