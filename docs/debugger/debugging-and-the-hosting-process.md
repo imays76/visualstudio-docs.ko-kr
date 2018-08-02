@@ -1,7 +1,7 @@
 ---
 title: 디버깅 및 호스팅 프로세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -18,15 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f584eb9217e46215405aa0786e5fa10e6034a9
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 59ef28f5724c12fd9897adbaa9125bafe26beb60
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088906"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468262"
 ---
 # <a name="debugging-and-the-hosting-process"></a>디버깅 및 호스팅 프로세스
 Visual Studio 호스팅 프로세스를 사용하면 디버거 성능을 향상시킬 수 있고 부분 신뢰 디버깅 및 디자인 타임 식 계산 등과 같은 새로운 디버거 기능을 사용할 수 있습니다. 필요한 경우 호스팅 프로세스를 비활성화할 수 있습니다. 다음 섹션에서는 호스팅 프로세스를 사용하는 경우와 사용하지 않는 경우의 몇 가지 디버깅 차이점에 대해 설명합니다.
+
+> [!NOTE]
+> Visual Studio 2017에서 호스팅 프로세스를 사용 하 여 디버그 하는 옵션은 더 이상 필요 하 고 제거 되었습니다. 자세한 내용은 [디버깅: Visual Studio 2017 목표에 속도를 Your 최소 즐겨 찾는 작업](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx)합니다.
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>부분 신뢰 디버깅 및 ClickOnce 보안
  부분 신뢰 디버깅에는 호스팅 프로세스가 필요합니다. 호스팅 프로세스를 비활성화하면 **프로젝트 속성** 의 **보안**페이지에서 부분 신뢰 보안을 활성화한 경우라 해도 부분 신뢰 디버깅이 실행되지 않습니다. 자세한 내용은 [방법: 부분 신뢰 응용 프로그램을 디버그](../debugger/how-to-debug-a-partial-trust-application.md)합니다.

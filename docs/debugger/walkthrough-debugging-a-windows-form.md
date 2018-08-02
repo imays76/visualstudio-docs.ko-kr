@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056804"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468532"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>연습: Windows Form 디버깅
 Windows 폼에는 가장 일반적인 관리 되는 응용 프로그램 중 하나입니다. Windows 폼에 표준 Windows 응용 프로그램을 만듭니다. Visual Basic, C# 또는 c + +를 사용 하 여이 연습을 완료할 수 있습니다.  
@@ -51,27 +51,25 @@ Windows 폼에는 가장 일반적인 관리 되는 응용 프로그램 중 하�
   
 2.  프로젝트 형식 창에서 엽니다는 **Visual Basic**를 **Visual C#**, 또는 **Visual c + +** 노드를 다음  
   
-    1.  Visual Basic 또는 Visual C#을 선택 합니다 **Windows** 노드를 선택한 **Windows Form 응용 프로그램** 에 **템플릿** 창입니다.  
+    1.  Visual Basic 또는 Visual C#을 선택 **Windows 바탕 화면** > **Windows 양식 앱**합니다.  
   
-    2.  Visual c + +를 선택 합니다 **CLR** 노드를 선택한 **Windows Form 응용 프로그램** 에 **템플릿** 창...  
+    2.  Visual c + +에 대 한 선택 **Windows 데스크톱 응용 프로그램**합니다.  
   
-3.  에 **템플릿을** 창 **Windows 응용 프로그램**합니다.  
+3.  에 **이름을** 상자, 프로젝트 (예를 들어 Walkthrough_SimpleDebug) 고유한 이름을 지정 합니다.  
   
-4.  에 **이름을** 상자, 프로젝트 (예를 들어 Walkthrough_SimpleDebug) 고유한 이름을 지정 합니다.  
-  
-5.  **확인**을 클릭합니다.  
+4.  **확인**을 클릭합니다.  
   
      Visual Studio 새 프로젝트를 만들고 Windows Forms 디자이너에서 새 폼을 표시 합니다. 자세한 내용은 [Windows Forms 디자이너](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15)합니다.  
   
-6.  에 **뷰** 메뉴에서 **도구 상자**합니다.  
+5.  에 **뷰** 메뉴에서 **도구 상자**합니다.  
   
      도구 상자가 열립니다. 자세한 내용은 [도구 상자](../ide/reference/toolbox.md)를 참조하세요.  
   
-7.  도구 상자에서 클릭 합니다 **단추** 컨트롤과 폼 디자인 화면에 컨트롤을 끌어 옵니다. 폼에서 단추를 삭제 합니다.  
+6.  도구 상자에서 클릭 합니다 **단추** 컨트롤과 폼 디자인 화면에 컨트롤을 끌어 옵니다. 폼에서 단추를 삭제 합니다.  
   
-8.  도구 상자에서 클릭 합니다 **텍스트 상자** 제어 하 고 양식 디자인 화면에 컨트롤을 끌어 옵니다. 삭제 합니다 **텍스트 상자** 양식의 합니다.  
+7.  도구 상자에서 클릭 합니다 **텍스트 상자** 제어 하 고 양식 디자인 화면에 컨트롤을 끌어 옵니다. 삭제 합니다 **텍스트 상자** 양식의 합니다.  
   
-9. 폼 디자인 화면에서 단추를 두 번 클릭 합니다.  
+8. 폼 디자인 화면에서 단추를 두 번 클릭 합니다.  
   
      이렇게 하면 코드 페이지입니다. 커서에 있어야 합니다. `button1_Click`합니다.  
   
