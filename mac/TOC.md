@@ -21,6 +21,7 @@
 ## [프로젝트의 참조 관리](managing-references-in-a-project.md)
 ### [연습 - 프로젝트에서 NuGet 패키지 포함](nuget-walkthrough.md)
 ## [앱 리소스 관리](managing-app-resources.md)
+## [방법: 여러 솔루션 또는 인스턴스 열기](open-multiple-solutions.md)
 
 # [소스 편집기](source-editor.md)
 ## [리팩터링](refactoring.md)
