@@ -2,7 +2,7 @@
 title: 다중 스레드 응용 프로그램을 디버그 하는 방법을 알아봅니다
 description: Visual Studio에서 병렬 스택 및 병렬 조사식 창을 사용 하 여 디버깅
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204221"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468685"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Visual Studio에서 다중 스레드 응용 프로그램 디버깅 시작
 Visual Studio는 여러 도구와 다중 스레드 응용 프로그램을 디버깅할 수 있도록 사용자 인터페이스 요소를 제공 합니다. 이 자습서에서는 스레드 마커를 사용 하는 방법을 보여 줍니다.는 **병렬 스택** 창에는 **병렬 조사식** 창과 조건부 중단점, 중단점 필터. 이 자습서는 몇 분 정도 걸리지만 완료 익힐 수 다중 스레드 응용 프로그램 디버깅에 대 한 기능을 사용 하 여.
@@ -47,9 +47,9 @@ Visual Studio는 여러 도구와 다중 스레드 응용 프로그램을 디버
   
      **새 프로젝트** 대화 상자가 나타납니다.  
   
-2.  에 **프로젝트 형식**s 상자 사용자가 선택한 언어를 클릭 합니다: **Visual C#** 를 **Visual c + +**, 또는 **Visual Basic**합니다.  
+2.  사용자가 선택한 언어를 클릭 합니다. **Visual C#**, **Visual c + +**, 또는 **Visual Basic**합니다.  
   
-3.  에 **템플릿을** 상자에서 **콘솔 앱**합니다.  
+3.  아래 **Windows 바탕 화면**, 선택 **콘솔 앱**합니다.  
   
 4.  에 **이름을** 상자에 MyThreadWalkthroughApp 라는 이름을 입력 합니다.  
   

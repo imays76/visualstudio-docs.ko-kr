@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf45b224edcab42b56ca18d558ecd4c8e42842f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177307"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468792"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>연습: Visual Studio에서 병렬 응용 프로그램 디버깅
 이 연습에 사용 하는 방법을 보여 줍니다 합니다 **병렬 작업** 하 고 **병렬 스택** 병렬 응용 프로그램을 디버깅 하는 windows. 이러한 windows 이해 하 고 사용 하는 코드의 런타임 동작을 확인 하는 데 도움이 합니다 [TPL 작업 병렬 라이브러리 ()](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 또는 [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)합니다. 이 연습에서는 기본 제공 중단점이 있는 샘플 코드를 제공합니다. 사용 하는 방법을 보여 줍니다 코드가 중단 후 합니다 **병렬 작업** 하 고 **병렬 스택** 검사 하는 windows.  
@@ -65,9 +65,9 @@ ms.locfileid: "39177307"
   
 1.  Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-2.  에 **설치 된 템플릿** 창, Visual C#, Visual Basic 또는 Visual c + +를 선택 합니다. 관리되는 언어의 경우 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]이 프레임워크 상자에 표시되는지 확인합니다.  
+2.  중 하나를 선택 **Visual C#** 하십시오 **Visual Basic**, 또는 **Visual c + +** 합니다. 관리되는 언어의 경우 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]이 프레임워크 상자에 표시되는지 확인합니다.  
   
-3.  선택 **콘솔 응용 프로그램** 을 클릭 한 다음 **확인**합니다. 기본값인 Debug 구성을 유지합니다.  
+3.  아래 **Windows 데스크톱**, 선택 **콘솔 응용 프로그램** 을 클릭 한 다음 **확인**합니다. 기본값인 Debug 구성을 유지합니다.  
   
 4.  프로젝트에서 .cpp, .cs 또는 .vb 코드 파일을 엽니다. 내용을 삭제하여 빈 코드 파일을 만듭니다.  
   
