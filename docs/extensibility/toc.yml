@@ -425,8 +425,8 @@
       href: getting-started-with-the-vsix-project-template.md
     - name: '연습: Visual Studio 확장 기능 게시'
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: '연습: 명령줄을 통한 Visual Studio 확장 기능 게시'
-      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
+    - name: '연습: 확장 팩 만들기'
+      href: walkthough-create-extension-pack.md
     - name: VSIX 패키지에 종속성 추가
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: VSIX 패키지 분석
