@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12af8607dd1561a4a2561cc688d2bb4ba0f07c88
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bed37260925d4961ed5b5b7d3e69d55169444ad
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127977"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497903"
 ---
-# <a name="deploying-project-types"></a>배포 프로젝트 형식
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 새 프로젝트 형식 aggregator (ProjectAggregator2.dll) 및 재배포 (ProjectAggregator2.msi)에 대 한 Windows Installer 패키지를 설치합니다. 관리 코드 프로젝트 형식에 대 한 새 집계를 사용 해야 합니다. ProjectAggregator2 방법 제한에서 작동 하는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aggregator 관리 코드 프로젝트 형식을 올바르게 작동 하지 못하게 하는 프로젝트입니다. 다음 단계에서는 새 집계를 사용 하 여 VSPackage를 변경 하는 방법에 설명 합니다.  
+# <a name="deploy-project-types"></a>프로젝트 형식 배포
+[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 새 프로젝트 형식 aggregator를 설치 (*ProjectAggregator2.dll*) 및 Windows Installer 패키지를 재배포에 대 한도 (*ProjectAggregator2.msi*). 관리 코드 프로젝트 형식에 대해 새 집계가 사용 해야 합니다. 제한 사항을 위반 ProjectAggregator2 작동을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aggregator 관리 코드 프로젝트 형식을 올바르게 작동 하지 못하도록 하는 프로젝트입니다. 다음 단계를 새 집계를 사용 하 여 VSPackage를 변경 하는 방법에 설명 합니다.  
   
 1.  솔루션에서 NativeHierarchyWrapper 프로젝트를 제거 합니다.  
   
 2.  설치 프로그램에서 NativeHierarchyWrapper 이진 파일을 제거 합니다.  
   
-3.  ProjectAggregator2.msi 설치에 추가 합니다.
+3.  추가 *ProjectAggregator2.msi* 에 설치 합니다.

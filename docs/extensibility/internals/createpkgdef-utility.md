@@ -16,45 +16,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8ae53766a42ac2ed218bc92f59088d27e4434e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135793"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500698"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 유틸리티
-매개 변수로 Visual Studio 확장에 대해.dll 파일을 사용 하 고.dll 함께.pkgdef 파일을 만듭니다. 그렇지 않으면 작성 될 수 있는 시스템 레지스트리에 확장이 설치 될 때 모든 정보를 포함 하는.pkgdef 파일.  
+만들고 매개 변수로 Visual Studio 확장명.dll 파일을 *.pkgdef* 함께 파일을 *.dll* 파일입니다. 합니다 *.pkgdef* 파일 그렇지 않으면 작성 될 수 있는 시스템 레지스트리에 확장을 설치할 때 모든 정보를 포함 합니다.  
   
 > [!NOTE]
->  자동으로 Visual Studio SDK에 포함 된 프로젝트 템플릿 중 대부분은 빌드 프로세스의 일부로.pkgdef 파일을 만듭니다. 이 문서는 패키지를 수동으로 만들거나.pkgdef 배포를 사용 하는 기존 패키지를 변환 하는 사용자를 위한 것입니다.  
+>  대부분 자동으로 Visual Studio SDK에 포함 된 프로젝트 템플릿 만들기 *.pkgdef* 빌드 프로세스의 일부로 파일입니다. 이 문서는 패키지를 수동으로 만들거나 사용 하도록 기존 패키지를 변환 하려는 사람 *.pkgdef* 배포 합니다.  
   
 ## <a name="syntax"></a>구문  
   
 ```  
-CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath  
+CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>  
 ```  
   
 ## <a name="arguments"></a>인수  
- /out =`FileName`  
- 필수. .Pkgdef 출력 파일의 이름을 설정`FileName`합니다.  
+ **/ = 아웃&lt;파일 이름&gt;**  
+ 필수. 이름을 가져오거나 설정 합니다 *.pkgdef* 출력 파일을 &lt;FileName&gt;합니다.  
   
- /codebase  
- 선택 사항입니다. 코드 베이스 유틸리티에 강제로 등록 합니다.  
+ **/codebase**  
+ 선택 사항입니다. 등록을 강제로 수행 합니다 **코드 베이스** 유틸리티입니다.  
   
- /assembly  
- 유틸리티 어셈블리에 강제로 등록 합니다.  
+ **/assembly**  
+ 등록을 강제로 수행 합니다 **어셈블리** 유틸리티입니다.  
   
- `AssemblyPath`  
- .pkgdef 생성 하려는.dll 파일의 경로입니다.  
+ **&lt;AssemblyPath&gt;**  
+ 경로 *.dll* 생성 하려는 파일을 *.pkgdef*합니다.  
   
 ## <a name="remarks"></a>설명  
- .Pkgdef 파일을 사용 하 여 확장 배포에는 이전 버전의 Visual Studio의 레지스트리 요구 사항을 바꿉니다.  
+ 사용 하 여 확장 배포 *.pkgdef* 파일의 이전 버전의 Visual Studio 레지스트리 요구 사항을 대체 합니다.  
   
- .Pkgdef 파일은 다음 위치 중 하나에 설치 해야 합니다: %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ 또는 %vsinstalldir%\Common7\IDE\Extensions\\합니다. 설치 폴더는 %localappdata%\Microsoft\Visual Studio\14.0\Extensions 경우\\, 확장 Visual Studio에서 인식 되지만 기본적으로 사용 되지 것입니다. 사용자를 사용 하 여 확장을 활성화 수 **확장명 및 업데이트**합니다. 설치 폴더는 %vsinstalldir%\Common7\IDE\Extensions 경우\\, 확장은 기본적으로 사용 합니다.  
+ 합니다 *.pkgdef* 파일이 다음 위치 중 하나에 설치 되어야 합니다. 
+
+ - *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
+ 
+ - *%vsinstalldir%\Common7\IDE\Extensions\\*
+    
+ 설치 폴더는 경우 *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, 확장이 Visual Studio에서 인식할 수는 있지만 기본적으로 비활성화 됩니다. 사용자를 사용 하 여 확장을 설정할 수 있습니다 **확장 및 업데이트**합니다. 
+   
+ 설치 폴더는 경우 *%vsinstalldir%\Common7\IDE\Extensions\\*, 확장은 기본적으로 사용 됩니다.  
   
 > [!NOTE]
->  **확장명 및 업데이트** VSIX 패키지의 일부로 설치 되어 있지 않으면 확장 프로그램을 액세스 하는 도구를 사용할 수 없습니다.  
+>  합니다 **확장 및 업데이트** VSIX 패키지의 일부로 설치 되어 있지 않으면 확장에 액세스 하는 도구를 사용할 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [CreateExpInstance 유틸리티](../../extensibility/internals/createexpinstance-utility.md)
