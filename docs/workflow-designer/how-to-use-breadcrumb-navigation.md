@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757621"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512280"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>방법: 이동 경로 탐색 사용
 
@@ -29,7 +29,7 @@ ms.locfileid: "36757621"
 
 ## <a name="using-breadcrumb-navigation"></a>이동 경로 탐색 사용
 
-1.  클릭된 작업으로 루트 활동을 변경 하려면 워크플로 디자이너의 활동을 두 번 클릭 합니다. 그러면 클릭한 활동이 루트에서 완전히 확장되고 상위 항목이 이동 경로 탐색 막대에 표시됩니다. 이를 활동 드릴인/드릴아웃이라고도 합니다.
+1.  클릭된 작업으로 루트 활동을 변경 하려면 워크플로 디자이너의 활동을 두 번 클릭 합니다. 클릭 한 활동이 루트에서 완전히 확장 한 다음 및 해당 상위 항목이 이동 경로 탐색 막대에 표시 됩니다. 이를 활동 드릴인/드릴아웃이라고도 합니다.
 
 2.  현재 루트 활동의 상위 항목으로 이동하려면 이동 경로 탐색 막대에서 해당 활동을 클릭합니다.
 

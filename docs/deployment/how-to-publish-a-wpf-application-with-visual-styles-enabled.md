@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2620a008a90b988aa80df8d3c8563163ff92d997
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078380"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512960"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: WPF 응용 프로그램을 사용 하도록 설정 하는 비주얼 스타일을 사용 하 여 게시
 비주얼 스타일을 사용자가 선택한 테마에 따라 변경 되는 공용 컨트롤의 모양을 사용 하도록 설정 합니다. 기본적으로 비주얼 스타일을 수동으로 활성화 해야 하므로 Windows Presentation Foundation (WPF) 응용 프로그램에 대 한 사용 되지 않습니다. 그러나 WPF 응용 프로그램에 대 한 비주얼 스타일을 사용 하도록 설정 하 고 다음 솔루션을 게시 하면 오류가 발생 합니다. 이 항목에서는이 오류 및 사용 하도록 설정 하는 비주얼 스타일을 사용 하 여 WPF 응용 프로그램을 게시 하기 위한 프로세스를 해결 하는 방법을 설명 합니다. 비주얼 스타일에 대 한 자세한 내용은 참조 하세요. [비주얼 스타일이 개요](/windows/desktop/Controls/visual-styles-overview)합니다. 오류 메시지에 대 한 자세한 내용은 참조 하세요. [ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)합니다.  
@@ -161,8 +161,9 @@ cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\App
   
  다음이 단계를 수행한 후에 최종 사용자가 응용 프로그램을 설치 하려는 위치에 게시 된 파일을 이동할 수 있습니다. 솔루션을 종종 업데이트 하려는 경우 이러한 명령을 스크립트에 이동할 수 있으며 새 버전을 게시할 때마다 스크립트를 실행 수 있습니다.  
   
-## <a name="see-also"></a>참고자료  
- [ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [비주얼 스타일 개요](/windows/desktop/Controls/visual-styles-overview)   
- [비주얼 스타일 사용](https://msdn.microsoft.com/library/bb773175.aspx)   
- [명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)
+## <a name="see-also"></a>참고자료
+
+-[ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [비주얼 스타일 개요](/windows/desktop/Controls/visual-styles-overview)
+- [비주얼 스타일 사용](/windows/desktop/Controls/cookbook-overview)
+- [명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)
