@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079082"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512046"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 이 cookbook 지침 및 Visual Studio 이미지 서비스 및 Visual Studio 2015에 도입 된 이미지 카탈로그에 대 한 모범 사례를 포함 합니다.  
@@ -165,8 +165,9 @@ ms.locfileid: "39079082"
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|URI|[필수] 이미지를 로드할 수 있는 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) 응용 프로그램을 사용 하 여: / / / 기관<br />-절대 구성 요소 리소스 참조<br />-네이티브 리소스를 포함 하는 파일 경로|  
+|URI|[필수] 이미지를 로드할 수 있는 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) 응용 프로그램을 사용 하 여: / / / 기관<br />-절대 구성 요소 리소스 참조<br />-네이티브 리소스를 포함 하는 파일 경로|  
 |배경|[선택 사항] 어떤 종류의 원본으로 사용할 목적이 백그라운드에서 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *조명:* 는 밝은 배경의에서 소스를 사용할 수 있습니다.<br /><br /> *진한:* 어두운 배경을에서 소스를 사용할 수 있습니다.<br /><br /> *고 대비:* 고대비 모드에서 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> *HighContrastLight:* 소스는 밝은 배경의 고대비 모드에서 사용할 수 있습니다.<br /><br /> *HighContrastDark:* 원본 어두운 배경을 고대비 모드에서 사용할 수 있습니다.<br /><br /> 배경 특성을 생략 하는 경우 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> 배경이 *Light*를 *어두운*를 *HighContrastLight*, 또는 *HighContrastDark*, 소스의 색 반전 되지 않습니다. 백그라운드 생략 되거나로 설정 하는 경우 *고 대비*, 소스의 색 반전을 이미지의 의해 제어 됩니다 **AllowColorInversion** 특성입니다.|  
+
 |||  
   
  \<소스 > 요소는 다음 선택적 하위 요소 중 하나만 포함할 수 있습니다.  
@@ -651,7 +652,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  이미지 서비스 요청을 통해 업데이트 되는 매핑의 모니커를 사용 하도록 코드를 업데이트 합니다. (업데이트를 의미할 수 있습니다 **CrispImages** 관리 코드 또는 이러한 방식으로 또는 HICONs 이미지 서비스에서 요청 및 네이티브 코드에 대 한 관련 전달 합니다.)  
   
 ## <a name="testing-your-images"></a>이미지를 테스트합니다.  
- 이미지 라이브러리 뷰어 도구를 사용 하 여 모든 것이 제대로 작성 되었는지 확인 하 여 이미지 매니페스트를 테스트할 수 있습니다. 도구를 [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx)합니다. 이 도구 및 기타 도구에 대 한 설명서를 찾을 수 있습니다 [여기](http://aka.ms/VSImageThemeTools)합니다.  
+ 이미지 라이브러리 뷰어 도구를 사용 하 여 모든 것이 제대로 작성 되었는지 확인 하 여 이미지 매니페스트를 테스트할 수 있습니다. 도구를 [Visual Studio 2015 SDK](visual-studio-sdk.md)합니다. 이 도구 및 기타 도구에 대 한 설명서를 찾을 수 있습니다 [여기](http://aka.ms/VSImageThemeTools)합니다.  
   
 ## <a name="additional-resources"></a>추가 자료  
   

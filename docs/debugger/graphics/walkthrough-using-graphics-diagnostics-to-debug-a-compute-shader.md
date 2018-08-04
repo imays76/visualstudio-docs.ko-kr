@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b26772dd0cb74d90a8b7a401961fd33f86521a82
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: cff502344db59586709c350ad282871db9f587c8
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481267"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511842"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>연습: 그래픽 진단을 사용하여 계산 셰이더 디버깅
 이 연습에서는 잘못된 결과를 생성하는 계산 셰이더를 Visual Studio 그래픽 진단 도구를 사용하여 조사하는 방법을 보여 줍니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "31481267"
 ## <a name="scenario"></a>시나리오  
  이 시나리오에서는 DirectCompute를 사용하여 시뮬레이션 업데이트에서 컴퓨팅 성능이 가장 많이 필요한 부분을 수행하는 유체 역학 시뮬레이션을 작성했습니다. 앱이 실행되면 데이터 집합 및 UI가 제대로 렌더링되는 것으로 보이지만 시뮬레이션은 예상대로 작동하지 않습니다. 그래픽 진단을 사용하여 앱을 디버그할 수 있도록 그래픽 로그 문제를 포착할 수 있습니다. 이 문제는 앱에서 다음과 같이 보입니다.  
   
- ![시뮬레이션된 한 fluid 올바르게 작동합니다. ] (media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
+ ![시뮬레이트된 fluid 올바르게 작동 합니다. ] (media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
  그래픽 로그의 그래픽 문제를 포착하는 방법에 대한 자세한 내용은 [Capturing Graphics Information](capturing-graphics-information.md)를 참조하세요.  
   
@@ -40,21 +40,21 @@ ms.locfileid: "31481267"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>그래픽 로그에서 프레임을 검사하려면  
   
-1.  Visual Studio에서 잘못된 시뮬레이션 결과를 보이는 프레임이 포함된 그래픽 로그를 로드합니다. Visual Studio에 새 그래픽 진단 탭이 나타납니다. 이 탭의 맨 윗부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래에 있는 부분은 **프레임 목록**, 캡처된 각 프레임의 미리 보기를 표시 하는 합니다.  
+1.  Visual Studio에서 잘못된 시뮬레이션 결과를 보이는 프레임이 포함된 그래픽 로그를 로드합니다. Visual Studio에 새 그래픽 진단 탭이 나타납니다. 이 탭의 맨 윗부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 맨 아래에는 **프레임 목록**는 캡처된 각 프레임의 축소판 그림을 표시 합니다.  
   
 2.  에 **프레임 목록**, 잘못 된 시뮬레이션 동작을 보여 주는 프레임을 선택 합니다. 렌더링 코드가 아니라 시뮬레이션 코드에 오류가 있는 것으로 보이더라도, DirectCompute 이벤트는 Direct3D 이벤트와 함께 프레임별로 캡처되므로 프레임을 선택해야 합니다. 이 시나리오에서 그래픽 로그 탭은 다음과 같습니다.  
   
      ![그래픽 로그 문서를 Visual Studio에서 사용 합니다. ] (media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
   
- 문제를 보이는 프레임을 선택한 후에 **그래픽 이벤트 목록** 을 사용하여 프레임을 진단할 수 있습니다. **그래픽 이벤트 목록** 모든 DirectCompute 호출 및는 활성 프레임 중 작성 된 Direct3D API 호출에 대 한 이벤트 포함-예를 들어 API 호출는 GPU에서 계산을 실행 하거나 데이터 집합 또는 UI를 렌더링 합니다. 이 시나리오에서 우리는 GPU에서 실행하는 시뮬레이션의 일부를 나타내는 `Dispatch` 이벤트에 집중하겠습니다.  
+ 문제를 보이는 프레임을 선택한 후에 **그래픽 이벤트 목록** 을 사용하여 프레임을 진단할 수 있습니다. **그래픽 이벤트 목록** 모든 DirectCompute 호출 및 활성 프레임 중에 만들어진 Direct3D API 호출에 대 한 이벤트를 포함 합니다.-예를 들어 API 호출 GPU에서 계산을 실행 하거나 데이터 집합 또는 UI를 렌더링 하 합니다. 이 시나리오에서 우리는 GPU에서 실행하는 시뮬레이션의 일부를 나타내는 `Dispatch` 이벤트에 집중하겠습니다.  
   
 #### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>시뮬레이션 업데이트에 대한 디스패치 이벤트를 찾으려면  
   
-1.  에 **그래픽 진단** 도구 모음 선택 **이벤트 목록** 열려는 **그래픽 이벤트 목록** 창.  
+1.  에 **그래픽 진단** 도구 모음 선택 **이벤트 목록** 열려는 합니다 **그래픽 이벤트 목록** 창.  
   
-2.  검사는 **그래픽 이벤트 목록** 데이터 집합을 렌더링 하는 그리기 이벤트에 대 한 합니다. 간단 하 게 하려면이 입력 `Draw` 에 **검색** 의 오른쪽 위 모퉁이 있는 상자는 **그래픽 이벤트 목록** 창. 그러면 목록이 필터링되어 제목에 "그리기"가 포함된 이벤트만 나타납니다. 이 시나리오에서는 다음과 같은 그리기 이벤트가 발생한 것이 확인됩니다.  
+2.  검사는 **그래픽 이벤트 목록** 데이터 집합을 렌더링 하는 그리기 이벤트입니다. 쉽게 하려면 입력 `Draw` 에 **검색** 의 오른쪽 위 모퉁이 있는 상자는 **그래픽 이벤트 목록** 창입니다. 그러면 목록이 필터링되어 제목에 "그리기"가 포함된 이벤트만 나타납니다. 이 시나리오에서는 다음과 같은 그리기 이벤트가 발생한 것이 확인됩니다.  
   
-     ![이벤트 목록 &#40;EL&#41; 그리기 이벤트입니다. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![이벤트 목록 &#40;EL&#41; 이벤트를 그리는 보여 줍니다. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  각 그리기 이벤트 간에 이동하면서 그래픽 로그 문서 탭에서 렌더링 대상을 살펴봅니다.  
   
@@ -62,7 +62,7 @@ ms.locfileid: "31481267"
   
      ![이 그리기 이벤트 렌더링 시뮬레이션 데이터 집합입니다. ] (media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
   
-5.  이제 검사는 **그래픽 이벤트 목록** 에 대 한는 `Dispatch` 시뮬레이션을 업데이트 하는 이벤트입니다. 시뮬레이션이 렌더링되기 전에 업데이트될 가능성이 있기 때문에 먼저, 결과를 렌더링하는 그리기 이벤트 이전에 발생하는 `Dispatch` 이벤트에 집중할 수 있습니다. 간단 하 게 하려면이 수정 된 **검색** 상자를 `Draw;Dispatch;CSSetShader(`합니다. 그러면 그리기 이벤트 외에 `Dispatch` 및 `CSSetShader` 이벤트도 포함되도록 목록이 필터링됩니다. 이 시나리오에서는 그리기 이벤트 전에 다수의 `Dispatch` 이벤트가 발생한 것을 확인할 수 있습니다.  
+5.  이제 검사 합니다 **그래픽 이벤트 목록** 에 대 한는 `Dispatch` 시뮬레이션을 업데이트 하는 이벤트입니다. 시뮬레이션이 렌더링되기 전에 업데이트될 가능성이 있기 때문에 먼저, 결과를 렌더링하는 그리기 이벤트 이전에 발생하는 `Dispatch` 이벤트에 집중할 수 있습니다. 쉽게 하려면 수정 된 **검색** 상자를 `Draw;Dispatch;CSSetShader(`입니다. 그러면 그리기 이벤트 외에 `Dispatch` 및 `CSSetShader` 이벤트도 포함되도록 목록이 필터링됩니다. 이 시나리오에서는 그리기 이벤트 전에 다수의 `Dispatch` 이벤트가 발생한 것을 확인할 수 있습니다.  
   
      ![EL은 그리기, 디스패치 및 CSSetShader 이벤트](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
   
@@ -70,19 +70,19 @@ ms.locfileid: "31481267"
   
 #### <a name="to-determine-which-compute-shader-a-dispatch-call-executes"></a>디스패치 호출이 실행하는 계산 셰이더를 확인하려면  
   
-1.  에 **그래픽 진단** 도구 모음 선택 **이벤트 호출 스택** 열려는 **그래픽 이벤트 호출 스택** 창.  
+1.  에 **그래픽 진단** 도구 모음 선택 **이벤트 호출 스택** 열려는 합니다 **그래픽 이벤트 호출 스택** 창.  
   
-2.  시뮬레이션 결과를 렌더링하는 그리기 이벤트부터 시작하여 각 이전 `CSSetShader` 이벤트 사이를 역방향으로 이동합니다. 그런 다음는 **그래픽 이벤트 호출 스택** 창, 호출 사이트로 이동 하는 최상위 함수를 선택 합니다. 호출 사이트에서의 첫 번째 매개 변수를 사용할 수 있습니다는 [CSSetShader](http://msdn.microsoft.com/library/ff476402.aspx) 함수 셰이더 다음으로 실행 되는 계산을 결정 하는 호출 `Dispatch` 이벤트입니다.  
+2.  시뮬레이션 결과를 렌더링하는 그리기 이벤트부터 시작하여 각 이전 `CSSetShader` 이벤트 사이를 역방향으로 이동합니다. 그런 다음 합니다 **그래픽 이벤트 호출 스택** 창, 호출 사이트로 이동 하는 최상위 함수를 선택 합니다. 호출 사이트의 첫 번째 매개 변수를 사용할 수는 [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) 셰이더 다음 실행 되는 계산을 확인 하기 위해 호출한 함수 `Dispatch` 이벤트입니다.  
   
  이 시나리오에는 각 프레임에 `CSSetShader` 및 `Dispatch` 이벤트가 세 쌍 있습니다. 역방향으로 살펴보면, 세 번째 쌍은 통합 단계를 나타내고(유체 입자가 실제로 이동함), 두 번째 쌍은 힘 계산 단계를 나타내고(각 입자에 영향을 주는 힘이 계산됨), 첫 번째 쌍은 밀도 계산 단계를 나타냅니다.  
   
 #### <a name="to-debug-the-compute-shader"></a>계산 셰이더를 디버그하려면  
   
-1.  에 **그래픽 진단** 도구 모음 선택 **파이프라인 단계** 열려는 **그래픽 파이프라인 단계** 창.  
+1.  에 **그래픽 진단** 도구 모음 선택 **파이프라인 단계** 열려는 합니다 **그래픽 파이프라인 단계** 창.  
   
-2.  세 번째 `Dispatch` 이벤트 (그리기 이벤트 바로 앞에 있는 하나)를 선택한 후는 **그래픽 파이프라인 단계** 창 아래에서 **계산 셰이더** 단계, 선택  **디버깅을 시작**합니다.  
+2.  세 번째 `Dispatch` 이벤트 (그리기 이벤트 바로 앞에 하나)를 선택한 후 합니다 **그래픽 파이프라인 단계** 창 아래에 있는 합니다 **계산 셰이더** 단계를 선택  **디버깅을 시작할**합니다.  
   
-     ![EL.에 세 번째 디스패치 이벤트를 선택](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
+     ![EL.에서 세 번째 디스패치 이벤트를 선택](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
   
      HLSL 디버거는 통합 단계를 수행하는 셰이더에서 시작됩니다.  
   
@@ -90,11 +90,11 @@ ms.locfileid: "31481267"
   
      ![IntegrateCS 계산 셰이더를 디버깅 합니다. ] (media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4.  계산 셰이더 디버깅을 중지 하는 **디버그** 도구 모음 선택 **디버깅 중지** (키보드: Shift + F5).  
+4.  계산 셰이더 디버깅을 중지 하는 **디버그** 도구 모음 선택 **디버깅 중지** (키보드: shift+f5).  
   
 5.  다음으로, 두 번째 `Dispatch` 이벤트를 선택하고 이전 단계에서 했던 것과 마찬가지로 계산 셰이더 디버깅을 시작합니다.  
   
-     ![EL.에 두 번째 디스패치 이벤트를 선택](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
+     ![EL.에서 두 번째 디스패치 이벤트를 선택](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
   
      HLSL 디버거는 각 유체 입자에 작용하는 힘을 계산하는 셰이더에서 시작됩니다.  
   

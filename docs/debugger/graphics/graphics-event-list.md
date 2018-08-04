@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3640a1bbb06de7b05eeb62f847504690921b324
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4ef39ee2a92d1608abbe8d3380d26093b6994ccd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477838"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511471"
 ---
 # <a name="graphics-event-list"></a>그래픽 이벤트 목록
 Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 게임 또는 앱의 프레임 렌더링 중 기록된 Direct3D 이벤트를 살펴봅니다.  
   
  이벤트 목록은 다음과 같습니다.  
   
- ![이름에 "Index"가 있는 이벤트의 목록입니다. ] (media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![목록 이름에 "Index"가 있는 이벤트입니다. ] (media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>이벤트 목록 사용  
  이벤트 목록에서 이벤트를 선택하면 다른 그래픽 분석 도구에 표시되는 정보에 반영됩니다. 이러한 다른 도구와 함께 이벤트 목록을 사용하면 렌더링 문제를 자세히 검사하여 원인을 확인할 수 있습니다. 다른 그래픽 분석 도구와 이벤트 목록을 함께 사용하여 렌더링 문제를 해결할 수 있는 방법에 대해 자세히 알아보려면 [예제](graphics-diagnostics-examples.md)를 참조하세요.  
@@ -43,9 +43,9 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
  Direct3D 11은 여러 큐를 표시하지 않으므로 Direct3D 11 앱의 캡처 작업을 수행할 대 이벤트 목록의 이벤트가 색으로 구분되지 않습니다.  
   
 ### <a name="event-list-views"></a>이벤트 목록 보기  
- 이벤트 목록은 워크플로 및 기본 설정을 지원하기 위해 다양한 방법으로 그래픽 이벤트를 구성하는 두 가지 다른 보기를 지원합니다. 첫 번째 보기는 *GPU 작업 뷰* 있는, 이벤트와의 연결 된 상태 계층 구조적으로 합니다. 두 번째 보기는 *타임라인 보기* 로, 이벤트를 단순 목록에 연대순으로 구성합니다.  
+ 이벤트 목록은 워크플로 및 기본 설정을 지원하기 위해 다양한 방법으로 그래픽 이벤트를 구성하는 두 가지 다른 보기를 지원합니다. 첫 번째 보기는 합니다 *GPU 작업 뷰* 는 이벤트 및 구성의 연결 된 상태 계층 구조입니다. 두 번째 보기는 *타임라인 보기* 로, 이벤트를 단순 목록에 연대순으로 구성합니다.  
   
- **GPU 작업** 보기  
+ 합니다 **GPU 작업** 보기  
  캡처된 이벤트와 해당 상태를 계층적으로 표시합니다. 계층 구조의 최상위는 그리기 호출, 지우기, 표시 및 보기 처리 작업과 같은 이벤트로 구성됩니다. 이벤트 목록에서 그리기 호출을 확장하여 그리기 호출 시 최신이었던 장치 상태를 표시하고 각 상태 종류를 더욱 확장하여 값을 설정하는 이벤트를 표시할 수 있습니다. 이 수준에서는 이전 프레임에서 특정 상태를 설정했는지 여부와 마지막 그리기 호출 후 두 번 이상 설정되었는지 확인할 수 있습니다.  
   
  **타임라인** 보기  
@@ -53,7 +53,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
   
 ##### <a name="to-change-the-event-list-view-mode"></a>이벤트 목록 보기 모드를 변경하려면  
   
--   에 **그래픽 이벤트 목록** 창의 이벤트 목록 위에 **보기** 드롭다운 중에서 선택할는 **타임 라인** 보기 또는 **GPU작업** 보기.  
+-   에 **그래픽 이벤트 목록** 창의 이벤트 목록 위에 찾을 **보기** 드롭다운 중에서 선택할를 **타임 라인** 보기 또는 **GPU작업** 보기.  
   
 ### <a name="filtering-events"></a>이벤트 필터링  
  **그래픽 이벤트 목록** 창의 오른쪽 맨 위 모퉁이에 있는 검색 상자를 사용하여 이름에 특정 키워드가 포함된 이벤트만 포함하도록 이벤트 목록을 필터링할 수 있습니다. 이전 그림에서처럼 `Vertex`와 같은 키워드 하나를 지정하거나 `Draw;Primitive`와 같이 세미콜론으로 구분된 목록을 사용하여 여러 키워드를 지정할 수 있습니다. 그러면 이름에 `Draw` 또는 `Primitive` 가 포함된 이벤트를 찾게 됩니다. 검색어는 공백을 구분합니다. 예를 들어 `VSSet` 와 `VS Set` 는 다른 검색어입니다. 따라서 검색어는 주의 깊게 입력해야 합니다.  
@@ -82,7 +82,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 ### <a name="user-defined-events-in-direct3d-12"></a>Direct3D 12의 사용자 정의 이벤트  
  Direct3D 12에서 그룹 및 표식을 만들려면 이 섹션에 설명된 API를 사용합니다. 아래 표에서는 명령 큐나 명령 목록에서 이벤트를 표시할지에 따라 사용할 수 있는 API를 간략히 설명합니다.  
   
-|API 설명|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
+|API 설명|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
 |사용자 정의 이벤트 가용성 확인|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
 |이벤트 그룹 시작|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
@@ -92,7 +92,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Direct3D 11 이하의 사용자 정의 이벤트  
  Direct3D 11 이하에서 그룹 및 표식을 만들려면 이 섹션에 설명된 API를 사용합니다. 아래 표에서는 Direct3D 11의 여러 버전 및 Direct3D 이전 버전에서 사용할 수 있는 API를 간략히 설명합니다.  
   
-|API 설명|[ID3D11DeviceContext2](http://msdn.microsoft.com/library/windows/desktop/dn280498.aspx) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 패밀리(Direct3D 11.0 및 이전)|  
+|API 설명|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 패밀리(Direct3D 11.0 및 이전)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |이벤트 그룹 시작|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |이벤트 그룹 종료|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  
@@ -102,17 +102,18 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-## 리소스 기록 Visual Studio 2017 이상에 포함 된 **리소스 기록** 창.  조사식 아이콘을 선택 하면 ![조사식 아이콘](media/gfx_watch.png) 옆에 있는 항목에는 **이벤트 목록** 창이 표시 됩니다는 **리소스 기록** 창 아래에 표시 된:
+## <a name="resource-history"></a>리소스 기록
+Visual Studio 2017 이상 포함 된 **리소스 기록** 창입니다.  조사식 아이콘을 선택 하 ![조사식 아이콘](media/gfx_watch.png) 항목 옆에 **이벤트 목록** 창이 표시 됩니다는 **리소스 기록** 아래에 표시 된 창:
 
 ![리소스 기록](media/gfx_diag_resource_history.png)
 
-이 창에는 이벤트 목록에서 선택한 항목의 기록을 볼 수 있습니다.  맨 위에 있는 드롭다운의 기록을 보려면 다른 항목을 선택 데 사용할 수 있습니다.  위쪽 창에 포함 된 **프레임 설치 이벤트**합니다.  이 이벤트에 해당을 *만들기* 범주를 입력 하 고 일반적으로 초기화 하 고 리소스를 만들지 여부를 지정 하는 호출 됩니다.  포함 하 고 창 아래쪽에서 **프레임 이벤트** 섹션.  이러한 일반적인 읽기 되었으며 리소스의 사용 하는 동안 발생 하는 이벤트를 작성 합니다.  
+이 창에는 이벤트 목록에서 선택한 항목의 기록을 볼 수 있습니다.  맨 위에 있는 드롭다운의 기록을 보려면 다른 항목을 선택 하려면 사용할 수 있습니다.  위쪽 창에 포함 된 **프레임 설정 이벤트**합니다.  에 해당 하는 이벤트를 *만들기* 범주를 입력 하 고 일반적으로 초기화 하 고 리소스를 만들 수 있는 호출 됩니다.  포함 하 고 창 아래쪽의 **프레임 이벤트** 섹션입니다.  이러한 일반 읽기 되며 리소스의 사용 하는 동안 발생 하는 이벤트를 작성 합니다.  
 
 열|설명
 ---|---
-**Type** | 일반적으로 항목의 형식을 보여 줍니다 *만들기*, *읽기* 및 *쓰기*합니다.  
-**보기** | 리소스의 미리 보기에 표시 됩니다.  당시에는 리소스의 자세히 보기를 열려면 미리 보기를 두 번 클릭 합니다.  
-**Event**| 발생 하는 메서드 호출을 보여 줍니다. 이벤트를 생성 합니다.  조사식 아이콘을 선택 하 여 개별 항목에 대 한 모든 추가 기록을 볼 수 있습니다 ![조사식 아이콘](media/gfx_watch.png) 적절 한 줄에 있습니다.  와 같은 파란색 텍스트로 그려진 모든 항목 또한 `m_commandList` 또한 위의 스크린 샷에서에 자세한 내용을 보려면 선택할 수 있습니다.
+**Type** | 일반적으로 항목의 형식을 보여 줍니다 *Create*, *읽기* 하 고 *작성*합니다.  
+**보기** | 해당 시점에서 리소스의 미리 보기를 보여 줍니다.  이때 리소스의 세부 정보 보기를 열려면 미리 보기를 두 번 클릭 합니다.  
+**Event**| 발생 하는 메서드 호출을 보여 줍니다 이벤트를 생성 합니다.  조사식 아이콘을 선택 하 여 개별 항목에 추가 된 기록이 볼 수 있습니다 ![조사식 아이콘](media/gfx_watch.png) 적절 한 줄에 있습니다.  와 같은 파란색 텍스트로 그려지는 모든 항목 또한 `m_commandList` 위의 스크린샷에 대 한 자세한 내용은 선택할 수 있습니다.
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>참고 항목  

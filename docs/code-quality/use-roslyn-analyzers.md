@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 Roslyn 분석기 구성 및 사용
+title: Roslyn 분석기 구성 및 사용
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204156"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512173"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>구성 및 Roslyn 분석기 규칙 사용
 
@@ -141,6 +141,31 @@ A [규칙 집합](../code-quality/using-rule-sets-to-group-code-analysis-rules.m
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>명령줄 사용법
+
+명령줄에서 프로젝트를 빌드할 때 다음 조건에 해당 하는 경우 규칙 위반 빌드 출력에 나타납니다.
+
+- 분석기는 VSIX 확장 아니라 Nuget 패키지로 설치 됩니다.
+
+- 프로젝트의 코드에서 하나 이상의 규칙을 위반 합니다.
+
+- 합니다 [심각도](#rule-severity) 위반된 규칙의 설정 되어 **경고**, 위반 빌드 실패를 발생 하지는 경우 또는 **오류**, 위반 빌드 실패를 발생 하는 경우.
+
+빌드 출력의 자세한 정도 규칙 위반의 표시 여부에 영향을 주지 않습니다. 있어도 **quiet** 빌드 출력의 자세한 정도 규칙 위반 표시 합니다.
+
+> [!TIP]
+> 정적 코드 분석을 사용 하 여 명령줄에서 실행에 익숙한 사용자 라면 *FxCopCmd.exe* 사용 하 여 msbuild를 통해 또는 합니다 **RunCodeAnalysis** 플래그, Roslyn 분석기를 사용 하 여 작업을 수행 하는 방법은 다음과 같습니다.
+
+Msbuild를 사용 하 여 프로젝트를 빌드하면 명령줄 분석기 위반을 보려면, 이와 같은 명령을 실행 합니다.
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+다음 이미지는 분석기 규칙 위반을 포함 하는 프로젝트 개발에 이르기까지 명령줄 빌드 출력을 보여 줍니다.
+
+![규칙 위반을 사용 하 여 MSBuild 출력](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>참고자료
 

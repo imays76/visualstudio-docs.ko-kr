@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f7bdcf682e1baf928d3a36a828aeaafcb6d801
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231502"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512255"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 확장성의 변경 내용
 
@@ -97,7 +97,8 @@ Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Setti
   * **HKLM\Software\Microsoft\VisualStudio\{버전}**: MSI 설치 관리자 및 컴퓨터별 확장에서 생성 된 레지스트리 키입니다.
   * **HKCU\Software\Microsoft\VisualStudio\{버전}**: 사용자별 설정을 저장 하려면 Visual Studio에서 만든 레지스트리 키입니다.
   * **HKCU\Software\Microsoft\VisualStudio\{버전} _Config**: 위의 Visual Studio HKLM 키와 레지스트리 키의 복사본에서 병합 *.pkgdef* 파일 확장명으로 합니다.
-* 레지스트리에 대 한 영향을 줄이기 위해 Visual Studio는 이제 사용 합니다 [RegLoadAppKey](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724886(v=vs.85).aspx) 레지스트리 키 아래에 있는 개인 이진 파일에 저장할 수는 함수 *[VSAPPDATA]\privateregistry.bin*합니다. Visual Studio 관련 키의 매우 작은 수만 시스템 레지스트리를 유지합니다.
+* 레지스트리에 대 한 영향을 줄이기 위해 Visual Studio는 이제 사용 합니다 [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) 레지스트리 키 아래에 있는 개인 이진 파일에 저장할 수는 함수 *[VSAPPDATA]\privateregistry.bin*합니다. Visual Studio 관련 키의 매우 작은 수만 시스템 레지스트리를 유지합니다.
+
 * Visual Studio 프로세스 내에서 실행 되는 기존 코드를 받지 않습니다. Visual Studio은 개인 레지스트리에 HKCU Visual Studio 관련 키 아래의 모든 레지스트리 작업을 리디렉션합니다. 시스템 레지스트리를 사용 하 여 읽기 및 쓰기 다른 레지스트리 위치를 계속 합니다.
 * 외부 코드는 Visual Studio 레지스트리 항목에 대 한이 파일에서 읽고 로드 해야 합니다.
 

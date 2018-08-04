@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078444"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512186"
 ---
 # <a name="create-bootstrapper-packages"></a>부트스트래퍼 패키지 만들기
 설치 프로그램은 검색 및 설치 Windows Installer와 같은 재배포 가능 구성 요소를 구성할 수 있는 일반 설치 관리자 (*.msi*) 파일 및 프로그램을 실행 합니다. 설치 관리자를 부트스트래퍼라고도 합니다. 구성 요소 설치를 관리하는 메타데이터를 지정하는 XML 매니페스트 집합을 통해 설치 프로그램을 프로그래밍합니다.  에 나타나는 각 재배포 가능 구성 요소 또는 필수 구성 요소를 **필수 구성 요소** ClickOnce에 대 한 대화 상자는 부트스트래퍼 패키지 있습니다. 부트스트래퍼 패키지는 필수 구성 요소를 설치해야 하는 방법을 설명하는 매니페스트 파일이 포함된 파일과 디렉터리 그룹입니다. 
@@ -86,10 +86,10 @@ Visual studio에서 bootstrapper 패키지에서는 이러한 파일을 부트�
 |--------------|-----------------|  
 |ApplicationName|응용 프로그램의 이름입니다.|  
 |ProcessorArchitecture|실행 파일의 대상인 플랫폼의 단어당 비트 및 프로세서입니다. 여기에는 다음 값이 포함됩니다.<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95, Windows 98 또는 Windows ME 운영 체제의 버전 번호. 버전의 구문은 Major.Minor.ServicePack입니다.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 또는 Windows 7 운영 체제의 버전 번호. 버전의 구문은 Major.Minor.ServicePack입니다.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Windows Installer 어셈블리 (msi.dll) 설치 하는 동안 실행의 버전입니다.|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|사용자에게 관리자 권한이 있으면 이 속성이 설정됩니다. 값은 true 또는 false입니다.|  
+|[Version9x](/windows/desktop/Msi/version9x)|Microsoft Windows 95, Windows 98 또는 Windows ME 운영 체제의 버전 번호. 버전의 구문은 Major.Minor.ServicePack입니다.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 또는 Windows 7 운영 체제의 버전 번호. 버전의 구문은 Major.Minor.ServicePack입니다.|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|Windows Installer 어셈블리 (msi.dll) 설치 하는 동안 실행의 버전입니다.|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|사용자에게 관리자 권한이 있으면 이 속성이 설정됩니다. 값은 true 또는 false입니다.|  
 |InstallMode|설치 모드는 구성 요소 설치를 시작해야 하는 위치를 나타냅니다. 여기에는 다음 값이 포함됩니다.<br /><br /> 필수 구성 요소-HomeSite-공급 업체의 웹 사이트에서 설치 됩니다.<br />필수 구성 요소-SpecificSite-선택한 위치에서 설치 됩니다.<br />-SameSite-필수 구성 요소는 응용 프로그램과 동일한 위치에서 설치 됩니다.|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>응용 프로그램 설치와에서 별도 재배포 가능 패키지  
