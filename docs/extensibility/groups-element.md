@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f10983961f5449d75d63555b593350199921fbd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb437530e121daab218d8506bb41493c0423e826
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126925"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497349"
 ---
 # <a name="groups-element"></a>Groups 요소
 VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <Groups>  
   <Group>... </Group>  
   <Group>... </Group>  
@@ -34,7 +34,7 @@ VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
   
@@ -55,9 +55,9 @@ VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.
 |-------------|-----------------|  
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다.|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
-```  
+```xml  
 <Groups>  
   <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
     <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
@@ -65,6 +65,6 @@ VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.
 </Groups>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

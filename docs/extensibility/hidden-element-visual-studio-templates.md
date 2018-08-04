@@ -1,5 +1,5 @@
 ---
-title: 숨겨진 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: 요소 (Visual Studio 템플릿)을 숨겨진 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41005dc789cf464973b225c76b2845db5565772
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18c5783eb6e9572e030e4ea764ad0393f61f6049
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127308"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498264"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Hidden 요소(Visual Studio 템플릿)
-서식 파일 중 하나에 표시 되는지 여부를 지정 된 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.  
+# <a name="hidden-element-visual-studio-templates"></a>Hidden 요소 (Visual Studio 템플릿)
+템플릿 중 하나에 표시할지 여부를 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -36,7 +36,7 @@ ms.locfileid: "31127308"
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
  없음  
@@ -53,14 +53,14 @@ ms.locfileid: "31127308"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 중 하나 여야 합니다 `true` 또는 `false`한다는 표시 이므로에 해당 템플릿이 표시 됩니다는 여부는 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.  
+ 텍스트 여야 `true` 또는 `false`나타내는 템플릿이 표시 됩니다 여부는 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.  
   
 ## <a name="remarks"></a>설명  
  `Hidden`는 선택적 요소입니다.  
   
- 지정 된을의 다른 자식 요소가 없는 경우는 `TemplateData` 는 필요 합니다.  
+ 다른 자식 요소가 없습니다를 지정 하는 경우는 `TemplateData` 요소는 필요 합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.  
   
 ```  
@@ -88,6 +88,6 @@ ms.locfileid: "31127308"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: 제거로 인해 ~ SAK 파일 | Microsoft Docs
+title: 제거 ~ SAK 파일 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,43 +15,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61227652bf191280f69466f127c4a400ea43856e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129643"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497952"
 ---
-# <a name="elimination-of-sak-files"></a>제거로 인해 ~ SAK 파일
-소스 제어 플러그 인 API 1.2에는 ~ SAK 파일 기능 플래그 및 MSSCCPRJ 파일 및 공유 체크 아웃 원본 제어 플러그 인을 지원 하는지 여부를 검색 하는 새로운 기능으로 대체 되었습니다.  
+# <a name="elimination-of-sak-files"></a>제거 ~ SAK 파일
+원본 제어 플러그 인 API 1.2에서는 *~ SAK* 기능 플래그를 통해 파일 대체 되었으며 원본 여부를 검색 하는 새 함수 제어 플러그 인 지원 합니다 *MSSCCPRJ* 파일 및 공유 체크 아웃 합니다.  
   
 ## <a name="sak-files"></a>~ SAK 파일  
- Visual Studio.NET 2003 접두사로 추가 하는 임시 파일을 만든 ~ SAK 합니다. 이러한 파일은 소스 제어 플러그 인에서 지원 하는지 확인 하는 데 사용 됩니다.  
+Visual Studio.NET 2003 접두사로 추가 하는 임시 파일을 만들었습니다 *~ SAK*합니다. 이러한 파일을 사용 하 여 소스 제어 플러그 인을 지원 하는지 확인할 수 있습니다:  
   
--   MSSCCPRJ 합니다. SCC 파일입니다.  
+- 합니다 *MSSCCPRJ.SCC* 파일입니다.  
   
--   다중 체크 아웃 (공유)입니다.  
-  
- 플러그 인에 대해 기능을 지 원하는 고급 제공 된 소스 제어 플러그 인 API 1.2에서, IDE 새로운 기능, 플래그 및 다음 섹션에서에서 자세히 설명 하는 함수를 사용 하 여 임시 파일을 만들지 않고 이러한 기능을 검색할 수 있습니다.  
+- 여러 (공유) 체크 아웃 합니다.  
+    
+플러그 인에 대해 원본 제어 플러그 인 API 1.2에서 제공 하는 고급 함수를 지 원하는, IDE는 새로운 기능, 플래그 및 다음 섹션에 자세히 설명 하는 함수를 사용 하 여 임시 파일을 만들지 않고 이러한 기능을 검색할 수 있습니다.  
   
 ## <a name="new-capability-flags"></a>새 기능 플래그  
  `SCC_CAP_SCCFILE`  
   
  `SCC_CAP_MULTICHECKOUT`  
   
-## <a name="new-functions"></a>새로운 함수  
+## <a name="new-functions"></a>새 함수  
  [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)  
   
  [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)  
   
- 소스 제어 플러그 인 (공유) 다중 체크 아웃을 원하는 경우 다음을 선언는 `SCC_CAP_MULTICHECKOUT` 기능 및 구현 하는 `SccIsMultiCheckOutEnabled` 함수입니다. 이 함수는 소스 제어 프로젝트에서 체크 아웃 작업이 수행 될 때마다 호출 됩니다.  
+ 선언 경우 소스 제어 플러그 인 (공유) 여러 체크 아웃을 지원 합니다 `SCC_CAP_MULTICHECKOUT` 기능과 구현을 `SccIsMultiCheckOutEnabled` 함수입니다. 소스 제어 프로젝트에서 체크 아웃 작업을 수행할 때마다이 함수가 호출 됩니다.  
   
- 소스 제어 플러그 인 경우 만들고 있는 MSSCCPRJ 사용을 지원 합니다. SCC 파일 이면 선언는 `SCC_CAP_SCCFILE` 기능 및 구현 하는 [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)합니다. 이 함수는 파일의 목록을 사용 하 여 호출 됩니다. 함수 반환 `TRUE/FALSE` 를 Visual Studio는 MSSCCPRJ을 사용할지 여부를 나타내는 각 파일에 대 한 합니다. SCC 파일 것입니다. 소스 제어 플러그 인가 이러한 새로운 기능 및 기능을 지원 하도록 하지 하는 경우 이러한 파일의 생성을 사용 하지 않도록 설정 하려면 다음 레지스트리 키를 사용할 수 있습니다.  
+ 소스 제어 플러그 인 만들기 및 사용을 지 원하는 경우는 *MSSCCPRJ.SCC* 선언 파일을 `SCC_CAP_SCCFILE` 기능과 구현을 [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)합니다. 이 함수는 파일의 목록을 사용 하 여 호출 됩니다. 함수 반환 `TRUE' or 'FALSE` Visual Studio를 사용할지 여부를 나타내는 각 파일에 대 한는 *MSSCCPRJ.SCC* 파일에 대 한 합니다. 소스 제어 플러그 인이 새 기능 및 기능을 지원 하지 않도록 선택 하면 다음 레지스트리 키를 사용 하 여 이러한 파일의 생성을 사용 하지 않도록 설정 수 것:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateTemporaryFilesInSourceControl" = dword: 00000001  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*  
   
 > [!NOTE]
->  이 레지스트리 키 dword: 00000000로 설정 되어, 있으면 되 고, 존재 하지 않는 키에 해당 하 고 Visual Studio는 여전히 임시 파일을 만들 하려고 합니다. 그러나 레지스트리 키가 dword: 00000001를 설정 하는 경우 Visual Studio 임시 파일을 만들 시도 하지 않습니다. 대신 가정 소스 제어 플러그 인은 MSSCCPRJ를 지원 하지 않습니다. SCC 파일 공유 체크 아웃을 지원 하지 않습니다.  
+>  이 레지스트리 키로 설정 되어 있으면 *dword:00000000은*되 존재 하지 않는, 키 및 Visual Studio는 여전히 임시 파일을 만들려고 시도 합니다. 그러나 레지스트리 키로 설정 되어 있으면 *dword:00000001*, 임시 파일을 만들려면 Visual Studio를 시도 하지 않습니다. 소스 제어 플러그 인을 지원 하지 않음을 가정 대신 합니다 *MSSCCPRJ.SCC* 파일과 공유 체크 아웃을 지원 하지 않습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>참고자료  
+ [원본 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
