@@ -1,5 +1,5 @@
 ---
-title: '방법: Windows에 대 한 자동화를 제공 합니다. | Microsoft Docs'
+title: '방법: Windows에 대 한 자동화 제공 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,34 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c37123eeba42630b4b899966f7f4b0dc8c046fe8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d9158ac7d133d30ae5fbca0281cbc55138e041f6
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129474"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510740"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>방법: Windows에 대 한 자동화를 제공 합니다.
-문서 창과 도구 창에 대 한 자동화를 제공할 수 있습니다. 제공 하는 자동화 개체를 사용 하는 창에 사용할 수 있도록 하 고 환경에 이미 있지 때마다 자동화 좋습니다 작업 목록에서와 마찬가지로 이미 만들어진 자동화 개체를 제공 합니다.
+# <a name="how-to-provide-automation-for-windows"></a>방법: windows에 대 한 자동화 제공
+문서 창과 도구에 대 한 자동화를 제공할 수 있습니다. 창에서 자동화 개체를 사용할 수 있도록 하 고 환경에 아직 때마다 자동화 끄 제공 작업 목록으로 바로 사용할 수 있는 자동화 개체를 제공 합니다.
 
 ## <a name="automation-for-tool-windows"></a>도구 창에 대 한 자동화
- 환경 자동화 기능을 제공 하는 도구 창에는 표준 반환 하 여 <xref:EnvDTE.Window> 다음 절차에 설명 된 대로 개체:
+ 환경 도구 창에는 표준 반환 하 여 자동화를 제공 <xref:EnvDTE.Window> 다음 절차에 설명 된 대로 개체:
 
-#### <a name="to-provide-automation-for-tool-windows"></a>도구 창에 대 한 자동화를 제공 하려면
+### <a name="to-provide-automation-for-tool-windows"></a>도구 창에 대 한 자동화 제공
 
-1.  호출 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 메서드를 사용 하 여 환경을 통해 <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> 으로 `VSFPROPID` 매개 변수를는 `Window` 개체입니다.
+1.  호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 메서드를 사용 하 여 환경을 통해 <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> 으로 `VSFPROPID` 매개 변수를는 `Window` 개체입니다.
 
-2.  호출자를 통해 도구 창에 대 한 VSPackage 관련 자동화 개체를 요청 하는 경우 <xref:EnvDTE.Window.Object%2A>, 환경 `QueryInterface` 에 대 한 `IExtensibleObject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, 또는 `IDispatch` 인터페이스입니다. 둘 다 `IExtensibleObject` 및 `IVsExtensibleObject` 제공는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A> 메서드.
+2.  호출자를 통해 도구 창에 대 한 VSPackage 관련 자동화 개체를 요청 하는 경우 <xref:EnvDTE.Window.Object%2A>, 환경 `QueryInterface` 에 대 한 `IExtensibleObject`를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, 또는 `IDispatch` 인터페이스입니다. 둘 다 `IExtensibleObject` 하 고 `IVsExtensibleObject` 제공을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A> 메서드.
 
-3.  환경을 다음 호출 하는 경우는 `GetAutomationObject` 전달 메서드 `NULL`, VSPackage 관련 개체를 다시 전달 하 여 응답 합니다.
+3.  환경을 다음으로 호출 합니다 `GetAutomationObject` 전달 메서드 `NULL`, VSPackage 관련 개체를 다시 전달 하 여 응답 합니다.
 
-4.  호출 하는 경우 `QueryInterface` 에 대 한 `IExtensibleObject` 및 `IVsExtensibleObject` 실패 하는 환경 호출 `QueryInterface` 에 대 한 `IDispatch`합니다.
+4.  호출 하는 경우 `QueryInterface` 에 대 한 `IExtensibleObject` 하 고 `IVsExtensibleObject` 실패 하는 환경 호출 `QueryInterface` 에 대 한 `IDispatch`합니다.
 
 ## <a name="automation-for-document-windows"></a>문서 창에 대 한 자동화
- 표준 <xref:EnvDTE.Document> 편집기의 자체 구현을 가질 수 있지만 개체는 환경에서 사용할 수는 <xref:EnvDTE.Document> 개체를 구현 하 여 `IExtensibleObject` 인터페이스에 응답 하 고 `GetAutomationObject`합니다.
+ 표준 <xref:EnvDTE.Document> 또한 개체는 환경에서 사용할 수 있는 편집기의 자체 구현이 있을 수 있지만 합니다 <xref:EnvDTE.Document> 구현 하 여 개체 `IExtensibleObject` 인터페이스 및 대응 `GetAutomationObject`합니다.
 
- 또한 편집기 통해 검색 하는 VSPackage 관련 자동화 개체를 제공할 수는 <xref:EnvDTE.Document.Object%2A> 메서드를 구현 하 여는 `IVsExtensibleObject` 또는 `IExtensibleObject` 인터페이스입니다. [VSSDK 샘플](http://aka.ms/vs2015sdksamples) RTF 문서 관련 자동화 개체를 제공 합니다.
+ 편집기를 통해 검색할 VSPackage 관련 자동화 개체를 제공할 수 또한 합니다 <xref:EnvDTE.Document.Object%2A> 메서드를 구현 하 여는 `IVsExtensibleObject` 또는 `IExtensibleObject` 인터페이스입니다. 합니다 [VSSDK 샘플](http://aka.ms/vs2015sdksamples) RTF 문서 관련 자동화 개체를 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
-
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>
+## <a name="see-also"></a>참고자료
+    
+<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

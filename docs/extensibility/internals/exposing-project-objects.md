@@ -14,19 +14,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23cc1db46870d77e6c137ab621c970e730b9cd0e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
-ms.translationtype: HT
+ms.openlocfilehash: ae7b34df55593f07adeaffe8d654b59629baaae5
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497143"
+ms.locfileid: "39510912"
 ---
 # <a name="expose-project-objects"></a>프로젝트 개체 노출
-프로젝트 형식 사용자 지정 자동화 인터페이스를 사용 하 여 프로젝트에 대 한 액세스를 허용 하려면 자동화 개체를 제공할 수 있습니다. 모든 프로젝트 형식 표준 제공할 예정입니다 <xref:EnvDTE.Project> 에서 액세스 되는 자동화 개체 <xref:EnvDTE.Solution>, IDE에서 열려 있는 모든 프로젝트의 컬렉션이 들어 있는입니다. 프로젝트의 각 항목에 의해 노출 되 될를 <xref:EnvDTE.ProjectItem> 개체를 사용 하 여 액세스할 `Project.ProjectItems`합니다. 이러한 표준 automation 개체 외에도 프로젝트 프로젝트 관련 자동화 개체를 제공할 수 있습니다.  
-  
- 사용자 지정 루트 수준의 자동화 하는 개체에 액세스할 수 있습니다 사용 하 여 루트 DTE 개체에서 바인딩된을 만들 수 있습니다 `DTE.<customeObjectName>` 또는 `DTE.GetObject("<customObjectName>")`합니다. 예를 들어, Visual c + + 라는 c + + 프로젝트 관련 프로젝트 컬렉션을 만듭니다 *VCProjects* 사용 하 여 액세스할 수 있는 `DTE.VCProjects` 또는 `DTE.GetObject("VCProjects")`합니다. 만들 수도 있습니다는 `Project.Object`, 프로젝트 형식에 대 한 고유한를 `Project.CodeModel`, 가장 많이 파생 된 개체를 쿼리할 수 있는 및 `ProjectItem`를 노출 하는 `ProjectItem.Object` 및 `ProjectItem.FileCodeModel`합니다.  
-  
- 사용자 지정, 프로젝트별 프로젝트 컬렉션을 노출 하는 프로젝트에 대 한 일반적인 규칙은 예를 들어 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 를 사용 하 여 액세스할 수 있습니다는 c + + 특정 프로젝트 컬렉션을 만듭니다 `DTE.VCProjects` 또는 `DTE.GetObject("VCProjects")`합니다. 만들 수도 있습니다는 `Project.Object`, 프로젝트 형식에 대 한 고유한를 `Project.CodeModel`, 가장 많이 파생 된 개체를 쿼리할 수 있는 `ProjectItem`를 노출 하는 `ProjectItem.Object`, 및 `ProjectItem.FileCodeModel`.  
+
+프로젝트 형식 사용자 지정 자동화 인터페이스를 사용 하 여 프로젝트에 대 한 액세스를 허용 하려면 자동화 개체를 제공할 수 있습니다. 모든 프로젝트 형식 표준 제공할 예정입니다 <xref:EnvDTE.Project> 에서 액세스 되는 자동화 개체 <xref:EnvDTE.Solution>, IDE에서 열려 있는 모든 프로젝트의 컬렉션이 들어 있는입니다. 프로젝트의 각 항목에 의해 노출 되 될를 <xref:EnvDTE.ProjectItem> 개체를 사용 하 여 액세스할 `Project.ProjectItems`합니다. 이러한 표준 automation 개체 외에도 프로젝트 프로젝트 관련 자동화 개체를 제공할 수 있습니다.
+
+사용자 지정 루트 수준의 자동화 하는 개체에 액세스할 수 있습니다 사용 하 여 루트 DTE 개체에서 바인딩된을 만들 수 있습니다 `DTE.<customObjectName>` 또는 `DTE.GetObject("<customObjectName>")`합니다. 예를 들어, Visual c + + 라는 c + + 프로젝트 관련 프로젝트 컬렉션을 만듭니다 *VCProjects* 사용 하 여 액세스할 수 있는 `DTE.VCProjects` 또는 `DTE.GetObject("VCProjects")`합니다. 만들 수도 있습니다는 `Project.Object`, 프로젝트 형식에 대 한 고유한를 `Project.CodeModel`, 가장 많이 파생 된 개체를 쿼리할 수 있는 및 `ProjectItem`를 노출 하는 `ProjectItem.Object` 및 `ProjectItem.FileCodeModel`합니다.
+
+사용자 지정, 프로젝트별 프로젝트 컬렉션을 노출 하는 프로젝트에 대 한 일반적인 규칙은 예를 들어 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 를 사용 하 여 액세스할 수 있습니다는 c + + 특정 프로젝트 컬렉션을 만듭니다 `DTE.VCProjects` 또는 `DTE.GetObject("VCProjects")`합니다. 만들 수도 있습니다는 `Project.Object`, 프로젝트 형식에 대 한 고유한를 `Project.CodeModel`, 가장 많이 파생 된 개체를 쿼리할 수 있는 `ProjectItem`를 노출 하는 `ProjectItem.Object`, 및 `ProjectItem.FileCodeModel`.  
   
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>프로젝트를 VSPackage-지정 된 개체에 적용할  
   
@@ -93,5 +94,6 @@ ms.locfileid: "39497143"
   
      사용자 지정 `Projects` 컬렉션 개체는 프로젝트 자동화 모델의 나머지 부분에 대 한 편의 진입점입니다. 프로젝트 개체에서 액세스할 수 이기도 합니다 <xref:EnvDTE.Solution> 프로젝트 컬렉션입니다. 사용 하 여 소비자에 게 제공 하는 적절 한 코드 및 레지스트리 항목을 만든 후 `Projects` 컬렉션 개체에 남아 있는 프로젝트 모델에 대 한 표준 개체 구현을 제공 해야 합니다. 자세한 내용은 [프로젝트 모델링](../../extensibility/internals/project-modeling.md)합니다.  
   
-## <a name="see-also"></a>참고자료  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>
+## <a name="see-also"></a>참고자료
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>
