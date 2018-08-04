@@ -1,5 +1,5 @@
 ---
-title: Guid 및 Visual Studio 도구 모음의 Id | Microsoft Docs
+title: Visual Studio 도구 모음의 Guid 및 Id | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,27 +19,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 394e0991d734279879df89422ac23fdd26899eeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6982835b9d3b6259a47439dbe7b1b9252edc3dbe
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133991"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499008"
 ---
-# <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 및 Id를 Visual Studio 도구 모음
-이 항목의 도구 모음을 Visual Studio 통합된 개발 환경 (IDE)에 포함 된 GUID 및 ID 값을 열거 하며 그룹 포함. 이러한 값은 Visual Studio SDK의 일부로 설치 되는.vsct 파일에서 정의 됩니다. 자세한 내용은 참조 [IDE-Defined 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  
+# <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 및 Id의 Visual Studio 도구 모음
+이 항목에서는 Visual Studio 통합된 개발 환경 (IDE)에 포함 된 도구 모음의 GUID 및 ID 값을 열거 하 고 포함 된 그룹의 키를 누릅니다. 이러한 값에 정의 된 *.vsct* Visual Studio SDK의 일부로 설치 되는 파일입니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  
   
 > [!NOTE]
->  Visual Studio 및 GUID에 정의 되지 않은 다양 한 Visual Studio에서 사용할 수 있는 도구 모음 및 ID 값이 public이 아니어야 합니다. 이 항목에서는 Visual Studio SDK.vsct 파일에 정의 되어 있는 도구 모음만 나열 합니다.  
+>  다양 한 Visual Studio에 사용할 수 있는 도구는 Visual Studio 및 GUID가 정의 되어 있지 않은 및 ID 값 public이 아니어야 합니다. 이 항목에서는 Visual Studio SDK에 정의 된 도구 모음만 나열 *.vsct* 파일입니다.  
   
- .Vsct 파일에 정의 되어 있는 IDE 개체를 사용 하는 방법에 대 한 자세한 내용은 참조 [확장 메뉴 및 명령을](../../extensibility/extending-menus-and-commands.md)합니다.  
+ 에 정의 된 IDE 개체를 사용 하는 방법에 대 한 자세한 내용은 *.vsct* 파일을 참조 하십시오 [메뉴와 명령을 확장](../../extensibility/extending-menus-and-commands.md)합니다.  
   
- Visual Studio IDE에서 제공 하는 기본 도구 모음 GUID는 사용 `guidSHLMainMenu`, guid: id 구문을 사용 하 여 다르게 지정을 제외 하 고 있습니다.  
+ GUID를 사용 하는 Visual Studio IDE에서 제공 하는 기본 도구 모음 `guidSHLMainMenu`를 사용 하 여 지정 하는 경우를 제외 하 고 `GUID:ID` 구문입니다.  
   
-## <a name="ide-toolbars"></a>IDE의 도구 모음  
- 다음 도구 모음에서 Visual Studio IDE에 의해 제공 됩니다. 도구 모음에서 선택 하 여 표시할 수는 **도구 모음** 의 하위 메뉴는 **도구** 메뉴. 이 섹션에는 도구 창에서 도구 모음 포함 되지 않습니다.  
+## <a name="ide-toolbars"></a>IDE 도구 모음  
+ 다음 도구는 Visual Studio IDE에서 제공 됩니다. 도구 모음에서 선택 하 여 표시할 수는 **도구 모음** 의 하위 메뉴의 **도구** 메뉴. 이 섹션의 도구 창에서 도구 모음 포함 되지 않습니다.  
   
- 그룹에만 도구 모음에서 직접 상속 됩니다. 그룹을 추가 하려면 GUID 및 도구 모음 ID를 해당 부모를 설정 합니다. 도구 모음 단추를 추가 하려면 해당 부모 그룹에 도구 모음에서 설정 합니다.  
+ 도구 모음에서 직접 그룹만 내림차순 수 있습니다. 그룹을 추가 하려면 도구 모음의 ID GUID를 부모를 설정 합니다. 도구 모음에 단추를 추가할 그룹에 부모 도구 모음에서 설정 합니다.  
   
 |Toolbar|ID|  
 |-------------|--------|  
@@ -50,21 +50,21 @@ ms.locfileid: "31133991"
 |디버그 위치|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
 ### <a name="special-toolbars"></a>특수 도구 모음  
- 이러한 도구 모음에서 Visual Studio IDE에 의해 정의 된 특수 기능을 제공 하 고 하지만 명령 그룹을 호스트 하지 않습니다.  
+ 이러한 도구 모음 Visual Studio IDE에 의해 정의 되지만 특수 기능을 제공 하며 명령 그룹을 호스트 하지 않습니다.  
   
 |Toolbar|ID|  
 |-------------|--------|  
-|명령 추가|IDM_VS_TOOL_ADDCOMMAND|  
+|Add 명령|IDM_VS_TOOL_ADDCOMMAND|  
 |Undefined|IDM_VS_TOOL_UNDEFINED|  
 |XML 스키마|IDM_VS_TOOL_SCHEMA|  
 |XML 데이터|IDM_VS_TOOL_DATA|  
   
 ## <a name="groups-on-the-ide-toolbars"></a>IDE 도구 모음에는 그룹  
- 표준 도구 모음 단추를 추가 하려면 다음 그룹 중 하나를 부모로 설정 합니다. 그룹은 부모 도구 모음으로 정렬 됩니다.  
+ 표준 도구 모음에 단추를 추가 하려면 다음 그룹 중 하나를 부모로 설정 합니다. 그룹은 부모 도구 모음으로 정렬 됩니다.  
   
 ### <a name="standard-toolbar-groups"></a>표준 도구 모음 그룹  
   
-|이름|ID|  
+|name|ID|  
 |----------|--------|  
 |저장/열기|IDG_VS_TOOLSB_SAVEOPEN|  
 |잘라내기/복사|IDG_VS_TOOLSB_CUTCOPY|  
@@ -78,14 +78,14 @@ ms.locfileid: "31133991"
   
 ### <a name="build-toolbar-groups"></a>빌드 도구 모음 그룹  
   
-|이름|ID|  
+|name|ID|  
 |----------|--------|  
 |빌드 표시줄|IDG_VS_BUILDBAR|  
 |취소|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>텍스트 편집기 도구 모음 그룹  
   
-|이름|ID|  
+|name|ID|  
 |----------|--------|  
 |완료|IDM_VS_TOOL_TEXTEDITOR|  
 |Indent|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -94,7 +94,7 @@ ms.locfileid: "31133991"
   
 ### <a name="debug-toolbar-groups"></a>디버그 도구 모음 그룹  
   
-|이름|ID|  
+|name|ID|  
 |----------|--------|  
 |실행|IDM_DEBUG_TOOLBAR|  
 |단계별 실행|IDG_DEBUG_TOOLBAR_STEPPING|  
@@ -103,15 +103,15 @@ ms.locfileid: "31133991"
   
 ### <a name="debug-location-toolbar-groups"></a>디버그 위치 도구 모음 그룹  
   
-|이름|ID|  
+|name|ID|  
 |----------|--------|  
 |디버그 위치|IDG_DEBUG_CONTEXT_TOOLBAR|  
   
 ## <a name="tool-window-toolbars"></a>도구 창 도구 모음  
- 도구 모음 또는 도구 창은 IDE에서 직접와 같이 나타날 수 **솔루션 탐색기**합니다. 도구 창은.vsct 파일에 정의 되어 있지 않은, 때문에 도구 창 도구 모음에서 정의 된 부모를 갖지 않습니다. 코드에 배치 됩니다. 다음 표에서 IDE에서 도구 창에 표시 되는 도구 모음 및 포함 명령 그룹을 보여 줍니다.  
+ 도구 모음 도구 창 또는 IDE에서 직접와 같이 나타날 수 **솔루션 탐색기**합니다. 도구 창에 정의 되어 있지 않은 때문 *.vsct* 파일, 도구 창 도구 모음 부모가 정의 되지 않습니다. 대신 코드에 배치 됩니다. 다음 표에서 IDE에서 도구 창에 표시 되는 도구 모음 및 포함 된 명령 그룹을 보여 줍니다.  
   
 > [!NOTE]
->  도구 모음 및 그룹의 GUID를 사용 하 여 `guidSHLMainMenu`, guid: id 구문을 사용 하 여 다르게 지정을 제외 하 고 있습니다. 도구 모음에 대 한 GUID를 지정 하는 경우 해당 도구 모음에서 상속 하는 그룹에도 적용 됩니다.  
+>  도구 모음 및 그룹의 GUID를 사용 하 여 `guidSHLMainMenu`, guid: id 구문을 사용 하 여 지정 하는 경우를 제외 합니다. 도구 모음에 대 한 GUID를 지정 하는 경우 해당 도구 모음에서 물려받은 그룹에도 적용 됩니다.  
   
 |도구 창|Toolbar|그룹|  
 |-----------------|-------------|------------|  
@@ -134,10 +134,10 @@ ms.locfileid: "31133991"
 |호출 브라우저|IDM_VS_TOOL_CALLBROWSER1... 16|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|  
 |중단점|guidVSDebugGroup:IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|  
 |디스어셈블리|guidVSDebugGroup:IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|  
-|1-4 메모리|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1 중... 4|IDG_MEMORY_EXPRESSION1... 4<br /><br /> IDG_MEMORY_COLUMNS1... 4|  
+|1-4 메모리|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1... 4<br /><br /> IDG_MEMORY_COLUMNS1... 4|  
 |프로세스|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [도구 모음에 메뉴 컨트롤러 추가](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
- [도구 창에는 도구 모음 추가](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Visual Studio 메뉴의 GUID 및 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+ [도구 창에 도구 모음을 추가 합니다.](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
+ [Guid 및 Id의 Visual Studio 메뉴](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

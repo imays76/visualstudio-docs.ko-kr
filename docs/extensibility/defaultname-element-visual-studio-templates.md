@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e67d8970859906e839abf89e85e38c24c2d88066
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03513b786c17e5bef3d8fa1fff79c1c3e73fe6a0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126860"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500321"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>DefaultName 요소(Visual Studio 템플릿)
+# <a name="defaultname-element-visual-studio-templates"></a>DefaultName 요소 (Visual Studio 템플릿)
 만들 때 프로젝트 또는 항목에 대 한 Visual Studio 프로젝트 시스템에서 생성 하는 이름을 지정 합니다.  
   
  \<VSTemplate>  
@@ -38,7 +38,7 @@ ms.locfileid: "31126860"
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
  없음  
@@ -60,14 +60,14 @@ ms.locfileid: "31126860"
 ## <a name="remarks"></a>설명  
  `DefaultName`는 선택적 요소입니다.  
   
- 프로젝트의 경우이 요소는 디스크에 프로젝트를 저장 하는 디렉터리의 이름을 지정 합니다. 항목에 대 한 소스 파일의 파일 이름을 지정 합니다.  
+ 이 요소는 프로젝트의 경우 디스크에서 프로젝트를 저장 하는 디렉터리의 이름을 지정 합니다. 항목에 대 한 소스 파일의 파일 이름을 지정 합니다.  
   
- 프로젝트 또는 항목을 만들 때 사용 하 여 기본 이름을 수정할 수 있습니다는 **이름** 옵션 중 하나에서 제공 되는 **새 프로젝트** 대화 상자 또는 **새 항목 추가** 대화 상자입니다.  
+ 프로젝트 또는 항목을 만들 때 사용 하 여 기본 이름을 수정할 수 있습니다는 **이름을** 에서 사용할 수 있는 옵션을 **새 프로젝트** 대화 상자 또는 **새 항목 추가** 대화 상자입니다.  
   
- 프로젝트 시스템에는 프로젝트 또는 항목에 대 한 기본 이름을 생성 하지 않으려면 다음 설정의 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) 요소의 `False`합니다.  
+ 프로젝트 시스템에서 프로젝트 또는 항목에 대 한 기본 이름을 생성 하지 않으려면 설정한 합니다 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) 요소를 `False`입니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에 대 한 표준 항목 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에 대 한 표준 항목 템플릿에 대 한 메타 데이터를 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스입니다.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -85,6 +85,6 @@ ms.locfileid: "31126860"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

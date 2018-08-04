@@ -1,5 +1,5 @@
 ---
-title: 도구 창을 사용 된 확장을 만드는 | Microsoft Docs
+title: Creating an Extension with 도구 창 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,31 +11,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f918a5b8b48a7b9553cf3ca2e6c8fe9d38fbc9b8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6170c5d418f1778af242bb4eb08cccffe0c031be
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102150"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499805"
 ---
-# <a name="creating-an-extension-with-a-tool-window"></a>도구 창 확장 만들기
-이 절차의 VSIX 프로젝트 템플릿을 사용 하는 방법을 배웁니다 및 **사용자 지정 도구 창** 항목 템플릿을 확장 프로그램을 만들려면 도구 창을 사용 합니다.  
+# <a name="create-an-extension-with-a-tool-window"></a>도구 창으로 확장 프로그램을 만들려면
+이 절차에 알아봅니다 VSIX 프로젝트 템플릿을 사용 하는 방법 및 **사용자 지정 도구 창을** 도구 창을 사용 하 여 확장 프로그램을 만들려면 항목 템플릿.  
   
-## <a name="prerequisites"></a>필수 조건  
- Visual Studio 2015를 시작 하면 설치 하지 마십시오 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 참조 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
+## <a name="prerequisites"></a>전제 조건  
+ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
   
-### <a name="creating-a-tool-window"></a>도구 창을 만드는  
+### <a name="create-a-tool-window"></a>도구 창을 만들려면  
   
-1.  라는 VSIX 프로젝트를 **FirstWindow**합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다는 **새 프로젝트** 대화 상자의 **Visual C# / 확장성**합니다.  
+1.  라는 VSIX 프로젝트를 만듭니다 **FirstWindow**합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C#** > **확장성**합니다.  
   
-2.  프로젝트를 열 때 명명 된 도구 창 항목 템플릿을 추가 **MyWindow**합니다. 에 **솔루션 탐색기**프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가 / 새 항목**합니다. 에 **새 항목 추가** 대화 상자에서로 이동 **Visual C# / 확장성** 선택 **사용자 지정 도구 창**합니다. 에 **이름** 창의 맨 아래에 필드, 도구 창 파일 이름 변경 **MyWindow.cs**합니다.  
+2.  프로젝트를 열면 라는 도구 창 항목 템플릿을 추가 **MyWindow**합니다. 에 **솔루션 탐색기**, 프로젝트 노드를 마우스 오른쪽 단추로 **추가** > **새 항목**합니다. 에 **새 항목 추가** 대화 상자에서로 이동 **Visual C#** > **확장성** 선택한 **사용자 지정 도구 창을**합니다. 에 **이름을** 창의 맨 아래에 있는 필드에 도구 창 파일 이름을 *MyWindow.cs*합니다.  
   
 3.  프로젝트를 빌드하고 디버깅을 시작합니다.  
   
-     Visual Studio의 실험적 인스턴스가 표시 됩니다. 실험적 인스턴스에 대 한 자세한 내용은 참조 [의 실험적 인스턴스](../extensibility/the-experimental-instance.md)합니다.  
+     Visual Studio의 실험적 인스턴스가 표시 됩니다. 실험적 인스턴스에 대 한 자세한 내용은 참조 하세요. [실험적 인스턴스에서](../extensibility/the-experimental-instance.md)합니다.  
   
-4.  실험적 인스턴스에서 이동 **보기 / 다른 창**합니다.  
+4.  실험적 인스턴스에서로 이동 **뷰** > **기타 Windows**합니다.  
   
-     에 대 한 메뉴 항목 표시 되어야 **MyWindow**합니다. 클릭 합니다.  
+     에 대 한 메뉴 항목 표시 **MyWindow**합니다. 클릭 합니다.  
   
-     도구 창 제목으로 표시 되어야 **MyWindow** 및 단추 말하기가 **Click Me!입니다.**
+     제목의 도구 창 표시 **MyWindow** 한 단추 **Click Me!.**

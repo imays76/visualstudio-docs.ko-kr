@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbcf81c34cae9c2f2e4e76e995666b280092b29d
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130273"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498186"
 ---
-# <a name="ide-guids"></a>IDE Guid
+# <a name="ide-guids"></a>IDE GUID
 
-<xref:Microsoft.VisualStudio.VSConstants> 아래 표에 나열 된 클래스의 통합된 개발 환경 (IDE)의 일부가 Guid를 게시 합니다.
+<xref:Microsoft.VisualStudio.VSConstants> 클래스 아래 표에 나열 된 일부 통합된 개발 환경 (IDE)의 Guid를 게시 합니다.
 
-## <a name="core-systems"></a>핵심 시스템
+## <a name="core-systems"></a>코어 시스템
 
 |상수|GUID|
 |--------------|----------|
@@ -98,7 +98,7 @@ ms.locfileid: "31130273"
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
-## <a name="task-list-guids"></a>작업 목록의 Guid입니다.
+## <a name="task-list-guids"></a>작업 Guid 목록
 
 |상수|GUID|
 |--------------|----------|
@@ -114,7 +114,7 @@ ms.locfileid: "31130273"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskListPackage>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>구성 요소 선택 기가 페이지 Guid
+## <a name="component-selector-page-guids"></a>구성 요소 선택기 페이지 Guid
 
 |상수|GUID|
 |---------------|----------|
@@ -134,4 +134,4 @@ ms.locfileid: "31130273"
 
 - [관리 코드의 COM 상수](../extensibility/com-constants-in-managed-code.md)
 - [IDE 상수](../extensibility/ide-constants.md)
-- [프로젝트 시스템 확장을 위한 IDE 정의 명령](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [S 프로젝트 시스템이 확장을 위한 IDE 정의 명령](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

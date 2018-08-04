@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081685"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499392"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>언어 서버 프로토콜 확장 추가
 
@@ -111,26 +111,6 @@ textDocument/rename | 예
 다음으로 이동 하 여 새 빈 VSIXProject를 만듭니다 **파일** > **새 프로젝트** > **Visual C#**  >   **확장성** > **VSIX 프로젝트**:
 
 ![vsix 프로젝트 만들기](media/lsp-vsix-project.png)
-
-미리 보기 릴리스의 경우 VSIX의 형태로 LSP에 대 한 VS 지원 됩니다 ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). LSP 언어 서버를 사용 하 여 확장을 만들려는 확장 개발자는이 VSIX에서 종속성을 수행 해야 합니다. 언어 서버 확장을 설치 하려는 고객이 따라서 **언어 서버 프로토콜 클라이언트 미리 보기 VSIX를 먼저 설치 해야 합니다.**
-
-VSIX 파일에 대 한 종속성을 정의 하려면 VSIX에 대 한 VSIX 매니페스트 디자이너를 엽니다 (두 번 클릭 합니다 *source.extension.vsixmanifest* 프로젝트 파일에서에서)로 이동한 **종속성**:
-
-![언어 서버 프로토콜 클라이언트에 대 한 참조를 추가 합니다.](media/lsp-reference-lsp-dependency.png)
-
-다음과 같은 새 종속성을 만듭니다.
-
-![언어 서버 프로토콜 클라이언트 종속성 정의](media/lsp-define-lsp-dependency.png)
-
-* **원본**: 수동으로 정의
-* **이름**: 언어 서버 프로토콜 클라이언트 미리 보기
-* **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **버전 범위**: [1.0,2.0)
-* **종속성 해결 성은**: 사용자가 설치
-* **다운로드 URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> 합니다 **다운로드 URL** 확장을 설치 하는 사용자에 필요한 종속성을 설치 하는 방법을 알 수 있도록 입력 해야 합니다.
 
 ### <a name="language-server-and-runtime-installation"></a>언어 서버 및 런타임 설치
 
