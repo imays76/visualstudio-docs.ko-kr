@@ -14,33 +14,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 184bb709d25c55adcc34e73b6df1ac5f4a2448bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2dad2781a0d8231c40ad16dd2c5bd2a7a0905cd3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129159"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497110"
 ---
 # <a name="group-element"></a>Group 요소
 VSPackage 명령 그룹을 정의합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <Group guid="guidMyCommandSet" id="MyGroup" priority="0x101">  
   <Parent>... </Parent>  
 </Group>  
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수. GUID/ID 명령 식별자의 GUID입니다.|  
-|ID|필수. ID는 GUID/ID 명령 식별자입니다.|  
+|guid|필수. GUID/i D 명령 식별자의 GUID입니다.|  
+|ID|필수. GUID/i D 명령 식별자의 ID입니다.|  
 |priority|선택 사항입니다. 우선 순위를 지정 하는 숫자 값입니다.|  
 |조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
@@ -57,13 +57,13 @@ VSPackage 명령 그룹을 정의합니다.
 |-------------|-----------------|  
 |[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
-```  
+```xml  
 <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
   <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
 </Group>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참고자료  
+ [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

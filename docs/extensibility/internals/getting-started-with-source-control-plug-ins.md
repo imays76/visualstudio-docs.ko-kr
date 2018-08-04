@@ -1,5 +1,5 @@
 ---
-title: 소스 제어 플러그 인 시작 | Microsoft Docs
+title: 원본 제어 플러그 인을 시작 하기 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,31 +14,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f5c88d932fd2915273c86924d2df8f1233baeed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2f1eb4f76616f6a5f6791cbcd1b8a5770d1dcabb
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128920"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498102"
 ---
-# <a name="getting-started-with-source-control-plug-ins"></a>소스 제어 플러그 인 시작
-소스 제어 플러그 인을 만들려면 소스 제어 플러그 인 API에 정의 된 함수를 구현 하는 DLL 만들어야 DLL을 등록 한 다음 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 코드 버전 제어에서 사용 하기 위해 사용할 수 있도록 합니다.  
+# <a name="get-started-with-source-control-plug-ins"></a>원본 제어 플러그 인 시작
+원본 제어 플러그 인 api에서 정의 된 함수를 구현 하는 DLL을 소스 제어 플러그 인을 만들려면 만들어야 차례로 사용 하 여 DLL을 등록 하려면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 코드 버전 제어에서 사용 하기 위해 사용할 수 있도록 합니다.  
   
- 세 가지 버전 (버전 1.1, 1.2 및 1.3) 소스 제어 플러그 인 API의 소스 제어 플러그 인 수 있습니다. 여기에 설명 되어 소스 제어 플러그 인은 버전 1.3입니다. 소스 제어 플러그 인을 완벽 하 게 호환 되도록 설계 되었습니다 버전 1.1 및 1.2를 지원 합니다. [소스 제어 플러그 인 API 버전 1.3의 새로운](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) 섹션 소스 제어 플러그 인 API의 최신 버전에서 지원 되는 새 기능에 자세히 설명 합니다.  
+ 원본 제어 플러그 인 API (버전 1.1, 1.2 및 1.3)의 세 가지 버전이 원본 제어 플러그 인에 대 한 제공 됩니다. 여기에 설명 된 원본 제어 플러그 인 API 버전 1.3 됩니다. 원본 제어 플러그 인을 사용 하 여 완벽 하 게 호환 되도록 설계 되었습니다 버전 1.1 및 1.2를 지원 합니다. 합니다 [소스 제어 플러그 인 API 버전 1.3의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) 섹션에서는 원본 제어 플러그 인 API의 최신 버전에서 지 원하는 새 기능을 자세히 설명 합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  [방법: 소스 제어 플러그 인 설치](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
  소스 제어 DLL에에서 연결 하는 데 필요한 레지스트리 항목을 확인 하는 방법에 설명 합니다.  
   
- [소스 제어 플러그 인 API 버전 1.3의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
- 버전 1.3에서에서 소스 제어 플러그 인 API에 대 한 변경의 간략 한 개요를 제공 합니다.  
+ [원본 제어 플러그 인 API 버전 1.3의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
+ 원본 제어 플러그 인 api 버전 1.3에에서 수행한 변경 내용의 간략 한 개요를 제공 합니다.  
   
- [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
- 소스 제어 플러그 인 API 버전 1.2에 대 한 변경의 간략 한 개요를 제공 합니다.  
+ [원본 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
+ 원본 제어 플러그 인 api 버전 1.2에에서 수행한 변경 내용의 간략 한 개요를 제공 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [소스 제어 플러그 인](../../extensibility/source-control-plug-ins.md)  
- 소스 제어 플러그 인 API에 있는 모든 요소의 전체 목록을 제공합니다.  
+ [원본 제어 플러그 인](../../extensibility/source-control-plug-ins.md)  
+ 원본 제어 플러그 인 API에 있는 모든 요소의 전체 목록을 제공합니다.  
   
  [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- 소스 제어 플러그 인 SDK을 정의 하 고 포함 된 리소스에 설명 합니다.
+ 소스 제어 플러그 인 SDK를 정의 하 고 포함 된 리소스에 설명 합니다.
