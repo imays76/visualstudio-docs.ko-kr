@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: b909c1df4aa776f0f92d72c679ecdacb42227c18
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251207"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510492"
 ---
 # <a name="register-an-expression-evaluator"></a>식 계산기 등록
 > [!IMPORTANT]
@@ -104,7 +104,7 @@ namespace EEMC
  EE DLL를 구현 하는 `DllRegisterServer` COM 환경 뿐만 아니라 Visual Studio를 사용 하 여 자체를 등록 하는 함수입니다.  
   
 > [!NOTE]
->  Yoou 파일에는 MyCEE 레지스트리 코드 예제를 찾을 수 있습니다 *dllentry.cpp*를 VSIP 설치 EnVSDK\MyCPkgs\MyCEE 아래에 있는 합니다.  
+>  파일에는 MyCEE 레지스트리 코드 예제를 찾을 수 있습니다 *dllentry.cpp*를 VSIP 설치 EnVSDK\MyCPkgs\MyCEE 아래에 있는 합니다.  
   
 ### <a name="dll-server-process"></a>DLL 서버 프로세스  
  DLL server는 EE 등록 하는 경우:  

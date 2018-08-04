@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433170"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510151"
 ---
 # <a name="mip-map-generation-variant"></a>MIP 맵 생성 변형
 렌더링 대상이 아닌 질감에 대해 Mip 맵을 사용합니다.  
@@ -28,11 +28,11 @@ ms.locfileid: "37433170"
  이러한 변형이 성능을 상당히 개선하면 Mip 맵을 사용하지 않음을 나타내므로 질감 캐시를 최대한 활용하지 않는 것입니다.  
   
 ## <a name="remarks"></a>설명  
- 원본 질감을 생성하는 `ID3D11Device::CreateTexture2D`를 호출할 때마다 Mip 맵이 강제로 생성됩니다. 특히 다음과 같이 `pDesc`에서 전달되는 D3D11_TEXTUR2D_DESC 개체가 변경되지 않는 셰이더 리소스를 설명하는 경우 Mip 맵이 강제로 생성됩니다.  
+ 원본 질감을 생성하는 `ID3D11Device::CreateTexture2D`를 호출할 때마다 Mip 맵이 강제로 생성됩니다. Mip 맵 생성에서 D3D11_TEXTURE2D_DESC 개체가 전달 하는 경우 강제 특히 `pDesc` 는 변하지 않는 셰이더 리소스를 설명 합니다.  
   
 -   BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우  
   
--   Usage 멤버가 D3D11_USAGE_DEFUALT 또는 D3D11_USAGE_IMMUTABLE로 설정된 경우  
+-   Usage 멤버가 D3D11_USAGE_DEFAULT 또는 D3D11_USAGE_IMMUTABLE로 설정된 경우  
   
 -   CPUAccessFlags 멤버가 0으로 설정된 경우(CPU 액세스 없음)  
   

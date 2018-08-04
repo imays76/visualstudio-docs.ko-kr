@@ -15,49 +15,49 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c406a5a34ea2556d367c8f7af8a9fda70fcc2676
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bac09a361c885d866bf6a78e6fe7b49c246265ba
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134462"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511188"
 ---
 # <a name="command-placement-guidelines"></a>명령 배치 지침
-Visual Studio 통합된 개발 환경 (IDE)에서 명령을 위치 지정에 대 한 유용한 명령 집합의 크기에 따라 달라 집니다. 명령 정의 되 고.vsct 파일의 정보에 따라 배치 됩니다.  
+Visual Studio 통합된 개발 환경 (IDE)에 명령을 배치에 대 한 모범 사례는 명령 집합의 크기에 따라 달라 집니다. 명령을 정의 하 고 정보에 따라 배치 *.vsct* 파일입니다.  
   
 ## <a name="best-practices-for-all-command-sets"></a>모든 명령 집합에 대 한 모범 사례  
- 모든 명령 집합에 대 한 다음이 지침을 따르십시오.  
+ 모든 명령 집합에 대 한 다음이 지침을 따르세요.  
   
--   차트 명령 구조는 미리 준비 합니다. 명령, 콤보 상자, 명령 그룹 및 둘 이상의 위치에 사용할 수 있는 바로 가기 메뉴를 식별 합니다.  
+-   차트 명령 구조를 미리 준비 합니다. 명령, 콤보 상자, 명령 그룹 및 둘 이상의 위치에 사용할 바로 가기 메뉴를 식별 합니다.  
   
--   같은 그룹에 나타나는 명령은 관련 되어야 합니다.  
+-   동일한 그룹에 표시 되는 명령 관련 되어야 합니다.  
   
--   하나의 명령을 포함 하는 그룹을 사용할 수 있습니다.  
+-   하나의 명령만 포함 하는 그룹 허용 됩니다.  
   
--   패키지를 기존 Visual Studio 메뉴 명령의 많은 추가 해야 합니다. 대신, 메뉴 또는 하위 메뉴를 호스팅할 새로운 명령이 있습니다를 만들어야 합니다.  
+-   패키지를 기존 Visual Studio 메뉴 명령 많은 추가 해야 합니다. 대신, 메뉴 또는 하위 메뉴를 호스트할 새 명령을 만들 해야 있습니다.  
   
--   포함 하면 명령을 기존 메뉴, 명령 이름에의 용도 선택을 취소 하 고 기존 명령와 혼동 해서는 안 됩니다.  
+-   경우 기존 명령을 사용 하 여 혼동 하지는 및 용도 분명히 알 수 있도록 기존 메뉴, 명령 이름에 명령을 배치 합니다.  
   
 ## <a name="best-practices-for-small-command-sets"></a>작은 명령 집합에 대 한 모범 사례  
- 에 몇 개의 명령이 하는 VSPackage를 개발 하는 경우 또한 다음이 지침을 따르십시오.  
+ 몇 가지 명령에 포함 된 VSPackage를 개발 하는 경우 또한 이러한 지침을 따릅니다.  
   
--   사용 가능한 경우는 [부모 요소](../../extensibility/parent-element.md) 명령, 콤보 상자, 그룹 또는 자식 메뉴의 적절 한 그룹에 배치 하 합니다.  
+-   사용 가능한 경우는 [부모](../../extensibility/parent-element.md) 명령, 콤보 상자, 그룹 또는 자식 메뉴 적절 한 그룹에 삽입할 요소입니다.  
   
 -   표시는 VSPackage에서 메뉴에 이러한 그룹을 할당 합니다.  
   
--   부모 또는 자식 메뉴 명령을 이어야 합니다는 [그룹 요소](../../extensibility/group-element.md)합니다. 그룹에 명령 및 자식 메뉴를 지정 하 고 부모 메뉴에 그룹을 할당 합니다.  
+-   부모 또는 자식 메뉴 명령 이어야 합니다는 [그룹](../../extensibility/group-element.md) 요소입니다. 그룹에 명령 및 하위 메뉴를 할당 하 고 부모 메뉴에 그룹을 할당 합니다.  
   
--   추가 하 여 명령을 추가 그룹에 넣을 수 있습니다는 [CommandPlacements 요소](../../extensibility/commandplacements-element.md) 명령의 정의 다음 섹션 및 다음 여기에 추가 된 `CommandPlacements Element` 는 [CommandPlacement 요소](../../extensibility/commandplacement-element.md) 각각에 대해 추가 그룹입니다.  
+-   추가 하 여 추가 그룹에 명령을 넣을 수 있습니다는 [CommandPlacements](../../extensibility/commandplacements-element.md) 요소 섹션 정의 후 명령 및 다음을 추가 합니다 `CommandPlacements` 요소를 [CommandPlacement](../../extensibility/commandplacement-element.md) 요소 각 추가 그룹입니다.  
   
-## <a name="best-practices-for-large-command-sets"></a>긴 명령 집합에 대 한 모범 사례  
- VSPackage에서 여러 컨텍스트에서 표시 되는 많은 명령을 사용할 경우 또한 다음이 지침을 따르십시오.  
+## <a name="best-practices-for-large-command-sets"></a>많은 명령 집합에 대 한 모범 사례  
+ VSPackage는 여러 컨텍스트에서 표시 되는 많은 명령에 있으면 또한 이러한 지침을 따릅니다.  
   
--   메뉴, 그룹 및 자체 부모로 지정 하는 명령을 확인 합니다. 즉, 할당 하지 않습니다는 `Parent Element` 정의 항목의 합니다.  
+-   메뉴, 그룹 및 자체 부모로 지정 하는 명령을 확인 합니다. 즉, 할당 하지 마십시오는 `Parent` 항목 정의의 요소입니다.  
   
--   사용 하 여 `CommandPlacement Element` 의 항목은 `CommandPlacements Element` 메뉴, 그룹 및 명령을 해당 부모 메뉴 및 그룹에 배치 하는 섹션입니다.  
+-   사용 하 여 `CommandPlacement` 의 요소 항목을 `CommandPlacements` 메뉴, 그룹 및 명령을 해당 부모 메뉴 및 그룹에 삽입할 요소 섹션입니다.  
   
--   에 `CommandPlacements` 섹션을 채우는 특정된 메뉴 항목 또는 그룹은 서로 인접 한 해야 합니다. 이 쉬워지며는 `Priority` 순위를 더 쉽게 확인할 수 있습니다.  
+-   에 `CommandPlacements` 요소 섹션을 지정 된 메뉴 또는 그룹을 채우는 항목을 서로 인접 한 이어야 합니다. 이 쉬워지며는 `Priority` 순위 쉽게 확인할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Visual Studio 명령 테이블(.Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 명령 테이블 (.vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
