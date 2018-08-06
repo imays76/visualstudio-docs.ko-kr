@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c1f94637ab5e16954bdfcf209d4cf342c54deb7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177103"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566770"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
 불변성 API는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK을 통해 프로그램에서는 잠금 일부 또는 전체 도메인 특정 언어 (DSL) 모델을 읽을 수 있지만 변경 되지 않도록 합니다. 이 읽기 전용 옵션이 사용할 수 있습니다, 예를 들어 사용자 동료 들이 주석 달기 및 DSL 모델 검토를 요청할 수 있지만 원래 변경에서 차단할 수 있습니다.
@@ -31,7 +31,7 @@ ms.locfileid: "39177103"
 ## <a name="setting-and-getting-locks"></a>설정 및 잠금 가져오기
  저장소, 파티션을 또는 개별 요소에 대해 잠금을 설정할 수 있습니다. 예를 들어,이 문을 모델 요소를 삭제할 수 없게 됩니다 및 변경 되지 않도록 해당 속성을 방해할 됩니다.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
@@ -49,7 +49,7 @@ element.SetLocks(Locks.Delete | Locks.Property);
 ### <a name="locks-on-partitions-and-stores"></a>파티션 및 저장소에 대 한 잠금
  잠금이는 파티션 및 저장소에도 적용할 수 있습니다. 잠금을 파티션에 설정 된 파티션에 있는 모든 요소에 적용 됩니다. 따라서 예를 들어, 다음 문을 하면 파티션의 모든 요소 자체 잠금 상태에 관계 없이 삭제할 수 없습니다. 그럼에도 불구 하 고 기타 잠금 수와 같은 `Locks.Property` 여전히 개별 요소에 설정할 수 없습니다.
 
-```
+```csharp
 partition.SetLocks(Locks.Delete);
 ```
 
@@ -104,7 +104,7 @@ partition.SetLocks(Locks.Delete);
 ### <a name="to-define-a-locking-policy"></a>잠금 정책을 정의 하려면
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 다음 정의 있습니다.
 
-```
+```csharp
 public interface ILockingPolicy
 {
   Locks RefineLocks(ModelElement element, Locks proposedLocks);
@@ -117,7 +117,7 @@ public interface ILockingPolicy
 
  예를 들어:
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
@@ -156,7 +156,7 @@ namespace Company.YourDsl.DslPackage // Change
 ### <a name="to-make-your-policy-available-as-a-service"></a>정책을 서비스로 사용할 수 있도록 하려면
  사용자 `DslPackage` 프로젝트에서 다음 예제와 비슷한 코드를 포함 하는 새 파일을 추가 합니다.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change

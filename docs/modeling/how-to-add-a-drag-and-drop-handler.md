@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 35b88e2c2c423803dda9ed85cfb820e8521ed138
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513509"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566631"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>방법: 끌어서 놓기 처리기 추가
 
@@ -50,14 +50,13 @@ using System.Linq;
             e.Effect = System.Windows.Forms.DragDropEffects.Copy;
           }
         }
-
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -이 메서드는 사용자가 마우스 단추 마우스 포인터가이 모양이 나 다이어그램 위에 있을 때 경우 해제 하는 경우 `OnDragOver(DiagramDragEventArgs e)` 이전에 설정한 `e.Effect` 이외의 값으로 `None`입니다.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
-        {
+    {
           if (!IsAcceptableDropItem(e))
           {
             base.OnDragDrop(e);
@@ -66,8 +65,7 @@ using System.Linq;
           { // Process the dragged item, for example merging a copy into the diagram
             ProcessDragDropItem(e); // To be defined
           }
-        }
-
+    }
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -이 메서드는 모양이 나 다이어그램을 두 번 클릭할 때 호출 됩니다.
@@ -76,7 +74,7 @@ using System.Linq;
 
 끌어 온 항목이 적절한지 여부를 확인하도록 `IsAcceptableDropItem(e)`을 정의하고 항목을 놓을 때 모델을 업데이트하도록 ProcessDragDropItem(e)을 정의합니다. 이러한 메서드는 먼저 이벤트 인수에서 항목을 추출해야 합니다. 그렇게 하는 방법에 대 한 정보를 참조 하세요 [끌어 온된 항목에 대 한 참조를 가져오는 방법을](#extracting)합니다.
 
-## <a name="defining-gesture-handlers-by-using-mef"></a>MEF를 사용하여 제스처 처리기 정의
+## <a name="define-gesture-handlers-by-using-mef"></a>MEF를 사용 하 여 제스처 처리기 정의
 
 타사 개발자가 DSL에 대해 고유한 처리기를 정의할 수 있도록 하려면 이 메서드를 사용합니다. 사용자는 DSL을 설치한 후 타사 확장을 설치할 수 있습니다.
 
@@ -148,7 +146,6 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
             == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.
      // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId
     }
-
     ```
 
      UML 모양을 수락하려면 실험을 통해 UML 모양 클래스의 GUID를 확인합니다. 일반적으로 모든 다이어그램에는 둘 이상의 요소 형식이 있습니다. 또한 DSL이나 UML 다이어그램에서 끄는 개체는 모델 요소가 아닌 모양입니다.
@@ -163,7 +160,7 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>ModelBus용 DSL 프로젝트를 준비하려면
 
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus에서 소스 DSL에 액세스할 수 있도록 설정합니다.
+1.  소스 DSL는 Visual Studio Modelbus에서 액세스할 수 있도록 합니다.
 
     1.  Visual Studio ModelBus 확장을 이미 설치하지 않은 경우 다운로드하여 설치합니다. 자세한 내용은 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)합니다.
 

@@ -11,20 +11,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5e78438eba52a0e5d5d826ae2fa28503733c7ea3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f959595ec40f70b736c163299d8593883ee5e5
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952302"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567405"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>방법: 모양 또는 데코레이터 클릭 가로채기
-다음 절차는 셰이프나 아이콘 decorator 클릭 가로채기 하는 방법을 보여 줍니다. 번의 클릭을 가로챌 수, 두 번 클릭할 끌기과 기타 제스처, 응답 요소를 확인 합니다.
+다음 절차에 셰이프 또는 아이콘 데코레이터 클릭 가로채기 방법을 보여 줍니다. 두 번 클릭, 끌기가 가로챌 수 있습니다 하 고 다른 제스처에 응답 하는 요소를 확인 합니다.
 
-## <a name="to-intercept-clicks-on-shapes"></a>도형에 대 한 클릭을 가로챌 수
- Dsl 프로젝트 생성 된 코드 파일에서 별도 코드 파일에서 shape 클래스에 대 한 partial 클래스 정의 작성 합니다. 재정의 `OnDoubleClick()` 문자로 시작 하는 이름을 가진 다른 방법 중 하나 또는 `On...`합니다. 예를 들어:
+## <a name="to-intercept-clicks-on-shapes"></a>모양에 대 한 클릭 가로채기 위해
+ Dsl 프로젝트에서 생성 된 코드 파일에서 별도 코드 파일에서 모양 클래스에 대 한 partial 클래스 정의 작성 합니다. 재정의 `OnDoubleClick()` 로 시작 하는 이름에는 다른 메서드 중 하나 또는 `On...`합니다. 예를 들어:
 
-```
+```csharp
 public partial class MyShape // change
   {
     public override void OnDoubleClick(DiagramPointEventArgs e)
@@ -36,22 +36,22 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  설정 `e.Handled` 를 `true`이벤트를 포함 하는 모양 또는 다이어그램에 전달 하지 않는 한, 합니다.
+>  설정할 `e.Handled` 에 `true`포함 하는 모양 또는 다이어그램에 전달할 이벤트를 원하는 경우가 아니면 합니다.
 
-## <a name="to-intercept-clicks-on-decorators"></a>데코레이터에 대 한 클릭을 가로챌 수
- 이미지 데코레이터 OnDoubleClick 메서드가 들어 있는 ImageField 클래스의 인스턴스에서 수행 됩니다. ImageField 서브 클래스를 작성 하는 경우의 클릭을 가로챌 수 있습니다. 필드는 InitializeShapeFields 메서드에서 설정 됩니다. 따라서 해당 방법을 대신 일반 ImageField 서브 클래스를 인스턴스화할 수를 변경 해야 합니다. InitializeShapeFields 방법은 shape 클래스의 생성된 된 코드에 있습니다. 설정 하는 경우에 shape 클래스를 재정의할 수는 `Generates Double Derived` 다음 절차에 설명 된 대로 속성입니다.
+## <a name="to-intercept-clicks-on-decorators"></a>데코레이터 클릭 가로채기 위해
+ 이미지 데코레이터 OnDoubleClick 메서드를 포함 하는 이미지 필드 클래스의 인스턴스에서 수행 됩니다. 이미지 필드 서브 클래스를 작성 하는 경우에 클릭을 가로챌 수 있습니다. 필드는 InitializeShapeFields 메서드에서 설정 됩니다. 따라서 일반 이미지 필드 대신 하위 클래스를 인스턴스화하고 해당 메서드를 변경 해야 합니다. InitializeShapeFields 메서드는 모양 클래스의 생성된 된 코드입니다. 설정 하는 경우에 모양 클래스를 재정의할 수 해당 `Generates Double Derived` 다음 절차에 설명 된 대로 속성입니다.
 
- InitializeShapeFields 인스턴스 메서드인 경우에 각 클래스에 대해 한 번만 호출 됩니다. 따라서, 다이어그램의 각 셰이프에 대해 하나의 인스턴스가 아닌 각 클래스의 각 필드에 대 한 ClickableImageField의 인스턴스가 하나만 존재합니다. 사용자가 인스턴스를 식별 해야 인스턴스 적중 된 예제에서 코드에서 보여 주듯이 합니다.
+ InitializeShapeFields 인스턴스 메서드인 경우에 각 클래스에 대해 한 번만 호출 됩니다. 따라서 각 클래스 다이어그램에서 각 셰이프에 대 한 하나의 인스턴스가 아니라에서 각 필드에 대 한 ClickableImageField의 인스턴스가 하나만 존재합니다. 사용자가 인스턴스를 식별 해야 적중 된 인스턴스, 예제에서 코드 에서처럼.
 
-#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>아이콘 decorator 클릭 가로채기를
+#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>에 아이콘 데코레이터 클릭 가로채기
 
 1.  열거나 DSL 솔루션을 만듭니다.
 
-2.  선택 하 고 또는 포함 된 아이콘 decorator 셰이프를 만들고 도메인 클래스에 매핑하십시오.
+2.  선택 또는 아이콘 decorator에 셰이프를 만들고 도메인 클래스에 매핑하십시오.
 
-3.  에 있는 파일에서 별도 코드 파일에는 `GeneratedCode` 폴더를 이미지 필드의 새 하위 클래스를 만듭니다.
+3.  별개의 파일의 코드 파일에는 `GeneratedCode` 폴더 이미지 필드의 새 하위 클래스를 만들려면:
 
-    ```
+    ```csharp
     using Microsoft.VisualStudio.Modeling;
     using Microsoft.VisualStudio.Modeling.Design;
     using Microsoft.VisualStudio.Modeling.Diagrams;
@@ -85,11 +85,11 @@ public partial class MyShape // change
     }
     ```
 
-     Handled 상위 셰이프를 전달 하도록 이벤트를 원하지 않는 경우 true로 설정 해야 합니다.
+     처리를 포함 하는 모양에 전달할 이벤트를 원하지 않는 경우 true로 설정 해야 합니다.
 
-4.  다음 부분 클래스 정의 추가 하 여 도형 classs에서 InitializeShapeFields 메서드를 재정의 합니다.
+4.  다음 partial 클래스 정의 추가 하 여 프로그램 셰이프 classs InitializeShapeFields 메서드를 재정의 합니다.
 
-    ```
+    ```csharp
     public partial class MyShape // change
     {
      protected override void InitializeShapeFields
@@ -116,36 +116,36 @@ public partial class MyShape // change
 
 1.  솔루션을 빌드하고 실행합니다.
 
-2.  도형의 인스턴스에서 아이콘을 두 번 클릭 합니다. 테스트 메시지를 표시 됩니다.
+2.  인스턴스에서 모양의 아이콘을 두 번 클릭 합니다. 테스트 메시지가 표시 됩니다.
 
-## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>가로채 클릭 하 고 끌어서 CompartmentShape 목록에
- 다음 샘플에서는 구획 모양에 항목을 끌어서 순서 수 있습니다. 이 코드를 실행 합니다.
+## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>가 가로챈 CompartmentShape 목록에 끌어 놓습니다.
+ 다음 샘플에서는 끌어 구획 도형에서 항목 순서 수가 있습니다. 이 코드를 실행 합니다.
 
-1.  사용 하 여 새 DSL 솔루션을 만듭니다는 **클래스 다이어그램** 솔루션 템플릿을 합니다.
+1.  새 DSL 솔루션을 사용 하 여 만들 합니다 **클래스 다이어그램** 솔루션 템플릿.
 
-     자신만의 구획 셰이프를 포함 하는 솔루션을 작업할 수도 있습니다. 이 코드는 도형 나타내는 모델 요소와 구획 목록 항목에 표시 된 요소 간의 포함 관계를 가정 합니다.
+     구획 모양을 포함 하는 자신만의 솔루션으로 작업할 수 있습니다. 이 코드 셰이프를 나타내는 모델 요소와 구획 목록 항목에 표시 된 요소 간의 포함 관계가 있다고 가정 합니다.
 
-2.  설정의 **Double 파생 생성** 구획 셰이프의 속성입니다.
+2.  설정 된 **Generates Double Derived** 구획 모양의 속성입니다.
 
-3.  이 코드 파일에 추가 된 **Dsl** 프로젝트.
+3.  이 코드의 파일에 추가 합니다 **Dsl** 프로젝트입니다.
 
-4.  고유한 DSL 일치 하도록이 코드의 도메인 클래스 및 모양 이름을 조정 합니다.
+4.  고유한 DSL에 맞게이 코드의 도메인 클래스 및 셰이프 이름을 조정 합니다.
 
- 요약 하자면, 코드는 다음과 같이 작동합니다. 이 예제에서는 `ClassShape` 구획 모양 이름입니다.
+ 요약 하자면, 코드는 다음과 같이 작동합니다. 이 예제에서는 `ClassShape` 구획 모양의 이름입니다.
 
 -   마우스 이벤트 처리기의 집합을 만들 때 각 구획 인스턴스에 연결 됩니다.
 
 -   `ClassShape.MouseDown` 현재 항목을 저장 하는 이벤트입니다.
 
--   마우스 이동 하면 현재 항목에서 MouseAction 인스턴스의 만든 커서를 설정 하 고 해제 될 때까지 마우스를 캡처할 합니다.
+-   마우스 이동 하면 현재 항목에서 마우스 작업 인스턴스의 만들어지면 커서를 설정 및 해제 될 때까지 마우스를 캡처하는 합니다.
 
-     항목의 텍스트를 선택 하는 등의 다른 마우스 작업에 방해가 되지 않도록 하려면 MouseAction는 원래 항목 마우스가 될 때까지 생성 되지 않습니다.
+     항목의 텍스트를 선택 하는 등의 다른 마우스 작업을 방해 하지 않으려면 원래 항목 마우스가 될 때까지 마우스 작업은 생성 되지 않습니다.
 
-     MouseUp 수신 대기 하는 MouseAction 만드는 대신 단순히 것입니다. 그러나이 제대로 작동 하지 구획 외부 끌어 놓은 후 마우스를 놓을 경우. MouseAction는 마우스를 해제 하는 위치에 관계 없이 적절 한 조치를 수행할 수 있습니다.
+     마우스 작업을 만드는 대신 MouseUp 대기할 단순히 것입니다. 그러나이 제대로 작동 하지 구획 외부 끌어서 놓을 마우스를 놓을 경우. 마우스 작업은 마우스를 해제 하는 위치에 관계 없이 적절 한 작업을 수행할 수 있습니다.
 
--   마우스를 놓으면 MouseAction.MouseUp 모델 요소 간 링크의 순서를 재정렬 합니다.
+-   마우스를 놓으면 MouseAction.MouseUp 모델 요소 간에 링크 순서를 재정렬 합니다.
 
--   역할 순서를 변경 하 여 화면을 업데이트 하는 규칙을 발생 시킵니다. 이 문제를 이미 정의 되며 추가 코드 없이 필요 합니다.
+-   역할 순서를 변경 하 여 디스플레이 업데이트 하는 규칙을 발생 시킵니다. 이 문제를 이미 정의 하 고 추가 코드가 필요 하지 않습니다.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
