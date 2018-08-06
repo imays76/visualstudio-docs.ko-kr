@@ -28,14 +28,14 @@
 #### [Power BI Pro](vs-pbi.md)
 #### [TFS를 위한 최신 요구 사항](vs-modernreq.md)
 #### [Azure Pay-As-You-Go](vs-azure-payg.md)
-### 전문적인 개발
+### [전문적인 개발](professional-development.md)
 #### [LinkedIn 학습](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Xamarin University 교육](vs-xamarin.md)
 #### [MSDN Magazine 구독](vs-msdn.md)
-### 지원 혜택
+### [지원 혜택](technical-support.md)
 #### [Azure Advisory Chat](vs-azure-advisory-chat.md)
 #### [Azure 커뮤니티](vs-azure-community.md)
 #### [기술 지원](vs-tech-support.md)
