@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0189682576c495d031cf160261e16fd920a1615
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 11ab6a812701d371e86f07b3e8da5fa91f90cbcf
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758383"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582319"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>복합 데이터 바인딩을 지 원하는 Windows Forms 사용자 컨트롤 만들기
 
@@ -37,7 +37,7 @@ Windows 응용 프로그램에서 폼에 데이터를 표시할 때 기존 컨�
 |데이터 목록 또는 테이블을 표시하는 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 등의 컨트롤에 대해 <xref:System.Windows.Forms.DataGridView>를 구현합니다. 이 연습 페이지에서 해당 프로세스에 대해 설명합니다.|
 |데이터 목록 또는 테이블을 표시하는 동시에 단일 열이나 속성도 제공해야 하는 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 등의 컨트롤에 대해 <xref:System.Windows.Forms.ComboBox>를 구현합니다. 자세한 내용은 [조회 데이터 바인딩을 지 원하는 Windows Forms 사용자 컨트롤 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)합니다.|
 
- 이 연습에서는 테이블의 데이터 행을 표시하는 복합 컨트롤을 만듭니다. 이 예에서는 Northwind 샘플 데이터베이스의 `Customers` 테이블을 사용합니다. 복합 사용자 컨트롤은 사용자 지정 컨트롤의 <xref:System.Windows.Forms.DataGridView>에 Customers 테이블을 표시합니다.
+이 연습에서는 테이블의 데이터 행을 표시하는 복합 컨트롤을 만듭니다. 이 예에서는 Northwind 샘플 데이터베이스의 `Customers` 테이블을 사용합니다. 복합 사용자 컨트롤은 사용자 지정 컨트롤의 <xref:System.Windows.Forms.DataGridView>에 Customers 테이블을 표시합니다.
 
 이 연습에서는 다음 작업을 수행하는 방법을 배웁니다.
 
@@ -75,9 +75,7 @@ Windows 응용 프로그램에서 폼에 데이터를 표시할 때 기존 컨�
 
 ## <a name="create-a-windows-forms-application"></a>Windows Forms 응용 프로그램 만들기
 
- 첫 번째 단계를 만드는 것을 **Windows Forms 응용 프로그램**합니다.
-
-### <a name="to-create-the-new-windows-project"></a>새 Windows 프로젝트를 만들려면
+첫 번째 단계를 만드는 것을 **Windows Forms 응용 프로그램**:
 
 1. Visual Studio에서에 **파일** 메뉴에서 **새로 만들기** > **프로젝트**합니다.
 
@@ -91,9 +89,7 @@ Windows 응용 프로그램에서 폼에 데이터를 표시할 때 기존 컨�
 
 ## <a name="add-a-user-control-to-the-project"></a>사용자 컨트롤을 프로젝트에 추가
 
-이 연습에서 복잡 한 데이터 바인딩 가능한 컨트롤을 만들기 때문에 **사용자 정의 컨트롤**를 추가 해야 합니다는 **사용자 정의 컨트롤** 항목을 프로젝트입니다.
-
-### <a name="to-add-a-user-control-to-the-project"></a>프로젝트에 사용자 컨트롤을 추가하려면
+이 연습에서 복잡 한 데이터 바인딩 가능한 컨트롤을 만들기 때문에 **사용자 정의 컨트롤**, 추가 **사용자 정의 컨트롤** 프로젝트 항목:
 
 1. **프로젝트** 메뉴 선택 **사용자 정의 컨트롤 추가**합니다.
 
@@ -103,17 +99,11 @@ Windows 응용 프로그램에서 폼에 데이터를 표시할 때 기존 컨�
 
 ## <a name="design-the-complexdatagridview-control"></a>ComplexDataGridView 컨트롤 디자인
 
-이 단계에서는 사용자 컨트롤에 <xref:System.Windows.Forms.DataGridView>를 추가합니다.
-
-### <a name="to-design-the-complexdatagridview-control"></a>ComplexDataGridView 컨트롤을 디자인하려면
-
-- 끌어서를 <xref:System.Windows.Forms.DataGridView> 에서 합니다 **도구 상자** 사용자 컨트롤의 디자인 화면으로 합니다.
+추가할를 <xref:System.Windows.Forms.DataGridView> 사용자 정의 컨트롤로 끌어 옵니다.을 <xref:System.Windows.Forms.DataGridView> 에서 합니다 **도구 상자** 사용자 컨트롤의 디자인 화면으로 합니다.
 
 ## <a name="add-the-required-data-binding-attribute"></a>필요한 데이터 바인딩 특성 추가
 
-데이터 바인딩을 지원하는 복합 컨트롤에 대해 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>를 구현할 수 있습니다.
-
-### <a name="to-implement-the-complexbindingproperties-attribute"></a>ComplexBindingProperties 특성을 구현하려면
+복합 데이터 바인딩을 지 원하는 컨트롤에 대 한를 구현할 수 있습니다는 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>:
 
 1. 스위치를 **ComplexDataGridView** 코드 보기를 제어 합니다. (에 **뷰** 메뉴에서 **코드**.)
 
@@ -124,11 +114,9 @@ Windows 응용 프로그램에서 폼에 데이터를 표시할 때 기존 컨�
 
 1. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
 
-## <a name="creating-a-data-source-from-your-database"></a>데이터베이스에서 데이터 원본 만들기
+## <a name="create-a-data-source-from-your-database"></a>데이터베이스에서 데이터 원본 만들기
 
-이 단계에서는 합니다 **데이터 소스 구성** 기반으로 하는 데이터 원본을 만들려면 마법사를 `Customers` Northwind 샘플 데이터베이스의 테이블입니다.
-
-### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면
+사용 합니다 **데이터 소스 구성** 기반으로 하는 데이터 원본을 만들려면 마법사를 `Customers` Northwind 샘플 데이터베이스의 테이블:
 
 1.  **데이터** 메뉴에서 **데이터 소스 표시**를 클릭합니다.
 
@@ -156,8 +144,6 @@ Windows 응용 프로그램에서 폼에 데이터를 표시할 때 기존 컨�
 
 내 합니다 **데이터 원본** 창에서 폼으로 항목 끌기 전에 만들 컨트롤을 설정할 수 있습니다.
 
-### <a name="to-set-the-customers-table-to-bind-to-the-complexdatagridview-control"></a>ComplexDataGridView 컨트롤에 바인딩되도록 Customers 테이블을 설정하려면
-
 1. 오픈 **Form1** 디자이너에서 합니다.
 
 1. 확장 된 **고객** 에서 노드를 **데이터 원본** 창.
@@ -170,15 +156,9 @@ Windows 응용 프로그램에서 폼에 데이터를 표시할 때 기존 컨�
 
 ## <a name="add-controls-to-the-form"></a>폼에 컨트롤 추가
 
-항목을 끌어 데이터 바인딩된 컨트롤을 만들 수는 **데이터 원본** 창에서 폼으로 합니다.
+항목을 끌어 데이터 바인딩된 컨트롤을 만들 수는 **데이터 원본** 창에서 폼으로 합니다. 주를 끌어 **고객** 에서 노드를 **데이터 원본** 창에서 폼입니다. 있는지 확인 합니다 **ComplexDataGridView** 컨트롤은 테이블의 데이터를 표시 하는 데 사용 합니다.
 
-### <a name="to-create-data-bound-controls-on-the-form"></a>폼에서 데이터 바인딩된 컨트롤을 만들려면
-
-주를 끌어 **고객** 에서 노드를 **데이터 원본** 창에서 폼입니다. 있는지 확인 합니다 **ComplexDataGridView** 컨트롤은 테이블의 데이터를 표시 하는 데 사용 합니다.
-
-## <a name="running-the-application"></a>응용 프로그램 실행
-
-### <a name="to-run-the-application"></a>응용 프로그램을 실행하려면
+## <a name="run-the-application"></a>응용 프로그램 실행
 
 **F5** 키를 눌러 응용 프로그램을 실행합니다.
 

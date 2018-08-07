@@ -16,17 +16,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be89d01a668fd05e70e73e31ffaf3742317c272
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc6691e1b9cd4bd778f70e9b8f4acee3d16601c0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138729"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586849"
 ---
 # <a name="vstextview-object"></a>VSTextView 개체
-텍스트 보기에는 사용자가을 보고 텍스트 버퍼의 유니코드 텍스트를 편집할 수 있는 창입니다. 기본적으로 뷰는, 대부분의 사용자가 참조 작업 편집기로 합니다. 버퍼에서 다양 한 텍스트 계층 (줄 바꿈, 개요 텍스트 및 등)에 의해 뷰의 구분 때문에 보기는 정확한 버퍼에서 텍스트 표시 되도록 보장 되지 않습니다. 텍스트 보기에 대 한 자세한 내용은 참조 하세요. [레거시 API를 사용 하 여 텍스트 보기에 액세스](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
+텍스트 보기에는 사용자가 보고 텍스트 버퍼의 유니코드 텍스트를 편집할 수 있는 창입니다. 기본적으로 뷰는 편집기로 대부분의 사용자가 어떤 가리킵니다. 뷰는 버퍼에서 다양 한 텍스트 계층 (줄 바꿈, 개요 텍스트 및 등)로 구분 됩니다, 때문에 뷰 버퍼에 있는 텍스트의 정확한 표시 되도록 보장 되지 않습니다. 텍스트 보기에 대 한 자세한 내용은 참조 하세요. [기존 API를 사용 하 여 텍스트 보기에 액세스](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
   
- 다음 표에서 인터페이스에는 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> 개체입니다.  
+ 다음 표에서 인터페이스를 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> 개체입니다.  
   
 |인터페이스|설명|  
 |---------------|-----------------|  
@@ -34,13 +34,13 @@ ms.locfileid: "31138729"
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|표준 OLE 인터페이스입니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|표준 OLE 인터페이스입니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|표준 OLE 인터페이스입니다.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|복합 작업 (즉, 단일 실행 취소/다시 실행 단위로 그룹화 하는 작업)를 만들 수 있도록 합니다.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|관리 및 보기에 액세스 하기 위한 기본 메서드를 제공 합니다. `IVsTextView` 하지 스레드로부터 안전 합니다.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|만들고 된 창 도킹 창을 관리 합니다.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|복합 작업 (즉, 실행 취소/다시 실행의 단일 단위로 그룹화 된 작업)를 만들을 수 있습니다.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|관리 및 보기를 액세스 하기 위한 기본 메서드를 제공 합니다. `IVsTextView` 스레드 안전 하지 않습니다.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|만들고는 창을 관리 합니다.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|텍스트 계층 상호 작용합니다.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|다른 스레드에서 보기에 대 한 작업을 수행합니다.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|다른 스레드에서 작업을 수행합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [숫자 값 편집](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
+## <a name="see-also"></a>참고자료  
+ [그림 편집](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
  [VSTextBuffer 개체](../extensibility/vstextbuffer-object.md)   
- [레거시 API를 사용 하 여 텍스트 보기에 액세스](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+ [기존 API를 사용 하 여 텍스트 보기에 액세스](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

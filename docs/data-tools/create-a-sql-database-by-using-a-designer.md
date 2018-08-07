@@ -14,23 +14,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d21ba3f239bb4c5e3fdd1ba717b1288956b8550
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 71d9be6ddc664d3b25c52d227e749421611f3512
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756157"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582374"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>데이터베이스를 만들고 Visual Studio에서 테이블을 추가 합니다.
+
 만들기 및 SQL Server Express LocalDB의 로컬 데이터베이스 파일을 업데이트 하려면 Visual Studio를 사용할 수 있습니다. TRANSACT-SQL 문을 실행 하 여 데이터베이스를 만들 수도 있습니다는 **SQL Server 개체 탐색기** Visual Studio의 도구 창입니다. 이 항목에서는 만듭니다는 *.mdf* 파일 및 테이블 디자이너를 사용 하 여 테이블 및 키를 추가 합니다.
 
 ## <a name="prerequisites"></a>전제 조건
+
 이 연습을 완료 하려면 선택적 있어야 **데이터 저장소 및 처리** 워크 로드가 Visual Studio에서 설치 합니다. 을 설치 하려면 엽니다 **Visual Studio 설치 관리자** 선택 합니다 **워크 로드** 탭 합니다. 아래 **웹 및 클라우드**, 선택 **데이터 저장 및 처리**합니다. 선택 된 **수정** Visual Studio에 작업을 추가 하려면 단추입니다.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>프로젝트를 만들고 로컬 데이터베이스 파일
 
-### <a name="to-create-a-project-and-a-database-file"></a>프로젝트 및 데이터베이스 파일을 만들려면
-1.  라는 Windows Forms 프로젝트를 만듭니다 `SampleDatabaseWalkthrough`합니다.
+1.  라는 Windows Forms 프로젝트를 만듭니다 **SampleDatabaseWalkthrough**합니다.
 
 2.  메뉴 모음에서 선택 **프로젝트** > **새 항목 추가**합니다.
 
@@ -41,6 +42,7 @@ ms.locfileid: "36756157"
 4.  데이터베이스 이름을 **SampleDatabase**를 선택한 후 합니다 **추가** 단추입니다.
 
 ### <a name="to-add-a-data-source"></a>데이터 소스를 추가하려면
+
 5.  경우는 **데이터 원본** 창이 열려 있지 않으면, 선택 하 여 열을 **Shift**+**Alt**+**D** 키, 메뉴 모음 **뷰** > **기타 Windows** > **데이터 원본**합니다.
 
 6.  에 **데이터 원본** 창에서 합니다 **새 데이터 소스 추가** 링크 합니다.
@@ -58,6 +60,7 @@ ms.locfileid: "36756157"
 11. 하나는 **데이터베이스 개체 선택** 페이지 표시를 알리는 메시지를 데이터베이스 개체를 포함 하지 않습니다. **마침**을 선택합니다.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>데이터 연결의 속성을 보려면
+
 에 대 한 연결 문자열을 볼 수 있습니다 합니다 *SampleDatabase.mdf* 데이터 연결의 속성 창을 열어 파일:
 
 -   Visual Studio에서 선택 **뷰** > **SQL Server 개체 탐색기** 창이 열려 있지 않은 경우. 확장 하 여 속성 창을 엽니다는 **데이터 연결** 에 대 한 바로 가기 메뉴를 열고 노드를 *SampleDatabase.mdf*를 선택한 다음 **속성**.
@@ -65,9 +68,11 @@ ms.locfileid: "36756157"
 -   선택할 수 있습니다 **뷰** > **서버 탐색기**창이 아직 열려 있지 않은 경우. 확장 하 여 속성 창을 엽니다는 **데이터 연결** 노드. 바로 가기 메뉴를 열고 *SampleDatabase.mdf*를 선택한 후 **속성**합니다.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>테이블 디자이너를 사용 하 여 테이블 및 키 만들기
+
 이 섹션에서는 두 개의 테이블, 각 테이블 및 몇 가지 샘플 데이터 행의 기본 키를 만들어야 합니다. 한 테이블의 레코드가 다른 테이블의 레코드에 해당 하는 방법을 지정 하는 외래 키도 만들어야 합니다.
 
 ### <a name="to-create-the-customers-table"></a>Customers 테이블을 만들려면
+
 1.  **서버 탐색기** 또는 **SQL Server 개체 탐색기**를 확장 합니다 **데이터 연결** 노드를 펼친 다음는 **SampleDatabase.mdf**노드.
 
 2.  바로 가기 메뉴를 열고 **테이블**를 선택한 후 **새 테이블 추가**합니다.
@@ -104,6 +109,7 @@ ms.locfileid: "36756157"
     변경 내용이 로컬 데이터베이스 파일에 저장됩니다.
 
 ### <a name="to-create-the-orders-table"></a>Orders 테이블을 만들려면
+
 1.  다른 테이블을 추가한 다음, 다음 표의 각 항목에 대한 행을 추가합니다.
 
     |열 이름|데이터 형식|null 허용|
@@ -128,11 +134,12 @@ ms.locfileid: "36756157"
     변경 내용이 로컬 데이터베이스 파일에 저장됩니다.
 
 ### <a name="to-create-a-foreign-key"></a>외래 키를 만들려면
+
 1.  그리드의 오른쪽에 컨텍스트 창에서 바로 가기 메뉴를 열고 **외래 키**를 선택한 후 **새 외래 키 추가**다음 그림과 같이 합니다.
 
      ![테이블 디자이너에서 외래 키 추가하기](../data-tools/media/foreignkey.png)
 
-2.  표시 되는 텍스트 상자에서 바꿉니다 **ToTable** 사용 하 여 `Customers`입니다.
+2.  표시 되는 텍스트 상자에서 바꿉니다 **ToTable** 사용 하 여 **고객**합니다.
 
 3.  T-SQL 창에서 마지막 줄 다음 샘플과 일치 하도록 업데이트 합니다.
 
@@ -147,8 +154,6 @@ ms.locfileid: "36756157"
     변경 내용이 로컬 데이터베이스 파일에 저장됩니다.
 
 ## <a name="populate-the-tables-with-data"></a>데이터로 테이블 채우기
-
-### <a name="to-populate-the-tables-with-data"></a>테이블을 데이터로 채우려면
 
 1.  **서버 탐색기** 하거나 **SQL Server 개체 탐색기**, 샘플 데이터베이스에 대 한 노드를 확장 합니다.
 
