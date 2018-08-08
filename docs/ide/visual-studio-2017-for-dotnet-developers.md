@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37175306"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381096"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 생산성 가이드
 
@@ -113,7 +113,7 @@ Visual Studio 2017에는 코드베이스를 검색하고 탐색하는 데 도움
 
 ## <a name="i-want-to-run-and-see-my-unit-tests"></a>단위 테스트를 실행하고 참조하려 합니다.
 Visual Studio 2017의 테스트 환경이 많이 개선되었습니다. MSTest v1, MSTest v2, NUnit 또는 XUnit 테스트 프레임워크로 유닛 테스트 환경을 사용하세요.
-- **‘테스트 탐색기’** 테스트 검색은 버전 15.6에서 빠릅니다(최상의 결과를 위해 테스트 어댑터를 최신 버전으로 업그레이드).
+- ‘테스트 탐색기’ 테스트 검색은 버전 15.6에서 빠릅니다(최상의 결과를 위해 테스트 어댑터를 최신 버전으로 업그레이드).****
 - 버전 15.6의 새 ‘계층 구조 정렬’을 사용하여 테스트 탐색기에서 테스트를 구성합니다.
 - [Live Unit Testing](../test/live-unit-testing.md)은 계속 코드 변경으로 영향을 받는 테스트를 실행하며 테스트 상태를 알려주는 인라인 편집기 아이콘을 업데이트합니다. *Live Test Set*(라이브 테스트 집합)에서 특정 테스트 또는 테스트 프로젝트를 포함하거나 제외합니다.
 
@@ -122,7 +122,7 @@ Visual Studio 2017의 테스트 환경이 많이 개선되었습니다. MSTest v
 ## <a name="i-want-to-debug-my-code"></a>내 코드를 디버그하고 싶습니다.
 Visual Studio 2017에는 새로운 디버깅 기능이 추가되었습니다.
 - *Run to click*(실행하려면 클릭)을 사용하면 코드 줄 옆을 가리키고, 나타나는 녹색 ‘재생’ 아이콘을 누르고, 해당 줄에 도달할 때까지 프로그램을 실행할 수 있습니다.
-- 새 **‘예외 도우미’** 는 어떤 변수가 NullReferenceException에서 ‘null’인지와 같은 가장 중요한 정보를 대화 상자의 최상위 수준에 놓습니다.
+- 새 ‘예외 도우미’는 어떤 변수가 NullReferenceException에서 ‘null’인지와 같은 가장 중요한 정보를 대화 상자의 최상위 수준에 놓습니다.****
 - [뒤로 이동](../debugger/how-to-use-intellitrace-step-back.md) 디버깅을 사용하면 이전 중단점 또는 단계로 돌아가서 과거의 응용 프로그램 상태를 볼 수 있습니다.
 - [스냅숏 디버깅](/azure/application-insights/app-insights-snapshot-debugger)을 사용하면 예외가 throw되는 때에 라이브 웹 응용 프로그램의 상태를 확인할 수 있습니다(Azure에 있어야 함).
 
@@ -140,7 +140,7 @@ git 또는 TFVC를 사용하여 Visual Studio에서 코드를 저장하고 업�
 
 | 기능 | 설명 | 사용 방법 |
 |-|-|-|
-| 솔루션 탐색기에서 파일 찾기 | 솔루션 탐색기에서 활성 파일 강조 표시 | **솔루션 탐색기의 도구** > **옵션** > **프로젝트 및 솔루션** > **활성 항목 추적** |
+| 솔루션 탐색기에서 파일 찾기 | **솔루션 탐색기**에서 활성 파일 강조 표시 | **솔루션 탐색기의 도구** > **옵션** > **프로젝트 및 솔루션** > **활성 항목 추적** |
 | 참조 어셈블리 및 NuGet 패키지의 형식에 대한 using 추가 | 참조되지 않은 형식의 NuGet 패키지를 설치하기 위해 코드 수정이 있는 전구 표시 | **도구** > **옵션** > **텍스트 편집기** > **C#** > **고급** > **참조 어셈블리의 형식에 대한 using 제안** 및 **NuGet 패키지의 형식에 대한 using 제안** |
 | 전체 솔루션 분석 사용 | **오류 목록**에서 솔루션의 모든 오류 보기 | **도구** > **옵션** > **텍스트 편집기** > **C#** > **고급** > **전체 솔루션 분석 사용** |
 | 디컴파일된 소스에 탐색을 사용하도록 설정 | 외부 소스에서 형식/멤버에 대한 정의로 이동하고, 메서드 본문을 표시하기 위해 ILSpy 디컴파일러를 사용할 수 있습니다. | **도구** > **옵션** > **텍스트 편집기** > **C#** > **고급** > **Enable navigation to decompiled sources(디컴파일된 소스에 탐색을 사용하도록 설정)** |

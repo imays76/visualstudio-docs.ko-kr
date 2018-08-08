@@ -9,18 +9,18 @@ description: 관리자가 구독자에게 라이선스를 할당하는 방법을
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178402"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251707"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 구독 관리자 포털에서 라이선스 할당
 
 Visual Studio 구독 관리자는 관리자 포털을 사용하여 개별 사용자 또는 사용자 그룹에 구독을 할당할 수 있습니다.
 
-사용자 그룹의 경우 한 번에 하나씩 구독을 할당하거나 **대량 추가** 기능을 사용하여 해당 구독 정보를 포함한 구독자 목록을 쉽고 빠르게 업로드할 수 있습니다. 
+사용자 그룹의 경우 한 번에 하나씩 구독을 할당하거나 **대량 추가** 기능을 사용하여 구독자 목록 및 해당 구독 정보를 쉽고 빠르게 업로드할 수 있습니다.
 
 ## <a name="individual-assignments"></a>개별 할당
 
@@ -32,7 +32,7 @@ Visual Studio 구독 관리자는 관리자 포털을 사용하여 개별 사용
 
    ![단일 구독자 추가](media\add-single-subscriber.png)
 
-3. 새 구독자에 대한 정보를 양식 필드에 입력합니다. 조직에서 Azure Active Directory를 사용하는 경우 이 필드는 현재 디렉터리에 있는 사람을 찾는 검색 기능 역할을 하므로 검색 결과에서 올바른 사용자를 선택할 수 있습니다. 해당 사용자를 선택한 후에 사용자의 이름, 로그인 이메일 및 알림 이메일이 자동으로 채워집니다. 
+3. 새 구독자에 대한 정보를 양식 필드에 입력합니다. 조직에서 Azure Active Directory를 사용하는 경우 이 필드는 현재 디렉터리에 있는 사람을 찾는 검색 기능 역할을 하므로 검색 결과에서 올바른 사용자를 선택할 수 있습니다. 해당 사용자를 선택한 후에 사용자의 이름, 로그인 이메일 및 알림 이메일이 자동으로 채워집니다.
 
    ![새 알림 이메일 주소 추가](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ Visual Studio 구독 관리자는 관리자 포털을 사용하여 개별 사용
 
   ![Excel 템플릿을 다운로드하여 여러 구독자 업로드](media\download-template-upload-subscribers.png)
 
-  >![NOTE] 항상 이 템플릿의 최신 버전을 다운로드합니다. 이전 버전을 사용하는 경우 대량 업로드가 실패할 수 있습니다.
+   > ![NOTE] 항상 이 템플릿의 최신 버전을 다운로드합니다. 이전 버전을 사용하는 경우 대량 업로드가 실패할 수 있습니다.
 
 1. Excel 스프레드시트에서 구독을 할당하려는 개인에 대한 정보로 필드를 채웁니다. (*참조*는 선택적 필드입니다.) 작업을 마친 후에 파일을 로컬로 저장합니다.
 

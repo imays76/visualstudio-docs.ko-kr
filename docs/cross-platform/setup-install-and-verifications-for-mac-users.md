@@ -11,12 +11,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7add505f7a90290daab1170c190987767ba05d15
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: f0c4193d68eabd5a5427629cb9a4c7a3be18db3c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924283"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251922"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac 사용자용 설정, 설치 및 확인
 
@@ -30,7 +30,7 @@ Mac에서 Xamarin을 사용하려면 다음이 필요합니다.
 
     -   **Mac에서 직접 Xamarin Studio를 실행하려면:** Xamarin Studio는 C#을 사용한 Android, iOS 및 Windows 앱 빌드를 지원하는 Xamarin 개발 환경입니다.  Xamarin Studio를 간단히 살펴보려면 [Xamarin Studio 개요](https://xamarin.com/studio) (영문)(xamarin.com)를 참조하세요.
 
-    -   **Mac에 Parallels 또는 VMWare가 구성되어 있는 경우:** Parallels 또는 VMWare 내부에서 Visual Studio 2017 및 Xamarin이 설치된 Windows를 실행합니다.  이 구성을 사용하면 Xamarin은 Visual Studio와 함께 설치되고 C#을 사용하여 Android, iOS 및 Windows 앱을 빌드하는 데 Visual Studio를 개발 환경으로 사용하는 기능을 제공하는 확장입니다.  Visual Studio Developer Essentials 프로그램 일부로 무료 3개월 Parallels 구독을 구할 수 있습니다. [Microsoft Visual Studio Dev Essentials에 Parallels Desktop Pro 및 Parallels Access가 포함됨](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (영문)(Parallels 블로그)을 참조하세요.
+    -   **Mac에 Parallels 또는 VMWare가 구성되어 있는 경우:** Parallels 또는 VMWare 내부에서 Visual Studio 2017 및 Xamarin이 설치된 Windows를 실행합니다.  이 구성을 사용하면 Xamarin은 Visual Studio와 함께 설치되고 C#을 사용하여 Android, iOS 및 Windows 앱을 빌드하는 데 Visual Studio를 개발 환경으로 사용하는 기능을 제공하는 확장입니다.  Visual Studio Developer Essentials 프로그램 일부로 무료 3개월 Parallels 구독을 구할 수 있습니다. [Microsoft Visual Studio Dev Essentials에 Parallels Desktop Pro 및 Parallels Access가 포함됨](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/)(Parallels 블로그)을 참조하세요.
 
 이 항목에서는 이러한 요구 사항에 대한 지침을 제공합니다.  설치 프로세스가 실행되는 동안 [Xamarin을 사용한 모바일 개발에 대해 알아보기](../cross-platform/learn-about-mobile-development-with-xamarin.md) 항목을 검토하여 필요한 배경 자료를 읽고 살펴볼 수 있습니다.
 
@@ -40,9 +40,9 @@ Mac에서 Xamarin을 사용하려면 다음이 필요합니다.
 
 2.  [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)에서 Xcode 다운로드 및 설치.
 
-3.  [Xamarin.iOS 설치 및 구성](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (영문)(xamarin.com)의 지침에 따라 Xamarin을 다운로드하여 설치합니다.
+3.  [Xamarin.iOS 설치 및 구성](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/)(xamarin.com)의 지침에 따라 Xamarin을 다운로드하여 설치합니다.
 
-4.  Windows 및 Mac 컴퓨터에서 Xamarin 설치를 마친 후 [Connecting to the Mac using XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA)(XMA를 사용하여 Mac에 연결)(xamarin.com)의 지침에 따라 Windows 컴퓨터의 Visual Studio에서 iOS 및 Mac 작업을 수행할 수 있습니다.
+4.  Windows 및 Mac 컴퓨터에서 Xamarin 설치를 완료하면 [XMA를 사용하여 Mac에 연결](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA)(xamarin.com)의 지침에 따라 Windows 컴퓨터의 Visual Studio에서 iOS 및 Mac 작업을 수행할 수 있습니다.
 
 ##  <a name="windows"></a> Parallels 내부의 Windows 설치(Visual Studio 및 Xamarin)
 
@@ -76,9 +76,9 @@ Mac에서 Xamarin을 사용하려면 다음이 필요합니다.
 
 ![Xamarin.com에서 올바른 설명서를 확인하기 위해 Xamarin Studio 선택](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
 
-**OWA(Outlook Web Access)**
+**Android**
 
-1.  [Android 프로젝트 만들기](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/) (영문)(xamarin.com)의 지침에 따라 Android 프로젝트 만들기를 확인합니다.
+1.  [Android 프로젝트 만들기](http://developer.xamarin.com/recipes/android/general/projects/create_an_android_project/)(xamarin.com)의 지침에 따라 Android 프로젝트를 만드는 유효성을 검사합니다.
 
 2.  [Android Player > Xamarin Studio 통합 설명서](https://developer.xamarin.com/guides/android/getting_started/installation/android-player/#Integration_with_Xamarin_Studio)(xamarin.com)를 통해 Android 에뮬레이터의 디버깅 유효성을 검사합니다.
 
@@ -106,7 +106,7 @@ Mac에서 Xamarin을 사용하려면 다음이 필요합니다.
 
 **iOS**
 
-1.  [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac)(Mac에 연결)(xamarin.com)에 설명된 대로 Mac이 네트워크에서 사용 가능하고 Visual Studio와 연결되었는지 확인합니다.
+1.  [Mac에 연결](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac)(xamarin.com)에 설명된 대로 Mac이 네트워크에서 사용 가능하고 Visual Studio와 페어링되었는지 확인합니다.
 
 2.  [iOS 만들기](http://developer.xamarin.com/recipes/ios/general/projects/create_an_ios_project/) (영문)(xamarin.com)의 지침에 따라 iOS 프로젝트 만들기를 확인합니다.
 

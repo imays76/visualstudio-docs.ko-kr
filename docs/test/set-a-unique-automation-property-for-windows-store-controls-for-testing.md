@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692358"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382740"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>테스트를 위해 UWP 컨트롤에 대한 고유 자동화 속성 설정
 
@@ -48,13 +48,13 @@ XAML에서 컨트롤에 대해 명시적으로 **AutomationProperties.Automation
 
 XAML에서 컨트롤에 대해 명시적으로 **AutomationProperties.Name**을 **ButtonY**로 설정합니다.
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
 ## <a name="assign-unique-names"></a>고유한 이름 할당
 
-Blend for Visual Studio에서 단추, 목록 상자, 콤보 상자 및 텍스트 상자와 같은 대화형 요소에 고유한 이름을 할당하는 옵션을 선택할 수 있습니다. 이렇게 하면 **AutomationProperties.Name**에 대한 고유한 값을 컨트롤에 부여하게 됩니다.
+Blend for Visual Studio에서 단추, 목록 상자, 콤보 상자 및 텍스트 상자와 같은 대화형 요소에 고유한 이름을 할당하는 옵션을 선택할 수 있습니다. 그러면 **AutomationProperties.Name**에 대해 고유한 값을 제어할 수 있습니다.
 
 기존 컨트롤에 고유한 이름을 할당하려면 **도구** > **대화형 요소 이름 지정**을 선택합니다.
 
@@ -149,7 +149,7 @@ public override string ToString()
 
 ### <a name="dynamic-controls"></a>동적 컨트롤
 
-사용자 코드에서 동적으로 생성되었으며 XAML 파일에서는 정적으로 또는 템플릿을 통해 생성되지 않은 컨트롤이 있으면 컨트롤의 **콘텐츠** 또는 **이름** 속성을 설정해야 합니다. 이렇게 하면 각 동적 컨트롤은 고유한 자동화 속성을 갖게 됩니다. 예를 들어 목록 항목을 선택하면 표시되어야 하는 확인란이 있는 경우 다음과 같이 이러한 속성을 설정할 수 있습니다.
+사용자 코드에서 동적으로 생성되었으며 XAML 파일에서는 정적으로 또는 템플릿을 통해 생성되지 않은 컨트롤이 있으면 컨트롤의 **콘텐츠** 또는 **이름** 속성을 설정해야 합니다. 이 작업을 통해 각 동적 컨트롤은 고유한 자동화 속성을 갖게 됩니다. 예를 들어 목록 항목을 선택하면 표시되어야 하는 확인란이 있는 경우 다음과 같이 이러한 속성을 설정할 수 있습니다.
 
 ```csharp
 private void CreateCheckBox(string txt, StackPanel panel)

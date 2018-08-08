@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0192a38e5bd84cfd17d3f7e2a0ec59e3225f4e84
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 78b8f5488d4e69ac547d48946442198e4f0a5c41
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178821"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382153"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼
 
@@ -56,7 +56,7 @@ ms.locfileid: "39178821"
 |Internet Explorer 6<br /><br /> Internet Explorer 7|지원되지 않습니다.|
 |Chrome<br /><br /> Firefox|작업 단계 기록은 지원되지 않습니다. 코딩된 UI 테스트는 Visual Studio 2012 Update 4 이상에서 Chrome 및 Firefox 브라우저로 재생할 수 있습니다. 자세한 내용을 보려면 [여기](http://msdn.microsoft.com/library/jj835758.aspx) 로 이동하세요.|
 |Opera<br /><br /> Safari|지원되지 않습니다.|
-|Silverlight|지원되지 않습니다.<br /><br /> 그러나 Visual Studo 2013의 경우 Visual Studio 갤러리에서 [Silverlight용 Microsoft Visual Studio 2013 코딩된 UI 테스트 플러그 인](https://go.microsoft.com/fwlink/?LinkId=691026) 을 다운로드할 수 있습니다.|
+|Silverlight|지원되지 않습니다.<br /><br /> 그러나 Visual Studo 2013의 경우 Visual Studio 갤러리에서 [Silverlight용 Microsoft Visual Studio 2013 코딩된 UI 테스트 플러그 인](https://go.microsoft.com/fwlink/?LinkId=691026)을 다운로드할 수 있습니다.|
 |Flash/Java|지원되지 않습니다.|
 |Windows Forms 2.0 이상|완전하게 지원됨 **참고:** NetFx 컨트롤은 완전하게 지원되지만 일부 타사 컨트롤은 지원되지 않습니다.|
 |WPF 3.5 이상|완전하게 지원됨<br /><br /> **참고** NetFx 컨트롤은 완전하게 지원되지만 일부 타사 컨트롤은 지원되지 않습니다.|

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5de1fb6890874a5aab57e357cc4488db96fb7c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178376"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382037"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>방법: 요청 수준 플러그 인 만들기
 
@@ -30,7 +30,7 @@ ms.locfileid: "39178376"
 
 ## <a name="to-create-a-request-level-plug-in"></a>요청 수준 플러그 인을 만들려면
 
-1.  솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
+1.  **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
 
      **새 프로젝트 추가** 대화 상자가 표시됩니다.
 
@@ -40,23 +40,23 @@ ms.locfileid: "39178376"
 
 4.  **이름** 텍스트 상자에 클래스 이름을 입력하고 **확인**을 선택합니다.
 
-     새 클래스 라이브러리 프로젝트가 솔루션 탐색기에 추가되고 새 클래스가 코드 편집기에 나타납니다.
+     새 클래스 라이브러리 프로젝트가 **솔루션 탐색기**에 추가되고 새 클래스가 **코드 편집기**에 나타납니다.
 
-5.  솔루션 탐색기의 새 클래스 라이브러리에서 **참조** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+5.  **솔루션 탐색기**의 새 클래스 라이브러리에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
 
      **참조 추가** 대화 상자가 표시됩니다.
 
 6.  **.NET** 탭을 선택하고 아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.WebTestFramework**를 선택한 다음, **확인**을 선택합니다.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework**에 대한 참조가 솔루션 탐색기의 **참조** 폴더에 추가됩니다.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework**에 대한 참조가 **솔루션 탐색기**의 **Reference** 폴더에 추가됩니다.
 
-7.  솔루션 탐색기에서 웹 성능 테스트 요청 테스트 플러그 인을 추가할 부하 테스트를 포함하는 웹 성능 및 부하 테스트 프로젝트의 최상위 노드를 마우스 오른쪽 단추로 클릭합니다. **참조 추가**를 선택합니다.
+7.  **솔루션 탐색기**에서 웹 성능 테스트 요청 테스트 플러그 인을 추가할 부하 테스트를 포함하는 웹 성능 및 부하 테스트 프로젝트의 최상위 노드를 마우스 오른쪽 단추로 클릭합니다. **참조 추가**를 선택합니다.
 
-     **참조 추가** 대화 상자가 표시됩니다.
+     **참조 추가 대화 상자가 표시됩니다**.
 
-8.  **프로젝트** 탭을 선택하고 클래스 라이브러리 프로젝트를 선택한 다음, **확인**을 선택합니다.
+8.  **프로젝트** 탭을 선택하고, **클래스 라이브러리 프로젝트**를 선택한 다음, **확인**을 선택합니다.
 
-9. 코드 편집기에서 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
+9. **코드 편집기**에서 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
 
 10. <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> 및 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> 이벤트 처리기 중 하나 또는 둘 모두에서 코드를 구현합니다. 샘플 구현을 보려면 다음 예제 단원을 참조하십시오.
 
@@ -91,7 +91,7 @@ ms.locfileid: "39178376"
 
 ## <a name="example"></a>예
 
-다음 코드를 사용하여 두 대화 상자를 표시하는 사용자 지정 웹 성능 테스트 플러그 인을 만들 수 있습니다. 대화 상자에 요청 추가 기능을 연결할 요청과 연결된 URL이 표시됩니다. 두 번째 대화 상자에 에이전트의 컴퓨터 이름이 표시됩니다.
+다음 코드를 사용하여 두 대화 상자를 표시하는 사용자 지정 웹 성능 테스트 플러그 인을 만들 수 있습니다. 첫 번째 대화 상자에는 요청 추가 기능을 연결할 요청과 연결된 URL이 표시됩니다. 두 번째 대화 상자에 에이전트의 컴퓨터 이름이 표시됩니다.
 
 > [!NOTE]
 > 다음 코드를 실행하려면 System.Windows.Forms에 대한 참조를 추가해야 합니다.

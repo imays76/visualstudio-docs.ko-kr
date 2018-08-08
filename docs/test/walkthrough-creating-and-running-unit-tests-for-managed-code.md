@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978162"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380865"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. **파일** 메뉴에서 **추가** > **새 프로젝트**를 선택합니다.
 
-2. 새 프로젝트 대화 상자에서 **설치됨**, **Visual C#** 을 확장한 다음 **테스트**를 선택합니다.
+2. **새 프로젝트** 대화 상자에서 **설치됨** 및 **Visual C#** 을 확장한 다음, **테스트**를 선택합니다.
 
 3. 템플릿 목록에서 **단위 테스트 프로젝트**를 선택합니다.
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. **BankTests** 프로젝트에서 **Bank** 프로젝트에 대한 참조를 추가합니다.
 
-   솔루션 탐색기에서 **BankTests** 프로젝트의 **참조**를 선택하고 상황에 맞는 메뉴에서 **참조 추가**를 선택합니다.
+   **솔루션 탐색기**에서 **BankTests** 프로젝트의 **참조**를 선택한 다음, 상황에 맞는 메뉴에서 **참조 추가**를 선택합니다.
 
-6. 참조 관리자 대화 상자에서 **솔루션** 을 확장한 다음 **Bank** 항목을 선택합니다.
+6. **참조 관리자** 대화 상자에서 **솔루션**을 확장한 다음, **Bank** 항목을 선택합니다.
 
 ## <a name="create-the-test-class"></a>테스트 클래스 만들기
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>테스트 다시 실행
 
-테스트 탐색기에서 **모두 실행** 을 선택하여 테스트를 다시 실행합니다. 빨강/녹색 막대가 테스트 통과를 나타내기 위해 녹색으로 바뀌고 테스트는 **통과한 테스트** 그룹으로 이동합니다.
+**테스트 탐색기**에서 **모두 실행**을 선택하여 테스트를 다시 실행합니다. 빨강/녹색 막대가 테스트 통과를 나타내기 위해 녹색으로 바뀌고 테스트는 **통과한 테스트** 그룹으로 이동합니다.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>단위 테스트를 사용하여 코드 개선
 

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751652"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382398"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
 
@@ -38,23 +38,23 @@ ms.locfileid: "34751652"
 
 7.  **확인**을 선택합니다.
 
-     Visual Studio용 WPF Designer가 열리고 프로젝트의 MainWindow가 표시됩니다.
+     **Visual Studio용 WPF Designer**가 열리고 프로젝트의 MainWindow가 표시됩니다.
 
 8.  현재 도구 상자가 열려 있지 않으면 엽니다. **보기** 메뉴를 선택한 다음, **도구 상자**를 선택합니다.
 
 9. **모든 WPF 컨트롤** 섹션에서 **Button**, **CheckBox** 및 **ProgressBar** 컨트롤을 디자인 화면의 MainWindow로 끌어옵니다.
 
-10. Button 컨트롤을 선택합니다. 속성 창에 **Name** 속성의 값을 \<이름 없음>에서 button1으로 변경합니다. 그런 다음 **Content** 속성 값을 Button에서 Start로 변경합니다.
+10. **Button** 컨트롤을 선택합니다. **속성** 창에 **Name** 속성의 값을 \<이름 없음>에서 button1으로 변경합니다. 그런 다음 **Content** 속성 값을 Button에서 Start로 변경합니다.
 
-11. ProgressBar 컨트롤을 선택합니다. 속성 창에 **Name** 속성의 값을 \<이름 없음>에서 progressBar1로 변경합니다. 그런 다음 **Maximum** 속성 값을 **100**에서 **10000**으로 변경합니다.
+11. **ProgressBar** 컨트롤을 선택합니다. **속성** 창에 **Name** 속성의 값을 \<이름 없음>에서 progressBar1로 변경합니다. 그런 다음 **Maximum** 속성 값을 **100**에서 **10000**으로 변경합니다.
 
-12. Checkbox 컨트롤을 선택합니다. 속성 창에서 **Name** 속성을 \<이름 없음>에서 checkBox1로 변경하고 **IsEnabled** 속성을 선택 취소합니다.
+12. **Checkbox** 컨트롤을 선택합니다. **속성** 창에서 **Name** 속성을 \<이름 없음>에서 checkBox1로 변경하고 **IsEnabled** 속성의 선택을 취소합니다.
 
      ![간단한 WPF 응용 프로그램](../test/media/codedui_wpfapp.png)
 
 13. 단추 컨트롤을 두 번 클릭하여 Click 이벤트 처리기를 추가합니다.
 
-     MainWindow.xmal.cs가 새 button1_Click 메서드의 커서와 함께 코드 편집기에 표시됩니다.
+     *MainWindow.xmal.cs*가 새 button1_Click 메서드의 커서와 함께 코드 편집기에 표시됩니다.
 
 14. MainWindow 클래스의 맨 위에 대리자를 추가합니다. 대리자는 진행률 표시줄에 사용됩니다. 대리자를 추가하려면 다음 코드 추가합니다.
 
@@ -314,7 +314,7 @@ ms.locfileid: "34751652"
 
 10. **솔루션 탐색기**에서 *UIMap.Designer.cs* 파일을 엽니다.
 
-11. UIMap.Designer.cs 파일에서 **UIStartButton1** 속성을 찾습니다. `SearchProperties`가 `"buttonA"`로 설정되어 있습니다.
+11. *UIMap.Designer.cs* 파일에서 **UIStartButton1** 속성을 찾습니다. `SearchProperties`가 `"buttonA"`로 설정되어 있습니다.
 
     ```csharp
     public WpfButton UIStartButton1
@@ -334,7 +334,7 @@ ms.locfileid: "34751652"
             }
     ```
 
-     이제 새로 매핑된 컨트롤을 사용하도록 코딩된 UI 테스트를 수정할 수 있습니다. 이전 절차에서 언급했듯이 코딩된 UI 테스트에서 메서드나 속성을 재정의하려는 경우에는 UIMap.cs 파일에서 재정의해야 합니다.
+     이제 새로 매핑된 컨트롤을 사용하도록 코딩된 UI 테스트를 수정할 수 있습니다. 이전 프로시저에서 언급했듯이 코딩된 UI 테스트에서 메서드나 속성을 재정의하려는 경우에는 *UIMap.cs* 파일에서 재정의해야 합니다.
 
 12. *UIMap.cs* 파일에서 생성자를 추가하고 `"buttonA":` 값을 가진 `AutomationID` 속성을 사용하도록 `UIStartButton` 속성의 `SearchProperties` 속성을 지정합니다.
 
@@ -353,9 +353,9 @@ ms.locfileid: "34751652"
 
 ## <a name="videos"></a>비디오
 
-![비디오 링크](../data-tools/media/playvideo.gif) [Getting started with Coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230573)(코딩된 UI 테스트 시작)
+![비디오 링크](../data-tools/media/playvideo.gif) [코딩된 UI 테스트 시작](http://go.microsoft.com/fwlink/?LinkID=230573)
 
-![비디오 링크](../data-tools/media/playvideo.gif) [Maintenance And debugging of coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230574)(코딩된 UI 테스트 유지 관리 및 디버깅)
+![비디오 링크](../data-tools/media/playvideo.gif) [코딩된 UI 테스트 유지 관리 및 디버깅](http://go.microsoft.com/fwlink/?LinkID=230574)
 
 ![비디오 링크](../data-tools/media/playvideo.gif) [Hand coding coded UI tests](http://go.microsoft.com/fwlink/?LinkID=230575)(코딩된 UI 테스트 수동 코딩)
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178493"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380807"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
 
@@ -55,9 +55,9 @@ Visual Studio를 실행하는 서버는 네트워크에 안정적으로 연결�
 
 혼동을 피하고 작업을 간소화하려면 컴퓨터의 운영 체제 및 Team Foundation Server와 동일한 언어를 사용하도록 테스트 컨트롤러 및 테스트 에이전트를 구성해야 합니다. 테스트 에이전트와 테스트 컨트롤러가 서로 다른 컴퓨터에 설치되어 있는 경우에는 동일한 언어를 사용하도록 구성해야 합니다. 그러나 Team Foundation Server 배포 언어와 일치하기만 면 다른 언어 버전의 Visual Studio를 영어 버전 운영 체제에 설치할 수도 있습니다.
 
-## <a name="monitor-agent-resources"></a>에이전트 리소스 모니터
+## <a name="monitor-agent-resources"></a>에이전트 리소스 모니터링
 
-에이전트 컴퓨터를 모니터링하면 테스트 중에 실행되고 늘어나거나 줄어든 **QTAgent\*.exe** 프로세스를 관찰함으로써 필요한 리소스를 결정할 수 있습니다. QTAgent*.exe 프로세스의 가장 일반적인 병목 현상은 CPU 사용률입니다. CPU 사용률이 지속적으로 90퍼센트 이상을 유지한다면 에이전트의 현재 부하량이 많은 것입니다. 그 다음의 일반적인 병목 현상은 메모리 사용량입니다. 까다로운 테스트의 경우 이러한 리소스를 모니터링함으로써 컴퓨터 리소스를 늘려야 할지 또는 테스트를 다른 방법으로 배포해야 할지를 손쉽게 결정할 수 있습니다.
+에이전트 컴퓨터를 모니터링하면 테스트 중에 실행되고 늘어나거나 줄어든 *QTAgent\*.exe* 프로세스를 관찰함으로써 필요한 리소스를 결정할 수 있습니다. *QTAgent\*.exe* 프로세스의 가장 일반적인 병목 현상은 CPU 사용률입니다. CPU 사용률이 지속적으로 90퍼센트 이상을 유지한다면 에이전트의 현재 부하량이 많은 것입니다. 그 다음의 일반적인 병목 현상은 메모리 사용량입니다. 까다로운 테스트의 경우 이러한 리소스를 모니터링함으로써 컴퓨터 리소스를 늘려야 할지 또는 테스트를 다른 방법으로 배포해야 할지를 손쉽게 결정할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

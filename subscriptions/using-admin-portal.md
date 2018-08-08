@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-mescription: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
+description: 관리자 포털을 사용하여 조직의 Visual Studio 구독을 관리하는 방법을 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327394"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380820"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 구독 관리자 포털 사용
 
@@ -25,7 +25,7 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 명�
 - 구독이 업그레이드되거나("버전 업그레이드" 라이선스 구입 후) 더 낮은 수준으로 갱신되는 경우 **구독자의 구독 수준을 업데이트해야 합니다**. 
 - **구독자 간에 구독을 공유하지 않습니다.** 구독 혜택(개발 및 테스트용 소프트웨어, Microsoft Azure, E-Learning 등)의 전부 또는 일부를 사용하는 모든 사용자에게 구독을 할당해야 합니다. 
 
-## <a name="adminstrator-roles"></a>관리자 역할
+## <a name="administrator-roles"></a>관리자 역할
 
 볼륨 라이선스 고객을 위한 새로운 Visual Studio 구독 관리 포털에는 서로 다른 두 가지 역할이 있습니다. 이러한 역할은 현재 VLSC의 기본/통지 연락처 담당자 역할 및 구독 관리자 역할과 같습니다. 
 

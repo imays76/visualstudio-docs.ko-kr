@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 562bd68722674d7b33f9be0941d5e351d8d198bc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98371b648dc7fe18315904d4759b55701a07f7b1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757840"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251681"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin을 사용한 모바일 개발에 대해 알아보기
 
@@ -31,9 +31,9 @@ ms.locfileid: "36757840"
 
 *10~20분*
 
-1.  [Xamarin을 사용한 Visual Studio의 모바일 앱](https://visualstudio.microsoft.com/xamarin/)(visualstudio.com)에 Xamarin의 기본 특성에 대한 짧은 설명이 있습니다.
+1.  [Xamarin을 사용한 Visual Studio의 모바일 앱](https://visualstudio.microsoft.com/xamarin/)(visualstudio.com)에는 Xamarin의 기본 특성에 대한 짧은 설명이 있습니다.
 
-2.  Xamarin 전문가인 James Montemagno와 함께하는[C# 및 Visual Studio를 사용하여 플랫폼 간 모바일 앱 빌드](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (영문)(Channel9, 15분 16초). 처음 3분은 Xamarin 개요이고 코드 데모가 뒤따릅니다.
+2.  Xamarin 전문가인 James Montemagno와 함께하는 [C# 및 Visual Studio를 사용하여 플랫폼 간 모바일 앱 빌드](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015)(Channel9, 15분 16초) 처음 3분은 Xamarin 개요이고 코드 데모가 뒤따릅니다.
 
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>주요 사항: Visual Studio 및 Xamarin 환경 개요
 
@@ -56,9 +56,9 @@ iOS 앱 작업에 대한 자세한 내용은 [Visual Studio용 Xamarin.iOS 소�
 
 *10~30분*
 
-1.  [코드 공유 옵션](/xamarin/cross-platform/app-fundamentals/code-sharing/). 새 응용 프로그램의 경우 .NET Standard 라이브러리를 사용하여 코드를 공유할 수 있습니다. 데이터베이스 액세스, REST API 호출 및 이식 가능한 Xamarin 구성 요소 호출을 포함한 대부분 비즈니스 논리 코드는 .NET Standard 라이브러리에 있습니다. (이 문서의 끝에 있는 [심층 분석: Xamarin 구성 요소](#components)를 참조하세요.) 또한 Xamarin.Forms로 작성된 일반적인 UI 코드는 .NET Standard 라이브러리에 있습니다.
+1.  [코드 공유 옵션](/xamarin/cross-platform/app-fundamentals/code-sharing/) 새 응용 프로그램의 경우 .NET Standard 라이브러리를 사용하여 코드를 공유할 수 있습니다. 데이터베이스 액세스, REST API 호출 및 이식 가능한 Xamarin 구성 요소 호출을 포함한 대부분 비즈니스 논리 코드는 .NET Standard 라이브러리에 있습니다. (이 문서의 끝에 있는 [심층 분석: Xamarin 구성 요소](#components)를 참조하세요.) 또한 Xamarin.Forms로 작성된 일반적인 UI 코드는 .NET Standard 라이브러리에 있습니다.
 
-2.  (선택 사항) [사례 연구: Tasky](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky/)에서는 데이터, 데이터 액세스 및 비즈니스 계층을 구분하는 공유 코드에 대한 프로젝트 구조를 지정하는 것과 같은 전 기능 앱의 디자인 및 구조에 대한 몇 가지 모범 사례를 설명합니다.
+2.  (선택 사항) [사례 연구: Tasky](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky/)에서는 데이터, 데이터 액세스 및 비즈니스 계층을 구분하는 공유 코드에 대한 프로젝트 구조를 지정하는 것과 같은 전체 기능이 포함된 앱의 디자인 및 구조에 대한 몇 가지 모범 사례를 설명합니다.
 
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>주요 사항: 네이티브 및 Xamarin.Forms UI 계층
 
@@ -102,19 +102,19 @@ Xamarin.Forms는 모든 플랫폼에 대한 공유 UI 계층을 .NET Standard �
 
 ### <a name="microsofts-android-emulator"></a>Microsoft의 Android 에뮬레이터
 
-Visual Studio와 함께 설치되는 Microsoft의 [Visual Studio Emulator for Android](visual-studio-emulator-for-android.md)를 사용하는 것이 좋습니다.  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 비디오(영문)(Channel9, 5분 55초)에서는 개요 및 데모를 제공합니다.
+Visual Studio와 함께 설치되는 Microsoft의 [Visual Studio Emulator for Android](visual-studio-emulator-for-android.md)를 사용하는 것이 좋습니다.  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 비디오(Channel9, 5분 55초)에서는 개요 및 데모를 제공합니다.
 
 ### <a name="apples-ios-simulator"></a>Apple의 iOS 시뮬레이터
 
-자세한 내용은 [iOS 시뮬레이터 시작](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (영문)(apple.com)을 참조하세요.
+자세한 내용은 [iOS 시뮬레이터 시작](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1)(apple.com)을 참조하세요.
 
-### <a name="microsofts-windows-phone-emulator"></a>Microsoft의 Windows Phone 에뮬레이터.
+### <a name="microsofts-windows-phone-emulator"></a>Microsoft의 Windows Phone 에뮬레이터
 
 자세한 내용은 [Windows 10 Mobile용 Microsoft 에뮬레이터 테스트](/windows/uwp/debug-test-perf/test-with-the-emulator)를 읽어 보세요.
 
 <a name="components" />
 
-## <a name="deeper-dive-xamarin-components"></a>Deeper Dive: Xamarin Components
+## <a name="deeper-dive-xamarin-components"></a>심층 분석: Xamarin 구성 요소
 
 *10분*
 

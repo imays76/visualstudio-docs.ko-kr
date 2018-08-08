@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180076"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380670"
 ---
 # <a name="how-to-create-a-web-service-test"></a>방법: 웹 서비스 테스트 만들기
 
@@ -37,7 +37,7 @@ ms.locfileid: "39180076"
 
 3.  새 요청의 **Url** 속성에 **http://localhost/storecsvs/InstantOrder.asmx**와 같은 웹 서비스 이름을 입력합니다.
 
-4.  별도의 브라우저 세션을 열고 **주소** 도구 모음에 .asmx 페이지의 URL을 입력합니다. 테스트할 방법을 선택하고 SOAP 메시지를 검사합니다. SOAP 메시지에 `SOAPAction`이 있습니다.
+4.  별도의 브라우저 세션을 열고 **주소** 도구 모음에 *.asmx* 페이지의 URL을 입력합니다. 테스트할 방법을 선택하고 SOAP 메시지를 검사합니다. SOAP 메시지에 `SOAPAction`이 있습니다.
 
 5.  **웹 성능 테스트 편집기**에서 요청을 마우스 오른쪽 단추로 클릭한 다음, **머리글 추가**를 선택하여 새 머리글을 추가합니다. **이름** 속성에 `SOAPAction`을 입력합니다. **값** 속성에 `SOAPAction`에 표시되는 `"http://tempuri.org/CheckStatus"`와 같은 값을 입력합니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "39180076"
      </soap:Envelope>
      ```
 
-9. **웹 성능 테스트 편집기**로 돌아가서 **문자열 본문** 속성의 줄임표(...)를 선택합니다. 클립보드의 내용을 속성에 붙여넣습니다.
+9. **웹 성능 테스트 편집기**로 돌아가서 **문자열 본문** 속성의 줄임표 **(…)** 를 선택합니다. 클립보드의 내용을 속성에 붙여넣습니다.
 
 10. 테스트가 성공하려면 XML에서 자리 표시자 값을 유효한 값으로 바꿔야 합니다. 앞의 예제에서 `string`의 두 인스턴스와 한 `int`를 바꿨을 것입니다. 이 웹 서비스 작업은 요청한 사용자가 등록되어 있는 경우에만 완료됩니다.
 

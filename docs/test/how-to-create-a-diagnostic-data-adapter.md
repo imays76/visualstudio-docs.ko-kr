@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176982"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380894"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 
@@ -48,9 +48,9 @@ ms.locfileid: "39176982"
 
  사용자 지정 구성 편집기를 비롯한 전체 예제 진단 데이터 어댑터 프로젝트는 [진단 데이터 어댑터를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)를 참조하세요.
 
-##  <a name="CreateAdapter"></a> 진단 데이터 어댑터를 만들고 설치
+##  <a name="create-and-install-a-diagnostic-data-adapter"></a>진단 데이터 어댑터 만들기 및 설치
 
-#### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>진단 데이터 어댑터를 만들고 설치하려면
+### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>진단 데이터 어댑터를 만들고 설치하려면
 
 1.  새 클래스 라이브러리를 만듭니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "39176982"
 
 2.  어셈블리 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**을 추가합니다.
 
-    1.  솔루션 탐색기에서 **참조**를 마우스 오른쪽 단추로 클릭하고 **참조 추가** 명령을 선택합니다.
+    1.  **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
 
     2.  **.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**을 찾습니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "39176982"
 
 3.  어셈블리 **Microsoft.VisualStudio.QualityTools.Common**을 추가합니다.
 
-    1.  솔루션 탐색기에서 **참조**를 마우스 오른쪽 단추로 클릭하고 **참조 추가** 명령을 선택합니다.
+    1.  **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
 
     2.  **/.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.Common.dll**을 찾습니다.
 
@@ -224,7 +224,7 @@ ms.locfileid: "39176982"
 
      사용자 고유의 편집기를 사용하여 테스트 설정에 사용할 데이터를 수집하려면 [방법: 진단 데이터 어댑터 데이터용 사용자 지정 편집기 만들기](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)를 참조하세요.
 
-11. 테스트가 완료될 때 테스트 설정에 구성된 항목을 기반으로 로그 파일을 수집하려면 `App.config` 파일을 만든 후 이를 솔루션에 추가해야 합니다. 이 파일은 다음과 같은 형식으로 만들며, 이때 진단 데이터 어댑터를 식별할 수 있도록 진단 데이터 어댑터의 URL을 포함해야 합니다. 이 예에서 "Company/ProductName/Version"은 실제 값으로 대체합니다.
+11. 테스트가 완료될 때 테스트 설정에 구성된 항목을 기반으로 로그 파일을 수집하려면 *App.config* 파일을 만들고 솔루션에 추가해야 합니다. 이 파일은 다음과 같은 형식으로 만들며, 이때 진단 데이터 어댑터를 식별할 수 있도록 진단 데이터 어댑터의 URL을 포함해야 합니다. 이 예에서 "Company/ProductName/Version"은 실제 값으로 대체합니다.
 
     > [!NOTE]
     > 진단 데이터 어댑터의 정보를 구성할 필요가 없는 경우에는 구성 파일을 만들지 않아도 됩니다.
@@ -255,7 +255,7 @@ ms.locfileid: "39176982"
     > [!NOTE]
     > 기본 구성 요소에는 필요한 모든 데이터가 포함될 수 있습니다. 테스트 설정에서 진단 데이터 어댑터를 구성하지 않은 경우에는 진단 데이터 어댑터가 실행될 때 기본 데이터가 전달됩니다. `<DefaultConfigurations>` 섹션에 추가하는 XML은 선언된 스키마의 일부가 될 수 없으므로 XML 오류가 생성되더라도 무시하면 됩니다.
     >
-    > 설치 디렉터리에 따라 **Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors** 경로에는 추가 구성 파일 예제가 있습니다.
+    > 설치 디렉터리에 따라 *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors* 경로에는 추가 구성 파일 예제가 있습니다.
 
      테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)을 참조하세요.
 

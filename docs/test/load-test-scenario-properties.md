@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6f18376637cf7156fc0165b0360281e9415b7c80
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e79546c9961af6bf87eb9e7f3b90ebb96150b978
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176790"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382238"
 ---
 # <a name="load-test-scenario-properties"></a>부하 테스트 시나리오 속성
 
@@ -32,10 +32,10 @@ ms.locfileid: "39176790"
 
 |속성|정의|
 |--------------|----------------|
-|**브라우저 조합**|부하 테스트의 웹 브라우저 조합을 지정합니다. 여러 웹 브라우저 종류와 해당 부하 분포를 지정할 수 있습니다.<br /><br />줄임표(...) 단추를 선택하여 [브라우저 조합 편집] 대화 상자를 열고 **추가** 및 **제거**를 사용하여 부하 테스트의 웹 브라우저 종류를 선택합니다.<br /><br />자세한 내용은 [웹 브라우저 형식 지정](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)을 참조하세요.|
-|**네트워크 조합**|부하 테스트의 네트워크 조합을 지정합니다. 포함할 네트워크 형식과 해당 부하 분포를 지정할 수 있습니다.<br /><br />줄임표(…) 단추를 선택하여 **네트워크 조합 편집** 대화 상자를 열고 **추가** 및 **제거**를 사용하여 부하 테스트의 네트워크 형식을 선택합니다.<br /><br />자세한 내용은 [Virtual Network 형식 지정](../test/specify-virtual-network-types-in-a-load-test-scenario.md)을 참조하세요.|
-|**테스트 조합**|부하 테스트의 웹 성능 및 단위 테스트 조합을 지정합니다. 포함할 테스트와 해당 부하 분포를 지정할 수 있습니다.<br /><br />줄임표(…) 단추를 선택하여 **테스트 조합 편집** 대화 상자를 열고 **추가** 및 **제거**를 사용하여 부하 테스트에 포함할 테스트를 선택합니다.<br /><br />자세한 내용은 [부하 테스트 시나리오에 대한 테스트 조합 편집](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)을 참조하세요.|
-|**테스트 조합 형식**|부하 테스트에 대한 테스트 조합 모델을 지정합니다.<br /><br />줄임표(…) 단추를 선택하여 **테스트 조합 편집** 대화 상자를 열고 **테스트 조합 모델** 아래의 드롭다운을 사용하여 부하 테스트에 사용할 테스트 조합 모델을 선택합니다.<br /><br />자세한 내용은 [텍스트 조합 모델 편집](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)을 참조하세요.|
+|**브라우저 조합**|부하 테스트의 웹 브라우저 조합을 지정합니다. 여러 웹 브라우저 종류와 해당 부하 분포를 지정할 수 있습니다.<br /><br />줄임표 **(…)** 단추를 선택하여 **브라우저 조합 편집** 대화 상자를 열고 **추가** 및 **제거**를 사용하여 부하 테스트의 웹 브라우저 종류를 선택합니다.<br /><br />자세한 내용은 [웹 브라우저 형식 지정](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)을 참조하세요.|
+|**네트워크 조합**|부하 테스트의 네트워크 조합을 지정합니다. 포함할 네트워크 형식과 해당 부하 분포를 지정할 수 있습니다.<br /><br />줄임표 **(…)** 단추를 선택하여 **네트워크 조합 편집** 대화 상자를 열고 **추가** 및 **제거**를 사용하여 부하 테스트의 네트워크 형식을 선택합니다.<br /><br />자세한 내용은 [가상 네트워크 형식 지정](../test/specify-virtual-network-types-in-a-load-test-scenario.md)을 참조하세요.|
+|**테스트 조합**|부하 테스트의 웹 성능 및 단위 테스트 조합을 지정합니다. 포함할 테스트와 해당 부하 분포를 지정할 수 있습니다.<br /><br />줄임표 **(…)** 단추를 선택하여 **테스트 조합 편집** 대화 상자를 열고 **추가** 및 **제거**를 사용하여 부하 테스트의 테스트를 선택합니다.<br /><br />자세한 내용은 [부하 테스트 시나리오에 대한 테스트 조합 편집](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)을 참조하세요.|
+|**테스트 조합 형식**|부하 테스트에 대한 테스트 조합 모델을 지정합니다.<br /><br />줄임표 **(…)** 단추를 선택하여 **테스트 조합 편집** 대화 상자를 열고 **테스트 조합 모델** 아래의 드롭다운을 사용하여 부하 테스트에 사용할 테스트 조합 모델을 선택합니다.<br /><br />자세한 내용은 [텍스트 조합 모델 편집](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)을 참조하세요.|
 
 ## <a name="options"></a>옵션
 

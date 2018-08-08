@@ -12,14 +12,14 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d6acdd6433c090472e88d9973f6b28d80b8c2f8d
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454572"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251813"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
+# <a name="install-and-configure-tools-to-build-using-ios"></a>iOS를 사용하여 빌드할 도구 설치 및 구성
 
 플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버깅하고 iOS 시뮬레이터 또는 iOS 장치에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 코드를 빌드하고 원격으로 실행해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)를 설정 및 구성해야 합니다. 원격 에이전트는 Visual Studio의 빌드 요청을 처리하고 Mac에 연결된 iOS 장치 또는 Mac의 iOS 시뮬레이터에서 앱을 실행합니다.
 
@@ -50,11 +50,11 @@ iOS를 사용하여 빌드하는 도구를 설치한 경우 Visual Studio 및 Ma
 
 - Xcode에서 구성된 iOS 서명 ID
 
-   iOS 서명 ID를 얻는 방법에 대한 자세한 내용은 iOS 개발자 라이브러리에서 [서명 ID 및 인증서 유지 관리](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) 를 참조하세요. Xcode에서 서명 ID를 보거나 설정하려면 **Xcode** 메뉴를 열고 **기본 설정**을 선택합니다. **계정** 을 선택하고 Apple ID를 선택한 다음 **세부 정보 보기** 단추를 선택합니다.
+   iOS 서명 ID를 얻는 방법에 대한 자세한 내용은 iOS 개발자 라이브러리에서 [서명 ID 및 인증서 유지 관리](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html)를 참조하세요. Xcode에서 서명 ID를 보거나 설정하려면 **Xcode** 메뉴를 열고 **기본 설정**을 선택합니다. **계정** 을 선택하고 Apple ID를 선택한 다음 **세부 정보 보기** 단추를 선택합니다.
 
 - 개발에 iOS 장치를 사용하는 경우 장치에 대해 Xcode에서 구성된 프로비저닝 프로필
 
-   프로비저닝 프로필을 만드는 방법에 대한 자세한 내용은 iOS 개발자 라이브러리에서 [회원 센터를 사용하여 프로비저닝 프로필 만들기](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) 를 참조하세요.
+   프로비전 프로필을 만드는 방법에 대한 자세한 내용은 iOS 개발자 라이브러리에서 [멤버 센터를 사용하여 프로비전 프로필 만들기](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24)를 참조하세요.
 
 - [Node.js](https://nodejs.org/)
 
@@ -70,7 +70,7 @@ iOS를 사용하여 빌드하는 도구를 설치한 경우 Visual Studio 및 Ma
 
 플랫폼 간 모바일 개발용 Visual C++를 설치하는 경우 Visual Studio는 Mac에서 실행되는 원격 에이전트인 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)와 통신하여 파일을 전송하고, iOS 앱을 빌드 및 실행하고, 디버깅 명령을 보낼 수 있습니다.
 
-원격 에이전트를 설치하기 전에 [필수 조건](#Prerequisites) 을 충족하고 [플랫폼 간 모바일 개발용 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)를 설치했는지 확인합니다.
+원격 에이전트를 설치하기 전에 [필수 조건](#Prerequisites)을 충족하고 [플랫폼 간 모바일 개발용 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)를 설치했는지 확인합니다.
 
 ###  <a name="DownloadInstall"></a> 원격 에이전트를 다운로드하여 설치하려면
 
@@ -125,7 +125,7 @@ Visual Studio에서 호스트 이름을 사용하여 원격 에이전트를 구�
 
 #### <a name="to-stop-the-remote-agent"></a>원격 에이전트를 중지하려면
 
-- vcremote가 실행되는 터미널 창에서 `Control+C`를 입력합니다.
+- vcremote가 실행되는 터미널 창에서 **Ctr**+**C**를 입력합니다.
 
 ##  <a name="ConfigureVS"></a> Visual Studio에서 원격 에이전트 구성
 
@@ -158,7 +158,7 @@ Visual Studio에서 원격 에이전트에 연결하려면 Visual Studio 옵션�
 
    연결이 성공하지 못한 경우 [Start the remote agent](#Start)의 단계에 따라 원격 에이전트가 실행되고 있는지 확인합니다. 원격 에이전트 PIN이 생성된 이후 너무 많은 시간이 경과한 경우 Mac에서 [Generate a new security PIN](#GeneratePIN) 의 단계를 따른 후 다시 시도합니다. Mac의 호스트 이름을 사용하는 경우 **호스트 이름** 필드에 대신 IP 주소를 사용하여 시도합니다.
 
-1. **원격 루트** 필드의 폴더 이름을 업데이트하여 Mac의 홈(~) 디렉터리에서 원격 에이전트에 사용되는 폴더를 지정합니다. 기본적으로 원격 에이전트는 /Users/`username`/vcremote를 원격 루트로 사용합니다.
+1. **원격 루트** 필드의 폴더 이름을 업데이트하여 Mac의 홈(*~*) 디렉터리에서 원격 에이전트에 사용되는 폴더를 지정합니다. 기본적으로 원격 에이전트는 /Users/`username`/vcremote를 원격 루트로 사용합니다.
 
 1. **확인** 을 선택하여 원격 연결 설정을 저장합니다.
 
@@ -220,7 +220,7 @@ Visual Studio는 사용할 때마다 동일한 정보를 사용하여 Mac의 원
 
    `vcremote --serverDir directory_path`
 
-   여기서 *directory_path* 는 로그 파일, 빌드 및 서버 인증서를 배치할 Mac의 위치입니다. 기본적으로 이 위치는 /Users/*사용자 이름*/vcremote입니다. 빌드는 이 위치에 빌드 번호를 기준으로 구성됩니다.
+   여기서 *directory_path* 는 로그 파일, 빌드 및 서버 인증서를 배치할 Mac의 위치입니다. 기본적으로 이 위치는 /Users/*/Users/\<사용자 이름>/vcremote*입니다. 빌드는 이 위치에 빌드 번호를 기준으로 구성됩니다.
 
 - 백그라운드 프로세스를 사용하여 `stdout` 및 `stderr` 을 server.log라는 파일에 캡처하려면 다음을 입력합니다.
 
@@ -236,4 +236,4 @@ Visual Studio는 사용할 때마다 동일한 정보를 사용하여 Mac의 원
 
 ## <a name="see-also"></a>참고 항목
 
-- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

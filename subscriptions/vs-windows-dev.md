@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Windows 개발자 계정에 대�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da1f893813341f27efbbdb6e80b9243c43de9625
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297558"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382453"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Windows 개발자 계정
 
@@ -24,7 +24,7 @@ ms.locfileid: "36297558"
 
 Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정을 설정하거나 로그인해야 합니다.
 
-이 프로세스에 대해 “개인” 브라우저 창을 만드는 것이 좋습니다.  예를 들어 Google 크롬에서는 새 “incongnito” 창을 만듭니다.  Internet Explorer에서는 새 “InPRivate” 창을 만듭니다.
+이 프로세스에 대해 “개인” 브라우저 창을 만드는 것이 좋습니다.  예를 들어 Google 크롬에서는 새 “incongnito” 창을 만듭니다.  Internet Explorer에서는 새 "InPrivate" 창을 만듭니다.
 
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 

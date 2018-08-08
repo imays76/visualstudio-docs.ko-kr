@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: eebefa7b4033de5acec313e241d13cddab7120fa
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945486"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380452"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio에서 Boost.Test for C++를 사용하는 방법
 
@@ -42,7 +42,7 @@ Boost.Test에는 [Boost](http://www.boost.org/)가 필요합니다! Boost가 설
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>항목 템플릿을 추가합니다(Visual Studio 2017 버전 15.6 이상).
 
-1. 테스트에 대한 .cpp 파일을 만들려면 **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **새 항목 추가**를 선택합니다.
+1. 테스트하기 위해 *.cpp* 파일을 만들려면 **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **새 항목 추가**를 선택합니다.
 
    ![Boost.Test 항목 템플릿](media/boost_test_item_template.png)
 
@@ -59,7 +59,8 @@ Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 
 1. 왼쪽 창에서 **Visual C++** > **Windows 데스크톱**을 선택한 다음 **Windows 콘솔 응용 프로그램** 템플릿을 선택합니다.
 
 1. 프로젝트 이름을 지정하고 **확인**을 선택합니다.
-1. .cpp 파일에서 `main` 함수를 삭제합니다.
+
+1. *.cpp* 파일에서 `main` 함수를 삭제합니다.
 
 1. Boost.Test의 단일 헤더 또는 동적 라이브러리 버전을 사용하는 경우 [include 지시문 추가](#add-include-directives)로 이동합니다. 정적 라이브러리 버전을 사용하는 경우 일부 추가 구성을 수행해야 합니다.
 
@@ -74,19 +75,19 @@ Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-   c. \*.vcxproj 파일을 저장하고 닫은 후 프로젝트를 다시 로드합니다.
+   c. *\*.vcxproj* 파일을 저장하고 닫은 다음, 프로젝트를 다시 로드합니다.
 
    d. **속성 페이지**를 열려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
    d. **C/C++** > **코드 생성**을 확장한 후 **런타임 라이브러리**를 선택합니다. 디버그 정적 런타임 라이브러리에 해당하는 **/MTd** 또는 릴리스 정적 런타임 라이브러리에 해당하는 **/MT**를 선택합니다.
 
-   f. **링커 > 시스템**을 확장합니다. **하위 시스템**이 **콘솔**로 설정되었는지 확인합니다.
+   f. **링커** > **시스템**을 확장합니다. **하위 시스템**이 **콘솔**로 설정되었는지 확인합니다.
 
    g. **확인**을 선택하여 속성 페이지를 닫습니다.
 
 ## <a name="add-include-directives"></a>include 지시문 추가
 
-1. .cpp 테스트 파일에서 필요한 `#include` 지시문을 추가하여 프로그램의 형식과 함수를 테스트 코드에 표시되게 합니다. 일반적으로 프로그램은 폴더 계층 구조에서 한 수준 위에 있습니다. `#include "../"`를 입력하면 IntelliSense 창이 표시되어 헤더 파일에 대한 전체 경로를 선택할 수 있습니다.
+1. *.cpp* 테스트 파일에서 필요한 `#include` 지시문을 추가하여 프로그램의 형식과 함수를 테스트 코드에 표시되게 합니다. 일반적으로 프로그램은 폴더 계층 구조에서 한 수준 위에 있습니다. `#include "../"`를 입력하면 IntelliSense 창이 표시되어 헤더 파일에 대한 전체 경로를 선택할 수 있습니다.
 
    ![#include 지시문 추가](media/cpp-gtest-includes.png)
 
@@ -124,7 +125,9 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>테스트 작성 및 실행
+
 이제 Boost Test를 작성하고 실행할 준비가 되었습니다. 테스트 매크로에 대한 내용은 [Boost Test 라이브러리 설명서](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html)를 참조하세요. **테스트 탐색기**를 사용한 테스트 검색, 실행 및 그룹화에 대한 내용은 [테스트 탐색기를 사용하여 단위 테스트 실행](run-unit-tests-with-test-explorer.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
-[C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)
+
+- [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)

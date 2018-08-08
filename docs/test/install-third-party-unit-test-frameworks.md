@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0994b226a80385e381fa7b738c0194ec393d87a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844697"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379640"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>타사 단위 테스트 프레임워크 설치
 
@@ -44,7 +44,7 @@ Visual Studio 확장 관리자 또는 Visual Studio Marketplace를 사용하여 
 
 2. **찾기** 상자에 프레임워크 이름을 입력합니다.
 
-3. 결과 목록에서 프레임워크를 선택하여 해당 도구의 Visual Studio Marketplace 페이지로 이동합니다.
+3. 결과 목록에서 프레임워크를 선택하여 해당 도구의 **Visual Studio Marketplace** 페이지로 이동합니다.
 
 다른 테스트 도구와 프레임워크 목록을 찾아보려면:
 
@@ -54,7 +54,7 @@ Visual Studio 확장 관리자 또는 Visual Studio Marketplace를 사용하여 
 
 3. **범주** 목록(**표시 중**으로 레이블 지정됨)에서 **도구** 노드를 확장하고 **테스트**를 선택합니다.
 
-4. 결과 목록에서 프레임워크를 선택하여 해당 도구의 Visual Studio Marketplace 페이지로 이동합니다.
+4. 결과 목록에서 프레임워크를 선택하여 해당 도구의 **Visual Studio Marketplace** 페이지로 이동합니다.
 
 ## <a name="update-to-the-latest-test-adapters"></a>최신 테스트 어댑터로 업데이트
 

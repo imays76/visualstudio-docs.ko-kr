@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e1eb6a5218f9d9ea7c853733690922846443ed4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976743"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380360"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리
 
 부하 테스트를 실행할 때 부하 테스트 실행 도중 수집된 정보는 *부하 테스트 결과 리포지토리*라는 SQL 데이터베이스에 저장될 수 있습니다. 부하 테스트 결과 리포지토리에는 성능 카운터 데이터와 기록된 오류에 대한 정보가 들어 있습니다. 결과 리포지토리 데이터베이스는 컨트롤러용 설치 프로그램에서 만들어지거나 부하 테스트를 처음으로 로컬에서 실행할 때 자동으로 만들어집니다. 부하 테스트를 로컬로 실행할 때 부하 테스트 스키마가 없으면 데이터베이스가 자동으로 만들어집니다.
 
- 다른 서버를 사용하도록 컨트롤러의 결과 리포지토리 연결 문자열을 수정하는 경우 새 서버에서 loadtestresultsrepository.sql 스크립트를 실행하여 스키마를 만들어야 합니다.
+ 다른 서버를 사용하도록 컨트롤러의 결과 리포지토리 연결 문자열을 수정하는 경우 새 서버에서 *loadtestresultsrepository.sql* 스크립트를 실행하여 스키마를 만들어야 합니다.
 
  Visual Studio Enterprise에서는 기술을 기반으로 일반적인 성능 카운터를 수집하는 명명된 카운터 집합을 제공합니다. 이러한 집합은 IIS 서버, ASP.NET 서버 또는 SQL 서버를 분석할 때 유용합니다. 카운터 집합으로 수집된 모든 데이터는 부하 테스트 결과 리포지토리에 저장됩니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "31976743"
 
  [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- 부하 테스트 분석기를 사용하여 실행 중인 부하 테스트와 완료된 부하 테스트 모두의 결과를 볼 수 있습니다.
+ **부하 테스트 분석기**를 사용하여 실행 중인 부하 테스트와 완료된 부하 테스트 모두의 결과를 볼 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

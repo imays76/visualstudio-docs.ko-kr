@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235445"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341374"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -34,7 +34,7 @@ Visual Studio에는 다음 C++ 테스트 기능이 포함되어 있으며 추가
 
 **Visual Studio 2017 버전 15.5**
 
-- **Google Test 어댑터**는 **C++를 통한 데스크톱 개발** 워크로드의 기본 구성 요소로 포함되어 있습니다. **솔루션 탐색기**의 **새 프로젝트 추가** 바로 가기 메뉴에서 솔루션에 추가하고 **도구 | 옵션**을 통해 옵션에 추가할 수 있는 프로젝트 템플릿이 있습니다. 자세한 내용은 [방법: Visual Studio에서 Google Test 사용](how-to-use-google-test-for-cpp.md)을 참조하세요.
+- **Google Test 어댑터**는 **C++를 통한 데스크톱 개발** 워크로드의 기본 구성 요소로 포함되어 있습니다. **솔루션 탐색기**의 **새 프로젝트 추가** 바로 가기 메뉴를 통해 솔루션에 추가할 수 있는 프로젝트 템플릿 및 **도구** > **옵션**을 통해 구성할 수 있는 옵션이 있습니다. 자세한 내용은 [방법: Visual Studio에서 Google Test 사용](how-to-use-google-test-for-cpp.md)을 참조하세요.
 
 - **Boost.Test**는 **C++를 통한 데스크톱 개발** 워크로드의 기본 구성 요소로 포함되어 있습니다. **테스트 탐색기**와 통합되지만 현재는 프로젝트 템플릿을 갖지 않으므로 수동으로 구성해야 합니다. 자세한 내용은 [방법: Visual Studio에서 Boost.Test 사용](how-to-use-boost-test-for-cpp.md)을 참조하세요.
 
@@ -50,28 +50,28 @@ Google Test 어댑터와 Boost.Test 어댑터 확장은 Visual Studio Marketplac
 
 ### <a name="create-a-test-project"></a>테스트 프로젝트 만들기
 
-테스트하려는 코드와 동일한 솔루션 안에 있는 하나 이상의 프로젝트 안에서 테스트를 정의하여 실행합니다. 기존 솔루션에 새 테스트 프로젝트를 추가하려면 **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가 | 새 프로젝틀**를 선택합니다. 왼쪽 창에서 **Visual C++ 테스트**를 선택하고 가운데 창에서 프로젝트 형식 중 하나를 선택합니다. 다음 그림에서는 **C++를 통한 데스크톱 개발** 워크로드가 설치되었을 때 사용할 수 있는 테스트 프로젝트를 보여 줍니다.
+테스트하려는 코드와 동일한 솔루션 안에 있는 하나 이상의 프로젝트 안에서 테스트를 정의하여 실행합니다. 기존 솔루션에 새 테스트 프로젝트를 추가하려면 **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다. 왼쪽 창에서 **Visual C++ 테스트**를 선택하고 가운데 창에서 프로젝트 형식 중 하나를 선택합니다. 다음 그림에서는 **C++를 통한 데스크톱 개발** 워크로드가 설치되었을 때 사용할 수 있는 테스트 프로젝트를 보여 줍니다.
 
 ![C++ 테스트 프로젝트](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>솔루션의 다른 프로젝트에 대한 참조 만들기
 
-테스트할 프로젝트에서 테스트 코드가 함수에 액세스할 수 있게 하려면 테스트 프로젝트에서 프로젝트에 대한 참조를 추가합니다. **솔루션 탐색기**에서 테스트 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 | 참조**를 선택합니다. 그런 다음 대화 상자에서 테스트할 프로젝트를 선택합니다.
+테스트할 프로젝트에서 테스트 코드가 함수에 액세스할 수 있게 하려면 테스트 프로젝트에서 프로젝트에 대한 참조를 추가합니다. **솔루션 탐색기**에서 테스트 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **참조**를 선택합니다. 그런 다음 대화 상자에서 테스트할 프로젝트를 선택합니다.
 
 ![참조 추가](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>헤더 파일에 대해 #include 지시문 추가
 
-이제 unit test .cpp 파일에서 테스트할 형식과 함수를 선언하는 모든 헤더 파일에 대해 `#include` 지시문을 추가합니다. `#include "`를 입력한 다음, IntelliSense가 선택할 수 있게 활성화됩니다. 다른 헤더에 대해 반복합니다.
+다음으로, 단위 테스트 *.cpp* 파일에서 테스트할 형식과 함수를 선언하는 모든 헤더 파일에 대해 `#include` 지시문을 추가합니다. `#include "`를 입력한 다음, IntelliSense가 선택할 수 있게 활성화됩니다. 다른 헤더에 대해 반복합니다.
 
 ![include 지시문 추가](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>테스트 메서드 작성
 
 > [!NOTE]
-> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 이 내용은 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)에서 설명합니다. Google Test 문서는 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
+> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 이 내용은 [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)에서 설명합니다. Google Test 설명서는 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
 
-테스트 프로젝트의 .cpp 파일에는 테스트 코드 작성 방법의 예제로 정의된 스텁 클래스와 메서드가 있습니다. 서명은 메소드를 테스트 탐색기 창에서 검색 가능하게 하는 TEST_CLASS 및 TEST_METHOD 매크로를 사용합니다.
+테스트 프로젝트의 *.cpp* 파일에는 테스트 코드 작성 방법의 예제로 정의된 스텁 클래스와 메서드가 있습니다. 서명은 메소드를 **테스트 탐색기** 창에서 검색 가능하게 하는 TEST_CLASS 및 TEST_METHOD 매크로를 사용합니다.
 
 ![include 지시문 추가](media/cpp-write-test-methods.png)
 
@@ -102,7 +102,7 @@ TEST_METHOD는 void를 반환합니다. 테스트 결과를 내려면 `Assert` �
 
 1. 창에 일부 테스트가 표시되지 않는 경우 **솔루션 탐색기**에서 노드를 마우스 오른쪽 단추로 클릭하고 **빌드** 또는 **다시 빌드**를 선택하여 테스트 프로젝트를 빌드합니다. 
 
-1. 테스트 탐색기에서 **모두 실행**을 선택하거나 실행하려는 특정 테스트를 선택합니다. 테스트를 마우스 오른쪽 단추로 클릭하면 중단점을 사용하는 디버그 모드에서 실행 등, 다른 옵션이 표시됩니다. 모든 테스트를 실행한 후에는 창에 어떤 테스트에 통과했고 어떤 테스트에 실패했는지 표시됩니다.
+1. **테스트 탐색기**에서 **모두 실행**을 선택하거나 실행하려는 특정 테스트를 선택합니다. 테스트를 마우스 오른쪽 단추로 클릭하면 중단점을 사용하는 디버그 모드에서 실행 등, 다른 옵션이 표시됩니다. 모든 테스트를 실행한 후에는 창에 어떤 테스트에 통과했고 어떤 테스트에 실패했는지 표시됩니다.
 
 ![테스트 실행 후 테스트 탐색기](media/cpp-test-explorer-passed.png)
 

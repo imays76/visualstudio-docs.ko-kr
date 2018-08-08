@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8359aa76dc2f62afb63f6a36984492210d9aeeff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178321"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380016"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>방법: 진단 데이터 어댑터에 대한 시간 제한 방지
 
@@ -31,19 +31,19 @@ ms.locfileid: "39178321"
 
 이런 경우 Microsoft Test Manager의 구성 파일 또는 제한 시간을 초과하는 테스트 에이전트의 구성 파일을 업데이트하여 제한 시간을 늘릴 수 있습니다.
 
-Microsoft Test Manager의 경우 구성 파일은 **mtm.exe.config**입니다. 이 파일은 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 디렉터리에 있습니다.
+Microsoft Test Manager의 경우 구성 파일은 *mtm.exe.config*입니다. 이 파일은 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 디렉터리에 있습니다.
 
 테스트 에이전트를 업데이트하려면 테스트 에이전트 컴퓨터에서 다음 구성 파일을 업데이트해야 합니다. 이러한 파일은 모두 테스트 에이전트 컴퓨터의 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 디렉터리에 있습니다.
 
--   QTAgent.exe.config
+-   *QTAgent.exe.config*
 
--   QTAgent32.exe.config
+-   *QTAgent32.exe.config*
 
--   QTDCAgent.exe.config
+-   *QTDCAgent.exe.config*
 
--   QTDCAgent32.exe.config
+-   *QTDCAgent32.exe.config*
 
-환경에서 수동 테스트를 실행하고 데이터를 수집하는 경우 버그가 만들어지거나 테스트 사례가 완료되면 진단 데이터 어댑터에서 수집된 모든 데이터가 수동 테스트를 실행하는 컴퓨터로 전송됩니다. 수집된 데이터의 양이 많거나 네트워크 연결 속도가 느린 경우에는 기본값인 60초보다 더 오랜 시간이 걸릴 수 있습니다. 예를 들어 많은 프로세스에 대한 IntelliTrace 이벤트와 호출 정보를 수집하도록 IntelliTrace 어댑터를 구성한 경우 데이터 전송 시간이 기본 제한 시간을 초과할 수 있습니다. 이 값을 늘리려면 다음 절차에 따라 **mtm.exe.config**를 업데이트합니다.
+환경에서 수동 테스트를 실행하고 데이터를 수집하는 경우 버그가 만들어지거나 테스트 사례가 완료되면 진단 데이터 어댑터에서 수집된 모든 데이터가 수동 테스트를 실행하는 컴퓨터로 전송됩니다. 수집된 데이터의 양이 많거나 네트워크 연결 속도가 느린 경우에는 기본값인 60초보다 더 오랜 시간이 걸릴 수 있습니다. 예를 들어 많은 프로세스에 대한 IntelliTrace 이벤트와 호출 정보를 수집하도록 IntelliTrace 어댑터를 구성한 경우 데이터 전송 시간이 기본 제한 시간을 초과할 수 있습니다. 이 값을 늘리려면 다음 절차에 따라 *mtm.exe.config*를 업데이트합니다.
 
 Test Runner 작업 또는 테스트 에이전트에서 제한 시간을 초과하면 오류 메시지가 표시됩니다. 테스트 에이전트의 오류 메시지에는 시간을 초과한 테스트 에이전트 컴퓨터에 대한 정보가 포함됩니다. 표시된 오류 메시지에 따라 다음 지침을 사용하여 구성 파일을 업데이트합니다.
 
@@ -76,11 +76,11 @@ Test Runner 작업 또는 테스트 에이전트에서 제한 시간을 초과�
         <!-- End: Test execution settings -->
     ```
 
-5.  이벤트가 완료될 때까지 진단 데이터 어댑터가 대기하는 시간을 늘리려면 **DataCollectorEventTimeoutInSeconds** 키의 값을 늘립니다.
+5.  이벤트가 완료될 때까지 진단 데이터 어댑터가 대기하는 시간을 늘리려면 **DataCollectorEventTimeoutInSeconds** 키의 값을 증가시킵니다.
 
 6.  Test Runner 작업에 대한 제한 시간 오류 메시지가 표시된 경우에는 **RunOperationTimeoutInSeconds** 키의 값을 늘려야 합니다.
 
-7.  버그에 대해 수집된 데이터의 전송 제한 시간 또는 테스트가 테스트를 실행하는 컴퓨터에서 종료되는 제한 시간을 늘리려면 파일의 appSettings 섹션에서 **mtm.exe.config**에 다음 제한 시간을 추가해야 합니다.
+7.  버그에 대해 수집된 데이터의 전송 제한 시간 또는 테스트가 테스트를 실행하는 컴퓨터에서 종료되는 제한 시간을 늘리려면 파일의 appSettings 섹션에서 *mtm.exe.config*에 다음 제한 시간을 추가해야 합니다.
 
     ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->

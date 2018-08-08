@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9fc4b9df68890caee9d8f79b8ecf2080c408db2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7208d3086450604678b1fce78d4f6784bd38d50f
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065597"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251623"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>플랫폼 간 모바일 개발 예제
 플랫폼 간 모바일 개발용 Visual C++에 의해 설치된 템플릿 중 일부는 학습에 사용할 수 전체 예제를 생성합니다. 또한 Windows 개발자 센터에는 다운로드하여 Visual Studio에서 사용해 볼 수 있는 여러 가지 예제 응용 프로그램이 있습니다.  
@@ -52,4 +52,4 @@ ms.locfileid: "31065597"
   
  Visual Studio에서 예제 중 하나를 열려면 zip 파일을 다운로드하고 탐색기에서 다운로드한 파일의 **속성** 페이지를 엽니다. **차단 해제** 단추를 선택한 다음 **확인**을 선택합니다. 편리한 위치에 zip 파일의 내용을 추출한 다음 추출된 샘플에서 C++ 폴더를 열고 솔루션 파일을 엽니다.  
   
- 샘플을 빌드하려면 F7 키를 누르거나 메뉴 모음에서 **빌드**, **솔루션 빌드**를 선택합니다.
+ 샘플을 빌드하려면 **F7** 키를 누르거나 메뉴 모음에서 **빌드**, **솔루션 빌드**를 선택합니다.

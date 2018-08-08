@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c46b5fffb2cde0298c252c7317f82654ce6defdc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154224"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252468"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
 
 ## <a name="install-visual-studio"></a>Visual Studio 설치
 
-### <a name="unity-bundled-installation"></a>Unity Bundled 설치
+### <a name="unity-bundled-installation"></a>Unity 번들 설치
 
 Unity 2018.1부터 Visual Studio는 기본 Unity용 C# 스크립트 편집기이며, Unity 다운로드 도우미와 Unity Hub 설치 도구에 포함되어 있습니다.
 
@@ -77,7 +77,7 @@ Unity 2018.1부터 Visual Studio는 Unity의 기본 외부 스크립트 편집�
 
 1. **외부 스크립트 편집기** 목록에서 Visual Studio를 선택한 후 **편집기 연결** 확인란이 선택되어 있는지 확인합니다.
 
-1. [기본 설정] 대화 상자를 닫아 구성 프로세스를 완료합니다.
+1. **기본 설정** 대화 상자를 닫아 구성 프로세스를 완료합니다.
 
 ## <a name="support-for-older-versions"></a>이전 버전 지원
 
@@ -93,4 +93,4 @@ Unity 2018.1부터 Visual Studio는 Unity의 기본 외부 스크립트 편집�
 
 ## <a name="next-steps"></a>다음 단계
 
- Visual Studio에서 Unity 프로젝트를 작업하고 디버그하는 방법을 알아보려면 [Using Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md)을 참조하세요.
+ Visual Studio에서 Unity 프로젝트를 작업하고 디버그하는 방법을 알아보려면 [Visual Studio Tools for Unity 사용](../cross-platform/using-visual-studio-tools-for-unity.md)을 참조하세요.

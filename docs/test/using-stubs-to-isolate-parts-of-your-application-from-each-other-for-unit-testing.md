@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 68ee12b330d6b82307de7d590c09259a559716b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ee4fbcec25bdfa454f4c009f4d676a5291b7289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978364"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382570"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 단위 테스트를 위한 응용 프로그램의 여러 부분을 서로 격리
 
@@ -31,7 +31,7 @@ Fakes의 개요 및 빠른 시작 가이드를 보려면 [Microsoft Fakes를 사
 
 ![Real 및 Stub 클래스는 하나의 인터페이스를 따릅니다.](../test/media/fakesinterfaces.png)
 
-스텁은 사용자가 이러한 방식으로 코드를 구성할 수 있어야 사용 가능하므로 일반적으로 응용 프로그램의 다른 부분에서 한 부분을 격리하는 데 사용합니다. System.dll과 같이 사용자가 제어하지 않는 다른 어셈블리에서 일부를 격리하려면 일반적으로 shim을 사용합니다. [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
+스텁은 사용자가 이러한 방식으로 코드를 구성할 수 있어야 사용 가능하므로 일반적으로 응용 프로그램의 다른 부분에서 한 부분을 격리하는 데 사용합니다. *System.dll*과 같이 사용자가 제어하지 않는 다른 어셈블리에서 일부를 격리하려면 일반적으로 shim을 사용합니다. [shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
 
 ## <a name="how-to-use-stubs"></a>스텁 사용 방법
 
@@ -149,9 +149,9 @@ analyzer = new StockAnalyzer(new StockFeed());
 
 #### <a name="add-a-fakes-assembly"></a>Fakes 어셈블리 추가
 
-1. 솔루션 탐색기에서 단위 테스트 프로젝트의 **참조**를 확장합니다.
+1. **솔루션 탐색기**에서 단위 테스트 프로젝트의 **참조**를 확장합니다.
 
-   Visual Basic에서 작업하는 경우 참조 목록을 보려면 솔루션 탐색기 도구 모음에서 **모든 파일 표시**를 선택해야 합니다.
+   Visual Basic에서 작업하는 경우 **참조** 노드를 보기 위해 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시**를 선택합니다.
 
 2. 스텁을 만들 인터페이스 정의가 포함된 어셈블리를 선택합니다.
 
@@ -466,4 +466,4 @@ StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 
 ## <a name="see-also"></a>참고 항목
 
-- [Microsoft Fakes를 사용하여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)
+- [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)

@@ -10,14 +10,14 @@ ms.author: mamcle
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4478b711581e332c8da980ddac9fd4d369d8e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2997f5f7daf04bbde467ff40c26103a0310720c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31070014"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251831"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
+# <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터 문제 해결
 이 항목에는 Android용 Visual Studio 에뮬레이터를 사용하는 동안 발생할 수 있는 문제를 해결하는 데 도움이 되는 정보가 들어 있습니다.  
   
 > [!WARNING]
@@ -62,7 +62,7 @@ ms.locfileid: "31070014"
 ##  <a name="BeforeYouStart"></a> 시작하기 전에  
  문제 해결을 시작하기 전에 다음 항목을 검토하는 것이 유용할 수 있습니다.  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Visual Studio Emulator for Android에 대한 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="NoInstall"></a> 에뮬레이터 설치 실패  
  Hyper-V를 설치하지 않은 경우 에뮬레이터를 설치하려고 할 때 다음과 같은 메시지가 나타납니다. HyperV를 지원하는 컴퓨터가 있어야 하고 HyperV를 사용하도록 설정해야 합니다.  
@@ -72,7 +72,7 @@ ms.locfileid: "31070014"
 > [!NOTE]
 >  이 메시지는 Android용 Visual Studio 에뮬레이터 및 Windows Phone 에뮬레이터 모두에 적용됩니다. Windows 8.1 및 Windows 10에서 에뮬레이터를 지원합니다.  
   
- 이 메시지가 표시되는 경우 [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) 에서 에뮬레이터를 실행할 수 있는지 여부를 확인하세요.  
+ 이 메시지가 표시되는 경우 [Visual Studio Emulator for Android에 대한 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)에서 에뮬레이터를 실행할 수 있는지 여부를 확인하세요.  
   
 ##  <a name="DomainNetwork"></a> 도메인 또는 회사 네트워크의 네트워크 대상에 연결할 수 없음  
  Android용 Visual Studio 에뮬레이터는 네트워크에서 자체 IP 주소를 가진 별도 장치도 나타납니다. 이 에뮬레이터는 Windows 도메인에 연결되지 않고 호스트 컴퓨터와 도메인 또는 작업 그룹 자격 증명을 공유하지 않습니다.  
@@ -179,7 +179,7 @@ ms.locfileid: "31070014"
   
     6.  Windows 8 Professional 이상을 실행하고 있는지 확인합니다(Windows Server 2008은 지원되지 않음). Windows Server 2012는 지원되지만 데스크톱 경험 기능을 사용하도록 설정해야 합니다.  
   
-     이벤트 뷰어를 검사하여 하이퍼바이저 오류가 있는지 확인할 수 있습니다. 이 작업을 수행하려면 이벤트 뷰어를 열고(시작 키+R을 입력한 다음 `eventvwr`입력) **Windows 로그**, **시스템**을 선택합니다. 그런 후 소스를 **Hyper-V-Hypervisor**로 설정하고 이벤트 소스별로 로그를 필터링합니다. 근본 원인을 파악하는 데 도움이 되도록 오류를 확인하세요.  
+     이벤트 뷰어를 검사하여 하이퍼바이저 오류가 있는지 확인할 수 있습니다. 이 작업을 수행하려면 이벤트 뷰어를 열고(**시작 키+R**+**R**을 입력한 다음, `eventvwr` 입력) **Windows 로그**, **시스템**을 선택합니다. 그런 후 소스를 **Hyper-V-Hypervisor**로 설정하고 이벤트 소스별로 로그를 필터링합니다. 근본 원인을 파악하는 데 도움이 되도록 오류를 확인하세요.  
   
      프로세서가 최소 요구 사항을 충족하지만 하이퍼바이저에 계속 오류가 발생하는 경우 컴퓨터에 사용할 수 있는 BIOS 업그레이드가 있는지 확인하세요. 업그레이드가 있고 적용하기로 선택한 경우 BIOS를 업그레이드할 때 제조업체에서 제공한 모든 사전 예방 조치를 준수합니다(예를 들어 전력 손실로 인해 BIOS 펌웨어 업그레이드가 중단될 경우 BIOS가 영구히 손상될 수 있으므로 주의할 것).  
   
@@ -193,7 +193,7 @@ ms.locfileid: "31070014"
   
      Windows 8 규정 준수를 위해 VirtualBox, Virtual PC 7, VMWare, 일부 VPN 클라이언트, 소프트웨어 방화벽, 일부 Cisco VPN 클라이언트 버전 및 기타 가상화 시스템의 업그레이드가 필요할 수 있습니다. 문제가 있을 수 있는 가상화 소프트웨어의 개발자에게 Windows 8 및 Hyper-V와 호환되도록 소프트웨어를 업그레이드하도록 권장하세요.  
   
-     **해결 방법**으로, 에뮬레이터에서 Visual Studio와 통신하는 데 사용하는 가상 네트워크에 방해가 될 수 있는 모든 타사 드라이버 및 응용 프로그램을 사용하지 않도록 설정할 수 있습니다. 이러한 응용 프로그램에는 다음이 포함될 수 있습니다.  
+     *해결 방법*으로, 에뮬레이터에서 Visual Studio와 통신하는 데 사용하는 가상 네트워크에 방해가 될 수 있는 모든 타사 드라이버 및 응용 프로그램을 사용하지 않도록 설정할 수 있습니다. 이러한 응용 프로그램에는 다음이 포함될 수 있습니다.  
   
     -   바이러스 백신 응용 프로그램(네트워크 스택에 연결)  
   
@@ -261,7 +261,7 @@ ms.locfileid: "31070014"
   
 -   시작 단추 상황에 맞는 메뉴에서 **실행** 을 선택하고 대화 상자에 `regedit` 를 입력한 다음 **확인**을 선택하여 레지스트리 편집기를 엽니다.  
   
--   왼쪽의 폴더 트리에서 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools로 이동합니다.  
+-   왼쪽의 폴더 트리에서 *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools*로 이동합니다.  
   
 -   Android SDK의 경로와 일치하도록 **Path** 레지스트리 변수를 수정합니다.  
   

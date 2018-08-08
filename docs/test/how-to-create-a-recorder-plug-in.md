@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176215"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382067"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>방법: 레코더 플러그 인 만들기
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하여 기록된 웹 성능 테스트를 수정할 수 있습니다. 수정 사항은 웹 성능 테스트 레코더 도구 모음의 **중지**를 선택한 후 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 적용됩니다.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하여 기록된 웹 성능 테스트를 수정할 수 있습니다. 수정 사항은 **웹 성능 테스트 레코더** 도구 모음의 **중지**를 선택한 후에 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 적용됩니다.
 
-레코더 플러그 인을 사용하면 동적 매개 변수에서 사용자 지정 상관 관계를 수행할 수 있습니다. 웹 성능 테스트에서는 기본 제공 상관 관계 기능을 사용하여 테스트가 완료될 때 또는 사용자가 웹 성능 테스트 편집기 도구 모음의 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기**를 사용할 때 웹 기록에서 동적 매개 변수를 검색합니다. 그러나 기본 제공 검색 기능으로 항상 모든 동적 매개 변수를 찾을 수 있는 것은 아닙니다. 예를 들어 대개 5-30분마다 값이 변경되는 세션 ID는 찾지 못합니다. 따라서 상관 관계 프로세스를 사용자가 직접 수행해야 합니다.
+레코더 플러그 인을 사용하면 동적 매개 변수에서 사용자 지정 상관 관계를 수행할 수 있습니다. 웹 성능 테스트에서는 기본 제공 상관 관계 기능을 사용하여 테스트가 완료될 때 또는 사용자가 **웹 성능 테스트 편집기** 도구 모음의 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기**를 사용할 때 웹 기록에서 동적 매개 변수를 검색합니다. 그러나 기본 제공 검색 기능으로 항상 모든 동적 매개 변수를 찾을 수 있는 것은 아닙니다. 예를 들어 대개 5-30분마다 값이 변경되는 세션 ID는 찾지 못합니다. 따라서 상관 관계 프로세스를 사용자가 직접 수행해야 합니다.
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하면 사용자 고유의 사용자 지정 플러그 인에 대한 코드를 작성할 수 있습니다. 이 플러그 인은 웹 성능 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 여러 가지 방법으로 상관 관계 연결을 수행하거나 웹 성능 테스트를 수정할 수 있습니다. 따라서 많은 기록에 대해 특정 동적 변수를 연결해야 하는 것으로 판단될 경우 이 프로세스를 자동화할 수 있습니다.
 
@@ -29,13 +29,13 @@ ms.locfileid: "39176215"
 
 다음 절차에서는 레코더 플러그 인의 기본적인 코드를 만들고 이 플러그 인을 배포 및 실행하는 방법에 대해 설명합니다. 절차 다음에 나오는 샘플 코드에서는 Visual C#을 사용하여 사용자 지정 동적 매개 변수 상관 관계 레코더 플러그 인을 만드는 방법을 보여 줍니다.
 
-## <a name="creating-a-recorder-plug-in"></a>레코더 플러그 인 만들기
+## <a name="create-a-recorder-plug-in"></a>레코더 플러그 인 만들기
 
 ### <a name="to-create-a-recorder-plug-in"></a>레코더 플러그 인을 만들려면
 
 1.  레코더 플러그 인을 만들려는 웹 성능 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트가 들어 있는 솔루션을 엽니다.
 
-2.  솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
+2.  **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
 
      **새 프로젝트 추가** 대화 상자가 표시됩니다.
 
@@ -45,9 +45,9 @@ ms.locfileid: "39176215"
 
 5.  **이름** 텍스트 상자에 레코더 플러그 인의 이름을 입력합니다.
 
-     클래스 라이브러리가 솔루션 탐색기에 추가되고 새 클래스가 코드 편집기에서 열립니다.
+     클래스 라이브러리가 **솔루션 탐색기**에 추가되고 새 클래스가 **코드 편집기**에서 열립니다.
 
-6.  솔루션 탐색기의 새 클래스 라이브러리 프로젝트 폴더에서 **참조** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+6.  **솔루션 탐색기**의 새 클래스 라이브러리 프로젝트 폴더에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
 
     > [!TIP]
     > 새 클래스 라이브러리 프로젝트 폴더의 예는 **RecorderPlugins**입니다.
@@ -58,7 +58,7 @@ ms.locfileid: "39176215"
 
 8.  아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.WebTestFramework**를 선택한 다음, **확인**을 선택합니다.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework**가 솔루션 탐색기의 **참조** 폴더에 추가됩니다.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework**가 **솔루션 탐색기**의 **References** 폴더에 추가됩니다.
 
 9. 레코더 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "39176215"
 
 11. 웹 기록이 발생한 후 레코더 플러그 인에서 실행할 작업에 따라 원하는 코드를 더 추가합니다. 예를 들어 다음 샘플과 같이 사용자 지정 상관 관계를 처리하는 코드를 추가할 수 있습니다. 주석을 트랜잭션으로 변환하거나 웹 성능 테스트에 유효성 검사 규칙을 추가하는 등의 작업을 위한 레코더 플러그 인을 만들 수도 있습니다.
 
-12. **빌드** 메뉴에서 \<class library project name> 빌드를 선택합니다.
+12. **빌드** 메뉴에서 **\<클래스 라이브러리 프로젝트 이름> 빌드**를 선택합니다.
 
 13. 그런 다음 레코더 플러그 인을 Visual Studio에 등록하기 위해 배포해야 합니다.
 
@@ -89,9 +89,9 @@ ms.locfileid: "39176215"
 
 레코더 플러그 인을 컴파일한 후 결과 DLL을 다음 두 위치 중 하나에 배치해야 합니다.
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+-   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \<*version*>\WebTestPlugins
+-   *%USERPROFILE%\My Documents\Visual Studio \<* version *>\WebTestPlugins*
 
 > [!WARNING]
 > 레코더 플러그 인을 두 위치 중 하나에 복사한 후 Visual Studio를 다시 시작해야 레코더 플러그 인이 등록됩니다.
@@ -102,7 +102,7 @@ ms.locfileid: "39176215"
 
      **WebTestRecordPlugins 사용** 대화 상자가 나타납니다.
 
-2.  레코더 플러그 인의 확인란을 선택하고 확인을 선택합니다.
+2.  레코더 플러그 인의 확인란을 선택하고 **확인**을 선택합니다.
 
      웹 성능 테스트의 기록이 완료된 후 새 레코더 플러그 인이 실행됩니다.
 

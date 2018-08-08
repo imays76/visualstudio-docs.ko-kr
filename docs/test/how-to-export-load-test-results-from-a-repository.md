@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 080bdfd79ee1fce4015fc2db9a695cb55c417165
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9e9f3513cb5d7bb03f51be68d1b44b8df161a088
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178772"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381506"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>방법: 리포지토리에서 부하 테스트 결과 내보내기
 
@@ -40,7 +40,7 @@ ms.locfileid: "39178772"
 
      사용 가능한 부하 테스트 결과는 **부하 테스트 결과** 목록에 나타납니다. 여기에는 **시간**, **지속 시간**, **사용자**, **결과**, **테스트** 및 **설명** 열이 있습니다. **테스트**에는 테스트의 이름이 들어 있고 **설명**에는 테스트를 실행하기 전에 추가한 설명(선택 사항)이 들어 있습니다. **설명** 열에는 해당 테스트 결과에 대해 **분석 주석**에 입력한 간략한 설명이 표시됩니다.
 
-5.  **부하 테스트 결과** 목록에서 결과를 선택합니다. Shit 키, Ctrl 키 또는 둘 다를 사용하여 결과를 여러 개 선택한 다음 단일 파일로 내보낼 수 있습니다.
+5.  **부하 테스트 결과** 목록에서 결과를 선택합니다. **Shift** 키, **Ctrl** 키 또는 둘 다를 사용하여 결과를 여러 개 선택한 다음, 단일 파일로 내보낼 수 있습니다.
 
 6.  **내보내기**를 선택합니다.
 
