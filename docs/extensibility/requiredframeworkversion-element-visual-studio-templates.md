@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc1a138c50c0fe13962f6601449eb3498d90398
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23538e8e00553322f4f04e50414a8b3ddbd73b91
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137838"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635923"
 ---
-# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 요소(Visual Studio 템플릿)
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 요소 (Visual Studio 템플릿)
 
-서식 파일에 필요한.NET Framework의 최소 버전을 지정 합니다. 수행 하는 **대상 프레임 워크 버전** 드롭다운에 표시 되는 **새 프로젝트** 대화 상자. `RequiredFrameworkVersion` 드롭다운 목록에서 사용할 수 있는 가장 낮은 값 여부도 결정 합니다.
+서식 파일에 필요한.NET Framework의 최소 버전을 지정 합니다. 발생 합니다 **대상 프레임 워크 버전** 드롭다운에 표시 되는 **새 프로젝트** 대화 합니다. `RequiredFrameworkVersion` 요소는 또한 드롭다운 목록에서 사용 가능한 가장 낮은 값을 결정 합니다.
 
 > [!IMPORTANT]
-> Visual Studio 2017 15.6 버전부터는 **대상 프레임 워크 버전** 드롭다운에 표시 된 서식 파일에 대 한 필터를 더 이상는 **템플릿** 의 섹션은 **새프로젝트** 대화 상자. 대신, 선택한 서식 파일에 대 한 프레임 워크 선택기 드롭다운 작동합니다.
+> Visual Studio 2017 버전 15.6부터를 **대상 프레임 워크 버전** 드롭다운에 표시 된 템플릿에 대 한 필터는 더 이상 합니다 **템플릿** 부분은 **새프로젝트** 대화 상자. 대신, 드롭다운에서 선택한 템플릿에 대 한 프레임 워크 선택기로 작동합니다.
 
  \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
 
@@ -37,7 +37,7 @@ ms.locfileid: "31137838"
 ```
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
  없음
@@ -49,20 +49,20 @@ ms.locfileid: "31137838"
 
 |요소|설명|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류 하 고 하나에 표시 되는 방식을 정의 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류 하 고에서 표시 되는 방식을 정의 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
- 텍스트 서식 파일에 필요한.NET Framework의 최소 버전 번호 여야 합니다.
+ 텍스트는 템플릿에 대 한 필요한.NET Framework의 최소 버전 번호 여야 합니다.
 
 ## <a name="remarks"></a>설명
 
-`RequiredFrameworkVersion`는 선택적 요소입니다. 서식 파일을 특정 최소 버전 (및 이상 버전 있는 경우)를 지원할 경우에이 요소를 사용 하 여.NET Framework의 합니다. 지정 하는 경우는 `RequiredFrameworkVersion` 요소 및 템플릿에 특정 최소 버전의.NET Framework를 지원 하지 않습니다는 **대상 프레임 워크 버전** 드롭다운에는 적용 되지 않는 경우 표시 됩니다.
+`RequiredFrameworkVersion`는 선택적 요소입니다. 템플릿은 특정 최소 버전 (및 이상 버전 있는 경우)를 지원 하는 경우에이 요소를 사용 하 여.NET Framework의 합니다. 지정 하는 경우는 `RequiredFrameworkVersion` 요소 및 템플릿에 특정 최소 버전의.NET Framework를 지원 하지 않습니다 합니다 **대상 프레임 워크 버전** 드롭다운에는 적용 되지 않는 경우 표시 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
-다음 예제에서는 표준에 대 한 메타 데이터 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스 템플릿을 합니다.
+다음 예제에서는 표준에 대 한 메타 데이터를 보여 줍니다. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스 템플릿.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -82,10 +82,10 @@ ms.locfileid: "31137838"
 </VSTemplate>
 ```
 
-이 예제에서는 서식 파일을 여는 데 필요한.NET Framework의 최소 버전에에서도 표현 `RequiredFrameworkVersion`는 3.0 기능입니다. 이 템플릿을 사용 하 여 만든 프로젝트는.NET Framework 버전 3.0에서 시작을 지정할 수 있습니다.
+이 예제에서는 서식 파일을 여는 데 필요한.NET Framework의 최소 버전 표시 `RequiredFrameworkVersion`,이 3.0 이라고 합니다. 이 템플릿을 사용 하 여 만든 프로젝트는.NET Framework 버전 3.0에서 대상으로 지정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
-- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [특정 대상 .NET Framework 버전 지정](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+- [특정.NET Framework 버전 대상](../ide/targeting-a-specific-dotnet-framework-version.md)

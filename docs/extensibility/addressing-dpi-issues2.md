@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97012b0d8b4214cdeafcaf12403948997436a212
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154332"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638667"
 ---
 # <a name="address-dpi-issues"></a>DPI 문제
 장치 수가 증가 "고해상도" 화면을 사용 하 여 전달 됩니다. 이 화면에는 일반적으로 200 개가 넘는 인치 당 픽셀 수 (가) 있습니다. 이러한 컴퓨터에서 응용 프로그램을 사용 하 여 작업 콘텐츠를 장치에 대 한 일반 보기로 거리에 있는 콘텐츠를 표시 하는 요구를 충족 하도록 확장 해야 합니다. 2014 년을 기준으로 기본 고밀도 디스플레이 대 한 대상이 모바일 컴퓨팅 장치 (태블릿, 랩톱 클램쉘 및 휴대폰)입니다.  
@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  참조 된 <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> MSDN에 대 한 설명서입니다.  
   
- 다음 표에서 배율 인수 해당 DPI에서 이미지 배율 조정 방법을의 예를 보여 줍니다. 녹색으로 이미지를 나타냅니다 (100-200 %DPI 배율)는 Visual Studio 2013이 모범 사례를:  
+ 다음 표에서 배율 인수 해당 DPI에서 이미지 배율 조정 방법을의 예를 보여 줍니다. 주황색에 설명 된 이미지 (100-200 %DPI 배율)는 Visual Studio 2013이 모범 사례를 나타냅니다.  
   
  ![DPI 문제 배율](../extensibility/media/dpi-issues-scaling.png "DPI 문제 배율")  
   

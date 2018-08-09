@@ -16,24 +16,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cef7e1e09d81c4ff0fb28198ff9a4d68f1e9c501
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 050d9b060fe9976dc9262b2878f570abbdc9bb42
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136341"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636904"
 ---
-# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix 요소(Visual Studio 템플릿)
-가장 최근에 사용한 (MRU) 경로 지정 된 **새 프로젝트** 및 **새 항목 추가** 대화 상자.  
+# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix 요소 (Visual Studio 템플릿)
+가장 최근에 사용한 (MRU) 경로 지정 합니다 **새 프로젝트** 하 고 **새 항목 추가** 대화 상자.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <LocationFieldMRUPrefix> ... </LocationFieldMRUPrefix>  
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
  없음  
@@ -48,8 +48,8 @@ ms.locfileid: "31136341"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 요소를 통해 생성 된 서식 파일에만 사용 해야는 [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)]합니다.  
+ 이 요소를 통해 생성 된 템플릿에 대 한만 사용 해야는 [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)]합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

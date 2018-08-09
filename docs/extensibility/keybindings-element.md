@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91a5fd99216e712e567d4543f3f29dc2b6b21aa1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f99c761eb10a80fa8a32413b03b42840a752540
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141417"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636813"
 ---
 # <a name="keybindings-element"></a>KeyBindings 요소
-키 바인딩 요소와 다른 KeyBindings 그룹화 키 바인딩 요소를 그룹화합니다.  
+KeyBindings 요소 그룹 KeyBinding 요소 및 다른 KeyBindings 그룹화 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding>... </KeyBinding>  
   <KeyBinding>... </KeyBinding>  
@@ -36,7 +36,7 @@ ms.locfileid: "31141417"
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
   
@@ -49,7 +49,7 @@ ms.locfileid: "31141417"
 |요소|설명|  
 |-------------|-----------------|  
 |[KeyBinding 요소](../extensibility/keybinding-element.md)|명령에 대 한 바로 가기 키를 지정합니다.|  
-|[KeyBindings](../extensibility/keybindings-element.md)|그룹 키 바인딩 요소와 다른 KeyBindings 그룹화 합니다.|  
+|[키 바인딩](../extensibility/keybindings-element.md)|KeyBinding 요소 그룹 및 다른 KeyBindings 그룹화 합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -57,9 +57,9 @@ ms.locfileid: "31141417"
 |-------------|-----------------|  
 |[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의 합니다.|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
     editor="guidWidgetEditor" key1="VK_F5"/>  
@@ -68,6 +68,6 @@ ms.locfileid: "31141417"
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [KeyBinding 요소](../extensibility/keybinding-element.md)   
- [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

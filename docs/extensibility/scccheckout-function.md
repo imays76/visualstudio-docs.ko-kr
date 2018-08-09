@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 671e4ecebb44f0910eba3bb835a6da6f9a7f3903
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50e82c04dc9dda306d8c9204aad6606dff6f89c7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137751"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635919"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 함수
-정규화 된 파일 이름의 목록을 지정 된 경우이 함수 확인 로컬 드라이브에 있습니다. 체크 아웃 되 고 모든 파일에 주석을 적용 됩니다. 주석 인수 수는 `null` 문자열입니다.  
+정규화 된 파일 이름 목록이 들어이 함수 체크 로컬 드라이브에 있습니다. 체크 아웃 되 고 모든 파일에 주석을 적용 됩니다. 주석 인수 수를 `null` 문자열입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,43 +39,43 @@ SCCRTN SccCheckout (
 );  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
+### <a name="parameters"></a>매개 변수  
  pvContext  
- [in] 소스 제어 플러그 인 컨텍스트 구조입니다.  
+ [in] 원본 제어 플러그 인 상황에 맞는 구조입니다.  
   
  hWnd  
- [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에를 부모로 사용할 수 있는 IDE 창 핸들입니다.  
+ [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.  
   
  nFiles  
- [in] 체크 아웃 하도록 선택한 파일 수입니다.  
+ [in] 체크 아웃할 수를 선택 하는 파일 수입니다.  
   
  lpFileNames  
- [in] 파일을 체크 아웃의 정규화 된 로컬 경로 이름 배열입니다.  
+ [in] 체크 아웃할 파일의 정규화 된 로컬 경로 이름 배열입니다.  
   
  lpComment  
- [in] 각 체크 아웃 되 고 선택한 파일에 적용할 설명입니다.  
+ [in] 각 체크 아웃 되 고 선택한 파일에 적용할 주석 처리 합니다.  
   
- fOptions  
- [in] 명령 플래그 (참조 [에서 특정 명령을 사용 하는 비트](../extensibility/bitflags-used-by-specific-commands.md)).  
+ 옵션이  
+ [in] 명령 플래그 (참조 [특정 명령에 사용 되는 비트](../extensibility/bitflags-used-by-specific-commands.md)).  
   
  pvOptions  
- [in] 소스 제어 플러그 인에 대 한 옵션입니다.  
+ [in] 원본 제어 플러그 인에 대 한 옵션입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 소스 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환:  
+ 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
 |값|설명|  
 |-----------|-----------------|  
 |SCC_OK|체크 아웃 했습니다.|  
-|SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 코드 제어 하지 않습니다.|  
-|SCC_E_ACCESSFAILURE|소스 제어 시스템에 네트워크 또는 경합 문제 때문에 액세스 하는 문제가 발생 했습니다. 다시 시도 하 여 것이 좋습니다.|  
-|SCC_E_NOTAUTHORIZED|사용자가이 작업을 수행할 수 없습니다.|  
-|SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다. 파일 체크 아웃 되지 않았습니다.|  
+|SCC_E_FILENOTCONTROLLED|선택한 파일이 소스 코드 제어 없습니다.|  
+|SCC_E_ACCESSFAILURE|소스 제어 시스템에 경합 또는 네트워크 문제로 인해 액세스 문제가 있습니다. 재시도 사용 하는 것이 좋습니다.|  
+|SCC_E_NOTAUTHORIZED|사용자는이 작업을 수행할 수 없습니다.|  
+|SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다. 파일 체크 아웃 했습니다.|  
 |SCC_E_ALREADYCHECKEDOUT|사용자가 이미 파일을 체크 아웃 합니다.|  
 |SCC_E_FILEISLOCKED|새 버전 생성 등의 금지 된 파일이 잠겨 있습니다.|  
-|SCC_E_FILEOUTEXCLUSIVE|다른 사용자는이 파일에 대 한 단독 체크 아웃을 종료 했습니다.|  
+|SCC_E_FILEOUTEXCLUSIVE|다른 사용자는이 파일에는 단독 체크 아웃을 수행 했습니다.|  
 |SCC_I_OPERATIONCANCELED|작업이 완료 되기 전에 취소 되었습니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
- [특정 명령에 사용되는 Bitflag](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>참고자료  
+ [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
+ [특정 명령에 사용 되는 비트](../extensibility/bitflags-used-by-specific-commands.md)

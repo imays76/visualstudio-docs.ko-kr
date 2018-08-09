@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e758bb0bc493086d9e8090c14eaca744129c277
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 24b1e29faf2a322bf8dd40d48622b3e2a0c8da65
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136499"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639164"
 ---
-# <a name="references-element-visual-studio-templates"></a>References 요소(Visual Studio 템플릿)
+# <a name="references-element-visual-studio-templates"></a>References 요소 (Visual Studio 템플릿)
 서식 파일 프로젝트에 추가 하는 어셈블리 참조를 그룹화 합니다.  
   
  \<VSTemplate>  
@@ -32,7 +32,7 @@ ms.locfileid: "31136499"
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <References>  
     <Reference>... </Reference>  
     <Reference>... </Reference>  
@@ -50,7 +50,7 @@ ms.locfileid: "31136499"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[참조](../extensibility/reference-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 항목이 프로젝트에 추가될 때 추가할 어셈블리 참조를 지정합니다. 하나 이상의 있어야 `Reference` 의 요소는 `References` 요소입니다.|  
+|[참조](../extensibility/reference-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 항목이 프로젝트에 추가될 때 추가할 어셈블리 참조를 지정합니다. 하나 이상 이어야 `Reference` 의 요소를 `References` 요소입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -61,12 +61,12 @@ ms.locfileid: "31136499"
 ## <a name="remarks"></a>설명  
  `References`은 `TemplateContent`의 선택적 자식 요소입니다.  
   
- `Reference` 및 `References` 요소 있는.vstemplate 파일에만 사용할 수 있습니다는 `Type` 특성 값이 `Item`합니다.  
+ `Reference` 및 `References` 요소에만 사용할 수 있습니다 *.vstemplate* 파일을 `Type` 특성의 값 `Item`합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제는 `TemplateContent` 항목 템플릿의 요소입니다. 이 XML System.dll 및 System.Data.dll 어셈블리에 대 한 참조를 추가합니다.  
+## <a name="example"></a>예  
+ 다음 예제는 `TemplateContent` 항목 템플릿의 요소입니다. 이 XML에 대 한 참조를 추가 합니다 *System.dll* 하 고 *System.Data.dll* 어셈블리입니다.  
   
-```  
+```xml  
 <TemplateContent>  
     <References>  
         <Reference>  
@@ -84,6 +84,6 @@ ms.locfileid: "31136499"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
