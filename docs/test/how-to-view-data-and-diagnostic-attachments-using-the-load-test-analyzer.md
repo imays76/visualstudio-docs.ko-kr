@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 228f8306b803fcbd0e83e23e5b8e919dc2116c37
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751367"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382466"
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>방법: 부하 테스트 분석기를 사용하여 데이터 및 진단 첨부 파일 보기
 
-부하 테스트를 실행하기 전에 사용할 진단 데이터 어댑터를 지정하는 테스트 설정을 선택할 수 있습니다. 부하 테스트를 마친 후 부하 테스트 분석기를 사용하여 결과를 분석하는 동안 이러한 진단 데이터 어댑터에 대한 정보를 볼 수 있습니다. 진단 데이터 어댑터 정보를 보려면 부하 테스트 분석기의 도구 모음에서 **데이터 및 진단 첨부 파일 보기** 단추를 선택합니다. 예를 들어 부하 테스트 시 테스트 설정에 시스템 정보 어댑터가 구성되어 있던 경우 부하 테스트를 실행할 때 사용된 컴퓨터의 시스템 정보를 볼 수 있습니다.
+부하 테스트를 실행하기 전에 사용할 진단 데이터 어댑터를 지정하는 테스트 설정을 선택할 수 있습니다. 부하 테스트를 마친 후 **부하 테스트 분석기**를 사용하여 결과를 분석하는 동안 이러한 진단 데이터 어댑터에 대한 정보를 볼 수 있습니다. 진단 데이터 어댑터 정보를 보려면 **부하 테스트 분석기**의 도구 모음에서 **데이터 및 진단 첨부 파일 보기** 단추를 선택합니다. 예를 들어 부하 테스트 시 테스트 설정에 시스템 정보 어댑터가 구성되어 있던 경우 부하 테스트를 실행할 때 사용된 컴퓨터의 시스템 정보를 볼 수 있습니다.
 
 ![진단 데이터 어댑터 첨부 파일 선택 대화 상자](../test/media/load_adapterdialog.png)
 
-또 다른 예로, 부하 테스트의 테스트 설정에 IntelliTrace 어댑터가 포함되어 있으면 IntelliTrace 어댑터를 사용하여 IntelliTrace 요약 페이지를 열 수 있습니다.
+또 다른 예로, 부하 테스트의 테스트 설정에 IntelliTrace 어댑터가 포함되어 있으면 IntelliTrace 어댑터를 사용하여 **IntelliTrace 요약** 페이지를 열 수 있습니다.
 
 ![IntelliTrace 요약](../test/media/load_intellitrace.png)
 
@@ -31,7 +31,7 @@ ms.locfileid: "34751367"
 
 ## <a name="to-view-data-and-diagnostic-attachments-in-a-load-test-from-the-load-test-analyzer"></a>부하 테스트 분석기에서 부하 테스트의 데이터 및 진단 첨부 파일을 보려면
 
-1.  부하 테스트가 완료된 후 또는 부하 테스트 결과를 연 후 부하 테스트 분석기의 도구 모음에서 **데이터 및 진단 첨부 파일 보기**를 선택합니다.
+1.  부하 테스트가 완료된 후 또는 부하 테스트 결과를 연 후 **부하 테스트 분석기** 도구 모음에서 **데이터 및 진단 첨부 파일 보기**를 선택합니다.
 
      **진단 데이터 어댑터 첨부 파일 선택** 대화 상자가 표시됩니다.
 

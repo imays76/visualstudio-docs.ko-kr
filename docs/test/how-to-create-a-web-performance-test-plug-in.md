@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178363"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380168"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>방법: 웹 성능 테스트 플러그 인 만들기
 
@@ -35,7 +35,7 @@ ms.locfileid: "39178363"
 
 1.  웹 성능 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트를 엽니다.
 
-2.  솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
+2.  **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
 
      **새 프로젝트 추가** 대화 상자가 표시됩니다.
 
@@ -47,9 +47,9 @@ ms.locfileid: "39178363"
 
 6.  **확인**을 선택합니다.
 
-7.  새 클래스 라이브러리 프로젝트가 솔루션 탐색기에 추가되고 새 클래스가 코드 편집기에 나타납니다.
+7.  새 클래스 라이브러리 프로젝트가 **솔루션 탐색기**에 추가되고 새 클래스가 **코드 편집기**에 나타납니다.
 
-8.  솔루션 탐색기의 새 클래스 라이브러리에서 **참조** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+8.  **솔루션 탐색기**의 새 클래스 라이브러리에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
 
 9. **참조 추가** 대화 상자가 표시됩니다.
 
@@ -57,17 +57,17 @@ ms.locfileid: "39178363"
 
 11. **확인**을 선택합니다.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework**에 대한 참조가 솔루션 탐색기의 **참조** 폴더에 추가됩니다.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework**에 대한 참조가 **솔루션 탐색기**의 **Reference** 폴더에 추가됩니다.
 
-12. 솔루션 탐색기에서 웹 성능 테스트 플러그 인을 추가할 부하 테스트를 포함하는 웹 성능 및 부하 테스트 프로젝트의 최상위 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+12. **솔루션 탐색기**에서 웹 성능 테스트 플러그 인을 추가할 부하 테스트를 포함하는 웹 성능 및 부하 테스트 프로젝트의 최상위 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
 
 13. **참조 추가 대화 상자가 표시됩니다**.
 
-14. **프로젝트** 탭을 선택하고 클래스 라이브러리 프로젝트를 선택합니다.
+14. **프로젝트** 탭을 선택하고 **클래스 라이브러리 프로젝트**를 선택합니다.
 
 15. **확인**을 선택합니다.
 
-16. 코드 편집기에서 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
+16. **코드 편집기**에서 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
 
 17. 하나 이상의 이벤트 처리기에서 코드를 구현합니다. 샘플 구현을 보려면 다음 예제 단원을 참조하십시오.
 

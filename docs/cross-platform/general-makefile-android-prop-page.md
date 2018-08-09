@@ -15,12 +15,12 @@ f1_keywords:
 - VC.Project.VCConfiguration.ConfigurationType
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cfc1655adbd9377f1aeeec60afc799f342b4498d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ac5c50a1bf7c6f0d9046f136ad821370b59ad0a
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060082"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252312"
 ---
 # <a name="general-project-properties-android-c-makefile"></a>일반 프로젝트 속성(Android C++ 메이크파일)
 
@@ -29,4 +29,4 @@ ms.locfileid: "31060082"
 출력 디렉터리 | 출력 파일 디렉터리에 대한 상대 경로를 지정하며 환경 변수를 포함할 수 있습니다.
 중간 디렉터리 | 중간 파일 디렉터리에 대한 상대 경로를 지정하며 환경 변수를 포함할 수 있습니다.
 빌드 로그 파일 | 빌드 로깅을 사용하도록 설정된 경우 작성할 빌드 로그 파일을 지정합니다.
-구성 형식 | 이 구성에서 생성하는 출력 형식을 지정합니다. | **동적 라이브러리(.so)** - 동적 라이브러리(.so)<br>**정적 라이브러리(.a)** - 정적 라이브러리(.a)<br>**유틸리티** - 유틸리티<br>**메이크파일** - 메이크파일<br>
+구성 형식 | 이 구성에서 생성하는 출력 형식을 지정합니다. | **동적 라이브러리(.so)** - 동적 라이브러리(*.so*)<br>**정적 라이브러리(.a)** - 정적 라이브러리(*.a*)<br>**유틸리티** - 유틸리티<br>**메이크파일** - 메이크파일<br>

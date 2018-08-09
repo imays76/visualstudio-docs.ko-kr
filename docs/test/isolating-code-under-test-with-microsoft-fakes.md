@@ -12,22 +12,22 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 3ea3669f3c66a36a10e63dde9d98b0f951d58f1e
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 685927147d2b2ce45c450b46eea6070cc77c5aad
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844936"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380631"
 ---
-# <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
+# <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
 Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 응용 프로그램의 다른 부분을 교체함으로써 사용자가 테스트 중인 코드를 격리시켜 줍니다. 테스트에서 제어하는 작은 코드 조각입니다. 테스트를 위해 코드를 격리하여 테스트가 실패할 경우 원인이 어디에 있는지 파악합니다. 응용 프로그램의 다른 부분이 아직 작동하지 않더라도 스텁 및 shim을 사용해서 코드를 테스트할 수도 있습니다.
 
 Fakes는 두 가지 버전이 있습니다.
 
--   [스텁](#stubs)은 클래스를 동일한 인터페이스를 구현하는 작은 대안으로 바뀝니다.  스텁을 사용하려면 각 구성 요소가 다른 구성 요소에 종속되는 것이 아니라 인터페이스에만 종속되도록 응용 프로그램을 설계해야 합니다. ("구성 요소"란 함께 설계되어 업데이트되고 대개 하나의 어셈블리에 포함되는 클래스 또는 클래스의 그룹을 의미합니다.)
+-   [스텁](#get-started-with-stubs)은 클래스를 동일한 인터페이스를 구현하는 작은 대안으로 바뀝니다.  스텁을 사용하려면 각 구성 요소가 다른 구성 요소에 종속되는 것이 아니라 인터페이스에만 종속되도록 응용 프로그램을 설계해야 합니다. ("구성 요소"란 함께 설계되어 업데이트되고 대개 하나의 어셈블리에 포함되는 클래스 또는 클래스의 그룹을 의미합니다.)
 
--   [shim](#shims)은 지정된 메서드 콜을 실행하는 대신 테스트에서 제공하는 shim 코드를 실행할 수 있도록 런타임에 응용 프로그램의 컴파일된 코드를 수정합니다. shim은 .NET 어셈블리와 같이 수정할 수 없는 어셈블리에 대한 호출을 바꾸는 데 사용할 수 있습니다.
+-   [shim](#get-started-with-shims)은 지정된 메서드 콜을 실행하는 대신 테스트에서 제공하는 shim 코드를 실행할 수 있도록 런타임에 응용 프로그램의 컴파일된 코드를 수정합니다. shim은 .NET 어셈블리와 같이 수정할 수 없는 어셈블리에 대한 호출을 바꾸는 데 사용할 수 있습니다.
 
 ![다른 구성 요소를 대체하는 Fakes](../test/media/fakes-2.png)
 
@@ -39,10 +39,10 @@ Fakes는 두 가지 버전이 있습니다.
 > [!NOTE]
 > .NET Standard 프로젝트는 지원되지 않습니다.
 
-## <a name="choosing-between-stub-and-shim-types"></a>스텁 및 shim 형식 중에 선택
+## <a name="choose-between-stub-and-shim-types"></a>스텁 및 shim 형식 중에 선택
 일반적으로 이러한 클래스를 동시에 개발하고 업데이트했으므로 Visual Studio 프로젝트를 구성 요소라고 생각할 수 있습니다. 프로젝트가 솔루션의 다른 프로젝트에 대해 만드는 호출 또는 프로젝트가 참조하는 다른 어셈블리에 대해 만드는 호출에 스텁 또는 shim을 사용하는 것을 고려할 수 있습니다.
 
-일반적으로, Visual Studio 솔루션에 포함된 호출에는 스텁을 사용하고 그 밖의 참조된 어셈블리 호출에는 shim을 사용합니다. 고유 솔루션 내에서는 스텁에 필요한 방식으로 인터페이스를 정의하여 구성 요소를 분리하는 것이 좋기 때문입니다. 그러나 System.dll 등의 외부 어셈블리에는 별도의 인터페이스 정의가 제공되지 않는 것이 일반적이므로 대신 shim을 사용해야 합니다.
+일반적으로, Visual Studio 솔루션에 포함된 호출에는 스텁을 사용하고 그 밖의 참조된 어셈블리 호출에는 shim을 사용합니다. 고유 솔루션 내에서는 스텁에 필요한 방식으로 인터페이스를 정의하여 구성 요소를 분리하는 것이 좋기 때문입니다. 그러나 *System.dll* 등의 외부 어셈블리에는 별도의 인터페이스 정의가 제공되지 않는 것이 일반적이므로 대신 shim을 사용해야 합니다.
 
 기타 고려 사항:
 
@@ -58,7 +58,7 @@ Fakes는 두 가지 버전이 있습니다.
 
 일반적으로 코드베이스 안의 종속성에서 격리하려면 스텁 형식을 사용하는 것이 좋습니다. 인터페이스 뒤에 구성 요소를 숨기면 됩니다. shim 형식을 사용하여 테스트 가능한 API를 제공하지 않는 타사 구성 요소에서 격리할 수 있습니다.
 
-##  <a name="stubs"></a> 스텁 시작
+##  <a name="get-started-with-stubs"></a>스텁 시작
 자세한 내용은 [스텁을 사용하여 유닛 테스트를 위한 응용 프로그램의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)를 참조하세요.
 
 1.  **인터페이스 삽입**
@@ -84,7 +84,7 @@ Fakes는 두 가지 버전이 있습니다.
 
 2.  **Fakes 어셈블리 추가**
 
-    1.  솔루션 탐색기에서 테스트 프로젝트의 참조 목록을 확장합니다. Visual Basic에서 작업하는 경우 참조 목록을 보기 위해 **모든 파일 표시**를 선택해야 합니다.
+    1.  **솔루션 탐색기**에서 테스트 프로젝트의 참조 목록을 확장합니다. Visual Basic에서 작업하는 경우 참조 목록을 보기 위해 **모든 파일 표시**를 선택해야 합니다.
 
     2.  인터페이스(예: IStockFeed)를 정의한 어셈블리에 대한 참조를 선택합니다. 이 참조의 바로 가기 메뉴에서 **Fakes 어셈블리 추가**를 선택합니다.
 
@@ -152,7 +152,7 @@ Fakes는 두 가지 버전이 있습니다.
 
     스텁은 속성, 이벤트 및 제네릭 메서드의 getter와 setter에 대해서도 생성됩니다. 자세한 내용은 [스텁을 사용하여 유닛 테스트를 위한 응용 프로그램의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)를 참조하세요.
 
-##  <a name="shims"></a> shim 시작
+##  <a name="get-started-with-shims"></a>shim 시작
 (자세한 내용은 [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.)
 
 구성 요소에 `DateTime.Now`에 대한 호출이 포함된 경우를 가정합니다.
@@ -172,7 +172,7 @@ shim을 사용하려면 응용 프로그램 코드를 수정하거나 특정 방
 
 1.  **Fakes 어셈블리 추가**
 
-     솔루션 탐색기에서 단위 테스트 프로젝트의 참조를 열고 모조하려는 메서드가 포함된 어셈블리에 대한 참조를 선택합니다. 이 예제에서 `DateTime` 클래스는 **System.dll**에 있습니다.  Visual Basic 프로젝트에서 참조를 보려면 **모든 파일 표시**를 클릭합니다.
+     **솔루션 탐색기**에서 단위 테스트 프로젝트의 참조를 열고 모조하려는 메서드가 포함된 어셈블리에 대한 참조를 선택합니다. 이 예제에서 `DateTime` 클래스는 *System.dll*에 있습니다.  Visual Basic 프로젝트에서 참조를 보려면 **모든 파일 표시**를 클릭합니다.
 
      **Fakes 어셈블리 추가**를 선택합니다.
 

@@ -10,17 +10,17 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 500dce15e695cf53a061f8405919e808b8f7c493
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 074128d34f88346708fd344d1bba25b833f2af44
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066940"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251564"
 ---
 # <a name="import-an-xcode-project"></a>XCode 프로젝트 가져오기
 플랫폼 간 모바일 개발용 Microsoft Visual C++에서는 Visual Studio로 XCode 프로젝트 이동을 지원하여 플랫폼 간 라이브러리를 만들고 다른 프로젝트와 코드를 공유할 수 있습니다. XCode에서 가져오기 마법사를 사용하면 정적 라이브러리 또는 공유 코드 프로젝트로 사용하기 위해 프로젝트를 가져오고 XCode 대상에서 C++ 코드를 분할하는 프로세스가 간단해집니다. Visual Studio에서 iOS 관련 코드를 관리할 수 있으며 XCode를 계속 사용하여 스토리보드 및 빌드를 수행할 수 있습니다. Visual Studio와 XCode 간에 코드를 쉽게 이동하는 방법에 대한 자세한 내용은 XCode와 Visual Studio 간에 변경 내용 이동을 참조하세요.  
   
-## <a name="using-the-import-from-xcode-wizard"></a>XCode에서 가져오기 마법사 사용  
+## <a name="use-the-import-from-xcode-wizard"></a>XCode에서 가져오기 마법사 사용  
  이 항목에서는 XCode 프로젝트를 Visual Studio로 이동하여 코드 공유 및 플랫폼 간 솔루션을 활용하는 방법을 보여 줍니다. 프로젝트를 가져오고, 내보내고, 빌드할 수 있으려면 필수 조건으로 Mac을 Visual Studio에 연결해야 합니다. 연결 설정 방법에 대한 지침은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요. 또한 네트워크를 통해 XCode 프로젝트를 공유하거나 Visual Studio 컴퓨터로 Xcode 프로젝트를 옮겨 XCode에서 가져오기 마법사를 사용해야 합니다.  
   
 #### <a name="import-from-xcode"></a>XCode에서 가져오기  
@@ -29,7 +29,7 @@ ms.locfileid: "31066940"
   
      ![가져올 XCode 대상 프로젝트 선택](../cross-platform/media/cppmdd_u2_importxcode_choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
   
-2.  **프로젝트 선택** 창에서 [찾아보기] 단추를 선택하여 XCode.pbxproj 파일을 선택합니다. **XCode 프로젝트 파일 선택** 대화 상자에서 프로젝트 파일로 이동한 다음 **열기**를 선택합니다.  
+2.  **프로젝트 선택** 창에서 찾아보기 단추를 선택하여 Xcode *.pbxproj* 파일을 선택합니다. **XCode 프로젝트 파일 선택** 대화 상자에서 프로젝트 파일로 이동한 다음 **열기**를 선택합니다.  
   
      ![Xcode 프로젝트 파일 선택 대화 상자에서 프로젝트 파일 선택](../cross-platform/media/cppmdd_u2_importxcode_browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
@@ -59,7 +59,7 @@ ms.locfileid: "31066940"
   
      **다음** 을 선택하여 계속 진행합니다.  
   
-6.  **프레임워크** 창은 Visual Studio에서 프로젝트에 대한 검색 및 IntelliSense를 위해 사용하는 경로를 구성하는 데 사용됩니다. 경로를 통해 XCode 프로젝트에서 참조하는 각 프레임워크에 대해 Visual Studio에 액세스할 수 있어야 합니다. 마법사는 XCode 프로젝트에서 프레임워크 참조를 확인하고 Visual Studio에서 프레임워크를 찾을 수 있는지 여부를 표시합니다. 전역 속성에서 이미 설정한 모든 경로는 Visual Studio에서 검색되어야 합니다. 예외는 프레임워크 목록에 나열됩니다. X 표시와 함께 나열된 각 프레임워크에 대해 Visual Studio에서 프레임워크를 찾을 수 있도록 PC에서 액세스할 수 있는 경로를 제공합니다. 찾아보기 단추 [...]를 사용하면 **폴더 선택** 대화 상자를 사용하여 경로를 찾을 수 있습니다. 프레임워크 경로는 로컬 복사본이거나 Mac에서 네트워크를 통해 액세스할 수 있는 공유일 수 있습니다.  
+6.  **프레임워크** 창은 Visual Studio에서 프로젝트에 대한 검색 및 IntelliSense를 위해 사용하는 경로를 구성하는 데 사용됩니다. 경로를 통해 XCode 프로젝트에서 참조하는 각 프레임워크에 대해 Visual Studio에 액세스할 수 있어야 합니다. 마법사는 XCode 프로젝트에서 프레임워크 참조를 확인하고 Visual Studio에서 프레임워크를 찾을 수 있는지 여부를 표시합니다. 전역 속성에서 이미 설정한 모든 경로는 Visual Studio에서 검색되어야 합니다. 예외는 프레임워크 목록에 나열됩니다. X 표시와 함께 나열된 각 프레임워크에 대해 Visual Studio에서 프레임워크를 찾을 수 있도록 PC에서 액세스할 수 있는 경로를 제공합니다. 찾아보기 단추 **...** 를 사용하면 **폴더 선택** 대화 상자를 사용하여 경로를 찾을 수 있습니다. 프레임워크 경로는 로컬 복사본이거나 Mac에서 네트워크를 통해 액세스할 수 있는 공유일 수 있습니다.  
   
      ![XCode에서 가져오기 프레임워크 창](../cross-platform/media/cppmdd_u2_importxcode_frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
   
@@ -67,11 +67,11 @@ ms.locfileid: "31066940"
   
 7.  **프로젝트 설정** 창에서는 프레임워크를 변경하고 마법사에서 만드는 각 프로젝트에 대한 헤더 검색 경로 설정을 포함할 수 있습니다. 이 창을 사용하여 전역 설정과 다른 프로젝트 관련 경로를 설정합니다.  
   
-     특정 프로젝트에 대한 경로를 설정하려면 **대상 프로젝트** 드롭다운에서 프로젝트 파일을 선택한 다음 **프레임워크 검색 경로** 및 **헤더 검색 경로 포함** 컨트롤에서 값을 설정합니다. 각 컨트롤 옆에 있는 찾아보기 단추 [...]를 사용하면 **폴더 선택** 대화 상자를 사용하여 경로를 찾을 수 있습니다.  
+     특정 프로젝트에 대한 경로를 설정하려면 **대상 프로젝트** 드롭다운에서 프로젝트 파일을 선택한 다음 **프레임워크 검색 경로** 및 **헤더 검색 경로 포함** 컨트롤에서 값을 설정합니다. 각 컨트롤 옆에 있는 찾아보기 단추 **...** 를 사용하면 **폴더 선택** 대화 상자를 사용하여 경로를 찾을 수 있습니다.  
   
      ![XCode에서 가져오기 프로젝트 창](../cross-platform/media/cppmdd_u2_importxcode_projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
   
-     원격 Mac이 Visual Studio에서 이 PC와 연결되지 않은 경우 [원격 컴퓨터 구성] 링크가 표시됩니다. 연결 설정 방법에 대한 지침은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요.  
+     원격 Mac이 Visual Studio에서 이 PC와 연결되지 않은 경우 **원격 머신 구성** 링크가 표시됩니다. 연결 설정 방법에 대한 지침은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요.  
   
      마법사 설정을 사용하여 XCode 프로젝트를 가져오려면 **가져오기**를 선택합니다.  
   

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42415e1a8814de8b7a9872bf619d0ae3a000fc69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31068663"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251551"
 ---
-# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
-Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화 기술인 Hyper-V에서 가상 컴퓨터로 실행됩니다. 에뮬레이터를 실행하려면 컴퓨터가 이 항목의 설명대로 Hyper-V를 실행하기 위한 요구 사항을 충족해야 합니다.  
+# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터에 대한 시스템 요구 사항
+Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화 기술인 Hyper-V에서 가상 머신으로 실행됩니다. 에뮬레이터를 실행하려면 컴퓨터가 이 항목의 설명대로 Hyper-V를 실행하기 위한 요구 사항을 충족해야 합니다.  
   
  에뮬레이터를 설치할 때 설치 프로그램이 이러한 필수 조건을 자동으로 구성하려고 시도합니다. 설치에서 이 필수 조건이 성공적으로 구성되면 에뮬레이터는 예상대로 작동합니다. 제대로 구성되지 않으면 수동으로 이 필수 조건을 설정해야 할 수도 있습니다. 필수 조건을 수동으로 구성해야 하는 경우 단계 및 도구는 Windows Phone 에뮬레이터에 대해 [여기](/previous-versions/windows/apps/jj863509\(v=vs.105\)) 에서 설명하는 단계와 동일합니다.  
   
@@ -117,7 +117,7 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
   
 |요구 사항|요구 사항을 확인하고 사용하도록 설정하는 방법|  
 |-----------------|----------------------------------------------|  
-|Hyper-V를 설치해야 함|[Windows Phone 에뮬레이터용 Hyper-V를 설정](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx)하는 데 사용되는 것과 동일한 지침을 따릅니다.<br /><br /> 서비스 스냅인에서 **Hyper-V 가상 컴퓨터 관리** 서비스의 상태를 확인합니다.|  
+|Hyper-V를 설치해야 함|[Windows Phone 에뮬레이터용 Hyper-V를 설정](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx)하는 데 사용되는 것과 동일한 지침을 따릅니다.<br /><br /> 서비스 스냅인에서 **Hyper-V 가상 머신 관리** 서비스의 상태를 확인합니다.|  
 |Hyper-V를 실행해야 함|서비스 관리에 대한 자세한 내용은 다음 항목을 참조합니다.<br /><br /> -   [서비스 시작, 중지, 일시 중지, 계속 또는 다시 시작](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [서비스 시작 방법 구성](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  로컬 Hyper-V Administrators 그룹의 구성원이어야 합니다.  
@@ -136,7 +136,7 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
 ##  <a name="BootableVHD"></a> 부팅 가능한 VHD에서 에뮬레이터 실행은 지원되지 않음  
  부팅 가능한 VHD에서 Windows를 실행하는 동안 Android용 Visual Studio 에뮬레이터에서 앱을 실행하려는 경우 에뮬레이터는 일반적으로 시작되는 데 몇 분 정도 걸리거나 시작되지 않습니다. 에뮬레이터가 시작되지 못하는 경우 다음과 같은 메시지가 표시됩니다. 앱을 배포하지 못했습니다. 다시 시도하세요.  
   
- 이 구성은 지원되지 않습니다. 관련된 문제에 대한 자세한 내용은 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요.  
+ 이 구성은 지원되지 않습니다. 관련된 문제에 대한 자세한 내용은 [Android용 Visual Studio 에뮬레이터 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요.  
   
 ##  <a name="Files"></a> Hyper-V에 압축 및 암호화되지 않은 파일 필요  
  NTFS 파일 시스템으로 구성된 하드 드라이브에서는 Hyper-V에 사용되는 가상 하드 디스크는 압축되지 않고 암호화되지 않아야 합니다. 다음 디렉터리가 압축 또는 암호화되지 않았는지 확인합니다.  
@@ -155,4 +155,4 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
  에뮬레이터가 OpenGL ES에서 사용되는 GPU 등에 대한 호출을 에뮬레이트하기 위해서는 컴퓨터에 적절한 DirectX 드라이버와 함께 DirectX 호환 GPU가 설치되어 있어야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Visual Studio Emulator for Android 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Android용 Visual Studio 에뮬레이터 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a39c042b4a4badd46f7650fe0f2530527c5d537d
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232196"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380618"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
-이 5~10분 진행되는 Visual Studio를 사용하는 방법에 대한 소개에서 ASP.NET 프로젝트 템플릿과 C# 프로그래밍 언어를 사용하여 간단한 “Hello World” 앱을 만듭니다.
+이 5~10분 진행되는 Visual Studio를 사용하는 방법에 대한 소개에서 ASP.NET 프로젝트 템플릿과 C# 프로그래밍 언어를 사용하여 간단한 "Hello World" 웹앱을 만듭니다.
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
@@ -41,13 +41,14 @@ ms.locfileid: "39232196"
 
    > [!NOTE]
    > **.NET Core** 프로젝트 템플릿 범주가 표시되지 않으면 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다.
-   >![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기](../ide/media/open-visual-studio-installer.png)
+   >
+   > ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기](../ide/media/open-visual-studio-installer.png)
    >
    > Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
    >
    > ![VS 설치 관리자에서 ASP.NET 워크로드](../ide/media/quickstart-aspnet-workload.png)
    >
-   >(새 워크로드를 계속 설치하려면 먼저 Visual Studio를 닫아야 할 수 있습니다.)
+   > (새 워크로드를 계속 설치하려면 먼저 Visual Studio를 닫아야 할 수 있습니다.)
 
 1. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자의 위쪽 드롭다운 메뉴에 **ASP.NET Core 2.0** 이 표시되는지 확인합니다. 그런 다음, **웹 응용 프로그램**을 선택하고 **확인**을 선택합니다.
 
@@ -55,7 +56,7 @@ ms.locfileid: "39232196"
 
 곧 Visual Studio에서 프로젝트 파일이 열립니다.
 
-## <a name="create-the-application"></a>응용 프로그램 만들기
+## <a name="create-the-app"></a>앱 만들기
 
 1. **솔루션 탐색기**에서 **Pages** 폴더를 확장한 다음, **About.cshtml**을 선택합니다.
 
@@ -85,7 +86,7 @@ ms.locfileid: "39232196"
 
    ![Visual Studio 편집기에서 응용 프로그램 설명 영역의 기본 메시지 텍스트 변경](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
-## <a name="run-the-application"></a>응용 프로그램 실행
+## <a name="run-the-app"></a>앱 실행
 
 1. **Ctrl**+**F5**를 눌러 앱을 실행하고 웹 브라우저에서 엽니다.
 

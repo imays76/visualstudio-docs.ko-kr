@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 720a69b1eae8a14247027a52ef2972e43203163b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303285"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382411"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 테스트 탐색기 FAQ
 
@@ -29,7 +29,7 @@ ms.locfileid: "36303285"
 
 ### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-are-dynamically-defined-for-example-theories-custom-adapters-custom-traits-ifdefs-etc-how-can-i-discover-these-tests"></a>1. 텍스트 탐색기가 동적으로 정의된 나의 테스트를 검색하지 않습니다. (예: 이론, 사용자 지정 어댑터, 사용자 지정 특성, #ifdefs 등) 이러한 테스트를 검색하려면 어떻게 할까요?
 
-  프로젝트를 빌드하고 **도구 > 옵션 > 테스트**에서 어셈블리 기반 검색이 켜져 있는지 확인합니다.
+  프로젝트를 빌드하고 **도구** > **옵션** > **테스트**에서 어셈블리 기반 검색이 켜져 있는지 확인합니다.
 
   [실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)은 소스 기반 테스트 검색입니다. 이론, 사용자 지정 어댑터, 사용자 지정 특성, `#ifdef` 문 등을 사용하는 테스트는 런타임에 정의되기 때문에 검색할 수 없습니다. 해당 테스트를 정확하게 검색하려면 빌드가 필요합니다. 15.6 미리 보기에서 어셈블리 기반 검색(기존 Discoverer)은 빌드 후에만 실행됩니다. 이 설정은 실시간 테스트 검색은 편집 중에 검색할 수 있는 만큼 테스트를 검색하고 어셈블리 기반 검색을 사용하면 동적으로 정의된 테스트가 빌드 후에 표시될 수 있음을 의미합니다. 실시간 테스트 검색은 응답성을 개선하지만 빌드 후에 완전하고 정확한 결과를 얻을 수 있습니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "36303285"
 
 ### <a name="3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on"></a>3. 어셈블리 기반 검색이 프로젝트에서 더 이상 작동하지 않습니다. 다시 켜려면 어떻게 할까요?
 
-  **도구 > 옵션 > 테스트**로 이동하여 **빌드 후 빌드된 어셈블리에서 테스트를 추가로 검색** 상자를 선택합니다.
+  **도구** > **옵션** > **테스트**로 이동하여 **빌드 후 빌드된 어셈블리에서 테스트를 추가로 검색** 상자를 선택합니다.
 
   ![어셈블리 기반 옵션](media/testex-toolsoptions.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "36303285"
 
 ### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6. 테스트 탐색기에 대해 로그를 어떻게 켤 수 있습니까?
 
-  **도구 > 옵션 > 테스트**로 이동하고 거기서 로깅 섹션을 찾습니다.
+  **도구** > **옵션** > **테스트**로 이동하고 거기서 로깅 섹션을 찾습니다.
 
 ### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7. UWP 프로젝트의 내 테스트가 내 앱을 배포할 때까지 검색되지 않는 이유는 무엇입니까?
 

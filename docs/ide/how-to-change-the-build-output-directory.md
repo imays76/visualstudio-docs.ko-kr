@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 721b8241a3278ddbf1be3b5477e8829b7aa4447b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aebb4603d32f61c2d4b50355a550a1a932336962
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942249"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379691"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>방법: 빌드 출력 디렉터리 변경
 
@@ -28,7 +28,7 @@ ms.locfileid: "31942249"
 
 ## <a name="change-the-build-output-directory"></a>빌드 출력 디렉터리 변경
 
-1.  메뉴 모음에서 **프로젝트** > **\<Appname> 속성**을 선택합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택할 수도 있습니다.
+1.  메뉴 모음에서 **프로젝트** > **\<Appname> 속성**을 선택합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택할 수도 있습니다.
 
 2.  Visual Basic 프로젝트의 경우 **컴파일** 탭을 선택합니다. C# 프로젝트의 경우 **빌드** 탭을 선택합니다. C++ 프로젝트 또는 JavaScript 프로젝트의 경우 **일반** 탭을 선택합니다.
 

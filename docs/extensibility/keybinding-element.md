@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a199a805493b0b9ac9ae6e75cec322c74a99987e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3b5e35738f04dd4a05a753a58e91ca385ecd56bd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511576"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639326"
 ---
 # <a name="keybinding-element"></a>KeyBinding 요소
 KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.  
   
- 명령에는 상호 연결 된 단일 및 이중 키 바인딩을 가질 수 있습니다. 단일 키 바인딩의 예로 CTRL + S에 대 한 합니다 **저장할** 명령입니다. 이중 키 바인딩을 두 개의 연속 키 조합의 명령을 트리거할 필요 합니다. 이중 키 바인딩을 예로 CTRL + K, CTRL + K를 책갈피를 설정 합니다.  
+ 명령에는 상호 연결 된 단일 및 이중 키 바인딩을 가질 수 있습니다. 단일 키 바인딩을 예로 **Ctrl**+**S** 에 대 한 합니다 **저장** 명령입니다. 이중 키 바인딩을 두 개의 연속 키 조합의 명령을 트리거할 필요 합니다. 이중 키 바인딩을 예로 **Ctrl * +** K**를**Ctrl**+** K * * 책갈피를 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -33,7 +33,7 @@ KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
   
@@ -42,10 +42,10 @@ KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.
 |guid|필수.|  
 |ID|필수.|  
 |편집기|필수. 편집기 GUID는이 바로 가기 키를 활성화 될 편집 컨텍스트를 나타냅니다. 전역 바인딩 범위 값은 "guidVSStd97"입니다.|  
-|key1|필수. 유효한 값은 모두 입력할 수 영숫자 및 두 자리 16 진수 값 0x로 시작 하 고 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)합니다.|  
-|mod1|선택 사항입니다. 조합을 CTRL, ALT 및 SHIFT 공백으로 구분 합니다.|  
-|key2|선택 사항입니다. 유효한 값은 모두 입력할 수 영숫자 및 두 자리 16 진수 값 0x로 시작 하 고 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)합니다.|  
-|mod2|선택 사항입니다. 조합을 CTRL, ALT 및 SHIFT 공백으로 구분 합니다.|  
+|key1|필수. 유효한 값은 모두 입력할 수 영숫자 및 두 자리 16 진수 값 0x로 시작 하 고 [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx)합니다.|  
+|mod1|선택 사항입니다. 조합을 **Ctrl**를 **Alt**, 및 **Shift** 공백으로 구분 합니다.|  
+|key2|선택 사항입니다. 유효한 값은 모두 입력할 수 영숫자 및 두 자리 16 진수 값 0x로 시작 하 고 [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx)합니다.|  
+|mod2|선택 사항입니다. 조합을 **Ctrl**를 **Alt**, 및 **Shift** 공백으로 구분 합니다.|  
 |에뮬레이터|선택 사항입니다.|  
 |조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
@@ -73,6 +73,6 @@ KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [KeyBindings 요소](../extensibility/keybindings-element.md)   
- [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

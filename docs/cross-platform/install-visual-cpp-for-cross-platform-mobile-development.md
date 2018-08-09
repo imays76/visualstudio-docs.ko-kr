@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281105"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251909"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>C++를 사용하여 플랫폼 간 모바일 개발 설치
 
@@ -40,7 +40,7 @@ Visual Studio에서 C++를 사용하여 Windows 데스크톱 앱, UWP(유니버�
 
 ## <a name="get-the-tools"></a>도구 다운로드
 
-C++를 사용한 모바일 개발은 Visual Studio Community/Professional/Enterprise 버전에서 사용할 수 있습니다. Visual Studio를 가져오려면 [Visual Studio 다운로드](https://go.microsoft.com/fwlink/p/?linkid=517106) 페이지로 이동합니다. 플랫폼 간 모바일 개발 도구는 Visual Studio 2015 업데이트 2 이상부터 사용할 수 있습니다.
+C++를 사용한 모바일 개발은 Visual Studio Community/Professional/Enterprise 버전에서 사용할 수 있습니다. Visual Studio를 설치하려면 [Visual Studio 다운로드](https://go.microsoft.com/fwlink/p/?linkid=517106) 페이지로 이동합니다. 플랫폼 간 모바일 개발 도구는 Visual Studio 2015 업데이트 2 이상부터 사용할 수 있습니다.
 
 ## <a name="install-the-tools"></a>도구 설치
 
@@ -105,7 +105,7 @@ Visual Studio 2015를 사용하는 경우 설치 관리자에는 Visual Studio 2
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 
-플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버그하고 iOS 시뮬레이터 또는 iOS 장치에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 원격으로 코드를 빌드해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트를 설치 및 구성해야 합니다. 자세한 설치 지침, 필수 조건 및 구성 옵션은 [Install And Configure Tools to Build using iOS](install-and-configure-tools-to-build-using-ios.md)을 참조하세요. iOS용으로 빌드하지 않는 경우에는 이 단계를 건너뛸 수 있습니다.
+플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버그하고 iOS 시뮬레이터 또는 iOS 장치에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 원격으로 코드를 빌드해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트를 설치 및 구성해야 합니다. 자세한 설치 지침, 필수 조건 및 구성 옵션은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요. iOS용으로 빌드하지 않는 경우에는 이 단계를 건너뛸 수 있습니다.
 
 ## <a name="install-or-update-dependencies-manually"></a>수동으로 종속성 설치 또는 업데이트
 
@@ -118,11 +118,11 @@ Visual Studio 2015를 사용하는 경우 설치 관리자에는 Visual Studio 2
 
 - [Java SE 개발 키트](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-   기본적으로 설치 관리자는 Java 도구를 C:\Program Files (x86)\Java에 넣습니다.
+   기본적으로 설치 관리자는 Java 도구를 *C:\Program Files (x86)\Java*에 배치합니다.
 
 - [Android SDK](https://developer.android.com/sdk/index.html#command-tools)
 
-   설치 중에 권장 옵션으로 API를 업데이트합니다. 최소한 Android 5.0 Lollipop용 SDK(API 수준 21)를 설치해야 합니다. 기본적으로 설치 관리자는 Android SDK를 C:\Program Files (x86)\Android\android-sdk에 넣습니다.
+   설치 중에 권장 옵션으로 API를 업데이트합니다. 최소한 Android 5.0 Lollipop용 SDK(API 수준 21)를 설치해야 합니다. 기본적으로 설치 관리자는 Android SDK를 *C:\Program Files (x86)\Android\android-sdk*에 배치합니다.
 
    Android SDK 디렉터리에서 SDK Manager 앱을 다시 실행하여 SDK를 업데이트하고 선택적 도구 및 추가 API 수준을 설치할 수 있습니다. **관리자 권한으로 실행** 을 사용하여 SDK Manager 앱을 실행하지 않으면 업데이트가 설치되지 않을 수도 있습니다. Android 앱을 빌드하는 데 문제가 있는 경우 SDK Manager에서 설치된 SDK에 대한 업데이트를 확인합니다.
 
@@ -130,11 +130,11 @@ Visual Studio 2015를 사용하는 경우 설치 관리자에는 Visual Studio 2
 
 - [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)
 
-   기본적으로 설치 관리자는 C:\ProgramData\Microsoft\AndroidNDK에 Android NDK를 저장합니다. Android NDK를 다시 다운로드 및 설치하여 NDK 설치를 업데이트할 수 있습니다.
+   기본적으로 설치 관리자는 *C:\ProgramData\Microsoft\AndroidNDK*에 Android NDK를 배치합니다. Android NDK를 다시 다운로드 및 설치하여 NDK 설치를 업데이트할 수 있습니다.
 
 - [Apache Ant](https://ant.apache.org/bindownload.cgi)
 
-   기본적으로 설치 관리자는 Apache Ant를 C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps에 넣습니다.
+   기본적으로 설치 관리자는 *C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps*에 Apache Ant를 배치합니다.
 
 - [Microsoft Visual Studio Emulator for Android](https://aka.ms/vscomemudownload)
 

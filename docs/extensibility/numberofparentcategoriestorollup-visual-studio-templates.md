@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e94e4b67727308657becac829bcdd30e571a2be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137462"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639515"
 ---
-# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp(Visual Studio 템플릿)
-서식 파일을 표시 하는 부모 범주 수를 지정 된 **새 프로젝트** 대화 상자.  
+# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (Visual Studio 템플릿)
+부모 범주에 템플릿 표시 하는 횟수를 지정 합니다 **새 프로젝트** 대화 상자.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -39,7 +39,7 @@ ms.locfileid: "31137462"
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
  없음  
@@ -56,13 +56,13 @@ ms.locfileid: "31137462"
 ## <a name="text-value"></a>텍스트 값  
  `integer` 값이 필요 합니다.  
   
- 서식 파일을 표시 하는 부모 범주 수를 지정 하는이 값은 **새 프로젝트** 대화 상자.  
+ 이 값에서 템플릿을 표시 하는 부모 범주 수를 지정 합니다 **새 프로젝트** 대화 상자.  
   
 ## <a name="remarks"></a>설명  
  `NumberOfParentCategoriesToRollUp`는 선택적 요소입니다.  
   
-## <a name="example"></a>예제  
- 이 예제에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다. 이 메타 데이터와 서식 파일은 두 수준 폴더를 최상위 수준 아래에 배치 됩니다 경우 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 노드를 서식 파일에서 최상위 노드에 표시 됩니다는 **새 프로젝트** 대화 상자. 경우는 `NumberOfParentCategoriesToRollUp` 템플릿을 노드에 표시 하에서는 물리적 위치를 설정 하지 않으면 합니다.  
+## <a name="example"></a>예  
+ 이 예제에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다. 이 메타 데이터를 사용 하 여 템플릿 최상위 수준 아래 두 수준 폴더에 배치 되 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 노드를 서식 파일에서 최상위 노드에 나타납니다 합니다 **새 프로젝트** 대화 상자. 경우는 `NumberOfParentCategoriesToRollUp` 템플릿을 나타나는 노드는에서 실제로 설정 하지 않으면.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,6 +89,6 @@ ms.locfileid: "31137462"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

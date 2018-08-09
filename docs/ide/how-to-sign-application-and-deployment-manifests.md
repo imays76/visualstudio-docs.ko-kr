@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cee4f7ff8438c1e20f39a24e9e439e7507d655b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951728"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381949"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>방법: 응용 프로그램 및 배포 매니페스트 서명
 
@@ -32,7 +32,7 @@ ClickOnce 배포를 사용하여 응용 프로그램을 게시하려면 응용 �
 
  ClickOnce 배포에 대한 자세한 내용은 [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)를 참조하세요.
 
- *.exe* 기반 응용 프로그램의 경우 ClickOnce 매니페스트에 서명하는 것은 선택 사항입니다. 자세한 내용은 이 문서에서 “서명되지 않은 매니페스트 생성” 섹션을 참조하세요.
+ *.exe* 기반 응용 프로그램의 경우 ClickOnce 매니페스트에 서명하는 것은 선택 사항입니다. 자세한 내용은 이 문서에서 "서명되지 않은 매니페스트 생성" 섹션을 참조하세요.
 
  키 파일 만들기에 대한 자세한 내용은 [방법: 공개/개인 키 쌍 만들기](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)를 참조하세요.
 
@@ -41,14 +41,14 @@ ClickOnce 배포를 사용하여 응용 프로그램을 게시하려면 응용 �
 
 ## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>인증서를 사용하여 응용 프로그램 및 배포 매니페스트에 서명하려면
 
-1.  [프로젝트 속성] 창으로 이동합니다(**솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하거나, **빠른 실행** 창에 **프로젝트 속성**을 입력하거나, **솔루션 탐색기** 창 내에서 **Alt**+**Enter**를 누름). **서명** 탭에서 **ClickOnce 매니페스트 서명** 확인란을 선택합니다.
+1.  프로젝트 속성 창으로 이동합니다.(**솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고, **속성**을 선택하거나, **빠른 실행** 창에 **프로젝트 속성**을 입력하거나, **솔루션 탐색기** 내에서 **Alt**+**Enter** 키를 누릅니다.) **서명** 탭에서 **ClickOnce 매니페스트 서명** 확인란을 선택합니다.
 
 2.  **저장소에서 선택** 단추를 클릭합니다.
 
      **인증서 선택** 대화 상자가 나타나고 Windows 인증서 저장소의 콘텐츠가 표시됩니다.
 
     > [!TIP]
-    > **인증서 속성을 보려면 여기를 클릭하세요.** 를 클릭하면 **인증서 세부 정보** 대화 상자가 나타납니다. 이 대화 상자에는 인증서에 대한 세부 정보 및 추가 옵션이 포함됩니다. **인증서**를 클릭하여 추가 도움말 정보를 볼 수 있습니다.
+    > **인증서 속성을 보려면 여기를 클릭하십시오.** 를 클릭하면 **인증서 세부 정보** 대화 상자가 나타납니다. 이 대화 상자에는 인증서에 대한 세부 정보 및 추가 옵션이 포함됩니다. **인증서**를 클릭하여 추가 도움말 정보를 볼 수 있습니다.
 
 3.  매니페스트에 서명하는 데 사용할 인증서를 선택합니다.
 
@@ -81,7 +81,7 @@ ClickOnce 배포를 사용하여 응용 프로그램을 게시하려면 응용 �
 
 ## <a name="generate-unsigned-manifests"></a>서명되지 않은 매니페스트 생성
 
-*.exe* 기반 응용 프로그램의 경우 ClickOnce 매니페스트에 서명하는 것은 선택 사항입니다. 다음 절차에서는 서명되지 않은 ClickOnce 매니페스트를 생성하는 방법을 보여줍니다.
+*.exe* 기반 응용 프로그램의 경우 ClickOnce 매니페스트에 서명하는 것은 선택 사항입니다. 다음 절차에서는 서명되지 않은 ClickOnce 매니페스트를 생성하는 방법을 보여 줍니다.
 
 > [!IMPORTANT]
 > 서명되지 않은 매니페스트를 사용하여 응용 프로그램의 개발과 테스트를 간소화할 수 있습니다. 그러나 서명되지 않은 매니페스트를 사용하면 프로덕션 환경에 상당한 보안 위험이 추가됩니다. ClickOnce 응용 프로그램이 인터넷 또는 악성 코드의 기타 출처와 완전히 격리된 인트라넷 내의 컴퓨터에서 실행되는 경우에만 서명되지 않은 매니페스트를 사용하는 것이 좋습니다.

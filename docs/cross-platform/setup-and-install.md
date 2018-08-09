@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a0f9240cd729d26eecd3c098c28799369b48cea6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8bbb27ad3368b53fc3e333d3260f2f30551c4177
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924371"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251194"
 ---
 # <a name="setup-and-install"></a>설정 및 설치
 
@@ -84,7 +84,7 @@ Visual Studio 2017을 아직 설치하지 않은 경우 다음 단계를 수행�
 
 1.  Apple ID가 없으면 [https://appleid.apple.com](https://appleid.apple.com/)에서 무료 Apple ID를 만듭니다. 이 Apple ID는 Xcode를 설치하고 서명하는 데 필요합니다.
 
-2.  [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)에서 Xcode를 다운로드하여 설치하고, [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1)(XCode에 계정 추가) (apple.com)에 설명된 대로 Apple ID를 추가합니다.
+2.  [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)에서 Xcode를 다운로드하여 설치하고, [Xcode에 계정 추가](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1)(apple.com)에 설명된 대로 Apple ID를 추가합니다.
 
 3.  [Mac용 Visual Studio 설정 및 설치](/visualstudio/mac/installation)에 있는 지침에 따라 Mac용 Visual Studio를 다운로드하고 설치합니다.
 

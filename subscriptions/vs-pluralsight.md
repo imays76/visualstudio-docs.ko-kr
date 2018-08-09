@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 242a8a5521d53e631e69036a94434f892fb2e19c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281182"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380794"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -105,7 +105,7 @@ A: 예, Visual Studio 구독자는 Pluralsight 교육 혜택의 일부로 전문
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Q: Pluralsight 구독이 만료되면 어떻게 되나요?
 A: 체험 Pluralsight 구독이 끝나면 다음과 같은 두 가지 옵션이 있습니다.
-- 세 가지 주요 영역 중 하나에서 클라우드에서 앱 개발, AI, Machine Learning 및 데이터, 클라우드에서 DevOps와 같은 50개 과정의 제한된 집합에 대한 무료 12개월 액세스(자신의 구독이 자격이 있는지 보려면 [자격 테이블](#eligibility)을 확인)를 얻습니다. 만료된 후 체험판 액세스를 요구하는 Pluralsight 이메일을 기다려 보세요. 각 부분 라이브러리에서 사용할 수 있는 [과정의 목록](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit)을 확인할 수 있습니다.
+- 클라우드에서 앱 개발, AI, 기계 학습 및 데이터, 클라우드에서 DevOps와 같은 세 가지 주요 영역 중 하나에서 50개 과정의 제한된 집합에 대한 무료 12개월 액세스를 얻습니다(자신의 구독이 자격이 있는지 보려면 [자격 테이블](#eligibility)을 확인). 만료된 후 체험판 액세스를 요구하는 Pluralsight 이메일을 기다려 보세요. 각 부분 라이브러리에서 사용할 수 있는 [과정의 목록](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit)을 확인할 수 있습니다.
 - 전체 과정 카탈로그에 대한 액세스를 제공하는 구독을 10% 할인된 가격으로 Pluralsight에서 직접 구매할 수도 있습니다.  자세한 내용은 [Pluralsight](http://www.pluralsight.com)에 문의하세요.
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>Q: 회사에서 기업계약을 통해 Visual Studio 구독을 갱신합니다. Pluralsight 혜택이 다시 설정되나요?

@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f9f233b5f43555f86f0a49c5e5853cad6d7456b1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 2a8851a48d1629b5324d0eb7615c2f2c9f2719e0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924426"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251857"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio에서 Xamarin.Forms를 사용한 앱 빌드 기본 사항 알아보기
 
@@ -55,11 +55,11 @@ ms.locfileid: "37924426"
 
     템플릿이 이 위치에 없으면 Xamarin을 설치하거나 Visual Studio 2017 기능을 사용하도록 설정해야 합니다. [설정 및 설치](../cross-platform/setup-and-install.md)를 참조하세요.
 
-2.  [확인]을 클릭하면 일부 옵션을 선택할 수 있습니다. **비어 있는 앱** 및 **.NET Standard**를 선택합니다.
+2.  **확인**을 클릭하면 일부 옵션을 선택할 수 있습니다. **비어 있는 앱** 및 **.NET Standard**를 선택합니다.
 
     ![새 플랫폼 간 앱 프로젝트 만들기](../cross-platform/media/crossplat-xamarin-formsguide-3.png "CrossPlat Xamarin FormsGuide 3")
 
-3.  확인을 클릭하여 솔루션을 만든 후에는 4개의 솔루션이 만들어집니다.
+3.  **확인**을 클릭하여 솔루션을 만든 후에는 4개의 프로젝트가 만들어집니다.
 
     -   **WeatherApp**: 일반적인 비즈니스 논리 및 Xamarin.Forms를 사용하는 UI 코드를 포함하여 플랫폼 간에 공유되는 코드를 작성하는 .NET Standard 라이브러리.
 
@@ -118,7 +118,7 @@ ms.locfileid: "37924426"
 
 1.  **WeatherApp** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 클래스...** 를 선택합니다. **새 항목 추가** 대화 상자에서 파일 이름을 **Weather.cs**로 지정합니다. 이 클래스는 날씨 데이터 서비스의 데이터를 저장하는 데 사용합니다.
 
-2.  **Weather.cs**의 전체 콘텐츠를 다음 코드로 바꿉니다.
+2.  *Weather.cs*의 전체 콘텐츠를 다음 코드로 바꿉니다.
 
     ```csharp
     namespace WeatherApp
@@ -274,7 +274,7 @@ Xamarin.Forms를 사용하여 .NET Standard 라이브러리에서 공유 UI 코�
     }
     ```
 
-4.  앱이 시작될 때 첫 번째 화면으로 **WeatherPage**를 열려면 **App.xaml.cs**의 기본 생성자를 다음 코드로 바꿉니다.
+4.  앱이 시작될 때 첫 번째 화면으로 **WeatherPage**를 열려면 *App.xaml.cs*의 기본 생성자를 다음 코드로 바꿉니다.
 
     ```csharp
     public App()
@@ -406,7 +406,7 @@ Xamarin.Forms는 앱이 자동으로 네이티브 모양 및 느낌을 갖도록
 
      여기에 표시되지 않았지만 `OnPlatform` 태그를 사용하여 앱이 실행되고 있는 현재 플랫폼에 국한된 속성 값을 선택할 수 있습니다([필수 XAML 구문](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax/) 참조). 코드 숨김 파일에서 [`Device.iOS`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.iOS/), [`Device.Android`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.Android/) 및 [`Device.UWP`](https://developer.xamarin.com/api/field/Xamarin.Forms.Device.UWP/)라는 이름의 [`Device`](https://developer.xamarin.com/api/type/Xamarin.Forms.Device/) 클래스에 정의된 상수가 있는 [`Device.RuntimePlatform`](https://developer.xamarin.com/api/property/Xamarin.Forms.Device.RuntimePlatform/) 속성을 비교하여 응용 프로그램이 실행 중인 플랫폼을 결정할 수 있습니다.
 
-2.  **WeatherPage.xaml.cs**에서 `GetWeatherBtn_Clicked` 이벤트 처리기를 아래 코드로 바꿉니다. 이 코드는 입력 필드에 우편 번호가 있는지 확인하고 해당 우편 번호에 대한 데이터를 검색합니다. 그런 다음, 전체 페이지의 바인딩 컨텍스트를 결과 `Weather` 인스턴스로 설정합니다. 단추 텍스트를 “다시 검색합니다.”로 설정하여 코드를 종료합니다. UI의 각 레이블은 `Weather` 클래스의 속성에 바인딩합니다. 화면의 바인딩 컨텍스트를 `Weather` 인스턴스로 설정하면 해당 레이블이 자동으로 업데이트됩니다.
+2.  *WeatherPage.xaml.cs*에서 `GetWeatherBtn_Clicked` 이벤트 처리기를 아래 코드로 바꿉니다. 이 코드는 입력 필드에 우편 번호가 있는지 확인하고 해당 우편 번호에 대한 데이터를 검색합니다. 그런 다음, 전체 페이지의 바인딩 컨텍스트를 결과 `Weather` 인스턴스로 설정합니다. 단추 텍스트를 “다시 검색합니다.”로 설정하여 코드를 종료합니다. UI의 각 레이블은 `Weather` 클래스의 속성에 바인딩합니다. 화면의 바인딩 컨텍스트를 `Weather` 인스턴스로 설정하면 해당 레이블이 자동으로 업데이트됩니다.
 
     ```csharp
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)

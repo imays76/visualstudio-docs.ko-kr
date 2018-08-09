@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968538"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379291"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>방법: 사용자 지정 진단 데이터 어댑터 설치
 
@@ -25,7 +25,7 @@ ms.locfileid: "31968538"
 
  다음 절차에 따라 사용자 지정 진단 데이터 어댑터를 적합한 위치에 설치합니다. 진단 데이터 어댑터를 설치할 컴퓨터에 대한 관리자 권한이 있어야 합니다.
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>사용자 지정 진단 데이터 어댑터 설치
+## <a name="install-a-custom-diagnostic-data-adapter"></a>사용자 지정 진단 데이터 어댑터 설치
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>사용자 지정 진단 데이터 어댑터를 설치하려면
 
@@ -35,9 +35,9 @@ ms.locfileid: "31968538"
 
      복사할 파일:
 
-    -   진단 데이터 어댑터 어셈블리(.dll)(필수)
+    -   진단 데이터 어댑터 어셈블리(*.dll*)(필수)
 
-    -   어댑터에 대한 디버그 데이터 파일(.pdb)(선택 사항)
+    -   어댑터에 대한 디버그 데이터 파일(*.pdb*)(선택 사항)
 
     -   어댑터에 대한 구성 파일(`<diagnostic data adapter name>.dll.config`)(기본 구성 설정을 사용하는 경우)(선택 사항)
 
@@ -63,5 +63,5 @@ ms.locfileid: "31968538"
 - [방법: 진단 데이터 어댑터 만들기](../test/how-to-create-a-diagnostic-data-adapter.md)
 - [방법: 진단 데이터 어댑터 데이터용 사용자 지정 편집기 만들기](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [진단 데이터 어댑터를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
-- [진단 데이터 어댑터를 만들어 사용자 지정 데이터를 수집하거나 테스트 컴퓨터에 영향 주기](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [진단 데이터 어댑터를 만들어 사용자 지정 데이터를 수집하거나 테스트 머신에 영향 주기](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)

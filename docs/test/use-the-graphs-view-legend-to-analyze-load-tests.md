@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751403"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380250"
 ---
-# <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>그래프 뷰 범례를 사용하여 부하 테스트 분석
+# <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>그래프 보기 범례를 사용하여 부하 테스트 분석
 
 부하 테스트 분석기의 그래프 뷰에는 현재 선택한 그래프와 연결된 각 성능 카운터에 대한 정보가 표시되는 범례 패널이 포함되어 있습니다.
 
@@ -55,10 +55,10 @@ ms.locfileid: "34751403"
 -   카운터에 대한 **플롯 옵션** 대화 상자에 액세스할 수 있습니다.
 
 > [!TIP]
-> 부하 테스트 분석기의 도구 모음에서 **그래프 옵션 드롭다운** 단추를 사용하고 **범례 표시**를 선택하여 그래프 뷰와 관련된 **범례** 패널을 표시하거나 숨길 수 있습니다.
+> **부하 테스트 분석기** 도구 모음에서 **그래프 옵션 드롭다운** 단추를 사용하고 **범례 표시**를 선택하여 그래프 보기와 관련된 **범례** 패널을 표시하거나 숨길 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 그래프 카운터에 대한 출력 옵션 지정](../test/how-to-specify-plot-options-for-graphing-counters.md)
+- [방법: 그래프 카운터에 대한 플롯 옵션 지정](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [방법: 그래프의 영역으로 확대](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)

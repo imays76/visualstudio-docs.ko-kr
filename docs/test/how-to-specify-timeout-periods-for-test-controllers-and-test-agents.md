@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 444c4e7214d55aad270a88325ee9e694e84987c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979050"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379262"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>방법: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간 지정
 
@@ -26,7 +26,7 @@ ms.locfileid: "31979050"
 
  테스트 컨트롤러 또는 테스트 에이전트의 다양한 제한 시간 설정을 편집하려면 아래 표의 키 이름 및 값을 사용하여 다음 구성 파일을 수정합니다.
 
--   테스트 컨트롤러: QTController.exe.config
+-   테스트 컨트롤러: *QTController.exe.config*
 
     |키 이름|설명|값|
     |--------------|-----------------|-----------|
@@ -35,7 +35,7 @@ ms.locfileid: "31979050"
     |AgentInitializeTimeout|테스트 실행 시작 시 모든 에이전트 및 해당 데이터 수집기가 초기화되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 중단됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분)|
     |AgentCleanupTimeout|모든 에이전트 및 해당 데이터 수집기가 정리되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 완료됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분)|
 
--   테스트 에이전트: QTAgentService.exe.config
+-   테스트 에이전트: *QTAgentService.exe.config*
 
     |키 이름|설명|값|
     |--------------|-----------------|-----------|
@@ -46,7 +46,7 @@ ms.locfileid: "31979050"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>테스트 컨트롤러에 대한 에이전트 제한 시간 옵션을 지정하려면
 
-1. %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\에 있는 QTCcontroller.exe.config XML 구성 파일을 엽니다.
+1. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*에 있는 *QTCcontroller.exe.config* XML 구성 파일을 엽니다.
 
 2. `<appSettings>` 태그를 찾습니다.
 
@@ -80,7 +80,7 @@ ms.locfileid: "31979050"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>테스트 에이전트에 대한 에이전트 제한 시간 옵션을 지정하려면
 
-1. %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\에 있는 QTAgentService.exe.config XML 구성 파일을 엽니다.
+1. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*에 있는 *QTAgentService.exe.config* XML 구성 파일을 엽니다.
 
 2. `<appSettings>` 태그를 찾습니다.
 

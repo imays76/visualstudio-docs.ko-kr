@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d1b6655dd493a2ac62ba333f3858b299ee398f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee961a3f6fa62d46feebdedd10fb62ea8a9ee2a4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974808"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381731"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>방법: 데스크톱과 상호 작용하는 테스트를 실행하기 위해 테스트 에이전트 설정
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>방법: 데스크톱과 상호 작용하는 테스트를 실행하도록 테스트 에이전트 설정
 
 데스크톱과 상호 작용하는 자동화된 테스트를 실행하려면 서비스 대신 프로세스로 실행되도록 에이전트를 설정해야 합니다. 예를 들어 테스트 컨트롤러와 테스트 에이전트를 사용하여 코딩된 UI 테스트를 원격으로 실행하려는 경우나 테스트를 실행하고 테스트 실행 과정을 비디오로 기록하려는 경우 프로세스로 실행할 에이전트를 설정해야 합니다. Visual Studio를 사용하여 테스트 설정의 역할에 에이전트를 할당하거나 Microsoft Test Manager를 사용하여 환경의 역할에 에이전트를 할당할 때 데스크톱과 상호 작용해야 하는 역할에 할당된 모든 에이전트의 설정을 변경해야 합니다.
 
 > [!WARNING]
-> Microsoft Test Manager를 사용하여 랩 환경을 설정하는 경우 테스트 에이전트가 설치됩니다. 환경 만들기 마법사에서 역할 중 하나가 코딩된 UI 테스트를 실행하도록 구성할 수 있습니다.
+> Microsoft Test Manager를 사용하여 랩 환경을 설정하는 경우 테스트 에이전트가 설치됩니다. **환경 만들기 마법사**에서 역할 중 하나가 코딩된 UI 테스트를 실행하도록 구성할 수 있습니다.
 
 > [!IMPORTANT]
 > 코딩된 UI 테스트를 수행하는 데 사용할 에이전트가 실행되는 컴퓨터는 잠그거나 화면 보호기를 사용할 수 없습니다.
@@ -79,7 +79,7 @@ ms.locfileid: "31974808"
 
      테스트 에이전트를 구성하는 각 단계의 상태를 보여 주는 **구성 요약** 대화 상자가 표시됩니다.
 
-9. **구성 요약** 대화 상자를 닫으려면 **닫기**를 선택합니다. 그런 다음, **닫기**를 다시 선택하여 테스트 에이전트 구성 도구를 닫습니다.
+9. **구성 요약** 대화 상자를 닫으려면 **닫기**를 선택합니다. 그런 다음, **닫기**를 다시 선택하여 **테스트 에이전트 구성 도구**를 닫습니다.
 
     > [!NOTE]
     > 프로세스로 실행되는 테스트 에이전트의 컴퓨터에서 알림 영역 아이콘이 실행됩니다. 이 알림 영역에는 테스트 에이전트의 상태가 표시됩니다. 테스트 에이전트가 이 도구를 사용하여 프로세스로 실행되는 경우 테스트 에이전트를 시작하거나 중지하거나 다시 시작할 수 있습니다. 테스트 에이전트가 실행 중이 아닌 경우 프로세스로 시작하려면 **시작**, **모든 프로그램**, **Microsoft Visual Studio** , **Microsoft Visual Studio Test Agent**를 차례로 선택합니다.

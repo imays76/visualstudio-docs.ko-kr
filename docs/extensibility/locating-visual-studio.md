@@ -12,36 +12,36 @@ ms.author: heaths
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed6125c69b9068ebfb3d776ccbefaf88043f83a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45eab0ff3dc1c5a0799e3db35b612a3ee3741db7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138615"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637590"
 ---
-# <a name="locating-visual-studio"></a>Visual Studio 찾기
+# <a name="locate-visual-studio"></a>Visual Studio를 찾습니다
 
-Visual Studio 2017 부터는 같은 버전 또는 짝수 버전의 여러 인스턴스를 설치할 수 있습니다. 이전 설치를 유지 하면서 기본 개발 컴퓨터에 새 기능을 미리 볼 때 유용 합니다. 이러한 변경으로 인해 단일 환경 변수 또는 레지스트리 값 인스턴스를 찾는 데 사용할 수 있습니다. 대신 사용할 수는 [COM 쿼리 API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) 확장와 관련 된 기준에 따라 인스턴스를 찾으려고 합니다.
+Visual Studio 2017부터 동일한 버전 또는 심지어 버전의 여러 인스턴스를 설치할 수 있습니다. 이전 설치를 유지 하면서 기본 개발 컴퓨터에 새 기능을 미리 볼 때 유용 합니다. 이러한 변경으로 인해 단일 환경 변수 또는 레지스트리 값 인스턴스를 찾는 데 사용할 수 있습니다. 대신 사용할 수 있습니다는 [COM 쿼리 API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) 확장 프로그램 관련 조건에 따라 인스턴스를 찾으려고 합니다.
 
-이 네이티브 모듈과 관리 코드에 사용할 수 있는 NuGet 패키지와 빠른 속도 읽기 전용 API.
+이 네이티브 및 관리 코드에 사용할 수 있는 NuGet 패키지를 사용 하 여 신속 하 고 읽기 전용 API입니다.
 
 | 코드 | 패키지 |
 | ---- | --- |
 | 네이티브 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | 관리 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-지정 된 경로 또는 현재 프로세스를 단일 인스턴스를 찾을 수도 있고 모든 인스턴스를 열거할 수 있습니다. 참조 [샘플](https://github.com/Microsoft/vs-setup-samples) 전체 예제를 보려면 Visual Studio를 찾는 방법입니다.
+지정 된 경로 또는 현재 프로세스를 단일 인스턴스를 찾을 수도 있고 모든 인스턴스를 열거할 수 있습니다. 참조 [샘플](https://github.com/Microsoft/vs-setup-samples) Visual Studio를 찾는 방법의 전체 예제입니다.
 
 ## <a name="tools"></a>도구
 
-Visual Studio 및 다른 도구 빌드 환경, PowerShell 스크립트, 설치 관리자, 및 더 많은 시나리오를 찾으려면 있는 다양 한 오픈 소스 도구를 직접 사용 하거나 사용자만 스크립트와 함께 재배포할 수 있습니다.
+빌드 환경, PowerShell 스크립트, 설치 관리자 및 더 많은 시나리오에서 Visual Studio 및 기타 도구를 찾으려면, 다양 한 오픈 소스 도구를 직접 사용 하거나 사용자 고유의 스크립트와 함께 재배포할 수 있습니다.
 
 | 프로젝트 | 설명 |
 | ------- | ----------- |
-| [vswhere](https://github.com/Microsoft/vswhere) | 단일 파일 릴리스 또는 시험판, 등 어떤 제품이 설치 되어 작업이 설치 된 기준에 맞는 인스턴스를 찾으려면 네이티브 실행 파일입니다. 경우에 적은 정보를 반환 하는 Visual Studio 2017 이상 2010 이상 버전에서는 Visual Studio를 찾기도 지원 합니다. 참조는 [wiki](https://github.com/Microsoft/vswhere/wiki) 예입니다. |
-| [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | 지원 되는 PowerShell cmdlet으로 동일한 기준에 따라 인스턴스를 찾는 데 사용할 수 개체와 많은 정보를 반환 하는 2.0 및 최신 _vswhere_ 및 인스턴스에 대 한 더 많은 속성을 검색 합니다. 참조는 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) 예입니다. |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 자동으로 찾습니다 _VSIXInstaller_ 하 고 설치 하려면 명령줄을 통해 전달 된 _*.vsix_ 파일입니다. 이 쿼리 Api에 대 한 직접 지원 하지 않는 설치 관리자에서 유용할 수 있습니다. 참조는 [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) 예입니다. |
+| [vswhere](https://github.com/Microsoft/vswhere) | 단일 파일 릴리스 또는 시험판, 등 어떤 제품이 설치 되어 있는 작업을 설치 하는 조건을 충족 하는 인스턴스를 찾을 수 네이티브 실행 파일입니다. 적은 정보를 반환 하는 Visual Studio 2017에 대 한 이상 하지만 2010 이상 Visual Studio를 찾기도 지원 합니다. 참조 된 [wiki](https://github.com/Microsoft/vswhere/wiki) 예입니다. |
+| [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | 지원 되는 PowerShell cmdlet 동일한 조건에 따라 인스턴스를 찾는 데 사용할 수 있는 개체로 풍부한 정보를 반환 하는 2.0 이상 _vswhere_ 및 인스턴스에 대 한 더 많은 속성을 검색 합니다. 참조 된 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) 예입니다. |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 자동으로 찾습니다 _VSIXInstaller_ 하 고 설치 하려면 명령줄을 통해 전달 된 **.vsix* 파일입니다. 이 기능은 쿼리 Api에 대 한 직접 지원 되지 않은 설치 관리자에서 유용할 수 있습니다. 참조 된 [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) 예입니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-* [Visual Studio 2017 설치 변경 내용](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)
+* [Visual Studio 2017 설치 프로그램 변경 내용](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)

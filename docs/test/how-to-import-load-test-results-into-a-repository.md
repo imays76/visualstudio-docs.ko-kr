@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8c149f9febccb8363d5420c447c66bbdb5a5da6e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42336bcbded19343651eeff3b18a7f4a52c96fbe
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177775"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382251"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>방법: 리포지토리로 부하 테스트 결과 가져오기
 

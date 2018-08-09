@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef64670c3c2631e779fda0f48810ce502db72b1
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844434"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379568"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>어셈블리 및 매니페스트 서명 관리
 
@@ -59,7 +59,7 @@ Visual C++ 프로젝트의 어셈블리 서명에 대한 자세한 내용은 [�
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Visual Studio에서 어셈블리에 서명하는 방법
 
-프로젝트 속성 창의 **서명** 탭을 사용하여 응용 프로그램 또는 구성 요소에 서명합니다(**솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하거나, **빠른 실행** 창에 **프로젝트 속성**을 입력하거나, **솔루션 탐색기** 창 내에서 **Alt**+**Enter**를 누름). **서명** 탭을 선택하고 나서 **어셈블리 서명** 확인란을 선택합니다.
+프로젝트 속성 창의 **서명** 탭을 사용하여 응용 프로그램 또는 구성 요소에 서명합니다(**솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하거나, **빠른 실행** 창에 **프로젝트 속성**을 입력하거나, **솔루션 탐색기** 내에서 **Alt**+**Enter** 키를 누름). **서명** 탭을 선택하고 나서 **어셈블리 서명** 확인란을 선택합니다.
 
 키 파일을 지정합니다. 새 키 파일을 만들도록 선택하면 새 키 파일은 항상 *.pfx* 형식으로 만들어집니다. 새 파일의 이름 및 암호가 필요합니다.
 
