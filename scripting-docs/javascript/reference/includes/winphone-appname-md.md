@@ -1,1 +1,0 @@
-Windows Phone 스토어

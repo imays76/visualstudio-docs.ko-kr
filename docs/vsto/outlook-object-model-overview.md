@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97ba2d50c88d9bc4b62e39f24eafea9bd0416eb6
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276996"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008270"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 개체 모델 개요
   Microsoft Office Outlook용 VSTO 추가 기능을 개발하기 위해 Outlook 개체 모델에서 제공하는 개체를 조작할 수 있습니다. Outlook 개체 모델은 사용자 인터페이스의 항목을 나타내는 클래스 및 인터페이스를 제공합니다. 예를 들어 <xref:Microsoft.Office.Interop.Outlook.Application> 개체는 전체 응용 프로그램을 나타내고, <xref:Microsoft.Office.Interop.Outlook.Folder> 개체는 메일 메시지 또는 기타 항목이 포함된 폴더를 나타내고, <xref:Microsoft.Office.Interop.Outlook.MailItem> 개체는 메일 메시지를 나타냅니다.  
@@ -59,7 +59,7 @@ ms.locfileid: "39276996"
 ### <a name="application-object"></a>Application 개체  
  <xref:Microsoft.Office.Interop.Outlook.Application> 개체는 Outlook 응용 프로그램을 나타내며 Outlook 개체 모델의 최상위 개체입니다. 이 개체의 가장 중요한 멤버 중 일부는 다음과 같습니다.  
   
--   합니다 [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) 메서드는 전자 메일 메시지, 작업 또는 약속과 같은 새 항목을 만드는 데 사용할 수 있습니다.  
+-   합니다 [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) 메서드는 전자 메일 메시지, 작업 또는 약속과 같은 새 항목을 만드는 데 사용할 수 있습니다.  
   
 -   Outlook UI(사용자 인터페이스)에 폴더 내용을 표시하는 창에 액세스하는 데 사용할 수 있는 <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 속성  
   
@@ -114,7 +114,7 @@ ms.locfileid: "39276996"
 ### <a name="taskitem-object"></a>TaskItem 개체  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> 개체는 지정된 시간 프레임 내에 수행할 작업을 나타냅니다. <xref:Microsoft.Office.Interop.Outlook.TaskItem> 개체는 **작업** 폴더에 있습니다.  
   
- 작업을 만들려면 사용 합니다 [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) 메서드의 <xref:Microsoft.Office.Interop.Outlook.Application> 개체를 값을 전달 <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> 매개 변수.  
+ 작업을 만들려면 사용 합니다 [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) 메서드의 <xref:Microsoft.Office.Interop.Outlook.Application> 개체를 값을 전달 <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> 매개 변수.  
   
 ### <a name="contactitem-object"></a>ContactItem 개체  
  메일 메시지, 작업 또는 약속과 같은 새 항목을 만드는 데 사용할 수 있는 <xref:Microsoft.Office.Interop.Outlook.ContactItem>개체는 **연락처** 폴더의 모임을 나타냅니다. <xref:Microsoft.Office.Interop.Outlook.ContactItem> 개체에는 주소, 메일 주소, 전화 번호 등 개체가 나타내는 사람에 대한 다양한 연락처 정보가 포함됩니다.  
