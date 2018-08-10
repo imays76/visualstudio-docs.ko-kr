@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: Project 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 464f6498ccf06f5087c0fa6b12a456082a36c2bd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139265"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639141"
 ---
-# <a name="project-element-visual-studio-templates"></a>Project 요소(Visual Studio 템플릿)
+# <a name="project-element-visual-studio-templates"></a>Project 요소 (Visual Studio 템플릿)
 파일 또는 프로젝트에 추가할 디렉터리를 지정 합니다.  
   
  \<VSTemplate>  
@@ -49,16 +49,16 @@ ms.locfileid: "31139265"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`File`|필수 특성입니다.<br /><br /> 템플릿.zip 파일에서 프로젝트 파일의 이름을 지정합니다.|  
-|`ReplaceParameters`|선택적 특성입니다.<br /><br /> 프로젝트 파일에 서식 파일에서 프로젝트를 만들 때 교체 해야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다.|  
-|`TargetFileName`|선택적 특성입니다.<br /><br /> 서식 파일에서 프로젝트를 만들 때 프로젝트 파일의 이름을 지정 합니다.|  
-|`IgnoreProjectParameter`|선택적 특성입니다.<br /><br /> 현재 솔루션에 프로젝트를 추가할지 여부를 지정 합니다. 하는 경우 사용자 지정 매개 변수 값 "$*myCustomParameter*$"가 프로젝트 매개 변수 대체 파일에 생성 되었지만 현재 열려 있는 솔루션의 일부분으로 추가 되지 않습니다.|  
+|`File`|필수 특성입니다.<br /><br /> 템플릿에서 프로젝트 파일의 이름을 지정 *.zip* 파일입니다.|  
+|`ReplaceParameters`|선택적 특성입니다.<br /><br /> 프로젝트 파일에 프로젝트를 템플릿에서 만들면 대체 되어야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다.|  
+|`TargetFileName`|선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 프로젝트 파일의 이름을 지정 합니다.|  
+|`IgnoreProjectParameter`|선택적 특성입니다.<br /><br /> 프로젝트를 현재 솔루션에 추가할지 여부를 지정 합니다. 경우 사용자 지정 매개 변수 값 "$*myCustomParameter*$"가 프로젝트 매개 변수 대체 파일에서 생성 되었지만 현재 열려 있는 솔루션의 일부로 추가 되지 않습니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|[Folder](../extensibility/folder-element-visual-studio-project-templates.md)|선택적 요소입니다.<br /><br /> 프로젝트에 추가할 폴더를 지정 합니다.|  
+|[폴더](../extensibility/folder-element-visual-studio-project-templates.md)|선택적 요소입니다.<br /><br /> 프로젝트에 추가할 폴더를 지정 합니다.|  
 |[프로젝트 항목](../extensibility/projectitem-element-visual-studio-project-templates.md)|선택적 요소입니다.<br /><br /> 프로젝트에 추가할 파일을 지정 합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
@@ -70,13 +70,13 @@ ms.locfileid: "31139265"
 ## <a name="remarks"></a>설명  
  `Project`은 `TemplateContent`의 선택적 자식 요소입니다.  
   
- `Project` 요소는 프로젝트를 지정 하는 데 사용 되며 따라서 으로만 프로젝트 템플릿에서 유효 합니다.  
+ `Project` 요소는 프로젝트를 지정 하는 데 사용 하 고 따라서 경우에 유효한 프로젝트 템플릿.  
   
- `Project` 요소 있을 수 있습니다 [폴더](../extensibility/folder-element-visual-studio-project-templates.md) 자식 요소 또는 [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) 자식 요소가 있지만 둘 다의 혼합 하지 `Folder` 및 `ProjectItem` 자식 요소입니다.  
+ `Project` 요소가 포함할 수 있는 [폴더](../extensibility/folder-element-visual-studio-project-templates.md) 자식 요소 또는 [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) 자식 요소가 있지만 둘 다의 혼합은 아님 `Folder` 고 `ProjectItem` 자식 요소입니다.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 사용자가 입력 한 이름을 기반으로 프로젝트 파일 이름이 자동으로 이름을 **새 프로젝트** 대화 상자. 사용 하 여는 `TargetFileName` 특성 템플릿을 사용 하 여 만든 프로젝트 파일에 대 한 대체 파일 이름을 제공 하려는 경우.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 사용자가 입력 한 이름을 기반으로 프로젝트 파일 이름을 자동으로 바뀝니다 합니다 **새 프로젝트** 대화 상자. 사용 된 `TargetFileName` 템플릿을 사용 하 여 만든 프로젝트 파일에 대 한 대체 파일 이름을 제공 하려는 경우 특성입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램입니다.  
   
 ```  
@@ -103,8 +103,8 @@ ms.locfileid: "31139265"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [ProjectItem 요소 (Visual Studio 프로젝트 템플릿)](../extensibility/projectitem-element-visual-studio-project-templates.md)   
- [Folder 요소(Visual Studio 프로젝트 템플릿)](../extensibility/folder-element-visual-studio-project-templates.md)
+ [Folder 요소 (Visual Studio 프로젝트 템플릿)](../extensibility/folder-element-visual-studio-project-templates.md)

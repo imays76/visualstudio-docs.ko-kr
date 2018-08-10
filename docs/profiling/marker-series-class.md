@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 075a81dc81bb202be913f5a06e8213a8a68a010f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: e638d9316b46a8600fe2e88ca5e4a6611fa1ec4d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843837"
 ---
 # <a name="markerseries-class"></a>marker_series 클래스
 단일 공급자가 생성한 이벤트의 직렬 채널을 나타냅니다.  
@@ -33,12 +34,12 @@ class marker_series;
   
 ### <a name="public-constructors"></a>Public 생성자  
   
-|이름|설명|  
+|name|설명|  
 |----------|-----------------|  
 |[marker_series::marker_series 생성자](../profiling/marker-series-marker-series-constructor.md)|`marker_series` 클래스의 새 인스턴스를 초기화합니다.|  
 |[marker_series::~marker_series 소멸자](../profiling/marker-series-tilde-marker-series-destructor.md)|marker_series 개체를 삭제하고 할당된 모든 리소스를 해제합니다.|  
   
-### <a name="public-methods"></a>Public 메서드  
+### <a name="public-methods"></a>public 메서드  
   
 |name|설명|  
 |----------|-----------------|  
@@ -51,9 +52,9 @@ class marker_series;
  `marker_series`  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** cvmarkersobj.h  
+ **헤더:** *cvmarkersobj.h*  
   
  **네임스페이스:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>참고 항목  
- [diagnostic 네임스페이스](../profiling/diagnostic-namespace.md)
+ [진단 네임스페이스](../profiling/diagnostic-namespace.md)

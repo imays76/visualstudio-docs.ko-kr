@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee84fdab07bd88027dc00be80b1acc009658d8ad
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5b194dbddcd4a0b89c05944de9160bb2e39d43c6
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844328"
 ---
 # <a name="just-my-code-threads-view"></a>내 코드만(스레드 뷰)
 이 옵션을 선택하는 경우 호출 스택을 필터링하여 사용자 코드와 호출된 함수의 한 수준만을 표시합니다.  

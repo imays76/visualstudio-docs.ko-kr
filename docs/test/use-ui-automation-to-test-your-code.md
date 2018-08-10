@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b9e63b930122d36903187128d4bebeb1ff96143
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "35669241"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381161"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI 자동화를 사용하여 코드 테스트
 
@@ -73,11 +73,11 @@ Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램�
 
      코딩된 UI 프로젝트를 방금 만든 경우 첫 번째 CUIT 파일이 자동으로 추가됩니다. 다른 테스트 파일을 추가하려면 **솔루션 탐색기**에서 코딩된 UI 테스트 프로젝트의 바로 가기 메뉴를 열고 **추가** > **코딩된 UI 테스트**를 선택합니다.
 
-     **코딩된 UI 테스트에 대한 코드 생성** 대화 상자에서 **작업 기록, UI 맵 편집 또는 어설션 추가**를 선택합니다.
+     **코딩된 UI 테스트에 대한 코드 생성** 대화 상자에서 **작업 기록** > **UI 맵 편집 또는 어설션 추가**를 선택합니다.
 
      ![코딩된 UI 테스트에 대한 코드 생성 대화 상자](media/generate-code-for-coded-ui-test.png)
 
-     코딩된 UI 테스트 빌더가 나타납니다.
+     **코딩된 UI 테스트 빌더**가 나타납니다.
 
      ![코딩된 UI 테스트 빌더](../test/media/codedui_testbuilder.png)
 
@@ -96,7 +96,7 @@ Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램�
 
 4. 텍스트 상자와 같은 UI 필드에서 값을 확인합니다.
 
-     코딩된 UI 테스트 빌더에서 **어설션 추가**를 선택한 다음 실행 중인 응용 프로그램에서 UI 컨트롤을 선택합니다. 나타나는 속성 목록에서 속성(예: 텍스트 상자의 **텍스트**)을 선택합니다. 바로 가기 메뉴에서 **어설션 추가**를 선택합니다. 대화 상자에서 비교 연산자, 비교 값 및 오류 메시지를 선택합니다.
+     **코딩된 UI 테스트 빌더**에서 **어설션 추가**를 선택한 다음, 실행 중인 응용 프로그램에서 UI 컨트롤을 선택합니다. 나타나는 속성 목록에서 속성(예: 텍스트 상자의 **텍스트**)을 선택합니다. 바로 가기 메뉴에서 **어설션 추가**를 선택합니다. 대화 상자에서 비교 연산자, 비교 값 및 오류 메시지를 선택합니다.
 
      어설션 창을 닫고 **코드 생성**을 선택합니다.
 
@@ -132,7 +132,7 @@ Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램�
 
 7. 테스트 작업 및 어설션의 정보를 편집합니다.
 
-     UIMap.uitest를 엽니다. 이 파일은 코딩된 UI 테스트 편집기에서 열리며 기록한 작업의 모든 시퀀스와 어설션을 이 편집기에서 편집할 수 있습니다.
+     *UIMap.uitest*를 엽니다. 이 파일은 **코딩된 UI 테스트 편집기**에서 열리며 기록한 작업의 모든 시퀀스와 어설션을 이 편집기에서 편집할 수 있습니다.
 
      ![코딩된 UI 테스트 편집기](../test/media/cuit_editor_edit.png)
 
@@ -162,7 +162,7 @@ Visual Studio에서 UI(사용자 인터페이스)를 통해 응용 프로그램�
 
 **코딩된 UI 테스트 빌더**를 사용해 테스트의 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>에 UI(사용자 인터페이스) 컨트롤을 추가하거나 UI 컨트롤에 어설션을 사용하는 확인 메서드에 대한 코드를 생성할 수 있습니다.
 
-UI 컨트롤을 위한 어설션을 생성하려면 코딩된 UI 테스트 빌더에서 **어설션 추가** 도구를 선택하여 올바른지 확인하려는 테스트 중인 응용 프로그램의 컨트롤로 끌어 옵니다. 컨트롤 주위에 상자가 생기면 마우스를 놓습니다. `UIMap.Designer.cs` 파일에 컨트롤 클래스 코드가 즉시 생성됩니다.
+UI 컨트롤을 위한 어설션을 생성하려면 **코딩된 UI 테스트 빌더**에서 **어설션 추가** 도구를 선택하여 올바른지 확인하려는 테스트 대상 응용 프로그램의 컨트롤로 끌어옵니다. 컨트롤 주위에 상자가 생기면 마우스를 놓습니다. *UIMap.Designer.cs* 파일에 컨트롤 클래스 코드가 즉시 생성됩니다.
 
 ![코딩된 UI 테스트 대상 요소](../test/media/codedui_1.png)
 
@@ -196,13 +196,13 @@ UI 컨트롤을 위한 어설션을 생성하려면 코딩된 UI 테스트 빌�
 
      이 파일을 편집하여 단계 및 어설션의 순서를 변경하거나 새 테스트 메서드를 만들 수 있습니다. 코드를 추가하려면 테스트 메서드에 커서를 올려 놓고 바로 가기 메뉴에서 **코딩된 UI 테스트에 대한 코드 생성**을 선택합니다.
 
-- UI 맵(UIMap.uitest)에 `AssertForAddTwoNumbers` 메서드를 추가합니다. 이 파일은 어설션을 편집할 수 있는 코딩된 UI 테스트 편집기에서 열립니다.
+- UI 맵(*UIMap.uitest*)에 `AssertForAddTwoNumbers` 메서드를 추가합니다. 이 파일은 어설션을 편집할 수 있는 **코딩된 UI 테스트 편집기**에서 열립니다.
 
      ![코딩된 UI 테스트 편집기를 사용하여 어설션 편집](../test/media/cuit_editor_assert.png)
 
      자세한 내용은 [코딩된 UI 테스트 편집기를 사용하여 코딩된 UI 테스트 편집](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)을 참조하세요.
 
-     또한 UIMap.Designer.cs에서 생성된 어설션 메서드 코드를 볼 수도 있습니다. 그러나 이 파일은 편집하면 안 됩니다. 코드의 변경된 버전을 만들려면 메서드를 다른 파일(예: UIMap.cs)로 복사한 다음 메서드 이름을 바꾸고 거기서 메서드를 편집합니다.
+     또한 *UIMap.Designer.cs*에서 생성된 어설션 메서드 코드를 볼 수도 있습니다. 그러나 이 파일은 편집하면 안 됩니다. 코드의 변경된 버전을 만들려면 메서드를 다른 파일(예: *UIMap.cs*)로 복사한 다음, 메서드 이름을 바꾸고 거기서 메서드를 편집합니다.
 
     ```csharp
     public void AssertForAddTwoNumbers()
@@ -213,28 +213,25 @@ UI 컨트롤을 위한 어설션을 생성하려면 코딩된 UI 테스트 빌�
 
 ### <a name="select-a-hidden-control-using-the-keyboard"></a>키보드를 사용하여 숨겨진 컨트롤 선택
 
-코딩된 UI 테스트 빌더에서 어설션 추가 도구를 선택할 때 선택하려는 컨트롤이 포커스를 잃고 사라지는 경우.
+**코딩된 UI 테스트 빌더**에서 **어설션 추가** 도구를 선택할 때 선택하려는 컨트롤이 포커스를 잃고 사라지는 경우.
 
-경우에 따라 컨트롤을 추가하고 해당 컨트롤의 속성을 확인할 때 키보드를 사용해야 할 수 있습니다. 예를 들어 상황에 맞는 메뉴 컨트롤을 사용하는 코딩된 UI 테스트를 기록하려는 경우 코딩된 UI 테스트 빌더에서 어설션 추가 메뉴를 선택하려고 하면 컨트롤의 메뉴 항목 목록이 포커스를 잃고 사라질 수 있습니다. 이러한 현상은 아래 그림에서도 확인할 수 있습니다. 여기서 어설션 추가 도구로 Internet Explorer의 바로 가기 메뉴를 선택하려고 하면 이 메뉴가 포커스를 잃고 사라집니다.
+경우에 따라 컨트롤을 추가하고 해당 컨트롤의 속성을 확인할 때 키보드를 사용해야 할 수 있습니다. 예를 들어 상황에 맞는 메뉴 컨트롤을 사용하는 코딩된 UI 테스트를 기록하려는 경우 **코딩된 UI 테스트 빌더**에서 **어설션 추가** 도구를 선택하려고 하면 컨트롤의 메뉴 항목 목록이 포커스를 잃고 사라질 수 있습니다. 이러한 현상은 아래 그림에서도 확인할 수 있습니다. 여기서 **어설션 추가** 도구로 Internet Explorer의 바로 가기 메뉴를 선택하려고 하면 이 메뉴가 포커스를 잃고 사라집니다.
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
-키보드를 사용하여 UI 컨트롤을 선택하려면 해당 컨트롤 위에 마우스를 올려 둡니다. 그런 다음 **Ctrl** 키와 **I** 키를 동시에 누르고 있습니다. 키를 놓습니다. 코딩된 UT 테스트 빌더가 컨트롤을 기록합니다.
-
-> [!WARNING]
-> Microsoft Lync를 사용 중인 경우 코딩된 UI 테스트 빌더를 시작하려면 Lync를 닫아야 합니다. Microsoft Lync에서는 **Ctrl+I** 바로 가기 키가 정상적으로 작동하지 않습니다.
+키보드를 사용하여 UI 컨트롤을 선택하려면 해당 컨트롤 위에 마우스를 올려 둡니다. 그런 다음 **Ctrl** 키와 **I** 키를 동시에 누르고 있습니다. 키를 놓습니다. **코딩된 UI 테스트 빌더**가 컨트롤을 기록합니다.
 
 #### <a name="manually-record-mouse-hovers"></a>수동으로 마우스로 가리키기 기록
 
 컨트롤을 마우스로 가리키기를 기록할 수가 없는 경우.
 
-경우에 따라 코딩된 UI 테스트에서 사용 중인 특정 컨트롤을 사용하려면 키보드로 마우스 가리키기 이벤트를 기록해야 하는 경우가 있습니다. 예를 들어 Windows Form 또는WPF(Windows Presentation Foundation) 응용 프로그램을 테스트하는 경우 사용자 지정 코드가 있을 수 있습니다. 또는 사용자가 트리 노드를 마우스로 가리키면 트리 노드가 확장됨과 같이 컨트롤을 마우스로 가리키는 것에 대해 정의된 특별한 동작이 있을 수 있습니다. 이러한 상황을 테스트하려면 미리 정의된 키보드 키를 눌러 컨트롤을 마우스로 가리켰음을 코딩된 UI 테스트 빌더에 수동으로 알려야 합니다.
+경우에 따라 코딩된 UI 테스트에서 사용 중인 특정 컨트롤을 사용하려면 키보드로 마우스 가리키기 이벤트를 기록해야 하는 경우가 있습니다. 예를 들어 Windows Form 또는WPF(Windows Presentation Foundation) 응용 프로그램을 테스트하는 경우 사용자 지정 코드가 있을 수 있습니다. 또는 사용자가 트리 노드를 마우스로 가리키면 트리 노드가 확장됨과 같이 컨트롤을 마우스로 가리키는 것에 대해 정의된 특별한 동작이 있을 수 있습니다. 이러한 상황을 테스트하려면 미리 정의된 키보드 키를 눌러 컨트롤을 마우스로 가리켰음을 **코딩된 UI 테스트 빌더**에 수동으로 알려야 합니다.
 
-코딩된 UI 테스트를 수행하는 경우 컨트롤을 마우스로 가리킵니다. 그런 다음 키보드에서 Shift+R을 누른 채 Ctrl 키를 누르고 있습니다. 키를 놓습니다. 코딩된 UT 테스트 빌더가 마우스로 가리키기 이벤트를 기록합니다.
+코딩된 UI 테스트를 수행하는 경우 컨트롤을 마우스로 가리킵니다. 그런 다음, 키보드에서 **Shift** 및 **R**을 누른 채 **Ctrl** 키를 누르고 있습니다. 키를 놓습니다. **코딩된 UI 테스트 빌더**가 마우스로 가리키기 이벤트를 기록합니다.
 
 ![CodedUI&#95;Hover](../test/media/codedui_hover.png)
 
-테스트 메서드를 생성한 후 다음 예제와 유사한 코드가 UIMap.Desinger.cs 파일에 추가됩니다.
+테스트 메서드를 생성한 후 다음 예제와 유사한 코드가 *UIMap.Designer.cs* 파일에 추가됩니다.
 
 ```csharp
 // Mouse hover '1' label at (87, 9)
@@ -290,9 +287,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - **코드 편집기:**
 
-    - 이 항목의 [UI 컨트롤 작업 및 속성 코딩](#coded-ui-control-actions-and-properties) 섹션에서 설명하는 것처럼 테스트에서 컨트롤에 대한 코드를 수동으로 추가합니다.
+    - 이 항목의 [코딩된 UI 컨트롤 작업 및 속성](#coded-ui-control-actions-and-properties) 섹션에서 설명하는 것처럼 테스트에서 컨트롤에 대한 코드를 수동으로 추가합니다.
 
-    - 코딩된 UI 테스트를 만든 후 데이터 기반이 되도록 수정할 수 있습니다. 자세한 내용은 [데이터 기반의 코딩된 UI 테스트 만들기](../test/creating-a-data-driven-coded-ui-test.md)를 참조하세요.
+    - 코딩된 UI 테스트를 만든 후 데이터 기반이 되도록 수정할 수 있습니다. 자세한 내용은 [데이터 기반 코딩된 UI 테스트 만들기](../test/creating-a-data-driven-coded-ui-test.md)를 참조하세요.
 
     - 코딩된 UI 테스트 재생 시 창이 나타나거나 진행률 표시줄이 사라지는 등의 특정 이벤트가 발생할 때까지 기다리도록 테스트에 지시할 수 있습니다. 이렇게 하려면 적절한 UITestControl.WaitForControlXXX() 메서드를 추가합니다. 사용 가능한 메서드의 전체 목록을 보려면 [코딩된 UI 테스트가 재생 중 특정 이벤트를 기다리도록 지정](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)을 참조하세요. WaitForControlEnabled 메서드를 사용하여 컨트롤이 사용하도록 설정될 때까지 기다리는 코딩된 UI 테스트에 대한 예제는 [연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)를 참조하세요.
 
@@ -302,7 +299,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
        - [코딩된 UI 테스트 분석](../test/anatomy-of-a-coded-ui-test.md)
 
-       - [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)
+       - [코딩된 UI 테스트에 대한 모범 사례](../test/best-practices-for-coded-ui-tests.md)
 
        - [여러 UI 맵이 포함된 대형 응용 프로그램 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
@@ -333,9 +330,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - *UIMap.uitest*의 메서드
 
-     이 메서드에는 기록한 작업에 대한 세부 정보 또는 확인한 값이 포함됩니다. 이 코드는 UIMap.uitest를 열어 편집할 수 있습니다. 이 파일은 기록된 작업을 삭제 또는 리팩터링할 수 있는 특수 편집기에서 열립니다.
+     이 메서드에는 기록한 작업에 대한 세부 정보 또는 확인한 값이 포함됩니다. 이 코드는 *UIMap.uitest*를 열어 편집할 수 있습니다. 이 파일은 기록된 작업을 삭제 또는 리팩터링할 수 있는 특수 편집기에서 열립니다.
 
-     또한 생성된 메서드를 UIMap.Designer.cs에서 확인할 수도 있습니다. 다음 메서드는 테스트 실행 시 기록한 작업을 수행합니다.
+     또한 생성된 메서드를 *UIMap.Designer.cs*에서 확인할 수도 있습니다. 다음 메서드는 테스트 실행 시 기록한 작업을 수행합니다.
 
     ```csharp
     // File: UIMap.Designer.cs
@@ -463,5 +460,5 @@ UI 컨트롤 관련 속성 값을 얻고 설정하기 위해 컨트롤의 속성
 - [연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [UWP 앱을 테스트하기 위한 코딩된 UI 테스트 만들기](test-uwp-app-with-coded-ui-test.md)
 - [코딩된 UI 테스트 분석](../test/anatomy-of-a-coded-ui-test.md)
-- [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)
+- [코딩된 UI 테스트에 대한 모범 사례](../test/best-practices-for-coded-ui-tests.md)
 - [여러 UI 맵이 포함된 대형 응용 프로그램 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)

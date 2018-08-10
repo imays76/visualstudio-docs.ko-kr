@@ -9,15 +9,16 @@ description: 클라우드 구독에 대한 청구 질문입니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e77cebba49447dcab4d30979753357a64075b1f2
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957134"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303324"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
-클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://www.visualstudio.com/vs/pricing/)를 하십시오.
+
+클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://visualstudio.microsoft.com/vs/pricing/)를 하십시오.
 
 ## <a name="general-purchasing-questions"></a>일반적인 구매 질문
 
@@ -30,17 +31,19 @@ ms.locfileid: "33957134"
 주목할 만한 예외는 [Azure 무료 평가판](https://azure.microsoft.com/pricing/free-trial/)을 사용할 수 없다는 것입니다.
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>질문: 다른 Azure 서비스를 구입해야 합니까?
-답변: 전혀 그렇지 않습니다. Azure를 통해 Visual Studio 클라우드 구독을 구입하려는 경우 그렇게 할 수 있습니다. 
+답변: 전혀 그렇지 않습니다. Azure를 통해 Visual Studio 클라우드 구독을 구입하려는 경우 그렇게 할 수 있습니다.
 
 ## <a name="enterprise-agreement-ea-customers"></a>EA(기업계약) 고객
 
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>질문: Visual Studio 클라우드 구독을 구입하기 위해 기업 계약을 사용할 수 있습니까?
 
-답변: 예, 가능합니다. EA를 위해 만들어진 Azure 구독에 대한 소유자 또는 참가자여야 합니다. Visual Studio Marketplace에서 직접 Visual Studio 클라우드 구독을 구매하는지 확인하십시오. 구매 주문을 사용하여 Visual Studio 클라우드 구독을 구매할 수 없습니다. 
+답변: 예, 가능합니다. EA를 위해 만들어진 Azure 구독에 대한 소유자 또는 참가자여야 합니다. Visual Studio Marketplace에서 직접 Visual Studio 클라우드 구독을 구매하는지 확인하십시오. 구매 주문을 사용하여 Visual Studio 클라우드 구독을 구매할 수 없습니다.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>질문: 조직의 기업 계약을 통해 Visual Studio Marketplace에서 서비스를 구입하는 데 필요한 권한이 있는지 여부는 어떻게 확인할 수 있습니까?
 
-답변: 적절한 권한이 있는지 확인하는 가장 쉬운 방법은 Visual Studio Marketplace에서 제공된 서비스에 대해 **구입** 단추를 클릭하는 것입니다. 현재 사용자의 로그인에 연결된 Azure 구독 목록에서 Azure 구독(청구 계정)을 선택해야 합니다. Azure 구독 이름은 청구 계정 유형("종량제", "기업 계약" 등)을 기본값으로 하기 때문에 Azure 구독이 기업 계약의 일부인 경우 명확합니다.
+답변: 적절한 권한이 있는지 확인하는 가장 쉬운 방법은 Visual Studio Marketplace에서 제공된 서비스에 대해 **구입** 단추를 클릭하는 것입니다.
+현재 사용자의 로그인에 연결된 Azure 구독 목록에서 Azure 구독(청구 계정)을 선택해야 합니다.
+Azure 구독 이름은 청구 계정 유형("종량제", "기업 계약" 등)을 기본값으로 하기 때문에 Azure 구독이 기업 계약의 일부인 경우 명확합니다.
 
 다른 방법은 [Azure Enterprise Portal](http://ea.azure.com)을 방문하려 하는 것입니다.  성공적으로 도달할 수 있으면 이미 엔터프라이즈 관리자 또는 계정 소유자 역할을 하고 있는 것입니다. 계정 소유자만 기업 계약에서 새 Azure 청구 계정을 설정할 수 있습니다. Azure Enterprise Portal에 액세스할 수 없는 경우 조직 내에서 문의하여 엔터프라이즈 관리자가 누구인지 알아내고 그 사람에게 Azure Enterprise Portal 내에서 계정 소유자로서 사용자를 추가하도록 요청합니다.  이 관리자를 찾을 수 없는 경우 [지원 티켓을 제출](http://aka.ms/AzureEntSupport)하여 연락처 정보를 요청할 수 있습니다.  지원 티켓에 대해 조직 이름 및 기업 계약 등록 번호가 필요합니다.
 
@@ -51,15 +54,17 @@ ms.locfileid: "33957134"
 ## <a name="how-charges-are-processed"></a>요금이 처리되는 방법
 
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>질문: **월간** 클라우드 구독 요금은 어떻게 처리됩니까?
-답변: 첫 번째 구매에 현재 달의 남은 날짜를 포함하기 위해 비례 배분된 수량을 청구합니다. 예를 들어, 10개 Visual Studio Professional 월간 클라우드 구독을 4월 15일에 구매했다면 그 달의 50%(한 달 30일 중 15일)가 남았으므로 단위 5를 청구하게 됩니다. 5월 1일에 그리고 그 이후 취소할 때까지 매월 전체 10단위 요금이 청구됩니다.
+답변: 첫 번째 구매에 현재 달의 남은 날짜를 포함하기 위해 비례 배분된 수량을 청구합니다. 예를 들어, 10개 Visual Studio Professional 월간 클라우드 구독을 4월 15일에 구매했다면 그 달의 50%(한 달 30일 중 15일)가 남았으므로 단위 5를 청구하게 됩니다.
+5월 1일에 그리고 그 이후 취소할 때까지 매월 전체 10단위 요금이 청구됩니다.
 
-나중에 유료 수량이 증가할 경우 현재 달의 남은 날짜를 포함하려면 증가된 단위를 비례 배분합니다. 따라서 1 초과 Visual Studio Professional 월간 클라우드 구독을 5월 10일에 구입했다면 대략 0.677단위(한 달 31일 중 남은 21일)를 청구하게 됩니다. 
+나중에 유료 수량이 증가할 경우 현재 달의 남은 날짜를 포함하려면 증가된 단위를 비례 배분합니다. 따라서 1 초과 Visual Studio Professional 월간 클라우드 구독을 5월 10일에 구입했다면 대략 0.677단위(한 달 31일 중 남은 21일)를 청구하게 됩니다.
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>질문: **연간** 클라우드 구독 요금은 어떻게 처리됩니까?
 답변: 각 구매 시 즉시 구매한 전체 수량 요금을 청구합니다. 요금은 일년에 걸쳐 분배하지 않으며 비례 배분은 없습니다. 현재 연도의 다른 시기에 연간 클라우드 구독을 구입하는 경우 다른 달 내에 구독을 갱신하게 됩니다. 일반적으로 Microsoft 볼륨 라이선스 계약 구매에서 그런 것처럼 고객의 연간 클라우드 구독 모두를 동일하게 취급하지 않습니다.
 
 ### <a name="q-how-do-cancelations-work"></a>질문: 취소는 어떻게 합니까?
-답변: Visual Studio 클라우드 구독을 취소할 경우 자동 갱신을 취소합니다. 구독은 기본 갱신일까지 단순히 계속되다가 만료됩니다. 만료 시 Visual Studio 구독자는 Visual Studio나 구독으로 인한 기타 모든 혜택을 더 이상 사용할 수 없습니다.
+답변: Visual Studio 클라우드 구독을 취소할 경우 자동 갱신을 취소합니다. 구독은 기본 갱신일까지 단순히 계속되다가 만료됩니다.
+만료 시 Visual Studio 구독자는 Visual Studio나 구독으로 인한 기타 모든 혜택을 더 이상 사용할 수 없습니다.
 
 월간 클라우드 구독의 경우 취소는 다음 달의 첫째 날에 효력을 발휘합니다. 월간 클라우드 구독의 일부만 취소하는 경우 올바른 사용자가 활성화된 구독을 계속 할당받을 수 있도록 다음 달의 첫째 날에 취소한 사용자를 제거해야 합니다.
 
@@ -87,12 +92,12 @@ ms.locfileid: "33957134"
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>질문: 연간 및 월간 클라우드 구독 간의 차이는?
 
-답변: 월별 클라우드 구독에는 Visual Studio 외에 VSTS 및 TFS의 사용이 포함됩니다. 연간 클라우드 구독도 마찬가지지만 또한 개발 및 테스트를 위해 설치하고 실행할 Windows와 기타 Microsoft 소프트웨어의 사용, Azure 서비스를 사용한 실험에 대해 사용할 월간 Azure 크레딧 그리고 클라우드, 교육, 지원 등에서 개발 및 테스트 수행을 포함한 구독자 혜택이 포함됩니다. 
-[클라우드 구독 혜택 및 가격 비교](https://www.visualstudio.com/vs/pricing/)
+답변: 월별 클라우드 구독에는 Visual Studio 외에 VSTS 및 TFS의 사용이 포함됩니다. 연간 클라우드 구독도 마찬가지지만 또한 개발 및 테스트를 위해 설치하고 실행할 Windows와 기타 Microsoft 소프트웨어의 사용, Azure 서비스를 사용한 실험에 대해 사용할 월간 Azure 크레딧 그리고 클라우드, 교육, 지원 등에서 개발 및 테스트 수행을 포함한 구독자 혜택이 포함됩니다.
+[클라우드 구독 혜택 및 가격 비교](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>질문: Visual Studio 클라우드 구독을 구매하는 경우 새 버전의 Visual Studio를 얻을 수 있습니까?
 
-답변: 예. 새 버전이 출시되면 다운로드하고 실행할 수 있습니다. 또한 계속 이전 버전도 실행할 수 있습니다. 
+답변: 예. 새 버전이 출시되면 다운로드하고 실행할 수 있습니다. 또한 계속 이전 버전도 실행할 수 있습니다.
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>질문: 소프트웨어 대리점에서 Visual Studio 클라우드 구독을 구입할 수 있습니까?
 
@@ -108,5 +113,5 @@ ms.locfileid: "33957134"
 ## <a name="related-resources"></a>관련 참고 자료
 
 * [Visual Studio 구독 관리 포털](https://manage.visualstudio.com/)
-* [Visual Studio 구독 지원](https://www.visualstudio.com/vs/support/)
+* [Visual Studio 구독 지원](https://visualstudio.microsoft.com/vs/support/)
 * [CSP에 대한 Visual Studio 클라우드 구독 구매](vscloud-csp.md)

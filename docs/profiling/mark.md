@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c27d6ba2e5041596b171d1a2538c154c0fad8d8
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 89a26a3a3729241cb4ec9180e6cb16f131194b86
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844796"
 ---
 # <a name="mark"></a>표시
-VSPerfCmd.exe **Mark** 옵션은 프로파일링 데이터 파일에 지정된 정보를 삽입합니다. Mark는 별도 VSPerfReport 보고서 또는 프로파일러 UI의 표시 보고서 보기에 나열될 수 있습니다. **Mark**는 보고서 및 보기 필터에서 시작점과 끝점을 지정하는 데 사용될 수 있습니다.  
+*VSPerfCmd.exe* **Mark** 옵션은 프로파일링 데이터 파일에 지정된 정보를 삽입합니다. Mark는 별도 VSPerfReport 보고서 또는 프로파일러 UI의 표시 보고서 보기에 나열될 수 있습니다. **Mark**는 보고서 및 보기 필터에서 시작점과 끝점을 지정하는 데 사용될 수 있습니다.  
   
  **Mark** 옵션은 명령줄에 지정된 유일한 옵션이어야 합니다.  
   

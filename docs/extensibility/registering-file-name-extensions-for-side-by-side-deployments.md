@@ -1,5 +1,5 @@
 ---
-title: 병렬 배포를 위한 파일 이름 확장명을 등록 하는 중입니다. | Microsoft Docs
+title: Side-by-side-배포에 대 한 파일 이름 확장명 등록 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7d7307ef12184dcbfc29254ec5cbae9ff55bb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1aa553b5370f637f5a779bbdff432319ce3e0bf4
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136312"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638481"
 ---
-# <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>병렬 배포를 위한 파일 이름 확장명을 등록 하는 중입니다.
-병렬 환경에 배포 된, Vspackage에 대 한 올바른 버전의 파일 연관 시킬 파일 이름 확장명을 등록 해야 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 프로젝트를 열고 프로젝트에 적절 한 버전의 파일 항목을 사용 하면 등록 버전별 파일 이름 확장명을 사용 하지 않는 한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  
+# <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Side-by-side-배포에 대 한 파일 이름 확장명 등록
+Side-by-side-환경에 배포 하는 Vspackage, 파일의 올바른 버전을 사용 하 여 연결할 파일 이름 확장명을 등록 해야 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 버전별 파일 이름 확장명을 사용 하지 않으면 등록을 사용 하면 프로젝트를 열고 적절 한 버전의 항목 파일을 프로젝트에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]입니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
- [파일 확장명 정보](../extensibility/about-file-name-extensions.md)  
+## <a name="in-this-section"></a>단원 내용  
+ [파일 이름 확장명에 대 한](../extensibility/about-file-name-extensions.md)  
  파일 이름 확장명은 등록 하는 방법을 설명 합니다.  
   
- [파일 이름 확장명에 대한 파일 처리기 지정](../extensibility/specifying-file-handlers-for-file-name-extensions.md)  
- 열 수 있는 응용 프로그램, edit, 및에 특정 파일 이름 확장명을 등록 하는 방법에 대 한 정보를 제공 합니다.  
+ [파일 이름 확장명에 대 한 파일 처리기 지정](../extensibility/specifying-file-handlers-for-file-name-extensions.md)  
+ 열 수 있는 응용 프로그램, edit 및 등등으로 특정 파일 이름 확장명을 등록 하는 방법에 대 한 정보를 제공 합니다.  
   
- [파일 이름 확장명에 대한 동사 등록](../extensibility/registering-verbs-for-file-name-extensions.md)  
- 동사를 등록 하는 방법을 설명 합니다.  
+ [파일 이름 확장명에 대 한 동사 등록](../extensibility/registering-verbs-for-file-name-extensions.md)  
+ 동사를 등록 하는 방법에 설명 합니다.  
   
- [병렬 파일 연결 관리](../extensibility/managing-side-by-side-file-associations.md)  
- 설치 하 여 병렬 처리 하는 방법에 설명의 특정 버전 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 파일을 호출 해야 합니다.  
+ [Side-by-side-파일 연결 관리](../extensibility/managing-side-by-side-file-associations.md)  
+ Side-by-side-설치를 처리 하는 방법에 설명의 특정 버전 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 파일을 호출 해야 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  [여러 버전의 Visual Studio 지원](../extensibility/supporting-multiple-versions-of-visual-studio.md)  
- 여러 버전의 관련 된 문제에 설명 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 및 개발 및 최종 사용자에 게 배포 하는 동안 VSPackage입니다.
+ 여러 버전의 관련 된 문제에 설명 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 및 VSPackage 개발 및 최종 사용자에 게 배포 하는 중입니다.

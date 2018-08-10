@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751425"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382092"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발
 
@@ -28,7 +28,7 @@ ms.locfileid: "34751425"
 
 -   필요한 모든 정보를 하나의 창에서 확인합니다.
 
-## <a name="using-test-explorer"></a>테스트 탐색기 사용
+## <a name="use-test-explorer"></a>테스트 탐색기 사용
  ![모두 실행 단추를 표시하는 단위 테스트 탐색기](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트를 실행하려면
@@ -39,7 +39,7 @@ ms.locfileid: "34751425"
 
     1.  테스트 프로젝트를 만듭니다.
 
-         **새 프로젝트** 대화 상자에서 **Visual Basic**, **Visual C#** 또는 **Visual C++** 를 확장한 다음 **테스트**를 선택합니다.
+         **새 프로젝트** 대화 상자에서 **Visual Basic** > **Visual C#** 또는 **Visual C++** 를 확장한 다음, **테스트**를 선택합니다.
 
          **단위 테스트 프로젝트**를 선택합니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "34751425"
 
 2.  개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
-3.  메뉴 모음에서 **테스트**, **단위 테스트 실행**, **모든 테스트**를 선택합니다.
+3.  메뉴 모음에서 **테스트** > **단위 테스트 실행** > **모든 테스트**를 선택합니다.
 
      솔루션이 빌드되고 테스트가 실행됩니다.
 
@@ -66,19 +66,19 @@ ms.locfileid: "34751425"
 
 
 > [!NOTE]
-> 테스트가 표시되지 않으면 어댑터를 설치하여 테스트 탐색기를 사용 중인 테스트 프레임워크에 연결했는지 확인하십시오. 자세한 내용은 [테스트 탐색기에서 다양한 테스트 프레임워크 사용](#frameworks)을 참조하십시오.
+> 테스트가 표시되지 않으면 어댑터를 설치하여 테스트 탐색기를 사용 중인 테스트 프레임워크에 연결했는지 확인하십시오. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](install-third-party-unit-test-frameworks.md)를 참조하세요.
 
 
-##  <a name="walkthrough"></a> 연습: 단위 테스트를 사용하여 메서드 개발
- 이 연습에서는 Microsoft 단위 테스트 프레임워크를 사용하여 C#에서 테스트 메서드를 개발하는 방법을 보여 줍니다. 다른 언어에 맞게 쉽게 조정할 수 있으며 NUnit과 같은 다른 테스트 프레임워크에도 사용할 수 있습니다. 자세한 내용은 [다양한 테스트 프레임워크 사용](#frameworks)을 참조하십시오.
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>연습: 단위 테스트를 사용하여 메서드 개발
+ 이 연습에서는 Microsoft 단위 테스트 프레임워크를 사용하여 C#에서 테스트 메서드를 개발하는 방법을 보여 줍니다. 다른 언어에 맞게 쉽게 조정할 수 있으며 NUnit과 같은 다른 테스트 프레임워크에도 사용할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](install-third-party-unit-test-frameworks.md)를 참조하세요.
 
-#### <a name="creating-the-test-and-method"></a>테스트 및 메서드 만들기
+### <a name="create-the-test-and-method"></a>테스트 및 메서드 만들기
 
 1.  Visual C# 클래스 라이브러리 프로젝트를 만듭니다. 이 프로젝트에는 전달할 코드가 포함됩니다. 이 예제에서는 `MyMath`이라는 이름으로 지정됩니다.
 
 2.  테스트 프로젝트를 만듭니다.
 
-    -   **새 프로젝트** 대화 상자에서 **Visual C#** 을 선택하고 **테스트** 를 선택한 다음 **단위 테스트 프로젝트**를 선택합니다.
+    -   **새 프로젝트** 대화 상자에서 **Visual C#** > **테스트**를 선택한 다음, **단위 테스트 프로젝트**를 선택합니다.
 
          ![새 코드 및 테스트 프로젝트](../test/media/unittestexplorerwalk1.png)
 
@@ -104,15 +104,15 @@ ms.locfileid: "34751425"
 
 4.  테스트에서 메서드를 생성합니다.
 
-    1.  커서를 `Rooter`에 놓고 나서 바로 가기 메뉴에서 **생성**, **새 형식**을 선택합니다.
+    1.  커서를 `Rooter`에 놓은 다음, 바로 가기 메뉴에서 **생성** > **새 형식**을 선택합니다.
 
     2.  **새 형식 생성** 대화 상자에서 **프로젝트** 를 클래스 라이브러리 프로젝트로 설정합니다. 이 예제에서는 `MyMath`입니다.
 
-    3.  커서를 `SquareRoot`에 놓고 나서 바로 가기 메뉴에서 **생성**, **메서드 스텁**을 선택합니다.
+    3.  커서를 `SquareRoot`에 놓은 다음, 바로 가기 메뉴에서 **생성** > **메서드 스텁**을 선택합니다.
 
 5.  단위 테스트를 실행합니다.
 
-    1.  **테스트** 메뉴에서 **단위 테스트 실행**, **모든 테스트**를 선택합니다.
+    1.  **테스트** 메뉴에서 **단위 테스트 실행** > **모든 테스트**를 선택합니다.
 
          솔루션이 빌드되고 실행됩니다.
 
@@ -132,7 +132,7 @@ ms.locfileid: "34751425"
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>변경할 때마다 모든 테스트를 통과하도록 만들기
 
-1.  `MyMath\Rooter.cs`에서 `SquareRoot`의 코드를 향상시킵니다.
+1.  *MyMath\Rooter.cs*에서 `SquareRoot`의 코드를 향상시킵니다.
 
     ```csharp
     public double SquareRoot(double input)
@@ -190,7 +190,7 @@ ms.locfileid: "34751425"
 
 3.  테스트 아래 메서드를 검사하여 잘못된 부분이 무엇인지 알아봅니다. `MyMath.Rooter` 클래스에서 코드를 다시 작성합니다.
 
-    ```
+    ```csharp
     public double SquareRoot(double input)
     {
       double result = input;

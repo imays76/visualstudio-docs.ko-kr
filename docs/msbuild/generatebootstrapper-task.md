@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd27aa3e589957d75d504421d170735d1add6f9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573800"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177739"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 작업
 응용 프로그램과 해당 필수 조건을 검색, 다운로드, 설치할 수 있는 자동화된 방법을 제공합니다. 이 작업은 응용 프로그램을 구성하는 모든 구성 요소에 대한 개별 설치 관리자를 통합하는 단일 설치 관리자로 사용됩니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
- 다음 표에서는 `GenerateBootstrapper` 작업의 매개 변수에 대해 설명합니다.  
+ 다음에서는 `GenerateBootstrapper` 작업의 매개 변수에 대해 설명합니다.  
   
 -   `ApplicationFile`  
   
@@ -78,7 +78,7 @@ ms.locfileid: "31573800"
     </BootstrapperItem>  
     ```  
   
-     `Include` 특성은 설치해야 하는 필수 조건의 이름을 나타내는 데 사용됩니다. `ProductName` 항목 메타데이터는 선택 사항이고, 패키지를 찾을 수 없는 경우 빌드 엔진에서 사용자에게 친숙한 이름으로 사용됩니다. `ApplicationFile`을 지정할 경우에만 이러한 항목이 필수 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 입력 매개 변수입니다. 응용 프로그램용으로 설치되어야 하는 필수 조건별로 하나의 항목을 포함해야 합니다.  
+     `Include` 특성은 설치해야 하는 필수 조건의 이름을 나타냅니다. `ProductName` 항목 메타데이터는 선택 사항이고, 패키지를 찾을 수 없는 경우 빌드 엔진에서 사용자에게 친숙한 이름으로 사용됩니다. `ApplicationFile`을 지정할 경우에만 이러한 항목이 필수 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 입력 매개 변수입니다. 응용 프로그램용으로 설치되어야 하는 필수 조건별로 하나의 항목을 포함해야 합니다.  
   
      `BootstrapperItems` 및 `ApplicationFile` 매개 변수를 둘 다 지정하지 않으면 빌드 오류가 발생합니다.  
   
@@ -86,7 +86,7 @@ ms.locfileid: "31573800"
   
      선택적 `String` 출력 매개 변수입니다.  
   
-     setup.exe의 빌드 위치를 지정합니다.  
+     *setup.exe*의 빌드 위치를 지정합니다.  
   
 -   `ComponentsLocation`  
   
@@ -130,7 +130,7 @@ ms.locfileid: "31573800"
   
      선택적 `String` 매개 변수입니다.  
   
-     setup.exe 및 모든 패키지 파일을 복사할 위치를 지정합니다.  
+     *setup.exe* 및 모든 패키지 파일을 복사할 위치를 지정합니다.  
   
 -   `Path`  
   
@@ -151,7 +151,7 @@ ms.locfileid: "31573800"
      `true`인 경우 부트스트래퍼가 지정된 입력 부트스트래퍼 항목에 대해 XSD 유효성 검사를 수행합니다. 이 매개 변수의 기본값은 `false`입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
 ## <a name="example"></a>예  
  다음 예제에서는 `GenerateBootstrapper` 작업을 사용하여 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]가 필수 조건으로 설치되어야 하는 응용 프로그램을 설치합니다.  

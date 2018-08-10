@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750996"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381972"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>방법: 테스트 설정을 사용하여 테스트를 수행하는 중에 화면 및 음성의 녹화/녹음 포함
 
@@ -37,7 +37,7 @@ Visual Studio의 구성 편집기에서 화면 및 테스트를 실행하는 사
 
 3.  **화면 및 음성 레코더**를 선택한 다음, **구성**을 선택합니다.
 
-     진단 데이터 어댑터 구성 - 화면 및 음성 레코더 대화 상자가 표시됩니다.
+     **진단 데이터 어댑터 구성 - 화면 및 음성 레코더** 대화 상자가 표시됩니다.
 
      ![비디오 구성](../test/media/testsettingvideoconfiggdr.png)
 
@@ -46,7 +46,7 @@ Visual Studio의 구성 편집기에서 화면 및 테스트를 실행하는 사
 5.  (선택 사항) 실패한 테스트와 성공한 테스트 모두에 대해 화면 및 음성 기록을 저장하도록 지정하려면 **테스트 사례가 통과하면 기록 저장** 옆의 확인란을 선택합니다.
 
     > [!WARNING]
-    > **테스트 사례가 통과하면 기록 저장**을 선택하는 경우 서버의 저장 공간을 사용하여 테스트 결과와 함께 기록이 저장됩니다. 이러한 첨부 파일은 Test Attachment Cleaner 도구를 사용하여 정리할 수 있습니다.
+    > **테스트 사례가 통과하면 기록 저장**을 선택하는 경우 서버의 저장 공간을 사용하여 테스트 결과와 함께 기록이 저장됩니다. 이러한 첨부 파일은 **테스트 첨부 파일 정리기** 도구를 사용하여 정리할 수 있습니다.
 
 6.  **화면 기록 품질**에서 다음 드롭다운 목록 옵션을 구성합니다.
 

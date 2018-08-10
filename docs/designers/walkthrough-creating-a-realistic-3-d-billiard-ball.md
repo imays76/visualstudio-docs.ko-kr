@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 718400212d29d6bc2d45855eadbe9d1089468744
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748038"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081048"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>연습: 사실적인 3D 당구공 만들기
 
@@ -67,7 +67,7 @@ ms.locfileid: "34748038"
 
 ### <a name="to-create-a-basic-texture-shader"></a>기본 질감 셰이더를 만들려면
 
-1.  사용할 DGSL 셰이더를 만듭니다. DGSL 셰이더를 프로젝트에 추가하는 방법에 대한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 시작 섹션을 참조하세요.
+1.  작업할 DGSL 셰이더를 만듭니다. DGSL 셰이더를 프로젝트에 추가하는 방법에 대한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 시작 섹션을 참조하세요.
 
      기본적으로 셰이더 그래프는 다음과 같이 표시됩니다.
 
@@ -159,19 +159,19 @@ ms.locfileid: "34748038"
 
      ![큐브 맵 위쪽의 질감](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
- 이제 큐브 맵 측면의 개별 질감을 만들었으므로 도구를 사용하여 단일 .dds 질감에 저장될 수 있는 큐브 맵으로 질감을 어셈블할 수 있습니다. 프로그램이 큐브 맵을 .dds 질감 형식으로 저장할 수 있다면 큐브 맵을 만드는 데 원하는 모든 프로그램을 사용할 수 있습니다. 이 연습에서는 June 2010 DirectX SDK에 포함된 DirectX Texture Tool을 사용하여 질감을 만드는 방법을 보여 줍니다.
+ 이제 큐브 맵 측면의 개별 질감을 만들었으므로 도구를 사용하여 단일 *.dds* 질감에 저장될 수 있는 큐브 맵으로 질감을 어셈블할 수 있습니다. 프로그램이 큐브 맵을 .dds 질감 형식으로 저장할 수 있다면 큐브 맵을 만드는 데 원하는 모든 프로그램을 사용할 수 있습니다. 이 연습에서는 June 2010 DirectX SDK에 포함된 DirectX Texture Tool을 사용하여 질감을 만드는 방법을 보여줍니다.
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>DirectX Texture Tool을 사용하여 큐브 맵을 어셈블하려면
 
-1.  DirectX Texture Tool의 주 메뉴에서 **파일**, **New Texture**(새 질감)를 선택합니다. **New Texture**(새 질감) 대화 상자가 표시됩니다.
+1.  DirectX Texture Tool의 주 메뉴에서 **파일** > **새 질감**을 선택합니다. **New Texture**(새 질감) 대화 상자가 표시됩니다.
 
 2.  **Texture Type**(질감 형식) 그룹에서 **Cubemap Texture**(큐브 맵 질감)를 선택합니다.
 
 3.  **차원** 그룹에서 **너비** 및 **높이**에 올바른 값을 입력하고 **확인**을 선택합니다. 새 질감 문서가 나타납니다. 기본적으로 질감 문서에 표시된 첫 번째 질감은 **양의 X** 큐브 면에 해당합니다.
 
-4.  질감 큐브의 측면용으로 만든 질감을 큐브 면으로 로드합니다. 주 메뉴에서 **파일**, **Open Onto This Cubemap Face**(이 큐브 맵 면으로 열기)를 선택하고, 큐브 측면용으로 만든 질감을 선택하고, **열기**를 선택합니다.
+4.  질감 큐브의 측면용으로 만든 질감을 큐브 면으로 로드합니다. 주 메뉴에서 **파일** > **이 큐브 맵 면으로 열기**를 선택하고, 큐브 측면용으로 만든 질감을 선택한 다음, **열기**를 선택합니다.
 
-5.  **음의 X**, **양의 Z** 및 **음의 Z** 큐브 면에 대해 4단계를 반복합니다. 이 작업을 하려면 로드할 면을 표시해야 합니다. 다른 큐브 맵 면을 보려면 주 메뉴에서 **보기**, **Cube Map Face**(큐브 맵 면)를 선택하고 보려는 면을 선택합니다.
+5.  **음의 X**, **양의 Z** 및 **음의 Z** 큐브 면에 대해 4단계를 반복합니다. 이 작업을 하려면 로드할 면을 표시해야 합니다. 다른 큐브 맵 면을 보려면 주 메뉴에서 **보기** > **큐브 맵 면**을 선택한 다음, 보려는 면을 선택합니다.
 
 6.  **양의 Y** 큐브 면의 경우 질감 큐브의 위쪽용으로 만든 질감을 로드합니다.
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 963c53ed0cd1e74e3e641ac04012e5d0380980fe
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90acef8176910d724a0b5419c0e91d685ca2d43e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569471"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078214"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 요소(MSBuild)
 사용자 정의 [Item](../msbuild/item-element-msbuild.md) 요소 집합을 포함합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 사용되는 모든 항목은 `ItemGroup` 요소의 자식으로 지정해야 합니다.  
@@ -43,7 +43,7 @@ ms.locfileid: "31569471"
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
   
@@ -63,8 +63,6 @@ ms.locfileid: "31569471"
 |-------------|-----------------|  
 |[프로젝트](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
 |[Target](../msbuild/target-element-msbuild.md)|.NET Framework 3.5부터 `ItemGroup` 요소는 `Target` 요소 내에 표시될 수 있습니다. 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요.|  
-  
-## <a name="remarks"></a>설명  
   
 ## <a name="example"></a>예  
  다음 코드 예제에서는 사용자 정의 항목 컬렉션 `Res` 및 `ItemGroup` 요소 내에 선언된 `CodeFiles`를 보여 줍니다. `Res` 항목 컬렉션의 각 항목은 사용자 정의 자식 [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) 요소를 포함합니다.  

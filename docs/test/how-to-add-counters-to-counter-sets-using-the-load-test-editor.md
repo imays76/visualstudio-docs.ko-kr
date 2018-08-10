@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967887"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203640"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 카운터 집합에 카운터 추가
 
@@ -61,7 +61,7 @@ ms.locfileid: "31967887"
 7.  **확인**을 선택합니다.
 
     > [!NOTE]
-    > 기존 카운터 또는 카운터 범주를 마우스 오른쪽 단추로 선택하고 복사를 선택한 다음 다른 카운터 집합 노드에 붙여 넣어 카운터 집합에 카운터를 추가할 수도 있습니다. 필요하지 않은 카운터가 추가로 복사된 경우 이를 삭제할 수 있습니다.
+    > 기존 카운터 또는 카운터 범주를 선택하고 복사를 선택한 다음, 다른 카운터 집합 노드에 붙여넣어 카운터 집합에 카운터를 추가할 수도 있습니다. 필요하지 않은 카운터가 추가로 복사된 경우 이를 삭제할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

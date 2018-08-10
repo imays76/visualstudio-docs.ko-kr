@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976717"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380499"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>빠른 시작: 부하 테스트 프로젝트 만들기
 
-이 10분 분량의 빠른 시작에서는 Visual Studio에서 웹 성능 및 부하 테스트 프로젝트를 만들고 실행하는 방법을 배웁니다. 부하 테스트는 웹 성능 또는 단위 테스트를 실행하여 많은 사용자가 동시에 서버에 액세스하는 것을 시뮬레이션합니다.
+이 10분 분량의 빠른 시작에서는 Visual Studio에서 웹 성능 및 부하 테스트 프로젝트를 만들고 실행하는 방법을 배웁니다. 부하 테스트는 웹 성능 또는 단위 테스트를 실행하여 많은 사용자가 동시에 서버에 액세스하는 것을 시뮬레이트합니다.
 
 > [!IMPORTANT]
 > 웹 성능 및 부하 테스트 프로젝트는 Visual Studio 2017의 Enterprise Edition에서만 사용할 수 있습니다.
@@ -27,9 +27,9 @@ ms.locfileid: "31976717"
 
 웹 성능 및 부하 테스트 도구 구성 요소를 아직 설치하지 않은 경우 Visual Studio 설치 관리자를 통해 설치해야 합니다.
 
-1. Windows 시작 메뉴에서 Visual Studio 설치 관리자를 엽니다. **새 프로젝트** 대화 상자에서 Visual Studio로 액세스하거나 메뉴 모음에서 **도구** > **도구 및 기능 가져오기...** 를 선택하여 액세스할 수도 있습니다.
+1. Windows **시작** 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. **새 프로젝트** 대화 상자에서 Visual Studio로 액세스하거나 메뉴 모음에서 **도구** > **도구 및 기능 가져오기**를 선택하여 액세스할 수도 있습니다.
 
-1. Visual Studio 설치 관리자에서 **개별 구성 요소** 탭을 선택하고 **디버깅 및 테스트** 섹션까지 아래로 스크롤합니다. **웹 성능 및 부하 테스트 도구**를 선택합니다.
+1. **Visual Studio 설치 관리자**에서 **개별 구성 요소** 탭을 선택하고 **디버깅 및 테스트** 섹션까지 아래로 스크롤합니다. **웹 성능 및 부하 테스트 도구**를 선택합니다.
 
    ![웹 성능 및 부하 테스트 도구 구성 요소](media/web-perf-load-testing-tools-component.png)
 
@@ -41,7 +41,7 @@ ms.locfileid: "31976717"
 
 이 섹션에서는 C# 부하 테스트 프로젝트를 만듭니다. 원하는 경우 Visual Basic 부하 테스트 프로젝트를 만들 수도 있습니다.
 
-1. Visual Studio를 열고 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트...** 를 선택합니다.
+1. Visual Studio를 열고 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
    **새 프로젝트** 대화 상자가 열립니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "31976717"
 
 ## <a name="add-a-load-test-to-the-project"></a>프로젝트에 부하 테스트 추가
 
-1. **솔루션 탐색기**에서 프로젝트 노드의 오른쪽 클릭 메뉴 또는 상황에 맞는 메뉴에서 **추가** > **부하 테스트...** 를 선택합니다.
+1. **솔루션 탐색기**에서 프로젝트 노드의 오른쪽 클릭 메뉴 또는 컨텍스트 메뉴에서 **추가** > **부하 테스트**를 선택합니다.
 
    **부하 테스트 새로 만들기 마법사**가 열립니다.
 

@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e33d17e5f54066b038da36611329bb7169de4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b94001c13f5925107cecb49936ecdc5fb1e73514
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254360"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 및 ProcessOff
 VSPerfCmd.exe **ProcessOff** 및 **ProcessOn** 하위 명령은 명령줄 프로파일링 세션에서 지정된 프로세스에 대한 프로파일링을 일시 중지하고 다시 시작합니다. **ProcessOff**는 프로세스 프로파일링을 중지하고 **ProcessOn**은 프로세스를 프로파일링을 시작합니다.  
@@ -40,7 +41,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
   
 #### <a name="parameters"></a>매개 변수  
  `PID`  
- 시작하거나 중지할 프로세스의 정수 식별자입니다. 프로세스 ID는 Windows 작업 관리자의 프로세스 탭에 나열됩니다.  
+ 시작하거나 중지할 프로세스의 정수 식별자입니다. 프로세스 ID는 Windows 작업 관리자의 **프로세스** 탭에 나열됩니다.  
   
 ## <a name="required-subcommands"></a>필수 하위 명령  
  없음  

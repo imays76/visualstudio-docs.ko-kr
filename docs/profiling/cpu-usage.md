@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb48c27ab305908ddbf68334fd818bb9c07cfd1e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4fd0652732e125f80affd9a94c5f29b286ab8bcb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748802"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204143"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 사용량 분석
 앱 성능 문제를 검토해야 하는 경우 앱에서 CPU를 사용하는 방식을 파악하는 것부터 시작하는 것이 좋습니다. **CPU 사용량** 도구는 CPU에서 Visual C++, Visual C#/Visual Basic 및 JavaScript 코드 실행에 시간을 소모하는 상황을 보여 줍니다. Visual Studio 2015 업데이트 1부터 디버거를 종료하지 않고 CPU 사용의 기능별 분석 결과를 볼 수 있습니다. 디버그하는 동안 CPU 프로파일링을 켜고 끌 수 있으며, 실행이 중지되면(예: 중단점에서) 결과를 볼 수 있습니다.  
@@ -23,9 +23,6 @@ ms.locfileid: "34748802"
 진단 세션을 실행 및 관리하기 위한 다양한 옵션이 있습니다. 예를 들어 로컬이나 원격 컴퓨터에서 또는 시뮬레이터나 에뮬레이터에서 **CPU 사용량** 도구를 실행할 수 있습니다. 실행 중인 앱에 연결되고 Visual Studio에서 열려 있는 프로젝트의 성능을 분석하거나 Microsoft Store에서 설치한 앱을 시작할 수 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
 
 여기서는 릴리스 빌드를 사용하여 CPU 사용량을 수집 및 분석하는 방법을 보여 줍니다. 디버그하는 동안 CPU 사용량을 분석하려면 [초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)을 참조하세요. 
-
-> [!NOTE]
-> .NET Core 및 ASP.NET Core에 대한 CPU 사용량 도구는 현재 휴대용 PBD를 통해 정확한 결과를 제공하지 않습니다. 대신 전체 PDB를 사용합니다.
   
 ##  <a name="collect-cpu-usage-data"></a>CPU 사용량 데이터 수집  
   

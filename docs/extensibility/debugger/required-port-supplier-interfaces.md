@@ -1,5 +1,5 @@
 ---
-title: 필수 포트 공급자 인터페이스가 | Microsoft Docs
+title: 필요한 포트 공급자 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e34627effce5e2f0d1401da683536548a32d3f6e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1c727cb39b480d72a3e0aa2083ca795bb65ac0ff
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128660"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252416"
 ---
 # <a name="required-port-supplier-interfaces"></a>필요한 포트 공급자 인터페이스
-포트 공급자를 구현 해야 합니다는 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 인터페이스.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
+포트 공급자 구현 해야 합니다 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 인터페이스.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
   
- 포트 공급자를 제공 하므로 포트, 해당 구현도 해야 합니다. 따라서 다음 인터페이스를 구현 해야 합니다.  
+ 포트를 제공 하 고 구현 하는 포트 공급자. 따라서 다음 인터페이스를 실행 해야 합니다.  
   
 -   [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
   
-     포트를 설명 하 고 포트에서 실행 중인 모든 프로세스를 열거할 수 있습니다.  
+     포트를 설명 하 고 포트에서 실행 중인 모든 프로세스를 열거 합니다.  
   
 -   [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
   
@@ -36,28 +36,28 @@ ms.locfileid: "31128660"
   
 -   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
   
-     에 프로그램 노드 생성 및 소멸 알립니다이 포트의이 컨텍스트 내에서 실행 되는 프로그램에 대 한 메커니즘을 제공 합니다. 자세한 내용은 참조 [프로그램 노드](../../extensibility/debugger/program-nodes.md)합니다.  
+     프로그램 노드 생성 및 소멸 알려주는이 포트의이 컨텍스트 내에서 실행 되는 프로그램에 대 한 메커니즘을 제공 합니다. 자세한 내용은 [노드를 프로그램](../../extensibility/debugger/program-nodes.md)합니다.  
   
 -   `IConnectionPointContainer`  
   
      에 대 한 연결 지점을 제공 [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md)합니다.  
   
 ## <a name="port-supplier-operation"></a>포트 공급자 작업  
- [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) 싱크 프로세스 한 알림을 수신 하 고 프로그램 생성 되 고 포트에서 제거 합니다. 포트를 보내는 데 필요한 [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) 프로세스가 만들어질 때 및 [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) 포트에서 프로세스는 소멸 시기입니다. 포트를 보내는 데 필요한도 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 프로그램을 만들 때 및 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 프로그램 포트에서 실행 되는 프로세스에서 소멸 됩니다 때.  
+ 합니다 [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) 싱크 처리 될 때 알림을 받고 프로그램 생성 및 포트에서 제거 합니다. 포트는 보내도록 필요 [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) 프로세스를 만들 때와 [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) 포트에서 프로세스는 제거 하는 경우. 보낼 포트도 필요 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 프로그램의 인스턴스가 만들어질 때와 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 포트에서 실행 되는 프로세스의 프로그램은 제거 하는 경우.  
   
- 포트는 일반적으로 보내고 프로그램 생성 및 소멸 이벤트에 대 한 응답에서에서 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) 및 [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 메서드를 각각.  
+ 포트를 일반적으로 전송 프로그램 생성 및 소멸 이벤트에 대 한 응답에는 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) 하 고 [RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 메서드를 각각.  
   
- 포트를 시작 하 고 실제 프로세스와 논리 프로그램 둘 다를 종료할 수, 때문에 이러한 인터페이스 디버그 엔진에서 구현 합니다.  
+ 포트를 시작 하 고 실제 프로세스와 논리 프로그램 종료 수, 있으므로 다음 인터페이스 디버그 엔진에서 구현 해야 합니다.  
   
 -   [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
   
-     실제 프로세스에 설명 합니다. 최소한 다음 메서드를 구현 해야 합니다.  
+     실제 프로세스를 설명합니다. 적어도 다음 메서드를 구현 해야 합니다.  
   
     -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
   
     -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
   
-    -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
+    -   [Getserver 메서드](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
   
     -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
@@ -71,7 +71,7 @@ ms.locfileid: "31128660"
   
 -   [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
   
-     논리 프로그램에 설명합니다. 최소한 다음 메서드를 구현 해야 합니다.  
+     논리 프로그램을 설명합니다. 적어도 다음 메서드를 구현 해야 합니다.  
   
     -   [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
   
@@ -81,7 +81,7 @@ ms.locfileid: "31128660"
   
 -   [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
   
-     이 프로그램에 연결할 SDM 방법을 제공 합니다.  
+     SDM이이 프로그램에 연결 하는 방법을 제공 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [포트 공급자 구현](../../extensibility/debugger/implementing-a-port-supplier.md)

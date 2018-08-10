@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4109282bea850e7bca6154a56d0023c5ebb1c746
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845079"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>IP(명령 포인터) 뷰 - 경합 데이터
 경합 데이터의 IP 뷰는 프로파일링 실행 시 실행되지 않도록 차단된 어셈블리 명령에 대한 데이터를 나열합니다.  

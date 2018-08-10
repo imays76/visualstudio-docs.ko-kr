@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd5b18f4bcf3358592b191c2593fd020f99d4cf5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845251"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>방법: 추가 계측 옵션 지정
 

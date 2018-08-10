@@ -1,5 +1,5 @@
 ---
-title: 레거시 코드 편집기를 조정 | Microsoft Docs
+title: 레거시 코드 편집기로 적응 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,70 +13,70 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e90a0f8ba27199e3837c59cd7980f027d0485a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b7e7052ab2d92e7518a57ad5587c29eabf550f3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105140"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078602"
 ---
-# <a name="adapting-legacy-code-to-the-editor"></a>레거시 코드 편집기를 적용합니다.
-Visual Studio 편집기에 기존 코드 구성 요소에서 액세스할 수 있는 다양 한 기능이 있습니다. 다음 지침에는 비 MEF 구성 요소, 예를 들어 VSPackage, 편집기 기능을 사용 하도록 조정 하는 방법을 보여 줍니다. 지침에는 서비스를 가져올 편집기의 관리 및 비관리 코드에서 어댑터를 사용 하는 방법을 보여 줍니다.  
+# <a name="adapt-legacy-code-to-the-editor"></a>레거시 코드 편집기로 적응
+Visual Studio 편집기에 기존 코드 구성 요소에서 액세스할 수 있는 많은 기능이 있습니다. 다음 지침을 예를 들어 VSPackage로 편집기 기능을 사용 하려면-MEF 구성 요소를 조정 하는 방법을 보여 줍니다. 지침에는 서비스를 가져올 편집기의 관리 및 비관리 코드에서 어댑터를 사용 하는 방법을 보여 줍니다.  
   
 ## <a name="editor-adapters"></a>편집기 어댑터  
- 또한 클래스 및 인터페이스를 노출 하는 편집기 개체에 대 한 래퍼 이지만 편집기 어댑터 또는 shim을는 <xref:Microsoft.VisualStudio.TextManager.Interop> API입니다. 예를 들어 비 편집기 서비스 간에 이동 하는 어댑터, Visual Studio 셸 명령 및 편집기 서비스를 사용할 수 있습니다. (이 어떻게 편집기는 현재 Visual Studio에서 호스트 합니다.) 어댑터는 또한 Visual Studio에서 제대로 작동 하려면 레거시 편집기와 언어 서비스 확장을 사용 합니다.  
+ 편집기 어댑터나, shim은 또한 클래스 및 인터페이스를 노출 하는 편집기 개체에 대 한 래퍼를 <xref:Microsoft.VisualStudio.TextManager.Interop> API. 예를 들어 비 편집기 서비스 간에 이동 하려면 어댑터, Visual Studio 셸 명령 및 편집기 서비스를 사용할 수 있습니다. (이 경우 Visual Studio의 편집기를 현재 호스트 되는 방법) 어댑터는 또한 Visual Studio에서 제대로 작동 하려면 레거시 편집기 및 언어 서비스 확장을 사용 합니다.  
   
-## <a name="using-editor-adapters"></a>편집기 어댑터를 사용 하 여  
- <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> 새 편집기 인터페이스와 레거시 인터페이스 사이 전환 하는 메서드 및 어댑터를 만드는 메서드를 제공 합니다.  
+## <a name="use-editor-adapters"></a>편집기 어댑터 사용  
+ <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> 새 편집기 인터페이스 및 레거시 인터페이스를 전환 하는 메서드 및 어댑터를 만드는 메서드를 제공 합니다.  
   
- 이 서비스는 MEF 구성 요소 부분을 사용 하는 경우 다음과 같이 서비스를 가져올 수 있습니다.  
+ 이 서비스는 MEF 구성 요소 파트를 사용 하는 경우 다음과 같은 서비스를 가져올 수 있습니다.  
   
 ```  
 [Import(typeof(IVsEditorAdaptersFactoryService))]  
 internal IVsEditorAdaptersFactoryService editorFactory;  
 ```  
   
- 비 MEF 구성 요소에서이 서비스를 사용 하려는 경우이 항목의 뒷부분에 나오는 "를 사용 하 여 Visual Studio 편집기 서비스에는 비-MEF 구성 요소" 섹션의 지침을 따릅니다.  
+ 비-MEF 구성 요소에서이 서비스를 사용 하려는 경우이 항목의 뒷부분에 나오는 "를 사용 하 여 Visual Studio 편집기 서비스는 비-MEF 구성 요소" 섹션의 지침을 따릅니다.  
   
-## <a name="switching-between-the-new-editor-api-and-the-legacy-api"></a>새 편집기 API 및 레거시 API 간 전환  
- 편집기 개체와 레거시 인터페이스 사이 전환 하려면 다음 방법을 사용 합니다.  
-  
-|메서드|변환|  
-|------------|----------------|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|변환 된 <xref:Microsoft.VisualStudio.Text.ITextBuffer> 에 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|변환 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 에 <xref:Microsoft.VisualStudio.Text.ITextBuffer>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDocumentBuffer%2A>|변환 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 에 <xref:Microsoft.VisualStudio.Text.ITextBuffer>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetViewAdapter%2A>|변환 된 <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 에 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetWpfTextView%2A>|변환 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 에 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>합니다.|  
-  
-## <a name="creating-adapters"></a>어댑터 만들기  
- 레거시 인터페이스에 대 한 어댑터를 만들려면 다음 방법을 사용 합니다.  
+## <a name="switch-between-the-new-editor-api-and-the-legacy-api"></a>편집기 API 및 기존 API 새 사이 전환  
+ 편집기 개체 및 레거시 인터페이스를 전환 하려면 다음 메서드를 사용 합니다.  
   
 |메서드|변환|  
 |------------|----------------|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsCodeWindowAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>을 만듭니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|만듭니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 지정한 <xref:Microsoft.VisualStudio.Utilities.IContentType>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>을 만듭니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferCoordinatorAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>을 만듭니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|만듭니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 에 대 한 프로그램 <xref:Microsoft.VisualStudio.Text.Editor.ITextViewRoleSet>합니다.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>을 만듭니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|변환를 <xref:Microsoft.VisualStudio.Text.ITextBuffer> 에 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|변환를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 에 <xref:Microsoft.VisualStudio.Text.ITextBuffer>합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDocumentBuffer%2A>|변환를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 에 <xref:Microsoft.VisualStudio.Text.ITextBuffer>합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetViewAdapter%2A>|변환를 <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 에 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetWpfTextView%2A>|변환를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 에 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>합니다.|  
   
-## <a name="creating-adapters-in-unmanaged-code"></a>비관리 코드에서 어댑터 만들기  
- 로컬로 등록 된 모든 어댑터 클래스 만들 수 있는 배치를 사용 하 여 인스턴스화할 수는 `VsLocalCreateInstance()` 함수입니다.  
+## <a name="create-adapters"></a>어댑터 만들기  
+ 레거시 인터페이스에 대 한 어댑터를 만들려면 다음 메서드를 사용 합니다.  
   
- 모든 어댑터의 vsshlids.h 파일에 정의 된 Guid를 사용 하 여 만들어진는... Visual Studio SDK 설치의 \VisualStudioIntegration\Common\Inc\ 폴더입니다. VsTextBufferAdapter의 인스턴스를 만들려면 다음 코드를 사용 합니다.  
+|메서드|변환|  
+|------------|----------------|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsCodeWindowAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>를 만듭니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|만듭니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 지정 된 <xref:Microsoft.VisualStudio.Utilities.IContentType>합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>를 만듭니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferCoordinatorAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>를 만듭니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|만듭니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 에 대 한는 <xref:Microsoft.VisualStudio.Text.Editor.ITextViewRoleSet>합니다.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>를 만듭니다.|  
+  
+## <a name="creating-adapters-in-unmanaged-code"></a>관리 되지 않는 코드에서 어댑터를 만드는 방법  
+ 모든 어댑터 클래스를 로컬로 등록 된 공동 creatable를 사용 하 여 인스턴스화할 수는 `VsLocalCreateInstance()` 함수입니다.  
+  
+ 모든 어댑터에 정의 된 Guid를 사용 하 여 만들어진 합니다 *vsshlids.h* 파일을 *\..\VisualStudioIntegration\Common\Inc\\* Visual Studio SDK의 폴더 설치 합니다. VsTextBufferAdapter의 인스턴스를 만들려면 다음 코드를 사용 합니다.  
   
 ```  
 IVsTextBuffer *pBuf = NULL;  
 VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTextBuffer, (void**)&pBuf);  
 ```  
   
-## <a name="creating-adapters-in-managed-code"></a>관리 코드에서 어댑터 만들기  
- 관리 코드에서 비관리 코드에 대해 설명 된 것과 동일한 방식으로 공동 어댑터를 만들 수 있습니다. 만들고 어댑터와 상호 작용할 수 있는 MEF 서비스를 사용할 수 있습니다. 이러한 방식 어댑터를 얻는 공동으로 만들 때 사용할 수 있는 보다 많은 세분화 된 제어를 수 있습니다.  
+## <a name="create-adapters-in-managed-code"></a>관리 코드에서 어댑터 만들기  
+ 관리 코드에서 비관리 코드에서 설명한 것과 동일한 방식으로 어댑터를 함께 만들 수 있습니다. 또한 만들고 어댑터와 상호 작용할 수 있도록 MEF 서비스를 사용할 수 있습니다. 이러한 방식으로 어댑터를 공동으로 만들 때 보다 더 세밀 하 게 제어할 수 있습니다.  
   
-#### <a name="to-create-an-adapter-for-ivstextview"></a>IVsTextView에 대 한 어댑터를 만들려면  
+### <a name="to-create-an-adapter-for-ivstextview"></a>IVsTextView에 대 한 어댑터를 만들려면  
   
-1.  Microsoft.VisualStudio.Editor.dll에 대 한 참조를 추가 합니다. 다음 사항을 확인 `CopyLocal` 로 설정 된 `false`합니다.  
+1.  에 대 한 참조를 추가 *Microsoft.VisualStudio.Editor.dll*합니다. 했는지 `CopyLocal` 로 설정 된 `false`합니다.  
   
 2.  인스턴스화하는 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>다음과 같이 합니다.  
   
@@ -92,16 +92,16 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     adapterFactoryService.CreateTextViewAdapter(textView);  
     ```  
   
-## <a name="using-the-visual-studio-editor-directly-from-unmanaged-code"></a>관리 되지 않는 코드에서 직접 Visual Studio 편집기를 사용 하 여  
- Microsoft.VisualStudio.Platform.VSEditor 네임 스페이스와 Microsoft.VisualStudio.Platform.VSEditor.Interop IVx 인터페이스도 COM 호출 가능 인터페이스를 노출합니다. 예를 들어 Microsoft.VisualStudio.Platform.VSEditor.Interop.IVxTextBuffer 인터페이스는 COM 버전의는 <xref:Microsoft.VisualStudio.Text.ITextBuffer> 인터페이스입니다. `IVxTextBuffer`를 가져와서 버퍼 스냅숏에 대 한 액세스, 버퍼를 수정를 사용 하 여 버퍼에서 텍스트 변경 이벤트를 수신 대기 하는 추적 지점 및 범위를 만듭니다. 다음 단계에서는 액세스 하는 방법을 보여 줍니다는 `IVxTextBuffer` 에서 `IVsTextBuffer`합니다.  
+## <a name="use-the-visual-studio-editor-directly-from-unmanaged-code"></a>관리 되지 않는 코드에서 직접 Visual Studio 편집기를 사용 합니다.  
+ Microsoft.VisualStudio.Platform.VSEditor 네임 스페이스 및 Microsoft.VisualStudio.Platform.VSEditor.Interop 네임 스페이스를 IVx 인터페이스로 COM 호출 가능 인터페이스를 노출합니다. 예를 들어 Microsoft.VisualStudio.Platform.VSEditor.Interop.IVxTextBuffer 인터페이스는 COM 버전의는 <xref:Microsoft.VisualStudio.Text.ITextBuffer> 인터페이스입니다. `IVxTextBuffer`, 버퍼 스냅숏에 액세스, 버퍼를 수정, 수신 버퍼의 텍스트 변경 이벤트에 대 한 고 추적 지점 및 범위를 만들 수 있습니다. 다음 단계에서는 액세스 하는 방법을 보여는 `IVxTextBuffer` 에서 `IVsTextBuffer`합니다.  
   
-#### <a name="to-get-an-ivxtextbuffer"></a>IVxTextBuffer 가져오려는  
+### <a name="to-get-an-ivxtextbuffer"></a>IVxTextBuffer를 가져오려면  
   
-1.  IVx * 인터페이스에 대 한 정의에 VSEditor.h 파일에 포함 되는... Visual Studio SDK 설치의 \VisualStudioIntegration\Common\Inc\ 폴더입니다.  
+1.  IVx * 인터페이스에 대 한 정의는 *VSEditor.h* 파일을 *\..\VisualStudioIntegration\Common\Inc\\* Visual Studio SDK 설치 폴더입니다.  
   
-2.  다음 코드를 사용 하 여 텍스트 버퍼를 인스턴스화하는 `IVsUserData->GetData()` 메서드. 다음 코드에서 `pData` 에 대 한 포인터는 `IVsUserData` 개체입니다.  
+2.  다음 코드를 사용 하 여 텍스트 버퍼를 인스턴스화하는 `IVsUserData->GetData()` 메서드. 다음 코드에서는 `pData` 에 대 한 포인터를 `IVsUserData` 개체입니다.  
   
-    ```  
+    ```cpp  
     #include <textmgr.h>  
     #include <VSEditor.h>  
     #include <vsshlids.h>  
@@ -121,14 +121,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     }  
     ```  
   
-## <a name="using-visual-studio-editor-services-in-a-non-mef-component"></a>Visual Studio 편집기 서비스를 사용 하 여 비 MEF 구성 요소  
- MEF를 사용 하지 않는 관리 코드 구성 요소가 있는 경우 Visual Studio 편집기의 서비스를 사용 하려면 ComponentModelHost VSPackage를 포함 하는 어셈블리에 대 한 참조를 추가 하 고 해당 SComponentModel 서비스를 가져올 해야 합니다.  
+## <a name="use-visual-studio-editor-services-in-a-non-mef-component"></a>Visual Studio 편집기 서비스를 사용 하 여 비-MEF 구성 요소  
+ MEF를 사용 하지 않는 기존 관리 되는 코드 구성 요소 있고 Visual Studio 편집기의 서비스를 사용 하려는 경우 ComponentModelHost VSPackage를 포함 하는 어셈블리에 대 한 참조를 추가 하 고 해당 SComponentModel 서비스 가져오기 해야 합니다.  
   
-#### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>Visual Studio 편집기 구성 요소는 비 MEF 구성 요소에서를 사용 하려면  
+### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>비-MEF 구성 요소에서 Visual Studio 편집기 구성 요소를 사용 하려면  
   
-1.  Microsoft.VisualStudio.ComponentModelHost.dll 어셈블리에 대 한 참조 추가... Visual Studio 설치의 \Common7\IDE\ 폴더입니다. 다음 사항을 확인 `CopyLocal` 로 설정 된 `false`합니다.  
+1.  에 대 한 참조를 추가 합니다 *Microsoft.VisualStudio.ComponentModelHost.dll* 어셈블리에는 *\..\Common7\IDE\\* Visual Studio 설치 폴더입니다. 했는지 `CopyLocal` 로 설정 된 `false`합니다.  
   
-2.  개인 추가 `IComponentModel` Visual Studio 편집기 서비스를 다음과 같이 사용 하려는 클래스에는 멤버입니다.  
+2.  개인 추가 `IComponentModel` Visual Studio 편집기 서비스를 다음과 같이 사용 하려는 클래스 멤버입니다.  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -136,14 +136,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  초기화 메서드에서 구성 요소에 대 한 구성 요소 모델을 인스턴스화하십시오.  
+3.  구성 요소에 대 한 초기화 메서드에서 구성 요소 모델을 인스턴스화하십시오.  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  그러면 Visual Studio 편집기 서비스 중 하나를 호출 하 여 가져올 수 있습니다는 `IComponentModel.GetService<T>()` 원하는 서비스에 대 한 메서드.  
+4.  그런 다음 Visual Studio 편집기 서비스 중 하나를 호출 하 여 가져올 수 있습니다는 `IComponentModel.GetService<T>()` 원하는 서비스에 대 한 메서드.  
   
     ```  
     textBufferFactoryService =  

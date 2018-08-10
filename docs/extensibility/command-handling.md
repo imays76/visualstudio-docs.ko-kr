@@ -13,22 +13,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 542277c5d8ab1b9b130f31bbb06215d8da7bc2ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a155927bb69c55c15a06cb058692038c8b309a30
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099960"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230871"
 ---
 # <a name="command-handling"></a>명령 처리
-편집기에는 새 명령을 정의할 수 있습니다. 명령은 도구 모음 또는 상황에 맞는 메뉴에서 메뉴에 일반적으로 표시 됩니다.  
+편집기 새 명령을 정의할 수 있습니다. 명령은 상황에 맞는 메뉴 또는 도구 모음 메뉴에서 일반적으로 표시 됩니다.  
   
- 명령 및 메뉴 정의 대 한 자세한 내용은 참조 [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)합니다.  
+ 명령 및 메뉴를 정의 하는 방법에 대 한 자세한 내용은 참조 하세요. [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)합니다.  
   
- 어떤 상황에 맞는 메뉴를 가로채는 편집기에 표시 됩니다는 언어 서비스를 제어할 수는 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 열거형입니다. 또는 표식 당 별로 상황에 맞는 메뉴를 제어할 수 있습니다. 자세한 내용은 참조 [언어 서비스 필터에 대 한 중요 한 명령을](../extensibility/internals/important-commands-for-language-service-filters.md)합니다.  
+ 어떤 상황에 맞는 메뉴를 차단 하 여 편집기에 표시 됩니다 언어 서비스를 제어할 수는 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 열거형입니다. 또는 표식 당 기준 상황에 맞는 메뉴를 제어할 수 있습니다. 자세한 내용은 [언어 서비스 필터에 대 한 중요 명령](../extensibility/internals/important-commands-for-language-service-filters.md)입니다.  
   
-## <a name="adding-commands-to-the-editor-context-menu"></a>편집기 상황에 맞는 메뉴에 명령 추가  
- 상황에 맞는 메뉴에 명령을 추가 하려면 먼저 특정 그룹에 속하는 메뉴 명령 집합을 정의 해야 합니다. 다음 예제에서는 연습의 일부로 생성 되는.vsct 파일에서 가져온 것 [연습: 추가 기능을 사용자 지정 편집기에](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
+## <a name="add-commands-to-the-editor-context-menu"></a>편집기 상황에 맞는 메뉴에 명령 추가  
+ 상황에 맞는 메뉴에 명령을 추가 하려면 먼저 특정 그룹에 속하는 메뉴 명령 집합을 정의 해야 합니다. 다음 예제에서 가져온 것은 *.vsct* 연습의 일환으로 생성 된 파일 [연습: 사용자 지정 편집기에 기능 추가](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
  \<메뉴 guid = "guidCustomEditorCmdSet" id = "IDMX_RTF" 우선 순위 = "0x0000" type = "컨텍스트" >  
   
@@ -46,9 +46,9 @@ ms.locfileid: "31099960"
   
  \</ 메뉴 >  
   
- 상황에 맞는 메뉴 명령 텍스트를 추가 하는 위의 텍스트 **CustomEditor 상황에 맞는 메뉴**합니다. 메뉴 GUID는이 편집기를 사용 하 여 만든는 명령 집합의 형식입니다 "컨텍스트"입니다.  
+ 텍스트를 사용 하 여 상황에 맞는 메뉴 명령을 추가 하는 위의 텍스트가 **CustomEditor 상황에 맞는 메뉴**합니다. 메뉴 GUID에는이 편집기를 사용 하 여 만든 명령 집합의 일부입니다. 유형 "컨텍스트"입니다.  
   
- .Vsct 파일에서 정의 해야 하는 필요 하지 않은 미리 정의 된 명령을 사용할 수도 있습니다. 예를 들어 Visual Studio 패키지 템플릿은에서 생성 한 EditorPane.cs 파일을 검사 하면 알게 하는 미리 정의 된 명령 집합을 같은 <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> 정의한 <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>, onSelectAll 메서드와 같은 명령 처리기에서 처리 됩니다.  
+ 정의 하지 않아도 되는 미리 정의 된 명령을 사용할 수도 있습니다는 *.vsct* 파일입니다. 예를 들어 검토 합니다 *EditorPane.cs* Visual Studio 패키지 템플릿에 의해 생성 된 파일입니다. 볼 수 있습니다는 미리 정의 된 명령 집합을 같은 <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> 정의한 <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>와 같은 명령 처리기에서 처리 되는 `onSelectAll` 메서드.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

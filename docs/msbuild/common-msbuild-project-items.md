@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ea8c1ffd52805be4f93fb59c2831f5f0fe610c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 900241a25fabc259fb19ffa2b75f2fa12ad6e517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574261"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152557"
 ---
 # <a name="common-msbuild-project-items"></a>일반적인 MSBuild 프로젝트 항목
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 항목은 하나 이상의 파일에 대한 명명된 참조입니다. 항목에는 파일 이름, 경로 및 버전 번호와 같은 메타데이터가 포함됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 모든 프로젝트 형식에는 공통된 여러 항목이 있습니다. 이러한 항목은 Microsoft.Build.CommonTypes.xsd 파일에 정의되어 있습니다.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 항목은 하나 이상의 파일에 대한 명명된 참조입니다. 항목에는 파일 이름, 경로 및 버전 번호와 같은 메타데이터가 포함됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 모든 프로젝트 형식에는 공통된 여러 항목이 있습니다. 이러한 항목은 *Microsoft.Build.CommonTypes.xsd* 파일에 정의되어 있습니다.  
   
 ## <a name="common-items"></a>공통 항목  
  다음은 모든 공통 프로젝트 항목의 목록입니다.  
@@ -78,6 +78,7 @@ ms.locfileid: "31574261"
 |name|선택적 문자열입니다. 참조의 표시 이름입니다.|  
 |프로젝트|선택적 문자열입니다. 참조의 GUID로, {12345678-1234-1234-1234-1234567891234} 형식을 갖습니다.|  
 |패키지|선택적 문자열입니다. 참조되는 프로젝트 파일의 경로입니다.|  
+|ReferenceOutputAssembly|선택적 부울입니다. `false`로 설정하면 참조된 프로젝트의 출력이 이 프로젝트의 [참조](#Reference)로 포함되지 않지만, 이 프로젝트 앞에 다른 프로젝트가 빌드되도록 합니다. 기본값은 `true`입니다.|
   
 ### <a name="compile"></a>Compile  
  컴파일러에 대한 소스 파일을 나타냅니다.  

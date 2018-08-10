@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704605"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379776"
 ---
 # <a name="sample-code-for-testing"></a>테스트를 위한 샘플 코드
 
@@ -27,7 +27,7 @@ ms.locfileid: "33704605"
 이 코드는 다음 연습에서 사용됩니다.
 
 - [관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). 이 연습에서는 단위 테스트를 작성, 사용자 지정 및 실행하고 테스트 결과를 검사하는 단계를 안내합니다.
-- [명령줄 테스트 유틸리티 사용](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). 이 연습에서는 MSTest.exe 명령줄 유틸리티를 사용하여 테스트를 실행하고 결과를 확인합니다.
+- [명령줄 테스트 유틸리티 사용](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). 이 연습에서는 *MSTest.exe* 명령줄 유틸리티를 사용하여 테스트를 실행하고 결과를 확인합니다.
 
 ## <a name="sample-code"></a>샘플 코드
 

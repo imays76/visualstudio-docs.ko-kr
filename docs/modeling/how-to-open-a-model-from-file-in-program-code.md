@@ -9,54 +9,54 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 53858b110cb16509cd9067368cbd035d7ef40c88
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949830"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566553"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>방법: 프로그램 코드로 파일에서 모델 열기
 모든 응용 프로그램에서 DSL 모델을 열 수 있습니다.
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 확장명 ModelBus이 용도로 사용할 수 있습니다. ModelBus 모델 또는 모델에서 요소를 참조 하 고 팀 프로젝트가 이동 하는 경우 모델을 찾는 데 표준 메커니즘을 제공 합니다. 자세한 내용은 참조 [Visual Studio Modelbus를 사용 하 여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md)합니다.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 확장이이 목적을 위해 ModelBus를 사용할 수 있습니다. ModelBus는 모델 또는 모델에서 요소를 참조 하 고이 이동 하는 경우 모델을 찾는 데 표준 메커니즘을 제공 합니다. 자세한 내용은 [Visual Studio Modelbus를 사용 하 여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md)합니다.
 
 ## <a name="target-framework"></a>대상 프레임워크
- 설정의 **대상 프레임 워크** 를 응용 프로그램 프로젝트의 **.NET Framework 4**합니다.
+ 설정 된 **대상 프레임 워크** 하는 응용 프로그램 프로젝트의 **.NET Framework 4**합니다.
 
 #### <a name="to-set-the-target-framework"></a>대상 프레임 워크를 설정 하려면
 
-1.  열기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DSL 모델을 읽을 만들려는 응용 프로그램에 대 한 프로젝트입니다.
+1.  열기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DSL 모델 읽기 하려는 응용 프로그램에 대 한 프로젝트입니다.
 
-2.  **솔루션 탐색기**, 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성**합니다.
+2.  **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성**합니다.
 
-3.  프로젝트 속성 창에서에 **응용 프로그램** 탭에서 설정 된 **대상 프레임 워크** 필드를 **.NET Framework 4**합니다.
+3.  프로젝트 속성 창에서에 **응용 프로그램** 탭, 설정 된 **대상 프레임 워크** 필드를 **.NET Framework 4**.
 
 > [!NOTE]
->  선택한 경우에이 작업을 수행 해야 **.NET Framework 4** 프로젝트 만들기 대화 상자에서 합니다. 대상 프레임 워크 되어서는 안 **.NET Framework 4 Client Profile**합니다.
+>  선택한 경우에이 작업을 수행 해야 **.NET Framework 4** 프로젝트 만들기 대화 상자에서. 대상 프레임 워크 안 **.NET Framework 4 Client Profile**합니다.
 
 ## <a name="references"></a>참조
- 이러한 참조를 추가 해야 프로그램 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 응용 프로그램 프로젝트:
+ 이러한 참조를 추가 해야 하 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 응용 프로그램 프로젝트:
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-    -   이 표시 되지 않으면는 **.NET** 탭에 **참조 추가** 대화 상자를 클릭는 **찾아보기** 탭으로 이동 하 고 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`합니다.
+    -   아래에서 표시 되지 않으면를 **.NET** 탭에서 **참조 추가** 대화 상자에서 클릭 합니다 **찾아보기** 탭을 이동할 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`합니다.
 
--   DSL 있는 어셈블리를 DSL 프로젝트 bin 폴더에서 찾을 수 있습니다. 해당 이름을 일반적으로 폼의: *YourCompany*. *YourProject*`.Dsl.dll`합니다.
+-   DSL 어셈블리를 DSL 프로젝트 bin 폴더에서 찾이 됩니다. 이름과 일반적으로 폼의: *YourCompany*. *YourProject*`.Dsl.dll`합니다.
 
-## <a name="important-classes-in-the-dsl"></a>DSL의 중요 한 클래스
- DSL을 읽을 수 있는 코드를 작성할 수 있습니다, 전에 일부 DSL에 의해 생성 된 클래스의 이름을 알아야 합니다. DSL 솔루션을 열고는 **Dsl** 찾은 프로젝트는 **GeneratedCode** 폴더입니다. 또는 프로젝트에서 DSL 어셈블리를 두 번 클릭 **참조**, DSL의 네임 스페이스에 엽니다 **개체 브라우저**합니다.
+## <a name="important-classes-in-the-dsl"></a>DSL에서 중요 한 클래스
+ DSL을 읽는 코드를 작성할 수 있습니다, 전에 일부 DSL에서 생성 된 클래스의 이름을 알아야 합니다. DSL 솔루션을 엽니다는 **Dsl** 프로젝트를 확인 합니다 **GeneratedCode** 폴더입니다. 또는 프로젝트에서 DSL 어셈블리를 두 번 클릭 **참조가**, DSL의 네임 스페이스에 연 **개체 브라우저**합니다.
 
  다음은 식별 해야 하는 클래스입니다.
 
--   *YourDslRootClass* -이름에 루트 클래스의 프로그램 `DslDefinition.dsl`합니다.
+-   *YourDslRootClass* -이 루트 클래스의 이름에 `DslDefinition.dsl`입니다.
 
--   *YourDslName* `SerializationHelper` -이 클래스에 정의 된 `SerializationHelper.cs` DSL 프로젝트에 있습니다.
+-   *D s l 이름* `SerializationHelper` -이 클래스에 정의 된 `SerializationHelper.cs` DSL 프로젝트에서.
 
--   *YourDslName* `DomainModel` -이 클래스에 정의 된 `DomainModel.cs` DSL 프로젝트에 있습니다.
+-   *D s l 이름* `DomainModel` -이 클래스에 정의 된 `DomainModel.cs` DSL 프로젝트에서.
 
 ## <a name="reading-from-a-file"></a>파일에서 읽기
- 다음 예제는 중요 한 클래스는 다음과 같습니다 DSL 읽을 고안 되었습니다.
+ 다음 예에서는 읽기는 중요 한 클래스에는 다음과 같이 DSL 하도록 설계 됩니다.
 
 -   FamilyTreeModel
 
@@ -64,9 +64,9 @@ ms.locfileid: "31949830"
 
 -   FamilyTreeDomainModel
 
- 이 DSL이 고 다른 도메인 클래스는 사람입니다.
+ 이 DSL의 다른 도메인 클래스는 사람입니다.
 
-```
+```csharp
 using System;
 using Microsoft.VisualStudio.Modeling;
 using Company.FamilyTree; // Your DSL namespace
@@ -102,10 +102,10 @@ namespace StandaloneReadDslConsole
 } } } }
 ```
 
-## <a name="saving-to-a-file"></a>파일 저장
- 이전 코드에 다음 내용을 추가 하는 모델에 변경 되 고 파일에 저장 합니다.
+## <a name="saving-to-a-file"></a>파일에 저장
+ 앞의 코드를 다음 내용을 추가 모델로 변경 작업을 수행 하 고 파일을 저장 합니다.
 
-```
+```csharp
 using (Transaction t =
   store.TransactionManager.BeginTransaction("update model"))
 {

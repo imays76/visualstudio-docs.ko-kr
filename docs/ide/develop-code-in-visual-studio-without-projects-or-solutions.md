@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746029"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117123"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발
 
@@ -89,7 +89,7 @@ MSBuild 기반 코드베이스에는 **시작** 단추의 드롭다운 목록에
 
 코드베이스에 Python 또는 JavaScript 코드가 포함된 경우에는 *.json* 파일을 구성할 필요가 없지만 해당 워크로드를 설치해야 합니다. 시작 스크립트도 구성해야 합니다.
 
-1. **도구** > **도구 및 기능 가져오기...** 를 선택하거나 Visual Studio를 닫고 Visual Studio 설치 관리자를 실행하는 방법으로 [Node.js 개발](https://www.visualstudio.com/vs/node-js/) 또는 [Python 개발](https://www.visualstudio.com/vs/python/) 워크로드를 설치합니다.
+1. **도구** > **도구 및 기능 가져오기**를 선택하거나 Visual Studio를 닫고 Visual Studio 설치 관리자를 실행하는 방법으로 [Node.js 개발](https://visualstudio.microsoft.com/vs/node-js/) 또는 [Python 개발](https://visualstudio.microsoft.com/vs/python/) 워크로드를 설치합니다.
 
    ![Node.js 및 Python 개발 워크로드](media/python_nodejs_workloads.png)
 

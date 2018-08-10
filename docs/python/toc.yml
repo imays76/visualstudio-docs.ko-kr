@@ -8,11 +8,12 @@
 - name: 빠른 시작
   items:
     - name: Flask를 사용하여 웹앱 만들기
-      href: ../ide/quickstart-python.md?context=visualstudio/python/default
+      href: ../ide/quickstart-python.md
+      maintainContext: true
     - name: 템플릿으로 프로젝트 만들기
       href: quickstart-02-python-in-visual-studio-project-from-template.md
     - name: 기존 코드로 프로젝트 만들기
-      href: quickstart-01-project-from-existing.md
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
     - name: 리포지토리에서 프로젝트 만들기
       href: quickstart-03-python-in-visual-studio-project-from-repository.md
     - name: Cookiecutter 템플릿으로 프로젝트 만들기
@@ -87,10 +88,10 @@
           href: search-paths.md
         - name: 환경 창 참조
           href: python-environments-window-tab-reference.md
-    - name: 코드 편집
+    - name: Python 코드 편집
       href: editing-python-code-in-visual-studio.md
       items:
-        - name: 코드 서식 지정
+        - name: 코드 형식
           href: formatting-python-code.md
         - name: 코드 리팩터링
           href: refactoring-python-code.md

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39c59d76d10c2028214b2a1ea15ff139000e3080
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 652a9595601c614d18daf175a72404f9570d4162
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970402"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078331"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>단위 테스트 만들기 명령을 사용하여 단위 테스트 메서드 스텁 만들기
 
@@ -32,9 +32,11 @@ Visual Studio **단위 테스트 만들기** 명령은 단위 테스트 메서�
 
 * 확장 가능하고 MSTest, MSTest V2, NUnit, xUnit 형식으로 테스트 내보내기를 지원합니다.
 
+* .NET Core 프로젝트에서는 아직 사용할 수 없습니다.
+
 ## <a name="get-started"></a>시작
 
-시작하려면 테스트할 프로젝트의 코드 편집기에서 메서드, 형식 또는 네임스페이스를 선택하고, 바로 가기 메뉴를 열고, **단위 테스트 만들기**를 선택합니다. 이렇게 하면 새 단위 테스트에 대한 만들기 옵션을 선택할 수 있는 **단위 테스트 만들기** 대화 상자가 열립니다.
+시작하려면 테스트할 프로젝트의 코드 편집기에서 메서드, 형식 또는 네임스페이스를 선택하고, 바로 가기 메뉴를 열고, **단위 테스트 만들기**를 선택합니다. 새 단위 테스트에 대한 만들기 옵션을 선택할 수 있는 **단위 테스트 만들기** 대화 상자가 열립니다.
 
 ![단위 테스트 만들기 명령 사용](media/createunittestcommand.png)
 
@@ -55,8 +57,8 @@ Visual Studio에서는 모든 테스트 프레임워크를 사용하여 필요�
 
 테스트 프레임워크 확장은 Visual Studio Marketplace에서 사용할 수 있습니다.
 
-* [NUnit Extension for the Test Generators](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)(테스트 생성기에 대한 NUnit 확장)
-* [xUnit.net Extension for the Test Generators](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)(테스트 생성기에 대한 xUnit.net 확장)
+* [테스트 생성기에 대한 NUnit 확장](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [테스트 생성기에 대한 xUnit.net 확장](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
 ## <a name="when-should-i-use-this-feature"></a>이 기능은 언제 사용해야 하나요?
 

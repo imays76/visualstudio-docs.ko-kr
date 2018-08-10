@@ -12,20 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39bc1acd059c9a915f330c74140c89d5f4fa40ff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8cdb171d16b6612562ea21608cdeb622f4ef8bb5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574642"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179049"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 인라인 작업
 MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
   
  .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 따라서 소스 코드를 추적하기 위해 더 쉽고 작업을 배포하기도 더 쉽습니다. 소스 코드는 스크립트에 통합됩니다.  
   
+
+ MSBuild 15.8에서 .NET Standard 플랫폼 간 인라인 작업을 만들 수 있도록 [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md)가 추가되었습니다.  .NET Core에서 인라인 작업을 사용하는 경우 RoslynCodeTaskFactory를 사용해야 합니다.
 ## <a name="the-structure-of-an-inline-task"></a>인라인 작업의 구조  
- 인라인 작업은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소에 의해 포함됩니다. 인라인 작업 및 이 작업을 포함하는 `UsingTask` 요소는 일반적으로 .targets 파일에 포함되며 필요할 때 다른 프로젝트 파일로 가져옵니다. 다음은 기본 인라인 작업입니다. 이 작업은 아무 것도 수행하지 않습니다.  
+ 인라인 작업은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소에 의해 포함됩니다. 인라인 작업 및 이 작업을 포함하는 `UsingTask` 요소는 일반적으로 *.targets* 파일에 포함되며 필요할 때 다른 프로젝트 파일로 가져옵니다. 다음은 기본 인라인 작업입니다. 이 작업은 아무 것도 수행하지 않습니다.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -52,18 +54,18 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 -   `TaskFactory` 특성은 인라인 작업 팩터리를 구현하는 클래스의 이름을 지정합니다.  
   
 -   `AssemblyFile` 특성은 인라인 작업 팩터리를 위치를 지정합니다. 또는 `AssemblyName` 특성을 사용하여 일반적으로 GAC(전역 어셈블리 캐시)에 있는 인라인 작업 팩터리 클래스의 정규화된 이름을 지정할 수 있습니다.  
+
+`DoNothing` 작업의 나머지 요소는 비어 있으며 인라인 작업의 순서 및 구조를 보여 주기 위해 제공됩니다. 이 항목의 뒷부분에 보다 강력한 예제가 제공됩니다.  
   
- `DoNothing` 작업의 나머지 요소는 비어 있으며 인라인 작업의 순서 및 구조를 보여 주기 위해 제공됩니다. 이 항목의 뒷부분에 보다 강력한 예제가 제공됩니다.  
-  
--   `ParameterGroup` 요소는 선택적입니다. 이 요소를 지정하면 작업에 대한 매개 변수를 선언합니다. 입력 및 출력 매개 변수에 대한 자세한 내용은 이 항목 뒷부분에 나오는 "입력 및 출력 매개 변수"를 참조하세요.  
+-   `ParameterGroup` 요소는 선택적입니다. 이 요소를 지정하면 작업에 대한 매개 변수를 선언합니다. 입력 및 출력 매개 변수에 대한 자세한 내용은 이 항목 뒷부분에 나오는 [입력 및 출력 매개 변수](#input-and-output-parameters)를 참조하세요.  
   
 -   `Task` 요소는 작업 소스 코드를 설명하고 포함합니다.  
   
 -   `Reference` 요소는 코드에서 사용하는 .NET 어셈블리에 대한 참조를 지정합니다. 이 요소를 사용하는 것은 Visual Studio에서 프로젝트에 대한 참조를 추가하는 것과 같습니다. `Include` 특성은 참조된 어셈블리의 경로를 지정합니다.  
   
 -   `Using` 요소는 액세스하려는 네임스페이스를 나열합니다. 이 요소는 Visual C#의 `Using` 문과 비슷합니다. `Namespace` 특성은 포함할 네임스페이스를 지정합니다.  
-  
- `Reference` 및 `Using` 요소는 언어와 관련이 없습니다. 인라인 작업은 지원되는 .NET CodeDom 언어 중 하나(예: Visual Basic 또는 Visual C#)로 작성할 수 있습니다.  
+
+`Reference` 및 `Using` 요소는 언어와 관련이 없습니다. 인라인 작업은 지원되는 .NET CodeDom 언어 중 하나(예: Visual Basic 또는 Visual C#)로 작성할 수 있습니다.  
   
 > [!NOTE]
 >  `Task` 요소에 의해 포함된 요소는 작업 팩터리(이 경우 코드 작업 팩터리)마다 고유합니다.  
@@ -80,15 +82,15 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 -   `Type` 값이 `Method`이면 코드는 <xref:Microsoft.Build.Framework.ITask> 인터페이스의 `Execute` 메서드에 대한 재정의를 정의합니다.  
   
 -   `Type` 값이 `Fragment`이면 코드는 서명 또는 `return` 문이 아니라 `Execute` 메서드의 내용을 정의합니다.  
+
+코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" 또는 ">"와 같은 예약 문자 이스케이프에 신경쓰지 않아도 됩니다.  
   
- 코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" 또는 ">"와 같은 예약 문자 이스케이프에 신경쓰지 않아도 됩니다.  
-  
- 또는 `Code` 요소의 `Source` 특성을 사용하여 작업에 대한 코드를 포함하는 파일의 위치를 지정할 수 있습니다. 소스 파일의 코드는 `Type` 특성으로 지정된 형식이어야 합니다. `Source` 특성이 있으면 `Type`의 기본값은 `Class`입니다. `Source`가 없으면 기본값은 `Fragment`입니다.  
+또는 `Code` 요소의 `Source` 특성을 사용하여 작업에 대한 코드를 포함하는 파일의 위치를 지정할 수 있습니다. 소스 파일의 코드는 `Type` 특성으로 지정된 형식이어야 합니다. `Source` 특성이 있으면 `Type`의 기본값은 `Class`입니다. `Source`가 없으면 기본값은 `Fragment`입니다.  
   
 > [!NOTE]
 >  소스 파일에서 클래스 이름을 정의할 때 클래스 이름은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소의 `TaskName` 특성에 부합되어야 합니다.  
   
-## <a name="hello-world"></a>Hello World  
+## <a name="helloworld"></a>HelloWorld  
  다음은 좀 더 강력한 인라인 작업입니다. HelloWorld 작업은 일반적으로 시스템 콘솔 또는 Visual Studio **출력** 창에 해당하는 기본 오류 로깅 장치에 "Hello, world!"를 표시합니다. 이 예제의 `Reference` 요소는 단지 설명을 위해 포함되었습니다.  
   
 ```xml  
@@ -114,7 +116,7 @@ Log.LogError("Hello, world!");
 </Project>  
 ```  
   
- HelloWorld.targets라는 파일에 HelloWorld 작업을 저장하고 다음과 같이 프로젝트에서 호출할 수 있습니다.  
+ *HelloWorld.targets*라는 파일에 HelloWorld 작업을 저장한 다음, 다음과 같이 프로젝트에서 호출할 수 있습니다.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -142,7 +144,7 @@ Log.LogError("Hello, world!");
   
 -   `Output`는 기본적으로 `false`인 선택적 특성입니다. `true`이면 먼저 매개 변수에 값이 지정되어야 Execute 메서드에서 반환될 수 있습니다.  
   
- 예를 들어 개체에 적용된  
+예를 들어 개체에 적용된  
   
 ```xml  
 <ParameterGroup>  
@@ -152,15 +154,15 @@ Log.LogError("Hello, world!");
 </ParameterGroup>  
 ```  
   
- 다음과 같은 세 개의 매개 변수를 정의합니다.  
+다음과 같은 세 개의 매개 변수를 정의합니다.  
   
 -   `Expression`은 System.String 형식의 필수 입력 매개 변수입니다.  
   
 -   `Files`는 필수 항목 목록 입력 매개 변수입니다.  
   
 -   `Tally`는 System.Int32 형식의 출력 매개 변수입니다.  
-  
- `Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다. 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.  
+
+`Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다. 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.  
   
 ## <a name="example"></a>예제  
  다음 인라인 작업은 지정된 파일에서 나오는 모든 토큰을 지정된 값으로 바꿉니다.  

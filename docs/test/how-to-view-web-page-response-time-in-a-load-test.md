@@ -12,15 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3f65920a1f47895ab6caf4bc84dd75c8100487a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379484"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>방법: 부하 테스트 분석기를 사용하여 부하 테스트의 웹 페이지 응답 시간 보기
 
-각 웹 페이지가 로드되는 시간을 *응답 시간*이라고 합니다. 웹 성능 테스트를 만들 때 웹 성능 테스트의 각 웹 페이지 요청에 대한 응답 시간 목표를 설정할 수 있습니다.
+각 웹 페이지가 로드되는 시간을 ‘응답 시간’이라고 합니다. 웹 성능 테스트를 만들 때 웹 성능 테스트의 각 웹 페이지 요청에 대한 응답 시간 목표를 설정할 수 있습니다.
 
 부하 테스트의 스트레스 환경에서 웹 성능 테스트를 실행하면 각 페이지에서 다음과 같은 정보를 분석할 수 있습니다.
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 
 -   테스트 반복 중 페이지의 응답 시간 목표를 달성한 백분율
 
--   부하 테스트 분석기의 테이블 뷰 또는 그래프 뷰를 사용하여 웹 페이지 응답 시간을 분석할 수 있습니다.
+-   **부하 테스트 분석기**의 테이블 보기 또는 그래프 보기를 사용하여 웹 페이지 응답 시간을 분석할 수 있습니다.
 
 -   테이블 뷰의 웹 페이지 응답 시간 분석
 
@@ -38,13 +39,13 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-view-response-time-data-in-a-table"></a>응답 시간 데이터를 표로 보려면
 
-1.  부하 테스트 분석기에서 도구 모음의 **테이블**을 선택하여 테이블 눈금이 표시되어 있는지 확인합니다.
+1.  **부하 테스트 분석기**에서 도구 모음의 **테이블**을 선택하여 테이블 그리드가 표시되어 있는지 확인합니다.
 
 2.  **테이블** 드롭다운 목록 상자에서 **페이지**를 선택합니다.
 
 3.  각 페이지에 대한 데이터가 표로 표시됩니다. 다음 열이 일반적으로 표시됩니다.
 
-    |||
+    |열 머리글|설명|
     |-|-|
     |**페이지**|웹 페이지의 이름입니다.|
     |**시나리오**|시나리오 이름입니다. 웹 성능 테스트에 시나리오가 둘 이상인 경우 이 정보가 중요합니다.|
@@ -67,11 +68,11 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="view-response-time-data-in-a-graph"></a>그래프에서 응답 시간 데이터 보기
 
-응답 시간 데이터를 그래프로 표시하여 부하 테스트 도중 시간에 따라 값이 변화하는 모양을 확인할 수 있습니다. 이 방법은 단계 부하 패턴을 사용하는 경우와 같이 테스트 실행 도중 부하 패턴이 증가하는 경우에 특히 유용합니다. 자세한 내용은 [부하 패턴을 편집하여 가상 사용자 동작 모델링](../test/edit-load-patterns-to-model-virtual-user-activities.md)을 참조하세요.
+응답 시간 데이터를 그래프로 표시하여 부하 테스트 도중 시간에 따라 값이 변화하는 모양을 확인할 수 있습니다. 이 방법은 단계 부하 패턴을 사용하는 경우와 같이 테스트 실행 도중 부하 패턴이 증가하는 경우에 특히 유용합니다. 자세한 내용은 [부하 패턴을 편집하여 가상 사용자 작업 모델링](../test/edit-load-patterns-to-model-virtual-user-activities.md)을 참조하세요.
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>응답 시간 데이터를 그래프로 보려면
 
-1.  부하 테스트 분석기의 도구 모음에서 **그래프**를 선택하여 그래프를 표시합니다.
+1.  **부하 테스트 분석기**의 도구 모음에서 **그래프**를 선택하여 그래프를 표시하도록 합니다.
 
 2.  **카운터** 창에서 관심 있는 시나리오의 노드(예: `Scenario1`)를 확장합니다.
 
@@ -85,10 +86,10 @@ ms.lasthandoff: 04/26/2018
 
      그래프에 데이터가 추가됩니다.
 
-7.  (선택 사항) Avg. Page Time, Page Response Time Goal 및 Total Pages에 대해 위의 단계를 반복합니다.
+7.  (선택 사항) **평균 페이지 시간**, **페이지 응답 시간 목표** 및 **전체 페이지**에 대해 위의 단계를 반복합니다.
 
     > [!NOTE]
-    > Page Response Time Goal은 상수입니다.
+    > **페이지 응답 시간 목표**는 상수입니다.
 
  자세한 내용은 [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)을 참조하세요.
 

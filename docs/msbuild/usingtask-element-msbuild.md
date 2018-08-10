@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 64d3fd57f5c55a321ca09495adcd7c712964b01f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269143"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154606"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 요소(MSBuild)
 [Task](../msbuild/task-element-msbuild.md) 요소에서 참조하는 작업을 작업의 구현이 포함된 어셈블리에 매핑합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "34269143"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <UsingTask TaskName="TaskName"  
     AssemblyName = "AssemblyName"   
     TaskFactory = "ClassName"  
@@ -43,7 +43,7 @@ ms.locfileid: "34269143"
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
 
@@ -72,9 +72,9 @@ ms.locfileid: "34269143"
  환경 변수, 명령줄 속성, 프로젝트 수준 속성 및 프로젝트 수준 항목은 직접 또는 가져온 프로젝트 파일을 통해 프로젝트 파일에 포함된 `UsingTask` 요소에서 참조할 수 있습니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
 
 > [!NOTE]
->  MSBuild 엔진을 통해 전역으로 등록된 .tasks 파일 중 하나에서 `UsingTask` 요소를 가져오는 경우 프로젝트 수준 속성 또는 항목에는 의미가 없습니다. 프로젝트 수준 값은 MSBuild에 대해 전역이 아닙니다.  
+>  MSBuild 엔진을 통해 전역으로 등록된 *.tasks* 파일 중 하나에서 `UsingTask` 요소를 가져오는 경우 프로젝트 수준 속성 또는 항목에는 의미가 없습니다. 프로젝트 수준 값은 MSBuild에 대해 전역이 아닙니다.  
 
- MSBuild 4.0에서는 작업 사용을 .overridetask 파일에서 로드할 수 있습니다.  
+ MSBuild 4.0에서는 작업 사용을 *.overridetask* 파일에서 로드할 수 있습니다.  
 
 ## <a name="example"></a>예  
  다음 예제에서는 `AssemblyName` 특성에서 `UsingTask` 요소를 사용하는 방법을 보여 줍니다.  

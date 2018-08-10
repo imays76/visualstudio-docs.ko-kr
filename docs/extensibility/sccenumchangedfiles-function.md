@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 762bda21f8480224347bd0c8c202c282298e07cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b8fb9c83d8948ca3edc0650e85af6ea8c011abc
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137133"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639830"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 함수
-로컬 파일의 목록에 지정 된 경우이 함수는 파일은 소스 코드 제어 데이터베이스에서 해당 버전의 다른 결정 합니다.  
+로컬 파일의 목록을 지정 되 면이 함수는 파일은 소스 코드 제어 데이터베이스에서 해당 버전의 다른 결정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,29 +37,29 @@ SCCRTN SccEnumChangedFiles(
 );  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
+### <a name="parameters"></a>매개 변수  
  pContext  
- [in] 소스 제어 플러그 인 컨텍스트 포인터입니다.  
+ [in] 원본 제어 플러그 인 컨텍스트 포인터입니다.  
   
  hWnd  
- [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에를 부모로 사용할 수 있는 IDE 창 핸들입니다.  
+ [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.  
   
  cFiles  
  [in] 파일 이름에 지정 된 수의 `lpFileNames` 배열입니다. 또한의 크기를 지정 `plIsFileDifferent` 배열입니다.  
   
  lpFileNames  
- [in] 확인 하려면 로컬 파일 이름 배열입니다.  
+ [in] 확인 하려면 로컬 파일 이름의 배열입니다.  
   
  plIsFileDifferent  
- [out에서] 각 파일의 차이 상태를 나타내는 값의 배열입니다 (배열에 적어도 있어야 `cFiles` 항목). Nonzero는 파일이 다른 임을 의미 합니다.  
+ [out에서] 각 파일의 차이 상태를 나타내는 값의 배열 (배열의 이상 이어야 `cFiles` 항목). Nonzero 파일 다른 임을 의미 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 소스 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환:  
+ 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
 |값|설명|  
 |-----------|-----------------|  
 |SCC_OK|작업이 완료 되었습니다.|  
 |SCC_UNSPECIFIEDERROR|일반 오류입니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>참고자료  
+ [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751834"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382730"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>C/C++ DLL에 대한 단위 테스트 작성
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>방법: C++ DLL에 대한 단위 테스트 작성
 
 이 연습에서는 테스트 우선 방법론을 사용하여 기본 C++ DLL을 개발하는 방법을 설명합니다. 기본 단계는 다음과 같습니다.
 
 1.  [기본 테스트 프로젝트 만들기](#create_test_project). 테스트 프로젝트는 DLL 프로젝트와 동일한 솔루션에 있습니다.
 
-2.  [DLL 프로젝트 만들기](#create_dll_project). 이 연습에서는 새 DLL을 만들지만 기존 DLL 테스트 절차와 비슷합니다.
+2.  [DLL 프로젝트 만들기](#create_dll_project) 이 연습에서는 새 DLL을 만들지만 기존 DLL 테스트 절차와 비슷합니다.
 
 3.  [DLL 함수가 테스트에 표시되도록 설정](#make_functions_visible).
 
@@ -38,9 +38,9 @@ ms.locfileid: "34751834"
 
 ##  <a name="create_test_project"></a> 기본 단위 테스트 프로젝트 만들기
 
-1.  **파일** 메뉴에서 **새로 만들기 | 프로젝트**를 차례로 선택합니다.
+1.  **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-     대화 상자에서 **설치됨 | 템플릿 | Visual C++ | 테스트**를 차례로 확장합니다.
+     대화 상자에서 **설치됨** > **템플릿** > **Visual C++** > **테스트**를 차례로 확장합니다.
 
      **기본 단위 테스트 프로젝트** 템플릿을 선택하거나, 원하는 설치된 프레임워크를 선택합니다. Google Test나 Boost.Test 같은 다른 템플릿을 선택해도 기본 원칙은 같고 세부 정보가 일부 달라집니다.
 
@@ -75,11 +75,11 @@ ms.locfileid: "34751834"
 
          `Assert` 클래스는 테스트 메서드의 결과를 확인하는 데 사용할 수 있는 몇 가지 정적 메서드를 제공합니다.
 
-    2.  **테스트** 메뉴에서 **실행 | 모든 테스트**를 선택합니다.
+    2.  **테스트** 메뉴에서 **실행** > **모든 테스트**를 선택합니다.
 
          테스트가 빌드되고 실행됩니다.
 
-         테스트 탐색기가 나타납니다.
+         **테스트 탐색기**가 나타납니다.
 
          **테스트에 통과함**아래에 테스트가 나타납니다.
 
@@ -99,13 +99,13 @@ ms.locfileid: "34751834"
 
      ![DLL에 대한 C++ 프로젝트 마법사 집합 및 기호 내보내기](../test/media/utecpp06.png)
 
-3.  주 .h 파일에서 내보낸 함수를 선언합니다.
+3.  주 *.h* 파일에서 내보낸 함수를 선언합니다.
 
      ![새 DLL 코드 프로젝트 및 API 매크로가 있는 .h 파일](../test/media/utecpp07.png)
 
      `__declspec(dllexport)` 선언자는 클래스의 공용 및 보호되는 멤버가 DLL 외부에 표시되도록 만듭니다. 자세한 내용은 [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)을 참조하세요.
 
-4.  주 .cpp 파일에서 함수에 대한 최소한의 본문을 추가합니다.
+4.  주 *.cpp* 파일에서 함수에 대한 최소한의 본문을 추가합니다.
 
     ```cpp
         // Find the square root of a number.
@@ -119,7 +119,7 @@ ms.locfileid: "34751834"
 
 1.  DLL 프로젝트를 테스트 프로젝트의 프로젝트 참조에 추가합니다.
 
-    1.  테스트 프로젝트의 속성을 열고 **공용 속성**, **프레임워크 및 참조**를 선택합니다.
+    1.  테스트 프로젝트의 속성을 열고 **공용 속성** > **프레임워크 및 참조**를 선택합니다.
 
          ![C++ 프로젝트 속성 | 프레임워크 및 참조](../test/media/utecpp08.png)
 
@@ -129,7 +129,7 @@ ms.locfileid: "34751834"
 
          ![C++ 프로젝트 속성 | 새 참조 추가](../test/media/utecpp09.png)
 
-2.  주 단위 테스트 .cpp 파일에서 DLL 코드의 .h 파일을 포함합니다.
+2.  주 단위 테스트 *.cpp* 파일에서 DLL 코드의 *.h* 파일을 포함합니다.
 
     ```cpp
     #include "..\RootFinder\RootFinder.h"
@@ -157,9 +157,9 @@ ms.locfileid: "34751834"
 
 4.  솔루션을 빌드합니다.
 
-     새 테스트가 테스트 탐색기에 나타납니다.
+     새 테스트가 **테스트 탐색기**에 나타납니다.
 
-5.  테스트 탐색기에서 **모두 실행**을 선택합니다.
+5.  **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
      ![단위 테스트 탐색기 &#45; 기본 테스트 통과](../test/media/utecpp10.png)
 
@@ -186,7 +186,7 @@ ms.locfileid: "34751834"
     >
     > 사용자가 요구 사항을 변경할 경우, 더 이상 올바르지 않은 테스트는 비활성화합니다. 새 테스트를 작성하고, 동일한 증분 방식으로 한 번에 하나씩 작동합니다.
 
-2.  솔루션을 빌드한 다음 테스트 탐색기에서 **모두 실행**을 선택합니다.
+2.  솔루션을 빌드한 다음, **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
      새 테스트가 실패합니다.
 
@@ -214,7 +214,7 @@ ms.locfileid: "34751834"
     }
     ```
 
-4.  솔루션을 빌드한 다음 테스트 탐색기에서 **모두 실행**을 선택합니다.
+4.  솔루션을 빌드한 다음, **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
      두 테스트가 모두 통과합니다.
 
@@ -262,7 +262,7 @@ ms.locfileid: "34751834"
 
 3.  실패한 테스트를 엽니다(또는 두 번 클릭).
 
-     실패한 어설션이 강조 표시됩니다. 오류 메시지는 테스트 탐색기의 세부 정보 창에 표시됩니다.
+     실패한 어설션이 강조 표시됩니다. 오류 메시지는 **테스트 탐색기**의 세부 정보 창에 표시됩니다.
 
      ![NegativeRangeTests 실패](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -302,7 +302,7 @@ ms.locfileid: "34751834"
 
 1.  SquareRoot 함수에서 중앙 계산을 간소화합니다.
 
-    ```
+    ```cpp
     // old code:
     //   result = result - (result*result - v)/(2*result);
     // new code:
@@ -330,7 +330,7 @@ ms.locfileid: "34751834"
 ## <a name="see-also"></a>참고 항목
 
 - [기존 C++ 응용 프로그램에 단위 테스트 추가](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)
+- [Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용](how-to-use-microsoft-test-framework-for-cpp.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)
 - [연습: 동적 연결 라이브러리 만들기 및 사용(C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [가져오기 및 내보내기](/cpp/build/importing-and-exporting)

@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9651197d24e96f58551bca5cfde5ec60b25bfa09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ec83d60046a74484035df9d7a7831d16b48d899
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577316"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151183"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 현재 컨텍스트에서 추적을 다시 시작합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp  
 HRESULT WINAPI ResumeTracking();  
 ```  
   
@@ -37,7 +37,7 @@ HRESULT WINAPI ResumeTracking();
  추적이 다시 시작된 경우 **SUCCEEDED** 비트가 설정된 **HRESULT**를 반환합니다. 컨텍스트를 사용할 수 없어 추적을 다시 시작할 수 없는 경우 **E_FAIL**이 반환됩니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** FileTracker.h  
+ **헤더:** *FileTracker.h*  
   
 ## <a name="see-also"></a>참고 항목  
  [SuspendTracking](../msbuild/suspendtracking.md)

@@ -2,7 +2,7 @@
 title: Visual Studio를 사용하여 C#으로 ASP.NET Core 웹앱 만들기
 description: C#을 사용하여 단계별로 Visual Studio에서 ASP.NET Core 웹앱을 만드는 방법을 알아봅니다.
 ms.custom: mvc
-ms.date: 10/10/2017
+ms.date: 07/20/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,79 +14,107 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380618"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
-Visual Studio IDE(통합 개발 환경)에 대한 이 5 ~ 10분 분량의 소개에서는 간단한 C # ASP.NET Core 웹 응용 프로그램을 만듭니다.
+이 5~10분 진행되는 Visual Studio를 사용하는 방법에 대한 소개에서 ASP.NET 프로젝트 템플릿과 C# 프로그래밍 언어를 사용하여 간단한 "Hello World" 웹앱을 만듭니다.
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-먼저, ASP.NET Core 웹 응용 프로그램 프로젝트를 만듭니다. 프로젝트 형식에는 무엇인가 추가하기 전에 기능 웹 응용 프로그램을 구성하는 템플릿 파일이 포함되어 있습니다.
+먼저, ASP.NET Core 웹 응용 프로그램 프로젝트를 만듭니다. 또한 프로젝트 형식에는 어떤 것을 추가하기도 전에 웹앱을 만들 수 있는 모든 템플릿 파일이 함께 제공됩니다!
 
 1. Visual Studio 2017을 엽니다.
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 차에서 **Visual C#** 을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 응용 프로그램**을 선택한 후 **확인**을 선택합니다.
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장하고 **.NET Core**를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 응용 프로그램**을 선택합니다. 그런 다음, 파일 이름을 `HelloWorld`로 지정하고 **확인**을 선택합니다.
 
-     **.NET Core** 프로젝트 템플릿 범주가 표시되지 않으면 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정**을 선택합니다.
+   ![C#용 새 ASP.NET Core 웹 응용 프로그램 프로젝트 만들기](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
-     ![VS 설치 관리자에서 ASP.NET 워크로드](../ide/media/quickstart-aspnet-workload.png)
+   > [!NOTE]
+   > **.NET Core** 프로젝트 템플릿 범주가 표시되지 않으면 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다.
+   >
+   > ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기](../ide/media/open-visual-studio-installer.png)
+   >
+   > Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+   >
+   > ![VS 설치 관리자에서 ASP.NET 워크로드](../ide/media/quickstart-aspnet-workload.png)
+   >
+   > (새 워크로드를 계속 설치하려면 먼저 Visual Studio를 닫아야 할 수 있습니다.)
 
-1. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자의 상단 드롭다운 메뉴에서 **ASP.NET Core 2.0**을 선택합니다. (목록에 **ASP.NET Core 2.0**이 표시되지 않으면 대화 상자 맨 위에 있는 노란색 표시줄에 나타나는 **다운로드** 링크에 따라 설치합니다.) **확인**을 선택합니다.
+1. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자의 위쪽 드롭다운 메뉴에 **ASP.NET Core 2.0** 이 표시되는지 확인합니다. 그런 다음, **웹 응용 프로그램**을 선택하고 **확인**을 선택합니다.
 
    ![새 ASP.NET Core 웹 응용 프로그램 대화 상자](../ide/media/quickstart-aspnet-core20.png)
 
-## <a name="explore-the-ide"></a>IDE 탐색
+곧 Visual Studio에서 프로젝트 파일이 열립니다.
 
-1. **솔루션 탐색기** 도구 모음에서 **페이지** 폴더를 확장한 후 **About.cshtml**을 선택하고 편집기에서 엽니다. 이 파일은 웹 응용 프로그램의 **정보** 페이지에 해당합니다.
+## <a name="create-the-app"></a>앱 만들기
 
-1. 편집기에서 `AboutModel`을 선택한 후 **F12** 키를 누르거나 바로 가기(마우스 오른쪽 단추 클릭) 메뉴에서 **정의로 이동**을 선택합니다. 이 명령으로 `AboutModel` C# 클래스 정의가 표시됩니다.
+1. **솔루션 탐색기**에서 **Pages** 폴더를 확장한 다음, **About.cshtml**을 선택합니다.
 
-   ![[정의로 이동] 바로 가기 메뉴](../ide/media/quickstart-aspnet-gotodefinition.png)
+   ![솔루션 탐색기에서 About.cshtml 파일 선택](../ide/media/csharp-aspnet-about-page-html-file.png)
 
-1. 다음으로, 간단한 바로 가기를 사용하여 파일 맨 위에서 `using` 지시문을 정리합니다. 회색으로 표시된 using 지시문을 선택하면 [빠른 작업](../ide/quick-actions.md) 전구 메뉴가 캐럿 바로 아래 또는 왼쪽 여백에 나타납니다. 전구 메뉴를 선택한 후 **불필요한 Using 제거**를 선택합니다.
+   이 파일은 웹앱에서 이름이 **정보**로 이름이 지정된 페이지에 해당합니다.
 
-     파일에서 불필요한 using이 삭제됩니다.
+   ![웹앱의 정보 페이지](../ide/media/csharp-aspnet-about-page.png)
 
-1. `OnGet()` 메서드에서 본문을 다음 코드로 변경합니다.
+   **정보** 페이지의 “추가 정보” 영역에 대한 HTML 코드가 편집기에 표시됩니다.
 
- ```csharp
- public void OnGet()
- {
-     string directory = Environment.CurrentDirectory;
-     Message = String.Format("Your directory is {0}.", directory);
- }
- ```
+   ![Visual Studio 편집기의 추가 정보 영역에 대한 HTML 코드](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. 이러한 형식은 범위에 없으므로 두 개의 물결선이 **환경** 및 **문자열** 아래에 나타납니다. **오류 목록** 도구 모음을 열고 같은 오류가 나열되는지 확인합니다. (**오류 목록** 도구 모음이 표시되지 않으면 메뉴 모음에서 **보기** > **오류 목록**을 선택합니다.)
+1. “추가 정보” 텍스트를 “ **Hello World!**”로 변경합니다.
 
-   ![오류 목록](../ide/media/quickstart-aspnet-errorlist.png)
+   ![Visual Studio 편집기에서 추가 정보 영역의 기본 HTML 코드를 변경합니다.](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
-1. 편집기 창에서 오류가 있는 줄에 커서를 놓고 왼쪽 여백에서 빠른 작업 전구 메뉴를 선택합니다. 드롭다운 메뉴에서 **using System;** 을 선택하여 이 지시문을 파일 맨 위에 추가하고 오류를 해결합니다.
+1. **솔루션 탐색기**에서 **About.cshtml**을 확장한 다음, **About.cshtml.cs**를 선택합니다. (이 파일은 웹앱의 **정보** 페이지와 일치합니다.)
 
-## <a name="run-the-application"></a>응용 프로그램 실행
+   ![솔루션 탐색기에서 About.cshtml 파일 선택](../ide/media/csharp-aspnet-about-page-code-file.png)
 
-1. **Ctrl**+**F5**를 눌러 응용 프로그램을 실행하고 웹 브라우저에서 엽니다.
+   **정보** 페이지의 “응용 프로그램 설명” 영역에 대한 텍스트를 포함하는 C# 코드가 편집기에 표시됩니다.
 
-1. 웹 사이트의 맨 위에서 **정보**를 선택하여 **정보** 페이지에 대한 `OnGet()` 메서드에 추가한 디렉터리 메시지를 표시합니다.
+   ![Visual Studio 편집기의 응용 프로그램 설명 영역에 대한 C# 코드](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
+
+1. “응용 프로그램 설명” 메시지 텍스트를 “**내 메시지란?**”으로 변경합니다.
+
+   ![Visual Studio 편집기에서 응용 프로그램 설명 영역의 기본 메시지 텍스트 변경](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
+
+## <a name="run-the-app"></a>앱 실행
+
+1. **Ctrl**+**F5**를 눌러 앱을 실행하고 웹 브라우저에서 엽니다.
+
+   > [!NOTE]
+   > **‘IIS Express’ 웹 서버에 연결할 수 없습니다**라는 오류 메시지가 발생하면 Visual Studio를 닫은 후 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 엽니다. 그런 다음 응용 프로그램을 다시 실행합니다.
+
+1. 웹 페이지 위쪽에서 **정보**를 선택합니다.
+
+   ![웹 페이지에서 정보 선택](../ide/media/csharp-aspnet-home-page-about.png)
+
+1. **정보** 페이지에 추가한 업데이트된 텍스트를 봅니다.
+
+   ![추가한 텍스트가 포함된 업데이트된 페이지 보기](../ide/media/csharp-aspnet-about-page-hello-world.png)
 
 1. 웹 브라우저를 닫습니다.
 
-> [!NOTE]
-> **'IIS Express' 웹 서버에 연결할 수 없습니다**라는 오류 메시지가 발생하면 Visual Studio를 닫은 후 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 엽니다. 그런 다음 응용 프로그램을 다시 실행합니다.
-
-이 빠른 시작을 완료한 것을 축하 드립니다! Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 해당 기능을 보다 자세히 알아보려면 목차에서 **자습서** 섹션에 있는 자습서를 읽어보세요.
+이 빠른 시작을 완료한 것을 축하 드립니다! C#, ASP.NET Core 및 Visual Studio IDE(통합 개발 환경)를 이해하는 데 도움이 되었기를 바랍니다.
 
 ## <a name="next-steps"></a>다음 단계
-이 빠른 시작을 완료한 것을 축하 드립니다! C#, ASP.NET Core 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 자세히 알아보려면 계속 다음 자습서를 사용하세요.
+
+자세히 알아보려면 다음 자습서를 계속 진행하세요.
 
 > [!div class="nextstepaction"]
 > [Visual Studio에서 C# 및 ASP.NET 시작](tutorial-csharp-aspnet-core.md)
+>
+> [!div class="nextstepaction"]
+> [ASP.NET Core MVC 및 Visual Studio 시작](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+
+## <a name="see-also"></a>참고 항목
+
+[Visual Studio를 사용하여 Azure App Service에 웹앱 게시](..//deployment/quickstart-deploy-to-azure.md)

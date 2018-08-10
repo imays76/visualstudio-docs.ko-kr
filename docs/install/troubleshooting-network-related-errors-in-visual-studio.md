@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41fed015f4ad80c3c3b74bc77ea3b9cc6ed8eb18
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b6397a8b35934842497a756fc3294a47e30fb281
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619759"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978074"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
@@ -61,7 +61,7 @@ ms.locfileid: "31619759"
 
         ```xml
         <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#" http://<yourproxy:port#>"/>
+            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
         </defaultProxy>
         ```
 
@@ -114,7 +114,7 @@ Visual Studio는 TLS(전송 계층 보안) 1.2 프로토콜을 사용하여 네�
 
 ## <a name="get-support"></a>지원 받기
 
-Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 설치 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://www.visualstudio.com/vs/support/#talktous)를 참조하세요.
+Visual Studio 설치에 실패하는 경우에는 [Visual Studio 2017 설치 및 업그레이드 문제 해결](troubleshooting-installation-issues.md) 페이지를 참조하세요. 설치 문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 Microsoft에 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
 
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 

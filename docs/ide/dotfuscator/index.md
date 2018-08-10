@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704398"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468198"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator CE(Community Edition)
 
@@ -43,7 +43,7 @@ Dotfuscator는 원래 응용 프로그램 동작은 유지하면서 .NET 어셈�
 
 **응용 프로그램의 무결성을 보호**하는 것도 중요합니다.
 리버스 엔지니어링 외에도 악의적인 사용자가 응용 프로그램을 불법 복제하거나, 런타임에 응용 프로그램의 동작을 변경하거나, 데이터를 조작하려고 할 수 있습니다.
-Dotfuscator는 응용 프로그램에 변조, 제3자 디버깅 및 루팅된 장치를 비롯한 [무단 사용을 감지, 보고 및 반응][checks]하는 기능을 주입합니다.
+Dotfuscator는 변조, 제3자 디버깅 및 루팅된 장치를 비롯한 [무단 사용을 감지 및 반응][checks]하는 기능을 응용 프로그램에 삽입합니다.
 
 Dotfuscator를 보안 소프트웨어 개발 수명 주기에 적용하는 방법에 대한 자세한 내용은 PreEmptive Solutions의 [SDL 응용 프로그램 보호 페이지][sdl-protection]를 참조하세요.
 
@@ -55,13 +55,11 @@ Visual Studio 2017에 포함된 Dotfuscator CE 버전을 설치하는 방법에 
 Dotfuscator CE는 개발자, 설계자 및 테스터를 위한 광범위한 [소프트웨어 보호 및 보안 강화][software-protection] 서비스를 제공합니다.
 Dotfuscator CE에 포함된 [.NET Obfuscation][obfuscation] 및 기타 [응용 프로그램 보호] [app-protection] 기능의 예는 다음과 같습니다.
 
-* 식별자 *[이름 바꾸기][renaming]*  - 컴파일된 어셈블리의 리버스 엔지니어링을 더 어렵게 만듭니다.
-* *[변조 방지][tamper]*  - 변조된 응용 프로그램의 실행을 감지하고, 인시던트 경고를 전송하고, 변조된 세션을 종료합니다.
-* *[디버그 방지][debug]*  - 실행 중인 응용 프로그램에 대한 디버거 연결을 감지하고, 인시던트 경고를 전송하고, 디버그된 세션을 종료합니다.
-* *[루팅 방지 장치][root]* - 루팅된 Android 장치에서 응용 프로그램이 실행되고 있는지 감지하고, 이러한 장치의 세션을 종료합니다.
-* *[응용 프로그램 만료 동작][shelflife]* - “수명 종료" 날짜를 인코딩하고, 만료 날짜 이후에 응용 프로그램이 실행될 경우 경고를 전송하고, 만료된 응용 프로그램 세션을 종료합니다.
-* *[예외 추적][exceptions]*  - 응용 프로그램 내에서 발생하는 처리되지 않은 예외를 모니터링합니다.
-* *[세션][sessions] 및 [기능][features] 사용 추적* - 실행된 응용 프로그램, 이러한 응용 프로그램의 버전 및 해당 응용 프로그램에서 사용된 기능을 확인합니다.
+* 식별자 [이름 바꾸기][renaming]: 컴파일된 어셈블리의 리버스 엔지니어링을 더 어렵게 만듭니다.
+* [변조 방지][tamper]: 변조된 응용 프로그램의 실행을 감지하고 변조된 세션을 종료하거나 이러한 세션에 응답합니다.
+* [디버그 방지][debug]: 실행 중인 응용 프로그램에 대한 디버거 연결을 감지하고 디버그된 세션을 종료하거나 이러한 세션에 응답합니다.
+* [루팅 방지 장치][root]: 루팅된 Android 장치에서 응용 프로그램이 실행되고 있는지 감지하고 이러한 장치의 세션을 종료하거나 세션에 응답합니다.
+* [응용 프로그램 만료 동작][shelflife]: “수명 종료” 날짜를 인코드하고 만료된 응용 프로그램 세션을 종료합니다.
 
 이러한 기능과 이러한 기능이 응용 프로그램 보호 전략에 맞게 조정되는 방법에 대한 자세한 내용은 [기능 페이지][capabilities]를 참조하세요.
 
@@ -107,9 +105,5 @@ Visual Studio에서 Dotfuscator CE 사용을 시작하려면 **빠른 실행**(C
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

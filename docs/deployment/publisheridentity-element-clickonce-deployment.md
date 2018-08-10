@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b0082d7a2b062d946d132c5a86fbceb5208802
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815144"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081412"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; 요소 (ClickOnce 배포)
 이 배포 매니페스트에 서명한 게시자에 대한 정보를 포함합니다.  
@@ -38,11 +38,11 @@ ms.locfileid: "34815144"
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- `publisherIdentity` 요소는 서명 된 매니페스트에 필요 합니다. 다음 표에서 특성이 표시 하는 `publisherIdentity` 요소를 지원 합니다.  
+ `publisherIdentity` 요소는 서명 된 매니페스트에 필요 합니다. 다음 표에서 특성을 보여 줍니다는 `publisherIdentity` 요소를 지원 합니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`name`|필수. 이 응용 프로그램을 게시 하는 파티의 id에 설명 합니다.|  
+|`name`|필수. 이 응용 프로그램을 게시 하는 파티의 id를 설명 합니다.|  
 |`issuerKeyHash`|필수. 인증서 발급자의 공개 키의 sha-1 해시를 포함합니다.|  
   
 #### <a name="parameters"></a>매개 변수  

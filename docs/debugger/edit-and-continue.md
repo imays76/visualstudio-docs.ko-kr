@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca5b2f8d144451dcea2dafb30edd072a45c9b96
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aef3d25b648e99b6d7d5e7c9c6c286026a7d24be
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471972"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176361"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>코드를 편집 하 고 (C#, VB, c + +) Visual Studio에서 디버깅을 계속
-편집하며 계속하기는 프로그램이 중단 모드에 있는 동안 소스 코드를 변경하여 시간을 절약할 수 있는 기능입니다. 같은 실행 명령을 선택 하 여 프로그램 실행을 다시 시작 하면 **계속** 또는 **단계**, 편집 하 고 자동으로 계속 몇 가지 제한 사항이 코드 변경 내용을 적용 합니다. 이 기능을 사용하면 전체 프로그램을 중지하고 다시 컴파일한 다음 디버깅 세션을 다시 시작하는 대신 디버깅 세션을 진행하는 과정에서 코드를 변경할 수 있습니다.  
+편집하며 계속하기는 프로그램이 중단 모드에 있는 동안 소스 코드를 변경하여 시간을 절약할 수 있는 기능입니다. 같은 실행 명령을 선택 하 여 프로그램 실행을 다시 시작 하면 **계속** 하거나 **단계**, 편집 및 계속 자동으로 코드 변경 내용을 몇 가지 제한 사항이 적용 됩니다. 이 기능을 사용하면 전체 프로그램을 중지하고 다시 컴파일한 다음 디버깅 세션을 다시 시작하는 대신 디버깅 세션을 진행하는 과정에서 코드를 변경할 수 있습니다.  
   
  이 단원에 포함된 항목은 다음과 같습니다.   
   
@@ -49,4 +49,4 @@ ms.locfileid: "31471972"
 ## <a name="see-also"></a>참고 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [옵션 대화 상자, 디버깅, 편집하며 계속하기](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)   
- [디버거 기본 사항](../debugger/debugger-basics.md)
+ [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)

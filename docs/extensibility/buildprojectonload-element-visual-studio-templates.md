@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689d2510a8513b880f3c2cddca584449c03217b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e5cbcc06fcc7a936918de8b1a9d4c44d9938d94
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097824"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154160"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 요소(Visual Studio 템플릿)
-만들고 있는 솔루션에 추가할 때만 새 프로젝트를 빌드합니다. 전체 솔루션 빌드되지 않습니다.  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 요소 (Visual Studio 템플릿)
+만들고 솔루션에 추가할 때만 새 프로젝트를 빌드합니다. 전체 솔루션 빌드되지 않습니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -44,17 +44,17 @@ ms.locfileid: "31097824"
   
 |요소|설명|  
 |-------------|-----------------|  
-|TemplateData|템플릿을 분류 하 고 모두에 나타나는 방식을 정의 **새 프로젝트** 및 **새 항목 추가** 대화 상자.|  
+|`TemplateData`|템플릿을 분류 하 고 둘 다에 표시 되는 방식을 정의 합니다 **새 프로젝트** 하며 **새 항목 추가** 대화 상자.|  
   
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 중 하나 여야 합니다 `true` 또는 `false` 서식 파일을 만들 때만 새 프로젝트를 빌드하지을 여부를 나타내는입니다.  
+ 텍스트 여야 `true` 또는 `false` 템플릿에서 만들어질 때 새 프로젝트의 빌드를 여부를 나타내는입니다.  
   
 ## <a name="remarks"></a>설명  
  `BuildProjectOnLoad`는 선택적 요소입니다. 기본값은 `false`입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 Visual C# 템플릿에 대 한 메타 데이터를 보여 줍니다.  
   
 ```  
@@ -82,6 +82,6 @@ ms.locfileid: "31097824"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>참고자료  
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

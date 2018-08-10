@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 073a94e498d978b139395de460c274d7d269fb2f
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32318785"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40021698"
 ---
 .NET Framework 4

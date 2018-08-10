@@ -1,5 +1,5 @@
 ---
-title: 웹 응용 프로그램 디버깅 | Microsoft Docs
+title: 웹 응용 프로그램 디버그 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8638bccca59bdcf497feeeef2b311cc22e5d79c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472399"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178919"
 ---
 # <a name="debugging-web-applications"></a>웹 응용 프로그램 디버깅
 이 단원에서는 다양한 형식의 웹 응용 프로그램을 디버깅하는 방법에 대해 설명합니다.  
@@ -41,6 +41,6 @@ ms.locfileid: "31472399"
 ## <a name="see-also"></a>참고 항목  
  [Debugging Web Applications and Script](../debugger/debugging-web-applications-and-script.md) (웹 응용 프로그램 및 스크립트 디버그)  
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)   
- [Debugger Basics](../debugger/debugger-basics.md) (디버거 기본 사항)  
+ [Debugger Basics](../debugger/getting-started-with-the-debugger.md) (디버거 기본 사항)  
  [Visual Studio의 디버깅](../debugger/index.md)  
  [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)

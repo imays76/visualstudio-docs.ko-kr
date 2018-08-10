@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d064f4a5b983058d9f1ad4428e2b37cf2e82dcf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4655b6105a940b7f2c742ba8bcd0812d0be5ab95
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473162"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433187"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 기본 인스턴스에 있는지 여부를 존재로 정의 된 [VsgDbg 클래스](vsgdbg-class.md) 클래스-프로그래밍 캡처 인터페이스를 제공 하는-제공 됩니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "31473162"
   
  프로그래밍 캡처 인터페이스는 전역 범위 `g_pVsgDbg`를 사용하는 포인터를 통해 제공됩니다.  
   
-```  
+```cpp
 VsgDbg *g_pVsgDbg;  
 ```  
   
@@ -40,12 +40,12 @@ VsgDbg *g_pVsgDbg;
   
  기본 인스턴스를 사용하지 않도록 설정된 경우 프로그램이 실행되기 전에 자동으로 초기화되고 프로그램이 끝나면 자동으로 제거됩니다. 이 인스턴스를 명시적으로 초기화하거나 초기화를 취소하지 않아도 됩니다.  
   
- 기본 인스턴스를 사용 하지 않으려면 정의 해야 `VSG_NODEFAULT_INSTANCE` 포함 하기 전에 `vsgcapture.h` 프로그램에서 합니다.  
+ 기본 인스턴스를 사용 하지 않으려면 정의 해야 합니다 `VSG_NODEFAULT_INSTANCE` 포함 하기 전에 `vsgcapture.h` 프로그램에서 합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 기본 인스턴스를 사용하지 않도록 설정하는 방법을 보여줍니다.  
   
-```  
+```cpp
 // Define VSG_NODEFAULT_INSTANCE before including vsgcapture.h  
 #define VSG_NODEFAULT_INSTANCE  
   

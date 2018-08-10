@@ -1,5 +1,5 @@
 ---
-title: .NET Framework에 대 한 확장 내부 병렬 | Microsoft Docs
+title: 확장 기능의 내부.NET Framework에 대 한 병렬 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,36 +13,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4936efe50023ed1e193d0c2ec0d9c3423ac5cc64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 84b4106509f62f1929f20283bc86c7930c22d39b
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100613"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251087"
 ---
-# <a name="parallel-extension-internals-for-the-net-framework"></a>.NET Framework에 대 한 병렬 확장 내부 기능
-이 섹션에서는 내부 형식, 메서드, 설명 및.NET Framework의 병렬 확장에 대 한 사용자 지정 디버거를 구현 하는 데 도움이 되는 클래스의 필드입니다.  
+# <a name="parallel-extension-internals-for-the-net-framework"></a>.NET Framework에 대 한 병렬 확장 기능 내부
+이 섹션에서는 내부 형식, 메서드를 설명 하 고 도움이 되는 클래스의 필드 parallel extensions to.NET Framework에 대 한 사용자 지정 디버거를 구현 합니다.  
   
 ## <a name="in-this-section"></a>단원 내용  
- [작업 클래스](../../extensibility/debugger/task-class-internal-members.md)  
- 내부 데이터 멤버를 설명는 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 클래스입니다.  
+ [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)  
+ 내부 데이터 멤버를 설명 합니다 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 클래스입니다.  
   
  [TaskScheduler 클래스](../../extensibility/debugger/taskscheduler-class-internal-members.md)  
- 내부 데이터 멤버를 설명는 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 클래스입니다.  
+ 내부 데이터 멤버를 설명 합니다 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 클래스입니다.  
   
  [ContingentProperties 클래스](../../extensibility/debugger/contingentproperties-class-internal-members.md)  
- 내부 데이터 멤버를 설명는 `System.Threading.Tasks.ContingentProperties` 클래스입니다.  
+ 내부 데이터 멤버를 설명 합니다 `System.Threading.Tasks.ContingentProperties` 클래스입니다.  
   
  [AsyncTaskMethodBuilder 구조](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)  
- 내부 멤버를 설명는 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 구조입니다.  
+ 내부 멤버를 설명 합니다 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 구조입니다.  
   
  [AsyncTaskMethodBuilder\<TResult > 구조](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md)  
- 내부 멤버를 설명는 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 구조입니다.  
+ 내부 멤버를 설명 합니다 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 구조입니다.  
   
  [AsyncVoidMethodBuilder 구조](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)  
- 내부 멤버를 설명는 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 구조입니다.  
+ 내부 멤버를 설명 합니다 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 구조입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
  [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)   

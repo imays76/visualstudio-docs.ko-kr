@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8df7de09fe90b0825d1b990b18b3a7d2309e4a08
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e8c532692b7faddd90a3a67ffdd52b512511d719
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575522"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152190"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 요소(MSBuild)
 사용자 정의 [Property](../msbuild/property-element-msbuild.md) 요소 집합을 포함합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트에서 사용되는 모든 `Property`요소는 `PropertyGroup` 요소의 자식이어야 합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "31575522"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <PropertyGroup Condition="'String A' == 'String B'">  
     <Property1>...</Property1>  
     <Property2>...</Property2>  
@@ -43,7 +43,7 @@ ms.locfileid: "31575522"
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
 

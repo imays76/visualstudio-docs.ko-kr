@@ -1,5 +1,5 @@
 ---
-title: VSIX 언어 팩 2.0 스키마 참조 | Microsoft Docs
+title: VSIX 언어 팩 스키마 2.0 참조 | Microsoft Docs
 ms.custom: ''
 ms.date: 10/26/2017
 ms.technology:
@@ -16,39 +16,39 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 571f90f31014dcc4d5686483bfc037e458f4a31e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139655"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586224"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>VSIX 언어 팩 2.0 스키마 참조
+# <a name="vsix-language-pack-schema-20-reference"></a>VSIX 언어 팩 스키마 2.0 참조
 
-VSIX 언어 팩 스키마 VSIX 패키지에 대 한 지역화 된 설치 정보를 제공합니다. 버전 2.0이이 스키마의 지역화를 추가로 요소를 지원합니다.
+VSIX 언어 팩 스키마 VSIX 패키지에 대 한 지역화 된 설치 정보를 제공 합니다. 이 스키마의 버전 2.0에서 추가로 지역화 요소를 지원 합니다.
 
 ## <a name="language-pack-schema"></a>언어 팩 스키마
 
-언어 팩 파일의 루트 요소는 `<PackageLanguagePackManifest>`, 특성이 `Version`, 언어 팩 형식의 버전입니다. 이 항목을 설정 하 여 매니페스트에 지정 된 언어 팩 형식으로의 버전 2.0에 설명 된 `Version` 특성 값을 `Version="2.0.0"`합니다. 루트 요소가 포함 되어 있지 정확히 하나의 `<Metadata>` 요소입니다.
+언어 팩 파일의 루트 요소는 `<PackageLanguagePackManifest>`의 특성을 사용 하 여 `Version`, 언어 팩 형식의 버전입니다. 설정 하 여 매니페스트에 지정 된 언어 팩 형식의 버전 2.0에 설명 합니다 `Version` 특성 값을 `Version="2.0.0"`입니다. 루트 요소에는 정확히 하나의 자식 포함 `<Metadata>` 요소입니다.
 
 ### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest 요소
 
-내에서 `<PackageLanguagePackManifest>` 요소는 다음과 같은 요소가 있어야 합니다.
+내는 `<PackageLanguagePackManifest>` 요소는 다음과 같은 요소가 있어야 합니다.
 |제목|설명|
 |-----------|-----------------|
-|`<Metadata>`| 지역화 된 패키지의 모든 메타 데이터에 포함 하는 요소
+|`<Metadata>`| 모든 지역화 된 패키지 메타 데이터를 포함 하는 요소
 
 ### <a name="metadata-element"></a>메타 데이터 요소
 
-내에서 `<Metadata>` 요소는 다음과 같은 요소를 포함할 수 있습니다.
+내는 `<Metadata>` 요소는 다음과 같은 요소가 있습니다.
 |제목|설명|
 |-----------|-----------------|
 |`<DisplayName>`|확장을 설치의 지역화 된 이름|
 |`<Description>`|확장을 설치의 지역화 된 설명|
-|`<License>`| 지역화 된 버전의 확장의 라이선스에 대 한 경로|
+|`<License>`| 확장의 라이선스의 지역화 된 버전에 대 한 경로|
 |`<MoreInfo>`| 확장에 대 한 지역화 된 정보에 대 한 링크|
 |`<ReleaseNotes>`| 경로 또는 지역화 된 버전의 릴리스 정보에 대 한 링크|
-|`<Icon>`| 확장명 아이콘의 지역화 된 버전에 대 한 경로|
+|`<Icon>`| 확장 아이콘의 지역화 된 버전에 대 한 경로|
 
 ### <a name="sample-manifest"></a>샘플 매니페스트
 
@@ -66,10 +66,10 @@ VSIX 언어 팩 스키마 VSIX 패키지에 대 한 지역화 된 설치 정보�
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 |제목|설명|
 |-----------|-----------------|
-|[VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)|VSIX 패키지에 대 한 지역화 된 설치 지원을 제공 하는 방법을 보여 줍니다.|
-|[VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)|Visual Studio 확장을 사용 하 여 설치할 수 있도록 하는.vsix 배포 파일의 콘텐츠를 설명 하는 VSIX 매니페스트에 **확장명 및 업데이트** 대화 상자.|
-|[Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)|사용 하는 방법을 보여 줍니다.는 **확장명 및 업데이트** 대화 상자를 설치, 제거, 활성화 및 확장을 비활성화 합니다.|
+|[VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)|VSIX 패키지 지역화 된 설치 지원을 제공 하는 방법을 보여 줍니다.|
+|[VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX 매니페스트에의 콘텐츠를 설명 하는 *.vsix* 배포 파일입니다. 배포 파일을 사용 하면 Visual Studio 확장을 사용 하 여 설치 합니다 **확장 및 업데이트** 대화 상자.|
+|[Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)|사용 하는 방법을 보여 줍니다 합니다 **확장 및 업데이트** 설치, 제거, 활성화 및 비활성화 확장 대화 상자.|

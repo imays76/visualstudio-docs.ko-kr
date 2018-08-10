@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8a4c29855cb9a771660fa5070f6d34a4d10c557a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235475"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP 앱에서 JavaScript 메모리 사용량 분석
 Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 JavaScript를 사용하여 Windows용으로 작성된 UWP 앱의 메모리 사용량을 파악하고 메모리 누수를 찾을 수 있습니다. 지원되는 앱으로는 유니버설 Windows 앱을 위한 앱이 있습니다.
@@ -41,7 +42,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
   
      앱 코드에서 직접 만들지 않은 개체는 자동으로 필터링됩니다. 또한 개체 이름으로 데이터를 필터링할 수 있습니다.  
   
-##  <a name="Run"></a> JavaScript 메모리 분석기 실행  
+## <a name="run-the-javascript-memory-analyzer"></a>JavaScript 메모리 분석기 실행  
  작업 중인 UWP 앱이 Visual Studio에서 열려 있는 경우 메모리 분석기를 사용할 수 있습니다.
   
 #### <a name="to-run-the-memory-analyzer"></a>메모리 분석기를 실행하려면  
@@ -74,35 +75,35 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
   
      다음 단원의 설명에 따라 앱을 조작하여 관련된 메모리 사용 시나리오를 테스트하고 메모리 그래프를 봅니다.  
   
-6.  Alt+Tab을 눌러 Visual Studio로 전환합니다.  
+6.  **Alt**+**Tab**을 눌러 Visual Studio로 전환합니다.  
   
-7.  메모리 분석기로 수집 중인 데이터를 보려면 **힙 스냅숏 만들기**를 선택합니다. 자세한 내용은 이 항목의 뒷부분에 나오는 [View a snapshot summary](#SnapshotSummary) 를 참조하세요.  
+7.  메모리 분석기로 수집 중인 데이터를 보려면 **힙 스냅숏 만들기**를 선택합니다. 자세한 내용은 이 항목의 뒷부분에 나오는 [View a snapshot summary](#view-a-snapshot-summary) 를 참조하세요.  
   
-##  <a name="Check"></a> 메모리 사용량 확인  
- JavaScript 메모리 분석기에서 서로 다른 뷰를 사용하여 메모리 누수를 식별할 수 있습니다. 앱에 메모리 누수가 있다고 의심되는 경우 [Isolate a memory leak](#Isolate) 에서 제안된 워크플로를 참조하세요.  
+## <a name="check-memory-usage"></a>메모리 사용량 확인  
+ JavaScript 메모리 분석기에서 서로 다른 뷰를 사용하여 메모리 누수를 식별할 수 있습니다. 앱에 메모리 누수가 있다고 의심되는 경우 [Isolate a memory leak](#isolate-a-memory-leak) 에서 제안된 워크플로를 참조하세요.  
   
  다음 뷰를 사용해서 응용 프로그램에서 메모리 누수를 식별합니다.  
   
--   [라이브 메모리 사용 요약 보기](#LiveMemory)을(를) 참조하세요. 메모리 사용량 그래프를 사용해서 특정 작업으로 인해 메모리 사용량이 급격하게 증가하거나 지속적으로 증가하는지 확인합니다. 라이브 메모리 사용 요약 뷰를 사용하여 힙의 스냅숏을 만듭니다. 스냅숏은 메모리 사용 그래프 아래에 컬렉션으로 표시됩니다.  
+-   [라이브 메모리 사용 요약 보기](#view-live-memory-usage-summary)을(를) 참조하세요. 메모리 사용량 그래프를 사용해서 특정 작업으로 인해 메모리 사용량이 급격하게 증가하거나 지속적으로 증가하는지 확인합니다. 라이브 메모리 사용 요약 뷰를 사용하여 힙의 스냅숏을 만듭니다. 스냅숏은 메모리 사용 그래프 아래에 컬렉션으로 표시됩니다.  
   
     > [!TIP]
     >  스냅숏을 수행할 때 메모리 사용량에 스파이크가 나타납니다. 증가를 더 정확하게 나타내려면 스냅숏 요약을 사용합니다.  
   
--   [View a snapshot summary](#SnapshotSummary)을(를) 참조하세요. 메모리 프로파일링 세션 중 또는 이후에 스냅숏 요약 정보를 볼 수 있습니다. 스냅숏 요약을 사용해서 스냅숏 세부 정보 및 스냅숏 차이 뷰에 연결합니다.  
+-   [View a snapshot summary](#view-a-snapshot-summary)을(를) 참조하세요. 메모리 프로파일링 세션 중 또는 이후에 스냅숏 요약 정보를 볼 수 있습니다. 스냅숏 요약을 사용해서 스냅숏 세부 정보 및 스냅숏 차이 뷰에 연결합니다.  
   
     > [!TIP]
     >  일반적으로 스냅숏 차이 뷰에는 메모리 누수에 대해 가장 유용한 정보가 제공됩니다.  
   
--   [스냅숏 정보 보기](#SnapshotDetails)을(를) 참조하세요. 단일 스냅숏에 대한 메모리 사용 데이터를 자세히 보여 줍니다.  
+-   [스냅숏 정보 보기](#view-snapshot-details)을(를) 참조하세요. 단일 스냅숏에 대한 메모리 사용 데이터를 자세히 보여 줍니다.  
   
--   [스냅숏 차이 보기](#SnapshotDiff)을(를) 참조하세요. 스냅숏 간의 차이 값을 표시합니다. 이러한 뷰에서는 개체 크기 및 개체 수에서의 차이를 보여줍니다.  
+-   [스냅숏 차이 보기](#view-a-snapshot-diff)을(를) 참조하세요. 스냅숏 간의 차이 값을 표시합니다. 이러한 뷰에서는 개체 크기 및 개체 수에서의 차이를 보여줍니다.  
   
-##  <a name="Isolate"></a> Isolate a memory leak  
+## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
  이러한 단계에서는 JavaScript 메모리 분석기를 보다 효율적으로 사용할 수 있도록 도와줄 수 있는 워크플로를 제공합니다. 이러한 단계는 응용 프로그램에 메모리 누수가 있다고 의심될 경우에 유용할 수 있습니다. 작업 중인 앱에서 메모리 누수를 확인하는 과정을 안내하는 자습서는 [연습: 메모리 누수 찾기(JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)를 참조하세요.  
   
 1.  Visual Studio에서 앱을 엽니다.  
   
-2.  JavaScript 메모리 분석기를 실행합니다. 자세한 내용은 [JavaScript 메모리 분석기 실행](#Run)을 참조하세요.  
+2.  JavaScript 메모리 분석기를 실행합니다. 자세한 내용은 [JavaScript 메모리 분석기 실행](#run-the-JavaScript-memory-analyzer)을 참조하세요.  
   
 3.  테스트하려는 시나리오에서 앱을 실행합니다. 예를 들어, 특정 페이지 로드 시나 앱 시작 시 시나리오에 대규모 DOM 변환이 관련될 수 있습니다.  
   
@@ -111,7 +112,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
     > [!TIP]
     >  테스트 시나리오를 여러 번 반복하면 초기화 작업을 결과에서 필터링할 수 있는지 확인하는 데 도움이 될 수 있습니다.  
   
-5.  Visual Studio로 전환합니다(Alt+Tab).  
+5.  Visual Studio로 전환합니다(**Alt**+**Tab** 누름).  
   
 6.  **힙 스냅숏 만들기**를 선택하여 기본 힙 스냅숏을 만듭니다.  
   
@@ -120,7 +121,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
      ![기본 스냅숏](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
     > [!TIP]
-    >  스냅숏 타이밍을 보다 정밀하게 제어하려면 코드에서 [Associate source code with memory usage data](#JSConsoleCommands) 명령을 사용하면 됩니다.  
+    >  스냅숏 타이밍을 보다 정밀하게 제어하려면 코드에서 [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data) 명령을 사용하면 됩니다.  
   
 7.  앱으로 전환하고 테스트 중인 시나리오를 반복합니다(한 번만 반복).  
   
@@ -161,20 +162,20 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
   
 13. 차이 뷰에서 개체가 가비지 수집되지 않도록 방지하는 개체의 루트 전역 개체 위치를 찾아보려면 해당 개체의 바로 가기 메뉴를 연 다음 **루트 뷰에서 보기**를 선택합니다. 루트 개체가 전역 개체인 단일 개체(또는 몇 개의 개체)가 참조하므로 많은 개체가 메모리에 보존될 수 있습니다.  
   
-14. 남아 있는 개체 뷰에 개체가 너무 많으면 메모리 누수가 발생하는 기간을 추가로 격리한 후 스냅숏 세 개를 다시 만들어 보세요. 메모리 누수를 추가로 격리하려면 [Associate source code with memory usage data](#JSConsoleCommands), [Associate source code with memory usage data](#JSConsoleCommands)및 메모리 분석기에서 제공되는 다른 메모리 사용 데이터를 사용합니다.  
+14. 남아 있는 개체 뷰에 개체가 너무 많으면 메모리 누수가 발생하는 기간을 추가로 격리한 후 스냅숏 세 개를 다시 만들어 보세요. 메모리 누수를 추가로 격리하려면 [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data), [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data)및 메모리 분석기에서 제공되는 다른 메모리 사용 데이터를 사용합니다.  
   
-##  <a name="LiveMemory"></a> 라이브 메모리 사용 요약 보기  
- 라이브 메모리 사용 요약 뷰는 모든 스냅숏 요약 타일의 모음과 실행 중인 앱에 대한 메모리 사용 그래프를 제공합니다. 이 뷰에서 스냅숏 만들기, 요약 정보 분석, 다른 뷰로 이동 등의 기본적인 작업을 수행할 수 있습니다. 데이터 수집을 중지하면 메모리 그래프가 사라지고 [View a snapshot summary](#SnapshotSummary) 뷰만 표시됩니다.  
+## <a name="view-live-memory-usage-summary"></a>라이브 메모리 사용 요약 보기  
+ 라이브 메모리 사용 요약 뷰는 모든 스냅숏 요약 타일의 모음과 실행 중인 앱에 대한 메모리 사용 그래프를 제공합니다. 이 뷰에서 스냅숏 만들기, 요약 정보 분석, 다른 뷰로 이동 등의 기본적인 작업을 수행할 수 있습니다. 데이터 수집을 중지하면 메모리 그래프가 사라지고 [View a snapshot summary](#view-a-snapshot-summary) 뷰만 표시됩니다.  
   
  메모리 그래프는 전용 바이트, 기본 메모리 및 JavaScript 힙을 포함하는 앱 프로세스 메모리의 라이브 뷰를 보여 줍니다. 메모리 그래프는 프로세스 메모리의 스크롤 가능한 뷰입니다. 다음과 같이 나타납니다.  
   
  ![JavaScript 메모리 분석기 메모리 그래프](../profiling/media/js_mem_memory_graph.png "JS_Mem_Memory_Graph")  
   
- 앱 코드에 사용자 표식을 추가한 경우( [Associate source code with memory usage data](#JSConsoleCommands)참조), 메모리 사용 그래프에 역삼각형이 나타나 해당 코드 섹션에 도달하는 시점을 알려줍니다.  
+ 앱 코드에 사용자 표식을 추가한 경우( [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data)참조), 메모리 사용 그래프에 역삼각형이 나타나 해당 코드 섹션에 도달하는 시점을 알려줍니다.  
   
  메모리 그래프에 표시되는 메모리 중 일부는 JavaScript 런타임에서 할당합니다. 앱에서 이 메모리 사용을 제어할 수는 없습니다. 그래프에 표시된 메모리 사용량은 첫 번째 스냅숏을 만들 때 증가하고, 스냅숏을 추가로 만들 때마다 아주 조금씩 증가합니다.  
   
-##  <a name="SnapshotSummary"></a> View a snapshot summary  
+## <a name="view-a-snapshot-summary"></a>View a snapshot summary  
  현재 상태의 앱 메모리 사용량에 대한 스냅숏을 만들려면 메모리 그래프에서 **힙 스냅숏 만들기** 를 선택합니다. 라이브 메모리 사용 요약(앱 실행 중)과 스냅숏 요약(앱 중지됨) 양쪽에 나타나는 스냅숏 요약 타일은 JavaScript 힙에 대한 정보와 보다 자세한 정보에 대한 링크를 제공합니다. 스냅숏을 여러 개 만든 경우, 특정 스냅숏의 데이터와 이전 스냅숏의 데이터를 비교하여 추가 정보를 제공합니다.  
   
 > [!NOTE]
@@ -200,7 +201,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
   
 -   스냅숏이 만들어질 당시의 화면 스크린 샷입니다.  
   
-##  <a name="SnapshotDetails"></a> 스냅숏 정보 보기  
+## <a name="view-snapshot-details"></a>스냅숏 정보 보기  
  스냅숏 정보 뷰에서 스냅숏별 메모리 사용량에 대한 자세한 정보를 볼 수 있습니다.  
   
  스냅숏 정보를 보려면 스냅숏 요약 뷰에서 링크를 선택합니다. 예를 들어, 힙 크기 링크를 선택하면 기본적으로 형식 뷰가 열리면서 스냅숏 정보가 표시됩니다.  
@@ -235,7 +236,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
   
 -   **개수**. 개체의 인스턴스 수입니다. 이 값은 형식 뷰에만 나타납니다.  
   
-##  <a name="SnapshotDiff"></a> 스냅숏 차이 보기  
+## <a name="view-a-snapshot-diff"></a>스냅숏 차이 보기  
  JavaScript 메모리 분석기의 스냅숏 차이 뷰에서 스냅숏을 이전 스냅숏과 비교할 수 있습니다.  
   
  스냅숏 요약 뷰에서는 두 개 이상의 스냅숏을 작성한 후 차등적 힙 크기 또는 차등적 개체 수 링크를 선택하여 차등적 스냅숏 세부 정보를 볼 수 있습니다.  
@@ -246,7 +247,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
   
  ![형식을 보여 주는 스냅숏 차이 뷰](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")  
   
- 스냅숏 차이 창의 지배자, 형식 및 루트 뷰는 [스냅숏 정보 보기](#SnapshotDetails) 창과 동일합니다. 스냅숏 차이에는 스냅숏 정보와 동일한 정보 외에 다음 값이 추가로 표시됩니다.  
+ 스냅숏 차이 창의 지배자, 형식 및 루트 뷰는 [스냅숏 정보 보기](#view-snapshot-details) 창과 동일합니다. 스냅숏 차이에는 스냅숏 정보와 동일한 정보 외에 다음 값이 추가로 표시됩니다.  
   
 -   **크기 차이**. 현재 스냅숏과 이전 스냅숏의 개체 크기 차이이며, 참조된 개체의 크기는 포함하지 않습니다.  
   
@@ -257,7 +258,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
 -   **스냅숏 #\<number>** 에서 남은 개체. 이 필터는 기본 스냅숏 및 이전 스냅숏과 비교하여 힙에 추가된 개체와 힙에서 제거된 개체 간의 차이를 보여줍니다. 예를 들어 스냅숏 요약에서 개체 수가 +205/-195로 표시된 경우 이 필터는 제거된 것이 아닌 추가된 개체 10개를 보여줍니다.  
   
     > [!TIP]
-    >  이 필터에서 가장 유용한 정보를 표시하려면 [Isolate a memory leak](#Isolate)에 설명된 단계를 따르세요.  
+    >  이 필터에서 가장 유용한 정보를 표시하려면 [Isolate a memory leak](#isolate-a-memory-leak)에 설명된 단계를 따르세요.  
   
 -   **스냅숏 #\<number> 및 #\<number>** 사이에 추가된 개체. 이 필터는 이전 스냅숏에서 힙에 추가된 모든 개체를 보여줍니다.  
   
@@ -266,24 +267,24 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
  현재 **범위** 필터와 일치하지 않는 개체 참조를 표시하려면 창의 오른쪽 상단에 있는 설정 목록 ![메모리 분석기의 설정 드롭다운 목록](../profiling/media/js_mem_settings.png "JS_Mem_Settings")에서 **일치하지 않는 참조 표시**를 선택합니다. 이 설정을 사용하도록 설정하는 경우 일치하지 않는 참조가 회색 텍스트로 표시됩니다.  
   
 > [!TIP]
->  메모리가 누수되는 개체를 식별하려면 [Isolate a memory leak](#Isolate) 단계에 따라 **범위** 필터를 통해 남은 개체를 사용하여 메모리가 누수되는 개체를 사용하는 것이 좋습니다.  
+>  메모리가 누수되는 개체를 식별하려면 [Isolate a memory leak](#isolate-a-memory-leak) 단계에 따라 **범위** 필터를 통해 남은 개체를 사용하여 메모리가 누수되는 개체를 사용하는 것이 좋습니다.  
   
-##  <a name="FoldObjects"></a> 도미네이터별 개체 보기  
- 형식 및 도미네이터 뷰에서 도미네이터로 접힌 개체를 볼지 여부를 선택할 수 있습니다(도미네이터 탭의 기본 뷰). 이 뷰를 선택하는 경우 개체의 최상위 뷰에 도미네이터만 표시됩니다. 비전역 개체의 하위 항목에 해당하는 개체는 최상위 뷰에서 숨겨집니다. 일부 앱에서는 이를 통해 데이터의 노이즈를 줄임으로써 메모리 누수를 유발하는 개체를 확인할 수 있습니다.  
+## <a name="view-objects-by-dominator"></a>도미네이터별 개체 보기  
+ 형식 및 도미네이터 뷰에서 도미네이터로 접힌 개체를 볼지 여부를 선택할 수 있습니다(**도미네이터** 탭의 기본 뷰). 이 뷰를 선택하는 경우 개체의 최상위 뷰에 도미네이터만 표시됩니다. 비전역 개체의 하위 항목에 해당하는 개체는 최상위 뷰에서 숨겨집니다. 일부 앱에서는 이를 통해 데이터의 노이즈를 줄임으로써 메모리 누수를 유발하는 개체를 확인할 수 있습니다.  
   
  도미네이터별로 개체 뷰를 전환하려면 **도미네이터별 개체 접기** 단추를 선택합니다. ![개체를 도미네이터로 정리](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
   
- 지배자에 대한 자세한 내용은 [스냅숏 정보 보기](#SnapshotDetails)을(를) 참조하세요.  
+ 지배자에 대한 자세한 내용은 [스냅숏 정보 보기](#view-snapshot-details)을(를) 참조하세요.  
   
-##  <a name="Filter"></a> 식별자별 데이터 필터링  
+## <a name="filter-data-by-identifier"></a>식별자별 데이터 필터링  
  지배자 및 형식 뷰에서 특정 식별자를 검색하여 데이터를 필터링할 수 있습니다. 식별자를 검색하려면 오른쪽 위에 있는 **식별자 필터** 텍스트 상자에 이름을 입력하면 됩니다. 입력하기 시작하면 입력된 문자를 포함하지 않는 식별자가 필터링됩니다.  
   
  뷰마다 자체 필터가 있으므로 다른 뷰로 전환하면 필터는 사라집니다.  
   
-##  <a name="ShowInRootsView"></a> 개체 트리에서 개체 찾기  
+## <a name="find-an-object-in-the-object-tree"></a>개체 트리에서 개체 찾기  
  형식 및 도미네이터 뷰에서는 특정 개체와 `Global` 개체의 관계를 볼 수 있습니다. `Global` 개체가 루트인 개체는 가비지 수집되지 않습니다. `Global` 개체 트리를 검색하지 않고도 루트 뷰에서 손쉽게 알려진 개체를 찾을 수 있습니다. 이렇게 하려면 지배자 또는 형식 뷰에서 개체에 대한 바로 가기 메뉴를 열고 **루트 뷰에서 보기**를 선택합니다.  
   
-##  <a name="References"></a> 공유 개체 참조 보기  
+## <a name="view-shared-object-references"></a>공유 개체 참조 보기  
  형식 및 도미네이터 뷰의 아래쪽 창에는 공유 참조가 표시된 개체 참조 목록이 있습니다. 위쪽 창에서 개체를 선택하면 해당 개체를 가리키는 모든 개체가 개체 참조 목록에 표시됩니다.  
   
 > [!NOTE]
@@ -295,24 +296,24 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
   
  ![표시된 ID가 있는 개체 참조](../profiling/media/js_mem_shared_refs.png "JS_Mem_Shared_Refs")  
   
-##  <a name="BuiltInValues"></a> 기본 제공 개체 표시  
+## <a name="show-built-in-objects"></a>기본 제공 개체 표시  
  지배자 및 형식 뷰에는 기본적으로 앱에서 만든 개체만 표시됩니다. 이는 불필요한 정보를 필터링하고 앱 관련 문제를 격리하는 데 도움이 됩니다. 그러나 JavaScript 런타임에서 앱에 대해 생성하는 모든 개체를 보아야 할 경우도 있습니다.  
   
  이러한 개체를 표시하려면 창 오른쪽 상단의 설정 목록 ![메모리 분석기의 설정 드롭다운 목록](../profiling/media/js_mem_settings.png "JS_Mem_Settings")에서 **기본 제공 항목 표시**를 선택합니다.  
   
-##  <a name="Save"></a> 진단 세션 파일 저장  
- 진단 스냅숏 요약과 관련 정보 뷰는 .diagsession 파일로 저장됩니다. **솔루션 탐색기** 의 진단 세션 폴더에는 이전 진단 세션이 표시됩니다. **솔루션 탐색기**에서 이전 세션을 열거나 파일을 제거하거나 파일 이름을 바꿀 수 있습니다.  
+## <a name="save-diagnostic-session-files"></a>진단 세션 파일 저장  
+ 진단 스냅숏 요약과 관련 정보 뷰는 .*diagsession* 파일로 저장됩니다. **솔루션 탐색기** 의 진단 세션 폴더에는 이전 진단 세션이 표시됩니다. **솔루션 탐색기**에서 이전 세션을 열거나 파일을 제거하거나 파일 이름을 바꿀 수 있습니다.  
   
-##  <a name="JSConsoleCommands"></a> Associate source code with memory usage data  
+## <a name="associate-source-code-with-memory-usage-data"></a>Associate source code with memory usage data  
  메모리 문제가 있는 코드 부분을 분리하려면 다음 방법을 사용합니다.  
   
--   세부 정보와 다른 뷰에서 DOM 요소의 클래스 이름 및 ID를 찾습니다.  
+- 세부 정보와 다른 뷰에서 DOM 요소의 클래스 이름 및 ID를 찾습니다.  
   
--   세부 정보 및 기타 뷰에서 소스 코드와 연결할 수 있는 문자열 값을 찾습니다.  
+- 세부 정보 및 기타 뷰에서 소스 코드와 연결할 수 있는 문자열 값을 찾습니다.  
   
--   개체 트리를 탐색하려면 [개체 트리에서 개체 찾기](#ShowInRootsView) 명령을 사용합니다. 이를 통해 연결된 소스 코드를 확인할 수도 있습니다.  
+- 개체 트리를 탐색하려면 [개체 트리에서 개체 찾기](#find-an-object-in-the-object-tree) 명령을 사용합니다. 이를 통해 연결된 소스 코드를 확인할 수도 있습니다.  
   
--   소스 코드에 메모리 분석기 명령을 추가합니다.  
+- 소스 코드에 메모리 분석기 명령을 추가합니다.  
   
  소스 코드에서 다음 명령을 사용할 수 있습니다.  
   
@@ -344,11 +345,11 @@ if (performance && performance.mark) {
   
  ![프로필 표시 사용](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")  
   
-##  <a name="Tips"></a> 메모리 문제 식별 팁  
+## <a name="tips-to-identify-memory-issues"></a>메모리 문제 식별 팁  
   
--   메모리 누수 가능성이 있는 개체를 식별하려면 [메모리 누수 격리](#Isolate)에 설명된 워크플로를 따르고 차이 뷰에서 **스냅숏 #\<number>에서 남은 개체** 필터를 사용합니다.  
+-   메모리 누수 가능성이 있는 개체를 식별하려면 [메모리 누수 격리](#isolate-a-memory-leak)에 설명된 워크플로를 따르고 차이 뷰에서 **스냅숏 #\<number>에서 남은 개체** 필터를 사용합니다.  
   
--   [개체 트리에서 개체 찾기](#ShowInRootsView) 를 사용합니다. 루트 뷰는 개체의 루트 개체가 전역 개체가 되는 방식을 보여 줍니다. 이 경우 해당 개체는 가비지 수집되지 않습니다.  
+-   [개체 트리에서 개체 찾기](#find-an-object-in-the-object-tree) 를 사용합니다. 루트 뷰는 개체의 루트 개체가 전역 개체가 되는 방식을 보여 줍니다. 이 경우 해당 개체는 가비지 수집되지 않습니다.  
   
 -   메모리 문제의 원인을 식별하기 어려울 때는 여러 가지 뷰(예: 도미네이터 및 형식)를 사용하여 공통점을 찾습니다. 이는 특히 뷰에 표시된 여러 다른 개체에 대한 참조를 포함할 수 있는 하나의 개체(또는 몇 가지 개체)를 식별하는데 도움이 됩니다.  
   
@@ -366,7 +367,7 @@ if (performance && performance.mark) {
   
 -   임시로 코드를 수정하여 문제를 격리하는 방법도 있습니다. 예를 들어, 다음을 수행합니다.  
   
-    -   메모리 분석기용 명령인 `console.takeSnapshot` 및 `performance.mark`를 사용합니다. [Associate source code with memory usage data](#JSConsoleCommands)를 참조하세요.  
+    -   메모리 분석기용 명령인 `console.takeSnapshot` 및 `performance.mark`를 사용합니다. [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data)를 참조하세요.  
   
          이러한 명령을 사용하면 힙 스냅숏을 직접 만드는 것으로는 격리되지 않는 문제도 격리할 수 있습니다.  
   

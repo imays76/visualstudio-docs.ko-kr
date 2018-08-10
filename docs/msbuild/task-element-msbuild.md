@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc67d881f48c99cd8e53de086f0c8b08c96d7844
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aff486d906c340bf79939cbe5b43cbc2447d26f5
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577986"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153831"
 ---
 # <a name="task-element-msbuild"></a>Task 요소(MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 인스턴스를 만들고 실행합니다. 생성된 작업 이름에 따라 요소 이름이 결정됩니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "31577986"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <Task Parameter1="Value1"... ParameterN="ValueN"  
     ContinueOnError="WarnAndContinue/true/ErrorAndContinue/ErrorAndStop/false"  
     Condition="'String A' == 'String B'" >  
@@ -42,7 +42,7 @@ ms.locfileid: "31577986"
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
 

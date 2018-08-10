@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e95c469bb3a1d8747a7f1dabfadec24dc991730c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b9b792876e281f73f4df0246734403812a72aea
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472742"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056412"
 ---
 # <a name="idiatable"></a>IDiaTable
-DIA 데이터 소스 테이블을 열거합니다.  
+DIA 데이터 원본 테이블을 열거합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,20 +35,20 @@ IDiaTable : IEnumUnknown
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|검색 된 [IEnumVARIANT 인터페이스](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) 이 열거자의 버전입니다.|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|검색 된 [IEnumVARIANT 인터페이스](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) 이 열거자의 버전입니다.|  
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|테이블의 이름을 검색합니다.|  
-|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|테이블의 항목 수를 검색합니다.|  
+|[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|테이블에서 항목을 검색합니다.|  
 |[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|특정 항목 인덱스에 대 한 참조를 검색합니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 인터페이스를 구현 하는 `IEnumUnknown` 열거형 메서드에 Microsoft.VisualStudio.OLE.Interop 네임 스페이스에 있습니다. `IEnumUnknown` 열거형 인터페이스에 대 한 보다 테이블 내용을 반복 훨씬 더 효율적입니다.는 [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md) 및 [idiatable:: Item](../../debugger/debug-interface-access/idiatable-item.md) 메서드.  
+ 이 인터페이스를 구현 하는 `IEnumUnknown` Microsoft.VisualStudio.OLE.Interop 네임 스페이스에서 열거형 메서드. `IEnumUnknown` 열거형 인터페이스 보다 목차를 반복 하기 위한 훨씬 더 효율적입니다 합니다 [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md) 하 고 [idiatable:: Item](../../debugger/debug-interface-access/idiatable-item.md) 메서드.  
   
- 해석은 `IUnknown` 인터페이스 중 하나에서 반환 된는 `IDiaTable::Item` 메서드 또는 `Next` 메서드 (Microsoft.VisualStudio.OLE.Interop 네임 스페이스)는 테이블의 유형에 따라 다릅니다. 예를 들어 경우는 `IDiaTable` 삽입 된 소스의 목록을 나타냅니다.이 인터페이스는 `IUnknown` 인터페이스에 대해 쿼리해야는 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스 합니다.  
+ 해석은 합니다 `IUnknown` 인터페이스 중 하나에서 반환 된를 `IDiaTable::Item` 메서드 또는 `Next` (Microsoft.VisualStudio.OLE.Interop 네임 스페이스)에서 메서드는 테이블의 유형에 따라 달라 집니다. 예를 들어 경우는 `IDiaTable` 인터페이스 삽입된 원본 목록을 나타냅니다는 `IUnknown` 인터페이스를 쿼리해야 합니다 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스.  
   
-## <a name="notes-for-callers"></a>호출자에 대 한 참고 사항  
- 이 인터페이스를 호출 하 여 가져올는 [idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md) 또는 [idiaenumtables:: Next](../../debugger/debug-interface-access/idiaenumtables-next.md) 메서드.  
+## <a name="notes-for-callers"></a>호출자에 대 한 정보  
+ 호출 하 여이 인터페이스를 가져올는 [idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md) 하거나 [idiaenumtables:: Next](../../debugger/debug-interface-access/idiaenumtables-next.md) 메서드.  
   
- 와 다음 인터페이스는 구현에서 `IDiaTable` 인터페이스 (즉, 쿼리할 수 있습니다는 `IDiaTable` 다음 인터페이스 중 하나에 대 한 인터페이스):  
+ 다음 인터페이스는 사용 하 여 구현 합니다 `IDiaTable` 인터페이스 (즉, 쿼리할 수 있습니다는 `IDiaTable` 다음 인터페이스 중 하나에 대 한 인터페이스):  
   
 -   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
@@ -64,11 +64,11 @@ IDiaTable : IEnumUnknown
   
 -   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
-## <a name="example"></a>예제  
- 첫 번째 함수 `ShowTableNames`, 세션에 모든 테이블의 이름을 표시 합니다. 두 번째 함수 `GetTable`, 지정된 된 인터페이스를 구현 하는 테이블에 대 한 테이블의 모든 검색 합니다. 세 번째 함수 `UseTable`를 사용 하는 방법을 보여 줍니다.는 `GetTable` 함수입니다.  
+## <a name="example"></a>예  
+ 첫 번째 함수 `ShowTableNames`, 세션에 있는 모든 테이블의 이름을 표시 합니다. 두 번째 함수를 `GetTable`, 모든 지정된 된 인터페이스를 구현 하는 테이블에 대 한 테이블을 검색 합니다. 세 번째 함수 `UseTable`를 사용 하는 방법을 보여 줍니다는 `GetTable` 함수입니다.  
   
 > [!NOTE]
->  `CDiaBSTR` 래핑하는 클래스는 `BSTR` 인스턴스화 범위를 벗어나면 문자열이 해제를 자동으로 처리 하 고 있습니다.  
+>  `CDiaBSTR` 래핑하는 클래스를 `BSTR` 인스턴스화 범위를 벗어나면 문자열이 해제를 자동으로 처리 하 고 있습니다.  
   
 ```C++  
 void ShowTableNames(IDiaSession *pSession)  

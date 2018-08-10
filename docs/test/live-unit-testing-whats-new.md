@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e6e0a812839dac9ad8962e12a610a82cb56a1fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c422f906eba84d00d1d0e8bfa6420a627b410512
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974782"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381581"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing의 새로운 기능
 
@@ -39,7 +39,7 @@ Visual Studio 2017 버전 15.4부터 시작하는 Live Unit Testing은 다양한
 
 - **안정 및 성능**: Live Unit Testing은 이제 프로젝트가 로드를 완벽하지 완료하지 않은 경우 시스템에서 보다 효과적으로 검색할 수 있도록 하며 Live Unit Testing 충돌을 방지하도록 합니다. 빌드 성능 향상은 시스템이 프로젝트 파일에서 변경된 내용이 없다는 것을 아는 경우 MSBuild 프로젝트의 재평가를 방지합니다.  
 
-- **기타 사용자 인터페이스 구체화**: 마우스 오른쪽 단추를 클릭하는 제스처의 혼란스러운 **라이브 테스트 설정 - 포함/제외** 옵션 이름이 **Live Unit Testing 포함/제외**로 변경되었습니다. **테스트**, **Live Unit Testing** 메뉴의 **정리 다시 설정** 옵션이 제거되었습니다. 이제는 **도구**, **옵션**, **Live Unit Testing**을 선택하고 **보관된 데이터 삭제**를 선택하여 액세스할 수 있습니다.
+- **기타 사용자 인터페이스 구체화**: 마우스 오른쪽 단추를 클릭하는 제스처의 혼란스러운 **라이브 테스트 설정 - 포함/제외** 옵션 이름이 **Live Unit Testing 포함/제외**로 변경되었습니다. **테스트** > **Live Unit Testing** 메뉴의 **정리 다시 설정** 옵션이 제거되었습니다. 이제는 **도구** > **옵션** > **Live Unit Testing**을 선택하고 **보관된 데이터 삭제**를 선택하여 액세스할 수 있습니다.
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Visual Studio 2017 버전 15.3에서 Live Unit Testing의 새로운 기능
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969131"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382307"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>방법: 웹 성능 테스트 API 사용
 
@@ -57,7 +57,7 @@ ms.locfileid: "31969131"
     3.  **선택한 플러그 인에 대한 속성** 창에서 런타임에 사용할 플러그 인의 초기 값을 설정합니다.
 
         > [!NOTE]
-        > 플러그 인에서 속성을 원하는 만큼 노출할 수 있습니다. 속성을 공용이고 설정 가능한 기본 형식(정수, 부울 또는 문자열 등)으로 지정하기만 하면 됩니다. 나중에 속성 창을 사용하여 웹 성능 테스트 플러그 인 속성을 편집할 수도 있습니다.
+        > 플러그 인에서 속성을 원하는 만큼 노출할 수 있습니다. 속성을 공용이고 설정 가능한 기본 형식(정수, 부울 또는 문자열 등)으로 지정하기만 하면 됩니다. 나중에 [속성] 창을 사용하여 웹 성능 테스트 플러그 인 속성을 편집할 수도 있습니다.
 
     4.  **확인**을 선택합니다.
 

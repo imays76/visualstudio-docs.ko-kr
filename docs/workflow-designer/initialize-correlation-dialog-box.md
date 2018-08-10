@@ -12,27 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93ce95c7a821d243af842170ba30ec82647933ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3525eb8964ed603e40ba74f0c06b17b494390c7
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971792"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755842"
 ---
 # <a name="initialize-correlation-dialog-box"></a>상관 관계 초기화 대화 상자
 
-**상관 관계 초기화** 대화 상자 편집 하려면 Windows 워크플로 디자이너에서 사용 됩니다는 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 속성은 <xref:System.ServiceModel.Activities.InitializeCorrelation> 활동입니다. 자세한 내용은 참조는 [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) 항목입니다.
+**상관 관계 초기화** 워크플로 디자이너에서 편집 대화 상자를 사용 합니다 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 의 속성은 <xref:System.ServiceModel.Activities.InitializeCorrelation> 활동입니다. 자세한 내용은 [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)합니다.
 
- 다음 표에 사용자 인터페이스 (UI) 요소는 **상관 관계 초기화** 대화 상자.
+다음 표에 사용자 인터페이스 (UI) 요소에는 **상관 관계 초기화** 대화 상자:
 
 |UI 요소|설명|
 |----------------|-----------------|
 |**상관 관계**|초기화할 상관 관계의 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
-|**초기화**|초기화할 데이터가 포함된 키/값 쌍입니다. 이것은 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 속성에 해당합니다. 유효한 키/값 쌍의 예로 "OrderID" orderid 변수의 쌍을 이루는 라는 키 것입니다.|
+|**초기화**|초기화할 데이터가 포함된 키/값 쌍입니다. 이 값에 해당 하는 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 속성입니다. 유효한 키/값 쌍의 예로 "OrderID" orderid 변수의 쌍을 이룹니다 라는 키입니다.|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>상관 관계 초기화 대화 상자를 시작하려면
 
--   클릭 **보기** 에 **InitializeCorrelation** 활동 디자이너나 선택는 <xref:System.ServiceModel.Activities.InitializeCorrelation> 줄임표 단추를 클릭 하 고 워크플로 디자이너에서 활동의 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 속성에는 속성 표입니다.
+클릭 **뷰** 에 **InitializeCorrelation** 활동 디자이너나 선택는 <xref:System.ServiceModel.Activities.InitializeCorrelation> 워크플로 디자이너에서 작업 합니다. 옆에 있는 줄임표 단추를 차례로 클릭 합니다 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 속성 표에 속성입니다.
 
 ## <a name="see-also"></a>참고자료
 

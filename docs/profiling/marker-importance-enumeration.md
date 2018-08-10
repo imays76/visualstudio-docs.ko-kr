@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4c87cfa1504c997cefdc68416dac9923fa10b4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844120"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance 열거형
 동시성 시각화 도우미 표식의 중요도 수준을 나타냅니다.  
@@ -41,9 +42,9 @@ enum marker_importance;
 |`normal_importance`|표식의 중요도를 보통으로 지정합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** cvmarkersobj.h  
+ **헤더:** *cvmarkersobj.h*  
   
  **네임스페이스:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>참고 항목  
- [diagnostic 네임스페이스](../profiling/diagnostic-namespace.md)
+ [진단 네임스페이스](../profiling/diagnostic-namespace.md)

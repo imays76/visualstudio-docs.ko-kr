@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd654cfd05b06646346b8629b646e8450ccf081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967686"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176471"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>부하 테스트 실행에 대한 테스트 에이전트 및 테스트 컨트롤러 구성
 
@@ -61,11 +61,11 @@ Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시�
 
 테스트 컨트롤러는 테스트를 실행하기 위한 테스트 에이전트 집합을 관리합니다. 테스트 컨트롤러는 테스트 에이전트와 통신하여 테스트를 시작 또는 중지하고 테스트 에이전트 상태를 추적하거나 테스트 결과를 수집합니다.
 
-### <a name="test-controller"></a>Test Controller
+### <a name="test-controller"></a>테스트 컨트롤러
 
 테스트 컨트롤러는 테스트 실행을 위한 일반적인 아키텍처를 제공하고 부하 테스트 실행을 위한 특수 기능을 포함합니다. 테스트 컨트롤러는 모든 테스트 에이전트에서 부하 테스트를 보내고 모든 테스트 에이전트가 테스트를 초기화할 때까지 기다립니다. 모든 테스트 에이전트가 준비되면 테스트 컨트롤러는 테스트 에이전트에 메시지를 보내 테스트를 시작합니다.
 
-### <a name="test-agent"></a>Test Agent
+### <a name="test-agent"></a>테스트 에이전트
 
 테스트 에이전트는 테스트 컨트롤러의 새 테스트 시작 요청을 수신하는 서비스로 실행됩니다. 테스트 에이전트가 요청을 받으면 테스트 에이전트 서비스에서 테스트를 실행하는 프로세스를 시작합니다. 각 테스트 에이전트는 같은 부하 테스트를 실행합니다.
 
@@ -85,7 +85,7 @@ Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시�
 
 테스트 컨트롤러 및 테스트 에이전트에 대한 하드웨어 및 소프트웨어 요구 사항, 설치 절차 및 최적의 성능을 위한 환경 구성에 대한 중요 정보는 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.
 
-## <a name="using-the-test-controller-and-test-agent-with-unit-tests"></a>단위 테스트에서 테스트 컨트롤러 및 테스트 에이전트 사용
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>단위 테스트에서 테스트 컨트롤러 및 테스트 에이전트 사용
 
 테스트 컨트롤러와 하나 이상의 에이전트를 설치한 다음에는 부하 테스트를 위한 테스트 설정에서 테스트 컨트롤러에 원격 실행을 사용할지 여부를 지정할 수 있습니다. 또한 테스트 설정의 에이전트와 연결된 역할에 사용할 데이터 및 진단 어댑터를 지정할 수 있습니다.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbabbe7eed62506bc80cbf112c85cda002e409dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977779"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341885"
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>동적 기호 실행을 사용하여 입력 생성
 
@@ -72,7 +72,7 @@ IntelliTest의 [제약 조건 해결기](#constraint-solver)는 테스트 및 �
 IntelliTest에서 [기존 .NET 클래스의 인스턴스를 만들](#existing-classes)거나 IntelliTest를 사용하여 특정 인터페이스를 구현하고 사용법에 따라 다양한 방식으로 동작하는 [모의 개체를 자동으로 만들](#parameterized-mocks) 수 있습니다.
 
 <a name="existing-classes"></a>
-## <a name="instantiating-existing-classes"></a>기존 클래스 인스턴스화
+## <a name="instantiate-existing-classes"></a>기존 클래스 인스턴스화
 
 **무엇이 문제일까요?**
 
@@ -135,7 +135,7 @@ IntelliTest는 테스트 및 테스트 중인 프로그램 실행 시 실행된 
 IntelliTest는 흥미로운 프로그램 동작을 트리거하는 데 필요한 배열 및 문자열의 크기를 최소화하려고 합니다.
 
 <a name="additional-inputs"></a>
-## <a name="obtaining-additional-inputs"></a>추가 입력 가져오기
+## <a name="obtain-additional-inputs"></a>추가 입력 가져오기
 
 [PexChoose](static-helper-classes.md#pexchoose) 정적 클래스는 테스트에 대한 추가 입력을 가져오고 [매개 변수가 있는 모의 개체](#parameterized-mocks)를 구현하는 데 사용될 수 있습니다.
 

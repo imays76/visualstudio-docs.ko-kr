@@ -1,5 +1,5 @@
 ---
-title: Excel을 사용한 연습 | Microsoft Docs
+title: Excel을 사용 하 여 연습
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,29 +16,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d780ec0df36e9c8dcab1c711df8fb8c09d7d326
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45e496797d45b008531182571d4a96958433a7b4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258189"
 ---
-# <a name="walkthroughs-using-excel"></a>Excel을 사용한 연습
+# <a name="walkthroughs-using-excel"></a>Excel을 사용 하 여 연습
   다음 연습에서는 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용하여 Microsoft Office Excel을 자동화하고 UI(사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 줍니다.  
   
 ## <a name="document-level-walkthroughs"></a>문서 수준 연습  
- [연습: Excel용 첫 문서 수준 사용자 지정 만들기](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+ [연습: Excel 용 첫 문서 수준 사용자 지정 만들기](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
  Excel용 기본 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다.  
   
- [연습: 리본 디자이너를 사용하여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+ [연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
  Excel 통합 문서의 리본 메뉴에 사용자 지정 탭을 추가하는 방법을 보여 줍니다.  
   
- [연습: Windows Form을 사용하여 데이터 수집](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
+ [연습: Windows Form을 사용 하 여 데이터를 수집 합니다.](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
  Windows Form을 사용하여 사용자 입력을 수집한 다음 Excel 워크시트의 셀에 입력을 보내는 방법을 보여 줍니다.  
   
- [연습: CheckBox 컨트롤을 사용하여 워크시트 서식 변경](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
+ [연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)  
  Excel 워크시트에서 확인란을 사용하여 서식을 변경하는 기본적인 방법을 보여 줍니다.  
   
- [연습: 워크시트에서 단추를 사용하여 텍스트 상자에 텍스트 표시](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
+ [연습: 단추를 사용 하 여 워크시트에 텍스트 상자에 텍스트를 표시 합니다.](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)  
  Excel 워크시트에서 단추 및 텍스트 상자를 사용하는 기본적인 방법을 보여 줍니다.  
   
  [연습: NamedRange 컨트롤의 이벤트 프로그래밍](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)  
@@ -50,26 +51,26 @@ ms.lasthandoff: 04/16/2018
  [연습: 문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
  Northwind SQL Server 데이터베이스의 필드에 Excel 워크시트의 여러 셀을 바인딩하는 기본적인 방법을 보여 줍니다.  
   
- [연습: 캐시된 데이터 집합을 사용하여 마스터-세부 관계 만들기](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [연습: 캐시 된 데이터 집합을 사용 하 여 마스터-세부 관계 만들기](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  워크시트에서 마스터/세부 관계를 만들고 오프라인에서 솔루션을 사용할 수 있도록 데이터를 캐싱하는 방법을 보여 줍니다.  
   
- [연습: 워크시트에서 라디오 단추를 사용하여 차트 업데이트](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
+ [연습: 라디오 단추를 사용 하 여 워크시트에 차트를 업데이트 합니다.](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
  Excel 워크시트에서 라디오 단추를 사용하여 차트 스타일을 변경하는 기본적인 방법을 보여 줍니다.  
   
- [연습: Excel 작업창의 컨트롤에 데이터 바인딩](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
+ [연습: Excel 작업 창의 컨트롤에 데이터 바인딩](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
  데이터 원본에 바인딩된 컨트롤을 Excel의 작업 창에 추가하는 방법을 설명합니다.  
   
 ## <a name="application-level-walkthroughs"></a>응용 프로그램 수준 연습  
- [연습: Excel용 첫 VSTO 추가 기능 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+ [연습: Excel 용 첫 VSTO 추가 기능에 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
  Excel용 기본 VSTO 추가 기능을 만드는 방법을 보여 줍니다.  
   
  [연습: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
  VSTO 추가 기능을 사용하여 워크시트에 컨트롤을 추가하는 방법을 보여 줍니다.  
   
- [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)  
+ [연습: VBA에서 VSTO 추가 기능에서 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)  
  통합 문서의 VBA 코드에 VSTO 추가 기능의 개체를 노출하는 방법을 보여 줍니다.  
   
- [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
+ [연습:는 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)  
  사용자가 리본 메뉴의 토글 단추를 클릭하여 숨기거나 표시할 수 있는 사용자 지정 작업창을 만드는 방법을 보여 줍니다.  
   
  [연습: VSTO 추가 기능 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  

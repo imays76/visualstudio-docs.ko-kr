@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f2d7f1bbe55584bc082e8d263ae34a7049207666
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978920"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382528"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio에서 Live Unit Testing 시작
 
@@ -41,7 +41,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
 솔루션은 하나 이상의 프로젝트에 대한 컨테이너일 뿐입니다. 솔루션을 만들려면 Visual Studio 2017을 열고 다음을 수행합니다.
 
-1. 최상위 Visual Studio 메뉴에서 **파일**, **새로 만들기**, **프로젝트**를 선택합니다.
+1. 최상위 Visual Studio 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
 1. **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 노드를 확장하고 **Visual Studio 솔루션**을 선택합니다. 오른쪽 창의 **빈 솔루션** 템플릿을 선택하고 다음 그림과 같이 **이름** 텍스트 상자에 `UtilityLibraries`를 입력합니다.
 
@@ -52,7 +52,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 이제 솔루션을 만들었으므로 문자열 작업을 위한 여러 가지 확장 메서드가 포함된 `StringLibrary`라는 클래스 라이브러리를 만듭니다.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**, **새 프로젝트**를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
 1. **새 프로젝트 추가** 대화 상자에서 C# 노드를 선택한 후 **.NET Standard**를 선택합니다.
 
@@ -77,10 +77,10 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
       - `HasEmbeddedSpaces`는 문자열에 포함된 공백 문자가 있는 경우 `true`를 반환하고 그렇지 않은 경우 `false`를 반환합니다.
 
-1.  최상위 Visual Studio 메뉴에서 **빌드**, **솔루션 빌드**를 선택합니다. Visual Studio에서 라이브러리가 성공적으로 빌드됩니다.
+1.  최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 빌드**를 선택합니다. Visual Studio에서 라이브러리가 성공적으로 빌드됩니다.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**, **새 프로젝트**를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
 1. **새 프로젝트 추가** 대화 상자에서 Visual Basic 노드를 선택한 후 **.NET Standard**를 선택합니다.
 
@@ -109,7 +109,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
    ![Visual Basic 프로젝트에 대한 [프로젝트 속성] 대화 상자](./media/lut-start/vb-properties.png)
 
-1.  최상위 Visual Studio 메뉴에서 **빌드**, **솔루션 빌드**를 선택합니다. Visual Studio에서 라이브러리가 성공적으로 빌드됩니다.
+1.  최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 빌드**를 선택합니다. Visual Studio에서 라이브러리가 성공적으로 빌드됩니다.
 
 ---
 
@@ -118,7 +118,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 다음 단계는 `StringLibrary` 라이브러리를 테스트하기 위한 단위 테스트 프로젝트를 만드는 것입니다. 다음 단계를 수행하여 단위 테스트를 만듭니다.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**, **새 프로젝트**를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
 1. **새 프로젝트 추가** 대화 상자에서 C# 노드를 선택한 후 **.NET Core**를 선택합니다.
 
@@ -134,7 +134,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
    > [!NOTE]
    > 이 시작 자습서는 MSTest 테스트 프레임워크와 함께 Live Unit Testing을 사용합니다. 또한 xUnit 및 NUnit 테스트 프레임워크도 사용할 수 있습니다.
 
-1. 단위 테스트 프로젝트는 테스트 중인 클래스 라이브러리에 자동으로 액세스할 수 없습니다. 클래스 라이브러리 프로젝트에 대한 참조를 추가하여 테스트 라이브러리 액세스를 제공합니다. 이렇게 하려면 `StringLibraryTests` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**, **참조**를 클릭합니다. **참조 관리자** 대화 상자에서 **솔루션** 탭이 선택되어 있는지 확인하고 다음 그림에 표시된 것처럼 `StringLibrary` 프로젝트를 선택합니다.
+1. 단위 테스트 프로젝트는 테스트 중인 클래스 라이브러리에 자동으로 액세스할 수 없습니다. 클래스 라이브러리 프로젝트에 대한 참조를 추가하여 테스트 라이브러리 액세스를 제공합니다. 이렇게 하려면 `StringLibraryTests` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **참조**를 선택합니다. **참조 관리자** 대화 상자에서 **솔루션** 탭이 선택되어 있는지 확인하고 다음 그림에 표시된 것처럼 `StringLibrary` 프로젝트를 선택합니다.
 
    ![**참조 관리자** 대화 상자](./media/lut-start/add-reference.png)
 
@@ -152,11 +152,11 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
    ![UTF-8 인코딩 선택](media/lut-start/utf8-encoding.png)
 
-1. 최상위 Visual Studio 메뉴에서 **빌드**, **솔루션 다시 빌드**로 단위 테스트 프로젝트를 컴파일합니다.
+1. 최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 다시 빌드**별로 단위 테스트 프로젝트를 컴파일합니다.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**, **새 프로젝트**를 차례로 선택합니다.
+1. **솔루션 탐색기**에서 `UtilityLibraries` 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
 1. **새 프로젝트 추가** 대화 상자에서 Visual Basic 노드를 선택한 후 **.NET Core**를 선택합니다.
 
@@ -172,7 +172,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
    > [!NOTE]
    > 이 시작 자습서는 MSTest 테스트 프레임워크와 함께 Live Unit Testing을 사용합니다. 또한 xUnit 및 NUnit 테스트 프레임워크도 사용할 수 있습니다.
 
-1. 단위 테스트 프로젝트는 테스트 중인 클래스 라이브러리에 자동으로 액세스할 수 없습니다. 클래스 라이브러리 프로젝트에 대한 참조를 추가하여 테스트 라이브러리 액세스를 제공합니다. 이렇게 하려면 `StringLibraryTests` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**, **참조**를 클릭합니다. **참조 관리자** 대화 상자에서 **솔루션** 탭이 선택되어 있는지 확인하고 다음 그림에 표시된 것처럼 `StringLibrary` 프로젝트를 선택합니다.
+1. 단위 테스트 프로젝트는 테스트 중인 클래스 라이브러리에 자동으로 액세스할 수 없습니다. 클래스 라이브러리 프로젝트에 대한 참조를 추가하여 테스트 라이브러리 액세스를 제공합니다. 이렇게 하려면 `StringLibraryTests` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **참조**를 선택합니다. **참조 관리자** 대화 상자에서 **솔루션** 탭이 선택되어 있는지 확인하고 다음 그림에 표시된 것처럼 `StringLibrary` 프로젝트를 선택합니다.
 
    ![**참조 관리자** 대화 상자](./media/lut-start/add-reference.png)
 
@@ -190,7 +190,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
    ![UTF-8 인코딩 선택](media/lut-start/utf8-encoding.png)
 
-1. 최상위 Visual Studio 메뉴에서 **빌드**, **솔루션 다시 빌드**로 단위 테스트 프로젝트를 컴파일합니다.
+1. 최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 다시 빌드**별로 단위 테스트 프로젝트를 컴파일합니다.
 
 ---
 
@@ -200,9 +200,9 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
 지금까지 `StringLibrary` 클래스 라이브러리에 대한 테스트를 작성했지만 실행하지는 않았습니다. Live Unit Testing을 사용하도록 설정했으면 자동으로 실행됩니다. 이렇게 하려면 다음을 수행할 수 있습니다.
 
-1. 필요에 따라 `StringLibrary`에 대한 코드가 포함된 코드 창을 선택합니다. C# 프로젝트의 경우 class1.cs이고 Visual Basic 프로젝트의 경우 Class1.vb입니다. (이 단계를 통해 Live Unit Testing을 사용하도록 설정한 후 테스트 결과와 코드 검사를 시각적으로 검사할 수 있습니다.)
+1. 필요에 따라 `StringLibrary`에 대한 코드가 포함된 코드 창을 선택합니다. C# 프로젝트의 경우 *class1.cs*이고 Visual Basic 프로젝트의 경우 *Class1.vb*입니다. (이 단계를 통해 Live Unit Testing을 사용하도록 설정한 후 테스트 결과와 코드 검사를 시각적으로 검사할 수 있습니다.)
 
-1. 최상위 Visual Studio 메뉴에서 **테스트**, **Live Unit Testing**, **시작**을 선택합니다.
+1. 최상위 Visual Studio 메뉴에서 **테스트** > **Live Unit Testing** > **시작**을 선택합니다.
 
 1. Visual Studio에서 Live Unit Test를 시작하며 이에 따라 모든 테스트가 자동으로 실행됩니다.
 
@@ -286,7 +286,7 @@ Live Unit Testing에서 확인해야 할 주요 문제점은 불완전한 코드
 
 지금까지 테스트는 모두 성공했습니다. 다음 섹션에서는 테스트 실패를 처리하는 방법을 살펴봅니다.
 
-## <a name="handling-a-test-failure"></a>테스트 실패 처리
+## <a name="handle-a-test-failure"></a>테스트 실패 처리
 
 이 섹션에서는 Live Unit Testing을 사용하여 테스트 실패를 식별, 문제 해결 및 처리하는 방법을 알아봅니다. 테스트 검사를 `HasEmbeddedSpaces` 메서드로 확장하여 이 작업을 수행합니다.
 
@@ -319,7 +319,7 @@ Live Unit Testing에서 확인해야 할 주요 문제점은 불완전한 코드
 
    **Autos** 창에서 `phrase` 변수 값이 배열의 두 번째 요소인 "Name\tDescription"임을 확인합니다. 테스트 메서드는 `HasEmbeddedSpaces`가 이 문자열을 전달할 때 `true`를 반환할 것으로 예상하지만 `false`를 반환합니다. 분명히, 탭 문자 "\t"를 포함된 공백으로 인식하지 않습니다.
 
-1. **디버그**, **계속**을 선택하거나 F5 키를 누르거나 도구 모음에서 **계속** 단추를 클릭하여 테스트 프로그램 실행을 계속합니다. 처리되지 않은 예외가 발생했으므로 테스트를 종료합니다.
+1. **디버그** > **계속**을 선택하거나, **F5** 키를 누르거나 도구 모음에서 **계속** 단추를 클릭하여 테스트 프로그램 실행을 계속합니다. 처리되지 않은 예외가 발생했으므로 테스트를 종료합니다.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 1. 다음 메서드를 테스트 파일에 추가합니다.
@@ -352,7 +352,7 @@ Live Unit Testing에서 확인해야 할 주요 문제점은 불완전한 코드
 
    **Autos** 창에서 `phrase` 변수 값이 배열의 두 번째 요소인 "Name" + vbTab + "Description"임을 확인합니다. 테스트 메서드는 `HasEmbeddedSpaces`가 이 문자열을 전달할 때 `true`를 반환할 것으로 예상하지만 `false`를 반환합니다. 분명히, 탭 문자를 포함된 공백으로 인식하지 않습니다.
 
-1. **디버그**, **계속**을 선택하거나 F5 키를 누르거나 도구 모음에서 **계속** 단추를 클릭하여 테스트 프로그램 실행을 계속합니다. 처리되지 않은 예외가 발생했으므로 테스트를 종료합니다.
+1. **디버그** > **계속**을 선택하거나, **F5** 키를 누르거나 도구 모음에서 **계속** 단추를 클릭하여 테스트 프로그램 실행을 계속합니다. 처리되지 않은 예외가 발생했으므로 테스트를 종료합니다.
 
 ---
 

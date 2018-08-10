@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b275a26da94e2d22bd3b347e7671b9fb3f3f333
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f37f4185daff3ef66d9e3192ad315a8db827625
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575308"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081465"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 작업
 
@@ -35,7 +35,7 @@ ms.locfileid: "31575308"
 |---------------|-----------------|
 |`AlwaysCompileMarkupFilesInSeparateDomain`|선택적 **Boolean** 매개 변수입니다.<br /><br /> 별도의 <xref:System.AppDomain>에서 작업을 실행할지 여부를 지정합니다. 이 매개 변수가 **false**를 반환하는 경우 작업은 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]와 동일한 <xref:System.AppDomain>에서 더 빠르게 실행됩니다. 이 매개 변수가 **true**를 반환하는 경우 작업은 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)]에서 분리된 또 다른 <xref:System.AppDomain>에서 실행되며 더 느리게 실행됩니다.|
 |`AssembliesGeneratedDuringBuild`|선택적 **String[]** 매개 변수입니다.<br /><br /> 빌드 프로세스 중에 변경되는 어셈블리에 대한 참조를 지정합니다. 예를 들어 Visual Studio 솔루션에는 다른 프로젝트의 컴파일된 출력을 참조하는 하나의 프로젝트가 포함될 수 있습니다. 이 경우 두 번째 프로젝트의 컴파일된 출력을 **AssembliesGeneratedDuringBuild**에 추가할 수 있습니다.<br /><br /> 참고: **AssembliesGeneratedDuringBuild**는 빌드 솔루션에 의해 생성되는 어셈블리의 전체 집합에 대한 참조를 포함해야 합니다.|
-|`AssemblyName`|필수 **String** 매개 변수입니다.<br /><br /> 프로젝트에 대해 생성되는 어셈블리의 약식 이름을 지정합니다. 예를 들어 프로젝트가 이름이 **WinExeAssembly.exe**인 [!INCLUDE[TLA#tla_win](../msbuild/includes/tlasharptla_win_md.md)] 실행 파일을 생성하는 경우 **AssemblyName** 매개 변수는 **WinExeAssembly** 값을 갖습니다.|
+|`AssemblyName`|필수 **String** 매개 변수입니다.<br /><br /> 프로젝트에 대해 생성되는 어셈블리의 약식 이름을 지정합니다. 예를 들어 프로젝트가 이름이 *WinExeAssembly.exe*인 [!INCLUDE[TLA#tla_win](../msbuild/includes/tlasharptla_win_md.md)] 실행 파일을 생성하는 경우 **AssemblyName** 매개 변수는 **WinExeAssembly** 값을 갖습니다.|
 |`GeneratedBaml`|선택적 **ITaskItem** 출력 매개 변수입니다.<br /><br /> [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 이진 형식으로 생성된 파일 목록을 포함합니다.|
 |`KnownReferencePaths`|선택적 **String[]** 매개 변수입니다.<br /><br /> 빌드 프로세스 중에 절대 변경되지 않는 어셈블리에 대한 참조를 지정합니다. [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)], [!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] 설치 디렉터리 등에 있는 어셈블리를 포함합니다.|
 |`Language`|필수 **String** 매개 변수입니다.<br /><br /> 컴파일러가 지원하는 관리되는 언어를 지정합니다. 유효한 옵션은 **C#**, **VB**, **JScript** 및 **C++** 입니다.|
@@ -75,8 +75,8 @@ ms.locfileid: "31575308"
 ## <a name="see-also"></a>참고 항목
 
 [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)  
-[작업 참조](../msbuild/wpf-msbuild-task-reference.md)  
+[WPF MSBuild 작업 참조](../msbuild/wpf-msbuild-task-reference.md)  
 [MSBuild 참조](../msbuild/msbuild-reference.md)  
-[작업 참조](../msbuild/msbuild-task-reference.md)  
+[MSBuild 작업 참조](../msbuild/msbuild-task-reference.md)  
 [WPF 응용 프로그램 빌드(WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
 [WPF XAML 브라우저 응용 프로그램 개요](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176374"
 ---
 # <a name="codeindex-command"></a>CodeIndex 명령
 
 **CodeIndex** 명령을 사용하여 Team Foundation Server의 코드 인덱싱을 관리합니다. 예를 들어 인덱싱을 다시 설정하여 CodeLens 정보를 수정하거나 인덱싱을 해제하여 서버 성능 문제를 조사할 수 있습니다.
 
-**필요한 권한**
+## <a name="required-permissions"></a>필요한 권한
 
-**CodeIndex** 명령을 사용하려면 **Team Foundation Administrators** 보안 그룹의 멤버여야 합니다. [Permissions and groups defined for Team Services and TFS](https://www.visualstudio.com/docs/setup-admin/permissions)(Team Services 및 TFS에 대해 정의된 권한 및 그룹)를 참조하세요.
+**CodeIndex** 명령을 사용하려면 **Team Foundation Administrators** 보안 그룹의 멤버여야 합니다. [Permissions and groups defined for Team Services and TFS](/vsts/organizations/security/permissions?view=vsts)(Team Services 및 TFS에 대해 정의된 권한 및 그룹)를 참조하세요.
 
 > [!NOTE]
 > 관리자 자격 증명으로 로그온한 경우에도 이 명령을 실행하려면 관리자 권한 명령 프롬프트 창을 열어야 합니다. 또한 Team Foundation의 응용 프로그램 계층에서 이 명령을 실행해야 합니다.
@@ -41,7 +42,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**인수**|**설명**|
 |------------------|---------------------|
-|`CollectionName`|팀 프로젝트 컬렉션의 이름을 지정합니다. 이름에 공백이 있으면 "Fabrikam 웹 사이트"와 같이 이름을 큰따옴표로 묶습니다.|
+|`CollectionName`|팀 프로젝트 컬렉션의 이름을 지정합니다. 이름에 공백이 있으면 “Fabrikam 웹 사이트”와 같이 이름을 큰따옴표로 묶습니다.|
 |`CollectionId`|팀 프로젝트 컬렉션의 ID 번호를 지정합니다.|
 |`ServerPath`|코드 파일의 경로를 지정합니다.|
 
@@ -66,31 +67,31 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
  코드 인덱싱 상태 및 구성을 보려면
 
 ```cmd
-TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
  모든 변경 집합의 인덱싱을 시작하려면
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
  이전에 만든 변경 집합의 인덱싱을 중지하고 새 변경 집합의 인덱싱만 시작하려면
 
 ```cmd
-TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
  10KB보다 큰 파일을 최대 50개 찾으려면:
 
 ```cmd
-TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
  인덱싱에서 특정 파일을 제외하고 무시된 파일 목록에 추가하려면
 
 ```cmd
-TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
  인덱싱되지 않는 모든 파일을 보려면:
@@ -102,28 +103,28 @@ TFSConfig CodeIndex /ignoreList:view
  이전에 인덱싱된 데이터를 지우고 인덱싱을 다시 시작하려면
 
 ```cmd
-TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
  모든 변경 집합 기록을 저장하려면
 
 ```cmd
-TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
  CodeLens 임시 데이터에 대한 크기 제한을 제거하고 임시 데이터 크기에 관계 없이 인덱싱을 계속하려면
 
 ```cmd
-TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
  확인 후 코드 인덱스를 삭제하려면
 
 ```cmd
-TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
+TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
 ## <a name="see-also"></a>참고 항목
 
 - [CodeLens에서 코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [TFSConfig를 사용하여 서버 구성 관리](/vsts/tfs-server/command-line/tfsconfig-cmd)
+- [TFSConfig를 사용하여 서버 구성 관리](/tfs/server/ref/command-line/tfsconfig-cmd)

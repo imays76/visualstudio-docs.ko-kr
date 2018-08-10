@@ -20,108 +20,108 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba634ffb30d6459c940811f0ea080f8b71a37f34
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566136"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078643"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 응용 프로그램 및 배포 매니페스트에 다시 서명
-Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램 (xbap) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트의 배포 속성을 변경한 후 응용 프로그램을 다시 서명 해야 사용 및 배포 매니페스트에 인증서입니다. 이 프로세스는 변조 된 파일은 최종 사용자 컴퓨터에 설치 되지 않았는지 확인 하는 데 도움이 됩니다.  
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 응용 프로그램 및 배포 매니페스트 다시 서명
+Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램 (xbap) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트에 대 한 배포 속성을 변경한 후 두 응용 프로그램에 다시 서명 해야 하 고 사용 하 여 배포 매니페스트는 인증서입니다. 이 프로세스는 변조 된 파일은 최종 사용자 컴퓨터에 설치 되지 않았는지 확인 하는 데 도움이 됩니다.  
   
- 다른 시나리오 매니페스트에 다시 서명할 수는 있는 고객에 게 응용 프로그램에 서명 하 고 자신의 인증서로 배포 매니페스트 하는 경우입니다.  
+ 매니페스트를 다시 서명할 수 있습니다 다른 시나리오 고객에 게는 응용 프로그램에 서명 하 고 자체 인증서를 사용 하 여 배포 매니페스트 하는 경우입니다.  
   
-## <a name="re-signing-the-application-and-deployment-manifests"></a>매니페스트는 응용 프로그램 및 배포에 다시 서명  
- 이 절차에서는 응용 프로그램 매니페스트 파일 (.manifest)에 이미 변경 했다고 가정 합니다. 자세한 내용은 참조 [하는 방법: 배포 속성 변경을](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472)합니다.  
+## <a name="re-sign-the-application-and-deployment-manifests"></a>응용 프로그램 및 배포 매니페스트에 다시 서명  
+ 응용 프로그램 매니페스트 파일에 이미 변경 했다고 가정 합니다 (*.manifest*). 자세한 내용은 [방법: 배포 속성을 변경할](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472)합니다.  
   
-#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe로 매니페스트에 응용 프로그램 및 배포를 다시 서명 하려면  
+#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe를 사용 하 여 매니페스트에 다시 응용 프로그램 및 배포를 서명 하려면  
   
-1.  열기는 **Visual Studio 명령 프롬프트** 창.  
+1.  엽니다는 **Visual Studio 명령 프롬프트** 창입니다.  
   
-2.  로그인 할 때 매니페스트 파일이 있는 폴더로 디렉터리를 변경 합니다.  
+2.  로그인 하려면 매니페스트 파일이 있는 폴더로 디렉터리를 변경 합니다.  
   
-3.  응용 프로그램 매니페스트 파일에 서명 하려면 다음 명령을 입력 합니다. ManifestFileName를 확장 매니페스트 파일의 이름과 바꿉니다. 인증서를 인증서 파일의 상대 또는 정규화 된 경로 바꾸고 암호는 인증서에 대 한 암호를 사용 합니다.  
+3.  응용 프로그램 매니페스트 파일에 서명 하려면 다음 명령을 입력 합니다. 바꿉니다 *ManifestFileName* 매니페스트 파일 이름 확장명을 사용 하 여 합니다. 바꿉니다 *인증서* 바꾸고 인증서 파일의 상대 또는 정규화 된 경로로 *암호* 인증서의 암호로 바꿉니다.  
   
-    ```  
+    ```cmd  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     예를 들어 추가 기능, Windows Form 응용 프로그램, 또는 Windows Presentation Foundation 브라우저 응용 프로그램에 대 한 응용 프로그램 매니페스트를 서명 하려면 다음 명령을 실행할 수 있습니다. Visual Studio에서 만든 임시 인증서를 프로덕션 환경으로 배포에 대 한 권장 되지 않습니다.  
+     예를 들어, 추가 기능는 Windows Form 응용 프로그램 또는 Windows Presentation Foundation 브라우저 응용 프로그램에 대 한 응용 프로그램 매니페스트를 서명 하려면 다음 명령을 실행할 수 있습니다. Visual Studio에서 만든 임시 인증서를 프로덕션 환경으로 배포에 대 한 권장 되지 않습니다.  
   
-    ```  
+    ```cmd  
     mage -sign WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
     mage -sign ExcelAddin1.dll.manifest -CertFile ..\ExcelAddIn1_TemporaryKey.pfx  
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  업데이트 하 고 이전 단계에서 설명한 대로 자리 표시자 이름을 대체 배포 매니페스트 파일을 서명 하려면 다음 명령을 입력 합니다.  
+4.  업데이트 하 고 이전 단계 에서처럼 자리 표시자 이름을 대체 배포 매니페스트 파일을 서명 하려면 다음 명령을 입력 합니다.  
   
-    ```  
+    ```cmd  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     예를 들어 업데이트 하 고는 Excel 추가 기능으로, Windows Forms 응용 프로그램 또는 Windows Presentation Foundation 브라우저 응용 프로그램에 대 한 배포 매니페스트를 서명 하려면 다음 명령을 실행할 수 있습니다.  
+     예를 들어, 업데이트 및에 Excel 추가 기능에서 Windows Forms 응용 프로그램을 Windows Presentation Foundation 브라우저 응용 프로그램 배포 매니페스트에 서명 하려면 다음 명령을 실행할 수 있습니다.  
   
-    ```  
+    ```cmd  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
     mage -update ExcelAddin1.vsto -appmanifest ExcelAddin1.dll.manifest -CertFile ..\ExcelAddIn1_TemporaryKey.pfx  
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  필요한 복사 하 여 마스터 배포 매니페스트 (게시\\*appname*.application) 버전 배포 디렉터리 (publish\Application 파일\\*appname*_ *버전*).  
+5.  필요에 따라 마스터 배포 매니페스트를 복사 (*게시할\\\<appname >.application*) 버전 배포 디렉터리로 (*publish\Application 파일\\ \<응용 프로그램 이름 > _\<버전 >*).  
   
-## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>업데이트 및 응용 프로그램 및 배포 매니페스트에 다시 서명  
- 이 절차에서는 매니페스트 파일 (.manifest) 응용 프로그램에 변경 내용을 이미 이지만 업데이트 된 파일도 가정 합니다. 파일을 업데이트할 때 파일을 나타내는 해시도 업데이트 해야 합니다.  
+## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>업데이트 및 응용 프로그램 및 배포 매니페스트에 다시 서명  
+ 응용 프로그램 매니페스트 파일에 이미 변경 했다고 가정 합니다 (*.manifest*) 하지만 업데이트 된 다른 파일이 있습니다. 파일이 업데이트 될 때 파일을 나타내는 해시도 업데이트 되어야 합니다.  
   
-#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe로 매니페스트를 업데이트 하 고 응용 프로그램 및 배포를 다시 서명  
+#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe를 사용 하 여 매니페스트를 업데이트 하 고 응용 프로그램 및 배포에 다시 서명  
   
-1.  열기는 **Visual Studio 명령 프롬프트** 창.  
+1.  엽니다는 **Visual Studio 명령 프롬프트** 창입니다.  
   
-2.  로그인 할 때 매니페스트 파일이 있는 폴더로 디렉터리를 변경 합니다.  
+2.  로그인 하려면 매니페스트 파일이 있는 폴더로 디렉터리를 변경 합니다.  
   
-3.  게시 출력 폴더에 있는 파일에서.deploy 파일 확장명을 제거 합니다.  
+3.  제거 된 *.deploy* 게시에 있는 파일에서 파일 확장명 출력 폴더입니다.  
   
-4.  업데이트 된 파일에 대 한 새 해시와 함께 응용 프로그램 매니페스트를 업데이트 하 고 응용 프로그램 매니페스트 파일을 서명 하려면 다음 명령을 입력 합니다. ManifestFileName를 확장 매니페스트 파일의 이름과 바꿉니다. 인증서를 인증서 파일의 상대 또는 정규화 된 경로 바꾸고 암호는 인증서에 대 한 암호를 사용 합니다.  
+4.  업데이트 된 파일에 대 한 새 해시를 사용 하 여 응용 프로그램 매니페스트를 업데이트 하 고 응용 프로그램 매니페스트 파일을 서명 하려면 다음 명령을 입력 합니다. 바꿉니다 *ManifestFileName* 매니페스트 파일 이름 확장명을 사용 하 여 합니다. 바꿉니다 *인증서* 바꾸고 인증서 파일의 상대 또는 정규화 된 경로로 *암호* 인증서의 암호로 바꿉니다.  
   
-    ```  
+    ```cmd  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     예를 들어 추가 기능, Windows Form 응용 프로그램, 또는 Windows Presentation Foundation 브라우저 응용 프로그램에 대 한 응용 프로그램 매니페스트를 서명 하려면 다음 명령을 실행할 수 있습니다. Visual Studio에서 만든 임시 인증서를 프로덕션 환경으로 배포에 대 한 권장 되지 않습니다.  
+     예를 들어, 추가 기능는 Windows Form 응용 프로그램 또는 Windows Presentation Foundation 브라우저 응용 프로그램에 대 한 응용 프로그램 매니페스트를 서명 하려면 다음 명령을 실행할 수 있습니다. Visual Studio에서 만든 임시 인증서를 프로덕션 환경으로 배포에 대 한 권장 되지 않습니다.  
   
-    ```  
+    ```cmd  
     mage -update WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
     mage -update ExcelAddin1.dll.manifest -CertFile ..\ExcelAddIn1_TemporaryKey.pfx  
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  업데이트 하 고 이전 단계에서 설명한 대로 자리 표시자 이름을 대체 배포 매니페스트 파일을 서명 하려면 다음 명령을 입력 합니다.  
+5.  업데이트 하 고 이전 단계 에서처럼 자리 표시자 이름을 대체 배포 매니페스트 파일을 서명 하려면 다음 명령을 입력 합니다.  
   
-    ```  
+    ```cmd  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     예를 들어 업데이트 하 고는 Excel 추가 기능으로, Windows Forms 응용 프로그램 또는 Windows Presentation Foundation 브라우저 응용 프로그램에 대 한 배포 매니페스트를 서명 하려면 다음 명령을 실행할 수 있습니다.  
+     예를 들어, 업데이트 및에 Excel 추가 기능에서 Windows Forms 응용 프로그램을 Windows Presentation Foundation 브라우저 응용 프로그램 배포 매니페스트에 서명 하려면 다음 명령을 실행할 수 있습니다.  
   
-    ```  
+    ```cmd  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
     mage -update ExcelAddin1.vsto -appmanifest ExcelAddin1.dll.manifest -CertFile ..\ExcelAddIn1_TemporaryKey.pfx  
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  응용 프로그램 및 배포 매니페스트 파일 제외 하 고.deploy 파일 확장명을 파일에 다시 추가 합니다.  
+6.  추가 된 *.deploy* 응용 프로그램 및 배포 매니페스트 파일 제외 하 고 파일에 다시 파일 확장명입니다.  
   
-7.  필요한 복사 하 여 마스터 배포 매니페스트 (게시\\*appname*.application) 버전 배포 디렉터리 (publish\Application 파일\\*appname*_ *버전*).  
+7.  필요에 따라 마스터 배포 매니페스트를 복사 (*게시할\\\<appname >.application*) 버전 배포 디렉터리로 (*publish\Application 파일\\ \<응용 프로그램 이름 > _\<버전 >*).  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 응용 프로그램의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 응용 프로그램에 대 한 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)   
  [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)   
  [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)   
- [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [방법: ClickOnce 응용 프로그램의 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [방법: 제한된 권한으로 ClickOnce 응용 프로그램 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [방법: ClickOnce 응용 프로그램에 대 한 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [방법: 제한 된 권한으로 ClickOnce 응용 프로그램 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [방법: ClickOnce 응용 프로그램에 대 한 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [방법: ClickOnce 신뢰 프롬프트 동작 구성](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

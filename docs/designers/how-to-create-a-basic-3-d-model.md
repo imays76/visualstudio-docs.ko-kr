@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745687"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924332"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>방법: 기본 3D 모델 만들기
 
@@ -52,7 +52,7 @@ ms.locfileid: "34745687"
 
      ![정육면체의 위쪽이 나뉨](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  정육면체의 인접한 두 면, 예를 들어 정육면체의 앞면과 오른쪽 면을 돌출합니다. 표면 선택 모드에서 정육면체를 한 번 선택하여 선택 영역을 활성화한 다음 정육면체의 한 면을 선택합니다. Ctrl 키를 누른 상태에서 먼저 선택한 정육면체의 면과 인접한 다른 쪽 면을 선택한 다음 [모델 편집기] 도구 모음에서 **면 돌출**을 선택합니다.
+5.  정육면체의 인접한 두 면, 예를 들어 정육면체의 앞면과 오른쪽 면을 돌출합니다. 표면 선택 모드에서 정육면체를 한 번 선택하여 선택 영역을 활성화한 다음 정육면체의 한 면을 선택합니다. **Ctrl** 키를 누른 상태에서 먼저 선택한 정육면체의 면과 인접한 다른 쪽 면을 선택한 다음, [모델 편집기] 도구 모음에서 **면 돌출**을 선택합니다.
 
      ![정육면체의 양쪽 면이 돌출됨](../designers/media/gfx_model_demo_house_extrude.png)
 
@@ -60,9 +60,9 @@ ms.locfileid: "34745687"
 
      ![정육면체의 한쪽 면이 더 돌출됨](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  모델을 삼각 측량합니다. [모델 편집기] 도구 모음에서 **고급**, **도구**, **삼각 측량**을 선택합니다.
+7.  모델을 삼각 측량합니다. [모델 편집기] 도구 모음에서 **고급** > **도구** > **삼각 측량**을 선택합니다.
 
-8.  집의 지붕을 만듭니다. [모델 편집기] 도구 모음에서 **가장자리 선택**을 선택하여 가장자리 선택 모드로 전환한 다음 정육면체를 선택하여 활성화합니다. 아래와 같이 가장자리가 선택되도록 Ctrl 키를 길게 누릅니다.
+8.  집의 지붕을 만듭니다. [모델 편집기] 도구 모음에서 **가장자리 선택**을 선택하여 가장자리 선택 모드로 전환한 다음 정육면체를 선택하여 활성화합니다. 아래와 같이 가장자리가 선택되도록 **Ctrl** 키를 길게 누릅니다.
 
      ![지붕 끝을 형성할 가장자리](../designers/media/gfx_model_demo_house_edges.png)
 

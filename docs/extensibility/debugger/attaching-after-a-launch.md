@@ -1,5 +1,5 @@
 ---
-title: 연결을 시작한 후 | Microsoft Docs
+title: 시작 후 연결 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,42 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69f9f9cde76c5fa66294fd2cdbdc5252169e0183
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b767ef1aeed691255a62a9cb5c1e264034acf24e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104708"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152921"
 ---
-# <a name="attaching-after-a-launch"></a>연결을 시작한 후
-프로그램 시작 되었습니다 후 디버그 세션을 언급된 프로그램 디버그 엔진 (DE) 연결할 수 있습니다.  
+# <a name="attach-after-a-launch"></a>시작 후 연결
+프로그램 시작 디버그 세션 언급된 프로그램에 디버그 엔진 (DE)를 연결할 준비가 된 것입니다.  
   
-## <a name="design-decisions"></a>설계 결정 사항  
- 통신 공유 되는 주소 공간 내에서 보다 쉽게 이기 때문에 디버그 세션 사이 DE, 또는 DE와 프로그램 간의 통신을 용이 하 게 하려면 더 많은 적합 한지 결정 해야 합니다. 다음 중에서 선택할.  
+## <a name="design-decisions"></a>디자인 결정  
+ 통신 공유 되는 주소 공간 내에서 쉽게 이기 때문에 두 가지 디자인 방법 간에 선택 해야 합니다: 디버그 세션을 DE 사이의 통신을 설정 합니다. 또는 DE와 프로그램 간의 통신을 설정 합니다. 다음 중에서 선택 합니다.  
   
--   디버그 세션 및는 DE 간의 통신을 돕는 것, 디버그 세션 배치는 DE 만듭니다 및 프로그램에 연결할 DE 요청 합니다. 이런 디버그 세션 및 DE 함께 하나의 주소 공간 및 런 타인 환경 및 프로그램의 다른 함께 있습니다.  
+-   디버그 세션을 DE 사이의 통신을 설정 하는 것에 있도록 하는 경우 디버그 세션 공동는 DE 만들고 프로그램에 연결 하는 DE를 요청 합니다. 이 디자인 유지 디버그 세션 및 DE 함께 주소 공간 및 런타임 환경 및 프로그램의 다른 함께 합니다.  
   
--   DE와 프로그램 간의 통신을 용이 하 게 하려면 적절 한 경우, 런타임 환경 배치 만듭니다는 DE. 이런 한 주소 공간에서 SDM DE, 런타임 환경 및 프로그램에서 다른 있습니다. 스크립트 언어를 실행 하는 인터프리터도 구현 된 DE의 일반적입니다.  
+-   하는 경우는 DE와 프로그램 간의 통신을 설정 하는 것을 런타임 환경에서 공동는 DE를 만듭니다. 이 디자인에서 다른 주소 공간 및 DE, 런타임 환경 및 프로그램 SDM을 유지합니다. 이 디자인은 일반적인 스크립트 언어를 실행 하려면 인터프리터를 사용 하 여 구현 되는 DE입니다.  
   
     > [!NOTE]
-    >  DE 프로그램에 연결 하는 방법을 구현에 따라 다릅니다. DE와 프로그램 간의 통신은도 구현에 따라 다릅니다.  
+    >  DE 프로그램에 연결 하는 방법을 하는 것은 구현에 따라 다릅니다. DE와 프로그램 간의 통신 구현에 따라 다릅니다 이기도합니다.  
   
 ## <a name="implementation"></a>구현  
- 프로그래밍 방식으로 세션 디버그 관리자 (SDM) 먼저 받을 때의 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 호출을 실행 하도록 프로그램을 나타내는 개체는 [연결](../../extensibility/debugger/reference/idebugprogram2-attach.md) 전달 하는 메서드는 [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) 이후 개체는 SDM에 다시 디버그 이벤트를 전달 하는 데 사용 합니다. `IDebugProgram2::Attach` 메서드를 호출는 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 메서드. SDM 수신 하는 방법에 대 한 자세한 내용은 `IDebugProgram2` 인터페이스를 참조 [포트 알리는](../../extensibility/debugger/notifying-the-port.md)합니다.  
+ 프로그래밍 방식으로 세션 디버그 관리자 SDM ()를 처음 받을 때 합니다 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 호출을 실행 하도록 프로그램을 나타내는 개체를 [연결](../../extensibility/debugger/reference/idebugprogram2-attach.md) 메서드를 전달는 [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 돌아가기 디버그 이벤트를 전달 하는 데 개체 이상입니다. 합니다 `IDebugProgram2::Attach` 메서드를 호출 합니다 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 메서드. SDM 받는 방법에 대 한 자세한 내용은 합니다 `IDebugProgram2` 인터페이스를 참조 하십시오 [포트에 알림](../../extensibility/debugger/notifying-the-port.md)합니다.  
   
- 프로그램 DE 디버깅 중인 프로그램, 일반적으로 DE 스크립트를 실행 하는 인터프리터의 일부 이므로와 같은 주소 공간에서를 실행 해야 하는 경우는 `IDebugProgramNodeAttach2::OnAttach` 메서드가 반환 되 `S_FALSE`, 연결 프로세스를 완료 것을 알립니다.  
+ 디버그 중인 프로그램 DE 프로그램과 동일한 주소 공간에서 실행 해야 하는 경우:는 DE 일반적으로 스크립트를 실행 하는 인터프리터의 일부 이므로 합니다 `IDebugProgramNodeAttach2::OnAttach` 메서드가 반환 되는 `S_FALSE`합니다. `S_FALSE` 반환 연결 프로세스가 완료 되었는지 나타냅니다.  
   
- DE은 SDM의 주소 공간에서 실행 되는 반면에 하는 경우는 `IDebugProgramNodeAttach2::OnAttach` 메서드 반환 `S_OK` 또는 [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) 인터페이스에 전혀 구현 되지 않음는 [IDebugProgramNode2 ](../../extensibility/debugger/reference/idebugprogramnode2.md) 디버깅 중인 프로그램와 연결 된 개체입니다. 이 경우에 [연결](../../extensibility/debugger/reference/idebugengine2-attach.md) 메서드는 결국 연결 작업을 완료 하기 위해 호출 됩니다.  
+ 그러나 경우는 DE에서에서 실행 되는 SDM의 주소 공간: 합니다 `IDebugProgramNodeAttach2::OnAttach` 메서드가 반환 `S_OK`, 또는 [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) 인터페이스에 전혀 구현 되지 않습니다는 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 디버깅할 프로그램에 연결 된 개체입니다. 이 경우에 [연결](../../extensibility/debugger/reference/idebugengine2-attach.md) 결국 메서드는 연결 작업이 완료 합니다.  
   
- 후자의 경우에 호출 해야 합니다는 [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) 에서 메서드는 `IDebugProgram2` 에 전달 된 개체는 `IDebugEngine2::Attach` 메서드, 저장소는 `GUID` 로컬 프로그램에서 개체를 만들고이 반환 `GUID` 때는 `IDebugProgram2::GetProgramId` 이후에 메서드는이 개체에 있습니다. `GUID` 다양 한 디버그 구성 요소에서 프로그램을 고유 하 게 식별 하는 데 사용 됩니다.  
+ 후자의 경우에 호출 해야 합니다는 [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) 메서드를 `IDebugProgram2` 에 전달 된 개체를 `IDebugEngine2::Attach` 메서드, 저장소를 `GUID` 로컬 프로그램에서 개체 및이 반환 `GUID` 때를 `IDebugProgram2::GetProgramId` 이 개체에서 메서드 호출 이후에 됩니다. `GUID` 다양 한 디버그 구성에서 프로그램을 고유 하 게 식별 하는 데 사용 됩니다.  
   
- 경우에는 `IDebugProgramNodeAttach2::OnAttach` 반환 메서드 `S_FALSE`, `GUID` 해당 메서드로 전달 되는 프로그램에 사용할 있고 그것이 `IDebugProgramNodeAttach2::OnAttach` 설정 하는 메서드는 `GUID` 로컬 프로그램 개체에 있습니다.  
+ 경우는 `IDebugProgramNodeAttach2::OnAttach` 메서드 반환 `S_FALSE`, `GUID` 를 해당 메서드에 전달 되는 프로그램에 사용할 이므로 합니다 `IDebugProgramNodeAttach2::OnAttach` 설정 하는 메서드를 `GUID` 로컬 프로그램 개체에.  
   
- 프로그램 및 모든 시작 이벤트를 보낼 준비가 이제는 DE 연결 됩니다.  
+ 프로그램 및 시작 이벤트를 보낼 준비가 이제는 DE 연결 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [프로그램에 직접 연결](../../extensibility/debugger/attaching-directly-to-a-program.md)   
- [포트에 게 알리는](../../extensibility/debugger/notifying-the-port.md)   
+ [포트에 알림](../../extensibility/debugger/notifying-the-port.md)   
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)   
  [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   

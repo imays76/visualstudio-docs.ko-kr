@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425217"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177869"
 ---
 # <a name="get-started-with-unit-testing"></a>유닛 테스트 시작
 
@@ -56,7 +56,7 @@ Visual Studio를 사용하여 코드 상태를 유지 관리하고, 코드 검�
 
 ## <a name="run-unit-tests"></a>단위 테스트 실행
 
-1. 테스트 탐색기를 엽니다.
+1. **테스트 탐색기**를 엽니다.
 
    ![[테스트] 메뉴에서 테스트 탐색기 열기](media/rununittest1.png)
 
@@ -64,7 +64,7 @@ Visual Studio를 사용하여 코드 상태를 유지 관리하고, 코드 검�
 
    ![테스트 탐색기에서 단위 테스트 실행](media/rununittest2.png)
 
-   테스트 탐색기에서 통과 또는 실패한 단위 테스트를 볼 수 있습니다.
+   **테스트 탐색기**에서 통과 또는 실패한 단위 테스트를 볼 수 있습니다.
 
    ![테스트 탐색기에서 단위 테스트 결과 검토](media/rununittest3.png)
 
@@ -97,7 +97,7 @@ IntelliTest를 실행하면 오류가 발생하는 테스트를 쉽게 확인하
 
 ## <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
-테스트 탐색기를 사용하여 Visual Studio 또는 타사 단위 테스트 프로젝트에서 단위 테스트를 실행하고, 테스트를 범주로 그룹화하며, 테스트 목록을 필터링하고, 테스트 PLAYLIST를 만들어 저장하고 실행할 수 있습니다. 테스트를 디버그하고 테스트 성능 및 코드 검사를 분석할 수도 있습니다. 방법을 알아보려면 [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)을 참조하세요.
+**테스트 탐색기**를 사용하여 Visual Studio 또는 타사 단위 테스트 프로젝트에서 단위 테스트를 실행하고, 테스트를 범주로 그룹화하며, 테스트 목록을 필터링하고, 테스트 PLAYLIST를 만들어 저장하고 실행할 수 있습니다. 테스트를 디버그하고 테스트 성능 및 코드 검사를 분석할 수도 있습니다. 방법을 알아보려면 [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)을 참조하세요.
 
 ![테스트 탐색기를 사용하여 단위 테스트 실행](media/testexplorer.png)
 
@@ -113,7 +113,7 @@ Boost, Google, nUnit 등의 타사 테스트 프레임워크를 사용하여 Vis
 
 다음은 타사 테스트 프레임 워크를 사용할 수 있게 설정하는 단계입니다.
 
-1. 메뉴 모음에서 **도구** > **확장 및 업데이트...** 를 선택합니다.
+1. 메뉴 모음에서 **도구** > **확장 및 업데이트**를 선택합니다.
 
 1. **확장명 및 업데이트** 대화 상자에서 **온라인** 범주 및 **Visual Studio Marketplace**를 차례로 확장합니다. 그런 다음, **도구** > **테스트**를 선택합니다.
 
@@ -125,7 +125,7 @@ Boost, Google, nUnit 등의 타사 테스트 프레임워크를 사용하여 Vis
 
    ![클래스 라이브러리 프로젝트 이름 지정 및 추가](media/create3rdpartyunittest3.png)
 
-1. 플러그 인을 설치합니다. **솔루션 탐색기**에서 클래스 라이브러리 프로젝트를 선택한 다음, 마우스 오른쪽 단추로 클릭하거나 컨텍스트 메뉴에서 **NuGet 패키지 관리...** 를 선택합니다.
+1. 플러그 인을 설치합니다. **솔루션 탐색기**에서 클래스 라이브러리 프로젝트를 선택한 다음, 마우스 오른쪽 단추로 클릭하거나 컨텍스트 메뉴에서 **NuGet 패키지 관리**를 선택합니다.
 
    ![NuGet 패키지를 관리하여 플러그 인 설치](media/create3rdpartyunittest3a.png)
 
@@ -139,7 +139,7 @@ Boost, Google, nUnit 등의 타사 테스트 프레임워크를 사용하여 Vis
 
    ![타사 단위 테스트 프레임워크에 대한 참조가 솔루션에 추가됨](media/create3rdpartyunittest6.png)
 
-1. 클래스 라이브러리 프로젝트의 **참조** 노드에서 **참조 추가...** 를 선택합니다.
+1. 클래스 라이브러리 프로젝트의 **참조** 노드에서 **참조 추가**를 선택합니다.
 
    ![프로젝트에 참조 추가](media/createunittest6.png)
 

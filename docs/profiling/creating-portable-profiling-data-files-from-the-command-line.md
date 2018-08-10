@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 276ddb1d39ca2a7197c818b70edbf6759306513e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572740"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815849"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>명령줄에서 이식 가능한 프로파일링 데이터 파일 만들기
 프로파일링 데이터를 더 쉽게 공유하기 위해 [VSPerfReport](../profiling/vsperfreport.md) 명령줄 도구를 사용하여 프로파일링 실행에 대한 기호를 .*vsp* 파일로 포함할 수 있습니다.  

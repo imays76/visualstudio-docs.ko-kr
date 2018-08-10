@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0312b3aaffb12757466b11aa117170387f01c19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967223"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180115"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
 
@@ -35,10 +35,10 @@ Visual Studio 테스트 도구를 사용하면 사용자와 팀이 수준 높은
 
 - [코딩된 UI 테스트](../test/use-ui-automation-to-test-your-code.md)를 사용하면 사용자 인터페이스를 통해 응용 프로그램을 테스트할 수 있습니다.
 
-- [부하 테스트](../test/quickstart-create-a-load-test-project.md)는 단위 테스트 및 웹 성능 테스트를 실행하여 서버 응용 프로그램에서 부하를 시뮬레이션 합니다.
+- [부하 테스트](../test/quickstart-create-a-load-test-project.md)는 단위 테스트 및 웹 성능 테스트를 실행하여 서버 응용 프로그램에서 부하를 시뮬레이트합니다.
 
 > [!NOTE]
-> 단위 테스트는 Visual Studio의 모든 버전에서 사용할 수 있습니다. 라이브 단위 테스트, IntelliTest, Coded UI 테스트 등, 다른 테스트 도구는 Visual Studio Enterprise 버전에서만 사용할 수 있습니다. 버전에 대한 자세한 내용은 [Visual Studio 2017 IDE 비교](https://www.visualstudio.com/vs/compare/)를 참조하세요.
+> 단위 테스트는 Visual Studio의 모든 버전에서 사용할 수 있습니다. 라이브 단위 테스트, IntelliTest, Coded UI 테스트 등, 다른 테스트 도구는 Visual Studio Enterprise 버전에서만 사용할 수 있습니다. 버전에 대한 자세한 내용은 [Visual Studio 2017 IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
 
 ## <a name="related-scenarios"></a>관련 시나리오
 

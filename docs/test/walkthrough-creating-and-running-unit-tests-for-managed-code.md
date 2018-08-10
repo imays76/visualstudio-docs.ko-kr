@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767688"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380865"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
@@ -29,8 +29,7 @@ ms.locfileid: "34767688"
 > [!NOTE]
 > 이 연습에서는 관리 코드에 Microsoft 단위 테스트 프레임워크를 사용합니다. **테스트 탐색기**에서는 **테스트 탐색기**용 어댑터가 포함된 타사 단위 테스트 프레임워크의 테스트도 실행할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.
 
-> [!NOTE]
-> 명령줄에서 테스트를 실행하는 방법에 대한 자세한 내용은 [연습: 명령줄 테스트 유틸리티 사용](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)을 참조하세요.
+명령줄에서 테스트를 실행하는 방법에 대한 자세한 내용은 [VSTest.Console.exe command-line 옵션](vstest-console-options.md)을 참조하세요.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -85,7 +84,7 @@ public void Debit(double amount)
 
 1. **파일** 메뉴에서 **추가** > **새 프로젝트**를 선택합니다.
 
-2. 새 프로젝트 대화 상자에서 **설치됨**, **Visual C#** 을 확장한 다음 **테스트**를 선택합니다.
+2. **새 프로젝트** 대화 상자에서 **설치됨** 및 **Visual C#** 을 확장한 다음, **테스트**를 선택합니다.
 
 3. 템플릿 목록에서 **단위 테스트 프로젝트**를 선택합니다.
 
@@ -95,9 +94,9 @@ public void Debit(double amount)
 
 5. **BankTests** 프로젝트에서 **Bank** 프로젝트에 대한 참조를 추가합니다.
 
-   솔루션 탐색기에서 **BankTests** 프로젝트의 **참조**를 선택하고 상황에 맞는 메뉴에서 **참조 추가**를 선택합니다.
+   **솔루션 탐색기**에서 **BankTests** 프로젝트의 **참조**를 선택한 다음, 상황에 맞는 메뉴에서 **참조 추가**를 선택합니다.
 
-6. 참조 관리자 대화 상자에서 **솔루션** 을 확장한 다음 **Bank** 항목을 선택합니다.
+6. **참조 관리자** 대화 상자에서 **솔루션**을 확장한 다음, **Bank** 항목을 선택합니다.
 
 ## <a name="create-the-test-class"></a>테스트 클래스 만들기
 
@@ -231,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>테스트 다시 실행
 
-테스트 탐색기에서 **모두 실행** 을 선택하여 테스트를 다시 실행합니다. 빨강/녹색 막대가 테스트 통과를 나타내기 위해 녹색으로 바뀌고 테스트는 **통과한 테스트** 그룹으로 이동합니다.
+**테스트 탐색기**에서 **모두 실행**을 선택하여 테스트를 다시 실행합니다. 빨강/녹색 막대가 테스트 통과를 나타내기 위해 녹색으로 바뀌고 테스트는 **통과한 테스트** 그룹으로 이동합니다.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>단위 테스트를 사용하여 코드 개선
 

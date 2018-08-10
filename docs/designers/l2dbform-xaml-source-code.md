@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9f7601a7e2a24ec41a12d194aac65445c6d159
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924329"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978192"
 ---
-# <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 원본 코드
+# <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 소스 코드
 
-이 항목에서는 [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)에 대한 XAML 소스 파일인 L2DBForm.xaml을 제공하며 이 파일에 대해 설명합니다.
+This t이 항목에서는 [LINQ to XML 예제를 사용한 WPF 데이터 바인딩](../designers/wpf-data-binding-using-linq-to-xml-example.md)에 대한 XAML 소스 파일인 *L2DBForm.xaml*을 제공하며 이 파일에 대해 설명합니다.
 
 ## <a name="overall-ui-structure"></a>전체적인 UI 구조
 
@@ -37,7 +37,7 @@ WPF 프로젝트에 일반적이듯이 이 파일에는 부모 요소가 하나 
 
 마지막으로 <xref:System.Windows.DataTemplate> 이라는 `BookTemplate` 이 28-34번째 줄에 정의되어 있습니다. 이 템플릿은 **Book List** UI 섹션에 항목을 표시하는 데 사용됩니다. 이 템플릿에서는 데이터 바인딩과 LINQ to XML 동적 속성을 사용하여 다음 할당을 통해 책 ID와 책 이름을 검색합니다.
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
@@ -47,25 +47,25 @@ Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 
 38번째 줄의 여는 `<StackPanel>` 태그에서 이 패널의 <xref:System.Windows.FrameworkElement.DataContext%2A> 속성은 `LoadedBooks` 데이터 공급자로 설정됩니다.
 
-```
+```xaml
 DataContext="{Binding Source={StaticResource LoadedBooks}}
 ```
 
 데이터 컨텍스트를 설정하면(46번째 줄) `tbRawXml`이라는 <xref:System.Windows.Controls.TextBlock>이 이 데이터 공급자의 `Xml` 속성에 바인딩하여 원시 XML을 표시할 수 있습니다.
 
-```
+```xaml
 Text="{Binding Path=Xml}"
 ```
 
 58-62번째 줄의 <xref:System.Windows.Controls.ListBox> Book List **UI 섹션에 있는** 는 표시 항목에 대한 템플릿을 창 리소스 섹션에 정의된 `BookTemplate` 으로 설정합니다.
 
-```
+```xaml
 ItemTemplate ="{StaticResource BookTemplate}"
 ```
 
 그런 다음 59-62번째 줄에서 책의 실제 값이 이 목록 상자에 바인딩됩니다.
 
-```
+```xaml
 <ListBox.ItemsSource>
     <Binding Path="Elements[{http://www.mybooks.com}book]"/>
 </ListBox.ItemsSource>
@@ -73,13 +73,13 @@ ItemTemplate ="{StaticResource BookTemplate}"
 
 세 번째 UI 섹션인 **Edit Selected Book**은 먼저 부모 <xref:System.Windows.FrameworkElement.DataContext%2A> 의 <xref:System.Windows.Controls.StackPanel> 를 **Book List** UI 섹션(82번째 줄)에서 현재 선택된 항목에 바인딩합니다.
 
-```
+```xaml
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
 그런 다음, 양방향 데이터 바인딩을 사용하여 책 요소의 현재 값이 이 패널의 두 텍스트 상자에 표시되고 업데이트됩니다. 동적 속성에 대한 데이터 바인딩은 `BookTemplate` 데이터 템플릿에서 사용되는 데이터 바인딩과 유사합니다.
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
@@ -243,7 +243,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 
 ### <a name="comments"></a>설명
 
-WPF UI 요소와 연결된 이벤트 처리기의 C# 소스 코드는 [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)를 참조하세요.
+WPF UI 요소와 연결된 이벤트 처리기의 C# 소스 코드는 [L2DBForm.xaml.cs 소스 코드](../designers/l2dbform-xaml-cs-source-code.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

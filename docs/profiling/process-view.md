@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e8a11f55edd2f7a04498b81ec6b8713876f718
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4924f38bf893bc17a599802d9962d664da01c26d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254526"
 ---
 # <a name="process-view"></a>프로세스 뷰
 프로세스 뷰에는 프로파일링 실행 중에 실행된 프로세스와 스레드에 대한 프로파일링 데이터가 표시됩니다.  

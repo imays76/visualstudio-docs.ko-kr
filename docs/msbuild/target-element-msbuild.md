@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c5d60d41c7c7866ed396a90eacec4ba61a05238
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574843"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152463"
 ---
 # <a name="target-element-msbuild"></a>Target 요소(MSBuild)
 순차적으로 실행할 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]의 작업 집합을 포함합니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "31574843"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <Target Name="Target Name"  
         Inputs="Inputs"  
         Outputs="Outputs"  
@@ -54,7 +54,7 @@ ms.locfileid: "31574843"
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
 

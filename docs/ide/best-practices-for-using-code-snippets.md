@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52845b2d8f08486f84422957ce8f38a95c1a4d31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923683"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179533"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>코드 조각 사용에 대한 모범 사례
 
@@ -65,7 +65,7 @@ Visual Studio에 의해 설치된 IntelliSense 코드 조각 자체에는 보안
 
     - 조각 코드를 실행하면 시스템이 손상될 수 있습니다. 실행하기 전에 소스 코드를 주의해서 읽으세요.
 
-    - 조각 파일의 도움말 URL 블록에 악의적인 스크립트 파일을 실행하거나 공격적인 웹 사이트를 표시하는 URL이 포함되어 있을 수 있습니다.
+    - 코드 조각 파일의 도움말 URL 블록에 악의적인 스크립트 파일을 실행하거나 공격적인 웹 사이트를 표시하는 URL이 포함되어 있을 수 있습니다.
 
     - 시스템의 임의 위치에서 로드되고 프로젝트에 자동으로 추가된 참조가 조각에 포함되어 있을 수 있습니다. 이러한 참조가 조각을 다운로드한 위치에서 컴퓨터에 다운로드되었을 수 있습니다. 나중에 이 조각이 참조에서 악성 코드를 실행하는 메서드를 호출할 수 있습니다. 이러한 공격을 방지하려면 조각 파일의 Imports 및 References 블록을 검토합니다.
 

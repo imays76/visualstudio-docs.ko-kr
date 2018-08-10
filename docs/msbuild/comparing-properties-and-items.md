@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2464acb75d8ea8a309d788aa95dc86b44d47e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177116"
 ---
-# <a name="comparing-properties-and-items"></a>속성 및 항목 비교
+# <a name="compare-properties-and-items"></a>속성 및 항목 비교하기
 MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을 확인한 다음 프로젝트 파일 전체에서 참조할 수 있는 값을 저장하는 데 사용됩니다.  
   
 -   속성은 이름-값 쌍입니다. 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.  
@@ -87,9 +88,10 @@ MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을
 -   항목 정의가 표시되는 순서대로 정의되고 수정됩니다.  
   
 -   항목이 표시되는 순서대로 정의되고 수정됩니다.  
-  
+ 
+ 
  빌드 실행 단계 중 대상 내에 정의된 속성 및 항목은 표시되는 순서대로 단일 단계에서 함께 평가됩니다.  
-  
+ 
  그러나 이것이 다는 아닙니다. 속성, 항목 정의 또는 항목이 정의될 때 값이 계산됩니다. 식 계산기가 값을 지정하는 문자열을 확장합니다. 문자열 확장은 빌드 단계에 따라 달라집니다. 더 자세한 속성 및 항목 평가 순서는 다음과 같습니다.  
   
 -   빌드의 평가 단계 중:  
@@ -127,9 +129,9 @@ MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을
 KeyFileVersion: 1.0.0.3  
 ```  
   
- `KeyFileVersion`의 값은 실제로 "@(KeyFile->'%(Version)')" 문자열이기 때문입니다. 속성을 처음에 정의할 때 항목 및 항목 변환이 확장되지 않으므로 `KeyFileVersion` 속성에는 확장되지 않은 문자열의 값이 할당되었습니다.  
+ `KeyFileVersion`의 값은 실제로 “\@(KeyFile->‘%(Version)’)” 문자열이기 때문입니다. 속성을 처음에 정의할 때 항목 및 항목 변환이 확장되지 않으므로 `KeyFileVersion` 속성에는 확장되지 않은 문자열의 값이 할당되었습니다.  
   
- 빌드의 실행 단계 중 메시지 작업을 처리할 때 MSBuild에서 "@(KeyFile->'%(Version)')" 문자열을 확장하여 "1.0.0.3"을 생성합니다.  
+ 빌드의 실행 단계 중 메시지 작업을 처리할 때 MSBuild에서 “\@(KeyFile->‘%(Version)’)” 문자열을 확장하여 “1.0.0.3”을 생성합니다.  
   
  속성 및 항목 그룹의 순서가 반대로 된 경우에도 동일한 오류 메시지가 표시됩니다.  
   
@@ -173,7 +175,7 @@ KeyFileVersion:
 </Target>  
 ```  
   
- `KeyFileVersion`의 값이 "@(KeyFile->'%(Version)')"이 아닌 "1.0.0.3"으로 설정됩니다. 메시지 작업에서 다음 메시지를 표시합니다.  
+ `KeyFileVersion`의 값이 “\@(KeyFile->‘%(Version)’)”이 아닌 “1.0.0.3”으로 설정됩니다. 메시지 작업에서 다음 메시지를 표시합니다.  
   
 ```  
 KeyFileVersion: 1.0.0.3  

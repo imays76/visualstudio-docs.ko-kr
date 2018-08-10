@@ -17,22 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5540eb31d764e82cb0c6cd46eb63cb893559a70f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973156"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175750"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 그래프 뷰에서 부하 테스트 결과 분석
 
 부하 테스트의 결과는 서로 다른 몇 개의 창에 데이터로 표시됩니다.
 
-테스트 결과를 그래프로 표시하려면 부하 테스트 도구 모음에서 **그래프**를 선택합니다. 각 개별 그래프는 드롭다운 목록의 맨 위에 그래프 이름이 표시된 상태로 표시됩니다. 패널에 다른 그래프를 표시하려면 목록에서 다른 그래프 이름을 선택합니다.
+테스트 결과를 그래프로 표시하려면 **부하 테스트** 도구 모음에서 **그래프**를 선택합니다. 각 개별 그래프는 드롭다운 목록의 맨 위에 그래프 이름이 표시된 상태로 표시됩니다. 패널에 다른 그래프를 표시하려면 목록에서 다른 그래프 이름을 선택합니다.
 
-한 번에 최대 4개의 그래프 패널을 표시할 수 있습니다. 패널 레이아웃 도구 모음 단추를 사용하면 패널 레이아웃으로 전환할 수 있습니다.,
+한 번에 최대 4개의 그래프 패널을 표시할 수 있습니다. **패널 레이아웃** 도구 모음 단추를 사용하면 패널 레이아웃으로 전환할 수 있습니다.
 
-몇 가지 기본 제공 그래프도 있습니다. 기본 제공 그래프를 그대로 사용하거나 사용자 지정할 수 있습니다. 또한 사용자가 직접 그래프를 만들 수도 있습니다. 자세한 내용은 [방법: 그래프에 카운터 표시](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) 및 [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)를 참조하세요.
+몇 가지 기본 제공 그래프도 있습니다. 기본 제공 그래프를 그대로 사용하거나 사용자 지정할 수 있습니다. 또한 사용자가 직접 그래프를 만들 수도 있습니다. 자세한 내용은 [방법: 그래프에 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) 및 [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)를 참조하세요.
 
 ## <a name="built-in-graphs"></a>기본 제공 그래프
 
@@ -84,7 +84,7 @@ ms.locfileid: "31973156"
 |**그래프 바둑판식 배열:** 부하 테스트 결과 그래프는 몇 가지 패턴으로 배열할 수 있습니다. 최대 네 개의 그래프를 바둑판식으로 배열할 수 있습니다.||
 |**그래프의 성능 카운터 출력 모양 수정:** 그래프의 성능 카운터에 대한 그리기 선 옵션을 변경할 수 있습니다. 이 옵션에는 색 및 선 스타일이 포함됩니다. 또한 성능 카운터를 표시하는 데 사용할 범위를 자동으로 지정할지 수동으로 지정할지 선택할 수 있습니다.|-   [방법: 그래프 카운터에 대한 출력 옵션 지정](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**사용자 지정 그래프 만들기:** 부하 테스트 결과에 대한 특정 정보를 표시하는 그래프를 디자인할 수 있습니다. 그래프에 표시할 부하 테스트 카운터를 지정하여 사용자 지정 그래프를 디자인합니다.|-   [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**그래프의 성능 카운터 데이터 내보내기:** 그래프 뷰에서 부하 테스트 분석기 도구 모음의 "그래프 데이터를 Excel로 내보내기" 단추를 사용하여 그래프 데이터를 Microsoft Excel로 내보낼 수 있습니다.||
+|**그래프의 성능 카운터 데이터 내보내기:** **그래프** 뷰에서 **부하 테스트 분석기** 도구 모음의 **그래프 데이터를 Excel로 내보내기** 단추를 사용하여 그래프 데이터를 Microsoft Excel로 내보낼 수 있습니다.||
 
 ## <a name="related-tasks"></a>관련 작업
 

@@ -1,7 +1,7 @@
 ---
 title: '빠른 시작: Visual Studio를 사용하여 첫 번째 Node.js 앱 만들기'
 description: 이 빠른 시작에서는 Visual Studio를 사용하여 Node.js 앱 만들기
-ms.date: 11/15/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,17 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0a78f9fdfd1ea3612d86432619c463d526eed5c2
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: e18f1e2063fd4007eba13d76473d634265b6a51f
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131858"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Node.js 앱 만들기
 
-Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개에서는 간단한 Node.js 웹 응용 프로그램을 만듭니다. 아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 페이지로 이동하여 체험용으로 설치합니다.
+Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개에서는 간단한 Node.js 웹 응용 프로그램을 만듭니다. 아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
+
 먼저 Node.js 웹 응용 프로그램 프로젝트를 만듭니다.
 
 1. Node.js 런타임이 아직 설치되어 있지 않으면 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다.
@@ -41,7 +43,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
      ![VS 설치 관리자에서 Node.js 워크로드](../ide/media/quickstart-nodejs-workload.png)
 
-    Visual Studio에서 새 솔루션을 만들고 프로젝트를 엽니다. *server.js*가 왼쪽 창의 편집기에서 열립니다.
+    **빈 Node.js 웹 응용 프로그램** 템플릿을 선택하고 **확인**을 클릭하면 Visual Studio에서 새 솔루션을 만들고 프로젝트를 엽니다. *server.js*가 왼쪽 창의 편집기에서 열립니다.
 
 ## <a name="explore-the-ide"></a>IDE 탐색
 
@@ -49,13 +51,13 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
    ![솔루션 탐색기](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-  - 굵게 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 디스크에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다.
+   - 굵게 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 디스크에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다.
 
-  - 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
+   - 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
 
-  - npm 노드에는 설치된 npm 패키지가 있으면 표시됩니다. npm 노드를 마우스 오른쪽 버튼으로 클릭하고 대화 상자를 사용하여 npm 패키지를 검색하고 설치할 수 있습니다.
+   - npm 노드에는 설치된 npm 패키지가 있으면 표시됩니다. npm 노드를 마우스 오른쪽 버튼으로 클릭하고 대화 상자를 사용하여 npm 패키지를 검색하고 설치할 수 있습니다.
 
-1. 명령 프롬프트에서 npm 패키지 또는 node.js 명령을 설치하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **여기서 명령 프롬프트 열기**를 선택합니다.
+1. 명령 프롬프트에서 npm 패키지 또는 Node.js 명령을 설치하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **여기서 명령 프롬프트 열기**를 선택합니다.
 
    ![Node.js 명령 프롬프트](../ide/media/quickstart-nodejs-command-prompt.png)
 
@@ -83,9 +85,12 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 1. 웹 브라우저를 닫습니다.
 
-이 빠른 시작을 완료한 것을 축하 드립니다! Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 해당 기능을 보다 자세히 알아보려면 목차에서 **자습서** 섹션에 있는 자습서를 읽어보세요.
+Visual Studio IDE 및 Node.js로 시작한 이 빠른 시작을 완료한 것을 축하합니다. 해당 기능을 보다 자세히 알아보려면 목차에서 **자습서** 섹션에 있는 자습서를 읽어보세요.
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Node.js 및 Express에 대한 자습서](../nodejs/tutorial-nodejs.md) 살펴보기
-- [Node.js 및 React에 대한 자습서](../nodejs/tutorial-nodejs-with-react-and-jsx.md) 살펴보기
+> [!div class="nextstepaction"]
+> [앱을 Linux App Service에 배포](../javascript/publish-nodejs-app-azure.md)
+
+- [Node.js 및 Express에 대한 자습서](../javascript/tutorial-nodejs.md)
+- [Node.js 및 React에 대한 자습서](../javascript/tutorial-nodejs-with-react-and-jsx.md)

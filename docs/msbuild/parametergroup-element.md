@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ed99b0e7dbccbee99dbc290d79d2b25b9c84874
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7829df456540bc303993217c577bd6be3952a198
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578590"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152632"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 요소
-`UsingTask``TaskFactory`에 의해 생성된 작업에 존재할 매개 변수의 선택적 목록을 포함합니다. 자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.  
+`UsingTask` `TaskFactory`에 의해 생성된 작업에 존재할 매개 변수의 선택적 목록을 포함합니다. 자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.  
 
  \<Project>  
  \<UsingTask>  
@@ -34,12 +34,12 @@ ms.locfileid: "31578590"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <ParameterGroup />  
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
  없음  
@@ -48,7 +48,7 @@ ms.locfileid: "31578590"
 
 |요소|설명|  
 |-------------|-----------------|  
-|[Parameter](../msbuild/parameter-element.md)|`UsingTask``TaskFactory`에 의해 생성되는 작업에 대한 특정 매개 변수에 대한 정보를 포함합니다. 요소의 이름은 매개 변수의 이름입니다.|  
+|[Parameter](../msbuild/parameter-element.md)|`UsingTask` `TaskFactory`에 의해 생성되는 작업에 대한 특정 매개 변수 정보를 포함합니다. 요소의 이름은 매개 변수의 이름입니다.|  
 
 ### <a name="parent-elements"></a>부모 요소  
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ebe16f03c185437bc0ab79fe7c038748c5eb50
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570969"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077492"
 ---
 # <a name="import-element-msbuild"></a>Import 요소(MSBuild)
 한 프로젝트 파일의 내용을 다른 프로젝트 파일로 가져옵니다.  
@@ -35,13 +35,13 @@ ms.locfileid: "31570969"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <Import Project="ProjectPath"  
     Condition="'String A'=='String B'" />  
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
 
@@ -63,7 +63,7 @@ ms.locfileid: "31570969"
 ## <a name="remarks"></a>설명  
  `Import` 요소를 사용하면 여러 프로젝트 파일에 공통된 코드를 다시 사용할 수 있습니다. 이렇게 하면 공유 코드에 대한 업데이트가 그것을 가져오는 모든 프로젝트에 전파되므로 코드를 더 쉽게 유지 관리할 수 있습니다.  
 
- 규칙에 따라, 가져온 공유 프로젝트 파일은 .targets 파일로 저장되지만, 실제로는 표준 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일입니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 에서는 다른 파일 이름 확장명을 가진 프로젝트를 가져오는 것이 금지되지 않지만, 일관성을 위해 .targets 확장명을 사용할 것을 권장합니다.  
+ 규칙에 따라, 가져온 공유 프로젝트 파일은 *.targets* 파일로 저장되지만, 실제로는 표준 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일입니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다른 파일 이름 확장명을 가진 프로젝트를 가져오는 것이 금지되지 않지만, 일관성을 위해 *.targets* 확장명을 사용할 것을 권장합니다.  
 
  가져온 프로젝트의 상대 경로는 가져오는 프로젝트의 디렉터리를 기준으로 해석됩니다. 따라서 프로젝트 파일을 서로 다른 위치의 여러 프로젝트 파일로 가져온 경우, 가져온 프로젝트 파일의 상대 경로는 가져온 각 프로젝트에 대해 다르게 해석됩니다.  
 
@@ -76,12 +76,12 @@ ms.locfileid: "31570969"
 > [!NOTE]
 >  조건부 import 문은 명령줄 MSBuild에서 작동하지만, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE(통합 개발 환경)에서는 MSBuild와 작동하지 않습니다. 조건부 가져오기는 프로젝트를 로드할 때 설정된 구성 및 플랫폼 값을 사용하여 평가됩니다. 이후 프로젝트 파일의 조건을 재평가하도록 요구하는 변경(예: 플랫폼 변경)이 발생하는 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 는 속성 및 항목에 대한 조건은 재평가하지만 가져오기에 대한 조건은 재평가하지 않습니다. 가져오기 조건부는 재평가되지 않으므로 가져오기는 건너뜁니다.  
 >   
->  이 문제를 해결하려면 조건부 가져오기를 .targets 파일에 넣거나 조건부 블록(예: [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) 블록)에 코드를 넣습니다.  
+>  이 문제를 해결하려면 조건부 가져오기를 *.targets* 파일에 넣거나 조건부 블록(예: [Choose 요소(MSBuild)](../msbuild/choose-element-msbuild.md) 블록)에 코드를 넣습니다.  
 
 ## <a name="wildcards"></a>와일드카드  
  .NET Framework 4에서는 MSBuild가 Project 특성에 와일드카드를 사용하도록 허용합니다. 와일드카드가 있으면 발견되는 모든 일치 항목이 정렬되고(재현 가능성을 위해), 마치 해당 순서가 명시적으로 설정된 것처럼 순서대로 가져오기가 수행됩니다.  
 
- 이는 파일 이름을 가져오기 파일에 명시적으로 추가하지 않고도 다른 사람이 파일을 가져올 수 있도록 확장성 지점을 제공하려는 경우 유용합니다. 이를 위해 Microsoft.Common.Targets는 파일의 상단에 다음 줄을 포함합니다.  
+ 이는 파일 이름을 가져오기 파일에 명시적으로 추가하지 않고도 다른 사람이 파일을 가져올 수 있도록 확장성 지점을 제공하려는 경우 유용합니다. 이를 위해 *Microsoft.Common.Targets*는 파일의 상단에 다음 줄을 포함합니다.  
 
 ```xml  
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>  

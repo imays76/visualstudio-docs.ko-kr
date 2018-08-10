@@ -1,1 +1,0 @@
-Internet Explorer 8 표준 모드, Internet Explorer 9 표준 모드, Internet Explorer 10 표준 모드, Internet Explorer 11 표준 모드 및 win8_appname_long 응용 프로그램

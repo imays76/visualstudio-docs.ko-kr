@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8910ee5aa73e057849ad6b72b67c8b27ba9b0e6e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969373"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379808"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 부하 테스트에 대한 ASP.NET 프로파일러 구성
 
@@ -29,7 +29,7 @@ ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스
 > [!NOTE]
 > ASP.NET 프로파일러 진단 데이터 어댑터에서는 IIS(Internet Information Services) 프로세스를 프로파일링합니다. 따라서 개발 웹 서버에서는 이 진단 데이터 어댑터가 작동하지 않습니다. 부하 테스트에서 웹 사이트를 프로파일링하려면 IIS가 실행 중인 컴퓨터에 테스트 에이전트를 설치해야 합니다. 이 테스트 에이전트는 부하를 생성하지 않으며, 컬렉션만을 위한 에이전트가 됩니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.
 
-자세한 내용은 [분산 부하 테스트를 위한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)를 참조하세요.
+자세한 내용은 [방법: 분산 부하 테스트를 위한 테스트 설정 만들기](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)를 참조하세요.
 
 다음 절차에서는 ASP.NET 프로파일러의 진단 데이터 어댑터를 구성하는 방법을 설명합니다.
 
@@ -52,7 +52,7 @@ ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스
 
 4.  계층 상호 작용 프로파일링을 사용하려면 **계층 상호 작용 프로파일링 사용**을 선택합니다.
 
-     계층 상호 작용 프로파일링에서는 각 아티팩트(예: MyPage.aspx 또는 CompanyLogo.gif)에 대해 웹 서버로 전송되는 요청 수와 각 요청을 처리하는 데 걸린 시간을 계산합니다. 또한 계층 상호 작용 프로파일링에서는 페이지 요청의 일부로 사용된 ADO.NET 연결과 해당 요청을 처리할 때 실행된 쿼리 및 저장 프로시저 호출 수를 수집합니다.
+     계층 상호 작용 프로파일링에서는 각 아티팩트(예: *MyPage.aspx* 또는 *CompanyLogo.gif*)에 대해 웹 서버로 전송되는 요청 수와 각 요청을 처리하는 데 걸린 시간을 계산합니다. 또한 계층 상호 작용 프로파일링에서는 페이지 요청의 일부로 사용된 ADO.NET 연결과 해당 요청을 처리할 때 실행된 쿼리 및 저장 프로시저 호출 수를 수집합니다.
 
      다음과 같은 두 가지 타이밍 정보 집합이 수집됩니다.
 

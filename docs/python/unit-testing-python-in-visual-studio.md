@@ -1,7 +1,7 @@
 ---
 title: Python에 대한 단위 테스트
 description: Visual Studio에서 Python 코드에 대해 유닛 테스트를 설정하면 테스트 탐색기 기능을 최대한 활용하여 테스트를 검색, 실행 및 디버그할 수 있습니다.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e75a689f3c03d7ad358da6dc9413f70aaf2c4eab
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 37d545adf33a6350f3d2484e4f820ebca8f7353d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584164"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056425"
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Python 코드에 대해 단위 테스트 설정
 

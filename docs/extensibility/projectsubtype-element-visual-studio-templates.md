@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4414d5f444613996312978e9033145c6b8d3d82
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46b110acd20659dcd1660e4ce92897b1c78171bb
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139002"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636144"
 ---
-# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 요소(Visual Studio 템플릿)
-서식 파일에 지정 된 값의 하위 범주도 분류 하는 `ProjectType` 요소입니다.  
+# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 요소 (Visual Studio 템플릿)
+서식 파일에 지정 된 값의 하위 범주로 분류 된 `ProjectType` 요소입니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -32,7 +32,7 @@ ms.locfileid: "31139002"
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <ProjectSubType> SubType </ProjectSubType>  
 ```  
   
@@ -59,20 +59,20 @@ ms.locfileid: "31139002"
 ## <a name="remarks"></a>설명  
  `ProjectSubType`은 `TemplateData`의 선택적 자식 요소입니다.  
   
- `ProjectSubType` 하위 범주를 제공 하는 요소는 [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) 요소입니다. 이 값을 포함할 수 있습니다.  
+ 합니다 `ProjectSubType` 요소는 하위 범주를 제공 합니다 [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) 요소입니다. 이 값을 포함할 수 있습니다.  
   
 -   `SmartDevice-NETCFv1`: 지정 하는 템플릿의 대상은 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] 버전 1.0입니다.  
   
--   `SmartDevice-NETCFv2`: 지정 하는 템플릿이 대상으로 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] 버전 2.0.  
+-   `SmartDevice-NETCFv2`: 지정 하는 템플릿의 대상은 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] 버전 2.0입니다.  
   
- 서식 파일을 포함 하는 경우는 `ProjectType` 의 값을 가진 요소가 `Web`, `ProjectSubType` 요소 템플릿의 프로그래밍 언어를 지정 합니다. 이 요소는 다음 값을 가질 수 있습니다.  
+ 템플릿을 포함 하는 경우는 `ProjectType` 의 값을 가진 요소가 `Web`, `ProjectSubType` 요소 서식 파일의 프로그래밍 언어를 지정 합니다. 이 요소는 다음 값을 가질 수 있습니다.  
   
--   `CSharp`: 서식 파일을 만들도록 지정는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 웹 프로젝트 또는 항목입니다.  
+-   `CSharp`: 템플릿이 만들도록 지정을 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 웹 프로젝트 또는 항목입니다.  
   
--   `VisualBasic`: 서식 파일을 만들도록 지정는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 웹 프로젝트 또는 항목입니다.  
+-   `VisualBasic`: 템플릿이 만들도록 지정을 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 웹 프로젝트 또는 항목입니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 장치 응용 프로그램을 대상으로 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] 버전 2.0.  
+## <a name="example"></a>예  
+ 다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터를 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 장치 응용 프로그램을 대상으로 하는 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] 버전 2.0입니다.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -99,7 +99,7 @@ ms.locfileid: "31139002"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
- [ProjectType 요소(Visual Studio 템플릿)](../extensibility/projecttype-element-visual-studio-templates.md)
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
+ [ProjectType 요소 (Visual Studio 템플릿)](../extensibility/projecttype-element-visual-studio-templates.md)

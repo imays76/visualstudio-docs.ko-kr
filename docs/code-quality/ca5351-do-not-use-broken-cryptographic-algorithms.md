@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa720459fff6cc67080fd3368cda6ed3a82bfda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6ab1900cf9eda3fccf7606a6a645ace986bcd21d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920420"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512831"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 끊어진 암호화 알고리즘 사용 안 함
 |||
@@ -47,7 +47,7 @@ ms.locfileid: "31920420"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  보다 강력한 암호화 옵션을 사용합니다.
 
--   MD5, 사용의 해시는 [s h A-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 제품군 (예: <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+-   Md5의 경우에 해시를 사용 합니다 [sha-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) 제품군 (예: <xref:System.Security.Cryptography.SHA512>를 <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
 -   DES 및 RC2의 경우 <xref:System.Security.Cryptography.Aes> 암호화를 사용합니다.
 

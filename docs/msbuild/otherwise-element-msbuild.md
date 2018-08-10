@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d018b26f2df32b9e3cc1e3fae65ec8b3d3394806
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5f4f886e6c6d1ec09700eefa3c7289c9cb918ecc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570082"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155050"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 요소(MSBuild)
 모든 `When` 요소가 `false`로 평가될 경우에만 실행할 코드 블록을 지정합니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "31570082"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <Otherwise>  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  
@@ -50,7 +50,7 @@ ms.locfileid: "31570082"
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
  없음  

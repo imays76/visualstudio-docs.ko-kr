@@ -1,5 +1,5 @@
 ---
-title: 요소 (Visual Studio 템플릿)를 참조 | Microsoft Docs
+title: 요소 (Visual Studio 템플릿)를 참조 합니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0217360b2a8e9c6c8e723561aff383ed3226d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1f05bc8a19377576788fdb72400bf0af566b796
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136299"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638113"
 ---
-# <a name="reference-element-visual-studio-templates"></a>Reference 요소(Visual Studio 템플릿)
+# <a name="reference-element-visual-studio-templates"></a>Reference 요소 (Visual Studio 템플릿)
 항목이 프로젝트에 추가될 때 추가할 어셈블리 참조를 지정합니다.  
   
  \<VSTemplate>  
@@ -33,7 +33,7 @@ ms.locfileid: "31136299"
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <Reference>  
     <Assembly> ... </Assembly>  
 </Reference>  
@@ -49,7 +49,7 @@ ms.locfileid: "31136299"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[어셈블리](../extensibility/assembly-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 사용 하 여 해당 어셈블리의 참조를 프로젝트에 추가 하는 어셈블리에 대 한 정보를 지정 합니다. 하나는 있어야 `Assembly` 요소에 모든 `Reference` 요소입니다.|  
+|[어셈블리](../extensibility/assembly-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 서식 파일 프로젝트에 해당 어셈블리 참조를 추가 하는 어셈블리에 대 한 정보를 지정 합니다. 하나는 있어야 `Assembly` 요소에서 모든 `Reference` 요소입니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -60,12 +60,12 @@ ms.locfileid: "31136299"
 ## <a name="remarks"></a>설명  
  `Reference`은 `References`의 필수 자식 요소입니다.  
   
- `Reference` 및 `References` 요소 있는.vstemplate 파일에만 사용할 수 있습니다는 `Type` 특성 값이 `Item`합니다.  
+ `Reference` 및 `References` 요소에만 사용할 수 있습니다 *.vstemplate* 파일을 `Type` 특성의 값 `Item`합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제는 `TemplateContent` 항목 템플릿의 요소입니다. 이 XML System.dll 및 System.Data.dll 어셈블리에 대 한 참조를 추가합니다.  
+## <a name="example"></a>예  
+ 다음 예제는 `TemplateContent` 항목 템플릿의 요소입니다. 이 XML에 대 한 참조를 추가 합니다 *System.dll* 하 고 *System.Data.dll* 어셈블리입니다.  
   
-```  
+```xml  
 <TemplateContent>  
     <References>  
         <Reference>  
@@ -83,6 +83,6 @@ ms.locfileid: "31136299"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

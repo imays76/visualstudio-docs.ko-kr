@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 26edc3f48c72fb81bd60396ad8a3047dafa7f48e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 99b67f8ea89b4ea1308cf6db8ced359768861699
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572380"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251883"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
@@ -33,11 +33,11 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 |**자세히**|
 |--------------------|
-|[Visual Studio 설치](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Visual Studio의 Xamarin에 대해 알아보기](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Visual Studio 설치](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Visual Studio의 Xamarin에 대해 알아보기](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Xamarin 모바일 앱 개발 설명서](/xamarin/) |
 |[ALM(Application Lifecycle Management) 및 Xamarin 앱](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
-|[Visual Studio의 유니버설 Windows 앱에 대한 자세한 정보](https://www.visualstudio.com/vs/universal-windows-platform/)(VisualStudio.com)|
+|[Visual Studio의 유니버설 Windows 앱에 대한 자세한 정보](https://visualstudio.microsoft.com/vs/universal-windows-platform/)(VisualStudio.com)|
 |[Swift와 C# 간의 유사점에 대해 알아보기](http://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> 단일 코드 베이스에서 Android, iOS 및 Windows를 대상으로 지정
@@ -106,9 +106,9 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 |**자세히**|
 |--------------------|
-|[Visual Studio 설치](http://www.visualstudio.com/products/visual-studio-community-vs)(VisualStudio.com)|
-|[Visual Studio Tools for Apache Cordova 시작](/visualstudio/cross-platform/tools-for-cordova/)(docs.microsoft.com)|
-|[Android 용 Visual Studio 에뮬레이터에 대해 알아보기](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Visual Studio 설치](http://visualstudio.microsoft.com/products/visual-studio-community-vs)(VisualStudio.com)|
+|[Apache Cordova용 도구 Visual Studio 시작](/visualstudio/cross-platform/tools-for-cordova/)|
+|[Android 용 Visual Studio 에뮬레이터에 대해 알아보기](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 <a name="CPP"></a>
 
@@ -135,11 +135,11 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 |**자세히**|
 |--------------------|
-|[Visual Studio 다운로드](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Visual Studio 다운로드](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[플랫폼 간 모바일 개발용 Visual C++ 설치](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
-|[여러 플랫폼을 대상으로 한 C++ 사용에 대해 알아보기](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[여러 플랫폼을 대상으로 한 C++ 사용에 대해 알아보기](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[필요한 것을 설치한 다음 Android용 Native-Activity 응용 프로그램 만들기](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
-|[Android 및 Windows 앱과 C++ 코드를 공유하는 방법에 대해 알아보기](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Learn more about sharing C++ code with Android and Windows apps](https://visualstudio.microsoft.com/vs/cplusplus-mdd/)(Android 및 Windows 앱과 C++ 코드를 공유하는 방법에 대해 알아보기)(VisualStudio.com)|
 |[플랫폼 간 모바일 개발 예제](https://msdn.microsoft.com/library/dn707596.aspx)(MSDN 라이브러리)|
 |[개발자 코드 샘플](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B)(code.msdn)|
 
@@ -155,7 +155,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 |**자세히**|
 |--------------------|
-|[Visual Studio를 사용하여 Unity 게임을 제작하는 방법 알아보기](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Visual Studio를 사용하여 Unity 게임을 제작하는 방법 알아보기](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Visual Studio Tools for Unity에 대해 자세히 알아보기](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Visual Studio Tools for Unity 사용 시작](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Visual Studio Tools for Unity 2.0 Preview에서 향상된 최신 기능에 대해 알아보기](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (Visual Studio 블로그)|
@@ -164,6 +164,6 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [Add Office 365 API's to a Visual Studio project](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)(Visual Studio 프로젝트에 Office 365 API 추가)
+- [Visual Studio 프로젝트에 Office 365 API 추가](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
 - [Azure App Service - Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)
 - [Visual Studio App Center](https://docs.microsoft.com/appcenter)

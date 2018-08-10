@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a155d2d85f0b6208b98587f6907c8dadfd92d737
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a57316904aa1075484a4d33c6e2259586c88fe78
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31579149"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151382"
 ---
 # <a name="special-characters-to-escape"></a>이스케이프할 특수 문자
 특수 문자는 사용되는 컨텍스트에서 특별한 의미가 있는 경우에만 이스케이프해야 합니다. 예를 들어 별표(*)는 항목 정의의 "Include" 및 "Exclude" 특성이나 <xref:Microsoft.Build.Tasks.CreateItem> 호출에서만 특수 문자이며 다른 모든 경우에는 리터럴 별표로 처리됩니다. 프로젝트 파일의 모든 위치에서 별표를 이스케이프해야 하는 것은 아니지만 이스케이프해도 문제는 발생하지 않습니다.  
   
- 특수 문자 대신 %*xx* 표기법을 사용할 수 있습니다. 여기서 *xx*는 ASCII 문자의 16진수 값을 나타냅니다. 예를 들어 별표(*)를 리터럴 문자로 사용하려면 `%2A` 값을 사용합니다.  
+ 특수 문자 대신 %\<xx> 표기법을 사용할 수 있습니다. 여기서 \<xx>는 ASCII 문자의 16진수 값을 나타냅니다. 예를 들어 별표(*)를 리터럴 문자로 사용하려면 `%2A` 값을 사용합니다.  
   
  이스케이프할 수 있는 특수 문자의 전체 목록은 다음과 같습니다.  
   

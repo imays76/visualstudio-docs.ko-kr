@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 2bdff15b101b9a9c916c8ba98cfd4964ca0f3189
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957494"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380942"
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>프로젝트에 NuGet 패키지 포함하기
 
@@ -60,7 +60,7 @@ NuGet 패키지를 추가하고 프로젝트 참조를 업데이트한 다음에
 파일 상단에 필요한 `using` 지시문을 추가했는지 확인하세요.
 
 ```csharp
-using Newtownsoft.json;
+using Newtonsoft.Json;
 ```
 
 대부분의 NuGet은 NuGet 소스에 대한 README 또는 프로젝트 페이지 링크와 같은 추가 정보를 제공합니다. 이에 대한 링크는 일반적으로 [패키지 추가] 페이지의 패키지 안내에서 찾을 수 있습니다.

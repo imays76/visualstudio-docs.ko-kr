@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747283"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978351"
 ---
 # <a name="introduction-to-wpf"></a>WPF 소개
 
@@ -38,7 +38,7 @@ WPF에는 속성 및 이벤트를 향상시키는 [종속성 속성](/dotnet/fra
 
 ## <a name="markup-and-code-behind"></a>태그 및 코드 숨김
 
-WPF를 사용하면 ASP.NET 개발자에게 익숙한 환경인 *태그* 및 *코드 숨김*둘 다를 통해 응용 프로그램을 개발할 수 있습니다. 일반적으로 XAML 태그를 사용하여 응용 프로그램의 모양을 구현하고 관리되는 프로그래밍 언어(코드 숨김)를 사용하여 해당 동작을 구현합니다. 모양 및 동작의 이러한 분리는 다음과 같은 이점이 있습니다.
+WPF를 사용하면 ASP.NET 개발자에게 익숙한 환경인 *태그* 및 *코드 숨김* 둘 다를 통해 응용 프로그램을 개발할 수 있습니다. 일반적으로 XAML 태그를 사용하여 응용 프로그램의 모양을 구현하고 관리되는 프로그래밍 언어(코드 숨김)를 사용하여 해당 동작을 구현합니다. 모양 및 동작의 이러한 분리는 다음과 같은 이점이 있습니다.
 
 - 모양 관련 태그가 동작 관련 코드와 밀접하게 결합되지 않으므로 개발 및 유지 관리 비용이 줄어듭니다.
 
@@ -48,7 +48,7 @@ WPF를 사용하면 ASP.NET 개발자에게 익숙한 환경인 *태그* 및 *�
 
 ### <a name="markup"></a>태그
 
-XAML은 선언적으로 응용 프로그램의 모양을 구현하는 데 사용되는 XML 기반 태그 언어입니다. 일반적으로 창, 대화 상자, 페이지 및 사용자 정의 컨트롤을 만들고 컨트롤, 도형 및 그래픽으로 채우는 데 사용됩니다.
+XAML은 선언적으로 응용 프로그램의 모양을 구현하는 XML 기반 태그 언어입니다. 일반적으로 창, 대화 상자, 페이지 및 사용자 정의 컨트롤을 만들고 컨트롤, 도형 및 그래픽으로 채우는 데 사용됩니다.
 
  다음 예제에서는 XAML을 사용하여 단일 단추가 포함된 창의 모양을 구현합니다.
 
@@ -149,7 +149,7 @@ End Namespace
 
 ## <a name="controls"></a>컨트롤
 
-응용 프로그램 모델에서 제공하는 사용자 환경은 생성된 컨트롤입니다. WPF에서 "컨트롤"은 창이나 페이지에서 호스트되고 사용자 인터페이스가 있으며 일부 동작을 구현하는 WPF 클래스의 한 범주에 적용되는 포괄적인 용어입니다.
+응용 프로그램 모델에서 제공하는 사용자 환경은 생성된 컨트롤입니다. WPF에서 *컨트롤*은 창이나 페이지에서 호스트되고 사용자 인터페이스가 있으며 일부 동작을 구현하는 WPF 클래스의 한 범주에 적용되는 포괄적인 용어입니다.
 
 자세한 내용은 [컨트롤](/dotnet/framework/wpf/controls/index)을 참조하세요.
 
@@ -187,7 +187,7 @@ End Namespace
 
 컨트롤은 대체로 사용자 입력을 감지하고 응답합니다. [WPF 입력 시스템](/dotnet/framework/wpf/advanced/input-overview) 은 직접 및 라우트된 이벤트를 사용하여 텍스트 입력, 포커스 관리 및 마우스 위치 지정을 지원합니다.
 
-응용 프로그램에 복잡한 입력 요구 사항이 있는 경우가 많습니다. WPF는 사용자 입력 작업을 이러한 작업에 응답하는 코드에서 분리하는 [명령 시스템](/dotnet/framework/wpf/advanced/commanding-overview) 을 제공합니다.
+응용 프로그램에 복잡한 입력 요구 사항이 있는 경우가 많습니다. WPF는 사용자 입력 작업을 이러한 작업에 응답하는 코드에서 분리하는 [명령 시스템](/dotnet/framework/wpf/advanced/commanding-overview)을 제공합니다.
 
 ## <a name="layout"></a>레이아웃
 

@@ -13,28 +13,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9225b83cb42e39ec4f220c5993c4695ba75b8998
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b7448ec69af35b1fac864ef0151d37f91d15bd7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137179"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639951"
 ---
 # <a name="objects"></a>개체
-다음 참조 정보는 핵심 텍스트 편집기의 인스턴스를 만드는 데 사용 되는 개체를 설명 합니다.  
+다음과 같은 참조 정보는 핵심 텍스트 편집기의 인스턴스를 만드는 데 사용 되는 개체를 설명 합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  [VSCodeWindow 개체](../extensibility/vscodewindow-object.md)  
- 코드 창 개체 하나 이상의 텍스트 보기 묶을 수 있는 특별 한 문서 창에 설명 합니다.  
+ 코드 창 개체를 하나 이상의 텍스트 뷰에 묶을 수 있는 특수 문서 창에 설명 합니다.  
   
  [VSCodeWindowManager 개체](../extensibility/vscodewindowmanager-object.md)  
- 언어 서비스에서 구현 되 고 장식을 관리 하는 코드 창 관리자 개체를 설명 합니다.  
+ 언어 서비스에서 구현 되는 선의 도구 영역을 관리 하는 코드 창 관리자 개체를 설명 합니다.  
   
  [VSTextBuffer 개체](../extensibility/vstextbuffer-object.md)  
  유니코드 텍스트 파일에 대 한 데이터 스트림을 나타내는 텍스트 버퍼 개체를 설명 합니다.  
   
  [VSTextView 개체](../extensibility/vstextview-object.md)  
- 텍스트 보기, 사용자가 확인 및 텍스트 버퍼의 유니코드 텍스트를 편집할 수 있는 창에 설명 합니다.  
+ 텍스트 뷰를 살펴보고 텍스트 버퍼의 유니코드 텍스트를 편집할 수 있는 창에 설명 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  [Visual Studio SDK 참조](../extensibility/visual-studio-sdk-reference.md)  

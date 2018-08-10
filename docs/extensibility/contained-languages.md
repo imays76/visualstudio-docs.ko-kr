@@ -12,31 +12,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbf2c63a66ba76b65d1caec2c5eed006d57fca0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9edaed1eef81d493bdd29311893caef93447e6f7
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109768"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231746"
 ---
 # <a name="contained-languages"></a>포함 된 언어
 
-*언어에 포함 된* 는 다른 언어에 포함 되는 언어입니다. 예를 들어 HTML [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 포함할 수도 있습니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 스크립트입니다. 이중 언어 아키텍처는 HTML 및 스크립트 언어를 모두에 대 한 IntelliSense, 색 지정, 및 기타 편집 기능을 제공 하는.aspx 파일 편집기 필요 합니다.
+*언어 포함* 은 다른 언어에 포함 된 언어입니다. 예를 들어, HTML [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 페이지에 포함 될 수 있습니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 스크립트입니다. 이중 언어 아키텍처에 필요 합니다 *.aspx* 파일 편집기 IntelliSense, 색 지정 및 다른 편집을 위해 HTML 및 스크립팅 언어에 대 한 기능입니다.
 
 ## <a name="implementation"></a>구현
 
-포함 된 언어에 대 한 구현에 필요한 가장 중요 한 인터페이스는는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 인터페이스입니다. 이 인터페이스는 र ा थ 내 호스팅될 수 있는 모든 언어로 구현 됩니다. 언어 서비스의 색 지정 기, 텍스트 보기 필터 및 र ा थ 서비스 ID에 대 한 액세스 부여 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> 만들 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 인터페이스입니다. 다음 단계는 포함 된 언어를 구현 하는 방법을 보여 줍니다.
+포함 된 언어에 대 한 구현 해야 할 가장 중요 한 인터페이스를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 인터페이스입니다. 이 인터페이스는 주 언어 내에서 호스팅될 수 있는 모든 언어에서 구현 됩니다. 언어 서비스의 colorizer, 텍스트 보기 필터 및 기본 언어 서비스 ID에 액세스 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> 만들 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 인터페이스입니다. 다음 단계를 포함 된 언어를 구현 하는 방법을 보여 줍니다.
 
-1.  사용 하 여 `QueryService()` 언어의 인터페이스 ID와 서비스 ID를 가져옵니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>합니다.
+1.  사용 하 여 `QueryService()` 의 인터페이스 ID와 서비스 ID는 언어는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>합니다.
 
-2.  만들려는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 인터페이스를 호출 하는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> 메서드. 전달 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 인터페이스를 하나 이상의 [항목 Id](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>), 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> 인터페이스입니다.
+2.  만들려는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> 인터페이스를 호출 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> 메서드. 전달를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 인터페이스를 하나 이상의 [항목 Id](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>), 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> 인터페이스입니다.
 
-3.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> 인터페이스 텍스트 버퍼 코디네이터 개체를 보조 언어의 버퍼에 주 파일의 위치를 매핑하는 데 필요한 기본 서비스를 제공 합니다.
+3.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> 인터페이스는 텍스트 버퍼 coordinator 개체인 보조 언어의 버퍼에 주 파일의 위치를 매핑하는 데 필요한 기본 서비스를 제공 합니다.
 
-     예를 들어 단일.aspx 파일은 주 파일에는 ASP, HTML 및 포함 된 모든 코드가 포함 됩니다. 그러나 보조 버퍼에는 모든 클래스 정의 파일을 만들기 위해 보조 버퍼는 올바른 코드와 함께 포함 된 코드만 포함 되어 있습니다. 버퍼 코디네이터 처리 하는 작업을 조정 하 고 다른에 대 한 버퍼에서 편집 합니다.
+     단일의 예를 들어 *.aspx* ASP, HTML 및 포함 된 모든 코드 파일을 기본 파일은 포함 합니다. 그러나 보조 버퍼에는 모든 클래스 정의 파일을 만들기 위해 보조 버퍼를 올바른 코드와 함께 포함 된 코드에만 포함 됩니다. 버퍼 코디네이터 다른 하나의 버퍼에서 편집을 조정 하는 작업을 처리 합니다.
 
-4.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> 메서드는 기본 언어를 보조 버퍼에서 해당 텍스트에 매핑된 해당 버퍼 내에서 텍스트 버퍼 코디네이터 지시 합니다.
+4.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> 해당 버퍼 내에서 텍스트의 해당 텍스트를 보조 버퍼에 매핑되는 기본 언어는 메서드를가 버퍼 코디네이터 알려 줍니다. 합니다.
 
-     언어의 배열에서 전달는 <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> 현재 기본 및 보조 범위만 포함 하는 구조입니다.
+     언어의 배열로 전달 된 <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> 구조를 포함 하는 현재 주 복제본 및 보조 범위입니다.
 
-5.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> 메서드 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> 메서드 보조 버퍼로 그리고 반대로 기본 매핑을 제공 합니다.
+5.  합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> 메서드 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> 메서드 보조 버퍼를 반대로 하는 기본에서 매핑을 제공 합니다.

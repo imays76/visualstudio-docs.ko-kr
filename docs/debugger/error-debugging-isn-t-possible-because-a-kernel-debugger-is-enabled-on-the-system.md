@@ -1,5 +1,5 @@
 ---
-title: '오류: 디버깅 큰&#39;t 가능한 때문에 시스템에 커널 디버거가 사용 | Microsoft Docs'
+title: '오류: 디버깅 되었습니다&#39;수는 커널 디버거가 사용 중 이므로 시스템에서 t | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482115"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058726"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>오류: 디버깅 큰&#39;t 가능한 때문에 시스템에 커널 디버거가 사용 중
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>오류: 디버깅 되었습니다&#39;t 수 있으므로 시스템에 커널 디버거가 사용 가능
 관리 코드를 디버깅할 때 다음 오류 메시지가 나타날 수 있습니다.  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -60,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   명령 프롬프트에 다음과 같이 입력합니다.  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -68,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  명령 프롬프트에서 다음을 입력합니다.  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -76,15 +76,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>모든 세션에 대해 커널 디버깅을 비활성화하려면(기타 Windows 운영 체제)  
   
-1.  시스템 드라이브에서 boot.ini를 찾습니다 (일반적으로 c:\\). boot.ini 파일은 숨겨져 있고 읽기 전용일 수 있습니다. 따라서 이 파일을 보려면 다음 명령을 사용해야 합니다.  
+1.  시스템 드라이브에서 boot.ini를 찾습니다 (대개 c:\\). boot.ini 파일은 숨겨져 있고 읽기 전용일 수 있습니다. 따라서 이 파일을 보려면 다음 명령을 사용해야 합니다.  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  메모장을 사용하여 boot.ini를 열고 다음 옵션을 제거합니다.  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  
@@ -96,7 +96,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  커널 디버거가 후크되어 있으면 디버깅을 계속할지 묻는 메시지가 나타납니다. 단추를 클릭하여 디버깅을 계속합니다.  
   
-2.  표시 될 수 있습니다는 `User break exception(Int 3).` 디버깅을 계속 하려면 다음 커널 디버거 명령을 입력 하는이 문제가 발생 합니다.  
+2.  표시 될 수 있습니다는 `User break exception(Int 3).` 이 문제가 발생 하면 디버깅 커널 디버거 명령을 입력 합니다.  
   
      `gn`  
   

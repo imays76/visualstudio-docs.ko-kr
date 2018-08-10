@@ -14,18 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 17d95ed3ceeaa93110fa17b301e8d37ed87f073d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5f88e305e7ece1bcdf9eecb920c4e2aa567f3439
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766245"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282348"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>빠른 시작: Visual Studio에서 Visual Basic을 사용하여 첫 번째 콘솔 앱 만들기
 
 Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량으로 여기서 콘솔에서 실행되는 간단한 Visual Basic 응용 프로그램을 만듭니다.
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 

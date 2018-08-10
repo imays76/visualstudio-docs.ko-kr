@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 78b8f5488d4e69ac547d48946442198e4f0a5c41
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693889"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382153"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼
 
@@ -56,16 +56,16 @@ ms.locfileid: "34693889"
 |Internet Explorer 6<br /><br /> Internet Explorer 7|지원되지 않습니다.|
 |Chrome<br /><br /> Firefox|작업 단계 기록은 지원되지 않습니다. 코딩된 UI 테스트는 Visual Studio 2012 Update 4 이상에서 Chrome 및 Firefox 브라우저로 재생할 수 있습니다. 자세한 내용을 보려면 [여기](http://msdn.microsoft.com/library/jj835758.aspx) 로 이동하세요.|
 |Opera<br /><br /> Safari|지원되지 않습니다.|
-|Silverlight|지원되지 않습니다.<br /><br /> 그러나 Visual Studo 2013의 경우 Visual Studio 갤러리에서 [Silverlight용 Microsoft Visual Studio 2013 코딩된 UI 테스트 플러그 인](https://go.microsoft.com/fwlink/?LinkId=691026) 을 다운로드할 수 있습니다.|
+|Silverlight|지원되지 않습니다.<br /><br /> 그러나 Visual Studo 2013의 경우 Visual Studio 갤러리에서 [Silverlight용 Microsoft Visual Studio 2013 코딩된 UI 테스트 플러그 인](https://go.microsoft.com/fwlink/?LinkId=691026)을 다운로드할 수 있습니다.|
 |Flash/Java|지원되지 않습니다.|
 |Windows Forms 2.0 이상|완전하게 지원됨 **참고:** NetFx 컨트롤은 완전하게 지원되지만 일부 타사 컨트롤은 지원되지 않습니다.|
 |WPF 3.5 이상|완전하게 지원됨<br /><br /> **참고** NetFx 컨트롤은 완전하게 지원되지만 일부 타사 컨트롤은 지원되지 않습니다.|
 |Windows Win32|작동은 하지만 일부 알려진 문제가 있을 수 있으며, 공식적으로는 지원되지 않습니다.|
-|MFC|부분적으로 지원됩니다. 지원 기능에 대한 자세한 내용은 다음 [Microsoft 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=206511) 를 참조하세요.|
+|MFC|부분적으로 지원됩니다. 지원되는 기능에 대한 자세한 내용은 [UITest 프레임워크](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/)를 참조하세요.|
 |SharePoint|완전하게 지원됨|
 |Office 클라이언트 응용 프로그램|지원되지 않습니다.|
 |동적 CRM 웹 클라이언트|완전하게 지원됨|
-|Dynamics (Ax) 2012 클라이언트|작업 기록 및 재생이 부분적으로 지원됩니다. 자세한 내용은 다음 [Microsoft 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=232677) 를 참조하세요.|
+|Dynamics (Ax) 2012 클라이언트|작업 기록 및 재생이 부분적으로 지원됩니다. 자세한 내용은 [Microsoft Dynamics에 대한 Visual Studio 10 코딩된 UI/작업 기록 지원](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/)을 참조하세요.|
 |SAP|지원되지 않습니다.|
 |Citrix/터미널 서비스|터미널 서버에는 작업을 기록하지 않는 것이 좋습니다. 레코더에서는 동시에 여러 인스턴스를 실행할 수 없습니다.|
 |PowerBuilder|부분적으로 지원됩니다.<br /><br /> 지원 범위는 PowerBuilder 컨트롤에서 액세스할 수 있는 범위까지입니다.|

@@ -14,20 +14,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5af218098f6d79cf6208c66b314c35d2471af15
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 143b3a266bab8ad48f7f431234d1bf50c16c9de4
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127379"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276925"
 ---
 # <a name="termination-and-detaching"></a>종료 및 분리
-다음은 정상적으로 종료에 대 한 설명입니다.  
+다음 섹션에서는 정상 종료를 설명합니다.  
   
 ## <a name="discussion"></a>토론  
- 이후에 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) 또는 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 없는 중단점, 예외, 런타임 오류 또는 무한 루프에 응용 프로그램을 디버깅할 수 없는 경우 인터페이스 계속 디버깅 중인 프로그램 완료 될 때까지 실행 됩니다. 이 정상적으로 종료 합니다.  
+ 후 합니다 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) 하거나 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 인터페이스 계속 없습니다 중단점, 예외, 런타임 오류 또는 응용 프로그램을 디버깅할 수에 무한 루프에 있는 경우 디버깅 중인 프로그램이 완료 될 때까지 실행 됩니다. 이 프로세스는 정상적으로 종료 합니다.  
   
- 보내야는 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 정상 종료를 구현 하 합니다. 이 위해서는 구현는 [IDebugProgramDestroyEvent2::GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) 메서드.  
+ 보내야 하는 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 정상 종료를 구현 합니다. 정상 종료 실행 되어야 합니다 [IDebugProgramDestroyEvent2::GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) 메서드.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)

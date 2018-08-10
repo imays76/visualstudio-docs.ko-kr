@@ -1,5 +1,5 @@
 ---
-title: Guid 및 Visual Studio SDK의에서 상수 | Microsoft Docs
+title: Visual Studio SDK의에서 Guid 및 상수 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,26 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 604fe4a8cb007c89ae9d287c1077737cd4854ce5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fb77d090430a69953eb2a7e713fd7de26a772260
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133432"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500464"
 ---
-# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Guid 및 Visual Studio SDK의 상수
+# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Visual Studio SDK의 Guid 및 상수
 <xref:Microsoft.VisualStudio.VSConstants> 클래스는 다양 한 환경 Guid 및 상수에 대 한 액세스를 제공 합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  [IDE GUID](../extensibility/ide-guids.md)  
- 제공 하는 Guid 나열 <xref:Microsoft.VisualStudio.VSConstants>합니다.  
+ 제공 하는 Guid를 나열 <xref:Microsoft.VisualStudio.VSConstants>합니다.  
   
  [IDE 상수](../extensibility/ide-constants.md)  
  제공 하는 SDK 상수를 나열 <xref:Microsoft.VisualStudio.VSConstants>합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  [관리 코드의 COM 상수](../extensibility/com-constants-in-managed-code.md)  
- 관리 패키지 프레임 워크 (MPF)에서 관리 코드에 사용할 수 있는 표준 COM 상수를 나열합니다.  
+ 관리 패키지 프레임 워크 (MPF)에서 관리 코드에 사용할 수 있는 표준 COM 상수를 나열 합니다.  
   
  [프로젝트 시스템 확장을 위한 IDE 정의 명령](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
- 다양 한 유형의 프로젝트 시스템을 확장 하는 데 사용 되는 명령 항목을 나열 합니다.
+ 다양 한 프로젝트 시스템 확장에 사용 되는 명령 항목을 나열 합니다.

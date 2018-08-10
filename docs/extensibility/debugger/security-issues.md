@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45ebd8c4d80b84749838c2034d72159c9e39627
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6cd4d07721f202169ca0689882ac1a41045a4d61
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126899"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252325"
 ---
 # <a name="security-issues"></a>보안 문제
-Visual Studio를 사용 하는 프로그램을 디버깅 하려면 권한만 필요한 프로그램을 실행 하는 개발자가 알아야 하는 것과 같은 됩니다. 대부분의 경우 (인터넷 정보 서비스 같은 다른 서비스와 관련 된 경우가 더 높은 수준의 권한 요구할 수 있음)에 대 한 원격 디버깅 포함 됩니다.  
+Visual Studio를 사용 하 여 프로그램을 디버깅 하려면 필요한 권한만 개발자 프로그램을 실행 해야 하는 것과 같은 됩니다. 대부분의 상황에 대 한 원격 디버깅 포함 됩니다. 인터넷 정보 서비스와 같은 다른 서비스와 관련 된 몇 가지 상황에는 높은 수준의 사용 권한이 필요할 수 있습니다.  
   
- Visual Studio를 실행 하는 동안 프로세스 디버그 관리자 (PDM) 로컬 컴퓨터에서 디버그 프로세스를 추적 합니다. 원격으로 msvsmon.exe 이라는 프로그램 원격 디버깅을 처리 하 고는 PDM를 사용할 수 있도록 하는 개발자가 시작 됩니다. (해당 msvsmon.exe는 서비스가 해당 컴퓨터에서 원격 디버깅을 사용 하려면 수동으로 시작 해야 note). Visual Studio (또는 msvsmon.exe)를 실행 하지 않는 프로세스 없음 디버깅에 대 한 추적 됩니다.  
+ Visual Studio를 실행 하는 동안 프로세스 디버그 관리자 (PDM) 로컬 컴퓨터에서 디버그 프로세스를 추적 합니다. 호출 프로그램을 원격으로 *msvsmon.exe* 원격 디버깅을 처리 하 여 PDM를 사용할 수 있도록 하는 개발자에 의해 시작 됩니다. (*msvsmon.exe* 서비스와 해당 컴퓨터에서 원격 디버깅을 사용 하려면 수동으로 시작 해야 합니다.) 때 Visual Studio (또는 *msvsmon.exe*)가 실행 되지 않는 프로세스 없음 디버깅에 대 한 추적 됩니다.  
   
- 즉, 개발자가 특별 한 권한이 없어도 시작 프로그램을 디버깅할 수 있습니다. 개발자는 다른 사용자가 동일한 보안 그룹의 멤버인 경우 다른 사용자에 의해 시작 된 프로세스를 디버깅할도 수 있습니다. 원격 디버깅을 사용 하려면 반드시 필요한 복사할 파일을 원격 컴퓨터 및 msvsmon.exe를 시작 하 고 (참조 [원격 디버깅](../../debugger/remote-debugging.md) 자세한 세부 정보에 대 한).  
+ 개발자는 특별 한 권한 없이 시작 하는 프로그램을 디버깅할 수 있습니다. 개발자는 다른 사용자는 동일한 보안 그룹의 멤버인 경우 다른 사용자가 시작한 프로세스를 디버깅할 수도 수 있습니다. 이며, 원격 디버깅을 사용 하려면 원격 컴퓨터에 필요한 파일을 복사 하 고 시작에 필요한 *msvsmon.exe*합니다. 자세한 내용은 [원격 디버깅](../../debugger/remote-debugging.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)   
- [디버그 프로세스 관리자](../../extensibility/debugger/process-debug-manager.md)   
+ [프로세스 디버그 관리자](../../extensibility/debugger/process-debug-manager.md)   
  [원격 디버깅](../../debugger/remote-debugging.md)

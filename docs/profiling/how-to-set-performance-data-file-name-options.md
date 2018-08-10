@@ -10,19 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0687b4f56906aeca0866f8d5d6ad7d329bb84df6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f2f9d47107d8a5e0fb4c10e058c2fc4c7ca3ed5e
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844471"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>방법: 성능 데이터 파일 이름 옵션 설정
 
-기본적으로 다음 구문을 사용하여 프로파일링 데이터 파일(.vsp)을 저장합니다.
+기본적으로 다음 구문을 사용하여 프로파일링 데이터 파일(.*vsp*)을 저장합니다.
 
 *Path\VSP-File\YYMMDD(N)* **.vsp**
 
-성능 세션에 대한 [속성] 대화 상자의 [일반] 페이지에서 명명 매개 변수를 변경할 수 있습니다.
+성능 세션에 대한 [속성] 대화 상자의 **일반** 페이지에서 명명 매개 변수를 변경할 수 있습니다.
 
 |||
 |-|-|

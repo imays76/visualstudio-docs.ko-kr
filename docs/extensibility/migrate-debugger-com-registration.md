@@ -11,24 +11,24 @@ ms.author: greggm
 manager: douge
 ms.workload:
 - greggm
-ms.openlocfilehash: 28516038170dd34028d11bf9a070cf265ecfd830
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c7578ddbdf84a1520a732fb64380bb53e5359f9
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140448"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637853"
 ---
-# <a name="migrate-64-bit-debugger-com-class-registration"></a>COM 클래스를 등록 하는 64 비트 디버거 마이그레이션
+# <a name="migrate-64-bit-debugger-com-class-registration"></a>64 비트 디버거 COM 클래스 등록 마이그레이션
 
-(사용 하 여 regasm regsvr32, 직접 레지스트리에 쓰는) HKEY_CLASSES_ROOT에 COM 클래스를 등록 하 고 msvsmon.exe (원격 디버거)에 로드 하는 디버거 확장을 위한 이제 수는 필요 없이 msvsmon에이 등록을 제공 합니다. HKEY_CLASSES_ROOT에 쓰려고 합니다. Msvsmon.exe 프로세스에 로드 하도록 구성 된 디버그 엔진 또는 레거시.NET 디버거 식 계산기가 결정 됩니다.
+COM 등록 하는 디버거 확장에 대 한 클래스의 HKEY_CLASSES_ROOT regasm을 regsvr32를 사용 하 여 레지스트리 및 로드를 직접 작성 *msvsmon.exe* (원격 디버거) 아니며 이제이 제공할 수 HKEY_CLASSES_ROOT 쓸 필요 없이 msvsmon에 등록 합니다. 레거시.NET 디버거 식 계산기 또는 디버그 엔진을 로드 하도록 구성 된이 영향을 줍니다 합니다 *msvsmon.exe* 프로세스입니다.
 
 ## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
 
-이 기법을 사용 하려면 msvsmon (InstallDir:\Common7\IDE\Remote Debugger\x64) 옆에 있는 *.msvsmon-comclass-def.json 파일을 추가 합니다.
+이 기법을 사용 하려면 추가 된  **.msvsmon-comclass-def.json* msvsmon 옆에 있는 파일 (InstallDir:* \Common7\IDE\Remote Debugger\x64*).
 
 다음은 관리 되는 하나를 등록 하는 예제 msvsmon-comclass-def 파일 및 하나의 기본 클래스입니다.
 
-파일 이름: MyCompany.MyExample.msvsmon comclass def.json
+파일 이름: *MyCompany.MyExample.msvsmon-comclass-def.json*
 
 ```json
 {

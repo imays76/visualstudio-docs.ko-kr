@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 787d1dd1f7ae9b005d1d61c5c0fb09a81f6dc17d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c57c7dcb9c6eadc3242bc09a1356d3a08399616
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568556"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154299"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 요소(MSBuild)
 `ContinueOnError` 특성이 실패한 태스크의 `false`인 경우 하나 이상의 대상이 실행되도록 합니다.  
@@ -36,13 +36,13 @@ ms.locfileid: "31568556"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <OnError ExecuteTargets="TargetName"  
     Condition="'String A'=='String B'" />  
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
 

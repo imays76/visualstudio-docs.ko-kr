@@ -12,14 +12,14 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 5230ecda1c817ec5be51019f6db793210a3d7a5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd34352453752bd56106597fccf6ab7c495e55c2
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31062526"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251181"
 ---
-# <a name="programming-with-unity-and-azure"></a>Unity 및 Azure로 프로그래밍
+# <a name="program-with-unity-and-azure"></a>Unity 및 Azure로 프로그램
 
 Azure는 클라우드에서 원격 분석 및 기타 게임 데이터 저장에 확장 가능한 솔루션을 제공합니다. Unity 2017의 릴리스로, .NET 4.6에 Unity가 실험적으로 지원되어 Azure .NET SDK를 사용할 수 있어 Azure를 어느 때보다도 간편하게 통합할 수 있습니다.
 

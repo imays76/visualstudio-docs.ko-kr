@@ -20,25 +20,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d37e5fa465a5e19b1bfb7577f6ab06c61782f775
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561557"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155099"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>방법: ClickOnce 신뢰 프롬프트 동작 구성
-최종 사용자가 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램, 콘솔 응용 프로그램, WPF 브라우저 등의 ClickOnce 응용 프로그램을 설치 하는 옵션이 제공 됩니다 여부를 제어 하 고 ClickOnce 신뢰 프롬프트를 구성할 수 있습니다. 응용 프로그램 및 Office 솔루션입니다. 각 최종 사용자의 컴퓨터에서 레지스트리 키를 설정 하 여 신뢰 프롬프트를 구성 합니다.  
+최종 사용자가 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램, 콘솔 응용 프로그램, WPF 브라우저 등의 ClickOnce 응용 프로그램을 설치 하는 옵션이 제공 됩니다 컨트롤에 ClickOnce 신뢰 프롬프트를 구성할 수 있습니다. Office 솔루션 및 응용 프로그램입니다. 각 최종 사용자의 컴퓨터에서 레지스트리 키를 설정 하 여 신뢰 프롬프트를 구성 합니다.  
   
- 다음 표에서 각 다섯 개의 영역 (인터넷, UntrustedSites, 내 컴퓨터, LocalIntranet, 및 TrustedSites)에 적용할 수 있는 구성 옵션을 보여 줍니다.  
+ 다음 표에서 각 영역 5 (인터넷, UntrustedSites, MyComputer, LocalIntranet, 및 TrustedSites)에 적용할 수 있는 구성 옵션을 보여 줍니다.  
   
 |옵션|레지스트리 설정 값|설명|  
 |------------|----------------------------|-----------------|  
-|신뢰 프롬프트를 사용 하도록 설정 합니다.|`Enabled`|ClickOnce 신뢰 프롬프트를 최종 사용자가을 ClickOnce 응용 프로그램 신뢰를 부여할 수 있도록 표시 됩니다.|  
-|신뢰 프롬프트를 제한 합니다.|`AuthenticodeRequired`|ClickOnce 신뢰 프롬프트 ClickOnce 응용 프로그램 게시자를 식별 하는 인증서로 서명 된 경우에 표시 됩니다.|  
-|신뢰 프롬프트를 사용 하지 않도록 설정 합니다.|`Disabled`|ClickOnce 신뢰 프롬프트를 명시적으로 신뢰할 수 있는 인증서로 서명 되지 않은 모든 ClickOnce 응용 프로그램에 표시 되지 않습니다.|  
+|신뢰 프롬프트를 사용 하도록 설정 합니다.|`Enabled`|ClickOnce 신뢰 프롬프트를 최종 사용자에 게 ClickOnce 응용 프로그램 신뢰를 부여할 수 있도록 표시 됩니다.|  
+|신뢰 프롬프트를 제한 합니다.|`AuthenticodeRequired`|ClickOnce 신뢰 프롬프트는 ClickOnce 응용 프로그램 게시자를 식별 하는 인증서를 사용 하 여 서명 된 경우에 표시 됩니다.|  
+|신뢰 프롬프트를 사용 하지 않도록 설정 합니다.|`Disabled`|ClickOnce 신뢰 프롬프트를 명시적으로 신뢰할 수 있는 인증서로 서명 되지 않은 ClickOnce 응용 프로그램에 대 한 표시 되지 않습니다.|  
   
- 다음 표에서 각 영역에 대 한 기본 동작을 보여 줍니다. 응용 프로그램 열 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램, WPF 브라우저 응용 프로그램 및 콘솔 응용 프로그램을 참조 합니다.  
+ 다음 표에서 각 영역에 대 한 기본 동작을 보여 줍니다. 응용 프로그램 열 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램, WPF 브라우저 응용 프로그램 및 콘솔 응용 프로그램을 가리킵니다.  
   
 |영역|응용 프로그램|Office 솔루션|  
 |----------|------------------|----------------------|  
@@ -48,28 +48,28 @@ ms.locfileid: "31561557"
 |`Internet`|`Enabled`|`AuthenticodeRequired`|  
 |`UntrustedSites`|`Disabled`|`Disabled`|  
   
- 활성화를 제한 하거나 ClickOnce 신뢰 프롬프트를 사용 하지 않도록 설정 하 여 이러한 설정을 재정의할 수 있습니다.  
+ 활성화, 제한, 또는 ClickOnce 신뢰 프롬프트를 사용 하지 않도록 설정 하 여 이러한 설정을 재정의할 수 있습니다.  
   
-## <a name="enabling-the-clickonce-trust-prompt"></a>ClickOnce 신뢰 프롬프트를 사용 하도록 설정  
- 최종 사용자가을 설치 하 고 해당 영역에서 제공 되는 ClickOnce 응용 프로그램을 실행 하는 옵션과 함께 표시 하려는 경우 영역에 대 한 신뢰 프롬프트를 사용 하도록 설정 합니다.  
+## <a name="enable-the-clickonce-trust-prompt"></a>ClickOnce 신뢰 프롬프트를 사용 하도록 설정  
+ 최종 사용자가 설치 하 고 해당 영역에서 제공 되는 ClickOnce 응용 프로그램을 실행 하는 옵션이 표시 하려는 경우 영역에 대 한 신뢰 프롬프트를 사용 하도록 설정 합니다.  
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>레지스트리 편집기를 사용 하 여 ClickOnce 신뢰 프롬프트를 사용 하도록 설정 하려면  
   
 1.  레지스트리 편집기를 엽니다.  
   
-    1.  클릭 **시작**, 클릭 하 고 **실행**합니다.  
+    1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
   
-    2.  에 **열려** 상자에 입력 합니다 `regedit32`, 클릭 하 고 **확인**합니다.  
+    2.  에 **열기** 상자에 입력 `regedit32`를 클릭 하 고 **확인**합니다.  
   
 2.  다음 레지스트리 키를 찾습니다.  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
   
-     키가 없는 경우 만듭니다.  
+     키가 없으면 만듭니다.  
   
-3.  다음 하위 키를 추가 **문자열 값**이미 없는, 다음 표에 표시 된 연결 된 값이 포함 된 경우.  
+3.  다음 하위 키를 추가 **문자열 값**이미 없는, 연결 된 값이 다음 표에 표시 된 경우.  
   
-    |문자열 값 하위 키|값|  
+    |문자열 값의 하위 키|값|  
     |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
@@ -77,13 +77,13 @@ ms.locfileid: "31561557"
     |`LocalIntranet`|`Enabled`|  
     |`TrustedSites`|`Enabled`|  
   
-     Office 솔루션에 대 한 `Internet` 기본값에 `AuthenticodeRequired` 및 `UntrustedSites` 값 `Disabled`합니다. 다른 모든 사용자에, `Internet` 기본값에 `Enabled`합니다.  
+     Office 솔루션에 대 한 `Internet` 는 기본값이 `AuthenticodeRequired` 하 고 `UntrustedSites` 값이 `Disabled`합니다. 나머지 모든 작업에 대 한 `Internet` 에 기본값이 `Enabled`합니다.  
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>프로그래밍 방식으로 ClickOnce 신뢰 프롬프트를 사용 하도록 설정 하려면  
   
 1.  Visual Studio에서 Visual Basic 또는 Visual C# 콘솔 응용 프로그램을 만듭니다.  
   
-2.  편집을 위해 Program.cs 또는 Program.vb 파일을 열고 다음 코드를 추가 합니다.  
+2.  엽니다는 *Program.vb* 또는 *Program.cs* 편집에 대 한 파일을 다음 코드를 추가 합니다.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -109,26 +109,26 @@ ms.locfileid: "31561557"
   
 3.  응용 프로그램을 빌드 및 실행합니다.  
   
-## <a name="restricting-the-clickonce-trust-prompt"></a>ClickOnce 신뢰 프롬프트를 제한합니다.  
- 신뢰 프롬프트 하도록 제한 하 솔루션은 사용자가 신뢰 여부를 결정 하기 전 까지의 알려진 id가 있는 Authenticode 인증서로 서명 되어야 합니다.  
+## <a name="restrict-the-clickonce-trust-prompt"></a>ClickOnce 신뢰 프롬프트를 제한 합니다.  
+ 솔루션 사용자 신뢰 여부를 결정 하 라는 메시지가 표시 됩니다 전에 알려진 id가 있는 Authenticode 인증서로 서명 될 수 있도록 신뢰 프롬프트를 제한 합니다.  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>레지스트리 편집기를 사용 하 여 ClickOnce 신뢰 프롬프트를 제한 하려면  
   
 1.  레지스트리 편집기를 엽니다.  
   
-    1.  클릭 **시작**, 클릭 하 고 **실행**합니다.  
+    1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
   
-    2.  에 **열려** 상자에 입력 합니다 `regedit`, 클릭 하 고 **확인**합니다.  
+    2.  에 **열기** 상자에 입력 `regedit`를 클릭 하 고 **확인**합니다.  
   
 2.  다음 레지스트리 키를 찾습니다.  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
   
-     키가 없는 경우 만듭니다.  
+     키가 없으면 만듭니다.  
   
-3.  다음 하위 키를 추가 **문자열 값**이미 없는, 다음 표에 표시 된 연결 된 값이 포함 된 경우.  
+3.  다음 하위 키를 추가 **문자열 값**이미 없는, 연결 된 값이 다음 표에 표시 된 경우.  
   
-    |문자열 값 하위 키|값|  
+    |문자열 값의 하위 키|값|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
@@ -140,7 +140,7 @@ ms.locfileid: "31561557"
   
 1.  Visual Studio에서 Visual Basic 또는 Visual C# 콘솔 응용 프로그램을 만듭니다.  
   
-2.  편집을 위해 Program.cs 또는 Program.vb 파일을 열고 다음 코드를 추가 합니다.  
+2.  엽니다는 *Program.vb* 또는 *Program.cs* 편집에 대 한 파일을 다음 코드를 추가 합니다.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -166,26 +166,26 @@ ms.locfileid: "31561557"
   
 3.  응용 프로그램을 빌드 및 실행합니다.  
   
-## <a name="disabling-the-clickonce-trust-prompt"></a>ClickOnce 신뢰 프롬프트를 사용 하지 않도록 설정  
- 최종 사용자가 보안 정책에서 아직 신뢰 되지 않은 솔루션을 설치할 수 있는 옵션이 없습니다 있도록 신뢰 프롬프트를 해제할 수 있습니다.  
+## <a name="disable-the-clickonce-trust-prompt"></a>ClickOnce 신뢰 프롬프트를 사용 하지 않도록 설정  
+ 최종 사용자가 보안 정책에서 이미 신뢰 하지 않는 솔루션을 설치할 수 있는 옵션이 없습니다 있도록 신뢰 프롬프트를 비활성화할 수 있습니다.  
   
-#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>레지스트리 편집기를 사용 하 여 ClickOnce 신뢰 프롬프트를 사용 하지 않으려면  
+#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>레지스트리 편집기를 사용 하 여 ClickOnce 신뢰 프롬프트를 사용 하지 않도록 설정  
   
 1.  레지스트리 편집기를 엽니다.  
   
-    1.  클릭 **시작**, 클릭 하 고 **실행**합니다.  
+    1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
   
-    2.  에 **열려** 상자에 입력 합니다 `regedit`, 클릭 하 고 **확인**합니다.  
+    2.  에 **열기** 상자에 입력 `regedit`를 클릭 하 고 **확인**합니다.  
   
 2.  다음 레지스트리 키를 찾습니다.  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel**  
   
-     키가 없는 경우 만듭니다.  
+     키가 없으면 만듭니다.  
   
-3.  다음 하위 키를 추가 **문자열 값**이미 없는, 다음 표에 표시 된 연결 된 값이 포함 된 경우.  
+3.  다음 하위 키를 추가 **문자열 값**이미 없는, 연결 된 값이 다음 표에 표시 된 경우.  
   
-    |문자열 값 하위 키|값|  
+    |문자열 값의 하위 키|값|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  
@@ -193,11 +193,11 @@ ms.locfileid: "31561557"
     |`LocalIntranet`|`Disabled`|  
     |`TrustedSites`|`Disabled`|  
   
-#### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>ClickOnce 신뢰 프롬프트를 프로그래밍 방식으로 사용 하지 않도록 설정 하려면  
+#### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>ClickOnce 신뢰 프롬프트를 프로그래밍 방식으로 사용 하지 않도록 설정  
   
 1.  Visual Studio에서 Visual Basic 또는 Visual C# 콘솔 응용 프로그램을 만듭니다.  
   
-2.  편집을 위해 Program.cs 또는 Program.vb 파일을 열고 다음 코드를 추가 합니다.  
+2.  엽니다는 *Program.vb* 또는 *Program.cs* 편집에 대 한 파일을 다음 코드를 추가 합니다.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -224,14 +224,14 @@ ms.locfileid: "31561557"
   
 3.  응용 프로그램을 빌드 및 실행합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 응용 프로그램의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 응용 프로그램에 대 한 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)   
  [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)   
  [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)   
- [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [방법: ClickOnce 응용 프로그램의 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [방법: 제한된 권한으로 ClickOnce 응용 프로그램 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [방법: ClickOnce 응용 프로그램에 대 한 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [방법: 제한 된 권한으로 ClickOnce 응용 프로그램 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [방법: ClickOnce 응용 프로그램에 대 한 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [방법: 응용 프로그램 및 배포 매니페스트에 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [방법: 응용 프로그램 및 배포 매니페스트 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

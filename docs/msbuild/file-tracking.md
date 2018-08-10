@@ -12,17 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d17894025800acd9c8ab0736ebe92d7f790fc7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 394b40a304d2aba3b79c5878befe33a8a1aaf8b8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567449"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945561"
 ---
 # <a name="file-tracking"></a>파일 추적
 파일 추적은 프로세스 및 해당 자식 프로세스에 Windows 파일 시스템에 대한 호출을 기록합니다. 프로그램은 아래에 나열된 함수를 호출하여 이 로깅 기능을 켜고 끄는 시점을 제어하고 사용할 로그 파일을 지정합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
  [EndTrackingContext](../msbuild/endtrackingcontext.md)  
  현재 컨텍스트의 추적을 중지합니다.  
   

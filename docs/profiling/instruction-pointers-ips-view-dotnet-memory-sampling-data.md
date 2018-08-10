@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34d06b3223b6c0bea059c333bd107068fd0adcee
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3b3d0d0334ed8073a125d8b2c435f8e5d58299d4
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844874"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>IP(명령 포인터) 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하여 수집된 .NET 메모리 할당 프로파일링 데이터에 대한 IP 뷰는 프로파일링 실행 중 메모리를 할당한 어셈블리 명령을 나열합니다. 뷰의 열은 할당의 크기와 할당 수도 나열합니다.  

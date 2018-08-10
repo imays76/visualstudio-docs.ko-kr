@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2794c88ad3a0d14705d536aa26142745d0fc0597
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ed3fd3fc60e6c263d7363047ed36b2f0d891a76
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571964"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078942"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 프로젝트 파일 스키마 참조
 이 항목에서는 사용 가능한 특성 및 자식 요소가 포함된 모든 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML 스키마 요소의 표를 제공합니다.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 프로젝트 파일을 사용하여 빌드 엔진에 빌드할 내용 및 빌드 방법을 지시합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML 스키마를 준수하는 XML 파일입니다. 이 섹션에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]의 XML 스키마 정의(.xsd) 파일에 대해 설명합니다.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 프로젝트 파일을 사용하여 빌드 엔진에 빌드할 내용 및 빌드 방법을 지시합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML 스키마를 준수하는 XML 파일입니다. 이 섹션에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]의 XML 스키마 정의(*.xsd*) 파일에 대해 설명합니다.  
   
 ## <a name="msbuild-xml-schema-elements"></a>MSBuild XML 스키마 요소  
  다음 표에는 모든 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML 스키마 요소와 해당 자식 요소 및 특성이 나와 있습니다.  
@@ -58,7 +58,7 @@ ms.locfileid: "31571964"
 |[When 요소(MSBuild)](../msbuild/when-element-msbuild.md)|선택<br /><br /> ItemGroup<br /><br /> PropertyGroup|조건|  
   
 ## <a name="see-also"></a>참고 항목  
- [요소](../msbuild/msbuild-task-reference.md)   
+ [작업 참조](../msbuild/msbuild-task-reference.md)   
  [조건](../msbuild/msbuild-conditions.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)  
  [MSBuild](../msbuild/msbuild.md)

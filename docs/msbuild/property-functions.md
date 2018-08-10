@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1665b0b5a12f8e1719116e61f13ac915083c0d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f86bc73800a8532f1fb2e2c82005439a5579162b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978221"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155518"
 ---
 # <a name="property-functions"></a>속성 함수
 
@@ -43,7 +43,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>정적 속성 함수
 
-빌드 스크립트에서 많은 시스템 클래스의 정적 속성 및 메서드에 액세스할 수 있습니다. 정적 속성값을 가져오려면 다음 구문을 사용합니다. 여기서 *Class*는 시스템 클래스의 이름이고 *Property*는 속성의 이름입니다.
+빌드 스크립트에서 많은 시스템 클래스의 정적 속성 및 메서드에 액세스할 수 있습니다. 정적 속성값을 가져오려면 다음 구문을 사용합니다. 여기서 \<Class>는 시스템 클래스의 이름이고 \<Property>는 속성의 이름입니다.
 
 ```fundamental
 $([Class]::Property)
@@ -55,7 +55,7 @@ $([Class]::Property)
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-정적 메서드를 호출하려면 다음 구문을 사용합니다. 여기서 *Class*는 시스템 클래스의 이름이고 *Method*는 메서드의 이름이며 *(Parameters)* 는 메서드의 매개 변수 목록입니다.
+정적 메서드를 호출하려면 다음 구문을 사용합니다. 여기서 \<Class>는 시스템 클래스의 이름이고 \<Method>는 메서드의 이름이며 (\<Parameters>)는 메서드의 매개 변수 목록입니다.
 
 ```fundamental
 $([Class]::Method(Parameters))
@@ -119,7 +119,7 @@ $([Class]::Method(Parameters))
 
 ### <a name="calling-instance-methods-on-static-properties"></a>정적 속성에 대한 인스턴스 메서드 호출
 
-개체 인스턴스를 반환하는 정적 속성에 액세스하는 경우 해당 개체의 인스턴스 메서드를 호출할 수 있습니다. 인스턴스 메서드를 호출하려면 다음 구문을 사용합니다. 여기서 *Class*는 시스템 클래스의 이름이고 *Property*는 속성의 이름이며 *Method*는 메서드의 이름이고, *(Parameters)* 는 메서드의 매개 변수 목록입니다.
+개체 인스턴스를 반환하는 정적 속성에 액세스하는 경우 해당 개체의 인스턴스 메서드를 호출할 수 있습니다. 인스턴스 메서드를 호출하려면 다음 구문을 사용합니다. 여기서 \<Class>는 시스템 클래스의 이름이고 \<Property>는 속성의 이름이며 \<Method>는 메서드의 이름이고, (\<Parameters>)는 메서드의 매개 변수 목록입니다.
 
 ```fundamental
 $([Class]::Property.Method(Parameters))
@@ -135,7 +135,7 @@ $([Class]::Property.Method(Parameters))
 
 ### <a name="msbuild-property-functions"></a>MSBuild 속성 함수
 
-빌드의 여러 정적 메서드에 액세스하여 산술, 비트 논리 및 이스케이프 문자 지원을 제공할 수 있습니다. 다음 구문을 사용하여 이러한 메서드에 액세스합니다. 여기서 *Method*는 메서드의 이름이고 *Parameters*는 메서드의 매개 변수 목록입니다.
+빌드의 여러 정적 메서드에 액세스하여 산술, 비트 논리 및 이스케이프 문자 지원을 제공할 수 있습니다. 다음 구문을 사용하여 이러한 메서드에 액세스합니다. 여기서 \<Method>는 메서드의 이름이고 (\<Parameters>)는 메서드의 매개 변수 목록입니다.
 
 ```fundamental
 $([MSBuild]::Method(Parameters))
@@ -179,7 +179,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo))
 
 ##  <a name="nested-property-functions"></a>중첩 속성 함수
 
-다음 예제에서 보여주는 것처럼, 보다 복잡한 함수를 형성하기 위해 속성 함수를 결합할 수 있습니다.
+다음 예제에서 보여 주는 것처럼, 보다 복잡한 함수를 형성하기 위해 속성 함수를 결합할 수 있습니다.
 
 ```fundamental
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
@@ -243,7 +243,7 @@ $([MSBuild]::GetPathOfFileAbove(dir.props))
 
 MSBuild `GetRegistryValue` 속성 함수는 레지스트리 키 값을 반환합니다. 이 함수는 두 개의 인수(키 이름 및 값 이름)를 사용하고 레지스트리의 값을 반환합니다. 값 이름을 지정하지 않은 경우 기본값이 반환됩니다.
 
-다음 예제에서는 이 함수를 사용하는 방법을 보여줍니다.
+다음 예제에서는 이 함수를 사용하는 방법을 보여 줍니다.
 
 ```fundamental
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
@@ -261,7 +261,7 @@ MSBuild `GetRegistryValueFromView` 속성 함수는 레지스트리 키, 값 및
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64비트 운영 체제는 32비트 응용 프로그램에 대한 HKEY_LOCAL_MACHINE\SOFTWARE 레지스트리 보기를 제공하는 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node 레지스트리 키를 유지 관리합니다.
+Windows 64비트 운영 체제는 32비트 응용 프로그램에 대한 **HKEY_LOCAL_MACHINE\SOFTWARE** 레지스트리 보기를 제공하는 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** 레지스트리 키를 유지 관리합니다.
 
 기본적으로 WOW64에서 실행되는 32비트 응용 프로그램은 32비트 레지스트리 보기에 액세스하고 64비트 응용 프로그램은 64비트 레지스트리 보기에 액세스합니다.
 
@@ -279,7 +279,7 @@ Windows 64비트 운영 체제는 32비트 응용 프로그램에 대한 HKEY_LO
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-는 ReferenceAssemblies 키의 SLRuntimeInstallPath 데이터를 가져오고, 먼저 64비트 레지스트리 보기에서 찾은 다음 32비트 레지스트리 보기에서 찾습니다.
+는 **ReferenceAssemblies** 키의 **SLRuntimeInstallPath** 데이터를 가져오고, 먼저 64비트 레지스트리 보기에서 찾은 다음, 32비트 레지스트리 보기에서 찾습니다.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 
@@ -315,7 +315,7 @@ Output:
 
 MSBuild `ValueOrDefault` 속성 함수는 첫 번째 인수가 null이거나 비어 있지 않은 한 첫 번째 인수를 반환합니다. 첫 번째 인수가 null이거나 비어 있으면 함수는 두 번째 인수를 반환합니다.
 
-다음 예제에서는 이 함수를 사용하는 방법을 보여줍니다.
+다음 예제에서는 이 함수를 사용하는 방법을 보여 줍니다.
 
 ```xml
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -341,4 +341,5 @@ Output:
 ## <a name="see-also"></a>참고 항목
 
 [MSBuild 속성](../msbuild/msbuild-properties.md)
+
 [MSBuild 개요](../msbuild/msbuild.md)

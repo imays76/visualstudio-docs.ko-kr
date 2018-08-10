@@ -1,5 +1,0 @@
-# [JavaScript 언어 참조](javascript-language-reference.md)
-# [JavaScript의 새로운 기능](what-s-new-in-javascript.md)
-# [Visual Studio 2017의 JavaScript](javascript-in-vs-2017.md)
-# [JavaScript 참조](reference/TOC.md)
-## [조건부 컴파일](advanced/TOC.md)

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae17a44b37536359a5f09fd75fda82ce34b50c3
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a8d6909ee08984d0bff57f993538957b8958dcf2
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237369"
 ---
 # <a name="markerserieswritealert-method"></a>marker_series::write_alert 메서드
 동시성 시각화 도우미 추적 파일에 경고를 씁니다.  
@@ -37,7 +38,7 @@ void write_alert(
  인수 목록의 개체에 해당하는 0개 이상의 서식 항목과 결합된 텍스트를 포함하는 합성 서식 문자열입니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** cvmarkersobj.h  
+ **헤더:** *cvmarkersobj.h*  
   
  **네임스페이스:** Concurrency::diagnostic  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4803500014e702bfde7b21b43536f951ed099b30
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 829407c024eb378170d033932d404d65f8e8791c
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924110"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924210"
 ---
 # <a name="get-started-with-wpf"></a>WPF 시작
 

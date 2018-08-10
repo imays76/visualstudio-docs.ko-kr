@@ -1,5 +1,5 @@
 ---
-title: '방법: 포함 목록 보안 구성 | Microsoft Docs'
+title: '방법: 포함 목록 보안 구성'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,45 +16,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8995e95ed1a35841aab945daa1ea35854946b56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e5bd1794b76485d60588b94d3ca139a314f9723
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255839"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>방법: 포함 목록 보안 구성
-  관리자 권한이 있는 경우 구성할 수 있습니다는 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 컨트롤에 최종 사용자가 신뢰 결정 포함 목록에 저장 하 여 Office 솔루션을 설치할 수 제공할지 여부를 합니다. 포함 목록에 대 한 정보를 참조 하십시오. [포함 목록을 사용 하 여 Office 솔루션 신뢰](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)합니다.  
+  관리자 권한이 있는 경우 구성할 수 있습니다는 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 컨트롤에 최종 사용자가 신뢰 결정 포함 목록에 저장 하 여 Office 솔루션을 설치 하는 옵션이 제공 됩니다 여부. 포함 목록에 대 한 자세한 내용은 [포함 목록을 사용 하 여 Office 신뢰 솔루션](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)합니다.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
  5 개의 각 영역에 있는 솔루션의 경우 다음 옵션을 설정할 수 있습니다.  
   
--   사용 하도록 설정 된 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 키와 포함 목록입니다. 모든 인증서로 서명 된 Office 솔루션에 신뢰를 부여할 최종 사용자가 허용할 수 있습니다.  
+-   사용 하도록 설정 된 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 키와 포함 목록입니다. 모든 인증서로 서명 된 Office 솔루션에 신뢰를 부여할 최종 사용자를 허용할 수 있습니다.  
   
--   제한 된 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 키와 포함 목록입니다. 게시자를 식별 하는 사용할 수 있지만 이미 신뢰할 수 있는 인증서로 서명 된 Office 솔루션을 설치 하려면 최종 사용자가 허용할 수 있습니다.  
+-   제한 된 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 키와 포함 목록입니다. 최종 사용자가 게시자를 식별 하는 사용할 수 있지만 이미 신뢰할 수 있는 인증서로 서명 된 Office 솔루션을 설치할 수 있습니다.  
   
--   사용 하지 않도록 설정 된 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 키와 포함 목록입니다. 가 명시적으로 신뢰할 수 있는 인증서로 서명 되지 않은 모든 Office 솔루션을 설치할 최종 사용자가 방지할 수 있습니다.  
+-   사용 하지 않도록 설정 된 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 키와 포함 목록입니다. 최종 사용자가 명시적으로 신뢰할 수 있는 인증서로 서명 되어 있지 않은 모든 Office 솔루션 설치를 방지할 수 있습니다.  
   
-## <a name="enabling-the-inclusion-list"></a>포함 목록을 사용 하도록 설정  
- 최종 사용자가을 설치 하 고 해당 영역에서 제공 되는 Office 솔루션을 실행 하는 옵션과 함께 표시 하려는 경우 포함 목록 영역에 대 한 사용 하도록 설정 합니다.  
+## <a name="enable-the-inclusion-list"></a>포함 목록을 사용 하도록 설정  
+ 최종 사용자가 설치 하 고 해당 영역에서 제공 되는 모든 Office 솔루션 실행 옵션을 표시 하려는 경우 영역에 대 한 포함 목록을 사용 하도록 설정 합니다.  
   
-#### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>레지스트리 편집기를 사용 하 여 포함 목록을 사용 하도록 설정 하려면  
+### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>레지스트리 편집기를 사용 하 여 포함 목록을 사용 하도록 설정 하려면  
   
 1.  레지스트리 편집기를 엽니다.  
   
-    1.  클릭 **시작**, 클릭 하 고 **실행**합니다.  
+    1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
   
-    2.  에 **열려** 상자에 입력 합니다 **regedt32.exe**, 클릭 하 고 **확인**합니다.  
+    2.  에 **열기** 상자에 입력 **regedt32.exe**를 클릭 하 고 **확인**합니다.  
   
 2.  다음 레지스트리 키를 찾습니다.  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel**  
   
-     키가 없는 경우 만듭니다.  
+     키가 없으면 만듭니다.  
   
-3.  다음 하위 키를 추가 **문자열 값**이미 없는, 관련된 값으로 하는 경우.  
+3.  다음 하위 키를 추가 **문자열 값**이미 없는, 연관 된 값을 사용 하는 경우.  
   
-    |문자열 값 하위 키|값|  
+    |문자열 값의 하위 키|값|  
     |-------------------------|-----------|  
     |**인터넷**|**AuthenticodeRequired**|  
     |**UntrustedSites**|**Disabled**|  
@@ -62,13 +63,13 @@ ms.lasthandoff: 04/16/2018
     |**LocalIntranet**|**사용**|  
     |**TrustedSites**|**사용**|  
   
-     기본적으로 **인터넷** 값 **AuthenticodeRequired** 및 **UntrustedSites** 값 **비활성화**합니다.  
+     기본적으로 **인터넷** 기본값이 **AuthenticodeRequired** 및 **UntrustedSites** 기본값이 **사용 안 함**합니다.  
   
-#### <a name="to-enable-the-inclusion-list-programmatically"></a>포함 목록을 프로그래밍 방식으로 사용 하도록 설정 하려면  
+### <a name="to-enable-the-inclusion-list-programmatically"></a>프로그래밍 방식으로 포함 목록을 사용 하도록 설정 하려면  
   
 1.  Visual Basic 또는 Visual C# 콘솔 응용 프로그램을 만듭니다.  
   
-2.  편집을 위해 Program.cs 또는 Program.vb 파일을 열고 다음 코드를 추가 합니다.  
+2.  엽니다는 *Program.vb* 또는 *Program.cs* 편집에 대 한 파일을 다음 코드를 추가 합니다.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -94,26 +95,26 @@ ms.lasthandoff: 04/16/2018
   
 3.  응용 프로그램을 빌드 및 실행합니다.  
   
-## <a name="restricting-the-inclusion-list"></a>포함 목록 제한  
- 포함 목록 하도록 제한 하 솔루션은 사용자가 신뢰 여부를 결정 하기 전 까지의 알려진 id가 있는 Authenticode 인증서로 서명 되어야 합니다.  
+## <a name="restrict-the-inclusion-list"></a>포함 목록을 제한합니다  
+ 솔루션 사용자 신뢰 여부를 결정 하 라는 메시지가 표시 됩니다 전에 알려진 id가 있는 Authenticode 인증서로 서명 될 수 있도록 포함 목록을 제한 합니다.  
   
-#### <a name="to-restrict-the-inclusion-list"></a>포함 목록을 제한 하려면  
+### <a name="to-restrict-the-inclusion-list"></a>포함 목록을 제한 하려면  
   
 1.  레지스트리 편집기를 엽니다.  
   
-    1.  클릭 **시작**, 클릭 하 고 **실행**합니다.  
+    1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
   
-    2.  에 **열려** 상자에 입력 합니다 **regedt32.exe**, 클릭 하 고 **확인**합니다.  
+    2.  에 **열기** 상자에 입력 **regedt32.exe**를 클릭 하 고 **확인**합니다.  
   
 2.  다음 레지스트리 키를 찾습니다.  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel**  
   
-     키가 없는 경우 만듭니다.  
+     키가 없으면 만듭니다.  
   
-3.  다음 하위 키를 추가 **문자열 값**이미 없는, 관련된 값으로 하는 경우.  
+3.  다음 하위 키를 추가 **문자열 값**이미 없는, 연관 된 값을 사용 하는 경우.  
   
-    |문자열 값 하위 키|값|  
+    |문자열 값의 하위 키|값|  
     |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled**|  
     |**인터넷**|**AuthenticodeRequired**|  
@@ -121,13 +122,13 @@ ms.lasthandoff: 04/16/2018
     |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
   
-     기본적으로 **인터넷** 값 **AuthenticodeRequired** 및 **UntrustedSites** 값 **비활성화**합니다.  
+     기본적으로 **인터넷** 기본값이 **AuthenticodeRequired** 및 **UntrustedSites** 기본값이 **사용 안 함**합니다.  
   
-#### <a name="to-restrict-the-inclusion-list-programmatically"></a>포함 목록을 프로그래밍 방식으로 제한 하려면  
+### <a name="to-restrict-the-inclusion-list-programmatically"></a>포함 목록을 프로그래밍 방식으로 제한 하려면  
   
 1.  Visual Basic 또는 Visual C# 콘솔 응용 프로그램을 만듭니다.  
   
-2.  편집을 위해 Program.cs 또는 Program.vb 파일을 열고 다음 코드를 추가 합니다.  
+2.  엽니다는 *Program.vb* 또는 *Program.cs* 편집에 대 한 파일을 다음 코드를 추가 합니다.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -153,24 +154,24 @@ ms.lasthandoff: 04/16/2018
   
 3.  응용 프로그램을 빌드 및 실행합니다.  
   
-## <a name="disabling-the-inclusion-list"></a>포함 목록을 사용 하지 않도록 설정  
- 최종 사용자가 알려지고 신뢰할 수 있는 인증서로 서명 된 솔루션에만 설치할 수 있도록 포함 목록을 해제할 수 있습니다.  
+## <a name="disable-the-inclusion-list"></a>포함 목록을 사용 하지 않도록 설정  
+ 최종 사용자에 게 알려지고 신뢰할 수 있는 인증서로 서명 된 솔루션에만 설치할 수 있도록 포함 목록을 비활성화할 수 있습니다.  
   
-#### <a name="to-disable-the-inclusion-list"></a>포함 목록을 사용 하지 않도록 설정 하려면  
+### <a name="to-disable-the-inclusion-list"></a>포함 목록을 사용 하지 않도록 설정  
   
 1.  레지스트리 편집기를 엽니다.  
   
-    1.  클릭 **시작**, 클릭 하 고 **실행**합니다.  
+    1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
   
-    2.  에 **열려** 상자에 입력 합니다 **regedt32.exe**, 클릭 하 고 **확인**합니다.  
+    2.  에 **열기** 상자에 입력 **regedt32.exe**를 클릭 하 고 **확인**합니다.  
   
 2.  이 존재 하지 않는 경우 다음 레지스트리 키를 만듭니다.  
   
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel**  
   
-3.  다음 하위 키를 추가 **문자열 값**이미 없는, 관련된 값으로 하는 경우.  
+3.  다음 하위 키를 추가 **문자열 값**이미 없는, 연관 된 값을 사용 하는 경우.  
   
-    |문자열 값 하위 키|값|  
+    |문자열 값의 하위 키|값|  
     |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled**|  
     |**인터넷**|**Disabled**|  
@@ -178,11 +179,11 @@ ms.lasthandoff: 04/16/2018
     |**LocalIntranet**|**Disabled**|  
     |**TrustedSites**|**Disabled**|  
   
-#### <a name="to-disable-the-inclusion-list-programmatically"></a>포함 목록을 프로그래밍 방식으로 사용 하지 않도록 설정 하려면  
+### <a name="to-disable-the-inclusion-list-programmatically"></a>포함 목록을 프로그래밍 방식으로 사용 하지 않도록 설정  
   
 1.  Visual Basic 또는 Visual C# 콘솔 응용 프로그램을 만듭니다.  
   
-2.  편집을 위해 Program.cs 또는 Program.vb 파일을 열고 다음 코드를 추가 합니다.  
+2.  엽니다는 *Program.vb* 또는 *Program.cs* 편집에 대 한 파일을 다음 코드를 추가 합니다.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -209,7 +210,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  응용 프로그램을 빌드 및 실행합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [포함 목록을 사용 하 여 Office 솔루션 신뢰](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)  
   

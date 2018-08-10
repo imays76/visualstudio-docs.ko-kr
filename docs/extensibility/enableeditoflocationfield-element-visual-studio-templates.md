@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aee6e8b763cbc46af1cf426971e68e2e22ea1e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a38f023da9f4603bee9c87cb119bd41ec7e6d98
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129794"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638019"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 요소(Visual Studio 템플릿)
-사용자가 위치 필드를 편집할 수는 경우를 지정 합니다.  
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 요소 (Visual Studio 템플릿)
+사용자 위치 필드를 편집할 수는 경우를 지정 합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -34,7 +34,7 @@ ms.locfileid: "31129794"
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
  없음  
@@ -51,14 +51,14 @@ ms.locfileid: "31129794"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 중 하나 여야 합니다 `true` 또는 `false`한다는 표시 이므로 사용자가 편집할 수 여부는 **위치** 텍스트 상자에는 **새 프로젝트** 대화 상자.  
+ 텍스트 여야 `true` 또는 `false`나타내는 여부 사용자가 편집할 수는 **위치** 텍스트 상자에는 **새 프로젝트** 대화 상자.  
   
 ## <a name="remarks"></a>설명  
- `EnableEditOfLocationField`는 선택적 요소입니다. 기본값은 `true`의 값을 편집 하면는 **위치** 텍스트 상자에 **새 프로젝트** 대화 상자.  
+ `EnableEditOfLocationField`는 선택적 요소입니다. 기본값은 `true`, 사용자가 값을 편집할 수 있는 합니다 **위치** 텍스트 상자에 **새 프로젝트** 대화 상자.  
   
- 에 **새 프로젝트** 대화 상자는 **위치** 텍스트 상자는 새 프로젝트 저장 된 디렉터리를 지정 합니다.  
+ 에 **새 프로젝트** 대화 상자에서를 **위치** 텍스트 상자가 새 프로젝트를 저장 된 디렉터리를 지정 합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 응용 프로그램입니다.  
   
 ```  
@@ -87,6 +87,6 @@ ms.locfileid: "31129794"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

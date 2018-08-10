@@ -1,5 +1,5 @@
 ---
-title: 이벤트 원본 (Visual Studio SDK) | Microsoft Docs
+title: 이벤트 소스 (Visual Studio SDK) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1dac50183422b6895f6496b7ca78d24312c33e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f196f7711db151ef2da867a11bc6a8b71394d9c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099840"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232659"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>이벤트 원본 (Visual Studio SDK)
-두 가지 이벤트 소스가: 디버그 엔진 (DE) 및 세션 (SDM) 관리자를 디버그 합니다. DE에서 전송 되는 이벤트는 NULL이 아닌 엔진 있고은 SDM에서 전송 되는 이벤트는 NULL 엔진입니다.  
+# <a name="event-sources-visual-studio-sdk"></a>이벤트 소스 (Visual Studio SDK)
+이벤트의 두 원본이: 디버그 엔진 (DE) 및 세션 디버그 관리자 (SDM). SDM에서 전송 되는 이벤트를 NULL 엔진을 설치 하는 동안에 NULL이 아닌 엔진을가 하는 독일에서 전송 되는 이벤트입니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에서는 보내는 방법을 보여 줍니다.는 **IDebugProgramCreateEvent2** 은 SDM에 DE에서 합니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 보내는 방법을 보여 줍니다 합니다 **IDebugProgramCreateEvent2** SDM DE에서.  
   
-```  
+```csharp  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
 if (FAILED(pCallback->Event(m_pEngine, NULL, m_pProgram, NULL, pProgramCreateEvent, IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS)))  
 {  
@@ -75,5 +75,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## <a name="see-also"></a>참고 항목  
- [이벤트 보내기](../../extensibility/debugger/sending-events.md)
+## <a name="see-also"></a>참고자료  
+ [이벤트 전송](../../extensibility/debugger/sending-events.md)

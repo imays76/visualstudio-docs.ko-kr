@@ -12,22 +12,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e72c5b5e43ca037a6d65e3e4980fdb0f89f000f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58aea13f99f225c01806186903b62a58362715b3
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972044"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755709"
 ---
 # <a name="sequence-activity-designer"></a>Sequence 활동 디자이너
 
 <xref:System.Activities.Statements.Sequence> 활동에는 순서대로 실행되는 정렬된 자식 활동 컬렉션이 들어 있습니다.
 
-활동 집합을 순서대로 실행하는 또 다른 방법은 <xref:System.Activities.Statements.Flowchart> 활동을 사용하는 것입니다. 사용 하는 것이 좋습니다는 [순서도](../workflow-designer/flowchart-activity-designer.md) 설치한 경우 간단한 분기 또는 diagrammatically 모델링 하려는 프로그램 흐름을 반복 합니다.
+활동 집합을 순서대로 실행하는 또 다른 방법은 <xref:System.Activities.Statements.Flowchart> 활동을 사용하는 것입니다. 사용을 고려 합니다 [순서도](../workflow-designer/flowchart-activity-designer.md) 단순 분기 또는 반복 프로그램 흐름이 있는 도식 적으로 보면 모델링 하려는 경우.
 
 ## <a name="using-the-sequence-activity-designer"></a>Sequence 활동 디자이너 사용
 
-추가 하는 <xref:System.Activities.Statements.Sequence> 활동을 끌어는 **시퀀스** 활동 디자이너를는 **도구 상자** Windows 워크플로 디자이너 화면에 놓습니다. 이 자식 활동을 추가 하려면 <xref:System.Activities.Statements.Sequence> 활동, 다른 활동을 끌어는 **도구 상자** 를 "여기에 작업 놓기" 힌트 텍스트가 표시 된 상자의 삼각형 놓습니다.
+추가할를 <xref:System.Activities.Statements.Sequence> 활동을 끌어서 합니다 **시퀀스** 활동 디자이너의는 **도구 상자** 워크플로 디자이너 화면에 놓습니다. 이 자식 활동을 추가 하려면 <xref:System.Activities.Statements.Sequence> 활동의 다른 활동을 끌어 합니다 **도구 상자** 를 "여기에 작업 놓기" 힌트 텍스트가 있는 상자에 있는 삼각형 놓습니다.
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>워크플로 디자이너의 Sequence 활동 속성
 

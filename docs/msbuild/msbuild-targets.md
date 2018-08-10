@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5b35c04d34143731ccf9fe5e8fe02f5389a2e5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570602"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176117"
 ---
 # <a name="msbuild-targets"></a>MSBuild 대상
 대상은 특정 순서로 작업을 그룹화하며 빌드 프로세스를 더 작은 단위로 팩터링될 수 있도록 합니다. 예를 들어 하나의 대상이 빌드에 대한 준비를 위해 출력 디렉터리에서 모든 파일을 삭제할 수 있는 반면 다른 대상은 프로젝트에 대한 입력을 컴파일하고 빈 디렉터리에 배치합니다. 작업에 대한 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
   
-## <a name="declaring-targets-in-the-project-file"></a>프로젝트 파일에서 대상 선언  
+## <a name="declare-targets-in-the-project-file"></a>프로젝트 파일에서 대상 선언  
  [Target](../msbuild/target-element-msbuild.md) 요소로 프로젝트 파일에 대상을 선언합니다. 예를 들어 다음 XML은 Construct라는 대상을 만든 다음 컴파일 항목 형식으로 Csc 작업을 호출합니다.  
   
 ```xml  
@@ -56,13 +56,13 @@ ms.locfileid: "31570602"
 -   대상 종속성  
   
 -   `BeforeTargets` 및 `AfterTargets`(MSBuild 4.0)  
-  
- 대상은 빌드의 후속 대상이 종속되더라도 단일 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되면 빌드 내에서 해당 대상의 역할은 완료됩니다.  
-  
- 대상 빌드 순서에 대한 세부 내용 및 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.  
-  
+
+대상은 빌드의 후속 대상이 종속되더라도 단일 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되면 빌드 내에서 해당 대상의 역할은 완료됩니다.  
+
+대상 빌드 순서에 대한 세부 내용 및 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.  
+
 ## <a name="target-batching"></a>대상 일괄 처리  
- 대상 요소에는 %(메타데이터) 형식에서 메타데이터를 지정하는 `Outputs` 특성이 있을 수 있습니다. 이 경우 MSBuild는 해당 메타데이터 값을 가진 항목을 그룹화 또는 "일괄 처리"하여 각 고유 메타데이터 값에 대해 한 번씩 대상을 실행합니다. 예를 들면 다음과 같습니다.  
+대상 요소에는 %(\<Metadata>) 형식에서 메타데이터를 지정하는 `Outputs` 특성이 있을 수 있습니다. 이 경우 MSBuild는 해당 메타데이터 값을 가진 항목을 그룹화 또는 "일괄 처리"하여 각 고유 메타데이터 값에 대해 한 번씩 대상을 실행합니다. 예를 들면 다음과 같습니다.  
   
 ```xml  
 <ItemGroup>  

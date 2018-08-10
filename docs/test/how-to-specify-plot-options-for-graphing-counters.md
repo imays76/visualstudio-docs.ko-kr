@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750924"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382323"
 ---
-# <a name="how-to-specify-plot-options-for-graphing-counters"></a>방법: 그래프 카운터에 대한 출력 옵션 지정
+# <a name="how-to-specify-plot-options-for-graphing-counters"></a>방법: 그래프 카운터에 대한 플롯 옵션 지정
 
 **출력 옵션** 대화 상자를 사용하여 그래프에 표시되는 카운터의 색과 선 스타일을 변경할 수 있습니다. 범위를 특정 값으로 고정하거나 샘플링된 데이터에 따라 범위가 자동으로 조정되도록 설정할 수 있습니다.
 
@@ -25,11 +25,11 @@ ms.locfileid: "34750924"
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>그래프의 출력 옵션을 지정하려면
 
-1.  부하 테스트 분석기에서 부하 테스트 도구 모음의 **그래프**를 선택합니다.
+1.  **부하 테스트 분석기**에서 부하 테스트 도구 모음의 **그래프**를 선택합니다.
 
-     부하 테스트 결과가 그래프 뷰에 표시됩니다.
+     부하 테스트 결과가 그래프 보기에 표시됩니다.
 
-2.  범례나 그래프에서 출력 옵션을 변경할 성능 카운터의 행 또는 현재 그리기 선을 마우스 오른쪽 단추로 클릭하고 **출력 옵션**을 선택합니다.
+2.  범례나 그래프에서 플롯 옵션을 변경할 성능 카운터의 행 또는 현재 그리기 선을 마우스 오른쪽 단추로 클릭한 다음, **플롯 옵션**을 선택합니다.
 
      **출력 옵션** 대화 상자가 표시됩니다.
 
@@ -53,4 +53,3 @@ ms.locfileid: "34750924"
 
 - [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [방법: 사용자 지정 그래프 만들기](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)

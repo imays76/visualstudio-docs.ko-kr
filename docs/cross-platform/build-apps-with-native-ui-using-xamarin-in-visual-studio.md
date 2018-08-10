@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3475bfff07b64c171b506ff1cefaee6c8e55cdda
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747432"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381083"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio에서 Xamarin을 사용하여 네이티브 UI로 앱 빌드
 
@@ -50,7 +50,7 @@ ms.locfileid: "34747432"
 >  -   네이티브 UI를 사용한 Xamarin 앱:
 >     -   [Hello, Android](/xamarin/android/get-started/hello-android/) (단일 화면을 사용한 간단한 앱)
 >     -   [Hello, Android 멀티스크린](/xamarin/android/get-started/hello-android-multiscreen/) (화면 간 탐색을 사용한 앱)
->     -   [Android 조각 연습](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (마스터/세부 정보 화면에 사용됨)
+>     -   [Android 조각 연습](/xamarin/android/platform/fragments/implementing-with-fragments/) (마스터/세부 정보 화면에 사용됨)
 >     -   [Hello, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Hello, iOS 멀티스크린](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 
@@ -110,9 +110,9 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
 
 1.  먼저 [http://openweathermap.org/appid](http://openweathermap.org/appid)에서 무료 날씨 API 키에 등록합니다. 이 API 키를 사용하면 응용 프로그램에서 모든 미국 우편 번호에 대한 날씨를 가져올 수 있습니다. (미국 이외의 우편 번호에 대해서는 작동하지 않습니다.)
 
-2.  **WeatherApp** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 클래스...** 를 선택합니다. **새 항목 추가** 대화 상자에서 파일 이름을 **Weather.cs**로 지정합니다. 이 클래스는 날씨 데이터 서비스의 데이터를 저장하는 데 사용합니다.
+2.  **WeatherApp** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 클래스...** 를 선택합니다. **새 항목 추가** 대화 상자에서 파일 이름을 *Weather.cs*로 지정합니다. 이 클래스는 날씨 데이터 서비스의 데이터를 저장하는 데 사용합니다.
 
-3.  **Weather.cs**의 전체 콘텐츠를 다음 코드로 바꿉니다.
+3.  *Weather.cs*의 전체 콘텐츠를 다음 코드로 바꿉니다.
 
     ```csharp
     namespace WeatherApp
@@ -132,9 +132,9 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
     }
     ```
 
-4.  **DataService.cs**라는 .NET Standard 프로젝트에 다른 클래스를 추가합니다. 이 클래스는 날씨 데이터 서비스의 JSON 데이터를 처리하는 데 사용합니다.
+4.  `DataService.cs`라는 .NET Standard 프로젝트에 다른 클래스를 추가합니다. 이 클래스는 날씨 데이터 서비스의 JSON 데이터를 처리하는 데 사용합니다.
 
-5.  **DataService.cs** 의 전체 내용을 다음 코드로 바꿉니다.
+5.  *DataService.cs* 의 전체 내용을 다음 코드로 바꿉니다.
 
     ```csharp
     using System.Net.Http;
@@ -163,9 +163,9 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
     }
     ```
 
-6.  세 번째 클래스를 **Core.cs**라는 .NET Standard 라이브러리에 추가합니다. 이 클래스를 사용하여 우편 번호를 사용한 쿼리 문자열을 구성하고, 날씨 데이터 서비스를 호출하고, **Weather** 클래스의 인스턴스를 채웁니다.
+6.  세 번째 클래스를 *Core.cs*라는 .NET Standard 라이브러리에 추가합니다. 이 클래스를 사용하여 우편 번호를 사용한 쿼리 문자열을 구성하고, 날씨 데이터 서비스를 호출하고, **Weather** 클래스의 인스턴스를 채웁니다.
 
-7.  **Core.cs**의 콘텐츠를 다음 코드로 바꿉니다.
+7.  *Core.cs*의 콘텐츠를 다음 코드로 바꿉니다.
 
     ```csharp
     using System;
@@ -217,7 +217,7 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
 
 8. *YOUR API KEY HERE*의 첫 번째 일치 항목을 1단계에서 얻은 API 키로 바꿉니다. 주위에 따옴표는 계속 필요합니다!
 
-9. .NET Standard 라이브러리에서 **MyClass.cs**는 사용되지 않기 때문에 삭제합니다.
+9. .NET Standard 라이브러리에서 *MyClass.cs*는 사용되지 않기 때문에 삭제합니다.
 
 10. **WeatherApp** 프로젝트를 빌드하여 코드가 올바른지 확인합니다.
 
@@ -229,10 +229,10 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>앱의 모양과 느낌 디자인
 
-1.  **솔루션 탐색기**에서 **WeatherApp.Droid > Resources > layout** 폴더를 확장하고 **Main.axml**을 엽니다. 이 명령은 비주얼 디자이너에서 파일을 엽니다. Java 관련 오류가 나타나는 경우 이 [블로그 게시물](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)을 참조하세요.
+1.  **솔루션 탐색기**에서 **WeatherApp.Droid > Resources > layout** 폴더를 확장하고 *Main.axml*을 엽니다. 이 명령은 비주얼 디자이너에서 파일을 엽니다. Java 관련 오류가 나타나는 경우 이 [블로그 게시물](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)을 참조하세요.
 
     > [!TIP]
-    >  프로젝트에는 다른 많은 파일이 있습니다. 이 문서에서는 이러한 파일에 대해 자세히 다루지 않지만 Android 프로젝트의 구조를 좀 더 자세히 알아보려면 Hello Android 문서에서 [Part 2 Deep Dive(2부 자세히 알아보기)](/xamarin/android/get-started/hello-android/hello-android-deepdive/)를 참조하세요.
+    >  프로젝트에는 다른 많은 파일이 있습니다. 이 문서에서는 이러한 파일에 대해 자세히 다루지 않지만 Android 프로젝트의 구조를 좀 더 자세히 알아보려면 Hello Android 문서에서 [2부 자세히 알아보기](/xamarin/android/get-started/hello-android/hello-android-deepdive/)를 참조하세요.
 
 2.  **보기 > 다른 창 > 도구 상자**를 선택하여 도구 상자를 엽니다.
 
@@ -256,7 +256,7 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  대부분의 속성은 선택 가능한 값이 포함된 드롭다운 목록이 없습니다.  따라서 특정 속성에 어떤 문자열 값을 사용해야 할지 추측하기가 어려울 수 있습니다. 제안 사항을 보려면 [R.attr](http://developer.android.com/reference/android/R.attr.html) 클래스 페이지에서 속성 이름을 검색해 보세요.
+    >  대부분의 속성은 선택 가능한 값이 포함된 드롭다운 목록이 없습니다.  따라서 특정 속성에 어떤 문자열 값을 사용해야 할지 추측하기가 어려울 수 있습니다. 제안 사항을 보려면 [`R.attr`](http://developer.android.com/reference/android/R.attr.html) 클래스 페이지에서 속성 이름을 검색해 보세요.
     >
     >  또한 빠른 웹 검색을 수행하면 [http://stackoverflow.com/](http://stackoverflow.com/) 에서 다른 사용자가 동일한 속성을 사용한 페이지를 종종 찾을 수 있습니다.
 
@@ -347,7 +347,7 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
         android:width="165dp" />
     ```
 
-11. Android 디자이너를 사용하여 기본 UI를 빌드할 수 있을 정도로 충분히 파악했습니다. 페이지의 Main.asxml 파일에 직접 태그를 추가하여 UI를 빌드할 수도 있습니다. 그와 같이 나머지 UI를 빌드하려면 디자이너에서 소스 뷰로 전환한 다음, 다음 태그를 `</RelativeLayout>` 끝 태그 *아래에* 붙여넣습니다. (이러한 요소는 `RelativeLayout`에 포함되지 *않으므로* 태그 아래에 있어야 합니다.)
+11. Android 디자이너를 사용하여 기본 UI를 빌드할 수 있을 정도로 충분히 파악했습니다. 페이지의 *Main.asxml* 파일에 직접 태그를 추가하여 UI를 빌드할 수도 있습니다. 그와 같이 나머지 UI를 빌드하려면 디자이너에서 소스 뷰로 전환한 다음, 다음 태그를 `</RelativeLayout>` 끝 태그 *아래에* 붙여넣습니다. (이러한 요소는 `RelativeLayout`에 포함되지 *않으므로* 태그 아래에 있어야 합니다.)
 
     ```xml
     <TextView
@@ -457,7 +457,7 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
 
 13. **MainActivity.cs**를 엽니다. 코드는 다음과 같습니다.
 
-    ```
+    ```csharp
     protected override void OnCreate (Bundle bundle)
     {
         base.OnCreate (bundle);
@@ -467,11 +467,11 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
     }
     ```
 
-14. Android 프로젝트를 빌드하여 작업을 확인합니다. 빌드 프로세스에서는 코드에서 이름으로 컨트롤을 참조할 수 있도록 컨트롤 ID가 **Resource.Designer.cs** 파일에 추가됩니다.
+14. Android 프로젝트를 빌드하여 작업을 확인합니다. 빌드 프로세스에서는 코드에서 이름으로 컨트롤을 참조할 수 있도록 컨트롤 ID가 *Resource.Designer.cs* 파일에 추가됩니다.
 
 ### <a name="consume-your-shared-code"></a>공유 코드 사용
 
-1.  코드 편집기에서 **WeatherApp** 프로젝트의 **MainActivity.cs** 파일을 열고 내용을 다음 코드로 바꿉니다. 이 코드는 공유 코드에 정의된 `GetWeather` 메서드를 호출합니다. 그런 다음 해당 메서드에서 검색된 데이터를 앱의 UI에 표시합니다.
+1.  코드 편집기에서 **WeatherApp** 프로젝트의 *MainActivity.cs* 파일을 열고 내용을 다음 코드로 바꿉니다. 이 코드는 공유 코드에 정의된 `GetWeather` 메서드를 호출합니다. 그런 다음 해당 메서드에서 검색된 데이터를 앱의 UI에 표시합니다.
 
     ```csharp
     using System;
@@ -545,7 +545,7 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
 
  Xamarin 앱에서 네이티브 UWP 사용자 인터페이스를 디자인하는 과정은 다른 네이티브 UWP 앱과 다르지 않습니다. 이러한 이유로 디자이너를 사용하는 것은 여기서 설명하지 않습니다. 자세한 논의는 [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)를 참조하세요.
 
- 대신, **MainPage.xaml**을 열고 전체 XAML 콘텐츠를 다음 태그로 바꿉니다.
+ 대신, *MainPage.xaml*을 열고 전체 XAML 콘텐츠를 다음 태그로 바꿉니다.
 
 ```xaml
 <Page
@@ -634,7 +634,7 @@ Visual Studio에는 .NET Standard 라이브러리를 공유하는 네이티브 U
 
 ### <a name="consume-your-shared-code"></a>공유 코드 사용
 
-**MainPage.xaml.cs** 코드 숨김 파일에서 단추에 대해 다음 이벤트 처리기를 추가합니다.
+*MainPage.xaml.cs* 코드 숨김 파일에서 단추에 대해 다음 이벤트 처리기를 추가합니다.
 
 ```csharp
 private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
@@ -663,7 +663,7 @@ private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
 
 2.  **솔루션 플랫폼** 드롭다운 상자에서 **x86**을 선택하고 **로컬 컴퓨터**를 선택하여 Windows 10 데스크톱에 응용 프로그램을 배포합니다.
 
-3.  F5 키를 눌러 앱을 시작합니다.
+3.  **F5** 키를 눌러 앱을 시작합니다.
 
 4.  유효한 다섯 자리 미국 우편 번호를 편집 상자에 입력하고 **Get Weather**를 누릅니다. 그러면 해당 지역의 날씨 데이터가 페이지에 표시됩니다.
 

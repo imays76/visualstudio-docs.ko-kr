@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449028"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058593"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>EventSource 이벤트를 표식으로 시각화
 Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있으며, 표식이 표시되는 방식을 제어할 수 있습니다. EventSource 표식을 보려면 [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자를 사용하여 ETW 공급자 GUID를 등록합니다. Concurrency 시각화에는 EventSource 이벤트를 [플래그 표식](../profiling/flag-markers.md), [범위 표식](../profiling/span-markers.md) 및 [메시지 표식](../profiling/message-markers.md)으로 나타내기 위한 기본 규칙이 있습니다. 이벤트에 사용자 지정 필드를 추가하여 EventSource 이벤트가 표시되는 방식을 사용자 지정할 수 있습니다. 표식에 대한 자세한 내용은 [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)을 참조하세요. EventSource 이벤트에 대한 자세한 내용은 <xref:System.Diagnostics.Tracing>를 참조하세요.  
@@ -25,9 +25,9 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
   
 ### <a name="marker-type"></a>표식 유형  
   
-1.  [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 또는 win:Stop이 포함된 이벤트는 각각 범위의 시작이나 끝으로 처리됩니다.  중첩되거나 겹치는 범위는 표시할 수 없습니다. 시작되는 스레드와 끝나는 스레드가 다른 이벤트 쌍은 표시할 수 없습니다.  
+1.  [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start 또는 win:Stop이 포함된 이벤트는 각각 범위의 시작이나 끝으로 처리됩니다.  중첩되거나 겹치는 범위는 표시할 수 없습니다. 시작되는 스레드와 끝나는 스레드가 다른 이벤트 쌍은 표시할 수 없습니다.  
   
-2.  Opcode가 win:Start도 아니고 win:Stop도 아닌 이벤트는 해당 [Level](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726)(EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR의 필드)이 win:Verbose 이상인 경우가 아니면 표식 플래그로 처리됩니다.  
+2.  Opcode가 win:Start도 아니고 win:Stop도 아닌 이벤트는 해당 [Level](/windows/desktop/WES/defining-severity-levels)(EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR의 필드)이 win:Verbose 이상인 경우가 아니면 표식 플래그로 처리됩니다.  
   
 3.  그 외의 모든 경우 이벤트는 메시지로 처리됩니다.  
   

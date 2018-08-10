@@ -5,15 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-mescription: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
+description: 관리자 포털을 사용하여 조직의 Visual Studio 구독을 관리하는 방법을 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380820"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 구독 관리자 포털 사용
 
@@ -24,7 +25,7 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 명�
 - 구독이 업그레이드되거나("버전 업그레이드" 라이선스 구입 후) 더 낮은 수준으로 갱신되는 경우 **구독자의 구독 수준을 업데이트해야 합니다**. 
 - **구독자 간에 구독을 공유하지 않습니다.** 구독 혜택(개발 및 테스트용 소프트웨어, Microsoft Azure, E-Learning 등)의 전부 또는 일부를 사용하는 모든 사용자에게 구독을 할당해야 합니다. 
 
-## <a name="adminstrator-roles"></a>관리자 역할
+## <a name="administrator-roles"></a>관리자 역할
 
 볼륨 라이선스 고객을 위한 새로운 Visual Studio 구독 관리 포털에는 서로 다른 두 가지 역할이 있습니다. 이러한 역할은 현재 VLSC의 기본/통지 연락처 담당자 역할 및 구독 관리자 역할과 같습니다. 
 
@@ -50,7 +51,7 @@ Visual Studio 구독 관리 포털에 조직을 등록할 준비가 되면 온�
 > [!NOTE]
 > 기본 또는 통지 연락처 담당자가 둘 이상의 이메일을 받은 경우 이는 둘 이상의 PCN이 있음을 의미합니다. 각 이메일에서 참조된 PCN에 대한 고유한 링크를 사용하여 프로세스를 완료해야 합니다.*
 
-새 Visual Studio 구독 관리 포털에 사용자를 추가해야 하는 경우 기본/통지 연락처 담당자가 누구인지 확실하지 않으면 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)에 로그인한 후에 이 정보를 찾을 수 있습니다. VLSC에서 기본/통지 연락처 담당자를 찾는 단계는 [기본 연락처 담당자 찾기](/find-primary-contact/) 토픽을 살펴보세요.
+새 Visual Studio 구독 관리 포털에 사용자를 추가해야 하는 경우 기본/통지 연락처 담당자가 누구인지 확실하지 않으면 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)에 로그인한 후에 이 정보를 찾을 수 있습니다. VLSC에서 기본/통지 연락처 담당자를 찾는 단계는 [기본 연락처 담당자 찾기](find-primary-contact.md) 토픽을 살펴보세요.
 이미 관리자로 설정되어 있으면 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)로 직접 이동할 수 있습니다.
 
 ### <a name="understanding-the-subscribers-page"></a>구독자 페이지 이해
@@ -67,11 +68,9 @@ Visual Studio 구독 관리 포털에 조직을 등록할 준비가 되면 온�
 - 통신에 사용되는 로그인 이외의 다른 이메일 주소에 대한 선택적 필드 
 
 이 페이지의 왼쪽에는 조직에서 각 계약에 대해 구입하고, 할당하고, 아직 사용 가능한 구독 라이선스의 수에 대한 추가 정보가 표시될 수 있습니다.
-
-   ![Visual Studio 구독 관리 포털 구독자 페이지](_img/using-admin-portal/subscribers-page.png)
+    ![Visual Studio 구독 관리 포털 구독자 페이지](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>세부 정보 페이지 이해
 확인하려는 계약에 대한 자세한 내용을 보려면 [세부 정보] 탭을 선택합니다. 계약 상태, 구입 계정, 조직 세부 정보, 기본 연락처(VLSC), 슈퍼 관리자(있는 경우) 및 기타 관련 정보가 표시됩니다.
-
-   ![Visual Studio 구독 관리 포털 세부 정보 페이지](_img/using-admin-portal/details-page.png)
+    ![Visual Studio 구독 관리 포털 세부 정보 페이지](_img/using-admin-portal/details-page.png)
 

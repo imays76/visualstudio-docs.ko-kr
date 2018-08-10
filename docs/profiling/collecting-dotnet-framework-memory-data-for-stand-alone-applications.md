@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f4d6f35b5cae65708a0be4393710ef1d5934977a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9b863fa8b3571dc0f29ebc762295a4832536046
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549066"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276844"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 .NET Framework 메모리 데이터 수집
 
@@ -25,8 +25,8 @@ ms.locfileid: "34549066"
   
 |작업|관련 콘텐츠|  
 |----------|---------------------|  
-|**응용 프로그램 시작 및 .NET 메모리 프로파일링**|-   [방법: 프로파일러를 통해 .NET Framework 응용 프로그램을 시작하여 메모리 데이터 수집](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**.NET 응용 프로그램에 프로파일러 연결**|-   [방법: .NET Framework 응용 프로그램에 프로파일러를 연결하여 메모리 데이터 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**응용 프로그램 시작 및 .NET 메모리 프로파일링**|-   [방법: 프로파일러를 통해 .NET Framework 응용 프로그램을 시작하여 메모리 데이터 수집](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
+|**.NET 응용 프로그램에 프로파일러 연결**|-   [방법: .NET Framework 응용 프로그램에 프로파일러를 연결하여 메모리 데이터 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|  
 |**응용 프로그램을 계측하여 .NET 메모리 데이터 수집**|-   [방법: 프로파일러를 사용하여 독립 실행형 .NET Framework 구성 요소 계측 및 메모리 데이터 수집](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
   
 ## <a name="related-tasks"></a>관련 작업

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 527a12591b05fcd1f20f8664132bf174ef553477
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978260"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180323"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>코딩된 UI 테스트 분석
 
@@ -65,7 +65,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 public partial class UIMap
 ```
 
-클래스 코드는 partial 클래스로 선언된 클래스에 적용되는 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성으로 시작합니다. 이 파일의 모든 클래스에도 해당 특성이 적용되는 것을 확인합니다. 이 클래스에 대한 더 많은 코드를 포함할 수 있는 다른 파일은 뒷부분에 설명하는 `UIMap.cs`입니다.
+클래스 코드는 partial 클래스로 선언된 클래스에 적용되는 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성으로 시작합니다. 이 파일의 모든 클래스에도 해당 특성이 적용되는 것을 확인합니다. 이 클래스에 대한 더 많은 코드를 포함할 수 있는 다른 파일은 뒷부분에 설명하는 *UIMap.cs*입니다.
 
 생성된 `UIMap` 클래스에는 테스트를 기록할 때 지정된 각 메서드에 대한 코드가 포함됩니다.
 
@@ -120,11 +120,11 @@ public void AddItems()
 }
 ```
 
-각 메서드 정의에 대한 요약 설명에서는 해당 메서드의 매개 변수 값에 사용할 클래스를 지시합니다. 이 경우 `UIMap.cs` 파일의 뒷부분에서 정의되고 `AddItemsParams` 속성에서 반환되는 값 형식이기도 한 `AddItemsParams` 클래스입니다.
+각 메서드 정의에 대한 요약 설명에서는 해당 메서드의 매개 변수 값에 사용할 클래스를 지시합니다. 이 경우 *UIMap.cs* 파일의 뒷부분에서 정의되고 `AddItemsParams` 속성에서 반환되는 값 형식이기도 한 `AddItemsParams` 클래스입니다.
 
  메서드 코드 맨 위에는 메서드에서 사용할 UI 개체에 대한 지역 변수를 정의하는 `Variable Declarations` 영역이 있습니다.
 
- 이 메서드에서 `UIItemWindow` 및 `UIItemEdit`는 둘 다 `UIMap.cs` 파일의 뒷부분에서 정의되는 `UICalculatorWindow` 클래스를 사용하여 액세스할 수 있는 속성입니다.
+ 이 메서드에서 `UIItemWindow` 및 `UIItemEdit`는 둘 다 *UIMap.cs* 파일의 뒷부분에서 정의되는 `UICalculatorWindow` 클래스를 사용하여 액세스할 수 있는 속성입니다.
 
  다음은 `AddItemsParams` 개체의 속성을 사용하여 키보드에서 계산기 응용 프로그램으로 텍스트를 보내는 줄입니다.
 
@@ -156,7 +156,7 @@ public virtual AddItemsParams AddItemsParams
 }
 ```
 
- 속성은 값을 반환하기 전에 `mAddItemsParams`라는 전용 지역 변수를 사용하여 보유합니다. 반환하는 개체의 속성 이름과 클래스 이름은 같습니다. 클래스는 `UIMap.cs` 파일의 뒷부분에서 정의됩니다.
+ 속성은 값을 반환하기 전에 `mAddItemsParams`라는 전용 지역 변수를 사용하여 보유합니다. 반환하는 개체의 속성 이름과 클래스 이름은 같습니다. 클래스는 *UIMap.cs* 파일의 뒷부분에서 정의됩니다.
 
  속성에서 반환되는 각 클래스는 구조가 유사합니다. 다음은 `AddItemsParams` 클래스입니다.
 
@@ -181,7 +181,7 @@ public class AddItemsParams
 }
 ```
 
-`UIMap.cs` 파일의 모든 클래스와 마찬가지로, 이 클래스는 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>로 시작합니다. 이 작은 클래스에는 앞에서 설명한 `UIMap.AddItems()` 메서드에서 사용되는 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> 메서드의 매개 변수로 사용할 문자열을 정의하는 `Fields` 영역이 있습니다. 이러한 매개 변수가 사용되는 메서드를 호출하기 전에 해당 문자열 필드의 값을 바꾸는 코드를 작성할 수 있습니다.
+*UIMap.cs* 파일의 모든 클래스와 마찬가지로, 이 클래스는 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>로 시작합니다. 이 작은 클래스에는 앞에서 설명한 `UIMap.AddItems()` 메서드에서 사용되는 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> 메서드의 매개 변수로 사용할 문자열을 정의하는 `Fields` 영역이 있습니다. 이러한 매개 변수가 사용되는 메서드를 호출하기 전에 해당 문자열 필드의 값을 바꾸는 코드를 작성할 수 있습니다.
 
 ###  <a name="UIMapCS"></a> UIMap.cs
  기본적으로 이 파일은 메서드나 속성이 없는 partial `UIMap` 클래스를 포함합니다.
@@ -264,7 +264,7 @@ public void MyTestCleanup()
 ###  <a name="UIMapuitest"></a> UIMap.uitest
  코딩된 UI 테스트 기록의 구조 및 모든 해당 부분을 나타내는 XML 파일입니다. 여기에는 작업 및 클래스와 해당 클래스의 메서드 및 속성도 포함됩니다. [UIMap.Designer.cs](#UIMapDesignerFile) 파일은 코딩된 UI 빌더에서 테스트 구조를 재현하기 위해 생성되고, 테스트 프레임워크에 대한 연결을 제공하는 코드를 포함합니다.
 
- `UIMap.uitest` 파일은 직접 편집할 수 없습니다. 그러나 코딩된 UI 빌더를 사용하여 테스트를 수정할 수 있으며, `UIMap.uitest` 파일과 [UIMap.Designer.cs](#UIMapDesignerFile) 파일이 자동으로 수정됩니다.
+ *UIMap.uitest* 파일은 직접 편집할 수 없습니다. 그러나 코딩된 UI 빌더를 사용하여 테스트를 수정할 수 있으며, *UIMap.uitest* 파일과 [*UIMap.Designer.cs*](#UIMapDesignerFile) 파일이 자동으로 수정됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -280,6 +280,6 @@ public void MyTestCleanup()
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md)
-- [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)
+- [코딩된 UI 테스트에 대한 모범 사례](../test/best-practices-for-coded-ui-tests.md)
 - [여러 UI 맵이 포함된 대형 응용 프로그램 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

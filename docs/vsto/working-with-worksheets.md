@@ -1,5 +1,5 @@
 ---
-title: 워크시트 작업 | Microsoft Docs
+title: 워크시트 작업
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7e55b281c2b6ba571e9d0b33f355b99f6b2f53f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44bc87817453e0d1d11c08b1c8baabb73f590ede
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258374"
 ---
-# <a name="working-with-worksheets"></a>워크시트 작업
+# <a name="work-with-worksheets"></a>워크시트 작업
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 및 <xref:Microsoft.Office.Interop.Excel.Worksheet> 클래스에는 워크시트가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.  
   
 |작업|프로시저|  
@@ -36,23 +37,23 @@ ms.lasthandoff: 04/16/2018
 |워크시트를 통합 문서의 새 위치로 이동합니다.|[방법: 프로그래밍 방식으로 통합 문서 내에서 워크시트 이동](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)|  
 |하나 이상 워크시트의 표시 유형을 변경합니다.|[방법: 프로그래밍 방식으로 워크시트 숨기기](../vsto/how-to-programmatically-hide-worksheets.md)|  
 |편집할 수 없도록 워크시트의 일부나 전부를 잠급니다.|[방법: 프로그래밍 방식으로 워크시트 보호](../vsto/how-to-programmatically-protect-worksheets.md)|  
-|편집할 수 있도록 워크시트에서 잠금을 제거합니다.|[방법: 프로그래밍 방식으로 워크시트의 보호 제거](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)|  
-|메모를 추가하고 삭제합니다.|[방법: 프로그래밍 방식으로 워크시트 메모 추가 및 삭제](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)|  
+|편집할 수 있도록 워크시트에서 잠금을 제거합니다.|[방법: 프로그래밍 방식으로 워크시트에서 보호 제거](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)|  
+|메모를 추가하고 삭제합니다.|[방법: 프로그래밍 방식으로 추가 하 고 워크시트 메모를 삭제 합니다.](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)|  
 |모든 메모를 표시하거나 숨깁니다.|[방법: 프로그래밍 방식으로 워크시트 메모 표시](../vsto/how-to-programmatically-display-worksheet-comments.md)|  
-|워크시트에 그룹을 만듭니다.|[방법: 프로그래밍 방식으로 워크시트에서 행 그룹화](../vsto/how-to-programmatically-group-rows-in-a-worksheet.md)|  
-|선택한 셀이 포함된 경우에만 행을 굵게 표시합니다.|[방법: 프로그래밍 방식으로 선택한 셀이 포함된 워크시트 행의 서식 변경](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)|  
+|워크시트에 그룹을 만듭니다.|[방법: 프로그래밍 방식으로 워크시트에서 행을 그룹화](../vsto/how-to-programmatically-group-rows-in-a-worksheet.md)|  
+|선택한 셀이 포함된 경우에만 행을 굵게 표시합니다.|[방법: 프로그래밍 방식으로 선택한 셀이 포함 된 워크시트 행의 서식 변경](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)|  
 |워크시트 간에 데이터 및 서식을 복사합니다.|[방법: 프로그래밍 방식으로 워크시트 간에 데이터 및 서식 복사](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)|  
 |워크시트에서 맞춤법을 검사합니다.|[방법: 프로그래밍 방식으로 워크시트에서 맞춤법 검사](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)|  
-|명명된 범위와 목록 개체의 데이터를 정렬합니다.|[방법: 워크시트에서 프로그래밍 방식으로 데이터 정렬](../vsto/how-to-programmatically-sort-data-in-worksheets.md)|  
+|명명된 범위와 목록 개체의 데이터를 정렬합니다.|[방법: 프로그래밍 방식으로 워크시트에서 데이터 정렬](../vsto/how-to-programmatically-sort-data-in-worksheets.md)|  
   
- Excel 작업 및 Excel 개체 모델에 대한 자세한 내용은 [Excel Object Model Overview](../vsto/excel-object-model-overview.md)를 참조하세요.  
+ Excel 작업 및 Excel 개체 모델에 대 한 자세한 내용은 참조 하세요. [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)합니다.  
   
  VSTO 추가 기능에서 이러한 작업을 수행하는 방법과 문서 수준 사용자 지정에서 수행하는 방법 간에 차이가 있는 경우가 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)   
- [통합 문서 사용](../vsto/working-with-workbooks.md)   
- [범위 작업](../vsto/working-with-ranges.md)   
+ [통합 문서를 사용 하 여 작동 합니다.](../vsto/working-with-workbooks.md)   
+ [범위를 사용 하 여 작동 합니다.](../vsto/working-with-ranges.md)   
  [Excel 워크시트에서 Windows Forms 컨트롤 사용](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
   
   

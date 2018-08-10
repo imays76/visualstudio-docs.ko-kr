@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 18fa71396caa0c164ef7f37183cda28c701cf4f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970052"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382505"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 샘플링 주기 지정
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 샘플 속도 지정
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
 
 **부하 테스트 편집기**를 사용하여 **속성** 창에서 실행 설정의 **샘플링 주기** 속성 값을 편집할 수 있습니다. 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 
-부하 테스트 실행 설정에서 부하 테스트 길이에 따라 적절한 **샘플링 주기** 속성 값을 선택합니다. 기본값인 5초와 같이 샘플링 주기 값이 작으면 부하 테스트 결과 데이터베이스에 더 많은 공간이 필요합니다. 부하 테스트가 긴 경우 샘플링 주기를 늘리면 수집되는 데이터 양이 줄어듭니다. 자세한 내용은 [방법: 부하 테스트 실행 설정에 대한 샘플링 주기 지정](../test/how-to-specify-the-sample-rate-for-a-load-test.md)을 참조하세요.
+부하 테스트 실행 설정에서 부하 테스트 길이에 따라 적절한 **샘플링 주기** 속성 값을 선택합니다. 기본값인 5초와 같이 샘플링 주기 값이 작으면 부하 테스트 결과 데이터베이스에 더 많은 공간이 필요합니다. 부하 테스트가 긴 경우 샘플링 주기를 늘리면 수집되는 데이터 양이 줄어듭니다. 자세한 내용은 [방법: 부하 테스트 실행 설정에 대한 샘플 속도 지정](../test/how-to-specify-the-sample-rate-for-a-load-test.md)을 참조하세요.
 
 다음은 샘플링 주기에 대한 몇 가지 지침입니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "31970052"
 
 3.  **보기** 메뉴에서 **속성 창**을 선택합니다.
 
-     부하 실행 설정의 범주와 속성이 속성 창에 표시됩니다.
+     부하 실행 설정의 범주와 속성이 **속성** 창에 표시됩니다.
 
 4.  **샘플링 주기** 속성에 부하 테스트 시 성능 카운터 데이터를 수집할 빈도를 나타내는 시간 값을 입력합니다.
 

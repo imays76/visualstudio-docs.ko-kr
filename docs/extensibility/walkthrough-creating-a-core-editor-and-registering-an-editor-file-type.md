@@ -1,5 +1,5 @@
 ---
-title: 코어 편집기를 작성 및 편집기 파일 형식 등록 | Microsoft Docs
+title: 핵심 편집기 만들기 및 등록 하는 편집기 파일 형식 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bb9b9443a60e54d875d6e3992a18ac1f0691244
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc947f68dc5c220ec0bd1ecd035e2089881a80ea
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147411"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498674"
 ---
-# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>연습: 코어 편집기 연결을 만들고 편집기 파일 형식 등록
-이 연습을 시작 하는 VSPackage를 만드는 방법을 보여 줍니다는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 코어 편집기.myext 파일 이름 확장명을 가진 파일 로드 됩니다.  
+# <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>연습: 핵심 편집기 및 등록 하는 편집기 파일 형식 만들기
+이 연습에는 시작 하는 VSPackage를 만드는 방법을 보여 줍니다 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 핵심 편집기를 사용 하 여 파일을 *.myext* 파일 이름 확장명 로드 됩니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
- 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 참조 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
+ 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
   
-## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 패키지 프로젝트 템플릿의 위치  
+## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 패키지 프로젝트 템플릿 위치  
  Visual Studio 패키지 프로젝트 템플릿은 **새 프로젝트** 대화 상자의 세 가지 서로 다른 위치에 있습니다.  
   
-1.  Visual Basic 확장성에 위치한 템플릿 프로젝트의 기본 언어는 Visual Basic입니다.  
+1.  **Visual Basic 확장성**. 프로젝트의 기본 언어는 Visual Basic입니다.  
   
-2.  C# 확장성에 위치한 템플릿 프로젝트의 기본 언어는 C#입니다.  
+2.  **C# 확장성**. 프로젝트의 기본 언어는 C#입니다.  
   
-3.  다른 프로젝트 형식 확장성에 위치한 템플릿 프로젝트의 기본 언어는 C++입니다.  
+3.  **기타 프로젝트 형식 확장성**. 프로젝트의 기본 언어는 C++입니다.  
   
 ### <a name="to-create-the-vspackage"></a>VSPackage를 만들려면  
   
--   시작 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 만듭니다는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 라는 VSPackage `MyPackage`에 설명 된 대로, [연습: 메뉴 명령을 VSPackage 만들기](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32)합니다.  
+-   시작 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 만들고는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 라는 VSPackage `MyPackage`에 설명 된 대로 [연습: VSPackage 메뉴 명령을 만들려면](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32)합니다.  
   
 ### <a name="to-add-the-editor-factory"></a>편집기 팩터리를 추가 하려면  
   
-1.  마우스 오른쪽 단추로 클릭는 **MyPackage** 프로젝트를 가리키도록 **추가** 클릭 하 고 **클래스**합니다.  
+1.  마우스 오른쪽 단추로 클릭 합니다 **MyPackage** 프로젝트를 가리키도록 **추가**를 클릭 하 고 **클래스**합니다.  
   
-2.  에 **새 항목 추가** 대화 상자의 **클래스** 서식 파일을 선택 하면 유형 `EditorFactory.cs` 이름과 클릭 한 다음에 대 한 **추가** 프로젝트에 클래스를 합니다.  
+2.  에 **새 항목 추가** 대화 상자를 **클래스** 서식 파일을 선택 하면 형식 `EditorFactory.cs` 클릭 한 다음 확인 하 고 이름에 대 한 **추가** 프로젝트에 클래스를 추가 하려면.  
   
-     EditorFactory.cs 파일을 자동으로 열 수 있습니다.  
+     합니다 *EditorFactory.cs* 파일은 자동으로 열립니다.  
   
-3.  사용자 코드에서 다음 어셈블리를 참조 합니다.  
+3.  코드에서 다음 어셈블리를 참조 합니다.  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -70,9 +70,9 @@ ms.locfileid: "31147411"
   
     ```  
   
-4.  GUID를를 추가 `EditorFactory` 추가 하 여 클래스는 `Guid` 특성 클래스 선언 바로 앞입니다.  
+4.  GUID를 추가 합니다 `EditorFactory` 클래스를 추가 하 여는 `Guid` 특성 클래스 선언 바로 앞입니다.  
   
-     Guidgen.exe 프로그램에 사용 하 여 새 GUID를 생성할 수는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령 프롬프트, 또는 클릭 하 여 **GUID 만들기** 에 **도구** 메뉴. 여기에 GUID는는 예 시일 뿐입니다. 프로젝트에서 사용 하지 마십시오.  
+     사용 하 여 새 GUID를 생성할 수 있습니다는 *guidgen.exe* 에서 프로그래밍 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령 프롬프트를 또는 클릭 하 여 **GUID 만들기** 에 **도구** 메뉴. 여기에 사용 하는 GUID은 예 시일 뿐임; 프로젝트에서 사용 하지 마세요.  
   
     ```vb  
     <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
@@ -82,7 +82,7 @@ ms.locfileid: "31147411"
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5.  클래스 정의에서 부모 패키지와 서비스 공급자를 포함 하는 두 개의 private 변수를 추가 합니다.  
+5.  클래스 정의에서 부모 패키지 및 서비스 공급자를 포함 하는 두 전용 변수를 추가 합니다.  
   
     ```vb  
     Class EditorFactory  
@@ -114,7 +114,7 @@ ms.locfileid: "31147411"
     }  
     ```  
   
-7.  수정 된 `EditorFactory` 클래스 선언에서 파생 하는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 인터페이스입니다.  
+7.  수정 된 `EditorFactory` 클래스에서 파생 하는 선언을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 인터페이스입니다.  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -125,9 +125,9 @@ ms.locfileid: "31147411"
   
     ```  
   
-8.  마우스 오른쪽 단추로 클릭 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, 클릭 **인터페이스 구현**, 클릭 하 고 **명시적으로 인터페이스 구현**합니다.  
+8.  마우스 오른쪽 단추로 클릭 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, 클릭 **인터페이스 구현**를 클릭 하 고 **명시적으로 인터페이스 구현**합니다.  
   
-     이렇게 하면 추가에서 구현 해야 하는 네 가지 메서드가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 인터페이스입니다.  
+     이 단계에서 구현 해야 하는 4 개의 메서드를 추가 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 인터페이스입니다.  
   
 9. `IVsEditorFactory.Close` 메서드의 내용을 다음 코드로 대체합니다.  
   
@@ -139,7 +139,7 @@ ms.locfileid: "31147411"
     return VSConstants.S_OK;  
     ```  
   
-10. 내용을 대체는 `IVsEditorFactory.SetSite` 다음 코드를 사용 합니다.  
+10. 내용을 바꿉니다는 `IVsEditorFactory.SetSite` 다음 코드를 사용 합니다.  
   
     ```vb  
     Me.serviceProvider = psp  
@@ -321,20 +321,20 @@ ms.locfileid: "31147411"
   
 ### <a name="to-register-the-editor-factory"></a>편집기 팩터리를 등록 하려면  
   
-1.  **솔루션 탐색기**, 문자열 테이블에서 열려는 Resources.resx 파일을 두 번 클릭 항목 **String1은** 선택 합니다.  
+1.  **솔루션 탐색기**를 두 번 클릭 합니다 **Resources.resx** 파일을 문자열 테이블에 있는 열 항목 **String1이** 선택한 합니다.  
   
-2.  식별자의 이름을 변경 `IDS_EDITORNAME` 텍스트를 **MyPackage 편집기입니다.** 이 문자열은 편집기의 이름으로 표시 됩니다.  
+2.  식별자의 이름을 변경할 `IDS_EDITORNAME` 텍스트를 **MyPackage 편집기입니다.** 이 문자열 편집기의 이름으로 나타납니다.  
   
-3.  VSPackage.resx 파일을 열고 새 추가 i n g, 이름으로 설정할 **101** 와 값을 `IDS_EDITORNAME`합니다. 방금 만든 문자열을 액세스 하는 리소스 ID와 패키지를 제공 합니다.  
+3.  열기는 **VSPackage.resx** 파일, 새 문자열을 추가, 이름으로 설정할 **101**에 값을 설정 하 고 `IDS_EDITORNAME`합니다. 이 단계는 만든 문자열에 액세스 하는 리소스 ID 사용 하 여 패키지를 제공 합니다.  
   
     > [!NOTE]
-    >  VSPackage.resx 파일에 있는 경우 다른 문자열은 `name` 특성이로 설정 **101**와 다음 단계에서 다른 고유 하 고 숫자 값을 대체 합니다.  
+    >  경우는 **VSPackage.resx** 파일에 다른 문자열입니다 합니다 `name` 특성이로 설정 **101**, 여기에 다음 단계를 다른 숫자를 고유한 값을 대체 합니다.  
   
-4.  **솔루션 탐색기**, MyPackagePackage.cs 파일을 엽니다.  
+4.  **솔루션 탐색기**오픈 합니다 **MyPackagePackage.cs** 파일입니다.  
   
-     주 패키지 파일입니다.  
+     이 파일은 주 패키지 파일입니다.  
   
-5.  다음 사용자 특성을 바로 앞에 추가 된 `Guid` 특성입니다.  
+5.  바로 앞에 다음 사용자 특성 추가 `Guid` 특성입니다.  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -348,9 +348,9 @@ ms.locfileid: "31147411"
           ".myext", 32, NameResourceID = 101)]   
     ```  
   
-     <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> 특성 확장은 로드, 편집기 팩터리가 호출을 가진 파일을 언제 든 지 수 있도록 편집기 팩터리와.myext 파일 확장명을 연결 합니다.  
+     합니다 <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> 연결 특성을 *.myext* 편집기 팩터리를 사용 하 여 확장 파일에 언제 든 지 확장 로드 되 면 편집기 팩터리의 호출 되는 파일입니다.  
   
-6.  에 비공개 변수 추가 `MyPackage` 생성자 직전 클래스 하 고 형식을 지정 `EditorFactory`합니다.  
+6.  개인 변수를 추가 합니다 `MyPackage` 생성자 직전 클래스 및 형식 지정 `EditorFactory`합니다.  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -360,7 +360,7 @@ ms.locfileid: "31147411"
     private EditorFactory editorFactory;  
     ```  
   
-7.  찾을 `Initialize` 메서드 (열어야 할 수도 있습니다는 `Package Members` 숨겨진된 영역)에 대 한 호출 뒤에 다음 코드를 추가 하 고 `base.Initialize()`합니다.  
+7.  찾을 합니다 `Initialize` 메서드 (열어야 할 수 있습니다 합니다 `Package Members` 숨겨진된 영역) 호출 후 다음 코드를 추가 하 고 `base.Initialize()`.  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -377,25 +377,25 @@ ms.locfileid: "31147411"
   
 8.  프로그램을 컴파일하고 오류가 없는지 확인합니다.  
   
-     이 단계에 대 한 실험적 레지스트리 하이브에 편집기 팩터리를 등록 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. Resource.h 파일을 재정의 하는 메시지가 클릭 **확인**합니다.  
+     이 단계에 대 한 실험적 레지스트리 하이브에 편집기 팩터리를 등록 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 재정의 하는 메시지가 합니다 *resource.h* 파일에서 클릭 **확인**합니다.  
   
-9. TextFile1.myext 라는 샘플 파일을 만듭니다.  
+9. 샘플 파일을 만듭니다 *TextFile1.myext*합니다.  
   
 10. 키를 눌러 **F5** 의 실험적 인스턴스를 열려면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  
   
-11. 실험적 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **파일** 메뉴에서 **열려** 클릭 하 고 **파일**합니다.  
+11. 실험적 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **파일** 메뉴에서 **열기** 클릭 하 고 **파일**.  
   
-12. TextFile1.myext를 찾은 다음 클릭 **열려**합니다.  
+12. 찾을 **TextFile1.myext** 을 클릭 한 다음 **오픈**합니다.  
   
-     이제 파일을 로드할 수 해야 합니다.  
+     이제 파일을 로드 해야 합니다.  
   
 ## <a name="robust-programming"></a>강력한 프로그래밍  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 코어 편집기 처리는 다양 한 범위의 텍스트 기반 파일 형식 및의 중괄호 짝 맞추기, 풍부한 구문 강조 표시 하는 등의 기능을 제공 하기 위해 언어 서비스 및 IntelliSense 단어 완성 및 멤버 완성 목록와 밀접 하 게 작동 합니다. 텍스트 기반 파일을 사용 하는 경우 특정 파일 형식을 지원 하는 사용자 지정 언어 서비스와 함께 코어 편집기를 사용할 수 있습니다.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 다양 한 구문 강조, 중괄호 일치 및 IntelliSense 단어 완성 등의 다양 한 집합을 제공 하려면 텍스트 기반 파일 형식 및 언어 서비스 긴밀 한 협력을 처리 하는 핵심 편집기 및 멤버 완성 목록입니다. 텍스트 기반 파일을 사용 하는 경우에 특정 파일 형식을 지 원하는 사용자 지정 언어 서비스와 함께 핵심 편집기를 사용할 수 있습니다.  
   
- VSPackage를 호출할 수는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 편집기 팩터리를 제공 하 여 코어 편집기입니다. 이 편집기 팩터리는 이와 연관 된 파일을 로드할 때마다 사용 됩니다. 해당 파일을 프로젝트에 포함 하는 경우 핵심 편집기 VSPackage에서 재정의 되지 않으면 호출 자동으로 됩니다. 그러나 파일이 프로젝트 외부에서 로드 되 면 다음 코어 편집기 호출 되어야 합니다 명시적으로 VSPackage에서.  
+ VSPackage를 호출할 수는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 편집기 팩터리를 제공 하 여 핵심 편집기입니다. 이 편집기 팩터리 연관 된 파일을 로드 하 든 지 사용 됩니다. 파일을 프로젝트의 일부 이면 VSPackage에 의해 재정의 되지 않는 핵심 편집기가 자동으로 호출 됩니다. 그러나 파일이 프로젝트 외부에서 로드 되 면 핵심 편집기 해야 명시적으로 호출할 VSPackage입니다.  
   
- 코어 편집기에 대 한 자세한 내용은 참조 [코어 편집기 안에](../extensibility/inside-the-core-editor.md)합니다.  
+ 핵심 편집기에 대 한 자세한 내용은 참조 하세요. [핵심 편집기 내에서](../extensibility/inside-the-core-editor.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [코어 편집기 내](../extensibility/inside-the-core-editor.md)   
- [코어 편집기 레거시 API를 사용 하 여 인스턴스화](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
+## <a name="see-also"></a>참고자료  
+ [핵심 편집기 내에서](../extensibility/inside-the-core-editor.md)   
+ [기존 API를 사용 하 여 핵심 편집기 인스턴스화합니다](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)

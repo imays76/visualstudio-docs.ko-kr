@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c717cc1bc744438afd277e5f154fdcd8852e8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e874b29db1e74c554673c21709d9d230dc19827
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568438"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178477"
 ---
-# <a name="warning-task"></a>경고 작업
+# <a name="warning-task"></a>Warning 작업
 평가된 조건부 문에 따라 빌드 중에 경고를 로깅합니다.  
   
 ## <a name="parameters"></a>매개 변수  
- 다음 표에서는 `Warning` 작업의 매개 변수를 설명합니다.  
+ 다음 표에서는 `Warning` 작업의 매개 변수에 대해 설명합니다.  
   
 |매개 변수|설명|  
 |---------------|-----------------|  
@@ -45,7 +45,7 @@ ms.locfileid: "31568438"
   
  `Warning` 작업의 `Condition` 매개 변수가 `true`로 평가되는 경우 `Text` 매개 변수 값은 로깅되고 빌드가 계속 실행됩니다. `Condition` 매개 변수가 없으면 경고 텍스트가 로깅됩니다. 로깅에 대한 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)를 참조하세요.  
   
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
 ## <a name="example"></a>예  
  다음 코드 예제에서는 명령줄에서 설정된 속성을 확인합니다. 설정된 속성이 없는 경우 프로젝트에서는 경고 이벤트를 발생시키고 `Warning` 작업의 `Text` 매개 변수 값을 기록합니다.  

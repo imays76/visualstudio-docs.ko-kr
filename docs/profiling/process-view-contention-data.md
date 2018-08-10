@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf40d5714810fd4beba9d5d75ffbffbf1895883
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257815"
 ---
 # <a name="process-view---contention-data"></a>프로세스 뷰 - 경합 데이터
 프로세스 뷰에는 프로파일링 실행 중에 실행된 프로세스와 스레드에 대한 경합 데이터가 표시됩니다.  

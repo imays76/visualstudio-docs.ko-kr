@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f63cf4517320b9acea0d289723a511dfeb9570
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4ea57256ab85694f69d970de476ada17ada1ee74
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31579201"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152489"
 ---
 # <a name="project-element-msbuild"></a>Project 요소(MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다.  
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <Project InitialTargets="TargetA;TargetB"  
          DefaultTargets="TargetC;TargetD"  
          TreatAsLocalProperty="PropertyA;PropertyB"  
@@ -52,7 +52,7 @@ ms.locfileid: "31579201"
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
 
@@ -63,7 +63,7 @@ ms.locfileid: "31579201"
 |`Sdk`|선택적 특성입니다. <br /><br /> .proj 파일에 추가되는 암시적 Import 문을 만드는 데 사용할 SDK 이름 및 선택적 버전입니다. 버전을 지정하지 않으면 MSBuild에서 기본 버전을 확인하려고 합니다.  예를 들어 `<Project Sdk="Microsoft.NET.Sdk" />` 또는 `<Project Sdk="My.Custom.Sdk/1.0.0" />`로 이름을 지정할 수 있습니다.|  
 |`ToolsVersion`|선택적 특성입니다.<br /><br /> $(MSBuildBinPath) 및 $(MSBuildToolsPath)의 값을 확인하기 위해 MSBuild가 사용하는 도구 집합의 버전입니다.|  
 |`TreatAsLocalProperty`|선택적 특성입니다.<br /><br /> 전역으로 간주하지 않을 속성 이름입니다. 이 특성을 사용하는 경우 특정 명령줄 속성이 프로젝트 또는 대상 파일과 모든 후속 가져오기에서 설정되는 속성값을 재정의할 수 없습니다. 속성이 여러 개인 경우 세미콜론(;)으로 구분합니다.<br /><br /> 일반적으로 전역 속성은 프로젝트 또는 대상 파일에서 설정되는 속성값을 재정의합니다. `TreatAsLocalProperty` 값에 속성이 나열되어 있는 경우에는 전역 속성값이 해당 파일 및 모든 후속 가져오기에서 설정되는 속성값을 재정의하지 않습니다. 자세한 내용은 [방법: 동일한 소스 파일을 다른 옵션을 사용하여 빌드](../msbuild/how-to-build-the-same-source-files-with-different-options.md)를 참조하세요. **참고:** **/property** 또는 **/p**) 스위치를 사용하여 명령 프롬프트에서 전역 속성을 설정합니다. MSBuild 작업의 `Properties` 특성을 사용하여 다중 프로젝트 빌드의 자식 프로젝트에 대해 전역 속성을 설정하거나 수정할 수도 있습니다. 자세한 내용은 [MSBuild 작업](../msbuild/msbuild-task.md)을 참조하세요.|  
-|`Xmlns`|선택적 특성입니다.<br /><br /> 지정하는 경우 `xmlns` 특성은 "http://schemas.microsoft.com/developer/msbuild/2003"의 값이 있어야 합니다.|  
+|`Xmlns`|선택적 특성입니다.<br /><br /> 지정하는 경우 `xmlns` 특성은 `http://schemas.microsoft.com/developer/msbuild/2003`의 값이 있어야 합니다.|  
 
 ### <a name="child-elements"></a>자식 요소  
 

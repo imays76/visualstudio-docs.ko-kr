@@ -13,57 +13,57 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1a34edfbc6cede24f3238068549412d630827cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131664"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512111"
 ---
-# <a name="extending-properties"></a>속성 확장
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **속성** 창은 COM 및 COM + 구성 요소에 대 한 유니버설 속성 브라우저 이며 모든 지원 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 제품입니다. **속성** 창이 연동 `ITypeInfo` 정보 및 COM + 통합된 개발 환경 (IDE)에서 다른 창에 현재 선택 된 개체에 대 한 디자인 타임 속성을 나열할 메타 데이터를 입력 합니다.  
+# <a name="extend-properties"></a>확장 속성
+합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **속성** 창은 COM 및 COM + 구성 요소에 대 한 유니버설 속성 브라우저를 모두 지원 하며 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 제품입니다. 합니다 **속성** 창을 사용 하 여 작동 `ITypeInfo` 정보 및 COM + 통합된 개발 환경 (IDE)에서 다른 창에서 현재 선택한 개체에 대 한 디자인 타임 속성을 나열 하려면 메타 데이터를 입력 합니다.  
   
- **속성** F4 키를 눌러 키보드에서 또는 선택 하 여 열 수 있는 창을 **속성 창** 에 **보기** 메뉴는 보기 및 편집 하는 데 사용 됩니다 구성에 관계 없이, 디자인 타임 속성 및 선택한 개체의 이벤트입니다. 솔루션 및 프로젝트와 관련 된 구성에 종속 된 속성에 표시 됩니다 [속성 페이지](../../extensibility/internals/property-pages.md)합니다. 자세한 내용은 [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)합니다.  
+ 합니다 **속성** 키를 눌러 열 수 있는 창 **F4** 키보드에서 선택 하거나 **속성 창** 에 **보기** 메뉴 보기 및 편집 구성에 관계 없이, 디자인 타임 속성 및 선택한 개체의 이벤트에 사용 됩니다. 솔루션 및 프로젝트와 관련 된 구성에 종속 된 속성에 표시 됩니다 [속성 페이지](../../extensibility/internals/property-pages.md)합니다. 자세한 내용은 [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)합니다.  
   
  ![속성 창 개요](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 속성 창  
   
- 이 섹션의 개별 영역에 관련 된 자세한 정보를 제공 된 **속성** 창 및 구현 해야 하는 인터페이스 및 창을 채울를 호출 합니다.  
+ 이 섹션의 개별 영역에 관련 된 자세한 정보를 제공 합니다 **속성** 창 및 구현 해야 하는 인터페이스 창을 채울를 호출 합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  [속성 창 개요](../../extensibility/internals/properties-window-overview.md)  
- 용도 설명는 **속성** 도구 창과 문서 창에 상대적인 창의 합니다.  
+ 용도 설명 합니다 **속성** 창 문서 창과 도구 창을 기준으로 합니다.  
   
  [템플릿 정책 및 속성 창](../../extensibility/internals/template-policy-and-the-properties-window.md)  
- 엔터프라이즈 템플릿 프로젝트에 해당 정책을 적용할 수 있습니다 어떻게 및 엔터프라이즈 템플릿 프로젝트에 프로젝트 포함 되어는 방법을 설명 합니다.  
+ 엔터프라이즈 템플릿 프로젝트를에 프로젝트를 포함 하는 방법 및 엔터프라이즈 템플릿 프로젝트에 해당 정책을 적용할 수 있습니다 하는 방법을 설명 합니다.  
   
  [속성 창 필드 및 인터페이스](../../extensibility/internals/properties-window-fields-and-interfaces.md)  
- 에 표시 되는 정보를 결정 하는 선택에 대 한 기준에 설명 된 **속성** 창.  
+ 선택 영역에 표시 되는 정보를 결정 하는 기준에 설명 합니다 **속성** 창입니다.  
   
  [속성 창 개요 목록](../../extensibility/internals/properties-window-object-list.md)  
- 용도 설명는 **속성** 창 개체 목록 방법,이 목록에서 다른 개체에 대 한 호출을 트리거하는 경우 환경이 정보를 받는 새 개체 선택 되어 있는지를 설명 하는 합니다.  
+ 용도 설명 합니다 **속성** 창 개체 목록, 방법,이 목록에서 다른 개체에 대 한 호출 트리거되면 환경 합리적인는 new-object가 선택 되어 있는지를 설명 하는 합니다.  
   
  [속성 창 단추](../../extensibility/internals/properties-window-buttons.md)  
- 에 표시 되는 4 개의 기본 단추의 용도 설명는 **속성** 창 도구 모음입니다.  
+ 에 표시 된 네 가지 기본 단추의 용도 설명 하는 **속성** 창 도구 모음입니다.  
   
  [속성 눈금 표시](../../extensibility/internals/properties-display-grid.md)  
- 표에서 속성 이름 및 속성 값 필드 있는 설명 합니다.  
+ 표에서 속성 이름 및 속성 값 필드 발견에 대해 설명 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  [프로젝트 형식](../../extensibility/internals/project-types.md)  
- 프로젝트에 설명으로 구성 요소는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
+ 빌딩 블록으로 프로젝트에 설명 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
  [컴파일 및 빌드](../../ide/compiling-and-building-in-visual-studio.md)  
- 사용 하는 방법에 대해 설명 된 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 지속적으로 테스트 하 고 빌드하는 동안 응용 프로그램을 디버깅 하기 위한 플랫폼입니다.  
+ 사용 하는 방법에 대해 설명 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 지속적으로 테스트 및 빌드하 응용 프로그램을 디버깅 하기 위한 플랫폼입니다.  
   
- [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)  
- 설명의 `IDispatch` 인터페이스에 처음 액세스 하 고 메서드 및 개체의 속성에 대 한 정보를 검색 하는 런타임에 바인딩된 메커니즘을 제공 하는 자동화를 지원 하도록 설계 되었습니다.  
+ [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)  
+ 에 대해 설명 합니다 `IDispatch` 먼저 automation에 액세스 하 고 메서드 및 개체의 속성에 대 한 정보를 검색 하는 런타임에 바인딩된 메커니즘을 제공을 지원 하도록 설계 된 인터페이스.  
   
- [응용 프로그램 설정 (.NET) 관리](../../ide/managing-application-settings-dotnet.md)  
- 속성 값은 응용 프로그램의 컴파일된 코드 대신 외부 구성 파일에 저장 되므로 응용 프로그램을 구성할 수 있는 응용 프로그램 설정에 대 한 개요를 제공 합니다.  
+ [응용 프로그램 설정 관리(.NET)](../../ide/managing-application-settings-dotnet.md)  
+ 속성 값은 응용 프로그램의 컴파일된 코드는 대신 외부 구성 파일에 저장 되므로 응용 프로그램을 구성할 수 있는 응용 프로그램 설정에 간략하게 설명 합니다.  
   
  [솔루션 및 프로젝트](../../ide/solutions-and-projects-in-visual-studio.md)  
- 에 대해 설명 어떻게 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 참조, 데이터 연결, 폴더 및 솔루션 및 프로젝트를 통해 개발 작업에 필요한 파일을 같은 항목을 효율적으로 관리 합니다.  
+ 에 대해 설명 하는 방법을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 참조, 데이터 연결, 폴더 및 솔루션 및 프로젝트를 통해 개발 작업에 필요한 파일을 같은 항목을 효율적으로 관리 합니다.  
   
  [Visual Studio의 다른 부분 확장](../../extensibility/extending-other-parts-of-visual-studio.md)  
- 사용 하는 방법에 설명 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 의 나머지와 일치 하는 UI 요소를 만드는 서비스 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.
+ 사용 하는 방법에 설명 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 의 나머지와 일치 하는 UI 요소를 만들려면 서비스 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.

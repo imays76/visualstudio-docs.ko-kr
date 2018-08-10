@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e22233d58cdb02194b5d5efe21bc397e9ae3a9c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568047"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154095"
 ---
-# <a name="sdk-element-msbuild"></a>SDK 요소(MSBuild)
+# <a name="sdk-element-msbuild"></a>Sdk 요소(MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 SDK를 참조합니다.  
 
  \<Project>  
@@ -35,13 +35,13 @@ ms.locfileid: "31568047"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml  
 <Sdk Name="My.Custom.Sdk"
      Version="1.0.0" />  
 ```  
 
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
 
 ### <a name="attributes"></a>특성  
 

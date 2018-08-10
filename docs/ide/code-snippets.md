@@ -19,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924474"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117214"
 ---
 # <a name="code-snippets"></a>코드 조각
 
@@ -36,9 +36,9 @@ ms.locfileid: "31924474"
 
 코드 조각은 다음과 같은 일반적인 방법으로 액세스할 수 있습니다.
 
-- 메뉴 모음에서 **편집** > **IntelliSense** > **조각 삽입...** 을 선택
+- 메뉴 모음에서 **편집** > **IntelliSense** > **조각 삽입**을 선택
 
-- 마우스 오른쪽 단추를 클릭하거나 코드 편집기의 상황에 맞는 메뉴에서 **코드 조각** > **조각 삽입...** 을 선택
+- 마우스 오른쪽 단추를 클릭하거나 코드 편집기의 컨텍스트 메뉴에서 **코드 조각** > **조각 삽입**을 선택
 
 - 키보드에서 **Ctrl**+**K**+**X**를 누름
 
@@ -74,7 +74,7 @@ if (true)
 
 조각은 작성 중인 정확한 코드에 맞게 바꿔야 하는 자리 표시자인 대체 매개 변수를 포함할 수 있습니다. 이전 예제에서 `true`는 적절한 조건으로 바꿀 대체 매개 변수입니다. 조각에서 같은 매개 변수의 모든 인스턴스에 대해 반복해서 대체를 수행합니다.
 
-예를 들어 Visual Basic에는 속성을 삽입하는 코드 조각이 있습니다. 조각을 삽입하려면 마우스 오른쪽 단추를 클릭하거나 Visual Basic 코드 파일의 상황에 맞는 메뉴에서 **조각...** > **조각 삽입**을 선택합니다. 그런 다음, **코드 패턴** > **속성, 프로시저, 이벤트** > **속성 정의**를 선택합니다.
+예를 들어 Visual Basic에는 속성을 삽입하는 코드 조각이 있습니다. 조각을 삽입하려면 마우스 오른쪽 단추를 클릭하거나 Visual Basic 코드 파일의 컨텍스트 메뉴에서 **조각** > **조각 삽입**을 선택합니다. 그런 다음, **코드 패턴** > **속성, 프로시저, 이벤트** > **속성 정의**를 선택합니다.
 
 ![속성을 정의하기 위한 코드 조각 메뉴](media/code-snippets-vb-property.png)
 

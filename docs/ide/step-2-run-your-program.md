@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0430b398fa13d565de075d1f74e856587a2762
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749286"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179062"
 ---
 # <a name="step-2-run-your-program"></a>2단계: 프로그램 실행
 새 솔루션을 만들면서 실행되는 프로그램을 실제로 빌드했습니다. 이 프로그램은 아직 많은 작업을 수행하지 않고 단순히 제목 표시줄에 **Form1**이 표시된 빈 창만 표시하지만 실행되고 있는 프로그램이 맞습니다.
@@ -55,7 +55,7 @@ ms.locfileid: "34749286"
     -   **Form1** 창의 위쪽 모퉁이에 있는 **X** 단추를 선택합니다.
 
     > [!NOTE]
-    >  IDE 안에서 프로그램을 실행할 때는 주로 프로그램에서 버그(오류)를 찾고 수정하는 작업을 수행하기 때문에 IDE 안에서 프로그램을 실행하는 것을 디버깅이라고 합니다. 이 프로그램은 크기가 작고 아직 아무것도 실제로 수행하지는 않지만 마찬가지로 실제 프로그램입니다. 다른 프로그램도 동일한 절차에 따라 실행하고 디버깅합니다. 디버깅에 대한 자세한 내용은 [디버거 기본 사항](../debugger/debugger-basics.md)을 참조하세요.
+    >  IDE 안에서 프로그램을 실행할 때는 주로 프로그램에서 버그(오류)를 찾고 수정하는 작업을 수행하기 때문에 IDE 안에서 프로그램을 실행하는 것을 디버깅이라고 합니다. 이 프로그램은 크기가 작고 아직 아무것도 실제로 수행하지는 않지만 마찬가지로 실제 프로그램입니다. 다른 프로그램도 동일한 절차에 따라 실행하고 디버깅합니다. 디버깅에 대한 자세한 내용은 [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)을 참조하세요.
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 

@@ -9,12 +9,12 @@ description: Visual Studio 구독 - 기본 연락처 찾기
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a50fef244d7b656271adf36544166c9f8256c1ae
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 69ef519d18dbfd52646f8cadb27e842a14c6135c
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862798"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325212"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Visual Studio 구독에 연결된 기본 연락처 찾기
 
@@ -22,17 +22,13 @@ ms.locfileid: "30862798"
 
 1. 기본 연락처를 찾으려면 볼륨 라이선스 서비스 센터(https://www.Microsoft.com/licensing/servicecenter)를 방문하여 **로그인**을 클릭합니다.
 
-    ![VLSC에 로그인](_img/locate-primary-contact/vlsc-sign-in.png)
-
 2. [라이선스] 탭의 드롭다운에서 **관계 요약**을 선택합니다.
-
     ![관계 선택](_img/locate-primary-contact/vlsc-relationship.png)
-
+   
 3. 적용 가능한 계약 번호를 선택합니다. 
-
     ![계약 선택](_img/locate-primary-contact/vlsc-agreement.png)
 
 4. **연락처** 탭을 선택합니다.  기본 연락처가 계약에 연결된 연락처 목록에 나열됩니다. 
-
     ![연락처 선택](_img/locate-primary-contact/vlsc-contacts.png)
- 
+
+

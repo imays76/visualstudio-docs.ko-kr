@@ -1,5 +1,5 @@
 ---
-title: '방법: ClickOnce 응용 프로그램에 대 한 보안 영역 설정 | Microsoft Docs'
+title: '방법: ClickOnce 응용 프로그램의 보안 영역 설정 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9be6bd056473a6cdf7d4bf3bef2aedafe5ae2143
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b2155cb36a2538bd93c48ccda1f2c93b0876b95
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564550"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077729"
 ---
-# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램의 보안 영역 설정
+# <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램에 대 한 보안 영역 설정
 ClickOnce 응용 프로그램에 대한 코드 액세스 보안 권한을 설정할 때에는 **프로젝트 디자이너** 의 **보안**페이지에서 기본 권한 집합으로 시작해야 합니다.  
   
  대부분의 경우, 제한된 권한 집합을 포함하는 **인터넷** 영역 또는 더 큰 권한 집합을 포함하는 **로컬 인트라넷** 영역을 선택할 수 있습니다. 응용 프로그램에 사용자 지정 권한이 필요한 경우 **사용자 지정** 보안 영역을 선택하여 설정할 수 있습니다. 사용자 지정 권한을 설정하는 방법에 대한 자세한 내용은 [방법: ClickOnce 응용 프로그램에 대한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)을 참조하세요.  
@@ -44,8 +44,7 @@ ClickOnce 응용 프로그램에 대한 코드 액세스 보안 권한을 설정
   
 5.  **설치할 응용 프로그램을 가져올 영역** 드롭다운 목록에서 보안 영역을 선택합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: ClickOnce 응용 프로그램의 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+## <a name="see-also"></a>참고자료  
+ [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 응용 프로그램의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   
- [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)
+ [ClickOnce 응용 프로그램에 대 한 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)   

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfd22d45eaffea926989dc87d8f0f587a925fe7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a01dbd11411204affa082bfa0772530662657853
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572771"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230801"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 현재 컨텍스트에 대한 로그 파일을 작성합니다.  
@@ -44,7 +44,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  추적 컨텍스트가 만들어진 경우 **SUCCEEDED** 비트가 설정된 **HRESULT**를 반환합니다.  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** FileTracker.h  
+ **헤더:** *FileTracker.h*  
   
 ## <a name="see-also"></a>참고 항목  
  [WriteAllTLogs](../msbuild/writealltlogs.md)

@@ -28,14 +28,14 @@
 #### [Power BI Pro](vs-pbi.md)
 #### [TFS를 위한 최신 요구 사항](vs-modernreq.md)
 #### [Azure Pay-As-You-Go](vs-azure-payg.md)
-### 전문적인 개발
+### [전문적인 개발](professional-development.md)
 #### [LinkedIn 학습](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Xamarin University 교육](vs-xamarin.md)
 #### [MSDN Magazine 구독](vs-msdn.md)
-### 지원 혜택
+### [지원 혜택](technical-support.md)
 #### [Azure Advisory Chat](vs-azure-advisory-chat.md)
 #### [Azure 커뮤니티](vs-azure-community.md)
 #### [기술 지원](vs-tech-support.md)
@@ -48,6 +48,7 @@
 #### [볼륨 라이선스의 경우](volume-license-admins.md)
 ##### [VLSC 관리 마이그레이션 FAQ](vlsc-admin-faq.md)
 ##### 조직 온보딩
+###### [마이그레이션 후 온보딩](post-migration-onboarding.md)
 ###### [온보딩 이메일 통신](volume-license-onboarding-email.md)
 ###### [PCN 찾기](find-pcn.md)
 ###### [기본 연락처 찾기](find-primary-contact.md)
