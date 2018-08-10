@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ba93b37ab8b483f899fef4d17db048db6e4532
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7a545a8ff4b4666db168a15e8cc75689d33e89fe
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152203"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567392"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody 요소(MSBuild)
 `UsingTask` `TaskFactory`에 전달되는 데이터가 들어 있습니다. 자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.  
@@ -34,7 +34,7 @@ ms.locfileid: "39152203"
 
 ## <a name="syntax"></a>구문  
 
-```  
+```xml
 <TaskBody Evaluate="true/false" />  
 ```  
 

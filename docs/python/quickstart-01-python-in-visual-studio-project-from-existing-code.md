@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8bd6bf071b66f3736ab5dc64920aad892fe1186b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781619"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511603"
 ---
-# <a name="quickstart-create-a-python-project-from-existing-code"></a>빠른 시작: 기존 코드에서 Python 프로젝트를 만들려면
+# <a name="quickstart-create-a-python-project-from-existing-code"></a>빠른 시작: 기존 코드에서 Python 프로젝트를 만들기
 
 [Visual Studio 2017에 Python 지원을 설치](installing-python-support-in-visual-studio.md)하면 Visual Studio 프로젝트에 기존 Python 코드를 쉽게 가져올 수 있습니다.
 
@@ -27,7 +27,7 @@ ms.locfileid: "38781619"
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. 원하는 경우 Ctrl+F5 키를 누르거나 **디버그 > 디버깅하지 않고 시작**을 선택하여 프로그램을 실행합니다.
+원하는 경우 **Ctrl**+**F5**를 누르거나 **디버그** > **디버깅하지 않고 시작**을 선택하여 프로그램을 실행합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -36,6 +36,6 @@ ms.locfileid: "38781619"
 
 ## <a name="see-also"></a>참고 항목
 
-- [기존 Python 인터프리터 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
-- [Visual Studio 2015 이하 버전에서 Python 지원 설치](installing-python-support-in-visual-studio.md)
-- [설치 위치](installing-python-support-in-visual-studio.md#install-locations).
+- [기존 Python 인터프리터 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Visual Studio 2015 및 이전 버전에서 Python 지원 설치](installing-python-support-in-visual-studio.md)
+- [설치 위치](installing-python-support-in-visual-studio.md#install-locations)

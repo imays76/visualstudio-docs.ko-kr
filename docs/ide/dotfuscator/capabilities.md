@@ -18,19 +18,19 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a087af554ab62a77562dcdf449a18e807f9d17fe
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 44c99fd2a35ffbdb1db07ed1a63613dbe79dd61e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704449"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468182"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator의 기능
 
 이 페이지는 [업그레이드][upgrades]를 통해 사용 가능한 고급 옵션에 대한 몇몇 참조와 함께 Dotfuscator CE(Dotfuscator Community Edition)의 기능에 초점을 맞춥니다.
 
 Dotfuscator는 .NET 응용 프로그램용 *빌드 후* 시스템입니다.
-Dotfuscator CE를 통해 Visual Studio 사용자는 [어셈블리를 난독 처리][obfuscation]하고 [활성 방어][checks] 및 [분석 추적][analytics]을 응용 프로그램에 삽입할 수 있습니다. Dotfuscator가 없다면 모두 원래 소스 코드에 액세스해야 하는 작업입니다.
+Dotfuscator CE를 통해 Visual Studio 사용자는 [어셈블리를 난독 처리][obfuscation]하고 [활성 방어 대책][checks]을 응용 프로그램에 삽입할 수 있습니다. Dotfuscator가 없다면 모두 원래 소스 코드에 액세스해야 하는 작업입니다.
 Dotfuscator는 계층화된 보호 전략을 생성하는 다양한 방법으로 응용 프로그램을 보호합니다.
 
 Dotfuscator CE는 [UWP(유니버설 Windows 플랫폼)][uwp] 및 [Xamarin][xamarin]을 포함한 광범위한 .NET 어셈블리 및 응용 프로그램 형식을 지원합니다.
@@ -55,17 +55,9 @@ Dotfuscator는 이 시도를 방지하기 위해 [디버그 방지 동작][debug
 
 Dotfuscator CE는 [조작 방지][tamper], [디버그 방지][debug] 및 [루팅 방지 장치][root] 대책을 포함하여 [응용 프로그램 유효성 검사 코드][checks]를 어셈블리에 삽입할 수 있습니다.
 잘못된 응용 프로그램 상태가 검색되면 유효성 검사 코드가 [응용 프로그램 코드를 호출하여 상황을 적절한 방식으로 해결][check-app]할 수 있습니다.
-또는 응용 프로그램의 잘못된 사용을 처리하는 코드를 작성하지 않으려는 경우 소스 코드를 수정할 필요 없이 Dotfuscator에서 [원격 분석 보고][check-telemetry] 및 [응답][check-action] 동작을 삽입할 수도 있습니다.
+또는 응용 프로그램의 잘못된 사용을 처리하는 코드를 작성하지 않으려는 경우 소스 코드를 수정할 필요 없이 Dotfuscator에서 [응답][check-action] 동작을 삽입할 수도 있습니다.
 
 이와 같은 방법의 대부분은 평가 및 평가판 소프트웨어를 위해 [수명 종료 기한][shelflife]을 적용하는 데 사용될 수도 있습니다.
-
-## <a name="application-monitoring"></a>응용 프로그램 모니터링
-
-응용 프로그램을 개발할 경우 베타 테스터 및 이전 버전 사용자를 포함하여 사용자의 동작 패턴을 이해하는 것이 중요합니다.
-응용 프로그램 분석을 통해 고객이 경험하는 오류를 포함하여 응용 프로그램이 얼마나 자주 사용되고 어떻게 사용되는지 추적할 수 있습니다.
-
-Dotfuscator CE는 [예외 추적][exceptions], [세션 추적][sessions] 및 [기능 추적][features] 코드를 응용 프로그램에 삽입할 수 있습니다.
-처리된 응용 프로그램은 실행 해 분석 데이터를 구성된 [PreEmptive Analytics 끝점][endpoints]에 전송합니다.
 
 ## <a name="see-also"></a>참고 항목
 
@@ -82,9 +74,6 @@ Dotfuscator CE는 [예외 추적][exceptions], [세션 추적][sessions] 및 [�
 [obfuscation]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_overview.html
 [renaming]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-[analytics]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html
-[endpoints]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html#endpoints
-
 [checks]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
 [check-app]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#app-notification
 [check-action]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#action
@@ -93,9 +82,5 @@ Dotfuscator CE는 [예외 추적][exceptions], [세션 추적][sessions] 및 [�
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
-[check-telemetry]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_checks.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/intro_capabilities.html

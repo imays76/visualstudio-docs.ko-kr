@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380865"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469115"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
@@ -210,7 +210,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ### <a name="analyze-the-test-results"></a>테스트 결과 분석
 
-테스트 결과에 실패를 설명하는 메시지가 포함됩니다. `AreEquals` 메서드의 경우 메시지에 예상 값(**Expected\<*value*>** 매개 변수)과 실제로 수신한 값(**Actual\<*value*>** 매개 변수)이 표시됩니다. 잔고가 감소할 것으로 예상했지만 실제로는 인출금만큼 증가했습니다.
+테스트 결과에 실패를 설명하는 메시지가 포함됩니다. `AreEqual` 메서드의 경우 메시지에 예상 값(**Expected\<*value*>** 매개 변수)과 실제로 수신한 값(**Actual\<*value*>** 매개 변수)이 표시됩니다. 잔액이 감소할 것으로 예상했지만 인출금만큼 증가했습니다.
 
 단위 테스트에서 버그 발견됨: *차감*해야 할 경우 잔고에 인출금이 *추가*됩니다.
 

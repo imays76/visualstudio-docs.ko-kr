@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425159"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469154"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>연습: 코드 조각 만들기
 몇 가지 단계로 코드 조각을 만들 수 있습니다. XML 파일을 만들고, 적절한 요소를 입력하고, 코드를 추가하기만 하면 됩니다. 또한 코드에 참조 및 대체 매개 변수를 추가할 수 있습니다. **코드 조각 관리자**(**도구** > **코드 조각 관리자**)에서 **가져오기** 단추를 사용하여 Visual Studio 설치에 코드 조각을 추가할 수 있습니다.
@@ -34,8 +34,7 @@ ms.locfileid: "32425159"
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets
-    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
             <Title></Title>
@@ -55,7 +54,7 @@ ms.locfileid: "32425159"
 
 2.  코드 조각의 제목을 입력합니다. **Title** 요소에 “Hello World VB”를 입력합니다.
 
-3.  **Code** 요소의 **Languages** 특성에 코드 조각의 언어를 입력합니다. 예를 들어 "VB"를 사용합니다.
+3.  **Code** 요소의 **Language** 특성에 코드 조각의 언어를 입력합니다. 예를 들어 "VB"를 사용합니다.
 
 4.  **Code** 요소 안의 **CDATA** 섹션에 일부 코드를 추가합니다. 예를 들어 다음과 같습니다.
 
@@ -191,7 +190,7 @@ ms.locfileid: "32425159"
     </Imports>
     ```
 
-4.  SQL 연결 문자열에 대한 리터럴 대체를 선언하려면 **Snippet** 요소 아래에 **Declarations** 요소를 추가하고, ID, 도구 설명 및 대체에 대한 기본값에 대한 하위 요소로 **Literal** 요소를 추가합니다.
+4.  SQL 연결 문자열에 대한 리터럴 대체를 선언하려면 **Snippet** 요소 아래에 **Declarations** 요소를 추가하고, ID, 도구 설명 및 대체의 기본값에 대한 하위 요소로 **Literal** 요소를 추가합니다.
 
     ```xml
     <Declarations>

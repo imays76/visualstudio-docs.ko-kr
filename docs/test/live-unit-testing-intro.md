@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b19eee80b276642f9d9254120466a7972f6af27
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7ad8526f8e44165dc92a914ddf15765065f42569
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379883"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586888"
 ---
 # <a name="introducing-live-unit-testing"></a>Live Unit Testing 소개
 
@@ -42,6 +42,6 @@ Live Unit Testing에 대해 자세히 알아보려면 다음을 수행합니다.
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>관련 참고 자료
-[코드 테스트 도구](https://visualstudio.microsoft.com/vs/testing-tools/)
-[코드 단위 테스트](unit-test-your-code.md)
+- [코드 테스트 도구](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [코드 단위 테스트](unit-test-your-code.md)
 

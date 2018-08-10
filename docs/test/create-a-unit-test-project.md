@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235052"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586862"
 ---
 # <a name="create-a-unit-test-project"></a>단위 테스트 프로젝트 만들기
 
@@ -25,7 +25,7 @@ ms.locfileid: "36235052"
 
 ## <a name="to-create-a-unit-test-project"></a>단위 테스트 프로젝트를 만들려면:
 
-1.  **파일** 메뉴에서 **새로 만들기** 를 선택한 후 **프로젝트**를 선택합니다(키보드 **Ctrl**+**Shift**+**N**).
+1.  **파일** 메뉴에서 **새로 만들기**를 선택한 다음, **프로젝트**를 선택합니다(키보드 **Ctrl**+**Shift**+**N**).
 
 2.  **새 프로젝트** 대화 상자에서 **설치됨** 노드를 확장하고 테스트 프로젝트에 사용하려는 언어를 선택한 후 **테스트**를 선택합니다.
 
@@ -42,16 +42,17 @@ ms.locfileid: "36235052"
 5.  테스트하려는 코드가 다른 위치에 있는 경우 참조 추가에 대한 자세한 내용은 [프로젝트의 참조 관리](../ide/managing-references-in-a-project.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
- **단위 테스트 작성**
 
  다음 섹션 중 하나를 참조하십시오.
 
--   [코드 단위 테스트](../test/unit-test-your-code.md)
+**단위 테스트 작성**
 
--   [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)
+- [코드 단위 테스트](../test/unit-test-your-code.md)
 
--   [단위 테스트에서 MSTest 프레임워크 사용](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)
 
- **단위 테스트 실행**
+- [단위 테스트에서 MSTest 프레임워크 사용](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**단위 테스트 실행**
 
 - [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)

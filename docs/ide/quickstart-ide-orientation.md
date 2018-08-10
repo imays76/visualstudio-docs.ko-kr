@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388191"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513275"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>빠른 시작: 먼저 Visual Studio IDE 살펴보기
 
@@ -104,12 +104,16 @@ Visual Studio를 사용하는 동안 문제가 발생하거나 제품을 개선�
 
 사용자 인터페이스에 익숙해지도록 Visual Studio의 몇 가지 기능에 대해 살펴보았습니다. 더 살펴보려면:
 
-- [Visual Studio IDE 개요](../ide/visual-studio-ide.md)에서 Visual Studio를 더 자세히 살펴봅니다(약간의 디버깅도 가능).
+> [!div class="nextstepaction"]
+> [빠른 시작: IDE 개인 설정](../ide/quickstart-personalize-the-ide.md)
 
-- [오류 목록](../ide/reference/error-list-window.md), [출력 창](../ide/reference/output-window.md), [속성 창](../ide/reference/properties-window.md) 및 [옵션 대화 상자](../ide/reference/options-dialog-box-visual-studio.md)와 같은 창에 대한 자세한 내용이 들어 있는 VS 설명서의 **일반 사용자 인터페이스 요소** 섹션을 살펴봅니다.
+> [!div class="nextstepaction"]
+> [빠른 시작: 편집기에서 코드 작성](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [빠른 시작: 프로젝트 및 솔루션](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>참고 항목
 
-- [빠른 시작: IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)
-- [빠른 시작: 편집기에서 코드 작성](../ide/quickstart-editor.md)
-- [빠른 시작: 프로젝트 및 솔루션](../ide/quickstart-projects-solutions.md)
+- [Visual Studio IDE 개요](../ide/visual-studio-ide.md)
+- [Visual Studio 2017의 기능](../ide/advanced-feature-overview.md)

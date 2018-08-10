@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206843"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468574"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터 분석(ASP.NET)
 
@@ -31,9 +31,6 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
 1. Visual Studio에서 **파일** > **새 프로젝트**를 선택합니다.
 
 1. **Visual C#** 에서 **웹**을 선택한 다음 가운데 창에서 **ASP.NET 웹 응용 프로그램(.NET Framework)** 을 선택합니다.
-
-    > [!NOTE]
-    > CPU 사용량 도구는 현재 ASP.NET Core에서 지원되지 않습니다.
 
 1. **MyProfilingApp_MVC** 같은 이름을 입력하고 **확인**을 클릭합니다.
 

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4bad722034657e3b58faaf665bfb0bc6ffcbe960
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058752"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513548"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조
 
@@ -41,7 +41,7 @@ ms.locfileid: "37058752"
 
 다음 목록에서는 이전 버전에서 만든 프로젝트에 대한 Visual Studio 2017의 지원에 대해 설명합니다.
 
-여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2015 버전](https://msdn.microsoft.com/library/hh266747.aspx)을 참조하고 이 페이지의 맨 아래에 “설명서 사용자 의견 제공” 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (응답을 원하는 경우 익명으로 “이 페이지가 도움이 되었나요?”라고 하기 보다는 설명서 사용자 의견을  사용합니다.)
+여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2015 버전](port-migrate-and-upgrade-visual-studio-projects.md)을 참조하고 이 페이지의 맨 아래에 “설명서 사용자 의견 제공” 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (응답을 원하는 경우 익명으로 “이 페이지가 도움이 되었나요?”라고 하기 보다는 설명서 사용자 의견을  사용합니다.)
 
 | 프로젝트 형식 | Support(지원) |
 | --- | --- |

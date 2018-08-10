@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2d7f1bbe55584bc082e8d263ae34a7049207666
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5c86c2d92088a7e34699e5c2fd15aef5de3ef06a
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382528"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586517"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio에서 Live Unit Testing 시작
 
@@ -383,5 +383,5 @@ Live Unit Testing에서 확인해야 할 주요 문제점은 불완전한 코드
 ---
 
 ## <a name="see-also"></a>참고 항목
-[Visual Studio의 Live Unit Testing](live-unit-testing.md)
-[Live Unit Testing 질문과 대답](live-unit-testing-faq.md)
+- [Visual Studio의 Live Unit Testing](live-unit-testing.md)
+- [Live Unit Testing 질문과 대답](live-unit-testing-faq.md)

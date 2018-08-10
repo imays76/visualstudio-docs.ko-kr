@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86bc73800a8532f1fb2e2c82005439a5579162b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7a238e0bb35efd3ddf984a692a032535c37dfd88
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155518"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468701"
 ---
 # <a name="property-functions"></a>속성 함수
 
@@ -144,7 +144,7 @@ $([MSBuild]::Method(Parameters))
 예를 들어, 숫자 값을 가지는 두 속성을 함께 추가하려면 다음 코드를 사용합니다.
 
 ```fundamental
-$([MSBuild]::Add($(NumberOne), $(NumberTwo))
+$([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
 다음은 MSBuild 속성 함수 목록입니다.

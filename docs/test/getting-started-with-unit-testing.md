@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177869"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469069"
 ---
 # <a name="get-started-with-unit-testing"></a>유닛 테스트 시작
 
@@ -109,9 +109,9 @@ IntelliTest를 실행하면 오류가 발생하는 테스트를 쉽게 확인하
 
 ## <a name="use-a-different-unit-test-framework"></a>다른 단위 테스트 프레임워크 사용
 
-Boost, Google, nUnit 등의 타사 테스트 프레임워크를 사용하여 Visual Studio에서 단위 테스트를 실행할 수 있습니다. Visual Studio의 Test Runner가 프레임워크와 함께 작동할 수 있도록 해당 프레임워크용 플러그인을 사용하십시오.
+Boost, Google, NUnit 등의 타사 테스트 프레임워크를 사용하여 Visual Studio에서 단위 테스트를 실행할 수 있습니다. Visual Studio의 Test Runner가 프레임워크와 함께 작동할 수 있도록 해당 프레임워크용 플러그인을 사용하십시오.
 
-다음은 타사 테스트 프레임 워크를 사용할 수 있게 설정하는 단계입니다.
+다음은 타사 테스트 프레임워크를 사용할 수 있게 설정하는 단계입니다.
 
 1. 메뉴 모음에서 **도구** > **확장 및 업데이트**를 선택합니다.
 

@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cbb43f61aab1df099efca01b56a927cf189a808e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380618"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468980"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -70,7 +70,7 @@ ms.locfileid: "39380618"
 
    ![Visual Studio 편집기의 추가 정보 영역에 대한 HTML 코드](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. “추가 정보” 텍스트를 “ **Hello World!**”로 변경합니다.
+1. “추가 정보” 텍스트를 “**Hello World!**”로 변경합니다.
 
    ![Visual Studio 편집기에서 추가 정보 영역의 기본 HTML 코드를 변경합니다.](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -107,13 +107,10 @@ ms.locfileid: "39380618"
 
 ## <a name="next-steps"></a>다음 단계
 
-자세히 알아보려면 다음 자습서를 계속 진행하세요.
+자세히 알아보려면 계속 다음 자습서를 사용하세요.
 
 > [!div class="nextstepaction"]
 > [Visual Studio에서 C# 및 ASP.NET 시작](tutorial-csharp-aspnet-core.md)
->
-> [!div class="nextstepaction"]
-> [ASP.NET Core MVC 및 Visual Studio 시작](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 
 ## <a name="see-also"></a>참고 항목
 

@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 801a0dcdca4a3a8720fdcb74a47b7be947bb4aec
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341835"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500123"
 ---
 # <a name="edit-python-code"></a>Python 코드 편집
 
 개발자는 코드 편집기에서 많은 시간을 보내므로 [Visual Studio의 Python 지원](installing-python-support-in-visual-studio.md)에서 생산성 향상에 도움이 되는 기능을 제공합니다. 이러한 기능에는 IntelliSense 구문 강조 표시, 자동 완성, 시그니처 도움말, 메서드 재정의/검색 및 탐색이 포함됩니다.
 
-또한 편집기는 Visual Studio의 **대화형** 창과 통합되므로 편집기와 창 간에 코드를 쉽게 교환할 수 있습니다. 자세한 내용은 [자습서 3단계: 대화형 REPL 창 사용](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) 및 [대화형 창 사용 - 대화형 명령에 보내기](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command)를 참조하세요.
+또한 편집기는 Visual Studio의 **대화형** 창과 통합되므로 편집기와 창 간에 코드를 쉽게 교환할 수 있습니다. 자세한 내용은 [자습서 3단계: 대화형 REPL 창 사용](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) 및 [대화형 창 사용 - 대화형 명령에 보내기](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)를 참조하세요.
 
 |   |   |
 |---|---|
@@ -145,7 +145,7 @@ commas_to_colons(1)
 ![글꼴 및 색 옵션](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> 코드 색 지정을 사용하지 않으려면 **도구** > **옵션** > **텍스트 편집기** > **Python** > **고급**으로 이동하여 **기타 옵션** >  **형식별 색 이름**의 선택을 취소합니다. [옵션 - 기타 옵션](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)을 참조하세요.
+> 코드 색 지정을 사용하지 않으려면 **도구** > **옵션** > **텍스트 편집기** > **Python** > **고급**으로 이동하여 **기타 옵션** > **형식별 색 이름**의 선택을 취소합니다. [옵션 - 기타 옵션](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)을 참조하세요.
 
 ## <a name="code-snippets"></a>코드 조각
 

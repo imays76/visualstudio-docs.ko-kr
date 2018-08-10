@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a1fb379322e44427384eb47811c585b00716f32
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952947"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513535"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251935"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498969"
 ---
 # <a name="debug-your-python-code"></a>Python 코드 디버그
 
@@ -154,8 +154,6 @@ HTML, XML 및 JSON 시각화는 구문 강조 표시 및 트리 보기가 있는
 | **인터프리터 인수** | 이러한 인수는 시작 관리자 명령줄에서 스크립트의 이름 앞에 추가됩니다. 여기서 공통 인수는 경고를 제어하기 위한 `-W ...`, 프로그램을 약간 최적화하기 위한 `-O` 및 버퍼링되지 않은 IO를 사용하기 위한 `-u`입니다. IronPython 사용자는 이 필드를 사용하여 `-X:Frames` 또는 `-X:MTA`와 같은 `-X` 옵션을 전달할 수 있습니다. |
 | **인터프리터 경로** | 현재 환경과 연결된 경로를 재정의합니다. 값은 비표준 인터프리터로 스크립트를 시작하는 데 유용할 수 있습니다. |
 | **환경 변수** | 이 여러 줄 텍스트 상자에 \<NAME>=\<VALUE> 형식의 항목을 추가합니다. 이 설정은 검색 경로 설정에 따라 `PYTHONPATH`가 설정된 후에 마지막으로 기존 전역 환경 변수의 맨 위에 적용되므로 다른 변수를 수동으로 재정의하는 데 사용될 수 있습니다. |
-
-<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>직접 실행 창 및 대화형 창
 
