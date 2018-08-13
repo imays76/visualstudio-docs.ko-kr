@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c8541fd3a6f48ca6c2a1276265b7908e3ae50634
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382014"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586481"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017을 사용한 Live Unit Testing
 
@@ -102,7 +102,7 @@ Live Unit Testing을 사용하면(다음 섹션 [Live Unit Testing 시작 일시
 
 - **옵션**을 선택하면 [Live Unit Testing 구성](#configure-live-unit-testing) 섹션에서 설명한 **옵션** 대화 상자가 열립니다.
 
-##  <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>입력할 때 편집기에서 검사 시각화 보기
+## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>입력할 때 편집기에서 검사 시각화 보기
 
 Live Unit Testing은 일단 활성화되면 Visual Studio 편집기에서 코드 줄 각각을 업데이트하여 작성한 코드에 단위 테스트가 적용되는지 및 적용된 테스트에 통과하는지 여부를 표시합니다.  다음 그림에서는 테스트를 통과하거나 실패한 코드 줄뿐만 아니라 테스트가 적용되지 않은 코드 줄을 보여 줍니다. 녹색 “✓” 표시가 있는 줄은 테스트를 통과한 경우에만 적용됩니다. 빨간색 “x”로 표시된 줄은 하나 이상의 테스트에 실패한 경우 적용됩니다. 파란색 “➖”로 표시된 줄은 테스트되지 않은 경우에 적용됩니다.
 
@@ -186,8 +186,8 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 
 ## <a name="see-also"></a>참고 항목
 
-[코드 테스트 도구](https://visualstudio.microsoft.com/vs/testing-tools/)
-[Live Unit Testing 블로그](https://go.microsoft.com/fwlink/?linkid=842514)
-[Live Unit Testing FAQ](live-unit-testing-faq.md)
-[Channel 9 비디오: Visual Studio 2017에서 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [코드 테스트 도구](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [Live Unit Testing 블로그](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Live Unit Testing FAQ](live-unit-testing-faq.md)
+- [채널 9 비디오: Visual Studio 2017의 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341871"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586582"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
@@ -46,7 +46,7 @@ Windows의 Visual Studio에서는 이 아티클에 설명된 대로 [**Python �
 
 전역 환경에 설치된 패키지는 해당 환경을 사용하는 모든 프로젝트에서 사용 가능하므로 두 프로젝트에 호환되지 않은 패키지 또는 동일한 패키지의 서로 다른 버전이 필요한 경우 충돌이 발생할 수 있습니다. 가상 환경은 전역 환경의 인터프리터 및 표준 라이브러리를 사용하지만 해당 패키지 저장소를 격리된 폴더에서 유지 관리하여 이러한 충돌을 방지합니다.
 
-Visual Studio에서는 프로젝트의 하위 폴더에 저장된 특정 프로젝트에 대한 가상 환경을 만들 수 있습니다. Visual Studio에서는 쉽게 다른 컴퓨터에서 환경을 다시 만들 수 있도록 가상 환경에서 *requirements.txt* 파일을 생성하는 명령을 제공합니다. 자세한 내용은 [가상 환경 사용](selecting-a-python-environment-for-a-project.md#using-virtual-environments)을 참조하세요.
+Visual Studio에서는 프로젝트의 하위 폴더에 저장된 특정 프로젝트에 대한 가상 환경을 만들 수 있습니다. Visual Studio에서는 쉽게 다른 컴퓨터에서 환경을 다시 만들 수 있도록 가상 환경에서 *requirements.txt* 파일을 생성하는 명령을 제공합니다. 자세한 내용은 [가상 환경 사용](selecting-a-python-environment-for-a-project.md#use-virtual-environments)을 참조하세요.
 
 ### <a name="conda-environments"></a>Conda 환경
 

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 88810c2e4958e96bd5487ce1a5b059897b725b45
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132338"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567144"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
@@ -95,7 +95,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
     프로젝트의 *package.json* 파일은 패키지 버전을 포함하여 새 패키지 정보로 업데이트됩니다.
 
-1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 package.json에 다음 코드를 붙여넣습니다. `dependencies` 섹션을 이 코드로 바꿉니다.
+1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 package.json에 다음 코드를 붙여넣습니다. 이렇게 하려면 `dependencies` 섹션을 다음 코드로 바꿉니다.
 
     ```js
     "dependencies": {
@@ -110,9 +110,11 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
     }
     ```
 
+    사용 중인 빈 템플릿 버전에 `dependencies` 섹션이 없는 경우 기존 섹션을 바꾸는 대신 추가해야 합니다.
+
 1. 프로젝트에서 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 업데이트**를 선택합니다.
 
-    패키지 설치 진행률을 확인하려면 **출력** 창을 선택합니다. 설치하는 데 몇 분 정도 걸릴 수 있으며 즉시 결과를 확인할 수는 없습니다.
+    아래쪽 창에서 **출력** 창을 선택하여 패키지 설치 진행률을 확인합니다. 설치하는 데 몇 분 정도 걸릴 수 있으며 즉시 결과를 확인할 수는 없습니다. 출력을 보려면 **출력** 창의 **출력 표시** 필드에서 **Npm**을 선택합니다.
 
     설치된 후 솔루션 탐색기에 표시된 대로 여기 npm 모듈이 있습니다.
 
@@ -144,7 +146,7 @@ Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSe
 
 ## <a name="add-app-code"></a>앱 코드 추가
 
-1. *server.js*를 열고 코드를 다음 코드로 바꿉니다.
+1. *server.js*를 열고 기존 코드를 다음 코드로 바꿉니다.
 
     ```javascript
     'use strict';

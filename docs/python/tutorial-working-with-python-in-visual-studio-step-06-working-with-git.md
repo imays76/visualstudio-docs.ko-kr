@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc9128a28ea0fd007a97b20331f15227b86d46f7
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056497"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511329"
 ---
 # <a name="step-6-work-with-git"></a>6단계: Git 작업
 
@@ -32,7 +32,7 @@ Visual Studio는 로컬 Git 리포지토리 및 원격 리포지토리(예: GitH
 
     ![추가 정보는 Visual Studio 창에서 Git 컨트롤을 마우스로 가리킬 때 표시됩니다.](media/working-with-git-01.png)
 
-1. 새 리포지토리를 만들거나 Git 컨트롤 중 하나를 선택할 때 Visual Studio는 **팀 탐색기** 창을 엽니다. (언제든지 **보기 > 팀 탐색기** 메뉴 명령을 사용하여 창을 열 수 있습니다.) 창에는 **팀 탐색기** 헤더의 드롭다운을 사용하여 전환할 수 있는 세 개의 기본 창이 있습니다. 게시 작업을 제공하는 **동기화** 창은 푸시 컨트롤(위쪽 화살표 아이콘)을 선택한 경우에도 나타납니다.
+1. 새 리포지토리를 만들거나 Git 컨트롤 중 하나를 선택할 때 Visual Studio는 **팀 탐색기** 창을 엽니다. 언제든지 **보기** > **팀 탐색기** 메뉴 명령을 사용하여 창을 열 수 있습니다. 창에는 **팀 탐색기** 헤더의 드롭다운을 사용하여 전환할 수 있는 세 개의 기본 창이 있습니다. 게시 작업을 제공하는 **동기화** 창은 **푸시** 컨트롤(위쪽 화살표 아이콘)을 선택한 경우에도 나타납니다.
 
     ![로컬 리포지토리를 만든 후 Visual Studio의 팀 탐색기](media/working-with-git-02.png)
 
@@ -48,15 +48,15 @@ Visual Studio는 로컬 Git 리포지토리 및 원격 리포지토리(예: GitH
 
     ![분기를 보여 주는 Visual Studio의 팀 탐색기](media/working-with-git-04.png)
 
-1. 리포지토리 이름(이전 이미지에서 "CosineWave")을 포함한 Git 컨트롤을 선택하면 **팀 탐색기**는 다른 리포지토리로 신속하고 완전하게 전환할 수 있는 **연결** 인터페이스를 보여줍니다.
+1. 리포지토리 이름(이전 이미지에서 **CosineWave**)을 포함한 Git 컨트롤을 선택하면 **팀 탐색기**는 다른 리포지토리로 신속하고 완전하게 전환할 수 있는 **연결** 인터페이스를 보여 줍니다.
 
-1. 로컬 저장소를 사용하는 경우 커밋된 변경 내용은 리포지토리로 직접 이동합니다. 원격 리포지토리에 연결된 경우 **팀 탐색기**에서드 롭다운 헤더를 선택하고, **동기화**를 선택하여 **동기화** 섹션으로 전환하고 거기에 표시되는 끌어오기 및 페치 명령으로 작업합니다.
+1. 로컬 저장소를 사용하는 경우 커밋된 변경 내용은 리포지토리로 직접 이동합니다. 원격 리포지토리에 연결된 경우 **팀 탐색기**에서 드롭다운 헤더를 선택하고 **동기화**를 선택하여 **동기화** 섹션으로 전환한 다음, 표시되는 **풀** 및 **페치** 명령으로 작업합니다.
 
 ## <a name="go-deeper"></a>자세히 알아보기
 
 원격 Git 리포지토리에서 프로젝트를 만드는 짧은 연습은 [빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제](quickstart-03-python-in-visual-studio-project-from-repository.md)를 참조하세요.
 
-병합 충돌을 처리하고, 끌어오기 요청으로 코드를 검토하고, 기준 주소를 다시 지정하고, 분기 간에 cherry-pick하는 작업을 비롯하여 훨씬 더 포괄적인 자습서는 [Git 및 VSTS 시작](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)을 참조하세요.
+병합 충돌 처리, 끌어오기 요청으로 코드 검토, 기준 주소 다시 지정, 분기 간에 변경 내용 cherry-pick 등을 포함하는 훨씬 더 포괄적인 자습서는 [Git 및 VSTS 시작](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)을 참조하세요.
 
 ## <a name="tutorial-review"></a>자습서 검토
 
@@ -64,12 +64,12 @@ Visual Studio의 Python에 대한 이 자습서 완료를 축하합니다. 이 �
 
 - 프로젝트를 만들고 프로젝트의 내용을 봅니다.
 - 코드 편집기를 사용하고 프로젝트를 실행합니다.
-- 대화형 창을 사용하여 새 코드를 개발하고 해당 코드를 편집기에 쉽게 복사합니다.
+- **대화형** 창을 사용하여 새 코드를 개발하고 해당 코드를 편집기에 쉽게 복사합니다.
 - Visual Studio 디버거에서 완성된 프로그램을 실행합니다.
-- 패키지 설치 및 Python 환경 관리
-- Git 리포지토리에서 코드 작업
+- 패키지를 설치하고 Python 환경을 관리합니다.
+- Git 리포지토리에서 코드로 작업합니다.
 
-여기에서 다음과 같은 아티클을 포함하여 개념 및 방법 가이드를 살펴봅니다.
+여기에서 다음 문서를 포함하여 개념 및 방법 가이드를 살펴봅니다.
 
 - [Python용 C++ 확장 만들기](working-with-c-cpp-python-in-visual-studio.md)
 - [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)

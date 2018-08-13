@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341885"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511654"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>동적 기호 실행을 사용하여 입력 생성
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>동적 기호 실행을 사용하여 입력 생성
 
 IntelliTest는 프로그램에서 분기 조건을 분석하여 [매개 변수가 있는 단위 테스트](test-generation.md#parameterized-unit-testing)에 대한 입력을 생성합니다. 테스트 입력은 입력이 프로그램의 새 분기 동작을 트리거할 수 있는지에 따라 선택됩니다. 분석은 증분 프로세스입니다. 정식 테스트 입력 매개 변수 **I**에 대해 조건자 **q: I -> {true, false}** 를 구체화합니다. **q**는 IntelliTest가 이미 관찰한 동작 집합을 나타냅니다. 처음에는 아무것도 관찰되지 않았으므로 **q := false**입니다.
 

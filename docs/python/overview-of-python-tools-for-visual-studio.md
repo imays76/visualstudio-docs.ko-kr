@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175368"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468779"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
 Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 운영 체제에서 무료로 사용할 수 있으며, 유용한 개발자 커뮤니티와 다양한 무료 라이브러리에서 지원되며 널리 사용되는 프로그래밍 언어입니다. Python은 웹 응용 프로그램, 웹 서비스, 데스크톱 앱, 스크립팅 및 과학적 컴퓨팅 등 모든 방식의 개발을 지원하며 대학, 과학자, 아마추어 개발자 및 전문 개발자 등 많은 분야에 사용됩니다. [python.org](https://www.python.org) 및 [Python for Beginners](https://www.python.org/about/gettingstarted/)(초보자를 위한 Python)에서 이 언어에 대해 자세히 알아볼 수 있습니다.
 
-Visual Studio는 Windows에서 강력한 Python IDE입니다. Visual Studio는 Python 개발 및 데이터 과학 워크로드(Visual Studio 2017)와 무료 Visual Studio용 Python 도구 확장(Visual Studio 2015 및 이전 버전)을 통해 Python 언어에 대한 [오픈 소스](https://github.com/Microsoft/ptvs) 지원을 제공합니다.
+Visual Studio는 Windows에서 강력한 Python IDE입니다. Visual Studio는 **Python 개발** 및 **데이터 과학** 워크로드(Visual Studio 2017)와 무료 Visual Studio용 Python 도구 확장(Visual Studio 2015 및 이전 버전)을 통해 Python 언어에 대한 [오픈 소스](https://github.com/Microsoft/ptvs) 지원을 제공합니다.
 
 Python은 현재 Mac용 Visual Studio에서 지원되지 않지만 Visual Studio Code를 통해 Mac 및 Linux에서 사용할 수 있습니다([질문 및 답변](#questions-and-answers) 참조).
 
@@ -31,7 +31,7 @@ Python은 현재 Mac용 Visual Studio에서 지원되지 않지만 Visual Studio
 - [설치 지침](installing-python-support-in-visual-studio.md)에 따라 Python 워크로드를 설치합니다.
 - 이 문서의 섹션을 통해 Visual Studio의 Python 기능을 숙지합니다. Visual Studio의 Python 소개 [비디오 시리즈(Microsoft Virtual Academy)를 시청](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)할 수 있습니다(총 22분).
 - 빠른 시작을 하나 이상 수행하여 프로젝트를 만듭니다. 확실하지 않은 경우 [Flask를 사용하여 웹앱 만들기](../ide/quickstart-python.md?context=visualstudio/python/default)부터 시작합니다.
-- 전체 종단 간 환경을 위한 [Visual Studio에서 Python 사용](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 자습서를 수행합니다.
+- 전체 종단 간 환경을 위한 [Visual Studio에서 Python 작업](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 자습서를 수행합니다.
 
 ## <a name="support-for-multiple-interpreters"></a>다중 인터프리터 지원.
 
@@ -47,13 +47,13 @@ Visual Studio의 **Python 환경** 창(넓게 확장된 뷰에서 아래에 표�
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>다양한 편집 기능, IntelliSense 및 코드 이해
 
-Visual Studio에서는 구문 색 지정, 모든 코드 및 라이브러리에 대한 자동 완성 기능, 코드 서식 지정, 서명 도움말, 리팩터링, linting 및 형식 힌트를 포함하는 고급 Python 편집기를 제공합니다. Visual Studio에서 클래스 뷰, 정의로 이동, 모든 참조 찾기 및 코드 조각 등의 고유한 기능을 제공합니다. [대화형 창](#interactive-window)과 직접 통합하여 파일에 이미 저장되어 있는 Python 코드를 신속히 개발할 수 있습니다.
+Visual Studio에서는 구문 색 지정, 모든 코드 및 라이브러리에 대한 자동 완성 기능, 코드 서식 지정, 서명 도움말, 리팩터링, linting 및 형식 힌트를 포함하는 고급 Python 편집기를 제공합니다. Visual Studio에서 클래스 뷰, **정의로 이동**, **모든 참조 찾기**, 코드 조각 등의 고유한 기능도 제공합니다. [대화형 창](#interactive-window)과 직접 통합되어 파일에 이미 저장되어 있는 Python 코드를 신속하게 개발할 수 있습니다.
 
 ![Visual Studio에서 Python 코드에 대한 코드 완성](media/code-editing-completions-simple.png)
 
 추가 정보
 
-- 동영상(2분 30초): [Python 코드 편집](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- 비디오(2분 30초): [Python 코드 편집](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Docs: [Python 코드 편집](editing-python-code-in-visual-studio.md)
 - Docs: [코드 형식](formatting-python-code.md)
 - Docs: [코드 리팩터링](refactoring-python-code.md)
@@ -66,13 +66,13 @@ Visual Studio에 알려진 모든 Python 환경의 경우 별도 명령 프롬�
 
 ![Visual Studio의 Python 대화형 창](media/interactive-window.png)
 
-또한 Visual Studio는 Python 코드 편집기와 대화형 창 사이의 긴밀한 통합을 제공합니다. **Ctrl + Enter** 키보드 바로 가기 키는 간편하게 편집기에서 현재 코드 줄(또는 코드 블록)을 대화형 창으로 보낸 다음, 다음 줄(또는 블록)로 이동합니다. **Ctrl + Enter** 키를 사용하면 디버거를 실행할 필요 없이 쉽게 한 단계씩 코드를 실행할 수 있습니다. 또한 같은 키 입력으로 대화형 창에 선택한 코드를 보내고 쉽게 대화형 창에서 편집기에 코드를 붙여 넣을 수 있습니다. 이러한 기능을 함께 사용하면 대화형 창에서 코드의 세그먼트에 대한 세부 정보를 파악하고 편집기에서 결과를 파일에 쉽게 저장할 수 있습니다.
+또한 Visual Studio는 Python 코드 편집기와 **대화형** 창 간의 긴밀한 통합을 제공합니다. **Ctrl**+**Enter** 바로 가기 키는 간편하게 편집기에서 현재 코드 줄(또는 코드 블록)을 **대화형** 창으로 보낸 후, 다음 줄(또는 블록)로 이동합니다. **Ctrl**+**Enter**를 사용하면 디버거를 실행할 필요 없이 쉽게 한 단계씩 코드를 실행할 수 있습니다. 또한 동일한 키 입력으로 선택한 코드를 **대화형** 창으로 보내고, **대화형** 창에서 편집기에 코드를 쉽게 붙여넣을 수 있습니다. 이러한 기능을 함께 사용하면 **대화형** 창에서 코드의 세그먼트에 대한 세부 정보를 파악하고 편집기에서 결과를 파일에 쉽게 저장할 수 있습니다.
 
-또한 Visual Studio는 인라인 플롯, .NET 및 WPF(Windows Presentation Foundation)을 포함한 REPL의 IPython/Jupyter를 지원합니다.
+또한 Visual Studio는 인라인 플롯, .NET 및 WPF(Windows Presentation Foundation)를 포함하여 REPL에서 IPython/Jupyter를 지원합니다.
 
 추가 정보
 
-- 동영상(2 분 22초): [Python 대화형 창](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- 비디오(2분 22초): [Python 대화형 창](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
 - Docs: [대화형 창](python-interactive-repl-in-visual-studio.md)
 - Docs: [Visual Studio의 IPython](interactive-repl-ipython.md)
 
@@ -93,22 +93,22 @@ Visual Studio에서는 시간이 지남에 따라 커지는 프로젝트의 복�
 - Docs: [Python 프로젝트 템플릿](managing-python-projects-in-visual-studio.md#project-templates)
 - Docs: [C++ 및 Python 작업](working-with-c-cpp-python-in-visual-studio.md)
 - 일반 Visual Studio 기능 docs: [프로젝트 및 항목 템플릿](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- 일반 Visual Studio 기능 docs: [Visual Studio의 솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
+- 일반 Visual Studio 기능 문서: [Visual Studio의 솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>완전한 기능의 디버깅
 
-Visual Studio의 장점 중 하나는 강력한 디버거입니다. 특히 Python의 경우 Visual Studio는 Python/C++ 혼합 모드 디버깅, Linux에서 원격 디버깅, Azure에서 원격 디버깅, 대화형 창 내에서 디버깅 및 Python 단위 테스트 디버깅을 포함합니다.
+Visual Studio의 장점 중 하나는 강력한 디버거입니다. 특히 Python의 경우 Visual Studio는 Python/C++ 혼합 모드 디버깅, Linux에서 원격 디버깅, Azure에서 원격 디버깅, **대화형** 창 내에서 디버깅 및 Python 단위 테스트 디버깅을 포함합니다.
 
 ![예외 팝업을 표시하는 Python용 Visual Studio 디버거](media/debugging-exception-popup.png)
 
 추가 정보
 
 - 비디오: [Python 디버깅 3분 32초](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- Docs: [Python 디버깅](debugging-python-in-visual-studio.md)
+- Docs: [Python 디버그](debugging-python-in-visual-studio.md)
 - Docs: [Python/C++ 혼합 모드 디버깅](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Docs: [Linux에서 원격 디버깅](debugging-python-code-on-remote-linux-machines.md)
 - Docs: [Azure에서 원격 디버깅](debugging-remote-python-code-on-azure.md)
-- 일반 Visual Studio 기능 docs: [Visual Studio 디버거의 기능 둘러보기](../debugger/debugger-feature-tour.md)
+- 일반 Visual Studio 기능 문서: [Visual Studio 디버거의 기능 둘러보기](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>포괄적인 보고를 제공하는 프로파일링 도구
 
@@ -124,7 +124,7 @@ Visual Studio의 장점 중 하나는 강력한 디버거입니다. 특히 Pytho
 
 ## <a name="unit-testing-tools"></a>위 테스트 도구
 
-Visual Studio 테스트 탐색기에서 테스트를 검색, 실행 및 관리하고 단위 테스트를 쉽게 디버깅합니다.
+Visual Studio **테스트 탐색기**에서 테스트를 검색, 실행 및 관리하고 단위 테스트를 쉽게 디버그합니다.
 
 ![Visual Studio에서 Python 단위 테스트 디버깅](media/unit-test-debugging.png)
 
@@ -134,9 +134,9 @@ Visual Studio 테스트 탐색기에서 테스트를 검색, 실행 및 관리�
 - Docs: [Python용 단위 테스트 도구](unit-testing-python-in-visual-studio.md)
 - 일반 Visual Studio 기능 docs: [코드 단위 테스트](../test/unit-test-your-code.md).
 
-## <a name="publishing-to-azure-and-azure-sdk-for-python"></a>Python용 Azure SDK 및 Azure에 게시
+## <a name="publish-to-azure-and-azure-sdk-for-python"></a>Python용 Azure SDK 및 Azure에 게시
 
-Visual Studio는 Azure에 웹앱 및 클라우드 서비스를 게시하기 위한 통합 지원을 제공합니다. Visual Studio에는 동적 및 정적 콘텐츠용 필수적인 `web.config` 항목 템플릿이 포함됩니다. 또한 Python 워크로드는 Windows, Mac OS X, Linux 앱에서 Azure 서비스를 간편하게 사용할 수 있도록 해주는 Python용 Azure SDK도 포함합니다.
+Visual Studio는 Azure에 웹앱 및 클라우드 서비스를 게시하기 위한 통합 지원을 제공합니다. Visual Studio에는 동적 및 정적 콘텐츠용 필수 *web.config* 항목 템플릿이 포함되어 있습니다. 또한 Python 워크로드는 Windows, Mac OS X, Linux 앱에서 Azure 서비스를 간편하게 사용할 수 있도록 해주는 Python용 Azure SDK도 포함합니다.
 
 ![Visual Studio에서 Azure에 Python 응용 프로그램 게시](media/azure-publish-dialog.png)
 
@@ -149,7 +149,7 @@ Visual Studio는 Azure에 웹앱 및 클라우드 서비스를 게시하기 위�
 
 |   |   |
 |---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | <ul><li>[Python을 사용한 프로그래밍 소개](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 초보자: 문자열 및 함수](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 기초: 목록 및 루프](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Python에 대해 가장 많이 하는 질문](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | <ul><li>[Python을 사용한 프로그래밍 소개](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 초보자: 문자열 및 함수](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 기본 사항: 목록 및 루프](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Python에 대해 가장 많이 하는 질문](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>질문과 대답
 
@@ -163,7 +163,7 @@ Visual Studio는 Azure에 웹앱 및 클라우드 서비스를 게시하기 위�
 
 **질문: Python 프로젝트에서 독립 실행형 실행 파일을 생성할 수 있나요?**
 
-대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에는 실행 파일을 만드는 다양한 방법이 있습니다. 또한 CPython은 블로그 게시물 [Using CPython's Embeddable Zip File](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)(CPython의 포함 가능한 Zip 파일 사용)에 설명된 것처럼 네이티브 응용 프로그램 내에 포함되는 기능을 지원합니다.
+대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에는 실행 파일을 만드는 다양한 방법이 있습니다. 또한 CPython은 블로그 게시물 [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)(CPython의 포함 가능한 zip 파일 사용)에 설명된 것처럼 네이티브 응용 프로그램 내에 포함되는 기능을 지원합니다.
 
 ## <a name="features-matrix"></a>기능 매트릭스
 
@@ -291,9 +291,9 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 1. Visual Studio 2013에서 Django 템플릿 편집기에는 몇 가지 알려진 문제가 있으며 Update 2를 설치하여 해결할 수 있습니다.
 
-1. Windows 8 이상이 필요합니다. Visual Studio 2013 Express for Web에는 [프로세스에 연결] 대화 상자가 없지만 Azure 웹 사이트 원격 디버깅은 서버 탐색기에서 Attach Debugger(Python) 명령을 사용하여 계속 수행할 수 있습니다. 원격 디버깅을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
+1. Windows 8 이상이 필요합니다. Visual Studio 2013 Express for Web에는 **프로세스에 연결** 대화 상자가 없지만, **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하여 Azure 웹 사이트 원격 디버깅을 계속 수행할 수 있습니다. 원격 디버깅을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
 
-1. Windows 8 이상이 필요합니다. 서버 탐색기에서 Attach Debugger(Python) 명령을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
+1. Windows 8 이상이 필요합니다. **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
 
 1. Windows 8 이상이 필요합니다.
 
@@ -301,4 +301,4 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 - [IIS 및 Python 간 WFastCGI 브리지](https://pypi.org/p/wfastcgi)(pypi.org)
 - [Microsoft Virtual Academy의 무료 Python 코스](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Microsoft Virtual Academy의 상위 Python 질문](https://aka.ms/mva-top-python-questions)
+- [Microsoft Virtual Academy의 Python에 대해 가장 많이 하는 질문](https://aka.ms/mva-top-python-questions)

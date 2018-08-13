@@ -11,24 +11,24 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a97a274053f95aac3cc676c17e50e23906fea377
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117003"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468247"
 ---
-# <a name="managing-required-packages-with-requirementstxt"></a>requirements.txt를 사용하여 필수 패키지 관리
+# <a name="manage-required-packages-with-requirementstxt"></a>requirements.txt를 사용하여 필수 패키지 관리
 
 빌드 시스템을 사용하여 다른 사람과 프로젝트를 공유하거나 [Microsoft Azure에 게시](python-azure-cloud-service-project-template.md)할 계획인 경우 프로젝트에 필요한 외부 패키지를 지정해야 합니다. 권장되는 방법은 필요한 종속 패키지 버전을 설치하는 pip 명령 목록이 들어 있는 [requirements.txt 파일](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files)(readthedocs.org)을 사용하는 것입니다.
 
-기술적으로, 파일 이름을 사용하여 요구 사항을 추적할 수 있으나(패키지 설치 시 `-r <full path to file>` 사용) Visual Studio에서 `requirements.txt`에 대한 구체적인 지원을 제공합니다.
+기술적으로, 파일 이름을 사용하여 요구 사항을 추적할 수 있으나(패키지 설치 시 `-r <full path to file>` 사용) Visual Studio에서 *requirements.txt*에 대한 구체적인 지원을 제공합니다.
 
-- `requirements.txt`가 포함된 프로젝트를 로드하여 이 파일에 나열된 모든 패키지를 설치하려면 **솔루션 탐색기**에서 **Python 환경** 노드를 확장한 다음 환경 노드를 마우스 오른쪽 단추로 클릭하고 **requirements.txt에서 설치**를 선택합니다.
+- *requirements.txt*가 포함된 프로젝트를 로드하여 이 파일에 나열된 모든 패키지를 설치하려면 **솔루션 탐색기**에서 **Python 환경** 노드를 확장하고 환경 노드를 마우스 오른쪽 단추로 클릭한 다음, **requirements.txt에서 설치**를 선택합니다.
 
     ![requirements.txt에서 설치](media/environments-requirements-txt-install.png)
 
-- 필요한 모든 패키지를 이미 한 환경에 설치한 경우 솔루션 탐색기에서 해당 환경을 마우스 오른쪽 단추로 클릭하고 **requirements.txt 생성**을 선택하여 필요한 파일을 만듭니다. 파일이 이미 있는 경우 업데이트 방법을 묻는 메시지가 표시됩니다.
+- 필요한 모든 패키지를 이미 한 환경에 설치한 경우 **솔루션 탐색기**에서 해당 환경을 마우스 오른쪽 단추로 클릭하고 **requirements.txt 생성**을 선택하여 필요한 파일을 만듭니다. 파일이 이미 있는 경우 업데이트 방법을 묻는 메시지가 표시됩니다.
 
     ![requirements.txt 옵션 업데이트](media/environments-requirements-txt-replace.png)
 
@@ -36,9 +36,9 @@ ms.locfileid: "37117003"
   - **기존 항목 새로 고침**은 패키지 요구 사항을 검색하고 버전 지정자를 현재 설치된 버전에 맞게 업데이트합니다.
   - **항목 업데이트 및 추가**는 확인된 요구 사항을 새로 고치고 모든 다른 패키지를 파일 끝에 추가합니다.
 
-`requirements.txt` 파일은 환경의 요구 사항을 동결하기 위해 작성된 것이므로 모든 설치된 패키지가 정확한 버전으로 작성됩니다. 정확한 버전을 사용하면 다른 컴퓨터에서 사용자 환경을 쉽게 재현할 수 있습니다. 패키지는 다른 패키지의 종속성으로 버전 범위로 되거나 pip 이외의 설치 관리자로 설치된 경우에도 포함됩니다.
+*requirements.txt* 파일은 환경의 요구 사항을 동결하기 위해 작성된 것이므로 모든 설치된 패키지가 정확한 버전으로 작성됩니다. 정확한 버전을 사용하면 다른 컴퓨터에서 사용자 환경을 쉽게 재현할 수 있습니다. 패키지는 다른 패키지의 종속성으로 버전 범위로 되거나 pip 이외의 설치 관리자로 설치된 경우에도 포함됩니다.
 
-pip로 패키지를 설치할 수 없고 `requirements.txt` 파일에 나타나는 경우 전체 설치에 실패합니다. 이 경우 이 패키지를 제외하도록 수동으로 파일을 편집하거나 패키지의 설치 가능한 버전을 참조하도록 [pip의 옵션](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)을 사용합니다. 예를 들어 [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html)을 사용하여 종속성을 컴파일하고 `--find-links <path>` 옵션을 사용자의 `requirements.txt`에 추가하는 것이 좋습니다.
+pip로 패키지를 설치할 수 없고 *requirements.txt* 파일에 나타나는 경우 전체 설치에 실패합니다. 이 경우 이 패키지를 제외하도록 수동으로 파일을 편집하거나 패키지의 설치 가능한 버전을 참조하도록 [pip의 옵션](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)을 사용합니다. 예를 들어 [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html)을 사용하여 종속성을 컴파일하고 `--find-links <path>` 옵션을 사용자의 *requirements.txt*에 추가하는 것이 좋습니다.
 
 ```output
 C:\Project>pip wheel azure
@@ -65,7 +65,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="see-also"></a>참고 항목
+### <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 Python 환경 관리](managing-python-environments-in-visual-studio.md)
 - [프로젝트의 인터프리터 선택](selecting-a-python-environment-for-a-project.md)

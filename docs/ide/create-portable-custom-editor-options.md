@@ -1,6 +1,6 @@
 ---
 title: Visual Studio에서 EditorConfig 설정 사용
-ms.date: 12/13/2017
+ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117565"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469056"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기
 
@@ -81,9 +81,15 @@ EditorConfig 파일을 프로젝트나 코드베이스에 추가해도 기존 �
    csharp_new_line_before_open_brace = methods
    ```
 
-또는 [EditorConfig 언어 서비스 확장](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)을 설치할 수 있습니다. 이 확장을 설치한 후, 마우스 오른쪽 단추를 클릭하거나 솔루션 탐색기의 솔루션 노드, 프로젝트 노드 또는 폴더의 바로 가기 메뉴에서 **추가** > **.editorconfig 파일**을 선택하면 됩니다.
+### <a name="other-ways-to-add-an-editorconfig-file"></a>EditorConfig 파일을 추가하는 기타 방법
 
-![확장을 사용하여 .editorconfig 파일 추가](media/editorconfig-extension-add.png)
+다음과 같은 몇 가지 기타 방법으로 EditorConfig 파일을 프로젝트에 추가할 수도 있습니다.
+
+- [EditorConfig 언어 서비스 확장](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)을 설치하여 빈 *.editorconfig* 파일을 프로젝트에 더 쉽게 추가합니다. 이 확장을 설치한 후, 마우스 오른쪽 단추를 클릭하거나 **솔루션 탐색기**에서 솔루션 노드, 프로젝트 노드 또는 임의 폴더의 상황에 맞는 메뉴를 통해 **추가** > **.editorconfig 파일**을 선택하면 됩니다. 또한 이 확장을 사용하면 *.editorconfig* 파일의 편집 환경이 향상됩니다.
+
+   ![확장을 사용하여 .editorconfig 파일 추가](media/editorconfig-extension-add.png)
+
+- [IntelliCode 확장](/visualstudio/intellicode/intellicode-visual-studio)을 사용해 보세요. 이 실험적 확장은 기존 코드에서 코드 스타일을 유추한 후 이미 정의된 코드 스타일 기본 설정을 사용하여 비어 있지 않은 *.editorconfig* 파일을 만듭니다.
 
 ## <a name="override-editorconfig-settings"></a>EditorConfig 설정 재정의
 

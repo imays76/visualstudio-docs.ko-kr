@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2017 설치 문제 해결
 description: 때로는 무엇인가 잘못될 수도 있습니다. Visual Studio 설치 또는 업그레이드에 실패할 경우 이 페이지가 도움이 될 수 있습니다.
-ms.date: 11/21/2017
+ms.date: 08/01/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
@@ -14,22 +14,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b6a7ae2bff6d35c77dc54ce07207af375b76ee77
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282956"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511693"
 ---
-# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 설치 및 업그레이드 문제 해결
+# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 설치 및 업그레이드 문제 해결
 
-## <a name="symptoms"></a>증상
+> [!IMPORTANT]
+> 설치하는 데 문제가 있나요? 도와드리겠습니다. [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous)(영어로만 제공) 지원 옵션이 제공됩니다.
 
-Visual Studio 2017을 설치 또는 업데이트할 때 작업이 실패합니다.
+이 문제 해결 가이드에는 대부분의 설치 문제를 해결할 수 있는 단계별 지침이 포함되어 있습니다.
 
-## <a name="workaround"></a>해결 방법
+## <a name="how-to-troubleshoot-an-online-installation"></a>온라인 설치 문제를 해결하는 방법
 
-이 문제를 해결하려면 아래 단계를 수행합니다.
+다음 단계는 일반적인 온라인 설치에 최적화되어 있습니다. 오프라인 설치에 영향을 주는 문제의 경우 [오프라인 설치 문제를 해결하는 방법](#how-to-troubleshoot-an-offline-installation)을 참조하세요.
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>1단계 - 이 문제가 알려진 문제인지 확인
 
@@ -43,17 +44,17 @@ Microsoft에서 수정을 진행하고 있는 Visual Studio 설치 관리자에 
 
 Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설치 관리자를 설치하는 최소한의 간단한 실행 파일입니다. Visual Studio 설치 관리자 파일을 삭제하고 부트스트래퍼를 다시 실행하면 몇 가지 업데이트 실패가 해결될 수 있습니다.
 
->[!NOTE]
-다음 작업을 수행하여 Visual Studio 설치 관리자 파일을 다시 설치하고 설치 메타데이터를 다시 설정합니다.
+> [!NOTE]
+> 다음 작업을 수행하여 Visual Studio 설치 관리자 파일을 다시 설치하고 설치 메타데이터를 다시 설정합니다.
 
 1. Visual Studio 설치 관리자를 닫습니다.
 2. Visual Studio 설치 관리자 디렉터리를 삭제합니다. 일반적으로 디렉터리는 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`입니다.
-3. Visual Studio 설치 관리자 부트스트래퍼를 실행합니다. Downloads 폴더에서 `vs_[Visual Studio edition]__*.exe` 패턴을 따르는 파일 이름을 사용하는 부트스트래퍼를 찾을 수 있습니다. 해당 응용 프로그램을 찾을 수 없으면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하고 해당 버전의 Visual Studio에 대한 **다운로드**를 클릭하여 부트스트래퍼를 다운로드할 수 있습니다. 실행 파일을 실행하여 설치 메타데이터를 다시 설정합니다.
+3. Visual Studio 설치 관리자 부트스트래퍼를 실행합니다. Downloads 폴더에서 `vs_[Visual Studio edition]__*.exe` 패턴을 따르는 파일 이름을 사용하는 부트스트래퍼를 찾을 수 있습니다. 해당 응용 프로그램을 찾을 수 없으면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하고 해당 버전의 Visual Studio에 대한 **다운로드**를 클릭하여 부트스트래퍼를 다운로드할 수 있습니다. 그런 다음, 실행 파일을 실행하여 설치 메타데이터를 다시 설정합니다.
 4. Visual Studio를 다시 설치하거나 업데이트해 보세요. 설치 관리자가 계속 실패하면 다음 단계로 이동합니다.
 
 ### <a name="step-4---report-a-problem"></a>4단계 - 문제 보고
 
-경우에 따라 손상된 파일에 관련된 문제인 경우 문제를 사례별로 확인해야 할 수 있습니다.
+경우에 따라 손상된 파일에 관련된 문제인 경우 문제를 사례별로 확인해야 할 수 있습니다. 도움을 받으려면 다음을 수행하세요.
 
 1. 설치 로그를 수집합니다. 자세한 내용은 [Visual Studio 설치 로그를 가져오는 방법](#how-to-get-the-visual-studio-installation-logs)을 참조하세요.
 2. Visual Studio 설치 관리자를 열고 **문제 보고**를 클릭하여 Visual Studio 피드백 도구를 엽니다.
@@ -71,22 +72,22 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 ### <a name="step-6---contact-us-optional"></a>6단계-문의(선택 사항)
 
-문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
+이전 단계가 Visual Studio를 설치하거나 업그레이드하는 데 도움이 되지 않는 경우 [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous) 지원 옵션(영어로만 제공)을 사용하여 추가 지원을 받으세요.
 
-## <a name="how-to-troubleshoot-an-offline-installer"></a>오프라인 설치 관리자 문제를 해결하는 방법
+## <a name="how-to-troubleshoot-an-offline-installation"></a>오프라인 설치 문제를 해결하는 방법
 
-다음 표에서는 로컬 레이아웃에서 설치할 경우 알려진 문제 및 도움이 되는 몇 가지 해결 방법을 보여 줍니다.
+다음은 로컬 레이아웃에서 설치할 때 도움이 되는 알려진 문제 및 몇 가지 해결 방법의 표입니다.
 
 | 문제       | 항목                   | 솔루션 |
 | ----------- | ---------------------- | -------- |
 | 사용자에게 파일에 액세스할 수 있는 권한이 없습니다. | 권한(ACL) | 오프라인 설치를 공유하기 *전에* 먼저 다른 사용자에게 읽기 액세스 권한을 부여하도록 권한(ACL)을 조정해야 합니다. |
 | 새 작업, 구성 요소 또는 언어가 설치되지 않습니다.  | `--layout`  | 부분 레이아웃에서 설치하고 해당 부분 레이아웃에서 이전에 다운로드하지 않은 워크로드, 구성 요소 또는 언어를 선택하는 경우 인터넷에 액세스할 수 있는지 확인합니다. |
 
-## <a name="how-to-get-the-visual-studio-installation-logs"></a>Visual Studio 설치 로그를 가져오는 방법
+## <a name="how-to-get-visual-studio-installation-logs"></a>Visual Studio 설치 로그를 가져오는 방법
 
 대부분의 설치 문제 해결에는 설치 로그가 필요합니다. Visual Studio 설치 관리자에서 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio-2017.md)를 사용하여 문제를 제출하는 경우 이러한 로그는 보고서에 자동으로 포함됩니다.
 
-Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및.NET Framework 로그 컬렉션 도구](https://aka.ms/vscollect)를 사용하여 이러한 설치 로그를 제공해야 할 수 있습니다. 로그 컬렉션 도구는 .NET Framework, Windows SDK 및 SQL Server를 포함하여 Visual Studio 2017에 의해 설치된 모든 구성 요소에서 설치 로그를 수집합니다. 또한 컴퓨터 정보, Windows Installer 인벤토리는 물론 Visual Studio 설치 관리자, Windows Installer 및 시스템 복원에 대한 Windows 이벤트 로그 정보도 수집합니다.
+Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및 .NET Framework 로그 컬렉션 도구](https://aka.ms/vscollect)를 사용하여 이러한 설치 로그를 제공해야 할 수 있습니다. 로그 컬렉션 도구는 .NET Framework, Windows SDK 및 SQL Server를 포함하여 Visual Studio 2017에 의해 설치된 모든 구성 요소에서 설치 로그를 수집합니다. 또한 컴퓨터 정보, Windows Installer 인벤토리는 물론 Visual Studio 설치 관리자, Windows Installer 및 시스템 복원에 대한 Windows 이벤트 로그 정보도 수집합니다.
 
 로그를 수집하려면
 
@@ -98,20 +99,13 @@ Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및.NET Framewo
 > [!NOTE]
 > 이 도구는 실패한 설치가 실행되었던 동일한 사용자 계정으로 실행되어야 합니다. 다른 사용자 계정에서 이 도구를 실행하는 경우 `–user:<name>` 옵션을 설정하여 실패한 설치가 실행된 사용자 계정을 지정합니다. 추가 옵션 및 사용법 정보를 보려면 관리자 명령 프롬프트에서 `Collect.exe -?`를 실행합니다.
 
-## <a name="more-support-options"></a>추가 지원 옵션
+## <a name="get-live-help"></a>라이브 도움말 가져오기
 
-문제 해결 단계가 도움이 되지 않는 경우 라이브 채팅을 통해 설치 지원을 문의할 수 있습니다(영어만 가능). 자세한 내용은 [Visual Studio 지원 페이지](https://visualstudio.microsoft.com/vs/support/#talktous)를 참조하세요.
-
-몇 가지 추가 옵션은 다음과 같습니다.
-
-* Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio-2017.md) 도구를 통해 Microsoft에 제품 문제를 보고할 수 있습니다.
-* [UserVoice](https://visualstudio.uservoice.com/forums/121579)에서 Microsoft와 제품 제안을 공유할 수 있습니다.
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 제품 문제를 추적하고, 답변을 찾을 수 있습니다.
-* [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)를 통해 Microsoft 및 다른 Visual Studio 개발자와 소통할 수도 있습니다. (이 옵션을 사용하려면 [GitHub](https://github.com/) 계정이 필요합니다.)
+이 문제 해결 가이드에 나열된 솔루션이 Visual Studio를 성공적으로 설치하거나 업그레이드하는 데 도움이 되지 않는 경우 [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous) 지원 옵션(영어로만 제공)을 사용하여 추가 지원을 받으세요.
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
-* [Visual Studio 인스턴스 검색 및 관리 도구](tools-for-managing-visual-studio-instances.md)
-* [방화벽 또는 프록시 서버 뒤에 Visual Studio 설치](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 2017 제거](remove-visual-studio.md)
+* [방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+* [Visual Studio 인스턴스 검색 및 관리 도구](tools-for-managing-visual-studio-instances.md)
+* [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)

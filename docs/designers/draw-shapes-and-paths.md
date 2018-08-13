@@ -10,31 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923951"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513099"
 ---
 # <a name="draw-shapes-and-paths"></a>도형 및 패스 그리기
+
 XAML 디자이너에서 *도형*은 일반적인 도형이 맞습니다. (예: 사각형, 원, 또는 타원). *패스* 는 도형의 보다 유연한 버전으로 도형의 모양을 변경하거나 도형을 결합하는 등 작업을 수행하여 새 도형을 만들 수 있습니다.
 
- 도형 및 패스는 벡터 그래픽을 사용하여 고해상도 디스플레이에 맞게 조정됩니다. 벡터 그래픽에 대해 자세히 알아보려면 [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (벡터 그래픽이란) 또는 [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)(벡터 그래픽)를 참조하세요.
-
- **항목 내용**
-
--   [도형 그리기](#Shape)
-
--   [패스 그리기](#Path)
-
--   [도형을 패스로 변환](#Convert)
-
--   [패스 결합](#Combine)
-
--   [복합형 패스 만들기](#Compound)
-
--   [클리핑 패스 만들기](#Clipping)
+도형 및 패스는 벡터 그래픽을 사용하여 고해상도 디스플레이에 맞게 조정됩니다. 벡터 그래픽에 대해 자세히 알아보려면 [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (벡터 그래픽이란) 또는 [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)(벡터 그래픽)를 참조하세요.
 
 ##  <a name="Shape"></a> 도형 그리기
  도형은 **자산** 패널에 있습니다.

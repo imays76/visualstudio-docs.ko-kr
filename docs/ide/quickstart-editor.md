@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079150"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511237"
 ---
 # <a name="quickstart-use-the-code-editor"></a>빠른 시작: 코드 편집기 사용
 
@@ -157,14 +157,21 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
 
 ## <a name="next-steps"></a>다음 단계
 
-Visual Studio 편집기에 대한 이 빠른 시작을 완료했습니다. 다음으로, Visual Studio 개발 환경에 대한 [빠른 시작: 속성 및 솔루션](../ide/quickstart-projects-solutions.md) 또는 [빠른 시작: Visual Studio 개인 설정](../ide/quickstart-personalize-the-ide.md)과 같은 다른 빠른 시작을 사용해 보겠습니다. [코드를 탐색](../ide/navigating-code.md)하는 다양한 방법을 살펴보거나 살펴볼 기능의 자세한 정보에 대한 링크를 확인합니다. 그렇지 않으면 즐거운 코딩을 경험하시기 바랍니다!
+Visual Studio 편집기에 대한 이 빠른 시작을 완료했습니다. 이제 Visual Studio 개발 환경에 대한 다른 빠른 시작을 사용해 볼 수 있습니다.
+
+> [!div class="nextstepaction"]
+> [빠른 시작: 먼저 Visual Studio IDE 살펴보기](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [빠른 시작: Visual Studio 개인 설정](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [빠른 시작: 프로젝트 및 솔루션](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>참고 항목
 
-- [빠른 시작: 먼저 Visual Studio IDE 살펴보기](../ide/quickstart-ide-orientation.md)
-- [빠른 시작: Visual Studio 개인 설정](../ide/quickstart-personalize-the-ide.md)
-- [빠른 시작: 프로젝트 및 솔루션](../ide/quickstart-projects-solutions.md)
 - [코드 조각](../ide/code-snippets.md)
+- [코드 탐색](../ide/navigating-code.md)
 - [개요](../ide/outlining.md)
 - [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)
 - [리팩터링](../ide/refactoring-in-visual-studio.md)

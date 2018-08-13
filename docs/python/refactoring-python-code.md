@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c756e92b6abc383cb4515a628fb81308e21a1f01
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056542"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586367"
 ---
-# <a name="refactoring-python-code"></a>Python 코드 리팩터링
+# <a name="refactor-python-code"></a>Python 코드 리팩터링
 
 Visual Studio는 Python 소스 코드를 자동으로 변환하고 정리하는 몇 가지 명령을 제공합니다.
 
@@ -27,11 +27,9 @@ Visual Studio는 Python 소스 코드를 자동으로 변환하고 정리하는 
 - [가져오기 추가](#add-import)는 누락된 가져오기를 추가하는 스마트 태그를 제공합니다
 - [사용하지 않는 가져오기 제거](#remove-unused-imports)는 사용하지 않는 가져오기를 제거합니다.
 
-<a name="rename-variable"</a>
-
 ## <a name="rename"></a>이름 바꾸기
 
-1. 이름을 바꿀 식별자를 마우스 오른쪽 단추로 클릭하여 **이름 바꾸기**를 선택하거나, 해당 식별자에 캐럿을 배치하여 **편집 > 리팩터링 > 이름 바꾸기...** 메뉴 명령(F2)을 선택합니다.
+1. 이름을 바꿀 식별자를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택하거나, 해당 식별자에 캐럿을 배치하고 **편집** > **리팩터링** > **이름 바꾸기** 메뉴 명령(**F2**)을 선택합니다.
 1. **이름 바꾸기** 대화 상자가 표시되면 식별자의 새 이름을 입력하고 **확인**을 선택합니다.
 
   ![새 식별자 이름에 대한 프롬프트 이름 바꾸기](media/code-refactor-rename-1.png)
@@ -45,7 +43,7 @@ Visual Studio는 Python 소스 코드를 자동으로 변환하고 정리하는 
 ## <a name="extract-method"></a>메서드 추출
 
 1. 별도의 메서드로 추출할 코드 줄이나 식을 선택합니다.
-1. **편집 > 리팩터링 > 메서드 추출...** 메뉴 명령을 선택하거나 Ctrl+R, M을 입력합니다.
+1. **편집** > **리팩터링** > **메서드 추출** 메뉴 명령을 선택하거나, **Ctrl**+**R** > **M**을 입력합니다.
 1. 표시되는 대화 상자에서 새 메서드 이름을 입력하고 추출할 위치를 지정한 다음 클로저 변수를 선택합니다. 클로저로 선택되지 않은 변수는 메서드 인수로 변환됩니다.
 
   ![메서드 추출 대화 상자](media/code-refactor-extract-method-1.png)
@@ -69,8 +67,6 @@ Visual Studio는 모듈에서 실제로 정의되지 않은 멤버(예: 다른 �
 마찬가지로 Visual Studio는 다른 모듈이나 기본 제공 네임스페이스에서 가져온 함수를 필터링합니다. 예를 들어 모듈이 `sys` 모듈에서 `settrace` 함수를 가져오는 경우 이론적으로는 해당 모듈에서 가져올 수 있습니다. 그러나 `import settrace from sys`를 직접 사용하는 것이 가장 좋으므로 Visual Studio는 해당 문을 구체적으로 제공합니다.
 
 마지막으로, 일반적으로 제외되는 모듈에 포함될 다른 값이 있는 경우(예: 모듈에서 이름에 값이 할당되었기 때문에) Visual Studio에서 여전히 가져오기를 제외합니다. 이 동작은 값이 다른 모듈에 정의되어 있으므로 해당 값을 내보내지 않아야 한다고 가정합니다. 따라서 추가 할당은 내보낼 수 없는 더미 값이 될 수도 있습니다.
-
-<a name="remove-imports"</a>
 
 ## <a name="remove-unused-imports"></a>사용하지 않는 가져오기 제거
 

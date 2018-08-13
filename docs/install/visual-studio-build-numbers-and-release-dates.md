@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 07/26/2018
+ms.date: 08/02/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: ef91eb98d2926d6a107b9abdbc3a362a94ddb840
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: fcb4b85bff3b47bba9de15a16c8cf104482eb643
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276431"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499034"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 빌드 번호 및 릴리스 날짜
 
@@ -25,6 +25,8 @@ ms.locfileid: "39276431"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.6 | 릴리스 | 2018년 8월 2일 | 15.7.27703.2047 |
+| 15.0.16 | 릴리스 | 2018년 8월 2일 | 15.0.26228.48 |
 | 15.8.0 미리 보기 5 | 미리 보기 | 2018년 7월 26일 | 15.8.27924.0 |
 | 15.8.0 미리 보기 4 | 미리 보기 | 2018년 7월 10일 | 15.8.27906.1 |
 | 15.7.5 | 릴리스 | 2018년 7월 10일 | 15.7.27703.2042 |
