@@ -1,17 +1,17 @@
 ---
 layout: LandingPage
 ms.topic: landing-page
-title: 스크립팅 | Microsoft Docs
-ms.openlocfilehash: 468b734d6381b9c40b1c9a4b6153d6ebafe38eb9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+title: JavaScript | Microsoft Docs
+ms.openlocfilehash: 45b67c450b8165808ca8a1042e21d9c5e0b54c84
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2018
-ms.locfileid: "29989215"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008540"
 ---
-# <a name="scripting-technologies"></a>스크립팅 기술
+# <a name="javascript-technologies-in-visual-studio"></a>Visual Studio의 JavaScript 기술
 
-이 페이지에서는 JavaScript, TypeScript, ECMAScript 기반 참조 문서에 대한 링크를 제공하며 이러한 언어를 사용하여 앱을 작성할 수 있는 Visual Studio 기술에 대한 링크를 제공합니다.
+이 페이지에서는 이러한 언어를 사용하여 Visual Studio에서 앱을 작성할 수 있게 해주는 JavaScript 및 TypeScript 기반 설명서에 대한 링크를 제공합니다.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -44,42 +44,6 @@ ms.locfileid: "29989215"
                     </div>
                     <div class="cardText">
                         <h3>UWP(유니버설 Windows 앱) 시작</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="http://www.typescriptlang.org/docs/tutorial.html">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_TS.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>TypeScript에 대한 자세한 정보</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_JS.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>JavaScript에 대한 자세한 정보</h3>
                     </div>
                 </div>
             </div>
@@ -140,60 +104,6 @@ ms.locfileid: "29989215"
         </div>
         </a>
     </li>
-    <li>
-        <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/logos/logo_JS.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>JavaScript 런타임 호스팅에 대한 자세한 정보</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
-        <a href="https://docs.microsoft.com/scripting/winscript/windows-script-interfaces">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Windows 스크립트 인터페이스(보관)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://msdn.microsoft.com/library/d1et7k7c(v=vs.84).aspx">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>JScript 및 VBScript(보관)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
 </ul>
 
 <hr>
@@ -201,7 +111,7 @@ ms.locfileid: "29989215"
 
 <p><ul class="panelContent cardsW">
     <li>
-        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -214,12 +124,51 @@ ms.locfileid: "29989215"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
+        <a href="http://www.typescriptlang.org/docs/tutorial.html">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>TypeScript</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/microsoft-edge/hosting/javascript-runtime-hosting">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
                         <h3>JavaScript 런타임 호스팅</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/fdee6589(v%3dvs.94)">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Windows 스크립트 인터페이스(보관)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1et7k7c(v%3dvs.84)">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>JScript 및 VBScript(보관)</h3>
                     </div>
                 </div>
             </div>
