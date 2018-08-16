@@ -9,12 +9,12 @@ description: 구독 관리자의 책임에 대해 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1eb8dc3cf47241632085e86f589ba377343aa4f1
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9fdefa652a368c344f11fdaf70dbf5db9b172fbf
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863000"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638100"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>관리자 책임의 개요
 관리자는 조직에 대한 구독을 관리할 수 있습니다.  또한 관리자 역할에는 사용 약관에 따라 구독이 관리되도록 해야 할 책임이 있습니다. 이 문서에서는 관리자 역할의 책임, 혜택 및 제한 사항에 대해 간략하게 설명합니다.
@@ -64,6 +64,7 @@ Visual Studio 구독 관리자는 Visual Studio 사용이 허가된 소프트웨
 
 ## <a name="track-user-assignment-and-process-orders"></a>사용자 할당 추적 및 주문 처리
 Visual Studio 구독 관리자는 볼륨 라이선스 규약 및 Microsoft 제품 및 서비스 계약에 개략적으로 나와 있는 일정에 따라 Visual Studio 사용을 추적하고 사용량 증가에 따른 주문을 처리해야 합니다. 새 Visual Studio 구독 관리 포털에서는 사용 가능한 라이선스 및 사용한 라이선스를 표시하는 유용한 추적기를 통해 이 단계가 간소화되었습니다.
+
 ### <a name="high-water-mark-of-usage"></a>사용량의 최고 수위 표시
 **Visual Studio 구독을 구매해야 하는 회사의 의무는 다음과 같은 경우 즉시 적용됩니다.**
 - 사용자에게 라이선스가 할당되었습니다.

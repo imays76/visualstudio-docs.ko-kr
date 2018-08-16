@@ -9,12 +9,12 @@ description: 구독자 목록과 해당 구독 할당의 세부 정보를 내보
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4e1a20307eea40a1ed9ba9662bd9d25086489374
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9b2e03235391826c7a8cc486089a5a3e6384b09a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379471"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635884"
 ---
 # <a name="exporting-subscription-information"></a>구독 정보 내보내기
 
@@ -23,4 +23,5 @@ Visual Studio 구독 [관리자 포털](https://manage.visualstudio.com)에서 �
 이 기능은 할당 추적 및 만료 날짜와 같은 몇 가지 시나리오에 유용합니다. 예를 들어 GUID에 대한 차단 사용에서 구독 할당 추적으로 전환하는 경우 Microsoft Excel의 VLOOKUP 수식이 있는 보고서를 사용하여 구독자를 적절하게 일치시킬 수 있습니다.  
 
 내보내기를 수행하려면 단순히 **내보내기** 탭을 선택하면 파일이 로컬 컴퓨터로 다운로드됩니다. 파일에는 내보내기 날짜뿐만 아니라 사용자 구독을 포함하는 계약의 이름이 포함됩니다.  
-![구독자 내보내기](_img\exporting-subscriptions\exporting-subscriptions.png)
+> [!div class="mx-imgBorder"]
+> ![구독자 내보내기](_img\exporting-subscriptions\exporting-subscriptions.png)
