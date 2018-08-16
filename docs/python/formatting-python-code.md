@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341599"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008670"
 ---
 # <a name="format-python-code"></a>Python 코드 서식 지정
 
@@ -45,41 +45,41 @@ Visual Studio에서는 미리 구성된 서식 옵션과 일치하도록 빠르�
 
 | 클래스 정의 옵션 | 선택한 상태 | 선택 취소됨 |
 | --- | --- | --- | 
-| 클래스 선언의 이름과 베이스 목록 사이에 공백 삽입 | `class X (object): pass` | `class X(object): pass` | 
-| 베이스 목록 괄호 내에 공백 삽입 | `class X( object ): pass` | `class X(object): pass` |
-| 빈 베이스 목록 괄호 내에 공백 삽입 | `class X( ): pass` | `class X(): pass` |
+| **클래스 선언의 이름과 기본 목록 사이에 공백 삽입** | `class X (object): pass` | `class X(object): pass` | 
+| **기본 목록 괄호 내에 공백 삽입** | `class X( object ): pass` | `class X(object): pass` |
+| **빈 기본 목록 괄호 내에 공백 삽입** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | 함수 정의 옵션 | 선택한 상태 | 선택 취소됨 |
 | --- | --- | --- |
-| 함수 선언의 이름과 매개 변수 목록 사이에 공백 삽입 | `def X (): pass` | `def X(): pass` | 
-| 매개 변수 목록 괄호 내에 공백 삽입 | `def X( a, b ): pass` | `def X(a, b): pass` |
-| 빈 매개 변수 목록 괄호 내에 공백 삽입 | `def X( ): pass` | `def X(): pass` |
-| 기본 매개 변수 값의 '=' 주위에 공백 삽입 | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| 반환 주석 연산자 앞뒤에 공백 삽입 | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **함수 선언의 이름과 매개 변수 목록 사이에 공백 삽입** | `def X (): pass` | `def X(): pass` | 
+| **매개 변수 목록 괄호 내에 공백 삽입** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **빈 매개 변수 목록 괄호 내에 공백 삽입** | `def X( ): pass` | `def X(): pass` |
+| **기본 매개 변수 값의 '=' 주위에 공백 삽입** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **반환 주석 연산자 앞뒤에 공백 삽입** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | 연산자 옵션 | 선택한 상태 | 선택 취소됨 |
 | --- | --- | --- |
-| 이항 연산자 주위에 공백 삽입 | `a + b` | `a+b` |
-| 할당 연산자 주위에 공백 삽입 | `a = b` | `a=b` |
+| **이진 연산자 주위에 공백 삽입** | `a + b` | `a+b` |
+| **할당 주위에 공백 삽입** | `a = b` | `a=b` |
 
 <br/>
 
 | 식 간격 옵션 | 선택한 상태 | 선택 취소됨 |
 | --- | --- | --- |
-| 함수 호출의 이름과 인수 목록 사이에 공백 삽입 | `X ()` | `X()` |
-| 빈 인수 목록 괄호 내부에 공백 삽입 | `X( )` | `X()` |
-| 인수 목록 괄호의 내부에 공백 삽입 | `X( a, b )` | `X(a, b)` |
-| 식 괄호 내에 공백 삽입 | `( a )` | `(a)` |
-| 빈 튜플 괄호 내에 공백 삽입 | `( )` | `()` |
-| 튜플 괄호 내에 공백 삽입 | `( a, b )` | `(a, b)` |
-| 빈 대괄호의 내부에 공백 삽입 | `[ ]` | `[]` |
-| 목록 대괄호 내에 공백 삽입 | `[ a, b ]` | `[a, b]` |
-| 여는 대괄호 앞에 공백 삽입 | `x [i]` | `x[i]` |
-| 대괄호 내부에 공백을 삽입합니다. | `x[ i ]` | `x[i]` |
+| **함수 호출의 이름과 인수 목록 사이에 공백 삽입** | `X ()` | `X()` |
+| **빈 인수 목록 괄호 내부에 공백 삽입** | `X( )` | `X()` |
+| **인수 목록 괄호의 내부에 공백 삽입** | `X( a, b )` | `X(a, b)` |
+| **식 괄호 내에 공백 삽입** | `( a )` | `(a)` |
+| **빈 튜플 괄호 내에 공백 삽입** | `( )` | `()` |
+| **튜플 괄호 내에 공백 삽입** | `( a, b )` | `(a, b)` |
+| **빈 대괄호 내에 공백 삽입** | `[ ]` | `[]` |
+| **목록 대괄호 내에 공백 삽입** | `[ a, b ]` | `[a, b]` |
+| **여는 대괄호 앞에 공백 삽입** | `x [i]` | `x[i]` |
+| **대괄호 내에 공백 삽입** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ Visual Studio에서는 미리 구성된 서식 옵션과 일치하도록 빠르�
 
 | 옵션 | 서식 지정 앞 | 서식 지정 뒤 |
 | --- | --- | --- |
-| 새 줄에 가져온 모듈 배치 | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| 불필요한 세미콜론 제거 | `x = 42;` | `x = 42` |
-| 새 줄에 여러 문 배치 | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **새 줄에 가져온 모듈 배치** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **불필요한 세미콜론 제거** | `x = 42;` | `x = 42` |
+| **새 줄에 여러 명령문 배치** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>줄 바꿈
 

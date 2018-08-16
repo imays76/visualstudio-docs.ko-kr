@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341266"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008325"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python 프로젝트에 대한 사용자 지정 명령 정의
 
-Python 프로젝트로 작업하는 과정에서 명령 창으로 전환하여 특정 스크립트 또는 모듈을 실행하거나, pip 명령을 실행하거나, 다른 임의의 도구를 사용하게 될 수 있습니다. 워크플로를 개선하려면 Python 프로젝트 상황에 맞는 메뉴의 **Python** 하위 메뉴에 사용자 지정 명령을 추가할 수 있습니다. 이러한 명령은 콘솔 창 또는 Visual Studio 창에서 실행할 수 있습니다. 또한 정규식을 사용하여 Visual Studio에 대해 명령의 출력에서 오류 및 경고를 구문 분석하는 방법을 지시할 수 있습니다.
+Python 프로젝트로 작업하는 과정에서 명령 창으로 전환하여 특정 스크립트 또는 모듈을 실행하거나, pip 명령을 실행하거나, 다른 임의의 도구를 사용하게 될 수 있습니다. 워크플로를 개선하려면 Python 프로젝트 상황에 맞는 메뉴의 **Python** 하위 메뉴에 사용자 지정 명령을 추가할 수 있습니다. 이러한 명령은 콘솔 창 또는 Visual Studio **출력** 창에서 실행할 수 있습니다. 또한 정규식을 사용하여 Visual Studio에 대해 명령의 출력에서 오류 및 경고를 구문 분석하는 방법을 지시할 수 있습니다.
 
 기본적으로 이러한 메뉴에는 다음과 같은 단일 **PyLint 실행** 명령이 포함됩니다.
 

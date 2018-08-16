@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3358d23c7c4f3fd2ad7f6beffb6a035b6c810d38
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f64de3b95d21fdae87dd6b14754956381d60e9a3
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747980"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008244"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 일치 게임 만들기
+
 이 자습서에서는 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드합니다. 여기에서는 다음과 같은 작업을 수행하는 방법에 대해 배우게 됩니다.
 
 -   아이콘과 같은 개체를 <xref:System.Collections.Generic.List%601> 개체에 저장합니다.
@@ -31,18 +32,18 @@ ms.locfileid: "34747980"
 
 -   시작된 후 카운트다운을 실시하고 단 한 번만 이벤트를 발생시키는 타이머를 만듭니다.
 
- 이 자습서를 마치면 다음 그림과 같은 프로그램이 만들어집니다.
+이 자습서를 마치면 프로그램은 다음 그림과 같습니다.
 
- ![이 자습서에서 만드는 게임](../ide/media/express_finishedgame.png) 이 자습서에서 만드는 게임
+![이 자습서에서 만드는 게임](../ide/media/express_finishedgame.png)
 
 ## <a name="tutorial-links"></a>자습서 링크
 
- 샘플의 전체 버전을 다운로드하려면 [Complete matching game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)(전체 일치 게임 자습서 샘플)을 참조하세요.
+샘플의 전체 버전을 다운로드하려면 [Complete matching game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)(전체 일치 게임 자습서 샘플)을 참조하세요.
 
 > [!NOTE]
->  이 자습서에는 Visual C#과 Visual Basic이 둘 다 설명되어 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.
+> 이 자습서에는 Visual C#과 Visual Basic이 둘 다 설명되어 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.
 
- 어려운 점이 있거나 프로그래밍 관련 질문이 있는 경우 MSDN 포럼에 질문을 게시해 보십시오. [Visual Basic 포럼](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) 및 [Visual C# 포럼](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)을 참조하세요. 또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic fundamentals: Development for absolute beginners](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)(Visual Basic 기초: 완전 초보자를 위한 개발)를 참조하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# fundamentals: Development for absolute beginners](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(C# 기초: 완전 초보자를 위한 개발)를 참조하세요.
+어려운 점이 있거나 프로그래밍 관련 질문이 있는 경우 MSDN 포럼에 질문을 게시해 보십시오. [Visual Basic 포럼](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) 및 [Visual C# 포럼](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)을 참조하세요. 또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic fundamentals: Development for absolute beginners](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)(Visual Basic 기초: 완전 초보자를 위한 개발)를 참조하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# fundamentals: Development for absolute beginners](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)(C# 기초: 완전 초보자를 위한 개발)를 참조하세요.
 
 ## <a name="related-topics"></a>관련 항목
 

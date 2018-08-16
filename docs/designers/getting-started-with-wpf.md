@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ae99208f48ffa2c8820f8c2765f72a6ae67a6e
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: d041fb03b4a35b0ed68d386e21ca1ec92a0e3588
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586875"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008644"
 ---
 # <a name="get-started-with-wpf"></a>WPF 시작
 
@@ -28,7 +28,7 @@ WPF(Windows Presentation Foundation)는 데스크톱 클라이언트 응용 프�
 |바로 시작...|[연습: 내 첫 WPF 데스크톱 응용 프로그램](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |XAML 디자인 도구 비교...|[Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)|
 |.NET을 처음 사용하세요?|[.NET Framework의 개요](/dotnet/framework/get-started/overview)<br /><br /> [응용 프로그램 주요 사항](/dotnet/standard/application-essentials)<br /><br /> [Visual C# 및 Visual Basic 시작](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|
-|WPF에 대한 자세한 설명...|[WPF 소개](../designers/introduction-to-wpf.md)<br /><br /> [XAML 개요(WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [컨트롤](/dotnet/framework/wpf/controls/)<br /><br /> [데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [LINQ to XML로 WPF 데이터 바인딩](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
+|WPF에 대한 자세한 설명...|[WPF 개요](../designers/introduction-to-wpf.md)<br /><br /> [XAML 개요(WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [컨트롤](/dotnet/framework/wpf/controls/)<br /><br /> [데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [LINQ to XML로 WPF 데이터 바인딩](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
 |Windows Forms 개발자인가요?|[Windows Forms 컨트롤 및 해당 WPF 컨트롤](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [WPF 및 Windows Forms 상호 운용성에서 지원되는 시나리오](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
 ## <a name="see-also"></a>참고 항목

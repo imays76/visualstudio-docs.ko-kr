@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388295"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637619"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5단계: 설문조사 Flask 웹 프로젝트 템플릿 사용
 
@@ -29,7 +29,7 @@ Visual Studio의 “Flask 웹 프로젝트” 템플릿을 이해했으면 이�
 > [!div class="checklist"]
 > - 템플릿에서 프로젝트를 만들고 데이터베이스 초기화(5-1단계)
 > - 데이터 모델 이해(5-2단계)
-> - 백업 데이터 저장소 및 (5-3 단계) 이해
+> - 백업 데이터 저장소 이해(5-3단계)
 > - 설문 조사 세부 정보 및 결과 보기(단계 5-4) 이해
 
 또한 Visual Studio는 동일한 앱을 생성하지만 Jinja 템플레이팅 엔진에 Jade 확장을 사용하는 "설문 조사 Flask/Jade 웹 프로젝트" 템플릿도 제공합니다. 자세한 내용은 [4단계 - Flask/Jade 웹 프로젝트 템플릿](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template)을 참조하세요.
@@ -40,7 +40,7 @@ Visual Studio의 “Flask 웹 프로젝트” 템플릿을 이해했으면 이�
 
 1. 새 프로젝트 대화 상자에서 **설문 조사 Flask 웹 프로젝트** 템플릿을 검색하여 선택하고 프로젝트의 이름을 "FlaskPolls"로 지정하고 **확인**을 선택합니다.
 
-1. Visual Studio의 다른 프로젝트 템플릿과 마찬가지로 "설문 조사 Flask 웹 프로젝트" 템플릿에는 *requirements.txt* 파일이 포함되어 있으므로 Visual Studio에서 해당 종속성을 설치할 위치를 묻습니다. **가상 환경에 설치** 옵션을 선택하고 **가상 환경 추가** 대화 상자에서 **만들기**를 선택하여 기본값을 그대로 사용합니다. (이 템플릿은 Flask와 azure-storage 및 pymongo 패키지가 필요하고, "설문 조사 Flask/Jade 웹 프로젝트"도 pyjade가 필요합니다.)
+1. Visual Studio의 다른 프로젝트 템플릿과 마찬가지로 "설문 조사 Flask 웹 프로젝트" 템플릿에는 *requirements.txt* 파일이 포함되어 있으므로 Visual Studio에서는 해당 종속성을 설치할 위치를 묻습니다. **가상 환경에 설치** 옵션을 선택하고 **가상 환경 추가** 대화 상자에서 **만들기**를 선택하여 기본값을 그대로 사용합니다. (이 템플릿은 Flask와 azure-storage 및 pymongo 패키지가 필요하고, "설문 조사 Flask/Jade 웹 프로젝트"도 pyjade가 필요합니다.)
 
 1. **솔루션 탐색기**에서 해당 프로젝트를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 선택하여 **FlaskPolls** 프로젝트가 Visual Studio 솔루션의 기본값이 되도록 설정합니다. 굵게 표시된 시작 프로젝트는 디버거를 시작할 때 실행됩니다.
 

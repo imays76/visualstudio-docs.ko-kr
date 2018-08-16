@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388139"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637645"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
@@ -27,7 +27,7 @@ ms.locfileid: "39388139"
 이 단계에서는 다음 방법을 학습합니다.
 
 > [!div class="checklist"]
-> - Visual Studio 항목 템플릿을 사용하여 편리한 상용구 코드로 신속하게 다양한 유형의 새 파일 만들기(3-1단계)
+> - Visual Studio 항목 템플릿을 사용하여 편리한 상용구 코드로 신속하게 다양한 형식의 새 파일 추가(3-1단계)
 > - 코드에서 정적 파일 제공(3-2단계, 옵션)
 > - 앱에 페이지 추가(3-3단계)
 > - 템플릿 상속을 사용하여 전체 페이지에서 사용되는 헤더 및 탐색 모음 만들기(3-4단계)
