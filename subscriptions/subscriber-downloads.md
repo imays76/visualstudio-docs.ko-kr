@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Microsoft 제품을 찾고 다운
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8029af659fb45cf7a1ef028855a350935e41670f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326347"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637739"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 구독자 다운로드 사용
 구독자 혜택의 일환으로 다양한 소프트웨어 다운로드에 액세스할 수 있습니다.
@@ -41,26 +41,26 @@ ms.locfileid: "36326347"
 [다운로드](https://my.visualstudio.com/downloads/featured) 페이지에는 자신의 구독에 포함된 다운로드만 표시됩니다.  둘 이상의 구독 또는 프로그램 멤버 자격이 있으면 현재 다른 구독을 보고 있는 경우에도 보유한 **최상위 구독**에 대한 다운로드가 표시됩니다.  예를 들어 Visual Studio Professional 구독과 Visual Studio Dev Essentials 멤버 자격이 모두 동일한 로그인 ID와 연결되는 경우 현재 Dev Essentials 혜택을 보고 있는 경우에도 전문가 수준 구독에 포함된 다운로드가 표시됩니다.
 
 [다운로드](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) 페이지를 방문하면 인기 있는 다운로드가 제품 유형별 그룹으로 정렬되어 표시됩니다.  표시된 인기 있는 다운로드 중 하나를 선택하거나 페이지 위쪽의 검색 표시줄을 사용하여 모든 제품을 검색할 수 있습니다.
-
-![구독자 다운로드 페이지](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> [!div class="mx-imgBorder"]
+> ![구독자 다운로드 페이지](_img\subscriber-downloads\subscriber-downloads-resized.png)
 
 예를 들어 [개발자 도구] 목록에서 **Visual Studio 2017**을 선택하면 사용 가능한 Visual Studio 2017 다운로드 목록이 표시됩니다.
-
-![Visual Studio 2017 다운로드](_img\subscriber-downloads\vs2017-new-UI.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 다운로드](_img\subscriber-downloads\vs2017-new-UI.png)
 
 사용 가능한 드롭다운 메뉴를 통해 아키텍처, 언어 및 파일 형식을 쉽게 선택할 수 있습니다. 원하는 옵션을 선택하고 **다운로드**를 클릭하여 제품 다운로드를 시작합니다.
 
 ### <a name="displaying-download-details"></a>다운로드 정보 표시
 
 제품 이름 또는 **정보** 링크를 클릭하면 해당 다운로드에 대한 정보가 표시되고 제품에 대한 릴리스 정보에 액세스할 수 있는 권한이 제공됩니다.
-
-![Visual Studio 2017 Pro 다운로드 정보](_img\subscriber-downloads\vs2017-pro-details.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 Pro 다운로드 세부 정보](_img\subscriber-downloads\vs2017-pro-details.png)
 
 세부 정보 창에서 **키** 탭을 클릭하여 제품 키 상태를 확인할 수도 있습니다.
-
-![Visual Studio 2017 Pro 제품 키](_img\subscriber-downloads\vs2017-pro-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 Pro 제품 키](_img\subscriber-downloads\vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>제품 키 얻기
 다운로드할 제품 키를 얻으려면 **키 가져오기**라는 파란색 키를 클릭하거나, 이미 세부 정보 창을 보고 있는 경우 **키** 탭에서 **Claim key**(키 요청)를 클릭합니다.
-
-![Visual Studio 2017 Pro 제품 키 요청](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 Pro 클레임 제품 키](_img\subscriber-downloads\vs2017-pro-claim-keys.png)

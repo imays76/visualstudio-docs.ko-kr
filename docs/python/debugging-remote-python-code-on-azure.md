@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 1e3e70675901128ed6b8d118e54dc10ddee152a5
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341789"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008621"
 ---
 # <a name="remotely-debug-python-code-on-azure"></a>Azure에서 Python 코드 원격 디버그
 
@@ -48,7 +48,7 @@ App Service에 디버거를 직접 연결하려면 Visual Studio에서 *\<site_u
 
 ![Azure App Service에서 디버거 끝점 확인](media/azure-remote-debugging-secret.png)
 
-지금 필요한 URL은 `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` 형식이며, 여기서 문자열의 &lt;secret&gt;과 &lt;site_name&gt;을 특정 값으로 바꿉니다.
+지금 필요한 URL은 `wss://<secret>@<site_name>.azurewebsites.net/ptvsd` 형식이며, 여기서 문자열의 &lt;secret&gt; 및 &lt;site_name&gt;을 특정 값으로 바꿉니다.
 
 디버거를 연결하려면 **디버그** > **프로세스에 연결**을 선택하고, **전송** 드롭다운에서 **Python 원격 디버깅**을 선택하고, **한정자 텍스트 상자**에서 URL을 입력하고, **Enter** 키를 누릅니다. Visual Studio에서 App Service에 성공적으로 연결할 수 있으면 목록에 단일 Python 프로세스가 표시됩니다. 이 프로세스를 선택한 다음 **연결**을 선택하여 디버깅을 시작합니다.
 

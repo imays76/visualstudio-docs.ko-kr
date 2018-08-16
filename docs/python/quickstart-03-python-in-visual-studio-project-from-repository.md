@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512818"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636826"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제
 
@@ -37,7 +37,7 @@ ms.locfileid: "39512818"
 1. **로컬 Git 리포지토리** 아래에서 **복제**를 선택한 다음, URL 필드에 `https://github.com/gregmalcolm/python_koans`를 입력하고, 복제된 파일에 대한 폴더를 입력하고, **복제** 단추를 선택합니다.
 
     > [!Tip]
-    > 팀 탐색기에서 지정한 폴더는 복제된 파일을 수신하는 정확한 폴더입니다. `git clone` 명령과 달리 팀 탐색기에서 복제본을 만드는 것은 리포지토리의 이름으로 하위 폴더를 자동으로 만들지 않습니다.
+    > **팀 탐색기**에서 지정한 폴더는 복제된 파일을 수신하는 정확한 폴더입니다. `git clone` 명령과 달리 **팀 탐색기**에서 복제본을 만드는 작업은 리포지토리의 이름으로 하위 폴더를 자동으로 만들지 않습니다.
 
 1. 복제가 완료되면 리포지토리가 **로컬 Git 리포지토리** 목록에 나타납니다. 해당 이름을 두 번 클릭하여 **팀 탐색기**의 리포지토리 대시보드로 이동합니다.
 

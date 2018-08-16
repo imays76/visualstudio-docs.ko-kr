@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c2a0d239cca67eda9454f522e5041af29c7fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747882"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008397"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
+
 이 자습서에서는 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드합니다. 여기에서는 다음과 같은 작업을 수행하는 방법에 대해 배우게 됩니다.
 
 -   <xref:System.Random> 클래스를 사용하여 난수를 생성합니다.
@@ -29,16 +30,16 @@ ms.locfileid: "34747882"
 
 -   코드에서 기본 산술 연산을 수행합니다.
 
- 자습서를 완료하면 숫자가 다른 것을 제외하면 퀴즈가 다음 그림과 같이 만들어집니다.
+자습서를 완료하면 숫자가 다른 것을 제외하고 퀴즈가 다음 그림과 같이 만들어집니다.
 
- ![네 개의 문제가 있는 수학 퀴즈](../ide/media/express_finishedquiz.png) 이 자습서에서 만드는 퀴즈
+![네 개의 문제가 있는 수학 퀴즈](../ide/media/express_finishedquiz.png)
 
 ## <a name="tutorial-links"></a>자습서 링크
 
- 퀴즈의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
+퀴즈의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
 
 > [!NOTE]
->  이 자습서에서는 Visual C#과 Visual Basic 모두에 대해 다루고 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.
+> 이 자습서에서는 Visual C#과 Visual Basic 모두에 대해 다루고 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.
 
 ## <a name="related-topics"></a>관련 항목
 

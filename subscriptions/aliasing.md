@@ -9,12 +9,12 @@ description: 별칭 또는 대화명을 사용하는 경우 로그인에 실패�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327065"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637684"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음
 
@@ -50,11 +50,14 @@ ms.locfileid: "36327065"
 1. VLSC([볼륨 라이선스 서비스 센터](https://www.microsoft.com/Licensing/servicecenter/default.aspx))를 방문하여 로그인합니다.
 2. VLSC 관리 페이지에서 **구독**, **Visual Studio 구독**을 차례로 클릭합니다.
 
-    ![구독 메뉴](_img//vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![구독 메뉴](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. Visual Studio 구독에 연결된 **계약 번호**를 클릭합니다.
 
-    ![계약 선택](_img/vlsc/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![규약 선택](_img/vlsc/vlsc-agreement.png)
 
 4. **구독 할당**을 클릭합니다.
 5. 원하는 **구독 수준**을 선택합니다.

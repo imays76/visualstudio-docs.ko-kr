@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b3347deb612b6fab248b287ed22fe39a7798796
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512085"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639434"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>자습서: Visual Studio에서 Python 작업
 
@@ -36,7 +36,7 @@ Visual Studio는 Python에 대한 고급 언어 지원을 제공합니다. 이 �
 
 ## <a name="step-1-create-a-new-python-project"></a>1단계: 새 Python 프로젝트 만들기
 
-*프로젝트*는 Visual Studio에서 소스 코드, 리소스, 구성 등을 포함하여 단일 응용 프로그램을 생성하기 위해 함께 제공되는 모든 파일을 관리하는 방법입니다. 프로젝트는 여러 프로젝트에서 공유되는 외부 리소스뿐만 아니라 모든 프로젝트의 파일 간의 관계를 공식화하고 유지합니다. 따라서 프로젝트는 응용 프로그램을 임시 폴더, 스크립트, 텍스트 파일에서 심지어 사용자의 마음대로 프로젝트의 관계를 관리하는 것보다 훨씬 더 쉽게 확장하고 증가하도록 허용합니다.
+*프로젝트*는 Visual Studio에서 소스 코드, 리소스, 구성 등을 포함하여 단일 응용 프로그램을 생성하기 위해 함께 제공되는 모든 파일을 관리하는 방법입니다. 프로젝트는 여러 프로젝트에서 공유되는 외부 리소스뿐만 아니라 모든 프로젝트의 파일 간의 관계를 공식화하고 유지합니다. 따라서 프로젝트를 사용하면 임시 폴더, 스크립트, 텍스트 파일에서 심지어 사용자의 마음대로 프로젝트의 관계를 관리하는 것보다 훨씬 더 쉽게 응용 프로그램을 확장하고 성장시킬 수 있습니다.
 
 이 자습서에서 단일 빈 코드 파일을 포함하는 간단한 프로젝트부터 시작합니다.
 
