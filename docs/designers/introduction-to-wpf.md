@@ -13,22 +13,22 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978351"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008462"
 ---
-# <a name="introduction-to-wpf"></a>WPF 소개
+# <a name="wpf-overview"></a>WPF 개요
 
 WPF(Windows Presentation Foundation)를 사용하면 시각적으로 뛰어난 사용자 환경을 통해 Windows용 데스크톱 클라이언트 응용 프로그램을 만들 수 있습니다.
 
- ![Contoso Healthcare UI 샘플](../designers/media/wpfintrofigure24.png)
+![Contoso Healthcare UI 샘플](../designers/media/wpfintrofigure24.png)
 
- WPF의 핵심은 최신 그래픽 하드웨어를 활용하도록 작성된 해상도 독립적인 벡터 기반 렌더링 엔진입니다. WPF는 XAML(Extensible Application Markup Language), 컨트롤, 데이터 바인딩, 레이아웃, 2D 및 3D 그래픽, 애니메이션, 스타일, 템플릿, 문서, 미디어, 텍스트 및 입력 체계를 포함하는 포괄적인 응용 프로그램 개발 기능을 사용하여 핵심을 확장합니다. WPF는 .NET Framework에 포함되어 있으므로 .NET Framework 클래스 라이브러리의 다른 요소를 통합하는 응용 프로그램을 빌드할 수 있습니다.
+WPF의 핵심은 최신 그래픽 하드웨어를 활용하도록 작성된 해상도 독립적인 벡터 기반 렌더링 엔진입니다. WPF는 XAML(Extensible Application Markup Language), 컨트롤, 데이터 바인딩, 레이아웃, 2D 및 3D 그래픽, 애니메이션, 스타일, 템플릿, 문서, 미디어, 텍스트 및 입력 체계를 포함하는 포괄적인 응용 프로그램 개발 기능을 사용하여 핵심을 확장합니다. WPF는 .NET Framework에 포함되어 있으므로 .NET Framework 클래스 라이브러리의 다른 요소를 통합하는 응용 프로그램을 빌드할 수 있습니다.
 
- 이 개요는 초보자를 위한 것이며 WPF의 주요 기능 및 개념에 대해 설명합니다.
+이 개요는 초보자를 위한 것이며 WPF의 주요 기능 및 개념에 대해 설명합니다.
 
 ## <a name="program-with-wpf"></a>WPF로 프로그램
 
@@ -50,7 +50,7 @@ WPF를 사용하면 ASP.NET 개발자에게 익숙한 환경인 *태그* 및 *�
 
 XAML은 선언적으로 응용 프로그램의 모양을 구현하는 XML 기반 태그 언어입니다. 일반적으로 창, 대화 상자, 페이지 및 사용자 정의 컨트롤을 만들고 컨트롤, 도형 및 그래픽으로 채우는 데 사용됩니다.
 
- 다음 예제에서는 XAML을 사용하여 단일 단추가 포함된 창의 모양을 구현합니다.
+다음 예제에서는 XAML을 사용하여 단일 단추가 포함된 창의 모양을 구현합니다.
 
 ```xaml
 <Window
@@ -64,13 +64,13 @@ XAML은 선언적으로 응용 프로그램의 모양을 구현하는 XML 기반
 </Window>
 ```
 
- 특히, 이 XAML은 각각 `Window` 및 `Button` 요소를 사용하여 창과 단추를 정의합니다. 각 요소는 창의 제목 표시줄 텍스트를 지정하는 `Window` 요소의 `Title` 특성과 같은 특성으로 구성됩니다. 런타임에 WPF는 태그에 정의된 요소와 특성을 WPF 클래스 인스턴스로 변환합니다. 예를 들어 `Window` 요소는 <xref:System.Windows.Window> 속성이 <xref:System.Windows.Window.Title%2A> 특성의 값인 `Title` 클래스 인스턴스로 변환됩니다.
+특히, 이 XAML은 각각 `Window` 및 `Button` 요소를 사용하여 창과 단추를 정의합니다. 각 요소는 창의 제목 표시줄 텍스트를 지정하는 `Window` 요소의 `Title` 특성과 같은 특성으로 구성됩니다. 런타임에 WPF는 태그에 정의된 요소와 특성을 WPF 클래스 인스턴스로 변환합니다. 예를 들어 `Window` 요소는 <xref:System.Windows.Window> 속성이 <xref:System.Windows.Window.Title%2A> 특성의 값인 `Title` 클래스 인스턴스로 변환됩니다.
 
- 다음 그림은 이전 예제에서 XAML로 정의된 UI(사용자 인터페이스)를 보여 줍니다.
+다음 그림은 이전 예제에서 XAML로 정의된 UI(사용자 인터페이스)를 보여 줍니다.
 
- ![단추가 있는 창](../designers/media/wpfintrofigure10.png)
+![단추가 있는 창](../designers/media/wpfintrofigure10.png)
 
- XAML은 XML 기반이기 때문에 XAML로 작성한 UI는 [요소 트리](/dotnet/framework/wpf/advanced/trees-in-wpf)라고 하는 중첩된 요소 계층 구조로 어셈블됩니다. 요소 트리는 UI를 만들고 관리하는 논리적이고 직관적인 방법을 제공합니다.
+XAML은 XML 기반이기 때문에 XAML로 작성한 UI는 [요소 트리](/dotnet/framework/wpf/advanced/trees-in-wpf)라고 하는 중첩된 요소 계층 구조로 어셈블됩니다. 요소 트리는 UI를 만들고 관리하는 논리적이고 직관적인 방법을 제공합니다.
 
 ### <a name="code-behind"></a>코드 숨김
 
@@ -639,18 +639,18 @@ WPF는 다양한 사용자 지정 지원을 제공하지만 기존 WPF 컨트롤
 
 다음 예제에서는 <xref:System.Windows.Controls.UserControl>에서 파생되는 사용자 지정 숫자 위로/아래로 컨트롤을 보여 줍니다.
 
- [!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
 
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
+[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
+[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
 
- 다음 예제에서는 사용자 정의 컨트롤을 <xref:System.Windows.Window>에 통합하는 데 필요한 XAML을 보여 줍니다.
+다음 예제에서는 사용자 정의 컨트롤을 <xref:System.Windows.Window>에 통합하는 데 필요한 XAML을 보여 줍니다.
 
- [!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
 
- 다음 그림에서는 <xref:System.Windows.Window>에 호스트된 `NumericUpDown` 컨트롤을 보여 줍니다.
+다음 그림에서는 <xref:System.Windows.Window>에 호스트된 `NumericUpDown` 컨트롤을 보여 줍니다.
 
- ![사용자 지정 UserControl](../designers/media/wpfintrofigure3.png)
+![사용자 지정 UserControl](../designers/media/wpfintrofigure3.png)
 
 사용자 지정 컨트롤에 대한 자세한 내용은 [컨트롤 제작 개요](/dotnet/framework/wpf/controls/control-authoring-overview)를 참조하세요.
 

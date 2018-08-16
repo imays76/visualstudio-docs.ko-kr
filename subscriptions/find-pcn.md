@@ -9,12 +9,12 @@ description: PCN(공용 고객 번호) 또는 권한 부여 번호를 찾는 방
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325442"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637021"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>“PCN(공용 고객 번호)” 또는 권한 부여 번호를 찾으려면 어떻게 할까요?
 
@@ -25,10 +25,12 @@ ms.locfileid: "36325442"
 1.  [https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter)에서 볼륨 라이선스 서비스 센터에 로그인합니다.
 
 2. [구독] 탭에서 **Visual Studio 구독**을 선택합니다.
-    ![VLSC에서 구독 선택](_img/vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![VLSC에서 구독 선택](_img/vlsc/vlsc-subscriptions.png)
 
 3. PCN(공용 고객 번호)은 페이지 아래 중간 정도에 있습니다.
-    ![VLSC에서 PCN 찾기](_img/vlsc/vlsc-pcn.png)
+    > [!div class="mx-imgBorder"]
+    > ![VLSC에서 PCN 찾기](_img/vlsc/vlsc-pcn.png)
 
     
 위의 페이지가 표시되지 않고 Visual Studio 로그인 페이지로 리디렉션되는 경우 다음 링크를 복사하여 브라우저에 붙여넣으세요. https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch

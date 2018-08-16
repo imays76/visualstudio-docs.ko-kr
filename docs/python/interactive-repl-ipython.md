@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341509"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008218"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>대화형 창에서 IPython 사용
 
@@ -81,7 +81,7 @@ IPython 모드의 Visual Studio **대화형** 창은 사용자에게 친숙한 �
 
 IPython에는 시스템 셸로 이스케이프, 변수 대체, 캡처 출력과 같은 다른 여러 유용한 기능이 있습니다. 자세한 내용은 [IPython 설명서](http://ipython.org/documentation.html)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+### <a name="see-also"></a>참고 항목
 
 - 설치하지 않고 쉽게 Jupyter를 사용하려면 노트북을 유지하고 다른 사용자와 공유할 수 있도록 해주는 무료 [Azure Notebook 호스티드 서비스](https://notebooks.azure.com/)를 시도해보세요.
 
