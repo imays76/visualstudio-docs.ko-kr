@@ -15,11 +15,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/20/2018
 ms.locfileid: "39189258"
 ---
-1.  장치 또는 서버를 디버그 하려는 컴퓨터(대신 Visual Studio를 실행 하는 컴퓨터)에 맞는 버전의 원격 도구를 가져옵니다.
+1. 장치 또는 서버를 디버그하려는 컴퓨터(대신 Visual Studio를 실행하는 컴퓨터)에 맞는 버전의 원격 도구를 가져옵니다.
 
     |버전|링크|노트|
     |-|-|-|
-    |Visual Studio 2017 (최신 버전)|[원격 도구](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|원격 도구의 최신 버전은 모든 Visual Studio 2017 버전과 호환 됩니다. 항상 (x86, x64 또는 ARM64 과 같은)장치 운영 체제와 일치 하는 버전을 다운로드 합니다. Windows Server에서 참조 하세요 [파일 다운로드를 차단 해제](../../debugger/remote-debugging-unblock-file-download.md) 원격 도구를 다운로드 하려면 도움말에 대 한 합니다.|
+    |Visual Studio 2017(최신 버전)|[원격 도구](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|원격 도구의 최신 버전은 모든 Visual Studio 2017 버전과 호환됩니다. 항상 x86, x64 또는 ARM64와 같은 장치의 운영 체제와 일치하는 버전을 다운로드합니다. Windows Server[파일 다운로드를 차단 해제](../../debugger/remote-debugging-unblock-file-download.md)에서 원격 도구를 다운로드하려면 도움말을 참조하세요.|
     |Visual Studio 2015|[원격 도구](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 용 원격 도구 My.VisualStudio.com에서 사용할 수 있습니다. 메시지가 표시 되 면 무료 가입 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 프로그램 또는 Visual Studio 구독 ID로 로그인 합니다. Windows Server에서 참조 하세요 [파일 다운로드를 차단 해제](../../debugger/remote-debugging-unblock-file-download.md) 원격 도구를 다운로드 하려면 도움말에 대 한 합니다.|
     |Visual Studio 2013|[원격 도구](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2013 설명서에서 페이지를 다운로드 합니다.|
     |Visual Studio 2012|[원격 도구](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2012 설명서에서 페이지를 다운로드 합니다.|
