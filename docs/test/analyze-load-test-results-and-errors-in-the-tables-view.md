@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2599968aad98339014182edf21282a4e5e26fbcf
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234522"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179663"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 테이블 뷰에서 부하 테스트 결과 및 오류 분석
 
@@ -77,7 +77,7 @@ ms.locfileid: "36234522"
 |**요청**|요청의 URL입니다. 예를 들어 *home.html* 또는 *orange-arrow.gif*입니다.|예|
 |**시나리오**|시나리오 이름입니다.|예|
 |**테스트**|테스트의 이름입니다.|예|
-|**합계**|부하 테스트 실행 도중 해당 웹 성능 테스트 요청이 생성된 총 수입니다. 총 수에는 성공한 요청과 실패한 요청이 포함되지만 캐시된 요청은 웹 서버로 전송되지 않으므로 포함되지 않습니다.|예|
+|**합계**|부하 테스트 실행 도중 해당 웹 성능 테스트 요청이 생성된 총수입니다. 총수에는 성공한 요청과 실패한 요청이 포함되지만 캐시된 요청은 웹 서버로 전송되지 않으므로 포함되지 않습니다.|예|
 |**전달**|요청이 생성되어 성공한 횟수입니다.|아니요|
 |**실패**|요청이 생성되어 실패한 횟수입니다. 이 열의 항목은 하이퍼링크로 나타납니다. **부하 테스트 오류** 대화 상자에서 개별 오류 목록을 보기 위해 하이퍼링크를 선택할 수 있습니다. 자세한 내용은 [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)을 참조하세요.|예|
 |**캐시**|요청이 이미 캐시된 총 횟수입니다.|아니요|

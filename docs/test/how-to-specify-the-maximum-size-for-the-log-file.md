@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7faf5402f495eefe64000c67048bcb85c9197388
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29329cb1403745b80d68670f5316ce570582d72c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965088"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379399"
 ---
 # <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>방법: 부하 테스트의 로그 파일에 대한 최대 크기 지정
 
@@ -23,7 +23,7 @@ ms.locfileid: "31965088"
 
 ## <a name="specify-the-maximum-log-file-size-for-load-test"></a>부하 테스트의 최대 로그 파일 크기 지정
 
-1.  %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config에 있는 *QTCcontroller.exe.config* XML구성 파일을 엽니다.
+1.  *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config*에 있는 *QTCcontroller.exe.config* XML구성 파일을 엽니다.
 
 2.  `<add key="LogSizeLimitInMegs" value="20"/>` 태그 아래에서 `<appSettings>` 항목을 찾습니다.
 

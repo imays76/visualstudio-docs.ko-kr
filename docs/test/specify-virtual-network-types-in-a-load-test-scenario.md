@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a3c4a4e6db97e99d2ec2df5b27c6fd8293a182f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978299"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380230"
 ---
-# <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 Virtual Network 형식 지정
+# <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 가상 네트워크 형식 지정
 
 *네트워크 조합*은 부하 테스트 시나리오에서 보다 현실적으로 시뮬레이션하는 방법을 제공합니다. 부하는 단일 네트워크 형식 대신 유형이 다른 여러 네트워크 형식 목록을 사용하여 생성됩니다. 이를 통해 최종 사용자가 응용 프로그램과 상호 작용하는 방식을 보다 가깝게 테스트할 수 있습니다.
 
@@ -84,7 +84,7 @@ ms.locfileid: "31978299"
 
 5.  네트워크 제거를 완료했으면 **확인**을 선택합니다.
 
-## <a name="about-the-mix-control"></a>목록 컨트롤 정보
+## <a name="about-the-mix-control"></a>조합 제어 정보
 
  목록 컨트롤을 사용하면 부하 테스트 시나리오에서 여러 테스트, 브라우저 종류 또는 네트워크 형식 간에 부하가 분산되는 백분율을 조정할 수 있습니다. 백분율 값을 조정하려면 슬라이더를 움직입니다. 네트워크 형식에 대한 조합을 조정하면 부하 테스트 시나리오에서 가상 사용자가 특정 네트워크 프로필을 실행할 가능성이 지정됩니다.
 

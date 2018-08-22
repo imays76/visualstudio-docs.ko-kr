@@ -9,12 +9,12 @@ description: 클라우드 구독에 대한 관리자 설정
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a3a275ae81915ddf9eb89a59c4f90108df1f33da
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335686"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231282"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Visual Studio 클라우드 구독에 대한 관리자 설정
 
@@ -46,6 +46,8 @@ Visual Studio 클라우드 구독을 구매하는 경우 구매하는 데 사용
 
 새 관리자는 지금 [관리 포털](https://manage.visualstudio.com)에 로그인하여 페이지의 왼쪽 상단 모서리에 있는 목록에서 클라우드 구독을 구매하는 데 사용된 동일한 Azure 구독을 선택하고 이러한 구독을 관리하기 시작합니다. 
 
+> [!NOTE]
+> 관리자로 설정하지 않은 클라우드 구독을 편집할 수 있는 액세스 권한이 사용자에게 있는 경우에는 사용자는 기본 Azure 구독에서 구독을 관리할 수 있는 역할을 가질 수 있습니다.  해당 역할에는 소유자, 참가자, 서비스 관리자 또는 공동 관리자가 포함됩니다.  자세한 내용은 https://docs.microsoft.com/vsts/billing/add-backup-billing-managers?view=vsts 항목을 참조하세요.
 
 Visual Studio 클라우드 구독에 대한 자세한 내용은 클라우드 구독 구입에서 [개요](vscloud-overview.md)를 참조합니다. Visual Studio 클라우드 구독을 구매하려면 [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)에서 Visual Studio Marketplace를 방문하세요. 
 

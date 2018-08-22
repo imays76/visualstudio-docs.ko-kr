@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ead5a3f15f5ba7f586c9dfcec86fb309cbda391f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917968"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512137"
 ---
 # <a name="code-snippet-functions"></a>코드 조각 함수
 
-세 가지 함수를 C# 코드 조각에 사용할 수 있습니다. 함수는 코드 조각의 [Function](../ide/code-snippets-schema-reference.md#function) 요소에 지정됩니다. 코드 조각을 만드는 방법에 대한 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조하세요.
+세 가지 함수를 C# 코드 조각에 사용할 수 있습니다. 함수는 코드 조각의 [Function](../ide/code-snippets-schema-reference.md#function-element) 요소에 지정됩니다. 코드 조각을 만드는 방법에 대한 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조하세요.
 
 ## <a name="functions"></a>함수
 
@@ -31,9 +31,9 @@ ms.locfileid: "31917968"
 
 |함수|설명|언어|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|`EnumerationLiteral` 매개 변수로 지정된 열거형 멤버에 대한 switch 문과 case 문 집합을 생성합니다. `EnumerationLiteral` 매개 변수는 열거형 리터럴 또는 열거형 형식에 대한 참조여야 합니다.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`ClassName()`|삽입된 코드 조각을 포함하는 클래스의 이름을 반환합니다.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`SimpleTypeName(` `TypeName` `)`|*TypeName* 매개 변수를 코드 조각이 호출되는 컨텍스트에서 가장 단순한 형태로 줄입니다.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|`EnumerationLiteral` 매개 변수로 지정된 열거형 멤버에 대한 switch 문과 case 문 집합을 생성합니다. `EnumerationLiteral` 매개 변수는 열거형 리터럴 또는 열거형 형식에 대한 참조여야 합니다.|C#|
+|`ClassName()`|삽입된 코드 조각을 포함하는 클래스의 이름을 반환합니다.|C#|
+|`SimpleTypeName(` `TypeName` `)`|*TypeName* 매개 변수를 코드 조각이 호출되는 컨텍스트에서 가장 단순한 형태로 줄입니다.|C#|
 
 ## <a name="example"></a>예
 
@@ -159,5 +159,5 @@ ms.locfileid: "31917968"
 
 ## <a name="see-also"></a>참고 항목
 
-- [Function 요소](../ide/code-snippets-schema-reference.md#function)
+- [Function 요소](../ide/code-snippets-schema-reference.md#function-element)
 - [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)

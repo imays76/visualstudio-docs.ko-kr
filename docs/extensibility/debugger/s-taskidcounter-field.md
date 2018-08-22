@@ -1,5 +1,5 @@
 ---
-title: 필드 s_taskIdCounter | Microsoft Docs
+title: s_taskIdCounter 필드 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d49881eb16e05edfc1cfc57dd9520de8991942d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf5c6b0578495e56086abb8637054e0650b07195
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126611"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252396"
 ---
 # <a name="staskidcounter-field"></a>s_taskIdCounter 필드
-에 대 한 사용 가능한 다음 식별자는 <xref:System.Threading.Tasks.Task> 개체입니다.  
+에 대 한 다음 사용할 수 있는 식별자를 <xref:System.Threading.Tasks.Task> 개체입니다.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **어셈블리:** (mscorlib.dll)에 mscorlib  
+ **어셈블리:** mscorlib (mscorlib.dll)  
   
- .NET Framework에서이 내부 멤버에 액세스할 수 없으므로, 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.  
+ .NET Framework에서이 내부 멤버에 액세스할 수 없는 때문에 다음 구문은 공통 중간 언어 (CIL) 제공 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```csharp  
 .field static assembly int32 s_taskIdCounter  
 ```  
   
 ## <a name="remarks"></a>설명  
   
-## <a name="see-also"></a>참고 항목  
- [작업 클래스](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>참고자료  
+ [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

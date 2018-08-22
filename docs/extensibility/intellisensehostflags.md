@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a096e79a64168f74150103a5f3ba3a8683fe184e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 582dc76bfd8b76ffa4d3664ab3e28f95fe2cef50
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126759"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500016"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 IntelliSense 호스트 플래그를 지정합니다.  
@@ -39,18 +39,18 @@ enum IntellisenseHostFlags
 };  
 ```  
   
-#### <a name="parameters"></a>매개 변수  
+### <a name="parameters"></a>매개 변수  
   
 |멤버|설명|  
 |-------------|-----------------|  
-|`IHF_READONLYCONTEXT`|컨텍스트 버퍼는 읽기 전용입니다.|  
-|`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. IntelliSense 대상 컨텍스트 버퍼에 포함 (의미 `!IHF_READONLYCONTEXT`).|  
+|`IHF_READONLYCONTEXT`|상황에 맞는 버퍼는 읽기 전용입니다.|  
+|`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. 상황에 맞는 버퍼에 IntelliSense 대상 (의미 `!IHF_READONLYCONTEXT`).|  
 |`IHF_SINGLELINESUBJECT`|제목 텍스트는 다중 명령줄 수 없습니다.|  
 |`IHF_FORCECOMMITTOCONTEXT`|`CanCommitIntoReadOnlyBuffer`와 동일합니다.|  
-|`IHF_OVERTYPE`|(제목 또는 컨텍스트)에서 편집 겹쳐쓰기 모드에서 수행 되어야 합니다.|  
+|`IHF_OVERTYPE`|겹쳐쓰기 모드에서 주체 또는 상황에 맞는) (에서 편집 해야 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
  SingleFileeditor.idl  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

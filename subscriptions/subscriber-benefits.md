@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 혜택 알아보기
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283265"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381548"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio 구독에 포함된 혜택
 
@@ -26,7 +26,7 @@ Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플
 도구 범주에서는 [Visual Studio IDE](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md) 및 [Azure](vs-azure.md)와 같은 중요한 혜택을 포함하여 다양한 혜택에 액세스할 수 있습니다.  구독 수준에 따라 Windows 및 Office 365 개발자 계정, Visual Studio App Center, 파트너(예: WhiteSource Bolt 및 ModernRequirements)의 혜택도 표시됩니다.
 
 ## <a name="professional-development"></a>전문적인 개발
-역량을 지속적으로 향상하고 최신 기술을 유지하는 데 도움이 되도록 업계 리더가 제공하는 최상의 온라인 교육에 액세스할 수 있습니다. 제공되는 유용한 콘텐츠의 예는 다음과 같습니다.
+역량을 지속적으로 향상하고 기술을 최신 상태로 유지하는 데 도움이 되도록 업계 선도 업체가 제공하는 최상의 온라인 교육에 액세스할 수 있습니다. 제공되는 유용한 콘텐츠의 예는 다음과 같습니다.
 - Opsgility에서 제공하는 Azure App Insights 및 Azure Cosmos DB
 - Xamarin University에서 제공하는 플랫폼 간 모바일 개발자
 - .Net 개발자용 Microsoft Azure 및 Pluralsight의 기타 유용한 콘텐츠

@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 코드 분석 경고 표시 안 함
-ms.date: 01/29/2018
+title: 코드 분석 경고 표시 안 함
+ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -16,18 +16,18 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117786"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513048"
 ---
 # <a name="suppress-code-analysis-warnings"></a>코드 분석 경고 표시 안 함
 
 경고가 적용 되지 않았음을 나타내는 하는 것이 유용 합니다. 이 코드를 검토 하 고 경고를 표시 하지 않을 수 있는 팀 멤버를 나타냅니다. 소스 비 표시 오류 (ISS) 사용 하는 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 경고를 표시 하는 특성입니다. 경고를 생성 하는 코드 세그먼트에 가까운 특성을 배치할 수 있습니다. 추가할 수 있습니다는 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 을 입력 하 여 특성을 소스 파일에 경고의 바로 가기 메뉴를 사용할 수 있습니다 합니다 **오류 목록** 자동으로 추가 합니다.
 
-<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> CODE_ANALYSIS 컴파일 기호는 컴파일 타임에 정의 된 경우에 관리 코드 어셈블리의 IL 메타 데이터에 포함 된 조건부 특성입니다.
+<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 특성이 컴파일 시간에 CODE_ANALYSIS 컴파일 기호가 정의 된 경우에 관리 코드 어셈블리의 IL 메타 데이터에 포함 된 조건부 특성입니다.
 
 C + + CLI CA 매크로 사용 하 여\_표시 안 함\_메시지나 CA\_GLOBAL\_SUPPRESS_MESSAGE 헤더 파일에 특성을 추가 합니다.
 
@@ -35,7 +35,9 @@ C + + CLI CA 매크로 사용 하 여\_표시 안 함\_메시지나 CA\_GLOBAL\_
 > 소스에서 메타 데이터를 실수로 전달 하지 않으려면-소스 비 표시 오류 릴리스 빌드에 하지 사용 해야 합니다. 또한 소스에서의 처리 비용으로 인해 응용 프로그램의 성능이 저하 될 수 있습니다.
 
 > [!NOTE]
-> Visual Studio 2017로 프로젝트를 마이그레이션하는 경우 매우 많은 수의 코드 분석 경고를 사용 하 여 직면 갑자기 수 있습니다. 경고를 해결 하 고 일시적으로 해제 하려면 코드 분석을 준비가 되지 않은, 경우 프로젝트의 속성 페이지를 엽니다 (**프로젝트** > **\<프로젝트 > 속성**)로 이동 합니다 **코드 분석** 탭 합니다. 선택 취소 **빌드에 코드 분석 사용**, 그런 다음 프로젝트를 다시 빌드합니다. 또는 코드에 대해 실행 되도록 설정 하는 다른 수의 작은 규칙을 선택할 수 있습니다. 코드 분석 경고를 해결 하려면 준비 하는 경우에 다시 설정 해야 합니다.
+> Visual Studio 2017로 프로젝트를 마이그레이션하는 경우 많은 수의 코드 분석 경고를 사용 하 여 직면 갑자기 수 있습니다. 이러한 경고에서 들어온 [Roslyn 분석기](roslyn-analyzers-overview.md)합니다. 경고를 해결할 준비가 아닌 경우 억제할 수 있습니다 모두 선택 하 여 **분석** > **코드 분석 실행 및 활성 문제를 표시 하지 않으려면**합니다.
+>
+> ![코드 분석을 실행 하 고 Visual Studio의 문제를 표시 하지 않으려면](media/suppress-active-issues.png)
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 특성
 
@@ -57,13 +59,13 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 특성의 속성은 다음과 같습니다.
 
-- **규칙 범주** -규칙이 정의 된 범주입니다. 코드 분석 규칙 범주에 대 한 자세한 내용은 참조 하세요. [관리 코드 경고](../code-quality/code-analysis-for-managed-code-warnings.md)합니다.
+- **범주** -규칙이 정의 된 범주입니다. 코드 분석 규칙 범주에 대 한 자세한 내용은 참조 하세요. [관리 코드 경고](../code-quality/code-analysis-for-managed-code-warnings.md)합니다.
 
-- **규칙 Id** -규칙의 식별자입니다. 지원 규칙 식별자에 대 한 단기 및 장기 이름을 둘 다 포함 됩니다. 짧은 이름은 CAXXXX; 긴 이름은 CAXXXX:FriendlyTypeName입니다.
+- **CheckId** -규칙의 식별자입니다. 지원 규칙 식별자에 대 한 단기 및 장기 이름을 둘 다 포함 됩니다. 짧은 이름은 CAXXXX; 긴 이름은 CAXXXX:FriendlyTypeName입니다.
 
 - **근거** -메시지를 표시 하지 않는 이유를 문서화 하는 데 사용 되는 텍스트입니다.
 
-- **메시지 Id** -각 메시지에 대 한 문제의 고유 식별자입니다.
+- **MessageId** -각 메시지에 대 한 문제의 고유 식별자입니다.
 
 - **범위** -경고가 표시 되는 대상입니다. 대상 지정 하지 않으면, 대상 특성으로 설정 됩니다. 지원 되는 범위는 다음과 같습니다.
 
@@ -77,7 +79,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
     - 멤버
 
-- **대상** -경고가 표시 되는 대상을 지정 하는 데 사용 되는 식별자입니다. 항목 정규화 된 이름을 포함 해야 합니다.
+- **대상** -경고가 표시 되는 대상을 지정 하는 데 사용 되는 식별자입니다. 정규화 된 항목 이름을 포함 해야 합니다.
 
 ## <a name="suppressmessage-usage"></a>SuppressMessage 사용
 

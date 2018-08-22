@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a8a545bafc0d25b6fc5a54affb9ff07d724fc492
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957000"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379415"
 ---
 # <a name="source-editor"></a>소스 편집기
 
@@ -78,4 +78,4 @@ Mac용 Visual Studio는 플랫폼 간 개발을 최대한 편리하고 실용적
 
 강조 표시의 색으로 할당 또는 참조 여부를 구분할 수도 있습니다. 할당은 빨간색으로, 참조는 파란색으로 강조 표시됩니다.
 
-![강조 표시의 색을 표시하는 예](media/source-editor-image7.png)
+![강조 표시 색을 보여주는 예제](media/source-editor-image7.png)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3efb5315b3adb02f74b41d193a6b9173f38ec992
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749559"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008449"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>연습: C# 또는 Visual Basic으로 간단한 응용 프로그램 만들기
 
@@ -48,7 +48,7 @@ Visual Studio에서 응용 프로그램을 만들 때 먼저 프로젝트와 솔
 
 1. **확인**을 선택합니다.
 
-HelloWPFApp 프로젝트 및 솔루션이 만들어지고 **솔루션 탐색기** 에 다양한 파일이 표시됩니다. **WPF Designer**는 분할 뷰에 디자인 뷰와 *MainWindow.xaml*의 XAML 뷰를 표시합니다. 분할자를 밀어 뷰를 더 많이 표시하거나 더 적게 표시할 수 있습니다. 시각적 뷰만 표시하거나 XAML 뷰만 표시하도록 선택할 수 있습니다. (자세한 내용은 [Windows Forms 개발자용 WPF 디자이너](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)를 참조하세요.) 다음 항목이 **솔루션 탐색기**에 나타납니다.
+HelloWPFApp 프로젝트 및 솔루션이 만들어지고 **솔루션 탐색기** 에 다양한 파일이 표시됩니다. **WPF Designer**는 분할 뷰에 디자인 뷰와 *MainWindow.xaml*의 XAML 뷰를 표시합니다. 분할자를 밀어 뷰를 더 많이 표시하거나 더 적게 표시할 수 있습니다. 시각적 뷰만 표시하거나 XAML 뷰만 표시하도록 선택할 수 있습니다. 다음 항목이 **솔루션 탐색기**에 나타납니다.
 
 ![HelloWPFApp 파일이 로드된 솔루션 탐색기](../ide/media/exploreide-hellowpfappfiles.png)
 

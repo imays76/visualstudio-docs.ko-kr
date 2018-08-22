@@ -1,5 +1,5 @@
 ---
-title: Interop 활동 디자이너-워크플로 디자이너
+title: 워크플로 디자이너에서 Interop 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,39 +12,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9eb5e8b2dbca57d28f9d350b769b5eaa90e2b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979076"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379340"
 ---
 # <a name="interop-activity-designer"></a>Interop 활동 디자이너
 
-**Interop** 활동 디자이너는 만들고 구성 하는 데 사용 되는 <xref:System.Activities.Statements.Interop> 활동입니다.
+합니다 **Interop** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.Activities.Statements.Interop> 활동입니다.
 
 ## <a name="the-interop-activity"></a>Interop 활동
- <xref:System.Activities.Statements.Interop> 활동은 워크플로의 <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName>에서 파생되는 형식의 실행을 관리합니다.
 
-### <a name="using-the-interop-activity-designer"></a>Interop 활동 디자이너 사용
- **Interop** 활동 디자이너에서 확인할 수 있습니다는 **마이그레이션** 의 범주는 **도구 상자**를 클릭 하 여 액세스는 **도구 상자**탭 (또는 선택 **도구 상자** 에서 **보기** 메뉴나 CTRL + ALT + X.)
+<xref:System.Activities.Statements.Interop> 활동은 워크플로의 <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName>에서 파생되는 형식의 실행을 관리합니다.
 
- [마이그레이션](../workflow-designer/migration-activity-designers.md) 범주를 포함 하는 <xref:System.Activities.Statements.Interop> 활동에 표시 된 **도구 상자** 프로젝트에는 전체.NET Framework 4를 대상으로 하는 경우.
+### <a name="use-the-interop-activity-designer"></a>Interop 활동 디자이너 사용
 
- 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 전체.NET Framework 4를 사용 하도록 프로젝트 대상 다시 C# 프로젝트는 **솔루션 탐색기** 선택 하 고 **속성**합니다. 에 **응용 프로그램** 탭을는 **.NET Framework 4** 옵션에 **대상 프레임 워크**합니다. 선택 된 **예** 단추는 **대상 프레임 워크 변경** 이 변경을 확인 하 라는 표시 하는 대화 상자.
+**Interop** 활동 디자이너에서 찾을 수 있습니다 합니다 **마이그레이션** 범주의 **도구 상자**를 클릭 하 여 액세스를 **도구상자**탭 합니다. 또는 선택할 **도구 상자** 에서 합니다 **뷰** 메뉴 또는 키를 눌러 **Ctrl**+**Alt** + **X**합니다.
 
- 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 전체.NET Framework 4를 사용 하도록 프로젝트 대상 다시 VB 프로젝트의 경우는 **솔루션 탐색기** 선택 하 고 **속성**합니다. 에 **컴파일** 탭을 클릭는 **고급 컴파일 옵션** 단추입니다. 선택 **.NET Framework 4** 에서 **대상 프레임 워크 목록** 클릭 하 고 **확인**합니다. 클릭는 **예** 단추는 **대상 프레임 워크 변경** 이 변경을 확인 하 라는 표시 하는 대화 상자.
+[마이그레이션](../workflow-designer/migration-activity-designers.md) 포함 된 범주를 <xref:System.Activities.Statements.Interop> 활동에만 나타나는데 **도구 상자** 프로젝트 전체.NET Framework 4를 대상으로 하는 경우.
 
- **Interop** 에서 활동 디자이너를 끌 수 있습니다는 **도구 상자** 활동은 일반적으로, 등 배치 때마다 워크플로 디자이너 화면에 끌어 놓 및는 <xref:System.Activities.Statements.Sequence>합니다. 그렇기 때문에 프로그램 <xref:System.Activities.Statements.Interop> 기본값 활동 **DisplayName** Interop의 합니다. <xref:System.Activities.Activity.DisplayName%2A> 의 헤더에서 편집할 수는 **Interop** 활동 디자이너 또는 **DisplayName** 속성 표의 상자입니다.
+C# 프로젝트 대상을 조정할 수 있습니다에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 전체.NET Framework 4를 사용 하도록 프로젝트 **솔루션 탐색기** 를 선택 하 고 **속성**합니다. 에 **응용 프로그램** 탭을 선택 합니다 **.NET Framework 4** 옵션을 **대상 프레임 워크**. 선택 **예** 이 변경 내용을 확인 합니다.
 
- 클릭는 **찾아보려면 클릭...**  의 텍스트는 **ActivityType** 상자는 **Interop** 활동 디자이너를 표시 하려면 속성 표에 **찾아보기.Net 유형을 선택** 대화 상자입니다. 워크플로 3.0 또는 워크플로 3.5 활동의 형식(<xref:System.Workflow.ComponentModel.Activity>에서 파생된 형식)만 표시됩니다. 형식을 지정 하려면이 상자를 사용 하는 방법에 대 한 자세한 내용은 참조는 [찾아.NET 유형 선택 대화 상자](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md) 항목입니다.
+VB 프로젝트 대상을 조정할 수 있습니다에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 전체.NET Framework 4를 사용 하도록 프로젝트 **솔루션 탐색기** 를 선택 하 고 **속성**합니다. 에 **컴파일할** 탭을 클릭 합니다 **고급 컴파일 옵션** 단추입니다. 선택 **.NET Framework 4** 에서 합니다 **대상 프레임 워크 목록**를 클릭 하 고 **확인**합니다. 선택 **예** 이 변경 내용을 확인 합니다.
+
+합니다 **Interop** 활동 디자이너에서 끌 수 있습니다 **도구 상자** 작업은 일반적으로, 등 배치 때마다 워크플로 디자이너 화면에 놓여진 및는 <xref:System.Activities.Statements.Sequence>합니다. 삭제 된 **Interop** 활동 디자이너를 만듭니다를 <xref:System.Activities.Statements.Interop> 기본값을 사용 하 여 활동 **DisplayName** Interop의 합니다. 편집할 수 있습니다는 <xref:System.Activities.Activity.DisplayName%2A> 의 헤더에는 **Interop** 활동 디자이너 또는 합니다 **DisplayName** 속성 그리드의 상자입니다.
+
+클릭 합니다 **찾아보려면 클릭** 에서 텍스트를 **ActivityType** 상자에서를 **Interop** 활동 디자이너나 속성 표의 열에 **찾아보기 및 선택 된.Net 형식** 대화 상자. 워크플로 3.0 또는 워크플로 3.5 활동에 대 한 형식만 표시 됩니다. 즉,에서 파생 된 형식만 <xref:System.Workflow.ComponentModel.Activity> 표시 됩니다. 이 상자를 사용 하 여 형식을 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [찾아.NET 유형 선택 대화 상자](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)합니다.
 
 ### <a name="the-interop-properties"></a>Interop 속성
- 다음 표에서는 <xref:System.Activities.Statements.Interop> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 또는 워크플로 디자이너 화면에서 편집할 수 있습니다.
+
+다음 표는 <xref:System.Activities.Statements.Interop> 속성을 디자이너에서 사용 되는 방법을 설명 합니다. 속성 표에서 또는 워크플로 디자이너 화면에서 이러한 속성을 편집할 수 있습니다.
 
 |속성 이름|필수|용도|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 활동의 이름입니다. 기본값은 Interop입니다. 표시 이름이 꼭 필요하지 않더라도 표시 이름을 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 활동의 이름입니다. 기본값은 **Interop**합니다. 표시 이름에 필요 하지는 않지만 것이 좋습니다 하나를 제공 합니다.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|<xref:System.Activities.Statements.Interop> 활동에 포함된 활동의 형식을 지정합니다. 지정된 이 형식은 <xref:System.Workflow.ComponentModel.Activity>에서 파생된 것이어야 합니다.|
 
 ## <a name="see-also"></a>참고자료

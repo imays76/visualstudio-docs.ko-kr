@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: f44ad3a7c44f9de592d3b4d4add261fca74f5c39
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281302"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231858"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>ALM(Application Lifecycle Management) 및 Xamarin 앱
 
@@ -45,7 +45,7 @@ Xamarin 앱은 일부 ALM 도구를 빌드하는 C# 및 .NET으로 빌드되기 
 
 ## <a name="modeling"></a>모델링
 
-참조 링크: **[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)**
+참조 링크: **[분석 및 모델 아키텍처](../modeling/analyze-and-model-your-architecture.md)**
 
 디자인 기능은 코딩 언어에 독립적이며 C#과 같은 .NET 언어에서 작동합니다. 코드와 관련된 사항에 대한 자세한 내용은 [소프트웨어 개발에서 아키텍처 및 모델링 다이어그램의 역할](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools)을 참조하세요.
 

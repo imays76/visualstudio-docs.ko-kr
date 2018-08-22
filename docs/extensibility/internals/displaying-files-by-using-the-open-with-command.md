@@ -1,5 +1,5 @@
 ---
-title: 파일 열기 명령을 사용 하 여 표시 | Microsoft Docs
+title: 명령을 사용 하 여 열기를 사용 하 여 파일을 표시 합니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,26 +15,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c708bb5a510748b08cac5b46b6829b908e74e0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6983e9ee7b7cc88efb4870ab0836b856621aeeee
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128622"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497530"
 ---
-# <a name="displaying-files-by-using-the-open-with-command"></a>파일 열기 명령을 사용 하 여 표시
-프로젝트를 표시 하려면 IDE를 요청할 수는 **프로그램** 대화 상자. 이 요청 라는 표준 편집기는 선택 항목에 있는 파일을 열 수입니다. 다음 단계는이 프로세스를 설명 합니다.  
+# <a name="display-files-by-using-the-open-with-command"></a>연결 프로그램 명령을 사용 하 여 파일을 표시 합니다.
+프로젝트를 표시 하기 위해 IDE를 요청할 수 있습니다 합니다 **연결 프로그램** 대화 상자. 이 요청 라는 표준 편집기의 선택 된 파일을 열 수입니다. 다음 단계는이 프로세스를 설명합니다.  
   
-1.  프로젝트를 호출 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, OSE_UseOpenWithDialog에 대 한 값을 지정 하는 `OSEOpenDocEditor` 매개 변수입니다.  
+1.  프로젝트를 호출 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>에 값을 지정 `OSE_UseOpenWithDialog` 에 대 한는 `OSEOpenDocEditor` 매개 변수입니다.  
   
-2.  문서의 파일 이름 확장명에 따라, IDE 레지스트리 수에 나열 된는 편집기에서 지정 된 문서를 열을 결정 하며이 정보에 표시 된 **연결** 대화 상자.  
+2.  문서의 파일 이름 확장명에 따라 IDE 지정된 된 문서를 열고 레지스트리 있습니다 나열 하는 편집기 결정 및에이 정보를 표시 합니다 **프로그램** 대화 상자.  
   
     > [!NOTE]
-    >  에 꼭 포함 되어야 하는 기본 편집기가 프로젝트에는 **프로그램** 이러한 각 편집기에 대 한 대화 상자 편집기 팩터리를 등록 해야 합니다. 구현에 적용 되는 프로젝트의 특정 형식과 함께 편집기 내장 함수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 메서드. IDE에는 핵심 텍스트 편집기와 바이너리 편집기에 대 한 기본 제공 편집기 팩터리입니다. IDE는 또한 각 등록 된 Windows 파일 연결을 대신 하 여 편집기 팩터리의 인스턴스를 만듭니다. 이러한 파일의 예는 Microsoft Word입니다.  
+    >  에 포함 되어야 하는 내장 함수 편집기를 포함 하는 프로젝트를 **연결 프로그램** 대화 상자는 이러한 각 편집기에 대 한 편집기 팩터리를 등록 해야 합니다. 내장 함수 편집기의 구현에 적용 하는 프로젝트의 특정 형식과 함께 함수를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 메서드. IDE에는 핵심 텍스트 편집기 및 바이너리 편집기에 대 한 기본 제공 편집기 팩터리입니다. IDE는 또한 각 등록 된 Windows 파일 연결을 대신 하 여 편집기 팩터리의 인스턴스를 만듭니다. 이러한 파일의 예로 Microsoft Word입니다.  
   
-3.  항목을 선택 하는 즉시는 **프로그램** 대화 상자에서 다음 IDE를 호출 하 여 문서를 엽니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드. 자세한 내용은 참조 [하는 방법: 표준 편집기 열기](../../extensibility/how-to-open-standard-editors.md)합니다.  
+3.  사용자가에서 항목을 선택 합니다 **연결 프로그램** 대화 상자에서 다음 IDE를 호출 하 여 문서를 엽니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드. 자세한 내용은 [방법: 표준 편집기 열기](../../extensibility/how-to-open-standard-editors.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [열기 및 프로젝트 항목 저장](../../extensibility/internals/opening-and-saving-project-items.md)   
  [파일 열기 명령을 사용 하 여 파일을 표시 합니다.](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
  [방법: 표준 편집기 열기](../../extensibility/how-to-open-standard-editors.md)

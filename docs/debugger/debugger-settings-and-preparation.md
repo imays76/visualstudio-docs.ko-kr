@@ -1,7 +1,7 @@
 ---
 title: 디버거 설정 및 준비 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151576"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468301"
 ---
 # <a name="debugger-settings-and-preparation"></a>디버거 설정 및 준비
 이 단원에서는 디버거 관련 속성 설정에 대해 설명하고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거를 사용하여 프로그램을 디버깅하는 데 필요한 준비 사항에 대해 설명합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 프로젝트 템플릿을 사용하여 프로그램을 만들면 디버그 구성에서 이 설정이 올바르게 활성화됩니다.  
@@ -50,9 +50,6 @@ ms.locfileid: "39151576"
   
  [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)  
  64비트 응용 프로그램을 디버그하는 방법을 설명합니다.  
-  
- [디버깅 및 호스팅 프로세스](../debugger/debugging-and-the-hosting-process.md)  
- 호스팅 프로세스의 다양한 측면에 대해 설명합니다.  
   
  [방법: 디버깅을 위한 .NET Framework 버전 지정](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  레지스트리 키를 설정하여 사용할 버전을 디버거에 알리는 방법을 설명합니다.  

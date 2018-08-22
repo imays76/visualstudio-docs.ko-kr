@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e2ee64002d286c899f638f2fed16d4ef22abc7
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080775"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512212"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 및 Authenticode
 *Authenticode* 는 업계 표준 암호화를 사용하여 응용 프로그램 게시자의 신뢰성을 확인하는 디지털 인증서로 응용 프로그램 코드에 서명하는 Microsoft 기술입니다. 응용 프로그램 배포에 Authenticode를 사용하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 는 트로이 목마의 위험을 줄입니다. 트로이 목마는 악의적인 제3자가 신뢰할 수 있는 기존의 소스에서 온 적법한 프로그램처럼 속여 표시하는 바이러스 또는 기타 유해 프로그램입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포에 디지털 인증서로 서명하는 것은 어셈블리와 파일이 손상되지 않았음을 확인하기 위한 선택적인 단계입니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "39080775"
   
  반면, 인증서 공급업체와 같은 CA 또는 기업 내 부서로부터 인증서를 받아 사용하면 사용자에게 더 나은 보안을 제공할 수 있습니다. 이러한 인증서는 서명된 소프트웨어의 게시자를 식별하는 것은 물론 서명한 CA를 통해 해당 ID의 유효성을 확인합니다. CA가 루트 인증 기관이 아닌 경우 Authenticode는 루트 인증 기관에 다시 "연결"하여, 해당 CA가 인증서를 발급할 권한이 있는 곳인지를 확인합니다. 보안을 강화하려면 가능한 경우에는 언제든 CA에서 발급한 인증서를 사용해야 합니다.  
   
- 자체 인증서를 생성 하는 방법에 대 한 자세한 내용은 참조 하십시오 [New-selfsignedcertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) 하거나 [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)합니다.  
+ 자체 인증서를 생성 하는 방법에 대 한 자세한 내용은 참조 하십시오 [New-selfsignedcertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) 하거나 [MakeCert](/windows/desktop/SecCrypto/makecert)합니다.  
   
 ### <a name="timestamps"></a>타임스탬프  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 서명에 사용된 인증서는 특정 기간(대개 12개월) 이후 만료됩니다. 계속해서 새 인증서로 응용 프로그램에 다시 서명해야 하는 불편을 없애기 위해 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 는 타임스탬프를 지원합니다. 응용 프로그램을 타임스탬프로 서명하면, 타임스탬프가 유효한 경우 해당 인증서는 심지어 만료 이후에도 계속 허용됩니다. 따라서 인증서는 만료되었지만 타임스탬프는 유효한 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 다운로드하여 실행할 수 있습니다. 또한 만료된 인증서가 있는 설치된 응용 프로그램이 계속해서 업데이트를 다운로드하고 설치할 수 있습니다.  

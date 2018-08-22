@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb86d41096ddcd45cbef9bf9a3a6ffbffe188c0
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 99b67f8ea89b4ea1308cf6db8ced359768861699
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281804"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251883"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
@@ -164,6 +164,6 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [Add Office 365 API's to a Visual Studio project](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)(Visual Studio 프로젝트에 Office 365 API 추가)
+- [Visual Studio 프로젝트에 Office 365 API 추가](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
 - [Azure App Service - Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)
 - [Visual Studio App Center](https://docs.microsoft.com/appcenter)

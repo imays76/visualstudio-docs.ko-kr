@@ -14,28 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3e764220fe5fe01e20b66af403dfd8b423e34e7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b909c1df4aa776f0f92d72c679ecdacb42227c18
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234028"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510492"
 ---
-# <a name="registering-an-expression-evaluator"></a>식 계산기 등록
+# <a name="register-an-expression-evaluator"></a>식 계산기 등록
 > [!IMPORTANT]
->  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+>  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
- 식 계산기 (EE) Windows COM 환경과 Visual Studio를 사용 하 여 클래스 팩터리로 자체를 등록 해야 합니다. EE 디버그 엔진 (DE) 주소 공간 또는 따라 엔터티 인스턴스화하는 EE에서 Visual Studio 주소 공간을 삽입할 수 있도록 DLL로 구현 됩니다.  
+ 식 계산기 (EE) Windows COM 환경과 Visual Studio를 사용 하 여 클래스 팩터리로 자체를 등록 해야 합니다. EE는 DLL로 있도록 설정에 따라 엔터티 인스턴스화하는 EE에서 Visual Studio 주소 공간을 또는 디버그 엔진 (DE) 주소 공간에 삽입 됩니다.  
   
 ## <a name="managed-code-expression-evaluator"></a>관리 코드 식 계산기  
- EE VSIP 프로그램에 대 한 호출에 의해 시작 일반적으로 COM 환경과 자체를 등록 하는 dll을 클래스 라이브러리로 구현 되는 관리 코드 **regpkg.exe**합니다. COM 환경에 대 한 레지스트리 키를 작성 하는 실제 프로세스는 자동으로 처리 됩니다.  
+ EE VSIP 프로그램에 대 한 호출에 의해 시작 일반적으로 COM 환경과 자체를 등록 하는 dll을 클래스 라이브러리로 구현 되는 관리 코드 *regpkg.exe*합니다. COM 환경에 대 한 레지스트리 키를 작성 하는 실제 프로세스는 자동으로 처리 됩니다.  
   
  기본 클래스의 메서드를 사용 하 여 표시할지 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, com DLL이 등록 될 때 호출 되는 메서드를 나타내는 이 등록 메서드를 자주 호출 `RegisterClass`, Visual Studio를 사용 하 여 DLL을 등록 하는 작업을 수행 합니다. 해당 `UnregisterClass` (표시 합니다 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>)를 수행한 `RegisterClass` DLL을 제거 하는 경우.  
-  
- 동일한 레지스트리 항목을 관리 되지 않는 코드에서 작성 하는 EE와 이루어집니다. 유일한 차이점은 있는지 도우미 함수가 같은 `SetEEMetric` 에 작업을 수행 합니다. 이 등록 또는 등록 취소 프로세스의 예는 다음과 같습니다.  
+ 동일한 레지스트리 항목을 관리 되지 않는 코드에서 작성 하는 EE와 이루어집니다. 유일한 차이점은 있는지 도우미 함수가 같은 `SetEEMetric` 에 작업을 수행 합니다. 다음은 등록 및 등록 취소 프로세스의 예입니다.  
   
 ### <a name="example"></a>예  
- 이 함수는 EE 관리 되는 코드를 등록 하 고 Visual Studio를 사용 하 여 자체 등록을 취소 하는 방법을 보여 줍니다.  
+ 다음 함수는 EE 관리 되는 코드를 등록 하 고 Visual Studio를 사용 하 여 자체 등록을 취소 하는 방법을 보여 줍니다.  
   
 ```csharp  
 namespace EEMC  
@@ -105,14 +104,14 @@ namespace EEMC
  EE DLL를 구현 하는 `DllRegisterServer` COM 환경 뿐만 아니라 Visual Studio를 사용 하 여 자체를 등록 하는 함수입니다.  
   
 > [!NOTE]
->  VSIP 설치 EnVSDK\MyCPkgs\MyCEE 아래에 있는 파일 dllentry.cpp에서 MyCEE 코드 샘플 레지스트리 코드를 찾을 수 있습니다.  
+>  파일에는 MyCEE 레지스트리 코드 예제를 찾을 수 있습니다 *dllentry.cpp*를 VSIP 설치 EnVSDK\MyCPkgs\MyCEE 아래에 있는 합니다.  
   
 ### <a name="dll-server-process"></a>DLL 서버 프로세스  
  DLL server는 EE 등록 하는 경우:  
   
 1.  해당 클래스 팩터리를 등록 `CLSID` 일반 COM 규칙에 따라 합니다.  
   
-2.  도우미 함수를 호출 `SetEEMetric` EE 메트릭을 다음 표에 나와 있는 Visual Studio를 사용 하 여 등록 합니다. 함수 `SetEEMetric` 및 아래에 지정 된 메트릭은 dbgmetric.lib 라이브러리의 일부입니다. 참조 [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 세부 정보에 대 한 합니다.  
+2.  도우미 함수를 호출 `SetEEMetric` EE 메트릭을 다음 표에 나와 있는 Visual Studio를 사용 하 여 등록 합니다. 함수 `SetEEMetric` 의 일부인 다음과 같이 지정 된 메트릭 및 합니다 *dbgmetric.lib* 라이브러리입니다. 참조 [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 세부 정보에 대 한 합니다.  
   
     |메트릭|설명|  
     |------------|-----------------|  
@@ -127,7 +126,7 @@ namespace EEMC
 3.  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 아래에 키를 만들어 Visual Studio를 사용 하 여 등록\\*X.Y*여기서 *X.Y* 등록 하도록 Visual Studio의 버전입니다.  
   
 ### <a name="example"></a>예  
- 이 함수에는 관리 되지 않는 코드 (c + +) EE 등록 하 고 Visual Studio를 사용 하 여 자체 등록을 취소 하는 방법을 보여 줍니다.  
+ 다음 함수에는 관리 되지 않는 코드 (c + +) EE 등록 하 고 Visual Studio를 사용 하 여 자체 등록을 취소 하는 방법을 보여 줍니다.  
   
 ```cpp  
 /*---------------------------------------------------------  
@@ -213,6 +212,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

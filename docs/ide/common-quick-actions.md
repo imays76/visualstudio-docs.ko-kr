@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2b3c0ddc63dcf9b094b3ca6fb8b66f32a82cca59
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063728"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638357"
 ---
 # <a name="common-quick-actions"></a>일반적인 빠른 작업
 
@@ -102,7 +102,7 @@ private void MyMethod()
 
 ### <a name="make-method-asynchronous"></a>메서드 비동기화
 
-메서드 내에서 `await` 또는 `Await` 키워드를 사용하는 경우 메서드 자체가 `async` 또는 `Async` 키워드로 표시되는 것으로 예상됩니다.  그러나 그렇지 않을 경우 빠른 작업은 메서드를 비동기화할 수 있음을 나타냅니다. [빠른 작업] 메뉴에서 **Make method/Function asynchronous**(메서드/함수 비동기화) 옵션을 사용합니다.
+메서드 내에서 `await` 또는 `Await` 키워드를 사용하는 경우 메서드 자체가 `async` 또는 `Async` 키워드로 표시되는 것으로 예상됩니다.  그러나 그렇지 않을 경우 빠른 작업은 메서드를 비동기화함을 나타냅니다. [빠른 작업] 메뉴에서 **Make method/Function asynchronous**(메서드/함수 비동기화) 옵션을 사용합니다.
 
 ```csharp
 // Before
@@ -142,7 +142,7 @@ End Function
 
 ### <a name="remove-unnecessary-usingsimports"></a>불필요한 using/Import 제거
 
-**Remove Unnecessary Usings/Imports**(불필요한 Using/Import 제거) 빠른 작업은 현재 파일에 대해 사용되지 않은 `using` 및 `Import` 문을 제거합니다.  이 항목을 선택하면 사용되지 않은 네임스페이스 가져오기가 바로 제거됩니다.
+**불필요한 using/Import 제거** 빠른 작업은 현재 파일에 대해 사용되지 않은 `using` 및 `Import` 문을 제거합니다.  이 항목을 선택하면 사용되지 않은 네임스페이스 가져오기가 제거됩니다.
 
 |  해당 언어 |  지원되는 버전 |
 |  -------------------- | ----------------  |
@@ -150,7 +150,7 @@ End Function
 
 ### <a name="remove-unnecessary-cast"></a>불필요한 캐스트 제거
 
-형식을 캐스트가 필요 없는 다른 형식으로 캐스트하는 경우 **불필요한 캐스트 제거** 빠른 작업 항목은 코드에서 캐스트를 제거합니다.
+형식을 캐스트가 필요 없는 다른 형식으로 캐스트하는 경우 **불필요한 캐스트 제거** 빠른 작업 항목은 불필요한 캐스트를 제거합니다.
 
 ```csharp
 // before
@@ -868,7 +868,7 @@ Dim name = customer.name
 
 ### <a name="use-inferred-names"></a>유추된 이름 사용
 
-이러한 빠른 작업은 사용자가 익명 형식의 유추된 멤버 이름을 사용할 수 있는 경우 또는 C# 7.1의 유추된 튜플 요소 이름을 사용할 수 있는 경우를 가려냅니다.
+이 빠른 작업은 튜플에서 익명 형식 또는 유추된 요소 이름에서 유추된 멤버 이름을 사용하도록 코드를 단순화할 수 있는 시기를 찾아냅니다.
 
 ```csharp
 // Before
@@ -923,7 +923,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>메서드 동기화
 
-메서드에서 `async` 또는 `Async` 키워드를 사용하면 해당 메서드 내 어딘가에서 `await` 또는 `Await` 키워드도 사용될 것으로 예상됩니다.  그러나 그렇지 않을 경우 빠른 작업은 `async` 또는 `Async` 키워드를 제거하고 반환 형식을 변경하여 메서드를 동기화할 수 있음을 나타냅니다. [빠른 작업] 메뉴에서 **Make method synchronous**(메서드 동기화) 옵션을 사용합니다.
+메서드에서 `async` 또는 `Async` 키워드를 사용하면 해당 메서드 내에서 `await` 또는 `Await` 키워드도 사용될 것으로 예상됩니다.  그러나 그렇지 않을 경우 빠른 작업은 `async` 또는 `Async` 키워드를 제거하고 반환 형식을 변경하여 메서드를 동기화한다고 표시합니다. [빠른 작업] 메뉴에서 **Make method synchronous**(메서드 동기화) 옵션을 사용합니다.
 
 ```csharp
 // Before

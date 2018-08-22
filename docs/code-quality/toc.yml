@@ -28,6 +28,11 @@
   items:
     - name: 관리 코드에 대한 코드 분석
       items:
+        - name: FxCop에서 마이그레이션
+          href: fxcop-analyzers.yml
+          items:
+            - name: FxCop 분석기 설치
+              href: install-fxcop-analyzers.md
         - name: Roslyn 분석기 설치
           href: install-roslyn-analyzers.md
         - name: Roslyn 분석기 구성 및 사용
@@ -570,6 +575,8 @@
               href: ca3076-insecure-xslt-script-execution.md
             - name: 'CA3077: API 디자인, XML 문서 및 XML 텍스트 판독기의 안전하지 않은 처리'
               href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+            - name: 'CA3147: ValidateAntiForgeryToken을 사용하여 동사 처리기 표시'
+              href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: 사용법 경고
           href: usage-warnings.md
           items:

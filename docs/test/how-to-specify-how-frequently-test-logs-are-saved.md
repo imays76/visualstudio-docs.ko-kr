@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4114a938f643cee629311a72aec72f94cfcd2fc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3464ffc1db1a757ac20e3f77d0d901ec731a7cab
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966656"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381936"
 ---
 # <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 테스트 로그를 저장할 빈도 지정
 
@@ -25,19 +25,19 @@ ms.locfileid: "31966656"
 > [!NOTE]
 > 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 
-부하 테스트 편집기의 속성 창에서 **완료된 테스트에 대한 로그 빈도 저장** 속성을 변경하여 부하 테스트에서 테스트 로그가 저장되는 빈도를 지정할 수 있습니다.
+**속성** 창에서 **완료된 테스트에 대한 로그 빈도 저장** 속성을 변경하도록 **부하 테스트 편집기**를 사용하여 부하 테스트에서 테스트 로그가 저장되는 빈도를 지정할 수 있습니다.
 
 ## <a name="to-specify-the-frequency-for-saving-the-test-log-in-a-load-test"></a>부하 테스트에서 테스트 로그를 저장하는 빈도를 지정하려면
 
 1.  부하 테스트를 엽니다.
 
-     부하 테스트 편집기가 나타납니다. 부하 테스트 트리가 표시됩니다.
+     **부하 테스트 편집기**가 나타납니다. 부하 테스트 트리가 표시됩니다.
 
-2.  부하 테스트 트리 **실행 설정** 폴더에서 테스트 로그가 저장되는 빈도를 지정할 실행 설정 노드를 선택합니다.
+2.  부하 테스트 트리의 **실행 설정** 폴더에서 테스트 로그가 저장되는 빈도를 지정할 실행 설정 노드를 선택합니다.
 
 3.  **보기** 메뉴에서 **속성 창**을 선택합니다.
 
-     시나리오의 범주와 속성이 속성 창에 표시됩니다.
+     시나리오의 범주와 속성이 **속성** 창에 표시됩니다.
 
 4.  **완료된 테스트에 대한 로그 빈도 저장** 속성에 대한 텍스트 상자에 테스트 로그를 작성할 빈도를 나타내는 숫자를 입력합니다. 테스트 횟수가 이 숫자에 이를 때마다 테스트 로그에 테스트가 기록됩니다. 예를 들어 10을 값으로 입력하면 10번째, 20번째, 30번째 테스트 등이 테스트 로그에 기록됩니다.
 
@@ -52,6 +52,5 @@ ms.locfileid: "31966656"
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [연습: 부하 테스트 생성 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
-- [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [방법: 테스트 실패를 테스트 로그에 저장할지 여부 지정](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)
-- [방법: 가상 사용자 동작 차트를 활성화하도록 전체 정보 수집 구성](../test/how-to-configure-load-tests-to-collect-full-details.md)
+- [방법: 가상 사용자 작업 차트를 활성화하도록 전체 정보 수집 구성](../test/how-to-configure-load-tests-to-collect-full-details.md)

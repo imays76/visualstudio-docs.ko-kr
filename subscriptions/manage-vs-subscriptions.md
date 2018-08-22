@@ -9,12 +9,12 @@ description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 40fa40ed6606fb9e1cae35c0acccfe7dd46bf920
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327000"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637346"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -59,14 +59,14 @@ Visual Studio 구독 포털은 향상된 단일 포털 환경에서 모든 Visua
 
 ### <a name="which-subscription-am-i-using"></a>어떤 구독을 사용하고 있나요?
 [혜택] 페이지에서 사용 중인 구독은 파란색 배너에 눈에 띄게 표시됩니다.  또한 페이지의 오른쪽 위에도 표시됩니다.
-
-   ![활성 구독](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> [!div class="mx-imgBorder"]
+> ![활성 구독](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>구독 간에 전환하려면 다음을 수행할 수 있습니다.
 - 오른쪽 위의 드롭다운을 클릭하고 목록에서 구독을 선택합니다.
 - [구독] 탭을 클릭한 다음 원하는 구독을 클릭합니다.
-
-   ![구독 전환](_img\manage-vs-subscriptions\change-subscription-resized.png)
+> [!div class="mx-imgBorder"]
+> ![구독 전환](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>구독이 표시되지 않는 경우
 - 구독이 만료되었을 수 있습니다.  구독자 포털에는 활성 구독만 표시됩니다.
@@ -102,7 +102,8 @@ Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다
 3.  **정보** 탭에서 이름, 전자 메일, 국가/지역, 프로필 사진 및 연락처 기본 설정을 변경할 수 있습니다.  **기본 설정** 탭에서 기본 설정된 언어, 날짜 및 시간 패턴, 시간대 및 사용자 인터페이스 테마를 선택할 수 있습니다.  
 4.  변경이 완료되면 **저장**을 클릭합니다. 
 5.  브라우저의 **뒤로** 단추를 클릭하여 [혜택] 페이지로 돌아갑니다. 
-    ![프로필 정보 편집](_img\manage-vs-subscriptions\edit-profile-resized.png)
+    > [!div class="mx-imgBorder"]    
+    > ![프로필 정보 편집](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>내 구독을 기존 VSTS 또는 Azure 구독에 연결
@@ -115,7 +116,8 @@ Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다
 2. **구독** 탭을 클릭합니다.
 3. **관련 링크** 아래에서 **대체 계정 추가**를 선택합니다.
 4. 회사/학교 계정 이메일 주소를 입력하고 **추가**를 클릭합니다. 
-    ![대체 계정](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![대체 계정](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 대체 계정을 추가하면 언제든지 **구독** 탭을 클릭하고 **관련 링크** 섹션에서 적절한 옵션을 선택하여 해당 계정을 업데이트하거나 제거할 수 있습니다.  
 

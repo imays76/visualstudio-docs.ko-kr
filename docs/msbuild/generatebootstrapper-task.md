@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a81b02d4179c58c63c1429aa2e522bb39bb9aaf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945938"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177739"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 작업
 응용 프로그램과 해당 필수 조건을 검색, 다운로드, 설치할 수 있는 자동화된 방법을 제공합니다. 이 작업은 응용 프로그램을 구성하는 모든 구성 요소에 대한 개별 설치 관리자를 통합하는 단일 설치 관리자로 사용됩니다.  
@@ -86,7 +86,7 @@ ms.locfileid: "37945938"
   
      선택적 `String` 출력 매개 변수입니다.  
   
-     setup.exe의 빌드 위치를 지정합니다.  
+     *setup.exe*의 빌드 위치를 지정합니다.  
   
 -   `ComponentsLocation`  
   

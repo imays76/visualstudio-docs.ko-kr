@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d73e1748be34dda6913937ce71858b1c3648ea
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 87f54ec6e284a913f8bdb87826f585b7c4f38a4c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326734"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233141"
 ---
-# <a name="writing-multi-processor-aware-loggers"></a>다중 프로세서 인식 로거 작성
+# <a name="write-multi-processor-aware-loggers"></a>다중 프로세서 인식 로거 작성
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다중 프로세서를 사용할 수 있기 때문에 프로젝트 빌드 시간을 줄일 수 있는 반면 이벤트 로깅 빌드 과정이 복잡해집니다. 단일 프로세서 환경에서 이벤트, 메시지, 경고 및 오류는 예측 가능하고 순차적인 방식으로 로거에 도착합니다. 그러나 다중 프로세서 환경에서 여러 원본의 이벤트는 동시에 또는 순서 없이 도착할 수 있습니다. 이러한 문제를 방지하기 위해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 다중 프로세서 인식 로거와 새 로깅 모델이 제공되며, 사용자 지정 "전달 로거"를 만들 수 있습니다.  
   
 ## <a name="multi-processor-logging-challenges"></a>다중 프로세서 로깅 문제  
@@ -33,7 +33,7 @@ ms.locfileid: "36326734"
  다중 프로세서 관련 빌드 문제를 방지하기 위해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 두 개의 로깅 모델, 중앙 로깅 모델 및 분산 로깅 모델을 지원합니다.  
   
 ### <a name="central-logging-model"></a>중앙 로깅 모델  
- 중앙 로깅 모델에서 MSBuild.exe의 단일 인스턴스는 "중앙 노드"의 역할을 하며 중앙 노드의 자식 인스턴스("보조 노드")는 빌드 작업을 수행할 수 있도록 중앙 노드에 연결합니다.  
+ 중앙 로깅 모델에서 *MSBuild.exe*의 단일 인스턴스는 “중앙 노드”의 역할을 하며 중앙 노드의 자식 인스턴스(“보조 노드”)는 빌드 작업을 수행할 수 있도록 중앙 노드에 연결합니다.  
   
  ![중앙 로거 모델](../msbuild/media/centralnode.png "CentralNode")  
   
@@ -67,13 +67,13 @@ public interface INodeLogger: ILogger
 -   <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>라는 미리 작성된 전달 로거를 사용자 지정합니다.  
   
 -   사용자 고유의 사용자 지정 전달 로거를 작성합니다.  
-  
- 요구 사항에 맞게 ConfigurableForwardingLogger를 수정할 수 있습니다. 이렇게 하려면 MSBuild.exe를 사용하여 명령줄에서 로거를 호출하고 로거에서 중앙 노드로 전달하려는 빌드 이벤트를 나열합니다.  
-  
- 대신 사용자 지정 전달 로거를 만들 수 있습니다. 사용자 지정 전달 로거를 만들어 로거의 동작을 미세 조정할 수 있습니다. 그러나 사용자 지정 전달 로거를 만드는 것은 ConfigurableForwardingLogger를 사용자 지정하는 것보다 더 복잡합니다. 자세한 내용은 [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조하세요.  
+
+요구 사항에 맞게 ConfigurableForwardingLogger를 수정할 수 있습니다. 이렇게 하려면 *MSBuild.exe*를 사용하여 명령줄에서 로거를 호출하고 로거에서 중앙 노드로 전달하려는 빌드 이벤트를 나열합니다.  
+
+대신 사용자 지정 전달 로거를 만들 수 있습니다. 사용자 지정 전달 로거를 만들어 로거의 동작을 미세 조정할 수 있습니다. 그러나 사용자 지정 전달 로거를 만드는 것은 ConfigurableForwardingLogger를 사용자 지정하는 것보다 더 복잡합니다. 자세한 내용은 [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조하세요.  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>단순 분산 로깅에 ConfigurableForwardingLogger 사용  
- ConfigurableForwardingLogger 또는 사용자 지정 전달 로거를 연결하려면 MSBuild.exe 명령줄 빌드에서 `/distributedlogger` 스위치(간단하게 `/dl`)를 사용합니다. 로거 형식 및 클래스의 이름을 지정하기 위한 형식은 분산 로거가 항상 하나 대신 두 개의 로깅 클래스(전달 로거 및 중앙 로거)를 가진 것을 제외하고 `/logger` 스위치에 대한 것과 동일합니다. 다음은 XMLForwardingLogger라는 사용자 지정 전달 로거를 연결하는 방법의 예입니다.  
+ ConfigurableForwardingLogger 또는 사용자 지정 전달 로거를 연결하려면 *MSBuild.exe* 명령줄 빌드에서 `/distributedlogger` 스위치(간단하게 `/dl`)를 사용합니다. 로거 형식 및 클래스의 이름을 지정하기 위한 형식은 분산 로거가 항상 하나 대신 두 개의 로깅 클래스(전달 로거 및 중앙 로거)를 가진 것을 제외하고 `/logger` 스위치에 대한 것과 동일합니다. 다음은 XMLForwardingLogger라는 사용자 지정 전달 로거를 연결하는 방법의 예입니다.  
   
 ```cmd  
 msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  

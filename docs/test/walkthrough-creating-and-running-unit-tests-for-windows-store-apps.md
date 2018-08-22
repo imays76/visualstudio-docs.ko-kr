@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d8ca3f4b847e00f029b22d32965fb3ca89ff871a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751717"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380485"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>연습: UWP 앱의 유닛 테스트 만들기 및 실행
 
@@ -34,7 +34,7 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
 
 1.  **파일** 메뉴에서 **새 프로젝트**를 선택합니다.
 
-     새 프로젝트 대화 상자가 표시됩니다.
+     **새 프로젝트** 대화 상자가 표시됩니다.
 
 2.  템플릿에서 단위 테스트를 만들 프로그래밍 언어를 선택하고 연결된 Windows 유니버설 단위 테스트 라이브러리를 선택합니다. 예를 들면 **Visual C#** 를 선택하고 **Windows 유니버셜**을 선택한 다음 **단위 테스트 라이브러리(유니버셜 Windows)** 를 선택합니다.
 
@@ -48,17 +48,17 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
 
      ![맞춤형 단위 테스트 라이브러리](../test/media/unit_test_win8_1.png)
 
-     솔루션 탐색기는 UWP 단위 테스트 프로젝트로 채워지며 코드 편집기에는 UnitTest1이라는 제목의 기본 단위 테스트가 표시됩니다.
+     **솔루션 탐색기**는 UWP 단위 테스트 프로젝트로 채워지며 코드 편집기에는 UnitTest1이라는 제목의 기본 단위 테스트가 표시됩니다.
 
      ![새 맞춤형 단위 테스트 프로젝트](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>단위 테스트 프로젝트의 UWP 앱 매니페스트 파일 편집
 
-1.  솔루션 탐색기에서 *Package.appxmanifest* 파일을 마우스 오른쪽 단추로 클릭하고 **열기**를 선택합니다.
+1.  **솔루션 탐색기**에서 *Package.appxmanifest* 파일을 마우스 오른쪽 단추로 클릭하고 **열기**를 선택합니다.
 
-     편집하기 위해 매니페스트 디자이너를 표시합니다.
+     편집하기 위해 **매니페스트 디자이너**를 표시합니다.
 
-2.  매니페스트 디자이너에서 **기능** 탭을 선택합니다.
+2.  **매니페스트 디자이너**에서 **기능** 탭을 선택합니다.
 
 3.  **기능**의 목록에서 단위 테스트와 테스트하는 코드에 필요한 기능을 선택합니다. 예를 들어, 단위 테스트에 필요하고 테스트하려는 코드에 인터넷 액세스 기능이 있어야 하는 경우 **인터넷** 확인란을 선택합니다.
 
@@ -69,7 +69,7 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
 
 ## <a name="code-the-unit-test-for-a-uwp-app"></a>UWP 앱에 대한 단위 테스트 코딩
 
-코드 편집기에서, 단위 테스트를 편집하고 테스트에 필요한 어설션과 논리를 추가합니다.
+**코드 편집기**에서 단위 테스트를 편집하고 테스트에 필요한 어설션과 논리를 추가합니다.
 
 ## <a name="run-unit-tests"></a>단위 테스트 실행
 
@@ -77,7 +77,7 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
 
 1.  **테스트** 메뉴에서 **창**을 선택한 다음 **테스트 탐색기**를 선택합니다.
 
-     테스트 탐색기가 테스트 목록 없이 표시됩니다.
+     **테스트 탐색기**가 테스트를 나열하지 않고 표시됩니다.
 
 2.  **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
 
@@ -86,7 +86,7 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
     > [!NOTE]
     > 테스트 탐색기에서 단위 테스트 목록을 업데이트하는 솔루션을 빌드해야 합니다.
 
-3.  테스트 탐색기에서 만든 단위 테스트를 선택합니다.
+3.  **테스트 탐색기**에서 만든 단위 테스트를 선택합니다.
 
     > [!TIP]
     > 테스트 탐색기는 **소스:** 옆의 소스 코드에 대한 링크를 제공합니다.
@@ -102,11 +102,11 @@ Visual Studio에는 단위 테스트 UWP(유니버설 Windows 플랫폼) 앱에 
     >
     > ![단위 테스트 탐색기 &#45; 단위 테스트 바로 가기 메뉴](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
-    단위 테스트가 실행됩니다. 완료되면, 테스트 탐색기는 테스트 상태와 경과된 시간을 표시하고 소스에 대한 링크를 제공합니다.
+    단위 테스트가 실행됩니다. 작업이 완료되면 **테스트 탐색기**는 테스트 상태와 경과된 시간을 표시하고 원본에 대한 링크를 제공합니다.
 
     ![단위 테스트 탐색기 &#45; 테스트 완료됨](../test/media/unit_test_win8_unittestexplorer_done.png)
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio로 UWP 앱 테스트](../test/testing-store-apps-with-visual-studio.md)
+- [Visual Studio를 사용하여 UWP 앱 테스트](../test/testing-store-apps-with-visual-studio.md)
 - [UWP 앱 빌드 및 테스트](/vsts/build-release/apps/windows/universal?tabs=vsts)

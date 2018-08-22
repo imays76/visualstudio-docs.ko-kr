@@ -9,16 +9,16 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b9448fa36d6329296731c69a1cfe1f2d97240df1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751035"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380527"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Visual Studio에서 CTest for C++를 사용하는 방법 | Microsoft Docs
 
-CMake(CTest 포함)는 **C++를 통한 데스크톱 개발** 워크로드의 구성 요소로 기본적으로 Visual Studio IDE에 통합되어 있습니다. 사용자의 컴퓨터에 설치해야 하는 경우 Visual Studio 설치 관리자 프로그램을 열고, **수정** 단추를 클릭하고, 워크로드 구성 요소 목록에서 [Visual C++용 CMake 도구](/cpp/ide/cmake-tools-for-visual-cpp)를 선택합니다.
+CMake(CTest 포함)는 **C++를 통한 데스크톱 개발** 워크로드의 구성 요소로 기본적으로 Visual Studio IDE에 통합되어 있습니다. 사용자의 머신에 설치해야 하는 경우 Visual Studio 설치 관리자 프로그램을 열고, **수정** 단추를 클릭한 다음, 워크로드 구성 요소 목록에서 [Visual C++용 CMake 도구](/cpp/ide/cmake-tools-for-visual-cpp)를 선택합니다.
 
 ## <a name="to-write-tests"></a>테스트를 작성하려면
 
@@ -36,7 +36,7 @@ CTest를 사용하지만 Google 또는 Boost 어댑터를 사용하지 않는 �
 
 ## <a name="to-run-tests-visual-studio-2017-version-155"></a>테스트를 실행하려면(Visual Studio 2017 버전 15.5)
 
-**Visual Studio 2017 버전 15.5**에서 CTest는 **테스트 탐색기**에 통합되어 있지 않습니다. CMake 주 메뉴나, **솔루션 탐색기**에서 **CMakeLists.txt** 파일의 바로 가기 메뉴에서 테스트를 실행할 수 있습니다. 테스트 결과는 Visual Studio **출력 창**으로 전달됩니다.
+**Visual Studio 2017 버전 15.5**에서 CTest는 **테스트 탐색기**에 통합되어 있지 않습니다. CMake 주 메뉴나, **솔루션 탐색기**에서 *CMakeLists.txt* 파일의 바로 가기 메뉴에서 테스트를 실행할 수 있습니다. 테스트 결과는 Visual Studio **출력 창**으로 전달됩니다.
 
 ![VS2017 15.5에서 CTest 테스트 실행](media/cpp-cmake-run-tests.png)
 

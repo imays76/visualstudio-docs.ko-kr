@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 457953d161d6fd31c686199e76bdedbe548f5b8f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f00291fded1f289d07aafd6124a96f38d3d99b78
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977715"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276808"
 ---
 # <a id="top"> </a> Azure의 Visual Studio 이미지
 
@@ -35,7 +35,7 @@ Azure Marketplace에서 최신 주 버전(Visual Studio 2017 및 Visual Studio 2
 | 릴리스 버전                                              | 버전                     |     제품 버전     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
 | Visual Studio 2017: 최신(버전 15.7)                    |    Enterprise, Community     |      버전 15.7.5     |
-| Visual Studio 2017: 최신 미리 보기(버전 15.8, 미리 보기 4) |    Enterprise, Community     |      버전 15.8.4     |
+| Visual Studio 2017: 최신 미리 보기(버전 15.8, 미리 보기 5) |    Enterprise, Community     |      버전 15.8.5     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      버전 15.0.15    |
 |   Visual Studio 2015: 최신(업데이트 3)                      |    Enterprise, Community     |  버전 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             없음             | (서비스 만료됨) |

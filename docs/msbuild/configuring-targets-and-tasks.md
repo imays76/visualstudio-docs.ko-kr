@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 114e63d1d54f67f15215d17724962b191074588f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b6075eea96d217b029f7febb8bcf80aef2a47eb2
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946553"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151147"
 ---
 # <a name="configure-targets-and-tasks"></a>대상 및 작업 구성
 MSBuild 대상 및 작업을 구성하여 MSBuild를 통해 out-of-process로 실행할 수 있으므로 현재 실행하고 있는 컨텍스트와는 다른 컨텍스트를 대상으로 지정할 수 있습니다. 예를 들어, 개발 컴퓨터가 64비트 .NET Framework 4.5 운영 체제에서 실행되는 동안 32비트 .NET Framework 2.0 응용 프로그램을 대상으로 지정할 수 있습니다. 또한 .NET Framework 4 또는 이전 버전을 실행하는 컴퓨터를 대상으로 지정할 수 있습니다. 32비트 또는 64비트 및 특정 .NET Framework 버전의 조합은 *대상 컨텍스트*로 알려져 있습니다.  
   
 ## <a name="installation"></a>설치  
- .NET Framework 4.5 및 4.5.1은 CLR(공용 언어 런타임), 대상, 작업 및 .NET Framework 4의 도구를 이름을 바꾸지 않고 대체합니다. .NET Framework 4.5.1이 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]의 부분으로 설치됩니다.  
+ .NET Framework 4.5 및 4.5.1은 CLR(공용 언어 런타임), 대상, 작업 및 .NET Framework 4의 도구를 이름을 바꾸지 않고 대체합니다. .NET Framework 4.5.1이 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]의 일부로 설치됩니다.  
   
  Visual Studio와 개별적으로 MSBuild를 설치하려면 [MSBuild 다운로드](http://go.microsoft.com/fwlink/?LinkId=309745)에서 설치 패키지를 다운로드할 수 있습니다. 또한 사용하려는 .NET Framework 버전도 설치해야 합니다.  
   

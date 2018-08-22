@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b1a3ff7cbd2025a909ab0c5fb044bb61b24388ff
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325297"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151202"
 ---
-# <a name="msbuild-transforms"></a>MSBuild 변형
+# <a name="msbuild-transforms"></a>MSBuild 변환
 변환은 항목 목록 간의 일대일 변환입니다. 변환을 수행하면 프로젝트가 항목 목록을 변환할 수 있을 뿐만 아니라, 대상이 입력과 출력 간의 직접 매핑을 식별할 수 있습니다. 이 항목에서는 변환 및 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 변환을 사용하여 보다 효율적으로 프로젝트를 빌드하는 방법을 설명합니다.  
   
 ## <a name="transform-modifiers"></a>변환 한정자  
-변환은 임의적이지만 모든 변환 한정자가%(*ItemMetaDataName*) 형식인 특별한 구문으로 제한됩니다. 모든 항목 메타데이터를 변환 한정자로 사용할 수 있습니다. 모든 항목이 생성될 때 할당되는 잘 알려진 항목 메타데이터가 포함됩니다. 잘 알려진 항목 메타데이터의 목록은 [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조하세요.  
+변환은 임의적이지만 모든 변환 한정자가%(\<ItemMetaDataName>) 형식인 특별한 구문으로 제한됩니다. 모든 항목 메타데이터를 변환 한정자로 사용할 수 있습니다. 모든 항목이 생성될 때 할당되는 잘 알려진 항목 메타데이터가 포함됩니다. 잘 알려진 항목 메타데이터의 목록은 [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조하세요.  
   
 다음 예제에서는 *.resx* 파일 목록이 *.resources* 파일의 목록으로 변환됩니다. %(Filename) 변환 한정자는 각 *.resources* 파일이 해당하는 *.resx* 파일과 동일한 파일 이름을 갖도록 지정합니다.  
   
@@ -38,7 +38,7 @@ ms.locfileid: "36325297"
 >  표준 항목 목록에 구분 기호를 지정한 것과 동일한 방식으로 변환된 항목 목록에 사용자 지정 구분 기호를 지정할 수 있습니다. 예를 들어 기본 세미콜론(;) 대신 쉼표(,)를 사용하여 변환된 항목 목록을 구분하려면 다음 XML을 사용합니다.  
 > `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
   
-## <a name="using-multiple-modifiers"></a>여러 한정자 사용  
+## <a name="use-multiple-modifiers"></a>여러 한정자 사용  
  변환 식은 순서에 관계 없이 결합되고 반복될 수 있는 여러 개의 한정자를 포함할 수 있습니다. 다음 예제에서는 파일을 포함하는 디렉터리의 이름을 변경하지만 파일의 원래 이름 및 파일 이름 확장명을 유지합니다.  
   
 ```xml  
@@ -67,7 +67,7 @@ ms.locfileid: "36325297"
 ## <a name="example"></a>예  
   
 ### <a name="description"></a>설명  
- 다음 예제에서는 변환을 사용하는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일을 보여줍니다. 이 예제에서는 c:\sub0\sub1\sub2\sub3 디렉터리에 .xsd 파일 하나만 있고 작업 디렉터리가 c:\sub0이라고 가정합니다.  
+ 다음 예제에서는 변환을 사용하는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일을 보여줍니다. 이 예제에서는 *c:\sub0\sub1\sub2\sub3* 디렉터리에 *.xsd* 파일 하나만 있고 작업 디렉터리가 *c:\sub0*이라고 가정합니다.  
   
 ### <a name="code"></a>코드  
   

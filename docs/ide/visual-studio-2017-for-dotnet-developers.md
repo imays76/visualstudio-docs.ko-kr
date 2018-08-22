@@ -12,24 +12,25 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37175306"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468275"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 생산성 가이드
 
 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)이 개발자의 생산성을 높이는 방법을 알아봅니다. 디컴파일된 어셈블리에 대한 탐색, 입력 시 변수 이름 제안, **테스트 탐색기**에서 계층 구조 보기, 파일/유형/멤버/기호 선언 탐색하려면 전체로 이동(**Ctrl**+**T**), 지능형 **예외 도우미**, 코드 스타일 구성 및 적용, 많은 리팩터링 및 코드 수정과 같은 성능 및 생산성 향상 기능을 활용합니다.
 
-##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>다른 확장/편집기/IDE에서 내 바로 가기 키에 익숙합니다.
+## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>다른 확장/편집기/IDE에서 내 바로 가기 키에 익숙함
 
 **Visual Studio 2017 버전 15.8의 새로운 기능** 다른 IDE 또는 코딩 환경에서 전환하는 경우 키보드 구성표를 *Visual Studio Code* 또는 *ReSharper(Visual Studio)* 로 변경할 수 있습니다.
 
 ![Visual Studio의 키보드 구성표](../ide/media/VS2017Guide-Keyboard.png)
 
 또한 일부 확장은 키보드 구성표를 제공합니다.
+
 - [Visual Studio용 바로 가기 키(ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [Emacs 에뮬레이션](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
@@ -58,23 +59,29 @@ ms.locfileid: "37175306"
 
 [설명서](..\ide\tips-and-tricks-for-visual-studio.md)의 Visual Studio에 있는 바로 가기 키 및 명령을 자세히 알아봅니다.
 
-## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>파일 또는 형식을 빠르게 탐색하는 방법이 있어야 합니다.
-Visual Studio 2017에 **전체로 이동**(**Ctrl**+**T**)이라는 기능이 있습니다. 전체로 이동은 사용자를 모든 파일, 형식, 멤버 또는 기호 선언으로 빠르게 이동하게 할 수 있습니다.
-- 이 검색 표시줄의 위치를 변경하거나 **기어** 아이콘을 사용하여 '라이브 탐색 미리 보기'를 꺼둠
+## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>파일 또는 형식을 빠르게 탐색하는 방법이 있어야 함
+
+Visual Studio 2017에 **전체로 이동**(**Ctrl**+**T**)이라는 기능이 있습니다. **전체로 이동**은 사용자를 모든 파일, 형식, 멤버 또는 기호 선언으로 빠르게 이동하게 할 수 있습니다.
+
+- 이 검색 표시줄의 위치를 변경하거나 **기어** 아이콘을 사용하여 ‘라이브 탐색 미리 보기’를 끕니다.
 - 쿼리 구문(예: "t mytype")을 사용하여 결과를 필터링합니다. 또한 현재 문서만으로 검색 범위를 지정할 수 있습니다.
 - camelCase 일치가 지원됩니다!
 
 ![Visual Studio에서 전체로 이동](../ide/media/VS2017Guide-go-to-all.png)
 
-## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>팀은 코드 스타일 규칙을 코드베이스에 적용합니다.
+## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>팀이 코드 스타일 규칙을 코드베이스에 적용함
+
 *.editorconfig* 파일을 사용하여 코딩 규칙을 체계화하고 소스에서 이동하도록 할 수 있습니다.
-- Visual Studio에서 *.editorconfig* 파일을 추가하고 편집하려면 [EditorConfig 언어 서비스 확장](https://aka.ms/editorconfig)을 설치하는 것이 좋습니다.
-- 모든 .NET 코딩 규칙 옵션에 대해서는 [설명서](https://aka.ms/editorconfigDocs)를 확인하세요.
-- 예제 *.editorconfig*에 대해서는 [이 요점](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8)을 참조하세요.
+
+- [EditorConfig 언어 서비스 확장](https://aka.ms/editorconfig)을 설치하여 Visual Studio에서 *.editorconfig* 파일을 쉽게 추가하고 편집할 수 있습니다.
+- [Visual Studio용 IntelliCode 확장](/visualstudio/intellicode/intellicode-visual-studio)을 사용해 보세요. 이 실험적 확장은 기존 코드에서 코드 스타일을 유추한 후 이미 정의된 코드 스타일 기본 설정을 사용하여 비어 있지 않은 *.editorconfig* 파일을 만듭니다.
+- [.NET 코딩 규칙 옵션](https://aka.ms/editorconfigDocs) 문서를 확인합니다.
+- 예제 *.editorconfig* 파일을 보려면 [이 요점](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8)을 참조하세요.
 
 ![Visual Studio에서 코드 스타일 적용](../ide/media/VSGuide_CodeStyle.png)
 
-## <a name="i-need-more-refactorings-and-code-fixes"></a>더 많은 리팩터링 및 코드 수정이 있어야 합니다.
+## <a name="i-need-more-refactorings-and-code-fixes"></a>더 많은 리팩터링 및 코드 수정이 있어야 함
+
 Visual Studio 2017에는 많은 리팩터링, 코드 생성 작업 및 코드 수정이 제공됩니다. 빨간색 오류 표시선은 오류를 나타내며, 녹색 오류 표시선은 경고를 나타내고, 세 개의 회색 점은 코드 제안 사항을 나타냅니다. 전구/스크루드라이버 아이콘을 클릭하거나 **Ctrl**+**.** 또는 **Alt**+**Enter**를 눌러 코드 수정에 액세스할 수 있습니다. 각 수정 사항은 수정 작업 방식의 라이브 코드 diff를 보여주는 미리 보기 창이 함께 제공됩니다.
 
 - 인기 있는 빠른 수정 및 리팩터링은 다음과 같습니다.
@@ -98,6 +105,7 @@ Visual Studio 2017에는 많은 리팩터링, 코드 생성 작업 및 코드 �
 ![Visual Studio에서 리팩터링](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>사용량 찾기, 구현으로 이동, 디컴파일된 어셈블리 탐색이 필요
+
 Visual Studio 2017에는 코드베이스를 검색하고 탐색하는 데 도움이 되는 여러 가지 기능이 있습니다. [코드 탐색 기능](../ide/navigating-code.md)에 대해 자세히 알아보기
 
 | 기능 | 바로 가기 | 세부 정보/개선 사항 |
@@ -111,16 +119,20 @@ Visual Studio 2017에는 코드베이스를 검색하고 탐색하는 데 도움
 
 ![전체로 이동 및 모든 참조 찾기](../ide/media/VSIDE_Productivity_Navigation.png)
 
-## <a name="i-want-to-run-and-see-my-unit-tests"></a>단위 테스트를 실행하고 참조하려 합니다.
+## <a name="i-want-to-run-and-see-my-unit-tests"></a>단위 테스트를 실행하고 확인하려고 함
+
 Visual Studio 2017의 테스트 환경이 많이 개선되었습니다. MSTest v1, MSTest v2, NUnit 또는 XUnit 테스트 프레임워크로 유닛 테스트 환경을 사용하세요.
+
 - **‘테스트 탐색기’** 테스트 검색은 버전 15.6에서 빠릅니다(최상의 결과를 위해 테스트 어댑터를 최신 버전으로 업그레이드).
 - 버전 15.6의 새 ‘계층 구조 정렬’을 사용하여 테스트 탐색기에서 테스트를 구성합니다.
 - [Live Unit Testing](../test/live-unit-testing.md)은 계속 코드 변경으로 영향을 받는 테스트를 실행하며 테스트 상태를 알려주는 인라인 편집기 아이콘을 업데이트합니다. *Live Test Set*(라이브 테스트 집합)에서 특정 테스트 또는 테스트 프로젝트를 포함하거나 제외합니다.
 
 ![Visual Studio에서 텍스트 탐색기의 계층 구조 뷰](../ide/media/VSGuide_Testing.png)
 
-## <a name="i-want-to-debug-my-code"></a>내 코드를 디버그하고 싶습니다.
+## <a name="i-want-to-debug-my-code"></a>내 코드를 디버그하려고 함
+
 Visual Studio 2017에는 새로운 디버깅 기능이 추가되었습니다.
+
 - *Run to click*(실행하려면 클릭)을 사용하면 코드 줄 옆을 가리키고, 나타나는 녹색 ‘재생’ 아이콘을 누르고, 해당 줄에 도달할 때까지 프로그램을 실행할 수 있습니다.
 - 새 **‘예외 도우미’** 는 어떤 변수가 NullReferenceException에서 ‘null’인지와 같은 가장 중요한 정보를 대화 상자의 최상위 수준에 놓습니다.
 - [뒤로 이동](../debugger/how-to-use-intellitrace-step-back.md) 디버깅을 사용하면 이전 중단점 또는 단계로 돌아가서 과거의 응용 프로그램 상태를 볼 수 있습니다.
@@ -128,19 +140,22 @@ Visual Studio 2017에는 새로운 디버깅 기능이 추가되었습니다.
 
 ![Visual Studio 2017의 새 예외 도우미](../ide/media/VSGuide_Debugging.png)
 
-## <a name="i-want-to-use-version-control-with-my-projects"></a>내 프로젝트에서 버전 제어를 사용하고 싶습니다.
+## <a name="i-want-to-use-version-control-with-my-projects"></a>내 프로젝트에서 버전 제어를 사용하려고 함
+
 git 또는 TFVC를 사용하여 Visual Studio에서 코드를 저장하고 업데이트할 수 있습니다.
+
 - **‘팀 탐색기’** 로 로컬 변경 사항을 정리하고 상태 표시줄로 보류 중인 커밋과 변경 사항을 추적합니다.
 - [Visual Studio용 지속적인 업데이트 도구](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) 확장으로 Visual Studio 내부에 프로젝트에 대한 지속적인 통합 및 업데이트를 설정하고 민첩한 개발자 워크플로를 채택합니다.
 
 ![Visual Studio에서 소스 제어](../ide/media/VSIDE_Productivity_SourceControl.png)
 
 ## <a name="what-other-features-do-i-need-to-know-about"></a>알아야 할 다른 기능은 무엇인가요?
+
 코드 작성을 보다 효율적으로 하기 위한 편집기 및 생산성 기능 목록입니다. 일부 기능은 기본적으로 활성화되어 있지 않으므로(이 기능은 컴퓨터에서 인덱싱할 수 있고 논쟁적이거나 실험적입니다) 사용하도록 설정해야 합니다.
 
 | 기능 | 설명 | 사용 방법 |
 |-|-|-|
-| 솔루션 탐색기에서 파일 찾기 | 솔루션 탐색기에서 활성 파일 강조 표시 | **솔루션 탐색기의 도구** > **옵션** > **프로젝트 및 솔루션** > **활성 항목 추적** |
+| 솔루션 탐색기에서 파일 찾기 | **솔루션 탐색기**에서 활성 파일 강조 표시 | **솔루션 탐색기의 도구** > **옵션** > **프로젝트 및 솔루션** > **활성 항목 추적** |
 | 참조 어셈블리 및 NuGet 패키지의 형식에 대한 using 추가 | 참조되지 않은 형식의 NuGet 패키지를 설치하기 위해 코드 수정이 있는 전구 표시 | **도구** > **옵션** > **텍스트 편집기** > **C#** > **고급** > **참조 어셈블리의 형식에 대한 using 제안** 및 **NuGet 패키지의 형식에 대한 using 제안** |
 | 전체 솔루션 분석 사용 | **오류 목록**에서 솔루션의 모든 오류 보기 | **도구** > **옵션** > **텍스트 편집기** > **C#** > **고급** > **전체 솔루션 분석 사용** |
 | 디컴파일된 소스에 탐색을 사용하도록 설정 | 외부 소스에서 형식/멤버에 대한 정의로 이동하고, 메서드 본문을 표시하기 위해 ILSpy 디컴파일러를 사용할 수 있습니다. | **도구** > **옵션** > **텍스트 편집기** > **C#** > **고급** > **Enable navigation to decompiled sources(디컴파일된 소스에 탐색을 사용하도록 설정)** |
@@ -149,6 +164,8 @@ git 또는 TFVC를 사용하여 Visual Studio에서 코드를 저장하고 업�
 | [코드 조각](../ide/visual-csharp-code-snippets.md) | 일반 상용구를 없애는 도움말 |  코드 조각 이름을 입력하고 **탭** 키를 두 번 누릅니다. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>생산적으로 만드는 기능이 누락되거나 성능 저하를 경험합니까?
+
 여러 가지 방법으로 피드백을 남길 수 있습니다.
+
 - .NET 기능 요청은 [GitHub 리포지토리](https://github.com/dotnet/roslyn/issues)에 제출될 수 있습니다.
 - Visual Studio 기능 요청, 버그 및 성능 문제는 Visual Studio 창의 오른쪽 상단에 있는 **사용자 의견 보내기** 아이콘을 사용하여 제출될 수 있습니다.

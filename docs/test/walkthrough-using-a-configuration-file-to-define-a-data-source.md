@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382680"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 통한 데이터 소스 정의
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 통한 데이터 원본 정의
 
-이 연습에서는 *app.config* 파일에 정의된 데이터 원본을 유닛 테스트에 사용하는 방법을 설명합니다. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 클래스에 사용될 수 있는 데이터 원본을 정의하는 app.config 파일을 만드는 방법을 알아봅니다. 이 연습에서 수행할 작업은 다음과 같습니다.
+이 연습에서는 *app.config* 파일에 정의된 데이터 원본을 유닛 테스트에 사용하는 방법을 설명합니다. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 클래스에 사용될 수 있는 데이터 원본을 정의하는 *app.config* 파일을 만드는 방법을 알아봅니다. 이 연습에서 수행할 작업은 다음과 같습니다.
 
-- app.config 파일 만들기
+- *app.config* 파일 만들기
 
 - 사용자 지정 구성 섹션 정의
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>프로젝트에 app.config 파일 추가
 
-1. 테스트 프로젝트에 이미 app.config 파일이 있는 경우 [사용자 지정 구성 섹션 정의](#DefineCustomConfigurationSection)로 이동합니다.
+1. 테스트 프로젝트에 이미 *app.config* 파일이 있는 경우 [사용자 지정 구성 섹션 정의](#define-a-custom-configuration-section)로 이동합니다.
 
 2. **솔루션 탐색기**에서 테스트 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **추가** > **새 항목**을 선택합니다.
 
@@ -53,13 +54,13 @@ ms.lasthandoff: 05/03/2018
 
 3. **응용 프로그램 구성 파일** 템플릿을 선택하고 **추가**를 클릭합니다.
 
-##  <a name="DefineCustomConfigurationSection"></a> 사용자 지정 구성 섹션 정의 Section
+##  <a name="define-a-custom-configuration-section"></a>사용자 지정 구성 섹션 정의
 
 *app.config* 파일을 검토합니다. XML 선언과 루트 요소는 반드시 포함되어야 합니다.
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>app.config 파일에 사용자 지정 구성 섹션을 추가하려면
 
-1. app.config의 루트 요소는 **configuration** 요소여야 합니다. **configuration** 요소 내에 **configSections** 요소를 만듭니다. **configSections**는 *app.config* 파일의 첫 번째 요소여야 합니다.
+1. *app.config*의 루트 요소는 **구성** 요소여야 합니다. **configuration** 요소 내에 **configSections** 요소를 만듭니다. **configSections**는 *app.config* 파일의 첫 번째 요소여야 합니다.
 
 2. **configSections** 요소 내에 **section** 요소를 만듭니다.
 
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/03/2018
 
 **section** 요소는 다음과 유사하게 표시됩니다.
 
-```
+```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 ```
 
@@ -94,7 +95,7 @@ ms.lasthandoff: 05/03/2018
 
 두 번째 **add** 요소에서 Microsoft Excel 스프레드시트에 연결하기 위한 다음과 같은 특성 및 값을 만듭니다.
 
-|||
+|특성|값|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +103,7 @@ ms.lasthandoff: 05/03/2018
 
 **connectionStrings** 요소는 다음과 유사하게 표시됩니다.
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -142,7 +143,7 @@ ms.lasthandoff: 05/03/2018
 
 두 번째 **add** 요소에서 Microsoft Excel 데이터 원본에 대해 다음과 같은 특성 및 값을 만듭니다.
 
-|||
+|특성|값|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -183,9 +184,9 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>app.config에 정의된 데이터 원본을 사용하는 단위 테스트 만들기
 
-app.config 파일을 정의했으며, 이제 app.config 파일에 정의된 데이터 원본에 있는 데이터를 사용하는 단위 테스트를 만듭니다. 이 섹션에서는 다음을 수행합니다.
+이제 *app.config* 파일을 정의했으므로 *app.config* 파일에 정의된 데이터 원본에 있는 데이터를 사용하는 단위 테스트를 만듭니다. 이 섹션에서는 다음을 수행합니다.
 
-- app.config 파일에 있는 데이터 원본을 만듭니다.
+- *app.config* 파일에 있는 데이터 원본을 만듭니다.
 
 - 각 데이터 원본의 값을 비교하는 두 개의 테스트 메서드에서 데이터 원본을 사용합니다.
 
@@ -261,7 +262,7 @@ app.config 파일을 정의했으며, 이제 app.config 파일에 정의된 데�
     }
     ```
 
-3. DataSource 특성을 검토합니다. app.config 파일에서 설정 이름을 확인합니다.
+3. DataSource 특성을 검토합니다. *app.config* 파일에서 설정 이름을 확인합니다.
 
 4. 솔루션을 빌드하고 MyTestMethod 및 MyTestMethod2 테스트를 실행합니다.
 

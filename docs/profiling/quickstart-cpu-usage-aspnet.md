@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477290"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468574"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터 분석(ASP.NET)
 
@@ -26,17 +26,11 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
 
 진단 허브에서는 진단 세션을 실행하고 관리할 수 있는 여러 가지 다른 옵션을 제공합니다. 여기서 설명한 **CPU 사용량** 도구로 필요한 데이터를 얻지 못할 경우 [다른 프로파일링 도구](../profiling/Profiling-Tools.md)로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 메모리, UI 렌더링 또는 네트워크 요청 시간 등 CPU가 아닌 곳에서 응용 프로그램의 성능 병목 현상이 발생할 수 있습니다.
 
-> [!NOTE]
-> .NET Core 및 ASP.NET Core에 대한 CPU 사용량 도구는 현재 휴대용 PBD를 통해 정확한 결과를 제공하지 않습니다. 대신 전체 PDB를 사용합니다.
-
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-1. Visual Studio에서 **파일 > 새 프로젝트**를 선택합니다.
+1. Visual Studio에서 **파일** > **새 프로젝트**를 선택합니다.
 
 1. **Visual C#** 에서 **웹**을 선택한 다음 가운데 창에서 **ASP.NET 웹 응용 프로그램(.NET Framework)** 을 선택합니다.
-
-    > [!NOTE]
-    > CPU 사용량 도구는 현재 ASP.NET Core에서 지원되지 않습니다.
 
 1. **MyProfilingApp_MVC** 같은 이름을 입력하고 **확인**을 클릭합니다.
 
@@ -132,7 +126,7 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
     }
     ```
 
-1. 솔루션 탐색기에서 Controller/HomeControllers.cs를 열고 다음 코드를 
+1. 솔루션 탐색기에서 *Controller/HomeControllers.cs*를 열고 다음 코드를
 
     ```csharp
     public ActionResult About()
@@ -156,7 +150,7 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
     }
     ```
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 1단계: 프로파일링 데이터 수집 
+##  <a name="step-1-collect-profiling-data"></a>1단계: 프로파일링 데이터 수집 
   
 1.  먼저 `Simple` 생성자의 이 코드 줄에서 앱에 중단점을 설정합니다.
 
@@ -171,9 +165,9 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
     > [!TIP]
     > 두 개의 중단점을 설정하여, 분석하려는 코드 부분으로 데이터 수집을 제한할 수 있습니다.
   
-1.  사용자가 닫지 않았다면 **진단 도구** 창이 이미 표시되어 있을 것입니다. 창을 다시 표시하려면 **디버그/Windows/진단 도구 표시**를 클릭합니다.
+1.  사용자가 닫지 않았다면 **진단 도구** 창이 이미 표시되어 있을 것입니다. 창을 다시 표시하려면 **디버그** > **Windows** > **진단 도구 표시**를 클릭합니다.
 
-1.  **디버그/디버깅 시작**을 클릭합니다(또는 도구 모음에서 **시작** 또는 **F5** 누름).
+1.  **디버그** > **디버깅 시작**을 클릭합니다(또는 도구 모음의 **시작** 또는 **F5** 키 누름).
 
 1.  앱 로드가 완료되면 앱 페이지 상단의 **About** 링크를 클릭하여 새 코드 실행을 시작합니다.
 
@@ -197,7 +191,7 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
 
      이 시점에서 데이터 분석을 시작할 수 있습니다.
 
-## <a name="Step2"></a> 2단계: CPU 사용량 데이터 분석
+## <a name="step-2-analyze-cpu-usage-data"></a>2단계: CPU 사용량 데이터 분석
 
 CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 수행하는 함수를 확인한 다음, 각 함수를 자세히 살펴보는 방식으로 데이터 분석을 시작하는 것이 좋습니다.
 
@@ -212,7 +206,7 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 
     함수를 두 번 클릭하면 **호출자/호출 수신자** 뷰가 왼쪽 창에 열립니다. 
 
-    ![진단 도구 호출자 호출 수신자 뷰](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
+    ![진단 도구 호출자/호출 수신자 뷰](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
     이 뷰에서는 선택한 함수가 제목 및 **현재 함수** 상자에 표시됩니다(이 예제의 경우 `ServerClass::GetNumber`). 현재 함수를 호출한 함수는 **호출 함수** 아래 왼쪽에 표시되고, 현재 함수에 의해 호출된 함수는 오른쪽의 **호출된 함수** 상자에 표시됩니다. 두 상자 중 하나를 선택하여 현재 함수를 변경할 수 있습니다.
 
@@ -232,4 +226,4 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 ## <a name="see-also"></a>참고 항목  
 
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

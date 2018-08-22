@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baf1fce1179dff0eb8965fbc65a2796546a4f80d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946666"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180349"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>방법: 리소스를 사용하는 프로젝트 빌드
 프로젝트의 현지화된 버전을 빌드할 경우 모든 사용자 인터페이스 요소를 언어에 따라 다른 리소스 파일로 분리해야 합니다. 프로젝트에서 문자열만 사용할 경우 리소스 파일에는 텍스트 파일이 사용됩니다. 또는 *.resx* 파일을 리소스 파일로 사용할 수 있습니다.  
   
-## <a name="compiling-resources-with-msbuild"></a>MSBuild를 사용하여 리소스 컴파일  
+## <a name="compile-resources-with-msbuild"></a>MSBuild를 사용하여 리소스 컴파일  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 통해 제공되는 일반 작업 라이브러리에는 *.resx* 또는 text 파일에서 리소스를 컴파일하는 데 사용할 수 있는 `GenerateResource` 작업이 포함됩니다. 이 작업에는 컴파일할 리소스 파일을 지정하는 `Sources` 매개 변수와 출력 리소스 파일의 이름을 지정하는 `OutputResources` 매개 변수가 포함됩니다. `GenerateResource` 작업에 대한 자세한 내용은 [GenerateResource 작업](../msbuild/generateresource-task.md)을 참조하세요.  
   
 #### <a name="to-compile-resources-with-msbuild"></a>MSBuild를 사용하여 리소스를 컴파일하려면  

@@ -1,5 +1,5 @@
 ---
-title: Guid 및 Id를 Visual Studio 메뉴 | Microsoft Docs
+title: Visual Studio 메뉴의 Guid 및 Id | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,19 +18,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 163f7b81295468a69cfb28959f608a21f94a4a99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134216"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499941"
 ---
-# <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 및 Id를 Visual Studio 메뉴
-이 항목 메뉴 및 Visual Studio 메뉴 모음에서 그룹의 GUID 및 ID 값을 열거 합니다. 이러한 값은 Visual Studio SDK의 일부로 설치 되는.vsct 파일에서 정의 됩니다. 자세한 내용은 참조 [IDE-Defined 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  
+# <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 및 Id의 Visual Studio 메뉴
+이 문서에서는 메뉴 및 Visual Studio 메뉴 모음에서 그룹의 GUID 및 ID 값을 열거합니다. 이러한 값에 정의 된 *.vsct* Visual Studio SDK의 일부로 설치 되는 파일입니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  
   
- .Vsct 파일에 정의 되어 있는 통합된 개발 환경 (IDE) 개체를 사용 하는 방법에 대 한 자세한 내용은 참조 [확장 메뉴 및 명령을](../../extensibility/extending-menus-and-commands.md)합니다.  
+ 에 정의 된 통합된 개발 환경 (IDE) 개체를 사용 하는 방법에 대 한 자세한 내용은 *.vsct* 파일을 참조 하십시오 [메뉴와 명령을 확장](../../extensibility/extending-menus-and-commands.md)합니다.  
   
- 메뉴 및 Visual Studio 메뉴 모음에서 그룹의 GUID를 사용 하 여 `guidSHLMainMenu`합니다. 메뉴 모음 자체의 ID가 `IDM_VS_TOOL_MAINMENU`합니다.  
+ 메뉴 및 Visual Studio 메뉴 모음에서 그룹을 사용 하 여 GUID `guidSHLMainMenu`합니다. 메뉴 모음 자체 ID가 `IDM_VS_TOOL_MAINMENU`입니다.  
   
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Visual Studio 메뉴 모음에서 그룹  
  메뉴 모음에 메뉴를 추가 하려면 이러한 그룹 중 하나를 부모로 설정 합니다.  
@@ -65,13 +65,13 @@ ms.locfileid: "31134216"
 |도움말|IDM_VS_MENU_HELP|  
   
 ## <a name="groups-on-visual-studio-menus"></a>Visual Studio 메뉴에는 그룹  
- 다음 목록에서는 Visual Studio 메뉴 모음에서 메뉴에서 직접 상속 하는 그룹을 나타냅니다. Visual Studio 메뉴에 명령을 추가 하는 가장 빠른 방법은 부모와 이러한 그룹 중 하나를 설정 하는 합니다. 이 섹션에는 하위 메뉴에서 물려받은 그룹 표시 되지 않습니다.  
+ 다음 목록에서는 Visual Studio 메뉴 모음에서 메뉴에서 직접 물려받은 그룹을 나타냅니다. Visual Studio 메뉴에 명령을 추가 하는 가장 빠른 방법은 부모로 이러한 그룹 중 하나를 설정 하는 것입니다. 이 섹션에는 하위 메뉴에서 물려받은 그룹 표시 되지 않습니다.  
   
 ### <a name="file-menu-groups"></a>파일 메뉴 그룹  
   
 |그룹화|ID|  
 |-----------|--------|  
-|새/열기|IDG_VS_FILE_FILE|  
+|새로 만들기/열기|IDG_VS_FILE_FILE|  
 |추가|IDG_VS_FILE_ADD|  
 |솔루션|IDG_VS_FILE_SOLUTION|  
 |기타|IDG_VS_FILE_MISC|  
@@ -79,7 +79,7 @@ ms.locfileid: "31134216"
 |이름 바꾸기|IDG_VS_FILE_RENAME|  
 |브라우저|IDG_VS_FILE_BROWSER|  
 |용|IDG_VS_FILE_PRINT|  
-|가장 최근에 사용한|IDG_VS_FILE_MRU|  
+|가장 최근에 사용 됨|IDG_VS_FILE_MRU|  
 |이동|IDG_VS_FILE_MOVE|  
 |종료|IDG_VS_FILE_EXIT|  
   
@@ -103,18 +103,18 @@ ms.locfileid: "31134216"
 |Common|IDG_REFACTORING_COMMON|  
 |고급|IDG_REFACTORING_ADVANCED|  
   
-### <a name="view-menu-groups"></a>보기 메뉴 그룹  
+### <a name="view-menu-groups"></a>메뉴 그룹 보기  
   
 |그룹화|ID|  
 |-----------|--------|  
-|양식 코드|IDG_VS_VIEW_FORMCODE|  
+|폼 코드|IDG_VS_VIEW_FORMCODE|  
 |브라우저|IDG_VS_VIEW_BROWSER|  
-|뷰 정의|IDG_VS_VIEW_DEFINEVIEWS|  
+|뷰를 정의 합니다.|IDG_VS_VIEW_DEFINEVIEWS|  
 |Windows|IDG_VS_VIEW_WINDOWS|  
-|설계자 Windows|IDG_VS_VIEW_ARCH_WINDOWS|  
+|Windows를 설계 합니다.|IDG_VS_VIEW_ARCH_WINDOWS|  
 |조직의 Windows|IDG_VS_VIEW_ORG_WINDOWS|  
 |코드 브라우저|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|  
-|Windows 개발자|IDG_VS_VIEW_DEV_WINDOWS|  
+|Windows 개발|IDG_VS_VIEW_DEV_WINDOWS|  
 |도구 모음|IDG_VS_VIEW_TOOLBARS|  
 |기호|IDG_VS_VIEW_SYMBOLNAVIGATE|  
 |이동|IDG_VS_VIEW_NAVIGATE|  
@@ -131,7 +131,7 @@ ms.locfileid: "31134216"
 |기타 추가|IDG_VS_PROJ_MISCADD|  
 |추가|IDG_VS_PROJ_ADD|  
 |폴더|IDG_VS_PROJ_FOLDER|  
-|Unload/다시 로드|IDG_VS_PROJ_UNLOADRELOAD|  
+|언로드/다시 로드|IDG_VS_PROJ_UNLOADRELOAD|  
 |참조|IDG_VS_PROJ_REFERENCE|  
 |옵션|IDG_VS_PROJ_OPTIONS|  
 |설정|IDG_VS_PROJ_SETTINGS|  
@@ -152,7 +152,7 @@ ms.locfileid: "31134216"
 |-----------|--------|  
 |명령줄|IDG_VS_TOOLS_CMDLINE|  
 |코드 조각|IDG_VS_TOOLS_SNIPPETS|  
-|개체의 하위 집합|IDG_VS_TOOLS_OBJSUBSET|  
+|개체 하위 집합|IDG_VS_TOOLS_OBJSUBSET|  
 |옵션|IDG_VS_TOOLS_OPTIONS|  
 |다른 2|IDG_VS_TOOLS_OTHER2|  
 |외부 도구|IDG_VS_TOOLS_EXT_TOOLS|  
@@ -178,10 +178,10 @@ ms.locfileid: "31134216"
 |정보|IDG_VS_HELP_ABOUT|  
   
 ## <a name="submenus-of-visual-studio-menus"></a>Visual Studio 메뉴의 하위 메뉴  
- 다음 계층에서는 Visual Studio 메뉴 모음에서 메뉴와 연결 된 하위 메뉴를 보여 줍니다. 그룹에만 부모로 메뉴 수 없으므로 모든 하위 메뉴 해야 상속 그룹에서 메뉴에서 대신 메뉴에서 직접 됩니다. 메뉴, 그룹 및 하위 메뉴 사이의 관계에 대 한 자세한 내용은 참조 [메뉴에 하위 메뉴가 추가](../../extensibility/adding-a-submenu-to-a-menu.md)합니다.  
+ 다음 계층에서는 Visual Studio 메뉴 모음에서 메뉴와 연결 된 하위 메뉴를 보여 줍니다. 그룹만 부모로 메뉴를 가질 수 있으므로 모든 하위 메뉴 해야 내림차순 그룹에서 메뉴의 대신 메뉴에서 직접. 메뉴, 그룹 및 하위 메뉴 간의 관계에 대 한 자세한 내용은 참조 하세요. [하위 메뉴에 추가](../../extensibility/adding-a-submenu-to-a-menu.md)합니다.  
   
 > [!NOTE]
->  Visual Studio 메뉴 모음에서 메뉴 이름이 표시 되지 않습니다 별도로이 계층에서 다음과 같이 IDE에서 그룹에 대 한 명명 규칙에서 유추할 수 있는 때문에: IDG_VS_*메뉴 이름*_*그룹이름*.  
+>  Visual Studio 메뉴 모음에서 메뉴의 이름을 표시 되지 않습니다 별도로이 계층 구조에 있으므로 다음과 같이 IDE에서 그룹에 대 한 명명 규칙에서 유추할 수 있습니다: *IDG_VS_\<메뉴 이름\>_\< 그룹 이름을\>* 합니다.  
   
 |부모 그룹|하위 메뉴|자식 그룹|  
 |------------------|-------------|------------------|  
@@ -196,7 +196,7 @@ ms.locfileid: "31134216"
 |||IDG_VS_FILE_MOVE_PICKER|  
 |IDG_VS_VIEW_DEV_WINDOWS|IDM_VS_CSCD_FINDRESULTS|IDG_VS_WNDO_FINDRESULTS|  
 ||IDM_VS_CSCD_WINDOWS|IDG_VS_VIEW_CALLBROWSER|  
-|||IDG_VS_WNDO_OTRWNDWS1 중... 6|  
+|||IDG_VS_WNDO_OTRWNDWS1... 6|  
 |||IDG_VS_WNDO_WINDOWS2|  
 |IDG_VS_VIEW_TOOLBARS|IDM_VS_CSCD_COMMANDBARS||  
 |IDG_VS_EDIT_GOTO|IDM_VS_EDITOR_FIND_MENU||  
@@ -215,7 +215,7 @@ ms.locfileid: "31134216"
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|  
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|  
   
-## <a name="see-also"></a>참고 항목  
- [Guid 및 Id를 Visual Studio 도구 모음](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
- [Guid 및 Id를 Visual Studio 명령](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
- [Visual Studio 명령 테이블(.Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>참고자료  
+ [Guid 및 Id의 Visual Studio 도구 모음](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
+ [Guid 및 Id의 Visual Studio 명령](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
+ [Visual Studio 명령 테이블 (.vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

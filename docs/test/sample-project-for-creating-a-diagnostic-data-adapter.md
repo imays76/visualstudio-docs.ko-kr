@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977117"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380772"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>진단 데이터 어댑터를 만들기 위한 샘플 프로젝트
 
@@ -324,7 +324,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 ```
 
-## <a name="compiling-the-code"></a>코드 컴파일
+## <a name="compile-the-code"></a>코드 컴파일
 
 ### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>이 진단 데이터 어댑터에 대한 코드 프로젝트를 만들려면
 
@@ -354,7 +354,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 7.  어셈블리 **Microsoft.VisualStudio.QualityTools.Common**을 추가합니다.
 
-    1.  솔루션 탐색기에서 **참조**를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+    1.  **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가**를 선택합니다.
 
     2.  **찾아보기**를 선택하고 **Microsoft.VisualStudio.QualityTools.Common.dll**을 찾습니다.
 
@@ -364,7 +364,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 8.  이 문서의 앞부분에 나열된 진단 데이터 어댑터 클래스를 클래스 라이브러리에 대한 클래스로 복사합니다. 이 클래스를 저장합니다.
 
-9. 프로젝트에 사용자 정의 컨트롤을 추가하려면 솔루션 탐색기에서 MyDataCollector 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음, **사용자 정의 컨트롤**을 선택합니다. **추가**를 선택합니다.
+9. 프로젝트에 사용자 정의 컨트롤을 추가하려면 **솔루션 탐색기**에서 **MyDataCollector** 프로젝트를 마우스 오른쪽 단추로 클릭하고, **추가**를 가리킨 다음, **사용자 컨트롤**을 선택합니다. **추가**를 선택합니다.
 
 10. 도구 상자를 사용하여 사용자 정의 컨트롤에 레이블을 추가하고 텍스트 속성을 **파일 이름:** 으로 변경합니다.
 
@@ -375,11 +375,11 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
     > [!NOTE]
     > 기본적으로 사용자 정의 컨트롤은 UserControl1이라고 합니다. 이 사용자 정의 컨트롤 클래스 코드가 이 예제에서 추가한 사용자 정의 컨트롤의 이름을 사용하는지 확인합니다.
 
-13. 구성 파일을 만들려면 **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음, **새 항목**을 선택합니다. **응용 프로그램 구성 파일**을 선택한 다음, **추가**를 선택합니다. 이렇게 하면 **App.config**라는 파일이 솔루션에 추가됩니다.
+13. 구성 파일을 만들려면 **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음, **새 항목**을 선택합니다. **응용 프로그램 구성 파일**을 선택한 다음, **추가**를 선택합니다. 이렇게 하면 *App.config*라는 파일이 솔루션에 추가됩니다.
 
 14. 앞에 제공된 샘플에 나와 있는 XML을 XML 파일로 복사합니다. 파일을 저장합니다.
 
-15. 솔루션을 빌드한 다음, 빌드한 어셈블리와 `App.config` 파일을 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors* 디렉터리에 복사합니다.
+15. 솔루션을 빌드한 다음, 빌드한 어셈블리와 *App.config* 파일을 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors* 디렉터리에 복사합니다.
 
 16. 이 사용자 지정 진단 데이터 어댑터를 사용하는 테스트 설정을 만듭니다. 존재하는 파일을 수집하도록 테스트 설정을 구성합니다.
 
@@ -394,4 +394,4 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 - [방법: 진단 데이터 어댑터 만들기](../test/how-to-create-a-diagnostic-data-adapter.md)
 - [방법: 진단 데이터 어댑터 데이터용 사용자 지정 편집기 만들기](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [방법: 사용자 지정 진단 데이터 어댑터 설치](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
-- [진단 데이터 어댑터를 만들어 사용자 지정 데이터를 수집하거나 테스트 컴퓨터에 영향 주기](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [진단 데이터 어댑터를 만들어 사용자 지정 데이터를 수집하거나 테스트 머신에 영향 주기](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)

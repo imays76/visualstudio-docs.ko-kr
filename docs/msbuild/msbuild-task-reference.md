@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cbaeaeca87c4e32a0c9db9a463e1f5f417527ae
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fd171f01a44a38d9256576780c3a15a322d0a43
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058648"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155303"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 작업 참조
 작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. 다음 목록의 작업이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 포함되어 있습니다. [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]가 설치되면 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 빌드하는 데 사용되는 추가 작업을 사용할 수 있습니다. 자세한 내용은 [Visual C++ 작업](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)을 참조하세요.  
@@ -34,7 +34,7 @@ ms.locfileid: "37058648"
 |`Condition`|선택적 `String` 매개 변수입니다.<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 엔진이 이 작업이 실행될지 여부를 결정하는 데 사용하는 `Boolean` 식입니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 지원되는 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|  
 |`ContinueOnError`|선택적 매개 변수입니다. 다음 값 중 하나를 포함할 수 있습니다.<br /><br /> -   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.<br />-   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.<br />-   **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.<br /><br /> .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.<br /><br /> 자세한 내용은 [방법: 작업의 오류 무시](../msbuild/how-to-ignore-errors-in-tasks.md)를 참조하세요.|  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  [Task 기본 클래스](../msbuild/task-base-class.md)  
  <xref:Microsoft.Build.Utilities.Task> 클래스에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다.  
   
@@ -48,7 +48,7 @@ ms.locfileid: "37058648"
  모듈 또는 리소스 파일에 해당하는 하나 이상의 파일에 있는 매니페스트로 어셈블리를 만듭니다.  
   
  [AspNetCompiler 작업](../msbuild/aspnetcompiler-task.md)  
- ASP.NET 응용 프로그램을 미리 컴파일하는 유틸리티인 aspnet_compiler.exe를 래핑합니다.  
+ ASP.NET 응용 프로그램을 미리 컴파일하는 유틸리티인 *aspnet_compiler.exe*를 래핑합니다.  
   
  [AssignCulture 작업](../msbuild/assignculture-task.md)  
  항목에 문화권 식별자를 할당합니다.  
@@ -72,7 +72,7 @@ ms.locfileid: "37058648"
  새 위치에 파일을 복사합니다.  
   
  [CreateCSharpManifestResourceName 작업](../msbuild/createcsharpmanifestresourcename-task.md)  
- 지정된 .resx 파일 이름 또는 기타 리소스에서 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 스타일 매니페스트 이름을 만듭니다.  
+ 지정된 *.resx* 파일 이름 또는 기타 리소스에서 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 스타일 매니페스트 이름을 만듭니다.  
   
  [CreateItem 작업](../msbuild/createitem-task.md)  
  입력 항목에서 항목 컬렉션을 채워 항목을 한 목록에서 다른 목록으로 복사할 수 있도록 합니다.  
@@ -81,7 +81,7 @@ ms.locfileid: "37058648"
  입력 값에서 속성을 채워 값을 한 속성 또는 문자열에서 다른 속성 또는 문자열로 복사할 수 있도록 합니다.  
   
  [CreateVisualBasicManifestResourceName 작업](../msbuild/createvisualbasicmanifestresourcename-task.md)  
- 지정된 .resx 파일 이름 또는 기타 리소스에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 스타일 매니페스트 이름을 만듭니다.  
+ 지정된 *.resx* 파일 이름 또는 기타 리소스에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 스타일 매니페스트 이름을 만듭니다.  
   
  [Csc 작업](../msbuild/csc-task.md)  
  Visual C# 컴파일러를 호출하여 실행 파일, 동적 연결 라이브러리 또는 코드 모듈을 생성합니다.  
@@ -99,7 +99,7 @@ ms.locfileid: "37058648"
  지정된 인수를 사용하여 지정된 프로그램 또는 명령을 실행합니다.  
   
  [FindAppConfigFile 작업](../msbuild/findappconfigfile-task.md)  
- 제공된 목록에서 app.config 파일(있는 경우)을 찾습니다.  
+ 제공된 목록에서 *app.config* 파일(있는 경우)을 찾습니다.  
   
  [FindInList 작업](../msbuild/findinlist-task.md)  
  일치하는 항목 사양을 갖는 항목을 지정된 목록에서 찾습니다.  
@@ -123,7 +123,7 @@ ms.locfileid: "37058648"
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 매니페스트를 생성합니다.  
   
  [GenerateResource 작업](../msbuild/generateresource-task.md)  
- .txt 및 .resx 파일을 공용 언어 런타임 이진 .resources 파일로 변환합니다.  
+ *.txt* 및 *.resx* 파일을 공용 언어 런타임 이진 *.resources* 파일로 변환합니다.  
   
  [GenerateTrustInfo 작업](../msbuild/generatetrustinfo-task.md)  
  기본 매니페스트, `TargetZone` 및 `ExcludedPermissions` 매개 변수에서 응용 프로그램 신뢰를 생성합니다.  
@@ -141,7 +141,7 @@ ms.locfileid: "37058648"
  다양한 프레임워크의 참조 어셈블리 경로를 반환합니다.  
   
  [LC 작업](../msbuild/lc-task.md)  
- .licx 파일에서 .license 파일을 생성합니다.  
+ *.licx* 파일에서 *.license* 파일을 생성합니다.  
   
  [MakeDir 작업](../msbuild/makedir-task.md)  
  디렉터리 및 부모 디렉터리(필요한 경우)를 만듭니다.  
@@ -171,13 +171,13 @@ ms.locfileid: "37058648"
  응용 프로그램에 .NET Framework 3.5 SP1이 필요한지 여부를 확인합니다.  
   
  ResGen 작업  
- 사용되지 않습니다. [GenerateResource 작업](../msbuild/generateresource-task.md)을 사용하여 .txt 및 .resx 파일을 공용 언어 런타임 이진 .resources 파일로 변환하거나 그 반대로 변환합니다.  
+ 사용되지 않습니다. [GenerateResource 작업](../msbuild/generateresource-task.md)을 사용하여 *.txt* 및 *.resx* 파일을 공용 언어 런타임 이진 *.resources* 파일로 변환하거나 그 반대로 변환합니다.  
   
  [ResolveAssemblyReference 작업](../msbuild/resolveassemblyreference-task.md)  
  지정된 어셈블리에 종속된 모든 어셈블리를 결정합니다.  
   
  [ResolveComReference 작업](../msbuild/resolvecomreference-task.md)  
- 하나 이상의 형식 라이브러리 이름 또는 .tlb 파일 목록을 가져온 후 해당 형식 라이브러리를 디스크의 위치로 확인합니다.  
+ 하나 이상의 형식 라이브러리 이름 또는 *.tlb* 파일 목록을 가져온 후 해당 형식 라이브러리를 디스크의 위치로 확인합니다.  
   
  [ResolveKeySource 작업](../msbuild/resolvekeysource-task.md)  
  강력한 이름 키 소스를 확인합니다.  
@@ -203,8 +203,8 @@ ms.locfileid: "37058648"
  [UnregisterAssembly 작업](../msbuild/unregisterassembly-task.md)  
  COM interop 용도로 지정된 어셈블리의 등록을 취소합니다.  
   
- [작업 압축 풀기](../msbuild/unzip-task.md)  
- 지정된 위치로 `.zip` 보관 압축을 풉니다.
+ [Unzip 작업](../msbuild/unzip-task.md)  
+ 지정된 위치로 *.zip* 보관 압축을 풉니다.
   
  [UpdateManifest 작업](../msbuild/updatemanifest-task.md)  
  매니페스트에서 선택한 속성을 업데이트하고 다시 서명합니다.  
@@ -231,7 +231,7 @@ ms.locfileid: "37058648"
  XSLT(*Extensible Stylesheet Language Transformation*) 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 장치 또는 파일로 변환합니다.  
   
   [ZipDirectory 작업](../msbuild/zipdirectory-task.md)  
- 디렉터리의 콘텐츠에서 `.zip` 보관을 만듭니다.
+ 디렉터리의 콘텐츠에서 *.zip* 보관을 만듭니다.
   
 ## <a name="see-also"></a>참고 항목  
  [MSBuild 참조](../msbuild/msbuild-reference.md)   

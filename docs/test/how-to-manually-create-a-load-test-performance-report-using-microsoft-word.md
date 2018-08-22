@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750885"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380696"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>방법: Microsoft Word를 사용하여 수동으로 부하 테스트 성능 보고서 만들기
 
@@ -30,7 +30,7 @@ ms.locfileid: "34750885"
 
 ## <a name="copy-summary-view-data"></a>요약 뷰 데이터 복사
 
-1.  요약 뷰가 현재 표시되어 있지 않은 경우 부하 테스트 결과의 도구 모음에서 **요약**을 클릭합니다.
+1.  요약 뷰가 현재 표시되어 있지 않은 경우 **부하 테스트 결과**의 도구 모음에서 **요약**을 클릭합니다.
 
 2.  요약 뷰에서 마우스 오른쪽 단추를 클릭하고 **모두 선택**을 선택합니다.
 
@@ -42,7 +42,7 @@ ms.locfileid: "34750885"
 
 ## <a name="copy-graph-view-data"></a>그래프 뷰 데이터 복사
 
-1.  그래프 뷰가 현재 표시되어 있지 않은 경우 부하 테스트 결과의 도구 모음에서 **그래프**를 선택합니다.
+1.  그래프 보기가 현재 표시되어 있지 않은 경우 **부하 테스트 결과**의 도구 모음에서 **그래프**를 선택합니다.
 
 2.  (선택 사항) 다음 그림과 같이 Microsoft Word 문서에 복사할 특정 그래프를 확대합니다. 자세한 내용은 [방법: 그래프의 영역으로 확대](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)를 참조하세요.
 

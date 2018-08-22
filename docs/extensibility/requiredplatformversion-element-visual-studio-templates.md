@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a8dc6fa57dbe88ce1e30e9be58105f28fe5641
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e040faf4d66d42b107777fd4d57f26c80d040a48
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136174"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635955"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 요소(Visual Studio 템플릿)
-프로젝트 템플릿이 제대로 작동 하는 데 필요한 운영 체제의 최소 버전을 지정 합니다. 이 요소는 만들 프로젝트 템플릿에 대 한 데 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 앱.  
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 요소 (Visual Studio 템플릿)
+프로젝트 템플릿이 제대로 작동 하는 데 필요한 운영 체제의 최소 버전을 지정 합니다. 이 요소는 프로젝트 템플릿을 만드는 데 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 앱.  
   
- `RequiredPlatformVersion` 값이 버전의 운영 체제와 직접 비교 됩니다. 경우는 `RequiredPlatformVersion` 운영 체제 버전 보다 높은에 해당 템플릿이 표시 되지 않습니다는 **새 프로젝트** 대화 상자. 에 대 한 서식 파일을 지정 하려면 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 높은, 설정 또는 `RequiredPlatformVersion` 6.2.0에 있습니다. 에 대 한 서식 파일을 지정 하려면 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 또는 6.3.0에 RequiredPlatformVersion 이상으로 설정 합니다.  
+ `RequiredPlatformVersion` 운영 체제의 버전을 사용 하 여 직접 값과 비교 됩니다. 경우는 `RequiredPlatformVersion` 운영 체제 버전 보다 높은 템플릿이 표시 되지 않습니다 합니다 **새 프로젝트** 대화 상자. 에 대 한 템플릿을 지정 하려면 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 더 높고, 설정 또는 `RequiredPlatformVersion` 6.2.0 하 합니다. 에 대 한 템플릿을 지정 하려면 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 더 높고, 설정 또는 `RequiredPlatformVersion` 를 6.3.0으로 합니다.  
   
  지정 하는 템플릿 `RequiredPlatformVersion`= 8 이전 고객와 호환 되는 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 템플릿.  
   
@@ -55,9 +55,9 @@ RequiredPlatformVersion
  텍스트 값은 필수입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 텍스트는 서식 파일에 필요한 최소 운영 체제 버전을 지정 합니다.  
+ 이 텍스트 템플릿에 필요한 최소 운영 체제 버전을 지정 합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 프로젝트 템플릿이 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 이상을 대상으로 하도록 지정합니다.  
   
 ```xml  
@@ -73,7 +73,7 @@ RequiredPlatformVersion
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [TargetPlatformName 요소 (Visual Studio 템플릿)](../extensibility/targetplatformname-element-visual-studio-templates.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

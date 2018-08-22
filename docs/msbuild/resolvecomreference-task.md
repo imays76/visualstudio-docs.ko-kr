@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8bf991ca4bec8befde5a11673dcb056f5e50f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578174"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152401"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 작업
-하나 이상의 형식 라이브러리 이름 또는 .tlb 파일 목록을 가져온 후 해당 형식 라이브러리를 디스크의 위치로 확인합니다.  
+하나 이상의 형식 라이브러리 이름 또는 *.tlb* 파일 목록을 가져온 후 해당 형식 라이브러리를 디스크의 위치로 확인합니다.  
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 `ResolveCOMReference` 작업의 매개 변수에 대해 설명합니다.  
@@ -36,11 +36,11 @@ ms.locfileid: "31578174"
 |매개 변수|설명|  
 |---------------|-----------------|  
 |`DelaySign`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 공개 키를 어셈블리에 배치합니다. `false`인 경우 어셈블리에 완전히 서명합니다.|  
-|`EnvironmentVariables`|선택적 `String[]` 매개 변수입니다.<br /><br /> 등호로 구분된 환경 변수 쌍의 배열입니다. 이러한 변수는 생성된 tlbimp.exe 및 aximp.exe에 전달되면서 일반 환경 블록에 추가되거나 일부 일반 환경 블록을 재정의합니다.|  
-|`ExecuteAsTool`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 해당 대상 프레임워크 out-of-proc에서 tlbimp.exe 및 aximp.exe를 실행하여 필요한 래퍼 어셈블리를 생성합니다. 이 매개 변수는 멀티 타기팅을 허용합니다.|  
+|`EnvironmentVariables`|선택적 `String[]` 매개 변수입니다.<br /><br /> 등호로 구분된 환경 변수 쌍의 배열입니다. 이러한 변수는 생성된 *tlbimp.exe* 및 *aximp.exe*에 전달되면서 일반 환경 블록에 추가되거나 일부 일반 환경 블록을 재정의합니다.|  
+|`ExecuteAsTool`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 해당 대상 프레임워크 out-of-proc에서 *tlbimp.exe* 및 *aximp.exe*를 실행하여 필요한 래퍼 어셈블리를 생성합니다. 이 매개 변수는 멀티 타기팅을 허용합니다.|  
 |`IncludeVersionInInteropName`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 typelib 버전이 래퍼 이름이 포함됩니다. 기본값은 `false`입니다.|  
-|`KeyContainer`|선택적 `String` 매개 변수입니다.<br /><br /> 공개/개인 키 쌍을 보관할 컨테이너를<br /><br /> 지정합니다.|  
-|`KeyFile`|선택적 `String` 매개 변수입니다.<br /><br /> 공개/개인 키 쌍을 포함할 항목을<br /><br /> 지정합니다.|  
+|`KeyContainer`|선택적 `String` 매개 변수입니다.<br /><br /> 공개/개인 키 쌍을 보관할 컨테이너를 지정합니다.|  
+|`KeyFile`|선택적 `String` 매개 변수입니다.<br /><br /> 공개/개인 키 쌍을 포함할 항목을 지정합니다.|  
 |`NoClassMembers`|선택적 `Boolean` 매개 변수입니다.|  
 |`ResolvedAssemblyReferences`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 확인된 어셈블리 참조를 지정합니다.|  
 |`ResolvedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 디스크에서 이 작업에 대한 입력으로 제공된 형식 라이브러리의 물리적 위치에 해당하는 정규화된 파일을 지정합니다.|  
@@ -48,12 +48,10 @@ ms.locfileid: "31578174"
 |`SdkToolsPath`|선택적 <xref:System.String?displayProperty=fullName> 매개 변수입니다.<br /><br /> `ExecuteAsTool`이 `true`인 경우 이 매개 변수를 대상이 되는 프레임워크 버전의 SDK 도구 경로로 설정해야 합니다.|  
 |`StateFile`|선택적 `String` 매개 변수입니다.<br /><br /> COM 구성 요소 타임스탬프에 대한 캐시 파일을 지정합니다. 이 매개 변수가 없으면 실행할 때마다 모든 래퍼가 다시 생성됩니다.|  
 |`TargetFrameworkVersion`|선택적 `String` 매개 변수입니다.<br /><br /> 프로젝트 대상 프레임워크 버전을 지정합니다.<br /><br /> 기본값은 `String.Empty`입니다. 대상 프레임워크를 기반으로 하는 참조에 대한 필터링이 없음을 의미합니다.|  
-|`TargetProcessorArchitecture`|선택적 `String` 매개 변수입니다.<br /><br /> 기본 대상 프로세서 아키텍처를 지정합니다. 변환 후에 tlbimp.exe /machine 플래그에 전달됩니다.<br /><br /> 매개 변수 값은 <xref:Microsoft.Build.Utilities.ProcessorArchitecture>의 멤버여야 합니다.|  
-|`TypeLibFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> COM 참조에 대한 형식 라이브러리 파일 경로를 지정합니다. 이 매개 변수에 포함된 항목에는 항목 메타데이터가 포함될 수 있습니다. 자세한 내용은 아래 “TypeLibFiles 항목 메타데이터” 섹션을 참조하세요.|  
-|`TypeLibNames`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 확인할 형식 라이브러리 이름을 지정합니다. 이 매개 변수에 포함된 항목에는 일부 항목 메타데이터가 포함되어야 합니다. 자세한 내용은 아래 “TypeLibNames 항목 메타데이터” 섹션을 참조하세요.|  
+|`TargetProcessorArchitecture`|선택적 `String` 매개 변수입니다.<br /><br /> 기본 대상 프로세서 아키텍처를 지정합니다. 변환 후에 *tlbimp.exe*/machine 플래그에 전달됩니다.<br /><br /> 매개 변수 값은 <xref:Microsoft.Build.Utilities.ProcessorArchitecture>의 멤버여야 합니다.|  
+|`TypeLibFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> COM 참조에 대한 형식 라이브러리 파일 경로를 지정합니다. 이 매개 변수에 포함된 항목에는 항목 메타데이터가 포함될 수 있습니다. 자세한 내용은 아래 [TypeLibFiles 항목 메타데이터](#typelibfiles-item-metadata) 섹션을 참조하세요.|  
+|`TypeLibNames`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 확인할 형식 라이브러리 이름을 지정합니다. 이 매개 변수에 포함된 항목에는 일부 항목 메타데이터가 포함되어야 합니다. 자세한 내용은 아래 [TypeLibNames 항목 메타데이터](#typelibnames-item-metadata) 섹션을 참조하세요.|  
 |`WrapperOutputDirectory`|선택적 `String` 매개 변수입니다.<br /><br /> 생성된 interop 어셈블리를 배치할 디스크의 위치입니다. 이 항목 메타데이터를 지정하지 않으면 작업은 프로젝트 파일이 있는 디렉터리의 절대 경로를 사용합니다.|  
-  
-## <a name="remarks"></a>설명  
   
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames 항목 메타데이터  
  다음 표에서는 `TypeLibNames` 매개 변수에 전달된 항목에 사용 가능한 항목 메타데이터를 설명합니다.  

@@ -9,18 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235065"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380719"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 
 코딩된 UI 테스트는 Internet Explorer로 테스트를 기록하여 웹 응용 프로그램 테스트를 자동화합니다. 그런 다음 이러한 웹 응용 프로그램에 대해 Internet Explorer 또는 기타 브라우저를 사용하여 테스트를 사용자 지정하고 재생할 수 있습니다.
 
-[코딩된 UI 다중 브라우저용 Selenium 구성 요소](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)를 먼저 설치합니다.
+먼저 [코딩된 UI 다중 브라우저용 Selenium 구성 요소](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)를 설치합니다.
 
 ## <a name="whats-supported-across-all-web-browsers"></a>모든 웹 브라우저에 어떤 기능이 지원됩니까?
 
@@ -53,7 +53,7 @@ ms.locfileid: "36235065"
 
 1.  **도구** 메뉴 모음에서 **확장 및 업데이트**를 선택합니다.
 
-2.  [확장] 및 [업데이트] 대화 상자에서 `Selenium components for Cross Browser Testing`을 검색합니다.
+2.  **확장 및 업데이트** 대화 상자에서 `Selenium components for Cross Browser Testing`을 검색합니다.
 
 3.  확장명을 강조 표시하고 **다운로드**를 선택합니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "36235065"
 
  [IE에서 기록하고 어디에서나 재생](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [코딩된 UI 테스트 빌더로 다중 브라우저 테스트 작성](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+ [코딩된 UI 테스트 빌더를 사용하여 브라우저 간 테스트 작성](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
  [UI 맵 없이 일반 수작업 코딩으로 다중 브라우저 테스트 작성](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 

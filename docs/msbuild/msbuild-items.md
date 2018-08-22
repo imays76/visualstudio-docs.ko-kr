@@ -1,5 +1,6 @@
 ---
 title: MSBuild 항목 | Microsoft Docs
+description: ItemGroup의 MSBuild Include 특성을 사용하여 빌드에 포함할 파일 지정
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a483d6dcaa4de7c2b9760704f4933a73d810061
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081838"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204130"
 ---
 # <a name="msbuild-items"></a>MSBuild 항목
-MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파일을 나타냅니다. 항목은 해당 요소 이름에 따라 항목 종류로 그룹화됩니다. 항목 종류는 작업의 매개 변수로 사용할 수 있는 명명된 항목 목록입니다. 작업은 항목 값을 사용하여 빌드 프로세스의 단계를 수행합니다.  
+MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파일을 나타냅니다(파일은 `Include` 특성에 지정됨). 항목은 해당 요소 이름에 따라 항목 종류로 그룹화됩니다. 항목 종류는 작업의 매개 변수로 사용할 수 있는 명명된 항목 목록입니다. 작업은 항목 값을 사용하여 빌드 프로세스의 단계를 수행합니다.  
   
  항목은 속하는 항목 종류를 기준으로 이름이 지정되므로 "항목"과 "항목 값"이라는 용어는 동일한 의미로 사용할 수 있습니다.  
   

@@ -483,71 +483,73 @@
           items:
             - name: 'C# 또는 Visual Basic을 사용하여 WPF 앱 만들기'
               href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
-            - name: '자습서 1: 사진 뷰어 만들기(C#)'
-              href: ide/tutorial-1-create-a-picture-viewer.md
+            - name: Windows Forms 앱 자습서
               items:
-                - name: '1단계: Windows Forms 응용 프로그램 프로젝트 만들기'
-                  href: ide/step-1-create-a-windows-forms-application-project.md
-                - name: '2단계: 프로그램 실행'
-                  href: ide/step-2-run-your-program.md
-                - name: '3단계: 폼 속성 설정'
-                  href: ide/step-3-set-your-form-properties.md
-                - name: '4단계: TableLayoutPanel 컨트롤을 사용하여 폼 레이아웃'
-                  href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-                - name: '5단계: 폼에 컨트롤 추가'
-                  href: ide/step-5-add-controls-to-your-form.md
-                - name: '6단계: 단추 컨트롤 이름 지정'
-                  href: ide/step-6-name-your-button-controls.md
-                - name: '7단계: 폼에 대화 상자 구성 요소 추가'
-                  href: ide/step-7-add-dialog-components-to-your-form.md
-                - name: '8단계: 그림 단추 이벤트 처리기 표시를 위한 코드 작성'
-                  href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-                - name: '9단계: 코드 검토, 주석 처리 및 테스트'
-                  href: ide/step-9-review-comment-and-test-your-code.md
-                - name: '10단계: 추가 단추 및 확인란의 코드 작성'
-                  href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-                - name: '11단계: 프로그램 실행 및 기타 기능 사용'
-                  href: ide/step-11-run-your-program-and-try-other-features.md
-            - name: '자습서 2: 시간이 지정된 수학 퀴즈 만들기(C#)'
-              href: ide/tutorial-2-create-a-timed-math-quiz.md
-              items:
-                - name: '1단계: 프로젝트 만들기 및 폼에 레이블 추가'
-                  href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-                - name: '2단계: 난수 더하기 문제 만들기'
-                  href: ide/step-2-create-a-random-addition-problem.md
-                - name: '3단계: 카운트다운 타이머 추가'
-                  href: ide/step-3-add-a-countdown-timer.md
-                - name: '4단계: CheckTheAnswer() 메서드 추가'
-                  href: ide/step-4-add-the-checktheanswer-parens-method.md
-                - name: '5단계: NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기 추가'
-                  href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-                - name: '6단계: 빼기 문제 추가'
-                  href: ide/step-6-add-a-subtraction-problem.md
-                - name: '7단계: 곱하기 및 나누기 문제 추가'
-                  href: ide/step-7-add-multiplication-and-division-problems.md
-                - name: '8단계: 퀴즈 사용자 지정'
-                  href: ide/step-8-customize-the-quiz.md
-            - name: '자습서 3: 맞추기 게임 만들기(C#)'
-              href: ide/tutorial-3-create-a-matching-game.md
-            - name: '1단계: 프로젝트 만들기 및 폼에 테이블 추가'
-              href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-              items:
-                - name: '2단계: 임의의 개체 및 아이콘 목록 추가'
-                  href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-                - name: '3단계: 각 레이블에 임의 아이콘 할당'
-                  href: ide/step-3-assign-a-random-icon-to-each-label.md
-                - name: '4단계: 각 레이블에 클릭 이벤트 처리기 추가'
-                  href: ide/step-4-add-a-click-event-handler-to-each-label.md
-                - name: '5단계: 레이블 참조 추가'
-                  href: ide/step-5-add-label-references.md
-                - name: '6단계: 타이머 추가'
-                  href: ide/step-6-add-a-timer.md
-                - name: '7단계: 쌍 표시'
-                  href: ide/step-7-keep-pairs-visible.md
-                - name: '8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가'
-                  href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-                - name: '9단계: 기타 기능 사용'
-                  href: ide/step-9-try-other-features.md
+                - name: '자습서 1: 사진 뷰어 만들기(C#)'
+                  href: ide/tutorial-1-create-a-picture-viewer.md
+                  items:
+                    - name: '1단계: Windows Forms 응용 프로그램 프로젝트 만들기'
+                      href: ide/step-1-create-a-windows-forms-application-project.md
+                    - name: '2단계: 프로그램 실행'
+                      href: ide/step-2-run-your-program.md
+                    - name: '3단계: 폼 속성 설정'
+                      href: ide/step-3-set-your-form-properties.md
+                    - name: '4단계: TableLayoutPanel 컨트롤을 사용하여 폼 레이아웃'
+                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+                    - name: '5단계: 폼에 컨트롤 추가'
+                      href: ide/step-5-add-controls-to-your-form.md
+                    - name: '6단계: 단추 컨트롤 이름 지정'
+                      href: ide/step-6-name-your-button-controls.md
+                    - name: '7단계: 폼에 대화 상자 구성 요소 추가'
+                      href: ide/step-7-add-dialog-components-to-your-form.md
+                    - name: '8단계: 그림 단추 이벤트 처리기 표시를 위한 코드 작성'
+                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+                    - name: '9단계: 코드 검토, 주석 처리 및 테스트'
+                      href: ide/step-9-review-comment-and-test-your-code.md
+                    - name: '10단계: 추가 단추 및 확인란의 코드 작성'
+                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+                    - name: '11단계: 프로그램 실행 및 기타 기능 사용'
+                      href: ide/step-11-run-your-program-and-try-other-features.md
+                - name: '자습서 2: 시간이 지정된 수학 퀴즈 만들기(C#)'
+                  href: ide/tutorial-2-create-a-timed-math-quiz.md
+                  items:
+                    - name: '1단계: 프로젝트 만들기 및 폼에 레이블 추가'
+                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
+                    - name: '2단계: 난수 더하기 문제 만들기'
+                      href: ide/step-2-create-a-random-addition-problem.md
+                    - name: '3단계: 카운트다운 타이머 추가'
+                      href: ide/step-3-add-a-countdown-timer.md
+                    - name: '4단계: CheckTheAnswer() 메서드 추가'
+                      href: ide/step-4-add-the-checktheanswer-parens-method.md
+                    - name: '5단계: NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기 추가'
+                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+                    - name: '6단계: 빼기 문제 추가'
+                      href: ide/step-6-add-a-subtraction-problem.md
+                    - name: '7단계: 곱하기 및 나누기 문제 추가'
+                      href: ide/step-7-add-multiplication-and-division-problems.md
+                    - name: '8단계: 퀴즈 사용자 지정'
+                      href: ide/step-8-customize-the-quiz.md
+                - name: '자습서 3: 맞추기 게임 만들기(C#)'
+                  href: ide/tutorial-3-create-a-matching-game.md
+                  items:
+                    - name: '1단계: 프로젝트 만들기 및 폼에 테이블 추가'
+                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+                    - name: '2단계: 임의의 개체 및 아이콘 목록 추가'
+                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
+                    - name: '3단계: 각 레이블에 임의 아이콘 할당'
+                      href: ide/step-3-assign-a-random-icon-to-each-label.md
+                    - name: '4단계: 각 레이블에 클릭 이벤트 처리기 추가'
+                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
+                    - name: '5단계: 레이블 참조 추가'
+                      href: ide/step-5-add-label-references.md
+                    - name: '6단계: 타이머 추가'
+                      href: ide/step-6-add-a-timer.md
+                    - name: '7단계: 쌍 표시'
+                      href: ide/step-7-keep-pairs-visible.md
+                    - name: '8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가'
+                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+                    - name: '9단계: 기타 기능 사용'
+                      href: ide/step-9-try-other-features.md
     - name: 데이터에 액세스...
       href: data-tools/accessing-data-in-visual-studio.md
     - name: 사용자 인터페이스 디자인...
@@ -657,12 +659,12 @@
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
         - name: 내게 필요한 옵션을 제공하는 응용 프로그램 설계를 위한 리소스
           href: ide/reference/resources-for-designing-accessible-applications.md
-    - name: 응용 프로그램 전역화 및 지역화
+    - name: 앱 세계화 및 지역화
       href: ide/globalizing-and-localizing-applications.md
       items:
-        - name: .NET Framework 기반의 국가별 응용 프로그램 소개
+        - name: 국제 .NET Framework 앱 소개
           href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-        - name: 응용 프로그램 지역화
+        - name: 앱 지역화
           href: ide/localizing-applications.md
           items:
             - name: 지역화를 위한 리소스의 계층적 구성
@@ -673,12 +675,12 @@
               href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
             - name: 지역화를 위한 중립 리소스 언어
               href: ide/neutral-resources-languages-for-localization.md
-        - name: 응용 프로그램 전역화
+        - name: 앱 세계화
           href: ide/globalizing-applications.md
           items:
             - name: 전역 Windows Forms 및 Web Forms을 위한 문화권 관련 클래스
               href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-        - name: 양방향 언어용 응용 프로그램 만들기
+        - name: 양방향 언어로 앱 만들기
           href: ide/creating-applications-in-bi-directional-languages.md
 - name: 참조
   items:

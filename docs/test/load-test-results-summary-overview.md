@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751860"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380566"
 ---
 # <a name="load-test-results-summary-overview"></a>부하 테스트 결과 요약 개요
 
@@ -111,7 +111,7 @@ ms.locfileid: "34751860"
 
 -   총 트랜잭션의 95%가 \<time>초 미만으로 완료되었습니다.
 
-## <a name="system-under-test-resources"></a>리소스 테스트 중인 시스템
+## <a name="system-under-test-resources"></a>리소스 테스트 대상 시스템
 
 리소스 테스트 중인 시스템 섹션에는 부하가 발생하는 대상 컴퓨터 집합에 해당하는 컴퓨터의 목록이 포함됩니다. 여기에는 에이전트나 컨트롤러 이외의 카운터 집합을 수집하는 모든 컴퓨터가 포함됩니다. 또한 컴퓨터 이름, 프로세서 시간(%), 사용 가능한 메모리가 표시됩니다. 컴퓨터 이름을 선택하면 **테스트 중인 시스템** 그래프가 열려 시간 경과에 따른 리소스 사용량을 확인할 수 있습니다. 자세한 내용은 [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)을 참조하세요.
 
@@ -127,12 +127,12 @@ ms.locfileid: "34751860"
 
 ## <a name="errors"></a>오류
 
-오류 섹션에는 부하 테스트 시 발생한 모든 오류의 목록이 포함됩니다. 또한 오류의 형식 및 하위 형식, 카운트, 마지막 메시지가 표시됩니다. 오류를 선택하면 **오류** 테이블이 열려 해당 오류를 좀 더 자세히 검토할 수 있습니다. 자세한 내용은 [테이블 뷰에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) 및 [방법: 카운터 패널을 사용하여 오류 분석](../test/how-to-analyze-errors-using-the-counters-panel.md)을 참조하세요.
+오류 섹션에는 부하 테스트 시 발생한 모든 오류의 목록이 포함됩니다. 또한 오류의 형식 및 하위 형식, 카운트, 마지막 메시지가 표시됩니다. 오류를 선택하면 **오류** 테이블이 열려 해당 오류를 좀 더 자세히 검토할 수 있습니다. 자세한 내용은 [테이블 보기에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) 및 [방법: 카운터 패널을 사용하여 오류 분석](../test/how-to-analyze-errors-using-the-counters-panel.md)을 참조하세요.
 
 > [!NOTE]
 > 단원 제목의 왼쪽에 표시되는 화살표를 선택하면 이 단원을 축소하거나 확장할 수 있습니다.
 
-## <a name="printing-a-summary"></a>요약 인쇄
+## <a name="print-a-summary"></a>요약 인쇄
 
 요약의 바로 가기 메뉴에서 **인쇄**를 선택하면 부하 테스트 요약을 인쇄할 수 있습니다. 또한 요약의 바로 가기 메뉴에서 **인쇄 미리 보기**를 선택하여 인쇄 내용을 미리 볼 수 있으며, 미리 보기 화면에서 바로 인쇄할 수도 있습니다.
 

@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ec11561a3ebe084517d1a30266f9caa6491544a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a94a5681c0348e6e08f9d777ecebaa3e69886cfe
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965564"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379498"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에서 테스트 반복 횟수 지정
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다. 자세한 내용은 [연습: 부하 테스트 만들기 및 실행](../test/walkthrough-create-and-run-a-load-test.md)을 참조하세요.
 
-**부하 테스트 편집기**를 사용하여 속성 창에서 실행 설정의 **테스트 반복** 속성 값을 편집할 수 있습니다. **부하 테스트 편집기**의 **테스트 반복** 속성은 부하 테스트의 모든 시나리오에 포함된 모든 웹 성능 및 단위 테스트를 실행할 반복 횟수를 지정합니다.
+**부하 테스트 편집기**를 사용하여 **속성** 창에서 실행 설정 값의 **테스트 반복** 속성을 편집할 수 있습니다. **부하 테스트 편집기**의 **테스트 반복** 속성은 부하 테스트의 모든 시나리오에 포함된 모든 웹 성능 및 단위 테스트를 실행할 반복 횟수를 지정합니다.
 
 > [!NOTE]
 > 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.

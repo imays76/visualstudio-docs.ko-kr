@@ -1,5 +1,5 @@
 ---
-title: 중단 모드에서 단계별 실행 | Microsoft Docs
+title: 중단 모드 단계별 실행 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cf10254ec4642bd6dd671124d4a0600794de6fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4fff7edc494c763407c65785fe1de0b3fd77d7b2
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130387"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276509"
 ---
-# <a name="stepping-in-break-mode"></a>중단 모드에서 단계별 실행
-다음은 디버거가 중단 모드에 있는 코드를 단계별로 실행 해야 하는 경우 발생 하는 프로세스에 대 한 설명입니다.  
+# <a name="stepping-in-break-mode"></a>중단 모드 단계별 실행
+다음 섹션에서는 디버거가 중단 모드 이며 코드를 단계별로 실행 해야 하는 경우 발생 하는 프로세스를 설명 합니다.  
   
-## <a name="stepping-process"></a>단계별 실행 프로세스  
+## <a name="stepping-process"></a>단계별 프로세스  
   
-1.  호출 [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) 와 [STEPKIND](../../extensibility/debugger/reference/stepkind.md) 및 [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) 단계를 실행 하는 인수입니다.  
+1.  호출 [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) 사용 하 여 [STEPKIND](../../extensibility/debugger/reference/stepkind.md) 하 고 [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) 단계의 실행에 대 한 인수입니다.  
   
-2.  단계가 완료 되 면 보내기는 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) stopping 이벤트로 합니다.  
+2.  단계가 완료 되 면 송신을 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 중지 이벤트입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

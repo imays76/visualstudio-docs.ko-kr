@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8914b6b876b27b94add446a627087fb34e5082ea
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890411"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204208"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>테스트 에이전트 및 테스트 컨트롤러 설치
 
@@ -26,10 +26,12 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 
 ## <a name="system-requirements"></a>시스템 요구 사항
 
+다음 표에는 Visual Studio 2017에 대한 테스트 에이전트 또는 테스트 컨트롤러를 설치하기 위한 시스템 요구 사항을 보여줍니다.
+
 | 항목 | 요구 사항 |
 | ---- | ------------ |
-| **에이전트** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 서비스 팩 1<br />Windows Server 2016 Standard 및 Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
-| **컨트롤러** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 서비스 팩 1<br />Windows Server 2016 Standard 및 Datacenter<br />Windows Server 2012, Windows Server 2012 R2 |
+| **에이전트** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 서비스 팩 1<br />Windows Server 2016 Standard 및 Datacenter<br />Windows Server 2012 R2 |
+| **컨트롤러** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 서비스 팩 1<br />Windows Server 2016 Standard 및 Datacenter<br />Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 설치

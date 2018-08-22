@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 633c309193c23834b4848e189fdf677f0abc8ef0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7de5d684b0a4299c2f3d90e4a00338c55d2d6870
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965127"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382001"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>방법: 부하 테스트 결과에서 사용자 지정 그래프 만들기
 
@@ -26,17 +26,17 @@ ms.locfileid: "31965127"
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>사용자 지정 부하 테스트 결과 그래프를 만들려면
 
-1.  부하 테스트 도구 모음에서 **새 그래프 추가**를 선택합니다.
+1.  **부하 테스트** 도구 모음에서 **새 그래프 추가**를 선택합니다.
 
      \- 또는 -
 
-     부하 테스트 분석기에서 카운터 패널 또는 그래프를 마우스 오른쪽 단추로 클릭하고 **그래프 추가**를 선택합니다.
+     **부하 테스트 분석기**에서 **카운터** 패널 또는 그래프를 마우스 오른쪽 단추로 클릭한 다음, **그래프 추가**를 선택합니다.
 
      **그래프 이름 입력** 대화 상자가 표시됩니다.
 
 2.  **그래프 이름**에 그래프의 이름을 입력하고 **확인**을 선택합니다.
 
-     새 그래프가 부하 테스트 분석기에 표시됩니다. 새 그래프는 현재 선택된 그래프 패널에 나타나며 이전에 해당 패널에 표시되었던 그래프를 대체합니다.
+     새 그래프가 **부하 테스트 분석기**에 표시됩니다. 새 그래프는 현재 선택된 그래프 패널에 나타나며 이전에 해당 패널에 표시되었던 그래프를 대체합니다.
 
 3.  카운터를 추가하여 새 그래프를 사용자 지정합니다. 자세한 내용은 [방법: 그래프에서 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)를 참조하세요.
 

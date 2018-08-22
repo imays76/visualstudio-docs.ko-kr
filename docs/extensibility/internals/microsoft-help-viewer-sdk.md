@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234675"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513376"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 이 문서에서는 Visual Studio 도움말 뷰어 통합 업체에 대 한 다음 작업을 포함 됩니다.  
@@ -820,7 +820,7 @@ Visual Studio 콘텐츠 저장소를 만듭니다. Integrated Shell 시나리오
 12. Contoso IDE 내에서 F1 기능을 테스트 하 고 F1 키를 선택 합니다.  
   
 ### <a name="additional-resources"></a>추가 리소스  
-런타임 API를 참조 하세요 [Windows API 도움말](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx)합니다.  
+런타임 API를 참조 하세요 [Windows API 도움말](/previous-versions/windows/desktop/helpapi/helpapi-portal)합니다.  
   
 API 도움말을 활용 하는 방법에 대 한 자세한 내용은 참조 하세요. [도움말 뷰어 코드 예제](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
   

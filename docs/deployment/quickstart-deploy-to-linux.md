@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: e0268c2e65cd08274c2267ad2a4969f6015cbaf4
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39234857"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341750"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Visual Studio를 사용 하 여 Linux의 App Service에 ASP.NET Core 앱 게시
 
 사용할 수는 **게시** Linux의 Azure App Service에 ASP.NET Core 앱을 게시 하는 도구입니다.
+
+사용 하 여 Linux에서 App Service에 배포 합니다 **게시** 도구에는 Visual Studio 2017 버전 15.7에 있어야 합니다.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 
@@ -43,6 +45,13 @@ ms.locfileid: "39234857"
 1. **만들기**를 선택합니다. Visual Studio에 Azure App Service에 앱을 배포 하 고 브라우저에서 웹 앱을 로드 합니다. 프로젝트 속성 **게시** 사이트 URL 및 기타 세부 정보 창에 표시 됩니다.
 
     ![게시 프로필 요약을 표시 하는 속성 창](../deployment/media/quickstart-publish-app-service-summary.png)
+
+## <a name="clean-up-resources"></a>리소스 정리
+
+이전 단계에서는 리소스 그룹에서 Azure 리소스를 만들었습니다. 나중에 이러한 리소스가 필요 하지 않을, 경우에 리소스 그룹을 삭제 하 여 삭제할 수 있습니다.
+Azure portal의 왼쪽된 메뉴에서 선택 **리소스 그룹** 선택한 후 **myResourceGroup**합니다.
+리소스 그룹 페이지에서 나열 된 리소스를 삭제 하려는 항목 인지를 확인 합니다.
+선택 **삭제할**, 형식 **myResourceGroup** 에서 텍스트 상자를 선택 합니다 **삭제**합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

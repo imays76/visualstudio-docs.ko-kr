@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05cf2d99f88fcf6d43674d837d62f2e6053470a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950467"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511003"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio에서 지역 변수 소개
 
@@ -28,7 +28,7 @@ ms.locfileid: "31950467"
 
 **시기:** 지역 변수에 있는 경우 나중에 쉽게 다시 사용할 수 있는 코드가 있습니다.
 
-**이유:** 코드를 여러 번 복사하여 붙여넣으면 다양한 위치에서 사용할 수 있지만, 작업을 한 번 수행하고 지역 변수에 결과를 저장하고 전체적으로 지역 변수를 사용하는 것이 좋습니다.
+**이유:** 코드를 여러 번 복사하여 붙여넣으면 다양한 위치에서 사용할 수 있지만, 작업을 한 번 수행하고 지역 변수에 결과를 저장한 다음, 전체적으로 지역 변수를 사용하는 것이 좋습니다.
 
 ## <a name="how-to"></a>방법
 

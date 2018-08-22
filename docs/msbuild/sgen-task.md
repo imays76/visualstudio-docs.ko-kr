@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57e9841bd93e1bf41f15dec36b11137edfd5fa14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6ed195596715c044268b2b1fdf434d1fda20967c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570017"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150892"
 ---
 # <a name="sgen-task"></a>SGen 작업
-지정된 어셈블리의 형식에 대한 XML serialization 어셈블리를 만듭니다. 이 작업은 XML Serializer 생성기 도구(Sgen.exe)를 래핑합니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)를 참조하세요.  
+지정된 어셈블리의 형식에 대한 XML serialization 어셈블리를 만듭니다. 이 작업은 XML Serializer 생성기 도구(*Sgen.exe*)를 래핑합니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)를 참조하세요.  
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 `SGen` 작업의 매개 변수에 대해 설명합니다.  
@@ -42,12 +42,12 @@ ms.locfileid: "31570017"
 |`KeyFile`|선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리 서명에 사용할 키 쌍 또는 공개 키를 지정합니다. 컴파일러는 공개 키를 어셈블리 매니페스트에 삽입한 다음 개인 키를 사용하여 최종 어셈블리에 서명합니다.|  
 |`Platform`|선택적 `String` 매개 변수입니다.<br /><br /> 출력 어셈블리를 생성하는 데 사용되는 컴파일러 플랫폼을 가져오거나 설정합니다. 이 매개 변수는 `x86`, `x64` 또는 `anycpu` 값을 가질 수 있습니다. 기본값은 `anycpu`입니다.|  
 |`References`|선택적 `String[]` 매개 변수입니다.<br /><br /> XML serialization이 필요한 형식에서 참조하는 어셈블리를 지정합니다.|  
-|`SdkToolsPath`|선택적 `String` 매개 변수입니다.<br /><br /> resgen.exe와 같은 SDK 도구에 대한 경로를 지정합니다.|  
+|`SdkToolsPath`|선택적 `String` 매개 변수입니다.<br /><br /> *resgen.exe*와 같은 SDK 도구에 대한 경로를 지정합니다.|  
 |`SerializationAssembly`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 생성된 serialization 어셈블리를 포함합니다.|  
 |`SerializationAssemblyName`|선택적 `String` 매개 변수입니다.<br /><br /> 생성된 serialization 어셈블리의 이름을 지정합니다.|  
 |`ShouldGenerateSerializer`|필수 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 SGen 작업은 serialization 어셈블리를 생성해야 합니다.|  
 |`Timeout`|선택적 `Int32` 매개 변수입니다.<br /><br /> 작업 실행 파일이 얼마 후에 종료될 지를 밀리초 단위로 지정합니다. 기본값은 시간 제한이 없음을 나타내는 `Int.MaxValue`입니다.|  
-|`ToolPath`|선택적 `String` 매개 변수입니다.<br /><br /> 작업에서 내부 실행 파일(sgen.exe)을 로드할 위치를 지정합니다. 이 매개 변수를 지정하지 않으면 작업에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 실행하고 있는 버전의 Framework에 해당하는 SDK 설치 경로가 사용됩니다.|  
+|`ToolPath`|선택적 `String` 매개 변수입니다.<br /><br /> 작업에서 내부 실행 파일(*sgen.exe*)을 로드할 위치를 지정합니다. 이 매개 변수를 지정하지 않으면 작업에서는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 실행하고 있는 버전의 Framework에 해당하는 SDK 설치 경로가 사용됩니다.|  
 |`Types`|선택적 `String[]` 매개 변수입니다.<br /><br /> serialization 코드를 생성하기 위한 특정 형식의 목록을 가져오거나 설정합니다. SGen은 해당 형식에 대해서만 serialization 코드를 생성합니다.|  
 |`UseProxyTypes`|필수 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 SGen 작업은 XML Web services 프록시 형식에 대해서만 serialization 코드를 생성합니다.|  
   

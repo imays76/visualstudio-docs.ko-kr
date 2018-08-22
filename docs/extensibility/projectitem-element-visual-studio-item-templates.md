@@ -16,22 +16,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 886fc57258b4ccafaa4ab8d522fad632de455e17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139574"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637070"
 ---
-# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 요소(Visual Studio 항목 템플릿)
-항목 템플릿에 포함 되어 있는 파일을 지정 합니다.  
+# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 요소 (Visual Studio 항목 템플릿)
+항목 템플릿에 포함 된 파일을 지정 합니다.  
   
 > [!NOTE]
->  `ProjectItem` 요소는 프로젝트 또는 항목에 대 한 서식 파일 인지에 따라 서로 다른 특성을 수락 합니다. 이 항목에 설명 된 `ProjectItem` 항목에 대 한 요소입니다. 에 대 한 설명은 `ProjectItem` 프로젝트 템플릿에 대 한 요소 참조 [ProjectItem 요소 (Visual Studio 프로젝트 템플릿)](../extensibility/projectitem-element-visual-studio-project-templates.md)합니다.  
+>  `ProjectItem` 요소는 프로젝트 또는 항목에 대 한 템플릿을 인지에 따라 다른 특성을 허용 합니다. 이 항목에 설명 합니다 `ProjectItem` 항목에 대 한 요소입니다. 에 대 한 설명은 합니다 `ProjectItem` 프로젝트 템플릿에 대 한 요소 참조 [ProjectItem 요소 (Visual Studio 프로젝트 템플릿)](../extensibility/projectitem-element-visual-studio-project-templates.md)합니다.  
   
  \<VSTemplate>  
  \<TemplateContent >  
- \<프로젝트 항목 >  
+ \<ProjectItem >  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,11 +53,11 @@ ms.locfileid: "31139574"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`SubType`|선택적 특성입니다.<br /><br /> 다중 파일 항목 템플릿에 항목의 하위 형식을 지정합니다. 편집기를 확인 하려면이 값은 사용 하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 항목을 열 때 사용 합니다.|  
-|`CustomTool`|선택적 특성입니다.<br /><br /> 프로젝트 파일에서 항목에 대 한 사용자 지정 도구를 설정합니다.|  
-|`ItemType`|선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목 형식을 설정합니다.|  
-|`ReplaceParameters`|선택적 특성입니다.<br /><br /> 항목 템플릿에서 프로젝트를 만들 때 교체 해야 하는 매개 변수 값에 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다.|  
-|`TargetFileName`|선택적 특성입니다.<br /><br /> 서식 파일에서 생성 된 항목의 이름을 지정 합니다. 이 특성은 매개 변수 대체를 사용 하 여 항목 이름을 만드는 데 유용 합니다.|  
+|`SubType`|선택적 특성입니다.<br /><br /> 다중 파일 항목 템플릿에 항목의 하위 형식을 지정합니다. 편집기를 확인 하려면이 값은 사용 하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 항목을 열 때 사용 됩니다.|  
+|`CustomTool`|선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목에 대 한 사용자 지정 도구를 설정합니다.|  
+|`ItemType`|선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목에 대 한 ItemType을 설정합니다.|  
+|`ReplaceParameters`|선택적 특성입니다.<br /><br /> 항목 템플릿에서 프로젝트를 만들 때 대체 되어야 하는 매개 변수 값에 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다.|  
+|`TargetFileName`|선택적 특성입니다.<br /><br /> 템플릿에서 만든 항목의 이름을 지정 합니다. 이 특성은 매개 변수 대체를 사용 하 여는 항목 이름을 만드는 데 유용 합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -71,21 +71,21 @@ ms.locfileid: "31139574"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- A `string` 템플릿.zip 파일에 있는 파일의 이름을 나타내는입니다.  
+ A `string` 템플릿에서 파일의 이름을 나타내는 *.zip* 파일입니다.  
   
 ## <a name="remarks"></a>설명  
- `ProjectItem` 선택적 자식은 `TemplateContent`합니다.  
+ `ProjectItem` 선택적 자식이 `TemplateContent`합니다.  
   
- `TargetFileName` 매개 변수를 사용 하 여 파일의 이름을 바꾸려면 특성을 사용할 수 있습니다. 예를 들어 경우 파일 `MyFile.vb` 원하는 이름을 지정 하는 파일에 사용자가 제공한 파일 이름에 따라 템플릿.zip 파일의 루트 디렉터리에 있는 **새 항목 추가** 대화 상자에서 다음 XML을 사용:  
+ `TargetFileName` 매개 변수를 사용 하 여 파일 이름을 바꾸려면 특성을 사용할 수 있습니다. 예를 들어 경우 파일 *MyFile.vb* 템플릿의 루트 디렉터리에 있는 *.zip* 파일인 남기려는 이라는 이름으로 파일에서 사용자가 제공한 파일 이름을 기반으로 합니다 **새 항목 추가**  대화 상자에서 다음 XML을 사용 합니다.  
   
-```  
+```xml  
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- 파일 이름은에 입력 한 사용자 이름에 기반 합니다 항목이 만들어지면이 템플릿에서 **새 항목 추가** 대화 상자. 다중 파일 항목 템플릿을 만들 때 유용 합니다. 자세한 내용은 참조 [하는 방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md) 및 [템플릿 매개 변수](../ide/template-parameters.md)합니다.  
+ 파일 이름은에 사용자 입력에 기반 합니다 항목이 만들어지면이 템플릿에서 **새 항목 추가** 대화 상자. 다중 파일 항목 템플릿을 만들 때 유용 합니다. 자세한 내용은 [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md) 하 고 [템플릿 매개 변수](../ide/template-parameters.md)합니다.  
   
-## <a name="example"></a>예제  
- 다음 예제에 대 한 표준 항목 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스입니다.  
+## <a name="example"></a>예  
+ 다음 예제에 대 한 표준 항목 템플릿에 대 한 메타 데이터를 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스입니다.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -103,8 +103,8 @@ ms.locfileid: "31139574"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md)   
  [템플릿 매개 변수](../ide/template-parameters.md)

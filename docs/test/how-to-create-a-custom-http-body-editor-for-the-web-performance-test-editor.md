@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 97f0d77e59b629523a34bbad55576219a9660109
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233986"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380657"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
 
@@ -44,34 +44,34 @@ SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 
 
 3.  템플릿 목록에서 **Windows Forms 컨트롤 라이브러리**를 선택합니다.
 
-4.  이름 텍스트 상자에서 이름(예: `MessageEditors`)을 입력하고 **확인**을 선택합니다.
+4.  **이름** 텍스트 상자에서 이름(예: `MessageEditors`)을 입력하고 **확인**을 선택합니다.
 
     > [!NOTE]
     > 이 샘플에서는 MessageEditors를 사용합니다.
 
-     프로젝트가 새 솔루션에 추가되고 UserControl1.cs라는 <xref:System.Windows.Forms.UserControl>이 디자이너에 표시됩니다.
+     프로젝트가 새 솔루션에 추가되고 *UserControl1.cs*라는 <xref:System.Windows.Forms.UserControl>이 디자이너에 표시됩니다.
 
 5.  **도구 상자**의 **공용 컨트롤** 범주에서 <xref:System.Windows.Forms.RichTextBox>를 UserControl1로 끌어 옵니다.
 
 6.  <xref:System.Windows.Forms.RichTextBox> 컨트롤의 오른쪽 위에 있는 작업 태그 문자 모양(![스마트 태그 문자 모양](../test/media/vs_winformsmttagglyph.gif))을 선택한 다음, **부모 컨테이너에서 도킹**을 선택합니다.
 
-7.  솔루션 탐색기에서 Windows Forms 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+7.  **솔루션 탐색기**에서 Windows Forms 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
-8.  속성에서 **응용 프로그램** 탭을 선택합니다.
+8.  **속성**에서 **응용 프로그램** 탭을 선택합니다.
 
 9. **대상 프레임워크** 드롭다운 목록에서 **.NET Framework 4**를 선택합니다.
 
-10. 대상 프레임워크 변경 대화 상자가 표시됩니다.
+10. **대상 프레임워크 변경** 대화 상자가 표시됩니다.
 
 11. **예**를 선택합니다.
 
-12. 솔루션 탐색기에서 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+12. **솔루션 탐색기**에서 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
 
 13. **참조 추가** 대화 상자가 표시됩니다.
 
 14. **.NET** 탭을 선택하고 아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.WebTestFramework**를 선택한 다음, **확인**을 선택합니다.
 
-15. 디자이너 보기가 아직 열려 있지 않으면 솔루션 탐색기에서 **UserControl1.cs**를 마우스 오른쪽 단추로 클릭하고 **디자이너 보기**를 선택합니다.
+15. **디자이너 보기**가 아직 열려 있지 않으면 **솔루션 탐색기**에서 **UserControl1.cs**를 마우스 오른쪽 단추로 클릭한 다음, **디자이너 보기**를 선택합니다.
 
 16. 디자인 화면에서 마우스 오른쪽 단추를 클릭하고 **코드 보기**를 선택합니다.
 
@@ -121,7 +121,7 @@ SOAP, REST, asmx, wcf, RIA 및 기타 웹 서비스 요청 형식과 같은 웹 
    }
    ```
 
-## <a name="add-a-class-for-to-the-windows-control-library-project"></a>Windows 컨트롤 라이브러리 프로젝트에 클래스 추가
+## <a name="add-a-class-to-the-windows-control-library-project"></a>Windows 컨트롤 라이브러리 프로젝트에 클래스 추가
 
 프로젝트에 클래스를 추가합니다. 이 클래스는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 및 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 인터페이스를 구현하는 데 사용됩니다.
 
@@ -139,7 +139,7 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>클래스를 만들고 IStringHttpBodyEditorPlugin 인터페이스 코드를 구현하려면
 
-1.  솔루션 탐색기에서 Windows Forms 컨트롤 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭하고 **새 항목 추가**를 선택합니다.
+1.  **솔루션 탐색기**에서 Windows Forms 컨트롤 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭하고 **새 항목 추가**를 선택합니다.
 
 2.  **새 항목 추가** 대화 상자가 표시됩니다.
 
@@ -282,14 +282,14 @@ messageEditorControl 인스턴스는 <xref:Microsoft.VisualStudio.TestTools.WebT
 
 ### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>IStringHttpBodyEditorPlugin 및 IBinaryHttpBodyEditorPlugin의 결과 dll을 빌드하고 배포하려면
 
-1.  빌드 메뉴에서 **\<Windows Form 컨트롤 라이브러리 프로젝트 이름> 빌드**를 선택합니다.
+1.  **빌드** 메뉴에서 **\<Windows Form 컨트롤 라이브러리 프로젝트 이름> 빌드**를 선택합니다.
 
 2.  Visual Studio의 모든 인스턴스를 닫습니다.
 
     > [!NOTE]
     > Visual Studio를 닫으면 복사하기 전에 *.dll* 파일이 잠기지 않습니다.
 
-3.  프로젝트의 *bin\debug* 폴더에 있는 결과 *.dll 파일*(예: *MessageEditors.dll*)을 %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins에 복사합니다.
+3.  *bin\debug* 프로젝트 폴더에 있는 결과 *.dll* 파일(예: *MessageEditors.dll*)을 *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*에 복사합니다.
 
 4.  Visual Studio를 엽니다.
 
@@ -305,17 +305,17 @@ messageEditorControl 인스턴스는 <xref:Microsoft.VisualStudio.TestTools.WebT
 
 3.  기록을 마치면 웹 성능 테스트 편집기에서 웹 서비스의 요청을 확장하고 **문자열 본문** 또는 **이진 본문**을 선택합니다.
 
-4.  속성 창에서 문자열 본문이나 이진 본문을 선택하고 줄임표(...)를 선택합니다.
+4.  속성 창에서 문자열 본문이나 이진 본문을 선택하고 줄임표 **(…)** 를 선택합니다.
 
      **HTTP 본문 데이터 편집** 대화 상자가 표시됩니다.
 
-5.  이제 데이터를 편집하고 확인을 선택합니다. 그러면 적절한 GetNewValue 메서드가 호출되어 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>의 콘텐츠가 업데이트됩니다.
+5.  이제 데이터를 편집하고 **확인**을 선택합니다. 그러면 적절한 GetNewValue 메서드가 호출되어 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>의 콘텐츠가 업데이트됩니다.
 
 ## <a name="compile-the-code"></a>코드 컴파일
 
 Windows 컨트롤 라이브러리 프로젝트의 대상 프레임워크가 .NET Framework 4.5인지 확인합니다. 기본적으로 Windows 컨트롤 라이브러리 프로젝트는 Microsoft.VisualStudio.QualityTools.WebTestFramework 참조를 포함할 수 없는 .NET Framework 4.5 Client 프레임워크를 대상으로 합니다.
 
-자세한 내용은 [프로젝트 디자이너, 응용 프로그램 페이지(C#)](../ide/reference/application-page-project-designer-csharp.md)를 참조하세요.
+자세한 내용은 [응용 프로그램 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

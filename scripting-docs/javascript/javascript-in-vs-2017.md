@@ -18,16 +18,19 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753299"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008410"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 
 JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 JavaScript 코드를 작성할 때 대부분 또는 모든 표준 편집 지원(코드 조각, IntelliSense 등)을 사용할 수 있습니다. 여러 응용 프로그램 형식 및 서비스에 대해 JavaScript 코드를 작성할 수 있습니다.
+
+> [!NOTE]
+> 모든 Microsoft의 JavaScript API 참조(500개 이상의 페이지)를 docs.microsoft.com에서 MDN 사본으로 리디렉션하여 [MDN 웹 문서](https://developer.mozilla.org/en-US/)를 웹의 원스톱, 초연 개발 리소스로 만들려는 커뮤니티 차원의 노력에 동참하였습니다. 자세한 내용은 이 [공지](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)를 참조하세요.
 
 ## <a name="ES6"></a> ECMAScript 2015(ES6) 이상 지원
 
@@ -183,7 +186,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 다음과 같이 설정된 프로젝트가 제공됩니다.
 
 - 프로젝트의 소스 파일은 `wwwroot/js`에 있음
-- 프로젝트의 lib 파일은 `wwwrrot/lib`에 있음
+- 프로젝트의 lib 파일은 `wwwroot/lib`에 있음
 - `bootstrap`, `jquery`, `jquery-validation` 및 `jquery-validation-unobtrusive`는 `bower.json`에 나열됨
 - `kendo-ui`가 lib 폴더에 수동으로 추가됨
 

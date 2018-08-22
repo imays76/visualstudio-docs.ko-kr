@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18385c32cee40ae4a6bf902bf79623c3bc2854
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571522"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586341"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 템플릿 스키마 참조
-이 섹션에는 프로젝트 템플릿, 항목 템플릿 및 시작 키트에 대한 메타데이터를 저장하는 파일인 .vstemplate 파일의 XML 요소에 대한 정보가 포함되어 있습니다.
+이 섹션의 XML 요소에 대 한 정보가 *.vstemplate* 프로젝트 템플릿과 항목 템플릿은 시작 키트에 대 한 메타 데이터를 저장 하는 파일에 있는 파일을 합니다.
 
- vstemplate.xsd를 사용하여 사용자 지정 .vstemplate 파일의 유효성을 검사할 수 있습니다. 이 파일에서 제공 됩니다. \\ *Visual Studio 설치 폴더*\Xml\Schemas\1033\vstemplate.xsd 합니다.
+ 사용할 수 있습니다 *vstemplate.xsd* 유효성을 검사할 사용자 지정 *.vstemplate* 파일입니다. 이 파일은 *... \\ \<Visual Studio 설치 폴더 > \Xml\Schemas\1033\vstemplate.xsd*합니다.
 
 |요소|자식 요소|특성|
 |-------------|--------------------|----------------|
-|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|없음|없음|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|없음|없음|
 |[Assembly (템플릿)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly (마법사 확장명)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
@@ -42,10 +42,10 @@ ms.locfileid: "34571522"
 |[설명](../extensibility/description-element-visual-studio-templates.md)|--|패키지<br /><br /> ID|
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|
-|[Folder](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> 폴더|name|
+|[폴더](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> 폴더|name|
 ||[사용되지 않음]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
-|[숨김](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
+|[숨겨진](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
 |[아이콘](../extensibility/icon-element-visual-studio-templates.md)|--|패키지<br /><br /> ID|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|

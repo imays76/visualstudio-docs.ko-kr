@@ -13,22 +13,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9a8b260c1a3cab126d19f0cedc0c1e5362cf81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ceb739cc8ad2dc65b1aca6c38d6c4f49ec792215
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131038"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635871"
 ---
-# <a name="extending-the-output-window"></a>출력 창 확장
-**출력** 창은 텍스트 창 읽기/쓰기의 집합입니다. Visual Studio에는 이러한 기본 제공 창이: **빌드**, 프로젝트에서 빌드에 대 한 메시지를 통신 및 **일반**는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에 대 한 메시지를 통신 합니다. 프로젝트 가져오기에 대 한 참조는 **빌드** 창을 통해 자동으로 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> 인터페이스 메서드 및 Visual Studio에 대 한 직접 액세스를 제공는 **일반** 통해 창은 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 서비스입니다. 기본 제공 창과 수 만들고 사용자 고유의 사용자 지정 작업창을 관리 합니다.  
+# <a name="extend-the-output-window"></a>출력 창 확장
+합니다 **출력** 창 집합이 읽기/쓰기 텍스트 창이 있습니다. Visual Studio에는 이러한 기본 제공 창이: **빌드**에 프로젝트에서 빌드에 대 한 메시지를 통신 및 **일반**는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에 대 한 메시지를 통신 합니다. 프로젝트에 대 한 참조를 가져올는 **빌드** 창을 통해 자동으로 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> 인터페이스 메서드 및 Visual Studio에 대 한 직접 액세스를 제공 합니다 **일반** 통해 창을 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 서비스입니다. 기본 제공 창 외에도 있습니다 만들고 관리할 수 있습니다 사용자 고유의 사용자 지정 창입니다.  
   
- 제어할 수 있습니다는 **출력** 창을 통해 직접는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 인터페이스입니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 인터페이스에서 제공 하는 <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> 서비스, 만들기, 검색 및 제거에 대 한 메서드를 정의 **출력** 창. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 인터페이스 창 표시, 창, 숨기기 및 텍스트를 조작 하기 위한 메서드를 정의 합니다. 제어 하는 다른 방법으로 **출력** 기간은 통해는 <xref:EnvDTE.OutputWindow> 및 <xref:EnvDTE.OutputWindowPane> Visual Studio 자동화 개체 모델의 개체입니다. 이러한 개체는 거의 모든 기능을 캡슐화는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 인터페이스입니다. 또한는 <xref:EnvDTE.OutputWindow> 및 <xref:EnvDTE.OutputWindowPane> 열거를 쉽게 수행할 수 있도록 더 높은 수준의 일부 기능을 추가 하는 개체는 **출력** 창을 창에서 텍스트를 검색할 수 있습니다.  
+ 제어할 수 있습니다.는 **출력** 창을 통해 직접 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 인터페이스입니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 에서 제공 하는 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> 서비스를 만들기, 검색 및 제거에 대 한 메서드를 정의 **출력** 창입니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 인터페이스 창이 표시, 숨기기 창 및 해당 텍스트를 조작 하기 위한 메서드를 정의 합니다. 제어 하는 또 다른 방법은 합니다 **출력** 창을 사용 하는 것을 <xref:EnvDTE.OutputWindow> 및 <xref:EnvDTE.OutputWindowPane> Visual Studio 자동화 개체 모델에서 개체입니다. 거의 모든 기능을 캡슐화 하는 이러한 개체는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 인터페이스입니다. 또한 합니다 <xref:EnvDTE.OutputWindow> 및 <xref:EnvDTE.OutputWindowPane> 열거를 쉽게 수행할 수 있도록 일부 높은 수준의 기능을 추가 하는 개체를 **출력** 창 창에서 텍스트를 검색 하 합니다.  
   
-## <a name="creating-an-extension-that-uses-the-output-pane"></a>출력 창에 사용 하 여 확장을 만들기  
+## <a name="create-an-extension-that-uses-the-output-pane"></a>출력 창에서 사용 하는 확장명 만들기  
  출력 창의 다양 한 측면을 실행 하는 확장을 만들 수 있습니다.  
   
-1.  라는 VSIX 프로젝트를 `TestOutput` 메뉴 명령을 사용 하 여 명명 된 **TestOutput**합니다. 자세한 내용은 참조 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
+1.  라는 VSIX 프로젝트를 만듭니다 `TestOutput` 메뉴 명령을 사용 하 여 이름이 **TestOutput**합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
   
 2.  다음 참조를 추가 합니다.  
   
@@ -36,14 +36,14 @@ ms.locfileid: "31131038"
   
     2.  EnvDTE80  
   
-3.  TestOutput.cs에 다음 추가 문을 사용 하 여:  
+3.  *TestOutput.cs*, 다음 추가 문을 사용 하 여:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  TestOutput.cs, ShowMessageBox 메서드를 삭제 합니다. 다음 메서드 스텁을 추가 합니다.  
+4.  *TestOutput.cs*, 삭제 된 `ShowMessageBox` 메서드. 다음 메서드 스텁을 추가 합니다.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -51,7 +51,7 @@ ms.locfileid: "31131038"
     }  
     ```  
   
-5.  TestOutput 생성자에 명령 처리기 OutputCommandHandler를 변경 합니다. 명령을 추가 하는 부분은 다음과 같습니다.  
+5.  TestOutput 생성자에서 OutputCommandHandler에 명령 처리기를 변경 합니다. 명령을 추가 하는 파트는 다음과 같습니다.  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -64,7 +64,7 @@ ms.locfileid: "31131038"
     }  
     ```  
   
-6.  다음 단원에서는 다른 하는 메서드가 출력 창 처리 하는 한 가지 방법을 보여 줍니다. OutputCommandHandler() 메서드의 본문에 이러한 메서드를 호출할 수 있습니다. 예를 들어 다음 코드는 다음 섹션에 지정 된 CreatePane() 메서드를 추가 합니다.  
+6.  아래 섹션에서는 출력 창 처리 하는 다른 방법을 보여 주는 다른 방법이 있습니다. 본문에 이러한 메서드를 호출할 수는 `OutputCommandHandler()` 메서드. 예를 들어, 다음 코드를 추가 합니다 `CreatePane()` 다음 섹션에서 제공 하는 메서드.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -73,8 +73,8 @@ ms.locfileid: "31131038"
     }  
     ```  
   
-## <a name="creating-an-output-window-with-ivsoutputwindow"></a>출력 창 IVsOutputWindow를 사용 하 여 만들기  
- 이 예제에서는 새 **출력** 창을 사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 인터페이스입니다.  
+## <a name="create-an-output-window-with-ivsoutputwindow"></a>IVsOutputWindow를 사용 하 여 출력 창 만들기  
+ 이 예제에서는 새로 만드는 방법을 보여 줍니다 **출력** 창을 사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 인터페이스입니다.  
   
 ```csharp  
 void CreatePane(Guid paneGuid, string title,   
@@ -98,9 +98,9 @@ void CreatePane(Guid paneGuid, string title,
 }  
 ```  
   
- 클릭 하면 이전 섹션에 지정 된 확장 프로그램에이 메서드를 추가 하는 경우는 **호출 TestOutput** 나타납니다 명령을 **출력** 라고 표시 하는 헤더를 사용 하 여 창을 **출력 보기 : CreatedPane** 및 단어 **만든 창 이것이** 창 자체에 있습니다.  
+ 클릭 하면 이전 섹션에 지정 된 확장 프로그램에이 메서드를 추가 하는 경우는 **TestOutput 호출** 명령을 표시 합니다 **출력** 라는 헤더로 창 **출력 표시 : CreatedPane** 와 단어 **생성 창 이것이** 자체 창에서.  
   
-## <a name="creating-an-output-window-with-outputwindow"></a>출력 창 OutputWindow를 사용 하 여 만들기  
+## <a name="create-an-output-window-with-outputwindow"></a>OutputWindow를 사용 하 여 출력 창 만들기  
  만드는 방법을 보여 주는이 예제는 **출력** 창을 사용 하 여는 <xref:EnvDTE.OutputWindow> 개체입니다.  
   
 ```csharp  
@@ -123,12 +123,12 @@ void CreatePane(string title)
 }  
 ```  
   
- 하지만 <xref:EnvDTE.OutputWindowPanes> 컬렉션을 사용 하면 검색할는 **출력** 제목으로 창, 창 제목 보장이 없습니다 고유 하 게 합니다. 제목의 고유성을 의문 때 사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> 메서드를 해당 GUID가 올바른 창을 검색 합니다.  
+ 하지만 합니다 <xref:EnvDTE.OutputWindowPanes> 검색할 컬렉션 수는 **출력** 가 제목으로 창, 창 제목은 고유 하 게 보장 되지 않습니다. 제목의 고유성을 의구심 있습니다 사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A> 해당 GUID가 올바른 창을 검색 하는 방법입니다.  
   
- 클릭 하면 이전 섹션에 지정 된 확장 프로그램에이 메서드를 추가 하는 경우는 **호출 TestOutput** 라고 표시 하는 헤더를 사용 하 여 출력 창 표시 되어야 하는 명령을 **에서 출력 보기: DTEPane** 및 단어 **DTE 창 추가** 창 자체에 있습니다.  
+ 클릭 하면 이전 섹션에 지정 된 확장 프로그램에이 메서드를 추가 하는 경우는 **호출할 TestOutput** 명령 라는 헤더로 출력 창이 표시 됩니다 **에서 출력 보기: DTEPane** 및 단어 **DTE 창 추가** 자체 창에서.  
   
-## <a name="deleting-an-output-window"></a>삭제 출력 창  
- 삭제 하는 방법을 보여 주는이 예제는 **출력** 창.  
+## <a name="delete-an-output-window"></a>삭제 출력 창  
+ 삭제 하는 방법을 보여 주는이 예제는 **출력** 창 선택 합니다.  
   
 ```csharp  
 void DeletePane(Guid paneGuid)  
@@ -150,10 +150,10 @@ void DeletePane(Guid paneGuid)
 }  
 ```  
   
- 클릭 하면 이전 섹션에 지정 된 확장 프로그램에이 메서드를 추가 하는 경우는 **호출 TestOutput** 라고 표시 하는 헤더를 사용 하 여 출력 창 표시 되어야 하는 명령을 **에서 출력 보기: 새 창** 및 단어 **만든 창 추가** 창 자체에 있습니다. 클릭는 **호출 TestOutput** 명령을 다시, 창에서 삭제 됩니다.  
+ 클릭 하면 이전 섹션에 지정 된 확장 프로그램에이 메서드를 추가 하는 경우는 **호출할 TestOutput** 명령 라는 헤더로 출력 창이 표시 됩니다 **에서 출력 보기: 새 창** 및 단어 **만든 창 추가** 자체 창에서. 클릭할 경우 합니다 **TestOutput 호출** 명령을 다시, 창에 삭제 됩니다.  
   
-## <a name="getting-the-general-pane-of-the-output-window"></a>출력 창의 일반 창 가져오기  
- 이 예제에는 기본 제공을 가져오는 방법을 보여 줍니다 **일반** 의 창 고 **출력** 창.  
+## <a name="get-the-general-pane-of-the-output-window"></a>출력 창의 일반 창 가져오기  
+ 이 예제에는 기본 제공을 가져오는 방법을 보여 줍니다 **일반** 창에는 **출력** 창입니다.  
   
 ```csharp  
 void GetGeneralPane()  
@@ -163,10 +163,10 @@ void GetGeneralPane()
 }  
 ```  
   
- 클릭 하면 이전 섹션에 지정 된 확장 프로그램에이 메서드를 추가 하는 경우는 **TestOutput 호출** 표시 되어야 하는 명령에서 **출력** 창에 표시 된 단어 **일반 발견 창** 창에서.  
+ 클릭 하면 이전 섹션에 지정 된 확장 프로그램에이 메서드를 추가 하는 경우는 **호출 TestOutput** 명령 임을 확인할 수는 **출력** 창에 표시 된 단어 **일반 찾을 수 창** 창에서.  
   
-## <a name="getting-the-build-pane-of-the-output-window"></a>출력 창의 빌드 창 가져오기  
- 이 예제에는 검색 빌드 창에 쓰는 방법을 보여 줍니다. 기본적으로 빌드 창 없는 경과 활성화 것도 됩니다.  
+## <a name="get-the-build-pane-of-the-output-window"></a>출력 창의 빌드 창 가져오기  
+ 찾는 방법을 보여 주는이 예제는 **빌드** 창과 쓰는 것입니다. 이후 합니다 **빌드** 창 기본적으로 활성화 되지 않은, 고도 활성화 합니다.  
   
 ```csharp  
 void OutputTaskItemStringExExample(string buildMessage)  

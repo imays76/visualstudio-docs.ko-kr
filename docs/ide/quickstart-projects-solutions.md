@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e02be3774d0da28b96af0fb14ef64fd4bec6456e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080726"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512306"
 ---
 # <a name="quickstart-projects-and-solutions"></a>빠른 시작: 프로젝트 및 솔루션
 
@@ -178,11 +178,17 @@ ms.locfileid: "39080726"
 
 이 빠른 시작을 완료한 것을 축하 드립니다! 다음으로 Visual Studio에 대한 다른 빠른 시작 중 일부를 탐색하거나 [프로젝트 및 솔루션을 만드는](../ide/creating-solutions-and-projects.md) 방법에 대해 자세히 알아봅니다.
 
+> [!div class="nextstepaction"]
+> [빠른 시작: 먼저 Visual Studio IDE 살펴보기](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [빠른 시작: Visual Studio 개인 설정](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [빠른 시작: 편집기에서 코딩](../ide/quickstart-editor.md)
+
 ## <a name="see-also"></a>참고 항목
 
-- [빠른 시작: 먼저 Visual Studio IDE 살펴보기](../ide/quickstart-ide-orientation.md)
-- [빠른 시작: Visual Studio IDE 및 편집기 개인 설정](../ide/quickstart-personalize-the-ide.md)
-- [빠른 시작: 편집기에서 코딩](../ide/quickstart-editor.md)
 - [프로젝트 및 솔루션 속성 관리](../ide/managing-project-and-solution-properties.md)
 - [프로젝트에서 참조 관리](../ide/managing-references-in-a-project.md)
 - [프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

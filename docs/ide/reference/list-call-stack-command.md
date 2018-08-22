@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e04bb46d167478b85f4b6f8b4d6df903bd46e8b7
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: e809af75f0a4a47da6af30a3d93748401ca4609d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704618"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512007"
 ---
 # <a name="list-call-stack-command"></a>호출 스택 목록 표시 명령
 현재 호출 스택을 표시합니다.
@@ -83,7 +83,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  스레드:`n`
 
- 선택 사항입니다. 스레드 `n`에 대한 호출 스택을 표시합니다. 스레드가 지정된 경우 현재 스레드에 대한 호출 스택을 표시합니다.
+ 선택 사항입니다. 스레드 `n`에 대한 호출 스택을 표시합니다. 스레드가 지정되지 않은 경우 현재 스레드에 대한 호출 스택을 표시합니다.
 
 ## <a name="remarks"></a>설명
  인수 또는 스위치에 대한 변경 내용은 이 명령의 이후 호출에 적용됩니다. Debug.ListCallStackby 자체를 실행하면 전체 호출 스택이 표시됩니다. 예를 들어 인덱스를 지정하는 경우

@@ -1,7 +1,7 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/05/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,18 +10,62 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d43542dc78c8bc0eaeb05e1a620edff7a88efa37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2bea6bca74fa3c97e6501a44f7d9ea950369d6c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31084121"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639735"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
+## <a name="1602"></a>1.6.0.2
+ 릴리스 날짜: 2018년 7월 24일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+     -   Unity 성능 버그에 대한 롤백 해결(Unity가 이 문제를 해결했음)
+     
+## <a name="1601"></a>1.6.0.1
+ 릴리스 날짜: 2018년 7월 10일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+     -   셰이더 코드 색 지정 지원이 수정되었습니다.
+     
+## <a name="1600"></a>1.6.0.0
+ 릴리스 날짜: 2018년 6월 26일
+
+### <a name="bug-fixes"></a>버그 수정
+
+-   **마법사:**
+
+    -   OnApplicationFocus 메시지에서 오타가 수정되었습니다.
+
+-   **Project Generation:**
+
+     -   Unity 성능 버그에 대한 일시적인 해결 방법: 프로젝트를 생성할 때 MonoIslands를 캐시합니다.
+     
+     -   새 Unity 런타임에서 사용하는 경우 더 이상 이식 가능한 pdb를 mdb로 변환하지 않습니다.
+     
+## <a name="1502"></a>1.5.0.2
+ 릴리스 날짜: 2018년 4월 18일
+ 
+### <a name="new-features"></a>새 기능
+
+-   **통합:**
+
+    -   기본 셰이더 코드 완성에 대한 지원이 추가되었습니다.
+    
+    -   셰이더 파일에서 주석을 설정/해제하는 지원이 추가되었습니다.
+
 ## <a name="1501"></a>1.5.0.1
- 릴리스됨 2018-03-28
+ 릴리스 날짜: 2018년 3월 28일
  
 ### <a name="new-features"></a>새 기능
 
@@ -30,7 +74,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   Unity 프로젝트 탐색기에서 추가 템플릿에 대한 지원이 추가되었습니다.
 
 ## <a name="1500"></a>1.5.0.0
- 릴리스됨 2018-03-21
+ 릴리스 날짜: 2018년 3월 21일
  
 ### <a name="new-features"></a>새 기능
 
@@ -39,7 +83,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   USB로 연결된 Android 플레이어에 연결 및 검색에 대한 지원이 추가되었습니다.
 
 ## <a name="1403"></a>1.4.0.3
- 릴리스됨 2018-03-05
+ 릴리스 날짜: 2018년 3월 5일
  
 ### <a name="new-features"></a>새 기능
 
@@ -52,7 +96,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   전용 설정에 대한 옵션 패널이 추가되었습니다.
 
 ## <a name="1402"></a>1.4.0.2
- 릴리스됨 2018-01-24
+ 릴리스 날짜: 2018년 1월 24일
  
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -67,7 +111,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   새 플레이어를 검색하는 경우 알림이 수정되었습니다.
 
 ## <a name="1401"></a>1.4.0.1
- 릴리스됨 2018-01-23
+ 릴리스 날짜: 2018년 1월 23일
  
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -76,7 +120,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   두 번 클릭 시 확장/축소 폴더 수정함
 
 ## <a name="1400"></a>1.4.0.0
- 릴리스됨 2017-12-13
+ 릴리스 날짜: 2017년 12월 13일
  
 ### <a name="new-features"></a>새 기능
 
@@ -91,7 +135,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   자동 pdb에서 mdb로의 디버그 기호 변환을 수정했습니다.
 
 ## <a name="1301"></a>1.3.0.1
- 릴리스됨 2017-12-12
+ 릴리스 날짜: 2017년 12월 12일
  
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -104,7 +148,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   메서드를 삽입하기 전에 roslyn 컨텍스트를 새로 고칩니다.
 
 ## <a name="1300"></a>1.3.0.0
- 릴리스됨 2017-11-20
+ 릴리스 날짜: 2017년 11월 20일
  
 ### <a name="new-features"></a>새 기능
 
@@ -115,7 +159,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   Mac 7.4용 VS에서 새 완성 API에 대한 지원이 추가되었습니다.
 
 ## <a name="1200"></a>1.2.0.0
- 릴리스됨 2017-10-23
+ 릴리스 날짜: 2017년 10월 23일
  
 ### <a name="new-features"></a>새 기능
 
@@ -132,7 +176,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   이제 기본값이 'true'이므로 AllowAttachedDebuggingOfEditor Unity 플래그를 강제하지 않습니다.
 
 ## <a name="1103"></a>1.1.0.3
- 릴리스됨 2017-10-23
+ 릴리스 날짜: 2017년 10월 23일
  
 ### <a name="new-features"></a>새 기능
 
@@ -141,7 +185,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   .NET 4.6 프로필에 대한 지원이 추가되었습니다.
 
 ## <a name="1102"></a>1.1.0.2
- 릴리스됨 2017-08-08
+ 릴리스 날짜: 2017년 8월 8일
  
 ### <a name="new-features"></a>새 기능
 
@@ -154,7 +198,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   Unity 5.6을 사용할 경우 안전하지 않은 컴파일 스위치를 항상 사용하도록 설정합니다.
 
 ## <a name="1101"></a>1.1.0.1
- 릴리스됨 2017-07-20
+ 릴리스 날짜: 2017년 7월 20일
  
 ### <a name="new-features"></a>새 기능
 
@@ -163,7 +207,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   지역화된 리소스에 대한 지원이 추가되었습니다.
 
 ## <a name="1100"></a>1.1.0.0
- 릴리스됨 2017-07-12
+ 릴리스 날짜: 2017년 7월 12일
  
 ### <a name="new-features"></a>새 기능
 
@@ -186,7 +230,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   컴파일할 때 셰이더 오류 메시지를 수정했습니다.
 
 ## <a name="1001"></a>1.0.0.1
- 릴리스됨 2017-05-04
+ 릴리스 날짜: 2017년 5월 4일
  
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -195,4 +239,4 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
     -   하이브리드 및 일반 프로젝트를 사용하여 활성 문서 추적을 수정했습니다.
 
 ## <a name="1000"></a>1.0.0.0
- 릴리스됨 2017-05-03
+ 릴리스 날짜: 2017년 5월 3일

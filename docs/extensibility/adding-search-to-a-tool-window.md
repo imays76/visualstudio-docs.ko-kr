@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152528"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498566"
 ---
 # <a name="add-search-to-a-tool-window"></a>도구 창에 검색 추가
 를 작성 하거나 도구 창 확장 프로그램에서 업데이트할 때 Visual Studio에서 다른 곳에 표시 되는 동일한 검색 기능을 추가할 수 있습니다. 이 기능에는 다음 기능이 포함 됩니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "39152528"
   
 -   특정 필드 또는 검색 대상의 측면에서 검색을 필터링 할 수 있습니다.  
   
- 이 연습을 수행 하 여 다음 작업을 수행 하는 방법을 알아봅니다.  
+이 연습을 수행 하 여 다음 작업을 수행 하는 방법을 알아봅니다.  
   
 1.  VSPackage 프로젝트를 만듭니다.  
   

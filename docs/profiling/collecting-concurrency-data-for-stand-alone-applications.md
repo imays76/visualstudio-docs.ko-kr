@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20ae775a6dc49dd2a6dd3cb391eeaf69ff7fa32c
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a7966bcffff03c23b99837ba69f591d76258146c
+ms.sourcegitcommit: 4400926d00b5f5d52f03cb5d6f8a582d6049ecd9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335946"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "39276483"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 응용 프로그램에 대한 동시성 데이터 수집
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 동시성 방법을 사용하면 CPU 사용률, 스레드 경합, 스레드 마이그레이션, 동기화 지연, 겹친 IO 영역 및 기타 시스템 이벤트를 보여 주는 리소스 경합 데이터 및 스레드 작업 데이터를 수집할 수 있습니다.  
@@ -29,9 +29,9 @@ ms.locfileid: "34335946"
 |작업|관련 콘텐츠|  
 |----------|---------------------|  
 |**.NET Framework 응용 프로그램 시작 및 동시성 데이터 프로파일링**|-   [방법: .NET Framework 응용 프로그램을 시작하여 동시성 데이터 수집](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|  
-|**C/C++ 응용 프로그램 시작 및 동시성 데이터 프로파일링**|-   [방법: 네이티브 응용 프로그램을 시작하여 동시성 데이터 수집](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**C/C++ 응용 프로그램 시작 및 동시성 데이터 프로파일링**|-   [방법: 네이티브 응용 프로그램을 시작하여 동시성 데이터 수집](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
 |**실행 중인 .NET Framework 응용 프로그램에 프로파일러 연결**|-   [방법: .NET Framework 응용 프로그램에 프로파일러를 연결하여 동시성 데이터 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|  
-|**실행 중인 C/C++ 응용 프로그램에 프로파일러 연결**|-   [방법: 네이티브 응용 프로그램에 프로파일러 연결 및 동시성 데이터 수집](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)|  
+|**실행 중인 C/C++ 응용 프로그램에 프로파일러 연결**|-   [방법: 네이티브 응용 프로그램에 프로파일러 연결 및 동시성 데이터 수집](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|  
   
 ## <a name="related-tasks"></a>관련 작업
   

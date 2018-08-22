@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92be0bc15542010cfeea8a9ee70e69ff52e14163
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c5b04bfa04b1b6fd6599e5fdd06d6c58210f635
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137549"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638445"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 요소(Visual Studio 템플릿)
-저장 위치를 통해 프로젝트에 대해 묻는 메시지가 있는지 여부를 지정 된 **새 프로젝트** 프로젝트를 만들 때 대화 상자. 이 요소 설정 된 경우 `true`, 저장에 대 한 사용자 묻는 위치 경우 `false`, 다음 묻지 않습니다. (즉, 임시 프로젝트 생성 됩니다.)  
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 요소 (Visual Studio 템플릿)
+저장 위치를 통해 프로젝트에 대해 묻는 여부를 지정 합니다 **새 프로젝트** 프로젝트를 만들 때 대화 상자. 이 요소 설정 된 경우 `true`에 저장 된 사용자가 입력 한 다음 위치 같으면 `false`을 묻는 메시지가 나타나지 않습니다. (즉, 임시 프로젝트가 만들어집니다.)  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -31,12 +31,12 @@ ms.locfileid: "31137549"
   
 ## <a name="syntax"></a>구문  
   
-```  
+```xml  
 <PromptForSaveOnCreation> true/false </PromptForSaveOnCreation>  
 ```  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
   
 ### <a name="attributes"></a>특성  
  없음  
@@ -53,15 +53,15 @@ ms.locfileid: "31137549"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 텍스트 중 하나 여야 합니다 `true` 또는 `false`, `true` 사용자 저장에 대 한 나타납니다 나타내는 새 프로젝트를 만들 때 위치입니다.  
+ 텍스트 여야 `true` 또는 `false`, `true` 저장에 대 한 사용자 메시지가 있는지를 나타내는 새 프로젝트를 만들 때 위치 합니다.  
   
 ## <a name="remarks"></a>설명  
  `PromptForSaveOnCreation`는 선택적 요소입니다. 기본값은 `false`입니다.  
   
  임시 프로젝트는 프로젝트를 만들고 해당 프로젝트의 내용을 디스크에 저장 하지 않고 수정할 수 있습니다.  
   
-## <a name="example"></a>예제  
- 값을 설정 하는 다음 예제에서는 `PromptForSaveOnCreation` 같음 `false`, 프로젝트를 임시 프로젝트로 만들 수 있도록 지정 합니다.  
+## <a name="example"></a>예  
+ 다음 예제에서는 값을 설정 `PromptForSaveOnCreation` 같음 `false`, 프로젝트를 임시 프로젝트로 만들 수 있도록 지정 합니다.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,6 +88,6 @@ ms.locfileid: "31137549"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+ [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

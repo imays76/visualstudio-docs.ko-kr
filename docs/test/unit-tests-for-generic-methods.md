@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd45465d8eb20d802a20c1b04765afbe029a9993
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977285"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380123"
 ---
 # <a name="unit-tests-for-generic-methods"></a>제네릭 메서드의 단위 테스트
 
@@ -30,9 +30,9 @@ Visual Studio는 `MyList<T>`와 같은 제네릭 클래스의 단위 테스트�
 ## <a name="examples"></a>예제
  다음 예제에서는 제네릭의 단위 테스트를 보여 줍니다.
 
--   [생성된 테스트 코드 편집](#EditingGeneratedTestCode). 이 예제에는 생성된 테스트 코드와 편집된 테스트 코드의 두 섹션이 있습니다. 제네릭 메서드에서 생성된 원시 테스트 코드를 유용한 테스트 메서드로 편집하는 방법을 보여 줍니다.
+-   [생성된 테스트 코드 편집](#EditingGeneratedTestCode) 이 예제에는 생성된 테스트 코드와 편집된 테스트 코드의 두 섹션이 있습니다. 제네릭 메서드에서 생성된 원시 테스트 코드를 유용한 테스트 메서드로 편집하는 방법을 보여 줍니다.
 
--   [형식 제약 조건 사용](#TypeConstraintNotSatisfied). 이 예제에서는 형식 제약 조건을 사용하는 제네릭 메서드의 단위 테스트를 보여 줍니다. 이 예제에서는 형식 제약 조건이 충족되지 않습니다.
+-   [형식 제약 조건 사용](#TypeConstraintNotSatisfied) 이 예제에서는 형식 제약 조건을 사용하는 제네릭 메서드의 단위 테스트를 보여 줍니다. 이 예제에서는 형식 제약 조건이 충족되지 않습니다.
 
 ###  <a name="EditingGeneratedTestCode"></a> 예제 1: 생성된 테스트 코드 편집
  이 섹션의 테스트 코드는 `SizeOfLinkedList()`라는 테스트 대상 코드 메서드를 테스트합니다. 이 메서드는 연결된 목록의 노드 수를 지정하는 정수를 반환합니다.
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션에서 테스트를 실행하는 동안 디버깅](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)을 참조하세요.
+> SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션에서 테스트를 실행하는 동안 디버그](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)를 참조하세요.
 
 
 ###  <a name="TypeConstraintNotSatisfied"></a> 예제 2: 형식 제약 조건 사용
@@ -125,7 +125,7 @@ public void SizeOfLinkedListTest()
 
  두 번째 섹션에서는 테스트 프로젝트의 코드를 보여 줍니다.
 
-#### <a name="code-under-test-project"></a>테스트 대상 코드 프로젝트
+#### <a name="code-under-test-project"></a>테스트 프로젝트 대상 코드
 
 ```csharp
 using System;

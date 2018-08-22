@@ -14,27 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3d1c1e72524c393fdb3adc4477ea9ae374fbfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8bd34f72f54fe068ff39b752ddbd6348e4970db
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102274"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252377"
 ---
 # <a name="programs"></a>Programs
-디버거 아키텍처를 기준으로 한 **프로그램**:  
+디버거 아키텍처에는 *프로그램*:  
   
--   스레드의 집합 및 모듈의 집합 모두에 대 한 컨테이너가입니다. 프로그램에 Windows 운영 체제가 없는 단일 예를 들어 있습니다.  
+-   일련의 모듈 및 스레드 집합이 모두에 대 한 컨테이너입니다. 프로그램을 Windows 운영 체제에 없는 단일 비유  
   
-     프로그램은 하위 프로세스의 종류입니다. 예를 들어 웹 사이트를 디버깅 하는 스크립트를 프로그램으로 볼 수 있습니다. 스크립트 스크립팅 엔진 프로세스에서 실행 되는 동안 다른 스크립트와 무관 것도 고유한 스레드입니다. 디버그 엔진 (DE)는 프로그램 아니라에 프로세스 또는 스레드를 연결합니다.  
+     프로그램이 하위 프로세스의 종류에 설명 합니다. 예를 들어, 웹 사이트를 디버깅 하는 경우에 스크립트를 프로그램으로 볼 수 있습니다. 스크립팅 엔진 프로세스의 스크립트를 실행 하는 동안 다른 스크립트의 독립적인 있습니다 스레드 자체 집합입니다. 디버그 엔진 (DE) 프로세스 또는 스레드는 프로그램을 연결합니다.  
   
--   자체와 프로세스에서 실행 되 고에서 분리 되어 있는 경우 만든 DE 설명에 첨부할 수를 식별할 수 있습니다. 프로그램 실행, 중지, 계속 해 서 수를 종료 합니다.  
+-   자체 및에서 실행 중인 프로세스를 식별할 수 있습니다. 프로그램에서 분리 되 고 있으면을 생성 하는 장치에 설명에 연결할 수 있습니다. 수 또한 실행, 중지, 계속 해 서 한 프로그램 종료 합니다.  
   
--   모든 스레드를 열거할 수 있습니다. 프로그램 제공할 수도 있습니다. 고유한 디스어셈블리 스트림 및 지정한 문서 위치의 모든 코드 컨텍스트를 열거할 수 있습니다.  
+-   모든 스레드가 열거할 수 있습니다. 프로그램을 자체 디스어셈블리 스트림에 제공할 수도 있습니다 및 지정 된 문서 위치의 모든 코드 컨텍스트를 열거할 수 있습니다.  
   
--   로 표시 됩니다는 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 프로그램을 연결 하면 뷰어에서 전이나 구현에 따라 연결 프로세스의 일부로 만든 인터페이스입니다. 각 프로그램 해당에 따른 생성은 포트 프로그램 프로세스를 열거할 경우 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스에 대 한 인수로 전달 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)합니다. 디버그 엔진을 만들 수도 동안 `IDebugProgram2` 프로그램 노드에 따라 프로그램, 이러한 프로그램을 나타내는 인터페이스 생성 되지 않습니다. `IDebugProgramNode2` 는 DE 하 여 만든 인터페이스는 포트를 통해 만든 검색 하는 프로세스에서 실행 중인 프로그램에 대해서만 사용 되지만 실제 디버깅을 위해 사용 됩니다.  
+-   로 표시 됩니다는 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 프로그램은 연결 전이나 구현에 따라 연결 프로세스의 일부로 만든 인터페이스입니다. 프로세스의 프로그램을 열거 하는 포트, 해당에 따라 각 프로그램 생성 됩니다 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스에 대 한 인수로 전달 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)합니다. 디버그 엔진을 만들 수도 있지만 `IDebugProgram2` 프로그램 노드에 따라 프로그램에서 이러한 프로그램이 나타내는 인터페이스 생성 되지 않습니다. `IDebugProgramNode2` 는 DE 만든 인터페이스는 실제 디버깅을 위해 사용 되 고 프로세스에서는 프로그램이 실행 중인 검색만 사용 되는 포트에서 생성 된 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [프로세스](../../extensibility/debugger/processes.md)   
  [프로그램 노드](../../extensibility/debugger/program-nodes.md)   
  [모듈](../../extensibility/debugger/modules.md)   

@@ -8,13 +8,13 @@ ms.topic: Get-Started-Article
 description: 구독 관리자가 관리 포털에 액세스하여 VL(볼륨 라이선스)을 통해 획득한 구독을 관리할 수 있는 방법을 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
-mearchscope: VS Subscription
-ms.openlocfilehash: 33bcd59bde2cf56349e8100baea6f596362bc1f1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+searchscope: VS Subscription
+ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326941"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379542"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>포털에 액세스 및 관리자 관리 - VL(볼륨 라이선스)을 통해 획득한 구독의 경우
 

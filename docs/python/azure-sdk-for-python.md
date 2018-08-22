@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 241c7c424f9ef670f16eead4fc400e375584f8c2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4dd7e5841db4c05de5607f9aefe7b9a3a36fee19
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057956"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341240"
 ---
 # <a name="azure-sdk-for-python"></a>Python용 Azure SDK
 
@@ -41,21 +41,20 @@ pip install azure
 
 [Python용 Azure SDK 개발자 센터](http://azure.microsoft.com/develop/python/)에는 다음과 같은 여러 가지 자습서를 포함하여 유용한 리소스도 많이 있습니다.
 
-- [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) 및 [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app)을 사용하여 웹앱 만들기
+- [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) 및 [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app)을 사용하여 웹앱 만들기
 - [Blob 저장소](/azure/storage/storage-python-how-to-use-blob-storage)
 - [테이블 저장소](/azure/storage/storage-python-how-to-use-table-storage)
 - [큐 저장소](/azure/storage/storage-python-how-to-use-queue-storage)
 - [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Service Bus 큐](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
 - [Service Bus 토픽/구독](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
-- [Python에서 서비스 관리를 사용하는 방법](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
+- [서비스 관리](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 설명서가 없는 공용 API의 경우 [SDK GitHub 리포지토리](https://github.com/Azure/azure-sdk-for-python)에 있는 단위 테스트가 좋은 정보 자료가 됩니다.
 
 - [저장소 단위 테스트](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Service Bus 단위 테스트](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
 - [서비스 관리 단위 테스트](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
-- [리소스 관리 단위 테스트](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-mgmt/tests)
 
 ## <a name="support"></a>Support(지원)
 

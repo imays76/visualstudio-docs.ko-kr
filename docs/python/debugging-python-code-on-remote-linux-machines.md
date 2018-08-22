@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de32c1d0309d6b6510a914fe359193105e2febde
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057387"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341665"
 ---
-# <a name="remotely-debugging-python-code-on-linux"></a>Linux에서 Python 코드 원격 디버깅
+# <a name="remotely-debug-python-code-on-linux"></a>Linux에서 Python 코드 원격 디버그
 
 Visual Studio는 Windows 컴퓨터에서 Python 응용 프로그램을 로컬 및 원격으로 시작하고 디버그할 수 있습니다([Remote Debugging](../debugger/remote-debugging.md)(원격 디버깅) 참조). 또한 [ptvsd 라이브러리](https://pypi.python.org/pypi/ptvsd)를 사용하여 CPython 이외의 다른 운영 체제, 장치 또는 Python 구현에서 원격으로 디버그할 수도 있습니다.
 
@@ -28,20 +28,20 @@ ptvsd를 사용하는 경우 디버그되는 Python 코드는 Visual Studio에�
 |---|---|
 | ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | 원격 디버깅에 대한 소개는 Visual Studio 2015 및 2017 둘 다에 적용되는 [자세히 알아보기: 플랫폼 간 원격 디버깅](https://youtu.be/y1Qq7BrV6Cc)(youtube.com, 6분 22초)을 참조하세요. |
 
-## <a name="setting-up-a-linux-computer"></a>Linux 컴퓨터 설정
+## <a name="set-up-a-linux-computer"></a>Linux 컴퓨터 설정
 
 이 연습을 수행하려면 다음 항목이 필요합니다.
 
 - Mac OSX 또는 Linux와 같은 운영 체제에서 Python을 실행하는 원격 컴퓨터.
 - 원격 디버깅의 기본값으로 해당 컴퓨터의 방화벽에서 열려 있는 포트 5678(인바운드).
 
-쉽게 [Azure에서 Linux 가상 컴퓨터](/azure/virtual-machines/linux/creation-choices)를 만들고 Windows에서 [원격 데스크톱을 사용하여 Linux 가상 컴퓨터에 액세스](/azure/virtual-machines/linux/use-remote-desktop)할 수 있습니다. Python이 기본적으로 설치되어 있으므로 VM에 Ubuntu를 사용하면 편리합니다. 그렇지 않은 경우 추가 Python 다운로드 위치는 [원하는 Python 인터프리터 설치](installing-python-interpreters.md)를 참조하세요.
+쉽게 [Azure에서 Linux 가상 머신](/azure/virtual-machines/linux/creation-choices)을 만들고 Windows에서 [원격 데스크톱을 사용하여 Linux 가상 머신에 액세스](/azure/virtual-machines/linux/use-remote-desktop)할 수 있습니다. Python이 기본적으로 설치되어 있으므로 VM에 Ubuntu를 사용하면 편리합니다. 그렇지 않은 경우 추가 Python 다운로드 위치는 [원하는 Python 인터프리터 설치](installing-python-interpreters.md)를 참조하세요.
 
 Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내용은 [Azure Portal을 사용하여 Azure에서 VM으로 포트 열기](/azure/virtual-machines/windows/nsg-quickstart-portal)를 참조하세요.
 
-## <a name="preparing-the-script-for-debugging"></a>디버그할 스크립트 준비
+## <a name="prepare-the-script-for-debugging"></a>디버그할 스크립트 준비
 
-1. 원격 컴퓨터에서 다음 코드를 사용하여 `guessing-game.py`라는 Python 파일을 만듭니다.
+1. 원격 컴퓨터에서 다음 코드를 사용하여 *guessing-game.py*라는 Python 파일을 만듭니다.
 
     ```python
     import random
@@ -66,9 +66,11 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. `pip3 install ptvsd`를 사용하여 사용자 환경에 `ptvsd` 패키지를 설치합니다. (참고: 문제 해결에 필요한 경우를 대비하여 ptvsd 버전을 기록해 두는 것이 좋습니다. [ptvsd 목록](https://pypi.python.org/pypi/ptvsd)은 사용 가능한 버전도 보여 줍니다.)
+1. `pip3 install ptvsd`를 사용하여 사용자 환경에 `ptvsd` 패키지를 설치합니다. 
+   >[!NOTE]
+   >문제 해결에 필요한 경우를 대비하여 ptvsd 버전을 기록해 두는 것이 좋습니다. [ptvsd 목록](https://pypi.python.org/pypi/ptvsd)은 사용 가능한 버전도 보여줍니다.
 
-1. `guessing-game.py`에서 가능한 가장 빠른 지점에 다른 코드보다 먼저 해당 코드를 추가하여 원격 디버깅을 사용하도록 설정합니다. (엄격한 요구 사항은 아니지만, `enable_attach` 함수를 호출하기 전에 생성된 모든 백그라운드 스레드를 디버그할 수는 없습니다.)
+1. *guessing-game.py*에서 가능한 가장 빠른 지점에 다른 코드보다 먼저 해당 코드를 추가하여 원격 디버깅을 사용하도록 설정합니다. (엄격한 요구 사항은 아니지만, `enable_attach` 함수를 호출하기 전에 생성된 모든 백그라운드 스레드를 디버그할 수는 없습니다.)
 
    ```python
    import ptvsd
@@ -82,7 +84,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 > [!Tip]
 > `enable_attach` 및 `wait_for_attach` 외에도, ptvsd는 디버거가 연결되어 있으면 중단점을 프로그래밍 방식으로 작동하는 `break_into_debugger` 도우미 함수를 제공합니다. 또한 디버거가 연결되어 있으면 `True`를 반환하는 `is_attached` 함수도 있지만, 다른 `ptvsd` 함수를 호출하기 전에 이 결과를 확인할 필요가 없습니다.
 
-## <a name="attaching-remotely-from-python-tools"></a>Python 도구에서 원격으로 연결
+## <a name="attach-remotely-from-python-tools"></a>Python 도구에서 원격으로 연결
 
 이 단계에서는 간단한 중단점을 설정하여 원격 프로세스를 중지합니다.
 
@@ -90,16 +92,16 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 1. (선택 사항) 로컬 컴퓨터에서 ptvsd에 IntelliSense를 사용하려면 Python 환경에 ptvsd 패키지를 설치합니다.
 
-1. **디버그 > 프로세스에 연결**을 선택합니다.
+1. **디버그** > **프로세스에 연결**을 선택합니다.
 
 1. 나타나는 **프로세스에 연결** 대화 상자에서 **연결 형식**을 **Python remote (ptvsd)**(Python 원격(ptvsd))로 설정합니다. (이전 버전의 Visual Studio에서는 명령 이름이 **전송** 및 **Python 원격 디버깅**이었습니다.)
 
 1. **연결 대상** 필드(이전 버전의 경우 **한정자**)에 `tcp://<secret>@<ip_address>:5678`을 입력합니다. 여기서 `<secret>`은 Python 코드에서 전달된 문자열 `enable_attach`이고, `<ip_address>`는 원격 컴퓨터의 IP 주소이며(명시적 주소 또는 myvm.cloudapp.net과 같은 이름일 수 있음), `:5678`은 원격 디버깅 포트 번호입니다.
 
     > [!Warning]
-    > 공용 인터넷으로 연결하는 경우 `tcps`를 대신 사용하고 [SSL로 디버거 연결 보안](#securing-the-debugger-connection-with-ssl)에 대한 아래 지침을 따라야 합니다.
+    > 공용 인터넷으로 연결하는 경우 `tcps`를 대신 사용하고 [SSL를 사용하여 디버거 연결 보호](#securing-the-debugger-connection-with-ssl)에 대한 아래 지침을 따라야 합니다.
 
-1. Enter 키를 눌러 해당 컴퓨터에서 사용할 수 있는 ptvsd 프로세스의 목록을 채웁니다.
+1. **Enter** 키를 눌러 해당 컴퓨터에서 사용할 수 있는 ptvsd 프로세스의 목록을 채웁니다.
 
     ![연결 대상 입력 및 프로세스 나열](media/remote-debugging-qualifier.png)
 
@@ -131,7 +133,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="securing-the-debugger-connection-with-ssl"></a>SSL로 디버거 연결 보안
+## <a name="secure-the-debugger-connection-with-ssl"></a>SSL를 사용하여 디버거 연결 보호
 
 기본적으로 ptvsd 원격 디버그 서버에 대한 연결은 암호로만 보호되고 모든 데이터는 일반 텍스트로 전달됩니다. 더 안전한 연결을 위해 ptvsd는 다음과 같이 설정하는 SSL을 지원합니다.
 
@@ -158,9 +160,9 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 1. Visual Studio가 설치된 Windows 컴퓨터에서 신뢰할 수 있는 루트 CA에 인증서를 추가하여 채널을 보호합니다.
 
     1. 로원격 컴퓨터의 인증서 파일을 로컬 컴퓨터에 복사합니다.
-    1. 제어판을 열고 **관리 도구 > 컴퓨터 인증서 관리**로 이동합니다.
-    1. 나타나는 창의 왼쪽에서 **신뢰할 수 있는 루트 인증 기관**을 확장하고 **인증서**를 마우스 오른쪽 단추로 클릭한 다음 **모든 작업 > 가져오기...** 를 선택합니다.
-    1. 원격 컴퓨터에서 복사한 `.cer` 파일로 이동하여 이 파일을 선택한 다음 대화 상자를 클릭하여 가져오기를 완료합니다.
+    1. **제어판**을 열고 **관리 도구** > **컴퓨터 인증서 관리**로 이동합니다.
+    1. 나타나는 창의 왼쪽에서 **신뢰할 수 있는 루트 인증 기관**을 확장하고, **인증서**를 마우스 오른쪽 단추로 클릭하고, **모든 작업** > **가져오기**를 선택합니다.
+    1. 원격 컴퓨터에서 복사한 *.cer* 파일로 이동하여 이 파일을 선택한 다음, 대화 상자를 클릭하여 가져오기를 완료합니다.
 
 1. 앞에서 설명한 대로 Visual Studio에서 연결 프로세스를 반복하고 이제 **연결 대상**(또는 **한정자**)에 대한 프로토콜로 `tcps://`를 사용합니다.
 
@@ -170,11 +172,11 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 아래에 설명한 대로 SSL을 통해 연결하면 Visual Studio에서 잠재적인 인증서 문제에 대한 메시지를 표시합니다. 경고를 무시하고 계속할 수 있지만, 채널이 여전히 도청으로부터 암호화되더라도 메시지 가로채기(man-in-the-middle) 공격에 개방될 수 있습니다.
 
-1. 아래의 “원격 인증서를 신뢰할 수 없습니다.” 경고가 표시되는 경우 신뢰할 수 있는 루트 CA에 인증서를 제대로 추가하지 않았음을 의미합니다. 해당 단계를 확인하고 다시 시도합니다.
+1. 아래의 **원격 인증서를 신뢰할 수 없습니다.** 경고가 표시되는 경우 신뢰할 수 있는 루트 CA에 인증서를 제대로 추가하지 않았음을 의미합니다. 해당 단계를 확인하고 다시 시도합니다.
 
     ![SSL 인증서를 신뢰할 수 있습니다. 경고](media/remote-debugging-ssl-warning.png)
 
-1. 아래의 “원격 인증서 이름이 호스트 이름과 일치하지 않습니다.” 경고가 표시되는 경우 인증서를 만들 때 **일반 이름**으로 올바른 호스트 이름 또는 IP 주소를 사용하지 않았음을 의미합니다.
+1. 아래의 **원격 인증서 이름이 호스트 이름과 일치하지 않습니다.** 경고가 표시되는 경우 인증서를 만들 때 **일반 이름**으로 올바른 호스트 이름 또는 IP 주소를 사용하지 않았음을 의미합니다.
 
     ![SSL 인증서 호스트 이름 경고](media/remote-debugging-ssl-warning2.png)
 

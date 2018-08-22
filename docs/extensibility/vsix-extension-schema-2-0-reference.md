@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089372"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586354"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 확장 스키마 2.0 참조
 VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합니다. 스키마 파일 형식이 적용 됩니다. 이 스키마의 버전 2.0 추가 하는 사용자 지정 형식 및 특성을 지원 합니다.  매니페스트의 스키마가 확장 가능 합니다. 매니페스트 로더는 XML 요소 및 인식 하지 못하는 특성을 무시 합니다.  
@@ -28,7 +28,7 @@ VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합�
 >  Visual Studio 2015는 Visual Studio 2010, Visual Studio 2012 또는 Visual Studio 2013 형식에서 VSIX 파일을 로드할 수 있습니다.  
   
 ## <a name="package-manifest-schema"></a>패키지 매니페스트 스키마  
- 매니페스트 XML 파일의 루트 요소는 `<PackageManifest>`에서 단일 특성을 사용 하 여 `Version`, 매니페스트 형식의 버전입니다. 형식에 주요 변경 내용이, 버전 형식으로 변경 됩니다. 설정 하 여 매니페스트에 지정 된 매니페스트 형식 버전 2.0에 설명 합니다 `Version` 버전 값으로 특성 = "2.0"입니다.  
+ 매니페스트 XML 파일의 루트 요소는 `<PackageManifest>`합니다. 단일 특성이 `Version`, 매니페스트 형식의 버전입니다. 형식에 주요 변경 내용이, 버전 형식으로 변경 됩니다. 설정 하 여 매니페스트에 지정 된 매니페스트 형식 버전 2.0에 설명 합니다 `Version` 특성 버전의 값을 "2.0" =.  
   
 ### <a name="packagemanifest-element"></a>PackageManifest 요소  
  내는 `<PackageManifest>` 루트 요소를 다음 요소를 사용할 수 있습니다.  
@@ -46,7 +46,7 @@ VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합�
 ### <a name="metadata-element"></a>메타 데이터 요소  
  이 섹션은 패키지, 해당 id 및 정보를 보급 하는 방법에 대 한 메타 데이터입니다. `<Metadata>` 다음 요소가 포함 됩니다.  
   
--   `<Identity>` -이 패키지에 대 한 식별 정보를 정의 하 고 다음 특성을 포함 합니다.  
+-   `<Identity>` --이 패키지에 대 한 식별 정보를 정의 하는 중 다음 특성이 포함 되어 있습니다.  
   
     -   `Id` -이 특성에는 작성자가 선택한 패키지에 대 한 고유 ID는 이어야 합니다. 이름을 CLR 형식 지정은 동일한 방식으로 정규화 되어야 합니다: Company.Product.Feature.Name 합니다. `Id` 특성 100 자로 제한 됩니다.  
   
@@ -132,10 +132,10 @@ VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합�
         > [!IMPORTANT]
         >  VSIX 스키마의 버전 2.0은 Visual Studio 2012에서 도입 되었습니다. 이 스키마를 사용 하도록 Visual Studio 2012 있어야 합니다. 사용자나 나중에 컴퓨터에 설치 및 해당 제품의 일부인 VSIXInstaller.exe 사용. 이전 버전의 Visual Studio는 Visual Studio 2012 또는 이후 VSIXInstaller 있지만 나중 버전의 설치 관리자를 사용해 서만 대상으로 지정할 수 있습니다.  
   
-    -   `AnyAttribute*` - `<InstallationTarget>` 요소 이름-값 쌍 사전으로 런타임에 노출 될 수 있는 특성의 개방형 집합을 허용 합니다.  
+    -   `AnyAttribute*` - `<InstallationTarget>` 요소 이름-값 쌍 사전으로 런타임에 노출 되는 특성의 개방형 집합을 허용 합니다.  
   
 ### <a name="dependencies-element"></a>종속성 요소  
- 이 요소에는이 패키지를 선언 하는 종속성 목록을 포함 합니다. 모든 종속성을 지정 하는 패키지만 (로 식별 되 해당 `Id`) 해야 하기 전에 설치 된.  
+ 이 요소에는이 패키지를 선언 하는 종속성 목록을 포함 합니다. 모든 종속성을 지정 하는 경우 해당 패키지 (구분 해당 `Id`) 하기 전에 설치 해야 합니다.  
   
 -   `<Dependency>` 요소가-이 자식 요소에 다음 특성:  
   
@@ -164,7 +164,7 @@ VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합�
   
 -   `<Asset>` -이 요소는 다음과 같은 특성 및 요소가 포함 되어 있습니다.  
   
-    -   `Type` -확장 또는이 요소가 나타내는 콘텐츠 형식입니다. 각 `<Asset>` 요소는 단일 있어야 합니다. `Type`를 여러 개 있지만 `<Asset>` 동일한 요소가 있을 수 있습니다 `Type`. 네임 스페이스 규칙에 따라 정규화 된 이름으로이 특성을 나타내야 합니다. 알려진 형식은 다음과 같습니다.  
+    -   `Type` 확장 또는이 요소가 나타내는 콘텐츠 형식입니다. 각 `<Asset>` 요소는 단일 있어야 합니다. `Type`를 여러 개 있지만 `<Asset>` 동일한 요소가 있을 수 있습니다 `Type`. 네임 스페이스 규칙에 따라 정규화 된 이름으로이 특성을 나타내야 합니다. 알려진 형식은 다음과 같습니다.  
   
         1.  Microsoft.VisualStudio.VsPackage  
   
@@ -184,9 +184,9 @@ VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합�
   
     -   `Path` -파일 또는 자산을 포함 하는 패키지 내의 폴더에 상대 경로입니다.  
     
-    -   `TargetVersion` -버전 범위 지정 된 자산에 적용 됩니다. 여러 버전의 자산을 다른 버전의 Visual Studio를 배송 하는 데 있습니다. 적용 하려면 Visual Studio 2017.3 이상이 필요 합니다.
+    -   `TargetVersion` -지정 된 자산 적용 되는 버전 범위입니다. 여러 버전의 자산을 다른 버전의 Visual Studio를 배송 하는 데 있습니다. 적용 하려면 Visual Studio 2017.3 이상이 필요 합니다.
   
-    -   `AnyAttribute*` -개방형 집합 이름-값 쌍 사전으로 런타임에 노출 될 수 있는 특성입니다.  
+    -   `AnyAttribute*` -의 개방형 집합을 특성 이름-값 쌍 사전으로 런타임에 노출 되는 합니다.  
   
          `<AnyElement>*` -구조화 된 콘텐츠 간 허용 되는 `<Asset>` 시작 및 끝 태그입니다. 모든 요소는 XmlElement 개체의 목록으로 노출 됩니다. VSIX 확장 매니페스트 파일에서 구조화 된 형식별 메타 데이터를 정의 하 고 런타임 시이 열거할 수 있습니다.  
   
@@ -218,5 +218,5 @@ VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합�
 </PackageManifest>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)

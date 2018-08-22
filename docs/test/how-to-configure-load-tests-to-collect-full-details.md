@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cac171d6f0e1bcd91a89be799497b84dc15fc5a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70930a09f01450d59b44678ebd26d7e742af7294
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967098"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379627"
 ---
-# <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>방법: 전체 정보를 수집하여 테스트 결과에서 가상 사용자 동작을 활성화하도록 부하 테스트 구성
+# <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>방법: 전체 정보를 수집하여 테스트 결과에서 가상 사용자 작업을 활성화하도록 부하 테스트 구성
 
-부하 테스트에서 가상 사용자 동작 차트를 사용하려면 전체 정보를 수집하도록 부하 테스트를 구성해야 합니다. 전체 정보를 수집하도록 부하 테스트를 구성하려면 부하 테스트와 연결된 **타이밍 정보 저장소** 속성에 대해 **모든 개인 정보** 설정을 선택합니다. 이 모드의 부하 테스트에서는 모든 테스트, 페이지 및 트랜잭션에 대한 자세한 정보를 수집합니다.
+부하 테스트에서 **가상 사용자 작업 차트**를 사용하려면 전체 정보를 수집하도록 부하 테스트를 구성해야 합니다. 전체 정보를 수집하도록 부하 테스트를 구성하려면 부하 테스트와 연결된 **타이밍 정보 저장소** 속성에 대해 **모든 개인 정보** 설정을 선택합니다. 이 모드의 부하 테스트에서는 모든 테스트, 페이지 및 트랜잭션에 대한 자세한 정보를 수집합니다.
 
  이전 버전의 Visual Studio 부하 테스트에서 프로젝트를 업그레이드할 경우 다음 절차의 단계를 수행하여 전체 정보 컬렉션을 사용하도록 설정합니다.
 
@@ -37,19 +37,19 @@ ms.locfileid: "31967098"
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>부하 테스트에서 타이밍 정보 저장소 속성을 구성하려면
 
-1.  부하 테스트 편집기에서 부하 테스트를 엽니다.
+1.  **부하 테스트 편집기**에서 부하 테스트를 엽니다.
 
 2.  부하 테스트에서 **실행 설정** 노드를 확장합니다.
 
 3.  구성할 실행 설정(예: **Run Settings1[Active]**)을 선택합니다.
 
-4.  속성 창을 엽니다. **보기** 메뉴에서 **속성 창**을 선택합니다.
+4.  **속성** 창을 엽니다. **보기** 메뉴에서 **속성 창**을 선택합니다.
 
 5.  **결과** 범주에서 **타이밍 정보 저장소** 속성을 선택하고 **모든 개인 정보**를 선택합니다.
 
-     **타이밍 정보 저장소** 속성에 대해 **모든 개인 정보** 설정을 구성하면 부하 테스트를 실행하고 가상 사용자 동작 차트를 볼 수 있습니다. 자세한 내용은 [방법: 부하 테스트 중에 가상 사용자가 수행하는 작업 분석](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)을 참조하세요.
+     **타이밍 정보 저장소** 속성에 대해 **모든 개인 정보** 설정을 구성하면 부하 테스트를 실행하고 **가상 사용자 작업 차트**를 볼 수 있습니다. 자세한 내용은 [방법: 부하 테스트 중에 가상 사용자가 수행하는 작업 분석](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-- [세부 정보 뷰에서 가상 사용자 동작 분석](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [연습: 가상 사용자 동작 차트를 사용하여 문제 격리](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [세부 정보 보기에서 가상 사용자 작업 분석](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
+- [연습: 가상 사용자 작업 차트를 사용하여 문제 격리](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

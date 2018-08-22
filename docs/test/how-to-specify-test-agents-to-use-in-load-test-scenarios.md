@@ -14,26 +14,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4aacbd31516e6a3e55f1b543a3cc8f49ea6ce4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968497"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381471"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>방법: 부하 테스트 시나리오에서 사용할 테스트 에이전트 지정
 
 **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
 
 > [!NOTE]
-> 부하 테스트 시나리오 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
+> 부하 테스트 시나리오 속성과 해당 설명의 전체 목록을 보려면 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
 
-에이전트는 부하 테스트 편집기의 속성 창에서 **사용할 에이전트** 속성을 로 변경하여 지정할 수 있습니다.
+에이전트는 **속성** 창에서 **사용할 에이전트 속성**을 변경하도록 **부하 테스트 편집기**를 사용하여 지정할 수 있습니다.
 
 컨트롤러 및 에이전트를 사용하여 부하 테스트를 원격으로 실행하려는 경우 시나리오에서 사용할 에이전트를 지정할 수 있습니다. 예를 들어 특정 에이전트 집합을 지정하여 성능 추세를 분석할 때 일관성을 유지할 수 있습니다. 또한 에이전트는 지리적으로 분산되어 있을 수 있으므로 에이전트에서 실행하는 스크립트와 에이전트가 있는 위치 간에 밀접한 관계가 있습니다.
 
 > [!TIP]
-> 에이전트를 원격 사이트에 실제로 배치하지 않고 네트워크 에뮬레이션을 사용하여 느린 네트워크를 에뮬레이션할 수도 있습니다. 자세한 내용은 [가상 네트워크 유형 지정](../test/specify-virtual-network-types-in-a-load-test-scenario.md) 및 [가상 네트워크 유형 지정](../test/specify-virtual-network-types-in-a-load-test-scenario.md)을 참조하세요.
+> 에이전트를 원격 사이트에 실제로 배치하지 않고 네트워크 에뮬레이션을 사용하여 느린 네트워크를 에뮬레이션할 수도 있습니다. 자세한 내용은 [가상 네트워크 형식 지정](../test/specify-virtual-network-types-in-a-load-test-scenario.md)을 참조하세요.
 
 자세한 내용은 [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)를 참조하세요.
 
@@ -47,13 +47,13 @@ ms.locfileid: "31968497"
 
 1.  부하 테스트를 엽니다.
 
-     부하 테스트 편집기가 나타납니다. 부하 테스트 트리가 표시됩니다.
+     **부하 테스트 편집기**가 나타납니다. 부하 테스트 트리가 표시됩니다.
 
 2.  부하 테스트 트리 **시나리오** 폴더에서 사용할 에이전트를 지정할 시나리오 노드를 선택합니다.
 
 3.  **보기** 메뉴에서 **속성 창**을 선택합니다.
 
-     시나리오의 범주와 속성이 속성 창에 표시됩니다.
+     시나리오의 범주와 속성이 **속성** 창에 표시됩니다.
 
 4.  **사용할 에이전트** 속성의 텍스트 상자에 시나리오가 실행될 수 있는 에이전트 목록을 입력합니다.
 

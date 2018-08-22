@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081428"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512150"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>다른 배포에 대 한 ClickOnce 응용 프로그램 만들기
 ClickOnce 배포를 만든 모든 개발자가 응용 프로그램 자체를 배포 하려고 합니다. 이들 중 다 수만 ClickOnce를 사용 하 여 해당 응용 프로그램을 패키지 및 같은 규모가 큰 기업 고객에 게 파일을 전달 합니다. 고객이 네트워크에서 응용 프로그램을 호스트 하는 일을 담당 합니다. 이 항목에서는.NET framework 버전 3.5 이전 버전에서 이러한 배포의 문제 중 일부를 설명합니다. .NET Framework 3.5의 새로운 "트러스트에 대 한 매니페스트를 사용" 기능을 사용 하 여 제공 하는 새 솔루션에 설명 합니다. 마지막으로, 이전 버전의.NET Framework를 여전히 사용 하는 고객에 대 한 ClickOnce 배포를 만들기 위한 권장 되는 전략을 사용 하 여 완료 합니다.  
@@ -54,7 +54,7 @@ ClickOnce 배포를 만든 모든 개발자가 응용 프로그램 자체를 배
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>트러스트에 대 한 응용 프로그램 매니페스트를 사용 하 여 고객 배포를 만들기  
  .NET Framework 3.5에서 ClickOnce 매니페스트에 서명 하는 방법의 시나리오에 개발자와 고객이 새 솔루션을 제공 하는 새로운 기능을 포함 합니다. ClickOnce 응용 프로그램 매니페스트 라는 새 요소를 지 원하는 `<useManifestForTrust>` 개발자의 응용 프로그램 매니페스트 디지털 서명을 신뢰 결정에 사용 해야 임을 나타낼 수 있도록 합니다. ClickOnce 패키징 도구를 사용 하는 개발자-와 같은 *Mage.exe*를 *MageUI.exe*, 및 Visual Studio-응용 프로그램 매니페스트에서이 요소를 포함할 뿐만 아니라 해당 게시자 이름을 모두 포함 하 고 매니페스트에서 응용 프로그램의 이름입니다.  
   
- 사용 하는 경우 `<useManifestForTrust>`, 배포 매니페스트는 인증 기관에서 발급 된 Authenticode 인증서로 서명할 필요가 없습니다. 대신 사용 하 여 자체 서명 된 인증서로 서명할 수 있습니다. 자체 서명 된 인증서는 표준.NET Framework SDK 도구를 사용 하 여 고객 또는 개발자에서 생성 되 고 그런 다음 표준 ClickOnce 배포 도구를 사용 하 여 배포 매니페스트를 적용할 합니다. 자세한 내용은 [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)합니다.  
+ 사용 하는 경우 `<useManifestForTrust>`, 배포 매니페스트는 인증 기관에서 발급 된 Authenticode 인증서로 서명할 필요가 없습니다. 대신 사용 하 여 자체 서명 된 인증서로 서명할 수 있습니다. 자체 서명 된 인증서는 표준.NET Framework SDK 도구를 사용 하 여 고객 또는 개발자에서 생성 되 고 그런 다음 표준 ClickOnce 배포 도구를 사용 하 여 배포 매니페스트를 적용할 합니다. 자세한 내용은 [MakeCert](/windows/desktop/SecCrypto/makecert)합니다.  
   
  자체 서명 된 인증서를 사용 하 여 배포 매니페스트에 대 한 여러 가지 이점을 제공 합니다. 자신의 Authenticode 인증서를 만들거나 가져와야 고객에 대 한 필요를 없애 `<useManifestForTrust>` 개발자가 응용 프로그램의 고유한 브랜드 id를 유지 하면서 고객에 대 한 배포를 간소화 합니다. 결과 더 안전 하 고 고유한 응용 프로그램 id는 서명 된 배포의 집합. 여러 고객에 게 동일한 응용 프로그램 배포에서 발생할 수 있는 잠재적인 충돌을 제거 합니다.  
   

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117630"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380514"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL 테스트 방법
 
@@ -63,19 +63,19 @@ ms.locfileid: "37117630"
 
 2.  **테스트** 메뉴에서 **실행**을 선택하고 **모두 실행**을 선택합니다.
 
-     테스트 프로젝트가 빌드되고 실행됩니다. 테스트 탐색기 창이 나타나고 테스트가 **통과한 테스트** 아래에 나열됩니다. 창의 아래쪽에 있는 요약 창은 선택된 테스트에 대한 추가 정보를 제공합니다.
+     테스트 프로젝트가 빌드되고 실행됩니다. **테스트 탐색기** 창이 나타나고 테스트가 **통과한 테스트** 아래에 나열됩니다. 창의 아래쪽에 있는 **요약** 창은 선택된 테스트에 대한 추가 정보를 제공합니다.
 
      ![테스트 탐색기](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> 솔루션에 DLL 프로젝트 추가
 
-1.  솔루션 탐색기에서 솔루션 이름을 선택합니다. 바로 가기 메뉴에서 **추가**를 선택한 다음 **새 프로젝트 추가**를 선택합니다.
+1.  **솔루션 탐색기**에서 솔루션 이름을 선택합니다. 바로 가기 메뉴에서 **추가**를 선택한 다음 **새 프로젝트 추가**를 선택합니다.
 
      ![RooterLib 프로젝트 만들기](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  **새 프로젝트 추가** 대화 상자에서 **DLL(UWP 앱)** 을 선택합니다.
 
-3.  **RooterLib.h** 파일에 다음 코드를 추가합니다.
+3.  *RooterLib.h* 파일에 다음 코드를 추가합니다.
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -103,15 +103,15 @@ ms.locfileid: "37117630"
 
 4.  명령줄에 ROOTERLIB_EXPORTS 기호를 추가합니다.
 
-    1.  솔루션 탐색기에서 **RooterLib** 프로젝트를 선택한 다음 바로 가기 메뉴에서 **속성**을 선택합니다.
+    1.  **솔루션 탐색기**에서 **RooterLib** 프로젝트를 선택한 다음, 바로 가기 메뉴에서 **속성**을 선택합니다.
 
          ![전처리기 기호 정의 추가](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2.  RooterLib 속성 페이지 대화 상자에서 **구성 속성**, **C++** 를 차례로 확장하고 **전처리기**를 선택합니다.
+    2.  **RooterLib 속성 페이지** 대화 상자에서 **구성 속성** 및 **C++** 를 차례로 확장하고, **전처리기**를 선택합니다.
 
-    3.  **전처리기 정의** 목록에서 **\<편집...>** 을 선택하고 전처리기 정의 대화 상자에서 `ROOTERLIB_EXPORTS`를 추가합니다.
+    3.  **전처리기 정의** 목록에서 **\<편집...>** 을 선택한 다음, **전처리기 정의** 대화 상자에서 `ROOTERLIB_EXPORTS`를 추가합니다.
 
-5.  선언된 함수의 최소 구현을 추가합니다. **RooterLib.cpp**를 열고 다음 코드를 추가합니다.
+5.  선언된 함수의 최소 구현을 추가합니다. *RooterLib.cpp*를 열고 다음 코드를 추가합니다.
 
     ```cpp
     // constructor
@@ -131,17 +131,17 @@ ms.locfileid: "37117630"
 
 1.  RooterLibTests 프로젝트에 RooterLib를 추가합니다.
 
-    1.  솔루션 탐색기에서 **RooterLibTests** 프로젝트를 선택한 다음, 바로 가기 메뉴에서 **참조**를 선택합니다.
+    1.  **솔루션 탐색기**에서 **RooterLibTests** 프로젝트를 선택한 다음, 바로 가기 메뉴에서 **참조**를 선택합니다.
 
-    2.  RooterLib 프로젝트 속성 대화 상자에서 **공용 속성**을 확장하고 **프레임워크 및 참조**를 선택합니다.
+    2.  **RooterLib 프로젝트 속성** 대화 상자에서 **공용 속성**을 확장하고 **프레임워크 및 참조**를 선택합니다.
 
     3.  **새 참조 추가** 선택
 
     4.  **참조 추가** 대화 상자에서 **솔루션**을 확장한 다음 **프로젝트**를 선택합니다. 그런 다음 **RouterLib** 항목을 선택합니다.
 
-2.  **unittest1.cpp**에 RooterLib 헤더 파일을 포함합니다.
+2.  *unittest1.cpp*에 RooterLib 헤더 파일을 포함합니다.
 
-    1.  **unittest1.cpp**를 엽니다.
+    1.  *unittest1.cpp*를 엽니다.
 
     2.  다음 코드를 `#include "CppUnitTest.h"` 줄 아래에 추가합니다.
 
@@ -149,7 +149,7 @@ ms.locfileid: "37117630"
         #include "..\RooterLib\RooterLib.h"
         ```
 
-3.  가져온 함수를 사용하는 테스트를 추가합니다. **unittest1.cpp**에 다음 코드를 추가합니다.
+3.  가져온 함수를 사용하는 테스트를 추가합니다. *unittest1.cpp*에 다음 코드를 추가합니다.
 
     ```cpp
     TEST_METHOD(BasicTest)
@@ -172,9 +172,9 @@ ms.locfileid: "37117630"
 
 4.  솔루션을 빌드합니다.
 
-     새 테스트가 테스트 탐색기의 **실행하지 않은 테스트** 노드에 표시됩니다.
+     새 테스트가 **테스트 탐색기**의 **실행하지 않은 테스트** 노드에 표시됩니다.
 
-5.  테스트 탐색기에서 **모두 실행**을 선택합니다.
+5.  **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
      ![기본 테스트 통과](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -203,7 +203,7 @@ ms.locfileid: "37117630"
     >
     > 사용자가 요구 사항을 변경할 경우, 더 이상 올바르지 않은 테스트는 비활성화합니다. 새 테스트를 작성하고, 동일한 증분 방식으로 한 번에 하나씩 작동합니다.
 
-2.  테스트 탐색기에서 **모두 실행**을 선택합니다.
+2.  **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
 3.  테스트가 실패합니다.
 
@@ -212,7 +212,7 @@ ms.locfileid: "37117630"
     > [!TIP]
     > 테스트 작성 후 즉시 각 테스트가 실패하는지 확인합니다. 이렇게 하면 결코 실패하지 않는 테스트를 작성하게 되는 간단한 실수를 방지하는 데 도움이 됩니다.
 
-4.  새 테스트가 통과하도록 테스트 중인 코드를 개선합니다. **RooterLib.cpp**에 다음을 추가합니다.
+4.  새 테스트가 통과하도록 테스트 중인 코드를 개선합니다. *RooterLib.cpp*에 다음을 추가합니다.
 
     ```cpp
     #include <math.h>
@@ -233,7 +233,7 @@ ms.locfileid: "37117630"
 
     ```
 
-5.  솔루션을 빌드한 다음 테스트 탐색기에서 **모두 실행**을 선택합니다.
+5.  솔루션을 빌드한 다음, **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
      두 테스트가 모두 통과합니다.
 
@@ -243,7 +243,7 @@ ms.locfileid: "37117630"
 
 ##  <a name="Debug_a_failing_test"></a> 실패한 테스트 디버그
 
-1.  **unittest1.cpp**에 다른 테스트를 추가합니다.
+1.  *unittest1.cpp*에 다른 테스트를 추가합니다.
 
     ```cpp
     // Verify that negative inputs throw an exception.
@@ -275,9 +275,9 @@ ms.locfileid: "37117630"
 
     ```
 
-2.  테스트 탐색기에서 **모두 실행**을 선택합니다.
+2.  **테스트 탐색기**에서 **모두 실행**을 선택합니다.
 
-     테스트가 실패합니다. 테스트 탐색기에서 테스트 이름을 선택합니다. 실패한 어설션이 강조 표시됩니다. 오류 메시지는 테스트 탐색기의 세부 정보 창에 표시됩니다.
+     테스트가 실패합니다. **테스트 탐색기**에서 테스트 이름을 선택합니다. 실패한 어설션이 강조 표시됩니다. 오류 메시지는 **테스트 탐색기**의 세부 정보 창에 표시됩니다.
 
      ![NegativeRangeTests 실패](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -289,7 +289,7 @@ ms.locfileid: "37117630"
 
          중단점에서 실행이 중지되면 코드를 단계별로 실행합니다.
 
-    3.  예외를 catch하는 코드를 **RooterLib.cpp**에 추가합니다.
+    3.  예외를 catch하는 코드를 *RooterLib.cpp*에 추가합니다.
 
         ```cpp
         #include <stdexcept>
@@ -305,7 +305,7 @@ ms.locfileid: "37117630"
 
         ```
 
-    1.  테스트 탐색기에서 **모두 실행**을 선택하여 수정된 메서드를 테스트하고 실패가 재발하지 않는지 확인합니다.
+    1.  **테스트 탐색기**에서 **모두 실행**을 선택하여 수정된 메서드를 테스트하고 재발하지 않는지 확인합니다.
 
  이제 모든 테스트가 통과합니다.
 

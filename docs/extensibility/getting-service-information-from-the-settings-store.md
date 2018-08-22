@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11731e36517ae6245dddd1ebdd3b002fb3c37391
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 947eb0fd25e57e00f355afac8dc993071859189c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127505"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500490"
 ---
-# <a name="getting-service-information-from-the-settings-store"></a>설정 저장소에서 서비스 정보 가져오기
-모든 사용 가능한 서비스를 확인 하거나 특정 서비스가 설치 되어 있는지 여부를 확인 하려면 설정 저장소를 사용할 수 있습니다. 서비스 클래스의 형식을 알고 있어야 합니다.  
+# <a name="get-service-information-from-the-settings-store"></a>설정 저장소에서 서비스 정보 가져오기
+사용 가능한 모든 서비스 또는 특정 서비스가 설치 되어 있는지 확인 하려면 설정 저장소를 사용할 수 있습니다. 서비스 클래스의 형식을 알고 있어야 합니다.  
   
-### <a name="to-list-the-available-services"></a>사용 가능한 서비스를 나열 하려면  
+## <a name="to-list-the-available-services"></a>사용 가능한 서비스를 나열 하려면  
   
-1.  FindServicesExtension 라는 VSIX 프로젝트 만들고 FindServicesCommand 라는 사용자 지정 명령 추가 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 참조 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1.  라는 VSIX 프로젝트를 만듭니다 `FindServicesExtension` 라는 사용자 지정 명령을 추가 하 고 `FindServicesCommand`입니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 명령을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  FindServicesCommand.cs에 다음 추가 문을 사용 하 여:  
+2.  *FindServicesCommand.cs*, 다음 추가 문을 사용 하 여:  
   
     ```vb  
     using System.Collections.Generic;  
@@ -34,7 +34,7 @@ ms.locfileid: "31127505"
     using System.Windows.Forms;  
     ```  
   
-3.  명명 된 서비스 하위를 찾은 다음 구성 설정 저장소를 가져옵니다. 이 컬렉션에 사용 가능한 서비스를 모두 포함 됩니다. MenuItemCommand 메서드를 기존 코드를 제거 하 고 다음으로 바꿉니다.  
+3.  구성 설정 저장소를 가져올 명명 된 서비스 하위를 찾은 다음입니다. 이 컬렉션에는 사용 가능한 모든 서비스가 포함 됩니다. 에 `MenuItemCommand` 메서드에서 기존 코드를 제거 하 고 다음으로 바꿉니다.  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -55,16 +55,16 @@ ms.locfileid: "31127505"
   
 4.  프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 표시 됩니다.  
   
-5.  실험적 인스턴스에서는 **도구** 메뉴를 클릭 하 여 **호출 FindServicesCommand**합니다.  
+5.  실험적 인스턴스에서는 **도구** 메뉴에서 클릭 **FindServicesCommand 호출**합니다.  
   
-     모든 서비스를 나열 하는 메시지 상자가 나타납니다.  
+     서비스를 모두 나열 하는 메시지 상자가 표시 됩니다.  
   
-     이러한 설정을 확인 하려면 레지스트리 편집기를 사용할 수 있습니다.  
+     이러한 설정은 확인 하려면 레지스트리 편집기를 사용할 수 있습니다.  
   
-## <a name="finding-a-specific-service"></a>특정 서비스를 찾고  
- 사용할 수도 있습니다는 <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> 메서드를 특정 서비스가 설치 되어 있는지 여부를 확인 합니다. 서비스 클래스의 형식을 알고 있어야 합니다.  
+## <a name="find-a-specific-service"></a>특정 서비스 찾기  
+ 사용할 수도 있습니다는 <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> 특정 서비스가 설치 되어 있는지 확인 하는 방법입니다. 서비스 클래스의 형식을 알고 있어야 합니다.  
   
-1.  이전 절차에서 만든 프로젝트의 MenuItemCallback, 검색에 대 한 구성 설정 저장소는 `Services` 서비스의 GUID에 의해 명명 된 하위 들어 있는 컬렉션입니다. 이 예에서 도움말 서비스에 대해 살펴보겠습니다.  
+1.  이전 절차에서 만든 프로젝트의 MenuItemCallback, 검색에 대 한 구성 설정 저장소를 `Services` 서비스의 GUID로 명명 된 하위 컬렉션 포함 된 컬렉션입니다. 이 예에서 도움말 서비스에 대해 살펴보겠습니다.  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -81,6 +81,6 @@ ms.locfileid: "31127505"
   
 2.  프로젝트를 빌드하고 디버깅을 시작합니다.  
   
-3.  실험적 인스턴스에서는 **도구** 메뉴를 클릭 하 여 **호출 FindServicesCommand**합니다.  
+3.  실험적 인스턴스에서는 **도구** 메뉴에서 클릭 **FindServicesCommand 호출**합니다.  
   
-     메시지 텍스트와 함께 표시 되어야 **서비스를 사용할 수 하는 데 도움이:** 이어서 **True** 또는 **False**합니다. 이 설정은 확인 하려면 이전 단계에서와 같이 레지스트리 편집기를 사용할 수 있습니다.
+     텍스트를 사용 하 여 메시지가 표시 됩니다 **서비스를 사용할 수 하는 데 도움이 되:** 뒤 **True** 하거나 **False**합니다. 이 설정을 확인 하려면 이전 단계에서와 같이 레지스트리 편집기를 사용할 수 있습니다.

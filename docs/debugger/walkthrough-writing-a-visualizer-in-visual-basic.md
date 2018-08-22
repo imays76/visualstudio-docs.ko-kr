@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058700"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468766"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>연습: Visual Basic에서 시각화 도우미 작성
 이 연습에서는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]을 사용하여 간단한 시각화 도우미를 작성하는 방법을 보여 줍니다. 이 연습에서 만들 시각화 도우미는 Windows Forms 메시지 상자를 사용하여 문자열의 내용을 표시합니다. 이 간단한 문자열 시각화 도우미는 프로젝트에 더 유용하게 사용할 수 있는 다른 형식에 대한 시각화 도우미를 만드는 방법을 보여 주는 기본 예제입니다.  
@@ -39,9 +39,9 @@ ms.locfileid: "37058700"
   
 1.  에 **파일** 메뉴 선택 **새로 만들기** 클릭 **새 프로젝트**합니다.  
   
-2.  에 **새 프로젝트** 대화 상자의 **프로젝트 형식**를 클릭 **Visual Basic**합니다.  
+2.  에 **새 프로젝트** 대화 상자에서 **Visual Basic**합니다.  
   
-3.  에 **템플릿을** 상자를 클릭 합니다 **클래스 라이브러리**합니다.  
+3.  아래 **.NET Standard**, 클릭 **클래스 라이브러리**합니다.  
   
 4.  에 **이름을** 상자와 같은 클래스 라이브러리에 대 한 적절 한 이름을 입력 합니다 **MyFirstVisualizer**합니다.  
   
@@ -166,7 +166,7 @@ ms.locfileid: "37058700"
   
 1.  에 **파일** 메뉴에서 클릭 **추가**를 클릭 하 고 **새 프로젝트**합니다.  
   
-2.  에 **새 프로젝트 추가** 대화 상자의 합니다 **템플릿** 상자를 클릭 합니다 **콘솔 응용 프로그램**합니다.  
+2.  에 **새 프로젝트 추가** 대화 상자에서 **Visual Basic**를 클릭 하 고 **콘솔 응용 프로그램**합니다.  
   
 3.  에 **이름을** 상자와 같은 콘솔 응용 프로그램에 대 한 의미 있는 이름을 입력 합니다 **MyTestConsole**합니다.  
   

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064612"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381649"
 ---
 # <a name="manage-application-resources-net"></a>응용 프로그램 리소스 관리(.NET)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32064612"
 
 - **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성** 선택
 - **빠른 실행** 창에 "프로젝트 속성" 입력
-- **솔루션 탐색기** 창에서 **Alt**+**Enter** 선택
+- **솔루션 탐색기**에서 **Alt**+**Enter** 키 선택
 
 **리소스** 탭을 선택합니다. 프로젝트에 *.resx* 파일이 포함되지 않은 경우 하나를 추가하고, 다른 종류의 리소스를 추가 및 삭제하고, 기존 리소스를 수정할 수 있습니다.
 

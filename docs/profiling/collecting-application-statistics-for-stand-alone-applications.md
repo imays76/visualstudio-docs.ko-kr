@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 951c65672f3b5aa6bb9555ace4622cfb60b04fc6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 72efb2481725d7e0da9331b639040d7dacc8298d
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263693"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276733"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 응용 프로그램에 대한 응용 프로그램 통계 수집
 이 섹션에서는 명령줄 도구에서 샘플링 방법을 사용하여 클라이언트(독립 실행형) 응용 프로그램에 대한 성능 통계를 수집하기 위한 절차 및 옵션을 설명합니다.  
@@ -30,9 +30,9 @@ ms.locfileid: "34263693"
   
 |작업|관련 콘텐츠|  
 |----------|---------------------|  
-|**프로파일링을 사용하여 응용 프로그램 시작**|-   [방법: 독립 실행형 응용 프로그램을 시작하여 응용 프로그램 통계 수집](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**프로파일링을 사용하여 응용 프로그램 시작**|-   [방법: 독립 실행형 응용 프로그램을 시작하여 응용 프로그램 통계 수집](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
 |**실행 중인 .NET Framework 응용 프로그램에 프로파일러 연결**|-   [방법: .NET Framework 응용 프로그램에 프로파일러 연결 및 응용 프로그램 통계 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|  
-|**실행 중인 C/C++ 응용 프로그램에 프로파일러 연결**|-   [방법: 네이티브 응용 프로그램에 프로파일러 연결 및 응용 프로그램 통계 수집](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**실행 중인 C/C++ 응용 프로그램에 프로파일러 연결**|-   [방법: 네이티브 응용 프로그램에 프로파일러 연결 및 응용 프로그램 통계 수집](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|  
 |**계층 상호 작용 데이터 추가**|-   [계층 상호 작용 데이터 수집](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>관련 작업  

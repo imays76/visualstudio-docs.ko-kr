@@ -10,6 +10,8 @@
       href: deploying-applications-services-and-components.md
     - name: Azure App Service에 배포
       href: quickstart-deploy-to-azure.md
+    - name: Linux용 App Service에 배포
+      href: quickstart-deploy-to-linux.md
     - name: 웹 사이트에 배포
       href: quickstart-deploy-to-a-web-site.md
     - name: 로컬 폴더에 배포

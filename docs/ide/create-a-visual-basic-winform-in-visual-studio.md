@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c815652ae37fb04373cbf39279d54099a2d808a5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0468a3ee546659d8079d98f49b196819c44afbd1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117773"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381662"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Visual Studio에서 Visual Basic을 사용하여 Windows Forms 앱 만들기
 
@@ -82,7 +82,7 @@ Visual Basic 프로젝트 템플릿을 선택하고 파일 이름을 지정한 �
 
 1. **Form1.vb &#91;Design&#93;** 창에서 **항목 클릭** 버튼을 두 번 클릭하여 **Form1.vb** 창을 엽니다.
 
-      (또는 **솔루션 탐색기** 창에서 **Form1.vb**를 확장한 다음 **Form1**을 클릭할 수 있습니다.)
+      (또는 **솔루션 탐색기**에서 **Form1.vb**를 확장한 다음, **Form1**을 클릭할 수 있습니다.)
 
 2. **Form1.vb** 창에서 **Private Sub** 줄과 **End Sub** 줄 간에 `lblHelloWorld.Text = "Hello World!"`를 입력하거나 붙여넣습니다.
 

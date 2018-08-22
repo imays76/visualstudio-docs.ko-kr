@@ -9,28 +9,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cf990ea206a299c72ec55150bf2e4935b80fb473
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 332d7599543efbe5ee6e15ccc89d5fce595e5341
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946925"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566881"
 ---
 # <a name="customizing-element-tools"></a>요소 도구 사용자 지정
-일부 DSL 정의의 요소를 그룹으로 단일 개념을 나타냅니다. 예를 들어 구성 요소에는 고정된 포트 집합을 모델을 만들면 항상 하려는 경우 해당 부모 구성 요소와 같은 시간에 만들려는 포트. 따라서 하나가 아닌 요소의 그룹을 만듭니다 요소 작성 도구를 사용자 지정 해야 합니다. 이 위해 요소 작성 도구를 초기화 하는 방법을 사용자 지정할 수 있습니다.
+일부 DSL 정의에서 요소 그룹으로 단일 개념을 나타냅니다. 예를 들어, 구성 요소에 고정된 된 포트 집합 모델을 만들려면 항상 하려는 경우 해당 부모 구성 요소와 같은 시간에는 포트입니다. 따라서 요소 하나가 아닌 그룹에 있도록 요소 작성 도구를 사용자 지정 해야 합니다. 이 위해 요소 작성 도구를 초기화 하는 방법을 사용자 지정할 수 있습니다.
 
- 다이어그램 또는 요소에 도구를 끌 때 수행 되는 작업을 재정의할 수 있습니다.
+ 도구는 다이어그램 또는 요소를 끌 경우 재정의할 수 있습니다.
 
 ## <a name="customizing-the-content-of-an-element-tool"></a>요소 도구의 콘텐츠를 사용자 지정
- 인스턴스를 저장 하는 각 요소 도구는 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 하나 이상의 모델 요소 및 링크의 직렬화 된 버전이 포함 된 (EGP). 기본적으로 요소 도구 EGP 도구에 대해 지정 하는 클래스의 인스턴스 하나를 포함 합니다. 재정의 하 여이 변경할 수 있습니다 *YourLanguage*`ToolboxHelper.CreateElementToolPrototype`합니다. 이 메서드는 DSL 패키지가 로드 될 때 호출 됩니다.
+ 인스턴스를 저장 하는 각 요소 도구는 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> EGP ()에 있는 하나 이상의 모델 요소 및 링크의 serialize 된 버전입니다. 기본적으로 요소 도구의 EGP를 도구용 지정 하는 클래스의 인스턴스 하나를 포함 합니다. 재정의 하 여이 변경할 수 있습니다 *YourLanguage*`ToolboxHelper.CreateElementToolPrototype`합니다. 이 메서드는 DSL 패키지를 로드할 때 호출 됩니다.
 
- 메서드의 매개 변수는 DSL 정의에 지정 하는 클래스의 ID입니다. 에 관심이 있는 클래스는 메서드를 호출 하는 경우에 EGP 추가 요소를 추가할 수 있습니다.
+ 메서드의 매개 변수는 DSL 정의에서 지정한 클래스의 ID입니다. 관심 있는 클래스와 메서드가 호출 되 면 추가 요소는 EGP에 추가할 수 있습니다.
 
- EGP 보조 요소에 대 한 기본 요소에서 링크를 포함을 포함 해야 합니다. 참조 링크를 포함할 수도 있습니다.
+ EGP 보조 요소에 대 한 기본 요소에서 링크 포함 포함 해야 합니다. 참조 링크를 포함할 수도 있습니다.
 
- 다음 예제에서는 기본 요소와 두 개의 포함 된 요소를 만듭니다. 주 클래스, 저항기 라고 되었으며 터미널 라는 요소에 두 개의 포함 관계. 포함 하는 역할 속성의 이름은 Terminal1 및 Terminal2, 및 둘 다 1.. 1 인의 복합성입니다.
+ 다음 예제에서는 기본 요소 및 두 개의 포함 된 요소를 만듭니다. 저항기, 라고 하는 기본 클래스 있고 터미널 라는 요소에 두 개의 포함 관계입니다. 포함 하는 역할 속성의 이름은 Terminal1 및 Terminal2, 둘 다 복합성이 1.. 1 인 하며
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling; ...
 public partial class CircuitDiagramToolboxHelper
 {

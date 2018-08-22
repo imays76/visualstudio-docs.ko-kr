@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177281"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567183"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus를 사용하여 모델 통합
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus는 모델에 다른 도구에서 그리고 모델 간에 링크를 만드는 메서드를 제공 합니다. 예를 들어, 도메인 특정 언어 (DSL) 모델과 UML 모델을 연결할 수 있습니다. 통합 DSL 집합을 만들 수 있습니다.
@@ -127,10 +127,10 @@ ms.locfileid: "39177281"
 
 4.  모델의 요소를 참조하려는 경우 Company.FamilyTree.Person과 같이 사용자가 선택할 수 있는 형식의 목록을 추가할 수 있습니다.
 
-5.  클릭 **확인**를 클릭 하 고 **모든 템플릿 변환** 솔루션 탐색기 도구 모음에서입니다.
+5.  클릭 **확인**를 클릭 하 고 **모든 템플릿 변환** 에 **솔루션 탐색기** 도구 모음입니다.
 
     > [!WARNING]
-    >  올바른 모델이나 엔터티를 선택하지 않은 경우 확인 단추가 사용 가능한 것처럼 표시될 수 있지만 클릭해도 아무런 변화가 없습니다.
+    > 올바른 모델이나 엔터티를 선택하지 않은 경우 확인 단추가 사용 가능한 것처럼 표시될 수 있지만 클릭해도 아무런 변화가 없습니다.
 
 6.  Company.FamilyTree.Person과 같은 대상 형식 목록을 지정한 경우에는 Company.FamilyTree.Dsl.dll과 같은 대상 DSL의 DLL을 참조하는 어셈블리 참조를 DSL 프로젝트에 추가해야 합니다.
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177281"
 3.  디버깅 프로젝트의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 실험 인스턴스에서 각 DSL의 인스턴스인 파일을 추가합니다.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus는 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 항목인 모델에 대한 참조만 확인할 수 있습니다. 예를 들어 파일 시스템의 다른 부분에 있는 모델 파일에 대한 참조를 만들 수는 없습니다.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus는 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 항목인 모델에 대한 참조만 확인할 수 있습니다. 예를 들어 파일 시스템의 다른 부분에 있는 모델 파일에 대한 참조를 만들 수는 없습니다.
 
 4.  표시되는 DSL의 인스턴스에서 요소와 링크를 몇 개 만들고 해당 DSL을 저장합니다.
 
@@ -182,7 +182,7 @@ ms.locfileid: "39177281"
 
  일반적으로는 참조를 만들 코드 파일에서 다음 네임스페이스를 가져와야 합니다.
 
-```
+```csharp
 // The namespace of the DSL you want to reference:
 using Fabrikam.FamilyTree;  // Exposed DSL
 using Fabrikam.FamilyTree.ModelBusAdapters;
@@ -199,7 +199,7 @@ using System.Linq;
 > [!NOTE]
 >  어댑터는 사용한 후 삭제해야 합니다. 어댑터를 삭제하는 가장 편리한 방법은 `using` 문을 사용하는 것입니다. 다음은 이에 대한 예입니다.
 
-```
+```csharp
 // The file path of a model instance of the FamilyTree DSL:
 string targetModelFile = "TudorFamilyTree.ftree";
 // Get the ModelBus service:
@@ -235,7 +235,7 @@ using (FamilyTreeAdapter adapter =
 
  나중에 `modelReference`를 사용하려는 경우 외부 형식이 `ModelBusReference`인 도메인 속성에 저장하면 됩니다.
 
-```
+```csharp
 using Transaction t = this.Store.TransactionManager
     .BeginTransaction("keep reference"))
 {
@@ -249,7 +249,7 @@ using Transaction t = this.Store.TransactionManager
 ### <a name="to-create-a-reference-to-an-element"></a>요소에 대한 참조를 만들려면
  모델용으로 만든 어댑터를 사용하여 참조를 만들고 확인할 수 있습니다.
 
-```
+```csharp
 // person is an element in the FamilyTree model:
 ModelBusReference personReference =
   adapter.GetElementReference(person);
@@ -262,7 +262,7 @@ ModelBusReference personReference =
 
  MBR에서 어댑터를 만들 수 있으며 해당 어댑터에서 모델의 루트를 가져올 수 있습니다. 또한 모델 내의 특정 요소를 참조하는 MBR을 확인할 수도 있습니다.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Integration; ...
 ModelBusReference elementReference = ...;
 
@@ -342,7 +342,7 @@ using (FamilyTreeAdapter adapter =
 ## <a name="serializing-a-modelbusreference"></a>ModelBusReference serialize
  문자열 형식으로 MBR(`ModelBusReference`)을 저장하려는 경우 MBR을 serialize하면 됩니다.
 
-```
+```csharp
 string serialized = modelBus.SerializeReference(elementReference);
 // Store it anywhere, then get it back again:
 ModelBusReference elementReferenceRestored =
@@ -356,7 +356,7 @@ ModelBusReference elementReferenceRestored =
 
  특정 경로를 기준으로 serialize하려면 다음 코드를 사용합니다.
 
-```
+```csharp
 elementReference.ReferenceContext.Add(
    ModelBusReferencePropertySerializer.FilePathSaveContextKey,
    currentProjectFilePath);
@@ -365,7 +365,7 @@ string serialized = modelBus.SerializeReference(elementReference);
 
  문자열에서 참조를 검색하려면 다음 코드를 사용합니다.
 
-```
+```csharp
 ReferenceContext context = new ReferenceContext();
 context.Add(ModelBusReferencePropertySerializer.FilePathLoadContextKey,
     currentProjectFilePath);
@@ -395,7 +395,7 @@ ModelBusReference elementReferenceRestored =
 
  이 샘플에서 대상 DSL의 이름은 StateMachine입니다. 이 이름에서 모델 클래스의 이름과 ModelBusAdapter의 이름 등 여러 이름이 파생됩니다.
 
-```
+```csharp
 using Fabrikam.StateMachine.ModelBusAdapters;
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
@@ -447,7 +447,7 @@ using (StateMachineAdapter adapter =
 ## <a name="validating-references"></a>참조 유효성 검사
  BrokenReferenceDetector는 ModelBusReference를 포함할 수 있는 저장소 내의 모든 도메인 속성을 테스트하며, 작업이 발견되는 위치를 제공하는 작업을 호출합니다. 이러한 방식은 특히 유효성 검사 메서드에 유용합니다. 다음 유효성 검사 메서드는 모델 저장 시도 시 저장소를 테스트하고 손상된 참조를 오류 창에서 보고합니다.
 
-```
+```csharp
 [ValidationMethod(ValidationCategories.Save)]
 public void ValidateModelBusReferences(ValidationContext context)
 {
@@ -489,7 +489,7 @@ private const string INVALID_REF_FORMAT =
 
 -   여러 CLR 특성이 도메인 속성에 추가됩니다. 속성 창의 사용자 지정 특성 필드에서 해당 특성을 확인할 수 있습니다. **Dsl\GeneratedCode\DomainClasses.cs**, 속성 선언에서 특성을 볼 수 있습니다.
 
-    ```
+    ```csharp
     [System.ComponentModel.TypeConverter(typeof(
     Microsoft.VisualStudio.Modeling.Integration.ModelBusReferenceTypeConverter))]
     [System.ComponentModel.Editor(typeof(

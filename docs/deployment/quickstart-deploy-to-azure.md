@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 7761164182188366425a81518f3d0513361b6f19
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a8de7175b33a91c310da4b3d6d9e4c05c40c3522
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077845"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341692"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용 하 여 Azure App Service에 웹 앱 게시
 
@@ -44,6 +44,13 @@ ms.locfileid: "39077845"
 1. **만들기**를 선택합니다. Visual Studio에 Azure App Service에 앱을 배포 하 고 브라우저에서 웹 앱을 로드 합니다. 프로젝트 속성 **게시** 사이트 URL 및 기타 세부 정보 창에 표시 됩니다.
 
     ![게시 프로필 요약을 표시 하는 속성 창](../deployment/media/quickstart-publish-app-service-summary.png)
+
+## <a name="clean-up-resources"></a>리소스 정리
+
+이전 단계에서는 리소스 그룹에서 Azure 리소스를 만들었습니다. 나중에 이러한 리소스가 필요 하지 않을, 경우에 리소스 그룹을 삭제 하 여 삭제할 수 있습니다.
+Azure portal의 왼쪽된 메뉴에서 선택 **리소스 그룹** 선택한 후 **myResourceGroup**합니다.
+리소스 그룹 페이지에서 나열 된 리소스를 삭제 하려는 항목 인지를 확인 합니다.
+선택 **삭제할**, 형식 **myResourceGroup** 에서 텍스트 상자를 선택 합니다 **삭제**합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -26,14 +26,14 @@
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity 사용
       href: using-visual-studio-tools-for-unity.md
-    - name: Visual Studio Tools for Unity 프로그래밍
+    - name: Visual Studio Tools for Unity 프로그램
       href: programming-visual-studio-tools-for-unity.md
       items:
         - name: VSTU에서 만든 프로젝트 파일 사용자 지정
           href: customize-project-files-created-by-vstu.md
         - name: Unity 로그 콜백을 VSTU와 공유
           href: share-the-unity-log-callback-with-vstu.md
-    - name: Unity 및 Azure로 프로그래밍
+    - name: Unity 및 Azure로 프로그램
       href: visual-studio-tools-for-unity-azure.md
     - name: 문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
       href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
@@ -83,5 +83,5 @@
   items:
     - name: System requirements for the Visual Studio Emulator for Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
-    - name: Troubleshooting the Visual Studio Emulator for Android
+    - name: Android용 Visual Studio 에뮬레이터 문제 해결
       href: troubleshooting-the-visual-studio-emulator-for-android.md
