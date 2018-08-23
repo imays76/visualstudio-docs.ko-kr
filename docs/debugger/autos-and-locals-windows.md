@@ -1,5 +1,5 @@
 ---
-title: 자동 및 지역 창에서 변수를 검사 | Microsoft Docs
+title: 자동 및 지역 Windows에서 변수를 검사할 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.technology: vs-ide-debug
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 956b3afe1308ee748ee9efa6292834754f7e8124
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454644"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626472"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Visual Studio에서 자동에서 변수 및 지역 변수 검사
-**자동** 창 (디버깅 하는 동안 **CTRL + ALT + V, A**, 또는 **디버그 > Windows > 자동**) 및 **지역** 창 (디버깅 중 **CTRL + ALT + V, L**, 또는 **디버그 > Windows > 지역**)는 디버깅 하는 동안 변수 값을 확인 하려는 경우 매우 유용 합니다. **지역** 창에는 로컬 범위에 정의되는 변수가 표시되며, 일반적으로 현재 실행되고 있는 함수 또는 메서드입니다. **자동** 창에는 현재 줄(디버거가 중지되어 있는 위치)에 사용된 변수가 표시됩니다. 이 창에는 변수 표시 되는 정확 하 게 하는 것은 다른 언어에서는 다릅니다. 아래에서 [What variables appear in the Autos Window?](#bkmk_whatvariables) 참조하세요.  
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>자동에서 변수 및 Visual Studio에서 지역 Windows를 검사 합니다.
+합니다 **자동** 창 (디버깅 하는 동안 **CTRL + ALT + V, A**, 또는 **디버그 > Windows > 자동**) 및 **지역** 창 (디버깅 하는 동안 를 **CTRL + ALT + V, L**, 또는 **디버그 > Windows > 지역**) 디버깅 하는 동안 변수 값을 확인 하려는 경우 매우 유용 합니다. **지역** 창에는 로컬 범위에 정의되는 변수가 표시되며, 일반적으로 현재 실행되고 있는 함수 또는 메서드입니다. **자동** 창에는 현재 줄(디버거가 중지되어 있는 위치)에 사용된 변수가 표시됩니다. 이 창에 변수 표시 되는 정확 하 게 하는 것은 다른 언어로 다릅니다. 아래에서 [What variables appear in the Autos Window?](#bkmk_whatvariables) 참조하세요.  
   
 기본 디버깅에 대한 자세한 내용은 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)을 참조하세요.  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 개체 보기  
-배열 및 개체는 트리 컨트롤로 자동 및 지역 창에 표시됩니다. 필드 및 속성을 표시하려면 변수 이름 왼쪽에 있는 화살표를 클릭하여 보기를 확장합니다. 예로 [FileStream](/dotnet/api/system.io.filestream) 개체는 **지역** 창:  
+배열 및 개체는 트리 컨트롤로 자동 및 지역 창에 표시됩니다. 필드 및 속성을 표시하려면 변수 이름 왼쪽에 있는 화살표를 클릭하여 보기를 확장합니다. 예로 <xref:System.IO.FileStream?displayProperty=fullName> 개체를 **지역** 창:  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
@@ -132,7 +132,7 @@ private static int subtractVars(int i, int j)
 -   부동 소수점 값을 편집하면 소수 부분이 10진수에서 이진수로 변환되면서 약간의 오차가 발생할 수 있습니다. 겉보기에 해가 없는 편집 작업을 수행하는 경우에도 부동 소수점 변수의 LSB 중 일부가 변경될 수 있습니다.  
   
 ## <a name="changing-the-window-context"></a>창 컨텍스트 변경  
-사용할 수는 **디버그 위치** 을 원하는 함수, 스레드 또는 변수 창에 대 한 컨텍스트를 변경 하는 프로세스를 선택 합니다. 중단점을 설정하고 디버깅을 시작합니다. 이 도구 모음이 표시되지 않으면 도구 모음 영역의 빈 부분을 클릭하여 사용하도록 설정할 수 있습니다. 도구 모음 목록이 표시되면 **디버그 위치**를 선택합니다. 중단점이 적중 될 실행이 중지 되 고 다음 그림의 맨 아래쪽 행은 디버그 위치 도구 모음을 볼 수 있습니다.
+사용할 수는 **디버그 위치** 을 원하는 함수, 스레드 또는 변수 창에 대 한 컨텍스트를 변경 하는 프로세스를 선택 합니다. 중단점을 설정하고 디버깅을 시작합니다. 이 도구 모음이 표시되지 않으면 도구 모음 영역의 빈 부분을 클릭하여 사용하도록 설정할 수 있습니다. 도구 모음 목록이 표시되면 **디버그 위치**를 선택합니다. 중단점에 도달 하면 실행이 중지 되 고 다음 그림의 맨 아래쪽 행은 디버그 위치 도구 모음을 볼 수입니다.
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   

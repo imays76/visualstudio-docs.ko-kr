@@ -1,5 +1,5 @@
 ---
-title: '연습: 첫 번째 VSTO 추가 기능에 PowerPoint에 대 한 만들기 | Microsoft Docs'
+title: '연습: PowerPoint 용 첫 VSTO 추가 기능에 만들기'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5814262d68d9bf32ee3a0f72e3e0a15811a75a9c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f35779debdad5a43781b2fe7221085f3fe0e1010
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42636224"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>연습: PowerPoint용 첫 VSTO 추가 기능 만들기
-  이 연습에서는 Microsoft Office PowerPoint용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프레젠테이션에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다. 자세한 내용은 참조 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
+# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>연습: PowerPoint 용 첫 VSTO 추가 기능에 만들기
+  이 연습에서는 Microsoft Office PowerPoint 용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프레젠테이션에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
@@ -48,9 +49,9 @@ ms.lasthandoff: 04/16/2018
   
 -   PowerPoint  
   
-## <a name="creating-the-project"></a>프로젝트 만들기  
+## <a name="create-the-project"></a>프로젝트를 만듭니다.  
   
-#### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
+### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
 1.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.  
   
@@ -62,29 +63,29 @@ ms.lasthandoff: 04/16/2018
   
 5.  프로젝트 템플릿 목록에서 PowerPoint VSTO 추가 기능 프로젝트를 선택합니다.  
   
-6.  에 **이름** 상자에서 입력 **FirstPowerPointAddIn**합니다.  
+6.  에 **이름을** 상자에 입력 **FirstPowerPointAddIn**합니다.  
   
 7.  **확인**을 클릭합니다.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 만듭니다는 **FirstPowerPointAddIn** 프로젝트 및 열립니다는 **ThisAddIn** 편집기에서 코드 파일.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 만듭니다는 **FirstPowerPointAddIn** 프로젝트 및 열립니다 합니다 **ThisAddIn** 편집기에서 코드 파일.  
   
-## <a name="writing-code-that-adds-text-to-each-new-slide"></a>각각의 새 슬라이드에 텍스트를 추가하는 코드 작성  
+## <a name="write-code-that-adds-text-to-each-new-slide"></a>각각의 새 슬라이드에 텍스트를 추가 하는 코드 작성  
  다음 작업으로, ThisAddIn 코드 파일에 코드를 추가합니다. 새 코드는 PowerPoint의 개체 모델을 사용하여 각각의 새 슬라이드에 텍스트 상자를 추가합니다. 기본적으로 ThisAddIn 코드 파일에는 다음과 같은 생성된 코드가 포함되어 있습니다.  
   
--   `ThisAddIn` 클래스의 부분 정의. 이 클래스는 코드의 진입점을 제공하고 PowerPoint의 개체 모델에 대한 액세스를 제공합니다. 자세한 내용은 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)를 시작합니다. `ThisAddIn` 클래스의 나머지 부분은 수정해서는 안 되는 숨김 코드 파일에서 정의됩니다.  
+-   `ThisAddIn` 클래스의 부분 정의. 이 클래스는 코드의 진입점을 제공하고 PowerPoint의 개체 모델에 대한 액세스를 제공합니다. 자세한 내용은 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다. `ThisAddIn` 클래스의 나머지 부분은 수정해서는 안 되는 숨김 코드 파일에서 정의됩니다.  
   
--   `ThisAddIn_Startup` 및 `ThisAddIn_Shutdown` 이벤트 처리기. 이러한 이벤트 처리기는 PowerPoint에서 VSTO 추가 기능을 로드하고 언로드할 때 호출됩니다. 이러한 이벤트 처리기를 사용하여 VSTO 추가 기능이 로드될 때 VSTO 추가 기능을 초기화하고 VSTO 추가 기능이 언로드될 때 VSTO 추가 기능에서 사용하는 리소스를 정리할 수 있습니다. 자세한 내용은 [Events in Office Projects](../vsto/events-in-office-projects.md)을 참조하세요.  
+-   `ThisAddIn_Startup` 및 `ThisAddIn_Shutdown` 이벤트 처리기. 이러한 이벤트 처리기는 PowerPoint에서 VSTO 추가 기능을 로드하고 언로드할 때 호출됩니다. 이러한 이벤트 처리기를 사용하여 VSTO 추가 기능이 로드될 때 VSTO 추가 기능을 초기화하고 VSTO 추가 기능이 언로드될 때 VSTO 추가 기능에서 사용하는 리소스를 정리할 수 있습니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)합니다.  
   
-#### <a name="to-add-a-text-box-to-each-new-slide"></a>각각의 새 슬라이드에 텍스트 상자를 추가하려면  
+### <a name="to-add-a-text-box-to-each-new-slide"></a>각각의 새 슬라이드에 텍스트 상자를 추가하려면  
   
-1.  ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드는 <xref:Microsoft.Office.Interop.PowerPoint.Application> 개체의 <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> 이벤트에 대한 이벤트 처리기를 정의합니다.  
+1.  ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드에 대 한 이벤트 처리기를 정의 합니다 [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 이벤트는 <xref:Microsoft.Office.Interop.PowerPoint.Application> 개체입니다.  
   
      사용자가 활성 프레젠테이션에 새 슬라이드를 추가하면 이 이벤트 처리기가 새 슬라이드의 맨 위에 텍스트 상자를 추가하고 텍스트 상자에 일부 텍스트를 추가합니다.  
   
      [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
      [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  C#을 사용하는 경우 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 `Application_PresentationNewSlide` 이벤트 처리기를 <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> 이벤트와 연결하는 데 필요합니다.  
+2.  C#을 사용하는 경우 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 연결 해야 합니다 `Application_PresentationNewSlide` 이벤트 처리기는 [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 이벤트입니다.  
   
      [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
@@ -92,16 +93,16 @@ ms.lasthandoff: 04/16/2018
   
 -   `Application` 클래스의 `ThisAddIn` 필드. `Application` 필드는 PowerPoint의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.PowerPoint.Application> 개체를 반환합니다.  
   
--   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> 이벤트에 대한 이벤트 처리기의 `Sld` 매개 변수입니다. `Sld` 매개 변수는 새 슬라이드를 나타내는 <xref:Microsoft.Office.Interop.PowerPoint.Slide> 개체입니다. 자세한 내용은 참조 [PowerPoint 솔루션](../vsto/powerpoint-solutions.md)합니다.  
+-   합니다 `Sld` 이벤트 처리기의 매개 변수를 [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 이벤트입니다. `Sld` 매개 변수는 새 슬라이드를 나타내는 <xref:Microsoft.Office.Interop.PowerPoint.Slide> 개체입니다. 자세한 내용은 [PowerPoint 솔루션](../vsto/powerpoint-solutions.md)합니다.  
   
-## <a name="testing-the-project"></a>프로젝트 테스트  
+## <a name="test-the-project"></a>프로젝트 테스트  
  프로젝트를 빌드 및 실행하는 경우 프레젠테이션에 추가하는 새 슬라이드에 텍스트 상자가 표시되는지 확인합니다.  
   
-#### <a name="to-test-the-project"></a>프로젝트를 테스트하려면  
+### <a name="to-test-the-project"></a>프로젝트를 테스트하려면  
   
 1.  **F5** 키를 눌러 프로젝트를 빌드하고 실행합니다.  
   
-     프로젝트를 빌드하면 코드가 프로젝트의 빌드 출력 폴더에 배치된 어셈블리로 컴파일됩니다. 또한 Visual Studio에서는 PowerPoint에서 VSTO 추가 기능을 검색하고 로드할 수 있도록 하는 레지스트리 항목 집합을 만들고 VSTO 추가 기능이 실행될 수 있도록 개발 컴퓨터에서 보안 설정을 구성합니다. 자세한 내용은 참조 [Office 솔루션 빌드](../vsto/building-office-solutions.md)합니다.  
+     프로젝트를 빌드하면 코드가 프로젝트의 빌드 출력 폴더에 배치된 어셈블리로 컴파일됩니다. 또한 Visual Studio에서는 PowerPoint에서 VSTO 추가 기능을 검색하고 로드할 수 있도록 하는 레지스트리 항목 집합을 만들고 VSTO 추가 기능이 실행될 수 있도록 개발 컴퓨터에서 보안 설정을 구성합니다. 자세한 내용은 [빌드 Office 솔루션](../vsto/building-office-solutions.md)합니다.  
   
 2.  PowerPoint에서 활성 프레젠테이션에 새 슬라이드를 추가합니다.  
   
@@ -111,28 +112,28 @@ ms.lasthandoff: 04/16/2018
   
 4.  PowerPoint를 닫습니다.  
   
-## <a name="cleaning-up-the-project"></a>프로젝트 정리  
+## <a name="clean-up-the-project"></a>프로젝트 정리  
  프로젝트의 개발을 완료하면 VSTO 추가 기능 어셈블리, 레지스트리 항목 및 보안 설정을 개발 컴퓨터에서 제거합니다. 이렇게 하지 않으면 개발 컴퓨터에서 PowerPoint를 열 때마다 VSTO 추가 기능이 실행됩니다.  
   
-#### <a name="to-clean-up-your-project"></a>프로젝트를 정리하려면  
+### <a name="to-clean-up-your-project"></a>프로젝트를 정리하려면  
   
 1.  Visual Studio의 **빌드** 메뉴에서 **솔루션 정리**를 클릭합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
  기본적인 PowerPoint용 VSTO 추가 기능을 만들었으므로 다음 항목에서 VSTO 추가 기능을 개발하는 방법에 대해 자세히 알아볼 수 있습니다.  
   
--   PowerPoint용 VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업. 자세한 내용은 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)를 시작합니다.  
+-   PowerPoint용 VSTO 추가 기능에서 수행할 수 있는 일반적인 프로그래밍 작업. 자세한 내용은 [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.  
   
--   PowerPoint 개체 모델 사용. 자세한 내용은 참조 [PowerPoint 솔루션](../vsto/powerpoint-solutions.md)합니다.  
+-   PowerPoint 개체 모델 사용. 자세한 내용은 [PowerPoint 솔루션](../vsto/powerpoint-solutions.md)합니다.  
   
--   PowerPoint의 UI 사용자 지정(예: 리본에 사용자 지정 탭 추가 또는 사용자 고유의 사용자 지정 작업창 만들기). 자세한 내용은 참조 [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
+-   PowerPoint의 UI 사용자 지정(예: 리본에 사용자 지정 탭 추가 또는 사용자 고유의 사용자 지정 작업창 만들기). 자세한 내용은 [Office UI 사용자 지정](../vsto/office-ui-customization.md)합니다.  
   
--   PowerPoint용 VSTO 추가 기능 빌드 및 디버그. 자세한 내용은 참조 [Office 솔루션 빌드](../vsto/building-office-solutions.md)합니다.  
+-   PowerPoint용 VSTO 추가 기능 빌드 및 디버그. 자세한 내용은 [빌드 Office 솔루션](../vsto/building-office-solutions.md)합니다.  
   
--   PowerPoint용 VSTO 추가 기능 배포. 자세한 내용은 참조 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)합니다.  
+-   PowerPoint용 VSTO 추가 기능 배포. 자세한 내용은 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+## <a name="see-also"></a>참고자료  
+ [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [PowerPoint 솔루션](../vsto/powerpoint-solutions.md)   
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [Office 솔루션 빌드](../vsto/building-office-solutions.md)   

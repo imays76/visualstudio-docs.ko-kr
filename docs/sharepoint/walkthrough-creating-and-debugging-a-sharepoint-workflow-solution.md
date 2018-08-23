@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6035b8ceb693434e2e8bc652b91ee31ceb3ebe02
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119480"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626490"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>연습: 만들고 SharePoint 워크플로 솔루션을 디버그 합니다.
   이 연습에는 기본 순차 워크플로 템플릿을 만드는 방법을 보여 줍니다. 워크플로 문서를 검토 했는지 여부를 결정 하는 공유 문서 라이브러리의 속성을 확인 합니다. 문서를 검토 하는 경우 워크플로가 완료 됩니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "37119480"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   지원되는 Microsoft Windows 및 SharePoint 버전. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+-   지원되는 Microsoft Windows 및 SharePoint 버전.  
   
 -   Visual Studio.  
   
@@ -295,5 +295,5 @@ ms.locfileid: "37119480"
 ## <a name="see-also"></a>참고자료
  [SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)   
- [빌드 및 SharePoint 솔루션 디버깅](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   

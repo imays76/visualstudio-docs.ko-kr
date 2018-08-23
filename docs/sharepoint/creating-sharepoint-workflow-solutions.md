@@ -23,17 +23,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4dc27993125c41de91e069cd4c87025f3a26ec07
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327322"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634724"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint 워크플로 솔루션 만들기
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 문서 및 SharePoint 웹 사이트에서 목록 항목의 수명 주기를 관리 하는 사용자 지정 워크플로 만들 수 있도록 도구를 제공 합니다. 제공되는 항목에는 디자이너, 작업 컨트롤 집합 및 필수 어셈블리 참조가 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 또한 합니다 **SharePoint 사용자 지정 마법사**, 만들기 및 워크플로 구성 하는 데 합니다.
 
- SharePoint 프로젝트를 만들기 위한 필수 조건 목록은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 참조 하세요 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다. SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoint 제품 및 기술](http://go.microsoft.com/fwlink/?LinkId=178470)합니다.
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 문서 및 SharePoint 웹 사이트에서 목록 항목의 수명 주기를 관리 하는 사용자 지정 워크플로 만들 수 있도록 도구를 제공 합니다. 제공되는 항목에는 디자이너, 작업 컨트롤 집합 및 필수 어셈블리 참조가 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 또한 합니다 **SharePoint 사용자 지정 마법사**, 만들기 및 워크플로 구성 하는 데 합니다.
+
+SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoint 제품 및 기술](http://go.microsoft.com/fwlink/?LinkId=178470)합니다.
 
 ## <a name="workflows-in-sharepoint"></a>SharePoint에서 워크플로
  워크플로 SharePoint 라이브러리 또는 목록에 추가 하면 라이브러리 또는 목록에 있는 모든 항목에서 비즈니스 프로세스를 적용 합니다. 워크플로는 시스템 또는 사용자를 편집 하 고 검토 한 다음 항목을 보내는 등의 각 항목에 대해 수행 해야 하는 작업을 설명 합니다. 라고 하는 이러한 작업을 *활동*은 워크플로의 구성 요소입니다.
@@ -147,5 +148,5 @@ ms.locfileid: "36327322"
 ## <a name="see-also"></a>참고자료
 
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
-- [빌드 및 SharePoint 솔루션 디버깅](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [SharePoint 용 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)

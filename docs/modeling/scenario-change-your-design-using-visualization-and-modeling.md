@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e87ece3deb5d55f1e184974135eeddcec1ebbfc
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177333"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42623642"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -218,7 +218,7 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 - [Visual Studio Team Services 또는 Team Foundation Server를 사용하여 작업 추적](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
 
-- [Visual Studio ALM용 차트, 대시보드 및 보고서](http://msdn.microsoft.com/Library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)
+- [차트, 대시보드 및 위젯 (VSTS)](/vsts/report/dashboards/overview?view=vsts)
 
 - [Project를 사용하여 백로그 및 작업 만들기](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 

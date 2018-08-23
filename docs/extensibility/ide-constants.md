@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23512005bed66550b4a1de0f0a2de830d9fb823b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4f2cf01bcc8b2854eb1e4c3c711af524a8480bdc
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498995"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635134"
 ---
 # <a name="ide-constants"></a>IDE 상수
 
@@ -54,30 +54,30 @@ ms.locfileid: "39498995"
 |값|설명|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|비동기 동작 인터페이스에서 반환 된 상수 때 해당 개체에서 이미 사용 중|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|관련 된 HRESULT 오류 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "호환 되지 않는 문서 데이터"에 대 한 합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|관련 된 HRESULT 오류 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "패키지를 로드 되지 않았습니다."를 나타냅니다|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|관련 된 HRESULT 오류 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 의미 하 고는 "프로젝트가 이미 있습니다."|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|관련 된 HRESULT 오류 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "프로젝트 구성에 실패 했습니다."를 나타냅니다|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|관련 된 HRESULT 오류 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "프로젝트가 로드 되지 않습니다."를 나타냅니다|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|관련 된 HRESULT 오류 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "이미 열려 있는 솔루션입니다."를 나타냅니다|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|관련 된 HRESULT 오류 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "솔루션 열려 있지 않습니다."를 나타냅니다|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|"호환 되지 않는 문서 데이터"에 대 한 Visual Studio에 관련 된 HRESULT 오류입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|Visual Studio와 관련 된 HRESULT 오류가 나타냅니다 "패키지를 로드 되지 않았습니다."|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Visual Studio와 관련 된 HRESULT 오류가 발생 함을 "프로젝트가 이미 있습니다."|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Visual Studio에 국한 되며 "프로젝트 구성에 실패 했습니다."를 나타내는 HRESULT 오류가 발생|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Visual Studio와 관련 된 HRESULT 오류가 나타냅니다 "프로젝트가 로드 되지 않습니다."|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Visual Studio와 관련 된 HRESULT 오류가 나타냅니다 "솔루션 이미 열려 있습니다."|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Visual Studio에 국한 되며 "솔루션을 열지."를 나타내는 HRESULT 오류가 발생|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|배열에서 지정 하는 매개 변수가 있는 빌드 인터페이스에서 반환 되는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> 인터페이스 하지만 구현만 적용할 수 있습니다 메서드가 모든 출력 합니다.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 메서드 문서 편집기에서 열 수 없는 형식에 있으면이 값을 반환 합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|사용자 적중에서 뒤로 단추를 나타내는 HRESULT 값을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 마법사.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|사용자는 Visual Studio 마법사에서 뒤로 단추 적중 나타냅니다는 HRESULT 값입니다.|
 
 ## <a name="visual-studio-constants"></a>Visual Studio 상수
 
 |값|설명|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|관련 된 HRESULT 오류 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "프로젝트를 전달 합니다."를 나타냅니다|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|관련 된 상수 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] "도구 상자 표식입니다."에 대 한|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|관련 된 상수 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 통해 알림 메시지를 브로드캐스트하는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 모달의 시작 부분을 나타내는 메서드.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|관련 된 상수 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 통해 알림 메시지를 브로드캐스트하는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 모달의 끝을 나타내는 방법입니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|관련 된 상수 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 통해 알림 메시지를 브로드캐스트하는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 명령 모음 메트릭을 변경가 나타내는 메서드.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|관련 된 상수 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 쿠키 설정 되어 있지 않음을 나타내는입니다.|
-|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 항목의 부재를 나타내는 항목 식별자입니다. 이 값은 현재 선택 영역이 없는 경우 사용 됩니다.|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 계층의 루트를 나타내는 단일 항목 대신 전체 계층 구조를 식별 하기 위해 사용 하는 항목 식별자입니다.|
-|[VSITEMID 합니다. 선택](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 현재 선택된 된 항목 또는 계층의 루트를 포함할 수 있는 항목을 나타내는 항목 식별자입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Visual Studio와 관련 된 HRESULT 오류가 나타냅니다 "프로젝트를 전달 합니다."|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|"도구 상자 표식입니다."에 대 한 Visual Studio에 관련 된 상수|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|통해 알림 메시지를 위해 Visual Studio에 관련 된 상수를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 메서드 모달의 시작을 나타냅니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|통해 알림 메시지를 위해 Visual Studio에 관련 된 상수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 모달의 끝을 나타내는 방법입니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|통해 알림 메시지를 위해 Visual Studio에 관련 된 상수를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 메서드를 나타내는 명령 모음 메트릭을 변경 되었습니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|쿠키 설정 되어 있지 않음을 나타내는 Visual Studio에 해당 되는 상수입니다.|
+|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|프로젝트 항목의 없음을 나타내는 Visual Studio 항목 식별자입니다. 이 값은 현재 선택 영역이 없는 경우 사용 됩니다.|
+|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|프로젝트 계층의 루트를 나타내는 단일 항목 대신 전체 계층 구조를 식별 하기 위해 사용 하는 Visual Studio 항목 식별자입니다.|
+|[VSITEMID 합니다. 선택](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|현재 선택된 된 항목 또는 계층의 루트를 포함할 수 있는 항목을 나타내는 Visual Studio 항목 식별자입니다.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  IDE의 구성 요소는 무엇입니까을 방금 선택한 후에 설명는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> 예를 들어를 호출 합니다.

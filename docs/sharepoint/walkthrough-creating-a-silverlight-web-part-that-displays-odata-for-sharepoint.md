@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ec4c37c8014fe20b136f01d7170240fc4813d04
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119855"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626167"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>연습: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
   SharePoint 2010 OData를 사용 하 여 해당 목록 데이터를 노출합니다. SharePoint에서 OData 서비스는 RESTful 서비스 ListData.svc에 의해 구현 됩니다. 이 연습에서는 Silverlight 응용 프로그램을 호스트 하는 SharePoint 웹 파트를 만드는 방법을 보여 줍니다. Silverlight 응용 프로그램 ListData.svc를 사용 하 여 SharePoint 알림 목록 정보를 표시 합니다. 자세한 내용은 [SharePoint Foundation REST 인터페이스](http://go.microsoft.com/fwlink/?LinkId=225999) 하 고 [개방형 데이터 프로토콜](http://go.microsoft.com/fwlink/?LinkId=226000)합니다.  
@@ -30,7 +30,7 @@ ms.locfileid: "37119855"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   지원되는 Microsoft Windows 및 SharePoint 버전. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+-   지원되는 Microsoft Windows 및 SharePoint 버전.
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   

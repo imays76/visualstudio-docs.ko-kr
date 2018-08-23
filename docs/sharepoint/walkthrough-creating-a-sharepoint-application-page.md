@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e31b06d642947d88d1076b3ad365e62b663c8d4a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119416"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634789"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>연습: SharePoint 응용 프로그램 페이지 만들기
  
@@ -44,7 +44,7 @@ ms.locfileid: "37119416"
 
 ## <a name="prerequisites"></a>전제 조건
 
-- Windows 및 SharePoint 버전을 지원 합니다. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.
+- Windows 및 SharePoint 버전을 지원 합니다.
 
 ## <a name="create-a-sharepoint-project"></a>SharePoint 프로젝트 만들기
 

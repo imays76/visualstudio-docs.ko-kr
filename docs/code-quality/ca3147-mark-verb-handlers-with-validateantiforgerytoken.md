@@ -1,5 +1,5 @@
 ---
-title: '표시 동사 처리기 ValidateAntiForgeryToken CA3147:'
+title: 'CA3147: ValidateAntiForgeryToken을 사용하여 동사 처리기 표시'
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4369cfd310be9322d17b8bdbfe79880f2aa579
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: da15a441a10f3ad3f3f84ee0cc76eeed8e4127e4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008705"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623814"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>표시 동사 처리기 ValidateAntiForgeryToken CA3147:
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: ValidateAntiForgeryToken을 사용하여 동사 처리기 표시
 
 |||
 |-|-|
@@ -29,7 +29,7 @@ ms.locfileid: "40008705"
 
 ## <a name="cause"></a>원인
 
-ASP.NET MVC 컨트롤러 동작 메서드를 사용 하 여 표시 되지 않습니다 <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute?displayProperty=fullName>, 또는 같은 HTTP 동사를 지정 하는 특성 <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute?displayProperty=fullName> 또는 <xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute?displayProperty=fullName>합니다.
+ASP.NET MVC 컨트롤러 동작 메서드를 사용 하 여 표시 되지 않습니다 [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)), 또는 같은 HTTP 동사를 지정 하는 특성 [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118)) 또는 [ AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29)합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
@@ -37,17 +37,17 @@ ASP.NET MVC 컨트롤러를 디자인할 때 교차 사이트 요청 위조 공�
 
 이 규칙에서는 ASP.NET MVC 컨트롤러 작업 메서드 중 하나:
 
-- 가 <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> HTTP GET을 포함 하지 않고 허용 된 HTTP 동사를 지정 합니다.
+- 있어야 합니다 [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108%28v%3dvs.118%29) HTTP GET을 포함 하지 않고 허용 된 HTTP 동사를 지정 합니다.
 
 - 허용 된 동사를로 HTTP GET을 지정 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-- HTTP GET 요청을 처리 하 고 잠재적으로 해로운 부작용이 없는 ASP.NET MVC 컨트롤러 작업에 대 한 추가 <xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute> 방법입니다.
+- HTTP GET 요청을 처리 하 고 잠재적으로 해로운 부작용이 없는 ASP.NET MVC 컨트롤러 작업에 대 한 추가 [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993%28v%3dvs.118%29) 방법입니다.
 
    ASP.NET MVC 컨트롤러 작업이 HTTP GET을 처리 하는 요청 하 고 중요 한 데이터를 수정 하는 등 잠재적으로 해로운 의도 하지 않은 경우 응용 프로그램은 교차 사이트 요청 위조 공격에 취약 합니다.  HTTP POST, PUT 또는 DELETE 요청에만 중요 한 작업을 수행할 수 있도록 응용 프로그램을 다시 디자인 해야 합니다.
 
-- HTTP POST를 처리 하는 ASP.NET MVC 컨트롤러 작업에 대 한 PUT 또는 DELETE 요청을 추가 <xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute> 및 허용 되는 HTTP 동사를 지정 하는 속성 (<xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute>, <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute>합니다 <xref:Microsoft.AspNetCore.Mvc.HttpPutAttribute>, 또는 <xref:Microsoft.AspNetCore.Mvc.HttpDeleteAttribute>). 호출 해야 하는 또한 <xref:Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.AntiForgeryToken%2A?displayProperty=nameWithType> MVC 뷰 또는 Razor 웹 페이지입니다. 예를 들어 참조 [edit 메서드를 검사 하 고 뷰 편집](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)합니다.
+- HTTP POST를 처리 하는 ASP.NET MVC 컨트롤러 작업에 대 한 PUT 또는 DELETE 요청을 추가 [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)) 및 허용 되는 HTTP 동사를 지정 하는 속성 ([AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29) 를 [HttpPostAttribute](/previous-versions/aspnet/web-frameworks/ee264023%28v%3dvs.118%29)하십시오 [HttpPutAttribute](/previous-versions/aspnet/web-frameworks/ee470909%28v%3dvs.118%29), 또는 [HttpDeleteAttribute](/previous-versions/aspnet/web-frameworks/ee470917%28v%3dvs.118%29)). 또한를 호출 해야 합니다 [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) MVC 뷰 또는 Razor 웹 페이지 메서드. 예를 들어 참조 [edit 메서드를 검사 하 고 뷰 편집](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 
