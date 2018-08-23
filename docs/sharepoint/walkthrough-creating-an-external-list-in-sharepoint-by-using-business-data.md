@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8a557ae7f08afceee49e9e797f18562b548a67c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119477"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635543"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 
@@ -49,7 +49,7 @@ ms.locfileid: "37119477"
 
 이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
-- Windows 및 SharePoint 버전을 지원 합니다. 자세한 내용은 [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.
+- Windows 및 SharePoint 버전을 지원 합니다.
 
 - AdventureWorks 예제 데이터베이스에 액세스 합니다. AdventureWorks 데이터베이스를 설치 하는 방법에 대 한 자세한 내용은 참조 하세요. [SQL Server 예제 데이터베이스](http://go.microsoft.com/fwlink/?LinkID=117483)합니다.
 
