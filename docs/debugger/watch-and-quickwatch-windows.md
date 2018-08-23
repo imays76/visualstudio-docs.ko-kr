@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a29a5d8961688f710181dce553d0895a4bb475
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aaba3f16ccf08fa56e6f529192ae9ad9cab6d496
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057163"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635439"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>조사식 및 간략 한 조사식 Windows에서 Visual Studio를 사용 하 여 변수에 대 한 조사식 설정
 을 디버깅 하는 동안 사용할 수 있습니다 합니다 **조사식** 하 고 **간략 한 조사식** 변수 및 식을 조사 하려면 windows.  차이점은 **조사식** 창에는 여러 변수가 표시될 수 있는 반면 **간략한 조사식** 창에는 한 번에 하나의 변수가 표시된다는 것입니다. 
@@ -231,7 +231,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>동적 뷰 및 조사식 창  
  일부 스크립팅 언어 (예: JavaScript 또는 Python)를 사용 하 여 동적 또는 [덕 형식 지정](https://en.wikipedia.org/wiki/Duck_typing),.NET 언어 (4.0 이상 버전) 때문에 일반 디버깅 창을 사용 하 여 관찰 하기 어려운 개체를 지원 하 고 있습니다 런타임 속성 및 표시할 수 없는 메서드가 있을 수 있습니다.  
   
- 조사식 창에서 구현 하는 형식에서 만들어진 개체를 표시 하는 경우는 [IDynamicMetaObjectProvider Interface](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), 디버거 추가 특수 **동적 뷰** 노드를는 **자동**  표시 합니다. 이 노드에서는 동적 개체의 동적 멤버가 표시되지만 멤버의 값을 편집할 수 없습니다.  
+ 조사식 창에서 구현 하는 형식에서 만들어진 개체를 표시 하는 경우는 <xref:System.Dynamic.IDynamicMetaObjectProvider>, 디버거 추가 특수 **동적 뷰** 노드를를 **자동** 표시 합니다. 이 노드에서는 동적 개체의 동적 멤버가 표시되지만 멤버의 값을 편집할 수 없습니다.  
   
  **동적 뷰** 의 자식을 마우스 오른쪽 단추로 클릭하고 **조사식 추가**를 선택하면 디버거가 개체를 동적 개체로 캐스팅하는 새로운 조사식 변수를 삽입합니다. 즉, **개체 이름** 이 (**(동적)개체).이름**이 됩니다.  
   
