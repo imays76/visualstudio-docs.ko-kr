@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1629e98c6d0afa4d259b7b983d1efe0633321c13
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468730"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623774"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>자습서: Visual Studio를 사용 하 여 디버그 하는 방법을 알아봅니다
 
@@ -31,7 +31,7 @@ ms.locfileid: "39468730"
 |---------|---------|
 |  ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기")  |    [비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) 비슷한 단계를 보여 주는 디버깅 합니다. |
 
-데모 앱을 C# 및 c + + 있지만 기능은 Visual Basic, JavaScript 및 Visual Studio (언급 한 위치 제외) 지 원하는 다른 언어에 적용할 수 있습니다. 스크린샷은 C#의 경우
+데모 앱을 C# 및 c + + 있지만 기능은 Visual Basic, JavaScript 및 Visual Studio (언급 한 위치 제외) 지 원하는 다른 언어에 적용할 수 있습니다. 스크린샷은 C#의 경우 C# 및 c + + 샘플 코드 사이 전환 하려면 페이지의 오른쪽 위에 있는 언어 필터를 사용 합니다.
 
 이 자습서에서 다음을 수행합니다.
 
@@ -324,7 +324,7 @@ ms.locfileid: "39468730"
 
 ## <a name="navigate-code-using-run-to-click"></a>실행 하려면 클릭을 사용 하 여 코드 탐색
 
-5. 코드 편집기에서 아래로 스크롤하여 마우스로 합니다 `Console.WriteLine` 메서드 (`std::cout` c + +에서)에 `Triangle` 녹색까지 클래스 **실행 하려면 클릭** 단추 ![실행 하려면 클릭] (../debugger/media/dbg-tour-run-to-click.png " RunToClick") 왼쪽에 표시 됩니다.
+5. 코드 편집기에서 아래로 스크롤하여 마우스로 합니다 `Console.WriteLine` 메서드 (`std::cout` c + +에서)에 `Triangle` 녹색까지 클래스 **실행 하려면 클릭** 단추 ![실행 하려면 클릭](../debugger/media/dbg-tour-run-to-click.png " RunToClick") 왼쪽에 표시 됩니다.
 
      ![실행 하려면 클릭을 사용 하 여 기능](../debugger/media/get-started-run-to-click.png "실행 하려면 클릭")
 

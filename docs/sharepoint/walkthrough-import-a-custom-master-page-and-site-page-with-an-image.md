@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3fb68b4a84c6771c9430f2e8974ee485462b8563
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ea327f48bb1a1b04aa4b20601b8bdb3f7dfbb847
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945847"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634682"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>연습: 사용자 지정 마스터 페이지 및 사이트 페이지를 이미지로 가져오기
   이 연습에서는 SharePoint 사용자 지정 마스터 페이지와 이미지가 있는 사이트 페이지를 가져오는 방법을 보여는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 프로젝트입니다.  
@@ -39,7 +39,7 @@ ms.locfileid: "37945847"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료 하려면 다음 구성 요소가 있어야 합니다.  
   
--   지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 및 SharePoint입니다. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint 솔루션 개발을 위한 요구 사항](../sharepoint/requirements-for-developing-sharepoint-solutions.md)합니다.  
+-   지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 및 SharePoint입니다.  
   
 -   Visual Studio.  
   

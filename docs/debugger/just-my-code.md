@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851827"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627343"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Visual Studio에서 내 코드만 사용 하 여 사용자 코드만 디버깅 여부를 지정합니다
 Visual Studio를 자동으로 시스템, 프레임 워크 및 기타 비 사용자 호출을 통해 실행 하 고 호출 스택 창에서 해당 호출을 축소를 구성할 수 있습니다. 이 동작을 사용할지 여부를 지정 하는 기능 이라고 *Just My Code*합니다. 이 항목에서는 C#, Visual Basic, c + + 및 JavaScript 프로젝트에서 내 코드만 사용 하는 방법을 설명 합니다.
@@ -67,7 +67,9 @@ Visual Studio를 자동으로 시스템, 프레임 워크 및 기타 비 사용�
 ##  <a name="BKMK_C___Just_My_Code"></a> C + + 내 코드만  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> 사용자 및 사용자가 아닌 코드  
- 단계별 실행 동작이 호출 스택 동작과 독립적이므로 C++ 내 코드만 옵션은 .NET Framework 및 JavaScript 내 코드만 옵션과 다릅니다.  
+단계별 실행 동작이 호출 스택 동작과 독립적이므로 C++ 내 코드만 옵션은 .NET Framework 및 JavaScript 내 코드만 옵션과 다릅니다.  
+
+Visual Studio 2017 15.8부터 지정할 수 있습니다를 사용 하 여 c + +에 대 한 내 코드만 사용할지 여부를 **도구가** > **옵션** > **디버깅**  >  **일반** > **내 코드만** (기본적으로 사용 됩니다). 사용 하 여 동일 합니다 [(내 코드만 디버깅) /JMC](/cpp/build/reference/jmc) 컴파일러 스위치입니다.
   
  **호출 스택**  
   
@@ -88,7 +90,7 @@ Visual Studio를 자동으로 시스템, 프레임 워크 및 기타 비 사용�
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> 단계별 실행 동작  
  경우 있습니다 **단계씩** (바로 가기 키: F11) 사용자 코드에서 비 사용자 코드, 사용자 코드의 다음 줄으로 코드 디버거 단계. 경우 있습니다 **프로시저 나가기** (키보드: shift+f11), 디버거가 사용자 코드의 다음 줄을 실행 합니다. 사용자 코드가 없는 발견 되 면 경우 앱 될 때까지 계속 실행 종료는 중단점 또는 예외가 발생 합니다.  
   
- 사용자가 작성하지 않은 코드에서 디버거가 중단된 경우(예를 들어 모두 중단 명령이 사용자가 작성하지 않은 코드에서 중지된 경우) 사용자가 작성하지 않은 코드에서 단계별 실행이 계속됩니다.  
+ 사용자가 작성하지 않은 코드에서 디버거가 중단된 경우(예를 들어 모두 중단 명령이 사용자가 작성하지 않은 코드에서 중지된 경우) 사용자가 작성하지 않은 코드에서 단계별 실행이 계속됩니다.
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> 예외 동작  
  디버거가 예외에 도달 하면 사용자 또는 사용자 코드가 아닌 인지에 관계 없이 예외에서 중지 합니다. 합니다 **user-unhandled** 옵션에 **예외** 대화 상자는 무시 됩니다.  
