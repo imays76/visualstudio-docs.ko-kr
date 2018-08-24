@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio 설명서 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: 6e7ff54f516f8b6ab500f6605d6418d6674a48dd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 13b3dbbc5c5307d7a98bfdf9bd8900436daee2b1
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449067"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635186"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -75,6 +75,158 @@ ms.locfileid: "34449067"
     <div class="container">
         <h1>Visual Studio 설명서</h1>
         <ul class="pivots">
+            <li>
+                <li>
+                <a href="#get-started">시작</a>
+                <ul id="get-started">
+                    <li>
+                        <a href="#get-started1"></a>
+                        <ul id="get-started1" class="cardsL">
+                            <li>
+                               <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Visual Studio를 사용하는 방법 알아보기</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />둘러보기 시작</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="" />코드 작성 및 편집</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="" />코드 빌드</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="" />코드 디버그</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="" />코드 테스트</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="" />로컬로 또는 클라우드에서 데이터에 액세스</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>자습서 시작</h3>
+                                                <h4>프로그래밍 언어 선택</h4>
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">                                                    <li>
+                                                        <a class="barLink" href="/cpp/build/vscpp-step-0-installation">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-csharp-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/tutorial-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/javascript/tutorial-nodejs/">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>서두르고 계십니까? 5분 빠른 시작을 사용해보세요.</h3>
+                                                <h4>사용자가 선택한 언어로 "Hello, World"를 빌드합니다.</h4>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="">
+C++</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-aspnet-core">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_CSharp.svg" alt="">
+C#</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="">
+Visual Basic</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-python">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="">
+Python</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-nodejs">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="">
+Node.js</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     <div>
+                        <ul class="cardsL">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>또는 개발할 항목을 선택합니다.</h3>
+                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+유니버설 Windows 앱</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+Windows 데스크톱 앱</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio">
+                                                            <img src="https://docs.microsoft.com/media/common/i_mobile-app-developement.svg" alt="">
+모바일 앱</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
+">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="">
+Unity 게임</a>
+                                                    </li></ul></td><td style="border-top-color:transparent!important;padding-left:0;"><ul class="noBullet">
+                                                    <li>
+                                                        <a class="barLink" href="/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.1">
+                                                            <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt="">
+ASP.NET Core를 사용한 웹앱</a>
+                                                    </li>
+                                                </ul></td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </li>
             <li>
                 <a href="#features">작업</a>
                 <ul id="features">
@@ -285,6 +437,25 @@ ms.locfileid: "34449067"
                                                 <div class="cardText">
                                                     <h3>공동 작업</h3>
                                                     <p>실시간 공동 작업 환경에서 코드를 공유, 편집, 디버그합니다. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/visualstudio/containers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" src="https://docs.microsoft.com/media/illustrations/virtualization-containers-about.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>컨테이너를 사용하여 개발</h3>
+                                                    <p>컨테이너를 사용하여 모듈식 구성 요소를 격리하고 확장성을 향상시킵니다.</p>
                                                 </div>
                                             </div>
                                         </div>
