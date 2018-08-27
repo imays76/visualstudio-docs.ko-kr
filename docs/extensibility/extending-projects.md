@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639128"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902821"
 ---
 # <a name="extend-projects"></a>프로젝트를 확장 합니다.
 프로젝트 및 솔루션은 Visual Studio 코드 및 리소스 파일을 컴파일 및 배포 단위로 구성 하는 방법입니다. 프로젝트에 대 한 자세한 정보를 찾을 수 있습니다 [프로젝트 (Visual Studio SDK)](../extensibility/extending-projects.md)합니다.  
   
- Visual Studio SDK 및 프로젝트의 경우에서 다운로드할 수 있는 관리 되는 패키지 프레임 워크는 사용 하 여 사용자 고유의 프로젝트 형식을 만들 수 있습니다 [프로젝트에 대 한 관리 되는 패키지 프레임 워크](http://mpfproj12.codeplex.com/)합니다. 이해 하려면 사용자 지정 프로젝트, 구현 하는 방법을 참조 하세요 [새 프로젝트 생성: 내부 살펴보기, 1 부](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) 및 [새 프로젝트 생성: 내부적으로 2 부](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Visual Studio SDK 및 프로젝트의 경우에서 다운로드할 수 있는 관리 되는 패키지 프레임 워크는 사용 하 여 사용자 고유의 프로젝트 형식을 만들 수 있습니다 [프로젝트에 대 한 관리 되는 패키지 프레임 워크](https://github.com/tunnelvisionlabs/MPFProj10)합니다. 이해 하려면 사용자 지정 프로젝트, 구현 하는 방법을 참조 하세요 [새 프로젝트 생성: 내부 살펴보기, 1 부](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) 및 [새 프로젝트 생성: 내부적으로 2 부](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  이 섹션의에서 항목에서는 사용자 지정 프로젝트를 만드는 방법 및 다양 한 Visual Studio 솔루션을 관리 하는 방법을 설명 합니다.  
   
