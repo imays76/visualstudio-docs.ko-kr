@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: b354045ceb464a14ff909a503aa62477c73b983c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280879"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054574"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 
@@ -24,7 +24,7 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 
 이 새로운 기능을 활용 하려면 다음이 필요 합니다.
 
-- 최신 미리 보기 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/preview) Azure 개발 워크 로드를 사용 하 여 합니다.
+- 최신 버전의 [Visual Studio 2017](https://visualstudio.microsoft.com/download) 사용 하 여 합니다 *ASP.NET 및 웹 개발* 워크 로드.
 
 - 합니다 [Visual Studio 용 Kubernetes 도구](https://aka.ms/get-vsk8stools), 별도 다운로드로 제공 합니다.
 
