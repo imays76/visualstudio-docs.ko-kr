@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fee2a4480f3fe8e5439decfd4852a020a734ff
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 2343218da765ad8bb9a10d585001c5f3321a0137
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232259"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902401"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>1 부 기본 프로젝트 시스템을 만들려면
 Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타 자산을 구성 하는 데 사용할 컨테이너를 사용 합니다. 프로젝트에서 솔루션의 자식으로 표시 합니다 **솔루션 탐색기**합니다. 프로젝트를 사용 하 여 구성, 빌드, 디버그 및 소스 코드를 배포 및 웹 서비스, 데이터베이스 및 기타 리소스에 대 한 참조를 만들 수 있습니다.  
@@ -61,7 +61,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
 ## <a name="prerequisites"></a>전제 조건  
  Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
   
- 또한 소스 코드를 다운로드 해야 합니다 [프로젝트에 대 한 관리 되는 패키지 프레임 워크](http://mpfproj12.codeplex.com/)합니다. 만들려고 한다고 솔루션에 액세스할 수 있는 위치로 파일을 추출 합니다.  
+ 또한 소스 코드를 다운로드 해야 합니다 [프로젝트에 대 한 관리 되는 패키지 프레임 워크](https://github.com/tunnelvisionlabs/MPFProj10)합니다. 만들려고 한다고 솔루션에 액세스할 수 있는 위치로 파일을 추출 합니다.  
   
 ## <a name="create-a-basic-project-type"></a>기본 프로젝트 형식 만들기  
  라는 C# VSIX 프로젝트를 만듭니다 **SimpleProject**합니다. (**파일** > **새** > **프로젝트** 차례로 **Visual C#**  >   **확장성** > **VSIX 프로젝트**). Visual Studio 패키지 프로젝트 항목 템플릿을 추가 (에 **솔루션 탐색기**, 프로젝트 노드를 마우스 오른쪽 단추로 **추가** > **새 항목**이동한 다음 **확장성** > **Visual Studio 패키지**). 파일 이름을 *SimpleProjectPackage*합니다.  

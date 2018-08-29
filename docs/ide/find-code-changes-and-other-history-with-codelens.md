@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36235470"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054480"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -206,7 +206,7 @@ Team Foundation Server 또는 Visual Studio Team Services에서 TFVC(Team Founda
 
 1. 연결된 [단위 테스트 코드](../test/unit-test-your-code.md)가 있는 응용 프로그램 코드로 이동합니다.
 
-2. 아직 수행하지 않은 경우 CodeLens 테스트 지표를 로드하도록 응용 프로그램을 빌드합니다. [빌드된 어셈블리에 의한 검색](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)이 설정되어 있는지 확인합니다.
+2. 아직 수행하지 않은 경우 CodeLens 테스트 지표를 로드하도록 응용 프로그램을 빌드합니다. [빌드된 어셈블리에 의한 검색](../test/test-explorer-faq.md#assembly-based-discovery)이 설정되어 있는지 확인합니다.
 
 3. **Alt**+**3**을 눌러 코드에 대한 테스트를 검토합니다.
 
@@ -327,7 +327,8 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q: 내 CodeLens 테스트 지표는 솔루션을 처음 열 때 내 파일에 더 이상 나타나지 않습니다. 로드하려면 어떻게 하나요?
 
-**A:** CodeLens 테스트 지표를 가져오는 프로젝트를 다시 빌드하여 파일에서 로드합니다. [빌드된 어셈블리에 의한 검색](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)이 설정되어 있는지 확인합니다. 성능을 향상시키기 위해 코드 파일을 로드하는 경우 Visual Studio는 테스트 지표에 대한 원본 정보를 더 이상 페치하지 않습니다. 빌드 후에 또는 **테스트 탐색기**를 두 번 클릭하여 테스트로 이동할 때 테스트 지표가 로드됩니다.
+**A:** CodeLens 테스트 지표를 가져오는 프로젝트를 다시 빌드하여 파일에서 로드합니다. [빌드된 어셈블리에 의한 검색](../test/test-explorer-faq.md#assembly-based-discovery
+)이 설정되어 있는지 확인합니다. 성능을 향상시키기 위해 코드 파일을 로드하는 경우 Visual Studio는 테스트 지표에 대한 원본 정보를 더 이상 페치하지 않습니다. 빌드 후에 또는 **테스트 탐색기**를 두 번 클릭하여 테스트로 이동할 때 테스트 지표가 로드됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
