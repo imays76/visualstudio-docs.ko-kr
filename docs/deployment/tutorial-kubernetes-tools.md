@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054574"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138945"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 
-Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨테이너 화 된 응용 프로그램의 개발을 간소화 합니다. Visual Studio Dockerfile 및 Helm 차트와 같은 Kubernetes 배포를 지 원하는 데 필요한 코드와 구성 파일을 자동으로 만들 수 있습니다. 또한 Visual Studio에서 Azure Kubernetes Service (AKS) 클러스터에 직접 게시할 수 있습니다.
+Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨테이너 화 된 응용 프로그램의 개발을 간소화 합니다. Visual Studio Dockerfile 및 Helm 차트와 같은 Kubernetes 배포를 지 원하는 데 필요한 코드와 구성 파일을 자동으로 만들 수 있습니다. Azure 개발 공간을 사용 하 여 라이브 Azure Kubernetes Service (AKS) 클러스터에서 코드를 디버그 하거나에서 AKS 클러스터에 직접 게시할 수 Visual Studio 내에서.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -28,7 +28,7 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 
 - 합니다 [Visual Studio 용 Kubernetes 도구](https://aka.ms/get-vsk8stools), 별도 다운로드로 제공 합니다.
 
-- [Windows 용 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows) 개발 워크스테이션에 설치 된 (즉, Visual Studio 실행 위치)
+- [Windows 용 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows) 개발 워크스테이션에 설치 된 (즉, 여기서 Visual Studio를 실행), Docker 이미지를 빌드 하려는 경우 로컬에서 실행 되는 Docker 컨테이너를 디버그 하거나 AKS에 게시 합니다.
 
 - Visual Studio에서 AKS에 게시 하려면:
 
@@ -74,7 +74,7 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 
 - Helm 차트 및 *차트* 폴더입니다. 이 yaml 파일을 Kubernetes에 배포 하는 데 사용할 수 있는 응용 프로그램에 대 한 Helm 차트를 구성 합니다. Helm에 대 한 자세한 내용은 참조 하세요. [ https://www.helm.sh ](https://www.helm.sh)합니다.
 
-- *azds.yaml*합니다. Azure 개발 공간을 Azure Kubernetes Service에서 신속 하 고 반복 디버깅 환경을 제공 하는 새 서비스에 대 한 설정을 포함 합니다. 이 파일은 현재 사용 되지 않습니다 이지만 Azure 개발 공백을 사용 하 여 향후 사용을 위해 예약 합니다.
+- *azds.yaml*합니다. Azure Kubernetes Service에서 신속 하 고 반복 디버깅 환경을 제공 하는 Azure 개발 공간에 대 한 설정을 포함 합니다. 자세한 내용은 참조 하세요 [Azure 개발 공간 설명서](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)합니다.
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>AKS (Azure Kubernetes Service)에 게시
 
