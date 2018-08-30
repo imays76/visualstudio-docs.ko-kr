@@ -16,70 +16,86 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 720a69b1eae8a14247027a52ef2972e43203163b
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382411"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054558"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 테스트 탐색기 FAQ
 
-## <a name="test-discovery"></a>테스트 검색
-
-### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-are-dynamically-defined-for-example-theories-custom-adapters-custom-traits-ifdefs-etc-how-can-i-discover-these-tests"></a>1. 텍스트 탐색기가 동적으로 정의된 나의 테스트를 검색하지 않습니다. (예: 이론, 사용자 지정 어댑터, 사용자 지정 특성, #ifdefs 등) 이러한 테스트를 검색하려면 어떻게 할까요?
+## <a name="dynamic-test-discovery"></a>동적 테스트 검색
+**테스트 탐색기가 동적으로 정의된 테스트를 검색하지 않습니다. (예: 이론, 사용자 지정 어댑터, 사용자 지정 특성, #ifdefs 등) 이러한 테스트를 검색하려면 어떻게 할까요?**
 
   프로젝트를 빌드하고 **도구** > **옵션** > **테스트**에서 어셈블리 기반 검색이 켜져 있는지 확인합니다.
 
   [실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)은 소스 기반 테스트 검색입니다. 이론, 사용자 지정 어댑터, 사용자 지정 특성, `#ifdef` 문 등을 사용하는 테스트는 런타임에 정의되기 때문에 검색할 수 없습니다. 해당 테스트를 정확하게 검색하려면 빌드가 필요합니다. 15.6 미리 보기에서 어셈블리 기반 검색(기존 Discoverer)은 빌드 후에만 실행됩니다. 이 설정은 실시간 테스트 검색은 편집 중에 검색할 수 있는 만큼 테스트를 검색하고 어셈블리 기반 검색을 사용하면 동적으로 정의된 테스트가 빌드 후에 표시될 수 있음을 의미합니다. 실시간 테스트 검색은 응답성을 개선하지만 빌드 후에 완전하고 정확한 결과를 얻을 수 있습니다.
 
-### <a name="2-what-does-the--plus-symbol-that-appears-in-the-top-line-of-test-explorer-mean"></a>2. 테스트 탐색기의 맨 위 줄에 표시되는 ‘+’(더하기) 기호는 무엇인가요?
+## <a name="test-explorer--plus-symbol"></a>테스트 탐색기 ‘+’(더하기) 기호
+**테스트 탐색기의 맨 윗줄에 표시되는 ‘+’(더하기) 기호는 무엇인가요?**
 
   ‘+’(더하기) 기호는 어셈블리 기반 검색이 켜져 있는 한, 빌드 후에 추가 테스트가 검색될 수 있음을 나타냅니다. 이 기호는 동적으로 정의된 테스트가 프로젝트에서 검색되는 경우 표시됩니다.
 
   ![더하기 기호 요약 줄](media/testex-plussymbol.png)
 
-### <a name="3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on"></a>3. 어셈블리 기반 검색이 프로젝트에서 더 이상 작동하지 않습니다. 다시 켜려면 어떻게 할까요?
+## <a name="assembly-based-discovery"></a>어셈블리 기반 검색
+**어셈블리 기반 검색이 프로젝트에서 더 이상 작동하지 않습니다. 다시 켜려면 어떻게 할까요?**
 
   **도구** > **옵션** > **테스트**로 이동하여 **빌드 후 빌드된 어셈블리에서 테스트를 추가로 검색** 상자를 선택합니다.
 
   ![어셈블리 기반 옵션](media/testex-toolsoptions.png)
 
-### <a name="4-tests-now-appear-in-test-explorer-while-i-type-without-having-to-build-my-project-what-changed"></a>4. 이제 프로젝트를 빌드할 필요 없이 입력하는 동안 테스트 탐색기에 테스트가 나타납니다. 변경된 내용은 무엇인가요?
+## <a name="real-time-test-discovery"></a>실시간 테스트 검색
+**이제 프로젝트를 빌드할 필요 없이 입력하는 동안 테스트 탐색기에 테스트가 나타납니다. 변경된 내용은 무엇인가요?**
 
   이 기능을 [실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)이라고 합니다. 프로젝트를 빌드하지 않아도 Roslyn 분석기를 사용하여 실시간으로 테스트를 검색하고 테스트 탐색기를 채웁니다. 이론 또는 사용자 지정 특성과 같은 동적으로 정의된 테스트의 테스트 검색 동작에 대한 자세한 정보는 FAQ #1을 참조하세요.
 
-### <a name="5-what-languages-and-test-frameworks-can-use-real-time-test-discovery"></a>5. 실시간 테스트 검색을 사용할 수 있는 언어 및 테스트 프레임워크는 무엇인가요?
+## <a name="real-time-test-discovery-compatibility"></a>실시간 테스트 검색 호환성
+**실시간 테스트 검색을 사용할 수 있는 언어 및 테스트 프레임워크는 무엇인가요?**
 
   [실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)은 Roslyn 컴파일러를 사용하여 빌드되므로 관리 언어(C# 및 Visual Basic)에서만 작동합니다. 현재 실시간 테스트 검색은 xUnit, NUnit 및 MSTest 프레임워크에서만 작동합니다.
 
-### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6. 테스트 탐색기에 대해 로그를 어떻게 켤 수 있습니까?
+## <a name="test-explorer-logs"></a>테스트 탐색기 로그
+**테스트 탐색기에 대한 로그를 켜려면 어떻게 하나요?**
 
   **도구** > **옵션** > **테스트**로 이동하고 거기서 로깅 섹션을 찾습니다.
 
-### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7. UWP 프로젝트의 내 테스트가 내 앱을 배포할 때까지 검색되지 않는 이유는 무엇입니까?
+## <a name="uwp-test-discovery"></a>UWP 테스트 검색
+**UWP 프로젝트의 내 테스트가 내 앱을 배포할 때까지 검색되지 않는 이유는 무엇인가요?**
 
   UWP 테스트는 앱이 배포될 때 서로 다른 런타임을 대상으로 합니다. 따라서 UWP 프로젝트에 대해 정확히 테스트를 검색하려면 프로젝트를 빌드할 뿐만 아니라 배포도 해야 합니다.
 
-### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. 계층 보기에서 테스트 결과 정렬이 어떻게 작동합니까?
+## <a name="test-explorer-sorting"></a>테스트 탐색기 정렬
+**계층 보기에서 테스트 결과 정렬은 어떻게 작동하나요?**
 
   계층 보기는 테스트를 결과에 의해서가 아니라 알파벳순으로 정렬합니다. 설정에 의한 다른 그룹은 일반적으로 테스트 결과를 결과순으로 정렬한 다음, 알파벳순으로 정렬합니다. 비교를 위해 다음 이미지의 다양한 그룹화 방법 옵션을 참조하세요. [이 GitHub 문제](https://github.com/Microsoft/vstest/issues/1425)의 디자인에 관한 피드백을 제공할 수 있습니다.
 
   ![정렬 예제](media/testex-sortingex.png)
 
-### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9. 계층 구조 보기에서 프로젝트, 네임스페이스, 클래스 그룹 옆에 통과, 실패, 건너뜀 및 실행 안 됨 아이콘이 있습니다. 이러한 아이콘은 무엇을 의미하나요?
+## <a name="test-explorer-hierarchy-view"></a>테스트 탐색기 계층 구조 보기
+**계층 구조 보기에서 프로젝트, 네임스페이스, 클래스 그룹 옆에 통과, 실패, 건너뜀 및 실행 안 됨 아이콘이 있습니다. 이러한 아이콘은 무엇을 의미하나요?**
 
   프로젝트, 네임스페이스, 클래스 그룹 옆의 아이콘은 해당 그룹 내의 테스트 상태를 나타냅니다. 다음 표를 참조하고
 
   ![테스트 탐색기 계층 구조 아이콘](media/testex-hierarchyicons.png)
 
-### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. 테스트 탐색기 검색 상자에 "파일 경로" 필터가 더 이상 존재하지 않습니다.
+## <a name="search-by-file-path"></a>파일 경로 검색
+**테스트 탐색기 검색 상자에 “파일 경로” 필터가 더 이상 존재하지 않습니다.**
 
 **테스트 탐색기** 검색 상자의 파일 경로 필터는 Visual Studio 2017 버전 15.7 미리 보기 3에서 제거되었습니다. 이 기능은 사용량이 낮으므로, 테스트 탐색기는 이 기능을 제외하여 테스트 메서드를 빠르게 검색할 수 있습니다. 이 변경이 개발 흐름을 방해하는 경우 [개발자 커뮤니티](https://developercommunity.visualstudio.com/)에 피드백을 제출하여 알려주세요.
 
-## <a name="features"></a>기능
+## <a name="test-adapter-nuget-reference"></a>테스트 어댑터 NuGet 참조
+**Visual Studio 2017 버전 15.8에서 테스트가 검색되지만 실행되지 않습니다.**
 
-### <a name="how-can-i-turn-on-feature-flags-to-try-out-new-testing-features"></a>새로운 테스트 기능을 사용하기 위해 기능 플래그를 켜려면 어떻게 할까요?
+모든 테스트 프로젝트는 .csproj 파일에 .NET 테스트 어댑터 NuGet 참조를 포함해야 합니다. 그렇지 않으면 빌드 후 테스트 어댑터 확장이 검색을 시작하거나 사용자가 선택한 테스트를 실행하려고 시도할 때 다음 테스트 출력이 프로젝트에 표시됩니다. 
+
+**테스트 프로젝트{}는 .NET NuGet 어댑터를 참조하지 않습니다. 이 프로젝트에서는 테스트 검색 또는 실행이 작동하지 않을 수 있습니다. 솔루션의 각 .NET 테스트 프로젝트에서 NuGet 테스트 어댑터를 참조하는 것이 좋습니다.**
+
+테스트 어댑터 확장을 사용하는 대신, 프로젝트에 테스트 어댑터 NuGet 패키지를 사용해야 합니다. 그러면 성능이 크게 향상되고 연속 통합 관련 문제가 줄어듭니다. [릴리스 정보](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension)에서 .NET 테스트 어댑터 확장 사용 중단에 대해 자세히 알아보세요.
+
+## <a name="using-feature-flags"></a>기능 플래그 사용
+**새로운 테스트 기능을 사용하기 위해 기능 플래그를 켜려면 어떻게 할까요?**
 
 기능 플래그는 기능이 일반 공급되기 전에 피드백을 제공하고 싶어하는 사용자에게 제품의 실험적 또는 완료되지 않은 부분을 제공하는 데 사용됩니다. IDE 환경이 불안정해질 수 있습니다. 가상 머신과 같은 안전한 개발 환경에서만 사용하십시오. 기능 플래그는 항상 전적으로 사용자의 책임 하에 사용하는 설정입니다. [기능 플래그 확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension) 또는 개발자 명령 프롬프트를 통해 실험적 기능을 켤 수 있습니다.
 
