@@ -1,6 +1,6 @@
 ---
 title: Visual Studio를 사용하여 C#으로 ASP.NET Core 웹앱 만들기
-description: C#을 사용하여 단계별로 Visual Studio에서 ASP.NET Core 웹앱을 만드는 방법을 알아봅니다.
+description: C# 및 ASP.NET Core를 사용하여 단계별로 Visual Studio에서 간단한 Hello World 웹앱을 만드는 방법을 알아봅니다.
 ms.custom: mvc
 ms.date: 07/20/2018
 ms.prod: visual-studio-dev15
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cbb43f61aab1df099efca01b56a927cf189a808e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: db8dc29af0ccd77d2a0e201056012c726854f85c
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468980"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054359"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 

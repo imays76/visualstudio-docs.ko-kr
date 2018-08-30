@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978413"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901487"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -219,6 +219,7 @@ TestRunParameters는 런타임에 테스트에서 사용할 수 있는 변수 �
 public void HomePageTest()
 {
     string appURL = TestContext.Properties["webAppUrl"];
+}
 ```
 
 TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 필드 및 공용 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 속성을 테스트 클래스에 추가합니다.
@@ -234,7 +235,7 @@ TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestToo
     <AssemblyResolution>
       <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
-</MSTest
+</MSTest>
 ```
 
 이러한 설정은 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 특성을 가진 테스트 메서드를 실행하는 테스트 어댑터에 따라 달라집니다.
