@@ -62,6 +62,7 @@
 ## [Unity 게임 개발](unity-tools.md)
 ### [설정](setup-vsmac-tools-unity.md)
 ### [Unity 도구 사용](using-vsmac-tools-unity.md)
+### [Unity에서 .NET 4.x 사용](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [변경 로그](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [액세스 가능성](accessibility.md)
