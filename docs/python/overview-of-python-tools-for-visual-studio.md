@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468779"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626912"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
@@ -84,7 +84,7 @@ Visual Studio에서는 시간이 지남에 따라 커지는 프로젝트의 복�
 
 프로젝트 및 항목 템플릿은 다양한 유형의 프로젝트와 파일의 설정 프로세스를 자동화하여 소중한 시간을 절약해주고 복잡하고 오류가 발생하기 쉬운 세부 정보를 관리할 필요가 없습니다. Visual Studio는 웹, Azure, 데이터 과학, 콘솔 및 기타 유형의 프로젝트에 대한 템플릿뿐 아니라 Python 클래스, 단위 테스트, Azure 웹 구성, HTML 및 Django 앱 같은 파일에 대한 템플릿도 제공합니다.
 
-[![Visual Studio에서 Python 프로젝트 및 항목 템플릿](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+[![Visual Studio에서 Python 프로젝트 및 항목 템플릿](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 추가 정보
 
@@ -114,7 +114,7 @@ Visual Studio의 장점 중 하나는 강력한 디버거입니다. 특히 Pytho
 
 프로파일링은응용 프로그램 내에서 시간이 어떻게 쓰이는지를 탐색합니다. Visual Studio는 CPython 기반 인터프리터를 사용한 프로 파일링을 지원하고 다른 프로파일링 실행 간 성능을 비교하는 기능을 포함합니다.
 
-[![Python 프로젝트에 대한 Visual Studio 프로파일러 결과](media/profiling-results.png)](media/profiling-results.png)
+[![Python 프로젝트에 대한 Visual Studio 프로파일러 결과](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 추가 정보
 
