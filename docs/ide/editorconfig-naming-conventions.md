@@ -12,16 +12,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cedc3a66b3c6b73dd778011afd8e96b7e1e2d762
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926485"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626681"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig에 대한 .NET 명명 규칙
 
-명명 규칙은 클래스, 속성 및 메서드와 같은 코드 요소의 이름을 지정합니다. 예를 들어 공용 멤버가 대문자로 시작해야 하고 비동기 메서드가 “Async”로 끝나야 한다고 지정할 수 있습니다. [.editorconfig 파일](../ide/create-portable-custom-editor-options.md)에서 이러한 규칙을 지정하여 적용할 수 있습니다. 명명 규칙 위반은 규칙에서 선택한 심각도에 따라 **오류 목록** 또는 이름의 제안 중 하나에서 표시될 수 있습니다. 위반을 확인하기 위해 프로젝트를 빌드하지 않아도 됩니다.
+명명 규칙은 클래스, 속성 및 메서드와 같은 코드 요소의 이름을 지정합니다. 예를 들어 공용 멤버가 대문자로 시작해야 하고 비동기 메서드가 "Async"로 끝나야 한다고 지정할 수 있습니다. [.editorconfig 파일](../ide/create-portable-custom-editor-options.md)에서 이러한 규칙을 지정하여 적용할 수 있습니다. 명명 규칙 위반은 규칙에서 선택한 심각도에 따라 **오류 목록** 또는 이름의 제안 중 하나에서 표시될 수 있습니다. 위반을 확인하기 위해 프로젝트를 빌드하지 않아도 됩니다.
 
 명명 규칙은 *.editorconfig* 파일에서 가장 구체적인 규칙부터 가장 덜 구체적인 규칙으로 정렬되어야 합니다. 적용할 수 있는 첫 번째 규칙은 적용되는 유일한 규칙이 됩니다.
 
@@ -46,6 +46,7 @@ ms.locfileid: "31926485"
 허용 가능한 값은 아래와 같으며, 이러한 값을 쉼표로 구분하여 여러 값을 지정할 수 있습니다.
 
 - \*(모든 기호를 지정하려면 이 값을 사용합니다.)
+- 네임스페이스(namespace)
 - 클래스
 - struct
 - interface(인터페이스)
@@ -56,6 +57,9 @@ ms.locfileid: "31926485"
 - 이벤트(event)
 - 대리자(delegate)
 - 매개 변수
+- type_parameter
+- 로컬
+- local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>기호의 액세스 가능성 수준
 
@@ -71,6 +75,7 @@ ms.locfileid: "31926485"
 - private
 - protected
 - protected\_internal or protected_friend
+- 로컬
 
 > [!NOTE]
 > 대상으로 지정할 기호 종류에 접근성을 적용할 수 없는 경우에는 접근성 수준을 이름 지정 규칙의 일부로 지정하지 마세요. 예를 들어 매개 변수에는 접근성 수준이 없습니다. 매개 변수 이름 지정 규칙의 접근성 수준을 지정하면 이름 지정 규칙이 올바르게 작동하지 않습니다.
@@ -144,7 +149,7 @@ ms.locfileid: "31926485"
 
 심각도 | 효과
 ------------ | -------------
-none or silent | 이 스타일을 따르지 않을 경우 사용자에게 아무것도 표시되지 않지만 자동 생성 코드는 이 스타일을 따릅니다.
+none or silent | 이 스타일을 따르지 않을 경우 사용자에게 아무 것도 표시되지 않지만 자동 생성 코드는 이 스타일을 따릅니다.
 suggestion | 이 스타일을 따르지 않을 경우 처음 두 문자에 점선이 밑줄로 표시되어 사용자에게 제안으로 표시됩니다. 컴파일 시간에 영향을 주지 않습니다.
 경고 | 이 스타일을 따르지 않을 경우 **오류 목록**에서 컴파일러 경고가 표시됩니다.
 오류 | 이 스타일을 따르지 않을 경우 **오류 목록**에서 컴파일러 오류가 표시됩니다.
