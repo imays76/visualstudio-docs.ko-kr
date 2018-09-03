@@ -1,5 +1,5 @@
 ---
-title: Visual Studio의 편집 개요
+title: 편집 소개
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 420250a9e8dc99d6a02505efa7efb8f44e287e12
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511237"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627044"
 ---
-# <a name="quickstart-use-the-code-editor"></a>빠른 시작: 코드 편집기 사용
+# <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
 
 Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파일에 추가하여 Visual Studio에서 코드를 보다 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 살펴봅니다.
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
-이 빠른 시작에서는 프로그래밍 언어에 이미 친숙하다고 가정합니다. 친숙하지 않은 경우에는 먼저 [Python](../ide/quickstart-python.md) 또는 [C#](../ide/tutorial-csharp-aspnet-core.md)으로 웹앱 만들기나 [Visual Basic](../ide/quickstart-visual-basic-console.md) 또는 [C++](../ide/getting-started-with-cpp-in-visual-studio.md)로 콘솔 앱 만들기에 대한 프로그래밍 빠른 시작 중 하나를 살펴보는 것이 좋습니다.
+이 아티클에서는 사용자가 프로그래밍 언어에 이미 친숙하다고 가정합니다. 친숙하지 않은 경우에는 먼저 [Python](../ide/quickstart-python.md) 또는 [C#](../ide/tutorial-csharp-aspnet-core.md)으로 웹앱 만들기나 [Visual Basic](../ide/quickstart-visual-basic-console.md) 또는 [C++](../ide/getting-started-with-cpp-in-visual-studio.md)로 콘솔 앱 만들기에 대한 프로그래밍 빠른 시작 중 하나를 살펴보는 것이 좋습니다.
 
 ## <a name="create-a-new-code-file"></a>새 코드 파일 만들기
 
@@ -157,16 +157,8 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
 
 ## <a name="next-steps"></a>다음 단계
 
-Visual Studio 편집기에 대한 이 빠른 시작을 완료했습니다. 이제 Visual Studio 개발 환경에 대한 다른 빠른 시작을 사용해 볼 수 있습니다.
-
 > [!div class="nextstepaction"]
-> [빠른 시작: 먼저 Visual Studio IDE 살펴보기](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [빠른 시작: Visual Studio 개인 설정](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [빠른 시작: 프로젝트 및 솔루션](../ide/quickstart-projects-solutions.md)
+> [프로젝트 및 솔루션에 대한 자세한 정보](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>참고 항목
 

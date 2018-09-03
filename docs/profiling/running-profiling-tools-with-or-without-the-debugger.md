@@ -10,15 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268271"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626901"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
 Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 중 일부(예: **CPU 사용** 및 **메모리 사용**)는 디버거를 사용하거나 사용하지 않고 실행될 수 있습니다. 디버거가 없는 성능 도구는 릴리스 구성에서 실행될 수 있으며, 디버거 통합 도구는 디버그 구성에서 실행될 수 있습니다.  
+
+Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>디버거를 사용하여 도구를 실행할지 여부 선택  
  디버거 통합 성능 도구에서는 디버거가 없는 도구로 수행할 수 없는 중단점 설정, 변수 값 검사 등의 많은 작업을 수행할 수 있습니다. 디버거가 없는 도구는 릴리스된 응용 프로그램의 사용자가 볼 수 있는 것에 가까운 환경을 제공합니다.  

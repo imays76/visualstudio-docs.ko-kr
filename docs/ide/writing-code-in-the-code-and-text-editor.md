@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283460"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627050"
 ---
 # <a name="features-of-the-code-editor"></a>코드 편집기의 기능
 
@@ -51,7 +51,7 @@ Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 �
 
 |||
 |-|-|
-|문서 서식|적절한 코드 줄 들여쓰기를 설정하고 중괄호를 문서의 개별 줄로 이동합니다.|
+|[문서 서식](code-styles-and-quick-actions.md#format-document-command)|적절한 코드 줄 들여쓰기를 설정하고 중괄호를 문서의 개별 줄로 이동합니다.|
 |선택 영역 서식|적절한 코드 줄 들여쓰기를 설정하고 중괄호를 선택 영역의 개별 줄로 이동합니다.|
 |선택한 줄의 공백을 탭으로|해당할 경우 선행 공백을 탭으로 변경합니다.|
 |선택한 줄의 탭을 공백으로|선행 탭을 공백으로 변경합니다. 파일의 모든 공백을 탭으로 변환하거나 모든 탭을 공백으로 변환하려면 `Edit.ConvertSpacesToTabs` 및 `Edit.ConvertTabsToSpaces` 명령을 사용하면 됩니다. 이들 명령은 Visual Studio 메뉴에 표시되지 않지만 **빠른 실행** 창이나 명령 창에서 호출할 수 있습니다.|

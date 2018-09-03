@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2a02bf78d731764b0725c03cefb4959451a40b9c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586419"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626627"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio에서 Python 검색 경로를 사용하는 방법
 

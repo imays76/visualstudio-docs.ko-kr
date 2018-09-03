@@ -2,7 +2,7 @@
 title: Visual Studio 2017의 새로운 기능
 description: Visual Studio 2017의 새로운 기능을 알아보세요.
 ms.custom: ''
-ms.date: 05/09/2018
+ms.date: 08/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282975"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42755511"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
-**[15.7 릴리스](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)용으로 업데이트됨**
+**[15.8 릴리스](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)용으로 업데이트됨**
 
 Visual Studio의 이전 버전에서 업그레이드하려고 하십니까? Visual Studio 2017에서 제공하는 기능 소개: 모든 개발, 앱 및 플랫폼에서 탁월한 생산성 Visual Studio 2017를 사용하여 Android, iOS, Windows, Linux, 웹 및 클라우드용 앱을 개발합니다. 빠르게 코딩하고, 간단하게 디버그 및 진단하고, 자주 테스트하며, 안심하고 릴리스하세요. 개발자 고유의 확장을 빌드하여 Visual Studio를 확장하고 사용자 지정할 수도 있습니다. 이 릴리스로 버전 제어를 사용하고, 민첩하게 대처하고, 효율적으로 공동 작업하세요.
 
@@ -36,7 +36,7 @@ Visual Studio의 이전 버전에서 업그레이드하려고 하십니까? Visu
 * **[성능 및 생산성](#performance-and-productivity)**. 새로운 최신 모바일, 클라우드 및 데스크톱 개발 기능에 집중했습니다. 또한 전반적인 취득, 성능 및 일반 개발자 생산성 환경도 향상했습니다. Visual Studio는 더 빨리 시작하고, 더 빨리 응답하며, 이전보다 적은 메모리를 사용합니다.
 * **[Azure로 클라우드 앱 개발](#cloud-app-development-with-azure)**. 기본 제공 Azure 도구 모음을 통해 Microsoft Azure 기반의 클라우드 중심 앱을 쉽게 만들 수 있습니다. Visual Studio를 사용하면 Azure에서 직접 앱과 서비스를 쉽게 구성, 빌드, 디버그, 패키징 및 배포할 수 있습니다.
 * **[Windows 앱 개발](#windows-app-development)**. Visual Studio 2017의 UWP 템플릿을 사용하여 모든 Windows 10 장치 &ndash; PC, 태블릿, 전화, Xbox, HoloLens, Surface Hub 등에 대한 단일 프로젝트를 만듭니다. 그런 다음 앱 패키지를 만들어 Visual Studio 내에서 Microsoft Store에 제출하여 앱을 고객에게 제공합니다.
-* **[모바일 앱 개발](#mobile-app-development)**. Visual Studio 2017에서는 하나의 핵심 코드베이스와 기술 집합을 사용하여 다중 플랫폼 모바일 요구 사항을 통합하는 Xamarin에서 혁신적인 결과를 빠르게 얻을 수 있습니다. 기존 팀, 기술 투자 및 C# 코드와 더불어 모바일로 이동하여 예정보다 빨리 예산 수준 이하의 소비자급 환경을 제공합니다. 사용자의 역량을 강화할 수 있도록 모바일 수명 주기의 각 단계를 모두 가속화하여 세계 최고의 소비자 환경 또는 생산성 앱 포트폴리오를 제공합니다.
+* **[모바일 앱 개발](#mobile-app-development)**. Visual Studio 2017에서는 하나의 핵심 코드베이스와 기술 집합을 사용하여 다중 플랫폼 모바일 요구 사항을 통합하는 Xamarin에서 혁신적인 결과를 빠르게 얻을 수 있습니다. 기존 팀, 기술 투자 및 C# 코드와 더불어 모바일로 이동하여 예정보다 빨리 예산 수준 이하의 소비자급 환경을 제공합니다. 사용자의 역량을 강화할 수 있도록 모바일 수명 주기의 각 단계를 모두 가속화하여 세계 최고의 소비자 환경 또는 생산성 앱 포트폴리오를 제공합니다. **15.8**의 새로운 기능: Hyper-V를 사용하는 모바일 앱 개발자는 항상 최신 Android API를 지원하는 빠른 Android 에뮬레이터에 액세스하고, Google Play 서비스를 즉시 사용하고, 카메라, 지리적 위치, 빠른 부팅을 포함한 모든 기능을 지원할 수 있습니다.
 * **[플랫폼 간 개발](#cross-platform-development)**. 모든 대상 플랫폼에 소프트웨어를 원활하게 제공할 수 있습니다. Redgate 데이터 도구를 통해 DevOps 프로세스를 SQL Server로 확장하고 Visual Studio에서 데이터베이스 배포를 안전하게 자동화할 수 있습니다. 또는 .NET Core를 사용하여 Windows, Linux 및 macOS 운영 체제에서 수정되지 않고 실행되는 앱 및 라이브러리를 작성할 수 있습니다. (그리고 **15.3의 새로운 기능**: .NET Core 2.0 SDK에 대한 side-by-side 지원을 받으세요.)
 * **[게임 개발](#games-development)**. VSTU(Visual Studio Tools for Unity)를 사용하면 Visual Studio를 통해 게임 및 편집기 스크립트를 C#으로 작성한 다음 강력한 디버거를 사용하여 오류를 찾고 수정할 수 있습니다. VSTU의 최신 릴리스에는 Unity의 ShaderLab 셰이더 언어를 위한 구문 색 지정, 향상된 디버거 시각화 및 MonoBehavior 마법사에 대한 코드 생성 기능이 포함되어 있습니다. VSTU는 Unity 프로젝트 파일, 콘솔 메시지 및 Visual Studio에서 게임을 시작하는 기능도 제공하므로 코드를 작성하는 동안 Unity 편집기 전환에 소요되는 시간을 단축할 수 있습니다.
 * **[AI 개발](#ai-development)**. With Visual Studio Tools for AI(**15.5의 새로운 기능**)를 통해 Visual Studio의 생산성 기능을 사용하여 AI 혁신을 가속화할 수 있습니다. 데이터 준비 및 모델 교육 작업을 다양한 계산 대상에 투명하게 제출하는 등의 강력한 실험 기능을 위해 Azure Machine Learning과 완벽하게 통합되는 딥 러닝/AI 솔루션을 빌드, 테스트 및 배포합니다. 또한 Visual Studio Tools for AI는 사용자 지정 메트릭 및 실행 기록 추적을 지원하므로 데이터 과학의 재현성과 감사가 가능합니다.
@@ -134,6 +134,18 @@ Visual Studio Enterprise 2017에서 라이브 단위 테스트는 코딩하는 �
 또한 [Continuous Delivery Tools for Visual Studio(Visual Studio의 지속적인 업데이트 도구)](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 확장의 새로운 기능에 대한 자세한 내용은 [Committing with Confidence: Commit Time Code Quality(정확하게 커밋: 커밋 타임 코드 품질)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) 블로그 게시물을 참조하세요.
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 향상
+
+#### <a name="multi-caret-editing"></a>다중 캐럿 편집
+
+**15.8**의 새로운 기능: 이제 동시에 파일의 여러 위치를 쉽게 편집할 수 있습니다. 파일의 여러 위치에서 삽입 지점 및 선택 영역을 만들어 시작합니다. 그런 다음, 다중 캐럿 편집 기능을 사용하여 동시에 둘 이상의 위치에서 동일하게 편집합니다.
+
+자세한 내용은 [텍스트 찾기 및 바꾸기](finding-and-replacing-text.md) 페이지의 [다중 캐럿 선택 영역](finding-and-replacing-text.md#multi-caret-selection) 섹션을 참조하세요.
+
+#### <a name="keep-keybinding-profiles-consistent"></a>키 바인딩 프로필을 일관되게 유지
+
+**15.8의 새로운 기능**: 새로운 두 키보드 프로필 :Visual Studio Code 및 ReSharper(Visual Studio)을 포함한 도구에서 키 바인딩을 일관적으로 유지할 수 있습니다. 이러한 스키마는 **도구** > **옵션** > **일반** > **키보드** 및 위쪽 드롭다운 메뉴에서 찾을 수 있습니다.
+
+  ![Visual Studio Code 및 ReSharper에 대한 새 키 바인딩 프로필](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
 #### <a name="use-new-refactorings"></a>새 리팩터링 사용
 
@@ -278,6 +290,20 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 **15.4의 새로운 기능**: Xamarin Live를 사용하면 개발자가 iOS 및 Android 장치에서 직접 자신의 앱을 계속해서 배포, 테스트 및 디버그할 수 있습니다. &mdash;앱 스토어 또는 Google Play에서 사용할 수 있는&mdash; Xamarin Live Player를 다운로드한 후 장치를 Visual Studio와 연결하고 모바일 앱을 빌드하는 방법을 혁신적으로 개선할 수 있습니다. 이 기능은 이제 Visual Studio에 포함되었으며 **도구** > **옵션** > **Xamarin** > **기타** > **Xamarin Live Player 사용**으로 이동하여 사용하도록 설정할 수 있습니다.
 
 ![Xamarin Live Player 쌍, 배포 및 라이브 편집 모드의 애니메이션](../ide/media/xamarinliveplayer.gif)
+
+### <a name="support-for-google-android-emulator"></a>Google Android Emulator에 대한 지원
+
+**15.8의 새로운 기능**: Hyper-V를 사용하는 경우 Google의 Android Emulator를 Hyper-V 가상 머신, Docker 도구, HoloLens 에뮬레이터 등 Hyper-V에 기반한 다른 기술과 함께 병렬로 사용할 수 있습니다. (이 기능을 사용하려면 Windows 10 2018년 4월 업데이트 이상이 필요합니다.)
+
+![Hyper-V 기술에서 Google Android Emulator](../ide/media/xamarin-hyperv-android-emulator.png)
+
+#### <a name="xamarinandroid-designer-split-view-editor"></a>Xamarin.Android Designer 분할 보기 편집기
+
+**15.8의 새로기운 능**: Xamarin.Android의 디자이너 환경이 대폭 개선되었습니다. 핵심은 동시에 레이아웃을 만들고, 편집하고, 미리 볼 수 있는 분할 보기 편집기입니다.
+
+![Xamarin.Android Designer 분할 보기 편집기](../ide/media/android-designer-split-view.png)
+
+자세한 내용은 [에뮬레이터 성능에 대한 하드웨어 가속](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview)을 참조하세요.
 
 ### <a name="visual-studio-app-center"></a>Visual Studio 앱 센터
 

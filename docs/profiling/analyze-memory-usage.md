@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 3cee40dd1dab8c3a9d9b57b84e6e299651bc5fc8
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626788"
 ---
 # <a name="analyze-memory-usage"></a>메모리 사용량 분석
 디버거 통합 **메모리 사용량** 진단 도구를 사용하여 메모리 누수 및 비효율적인 메모리를 찾습니다. 메모리 사용량 도구를 통해 관리되는 메모리 및 네이티브 메모리 힙의 *스냅숏* 을 하나 이상 만들 수 있습니다. .NET, 네이티브 또는 혼합 모드(.NET 및 네이티브) 앱의 스냅숏을 수집할 수 있습니다.  
@@ -23,6 +24,8 @@ ms.lasthandoff: 05/17/2018
 -   또한 앱의 스냅숏 두 개를 비교(diff)하여 코드에서 시간에 따라 메모리 사용이 늘어나는 영역을 찾을 수 있습니다.  
 
 자세한 내용은 [메모리 사용 분석](../profiling/memory-usage.md) 자습서를 참조하세요. 디버거를 연결하지 않고 메모리 사용량을 분석하려면 [디버거 없이 메모리 사용](memory-usage-without-debugging2.md)을 참조하세요.
+
+Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
   
 ## <a name="blogs-and-videos"></a>블로그 및 동영상  
 
@@ -36,4 +39,4 @@ ms.lasthandoff: 05/17/2018
 
 ## <a name="see-also"></a>참고 항목
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

@@ -1,6 +1,6 @@
 ---
-title: 텍스트 찾기 및 바꾸기
-ms.date: 05/07/2018
+title: 텍스트 및 다중 캐럿 선택 영역 찾기 및 바꾸기
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -27,22 +27,22 @@ helpviewer_keywords:
 - find and replace
 - find text
 - replace text
-ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
+- multi-caret selection
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106754"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626629"
 ---
 # <a name="find-and-replace-text"></a>텍스트 찾기 및 바꾸기
 
-[찾기 및 바꾸기](#find-and-replace-control) 또는 [파일에서 찾기/바꾸기](#find-in-files-and-replace-in-files)를 사용하여 Visual Studio 편집기에서 텍스트를 찾아 바꿀 수 있습니다.
+[찾기 및 바꾸기](#find-and-replace-control) 또는 [파일에서 찾기/바꾸기](#find-replace-in-files)를 사용하여 Visual Studio 편집기에서 텍스트를 찾아 바꿀 수 있습니다. Visual Studio 2017 버전 15.8의 새로운 기능에서 *[다중 캐럿 선택 영역](#multi-caret-selection)* 을 사용하여 패턴의 *일부* 인스턴스를 찾고 바꿀 수 있습니다.
 
 > [!TIP]
 > 변수 및 메서드 등의 코드 기호의 이름을 바꾸는 경우 찾기 및 바꾸기를 사용하는 것보다 *[리팩터링](../ide/reference/rename.md)* 하는 것이 좋습니다. 리팩터링은 지능형이고 범위를 이해하지만 찾기 및 바꾸기는 모든 항목을 무조건 바꿉니다.
@@ -58,7 +58,7 @@ ms.locfileid: "33106754"
 
 **찾기 및 바꾸기** 컨트롤은 코드 편집기 창의 오른쪽 위 모퉁이에 표시됩니다. **찾기 및 바꾸기** 컨트롤은 현재 문서에서 지정된 검색 문자열이 나타나는 모든 항목을 즉시 강조 표시합니다. 발생 항목 간에 이동하려면 검색 컨트롤에서 **다음 찾기** 단추 또는 **이전 찾기** 단추를 선택합니다.
 
-![찾기 및 바꾸기 컨트롤](media/find-and-replace-box.png)
+![Visual Studio의 찾기 및 바꾸기](media/find-and-replace-box.png)
 
 바꾸기 옵션에 액세스하려면 **찾기** 텍스트 상자 옆의 단추를 선택합니다. 한 번에 하나를 바꾸려면 **바꾸기** 텍스트 상자 옆의 **다음 찾기** 단추를 선택합니다. 모든 일치 항목을 바꾸려면 **모두 바꾸기** 단추를 선택합니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "33106754"
 
 **파일에서 찾기/바꾸기**는 검색 범위를 정의할 수 있다는 점을 제외하고 **찾기 및 바꾸기** 컨트롤과 비슷하게 작동합니다. 편집기에서 현재 열린 파일을 검색할 수 있을 뿐만 아니라 모든 열린 문서, 전체 솔루션, 현재 프로젝트 및 선택한 폴더 집합을 검색할 수도 있습니다. 파일 이름 확장명을 기준으로 검색할 수도 있습니다. **파일에서 찾기/바꾸기** 대화 상자에 액세스하려면 **편집** 메뉴에서 **찾기 및 바꾸기**를 선택하거나 **Ctrl+Shift+F**를 누릅니다.
 
-![파일에서 찾기 대화 상자](media/find-in-files-box.png)
+![Visual Studio의 파일에서 찾기](media/find-in-files-box.png)
 
 ### <a name="find-results"></a>찾기 결과
 
@@ -90,6 +90,41 @@ ms.locfileid: "33106754"
 ### <a name="create-custom-component-sets"></a>사용자 지정 구성 요소 집합 만들기
 
 **찾는 위치** 상자 옆에 있는 **사용자 지정 구성 요소 집합 편집** 단추를 선택하여 구성 요소 집합을 검색 범위로 정의할 수 있습니다. 설치된 .NET 또는 COM 구성 요소, 솔루션에 포함된 Visual Studio 프로젝트, 혹은 어셈블리나 형식 라이브러리(*.dll*, *.tlb*, *.olb*, *.exe* 또는 *.ocx*)를 지정할 수 있습니다. 참조를 검색하려면 **참조에서 찾기** 상자를 선택합니다.
+
+## <a name="multi-caret-selection"></a>다중 캐럿 선택 영역
+
+**Visual Studio 2017 버전 15.8의 새로운 기능**
+
+*다중 캐럿 선택 영역*을 사용하여 동시에 둘 이상의 위치에서 동일하게 편집합니다. 예를 들어 동시에 동일한 텍스트를 삽입하거나 여러 위치에서 기존 텍스트를 수정할 수 있습니다.
+
+다음 스크린샷에서는 세 가지 위치에서 `-0000`을 선택합니다. 사용자가 **삭제**를 누른 경우 모든 세 가지 선택 항목이 삭제됩니다.
+
+![Visual Studio의 XML 파일에서 다중 캐럿 선택 영역](media/multi-caret-selection.png)
+
+여러 캐럿을 선택하려면 일반적으로 첫 번째 텍스트 선택 영역을 클릭하거나 만든 다음, 각 추가 위치에서 텍스트를 클릭하거나 선택하는 동안 **Alt**를 누릅니다. 일치하는 텍스트를 추가 선택 영역으로 자동으로 추가하거나 텍스트 상자를 선택하여 각 줄에서 동일하게 편집할 수도 있습니다.
+
+> [!TIP]
+> **도구** > **옵션**에서 마우스 클릭 정의로 이동에 대해 **Alt**를 보조 키로 선택한 경우 다중 캐럿 선택 영역을 사용하지 않습니다.
+
+### <a name="commands"></a>명령
+
+다중 캐럿 선택 영역 동작에 대해 다음 키 및 작업을 사용합니다.
+
+|바로 가기|작업|
+|-|-|
+|**Ctrl**+**Alt** + 클릭|보조 캐럿 추가|
+|**Ctrl**+**Alt** + 두 번 클릭|보조 단어 선택 영역 추가|
+|**Ctrl**+**Alt** + 클릭 + 끌어오기|보조 선택 영역 추가|
+|**Shift**+**Alt**+**.**|선택 항목으로 일치하는 다음 텍스트 추가|
+|**Ctrl**+**Shift**+**Alt**+**,**|선택 항목으로 일치하는 모든 텍스트 추가|
+|**Shift**+**Alt**+**,**|마지막으로 선택한 발생 항목 제거|
+|**Ctrl**+**Shift**+**Alt**+**.**|일치하는 다음 발생 항목 건너뛰기|
+|**Alt** + 클릭|상자 선택 영역 추가|
+|**Esc** 또는 클릭|모든 선택 영역 지우기|
+
+명령 중 일부는 **다중 캐럿** 아래의 **편집** 메뉴에서 사용할 수도 있습니다.
+
+![Visual Studio에서 다중 캐럿 플라이아웃 메뉴](media/edit-menu-multiple-carets.png)
 
 ## <a name="see-also"></a>참고 항목
 

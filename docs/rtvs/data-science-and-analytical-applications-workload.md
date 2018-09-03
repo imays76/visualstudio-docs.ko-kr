@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecbd5d1fce685243d889b39017efed24ca4492a0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626868"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio에서 데이터 과학 지원 설치
 
@@ -30,7 +31,7 @@ Visual Studio 설치 관리자를 통해 선택하고 설치한 데이터 과학
 R 및 Python은 데이터 과학에 사용되는 두 가지 기본 스크립팅 언어입니다. 두 언어는 배우기 쉬우며 풍부한 패키지의 에코시스템에서 지원됩니다. 이러한 패키지는 데이터 취득, 정리, 모델 학습, 배포 및 그리기와 같은 다양한 범위의 시나리오를 해결합니다. 또한 F#은 다양한 데이터 처리 작업에 적합한 강력한 기능 우선 .NET 언어입니다.
 
 <!--Note link on the image because this one is large -->
-[![R, Python 및 F#을 사용한 Visual Studio의 스크린샷](media/data-science-workload-screens.png)](media/data-science-workload-screens.png)
+[![R, Python 및 F#을 사용한 Visual Studio의 스크린샷](media/data-science-workload-screens.png)](media/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>워크로드 옵션
 
@@ -49,9 +50,9 @@ R 및 Python은 데이터 과학에 사용되는 두 가지 기본 스크립팅 
 
 F#이 다양한 다른 워크로드에 포함되어 있고 Python에 고유한 워크로드가 있더라도 데이터 과학 및 분석 응용 프로그램은 현재 R을 포함하는 유일한 워크로드입니다. 하지만 워크로드에 독립적인 R도 설치할 수 있습니다. 설치 관리자의 **개별 구성 요소** 탭에서 다음 R 옵션을 선택합니다.
 
-- **개발 작업 > R 언어 지원**
-- **개발 작업 > Microsoft R Client**
-- **컴파일러, 빌드 도구 및 런타임 > R 개발 도구에 대한 런타임 지원**
+- **개발 작업** > **R 언어 지원**
+- **개발 작업** > **Microsoft R Client**
+- **컴파일러, 빌드 도구 및 런타임** > **R 개발 도구에 대한 런타임 지원**
 
 ## <a name="sql-server-integration"></a>SQL Server 통합
 
@@ -75,7 +76,7 @@ SQL Server 통합을 모두 활용하려면 Visual Studio 설치 관리자를 �
 
 추가 정보
 
-- [SQL Server 및 R 사용](../rtvs/sql-server.md)
+- [SQL Server 및 R 사용](integrating-sql-server-with-r.md)
 - [SQL Server 2016에서 R을 사용하여 데이터베이스 내 고급 분석(블로그)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
 - [SQL Server 2017의 Python: 향상된 데이터베이스 내 기계 학습(블로그)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
@@ -88,4 +89,4 @@ Python용 Azure SDK를 사용하면 Windows, Mac 및 Linux에서 실행되는 �
 Azure Notebooks(현재 미리 보기 상태)는 Microsoft Azure의 클라우드에서 실행되는 Jupyter 노트북에 대한 무료 온라인 액세스를 제공합니다. 서비스는 시작하기 위해 Python, R 및 F#에서 샘플 전자 필기장을 포함합니다. [notebooks.azure.com](https://notebooks.azure.com/)을 방문하세요.
 
 <!--Note link on the image because this one is large -->
-[![R 샘플에 대한 소개가 있는 Azure Notebooks의 스크린샷](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png)
+[![R 샘플에 대한 소개가 있는 Azure Notebooks 스크린샷](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png#lightbox)

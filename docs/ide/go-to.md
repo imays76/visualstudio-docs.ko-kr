@@ -1,10 +1,9 @@
 ---
-title: 이동 명령을 사용하여 코드 찾기
-ms.date: 09/26/2017
+title: 파일로 이동, 기호로 이동, 줄로 이동
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
 - code editor, go to line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aca1106bb6dfa3838890e4ae5c1886875e3e357
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447195"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626835"
 ---
 # <a name="find-code-using-go-to-commands"></a>이동 명령을 사용하여 코드 찾기
 
@@ -56,12 +55,13 @@ Visual Studio의 **이동** 명령은 지정한 항목을 찾기 쉽도록 포�
 특정 형식의 코드 요소로 검색을 제한하려면 검색 상자에서 접두사를 지정하거나 다섯 개의 필터 아이콘 중 하나를 선택합니다.
 
 접두사 | 아이콘 | 바로 가기 | 설명
-:----: | ---- | -------- | ---
-\#     | ![기호 아이콘](media/gotoall_symbolicon.png) | **Ctrl**+**1**, **Ctrl**+**S** | 지정된 기호로 이동합니다.
-f      | ![파일 아이콘](media/gotoall_fileicon.png)     | **Ctrl**+**1**, **Ctrl**+**F** | 지정된 파일로 이동합니다.
-분      | ![멤버 아이콘](media/gotoall_membericon.png) | **Ctrl**+**1**, **Ctrl**+**M** | 지정된 멤버로 이동합니다.
-t      | ![형식 아이콘](media/gotoall_typeicon.png)     | **Ctrl**+**1**, **Ctrl**+**T** | 지정된 형식으로 이동합니다.
-:      | ![줄 아이콘](media/gotoall_lineicon.png)     | **Ctrl**+**G**         | 지정된 줄 번호로 이동합니다.
+:-: | - | - | -
+:| ![줄 아이콘](media/gotoall-line-icon.png) | **Ctrl**+**G**         | 지정된 줄 번호로 이동합니다.
+f| ![파일 아이콘](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | 지정된 파일로 이동합니다.
+r| ![최근에 사용한 파일 아이콘](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | 지정되고 최근에 방문한 파일로 이동
+t| ![형식 아이콘](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | 지정된 형식으로 이동합니다.
+분| ![멤버 아이콘](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | 지정된 멤버로 이동합니다.
+\#| ![기호 아이콘](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | 지정된 기호로 이동합니다.
 
 ### <a name="filter-to-a-specific-location"></a>특정 위치로 필터링합니다.
 

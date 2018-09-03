@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4e8bacb4d8188667822cd060166f217ba05df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626864"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>빠른 시작: 프로파일링 도구 살펴보기
 
@@ -31,11 +32,13 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 
 ![진단 도구 요약 뷰](../profiling/media/prof-tour-cpu-and-memory-graph.gif "진단 도구 요약")
 
-기본적으로 **진단 도구** 창을 사용하여 앱을 프로파일링하지만 릴리스 빌드의 경우 앱에 대한 post-mortem 분석을 대신 수행할 수도 있습니다. 다른 방법에 대한 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 다양한 앱 유형에 대한 프로파일링 도구를 보려면 [사용해야 하는 도구](#tool_support_info)를 참조하세요.
+기본적으로 **진단 도구** 창을 사용하여 앱을 프로파일링하지만 릴리스 빌드의 경우 앱에 대한 post-mortem 분석을 대신 수행할 수도 있습니다. 다른 방법에 대한 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 다양한 앱 유형에 대한 프로파일링 도구를 보려면 [사용해야 하는 도구](#which-tool-should-i-use)를 참조하세요.
+
+> ![NOTE] Windows 7 이상에서 사후 분석 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
 
 ## <a name="analyze-cpu-usage"></a>CPU 사용 분석
 
-CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니다. 이 도구는 앱에서 사용 중인 CPU 리소스에 대해 자세히 알려줍니다. CPU 사용 도구에 대한 세부 연습은 [초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)을 참조하세요.
+CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니다. 이 도구는 앱에서 사용 중인 CPU 리소스에 대해 자세히 알려줍니다. CPU 사용 도구에 대한 자세한 연습은 [초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)을 참조하세요.
 
 진단 도구의 **요약** 보기에서 **CPU 프로파일링 사용**을 선택합니다(디버깅 세션에 있어야 함).
 
@@ -51,9 +54,9 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 
 ![진단 도구 호출자 호출 수신자 "나비" 뷰](../profiling/media/prof-tour-cpu-usage-caller-callee.png "진단 도구 호출자 호출 수신자 뷰")
 
-## <a name="analyze-memory-usage"></a>메모리 사용 분석
+## <a name="analyze-memory-usage"></a>메모리 사용량 분석
 
-또한 [진단 도구] 창을 사용하여 앱의 메모리 사용량을 평가할 수 있습니다. 예를 들어 힙에 있는 개체의 수와 크기를 확인할 수 있습니다. 메모리 분석에 대한 자세한 지침은 [메모리 사용량 분석](../profiling/memory-usage.md)을 참조하세요.
+또한 **진단 도구** 창을 사용하여 앱의 메모리 사용량을 평가할 수 있습니다. 예를 들어 힙에 있는 개체의 수와 크기를 확인할 수 있습니다. 메모리 분석에 대한 자세한 지침은 [메모리 사용량 분석](../profiling/memory-usage.md)을 참조하세요.
 
 메모리 사용량을 분석하려면 디버그하는 동안 메모리 스냅숏을 하나 이상 만들어야 합니다. 메모리를 분석하는 가장 좋은 방법은 스냅숏을 두 개(의심되는 메모리 문제가 발생하기 직전과 직후) 만드는 것입니다. 그런 다음 두 스냅숏의 차이점을 보고 변경 내용을 정확히 확인할 수 있습니다.
 
@@ -80,17 +83,17 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI 성능 및 접근성 이벤트 검사(UWP)
 
-UWP 앱의 [진단 도구] 창에서 **UI 분석**을 사용하도록 설정할 수 있습니다. 이 도구는 디버그하는 동안 일반 성능 또는 접근성 문제를 검색하여 **이벤트** 뷰에 표시합니다. 이벤트 설명에는 문제를 해결하는 데 유용한 정보가 제공됩니다.
+UWP 앱의 **진단 도구** 창에서 **UI 분석**을 사용하도록 설정할 수 있습니다. 이 도구는 디버그하는 동안 일반 성능 또는 접근성 문제를 검색하여 **이벤트** 뷰에 표시합니다. 이벤트 설명에는 문제를 해결하는 데 유용한 정보가 제공됩니다.
 
-![진단 도구에서 UI 분석 이벤트 보기](../profiling/media/prof-tour-ui-analysis.png "진단 도구 UI 분석 이벤트 보기")
+![진단 도구에서 UI 분석 이벤트 보기](../profiling/media/prof-tour-ui-analysis.png "진단 도구 보기 UI 분석 이벤트")
 
-## <a name="profile-release-builds-without-the-debugger"></a>디버거 없이 릴리스 빌드 프로파일링
+## <a name="post_mortem"></a> 디버거 없이 릴리스 빌드 프로파일링
 
-CPU 사용량 및 메모리 사용량과 같은 프로파일링 도구를 디버거와 함께 사용하거나(이전 섹션 참조) 성능 프로파일러를 통해 프로파일링 도구를 실행하여 **릴리스** 빌드에 대한 분석을 제공할 수 있습니다. 성능 프로파일러에서 앱이 실행 중인 동안 진단 정보를 수집한 다음 앱이 중지된 이후에 수집된 정보를 검사할 수 있습니다. 다른 방법에 대한 자세한 내용을 보려면 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
+CPU 사용량 및 메모리 사용량과 같은 프로파일링 도구를 디버거와 함께 사용하거나(이전 섹션 참조) 성능 프로파일러를 통해 프로파일링 도구 사후 분석을 실행하여 **릴리스** 빌드에 대한 분석을 제공할 수 있습니다. 성능 프로파일러에서 앱이 실행 중인 동안 진단 정보를 수집한 다음 앱이 중지된 이후에 수집된 정보를 검사할 수 있습니다. 다른 방법에 대한 자세한 내용을 보려면 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
 
 ![성능 프로파일러](../profiling/media/prof-tour-performance-profiler.png "성능 프로파일러")
 
-**디버그/성능 프로파일러**를 선택하여 성능 프로파일러를 엽니다.
+**디버그** > **성능 프로파일러**를 선택하여 성능 프로파일러를 엽니다.
 
 창에서 여러 프로파일링 도구를 선택할 수 있는 경우도 있습니다. CPU 사용량과 같은 도구는 분석에 유용한 보조 데이터를 제공할 수 있습니다.
 
@@ -146,7 +149,7 @@ CPU 사용량 또는 메모리 사용량 도구에 현재 표시되지 않는 �
 
 ![성능 탐색기 도구](../profiling/media/prof-tour-performance-explorer.png "성능 탐색기")
 
-## <a name="tool_support_info"></a>어떤 도구를 사용해야 합니까?  
+## <a name="which-tool-should-i-use"></a>어떤 도구를 사용해야 하나요?  
 
 다음 테이블에는 Visual Studio가 제안하는 다양한 도구 및 그와 함께 사용할 수 있는 다양한 프로젝트 형식이 나열되어 있습니다.
   
@@ -162,9 +165,6 @@ CPU 사용량 또는 메모리 사용량 도구에 현재 표시되지 않는 �
 |[네트워크 사용량](../profiling/network-usage.md)|아니요|예|아니요|
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|아니요|HTML은 예, XAML은 no|아니요| 
 |[JavaScript 메모리](../profiling/javascript-memory.md)|아니요|HTML은 예, XAML은 no|아니요|
-
-> [!NOTE]
-> .NET Core 및 ASP.NET Core에 대한 CPU 사용량 도구는 현재 휴대용 PBD를 통해 정확한 결과를 제공하지 않습니다. 대신 전체 PDB를 사용합니다.
 
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)
