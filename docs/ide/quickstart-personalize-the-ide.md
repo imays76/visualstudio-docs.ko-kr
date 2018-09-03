@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512563"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627261"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>빠른 시작: Visual Studio IDE 및 편집기 개인 설정
 
-이 5~10분이 걸리는 빠른 시작에서는 텍스트 편집기에서 Visual Studio 색 테마 및 두 개의 텍스트 색을 사용자 지정합니다.
+이 5~10분이 걸리는 빠른 시작에서는 어두운 테마를 선택하여 Visual Studio 색 테마를 사용자 지정합니다. 또한 텍스트 편집기에서 두 가지 형식의 텍스트에 대한 색을 사용자 지정합니다.
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
@@ -97,19 +97,7 @@ Visual Studio 2017의 기본 색 테마는 **파랑**이라고 합니다. **어�
 
 Visual Studio에서 색을 사용자 지정하는 몇 가지 방법을 살펴보았습니다. **옵션** 대화 상자에서 다른 사용자 지정 옵션도 탐색하여 자신에게 맞게 Visual Studio를 설정하시기 바랍니다.
 
-## <a name="next-steps"></a>다음 단계
-
-> [!div class="nextstepaction"]
-> [빠른 시작: 먼저 Visual Studio IDE 살펴보기](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [빠른 시작: 편집기에서 코드 작성](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [빠른 시작: 프로젝트 및 솔루션](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)
 - [편집기 사용자 지정](../ide/customizing-the-editor.md)
 - [Visual Studio IDE 개요](../ide/visual-studio-ide.md)

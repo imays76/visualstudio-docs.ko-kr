@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5647bbc6aa520fdf5427b61f53a54c28b9a0a48d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381174"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626900"
 ---
-# <a name="visual-studio-overview"></a>Visual Studio 개요
+# <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE 시작
 
 Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio에서는 대부분의 IDE가 제공하는 표준 편집기 및 디버거를 능가하여 컴파일러, 코드 완성 도구, 그래픽 디자이너 및 소프트웨어 개발 프로세스를 간편하게 하는 많은 기능을 포함합니다.
 
 Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2017과 동일한 기능이 많이 있으며 플랫폼 간 및 모바일 앱 개발을 위한 최적화되어 있습니다.
 
-이 문서에서는 Windows용 Visual Studio 2017에 대해 중점적으로 설명합니다. IDE의 기본 기능을 소개합니다. 간단한 프로젝트 만들기, 코딩 도구로 [IntelliSense](using-intellisense.md) 사용, 앱을 디버깅하여 프로그램 실행 중 변수 값을 확인하는 방법 등 Visual Studio로 수행할 수 있는 몇 가지 작업을 살펴보겠습니다. 또한 다양한 도구 창을 살펴보겠습니다.
+이 개요 아티클에서는 Windows용 Visual Studio 2017에 대해 중점적으로 설명합니다. IDE의 기본 기능을 소개합니다. 간단한 프로젝트 만들기, 코딩 도구로 [IntelliSense](using-intellisense.md) 사용, 앱을 디버깅하여 프로그램 실행 중 변수 값을 확인하는 방법 등 Visual Studio로 수행할 수 있는 몇 가지 작업을 살펴보겠습니다. 또한 다양한 도구 창을 살펴보겠습니다.
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE 설치
 
@@ -64,7 +64,7 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
 - [IntelliSense](../ide/using-intellisense.md)
 
-   IntelliSense는 편집기에서 직접 코드에 대한 정보를 표시하고 경우에 따라 약간의 코드를 자동으로 작성하는 기능 집합에 대한 포괄적인 용어입니다. IntelliSense는 다른 곳에서 형식 정보를 조회할 필요가 없도록 기본 설명서를 편집기에 인라인으로 포함하는 것과 같습니다. IntelliSense 기능은 언어에 따라 달라집니다. 자세한 내용은 [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) 및 [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)를 참조하세요. 다음 그림에서는 IntelliSense에서 형식에 대한 멤버 목록을 표시하는 방법을 보여 줍니다.
+   IntelliSense는 편집기에서 직접 코드에 대한 정보를 표시하고 경우에 따라 약간의 코드를 작성하는 기능 집합에 대한 용어입니다. IntelliSense는 다른 곳에서 형식 정보를 조회할 필요가 없도록 기본 설명서를 편집기에 인라인으로 포함하는 것과 같습니다. IntelliSense 기능은 언어에 따라 달라집니다. 자세한 내용은 [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) 및 [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)를 참조하세요. 다음 그림에서는 IntelliSense에서 형식에 대한 멤버 목록을 표시하는 방법을 보여 줍니다.
 
    ![Visual Studio 멤버 목록](../ide/media/intellisense-list-members.png)
 
@@ -256,21 +256,32 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 
    전체 IDE의 색 테마가 **어둡게**로 변경됩니다.
 
-   ![어두운 테마의 VS](media/quickstart-personalize-dark-theme.png)
+   ![어두운 테마의 Visual Studio](media/quickstart-personalize-dark-theme.png)
 
 IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="learn-more"></a>자세한 정보
+## <a name="next-steps"></a>다음 단계
 
-Android 또는 iOS 휴대폰용 앱을 만들고 싶으십니까? 3D 게임 또는 클라우드 기반 앱은 어떻습니까? Visual Studio의 이러한 기능 및 기타 기능에 대해 배우려면 [Visual Studio 2017의 기능](../ide/advanced-feature-overview.md)을 참조하세요.
+이러한 소개 아티클 중 하나와 함께 다음을 수행하여 Visual Studio를 추가로 탐색합니다.
 
-이제 코딩을 시작할 준비가 되었으면 [첫 번째 ASP.NET Core 웹앱 만들기](quickstart-aspnet-core.md)와 같은 목차에서 빠른 시작 항목 중 하나를 선택합니다.
+- [코드 편집기를 사용하는 방법 알아보기](quickstart-editor.md)에서 코드 편집기에 익숙해집니다.
 
-[Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)에서 제공되는 무료 Visual Studio 과정을 확인할 수도 있습니다.
+- [프로젝트 및 솔루션에 대해 알아보기](quickstart-projects-solutions.md)에서 Visual Studio가 코드를 구성하는 방법에 대해 알아봅니다.
+
+자세한 코딩을 살펴보려는 경우 다음과 같은 언어별 빠른 시작 중 하나를 진행하는 것이 좋습니다.
+
+- [Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](quickstart-python.md)
+
+- [Visual Studio를 사용하여 첫 번째 C# 웹앱 만들기](quickstart-aspnet-core.md)
+
+- [Visual Studio를 사용하여 첫 번째 Node.js 웹앱 만들기](quickstart-nodejs.md)
+
+- [Visual Studio에서 C++ 시작](getting-started-with-cpp-in-visual-studio.md)
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 추가 기능](../ide/advanced-feature-overview.md)
-* [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-* [Visual Studio 블로그](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- [Visual Studio 추가 기능](../ide/advanced-feature-overview.md)을 검색하세요.
+- [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)을 방문하세요.
+- [Visual Studio 블로그](https://blogs.msdn.microsoft.com/visualstudio/)를 참고하세요.
+- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)에서 무료 Visual Studio 과정을 체크 아웃하세요.
+- [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)에서 Visual Studio를 다운로드하세요.

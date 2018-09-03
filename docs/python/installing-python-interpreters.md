@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92097e70b026a23062f7a67ff521d60312096d5c
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 72cb3872462d4e70cdab7510385a5e903af3f7f5
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341848"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626866"
 ---
 # <a name="install-python-interpreters"></a>Python 인터프리터 설치
 
@@ -34,7 +34,7 @@ Visual Studio는 [**Python 환경**](managing-python-environments-in-visual-stud
 
 | 인터프리터 | 설명 |
 | --- | --- |
-| [CPython](https://www.python.org/) | 가장 널리 사용되는 “기본” 인터프리터로, 32비트 및 64비트 버전으로 사용 가능합니다(32비트 권장). 최신 언어 기능, 최대 Python 패키지 호환성, 완전한 디버깅 지원 및 [IPython](http://ipython.org/)과 상호 interop을 포함합니다. [Python 2 또는 Python 3을 사용해야 하나요?](http://wiki.python.org/moin/Python2orPython3)도 참조하세요. Visual Studio 2015 이전 버전은 Python 3.6을 지원하지 않으며 **Python 버전 3.6이 지원되지 않음** 오류가 표시될 수 있습니다. 대신 Python 3.5 또는 이전을 사용합니다. |
+| [CPython](https://www.python.org/) | 가장 널리 사용되는 “기본” 인터프리터로, 32비트 및 64비트 버전으로 사용 가능합니다(32비트 권장). 최신 언어 기능, 최대 Python 패키지 호환성, 완전한 디버깅 지원 및 [IPython](http://ipython.org/)과 상호 interop을 포함합니다. [Python 2 또는 Python 3을 사용해야 하나요?](http://wiki.python.org/moin/Python2orPython3)도 참조하세요. Visual Studio 2015 이전 버전은 Python 3.6+를 지원하지 않으며 **Python 버전 3.6이 지원되지 않음**과 같은 오류를 표시할 수 있습니다. 대신 Python 3.5 또는 이전을 사용합니다. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python의 .NET 구현으로, 32비트 및 64비트 버전으로 사용 가능하며 C#/F#/Visual Basic interop, .NET API에 대한 액세스, 표준 Python 디버깅(그러나 C++ 혼합 모드 디버깅은 제외) 및 혼합 IronPython/C# 디버깅을 제공합니다. 하지만 IronPython에서는 가상 환경을 지원하지 않습니다. |
 | [Anaconda](https://www.continuum.io) | Python에서 제공하는 개방형 데이터 과학 플랫폼으로, 최신 버전의 CPython과 설치하기 어려운 대부분의 패키지를 포함합니다. 달리 결정할 수 없는 경우 권장됩니다. |
 | [PyPy](http://www.pypy.org/) | Python의 고성능 추적 JIT 구현으로, 장기적으로 실행되는 프로그램과 성능 문제를 확인했으나 다른 해결 방법을 찾을 수 없는 상황에 적절합니다. Visual Studio에서 작동하지만 고급 디버깅 기능은 제한적으로 지원됩니다. |

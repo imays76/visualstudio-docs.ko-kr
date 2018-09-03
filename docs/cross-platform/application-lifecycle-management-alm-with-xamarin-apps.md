@@ -1,7 +1,6 @@
 ---
 title: ALM(Application Lifecycle Management) 및 Xamarin 앱 | Microsoft 문서
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/21/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
@@ -10,24 +9,22 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0cce9882add1443c2d9187d65b26a25081aac75b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231858"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634943"
 ---
-# <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>ALM(Application Lifecycle Management) 및 Xamarin 앱
+# <a name="devops-with-xamarin-apps"></a>Xamarin 앱을 사용한 DevOps
 
 Xamarin을 통해 C#, .NET 및 Visual Studio를 사용하여 Android, iOS 및 Windows를 대상으로 하는 플랫폼 간 모바일 앱을 빌드할 수 있습니다. Xamarin을 통해 많은 양의 코드를 플랫폼 간에 공유할 수 있으므로 일부 코드만 플랫폼별로 작성하면 됩니다. Xamarin 자체에 대한 자세한 내용은 [Visual Studio 및 Xamarin](../cross-platform/visual-studio-and-xamarin.md)을 참조하세요.
 
-최신 플랫폼용 앱을 개발하려면 코드 작성 이외에도 많은 작업을 수행해야 합니다. DevOps(개발+운영)라는 이러한 활동은 앱의 전체 수명 주기에 걸쳐 있으며 민첩한 작업 계획 및 추적, 코드 디자인 및 구현, 소스 코드 리포지토리 관리, 빌드 실행, 연속 통합 및 배포 관리, 테스트(단위 테스트 및 UI 테스트 포함), 개발 및 프로덕션 환경에서 다양한 형태의 진단 실행, 원격 분석 및 분석을 통해 실시간으로 앱 성능과 사용자 동작 모니터링을 포함합니다.
+최신 플랫폼용 앱을 개발하려면 코드 작성 이외에도 많은 작업을 수행해야 합니다. DevOps(개발+운영)라는 이러한 작업은 앱의 전체 수명 주기에 걸쳐 있으며, 작업 계획 및 추적, 코드 디자인 및 구현, 소스 코드 리포지토리 관리, 빌드 실행, 연속 통합 및 배포 관리, 테스트(단위 테스트 및 UI 테스트 포함), 개발 및 프로덕션 환경에서 다양한 형태의 진단 실행, 원격 분석 및 분석을 통해 실시간으로 앱 성능과 사용자 동작 모니터링하는 작업을 포함합니다.
 
-Visual Studio Team Services 및 Team Foundation Server와 더불어 Visual Studio는 다양한 DevOps 기능(애플리케이션 수명 주기 관리 또는 ALM이라고도 함)을 제공합니다. 이 중에서 많은 기능을 플랫폼 간 프로젝트에 전체적으로 적용할 수 있습니다.
+Visual Studio Team Services 및 Team Foundation Server와 함께 Visual Studio는 다양한 DevOps 기능을 제공합니다. 이 중에서 많은 기능을 플랫폼 간 프로젝트에 전체적으로 적용할 수 있습니다. Xamarin 앱이 일부 DevOps 도구를 빌드하는 C# 및 .NET으로 빌드되기 때문에 특히 그렇습니다. 기타 도구는 빌드 및 런타임 환경과 긴밀히 통합되어야 합니다. Xamarin 앱은 Windows 이외의 플랫폼에서 실행되며 .NET의 모노 구현을 사용하기 때문에 Xamarin은 특정 요구를 충족하는 특수 도구를 제공합니다.
 
-Xamarin 앱은 일부 ALM 도구를 빌드하는 C# 및 .NET으로 빌드되기 때문에 특히 그렇습니다. 기타 도구는 빌드 및 런타임 환경과 긴밀히 통합되어야 합니다. Xamarin 앱은 Windows 이외의 플랫폼에서 실행되며 .NET의 모노 구현을 사용하기 때문에 Xamarin은 특정 요구를 충족하는 특수 도구를 제공합니다.
-
-아래 표에서는 Xamarin 프로젝트에서 제대로 작동하는 Visual Studio ALM 기능 및 제한 사항이 있는 Visual Studio ALM 기능을 식별합니다. 기능 자체에 대한 자세한 내용은 연결된 설명서를 참조하세요.
+다음 표에서는 Xamarin 프로젝트에서 제대로 작동하는 Visual Studio의 DevOps 기능 및 제한 사항이 있는 Visual Studio의 DevOps 기능을 식별합니다. 기능 자체에 대한 자세한 내용은 연결된 설명서를 참조하세요.
 
 ## <a name="agile-tools"></a>Agile 도구
 

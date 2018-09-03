@@ -1,7 +1,7 @@
 ---
 title: 자습서 - Visual Studio의 Django 알아보기, 2단계
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, 앱을 만들고 보기 및 템플릿을 사용하는 단계를 구체적으로 설명합니다.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388256"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626871"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Django 앱 만들기
 
@@ -52,7 +52,7 @@ Django 앱은 일반적으로 표준 파일 집합으로 시작합니다. Visual
 | --- | --- |
 | **\_\_init\_\_.py** | 앱을 패키지로 식별하는 파일입니다. |
 | **migrations** | Django가 모델의 변경 내용에 맞게 데이터베이스를 업데이트하는 스크립트를 저장하는 폴더입니다. Django의 마이그레이션 도구는 현재 모델과 일치하도록 이전 버전의 데이터베이스에 필요한 변경 내용을 적용합니다. 마이그레이션을 사용하여 모델에 초점을 맞추고 Django에서 기본 데이터베이스 스키마를 처리하도록 합니다. 마이그레이션은 6단계에서 설명합니다. 지금 폴더에는 폴더가 고유한 Python 패키지를 정의한다고 나타내는 *\_\_init\_\_.py* 파일만 포함됩니다. |
-| **templates** | 단일 파일 *index.html*을 포함하는 Django 페이지 템플릿의 폴더입니다. 템플릿은 보기에서 페이지를 동적으로 렌더링하기 위해 정보를 추가할 수 있는 HTML의 블록입니다. *index.html*의 `{{ content }}`와 같은 페이지 템플릿 "변수"는 이 아티클의 뒷부분(2단계)에서 설명하는 동적 값의 자리 표시자입니다. 일반적으로 Django 앱은 앱 이름과 일치하는 하위 폴더에 템플릿을 저장하여 해당 템플릿에 대한 네임스페이스를 만듭니다. |
+| **templates** | 앱 이름과 일치하는 폴더 내에서 단일 파일 *index.html*을 포함하는 Django 페이지 템플릿의 폴더입니다. (Visual Studio 2017 15.7 이전 버전에서 파일은 *템플릿* 바로 아래에 포함되고 2-4단계에서는 사용자가 하위 폴더를 만들도록 지시합니다.) 템플릿은 보기에서 페이지를 동적으로 렌더링하기 위해 정보를 추가할 수 있는 HTML의 블록입니다. *index.html*의 `{{ content }}`와 같은 페이지 템플릿 "변수"는 이 아티클의 뒷부분(2단계)에서 설명하는 동적 값의 자리 표시자입니다. 일반적으로 Django 앱은 앱 이름과 일치하는 하위 폴더에 템플릿을 저장하여 해당 템플릿에 대한 네임스페이스를 만듭니다. |
 | **admin.py** | 데이터베이스의 데이터를 보고 편집하는 데 사용되는 앱의 관리 인터페이스(6단계 참조)를 확장하는 Python 파일입니다. 처음에는 이 파일에 `from django.contrib import admin` 문만 포함되어 있습니다. 기본적으로 Django에는 Django 프로젝트의 *settings.py* 파일에 있는 항목을 통해 표준 관리 인터페이스가 포함됩니다. 이 인터페이스는 *urls.py*에 있는 기존 항목의 주석 처리를 제거하여 설정할 수 있습니다. |
 | **apps.py** | 앱에 대한 구성 클래스를 정의하는 Python 파일입니다(이 표 다음의 아래 참조). |
 | **models.py** | 모델은 보기가 앱의 기본 데이터베이스와 상호 작용하는 데 사용되는 데이터 개체로, 함수로 식별됩니다(6단계 참조). Django는 앱이 세부 정보에 주의를 기울일 필요가 없도록 데이터베이스 연결 계층을 제공합니다. *models.py* 파일은 모델을 만들 기본 위치이며, 처음에는 `from django.db import models` 문만 포함되어 있습니다. |
@@ -149,7 +149,7 @@ def index(request):
 프로젝트를 다시 실행하여 “**Hello Django!** on Monday, 16 April, 2018 at 16:28:10”과 같은 메시지를 확인합니다. 페이지를 새로 고쳐 시간을 업데이트하고 각 요청과 함께 콘텐츠가 생성되는지 확인합니다. 완료되면 서버를 중지합니다.
 
 > [!Tip]
-> 프로젝트를 중지했다가 다시 시작하는 바로 가기는 **디버그** > **다시 시작** 메뉴 명령(**Ctrl**+**Shift**+**F5**)이나 디버깅 도구 모음의 다시 시작 단추를 사용하는 것입니다.
+> 프로젝트를 중지했다가 다시 시작하는 바로 가기는 **디버그** > **다시 시작** 메뉴 명령(**Ctrl**+**Shift**+**F5**)이나 디버깅 도구 모음의 **다시 시작** 단추를 사용하는 것입니다.
 >
 > ![Visual Studio 디버깅 도구 모음의 다시 시작 단추](media/debugging-restart-toolbar-button.png)
 
@@ -176,7 +176,7 @@ Django 페이지 템플릿은 `{{ content }}`에서처럼 `{{` 및 `}}`로 표�
     'APP_DIRS': True,
     ```
 
-1. *HelloDjangoApp* 폴더에서 *templates/index.html* 페이지 템플릿 파일을 열어 하나의 변수 `{{ content }}`가 포함되어 있는지 확인합니다.
+1. *HelloDjangoApp* 폴더에서 *templates/HelloDjangoApp/index.html* 페이지 템플릿 파일(또는 VS 2017 15.7 이전에서 *templates/index.html*)을 열어 하나의 변수인 `{{ content }}`가 포함되어 있는지 확인합니다.
 
     ```html
     <html>
@@ -200,7 +200,8 @@ Django 페이지 템플릿은 `{{ content }}`에서처럼 `{{` 및 `}}`로 표�
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X")
             }
@@ -209,9 +210,9 @@ Django 페이지 템플릿은 `{{ content }}`에서처럼 `{{` 및 `}}`로 표�
 
     여기서 `render`에 대한 첫 번째 인수는 요청 개체이며, 앱의 *templates* 폴더 내에 있는 템플릿 파일의 상대 경로가 뒤에 옵니다. 해당하는 경우 템플릿 파일의 이름은 보기에 대해 지정됩니다. `render`에 대한 세 번째 인수는 템플릿이 참조하는 변수의 사전입니다. 사전에 개체를 포함할 수 있으며, 이 경우 템플릿의 변수는 `{{ object.property }}`를 참조할 수 있습니다.
 
-1. 프로젝트를 실행하고 출력을 확인합니다. 2-2단계와 유사한 메시지가 표시되어 템플릿이 작동함을 나타냅니다.
+1. 프로젝트를 실행하고 출력을 확인합니다. 2-2단계에서 보여진 유사한 메시지가 표시되어 템플릿이 작동함을 나타냅니다.
 
-    그러나 `content` 속성에 사용된 HTML은 `render` 함수가 해당 HTML을 자동으로 이스케이프하기 때문에 일반 텍스트로만 렌더링됩니다. 자동 이스케이프는 주입 공격에 대한 우발적인 취약성을 방지합니다. 개발자는 종종 한 페이지에서 입력을 수집하고 템플릿 자리 표시자를 통해 다른 페이지의 값으로 사용합니다. 이스케이프는 HTML을 페이지 템플릿에 두고 코드에는 넣지 않는 것이 최선이라는 것을 상기시켜 주는 역할도 합니다. 다행히 필요한 경우 추가 변수를 만드는 것이 간단합니다. 예를 들어 다음 태그와 일치하도록 *templates/index.html*을 변경하여 페이지 제목을 추가하고 페이지 템플릿의 모든 형식을 유지합니다.
+    그러나 `content` 속성에 사용된 HTML은 `render` 함수가 해당 HTML을 자동으로 이스케이프하기 때문에 일반 텍스트로만 렌더링됩니다. 자동 이스케이프는 주입 공격에 대한 우발적인 취약성을 방지합니다. 개발자는 종종 한 페이지에서 입력을 수집하고 템플릿 자리 표시자를 통해 다른 페이지의 값으로 사용합니다. 이스케이프는 HTML을 페이지 템플릿에 두고 코드에는 넣지 않는 것이 최선이라는 것을 상기시켜 주는 역할도 합니다. 다행히 필요한 경우 추가 변수를 만드는 것이 간단합니다. 예를 들어 다음 태그와 일치하도록 *템플릿*을 포함한 *index.html*을 변경하여 페이지 제목을 추가하고 페이지 템플릿의 모든 서식을 유지합니다.
 
     ```html
     <html>
@@ -232,7 +233,8 @@ Django 페이지 템플릿은 `{{ content }}`에서처럼 `{{` 및 `}}`로 표�
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'title' : "Hello Django",
                 'message' : "Hello Django!",
@@ -245,7 +247,7 @@ Django 페이지 템플릿은 `{{ content }}`에서처럼 `{{` 및 `}}`로 표�
 
     ![템플릿을 사용하여 앱 실행](media/django/step02-result.png)
 
-1. <a name="template-namespacing"> </a>마지막 단계로 앱과 동일한 이름의 하위 폴더로 템플릿을 이동하여 네임스페이스를 만들고 프로젝트에 추가할 수 있는 다른 앱과의 잠재적인 충돌을 방지합니다. 즉, *HelloDjangoApp*이라는 *templates*의 하위 폴더를 만들고, *index.html*을 해당 하위 폴더로 이동하고, 템플릿의 새 경로인 *HelloDjangoApp/index.html*을 참조하도록 `index` 보기 함수를 수정합니다. 그런 다음, 프로젝트를 실행하고 페이지가 올바르게 렌더링되는지 확인한 후 서버를 중지합니다.
+1. <a name="template-namespacing"></a>Visual Studio 2017 버전 15.7 이전: 마지막 단계로 앱과 동일한 이름의 하위 폴더로 템플릿을 이동하여 네임스페이스를 만들고 프로젝트에 추가할 수 있는 다른 앱과의 잠재적인 충돌을 방지합니다. (VS 2017 15.8+의 템플릿은 이 작업을 자동으로 수행합니다.) 즉, *HelloDjangoApp*이라는 *templates*의 하위 폴더를 만들고, *index.html*을 해당 하위 폴더로 이동하고, 템플릿의 새 경로인 *HelloDjangoApp/index.html*을 참조하도록 `index` 보기 함수를 수정합니다. 그런 다음, 프로젝트를 실행하고 페이지가 올바르게 렌더링되는지 확인한 후 서버를 중지합니다.
 
 1. 원하는 경우 [2-2단계](#commit-to-source-control)에 설명된 대로 변경 내용을 소스 제어에 커밋하고 원격 리포지토리를 업데이트합니다.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 289d22798b243a7276d74257b0d3b1f7213b3a32
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586564"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626542"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python용 C++ 확장 만들기
 
@@ -48,7 +48,7 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
 
 1. **파일** > **새로 만들기** > **프로젝트**를 선택하여 Visual Studio에서 새 Python 프로젝트를 만듭니다. “Python”을 검색하고 **Python 응용 프로그램** 템플릿을 선택한 다음 적합한 이름과 위치를 지정하고 **확인**을 선택합니다.
 
-1. C++로 작업하려면 32비트 Python 인터프리터(Python 3.6 권장)를 사용해야 합니다. Visual Studio의 **솔루션 탐색기** 창에서 프로젝트 노드를 확장한 다음, **Python 환경** 노드를 확장합니다. 32비트 환경이 기본값으로 표시(굵게 표시 또는 **전역 기본값** 레이블 지정)되지 않는 경우 [프로젝트에 대한 Python 환경 선택](selecting-a-python-environment-for-a-project.md)의 지침을 따르세요. 32비트 인터프리터가 설치되지 않은 경우 [Python 인터프리터 설치](installing-python-interpreters.md)를 참조하세요.
+1. C++로 작업하려면 32비트 Python 인터프리터(Python 3.6 이상 권장)를 사용해야 합니다. Visual Studio의 **솔루션 탐색기** 창에서 프로젝트 노드를 확장한 다음, **Python 환경** 노드를 확장합니다. 32비트 환경이 기본값으로 표시(굵게 표시 또는 **전역 기본값** 레이블 지정)되지 않는 경우 [프로젝트에 대한 Python 환경 선택](selecting-a-python-environment-for-a-project.md)의 지침을 따르세요. 32비트 인터프리터가 설치되지 않은 경우 [Python 인터프리터 설치](installing-python-interpreters.md)를 참조하세요.
 
 1. 프로젝트의 *.py* 파일에서 쌍곡 탄젠트 계산을 벤치마크하는 다음 코드(비교하기 쉽도록 수학 라이브러리를 사용하지 않고 구현됨)를 붙여넣습니다. 언제든지 코드를 수동으로 입력하여 [Python 편집 기능](editing-python-code-in-visual-studio.md)의 일부를 경험해 보세요.
 

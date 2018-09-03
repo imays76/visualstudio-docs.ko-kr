@@ -1,7 +1,7 @@
 ---
 title: Python 코드 디버깅
 description: 중단점 설정, 단계별 실행, 값 검사, 예외 확인, 대화형 창에서 디버깅을 포함하여 특히 Python 코드에 대한 Visual Studio의 디버깅 기능 연습입니다.
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498969"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626766"
 ---
 # <a name="debug-your-python-code"></a>Python 코드 디버그
 
@@ -80,7 +80,7 @@ Visual Studio에서는 실행 중인 프로세스에 연결하고, **조사식**
 | **프로시저 나가기** | **Shift**+**F11** | 현재 함수가 끝날 때까지 코드를 실행한 후 호출하는 문으로 이동합니다.  이 명령은 현재 함수의 나머지 부분을 디버그할 필요가 없을 때 유용합니다. |
 | **커서까지 실행** | **Ctrl**+**F10** | 편집기에서 캐럿의 위치까지 코드를 실행합니다. 이 명령을 사용하면 디버그할 필요가 없는 코드 세그먼트를 쉽게 건너뛸 수 있습니다. |
 | **다음 명령문 설정** | **Ctrl**+**Shift**+**F10** | 코드의 현재 실행 지점을 캐럿 위치로 변경합니다. 이 명령을 사용하면 코드에 결함이 있거나 원하지 않는 부작용이 발생했을 때와 같은 경우 실행되지 않도록 코드 세그먼트를 생략할 수 있습니다. |
-| **다음 명령문 표시** | **Alt**+**Num**+**&#42;**| 실행할 다음 문으로 돌아갑니다. 이 명령은 코드를 둘러보았지만 디버거가 중지된 위치가 기억나지 않는 경우에 매우 유용합니다. |
+| **다음 명령문 표시** | **Alt**+**Num** **&#42;**| 실행할 다음 문으로 돌아갑니다. 이 명령은 코드를 둘러보았지만 디버거가 중지된 위치가 기억나지 않는 경우에 매우 유용합니다. |
 
 ### <a name="inspect-and-modify-values"></a>값 검사 및 수정
 
@@ -149,11 +149,11 @@ HTML, XML 및 JSON 시각화는 구문 강조 표시 및 트리 보기가 있는
 
 | 옵션 | 설명 |
 | --- | --- |
-| **검색 경로** | 이러한 값은 **솔루션 탐색기**에서 프로젝트의 검색 경로 노드에 표시되는 값과 일치합니다. 여기서 해당 값을 수정할 수는 있지만, 폴더를 탐색하고 경로를 상대 형식으로 자동 변환할 수 있는 **솔루션 탐색기**를 사용하는 것이 더 쉽습니다. |
+| **검색 경로** | 이러한 값은 **솔루션 탐색기**에서 프로젝트의 **검색 경로** 노드에 표시되는 값과 일치합니다. 여기서 해당 값을 수정할 수는 있지만, 폴더를 탐색하고 경로를 상대 형식으로 자동 변환할 수 있는 **솔루션 탐색기**를 사용하는 것이 더 쉽습니다. |
 | **스크립트 인수** | 이러한 인수는 스크립트를 시작하는 데 사용되는 명령에 추가되며, 스크립트의 파일 이름 뒤에 표시됩니다. 스크립트에서 첫 번째 항목은 `sys.argv[1]`, 두 번째 항목은 `sys.argv[2]` 등으로 사용할 수 있습니다. |
 | **인터프리터 인수** | 이러한 인수는 시작 관리자 명령줄에서 스크립트의 이름 앞에 추가됩니다. 여기서 공통 인수는 경고를 제어하기 위한 `-W ...`, 프로그램을 약간 최적화하기 위한 `-O` 및 버퍼링되지 않은 IO를 사용하기 위한 `-u`입니다. IronPython 사용자는 이 필드를 사용하여 `-X:Frames` 또는 `-X:MTA`와 같은 `-X` 옵션을 전달할 수 있습니다. |
 | **인터프리터 경로** | 현재 환경과 연결된 경로를 재정의합니다. 값은 비표준 인터프리터로 스크립트를 시작하는 데 유용할 수 있습니다. |
-| **환경 변수** | 이 여러 줄 텍스트 상자에 \<NAME>=\<VALUE> 형식의 항목을 추가합니다. 이 설정은 검색 경로 설정에 따라 `PYTHONPATH`가 설정된 후에 마지막으로 기존 전역 환경 변수의 맨 위에 적용되므로 다른 변수를 수동으로 재정의하는 데 사용될 수 있습니다. |
+| **환경 변수** | 이 여러 줄 텍스트 상자에 \<NAME>=\<VALUE> 형식의 항목을 추가합니다. 이 설정은 **검색 경로** 설정에 따라 `PYTHONPATH`가 설정된 후에 마지막으로 기존 글로벌 환경 변수의 맨 위에 적용되므로 다른 변수를 수동으로 재정의하는 데 사용될 수 있습니다. |
 
 ## <a name="immediate-and-interactive-windows"></a>직접 실행 창 및 대화형 창
 
@@ -192,48 +192,44 @@ HTML, XML 및 JSON 시각화는 구문 강조 표시 및 트리 보기가 있는
 
 ![대화형 디버그 창 옵션](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>실험적 디버거 사용
+<a name="use-the-experimental-debugger"></a>
 
-Visual Studio 2017 미리 보기 4.0부터는 ptvsd 버전 4.1 이상에 기반한 "실험적 디버거"를 사용하여 옵트인할 수 있습니다. 옵트인하려면 **도구** > **옵션** 메뉴 명령을 선택한 다음, 옵션 대화 상자에서 **Python** > **실험적**으로 이동하고, **실험적 디버거 사용**을 선택합니다.
+## <a name="use-the-legacy-debugger"></a>레거시 디버거 사용
 
-실험적 디버거는 다음 표에 설명된 대로 제한된 Python 환경과 호환될 수 있습니다.
+Visual Studio 2017 버전 15.8 이상에서는 ptvsd 버전 4.1 이상에 기반한 디버거를 사용합니다. 이 버전의 ptvsd는 Python 2.7 및 Python 3.5+와 호환 가능합니다. Python 2.6, 3.1~3.4 또는 IronPython을 사용하는 경우 Visual Studio에서는 **디버거는 이 Python 환경을 지원하지 않습니다.** 라는 오류를 표시합니다.
 
-| Python 버전 | 실험적 디버거와 호환 가능 |
-| --- | --- |
-| 2.6 | 아니요 |
-| 2.7 | 예 |
-| 3.1~3.4 | 아니요 |
-| 3.5 이상 | 예 |
-| IronPython | 아니요 |
+![디버거를 사용하는 경우 디버거가 이 Python 환경을 지원하지 않습니다 오류](media/debugging-experimental-incompatible-error.png)
 
-호환되지 않는 환경에서 실험적 디버거를 사용하려는 경우 Visual Studio에서는 **디버거가 환경과 호환되지 않습니다.** 라는 오류를 표시합니다.
+이러한 경우 Visual Studio 2017 버전 15.7 이전의 기본값인 이전 디버거를 사용해야 합니다. **도구** > **옵션** 메뉴 명령을 선택하고, **Python** > **디버깅**으로 이동하고, **레거시 디버거 사용** 옵션을 선택합니다.
 
-![실험적 디버거를 사용하는 경우 디버거는 이 환경 오류와 호환되지 않습니다.](media/debugging-experimental-incompatible-error.png)
+현재 환경에 이전 버전의 ptvsd를 설치한 경우(예: 원격 디버깅에 필요한 4.0.x 이전 버전 또는 3.x 버전) Visual Studio에서는 오류 또는 경고를 표시할 수 있습니다.
 
-**실험적 디버거 사용 않 함** 명령을 선택합니다. 그러면 **실험적 디버거 사용** 옵션의 선택을 취소합니다.
+ptvsd 3.x를 설치한 경우 **디버거 패키지를 로드할 수 없습니다.** 라는 오류가 나타납니다.
 
-> [!Note]
-> 경고는 현재 Python 3.3 및 3.4에 대해 표시되지 않습니다.
+![디버거를 사용하는 경우 디버거 패키지를 로드할 수 없습니다 오류](media/debugging-experimental-version-error.png)
 
-현재 환경에 ptvsd의 이전 버전을 설치한 경우(예: 원격 디버깅에 필요한 3.x 버전보다 앞선 4.0.x 버전) Visual Studio에서는 **디버거 패키지를 로드할 수 없습니다.** 라는 오류 또는 **디버거 패키지가 만료되었습니다.** 라는 경고 중 하나를 표시합니다.
+이 경우에 **레거시 디버거 사용**을 선택하여 **레거시 디버거 사용** 옵션을 설정하고 디버거를 다시 시작합니다.
 
-![실험용 디버거를 사용할 때 디버거 패키지는 로드된 오류가 아닐 수 있습니다.](media/debugging-experimental-version-error.png)
+ptvsd 4.x 이전 버전을 설치한 경우 **디버거 패키지가 만료되었습니다.** 경고가 나타납니다.
 
-![실험용 디버거를 사용할 때 디버거 패키지는 오래된 경고입니다.](media/debugging-experimental-version-warning.png)
-
-ptvsd 설치를 관리하려면 **Python 환경** 창에서 **패키지** 탭을 사용하거나 명령줄에서 다음 명령을 사용합니다.
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![디버거를 사용하는 경우 디버거 패키지가 만료되었습니다 경고](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > ptvsd의 일부 버전에 대한 경고를 무시하도록 선택할 수 있지만 Visual Studio가 제대로 작동하지 않을 수 있습니다.
+
+ptvsd 설치를 관리하려면:
+
+1. **Python 환경** 창에서 **패키지** 탭으로 이동합니다.
+
+1. 검색 상자에 "ptvsd"를 입력하고 설치된 ptvsd 버전을 검사합니다.
+
+    ![Python 환경 창에서 ptvsd 버전 확인](media/debugging-experimental-check-ptvsd.png)
+
+1. 버전이 4.1.1a9(Visual Studio에서 번들된 버전)보다 낮은 경우 패키지의 오른쪽에 있는 **X**를 선택하여 이전 버전을 제거합니다. 그러면 Visual Studio는 번들된 버전을 사용합니다. (`pip uninstall ptvsd`를 사용하여 PowerShell에서 제거할 수도 있습니다.)
+
+1. 또는 ptvsd 패키지를 최신 버전으로 업데이트할 수 있습니다. 검색 상자에서 `ptvsd --upgrade -pre`를 입력한 다음, **명령 실행: pip install ptvsd --upgrade -pre**를 선택합니다. (PowerShell에서 동일한 명령을 사용할 수도 있습니다.)
+
+    ![Python 환경 창에서 업그레이드 명령 제공](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>참고 항목
 

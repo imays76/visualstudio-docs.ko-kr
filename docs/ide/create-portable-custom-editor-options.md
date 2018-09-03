@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469056"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626764"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기
 
@@ -23,7 +23,7 @@ Visual Studio 2017에서는 프로젝트 또는 코드베이스에 [EditorConfig
 Visual Studio를 포함하여 다양한 코드 편집기와 IDE에서 EditorConfig 설정이 지원됩니다. 코드를 이용하여 휴대할 수 있는 구성 요소이며 Visual Studio 외부에서도 코딩 스타일을 적용할 수 있습니다.
 
 > [!NOTE]
-> Visual Studio에서 프로젝트에 EditorConfig 파일을 추가할 때 문서의 서식을 지정(**편집** > **고급** > **문서 서식** 또는 **Ctrl**+**K**, **Ctrl**+**D**)하지 않으면 기존 코드의 서식이 변경되지 않습니다. 하지만 새로운 코드 줄은 EditorConfig 설정에 따라 서식이 지정됩니다.
+> Visual Studio에서 프로젝트에 EditorConfig 파일을 추가할 때 문서의 서식을 지정(기본 프로필의 **편집** > **고급** > **문서 서식** 또는 **Ctrl**+**K**, **Ctrl**+**D**)하지 않으면 기존 코드의 서식이 변경되지 않습니다. 하지만 새로운 코드 줄은 EditorConfig 설정에 따라 서식이 지정됩니다. **문서 서식**을 [**서식 지정** 옵션 페이지](reference/options-text-editor-csharp-formatting.md#format-document-settings)에 적용하려는 EditorConfig 설정을 정의할 수 있습니다.
 
 ## <a name="coding-consistency"></a>코딩 일관성
 

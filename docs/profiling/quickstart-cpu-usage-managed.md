@@ -2,7 +2,7 @@
 title: CPU 사용량 데이터 분석(관리 코드)
 description: CPU 사용량 진단 도구를 사용하여 C# 및 Visual Basic에서 앱 성능 측정
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206848"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626678"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터 분석(관리 코드)
 
@@ -26,11 +26,15 @@ Visual Studio는 응용 프로그램에서 성능 문제를 분석할 수 있도
 
 진단 허브에서는 진단 세션을 실행하고 관리할 수 있는 여러 가지 다른 옵션을 제공합니다. 여기서 설명한 **CPU 사용량** 도구로 필요한 데이터를 얻지 못할 경우 [다른 프로파일링 도구](../profiling/profiling-feature-tour.md)로 유용한 다른 종류의 정보를 얻을 수 있습니다. 많은 경우 메모리, UI 렌더링 또는 네트워크 요청 시간 등 CPU가 아닌 곳에서 응용 프로그램의 성능 병목 현상이 발생할 수 있습니다. 진단 허브는 이러한 종류의 데이터를 기록 및 분석하기 위한 다른 여러 옵션을 제공합니다.
 
+Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다. Windows 7 이상에서 사후 평가 도구인 [성능 프로파일러](../profiling/profiling-feature-tour.md)를 사용할 수 있습니다.
+
 ## <a name="create-a-project"></a>프로젝트 만들기
 
 1. Visual Studio에서 **파일** > **새 프로젝트**를 선택합니다.
 
 2. **Visual C#** 또는 **Visual Basic** 아래에서 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 을 선택합니다.
+
+    **콘솔 앱** 템플릿 프로젝트가 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
 3. **MyProfilerApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468275"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626636"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 생산성 가이드
 
@@ -46,12 +46,12 @@ ms.locfileid: "39468275"
 | **Ctrl**+**.** (또는 C# 프로필에서 **Alt**+**Enter**) | 빠른 작업 및 리팩터링 | 커서 위치 또는 코드 선택에서 사용 가능한 코드 해결, 코드 생성 작업, 리팩터링, 또는 기타 빠른 작업 확인 |
 | **Ctrl**+**D** | 중복된 줄 | 커서가 있는 코드 줄 복제(**Visual Studio 2017 버전 15.6** 이상에서 사용 가능) |
 | **Shift**+**Alt**+**+**/**-** | 선택 영역을 확대/축소 | 편집기(**Visual Studio 2017 버전 15.5** 이상에서 사용 가능)에서 현재 선택 영역을 확장하거나 축소 |
-| **Shift** + **Alt** + **Ins** | 일치하는 다음 캐럿 삽입 | 현재 선택 영역과 일치하는 다음 위치에서 선택 영역 및 캐럿 추가(**Visual Studio 2017 버전 15.8** 이상에서 사용할 수 있음) |
+| **Ctrl** + **Alt** + **.** | 일치하는 다음 캐럿 삽입 | 현재 선택 영역과 일치하는 다음 위치에서 선택 영역 및 캐럿 추가(**Visual Studio 2017 버전 15.8** 이상에서 사용할 수 있음) |
 | **Ctrl**+**Q** | 빠른 실행 | 모든 Visual Studio 설정 검색 |
 | **F5** | 디버깅 시작 | 응용 프로그램 디버깅 시작 |
 | **Ctrl**+**F5** | 디버깅하지 않고 실행 | 디버깅하지 않고 응용 프로그램을 로컬에서 실행 |
-| **Ctrl**+**K**,**D**(기본 프로필) 또는 **Ctrl**+**E**,**D**(C# 프로필) | 문서 서식 | 줄 바꿈, 간격 및 들여쓰기 설정에 따라 파일에서 서식 위반 정리 |
-| **Ctrl**+**\\**,**E**(기본 프로필) 또는 **Ctrl**+**W**,**E**(C# 프로필) | 오류 목록 보기 | 문서, 프로젝트 또는 솔루션의 모든 오류 보기 |
+| **Ctrl**+**K**,**D**(기본 프로필) 또는 **Ctrl**+**E**,**D**(C# 프로필) | [문서 서식](code-styles-and-quick-actions.md#format-document-command) | 줄 바꿈, 간격 및 들여쓰기 설정에 따라 파일에서 서식 위반 정리 |
+| **Ctrl**+**\\**,**Ctrl**+**E**(기본 프로필) 또는 **Ctrl**+**W**,**E**(C# 프로필) | 오류 목록 보기 | 문서, 프로젝트 또는 솔루션의 모든 오류 보기 |
 | **Alt** + **PgUp/PgDn** | 다음/이전 문제로 이동 | 문서에서 이전/다음 오류, 경고, 제안으로 이동(**Visual Studio 2017 버전 15.8** 이상에서 사용할 수 있음) |
 
 > [!NOTE]

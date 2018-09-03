@@ -1,21 +1,20 @@
 ---
-title: Visual Studio 성능 팁과 요령
-ms.date: 08/31/2017
+title: 성능을 향상시키기 위한 팁
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433537"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627075"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
@@ -40,7 +39,13 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
 1. **프로젝트 및 솔루션** > **일반** 페이지에서 **솔루션 로드 시 문서 다시 열기**의 선택을 취소합니다.
 
-자동 파일 복원을 사용하지 않으면 [이동](../ide/go-to.md)을 사용하여 열려는 파일로 빠르게 이동할 수 있습니다. **편집** > **이동** > **전체로 이동**을 선택하거나 **Ctrl**+**T**를 누릅니다.
+자동 파일 복원을 사용하지 않으면 [이동](../ide/go-to.md) 명령 중 하나를 사용하여 열려는 파일로 빠르게 이동할 수 있습니다.
+
+- 일반 **이동** 기능의 경우 **편집** > **이동** > **전체로 이동**을 선택하거나 **Ctrl**+**T**를 누릅니다.
+
+- Visual Studio 2017 버전 15.8 이상에서 **편집** > **이동** > **마지막 편집 위치로 이동**을 사용하거나 **Ctrl**+**Shift**+**백스페이스** 키를 눌러서 솔루션의 마지막 편집 위치로 이동할 수 있습니다.
+
+- Visual Studio 2017 버전 15.8 이상에서 **최근에 사용한 파일로 이동**을 사용하여 솔루션에서 최근에 방문한 파일 목록을 확인합니다. **편집** > **이동** > **최근 파일로 이동**을 선택하거나 **Ctrl**+**1**, **Ctrl**+**R**을 누릅니다.
 
 ## <a name="configure-debugging-options"></a>디버깅 옵션 구성
 

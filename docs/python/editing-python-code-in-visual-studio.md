@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500123"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627298"
 ---
 # <a name="edit-python-code"></a>Python 코드 편집
 
@@ -34,7 +34,7 @@ Visual Studio **개체 브라우저**(**보기** > **다른 창** > **개체 브
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense는 [완성](#completions), [서명 도움말](#signature-help), [요약 정보](#quick-info) 및 [코드 색 지정](#code-coloring)을 제공합니다. Visual Studio 2017 버전 15.7 이상도 [형식 힌트](#type-hints)를 지원합니다.
+IntelliSense는 [완성](#completions), [서명 도움말](#signature-help), [요약 정보](#quick-info) 및 [코드 색 지정](#code-coloring)을 제공합니다. Visual Studio 2017 버전 15.7 이상은 [형식 힌트](#type-hints)도 지원합니다.
 
 **Visual Studio 2017 버전 15.5** 및 이전 버전의 IntelliSense는 프로젝트의 각 Python 환경에 대해 생성된 완성 데이터베이스를 통해 성능을 향상합니다. 패키지를 추가, 제거 또는 업데이트할 경우 데이터베이스를 새로 고쳐야 할 수 있습니다. 데이터베이스 상태는 **Python 환경** 창(**솔루션 탐색기**의 형제)의 **IntelliSense** 탭에 표시됩니다([환경 창 참조](python-environments-window-tab-reference.md#intellisense-tab) 확인).
 

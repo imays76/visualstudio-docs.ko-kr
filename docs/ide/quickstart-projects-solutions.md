@@ -1,5 +1,5 @@
 ---
-title: Visual Studio의 프로젝트 및 솔루션 소개
+title: 프로젝트 및 솔루션 소개
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512306"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626817"
 ---
-# <a name="quickstart-projects-and-solutions"></a>빠른 시작: 프로젝트 및 솔루션
+# <a name="learn-about-projects-and-solutions"></a>프로젝트 및 솔루션에 대한 자세한 정보
 
-10분 빠른 시작에서는 Visual Studio에서 *솔루션* 및 *프로젝트* 만들기를 살펴봅니다. 솔루션은 하나 이상의 관련된 코드 프로젝트를 구성하는 데 사용되는 컨테이너입니다(예: 클래스 라이브러리 및 해당 테스트 프로젝트). 프로젝트의 속성 및 포함될 수 있는 일부 파일을 살펴봅니다. 또한 하나의 프로젝트에서 다른 프로젝트에 대한 참조를 만듭니다.
+이 소개 아티클에서는 Visual Studio에서 *솔루션* 및 *프로젝트* 만들기를 살펴봅니다. 솔루션은 하나 이상의 관련된 코드 프로젝트를 구성하는 데 사용되는 컨테이너입니다(예: 클래스 라이브러리 및 해당 테스트 프로젝트). 프로젝트의 속성 및 포함될 수 있는 일부 파일을 살펴봅니다. 또한 하나의 프로젝트에서 다른 프로젝트에 대한 참조를 만듭니다.
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
@@ -176,19 +176,9 @@ ms.locfileid: "39512306"
 
 단위 테스트가 작동하는지 확인하려면 메뉴 모음에서 **테스트** > **실행** > **모든 테스트**를 선택합니다. **테스트 탐색기**라는 창이 열리면 **TestGetCurrentDate** 테스트에 통과했다고 표시됩니다.
 
-이 빠른 시작을 완료한 것을 축하 드립니다! 다음으로 Visual Studio에 대한 다른 빠른 시작 중 일부를 탐색하거나 [프로젝트 및 솔루션을 만드는](../ide/creating-solutions-and-projects.md) 방법에 대해 자세히 알아봅니다.
-
-> [!div class="nextstepaction"]
-> [빠른 시작: 먼저 Visual Studio IDE 살펴보기](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [빠른 시작: Visual Studio 개인 설정](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [빠른 시작: 편집기에서 코딩](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>참고 항목
 
+- [프로젝트 및 솔루션 만들기](../ide/creating-solutions-and-projects.md)
 - [프로젝트 및 솔루션 속성 관리](../ide/managing-project-and-solution-properties.md)
 - [프로젝트에서 참조 관리](../ide/managing-references-in-a-project.md)
 - [프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

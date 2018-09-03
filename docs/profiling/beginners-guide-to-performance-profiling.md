@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2751b901323adb6aa17ab553aa2f464d883ebd
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 156dcb4fc6b94248e488eda4091c3b2ccf192185
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206853"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626594"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Visual Studio에서 응용 프로그램 성능 프로파일링
 Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성능 문제를 분석할 수 있습니다. 이 절차에서는 진단 도구의 **CPU 사용량** 탭을 사용하여 앱의 성능 데이터를 가져오는 방법을 보여 줍니다. 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
@@ -37,6 +37,8 @@ Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성�
 |  ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기")  |    CPU 사용량 분석 방법 및 메모리 사용량 분석 방법을 보여 주는 [진단 도구 사용에 대한 비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)합니다. |
 
 이 문서에서는 일반적인 디버깅 워크플로에서의 CPU 사용량 분석에 대해 설명합니다. 디버거를 연결하지 않고 또는 실행 중인 앱을 대상으로 지정하여 CPU 사용량을 분석할 수도 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)의 [디버깅을 사용하지 않고 프로파일링 데이터 수집](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)을 참조하세요.
+
+Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
 
 이 자습서에서 다음을 수행합니다.
 

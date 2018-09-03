@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 1e68542de70c868f6113348e519f866bf60bc381
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f297b9202dabfcfe40ea63b187bc914e187b974f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36759002"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626974"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>리소스 소비량 및 UI 스레드 활동 분석(XAML)
 **응용 프로그램 타임라인** 프로파일러를 사용하여 XAML 응용 프로그램에서 응용 프로그램 상호 작용 관련 성능 문제를 찾으세요. 이 도구를 사용하면 응용 프로그램의 리소스 소비에 대해 자세히 알 수 있어서 XAML 응용 프로그램의 성능을 개선하는 데 도움이 됩니다. 응용 프로그램 UI 프레임(레이아웃 및 렌더링)을 준비하고, 네트워크 및 디스크 요청을 처리하여, 응용 프로그램 시작, 페이지 로드 및 창 크기 조정과 같은 시나리오에서 응용 프로그램이 보낸 시간을 분석할 수 있습니다.  
@@ -97,7 +97,7 @@ ms.locfileid: "36759002"
 |||  
 |-|-|  
 |**구문 분석**|XAML 파일을 구문 분석하고 개체를 만드는 데 걸린 시간입니다.<br /><br /> **타임라인 세부 정보** 에서 **구문 분석** 노드를 확장하면 루트 이벤트의 결과로 구문 분석된 모든 XAML 파일의 종속성 체인이 표시됩니다. 이렇게 하면 성능이 중요한 시나리오에서 불필요한 파일 구문 분석 및 개체 만들기를 식별하고 최적화할 수 있습니다.|  
-|**레이아웃**|큰 응용 프로그램에서는 수천 개의 요소가 동시에 화면에 표시될 수 있습니다. 이로 인해 UI 프레임 속도가 느려지고 응용 프로그램의 응답성이 나빠질 수 있습니다. 레이아웃 이벤트는 각 요소의 레이아웃을 지정하는 비용(즉, Arrange, Measure, ApplyTemplate 및 ArrangeOverride에 소요되는 시간)을 정확하게 결정하고 레이아웃 단계에 참여하는 시각적 트리를 빌드합니다. 이 시각화를 사용하여 정리할 논리 트리를 결정하거나 다른 지연 메커니즘을 평가하여 레이아웃 단계를 최적화할 수 있습니다.|  
+|**레이아웃**|큰 응용 프로그램에서는 수천 개의 요소가 동시에 화면에 표시될 수 있습니다. 이로 인해 UI 프레임 속도가 느려지고 응용 프로그램의 응답성이 나빠질 수 있습니다. 레이아웃 이벤트는 각 요소의 레이아웃을 지정하는 비용(즉, Arrange, Measure, ApplyTemplate, ArrangeOverride 및 MeasureOverride에 소요되는 시간)을 정확하게 결정하고 레이아웃 단계에 참여하는 시각적 트리를 빌드합니다. 이 시각화를 사용하여 정리할 논리 트리를 결정하거나 다른 지연 메커니즘을 평가하여 레이아웃 단계를 최적화할 수 있습니다.|  
 |**렌더링**|화면에 XAML 요소를 그리는 데 소요된 시간입니다.|  
 |**I/0**|로컬 디스크 또는 [Microsoft Windows 인터넷(WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx)를 통해 액세스된 네트워크 리소스에서 데이터를 검색하는 데 소요된 시간입니다.|  
 |**앱 코드**|구문 분석 또는 레이아웃과 관련이 없는 응용 프로그램(사용자) 코드를 실행하는 데 소요된 시간입니다.|  

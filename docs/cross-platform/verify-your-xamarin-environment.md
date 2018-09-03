@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9ae697825d0d4a2c380c6f0d540153fbf06d4da4
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233089"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42626985"
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin 환경 확인
 
@@ -54,7 +54,7 @@ Visual Studio에서 먼저 **도구** > **확장 및 업데이트**를 선택하
 
   ![Visual Studio Emulator for Android를 디버그 대상으로 선택](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  자세한 내용은 [Introducing Visual Studio's Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)(Visual Studio Emulator for Android 소개) (Visual Studio ALM 블로그)를 참조하세요. 에뮬레이터를 작동하는 중 문제가 발생하면 [Visual Studio Emulator for Android 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요. **도구 > Android > Android Emulator 관리자**를 선택하여 에뮬레이터에 대한 새로운 장치 프로필을 만들 수도 있습니다.
+  자세한 내용은 Microsoft DevOps 블로그의 [Visual Studio Emulator for Android 소개](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/)를 참조하세요. 에뮬레이터를 작동하는 중 문제가 발생하면 [Visual Studio Emulator for Android 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요. **도구 > Android > Android Emulator 관리자**를 선택하여 에뮬레이터에 대한 새로운 장치 프로필을 만들 수도 있습니다.
 
 3. **F5** 키를 눌러 컴파일하고 프로그램을 Android 장치 또는 에뮬레이터에 배포합니다.
 
