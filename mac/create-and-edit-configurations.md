@@ -1,16 +1,16 @@
 ---
 title: 빌드 구성 만들기 및 편집
 description: 이 문서에서는 Mac용 Visual Studio에서의 빌드 구성 만들기에 대해 설명합니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: bf097924da2640faed75f4dcef0c82698078911b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 1aadff851c709141f37f89431403bce857bafdbe
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33864761"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224035"
 ---
 # <a name="creating-and-editing-build-configurations"></a>빌드 구성 만들기 및 편집
 

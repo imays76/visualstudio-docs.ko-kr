@@ -1,17 +1,17 @@
 ---
 title: Mac용 Visual Studio 확장
 description: 확장 패키지라는 모듈을 사용하여 Mac용 Visual Studio의 기능을 확장할 수 있습니다. 이 가이드의 첫 번째 부분에서는 간단한 Mac용 Visual Studio 확장 패키지를 만들어 문서에 날짜와 시간을 삽입합니다. 이 가이드의 두 번째 부분에서는 확장 패키지 시스템의 기본 사항 및 Mac용 Visual Studio의 기초를 형성하는 몇 가지 핵심 API를 소개합니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178262"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224964"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
 
@@ -56,7 +56,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 
 ## <a name="extensions-and-extension-points"></a>확장 및 확장 지점
 
-확장 지점은 데이터 구조(형식)를 정의하는 자리 표시자인 반면, 확장은 특정 확장 지점에서 지정된 구조에 맞는 데이터를 정의합니다. 확장 지점은 해당 선언에서 허용할 수 있는 확장 형식을 지정합니다. 확장은 형식 이름 또는 확장 경로를 사용하여 선언됩니다. 필요한 확장 지점을 만드는 방법에 대한 자세한 내용은 [확장 지점 참조](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots)를 참조하세요.
+확장 지점은 데이터 구조(형식)를 정의하는 자리 표시자인 반면, 확장은 특정 확장 지점에서 지정된 구조에 맞는 데이터를 정의합니다. 확장 지점은 해당 선언에서 허용할 수 있는 확장 형식을 지정합니다. 확장은 형식 이름 또는 확장 경로를 사용하여 선언됩니다. 필요한 확장 지점을 만드는 방법에 대한 자세한 내용은 [확장 지점 참조](https://github.com/mono/mono-addins/wiki/Extension-Points)를 참조하세요.
 
 확장/확장 지점 아키텍처를 통해 Mac용 Visual Studio 개발이 신속한 모듈식 개발로 유지됩니다. 
 
