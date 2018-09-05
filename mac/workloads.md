@@ -1,16 +1,16 @@
 ---
 title: Mac용 Visual Studio 워크로드
 description: 이 아티클에서는 Mac용 Visual Studio에서 사용할 수 있는 다양한 워크로드를 설명합니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 42d0f9682f2f0c54b86fc24cdfd5d82569ddbb5b
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 7f076d10b0c884f39fa887547e883ec4215fd74c
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454176"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224012"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Mac용 Visual Studio 워크로드
 

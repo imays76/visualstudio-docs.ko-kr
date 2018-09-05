@@ -9,12 +9,12 @@ description: 관리자 포털을 사용하여 조직의 Visual Studio 구독을 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380820"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289433"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 구독 관리자 포털 사용
 
@@ -68,9 +68,11 @@ Visual Studio 구독 관리 포털에 조직을 등록할 준비가 되면 온�
 - 통신에 사용되는 로그인 이외의 다른 이메일 주소에 대한 선택적 필드 
 
 이 페이지의 왼쪽에는 조직에서 각 계약에 대해 구입하고, 할당하고, 아직 사용 가능한 구독 라이선스의 수에 대한 추가 정보가 표시될 수 있습니다.
-    ![Visual Studio 구독 관리 포털 구독자 페이지](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 구독 관리 포털 구독자 페이지](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>세부 정보 페이지 이해
 확인하려는 계약에 대한 자세한 내용을 보려면 [세부 정보] 탭을 선택합니다. 계약 상태, 구입 계정, 조직 세부 정보, 기본 연락처(VLSC), 슈퍼 관리자(있는 경우) 및 기타 관련 정보가 표시됩니다.
-    ![Visual Studio 구독 관리 포털 세부 정보 페이지](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 구독 관리 포털 세부 정보 페이지](_img/using-admin-portal/details-page.png)
 

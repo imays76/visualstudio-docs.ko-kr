@@ -1,16 +1,16 @@
 ---
 title: 코드 리팩터링
 description: 소스 분석을 사용하면 Mac용 Visual Studio에서 코드를 간편하게 재구성할 수 있습니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 20259d2565fd1dc32b38d5b2c8bba9c6fbf06db1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8652b73b9bd7e414a989a1b711238126a742290f
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176260"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224285"
 ---
 # <a name="refactoring"></a>리팩터링
 

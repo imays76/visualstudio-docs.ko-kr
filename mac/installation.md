@@ -1,17 +1,17 @@
 ---
 title: Mac용 Visual Studio 설치
 description: Mac용 Visual Studio 및 플랫폼 간 개발에 필요한 추가 구성 요소를 설치하는 방법에 대한 지침입니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 6c047be1c797c0304a71ae2c55f256bdc5325aaf
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280496"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224258"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Mac용 Visual Studio 설정 및 설치
 
@@ -89,11 +89,11 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치
 
-방화벽 뒤에 있는 Mac용 Visual Studio를 설치하려면 소프트웨어에 필요한 도구 및 업데이트의 다운로드를 허용하기 위해 일부 끝점에 액세스가 가능해야 합니다.
+방화벽 뒤에 있는 Mac용 Visual Studio를 설치하려면 소프트웨어에 필요한 도구 및 업데이트의 다운로드를 허용하기 위해 일부 엔드포인트에 액세스가 가능해야 합니다.
 
 다음 위치에 액세스할 수 있도록 네트워크를 구성합니다.
 
-* [Visual Studio 끝점](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+* [Visual Studio 엔드포인트](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>다음 단계
 

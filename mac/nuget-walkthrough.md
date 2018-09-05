@@ -1,16 +1,16 @@
 ---
 title: 프로젝트에 NuGet 패키지 포함하기
 description: 이 문서에서는 Xamarin 프로젝트에 NuGet 패키지를 포함하는 방법을 다룹니다. 여기에서는 IDE 통합 기능을 소개할 뿐 아니라 패키지를 찾아 다운로드하는 방법도 살펴봅니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 2bdff15b101b9a9c916c8ba98cfd4964ca0f3189
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: af10c9b6f5b2d2462d0dfd08bb8010c2bbe74e2f
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380942"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224088"
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>프로젝트에 NuGet 패키지 포함하기
 

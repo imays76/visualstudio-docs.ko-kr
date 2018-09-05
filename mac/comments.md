@@ -1,16 +1,16 @@
 ---
 title: 설명
 description: 이 문서에서는 Mac용 Visual Studio 소스 편집기에서의 주석 사용에 대해 설명합니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 4a7dfd0daaddad9f91d461689a0174469dd253c2
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 28c02f7f6347da67133a82c1d0aa71d44a4309d2
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865389"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224362"
 ---
 # <a name="comments"></a>설명
 

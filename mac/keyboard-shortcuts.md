@@ -1,16 +1,16 @@
 ---
 title: 소스 편집기 일반 바로 가기 키
 description: 이 문서에서는 Mac용 Visual Studio의 몇 가지 일반적인 바로 가기 키에 대해 설명합니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 39cbe0eb3ba8d99c81119256773cc76f4699b7bd
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 3aea39862ee2221454a337d7c50defd41319623b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453818"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224231"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 일반적인 바로 가기 키
 

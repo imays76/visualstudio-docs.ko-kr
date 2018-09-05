@@ -1,16 +1,16 @@
 ---
 title: 블록 선택
 description: 이 문서에서는 Mac용 Visual Studio의 블록 선택 기능을 사용하는 방법에 대해 설명합니다.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: e2c879c10d5c090d8dee6b11dd65fa82316e303a
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: c1c5783134b39feac0ae89d6a1b2680b0668f815
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33872824"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223966"
 ---
 # <a name="block-selection"></a>블록 선택
 
