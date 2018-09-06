@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d3f061e095575e8692fc733e3f77f7c9b23e37c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468198"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775437"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator CE(Community Edition)
 
@@ -49,13 +49,13 @@ Dotfuscator를 보안 소프트웨어 개발 수명 주기에 적용하는 방�
 
 ## <a name="about-dotfuscator-ce"></a>Dotfuscator CE 정보
 
-Microsoft Visual Studio 2017의 복사본에는 Dotfuscator CE로도 알려진 ***PreEmptive Protection - Dotfuscator* Community Edition**의 복사본이 있으며, 개인 용도로 사용 시 무료로 제공됩니다.
+Microsoft Visual Studio 2017의 복사본에는 Dotfuscator CE로도 알려진 **_PreEmptive Protection - Dotfuscator_ Community Edition**의 복사본이 있으며, 개인 용도로 사용 시 무료로 제공됩니다.
 Visual Studio 2017에 포함된 Dotfuscator CE 버전을 설치하는 방법에 대한 지침은 [설치 페이지][install]를 참조하세요.
 
 Dotfuscator CE는 개발자, 설계자 및 테스터를 위한 광범위한 [소프트웨어 보호 및 보안 강화][software-protection] 서비스를 제공합니다.
 Dotfuscator CE에 포함된 [.NET Obfuscation][obfuscation] 및 기타 [응용 프로그램 보호] [app-protection] 기능의 예는 다음과 같습니다.
 
-* 식별자 [이름 바꾸기][renaming]: 컴파일된 어셈블리의 리버스 엔지니어링을 더 어렵게 만듭니다.
+* 식별자 *[이름 바꾸기][renaming]*  - 컴파일된 어셈블리의 리버스 엔지니어링을 더 어렵게 만듭니다.
 * [변조 방지][tamper]: 변조된 응용 프로그램의 실행을 감지하고 변조된 세션을 종료하거나 이러한 세션에 응답합니다.
 * [디버그 방지][debug]: 실행 중인 응용 프로그램에 대한 디버거 연결을 감지하고 디버그된 세션을 종료하거나 이러한 세션에 응답합니다.
 * [루팅 방지 장치][root]: 루팅된 Android 장치에서 응용 프로그램이 실행되고 있는지 감지하고 이러한 장치의 세션을 종료하거나 세션에 응답합니다.
