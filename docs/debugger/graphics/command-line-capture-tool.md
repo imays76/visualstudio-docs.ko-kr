@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e083a0db3fbe85b793f9190b35112fd0aeb6a4b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433511"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775557"
 ---
 # <a name="command-line-capture-tool"></a>명령줄 캡처 도구
 DXCap.exe는 그래픽 진단 캡처 및 재생을 위한 명령줄 도구로, 모든 기능 수준에서 Direct3D 10 - Direct3D 12를 지원합니다.  
@@ -173,7 +173,7 @@ DXCap.exe -e map
  **Id: AppexMaps**  
  **C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe Exe:**  
  **IsWWA: No**  
- * * (시작)를 AppSpec: **DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** 열거 된 각 앱에 대 한 출력의 마지막 줄에서 그래픽 정보 캡처를 사용할 수 있습니다 명령이 표시 됩니다.  
+ **(시작)를 AppSpec: DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** 열거 된 각 앱에 대 한 출력의 마지막 줄에서 그래픽 정보 캡처를 사용할 수 있습니다 명령이 표시 됩니다.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>특정 프레임 또는 특정 시간 사이의 프레임 캡처  
  사용 하 여 `-frame` 쉼표 및 범위를 사용 하 여 캡처하려는 프레임을 지정 하려면:  

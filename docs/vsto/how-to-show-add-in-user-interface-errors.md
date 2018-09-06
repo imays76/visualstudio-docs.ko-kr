@@ -1,5 +1,5 @@
 ---
-title: '방법: 추가 기능 사용자 인터페이스 오류 표시 | Microsoft Docs'
+title: '방법: 사용자 인터페이스 오류 표시 추가 기능인'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 795578d6a168dff5fee259a90abac83fa7788121
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd6da0c83d0dee835169a0a8068af8d75facbbd4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674764"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>방법: 추가 기능 사용자 인터페이스 오류 표시
-  기본적으로 VSTO 추가 기능은 Microsoft Office UI(사용자 인터페이스) 조작이 실패한 경우 오류 메시지를 표시하지 않습니다. 그러나 UI에 관련된 오류에 대한 메시지를 표시하도록 Microsoft Office 응용 프로그램을 구성할 수 있습니다. 이러한 메시지를 사용하여 사용자 지정 리본이 나타나지 않는 이유 또는 리본이 나타나지만 컨트롤이 표시되지 않는 이유를 확인할 수 있습니다.  
+# <a name="how-to-show-add-in-user-interface-errors"></a>방법: 사용자 인터페이스 오류 표시 추가 기능인
+  VSTO 추가 기능에 Microsoft Office 사용자 인터페이스 (UI) 및 실패를 조작 하려고 시도 하는 경우에 기본적으로 오류 메시지가 표시 됩니다. 그러나 UI에 관련된 오류에 대한 메시지를 표시하도록 Microsoft Office 응용 프로그램을 구성할 수 있습니다. 이러한 메시지는 이유는 리본 나타나지만 컨트롤이 표시 또는 사용자 지정 리본을 표시 되지 않는 이유를 확인 하는 데 사용할 수 있습니다.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### <a name="to-show-vsto-add-in-user-interface-errors"></a>VSTO 추가 기능 사용자 인터페이스 오류를 표시하려면  
+## <a name="to-show-vsto-add-in-user-interface-errors"></a>VSTO 추가 기능 사용자 인터페이스 오류를 표시하려면  
   
 1.  응용 프로그램을 시작합니다.  
   
@@ -44,10 +45,10 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Outlook의 경우 세부 정보 창의 **개발자** 섹션에 **VSTO 추가 기능 사용자 인터페이스 오류 표시** 확인란이 있습니다. 다른 응용 프로그램의 경우 이 확인란은 세부 정보 창의 **일반** 섹션에 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [Office UI 사용자 지정](../vsto/office-ui-customization.md)   
  [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)   
  [리본 개요](../vsto/ribbon-overview.md)   
- [작업창 개요](../vsto/actions-pane-overview.md)  
+ [작업 창 개요](../vsto/actions-pane-overview.md)  
   
   

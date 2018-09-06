@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3406e65ad96b93cd21890d61270c0ed989ad496c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2a2a89a0c838a91559c6066bea341924e5ca627e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756573"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774656"
 ---
 # <a name="how-to-add-a-resource-file"></a>방법: 리소스 파일 추가
   리소스 파일을 추가 하기 위한 명령을 솔루션 노드와 솔루션 탐색기에서 기능 노드의 바로 가기 메뉴를 켜져 있습니다. 자세한 내용은 [지역화 SharePoint 솔루션](../sharepoint/localizing-sharepoint-solutions.md)합니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "36756573"
   
 4.  에 **리소스 추가** 대화 상자에서 문화권을 영어 (미국)와 같은 리소스 파일을 선택 합니다.  
   
-     이 단계에서는 리소스 형식으로 솔루션에 전역 리소스 파일 추가 * x ***.*** 문화권 ***.** resx와 같은 *Resource1.en US.resx*합니다.  
+     이 단계에서는 Resource_x_ 형식으로 솔루션에 전역 리소스 파일을 추가 **.** _문화권_**.** resx와 같은 *Resource1.en US.resx*합니다.  
   
 5.  경우는 **리소스 편집기** 열립니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], 리소스 파일에 리소스를 추가 합니다.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "36756573"
   
 2.  **솔루션 탐색기**, 아래에 있는 기능의 이름에 대 한 바로 가기 메뉴를 열고 합니다 **기능** 노드를 선택한 후 **기능 리소스 추가**합니다.  
   
-     이 단계에서는 형식에서 기능 리소스 파일 추가 * ResourceFileName ***.*** 문화권 ***.** resx와 같은 *Feature1.en US.resx*합니다.  
+     이 단계에서는 형식에서 기능 리소스 파일을 추가 _ResourceFileName_**.** _문화권_**.resx**와 같은 *Feature1.en US.resx*합니다.  
   
 3.  경우는 **리소스 편집기** 열립니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], 리소스 파일에 리소스를 추가 합니다.  
   

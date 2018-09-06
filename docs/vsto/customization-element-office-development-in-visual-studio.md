@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02cf84dd225eadd1dcd9c1f20040811e654ebbc0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 1f1344b69aaf098f766aeafddfd23cea84d1a981
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674435"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;사용자 지정&gt; 요소 (Visual Studio에서 Office 개발)
   `customization` 네임스페이스의 `vstov4` 요소는 특정 Office 솔루션에 대해 설명합니다. 문서 수준 사용자 지정 및 VSTO 추가 기능에 대한 자식 요소가 서로 다릅니다.  
@@ -65,18 +66,18 @@ ms.lasthandoff: 05/17/2018
  `customization` 요소에는 다음 자식 요소가 있습니다.  
   
 #### <a name="document"></a>문서  
- `document` 요소에는 `vstov4` 네임 스페이스에 정의 된 [ &#60;문서&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/document-element-office-development-in-visual-studio.md)합니다.  
+ 합니다 `document` 요소에는 `vstov4` 네임 스페이스에 정의 된 [ &#60;문서&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/document-element-office-development-in-visual-studio.md).  
   
 ### <a name="vsto-add-ins"></a>VSTO 추가 기능  
  `customization` 요소에는 다음 자식 요소가 있습니다.  
   
 #### <a name="appaddin"></a>appAddin  
- `appAddin` 요소에는 `vstov4` 네임 스페이스에 정의 된 [ &#60;appAddin&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)합니다.  
+ 합니다 `appAddin` 요소에는 `vstov4` 네임 스페이스에 정의 된 [ &#60;appAddin&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>문서 수준 사용자 지정의 예  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 문서 수준 사용자 지정의 `customization` 요소를 보여 줍니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제에서는 문서 수준 사용자 지정의 `customization` 요소를 보여 줍니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -87,10 +88,10 @@ ms.lasthandoff: 05/17/2018
 </vstov4:customization>  
 ```  
   
-## <a name="example-of-an-vsto-add-in"></a>VSTO 추가 기능의 예제  
+## <a name="example-of-a-vsto-add-in"></a>VSTO 추가 기능에 대 한 예제  
   
 ### <a name="description"></a>설명  
- 다음 코드 예제에서는 VSTO 추가 기능의 `customization` 요소를 보여 줍니다. 양식 영역을 포함하는 Outlook VSTO 추가 기능입니다. 이 코드 예제는에 제공 된 큰 예제의 일부 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+ 다음 코드 예제는 `customization` VSTO 추가 기능에 대 한 요소입니다. 양식 영역을 포함하는 Outlook VSTO 추가 기능입니다. 이 코드 예제는에서 제공 하는 더 큰 예제의 일부입니다 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
 ### <a name="code"></a>코드  
   

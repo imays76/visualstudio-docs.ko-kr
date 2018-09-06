@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 095325fc8312747b61ff4312c5fe616ae79ce045
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8bcac83d23bae3d8c269a53a95fedb9507245e9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152960"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775828"
 ---
 # <a name="add-user-control-to-the-start-page"></a>시작 페이지에 사용자 정의 컨트롤 추가
 이 연습에서는 사용자 지정 시작 페이지에 대 한 DLL 참조를 추가 하는 방법을 보여 줍니다. 예제 솔루션에 사용자 컨트롤을 추가, 사용자 정의 컨트롤을 빌드 및 시작 페이지에서 빌드된 어셈블리를 참조 한 다음 *.xaml* 파일입니다. 새 탭을 기본 웹 브라우저로 함수는 사용자 컨트롤을 호스팅합니다.  
@@ -177,7 +177,7 @@ ms.locfileid: "39152960"
   
 1.  XAML 파일에 및 지원 텍스트 파일 또는 태그 파일에 복사 합니다 *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  폴더입니다.  
   
-2.  시작 페이지에서 모든 컨트롤 또는 Visual Studio가 설치 되지 않은 어셈블리의 형식을 참조 하는 경우 어셈블리를 복사한 다음에 * Visual Studio 설치 폴더 ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  시작 페이지에서 모든 컨트롤 또는 Visual Studio가 설치 되지 않은 어셈블리의 형식을 참조 하는 경우 어셈블리를 복사한 다음에 붙여 넣습니다 _Visual Studio 설치 폴더_**\Common7\IDE\ PrivateAssemblies\\**합니다.  
   
 3.  Visual Studio 명령 프롬프트에서 입력 **devenv /rootsuffix Exp** Visual Studio의 실험적 인스턴스를 엽니다.  
   

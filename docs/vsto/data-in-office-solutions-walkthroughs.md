@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c63a98d47a3846ea6482624aa71cd0a7378f1a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 35dbc38bf4e0873e9f3fb0fc1bf5c0525e56a61e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674836"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>에서 데이터 Office 솔루션 연습
   다음 연습에서는 Microsoft Office Word 및 Microsoft Office Excel용 문서 수준 사용자 지정 및 VSTO 추가 기능 데이터로 작업하는 방법을 보여 줍니다.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 05/17/2018
  Excel용 문서 수준 사용자 지정에서 SQL Server 데이터베이스의 테이블을 <xref:Microsoft.Office.Tools.Excel.ListObject> 에 바인딩하는 방법을 보여 줍니다.  
   
  [연습: VSTO 추가 기능 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
- Word용 VSTO 추가 기능에서 SQL Server 데이터베이스의 단일 데이터 필드를 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 에 바인딩하는 방법을 보여 줍니다.  
+ SQL Server 데이터베이스의 단일 데이터 필드를 바인딩하는 방법을 보여는 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> VSTO 추가 기능에서 Word에 대 한 합니다.  
   
  [연습: VSTO 추가 기능 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
  Excel용 VSTO 추가 기능의 <xref:Microsoft.Office.Tools.Excel.ListObject> 에 SQL Server 데이터베이스의 테이블을 바인딩하는 방법을 보여 줍니다.  
@@ -57,17 +58,17 @@ ms.lasthandoff: 05/17/2018
  [연습: 서버의 통합 문서에서 캐시 된 데이터를 검색 합니다.](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
  Excel을 시작하지 않고 Microsoft Office Excel 통합 문서에 캐시되는 데이터 집합에서 데이터를 검색하는 방법을 보여 줍니다.  
   
- [연습: 서버에서 통합 문서에서 캐시 된 데이터를 변경 합니다.](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
+ [연습: 서버의 통합 문서에서 캐시 된 데이터를 변경 합니다.](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
  Excel을 시작하지 않고 Microsoft Office Excel 통합 문서에 캐시되는 데이터 집합을 수정하는 방법을 보여 줍니다.  
   
 ## <a name="see-also"></a>참고자료  
- [Word를 사용한 연습](../vsto/walkthroughs-using-word.md)   
- [Excel을 사용한 연습](../vsto/walkthroughs-using-excel.md)   
+ [Word를 사용 하 여 연습](../vsto/walkthroughs-using-word.md)   
+ [Excel을 사용 하 여 연습](../vsto/walkthroughs-using-excel.md)   
  [Office UI 사용자 지정 연습](../vsto/office-ui-customization-walkthroughs.md)   
  [보안 및 배포 연습](../vsto/security-and-deployment-walkthroughs.md)   
  [Office 개발 샘플](../vsto/office-development-samples.md)   
- [시작 하려면 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)   
- [디자인 하 고 Office 솔루션을 만들려면](../vsto/designing-and-creating-office-solutions.md)  
+ [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)  
   
   

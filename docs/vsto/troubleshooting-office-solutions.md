@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f3fa22f6f6c0b6bb980be28faa46912bacbe341
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693187"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673931"
 ---
 # <a name="troubleshoot-office-solutions"></a>Office 솔루션 문제 해결
   이 섹션에는 Visual Studio의 Office 개발 도구를 사용하여 솔루션을 만들 때 발생할 수 있는 일반적인 문제를 해결하기 위한 팁이 들어 있습니다.  
@@ -31,8 +31,8 @@ ms.locfileid: "34693187"
  [Office 솔루션의 오류 문제 해결](../vsto/troubleshooting-errors-in-office-solutions.md)  
  Visual Studio에서 Office 솔루션을 디자인하고 실행하고 테스트하는 동안 발생할 수 있는 일반적인 문제에 대해 설명합니다.  
   
- [방법: VSTO 추가 기능을 사용 하지 않도록 설정 된 다시 사용 하도록 설정](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
- 하드 비활성화 또는 소프트 비활성화 상태인 VSTO 추가 기능을 다시 사용하도록 설정하는 방법에 대해 설명합니다.  
+ [방법: VSTO 추가 기능을 비활성화 된 다시 사용 하도록 설정](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ VSTO 추가 기능을 하드 또는 소프트 비활성화 된 다시 사용 하도록 설정 하는 방법에 설명 합니다.  
   
  [Office 솔루션 오류에에서 대 한 추가 지원](../vsto/additional-support-for-errors-in-office-solutions.md)  
  Office 솔루션의 오류 및 경고 문제 해결을 위한 다른 리소스에 대해 설명합니다.  

@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그래밍 방식으로 검색 하 고 문서에서 텍스트를 바꿀 | Microsoft Docs'
+title: '방법: 프로그래밍 방식으로 검색 하 고 문서에서 텍스트 바꾸기'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,25 +19,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9967fb6bb0b9ecf377763c25037089bf600145c6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4a2e1dd1cb1a9e10ddaa442318094ac258a6dc4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673954"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text--in-documents"></a>방법: 프로그래밍 방식으로 문서에서 텍스트 검색 및 바꾸기
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>방법: 프로그래밍 방식으로 검색 하 고 문서에서 텍스트 바꾸기
   <xref:Microsoft.Office.Interop.Word.Find> 개체는 <xref:Microsoft.Office.Interop.Word.Selection> 및 <xref:Microsoft.Office.Interop.Word.Range> 개체 둘 다의 멤버이며, 둘 중 하나를 사용하여 Microsoft Office Word 문서에서 텍스트를 검색할 수 있습니다. 바꾸기 명령은 찾기 명령의 확장입니다.  
   
  <xref:Microsoft.Office.Interop.Word.Find> 개체를 사용하여 Microsoft Office Word 문서를 반복하고 특정 텍스트, 서식 또는 스타일을 검색한 다음 <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> 속성을 사용하여 찾은 항목을 바꿉니다.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="using-a-selection-object"></a>Selection 개체 사용  
+## <a name="use-a-selection-object"></a>Selection 개체 사용  
  <xref:Microsoft.Office.Interop.Word.Selection> 개체를 사용하여 텍스트를 찾는 경우 지정한 검색 조건은 현재 선택한 텍스트에 대해서만 적용됩니다. <xref:Microsoft.Office.Interop.Word.Selection>이 삽입 지점이면 문서가 검색됩니다. 검색 조건과 일치하는 항목이 발견되면 자동으로 선택됩니다.  
   
  <xref:Microsoft.Office.Interop.Word.Find> 조건은 누적되며, 이는 조건이 이전 검색 조건에 추가됨을 의미합니다. 검색 전에 <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> 메서드를 사용하여 이전 검색의 서식을 지웁니다.  
   
-#### <a name="to-find-text-using-a-selection-object"></a>Selection 개체를 사용하여 텍스트를 찾으려면  
+### <a name="to-find-text-using-a-selection-object"></a>Selection 개체를 사용하여 텍스트를 찾으려면  
   
 1.  변수에 검색 문자열을 할당합니다.  
   
@@ -59,10 +60,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#67)]
  [!code-csharp[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#67)]  
   
-## <a name="using-a-range-object"></a>Range 개체 사용  
- <xref:Microsoft.Office.Interop.Word.Range> 개체를 사용하면 사용자 인터페이스에 아무것도 표시하지 않고 텍스트를 검색할 수 있습니다. <xref:Microsoft.Office.Interop.Word.Find> 반환 **True** 검색 조건과 일치 하는 텍스트가 있는 경우 및 **False** 그렇지 않은 경우. 또한 텍스트가 발견되는 경우 검색 조건과 일치하도록 <xref:Microsoft.Office.Interop.Word.Range> 개체를 다시 정의합니다.  
+## <a name="use-a-range-object"></a>Range 개체 사용  
+ <xref:Microsoft.Office.Interop.Word.Range> 개체를 사용하면 사용자 인터페이스에 아무것도 표시하지 않고 텍스트를 검색할 수 있습니다. 합니다 <xref:Microsoft.Office.Interop.Word.Find> 개체를 반환 합니다 **True** 된 검색 조건과 일치 하는 텍스트가 있는 경우 및 **False** 그렇지 않은 경우. 또한 텍스트가 발견되는 경우 검색 조건과 일치하도록 <xref:Microsoft.Office.Interop.Word.Range> 개체를 다시 정의합니다.  
   
-#### <a name="to-find-text-using-a-range-object"></a>Range 개체를 사용하여 텍스트를 찾으려면  
+### <a name="to-find-text-using-a-range-object"></a>Range 개체를 사용하여 텍스트를 찾으려면  
   
 1.  문서의 두 번째 단락으로 구성된 <xref:Microsoft.Office.Interop.Word.Range> 개체를 정의합니다.  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#72)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#72)]  
   
-2.  사용 하 여는 <xref:Microsoft.Office.Interop.Word.Range.Find%2A> 의 속성은 <xref:Microsoft.Office.Interop.Word.Range> 개체, 먼저 기존 서식 옵션을 선택 취소 한 다음 문자열을 검색 **오세요**합니다.  
+2.  사용 하 여는 <xref:Microsoft.Office.Interop.Word.Range.Find%2A> 의 속성을 <xref:Microsoft.Office.Interop.Word.Range> 개체, 먼저 모든 기존 서식 옵션을 선택 취소 한 다음 문자열을 검색 **오세요**합니다.  
   
      [!code-vb[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#73)]
      [!code-csharp[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#73)]  
@@ -98,10 +99,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#71)]
  [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]  
   
-## <a name="searching-for-and-replacing-text-in-documents"></a>문서에서 텍스트 검색 및 바꾸기  
- 다음 코드는 현재 선택 영역을 검색 하 고 문자열의 모든 문자열을 대체 **오세요** 문자열로 **Found**합니다.  
+## <a name="search-for-and-replace-text-in-documents"></a>검색 및 문서에서 텍스트 바꾸기  
+ 다음 코드는 현재 선택 영역을 검색 하 고 일치 하는 문자열의 모든 대체 **오세요** 문자열로 **찾았습니다**합니다.  
   
-#### <a name="to-search-for-and-replace-text-in-documents"></a>문서에서 텍스트를 검색하고 바꾸려면  
+### <a name="to-search-for-and-replace-text-in-documents"></a>문서에서 텍스트를 검색하고 바꾸려면  
   
 1.  프로젝트의 `ThisDocument` 또는 `ThisAddIn` 클래스에 다음 예제 코드를 추가합니다.  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 04/16/2018
   
      <xref:Microsoft.Office.Interop.Word.Find> 클래스에는 <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> 메서드가 있고 <xref:Microsoft.Office.Interop.Word.Replacement> 클래스에도 자체 <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> 메서드가 있습니다. 찾기 및 바꾸기 작업을 수행 하는 경우에 두 개체의 서식 지우기 메서드를 사용 해야 합니다. <xref:Microsoft.Office.Interop.Word.Find> 개체에서만 사용하는 경우 대체 텍스트에서 예기치 않은 결과가 발생할 수 있습니다.  
   
-2.  <xref:Microsoft.Office.Interop.Word.Find> 개체의 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 메서드를 사용하여 찾은 각 항목을 바꿉니다. 바꿀 항목을 지정 하려면는 *대체* 매개 변수입니다. 이 매개 변수는 다음 <xref:Microsoft.Office.Interop.Word.WdReplace> 값 중 하나일 수 있습니다.  
+2.  <xref:Microsoft.Office.Interop.Word.Find> 개체의 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 메서드를 사용하여 찾은 각 항목을 바꿉니다. 바꿀 항목을 지정 하려면 사용 합니다 *대체* 매개 변수입니다. 이 매개 변수는 다음 <xref:Microsoft.Office.Interop.Word.WdReplace> 값 중 하나일 수 있습니다.  
   
     -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll>은 찾은 항목을 모두 바꿉니다.  
   
@@ -118,10 +119,10 @@ ms.lasthandoff: 04/16/2018
   
     -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne>은 찾은 첫 번째 항목을 바꿉니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [방법: 프로그래밍 방식으로 Word에서 검색 옵션 설정](../vsto/how-to-programmatically-set-search-options-in-word.md)   
  [방법: 프로그래밍 방식으로 문서에서 찾은 항목 반복](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [방법: 프로그래밍 방식으로 검색 후 선택 영역 복원](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)  
   

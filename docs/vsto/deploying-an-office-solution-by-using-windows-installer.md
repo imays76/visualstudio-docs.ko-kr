@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2549f8646d5289925a45737d8d5b2e7707ea301f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 58d41395a7abd05b5bce353655f9149b7a2fbd44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382618"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775716"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer를 사용 하 여 Office 솔루션 배포
 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]을 사용하여 Office 솔루션에 필요한 Windows Installer를 만드는 방법을 알아봅니다.  
@@ -141,7 +141,7 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
   
 3. 다음 그림에 나와 있는 대로 **프로젝트 도우미** 페이지 하단에서 **응용 프로그램 파일** 단추를 선택합니다.  
   
-   ![응용 프로그램 파일 단추입니다. ] (../vsto/media/installshield-applicationfiles.png "The 응용 프로그램 파일 단추입니다.")  
+   ![응용 프로그램 파일 단추입니다. ](../vsto/media/installshield-applicationfiles.png "The 응용 프로그램 파일 단추입니다.")  
   
 4. **응용 프로그램 파일** 페이지에서 **프로젝트 출력 추가** 단추를 선택합니다.  
   
@@ -161,7 +161,7 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
   
    다음 그림과 같이 **응용 프로그램 파일** 페이지에 이제 프로젝트 출력 파일, 배포 매니페스트, 응용 프로그램 매니페스트가 포함됩니다.  
   
-   ![설치 프로젝트의 출력 파일입니다. ] (../vsto/media/installshield-outputfiles.png "설치 프로젝트의 출력 파일입니다.")  
+   ![설치 프로젝트의 출력 파일입니다. ](../vsto/media/installshield-outputfiles.png "설치 프로젝트의 출력 파일입니다.")  
   
   
 ## <a name="Configure"></a>종속 구성 요소를 필수 조건으로 구성  
@@ -252,7 +252,7 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
   
 11. InstallShield 프로젝트의 **재배포 가능** 페이지에서 **새로 고침** 단추를 선택하여 다음과 같이 재배포 가능 구성 요소 목록을 새로 고칩니다.  
   
-   ![새로 고침 단추입니다. ] (../vsto/media/installshield-refreshbutton.png "새로 고침 단추입니다.")  
+   ![새로 고침 단추입니다. ](../vsto/media/installshield-refreshbutton.png "새로 고침 단추입니다.")  
   
 12. 재배포 가능 구성 요소 목록에서 **Visual Studio 2010 Tools for Office Runtime** 확인란을 선택합니다.  
   
@@ -309,7 +309,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
   
 2. **프로젝트 도우미** 페이지 아래쪽에서 **응용 프로그램 레지스트리** 단추를 선택하면 다음 화면이 나타납니다.  
   
-   ![응용 프로그램 레지스트리 단추입니다. ] (../vsto/media/installshield-applicationregistry.gif "응용 프로그램 레지스트리 단추입니다.")  
+   ![응용 프로그램 레지스트리 단추입니다. ](../vsto/media/installshield-applicationregistry.gif "응용 프로그램 레지스트리 단추입니다.")  
   
    **응용 프로그램 레지스트리** 페이지가 열립니다.  
   
@@ -447,7 +447,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
   
 3. 다음 그림에 나와 있는 대로 **프로젝트 도우미** 페이지 하단에서 **응용 프로그램 파일** 단추를 선택합니다.  
   
-   ![응용 프로그램 파일 단추입니다. ] (../vsto/media/installshield-applicationfiles.png "The 응용 프로그램 파일 단추입니다.")  
+   ![응용 프로그램 파일 단추입니다. ](../vsto/media/installshield-applicationfiles.png "The 응용 프로그램 파일 단추입니다.")  
   
 4. **응용 프로그램 파일** 페이지에서 **프로젝트 출력 추가** 단추를 선택합니다.  
   
@@ -526,7 +526,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
   
 9. 메뉴 모음에서 선택 **빌드합니다** > **OfficeAddInSetup 빌드**합니다.  
   
-   빌드가 완료 되 면을 찾을 수 있습니다 합니다 *setup.exe* 의 파일을 **OfficeAddInSetup** 다음 위치에 있는 프로젝트: *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\ Express\SingleImage\DiskImages\DISK1\**  
+   빌드가 완료 되 면을 찾을 수 있습니다 합니다 *setup.exe* 의 파일을 **OfficeAddInSetup** 다음 위치에 있는 프로젝트: _OfficeAddInSetupProjectRoot_ * *\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>참고자료  

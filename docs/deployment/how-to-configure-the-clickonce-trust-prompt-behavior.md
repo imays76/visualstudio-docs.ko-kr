@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155099"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774809"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>방법: ClickOnce 신뢰 프롬프트 동작 구성
 최종 사용자가 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램, 콘솔 응용 프로그램, WPF 브라우저 등의 ClickOnce 응용 프로그램을 설치 하는 옵션이 제공 됩니다 컨트롤에 ClickOnce 신뢰 프롬프트를 구성할 수 있습니다. Office 솔루션 및 응용 프로그램입니다. 각 최종 사용자의 컴퓨터에서 레지스트리 키를 설정 하 여 신뢰 프롬프트를 구성 합니다.  
@@ -59,11 +59,11 @@ ms.locfileid: "39155099"
   
     1.  클릭 **시작**를 클릭 하 고 **실행**합니다.  
   
-    2.  에 **열기** 상자에 입력 `regedit32`를 클릭 하 고 **확인**합니다.  
+    2.  에 **열기** 상자에 입력 `regedit`를 클릭 하 고 **확인**합니다.  
   
 2.  다음 레지스트리 키를 찾습니다.  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel**  
   
      키가 없으면 만듭니다.  
   
@@ -122,7 +122,7 @@ ms.locfileid: "39155099"
   
 2.  다음 레지스트리 키를 찾습니다.  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\합니다. NETFramework\Security\TrustManager\PromptingLevel** 
   
      키가 없으면 만듭니다.  
   

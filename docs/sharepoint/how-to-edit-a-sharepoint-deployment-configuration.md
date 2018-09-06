@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9640d98522c74fb33f8845e255511a807e03961e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119517"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774796"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>방법: SharePoint 배포 구성 편집
   배포 구성을 만들거나 기존 배포 구성을 수정할 수 있습니다. 예를 들어, 하나의 단계를 실행 또는 배포 프로세스의 단계 순서를 변경할 수 있습니다. 만들기 또는 기본 제공 및 프로그래밍 방식으로 추가 구성을 변경할 수 없으므로 배포 구성을 수정 수 있습니다.  
@@ -33,7 +33,7 @@ ms.locfileid: "37119517"
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>SharePoint 배포 구성을 만들려면  
   
-1.  **솔루션 탐색기**, SharePoint 프로젝트를 선택한 다음, 메뉴 모음에서 **프로젝트**에서 * ProjectName ***속성**합니다.  
+1.  **솔루션 탐색기**, SharePoint 프로젝트를 선택한 다음, 메뉴 모음에서 **프로젝트**하십시오 _ProjectName_**속성**합니다.  
   
 2.  에 **SharePoint** 탭을 선택 합니다 **새로 만들기** 단추입니다.  
   
