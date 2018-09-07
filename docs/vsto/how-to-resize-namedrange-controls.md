@@ -1,5 +1,5 @@
 ---
-title: '방법: NamedRange 컨트롤 크기 조정 | Microsoft Docs'
+title: '방법: NamedRange 컨트롤 크기 조정'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d475f9140607ba0ae7415a60a9589aef11a44a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d785aba9d08f71aa8530bc2edd015f497caafef
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673937"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>방법: NamedRange 컨트롤 크기 조정
   Microsoft Office Excel 문서에 추가할 때 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤의 크기를 설정할 수 있지만 나중에 크기를 조정할 수도 있습니다.  
@@ -32,16 +33,16 @@ ms.lasthandoff: 04/16/2018
   
  이 항목에서는 다음 작업에 대해 설명합니다.  
   
--   [디자인 타임에 NamedRange 컨트롤의 크기 조정](#designtime)  
+-   [디자인 타임에 NamedRange 컨트롤 크기 조정](#designtime)  
   
 -   [런타임에 문서 수준 프로젝트에서 NamedRange 컨트롤 크기 조정](#runtimedoclevel)  
   
--   [런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤의 크기 조정](#runtimeaddin)  
+-   [런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤 크기 조정](#runtimeaddin)  
   
-##  <a name="designtime"></a> Resizing NamedRange Controls at Design Time  
+##  <a name="designtime"></a> 디자인 타임에 NamedRange 컨트롤 크기 조정  
  명명된 범위의 크기를 **이름 정의** 대화 상자에서 다시 정의하여 크기를 조정할 수 있습니다.  
   
-#### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>이름 정의 대화 상자를 사용하여 명명된 범위의 크기를 조정하려면  
+### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>이름 정의 대화 상자를 사용하여 명명된 범위의 크기를 조정하려면  
   
 1.  <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 마우스 오른쪽 단추로 클릭합니다.  
   
@@ -57,13 +58,13 @@ ms.lasthandoff: 04/16/2018
   
 6.  **확인**을 클릭합니다.  
   
-##  <a name="runtimedoclevel"></a> Resizing NamedRange Controls at Run Time in a Document-Level Project  
+##  <a name="runtimedoclevel"></a> 런타임에 문서 수준 프로젝트에서 NamedRange 컨트롤 크기 조정  
  <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> 속성을 사용하여 프로그래밍 방식으로 명명된 범위의 크기를 조정할 수 있습니다.  
   
 > [!NOTE]  
 >  **속성** 창에서 <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> 속성은 읽기 전용으로 표시됩니다.  
   
-#### <a name="to-resize-a-named-range-programmatically"></a>프로그래밍 방식으로 명명된 범위의 크기를 조정하려면  
+### <a name="to-resize-a-named-range-programmatically"></a>프로그래밍 방식으로 명명된 범위의 크기를 조정하려면  
   
 1.  <xref:Microsoft.Office.Tools.Excel.NamedRange> 의 **A1** 셀에서 `Sheet1`컨트롤을 만듭니다.  
   
@@ -75,10 +76,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]  
   
-##  <a name="runtimeaddin"></a> Resizing NamedRange Controls at Run Time in an VSTO Add-in project  
- 런타임에 열려 있는 워크시트에서 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤의 크기를 조정할 수 있습니다. VSTO 추가 기능을 사용하여 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가하는 방법에 대한 자세한 내용은 [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)을 클릭합니다.  
+##  <a name="runtimeaddin"></a> 런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤 크기 조정  
+ 크기를 조정할 수는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 런타임에 열려 있는 워크시트에 컨트롤입니다. 추가 하는 방법에 대 한 자세한를 <xref:Microsoft.Office.Tools.Excel.NamedRange> VSTO 추가 기능을 사용 하 여 워크시트에 컨트롤을 참조 하세요 [방법: 워크시트에 NamedRange 추가 제어](../vsto/how-to-add-namedrange-controls-to-worksheets.md)입니다.  
   
-#### <a name="to-resize-a-named-range-programmatically"></a>프로그래밍 방식으로 명명된 범위의 크기를 조정하려면  
+### <a name="to-resize-a-named-range-programmatically"></a>프로그래밍 방식으로 명명된 범위의 크기를 조정하려면  
   
 1.  <xref:Microsoft.Office.Tools.Excel.NamedRange> 의 **A1** 셀에서 `Sheet1`컨트롤을 만듭니다.  
   
@@ -90,8 +91,8 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]  
   
-## <a name="see-also"></a>참고 항목  
- [런타임에 Word 문서 및 VSTO 추가 기능에서 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+## <a name="see-also"></a>참고자료  
+ [Word 문서 및 런타임에 VSTO 추가 기능에서 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)   
  [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)   

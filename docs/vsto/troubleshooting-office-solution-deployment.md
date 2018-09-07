@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008706"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774664"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 솔루션 배포 문제 해결
   이 항목에는 Office 솔루션을 배포할 때 발생할 수 있는 일반적인 문제를 해결하는 방법에 대한 정보가 포함되어 있습니다.  
@@ -72,7 +72,7 @@ ms.locfileid: "40008706"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>캐시된 복사본을 로드하지 않고 어셈블리를 다운로드하려면  
   
-1.  메뉴 모음에서 선택 **프로젝트**, * ProjectName ***속성**합니다.  
+1.  메뉴 모음에서 선택 **프로젝트**하십시오 _ProjectName_**속성**합니다.  
   
 2.  **응용 프로그램** 페이지에서 **어셈블리 정보**를 선택합니다.  
   

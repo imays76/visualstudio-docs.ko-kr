@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그래밍 방식으로 저장 하 고 Excel 범위에서 날짜 값 검색 | Microsoft Docs'
+title: '방법: 프로그래밍 방식으로 저장 하 고 Excel 범위에서 날짜 값 검색'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,27 +22,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b67bc45218aa6fb537516f426f1ac3b25fad698c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f1abe0e797a65886f595913f8e6495ec084b7e2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674849"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>방법: 프로그래밍 방식으로 Excel 범위에서 날짜 값 저장 및 검색
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>방법: 프로그래밍 방식으로 저장 하 고 Excel 범위에서 날짜 값 검색
   저장할 수 있으며 값을 검색 한 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤 또는 네이티브 Excel 범위 개체입니다.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Visual Studio에서 Office 개발 도구를 사용 하 여 범위에서 1/1/1900 이후에 내에 있는 날짜 값을 저장 하는 경우 OA (OLE 자동화) 형식으로 저장 됩니다. 사용 해야 합니다는 <xref:System.DateTime.FromOADate%2A> OA (OLE 자동화) 날짜 값을 검색 하는 메서드입니다. 날짜가 1900 년 1 월 1 일 보다 이전 이면를 문자열로 저장 됩니다.  
+ Visual Studio에서 Office 개발 도구를 사용 하 여 범위에서 1900 년 1 월 1 일 이후인 속하는 날짜 값을 저장 하는 경우 OLE Automation (OA) 형식으로 저장 됩니다. 사용 해야는 <xref:System.DateTime.FromOADate%2A> OLE Automation (OA) 날짜 값을 검색 하는 방법입니다. 1900 년 1 월 1 일 보다 이전 날짜인 경우 문자열로 저장 됩니다.  
   
 > [!NOTE]  
->  Excel 날짜는 1900 첫 2 개월에 대 한 OLE 자동화 날짜에서 다릅니다. 차이점도 있습니다 하는 경우는 **1904 날짜 체계** 옵션을 선택 합니다. 코드 예제에서는 이러한 차이점을 설명 하지 않습니다.  
+>  Excel 날짜는 1900의 첫 2 개월에 대 한 OLE 자동화 날짜에서 다릅니다. 도 차이가 발생 하는 경우는 **1904 날짜 체계** 옵션을 선택 합니다. 아래 코드 예제에서는 이러한 차이점을 다루지 않습니다.  
   
-## <a name="using-a-namedrange-control"></a>NamedRange 컨트롤을 사용 하 여  
+## <a name="use-a-namedrange-control"></a>NamedRange 컨트롤을 사용 하 여  
   
--   이 예제는 문서 수준 사용자 지정 합니다. 다음 코드에 없는 시트 클래스에 배치 되어야 합니다는 `ThisWorkbook` 클래스입니다.  
+-   이 예제에서는 문서 수준 사용자 지정입니다. 아니라 시트 클래스에 배치할 해야 다음 코드는 `ThisWorkbook` 클래스입니다.  
   
-#### <a name="to-store-a-date-value-in-a-named-range"></a>명명된 된 범위에서 날짜 값을 저장 하려면  
+### <a name="to-store-a-date-value-in-a-named-range"></a>명명된 된 범위에서 날짜 값을 저장 하려면  
   
 1.  만들기는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 셀에서 컨트롤 **A1**합니다.  
   
@@ -54,16 +55,16 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
      [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]  
   
-#### <a name="to-retrieve-a-date-value-from-a-named-range"></a>명명된 된 범위에서 날짜 값을 검색 하려면  
+### <a name="to-retrieve-a-date-value-from-a-named-range"></a>명명된 된 범위에서 날짜 값을 검색 하려면  
   
 1.  날짜 값을 검색 `NamedRange1`합니다.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
      [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]  
   
-## <a name="using-native-excel-ranges"></a>네이티브 Excel 범위를 사용 하 여  
+## <a name="use-native-excel-ranges"></a>사용 하 여 네이티브 Excel 범위  
   
-#### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>네이티브 Excel 범위 개체의 날짜 값을 저장 하려면  
+### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>네이티브 Excel 범위 개체의 날짜 값을 저장 하려면  
   
 1.  만들기는 <xref:Microsoft.Office.Interop.Excel.Range> 셀을 나타내는 **A1**합니다.  
   
@@ -75,15 +76,15 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]  
   
-#### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>네이티브 Excel 범위 개체에서 날짜 값을 검색 하려면  
+### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>네이티브 Excel 범위 개체에서 날짜 값을 검색 하려면  
   
 1.  날짜 값을 검색 `rng`합니다.  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]  
   
-## <a name="see-also"></a>참고 항목  
- [범위 작업](../vsto/working-with-ranges.md)   
+## <a name="see-also"></a>참고자료  
+ [범위를 사용 하 여 작동 합니다.](../vsto/working-with-ranges.md)   
  [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)   
  [NamedRange 컨트롤](../vsto/namedrange-control.md)   
  [방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   

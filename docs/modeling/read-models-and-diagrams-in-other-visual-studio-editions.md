@@ -11,32 +11,32 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4eb1b80eaa5b0af600fa45ba0cbe4786043f1580
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 420a17dbac9e0a3bf10b4c92baa108067ad44949
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948719"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775583"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
 모델 생성을 지원하지 않는 Visual Studio 버전에서 모델을 열면 읽기 전용 모드로 모델이 열립니다. 이 모드에서는 다이어그램의 레이아웃을 변경할 수 있지만 모델을 변경할 수는 없습니다.
 
- 모델 생성을 지 원하는 Visual Studio의 버전을 보려면 참조 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.
+ 모델 생성을 지 원하는 Visual Studio의 버전을 보려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>모델 및 다이어그램에 대한 액세스 권한 얻기
  종속성 다이어그램을 읽으려면 먼저 Visual Studio를 사용 하 여 모델링 프로젝트를 열려면 하며 다음 그 안에서 다이어그램을 엽니다.
 
- 이러한 이유로 종속성 다이어그램을 보고 싶은 경우도 있어야 된 만들어진 모델링 프로젝트에 대 한 액세스. 이 작업을 수행하려면 [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)]에서 프로젝트에서 액세스하거나 프로젝트 파일의 복사본을 가져옵니다.
+ 따라서 종속성 다이어그램을 읽으려는 경우 이전에 생성 된 모델링 프로젝트에 액세스할 수 있어야 합니다도. 이 작업을 수행하려면 [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)]에서 프로젝트에서 액세스하거나 프로젝트 파일의 복사본을 가져옵니다.
 
 > [!NOTE]
 >  코드 맵 및 코드에서 생성된 .NET 클래스 다이어그램에는 적용되지 않습니다. 이러한 다이어그램은 모델링 프로젝트와 독립적으로 볼 수 있습니다.
 
  종속성 다이어그램을 읽으려면 해야 하는 파일의 최소 집합은 다음과 같습니다.
 
--   두 개의 다이어그램 읽으려 한다고, 예를 들어 다이어그램에 대 한 파일 **MyDiagram.classdiagram 및 MyDiagram.classdiagram.layout**합니다.
+-   두 개의 다이어그램 파일 하려는 내용은 예를 들어 다이어그램 **MyDiagram.classdiagram 및 MyDiagram.classdiagram.layout**합니다.
 
     > [!NOTE]
-    >  종속성 다이어그램에 대 한 또한 있어야 라는 파일 * MyDiagram ***. layerdiagram.suppressions**합니다.
+    >  종속성 다이어그램에 대 한 있어야 라는 파일이 _MyDiagram_**. layerdiagram.suppressions**합니다.
 
 -   모델링 프로젝트 파일 (**MyModel.modelproj**)
 

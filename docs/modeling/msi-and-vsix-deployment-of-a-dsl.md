@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f25a5e18e78025811e26210de53413b668385539
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566540"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774780"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 사용자 고유의 컴퓨터 또는 다른 컴퓨터에 도메인 특정 언어를 설치할 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 대상 컴퓨터에 이미 설치 되어 있어야 합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "39566540"
 
     1.  **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **DslPackage** 프로젝트를 마우스 클릭 **Windows 탐색기에서 폴더 열기**합니다.
 
-    2.  파일을 찾습니다 **bin\\\*\\***YourProject***합니다. DslPackage.vsix**
+    2.  파일을 찾습니다 **bin\\\*\\**_YourProject_**합니다. DslPackage.vsix**
 
 2.  복사 합니다 **.vsix** DSL을 설치 하려는 대상 컴퓨터에는 파일입니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.
 

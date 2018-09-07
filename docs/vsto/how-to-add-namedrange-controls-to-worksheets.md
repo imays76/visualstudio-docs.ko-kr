@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 88f427dd22b7395141ce4ffe0c970cdf9c07ff71
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674765"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>방법: 워크시트에 NamedRange 컨트롤 추가
   추가할 수 있습니다 <xref:Microsoft.Office.Tools.Excel.NamedRange> 디자인 타임 및 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 컨트롤입니다.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤 추가](#runtimeaddin)  
   
- 에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤 참조 [NamedRange 컨트롤](../vsto/namedrange-control.md)합니다.  
+ 에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 참조 하세요 [NamedRange 컨트롤](../vsto/namedrange-control.md)합니다.  
   
 ##  <a name="designtime"></a> 디자인 타임에 NamedRange 컨트롤 추가  
  디자인 타임에 문서 수준 프로젝트에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가하기 위한 여러 가지 방법이 있습니다. 즉, Excel, Visual Studio **도구 상자**및 **데이터 원본** 창에서 추가할 수 있습니다.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 05/17/2018
   
 1.  명명된 범위에 포함하려는 셀을 선택합니다.  
   
-2.  에 **이름 상자**, 범위 및 키를 눌러에 대 한 이름을 입력 **Enter**합니다.  
+2.  에 **이름 상자**, 누릅니다 범위에 대 한 이름을 입력 **Enter**합니다.  
   
      **이름 상자** 는 워크시트의 **A** 열 바로 위에 수식 입력줄 옆에 있습니다.  
   
@@ -69,14 +70,14 @@ ms.lasthandoff: 05/17/2018
   
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-data-sources-window"></a>데이터 원본 창을 사용하여 워크시트에 NamedRange 컨트롤을 추가하려면  
   
-1.  **데이터 원본** 창을 열고 데이터베이스에서 데이터 원본을 만듭니다. 자세한 내용은 참조 [새 연결 추가](../data-tools/add-new-connections.md)합니다.  
+1.  **데이터 원본** 창을 열고 데이터베이스에서 데이터 원본을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)합니다.  
   
 2.  **데이터 원본** 창에서 워크시트로 단일 필드를 끌어 놓습니다.  
   
-     데이터 바인딩된 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 워크시트에 추가됩니다. 자세한 내용은 참조 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)합니다.  
+     데이터 바인딩된 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 워크시트에 추가됩니다. 자세한 내용은 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)합니다.  
   
 ##  <a name="runtimedoclevel"></a> 런타임에 문서 수준 프로젝트에서 NamedRange 컨트롤 추가  
- 추가할 수는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 런타임에 워크시트에 프로그래밍 방식으로 제어 합니다. 이를 통해 이벤트에 대한 응답으로 호스트 컨트롤을 만들 수 있습니다. 동적으로 생성된 명명된 범위는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 참조 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
+ 추가할 수는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 런타임에 워크시트에 프로그래밍 방식으로 제어 합니다. 이를 통해 이벤트에 대한 응답으로 호스트 컨트롤을 만들 수 있습니다. 동적으로 생성된 명명된 범위는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
   
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>프로그래밍 방식으로 워크시트에 NamedRange 컨트롤을 추가하려면  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 05/17/2018
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]  
   
 ##  <a name="runtimeaddin"></a> 런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤 추가  
- VSTO 추가 기능 프로젝트에서 열려 있는 워크시트에 프로그래밍 방식으로 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다. 동적으로 생성된 명명된 범위는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 참조 [확장 Word 문서 및 Excel VSTO 추가 기능에서 런타임에 통합](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
+ VSTO 추가 기능 프로젝트에서 열려 있는 워크시트에 프로그래밍 방식으로 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다. 동적으로 생성된 명명된 범위는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [확장 Word 문서 및 Excel 통합 런타임에 VSTO 추가 기능에서](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
   
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>프로그래밍 방식으로 워크시트에 NamedRange 컨트롤을 추가하려면  
   

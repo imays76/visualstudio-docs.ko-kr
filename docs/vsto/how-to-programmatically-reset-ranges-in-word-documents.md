@@ -1,5 +1,5 @@
 ---
-title: '방법: 프로그래밍 방식으로 재설정 Word 문서의 범위 | Microsoft Docs'
+title: '방법: 프로그래밍 방식으로 Word 문서의 범위 다시 설정'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed267f4ed2211f2dda69b620aec9fdadbe5a76c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0da42b0e6ad6f8761e474292532728beb3987c57
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674416"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>방법: 프로그래밍 방식으로 Word 문서의 범위 다시 설정
   <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> 메서드를 사용하여 Microsoft Office Word 문서에서 기존의 범위의 크기를 조정합니다.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-reset-an-existing-range"></a>기존 범위를 다시 설정하려면  
+## <a name="to-reset-an-existing-range"></a>기존 범위를 다시 설정하려면  
   
 1.  문서의 처음 7자로 시작하는 초기 범위를 설정합니다.  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제  
   
-#### <a name="to-reset-an-existing-range-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 기존 범위를 다시 설정하려면  
+### <a name="to-reset-an-existing-range-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 기존 범위를 다시 설정하려면  
   
 1.  다음 예제에서는 문서 수준 사용자 지정의 전체 예를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisDocument` 클래스에서 실행합니다.  
   
@@ -57,17 +58,17 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제  
   
-#### <a name="to-reset-an-existing-range-in-an-vsto-add-in"></a>VSTO 추가 기능에서 기존 범위를 다시 설정하려면  
+### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>VSTO 추가 기능에서 기존 범위를 다시 설정 하려면  
   
-1.  다음 예제에서는 VSTO 추가 기능의 전체 예를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.  
+1.  다음 예제에서는 VSTO 추가 기능에 대 한 전체 예제를 보여 줍니다. 이 코드를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#42)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#42)]  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참고자료  
  [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [방법: 프로그래밍 방식으로 시작 및 끝 문자 범위 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [방법: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)  
+ [방법: 프로그래밍 방식으로 정의 하 고 문서에서 범위를 선택 합니다.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [방법: 프로그래밍 방식으로 범위의 시작 및 끝 문자 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [방법: 프로그래밍 방식으로 범위 또는 문서 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)  
   
   

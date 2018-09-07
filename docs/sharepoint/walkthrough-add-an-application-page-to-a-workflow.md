@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626002"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774590"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>연습: 워크플로에 응용 프로그램 페이지 추가
   이 연습에서는 워크플로 프로젝트에는 워크플로에서 파생 된 데이터를 표시 하는 응용 프로그램 페이지를 추가 하는 방법에 설명 합니다. 항목에서 설명한 프로젝트 기반 [연습: 연결 및 초기화 폼을 사용 하 여 워크플로 만드는](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)합니다.
@@ -337,7 +337,7 @@ ms.locfileid: "42626002"
 
 14. 공유 문서 목록에 다른 문서를 사용 하 여 11-13 단계를 반복 합니다. (문서의 수를 정확 하 게 중요 하지 않습니다.)
 
-15. 웹 브라우저에서 다음 URL을 열면 비용 보고서 응용 프로그램 요약 페이지를 표시 합니다. **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**합니다.
+15. 웹 브라우저에서 다음 URL을 열면 비용 보고서 응용 프로그램 요약 페이지를 표시 합니다. **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      경비 보고서 요약 페이지에 할당 된 금액을 초과 하는 경비 보고서에서 초과 금액 및 금액 모든 보고서의 모든를 나열 합니다.
 
