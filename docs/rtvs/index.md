@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667017"
 ---
-# <a name="working-with-r-in-visual-studio"></a>Visual Studio에서 R 작업
+# <a name="work-with-r-in-visual-studio"></a>Visual Studio에서 R 작업
 
 R은 통계 계산 및 그래픽을 위한 고도로 확장 가능한 언어 및 환경입니다. 이 프로그램은 GNU General Public License에 따라 무료로 배포되며, 강력한 커뮤니티 지원을 활용할 수 있고, 수학 기호 및 수식을 포함하는 게시 품질 도표를 생성하는 기능으로 잘 알려져 있습니다. [r project.org](https://www.r-project.org/about.html) 및 [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)(R 소개)에서 R에 대해 자세히 알아볼 수 있습니다.
 
@@ -28,7 +29,7 @@ RTVS(R Tools for Visual Studio)는 MIT 라이선스에 따라 출시된 Visual S
 Visual Studio에서 R을 사용해 보려면
 
 - [R Tools를 설치](installing-r-tools-for-visual-studio.md)합니다.
-- [시작](getting-started-with-r.md) 가이드와 [샘플](getting-started-samples.md) 및 [도움말 보기](getting-started-help.md) 문서를 따라 작업합니다.
+- [시작](getting-started-with-r.md) 가이드와 [샘플](getting-started-samples.md) 및 [도움말 보기](getting-started-help.md) 문서를 수행합니다.
 
 그런 후 아래 링크에 따라 R 관련 기능과 Visual Studio 자체의 일반 기능에 대해 알아보세요.
 
@@ -52,8 +53,8 @@ Visual Studio에서 R을 사용해 보려면
 
 ## <a name="send-us-your-feedback"></a>피드백을 보내주세요.
 
-1. **Github 문제**: RTVS 팀에 연락하는 가장 좋은 방법은 [GitHub에서 문제를 신고](https://github.com/Microsoft/RTVS/issues)하거나 **R Tools > 피드백** 메뉴를 사용하는 것입니다.
+1. **GitHub 문제**: RTVS 팀에 연락하는 가장 좋은 방법은 [GitHub에서 문제를 신고](https://github.com/Microsoft/RTVS/issues)하거나 **R Tools** > **피드백** 메뉴를 사용하는 것입니다.
 
-1. **웃는 얼굴/찡그린 얼굴 보내기**: **R Tools > 피드백** 메뉴에서는 문제점 진단에 도움이 될 수 있게 신속하게 피드백을 보내고 RTVS 로그 파일을 첨부할 수 있습니다. (로그를 따로 전송하려는 경우 `%temp%/RTVSlogs.zip`에 기록됩니다.) **도움말 > 피드백 > 설정** 메뉴 명령을 사용하거나 설치 중에 Visual Studio 원격 분석에서 옵트아웃(opt-out)한 경우 로깅이 사용되지 않도록 설정됩니다.
+1. **웃는 얼굴/찡그린 얼굴 보내기**: **R Tools** > **피드백** 메뉴에서는 문제점 진단에 도움이 될 수 있게 신속하게 피드백을 보내고 RTVS 로그 파일을 첨부할 수 있습니다. (로그를 따로 전송하려는 경우 해당 로그가 *%temp%/RTVSlogs.zip*에 기록됩니다.) **도움말** > **피드백** > **설정** 메뉴 명령을 사용하거나 설치 중에 Visual Studio 원격 분석에서 옵트아웃하면 로깅이 사용되지 않도록 설정됩니다.
 
 1. **전자 메일**: *microsoft.com의 rtvsuserfeedback*에서 팀으로 직접 피드백을 보낼 수 있습니다.
