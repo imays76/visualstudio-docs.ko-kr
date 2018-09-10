@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078643"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280677"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 응용 프로그램 및 배포 매니페스트 다시 서명
 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램 (xbap) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트에 대 한 배포 속성을 변경한 후 두 응용 프로그램에 다시 서명 해야 하 고 사용 하 여 배포 매니페스트는 인증서입니다. 이 프로세스는 변조 된 파일은 최종 사용자 컴퓨터에 설치 되지 않았는지 확인 하는 데 도움이 됩니다.  
@@ -33,7 +33,7 @@ Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로
  매니페스트를 다시 서명할 수 있습니다 다른 시나리오 고객에 게는 응용 프로그램에 서명 하 고 자체 인증서를 사용 하 여 배포 매니페스트 하는 경우입니다.  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>응용 프로그램 및 배포 매니페스트에 다시 서명  
- 응용 프로그램 매니페스트 파일에 이미 변경 했다고 가정 합니다 (*.manifest*). 자세한 내용은 [방법: 배포 속성을 변경할](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472)합니다.  
+ 응용 프로그램 매니페스트 파일에 이미 변경 했다고 가정 합니다 (*.manifest*). 자세한 내용은 [방법: 배포 속성을 변경할](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)합니다.  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe를 사용 하 여 매니페스트에 다시 응용 프로그램 및 배포를 서명 하려면  
   

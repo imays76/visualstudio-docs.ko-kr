@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85f146d567f429c8104017ef9441676f9cf3209b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623589"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283745"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace 독립 실행형 수집기 사용
 **IntelliTrace 독립 실행형 수집기** 를 사용하면 대상 컴퓨터에 Visual Studio를 설치하거나 대상 시스템 환경을 변경하지 않고도 프로덕션 서버 또는 기타 환경에서 앱에 대해 IntelliTrace 진단 데이터를 수집할 수 있습니다. IntelliTrace 독립 실행형 수집기는 웹, SharePoint, WPF 및 Windows Forrms 앱에서 작동합니다. 데이터 수집을 마쳤으면 컬렉터를 삭제하여 제거하면 됩니다.
@@ -382,7 +382,7 @@ ms.locfileid: "42623589"
 
 -   디버깅 세션 Visual Studio Enterprise에서 intellitrace를 참조 하세요 [IntelliTrace 기능](../debugger/intellitrace-features.md)합니다.
 
--   Microsoft Test Manager의 테스트 세션에서 [방법: 어려운 문제 디버그에 도움이 되는 IntelliTrace 데이터 수집](http://msdn.microsoft.com/Library/02b6716f-569e-4961-938a-e790a0c74b5c)을 참조하세요.
+-   Microsoft Test Manager의 테스트 세션에서 볼 [방법: 어려운 문제 디버그 도움이 되는 IntelliTrace 데이터 수집](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues)합니다.
 
 ## <a name="where-can-i-get-more-information"></a>추가 정보는 어디서 확인할 수 있나요?
  [저장된 IntelliTrace 데이터 사용](../debugger/using-saved-intellitrace-data.md)

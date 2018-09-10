@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 85c7aad0ef5f9374c722a58ec35c001695e55013
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 018b6a2f26f9b83b50498c6a0ec1e560fea94267
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567196"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280690"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>종속성 다이어그램을 사용하여 코드 유효성 검사
 
@@ -218,7 +218,7 @@ ms.locfileid: "39567196"
 
  유효성 검사 오류에 대 한 자세한 내용은 참조 하십시오 [레이어 유효성 검사 오류 이해 및 해결](#UnderstandingValidationErrors)합니다. [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]에 대한 자세한 내용은 다음을 참조하십시오.
 
--   [빌드 및 릴리스](/vsts/build-release/index)
+-   [Azure 파이프라인](/azure/devops/pipelines/index)
 
 -   [빌드 프로세스에 대 한 기본 템플릿 사용](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 

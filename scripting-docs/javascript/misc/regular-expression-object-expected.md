@@ -20,20 +20,20 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a5a0f3cb3b86e2e01d522f85d0dae23e9c9d3ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1b8e3c48b116680fe73d4cc318038cb2c13c4164
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632783"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280316"
 ---
 # <a name="regular-expression-object-expected"></a>정규식 개체가 필요합니다.
-호출 하려고는 **RegExp.prototype.toString** 또는 **RegExp.prototype.valueOf** 아닌 다른 형식의 개체에서 메서드 `RegExp`합니다. 이 형식의 호출 개체 유형 이어야 `RegExp`합니다.  
+호출 하려고 합니다 **RegExp.prototype.toString** 또는 **RegExp.prototype.valueOf** 이외의 다른 형식의 개체의 메서드를 `RegExp`입니다. 이 형식의 호출 개체 유형 이어야 `RegExp`합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   호출할는 **RegExp.prototype.toString** 또는 **RegExp.prototype.valueOf** 형식의 개체에 대 한 메서드 `RegExp`합니다.  
+-   만 호출 합니다 **RegExp.prototype.toString** 또는 **RegExp.prototype.valueOf** 형식의 개체에 있는 메서드의 `RegExp`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
- [정규식 구문 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

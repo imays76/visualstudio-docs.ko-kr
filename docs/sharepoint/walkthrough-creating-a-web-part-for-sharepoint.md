@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a03d94b09464fd2daeeea265d5c4e8b64fac2fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635410"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281275"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint 용 웹 파트 만들기
 
@@ -51,7 +51,7 @@ ms.locfileid: "42635410"
 
 - 지원되는 Microsoft Windows 및 SharePoint 버전.
 
-- Visual Studio 2017 또는 버전의 Visual Studio 응용 프로그램 수명 주기 관리 (ALM).
+- Visual Studio 2017 또는 Azure DevOps 서비스입니다.
 
 ## <a name="create-an-empty-sharepoint-project"></a>빈 SharePoint 프로젝트 만들기
 

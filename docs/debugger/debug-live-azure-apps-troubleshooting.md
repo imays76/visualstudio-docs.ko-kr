@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152018"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284109"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio에서 스냅숏 디버깅 문제 해결 및 알려진 문제
 
@@ -42,7 +42,7 @@ ms.locfileid: "39152018"
 
 - 클릭 된 **기호 설정을 변경 하는 중...** 이 페이지에 연결 합니다. 에 **디버깅 > 기호** 설정, 기호 캐시 디렉터리를 추가 합니다. 스냅숏 디버깅 기호 경로 설정한 후 다시 시작 합니다.
 
-   기호 또는.pdb 파일을 프로젝트에서 사용할 수 있는 App Service 배포를 일치 해야 합니다. 대부분의 배포 (Visual Studio, VSTS 또는 Kudu를 사용한 CI/CD를 통해 배포 등) App Service에 따라 기호 파일을 게시 합니다. 이러한 기호를 사용 하려면 Visual Studio를 사용 하면 기호 캐시 디렉터리를 설정 합니다.
+   기호 또는.pdb 파일을 프로젝트에서 사용할 수 있는 App Service 배포를 일치 해야 합니다. 대부분의 배포 (Visual Studio, Azure 파이프라인 또는 Kudu를 사용한 CI/CD를 통해 배포 등) App Service에 따라 기호 파일을 게시 합니다. 이러한 기호를 사용 하려면 Visual Studio를 사용 하면 기호 캐시 디렉터리를 설정 합니다.
 
    ![기호 설정](../debugger/media/snapshot-troubleshooting-symbol-settings.png "기호 설정")
 

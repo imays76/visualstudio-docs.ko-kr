@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 567b9f2651c2140f101aa3848e4136d47a75ef1e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6f399e0b054b5f9b112733399d644e1357837049
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151118"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280733"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 요소 (Visual Studio 템플릿)
 하나 이상의 기능에 맞게 선택적 식을 지정합니다. <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>를 참조하십시오. 기능은 계층 구조를 통해 프로젝트 형식에 의해 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5> 속성으로 노출됩니다. 이렇게 하면 적용할 수 있는 일반적인 기능을 가진 여러 프로젝트 형식에서 템플릿을 공유할 수 있습니다.  
   
  이 요소는 선택적입니다. 템플릿 파일에는 최대 하나의 인스턴스만 있을 수 있습니다. 이 요소는 현재 선택된 활성 프로젝트의 기능에 따라 가능한 경우 옵트인하도록 항목 템플릿을 활성화합니다. 항목 템플릿을 적용할 수 없도록 만드는 데 사용할 수는 없습니다. `AppliesTo`가 없거나 식에 성공적으로 옵트인하지 못한 경우, `TemplateID` 또는 `TemplateGroupID`를 사용하여 템플릿을 제품의 이전 버전에 적용할 수 있게 합니다.  
   
- 이 특성은 Visual Studio 2013 업데이트 2에서 도입되었습니다. 올바른 버전을 참조 하려면 참조 [Visual Studio 2013 SDK 업데이트 2에 전달 된 어셈블리 참조](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)합니다.  
+ 이 특성은 Visual Studio 2013 업데이트 2에서 도입되었습니다. 올바른 버전을 참조 하려면 참조 [Visual Studio 2013 SDK 업데이트 2에 전달 된 어셈블리 참조](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb)합니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -69,7 +69,7 @@ ms.locfileid: "39151118"
   
 -   프로젝트 기능에는 이러한 예약 된 문자를 제외한 모든 문자일 수 있습니다. "':;,+-*/\\! ~&#124;& %$@^() ={}<>? \t\b\n\r  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 세 개의 서로 다른 템플릿을 보여줍니다. `Template1`은 모든 C# 프로젝트 형식 또는 `WindowsAppContainer` 기능을 지원하는 모든 기타 프로젝트 형식에 적용됩니다. `Template2`는 모든 종류의 전체 C# 프로젝트에 적용됩니다. `Template3`은 `WindowsAppContainer` 프로젝트가 아닌 C# 프로젝트에 적용됩니다.  
   
 ```xml  

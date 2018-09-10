@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231228"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279117"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>빠른 시작: Visual Studio에서 배포 소개
 
@@ -114,7 +114,7 @@ Visual Studio에서 Microsoft Store 배포에 대 한 앱 패키지를 만들 �
 
 ## <a name="devops-deployment"></a>DevOps 배포
 
-팀 환경에서 앱의 연속 배포를 사용 하려면 Visual Studio Team Services (VSTS)를 사용할 수 있습니다. 자세한 내용은 [빌드 및 릴리스](/vsts/build-release/index) 하 고 [Azure에 배포](/vsts/deploy-azure/index)합니다.
+팀 환경에서 앱의 연속 배포를 사용 하도록 설정 하려면 Azure 파이프라인을 사용할 수 있습니다. 자세한 내용은 [Azure 파이프라인](/azure/devops/pipelines/index) 하 고 [Azure에 배포](/azure/devops/deploy-azure/index)합니다.
 
 ## <a name="deployment-for-other-app-types"></a>다른 유형의 앱에 대 한 배포
 
@@ -122,7 +122,7 @@ Visual Studio에서 Microsoft Store 배포에 대 한 앱 패키지를 만들 �
 | --- | --- | --- |
 | **Office 앱** | Visual Studio에서 Office 용 추가 기능을 게시할 수 있습니다. | [Office 추가 기능을 게시 및 배포](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF 또는 OData 서비스**  | 다른 응용 프로그램 웹 서버에 배포한 WCF RIA 서비스를 사용할 수 있습니다. | [WCF Data Services 개발 및 배포](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch Visual Studio 2017에서 더 이상 지원 되지 않지만 Visual Studio 2015에서 및 이전 버전 배포할 수 없습니다. | [LightSwitch 응용 프로그램 배포](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch Visual Studio 2017에서 더 이상 지원 되지 않지만 Visual Studio 2015에서 및 이전 버전 배포할 수 없습니다. | [LightSwitch 응용 프로그램 배포](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
 
 ## <a name="next-steps"></a>다음 단계
 

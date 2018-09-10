@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 78a7abc8c0d13de7ec3c9c8d196e3b47cf867403
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131884"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279096"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>관리 코드에 대 한 코드 분석 개요
 
@@ -71,14 +71,14 @@ Public class MyClass
 
 - 최신 빌드의 일부로 코드 분석을 실행 합니다.
 
-체크 인 정책을 지정하여 위 사항을 확인할 수 있습니다. 자세한 내용은 [팀 프로젝트 체크 인 정책 사용 하 여 코드 품질 향상](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)합니다.
+체크 인 정책을 지정하여 위 사항을 확인할 수 있습니다. 자세한 내용은 [프로젝트 체크 인 정책 사용 하 여 코드 품질 향상](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)합니다.
 
 ## <a name="team-build-integration"></a>팀 빌드 통합
 
-빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [빌드 및 릴리스 (VSTS)](/vsts/build-release/index)합니다.
+빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure 파이프라인](/azure/devops/pipelines/index)합니다.
 
 ## <a name="see-also"></a>참고자료
 
 - [Roslyn 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [규칙 집합을 사용하여 코드 분석 규칙 그룹화](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [방법: 자동 코드 분석 활성화 및 비활성화](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [방법: 자동 코드 분석 사용 설정 및 해제](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

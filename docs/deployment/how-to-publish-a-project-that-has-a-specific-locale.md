@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4752556fadead75bb29b6920d51ebbb54a5679aa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 26e96116ca03cad074639c5753a8cb076dc70adf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080801"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281977"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>방법: 특정 로캘이 지정 된 프로젝트 게시
 응용 프로그램에 포함된 구성 요소가 서로 다른 로캘을 사용하는 경우를 흔히 볼 수 있습니다. 이러한 시나리오에서는 여러 프로젝트가 포함된 솔루션을 만든 다음 각 로캘에 대해 프로젝트를 별도로 게시합니다. 아래 절차에서는 매크로를 통해 'en' 로캘을 사용하는 솔루션의 첫 번째 프로젝트를 게시하는 방법을 보여줍니다. 'en' 이외의 로캘에 대해 이 절차를 수행하려면 매크로의 `localeString`을 'de' 또는 'de-DE'와 같이 사용 중인 로캘과 일치하도록 설정합니다.  
@@ -165,6 +165,6 @@ ms.locfileid: "39080801"
   
 ## <a name="see-also"></a>참고자료  
  [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)   
- [매크로 개발 환경](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [매크로 탐색기 창](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [방법: 편집 및 매크로 프로그래밍 방식으로 만들기](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [매크로 개발 환경](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))   
+ [매크로 탐색기 창](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))   
+ [방법: 편집 및 매크로 프로그래밍 방식으로 만들기](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

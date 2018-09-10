@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058525"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280652"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 디버깅의 제한 사항
 다음 세 가지 방법으로 WCF 서비스의 디버깅을 시작할 수 있습니다.  
@@ -63,7 +63,7 @@ ms.locfileid: "37058525"
   
 -   서비스가 디버깅하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 일부여야 합니다.  
   
--   서비스가 호스팅되어야 합니다. 서비스가 웹 사이트 프로젝트(파일 시스템 및 HTTP), 웹 응용 프로그램 프로젝트(파일 시스템 및 HTTP) 또는 WCF 서비스 라이브러리 프로젝트의 일부일 수 있습니다. WCF 서비스 라이브러리 프로젝트는 서비스 라이브러리 또는 워크플로 서비스 라이브러리일 수 있습니다.  
+-   서비스가 호스팅되어야 합니다. 웹 사이트 프로젝트 (파일 시스템 및 HTTP), 웹 응용 프로그램 프로젝트 (파일 시스템 및 HTTP) 또는 WCF 서비스 라이브러리 프로젝트의 일부일 수 있습니다. WCF 서비스 라이브러리 프로젝트는 서비스 라이브러리 또는 워크플로 서비스 라이브러리일 수 있습니다.  
   
 -   서비스가 WCF 클라이언트에서 호출되어야 합니다.  
   

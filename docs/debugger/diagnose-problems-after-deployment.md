@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364bdcab6ac455833e33cf59391aaef4f0af81d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6884ec7284fa99a9221b378935250cc676d11de8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058011"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280213"
 ---
 # <a name="diagnose-problems-after-deployment"></a>배포 후 문제 진단
 IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하려면 Visual Studio에서 IntelliTrace 로그를 디버그하는 데 필요한 올바른 소스 파일과 기호 파일을 자동으로 찾을 수 있도록 릴리스에 빌드 정보를 포함합니다.  
@@ -41,11 +41,11 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
  
  ####  <a name="TFS2017"></a> Team Foundation Server 2017
 
- 빌드 정의를 설정하여 소스, 빌드 및 기호의 위치를 빌드 매니페스트(BuildInfo.config 파일)에 추가합니다. Team Foundation Build가 이 파일을 자동으로 만들어 프로젝트의 출력 폴더에 저장합니다.
+ 빌드 매니페스트 (BuildInfo.config 파일)에 소스, 빌드 및 기호 위치를 추가할 빌드 파이프라인을 설정 합니다. Team Foundation Build가 이 파일을 자동으로 만들어 프로젝트의 출력 폴더에 저장합니다.
   
-1.  ASP.NET Core (.NET Framework) 템플릿을 사용 하 여 빌드 정의 이미 있는 경우 있습니다 하거나 [빌드 정의 편집 하거나 새 빌드 정의 만듭니다.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)
+1.  ASP.NET Core (.NET Framework) 템플릿을 사용 하 여 빌드 파이프라인에 이미 있는 경우 있습니다 하거나 [빌드 파이프라인을 편집 하거나 새 빌드 파이프라인을 만듭니다.](/azure/devops/pipelines/get-started-designer)
   
-     ![TFS 2017의 빌드 정의 보기](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![TFS 2017에서 파이프라인을 빌드 보기](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
   
 2.  새 템플릿을 만든 경우에 ASP.NET Core (.NET Framework) 템플릿을 선택 합니다. 
   
@@ -55,9 +55,9 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
   
      사용자 지정 템플릿을 사용하는 경우 해당 템플릿에 소스를 인덱싱하는 활동이 있는지 확인합니다. 나중에 기호 파일을 저장할 위치를 지정하는 MSBuild 인수를 추가합니다.
   
-     ![빌드 정의 TFS 2017에서 기호 경로 설정](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![빌드 파이프라인 TFS 2017에서 기호 경로 설정](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     기호에 대 한 자세한 내용은 참조 하세요 [기호 데이터 게시](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6)합니다.  
+     기호에 대 한 자세한 내용은 참조 하세요 [기호 데이터 게시](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)합니다.  
   
 4.  이 MSBuild 인수를 추가하여 TFS 및 기호 위치를 빌드 매니페스트 파일에 포함합니다.  
   
@@ -70,11 +70,11 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
     로 [2 단계: 앱 릴리스](#DeployRelease)  
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
- 빌드 정의를 설정하여 소스, 빌드 및 기호의 위치를 빌드 매니페스트(BuildInfo.config 파일)에 추가합니다. Team Foundation Build가 이 파일을 자동으로 만들어 프로젝트의 출력 폴더에 저장합니다.  
+ 빌드 매니페스트 (BuildInfo.config 파일)에 소스, 빌드 및 기호 위치를 추가할 빌드 파이프라인을 설정 합니다. Team Foundation Build가 이 파일을 자동으로 만들어 프로젝트의 출력 폴더에 저장합니다.  
 
-1.  [빌드 정의 편집 하거나 새 빌드 정의 만듭니다.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1.  [빌드 파이프라인을 편집 하거나 새 빌드 파이프라인을 만듭니다.](/azure/devops/pipelines/get-started-designer)  
 
-     ![빌드 정의 TFS 2013에서 보기](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+     ![TFS 2013에서 파이프라인을 빌드 보기](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
 
 2.  기본 템플릿(TfvcTemplate.12.xaml) 또는 사용자 지정 템플릿을 선택합니다.  
 
@@ -84,9 +84,9 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
 
      사용자 지정 템플릿을 사용하는 경우 해당 템플릿에 소스를 인덱싱하는 활동이 있는지 확인합니다. 나중에 기호 파일을 저장할 위치를 지정하는 MSBuild 인수를 추가합니다.  
 
-     ![빌드 정의 TFS 2013에서 기호 경로 설정](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![TFS 2013 빌드 파이프라인의 기호 경로 설정](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
 
-     기호에 대 한 자세한 내용은 참조 하세요 [기호 데이터 게시](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6)합니다.  
+     기호에 대 한 자세한 내용은 참조 하세요 [기호 데이터 게시](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)합니다.  
 
 4.  이 MSBuild 인수를 추가하여 TFS 및 기호 위치를 빌드 매니페스트 파일에 포함합니다.  
 
@@ -119,11 +119,11 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
 
 1.  Team Foundation Build 서버에 임의 버전의 Visual Studio 2013을 설치합니다.  
 
-2.  소스가 자동으로 인덱싱되도록 빌드 정의에서 기호를 저장할 위치를 지정합니다.  
+2.  빌드 파이프라인에서 소스는 자동으로 인덱싱되도록 기호를 저장할 위치를 지정 합니다.  
 
      사용자 지정 템플릿을 사용하는 경우 해당 템플릿에 소스를 인덱싱하는 활동이 있는지 확인합니다.  
 
-3.  빌드 정의에 다음과 같은 MSBuild 인수를 추가합니다.  
+3.  빌드 파이프라인을이 MSBuild 인수를 추가 합니다.  
 
     -   **/p:VisualStudioVersion 12.0 =**  
 
@@ -176,7 +176,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
  **/p:BuildSymbolStorePath =**\<*기호 경로*>  
 
 ##  <a name="DeployRelease"></a> 2 단계: 앱 릴리스  
- 빌드 프로세스에서 만들어진 [Web.Deploy 패키지](http://msdn.microsoft.com/library/dd394698.aspx) 를 사용하여 앱을 배포할 경우 빌드 매니페스트는 자동으로 "*ProjectName*.BuildInfo.config"에서 "BuildInfo.config"라는 이름으로 바뀌어 웹 서버에서 앱의 Web.config 파일과 같은 폴더에 저장됩니다.  
+ 사용 하는 경우는 [Web.Deploy 패키지](https://msdn.microsoft.com/library/dd394698.aspx) 앱을 배포 하려면 빌드 프로세스에서 생성 된을 빌드 매니페스트는 자동으로 "*ProjectName*합니다. "BuildInfo.config" BuildInfo.config"웹 서버에서 앱의 Web.config 파일과 동일한 폴더에 저장 됩니다.  
 
  다른 방법을 사용하여 앱을 배포할 경우에는 빌드 매니페스트가 "*ProjectName*.BuildInfo.config"에서 "BuildInfo.config"라는 이름으로 바뀌어 웹 서버에서 앱의 Web.config 파일과 같은 폴더에 저장되었는지 확인해야 합니다.  
 
@@ -234,7 +234,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
 
      ![성능 이벤트에서 응용 프로그램 코드 이동](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
 
-     이제 다른 기록된 값, 호출 스택을 검토하고 코드를 단계적으로 실행하거나 **IntelliTrace** 창을 사용하여 이 성능 이벤트 동안 호출된 [다른 메서드 사이에 "in time"을 뒤나 앞으로 이동](../debugger/intellitrace.md) 합니다. [기타 모든 이벤트 및 IntelliTrace 로그의 정보는 무엇입니까? ](../debugger/using-saved-intellitrace-data.md) [무엇 하면 여기에서?](#WhatElse) [성능 이벤트에 대 한 자세히 알고 싶으십니까?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     이제 다른 기록된 값, 호출 스택을 검토하고 코드를 단계적으로 실행하거나 **IntelliTrace** 창을 사용하여 이 성능 이벤트 동안 호출된 [다른 메서드 사이에 "in time"을 뒤나 앞으로 이동](../debugger/intellitrace.md) 합니다. [기타 모든 이벤트 및 IntelliTrace 로그의 정보는 무엇입니까? ](../debugger/using-saved-intellitrace-data.md) [무엇 하면 여기에서?](#WhatElse) [성능 이벤트에 대 한 자세히 알고 싶으십니까?](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)  
 
 ### <a name="diagnose-an-exception"></a>예외 진단  
 
@@ -336,7 +336,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
 
      빌드 시스템( `"TeamBuild"` 또는 `"MSBuild"`) 및 다음의 필수 속성에 대한 정보입니다.  
 
-    -   **BuildLabel** (TeamBuild용): 빌드 이름 및 번호입니다. 이 레이블은 배포 이벤트의 이름으로도 사용됩니다. 빌드 번호에 대 한 자세한 내용은 참조 하세요. [사용 하 여 빌드 번호 완료 된 빌드에 의미 있는 이름을 부여](http://msdn.microsoft.com/Library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)합니다.  
+    -   **BuildLabel** (TeamBuild용): 빌드 이름 및 번호입니다. 이 레이블은 배포 이벤트의 이름으로도 사용됩니다. 빌드 번호에 대 한 자세한 내용은 참조 하세요. [사용 하 여 빌드 번호 완료 된 빌드에 의미 있는 이름을 부여](/azure/devops/pipelines/build/options)합니다.  
 
     -   **SymbolPath** (권장): 세미콜론으로 구분한 기호(PDB 파일) 위치 URI 목록입니다. 이러한 URI는 URL 또는 UNC일 수 있습니다. 이 정보를 통해 Visual Studio에서는 사용자가 디버깅을 손쉽게 할 수 있도록 일치하는 기호를 쉽게 찾을 수 있습니다.  
 
@@ -396,9 +396,9 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
      ![소스 제어에서 열기 &#45; 마이그레이션된](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
 ####  <a name="WhatWorkspace"></a> Q: 작업 영역 이란?  
- **A:** 프로그램 [작업 영역은 소스 사본을 저장](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) 개발 하 고이 개별적으로 테스트 하기 전에 확인 작업의 수 있도록 합니다. 발견된 솔루션 또는 프로젝트에 특별히 매핑된 작업 영역이 아직 없는 경우 Visual Studio는 사용 가능한 작업 영역을 선택하거나 기본 작업 영역 이름으로 사용자 컴퓨터 이름을 사용하는 새 작업 영역을 만들 것인지 묻는 메시지를 표시합니다.  
+ **A:** 프로그램 [작업 영역은 소스 사본을 저장](/azure/devops/repos/tfvc/create-work-workspaces) 개발 하 고이 개별적으로 테스트 하기 전에 확인 작업의 수 있도록 합니다. 발견된 솔루션 또는 프로젝트에 특별히 매핑된 작업 영역이 아직 없는 경우 Visual Studio는 사용 가능한 작업 영역을 선택하거나 기본 작업 영역 이름으로 사용자 컴퓨터 이름을 사용하는 새 작업 영역을 만들 것인지 묻는 메시지를 표시합니다.  
 
 ####  <a name="UntrustedSymbols"></a> 신뢰할 수 없는 기호에 대 한이 메시지는 q: 하나요?  
- ![신뢰할 수 없는 기호 경로 사용 하 여 디버그? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+ ![신뢰할 수 없는 기호 경로 사용 하 여 디버그? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **A:** 이 메시지를 표시 하는 경우 빌드 매니페스트 파일에서 기호 경로 (\<*ProjectName*>. BuildInfo.config) 신뢰 하는 기호 경로의 목록에 포함 되지 않습니다. 디버거 옵션에서 기호 경로 목록에 경로를 추가할 수 있습니다.

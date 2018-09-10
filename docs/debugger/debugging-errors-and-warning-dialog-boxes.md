@@ -1,5 +1,5 @@
 ---
-title: 디버깅 오류 및 경고 대화 상자가 | Microsoft Docs
+title: 디버깅 오류 및 경고 대화 상자 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b87a662b888582a14526a03edf9df13e6492880b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb7ed7b66483bcda01df00e92907801d994553e9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472204"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279055"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>디버깅 오류 및 경고 대화 상자
 다음은 응용 프로그램을 디버깅할 때 발생할 수 있는 오류 및 경고 대화 상자입니다.  
@@ -42,13 +42,13 @@ ms.locfileid: "31472204"
   
  [디버깅 세션에 사용할 실행 파일 대화 상자](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [코드 변경 내용 대화 상자를 적용 하지 못했습니다.](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [코드 변경 대화 상자를 적용 하지 못했습니다.](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [Microsoft Visual Studio Debugger(예외 throw) 대화 상자](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [현재 위치 대화 상자에 사용할 수 있는 소스 코드가 없습니다](../debugger/no-source-available.md)  
+ [현재 위치 대화 상자에 대 한 소스 코드가 없습니다](../debugger/no-source-available.md)  
   
- [기호화 된 정보 없음 대화 상자](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [없음 기호화 된 정보 대화 상자](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [모호성 해결 대화 상자](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -63,10 +63,10 @@ ms.locfileid: "31472204"
   
  [원격 디버깅 오류](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [연결 오류](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [연결 오류](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))  
   
- [SQL 디버깅 설치 문제 해결](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [SQL 디버깅 설치 문제 해결](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
   
- [Visual c + + Faq 디버깅](../debugger/debugging-native-code-faqs.md)  
+ [디버깅 Visual c + + Faq](../debugger/debugging-native-code-faqs.md)  
   
  [디버거 보안](../debugger/debugger-security.md)

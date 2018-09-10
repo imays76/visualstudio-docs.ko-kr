@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638667"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281171"
 ---
 # <a name="address-dpi-issues"></a>DPI 문제
 장치 수가 증가 "고해상도" 화면을 사용 하 여 전달 됩니다. 이 화면에는 일반적으로 200 개가 넘는 인치 당 픽셀 수 (가) 있습니다. 이러한 컴퓨터에서 응용 프로그램을 사용 하 여 작업 콘텐츠를 장치에 대 한 일반 보기로 거리에 있는 콘텐츠를 표시 하는 요구를 충족 하도록 확장 해야 합니다. 2014 년을 기준으로 기본 고밀도 디스플레이 대 한 대상이 모바일 컴퓨팅 장치 (태블릿, 랩톱 클램쉘 및 휴대폰)입니다.  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>WebOC HDPI 지원을 사용 하도록 설정  
  기본적으로 WebOC 컨트롤 (예: WPF 또는 IWebBrowser2 인터페이스에서 WebBrowser 컨트롤) HDPI 검색 및 지원을 사용 하도록 설정 하지 않습니다. 결과 고해상도 디스플레이에 너무 작으면 콘텐츠 표시를 사용 하 여 포함 된 컨트롤 됩니다. 다음 특정 웹 WebOC 인스턴스에서 높은 DPI 지원을 사용 하도록 설정 하는 방법을 설명 합니다.  
   
- IDocHostUIHandler 인터페이스 구현 (MSDN 문서를 참조 합니다 [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) 인터페이스):  
+ IDocHostUIHandler 인터페이스 구현 (MSDN 문서를 참조 합니다 [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- 필요에 따라 ICustomDoc 인터페이스를 구현 (MSDN 문서를 참조 합니다 [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) 인터페이스):  
+ 필요에 따라 ICustomDoc 인터페이스를 구현 (MSDN 문서를 참조 합니다 [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

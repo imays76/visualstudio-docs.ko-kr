@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512293"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280885"
 ---
 # <a name="using-the-tasks-window"></a>작업 창 사용
 
-**태스크** 창은 합니다 **스레드** 창에 대 한 정보를 표시 한다는 점을 제외 하 고 <xref:System.Threading.Tasks.Task?displayProperty=fullName>를 [task_handle](/cpp/parallel/concrt/reference/task-group-class), 또는 [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) 각 스레드 대신 개체입니다. 스레드와 마찬가지로, 작업은 동시에 실행할 수 있는 비동기 작업을 나타내지만 여러 작업이 같은 스레드에서 실행될 수도 있습니다.
+**태스크** 창은 합니다 **스레드** 창에 대 한 정보를 표시 한다는 점을 제외 하 고 <xref:System.Threading.Tasks.Task?displayProperty=fullName>를 [task_handle](/cpp/parallel/concrt/reference/task-group-class), 또는 [WinJS.Promise ](/previous-versions/windows/apps/br211867(v=win.10)) 각 스레드 대신 개체입니다. 스레드와 마찬가지로, 작업은 동시에 실행할 수 있는 비동기 작업을 나타내지만 여러 작업이 같은 스레드에서 실행될 수도 있습니다.
 
 관리 코드에서 사용할 수 있습니다는 **태스크** 창을 사용 하 여 작업할 때 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 개체 또는 합니다 **await** 및 **비동기** 키워드 (**Await** 하 고 **Async** VisualBasic에서). 관리 코드의 작업에 대 한 자세한 내용은 참조 하세요. [병렬 프로그래밍](/dotnet/standard/parallel-programming/index)합니다.
 
 네이티브 코드에서 사용할 수 있습니다는 **태스크** 창을 사용 하 여 작업할 때 [작업 그룹](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)를 [병렬 알고리즘](/cpp/parallel/concrt/parallel-algorithms), [비동기 에이전트](/cpp/parallel/concrt/asynchronous-agents), 및 [간단한 작업](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)합니다. 네이티브 코드의 작업에 대 한 자세한 내용은 참조 하세요. [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)합니다.
 
-JavaScript에서 사용할 수는 프라미스를 사용 하 여 작업할 때 작업 창 `.then` 코드입니다. 참조 [JavaScript (UWP 앱)의 비동기 프로그래밍](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) 자세한 내용은 합니다.
+JavaScript에서 사용할 수는 프라미스를 사용 하 여 작업할 때 작업 창 `.then` 코드입니다. 참조 [JavaScript (UWP 앱)의 비동기 프로그래밍](/previous-versions/windows/apps/hh700330(v=win.10)) 자세한 내용은 합니다.
 
 사용할 수는 **작업** 창 때마다 디버거를 중단 합니다. 에 액세스할 수 있습니다는 **디버그** 를 클릭 하 여 메뉴 **Windows** 클릭 한 다음 **작업**합니다. 다음 그림에 표시 된 **작업** 기본 모드의 창.
 

@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54412cff3047f12ec17c8192dc40cd4ebfcbf55b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 19bc4c0fd91284a5dd4da4a50bba5f2778904a28
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479600"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280067"
 ---
 # <a name="using-saved-intellitrace-data"></a>저장된 IntelliTrace 데이터 사용
 IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프로그램 실행의 특정 지점으로 이동합니다. 이 파일에는 응용 프로그램이 실행되는 동안 IntelliTrace가 기록하는 성능 이벤트, 예외, 스레드, 테스트 단계 및 기타 시스템 정보가 포함될 수 있습니다.  
   
  아래와 같은 파일과 버전이 있어야 합니다.  
   
--   응용 프로그램 코드에 일치하는 소스 파일과 기호 파일(.pdb) 이 파일이 없으면 Visual Studio에서 소스 위치를 확인할 수 없어 "기호를 찾을 수 없습니다." 메시지가 표시됩니다. 참조 [지정 기호 (.pdb) 및 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) 및 [배포 후 문제 진단](../debugger/diagnose-problems-after-deployment.md)합니다.  
+-   응용 프로그램 코드에 일치하는 소스 파일과 기호 파일(.pdb) 이 파일이 없으면 Visual Studio에서 소스 위치를 확인할 수 없어 "기호를 찾을 수 없습니다." 메시지가 표시됩니다. 참조 [지정할 기호 (.pdb) 및 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) 하 고 [배포 후 문제 진단](../debugger/diagnose-problems-after-deployment.md)합니다.  
   
 -   개발 컴퓨터 또는 다른 컴퓨터에서 .iTrace 파일을 열기 위한 Visual Studio Enterprise(Professional 또는 Community Edition 아님)  
   
@@ -38,7 +38,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
     |**소스**|**참조**|  
     |----------------|-------------|  
     |Visual Studio Enterprise(Professional 또는 Community Edition 아님)의 IntelliTrace 세션|[IntelliTrace 기능](../debugger/intellitrace-features.md)|  
-    |Microsoft Test Manager의 테스트 세션. 이는 Team Foundation Server 작업 항목에 .iTrace 파일을 연결합니다.|[수동 테스트에서 추가 진단 데이터 수집](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
+    |Microsoft Test Manager의 테스트 세션. 이는 Team Foundation Server 작업 항목에 .iTrace 파일을 연결합니다.|[수동 테스트에서 추가 진단 데이터 수집](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |배포에서 실행 중인 ASP.NET 웹앱 및 SharePoint 응용 프로그램에 대해 Microsoft Monitoring Agent 단독으로 또는 System Center 2012 R2 Operations Manager와 함께 사용|-   [배포 후 문제 진단](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager의 새로운 기능](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> 원하는 작업을 선택하세요.  
@@ -72,14 +72,14 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
   
 |**섹션**|**포함**|**컬렉션 소스**|  
 |-----------------|------------------|---------------------------|  
-|[성능 위반](#Performance)|구성된 임계값을 초과하는 함수 호출을 사용하는 성능 이벤트|Microsoft Monitoring Agent를 두 독립 실행형 수집기 또는 IIS에서 호스팅된 ASP.NET 웹 앱에 대 한 System Center 2012 R2 Operations Manager|  
+|[성능 위반](#Performance)|구성된 임계값을 초과하는 함수 호출을 사용하는 성능 이벤트|Microsoft Monitoring Agent를 독립 실행형 수집기 하거나 또는 IIS에서 호스팅된 ASP.NET 웹 앱에 대 한 System Center 2012 R2 Operations Manager를 사용 하 여|  
 |[예외 데이터](#ExceptionData)|각 예외에 대한 전체 호출 스택을 포함하는 예외|모든 소스|  
-|[분석](#Analysis)|SharePoint 2010 및 SharePoint 2013 응용 프로그램만 해당합니다. 디버거 이벤트, ULS 이벤트, 처리되지 않은 예외 및 Microsoft Monitoring Agent가 기록한 기타 데이터 등 IntelliTrace 및 SharePoint 이벤트를 진단합니다.|Microsoft Monitoring Agent를 두 독립 실행형 수집기 또는 System Center 2012 R2 Operations manager|  
+|[분석](#Analysis)|SharePoint 2010 및 SharePoint 2013 응용 프로그램만 해당합니다. 디버거 이벤트, ULS 이벤트, 처리되지 않은 예외 및 Microsoft Monitoring Agent가 기록한 기타 데이터 등 IntelliTrace 및 SharePoint 이벤트를 진단합니다.|Microsoft Monitoring Agent를 독립 실행형 수집기 중 하나 또는 System Center 2012 R2 Operations Manager를 사용 하 여|  
 |[시스템 정보](#SystemInfo)|호스트 시스템의 설정 및 사양|모든 소스|  
 |[스레드 목록](#ThreadsList)|수집하는 동안 실행되는 스레드|모든 소스|  
 |[테스트 데이터](#TestData)|테스트 세션의 테스트 단계 및 해당 결과|테스트 관리자|  
 |[모듈](#Modules)|대상 프로세스가 로드된 순서대로 로드된 모듈|모든 소스| 
-|[웹 요청](#Modules)|프로덕션 IIS에 대 한 웹 요청 데이터 웹 응용 프로그램 및 SharePoint 2010 및 SharePoint 2013|Microsoft Monitoring Agent와 독립 실행형 수집기| 
+|[웹 요청](#Modules)|프로덕션 IIS에 대 한 웹 요청 데이터를 웹 응용 프로그램 및 SharePoint 2010 및 SharePoint 2013|Microsoft Monitoring Agent를 독립 실행형 수집기| 
   
  다음은 각 섹션에서 정보를 찾는 데 도움이 되는 몇 가지 팁입니다.  
   
@@ -100,7 +100,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
   
 1.  **성능 위반**에서 기록된 성능 이벤트, 총 실행 시간 및 기타 이벤트 정보를 검토합니다. 그런 다음 특정 성능 이벤트 중 호출된 메서드를 자세히 살펴봅니다.  
   
-     ![성능 이벤트 정보를 보려면](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![성능 이벤트 정보를 볼](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      이벤트를 두 번 클릭할 수도 있습니다.  
   
@@ -114,13 +114,13 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
   
      해당 호출에서 디버깅을 시작합니다.  
   
-     ![메서드 호출에서 디버깅을 시작](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![메서드 호출에서 디버깅을 시작할](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      호출을 두 번 클릭하거나 **Enter** 키를 누를 수도 있습니다.  
   
      메서드가 응용 프로그램 코드에 있는 경우 Visual Studio가 해당 메서드로 이동합니다.  
   
-     ![성능 이벤트에서 응용 프로그램 코드로 이동](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![성능 이벤트에서 응용 프로그램 코드 이동](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      이제 다른 기록된 값, 호출 스택을 검토하고 코드를 단계적으로 실행하거나 **IntelliTrace** 창을 사용하여 이 성능 이벤트 동안 호출된 [다른 메서드 사이에 "in time"을 뒤나 앞으로 이동](../debugger/intellitrace.md) 합니다.  
   
@@ -131,13 +131,13 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
   
 1.  **예외 데이터**에서 기록된 예외 이벤트, 해당 유형, 메시지 및 예외가 발생한 시간을 검토합니다. 코드를 자세히 살펴보려면 예외 그룹의 가장 최근 이벤트부터 디버깅을 시작합니다.  
   
-     ![예외 이벤트에서 디버깅을 시작](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![예외 이벤트에서 디버깅 시작](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")  
   
      이벤트를 두 번 클릭할 수도 있습니다. 이벤트가 그룹화되지 않으면 **이 이벤트 디버그**를 선택합니다.  
   
      응용 프로그램 코드에서 예외가 발생하는 경우 Visual Studio가 예외가 발생한 위치로 이동합니다.  
   
-     ![예외 이벤트에서 응용 프로그램 코드로 이동](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![예외 이벤트에서 응용 프로그램 코드 이동](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      이제 다른 기록된 값, 호출 스택을 검토하거나 **IntelliTrace** 창을 사용하여 [다른 기록된 이벤트 사이의 "in time"](../debugger/intellitrace.md), 관련 코드 및 이 시점에 기록된 값을 뒤나 앞으로 이동합니다.  
   
@@ -167,7 +167,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
   
 2.  일치하는 웹 요청 및 기록된 이벤트를 검토하려면 iTrace 파일을 연 다음 **분석** 으로 이동하여 SharePoint 상관 관계 ID를 입력합니다.  
   
-     ![IntelliTrace 로그 &#45; SharePoint 상관 관계 ID 입력](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![IntelliTrace 로그 &#45; 입력 SharePoint 상관 관계 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  **이벤트 요청**에서 이벤트를 검사합니다. 위에서 시작하여 이벤트가 발생하는 순서대로 나타납니다.  
   
@@ -175,7 +175,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
   
     2.  이벤트가 발생한 지점에서 디버깅을 시작하려면 **디버깅 시작** 을 선택합니다.  
   
-     ![IntelliTrace 로그 파일 &#45; 보기 웹 요청 &#43; 이벤트](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![IntelliTrace 로그 파일 &#45; 웹 요청 보기 &#43; 이벤트](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  이러한 종류의 SharePoint 이벤트를 IntelliTrace 이벤트와 함께 볼 수 있습니다.  
   
@@ -207,7 +207,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
   
      ![IntelliTrace 로그 &#45; SharePoint 처리 되지 않은 예외](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- 연습을 참조 하십시오. [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버깅](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)합니다. 에이전트 기록에서 참조 하는 데이터의 종류에 대 한 [IntelliTrace 기능](../debugger/intellitrace-features.md)합니다.  
+ 연습을 참조 하세요 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)합니다. 에이전트에서 기록에 표시 되는 데이터의 종류에 대 한 [IntelliTrace 기능](../debugger/intellitrace-features.md)합니다.  
   
 ###  <a name="ThreadsList"></a> 스레드 목록  
  대상 프로세스에서 실행하는 기록된 스레드를 검사합니다. 선택한 스레드에서 첫 번째로 유효한 IntelliTrace 이벤트부터 디버깅을 시작할 수 있습니다.  
@@ -258,14 +258,14 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
 |----------------|-------------------|  
 |**모듈 이름**|모듈 파일 이름|  
 |**모듈 경로**|모듈이 로드된 디스크 위치|  
-|**모듈 ID**|버전별로 다르고 일치하는 기호(PDB) 파일에 적용되는 모듈의 고유 식별자. [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470)를 참조하세요.|  
+|**모듈 ID**|버전별로 다르고 일치하는 기호(PDB) 파일에 적용되는 모듈의 고유 식별자. 참조 [기호 (.pdb) 파일 및 소스 파일 찾기](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)합니다.|  
   
 ### <a name="where-can-i-get-more-information"></a>추가 정보는 어디서 확인할 수 있나요?  
  [IntelliTrace 독립 실행형 수집기 사용](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [IntelliTrace 기능](../debugger/intellitrace-features.md)  
   
- [수동 테스트에서 추가 진단 데이터 수집](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
+ [수동 테스트에서 추가 진단 데이터 수집](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   
@@ -273,4 +273,4 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
  [Visual Studio 디버거](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>지침  
- [Visual Studio 2012-6 장을 사용한 지속적인 업데이트 테스트: 테스트 도구 상자](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Testing for Continuous Delivery with Visual Studio 2012-6 장: 테스트 도구 상자](http://go.microsoft.com/fwlink/?LinkID=255203)

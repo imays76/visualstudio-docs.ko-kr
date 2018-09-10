@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91935bc819987823f5a2f3ad0781e975c72f7e0d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 10a5883e655fc5ee8a37bbe61f531b6b266ebb55
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077934"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281895"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>64 비트 응용 프로그램에 대 한 필수 구성 요소 배포
 ClickOnce 배포에서는 64비트 플랫폼에 응용 프로그램을 설치할 수 있습니다. 대상 플랫폼 **x86** 32 비트 플랫폼에 대 한 **x64** AMD64와 EM64T 명령 집합을 지 원하는 컴퓨터 및 **Itanium** 64 비트 Itanium 프로세서에 대 한 합니다.  
@@ -46,4 +46,4 @@ ClickOnce 배포에서는 64비트 플랫폼에 응용 프로그램을 설치할
 ## <a name="see-also"></a>참고자료  
  [응용 프로그램, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)   
  [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [64비트 응용 프로그램](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+ [64비트 응용 프로그램](/dotnet/framework/64-bit-apps)
