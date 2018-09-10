@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 093b7732f78f7257a2e58812ca2697496d65682f
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 97d39a171d812915a1cf3c1c6450c73098067949
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056484"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284200"
 ---
 # <a name="report-hook-functions"></a>보고서 후크 함수
 보고서 후크 함수를 사용 하 여 설치할 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), 때마다 호출 됩니다 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 디버그 보고서를 생성 합니다. 보고서 후크 함수를 사용하여 특정한 할당 형식에 맞게 보고서를 필터링할 수 있습니다. 보고서 후크 함수에는 다음과 같이 프로토타입이 있어야 합니다.  
@@ -51,4 +51,4 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
   
 ## <a name="see-also"></a>참고 항목  
  [디버그 후크 함수 작성](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 샘플](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)
+ [crt_dbg2 샘플](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

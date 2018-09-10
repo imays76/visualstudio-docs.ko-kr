@@ -1,5 +1,5 @@
 ---
-title: UWP 앱은 시뮬레이터에 있는 실행 | Microsoft Docs
+title: 시뮬레이터에서 UWP 앱 실행 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480663"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281054"
 ---
-# <a name="run-uwp-apps-in-the-simulator"></a>시뮬레이터에서 UWP 앱을 실행 합니다.
-UWP 앱 용 Visual Studio 시뮬레이터는 UWP 앱을 시뮬레이션 하는 데스크톱 응용 프로그램입니다. 일반적으로 로컬 시스템, 연결된 된 장치 또는 원격 컴퓨터에서 디버깅 합니다. 그러나 일부 시나리오에서는 서로 다른 실제 화면 크기와 해상도 에뮬레이션 하기 위해 Visual Studio 시뮬레이터를 사용 하 여 수 있습니다. 일반적인 터치 및 회전 이벤트를 시뮬레이션 하 고 네트워크 연결 속성을 시뮬레이트할 수도 있습니다.
+# <a name="run-uwp-apps-in-the-simulator"></a>시뮬레이터에서 UWP 앱 실행
+UWP 앱 용 Visual Studio 시뮬레이터는 UWP 앱을 시뮬레이션 하는 데스크톱 응용 프로그램입니다. 일반적으로 로컬 컴퓨터, 연결된 된 장치 또는 원격 컴퓨터에서 디버그 하려고 합니다. 그러나 일부 시나리오에서는 Visual Studio 시뮬레이터를 사용 하 여 다른 실제 화면 크기와 해상도 에뮬레이션 하려는 합니다. 일반적인 터치 및 회전 이벤트를 시뮬레이션 하 고 네트워크 연결 속성을 시뮬레이트할 수도 있습니다.
   
- 시뮬레이터를 있습니다 수 설계, 개발, 디버그 및 UWP 앱을 테스트 환경을 제공 합니다. 그러나 Microsoft 스토어에 앱을 게시 하기 전에 실제 장치에서 앱을 테스트 해야 합니다.  
+ 시뮬레이터는 디자인, 개발, 디버그 하 수 UWP 앱 테스트 환경을 제공 합니다. 그러나 Microsoft Store 앱을 게시 하기 전에 실제 장치에서 앱을 테스트 해야 합니다.  
   
- UWP 앱 용 Visual Studio 시뮬레이터는 로컬 컴퓨터의 격리 된 환경에서 실행 되지 않습니다. 따라서 복구할 수 없는 시스템 차원의 오류처럼 시뮬레이터에서 발생하는 오류가 전체 컴퓨터에 영향을 줄 수 있습니다.  
+ UWP 앱 용 Visual Studio 시뮬레이터는 로컬 컴퓨터에서 격리 된 환경에서 실행 되지 않습니다. 따라서 복구할 수 없는 시스템 차원의 오류처럼 시뮬레이터에서 발생하는 오류가 전체 컴퓨터에 영향을 줄 수 있습니다.  
   
 > [!IMPORTANT]
 >  Visual Studio 2015 시뮬레이터에는 지리적 위치 단추가 없습니다. 이는 Windows 10 시뮬레이터에 지리적 위치 시뮬레이션이 없기 때문입니다.
   
 ##  <a name="BKMK_Set_the_simulator_as_the_target"></a> 시뮬레이터를 대상으로 설정  
- 시뮬레이터에서 UWP 앱을 실행 하려면 선택 **시뮬레이터** 옆에 있는 드롭다운 목록에서 **디버깅 시작** 디버거 단추 **표준** 도구 모음입니다. 이 옵션은 사용할 수만 하는 경우 앱의 **대상 플랫폼 최소 합니다. 버전** 하려면 개발 컴퓨터에 운영 체제 보다 이전입니다. 
+ 시뮬레이터에서 UWP 앱을 실행 하려면 선택 **시뮬레이터** 드롭다운 목록에서 다음을 **디버깅 시작** 디버거 단추 **표준** 도구 모음입니다. 이 옵션은만 사용할 수 있는 경우 앱의 **대상 플랫폼 최소입니다. 버전** 개발 컴퓨터에 운영 체제 보다 작거나 같음. 
   
- ![시뮬레이터에서 실행](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
+ ![시뮬레이터에서 실행 중인](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   
 ##  <a name="BKMK_Choose_an_interaction_mode"></a> 상호 작용 모드 선택  
  다음 조작 모드를 선택할 수 있습니다.  
@@ -59,15 +59,14 @@ UWP 앱 용 Visual Studio 시뮬레이터는 UWP 앱을 시뮬레이션 하는 �
   
     -   축소 또는 확대하기 전에 마우스 휠을 앞쪽이나 뒤쪽으로 돌려 두 손가락의 시뮬레이션된 거리를 변경합니다.  
   
--   -   ![축소, 확대/축소 및 회전 대상](../debugger/media/simulator_twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
+-   -   ![손가락 모으기, 확대 및 회전 대상을](../debugger/media/simulator_twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
   
          왼쪽 단추를 누르고 휠을 뒤쪽(사용자 쪽)으로 돌려 확대(축소)합니다.  
   
     -   왼쪽 단추를 누르고 마우스 휠을 앞쪽(사용자 반대쪽)으로 돌려 축소(확대)합니다.  
   
 ## <a name="object-rotation"></a>개체 방향  
- 
-             **터치 에뮬레이션 회전** 단추는 조작 모드를 두 손가락을 사용한 회전 제스처로 설정합니다.  
+ **터치 에뮬레이션 회전** 단추는 조작 모드를 두 손가락을 사용한 회전 제스처로 설정합니다.  
   
 -   -   마우스를 이동하여 아이콘을 장치 화면의 개체 위에 배치합니다.  
   
@@ -95,10 +94,10 @@ UWP 앱 용 Visual Studio 시뮬레이터는 UWP 앱을 시뮬레이션 하는 �
  화면 크기 및 해상도는 *Screen width inches, pixel width X pixel height*로 나열됩니다. 화면 크기와 해상도 모두 시뮬레이션됩니다. 시뮬레이터에서의 위치 좌표는 선택한 장치 크기 및 해상도의 좌표로 변환됩니다.  
   
 > [!NOTE]
->  비트맵 이미지의 배율이 조정된 버전을 응용 프로그램에 저장할 수 있으며 그러면 Windows에서 현재 배율에 맞는 올바른 이미지가 로드됩니다. 자세한 내용은 참조 [디자인과 UI 소개](/windows/uwp/layout/design-and-ui-intro)합니다. 그러나 Windows에서 해상도에 맞는 다른 이미지를 선택하도록 시뮬레이터 해상도를 변경하면 디버그 세션을 중지한 후 다시 시작해야만 새 이미지를 볼 수 있습니다.  
+>  비트맵 이미지의 배율이 조정된 버전을 응용 프로그램에 저장할 수 있으며 그러면 Windows에서 현재 배율에 맞는 올바른 이미지가 로드됩니다. 자세한 내용은 [디자인과 UI 소개](/windows/uwp/layout/design-and-ui-intro)합니다. 그러나 Windows에서 해상도에 맞는 다른 이미지를 선택하도록 시뮬레이터 해상도를 변경하면 디버그 세션을 중지한 후 다시 시작해야만 새 이미지를 볼 수 있습니다.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Microsoft 스토어에 제출할 응용 프로그램의 스크린 샷 캡처  
- Microsoft 스토어에 앱을 제출할 때 앱의 스크린 샷을 포함 해야 합니다.  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Microsoft Store 제출할 앱의 스크린 샷 캡처  
+ Microsoft Store 앱을 제출할 때 앱의 스크린 샷을 포함 해야 합니다.  
   
 > [!NOTE]
 >  스크린샷은 시뮬레이터의 현재 해상도로 저장됩니다. 해상도를 변경하려면 **해상도 변경** 단추를 선택합니다.  
@@ -110,9 +109,9 @@ UWP 앱 용 Visual Studio 시뮬레이터는 UWP 앱을 시뮬레이션 하는 �
      ![스크린샷 설정 상황에 맞는 메뉴](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 네트워크 연결 속성 시뮬레이트  
- 응용 프로그램의 사용자가 지속적으로 네트워크 연결 비용이 나 데이터 계획 상태 변경 인지 하 고 앱에서이 정보를 사용 하 여 로밍 또는 초과 대 한 추가 비용이 발생 하지 않도록 하 여 요금제 네트워크 연결 비용을 관리할 수 있습니다는 지정 된 데이터 전송 제한 합니다. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) Api에 응답할 수 있도록 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 및 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 서명 하는 이벤트입니다. [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)을 참조하세요.  
+ 앱의 사용자가 네트워크 연결 비용이 나 데이터 계획 상태 변경을 지속적으로 인지 하 고이 정보를 사용 하 여 로밍 또는 초과 대 한 추가 비용이 발생 하지 않도록 앱을 사용 하도록 설정 하 여 요금제 네트워크 연결 비용을 관리할 수 있습니다는 지정 된 데이터 전송 제한 합니다. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) Api를 사용 하면 응답할 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 및 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 서명 하는 이벤트입니다. 참조 [빠른 시작: 요금제 네트워크 비용 관리 제약 조건](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)합니다.  
   
- 시뮬레이터를 디버그 하거나 테스트 네트워크 비용 인식 코드를 통해 노출 되는 네트워크의 속성을 모방 하면는 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 에서 반환 된 개체 [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)합니다.
+ 시뮬레이터를 디버그 하거나 테스트 네트워크 비용 인식 코드를 통해 노출 되는 네트워크의 속성을 모방 하면 합니다 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 반환한 개체가 [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)합니다.
   
  네트워크 속성을 시뮬레이트하려면  
   
@@ -122,34 +121,34 @@ UWP 앱 용 Visual Studio 시뮬레이터는 UWP 앱을 시뮬레이션 하는 �
   
      확인란을 선택 취소하여 시뮬레이션을 제거하고 현재 연결된 인터페이스의 네트워크 속성으로 돌아갑니다.  
   
-3.  시뮬레이트된 네트워크의 **프로필 이름** 을 입력합니다. 시뮬레이션을 식별 하는 데 사용할 수 있는 고유 이름을 사용 하는 것이 좋습니다는 [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) 의 속성은 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 개체입니다.  
+3.  시뮬레이트된 네트워크의 **프로필 이름** 을 입력합니다. 시뮬레이션을 식별 하는 데 사용할 수 있는 고유한 이름을 사용 하는 것이 좋습니다 합니다 [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) 의 속성을 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 개체입니다.  
   
-4.  선택 된 [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) 에서 프로필에 대 한 값의 **네트워크 비용 형식** 목록입니다.  
+4.  선택 된 [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) 에서 프로필에 대 한 값을 **네트워크 비용 형식** 목록.  
   
-5.  **데이터 한계 상태 플래그** 목록을 설정할 수 있습니다는 [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) 속성 또는 [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) 속성을 true로 선택할 수 있습니다 또는  **데이터 제한에서** 두 값이 false로 설정 합니다.  
+5.  **데이터 한계 상태 플래그** 목록을 설정할 수 있습니다 합니다 [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) 속성 또는 [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) 속성을 true로 선택할 수 있습니다 또는  **데이터 한계 미만** 두 값을 false로 설정 합니다.  
   
-6.  **로밍 상태** 목록에서 설정 된 [로밍](/uwp/api/windows.networking.connectivity.connectioncost) 속성입니다.  
+6.  **로밍 상태** 목록으로 설정 합니다 [로밍](/uwp/api/windows.networking.connectivity.connectioncost) 속성입니다.  
   
-7.  선택 **속성 설정** 포그라운드를 트리거하여 네트워크 속성을 시뮬레이트할 수 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 이벤트 및 백그라운드 [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) 형식의 **NetworkStateChange**합니다.  
+7.  선택할 **속성 설정** 에서 포그라운드를 트리거하여 네트워크 속성을 시뮬레이션 하기 위해 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 이벤트 및 백그라운드 [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) 형식의 **NetworkStateChange**합니다.  
   
  **네트워크 연결 관리에 대한 자세한 내용**  
   
- [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+ [빠른 시작:는 데이터 통신 연결 네트워크 비용 제약 조건의 관리](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [네트워크 정보 샘플](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+ [네트워크 정보 샘플](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
  [에너지 사용 분석](../profiling/analyze-energy-use-in-store-apps.md)  
   
  [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [백그라운드 작업과 함께 시스템 이벤트에 응답하는 방법](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+ [백그라운드 작업과 함께 시스템 이벤트에 응답 하는 방법](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [UWP 앱에서 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [UWP 앱에서 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 키보드로 시뮬레이터 탐색  
- 눌러 시뮬레이터 도구 모음을 이동할 수 있습니다 **CTRL + ALT + 위쪽 화살표** 으로 포커스를 전환 시뮬레이터 창에서 시뮬레이터 도구 모음입니다. **위쪽 화살표** 및 **아래쪽 화살표** 를 사용하여 도구 모음 단추 간에 이동합니다.  
+ 키를 눌러 시뮬레이터 도구 모음을 탐색할 수 있습니다 **CTRL + ALT + 위쪽 화살표** 시뮬레이터 창에서 시뮬레이터 도구 모음에 포커스를 전환 합니다. **위쪽 화살표** 및 **아래쪽 화살표** 를 사용하여 도구 모음 단추 간에 이동합니다.  
   
- 키를 눌러 시뮬레이터를 종료할 수 **CTRL + ALT + F4**합니다.  
+ 키를 눌러 시뮬레이터를 종료할 수 있습니다 **CTRL + ALT + F4**합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio에서 앱 실행](../debugger/run-store-apps-from-visual-studio.md)

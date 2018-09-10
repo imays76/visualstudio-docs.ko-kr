@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623642"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280226"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -216,9 +216,9 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 참조
 
-- [Visual Studio Team Services 또는 Team Foundation Server를 사용하여 작업 추적](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [Agile 도구 및 Agile 프로젝트 관리 하는 방법에 대 한](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [차트, 대시보드 및 위젯 (VSTS)](/vsts/report/dashboards/overview?view=vsts)
+- [차트, 대시보드 및 위젯 (Azure DevOps 서비스)](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [Project를 사용하여 백로그 및 작업 만들기](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -238,13 +238,13 @@ Dinner Now의 자동화된 대규모 테스트 컬렉션은 지금도 거의 모
 
 참조
 
-- [응용 프로그램 테스트](/vsts/test/overview?view=vsts)
+- [응용 프로그램 테스트](/azure/devops/test/overview?view=vsts)
 
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)
 
 - [버전 제어 사용](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [빌드 및 릴리스](/vsts/build-release/index)
+- [Azure 파이프라인](/azure/devops/pipelines/index)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>시스템 사용 하 여 시각화 및 모델링 업데이트
 
@@ -377,8 +377,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 - *종속성* 은 한 분류자의 정의를 변경하면 다른 분류자의 정의가 변경될 수 있음을 나타냅니다.
 
-- *일반화* 는 특정 분류자가 일반 분류자에서 정의 파트를 상속함을 나타냅니다. 
-  *인식*은 클래스가 인터페이스에서 제공된 작업 및 특성을 구현함을 나타냅니다.
+- *일반화* 는 특정 분류자가 일반 분류자에서 정의 파트를 상속함을 나타냅니다. *인식*은 클래스가 인터페이스에서 제공된 작업 및 특성을 구현함을 나타냅니다.
 
      이들 관계를 만들려면 **상속** 도구를 사용합니다. 인식이 *롤리팝*으로 표시될 수도 있습니다.
 

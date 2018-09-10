@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a880604f14f840c3f4712e1a8d0e4d8e9cf1822
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283473"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280599"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio에서 데이터 액세스
 
@@ -83,7 +83,7 @@ Azure 서비스에 연결 하는 경우 다운로드 해야 최신 [Azure SDK �
 
 ### <a name="data-providers"></a>데이터 공급자
 
-ADO.NET에서 수 있으려면 데이터베이스에 대 한 사용자 지정 권한이 있어야 합니다 *ADO.NET 데이터 공급자* 하거나 다른 ODBC 또는 OLE DB 인터페이스를 노출 해야 합니다. Microsoft에서 제공 된 [ADO.NET 데이터 공급자 목록은](https://msdn.microsoft.com/data/dd363565) ODBC 및 OLE DB 공급자 뿐만 아니라 SQL Server 제품에 대 한 합니다.
+ADO.NET에서 수 있으려면 데이터베이스에 대 한 사용자 지정 권한이 있어야 합니다 *ADO.NET 데이터 공급자* 하거나 다른 ODBC 또는 OLE DB 인터페이스를 노출 해야 합니다. Microsoft에서 제공 된 [ADO.NET 데이터 공급자 목록은](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) ODBC 및 OLE DB 공급자 뿐만 아니라 SQL Server 제품에 대 한 합니다.
 
 ### <a name="data-modeling"></a>데이터 모델링
 
@@ -99,7 +99,7 @@ ADO.NET에서 수 있으려면 데이터베이스에 대 한 사용자 지정 �
 
 ## <a name="native-c"></a>네이티브 C++
 
-SQL Server에 연결 하는 c + + 응용 프로그램 사용 해야 합니다 [SQL Server 용 Microsoft® ODBC Driver 13.1](https://www.microsoft.com/download/details.aspx?id=53339) 대부분의 경우에서. 서버에 연결 하는 경우 OLE DB가 필요 하 고을 사용 합니다 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)합니다. 사용 하 여 다른 데이터베이스를 액세스할 수 있습니다 [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) 또는 OLE DB 드라이버 직접. ODBC 현재 표준 데이터베이스 인터페이스 이지만 대부분의 데이터베이스 시스템 ODBC 인터페이스를 통해 액세스할 수 없는 사용자 지정 기능을 제공 합니다. OLE DB는 레거시 COM 데이터 액세스 기술 계속 지원 하지만 새로운 응용 프로그램에 적합 하지 않습니다. 자세한 내용은 [Visual c + +에서 데이터 액세스](/cpp/data/data-access-in-cpp)합니다.
+SQL Server에 연결 하는 c + + 응용 프로그램 사용 해야 합니다 [SQL Server 용 Microsoft® ODBC Driver 13.1](https://www.microsoft.com/download/details.aspx?id=53339) 대부분의 경우에서. 서버에 연결 하는 경우 OLE DB가 필요 하 고을 사용 합니다 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)합니다. 사용 하 여 다른 데이터베이스를 액세스할 수 있습니다 [ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) 또는 OLE DB 드라이버 직접. ODBC 현재 표준 데이터베이스 인터페이스 이지만 대부분의 데이터베이스 시스템 ODBC 인터페이스를 통해 액세스할 수 없는 사용자 지정 기능을 제공 합니다. OLE DB는 레거시 COM 데이터 액세스 기술 계속 지원 하지만 새로운 응용 프로그램에 적합 하지 않습니다. 자세한 내용은 [Visual c + +에서 데이터 액세스](/cpp/data/data-access-in-cpp)합니다.
 
 REST 서비스를 사용 하는 c + + 프로그램에서 사용할 수는 [c + + REST SDK](https://github.com/Microsoft/cpprestsdk)합니다.
 
@@ -133,7 +133,7 @@ C + + 앱에서 데이터베이스에 연결 하는 방법에 대 한 자세한 
 
 [ADO.NET](/dotnet/framework/data/adonet/index)&mdash;ADO.NET 아키텍처 및 응용 프로그램 데이터를 관리 하 고 XML 데이터 소스와 상호 작용을 ADO.NET 클래스를 사용 하는 방법에 설명 합니다.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)&mdash;대신 개념적 모델을 관계형 데이터베이스에 대해 직접 프로그래밍할 수 있는 데이터 응용 프로그램을 만드는 방법을 설명 합니다.
+[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;대신 개념적 모델을 관계형 데이터베이스에 대해 직접 프로그래밍할 수 있는 데이터 응용 프로그램을 만드는 방법을 설명 합니다.
 
 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;사용 하는 방법에 설명 합니다 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 구현 하는 웹 또는 인트라넷용 데이터 서비스를 배포 하는 [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)합니다.
 

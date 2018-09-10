@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cd201a1b0a68f958cafca80fd156a5eb9ca8120
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 1d3869a9d3350daac8b08398ed5afaab0729a05c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231635"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278883"
 ---
 # <a name="commandtable-element"></a>CommandTable 요소
 CommandTable는의 루트 요소는 *.vsct* 파일입니다. VSPackage는 IDE를 제공 하는 명령의 형식과 실제 레이아웃을 정의 하는 파일입니다. 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자에 명령이 포함할 수 있습니다. 자세한 내용은 [Visual Studio 명령 테이블 (.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)합니다.  
@@ -64,7 +64,7 @@ CommandTable는의 루트 요소는 *.vsct* 파일입니다. VSPackage는 IDE를
 |[VisibilityConstraints 요소](../extensibility/visibilityconstraints-element.md)|선택 사항입니다. 도구 모음 및 명령 정적 표시 여부를 결정 합니다.|  
 |[KeyBindings 요소](../extensibility/keybindings-element.md)|선택 사항입니다. 명령에 대 한 바로 가기 키 조합을 지정 합니다.|  
 |[UsedCommands 요소](../extensibility/usedcommands-element.md)|선택 사항입니다. 필요에 따라 다른 Vspackage에서 원래 지원 되는 기능의 자체 버전을 구현 하기 위해 VSPackage를 허용 합니다.|  
-|[Symbols 요소](http://msdn.microsoft.com/en-us/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|선택 사항입니다. 컴파일러에 대 한-Guid, Id 등-모든 기호 데이터를 포함합니다.|  
+|[Symbols 요소](https://www.microsoft.com/download/details.aspx?id=55984)|선택 사항입니다. 컴파일러에 대 한-Guid, Id 등-모든 기호 데이터를 포함합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   

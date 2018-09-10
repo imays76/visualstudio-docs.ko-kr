@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512059"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280081"
 ---
 # <a name="graphics-frame-analysis"></a>그래픽 프레임 분석
 Visual Studio Graphics Analyzer의 그래픽 프레임 분석을 사용하여 Direct3D 게임 또는 앱의 렌더링 성능을 분석하고 최적화합니다.  
@@ -34,7 +34,7 @@ Visual Studio Graphics Analyzer의 그래픽 프레임 분석을 사용하여 Di
   
  프레임 분석의 주요 용도가 더 빠른 렌더링 성능을 얻으려는 것이기는 하지만 정해진 성능 목표을 달성하기 위해 더 뛰어난 시각적 품질을 얻거나 GPU 전력 소비를 줄이는 데 똑같이 도움이 됩니다.  
   
- 앱에 대 한 프레임 분석이 수행할 수 있는 작업의 데모를 보려면 볼 수 있습니다 합니다 [Visual Studio 그래픽 프레임 분석](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) Channel 9의 비디오.  
+ 앱에 대 한 프레임 분석이 수행할 수 있는 작업의 데모를 보려면 볼 수 있습니다 합니다 [Visual Studio 그래픽 프레임 분석](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) Channel 9의 비디오.  
   
 ## <a name="using-frame-analysis"></a>프레임 분석 사용  
  프레임 분석을 사용하려면 다른 Graphics Analyzer 도구를 사용할 때처럼 앱 실행 시 앱에서 그래픽 정보를 캡처해야 합니다. 그런 다음 그래픽 로그 문서 (.vsglog) 창에서 선택 합니다 **프레임 분석** 탭 합니다.  
@@ -72,14 +72,14 @@ Visual Studio Graphics Analyzer의 그래픽 프레임 분석을 사용하여 Di
 #### <a name="timeline"></a>타임라인  
  타임라인은 서로 관련된 그리기 호출에 대한 개요를 보여 줍니다. 막대가 더 클수록 그리기 시간이 더 길어지므로 타임라인을 사용하여 프레임에서 가장 긴 그리기 호출을 빠르게 찾을 수 있습니다. 캡처된 프레임에 매우 많은 수의 그리기 호출이 포함된 경우 여러 그리기 호출을 막대 하나로 결합할 수 있습니다. 이때 막대 길이는 이러한 그리기 호출의 합계를 나타냅니다.  
   
- ![타임 라인 표시 그리기&#45;비용을 호출 합니다. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![타임 라인 표시 그리기&#45;비용을 호출 합니다. ](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  막대가 해당하는 그리기 호출 이벤트를 표시하기 위해 막대에 포인터를 남겨 둘 수 있습니다. 막대를 선택하면 이벤트 목록이 해당 이벤트로 동기화됩니다.  
   
 #### <a name="table"></a>표  
  타임라인 아래의 숫자로 구성된 테이블은 앱의 기본 렌더링과 관련하여 각 그리기 호출에 대한 각 렌더링 변형의 관련 성능을 보여 줍니다. 각 열은 여러 렌더링 변형을 표시하고 각 행은 가장 왼쪽 열에서 식별되는 여러 그리기 호출을 나타냅니다. 여기서 그래픽 이벤트 목록 창의 각 이벤트에 연결된 링크로 이동할 수 있습니다.  
   
- ![요약 테이블에 여러 변형을 보여 줍니다. ] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![요약 테이블에 여러 변형을 보여 줍니다. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  요약 테이블의 맨 왼쪽에서 두 번째 열에는 앱의 기본 렌더링 시간, 즉 앱의 기본 렌더링 시 그리기 호출 완료에 걸린 시간이 표시됩니다. 나머지 열은 성능이 향상되었는지 여부를 보다 쉽게 확인할 수 있도록 각 렌더링 변형의 관련 성능을 기준 대비 비율로 보여 줍니다. 비율이 100%보다 크면 기준보다 오래 걸린 것으로 성능이 떨어졌다는 의미이고 비율이 100%보다 작으면 시간이 조금 걸린 것으로 성능이 향상되었다는 의미입니다.  
   
@@ -88,7 +88,7 @@ Visual Studio Graphics Analyzer의 그래픽 프레임 분석을 사용하여 Di
 #### <a name="hot-draw-calls"></a>"핫" 그리기 호출  
  전체 렌더링 시간의 상당 부분을 소비하거나 피할 수 있는 데도 불구하고 비정상적으로 느려질 수 있는 그리기 호출에 주의를 기울이도록 하기 위해 기준 타이밍이 표준 편차 1을 넘어 프레임에 있는 모든 그리기 호출의 평균 기본 타이밍보다 긴 경우 이러한 "핫" 그리기 호출이 포함된 행은 배경이 빨간색으로 처리됩니다.  
   
- ![이 DrawIndexed 호출에는 핫 및 콜드 변형이 있습니다. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![이 DrawIndexed 호출에는 핫 및 콜드 변형이 있습니다. ](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>통계적 중요성  
  관련성이 가장 큰 렌더링 변형에 주의를 기울이도록 하기 위해 프레임 분석에서는 각 렌더링 변형의 통계적 중요성을 확인하여 중요한 변형을 굵게 표시합니다. 성능이 향상된 변형은 녹색으로 표시되고 성능이 저하된 변형은 빨간색으로 표시됩니다. 통계적으로 중요하지 않은 결과는 일반 형식으로 표시됩니다.  
@@ -103,12 +103,12 @@ Visual Studio Graphics Analyzer의 그래픽 프레임 분석을 사용하여 Di
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>하드웨어 카운터를 지원하지 않는 플랫폼  
  대부분의 플랫폼에서는 하드웨어 GPU 카운터를 완벽하게 지원하지 않습니다. 여기에는 Intel, AMD 및 nVidia에서 현재 제공하는 모든 GPU가 포함됩니다. 수집할 하드웨어 카운터가 없는 경우에는 정보 테이블이 하나만 표시되며 이 테이블에는 모든 변형의 평균 절대 타이밍이 포함됩니다.  
   
- ![Details 테이블 및 일부 재생 변형입니다. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![Details 테이블 및 일부 재생 변형입니다. ](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>하드웨어 카운터를 지원하는 플랫폼  
  하드웨어 GPU 카운터를 지원하는 플랫폼(예: nVidia T40 SOC 및 모든 Qualcomm SOC)의 경우 각 변형에 해당하는 정보 테이블이 여러 개 표시됩니다. 사용 가능한 모든 하드웨어 카운터는 각 렌더링 변형에 대해 수집되고 해당 정보 테이블에 표시됩니다.  
   
- ![지원 되는 경우 하드웨어 카운터가 표시 됩니다. ] (media/pix_frame.png "pix_frame")  
+ ![지원 되는 경우 하드웨어 카운터가 표시 됩니다. ](media/pix_frame.png "pix_frame")  
   
  하드웨어 카운터 정보는 각 그리기 호출별 하드웨어 플랫폼 동작에 대한 매우 자세한 보기를 제공합니다. 이러한 보기는 성능 병목 현상의 원인을 매우 정확하게 파악하는 데 도움이 됩니다.  
   

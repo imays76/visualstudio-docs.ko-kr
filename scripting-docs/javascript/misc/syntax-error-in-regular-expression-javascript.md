@@ -1,5 +1,5 @@
 ---
-title: 정규식 (JavaScript)의 구문 오류 | Microsoft Docs
+title: 정규식 (JavaScript)에서 구문 오류가 발생 했습니다. | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,21 +20,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23492c5a5066bf3430430b544b97ee765d26512b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b5f256639fbef222042ca3137eb9d19c2a97d702
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632923"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280379"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>정규식에 구문 오류가 있습니다.(JavaScript)
-검색 문자열의 구조 위반의 문법 규칙 중 하나 이상을 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 정규식입니다.  
+하나 이상의의 문법 규칙을 위반 하는 검색 문자열의 구조는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 정규식입니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   정규식 검색 문자열의 구조를 따르는 확인는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 정규식 구문입니다.  
+-   정규식 검색 문자열의 구조에 맞는 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 정규식 구문입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
- [정규식 구문 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)   
+ [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile 메서드(Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

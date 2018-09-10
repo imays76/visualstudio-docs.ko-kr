@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bbe3eb392de21cc1b165819fe469eb4de726d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755887"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281028"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Visual Studio를 사용 하 여 덤프 파일 사용
 힙을; 없이 사용 하 여 덤프 파일 덤프 파일 만들기 덤프 파일 열기 이진 파일, pdb의 및 덤프 파일에 대 한 소스 파일을 찾습니다.
@@ -55,7 +55,7 @@ ms.locfileid: "36755887"
 
 -   Visual Studio에서는 ARM 장치에서 네이티브 응용 프로그램의 덤프 파일을 디버깅할 수 있습니다. 또한 Visual Studio에서는 ARM 장치에서 관리되는 응용 프로그램의 응용 프로그램 덤프 파일을 디버깅할 수 있지만 이는 네이티브 디버거에서만 가능합니다.
 
--   디버깅할 [커널 모드](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) 덤프 파일의 일부인 Windows 용 디버깅 도구를 다운로드 합니다 [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+-   디버깅할 [커널 모드](/windows-hardware/drivers/debugger/kernel-mode-dump-files) 덤프 파일의 일부인 Windows 용 디버깅 도구를 다운로드 합니다 [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 -   Visual Studio로 알려진 이전 덤프 형식으로 저장 된 덤프 파일을 디버깅할 수 없습니다는 [전체 사용자 모드 덤프](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)합니다. 전체 사용자 모드 덤프는 힙을 포함하는 덤프와 동일하지 않습니다.
 
@@ -114,5 +114,5 @@ ms.locfileid: "36755887"
 ## <a name="see-also"></a>참고자료
 
 - [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [기호 (.pdb)을 지정 하 고 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

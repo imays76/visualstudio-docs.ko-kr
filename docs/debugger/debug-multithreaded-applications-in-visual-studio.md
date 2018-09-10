@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f165896947f541a7f7be2c48658b83dfd3d102
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675244"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279548"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio에서 다중 스레드 응용 프로그램 디버깅
 스레드는 운영 체제에서 프로세서 시간을 할당받는 명령 시퀀스입니다. 운영 체제에서 실행되는 모든 프로세스는 최소한 하나의 스레드로 구성됩니다. 프로세스에 스레드가 둘 이상인 경우를 다중 스레드라고 합니다.  
@@ -95,7 +95,7 @@ Visual Studio에서 제공하는 강력한 중단점 및 추적점은 다중 스
  [스레딩](/dotnet/standard/threading/index)  
  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 프로그래밍의 스레드 개념에 대해 설명하며, 예제 코드가 포함되어 있습니다.  
   
- [구성 요소에서 다중 스레딩](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [구성 요소에서 다중 스레딩](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 구성 요소에서 다중 스레드를 사용하는 방법에 대해 설명합니다.  
   
  [이전 코드를 위한 다중 스레드 지원(Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  

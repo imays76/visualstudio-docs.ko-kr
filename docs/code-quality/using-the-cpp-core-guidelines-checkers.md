@@ -9,12 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: e6b4da669b37be1781b5b1067bd55ba9cf6a15b5
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: f7a802fc1d2a83d3618d19254900a9b3dacb7f7c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231046"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279871"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C + + Core Guidelines 검사기 사용
 C + + Core Guidelines는 이식 가능한 집합 지침, 규칙 및 c + + 전문가가 및 디자이너에서 생성 하는 c + +에서 코딩 하는 방법에 대 한 모범 사례입니다. Visual Studio는 현재 c + + 용 코드 분석 도구의 일부로 이러한 규칙의 하위 집합을 지원합니다. 핵심 지침 검사기는 Visual Studio 2017에서는 기본적으로 설치 되며 [Visual Studio 2015 용 NuGet 패키지로 제공](#vs2015_corecheck)합니다.

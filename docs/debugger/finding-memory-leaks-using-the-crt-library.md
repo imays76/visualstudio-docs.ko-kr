@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 138567792ed57aff0c1471b7f9004999c357764b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057215"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281108"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT 라이브러리를 사용하여 메모리 누수 찾기
 이전에 할당한 메모리를 올바르게 할당 해제하지 못한 상태로 정의되는 메모리 누수는 C/C++ 응용 프로그램에서 가장 미묘하고 찾아 내기 어려운 버그입니다. 소량의 메모리 누수는 처음에는 알아차리지 못하는 경우가 많지만 시간이 지나면서 누적된 메모리 누수량이 많아지면 성능 저하에서부터 메모리 고갈로 인한 응용 프로그램 충돌에 이르기까지 다양한 증상이 발생할 수 있습니다. 더 심한 경우 누수 응용 프로그램이 사용 가능한 메모리를 모두 소진하여 다른 응용 프로그램에서도 충돌이 발생하면 문제의 원인이 되는 응용 프로그램을 파악하기가 어려워질 수 있습니다. 메모리 누수는 겉으로는 심각해 보이지 않더라도 반드시 해결해야 하는 다른 문제의 전조 증상인 경우도 있습니다.  
@@ -108,7 +108,7 @@ Object dump complete.
   
 -   메모리 할당 번호(이 예제의 경우 `18` )  
   
--   [블록 형식](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)(이 예제의 경우 `normal` )  
+-   합니다 [블록 형식이](https://msdn.microsoft.com/library/e2f42faf-0687-49e7-aa1f-916038354f97)는 `normal` 이 예제입니다.  
   
 -   16진수 메모리 위치(이 예제의 경우 `0x00780E80` )  
   

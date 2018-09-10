@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464812"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283121"
 ---
 # <a name="client-side-script-debugging"></a>클라이언트 쪽 스크립트 디버깅
 Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트에서 오류를 찾아 수정하기 위한 포괄적인 디버깅 환경을 제공합니다.  
   
 ## <a name="opening-script-documents"></a>스크립트 문서 열기  
-서버 쪽 및 클라이언트 쪽 스크립트 문서 목록을 볼 수는 **솔루션 탐색기** 볼 수 있습니다. **솔루션 탐색기**에서는 원하는 모든 스크립트 문서를 열 수 있습니다. 자세한 내용은 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)을 참조하십시오.  
+서버 쪽 및 클라이언트 쪽 스크립트 문서 목록을 볼 수 있습니다 합니다 **솔루션 탐색기** 볼 수 있습니다. **솔루션 탐색기**에서는 원하는 모든 스크립트 문서를 열 수 있습니다. 자세한 내용은 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)을 참조하십시오.  
   
 ## <a name="breakpoint-mapping"></a>중단점 매핑  
  Visual Studio에서는 서버 쪽 코드를 직접 디버깅할 수 없지만 서버 쪽 파일에서 중단점을 설정할 수 있습니다. Visual Studio는 클라이언트 쪽 파일에서 해당하는 위치에 중단점을 자동으로 매핑하고 클라이언트 쪽 코드에서 매핑된 중단점을 만듭니다.  
@@ -59,11 +59,11 @@ Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트
 ## <a name="debugging-ajax-script-applications"></a>AJAX 스크립트 응용 프로그램 디버깅  
  AJAX 사용 웹 응용 프로그램은 스크립트 코드를 매우 많이 사용하며 특수한 디버깅 문제를 발생시키는 경우가 많습니다. AJAX 디버깅 기술에 대한 자세한 내용은 다음 항목을 참조하십시오.  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)에서는 원하는 모든 스크립트 문서를 열 수 있습니다.  
+ [디버깅 및 Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [ASP.NET 및 AJAX 응용 프로그램 디버깅](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [ASP.NET 및 AJAX 응용 프로그램 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [스크립트 디버깅의 제한 사항](../debugger/limitations-on-script-debugging.md)   
- [변수 창](../debugger/debugger-windows.md)   
+ [변수 Windows](../debugger/debugger-windows.md)   
  [직접 실행 창](../ide/reference/immediate-window.md)   
- [디버깅 및 추적 Ajax 응용 프로그램 개요](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [디버깅 및 Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

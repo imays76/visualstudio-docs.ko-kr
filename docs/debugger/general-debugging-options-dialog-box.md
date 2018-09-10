@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626116"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280639"
 ---
 # <a name="general-debugging-options-dialog-box"></a>옵션 대화 상자, 디버깅, 일반
 합니다 **도구 > 옵션 > 디버깅 > 일반** 페이지이 문서에서 설명 하는 옵션을 설정할 수 있습니다.
@@ -72,7 +72,7 @@ ms.locfileid: "42626116"
   
 - **문자열 변환 함수 (C# 및 JavaScript 전용) 변수 창의 개체에서 호출** 변수 창의 개체를 평가할 때 암시적 문자열 변환 호출을 실행 합니다. 결과 형식 이름 대신 문자열로 표시 됩니다. C# 코드에서 디버깅하는 동안에만 적용됩니다. 이 설정은 DebuggerDisplay 특성으로 재정의 될 수 있습니다 (참조 [DebuggerDisplay 특성을 사용 하 여](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**소스 서버 지원 사용** SrcSrv를 구현 하는 원본 서버에서 원본 파일을 가져올 Visual Studio 디버거에 지시 (`srcsrv.dll`) 프로토콜입니다. Team Foundation Server와 Debugging Tools for Windows는 프로토콜을 구현하는 두 가지 소스 서버입니다. SrcSrv 설치에 대 한 자세한 내용은 참조는 [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) 설명서. 또한 [지정할 기호 (.pdb) 및 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)합니다.  
+**소스 서버 지원 사용** SrcSrv를 구현 하는 원본 서버에서 원본 파일을 가져올 Visual Studio 디버거에 지시 (`srcsrv.dll`) 프로토콜입니다. Team Foundation Server와 Debugging Tools for Windows는 프로토콜을 구현하는 두 가지 소스 서버입니다. SrcSrv 설치에 대 한 자세한 내용은 참조는 [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) 설명서. 또한 [지정할 기호 (.pdb) 및 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)합니다.  
   
 > [!IMPORTANT]
 > 읽지 못해 *.pdb* 파일을 파일에서 임의 코드를 실행할 서버를 신뢰할 수 있는지 확인 합니다.  

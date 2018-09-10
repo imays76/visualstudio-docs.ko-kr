@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178389"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281535"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>연습: WPF 및 Entity Framework를 사용 하 여 WCF 데이터 서비스 만들기
 이 연습에는 간단한을 만드는 방법을 보여 줍니다 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] 에서 호스팅되는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램 및 Windows Forms 응용 프로그램에서 액세스 합니다.
@@ -106,7 +106,7 @@ ms.locfileid: "39178389"
 7.  에 **버전을 선택** 페이지를 선택 합니다 **Entity Framework 5.0** 옵션 단추를 선택한 후는 **다음** 단추.
 
     > [!NOTE]
-    >  WCF 서비스를 사용 하 여 최신 버전의 Entity Framework 6을 사용 하려면 WCF Data Services Entity Framework 공급자 NuGet 패키지를 설치 해야 합니다. 참조 [WCF 데이터를 사용 하 여 Entity Framework 6을 사용 하 여 5.6.0 Services](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx)합니다.
+    >  WCF 서비스를 사용 하 여 최신 버전의 Entity Framework 6을 사용 하려면 WCF Data Services Entity Framework 공급자 NuGet 패키지를 설치 해야 합니다. 참조 [WCF 데이터를 사용 하 여 Entity Framework 6을 사용 하 여 5.6.0 Services](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/)합니다.
 
 8.  에 **데이터베이스 개체 선택** 페이지에서 **테이블** 노드를 선택 합니다 **고객** 확인란을 선택한 후는 **마침** 단추입니다.
 

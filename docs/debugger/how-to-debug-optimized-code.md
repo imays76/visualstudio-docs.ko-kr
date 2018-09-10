@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 47b26883d0800611f2fba5cbf7a02907fef1d948
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058512"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280820"
 ---
 # <a name="how-to-debug-optimized-code"></a>방법: 최적화된 코드 디버깅
 > [!NOTE]
@@ -88,7 +88,7 @@ ms.locfileid: "37058512"
 for (x=0; x<10; x++)  
 ```  
   
- 이 줄에 중단점을 설정할 경우, 중단점이 열 번 적중될 것으로 기대하겠지만 코드가 최적화되면 중단점은 한 번만 적중됩니다. 이는 첫 번째 명령에서 `x` 값을 0으로 설정하기 때문입니다. 컴파일러는 이 명령이 한 번만 수행되는 것으로 인식하여 루프 밖으로 명령을 이동합니다. 중단점도 함께 이동합니다. `x`를 비교하고 증가시키는 명령은 루프 내에 남아 있습니다. 볼 때 합니다 **디스어셈블리** 창 합니다 [단계 단위](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) 명령으로 제어를 강화 최적화 된 코드를 단계별로 실행 하는 경우에 유용 하는 자동으로 설정 됩니다.  
+ 이 줄에 중단점을 설정할 경우, 중단점이 열 번 적중될 것으로 기대하겠지만 코드가 최적화되면 중단점은 한 번만 적중됩니다. 이는 첫 번째 명령에서 `x` 값을 0으로 설정하기 때문입니다. 컴파일러는 이 명령이 한 번만 수행되는 것으로 인식하여 루프 밖으로 명령을 이동합니다. 중단점도 함께 이동합니다. `x`를 비교하고 증가시키는 명령은 루프 내에 남아 있습니다. 볼 때 합니다 **디스어셈블리** 창 합니다 [단계 단위](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) 명령으로 제어를 강화 최적화 된 코드를 단계별로 실행 하는 경우에 유용 하는 자동으로 설정 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [디버거 보안](../debugger/debugger-security.md)   
