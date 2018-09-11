@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059288"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279561"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Visual Studio (UWP)에 설치 된 앱 패키지 디버그
 
@@ -37,7 +37,7 @@ ms.locfileid: "37059288"
 * HoloLens
 * IoT
 
-이러한 기능에 대 한 자세한 내용은 블로그 게시물에 대 한 업데이트를 참조 하세요. [설치 된 앱 패키지를 디버깅](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) 및에서 post [유니버설 Windows 앱 (UWP) 빌드](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/)합니다.
+이러한 기능에 대 한 자세한 내용은 블로그 게시물에 대 한 업데이트를 참조 하세요. [설치 된 앱 패키지를 디버깅](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) 및에서 post [유니버설 Windows 앱 (UWP) 빌드](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/)합니다.
 
 ## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>설치 된 앱 패키지 또는 로컬 컴퓨터 또는 장치에서 실행 중인 앱 디버그
 
