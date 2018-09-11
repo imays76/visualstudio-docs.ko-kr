@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1c5de11ca7c49070e238125162aa1eeb08ad5bb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47973228fbb4d2c7380e4b20537aaf301ed937db
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281457"
+ms.locfileid: "44321101"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현
 
@@ -60,7 +60,7 @@ Azure DevOps 프로젝트를 설정 하는 사용자 지정 규칙을 만들려�
 
 1. **소스 제어 탐색기**새 폴더를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **폴더에 항목 추가**합니다.
 
-     자세한 내용은 [Git 및 Azure 리포지토리](/azure/devops/repos/git/overview)합니다.
+     자세한 내용은 [Git 및 Azure 리포지토리](/azure/devops/repos/git/overview?view=vsts)합니다.
 
 2. 규칙 집합에 만든 파일을 클릭 하 고 클릭 **완료**합니다.
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284137"
+ms.locfileid: "44321257"
 ---
 # <a name="using-the-code-metrics-results-window"></a>코드 메트릭 결과 창 사용
 
@@ -102,9 +102,9 @@ ms.locfileid: "44284137"
 
 ## <a name="creating-a-work-item-based-on-code-metric-results"></a>코드 메트릭 결과에 따라 작업 항목 만들기
 
-만들 수 있습니다는 [Azure 보드](/azure/devops/boards/index) 기반으로 하는 작업 항목 결과 **코드 메트릭 결과** 창입니다. 작업 항목을 만들 때 Visual Studio에서 제목을 자동으로 입력 합니다 **제목** 필드 및 코드 메트릭 데이터를 **기록** 탭 합니다.
+만들 수 있습니다는 [Azure 보드](/azure/devops/boards/index?view=vsts) 기반으로 하는 작업 항목 결과 **코드 메트릭 결과** 창입니다. 작업 항목을 만들 때 Visual Studio에서 제목을 자동으로 입력 합니다 **제목** 필드 및 코드 메트릭 데이터를 **기록** 탭 합니다.
 
-Azure 보드에 대 한 자세한 내용은 작업 항목을 참조 하십시오 [작업 항목](/azure/devops/boards/work-items/index)합니다.
+Azure 보드에 대 한 자세한 내용은 작업 항목을 참조 하십시오 [작업 항목](/azure/devops/boards/work-items/index?view=vsts)합니다.
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>결과에 따라 작업 항목을 만들려면
 

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 972338fa4b52a61024cabd098c29cd0f5d9c8a4f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280781"
+ms.locfileid: "44321021"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ IntelliTrace를 사용하여 코드의 실행 내역을 기록하고 추적하�
 
 - 특정 이벤트 기록
 
-     관련된 코드에 표시 되는 데이터를 검토 합니다 **지역** 디버거 이벤트 및 함수 호출 정보 중 창
+   관련된 코드에 표시 되는 데이터를 검토 합니다 **지역** 디버거 이벤트 및 함수 호출 정보 중 창
 
 - 재현하기 어렵거나 배포에서 발생하는 오류 디버그
 
@@ -46,7 +46,7 @@ Visual Studio Enterprise Edition(Professional 또는 Community Edition 아님)�
 |||
 |-|-|
 |**IntelliTrace 사용 하 여 응용 프로그램을 디버그 합니다.**<br /><br /> -이전 이벤트 표시 합니다.<br />-호출 정보 이전 이벤트를 표시 합니다.<br />-IntelliTrace 세션을 저장 합니다.<br />-IntelliTrace에서 수집 하는 데이터를 제어 합니다.|- [연습: IntelliTrace 사용](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 기능](../debugger/intellitrace-features.md)<br />- [기록 디버깅](../debugger/historical-debugging.md)<br />- [IntelliTrace 뒤로 사용 하 여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Test Manager의 테스트 세션 중 IntelliTrace 데이터 수집**|- [수동 테스트에서 추가 진단 데이터 수집](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Test Manager의 테스트 세션 중 IntelliTrace 데이터 수집**|- [수동 테스트에서 추가 진단 데이터 수집](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**배포 된 응용 프로그램에서 IntelliTrace 데이터 수집**|- [IntelliTrace 독립 실행형 수집기 사용](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**IntelliTrace 로그 파일 (.iTrace 파일)에서 디버깅을 시작 합니다.**|- [저장 된 IntelliTrace 데이터 사용](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ IntelliTrace는 재현하기 어렵거나 배포할 때 발생하는 오류를 �
 
 - 응용 프로그램이 테스트 컴퓨터에서 충돌하더라도 개발 컴퓨터에서는 성공적으로 실행됩니다.
 
-     Microsoft Test Manager에서 IntelliTrace 데이터를 수집하고 데이터를 .iTrace 파일에 저장하며 이 파일을 향후 조사를 위해 Team Foundation Server 작업 항목에 첨부할 수 있습니다. 참조 [수동 테스트에서 추가 진단 데이터 수집](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) 하 고 [사용 하 여 저장 된 IntelliTrace 데이터](../debugger/using-saved-intellitrace-data.md)입니다.
+     Microsoft Test Manager에서 IntelliTrace 데이터를 수집하고 데이터를 .iTrace 파일에 저장하며 이 파일을 향후 조사를 위해 Team Foundation Server 작업 항목에 첨부할 수 있습니다. 참조 [수동 테스트에서 추가 진단 데이터 수집](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) 하 고 [사용 하 여 저장 된 IntelliTrace 데이터](../debugger/using-saved-intellitrace-data.md)입니다.
 
 - 배포된 응용 프로그램에서 버그 또는 충돌이 발생합니다.
 
@@ -129,9 +129,7 @@ IntelliTrace는 재현하기 어렵거나 배포할 때 발생하는 오류를 �
 
 - **.NET framework 이벤트**
 
-     기본적으로 IntelliTrace는 가장 일반적인 .NET Framework 이벤트를 기록합니다. 예를 들어:
-
-    - 확인란 확인 이벤트의 경우 IntelliTrace는 확인란 상태와 텍스트를 수집합니다.
+   기본적으로 IntelliTrace는 가장 일반적인 .NET Framework 이벤트를 기록합니다. 예를 들어 ror 확인란 확인 이벤트를 IntelliTrace는 확인란 상태와 텍스트를 수집합니다.
 
 - **SharePoint 2010 및 SharePoint 2013 응용 프로그램 이벤트**
 
@@ -175,13 +173,15 @@ IntelliTrace가 호출 정보를 어느 정도 수집할지 제어하려면 관�
 
 기본적으로 IntelliTrace에서는 선택한 IntelliTrace 이벤트에 대해서만 데이터를 수집합니다. 코드의 구조와 구성에 따라 응용 프로그램이 느려지거나 느려지지 않을 수 있습니다. 예를 들어 IntelliTrace가 자주 이벤트를 기록한다면 이로 인해 응용 프로그램 속도가 느려질 수 있습니다. 또한 이에 따라 응용 프로그램 리팩터링을 고려해 볼 수도 있습니다.
 
-호출 정보를 수집하면 응용 프로그램 성능이 크게 느려질 수 있습니다. 또한 IntelliTrace 로그 파일(.iTrace 파일)을 디스크에 저장하는 경우 로그 파일의 크기도 커질 수 있습니다. 이러한 효과를 최소화하려면 관심 있는 모듈에 대한 호출 정보만 수집합니다.  .ITrace 파일의 최대 크기를 변경 하려면로 이동 **도구**, **옵션**합니다 **IntelliTrace**를 **고급**합니다. 
+호출 정보를 수집하면 응용 프로그램 성능이 크게 느려질 수 있습니다. 또한 IntelliTrace 로그 파일(.iTrace 파일)을 디스크에 저장하는 경우 로그 파일의 크기도 커질 수 있습니다. 이러한 효과를 최소화하려면 관심 있는 모듈에 대한 호출 정보만 수집합니다.  .ITrace 파일의 최대 크기를 변경 하려면로 이동 **도구**, **옵션**합니다 **IntelliTrace**를 **고급**합니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
 [IntelliTrace 기능](../debugger/intellitrace-features.md)
+
 [배포 후 문제 진단](../debugger/diagnose-problems-after-deployment.md)
-[저장 된 IntelliTrace 데이터 사용](../debugger/using-saved-intellitrace-data.md)
+
+[저장된 IntelliTrace 데이터 사용](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>블로그
 
