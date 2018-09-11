@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3c61fc3e2b36dfc28ee7f1a56ace7035360064
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 37ff64b5c1b5cec9a4b05f293bfc8c43ac7e1bb7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077567"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282276"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 배포 샘플 및 연습
 이 섹션에서는 샘플 응용 프로그램, 예제 코드 및 구문, 구조 및 Windows Forms, WPF 및 콘솔 응용 프로그램을 배포 하는 데 사용 되는 기술을 설명 하는 단계별 연습을 포함 합니다.  
@@ -40,5 +40,5 @@ ms.locfileid: "39077567"
 |[ClickOnce 배포 API 디자이너를 사용 하 여 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|응용 프로그램 어셈블리를 응용 프로그램에서 처음 사용할 때만 다운로드하는 방법을 설명합니다.|  
   
 ## <a name="see-also"></a>참고자료  
- [Visual Studio 연습](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Visual Studio 연습](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Visual Studio 샘플](../ide/visual-studio-samples.md)

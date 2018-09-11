@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154374"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282211"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio에서 JavaScript 콘솔 명령
   
- 명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 해당 창을 사용 하는 방법을 보여 주는 예제를 보려면 [퀵 스타트: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)합니다. 이 항목의 정보는 UWP 앱 및 Apache Cordova 대 한 Visual Studio Tools를 사용 하 여 만든 앱에 적용 됩니다. Cordova 앱에서 지원 되는 콘솔 명령에 대 한 정보를 참조 하세요 [앱을 디버그 하기](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)합니다. Internet Explorer F12 도구에서 콘솔을 사용하는 방법에 대한 자세한 내용은 [이 항목](http://msdn.microsoft.com/library/ie/dn255006.aspx)을 참조하세요.  
+ 명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 해당 창을 사용 하는 방법을 보여 주는 예제를 보려면 [퀵 스타트: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)합니다. 이 항목의 정보는 UWP 앱 및 Apache Cordova 대 한 Visual Studio Tools를 사용 하 여 만든 앱에 적용 됩니다. Cordova 앱에서 지원 되는 콘솔 명령에 대 한 정보를 참조 하세요 [앱을 디버그 하기](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)합니다. Internet Explorer F12 도구에서 콘솔을 사용 하 여에 대 한 정보를 참조 하세요 [이 항목에서는](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))합니다.  
   
  JavaScript 콘솔 창이 닫혀 있는 경우 열 수 있습니다 선택 하 여 Visual Studio에서 디버그 하는 동안 **디버깅할** > **Windows** > **JavaScript 콘솔**합니다.  
   
@@ -38,7 +38,7 @@ ms.locfileid: "39154374"
 > [!TIP]
 >  이전 버전의 Visual Studio는 전체 명령 집합을 지원하지 않습니다. 지원되는 명령에 대한 정보를 신속하게 얻으려면 콘솔 개체에서 IntelliSense를 사용하세요.  
   
-|명령|설명|예|  
+|명령|설명|예제|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|`expression` 이 **false**가 되면 메시지를 보냅니다.|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|콘솔 창에서 스크립트 오류 메시지를 비롯한 메시지를 지우고 콘솔 창에 나타나는 스크립트도 지웁니다. 콘솔 입력 프롬프트에 입력한 스크립트는 지우지 않습니다.|`console.clear();`|  
@@ -64,7 +64,7 @@ ms.locfileid: "39154374"
 ## <a name="miscellaneous-commands"></a>기타 명령  
  다음 명령은 JavaScript 콘솔 창에서도 사용할 수 있습니다(코드에서는 사용할 수 없음).  
   
-|명령|설명|예|  
+|명령|설명|예제|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|콘솔 창에 지정된 요소를 반환합니다. `$0`은 DOM 탐색기에서 현재 선택한 요소를 반환하고 `$1`은 DOM 탐색기에서 이전에 선택한 요소를 반환하며 이전에 선택한 네 번째 요소까지 이런 식으로 반환됩니다.|$3|  
 |`$(id)`|ID별로 요소를 반환합니다. `document.getElementById(id)`에 대한 바로 가기 명령입니다. 여기서 `id` 는 요소 ID를 나타내는 문자열입니다.|`$("contenthost")`|  

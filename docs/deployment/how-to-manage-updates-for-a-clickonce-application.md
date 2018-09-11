@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a02c4b438d6e7504056ce5cdcc06bfc129d218
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5bd9d8d7e88bc9ee8c8b041571ddaa258067c300
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151590"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283654"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램에 대 한 업데이트 관리
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 업데이트를 자동으로 또는 프로그래밍 방식으로 확인할 수 있습니다. 개발자는 업데이트 검사를 수행 하는 방법과 시기, 필수 업데이트 인지 여부 및 업데이트를 확인 하는 위치를 지정 하는 유연성을 많이 해야 합니다.  
@@ -109,7 +109,7 @@ ms.locfileid: "39151590"
   
 ## <a name="see-also"></a>참고자료  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [응용 프로그램 업데이트 대화 상자](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [응용 프로그램 업데이트 대화 상자](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
  [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)   
  [ClickOnce 프로그램 게시](../deployment/publishing-clickonce-applications.md)   
  [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   

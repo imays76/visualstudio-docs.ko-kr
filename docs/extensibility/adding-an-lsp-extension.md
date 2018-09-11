@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499392"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283459"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>언어 서버 프로토콜 확장 추가
 
@@ -230,7 +230,7 @@ namespace MockLanguageExtension
 
 ### <a name="mef"></a>MEF
 
-Visual Studio에서는 [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework)는 확장성 지점을 관리 합니다. 합니다 [내보내기](https://msdn.microsoft.com/library/system.componentmodel.composition.exportattribute(v=vs.110).aspx) 이 클래스 확장 지점으로 선택 하 고 적절 한 시간 로드는 Visual Studio에 특성을 나타냅니다.
+Visual Studio에서는 [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework)는 확장성 지점을 관리 합니다. 합니다 [내보내기](/dotnet/api/system.componentmodel.composition.exportattribute) 이 클래스 확장 지점으로 선택 하 고 적절 한 시간 로드는 Visual Studio에 특성을 나타냅니다.
 
 MEF를 사용 하려면 또한 VSIX 매니페스트의 자산으로 MEF를 정의 해야 합니다.
 

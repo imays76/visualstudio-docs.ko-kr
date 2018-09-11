@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623657"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283628"
 ---
 # <a name="validate-your-system-during-development"></a>개발하는 동안 시스템 유효성 검사
 Visual Studio에서는 소프트웨어와 사용자 요구 사항 및 시스템 아키텍처의 일관성을 유지할 수 있습니다.
@@ -42,7 +42,7 @@ Visual Studio에서는 소프트웨어와 사용자 요구 사항 및 시스템 
 
 ## <a name="see-also"></a>참고자료
 
-- [응용 프로그램 테스트](/vsts/test/overview?view=vsts)
+- [응용 프로그램 테스트](/azure/devops/test/overview?view=vsts)
 - [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)
 - [아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)
 

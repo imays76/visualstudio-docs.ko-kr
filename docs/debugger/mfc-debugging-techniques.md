@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d22c040857db1b10d084bfdba2e4387071a8ebc1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059318"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283005"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 디버깅 기술
 다음은 MFC 프로그램을 디버깅하는 데 유용한 디버깅 기술입니다.  
@@ -83,7 +83,7 @@ _asm int 3
  [항목 내용](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_TRACE_macro"></a> TRACE 매크로  
- 디버거 [출력 창](../ide/reference/output-window.md)에 프로그램 메시지를 표시하기 위해 [ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) 매크로나 MFC [TRACE](http://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 매크로를 사용할 수 있습니다. [어설션](../debugger/c-cpp-assertions.md)과 마찬가지로 추적 매크로는 프로그램의 디버그 버전에서만 활성화되며 릴리스 버전에서 컴파일하면 사라집니다.  
+ 디버거에서 프로그램에서 메시지를 표시할 [출력 창](../ide/reference/output-window.md)를 사용할 수는 [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) 매크로나 MFC [추적](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 매크로입니다. [어설션](../debugger/c-cpp-assertions.md)과 마찬가지로 추적 매크로는 프로그램의 디버그 버전에서만 활성화되며 릴리스 버전에서 컴파일하면 사라집니다.  
   
  다음 예제에서는 **TRACE** 매크로 사용법을 몇 가지 보여 줍니다. `printf`와 같이 **TRACE** 매크로도 많은 인수를 처리할 수 있습니다.  
   
@@ -119,7 +119,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  MFC는 할당할 수는 있어도 할당을 취소할 수 없는 메모리를 탐지하는 클래스와 함수를 가지고 있습니다.  
   
 ###  <a name="BKMK_Tracking_memory_allocations"></a> 메모리 할당 추적  
- MFC에서 [new](http://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 연산자 자리에 **DEBUG_NEW** 매크로를 사용하면 메모리 누수를 찾는 데 도움이 됩니다. 프로그램의 디버그 버전에서 `DEBUG_NEW` 는 할당된 각 개체의 파일 이름과 줄 번호를 추적합니다. 프로그램의 릴리스 버전을 컴파일할 경우 `DEBUG_NEW` 는 파일 이름과 줄 번호 정보 없이 간단한 **new** 연산자를 확인합니다. 따라서 프로그램의 릴리스 버전에서는 속도가 저하되지 않습니다.  
+ Mfc에서는 매크로 사용할 수 있습니다 [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 대신 합니다 **새** 메모리를 찾으려면 연산자 누수입니다. 프로그램의 디버그 버전에서 `DEBUG_NEW` 는 할당된 각 개체의 파일 이름과 줄 번호를 추적합니다. 프로그램의 릴리스 버전을 컴파일할 경우 `DEBUG_NEW` 는 파일 이름과 줄 번호 정보 없이 간단한 **new** 연산자를 확인합니다. 따라서 프로그램의 릴리스 버전에서는 속도가 저하되지 않습니다.  
   
  `DEBUG_NEW` new **자리에**를 사용하기 위해 프로그램 전체를 다시 작성하는 대신, 다음과 같이 소스 파일에서 이 매크로를 정의할 수 있습니다.  
   
@@ -138,11 +138,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **메모리 진단을 활성화하거나 비활성화하려면**  
   
--   전역 함수 [AfxEnableMemoryTracking](http://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 을 호출하여 진단 메모리 할당자를 활성화하거나 비활성화합니다. 디버그 라이브러리에서는 메모리 진단이 기본적으로 활성화되어 있기 때문에 일반적으로 이 기능을 사용하여 일시적으로 비활성화하며 이는 프로그램 실행 속도를 높이고 진단 결과를 줄입니다.  
+-   전역 함수를 호출 [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 사용 하도록 설정 하 여 진단 메모리 할당자를 사용 하지 않도록 설정 합니다. 디버그 라이브러리에서는 메모리 진단이 기본적으로 활성화되어 있기 때문에 일반적으로 이 기능을 사용하여 일시적으로 비활성화하며 이는 프로그램 실행 속도를 높이고 진단 결과를 줄입니다.  
   
  **afxMemDF로 특정 메모리 진단 기능을 선택하려면**  
   
--   메모리 진단 기능을 보다 자세히 제어하려면 MFC 전역 함수 [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)의 값을 설정하여 각 메모리 진단 기능 사용 여부를 지정할 수 있습니다. 이 변수는 열거 형식 **afxMemDF**가 지정한 대로 다음과 같은 값을 가질 수 있습니다.  
+-   메모리 진단 기능 보다 정밀 하 게 제어를 원한다 면 선택적으로 하면 각 메모리 진단 기능 설정 및 해제 MFC 전역 변수의 값을 설정 [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)합니다. 이 변수는 열거 형식 **afxMemDF**가 지정한 대로 다음과 같은 값을 가질 수 있습니다.  
   
     |값|설명|  
     |-----------|-----------------|  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 메모리 스냅숏 만들기  
   
-1.  만들기는 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체를 호출 합니다 [cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) 멤버 함수입니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
+1.  만들기는 [CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100)) 개체를 호출 합니다 [cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) 멤버 함수입니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
   
 2.  프로그램이 메모리 할당 작업과 할당 취소 작업을 수행하면 다른 `CMemoryState` 개체를 만들고 해당 개체에 대해 `Checkpoint` 를 호출합니다. 그러면 메모리 사용에 대한 두 번째 스냅숏이 만들어집니다.  
   
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
     1.  에  **\<프로젝트 > 속성 페이지** 대화 상자에서 클릭 합니다 **Configuration Manager** 단추입니다.  
   
-    2.  [구성 관리자 대화 상자](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)의 표에서 원하는 프로젝트를 찾습니다. 에 **Configuration** 열에서 선택  **\<새로 만들기... >** 합니다.  
+    2.  에 [구성 관리자 대화 상자](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), 그리드에서 프로젝트를 찾습니다. 에 **Configuration** 열에서 선택  **\<새로 만들기... >** 합니다.  
   
-    3.  [새 프로젝트 구성 대화 상자](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)의 **새 프로젝트 구성** 상자에 새 구성의 이름을 ?부분 디버그?등과 같이 입력합니다.  
+    3.  에 [새 프로젝트 구성 대화 상자](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))에 "? 부분 디버그"와 같은 새 구성에 대 한 이름을 입력 합니다 **프로젝트 구성 이름** 상자입니다.  
   
     4.  **다음에서 설정 복사** 목록에서 **릴리스**를 선택합니다.  
   
