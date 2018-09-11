@@ -3,18 +3,18 @@ title: Visual Studio 구독의 Office 365 개발자 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 11/12/2018
+ms.date: 11/12/2017
 ms.topic: Get-Started-Article
 description: Visual Studio 구독에 포함된 Office 365 개발자 혜택을 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1d7bd3c76bc92bd10b7ec7a814fb4819f48b5c4b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5adf9a2a91f3d40c3df04a365278d6d19e59e8a6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280548"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289487"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Office 365 개발자 구독 혜택
 
@@ -29,28 +29,28 @@ ms.locfileid: "36280548"
 3. 로그인 프로세스가 완료되면 구독 혜택 페이지가 나타납니다.  둘 이상의 구독을 보유하는 경우 오른쪽 위 모서리에 있는 검은색 리본 아래에 드롭다운 화살표를 클릭하면 구독 간 전환이 가능합니다.  Office 365 개발자 구독 혜택 타일은 도구 범주 안에 있습니다.  타일의 행 오른쪽에 있는 화살표를 사용하여 Office 타일이 표시될 때까지 스크롤합니다.
 
 4. 도구 섹션에서 Office 365 개발자 구독 타일을 찾습니다.  혜택 타일의 아래쪽에 있는 **코드 가져오기** 링크를 클릭합니다.   코드가 검색되면 **활성화**를 클릭합니다.
-
-    ![Office 365 개발자 혜택 타일](_img\vs-office-dev\vs-office-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Office 365 개발자 혜택 타일](_img\vs-office-dev\vs-office-dev-tile.png)
 
 5.  다음 단계에서는 계정을 만듭니다.  연락처 정보를 제공하고 **다음**을 클릭합니다.
-
-    ![Office 365 개발자 혜택 계정](_img\vs-office-dev\vs-office-dev-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Office 365 개발자 혜택 계정](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
 6.  구독을 사용할 계정에 대해 요청된 정보를 입력하고 **다음**을 클릭합니다.  정보는 구독 가용성 및 적용 가능한 세금을 결정하는 데 사용됩니다.
-
-    ![Office 365 개발자 혜택 연락처 정보](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Office 365 개발자 혜택 연락처 정보](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
 7.  계정에 사용할 사용자 이름 및 암호를 만듭니다.
-
-    ![Office 365 개발자 혜택 사용자 이름](_img\vs-office-dev\vs-office-dev-username-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Office 365 개발자 혜택 사용자 이름](_img\vs-office-dev\vs-office-dev-username-cropped.png)
 
 8.  전화 번호를 입력하고 전화나 문자를 통해 확인 코드를 받을 것인지 선택합니다.  이 과정을 통해 실제 사람에 의해 계정이 생성됨을 확인할 수 있습니다. 수신한 코드를 입력하고 **다음**을 클릭합니다.
 
 9.  이 시점에서 로그인하라는 메시지가 표시될 수 있습니다.  Office 365 로그인 페이지에 표시되는 계정이 둘 이상 있는 경우 이 구독과 연결된 계정을 선택하십시오.
 
 10. 다음 페이지는 구독을 무료로 사용할 수 있는지 확인합니다.  **다음** 을 클릭하여 계속합니다.
-
-    ![Office 365 개발자 혜택 이것은 어떠신가요?](_img\vs-office-dev\vs-office-dev-price.png)
+    > [!div class="mx-imgBorder"]
+    > ![Office 365 개발자 혜택 이것은 어떠신가요?](_img\vs-office-dev\vs-office-dev-price.png)
 
 11. “3단계”를 마무리하면서 “결제 방법”을 선택하라는 메시지가 표시됩니다.  사용 가능한 두 가지 결제 옵션이 있습니다.  첫 번째 옵션은 **신용 카드**(아래에 표시된 것처럼)를 추가하는 것이고, 두 번째 옵션은 **청구서**입니다.  두 경우 모두 **주문하기**를 클릭하면 $0.00 주문이 제출됩니다.
 
@@ -58,8 +58,8 @@ ms.locfileid: "36280548"
     > 신용 카드를 제공하고 싶지 않은 구독자의 경우 **청구서** 결제 방법을 선택합니다.  또한 **연간 지불**을 선택하여 청구서 수신을 1년에 한 번으로 제한할 수 있습니다.
 
 12. 현재 Office 365 개발자 구독 혜택을 성공적으로 상환하였습니다.  사용자의 주문을 확인하는 페이지가 표시됩니다.  페이지에는 [로그인 페이지](https://portal.office.com "Office 365 로그인 페이지")에 대한 링크가 제공됩니다.  나중에 사용할 수 있도록 페이지에 책갈피를 설정하는 것이 좋습니다.  또한 페이지에 표시된 사용자 ID를 기록해 둘 수도 있습니다.  (또한 계정을 설정할 때 입력했던 주소로 환영 전자 메일이 수신됩니다.)  계속하려면 **설정 시작**을 클릭합니다.
-
-    ![Office 365 개발자 혜택 주문 확인](_img\vs-office-dev\vs-office-dev-confirm.png)
+    > [!div class="mx-imgBorder"]
+    > ![Office 365 개발자 혜택 주문 확인](_img\vs-office-dev\vs-office-dev-confirm.png)
 
 ## <a name="eligibility"></a>자격
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
@@ -86,8 +86,8 @@ A: Office 365 개발자 구독 혜택 설정
     > https://portal.office.com에 로그인하려면 위의 7단계에서 만든 새 Office 365 개발자 구독 사용자 ID를 사용해야 합니다.
 
 2. **설정 시작**을 클릭하면, “1단계”에서 이미 소유 중인 기존 도메인에 연결할지 아니면 상환 프로세스 동안 테넌트 설정을 계속 사용할지를 묻는 메시지가 표시됩니다.  아래 예제에서는 “appsbyjane2017.onmicrosoft.com” 도메인을 계속 사용하기로 선택했습니다.
-
-    ![Office 365 개발자 혜택 관리 센터](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Office 365 개발자 혜택 관리 센터](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
 
 
 3.  2단계에서는 관리자가 Office 365 계정에 사용자를 추가할 수 있습니다.  원하는 사용자를 추가하고 **다음**을 클릭합니다.
@@ -104,11 +104,11 @@ A: Office 365 개발자 구독 혜택 설정
     - 비즈니스용 OneDrive
 
 5.  기본 설정된 언어를 선택하고 **설치**를 클릭합니다.
+    > [!div class="mx-imgBorder"]
+    > ![Office 365 개발자 혜택 설치 앱](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-    ![Office 365 개발자 혜택 설치 앱](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-
-6. **실행**을 클릭하여 설치를 바로 시작하거나 **저장**을 클릭하여 설치 패키지를 사용자 PC에 저장하여 나중에 설치합니다.
+6.  **실행**을 클릭하여 설치를 바로 시작하거나 **저장**을 클릭하여 설치 패키지를 사용자 PC에 저장하여 나중에 설치합니다.
 
 7.  사용자 계정 컨트롤 대화 상자가 나타나면 **예**를 클릭하여 컴퓨터에 Office를 설치합니다.
 

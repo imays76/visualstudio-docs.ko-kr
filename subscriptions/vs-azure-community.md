@@ -9,12 +9,12 @@ description: 선택한 Visual Studio 구독에 포함된 Azure 커뮤니티 혜�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280379"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289531"
 ---
 # <a name="azure-community"></a>Azure 커뮤니티
 
@@ -37,16 +37,16 @@ Azure 커뮤니티를 시작하는 것은 간단합니다.
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
 2. 지원 섹션에서 Azure 커뮤니티 타일을 찾고 **도움말 보기** 링크를 클릭합니다.
-
-   ![Azure 커뮤니티 타일](_img/vs-azure-community/vs-azure-community-tile.png)
+    > [!div class="mx-imgBorder"]
+    >![Azure 커뮤니티 타일](_img/vs-azure-community/vs-azure-community-tile.png)
 
 3. 사용 가능한 포럼 목록이 표시됩니다.  선택한 포럼을 클릭하면 됩니다.
-
-   ![Azure 커뮤니티 포럼](_img/vs-azure-community/vs-azure-community-forums.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 커뮤니티 포럼](_img/vs-azure-community/vs-azure-community-forums.png)
 
 4.  포럼에서 주제 및 응답을 보거나, 질문에 대한 답변을 검색하거나, 새 질문을 게시할 수 있습니다.
-
-   ![Azure 커뮤니티 예](_img/vs-azure-community/vs-azure-community-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 커뮤니티 예](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>자격
 Azure 커뮤니티 혜택의 제공 여부는 구독 수준에 따르며 아래와 같습니다.

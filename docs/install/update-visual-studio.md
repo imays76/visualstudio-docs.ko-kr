@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62859ad7abcab8f5599d205887feb73dc673112d
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139090"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43289282"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017을 최신 릴리스 버전으로 업데이트
 
@@ -150,7 +150,6 @@ Visual Studio는 Visual Studio 자체나 구성 요소에 사용 가능한 업�
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 2017 설치](install-visual-studio.md)
 * [Visual Studio 2017 수정](modify-visual-studio.md)
 * [Visual Studio 2017 제거](uninstall-visual-studio.md)
-* [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
+* [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)

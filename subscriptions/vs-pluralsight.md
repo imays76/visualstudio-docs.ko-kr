@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5f1582023032dc3581090937d18feddf428033ca
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380794"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289510"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -27,50 +27,49 @@ ms.locfileid: "39380794"
 
 ## <a name="activation-steps"></a>활성화 단계
 1. 구독을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 연결하고 전문적인 개발 섹션에 있는 Pluralsight 혜택 타일에서 **코드 얻기** 링크를 클릭합니다.
-
-    ![Pluralsight 혜택 타일](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 혜택 타일](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
     > [!IMPORTANT]
     > Pluralsight 혜택 타일에서 “코드 얻기” 링크를 클릭하면 다음 메시지가 표시될 수 있습니다.
     >
-    > 
-  **“Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account.”**(Visual Studio 구독을 통해 이전에 다른 Pluralsight 제안을 활성화한 경우 새 Pluralsight 계정을 만드는 데 이 코드를 사용할 수 없습니다.)
+    > **“Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account.”**(Visual Studio 구독을 통해 이전에 다른 Pluralsight 제안을 활성화한 경우 새 Pluralsight 계정을 만드는 데 이 코드를 사용할 수 없습니다.)
 
 2. 쿠폰 코드가 성공적으로 검색되었다는 알림을 받게 됩니다.  **활성화**를 클릭합니다.
-
-    ![Pluralsight 혜택 활성화](_img\vs-pluralsight\vs-pluralsight-activate.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 혜택 활성화](_img\vs-pluralsight\vs-pluralsight-activate.png)
 
 3.  Visual Studio 구독에 포함된 혜택의 Pluralsight 페이지로 리디렉션됩니다.  이 예에서는 Visual Studio Dev Essentials 멤버 자격으로 제공된 혜택을 활성화합니다. **Activate your benefit**(혜택 활성화)을 클릭합니다.
-
-    ![Pluralsight VSDE 방문 페이지](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight VSDE 방문 페이지](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
 
 4.  활성화 페이지에서
     - 양식에 요청받은 연락처 정보를 제공합니다.
     - 확인란을 클릭하여 사용 약관 및 개인정보처리방침에 동의합니다.
     - **혜택 활성화에 동의함**을 클릭합니다.
-
-    ![Pluralsight 혜택 활성화](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
-
-    ![Pluralsight 혜택 조건](_img\vs-pluralsight\vs-pluralsight-terms.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 혜택 활성화](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 혜택 조건](_img\vs-pluralsight\vs-pluralsight-terms.png)
 
 5.  계정을 설정하는 데 시간이 걸릴 수 있습니다.  완료되면 페이지에 확인이 표시되고 로그인 정보가 포함된 전자 메일을 받게 됩니다.  계정을 생성할 때 지정한 별칭으로 전자 메일이 발송됩니다.  메시지를 찾은 데 문제가 있는 경우 정크 또는 스팸 메일 폴더를 확인해야 합니다.
-
-    ![Pluralsight 혜택 확인](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 혜택 확인](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
 
     > [!NOTE]
     > 해당 계정으로 새 제품을 사용할 자격이 없는 경우, 자격이 없기 때문에 계정 생성에 문제가 발생했음을 설명하는 전자 메일을 받게 됩니다.  전자 메일에는 Pluralsight의 지원 팀에 문의하는 데 도움이 되는 정보도 포함되어 있습니다. Pluralsight의 지원 팀은 계정에 대한 문의 사항에 답변해 드립니다.
 
 6.  계정이 생성되면 사용자 이름이 들어 있고 암호 생성을 요청하는 전자 메일을 받게 됩니다.  암호를 입력하고 다시 입력하여 확인한 다음 **Log in to Pluralsight**(Pluralsight에 로그인)를 클릭합니다.
-
-    ![Pluralsight 혜택 환영 전자 메일](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 혜택 환영 이메일](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
 
 7.  환영 전자 메일에 제공된 사용자 이름을 입력하고 방금 만든 암호를 입력한 다음 **로그인**을 클릭합니다.
-
-    ![Pluralsight 혜택 로그인](_img\vs-pluralsight\vs-pluralsight-login.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 혜택 로그인](_img\vs-pluralsight\vs-pluralsight-login.png)
 
 8.  정말 간단하죠.  이제 수천 개의 Pluralsight 과정으로 학습을 시작할 준비가 되었습니다.
-
-    ![Pluralsight 혜택 홈](_img\vs-pluralsight\vs-pluralsight-home.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 혜택 홈](_img\vs-pluralsight\vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>자격
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |

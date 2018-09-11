@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Azure Advisory Chat 이점을 활
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280805"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289449"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -25,16 +25,16 @@ Azure 실시간 시작에 대한 도움말을 봅니다. Azure PaaS 서비스에
 Azure Advisory Chat을 사용하는 것은 간단합니다.
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 2. 지원 섹션에서 Azure Advisory Chat 타일을 찾고 **지금 채팅**을 클릭합니다.
+    > [!div class="mx-imgBorder"]
+    > ![Azure Advisory Chat 타일](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
-    ![Azure Advisory Chat 타일](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
-
-3. 계정, 청구 및 구독 문제에 대한 지원을 제외하고 서비스는 현재 영어로만 제공된다는 알림이 표시됩니다.  **계속**을 클릭합니다.
-
-    ![Azure Advisory Chat 고지 사항](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+3. 계정, 청구 및 구독 문제에 대한 지원을 제외하고 서비스는 현재 영어로만 제공된다는 알림이 표시됩니다.  **Continue(계속)** 를 클릭합니다.
+    > [!div class="mx-imgBorder"]
+    > ![Azure Advisory Chat 고지 사항](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. 아주 간단합니다.  채팅 창이 열리고 큐에서 현재 위치를 알 수 있는 상태가 표시됩니다.  채팅은 다음으로 사용 가능한 전문가가 답변합니다.
-
-    ![Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>자격
 

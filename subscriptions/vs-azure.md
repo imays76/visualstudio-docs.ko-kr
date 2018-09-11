@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Azure 혜택을 활성화하는 �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379738"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289532"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 
@@ -53,21 +53,22 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
 1.  [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
 2.  혜택 페이지의 도구 섹션에서 Azure 타일을 찾고 혜택 타일 아래쪽에 있는 **활성화** 링크를 클릭합니다.
-
-    ![Azure 타일](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 타일](_img\vs-azure\vs-azure-tile.png)
 
 3.  필수 정보를 입력하여 Azure 구독을 만들고, 확인란을 클릭하여 사용 약관에 동의하고, **등록**을 클릭합니다.
-
-    ![Azure 등록](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 등록](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  계정이 준비되면 Azure 지원 계획(별도 판매)을 선택하거나 Azure 구독을 시작할 수 있는 옵션이 제공됩니다.
-
-    ![Azure 준비](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 준비](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  Azure 대시보드가 로드되고, 처음 사용할 때 둘러보기 옵션이 제공됩니다.  둘러보기는 다양한 작업을 수행하고 관련 정보를 찾을 수 있는 방법을 알려주는 일련의 화면 팁으로 구성되어 있습니다.  둘러보기를 완료하거나 닫으면 Azure 대시보드가 표시됩니다.
 
 6.  나중에 쉽게 액세스할 수 있도록 [Azure Portal](https://portal.azure.com)에 책갈피를 지정합니다.
-![Azure 대시보드](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 대시보드](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>FAQ
 

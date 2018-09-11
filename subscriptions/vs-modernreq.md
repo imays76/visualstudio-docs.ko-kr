@@ -9,12 +9,12 @@ description: 선택한 Visual Studio Enterprise 구독에 포함된 ModernRequir
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21a7d1a9ef072f13d53698a7fc09a83d7041e1bd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280483"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289470"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 MODERNRequirements4TFS 혜택
 
@@ -24,24 +24,24 @@ ms.locfileid: "36280483"
 ## <a name="activation-steps"></a>활성화 단계
 1.  MODERNRequirementsTFS 혜택을 사용하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 2.  도구 섹션에서 MODERNRequirements4TFS 타일을 찾고 타일 왼쪽 아래에 있는 **코드 얻기** 링크를 클릭합니다.
-
-    ![ModernRequirements 혜택 타일](_img\vs-modernreq\vs-modernreq-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirements 혜택 타일](_img\vs-modernreq\vs-modernreq-tile.png)
 
 2.  코드가 성공적으로 검색되었다는 알림 메시지를 받게 됩니다.  **활성화**를 클릭합니다.
 
 3.  ModernRequirements 웹 사이트로 리디렉션되어 계정을 만들고 소프트웨어를 다운로드할 수 있습니다.  방문 페이지에서 요청받은 연락처 정보를 제공하고 **라이선스 키 가져오기 및 다운로드**를 클릭합니다.
-
-    ![ModernRequirements 방문 페이지](_img\vs-modernreq\vs-modernreq-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirements 방문 페이지](_img\vs-modernreq\vs-modernreq-landing.png)
 
 
 4.  다음 페이지에는 라이선스 키가 포함되어 있습니다.  페이지에서 제공하는 설치에 대한 정보를 검토한 다음, 페이지 중간에 있는 파란색 **소프트웨어를 다운로드하려면 여기를 클릭하십시오.** 링크를 클릭합니다.
-
-    ![ModernRequirements 라이선스 키](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirements 라이선스 키](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
 
 
 5.  다운로드 페이지에서 MODERNRequirements 제품군을 설치하거나 SMARTOffice4TFS 제품군에서 개별 모듈을 설치할 수 있습니다.  사용자에게 적합한 옵션은 설치한 TFS 버전 및 자신의 기본 설정에 따라 달라집니다.  올바른 버전의 제품을 선택할 수 있도록 페이지에 있는 정보를 숙지해야 합니다.
-
-    ![ModernRequirement 다운로드 옵션](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirement 다운로드 옵션](_img\vs-modernreq\vs-modernreq-download-page-new.png)
 
 6.  이 예에서는 SMARTOffice4TFS를 선택합니다.  .zip 파일을 다운로드하고 저장하는 세 가지 옵션을 제공하는 다운로드 대화 상자가 표시됩니다.  **저장**을 선택하여 PC의 [다운로드] 폴더에 패키지 복사본을 보관합니다.
 
@@ -57,7 +57,8 @@ ms.locfileid: "36280483"
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
-    ![ModernRequirement 다운로드 옵션](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![ModernRequirement 다운로드 옵션](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
 
 11. 폴더에서 마우스 오른쪽 단추를 클릭하고 **모두 추출**을 선택합니다.  파일을 추출하려는 위치를 지정하고 **추출**을 클릭합니다.
 

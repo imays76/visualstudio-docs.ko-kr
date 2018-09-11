@@ -9,16 +9,19 @@ description: Visual Studio 구독에 포함된 Enterprise Mobility + Security �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 52da738cc6e123c435e54523c240cd1b6d83dc8d
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281653"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289435"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio의 EMS(Enterprise Mobility + Security)
 
 Visual Studio Enterprise의 연간 클라우드 및 표준 구독에는 EMS(Enterprise Mobility + Security)가 포함되어 있습니다.  EMS(Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics 및 Microsoft Cloud App Security)를 사용하여 ID, 장치, 응용 프로그램 및 데이터를 보호하고 관리합니다.
+
+> [!NOTE]
+> 볼륨 라이선싱 다년 구독을 구매하는 경우 현재 EMS 혜택은 첫 해에만 사용할 수 있습니다.  
 
 ## <a name="activation-steps"></a>활성화 단계
 
@@ -27,24 +30,24 @@ EMS를 사용하려면 기존 계정을 사용하여 계정을 설정하거나 �
 1.  [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
 2.  도구 섹션에서 Enterprise Mobility & Security 타일을 찾고 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.   코드가 성공적으로 검색되었다는 알림 메시지를 받게 됩니다.  **활성화**를 클릭합니다.
-
-    ![EMS 혜택 타일](_img\vs-ems\vs-ems-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS 혜택 타일](_img\vs-ems\vs-ems-tile.png)
 
 2.  Enterprise Mobility + Security E5 페이지에서 기존 구독으로 로그인하거나 새 구독을 만들 수 있습니다.  새 구독을 만들려면 요청받은 정보를 완성하고 **다음**을 클릭합니다.
-
-    ![EMS 혜택 계정 만들기](_img\vs-ems\vs-ems-create-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS 혜택 계정 만들기](_img\vs-ems\vs-ems-create-account-cropped.png)
 
 3. 사용자 ID와 암호를 만듭니다.  **내 계정 만들기**를 클릭하여 계속합니다.
-
-    ![EMS 혜택 사용자 ID 만들기](_img\vs-ems\vs-ems-userID-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS 혜택 UserID 만들기](_img\vs-ems\vs-ems-userID-cropped.png)
 
 4.  그런 다음 전화 또는 문자 메시지로 인증 코드를 받을 전화 번호를 입력합니다.  코드를 입력하고 **다음**을 클릭합니다.
+    > [!div class="mx-imgBorder"]
+    > ![EMS 혜택 확인](_img\vs-ems\vs-ems-robot-cropped.png)
 
-    ![EMS 혜택 확인](_img\vs-ems\vs-ems-robot-cropped.png)
-
-5.  다음 페이지에서 로그인 페이지와 사용자 ID가 표시됩니다.  나중에 사용하기 위해 해당 정보를 저장합니다.  **...이동할 준비가 되었습니다.** 를 클릭합니다.
-
-    ![EMS 혜택 계정 만들기 완료](_img\vs-ems\vs-ems-save-info-cropped.png)
+5.  다음 페이지에서 로그인 페이지와 사용자 ID가 표시됩니다.  나중에 사용하기 위해 해당 정보를 저장합니다.  **사용할 준비가 되었습니다...** 를 클릭합니다.
+    > [!div class="mx-imgBorder"]
+    > ![EMS 혜택 계정 만들기 완료](_img\vs-ems\vs-ems-save-info-cropped.png)
 
 6.  EMS를 사용하려면 Microsoft [Azure Portal](https://azure.microsoft.com)에 액세스해야 합니다.  EMS 방문 페이지의 세 가지 단계에 따라 Azure 구독을 활성화하고, 사용자를 추가하고, EMS를 구성합니다.
 
