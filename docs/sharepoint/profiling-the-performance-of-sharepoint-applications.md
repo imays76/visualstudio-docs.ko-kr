@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fc119bbd990dab11a144ccc4e1894bb827a2fe1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67623989fc8ff2bf2d44bc435a48db81fecb1fba
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118056"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282343"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>SharePoint 응용 프로그램의 성능을 프로 파일링
 
@@ -65,7 +65,7 @@ Visual Studio에서 부하 테스트 및 웹 성능 테스트를 만들어 응�
 |제목|설명|
 |-----------|-----------------|
 |[연습: SharePoint 응용 프로그램을 프로 파일링](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|SharePoint 응용 프로그램에서 샘플링 프로필 분석을 수행 하는 방법에 설명 합니다.|
-|[릴리스 전에 앱 성능 테스트](/vsts/test/load-test/run-performance-tests-app-before-release?view=vsts)|SharePoint 응용 프로그램 스트레스 테스트 하는 데 도움이 되는 부하 테스트를 만드는 방법을 설명 합니다.|
+|[릴리스 전에 앱 성능 테스트](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|SharePoint 응용 프로그램 스트레스 테스트 하는 데 도움이 되는 부하 테스트를 만드는 방법을 설명 합니다.|
 |[코드 단위 테스트](/visualstudio/test/unit-test-your-code)|단위 테스트를 사용 하 여 코드에서 논리 오류를 찾는 방법을 설명 합니다.|
 |[코딩된 UI 테스트를 사용하여 SharePoint 2010 응용 프로그램 테스트](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|SharePoint 응용 프로그램의 사용자 인터페이스를 테스트 하는 방법에 설명 합니다.|
 

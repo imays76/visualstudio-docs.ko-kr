@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccb86621295bb102738e5154f30bd45c6db358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e6ae81608ee476e3748fde6830dfaa11c119f7a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474013"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283134"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>오류: 디버깅 없이 Transact-SQL 실행이 중지되었습니다.
 이 오류는 Transact-SQL 또는 SQLCLR 프로시저를 디버깅하려 할 때 디버거가 SQL Server에서 디버깅 메시지를 받지 못하는 경우에 발생합니다.  
@@ -41,14 +41,14 @@ ms.locfileid: "31474013"
   
  이 오류를 해결하려면 다음 작업을 수행해야 합니다.  
   
--   권한 설정을 확인합니다. 자세한 내용은 참조 [하는 방법: SQL Server 사용 권한 설정에 대 한 디버깅](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)합니다.  
+-   권한 설정을 확인합니다. 자세한 내용은 [방법: 디버깅에 대 한 SQL Server 권한 설정](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)합니다.  
   
 -   SQL 디버깅이 올바르게 설정되어 있는지 확인합니다.  
   
 -   네트워크 또는 데이터베이스 관리자에게 문의합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [SQL 디버깅 설정](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [방법: 디버깅에 대 한 SQL Server 사용 권한 설정](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [SQL 디버깅 설정](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))   
+ [방법: 디버깅을 위해 SQL Server 사용 권한 설정](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)   
  [원격 디버깅](../debugger/remote-debugging.md)

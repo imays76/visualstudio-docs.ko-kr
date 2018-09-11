@@ -20,20 +20,20 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6d1dbf8364ce34af090bfe35cfad965f610ea1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633433"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283277"
 ---
 # <a name="expected-39-39"></a>예상 &#39;-&#39;
-정규식 리터럴 만드는 하려고 하지만 슬래시 (/) 중 하나를 포함 하지 않은 있습니다. 문자열 리터럴 따옴표의 쌍 내에서 문자로 기록 하는 것 처럼 정규식 리터럴은 슬래시 (/) 문자 쌍 내에서 문자로 표현 됩니다.  
+정규식 리터럴 만들려고 시도 했음 해도 슬래시 (/) 중 하나를 포함 하지 않았습니다. 문자열 리터럴 따옴표의 쌍 내에서 문자로 기록 됩니다을 하는 것 처럼 정규식 리터럴 슬래시 (/) 문자 쌍 내에서 문자로 표현 됩니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   정규식의 끝을 표시 하는 종료 슬래시를 삽입 합니다.  
+-   정규식의 끝을 표시 하려면 종료 슬래시를 삽입 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
- [정규식 구문 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)
