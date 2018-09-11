@@ -9,12 +9,12 @@ description: 선택한 Visual Studio 구독에 포함된 Xamarin University Trai
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281146"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289411"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Xamarin University 교육 혜택
 
@@ -28,12 +28,12 @@ Visual Studio Dev Essentials 멤버는 선택한 무료 교육 과정, 게스트
 ## <a name="activation-steps"></a>활성화 단계
 1.  [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 2.  전문적인 개발 섹션에서 Xamarin University 교육 타일을 찾고 혜택 타일의 왼쪽 아래에 있는 **활성화** 링크를 클릭합니다.
-
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University 교육 혜택 타일](_img/vs-xamarin/vs-xamarin-tile.png)
 
 3.  “Microsoft Visual Studio용 Xamarin University 모바일 교육”이라는 Xamarin University 웹 페이지로 리디렉션됩니다.  **지금 구독 활성화**를 클릭합니다.
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![지금 구독 활성화](_img/vs-xamarin/vs-xamarin-activate.png)
 
     > [!NOTE]
     > 화면 해상도 및 확대/축소 수준에 따라 **지금 구독 활성화** 단추를 보기 위해 아래로 스크롤해야 할 수도 있습니다.
@@ -47,24 +47,24 @@ Visual Studio Dev Essentials 멤버는 선택한 무료 교육 과정, 게스트
     > 5. Xamarin University 교육 혜택을 다시 활성화합니다.
 
 4.  최근에 Xamarin이 Microsoft 인증으로 이동되었다는 알림이 포함된 로그인 페이지가 표시됩니다.  **Microsoft에 의견 보내기**를 클릭합니다.
-
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft에 의견 보내기](_img/vs-xamarin/vs-xamarin-connect.png)
 
 5. 그런 다음, 로그인하고 전자 메일 주소 및 기본 프로필에 액세스하기 위해 Xamarin University에 대한 권한을 부여할지 묻는 메시지가 표시됩니다.  계속하려면 **예**를 클릭합니다. 필요한 경우 나중에 응용 프로그램 권한을 변경할 수 있습니다.
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![액세스 승인](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
     > Xamarin University 혜택을 사용하려면 로그인이 필요하므로 **아니요**를 클릭하면 이전 페이지로 돌아가고 교육을 진행할 수 없습니다.
 
 
 6. 새 계정에 대한 환영 메시지가 표시됩니다.  **학습 시작**을 클릭합니다.
-
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![환영 메시지](_img/vs-xamarin/vs-xamarin-confirm.png)
 
 7. 정말 간단하죠.  Xamarin University 포털이 표시되고 학습을 시작할 준비가 되었습니다.
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University 포털](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>자격
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |

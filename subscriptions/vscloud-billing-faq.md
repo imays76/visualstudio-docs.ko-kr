@@ -9,12 +9,12 @@ description: 클라우드 구독에 대한 청구 질문입니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303324"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289409"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 
@@ -26,9 +26,9 @@ ms.locfileid: "36303324"
 답변: 아니요. 모든 Visual Studio 클라우드 구독은 Azure 구독을 사용하여 구매해야 합니다. (이를 Azure 청구 계정으로 생각하십시오.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>질문: Visual Studio 클라우드 구독을 구입하려면 어떤 유형의 Azure 구독을 사용할 수 있습니까?
-답변: 거의 모든 Azure 구독을 사용할 수 있습니다 -- 당사는 [EA(기업 계약)](https://azure.microsoft.com/pricing/enterprise-agreement/)에 연결된 Azure 구독, CSP(클라우드 솔루션 공급자)가 설정한 Azure 구독, Microsoft Open License 대리점을 통해 설정된 Azure 구독, 종량제 Azure 구독을 지원하며, Visual Studio 구독자가 구독자 혜택으로 설정하는 Azure 구독을 사용 하여 구입할 수도 있습니다(그러나 더 많은 Visual Studio 구독 비용을 지불하기 위해 월간 크레딧은 사용할 수 없습니다).
+A: 대부분의 Azure 구독을 사용할 수 있습니다. [EA(기업 계약)](https://azure.microsoft.com/pricing/enterprise-agreement/)에 연결된 Azure 구독, CSP(클라우드 솔루션 공급자)에서 설정된 Azure 구독, Microsoft Open License 재판매인을 통해 설정된 Azure 구독 및 종량제 Azure 구독을 지원합니다.
 
-주목할 만한 예외는 [Azure 무료 평가판](https://azure.microsoft.com/pricing/free-trial/)을 사용할 수 없다는 것입니다.
+[Azure 평가판](https://azure.microsoft.com/pricing/free-trial/) 및 Visual Studio 구독에서 구독자 혜택으로 포함된 구독을 비롯한 일부 유형의 Azure 구독을 사용할 수 없습니다.
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>질문: 다른 Azure 서비스를 구입해야 합니까?
 답변: 전혀 그렇지 않습니다. Azure를 통해 Visual Studio 클라우드 구독을 구입하려는 경우 그렇게 할 수 있습니다.

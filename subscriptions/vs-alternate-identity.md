@@ -9,12 +9,12 @@ description: VSTS 및 Azure를 사용하기 위해 Visual Studio 구독에 대�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 30aa1e918e289a6cfe8f11329d5df7682cd90239
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326308"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289420"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 구독자용 ID
 
@@ -43,20 +43,20 @@ Azure에서 구독자 혜택인 [월간 Azure 크레딧](https://azure.microsoft
 
 2. **구독**으로 이동합니다.
 
-
-   ![대체 계정 추가 - VS에서 구독으로 이동](_img/vs-alternate-identity/my-vs-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![대체 계정 추가 - VS에서 구독으로 이동](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. **대체 계정 추가**를 선택합니다.
-
-   ![대체 계정 추가 선택 ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![대체 계정 추가 선택](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. 회사 또는 학교 계정을 추가합니다.
-
-   ![회사 또는 학교 계정 추가](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![회사 또는 학교 계정 추가](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. 회사 또는 학교 계정을 사용하여 Visual Studio Team Services(https://{youraccount}.visualstudio.com)에 로그인합니다.
-
-   ![회사 또는 학교 계정 사용](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![회사 또는 학교 계정 사용](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
 대체 계정이 Visual Studio 구독에 추가되어 두 ID가 대체 계정으로 로그인 해야 하는 구독의 혜택(IDE, VSTS 및 Azure)을 활용할 수 있습니다.
 

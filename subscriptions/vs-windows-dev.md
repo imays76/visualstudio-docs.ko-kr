@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Windows 개발자 계정에 대�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382453"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289405"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Windows 개발자 계정
 
@@ -29,12 +29,12 @@ Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
 2. 도구 섹션에서 Windows 개발자 계정 타일을 찾고 혜택 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.  클립보드에 코드를 복사한 다음 **활성화**를 클릭합니다.
-
-    ![Windows 개발자 혜택 타일](_img\vs-windows-dev\vs-windows-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows 개발자 혜택 타일](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
 2. [https://developer.microsoft.com](https://developer.microsoft.com) 사이트에서 등록 프로세스를 시작할 수 있습니다.  **등록**을 클릭하여 계속합니다.
-
-    ![Windows 개발자 혜택 등록](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows 개발자 혜택 등록](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
 
 3. 구독에 로그인합니다.  계정이 여러 개 있는 경우 Enterprise 구독과 연결된 계정을 선택합니다.
 4. 다음 페이지에서 사용자가 거주하거나 사업장이 위치한 국가 또는 지역을 선택하고 **다음**을 클릭합니다.
@@ -43,8 +43,8 @@ Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정
 7. 연락처 정보 및 기본 설정된 전자 메일 언어를 제공하고 **다음**을 클릭합니다.
 8. 암호를 확인하라는 메시지가 표시될 수 있습니다.  암호를 입력하고 **로그인**을 클릭합니다.
 9. [등록 - 결제] 페이지에서 앞에서 복사한 코드를 [프로모션 코드] 필드에 붙여넣습니다.  페이지가 업데이트되어 *지불이 필요하지 않습니다.* 라고 표시됩니다.  **다음**을 클릭합니다.
-
-    ![Windows 개발자 혜택 등록](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows 개발자 혜택 등록](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
 
 10. 계정 정보를 검토하고, 앱 개발자 계약을 검토한 다음, 확인란을 클릭하여 사용 약관에 동의했음을 나타냅니다.  그런 다음 **마침**을 클릭합니다.
 11. **대시보드로 이동**을 클릭하여 Windows 개발자 계정 사용을 시작합니다!

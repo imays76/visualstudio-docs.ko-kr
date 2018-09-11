@@ -9,12 +9,12 @@ description: 선택한 Visual Studio 구독에 포함된 Opsgility 교육 혜택
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380312"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289501"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Opsgility 혜택
 
@@ -26,17 +26,17 @@ ms.locfileid: "39380312"
 2.  혜택 페이지의 도구 섹션에서 Opsgility 타일을 찾고 혜택 타일 아래쪽에 있는 **활성화** 링크를 클릭합니다.
 
 3.  Opsgility 혜택을 사용하려면 혜택 타일의 아래쪽에 있는 **코드 가져오기** 링크를 클릭합니다.   쿠폰 코드가 성공적으로 검색되었다는 알림을 받게 됩니다.  **활성화**를 클릭하여 계속합니다.
-
-    ![Opsgility 혜택 타일](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility 혜택 타일](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  [Visual Studio Enterprise에 대한 Opsgility 온라인 교육](https://www.opsgility.com/vse) 방문 페이지로 리디렉션됩니다.  (지원 전문가와의 채팅 세션을 시작할 수 있는 기회를 제공받을 수 있습니다.  채팅을 시작하지 않으려면 해당 창을 최소화하면 됩니다.)  요청한 연락처 정보를 입력하고 **등록**을 클릭합니다.
-
-    ![Opsgility 혜택 방문 페이지](_img\vs-opsgility\vs-opsgility-registration.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility 혜택 방문 페이지](_img\vs-opsgility\vs-opsgility-registration.png)
 
 5.  이것이 전부입니다!  학습을 시작할 준비가 되었습니다.  시작을 돕기 위해 페이지의 왼쪽에는 제안된 학습 트랙 목록이 있습니다.  즐겨보세요!
-
-    ![Opsgility 혜택 홈 페이지](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility 혜택 홈 페이지](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>자격
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |

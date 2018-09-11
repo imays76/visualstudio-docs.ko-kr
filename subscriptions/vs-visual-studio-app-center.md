@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Visual Studio App Center 혜택�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c30bf7ab44728d8a10eaa2f420caddcde154f9d3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282540"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289299"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Visual Studio App Center
 
@@ -29,16 +29,16 @@ Visual Studio App Center를 시작하는 것은 간단합니다.
 1.  [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
 2. Visual Studio App Center 타일을 찾고 **시작**을 클릭합니다.
-
-    ![VS App Center 타일](_img/vs-app-center/vs-app-center-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center 타일](_img/vs-app-center/vs-app-center-tile.png)
 
 3. 그런 다음, 계정을 만듭니다.  Microsoft, Google, GitHub 또는 Facebook의 기존 계정을 사용하여 로그인하거나 사용자 이름, 전자 메일 및 암호를 입력하여 새 계정을 만들 수 있습니다.  **계정 만들기**를 클릭하여 계속합니다.
-
-    ![VS App Center 계정 만들기](_img/vs-app-center/vs-app-center-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center 계정 만들기](_img/vs-app-center/vs-app-center-create-account.png)
 
 4. 아주 간단합니다.  새 **조직 추가**를 클릭하거나 **새 앱 추가**를 클릭하면 시작됩니다.
-
-    ![VS App Center 포털](_img/vs-app-center/vs-app-center-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center 포털](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>자격
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |

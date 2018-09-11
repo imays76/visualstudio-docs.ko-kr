@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Concierge Chat 혜택을 알아�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 395b05d3b3caa7a800cc28ca1f93c944e6320d1e
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281877"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289483"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -27,16 +27,16 @@ Concierge Chat 서비스를 통해 도움을 받는 것은 정말 간단합니�
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
 2. 혜택 페이지의 지원 섹션에서 Concierge Chat 타일을 찾고 **지금 채팅**을 클릭합니다.
+    > [!div class="mx-imgBorder"]
+    > ![Concierge Chat 타일](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
-    ![Concierge Chat 타일](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
-
-3. **계속**을 클릭합니다.
+3. **Continue(계속)** 를 클릭합니다.
 
 4. 채팅 창이 열리고 큐에서 현재 위치를 보여주는 카운터가 표시됩니다.
 
 5. 에이전트를 사용할 수 있는 경우 채팅이 시작됩니다.
-
-    ![Concierge Chat 세션](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > [!div class="mx-imgBorder"]
+    > ![Concierge Chat 세션](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>자격
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
