@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280226"
+ms.locfileid: "44321166"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -244,7 +244,7 @@ Dinner Now의 자동화된 대규모 테스트 컬렉션은 지금도 거의 모
 
 - [버전 제어 사용](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Azure 파이프라인](/azure/devops/pipelines/index)
+- [Azure 파이프라인](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>시스템 사용 하 여 시각화 및 모델링 업데이트
 

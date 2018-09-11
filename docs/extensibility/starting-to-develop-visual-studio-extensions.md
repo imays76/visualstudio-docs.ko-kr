@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4e7be9da93b422a28d01b83e023ac76a05ea514
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: HT
+ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283641"
+ms.locfileid: "44321270"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio 확장 개발 시작
 전에 Visual Studio 확장을 써 본 적, 아마도 경우 몇 가지 질문입니다. 몇 가지 가장 일반적인 위협을 여기 나열 되어 있습니다. 피드백 단추를 사용 하 여 원하는 정보를 표시 되지 않는 경우 (**이 페이지가 도움이 되었나요?** 화면의 맨 아래에서) 원하는 요청 합니다.
@@ -76,7 +76,7 @@ ms.locfileid: "44283641"
 
 -   기본 Vspackage: [VSPackage를 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   VSIX 프로젝트 템플릿: [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md) 
+-   VSIX 프로젝트 템플릿: [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Visual Studio 처럼 my 확장 가져오기
  확장에 대 한 UI를 디자인 하기 위한 유용한 팁을 얻을 [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)합니다.
@@ -87,4 +87,4 @@ ms.locfileid: "44283641"
 ## <a name="how-can-i-distribute-my-extension"></a>My 확장을 배포할 수는 방법
  다른 컴퓨터에 확장을 설치 하거나.vsix 파일을 두 번 클릭 하 여 설치 파일로 친구에 게 보낼 수 있습니다. VSIX 패키지에 대 한 자세한 내용을 확인할 수 있습니다 [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)합니다.
 
- 또한 많은 수의 Visual Studio 고객에 게 표시 하는 Visual Studio Marketplace에서 확장 프로그램을 게시할 수 있습니다. Marketplace 확장 패키지의 예제를 참조 하세요 [연습: Visual Studio 확장 기능 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)합니다. Marketplace에 게시 하기 위해 수행 해야 하는 방법에 대 한 자세한 내용은 참조 하세요. [제품 및 Visual Studio 용 확장](/azure/devops/extend/overview)합니다.
+ 또한 많은 수의 Visual Studio 고객에 게 표시 하는 Visual Studio Marketplace에서 확장 프로그램을 게시할 수 있습니다. Marketplace 확장 패키지의 예제를 참조 하세요 [연습: Visual Studio 확장 기능 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)합니다. Marketplace에 게시 하기 위해 수행 해야 하는 방법에 대 한 자세한 내용은 참조 하세요. [제품 및 Visual Studio 용 확장](/azure/devops/extend/overview?view=vsts)합니다.

@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 152d57b0b1d1659883a9096c84b650ad192c34d1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280989"
+ms.locfileid: "44320711"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/c + + 개요에 대 한 코드 분석
 
@@ -64,7 +64,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="team-build-integration"></a>팀 빌드 통합
 
-단계로 코드 분석 도구를 실행 하려면 빌드 시스템의 통합된 된 기능을 사용할 수는 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 빌드 프로세스입니다. 자세한 내용은 [Azure 파이프라인](/azure/devops/pipelines/index)합니다.
+단계로 코드 분석 도구를 실행 하려면 빌드 시스템의 통합된 된 기능을 사용할 수는 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 빌드 프로세스입니다. 자세한 내용은 [Azure 파이프라인](/azure/devops/pipelines/index?view=vsts)합니다.
 
 ## <a name="see-also"></a>참고자료
 
