@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623774"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384229"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>자습서: Visual Studio를 사용 하 여 디버그 하는 방법을 알아봅니다
 
@@ -31,7 +31,7 @@ ms.locfileid: "42623774"
 |---------|---------|
 |  ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기")  |    [비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) 비슷한 단계를 보여 주는 디버깅 합니다. |
 
-데모 앱을 C# 및 c + + 있지만 기능은 Visual Basic, JavaScript 및 Visual Studio (언급 한 위치 제외) 지 원하는 다른 언어에 적용할 수 있습니다. 스크린샷은 C#의 경우 C# 및 c + + 샘플 코드 사이 전환 하려면 페이지의 오른쪽 위에 있는 언어 필터를 사용 합니다.
+데모 앱을 C# 및 c + + 있지만 기능은 Visual Basic, JavaScript 및 Visual Studio (언급 한 위치 제외) 지 원하는 다른 언어에 적용할 수 있습니다. 스크린샷은 C#의 경우 C# 및 c + +가이 문서의 샘플 코드 사이 전환 하려면이 페이지의 오른쪽 위에 있는 언어 필터를 사용 합니다.
 
 이 자습서에서 다음을 수행합니다.
 
@@ -286,9 +286,9 @@ ms.locfileid: "42623774"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>중단점을 설정 하 고 디버거를 시작
 
-1. 에 `foreach` 의 루프를 `Main` 함수 (`for` c + +에서 루프 `main` 함수), 코드의 첫 번째 줄의 왼쪽된 여백을 클릭 하 여 중단점을 설정 합니다.
+1. 에 `foreach` 의 루프를 `Main` 함수 (`for` c + +에서 루프 `main` 함수), 다음 코드 줄의 왼쪽된 여백을 클릭 하 여 중단점을 설정:
 
-    ![중단점을 설정](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (또는 `shape->Draw()` c + +에서)
 
     빨간색 원이 나타납니다 중단점을 설정 합니다.
 
@@ -296,7 +296,7 @@ ms.locfileid: "42623774"
 
 6. 키를 눌러 **F5** 또는 **디버깅 시작** 앱 시작 단추 및 디버거에서 중단점을 설정한 코드 줄을 실행 합니다.
 
-    ![중단점을 적중](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![설정 하 고 중단점을 적중](../debugger/media/get-started-set-breakpoint.gif)
 
     노란색 화살표는도 동일한 지점 (이 문에 아직 실행)에서 앱 실행을 일시 중단 되는 디버거가 일시 중지, 문을 나타냅니다.
 
@@ -308,9 +308,7 @@ ms.locfileid: "42623774"
 
 주로 사용 하 여 바로 가기 키를 여기에서 얻을 수는 좋은 방법 이기 때문에 (해당 하는 등의 명령 메뉴 명령을 괄호 안에 표시 됩니다) 디버거에서 앱 실행 시 빠른 합니다.
 
-1. 키를 누릅니다 **F11** (선택 하거나 **디버그 > 한 단계씩 코드 실행**) (여러 번에 C#) 두 번에서 일시 중지 될 때까지 `shape.Draw` 메서드 호출을 `Main` 메서드 (`shape->Draw` c + +에서).
-
-1. 키를 눌러 **F11** 에 대 한 코드로 이동 하는 한 번 더는 `Rectangle` 클래스입니다.
+1. 일시 중지 된 동안는 `shape.Draw` 메서드 호출을 `Main` 메서드 (`shape->Draw` c + +에서), 키를 누릅니다 **F11** (선택 또는 **디버그 > 한 단계씩 코드 실행**)에 대 한 코드로 이동 하는 `Rectangle` 클래스입니다.
 
      ![F11 키를 한 단계씩 코드 실행 코드 사용](../debugger/media/get-started-f11.png "F11 한 단계씩 코드 실행")
 
@@ -364,19 +362,19 @@ ms.locfileid: "42623774"
 
 누르면 **다시 시작**, 앱을 중지 하 고 디버거를 다시 시작 및 시간을 절약 합니다. 코드를 실행 하 여 적중 되는 첫 번째 중단점에서 디버거가 일시 중지 합니다.
 
-에 설정한 중단점에서 디버거를 다시 중지 합니다 `foreach` 루프 (`for` 루프에서 c + +).
+에 설정한 중단점에서 디버거를 다시 중지 합니다 `shape.Draw()` 메서드 (`shape->Draw()` c + +에서).
 
 ## <a name="inspect-variables-with-data-tips"></a>데이터 팁을 사용 하 여 변수를 검사 합니다.
 
 변수를 검사할 수 있도록 하는 기능은 디버거에서의 가장 유용한 기능 중 하나 및 작업을 수행 하는 방법은 여러 가지입니다. 종종 문제를 디버깅 하려고 할 때 변수 값으로 특정 시간에 예상 되는 저장 하는 여부를 확인 하려고 합니다.
 
-1. 일시 중지 된 동안 합니다 `foreach` 루프 (`for` 루프에서 c + +), 키를 누릅니다 **F11** 되 면 합니다.
-
-1. 마우스로 합니다 `shapes` 개체의 기본 속성 값, 참조는 `Count` 속성.
+1. 일시 중지 된 동안 합니다 `shape.Draw()` 메서드 (`shape->Draw()` c + +에서), 마우스로 `shapes` 개체 해당 기본 속성 값이 표시는 `Count` 속성.
 
 1. 확장을 `shapes` 개체 배열의 첫 번째 인덱스 등의 모든 해당 속성을 보려는 `[0]`의 값 `Rectangle` (C#) 또는 메모리 주소 (c + +).
 
-     ![데이터 팁을 보려면](../debugger/media/get-started-data-tip.png "데이터 팁 보기")
+     ![데이터 팁을 보려면](../debugger/media/get-started-data-tip.gif "데이터 팁 보기")
+
+    같은 속성을 보려면 개체를 더 확장할 수 있습니다는 `Height` 사각형의 속성입니다.
 
     종종를 디버깅할 때 개체에 대 한 속성 값을 확인 하는 빠른 방법 및 데이터 팁은 작업을 수행 하는 좋은 방법입니다.
 

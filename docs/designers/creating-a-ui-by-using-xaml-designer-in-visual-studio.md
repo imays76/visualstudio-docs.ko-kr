@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3daf20ee3fcb2472e88d2387abf870862b0d5c47
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889969"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283693"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기
 Visual Studio의 XAML 디자이너는 XAML 기반 Windows 앱과 웹앱을 디자인하는 데 도움이 되는 그래픽 인터페이스를 제공합니다. **도구 상자** 에서 컨트롤을 끌고 **속성** 창에서 속성을 설정하여 앱에 대한 사용자 인터페이스를 만들 수 있습니다. XAML 뷰에서 직접 XAML을 편집할 수도 있습니다.
@@ -41,7 +41,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 앱과 웹앱을 디�
 
  **맞춤선** 맞춤선은 빨간색 파선 선으로 표시되는 *맞춤 경계선*으로, 컨트롤의 가장자리가 맞춰진 경우나 텍스트 기준선이 맞춰진 경우를 나타냅니다. **맞춤선에 맞추기** 를 사용하도록 설정한 경우에만 맞춤 경계선이 나타납니다.
 
- **모눈 레일** `Grid` 레일은 [모눈](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) 패널의 행과 열을 관리하는 데 사용됩니다. 행과 열을 만들고 삭제하며, 상대적인 너비와 높이를 조정할 수 있습니다. 아트보드의 왼쪽에 나타나는 세로 모눈 레일은행에 사용되고 맨 위에 나타나는 가로줄은 열에 사용됩니다.
+ **모눈 레일** `Grid` 레일은 [모눈](/uwp/api/Windows.UI.Xaml.Controls.Grid) 패널의 행과 열을 관리하는 데 사용됩니다. 행과 열을 만들고 삭제하며, 상대적인 너비와 높이를 조정할 수 있습니다. 아트보드의 왼쪽에 나타나는 세로 모눈 레일은행에 사용되고 맨 위에 나타나는 가로줄은 열에 사용됩니다.
 
  **모눈 표시기** 모눈 표시기는 모눈 레일에 세로 또는 가로 줄이 연결된 삼각형으로 나타납니다. 모눈 표시기를 끌면 마우스를 이동할 때 인접한 열이나 행의 너비 또는 높이가 그에 따라 업데이트됩니다.
 
@@ -49,7 +49,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 앱과 웹앱을 디�
 
  **크기 조정 핸들** 크기 조정 핸들이 선택된 컨트롤에 나타나며 이 핸들을 사용하여 컨트롤의 크기를 조정할 수 있습니다. 컨트롤의 크기를 조정하면 너비 및 높이 값이 나타나므로 컨트롤의 크기를 조정하는 데 도움이 됩니다. **디자인** 뷰에서 컨트롤을 조작하는 방법에 대한 자세한 내용은 [XAML 디자이너에서 요소 작업](../designers/working-with-elements-in-xaml-designer.md)을 참조하세요.
 
- **여백** 여백은 컨트롤 가장자리와 해당 컨테이너 가장자리 사이의 고정된 공간 크기를 나타냅니다. 속성 창의 [레이아웃](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 아래에 있는 **여백** 속성을 사용하여 컨트롤의 여백을 설정할 수 있습니다.
+ **여백** 여백은 컨트롤 가장자리와 해당 컨테이너 가장자리 사이의 고정된 공간 크기를 나타냅니다. 속성 창의 [레이아웃](/uwp/api/windows.ui.xaml.frameworkelement.margin) 아래에 있는 **여백** 속성을 사용하여 컨트롤의 여백을 설정할 수 있습니다.
 
  **여백 표시기** 여백 표시기를 사용하여 레이아웃 컨테이너를 기준으로 요소의 여백을 변경할 수 있습니다. 여백 표시기가 열려 있으면 여백이 설정되지 않고 여백 표시기에서 끊어진 체인을 표시합니다. 여백을 설정하지 않으면 런타임에 레이아웃 컨테이너 크기를 조정할 때 요소가 제자리에 유지됩니다. 여백 표시기가 닫힌 경우 여백 표시기는 끊어지지 않은 체인을 표시하고 런타임에 레이아웃 컨테이너의 크기가 조정될 때 요소도 여백과 함께 이동됩니다(여백은 고정됨).
 

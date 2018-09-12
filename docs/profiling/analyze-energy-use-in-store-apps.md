@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4ad28707c6f90a84d69734959f783851e3bc783c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3578573a2020dbf048e3da4e0bf44a54df07860b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692137"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669145"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP 앱의 에너지 사용 분석
 Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터리로 전부 또는 일부의 시간 동안 실행하는 저전력 태블릿 장치에서 UWP 앱의 전력 및 에너지 소비를 분석할 수 있습니다. 배터리로 구동하는 장치에서 앱이 너무 많은 에너지를 사용할 경우 고객 불만족을 일으킬 수 있고, 결과적으로 고객이 설치를 제거할 수도 있습니다. 에너지 사용을 최적화하면 고객이 앱을 채택하고 사용하는 사례가 증가할 수 있습니다.  
@@ -155,4 +155,4 @@ if (performance && performance.mark) {
 
 ## <a name="see-also"></a>참고 항목
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

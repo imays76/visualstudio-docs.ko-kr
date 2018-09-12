@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233154"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283668"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터
 
@@ -84,7 +84,7 @@ Android용 Visual Studio 에뮬레이터는 Android 장치를 에뮬레이트하
  대상으로 할 프로필 집합을 설치하고 나면 녹색 **재생** 단추를 눌러 이 새로운 프로필을 관리자에서 바로 시작할 수 있습니다. 이 프로필은 또한 Visual Studio 플랫폼 간 모바일 프로젝트 형식의 디버그 대상 드롭다운 메뉴에도 나타납니다.  
   
 ##  <a name="FeaturesTest"></a> 에뮬레이터에서 테스트할 수 있는 기능  
- 에뮬레이터에서 테스트할 수 있는 기능에 대한 자세한 내용은 이 [블로그 게시물](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)을 참조하세요.  
+ 에뮬레이터에서 테스트할 수 있는 기능에 대한 자세한 내용은 이 [블로그 게시물](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/)을 참조하세요.  
   
 ##  <a name="FeaturesNonTest"></a> 에뮬레이터에서 테스트할 수 없는 기능  
  다음 목록에서는 에뮬레이터에서 테스트할 수 **없는** Android 플랫폼의 기능에 대해 설명합니다. 물리적 장치에서 다음 기능을 테스트해야 합니다.  
