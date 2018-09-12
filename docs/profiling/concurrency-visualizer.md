@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5adb5f5177afc59f560a988f9c86e1ebbede759
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7b2a9e85f94e4c6baa06984b2b84e03c836eab53
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691227"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669692"
 ---
 # <a name="concurrency-visualizer"></a>동시성 시각화 도우미
 > [!NOTE]
@@ -56,4 +56,4 @@ ms.locfileid: "34691227"
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)
