@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4e642f06777fd66a12ebffe5a7f9c9aedacc4e
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: a20e248ae13fa15442c753dfce85b56620505d7d
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131946"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384177"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio 설명서
 
@@ -79,7 +79,7 @@ Visual Studio를 통해 다양한 프로그래밍 언어를 사용하여 앱을 
     </li>
 </ul>
 
-<h2>5분 "빠른 시작"을 사용하여 Visual Studio 사용</h2>
+## <a name="experience-visual-studio-with-5-minute-quickstarts"></a>5분 "빠른 시작"을 사용하여 Visual Studio 사용
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -246,7 +246,7 @@ Visual Studio를 통해 다양한 프로그래밍 언어를 사용하여 앱을 
     </li>
 </ul>
 
-<h2>자습서 자세히 알아보기</h2>
+## <a name="go-deeper-with-tutorials"></a>자습서 자세히 알아보기
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
