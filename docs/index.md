@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio 설명서 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: 6a287d934fd91fc7c042f5480bbbbecb82e6238b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: cfbfa4d355466e429831e4c07e2e74c72b6876ed
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225112"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281119"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -353,7 +353,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=865130">
+                                <a href="/visualstudio/version-control/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -372,7 +372,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts">
+                                <a href="/azure/devops/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -383,7 +383,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>DevOps</h3>
-                                                    <p>클라우드에서 앱을 지속적으로 빌드 및 릴리스하고 VSTS로 Agile 사례를 구현하세요.</p>
+                                                    <p>클라우드에서 앱을 지속적으로 빌드 및 릴리스하고 Azure DevOps Services로 Agile 사례를 구현하세요.</p>
                                                 </div>
                                             </div>
                                         </div>
