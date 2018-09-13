@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225086"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384294"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 설치
 
@@ -69,7 +69,7 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 
   사용자 계정 컨트롤 알림을 받으면 **예**를 클릭합니다.
 
-2. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://go.microsoft.com/fwlink/?LinkID=824704)에 동의하도록 요청하는 메시지가 표시됩니다. **계속**을 클릭합니다.
+2. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://privacy.microsoft.com/privacystatement)에 동의하도록 요청하는 메시지가 표시됩니다. **계속**을 클릭합니다.
 
    ![사용 조건 및 개인정보처리방침](media/vs2017-privacy-and-license-terms.PNG "Microsoft 사용 조건 및 개인정보처리방침")
 
@@ -138,7 +138,7 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
    예를 들어 [C++ 앱을 빌드](../ide/getting-started-with-cpp-in-visual-studio.md)하려면 **설치됨**을 클릭하고, **Visual C++** 를 펼친 다음, 빌드할 C++ 프로젝트 형식을 선택합니다. <br><br>
    [C# 앱을 빌드](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)하려면 **설치됨**을 클릭하고, **Visual C#** 을 펼친 다음, 빌드할 C# 프로젝트 형식을 선택합니다.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]  
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
 
 ## <a name="see-also"></a>참고 항목
 

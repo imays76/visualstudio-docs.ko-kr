@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251551"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279403"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터에 대한 시스템 요구 사항
 Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화 기술인 Hyper-V에서 가상 머신으로 실행됩니다. 에뮬레이터를 실행하려면 컴퓨터가 이 항목의 설명대로 Hyper-V를 실행하기 위한 요구 사항을 충족해야 합니다.  
@@ -117,7 +117,7 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
   
 |요구 사항|요구 사항을 확인하고 사용하도록 설정하는 방법|  
 |-----------------|----------------------------------------------|  
-|Hyper-V를 설치해야 함|[Windows Phone 에뮬레이터용 Hyper-V를 설정](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx)하는 데 사용되는 것과 동일한 지침을 따릅니다.<br /><br /> 서비스 스냅인에서 **Hyper-V 가상 머신 관리** 서비스의 상태를 확인합니다.|  
+|Hyper-V를 설치해야 함|[Windows Phone 에뮬레이터용 Hyper-V를 설정](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105))하는 데 사용되는 것과 동일한 지침을 따릅니다.<br /><br /> 서비스 스냅인에서 **Hyper-V 가상 머신 관리** 서비스의 상태를 확인합니다.|  
 |Hyper-V를 실행해야 함|서비스 관리에 대한 자세한 내용은 다음 항목을 참조합니다.<br /><br /> -   [서비스 시작, 중지, 일시 중지, 계속 또는 다시 시작](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [서비스 시작 방법 구성](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  로컬 Hyper-V Administrators 그룹의 구성원이어야 합니다.  

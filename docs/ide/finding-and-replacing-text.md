@@ -33,16 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626629"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384242"
 ---
 # <a name="find-and-replace-text"></a>텍스트 찾기 및 바꾸기
 
-[찾기 및 바꾸기](#find-and-replace-control) 또는 [파일에서 찾기/바꾸기](#find-replace-in-files)를 사용하여 Visual Studio 편집기에서 텍스트를 찾아 바꿀 수 있습니다. Visual Studio 2017 버전 15.8의 새로운 기능에서 *[다중 캐럿 선택 영역](#multi-caret-selection)* 을 사용하여 패턴의 *일부* 인스턴스를 찾고 바꿀 수 있습니다.
+[찾기 및 바꾸기](#find-and-replace-control) 또는 [파일에서 찾기/바꾸기](#find-in-files-and-replace-in-files)를 사용하여 Visual Studio 편집기에서 텍스트를 찾아 바꿀 수 있습니다. Visual Studio 2017 버전 15.8의 새로운 기능에서 *[다중 캐럿 선택 영역](#multi-caret-selection)* 을 사용하여 패턴의 *일부* 인스턴스를 찾고 바꿀 수 있습니다.
 
 > [!TIP]
 > 변수 및 메서드 등의 코드 기호의 이름을 바꾸는 경우 찾기 및 바꾸기를 사용하는 것보다 *[리팩터링](../ide/reference/rename.md)* 하는 것이 좋습니다. 리팩터링은 지능형이고 범위를 이해하지만 찾기 및 바꾸기는 모든 항목을 무조건 바꿉니다.

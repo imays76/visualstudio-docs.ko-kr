@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382424"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283334"
 ---
 # <a name="configure-load-test-run-settings"></a>부하 테스트 실행 설정 구성
 
@@ -37,6 +37,6 @@ ms.locfileid: "39382424"
 |**부하 테스트 실행 설정의 테스트 반복 횟수 지정:** **테스트 반복** 속성을 구성하여 부하 테스트의 모든 시나리오에서 모든 웹 성능 및 단위 테스트를 실행할 횟수를 지정할 수 있습니다.|-   [방법: 실행 설정에서 테스트 반복 횟수 지정](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**부하 테스트 실행 설정의 샘플링 주기 지정:** **샘플링 주기** 속성을 구성하여 부하 테스트에서 성능 카운터 데이터가 수집되는 빈도를 지정할 수 있습니다.|-   [방법: 샘플링 주기 지정](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**타이밍 정보 저장소 옵션 지정:** **타이밍 정보 저장소** 속성을 구성하여 부하 테스트의 정보를 저장할 방식을 지정할 수 있습니다.|-   [방법: 타이밍 정보 저장소 속성 지정](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**테스트 리소스 보존 기간 지정:** **리소스 보존 시간** 속성을 설정하여 지정된 기간 동안 테스트 리소스를 보존함으로써 테스트 > 수정 > 설정 주기를 가속화합니다.|-   [부하 테스트를 가속화하려면 리소스 보존](/vsts/test/load-test/getting-started-with-performance-testing?view=vsts)|
+|**테스트 리소스 보존 기간 지정:** **리소스 보존 시간** 속성을 설정하여 지정된 기간 동안 테스트 리소스를 보존함으로써 테스트 > 수정 > 설정 주기를 가속화합니다.|-   [부하 테스트를 가속화하려면 리소스 보존](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
 |**컨텍스트 매개 변수 사용:** 컨텍스트 매개 변수를 사용하여 문자열을 매개 변수화할 수 있습니다. 예를 들어 부하 테스트에 매개 변수화된 웹 서버를 사용하는 웹 성능 테스트가 포함된 경우 다른 서버에 매핑되는 컨텍스트 매개 변수를 실행 설정에 추가할 수 있습니다.|-   [방법: 실행 설정에 컨텍스트 매개 변수 추가](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**테스트 로깅 속성 구성:** 부하 테스트 실행 설정과 연결된 로그에 데이터가 기록되는 빈도를 구성할 수 있습니다. 로그는 몇 기가바이트까지 커질 수 있으므로 크거나 복잡한 부하 테스트를 실행 중인 경우 이 속성이 중요할 수 있습니다.<br /><br /> 응용 프로그램을 디버깅하고 분석하는 데 유용하도록 부하 테스트가 실패할 경우 로그 파일이 자동으로 저장되도록 구성할 수도 있습니다.|-   [부하 테스트 로깅 설정 수정](../test/modify-load-test-logging-settings.md)|

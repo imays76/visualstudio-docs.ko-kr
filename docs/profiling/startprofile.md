@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de525650c7e93497c86fa7ebf493922d8fad6ef
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6aa365df2d7cdc1219ceea718594682685f2a759
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669364"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile` 함수는 지정된 프로파일링 수준에 대한 카운터를 1(on)로 설정합니다.  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  Start/Stop 상태와 Suspend/Resume 상태가 둘 다 ON인 경우 수준에 대한 프로파일링 상태는 ON입니다. 프로파일링될 스레드의 경우 스레드에 대한 전역, 프로세스 및 스레드 수준 상태는 ON이어야 합니다.  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>함수 정보  
- 헤더: VSPerf.h에서 선언됨  
+ 헤더: *VSPerf.h*에서 선언됨  
   
- 가져오기 라이브러리: VSPerf.lib  
+ 가져오기 라이브러리: *VSPerf.lib*  
   
 ## <a name="example"></a>예  
  다음 예제에서는 StartProfile 함수 호출을 보여 줍니다.  

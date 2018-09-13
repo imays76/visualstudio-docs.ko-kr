@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573169"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669249"
 ---
 # <a name="threads-view-parallel-performance"></a>스레드 뷰(병렬 성능)
 **스레드 뷰**는 동시성 시각화 도우미에서 가장 자세하며 다양한 기능을 제공하는 뷰입니다(**분석** > **동시성 시각화 도우미**를 선택하여 동시성 시각화 도우미 시작). 이 보기를 사용하면 동기화, I/O 또는 기타 이유로 인해 스레드가 차단되는지 아니면 실행되고 있는지를 확인할 수 있습니다.  

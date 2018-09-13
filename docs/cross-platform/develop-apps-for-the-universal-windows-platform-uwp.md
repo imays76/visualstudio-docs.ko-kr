@@ -11,12 +11,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: db88545393eeda280df898ee896f54123f4a1627
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: de4306b2fa56bf00fd51a741441395b90ed314e5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251541"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280807"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)용 앱 개발
 유니버설 Windows 플랫폼과 단일 Windows 코어를 사용하여 휴대폰에서 데스크톱에 이르는 모든 Windows 10 장치에서 동일한 앱을 실행할 수 있습니다. Visual Studio 및 유니버설 Windows 앱 개발 도구를 사용하여 이러한 유니버설 Windows 앱을 만듭니다.
@@ -47,7 +47,7 @@ ms.locfileid: "39251541"
 이 소프트웨어를 설치한 후에 개발을 위해 Windows 10 장치를 사용하도록 설정해야 합니다. 자세한 내용은 [장치를 개발에 사용하도록 설정](/windows/uwp/get-started/enable-your-device-for-development)을 참조하세요. 각 Windows 10 장치에 대한 개발자 라이선스는 더 이상 필요하지 않습니다.
 
 ## <a name="universal-windows-apps"></a>유니버설 Windows 앱
-C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정된 개발 언어를 선택하여 Windows 10 장치용 유니버설 Windows 플랫폼 앱을 만듭니다. [첫 번째 앱 만들기](/windows/uwp/get-started/your-first-app)를 참조하거나 [Windows 10용 도구 개요](http://channel9.msdn.com/Series/ConnectOn-Demand/229) 비디오를 시청하세요.
+C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정된 개발 언어를 선택하여 Windows 10 장치용 유니버설 Windows 플랫폼 앱을 만듭니다. [첫 번째 앱 만들기](/windows/uwp/get-started/your-first-app)를 참조하거나 [Windows 10용 도구 개요](https://channel9.msdn.com/Series/ConnectOn-Demand/229) 비디오를 시청하세요.
 
 기존 Windows 스토어 8.1 앱, Windows Phone 8.1 앱 또는 Visual Studio 2015를 사용하여 만든 유니버설 Windows 앱이 있으면 이러한 앱을 포팅하여 최신 유니버설 Windows 플랫폼을 사용해야 합니다. [Windows 런타임 8.x에서 UWP로 이동](/windows/uwp/porting/w8x-to-uwp-root)을 참조하세요.
 

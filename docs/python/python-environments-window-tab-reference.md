@@ -1,7 +1,7 @@
 ---
 title: Python 환경 창 참조
 description: Visual Studio의 [Python 환경] 창에 나타나는 각 탭에 대한 세부 정보입니다.
-ms.date: 05/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e1d894733ee1c8f7de0d45d225f545c2bb59d38
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 45a14fb5667d7eb28d4d298731886db662985d17
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468588"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43996079"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 환경 창 탭 참조
 
