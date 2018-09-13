@@ -1,7 +1,7 @@
 ---
 title: 빠른 시작 - 템플릿을 사용하여 Python 프로젝트 만들기
 description: 이 빠른 시작에서 기본 Flask 앱의 기본 제공 템플릿을 사용하여 Python용 Visual Studio 프로젝트를 만듭니다.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3478e5b6156cdcf9c1aa6d814cb3cdd35e9579d1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: b9f361ba73f8fd1d3963ca39a90ac01ba9effe6f
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586501"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43996004"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>빠른 시작: Visual Studio의 템플릿에서 Python 프로젝트 만들기
 
@@ -76,8 +76,7 @@ ms.locfileid: "39586501"
 
 1. **디버그** > **디버깅하지 않고 시작**을 선택하여 앱을 실행하고 브라우저에서 `localhost:5555`를 엽니다.
 
-
-  **질문: Visual Studio에서 제공하는 다른 Python 템플릿은 무엇인가요?**
+**질문: Visual Studio에서 제공하는 다른 Python 템플릿은 무엇인가요?**
 
 **응답**: Python 워크로드를 설치하면 Visual Studio에서는 [Flask, Bottle 및 Django 웹 프레임워크](../python/python-web-application-project-templates.md), Azure 클라우드 서비스, 다른 기계 학습 시나리오 및 Python 앱을 포함하는 기존 폴더 구조에서 프로젝트를 만드는 템플릿을 비롯한 다양한 프로젝트 템플릿을 제공합니다. **Python** 언어 노드 및 해당 자식 노드를 선택하여 **파일** > **새로 만들기** > **프로젝트** 대화 상자를 통해 이러한 항목에 액세스합니다.
 

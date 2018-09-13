@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1572f1473e2da8f84887b6571755dc259e19762b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b15c57766c2deadc65e0d2d7d2b41baa50bf50e5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669409"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 메서드는 지정된 프로파일링 수준에 대한 Suspend/Resume 카운터를 감소시킵니다.  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  Start/Stop 상태와 Suspend/Resume 상태가 둘 다 ON인 경우 수준에 대한 프로파일링 상태는 ON입니다. 프로파일링될 스레드의 경우 스레드에 대한 전역, 프로세스 및 스레드 수준 상태는 모두 ON이어야 합니다.  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>함수 정보  
- 헤더: VSPerf.h에서 선언됨  
+ 헤더: *VSPerf.h*에서 선언됨  
   
- 가져오기 라이브러리: VSPerf.lib  
+ 가져오기 라이브러리: *VSPerf.lib*  
   
 ## <a name="example"></a>예  
  다음 예제에서는 ResumeProfile 함수를 보여 줍니다. 예제에서는 SuspendProfile 메서드에 대한 호출이 [PROFILE_CURRENTID](../profiling/profile-currentid.md)에서 식별된 동일한 스레드 또는 프로세스에 대해 만들어졌다고 가정합니다.  

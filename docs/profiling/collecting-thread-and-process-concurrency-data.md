@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 424675726dd91664923cde0a3a5ad5573d51b4d5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b8ce2c1d7a28eff441cbf3a95e8f9df644789e70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548339"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775556"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>스레드 및 프로세스 동시성 데이터 수집
 
@@ -31,11 +31,11 @@ Visual Studio 프로파일링 도구의 동시성 프로파일링 방법을 사�
 
 ## <a name="common-tasks"></a>일반 작업
 
-‘성능 세션***속성 페이지’* 대화 상자에서 추가 옵션을 지정할 수 있습니다. 이 대화 상자를 열려면
+성능 세션의 _성능 세션_**속성 페이지** 대화 상자에서 추가 옵션을 지정할 수 있습니다. 이 대화 상자를 열려면
 
 - **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
 
-다음 표의 작업에서는 동시성 방법을 사용하여 프로파일링할 때 ‘성능 세션***속성 페이지’* 대화 상자에서 지정할 수 있는 옵션을 설명합니다.
+다음 표의 작업에서는 동시성 방법을 사용하여 프로파일링할 때 _성능 세션_**속성 페이지** 대화 상자에서 지정할 수 있는 옵션을 설명합니다.
 
 |작업|관련 내용|
 |----------|---------------------|

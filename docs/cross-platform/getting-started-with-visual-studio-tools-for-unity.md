@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252468"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283114"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
 
@@ -85,7 +85,7 @@ Unity 2018.1부터 Visual Studio는 Unity의 기본 외부 스크립트 편집�
 
 - Visual Studio 2015 Community, Visual Studio 2015 Professional 또는 Visual Studio 2015 Enterprise의 경우:
 
-   [Visual Studio 2015 Tools for Unity 다운로드](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+   [Visual Studio 2015 Tools for Unity 다운로드](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
 > Visual Studio Tools for Unity에는 Unity 5.2 이상과 함께 Visual Studio Community, Professional, Premium 또는 Enterprise와 같이 확장을 지원하는 Visual Studio 버전이 필요합니다. Visual Studio Tools for Unity가 사용 중인 Unity 설치에서 사용 가능한지 확인하려면 **도움말** 메뉴에서 **Unity 정보**를 선택하고 대화 상자의 왼쪽 아래에 “Microsoft Visual Studio Tools for Unity enabled”(Microsoft Visual Studio Tools for Unity 사용 가능) 텍스트가 있는지 확인하세요.

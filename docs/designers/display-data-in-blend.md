@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890359"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282172"
 ---
 # <a name="display-data-in-blend"></a>Blend에서 데이터 표시
 
@@ -43,7 +43,7 @@ ms.locfileid: "37890359"
 
 클래스에서 예제 데이터를 생성하려면 XAML 문서를 열고 **데이터** 패널에서 **예제 데이터 만들기**![예제 데이터 아이콘 만들기](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) 단추를 클릭한 다음, **클래스에서 예제 데이터 만들기**를 클릭합니다.
 
-**짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [클래스에서 예제 데이터 만들기](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).
+**짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [클래스에서 예제 데이터 만들기](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
 **짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [일부 데이터 바인딩을 Blend와 혼합](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
@@ -53,7 +53,7 @@ ms.locfileid: "37890359"
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>스토어 또는 Phone 앱에 라이브 데이터 표시
 
-[데이터 및 파일(XAML) 작업](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)을 참조하세요.
+[데이터 및 파일(XAML) 작업](/previous-versions/windows/apps/br229562(v=win.10))을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

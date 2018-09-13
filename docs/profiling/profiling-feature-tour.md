@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626864"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320841"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>빠른 시작: 프로파일링 도구 살펴보기
 
@@ -156,7 +156,7 @@ CPU 사용량 또는 메모리 사용량 도구에 현재 표시되지 않는 �
 |성능 도구|Windows 바탕 화면|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예| 
-|[CPU 사용량](../profiling/cpu-usage.md)|예(참고 참조)|예|예(참고 참조)|
+|[CPU 사용량](../profiling/cpu-usage.md)|예|예|예|
 |[GPU 사용량](../debugger/gpu-usage.md)|예|예|no| 
 |[응용 프로그램 타임라인](../profiling/application-timeline.md)|예|예|아니요|
 |[PerfTips](../profiling/perftips.md)|예|XAML은 예, HTML은 no|예|

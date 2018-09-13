@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a156e7acfdb68d1fa523263835eeee4a573ff78
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669572"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 메서드는 지정된 프로파일링 수준에 대한 Suspend/Resume 카운터를 증가시킵니다.  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  Start/Stop 상태와 Suspend/Resume 상태가 둘 다 ON인 경우 수준에 대한 프로파일링 상태는 ON입니다. 프로파일링될 스레드의 경우 스레드에 대한 전역, 프로세스 및 스레드 수준 상태는 모두 ON이어야 합니다.  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>함수 정보  
- 헤더: VSPerf.h에서 선언됨  
+ 헤더: *VSPerf.h*에서 선언됨  
   
- 가져오기 라이브러리: VSPerf.lib  
+ 가져오기 라이브러리: *VSPerf.lib*  
   
 ## <a name="example"></a>예  
  다음 예제에서는 SuspendProfile 메서드를 보여 줍니다. 이 예에서는 StartProfile에 대한 이전 호출이 [PROFILE_CURRENTID](../profiling/profile-currentid.md)에 의해 식별된 프로세스 또는 스레드에 대해 만들어졌다고 가정합니다.  

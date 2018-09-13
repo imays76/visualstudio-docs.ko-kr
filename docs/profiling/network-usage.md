@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669140"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP 앱에서 네트워크 사용 분석
 Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/windows.web.http)를 사용하여 수행된 네트워크 작업에 대한 데이터를 수집합니다. 데이터를 분석하면 액세스 및 인증 문제, 잘못된 캐시 사용 및 저하된 디스플레이와 다운로드 성능을 해결하는 데 도움이 될 수 있습니다.  
@@ -76,4 +77,4 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/
  [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Channel 9 Video: VS Diagnostics tools - New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)(Channel 9 비디오: VS 진단 도구 – 새 네트워크 프로파일러)  
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

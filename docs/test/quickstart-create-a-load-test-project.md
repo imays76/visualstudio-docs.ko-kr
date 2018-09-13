@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380499"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320958"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>빠른 시작: 부하 테스트 프로젝트 만들기
 
@@ -59,7 +59,7 @@ ms.locfileid: "39380499"
 
    **부하 테스트 새로 만들기 마법사**가 열립니다.
 
-1. **온-프레미스 부하 테스트** 옵션을 선택한 후, **다음**을 선택합니다. [여기](/vsts/load-test/get-started-simple-cloud-load-test)에서 클라우드 기반 부하 테스트에 대해 자세히 알아볼 수 있습니다.
+1. **온-프레미스 부하 테스트** 옵션을 선택한 후, **다음**을 선택합니다. [여기](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)에서 클라우드 기반 부하 테스트에 대해 자세히 알아볼 수 있습니다.
 
    ![부하 테스트 새로 만들기 마법사 - 첫 페이지](media/load-test-wizard-page-1.png)
 

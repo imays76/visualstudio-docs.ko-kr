@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567215"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384307"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
@@ -176,7 +176,7 @@ Visual Studio Code 파일에 삽입할 수 있는 여러 IntelliSense 코드 조
 
 |자식 요소|설명|
 |-------------------|-----------------|
-|[CodeSnippet 요소](../ide/code-snippets-schema-reference.md#codesnippet)|선택적 요소입니다. 모든 코드 조각 데이터의 부모 요소입니다. `CodeSnippet` 요소에는 `CodeSnippets` 요소가 0개 또는 그 이상 있을 수 있습니다.|
+|[CodeSnippet 요소](../ide/code-snippets-schema-reference.md#codesnippet-element)|선택적 요소입니다. 모든 코드 조각 데이터의 부모 요소입니다. `CodeSnippet` 요소에는 `CodeSnippets` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
 ## <a name="declarations-element"></a>Declarations 요소
 
@@ -196,7 +196,7 @@ Visual Studio Code 파일에 삽입할 수 있는 여러 IntelliSense 코드 조
 
 |부모 요소|설명|
 |--------------------|-----------------|
-|[Snippet 요소](../ide/code-snippets-schema-reference.md#snippet)|코드 조각에 대한 참조, 가져오기, 선언 및 코드가 포함되어 있습니다.|
+|[Snippet 요소](../ide/code-snippets-schema-reference.md#snippet-element)|코드 조각에 대한 참조, 가져오기, 선언 및 코드가 포함되어 있습니다.|
 
 ## <a name="default-element"></a>Default 요소
 
@@ -279,7 +279,7 @@ IntelliSense 코드 조각에 대한 일반 정보를 지정합니다.
 
 |부모 요소|설명|
 |--------------------|-----------------|
-|[CodeSnippet 요소](../ide/code-snippets-schema-reference.md#codesnippet)|모든 코드 조각 데이터의 부모 요소입니다.|
+|[CodeSnippet 요소](../ide/code-snippets-schema-reference.md#codesnippet-element)|모든 코드 조각 데이터의 부모 요소입니다.|
 
 ## <a name="helpurl-element"></a>HelpUrl 요소
 
@@ -422,7 +422,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 
 |부모 요소|설명|
 |--------------------|-----------------|
-|[Declarations 요소](../ide/code-snippets-schema-reference.md#declarations)|편집할 수 있는 코드 조각의 리터럴과 개체가 포함되어 있습니다.|
+|[Declarations 요소](../ide/code-snippets-schema-reference.md#declarations-element)|편집할 수 있는 코드 조각의 리터럴과 개체가 포함되어 있습니다.|
 
 ## <a name="namespace-element"></a>Namespace 요소
 
@@ -491,7 +491,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 
 |부모 요소|설명|
 |--------------------|-----------------|
-|[References 요소](../ide/code-snippets-schema-reference.md#references)|`Reference` 요소에 대한 그룹화 요소입니다.|
+|[References 요소](../ide/code-snippets-schema-reference.md#references-element)|`Reference` 요소에 대한 그룹화 요소입니다.|
 
 ## <a name="references-element"></a>References 요소
 

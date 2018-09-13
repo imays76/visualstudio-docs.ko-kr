@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0dc63350b3acf89b1b226e5ebae45fdf8868fb3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 112983b543a602bca7105ad1b5b69c5995eadeb0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750092"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774621"
 ---
 # <a name="crosssession"></a>CrossSession
 *VSPerfCmd.exe* **CrossSession** 옵션을 통해 프로파일러는 모든 콘솔 세션에서 데이터를 수집할 수 있습니다. **CrossSession** 옵션은 **Start** 옵션과 함께 사용되어야 합니다.  
@@ -37,10 +37,10 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  **Start:** `Method`  
  **Start** 옵션은 지정된 프로파일링 방법으로 프로파일러를 초기화합니다.  
   
- **Attach:** *PID*[**,***PID*]  
+ **Attach:** _PID_[**,**_PID_]  
  지정된 프로세스의 프로파일링을 시작합니다.  
   
- **Detach**[**:***PID*[,*PID*]]  
+ **Detach**[**:**_PID_[,_PID_]]  
  지정된 프로세스의 프로파일링을 중지합니다.  
   
 ## <a name="example"></a>예  

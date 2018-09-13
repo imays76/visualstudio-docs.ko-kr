@@ -12,12 +12,12 @@ f1_keywords:
 - vs.newproject
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e010f82df5f9153fc5052606b82bf97bdb7cf0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: cb81dacbe4ff128f2e5078147653f4fd6e3c8ae8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704514"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279041"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Visual Studio를 사용하여 코드 작성 및 관리
 
@@ -115,7 +115,7 @@ Visual Studio의 코드 편집기 및 다른 도구를 사용하여 코드를 �
         </a>
     </li>
     <li>
-        <a href="/vsts/git/share-your-code-in-git-vs-2017">
+        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
