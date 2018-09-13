@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138945"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701711"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 
@@ -38,7 +38,7 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 
     1.  Helm CLI 개발 워크스테이션에 설치 합니다. 자세한 내용은 참조 [Helm 설치](https://github.com/kubernetes/helm/blob/master/docs/install.md)합니다.
 
-    1.  Helm을 AKS 클러스터에 대해 구성 합니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [Helm을 구성 하는 방법](/azure/aks/kubernetes-helm#configure-helm)합니다.
+    1.  Helm을 사용 하 여 AKS 클러스터에 대해 구성 된 `helm init` 명령입니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [Helm을 구성 하는 방법](/azure/aks/kubernetes-helm#configure-helm)합니다.
 
 ## <a name="create-a-new-kubernetes-project"></a>새 Kubernetes 프로젝트 만들기
 
@@ -82,7 +82,7 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 
 만든 후, 원하는 방식으로 실행 되는 코드가 AKS 클러스터에 Visual Studio에서 직접 게시할 수 있습니다.
 
-이렇게 하려면 먼저 컨테이너 이미지를 ACR Azure Container Registry ()를 게시 하는 게시 프로필을 설정 해야 합니다. 다음 AKS는 ACR에서 컨테이너 이미지를 풀 하 고 클러스터에 배포할 수 있습니다.
+이렇게 하려면 먼저는 설치한 모든 항목에 설명 된 대로 다시 확인 하는 [필수 구성 요소](#prerequisities) AKS에 게시에 대 한 항목 아래에 있는 섹션 및 링크에 지정 된 모든 명령줄 단계를 실행 합니다. 그런 다음 컨테이너 이미지를 ACR Azure Container Registry ()를 게시 하는 게시 프로필을 설정 합니다. 다음 AKS는 ACR에서 컨테이너 이미지를 풀 하 고 클러스터에 배포할 수 있습니다.
 
 1. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 하 *프로젝트* 선택한 **게시**합니다.
 
