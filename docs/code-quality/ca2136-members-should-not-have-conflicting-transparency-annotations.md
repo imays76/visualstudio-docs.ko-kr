@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afcfe25a9ff4541331ddfc35ebe86bbf884ef02e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3af665f3a0f59cb1dd8c8c8ee581fc37f9da7e78
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918519"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550923"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: 멤버는 충돌하는 투명도 주석을 가져서는 안 됩니다.
 |||
@@ -33,18 +33,18 @@ ms.locfileid: "31918519"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 이 규칙은 형식 멤버도 표시 되는 <xref:System.Security> 는 다른 보안 특성 멤버의 컨테이너의 투명도 가진 보안 특성입니다.
+ 형식 멤버는 표시 하는 경우이 규칙이 실행 된 <xref:System.Security> 보안 특성을 멤버의 컨테이너는 다른 투명도 있는 보안 특성.
 
 ## <a name="rule-description"></a>규칙 설명
- 투명성 특성은 큰 범위의 코드 요소에서 작은 범위의 요소에 적용됩니다. 범위가 큰 코드 요소의 투명성 특성은 첫 번째 요소에 포함된 코드 요소의 투명성 특성보다 우선합니다. 예를 들어로 표시 된 클래스는 <xref:System.Security.SecurityCriticalAttribute> 특성으로 표시 된 메서드를 포함할 수 없습니다는 <xref:System.Security.SecuritySafeCriticalAttribute> 특성입니다.
+ 투명성 특성은 큰 범위의 코드 요소에서 작은 범위의 요소에 적용됩니다. 범위가 큰 코드 요소의 투명성 특성은 첫 번째 요소에 포함된 코드 요소의 투명성 특성보다 우선합니다. 예를 들어로 표시 된 클래스는 <xref:System.Security.SecurityCriticalAttribute> 특성으로 표시 되는 메서드를 포함할 수 없습니다는 <xref:System.Security.SecuritySafeCriticalAttribute> 특성.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 위반으로이 인해를 해결 하려면 코드를 가진 요소를 더 낮은 범위에서 보안 특성을 제거 하거나 포함 하는 코드 요소와 동일 하 게 특성을 변경 합니다.
+ 이 위반을 해결 하려면 하위 범위를 갖는 코드 요소에서 보안 특성을 제거 하거나 포함 하는 코드 요소와 동일 하 게 특성을 변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서 경고를 표시 하지 마십시오.
 
 ## <a name="example"></a>예제
- 메서드를로 다음 예에서 <xref:System.Security.SecuritySafeCriticalAttribute> 특성 되며로 표시 된 클래스의 멤버는 <xref:System.Security.SecurityCriticalAttribute> 특성입니다. 보안 안전 특성을 제거 해야 합니다.
+ 다음 예제에서는 메서드가 사용 하 여 표시 되는 <xref:System.Security.SecuritySafeCriticalAttribute> 특성 되며로 표시 된 클래스의 멤버는 <xref:System.Security.SecurityCriticalAttribute> 특성입니다. 보안 안전 하 게 특성을 제거 해야 합니다.
 
  [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]

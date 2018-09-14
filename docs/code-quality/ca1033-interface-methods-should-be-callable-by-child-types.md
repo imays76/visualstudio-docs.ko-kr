@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2c1a622519e08d4b56fdd8e6811ec039f9d3871
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b81ac3fcedf4f09c37bbe3aeeb6b7d2b572af8ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31896184"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550689"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: 인터페이스 메서드는 자식 형식에서 호출할 수 있어야 합니다.
 |||
@@ -35,20 +35,20 @@ ms.locfileid: "31896184"
  외부에서 볼 수 있는 unsealed 형식이 public 인터페이스의 명시적 메서드 구현을 제공하면서 외부에서 볼 수 있는 같은 이름의 대체 메서드를 제공하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 명시적으로 공용 인터페이스 메서드를 구현 하는 기본 형식인을 것이 좋습니다. 기본 형식에서 파생 되는 형식의 현재 인스턴스에 대 한 참조를 통해서만 상속 된 인터페이스 메서드를 액세스할 수 있습니다 (`this` C#) 인터페이스로 캐스팅 되 합니다. 파생 된 형식 상속 된 인터페이스 메서드를 명시적으로 다시 구현 하는 경우의 기본 구현은 더 이상 액세스할 수 없습니다. 현재 인스턴스 참조를 통해 호출 되며 호출 파생된 구현을 제공 합니다. 그러면, 재귀 및 스택 오버플로가 발생 합니다.
+ 기본 형식을 명시적으로 공용 인터페이스 메서드를 구현 하는 것이 좋습니다. 기본 형식에서 파생 된 형식 상속 된 인터페이스 메서드를 현재 인스턴스에 대 한 참조를 통해서만 액세스할 수 있습니다 (`this` C#) 인터페이스에는 캐스팅 됩니다. 파생된 형식을 다시 상속 된 인터페이스 메서드 구현 (명시적)을 하는 경우 기본 구현은 더 이상 액세스할 수 없습니다. 현재 인스턴스 참조를 통해 호출 파생 된 구현; 호출 그러면, 재귀 및 스택 오버플로가 발생 합니다.
 
- 이 규칙에서는 명시적 구현에 대 한 위반을 보고 하지 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 외부에서 볼 때 `Close()` 또는 `System.IDisposable.Dispose(Boolean)` 메서드가 제공 됩니다.
+ 이 규칙의 명시적 구현에 대 한 위반을 보고 하지 않습니다 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 외부에서 볼 때 `Close()` 또는 `System.IDisposable.Dispose(Boolean)` 메서드가 제공 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 파생된 형식에 표시 되 고 동일한 기능을 노출 하는 새 메서드를 구현 하거나 명시적이 아닌 구현을 변경 합니다. 주요 변경 내용 허용 되는 경우 대신 봉인 형식을 쉽게 것입니다.
+ 이 규칙 위반 문제를 해결 하 고, 같은 기능을 노출 하 고 파생된 형식에 표시 되는 새 메서드를 구현 또는 명시적이 아닌 구현으로 변경 합니다. 주요 변경 내용 허용 되는 경우 대 안으로 봉인 된 형식입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 외부에 표시 되는 메서드를 기능은 다른 이름 명시적으로 구현 된 메서드와 같지만 제공할 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 외부에 표시 되는 메서드를 명시적으로 구현 된 메서드 이름이 다른 하지만 같은 기능이 있는 제공할 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 형식 `ViolatingBase`, 규칙을 위반 하는 형식이 있는 `FixedBase`, 위반에 대 한 수정을 보여 주는 합니다.
+ 다음 예제에서는 형식 `ViolatingBase`, 규칙을 위반 하는 형식이 있는 `FixedBase`, 보여주는 위반에 대 한 수정 합니다.
 
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
  [인터페이스](/dotnet/csharp/programming-guide/interfaces/index)

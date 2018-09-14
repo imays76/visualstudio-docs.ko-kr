@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 449258d04b6a47fef42c56637a4de48a4e5d1d12
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 123bff32b847342f4081a73abb1d8b899cc0efec
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915393"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548506"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: serialization 생성자를 안전하게 하십시오.
+
 |||
 |-|-|
 |TypeName|SecureSerializationConstructors|
@@ -32,15 +33,15 @@ ms.locfileid: "31915393"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 형식에서 구현 하는 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스, 대리자 또는 인터페이스를 아니며 부분적으로 신뢰할 수 있는 호출자를 허용 하는 어셈블리에서 선언 됩니다. 형식에 사용 하는 생성자는 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> 개체 및 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 개체 (serialization 생성자 시그니처). 이 생성자는 보안 검사를 통해 보안 되지 않지만 하나 이상의 정규 생성자 형식에 보안이 설정 됩니다.
+ 형식에서 구현 된 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스, 대리자 또는 인터페이스 아니며 부분적으로 신뢰할 수 있는 호출자를 허용 하는 어셈블리에서 선언 됩니다. 형식에 사용 하는 생성자는 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> 개체 및 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 개체 (serialization 생성자 서명). 이 생성자는 보안 검사를 통해 보안 되지 있지만 하나 이상의 정규 생성자 형식에 보안이 설정 됩니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 이 규칙은 사용자 지정 serialization을 지 원하는 형식과 관련이 있습니다. 구현 하는 경우 원하는 사용자 지정 직렬화를 한 종류의 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스입니다. Serialization 생성자를 사용 하는 필수 항목이 며 역직렬화 할 시키거나 다시 사용 하 여 serialize 된 개체를 만드는 데 사용 되는 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 메서드. Serialization 생성자를 할당 개체를 초기화 하므로, 정규 생성자에 있는 보안 검사도 serialization 생성자에 제공 되어야 합니다. 이 규칙을 위반 하는 경우 그렇지 않은 경우 인스턴스를 만들지 못했습니다 호출자 이렇게 하려면 serialization 생성자를 사용할 수 있습니다.
+ 이 규칙은 사용자 지정 serialization을 지 원하는 형식에 적합 합니다. 형식을 구현 하는 경우 사용자 지정 serialization을 지원 합니다 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스입니다. Serialization 생성자를 사용 하는 필수 항목이 며 역직렬화 할 시키거나 다시 사용 하 여 serialize 된 개체를 만드는 데 사용 되는 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 메서드. Serialization 생성자를 할당 하 고 개체를 초기화, 때문에 일반 생성자에는 없는 보안 검사 serialization 생성자에 수도 있어야 합니다. 이 규칙을 위반 하면 그렇지 않은 경우 인스턴스를 만들지 못했습니다 호출자 이렇게 하려면 serialization 생성자를 사용할 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 다른 생성자를 보호 하는 동일한 보안 요청으로 serialization 생성자를 보호 합니다.
+ 이 규칙 위반 문제를 해결 하려면 다른 생성자를 보호 하는 동일한 보안 요청을 사용 하 여 serialization 생성자를 보호 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  규칙의 위반을 표시 하지 마십시오.
 
 ## <a name="example"></a>예제
@@ -53,5 +54,8 @@ ms.locfileid: "31915393"
 
  [CA2237: ISerializable 형식을 SerializableAttribute로 표시하십시오.](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
-## <a name="see-also"></a>참고 항목
- <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

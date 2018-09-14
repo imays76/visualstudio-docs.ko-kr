@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 340b0e7deb12d4568a76d4871eabd49641926dcb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebb37743f9259390aba400a5d89d24b5f41a0d49
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920364"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546982"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: 재정의 링크 요청은 기본 형식의 링크 요청과 같아야 합니다.
+
 |||
 |-|-|
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
@@ -32,23 +33,25 @@ ms.locfileid: "31920364"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 공용 형식에서 public 또는 protected 메서드가 메서드를 재정의 하거나 인터페이스를 구현 있고 동일한 갖지 않는 [링크 요청](/dotnet/framework/misc/link-demands) 인터페이스 또는 가상 메서드.
+ 공용 형식에서 public 또는 protected 메서드는 인터페이스를 구현 및 동일한 수 없는 메서드를 재정의 [링크 요구가](/dotnet/framework/misc/link-demands) 인터페이스 또는 가상 메서드.
 
 ## <a name="rule-description"></a>규칙 설명
  이 규칙에서는 메서드를 다른 형식의 인터페이스이거나 가상 메서드인 기본 메서드에 일치시킨 다음 각각에 대해 링크 요청을 비교합니다. 메서드 또는 기본 메서드가 링크 요청이 있는 경우 하지 않으면 위반이 보고 됩니다.
 
- 이 규칙이 위반 되 면 악의적인 호출자가 보안 되지 않은 메서드를 호출 하 여 링크 요청을 우회할 수 있습니다.
+ 이 규칙을 위반 하는 경우 악의적인 호출자가 보안 되지 않은 메서드를 호출 하 여 링크 요청을 무시할 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 재정의 메서드 또는 구현에 동일한 링크 요청을 적용 합니다. 없는 경우에 전체 demand로이 메서드를 표시 하거나 특성을 완전히 제거 합니다.
+ 이 규칙 위반 문제를 해결 하려면 재정의 메서드를 구현 하려면 동일한 링크 요청을 적용 합니다. 없는 경우 전체 요청을 사용 하 여 메서드를 표시 하거나 특성을 완전히 제거 하십시오.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는이 규칙의 다양 한 위반을 보여 줍니다.
+ 다음 예제에서는 다양 한이 규칙 위반을 보여 줍니다.
 
  [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
-## <a name="see-also"></a>참고 항목
- [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines) [링크 요구](/dotnet/framework/misc/link-demands)
+## <a name="see-also"></a>참고자료
+
+- [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)
+- [링크 요청](/dotnet/framework/misc/link-demands)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c1e4635a654cac608985766884ddb66e353d03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a18abfa94d3d53c6b96558fdf1cfc8d0c1c9cc5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898278"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549708"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: 형식은 특정 기본 형식을 확장하면 안 됩니다.
 |||
@@ -32,33 +32,33 @@ ms.locfileid: "31898278"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 외부에서 볼 수 있는 형식이 특정 기본 형식을 확장합니다. 현재,이 규칙은 보고 형식에서 파생 되는 형식:
+ 외부에서 볼 수 있는 형식이 특정 기본 형식을 확장합니다. 현재이 규칙은 보고 형식에서 파생 되는 형식:
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.Xml.XmlDocument?displayProperty=fullName>
+- <xref:System.Xml.XmlDocument?displayProperty=fullName>
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.Queue?displayProperty=fullName>
+- <xref:System.Collections.Queue?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Stack?displayProperty=fullName>
+- <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>규칙 설명
- 에 대 한 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 버전 1에서 새 예외를 파생 시키는 권장 되었던 것 <xref:System.ApplicationException>합니다. 권장 구성이 변경 되 고 새 예외에서 파생 되어야 <xref:System.Exception?displayProperty=fullName> 또는 해당 서브 클래스에서 중 하나는 <xref:System> 네임 스페이스입니다.
+ 에 대 한 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 버전 1에서는 것을 권장 했습니다에서 새 예외를 파생 시키는 <xref:System.ApplicationException>합니다. 새 예외에서 파생 되어야 하 고는 권장 사항이 변경 되었습니다 <xref:System.Exception?displayProperty=fullName> 또는 해당 하위 클래스 중 하나는 <xref:System> 네임 스페이스입니다.
 
- 서브 클래스를 만들지 마십시오 <xref:System.Xml.XmlDocument> 기본 개체 모델 또는 데이터 원본에 대 한 XML 뷰를 만들려는 경우.
+ 서브 클래스를 만들지 마십시오 <xref:System.Xml.XmlDocument> 기본 개체 모델 또는 데이터 원본 XML 뷰를 만들려는 경우입니다.
 
 ### <a name="non-generic-collections"></a>제네릭이 아닌 컬렉션
- 사용 하거나 가능 하면 제네릭 컬렉션을 확장 합니다. 이전에 제공한 경우가 아니면 사용자 코드에서 제네릭이 아닌 컬렉션을 확장 하지 않습니다.
+ 사용 하거나 가능한 제네릭 컬렉션을 확장 합니다. 이전에 제공한 경우가 아니면 코드에서 제네릭이 아닌 컬렉션을 확장 되지 않습니다.
 
- **잘못 된 사용 예제를 보려면**
+ **잘못 된 사용의 예**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -70,7 +70,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
- **올바른 사용 예제**
+ **올바른 사용법의 예**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -83,7 +83,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 형식을 서로 다른 기본 형식 또는 제네릭 컬렉션에서 파생 됩니다.
+ 이 규칙 위반 문제를 해결 하려면 형식을 다른 기본 형식 또는 제네릭 컬렉션에서 파생 됩니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 에 대 한 위반에 대 한이 규칙에서는 경고를에서 표시 해야 <xref:System.ApplicationException>합니다. 에 대 한 위반에 대 한이 규칙에서는 경고를에서 억제를 안전 하 게 <xref:System.Xml.XmlDocument>합니다. 코드는 이전에 출시 된 경우에 제네릭이 아닌 컬렉션에 대 한 경고를 표시 하지 않으려면 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 에 대 한 위반에 대 한이 규칙에서 경고를 표시 하지 마십시오 <xref:System.ApplicationException>합니다. 에 대 한 위반에 대 한이 규칙에서 경고를 표시 하지 않아도 안전 합니다 <xref:System.Xml.XmlDocument>합니다. 코드를 이전에 릴리스된 경우 제네릭이 아닌 컬렉션에 대 한 경고를 표시 하지 않으려면 안전 합니다.

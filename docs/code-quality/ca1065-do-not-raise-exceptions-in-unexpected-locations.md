@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b338b37d62f3612dd5eb6d575b6ef0d57202c1f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4999770367ad7b170398333cf7c7cf2cb9d1c407
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900665"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546696"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.
 
@@ -64,39 +64,39 @@ ms.locfileid: "31900665"
 
 ### <a name="property-get-methods"></a>속성 Get 메서드
 
-속성은 기본적으로 스마트 필드입니다. 따라서은 가능한 한 필드 처럼 동작 해야 합니다. 예외를 throw 하지 않는 필드와 속성입니다. 예외를 throw 하는 속성이 있는 경우 메서드를 수행 하는 것이 좋습니다.
+속성은 기본적으로 스마트 필드입니다. 따라서은 최대한 필드 처럼 동작 해야 합니다. 예외를 throw 하지 않습니다 필드와 속성. 예외를 throw 하는 속성에 있는 경우에 메서드를 수행 하는 것이 좋습니다.
 
-Property get 메서드에서 다음과 같은 예외가 발생할 수 있습니다.
+속성 get 메서드를에서 다음과 같은 예외를 throw 할 수 있습니다.:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> 와 모든 파생 클래스 (포함 하 여 <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 버전 (포함 하 여 <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> 와 모든 파생 클래스
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생 항목
 
-- <xref:System.ArgumentException?displayProperty=fullName> (에서만 get 인덱싱된)
+- <xref:System.ArgumentException?displayProperty=fullName> (에서만 get 인덱싱됨)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (에서만 get 인덱싱된)
+- <xref:System.Collections.Generic.KeyNotFoundException> (에서만 get 인덱싱됨)
 
 ### <a name="event-accessor-methods"></a>이벤트 접근자 메서드
 
-이벤트 접근자에는 예외를 throw 하지 않는 간단한 작업 이어야 합니다. 이벤트 추가 또는 이벤트 처리기를 제거 하려고 할 때 예외를 throw 해서는 안 합니다.
+이벤트 접근자에는 예외를 throw 하지 않는 간단한 작업 이어야 합니다. 이벤트 추가 또는 이벤트 처리기를 제거 하려고 할 때 예외를 throw 하지 해야 합니다.
 
-이벤트 접근자에서 다음과 같은 예외가 발생할 수 있습니다.
+이벤트 접근자에서 다음과 같은 예외가 throw 될 수 있습니다.
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> 와 모든 파생 클래스 (포함 하 여 <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 버전 (포함 하 여 <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> 와 모든 파생 클래스
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생 항목
 
 - <xref:System.ArgumentException> 와 파생 클래스
 
 ### <a name="equals-methods"></a>Equals 메서드
 
-다음 **Equals** 메서드 예외를 throw 하지 않아야 합니다.
+다음 **Equals** 메서드는 예외를 throw 하지 않아야 합니다.
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-**Equals** 메서드를 반환 하도록 `true` 또는 `false` 예외를 throw 하는 대신 합니다. 예를 들어 Equals 일치 하지 않는 두 형식에 전달 되는 경우 방금 반환 해야 `false` throw 하는 대신는 <xref:System.ArgumentException>합니다.
+**Equals** 메서드를 반환할지 `true` 또는 `false` 예외를 throw 하는 대신 합니다. 예를 들어, Equals 두 유형을 가지 므로 전달 되는 경우만 반환할 `false` throw 하는 대신는 <xref:System.ArgumentException>합니다.
 
 ### <a name="gethashcode-methods"></a>GetHashCode 메서드
 
@@ -106,45 +106,45 @@ Property get 메서드에서 다음과 같은 예외가 발생할 수 있습니�
 
 - <xref:System.Collections.IEqualityComparer.GetHashCode%2A>
 
-**GetHashCode** 항상 값을 반환 해야 합니다. 그렇지 않으면 해시 테이블에 있는 항목을 잃을 수 있습니다.
+**GetHashCode** 항상 값을 반환 해야 합니다. 그렇지 않으면 해시 테이블에서 항목을 잃을 수 있습니다.
 
-버전의 **GetHashCode** 인수 throw 할 수는 사용 하는 <xref:System.ArgumentException>합니다. 그러나 **Object.GetHashCode** 예외를 throw 하지 해야 합니다.
+버전의 **GetHashCode** 사용 하는 인수를 throw 할 수는 <xref:System.ArgumentException>합니다. 그러나 **Object.GetHashCode** 예외가 throw 되지 않습니다.
 
 ### <a name="tostring-methods"></a>ToString 메서드
 
-디버거를 사용 하 여 <xref:System.Object.ToString%2A?displayProperty=fullName> 문자열 형식의 개체에 대 한 정보를 표시할 수 있도록 합니다. 따라서 **ToString** 개체의 상태를 변경 하지 않아야 하 고 예외를 throw 하지 않아야 합니다.
+디버거를 사용 하 여 <xref:System.Object.ToString%2A?displayProperty=fullName> 문자열 형식의 개체에 대 한 정보를 표시 하는 데 있습니다. 따라서 **ToString** 개체의 상태를 변경 하지 않아야 하 고 예외를 throw 해서는 안 됩니다.
 
 ### <a name="static-constructors"></a>정적 생성자
 
-정적 생성자에서 예외가 throw 발생은 현재 어플리케이션 도메인에 사용할 수 없는 것 형식이 있습니다. 정적 생성자에서 예외를 throw 하는 이유 (예: 보안 문제) 있어야 합니다.
+정적 생성자에서 예외를 throw 하면 형식을 현재 응용 프로그램 도메인에서 사용할 수 없게 됩니다. 정적 생성자에서 예외를 throw 하는 것에 대 한 이유 (예: 보안 문제) 해야 합니다.
 
 ### <a name="finalizers"></a>종료자
 
-빨리 실패 하는 프로세스를 중지 하는 CLR 하면 종료자에서 예외를 throw 합니다. 따라서 종료자에서 예외를 throw 합니다. 항상 사용 하지 않아야 합니다.
+하면 프로세스를 중지 하는 페일 패스트, CLR이 종료자에서 예외를 throw 합니다. 따라서 종료자에서 예외를 throw 항상 피해 야 합니다.
 
 ### <a name="dispose-methods"></a>Dispose 메서드
 
-A <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 메서드 예외를 throw 해서는 안 됩니다. 정리 논리의 일부로 dispose 일반적 라고는 `finally` 절. 따라서 Dispose에서 예외를 throw 하는 명시적으로 설정 하면 사용자 내에서 예외 처리를 추가 하는 `finally` 절.
+<xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 메서드는 예외를 throw 하지 해야 합니다. Dispose의 정리 논리의 일부로 라고는 `finally` 절. 따라서 내에서 예외 처리에 추가할 사용자를 강제로 명시적으로 Dispose의 예외를 throw 합니다 `finally` 절.
 
-**와** Dispose 종료자에서 거의 항상 호출 되기 때문에 코드 경로 예외를 throw 하지 않아야 합니다.
+합니다 **dispose (false)** 종료자에서 Dispose가 호출 거의 항상 때문에 코드 경로 예외를 throw 하지 않아야 합니다.
 
 ### <a name="equality-operators--"></a>같음 연산자 (= =,! =)
 
-Equals 메서드와 마찬가지로 같음 연산자 반환 `true` 또는 `false`, 하며 예외를 throw 하지 않아야 합니다.
+Equals 메서드 같은 같음 연산자는 반환 `true` 또는 `false`, 예외를 throw 해야 합니다.
 
 ### <a name="implicit-cast-operators"></a>암시적 캐스트 연산자
 
-사용자는 종종 암시적 캐스트 연산자가 호출 된 인식 하지 않으므로 암시적 캐스트 연산자에서 throw 된 예외가 ´ ù. 따라서 예외가 발생 하지 않을 암시적 캐스트 연산자에서 throw 되어야 합니다.
+사용자는 종종 암시적 캐스트 연산자가 호출 된 인식 되지 않으면 암시적 캐스트 연산자에서 throw 된 예외가 예상 하지 않습니다. 따라서 예외가 암시적 캐스트 연산자에서 throw 되어야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-속성 getter에 대 한 논리를 변경 하거나 예외를 throw 하거나 메서드로 속성을 변경 하는 더 이상에 있도록 합니다.
+속성 getter에 대 한 논리를 변경 하거나 더 이상 예외를 throw 하거나 메서드로 속성 변경에 포함 되도록 합니다.
 
-다른 모든 메서드 종류 앞에 나열 된에 대 한는 논리를 변경 하 고 더 이상 예외를 throw 해야 합니다.
+모든 형식에 대해 다른 메서드 앞에 나열 된,이 더 이상 예외를 throw 해야 하는 논리를 변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 
-위반을 throw 된 예외가 아닌 예외가 선언에 의해 발생 한 경우이 규칙에서는 경고를에서 표시 하지 않으려면 안전 합니다.
+위반, throw 된 예외 대신 예외 선언에 의해 발생 한 경우이 규칙에서 경고를 표시 하지 않으려면 안전 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
 

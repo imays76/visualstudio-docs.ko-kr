@@ -14,16 +14,20 @@ ms.assetid: 45a0e853-1f06-4688-af1b-cc634409e295
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c1b6502647644b59291b9d27ccf633d089d7110
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 26f6e23a340ec018f766477f0bdce089a43ca3e4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918597"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549679"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: 속성 이름은 Get 메서드와 달라야 합니다.
+
 |||
 |-|-|
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
@@ -32,21 +36,21 @@ ms.locfileid: "31918597"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- Public 또는 protected 멤버의 이름을 'Get'로 시작 되며 그렇지 않으면 일치 하는 공용 또는 보호 된 속성의 이름. 예를 들어 ' 메서드와 ' 라는 'Color' 속성 라고 하는 메서드가 포함 된 형식은이 규칙을 위반 합니다.
+ Public 또는 protected 멤버의 이름을 'Get'로 시작 하 고 그렇지 않은 경우 public 또는 protected 속성의 이름과 일치 하 합니다. 예를 들어, '메서드와' 및 '색' 이라고 하는 속성 이라고 하는 메서드가 포함 된 형식은이 규칙을 위반 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
  Get 메서드 및 속성 서로 분명히 구분 하는 이름을 사용 해야 합니다.
 
- 명명 규칙은 공통 된 모양을 라이브러리에 대 한 공용 언어 런타임을 대상으로 합니다. 이렇게 하면 새 소프트웨어 라이브러리를 익히는 데 필요한 라이브러리를 관리 되는 코드를 개발에 대 한 전문 지식이 있는 사용자가 개발 하는 신뢰성이 향상 하는 시간과 줄어듭니다.
+ 명명 규칙은 공통 된 모양을 라이브러리에 대 한 해당 공용 언어 런타임을 대상으로 합니다. 이 일관성에는 관리 코드 개발의 전문 지식을 가진 사람이 라이브러리를 개발 하는 고객 신뢰도 높이고 새 소프트웨어 라이브러리 하는 데 필요한 시간이 줄어듭니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이름을 변경 하는 'Get'이 접두사로 메서드의 이름을 일치 하지 않습니다.
+ 'Get'를 사용 하 여 접두사가 있는 메서드 이름을 일치 하지 않으면 있도록 이름을 변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 > [!NOTE]
->  Get 메서드가 IExtenderProvider 인터페이스를 구현 하 여 발생 하는 경우이 경고를 제외할 수 있습니다.
+> Get 메서드 IExtenderProvider 인터페이스를 구현 하 여 발생 하는 경우이 경고를 제외할 수 있습니다.
 
 ## <a name="example"></a>예제
  다음 예제에서는이 규칙을 위반 하는 속성과 메서드를 포함 합니다.

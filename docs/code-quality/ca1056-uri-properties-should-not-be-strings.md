@@ -14,16 +14,21 @@ ms.assetid: fdc99d29-0904-4a65-baa8-4f76833c953e
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a6379598194e3836ea3e77efa68741c2c4b596b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71c4428596281abf0ad606624bd67c40a490ee49
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900903"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549380"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: URI 속성은 문자열이면 안 됩니다.
+
 |||
 |-|-|
 |TypeName|UriPropertiesShouldNotBeStrings|
@@ -32,19 +37,19 @@ ms.locfileid: "31900903"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 형식 이름에 "uri", "Uri", "urn", "Urn", "url" 또는 "Url"는 문자열 속성을 선언 합니다.
+ 형식 이름에 "uri", "Uri", "urn", "Urn", "url" 또는 "Url" 포함 된 문자열 속성을 선언 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 이 규칙 속성 이름은 파스칼식 대/소문자 규칙에 따라 토큰으로 분할 하 고 각 토큰 "uri", "Uri", "urn", "Urn", "url" 또는 "Url"와 같은지 여부를 확인 합니다. 일치 하는 경우 규칙 속성 uniform resource identifier (URI)를 나타내는 가정 합니다. URI의 문자열 표현은 구문 분석 및 인코딩 오류를 발생시키기 쉬우며 보안 문제를 일으킬 수 있습니다. <xref:System.Uri?displayProperty=fullName> 클래스 안전한 방식으로 이러한 서비스를 제공 합니다.
+ 이 규칙 속성 이름이 파스칼식 대/소문자 구분 규칙에 따라 토큰으로 분할 하 고 각 토큰 "uri", "Uri", "urn", "Urn", "url" 또는 "Url"와 같은지 여부를 확인 합니다. 일치 하는 경우 규칙 속성 uniform resource identifier (URI)를 나타낸다고 가정 합니다. URI의 문자열 표현은 구문 분석 및 인코딩 오류를 발생시키기 쉬우며 보안 문제를 일으킬 수 있습니다. <xref:System.Uri?displayProperty=fullName> 클래스는 안전 하 고 안전한 방식으로 이러한 서비스를 제공 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 속성을 변경는 <xref:System.Uri> 유형입니다.
+ 이 규칙 위반 문제를 해결 하려면 속성을 변경 된 <xref:System.Uri> 형식입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 속성이 URI를 나타내지 않는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 속성의 URI를 나타내지 않는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 형식 `ErrorProne`,이 규칙을 위반 하는 형식 하 `SaferWay`, 규칙을 충족 하 합니다.
+ 다음 예제에서는 형식 `ErrorProne`, 형식 및이 규칙을 위반 하는 `SaferWay`, 규칙을 충족 하는 합니다.
 
  [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1056-uri-properties-should-not-be-strings_1.cs)]
  [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1056-uri-properties-should-not-be-strings_1.vb)]

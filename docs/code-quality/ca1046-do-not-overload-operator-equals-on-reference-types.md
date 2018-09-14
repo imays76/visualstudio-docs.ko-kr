@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6809534d14b58d60759133e972b5220fcfd58d61
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3f0aeb519fdc22d3fb68812d24979c7aa6c23f85
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899752"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551709"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.
+
 |||
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
@@ -38,10 +39,10 @@ ms.locfileid: "31899752"
  참조 형식의 경우 같음 연산자의 기본 구현은 대부분 항상 올바릅니다. 기본적으로 두 참조는 같은 개체를 가리킬 경우에만 같습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 같음 연산자의 구현을 제거 합니다.
+ 이 규칙 위반 문제를 해결 하려면 같음 연산자 구현의 제거 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 참조 유형을 기본 제공 값 형식 처럼 동작 하는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다. 더하기 또는 빼기에 형식의 인스턴스를 의미 있는 경우에 같음 연산자를 구현 하 여 위반을 표시 하지 않는 올바른 것입니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 참조 형식은 기본 제공 값 형식 처럼 동작 하는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다. 더하기 또는 빼기 형식의 인스턴스에서 작업을 수행 하는 의미 있는 경우 같음 연산자를 구현 하 여 위반을 표시 하지 않으려면 잘못 되었을 것입니다.
 
 ## <a name="example"></a>예제
  다음 예제에서는 두 개의 참조를 비교할 때 기본 동작을 보여 줍니다.
@@ -49,18 +50,25 @@ ms.locfileid: "31899752"
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
 
 ## <a name="example"></a>예제
- 다음 응용 프로그램에는 몇 가지 참조 비교합니다.
 
- [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
+다음 응용 프로그램 일부 참조를 비교 합니다.
 
- 이 예제의 결과는 다음과 같습니다.
+[!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
 
- **= 새 (2, 2), b = 새 (2, 2) 같은지? 더**
-**c와 a가 같습니까? 예**
-**b 및 a가 = =? 더**
-**되며 c = =? 예**
+이 예제는 다음과 같은 출력을 생성합니다.
+
+```txt
+a = new (2,2) and b = new (2,2) are equal? No
+c and a are equal? Yes
+b and a are == ? No
+c and a are == ? Yes
+```
+
 ## <a name="related-rules"></a>관련된 규칙
- [CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
-## <a name="see-also"></a>참고 항목
- <xref:System.Object.Equals%2A?displayProperty=fullName> [같음 연산자](/dotnet/standard/design-guidelines/equality-operators)
+[CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- [같음 연산자](/dotnet/standard/design-guidelines/equality-operators)

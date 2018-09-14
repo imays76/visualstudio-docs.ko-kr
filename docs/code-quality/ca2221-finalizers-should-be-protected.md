@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d67c99a9c2b30461170b7e8b5090e0c08241ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917871"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551287"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: 종료자는 protected여야 합니다.
+
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
@@ -32,7 +33,7 @@ ms.locfileid: "31917871"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 공용 형식 패밀리 (protected) 액세스를 지정 하지 않는 종료자를 구현 합니다.
+ 공용 형식 패밀리 (보호) 액세스를 지정 하지 않는 종료자를 구현 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
  종료자에서는 패밀리 액세스 한정자를 사용해야 합니다. 이 규칙은 C#, Visual Basic 및 Visual c + + 컴파일러에서 적용 됩니다.
@@ -40,11 +41,11 @@ ms.locfileid: "31917871"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 제품군 액세스할 수 있도록 종료자를 변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 높은 수준의 모든.NET 언어;에이 규칙 위반 되지 않습니다. Microsoft Intermediate Language를 작성 하는 경우 위반 될 수 있습니다.
+ 모든 고급.NET 언어로;이 규칙을 위반 될 수 없습니다. Microsoft Intermediate Language를 작성 하는 경우 위반 될 수 있습니다.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -79,5 +80,6 @@ ms.locfileid: "31917871"
 } // end of namespace
 ```
 
-## <a name="see-also"></a>참고 항목
- [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)
+## <a name="see-also"></a>참고자료
+
+- [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)

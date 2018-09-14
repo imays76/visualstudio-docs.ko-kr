@@ -14,16 +14,20 @@ ms.assetid: 87160825-9f39-4142-8d7f-a31fe7ac7b84
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9dec006f3684259541811e905eaf75a790c3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4177b01dc15177b74394d6967651905da2122
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900290"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547830"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: 열거형 저장소는 Int32여야 합니다.
+
 |||
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
@@ -32,21 +36,21 @@ ms.locfileid: "31900290"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- Public 열거형의 내부 형식에는 없는 <xref:System.Int32?displayProperty=fullName>합니다.
+ Public 열거형의 기본 형식이 아닙니다 <xref:System.Int32?displayProperty=fullName>합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 열거형은 서로 관련 있는 명명된 상수 집합을 정의하는 값 형식입니다. 기본적으로는 <xref:System.Int32?displayProperty=fullName> 데이터 형식은 상수 값을 저장 하는 데 사용 됩니다. 내부 형식은 변경할 수 있습니다, 경우에 아닙니다 필요 하거나 권장 대부분의 시나리오에 대 한. 성능이 크게 향상 되지 않습니다는 보다 작은 데이터 형식을 사용 하 여 수행할 <xref:System.Int32>합니다. 공용 언어 시스템 (CLS) 중 하나를 사용 해야 기본 데이터 형식을 사용할 수 없는 경우-규격 정수 계열 형식을 <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, 또는 <xref:System.Int64> 열거형의 모든 값에 표시할 수 있는지 확인 하려면 CLS 규격 프로그래밍 언어입니다.
+ 열거형은 서로 관련 있는 명명된 상수 집합을 정의하는 값 형식입니다. 기본적으로 <xref:System.Int32?displayProperty=fullName> 데이터 형식은 상수 값을 저장 하는 데 사용 됩니다. 하지만 기본 형식을 변경할 수 있습니다, 것 아닙니다 필요 하거나 권장 되는 대부분의 시나리오에 대 한 합니다. 보다 작은 데이터 형식을 사용 하 여 없습니다 상당한 수준의 성능 향상을 수행할는 <xref:System.Int32>합니다. 공용 언어 시스템 (CLS)의 하나를 사용 해야 기본 데이터 형식을 사용할 수 없으면,-규격 정수 형식 <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, 또는 <xref:System.Int64> 열거형의 모든 값에 나타낼 수 있는지 확인 하려면 Cls 규격이 아닌 프로그래밍 언어입니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 크기나 호환성 문제가 존재 하지 않는 한이 규칙 위반의 문제를 해결 하려면 사용 <xref:System.Int32>합니다. 상황에 대 한 여기서 <xref:System.Int32> 이 너무 작아 값을 포함을 사용 하 여 <xref:System.Int64>합니다. 더 작은 데이터 형식이 필요로 하는 이전 버전과 호환성을 사용 하 여 <xref:System.Byte> 또는 <xref:System.Int16>합니다.
+ 크기 또는 호환성 문제가 발생 하지 않는 한이 규칙 위반의 문제를 해결 하려면 사용 <xref:System.Int32>합니다. 상황에 대 한 위치 <xref:System.Int32> 값을 보유를 사용 하 여 충분히 크지 않은 <xref:System.Int64>합니다. 이전 버전과 호환성을 보다 작은 데이터 형식에 필요한 경우 사용 하 여 <xref:System.Byte> 또는 <xref:System.Int16>합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 이전 버전과 호환성 문제에 필요한 경우에이 규칙에서 경고를 표시 합니다. 응용 프로그램에서 일반적으로이 규칙을 따르지 않으면에 문제가 발생 하지 않습니다. 언어 상호 운용성이 필요한 라이브러리에이 규칙을 따르지 않으면 사용자가 저하 될 수 있습니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 이전 버전과 호환성 문제에 필요한 경우에이 규칙에서 경고를 표시 합니다. 응용 프로그램에서 일반적으로이 규칙을 준수 하지 못하면 문제를 발생 하지 않습니다. 언어 상호 운용성이 필요한 라이브러리에서이 규칙을 준수 하지 못하면 사용자에 게 저하 될 수 있습니다.
 
-## <a name="example-of-a-violation"></a>위반의 예로
+## <a name="example-of-a-violation"></a>위반의 예
 
 ### <a name="description"></a>설명
- 다음 예에서는 권장 되는 기본 데이터 형식을 사용 하지 않는 열거형이 두 개를 보여 줍니다.
+ 다음 예에서는 권장 되는 기본 데이터 형식을 사용 하지 않는 두 개의 열거형을 보여 줍니다.
 
 ### <a name="code"></a>코드
  [!code-vb[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_1.vb)]
@@ -72,5 +76,9 @@ ms.locfileid: "31900290"
 
  [CA1712: 열거형 값에 형식 이름을 접두사로 사용하지 마십시오.](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-## <a name="see-also"></a>참고 항목
- <xref:System.Byte?displayProperty=fullName> <xref:System.Int16?displayProperty=fullName> <xref:System.Int32?displayProperty=fullName> <xref:System.Int64?displayProperty=fullName>
+## <a name="see-also"></a>참고자료
+
+- <xref:System.Byte?displayProperty=fullName>
+- <xref:System.Int16?displayProperty=fullName>
+- <xref:System.Int32?displayProperty=fullName>
+- <xref:System.Int64?displayProperty=fullName>

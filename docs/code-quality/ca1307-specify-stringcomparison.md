@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dac870bde757d77e1d0025a1b387f54ca928a5f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 67f0d5152dcdef5ffa3abb76d92e68fd99f9b637
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900857"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550416"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: StringComparison 지정
+
 |||
 |-|-|
 |TypeName|SpecifyStringComparison|
@@ -32,18 +33,20 @@ ms.locfileid: "31900857"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 문자열 비교 작업을 설정 하지 않는 메서드 오버 로드를 사용 하 여 한 <xref:System.StringComparison> 매개 변수입니다.
+ 문자열 비교 작업을 설정 하지 않는 메서드 오버 로드를 사용 하는 <xref:System.StringComparison> 매개 변수입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 대부분의 문자열 가장 중요 한 작업의 <xref:System.String.Compare%2A> 및 <xref:System.String.Equals%2A> 메서드를 허용 하는 오버 로드를 제공는 <xref:System.StringComparison> 열거형 값을 매개 변수로 합니다.
+ 대부분의 문자열 작업에 가장 중요 한는 <xref:System.String.Compare%2A> 및 <xref:System.String.Equals%2A> 받아들이는 오버 로드를 제공 하는 메서드를 <xref:System.StringComparison> 열거형 값을 매개 변수로 합니다.
 
- 때마다는 오버 로드가 있으면 해당 하나는 <xref:System.StringComparison> 매개 변수를이 매개 변수를 사용 하지 않는 오버 로드를 대신 사용 해야 합니다. 이 매개 변수를 명시적으로 설정 하면 코드 방식은 보다 명확 해지고 유지 관리가 더 용이 합니다.
+ 때마다는 오버 로드가 있으면 해당 사용을 <xref:System.StringComparison> 매개 변수를이 매개 변수를 사용 하지 않는 오버 로드 하는 대신 사용 해야 합니다. 이 매개 변수를 명시적으로 설정 하 여 코드 경우가 보다 명확 해지고 더 쉬워진 유지 관리 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하는 오버 로드를 문자열 비교 방법 변경는 <xref:System.StringComparison> 열거형을 매개 변수로 합니다. 예: 변경 `String.Compare(str1, str2)` 를 `String.Compare(str1, str2, StringComparison.Ordinal)`합니다.
+ 이 규칙 위반 문제를 해결 하는 오버 로드를 문자열 비교 메서드를 변경 합니다 <xref:System.StringComparison> 열거형을 매개 변수로 합니다. 예를 들어: 변경 `String.Compare(str1, str2)` 에 `String.Compare(str1, str2, StringComparison.Ordinal)`입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 라이브러리 또는 응용 프로그램은 제한 된 로컬 사용자 에게만 되며 따라서 지역화 되지 않는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 라이브러리 또는 응용 프로그램은 제한 된 로컬 사용자 이며 따라서 지역화 되지 않을 때이 규칙에서 경고를 표시 하지 않으려면 안전 합니다.
 
-## <a name="see-also"></a>참고 항목
- [전역화 경고](../code-quality/globalization-warnings.md) [CA1309: 서 수 StringComparison을 사용 하 여](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+## <a name="see-also"></a>참고자료
+
+- [전역화 경고](../code-quality/globalization-warnings.md)
+- [CA1309: 서수 StringComparison을 사용하십시오.](../code-quality/ca1309-use-ordinal-stringcomparison.md)

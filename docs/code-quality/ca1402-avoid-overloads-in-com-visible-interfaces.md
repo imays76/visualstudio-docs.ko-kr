@@ -14,16 +14,20 @@ ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec1e0f13d3d26973dc2dc46c6a41a2dc962c91bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4360ff6c6355827a77d165c9a4975ffa8bdc89a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897845"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549013"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: COM 노출 인터페이스에서 오버로드를 사용하지 마십시오.
+
 |||
 |-|-|
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
@@ -35,32 +39,32 @@ ms.locfileid: "31897845"
  오버 로드 된 메서드는 구성 요소 개체 모델 (COM) 표시 되는 인터페이스를 선언 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 오버로드된 메서드가 COM 클라이언트에 노출되면 첫 번째 메서드 오버로드만 이름이 유지됩니다. 이후의 오버 로드는 밑줄 문자 '_' 및 오버 로드 선언 순서에 해당 하는 정수 이름에 추가 되어 고유 하 게 이름이 지정 됩니다. 다음 방법 예로 들 수 있습니다.
+ 오버로드된 메서드가 COM 클라이언트에 노출되면 첫 번째 메서드 오버로드만 이름이 유지됩니다. 이후의 오버 로드는 밑줄 문자 '_' 및 오버 로드 선언 순서에 해당 하는 정수 이름에 추가 되어 고유한 이름이 지정 됩니다. 예를 들어 다음 메서드를 고려 합니다.
 
-```
+```csharp
 void SomeMethod(int valueOne);
 void SomeMethod(int valueOne, int valueTwo, int valueThree);
 void SomeMethod(int valueOne, int valueTwo);
 ```
 
- 이러한 메서드는 다음과 같이 COM 클라이언트에 노출 됩니다.
+이러한 메서드는 다음과 같이 COM 클라이언트에 노출 됩니다.
 
-```
+```csharp
 void SomeMethod(int valueOne);
 void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);
 ```
 
- Visual Basic 6 COM 클라이언트 이름에 밑줄을 사용 하 여 인터페이스 메서드를 구현할 수 없습니다.
+Visual Basic 6 COM 클라이언트는 이름에 밑줄을 사용 하 여 인터페이스 메서드를 구현할 수 없습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하는 이름이 고유한 지 수 있도록 오버 로드 된 메서드를 이름을 바꿉니다. 또는 인터페이스를 보이지 않도록를 COM에 대 한 접근성을 변경 하 여 `internal` (`Friend` 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 적용 하 여는 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 특성이로 설정 `false`합니다.
+ 이 규칙 위반 문제를 해결 하는 고유한 이름이 되도록 오버 로드 된 메서드를 이름을 바꿉니다. 또는 숨기기 인터페이스를 COM에 대 한 접근성을 변경 하 여 `internal` (`Friend` 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 또는 적용 하 여 합니다 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 특성이로 설정 `false`합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 규칙을 위반 하는 인터페이스 및 규칙을 충족 하는 인터페이스를 보여 줍니다.
+ 다음 예제에서는 규칙을 위반 하는 인터페이스와 규칙을 충족 하는 인터페이스를 보여 줍니다.
 
  [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
  [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]
@@ -72,5 +76,7 @@ void SomeMethod_3(int valueOne, int valueTwo);
 
  [CA1017: 어셈블리를 ComVisibleAttribute로 표시하십시오.](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>참고 항목
- [비관리 코드와의 상호 운용](/dotnet/framework/interop/index) [Long 데이터 형식](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+## <a name="see-also"></a>참고자료
+
+- [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)
+- [Long 데이터 형식](/dotnet/visual-basic/language-reference/data-types/long-data-type)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd0927a9b8bcd0f4be7c020a25a32d6c9675ca05
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a78ec9c7678c2f0f88d4fd08f441eedb221bbeb
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900540"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545504"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: 기본 클래스 메서드를 숨기지 마십시오.
 |||
@@ -32,15 +32,15 @@ ms.locfileid: "31900540"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 파생 된 형식; 기본 메서드 중 하나로 매개 변수 수가 같은 동일한 이름으로 메서드를 선언합니다. 하나 이상의 매개 변수는 기본 메서드;에서 해당 매개 변수의 기본 형식 및 모든 나머지 매개 변수는 기본 메서드의 해당 매개 변수와 동일 유형의 제공 합니다.
+ 파생된 형식이 기본 메서드; 중 하나로 매개 변수 수가 같은 동일한 이름을 가진 메서드를 선언합니다. 하나 이상의 매개 변수는 기본 메서드;에서 해당 매개 변수의 기본 형식 및 해당 기본 메서드 매개 변수와 동일 나머지 매개 변수 형식이 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 파생 된 메서드의 매개 변수 시그니처에 기본 메서드의 매개 변수 시그니처에 있는 해당 형식 보다 더 약하게 파생 된 형식만 다른 경우 기본 형식의 메서드 파생된 된 형식에서 동일한 이름의 메서드에 의해 숨겨집니다.
+ 기본 형식의 메서드는 파생 된 메서드의 매개 변수 시그니처에 더 약하게 파생 된 기본 메서드의 매개 변수 시그니처에 해당 형식 보다는 형식만 다른 경우에 파생된 된 형식에서 동일 하 게 명명 된 메서드에 의해 숨겨집니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 또는 메서드, 이름 바꾸기 변경 하거나 제거할 매개 변수 시그니처에 하는 메서드는 기본 메서드를 숨기지 않습니다.
+ 이 규칙 위반 문제를 해결 하려면 메서드를 제거 또는 바꾸거나 메서드는 기본 메서드를 숨기지 않습니다 있도록 매개 변수 시그니처를 변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제

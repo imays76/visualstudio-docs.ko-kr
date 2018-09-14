@@ -14,47 +14,51 @@ ms.assetid: 00882cf9-e10d-4d40-9126-3e6753e3c934
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a26c2b941289ed7a83e66e1677db172660d270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 25bb1d9d26c9f5f4b4447af46cb48b5492429136
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920257"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549329"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: serialization 메서드를 올바르게 구현하십시오.
+
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경-방법은 어셈블리 외부에 표시 하는 경우<br /><br /> 주요 변경 아님-방법은 어셈블리 외부에 표시 하는 경우|
+|변경 수준|주요-메서드는 어셈블리 외부에 표시 하는 경우입니다.<br /><br /> 주요 변경 아님-메서드 어셈블리 외부에 표시 되지 않으면.|
 
 ## <a name="cause"></a>원인
  serialization 이벤트를 처리하는 메서드에 올바른 시그니처, 반환 형식 또는 노출 수준이 없습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- Serialization 이벤트 처리기를 다음 serialization 이벤트 속성 중 하나를 적용 하 여 지정 되어 있습니다.
+ 메서드는 다음과 같은 serialization 이벤트 특성 중 하나를 적용 하 여 serialization 이벤트 처리기를 지정 된:
 
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- Serialization 이벤트 처리기 형식의 단일 매개 변수는 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`, 있고 `private` 표시 유형입니다.
+ 형식의 단일 매개 변수를 사용 하는 serialization 이벤트 처리기 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`, 있고 `private` 표시 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 시그니처, 반환 형식 또는 serialization 이벤트 처리기의 표시 여부를 수정 하십시오.
+ 이 규칙 위반 문제를 해결 하려면 시그니처, 반환 형식 또는 serialization 이벤트 처리기의 표시 여부를 수정 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 이벤트 처리기 올바르게 선언 된 직렬화를 보여 줍니다.
+ 다음 예에서는 직렬화를 올바르게 선언 된 이벤트 처리기를 보여 줍니다.
 
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/VisualBasic/ca2238-implement-serialization-methods-correctly_1.vb)]
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]

@@ -1,5 +1,5 @@
 ---
-title: CA5122 P Invoke 선언은 안전 하 게 보호 되지 않아야 중요
+title: 'CA5122: P-Invoke 선언은 안전에 중요한 선언이 아니어야 합니다.'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e73af173dd7e82a139c204051c72480a50e38fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 371f027782c4cf598bb234107e94aaea2bc896fc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920759"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549842"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke 선언은 안전에 중요한 선언이 아니어야 함
 |||
@@ -67,5 +67,5 @@ class C
 
 ```
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
