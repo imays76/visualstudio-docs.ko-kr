@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 498a3638a02891683aff1b343431418d1a82bab0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 09aa3a879fad84f511d3649e98e5be98e62f4038
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914987"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546800"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: 멤버를 static으로 표시하십시오.
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31914987"
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
 |범주|Microsoft.Performance|
-|변경 수준|아님-멤버는 어셈블리 외부에서 볼 수 없는 경우 변경 내용에 상관 하면 됩니다. 아님-멤버와 인스턴스 멤버를 변경 하는 경우는 `this` 키워드입니다.<br /><br /> 주요 변경-정적 멤버에 인스턴스 멤버에서 멤버를 변경 하 고 어셈블리 외부에 표시 되는 경우|
+|변경 수준|아님-멤버 어셈블리 외부에서 표시 되지 않으면 변경에 관계 없이 하면 됩니다. 아님-멤버와 인스턴스 멤버를 변경 하는 경우는 `this` 키워드입니다.<br /><br /> 주요-정적 멤버에 인스턴스 멤버에서 멤버를 변경 하 고 어셈블리 외부에 표시 됩니다.|
 
 ## <a name="cause"></a>원인
- 인스턴스 데이터에 액세스 하지 않는 하는 멤버가 정적으로 표시 되어 있지 않습니다 (의 공유 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ 인스턴스 데이터에 액세스 하지 않습니다 하는 멤버를 정적으로 표시 됩니다 (공유 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="rule-description"></a>규칙 설명
- 인스턴스 데이터에 액세스하지 않거나 인스턴스 메서드를 호출하지 않는 멤버는 static([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 경우 Shared)으로 표시할 수 있습니다. 메서드를 static으로 표시하면 컴파일러는 이러한 멤버에 대한 비가상 호출 사이트를 내보냅니다. 비가상 호출 사이트를 표시 하 고 현재 개체 포인터가 null이 아닌 인지 하는 각 호출에 대해 런타임 시 검사가 수행 되지 것입니다. 이 성능에 민감한 코드에 대 한 성능이 크게 향상을 얻을 수 있습니다. 경우에 따라 현재 개체 인스턴스에 액세스 하기 위해 오류 정확성 문제를 나타냅니다.
+ 인스턴스 데이터에 액세스하지 않거나 인스턴스 메서드를 호출하지 않는 멤버는 static([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 경우 Shared)으로 표시할 수 있습니다. 메서드를 static으로 표시하면 컴파일러는 이러한 멤버에 대한 비가상 호출 사이트를 내보냅니다. 비가상 호출 사이트를 표시 하 고 현재 개체 포인터가 null 인지 하는 각 호출에 대해 런타임에 검사가 수행 되지 것입니다. 이 성능에 민감한 코드에 대 한 성능이 크게 향상을 얻을 수 있습니다. 일부 경우에는 현재 개체 인스턴스에 액세스 하는 데 실패 정확성 문제를 나타냅니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 멤버를 static으로 표시 (또는 공유에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 또는 't h i s'를 사용 하 여 / 'Me' 메서드의 본문을 해당 하는 경우.
+ 정적 멤버 표시 (공유 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 또는 'this '/' Me' 메서드의 본문에 해당 하는 경우.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 이전에 제공 된 코드를 수정 프로그램 주요 변경 내용에 대해이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 이전에 제공 된 코드는 수정 프로그램은 주요 변경 내용에 대 한이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.](../code-quality/ca1811-avoid-uncalled-private-code.md)

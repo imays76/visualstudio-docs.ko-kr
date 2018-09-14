@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9602ccd4aae7f3df1a708728203e2ad1c0857776
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 66e1f402e082eb1ee42faa3e04ea319dca3ed1d5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176852"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546775"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: 기본 생성자는 최소한 기본 형식 기본 생성자만큼 중요해야 합니다.
 
@@ -45,7 +45,7 @@ CoreCLR 플랫폼 코드에 대 한 기본 형식에 public 또는 protected 불
 
 위반을 해결 하려면 유형을 제거 하거나 보안 투명이 아닌 형식에서 파생 되지 않은 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 
 이 규칙에서 경고를 표시 하지 마십시오. 응용 프로그램 코드에서이 규칙이 위반 하면 거부 인 형식을 로드할 CoreCLR을 <xref:System.TypeLoadException>입니다.
 

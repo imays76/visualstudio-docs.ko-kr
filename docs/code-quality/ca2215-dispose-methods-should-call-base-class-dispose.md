@@ -17,14 +17,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce7e5de528e8b0c0a6f128fa9f7d68c1b9f385c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 11359e021d5c297c0782bf95fe35997b0a1b5be5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919806"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548415"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose 메서드는 기본 클래스 Dispose를 호출해야 합니다.
+
 |||
 |-|-|
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
@@ -33,26 +34,28 @@ ms.locfileid: "31919806"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 구현 하는 형식은 <xref:System.IDisposable?displayProperty=fullName> 도 구현 하는 형식에서 상속 <xref:System.IDisposable>합니다. <xref:System.IDisposable.Dispose%2A> 상속 하는 형식의 메서드를 호출 하지 않습니다는 <xref:System.IDisposable.Dispose%2A> 부모 형식의 메서드.
+ 구현 하는 형식을 <xref:System.IDisposable?displayProperty=fullName> 도 구현 하는 형식에서 상속 <xref:System.IDisposable>합니다. 합니다 <xref:System.IDisposable.Dispose%2A> 상속 하는 형식의 메서드를 호출 하지 않습니다는 <xref:System.IDisposable.Dispose%2A> 부모 형식의 메서드.
 
 ## <a name="rule-description"></a>규칙 설명
- 삭제 가능한 형식 으로부터 상속 하는 형식, 호출 해야 합니다는 <xref:System.IDisposable.Dispose%2A> 메서드 자체 내에서 기본 형식을 <xref:System.IDisposable.Dispose%2A> 메서드. 기본 형식 메서드를 호출 Dispose 사용 하면 기본 형식에 의해 만들어진 모든 리소스가 해제 됩니다.
+ 삭제 가능한 형식에서 상속 되는 형식은 호출 해야 합니다 <xref:System.IDisposable.Dispose%2A> 자체 내에서 기본 형식 메서드의 <xref:System.IDisposable.Dispose%2A> 메서드. 기본 형식에 의해 만들어진 모든 리소스 해제는 Dispose 되도록 기본 형식 메서드를 호출 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 호출 `base`합니다.<xref:System.IDisposable.Dispose%2A> 사용자 <xref:System.IDisposable.Dispose%2A> 메서드.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 이 경우이 규칙에서는 경고를에서 표시 하지 않으려면 안전에 대 한 호출 `base`합니다.<xref:System.IDisposable.Dispose%2A> 규칙 검사 보다 깊은 호출 수준에서 발생합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 안전 하 게 하는 경우이 규칙에서 경고를 표시 하는 것에 대 한 호출 `base`합니다.<xref:System.IDisposable.Dispose%2A> 규칙 검사 보다 더 하위 수준 호출 발생합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 형식 `TypeA` 를 구현 하는 <xref:System.IDisposable>합니다.
+ 다음 예제에서는 형식을 보여 줍니다 `TypeA` 구현 하는 <xref:System.IDisposable>합니다.
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
 
 ## <a name="example"></a>예제
- 다음 예제에서는 형식 `TypeB` 형식에서 상속 되 `TypeA` 올바르게 호출 하 고 해당 <xref:System.IDisposable.Dispose%2A> 메서드.
+ 다음 예제에서는 형식을 보여 줍니다 `TypeB` 형식에서 상속 되 `TypeA` 제대로 호출 및 해당 <xref:System.IDisposable.Dispose%2A> 메서드.
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
-## <a name="see-also"></a>참고 항목
- <xref:System.IDisposable?displayProperty=fullName> [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)
+## <a name="see-also"></a>참고자료
+
+- <xref:System.IDisposable?displayProperty=fullName>
+- [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)

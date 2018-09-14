@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c952d4cf2533034c12a287149404bee6d267214
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915586"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552060"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: 식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.
 |||
@@ -35,17 +35,17 @@ ms.locfileid: "31915586"
  두 형식, 멤버, 매개 변수 또는 정규화 된 네임 스페이스의 이름을 소문자로 변환 될 경우 동일 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 공용 언어 런타임을 대상으로 하는 언어는 대/소문자를 구분하지 않으므로 네임스페이스, 형식, 멤버 및 매개 변수의 식별자가 대/소문자만 달라서는 안 됩니다. 예를 들어 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 는 대/소문자 구분 널리 사용 되는 언어입니다.
+ 공용 언어 런타임을 대상으로 하는 언어는 대/소문자를 구분하지 않으므로 네임스페이스, 형식, 멤버 및 매개 변수의 식별자가 대/소문자만 달라서는 안 됩니다. 예를 들어 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 은 널리 사용 되는 대/소문자 언어입니다.
 
- 이 규칙은 공개적으로 표시 하는 멤버에만 적용 됩니다.
+ 이 규칙은 공개적으로 표시 하는 멤버에만 실행 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 대/소문자 구분 방식으로 다른 식별자에 비교 했을 때 고유 이름을 선택 합니다.
+ 대/소문자 구분 방식으로 다른 식별자를 비교 했을 때 고유 이름을 선택 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다. 라이브러리에서 사용 가능한 모든 언어에서 사용 하지 못할는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다.
 
-## <a name="example-of-a-violation"></a>위반의 예로
+## <a name="example-of-a-violation"></a>위반의 예
  다음 예제에서는이 규칙 위반을 보여 줍니다.
 
  [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../code-quality/codesnippet/CSharp/ca1708-identifiers-should-differ-by-more-than-case_1.cs)]

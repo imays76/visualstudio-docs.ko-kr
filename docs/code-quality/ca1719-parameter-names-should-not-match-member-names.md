@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1174fa0533519b551e237c685f0a6fe67661752a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16b50ed49659891ae469f346afbf8a677bb059dc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915338"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546891"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: 매개 변수 이름은 멤버 이름과 달라야 합니다.
 |||
@@ -32,7 +32,7 @@ ms.locfileid: "31915338"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 외부에서 볼 수 있는 멤버의 이름에서 대/소문자 구분 비교를 해당 매개 변수 중 하나의 이름 일치합니다.
+ 외부에서 볼 수 있는 멤버 이름의 대/소문자 구분 비교에서 해당 매개 변수 중 하나의 이름 일치합니다.
 
 ## <a name="rule-description"></a>규칙 설명
  매개 변수 이름은 매개 변수의 의미를 나타내고 멤버 이름은 멤버의 의미를 나타내야 합니다. 매개 변수와 멤버의 의미가 같게 디자인되는 경우는 드뭅니다. 매개 변수의 이름을 멤버 이름과 동일하게 지정하는 것은 비직관적이고 라이브러리 사용을 어렵게 만듭니다.
@@ -40,8 +40,8 @@ ms.locfileid: "31915338"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  멤버 이름과 일치 하지 않는 매개 변수 이름을 선택 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 새로운 개발의 경우 알려져 있지 않습니다에 대 한이 규칙에서 경고를 표시 해야 하는 시나리오가 발생 합니다. 제공 되는 라이브러리에는이 규칙에서 경고를 표시 해야 할 수 있습니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 새로운 개발에 알려져 있지 않습니다 시나리오 발생이 규칙에서 경고를 표시 해야 하는 위치입니다. 제공 되는 라이브러리에 대 한이 규칙에서 경고를 표시 해야 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

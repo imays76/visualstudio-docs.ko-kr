@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb43481b80726171414fab6b6a65fee8a5e29cb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f79a0e4fcb9cf4f82b85e9d62ffa51ef969293c7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31902018"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551001"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: 컬렉션은 제네릭 인터페이스를 구현해야 합니다.
 |||
@@ -32,28 +32,28 @@ ms.locfileid: "31902018"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 외부에서 볼 수 있는 형식이 구현 하는 <xref:System.Collections.IEnumerable?displayProperty=fullName> 인터페이스 하지만 구현 하지 않습니다는 <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> 인터페이스를 포함 하는 어셈블리 대상 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다. 이 규칙을 구현 하는 형식을 무시 <xref:System.Collections.IDictionary?displayProperty=fullName>합니다.
+ 외부에서 볼 수 있는 형식이 구현 하는 <xref:System.Collections.IEnumerable?displayProperty=fullName> 인터페이스를 구현 하지 않습니다 하지만 합니다 <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> 인터페이스를 포함 하는 어셈블리 대상 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다. 이 규칙을 구현 하는 형식을 무시 <xref:System.Collections.IDictionary?displayProperty=fullName>합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 컬렉션의 유용성을 높이려면 제네릭 컬렉션 인터페이스 중 하나를 구현합니다. 그러면 컬렉션을 사용 하는 다음과 같은 제네릭 컬렉션 형식을 채울 수 있습니다.
+ 컬렉션의 유용성을 높이려면 제네릭 컬렉션 인터페이스 중 하나를 구현합니다. 그런 다음 다음과 같은 제네릭 컬렉션 형식을 채울 컬렉션을 사용할 수 있습니다.
 
--   <xref:System.Collections.Generic.List%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 다음 제네릭 컬렉션 인터페이스 중 하나를 구현 합니다.
+ 이 규칙 위반 문제를 해결 하려면 다음과 같은 제네릭 컬렉션 인터페이스 중 하나를 구현 합니다.
 
--   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 이 규칙;에서 경고를 표시 하지 않아도 안전 합니다. 하지만, 컬렉션 사용이 더 제한 해야 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 이 규칙;에서 경고를 표시 하지 않아도 안전 합니다. 그러나 컬렉션 사용이 더 제한 해야 합니다.
 
 ## <a name="example-violation"></a>예제 위반
 
@@ -64,12 +64,12 @@ ms.locfileid: "31902018"
  [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
 ### <a name="comments"></a>설명
- 이 규칙 위반 문제를 해결 하려면 제네릭 인터페이스를 구현 하거나 이미와 같은 모두 제네릭 및 제네릭이 아닌 인터페이스를 구현 하는 형식에 기본 클래스를 변경는 `Collection<T>` 클래스입니다.
+ 이 규칙 위반을 해결 하려면 제네릭 인터페이스를 구현 하거나 기본 클래스를 이미 등 모두를 제네릭 및 제네릭이 아닌 인터페이스를 구현 하는 형식으로 변경 된 `Collection<T>` 클래스입니다.
 
-## <a name="fix-by-base-class-change"></a>기본 클래스를 변경 하 여 수정
+## <a name="fix-by-base-class-change"></a>기본 클래스를 변경 하 여 해결
 
 ### <a name="description"></a>설명
- 다음 예제에서는 비 제네릭에서 컬렉션의 기본 클래스를 변경 하 여 위반을 해결 `CollectionBase` 클래스에서 제네릭 `Collection<T>` (`Collection(Of T)` 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 클래스입니다.
+ 다음 예제에서 제네릭이 아닌 컬렉션의 기본 클래스를 변경 하 여 위반을 수정 `CollectionBase` 제네릭 클래스 `Collection<T>` (`Collection(Of T)` 에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 클래스입니다.
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
@@ -77,10 +77,10 @@ ms.locfileid: "31902018"
 ### <a name="comments"></a>설명
  이미 발표 된 클래스의 기본 클래스를 변경 하면 기존 소비자에 게 주요 변경 내용으로 간주 됩니다.
 
-## <a name="fix-by-interface-implementation"></a>인터페이스를 구현 하 여 수정
+## <a name="fix-by-interface-implementation"></a>인터페이스 구현에 의해 수정
 
 ### <a name="description"></a>설명
- 다음 예제에서는 이러한 제네릭 인터페이스를 구현 하 여 위반을 해결: `IEnumerable<T>`, `ICollection<T>`, 및 `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, 및 `IList(Of T)` 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ 다음 예제에서는 이러한 제네릭 인터페이스를 구현 하 여 위반 수정: `IEnumerable<T>`, `ICollection<T>`, 및 `IList<T>` (`IEnumerable(Of T)`를 `ICollection(Of T)`, 및 `IList(Of T)` 에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
@@ -100,5 +100,5 @@ ms.locfileid: "31902018"
 
  [CA1007: 적합한 제네릭을 사용하십시오.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
  [제네릭](/dotnet/csharp/programming-guide/generics/index)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fdbf907d851ee3772b917ea6ca4adcd2b81404
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 536072f8dc019921fecd1fc6f53d255a1a0ae0d8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918693"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551547"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: 투명한 메서드는 안정형 IL만 포함해야 합니다.
 |||
@@ -33,15 +33,15 @@ ms.locfileid: "31918693"
 ## <a name="rule-description"></a>규칙 설명
  이 규칙은 보안 투명 코드에서 확인할 수 없는 MSIL(Microsoft Intermediate Language)을 실행하려고 할 때 적용됩니다. 그러나 이 규칙은 완전한 IL 검증 도구를 포함하지 않으며 대신 추론을 사용하여 MSIL 확인 시 대부분의 위반을 catch합니다.
 
- 실행 코드에만 확인할 수 있는 MSIL이 포함 되어 있음을 있으려면 [Peverify.exe (PEVerify 도구)](/dotnet/framework/tools/peverify-exe-peverify-tool) 어셈블리에 있습니다. 사용 하 여 PEVerify 실행의 **투명 /** 만 확인할 수 없는 투명 한 메서드에 오류가 발생 하는 출력을 제한 하는 옵션입니다. 경우는 투명 옵션 사용 하지 않으면 /, PEVerify도 확인할 수 없는 코드를 포함할 수 있는 중요 한 메서드를 확인 합니다.
+ 실행 코드에만 확인할 수 있는 MSIL 일 [Peverify.exe (PEVerify 도구)](/dotnet/framework/tools/peverify-exe-peverify-tool) 어셈블리에 있습니다. PEVerify 사용 하 여 실행 합니다 **투명 한 /** 투명 메서드로만 오류가 유발 하는 출력을 제한 하는 옵션입니다. 경우는 투명 한 옵션이 사용 되지 않는 /, PEVerify도 확인할 수 없는 코드를 포함할 수 있는 중요 한 메서드를 확인 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 사용 하 여 메서드를 표시는 <xref:System.Security.SecurityCriticalAttribute> 또는 <xref:System.Security.SecuritySafeCriticalAttribute> 특성 또는 확인할 수 없는 코드를 제거 합니다.
+ 이 규칙 위반 문제를 해결 하려면 사용 하 여 메서드를 표시 합니다 <xref:System.Security.SecurityCriticalAttribute> 또는 <xref:System.Security.SecuritySafeCriticalAttribute> 특성 또는 비안정형 코드를 제거 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 이 예에서 메서드 비안정형 코드를 사용 하 고로 표시 해야는 <xref:System.Security.SecurityCriticalAttribute> 또는 <xref:System.Security.SecuritySafeCriticalAttribute> 특성입니다.
+ 이 예제에서 확인할 수 없는 코드를 사용 하 여 메서드와으로 표시 되어야 합니다는 <xref:System.Security.SecurityCriticalAttribute> 또는 <xref:System.Security.SecuritySafeCriticalAttribute> 특성입니다.
 
  [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

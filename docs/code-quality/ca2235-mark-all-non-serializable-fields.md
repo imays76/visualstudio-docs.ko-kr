@@ -14,16 +14,20 @@ ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a49671c4efc725a8796b050764dc4d9949f808
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ad4328c13403b1bea6a4358661b3347404592c02
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922258"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549721"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.
+
 |||
 |-|-|
 |TypeName|MarkAllNonSerializableFields|
@@ -35,16 +39,16 @@ ms.locfileid: "31922258"
  serialize할 수 없는 형식의 인스턴스 필드가 serialize할 수 있는 형식에 정의되었습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 직렬화 가능 형식이로 표시 된 하나는 <xref:System.SerializableAttribute?displayProperty=fullName> 특성입니다. 형식이 serialize 될 때는 <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> 형식 직렬화 가능 하지 않은 형식의 인스턴스 필드를 포함 하는 경우 예외가 throw 됩니다.
+ 직렬화 가능 형식 것으로 표시 되는 <xref:System.SerializableAttribute?displayProperty=fullName> 특성입니다. 형식으로 serialize 될 때를 <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> 형식을 직렬화 할 수 없는 형식의 인스턴스 필드를 포함 하는 경우 예외가 throw 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 적용 된 <xref:System.NonSerializedAttribute?displayProperty=fullName> 특성을 직렬화 할 수 없는 필드입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 경우에이 규칙에서 경고를 표시 하지는 <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> 직렬화 및 역직렬화 될 필드의 인스턴스를 허용 하는 형식이 선언 되었습니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 경우에이 규칙에서 경고를 표시는 <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> 형식이 serialize 및 deserialize 될 필드의 인스턴스를 허용 하는 선언 되었습니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 규칙을 위반 하는 형식 및 규칙을 충족 하는 형식을 보여 줍니다.
+ 다음 예제에서는 규칙을 위반 하는 형식을 규칙을 충족 하는 형식을 보여 줍니다.
 
  [!code-csharp[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/CSharp/ca2235-mark-all-non-serializable-fields_1.cs)]
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]

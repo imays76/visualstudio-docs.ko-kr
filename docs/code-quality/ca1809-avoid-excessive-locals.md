@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0d1d27f583e86a62e9c0ff524d9d623253d007
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: be8dcc47e5df5970b2beea697173debcc4a1671f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917342"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549809"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: 불필요한 로컬 항목을 사용하지 마십시오.
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31917342"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 멤버 중 일부는 컴파일러에서 생성 된 수도 64 개 이상의 지역 변수를 포함 합니다.
+ 멤버 중 일부는 컴파일러에서 생성 된 않을 64 개 이상의 지역 변수를 포함 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 으로 참조 되는 메모리에 아닌 프로세서 레지스터에 값을 저장 하는 성능 최적화에 많이 *의 레지스터 등록* 값입니다. 공용 언어 런타임 레지스터에 저장할 수에 대 한 지역 변수를 최대 64 개를 고려합니다. 레지스터 없는 변수를 스택에 배치 되 고 조작 하기 전에 레지스터로 이동 해야 합니다. 있도록 하려면 모든 지역 변수가 레지스터를 64 개로 지역 변수의 개수를 제한 합니다.
+ 대신 라고 하는 메모리에서 프로세서 레지스터에 값을 저장 하는 성능 최적화에 많이 *레지스터* 값입니다. 공용 언어 런타임에서 스택에 푸시됩니다 최대 64 개의 지역 변수를 고려합니다. 높이려면 없는 변수를 스택에 배치 됩니다 및 조작 하기 전에 등록으로 이동 해야 합니다. 기회 수 있도록 모든 지역 변수에 레지스터를 64 개로 로컬 변수 수를 제한 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 64 개 이하의 로컬 변수를 사용 하는 구현을 리팩터링 하십시오.
+ 이 규칙 위반 문제를 해결 하려면 리팩터링 64 개 이상 지역 변수를 사용 하 여 구현 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 성능이 중요 하지 않은 경우 해당 규칙을 사용 하지 않도록 설정 하거나이 규칙에서는 경고를에서 표시 하지 않으려면에 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 성능 문제가 없는 경우이 규칙에서 경고를 표시 하거나 규칙을 사용 하지 않도록 설정 해도 됩니다.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1804: 사용되지 않는 로컬 항목을 제거하십시오.](../code-quality/ca1804-remove-unused-locals.md)

@@ -14,16 +14,20 @@ ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e605cb0188ca72cb74905e34ee5196a07f748cd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29bd98677715a8772143ab448206f2a5ccddd763
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899966"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551632"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: 제네릭 이벤트 처리기 인스턴스를 사용하십시오.
+
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
@@ -32,25 +36,25 @@ ms.locfileid: "31899966"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 형식에 포함 하는 void를 반환 하며 해당 시그니처에 두 개의 매개 변수 (첫 번째 개체는 및의 두 번째는 EventArgs에 할당 될 수 있는 형식) 및 포함 된 어셈블리 대상 대리자 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.
+ 형식에는 대리자는 void를 반환 하며 해당 시그니처에 두 개의 매개 변수 (개체가 첫 번째 및 두 번째는 EventArgs에 할당 될 수 있는 형식) 및 포함 된 어셈블리 대상을 포함 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 하기 전에 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], 이벤트 처리기에 사용자 지정 정보를 전달 하기 위해 새 대리자에서 파생 된 클래스를 지정 하는 선언 해야 했습니다는 <xref:System.EventArgs?displayProperty=fullName> 클래스입니다. 이 더 이상에 마찬가지 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], 어떤 도입는 <xref:System.EventHandler%601?displayProperty=fullName> 위임 합니다. 파생 된 모든 클래스를 사용 하는이 제네릭 대리자 <xref:System.EventArgs> 이벤트 처리기와 함께 사용할 수 있습니다.
+ 하기 전에 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], 이벤트 처리기에 사용자 지정 정보를 전달 하기 위해 새 대리자에서 파생 된 클래스를 지정 하는 선언 해야 합니다 <xref:System.EventArgs?displayProperty=fullName> 클래스입니다. 더 이상 그렇습니다 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]는 도입을 <xref:System.EventHandler%601?displayProperty=fullName> 대리자입니다. 파생 되는 모든 클래스를 사용 하는이 제네릭 대리자 <xref:System.EventArgs> 이벤트 처리기와 함께 사용할 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 대리자를 제거 하 고 대신 사용 하 여 사용 된 <xref:System.EventHandler%601?displayProperty=fullName> 위임 합니다. 대리자가 자동으로 생성 하 여는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 컴파일러를 사용 하는 이벤트 선언의 구문을 변경는 <xref:System.EventHandler%601?displayProperty=fullName> 위임 합니다.
+ 이 규칙 위반 문제를 해결 하려면 대리자를 제거 하 고 사용 하 여 용도 대체 합니다 <xref:System.EventHandler%601?displayProperty=fullName> 위임 합니다. 대리자가 자동 생성 하는 경우는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 컴파일러를 사용 하 여 이벤트 선언의 구문을 변경는 <xref:System.EventHandler%601?displayProperty=fullName> 대리자입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 규칙을 위반 하는 대리자를 보여 줍니다. 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 예제에서는 주석은 규칙을 충족 하도록 예제를 수정 하는 방법에 설명 합니다. C# 예제에서는 수정 된 코드를 보여 주는 예가 따릅니다.
+ 다음 예제에서는 규칙을 위반 하는 대리자를 보여 줍니다. 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 예에서 설명 된 규칙을 충족 하기 위해 예제를 수정 하는 방법에 설명 합니다. C# 예제에서는 수정 된 코드를 보여 주는 예로가 따릅니다.
 
  [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
 ## <a name="example"></a>예제
- 다음 예제에서는 규칙을 충족 하 고에서 사용을 대체 하는 이전 예제에서 대리자 선언을 제거는 `ClassThatRaisesEvent` 및 `ClassThatHandlesEvent` 메서드를 사용 하 여는 <xref:System.EventHandler%601?displayProperty=fullName> 위임 합니다.
+ 다음 예제에서는 규칙을 충족 하 고 사용을 대체 하는 이전 예제에서 대리자 선언을 제거 합니다 `ClassThatRaisesEvent` 하 고 `ClassThatHandlesEvent` 메서드를 사용 하 여는 <xref:System.EventHandler%601?displayProperty=fullName> 대리자.
 
  [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
@@ -69,5 +73,6 @@ ms.locfileid: "31899966"
 
  [CA1007: 적합한 제네릭을 사용하십시오.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>참고 항목
- [제네릭](/dotnet/csharp/programming-guide/generics/index)
+## <a name="see-also"></a>참고자료
+
+- [제네릭](/dotnet/csharp/programming-guide/generics/index)

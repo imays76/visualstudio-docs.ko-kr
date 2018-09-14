@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d6e0301894b23f4671e16b24ea0b34eac4904
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918496"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549406"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: 사용되지 않는 전용 필드를 사용하지 마십시오.
 |||
@@ -32,7 +32,7 @@ ms.locfileid: "31918496"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 이 규칙은 코드에 전용 필드가 존재 하지만 모든 코드 경로에서 사용 되지 않는 보고 됩니다.
+ 이 규칙은 코드에 전용 필드가 있지만 모든 코드 경로에서 사용 되지 않는 경우 보고 됩니다.
 
 ## <a name="rule-description"></a>규칙 설명
  어셈블리에서 액세스되지 않는 것으로 보이는 전용 필드가 발견되었습니다.
@@ -40,7 +40,7 @@ ms.locfileid: "31918496"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 필드를 제거 하거나 사용 하는 코드를 추가 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f86037b54b2b7ad5cce1ea683341ca6656c2b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915631"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548805"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: 식별자에 형식 이름을 포함하면 안 됩니다.
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -32,112 +33,112 @@ ms.locfileid: "31915631"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 외부에서 볼 수 있는 멤버의 매개 변수 이름에는 데이터 형식 이름이 들어 있습니다.
+ 데이터 형식 이름을 포함 하는 외부에서 볼 수 있는 멤버의 매개 변수 이름입니다.
 
- -또는-
+ 또는
 
- 외부에서 볼 수 있는 멤버의 이름에 언어 특정 데이터 형식 이름을 포함합니다.
+ 언어 특정 데이터 형식 이름을 포함 하는 외부에서 볼 수 있는 멤버의 이름입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 매개 변수 및 멤버 이름 보다 잘 개발 도구에서 제공 하는 형식을 설명 하는 용도 보다는 의미를 통신에 사용 합니다. 멤버 이름에 대 한 데이터 형식 이름을 사용 해야 하는 경우 언어별로 대신 언어 독립적인 이름을 사용 합니다. 예를 들어 C# 형식 이름 'int', 대신 언어 독립적인 데이터 형식 이름, i n t 32를 사용 합니다.
+ 매개 변수 및 멤버의 이름과 설명, 개발 도구에 의해 제공 될 예상 되는 형식 보다는 의미를 전달할 잘 사용 됩니다. 멤버 이름에 대 한 데이터 형식 이름을 사용 해야 하는 경우 언어별 단일 대신 언어 독립적인 이름을 사용 합니다. 예를 들어 C# 형식 이름 'int', 대신 언어 독립적 데이터 형식 이름, Int32를 사용 합니다.
 
- 매개 변수 또는 멤버 이름의 개별 토큰은 대/소문자 다음 언어 특정 데이터 형식 이름에 대해 확인 됩니다.
+ 각 개별 토큰 매개 변수 또는 멤버의 이름을 다음 언어 특정 데이터 형식 이름에 대해 대/소문자 구분 방식으로 확인 됩니다.
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Short
+- Short
 
--   UShort
+- UShort
 
--   Int
+- Int
 
--   UInt
+- UInt
 
--   정수
+- 정수
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   부호 없음
+- 부호 없음
 
--   서명
+- 서명
 
--   Float
+- Float
 
--   Float32
+- float32
 
--   Float64
+- float64
 
- 또한 매개 변수 이름은 비교 하 여 확인은 다음 언어에 관계 없이 데이터 형식 이름과 대/소문자:
+또한 매개 변수의 이름은 확인 됩니다 다음 언어에 관계 없이 데이터 형식 이름에 대해 대/소문자 구분 방식.
 
--   개체
+- 개체
 
--   obj
+- obj
 
--   부울
+- 부울
 
--   Char
+- Char
 
--   문자열
+- 문자열
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   Ptr
+- ptr
 
--   포인터
+- 포인터
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   Decimal
+- Decimal
 
--   GUID
+- GUID
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  **매개 변수에서 발생 한 경우:**
 
- 매개 변수 이름의 데이터 형식 식별자를 더 잘 해당 의미를 설명 하는 단어나 'value' 같은 보다 일반적인 용어로 바꿉니다.
+ 데이터 형식 식별자를 매개 변수 이름을 더 의미를 설명 하는 용어 또는 'value'와 같은 보다 일반적인 용어를 바꿉니다.
 
  **발생 한 경우 멤버에 대해:**
 
- 멤버 이름의 언어 특정 데이터 형식 식별자를 더 잘 'value' 같은 보다 일반적인 용어로, 언어 독립 식별자 또는 그 의미를 설명 하는 용어 바꿉니다.
+ 해당 의미, 언어에 관계 없이 해당 하는, 'value'와 같은 보다 일반적인 용어를 더 잘 설명 하는 용어를 사용 하 여 멤버 이름의 언어 특정 데이터 형식 식별자를 대체 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 형식 기반 매개 변수 및 멤버 이름의 가끔 사용 적합할 수 있습니다. 그러나 알려져 있지 않습니다 새 개발 작업에이 규칙에서 경고를 표시 해야 하는 시나리오가 발생 합니다. 이 있는 이전 배송 라이브러리,이 규칙에서 경고를 표시 해야 할 수 있습니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+ 형식 기반 매개 변수 및 멤버 이름의 가끔 사용 적절할 수 있습니다. 그러나 새로운 개발에 알려져 있지 않습니다에 대 한 시나리오 발생이 규칙에서 경고를 표시 해야 하는 위치입니다. 가 이전 함께 제공 되는 라이브러리에 대 한이 규칙에서 경고를 표시 해야 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

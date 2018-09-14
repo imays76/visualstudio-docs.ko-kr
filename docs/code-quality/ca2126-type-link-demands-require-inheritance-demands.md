@@ -14,16 +14,21 @@ ms.assetid: 07b604e5-5579-4df9-a578-dadd0d8370a7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d3143bb7508af1fcb0a946ce7e3a3f0a8697b204
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82fe9045173e65b24204a3b04e12b6a7f655c651
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917464"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548402"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: 형식 링크 요청에는 상속 요청이 필요합니다.
+
 |||
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
@@ -32,15 +37,15 @@ ms.locfileid: "31917464"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 보호 되는 public unsealed 형식이 링크 요청으로에 재정의 가능한 메서드 및 형식 나 메서드가 모두 상속 요청으로 보호 됩니다.
+ 보호 되는 public unsealed 형식이 링크 요청을 사용 하 여 재정의 가능한 메서드가 및 형식이 나 메서드를 모두 상속 요청으로 보호 됩니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 메서드 또는 해당 선언 형식에 링크 요청에 지정 된 권한이 하려면 메서드의 직접 호출자가 필요 합니다. 메서드에 대 한 상속 요청 재정의 메서드를 지정 된 권한이 필요 합니다. 형식에 대 한 상속 요청 파생 하는 클래스를 지정 된 권한이 필요 합니다.
+ 메서드 또는 해당 선언 형식 링크 요청을 직접 실행 호출자 메서드의 지정 된 권한이 필요 합니다. 메서드에 대 한 상속 요청 재정의 메서드는 지정 된 권한이 필요 합니다. 형식에 대 한 상속 요청 파생 클래스에 지정 된 권한이 필요 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 형식 또는 메서드가 링크 요청으로 동일한 권한에 대 한 상속 요청으로 보안을 유지 합니다.
+ 이 규칙 위반 문제를 해결 하려면 형식 또는 메서드가 링크 요청으로 동일한 권한에 대 한 상속 요청으로 보호 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
@@ -59,5 +64,7 @@ ms.locfileid: "31917464"
 
  [CA2123: 재정의 링크 요청은 기본 형식의 링크 요청과 같아야 합니다.](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
-## <a name="see-also"></a>참고 항목
- [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines) [링크 요구](/dotnet/framework/misc/link-demands)
+## <a name="see-also"></a>참고자료
+
+- [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)
+- [링크 요청](/dotnet/framework/misc/link-demands)

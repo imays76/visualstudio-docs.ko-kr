@@ -14,16 +14,21 @@ ms.assetid: 14616b37-74c4-4286-b051-115d00aceb5f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 07e0bbaa05b0674666a7d4403daeeee8b23348be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fcc7994e67e268aff21af925632d2ee9cf102ff4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919979"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547164"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: 문자열 대신 System.Uri 개체를 전달하십시오.
+
 |||
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
@@ -32,19 +37,19 @@ ms.locfileid: "31919979"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 이름에 "uri", "Uri", "urn", "Urn", "url" 또는 "Url"; 문자열 매개 변수가 있는 메서드 호출 메서드의 선언 형식에는 해당 메서드 오버 로드를 포함 한 <xref:System.Uri?displayProperty=fullName> 매개 변수입니다.
+ 이름에 "uri", "Uri", "urn", "Urn", "url" 또는 "Url"; 포함 된 문자열 매개 변수가 있는 메서드 호출 메서드의 선언 형식에는 해당 메서드 오버 로드를 포함 한 <xref:System.Uri?displayProperty=fullName> 매개 변수입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 매개 변수 이름은 카멜식 대/소문자 규칙에 따라 토큰으로 분리 되 고 "uri", "Uri", "urn", "Urn", "url" 또는 "Url" 같은지 확인 합니다. 각 토큰 확인 한 다음 합니다. 일치 하는 경우 매개 변수를 나타내는 uniform resource identifier (URI) 가정 합니다. URI의 문자열 표현은 구문 분석 및 인코딩 오류를 발생시키기 쉬우며 보안 문제를 일으킬 수 있습니다. <xref:System.Uri> 클래스 안전한 방식으로 이러한 서비스를 제공 합니다. 사용자가을 받는 오버 로드를 선택 해야에 있을 경우 선택 하는 URI의 표현을 관련 항목에 다른 두 개의 오버 로드는 <xref:System.Uri> 인수입니다.
+ 매개 변수 이름에 카멜식 대/소문자 규칙에 따라 토큰으로 분할 됩니다 및 각 토큰 다음 "uri", "Uri", "urn", "Urn", "url" 또는 "Url" 같은지 확인 확인 합니다. 일치 하는 경우 매개 변수는 uniform resource identifier (URI)를 나타내는로 간주 됩니다. URI의 문자열 표현은 구문 분석 및 인코딩 오류를 발생시키기 쉬우며 보안 문제를 일으킬 수 있습니다. <xref:System.Uri> 클래스는 안전 하 고 안전한 방식으로 이러한 서비스를 제공 합니다. URI의 표현에 대 한만 다른 두 오버 로드를 선택한 경우 사용자는 오버 로드를 선택 해야는 <xref:System.Uri> 인수입니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하는 오버 로드를 호출 하는 <xref:System.Uri> 인수입니다.
+ 이 규칙 위반 문제를 해결 하는 오버 로드를 호출 하 여 <xref:System.Uri> 인수입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  문자열 매개 변수는 URI를 나타내지 않는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 메서드를 `ErrorProne`, 규칙을 위반 하는 메서드는 `SaferWay`를 올바르게 호출는 <xref:System.Uri> 오버 로드 합니다.
+ 다음 예제에서는 메서드를 보여 줍니다 `ErrorProne`, 규칙을 위반 하는 메서드는 `SaferWay`를 올바르게 호출을 <xref:System.Uri> 오버 로드 합니다.
 
  [!code-vb[FxCop.Usage.PassUri#1](../code-quality/codesnippet/VisualBasic/ca2234-pass-system-uri-objects-instead-of-strings_1.vb)]
  [!code-cpp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CPP/ca2234-pass-system-uri-objects-instead-of-strings_1.cpp)]

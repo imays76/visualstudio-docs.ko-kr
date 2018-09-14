@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88708fdcb41a43d3e8b3f78b4e66decb7211a4b4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7d1595c6bdf7eafb5b86daba99e943aad3f02ac7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177424"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550650"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: 서비스 구성 요소를 WebMethod를 사용하여 표시하지 마십시오.
 
@@ -44,11 +44,11 @@ ms.locfileid: "39177424"
 
 이 규칙 위반 문제를 해결 하려면에서 특성 제거는 <xref:System.EnterpriseServices.ServicedComponent> 메서드.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 
 이 규칙에서는 경고를 표시해야 합니다. 이러한 요소를 결합 하는 올바른 시나리오가 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName>
 - <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>

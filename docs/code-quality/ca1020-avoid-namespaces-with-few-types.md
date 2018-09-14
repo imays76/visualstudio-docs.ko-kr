@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d95e626349296f9b6c857263a78ce67751b471b5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fc7a691cb5c5626ea096046e277ec3d1655db0b6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178932"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546222"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: 형식이 부족한 네임스페이스를 사용하지 마십시오.
 
@@ -47,6 +47,6 @@ ms.locfileid: "39178932"
 
 이 규칙 위반 문제를 해결 하려면 단일 네임 스페이스로 몇 가지 형식이 포함 된 네임 스페이스를 결합 하려고 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
 
 네임 스페이스는 다른 네임 스페이스의 형식과 함께 사용 되는 형식이 포함 되지 않은 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
