@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552099"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612742"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정
 기호 파일이 라고도 하는 프로그램 데이터베이스 (.pdb) 파일에는 클래스, 메서드 및 다른 코드 프로젝트의 컴파일된 실행 파일에 사용 되는 식별자에 대 한 소스 코드에서 만든 식별자를 매핑합니다. .pdb 파일은 소스 코드의 문을 실행 파일의 실행 명령에 매핑합니다. 디버거는이 정보를 사용 하 여 두 가지 중요 정보를 확인 하려면:
@@ -45,7 +45,11 @@ ms.locfileid: "45552099"
 기호 파일에는 소스 파일의 원래 위치도 포함되어 있으며 소스 파일을 검색할 수 있는 소스 서버의 위치도 필요에 따라 포함되어 있습니다.
   
 > [!TIP]
-> 프로젝트 소스 코드 외부에서 코드를 디버그 하려는 경우 Windows 코드나 타사 코드와 같은 프로젝트에서 호출.pdb (및 필요에 따라 외부 코드의 소스 파일)의 위치를 지정할 수 있고 해당 파일 t의 빌드와 정확히 일치 해야 합니다. 그 실행 파일입니다.  
+> 프로젝트 소스 코드 외부에서 코드를 디버그 하려는 경우 Windows 코드나 타사 코드와 같은 프로젝트에서 호출.pdb (및 필요에 따라 외부 코드의 소스 파일)의 위치를 지정할 수 있고 해당 파일 t의 빌드와 정확히 일치 해야 합니다. 그 실행 파일입니다. 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>디버깅 하는 동안 기호 파일을 어떻게 관리할 수 있나요? 
+
+합니다 **모듈** 창 디버거가 사용자 코드 또는 내 코드 및 모듈에 대 한 상태를 로드 하는 기호를 처리 하는 코드 모듈 어떤 알 수 있습니다. 또한 디버깅 하는 동안 기호를 로드 하려면이 창을 사용할 수 있습니다. 자세한 내용은 [더 디버거가 앱에 연결 하는 방법을 잘 알고 싶다면](../debugger/debugger-tips-and-tricks.md#modules_window)합니다.
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> 기호 파일에 대 한 디버거 검색 하는 위치 
   

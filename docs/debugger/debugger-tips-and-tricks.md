@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67722884a675dd991cad608ca22cf277e2d6777
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303083"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612729"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>For the Debugger in Visual Studio 생산성 팁과 트릭 배우기
 
@@ -145,7 +145,7 @@ UWP 앱에서 사용 하 여 수행 된 네트워크 작업을 분석할 수 있
 
 자세한 내용은 [네트워크 사용량](../profiling/network-usage.md)을 참조하세요.
 
-## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>디버거가 앱에 연결 하는 방법에 대해 get
+## <a name="modules_window"></a> 디버거가 앱에 연결 하는 방법에 대해 get
 
 를 실행 중인 앱에 연결 하려면 디버거에서 디버그 하려는 앱의 정확히 동일한 빌드에 대해 생성 되는 기호 (.pdb) 파일을 로드 합니다. 일부 시나리오에서는 기호 파일의 간단한 기술 유용할 수 있습니다. Visual Studio를 사용 하 여 기호 파일을 로드 하는 방법을 검사할 수 있습니다 합니다 **모듈** 창입니다.
 
