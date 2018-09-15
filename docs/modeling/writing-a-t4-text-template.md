@@ -13,27 +13,27 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 303e7abfd2ea820de660ed70df915765f11b68a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f2427b54cd19e808bed217c981a95d70e4d020fd
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975522"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612716"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
-텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어 웹 페이지를 만드는 템플릿을 포함 됩니다 "\<html > …" 및 HTML 페이지의 다른 모든 표준 부분입니다. 템플릿에 삽입은 *제어 블록*, 프로그램 코드 조각인입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
+텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어, 웹 페이지를 만드는 템플릿으로 사용 될 "\<html >..." 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 됩니다 *제어 블록*는 프로그램 코드 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
 
  이 구조에서는 템플릿을 쉽게 개발할 수 있습니다. 생성된 파일의 프로토타입으로 시작한 다음 상황에 따라 다른 결과를 생성하는 제어 블록을 증분 방식으로 삽입할 수 있기 때문입니다.
 
  텍스트 템플릿은 다음 부분으로 구성됩니다.
 
--   **지시문** -템플릿을 처리 하는 방법을 제어 하는 요소입니다.
+-   **지시문** -템플릿을 처리 되는 방식을 제어 하는 요소입니다.
 
 -   **텍스트 블록** -출력에 직접 복사 되는 내용입니다.
 
--   **제어 블록** -프로그램의 텍스트에 변수 값을 삽입 하 고 텍스트의 조건부 또는 반복 부분을 제어 하는 코드입니다.
+-   **제어 블록** -텍스트를 변수 값을 삽입 하 고 텍스트의 조건부 또는 반복 부분을 제어 하는 프로그램 코드입니다.
 
- 이 항목의 예제를 실행 하려면 해당 파일에 복사 서식 파일에 설명 된 대로 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다. 템플릿 파일을 편집한 후 저장 하 고 출력을 검사 한 다음 **.txt** 파일입니다.
+이 항목의 예제를 실행 하려면 복사 하 여 템플릿 파일에 설명 된 대로 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다. 템플릿 파일을 편집한 후 저장 하 고 출력을 검사할 **.txt** 파일입니다.
 
 ## <a name="directives"></a>지시문
  텍스트 템플릿 지시문은 변환 코드 및 출력 파일 생성 방법에 대한 일반 명령을 텍스트 템플릿 생성 엔진에 제공합니다.
@@ -41,11 +41,10 @@ ms.locfileid: "31975522"
  예를 들어 다음 지시문은 출력 파일의 확장명이 .txt여야 하도록 지정합니다.
 
 ```
-
 <#@ output extension=".txt" #>
 ```
 
- 지시문에 대 한 자세한 내용은 참조 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md)합니다.
+ 지시문에 대 한 자세한 내용은 참조 하십시오 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md)합니다.
 
 ## <a name="text-blocks"></a>텍스트 블록
  텍스트 블록은 출력 파일에 텍스트를 직접 삽입합니다. 텍스트 블록에는 특수한 서식이 없습니다. 예를 들어 다음 텍스트 템플릿은 "Hello"라는 단어가 포함된 텍스트 파일을 생성합니다.
@@ -72,8 +71,7 @@ Hello
  예를 들어 다음 제어 블록 및 텍스트 블록을 사용하면 출력 파일에 "0, 1, 2, 3, 4 Hello!" 줄이 포함됩니다.
 
 ```
-
-      <#
+<#
     for(int i = 0; i < 4; i++)
     {
         Write(i + ", ");
@@ -82,7 +80,7 @@ Hello
 #> Hello!
 ```
 
- 명시적인 `Write()` 문을 사용하는 대신 텍스트와 코드를 인터리빙할 수 있습니다. 다음 예제에서는 "Hello!"에 출력 4 번:
+ 명시적인 `Write()` 문을 사용하는 대신 텍스트와 코드를 인터리빙할 수 있습니다. 다음 예제에서는 "Hello!"를 출력합니다. 4 시간:
 
 ```
 <#
@@ -98,7 +96,7 @@ Hello!
  코드에서 `Write();` 문이 허용되는 모든 위치에 텍스트 블록을 삽입할 수 있습니다.
 
 > [!NOTE]
->  예: 루프 또는 조건부 복합 문 내에서 텍스트 블록을 포함 하는 경우 항상 {...} 괄호 사용 텍스트 블록을 포함 합니다.
+>  예: 루프 또는 조건부 복합 문 내에 텍스트 블록을 포함 하는 경우 항상 {...} 괄호 사용 텍스트 블록을 포함 합니다.
 
 ### <a name="expression-control-blocks"></a>식 제어 블록
  식 제어 블록은 식을 평가한 다음 문자열로 변환합니다. 이 문이 출력 파일에 삽입됩니다.
@@ -128,7 +126,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>클래스 기능 제어 블록
- 클래스 기능 제어 블록은 주 변환에 포함되지 않아야 할 속성, 메서드 또는 기타 코드를 정의합니다. 클래스 기능 블록은 대개 도우미 함수에 사용되며,  될 수 있도록 별도 파일에 클래스 기능 블록 배치 되는 일반적으로 [포함](#Include) 둘 이상의 텍스트 템플릿에 의해 합니다.
+ 클래스 기능 제어 블록은 주 변환에 포함되지 않아야 할 속성, 메서드 또는 기타 코드를 정의합니다. 클래스 기능 블록은 대개 도우미 함수에 사용되며,  일반적으로 클래스 기능 블록은 배치 별도 파일에 될 수 있도록 [포함](#Include) 둘 이상의 텍스트 템플릿에 의해 합니다.
 
  클래스 기능 제어 블록은 `<#+ ... #>` 기호로 구분됩니다.
 
@@ -156,7 +154,7 @@ private int Square(int i)
 
  클래스 기능은 작성되는 파일 끝에 배치해야 합니다. 그러나 `<#@include#>` 지시문 뒤에 표준 블록과 텍스트가 있어도 클래스 기능을 포함하는 파일을 `include`할 수 있습니다.
 
- 제어 블록에 대 한 자세한 내용은 참조 [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)합니다.
+ 제어 블록에 대 한 자세한 내용은 참조 하세요. [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)합니다.
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>텍스트 블록을 포함할 수 있는 클래스 기능 블록
  텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면 다음과 같습니다.
@@ -197,7 +195,7 @@ private void WriteSquareLine(int i)
 
  Assembly 지시문에 적용 되지 않습니다는 [전처리 된 텍스트 템플릿을](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다.
 
- 자세한 내용은 참조 [T4 Assembly 지시문](../modeling/t4-assembly-directive.md)합니다.
+ 자세한 내용은 [T4 Assembly 지시문](../modeling/t4-assembly-directive.md)합니다.
 
 ### <a name="namespaces"></a>네임스페이스
  import 지시문은 C#의 경우 `using` 절, Visual Basic의 경우 `imports` 절과 같습니다. 이 지시문을 사용하면 정규화된 이름을 사용하지 않고도 코드에서 형식을 참조할 수 있습니다.
@@ -208,44 +206,46 @@ private void WriteSquareLine(int i)
 
  지시문 `assembly` 및 `import`은 원하는 수만큼 사용할 수 있습니다. 이러한 지시문은 텍스트 및 제어 블록 앞에 배치해야 합니다.
 
- 자세한 내용은 참조 [T4 Import 지시문](../modeling/t4-import-directive.md)합니다.
+ 자세한 내용은 [T4 Import 지시문](../modeling/t4-import-directive.md)합니다.
 
-###  <a name="Include"></a> 코드 및 텍스트 포함
+###  <a name="Include"></a> 코드 및 텍스트를 포함 하 여
  `include` 지시문은 다른 템플릿 파일의 텍스트를 삽입합니다. 예를 들어 다음 지시문은 `test.txt`의 내용을 삽입합니다.
 
- `<#@ include file="c:\test.txt" #>`
+```
+<#@ include file="c:\test.txt" #>
+```
 
  포함된 내용은 포함하는 텍스트 템플릿의 일부인 것처럼 처리됩니다. 그러나 include 지시문 뒤에 일반 텍스트와 표준 제어 블록이 있어도 클래스 기능 블록 `<#+...#>`이 포함된 파일을 포함할 수 있습니다.
 
- 자세한 내용은 참조 [T4 Include 지시문](../modeling/t4-include-directive.md)합니다.
+ 자세한 내용은 [T4 Include 지시문](../modeling/t4-include-directive.md)합니다.
 
 ### <a name="utility-methods"></a>유틸리티 메서드
  제어 블록에서 항상 사용할 수 있는 `Write()` 등의 여러 메서드가 있습니다. 여기에는 출력 들여쓰기, 오류 보고 등을 위한 메서드가 포함됩니다.
 
  원하는 유틸리티 메서드 집합을 직접 작성할 수도 있습니다.
 
- 자세한 내용은 참조 [텍스트 템플릿 유틸리티 메서드](../modeling/text-template-utility-methods.md)합니다.
+ 자세한 내용은 [텍스트 템플릿 유틸리티 메서드](../modeling/text-template-utility-methods.md)합니다.
 
 ## <a name="transforming-data-and-models"></a>데이터 및 모델 변형
  텍스트 템플릿의 가장 유용한 적용 사례는 모델, 데이터베이스 또는 데이터 파일과 같은 소스의 내용에 따라 자료를 생성하는 것입니다. 템플릿은 데이터를 추출한 다음 서식을 다시 지정합니다. 템플릿 컬렉션은 이러한 소스를 여러 파일로 변환할 수 있습니다.
 
  소스 파일을 읽는 방식은 다양합니다.
 
- **텍스트 서식 파일의 파일 읽기**합니다. 이는 데이터를 템플릿으로 가져오는 가장 단순한 방법입니다.
+ **텍스트 템플릿에서 파일을 읽을**합니다. 이는 데이터를 템플릿으로 가져오는 가장 단순한 방법입니다.
 
 ```
 <#@ import namespace="System.IO" #>
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 사용할 수도 있습니다 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) 의 XML 데이터를 읽을 수 있는 클래스 집합을 만듭니다.
+ **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 사용할 수도 있습니다 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) XML 데이터를 읽을 수 있는 클래스 집합을 만들려고 합니다.
 
- **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 다이어그램 또는 Windows form으로 모델을 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 응용 프로그램의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 모델 구조를 반영하는 강력한 형식의 클래스 집합도 만듭니다. 자세한 내용은 참조 [도메인 특정 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)합니다.
+ **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 응용 프로그램의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 모델 구조를 반영하는 강력한 형식의 클래스 집합도 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)합니다.
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>디자인 타임 템플릿의 상대 파일 경로
- 에 [디자인 타임 텍스트 템플릿](../modeling/design-time-code-generation-by-using-t4-text-templates.md)텍스트 템플릿 사용 하 여 상대적인 위치에 파일을 참조 하려는 경우, `this.Host.ResolvePath()`합니다. 또한 `hostspecific="true"` 지시문에서 `template`도 설정해야 합니다.
+ 에 [디자인 타임 텍스트 템플릿](../modeling/design-time-code-generation-by-using-t4-text-templates.md)사용 하 여 텍스트 템플릿에 상대적인 위치에 파일을 참조 하려는 경우, `this.Host.ResolvePath()`합니다. 또한 `hostspecific="true"` 지시문에서 `template`도 설정해야 합니다.
 
-```csharp
+```
 <#@ template hostspecific="true" language="C#" #>
 <#@ output extension=".txt" #>
 <#@ import namespace="System.IO" #>
@@ -258,16 +258,16 @@ Content of MyFile.txt is:
 
 ```
 
-호스트가 제공하는 다른 서비스도 가져올 수 있습니다. 자세한 내용은 참조 [Visual Studio에 액세스 또는 서식 파일에서 다른 호스트](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)합니다.
+호스트가 제공하는 다른 서비스도 가져올 수 있습니다. 자세한 내용은 [Visual Studio에 액세스 또는 다른 호스트 템플릿에서](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)합니다.
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>별도의 AppDomain에서 실행되는 디자인 타임 텍스트 템플릿
 
- 알고 있어야 하는 [디자인 타임 텍스트 템플릿](../modeling/design-time-code-generation-by-using-t4-text-templates.md) 주 응용 프로그램과에서 별개인 AppDomain에서 실행 합니다. 이러한 방식은 대부분의 경우 중요하지 않지만 복잡한 코드를 사용하는 특정 사례에서는 제한이 적용될 수 있습니다. 예를 들어 별도의 서비스에서 템플릿 내부나 외부로 데이터를 전달하려는 경우 해당 서비스가 serializable API를 제공해야 합니다.
+ 알고 있어야 하는 [디자인 타임 텍스트 템플릿](../modeling/design-time-code-generation-by-using-t4-text-templates.md) 주 응용 프로그램과 별개인 AppDomain에서 실행 됩니다. 이러한 방식은 대부분의 경우 중요하지 않지만 복잡한 코드를 사용하는 특정 사례에서는 제한이 적용될 수 있습니다. 예를 들어 별도의 서비스에서 템플릿 내부나 외부로 데이터를 전달하려는 경우 해당 서비스가 serializable API를 제공해야 합니다.
 
- (이 값은 경우에 [런타임 텍스트 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md), 코드의 나머지 부분과 함께 컴파일되는 코드를 제공 하는.)
+ (의 true가 아닙니다를 [런타임 텍스트 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md), 코드의 나머지 부분과 함께 컴파일되는 코드를 제공 하는.)
 
 ## <a name="editing-templates"></a>템플릿 편집
- 확장명 관리자 온라인 갤러리에서 특수한 텍스트 템플릿 편집기를 다운로드할 수 있습니다. 에 **도구** 메뉴를 클릭 하 여 **확장 관리자**합니다. 클릭 **온라인 갤러리**, 한 다음 검색 도구를 사용 합니다.
+ 확장명 관리자 온라인 갤러리에서 특수한 텍스트 템플릿 편집기를 다운로드할 수 있습니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다. 클릭 **온라인 갤러리**, 한 다음 검색 도구를 사용 합니다.
 
 ## <a name="related-topics"></a>관련 항목
 

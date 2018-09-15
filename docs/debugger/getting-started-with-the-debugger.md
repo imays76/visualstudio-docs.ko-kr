@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384229"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612690"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>자습서: Visual Studio를 사용 하 여 디버그 하는 방법을 알아봅니다
 
@@ -444,4 +444,4 @@ ms.locfileid: "44384229"
 이 자습서에서는 디버거를 시작 하면 코드를 단계별로 실행 하 여 변수를 검사 하는 방법을 알아보았습니다. 자세한 정보에 대 한 링크와 함께 디버거 기능에 간략히 살펴보고 가져오려는 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
+> [디버거 팁과 요령](../debugger/debugger-tips-and-tricks.md)
