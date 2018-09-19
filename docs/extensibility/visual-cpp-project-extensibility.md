@@ -11,16 +11,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552511"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135661"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 프로젝트 시스템 확장 및 도구 집합 통합
 
-합니다 *Visual c + + 프로젝트 시스템* .vcxproj 파일에서 사용 됩니다. 기반이 되는 [Visual Studio 공통 프로젝트 시스템 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) 추가 새로운 도구 집합이 빌드 아키텍처와 대상 플랫폼의 손쉬운 통합에 대 한 c + + 관련 확장성 지점을 제공 합니다. 
+합니다 *Visual c + + 프로젝트 시스템* .vcxproj 파일에 사용 됩니다. 기반이 되는 [Visual Studio 공통 프로젝트 시스템 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) 추가 새로운 도구 집합이 빌드 아키텍처와 대상 플랫폼의 손쉬운 통합에 대 한 c + + 관련 확장성 지점을 제공 합니다. 
 
 ## <a name="c-msbuild-targets-structure"></a>C + + MSBuild 대상 구조
 
@@ -227,13 +227,13 @@ C + + 빌드에는 다음 대상으로 표현 되는 세 가지 주요 단계에
 </Target>
 ```
 
-`ClCompile` 및 다른 빌드 도구 관련 대상 Microsoft.CppBuild.targets의 빈 대상은으로 정의 됩니다.
+`ClCompile` 및 다른 빌드 도구 관련 대상의 빈 대상은으로 정의 됩니다 *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-때문에 합니다 `ClCompile` 대상에서 빈 대상으로 정의 됩니다 *Microsoft.CppBuild.targets*, 도구 집합으로 재정의 되지 않는 한 실제 빌드 작업이 수행 되지 합니다. 도구 집합 대상을 재정의할 수는 `ClCompile` 대상, 즉, 이러한 다른 포함할 수 있습니다 `ClCompile` 가져오면 정의 *Microsoft.CppBuild.targets*: 
+때문에 `ClCompile` 대상이 비어 있는 경우 도구 집합으로 재정의 되지 않는 한 실제 빌드 작업이 수행 되지 합니다. 도구 집합 대상을 재정의할 수는 `ClCompile` 대상, 즉, 이러한 다른 포함할 수 있습니다 `ClCompile` 가져오면 정의 *Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +243,7 @@ C + + 빌드에는 다음 대상으로 표현 되는 세 가지 주요 단계에
 </Target>
 ```
 
-이름이 `ClCompile`, Visual Studio 플랫폼 간 지원, 구현 하기 전에 만들어진는 `ClCompile` 대상 CL.exe를 호출할 필요가 없습니다. 적절 한 MSBuild 작업을 사용 하 여 gcc, Clang, 다른 컴파일러를 호출할 수도 것입니다.
+Visual Studio 플랫폼 간 지원을 구현 하기 전에 만든 이름과 달리는 `ClCompile` 대상 CL.exe를 호출할 필요가 없습니다. 적절 한 MSBuild 작업을 사용 하 여 gcc, Clang, 다른 컴파일러를 호출할 수도 것입니다.
 
 `ClCompile` 대상 제외한 모든 종속성이 없어야 합니다 `SelectClCompile` IDE에서 작업을 단일 파일로 컴파일 명령에 필요한 대상입니다.
 
@@ -289,7 +289,7 @@ Microsoft.Cpp.Common.Tasks.dll 이러한 작업을 구현합니다.
 
 1. 일반 MSBuild를 사용 하 여 작업 성능 향상 하거나 더 복잡 한 기능이 필요 합니다 [쓰기 작업](../msbuild/task-writing.md) 프로세스입니다.
 
-   모든 입력 및 도구의 출력은 에서처럼 도구 명령줄에 나열 되 면 합니다 `CL`, `MIDL`, 및 `RC` 경우에 및 자동 입력 및 출력 파일 추적 및.tlog 파일 만들기를 원하는 경우 파생 작업에서 `TrackedVCToolTask`합니다.
+   모든 입력 및 도구의 출력은 에서처럼 도구 명령줄에 나열 되 면 합니다 `CL`, `MIDL`, 및 `RC` 경우 및 자동 입력 및 출력 파일 추적 및.tlog 파일 만들기를 하려는 경우 작업을 에서파생`Microsoft.Build.CPPTasks.TrackedVCToolTask`클래스입니다. 기본에 대 한 설명서는 현재 [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) 클래스에 있는 예제 없거나의 세부 정보에 대 한 설명서는 `TrackedVCToolTask` 클래스입니다. 이 특정 관심 됩니다, 경우 음성 요청에 추가 [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html)합니다.
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>증분 빌드 및 최신 검사
 
@@ -428,7 +428,7 @@ IDE에서.vcxproj 프로젝트 프로젝트에서 추가 정보를 가져오도�
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE에서 프로젝트 확장성
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE에서 visual c + + 프로젝트 확장성
 
 Visual c + + 프로젝트 시스템은 기반으로 합니다 [VS 프로젝트 시스템](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md), 및 해당 확장성 지점을 사용 합니다. 그러나 Visual c + + 프로젝트 계층 구현 관련이 이므로 CPS에 기반 하지 계층 확장성 프로젝트 항목으로 제한 합니다.
 
@@ -656,6 +656,6 @@ VSIX 파일을 만드는 방법에 대 한 자세한 내용은 [Visual Studio �
 
 Microsoft 빌드 시스템 ([MSBuild](../msbuild/msbuild.md)) 프로젝트 파일에 대 한 빌드 엔진 및 확장 가능한 XML 기반 형식으로 제공 합니다. 에 대해 알고 있어야 basic을 사용 하 여 [MSBuild 개념](../msbuild/msbuild-concepts.md) 고 하는 방법 [Visual c + + 용 MSBuild](/cpp/build/msbuild-visual-cpp-overview) Visual c + +를 확장 하기 위해 작동 프로젝트 시스템.
 
-Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) CPS 및 Visual c + + 프로젝트 시스템에서 사용 되는 Api 확장을 제공 합니다. CPS MEF를 사용 하는 방법의 개요를 참조 하세요 [MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)합니다.
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) CPS 및 Visual c + + 프로젝트 시스템에서 사용 되는 Api 확장을 제공 합니다. CPS MEF를 사용 하는 방법의 개요를 참조 하세요 [CPS 및 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) 에 [VSProjectSystem MEF 개요](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)합니다.
 
 빌드 단계 또는 새 파일 형식을 추가 하려면 기존 빌드 시스템을 사용자 지정할 수 있습니다. 자세한 내용은 [MSBuild (Visual c + +) 개요](/cpp/build/msbuild-visual-cpp-overview) 하 고 [프로젝트 속성 작업](/cpp/ide/working-with-project-properties)합니다.

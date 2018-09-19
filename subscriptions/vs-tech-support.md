@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 기술 지원 혜택을 활성화
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289423"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701769"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 기술 지원 혜택 활성화
 
@@ -32,12 +32,13 @@ ms.locfileid: "43289423"
 3.  프로세스를 완료하려면 담당자에게 다음을 제공해야 합니다.
     - 구독에 로그인하는 데 사용하는 전자 메일 주소
     - [구독](https://my.visualstudio.com/subscriptions) 탭에서 찾을 수 있는 구독 ID입니다.
+
     > [!div class="mx-imgBorder"]
     > ![기술 지원 혜택 구독 ID 찾기](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > 지원 계정을 영어가 아닌 다른 언어로 활성화하려면 [이 목록](https://support.microsoft.com/help/14084/activate-support-contract)에서 국가를 선택합니다.   
+> [!NOTE]
+> 지원 계정을 영어가 아닌 다른 언어로 활성화하려면 [이 목록](https://support.microsoft.com/help/14084/activate-support-contract)에서 국가를 선택합니다.   
 
 
 ## <a name="how-to-submit-an-incident"></a>인시던트 제출 방법

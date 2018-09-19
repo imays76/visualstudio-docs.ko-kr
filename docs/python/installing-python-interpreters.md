@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bd52efc61baa2dbdb6d458e87e663233ddd27a79
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996053"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548969"
 ---
 # <a name="install-python-interpreters"></a>Python 인터프리터 설치
 
@@ -34,10 +34,10 @@ Visual Studio는 [**Python 환경**](managing-python-environments-in-visual-stud
 
 | 인터프리터 | 설명 |
 | --- | --- |
-| [CPython](https://www.python.org/) | 가장 널리 사용되는 “기본” 인터프리터로, 32비트 및 64비트 버전으로 사용 가능합니다(32비트 권장). 최신 언어 기능, 최대 Python 패키지 호환성, 완전한 디버깅 지원 및 [IPython](http://ipython.org/)과 상호 interop을 포함합니다. [Python 2 또는 Python 3을 사용해야 하나요?](http://wiki.python.org/moin/Python2orPython3)도 참조하세요. Visual Studio 2015 이전 버전은 Python 3.6+를 지원하지 않으며 **Python 버전 3.6이 지원되지 않음**과 같은 오류를 표시할 수 있습니다. 대신 Python 3.5 또는 이전을 사용합니다. |
+| [CPython](https://www.python.org/) | 가장 널리 사용되는 “기본” 인터프리터로, 32비트 및 64비트 버전으로 사용 가능합니다(32비트 권장). 최신 언어 기능, 최대 Python 패키지 호환성, 완전한 디버깅 지원 및 [IPython](http://ipython.org/)과 상호 interop을 포함합니다. [Python 2 또는 Python 3을 사용해야 하나요?](https://wiki,python.org/moin/Python2orPython3)도 참조하세요. Visual Studio 2015 이전 버전은 Python 3.6+를 지원하지 않으며 **Python 버전 3.6이 지원되지 않음**과 같은 오류를 표시할 수 있습니다. 대신 Python 3.5 또는 이전을 사용합니다. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python의 .NET 구현으로, 32비트 및 64비트 버전으로 사용 가능하며 C#/F#/Visual Basic interop, .NET API에 대한 액세스, 표준 Python 디버깅(그러나 C++ 혼합 모드 디버깅은 제외) 및 혼합 IronPython/C# 디버깅을 제공합니다. 하지만 IronPython에서는 가상 환경을 지원하지 않습니다. |
 | [Anaconda](https://www.continuum.io) | Python에서 제공하는 개방형 데이터 과학 플랫폼으로, 최신 버전의 CPython과 설치하기 어려운 대부분의 패키지를 포함합니다. 달리 결정할 수 없는 경우 권장됩니다. |
-| [PyPy](http://www.pypy.org/) | Python의 고성능 추적 JIT 구현으로, 장기적으로 실행되는 프로그램과 성능 문제를 확인했으나 다른 해결 방법을 찾을 수 없는 상황에 적절합니다. Visual Studio에서 작동하지만 고급 디버깅 기능은 제한적으로 지원됩니다. |
+| [PyPy](https://www.pypy.org/) | Python의 고성능 추적 JIT 구현으로, 장기적으로 실행되는 프로그램과 성능 문제를 확인했으나 다른 해결 방법을 찾을 수 없는 상황에 적절합니다. Visual Studio에서 작동하지만 고급 디버깅 기능은 제한적으로 지원됩니다. |
 | [Jython](http://www.jython.org/) | JVM(Java Virtual Machine)에서 Python 구현. IronPython과 마찬가지로, Jython에서 실행되는 코드는 Java 클래스 및 라이브러리와 상호 작용할 수 있지만 CPython용으로 작성된 많은 라이브러리는 사용할 수 없습니다. Visual Studio에서 작동하지만 고급 디버깅 기능은 제한적으로 지원됩니다. |
 
 Python 환경에 대한 새로운 검색 양식을 제공하려는 개발자인 경우 [PTVS 환경 검색](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments)(github.com)을 참조하세요.
