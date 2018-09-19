@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008436"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552086"
 ---
 # <a name="debug-python-and-c-together"></a>Python과 C++ 함께 디버그
 
@@ -104,7 +104,7 @@ Visual Studio 2017(15.5 이상 버전)은 C/C++ 프로젝트에서 혼합 모드
 
 ### <a name="step-between-python-and-native-code"></a>Python 코드와 네이티브 코드 간 단계
 
-**한 단계씩 코드 실행**(**F11**) 또는 **프로시저 나가기**(**Shift**+**F11**) 명령을 사용할 때 혼합 모드 디버거는 코드 형식 간 변경 내용을 올바르게 처리합니다. 예를 들어 Python에서 C로 구현된 형식의 메서드를 호출할 때 해당 메서드에 대한 호출을 단계별로 실행하면 메서드를 구현하는 네이티브 함수의 시작 부분에서 중지합니다. 마찬가지로 네이티브 코드에서 일부 Python API 함수를 호출하면 Python 코드가 호출됩니다. 예를 들어 원래 Python에서 정의된 함수 값에 대해 단계별로 `PyObject_CallObject`를 실행하면 Python 함수의 시작 부분에서 중지합니다. 또한 Python에서 네이티브로의 단계별 실행은 [ctypes](http://docs.python.org/3/library/ctypes.html)를 통해 Python에서 호출된 네이티브 함수에 대해서도 지원됩니다.
+**한 단계씩 코드 실행**(**F11**) 또는 **프로시저 나가기**(**Shift**+**F11**) 명령을 사용할 때 혼합 모드 디버거는 코드 형식 간 변경 내용을 올바르게 처리합니다. 예를 들어 Python에서 C로 구현된 형식의 메서드를 호출할 때 해당 메서드에 대한 호출을 단계별로 실행하면 메서드를 구현하는 네이티브 함수의 시작 부분에서 중지합니다. 마찬가지로 네이티브 코드에서 일부 Python API 함수를 호출하면 Python 코드가 호출됩니다. 예를 들어 원래 Python에서 정의된 함수 값에 대해 단계별로 `PyObject_CallObject`를 실행하면 Python 함수의 시작 부분에서 중지합니다. 또한 Python에서 네이티브로의 단계별 실행은 [ctypes](https://docs.python.org/3/library/ctypes.html)를 통해 Python에서 호출된 네이티브 함수에 대해서도 지원됩니다.
 
 ### <a name="pyobject-values-view-in-native-code"></a>네이티브 코드에서 PyObject 값 보기
 
@@ -137,7 +137,7 @@ Visual Studio 2017(15.5 이상 버전)은 C/C++ 프로젝트에서 혼합 모드
 
 그러나 Python 2.x의 경우 각 개체 형식은 일반적으로 헤더를 인라인 필드의 컬렉션으로 선언하고, C/C++ 코드의 형식 시스템 수준에서 사용자 지정 작성 형식과 `PyObject` 사이에는 관련이 없습니다. 이러한 사용자 지정 형식에 대해 **[Python 보기]** 노드를 사용하도록 설정하려면 [Python 도구 설치 디렉터리](installing-python-support-in-visual-studio.md#install-locations)에서 *PythonDkm.natvis* 파일을 편집하고 C 구조체 또는 C++ 클래스의 XML에 다른 요소를 추가합니다.
 
-대체(및 더 나은) 옵션은 [PEP 3123](http://www.python.org/dev/peps/pep-3123/)를 따르고 `PyObject_HEAD` 대신 명시적인 `PyObject ob_base;` 필드를 사용하는 것이지만, 이전 버전과의 호환성을 위해 항상 가능하지는 않습니다.
+대체(및 더 나은) 옵션은 [PEP 3123](https://www.python.org/dev/peps/pep-3123/)를 따르고 `PyObject_HEAD` 대신 명시적인 `PyObject ob_base;` 필드를 사용하는 것이지만, 이전 버전과의 호환성을 위해 항상 가능하지는 않습니다.
 
 ### <a name="native-values-view-in-python-code"></a>Python 코드에서 네이티브 값 보기
 

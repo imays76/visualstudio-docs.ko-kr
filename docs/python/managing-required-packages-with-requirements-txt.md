@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468247"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548793"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>requirements.txt를 사용하여 필수 패키지 관리
 
-빌드 시스템을 사용하여 다른 사람과 프로젝트를 공유하거나 [Microsoft Azure에 게시](python-azure-cloud-service-project-template.md)할 계획인 경우 프로젝트에 필요한 외부 패키지를 지정해야 합니다. 권장되는 방법은 필요한 종속 패키지 버전을 설치하는 pip 명령 목록이 들어 있는 [requirements.txt 파일](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files)(readthedocs.org)을 사용하는 것입니다.
+빌드 시스템을 사용하여 다른 사람과 프로젝트를 공유하거나 [Microsoft Azure에 게시](python-azure-cloud-service-project-template.md)할 계획인 경우 프로젝트에 필요한 외부 패키지를 지정해야 합니다. 권장되는 방법은 필요한 종속 패키지 버전을 설치하는 pip 명령 목록이 들어 있는 [requirements.txt 파일](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files)(readthedocs.org)을 사용하는 것입니다.
 
 기술적으로, 파일 이름을 사용하여 요구 사항을 추적할 수 있으나(패키지 설치 시 `-r <full path to file>` 사용) Visual Studio에서 *requirements.txt*에 대한 구체적인 지원을 제공합니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "39468247"
 
 *requirements.txt* 파일은 환경의 요구 사항을 동결하기 위해 작성된 것이므로 모든 설치된 패키지가 정확한 버전으로 작성됩니다. 정확한 버전을 사용하면 다른 컴퓨터에서 사용자 환경을 쉽게 재현할 수 있습니다. 패키지는 다른 패키지의 종속성으로 버전 범위로 되거나 pip 이외의 설치 관리자로 설치된 경우에도 포함됩니다.
 
-pip로 패키지를 설치할 수 없고 *requirements.txt* 파일에 나타나는 경우 전체 설치에 실패합니다. 이 경우 이 패키지를 제외하도록 수동으로 파일을 편집하거나 패키지의 설치 가능한 버전을 참조하도록 [pip의 옵션](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)을 사용합니다. 예를 들어 [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html)을 사용하여 종속성을 컴파일하고 `--find-links <path>` 옵션을 사용자의 *requirements.txt*에 추가하는 것이 좋습니다.
+pip로 패키지를 설치할 수 없고 *requirements.txt* 파일에 나타나는 경우 전체 설치에 실패합니다. 이 경우 이 패키지를 제외하도록 수동으로 파일을 편집하거나 패키지의 설치 가능한 버전을 참조하도록 [pip의 옵션](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)을 사용합니다. 예를 들어 [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html)을 사용하여 종속성을 컴파일하고 `--find-links <path>` 옵션을 사용자의 *requirements.txt*에 추가하는 것이 좋습니다.
 
 ```output
 C:\Project>pip wheel azure
