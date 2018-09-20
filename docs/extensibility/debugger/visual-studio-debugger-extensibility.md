@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa2f858121e8486209518f348193e8a2bbee645a
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b0be4a96854315bcf8b83db86692758e198980cd
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276470"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370928"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio 디버거 확장성
 Visual Studio에는 프로그램에서 버그를 추적 하기 위한 강력 하 고 사용 하기 쉬운 도구를 제공 하는 완전 한 대화형 소스 코드 디버거를 포함 합니다. 디버거는 완전히 지원 Visual Basic, C#, C/c + + 및 JavaScript에 있습니다. 그러나 합니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], 즉에서 사용할 수 있습니다 합니다 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=214453), 같은 다양 한 기능을 사용 하 여 디버거에서 다른 프로그래밍 언어를 지원할 수 있습니다.  
@@ -28,7 +28,7 @@ Visual Studio에는 프로그램에서 버그를 추적 하기 위한 강력 하
   
  합니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 모두에 대 한 전체 참조를 포함 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 새 장치를 만드는 데 필요한 요소입니다. 또한, 샘플 및 자습서를 시작 하는 데 도움이 되는 됩니다.  
   
- 디버깅 지원을 사용 하 여 언어 프로젝트 시스템의 전체 샘플을 참조 하세요. 합니다 [IronPython 샘플](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089)합니다.  
+ 디버깅 지원을 사용 하 여 언어 프로젝트 시스템의 전체 샘플을 참조 하세요. 합니다 [IronPython 샘플](https://www.microsoft.com/download/details.aspx?id=55984)합니다.  
   
  다음 섹션에서는 디버거를 사용 하 여 확장 하는 방법에 설명 합니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다.  
   

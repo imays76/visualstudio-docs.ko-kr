@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321166"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371097"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -182,7 +182,7 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
  **종속성 다이어그램**
 
-되도록 코드 개발 하는 동안 디자인 충돌이 발생 하지 않습니다에서 종속성 유효성 검사 빌드를 사용 하 여 팀은 Team Foundation Build에서 실행 됩니다. 체크 인 작업에서 종속성 유효성 검사를 요구 하도록 사용자 지정 MSBuild 작업을 만들 수도 있습니다. 빌드 보고서를 사용하여 유효성 검사 오류를 수집합니다.
+되도록 코드 개발 하는 동안 디자인 충돌이 발생 하지 않습니다에서 종속성 유효성 검사 빌드를 사용 하 여 팀은 Azure DevOps에서 실행 됩니다. 체크 인 작업에서 종속성 유효성 검사를 요구 하도록 사용자 지정 MSBuild 작업을 만들 수도 있습니다. 빌드 보고서를 사용하여 유효성 검사 오류를 수집합니다.
 
 참조
 
@@ -234,7 +234,7 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 Dinner Now의 자동화된 대규모 테스트 컬렉션은 지금도 거의 모두 적용되고 있기 때문에 Lucerne이 다시 사용할 수 있습니다. Lucerne은 이들 테스트를 기반으로 빌드하고 새 기능을 다루는 새 테스트를 추가할 수 있습니다. 두 팀에서는 모두 Visual Studio를 사용한 수동 테스트도 실행합니다.
 
-코드 디자인을 따르는지 확인 되도록 팀 종속성 유효성 검사를 포함 하도록 Team Foundation Build에서 해당 빌드를 구성 합니다. 충돌이 발생하면 세부 정보가 포함된 보고서가 생성됩니다.
+코드 디자인을 준수 하는지 확인 하려면 팀에서 종속성 유효성 검사를 포함 하도록 Azure DevOps 해당 빌드를 구성 합니다. 충돌이 발생하면 세부 정보가 포함된 보고서가 생성됩니다.
 
 참조
 

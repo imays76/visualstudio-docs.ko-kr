@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07c50d383539082ea841ace38e1fce28bcac3c2
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 3f9272728f79e402800c56f6e8c9ce0fc008e3ad
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252481"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370874"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>디버거 확장 로드맵
 이 설명서에서는 확장에 대 한 가이드 및 참조 정보를 제공 합니다 [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] 사용 하 여 디버거를 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]입니다.  
@@ -46,7 +46,7 @@ ms.locfileid: "39252481"
   
      [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [자습서: 빌드 ATL COM을 사용 하 여 디버그 엔진](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [자습서: 빌드 ATL COM을 사용 하 여 디버그 엔진](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
      [포트 공급자 구현](../../extensibility/debugger/implementing-a-port-supplier.md)  
   

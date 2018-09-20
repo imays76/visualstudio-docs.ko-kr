@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12c1bba1d07ab695f265425d6aeae6806589dcd4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497851"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370590"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn 분석기 시작
 
@@ -26,13 +26,13 @@ Visual Studio에서 프로젝트 기반 라이브 코드 분석기를 사용 하
 
 [추가 코드 수정 연습: 사용자 수정 분석기 문제에 대 한 제공](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[소개와 연습은 실제 분석기의 이야기](http://channel9.msdn.com/events/Build/2015/3-725)
+[소개와 연습은 실제 분석기의 이야기](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[실제 Roslyn 분석기](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) 로 볼 수 있는 한 [통신](http://channel9.msdn.com/events/Build/2015/3-725)
+[실제 Roslyn 분석기](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) 로 볼 수 있는 한 [통신](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [세 가지 유형의 분석기를 그룹화 하는 github에서 몇 가지 예제](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[소개과 몇 가지 분석기 둘러보기](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
+[소개과 몇 가지 분석기 둘러보기](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>참고자료
 

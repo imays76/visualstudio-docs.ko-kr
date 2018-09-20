@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1b9d5aa4c3f649f7be44db2e18f67884acd23201
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499701"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370668"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>텍스트 색 지정에 대 한 글꼴 및 색 정보 가져오기
 렌더링 또는 사용자 인터페이스 (UI) 요소에 컬러로 텍스트를 표시 하는 프로세스는 프로젝트, 기술 및 개발자 환경 설정의 유형에 따라 달라 집니다. 합니다 **글꼴 및 색** 속성 페이지 설정을 저장 합니다.
@@ -50,4 +50,4 @@ ms.locfileid: "39499701"
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
 - [사용 하 여 글꼴 및 텍스트](/dotnet/framework/winforms/advanced/using-fonts-and-text)
 - [색 작업](/cpp/windows/working-with-color-image-editor-for-icons)
-- [GDI (그래픽 장치 인터페이스)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
+- [GDI (그래픽 장치 인터페이스)](https://msdn.microsoft.com/library/7e1d4540-bb2e-4257-8eee-eee376acba83)

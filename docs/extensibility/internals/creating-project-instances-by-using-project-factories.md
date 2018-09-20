@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498917"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370720"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>프로젝트 팩터리를 사용 하 여 프로젝트 인스턴스 만들기
 프로젝트 형식에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용을 *프로젝트 팩터리* 프로젝트 개체의 인스턴스를 만듭니다. 프로젝트 팩터리 cocreatable COM 개체에 대 한 표준 클래스 팩터리와 비슷합니다. 그러나 프로젝트 개체 않습니다 cocreatable; 프로젝트 팩터리를 사용 하 여 만들 수만 있습니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "39498917"
   
  구현할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> 프로젝트에서 클래스에 인터페이스입니다. 일반적으로 자체 모듈에 상주합니다.  
   
- 구현 예는 `IVsProjectFactory` 인터페이스를 참조 하십시오 *PrjFac.cpp*에 포함 되어 있는 [기본 프로젝트](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) 샘플 디렉터리입니다.  
+ 구현 예는 `IVsProjectFactory` 인터페이스를 참조 하십시오 *PrjFac.cpp*에 포함 되어 있는 [기본 프로젝트](https://www.microsoft.com/download/details.aspx?id=55984) 샘플 디렉터리입니다.  
   
  소유자에 의해 집계 되 고 지 원하는 프로젝트에는 해당 프로젝트 파일의 소유자 키를 유지 해야 합니다. 경우는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 메서드는 프로젝트 소유자 키로, 소유 프로젝트 변환 해당 소유자 키 GUID를 호출 하는 프로젝트 팩터리는 `CreateProject` 이 프로젝트 팩터리에서 실제 생성 작업을 수행 하는 메서드.  
   
