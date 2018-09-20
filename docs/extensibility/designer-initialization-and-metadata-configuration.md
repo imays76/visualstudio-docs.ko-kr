@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f362987a8a52692aa0b38bf921b6763dbc8a2c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637057"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370551"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>디자이너 초기화 및 메타 데이터 구성
 응용 프로그램을 다른 처리 하는 도구 특정 디자이너에서 사용 되는 정의 대 한 메커니즘을 제공 하는 디자이너 또는 디자이너 구성 요소에 연결 된 필터 특성과 메타 데이터의 조작 <xref:System.Type> 개체 (예: 데이터 구조 클래스 또는 그래픽 엔터티) 경우 디자이너를 사용할 수 있고 디자이너를 지원 하도록 Visual Studio IDE를 구성 하는 방법 (인스턴스는 **도구 상자** 범주 또는 탭).  
@@ -100,4 +100,4 @@ ms.locfileid: "39637057"
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [DDesign 타임 지원 확장](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [디자인 타임 지원 확장](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

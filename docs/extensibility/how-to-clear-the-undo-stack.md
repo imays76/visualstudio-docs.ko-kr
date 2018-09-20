@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59f8d57c0ba0e84107cd0d0290b950b335e5f2b0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6a1575093ee78fec887c9fbedcfc29339f86f2e7
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639473"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370486"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>방법: 실행 취소 스택을 지웁니다.
 아래에 다음 프로시저 실행 취소 스택을 지웁니다. 하는 방법에 설명 합니다.  
   
 ## <a name="to-clear-the-undo-stack"></a>실행 취소 스택을 지웁니다.  
   
-1.  실행 취소 스택을 사용의 선택을 취소 하는 [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) 메서드. 다음은이 예제입니다.  
+1.  실행 취소 스택을 사용의 선택을 취소 하는 [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) 메서드. 다음은이 예제입니다.  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  

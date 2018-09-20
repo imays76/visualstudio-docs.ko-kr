@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321127"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371064"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>종속성 다이어그램을 사용하여 코드 유효성 검사
 
@@ -52,16 +52,14 @@ ms.locfileid: "44321127"
 
 -   Visual Studio
 
--   Team Foundation Build를 사용하여 자동으로 코드의 유효성을 검사하는 Team Foundation Build 서버의 Visual Studio
-
 -   종속성 다이어그램을 사용 하 여 모델링 프로젝트에 포함 된 솔루션입니다. 이 종속성 다이어그램의 유효성을 검사 하려는 C# 또는 Visual Basic 프로젝트에서 아티팩트에 연결 되어야 합니다. 참조 [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)합니다.
 
- 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
- Visual Studio에서 열기 종속성 다이어그램을에서 수동으로 또는 명령 프롬프트에서 코드를 확인할 수 있습니다. 또한 로컬 빌드 또는 Team Foundation Build를 실행할 때 자동으로 코드 유효성 검사를 실행할 수도 있습니다. 참조 [Channel 9 비디오: 디자인 및 아키텍처 종속성 다이어그램을 사용 하 여 유효성 검사](http://go.microsoft.com/fwlink/?LinkID=252073)합니다.
+Visual Studio에서 열기 종속성 다이어그램을에서 수동으로 또는 명령 프롬프트에서 코드를 확인할 수 있습니다. 확인할 수도 있습니다 코드 자동으로 빌드를 로컬 빌드 또는 Azure 파이프라인을 실행할 때. 참조 [Channel 9 비디오: 디자인 및 아키텍처 종속성 다이어그램을 사용 하 여 유효성 검사](http://go.microsoft.com/fwlink/?LinkID=252073)합니다.
 
 > [!IMPORTANT]
->  Team Foundation Build를 사용하여 레이어 유효성 검사를 실행하려면 빌드 서버에 동일한 버전의 Visual Studio를 설치해야 합니다.
+> Team Foundation Server를 사용 하 여 레이어 유효성 검사를 실행 하려는 경우에 빌드 서버에도 동일한 버전의 Visual Studio를 설치 해야 합니다.
 
 -   [항목 유효성 검사 지원](#SupportsValidation)
 
@@ -182,51 +180,32 @@ ms.locfileid: "44321127"
 |표시 되지 않는 모든 오류에서 숨기기 합니다 **오류 목록** 창|아무 곳 이나 마우스 오른쪽 단추로 클릭 합니다 **오류 목록** 가리킵니다 창 **유효성 검사 오류 관리**를 클릭 하 고 **숨기기 안 한 오류 표시**.|
 
 ##  <a name="ValidateAuto"></a> 코드를 자동으로 유효성 검사
- 로컬 빌드를 실행할 때마다 레이어 유효성 검사를 수행할 수 있습니다. 팀에서 Team Foundation Build를 사용하는 경우, 사용자 지정 MSBuild 작업을 생성하여 지정할 수 있는 제어된 체크 인을 사용하여 유효성 검사를 수행하고 빌드 보고서를 사용하여 유효성 검사 오류를 수집할 수 있습니다. 제어 된 체크 인 빌드를 만들려면 참조 [제어 된 체크 인 빌드 프로세스를 사용 하 여 변경 사항을 확인 하려면](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)합니다.
+
+로컬 빌드를 실행할 때마다 레이어 유효성 검사를 수행할 수 있습니다. Azure DevOps를 사용 하는 경우에 제어 된 체크 인을 사용자 지정 MSBuild 작업을 만들고 사용 하 여 빌드 보고서 유효성 검사 오류를 수집 하 여 지정할 수 있는 레이어 유효성 검사를 수행할 수 있습니다. 제어 된 체크 인 빌드를 만들려면 참조 [제어 된 체크 인 빌드 프로세스를 사용 하 여 변경 사항을 확인 하려면](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)합니다.
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>로컬 빌드 중 자동으로 코드의 유효성을 검사하려면
 
--   텍스트 편집기를 사용하여 모델링 프로젝트 파일(.modelproj)을 열고 다음 속성을 포함합니다.
+텍스트 편집기를 사용하여 모델링 프로젝트 파일(.modelproj)을 열고 다음 속성을 포함합니다.
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- 또는 -
+\- 또는 -
 
 1.  **솔루션 탐색기**종속성 다이어그램 또는 다이어그램을 포함 하는 모델링 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성**합니다.
 
 2.  에 **속성** 창에서 모델링 프로젝트의 설정 **아키텍처 유효성 검사** 속성을 **True**합니다.
 
-     이렇게 하면 모델링 프로젝트가 유효성 검사 프로세스에 포함됩니다.
+    이렇게 하면 모델링 프로젝트가 유효성 검사 프로세스에 포함됩니다.
 
 3.  **솔루션 탐색기**, 유효성 검사에 사용 하려는 종속성 다이어그램 (.layerdiagram) 파일을 클릭 합니다.
 
 4.  에 **속성** 창 했는지 다이어그램의 **빌드 작업** 속성이로 설정 되어 **유효성 검사**합니다.
 
-     종속성 다이어그램을 유효성 검사 프로세스에 포함 됩니다.
+    종속성 다이어그램을 유효성 검사 프로세스에 포함 됩니다.
 
- 오류 목록 창에서 오류를 관리 하려면 참조 [유효성 검사 오류 관리](#ManageErrors)합니다.
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Team Foundation Build 중 자동으로 코드의 유효성을 검사하려면
-
-1.  **팀 탐색기**에서 빌드 정의 두 번 클릭 하 고 클릭 **프로세스**합니다.
-
-2.  아래 **빌드 프로세스 매개 변수**, 확장 **컴파일**에서 다음을 입력 합니다 **MSBuild 인수** 매개 변수:
-
-     `/p:ValidateArchitecture=true`
-
- 유효성 검사 오류에 대 한 자세한 내용은 참조 하십시오 [레이어 유효성 검사 오류 이해 및 해결](#UnderstandingValidationErrors)합니다. [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]에 대한 자세한 내용은 다음을 참조하십시오.
-
--   [Azure 파이프라인](/azure/devops/pipelines/index?view=vsts)
-
--   [빌드 프로세스에 대 한 기본 템플릿 사용](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [빌드 템플릿을 기반으로 하는 수정](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [빌드 프로세스 템플릿 사용자 지정](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [실행 중인 빌드의 진행률 모니터링](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+오류 목록 창에서 오류를 관리 하려면 참조 [유효성 검사 오류 관리](#ManageErrors)합니다.
 
 ##  <a name="TroubleshootingValidation"></a> 레이어 유효성 검사 문제 해결
  다음 표에서는 레이어 유효성 검사 문제와 해결 방법에 대해 설명합니다. 이 문제는 코드와 디자인 간의 충돌로 인해 발생하는 오류와 다릅니다. 이러한 오류에 대 한 자세한 내용은 참조 하세요. [레이어 유효성 검사 오류 이해 및 해결](#UnderstandingValidationErrors)합니다.

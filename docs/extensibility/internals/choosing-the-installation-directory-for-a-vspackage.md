@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18153e86c75f48b362fc09eddb54ea61263e09e1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4e32f2581e4980feebbbecb3cc8e7aa98bfeb670
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511894"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370954"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage 용 설치 디렉터리를 선택 합니다.
 VSPackage 및 해당 지원 파일을 사용자의 파일 시스템에 있어야 합니다. 위치는 VSPackage는 관리 또는 사용자 선택을 확인 하 고-side-by-side 버전 관리 체계를 관리 되지 않는 하는지 여부에 따라 달라 집니다.  
@@ -66,4 +66,4 @@ VSPackage DLL에 리소스가 포함 된 경우와 **SatelliteDll\DllName** 레�
 ## <a name="see-also"></a>참고자료  
  [공유 및 버전 관리 Vspackage 중에서 선택](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Vspackage 관리](../../extensibility/managing-vspackages.md)   
- [패키지 등록 관리](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [패키지 등록 관리](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
