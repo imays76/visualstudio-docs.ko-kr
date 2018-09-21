@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 397147bdc5c6ae11c06bfaa47667ad24aa53e2dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497877"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495949"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>연습: C# 또는 Visual Basic을 사용 하 여 SDK 만들기
 이 연습에서는 Visual C#을 사용 하 여 간단한 수학 라이브러리 SDK를 만들고 다음 SDK는 Visual Studio 확장 (VSIX)로 패키지 하는 방법에 알아봅니다. 다음 절차를 완료 합니다.  
@@ -93,7 +93,7 @@ ms.locfileid: "39497877"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```
 
@@ -105,7 +105,7 @@ ms.locfileid: "39497877"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```  
   
@@ -166,7 +166,7 @@ ms.locfileid: "39497877"
   
 6.  세부 정보 창에서 선택 합니다 **간단한 수학 SDK** 확장 합니다.  
   
-     SDK에 대 한 추가 정보가 표시 됩니다. 선택할 수 있습니다는 **자세한 정보** 열려면 링크 http://www.msdn.microsoft.com처럼이 연습의 앞부분에서 SDKManifest.xml 파일에 지정 합니다.  
+     SDK에 대 한 추가 정보가 표시 됩니다. 선택할 수 있습니다는 **자세한 정보** 열려면 링크 https://msdn.microsoft.com/처럼이 연습의 앞부분에서 SDKManifest.xml 파일에 지정 합니다.  
   
 7.  **참조 관리자** 대화 상자를 선택 합니다 **간단한 수학 SDK** 확인란을 선택한 후는 **확인** 단추.  
   
@@ -243,5 +243,5 @@ ms.locfileid: "39497877"
   
 ## <a name="see-also"></a>참고자료  
  [연습: c + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [연습: JavaScript를 사용 하 여 SDK 만들기](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [연습: JavaScript를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)

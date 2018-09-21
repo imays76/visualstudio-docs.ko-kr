@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace | Microsoft Docs
 ms.custom: ''
-ms.date: 07/18/2017
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321021"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496014"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ Visual Studio Enterprise Edition(Professional 또는 Community Edition 아님)�
 
 |||
 |-|-|
-|**IntelliTrace 사용 하 여 응용 프로그램을 디버그 합니다.**<br /><br /> -이전 이벤트 표시 합니다.<br />-호출 정보 이전 이벤트를 표시 합니다.<br />-IntelliTrace 세션을 저장 합니다.<br />-IntelliTrace에서 수집 하는 데이터를 제어 합니다.|- [연습: IntelliTrace 사용](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 기능](../debugger/intellitrace-features.md)<br />- [기록 디버깅](../debugger/historical-debugging.md)<br />- [IntelliTrace 뒤로 사용 하 여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md)|
+|**IntelliTrace 사용 하 여 응용 프로그램을 디버그 합니다.**<br /><br /> -이전 이벤트 표시 합니다.<br />-호출 정보 이전 이벤트를 표시 합니다.<br />-IntelliTrace 세션을 저장 합니다.<br />-IntelliTrace에서 수집 하는 데이터를 제어 합니다.|- [IntelliTrace 뒤로 사용 하 여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md)<br />- [연습: IntelliTrace 사용](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 기능](../debugger/intellitrace-features.md)<br />- [기록 디버깅](../debugger/historical-debugging.md)|
 |**Test Manager의 테스트 세션 중 IntelliTrace 데이터 수집**|- [수동 테스트에서 추가 진단 데이터 수집](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**배포 된 응용 프로그램에서 IntelliTrace 데이터 수집**|- [IntelliTrace 독립 실행형 수집기 사용](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**IntelliTrace 로그 파일 (.iTrace 파일)에서 디버깅을 시작 합니다.**|- [저장 된 IntelliTrace 데이터 사용](../debugger/using-saved-intellitrace-data.md)|
@@ -54,9 +54,9 @@ Visual Studio Enterprise Edition(Professional 또는 Community Edition 아님)�
 
 |||
 |-|-|
-|**지원됨**|-Visual Basic 및 Visual C# 응용 프로그램을.NET Framework 2.0 이상 버전을 사용 합니다.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 및 64비트 앱을 포함한 대부분의 응용 프로그램을 디버깅할 수 있습니다.<br/>IntelliTrace 사용 하 여 SharePoint 응용 프로그램을 디버깅 하려면 참조 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)합니다.<br/> IntelliTrace 사용 하 여 Microsoft Azure 앱 디버그를 참조 하세요 [IntelliTrace 및 Visual Studio를 사용 하 여 게시 된 클라우드 서비스 디버깅](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)합니다.|
-|**제한적된 지원**|-.NET core 및 ASP.NET Core 앱에 대 한 특정 이벤트만 (MVC 컨트롤러, ADO.NET 및 HTTPClicent 이벤트)에서 지원 로컬 디버깅 합니다. 독립 실행형 수집기는.NET Core 또는 ASP.NET Core 앱에 대 한 지원 되지 않습니다.<br />-F #를 실험적으로 응용 프로그램<br />-UWP 앱만 이벤트에 대 한 지원|
-|**지원 되지 않음**|-C + +, 다른 언어 및 스크립트<br />-Windows 서비스, Silverlight, Xbox 또는 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 앱|
+|**전체 지원**|-Visual Basic 및 Visual C# 응용 프로그램을.NET Framework 2.0 이상 버전을 사용 합니다.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 및 64비트 앱을 포함한 대부분의 응용 프로그램을 디버깅할 수 있습니다.<br/>IntelliTrace 사용 하 여 SharePoint 응용 프로그램을 디버깅 하려면 참조 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)합니다.<br/> IntelliTrace 사용 하 여 Microsoft Azure 앱 디버그를 참조 하세요 [IntelliTrace 및 Visual Studio를 사용 하 여 게시 된 클라우드 서비스 디버깅](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)합니다.|
+|**제한적된 지원**|-타기 팅 IntelliTrace를 사용 하 여 스냅숏 보기 Windows 지원 네이티브 앱 뒤로 이동 합니다. 디버거 및 예외 이벤트만 지원 됩니다.<br />-.NET core 및 ASP.NET Core 앱에 대 한 특정 이벤트만 (MVC 컨트롤러, ADO.NET 및 HTTPClicent 이벤트)에서 지원 로컬 디버깅 합니다. 독립 실행형 수집기는.NET Core 또는 ASP.NET Core 앱에 대 한 지원 되지 않습니다.<br />-F #를 실험적으로 응용 프로그램<br />-UWP 앱만 이벤트에 대 한 지원|
+|**지원 되지 않음**|-다른 언어 및 스크립트<br />-Windows 서비스, Silverlight, Xbox 또는 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 앱|
 
 > [!NOTE]
 > 이미 실행 중인 프로세스를 디버깅 하려는 경우에 IntelliTrace 이벤트에만 사용 (호출 정보 없음)를 수집할 수 있습니다. 로컬 컴퓨터 에서만 32 비트 또는 64 비트 프로세스에 연결할 수 있습니다. 프로세스에 연결 하기 전에 발생 하는 이벤트 수집 되지 않습니다.

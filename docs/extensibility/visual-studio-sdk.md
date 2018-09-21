@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c527604639d701c3cda5bddba9ee61c01e5c8dd
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586777"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495819"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK를 사용 하면 Visual Studio 기능을 확장 하거나 Visual Studio에 새 기능을 통합할 수 있습니다. Visual Studio Marketplace 뿐만 아니라 다른 사용자에 게 확장을 배포할 수 있습니다. 다음은 Visual Studio를 확장할 수 있는 몇 가지 방법입니다.  
@@ -68,7 +68,7 @@ Visual Studio SDK를 사용 하면 Visual Studio 기능을 확장 하거나 Visu
 ## <a name="other-visual-studio-sdk-resources"></a>다른 Visual Studio SDK 리소스  
  VSSDK에 대 한 질문 했거나 확장 개발 경험을 공유 하려는 경우 사용할 수 있습니다 합니다 [Visual Studio 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) 또는 [ExtendVS Gitter Chatroom](https://gitter.im/Microsoft/extendvs)합니다.  
   
- 자세한 내용을 볼 수는 [VSX 실수가 블로그](http://blogs.msdn.com/b/vsx/) 및 다양 한 Microsoft Mvp가 작성 한 블로그:  
+ 자세한 내용을 볼 수는 [VSX 실수가 블로그](https://blogs.msdn.microsoft.com/vsx/) 및 다양 한 Microsoft Mvp가 작성 한 블로그:  
   
 -   [즐겨 사용 하는 Visual Studio 확장](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   

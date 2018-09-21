@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a462501637fab8ea916dd5488b0796351164d5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500711"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495624"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>연습: 시작 페이지 사용자 지정 XAML 추가
 이 연습에서는 사용자 지정 Visual Studio 시작 페이지를 만들려면 웹 브라우저를 포함 하는 방법을 보여 줍니다.  
@@ -93,4 +93,4 @@ ms.locfileid: "39500711"
   
 ## <a name="see-also"></a>참고자료  
  [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)   
- [WPF 컨테이너 컨트롤](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
+ [WPF 컨테이너 컨트롤](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)

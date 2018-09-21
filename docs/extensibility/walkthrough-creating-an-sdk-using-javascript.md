@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97206a80f1d18f0cc8310740430ca11066b102e8
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7a1db47703c2a78a4a5163671146c3817e94e0dc
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498307"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495910"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>연습: JavaScript를 사용 하 여 SDK 만들기
 이 연습에서는 JavaScript는 간단한 수학 SDK는 Visual Studio 확장 (VSIX)로 만들기를 사용 하는 방법을 설명 합니다.  이 연습에서는 이러한 부분으로 구분 됩니다.  
@@ -79,7 +79,7 @@ ms.locfileid: "39498307"
       MinVSVersion="14.0"  
       AppliesTo="JavaScript+WindowsAppContainer"  
       SupportsMultipleVersions="Error"  
-      MoreInfo="http://www.msdn.microsoft.com/">  
+      MoreInfo="https://msdn.microsoft.com/">  
   
       <!-- JS -->  
       <File Content="js\arithmetic.js" />  

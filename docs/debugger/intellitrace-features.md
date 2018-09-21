@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace 기능 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 608b183333d3561f9db586955142f94a8371c055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279534"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495728"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 기능
 
@@ -42,21 +42,21 @@ IntelliTrace가 켜져 있는지를 확인 하려면 엽니다는 **도구 > 옵
 > [!NOTE]
 > 모든 설정의 범위는 **IntelliTrace** 옵션 페이지 전체를 개별이 아닌 프로젝트 또는 솔루션으로 Visual Studio입니다. 이 설정에서 변경된 내용은 Visual Studio의 모든 인스턴스, 모든 디버깅 세션 및 모든 프로젝트나 솔루션에 적용됩니다.
 
-## <a name="ChooseEvents"></a> IntelliTrace에서 기록 하는 이벤트 선택
+## <a name="ChooseEvents"></a> 이벤트를 IntelliTrace 기록 (관리 코드의 경우에) 선택
 
 특정 IntelliTrace 이벤트에 대한 기록을 설정하거나 해제할 수 있습니다.
 
 디버그 중이면 디버깅을 중지합니다. 로 이동 **도구 > 옵션 > IntelliTrace > IntelliTrace 이벤트**합니다. IntelliTrace에서 기록하도록 지정할 이벤트를 선택합니다.
 
-## <a name="Snapshots"></a> 이벤트 및 스냅숏을 수집합니다
+## <a name="Snapshots"></a> 스냅숏 수집
 
-기본적으로 활성화 되어 있지 않으면이 있지만 IntelliTrace 수 모든 중단점 및 디버거 단계 이벤트에서 응용 프로그램의 스냅숏을 캡처하고 기록 디버깅 세션에서 이러한 스냅숏을 볼 수 있습니다. 스냅숏으로 전체 응용 프로그램 상태 보기를 제공 합니다. 스냅숏의 캡처를 사용 하도록 설정 하려면로 이동 **도구 > 옵션 > IntelliTrace > 일반**, 선택한 **IntelliTrace 이벤트 및 스냅숏**합니다. 자세한 내용은 참조 하세요. [IntelliTrace 뒤로 사용 하 여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md)
+기본적으로 활성화 되어 있지 않으면이 있지만 IntelliTrace 수 모든 중단점 및 디버거 단계 이벤트에서 응용 프로그램의 스냅숏을 캡처하고 기록 디버깅 세션에서 이러한 스냅숏을 볼 수 있습니다. 스냅숏으로 전체 응용 프로그램 상태 보기를 제공 합니다. 스냅숏의 캡처를 사용 하도록 설정 하려면로 이동 **도구 > 옵션 > IntelliTrace > 일반**, 선택한 **IntelliTrace 스냅숏을 (관리 / 네이티브)** 합니다. 자세한 내용은 참조 하세요. [IntelliTrace 뒤로 사용 하 여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md)
 
-Visual Studio Enterprise 2017 버전 15.5 이상에서 사용할 수 있는 스냅숏이 하며 해당 Windows 10 1 주년 업데이트 이상.  .NET Core 및 ASP.NET Core 앱을 Visual Studio Enterprise 2017 버전 15.7 미리 보기 1이 필요 합니다.
+Visual Studio Enterprise 2017 버전 15.5 이상에서 사용할 수 있는 스냅숏이 하며 해당 Windows 10 1 주년 업데이트 이상.  .NET Core 및 ASP.NET Core 앱을 Visual Studio Enterprise 2017 버전 15.7이 필요 합니다. Windows, Visual Studio Enterprise 2017 버전 15.9 대상으로 하는 네이티브 앱에 대 한 미리 보기 2가 필요 합니다.
 
-## <a name="GoingFurther"></a> IntelliTrace 이벤트를 수집 및 호출 정보
+## <a name="GoingFurther"></a> IntelliTrace 이벤트를 수집 및 호출 정보 (관리 코드에만 해당)
 
-기본적으로 활성화 되어 있지 않으면이 있지만 IntelliTrace 이벤트와 함께 메서드 호출을 기록할 수 있습니다. 호출으로 이동 하는 메서드의 컬렉션을 사용 하도록 설정 하려면 **도구 > 옵션 > IntelliTrace > 일반**, 선택한 **IntelliTrace 이벤트 및 호출 정보**합니다.
+기본적으로 활성화 되어 있지 않으면이 있지만 IntelliTrace 이벤트와 함께 메서드 호출을 기록할 수 있습니다. 호출으로 이동 하는 메서드의 컬렉션을 사용 하도록 설정 하려면 **도구 > 옵션 > IntelliTrace > 일반**, 선택한 **IntelliTrace 이벤트 및 호출 정보 (관리 전용)** 합니다.
 
 호출 정보를 현재.NET Core 및 ASP.NET Core 앱에서 사용할 수 없는 경우 
 

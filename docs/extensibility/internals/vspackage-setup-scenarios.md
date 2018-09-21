@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510668"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495936"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 설치 시나리오
 
@@ -31,7 +31,7 @@ ms.locfileid: "39510668"
 
 ### <a name="make-your-components-independent"></a>구성 요소를 독립적으로 만들기
 
-식별 하 고 구성 요소를 채울 할당을 `GUID`, 구성 요소를 배포 하 고, 해당 구성을 변경할 수 없습니다. 결과 구성 요소를 새 구성 요소를 새 해야 구성 요소의 컴퍼지션을 변경한 경우 `GUID`합니다. 각 구성 요소 독립적이 고 독립적일 단위를 만들어 가장 높은 버전 관리 유연성을 제공 되어 이러한 팩트를 제공 합니다. 구성 요소를 제어 하는 규칙에 대 한 자세한 내용은 참조 하세요. [구성 요소 코드를 변경](/windows/desktop/Msi/changing-the-component-code) 하 고 [되나요 구성 요소 규칙은 손상?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)합니다.
+식별 하 고 구성 요소를 채울 할당을 `GUID`, 구성 요소를 배포 하 고, 해당 구성을 변경할 수 없습니다. 결과 구성 요소를 새 구성 요소를 새 해야 구성 요소의 컴퍼지션을 변경한 경우 `GUID`합니다. 각 구성 요소 독립적이 고 독립적일 단위를 만들어 가장 높은 버전 관리 유연성을 제공 되어 이러한 팩트를 제공 합니다. 구성 요소를 제어 하는 규칙에 대 한 자세한 내용은 참조 하세요. [구성 요소 코드를 변경](/windows/desktop/Msi/changing-the-component-code) 하 고 [되나요 구성 요소 규칙은 손상?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)합니다.
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>구성 요소에서 공유 및 전용 리소스를 혼합 하지 마세요
 
@@ -77,7 +77,7 @@ ms.locfileid: "39510668"
 
 ![VS Side-by-side-VS 패키지 업데이트 설치 관리자](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Side-by-side-어셈블리의 배포에 대 한 자세한 내용은 참조 하세요. [배포를 단순화 및.NET Framework를 사용 하 여 DLL 지옥 해결](http://msdn.microsoft.com/library/ms973843.aspx)합니다.
+Side-by-side-어셈블리의 배포에 대 한 자세한 내용은 참조 하세요. [배포를 단순화 및.NET Framework를 사용 하 여 DLL 지옥 해결](https://msdn.microsoft.com/library/ms973843.aspx)합니다.
 
 ## <a name="see-also"></a>참고 항목
 

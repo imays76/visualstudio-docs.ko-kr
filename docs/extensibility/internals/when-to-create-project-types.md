@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 유형을 만들어야 하는 경우 | Microsoft Docs
+title: 프로젝트 형식을 만들어야 하는 경우 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 732d71e09d00cd5dbaa077b8a62e240fe401540b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5bfa51dfbed4fb0c78892b06e9377e36a1be38ea
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140422"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495221"
 ---
-# <a name="when-to-create-project-types"></a>프로젝트 형식 만들어야 하는 경우
-사용자 지정 하기 위한 기반을 제공 하는 새 프로젝트 형식을 만드는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자에 대 한 합니다. 그러나 만들 새 프로젝트 형식을 필요는 없습니다 모든 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 지정 합니다. 새 프로젝트 형식을 시나리오에 필요한 지 여부를 결정 합니다. 다음 지침 도움이 됩니다.  
+# <a name="when-to-create-project-types"></a>프로젝트 형식을 만들어야 하는 경우
+사용자 지정 하는 기본 제공 새 프로젝트 형식 만들기 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자에 대 한 합니다. 그러나 새 프로젝트 형식을 만들 필요 하지 않습니다 모든 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 지정 합니다. 다음 지침은 새 프로젝트 형식을 시나리오에 필요한 지 여부를 결정 하는 데 도움이 됩니다.  
   
 ## <a name="create-a-new-project-type"></a>새 프로젝트 형식 만들기  
- 사용자 지정 하려는 경우 프로젝트 형식을 만들어야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다음과 같은 방법 중 하나 이상을 수행 하도록 합니다.  
+ 사용자 지정 하려는 경우 프로젝트 유형을 만들어야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다음 방법 중 하나 이상의 역할을 합니다.  
   
--   빌드에 참가할 배포, 구성 및 소스 제어 합니다.  
+-   빌드에서 participate, 배포, 구성 및 소스 제어 합니다.  
   
 -   디버깅 지원을 제공 합니다.  
   
--   에 프로젝트 항목을 표시 **솔루션 탐색기**합니다.  
+-   프로젝트 항목에 표시할 **솔루션 탐색기**합니다.  
   
--   사용 하 여는 **프로젝트 열기** 또는 **새 프로젝트** 대화 상자.  
+-   사용 된 **프로젝트 열기** 또는 **새 프로젝트** 대화 상자.  
   
 -   프로젝트 중첩을 지원 합니다.  
   
 ## <a name="extend-an-existing-project-type"></a>기존 프로젝트 형식 확장  
- 새 프로젝트 형식을 사용할 수 있는 만들어야 할 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 수정 하거나 기존 프로젝트 형식의 동작을 확장 하려면 다음 방법으로 빌드 프로세스에 대 한 예를 들어 수정 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 프로젝트:  
+ 사용할 수 있는 새 프로젝트 형식을 만들 수도 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 수정 하거나 기존 프로젝트 형식의 동작을 확장 하려면 다음 방법의 예를 들어 빌드 프로세스에 대 한 수정 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 프로젝트:  
   
 -   하나의 단위로 여러 파일을 사용 합니다.  
   
@@ -47,20 +47,20 @@ ms.locfileid: "31140422"
   
 -   편집기에 대 한 서비스 컨텍스트를 표시 합니다.  
   
-## <a name="use-an-existing-project-type"></a>기존 프로젝트 형식을 사용합니다  
- 새 프로젝트를 만드는 경우에 따라 필요는 없습니다. 다음 표에서 작업에 대 한 프로젝트 유형을 만들 필요가 없습니다을 보여 줍니다.  
+## <a name="use-an-existing-project-type"></a>기존 프로젝트 형식 사용  
+ 새 프로젝트를 만드는 경우에 따라 필요 하지 않습니다. 다음 테이블에 대 한 프로젝트 형식을 만들려면 없는 작업을 보여 줍니다.  
   
 |작업|설명|  
 |----------|-----------------|  
 |명령 처리|모든 VSPackage 명령을 처리할 수 있습니다.|  
-|편집기를 작성합니다.|사용자 지정 편집기를 등록할 수 있습니다. 자세한 내용은 참조 [문서 창과 편집기](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)합니다.|  
-|Windows를 소유합니다.|새 프로젝트 형식을 추가 하지 않고 모두 도구 및 문서 창을 만들 수 있습니다.|  
+|편집기를 작성합니다.|사용자 지정 편집기를 등록할 수 있습니다. 자세한 내용은 [문서 Windows 및 편집기](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)합니다.|  
+|Windows를 소유합니다.|새 프로젝트 형식을 추가 하지 않고 windows 도구 및 문서를 만들 수 있습니다.|  
 |속성 창에서 속성을 노출|모든 개체 속성을 노출할 수 있습니다.|  
   
 ## <a name="create-a-project-subtype"></a>프로젝트 하위 형식 만들기  
- 새 프로젝트 형식을 만들 필요 없이 관리 되는 프로젝트 형식을 확장 하 프로젝트 하위 형식에 사용할 수 있습니다. 프로젝트 하위 형식 COM 집계를 사용 하 여 Microsoft로 작성 된 관리 되는 프로젝트를 확장 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 또는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]합니다. COM 집계와 대부분의 관리 되는 프로젝트 시스템 구현을 다시 사용할 수 있으며 인터페이스를 지 원하는 사용 하 여 집계를 통해 특정 시나리오에 대 한 사용자 지정할 수 있습니다. 프로젝트 하위 형식에 대 한 자세한 내용은 참조 [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)합니다.  
+ 새 프로젝트 형식을 만들 필요 없이 관리 되는 프로젝트 형식을 확장 하려면 프로젝트 하위 형식에 사용할 수 있습니다. 프로젝트 하위 형식 COM 집계를 사용 하 여 Microsoft에서 작성 된 관리 되는 프로젝트를 확장 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 또는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]합니다. COM 집계를 사용 하 여 관리 되는 프로젝트 시스템 구현의 대부분 다시 사용할 수 있으며 인터페이스를 지 원하는 사용 하 여 집계를 통해 특정 시나리오에도 사용자 지정할 수 있습니다. 프로젝트 하위 형식에 대 한 자세한 내용은 참조 하세요. [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [문서 창과 편집기](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
+ [문서 Windows 및 편집기](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)   
  [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)

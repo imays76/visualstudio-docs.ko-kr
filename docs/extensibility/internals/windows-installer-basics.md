@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99bcb83ad085d67d219cea7a7860994fba3e9bd7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513428"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495546"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 기본 사항
 Windows 설치 관리자를 설치 하 고 Windows 설치 관리자 구성 요소 (WICs 또는 구성 요소 라고도 함) 라는 단위로 이러한 작업을 수행 합니다. 응용 프로그램 또는 사용자의 컴퓨터에서 소프트웨어 제품 제거. 설치 및 Windows Installer를 사용 하 여 설정에 대 한 계산 참조의 기본 단위는 각 WIC를 식별 하는 GUID입니다.  
@@ -75,4 +75,4 @@ Windows 설치 관리자를 설치 하 고 Windows 설치 관리자 구성 요�
 -   버전이 지정 된 리소스가 해야 적이 둘 이상의 WIC에서 제공 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [구성 요소 규칙을 위반 하는 경우 어떻게 되나요?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [구성 요소 규칙을 위반 하는 경우 어떻게 되나요?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

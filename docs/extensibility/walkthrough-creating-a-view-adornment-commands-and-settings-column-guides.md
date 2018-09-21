@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499993"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496105"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>연습: 보기 장식, 명령 및 설정 (열 안내선) 만들기
 명령 및 효과 보기를 사용 하 여 Visual Studio 텍스트/코드 편집기를 확장할 수 있습니다. 이 문서는 인기 있는 확장 기능을 열 가이드를 사용 하 여 시작 하는 방법을 보여 줍니다. 열 안내선은 특정 열 너비에 코드를 관리할 수 있도록 텍스트 편집기의 보기에 그려지는 시각적으로 밝은 선입니다. 특히, 서식이 지정 된 코드 샘플 문서, 블로그 게시물에서에서 포함 또는 버그 보고서에 대해 중요할 수 있습니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "39499993"
   
 -   Visual Studio 명령 창에서 명령을 호출 하는 것에 대 한 지원 추가  
   
- 이 Visual Studio 갤러리를 사용 하 여 열 안내선 기능의 버전을 사용해 볼 수 있습니다[확장](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)합니다.  
+ 이 Visual Studio 갤러리를 사용 하 여 열 안내선 기능의 버전을 사용해 볼 수 있습니다[확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)합니다.  
   
  **참고**:이 연습에서는 Visual Studio 확장 템플릿에 의해 생성 된 소수의 파일에 코드의 상당한을 붙여넣습니다. 그러나 곧이 연습에서는 참조 하는 다른 확장 프로그램 예제를 사용 하 여 github에서 완성 된 솔루션. 완성 된 코드는 generictemplate 아이콘을 사용 하는 대신 실제 명령 아이콘에는 약간 다릅니다.  
   
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>완성 된 코드 프로젝트  
  Visual Studio 확장성 샘플 github 프로젝트 되 곧 하 고 완료 된 프로젝트로 표시 됩니다. 이 문서에서는 가리키도록 있습니다이 경우 업데이트 됩니다. 완성 된 샘플 프로젝트 다른 guid가 있고 명령 아이콘에 대 한 다른 비트맵 스트립을 갖습니다.  
   
- 이 Visual Studio 갤러리를 사용 하 여 열 안내선 기능의 버전을 사용해 볼 수 있습니다[확장](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)합니다.  
+ 이 Visual Studio 갤러리를 사용 하 여 열 안내선 기능의 버전을 사용해 볼 수 있습니다[확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [편집기 내에서](../extensibility/inside-the-editor.md)   
