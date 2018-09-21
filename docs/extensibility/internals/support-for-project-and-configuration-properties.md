@@ -14,24 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4228015287be7c2dd5c34fea29f16f2a581b8a62
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: c36ee7332f896ed3228166b2c729a4bc2a4df03c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902625"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496040"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>프로젝트 및 구성 속성 지원
 합니다 **속성** 창에는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 프로젝트 및 구성 속성을 표시할 수 있습니다. 사용자는 응용 프로그램에 대 한 속성을 설정할 수 있도록 고유한 프로젝트 형식에 대 한 속성 페이지를 제공할 수 있습니다.  
   
- 프로젝트 노드를 선택 하 여 **솔루션 탐색기** 클릭 한 다음 **속성** 에 **프로젝트** 메뉴에서 프로젝트 및 구성을 포함 하는 대화 상자를 열 수 있습니다 속성입니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 하 고 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)],이 대화 상자에 탭 페이지로 표시 됩니다. 이러한 언어에서 파생 된 형식 프로젝트를 [일반, 환경, 옵션 대화 상자](../../ide/reference/general-environment-options-dialog-box.md). 자세한 내용은 [빌드에 없음: 연습: 프로젝트 노출 및 구성 속성 (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)합니다.  
+ 프로젝트 노드를 선택 하 여 **솔루션 탐색기** 클릭 한 다음 **속성** 에 **프로젝트** 메뉴에서 프로젝트 및 구성을 포함 하는 대화 상자를 열 수 있습니다 속성입니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 하 고 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)],이 대화 상자에 탭 페이지로 표시 됩니다. 이러한 언어에서 파생 된 형식 프로젝트를 [일반, 환경, 옵션 대화 상자](../../ide/reference/general-environment-options-dialog-box.md). 자세한 내용은 [빌드에 없음: 연습: 프로젝트 노출 및 구성 속성 (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)합니다.  
   
  프로젝트 (MPFProj)에 대 한 관리 되는 패키지 프레임 워크는 만들고 새로운 프로젝트 시스템을 관리 하기 위한 도우미 클래스를 제공 합니다. 소스 코드와 컴파일 지침을 찾을 수 있습니다 [프로젝트용-Visual Studio 2013 MPF](https://github.com/tunnelvisionlabs/MPFProj10)합니다.  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>프로젝트 및 구성 속성의 지 속성  
  프로젝트 및 구성 속성은 모든 프로젝트 형식의 경우, 예를 들어 연관 파일 이름 확장명,.csproj,.vbproj, 및.myproj 있는 프로젝트 파일에서 유지 됩니다. 언어 프로젝트는 일반적으로 프로젝트 파일을 생성 하는 템플릿 파일을 사용 합니다. 그러나 실제로 여러 가지 프로젝트 형식 및 서식 파일을 연결 합니다. 자세한 내용은 참조 하세요. [템플릿 디렉터리 설명 (합니다. Vsdir) 파일](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)합니다.  
   
- 프로젝트 및 구성 속성은 템플릿 파일에 항목을 추가 하 여 생성 됩니다. 이러한 속성은 다음이 템플릿을 사용 하는 프로젝트 유형을 사용 하 여 만든 프로젝트에 사용할 수 있습니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 프로젝트 및 둘 다 사용 MPFProj 합니다 [빌드에 없음: MSBuild 개요](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) 템플릿 파일에 대 한 스키마입니다. 이러한 파일은 각 구성에 대 한 PropertyGroup 섹션입니다. 프로젝트의 속성 구성 인수가 null 문자열로 설정 하는 첫 번째 PropertyGroup 섹션에서 일반적으로 유지 됩니다.  
+ 프로젝트 및 구성 속성은 템플릿 파일에 항목을 추가 하 여 생성 됩니다. 이러한 속성은 다음이 템플릿을 사용 하는 프로젝트 유형을 사용 하 여 만든 프로젝트에 사용할 수 있습니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 프로젝트 및 둘 다 사용 MPFProj 합니다 [빌드에 없음: MSBuild 개요](/previous-versions/visualstudio/visual-studio-2008/ms171452(v=vs.90)) 템플릿 파일에 대 한 스키마입니다. 이러한 파일은 각 구성에 대 한 PropertyGroup 섹션입니다. 프로젝트의 속성 구성 인수가 null 문자열로 설정 하는 첫 번째 PropertyGroup 섹션에서 일반적으로 유지 됩니다.  
   
  다음 코드에서는 기본 MSBuild 프로젝트 파일의 시작 부분을 보여 줍니다.  
   

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc947f68dc5c220ec0bd1ecd035e2089881a80ea
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3ee391ce1200cce03e83f80b6f345ead4cd03199
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498674"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495247"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>연습: 핵심 편집기 및 등록 하는 편집기 파일 형식 만들기
 이 연습에는 시작 하는 VSPackage를 만드는 방법을 보여 줍니다 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 핵심 편집기를 사용 하 여 파일을 *.myext* 파일 이름 확장명 로드 됩니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "39498674"
   
 ### <a name="to-create-the-vspackage"></a>VSPackage를 만들려면  
   
--   시작 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 만들고는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 라는 VSPackage `MyPackage`에 설명 된 대로 [연습: VSPackage 메뉴 명령을 만들려면](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32)합니다.  
+-   시작 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 만들고는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 라는 VSPackage `MyPackage`에 설명 된 대로 [연습: VSPackage 메뉴 명령을 만들려면](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32)합니다.  
   
 ### <a name="to-add-the-editor-factory"></a>편집기 팩터리를 추가 하려면  
   

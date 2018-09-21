@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638032"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495455"
 ---
 # <a name="localize-menu-commands"></a>메뉴 명령 지역화
 지역화 된 만들어 메뉴 및 도구 모음 명령에 대 한 지역화 된 텍스트를 제공할 수 있습니다 *.vsct* 파일과 지역화 *.resx* 통합 하기 위해 VSPackage를 및 프로젝트 파일을 업데이트 한 다음 파일을 변경 내용입니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "39638032"
   
 2.  복사본을 만듭니다 *filename.en US.vsct* 각각에 대 한 지역화 된 언어입니다.  
   
-     각 복사본의 이름을 *파일 이름입니다. { 로캘}.vsct*, 여기서 *{로캘}* 특정 문화권 이름입니다. 문화권 이름 값의 목록을 참조 하세요 [Locale IDs assigned by Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx)합니다.  
+     각 복사본의 이름을 *파일 이름입니다. { 로캘}.vsct*, 여기서 *{로캘}* 특정 문화권 이름입니다. 문화권 이름 값의 목록을 참조 하세요 [Locale IDs assigned by Microsoft](/windows/uwp/publish/supported-languages)합니다.  
   
      이러한 *파일 이름입니다. Locale.vsct* 파일 패키지에 대 한 지역화 된 메뉴 텍스트가 포함 됩니다.  
   

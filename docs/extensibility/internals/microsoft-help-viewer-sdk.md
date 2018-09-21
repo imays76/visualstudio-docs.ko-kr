@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513376"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496001"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 이 문서에서는 Visual Studio 도움말 뷰어 통합 업체에 대 한 다음 작업을 포함 됩니다.  
@@ -822,13 +822,13 @@ Visual Studio 콘텐츠 저장소를 만듭니다. Integrated Shell 시나리오
 ### <a name="additional-resources"></a>추가 리소스  
 런타임 API를 참조 하세요 [Windows API 도움말](/previous-versions/windows/desktop/helpapi/helpapi-portal)합니다.  
   
-API 도움말을 활용 하는 방법에 대 한 자세한 내용은 참조 하세요. [도움말 뷰어 코드 예제](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+API 도움말을 활용 하는 방법에 대 한 자세한 내용은 참조 하세요. [도움말 뷰어 코드 예제](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 이러한 구성 요소에 대 한 피드백을 제공 하려면 사용할 [Microsoft Connect](http://connect.microsoft.com/)합니다.  
   
 기능 추천 단어를 제출 하세요 [Microsoft 사용자 음성](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-추가 도움말을 보려면 시도 [MSDN Developer Documentation and Help System 포럼](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+추가 도움말을 보려면 시도 [MSDN Developer Documentation and Help System 포럼](https://social.msdn.microsoft.com/Forums)  
   
 주요 문제에 대 한 업데이트를 참조 하십시오는 [도움말 뷰어 추가 정보](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   

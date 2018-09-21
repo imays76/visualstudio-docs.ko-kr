@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef69ac45a090aa4395aa15d1395cff1665255b51
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cc742fecbbe03ff3d3aa0fb3f8d61a9c5f09254b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639115"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495273"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Windows Installer 배포에 대 한 확장 준비
 VSIX 패키지를 배포 하려면 Windows Installer 패키지 (MSI)를 사용할 수 없습니다. 그러나 MSI 배포용 VSIX 패키지의 내용을 추출할 수 있습니다. 이 문서에는 해당 기본 출력은 설치 프로젝트에 포함할 VSIX 패키지 프로젝트를 준비 하는 방법을 보여 줍니다.  
@@ -58,5 +58,5 @@ VSIX 패키지를 배포 하려면 Windows Installer 패키지 (MSI)를 사용�
 5.  설치 프로젝트에 나머지 파일을 추가 합니다.  
   
 ## <a name="see-also"></a>참고자료  
- [Visual Studio 설치 관리자 배포](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [연습: 사용자 지정 작업 만들기](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)
+ [Visual Studio 설치 관리자 배포](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [연습: 사용자 지정 작업 만들기](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

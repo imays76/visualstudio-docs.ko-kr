@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586810"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495689"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 참조
 이 섹션에서는 Visual Studio SDK를 사용 하는 개발자를 위한 Visual Studio 네임 스페이스, 관련된 네임 스페이스 및 관심 있는 다른 영역에 대 한 정보를 포함 합니다.  
@@ -223,7 +223,7 @@ ms.locfileid: "39586810"
  <xref:Microsoft.VisualStudio.Threading>  
  Visual Studio 스레딩에 사용 됩니다.  
   
- [Microsoft.VisualStudio.ConnectedServices Namespace](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) Visual Studio 연결 서비스에 사용 합니다.  
+ [Microsoft.VisualStudio.ConnectedServices Namespace](/dotnet/api/microsoft.visualstudio.connectedservices) Visual Studio 연결 서비스에 사용 합니다.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) 열거형  
  IntelliSense 호스트 플래그를 지정합니다.  
@@ -231,7 +231,7 @@ ms.locfileid: "39586810"
  [VSCT XML 스키마 참조](../extensibility/vsct-xml-schema-reference.md)  
  Visual Studio 명령 테이블 스키마 요소의 표 허용 된 자식이 있는 요소 및 특성 각 제공합니다.  
   
- [Guid 및 상수](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
+ [GUID 및 상수](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
  SDK 전체에서 사용 되는 Guid의 목록을 제공 합니다.  
   
  [관리 코드의 COM 상수](../extensibility/com-constants-in-managed-code.md)  

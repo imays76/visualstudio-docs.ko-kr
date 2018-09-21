@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad8f58e1d576a738c17095b6306261964e448651
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637723"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495923"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 분석기 및 ImmutableArrays에 대 한 코드 인식 라이브러리
 
@@ -307,13 +307,13 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 ## <a name="talk-video-and-finish-code-project"></a>비디오 설명 및 코드 프로젝트를 완료 합니다.
 
-이 예제에서는 개발 하 고 설명에 표시에 대 한 자세한 [이 강연](http://channel9.msdn.com/events/Build/2015/3-725)합니다.  설명 작업 분석기를 보여 줍니다. 및 빌드하는 것을 안내 합니다.
+이 예제에서는 개발 하 고 설명에 표시에 대 한 자세한 [이 강연](https://channel9.msdn.com/events/Build/2015/3-725)합니다.  설명 작업 분석기를 보여 줍니다. 및 빌드하는 것을 안내 합니다.
 
 완성된 된 모든 코드를 볼 수 있습니다 [여기](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)합니다.  하위 폴더 *DoNotUseImmutableArrayCollectionInitializer* 하 고 *DoNotUseImmutableArrayCtor* 각 문제를 찾는 C# 파일을 있고 코드를 구현 하는 C# 파일에 표시 되는 수정 합니다 Visual Studio 전구 UI입니다.  참고, 완성 된 코드에는 약간의 추상화는 ImmutableArray를 페치 하지 않으려면\<T > 형식 개체를 반복 합니다.  중첩 된 등록된 작업을 사용 하 여 사용할 수 있는 컨텍스트에서 형식 개체를 저장 하 때마다 하위 작업 (개체 생성을 분석 하 고 컬렉션 초기화 분석)를 실행 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-* [\\\Build 2015 강연](http://channel9.msdn.com/events/Build/2015/3-725)
+* [\\\Build 2015 강연](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub에서 완성 된 코드](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [세 가지 유형의 분석기를 그룹화 하는 GitHub에서 몇 가지 예제](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [GitHub OSS 사이트에서 다른 docs](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
