@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320737"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542509"
 ---
-# <a name="diagnose-problems-after-deployment"></a>배포 후 문제 진단
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>IntelliTrace를 사용 하 여 배포 후 문제 진단
 
 IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하려면 Visual Studio에서 IntelliTrace 로그를 디버그하는 데 필요한 올바른 소스 파일과 기호 파일을 자동으로 찾을 수 있도록 릴리스에 빌드 정보를 포함합니다.
 
@@ -27,48 +27,27 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
 
  **이 필요 합니다.**
 
--   Visual Studio 2017, Visual Studio 2015 또는 Team Foundation Server 2017, 2015, 2013, 2012 또는 2010 빌드를 설정 하려면
+-   Visual Studio, Azure DevOps 또는 Team Foundation Server 2017, 2015, 2013, 2012 또는 2010 빌드를 설정 하려면
 
 -   앱을 모니터링하고 진단 데이터를 기록하기 위한 Microsoft Monitoring Agent
 
 -   IntelliTrace를 사용하여 진단 데이터를 검토하고 코드를 디버그하기 위한 Visual Studio Enterprise(Professional 또는 Community Edition 아님)
 
 ##  <a name="SetUpBuild"></a> 1 단계: 포함 릴리스를 사용 하 여 정보를 빌드
- 빌드 프로세스를 설정하여 웹 프로젝트의 빌드 매니페스트(BuildInfo.config 파일)를 만들어 이 매니페스트를 릴리스에 포함시킵니다. 이 매니페스트에는 특정 빌드를 만드는 데 사용된 프로젝트, 소스 제어 및 빌드 시스템에 대한 정보가 포함됩니다. 기록된 이벤트를 살펴보기 위해 IntelliTrace 로그를 열면 Visual Studio가 이 매니페스트 정보를 통해 일치하는 소스 및 기호를 간단히 찾을 수 있습니다.
+ 빌드 매니페스트를 만드는 빌드 프로세스를 설정 (*BuildInfo.config* 파일) 웹에 대 한 프로젝트 및 릴리스를 사용 하 여이 매니페스트를 포함 합니다. 이 매니페스트에는 특정 빌드를 만드는 데 사용된 프로젝트, 소스 제어 및 빌드 시스템에 대한 정보가 포함됩니다. 기록된 이벤트를 살펴보기 위해 IntelliTrace 로그를 열면 Visual Studio가 이 매니페스트 정보를 통해 일치하는 소스 및 기호를 간단히 찾을 수 있습니다.
 
 ###  <a name="AutomatedBuild"></a> Team Foundation Server를 사용 하 여 자동화 빌드용 빌드 매니페스트 만들기
 
  Team Foundation 버전 제어 또는 GIT에서 다음 단계를 수행합니다.
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> Azure DevOps 및 Team Foundation Server 2017
 
- 빌드 매니페스트 (BuildInfo.config 파일)에 소스, 빌드 및 기호 위치를 추가할 빌드 파이프라인을 설정 합니다. Team Foundation Build가 이 파일을 자동으로 만들어 프로젝트의 출력 폴더에 저장합니다.
+Visual Studio 2017을 다루지 않습니다 합니다 *BuildInfo.config* 파일 사용 되지 않으며 다음 제거 되었습니다. 배포 후 ASP.NET 웹 앱을 디버깅 하려면 다음 방법 중 하나를 사용 합니다.
 
-1.  ASP.NET Core (.NET Framework) 템플릿을 사용 하 여 빌드 파이프라인에 이미 있는 경우 있습니다 하거나 [빌드 파이프라인을 편집 하거나 새 빌드 파이프라인을 만듭니다.](/azure/devops/pipelines/get-started-designer?view=vsts)
+* 사용 하 여 Azure에 배포용 [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/)합니다.
 
-     ![TFS 2017에서 파이프라인을 빌드 보기](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* IntelliTrace를 사용 하는 경우 Visual Studio에서 프로젝트를 열고 하 고 일치 하는 빌드 기호 파일이 로드 합니다. 기호 파일을 로드할 수 있습니다 합니다 **모듈** 창 또는 기호를 구성 하 여 **도구** > **옵션** > **디버깅**   >  **기호**합니다.
 
-2.  새 템플릿을 만든 경우에 ASP.NET Core (.NET Framework) 템플릿을 선택 합니다.
-
-     ![빌드 프로세스 템플릿 선택 &#45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  소스가 자동으로 인덱싱되도록 기호(PDB) 파일을 저장할 위치를 지정합니다.
-
-     사용자 지정 템플릿을 사용하는 경우 해당 템플릿에 소스를 인덱싱하는 활동이 있는지 확인합니다. 나중에 기호 파일을 저장할 위치를 지정하는 MSBuild 인수를 추가합니다.
-
-     ![빌드 파이프라인 TFS 2017에서 기호 경로 설정](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     기호에 대 한 자세한 내용은 참조 하세요 [기호 데이터 게시](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)합니다.
-
-4.  이 MSBuild 인수를 추가하여 TFS 및 기호 위치를 빌드 매니페스트 파일에 포함합니다.
-
-     **/p:IncludeServerNameInBuildInfo = true**
-
-     웹 서버에 액세스할 수 있는 사용자는 누구나 빌드 매니페스트에서 이러한 위치를 참조할 수 있습니다. 원본 서버가 안전한지 확인합니다.
-
-6.  새 빌드를 실행합니다.
-
-    로 [2 단계: 앱 릴리스](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  빌드 매니페스트 (BuildInfo.config 파일)에 소스, 빌드 및 기호 위치를 추가할 빌드 파이프라인을 설정 합니다. Team Foundation Build가 이 파일을 자동으로 만들어 프로젝트의 출력 폴더에 저장합니다.

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433456"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542440"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>디버거의 새로운 기능 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "37433456"
 
     ![단계 뒤로 및 앞으로 단추](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 및 앞으로 단추")
 
-    자세한 내용은 [IntelliTrace 뒤로 이동을 사용하여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md) 페이지를 참조하세요.
+    자세한 내용은 참조는 [IntelliTrace를 사용 하 여 이전 앱 상태를 검사](../debugger/view-historical-application-state.md) 페이지입니다.
 
 - 합니다 **예외 도우미** 예외 도우미를 대체 하 고 오류가 발생 하는 비 모달 대화 상자에 표시 됩니다. 합니다 **예외 도우미** 모든 내부 예외, 디버거에서 (있는 경우), 추가 분석에 대 한 빠른 액세스 및 직접 액세스를 제공 합니다 **예외 설정** 예외에 대 한 합니다. 확인 해야 하는 것을 차단 하는 경우 예외 도우미 부동 보기로 끌 수도 있습니다.
 
