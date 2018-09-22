@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495728"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542470"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 기능
 
@@ -50,7 +50,7 @@ IntelliTrace가 켜져 있는지를 확인 하려면 엽니다는 **도구 > 옵
 
 ## <a name="Snapshots"></a> 스냅숏 수집
 
-기본적으로 활성화 되어 있지 않으면이 있지만 IntelliTrace 수 모든 중단점 및 디버거 단계 이벤트에서 응용 프로그램의 스냅숏을 캡처하고 기록 디버깅 세션에서 이러한 스냅숏을 볼 수 있습니다. 스냅숏으로 전체 응용 프로그램 상태 보기를 제공 합니다. 스냅숏의 캡처를 사용 하도록 설정 하려면로 이동 **도구 > 옵션 > IntelliTrace > 일반**, 선택한 **IntelliTrace 스냅숏을 (관리 / 네이티브)** 합니다. 자세한 내용은 참조 하세요. [IntelliTrace 뒤로 사용 하 여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md)
+기본적으로 활성화 되어 있지 않으면이 있지만 IntelliTrace 수 모든 중단점 및 디버거 단계 이벤트에서 응용 프로그램의 스냅숏을 캡처하고 기록 디버깅 세션에서 이러한 스냅숏을 볼 수 있습니다. 스냅숏으로 전체 응용 프로그램 상태 보기를 제공 합니다. 스냅숏의 캡처를 사용 하도록 설정 하려면로 이동 **도구 > 옵션 > IntelliTrace > 일반**, 선택한 **IntelliTrace 스냅숏을 (관리 / 네이티브)** 합니다. 자세한 내용은 참조 하세요. [IntelliTrace를 사용 하 여 이전 앱 상태를 검사 합니다.](../debugger/view-historical-application-state.md)
 
 Visual Studio Enterprise 2017 버전 15.5 이상에서 사용할 수 있는 스냅숏이 하며 해당 Windows 10 1 주년 업데이트 이상.  .NET Core 및 ASP.NET Core 앱을 Visual Studio Enterprise 2017 버전 15.7이 필요 합니다. Windows, Visual Studio Enterprise 2017 버전 15.9 대상으로 하는 네이티브 앱에 대 한 미리 보기 2가 필요 합니다.
 

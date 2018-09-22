@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6d0354e7e7c5f59c070baa6e6913d85cf7c06d
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433550"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542418"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 디버거를 소개
 
@@ -211,7 +211,7 @@ F10 함수나 (코드가 계속 실행) 앱 코드에서 메서드를 한 단계
 
 ![단계 뒤로 및 앞으로 단추](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 및 앞으로 단추")
 
-자세한 내용은 [IntelliTrace 뒤로 이동을 사용하여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md) 페이지를 참조하세요.
+자세한 내용은 참조는 [IntelliTrace를 사용 하 여 이전 앱 상태를 검사](../debugger/view-historical-application-state.md) 페이지입니다.
 
 ## <a name="next-steps"></a>다음 단계
 

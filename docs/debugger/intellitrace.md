@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496014"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542458"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ Visual Studio Enterprise Edition(Professional 또는 Community Edition 아님)�
 
 |||
 |-|-|
-|**IntelliTrace 사용 하 여 응용 프로그램을 디버그 합니다.**<br /><br /> -이전 이벤트 표시 합니다.<br />-호출 정보 이전 이벤트를 표시 합니다.<br />-IntelliTrace 세션을 저장 합니다.<br />-IntelliTrace에서 수집 하는 데이터를 제어 합니다.|- [IntelliTrace 뒤로 사용 하 여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md)<br />- [연습: IntelliTrace 사용](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 기능](../debugger/intellitrace-features.md)<br />- [기록 디버깅](../debugger/historical-debugging.md)|
+|**IntelliTrace 사용 하 여 응용 프로그램을 디버그 합니다.**<br /><br /> -이전 이벤트 표시 합니다.<br />-호출 정보 이전 이벤트를 표시 합니다.<br />-IntelliTrace 세션을 저장 합니다.<br />-IntelliTrace에서 수집 하는 데이터를 제어 합니다.|- [IntelliTrace를 사용 하 여 이전 앱 상태를 검사 합니다.](../debugger/view-historical-application-state.md)<br />- [연습: IntelliTrace 사용](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 기능](../debugger/intellitrace-features.md)<br />- [기록 디버깅](../debugger/historical-debugging.md)|
 |**Test Manager의 테스트 세션 중 IntelliTrace 데이터 수집**|- [수동 테스트에서 추가 진단 데이터 수집](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**배포 된 응용 프로그램에서 IntelliTrace 데이터 수집**|- [IntelliTrace 독립 실행형 수집기 사용](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**IntelliTrace 로그 파일 (.iTrace 파일)에서 디버깅을 시작 합니다.**|- [저장 된 IntelliTrace 데이터 사용](../debugger/using-saved-intellitrace-data.md)|
@@ -149,7 +149,7 @@ IntelliTrace는 재현하기 어렵거나 배포할 때 발생하는 오류를 �
 
 모든 중단점에서 스냅숏을 캡처하고 디버거 단계 이벤트를 IntelliTrace를 구성할 수 있습니다. IntelliTrace는 복잡 한 변수를 표시 하 고 식을 평가 하는 각 스냅숏에서 전체 응용 프로그램 상태를 기록 합니다.
 
-참조 [IntelliTrace 뒤로 사용 하 여 스냅숏 보기](../debugger/how-to-use-intellitrace-step-back.md)합니다.
+참조 [IntelliTrace를 사용 하 여 이전 앱 상태를 검사](../debugger/view-historical-application-state.md)합니다.
 
 **함수 호출 정보 수집**
 
