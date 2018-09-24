@@ -9,12 +9,12 @@ description: 클라우드 구독에 대한 청구 질문입니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: c0b66b7a10c344d7d534e5618ca560bdae31f30e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289409"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283305"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 
@@ -92,7 +92,7 @@ Azure 구독 이름은 청구 계정 유형("종량제", "기업 계약" 등)을
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>질문: 연간 및 월간 클라우드 구독 간의 차이는?
 
-답변: 월별 클라우드 구독에는 Visual Studio 외에 VSTS 및 TFS의 사용이 포함됩니다. 연간 클라우드 구독도 마찬가지지만 또한 개발 및 테스트를 위해 설치하고 실행할 Windows와 기타 Microsoft 소프트웨어의 사용, Azure 서비스를 사용한 실험에 대해 사용할 월간 Azure 크레딧 그리고 클라우드, 교육, 지원 등에서 개발 및 테스트 수행을 포함한 구독자 혜택이 포함됩니다.
+답변: 월별 클라우드 구독에는 Visual Studio 외에 Azure DevOps Services 및 TFS의 사용이 포함됩니다. 연간 클라우드 구독도 마찬가지지만 또한 개발 및 테스트를 위해 설치하고 실행할 Windows와 기타 Microsoft 소프트웨어의 사용, Azure 서비스를 사용한 실험에 대해 사용할 월간 Azure 크레딧 그리고 클라우드, 교육, 지원 등에서 개발 및 테스트 수행을 포함한 구독자 혜택이 포함됩니다.
 [클라우드 구독 혜택 및 가격 비교](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>질문: Visual Studio 클라우드 구독을 구매하는 경우 새 버전의 Visual Studio를 얻을 수 있습니까?

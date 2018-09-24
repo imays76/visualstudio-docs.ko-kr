@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180115"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321062"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
 
@@ -42,8 +42,7 @@ Visual Studio 테스트 도구를 사용하면 사용자와 팀이 수준 높은
 
 ## <a name="related-scenarios"></a>관련 시나리오
 
-* [예비 및 수동 테스트(VSTS)](/vsts/manual-test/)
-* [부하 테스트(VSTS)](/vsts/load-test/index)
-* [지속적인 테스트(VSTS)](/vsts/build-release/test/index)
-* [eam Services 및 TFS에 대한 DevOps 개요](/vsts/user-guide/devops-alm-overview)
+* [예비 및 수동 테스트(Azure Test Plans)](/azure/devops/test/index?view=vsts)
+* [부하 테스트(Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
+* [지속적인 테스트(Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [코드 분석 도구](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

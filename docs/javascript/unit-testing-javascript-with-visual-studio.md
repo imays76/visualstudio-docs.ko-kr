@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924793"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776095"
 ---
 # <a name="unit-testing-in-nodejs"></a>Node.js의 단위 테스트
 
@@ -137,7 +137,7 @@ JavaScript를 사용하여 검색 및 실행 논리를 구현하여 추가 테�
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
 
-이 폴더는 다음 2개의 함수를 내보내는 동일한 이름의 JavaScript 파일을 포함해야 합니다.
+이 폴더는 다음 두 함수를 내보내는 동일한 이름의 JavaScript 파일을 포함해야 합니다.
 
 * `find_tests`
 * `run_tests`
@@ -147,3 +147,24 @@ JavaScript를 사용하여 검색 및 실행 논리를 구현하여 추가 테�
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 사용 가능한 테스트 프레임워크의 검색이 Visual Studio 시작 시 발생합니다. Visual Studio가 실행되는 동안 프레임워크가 추가되는 경우 프레임워크를 검색하도록 Visual Studio를 다시 시작합니다. 단, 구현을 변경하는 경우에는 다시 시작할 필요가 없습니다.
+
+## <a name="unit-tests-in-other-project-types"></a>다른 프로젝트 형식의 단위 테스트
+단위 테스트는 Node.js 프로젝트에만 작성하도록 제한되지 않습니다. TestFramework 및 TestRoot 속성을 C# 또는 VB 프로젝트에 추가하면 해당 테스트가 열거되므로 테스트 탐색기 창을 사용하여 실행할 수 있습니다.
+
+이렇게 하려면 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택한 후 **프로젝트 편집**을 선택합니다. 그런 다음, 프로젝트 파일에서 다음 두 요소를 속성 그룹에 추가합니다.
+
+> [!NOTE]
+> 요소를 추가하는 속성 그룹에는 조건이 지정되지 않아야 합니다.
+> 조건이 지정되면 예기치 않은 동작이 발생할 수 있습니다.
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+다음으로, 지정한 테스트 루트 폴더에 테스트를 추가하면 테스트 탐색기 창에서 실행할 수 있습니다. 처음에 표시되지 않는 경우 프로젝트를 다시 빌드해야 할 수 있습니다.
+
+> [!NOTE]
+> 이 기능은 현재 .NET Standard 및 .NET Core 프로젝트에서 작동하지 않습니다.

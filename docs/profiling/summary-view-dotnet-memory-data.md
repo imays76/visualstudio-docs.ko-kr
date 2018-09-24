@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 174f8612dd4f0678d8bbdc8be5c6a9b37cfc8b61
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 98b56eece1a51db94482a0a58d54ca877e47e0c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669361"
 ---
 # <a name="summary-view---net-memory-data"></a>요약 뷰 - .NET 메모리 데이터
 요약 뷰에는 .NET 함수 및 메모리를 가장 많이 할당한 형식과 프로파일링 실행에서 가장 여러 번 생성된 형식에 대한 정보가 표시됩니다. 알림 링크 및 보고서 목록에 대한 설명을 비롯한 자세한 내용은 [요약 뷰](../profiling/summary-view.md)를 참조하세요.  
@@ -49,5 +50,5 @@ ms.lasthandoff: 04/19/2018
 |**인스턴스 %**|프로파일링 실행에서 생성된 이 형식의 인스턴스인 .NET 개체의 총 수 백분율입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [요약 뷰](../profiling/summary-view-sampling-data.md)   
- [요약 뷰](../profiling/summary-view-instrumentation-data.md)
+ [요약 뷰 - 샘플링 데이터](../profiling/summary-view-sampling-data.md)   
+ [요약 뷰 - 계측 데이터](../profiling/summary-view-instrumentation-data.md)

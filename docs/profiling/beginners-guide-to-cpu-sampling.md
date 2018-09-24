@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573182"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669412"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 샘플링 초보자를 위한 지침
 Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성능 문제를 분석할 수 있습니다. 다음 절차에서는 **샘플링** 데이터 사용 방법을 보여 줍니다.
@@ -41,7 +41,7 @@ Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성�
 ## <a name="create-and-run-a-performance-session"></a>성능 세션 만들기 및 실행  
  분석이 필요한 데이터를 가져오려면 먼저 성능 세션을 만든 후 세션을 실행해야 합니다. **성능 마법사**로 두 작업을 모두 수행할 수 있습니다.  
   
- Windows 데스크톱 앱 또는 ASP.NET 앱을 프로파일링하지 않는 경우 다른 프로파일링 도구 중 하나를 사용해야 합니다. [프로파일링 도구 살펴보기](../profiling/profiling-tools.md)를 참조하세요.  
+ Windows 데스크톱 앱 또는 ASP.NET 앱을 프로파일링하지 않는 경우 다른 프로파일링 도구 중 하나를 사용해야 합니다. [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)를 참조하세요.  
   
 #### <a name="to-create-and-run-a-performance-session"></a>성능 세션을 만들고 실행하려면  
   
@@ -129,4 +129,4 @@ Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성�
  [시작](../profiling/getting-started-with-performance-tools.md)   
  [개요](../profiling/overviews-performance-tools.md)  
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

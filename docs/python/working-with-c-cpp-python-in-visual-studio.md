@@ -1,7 +1,7 @@
 ---
 title: C++ 및 Python 작업
-description: 혼합 모드 디버깅을 비롯하여 Visual Studio를 사용하여 Python에 대한 C++ 확장을 만드는 연습 과정입니다.
-ms.date: 06/27/2018
+description: 혼합 모드 디버깅을 비롯하여 Visual Studio, CPython 및 PyBind11을 사용하여 Python에 대한 C++ 확장을 만드는 연습 과정입니다.
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626542"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995978"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python용 C++ 확장 만들기
 
@@ -28,7 +28,12 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
 
 이 문서에서는 쌍곡 탄젠트를 계산하고 Python 코드에서 호출하는 CPython용 C++ 확장을 빌드하는 방법에 대해 설명합니다. C++에서 동일한 루틴을 구현할 경우의 관련된 성능 향상을 보여 주기 위해 Python에서 먼저 루틴을 구현합니다.
 
-여기에서 사용된 방법은 [Python 설명서](https://docs.python.org/3/c-api/)에 설명된 대로 표준 CPython 확장용입니다. 이 방법과 다른 방법의 비교는 이 문서의 끝에 있는 [대체 방법](#alternative-approaches)에 설명되어 있습니다.
+이 문서에는 Python에서 C++를 사용할 수 있도록 만드는 두 가지 방법을 보여 줍니다.
+
+- [Python 설명서](https://docs.python.org/3/c-api/)에 설명된 표준 CPython 확장
+- 단순성 때문에 C++ 11에 권장되는 [PyBind11](https://github.com/pybind/pybind11).
+
+이 방법과 다른 방법의 비교는 이 문서의 끝에 있는 [대체 방법](#alternative-approaches)에 있습니다.
 
 이 연습에서 완료된 샘플은 [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension)(GitHub)에서 찾을 수 있습니다.
 
@@ -72,15 +77,6 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
         tanh_x = sinh(x) / cosh(x)
         return tanh_x
 
-    def sequence_tanh(data):
-        '''Applies the hyperbolic tangent function to map all values in
-        the sequence to a value between -1.0 and 1.0.
-        '''
-        result = []
-        for x in data:
-            result.append(tanh(x))
-        return result
-
     def test(fn, name):
         start = perf_counter()
         result = fn(DATA)
@@ -93,18 +89,21 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
     if __name__ == "__main__":
         print('Running benchmarks with COUNT = {}'.format(COUNT))
 
-        test(sequence_tanh, 'sequence_tanh')
-
-        test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
+        test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
     ```
 
-1. **디버그** > **디버깅하지 않고 시작**(**Ctrl**+**F5**)을 사용하여 프로그램을 실행하고 결과를 확인합니다. `COUNT` 변수를 조정하여 벤치 마크를 실행할 시간을 변경할 수 있습니다. 이 연습의 목적을 위해 벤치마크마다 약 2초가 걸리도록 수를 설정합니다.
+1. **디버그** > **디버깅하지 않고 시작**(**Ctrl**+**F5**)을 사용하여 프로그램을 실행하고 결과를 확인합니다. `COUNT` 변수를 조정하여 벤치 마크를 실행할 시간을 변경할 수 있습니다. 이 연습의 목적을 위해 벤치마크에 약 2초가 걸리도록 수를 설정합니다.
 
-## <a name="create-the-core-c-project"></a>핵심 C++ 프로젝트 만들기
+> [!TIP]
+> 벤치 마크를 실행할 때는 항상 **디버깅** > **디버깅하지 않고 시작**을 사용하여 Visual Studio 디버거 내에서 코드를 실행할 때 발생하는 오버헤드를 방지합니다.
+
+## <a name="create-the-core-c-projects"></a>핵심 C++ 프로젝트 만들기
+
+"superfastcode" 및 "superfastcode2"라는 두 개의 동일한 C++ 프로젝트를 만들려면 이 섹션의 지침을 따릅니다. 나중에 각 프로젝트에서 다른 방법을 사용하여 Python에 C++ 코드를 공개할 수 있습니다.
 
 1. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다. Visual Studio 솔루션은 Python 및 C++ 프로젝트를 모두 함께 포함합니다(Python용 Visual Studio 사용에 대한 이점 중 하나).
 
-1. “C++”를 검색하고, **빈 프로젝트**를 선택하고, 이름을 지정한 다음(이 문서에서는 “superfastcode” 사용) **확인**을 선택합니다.
+1. "C++"를 검색하고, **빈 프로젝트**를 선택하고, 이름을 "superfastcode"(두 번째 프로젝트는 "superfastcode2")로 지정하고 **확인**을 선택합니다.
 
     > [!Tip]
     > Visual Studio 2017에 설치된 **Python 네이티브 개발 도구**를 사용하면 아래 설명된 내용이 이미 많이 포함되어 있는 **Python 확장 모듈** 템플릿으로 시작할 수 있습니다. 그러나 이 연습에서는 빈 프로젝트로 시작하여 확장 모듈 빌드를 단계별로 보여 줍니다. 프로세스를 이해하고 나면 사용자 고유의 확장을 작성할 때 템플릿으로 시간을 절약할 수 있습니다.
@@ -163,15 +162,21 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
 
 1. C++ 프로젝트를 다시 빌드하여 코드가 올바른지 확인합니다.
 
-## <a name="convert-the-c-project-to-an-extension-for-python"></a>C++ 프로젝트를 Python용 확장으로 변환
+1. 아직 만들지 않았다면 위의 단계를 반복하여 동일한 콘텐츠의 "superfastcode2"라는 두 번째 프로젝트를 만듭니다.
+
+## <a name="convert-the-c-projects-to-extensions-for-python"></a>C++ 프로젝트를 Python용 확장으로 변환
 
 C++ DLL을 Python용 확장으로 만들려면 먼저 내보낸 메서드를 Python 형식과 상호 작용하도록 수정해야 합니다. 그런 다음 모듈의 메서드 정의와 함께 모듈을 내보내는 함수를 추가해야 합니다.
+
+이어지는 섹션에서는 CPython 확장과 PyBind11을 사용하여 이러한 단계를 수행하는 방법에 대해 설명합니다.
+
+### <a name="cpython-extensions"></a>CPython 확장
 
 Python 3.x에 대해 이 섹션에 표시된 기능의 배경은 [Python/C API 참조 설명서](https://docs.python.org/3/c-api/index.html) 및 특히 python.org에 있는 [모듈 개체](https://docs.python.org/3/c-api/module.html)를 참조하세요(올바른 설명서를 보려면 오른쪽 위에 있는 드롭다운 컨트롤에서 Python의 버전을 선택해야 함).
 
 Python 2.7로 작업하는 경우 [Extending Python 2.7 with C or C++](https://docs.python.org/2.7/extending/extending.html)(C 또는 C++를 사용하여 Python 2.7 확장) 및 [Porting Extension Modules to Python 3](https://docs.python.org/2.7/howto/cporting.html)(확장 모듈을 Python 3에 이식) (python.org)을 참조하세요.
 
-1. C++ 파일의 맨 위에 *Python.h*를 포함합니다.
+1. *module.cpp*의 맨 위에 *Python.h*를 포함시킵니다.
 
     ```cpp
     #include <Python.h>
@@ -220,20 +225,59 @@ Python 2.7로 작업하는 경우 [Extending Python 2.7 with C or C++](https://d
     }
     ```
 
-1. 대상 구성을 **릴리스**로 설정하고 C++ 프로젝트를 다시 빌드하여 코드를 확인합니다. 오류가 발생하면 다음과 같은 경우를 확인합니다.
-    - *Python.h*를 찾을 수 없음(**E1696: 소스 파일 “Python.h”를 열 수 없음** 및/또는 **C1083: “Python.h” 포함 파일을 열 수 없음: 해당 파일 또는 디렉터리 없음**): 프로젝트 속성의 **C/C++** > **일반** > **추가 포함 디렉터리**의 경로가 Python 설치의 *include* 폴더로 설정되어 있는지 확인합니다. [핵심 C++ 프로젝트 만들기](#create-the-core-c-project)의 6단계를 참조하세요.
-    - Python 라이브러리를 찾을 수 없음: 프로젝트 속성에서 **링커** > **일반** > **추가 라이브러리 디렉터리**의 경로가 Python 설치의 *libs* 폴더를 가리키는지 확인합니다. [핵심 C++ 프로젝트 만들기](#create-the-core-c-project)의 6단계를 참조하세요.
-    - 대상 아키텍처와 관련된 링커 오류: C++ 대상 프로젝트 아키텍처를 Python 설치에 맞게 변경합니다. 예를 들어 C++ 프로젝트에서 x64를 대상으로 지정하지만 Python 설치가 x86인 경우 C++ 프로젝트를 변경하여 x86을 대상으로 지정합니다.
+1. 대상 구성을 **릴리스**로 설정하고 C++ 프로젝트를 다시 빌드하여 코드를 확인합니다. 오류가 발생할 경우 아래의 [문제 해결](#troubleshooting) 섹션을 참조하세요.
+
+### <a name="pybind11"></a>PyBind11
+
+이전 섹션에서 단계를 완료한 경우 C++ 코드에 필요한 모듈 구조체를 만들기 위해 많은 상용구 코드를 사용했음을 알 수 있습니다. PyBind11에서는 C++ 헤더 파일에서 훨씬 적은 코드를 사용하여 동일한 결과를 달성하는 매크로를 통해 프로세스를 간소화합니다. 이 섹션에 나온 배경 지식은 [PyBind11 기본](https://github.com/pybind/pybind11/blob/master/docs/basics.rst)(github.com)을 참조하세요.
+
+1. pip(`pip install pybind11` 또는 `py -m pip install pybind11`)를 사용하여 PyBind11을 설치합니다.
+
+1. *module.cpp*의 맨 위에 *pybind11.h*를 포함시킵니다.
+
+    ```cpp
+    #include <pybind11/pybind11.h>
+    ```
+
+1. *module.cpp*의 맨 아래에서 `PYBIND11_MODULE` 매크로를 사용하여 C++ 함수에 대한 진입점을 정의합니다.
+
+    ```cpp
+    namespace py = pybind11;
+
+    PYBIND11_MODULE(superfastcode2, m) {
+        m.def("fast_tanh2", &tanh_impl, R"pbdoc(
+            Compute a hyperbolic tangent of a single argument expressed in radians.
+        )pbdoc");
+
+    #ifdef VERSION_INFO
+        m.attr("__version__") = VERSION_INFO;
+    #else
+        m.attr("__version__") = "dev";
+    #endif
+    }
+    ```
+
+1. 대상 구성을 **릴리스**로 설정하고 C++ 프로젝트를 빌드하여 코드를 확인합니다. 오류가 발생할 경우 다음의 문제 해결 섹션을 참조하세요.
+
+### <a name="troubleshooting"></a>문제 해결
+
+C++ 모듈은 다음과 같은 이유로 컴파일에 실패할 수 있습니다.
+
+- *Python.h*를 찾을 수 없음(**E1696: 소스 파일 “Python.h”를 열 수 없음** 및/또는 **C1083: “Python.h” 포함 파일을 열 수 없음: 해당 파일 또는 디렉터리 없음**): 프로젝트 속성의 **C/C++** > **일반** > **추가 포함 디렉터리**의 경로가 Python 설치의 *include* 폴더로 설정되어 있는지 확인합니다. [핵심 C++ 프로젝트 만들기](#create-the-core-c-project)의 6단계를 참조하세요.
+
+- Python 라이브러리를 찾을 수 없음: 프로젝트 속성에서 **링커** > **일반** > **추가 라이브러리 디렉터리**의 경로가 Python 설치의 *libs* 폴더를 가리키는지 확인합니다. [핵심 C++ 프로젝트 만들기](#create-the-core-c-project)의 6단계를 참조하세요.
+
+- 대상 아키텍처와 관련된 링커 오류: C++ 대상 프로젝트 아키텍처를 Python 설치에 맞게 변경합니다. 예를 들어 C++ 프로젝트에서 x64를 대상으로 지정하지만 Python 설치가 x86인 경우 C++ 프로젝트를 변경하여 x86을 대상으로 지정합니다.
 
 ## <a name="test-the-code-and-compare-the-results"></a>코드를 테스트하고 결과 비교
 
-DLL을 Python 확장으로 구조화했으므로 Python 프로젝트에서 참조하고, 모듈을 가져오며 해당 메서드를 사용할 수 있습니다.
+DLL을 Python 확장으로 구조화했으므로 Python 프로젝트에서 이를 참조하고, 모듈을 가져오고, 해당 메서드를 사용할 수 있습니다.
 
 ### <a name="make-the-dll-available-to-python"></a>Python에서 DLL을 사용할 수 있도록 설정
 
 Python에서 DLL을 사용할 수 있도록 설정하는 방법은 두 가지가 있습니다.
 
-Python 프로젝트와 C++ 프로젝트가 같은 솔루션에 있는 경우 첫 번째 방법을 사용할 수 있습니다. **솔루션 탐색기**로 이동하여 Python 프로젝트에서 **참조** 노드를 마우스 오른쪽 단추로 클릭한 다음, **참조 추가**를 선택합니다. 나타나는 대화 상자에서 **프로젝트** 탭을 선택하고 **superfastcode** 프로젝트(또는 사용 중인 이름)를 선택한 다음 **확인**을 선택합니다.
+Python 프로젝트와 C++ 프로젝트가 같은 솔루션에 있는 경우 첫 번째 방법을 사용할 수 있습니다. **솔루션 탐색기**로 이동하여 Python 프로젝트에서 **참조** 노드를 마우스 오른쪽 단추로 클릭한 다음, **참조 추가**를 선택합니다. 표시되는 대화 상자에서 **프로젝트** 탭을 선택하고 **superfastcode**와 **superfastcode2** 프로젝트를 모두 선택한 다음, **확인**을 선택합니다.
 
 ![superfastcode 프로젝트에 참조 추가](media/cpp-add-reference.png)
 
@@ -241,7 +285,9 @@ Python 프로젝트와 C++ 프로젝트가 같은 솔루션에 있는 경우 첫
 
 1. Visual Studio 2017을 사용하고 있는 경우 Visual Studio 설치 관리자를 실행하고 **수정**을 선택한 다음, **개별 구성 요소** > **컴파일러, 빌드 도구 및 런타임** > **Visual C++ 2015.3 v140 도구 집합**을 선택합니다. 이 단계가 필요한 이유는 Python(Windows용) 자체는 Visual Studio 2015(버전 14.0)로 빌드되며 여기에 설명된 메서드를 통해 확장을 빌드할 경우 이러한 도구를 사용할 수 있다고 예상하기 때문입니다. (Python의 32비트 버전을 설치하고 DLL 대상을 x64가 아닌 Win32로 지정해야 할 수 있습니다.)
 
-1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택하여 C++ 프로젝트에서 *setup.py*라는 파일을 만듭니다. 그런 다음, **C++ 파일(.cpp)** 을 선택하고 파일 이름을 `setup.py`로 변경한 다음, **확인**을 선택합니다(*.py* 확장명을 사용하여 파일 이름을 지정하면 C++ 파일 템플릿을 사용해도 Visual Studio에서 Python으로 인식함). 편집기에 파일이 표시되면 다음 코드를 붙여넣습니다.
+1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택하여 C++ 프로젝트에서 *setup.py*라는 파일을 만듭니다. 그런 다음, **C++ 파일(.cpp)** 을 선택하고 파일 이름을 `setup.py`로 변경한 다음, **확인**을 선택합니다(*.py* 확장명을 사용하여 파일 이름을 지정하면 C++ 파일 템플릿을 사용해도 Visual Studio에서 Python으로 인식함). 편집기에 파일이 표시되면 확장 메서드에 적절하게 다음 코드를 붙여넣습니다.
+
+    **CPython 확장(superfastcode 프로젝트):**
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -256,41 +302,78 @@ Python 프로젝트와 C++ 프로젝트가 같은 솔루션에 있는 경우 첫
 
     이 스크립트에 대한 설명서는 [C 및 C++ 확장 빌드](https://docs.python.org/3/extending/building.html)(python.org)를 참조하세요.
 
+    **PyBind11(superfastcode2 프로젝트):**
+
+    ```python
+    import os, sys
+
+    from distutils.core import setup, Extension
+    from distutils import sysconfig
+
+    cpp_args = ['-std=c++11', '-stdlib=libc++', '-mmacosx-version-min=10.7']
+
+    sfc_module = Extension(
+        'superfastcode2', sources = ['module.cpp'],
+        include_dirs=['pybind11/include'],
+        language='c++',
+        extra_compile_args = cpp_args,
+        )
+
+    setup(
+        name = 'superfastcode2',
+        version = '1.0',    
+        description = 'Python package with superfastcode2 C++ extension (PyBind11)',
+        ext_modules = [sfc_module],
+    )
+    ```
+
 1. *setup.py* 코드는 명령줄에서 사용되는 경우 Visual Studio 2015 C++ 도구 집합을 사용하여 확장을 빌드하도록 Python에 지시합니다. 관리자 권한 명령 프롬프트를 열고 C++ 프로젝트를 포함하는 폴더(즉, *setup.py*를 포함하는 폴더)로 이동한 후 다음 명령을 입력합니다.
 
     ```command
     pip install .
     ```
 
+    또는
+
+    ```command
+    py -m pip install .
+    ```
+
 ### <a name="call-the-dll-from-python"></a>Python에서 DLL 호출
 
-위의 방법 중 하나를 완료하면 이제 Python 코드에서 `fast_tanh` 함수를 호출하고, 해당 성능을 Python 구현과 비교할 수 있습니다.
+이전 섹션에서 설명한 대로 Python에 사용할 수 있는 DLL을 만들었으면 이제 Python 코드에서 `superfastcode.fast_tanh` 및 `superfastcode2.fast_tanh2` 함수를 호출하여 Python 구현과 성능을 비교할 수 있습니다.
 
-1. *.py* 파일에 다음 줄을 추가하여 DLL에서 가져온 `fast_tanh` 메서드를 호출하고 출력을 표시합니다.
+1. *.py* 파일에 다음 줄을 추가하여 DLL에서 가져온 메서드를 호출하고 출력을 표시합니다.
 
     ```python
     from superfastcode import fast_tanh
-    test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
+    test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d] (CPython C++ extension)')
+
+    from superfastcode2 import fast_tanh2
+    test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (PyBind11 C++ extension)')
     ```
 
-1. Python 프로그램을 실행하고(**디버그** > **디버깅하지 않고 시작** 또는 **Ctrl**+**F5**) C++ 루틴이 Python 구현보다 5~20배 빠르게 실행되는지 확인합니다. 일반적인 출력은 다음과 같습니다.
+1. Python 프로그램을 실행하고(**디버깅** > **디버깅하지 않고 시작** 또는 **Ctrl**+**F5**) C++ 루틴이 Python 구현보다 대략 5~20배 빠르게 실행되는지 확인합니다. 일반적인 출력은 다음과 같습니다.
 
     ```output
     Running benchmarks with COUNT = 500000
-    sequence_tanh took 1.542 seconds
+    [tanh(x) for x in d] (Python implementation) took 0.758 seconds
 
-    [tanh(x) for x in d] took 1.087 seconds
+    [fast_tanh(x) for x in d] (CPython C++ extension) took 0.076 seconds
 
-    [fast_tanh(x) for x in d] took 0.158 seconds
+    [fast_tanh2(x) for x in d] (PyBind11 C++ extension) took 0.204 seconds
     ```
 
     **디버깅하지 않고 시작** 명령이 비활성화된 경우 **솔루션 탐색기**에서 Python 프로젝트를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 선택합니다.
 
 1. 차이가 더 분명해지도록 `COUNT` 변수를 늘려 보세요. 또한 **디버그** 빌드는 덜 최적화되고 다양한 오류 검사를 포함하기 때문에 C++ 모듈의 **디버그** 빌드가 **릴리스** 빌드보다 더 느리게 실행됩니다. 그러한 구성을 자유롭게 전환하여 비교해 보세요.
 
+> [!NOTE]
+> 출력에서 보면 직접 Python 구현하는 것보다는 훨씬 빠르지만 PyBind11 확장이 CPython 확장 만큼 빠르지 않음을 알 수 있습니다. 해당 C++ 인터페이스를 더 간단하게 만들기 위해 PyBind11에서 도입한 호출당 오버헤드의 양이 적기 때문에 차이가 발생합니다. 이 호출별 차이점은 실제로는 상당히 미미합니다. 여기에 표시된 결과는 테스트 코드가 확장 함수를 500,000번 호출하기 때문에 오버헤드를 크게 확대합니다. 일반적으로 C++ 함수는 여기에서 사용된 간단한 `fast_tanh[2]` 메서드보다 훨씬 많은 작업을 수행하므로 오버헤드가 발생해도 중요하지 않습니다. 그러나 초당 수천 번 호출될 수 있는 메서드를 구현하는 경우 CPython 방식을 사용하면PyBind11보다 성능이 향상될 수 있습니다.
+
 ## <a name="debug-the-c-code"></a>C++ 코드 디버그
 
-Visual Studio는 디버깅 Python 및 C++ 코드를 함께 지원합니다.
+Visual Studio는 디버깅 Python 및 C++ 코드를 함께 지원합니다. 이 섹션에서는 **superfastcode** 프로젝트를 사용하여 프로세스를 설명하며, 단계는 **superfastcode2** 프로젝트에서도 동일합니다.
 
 1. **솔루션 탐색기**에서 Python 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**, **디버그** 탭을 차례로 선택한 다음, **디버그** > **네이티브 코드 디버깅 사용** 옵션을 선택합니다.
 
@@ -313,12 +396,12 @@ Visual Studio는 디버깅 Python 및 C++ 코드를 함께 지원합니다.
 
 ## <a name="alternative-approaches"></a>대체 방법
 
-아래 표에 설명된 대로 다른 방법으로 Python 확장을 만들 수 있습니다. CPython에 대한 첫 번째 항목은 이 항목에서 이미 설명했습니다.
+아래 표에 설명된 대로 다른 방법으로 Python 확장을 만들 수 있습니다. CPython 및 PyBind11에 대한 처음 두 항목은 이 문서에서 이미 설명했습니다.
 
 | 방법 | 연도 | 담당자 | 장점 | 단점 |
 | --- | --- | --- | --- | --- |
 | CPython용 C/C++ 확장 모듈 | 1991 | 표준 라이브러리 | [광범위한 설명서 및 자습서](https://docs.python.org/3/c-api/). 전체 제어. | 컴파일, 이식성, 참조 관리. 높은 C 지식. |
-| [pybind11](https://github.com/pybind/pybind11)(C++에 권장됨) | 2015 |  | 기존 C++ 코드의 Python 바인딩을 만드는 간단한 헤더 전용 라이브러리. 약간의 종속성. PyPy 호환성. | 더 새롭고 완성도 낮음. C++11 기능 사용 빈도 높음. 몇 가지 지원되는 컴파일러(Visual Studio 포함). |
+| [PyBind11](https://github.com/pybind/pybind11)(C++에 권장됨) | 2015 |  | 기존 C++ 코드의 Python 바인딩을 만드는 간단한 헤더 전용 라이브러리. 약간의 종속성. PyPy 호환성. | 더 새롭고 완성도 낮음. C++11 기능 사용 빈도 높음. 몇 가지 지원되는 컴파일러(Visual Studio 포함). |
 | Cython(C에 권장됨) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Python과 유사. 높은 완성도. 고성능. | 컴파일, 새 구문 및 새 도구 체인. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | 모든 C++ 컴파일러와 작동. | 대규모의 복잡한 라이브러리 모음으로 이전 컴파일러에 대한 많은 대안을 포함. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 컴파일 안 함, 광범위한 가용성. | 번거로운 C 구조체 액세스 및 변경과 오류 발생 가능성. |

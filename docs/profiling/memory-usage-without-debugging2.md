@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669420"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Visual Studio 디버거 없이 메모리 사용 분석
 디버그하지 않고 **메모리 사용량** 도구를 사용하여 다음을 수행할 수 있습니다.  
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/17/2018
   
  이 항목에서는 메모리 사용량 도구를 사용하여 UWP XAML 앱을 분석하는 방법에 대해 설명합니다. JavaScript 및 HTML을 사용하는 UWP 앱에서 메모리 사용을 분석하려는 경우 [메모리 사용 분석(JavaScript)](../profiling/javascript-memory.md)을 참조하세요.  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> 메모리 사용량 진단 세션 시작  
+## <a name="start-a-memory-usage-diagnostic-session"></a>메모리 사용량 진단 세션 시작  
   
 1.  Visual Studio에서 C# 유니버설 Windows 프로젝트를 엽니다.  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/17/2018
   
      ![메모리 사용량 진단 세션 시작](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a> 메모리 사용 모니터링  
+## <a name="monitor-memory-use"></a>메모리 사용량 모니터링  
  **메모리 사용량** 도구로 문제를 찾아서 해결할 수 있는 상세 보고서를 생성할 수 있지만, 이 도구를 사용하여 적극적으로 개발 중인 시나리오에 대한 실시간 메모리 영향을 연구할 수도 있습니다.  
   
  진단 세션을 시작하면 앱이 시작되고 **진단 도구** 창에 앱의 메모리 사용에 대한 타임라인 그래프가 표시됩니다.  
@@ -55,12 +56,12 @@ ms.lasthandoff: 05/17/2018
   
  보고서를 생성하지 않고 모니터링 세션을 중지하려면 진단 창을 닫기만 하면 됩니다. 메모리 스냅숏을 만들 때 보고서를 생성하려면 **중지**를 선택합니다.  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> 앱의 메모리 상태 스냅숏 만들기  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>앱의 메모리 상태 스냅숏 만들기  
  조사할 메모리 관련 문제를 발견하면 진단 세션이 진행되는 동안 스냅숏을 만들어서 특정 순간의 메모리 개체를 캡처할 수 있습니다. 앱에서 무수히 많은 개체 유형을 사용하므로 시나리오 하나에 대한 분석에 집중하려고 할 수 있습니다. 또한 메모리 문제가 나타나기 전 앱의 기본 스냅숏을 만들거나, 첫 번째 문제가 발생한 이후의 다른 스냅숏을 만들거나, 시나리오를 반복할 수 있는 경우 하나 이상의 추가 스냅숏을 만드는 것도 좋습니다.  
   
  스냅숏을 수집하려면 새로운 진단 세션을 시작합니다. 메모리 데이터를 캡처하려는 경우 **스냅숏 만들기**를 선택합니다. 보고서를 생성하려면 **중지**를 선택합니다.  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a> 메모리 사용량 개요 페이지  
+##  <a name="memory-usage-overview-page"></a>메모리 사용량 개요 페이지  
  데이터 컬렉션을 중지한 후 메모리 사용량 도구에서 앱을 중지하고 개요 보고서를 표시합니다.  
   
  ![메모리 사용량 개요 페이지](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -68,9 +69,9 @@ ms.lasthandoff: 05/17/2018
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> 메모리 사용량 스냅숏 뷰  
  스냅숏 뷰를 사용하여 새 Visual Studio 창에서 자세한 보고서를 엽니다. 다음과 같은 두 종류의 스냅숏 뷰가 있습니다.  
   
--   [스냅숏 정보 보고서](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports)에서는 한 스냅숏의 형식 및 인스턴스를 보여 줍니다.  
+-   [스냅숏 정보 보고서](#snapshot-reports)에서는 한 스냅숏의 형식 및 인스턴스를 보여 줍니다.  
   
--   [스냅숏 차이(diff) 보고서](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports)에서는 두 스냅숏의 형식 및 인스턴스를 비교합니다.  
+-   [스냅숏 차이(diff) 보고서](#snapshot-difference-diff-reports)에서는 두 스냅숏의 형식 및 인스턴스를 비교합니다.  
   
  ![스냅숏 보기 링크](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 05/17/2018
 |![3단계](../profiling/media/procguid_3.png "ProcGuid_3")|링크 텍스트는 현재 이 스냅숏의 총 메모리 개체 크기와 이전 스냅숏의 총 크기 간의 차이를 보여 줍니다.<br /><br /> 이 스냅숏의 메모리 크기가 이전 스냅숏보다 크면 링크 텍스트는 양수이고 작으면 음수입니다. 링크 텍스트 **기본**은 이 스냅숏이 진단 세션의 첫 번째 스냅숏임을 나타냅니다. **차이 없음**은 차이가 0임을 나타냅니다.<br /><br /> 이 링크를 선택하면 유형 인스턴스의 총 크기 차이별로 정렬된 스냅숏 차이 보고서가 표시됩니다.|  
 |![4단계](../profiling/media/procguid_4.png "ProcGuid_4")|링크 텍스트는 이 스냅숏의 총 메모리 개체 수와 이전 스냅숏의 개체 수 간의 차이를 보여 줍니다.<br /><br /> 이 링크를 선택하면 유형 인스턴스의 총 개수 차이별로 정렬된 스냅숏 차이 보고서가 표시됩니다.|  
   
-##  <a name="BKMK_Snapshot_reports"></a> 스냅숏 보고서  
+## <a name="snapshot-reports"></a>스냅숏 보고서  
  ![메모리 사용량 스냅숏 보고서](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a> 스냅숏 보고서 트리  
@@ -118,7 +119,7 @@ ms.lasthandoff: 05/17/2018
 ####  <a name="BKMK_Just_My_Code"></a> 내 코드만  
  **내 코드만** 필터는 외부 코드로 생성된 인스턴스를 대부분 숨깁니다. 외부 유형은 운영 체제 또는 프레임워크 구성 요소에서 소유하거나 컴파일러에서 생성합니다.  
   
-##  <a name="BKMK_Snapshot_details_reports"></a> 스냅숏 정보 보고서  
+## <a name="snapshot-details-reports"></a>스냅숏 정보 보고서  
  스냅숏 정보 보고서를 사용하여 진단 세션에서 스냅숏 하나에만 집중합니다. 정보 보고서를 열려면 다음 그림과 같이 스냅숏 뷰에서 링크 중 하나를 선택합니다. 두 링크 모두 동일한 보고서를 열지만, 보고서에서 **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 두 경우 모두 보고서를 열고 나서 정렬 순서를 변경할 수 있습니다.  
   
  ![스냅숏 뷰의 스냅숏 보고서 링크](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -157,7 +158,7 @@ ms.lasthandoff: 05/17/2018
 |**크기(바이트)**|유형의 경우 유형에 포함된 개체 크기를 제외한 유형의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 개체에 포함된 개체 크기를 제외한 개체 크기입니다.|  
 |**포함 크기(바이트)**|포함된 개체의 크기를 비롯한 유형의 총 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a> 스냅숏 차이(diff) 보고서  
+## <a name="snapshot-difference-diff-reports"></a>스냅숏 차이(diff) 보고서  
  스냅숏 차이(diff) 보고서는 기본 스냅숏과 기본 스냅숏 바로 직전에 만든 스냅숏 간의 변경 사항을 보여 줍니다. 차이 보고서를 열려면 다음 그림과 같이 스냅숏 뷰에서 링크 중 하나를 선택합니다. 두 링크 모두 동일한 보고서를 열지만, 보고서에서 **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 보고서를 연 후 정렬 순서를 변경할 수 있습니다.  
   
  ![스냅숏 뷰의 차이 보고서 링크](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
@@ -202,6 +203,6 @@ ms.lasthandoff: 05/17/2018
 ## <a name="see-also"></a>참고 항목  
  [JavaScript 메모리](../profiling/javascript-memory.md)  
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)  
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)  
  [C++, C# 및 Visual Basic을 사용하는 UWP 앱의 성능 모범 사례](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)(Visual Studio에서 새 메모리 사용량 도구로 메모리 문제 진단)

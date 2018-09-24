@@ -9,12 +9,12 @@ description: Visual Studio 구독 포털에서 사용할 수 있는 이점의 �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b06e56116c9cfee203dd74337aefe4551375792d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: fe3bfed2c777f8c7a2bab38619696285e5c5b1f1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282394"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279364"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>구독자 포털 사용 - my.<span></span>visualstudio<span></span>.com
 
@@ -28,7 +28,7 @@ Visual Studio 구독 포털인 [https://my.visualstudio.com](https://my.visualst
 구독에 포함된 도구 및 서비스는 혜택 페이지에 “타일”로 표시됩니다.  모든 혜택이 모든 구독에 포함되는 것은 아닙니다. 타일은 도구, 전문적인 개발 및 지원의 세 가지 범주로 그룹화됩니다.  Visual Studio Dev Essentials를 사용하는 경우 다른 세 개의 범주에서 선택한 혜택을 포함할 수 있는 추천이라는 범주도 표시됩니다.
 
 ### <a name="tools"></a>도구
-도구 범주에서는 Visual Studio IDE, Visual Studio Team Services 및 파트너가 제공하는 도구 등의 핵심 개발 도구를 찾을 수 있습니다.  Azure 및 Visual Studio App Center와 같은 서비스도 표시됩니다.
+도구 범주에서는 Visual Studio IDE, Azure DevOps Services 및 파트너가 제공하는 도구 등의 핵심 개발 도구를 찾을 수 있습니다.  Azure 및 Visual Studio App Center와 같은 서비스도 표시됩니다.
 
 ### <a name="professional-development"></a>전문적인 개발
 이 범주에는 Microsoft 및 파트너의 온라인 교육과 같은 혜택이 포함되고, 개발 기술을 발전시키고 코드에 대한 모든 최신 정보에 뒤떨어지지 않도록 해주는 MSDN Magazine에 대한 구독도 포함됩니다.
@@ -45,7 +45,7 @@ Azure와 관련하여 궁금한 점이 있으세요?  포럼을 통해 Azure 커
 제품 키 페이지를 방문하여 제품을 설치 및 활성화하기 위한 제품 키를 얻고 이미 청구한 키를 확인하세요.  안전한 보관을 위해 모든 키 목록을 내보낼 수도 있습니다.
 
 ## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[구독](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
-구독 페이지는 사용자가 소유한 구독을 확인하고, 구독 간에 전환하고, 구독을 갱신하고, 새 구독을 활성화하는 기능을 제공합니다. Microsoft 계정을 사용하여 액세스하는 구독을 기존 Visual Studio IDE, Visual Studio Team Services 또는 Azure 리소스에 이미 연결된 대체 계정과 연결할 수도 있습니다.
+구독 페이지는 사용자가 소유한 구독을 확인하고, 구독 간에 전환하고, 구독을 갱신하고, 새 구독을 활성화하는 기능을 제공합니다. Microsoft 계정을 사용하여 액세스하는 구독을 기존 Visual Studio IDE, Azure DevOps Services 또는 Azure 리소스에 이미 연결된 대체 계정과 연결할 수도 있습니다.
 
 ## <a name="support"></a>Support(지원)
 
@@ -53,4 +53,4 @@ Azure와 관련하여 궁금한 점이 있으세요?  포럼을 통해 Azure 커
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-Visual Studio 클라우드 구독을 갱신해야 하세요?  Visual Studio 제품군에 대한 최신 확장을 다운로드하고 싶으세요?  Marketplace를 통해 사용자는 Visual Studio Team Services, Team Foundation Server 및 Visual Studio Code를 더욱 효과적으로 만드는 확장, 도구 및 서비스를 찾을 수 있습니다. 게시자가 되고 Marketplace에 자체 확장을 게시할 수도 있습니다.
+Visual Studio 클라우드 구독을 갱신해야 하세요?  Visual Studio 제품군에 대한 최신 확장을 다운로드하고 싶으세요?  Marketplace를 통해 사용자는 Azure DevOps Services, Team Foundation Server 및 Visual Studio Code를 더욱 효과적으로 만드는 확장, 도구 및 서비스를 찾을 수 있습니다. 게시자가 되고 Marketplace에 자체 확장을 게시할 수도 있습니다.

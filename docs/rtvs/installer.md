@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5370a399ba5d66a868f3804106e062c214e4fe30
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2dd23b87bc3d362f7d198cdd0e5d63e0ebac26d5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667056"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Visual Studio용 R 도구 시작
 
@@ -25,7 +26,7 @@ RTVS(Visual Studio용 R 도구)를 설치해 주셔서 감사합니다. 확인�
 ## <a name="resources"></a>자료
 
 - [문서](index.md)
-- [설치 단계](installing-r-tools-for-visual-studio.md)
+- [Visual Studio용 R 도구를 설치하는 방법](installing-r-tools-for-visual-studio.md)
 - [Submit and browse bugs and feature requests on GitHib](https://github.com/Microsoft/RTVS/issues)(GitHub에서 버그 및 기능 제출 및 찾아보기)
 - [Explore and contribute to the source code](https://github.com/Microsoft/RTVS/blob/master/LICENSE)(소스 코드 탐색 및 참여)
 - Github를 사용하지 않고 피드백을 보내려면(권장) Visual Studio에서 **R 도구 > 피드백** 메뉴를 사용하세요.

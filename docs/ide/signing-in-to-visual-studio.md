@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282233"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284187"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
@@ -28,8 +28,7 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
 다음은 로그인 후 예상할 수 있고 수행할 수 있는 작업의 전체 목록입니다.
 
-- 
-  **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 를 참조하세요.
+- **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 를 참조하세요.
 
 - **Visual Studio 설정 동기화** – 아무 장치에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요.
 
@@ -37,9 +36,9 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
 - **Visual Studio 평가 기간 연장** – 평가 기간을 30일로 제한하지 않고 추가로 90일 동안 Visual Studio Professional 또는 Visual Studio Enterprise를 사용할 수 있습니다.
 
-- **MSDN 또는 Visual Studio Team Services 구독과 연결된 계정을 사용하는 경우 Visual Studio를 잠금 해제합니다**. [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)을 참조하세요.
+- **Visual Studio 구독 또는 Azure DevOps Services 조직과 연결된 계정을 사용하는 경우 Visual Studio를 잠금 해제합니다**. [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)을 참조하세요.
 
-- IDE에서 동일한 계정의 자격 증명을 묻는 메시지를 다시 표시하지 않고**Azure 및 Visual Studio Team Services 등의 서비스에 자동으로 연결** 합니다.
+- IDE에서 동일한 계정의 자격 증명을 묻는 메시지를 다시 표시하지 않고 **Azure 및 Azure DevOps Services 등의 서비스에 자동으로 연결**합니다.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio에 로그인하는 방법
 

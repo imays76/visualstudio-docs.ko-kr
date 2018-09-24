@@ -1,7 +1,7 @@
 ---
 title: 원격 Linux 컴퓨터에서 Python 코드 디버깅
 description: 필요한 구성 단계, 보안 및 문제 해결을 포함해서 Visual Studio를 사용하여 원격 Linux 컴퓨터에서 실행 중인 Python 코드를 디버그하는 방법입니다.
-ms.date: 06/26/2018
+ms.date: 09/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341665"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774693"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Linux에서 Python 코드 원격 디버그
 
@@ -126,6 +126,9 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
     | Visual Studio 버전 | Python 도구/ptvsd 버전 |
     | --- | --- |
+    | 2017 15.8 | 4.1.1a9(레거시 디버거: 3.2.1.0) |
+    | 2017 15.7 | 4.1.1a1(레거시 디버거: 3.2.1.0) |
+    | 2017 15.4, 15.5, 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |
     | 2017 15.0, 15.1 | 3.0.0 |

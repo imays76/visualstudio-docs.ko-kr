@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9d2d6c30696636bc8fd2ca571940ac0165eabbcf
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379291"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321049"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>방법: 사용자 지정 진단 데이터 어댑터 설치
 
@@ -46,7 +46,7 @@ ms.locfileid: "39379291"
     > [!NOTE]
     > 진단 데이터 어댑터와 구성 편집기는 동일한 프로젝트에서 만들어서 동일한 어셈블리에서 기본 제공할 수 있지만, 필요한 경우 개별 프로젝트를 사용하여 개별 어셈블리를 만들 수 있습니다.
 
-     테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)을 참조하세요.
+     테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)을 참조하세요.
 
 2.  테스트에 대한 진단 데이터 어댑터를 선택하려면 먼저 기존 테스트 설정을 선택하거나 Microsoft Test Manager 또는 Visual Studio에서 새 항목을 만든 후 선택한 테스트 설정의 **데이터 및 진단** 탭에서 진단 데이터 어댑터를 선택해야 합니다.
 

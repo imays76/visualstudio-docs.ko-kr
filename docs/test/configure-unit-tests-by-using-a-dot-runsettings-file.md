@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901487"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280287"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -24,7 +24,7 @@ ms.locfileid: "42901487"
 
 ## <a name="specify-a-run-settings-file"></a>실행 설정 파일 지정
 
-실행 설정 파일은 VSTS(Visual Studio Team Services) 또는 TFS(Team Foundation Server)를 사용하여 [워크플로 빌드](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) 또는 IDE의 [명령줄](vstest-console-options.md)에서 실행되는 테스트를 구성하는 데 사용할 수 있습니다.
+실행 설정 파일은 Azure Test Plans 또는 TFS(Team Foundation Server)를 사용하여 [워크플로 빌드](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) 또는 IDE의 [명령줄](vstest-console-options.md)에서 실행되는 테스트를 구성하는 데 사용할 수 있습니다.
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>IDE에서 실행 설정 파일 지정
 
@@ -256,4 +256,4 @@ TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestToo
 ## <a name="see-also"></a>참고 항목
 
 - [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio 테스트 작업(VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio 테스트 작업(Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

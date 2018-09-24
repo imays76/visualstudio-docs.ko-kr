@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477485"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669353"
 ---
 # <a name="understand-performance-collection-methods"></a>성능 데이터 수집 방법 이해
 
@@ -32,8 +32,8 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 데 사
 |[샘플링](#sampling)|응용 프로그램에서 수행하는 작업에 대한 통계 데이터를 수집합니다.|
 |[계측](#instrumentation)|각 함수 호출에 대한 상세 타이밍 정보를 수집합니다.|
 |[동시성](#concurrency)|다중 스레드 응용 프로그램에 대한 상세 정보를 수집합니다.|
-|[.NET 메모리](#net_memory)|.NET 메모리 할당 및 가비지 수집에 대한 상세 정보를 수집합니다.|
-|[계층 상호 작용](#tier_interaction)|SqlServer 데이터베이스에 대한 비동기 ADO.NET 함수 호출 관련 정보를 수집합니다.<br /><br /> 계층 상호 작용 프로파일링은 Visual Studio의 모든 버전을 사용하여 수집할 수 있습니다. 그러나 계층 상호 작용 프로파일링 데이터는 Visual Studio Enterprise에서만 볼 수 있습니다.|
+|[.NET 메모리](#net-memory)|.NET 메모리 할당 및 가비지 수집에 대한 상세 정보를 수집합니다.|
+|[계층 상호 작용](#tier-interaction)|SqlServer 데이터베이스에 대한 비동기 ADO.NET 함수 호출 관련 정보를 수집합니다.<br /><br /> 계층 상호 작용 프로파일링은 Visual Studio의 모든 버전을 사용하여 수집할 수 있습니다. 그러나 계층 상호 작용 프로파일링 데이터는 Visual Studio Enterprise에서만 볼 수 있습니다.|
 
 일부 프로파일링 방법을 사용하는 경우에는 소프트웨어 및 하드웨어 성능 카운터와 같은 추가 데이터도 수집할 수 있습니다. 자세한 내용은 [추가 성능 데이터 수집](../profiling/collecting-additional-performance-data.md)을 참조하세요.
 

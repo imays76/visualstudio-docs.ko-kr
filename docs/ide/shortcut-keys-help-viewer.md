@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebbc778c71c464a6e4eabaebfff15760b99478
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78e83a69e21c1c6cd1aa10235d66f63fb1e5e27a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954261"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775221"
 ---
 # <a name="shortcut-keys-help-viewer"></a>바로 가기 키(도움말 뷰어)
 
@@ -61,7 +61,7 @@ ms.locfileid: "31954261"
 |항목|**Ctrl**+**Tab**|왼쪽에서 오른쪽으로 탭 간에 전환합니다.|
 |항목|**Ctrl**+**Shift**+**Tab**|오른쪽에서 왼쪽으로 탭 간에 전환합니다.|
 |항목|**Ctrl**+**W**|현재 탭을 닫습니다.|
-|항목|**Ctrl**+***숫자***|특정 탭으로 전환합니다. 여기서 ***숫자***는 1~9 중 하나이고 시퀀스의 탭을 나타냅니다.|
+|항목|**Ctrl**+**_숫자_**|특정 탭으로 전환합니다. 여기서 **_숫자_** 는 1~9 중 하나이고 시퀀스의 탭을 나타냅니다.|
 |항목|**Ctrl**+**Alt**+**F4**|다른 콘텐츠 탭을 닫습니다.|
 |항목|**Ctrl**+**Shift**+**더하기 기호**|확대/축소를 10%씩 늘립니다.|
 |항목|**Ctrl**+**빼기 기호**|확대/축소를 10%씩 줄입니다.|

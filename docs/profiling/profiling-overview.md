@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7905175493d2214db86fca288cd72ee1dcbabc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d3ec82822b2004cabb91f8c7677409acce69c199
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669556"
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Visual Studio에서 프로파일링의 개요
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="next-steps"></a>다음 단계
 
-* [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)로 응용 프로그램 성능을 측정하는 여러 가지 방법을 알아봅니다.
+* [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)로 응용 프로그램 성능을 측정하는 여러 가지 방법을 알아봅니다.
 
 * [CPU 사용량 분석](../profiling/cpu-usage.md)은 CPU 사용량 도구에 대한 더 상세한 정보를 제공합니다.
 

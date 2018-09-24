@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924743"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774605"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>솔루션이나 프로젝트 없이 Visual Studio에서 JavaScript 및 TypeScript 코드 개발
 
@@ -58,3 +58,27 @@ Visual Studio 2017에는 [프로젝트 또는 솔루션 없이 코드를 개발]
 
 > [!NOTE]
 > *tsconfig.json*에 대한 자세한 내용은 [tsconfig.json TypeScript Handbook 페이지](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)에서 찾을 수 있습니다.
+
+## <a name="unit-tests"></a>단위 테스트
+*package.json*에 테스트 루트를 지정하면 Visual Studio에서 단위 테스트 통합을 설정할 수 있습니다.
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+Test Runner는 사용할 테스트 프레임워크를 결정할 수 있도록 로컬에 설치된 패키지를 열거합니다.
+지원되는 프레임워크가 전혀 인식되지 않으면 Test Runner가 기본값으로 *ExportRunner*를 지정합니다. 기타 지원되는 프레임워크는 다음과 같습니다.
+* Mocha([mochajs.org](http://mochajs.org/))
+* Jasmine([Jasmine.github.io](https://jasmine.github.io/))
+* Tape([github.com/substack/tape](https://github.com/substack/tape))
+
+테스트 탐색기를 연 후(**테스트** > **Windows** > **테스트 탐색기** 선택), Visual Studio가 검색하고 테스트가 표시됩니다.
+
+> [!NOTE]
+> 첫 번째로 빌드해야 하는 TypeScript에 응용 프로그램이 작성되는 경우 Test Runner는 테스트 루트의 JavaScript 파일만 열거합니다.

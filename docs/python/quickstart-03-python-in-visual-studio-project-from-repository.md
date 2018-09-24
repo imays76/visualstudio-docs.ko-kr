@@ -1,7 +1,7 @@
 ---
 title: 빠른 시작 - Python 코드의 리포지토리 복제
 description: 이 빠른 시작에서는 Visual Studio 팀 탐색기를 사용하는 Python koans 리포지토리를 복제하여 Visual Studio에서 Python 프로젝트를 만듭니다.
-ms.date: 06/26/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636826"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281691"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제
 
@@ -30,9 +30,9 @@ ms.locfileid: "39636826"
 
 1. Visual Studio를 실행합니다.
 
-1. **보기** > **팀 탐색기**를 선택하여 GitHub 또는 Visual Studio Team Services에 연결하거나 리포지토리를 복제할 수 있는 **팀 탐색기** 창을 엽니다. (**연결** 페이지가 아래에 표시되지 않으면 해당 페이지로 이동시키는 맨 위의 도구 모음에 있는 플러그 아이콘을 선택합니다.)
+1. **보기** > **팀 탐색기**를 선택하여 GitHub 또는 Azure Repos에 연결하거나 리포지토리를 복제할 수 있는 **팀 탐색기** 창을 엽니다. (**연결** 페이지가 아래에 표시되지 않으면 해당 페이지로 이동시키는 맨 위의 도구 모음에 있는 플러그 아이콘을 선택합니다.)
 
-    ![Visual Studio Team Services, GitHub 및 리포지토리 복제를 보여 주는 팀 탐색기 창](media/team-explorer.png)
+    ![Azure Repos, GitHub를 표시하고 리포지토리를 복제하는 팀 탐색기 창](media/team-explorer.png)
 
 1. **로컬 Git 리포지토리** 아래에서 **복제**를 선택한 다음, URL 필드에 `https://github.com/gregmalcolm/python_koans`를 입력하고, 복제된 파일에 대한 폴더를 입력하고, **복제** 단추를 선택합니다.
 

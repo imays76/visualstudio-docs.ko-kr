@@ -10,15 +10,33 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
-ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
+ms.openlocfilehash: abec2e0d2485b99d5cde020bffc5ad0b2dd473ac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42627054"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775386"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="3806"></a>3.8.0.6
+ 릴리스 날짜: 2018년 8월 27일
+ 
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+    -   프로젝트 및 솔루션의 다시 로드 기능이 수정되었습니다.
+
+## <a name="3805"></a>3.8.0.5
+ 릴리스 날짜: 2018년 8월 20일
+ 
+### <a name="bug-fixes"></a>버그 수정
+
+-   **통합:**
+
+    -   구독 처리를 모니터링하는 프로젝트가 수정되었습니다.
 
 ## <a name="3804"></a>3.8.0.4
  릴리스 날짜: 2018년 8월 14일

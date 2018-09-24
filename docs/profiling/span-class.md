@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b68565e7c5f3a0b7f4aff09ccc3b3223d562d822
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c1a33a99b129cd4a0fa1969553d55c81af310295
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669084"
 ---
 # <a name="span-class"></a>span 클래스
 응용 프로그램의 단계를 정의합니다.  
@@ -33,7 +34,7 @@ class span;
   
 ### <a name="public-constructors"></a>Public 생성자  
   
-|이름|설명|  
+|name|설명|  
 |----------|-----------------|  
 |[span::span 생성자](../profiling/span-span-constructor.md)|`span` 클래스의 새 인스턴스를 초기화합니다.|  
 |[span::~span 소멸자](../profiling/span-tilde-span-destructor.md)|`span` 개체를 제거하고 해당 리소스를 해제합니다.|  
@@ -42,9 +43,9 @@ class span;
  `span`  
   
 ## <a name="requirements"></a>요구 사항  
- **헤더:** cvmarkersobj.h  
+ **헤더:** *cvmarkersobj.h*  
   
  **네임스페이스:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>참고 항목  
- [diagnostic 네임스페이스](../profiling/diagnostic-namespace.md)
+ [진단 네임스페이스](../profiling/diagnostic-namespace.md)

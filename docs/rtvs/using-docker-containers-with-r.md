@@ -11,19 +11,20 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d7034476e3346e4f3d4e24713a62920487845440
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667134"
 ---
-# <a name="using-docker-containers-with-r-tools-for-visual-studio"></a>Visual Studio용 R 도구와 함께 Docker 컨테이너 사용
+# <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Visual Studio용 R 도구와 함께 Docker 컨테이너 사용
 
 RTVS(Visual Studio용 R 도구) 버전 1.3 이상은 설치된 [Windows용 Docker](https://www.docker.com/docker-windows)와 함께 Docker 컨테이너 작업을 지원합니다.
 
-## <a name="creating-a-container"></a>컨테이너 만들기
+## <a name="create-a-container"></a>컨테이너 만들기
 
-1. **작업 영역** 창의 오른쪽 모서리에서 **컨테이너...** 단추를 선택합니다(**R 도구 > Windows > 작업 영역**). Windows용 Docker가 설치되지 않은 경우 창에 표시되고 다운로드에 대한 링크를 제공합니다. Docker를 설치하면 컴퓨터를 다시 시작해야 합니다.
+1. **작업 영역** 창의 오른쪽 모서리에서 **컨테이너** 단추를 선택합니다(**R 도구** > **Windows** > **작업 영역**). Windows용 Docker가 설치되지 않은 경우 창에 표시되고 다운로드에 대한 링크를 제공합니다. Docker를 설치하면 컴퓨터를 다시 시작해야 합니다.
 
     ![컨테이너 명령을 사용하는 Visual Studio용 R 도구(VS2017)의 작업 영역 창](media/container-workspaces-window.png)
 
@@ -39,7 +40,7 @@ RTVS(Visual Studio용 R 도구) 버전 1.3 이상은 설치된 [Windows용 Docke
 
     ![완료된 컨테이너를 표시하는 컨테이너 창](media/containers-window-created.png)
 
-## <a name="connecting-to-a-container"></a>컨테이너에 연결
+## <a name="connect-to-a-container"></a>컨테이너에 연결
 
 1. **작업 영역** 창의 **로컬 실행 중인 컨테이너** 섹션은 5444 포트에서 RTVS 디먼을 실행하는 컨테이너를 표시합니다. (디먼을 구성하는 방법에 대한 자세한 내용은 [Linux용 원격 R Server](setting-up-remote-r-service-on-linux.md)를 참조하세요.)
 
@@ -49,7 +50,7 @@ RTVS(Visual Studio용 R 도구) 버전 1.3 이상은 설치된 [Windows용 Docke
 
     ![작업 영역 창 및 컨테이너에 열린 REPL 창](media/workspaces-window-container-connected.png)
 
-## <a name="using-custom-built-images"></a>사용자 빌드 이미지 사용
+## <a name="use-custom-built-images"></a>사용자 빌드 이미지 사용
 
 RTVS는 아래 Docker 파일에서 설명한 microsoft/rtvs 이미지와 같은 사용자 빌드 이미지를 사용하여 만든 컨테이너의 관리를 감지하고 허용합니다. 여기에서 사용된 기본 이미지에는 rtvs-daemon, R 3.4.2 및 공통 R 패키지가 미리 설치되어 있습니다. **참고**: 필요에 따라 여기에 표시된 사용자 이름 및 암호를 변경합니다.
 

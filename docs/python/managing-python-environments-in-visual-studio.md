@@ -1,7 +1,7 @@
 ---
 title: Python 환경 및 인터프리터 관리
 description: Python 환경 창을 사용하여 전역, 가상 및 conda 환경을 관리하고 Python 인터프리터 및 패키지를 설치하며 Visual Studio 프로젝트에 환경을 할당합니다.
-ms.date: 07/23/2018
+ms.date: 09/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586582"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320828"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
@@ -38,7 +38,7 @@ Windows의 Visual Studio에서는 이 아티클에 설명된 대로 [**Python �
 
 ### <a name="global-environments"></a>글로벌 환경
 
-각 Python 설치(예: Python 2.7, Python 3.6 및 Anaconda 4.4.0 등, [Python 인터프리터 설치](installing-python-interpreters.md) 참조)는 고유한 글로벌 환경을 유지 관리합니다. 각 환경은 특정 Python 인터프리터, 표준 라이브러리 및 사전 설치된 패키지 집합으로 구성됩니다. 패키지를 전역 환경에 설치하면 해당 환경을 사용하는 모든 프로젝트에서 사용할 수 있습니다. 환경이 파일 시스템의 보호 영역(예: *c:\program files* 내)에 있는 경우 패키지를 설치하려면 관리자 권한이 필요합니다.
+각 Python 설치(예: Python 2.7, Python 3.6, Python 3.7, Anaconda 4.4.0 등, [Python 인터프리터 설치](installing-python-interpreters.md) 참조)는 고유한 글로벌 환경을 유지 관리합니다. 각 환경은 특정 Python 인터프리터, 표준 라이브러리 및 사전 설치된 패키지 집합으로 구성됩니다. 패키지를 전역 환경에 설치하면 해당 환경을 사용하는 모든 프로젝트에서 사용할 수 있습니다. 환경이 파일 시스템의 보호 영역(예: *c:\program files* 내)에 있는 경우 패키지를 설치하려면 관리자 권한이 필요합니다.
 
 전역 환경은 컴퓨터의 모든 프로젝트에서 사용할 수 있습니다. Visual Studio에서는 특별히 프로젝트별로 다른 항목을 선택하지 않는 한 하나의 전역 환경을 모든 프로젝트에 사용되는 기본값으로 선택합니다. 자세한 내용은 [프로젝트의 환경 선택](selecting-a-python-environment-for-a-project.md)을 참조하세요.
 
@@ -76,6 +76,9 @@ Visual Studio 2017 버전 15.6 이전의 경우 [기존 환경 수동 식별](#m
 Visual Studio 2017 버전 15.7 이상에서는 Conda 환경을 자동으로 검색하고 다음 섹션에 설명된 대로 **Python 환경** 창을 표시합니다.
 
 ## <a name="the-python-environments-window"></a>Python 환경 창
+
+> [!Note]
+> 이 섹션에 표시된 스크린샷은 Visual Studio 15.8를 나타냅니다. Visual Studio의 버전에 따라 UI가 약간씩 다르게 표시될 수 있습니다.
 
 Visual Studio에서 인식하는 환경이 **Python 환경** 창에 표시됩니다. 창을 열려면 다음 방법 중 하나를 사용합니다.
 

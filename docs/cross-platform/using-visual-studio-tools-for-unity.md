@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251720"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283342"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 사용
 
@@ -188,9 +188,9 @@ Visual Studio를 사용하여 다양한 Unity 플레이어의 개발 빌드를 �
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Unity 프로젝트에서 사용되는 관리 DLL 프로젝트를 디버그하려면
 
-1. Visual Studio Tools for Unity에서 생성한 Visual Studio 솔루션에 기존 DLL 프로젝트를 추가합니다. 새로운 관리 DLL 프로젝트를 시작하여 Unity 프로젝트에 코드 구성 요소를 포함하는 경우도 더러 있을 수 있습니다. 이러한 경우 새로운 관리 DLL 프로젝트를 Visual Studio 솔루션에 대신 추가할 수 있습니다. 기존 또는 새 프로젝트를 솔루션에 추가하는 방법에 대한 자세한 내용은 [방법: 솔루션에 프로젝트 추가](https://msdn.microsoft.com/library/vstudio/ff460187.aspx)를 참조하세요.
+1. Visual Studio Tools for Unity에서 생성한 Visual Studio 솔루션에 기존 DLL 프로젝트를 추가합니다. 새로운 관리 DLL 프로젝트를 시작하여 Unity 프로젝트에 코드 구성 요소를 포함하는 경우도 더러 있을 수 있습니다. 이러한 경우 새로운 관리 DLL 프로젝트를 Visual Studio 솔루션에 대신 추가할 수 있습니다. 기존 또는 새 프로젝트를 솔루션에 추가하는 방법에 대한 자세한 내용은 [방법: 솔루션에 프로젝트 추가](https://msdn.microsoft.com/library/ff460187.aspx)를 참조하세요.
 
-     ![기존 DLL 프로젝트를 솔루션에 추가합니다.] (../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
+     ![기존 DLL 프로젝트를 솔루션에 추가합니다.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
      두 경우 모두 Visual Studio Tools for Unity에서는 프로젝트 및 솔루션 파일을 다시 생성해야 하는 경우에도 프로젝트 참조를 유지하므로 이러한 단계는 한 번만 수행하면 됩니다.
 
@@ -217,6 +217,6 @@ Visual Studio를 사용하여 다양한 Unity 플레이어의 개발 빌드를 �
 |MonoBehavior 마법사 열기|**Ctrl**+**Shift**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Unity 프로젝트 탐색기 열기|**Alt**+**Shift**+**E**|**View.UnityProjectExplorer**|
 |Unity 설명서 액세스|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
-|Unity 디버거(플레이어 또는 편집기)에 연결|***기본값이 없습니다.***|**Debug.AttachUnityDebugger**|
+|Unity 디버거(플레이어 또는 편집기)에 연결|**_기본값 없음_**|**Debug.AttachUnityDebugger**|
 
  기본값이 마음에 들지 않는 경우 바로 가기 키 조합을 변경할 수 있습니다. 변경 방법에 대한 자세한 내용은 [Visual Studio에서 바로 가기 키 식별 및 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)을 참조하세요.
