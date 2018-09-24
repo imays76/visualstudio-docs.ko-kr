@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995965"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547934"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Django 앱 만들기
 
@@ -125,7 +125,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 `^home`과 마찬가지로 정규식에서 후행 $를 사용하지 않으면 URL 패턴이 “home”으로 시작하는 ‘모든’ URL(예: “home”, “homework”, “homestead” 및 “home192837”)과 일치합니다.
 
-다른 정규식으로 실험하려면 [pythex.org](http://www.pythex.org)에서 [regex101.com](https://regex101.com)과 같은 온라인 도구를 사용해 보세요.
+다른 정규식으로 실험하려면 [pythex.org](https://www.pythex.org)에서 [regex101.com](https://regex101.com)과 같은 온라인 도구를 사용해 보세요.
 
 ## <a name="step-2-3-render-a-view-using-html"></a>2-3단계: HTML을 사용하여 보기 렌더링
 

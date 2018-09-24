@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ef83d9caebbeea1496a627282ba2c30b47cc0e22
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320971"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552112"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
@@ -64,7 +64,7 @@ Visual Studio에서는 구문 색 지정, 모든 코드 및 라이브러리에 �
 
 ## <a name="interactive-window"></a>대화형 창
 
-Visual Studio에 알려진 모든 Python 환경의 경우 별도 명령 프롬프트를 사용하는 대신 Visual Studio 내에서 직접 Python 인터프리터에 대한 동일한 대화형(REPL) 환경을 쉽게 열 수 있습니다. 또한 환경 간 전환을 쉽게 할 수 있습니다. (별도의 명령 프롬프트를 열려면 **Python 환경** 창에서 원하는 환경을 선택하고 앞서 [다중 인터프리터 지원](#support-for-multiple=interpreters)에서 설명한 대로 **PowerShell에서 열기** 명령을 선택합니다.)
+Visual Studio에 알려진 모든 Python 환경의 경우 별도 명령 프롬프트를 사용하는 대신 Visual Studio 내에서 직접 Python 인터프리터에 대한 동일한 대화형(REPL) 환경을 쉽게 열 수 있습니다. 또한 환경 간 전환을 쉽게 할 수 있습니다. (별도의 명령 프롬프트를 열려면 **Python 환경** 창에서 원하는 환경을 선택하고 앞서 [다중 인터프리터 지원](#support-for-multipleiinterpreters)에서 설명한 대로 **PowerShell에서 열기** 명령을 선택합니다.)
 
 ![Visual Studio의 Python 대화형 창](media/interactive-window.png)
 
@@ -161,11 +161,11 @@ Visual Studio는 Azure에 웹앱 및 클라우드 서비스를 게시하기 위�
 
 **질문: UI를 빌드하는 데 Python과 함께 무엇을 사용할 수 있나요?**
 
-대답: 이 영역의 기본 제품은 [Qt Project](https://www.qt.io/qt-for-application-development/), [PySide(공식 바인딩)](http://wiki.qt.io/PySide)([PySide 다운로드](https://download.qt.io/official_releases/pyside/.)도 참조)로 알려진 Python용 바인딩 및 [PyQt](https://wiki.python.org/moin/PyQt)입니다. 현재는 Visual Studio의 Python 지원에 UI 개발용 특정 도구가 포함되지 않습니다.
+대답: 이 영역의 기본 제품은 [Qt Project](https://www.qt.io/qt-for-application-development/), [PySide(공식 바인딩)](https://wiki.qt.io/PySide)([PySide 다운로드](https://download.qt.io/official_releases/pyside/.)도 참조)로 알려진 Python용 바인딩 및 [PyQt](https://wiki.python.org/moin/PyQt)입니다. 현재는 Visual Studio의 Python 지원에 UI 개발용 특정 도구가 포함되지 않습니다.
 
 **질문: Python 프로젝트에서 독립 실행형 실행 파일을 생성할 수 있나요?**
 
-대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에서는 실행 파일을 만드는 다양한 방법을 제공합니다. 또한 CPython은 블로그 게시물 [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)(CPython의 포함 가능한 zip 파일 사용)에 설명된 것처럼 네이티브 응용 프로그램 내에 포함되는 기능을 지원합니다.
+대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에서는 실행 파일을 만드는 다양한 방법을 제공합니다. 또한 CPython은 블로그 게시물 [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)(CPython의 포함 가능한 zip 파일 사용)에 설명된 것처럼 네이티브 응용 프로그램 내에 포함되는 기능을 지원합니다.
 
 ## <a name="features-matrix"></a>기능 매트릭스
 
@@ -283,19 +283,19 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 | 테스트 디버깅 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 <br/>
 
-1. Visual Studio 2012에 대한 Git 지원은 Git용 Visual Studio Tools 확장에서 사용 가능하며 [Visual Studio 갤러리](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c)에서 제공됩니다.
+1. Visual Studio 2012에 대한 Git 지원은 Git용 Visual Studio Tools 확장에서 사용 가능하며 [Visual Studio 갤러리](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit)에서 제공됩니다.
 
-1. Azure 웹 사이트에 배포하려면 [.NET 2.1용 Azure SDK - Visual Studio 2010 SP1](http://go.microsoft.com/fwlink/?LinkId=313855)이 필요합니다. 이후 버전에서는 Visual Studio 2010을 지원하지 않습니다.
+1. Azure 웹 사이트에 배포하려면 [.NET 2.1용 Azure SDK - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855)이 필요합니다. 이후 버전에서는 Visual Studio 2010을 지원하지 않습니다.
 
-1. Azure 웹 역할 및 작업자 역할에 대한 지원을 사용하려면 [.NET 2.3용 Azure SDK - VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511) 이상이 필요합니다.
+1. Azure 웹 역할 및 작업자 역할에 대한 지원을 사용하려면 [.NET 2.3용 Azure SDK - VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) 이상이 필요합니다.
 
-1. Azure 웹 역할 및 작업자 역할에 대한 지원을 사용하려면 [.NET 2.3용 Azure SDK - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
+1. Azure 웹 역할 및 작업자 역할에 대한 지원을 사용하려면 [.NET 2.3용 Azure SDK - VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
 
 1. Visual Studio 2013에서 Django 템플릿 편집기에는 몇 가지 알려진 문제가 있으며 Update 2를 설치하여 해결할 수 있습니다.
 
-1. Windows 8 이상이 필요합니다. Visual Studio 2013 Express for Web에는 **프로세스에 연결** 대화 상자가 없지만, **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하여 Azure 웹 사이트 원격 디버깅을 계속 수행할 수 있습니다. 원격 디버깅을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
+1. Windows 8 이상이 필요합니다. Visual Studio 2013 Express for Web에는 **프로세스에 연결** 대화 상자가 없지만, **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하여 Azure 웹 사이트 원격 디버깅을 계속 수행할 수 있습니다. 원격 디버깅을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
 
-1. Windows 8 이상이 필요합니다. **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
+1. Windows 8 이상이 필요합니다. **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
 
 1. Windows 8 이상이 필요합니다.
 

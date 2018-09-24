@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281067"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548233"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
@@ -118,7 +118,7 @@ Choice는 `poll` 필드를 통해 Poll과 관련되며, `text`에 설명을 포�
 
 전체 필드 형식 목록은 `CharField`(제한된 텍스트) `TextField`(무제한 텍스트), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` 및 `ManyToMany`입니다. 각 필드는 `max_length`와 같은 몇 가지 특성을 사용합니다. `blank=True` 특성은 필드가 선택 사항임을 의미하고, `null=true`는 값이 선택 사항임을 의미합니다. 값을 데이터 값/표시 값 튜플 배열의 값으로 제한하는 `choices` 특성도 있습니다. Django 설명서의 [Model field reference](https://docs.djangoproject.com/en/2.0/ref/models/fields/)(모델 필드 참조)를 참조하세요.
 
-프로젝트에서 [SQLite 브라우저](http://sqlitebrowser.org/)와 같은 도구를 사용하여 *db.sqlite3* 파일을 검사하면 데이터베이스에 저장된 내용을 정확하게 확인할 수 있습니다. 데이터베이스에서 Choice 모델의 `poll` 같은 외래 키 필드가 `poll_id`로 저장되어 있음을 확인할 수 있으며, Django는 자동으로 매핑을 처리합니다.
+프로젝트에서 [SQLite 브라우저](https://sqlitebrowser.org/)와 같은 도구를 사용하여 *db.sqlite3* 파일을 검사하면 데이터베이스에 저장된 내용을 정확하게 확인할 수 있습니다. 데이터베이스에서 Choice 모델의 `poll` 같은 외래 키 필드가 `poll_id`로 저장되어 있음을 확인할 수 있으며, Django는 자동으로 매핑을 처리합니다.
 
 일반적으로 Django에서 데이터베이스 작업은 Django가 사용자 대신 기본 데이터베이스를 관리할 수 있도록 모델을 통해서만 작업한다는 의미입니다.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-결과를 확인하려면 먼저 앱을 실행하여 설문 조사가 아직 없음을 확인합니다. 그런 다음, “/seed” URL을 방문하고 앱이 홈페이지로 돌아가면 설문 조사를 사용할 수 있게 된 것을 확인할 수 있습니다. 다시 [SQLite 브라우저](http://sqlitebrowser.org/) 같은 도구를 사용하여 원시 *db.sqlite3* 파일을 원하는 대로 검사하세요.
+결과를 확인하려면 먼저 앱을 실행하여 설문 조사가 아직 없음을 확인합니다. 그런 다음, “/seed” URL을 방문하고 앱이 홈페이지로 돌아가면 설문 조사를 사용할 수 있게 된 것을 확인할 수 있습니다. 다시 [SQLite 브라우저](https://sqlitebrowser.org/) 같은 도구를 사용하여 원시 *db.sqlite3* 파일을 원하는 대로 검사하세요.
 
 ![시드된 데이터베이스가 있는 설문 조사 Django 웹 프로젝트 앱](media/django/step06-app-with-seeded-database.png)
 
