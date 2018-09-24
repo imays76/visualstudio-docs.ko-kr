@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774693"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549313"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Linux에서 Python 코드 원격 디버그
 
@@ -99,7 +99,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 1. **연결 대상** 필드(이전 버전의 경우 **한정자**)에 `tcp://<secret>@<ip_address>:5678`을 입력합니다. 여기서 `<secret>`은 Python 코드에서 전달된 문자열 `enable_attach`이고, `<ip_address>`는 원격 컴퓨터의 IP 주소이며(명시적 주소 또는 myvm.cloudapp.net과 같은 이름일 수 있음), `:5678`은 원격 디버깅 포트 번호입니다.
 
     > [!Warning]
-    > 공용 인터넷으로 연결하는 경우 `tcps`를 대신 사용하고 [SSL를 사용하여 디버거 연결 보호](#securing-the-debugger-connection-with-ssl)에 대한 아래 지침을 따라야 합니다.
+    > 공용 인터넷으로 연결하는 경우 `tcps`를 대신 사용하고 [SSL를 사용하여 디버거 연결 보호](#secure-the-debugger-connection-with-ssl)에 대한 아래 지침을 따라야 합니다.
 
 1. **Enter** 키를 눌러 해당 컴퓨터에서 사용할 수 있는 ptvsd 프로세스의 목록을 채웁니다.
 
@@ -148,7 +148,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
     openssl에서 메시지를 표시하면 **일반 이름**에 대해 호스트 이름 또는 IP 주소(어느 쪽이든 연결에 사용하는 항목)를 사용합니다.
 
-    (자세한 내용은 Python `ssl` 모듈 문서의 [Self-signed certificates](http://docs.python.org/3/library/ssl.html#self-signed-certificates)(자체 서명된 인증서)를 참조하세요. 해당 문서의 명령은 결합된 단일 파일만 생성합니다.)
+    (자세한 내용은 Python `ssl` 모듈 문서의 [Self-signed certificates](https://docs.python.org/3/library/ssl.html#self-signed-certificates)(자체 서명된 인증서)를 참조하세요. 해당 문서의 명령은 결합된 단일 파일만 생성합니다.)
 
 1. 코드에서 파일 이름을 값으로 사용하는 `certfile` 및 `keyfile` 인수를 포함하도록 `enable_attach`에 대한 호출을 수정합니다(이러한 인수는 표준 `ssl.wrap_socket` Python 함수에 대해 같은 의미를 지님).
 
