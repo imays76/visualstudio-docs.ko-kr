@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627218"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281067"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
@@ -376,8 +376,8 @@ admin.site.register(Poll, PollAdmin)
 
 - 앱을 SQLite에서 PostgreSQL, MySQL 및 SQL Server와 같은 프로덕션 수준 데이터 저장소(모두 Azure에서 호스트할 수 있음)로 변경합니다. [When to use SQLite](https://www.sqlite.org/whentouse.html)(SQLite를 사용하는 경우)(sqlite.org)에 설명된 대로 SQLite는 일별 방문 횟수가 100K보다 적은, 트래픽이 낮거나 중간 정도인 사이트에서 제대로 작동하지만 더 큰 볼륨에는 권장되지 않습니다. 또한 단일 컴퓨터로 제한되므로 부하 분산 및 지역에서 복제와 같은 모든 다중 서버 시나리오에서는 사용할 수 없습니다. Django의 다른 데이터베이스 지원에 대한 자세한 내용은 [데이터베이스 설치](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)를 참조하세요. 또한 [Python용 Azure SDK](azure-sdk-for-python.md)를 사용하여 테이블 및 Blob과 같은 Azure Storage 서비스 작업을 수행할 수도 있습니다.
 
-- VSTS(Visual Studio Team Services)와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. VSTS, GitHub 등에서의 소스 제어 작업 외에 VSTS에서 릴리스의 필수 구성 요소로 단위 테스트를 자동으로 실행하도록 하고, 프로덕션에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 VSTS는 App Insights와 같은 모니터링 솔루션과 통합되며 Agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 다음을 참조하세요.
+- Azure Pipelines와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등에서의 소스 제어 작업 외에 Azure Test Plans에서 릴리스의 필수 구성 요소로 단위 테스트를 자동으로 실행하도록 하고, 프로덕션에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps Services는 App Insights와 같은 모니터링 솔루션과 통합되며 Agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 다음을 참조하세요.
 
-  - [Create a CI/CD pipeline for Python with the Azure DevOps project](/azure/devops-project/azure-devops-project-python?view=vsts)(Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기)
+  - [Create a CI/CD pipeline for Python with Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)(Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기)
   - [Python development in Azure with Visual Studio Team Services (video, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)(Visual Studio Team Services를 사용하여 Azure에서 Python 개발(비디오, 11분 21초)).
 

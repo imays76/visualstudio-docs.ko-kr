@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669137"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>유니버설 Windows 앱의 HTML UI 응답성 분석
 이 항목에서는 유니버설 Windows 앱에 사용할 수 있는 성능 도구인 UI 응답성 프로파일러를 사용하여 앱에서 성능 문제를 격리하는 방법에 대해 설명합니다.  
@@ -34,12 +35,12 @@ ms.lasthandoff: 05/14/2018
   
 -   예상보다 빈도가 낮은 시각적 개체 업데이트. UI 스레드의 사용량이 너무 많아 부드러운 프레임 속도를 유지할 수 없을 경우 발생합니다. 예를 들어, UI 스레드가 사용 중인 경우 프레임이 손실될 수도 있습니다. 또한 네트워크 요청, 이미지 디코딩, 그리기 등의 일부 UI가 아닌 스레드 작업이 시각적 개체 업데이트 빈도를 제한할 수도 있습니다. (모든 그리기가 UI 스레드에서 수행되지는 않습니다.)  
   
-##  <a name="RunningProfiler"></a> HTML UI 응답성 도구 실행  
+## <a name="run-the-html-ui-responsiveness-tool"></a>HTML UI 응답성 도구 실행  
  작업 중인 UWP 앱이 Visual Studio에서 열려 있는 경우 HTML UI 응답성 도구를 사용할 수 있습니다.  
   
 1.  Visual Studio에서 앱을 실행하는 경우 **표준** 도구 모음의 **디버깅 시작** 목록에서 **로컬 컴퓨터** 또는 **장치**와 같은 배포 대상을 선택합니다.  
   
-2.  **디버그** 메뉴에서 **성능 프로파일러...** 를 선택합니다.  
+2.  **디버그** 메뉴에서 **성능 프로파일러**를 선택합니다.  
   
      프로파일러의 분석 대상을 변경하려면**대상 변경**을 선택합니다.  
   
@@ -57,8 +58,7 @@ ms.lasthandoff: 05/14/2018
   
          소스 코드에 액세스할 수 없을 때 이 옵션을 사용하여 컴퓨터에 설치한 앱의 성능을 분석할 수 있습니다. 사용자가 직접 개발하는 응용 프로그램을 제외한 모든 응용 프로그램의 성능을 분석하려는 경우에도 이 옵션이 유용할 수 있습니다.  
   
-3.  
-                **사용 가능한 도구**에서 **HTML UI 응답성**을 선택한 다음 **시작**을 선택합니다.  
+3.  **사용 가능한 도구**에서 **HTML UI 응답성**을 선택한 다음 **시작**을 선택합니다.  
   
 4.  UI 응답성 프로파일러를 시작할 때 사용자 계정 컨트롤 창이 표시되어 Visual Studio ETW Collector.exe를 실행할 수 있는 권한을 요청할 수 있습니다. **예**를 선택합니다.  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 05/14/2018
   
 6.  응용 프로그램의 프로파일링을 중지하고 프로파일러가 수집한 데이터를 보려면 **수집 중지**를 선택합니다.  
   
-##  <a name="IsolateAnIssue"></a> 문제 격리  
+## <a name="isolate-an-issue"></a>문제 격리  
  다음 섹션에서는 성능 문제를 격리하는 데 도움이 되는 제안 사항을 제공합니다. 샘플 성능 테스트 앱을 사용하여 성능 문제를 확인 및 수정하는 방법에 대한 단계별 설명은 [연습: UI 응답성 향상(HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)을 참조하세요.  
   
 ###  <a name="Workflow"></a> UI 응답성 문제 격리  
@@ -76,11 +76,11 @@ ms.lasthandoff: 05/14/2018
   
 1.  Visual Studio에서 앱을 엽니다.  
   
-2.  응용 프로그램에서 UI 응답성 문제를 테스트합니다. (Ctrl+F5 키를 눌러 디버깅 없이 응용 프로그램을 시작합니다.)  
+2.  응용 프로그램에서 UI 응답성 문제를 테스트합니다. (**Ctrl**+**F5** 키를 눌러 디버깅 없이 앱을 시작합니다.)  
   
      문제가 발견되면 계속해서 문제가 발생한 시간대를 좁히거나 동작의 원인이 되는 트리거를 파악합니다.  
   
-3.  Visual Studio로 전환하고(Alt+Tab) 응용 프로그램을 중지합니다(Shift+F5).  
+3.  Visual Studio로 전환하고(**Alt**+**Tab**) 앱을 중지합니다(**Shift**+**F5**).  
   
 4.  선택적으로 [분석을 위한 코드 표시](#ProfileMark)등의 배포 대상을 선택합니다.  
   
@@ -119,7 +119,7 @@ ms.lasthandoff: 05/14/2018
   
     -   응용 프로그램에서 로드되는 페이지 또는 URL 리소스(예: HTML 구문 분석 이벤트에 대한 스크립트 계산). 파일 이름 또는 리소스가 제공됩니다.  
   
-    -   다른 이벤트는 [Profiler event reference](#ProfilerEvents)에 지정되어 있습니다.  
+    -   다른 이벤트는 [Profiler event reference](#profiler-event-reference)에 지정되어 있습니다.  
   
     > [!TIP]
     >  프로파일러의 대부분의 유용한 정보는 타임라인 세부 정보 그래프에 표시됩니다.  
@@ -169,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![시간 표시 막대 세부 정보 보기의 사용자 측정 이벤트](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> 데이터 분석  
+## <a name="analyze-data"></a>데이터 분석  
  다음 단원에서는 프로파일러에 표시되는 데이터를 해석하기 위한 정보를 제공합니다.  
   
 ###  <a name="Ruler"></a> 진단 세션 타임라인 보기  
@@ -188,7 +188,7 @@ if (performance.mark && performance.measure) {
 -   다른 페이지를 탐색할 때 발생하는 탐색 이벤트. 이벤트에 대한 도구 설명으로 대상 페이지 URL을 표시합니다.  
   
 ###  <a name="CPUUtilization"></a> CPU 사용률 보기  
- CPU 사용률 그래프에서는 과도한 CPU 작업이 있던 기간을 확인할 수 있습니다. 여기에서는 일정 기간에 걸쳐 응용 프로그램의 평균 CPU 사용에 대한 정보를 제공합니다. 정보는 **로드**, **스크립팅**, 가비지 수집(**GC**), **스타일 지정**, **렌더링**, **이미지 디코딩**과 같은 특정 범주를 나타내도록 색으로 구분되어 있습니다. 이러한 범주에 대한 자세한 내용은 이 항목 뒷부분에 나오는 [Profiler event reference](#ProfilerEvents) 를 참조하세요.  
+ CPU 사용률 그래프에서는 과도한 CPU 작업이 있던 기간을 확인할 수 있습니다. 여기에서는 일정 기간에 걸쳐 응용 프로그램의 평균 CPU 사용에 대한 정보를 제공합니다. 정보는 **로드**, **스크립팅**, 가비지 수집(**GC**), **스타일 지정**, **렌더링**, **이미지 디코딩**과 같은 특정 범주를 나타내도록 색으로 구분되어 있습니다. 이러한 범주에 대한 자세한 내용은 이 항목 뒷부분에 나오는 [Profiler event reference](#profiler-event-reference) 를 참조하세요.  
   
  CPU 사용률 그래프는 전체 앱 스레드에 소요된 시간을 하나 이상의 CPU에 대한 CPU 사용률 값을 단일 백분율 값으로 결합하여 보여 줍니다. 둘 이상의 CPU를 사용 중일 경우 CPU 사용률 값은 100%를 초과할 수 있습니다.  
   
@@ -248,7 +248,7 @@ if (performance.mark && performance.measure) {
   
  CPU 사용률 및 시각적 처리량(FPS) 그래프의 타임라인 부분을 선택하면 시간 표시 막대 정보 그래프에는 선택한 기간에 대한 자세한 정보가 표시됩니다.  
   
- 시간 표시 막대 정보 그래프의 이벤트는 CPU 사용률 그래프에 표시된 것과 같은 작업 범주를 표시하도록 색이 지정됩니다. 이벤트 범주 및 특정 이벤트에 대한 자세한 내용은 이 항목의 [Profiler event reference](#ProfilerEvents) 를 참조하세요.  
+ 시간 표시 막대 정보 그래프의 이벤트는 CPU 사용률 그래프에 표시된 것과 같은 작업 범주를 표시하도록 색이 지정됩니다. 이벤트 범주 및 특정 이벤트에 대한 자세한 내용은 이 항목의 [Profiler event reference](#profiler-event-reference) 를 참조하세요.  
   
  시간 표시 막대 정보 그래프를 사용하여 다음을 수행합니다.  
   
@@ -301,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![프레임별로 그룹화된 시간 표시 막대 이벤트](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> 진단 세션 저장  
+## <a name="save-a-diagnostic-session"></a>진단 세션 저장  
  Visual Studio에서 진단 세션과 연결된 탭을 닫을 때 이 세션을 저장할 수 있습니다. 저장된 세션은 나중에 다시 열 수 있습니다.  
   
-##  <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a>Profiler event reference  
  UI 응답성 프로파일러에서 프로파일러 이벤트는 항목별로 분류되어 색이 지정됩니다. 다음은 이러한 이벤트 범주입니다.  
   
 -   **로드.** 앱이 처음 로드될 때 앱 리소스를 검색하고 HTML 및 CSS를 구문 분석하는 데 걸린 시간을 나타냅니다. 여기에는 네트워크 요청이 포함될 수 있습니다.  
@@ -349,7 +349,7 @@ if (performance.mark && performance.measure) {
 |프레임|N/A|DOM에서 시각적 항목이 변경되어 페이지에서 영향을 받는 모든 부분이 다시 그려져야 합니다. 그룹화에 사용되는 도구 생성 이벤트입니다.|  
 |사용자 측정|N/A|앱 관련 시나리오는 `performance.measure` 메서드를 사용하여 측정되었습니다. 코드 분석에 사용되는 도구 생성 이벤트입니다.|  
   
-##  <a name="Tips"></a> 추가 정보  
+## <a name="additional-information"></a>추가 정보  
   
 -   UI 응답성 프로파일러에 대한 Build 2013 컨퍼런스에서 [이 비디오](http://channel9.msdn.com/Events/Build/2013/3-316) 를 시청하십시오.  
   
@@ -358,4 +358,4 @@ if (performance.mark && performance.measure) {
 -   단일 스레드 코드 실행 모델 및 성능에 대한 자세한 내용은 [코드 실행 중](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)을 참조하십시오.  
   
 ## <a name="see-also"></a>참고 항목  
- [프로파일링 도구](../profiling/profiling-tools.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

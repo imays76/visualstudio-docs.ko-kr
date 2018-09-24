@@ -1,7 +1,7 @@
 ---
 title: Python 코드 편집
 description: Visual Studio에서 Python을 편집하는 경우 서식, Lint, 리팩터링과 함께 IntelliSense, 코드 조각 및 탐색 기능이 제공됩니다.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627298"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774767"
 ---
 # <a name="edit-python-code"></a>Python 코드 편집
 
-개발자는 코드 편집기에서 많은 시간을 보내므로 [Visual Studio의 Python 지원](installing-python-support-in-visual-studio.md)에서 생산성 향상에 도움이 되는 기능을 제공합니다. 이러한 기능에는 IntelliSense 구문 강조 표시, 자동 완성, 시그니처 도움말, 메서드 재정의/검색 및 탐색이 포함됩니다.
+사용자는 코드 편집기에서 많은 개발 시간을 보내므로 [Visual Studio의 Python 지원](installing-python-support-in-visual-studio.md)에서 생산성 향상에 도움이 되는 기능을 제공합니다. 이러한 기능에는 IntelliSense 구문 강조 표시, 자동 완성, 시그니처 도움말, 메서드 재정의/검색 및 탐색이 포함됩니다.
 
 또한 편집기는 Visual Studio의 **대화형** 창과 통합되므로 편집기와 창 간에 코드를 쉽게 교환할 수 있습니다. 자세한 내용은 [자습서 3단계: 대화형 REPL 창 사용](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) 및 [대화형 창 사용 - 대화형 명령에 보내기](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)를 참조하세요.
 

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054558"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775106"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 테스트 탐색기 FAQ
 
@@ -30,7 +30,7 @@ ms.locfileid: "43054558"
 
   프로젝트를 빌드하고 **도구** > **옵션** > **테스트**에서 어셈블리 기반 검색이 켜져 있는지 확인합니다.
 
-  [실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)은 소스 기반 테스트 검색입니다. 이론, 사용자 지정 어댑터, 사용자 지정 특성, `#ifdef` 문 등을 사용하는 테스트는 런타임에 정의되기 때문에 검색할 수 없습니다. 해당 테스트를 정확하게 검색하려면 빌드가 필요합니다. 15.6 미리 보기에서 어셈블리 기반 검색(기존 Discoverer)은 빌드 후에만 실행됩니다. 이 설정은 실시간 테스트 검색은 편집 중에 검색할 수 있는 만큼 테스트를 검색하고 어셈블리 기반 검색을 사용하면 동적으로 정의된 테스트가 빌드 후에 표시될 수 있음을 의미합니다. 실시간 테스트 검색은 응답성을 개선하지만 빌드 후에 완전하고 정확한 결과를 얻을 수 있습니다.
+  [실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)은 소스 기반 테스트 검색입니다. 이론, 사용자 지정 어댑터, 사용자 지정 특성, `#ifdef` 문 등을 사용하는 테스트는 런타임에 정의되기 때문에 검색할 수 없습니다. 해당 테스트를 정확하게 검색하려면 빌드가 필요합니다. Visual Studio 2017 버전 15.6 이상에서 어셈블리 기반 검색(기존 Discoverer)은 빌드 후에만 실행됩니다. 이 설정은 사용자가 편집하는 중에 실시간 테스트 검색을 통해 검색할 수 있는 만큼 테스트를 검색한 후 어셈블리 기반 검색을 사용하여 동적으로 정의된 테스트가 빌드 후에 표시되도록 할 수 있음을 의미합니다. 실시간 테스트 검색은 응답성을 개선하지만 빌드 후에 완전하고 정확한 결과를 얻을 수 있습니다.
 
 ## <a name="test-explorer--plus-symbol"></a>테스트 탐색기 ‘+’(더하기) 기호
 **테스트 탐색기의 맨 윗줄에 표시되는 ‘+’(더하기) 기호는 무엇인가요?**
@@ -93,6 +93,31 @@ ms.locfileid: "43054558"
 **테스트 프로젝트{}는 .NET NuGet 어댑터를 참조하지 않습니다. 이 프로젝트에서는 테스트 검색 또는 실행이 작동하지 않을 수 있습니다. 솔루션의 각 .NET 테스트 프로젝트에서 NuGet 테스트 어댑터를 참조하는 것이 좋습니다.**
 
 테스트 어댑터 확장을 사용하는 대신, 프로젝트에 테스트 어댑터 NuGet 패키지를 사용해야 합니다. 그러면 성능이 크게 향상되고 연속 통합 관련 문제가 줄어듭니다. [릴리스 정보](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension)에서 .NET 테스트 어댑터 확장 사용 중단에 대해 자세히 알아보세요.
+
+> [!NOTE]
+> NUnit 2 테스트 어댑터를 사용하고 있으며 NUnit 3 테스트 어댑터로 마이그레이션할 수 없는 경우 **도구** > **옵션**  >  **테스트**를 통해 Visual Studio 버전 15.8에서 이 새로운 검색 동작을 해제할 수 있습니다. 
+
+  ![도구 옵션의 테스트 탐색기 어댑터 동작](media/testex-adapterbehavior.png)
+
+## <a name="uwp-testcontainer-was-not-found"></a>UWP TestContainer를 찾지 못했습니다.
+**내 UWP 테스트가 Visual Studio 2017 버전 15.7 이상에서 더 이상 실행되지 않습니다.**
+
+최근의 UWP 테스트 프로젝트는 테스트 앱을 식별하는 더 나은 성능을 제공할 수 있는 테스트 플랫폼 빌드 속성을 지정합니다. Visual Studio 버전 15.7 이전에서 초기화된 UWP 테스트 프로젝트가 있는 경우 **출력** > **테스트**에서 다음 오류가 표시될 수 있습니다.
+
+**System.AggregateException: 하나 이상의 오류가 발생했습니다. ---> System.InvalidOperationException: Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()** 에서 다음 TestContainer를 찾지 못했습니다. {}
+  
+이 문제를 해결하려면
+- 다음으로 테스트 프로젝트 빌드 속성을 업데이트합니다.
+
+```XML
+<UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
+```
+
+- 다음으로 TestPlatform SDK 버전을 업데이트합니다.
+
+```XML
+<SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+```
 
 ## <a name="using-feature-flags"></a>기능 플래그 사용
 **새로운 테스트 기능을 사용하기 위해 기능 플래그를 켜려면 어떻게 할까요?**

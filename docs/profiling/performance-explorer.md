@@ -14,19 +14,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 450681f03bcb9bd24272d7bcdc7da34ed015587a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 837c8d405245237962888a0a689fbdd17f6a0a92
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669337"
 ---
 # <a name="performance-explorer"></a>성능 탐색기
 
 개발자는 Visual Studio 프로파일링 도구를 사용하여 코드의 성능 관련 문제를 측정, 평가 및 조정할 수 있습니다. 이러한 도구는 IDE에 완벽하게 통합되어 원활하고 편리한 사용자 환경을 제공합니다.
 
-응용 프로그램을 프로파일링하는 것은 간단합니다. 먼저 새 성능 세션을 만듭니다. Visual Studio Team System Development Edition에서는 성능 세션 마법사를 사용해서 새 성능 세션을 만들 수 있습니다. 성능 세션이 끝난 후 프로파일링하는 동안 수집된 데이터가 .vsp 파일에 저장됩니다. IDE 안에서 .vsp 파일을 볼 수 있습니다. 수집된 데이터에서 성능 문제를 시각화하고 감지하기 위해 여러 보고서 뷰를 사용할 수 있습니다.
+응용 프로그램을 프로파일링하는 것은 간단합니다. 먼저 새 성능 세션을 만듭니다. Visual Studio Team System Development Edition에서는 성능 세션 마법사를 사용해서 새 성능 세션을 만들 수 있습니다. 성능 세션이 끝난 후 프로파일링하는 동안 수집된 데이터가 .*vsp* 파일에 저장됩니다. IDE 안에서 .*vsp* 파일을 볼 수 있습니다. 수집된 데이터에서 성능 문제를 시각화하고 감지하기 위해 여러 보고서 뷰를 사용할 수 있습니다.
 
-명령줄에서 프로파일링 도구도 사용할 수 있습니다. 이를 통해 유연하게 명령줄에서 이러한 도구를 실행할 수도 있고 이러한 도구로 스크립트를 사용하는 작업을 자동화할 수도 있습니다.
+명령줄에서 프로파일링 도구를 사용할 수도 있습니다. 이를 통해 유연하게 명령줄에서 이러한 도구를 실행할 수도 있고 이러한 도구로 스크립트를 사용하는 작업을 자동화할 수도 있습니다.
 
 성능 및 프로파일링과 관련된 현재 및 고급 항목에 대한 자세한 내용을 보려면 Microsoft Developer Network에서 항목 및 Microsoft 블로그를 검색하세요. “엔터프라이즈 성능 도구 팀” 키워드를 사용하세요.
 
@@ -48,4 +49,4 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="see-also"></a>참고 항목
 
-[프로파일링 도구](../profiling/profiling-tools.md)
+[프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

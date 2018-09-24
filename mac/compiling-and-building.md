@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 8e742706117b318a5614484c97b9ecda0b2c3f51
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a66cc250b0d019b3efa4873b89eef252af44b8a6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224117"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283706"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 컴파일 및 빌드
 
@@ -44,7 +44,7 @@ MSBuild 빌드 엔진을 사용하여 명령줄을 통해 응용 프로그램을
 
 MSBuild 사용 방법에 대한 자세한 내용은 [MSBuild](/visualstudio/msbuild/msbuild) 콘텐츠를 참조하세요.
 
-## <a name="building-from-visual-studio-team-services"></a>Visual Studio Team Services에서 빌드
+## <a name="building-from-azure-pipelines"></a>Azure Pipelines에서 빌드
 
 * [Xamarin 앱 빌드](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [Xamarin과의 연속 통합](https://developer.xamarin.com/guides/cross-platform/ci/)

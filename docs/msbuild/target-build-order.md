@@ -1,7 +1,7 @@
 ---
 title: 대상 빌드 순서 | Microsoft Docs
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178958"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774947"
 ---
 # <a name="target-build-order"></a>대상 빌드 순서
 단일 대상에 대한 입력이 다른 대상의 출력을 사용하는 경우에는 대상의 순서를 지정해야 합니다. 다음과 같은 특성을 사용하여 대상이 실행되는 순서를 지정할 수 있습니다.  
@@ -114,7 +114,7 @@ ms.locfileid: "39178958"
 
     `BeforeTargets` 또는 `AfterTargets`에 조건부 대상을 나열하는 대상은 지정된 순서로 여전히 실행합니다.
   
-4.  대상이 실행되기 전에 `DependsOnTargets` 대상이 실행됩니다.  
+4.  대상을 실행하거나 건너뛰기 전에 `Condition` 특성이 없거나 `false`로 평가되지 않으면 해당 `DependsOnTargets` 대상이 실행됩니다.  
   
 5.  대상을 실행하거나 건너뛰기 전에는 `BeforeTargets` 특성에 해당 대상이 나열되어 있는 모든 대상이 실행됩니다.  
   

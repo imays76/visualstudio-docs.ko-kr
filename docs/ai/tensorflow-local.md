@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: d8c8c5e06b5d7345a5234e4c4adb04283528f301
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7f60fa346df7d2b9e89f3d6905e273d0191bdf3b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379523"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281743"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>로컬로 tensorflow 모델 학습
 
@@ -51,7 +51,7 @@ TensorFlow, CNTK, Theano 등에 대한 심층 학습을 시작하기 위해 이 
 
 ![솔루션 열기](media\tensorflow-local\open-solution.png)
 
-- **솔루션 탐색기**에서 MNIST 프로젝트를 찾아 마우스 오른쪽 버튼으로 클릭하고 **시작 프로젝트로 설정**을 선택합니다.
+- **솔루션 탐색기**에서 MNIST 프로젝트를 찾아 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 선택합니다.
 
 - **시작**을 클릭합니다.
 

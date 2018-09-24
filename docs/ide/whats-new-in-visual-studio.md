@@ -2,7 +2,7 @@
 title: Visual Studio 2017의 새로운 기능
 description: Visual Studio 2017의 새로운 기능을 알아보세요.
 ms.custom: ''
-ms.date: 08/21/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
-ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755511"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384190"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -32,14 +32,14 @@ Visual Studio의 이전 버전에서 업그레이드하려고 하십니까? Visu
 
 이전 버전 Visual Studio 2015부터 적용해 온 변경을 높은 수준에서 요약한 사항입니다.
 
-* **[재정의된 기본 사항](#redefined-fundamentals)**. 새로운 설치 환경을 통해 더 빠르게 설치하고, 필요할 때 원하는 항목을 설치할 수 있습니다. 대규모 솔루션과 프로젝트를 로드하든, 코드 폴더 또는 단일 코드 파일에서 작업하든 Visual Studio는 더 빠르게 시작됩니다. 또한 Visual Studio를 사용하는 경우 특히 DevOps를 수용하는 팀에서 큰 그림에 계속 집중할 수 있습니다.
-* **[성능 및 생산성](#performance-and-productivity)**. 새로운 최신 모바일, 클라우드 및 데스크톱 개발 기능에 집중했습니다. 또한 전반적인 취득, 성능 및 일반 개발자 생산성 환경도 향상했습니다. Visual Studio는 더 빨리 시작하고, 더 빨리 응답하며, 이전보다 적은 메모리를 사용합니다.
+* **[재정의된 기본 사항](#redefined-fundamentals)**. 새로운 설치 환경을 통해 더 빠르게 설치하고, 필요할 때 원하는 항목을 설치할 수 있습니다.
+* **[성능 및 생산성](#performance-and-productivity)**. 새로운 최신 모바일, 클라우드 및 데스크톱 개발 기능에 집중했습니다. 또한 Visual Studio는 더 빨리 시작하고, 더 빨리 응답하며, 이전보다 적은 메모리를 사용합니다.
 * **[Azure로 클라우드 앱 개발](#cloud-app-development-with-azure)**. 기본 제공 Azure 도구 모음을 통해 Microsoft Azure 기반의 클라우드 중심 앱을 쉽게 만들 수 있습니다. Visual Studio를 사용하면 Azure에서 직접 앱과 서비스를 쉽게 구성, 빌드, 디버그, 패키징 및 배포할 수 있습니다.
-* **[Windows 앱 개발](#windows-app-development)**. Visual Studio 2017의 UWP 템플릿을 사용하여 모든 Windows 10 장치 &ndash; PC, 태블릿, 전화, Xbox, HoloLens, Surface Hub 등에 대한 단일 프로젝트를 만듭니다. 그런 다음 앱 패키지를 만들어 Visual Studio 내에서 Microsoft Store에 제출하여 앱을 고객에게 제공합니다.
-* **[모바일 앱 개발](#mobile-app-development)**. Visual Studio 2017에서는 하나의 핵심 코드베이스와 기술 집합을 사용하여 다중 플랫폼 모바일 요구 사항을 통합하는 Xamarin에서 혁신적인 결과를 빠르게 얻을 수 있습니다. 기존 팀, 기술 투자 및 C# 코드와 더불어 모바일로 이동하여 예정보다 빨리 예산 수준 이하의 소비자급 환경을 제공합니다. 사용자의 역량을 강화할 수 있도록 모바일 수명 주기의 각 단계를 모두 가속화하여 세계 최고의 소비자 환경 또는 생산성 앱 포트폴리오를 제공합니다. **15.8**의 새로운 기능: Hyper-V를 사용하는 모바일 앱 개발자는 항상 최신 Android API를 지원하는 빠른 Android 에뮬레이터에 액세스하고, Google Play 서비스를 즉시 사용하고, 카메라, 지리적 위치, 빠른 부팅을 포함한 모든 기능을 지원할 수 있습니다.
-* **[플랫폼 간 개발](#cross-platform-development)**. 모든 대상 플랫폼에 소프트웨어를 원활하게 제공할 수 있습니다. Redgate 데이터 도구를 통해 DevOps 프로세스를 SQL Server로 확장하고 Visual Studio에서 데이터베이스 배포를 안전하게 자동화할 수 있습니다. 또는 .NET Core를 사용하여 Windows, Linux 및 macOS 운영 체제에서 수정되지 않고 실행되는 앱 및 라이브러리를 작성할 수 있습니다. (그리고 **15.3의 새로운 기능**: .NET Core 2.0 SDK에 대한 side-by-side 지원을 받으세요.)
-* **[게임 개발](#games-development)**. VSTU(Visual Studio Tools for Unity)를 사용하면 Visual Studio를 통해 게임 및 편집기 스크립트를 C#으로 작성한 다음 강력한 디버거를 사용하여 오류를 찾고 수정할 수 있습니다. VSTU의 최신 릴리스에는 Unity의 ShaderLab 셰이더 언어를 위한 구문 색 지정, 향상된 디버거 시각화 및 MonoBehavior 마법사에 대한 코드 생성 기능이 포함되어 있습니다. VSTU는 Unity 프로젝트 파일, 콘솔 메시지 및 Visual Studio에서 게임을 시작하는 기능도 제공하므로 코드를 작성하는 동안 Unity 편집기 전환에 소요되는 시간을 단축할 수 있습니다.
-* **[AI 개발](#ai-development)**. With Visual Studio Tools for AI(**15.5의 새로운 기능**)를 통해 Visual Studio의 생산성 기능을 사용하여 AI 혁신을 가속화할 수 있습니다. 데이터 준비 및 모델 교육 작업을 다양한 계산 대상에 투명하게 제출하는 등의 강력한 실험 기능을 위해 Azure Machine Learning과 완벽하게 통합되는 딥 러닝/AI 솔루션을 빌드, 테스트 및 배포합니다. 또한 Visual Studio Tools for AI는 사용자 지정 메트릭 및 실행 기록 추적을 지원하므로 데이터 과학의 재현성과 감사가 가능합니다.
+* **[Windows 앱 개발](#windows-app-development)**. Visual Studio 2017의 UWP 템플릿을 사용하여 모든 Windows 10 장치 &ndash; PC, 태블릿, 전화, Xbox, HoloLens, Surface Hub 등에 대한 단일 프로젝트를 만듭니다.
+* **[모바일 앱 개발](#mobile-app-development)**. 하나의 핵심 코드베이스와 기술 집합으로 다중 플랫폼 모바일 요구 사항을 통합하는 Xamarin에서 혁신적인 결과를 빠르게 얻습니다.
+* **[플랫폼 간 개발](#cross-platform-development)**. 모든 대상 플랫폼에 소프트웨어를 원활하게 제공할 수 있습니다. Redgate 데이터 도구를 통해 DevOps 프로세스를 SQL Server로 확장하고 Visual Studio에서 데이터베이스 배포를 안전하게 자동화할 수 있습니다. 또는 .NET Core를 사용하여 Windows, Linux 및 macOS 운영 체제에서 수정되지 않고 실행되는 앱 및 라이브러리를 작성할 수 있습니다.
+* **[게임 개발](#games-development)**. VSTU(Visual Studio Tools for Unity)를 사용하면 Visual Studio를 통해 게임 및 편집기 스크립트를 C#으로 작성한 다음 강력한 디버거를 사용하여 오류를 찾고 수정할 수 있습니다.
+* **[AI 개발](#ai-development)**. Visual Studio Tools for AI를 통해 Visual Studio의 생산성 기능을 사용하여 AI 혁신을 가속화할 수 있습니다. Azure Machine Learning과 원활하게 통합되는 딥 러닝/AI 솔루션을 빌드, 테스트 및 배포하여 강력한 실험 기능을 제공할 수 있습니다.
 
 > [!NOTE]
 > Visual Studio 2017의 새로운 기능에 대한 전체 목록은 [현재 릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)를 참조하세요. 향후 제공할 기능을 살펴보려면 [미리 보기 릴리스 정보](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)를 참조하세요.
@@ -106,11 +106,11 @@ Visual Studio의 확장 목록을 보려면 **도구** > **확장 및 업데이�
 
 로밍 중인 확장 관리자를 사용하는 경우 3개의 아이콘 형식이 목록에 표시됩니다.
 
-* ![로밍 아이콘](../ide/media/vs2017ide-roamedicon.png)***로밍***: 이 로밍 목록에 포함되어 있지만, 컴퓨터에 설치되지 않은 확장입니다.
+* ![로밍 아이콘](../ide/media/vs2017ide-roamedicon.png)**_로밍_**: 이 로밍 목록에 포함되어 있지만, 머신에 설치되지 않은 확장입니다.
   **다운로드** 단추를 사용하여 이러한 확장을 설치할 수 있습니다.
-* ![로밍 및 설치 아이콘](../ide/media/vs2017ide-roamedinstalledicon.png)***로밍 및 설치***: 이 로밍 목록에 포함되어 있고, 개발 환경에 설치된 모든 확장입니다.
+* ![로밍 및 설치 아이콘](../ide/media/vs2017ide-roamedinstalledicon.png)**_로밍 및 설치_**: 이 로밍 목록에 포함되어 있고, 개발 환경에 설치된 모든 확장입니다.
   로밍하지 않도록 결정하는 경우 **로밍 중지** 단추를 사용하여 이러한 확장을 제거할 수 있습니다.
-* ![설치 아이콘](../ide/media/vs2017ide-installedicon.png)***설치***: 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
+* ![설치 아이콘](../ide/media/vs2017ide-installedicon.png)**_설치됨_**: 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
   **로밍 시작** 단추를 사용하여 로밍 목록에 확장을 추가할 수 있습니다.
 
 로그인되어 있는 동안 다운로드한 모든 확장은 목록에 **로밍 및 설치**로 추가됩니다. 그런 다음, 확장이 로밍 목록에 포함되고, 모든 컴퓨터에서 액세스할 수 있습니다.
@@ -303,7 +303,7 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 ![Xamarin.Android Designer 분할 보기 편집기](../ide/media/android-designer-split-view.png)
 
-자세한 내용은 [에뮬레이터 성능에 대한 하드웨어 가속](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview)을 참조하세요.
+자세한 내용은 [에뮬레이터 성능에 대한 하드웨어 가속](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)을 참조하세요.
 
 ### <a name="visual-studio-app-center"></a>Visual Studio 앱 센터
 

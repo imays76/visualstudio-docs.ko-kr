@@ -9,12 +9,12 @@ description: 선택한 Visual Studio 구독에 포함된 Opsgility 교육 혜택
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cd0409eef71ebd97b98f93631b0229d5d8526362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289501"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280898"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Opsgility 혜택
 
@@ -55,4 +55,4 @@ ms.locfileid: "43289501"
 ## <a name="support-resources"></a>지원 리소스
 -  Opsgility와 관련하여 도움이 필요하세요?  [문의처](https://www.opsgility.com/SupportTicket) 페이지를 통해 지원 티켓을 제출하세요.
 -  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
--  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+-  Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

@@ -9,12 +9,12 @@ description: 선택한 Visual Studio 구독에 포함된 Azure 커뮤니티 혜�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289531"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283732"
 ---
 # <a name="azure-community"></a>Azure 커뮤니티
 
@@ -68,4 +68,4 @@ Azure 커뮤니티 혜택의 제공 여부는 구독 수준에 따르며 아래�
 -  다른 Azure 커뮤니티 리소스를 보려면 Azure 커뮤니티 [지원 페이지](https://azure.microsoft.com/support/forums/)를 방문하세요.
 -  [Azure 설명서](/azure/)
 -  Visual Studio 구독의 판매, 구독, 계정 및 요금 청구에 대한 지원이 필요하세요?  Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
--  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+-  Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

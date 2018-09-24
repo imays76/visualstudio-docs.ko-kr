@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626837"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280170"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Django 웹 프레임워크 시작
 
@@ -100,7 +100,7 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
 
     ![기존 원격 리포지토리에 푸시에 대한 팀 탐색기 창](media/django/step01-push-to-github.png)
 
-    기존 리포지토리가 없는 경우 **GitHub에 게시** 및 **Visual Studio Team Services에 푸시** 옵션을 사용하여 Visual Studio 내에서 직접 만들 수 있습니다.
+    기존 리포지토리가 없는 경우 **GitHub에 게시** 및 **Azure DevOps에 푸시** 옵션을 사용하여 Visual Studio 내에서 직접 만들 수 있습니다.
 
 1. 이 자습서를 진행하면서 주기적으로 Visual Studio의 컨트롤을 사용하여 변경 내용을 커밋하고 푸시하는 습관을 기르는 것이 좋습니다. 이 자습서에서는 적절한 시점에 알려줍니다.
 

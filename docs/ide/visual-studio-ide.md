@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626900"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320789"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE 시작
 
@@ -50,7 +50,7 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
 - [출력 창](../ide/reference/output-window.md)(가운데 아래) - 디버깅 및 오류 메시지, 컴파일러 경고, 게시 상태 메시지 등의 Visual Studio 알림이 표시됩니다. 각 메시지 원본에 해당하는 탭이 있습니다.
 
-- [팀 탐색기](/vsts/user-guide/work-team-explorer)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/vsts/tfvc/overview) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
+- [팀 탐색기](/azure/devops/user-guide/work-team-explorer?view=vsts)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
 
 ### <a name="popular-productivity-features"></a>주요 생산성 향상 기능
 
@@ -273,6 +273,8 @@ IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 
 - [Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](quickstart-python.md)
 
 - [Visual Studio를 사용하여 첫 번째 C# 웹앱 만들기](quickstart-aspnet-core.md)
+
+- [Visual Studio를 사용하여 첫 번째 F# 웹앱 만들기](quickstart-fsharp.md)
 
 - [Visual Studio를 사용하여 첫 번째 Node.js 웹앱 만들기](quickstart-nodejs.md)
 

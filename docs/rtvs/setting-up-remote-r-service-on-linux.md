@@ -11,11 +11,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: ec988b9739dfbec60fe19b41145ae0de1b3d3f77
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fa985b88e5857d12324f25a5bd1581ca3f9e211e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667927"
 ---
 # <a name="remote-r-service-for-linux"></a>Linux용 원격 R 서비스
 
@@ -23,14 +24,14 @@ Linux용 원격 R 서비스는 현재 rtvs-daemon으로 패키지됩니다. Ubun
 
 원격 컴퓨터를 구성하면 다음 단계에서는 RTVS(Visual Studio용 R 도구)를 해당 서비스에 연결합니다.
 
-1. **R 도구 > 창 > 작업 영역**을 선택하여 **작업 영역** 창을 엽니다.
+1. **R 도구** > **Windows** > **작업 영역**을 선택하여 **작업 영역** 창을 엽니다.
 1. **연결 추가**를 선택합니다.
 1. 연결에 이름을 지정하고, `https://localhost:5444`(Linux용 Windows 하위 시스템) 또는 `https://public-ip:5444`(Azure 컨테이너)와 같이 해당 URL을 제공합니다. 완료된 경우 **저장**을 선택합니다.
 1. 연결 아이콘을 선택하거나 연결 항목을 두 번 클릭합니다.
 1. 로그인 자격 증명을 입력합니다. 사용자 이름은 `<<unix>>\ruser1`에서 `<<unix>>\`를 접두사로 사용해야 합니다(Linux 원격 컴퓨터에 대한 모든 연결의 필요에 따라).
 1. 자체 서명된 인증서를 사용하는 경우 경고 메시지가 표시될 수 있습니다. 메시지는 경고를 수정하기 위한 지침을 제공합니다.
 
-## <a name="setting-up-remote-r-service"></a>원격 R 서비스 설정
+## <a name="set-up-remote-r-service"></a>원격 R 서비스 설정
 
 이 단원에서는 다음과 같은 옵션에 대해 설명합니다.
 
@@ -68,7 +69,7 @@ Linux용 원격 R 서비스는 현재 rtvs-daemon으로 패키지됩니다. Ubun
     sudo systemctl start rtvsd
     ```
 
-1. SSL 인증서를 구성합니다(프로덕션에 필요). 기본적으로 rtvs-daemon은 `ssl-cert` 패키지에서 생성된 `ssl-cert-snakeoil.pem` 및 `ssl-cert-snakeoil.pem`을 사용합니다. 설치 중에 `ssl-cert-snakeoil.pfx`로 결합됩니다. 프로덕션용으로 관리자가 제공한 SSL 인증서를 사용합니다. SSL 인증서는 `.pfx` 파일 및 선택적 가져오기 암호 `/etc/rtvs/rtvsd.config.json`을 제공하여 구성될 수 있습니다.
+1. SSL 인증서를 구성합니다(프로덕션에 필요). 기본적으로 rtvs-daemon은 `ssl-cert` 패키지에서 생성된 `ssl-cert-snakeoil.pem` 및 `ssl-cert-snakeoil.pem`을 사용합니다. 설치 중에 `ssl-cert-snakeoil.pfx`로 결합됩니다. 프로덕션용으로 관리자가 제공한 SSL 인증서를 사용합니다. SSL 인증서는 */etc/rtvs/rtvsd.config.json*에서 *.pfx* 파일 및 선택적 가져오기 암호를 제공하여 구성할 수 있습니다.
 
 1. (선택 사항)서비스가 실행되고 있는지 확인합니다.
 
@@ -100,7 +101,7 @@ Linux용 원격 R 서비스는 현재 rtvs-daemon으로 패키지됩니다. Ubun
 
 #### <a name="configure-the-vm"></a>VM 구성
 
-1. VM의 **네트워킹** 섹션에서 5444 포트를 허용되는 인바운드 포트로 추가합니다. 다른 포트를 사용하려면 RTVS 디먼 구성 파일(`/etc/rtvs/rtvsd.config.json`)에서 설정을 변경합니다.
+1. VM의 **네트워킹** 섹션에서 5444 포트를 허용되는 인바운드 포트로 추가합니다. 다른 포트를 사용하려면 RTVS 디먼 구성 파일(*/etc/rtvs/rtvsd.config.json*)에서 설정을 변경합니다.
 1. (선택 사항)DNS 이름을; 설정합니다. IP 주소를 사용할 수 있습니다.
 1. WIndows용 PuTTY와 같은 SSH 클라이언트를 사용하여 VM에 연결합니다.
 1. 위의 [물리적 Ubuntu 컴퓨터](#physical-ubuntu-computer)에 대한 지침을 따릅니다.
@@ -155,7 +156,7 @@ Linux용 원격 R 서비스는 현재 rtvs-daemon으로 패키지됩니다. Ubun
     docker run -p 5444:5444 myrimage rtvsd
     ```
 
-1. RTVS의 컨테이너에 연결하려면 `https://localhost:5444` 경로, `<<unix>>\ruser1` 사용자 이름 및 `foobar` 암호를 사용합니다. 컨테이너를 원격 컴퓨터에서 실행하는 경우 대신 `https://remote-host-name:5444`를 경로로 사용합니다. `/etc/rtvs/rtvsd.config.json`을 업데이트하여 포트를 변경할 수 있습니다.
+1. RTVS의 컨테이너에 연결하려면 `https://localhost:5444` 경로, `<<unix>>\ruser1` 사용자 이름 및 `foobar` 암호를 사용합니다. 컨테이너를 원격 컴퓨터에서 실행하는 경우 대신 `https://remote-host-name:5444`를 경로로 사용합니다. */etc/rtvs/rtvsd.config.json*을 업데이트하여 포트를 변경할 수 있습니다.
 
 ### <a name="container-running-on-azure-container-instances"></a>Azure Container Instances에서 실행하는 컨테이너
 

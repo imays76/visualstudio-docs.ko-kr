@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 WhiteSource Bolt 구독을 활성
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289391"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279169"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 구독의 WhiteSource Bolt
 
@@ -38,13 +38,15 @@ ms.locfileid: "43289391"
 
 4.  페이지의 **계정 활성화** 섹션에서 4개 단계를 안내받습니다.
 
-    - Microsoft Visual Studio 마켓플레이스에서 WhiteSource Bolt 확장을 [설치](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt)합니다. 확장을 설치할 수 있는 권한이 없는 경우 [VSTS용 무료 확장 설치](/vsts/marketplace/install-vsts-extension?view=vsts)를 참조하세요.
+    - Microsoft Visual Studio 마켓플레이스에서 WhiteSource Bolt 확장을 [설치](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt)합니다. 확장을 설치할 수 있는 권한이 없는 경우 [Azure DevOps Services용 무료 확장 설치](/azure/devops/marketplace/install-vsts-extension?view=vsts)를 참조하세요.
 
-    VSTS를 사용하는 경우 녹색 **설치** 단추를 클릭하거나 Team Foundation Server에 대한 **다운로드** 단추를 클릭합니다.  이 예에서는 VSTS를 사용합니다.
+
+    Azure DevOps Services를 사용하는 경우 녹색 **설치** 단추를 클릭하거나 Team Foundation Server인 경우 **다운로드** 단추를 클릭합니다.  이 예에서는 Azure DevOps Services가 사용됩니다.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 혜택 확장 설치](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - 그런 다음 사용하려는 VSTS 계정을 선택하고 **확인**을 클릭합니다.  (아직 VSTS를 설정하지 않은 경우 [혜택](https://my.visualstudio.com/benefits) 페이지를 방문하여 VSTS 혜택을 활성화합니다.)
+    - 다음으로, 사용할 Azure DevOps Services 조직을 선택하고 **확인**을 클릭합니다.  (아직 Azure DevOps Services를 설정하지 않은 경우 [혜택](https://my.visualstudio.com/benefits) 페이지에서 Azure DevOps Services 혜택을 활성화합니다.)
+
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 혜택 계정 확인](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
@@ -52,7 +54,7 @@ ms.locfileid: "43289391"
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 혜택 설치 완료](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  VSTS(Visual Studio Team Services) 프로젝트 대시보드를 열고 **빌드 및 릴리스** 메뉴를 클릭하고 **WhiteSource Bolt**를 선택합니다.
+5.  Azure DevOps Services 프로젝트 대시보드를 열고 **Azure Pipelines** 메뉴를 클릭한 후 **WhiteSource Bolt**를 선택합니다.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 혜택 확장 추가](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
@@ -90,4 +92,4 @@ ms.locfileid: "43289391"
 
 -  WhiteSource Bolt와 관련하여 도움이 필요하세요?  https://www.whitesourcesoftware.com/vse_whitesource_bolt/에서 WhiteSource Bolt 담당자와 실시간 채팅이 가능합니다.
 -  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
--  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+-  Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

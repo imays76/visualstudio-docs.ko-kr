@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a389652b969ef4e4d29defbef40c91979d959e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948745"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384255"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft의 내게 필요한 옵션 제품 및 서비스
 
@@ -65,15 +65,15 @@ Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽�
 
 ##  <a name="altfortmats"></a> 대체 형식의 설명서
 
- 인쇄물을 읽거나 처리하는 데 어려움이 있는 경우 보다 접근하기 쉬운 형식의 Microsoft 제품 설명서를 얻을 수 있습니다. [Microsoft 접근성](http://go.microsoft.com/fwlink/?LinkId=8431) 웹 사이트에서 접근하기 쉬운 제품 설명서의 인덱스를 볼 수 있습니다.
+인쇄물을 읽거나 처리하는 데 어려움이 있는 경우 보다 접근하기 쉬운 형식의 Microsoft 제품 설명서를 얻을 수 있습니다. [Microsoft 접근성](http://go.microsoft.com/fwlink/?LinkId=8431) 웹 사이트에서 접근하기 쉬운 제품 설명서의 인덱스를 볼 수 있습니다.
 
- 또한 RFB&D(Recording for the Blind & Dyslexic, Inc)에서 Microsoft 설명서를 추가로 얻을 수 있습니다. RFB&D에서는 배포 서비스에 등록된 정식 사용자에게 이러한 설명서를 배포합니다. Microsoft 제품 설명서 및 Microsoft Press 책자의 사용 가능 여부에 대한 자세한 내용은 다음 연락처로 문의하세요.
+또한 Learning Ally에서 Microsoft 설명서를 추가로 얻을 수 있습니다. Learning Ally에서는 배포 서비스에 등록된 정식 사용자에게 이러한 설명서를 배포합니다. Microsoft 제품 설명서 및 Microsoft Press 책자의 사용 가능 여부에 대한 자세한 내용은 다음 연락처로 문의하세요.
 
-|Recording for the Blind & Dyslexic, Inc.|
+|Learning Ally|
 |----------------------------------------------|
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> 미국 내 전화 번호: (800) 221-4792<br /><br /> 미국 및 캐나다 이외의 전화 번호: (609) 452-0606<br /><br /> 팩스: (609) 987-8116<br /><br /> Blind & Dyslexic 웹 사이트에 대한 기록: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Learning Ally 웹 사이트: [http://www.learningally.org](http://www.learningally.org/).|
 
- 웹 주소는 변경될 수 있으므로 여기에 나와 있는 웹 사이트에 연결되지 않을 수도 있습니다.
+웹 주소는 변경될 수 있으므로 여기에 나와 있는 웹 사이트에 연결되지 않을 수도 있습니다.
 
 ##  <a name="hearing"></a> 청각 장애가 있는 사용자를 위한 고객 서비스
 

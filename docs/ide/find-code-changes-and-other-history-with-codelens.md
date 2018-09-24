@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054480"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384203"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -64,9 +64,9 @@ C# 또는 Visual Basic 코드에 대한 참조를 찾을 수 있습니다.
 
 - Visual Studio Enterprise 또는 Visual Studio Professional
 
-- Team Foundation Server 2013 이상, Visual Studio Team Services 또는 Git
+- Team Foundation Server 2013 이상, Azure DevOps Services 또는 Git
 
-- 코드 편집기에서 팀에 연락하려는 경우 [비즈니스용 Skype](/skypeforbusiness/) 또는 Lync 2010 이상
+- 코드 편집기에서 팀에 연락하려는 경우 [비즈니스용 Skype](/skypeforbusiness/)
 
 TFVC(Team Foundation 버전 제어) 또는 Git으로 저장된 C# 또는 Visual Basic 코드의 경우 클래스 및 메서드 수준에서 CodeLens 세부 정보를 가져옵니다(*코드 요소 수준* 표시기). Git 리포지토리가 TfGit에서 호스트되는 경우 TFS 작업 항목에 대한 링크도 가져올 수 있습니다.
 
@@ -80,7 +80,7 @@ TFVC(Team Foundation 버전 제어) 또는 Git으로 저장된 C# 또는 Visual 
 
 코드 요소 수준 표시기를 통해 코드를 변경한 사람 및 변경된 내용을 확인할 수 있습니다. 코드 요소 수준 표시기는 C# 및 Visual Basic 코드에 대해 제공됩니다.
 
-Team Foundation Server 또는 Visual Studio Team Services에서 TFVC(Team Foundation 버전 제어)를 사용하는 경우에 표시됩니다.
+Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation 버전 제어)를 사용하는 경우에 표시됩니다.
 
 ![CodeLens: TFVC에서 코드에 대한 변경 기록 가져오기](../ide/media/codelens-code-changes.png)
 
@@ -257,13 +257,13 @@ Team Foundation Server 또는 Visual Studio Team Services에서 TFVC(Team Founda
 
 - 코드가 TFS에 저장되는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](/tfs/server/ref/command-line/tfsconfig-cmd)을 함께 사용하여 코드 인덱싱이 설정되어 있는지 확인합니다.
 
-- TFS 관련 지표는 작업 항목이 코드와 링크되어 있는 경우 및 링크된 작업 항목을 열 권한이 있는 경우에만 나타납니다. [팀 멤버 권한](/vsts/work/scale/multiple-teams)이 있는지 확인합니다.
+- DevOps 관련 지표는 작업 항목이 코드와 링크되어 있는 경우 및 링크된 작업 항목을 열 권한이 있는 경우에만 나타납니다. [팀 멤버 권한](/azure/devops/organizations/security/view-permissions?view=vsts)이 있는지 확인합니다.
 
 - 단위 테스트 지표는 응용 프로그램 코드에서 단위 테스트를 하지 않은 경우 나타나지 않습니다. 테스트 상태 지표는 테스트 프로젝트에 자동으로 나타납니다. 응용 프로그램 코드에 단위 테스트가 있지만 테스트 표시기가 나타나지 않는 경우 솔루션 빌드를 시도해 보세요(**Ctrl**+**Shift**+**B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Q: 커밋에 대한 작업 항목 정보가 나타나지 않습니다.
 
-**A:** CodeLens가 TFS의 작업 항목을 찾을 수 없기 때문에 이러한 현상이 발생할 수 있습니다. 작업 항목이 포함된 팀 프로젝트에 연결되어 있으며 해당 작업 항목을 볼 수 있는 권한이 있는지 확인하세요. 커밋 설명에 TFS의 작업 항목 ID에 대한 잘못된 정보가 포함된 경우 작업 항목 정보가 표시되지 않을 수 있습니다.
+**A:** CodeLens가 Azure Boards 또는 TFS의 작업 항목을 찾을 수 없기 때문에 이러한 현상이 발생할 수 있습니다. 작업 항목이 포함된 프로젝트에 연결되어 있으며 해당 작업 항목을 볼 수 있는 권한이 있는지 확인하세요. 커밋 설명에 Azure Boards 또는 TFS의 작업 항목 ID에 대한 잘못된 정보가 포함된 경우 작업 항목 정보가 표시되지 않을 수 있습니다.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>Q: Skype 표시기가 나타나지 않습니다.
 
@@ -295,7 +295,7 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
 4. **Tab**을 눌러 **설정 표시** 목록으로 이동한 다음, **아래쪽 화살표** 를 눌러 **CodeLens**를 선택합니다.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q: CodeLens 헤드업 표시를 이동할 수 있습니까?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q: CodeLens `head`s-up 표시를 이동할 수 있습니까?
 
 **A:** 예, ![도킹 아이콘](../ide/media/codelensdockwindow.png)을 선택하여 CodeLens를 창으로 도킹합니다.
 
@@ -315,7 +315,7 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
      ![CodeLens 팀 지표 새로 고침 메뉴 항목](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **테스트**: [코드에 대한 단위 테스트를 찾아](#Find-unit-tests-for-your-code) **테스트** 표시기를 새로 고칩니다.
+- **테스트**: [코드에 대한 단위 테스트를 찾아](#associated-unit-tests) **테스트** 표시기를 새로 고칩니다.
 
 ### <a name="q-whats-local-version"></a>Q: "로컬 버전"이란 무엇인가요?
 

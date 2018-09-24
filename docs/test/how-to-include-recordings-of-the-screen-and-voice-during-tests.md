@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381972"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321075"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>방법: 테스트 설정을 사용하여 테스트를 수행하는 중에 화면 및 음성의 녹화/녹음 포함
 
@@ -28,7 +28,7 @@ Visual Studio의 구성 편집기에서 화면 및 테스트를 실행하는 사
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>테스트 설정에 대한 화면 및 음성 기록을 구성하려면
 
-1.  화면 및 음성을 기록하기 위해 구성할 테스트 설정을 엽니다. 자세한 내용은 [테스트(VSTS) 중 진단 데이터 수집](/vsts/manual-test/collect-diagnostic-data) 또는 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
+1.  화면 및 음성을 기록하기 위해 구성할 테스트 설정을 엽니다. 자세한 내용은 [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) 또는 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
 
 2.  테스트 설정에서 화면 및 음성을 기록하는 데 사용할 **역할**을 선택합니다.
 
@@ -63,7 +63,7 @@ Visual Studio의 구성 편집기에서 화면 및 테스트를 실행하는 사
 
 ## <a name="see-also"></a>참고 항목
 
-- [테스트하는 동안 진단 데이터 수집(VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [수동 테스트에서 진단 데이터 수집(VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)
-- [수동 테스트 실행(VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [수동 테스트 실행(Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

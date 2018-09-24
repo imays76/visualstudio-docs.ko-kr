@@ -9,16 +9,16 @@ description: 선택한 Visual Studio Enterprise 구독에 포함된 ModernRequir
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289470"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279026"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 MODERNRequirements4TFS 혜택
 
-선택한 Visual Studio 구독에는 MODERNRequirements SmartOffice 4TFS 및 ModernRequirements4TFS에 대한 6개월 구독이 포함됩니다.  MODERNRequirements의 SmartOffice4TFS는 Microsoft Word 기반 보고 및 신속하고 간소화된 서식 있는 텍스트 작성 기능을 통해 TFS 또는 Visual Studio Team Services의 기능을 확장합니다.  ModernRequirements4TFS는 작업 항목 기본 및 HTML5 시뮬레이션 기능을 제공합니다.
+선택한 Visual Studio 구독에는 MODERNRequirements SmartOffice 4TFS 및 ModernRequirements4TFS에 대한 6개월 구독이 포함됩니다.  MODERNRequirements의 SmartOffice4TFS는 Microsoft Word 기반 보고 및 신속하고 간소화된 서식 있는 텍스트 작성 기능을 통해 TFS 또는 Azure DevOps Services의 기능을 확장합니다.  ModernRequirements4TFS는 작업 항목 기본 및 HTML5 시뮬레이션 기능을 제공합니다.
 
 
 ## <a name="activation-steps"></a>활성화 단계
@@ -101,4 +101,4 @@ ms.locfileid: "43289470"
 ## <a name="support-resources"></a>지원 리소스
 -  ModernRequirements 제품과 관련하여 도움이 필요하세요?  https://www.modernrequirements.com/support-2/을 방문해 보세요.
 -  Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
--  Visual Studio IDE, Visual Studio Team Services 또는 기타 Visual Studio 제품 또는 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
+-  Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.

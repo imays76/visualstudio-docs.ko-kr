@@ -1,7 +1,7 @@
 ---
 title: Windows의 Visual Studio에서 Python 지원 개요
 description: Windows에서 최상의 Python IDE(PTVS(Visual Studio용 Python 도구)로도 알려짐)로 만드는 Visual Studio의 Python 기능에 대한 요약입니다.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626912"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320971"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
@@ -38,6 +38,8 @@ Python은 현재 Mac용 Visual Studio에서 지원되지 않지만 Visual Studio
 Visual Studio의 **Python 환경** 창(넓게 확장된 뷰에서 아래에 표시)은 전역 Python 환경, Conda 환경 및 가상 환경 모두를 관리하기 위한 단일 위치를 제공합니다. Visual Studio는 자동으로 기본 위치에 Python 설치를 검색하고 사용자 지정 설치를 구성할 수 있습니다. 각 환경을 사용하여 패키지를 쉽게 관리하고 해당 환경에 대한 대화형 창을 열고 환경 폴더에 액세스할 수 있습니다.
 
 ![Python 환경 창의 확장된 뷰](media/environments-expanded-view.png)
+
+Visual Studio의 컨텍스트 내에서 Python을 대화형으로 실행하려면 **대화형 창 열기** 명령을 사용합니다. 선택한 환경의 폴더에서 별도의 명령 창을 열려면 **PowerShell에서 열기** 명령을 사용합니다. 해당 명령 창에서 모든 Python 스크립트를 실행할 수 있습니다. 
 
 추가 정보
 
@@ -62,7 +64,7 @@ Visual Studio에서는 구문 색 지정, 모든 코드 및 라이브러리에 �
 
 ## <a name="interactive-window"></a>대화형 창
 
-Visual Studio에 알려진 모든 Python 환경의 경우 별도 명령 프롬프트를 사용하는 대신 Visual Studio 내에서 직접 Python 인터프리터에 대한 동일한 대화형(REPL) 환경을 쉽게 열 수 있습니다. 또한 환경 간 전환을 쉽게 할 수 있습니다.
+Visual Studio에 알려진 모든 Python 환경의 경우 별도 명령 프롬프트를 사용하는 대신 Visual Studio 내에서 직접 Python 인터프리터에 대한 동일한 대화형(REPL) 환경을 쉽게 열 수 있습니다. 또한 환경 간 전환을 쉽게 할 수 있습니다. (별도의 명령 프롬프트를 열려면 **Python 환경** 창에서 원하는 환경을 선택하고 앞서 [다중 인터프리터 지원](#support-for-multiple=interpreters)에서 설명한 대로 **PowerShell에서 열기** 명령을 선택합니다.)
 
 ![Visual Studio의 Python 대화형 창](media/interactive-window.png)
 
@@ -163,7 +165,7 @@ Visual Studio는 Azure에 웹앱 및 클라우드 서비스를 게시하기 위�
 
 **질문: Python 프로젝트에서 독립 실행형 실행 파일을 생성할 수 있나요?**
 
-대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에는 실행 파일을 만드는 다양한 방법이 있습니다. 또한 CPython은 블로그 게시물 [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)(CPython의 포함 가능한 zip 파일 사용)에 설명된 것처럼 네이티브 응용 프로그램 내에 포함되는 기능을 지원합니다.
+대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에서는 실행 파일을 만드는 다양한 방법을 제공합니다. 또한 CPython은 블로그 게시물 [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)(CPython의 포함 가능한 zip 파일 사용)에 설명된 것처럼 네이티브 응용 프로그램 내에 포함되는 기능을 지원합니다.
 
 ## <a name="features-matrix"></a>기능 매트릭스
 

@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5209cda81ab42f1beba8cd3afaca3aa38624c82c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a9efdae5623c00abe4626d1bbb21af4a790fa487
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666867"
 ---
 # <a name="intellisense"></a>IntelliSense
 
-Visual Studio IntelliSense를 사용하면 코드를 작성할 때 직접 보이는 곳에 호출할 수 있는 함수, 개체 멤버, 함수 인수 및 [코드 조각](code-snippets-for-r.md)에 대한 정보가 표시됩니다. 또한 입력할 때 가능한 완성이 표시되고 Tab 키나 Enter 키를 누르면 완성됩니다. **고급** 탭에 대해서는 [편집기 옵션](editing-r-code-in-visual-studio.md#editor-options)을 참조하세요. IntelliSense는 편집기 및 [대화형 창](interactive-repl-for-r-in-visual-studio.md)에서 둘 다 사용할 수 있습니다.
+Visual Studio IntelliSense를 사용하면 코드를 작성할 때 직접 보이는 곳에 호출할 수 있는 함수, 개체 멤버, 함수 인수 및 [코드 조각](code-snippets-for-r.md)에 대한 정보가 표시됩니다. 또한 입력할 때 가능한 완성이 표시되고 **Tab** 또는 **Enter** 키를 누르면 완성됩니다. **고급** 탭에 대해서는 [편집기 옵션](editing-r-code-in-visual-studio.md#editor-options)을 참조하세요. IntelliSense는 편집기 및 [대화형 창](interactive-repl-for-r-in-visual-studio.md)에서 둘 다 사용할 수 있습니다.
 
 ![함수 시그니처를 표시하는 IntelliSense](media/intellisense-function-signature.png)
 
@@ -26,22 +27,22 @@ Visual Studio IntelliSense를 사용하면 코드를 작성할 때 직접 보이
 
 ![IntelliSense 자동 완성 메뉴](media/intellisense-auto-complete-menu.png)
 
-Tab 키(또는 옵션 설정 방식에 따라 Enter 키 또는 Space 키)를 누르면 드롭다운에서 선택한 항목이 삽입됩니다. 화살표 키를 사용하여 선택을 변경할 수 있습니다.
+**Tab** 키(또는 옵션 설정 방식에 따라 **Enter** 키 또는 **Space** 키)를 누르면 드롭다운에서 선택한 항목이 삽입됩니다. 화살표 키를 사용하여 선택을 변경할 수 있습니다.
 
 IntelliSense는 R 개체 멤버에 대한 제안도 제공합니다.
 
 ![개체 멤버에 대한 IntelliSense 제안](media/intellisense-auto-complete-r-objects.png)
 
-ESC 키를 누르면 메뉴가 완전히 닫힙니다. Ctrl+Space를 사용하여 다시 표시할 수 있습니다.
+**Esc** 키를 누르면 메뉴가 완전히 닫힙니다. **Ctrl**+**Space**를 사용하여 다시 표시할 수 있습니다.
 
 함수 호출에 대해 여는 괄호(`(`)를 입력하면 닫는 괄호(`)`)가 삽입되고 앞에서 나온 시그니처 도움말이 표시됩니다.
 
 ![함수에 대한 IntelliSense 시그니처 도움말](media/intellisense-function-signature.png)
 
-다시 ESC 키를 누르면 팝업이 닫힙니다. 함수 시그니처의 경우 Ctrl+Shift+Space를 사용하여 다시 표시할 수 있습니다.
+다시 **Esc** 키를 누르면 팝업이 닫힙니다. 함수 시그니처의 경우 **Ctrl**+**Shift**+**Space**를 사용하여 다시 표시할 수 있습니다.
 
 > [!Tip]
-> 매개 변수 도움말 아래 텍스트가 숨겨져 있는 경우 Ctrl 키를 누르고 있으면 매개 변수 도움말 텍스트가 반투명하게 표시됩니다.
+> 매개 변수 도움말 아래 텍스트가 숨겨져 있는 경우 **Ctrl** 키를 누르고 있으면 매개 변수 도움말 텍스트가 반투명하게 표시됩니다.
 
 ## <a name="intellisense-for-user-defined-functions-and-variables"></a>사용자 정의 함수 및 변수에 대한 IntelliSense
 

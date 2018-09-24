@@ -9,12 +9,12 @@ description: 제공되는 구독, 적용되는 규칙 및 MPN에서 제공되는
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281032"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283576"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)의 파트너에게 제공된 Visual Studio 구독 관리
 역량을 구하거나 MPN에서 Action Pack을 구매하는 파트너는 Visual Studio 구독을 사용할 자격이 있습니다. 이러한 구독은 사용자별로 라이선스가 발급되며 파트너 회사에 근무하는 특정 지명 사용자에게 할당된 경우만 유효합니다.
@@ -54,7 +54,7 @@ Action Pack을 통해 파트너는 **3개의 Visual Studio Professional(MPN) 구
 
 또한 Visual Studio Professional(MPN) 구독자는 SQL Server Developer Edition을 포함해 개발을 위한 무료 소프트웨어를 다운로드해 사용할 수 있습니다.
 
-Visual Studio Professional (MPN) 구독에는 VSTS 혜택, 월간 Azure 크레딧, 기술 지원, 교육 또는 상업적으로 제공된 Visual Studio 구독으로 사용할 수 있는 다른 구독자 혜택이 포함되지 않습니다.
+Visual Studio Professional(MPN) 구독에는 Azure DevOps Services 혜택, 월간 Azure 크레딧, 기술 지원, 교육 또는 상업적으로 제공된 Visual Studio 구독으로 사용할 수 있는 다른 구독자 혜택이 포함되지 않습니다.
 
 ## <a name="internal-use-only-restriction"></a>내부 사용 전용 제한
 MPN 규칙은 프로그램 혜택으로 제공된 모든 소프트웨어는 내부적으로만 사용할 수 있다고 규정합니다. 이 규정은 개별 Visual Studio 구독자의 사용을 위해 제공된 소프트웨어 및 전반적인 MPN 소프트웨어 라이선스 혜택에 적용됩니다.
@@ -69,5 +69,4 @@ MPN을 통해 제공된 Visual Studio 구독을 사용하여 라이선스 사용
 
 - [MPN 프로그램 관리자 가이드](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - Visual Studio 구독을 MPN 직원에게 할당하는 방법에 대한 지침을 포함 합니다.
 - [Visual Studio 구독을 MPN 직원에게 할당](manage-mpn-subscriptions.md)
-- 
-  [사용 약관 사용](http://www.microsoft.com/useterms/) - MPN를 통해 제공된 Visual Studio 구독은 (NFR)EULA 재판매용이 아닌 Visual Studio 구독을 조건으로 합니다.
+- [사용 약관 사용](http://www.microsoft.com/useterms/) - MPN를 통해 제공된 Visual Studio 구독은 (NFR)EULA 재판매용이 아닌 Visual Studio 구독을 조건으로 합니다.

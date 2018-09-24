@@ -1,7 +1,7 @@
 ---
 title: 자습서 - Visual Studio의 Flask 학습, 1단계
 description: Visual Studio 프로젝트의 컨텍스트에서 Flask 기본 사항을 안내합니다.
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586406"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283420"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Flask 웹 프레임워크 시작
 
@@ -95,7 +95,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
 
     ![기존 원격 리포지토리에 푸시에 대한 팀 탐색기 창](media/flask/step01-push-to-github.png)
 
-    기존 리포지토리가 없는 경우 **GitHub에 게시** 및 **Visual Studio Team Services에 푸시** 옵션을 사용하여 Visual Studio 내에서 직접 만들 수 있습니다.
+    기존 리포지토리가 없는 경우 **GitHub에 게시** 및 **Azure DevOps에 푸시** 옵션을 사용하여 Visual Studio 내에서 직접 만들 수 있습니다.
 
 1. 이 자습서를 진행하면서 주기적으로 Visual Studio의 컨트롤을 사용하여 변경 내용을 커밋하고 푸시하는 습관을 기르는 것이 좋습니다. 이 자습서에서는 적절한 시점에 알려줍니다.
 

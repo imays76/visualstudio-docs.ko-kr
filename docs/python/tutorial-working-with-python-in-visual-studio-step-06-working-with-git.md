@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f21528571a929fe31e8eb8cf891918a32fe2dce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511329"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278728"
 ---
 # <a name="step-6-work-with-git"></a>6단계: Git 작업
 
 **이전 단계: [패키지 설치 및 Python 환경 관리](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio는 로컬 Git 리포지토리 및 원격 리포지토리(예: GitHub 및 Visual Studio Team Services)와의 직접 통합을 제공합니다. 통합은 리포지토리 복제, 변경 내용 커밋 및 분기 관리를 포함합니다.
+Visual Studio는 GitHub 및 Azure Repos 등의 서비스에서 로컬 Git 리포지토리 및 원격 리포지토리와의 직접 통합을 제공합니다. 통합은 리포지토리 복제, 변경 내용 커밋 및 분기 관리를 포함합니다.
 
 이 아티클에서는 기존 프로젝트에서 로컬 Git 리포지터리를 만들고 Visual Studio의 Git 관련 기능 중 일부에 익숙해지기 위한 기본적인 개요를 제공합니다.
 
@@ -56,7 +56,7 @@ Visual Studio는 로컬 Git 리포지토리 및 원격 리포지토리(예: GitH
 
 원격 Git 리포지토리에서 프로젝트를 만드는 짧은 연습은 [빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제](quickstart-03-python-in-visual-studio-project-from-repository.md)를 참조하세요.
 
-병합 충돌 처리, 끌어오기 요청으로 코드 검토, 기준 주소 다시 지정, 분기 간에 변경 내용 cherry-pick 등을 포함하는 훨씬 더 포괄적인 자습서는 [Git 및 VSTS 시작](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)을 참조하세요.
+병합 충돌 처리, 끌어오기 요청으로 코드 검토, 기준 주소 다시 지정, 분기 간에 변경 내용 cherry-pick 등을 포함하는 훨씬 더 포괄적인 자습서는 [Git 및 Azure Repos 시작하기](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)를 참조하세요.
 
 ## <a name="tutorial-review"></a>자습서 검토
 

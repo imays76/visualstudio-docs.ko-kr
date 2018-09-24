@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Feedback Client 2017 워크로드 및 구성 요소 ID
-description: Visual Studio 작업 및 구성 요소 ID를 사용하여 Visual Studio Team Services 또는 Team Foundation Server에 대한 풍부한 피드백을 제공할 수 있습니다.
+description: Visual Studio 워크로드 및 구성 요소 ID를 사용하여 Azure DevOps Services 또는 Team Foundation Server에 대한 풍부한 피드백을 제공할 수 있습니다.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: d56d68768be45fc3ab4eb8e30b777ae14abe4343
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138781"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281561"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio Feedback Client 2017 구성 요소 디렉터리
 
@@ -43,7 +43,7 @@ VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지
 
 **ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**설명:** 피드백 클라이언트를 사용하면 이해 관계자가 Visual Studio Team Services 또는 Team Foundation Server에 대한 풍부한 피드백을 제공할 수 있습니다.
+**설명:** 피드백 클라이언트를 사용하면 이해 관계자가 Azure DevOps Services 또는 Team Foundation Server에 대한 풍부한 피드백을 제공할 수 있습니다.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 

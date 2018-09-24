@@ -1,7 +1,7 @@
 ---
 title: 자습서 - Visual Studio의 Flask 학습, 5단계
 description: Visual Studio 프로젝트 컨텍스트에서 Flask 기본 사항을 검토하는 연습 과정으로, 특히 설문 조사 Flask 웹 프로젝트 및 설문 조사 Flask/Jadek 웹 프로젝트 템플릿의 기능을 구체적으로 설명합니다.
-ms.date: 05/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637619"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280096"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5단계: 설문조사 Flask 웹 프로젝트 템플릿 사용
 
@@ -356,7 +356,7 @@ def results(key):
 
 - PostgreSQL, MySQL 및 SQL Server와 같은 다른 프로덕션 수준 데이터 저장소(모두 Azure에서 호스팅할 수 있음)를 사용하는 리포지토리 구현을 추가합니다. 또한 [Python용 Azure SDK](azure-sdk-for-python.md)를 사용하여 Cosmos DB뿐만 아니라 테이블 및 Blob과 같은 Azure 저장소 서비스 작업을 수행할 수도 있습니다.
 
-- VSTS(Visual Studio Team Services)와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. VSTS, GitHub 등에서의 소스 제어 작업 외에 VSTS에서 릴리스의 필수 구성 요소로 단위 테스트를 자동으로 실행하도록 하고, 프로덕션에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 VSTS는 App Insights와 같은 모니터링 솔루션과 통합되며 Agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 다음을 참조하세요.
+- Azure Pipelines와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등에서의 소스 제어 작업 외에 Azure Test Plans에서 릴리스의 필수 구성 요소로 단위 테스트를 자동으로 실행하도록 하고, 프로덕션에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps Services는 App Insights와 같은 모니터링 솔루션과 통합되며 Agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 다음을 참조하세요.
 
-  - [Create a CI/CD pipeline for Python with the Azure DevOps project](/azure/devops-project/azure-devops-project-python?view=vsts)(Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기)
+  - [Create a CI/CD pipeline for Python with Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)(Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기)
   - [Python development in Azure with Visual Studio Team Services (video, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)(Visual Studio Team Services를 사용하여 Azure에서 Python 개발(비디오, 11분 21초)).

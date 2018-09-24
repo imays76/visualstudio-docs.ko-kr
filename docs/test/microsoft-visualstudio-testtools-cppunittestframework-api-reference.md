@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381988"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280924"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조
 
 이 항목에서는 `Microsoft::VisualStudio::CppUnitTestFramework` 네임스페이스의 public 구성원 목록을 제공합니다. 이 API를 사용하여 Microsoft Native Unit Test Framework를 기반으로 C++ 단위 테스트를 작성합니다. 이 항목의 마지막에는 [사용 예제](#example)가 있습니다.
 
- 헤더 파일은 *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\include** 폴더에 있습니다.
+ 헤더 파일은 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include** 폴더에 있습니다.
 
- lib 파일은 *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\lib** 폴더에 있습니다.
+ lib 파일은 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib** 폴더에 있습니다.
 
 헤더 및 라이브러리 경로는 기본 테스트 프로젝트에서 자동으로 구성됩니다.
 

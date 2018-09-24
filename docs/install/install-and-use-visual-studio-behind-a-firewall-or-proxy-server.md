@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138424"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280586"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -119,7 +119,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |ASA 작업을 확인, 제출, 실행 및 관리하는 데 사용됩니다. <br><br> HDI 클러스터를 찾아보고 HDI 작업을 제출, 진단 및 디버그하는 데 사용됩니다. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 작업을 컴파일, 제출, 확인, 진단 및 디버그하는 데 사용됩니다. ADLS 파일을 찾는 데 사용됩니다. 파일을 업로드 및 다운로드하는 데 사용됩니다. |
 | 패키징 서비스 | [계정].visualstudio.com <br/> [계정].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org 및 *.nodejs.org는 특정 빌드 작업 시나리오(예: NuGet 도구 설치 관리자, 노드 도구 설치 관리자) 또는 피드와 함께 공용 업스트림을 사용하려는 경우에만 필요합니다. 다른 세 가지 도메인은 패키징 서비스의 핵심 기능에 필요합니다. |
-| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | VSTS를 사용하여 연결하는 데 사용 |
+| Azure DevOps Services | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Azure DevOps Services와 연결하는 데 사용됨 |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>네트워크 관련 오류 문제 해결

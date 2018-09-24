@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e5f0696db8f8e29204f9fbed49cc347a4afb74
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 28e103e278ab044ee9dcef8226a65afc78da9829
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669348"
 ---
 # <a name="perftips"></a>PerfTips
 Visual Studio 디버거 *PerfTips* 및 디버거 통합 **진단 도구** 는 디버그하는 동안 앱의 성능을 모니터링 및 분석하는 데 도움이 됩니다.  
@@ -27,9 +28,9 @@ Visual Studio 디버거 *PerfTips* 및 디버거 통합 **진단 도구** 는 �
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>진단 도구 창  
- 중단점 및 관련된 타이밍 데이터가 [진단 도구] 창에 기록됩니다.  
+ 중단점 및 관련된 타이밍 데이터가 **진단 도구** 창에 기록됩니다.  
   
- 다음 그림은 Visual Studio 2015 업데이트 1의 진단 도구 창을 보여 줍니다.  
+ 다음 그림에서는 Visual Studio 2015 업데이트 1의 **진단 도구** 창을 보여 줍니다.  
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
@@ -57,4 +58,4 @@ Visual Studio 디버거 *PerfTips* 및 디버거 통합 **진단 도구** 는 �
 
 ## <a name="see-also"></a>참고 항목
  [Visual Studio의 프로파일링](../profiling/index.md)  
- [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)
+ [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179699"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283472"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
@@ -59,9 +59,9 @@ Azure AD는 ASP.NET MVC 웹 응용 프로그램에서의 최종 사용자 Single
 
 ASP.NET에서 사용되는 다양한 종류의 인증에 대한 자세한 내용은 [Visual Studio 2013에서 ASP.NET 웹 프로젝트 만들기](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth)를 참조하세요(인증에 대한 정보는 현재 버전의 Visual Studio에도 적용됨).
 
-### <a name="access-your-visual-studio-team-services-account"></a>Visual Studio Team Services 계정 액세스
+### <a name="access-your-team-foundation-server-tfs-organization"></a>TFS(Team Foundation Server) 조직에 액세스
 
-기본 메뉴에서 **팀** > **Team Foundation Server에 연결**을 선택하여 **팀 탐색기** 창을 표시합니다. **팀 프로젝트 선택**을 클릭한 후 **Team Foundation Server 선택**아래의 목록 상자를 보면 Visual Studio Team Services 계정의 URL이 나타나야 합니다. URL을 선택하면 자격 증명을 다시 입력하지 않고도 로그인됩니다.
+기본 메뉴에서 **팀** > **Team Foundation Server에 연결**을 선택하여 **팀 탐색기** 창을 표시합니다. **프로젝트 선택**을 클릭한 후 **Team Foundation Server 선택** 아래의 목록 상자를 보면 TFS 조직의 URL이 나타나야 합니다. URL을 선택하면 자격 증명을 다시 입력하지 않고도 로그인됩니다.
 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Visual Studio에 두 번째 사용자 계정 추가
 

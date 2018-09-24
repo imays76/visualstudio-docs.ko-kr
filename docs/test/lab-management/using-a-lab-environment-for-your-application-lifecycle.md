@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844305"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321179"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 
@@ -40,9 +40,9 @@ ms.locfileid: "34844305"
 |---|---|
 |  ![동영상에 대한 비디오 카메라 아이콘](../../install/media/video-icon.png)  |    테스트할 랩 환경 관리에 대한 [동영상을 시청](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)하세요. |
 
-## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Team Services 또는 Team Foundation Server의 빌드 및 릴리스와 함께 클라우드 사용
+## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Azure Pipelines 또는 Team Foundation Server의 빌드 및 릴리스와 함께 클라우드 사용
 
-TFS(Team Foundation Server) 및 Visual Studio Team Services의 [빌드 및 릴리스](/vsts/build-release/) 기능을 사용하여 자동화된 테스트 및 빌드-배포-테스트 자동화를 수행할 수 있습니다. 몇 가지 이점은 다음과 같습니다.
+TFS(Team Foundation Server) 및 Azure Test Plans의 [빌드 및 릴리스](/azure/devops/pipelines/index?view=vsts) 기능을 사용하여 자동화된 테스트 및 빌드-배포-테스트 자동화를 수행할 수 있습니다. 몇 가지 이점은 다음과 같습니다.
 
 * 빌드 컨트롤러 또는 테스트 컨트롤러가 필요하지 않습니다.
 * 테스트 에이전트는 빌드 또는 릴리스에 포함된 작업을 통해 설치됩니다.
@@ -75,8 +75,7 @@ Visual Studio Lab Management를 사용하여 만들 수 있는 랩 환경에는 
 
 **표준 환경:** 가상 컴퓨터와 물리적 컴퓨터가 혼합되어 포함될 수 있습니다. 타사 가상화 프레임워크에서 관리되는 표준 환경에 가상 컴퓨터를 추가할 수도 있습니다. 또한 표준 환경에는 SCVMM 서버와 같은 추가 서버 리소스가 필요하지 않습니다.
 
-
-  **SCVMM 환경:** SCVMM(System Center Virtual Machine Manager)이 관리하는 가상 머신만 포함될 수 있으므로 SCVMM 환경의 가상 머신은 Hyper-V 가상화 프레임워크에서만 실행할 수 있습니다. 하지만 SCVMM 환경은 표준 환경에서는 지원되지 않는 다음과 같은 자동화 및 관리 기능을 제공합니다.
+**SCVMM 환경:** SCVMM(System Center Virtual Machine Manager)이 관리하는 가상 머신만 포함될 수 있으므로 SCVMM 환경의 가상 머신은 Hyper-V 가상화 프레임워크에서만 실행할 수 있습니다. 하지만 SCVMM 환경은 표준 환경에서는 지원되지 않는 다음과 같은 자동화 및 관리 기능을 제공합니다.
 
 - **환경 스냅숏:** 환경 스냅숏에는 랩 환경의 상태가 포함되어 있으므로 새로운 환경을 신속하게 복원하거나 수정된 환경의 상태를 저장할 수 있습니다. 또한 빌드-배포-테스트 워크플로를 사용하여 환경 스냅숏에 대한 저장 및 복원 프로세스를 자동화할 수 있습니다.
 
@@ -84,16 +83,14 @@ Visual Studio Lab Management를 사용하여 만들 수 있는 랩 환경에는 
 
 - **네트워크 격리:** 네트워크 격리를 사용하면 SCVMM 환경에 대한 동일한 복사본 여러 개를 컴퓨터 이름 충돌 없이 동시에 실행할 수 있습니다.
 
-- 
-  **가상 머신 템플릿:** 가상 머신 템플릿은 이름과 기타 식별자가 제거된 가상 머신입니다. VM 템플릿이 SCVMM 환경에 배포될 때 Microsoft Test Manager가 새 식별자를 생성합니다. 이를 통해, 여러 가상 머신 복사본을 동일한 환경 또는 여러 환경에 배포한 다음 동시에 실행할 수 있습니다.
+- **가상 머신 템플릿:** 가상 머신 템플릿은 이름과 기타 식별자가 제거된 가상 머신입니다. VM 템플릿이 SCVMM 환경에 배포될 때 Microsoft Test Manager가 새 식별자를 생성합니다. 이를 통해, 여러 가상 머신 복사본을 동일한 환경 또는 여러 환경에 배포한 다음 동시에 실행할 수 있습니다.
 
-- 
-  **저장된 가상 머신:** 팀 프로젝트 라이브러리에 저장되고 고유한 식별자를 포함하는 가상 머신입니다.
+- **저장된 Virtual Machines:** 프로젝트 라이브러리에 저장되고 고유한 식별자를 포함하는 가상 머신입니다.
 
 > [!NOTE]
 > Lab Management는 SCVMM 2016을 지원하지 않습니다.
 
-SCVMM에 대한 자세한 내용은 [Virtual Machine Manager](/vsts/build-release/apps/cd/scvmm/configure-scvmm)를 참조하세요.
+SCVMM에 대한 자세한 내용은 [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts)를 참조하세요.
 
 표준 환경과 SCVMM 환경에서는 여러 가지 동일한 기능이 지원됩니다. 하지만 고려해야 할 몇 가지 중요한 차이점이 있습니다. 다음 테이블에서는 표준 환경과 SCVMM 환경에서 지원되는 기능을 비교할 수 있습니다.
 
@@ -122,9 +119,9 @@ SCVMM에 대한 자세한 내용은 [Virtual Machine Manager](/vsts/build-releas
 |용어|설명|
 |----------|-----------------|
 |랩 센터|랩 환경을 만들고 관리하는 Microsoft Test Manager 영역입니다.|
-|팀 프로젝트 랩|이 환경에 연결하여 가상 컴퓨터를 실행할 수 있도록 설정되어 있는 랩 환경 컬렉션입니다.|
-|팀 프로젝트 라이브러리|팀 프로젝트의 호스트 그룹에 가져온 저장된 가상 컴퓨터, 템플릿 및 저장된 랩 환경의 저장소입니다. 라이브러리의 항목은 SCVMM 환경에 사용할 수 있지만 표준 환경에 직접 추가할 수 없습니다. 라이브러리의 항목을 실행할 수 없으며 대신, 새 환경을 배포하는 데 사용할 수 있습니다.|
-|배포된 환경|팀 프로젝트 랩에 배포되어 있는 랩 환경으로서 이 환경에 연결하여 해당 환경의 컴퓨터를 실행할 수 있습니다.|
+|Azure DevOps 프로젝트 랩|이 환경에 연결하여 가상 컴퓨터를 실행할 수 있도록 설정되어 있는 랩 환경 컬렉션입니다.|
+|Azure DevOps 프로젝트 라이브러리|프로젝트의 호스트 그룹에 가져온 저장된 가상 머신, 템플릿 및 저장된 랩 환경의 보관 저장소입니다. 라이브러리의 항목은 SCVMM 환경에 사용할 수 있지만 표준 환경에 직접 추가할 수 없습니다. 라이브러리의 항목을 실행할 수 없으며 대신, 새 환경을 배포하는 데 사용할 수 있습니다.|
+|배포된 환경|프로젝트 랩에 배포되어 있는 랩 환경으로, 이 환경에 연결하여 해당 환경의 머신을 실행할 수 있습니다.|
 
 Lab Management에 대한 자세한 내용은 다음을 참조하세요.
 

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138393"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281093"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
@@ -73,7 +73,7 @@ ms.locfileid: "43138393"
 
 ## <a name="error-the-underlying-connection-was-closed"></a>오류: “기본 연결이 닫혔습니다.”
 
-방화벽이 있는 개인 네트워크에서 Visual Studio를 사용하는 경우 Visual Studio가 일부 네트워크 리소스에 연결하지 못할 수 있습니다. 이러한 리소스는 로그인 및 라이선스용 VSTS(Visual Studio Team Services), NuGet 및 Azure 서비스를 포함할 수 있습니다. Visual Studio가 이러한 리소스 중 하나에 연결하지 못할 경우 다음과 같은 오류 메시지가 표시될 수 있습니다.
+방화벽이 있는 개인 네트워크에서 Visual Studio를 사용하는 경우 Visual Studio가 일부 네트워크 리소스에 연결하지 못할 수 있습니다. 이러한 리소스에는 로그인 및 라이선스용 Azure DevOps Services, NuGet 및 Azure 서비스가 포함될 수 있습니다. Visual Studio가 이러한 리소스 중 하나에 연결하지 못할 경우 다음과 같은 오류 메시지가 표시될 수 있습니다.
 
   **기본 연결이 닫혔습니다. 전송 중에 예상치 못한 오류가 발생했습니다.**
 
@@ -103,7 +103,7 @@ Visual Studio는 TLS(전송 계층 보안) 1.2 프로토콜을 사용하여 네�
 
 - cdn.vsassets.io(콘텐츠 배달 네트워크 또는 CDN, 콘텐츠 호스트)
 
-- &#42;.gallerycdn.vsassets.io(VSTS 확장 호스트)
+- &#42;.gallerycdn.vsassets.io(Azure DevOps Services 확장 호스트)
 
 - static2.sharepointonline.com(Visual Studio가 Office UI Fabric 키트에서 사용하는 리소스(예: 글꼴) 호스트)
 

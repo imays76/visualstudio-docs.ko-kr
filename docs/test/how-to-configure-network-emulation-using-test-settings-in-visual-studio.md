@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4639e59b8c8847a4368a0f3841fa271a302e7ca
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380846"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320659"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 
@@ -85,4 +85,4 @@ Visual Studio에서 다양한 네트워크 환경에 처한 응용 프로그램�
 ## <a name="see-also"></a>참고 항목
 
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)
-- [수동 테스트 실행(VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [수동 테스트 실행(Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

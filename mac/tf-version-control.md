@@ -1,31 +1,31 @@
 ---
-title: TF 버전 제어
-description: Team Foundation 버전 제어를 사용하여 Team Foundation Server 또는 Visual Studio Team Services에 연결.
+title: TFVC(Team Foundation 버전 제어)
+description: TFVC(Team Foundation 버전 제어)를 사용하여 Team Foundation Server 또는 Azure DevOps Services에 연결.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/03/2018
+ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224305"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279844"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>eam Foundation 버전 제어에 연결 
+# <a name="connecting-to-team-foundation-version-control"></a>Team Foundation 버전 제어에 연결 
 
 > [!NOTE]
 > **참고**: Team Foundation 버전 제어 지원은 현재 미리 보기 상태이며, 일부 기능은 아직 완전히 작동하지 않습니다. 모든 문제에 대한 피드백을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/41/index.html)에 올려주시면 감사하겠습니다. 아직 변경의 여지가 많이 있습니다.
 
-VSTS(Visual Studio Team Services) 및 TFS(Team Foundation Server)는 분산형 버전 제어인 Git와 중앙 집중식 버전 제어인 TFVC(Team Foundation Version Control)라는 두 가지 버전 제어 모드를 제공합니다. 이 아티클에서는 Mac용 Visual Studio에서 Team Foundation 버전 제어를 사용하는 방법에 대한 개요와 그 시작점을 제공합니다.
+Azure Repos는 분산형 버전 제어인 Git와 중앙 집중식 버전 제어인 TFVC(Team Foundation 버전 제어)라는 두 가지 버전 제어 모델을 제공합니다. 이 문서에서는 Mac용 Visual Studio에서 TFVC를 사용하는 방법에 대한 개요와 그 시작점을 제공합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 * Visual Studio Community, Professional 또는 Mac용 Enterprise 버전 7.5 이상.
-* Visual Studio Team Services 또는 Team Foundation Server 2013 이상.
-* Team Foundation 버전 제어를 사용하도록 구성된 Visual Studio Team Services 또는 Team Foundation Server의 프로젝트.
+* Azure DevOps Services 또는 Team Foundation Server 2013 이상.
+* Team Foundation 버전 제어를 사용하도록 구성된 Azure DevOps Services 또는 Team Foundation Server의 프로젝트.
 
 ## <a name="installation"></a>설치
 
@@ -47,17 +47,19 @@ TFVC 확장에 대한 업데이트는 정기적으로 이루어집니다. 업데
 
 ## <a name="using-the-add-in"></a>추가 기능 사용
 
-확장이 설치되면 **버전 제어 > TFS/VSTS > 원격 리포지토리에서 열기** 메뉴 항목을 선택합니다. 
+확장이 설치되면 **버전 제어 > TFS/Azure DevOps > 원격 리포지토리에서 열기** 메뉴 항목을 선택합니다.
 
-Visual Studio Team Services 또는 Team Foundation Server를 선택하여 시작하고 **계속**을 누릅니다.
+  ![확장을 여는 메뉴 항목](media/tfvc-source-control-explorer-devops.png)
 
-  ![서버와 연결](media/tfvc-choose-server-type.png)
+VSTS 또는 Team Foundation Server를 선택하여 시작하고 **계속**을 누릅니다.
 
-### <a name="vsts-authentication"></a>VSTS 인증
+  ![서버와 연결](media/tfvc-choose-server-type-devops.png)
 
-VSTS에서 호스팅되는 프로젝트를 선택하면 Microsoft 계정 세부 정보를 입력하라는 메시지가 표시됩니다.
+### <a name="azure-repos-authentication"></a>Azure Repos 인증
 
-  ![VSTS 서버와 연결](media/tfvc-vsts-login.png)
+Azure Repos에서 호스팅되는 프로젝트를 선택하면 Microsoft 계정 세부 정보를 입력하라는 메시지가 표시됩니다.
+
+  ![Azure Repos를 사용하여 연결](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>TFS 인증
 
@@ -73,10 +75,10 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
 
 이 대화 상자는 다음 노드로 구성됩니다.
 
-- VSTS 계정 또는 컬렉션 - 로그인한 Microsoft 계정에 연결된 모든 계정 표시
-- 팀 프로젝트 - 각 VSTS 내에 여러 팀 프로젝트를 진행할 수 있습니다. 팀 프로젝트는 소스 코드, 작업 항목 및 자동화된 빌드가 호스팅되는 곳입니다.
+- Azure DevOps Services 조직 또는 컬렉션 - 로그인할 때 사용하는 Microsoft 계정에 연결된 모든 조직이 표시됩니다.
+- 프로젝트 - 각 조직 또는 컬렉션에 많은 수의 프로젝트가 포함될 수 있습니다. 프로젝트는 소스 코드, 작업 항목 및 자동화된 빌드가 호스팅되는 위치입니다.
 
-이 시점에서 프로젝트 또는 계정의 이름으로 검색하고 필터링할 수 있습니다.
+이 시점에서 프로젝트 또는 조직의 이름으로 검색하고 필터링할 수 있습니다.
 
 ### <a name="adding-a-new-server"></a>새 서버 추가
 
@@ -86,7 +88,7 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
 
 목록에서 공급자를 선택하고 자격 증명을 입력합니다.
 
-![소스 제어 공급자에 대한 옵션을 표시하는 대화 상자](media/tfvc-add-new-creds.png)
+![소스 제어 공급자에 대한 옵션을 표시하는 대화 상자](media/tfvc-add-new-creds-devops.png)
 
 ## <a name="creating-a-new-workspace"></a>새 작업 영역 만들기
 
@@ -102,9 +104,7 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
 
 작업 영역을 만들고 프로젝트를 매핑하면 _소스 코드 탐색기_를 사용하여 작업을 시작할 수 있습니다.
 
-소스 코드 탐색기를 열려면 **버전 제어 > TFS/VSTS > 소스 제어 탐색기**를 선택합니다.
-
-![소스 코드 탐색기를 여는 메뉴 항목](media/tfvc-source-control-explorer.png)
+소스 코드 탐색기를 열려면 **버전 제어 > TFS/Azure DevOps > 소스 제어 탐색기** 메뉴 항목을 선택합니다.
 
 소스 코드 탐색기를 사용하면 매핑된 모든 프로젝트, 해당 파일 및 폴더를 탐색할 수 있습니다. 또한 다음과 같은 모든 기본 소스 제어 작업을 수행할 수 있습니다.
 
@@ -122,7 +122,7 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
 
 ## <a name="managing-workspaces"></a>작업 영역 관리
 
-[작업 영역 만들기](#creating-a-new-workspace) 섹션에서 설명한 대로 작업 영역을 아직 만들지 않은 경우 소스 코드 탐색기가 비어 있습니다.
+[작업 영역 만들기](#creating-a-new-workspace) 섹션에서 설명한 대로 작업 영역을 아직 만들지 않은 경우 소스 코드 탐색기는 비어 있습니다.
 
 ![빈 소스 코드 탐색기](media/tfvc-setup-empty-sce.png) 
 
@@ -134,11 +134,11 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
     
     ![기본 옵션을 표시하는 새 작업 영역 대화 상자 만들기](media/tfvc-workspace1.png) 
 
-1. "$" 폴더를 선택하여 서버의 모든 팀 프로젝트를 동일한 작업 영역에 매핑하거나 개별 프로젝트를 선택하고 **확인**을 클릭합니다.
+1. "$" 폴더를 선택하여 서버의 모든 프로젝트를 동일한 작업 영역에 매핑하거나 개별 프로젝트를 선택하고 **확인**을 클릭합니다.
     
     ![모든 프로젝트를 표시하는 폴더 대화 상자 찾아보기](media/tfvc-workspace2.png) 
 
-1. 프로젝트를 원하는 로컬 머신의 위치를 선택하고 **폴더 선택**을 클릭합니다.
+1. 프로젝트를 매핑하려는 로컬 머신의 위치를 선택하고 **폴더 선택**을 클릭합니다.
 1. **확인**을 눌러 새 작업 영역의 세부 정보 확인
     
     ![작업 폴더가 추가된 새 작업 영역 대화 상자 만들기](media/tfvc-workspace3.png) 
@@ -157,10 +157,10 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
 - Basic
 - Ntlm
 
-기본 인증을 사용하려면 다음 단계에 따라 VSTS에서 **대체 인증 자격 증명**을 활성화해야 합니다.
+기본 인증을 사용하려면 다음 단계에 따라 Azure DevOps Services에서 **대체 인증 자격 증명**을 활성화해야 합니다.
 
-1. VSTS 계정(https://{youraccount}.visualstudio.com)에 계정 소유자로 로그인합니다.
-2. 계정 도구 모음에서 기어 아이콘을 선택하고 **정책**을 선택합니다.
+1. 소유자로 Azure DevOps Service 조직에 로그인합니다(https://dev.azure.com/{organization}/{project}).
+2. 조직 도구 모음에서 기어 아이콘을 선택하고 **정책**을 선택합니다.
     
     ![선택한 정책 설정 옵션](media/tfvc-auth2.png) 
 
@@ -172,7 +172,7 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
 
 개발 머신에서 TFVC(Team Foundation 버전 제어)를 설정하려면 [작업 영역 관리](#managing-workspaces) 섹션에 설명된 대로 작업 영역을 **만들어야** 합니다.
 
-소스 제어 탐색기에서 **작업 영역 관리** 단추를 누릅니다. 팀 프로젝트를 개발 컴퓨터의 폴더에 매핑하는 단계를 수행합니다.
+소스 제어 탐색기에서 **작업 영역 관리** 단추를 누릅니다. 프로젝트를 개발 머신의 폴더에 매핑하는 단계를 수행합니다.
 
 ### <a name="i-do-not-see-any--all-of-my-projects"></a>내 프로젝트 중 일부/전부가 표시되지 않음
 

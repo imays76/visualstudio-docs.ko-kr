@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943120"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280625"
 ---
 # <a name="how-to-unlock-visual-studio"></a>방법: Visual Studio 잠금 해제
 
@@ -27,14 +27,14 @@ ms.locfileid: "31943120"
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>온라인 구독을 사용하여 Visual Studio의 잠금을 해제하려면
 
-Microsoft 계정이나 회사 또는 학교 계정과 연결된 MSDN 또는 Visual Studio Team Service 구독을 사용하여 Visual Studio를 잠금 해제하려면:
+Microsoft 계정이나 회사 또는 학교 계정과 연결된 Visual Studio 구독 또는 Azure DevOps Services 조직을 사용하여 Visual Studio를 잠금 해제하려면
 
 1. IDE 오른쪽 위의 **로그인** 단추를 클릭하거나 **파일** > **계정 설정**을 선택하여 **계정 설정** 대화 상자를 열고 **로그인** 단추를 클릭합니다.
 
-1. Microsoft 계정이나 회사 또는 학교 계정에 대한 자격 증명을 입력합니다. Visual Studio에서 해당 계정과 연결된 Visual Studio 구독 또는 Visual Studio Team Services 구독을 찾습니다.
+1. Microsoft 계정이나 회사 또는 학교 계정에 대한 자격 증명을 입력합니다. Visual Studio에서 해당 계정과 연결된 Visual Studio 구독 또는 Azure DevOps Services 조직을 찾습니다.
 
 > [!IMPORTANT]
-> **팀 탐색기** 도구 창에서 Visual Studio Team Services 계정에 연결하면 Visual Studio에서 연결된 온라인 구독을 자동으로 찾습니다. Visual Studio Team Services 계정에 연결하면 Microsoft와 회사 또는 학교 계정을 사용하여 로그인할 수 있습니다. 해당 사용자 계정에 대한 온라인 구독이 있으면 Visual Studio에서 IDE를 자동으로 잠금 해제합니다.
+> **팀 탐색기** 도구 창에서 Azure DevOps Services 조직에 연결하면 Visual Studio에서 연결된 온라인 구독을 자동으로 찾습니다. Azure DevOps Services 조직에 연결하면 Microsoft 계정 및 회사 또는 학교 계정을 사용하여 로그인할 수 있습니다. 해당 사용자 계정에 대한 온라인 구독이 있으면 Visual Studio에서 IDE를 자동으로 잠금 해제합니다.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>제품 키를 사용하여 Visual Studio의 잠금을 해제하려면
 

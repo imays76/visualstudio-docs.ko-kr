@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2c32f63f6272d550604df79186ae7c54cfc3f22e
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282527"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320945"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017의 기능
 
-[Visual Studio IDE 개요](../ide/visual-studio-ide.md) 항목에서는 Visual Studio에 대한 기본적인 소개를 제공합니다. 이 문서에서는 숙련된 개발자 또는 이미 Visual Studio에 익숙한 사용자에게 보다 적합한 기능에 대해 설명합니다.
+[Visual Studio IDE 개요](../ide/visual-studio-ide.md) 문서에서는 Visual Studio에 대한 기본적인 소개를 제공합니다. 이 문서에서는 숙련된 개발자 또는 이미 Visual Studio에 익숙한 사용자에게 보다 적합한 기능에 대해 설명합니다.
 
 ## <a name="modular-installation"></a>모듈식 설치
 
@@ -100,19 +100,19 @@ Visual Studio의 **SQL Server 개체 탐색기**는 SQL Server Management Studio
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>소스 코드 관리 및 다른 사용자와 공동 작업
 
-GitHub를 포함한 모든 공급자가 호스팅하는 Git 리포지토리에서 원본 코드를 관리할 수 있습니다. 또는 [VSTS(Visual Studio Team Services)](/vsts/index)를 사용하여 전체 프로젝트의 버그 및 작업 항목과 함께 코드를 관리합니다. Visual Studio에서 팀 탐색기를 사용하여 Git 리포지토리를 관리하는 방법에 대해 알아보려면 [Git 및 Team Services 시작하기(VSTS)](/vsts/git/gitquickstart?tabs=visual-studio)를 참조하세요. Visual Studio에는 기본 제공된 다른 소스 제어 기능이 있습니다. 이에 대한 자세한 내용은 [Visual Studio 2017의 새로운 Git 기능(블로그)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/)을 참조하세요.
+GitHub를 포함한 모든 공급자가 호스팅하는 Git 리포지토리에서 원본 코드를 관리할 수 있습니다. 또는 [Azure DevOps Services](/azure/devops/index?view=vsts)를 사용하여 전체 프로젝트의 버그 및 작업 항목과 함께 코드를 관리하세요. Visual Studio에서 팀 탐색기를 사용하여 Git 리포지토리를 관리하는 방법에 대해 알아보려면 [Git 및 Azure Repos 시작하기](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)를 참조하세요. Visual Studio에는 기본 제공된 다른 소스 제어 기능이 있습니다. 이에 대한 자세한 내용은 [Visual Studio 2017의 새로운 Git 기능(블로그)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/)을 참조하세요.
 
-VSTS는 소프트웨어 프로젝트를 호스팅하고 팀 공동 작업을 수행할 수 있는 클라우드 기반 서비스입니다. VSTS는 Git 및 Team Foundation 소스 제어 시스템과 Scrum, CMMI 및 Agile 개발 방법론을 지원합니다. TFVC(Team Foundation 버전 제어)는 하나의 중앙 집중식 서버 리포지토리를 사용하여 파일을 추적하고 버전을 관리합니다. 다른 개발자가 최신 변경 내용을 가져올 수 있는 중앙 서버에 로컬 변경 내용이 항상 체크 인됩니다.
+Azure DevOps Services는 소프트웨어를 계획, 호스트, 자동화 및 배포하고 팀의 공동 작업을 지원하기 위한 클라우드 기반 서비스입니다. Azure DevOps Services는 버전 제어 시스템에 저장된 코드의 연속 빌드 및 릴리스(CI/CD)를 위한 파이프라인뿐만 아니라 Git 리포지토리(분산된 버전 제어) 및 Team Foundation 버전 제어(중앙 집중식 버전 제어)도 지원합니다. 또한 Azure DevOps Services는 스크럼, CMMI 및 Agile 개발 방법론도 지원합니다.
 
 TFS(Team Foundation Server)는 Visual Studio용 응용 프로그램 수명 주기 관리 허브입니다. 개발 프로세스와 관련된 모든 사람이 단일 솔루션을 사용하여 참여할 수 있도록 해줍니다. TFS는 성격이 다른 팀과 프로젝트들을 관리하는 데 유용합니다.
 
-네트워크에 Visual Studio Team Services 계정 또는 Team Foundation Server가 있는 경우 Visual Studio의 **팀 탐색기** 창을 통해 연결합니다. 이 창에서 코드를 소스 제어에 체크 인 또는 체크 아웃하고, 작업 항목을 관리하고, 빌드를 시작하고, 단체 방 및 작업 영역에 액세스할 수 있습니다. **빠른 실행** 상자나 **보기** > **팀 탐색기** 또는 **팀** > **연결 관리**의 주 메뉴에서 **팀 탐색기**를 열 수 있습니다.
+네트워크에 Azure DevOps Services 조직 또는 Team Foundation Server가 있는 경우 Visual Studio의 **팀 탐색기** 창을 통해 연결합니다. 이 창에서 코드를 소스 제어에 체크 인 또는 체크 아웃하고, 작업 항목을 관리하고, 빌드를 시작하고, 단체 방 및 작업 영역에 액세스할 수 있습니다. **빠른 실행** 상자나 **보기** > **팀 탐색기** 또는 **팀** > **연결 관리**의 주 메뉴에서 **팀 탐색기**를 열 수 있습니다.
 
-다음 이미지는 VSTS에서 호스트되는 솔루션에 대한 **팀 탐색기** 창을 보여 줍니다.
+다음 이미지는 Azure DevOps Services에서 호스트되는 솔루션에 대한 **팀 탐색기** 창을 보여 줍니다.
 
 ![Visual Studio 팀 탐색기](../ide/media/vs2017_teamexplorer.png)
 
-팀의 개발자들이 버전 제어에 체크 인한 코드를 빌드하도록 빌드 프로세스를 자동화할 수도 있습니다. 예를 들어 밤마다 또는 코드를 체크 인할 때마다 하나 이상의 프로젝트를 빌드할 수 있습니다. 자세한 내용은 [빌드 및 릴리스(VSTS 및 TFS)](/vsts/build-release/index)를 참조하세요.
+팀의 개발자들이 버전 제어에 체크 인한 코드를 빌드하도록 빌드 프로세스를 자동화할 수도 있습니다. 예를 들어 밤마다 또는 코드를 체크 인할 때마다 하나 이상의 프로젝트를 빌드할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
 
 ## <a name="extend-visual-studio"></a>Visual Studio 확장
 

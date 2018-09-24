@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b9c699056a3ef4ee493397e99e37f41cbd2cf3e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: dbecc61e5203495e33aa4417e954607d8cdf6be8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669601"
 ---
 # <a name="start"></a>시작
-**Start** 옵션은 지정된 프로파일링 방법으로 프로파일러를 초기화하는 VSPerfCmd.exe 옵션입니다.  
+**Start** 옵션은 지정된 프로파일링 방법으로 프로파일러를 초기화하는 *VSPerfCmd.exe* 옵션입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -65,7 +66,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  프로파일러를 해제합니다.  
   
 ## <a name="example"></a>예  
- 다음 예제에서는 VSPerfCmd.exe **Start** 옵션을 사용하여 프로파일러를 초기화하는 방법을 보여 줍니다.  
+ 다음 예제에서는 *VSPerfCmd.exe* **Start** 옵션을 사용하여 프로파일러를 초기화하는 방법을 보여 줍니다.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  

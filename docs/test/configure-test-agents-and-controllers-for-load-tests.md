@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176471"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321114"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>부하 테스트 실행에 대한 테스트 에이전트 및 테스트 컨트롤러 구성
 
 Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시뮬레이션된 부하를 생성할 수 있습니다. 이러한 컴퓨터는 단일 테스트 컨트롤러와 하나 이상의 테스트 에이전트로 설정되어야 합니다. 테스트 컨트롤러 및 테스트 에이전트를 사용하여 단일 컴퓨터에서 생성하는 것보다 많은 부하를 생성할 수 있습니다.
 
 > [!NOTE]
-> 또한 클라우드 기반 부하 테스트를 사용하여 동시에 웹 사이트에 액세스하는 여러 사용자의 부하를 생성하는 가상 머신을 제공할 수 있습니다. [VSTS를 사용하여 부하 테스트 실행](/vsts/load-test/get-started-simple-cloud-load-test)에서 클라우드 기반 부하 테스트에 대해 자세히 알아보세요.
+> 또한 클라우드 기반 부하 테스트를 사용하여 동시에 웹 사이트에 액세스하는 여러 사용자의 부하를 생성하는 가상 머신을 제공할 수 있습니다. [Azure Test Plans를 사용하여 부하 테스트 실행](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)에서 클라우드 기반 부하 테스트에 대해 자세히 알아보세요.
 
 ## <a name="load-simulation-architecture"></a>부하 시뮬레이션 아키텍처
 

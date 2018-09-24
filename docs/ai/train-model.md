@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: b9d66539d10fe97cefbba51295b43fcfa19be50a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379834"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278324"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI에서 AI 모델 학습
 
@@ -34,9 +34,9 @@ Visual Studio Tools for AI에 통합되므로 Azure에서 동적으로 학습 �
 
     ![샘플 갤러리](media\train-model\batchai.png)
 
-3. **보기 > 팀 탐색기...** 를 선택하여 GitHub 또는 Visual Studio Team Services에 연결하거나 리포지토리를 복제할 수 있는 **팀 탐색기** 창을 엽니다.
+3. **보기 > 팀 탐색기...** 를 선택하여 GitHub 또는 Azure DevOps에 연결하거나 리포지토리를 복제할 수 있는 **팀 탐색기** 창을 엽니다.
 
-    ![Visual Studio Team Services, GitHub 및 리포지토리 복제를 보여 주는 팀 탐색기 창](media\train-model\team-explorer.png)
+    ![Azure DevOps, GitHub를 표시하고 리포지토리를 복제하는 팀 탐색기 창](media\train-model\team-explorer.png)
 
 4. **로컬 Git 리포지토리** 아래의 URL 필드에 `https://github.com/Microsoft/samples-for-ai`를 입력하고, 복제된 파일에 대한 폴더를 입력하고, **복제**를 선택합니다.
 

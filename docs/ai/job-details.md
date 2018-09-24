@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: f11a66fd06a2b0b3b23d35c3153c5dd26fab282e
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b7c8de18ba0083d31287fe862ab0015cb210bce1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29709833"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279637"
 ---
 # <a name="view-recent-job-performance-and-details"></a>최근 작업 성능 및 세부 정보 보기
 작업을 제출하면 작업 목록을 보고 해당 상태, 기간 등을 확인할 수 있습니다.
