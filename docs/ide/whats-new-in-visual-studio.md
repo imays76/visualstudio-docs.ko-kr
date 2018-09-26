@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384190"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029110"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
-**[15.8 릴리스](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)용으로 업데이트됨**
+**[15.8 릴리스](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)용으로 업데이트됨**
 
 Visual Studio의 이전 버전에서 업그레이드하려고 하십니까? Visual Studio 2017에서 제공하는 기능 소개: 모든 개발, 앱 및 플랫폼에서 탁월한 생산성 Visual Studio 2017를 사용하여 Android, iOS, Windows, Linux, 웹 및 클라우드용 앱을 개발합니다. 빠르게 코딩하고, 간단하게 디버그 및 진단하고, 자주 테스트하며, 안심하고 릴리스하세요. 개발자 고유의 확장을 빌드하여 Visual Studio를 확장하고 사용자 지정할 수도 있습니다. 이 릴리스로 버전 제어를 사용하고, 민첩하게 대처하고, 효율적으로 공동 작업하세요.
 
@@ -42,7 +42,7 @@ Visual Studio의 이전 버전에서 업그레이드하려고 하십니까? Visu
 * **[AI 개발](#ai-development)**. Visual Studio Tools for AI를 통해 Visual Studio의 생산성 기능을 사용하여 AI 혁신을 가속화할 수 있습니다. Azure Machine Learning과 원활하게 통합되는 딥 러닝/AI 솔루션을 빌드, 테스트 및 배포하여 강력한 실험 기능을 제공할 수 있습니다.
 
 > [!NOTE]
-> Visual Studio 2017의 새로운 기능에 대한 전체 목록은 [현재 릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)를 참조하세요. 향후 제공할 기능을 살펴보려면 [미리 보기 릴리스 정보](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)를 참조하세요.
+> Visual Studio 2017의 새로운 기능에 대한 전체 목록은 [현재 릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)를 참조하세요. 향후 제공할 기능을 살펴보려면 [미리 보기 릴리스 정보](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017)를 참조하세요.
 
 Visual Studio 2017에서 가장 두드러진 개선 사항과 새로운 기능에 대한 자세한 내용은 다음과 같습니다.
 
@@ -50,7 +50,7 @@ Visual Studio 2017에서 가장 두드러진 개선 사항과 새로운 기능�
 
 ### <a name="a-new-setup-experience"></a>새로운 설치 환경
 
-[Visual Studio 2017 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 또는 [Visual Studio 시스템 요구 사항 확인](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Visual Studio 2017 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 또는 [Visual Studio 시스템 요구 사항 확인](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
 
  Visual Studio를 사용하면 필요할 때 필요한 기능만 쉽고 빠르게 설치할 수 있습니다. 또한 완전히 제거됩니다.
 
@@ -381,7 +381,7 @@ Visual Studio를 개선하는 방법을 제안하거나 제품 지원 옵션에 
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 2017 릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Visual Studio 2017 릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Visual C++의 새로운 기능](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C#의 새로운 기능](/dotnet/csharp/whats-new)
 * [Team Foundation Server의 새로운 기능](/tfs/server/whats-new?view=vsts)

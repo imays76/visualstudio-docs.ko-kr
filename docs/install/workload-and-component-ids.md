@@ -17,16 +17,16 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: c46ce842bc9d95ffe783918b364a8cedaabf95c2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1538a3c93088cf02bcfb040cfa8a349ef7756eb5
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284057"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028912"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 작업 및 구성 요소 ID
 
-**[15.8 릴리스](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)용으로 업데이트됨**
+**[15.8 릴리스](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)용으로 업데이트됨**
 
 명령줄을 사용하여 Visual Studio를 설치하거나 VSIX 매니페스트에 종속성으로 지정하는 데 필요하고 사용 가능한 워크로드 및 구성 요소 ID를 확인하려면 다음 표에서 버전 이름을 클릭합니다.
 

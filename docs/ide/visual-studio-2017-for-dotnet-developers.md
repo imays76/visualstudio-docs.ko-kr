@@ -1,7 +1,7 @@
 ---
 title: .NET 개발을 위한 생산성 향상
 description: .NET 코드를 더 신속하게 작성할 수 있는 탐색, 코드 분석, 단위 테스트 및 기타 기능의 개요입니다.
-author: gewarren
+author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47c24aecce518cc62c93fe5e6885d77f64d49cad
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125028"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495793"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 생산성 가이드
 

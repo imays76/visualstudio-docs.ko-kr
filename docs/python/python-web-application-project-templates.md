@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638715"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029029"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 응용 프로그램 프로젝트 템플릿
 
@@ -44,7 +44,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 | --- | --- |
 | **빈 Bottle 웹 프로젝트** | 매우 짧은 인라인 페이지 템플릿을 사용하여 `<name>`을 에코하는 `/` 및 `/hello/<name>` 페이지의 홈페이지를 사용하여 *app.py*에 최소 앱을 생성합니다. |
 | **빈 Django 웹 프로젝트** | 코어 Django 사이트 구조를 사용하지만 Django 앱은 포함되지 않은 Django 프로젝트를 생성합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 1단계](learn-django-in-visual-studio-step-01-project-and-solution.md)를 참조하세요. |
-| **빈 Flask 웹 프로젝트** | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?context=visualstudio/python/default)의 자세한 단계를 수행한 결과와 유사합니다. [Flask 알아보기 1단계](learn-flask-visual-studio-step-01-project-solution.md)도 참조하세요.
+| **빈 Flask 웹 프로젝트** | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)의 자세한 단계를 수행한 결과와 유사합니다. [Flask 알아보기 1단계](learn-flask-visual-studio-step-01-project-solution.md)도 참조하세요.
 
 ### <a name="web-group"></a>웹 그룹
 
