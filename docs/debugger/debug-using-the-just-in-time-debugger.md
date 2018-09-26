@@ -1,7 +1,7 @@
 ---
 title: Just-In-Time 디버거를 사용 하 여 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 07/06/17
+ms.date: 09/24/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176443"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168398"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Just-In-Time 디버거를 사용 하 여 Visual Studio에서 디버그
 Just-in-time 디버깅 Visual Studio 자동으로 시작 외부 Visual Studio를 실행 하는 응용 프로그램에서 예외 또는 충돌이 발생 합니다. 이 옵션을 사용 하면 Visual Studio 실행 중이지 않을 때 응용 프로그램을 테스트 하 고 문제가 발생 한 경우 Visual Studio를 사용 하 여 디버깅을 시작할 수 있습니다.
@@ -48,6 +48,8 @@ Just In Time Visual Studio에서 디버깅을 사용 하지 않도록 설정 하
 4.  에 **Just-In-Time 디버깅 사용 이러한 유형의 코드** 상자에서 선택 하거나 해당 프로그램 형식 선택을 취소: **관리 되는**, **네이티브**, 또는 **스크립트**.
 
 5.  **확인**을 클릭합니다.
+
+    시간에만 사용 하도록 설정 하면 디버거, 하지만 표시 되지 않는 응용 프로그램 충돌 또는 예외를 참조 하십시오 [Just In Time 디버깅 오류](#jit_errors)합니다.
 
 컴퓨터에 Visual Studio가 더 이상 설치되어 있지 않아도 Just-In-Time 디버깅은 계속 활성화되어 있습니다. Visual Studio 설치 되어 있지 않으면 Just In Time Visual Studio에서 디버깅을 비활성화할 수 없습니다 **옵션** 대화 상자. 이 경우 Windows 레지스트리를 편집하여 Just-In-Time 디버깅을 비활성화할 수 있습니다.
 
@@ -152,28 +154,33 @@ static void Main(string[] args)
 
  이 시점에서 디버깅을 시작할 수 있습니다. 실제 응용 프로그램의 경우 코드는 예외를 throw 하는 이유를 확인 해야 합니다.
 
-## <a name="just-in-time-debugging-errors"></a>Just-In-Time 디버깅 오류
- 프로그램이 충돌할 때 대화 상자를 표시 되지 않으면,이 컴퓨터에 Windows 오류 보고 설정으로 인해 수. 있습니다 자세한 내용은 참조 하세요. [합니다. WER 설정](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started)합니다.
+## <a name="jit_errors"></a> Just-in-time 디버깅 오류
+ 프로그램 충돌 및 기능을 사용 하도록 설정 해야 하는 경우 대화 상자에 표시 되지이 컴퓨터에 Windows 오류 보고 설정으로 인해 있습니다. 추가 해야 합니다는 **사용 안 함** 다음 레지스트리 키 값 및 값 1로 설정 합니다.
 
- Just-In-Time 디버깅과 관련된 다음 오류 메시지가 나타날 수도 있습니다.
+* HKLM\Software\Microsoft\Windows\Windows 오류 보고
+* HKLM\Software\WOW6432Node\Microsoft\Windows\Windows 오류 보고
+ 
+이러한 설정에 대 한 자세한 내용은 참조 하세요. [합니다. WER 설정](https://docs.microsoft.com/windows/desktop/wer/wer-settings)합니다.
 
--   **충돌 하는 프로세스에 연결할 수 없습니다. 지정된 된 프로그램을 Windows 또는 MS-DOS 프로그램이 아닙니다.**
+또한 Just In Time와 연관 된 다음 오류 메시지가 나타날 디버깅 합니다.
 
-     이 오류는 다른 사용자로 실행 되는 프로세스에 연결 하려고 할 때 발생 합니다.
+- **충돌 하는 프로세스에 연결할 수 없습니다. 지정된 된 프로그램을 Windows 또는 MS-DOS 프로그램이 아닙니다.**
 
-     Visual Studio 시작이이 문제를 해결 하려면 엽니다는 **프로세스에 연결** 대화 상자를 **디버그** 메뉴 및 찾기 프로세스에서 디버그 하려는 **사용 가능한 프로세스**목록입니다. 프로세스의 이름을 모르는 경우 확인 합니다 **Visual Studio Just-In-Time Debugger** 대화 및 참고 프로세스 id입니다. 프로세스를 선택 합니다 **사용 가능한 프로세스** 나열 하 고 클릭 **연결**합니다. 에 **Visual Studio Just-In-Time Debugger** 대화 상자에서 클릭 **No** 대화 상자를 닫습니다.
+    이 오류는 다른 사용자로 실행 되는 프로세스에 연결 하려고 할 때 발생 합니다.
 
--   **사용자가 로그온 하기 때문에 디버거를 시작할 수 없습니다.**
+    Visual Studio 시작이이 문제를 해결 하려면 엽니다는 **프로세스에 연결** 대화 상자를 **디버그** 메뉴 및 찾기 프로세스에서 디버그 하려는 **사용 가능한 프로세스**목록입니다. 프로세스의 이름을 모르는 경우 확인 합니다 **Visual Studio Just-In-Time Debugger** 대화 및 참고 프로세스 id입니다. 프로세스를 선택 합니다 **사용 가능한 프로세스** 나열 하 고 클릭 **연결**합니다. 에 **Visual Studio Just-In-Time Debugger** 대화 상자에서 클릭 **No** 대화 상자를 닫습니다.
 
-     이 오류는 콘솔에 로그온한 사용자가 없는 컴퓨터에서 Just-In-Time 디버깅 시 Visual Studio를 시작하려고 할 때 발생합니다. 로그온한 사용자가 없으므로 Just-In-Time 디버깅 대화 상자를 표시할 사용자 세션이 없습니다.
+- **사용자가 로그온 하기 때문에 디버거를 시작할 수 없습니다.**
 
-     이 문제를 해결하려면 컴퓨터에 로그온합니다.
+    이 오류는 콘솔에 로그온한 사용자가 없는 컴퓨터에서 Just-In-Time 디버깅 시 Visual Studio를 시작하려고 할 때 발생합니다. 로그온한 사용자가 없으므로 Just-In-Time 디버깅 대화 상자를 표시할 사용자 세션이 없습니다.
 
--   **클래스가 등록 되지 않았습니다.**
+    이 문제를 해결하려면 컴퓨터에 로그온합니다.
 
-     이 오류는 설치 문제 등으로 인해 등록되지 않은 COM 클래스를 디버거에서 만들려고 했음을 의미합니다.
+- **클래스가 등록 되지 않았습니다.**
 
-     이 문제를 해결하려면 설치 디스크를 사용하여 Visual Studio를 다시 설치하거나 Visual Studio 설치를 복구합니다.
+    이 오류는 설치 문제 등으로 인해 등록되지 않은 COM 클래스를 디버거에서 만들려고 했음을 의미합니다.
+
+    이 문제를 해결하려면 설치 디스크를 사용하여 Visual Studio를 다시 설치하거나 Visual Studio 설치를 복구합니다.
 
 ## <a name="see-also"></a>참고 항목
  [디버거 보안](../debugger/debugger-security.md) [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md) [Just 시간, 디버깅, 옵션 대화 상자](../debugger/just-in-time-debugging-options-dialog-box.md) [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결 될 수 있습니다 위험 합니다. 아래의 정보가 의심스럽거나 잘 모르겠으면 이 프로세스에 연결하지 마세요.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
