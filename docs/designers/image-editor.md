@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626905"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029123"
 ---
 # <a name="image-editor"></a>이미지 편집기
 
@@ -53,8 +53,6 @@ ms.locfileid: "42626905"
    > **새 항목 추가** 대화 상자에 **그래픽** 범주가 보이지 않으면 **이미지 및 3D 모델 편집기** 구성 요소를 설치해야 할 수도 있습니다. 대화 상자를 닫은 다음, 메뉴 모음에서 **도구** > **도구 및 기능 가져오기**를 선택하여 **Visual Studio 설치 관리자**를 엽니다. **개별 구성 요소** 탭을 선택한 다음, **개임 및 그래픽** 범주에서 **이미지 및 3D 모델 편집기** 구성 요소를 선택합니다. **수정**을 선택합니다.
    >
    > ![이미지 및 3D 모델 편집기 구성 요소](media/image-3d-model-editors-component.png)
-   >
-   > **이미지 및 3D 모델 편집기** 구성 요소가 설치되어 있는데 **그래픽** 템플릿 범주가 보이지 않는 경우에는 콘솔 응용 프로그램과 같은 특정 프로젝트 유형에만 이 범주가 나타나는 점에 유의합니다.
 
    요구 사항에 따라 파일 형식을 선택하는 방법에 대한 자세한 내용은 [이미지 형식 선택](#choose-the-image-format)을 참조하세요.
 

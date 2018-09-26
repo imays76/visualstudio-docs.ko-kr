@@ -5,17 +5,17 @@ ms.date: 05/24/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 0251dd1630ca20e13bcc2238acb32a50031dd122
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280326"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496144"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
@@ -34,7 +34,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |**자세히**|
 |--------------------|
 |[Visual Studio 설치](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Visual Studio의 Xamarin에 대해 알아보기](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
+|[Visual Studio의 Xamarin에 대해 알아보기](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Xamarin 모바일 앱 개발 설명서](/xamarin/) |
 |[Xamarin 앱을 사용한 DevOps](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
 |[Visual Studio의 유니버설 Windows 앱에 대한 자세한 정보](https://visualstudio.microsoft.com/vs/universal-windows-platform/)(VisualStudio.com)|

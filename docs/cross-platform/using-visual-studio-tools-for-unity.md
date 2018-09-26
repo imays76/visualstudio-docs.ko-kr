@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283342"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496066"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 사용
 
@@ -94,14 +94,6 @@ MonoBehavior 마법사를 사용하여 빈 MonoBehavior 메서드 정의를 만�
 - 주 Visual Studio 메뉴에서 **보기 > Unity 프로젝트 탐색기**를 선택합니다. 바로 가기 키: **Alt**+**Shift**+**E**
 
      ![Unity 프로젝트 탐색기 창을 봅니다.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Unity 오류 목록
-
- Unity 인스턴스에 연결된 경우 Visual Studio 내의 Unity 콘솔로부터의 메시지를 볼 수 있습니다. 여기에는 Unity에서의 오류 및 경고가 포함됩니다. 메시지는 Visual Studio의 **오류 목록** 창에 표시됩니다. Unity의 오류 메시지는 **오류** 탭에, 경고 메시지는 **경고** 탭에, 기타 메시지(예:Debug.Log Unity API를 사용하여 보낸 메시지)는 **메시지** 탭에 표시됩니다.
-
- 메시지를 보려면 [Unity 디버깅](#unity-debugging) 섹션에 설명된 대로 Unity 프로젝트를 Visual Studio에 연결해야 합니다.
-
- Visual Studio의 **오류 목록** 창에서 Unity의 오류, 경고 및 메시지를 보지 않으려면 구성 메뉴에서 비활성화할 수 있습니다.
 
 ## <a name="unity-debugging"></a>Unity 디버깅
 
