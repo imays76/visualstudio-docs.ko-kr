@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa212ec1c01a19668cafd951ea5defe5383b17ed
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232246"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228775"
 ---
 # <a name="change-the-appearance-of-a-command"></a>명령 모양 변경
 명령의 모양을 변경 하 여 사용자에 게 피드백을 제공할 수 있습니다. 예를 들어 명령을 사용할 수 없을 때 다르게 좋습니다. 명령을 사용 가능 여부, 숨기기 또는 표시 하면 또는 확인 하거나 메뉴에서 선택 취소 합니다.  
@@ -58,7 +58,7 @@ ms.locfileid: "39232246"
     {  
         var command = sender as OleMenuCommand;  
         if (command.Text == "New Text")  
-            ChangeMyCommand(command.CommandID.ID, false);}  
+            ChangeMyCommand(command.CommandID.ID, false);
     }  
     ```  
   
@@ -77,7 +77,7 @@ ms.locfileid: "39232246"
             mc.Enabled = enableCmd;  
             cmdUpdated = true;  
         }  
-        return cmdUpdated;    }  
+        return cmdUpdated;
     }  
     ```  
   

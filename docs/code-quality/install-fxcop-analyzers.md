@@ -1,5 +1,5 @@
 ---
-title: FxCop 분석기를 설치 합니다.
+title: FxCop 분석기 설치
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c03387c20601b8d0af79067d7ff8dc1ce7bc599
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 117bf47fb5a733dfba02da98b5cae610a0aab5c7
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513612"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228855"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio에서 FxCop 분석기 설치
 
@@ -26,7 +26,7 @@ NuGet 패키지 또는 Visual Studio는 VSIX 확장으로 이러한 FxCop 분석
 
 ## <a name="to-install-fxcop-analyzers-as-a-nuget-package"></a>NuGet 패키지로 FxCop 분석기를 설치 하려면
 
-1. [분석기 패키지 버전을 결정](#analyzer-package-versions) 를 설치 하려면 Visual Studio의 버전에 따라 합니다.
+1. [분석기 패키지 버전을 결정](#fxcopanalyzers-package-versions) 를 설치 하려면 Visual Studio의 버전에 따라 합니다.
 
 1. 사용 하 여 Visual Studio에서 패키지를 설치 합니다 [패키지 관리자 콘솔](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) 또는 [패키지 관리자 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)합니다.
 
@@ -45,7 +45,7 @@ Visual Studio의 버전에 대 한 설치 FxCop 분석기 패키지의 버전을
 
 |Visual Studio 버전|FxCop 분석기 패키지 버전|
 |-|-|
-|Visual Studio 2017 버전 15.5 이상|예를 들어 2.6.1 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.1|
+|Visual Studio 2017 버전 15.5 이상|예를 들어 2.6.2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2|
 |Visual Studio 2017 버전 15.3을 15.4|예를 들어 2.3.0-beta1 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1|
 |Visual Studio 2017 버전 15.0을 15.2|예를 들어 2.0.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2|
 |Visual Studio 2015 업데이트 2와 3|예를 들어 버전 1.2.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2|
