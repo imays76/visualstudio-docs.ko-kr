@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551771"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859005"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마십시오.
 |||
@@ -58,7 +58,7 @@ ms.locfileid: "45551771"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하 고, 형식을 제거 또는 사용 하는 코드를 추가 합니다. 형식을 정적 메서드만 있으면 컴파일러가 기본 public 인스턴스 생성자를 내보내는 하지 않도록 하려면 형식에 다음 중 하나를 추가 합니다.
 
-- 에 대 한 private 생성자를 대상으로 하는 형식 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 버전 1.0 및 1.1입니다.
+- .NET Framework 버전 1.0 및 1.1을 대상으로 하는 형식에 대 한 개인 생성자입니다.
 
 - 합니다 `static` (`Shared` Visual basic에서) 한정자를 대상으로 하는 형식 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]합니다.
 

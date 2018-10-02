@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566585"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859798"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>연습: 텍스트 템플릿을 사용하여 코드 생성
 
@@ -30,7 +30,7 @@ System.Xml 네임스페이스는 XML 문서를 로드하고 메모리에서 자�
 이 예제 프로젝트에서는 템플릿이 샘플 XML 파일을 읽고, 각 노드 형식에 해당하는 클래스를 생성합니다. 직접 작성한 코드에서 이러한 클래스를 사용하여 XML 파일을 탐색할 수 있습니다. 동일한 노드 형식을 사용하는 다른 파일에서 응용 프로그램을 실행할 수도 있습니다. 샘플 XML 파일의 목적은 응용 프로그램에서 처리하고자 하는 모든 노드 형식의 예를 제공하는 것입니다.
 
 > [!NOTE]
-> [에 포함된 응용 프로그램](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]는 XML 파일에서 강력한 형식의 클래스를 생성할 수 있습니다. 여기에 표시된 템플릿은 예로서 제공됩니다.
+> 응용 프로그램 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), Visual Studio에 포함 되어 있는 XML 파일에서 강력한 형식의 클래스를 생성할 수 있습니다. 여기에 표시된 템플릿은 예로서 제공됩니다.
 
 샘플 파일은 다음과 같습니다.
 
@@ -142,7 +142,7 @@ namespace MyProject
 
 3.  파일의 템플릿 지시문에서 `hostspecific` 특성을 `true`로 변경합니다.
 
-     이렇게 변경하면 템플릿 코드가 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 서비스에 액세스할 수 있게 됩니다.
+     이 변경 하면 Visual Studio 서비스에 대 한 액세스 권한을 얻으려고 템플릿 코드입니다.
 
 4.  템플릿이 C# 파일을 생성할 수 있도록 출력 지시문에서 확장 특성을 ".cs"로 변경합니다. Visual Basic 프로젝트에서는 이를 ".vb"로 변경할 수 있습니다.
 
@@ -272,7 +272,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>Visual Studio API에 액세스
 
-`hostspecific` 지시문의 `<#@template#>` 특성을 설정하면 템플릿이 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API에 액세스할 수 있습니다. 템플릿에서는 이 특성을 사용하여 프로젝트 파일의 위치를 가져올 수 있는데, 이렇게 하면 템플릿 코드에서 절대 파일 경로를 사용하지 않아도 됩니다.
+설정 합니다 `hostspecific` 특성을 `<#@template#>` 지시문을 사용 하면 Visual Studio API에 대 한 액세스를 가져오려면 서식 파일. 템플릿에서는 이 특성을 사용하여 프로젝트 파일의 위치를 가져올 수 있는데, 이렇게 하면 템플릿 코드에서 절대 파일 경로를 사용하지 않아도 됩니다.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>

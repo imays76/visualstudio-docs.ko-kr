@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3086f6f99497789eace3ff999a8fa0693b497324
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567366"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858876"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK에서는 사용자 지정 코드를 사용하여 생성된 디자이너의 배경 이미지를 설정할 수 있습니다.
+Visual Studio Visualization and Modeling SDK에서 사용자 지정 코드를 사용 하 여 생성된 된 디자이너의 배경 이미지를 설정할 수 있습니다.
 
 ## <a name="setting-the-background-image"></a>배경 이미지 설정
 

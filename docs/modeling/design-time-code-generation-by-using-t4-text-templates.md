@@ -17,22 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567235"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860409"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
-디자인 타임 T4 텍스트 템플릿을 사용하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트에서 프로그램 코드 및 기타 파일을 생성할 수 있습니다. 데이터에 따라 생성 되는 코드를 달라 지도록 템플릿을 작성 일반적으로 *모델*합니다. 모델은 파일 또는 응용 프로그램의 요구 사항에 대 한 키 정보가 포함 된 데이터베이스.
+디자인 타임 T4 텍스트 템플릿을 Visual Studio 프로젝트에서 프로그램 코드 및 기타 파일을 생성할 수 있습니다. 데이터에 따라 생성 되는 코드를 달라 지도록 템플릿을 작성 일반적으로 *모델*합니다. 모델은 파일 또는 응용 프로그램의 요구 사항에 대 한 키 정보가 포함 된 데이터베이스.
 
  워크플로를 테이블이나 다이어그램으로 정의하는 모델을 예로 들어 보겠습니다. 해당 모델에서 워크플로를 실행하는 소프트웨어를 생성할 수 있습니다. 사용자 요구 사항이 변경 될 때 사용자를 사용 하 여 새 워크플로 설명 하기 쉽습니다. 워크플로에서 코드를 다시 생성하는 것이 코드를 직접 업데이트하는 것보다 안정적입니다.
 
 > [!NOTE]
 >  A *모델* 는 응용 프로그램의 특정 측면을 설명 하는 데이터 원본입니다. 모든 형태와 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 DSL(Domain-Specific Language) 모델 등의 특정 형태가 아니어도 됩니다. 일반적인 모델은 테이블 또는 XML 파일 형식입니다.
 
- 코드를 생성하는 방법에 대해서는 이미 잘 알고 계실 것입니다. 리소스를 정의 하는 경우는 **.resx** 파일에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션, 클래스 및 메서드 집합을 자동으로 생성 됩니다. 리소스 파일로 리소스를 편집하는 것이 클래스와 메서드를 편집하는 것보다 훨씬 쉽고 안정적입니다. 텍스트 템플릿을 사용하면 직접 디자인한 소스에서 같은 방식으로 코드를 생성할 수 있습니다.
+ 코드를 생성하는 방법에 대해서는 이미 잘 알고 계실 것입니다. 리소스를 정의 하는 경우는 **.resx** 파일 Visual Studio 솔루션에서 클래스 및 메서드 집합을 자동으로 생성 됩니다. 리소스 파일로 리소스를 편집하는 것이 클래스와 메서드를 편집하는 것보다 훨씬 쉽고 안정적입니다. 텍스트 템플릿을 사용하면 직접 디자인한 소스에서 같은 방식으로 코드를 생성할 수 있습니다.
 
  텍스트 템플릿에는 생성하려는 텍스트와 텍스트의 변수 부분을 생성하는 프로그램 코드가 혼합되어 있습니다. 프로그램 코드를 사용하면 생성된 텍스트의 일부분을 반복하거나 조건부로 생략할 수 있습니다. 생성된 텍스트 자체는 응용 프로그램 부분을 만드는 프로그램 코드일 수 있습니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "39567235"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Visual Studio에서 디자인 타임 T4 텍스트 템플릿을 만들려면
 
-1.  만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트를 만들거나 기존 실험 열기.
+1.  Visual Studio 프로젝트를 만들거나 기존 항목을 엽니다.
 
      예를 들어 합니다 **파일** 메뉴에서 선택 **새로 만들기** > **프로젝트**합니다.
 
@@ -77,15 +77,15 @@ ms.locfileid: "39567235"
 ### <a name="regenerating-the-code"></a>코드 다시 생성
  다음과 같은 경우에는 템플릿이 실행되어 보조 파일이 생성됩니다.
 
--   템플릿을 편집한 다음 다른 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 창으로 포커스를 변경하는 경우
+-   템플릿을 편집 하 고 다른 Visual Studio 창으로 포커스를 변경 합니다.
 
 -   템플릿을 저장하는 경우
 
--   클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션에서 모든 템플릿이 변환됩니다.
+-   클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 작업에서는 Visual Studio 솔루션에서 모든 템플릿을 변환 합니다.
 
 -   **솔루션 탐색기**의 바로 가기 메뉴에서 파일, 선택 **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.
 
- 템플릿이 읽는 데이터 파일이 변경되면 템플릿이 실행되도록 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트를 설정할 수도 있습니다. 자세한 내용은 [코드를 자동으로 다시 생성](#Regenerating)합니다.
+ 템플릿이 읽는 데이터 파일이 변경 된 경우 실행 되도록 Visual Studio 프로젝트를 설정할 수 있습니다. 자세한 내용은 [코드를 자동으로 다시 생성](#Regenerating)합니다.
 
 ## <a name="generating-variable-text"></a>변수 텍스트 생성
  텍스트 템플릿에서는 프로그램 코드를 사용하여 생성된 파일 내용이 바뀌도록 할 수 있습니다.
@@ -220,7 +220,7 @@ ms.locfileid: "39567235"
 <#@ import namespace="System.IO" #>
 ```
 
- `assembly` 지시문은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트의 참조 섹션과 같은 방식으로 템플릿 코드에서 지정한 어셈블리를 사용할 수 있도록 합니다. System.dll은 자동으로 참조되므로 해당 참조를 포함할 필요는 없습니다. `import` 지시문을 사용하면 일반 프로그램 파일의 `using` 지시문과 같은 방식으로 정규화된 이름을 사용하지 않고도 형식을 사용할 수 있습니다.
+ `assembly` 지시문을 사용 하면 지정된 된 어셈블리를 템플릿 코드를 사용할 수 있는 Visual Studio 프로젝트의 참조 섹션과 같은 방식에서입니다. System.dll은 자동으로 참조되므로 해당 참조를 포함할 필요는 없습니다. `import` 지시문을 사용하면 일반 프로그램 파일의 `using` 지시문과 같은 방식으로 정규화된 이름을 사용하지 않고도 형식을 사용할 수 있습니다.
 
  예를 들어 가져온 후 **System.IO**를 작성할 수 있습니다.
 
@@ -274,8 +274,8 @@ ms.locfileid: "39567235"
 
  여기서 `this.Host`는 VB에서는 `Me.Host`이며, 해당 형식은 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`와 같습니다.
 
-### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 데이터 가져오기
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 제공되는 서비스를 사용하려면 `hostSpecific` 특성을 설정하고 `EnvDTE` 어셈블리를 로드합니다. 그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
+### <a name="getting-data-from-visual-studio"></a>Visual Studio에서 데이터 가져오기
+ Visual Studio에서 제공 하는 서비스를 사용 하려면 설정 합니다 `hostSpecific` 특성과 부하는 `EnvDTE` 어셈블리입니다. 그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```scr
 <#@ template hostspecific="true" language="C#" #>
@@ -293,8 +293,8 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  텍스트 템플릿은 자체 앱 도메인에서 실행되며 마샬링을 통해 서비스에 액세스합니다. 이 경우에는 GetCOMService()가 GetService()보다 안정적입니다.
 
-##  <a name="Regenerating"></a> 코드를 자동으로 다시 생성
- 일반적으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 여러 파일은 입력 모델 하나를 사용하여 생성됩니다. 각 파일은 자체 템플릿에서 생성되지만 모든 템플릿은 같은 모델을 참조합니다.
+## <a name="Regenerating"></a> 코드를 자동으로 다시 생성
+ 일반적으로 여러 Visual Studio 솔루션 파일은 입력된 모델 하나를 사용 하 여 생성 됩니다. 각 파일은 자체 템플릿에서 생성되지만 모든 템플릿은 같은 모델을 참조합니다.
 
  소스 모델이 변경되면 솔루션에서 모든 템플릿을 다시 실행해야 합니다. 이렇게 하려면 수동으로 선택 **모든 템플릿 변형** 에 **빌드** 메뉴.
 
@@ -314,19 +314,19 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  자세한 내용은 [빌드 프로세스에서 코드 생성](../modeling/code-generation-in-a-build-process.md)합니다.
 
 ## <a name="error-reporting"></a>오류 보고
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 오류 창에 오류 및 경고 메시지를 표시하려는 경우 다음 메서드를 사용할 수 있습니다.
+ Visual Studio 오류 창에 오류 및 경고 메시지를 배치, 이러한 메서드를 사용할 수 있습니다.
 
 ```
 Error("An error message");
 Warning("A warning message");
 ```
 
-##  <a name="Converting"></a> 기존 파일을 템플릿으로 변환
+## <a name="Converting"></a> 기존 파일을 템플릿으로 변환
  템플릿의 유용한 특징 중 하나는 삽입된 일부 프로그램 코드와 함께, 템플릿에서 생성한 파일과 매우 비슷하다는 점입니다. 이로 인해 템플릿을 만드는 유용한 방법이 제공됩니다. 먼저 일반 파일을 프로토타입으로 같은 만들기는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 파일을 선택한 다음 결과 파일을 변경 하는 생성 코드를 점진적으로 도입 합니다.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>기존 파일을 디자인 타임 템플릿으로 변환하려면
 
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 파일에 `.cs`, `.vb`, `.resx` 파일 등 생성하려는 파일 형식을 추가합니다.
+1.  Visual Studio 프로젝트에 추가 등 생성 하려는 형식의 파일을 `.cs`, `.vb`, 또는 `.resx` 파일입니다.
 
 2.  새 파일을 테스트하여 작동하는지 확인합니다.
 
@@ -367,7 +367,7 @@ Warning("A warning message");
 |---------------|-----------|
 |보조 함수, 포함된 파일 및 외부 데이터를 사용하는 코드로 고급 텍스트 템플릿을 작성하고 디버그합니다.|[T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)|
 |런타임에 템플릿에서 문서를 생성합니다.|[T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)|
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 외부에서 텍스트 생성을 실행합니다.|[TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Visual Studio 외부에서 텍스트 생성을 실행 합니다.|[TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)|
 |DSL(Domain-Specific Language) 형식으로 데이터를 변형합니다.|[도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)|
 |고유한 데이터 소스를 변형하는 지시문 프로세서를 작성합니다.|[T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)|
 
