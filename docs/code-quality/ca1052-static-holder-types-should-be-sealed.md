@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bc264b9e47fe9169c0b1ad9d3257323c437620f7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2c5d22db6a973947faf228e2e3844d63a916e24e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550429"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859499"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: 정적 소유자 형식은 sealed여야 합니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "45550429"
  이 규칙 형식에서 파생된 된 형식에서 재정의할 수 있는 모든 기능을 제공 하지 않으므로 정적 멤버만 포함 하는 형식에서 상속 하도록 설계 되지 않았습니다 하는 것으로 가정 합니다. 상속되지 않는 형식은 기본 형식으로 사용되지 않도록 `sealed` 한정자로 표시해야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하는 형식 표시 `sealed`합니다. 대상으로 하는 경우 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 더 나은 방법으로 형식을 표시 하는 2.0 이상 `static`합니다. 이런 방식으로 않아도 클래스를 만들지 않으려면 private 생성자를 선언 합니다.
+ 이 규칙 위반 문제를 해결 하는 형식 표시 `sealed`합니다. .NET Framework 2.0을 대상으로 하는 경우 더 나은 방법으로 형식을 표시 하는 것 이상을 `static`합니다. 이런 방식으로 않아도 클래스를 만들지 않으려면 private 생성자를 선언 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  형식 상속 하도록 하는 경우에이 규칙에서 경고를 표시 합니다. 없는 경우는 `sealed` 한정자 제안 형식이 기본 형식으로 유용 합니다.

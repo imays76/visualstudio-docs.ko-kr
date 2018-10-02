@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566553"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860422"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>방법: 프로그램 코드로 파일에서 모델 열기
 모든 응용 프로그램에서 DSL 모델을 열 수 있습니다.
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 확장이이 목적을 위해 ModelBus를 사용할 수 있습니다. ModelBus는 모델 또는 모델에서 요소를 참조 하 고이 이동 하는 경우 모델을 찾는 데 표준 메커니즘을 제공 합니다. 자세한 내용은 [Visual Studio Modelbus를 사용 하 여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md)합니다.
+ Visual Studio 확장에서이 목적을 위해 ModelBus를 사용할 수 있습니다. ModelBus는 모델 또는 모델에서 요소를 참조 하 고이 이동 하는 경우 모델을 찾는 데 표준 메커니즘을 제공 합니다. 자세한 내용은 [Visual Studio Modelbus를 사용 하 여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md)합니다.
 
 ## <a name="target-framework"></a>대상 프레임워크
  설정 된 **대상 프레임 워크** 하는 응용 프로그램 프로젝트의 **.NET Framework 4**합니다.
 
 #### <a name="to-set-the-target-framework"></a>대상 프레임 워크를 설정 하려면
 
-1.  열기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DSL 모델 읽기 하려는 응용 프로그램에 대 한 프로젝트입니다.
+1.  DSL 모델 읽기 하려는 응용 프로그램에 대 한 Visual Studio 프로젝트를 엽니다.
 
 2.  **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성**합니다.
 
@@ -36,7 +36,7 @@ ms.locfileid: "39566553"
 >  선택한 경우에이 작업을 수행 해야 **.NET Framework 4** 프로젝트 만들기 대화 상자에서. 대상 프레임 워크 안 **.NET Framework 4 Client Profile**합니다.
 
 ## <a name="references"></a>참조
- 이러한 참조를 추가 해야 하 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 응용 프로그램 프로젝트:
+ Visual Studio 응용 프로그램 프로젝트에 대 한 이러한 참조를 추가 해야 합니다.
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 

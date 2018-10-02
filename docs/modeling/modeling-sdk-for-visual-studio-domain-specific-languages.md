@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc87ba31e1f693559384977588471af753738e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950844"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857783"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio용 모델링 SDK - 도메인별 언어
-에 대 한 Modeling SDK를 사용 하 여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]를 통합할 수 있는 모델을 기반으로 강력한 개발 도구를 만들 수 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 동일한 방식으로 하나 이상의 모델 정의를 만들고 도구 집합으로 통합할 수 있습니다.
+Modeling SDK for Visual Studio를 사용 하 여 Visual Studio에 통합할 수 있는 강력한 모델 기반 개발 도구를 만들 수 있습니다. 동일한 방식으로 하나 이상의 모델 정의를 만들고 도구 집합으로 통합할 수 있습니다.
 
- MSDK의 핵심은 비즈니스 영역에서 개념을 나타내기 위해 만드는 모델의 정의입니다. 다이어그램 보기, 코드와 다른 아티팩트를 생성하는 기능, 모델 변환 명령, 코드와 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 다른 개체와 상호 작용하는 기능과 같은 다양한 도구를 사용하여 모델을 감쌀 수 있습니다. 모델을 개발할 때 다른 모델 및 도구와 결합하여 개발에 중점을 두는 강력한 도구 집합을 구성할 수 있습니다.
+ MSDK의 핵심은 비즈니스 영역에서 개념을 나타내기 위해 만드는 모델의 정의입니다. 다양 한 코드 및 Visual Studio의 다른 개체와 상호 작용 하는 기능, 다이어그램 뷰 및 코드 및 기타 아티팩트, 모델, 변환에 대 한 명령을 생성 하는 기능 등의 도구를 사용 하 여 모델을 감쌀 수 있습니다. 모델을 개발할 때 다른 모델 및 도구와 결합하여 개발에 중점을 두는 강력한 도구 집합을 구성할 수 있습니다.
 
  MSDK를 사용하여 도메인 관련 언어(DSL) 형태로 모델을 신속하게 개발할 수 있습니다. 특수 편집기를 사용하여 그래픽 표시법과 함께 스키마 또는 추상 구문을 정의하기 시작합니다. 이 정의로부터 VMSDK는 다음을 생성합니다.
 
@@ -42,7 +42,7 @@ ms.locfileid: "31950844"
 
  [관련된 블로그 게시물](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
 
- 고급 기술 및 문제 해결에 대 한 지침을 참조 하세요. [Visual Studio DSL 및 도구 확장성 모델링 포럼](http://go.microsoft.com/fwlink/?LinkID=186074)합니다.
+ 고급 기술 및 문제 해결에 대 한 지침을 참조 하세요 [Visual Studio DSL & 모델링 도구 확장성 포럼](http://go.microsoft.com/fwlink/?LinkID=186074)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
  [도메인별 언어 시작](../modeling/getting-started-with-domain-specific-languages.md)

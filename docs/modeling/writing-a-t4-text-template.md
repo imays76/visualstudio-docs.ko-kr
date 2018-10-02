@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f2427b54cd19e808bed217c981a95d70e4d020fd
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612716"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860396"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
 텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어, 웹 페이지를 만드는 템플릿으로 사용 될 "\<html >..." 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 됩니다 *제어 블록*는 프로그램 코드 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
@@ -208,7 +208,7 @@ private void WriteSquareLine(int i)
 
  자세한 내용은 [T4 Import 지시문](../modeling/t4-import-directive.md)합니다.
 
-###  <a name="Include"></a> 코드 및 텍스트를 포함 하 여
+### <a name="Include"></a> 코드 및 텍스트를 포함 하 여
  `include` 지시문은 다른 템플릿 파일의 텍스트를 삽입합니다. 예를 들어 다음 지시문은 `test.txt`의 내용을 삽입합니다.
 
 ```
@@ -275,7 +275,7 @@ Content of MyFile.txt is:
 |----------|-----------|
 |템플릿을 작성합니다.|[T4 텍스트 템플릿 작성 지침](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |프로그램 코드를 사용하여 텍스트를 생성합니다.|[텍스트 템플릿 구조](../modeling/writing-a-t4-text-template.md)|
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션에서 파일을 생성합니다.|[T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 외부에서 텍스트 생성을 실행합니다.|[TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Visual Studio 솔루션에서 파일을 생성 합니다.|[T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Visual Studio 외부에서 텍스트 생성을 실행 합니다.|[TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)|
 |DSL(Domain-Specific Language) 형식으로 데이터를 변형합니다.|[도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)|
 |고유한 데이터 소스를 변형하는 지시문 프로세서를 작성합니다.|[T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)|

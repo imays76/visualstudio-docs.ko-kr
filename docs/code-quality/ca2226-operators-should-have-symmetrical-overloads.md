@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 16dab94809d74bbea3400202e4920952b4d7e9f5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549773"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860331"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: 연산자에는 대칭 오버로드가 있어야 합니다.
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45549773"
  이 규칙 위반 문제를 해결 하려면 같음 및 같지 않음 연산자를 구현 하거나 존재 하는 것을 제거 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 이 규칙에서는 경고를 표시해야 합니다. 형식을 일치 하는 방식으로 작동 하지 것입니다는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다.
+ 이 규칙에서는 경고를 표시해야 합니다. 형식이는.NET Framework를 사용 하 여 일치 하는 방식으로 작동 하지 않습니다.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)

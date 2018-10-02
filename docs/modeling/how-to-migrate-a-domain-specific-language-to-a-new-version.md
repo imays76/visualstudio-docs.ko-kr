@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab671cfffdf43d9b69ecda7f06c27a0e8df6bf70
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a238eabbcba4f28b12f899de5b2d4eae30cfef9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775915"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858771"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>방법: 도메인별 언어를 새 버전으로 마이그레이션
 정의 및 도메인 특정 언어를 사용 하는 프로젝트를 마이그레이션할 수 있습니다 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 버전의 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 와 함께 배포 된는 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]합니다.
 
- 마이그레이션 도구가의 일부로 제공 됩니다 [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]합니다. 도구 변환 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 및 솔루션을 사용 하거나 DSL 도구를 정의 합니다.
+ 마이그레이션 도구가의 일부로 제공 됩니다 [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]합니다. 도구를 사용 하거나 DSL 도구를 정의 하는 Visual Studio 프로젝트 및 솔루션으로 변환 합니다.
 
- 마이그레이션 도구를 명시적으로 실행 해야 합니다:이 시작 되지 자동으로 솔루션을 열면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 이 경로에 도구 및 자세한 지침 문서를 찾을 수 있습니다.
+ 마이그레이션 도구를 명시적으로 실행 해야 합니다:이 시작 되지 자동으로 Visual Studio에서 솔루션을 열 때. 이 경로에 도구 및 자세한 지침 문서를 찾을 수 있습니다.
 
  **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>DSL 프로젝트를 마이그레이션 전에
- 마이그레이션 도구를 수정 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 파일 (**.csproj**) 및 솔루션 파일 (**.sln**).
+ Visual Studio 프로젝트 파일을 수정 하는 마이그레이션 도구 (**.csproj**) 및 솔루션 파일 (**.sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>마이그레이션에 대 한 프로젝트를 준비 합니다.
 

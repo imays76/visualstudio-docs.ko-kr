@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279858"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859785"
 ---
 # <a name="develop-tests-from-a-model"></a>모델에서 테스트 개발
 요구 사항 및 아키텍처 모델을 사용하여 시스템 및 해당 구성 요소의 테스트를 구성하도록 지원할 수 있습니다. 이렇게 하면 사용자 및 기타 이해 관계자에게 중요한 요구 사항을 테스트하는지 확인할 수 있고 요구 사항이 변경될 때 테스트를 빠르게 업데이트할 수 있습니다. [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]를 사용하는 경우 모델과 테스트 간의 링크를 유지할 수도 있습니다.
@@ -61,7 +61,7 @@ ms.locfileid: "44279858"
 
 1.  [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다.
 
-     만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 프로젝트가 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]에서 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [에 대 한 Agile 도구 및 Agile 프로젝트 관리](/azure/devops/boards/backlogs/overview?view=vsts)합니다.
+     만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목을 Team Foundation을 사용 하 여 프로젝트를 사용 하는 프로세스 템플릿에 따라 수 있습니다. 자세한 내용은 [에 대 한 Agile 도구 및 Agile 프로젝트 관리](/azure/devops/boards/backlogs/overview?view=vsts)합니다.
 
 2.  모델에서 하나 이상의 사용 사례에 요구 사항 작업 항목을 연결합니다.
 
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  테스트 관점에서 요구 사항 모델은 테스트 축약형으로 간주될 수 있습니다. 따라서 프로젝트 전체에서 테스트와 모델 간의 관계를 유지하는 것이 중요합니다.
 
-##  <a name="Attaching"></a> 모델 요소에 테스트 사례 연결
+## <a name="Attaching"></a> 모델 요소에 테스트 사례 연결
  프로젝트에서 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]를 사용하는 경우 모델의 요소에 테스트를 연결할 수 있습니다. 이렇게 하면 요구 사항 변경의 영향을 받는 테스트를 빠르게 찾을 수 있으며 요구 사항이 인식된 익스텐트를 추적하는 데 도움이 됩니다.
 
  모든 종류의 요소에 테스트를 연결할 수 있습니다. 다음은 몇 가지 예입니다.
@@ -149,7 +149,7 @@ Assert (countAfter == countBefore = 1);
 
 1.  [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다.
 
-     만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 프로젝트가 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]에서 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [에 대 한 Agile 도구 및 Agile 프로젝트 관리](/azure/devops/boards/backlogs/overview?view=vsts)합니다.
+     만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목을 Team Foundation을 사용 하 여 프로젝트를 사용 하는 프로세스 템플릿에 따라 수 있습니다. 자세한 내용은 [에 대 한 Agile 도구 및 Agile 프로젝트 관리](/azure/devops/boards/backlogs/overview?view=vsts)합니다.
 
 2.  모델에서 하나 이상의 요소에 요구 사항 작업 항목을 연결합니다.
 

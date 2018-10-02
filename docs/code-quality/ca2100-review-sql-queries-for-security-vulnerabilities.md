@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bbfafb78022e462c1f629019ddb40c711fcd581b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 69c8ba3b5cd30b71828a34c4b3dc8d7b4584b613
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551469"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859048"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: 보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.
 
@@ -50,7 +50,7 @@ ms.locfileid: "45551469"
 
 - 명령 문자열을 만들기 전에 형식과 콘텐츠 모두에 대 한 사용자 입력의 유효성을 검사 합니다.
 
-다음 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 형식을 구현 합니다 <xref:System.Data.IDbCommand.CommandText%2A> 속성 또는 문자열 인수를 사용 하 여 속성을 설정 하는 생성자를 제공 합니다.
+다음.NET Framework 형식이 구현 된 <xref:System.Data.IDbCommand.CommandText%2A> 속성 또는 문자열 인수를 사용 하 여 속성을 설정 하는 생성자를 제공 합니다.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 및 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 

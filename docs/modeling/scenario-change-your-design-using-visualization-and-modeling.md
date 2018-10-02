@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371097"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860513"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -112,7 +112,7 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 - [종속성 다이어그램을 사용하여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> 일부 버전의 Visual Studio 시각화 및 모델링에 대 한 종속성 유효성 검사 및 코드 맵 읽기 전용 버전을 지원합니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+> 일부 버전의 Visual Studio 시각화 및 모델링에 대 한 종속성 유효성 검사 및 코드 맵 읽기 전용 버전을 지원합니다. 이 기능을 지 원하는 Visual Studio의 버전을 보려면을 참조 하세요 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>시스템에 대 한 정보를 주고 이해
 
@@ -169,12 +169,12 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 |------------------|-------------------|
 |*코드 기반 클래스 다이어그램*<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스.|
 
-###  <a name="ValidatingCode"></a> 코드와 디자인의 일관성 유지
+### <a name="ValidatingCode"></a> 코드와 디자인의 일관성 유지
  Dinner Now는 업데이트된 코드와 디자인의 일관성이 유지되는지 확인해야 합니다. 시스템의 기능 레이어를 설명 및 연결 솔루션 아티팩트를 레이어에 간에 허용 되는 종속성을 지정 하는 종속성 다이어그램을 만듭니다.
 
 |**다이어그램**|**설명 내용**|
 |-----------------|-------------------|
-|*종속성 다이어그램*<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 종속성 다이어그램을 구성 하 고 아티팩트를 매핑하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 추상 그룹에는 솔루션 *레이어*합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 레이어 다이어그램은 의도한 시스템 디자인을 설명하고 해당 디자인에 대해 발전하는 코드의 유효성을 검사하는 데 유용합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 레이어 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|
+|*종속성 다이어그램*<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 종속성 다이어그램을 구성 하 고 라는 추상 그룹에는 Visual Studio 솔루션의 아티팩트를 매핑합니다 *레이어*합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 레이어 다이어그램은 의도한 시스템 디자인을 설명하고 해당 디자인에 대해 발전하는 코드의 유효성을 검사하는 데 유용합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 레이어 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|
 
  예를 들어 다음 종속성 다이어그램에서는 레이어 간 종속성 및 각 레이어와 연결 된 아티팩트의 수를 설명 합니다:
 
@@ -224,7 +224,7 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 ### <a name="TestValidateCheckInCode"></a> 테스트, 유효성 검사 및 코드에서 확인
 
-팀에서 각 작업을 완료하면 코드를 Team Foundation 버전 제어에 체크 인하고 잊지 않도록 Team Foundation Server에서 미리 알림을 수신합니다. Team Foundation Server 체크 인을 승인 하기 전에 팀에서는 단위 테스트와 해당 테스트 사례 및 디자인에 대해 코드를 확인 하려면 종속성 유효성 검사를 실행 합니다. Team Foundation Server를 사용 하 여 빌드를 실행 하는 자동화 된 단위 테스트 및 종속성 유효성 검사를 정기적으로 합니다. 이렇게 하면 코드가 다음 기준을 충족하는지 확인할 수 있습니다.
+팀에서 각 작업을 완료 하면 코드를 소스 제어로 체크 하며 인하고 잊지 않도록 Team Foundation Server에서 미리 알림을 수신 합니다. Team Foundation Server 체크 인을 승인 하기 전에 팀에서는 단위 테스트와 해당 테스트 사례 및 디자인에 대해 코드를 확인 하려면 종속성 유효성 검사를 실행 합니다. Team Foundation Server를 사용 하 여 빌드를 실행 하는 자동화 된 단위 테스트 및 종속성 유효성 검사를 정기적으로 합니다. 이렇게 하면 코드가 다음 기준을 충족하는지 확인할 수 있습니다.
 
 - 예상대로 작동합니다.
 

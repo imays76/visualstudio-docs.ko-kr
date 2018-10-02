@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63599452347ce08140d4c530aa87f2deb938104d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948095"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859850"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>도메인별 언어에서 코드 생성
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델에 표시 된 데이터에서 코드, 문서, 구성 파일 및 기타 아티팩트를 생성 하는 강력한 방법을 제공 합니다. 사용 하 여 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], 데이터를 나타내는 클래스 집합을 만들 수 있습니다 및 이름이 클래스에서 텍스트 템플릿을 작성할 수 있습니다 및 해당 데이터를 반영 하는 속성입니다.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델에 표현 된 데이터에서 코드, 문서, 구성 파일 및 기타 아티팩트를 생성 하는 강력한 방법을 제공 합니다. 사용 하 여 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], 데이터를 나타내는 클래스의 집합을 만들 수 있습니다 및 이름이 클래스에서 텍스트 템플릿을 작성할 수 있습니다 및 해당 데이터를 반영 하는 속성입니다.
 
- 예를 들어 Fabrikam은 고객 이름 및 전자 메일 주소는 XML 파일을 포함 합니다. 개발자는 고객은 클래스 속성 이름 및 전자 메일 모델을 만듭니다. 이러한 HTML 페이지의 일부로 모든 고객의 테이블을 생성 하는이 부분을 포함 하 여 데이터를 처리할 여러 텍스트 템플릿을 작성 합니다.
+ 예를 들어, Fabrikam 고객 이름 및 전자 메일 주소 XML 파일을 있습니다. 개발자는 고객은 클래스, 속성 이름 및 전자 메일을 사용 하 여 모델을 만듭니다. HTML 페이지의 일부로 모든 고객의 테이블을 생성 하는이 부분을 포함 하 여 데이터를 처리 하는 데 여러 텍스트 템플릿을 작성 합니다.
 
 ```
 <table>
@@ -29,11 +29,11 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델에 표시 된 �
 <# } #>  </table>
 ```
 
- 고객 데이터베이스를 처리할 때 모델 저장소에 XML 파일이 읽힙니다. A *지시문 프로세서*를 사용 하 여 만든, [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], 텍스트 템플릿에서 Customer 클래스를 코드를 사용할 수 있도록 합니다. 많은 텍스트 템플릿은 동일한 저장소에 대해 실행할 수 있습니다.
+ 고객 데이터베이스를 처리할 때 XML 파일 모델 저장소로 읽힙니다. A *지시문 프로세서*사용 하 여 만든 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], 텍스트 템플릿에서 Customer 클래스를 코드에 사용할 수 있도록 합니다. 많은 텍스트 템플릿은 동일한 저장소에 대해 실행할 수 있습니다.
 
- 텍스트 템플릿은 하는 데 필수적인 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]합니다. 사용 하는 VSPackage 및 도구와 통합 하는 데 사용 되는 컨트롤의 경우와 도메인 모델 요소에 대 한 소스 코드를 생성 하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.
+ 텍스트 템플릿에 필수적인 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]합니다. VSPackage 및 Visual Studio를 사용 하 여 도구를 통합 하는 데 사용 되는 컨트롤도 도메인 모델의 요소에 대 한 소스 코드 생성 사용 됩니다.
 
- 생성, 수정 및에서 사용 되는 텍스트 템플릿을 디버그 하는 방법의 가지 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]합니다.
+ 이 섹션에서는 만들기, 수정 및 사용 하는 텍스트 템플릿을 디버그 하는 방법 중 일부를 설명 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
  [텍스트 템플릿에서 모델에 액세스](../modeling/accessing-models-from-text-templates.md)
@@ -42,15 +42,15 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델에 표시 된 �
 
  [연습: 모델에 액세스하는 텍스트 템플릿 디버그](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
- 문제 해결 및 도메인 특정 언어를 참조 하는 텍스트 서식 파일에 디버깅을 수행 하는 방법을 설명 합니다.
+ 문제 해결 및 도메인 특정 언어를 가리키는 텍스트 템플릿 디버깅을 수행 하는 방법을 설명 합니다.
 
  [연습: 생성된 지시문 프로세서에 호스트 연결](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
- 생성된 된 지시문 프로세서를 사용자 지정 호스트를 연결 하는 방법에 설명 합니다.
+ 생성된 된 지시문 프로세서에 사용자 지정 호스트를 연결 하는 방법에 설명 합니다.
 
  [DslTextTransform 명령](../modeling/the-dsltexttransform-command.md)
 
- 도메인 특정 언어를 참조 하는 텍스트 템플릿에 대 한 명령줄에서 실행 TextTransform 파일을 실행 하는 명령 파일에 설명 합니다.
+ 도메인 특정 언어를 참조 하는 텍스트 템플릿에 대 한 명령줄에서 TextTransform 실행 파일을 실행 하는 명령 파일을 설명 합니다.
 
 ## <a name="reference"></a>참조
  [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)
@@ -60,7 +60,7 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델에 표시 된 �
 ## <a name="related-sections"></a>관련 단원
  [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
- 텍스트 템플릿 변환 프로세스에 설명합니다.
+ 텍스트 템플릿 변형 프로세스에 설명합니다.
 
  [빌드 프로세스의 코드 생성](../modeling/code-generation-in-a-build-process.md)
 

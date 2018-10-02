@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 169d079538852042d6add5df1a1278f90a2f84f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 900abe516ebd07cf5a8849f269f915623500731e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549863"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859707"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: SuppressUnmanagedCodeSecurityAttribute 사용을 검토하십시오.
 
@@ -40,7 +40,7 @@ ms.locfileid: "45549863"
 
  이 특성은 기본적으로 성능 향상을 위해 사용되지만 성능이 향상되는 대신 중대한 보안 위험이 발생합니다. 네이티브 메서드를 호출 하는 공용 멤버에 특성을 배치 하는 경우 (직접 실행 호출자) 이외의 호출 스택의 호출자에 게 비관리 코드를 실행 하려면 비관리 코드 권한이 않아도 됩니다. Public 멤버의 작업 및 입력된 처리에 따라이 신뢰할 수 있는 코드에 일반적으로 제한 된 액세스 기능에 신뢰할 수 없는 호출자를 수 있습니다.
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 에서는 보안 검사를 호출자가 현재 프로세스의 주소 공간에 직접 액세스 하지 못하도록 합니다. 이 특성이 무시 일반적인 보안, 때문에 읽기 또는 쓰기 프로세스의 메모리를 사용할 수 있는 경우 코드에 심각한 위협이 제기 합니다. 위험 의도적으로 프로세스 메모리;에 대 한 액세스를 제공 하는 메서드를 제한 된다는 note 여기서 악성 코드를 얻을 수 액세스 어떤 방법으로 예를 들어 놀라운, 형식이 잘못 되거나 잘못 된 입력을 제공 하 여 모든 시나리오에 이기도 합니다.
+ .NET Framework 보안 검사를 호출자가 현재 프로세스의 주소 공간에 직접 액세스 하지 못하도록 의존 합니다. 이 특성이 무시 일반적인 보안, 때문에 읽기 또는 쓰기 프로세스의 메모리를 사용할 수 있는 경우 코드에 심각한 위협이 제기 합니다. 위험 의도적으로 프로세스 메모리;에 대 한 액세스를 제공 하는 메서드를 제한 된다는 note 여기서 악성 코드를 얻을 수 액세스 어떤 방법으로 예를 들어 놀라운, 형식이 잘못 되거나 잘못 된 입력을 제공 하 여 모든 시나리오에 이기도 합니다.
 
  기본 보안 정책 로컬 컴퓨터에서 실행 되 고 아니면 다음 그룹 중 하나의 멤버인 어셈블리에 비관리 코드 권한을 부여 하지 않습니다.
 
