@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176813"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858505"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>모델에서 앱 생성 및 구성
 모델에서 응용 프로그램의 일부를 생성하거나 구성할 수 있습니다.
@@ -22,7 +22,7 @@ ms.locfileid: "39176813"
  모델은 코드보다 더 직접적으로 요구 사항을 나타냅니다. 모델에서 직접 응용 프로그램의 동작을 파생시키면 코드를 업데이트하는 것보다 훨씬 더 빠르고 안정적으로 변경된 요구 사항에 응답할 수 있습니다. 파생을 설정하려면 일부 초기 작업이 필요하지만 요구 사항 변경이 예상되거나 제품의 여러 변형을 계획하는 경우 이 투자는 가치가 있습니다.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>모델에서 응용 프로그램 코드 생성
- 코드를 생성하는 가장 쉬운 방법은 텍스트 템플릿을 사용하는 것입니다. 동일한 코드를 생성할 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 모델을 유지 하는 솔루션입니다. 자세한 내용은 다음을 참조하세요.
+ 코드를 생성하는 가장 쉬운 방법은 텍스트 템플릿을 사용하는 것입니다. 모델을 유지 하는 동일한 Visual Studio 솔루션에서 코드를 생성할 수 있습니다. 자세한 내용은 다음을 참조하세요.
 
 -   [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 

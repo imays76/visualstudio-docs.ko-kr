@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a2c95219ea13e8d2e4d989a2ac9950c4d04e65bd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550611"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858195"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: 식별자는 키워드와 달라야 합니다.
 |||
@@ -51,4 +51,4 @@ ms.locfileid: "45550611"
  키워드 목록에 나타나지 않는 이름을 선택 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 식별자는 API의 사용자를 혼동 하지는 및에서 사용 가능한 모든 언어에서 사용 가능한 라이브러리는 확신 하는 경우이 규칙에서 경고를 표시 하지 않을 수는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다.
+ 식별자는 API의 사용자를 혼동 하지는 및 라이브러리를.NET Framework에서 사용 가능한 모든 언어에서 사용할 수 있는지 확신 하는 경우이 규칙에서 경고를 무시할 수 있습니다.

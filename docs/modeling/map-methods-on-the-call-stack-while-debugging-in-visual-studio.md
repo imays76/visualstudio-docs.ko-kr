@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a1c98007c968f12e220c0fef841e7680f299f7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283196"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858708"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio에서 디버깅하는 동안 호출 스택의 맵 메서드
 디버그 하는 동안 호출 스택을 시각적으로 추적 하려면 코드 맵을 만듭니다. 맵을 기록해 두면 코드에서 어떤 작업을 하고 있는지 추적하여 버그를 찾는 데 집중할 수 있습니다.
@@ -66,7 +66,7 @@ ms.locfileid: "36283196"
 
  명령 및 코드 맵으로 작업할 때 사용할 수 있는 작업의 세부 정보를 참조 하세요 [찾아보기 및 다시 정렬 코드 맵](../modeling/browse-and-rearrange-code-maps.md)합니다.
 
-##  <a name="MapStack"></a> 호출 스택 매핑
+## <a name="MapStack"></a> 호출 스택 매핑
 
 1.  디버깅을 시작합니다. (키보드: **F5**)
 
@@ -80,17 +80,17 @@ ms.locfileid: "36283196"
 
      디버깅하는 동안 맵이 자동으로 업데이트됩니다. 참조 [다음 호출 스택과 함께 맵 업데이트](#UpdateMap)합니다.
 
-##  <a name="MakeNotes"></a> 코드에 대해 메모 하기
+## <a name="MakeNotes"></a> 코드에 대해 메모 하기
  코드에서 발생 하는 추적 하기 위한 주석을 추가 합니다. 주석에 새 줄을 추가 하려면 다음을 누릅니다 **Shift + Return**합니다.
 
  ![코드 맵의 호출 스택에 설명 추가](../debugger/media/debuggermap_addcomment.png)
 
-##  <a name="UpdateMap"></a> 다음 호출 스택과 함께 맵 업데이트
+## <a name="UpdateMap"></a> 다음 호출 스택과 함께 맵 업데이트
  응용 프로그램을 다음 중단점까지 실행하거나 함수로 한 단계씩 실행합니다. 맵은 새로운 호출 스택을 추가합니다.
 
  ![다음 호출 스택으로 코드 맵 업데이트](../debugger/media/debuggermap_addclearcallstack.png)
 
-##  <a name="AddRelatedCode"></a> 맵에 관련된 코드 추가
+## <a name="AddRelatedCode"></a> 맵에 관련된 코드 추가
  이제 맵-새로운 다음? C# 또는 Visual Basic을 사용 하 여 작업할 경우 등, 필드, 속성 및 추적 코드에서 발생 하는 다른 메서드를 추가 합니다.
 
  메서드를 두 번 클릭하여 코드 정의를 보거나 메서드에 대한 바로 가기 메뉴를 사용합니다. (키보드: 맵 및 키를 눌러 메서드를 선택 **F12**)
@@ -114,7 +114,7 @@ ms.locfileid: "36283196"
 
  ![호출 스택 코드 맵에서 필드를 사용하는 메서드](../debugger/media/debuggermap_foundallreferences.png)
 
-##  <a name="FindBugs"></a> 지도 사용 하 여 버그 찾기
+## <a name="FindBugs"></a> 지도 사용 하 여 버그 찾기
  코드를 시각화하면 버그를 더 빠르게 찾을 수 있습니다. 예를 들어 드로잉 프로그램에서 버그를 조사 한다고 가정 합니다. 선을 그렸다가 취소하려는 경우 다른 선을 그릴 때까지 아무 것도 발생하지 않습니다.
 
  따라서 `clear`, `undo` 및 `Repaint` 메서드에서 중단점을 설정하고, 디버깅을 시작하고, 다음과 같은 맵을 빌드합니다.
@@ -127,7 +127,7 @@ ms.locfileid: "36283196"
 
  ![코드 맵의 호출 스택에 새 메서드 호출 추가](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-##  <a name="QA"></a> Q & A
+## <a name="QA"></a> Q & A
 
 -   **모든 호출이 지도에 표시 됩니다. 이유**
 
@@ -159,7 +159,7 @@ ms.locfileid: "36283196"
 
 -   **다른 사용자와 맵을 공유할 수 있습니까?**
 
-     맵을 내보내고 다른 사용자에게 전송하거나(Microsoft Outlook이 있는 경우) 솔루션에 저장하여 Team Foundation 버전 제어로 체크 인할 수 있습니다.
+     맵을 내보내고, Microsoft outlook 또는 소스 제어로 확인할 수 있도록 솔루션에 저장 하는 경우 다른 사용자에 게 보낼 수 있습니다.
 
      ![다른 사용자와 호출 스택 코드 맵 공유](../debugger/media/debuggermap_sharewithothers.png)
 
