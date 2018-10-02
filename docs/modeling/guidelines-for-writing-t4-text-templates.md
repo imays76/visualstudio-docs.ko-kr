@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178464"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859629"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 텍스트 템플릿 작성 지침
-다음 일반 지침 프로그램 코드 또는 기타 응용 프로그램 리소스에서 생성 하는 경우에 유용할 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 규칙 고정 되지 것입니다.
+Visual Studio에서 프로그램 코드 또는 기타 응용 프로그램 리소스를 생성 하는 경우에 다음 일반 지침 유용할 수도 있습니다. 규칙 고정 되지 것입니다.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>디자인 타임 T4 템플릿에 대 한 지침
- 디자인 타임 T4 템플릿은 템플릿 코드에서 생성 하는 프로그램 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디자인 타임에 프로젝트입니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다.
+ 디자인 타임 T4 템플릿은 디자인 타임에 Visual Studio 프로젝트에서 코드를 생성 하는 템플릿입니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다.
 
  응용 프로그램의 가변 측면을 생성 합니다.
 코드를 생성 하는 동안 프로젝트에 변경 될 수 있습니다 또는 응용 프로그램의 서로 다른 버전 간에 변경 될 응용 프로그램의 이러한 측면에 대 한 가장 유용 합니다. 생성할에 어떤를 보다 쉽게 확인할 수 있도록 더 고정 측면에서 이러한 가변 측면을 구분 합니다. 예를 들어, 응용 프로그램 웹 사이트에서 제공 하는 경우 표준 페이지 함수에서 다른 페이지로 탐색 경로 정의 하는 논리에서 처리를 구분 합니다.
 
  하나 이상의 원본 모델에 가변 측면을 인코딩하십시오.
-모델은 파일이 나 데이터베이스 생성 되는 코드의 변수 부분에 대 한 특정 값을 가져오려면 각 템플릿에 읽는 경우 모델은 데이터베이스, 사용자 고유의 디자인, 다이어그램 또는 도메인 특정 언어의 XML 파일 일 수 있습니다. 여러 파일을 생성 한 모델을 사용 하는 일반적으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트입니다. 각 파일은 별도 템플릿에서 생성 됩니다.
+모델은 파일이 나 데이터베이스 생성 되는 코드의 변수 부분에 대 한 특정 값을 가져오려면 각 템플릿에 읽는 경우 모델은 데이터베이스, 사용자 고유의 디자인, 다이어그램 또는 도메인 특정 언어의 XML 파일 일 수 있습니다. 일반적으로 하나의 모델은 Visual Studio 프로젝트에 많은 파일을 생성 하는 데 사용 됩니다. 각 파일은 별도 템플릿에서 생성 됩니다.
 
  프로젝트에서 하나 이상의 모델을 사용할 수 있습니다. 예를 들어, 웹 페이지 및 페이지의 레이아웃에 대 한 별도 모델 간의 탐색에 대 한 모델을 정의할 수 있습니다.
 
@@ -122,7 +122,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ## <a name="guidelines-for-all-t4-templates"></a>모든 T4 템플릿 지침
  텍스트 생성에서 별도 데이터 수집 계산 및 텍스트 블록이 혼합 하지 마십시오. 각 텍스트 템플릿에서 첫 번째를 사용 하 여 \<# 코드가 차단 #> 변수를 설정 하 여 복잡 한 계산을 수행 합니다. 첫 번째 텍스트 블록의 템플릿 또는 첫 번째 끝까지 \<#+ 클래스 기능 블록 #>, 긴 식이 방지 및 텍스트 블록이 포함 되지 않으면 루프 및 조건문을 방지 합니다. 이렇게 하면 템플릿을 보다 쉽게 읽고 유지 관리 합니다.
 
- 사용 하지 마세요 `.tt` 포함에 대 한 파일 사용 하 여 다른 파일 이름 확장명을 같은 `.ttinclude` 포함 파일입니다. 사용 하 여 `.tt` 되도록 원하는 파일을 같은 런타임 또는 디자인 타임 텍스트 템플릿 처리에 대 한만 합니다. 경우에 따라 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 인식 `.tt` 파일을 자동으로 처리를 위해 해당 속성을 설정 합니다.
+ 사용 하지 마세요 `.tt` 포함에 대 한 파일 사용 하 여 다른 파일 이름 확장명을 같은 `.ttinclude` 포함 파일입니다. 사용 하 여 `.tt` 되도록 원하는 파일을 같은 런타임 또는 디자인 타임 텍스트 템플릿 처리에 대 한만 합니다. 경우에 따라 Visual Studio에서 인식할 `.tt` 파일을 자동으로 처리를 위해 해당 속성을 설정 합니다.
 
  고정 된 프로토타입으로 각 서식 파일을 시작 합니다.
 코드 또는 텍스트를 생성 하 고 정확한 지 확인 하려는 예제를 작성 합니다. 확장명이.tt을 변경 하 고 증분 방식으로 모델을 참조 하 여 콘텐츠를 수정 하는 코드를 삽입 합니다.

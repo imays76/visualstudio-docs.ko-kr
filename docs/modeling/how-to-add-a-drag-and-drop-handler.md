@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566631"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859200"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>방법: 끌어서 놓기 처리기 추가
 
-사용자가 다른 다이어그램이나 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 다른 부분에서 다이어그램으로 항목을 끌 수 있도록 DSL에 끌어서 놓기 이벤트용 처리기를 추가할 수 있습니다. 또한 두 번 클릭 등의 이벤트용 처리기도 추가할 수 있습니다. 함께 끌어서 놓고 두 번 클릭 처리기 라고 *제스처 처리기*합니다.
+다른 다이어그램 또는 Visual Studio의 다른 부분에서 사용자가 다이어그램으로 항목 끌 수 있도록 dsl에 끌어서 놓기 이벤트에 대 한 처리기를 추가할 수 있습니다. 또한 두 번 클릭 등의 이벤트용 처리기도 추가할 수 있습니다. 함께 끌어서 놓고 두 번 클릭 처리기 라고 *제스처 처리기*합니다.
 
 이 항목에서는 다른 다이어그램에서 시작되는 끌어서 놓기 제스처에 대해 설명합니다. 단일 다이어그램 내의 이동 및 복사 이벤트에 대해서는 `ElementOperations`의 서브클래스를 정의하는 방식을 대신 사용할 수 있습니다. 자세한 내용은 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)합니다. DSL 정의를 사용자 지정할 수도 있습니다.
 

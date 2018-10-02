@@ -9,20 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 64400b8844481f8b34d82c430322d240c8930cd0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567183"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859954"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus를 사용하여 모델 통합
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus는 모델에 다른 도구에서 그리고 모델 간에 링크를 만드는 메서드를 제공 합니다. 예를 들어, 도메인 특정 언어 (DSL) 모델과 UML 모델을 연결할 수 있습니다. 통합 DSL 집합을 만들 수 있습니다.
+Visual Studio ModelBus는 모델에 다른 도구에서 그리고 모델 간에 링크를 만드는 메서드를 제공 합니다. 예를 들어, 도메인 특정 언어 (DSL) 모델과 UML 모델을 연결할 수 있습니다. 통합 DSL 집합을 만들 수 있습니다.
 
  ModelBus에서는 모델 또는 모델 내의 특정 요소에 대한 고유 참조를 만들 수 있습니다. 이 참조는 다른 모델의 요소 등 모델 외부에 저장할 수 있습니다. 나중에 도구에서 요소에 액세스해야 하면 ModelBus 인프라에서 적절한 모델을 로드하고 요소를 반환합니다. 원하는 경우 사용자에게 모델을 표시할 수 있습니다. 이전 위치에서 파일에 액세스할 수 없으면 ModelBus에서 사용자에게 파일을 찾으라는 메시지를 표시합니다. 사용자가 파일을 찾으면 해당 파일에 대한 모든 참조가 수정됩니다.
 
 > [!NOTE]
->  ModelBus의 최신 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 구현에서 연결되는 모델은 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션에 있는 항목이어야 합니다.
+>  ModelBus의 현재 Visual Studio 구현에서 연결된 된 모델에 동일한 Visual Studio 솔루션에서 항목 이어야 합니다.
 
  추가 정보와 샘플 코드는 다음 항목을 참조하세요.
 
@@ -32,10 +32,10 @@ ms.locfileid: "39567183"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-##  <a name="provide"></a> DSL에 액세스 제공
- 모델이나 모델의 요소에 대한 ModelBus 참조를 만들려면 DSL에 대해 ModelBusAdapter를 정의해야 합니다. 가장 쉽게 정의하는 방법은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 확장을 사용하는 것입니다. 이 확장은 DSL 디자이너에 명령을 추가합니다.
+## <a name="provide"></a> DSL에 액세스 제공
+ 모델이나 모델의 요소에 대한 ModelBus 참조를 만들려면 DSL에 대해 ModelBusAdapter를 정의해야 합니다. 이 작업을 수행 하는 가장 쉬운 방법은 DSL 디자이너에 명령을 추가 하는 Visual Studio 모델 버스 확장을 사용 하는 것입니다.
 
-###  <a name="expose"></a> Modelbus에 DSL 정의 노출 합니다.
+### <a name="expose"></a> Modelbus에 DSL 정의 노출 합니다.
 
 1.  Visual Studio ModelBus 확장을 이미 설치하지 않은 경우 다운로드하여 설치합니다. 자세한 내용은 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)합니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "39567183"
  `ModelBusAdapters\bin\*` 폴더에는 `Dsl` 프로젝트와 `ModelBusAdapters` 프로젝트에서 작성한 어셈블리가 포함됩니다. 다른 DSL에서 이 DSL을 참조하려면 이러한 어셈블리를 가져와야 합니다.
 
 ### <a name="making-sure-that-elements-can-be-referenced"></a>요소를 참조할 수 있는지 확인
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 어댑터는 기본적으로 요소 GUID를 사용해 요소를 식별합니다. 따라서 이러한 식별자를 모델 파일에 영구적으로 저장해야 합니다.
+ Visual Studio ModelBus 어댑터를 기본적으로 식별 요소 guid를 사용 합니다. 따라서 이러한 식별자를 모델 파일에 영구적으로 저장해야 합니다.
 
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>요소 ID가 영구적으로 저장되었는지 확인하려면
 
@@ -84,7 +84,7 @@ ms.locfileid: "39567183"
 
 -   ModelBus 참조에서 올바른 요소를 찾도록 `ResolveElementReference`를 재정의합니다.
 
-##  <a name="editRef"></a> 다른 DSL에서 DSL 액세스
+## <a name="editRef"></a> 다른 DSL에서 DSL 액세스
  DSL의 도메인 속성에 ModelBus 참조를 저장할 수 있으며 해당 참조를 사용하는 사용자 지정 코드를 작성할 수 있습니다. 사용자가 모델 파일과 파일 내의 요소를 선택하여 ModelBus 참조를 만들도록 할 수도 있습니다.
 
  다른 DSL에 대 한 참조를 사용 하는 DSL을 사용 하려면 먼저 만들어야 합니다는 *소비자* 모델 버스 참조 합니다.
@@ -140,10 +140,10 @@ ms.locfileid: "39567183"
 
 2.  F5 키나 Ctrl+F5를 눌러 실험 모드에서 DSL 중 하나를 실행합니다.
 
-3.  디버깅 프로젝트의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 실험 인스턴스에서 각 DSL의 인스턴스인 파일을 추가합니다.
+3.  Visual Studio의 실험적 인스턴스에서 디버깅 프로젝트에서 각 DSL의 인스턴스인 파일을 추가 합니다.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus는 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 항목인 모델에 대한 참조만 확인할 수 있습니다. 예를 들어 파일 시스템의 다른 부분에 있는 모델 파일에 대한 참조를 만들 수는 없습니다.
+    > Visual Studio ModelBus 동일한 Visual Studio 솔루션의 항목인 모델에 대 한 참조만 해결할 수 있습니다. 예를 들어 파일 시스템의 다른 부분에 있는 모델 파일에 대한 참조를 만들 수는 없습니다.
 
 4.  표시되는 DSL의 인스턴스에서 요소와 링크를 몇 개 만들고 해당 DSL을 저장합니다.
 
@@ -158,12 +158,12 @@ ms.locfileid: "39567183"
 ## <a name="creating-references-in-program-code"></a>프로그램 코드에서 참조 만들기
  모델 또는 모델 내 요소에 대한 참조를 저장하려면 `ModelBusReference`를 만듭니다. `ModelBusReference`에는 모델 참조와 요소 참조의 두 가지 종류가 있습니다.
 
- 모델 참조를 만들려면 모델이 인스턴스인 DSL의 AdapterManager와 모델의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 항목 또는 파일 이름이 필요합니다.
+ 모델 참조를 만들려고 하는 모델은 인스턴스, 파일 이름 또는 모델의 Visual Studio 프로젝트 항목 DSL의 AdapterManager 해야 합니다.
 
  요소 참조를 만들려면 모델 파일의 어댑터와 참조할 요소가 필요합니다.
 
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus에서는 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 항목에 대한 참조만 만들 수 있습니다.
+>  Visual Studio ModelBus를 사용 하 여 동일한 Visual Studio 솔루션에서 항목에만 참조를 만들 수 있습니다.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>표시되는 DSL 어셈블리 가져오기
  참조를 사용하는 프로젝트에서 DSL에 대한 프로젝트 참조 및 표시되는 DSL의 ModelBusAdapter 어셈블리를 추가합니다.
@@ -349,7 +349,7 @@ ModelBusReference elementReferenceRestored =
     modelBus.DeserializeReference(serialized, null);
 ```
 
- 이러한 방식으로 serialize한 MBR은 컨텍스트의 영향을 받지 않습니다. 단순 파일 기반 ModelBus 어댑터를 사용하는 경우 MBR에는 절대 파일 경로가 포함됩니다. 인스턴스 모델 파일을 이동하지 않으려는 경우에는 이 경로만 사용해도 충분합니다. 그러나 모델 파일은 대개 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트의 항목입니다. 사용자는 전체 프로젝트를 파일 시스템의 다른 부분으로 이동할 수 있어야 합니다. 또한 프로젝트의 소스를 제어하고 다른 컴퓨터에서 프로젝트를 열 수 있어야 합니다. 그러므로 파일이 포함된 프로젝트의 위치를 기준으로 하여 경로 이름을 serialize해야 합니다.
+ 이러한 방식으로 serialize한 MBR은 컨텍스트의 영향을 받지 않습니다. 단순 파일 기반 ModelBus 어댑터를 사용하는 경우 MBR에는 절대 파일 경로가 포함됩니다. 인스턴스 모델 파일을 이동하지 않으려는 경우에는 이 경로만 사용해도 충분합니다. 그러나 모델 파일을 Visual Studio 프로젝트에서 항목 같아야 합니다. 사용자는 전체 프로젝트를 파일 시스템의 다른 부분으로 이동할 수 있어야 합니다. 또한 프로젝트의 소스를 제어하고 다른 컴퓨터에서 프로젝트를 열 수 있어야 합니다. 그러므로 파일이 포함된 프로젝트의 위치를 기준으로 하여 경로 이름을 serialize해야 합니다.
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>지정된 파일 경로를 기준으로 serialize
  `ModelBusReference`는 참조를 serialize할 기준이 되는 파일 경로 등의 정보를 저장할 수 있는 사전인 `ReferenceContext`를 포함합니다.

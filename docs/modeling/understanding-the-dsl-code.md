@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2e5e2ee79d72d398ac72d3d087156c296aa9e7b2
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567222"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860293"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
-DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 DSL 인스턴스를 읽고 업데이트하는 데 사용할 수 있는 API를 생성합니다. 이 API는 DSL 정의에서 생성되는 코드에서 정의됩니다. 이 항목에서는 생성되는 API에 대해 설명합니다.
+도메인 특정 언어 (DSL) 솔루션을 읽고 Visual Studio에서 dsl 인스턴스를 업데이트 하는 데 사용할 수 있는 API를 생성 합니다. 이 API는 DSL 정의에서 생성되는 코드에서 정의됩니다. 이 항목에서는 생성되는 API에 대해 설명합니다.
 
 ## <a name="the-example-solution-component-diagrams"></a>예제 솔루션: 구성 요소 다이어그램
  이 항목의 예제는 대부분의 소스인 솔루션을 만들려면에서 DSL을 만들 수는 **구성 요소 모델** 솔루션 템플릿. 이 템플릿은 새 DSL 솔루션을 만들 때 표시되는 표준 템플릿 중 하나입니다.
@@ -32,7 +32,7 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../code-quality/inc
  ![구성 요소 및 상호 연결된 포트](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL 솔루션의 구조
- 합니다 **Dsl** 프로젝트는 DSL에 대 한 API를 정의 합니다. 합니다 **DslPackage** 프로젝트와의 통합 방식 정의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. 모델에서 생성되는 코드를 포함할 수도 있는 프로젝트를 직접 추가할 수도 있습니다.
+ 합니다 **Dsl** 프로젝트는 DSL에 대 한 API를 정의 합니다. 합니다 **DslPackage** 프로젝트가 Visual Studio를 사용 하 여 통합 하는 방법을 정의 합니다. 모델에서 생성되는 코드를 포함할 수도 있는 프로젝트를 직접 추가할 수도 있습니다.
 
 ### <a name="the-code-directories"></a>코드 디렉터리
  대부분의 이러한 각 프로젝트의 코드에서 생성 됩니다 **Dsl\DslDefinition.dsl**합니다. 생성된 된 코드에는 **생성 된 코드** 폴더입니다. 생성된 된 파일을 보려면 클릭 **[+]** 생성 옆에 있는 **.tt** 파일입니다.
@@ -53,7 +53,7 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../code-quality/inc
 
      예를 들어, 설정 하는 경우는 **Has Custom Constructor** 도메인 클래스의 옵션 및 다음 솔루션을 빌드할 오류 메시지가 표시 됩니다. 이러한 오류 메시지 중 하나를 두 번 클릭하면 사용자 지정 코드가 제공해야 하는 항목을 설명하는 주석이 생성된 코드에 표시됩니다.
 
--   텍스트 템플릿을 직접 작성하여 응용 프로그램에 맞는 코드를 생성합니다. 포함 파일을 사용하여 여러 프로젝트에서 공통적으로 사용되는 템플릿 부분을 공유할 수 있으며 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 템플릿을 만들어 고유한 파일 구조로 초기화되는 프로젝트를 설정할 수 있습니다.
+-   텍스트 템플릿을 직접 작성하여 응용 프로그램에 맞는 코드를 생성합니다. 사용 하 여 여러 프로젝트에 공통 되는 템플릿의 일부를 공유 하는 파일을 포함할 수 및 고유한 파일 구조로 초기화 되는 프로젝트를 설정 하려면 Visual Studio 프로젝트 템플릿을 만들 수 있습니다.
 
 ## <a name="generated-files-in-dsl"></a>DSL의 생성된 파일
  생성된 된 다음 파일에 표시 된 **Dsl** 프로젝트입니다.
@@ -185,10 +185,10 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../code-quality/inc
 
  요소 도구에 요소 그룹 프로토타입을 설치하여 도구 상자를 설정합니다. 사용자가 도구를 실행하면 이러한 프로토타입의 복사본이 대상 요소와 병합됩니다.
 
- `CreateElementPrototype()`을 재정의하여 여러 개체의 그룹을 만드는 도구 상자 항목을 정의할 수 있습니다. 예를 들어 하위 구성 요소가 포함된 개체를 나타내는 항목을 정의할 수 있습니다. 코드를 변경한 후에는 실험적 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 인스턴스를 다시 설정하여 도구 상자 캐시를 지웁니다.
+ `CreateElementPrototype()`을 재정의하여 여러 개체의 그룹을 만드는 도구 상자 항목을 정의할 수 있습니다. 예를 들어 하위 구성 요소가 포함된 개체를 나타내는 항목을 정의할 수 있습니다. 코드를 변경한 후 도구 상자 캐시를 지우는 Visual Studio의 실험적 인스턴스 다시 설정 합니다.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>DslPackage 프로젝트의 생성된 파일
- DslPackage는 DSL 모델을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 셸에 연결하여 창, 도구 상자 및 메뉴 명령을 관리합니다. 대부분의 클래스는 double에서 파생되었으므로 이러한 메서드를 모두 재정의할 수 있습니다.
+ DslPackage에 결합 하 여 Visual Studio 셸에 창, 도구 상자 및 메뉴 명령을 관리 DSL 모델. 대부분의 클래스는 double에서 파생되었으므로 이러한 메서드를 모두 재정의할 수 있습니다.
 
  `CommandSet.cs`
 
@@ -279,7 +279,7 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- `DocData` 및 `DocView`를 인스턴스화합니다. 이 파일은 DSL 패키지 시작 시 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 편집기를 여는 데 사용하는 표준 인터페이스를 제공하며, Package.cs의 `ProvideEditorFactory` 특성에서 참조됩니다.
+ `DocData` 및 `DocView`를 인스턴스화합니다. 이 DSL 패키지 시작 하는 경우 편집기를 열려면 Visual Studio를 사용 하는 표준 인터페이스를 충족 합니다. Package.cs의 `ProvideEditorFactory` 특성에서 참조됩니다.
 
  `GeneratedVSCT.vsct`
 
@@ -335,7 +335,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- 이 파일은 DSL이 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 통합되는 방식을 정의합니다. 패키지 클래스의 특성은 파일 확장명이 지정된 파일의 처리기로 DSL을 등록하고 해당 도구 상자를 정의하며 새 창을 열 방식을 정의합니다. 첫 번째 DSL을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 인스턴스로 로드할 때 Initialize() 메서드가 한 번 호출됩니다.
+ 이 파일은 DSL Visual Studio에 통합 하는 방법을 정의 합니다. 패키지 클래스의 특성은 파일 확장명이 지정된 파일의 처리기로 DSL을 등록하고 해당 도구 상자를 정의하며 새 창을 열 방식을 정의합니다. Initialize () 메서드는 첫 번째 DSL Visual Studio 인스턴스를 로드할 때 한 번 호출 됩니다.
 
  `Source.extension.vsixmanifest`
 

@@ -1,0 +1,66 @@
+---
+title: IDebugProgramHost2::GetHostName | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- IDebugProgramHost2::GetHostName
+helpviewer_keywords:
+- IDebugProgramHost2::GetHostName
+ms.assetid: 48bbb089-e59a-471a-9965-24b42a8dabf3
+caps.latest.revision: 11
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 420a25be81a124c89bc4139d80ae881b1f519726
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47556821"
+---
+# <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProgramHost2::GetHostName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramhost2-gethostname)합니다.  
+  
+제목, 이름, 또는이 프로그램의 호스팅 프로세스의 파일 이름을 가져옵니다.  
+  
+## <a name="syntax"></a>구문  
+  
+```cpp#  
+HRESULT GetHostName(   
+   DWORD dwType,  
+   BSTR* pbstrHostName  
+);  
+```  
+  
+```csharp  
+int GetHostName(   
+   uint dwType,  
+   out string pbstrHostName  
+);  
+```  
+  
+#### <a name="parameters"></a>매개 변수  
+ `dwType`  
+ [in] 값을 [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) 열거형입니다.  
+  
+ `pbstrHostName`  
+ [out] 호스팅 프로세스의 요청 된 이름을 반환합니다.  
+  
+## <a name="return-value"></a>반환 값  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
+  
+## <a name="remarks"></a>설명  
+ 이 메서드의 일반적인 구현은에 `dwType` 매개 변수는 무시 되 고 호스트 컴퓨터의 이름을 반환 됩니다. 다른 가능한 구현은 전달 하는 것은 `dwType` 호출에 매개 변수를 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 메서드 이름을 가져옵니다.  
+  
+## <a name="see-also"></a>참고 항목  
+ [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   
+ [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
+

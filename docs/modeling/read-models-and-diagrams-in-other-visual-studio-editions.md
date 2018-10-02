@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 420a17dbac9e0a3bf10b4c92baa108067ad44949
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775583"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859681"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
 모델 생성을 지원하지 않는 Visual Studio 버전에서 모델을 열면 읽기 전용 모드로 모델이 열립니다. 이 모드에서는 다이어그램의 레이아웃을 변경할 수 있지만 모델을 변경할 수는 없습니다.
@@ -26,7 +26,7 @@ ms.locfileid: "43775583"
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>모델 및 다이어그램에 대한 액세스 권한 얻기
  종속성 다이어그램을 읽으려면 먼저 Visual Studio를 사용 하 여 모델링 프로젝트를 열려면 하며 다음 그 안에서 다이어그램을 엽니다.
 
- 따라서 종속성 다이어그램을 읽으려는 경우 이전에 생성 된 모델링 프로젝트에 액세스할 수 있어야 합니다도. 이 작업을 수행하려면 [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)]에서 프로젝트에서 액세스하거나 프로젝트 파일의 복사본을 가져옵니다.
+ 따라서 종속성 다이어그램을 읽으려는 경우 이전에 생성 된 모델링 프로젝트에 액세스할 수 있어야 합니다도. 이렇게 하려면 소스 제어에서 프로젝트에 액세스 하거나 프로젝트 파일의 복사본을 가져옵니다.
 
 > [!NOTE]
 >  코드 맵 및 코드에서 생성된 .NET 클래스 다이어그램에는 적용되지 않습니다. 이러한 다이어그램은 모델링 프로젝트와 독립적으로 볼 수 있습니다.
@@ -53,7 +53,7 @@ ms.locfileid: "43775583"
 
  이러한 변경 내용을 저장할 수 있습니다. 업데이트 된 변경 내용을 다른 사용자에 게 표시 하려는 경우 전송 이상 해야 **.layout** 파일입니다.
 
-##  <a name="RelatedTopics"></a> 관련된 항목
+## <a name="RelatedTopics"></a> 관련된 항목
 
 |제목|설명|
 |-----------|-----------------|

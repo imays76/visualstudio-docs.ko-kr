@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b7b5b360a6288b6ff2e13b6d7fc29df6728fad6f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 45804f08ea25ab8582d28632baf07abea24e0406
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546251"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859486"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: 봉인되지 않은 특성을 사용하지 마십시오.
 
@@ -41,7 +41,7 @@ ms.locfileid: "45546251"
 
 ## <a name="rule-description"></a>규칙 설명
 
-[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 클래스 라이브러리는 사용자 지정 특성을 검색하는 메서드를 제공합니다. 기본적으로 이러한 메서드는 특성 상속 계층을 검색합니다. 예를 들어 <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> 지정된 된 특성 형식이 나 지정된 된 특성 형식이 확장 하는 모든 특성 형식 검색 합니다. 특성을 봉인 상속 계층을 통해 검색을 제거 하 고 성능을 향상 시킬 수 있습니다.
+.NET Framework 클래스 라이브러리는 사용자 지정 특성을 검색 하는 메서드를 제공 합니다. 기본적으로 이러한 메서드는 특성 상속 계층을 검색합니다. 예를 들어 <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> 지정된 된 특성 형식이 나 지정된 된 특성 형식이 확장 하는 모든 특성 형식 검색 합니다. 특성을 봉인 상속 계층을 통해 검색을 제거 하 고 성능을 향상 시킬 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
