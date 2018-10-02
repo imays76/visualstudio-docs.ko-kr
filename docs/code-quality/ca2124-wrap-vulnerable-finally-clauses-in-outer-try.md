@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 738c214e845cb962bc6c28aa63806dee2858c295
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 50c03a16af9562df40dc04a431fac157c1321fbb
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551242"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860084"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: 취약한 finally 절을 외부 try에 래핑하십시오.
 
@@ -33,13 +33,13 @@ ms.locfileid: "45551242"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 버전 1.0 및 1.1의 합니다 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], public 또는 protected 메서드가 포함을 `try` / `catch` / `finally` 블록입니다. `finally` 보안 상태를 되돌리려면 나타나고 되지 않은 블록을 `finally` 블록입니다.
+ 버전 1.0 및 1.1의.NET Framework에서는 public 또는 protected 메서드가 포함 된 `try` / `catch` / `finally` 블록입니다. `finally` 보안 상태를 되돌리려면 나타나고 되지 않은 블록을 `finally` 블록입니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 이 규칙을 찾습니다 `try` / `finally` 의 버전 1.0 및 1.1을 대상으로 하는 코드 블록을 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 는 호출 스택에 있는 악성 예외 필터에 노출 될 수 있습니다. 필터 전에 실행할 수 있습니다 가장 등의 중요 한 작업 try 블록에서 발생 하 고 예외가 throw 되는 `finally` 블록입니다. 가장 예를 들어 필터 가장된 된 사용자로 실행 될 수는이 의미 합니다. 필터는 현재 Visual Basic에서 구현할 수 있습니다.
+ 이 규칙을 찾습니다 `try` / `finally` 호출 스택에 있는 악성 예외 필터에 취약할 수 있는.NET Framework의 버전 1.0 및 1.1을 대상으로 하는 코드에서 차단 합니다. 필터 전에 실행할 수 있습니다 가장 등의 중요 한 작업 try 블록에서 발생 하 고 예외가 throw 되는 `finally` 블록입니다. 가장 예를 들어 필터 가장된 된 사용자로 실행 될 수는이 의미 합니다. 필터는 현재 Visual Basic에서 구현할 수 있습니다.
 
 > [!NOTE]
-> 버전 2.0 이상에 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], 런타임에서 자동으로 보호를 `try` / `catch` /  `finally` 재설정 메서드 내에서 직접 발생 하는 경우 악의적인 예외 필터에서 차단 하는 예외 블록을 포함합니다.
+> .NET framework 2.0 이상 버전에서는 런타임에서 자동으로 보호 된 `try` / `catch` /  `finally` 재설정 메서드 내에서 직접 발생 하는 경우 악의적인 예외 필터에서 차단 하는 예외 블록을 포함합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  배치는 래핑되지 않은 `try` / `finally` 외부 try 블록에 있습니다. 뒤에 오는 두 번째 예제를 참조 하세요. 이렇게 하면는 `finally` 필터 코드 보다 먼저 실행 합니다.

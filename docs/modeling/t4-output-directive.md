@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6044dd970029b3f233f8b20eb2e334b5041ceb33
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953538"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860201"
 ---
 # <a name="t4-output-directive"></a>T4 Output 지시문
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 텍스트 템플릿에서 `output` 지시문은 변환된 파일의 인코딩과 파일 이름 확장명을 정의하는 데 사용됩니다.
+Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환된 된 파일의 인코딩과 파일 이름 확장명 정의에 사용 됩니다.
 
- 예를 들어 경우 프로그램 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 라는 템플릿 파일에 포함 되어 **MyTemplate.tt** 다음 지시문이 들어 있는:
+ 예를 들어, Visual Studio 프로젝트 템플릿 파일을 포함 하는 경우 **MyTemplate.tt** 다음 지시문을 포함 하는:
 
  `<#@output extension=".cs"#>`
 
- 그런 다음 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 파일이 생성 됩니다 **MyTemplate.cs**
+ Visual Studio에서 파일을 생성 한 다음 **MyTemplate.cs**
 
- 전처리된 런타임 텍스트 템플릿에는 `output` 지시문이 필요하지 않습니다. 대신 응용 프로그램은 `TextTransform()`을 호출하여 생성된 문자열을 가져옵니다. 자세한 내용은 참조 [T4 텍스트 템플릿을 사용 하는 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다.
+ 전처리된 런타임 텍스트 템플릿에는 `output` 지시문이 필요하지 않습니다. 대신 응용 프로그램은 `TextTransform()`을 호출하여 생성된 문자열을 가져옵니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다.
 
 ## <a name="using-the-output-directive"></a>output 지시문 사용
 

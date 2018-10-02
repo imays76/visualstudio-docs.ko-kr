@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a18abfa94d3d53c6b96558fdf1cfc8d0c1c9cc5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 506b9b014b375b60491161c49925d49c45c79ef9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549708"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860240"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: 형식은 특정 기본 형식을 확장하면 안 됩니다.
 |||
@@ -51,7 +51,7 @@ ms.locfileid: "45549708"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>규칙 설명
- 에 대 한 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 버전 1에서는 것을 권장 했습니다에서 새 예외를 파생 시키는 <xref:System.ApplicationException>합니다. 새 예외에서 파생 되어야 하 고는 권장 사항이 변경 되었습니다 <xref:System.Exception?displayProperty=fullName> 또는 해당 하위 클래스 중 하나는 <xref:System> 네임 스페이스입니다.
+ .NET Framework 버전 1에 대 한 것을 권장 했습니다에서 새 예외를 파생 시키는 <xref:System.ApplicationException>합니다. 새 예외에서 파생 되어야 하 고는 권장 사항이 변경 되었습니다 <xref:System.Exception?displayProperty=fullName> 또는 해당 하위 클래스 중 하나는 <xref:System> 네임 스페이스입니다.
 
  서브 클래스를 만들지 마십시오 <xref:System.Xml.XmlDocument> 기본 개체 모델 또는 데이터 원본 XML 뷰를 만들려는 경우입니다.
 

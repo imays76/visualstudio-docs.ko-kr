@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b0bac434ad7a182dc56ac08173646068623bd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 31eb949588353a6f2f11ddbbdf516d1a5da63488
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547551"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859734"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: 적절한 경우 이벤트를 사용하십시오.
 |||
@@ -45,10 +45,10 @@ ms.locfileid: "45547551"
 ## <a name="rule-description"></a>규칙 설명
  이 규칙에서는 보통 이벤트에 사용되는 이름을 갖는 메서드를 찾아냅니다. 이벤트는 관찰자 또는 게시-구독 디자인 패턴에 따라 사용 하면 하나의 개체에서 상태 변경을 다른 개체에 전달 해야 합니다. 명확 하 게 정의 된 상태 변경에 대 한 응답에는 메서드가 호출 되는 경우 이벤트 처리기에서 메서드를 호출 해야 합니다. 메서드를 호출하는 개체는 메서드를 직접 호출하는 대신 이벤트를 발생시켜야 합니다.
 
- 이벤트의 몇 가지 일반적인 예는 사용자 인터페이스 응용 프로그램 단추 클릭과 같은 사용자 작업을 실행할 코드의 세그먼트를 발생 하는 위치에 있습니다. [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 이벤트 모델은 사용자 인터페이스에 제한 하지 않으면 사용할 원하는 위치에 하나 이상의 개체 상태가 변경 통신 해야 합니다.
+ 이벤트의 몇 가지 일반적인 예는 사용자 인터페이스 응용 프로그램 단추 클릭과 같은 사용자 작업을 실행할 코드의 세그먼트를 발생 하는 위치에 있습니다. .NET Framework 이벤트 모델에 사용자 인터페이스를 제한 되지 않습니다. 사용 해야 원하는 위치에 하나 이상의 개체 상태가 변경 통신 해야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 개체의 상태가 변경 될 때 메서드가 호출 되는 경우 변경 해야 사용 하도록 디자인 된 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 이벤트 모델.
+ 개체의 상태가 변경 될 때 메서드가 호출 되는 경우.NET Framework 이벤트 모델을 사용 하도록 디자인을 변경 하는 것이 좋습니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 메서드를 사용 하 여 작동 하지 않는 경우이 규칙에서 경고를 표시 합니다 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 이벤트 모델.
+ 메서드는.NET Framework 이벤트 모델을 사용 하 여 작동 하지 않는 경우이 규칙에서 경고를 표시 합니다.
