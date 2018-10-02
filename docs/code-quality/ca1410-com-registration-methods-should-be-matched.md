@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4cbff52a5b5b5ef5fc46ef0b2f93926f097485
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5d04668ef21ea469e1dbb42cea6c8a8b5b7f18f5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550899"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858402"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: COM 등록 메서드는 일치해야 합니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "45550899"
  형식으로 표시 되는 메서드를 선언 합니다 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> 특성으로 표시 되는 메서드를 선언 하지 않습니다 하지만 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> 특성 또는 그 반대로 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 만들려는 구성 요소 개체 모델 (COM) 클라이언트용를 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 형식 형식을 먼저 등록 해야 합니다. 사용 가능한 경우로 표시 된 메서드는 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> 특성 사용자 지정 코드를 실행 하는 등록 프로세스 동안 호출 됩니다. 로 표시 된 해당 메서드는 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> 등록 메서드 작업을 되돌리기 위해 등록 프로세스 동안 특성 이라고 합니다.
+ .NET Framework 형식을 만드는 구성 요소 개체 모델 (COM) 클라이언트용 형식은 먼저 등록 되어야 합니다. 사용 가능한 경우로 표시 된 메서드는 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> 특성 사용자 지정 코드를 실행 하는 등록 프로세스 동안 호출 됩니다. 로 표시 된 해당 메서드는 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> 등록 메서드 작업을 되돌리기 위해 등록 프로세스 동안 특성 이라고 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 해당 등록 또는 등록 취소 메서드를 추가 합니다.

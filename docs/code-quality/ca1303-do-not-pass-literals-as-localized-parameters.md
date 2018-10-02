@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd26eecb1fba0aea266daf26eb071b8c29165ec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8716a16ea3b141e7c5053e526d92531d0a77bc1e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546761"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859408"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마십시오.
 
@@ -38,7 +38,7 @@ ms.locfileid: "45546761"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 메서드 문자열 리터럴을 전달 매개 변수로 생성자 또는 메서드에서 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 클래스 라이브러리 및는 문자열은 지역화 될 수 있어야 합니다.
+ 메서드 문자열 리터럴을 전달 매개 변수로 생성자 또는.NET Framework 클래스 라이브러리의 메서드 및 해당 문자열은 지역화 될 수 있어야 합니다.
 
  이 경고는 리터럴 문자열 매개 변수 또는 속성 값으로 전달 되 고 다음 경우 중 하나 이상의 참인 경우에 발생 합니다.
 
