@@ -1,0 +1,60 @@
+---
+title: Unity 로그 콜백을 VSTU와 공유 | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- tgt-pltfrm-cross-plat
+ms.tgt_pltfrm: ''
+ms.topic: article
+ms.assetid: 5d71f906-6e50-4399-b59b-d38c6dfef7ee
+caps.latest.revision: 5
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
+ms.openlocfilehash: 8e1e0f2062195830443a169c67d9b75d2b1915ec
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47555705"
+---
+# <a name="share-the-unity-log-callback-with-vstu"></a>Unity 로그 콜백을 VSTU와 공유
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+이 항목의 최신 버전에서 찾을 수 있습니다 [Unity 로그 콜백을 VSTU와 공유](https://docs.microsoft.com/visualstudio/cross-platform/share-the-unity-log-callback-with-vstu)합니다.  
+  
+  
+Visual Studio Tools for Unity는 콘솔을 Visual Studio에 스트림할 수 있도록 로그 콜백을 Unity로 등록합니다. 편집기 스크립트가 로그 콜백을 Unity로 등록하는 경우에도 VSTU 콜백이 사용자의 콜백과 충돌할 수 있습니다. 이러한 가능성을 방지하려면 `VisualStudioIntegration.LogCallback` 이벤트를 사용하여 VSTU와 상호 운용해야 합니다.  
+  
+## <a name="demonstrates"></a>세부 항목  
+ Visual Studio Tools for Unity에서 만든 Unity 로그 콜백을 공유하는 방법  
+  
+## <a name="example"></a>예제  
+  
+```csharp  
+using System;  
+  
+using UnityEngine;  
+using UnityEditor;  
+  
+using SyntaxTree.VisualStudio.Unity.Bridge;  
+  
+[InitializeOnLoad]  
+public class LogCallbackHook  
+{  
+    static LogCallbackHook()  
+    {  
+        VisualStudioIntegration.LogCallback += (string condition, string trace, LogType type) =>  
+        {  
+            // place code that implements your log callback here  
+        };  
+    }  
+}  
+```  
+  
+## <a name="see-also"></a>참고 항목  
+ [예제: 프로젝트 파일 생성](../cross-platform/customize-project-files-created-by-vstu.md)
+
