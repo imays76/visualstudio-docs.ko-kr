@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 852ca3d81b2dc72e4f0cb518a002b746a77cf5e3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552060"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860162"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: 식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45552060"
  대/소문자 구분 방식으로 다른 식별자를 비교 했을 때 고유 이름을 선택 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 이 규칙에서는 경고를 표시해야 합니다. 라이브러리에서 사용 가능한 모든 언어에서 사용 하지 못할는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]합니다.
+ 이 규칙에서는 경고를 표시해야 합니다. 라이브러리는.NET Framework에서 사용 가능한 모든 언어에서 사용 하지 못할 수 있습니다.
 
 ## <a name="example-of-a-violation"></a>위반의 예
  다음 예제에서는이 규칙 위반을 보여 줍니다.
