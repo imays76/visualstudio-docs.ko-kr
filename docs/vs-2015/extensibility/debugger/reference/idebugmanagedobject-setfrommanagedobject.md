@@ -1,0 +1,60 @@
+---
+title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- IDebugManagedObject::SetFromManagedObject
+helpviewer_keywords:
+- IDebugManagedObject::SetFromManagedObject method
+ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
+caps.latest.revision: 10
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c452225290136cd168b655f2ed3196ca91961168
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47549438"
+---
+# <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugManagedObject::SetFromManagedObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject)합니다.  
+  
+매개 변수로 제공 하는 값 클래스의 인스턴스에서 값 클래스 개체의 인스턴스 값을 설정 합니다.  
+  
+## <a name="syntax"></a>구문  
+  
+```cpp#  
+HRESULT SetFromManagedObject(   
+   IUnknown* pManagedObject  
+);  
+```  
+  
+```csharp  
+int SetFromManagedObject(  
+   object pManagedObject  
+);  
+```  
+  
+#### <a name="parameters"></a>매개 변수  
+ `pManagedObject`  
+ [in] 새 값이 포함 된 관리 되는 개체를 나타내는 인터페이스입니다.  
+  
+## <a name="return-value"></a>반환 값  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
+  
+## <a name="remarks"></a>설명  
+ 에 표시 된 대로 관리 되는 개체를 변경 하려면이 메서드는 사용 된 [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) 개체입니다.  
+  
+## <a name="see-also"></a>참고 항목  
+ [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)
+
