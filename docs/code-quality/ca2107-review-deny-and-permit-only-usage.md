@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550114"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859330"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Deny 및 PermitOnly 사용을 검토하십시오.
 |||
@@ -35,7 +35,7 @@ ms.locfileid: "45550114"
  메서드는 PermitOnly 또는 Deny 보안 동작을 지정 하는 보안 검사를 포함 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 합니다 <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> 보안 작업을 잘된 알고 있는 사용자에 의해서만 사용할지의 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 보안 합니다. 이러한 보안 동작을 사용하는 코드는 보안 검토를 거쳐야 합니다.
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> .NET Framework 보안 잘된 알고 있는 사용자에 의해서만 보안 동작을 사용 해야 합니다. 이러한 보안 동작을 사용하는 코드는 보안 검토를 거쳐야 합니다.
 
  거부 하는 보안 요청에 대 한 응답에서 발생 하는 스택 워크의 기본 동작을 변경 합니다. 거부 메서드를 호출 스택에 있는 호출자의 실제 권한과 관계 없이 기간에 대 한 부여 되지 않아야 하는 권한을 지정할 수 있습니다. 스택 워크 Deny로 보호 되는 메서드를 검색 하 고 요청 된 권한이 거부 된 권한에 포함 되어, 경우 스택 워크가 실패 합니다. 또한 PermitOnly 스택 워크의 기본 동작을 변경합니다. 코드를에서 호출자의 권한과 관계 없이 부여할 수 있는 권한만 지정할 수 있습니다. 스택 워크 PermitOnly에서 보호 되는 메서드를 검색 하 고는 PermitOnly 하 여 지정 된 사용 권한에서 요청 된 권한이 포함 되지 않으면, 스택 워크가 실패 합니다.
 

@@ -13,16 +13,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2009e4c186682157eab6803ad3055fd5818fd02d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511813"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860500"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>파일 저장소 및 XML Serialization 사용자 지정
 
-사용자 인스턴스를 저장 하는 경우 또는 *모델*, 도메인 특정 언어 (DSL)의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], XML 파일로 만들어지거나 업데이트 됨. 파일은 저장소에 모델을 다시 다시 로드 될 수 있습니다.
+사용자 인스턴스를 저장 하는 경우 또는 *모델*, Visual Studio에서 도메인 특정 언어 (DSL)를 XML 파일로 만들어지거나 업데이트 됨. 파일은 저장소에 모델을 다시 다시 로드 될 수 있습니다.
 
 아래에서 설정을 조정 하 여 serialization 체계를 사용자 지정할 수 있습니다 **Xml 직렬화 동작** DSL 탐색기에서. 아래에 있는 노드가 **Xml 직렬화 동작** 모든 도메인 클래스, 속성 및 관계에 대 한 합니다. 관계의 원본 클래스 아래에 있습니다. 셰이프, 커넥터 및 다이어그램 클래스에 해당 하는 노드가 있습니다.
 

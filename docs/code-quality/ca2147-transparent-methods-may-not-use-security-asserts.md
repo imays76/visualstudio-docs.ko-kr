@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2dc7b322d6a1e812e88930f1586458ac892249b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ca9047866b5b8f030ee8e1f5a043683234edeb72
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549801"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859538"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: 투명 메서드는 보안 어설션을 사용할 수 없습니다.
 |||
@@ -40,7 +40,7 @@ ms.locfileid: "45549801"
 
  런타임에 호출 <xref:System.Security.CodeAccessPermission.Assert%2A> transparent 코드에서 발생 합니다는 <xref:System.InvalidOperationException> throw 됩니다. 모두 100% 투명 어셈블리 및 투명/중요 혼합된 어셈블리 메서드 또는 형식에 투명 하 게 선언 하 하지만 선언적 이거나 명령 적인 어설션 포함 위치에서 발생할 수 있습니다.
 
- 합니다 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 이라고 하는 기능을 도입 *투명도*합니다. 개별 메서드, 필드, 인터페이스, 클래스 및 형식 투명 하거나 중요할 수 있습니다.
+ .NET Framework 2.0 이라고 하는 기능을 도입 *투명도*합니다. 개별 메서드, 필드, 인터페이스, 클래스 및 형식 투명 하거나 중요할 수 있습니다.
 
  투명 코드는 보안 권한을 승격할 수 없습니다. 따라서 모든 권한이 부여 되거나 요청 호출자 또는 호스트 응용 프로그램 도메인에는 코드를 통해 자동으로 전달 됩니다. 권한 상승의 예로 빌드에서만 자산, LinkDemands SuppressUnmanagedCode, 및 `unsafe` 코드입니다.
 

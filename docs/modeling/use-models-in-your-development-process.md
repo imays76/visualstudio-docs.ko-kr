@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623875"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859395"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 
@@ -48,7 +48,7 @@ Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는
 
 ## <a name="use-models-with-other-artifacts"></a>기타 아티팩트를 사용 하 여 모델을 사용 합니다.
 
-모델 자체는 요구 사항 사양 또는 아키텍처가 아닙니다. 이러한 사항의 일부 측면을 보다 명확하게 표현하기 위한 도구지만 소프트웨어 디자인 중에 필요한 모든 개념을 표현할 수 있는 것은 아닙니다. OneNote 페이지 또는 단락, Microsoft Office 문서, [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]의 작업 항목 또는 프로젝트 사무실 벽의 스티커 메모와 같은 다른 커뮤니케이션 수단과 함께 사용해야 합니다. 마지막 항목을 제외하고 이러한 모든 개체 형식을 모델의 요소 파트에 연결할 수 있습니다.
+모델 자체는 요구 사항 사양 또는 아키텍처가 아닙니다. 이러한 사항의 일부 측면을 보다 명확하게 표현하기 위한 도구지만 소프트웨어 디자인 중에 필요한 모든 개념을 표현할 수 있는 것은 아닙니다. 모델 이므로 다른 Team Foundation 또는 프로젝트 사무실 벽의 스티커 메모 OneNote 페이지 또는 단락, Microsoft Office 문서, 작업 항목 같은 통신 수단으로 함께 사용 해야 합니다. 마지막 항목을 제외하고 이러한 모든 개체 형식을 모델의 요소 파트에 연결할 수 있습니다.
 
 일반적으로 모델과 함께 사용되는 사양의 다른 측면은 다음과 같습니다. 프로젝트의 크기 및 스타일에 따라 이러한 측면 중 일부를 사용하거나 전혀 사용하지 않을 수 있습니다.
 
@@ -88,7 +88,7 @@ Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는
 
 - 각 반복이 거의 끝나면 요구 사항 워크숍을 열어 다음 반복에서 개발할 요구 사항 또는 사용자 스토리를 자세히 정의합니다. 개발자와 시스템 테스터뿐 아니라 우선 순위를 결정할 수 있는 사용자 및 비즈니스 이해 관계자도 초대합니다. 2주 반복에 대한 요구 사항을 정의하는 데 3시간을 할애합니다.
 
-- 워크숍의 목표는 다음 반복이 끝날 때까지 달성할 목표에 대해 모두가 동의하는 것입니다. 모델을 도구 중 하나로 사용하여 요구 사항을 명확하게 설명합니다. 워크숍의 결과는 반복 백로그, 즉 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]의 개발 작업 목록 및 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]의 테스트 도구 모음입니다.
+- 워크숍의 목표는 다음 반복이 끝날 때까지 달성할 목표에 대해 모두가 동의하는 것입니다. 모델을 도구 중 하나로 사용하여 요구 사항을 명확하게 설명합니다. 워크숍의 출력은는 반복 백로그: Team Foundation 및 테스트 도구 모음에서에서 개발 작업 목록, [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]합니다.
 
 - 요구 사항 워크숍에서는 예상 개발 작업을 결정해야 하는 경우에만 디자인을 논의합니다. 그렇지 않으면 사용자가 직접 경험할 수 있는 시스템 동작만 논의합니다. 요구 사항 모델을 아키텍처 모델과 별도로 유지합니다.
 
@@ -96,7 +96,7 @@ Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는
 
 ### <a name="link-model-to-work-items"></a>작업 항목에 모델 연결
 
-요구 사항 워크숍 후에 요구 사항 모델을 자세히 설명하고 개발 작업에 모델을 연결합니다. 모델의 요소에 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]의 작업 항목을 연결하면 이 작업을 수행할 수 있습니다.
+요구 사항 워크숍 후에 요구 사항 모델을 자세히 설명하고 개발 작업에 모델을 연결합니다. 모델의 요소를 Team Foundation 작업 항목을 연결 하 여이 수행할 수 있습니다.
 
 작업 항목에 모든 요소를 연결할 수 있지만 가장 유용한 요소는 다음과 같습니다.
 

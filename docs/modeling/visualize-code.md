@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5db66307ef9c0099e152e46c0aac761519881cd3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 49f3c0e9cdd1feee0161c95d30bed03244d14e15
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269091"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857629"
 ---
 # <a name="visualize-code"></a>코드 시각화
 
@@ -26,26 +26,26 @@ Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를
 
 - 코드의 관계를 이해하려면 해당 관계를 시각적으로 매핑합니다.
 
-- 시스템의 아키텍처를 설명 하는 코드와 디자인의 일관성이 유지 종속성 다이어그램을 만들고 이러한 다이어그램에 대해 코드 유효성을 검사 합니다.
+- 시스템의 아키텍처를 설명 하 고 코드와 디자인의 일관성을 유지 하려면 종속성 다이어그램 만들고 이러한 다이어그램에 대해 코드 유효성을 검사 합니다.
 
 - 클래스 구조를 설명하려면 클래스 다이어그램을 만듭니다.
 
 또한 이러한 도구는 프로젝트에 관련된 사용자와 보다 쉽게 커뮤니케이션하는 데 도움이 됩니다.
 
-각 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+각 기능을 지 원하는 Visual Studio의 버전을 보려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
 |||
 |-|-|
-|**코드와의 관계를 이해 합니다.**<br /><br /> 특정 코드 조각 간의 관계를 매핑합니다.<br /><br /> 전체 솔루션에 대한 코드의 관계 개요를 참조하세요.|- [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [코드 맵을 사용 하 여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [코드 맵 분석기를 사용 하 여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [디버깅 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
-|**클래스 구조를 이해 합니다.**<br /><br /> 코드에서 클래스 다이어그램을 만들어 프로젝트의 클래스 구조를 시각화합니다.|[방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**고급 수준의 시스템 디자인에 설명 하 고이 디자인에 대해 코드 유효성을 검사 합니다.**<br /><br /> 종속성 다이어그램을 만들어서 고급 수준의 시스템 디자인 및 의도 한 종속성을 설명 합니다. 이 디자인과 비교해서 코드의 유효성을 검사하여 코드의 종속성이 디자인과 일치하는지 확인합니다.|- [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램으로 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|
+|**코드 및 해당 관계를 이해 합니다.**<br /><br /> 특정 코드 조각 간의 관계를 매핑합니다.<br /><br /> 전체 솔루션에 대한 코드의 관계 개요를 참조하세요.|- [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [코드 맵을 사용 하 여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [코드 맵 분석기를 사용 하 여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [디버깅 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**클래스 구조 이해:**<br /><br /> 코드에서 클래스 다이어그램을 만들어 프로젝트의 클래스 구조를 시각화합니다.|[방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
+|**전반적인 시스템 디자인을 설명 하 고이 디자인에 대해 코드 유효성을 검사 합니다.**<br /><br /> 종속성 다이어그램을 만들어 전반적인 시스템 디자인 및 의도 한 종속성을 설명 합니다. 이 디자인과 비교해서 코드의 유효성을 검사하여 코드의 종속성이 디자인과 일치하는지 확인합니다.|- [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="see-also"></a>참고자료
 
 - [시나리오: 시각화 및 모델링을 사용하여 디자인 변경](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
-- [분석 및 아키텍처 모델링](../modeling/analyze-and-model-your-architecture.md)
+- [분석 및 모델 아키텍처](../modeling/analyze-and-model-your-architecture.md)
 - [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
 

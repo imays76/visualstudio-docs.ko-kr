@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2823933e4792dd6127ffbd4b1bfe5dfe1b71a0c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2ea3a470ab6b6d9cf3e7daeaf24cd82d0f7ac387
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547554"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858512"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: 릴리스되지 않은 리소스 형식을 제공하지 마십시오.
 |||
@@ -32,13 +32,13 @@ ms.locfileid: "45547554"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 리소스 파일의 버전을 사용 하 여 빌드된는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 는 현재 지원 되지 않습니다.
+ 리소스 파일을 현재 지원 되지 않는.NET Framework의 버전을 사용 하 여 만들어졌습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 시험판 버전을 사용 하 여 빌드된 리소스 파일을 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 지원 되는 버전의.NET Framework에서 사용할 수 있습니다.
+ .NET Framework의 시험판 버전을 사용 하 여 빌드된 리소스 파일은 지원 되는 버전의.NET Framework에서 사용 하지 못할 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 지원 되는 버전을 사용 하 여 리소스를 작성 합니다 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k.
+ 이 규칙 위반 문제를 해결 하려면 지원 되는.NET Frameworkk 버전을 사용 하 여 리소스를 작성 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.
