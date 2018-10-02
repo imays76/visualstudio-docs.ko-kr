@@ -1,0 +1,40 @@
+---
+title: VSSDK 유틸리티 | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- Architecture, Visual Studio Integration
+ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
+caps.latest.revision: 9
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 27aba64a134cf47b7c292763901565e216f4088d
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47556548"
+---
+# <a name="vssdk-utilities"></a>VSSDK 유틸리티
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
+이 항목의 최신 버전에서 찾을 수 있습니다 [VSSDK 유틸리티](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities)합니다.  
+  
+이 섹션의에서 항목에서는 VSSDK 함께 제공 되는 도구를 설명 합니다.  
+  
+## <a name="in-this-section"></a>섹션 내용  
+ [RegPkg 유틸리티](../../extensibility/internals/regpkg-utility.md)  
+  [CreatePkgDef 유틸리티](../../extensibility/internals/createpkgdef-utility.md)  
+  [CreateExpInstance 유틸리티](../../extensibility/internals/createexpinstance-utility.md)  
+  [색 테마 도구](../../extensibility/internals/color-theming-tools.md)  
+  [이미지 서비스 도구](../../extensibility/internals/image-service-tools.md)  
+  
+## <a name="related-sections"></a>관련 단원
+
