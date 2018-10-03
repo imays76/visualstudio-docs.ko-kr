@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542604"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243954"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio에서 IntelliTrace 뒤로 사용 하 여 이전 앱 상태를 검사 합니다.
 
@@ -106,6 +106,8 @@ IntelliTrace는 이벤트 및 스냅숏 모드에서 복잡 한 개체를 포함
 * Windows 10 Fall Creators Update (RS3) 보다 오래 된 Windows 버전에서 IntelliTrace 이벤트 및 스냅숏 모드를 사용 하는 경우 응용 프로그램의 디버그 플랫폼 대상이 x86으로 설정 된 경우 IntelliTrace 스냅숏을 사용 하지 않습니다.
 
     해결 방법:
+    * Windows 10 1 주년 업데이트 (RS1) 10.0.14393.2273, 버전 이하의 [KB4103720 설치](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)합니다. 
+    * 버전 10.0.15063.1112, 아래에서 Windows 10 크리에이터 업데이트 (RS2)에 있다면 [KB4103722 설치](https://support.microsoft.com/help/4103722/windows-10-update-4103722)합니다.
     * 설치 또는 Windows 10 Fall Creators Update (RS3)로 업그레이드 합니다. 
     * 또는: 
         1. Visual Studio 설치 관리자에서 데스크톱(x86, x64) 구성 요소용 VC++ 2015.3 v140 도구 집합을 설치합니다.
