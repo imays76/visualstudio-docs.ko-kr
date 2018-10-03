@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bc8ecdbbbed1d7d128a5102141c7130dcaef026
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f7c05d76aa74e32695d20b2d5e9ed4f030e65813
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775777"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859811"
 ---
 # <a name="customizing-deletion-behavior"></a>삭제 동작 사용자 지정
 일반적으로 요소를 삭제하면 관련 요소도 삭제됩니다. 해당 요소에 연결된 모든 관계와 모든 자식 요소도 삭제됩니다. 이 동작은 라고 *삭제 전파*합니다. 예를 들어 삭제 전파를 사용자 지정하여 추가 관련 요소도 삭제되도록 지정할 수 있습니다. 프로그램 코드를 작성하면 모델 상태에 따라 삭제 전파가 수행되도록 지정할 수 있습니다. 또한 삭제에 응답하여 다른 변경도 수행되도록 할 수 있습니다.
@@ -35,11 +35,11 @@ ms.locfileid: "43775777"
 
 -   [삭제 규칙](#rules) -하나의 변경 내용을 다른 사람에 게 발생할 수 있습니다 위치 저장소에서 모든 종류의 업데이트를 전파 하려면 규칙을 사용 합니다.
 
--   [Deletion 이벤트](#rules) -다른 곳으로 예를 들어 store 외부로 업데이트를 전파 하는 데 사용 하 여 저장소 이벤트 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 문서.
+-   [Deletion 이벤트](#rules) -다른 Visual Studio 문서에 예를 들어 store 외부로 업데이트를 전파 하려면 store 이벤트를 사용 합니다.
 
 -   [UnMerge](#unmerge) -부모 자식 요소를 연결 하는 병합 작업을 취소 하려면 UnMerge 작업을 사용 합니다.
 
-##  <a name="default"></a> 기본 삭제 동작
+## <a name="default"></a> 기본 삭제 동작
  기본적으로 삭제 전파를 규정하는 규칙은 다음과 같습니다.
 
 -   요소를 삭제하면 포함된 요소도 모두 삭제됩니다. 포함된 요소는 이 요소가 소스인 포함 관계의 대상인 요소입니다. 예를 들어에서 포함 관계가 **앨범** 에 **Song**, 특정 앨범 삭제 되 면 모든 노래도 삭제도 됩니다.
@@ -52,7 +52,7 @@ ms.locfileid: "43775777"
 
 -   소스 또는 대상 역할에서 요소에 연결되는 모든 관계는 삭제됩니다. 그러면 반대쪽 역할의 요소 역할 속성은 더 이상 삭제된 요소를 포함하지 않습니다.
 
-##  <a name="property"></a> 역할의 삭제 전파 옵션 설정
+## <a name="property"></a> 역할의 삭제 전파 옵션 설정
  삭제가 참조 관계에서 또는 포함된 자식에서 부모에 전파되도록 지정할 수 있습니다.
 
 #### <a name="to-set-delete-propagation"></a>삭제 전파를 설정하려면
@@ -77,7 +77,7 @@ ms.locfileid: "43775777"
 > [!NOTE]
 >  DSL 정의 프로그램 코드를 추가 하려면 별도 코드 파일을 만들 합니다 **Dsl** 프로젝트 및 Generated Code 폴더의 클래스를 보완 하는 partial 정의 작성 합니다. 자세한 내용은 [도메인별 도메인별 언어 사용자 지정 하려면 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)합니다.
 
-##  <a name="closure"></a> Delete Closure 정의
+## <a name="closure"></a> Delete Closure 정의
  삭제 작업 클래스를 사용 _YourModel_**DeleteClosure** 초기 선택을 삭제 하려면 요소 결정 합니다. 이 클래스는 `ShouldVisitRelationship()` 및 `ShouldVisitRolePlayer()`를 반복적으로 호출하여 관계 그래프를 단계별로 이동합니다. 이러한 메서드를 재정의할 수 있습니다. ShouldVisitRolePlayer는 링크의 역할 중 하나에 있는 요소 및 링크의 id를 사용 하 여 제공 됩니다. 다음 값 중 하나를 반환해야 합니다.
 
 -   **VisitorFilterResult.Yes**-요소를 삭제 해야 하며 워커를 계속할지 요소의 다른 링크 합니다.
@@ -130,7 +130,7 @@ partial class MusicLibDeleteClosure
 
  그러나 이 기술은 삭제가 관계 그래프의 인접 항목에만 적용된다고 가정합니다. 따라서 이 메서드를 사용해 모델의 다른 부분에 있는 요소를 삭제할 수는 없습니다. 요소를 추가하거나 삭제에 대한 응답으로 다른 변경을 수행하려는 경우에는 이 메서드를 사용할 수 없습니다.
 
-##  <a name="ondeleting"></a> OnDeleting 및 OnDeleted 사용
+## <a name="ondeleting"></a> OnDeleting 및 OnDeleted 사용
  도메인 클래스나 도메인 관계에서 `OnDeleting()` 또는 `OnDeleted()`를 재정의할 수 있습니다.
 
 1.  요소를 삭제하려고 하면 해당 관계가 끊기기 전에 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>이 호출됩니다. 이 시점에서는 해당 요소와 다른 요소 간에 계속 이동할 수 있으며 해당 요소는 아직 `store.ElementDirectory`에 있습니다.
@@ -197,7 +197,7 @@ partial class Artist
 
  요소에 대해 <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A>를 수행하면 OnDeleting 및 OnDeleted가 호출됩니다. 이러한 메서드는 항상 인라인으로 수행할된-즉, 실제 삭제 직전 전후. 코드가 둘 이상의 요소를 삭제하는 경우에는 모든 요소에 대해 OnDeleting 및 OnDeleted가 번갈아 가며 호출됩니다.
 
-##  <a name="rules"></a> 삭제 규칙 및 이벤트
+## <a name="rules"></a> 삭제 규칙 및 이벤트
  OnDelete 처리기를 사용하는 대신 삭제 규칙과 삭제 이벤트를 정의할 수 있습니다.
 
 1.  **삭제** 하 고 **삭제** 규칙이 트리거되면만 트랜잭션이 아니라에 실행 취소 또는 다시 실행 합니다. 삭제를 수행하는 트랜잭션 종료 시 이러한 규칙이 실행 대기되도록 설정할 수 있습니다. Deleting 규칙은 항상 큐의 Deleted 규칙보다 먼저 실행됩니다.
@@ -206,7 +206,7 @@ partial class Artist
 
      자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
 
-2.  **삭제** store 이벤트는 트랜잭션이 끝날 때 호출 되 고 실행 취소 또는 다시 실행 한 후 호출 됩니다. 따라서 이 이벤트는 파일, 데이터베이스 항목 또는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 기타 개체와 같은 Store 외부의 개체로 삭제를 전파하는 데 사용할 수 있습니다.
+2.  **삭제** store 이벤트는 트랜잭션이 끝날 때 호출 되 고 실행 취소 또는 다시 실행 한 후 호출 됩니다. 개체 파일, 데이터베이스 항목 또는 Visual Studio의 다른 개체와 같은 store 외부에 있는 삭제 전파를 따라서 사용 수 있습니다.
 
      자세한 내용은 [이벤트 처리기 전파 변경 외부 모델](../modeling/event-handlers-propagate-changes-outside-the-model.md)합니다.
 
@@ -287,7 +287,7 @@ partial class NestedShapesSampleDocData
 
 ```
 
-##  <a name="unmerge"></a> UnMerge
+## <a name="unmerge"></a> UnMerge
  부모 자식 요소를 연결 하는 작업 이라고 *병합*입니다. 새 요소 또는 요소 그룹을 도구 상자에서 만들거나 모델의 다른 부분에서 이동하거나 클립보드에서 복사하면 병합이 수행됩니다. 병합 작업을 수행하면 부모와 새 자식 간에 포함 관계를 작성할 수 있을 뿐 아니라 추가 관계를 설정하고 보조 요소를 만들고 요소에서 속성 값을 설정할 수도 있습니다. 병합 작업은 EMD(Element Merge Directive)에서 캡슐화됩니다.
 
  Emd는 추가 캡슐화 *unmerge* 또는 `MergeDisconnect` 작업 합니다. merge를 사용하여 생성된 요소 클러스터가 있는 경우 나머지 요소를 일관된 상태로 유지하려면 연결된 unmerge를 사용하여 해당 클러스터에서 요소를 제거하는 것이 좋습니다. unmerge 작업에서는 보통 이전 섹션에서 설명한 기술을 사용합니다.
