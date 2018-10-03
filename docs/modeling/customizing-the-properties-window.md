@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c1aec06469e5ea0845a8658d9dcb88563e1984
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567170"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859304"
 ---
 # <a name="customizing-the-properties-window"></a>속성 창 사용자 지정
-사용자 지정할 수 있습니다 모양 및 동작의 속성 창에서 도메인 특정 언어 (DSL) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다. DSL 정의에서 각 도메인 클래스에 도메인 속성을 정의합니다. 기본적으로 모델 탐색기 또는 다이어그램에서 클래스의 인스턴스를 선택 하면 속성 창에서 모든 도메인 속성 나열 됩니다. 이 수 다이어그램에서 셰이프 필드에 매핑되지 않은 하는 경우에 하 고 도메인 속성의 값을 편집 합니다.
+도메인 특정 언어 (DSL) Visual Studio에서의 모양 및 동작의 속성 창 사용자 지정할 수 있습니다. DSL 정의에서 각 도메인 클래스에 도메인 속성을 정의합니다. 기본적으로 모델 탐색기 또는 다이어그램에서 클래스의 인스턴스를 선택 하면 속성 창에서 모든 도메인 속성 나열 됩니다. 이 수 다이어그램에서 셰이프 필드에 매핑되지 않은 하는 경우에 하 고 도메인 속성의 값을 편집 합니다.
 
 ## <a name="names-descriptions-and-categories"></a>이름, 설명 및 범주
  **이름 및 표시 이름을**입니다. 도메인 속성의 정의에서 속성의 표시 이름 속성 창에서 런타임에 표시 되는 이름입니다. 반면, 이름 속성을 업데이트 하는 프로그램 코드를 작성 하는 경우 사용 됩니다. 이름에는 올바른 CLR 영숫자 이름 이어야 합니다. 하지만 표시 이름은 공백을 포함할 수 있습니다.

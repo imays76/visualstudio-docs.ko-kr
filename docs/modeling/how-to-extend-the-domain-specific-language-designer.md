@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176078"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860370"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인별 언어 디자이너 확장
 
@@ -68,19 +68,19 @@ DSL 정의 편집 하는 데 사용 하는 디자이너에 확장을 만들 수 
 
 ## <a name="test-and-deployment"></a>테스트 및 배포
 
-확장을이 항목의 테스트를 빌드하고 솔루션을 실행 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 의 실험적 인스턴스가 열립니다. 이 인스턴스에서 DSL 솔루션을 엽니다. DslDefinition 다이어그램을 편집 합니다. 확장 동작을 볼 수 있습니다.
+확장을이 항목의 테스트를 빌드하고 솔루션을 실행 합니다. Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 DSL 솔루션을 엽니다. DslDefinition 다이어그램을 편집 합니다. 확장 동작을 볼 수 있습니다.
 
-확장을 배포 하는 기본 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], 다른 컴퓨터에 다음이 단계를 수행 합니다.
+Visual Studio의 주를 다른 컴퓨터에 확장을 배포 하려면 다음이 단계를 수행 합니다.
 
 1.  Bin의 VSIX 프로젝트에 VSIX 설치 파일을 찾거나\\*\*\\\*.vsix
 
 2.  대상 컴퓨터에이 파일을 복사 하 고 Windows 탐색기 (또는 파일 탐색기)에서 두 번 클릭 합니다.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 확장이 설치 되어 있는지 확인 하려면 확장 관리자가 열립니다.
+     확장이 설치 되어 있는지 확인 하려면 Visual Studio 확장 관리자가 열립니다.
 
 확장을 제거 하려면 다음이 단계를 수행 합니다.
 
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.
+1.  Visual Studio에서에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.
 
 2.  확장을 선택 하 여 삭제 합니다.
 
