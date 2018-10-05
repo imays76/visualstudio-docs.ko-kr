@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 1b50bdf48e80e5ed259ba61f0e104e411e76a490
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612742"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788034"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정
 기호 파일이 라고도 하는 프로그램 데이터베이스 (.pdb) 파일에는 클래스, 메서드 및 다른 코드 프로젝트의 컴파일된 실행 파일에 사용 되는 식별자에 대 한 소스 코드에서 만든 식별자를 매핑합니다. .pdb 파일은 소스 코드의 문을 실행 파일의 실행 명령에 매핑합니다. 디버거는이 정보를 사용 하 여 두 가지 중요 정보를 확인 하려면:
@@ -175,35 +175,35 @@ DLL의 내보내기 테이블에서 사용할 수 있는 기호를 확인하려�
 |**항상 자동으로 로드**|기호 파일을 디버거에서 자동으로 로드되는 파일 목록에 추가합니다.|  
   
 ###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> 기호 파일에 대한 컴파일러 옵션 설정  
- VS IDE에서 프로젝트를 빌드하고 표준 **디버그** 빌드 구성을 사용하면, C++ 및 관리되는 컴파일러에서 코드에 대한 적절한 기호 파일을 만듭니다. 또한 명령줄에 컴파일러 옵션을 설정하여 기호 파일을 만들 수도 있습니다.  
+VS IDE에서 프로젝트를 빌드하고 표준 **디버그** 빌드 구성을 사용하면, C++ 및 관리되는 컴파일러에서 코드에 대한 적절한 기호 파일을 만듭니다. 또한 명령줄에 컴파일러 옵션을 설정하여 기호 파일을 만들 수도 있습니다.  
   
- **C++ 옵션**  
+**C++ 옵션**  
   
- 프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. .pdb 파일은 [/ZI 또는 /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 를 사용하여 빌드할 때 만들어집니다(C/C++의 경우).  
+프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. .pdb 파일은 [/ZI 또는 /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 를 사용하여 빌드할 때 만들어집니다(C/C++의 경우).  
   
- [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]의 [/Fd](/cpp/build/reference/fd-program-database-file-name) 는 컴파일러에서 만드는 .pdb 파일의 이름을 지정하는 옵션입니다. 마법사를 사용하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 프로젝트를 만드는 경우, 이름이 **project** .pdb인 .pdb 파일을 만들도록 */Fd*옵션이 설정됩니다.  
+[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]의 [/Fd](/cpp/build/reference/fd-program-database-file-name) 는 컴파일러에서 만드는 .pdb 파일의 이름을 지정하는 옵션입니다. 마법사를 사용하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 프로젝트를 만드는 경우, 이름이 **project** .pdb인 .pdb 파일을 만들도록 */Fd*옵션이 설정됩니다.  
   
- 메이크파일을 사용하여 C/C++ 응용 프로그램을 빌드하는 경우, **/Fd** 없이 **/ZI** 또는 **/Zi**를 지정하여 .pdb 파일 2개가 만들어집니다.  
+메이크파일을 사용하여 C/C++ 응용 프로그램을 빌드하는 경우, **/Fd** 없이 **/ZI** 또는 **/Zi**를 지정하여 .pdb 파일 2개가 만들어집니다.  
   
--   VC*x*.pdb. 여기서 *x* 는 Visual C++의 버전을 나타냅니다(예: VC11.pdb). 이 파일에는 각 OBJ 파일에 대한 디버깅 정보가 모두 들어 있으며, 프로젝트 메이크파일과 동일한 디렉터리에 저장됩니다.  
+* VC*x*.pdb. 여기서 *x* 는 Visual C++의 버전을 나타냅니다(예: VC11.pdb). 이 파일에는 각 OBJ 파일에 대한 디버깅 정보가 모두 들어 있으며, 프로젝트 메이크파일과 동일한 디렉터리에 저장됩니다.  
   
--   project.pdb. 이 파일에는 .exe 파일에 대한 디버그 정보가 모두 저장됩니다. C/C++의 경우에는 \debug 하위 디렉터리에 이 파일이 저장됩니다.  
+* project.pdb. 이 파일에는 .exe 파일에 대한 디버그 정보가 모두 저장됩니다. C/C++의 경우에는 \debug 하위 디렉터리에 이 파일이 저장됩니다.  
   
- C/C++ 컴파일러는 OBJ 파일을 만들 때마다 VC*x*.pdb에 디버그 정보를 병합합니다. 삽입되는 정보에는 유형 정보가 포함되지만 함수 정의와 같은 기호 정보는 포함되지 않습니다. 와 같은 공통 헤더 파일은 모든 소스 파일에 포함 하는 경우에 \<windows.h >에 해당 헤더의 typedef는 모든 OBJ 파일에 되지 않고 한 번만 저장 됩니다.  
+C/C++ 컴파일러는 OBJ 파일을 만들 때마다 VC*x*.pdb에 디버그 정보를 병합합니다. 삽입되는 정보에는 유형 정보가 포함되지만 함수 정의와 같은 기호 정보는 포함되지 않습니다. 와 같은 공통 헤더 파일은 모든 소스 파일에 포함 하는 경우에 \<windows.h >에 해당 헤더의 typedef는 모든 OBJ 파일에 되지 않고 한 번만 저장 됩니다.  
   
- 링커는 프로젝트의 EXE 파일에 대한 디버그 정보가 포함된 project.pdb를 만듭니다. project.pdb 파일에는 VC*x*.pdb에 있는 형식 정보뿐만 아니라 함수 프로토타입을 비롯한 전체 디버그 정보가 포함됩니다. 두 .pdb 파일 모두 증분 업데이트가 가능합니다. 링커에서는 작성되는 .exe 파일이나 .dll 파일에 .pdb 파일의 경로도 포함합니다.  
+링커는 프로젝트의 EXE 파일에 대한 디버그 정보가 포함된 project.pdb를 만듭니다. project.pdb 파일에는 VC*x*.pdb에 있는 형식 정보뿐만 아니라 함수 프로토타입을 비롯한 전체 디버그 정보가 포함됩니다. 두 .pdb 파일 모두 증분 업데이트가 가능합니다. 링커에서는 작성되는 .exe 파일이나 .dll 파일에 .pdb 파일의 경로도 포함합니다.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거는 project.pdb 파일을 찾기 위해 EXE 또는 DLL 파일에서 .pdb 파일의 경로를 사용합니다. 디버거가 해당 위치에서 .pdb 파일을 찾지 못하거나 프로젝트를 다른 컴퓨터로 옮긴 경우와 같이 경로가 올바르지 않은 경우, 디버거는 EXE가 포함된 경로를 검색한 다음 **옵션** 대화 상자(**기호** 노드의 **디버깅** 폴더)에 지정된 기호 경로를 검색합니다. 디버거는 디버깅 중인 실행 파일과 일치하지 않는 .pdb 파일은 로드하지 않습니다. 디버거가 .pdb 파일을 찾지 못하면 기호를 검색하거나 검색 경로에 위치를 더 추가할 수 있는 **기호 찾기** 대화 상자가 나타납니다.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거는 project.pdb 파일을 찾기 위해 EXE 또는 DLL 파일에서 .pdb 파일의 경로를 사용합니다. 디버거가 해당 위치에서 .pdb 파일을 찾지 못하거나 프로젝트를 다른 컴퓨터로 옮긴 경우와 같이 경로가 올바르지 않은 경우, 디버거는 EXE가 포함된 경로를 검색한 다음 **옵션** 대화 상자(**기호** 노드의 **디버깅** 폴더)에 지정된 기호 경로를 검색합니다. 디버거는 디버깅 중인 실행 파일과 일치하지 않는 .pdb 파일은 로드하지 않습니다. 디버거가 .pdb 파일을 찾지 못하면 기호를 검색하거나 검색 경로에 위치를 더 추가할 수 있는 **기호 찾기** 대화 상자가 나타납니다.  
   
- **.NET Framework 옵션**  
+**.NET Framework 옵션**  
   
- 프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. .pdb 파일은 **/debug**로 빌드하는 경우 만들어집니다. **/debug:full** 또는 **/debug:pdbonly**를 사용하여 응용 프로그램을 빌드할 수 있습니다. **/debug:full** 을 사용하여 빌드하면 디버깅 가능한 코드가 생성됩니다. **/debug:pdbonly** 를 사용하여 빌드하면 .pdb 파일이 생성되지만 디버그 정보를 사용할 수 있다는 사실을 JIT 컴파일러에 알리는 `DebuggableAttribute` 는 생성되지 않습니다. 디버깅할 수 없도록 하려는 릴리스 빌드에 대해 .pdb 파일을 생성하려면 **/debug:pdbonly** 를 사용합니다. 자세한 내용은 [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) 또는 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)를 참조하세요.  
+프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. .pdb 파일은 **/debug**로 빌드하는 경우 만들어집니다. **/debug:full** 또는 **/debug:pdbonly**를 사용하여 응용 프로그램을 빌드할 수 있습니다. **/debug:full** 을 사용하여 빌드하면 디버깅 가능한 코드가 생성됩니다. **/debug:pdbonly** 를 사용하여 빌드하면 .pdb 파일이 생성되지만 디버그 정보를 사용할 수 있다는 사실을 JIT 컴파일러에 알리는 `DebuggableAttribute` 는 생성되지 않습니다. 디버깅할 수 없도록 하려는 릴리스 빌드에 대해 .pdb 파일을 생성하려면 **/debug:pdbonly** 를 사용합니다. 자세한 내용은 [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) 또는 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)를 참조하세요.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거는 project.pdb 파일을 찾기 위해 EXE 또는 DLL 파일에서 .pdb 파일의 경로를 사용합니다. 디버거가 해당 위치에서 .pdb 파일을 찾을 수 없거나 경로가 올바르지 않은 경우, 디버거는 EXE가 포함된 경로를 검색한 다음 **옵션** 대화 상자에 지정된 기호 경로를 검색합니다. 이 경로는 일반적으로 **기호** 노드의 **디버깅** 폴더입니다. 디버거는 디버깅 중인 실행 파일과 일치하지 않는 .pdb 파일은 로드하지 않습니다. 디버거가 .pdb 파일을 찾지 못하면 기호를 검색하거나 검색 경로에 위치를 더 추가할 수 있는 **기호 찾기** 대화 상자가 나타납니다.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거는 project.pdb 파일을 찾기 위해 EXE 또는 DLL 파일에서 .pdb 파일의 경로를 사용합니다. 디버거가 해당 위치에서 .pdb 파일을 찾을 수 없거나 경로가 올바르지 않은 경우, 디버거는 EXE가 포함된 경로를 검색한 다음 **옵션** 대화 상자에 지정된 기호 경로를 검색합니다. 이 경로는 일반적으로 **기호** 노드의 **디버깅** 폴더입니다. 디버거는 디버깅 중인 실행 파일과 일치하지 않는 .pdb 파일은 로드하지 않습니다. 디버거가 .pdb 파일을 찾지 못하면 기호를 검색하거나 검색 경로에 위치를 더 추가할 수 있는 **기호 찾기** 대화 상자가 나타납니다.  
   
- **웹 응용 프로그램**  
+**웹 응용 프로그램**  
   
- 응용 프로그램의 구성 파일(Web.config)이 디버그 모드로 설정되어 있어야 합니다. 디버그 모드에서는 동적으로 생성된 파일에 대한 기호가 ASP.NET에서 생성되며 디버거가 ASP.NET 응용 프로그램에 연결될 수 있습니다. Visual Studio 설정이 자동으로 웹 프로젝트 템플릿에서 프로젝트를 만든 경우 디버깅을 시작 합니다.  
+응용 프로그램의 구성 파일(Web.config)이 디버그 모드로 설정되어 있어야 합니다. 디버그 모드에서는 동적으로 생성된 파일에 대한 기호가 ASP.NET에서 생성되며 디버거가 ASP.NET 응용 프로그램에 연결될 수 있습니다. Visual Studio 설정이 자동으로 웹 프로젝트 템플릿에서 프로젝트를 만든 경우 디버깅을 시작 합니다.  
   
 ##  <a name="BKMK_Find_source_files"></a> 소스 파일 찾기  
   
