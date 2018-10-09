@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511994"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48864000"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>글꼴 및 Visual Studio에 대 한 서식 지정
 ##  <a name="BKMK_TheEnvironmentFont"></a> 환경 글꼴
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   환경 글꼴 텍스트 굵게 표시 된 기본 줄 높이 간격 및 안쪽 여백 따라야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [MSDN: 글꼴 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN: 사용자 인터페이스 텍스트 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN: 글꼴 (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN: 사용자 인터페이스 텍스트 (Windows)](/windows/desktop/uxguide/text-ui)

@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082133"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863902"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>연습: 명령줄을 통해 Visual Studio 확장 기능 게시
 
-이 연습에서는 Visual Studio 확장 Visual Studio Marketplace에 게시 하는 방법을 명령줄을 사용 하 여. 확장 프로그램을 Marketplace에 추가 하면 개발자가 사용할 수는 **확장 및 업데이트** 을 검색할 수 있는 새 확장과 업데이트 된 대화입니다.
+이 연습에서는 Visual Studio 확장 Visual Studio Marketplace에 게시 하는 방법을 명령줄을 사용 하 여. 확장 프로그램을 Marketplace에 추가 하면 개발자가 사용할 수는 [ **확장 및 업데이트** ](../ide/finding-and-using-visual-studio-extensions.md) 을 검색할 수 있는 새 확장과 업데이트 된 대화입니다.
 
 VsixPublisher.exe는 Marketplace에 게시 Visual Studio 확장에 대 한 명령줄 도구입니다. ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe에서에서 액세스할 수 있습니다. 이 도구에서 사용할 수 있는 명령은: **게시**를 **createPublisher**를 **deletePublisher**를 **deleteExtension**,  **로그인**하십시오 **로그 아웃**합니다.
 

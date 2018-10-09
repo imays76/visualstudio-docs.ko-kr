@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512241"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863955"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio의 알림 및 진행률
 ##  <a name="BKMK_NotificationSystems"></a> 알림 시스템  
@@ -213,7 +213,7 @@ ms.locfileid: "39512241"
  스핀 상자 ("진행률 링" 라고도 함)는 주로 다음 상황에 맞는 UI와 관련 하 여 비활성화 상태의 진행률 표시기입니다. 텍스트 범주 헤더, 메시징, 또는 컨트롤 같은 관련 콘텐츠에 맞게 근접해 있는 회전자를 표시 합니다.  
   
 ##### <a name="cursor-feedback"></a>커서 피드백  
- 2 ~ 7 초 사이로 하는 작업에 대 한 커서 피드백을 제공 합니다. 이 경우 일반적으로 운영 체제에서 제공 하는 대기 커서를 사용 합니다. 지침에 대 한 MSDN 문서를 참조 하세요 [Cursors.Wait 속성](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx)합니다.  
+ 2 ~ 7 초 사이로 하는 작업에 대 한 커서 피드백을 제공 합니다. 이 경우 일반적으로 운영 체제에서 제공 하는 대기 커서를 사용 합니다. 지침에 대 한 MSDN 문서를 참조 하세요 [Cursors.Wait 속성](/dotnet/api/system.windows.input.cursors.wait)합니다.  
   
 #### <a name="progress-indicator-locations"></a>진행률 표시기 위치  
   
