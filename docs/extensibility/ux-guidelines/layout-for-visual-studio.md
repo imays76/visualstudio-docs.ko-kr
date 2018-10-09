@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc30f572f48622776bb1014c2a5e3c17bf8f27b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512378"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863935"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio에 대 한 레이아웃
 대부분의 Visual Studio 대화 상자 [유틸리티 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), 다음 표준에 대화 상자는 unthemed 되 [Windows Desktop 대화 상자 레이아웃 원칙](/windows/desktop/uxguide/win-dialog-box)합니다. Visual Studio UI를 새로 고치려면 이동, 띄 대화 상자의 일부 환경으로 제품 정의 설정 하는 새 디자인을가지고 있습니다. 이러한 [테마가 지정 된 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 모양이 테마를 지정 합니다.  
@@ -159,5 +159,5 @@ ms.locfileid: "39512378"
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 용 응용 프로그램 패턴](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   
- [컨트롤 (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)   
- [대화 상자 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+ [컨트롤 (Windows)](/windows/desktop/uxguide/controls)   
+ [대화 상자 (Windows)](/windows/desktop/uxguide/win-dialog-box)
