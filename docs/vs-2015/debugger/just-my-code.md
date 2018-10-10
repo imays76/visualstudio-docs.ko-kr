@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbb444a8de184f47bc8c6915bbf0fafcaf6c7ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564992"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879982"
 ---
 # <a name="just-my-code"></a>내 코드만
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "47564992"
 >  합니다 **내 코드만** 설정은 모든 언어로 모든 Visual Studio 프로젝트에 적용 되는 전역 설정입니다.  
   
 ###  <a name="BKMK_Override_call_stack_filtering"></a> 호출 스택 필터링 재정의  
- 호출 스택 및 작업 창과 같은 호출 스택 표시에서 내 코드만 옵션은 사용자가 작성하지 않은 코드를 `[External Code]` 레이블이 있는 주석이 추가된 프레임으로 축소합니다. 축소 된 프레임을 보려면 **외부 코드 포시** 호출 스택 상황에 맞는 메뉴에 표시 합니다.  
+ 호출 스택 및 작업 창과 같은 호출 스택 표시에서 내 코드만 옵션은 사용자가 작성하지 않은 코드를 `[External Code]` 레이블이 있는 주석이 달린 프레임으로 축소합니다. 축소 된 프레임을 보려면 **외부 코드 포시** 호출 스택 상황에 맞는 메뉴에 표시 합니다.  
   
 > [!NOTE]
 >  합니다 **외부 코드 포시** 설정은 현재 사용자의 프로파일러에 저장 됩니다. 이 사용자가 여는 모든 언어의 프로젝트에 모두 적용됩니다.  
@@ -195,7 +195,7 @@ ms.locfileid: "47564992"
 |-|-|  
 |**MyCode**|사용자가 소유하고 제어하는 사용자 코드입니다.|  
 |**LibraryCode**|사용자가 정기적으로 사용하며 응용 프로그램이 제대로 작동하는 데 필요한, 사용자가 작성하지 않은 라이브러리의 코드(예: WinJS 또는 jQuery)입니다.|  
-|**UnrelatedCode**|응용 프로그램에서 실행 중일 수 있지만 사용자가 소유하지 않고 응용 프로그램이 제대로 작동하는 데 직접 필요하지 않은 사용자가 작성하지 않은 코드(예: 광고를 표시하는 광고 SDK)입니다. Windows 스토어 프로젝트에서는 HTTP 또는 HTTPS URI에서 앱으로 로드된 모든 코드도 UnrelatedCode로 간주됩니다.|  
+|**UnrelatedCode**|응용 프로그램 에서만 실행 될 수 있는 비 사용자 코드가 소유 하지 않은 및 응용 프로그램이 올바르게 (예: 광고를 표시 하는 광고 SDK) 함수를 직접 의존 하지 않습니다. Windows 스토어 프로젝트에서는 HTTP 또는 HTTPS URI에서 앱으로 로드된 모든 코드도 UnrelatedCode로 간주됩니다.|  
   
  JavaScript 디버거는 이러한 유형의 코드를 자동으로 분류합니다.  
   

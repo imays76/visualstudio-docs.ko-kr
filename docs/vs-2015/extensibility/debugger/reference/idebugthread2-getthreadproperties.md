@@ -17,12 +17,12 @@ ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5eddc47f35268fd62e0d4361e5cc1a99bf082107
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ddfe67b74b53d849fd131b0968af4e8cacbc148f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556961"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880853"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ int GetThreadProperties (
  [in] 플래그의 조합 된 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 의 필드를 결정 하는 열거형 `ptp` 작성 해야 할 합니다.  
   
  `ptp`  
- [out에서] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 스레드의 속성을 사용 하 여 입력 되는 구조체입니다.  
+ [out에서] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조 스레드의 속성을 사용 하 여 입력 됩니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  

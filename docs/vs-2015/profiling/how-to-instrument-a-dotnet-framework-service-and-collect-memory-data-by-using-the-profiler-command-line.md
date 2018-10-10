@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b320df77f204a5d0c9f10df82679280c1335cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc463439259ac5eaabe0d0fe29e3afbde9352b3a
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555369"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880047"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>방법: 프로파일러 명령줄을 통해 .NET Framework 서비스 계측 및 메모리 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "47555369"
 > [!NOTE]
 >  컴퓨터가 시작된 후에 서비스(예: 운영 체제가 시작될 때 시작하는 서비스)를 다시 시작할 수 없는 경우 계측 방법으로 서비스를 프로파일링할 수 없습니다.  
 >   
->  프로파일링 도구의 명령줄 도구는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 설치 디렉터리의 \Team Tools\Performance Tools 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용 하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가 하거나 명령 자체에 추가 해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.  
+>  프로파일링 도구의 명령줄 도구는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 설치 디렉터리의 \Team Tools\Performance Tools 하위 디렉터리에 있습니다. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.  
   
 ## <a name="starting-the-profiling-session"></a>프로파일링 세션 시작  
  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 서비스에서 성능 데이터를 수집하려면 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 도구를 사용하여 적절한 환경 변수를 초기화하고, [VSInstr.exe](../profiling/vsinstr.md) 도구를 사용하여 서비스 이진 파일의 계측된 복사본을 만듭니다.  
@@ -84,7 +84,7 @@ ms.locfileid: "47555369"
     |옵션|설명|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|ASP.NET 작업자 프로세스를 소유한 계정의 도메인 및 사용자 이름을 지정합니다. 프로세스가 로그온한 사용자 이외의 사용자로 실행 중인 경우 이 옵션이 필요합니다. [Windows 작업 관리자]의 [프로세스] 탭에 있는 [사용자 이름] 열에 프로세스 소유자가 나열됩니다.|  
-    |[/crosssession](../profiling/crosssession.md)|프로세스 프로파일링 기능을 다른 로그온 세션에서 사용하도록 설정합니다. 이 옵션은 ASP.NET 응용 프로그램이 다른 세션에서 실행 중인 경우 필요합니다. 세션 id의 세션 ID 열에 나열 되는 Windows 작업 관리자의 프로세스 탭 합니다. **/CS**를 **/crosssession**에 대한 약어로 지정할 수 있습니다.|  
+    |[/crosssession](../profiling/crosssession.md)|프로세스 프로파일링 기능을 다른 로그온 세션에서 사용하도록 설정합니다. 이 옵션은 ASP.NET 응용 프로그램이 다른 세션에서 실행 중인 경우 필요합니다. [Windows 작업 관리자]의 [프로세스] 탭에 있는 [세션 ID] 열에 세션 ID가 나열됩니다. **/CS**를 **/crosssession**에 대한 약어로 지정할 수 있습니다.|  
     |[/waitstart](../profiling/waitstart.md)[**:**`Interval`]|프로파일러가 오류를 반환하기 전에 초기화할 때까지 기다리는 시간(초)을 지정합니다. `Interval`을 지정하지 않으면 프로파일러에서 무기한 기다립니다. 기본적으로 **/start**는 즉시 반환합니다.|  
     |[/globaloff](../profiling/globalon-and-globaloff.md)|데이터 수집을 일시 중지하고 프로파일러를 시작하려면 **/globaloff** 옵션을 **/start** 명령줄에 추가합니다. **/globalon**을 사용하여 프로파일링을 다시 시작합니다.|  
     |[/counter](../profiling/counter.md) **:** `Config`|구성에 지정된 프로세서 성능 카운터에서 정보를 수집합니다. 카운터 정보는 각 프로파일링 이벤트에서 수집된 데이터에 추가됩니다.|  
@@ -98,7 +98,7 @@ ms.locfileid: "47555369"
   
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
   
-    -   지정 된 프로세스 ID 또는 서비스의 프로세스 이름입니다. Windows 작업 관리자에서 실행 중인 모든 프로세스의 프로세스 ID와 이름을 볼 수 있습니다.  
+    -   서비스의 프로세스 ID 또는 프로세스 이름을 지정합니다. Windows 작업 관리자에서 실행 중인 모든 프로세스의 프로세스 ID와 이름을 볼 수 있습니다.  
   
 ## <a name="controlling-data-collection"></a>데이터 컬렉션 제어  
  서비스가 실행되는 동안 **VSPerfCmd.exe** 옵션을 사용하여 파일에 대한 데이터 쓰기를 시작하고 중지함으로써 데이터 수집을 제어할 수 있습니다. 데이터 수집을 제어하면 응용 프로그램의 시작 또는 종료와 같이 프로그램 실행의 특정 부분에 대한 데이터를 수집할 수 있습니다.  

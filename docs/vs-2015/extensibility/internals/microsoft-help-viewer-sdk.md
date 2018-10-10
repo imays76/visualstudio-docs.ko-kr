@@ -13,12 +13,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9363362f5f0c701250d10b6cb5b4226c05d6dbaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a3c89384c7c095160c5c77753b084540bed6339
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555713"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881152"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -360,7 +360,7 @@ some F# code
 |속성 (HTML 표시)|설명|  
 |--------------------------------------|-----------------|  
 |\< meta name="Microsoft.Help.Locale" 콘텐츠 = "[코드 언어]" / >|이 항목에 대 한 로캘을 설정합니다. 항목에서이 태그를 사용 하는 경우 한 번만 사용 해야 하 고 다른 Microsoft 도움말 태그 위에 삽입 해야 합니다. 항목의 본문 텍스트; 지정 된 경우 제품 로캘과 사용 하 여 연결 된 단어 분리기를 사용 하 여 인덱스화 되어이 태그를 사용 하지 않는 경우 이 고, 그렇지는 en-우리 단어 분리기가 사용 됩니다. 이 태그 ISOC RFC 4646을 준수 합니다. Microsoft 도움말 올바르게 작동 하도록 일반 언어 특성 대신이 속성을 사용 합니다.|  
-|\< meta name="Microsoft.Help.TopicLocale" 콘텐츠 = "[코드 언어]" / >|다른 로캘에서 사용 하는 경우이 항목에 대 한 로캘을 설정 합니다. 이 태그 항목에서 사용 하는 경우 한 번만 사용 되어야 합니다. 카탈로그는 둘 이상의 언어로 콘텐츠를에서 포함 하는 경우이 태그를 사용 합니다. 카탈로그의 항목에서는 여러 ID가 같은 수 있지만 각 고유 TopicLocale 지정 해야 합니다. 카탈로그의 로캘과 일치 하는 TopicLocale를 지정 하는 항목을 목차에 표시 되는 항목입니다. 그러나 항목의 모든 언어 버전은 검색 결과에 표시 됩니다.|  
+|\< meta name="Microsoft.Help.TopicLocale" 콘텐츠 = "[코드 언어]" / >|다른 로캘에서 사용 하는 경우이 항목에 대 한 로캘을 설정 합니다. 이 태그 항목에서 사용 하는 경우 한 번만 사용 되어야 합니다. 카탈로그는 둘 이상의 언어로 콘텐츠를에서 포함 하는 경우이 태그를 사용 합니다. 카탈로그의 항목에서는 여러 ID가 같은 수 있지만 각 고유 TopicLocale 지정 해야 합니다. 카탈로그의 로캘과 일치 하는 TopicLocale를 지정 하는 항목에는 목차에 표시 되는 항목이입니다. 그러나 항목의 모든 언어 버전은 검색 결과에 표시 됩니다.|  
 |\< 제목 > [Title]\<제목/>|이 항목의 제목을 지정합니다. 이 태그는 필요 이며 항목을 한 번만 사용 해야 합니다. 항목의 본문에 제목이 없는 경우 \<d i v > 섹션에이 제목은 목차에서 항목에 표시 됩니다.|  
 |\< meta 이름 = "Microsoft.Help.Keywords" 콘텐츠 = "[aKeywordPhrase]" / >|도움말 뷰어의 인덱스 창에 표시 되는 링크의 텍스트를 지정 합니다. 링크를 클릭 하면 해당 항목이 표시 됩니다. 항목에 대 한 여러 인덱스 키워드를 지정할 수 있습니다 또는 인덱스에 표시 하려면이 항목에 대 한 링크를 원하지 않는 경우이 태그를 생략할 수 있습니다. 이 속성에 이전 버전의 도움말에서 "K" 키워드를 변환할 수 있습니다.|  
 |\< meta name="Microsoft.Help.Id" 콘텐츠 = "[TopicID]" / >|이 항목에 대 한 식별자를 설정합니다. 이 태그는 필요 이며 항목을 한 번만 사용 해야 합니다. ID는 로캘 설정이 같아야 하는 카탈로그의 항목 중에서 고유 해야 합니다. 다른 항목에서이 ID를 사용 하 여이 항목에 대 한 링크를 만들 수 있습니다.|  

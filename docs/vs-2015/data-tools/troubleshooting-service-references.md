@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565140"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880892"
 ---
 # <a name="troubleshooting-service-references"></a>서비스 참조 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ ms.locfileid: "47565140"
 ## <a name="error-debugging-service-code"></a>서비스 코드를 디버깅 하는 오류
  클라이언트 코드에서 WCF 서비스에 대 한 코드를 한 단계씩 실행할 때 기호가 누락 관련 오류가 표시 될 수 있습니다. 이 솔루션의 일부 였던 서비스 이동 또는 솔루션에서 제거 되었을 때 발생할 수 있습니다.
 
- 현재 솔루션에 포함 된 WCF 서비스에 대 한 참조를 처음 추가할 때 명시적 빌드 종속성 서비스 프로젝트 및 서비스 클라이언트 프로젝트 간에 추가 됩니다. 이렇게 하면 클라이언트가 항상에 액세스 하는 최신 서비스 바이너리, 클라이언트 코드에서 서비스 코드를 한 단계씩 실행 하는 등의 시나리오를 디버깅을 위해 특히 중요 합니다.
+ 현재 솔루션에 포함 된 WCF 서비스에 대 한 참조를 처음 추가할 때 명시적 빌드 종속성 서비스 프로젝트 및 서비스 클라이언트 프로젝트 간에 추가 됩니다. 이렇게 하면는 클라이언트가 항상 액세스 하는 최신 서비스 바이너리, 클라이언트 코드에서 서비스 코드를 한 단계씩 실행 하는 등의 시나리오를 디버깅을 위해 특히 중요 합니다.
 
- 서비스 프로젝트를 솔루션에서 제거 되 면 명시적 빌드 종속성이 무효화 됩니다. Visual Studio 더 이상 보장할 수는 서비스 프로젝트는 다시 작성 하는 필요에 따라 합니다.
+ 서비스 프로젝트를 솔루션에서 제거 되 면 명시적 빌드 종속성이 무효화 됩니다. Visual Studio 더 이상 보장할 수 서비스 프로젝트가 다시 빌드됩니다는 필요에 따라 합니다.
 
  이 오류를 해결 하려면 수동으로 서비스 프로젝트를 다시 작성 해야 합니다.
 

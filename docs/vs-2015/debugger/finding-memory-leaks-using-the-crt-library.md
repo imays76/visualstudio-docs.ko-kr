@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565185"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879774"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT 라이브러리를 사용하여 메모리 누수 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "47565185"
   
  CRT 함수가 제대로 작동하려면 `#include` 문이 여기에 표시된 순서를 따라야 합니다.  
   
- Crtdbg.h를 포함 합니다 `malloc` 하며 [무료](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) 함수가 해당 디버그 버전인 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) 및 `free`, 메모리 할당 및 해제를 추적할 합니다. 이 매핑은 `_DEBUG`가 있는 디버그 빌드에서만 발생합니다. 릴리스 빌드에서는 일반적인 `malloc` 함수와 `free` 함수가 사용됩니다.  
+ crtdbg.h를 포함하면 `malloc` 및 [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) 함수가 해당 디버그 버전인 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) 및 `free`에 매핑되어 메모리 할당 및 할당 해제를 추적할 수 있습니다. 이 매핑은 `_DEBUG`가 있는 디버그 빌드에서만 발생합니다. 릴리스 빌드에서는 일반적인 `malloc` 함수와 `free` 함수가 사용됩니다.  
   
  `#define` 문은 CRT 힙 함수의 기본 버전을 해당 디버그 버전에 매핑합니다. `#define` 문을 생략하면 메모리 누수 덤프가 덜 자세하게 표시됩니다.  
   
@@ -74,7 +74,7 @@ ms.locfileid: "47565185"
 _CrtDumpMemoryLeaks();  
 ```  
   
- 응용 프로그램의 여러 종료 하는 경우에 대 한 호출을 수동으로 추가할 필요가 없습니다 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 종료 지점 마다. 응용 프로그램의 시작 부분에 있는 `_CrtSetDbgFlag` 호출로 인해 각 종료 지점마다 `_CrtDumpMemoryLeaks` 가 자동으로 호출되기 때문입니다. 다음과 같이 두 개의 비트 필드를 설정해야 합니다.  
+ 응용 프로그램의 종료 지점이 여러 개인 경우 각 종료 지점마다 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 호출을 수동으로 추가할 필요는 없습니다. 응용 프로그램의 시작 부분에 있는 `_CrtSetDbgFlag` 호출로 인해 각 종료 지점마다 `_CrtDumpMemoryLeaks` 가 자동으로 호출되기 때문입니다. 다음과 같이 두 개의 비트 필드를 설정해야 합니다.  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -89,7 +89,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>메모리 누수 보고서 해석  
- 응용 프로그램 정의 하지 않으면 `_CRTDBG_MAP_ALLOC`하십시오 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 은 다음과 같은 메모리 누수 보고서가 표시 됩니다.  
+ 응용 프로그램에 `_CRTDBG_MAP_ALLOC`이 정의되지 않은 경우 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 는 다음과 같은 메모리 누수 보고서를 표시합니다.  
   
 ```  
 Detected memory leaks!  
@@ -194,7 +194,7 @@ Object dump complete.
   
 2.  응용 프로그램이 중단점에서 중단되면 **조사식** 창을 실행합니다.  
   
-3.  **조사식** 창에서 `_crtBreakAlloc` 이름 **열에** 을 입력합니다.  
+3.  에 **조사식** 창, 형식 `_crtBreakAlloc` 에 **이름** 열입니다.  
   
      CRT 라이브러리의 다중 스레드 DLL 버전을 사용할 경우(/MD 옵션) `{,,ucrtbased.dll}_crtBreakAlloc`과 같이 컨텍스트 연산자를 포함해야 합니다.  
   

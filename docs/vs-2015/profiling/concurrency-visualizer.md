@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e27769990f118b23cc4667d7b36d54d8fe67605f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14e265562b325352b42741ca505233a64e0ac1af
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543969"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879345"
 ---
 # <a name="concurrency-visualizer"></a>동시성 시각화 도우미
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "47543969"
 >  동시성 시각화 도우미는 Visual Studio의 선택적 확장입니다. 다음 링크에서 동시성 시각화 도우미와 동시성 시각화 수집 도구를 다운로드하세요.  
 >   
 >  -   [동시성 시각화 도우미](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 확장을 다운로드합니다.  
-> -   [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/en-in/download/details.aspx?id=49103)를 다운로드합니다.  
+> -   [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/download/details.aspx?id=49103)를 다운로드합니다.  
 >   
 >      [동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio 2015용 동시성 시각화 도우미에서 확인할 수 있습니다. 이 도구는 Visual Studio가 설치되어 있지 않은 컴퓨터에서도 사용할 수 있습니다.  
   

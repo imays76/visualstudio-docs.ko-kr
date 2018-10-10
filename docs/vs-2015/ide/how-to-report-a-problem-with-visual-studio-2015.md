@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbbd84fb72c2d25c30b3012d3dfcb381dcc35050
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80e8a8c69b0536891737741125f0313f953b421e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541721"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880632"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015의 문제를 보고하는 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual Studio 2017의 문제를 보고 하는 방법](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)합니다.
+Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual Studio 2017의 문제를 보고 하는 방법](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)합니다.
 
 Visual Studio 2015를 사용 하 여 문제가 발생 하면 그에 관해 진단 하 고 해결할 수 있도록 하려고 합니다.  **문제 보고** 도구에서 단추를 몇 번만 클릭하여 문제에 대한 자세한 정보를 수집한 후 Microsoft로 보낼 수 있습니다.  
   

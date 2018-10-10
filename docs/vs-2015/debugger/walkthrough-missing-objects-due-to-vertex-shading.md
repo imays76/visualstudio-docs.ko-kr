@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13d0bcf02bb46de9116ab4dbd33b4a034c786252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553320"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879826"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>연습: 꼭짓점 음영으로 인해 누락된 개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 꼭 짓 점 음영으로 개체 인해 누락 된](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading)합니다.  
   
-이 연습을 사용 하는 방법에 설명 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단 도구를 꼭 짓 점 셰이더 단계 동안 발생 하는 오류로 인해 누락 된 개체를 조사 합니다.  
+이 연습에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단 도구를 사용하여 꼭짓점 셰이더 단계 동안 발생하는 오류로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.  
   
  이 연습에서는 다음 작업을 설명합니다.  
   
@@ -50,7 +50,7 @@ ms.locfileid: "47553320"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>그래픽 로그에서 프레임을 검사하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 누락 된 개체를 보여 주는 프레임이 포함 된 그래픽 로그를 로드 합니다. 새 그래픽 로그 탭에 표시 됩니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 이 탭의 맨 윗부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
+1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 누락된 개체를 보여 주는 프레임이 포함된 그래픽 로그를 로드합니다. 새 그래픽 로그 탭이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 나타납니다. 이 탭의 맨 윗부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
   
 2.  **프레임 목록**에서 개체가 표시되지 않는 것을 보여 주는 프레임을 선택합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서 그래픽 로그 탭은 다음과 같습니다.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "47553320"
     > [!TIP]
     >  앱을 동시에 디버깅하는 경우 이 위치에 중단점을 설정할 수 있으며 다음 프레임이 렌더링될 때 중단됩니다. `m_marbleConstantBufferData` 의 멤버를 검사하여 상수 버퍼가 채워질 때 `projection` 멤버의 값이 모두 0으로 설정되어 있는지 확인할 수 있습니다.  
   
- 상수 버퍼가 채워지는 위치를 확인하고 해당 값을 `m_marbleConstantBufferData`변수에서 가져온 것인지 확인한 후에는 `m_marbleConstantBufferData.projection` 멤버가 모두 0으로 설정된 위치를 찾아야 합니다. **모든 참조 찾기** 를 사용하여 `m_marbleConstantBufferData.projection`값을 변경하는 코드를 빠르게 검색할 수 있습니다.  
+ 상수 버퍼가 채워지는 위치를 확인 하 고 해당 값 변수에서 제공 되는 검색 한 후 `m_marbleConstantBufferData`, 위치를 확인 하려면 다음 단계는는 `m_marbleConstantBufferData.projection` 멤버가 모두 0으로 설정 됩니다. **모든 참조 찾기** 를 사용하여 `m_marbleConstantBufferData.projection`값을 변경하는 코드를 빠르게 검색할 수 있습니다.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>앱 소스 코드에서 투영 멤버가 설정되는 위치를 찾으려면  
   

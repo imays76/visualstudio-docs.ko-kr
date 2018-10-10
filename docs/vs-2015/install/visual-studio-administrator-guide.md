@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556334"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879217"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에 대 한 최신 설명서를 참조 하세요. 합니다 [Visual Studio 2017 관리자 가이드](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide)합니다.
+Visual Studio 2017에 대 한 최신 설명서를 참조 하세요. 합니다 [Visual Studio 2017 관리자 가이드](/visualstudio/install/visual-studio-administrator-guide)합니다.
 
 각 대상 컴퓨터가 충족으로 네트워크에서 Visual Studio 2015를 배포할 수 있습니다 합니다 [최소 설치 요구 사항](http://www.microsoft.com/visualstudio/eng/products/2013-editions)합니다. /Layout 스위치를 사용 하 여 설치 파일을 실행 하 여 네트워크 공유를 만들 수 있습니다 (에 설명 된 대로 [오프 라인 설치의 Visual Studio 만들기](../install/create-an-offline-installation-of-visual-studio.md) 페이지) 한 다음 로컬 컴퓨터에서 네트워크 공유에 복사 합니다. ISO를 사용 하는 경우 ISO를 탑재할 수 및 공유 하거나 ISO를 네트워크 공유에 복사 합니다.  
   
@@ -59,7 +59,7 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요. 합니다 [V
 ## <a name="controlling-what-is-installed"></a>설치되는 기능 제어  
  최종 사용자가 설치할 수 있는 기능을 제어하려는 경우 관리자 파일 설치와 명령줄 옵션의 두 가지 옵션이 있습니다. 최종 사용자가 Visual Studio 설치 관리자 환경에서 선택할 수 있는 기능을 제한하려는 경우 관리자 파일 설치를 선택합니다. 초기 구성을 만들지만 최종 사용자가 고유한 Visual Studio 설치 관리자 환경을 선택할 수 있게 하려는 경우 명령줄 매개 변수를 선택합니다.  
   
- 관리자 파일 환경에 대 한 자세한 내용은 참조 하세요. [방법: 만들기 및 설치의 Visual Studio 무인 실행](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 및 [방법: Visual Studio를배포할때제품키를자동으로적용](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  명령줄 컨트롤에 대 한 자세한 내용은 참조는 [Visual Studio 설치를 사용 하 여 명령줄 매개 변수](../install/use-command-line-parameters-to-install-visual-studio.md) 페이지입니다.  
+ 관리자 파일 환경에 대한 자세한 내용은 [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 및 [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)을 참조하세요.  명령줄 컨트롤에 대 한 자세한 내용은 참조는 [Visual Studio 설치를 사용 하 여 명령줄 매개 변수](../install/use-command-line-parameters-to-install-visual-studio.md) 페이지입니다.  
   
 ## <a name="specifying-customer-feedback-settings"></a>사용자 의견 설정 지정  
  기본적으로 Visual Studio 설치에서는 고객 의견을 허용합니다. 다음 레지스트리 키의 값을 문자열 "0"으로 변경하여 Visual Studio에서 개별 컴퓨터의 고객 의견을 허용하지 않도록 구성할 수 있습니다.  

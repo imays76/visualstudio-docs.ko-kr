@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a211048e287bd3ef3e45625022f7389e06358e32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 802627f59f54b9a4b1179ba5c643b4671f4f7ce0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554165"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878956"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>방법: 업데이트, 삽입 및 삭제 (O/R 디자이너)를 수행 하는 저장된 프로시저를 할당 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "47554165"
 >  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]은 identity(자동 증분), rowguidcol(데이터베이스에서 생성된 GUID) 및 timestamp 열에 대해 데이터베이스에서 생성된 값을 자동으로 처리합니다. 데이터베이스에서 생성된 값이 다른 형식의 열에 있으면 null 값이라는 예기치 않은 결과가 발생합니다. 데이터베이스에서 생성된 값을 반환하려면 수동으로 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>를 `true`로 설정하고 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>를 <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> 또는 <xref:System.Data.Linq.Mapping.AutoSync> 중 하나로 설정해야 합니다.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>엔터티 클래스의 업데이트 동작 구성  
- 기본적으로 삽입, 업데이트 및 삭제와 같은 데이터베이스를 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 엔터티 클래스의 데이터에 대한 변경 내용으로 업데이트하는 논리가 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 런타임에서 제공됩니다. 런타임에서는 열 및 기본 키 정보와 같은 테이블 스키마를 기반으로 기본 삽입, 업데이트 및 삭제 명령을 만듭니다. 기본 동작을 원하지 않는 경우 필요한 삽입, 업데이트를 수행 하기 위한 특정 저장된 프로시저를 할당 하 여 업데이트 동작을 구성할 수 있습니다 및 테이블의 데이터를 조작 하는 데 필요한 삭제 합니다. 엔터티 클래스가 뷰에 매핑되는 때와 같이 기본 동작이 생성되지 않은 경우에도 이렇게 할 수 있습니다. 또한 저장 프로시저를 통해 데이터베이스의 테이블에 액세스해야 하는 경우에 기본 업데이트 동작을 재정의할 수 있습니다.  
+ 기본적으로 삽입, 업데이트 및 삭제와 같은 데이터베이스를 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 엔터티 클래스의 데이터에 대한 변경 내용으로 업데이트하는 논리가 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 런타임에서 제공됩니다. 런타임에서 기본 테이블 (열과 기본 키 정보)의 스키마를 기반으로 하는 Insert, Update 및 Delete 명령을 만듭니다. 기본 동작을 원하지 않는 경우 필요한 삽입, 업데이트를 수행 하기 위한 특정 저장된 프로시저를 할당 하 여 업데이트 동작을 구성할 수 있습니다 및 테이블의 데이터를 조작 하는 데 필요한 삭제 합니다. 엔터티 클래스가 뷰에 매핑되는 때와 같이 기본 동작이 생성되지 않은 경우에도 이렇게 할 수 있습니다. 또한 저장 프로시저를 통해 데이터베이스의 테이블에 액세스해야 하는 경우에 기본 업데이트 동작을 재정의할 수 있습니다.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
