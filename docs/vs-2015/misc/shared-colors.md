@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 3871ee1f31b2bc63f575e308b3b9008b3335a224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d2f36b3b5213003e65f51f7d93a2d7d90a3ff12
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550296"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881178"
 ---
 # <a name="shared-colors"></a>공유 색
 여기에 소개하는 내용을 삽입합니다.  
@@ -25,7 +25,7 @@ ms.locfileid: "47550296"
 ## <a name="shared-colors"></a>공유 색  
  일반적인 Visual Studio 셸 요소를 사용하는 UI를 디자인하거나 인터페이스 요소를 유사한 기능과 일치시키려는 경우 패키지 정의 파일에서 기존 토큰 이름을 사용하여 색을 선택하고 할당합니다. 이렇게 하면 UI가 전체 Visual Studio 환경과 일관성 있게 유지되며 테마를 추가하거나 업데이트할 경우 자동으로 업데이트됩니다.  
   
- 이 문서에서는 유사한 UI를 빌드할 때 참조할 수 있는 일반적인 UI 요소 및 사용되는 토큰 이름을 설명합니다. 이러한 색 토큰에 액세스 하는 방법에 대 한 자세한 내용은 참조 하세요. [The VSColor Service](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)합니다.  
+ 이 문서에서는 유사한 UI를 빌드할 때 참조할 수 있는 일반적인 UI 요소 및 사용되는 토큰 이름을 설명합니다. 이러한 색 토큰에 액세스하는 방법에 대한 자세한 내용은 [The VSColor Service](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)를 참조하세요.  
   
  토큰 이름을 올바르게 사용해야 합니다.  
   
@@ -245,7 +245,7 @@ ms.locfileid: "47550296"
 #####  <a name="BKMK_CommandComboBox"></a> 콤보 상자  
   
 > [!IMPORTANT]
->  콤보 상자는 드롭다운과 유사하지만 편집 가능한 텍스트 영역을 포함합니다. 드롭다운에는 편집 가능한 텍스트 영역이 포함 되어 있지 않으면, 아래의 색 토큰을 사용 하 여 [드롭 다운](../misc/shared-colors.md#BKMK_CommandDropDown)합니다.  
+>  콤보 상자는 드롭다운과 유사하지만 편집 가능한 텍스트 영역을 포함합니다. 드롭다운에 편집 가능한 텍스트 영역이 포함되어 있지 않으면 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)아래의 색 토큰을 사용합니다.  
   
  ![콤보 상자 검토](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
@@ -323,7 +323,7 @@ ms.locfileid: "47550296"
 #####  <a name="BKMK_CommandDropDown"></a> 드롭다운 목록  
   
 > [!IMPORTANT]
->  드롭다운은 콤보 상자와 유사하지만 편집 가능한 텍스트 영역이 없습니다. 드롭다운에 편집 가능한 텍스트 영역이 포함 된 경우 아래의 색 토큰을 사용 하 여 [콤보 상자](../misc/shared-colors.md#BKMK_CommandComboBox)합니다.  
+>  드롭다운은 콤보 상자와 유사하지만 편집 가능한 텍스트 영역이 없습니다. 드롭다운에 편집 가능한 텍스트 영역이 포함되어 있으면 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)아래의 색 토큰을 사용합니다.  
   
  ![삭제&#45;검토 다운](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
   
@@ -387,7 +387,7 @@ ms.locfileid: "47550296"
 |![삭제&#45;아래로 단추 사용 안 함](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")|전경(문자 모양)|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>분할 단추  
- 분할 단추는 단추, 메뉴, 명령 모음 텍스트 등 다른 명령 모음 컨트롤과 많은 토큰 이름을 공유합니다. 편의를 위해 모든 필요한 작업 및 드롭다운 단추 토큰 이름이 여기에 반복됩니다. 분할 단추 드롭다운 목록은 명령 모음의 구현 됩니다 [메뉴](../misc/shared-colors.md#BKMK_CommandMenus)합니다.  
+ 분할 단추는 단추, 메뉴, 명령 모음 텍스트 등 다른 명령 모음 컨트롤과 많은 토큰 이름을 공유합니다. 편의를 위해 모든 필요한 작업 및 드롭다운 단추 토큰 이름이 여기에 반복됩니다. 분할 단추 드롭다운 목록은 명령 모음의 구현입니다 [Menus](../misc/shared-colors.md#BKMK_CommandMenus).  
   
  ![분할 단추 검토](../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")  
   
@@ -648,7 +648,7 @@ ms.locfileid: "47550296"
 |![미리 보기 배경 탭 가리키기](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **미리 보기 탭 백그라운드 탭 가리키기**|테두리|`Environment.FileTabProvisionalHoverBorder`<br /><br /> 배경색과 동일한 색으로 설정됨|  
   
 ##### <a name="document-overflow-button"></a>문서 오버플로 단추  
- 현재 구성에서 모든 문서 탭에 맞는 세로 공간이 있는지 여부에 관계없이 하나 이상의 문서가 열려 있으면 문서 오버플로 단추가 있습니다. 에 의해 제어 되는 문서 오버플로 드롭다운 메뉴를 **CommandBarMenu** 색 (참조 [메뉴](../misc/shared-colors.md#BKMK_CommandMenus)), 표시 되 고 숨겨진 모든 열린 문서 및 오버플로 문자 모양 변경 목록이 표시 됩니다 모든 열린 문서가 탭 채널에 표시 되는지 여부에 따라 합니다.  
+ 현재 구성에서 모든 문서 탭에 맞는 세로 공간이 있는지 여부에 관계없이 하나 이상의 문서가 열려 있으면 문서 오버플로 단추가 있습니다. **CommandBarMenu** 색으로 제어되는 문서 오버플로 드롭다운 메뉴( [Menus](../misc/shared-colors.md#BKMK_CommandMenus)참조)는 표시되고 숨겨진 모든 열린 문서의 목록을 표시하며, 모든 열린 문서가 탭 채널에 표시되는지 여부에 따라 오버플로 문자 모양이 바뀝니다.  
   
  ![오버플로 검토](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")  
   
@@ -1085,7 +1085,7 @@ ms.locfileid: "47550296"
 |![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **정보 표시줄**|테두리|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>스크롤 막대  
- 스크롤 막대는 Visual Studio 환경에서 스타일이 지정되며 테마를 적용할 필요가 없습니다. 그러나 UI가 항상 Visual Studio 환경의 이 부분과 일관되게 나타나도록 스크롤 막대에서 사용된 색을 활용할 수 있습니다.  
+ 스크롤 막대는 Visual Studio 환경에서 스타일이 지정되며 테마를 적용할 필요가 없습니다. 그러나 UI는 항상 Visual Studio 환경의이 부분과 일관 되 게 표시 되도록 스크롤 막대에 사용 된 색을 활용할 것인지 결정할 수 있습니다.  
   
  ![스크롤 막대 검토](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")  
   
@@ -1295,7 +1295,7 @@ ms.locfileid: "47550296"
  사용 안 함  
  -   드롭다운 또는 콤보 상자가 아닌 모든 UI  
   
--   에 [드롭 다운](../misc/shared-colors.md#BKMK_CommandDropDown) 또는 [콤보 상자](../misc/shared-colors.md#BKMK_CommandComboBox) 명령 모음에서.  
+-   명령 모음의 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) 또는 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) 에 대해  
   
  **기본**  
   
@@ -1421,7 +1421,7 @@ ms.locfileid: "47550296"
 |선택됨(비활성)|테두리|없음|  
   
 ### <a name="manifest-designer"></a>매니페스트 디자이너  
- 매니페스트 디자이너는 Windows 8 및 Windows Phone 8 프로젝트에서 매니페스트 파일을 보다 쉽게 편집할 수 있도록 하는 하나의 방법으로 설계되었습니다. 사용할 수 있는 공유 프레임워크가 없는 동안에는 방향/탐색 탭의 디자인 레이아웃 및 색과 전체적인 구조를 일치시키는 것이 좋습니다. 레이아웃 정보에 대 한 자세한 내용은 참조 하세요. [Visual Studio에 대 한 레이아웃](../extensibility/ux-guidelines/layout-for-visual-studio.md)합니다.  
+ 매니페스트 디자이너는 Windows 8 및 Windows Phone 8 프로젝트에서 매니페스트 파일을 보다 쉽게 편집할 수 있도록 하는 하나의 방법으로 설계되었습니다. 사용할 수 있는 공유 프레임워크가 없는 동안에는 방향/탐색 탭의 디자인 레이아웃 및 색과 전체적인 구조를 일치시키는 것이 좋습니다. 레이아웃 정보에 대한 자세한 내용은 [Layout for Visual Studio](../extensibility/ux-guidelines/layout-for-visual-studio.md)을 참조하세요.  
   
  ![매니페스트 디자이너 검토](../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")  
   
@@ -1600,22 +1600,22 @@ ms.locfileid: "47550296"
   
 |구성 요소|요소|토큰 이름: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![도구 상자 부모 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **포커스가 있는 부모 노드**|배경|`TreeView.SelectedItemActive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![도구 상자 자식 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **포커스가 있는 자식 노드**|배경|`TreeView.SelectedItemActive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![도구 상자 부모 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **포커스가 있는 부모 노드**|테두리|`TreeView.FocusVisualBorder`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![도구 상자 자식 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **포커스가 있는 자식 노드**|테두리|`TreeView.FocusVisualBorder`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![도구 상자 부모 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **포커스가 있는 부모 노드**|전경(문자 모양)|`TreeView.SelectedItemActive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![도구 상자 자식 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **포커스가 있는 자식 노드**|전경(문자 모양)|`TreeView.SelectedItemActive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![도구 상자 부모 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **포커스가 있는 부모 노드**|전경(텍스트)|`TreeView.SelectedItemActive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![도구 상자 자식 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **포커스가 있는 자식 노드**|전경(텍스트)|`TreeView.SelectedItemActive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|배경|`TreeView.SelectedItemInactive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|배경|`TreeView.SelectedItemInactive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![도구 상자 부모 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **포커스가 있는 부모 노드**|배경|`TreeView.SelectedItemActive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![도구 상자 자식 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **포커스가 있는 자식 노드**|배경|`TreeView.SelectedItemActive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![도구 상자 부모 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **포커스가 있는 부모 노드**|테두리|`TreeView.FocusVisualBorder`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![도구 상자 자식 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **포커스가 있는 자식 노드**|테두리|`TreeView.FocusVisualBorder`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![도구 상자 부모 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **포커스가 있는 부모 노드**|전경(문자 모양)|`TreeView.SelectedItemActive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![도구 상자 자식 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **포커스가 있는 자식 노드**|전경(문자 모양)|`TreeView.SelectedItemActive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![도구 상자 부모 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **포커스가 있는 부모 노드**|전경(텍스트)|`TreeView.SelectedItemActive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![도구 상자 자식 노드 초점을 맞춘](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **포커스가 있는 자식 노드**|전경(텍스트)|`TreeView.SelectedItemActive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|배경|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|배경|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
 |![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|테두리|없음|  
 |![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|테두리|없음|  
-|![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|전경(문자 모양)|`TreeView.SelectedItemInactive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|전경(문자 모양)|`TreeView.SelectedItemInactive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|전경(텍스트)|`TreeView.SelectedItemInactive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
-|![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|전경(텍스트)|`TreeView.SelectedItemInactive`<br /><br /> [트리 보기](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|전경(문자 모양)|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|전경(문자 모양)|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![포커스가 없는 도구 상자 부모 노드](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **포커스가 없는 부모 노드**|전경(텍스트)|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
+|![포커스가 없는 도구 상자 자식 노드](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **포커스가 없는 자식 노드**|전경(텍스트)|`TreeView.SelectedItemInactive`<br /><br /> [Tree view](../misc/shared-colors.md#BKMK_TreeView) 범주|  
   
 ## <a name="color-value-reference"></a>색 값 참조  
   

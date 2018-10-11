@@ -16,12 +16,12 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34cf96f38d169994d85f758c9453b6ad15ad6390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99561ea9e1fe46f5e0f90bf994c8b9eaf4b11d32
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549669"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880532"
 ---
 # <a name="registering-an-expression-evaluator"></a>식 계산기 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "47549669"
 ## <a name="managed-code-expression-evaluator"></a>관리 코드 식 계산기  
  EE VSIP 프로그램에 대 한 호출에 의해 시작 일반적으로 COM 환경과 자체를 등록 하는 dll을 클래스 라이브러리로 구현 되는 관리 코드 **regpkg.exe**합니다. COM 환경에 대 한 레지스트리 키를 작성 하는 실제 프로세스는 자동으로 처리 됩니다.  
   
- 기본 클래스의 메서드를 사용 하 여 표시할지를 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, com DLL이 등록 될 때 호출 되는 메서드 임을 나타내는 이 등록 메서드를 자주 호출 `RegisterClass`, Visual Studio를 사용 하 여 DLL을 등록 하는 작업을 수행 합니다. 해당 `UnregisterClass` (표시 합니다 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>)를 수행한 `RegisterClass` DLL을 제거 하는 경우.  
+ 기본 클래스의 메서드를 사용 하 여 표시할지를 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, com DLL이 등록 되 면 호출 될 메서드 임을 나타내는 이 등록 메서드를 자주 호출 `RegisterClass`, Visual Studio를 사용 하 여 DLL을 등록 하는 작업을 수행 합니다. 해당 `UnregisterClass` (표시 합니다 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>)를 수행한 `RegisterClass` DLL을 제거 하는 경우.  
   
  동일한 레지스트리 항목을 관리 되지 않는 코드에서 작성 하는 EE와 이루어집니다. 유일한 차이점은 있는지 도우미 함수가 같은 `SetEEMetric` 에 작업을 수행 합니다. 이 등록 또는 등록 취소 프로세스의 예는 다음과 같습니다.  
   

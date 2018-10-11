@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c70cf8ae41652d0426f40d26dd5217ca4507aad8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bf6251b8152224b521f60b0ec1694e03adeb9b1
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553348"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880481"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,12 +135,12 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
  아직 Hyper-V Administrators 그룹의 구성원이 아닌 경우에는 에뮬레이터를 실행하면 해당 그룹에 참여하라는 메시지가 표시됩니다(대화 상자는 Windows Phone 에뮬레이터를 참조함). 그룹에 참여하려면 관리자 권한이 필요합니다.  
   
 > [!IMPORTANT]
->  그룹에 참여한 후에는 로그오프하거나 다시 부팅하여 변경 내용을 적용합니다.  
+> 그룹에 참여한 후에는 로그오프하거나 다시 부팅하여 변경 내용을 적용합니다.  
   
  ![Hyper&#45;V 관리자 보안 그룹 가입](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")  
   
- 자신을 수동으로 그룹에 추가하려면 로컬 사용자 및 그룹 스냅인을 엽니다. 자세한 내용은 [그룹에 사용자 계정 추가](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7)를 참조하세요. (이 Windows 7 항목은 Windows 8에도 적용됩니다.)  
-  
+ 자신을 수동으로 그룹에 추가하려면 로컬 사용자 및 그룹 스냅인을 엽니다.
+ 
 ##  <a name="BootableVHD"></a> 부팅 가능한 VHD에서 에뮬레이터 실행은 지원되지 않음  
  부팅 가능한 VHD에서 Windows를 실행하는 동안 Android용 Visual Studio 에뮬레이터에서 앱을 실행하려는 경우 에뮬레이터는 일반적으로 시작되는 데 몇 분 정도 걸리거나 시작되지 않습니다. 에뮬레이터가 시작되지 못하는 경우 다음과 같은 메시지가 표시됩니다. 앱을 배포하지 못했습니다. 다시 시도하세요.  
   

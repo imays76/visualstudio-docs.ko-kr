@@ -14,17 +14,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbc4d9b85a3eb8e0fe5f3a890a76bae4695912e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541594"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880671"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>RequireJS용으로 IntelliSense 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](https://docs.microsoft.com/en-us/visualstudio/)합니다.  
+이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
   
 Visual Studio 2013 업데이트 4부터는 널리 사용되는 RequireJS JavaScript 파일 및 모듈식 로더가 지원됩니다. RequireJS를 사용하면 코드 모듈 간의 종속성을 더 쉽게 정의하고 필요할 때만 동적으로 모듈을 로드할 수 있습니다. RequireJS가 사용되는 JavaScript 코드를 작성할 때는 코드 내에서 `require()` 호출을 통해 참조하거나 모듈 정의에서 참조한 모듈에 대해 IntelliSense 제안 사항이 제공됩니다.  
   

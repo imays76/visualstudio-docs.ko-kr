@@ -15,12 +15,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c85bdfd08fb3d2ad06c9dfd17b46a31fe4ed74d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0f068a40fc4cbac2cd261fe295e6e8b0fb53b2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554841"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878981"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio 2017에서 최신 설명서를 참조 하세요 [의견을 보내]
  작동 중단, 느려지는 성능, 예기치 않은 동작 등 Visual Studio를 사용 하 여 문제를 실행 하는 경우 문제를 알려 주세요 옆에 있는 피드백 아이콘에서 마우스 오른쪽 단추로 **빠른 실행**, 또는 를선택하여 **도움말 &#124; 사용자 의견 보내기 &#124; 문제 보고** 주 메뉴에서. 자세한 내용은 [Visual Studio를 사용 하 여 문제를 보고 하는 방법을](../ide/how-to-report-a-problem-with-visual-studio-2015.md)합니다.  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio 기능에 대한 제안 보내기  
- 더 개선할 사항이 있으면 알려주세요. **제안하기** 를 선택하여 기능이나 변경 사항을 Visual Studio 팀에 제한해 주세요. 제안은 다른 사람들이 투표할 수 있는 [UserVoice](https://visualstudio.uservoice.com) 에 자동으로 게시됩니다.  
+ 더 개선할 사항이 있으면 알려주세요. **제안하기** 를 선택하여 기능이나 변경 사항을 Visual Studio 팀에 제한해 주세요. 제안은 다른 사람들이 투표할 수 있는 [UserVoice](https://visualstudio.uservoice.com)에 자동으로 게시됩니다.  
   
 ## <a name="rate-this-product"></a>이 제품 평가  
  Visual Studio의 시험판 버전에는 **이 제품 평가** 메뉴 항목이 있어서 실행 중인 빌드의 품질에 대한 의견을 보낼 수 있습니다. 릴리스 버전의 제품에는 이 메뉴가 표시되지 않습니다.  

@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: db32eaaefd89bce9b3972853b7bb02a307b8df4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5f28f547d6d206cce7fe4face3b92d5fdf0ae4b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543832"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880130"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015를 설치 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ Visual Studio 2017에 대 한 최신 설치 설명서를 참조 하세요 [Visua
   
 #### <a name="to-install-or-uninstall-help-content"></a>도움말 콘텐츠를 설치 또는 제거하려면  
   
-1.  에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 메뉴 모음에서 **도움말**를 **콘텐츠 추가 및 제거 하는 데 도움이**합니다.  
+1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 메뉴 모음에서 **도움말**, **도움말 콘텐츠 추가 및 제거**를 선택합니다.  
   
 2.  **Microsoft 도움말 뷰어** 의 **콘텐츠 관리**탭에서 도움말 콘텐츠의 설치 소스를 선택합니다.  
   
@@ -203,7 +203,7 @@ Visual Studio 2017에 대 한 최신 설치 설명서를 참조 하세요 [Visua
 |-----------|-----------------|  
 |[Visual Studio의 오프라인 설치 만들기](../install/create-an-offline-installation-of-visual-studio.md)|인터넷에 연결 되지 않은 경우 Visual Studio를 설치 하는 방법을 설명 합니다.
 |[Visual Studio 버전 병렬 설치](../install/install-visual-studio-versions-side-by-side.md)|같은 컴퓨터에 여러 버전의 Visual Studio를 설치하는 방법에 대한 정보를 제공합니다.|  
-|[명령줄 매개 변수를 사용하여 Visual Studio 설치](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|명령 프롬프트에서 Visual Studio를 설치할 때 사용할 수 있는 명령줄 매개 변수를 나열 합니다.|  
+|[명령줄 매개 변수를 사용하여 Visual Studio 설치](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|명령 프롬프트에서 Visual Studio를 설치할 때 사용할 수 있는 명령줄 매개 변수를 나열 합니다.|  
 |[Visual Studio 제거](../install/uninstall-visual-studio.md)|Visual Studio를 제거 하는 방법에 설명 합니다.|  
 |[Visual Studio 관리자 가이드](../install/visual-studio-administrator-guide.md)|Visual Studio의 배포 옵션에 대한 정보를 제공합니다.|  
 |[Visual Studio 이미지 라이브러리](../designers/the-visual-studio-image-library.md)|Visual Studio 응용 프로그램에서 사용할 수 있는 그래픽을 설치하는 방법에 대한 정보를 제공합니다.|  

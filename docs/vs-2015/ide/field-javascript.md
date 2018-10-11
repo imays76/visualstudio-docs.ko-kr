@@ -17,17 +17,17 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 623e964255aa2eda70ddc67dd752faeeb80fa38a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 155d3e771362949288d31a20245c7fb45a022969
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551562"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880976"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;필드&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](https://docs.microsoft.com/en-us/visualstudio/)합니다.  
+이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
   
 필드 또는 개체에 정의 된 멤버에 대 한 설명을 등의 문서 정보를 지정 합니다.  
   

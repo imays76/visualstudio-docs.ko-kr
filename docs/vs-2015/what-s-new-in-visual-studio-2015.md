@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb14269c933d8e8de191b8a8c52e9f41e63ca79d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552835"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880372"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>새로운&#39;Visual Studio 2015의 새로운
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "47552835"
   
  이 페이지는 Visual Studio 2013 업데이트 중 하나에 처음으로 도입된 기능을 포함하여 Visual Studio 2013 RTM 이후 새로 포함된 가장 중요한 기능 중 일부에 대해 주로 다룹니다. Visual Studio 2015의 새로운 기능의 전체 목록은 [릴리스 정보](https://www.visualstudio.com/news/vs2015-vs)를 참조하세요.  
   
- 다양 한 향상 된 기능 및 Visual Studio ALM의 새로운 기능에 대 한 자세한 내용을 참조 하세요 [Visual Studio 2015에서 응용 프로그램 수명 주기 관리에 대 한 새로운](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)합니다.  
+ Visual Studio ALM의 다양한 개선 기능과 새로운 기능에 대해 자세히 알아보려면 [Visual Studio 2015 응용 프로그램 수명 주기 관리의 새로운 기능](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)을 참조하세요.  
   
 ## <a name="a-new-setup-experience"></a>새로운 설치 환경  
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]  
@@ -43,7 +43,7 @@ ms.locfileid: "47552835"
 ## <a name="sign-in-across-multiple-accounts"></a>여러 계정에 로그인  
  Visual Studio 2015에서는 단순화된 새로운 로그인 환경을 통해 Visual Studio 계정이 여러 개인 경우에도 온라인 리소스에 간편하게 액세스할 수 있습니다. Visual Studio에 로그인하면 컴퓨터의 Visual Studio 2015 및 Blend의 모든 인스턴스에 자동으로 로그인됩니다. 자동으로 로그인되면 설정 로밍이 자동으로 시작됩니다. Visual Studio 2015에서는 기능 간에 계정이 공유되므로 적절한 토큰이 있는 동안에는 **팀 탐색기**에서 Visual Studio Team Services 계정에 액세스하고 서버 탐색기에서 Microsoft Azure 구독의 리소스와 웹 사이트에 액세스할 수 있습니다. 또한 Application Insights 프로젝트의 새 프로젝트 대화 상자에 Azure 리소스가 표시되는 것은 물론, 새 [연결된 서비스 추가](http://msdn.microsoft.com/office/aa905340.aspx) 대화 상자에는 Azure 모바일, Azure 저장소, [Microsoft Office 365](https://developer.salesforce.com/) 및 **Saleforce.com developer** 계정도 표시됩니다.  
   
- 새로운 계정 관리자를 통해 여러 사용자 계정을 추가하는 등 Visual Studio에서 여러 사용자 계정으로 작업한 후, 서비스에 연결하거나 온라인 리소스에 액세스할 경우 즉시 이러한 계정 사이를 전환할 수 있습니다. Visual Studio는 Visual Studio 또는 Blend의 모든 인스턴스에서 사용할 수 있도록 추가하는 계정을 기억합니다. 또한 Visual Studio는 다른 장치에서 해당 계정 중 하나로 신속하게 작업을 시작할 수 있도록 개인 설정 계정을 사용하여 계정 목록을 로밍할 예정입니다. 그러나 중요한 자격 증명은 로밍하지 않습니다. 물론 언제든지 계정 설정 대화 상자에서 계정을 제거할 수 있습니다. 시작 하려면 참조 [여러 사용자 계정으로 작업](./ide/work-with-multiple-user-accounts.md)합니다.  
+ 새로운 계정 관리자를 통해 여러 사용자 계정을 추가하는 등 Visual Studio에서 여러 사용자 계정으로 작업한 후, 서비스에 연결하거나 온라인 리소스에 액세스할 경우 즉시 이러한 계정 사이를 전환할 수 있습니다. Visual Studio는 Visual Studio 또는 Blend의 모든 인스턴스에서 사용할 수 있도록 추가하는 계정을 기억합니다. 또한 Visual Studio는 다른 장치에서 해당 계정 중 하나로 신속하게 작업을 시작할 수 있도록 개인 설정 계정을 사용하여 계정 목록을 로밍할 예정입니다. 그러나 중요한 자격 증명은 로밍하지 않습니다. 물론 언제든지 계정 설정 대화 상자에서 계정을 제거할 수 있습니다. 시작하려면 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)을 참조하세요.  
   
  ![계정 관리자](./ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
   
@@ -53,7 +53,7 @@ ms.locfileid: "47552835"
  물론 기존의 데스크톱 응용 프로그램에 대한 지원은 언어, 라이브러리 및 도구의 다양한 향상을 통해 이전보다 더욱 개선되었습니다.  
   
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>Xamarin for Visual Studio를 사용하여 C#으로 작성하는 플랫폼 간 모바일 앱  
- Xamarin은 C#으로 코드를 작성할 수 있으며 iOS 및 Android API에 기본적으로 바인딩되는 모바일 프레임워크입니다. Microsoft는 공유 코드를 포함하는 단일 솔루션에서 Android, iOS 및 Windows Phone용으로 개발할 수 있는 확장인 Xamarin for Visual Studio 릴리스에서 Xamarin과 긴밀하게 협력했습니다. Xamarin을 사용하면 하나의 언어와 하나의 코드베이스를 사용하므로 플랫폼 사이의 델타가 최소화됩니다.  Xamarin for Visual Studio는 Visual Studio 2010 이상에서 지원됩니다. Visual Studio 2015에는 스타터 버전의 Xamarin기 포함되어 있습니다. 시작 하려면 참조 [Visual Studio에서 Xamarin을 사용 하 여 네이티브 UI로 앱 빌드](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)합니다.  
+ Xamarin은 C#으로 코드를 작성할 수 있으며 iOS 및 Android API에 기본적으로 바인딩되는 모바일 프레임워크입니다. Microsoft는 공유 코드를 포함하는 단일 솔루션에서 Android, iOS 및 Windows Phone용으로 개발할 수 있는 확장인 Xamarin for Visual Studio 릴리스에서 Xamarin과 긴밀하게 협력했습니다. Xamarin을 사용하면 하나의 언어와 하나의 코드베이스를 사용하므로 플랫폼 사이의 델타가 최소화됩니다.  Xamarin for Visual Studio는 Visual Studio 2010 이상에서 지원됩니다. 스타터 버전의 Xamarin은 Visual Studio 2015에 포함 됩니다. 시작 하려면 참조 [Visual Studio에서 Xamarin을 사용 하 여 네이티브 UI로 앱 빌드](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)합니다.  
   
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Apache Cordova를 사용하여 HTML/JavaScript로 작성하는 플랫폼 간 모바일 앱  
  Visual Studio Tools for Apache Cordova는 Microsoft와 오픈 소스 Apache Cordova 커뮤니티 사이의 긴밀한 공동 작업의 결과입니다. 이 도구는 HTML, CSS 및 JavaScript(또는 Typescript)를 사용한 플랫폼 간 모바일 개발을 지원합니다. 단일한 코드베이스를 사용하여 Android, iOS 및 Windows를 대상으로 하며 JavaScript IntelliSense, DOM 탐색기, JavaScript 콘솔, 중단점, 조사식, 지역, 내 코드만 등을 포함하는 다양한 Visual Studio IDE를 사용할 수 있습니다.  Visual Studio Tools for Apache Cordova를 사용하여 응용 프로그램은 공통 JavaScript API를 제공하는 플러그인을 통해 모든 플랫폼에서 기본 장치 기능에 액세스할 수 있습니다. 시작 하려면 참조 [Visual Studio Tools for Apache Cordova 시작](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)합니다.  
@@ -103,7 +103,7 @@ ms.locfileid: "47552835"
  ![장치 미리 보기 메뉴](./ide/media/vs2015-device-preview.png "vs2015_device_preview")  
   
 ## <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단  
- Visual Studio 2013 버전부터 Visual Studio 그래픽 진단에 프레임 분석, Windows Phone 지원, 셰이더 편집 및 적용, 명령줄 캡처 도구와 같은 다양한 새 기능이 추가되었습니다. 또한 DirectX12 앱 디버그를 위한 지원도 추가되었습니다. 자세한 내용은 [Visual Studio 그래픽 진단](./debugger/visual-studio-graphics-diagnostics.md)합니다.  
+ Visual Studio 2013 버전부터 Visual Studio 그래픽 진단에 프레임 분석, Windows Phone 지원, 셰이더 편집 및 적용, 명령줄 캡처 도구와 같은 다양한 새 기능이 추가되었습니다. 또한 DirectX12 앱 디버그를 위한 지원도 추가되었습니다. 자세한 내용은 [Visual Studio 그래픽 진단](./debugger/visual-studio-graphics-diagnostics.md)을 참조하세요.  
   
 ## <a name="connect-to-services"></a>서비스 연결  
  Visual Studio 2015를 사용하면 앱과 서비스를 그 어느 때보다 쉽게 연결할 수 있습니다.  새로운 '연결된 서비스 추가' 마법사는 프로젝트를 구성하고 필요한 인증 지원을 추가하며 필요한 NuGet 패키지를 다운로드하여 신속하고 어려움 없이 서비스에 대한 코딩을 시작할 수 있습니다. '연결된 서비스 추가' 마법사는 또한 새로운 계정 관리자와 통합되어 여러 사용자 계정 및 구독에 대한 작업을 간편하게 수행할 수 있습니다. Visual Studio 2015에서는 다음 서비스에 대한 지원이 기본적으로 제공됩니다(사용자에게 계정이 있다고 가정).  
@@ -137,7 +137,7 @@ ms.locfileid: "47552835"
 -   **C++ / Android**. [플랫폼 간 모바일 개발용 Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) 템플릿을 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) (영문)와 같은 타사 도구와 함께 사용하여 Windows 및 Android용 네이티브 앱을 만듭니다.  
   
 ## <a name="debugging-and-diagnostics"></a>디버깅 및 진단  
- 디버깅의 새로운 기능에 대 한 자세한 내용은 [What's New for Visual Studio 2015 디버거의](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)합니다.  
+ 디버깅의 새로운 기능에 대한 자세한 내용은 [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)을 참조하세요.  
   
  진단의 새로운 기능에 대 한 자세한 내용은 [프로 파일링 도구의 새로운](./profiling/what-s-new-in-profiling-tools.md)합니다.  
   
@@ -147,7 +147,7 @@ ms.locfileid: "47552835"
  성능 팁은 디버깅 동안 메서드의 실행 시간을 표시하여, 프로파일러를 호출할 필요 없이 신속하게 병목 현상을 찾아낼 수 있습니다. 시작하려면 [성능 팁: Visual Studio를 사용하여 디버그하는 동안 성능 정보 요약](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)을 참조하세요.  
   
 ### <a name="error-list"></a>오류 목록  
- 이제 오류 목록이 모든 열에서 필터링을 지원합니다. 또한 코드 변경으로 수천 개의 경고가 생성되는 경우에도 입력하는 내용에 따라 전체 C# 또는 Visual Basic 솔루션의 오류, 경고 및 코드 분석의 실시간 보기를 보여 줍니다. 새로운 오류 목록은 기존 사용법과 호환됩니다. 자세한 내용은 [오류 목록 창](./ide/reference/error-list-window.md)합니다.  
+ 이제 오류 목록이 모든 열에서 필터링을 지원합니다. 또한 코드 변경으로 수천 개의 경고가 생성되는 경우에도 입력하는 내용에 따라 전체 C# 또는 Visual Basic 솔루션의 오류, 경고 및 코드 분석의 실시간 보기를 보여 줍니다. 새로운 오류 목록은 기존 사용법과 호환됩니다. 자세한 내용은 [Error List Window](./ide/reference/error-list-window.md)을 참조하세요.  
   
 ### <a name="gpu-usage-tool"></a>GPU 사용 도구  
  GPU 사용 도구는 DirectX 앱 및 게임의 GPU 사용 데이터를 수집 및 분석하고, 성능 병목 현상이 CPU 또는 GPU에서 비롯되는지 여부에 상관 없이 문제를 해결할 수 있도록 도와 줍니다. 도구를 시작하려면 [Visual C++ 팀 블로그 게시물](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)을 참조하세요.  
@@ -163,7 +163,7 @@ ms.locfileid: "47552835"
  Visual Studio 2013은 텍스트 편집기, 키 바인딩, 테마 및 글꼴 및 색상, 시작, 환경 별칭과 같이 가장 일반적으로 구성되는 일부 설정에 대해 동기화된 설정을 도입했습니다.  Visual Studio 2015는 더 많은 설정을 동기화하고 Professional, Enterprise, Express SKU, Blend와 같은 Visual Studio 응용 프로그램 제품군 전체에서 설정을 동기화하여 이러한 환경을 향상합니다. Visual Studio 2013에서 사용한 것과 동일한 계정으로 Visual Studio 2015에 처음으로 로그인하면 Visual Studio 2013에서 적용된 동기화된 설정을 볼 수 있습니다. "동기화"를 입력 하 여 설정에 액세스할 수 있습니다 **빠른 실행**, 또는 이동할 **도구 > 옵션 > 환경 > 동기화 된 설정**합니다.  
   
 ### <a name="automatic-extension-updates"></a>자동 확장 업데이트  
- 이제 Visual Studio 갤러리에서 새 버전을 사용할 수 있는 경우 설치된 Visual Studio 확장이 자동으로 업데이트됩니다. 참조 [찾기 및 Visual Studio Extensions를 사용 하 여](./ide/finding-and-using-visual-studio-extensions.md) 자동 확장 업데이트를 사용자 지정할 수는 방법에 대 한 세부 정보에 대 한 합니다.  
+ 이제 Visual Studio 갤러리에서 새 버전을 사용할 수 있는 경우 설치된 Visual Studio 확장이 자동으로 업데이트됩니다. 자동 확장 업데이트를 사용자 지정할 수 있는 방법에 대한 자세한 내용은 [Visual Studio 확장 찾기 및 사용](./ide/finding-and-using-visual-studio-extensions.md) 을 참조하세요.  
   
 ### <a name="title-case-menus"></a>제목 대소문자 메뉴  
  사용자의 의견을 반영하였습니다. 원래대로 Visual Studio 메뉴의 첫 글자가 대문자로 표시되도록 바뀌었습니다. 그러나 모두 대문자 스타일이 마음에 있다면 있습니다 수 설정 시작 시 또는 합니다 **도구 > 옵션 > 일반** 속성 페이지:  
@@ -176,7 +176,7 @@ ms.locfileid: "47552835"
  ![편집기의 터치 지원](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")  
   
 ### <a name="custom-layouts"></a>사용자 지정 레이아웃  
- 사용자 지정 창 레이아웃을 만들고 저장하고 로밍할 수 있습니다. 예를 들어 데스크톱 컴퓨터에서 사용할 한 개의 선호하는 레이아웃을 정의하고, 랩톱 또는 작은 화면 장치에서 사용할 다른 레이아웃을 정의할 수 있습니다. 또는 UI 프로젝트에서 사용할 한 개의 레이아웃과 데이터베이스 프로젝트에서 사용할 또 다른 레이아웃을 정의할 수 있습니다. 키 바인딩을 사용하여 레이아웃 간에 빠르게 전환할 수 있습니다. 이러한 레이아웃은 로그인 시 Visual Studio의 모든 인스턴스에서 사용할 수 있습니다. 자세한 내용은 [사용자 지정 창 레이아웃 만들기](./misc/create-custom-window-layouts.md)합니다.  
+ 사용자 지정 창 레이아웃을 만들고 저장하고 로밍할 수 있습니다. 예를 들어 데스크톱 컴퓨터에서 사용할 한 개의 선호하는 레이아웃을 정의하고, 랩톱 또는 작은 화면 장치에서 사용할 다른 레이아웃을 정의할 수 있습니다. 또는 UI 프로젝트에서 사용할 한 개의 레이아웃과 데이터베이스 프로젝트에서 사용할 또 다른 레이아웃을 정의할 수 있습니다. 키 바인딩을 사용하여 레이아웃 간에 빠르게 전환할 수 있습니다. 이러한 레이아웃은 로그인 시 Visual Studio의 모든 인스턴스에서 사용할 수 있습니다. 자세한 내용은 [사용자 지정 창 레이아웃 만들기](./misc/create-custom-window-layouts.md)를 참조하세요.  
   
  ![Visual Studio 사용자 지정 레이아웃 메뉴 항목](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")  
   
@@ -200,7 +200,7 @@ ms.locfileid: "47552835"
   
 -   코드에 영향을 주는 다른 분기의 변경 내용을 찾습니다.  
   
- 참조 [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)합니다.  
+ [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)를 참조하세요.  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>디자인 및 모델링 도구(Enterprise Edition에만 해당)  
  **코드 맵 및 종속성 그래프**  
@@ -233,7 +233,7 @@ ms.locfileid: "47552835"
   
 -   **클래스 뷰 및 개체 브라우저에서 다이어그램 만들기**. 클래스 뷰 및 개체 브라우저 창에서 파일 및 어셈블리를 새 맵이나 기존 맵에 끌어서 놓습니다.  
   
- 참조 [솔루션 전체의 종속성 매핑](./modeling/map-dependencies-across-your-solutions.md)합니다.  
+ [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)을 참조하세요.  
   
  **이 릴리스에서 다른 디자인 및 모델링 변경:**  
   
@@ -244,7 +244,7 @@ ms.locfileid: "47552835"
 -   **아키텍처 탐색기**. 이제 아키텍처 탐색기를 사용하여 다이어그램을 만들 수 없습니다. 하지만 솔루션 탐색기를 사용할 수 있습니다.  
   
 ## <a name="visual-studio-extensibility-tools"></a>Visual Studio 확장성 도구  
- 이제 Visual Studio 확장성 도구(VS SDK 및 템플릿)가 설치 시 구성 요소 옵션으로 포함되어 있기 때문에 설치가 쉬워졌습니다.  확장성 도구를 통해 개발자는 Visual Studio에 기능을 추가하고 사용자 지정하도록 확장을 작성할 수 있습니다. Visual Studio 확장성에 대 한 자세한 내용은 참조 하세요. [Visual Studio SDK](./extensibility/visual-studio-sdk.md)  
+ 이제 Visual Studio 확장성 도구(VS SDK 및 템플릿)가 설치 시 구성 요소 옵션으로 포함되어 있기 때문에 설치가 쉬워졌습니다.  확장성 도구를 통해 개발자는 Visual Studio에 기능을 추가하고 사용자 지정하도록 확장을 작성할 수 있습니다. Visual Studio 확장성에 대한 자세한 내용은 [Visual Studio SDK](./extensibility/visual-studio-sdk.md)를 참조하세요.  
   
  사용자 지정 설치를 사용하여 확장성 도구를 포함하려는 경우 **기능 / 일반 도구 / Visual Studio 확장성 도구**에서 찾을 수 있습니다.  **새 프로젝트** 대화 상자를 열어 **Visual C# / 확장성** 에서 **Visual Studio 확장성 도구 설치**항목을 선택하여 나중에 확장성 도구를 설치할 수도 있습니다.  
   
@@ -280,4 +280,4 @@ ms.locfileid: "47552835"
 * [사용자 지정 창 레이아웃 만들기](./misc/create-custom-window-layouts.md)   
 * [전구를 사용하여 빠른 작업 수행](./ide/perform-quick-actions-with-light-bulbs.md)   
 * [Visual Studio 2015에서 응용 프로그램 수명 주기 관리의 새로운 기능](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)
-* [Visual Studio 2017의 새로운 기능](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Visual Studio 2017의 새로운 기능](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

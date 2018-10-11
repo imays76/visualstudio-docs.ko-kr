@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c681acc80b0646f3cb6f51435bf8358d12bf44b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b17416902bac2bcc7ff03adc39e548e63fb229
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550636"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879364"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>옵션, 텍스트 편집기, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "47550636"
   
  미리 정의된 참조 그룹을 사용하여 다른 JavaScript 프로젝트의 범위에 있는 특정 IntelliSense .js 파일을 지정할 수 있습니다. 다음 네 가지 참조 그룹을 사용할 수 있습니다.  
   
--   암시적 (Windows *버전*)에 대 한 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] JavaScript를 사용 하 여 앱. 이 그룹에 포함된 파일은 JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 앱용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
+-   암시적(Windows *버전*), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 앱용 이 그룹에 포함된 파일은 JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 앱용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
   
 -   암시적(웹), HTML5 프로젝트용 이 그룹에 포함된 파일은 이러한 프로젝트 형식용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
   

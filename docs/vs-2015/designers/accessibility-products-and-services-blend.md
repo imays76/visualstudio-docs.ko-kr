@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e90c3f5ec522190cf08027bdffbc9a9558cee90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549902"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880786"
 ---
 # <a name="accessibility-products-and-services-blend"></a>내게 필요한 옵션 제품 및 서비스(Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽�
   
  웹 주소는 변경될 수 있으므로 여기에 나와 있는 사이트에 연결되지 않을 수도 있습니다.  
   
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>청각 장애인을 위한 고객 서비스  
+## <a name="customer-service-for-people-with-hearing-impairments"></a>청각 장애가 있는 사용자를 위한 고객 서비스  
  난청이나 청각 장애가 있는 경우 문자 전화(TTY/TDD) 서비스를 통해 Microsoft 제품 및 고객 서비스를 모두 이용할 수 있습니다.  
   
  고객 서비스를 받으려면 월요일 ~ 금요일(공휴일 제외), 오전 6시 30분부터 오후 5시 30분(태평양 표준시)까지 Microsoft Sales Information Center((800) 892-5234)로 문의하세요.  

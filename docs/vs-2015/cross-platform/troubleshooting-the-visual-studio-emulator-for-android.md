@@ -13,12 +13,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 469ce43d35d0fdf282a164596fa4cd48eb442534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8f6d371bea8927c272f97dccd1c8d033635616a
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565283"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880068"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ ms.locfileid: "47565283"
   
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")  
   
-     설치가 잘못되고 Windows 10을 사용 중인 경우 [netcfg – d 명령을 사용하여 네트워크 장치를 다시 설치](http://windows.microsoft.com/en-us/windows-10/fix-network-connection-issues) 할 수 있습니다(섹션 6).  
+     설치가 잘못되고 Windows 10을 사용 중인 경우 [netcfg – d 명령을 사용하여 네트워크 장치를 다시 설치](http://windows.microsoft.com/windows-10/fix-network-connection-issues) 할 수 있습니다(섹션 6).  
   
 -   이러한 단계로도 문제가 해결되지 않으면 [Emulator fails to start (first use)](#NoStart) 에서 에뮬레이터에 방해가 될 수 있는 타사 소프트웨어에 대한 정보를 확인하세요.  
   

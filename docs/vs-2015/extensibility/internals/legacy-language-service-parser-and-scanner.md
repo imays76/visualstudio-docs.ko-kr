@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553897"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880248"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>레거시 언어 서비스 파서 및 검사기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>중괄호 일치에 대 한 구문 분석  
  이 예제에서는 일치 하는 사용자가 입력 하는 닫는 중괄호에 대 한 제어 흐름을 보여 줍니다. 이 프로세스에서 색 지정에 사용 되는 스캐너 토큰 및 토큰 중괄호 일치 작업을 트리거할 수 있는지 여부의 형식을 결정 하도 사용 됩니다. 트리거가 있으면는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드를 호출 하는 일치 하는 중괄호를 찾습니다. 마지막으로 두 개의 중괄호 강조 표시 됩니다.  
   
- 중괄호 트리거의 이름에 사용 되 고 이유를 구문 분석 하는 경우에이 프로세스는 실제 중괄호에 제한이 없습니다. 문자 수를 지정 된 쌍의 쌍이 지원 됩니다. 예를 들어 (및) \< 및 >를 하 고 [및].  
+ 중괄호 트리거의 이름에 사용 되 고 이유를 구문 분석 하는 경우에이 프로세스는 실제 중괄호에 제한이 없습니다. 일치 하는 쌍에 지정 된 문자 쌍이 지원 됩니다. 예를 들어 (및) \< 및 >를 하 고 [및].  
   
  언어 서비스는 중괄호를 지원함을 가정 합니다.  
   

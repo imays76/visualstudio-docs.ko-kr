@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555930"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880723"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "47555930"
 
 ### <a name="to-download-and-install-the-remote-tools"></a>원격 도구 다운로드 및 설치 하려면
   
-1.  올바른 버전의 가져오기 (Visual Studio를 실행 하는 컴퓨터) 하는 대신 디버그 하려는 장치 또는 서버 컴퓨터에는 원격 도구입니다.
+1.  장치 또는 서버를 디버그하려는 컴퓨터(대신 Visual Studio를 실행하는 컴퓨터)에 맞는 버전의 원격 도구를 가져옵니다.
 
     |버전|링크|노트|
     |-|-|-|
@@ -59,7 +59,7 @@ ms.locfileid: "47555930"
     > [!IMPORTANT]
     >  Visual Studio의 버전과 일치 하는 원격 도구의 최신 버전을 설치 하는 것이 좋습니다. 일치 하지 않는 버전 권장 되지 않습니다.  
     >   
-    >  또한 설치 하려는 운영 체제와 동일한 아키텍처를 가진 원격 도구를 설치 해야 합니다. 즉,에서 32 비트 응용 프로그램을 디버그 하려는 경우는 64 비트 운영 체제를 실행 하는 원격 컴퓨터, 원격 컴퓨터의 64 비트 버전의 원격 도구를 설치 해야 합니다.  
+    >  또한 설치 하려는 운영 체제와 동일한 아키텍처를 가진 원격 도구를 설치 해야 합니다. 즉, 64 비트 운영 체제를 실행 하는 원격 컴퓨터에서 32 비트 응용 프로그램을 디버그 하려는 원격 컴퓨터의 64 비트 버전의 원격 도구를 설치 해야 합니다.  
   
 3.  실행 파일을 다운로드했으면 지침에 따라 원격 컴퓨터에 응용 프로그램을 설치합니다. 참조 [설치 지침](#bkmk_setup)
 
@@ -286,7 +286,7 @@ ms.locfileid: "47555930"
 ## <a name="set-up-debugging-with-remote-symbols"></a>원격 기호를 사용한 디버깅 설정  
  Visual Studio 컴퓨터에서 생성하는 기호를 사용하여 코드를 디버그할 수 있습니다. 로컬 기호를 사용하는 경우 원격 디버거의 성능이 훨씬 더 빠릅니다.  원격 기호를 사용해야 경우 원격 컴퓨터에서 기호를 찾도록 원격 디버깅 모니터에 지시해야 합니다.  
   
- Visual Studio 2013 업데이트 2부터 다음 msvsmon 명령줄 스위치를 관리 되는 코드에 대 한 원격 기호를 사용 하려면 사용할 수 있습니다. `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
+ Visual Studio 2013 Update 2부터 다음 msvsmon 명령줄 스위치를 통해 관리 코드에 원격 기호를 사용할 수 있습니다. `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
  자세한 내용은 원격 디버깅 도움말을 참조 하십시오 (키를 누릅니다 **F1** 원격 디버거 창이 나 클릭 **도움말 / 사용법**). 자세한 정보를 찾을 수 있습니다 [.NET 원격 기호 로드 변경 내용에서 Visual Studio 2012 및 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
@@ -304,7 +304,7 @@ ms.locfileid: "47555930"
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)   
  [원격 디버깅용 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)   
+ [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [원격 IIS 컴퓨터의 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

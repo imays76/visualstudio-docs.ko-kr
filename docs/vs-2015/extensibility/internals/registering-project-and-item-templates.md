@@ -19,12 +19,12 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dd0e668f9bf657d38b69beb1bc132547dd6bda1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543379"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880086"
 ---
 # <a name="registering-project-and-item-templates"></a>프로젝트 템플릿 및 항목 템플릿 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "47543379"
 |SortPriority|REG_DWORD|서식 파일에 표시 되는 순서를 제어 하는 SortPriority를 설정 합니다 **새 항목 추가** 대화 상자. 더 큰 SortPriority 값 템플릿 목록에서 앞에 표시 됩니다.|  
   
 ### <a name="registering-file-filters"></a>파일 필터를 등록합니다.  
- 필요에 따라 필터를 등록할 수 있습니다는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 파일 이름에 대 한 프롬프트를 사용 합니다. 예를 들어, 합니다 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 필터링 합니다는 **파일 열기** 대화 상자는:  
+ 필요에 따라 필터를 등록할 수 있습니다는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 파일 이름에 대 한 프롬프트를 사용 합니다. 예를 들어 합니다 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 필터링 합니다 **파일 열기** 대화 상자는:  
   
  **Visual C# 파일 (\*.cs\*.resx,\*.settings,\*.xsd 인데\*.wsdl);\*합니다. cs\*.resx,\*.settings,\*.xsd 인데\*.wsdl)**  
   
