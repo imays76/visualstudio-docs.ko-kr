@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5725dc2be204ae3b657a857c5a358a29b8c3709
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543714"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881139"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Windows 스토어 앱에 대한 Visual Studio 디버그 세션에서 스토어 앱의 실행 제어(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -301,7 +301,7 @@ ms.locfileid: "47543714"
   
     -   **익명 함수** 는 `module` 함수에서 실행이 일시 중단된 줄을 표시합니다. 호출 스택의 맨 위입니다.  
   
-4.  **example5_d 함수에 도달할 때까지 함수를 한 단계씩 코드 실행합니다.** 바로 가기 메뉴에서 **한 단계씩 코드 실행** 메뉴에서 **디버깅 시작** (키보드: **F11**)을 선택하여 example5_d 함수의 진입점에 도달할 때까지 호출 경로에서 호출을 실행합니다. 함수에서 함수를 호출할 때마다 호출 함수의 줄 번호가 저장되고 호출된 함수는 스택의 맨 위에 배치됩니다. 호출 함수의 줄 번호는 호출 함수가 실행을 일시 중단한 지점입니다. 노란색 화살표는 현재 실행 중인 함수를 가리킵니다.  
+4.  **example5_d 함수에 도달할 때까지 함수를 한 단계씩 코드 실행합니다.** 선택 **한 단계씩 코드 실행** 에 **디버그** 메뉴 (키보드: **F11**) 하 여 example5_d 함수의 진입점에 도달할 때까지 호출 경로에서 호출을 실행 합니다. 함수에서 함수를 호출할 때마다 호출 함수의 줄 번호가 저장되고 호출된 함수는 스택의 맨 위에 배치됩니다. 호출 함수의 줄 번호는 호출 함수가 실행을 일시 중단한 지점입니다. 노란색 화살표는 현재 실행 중인 함수를 가리킵니다.  
   
      ![호출 스택 창](../debugger/media/dbg-jsnav-callstack-windows.png "DBG_JSNAV_CallStack_windows")  
   
