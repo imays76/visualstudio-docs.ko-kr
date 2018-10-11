@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f52834b1983b808a2da57795dc2c5653511f88
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058713"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073937"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 원격 디버깅 모니터는 제대로에 설정 되지 않은 원격 컴퓨터 또는 원격 컴퓨터에 네트워크 문제 또는 방화벽으로 인해 액세스할 수 없는 때문에이 메시지가 나타날 수 있습니다.
@@ -116,7 +116,7 @@ Windows XP 및 Windows 7에 특정 레거시 문제를 수 있습니다. 이 참
 
 원격 컴퓨터 이름을 사용 하 여 연결할 수 없는 경우 IP 주소를 대신 사용해 보세요. 사용할 수 있습니다 `ipconfig` IPv4 주소를 가져오려면 원격 컴퓨터의 명령줄에서. 호스트 파일을 사용 하는 경우 올바르게 구성 되어 있는지 확인 합니다.
 
-실패할 경우 원격 컴퓨터에 네트워크에 액세스할 수 있는지 확인 하십시오 ([ping](https://technet.microsoft.com/en-us/library/cc732509(v=ws.10).aspx) 원격 컴퓨터). 인터넷을 통한 원격 디버깅 지원 되지 않는 일부 Microsoft Azure로의 시나리오에서 제외 합니다.
+실패할 경우 원격 컴퓨터에 네트워크에 액세스할 수 있는지 확인 하십시오 ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) 원격 컴퓨터). 인터넷을 통한 원격 디버깅 지원 되지 않는 일부 Microsoft Azure로의 시나리오에서 제외 합니다.
   
 ### <a name="server_incorrect"></a> 서버 이름이 잘못 되었거나 원격 디버거를 사용 하 여 방해 하는 타사 소프트웨어
 
@@ -153,7 +153,7 @@ Visual Studio에서 프로젝트 속성을 확인 하 고 서버 이름이 올�
 ### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>로컬 및 원격 컴퓨터의 인증 모드가 서로 다름  
  로컬 및 원격 컴퓨터에서 동일한 인증 모드를 사용해야 합니다. 이 문제를 해결하려면 두 컴퓨터에서 모두 동일한 인증 모드를 사용 중인지 확인합니다. 인증 모드를 변경할 수 있습니다. 원격 디버거 창에서로 이동 합니다 **도구 > 옵션** 대화 상자.
   
- 인증 모드에 대한 자세한 내용은 [Windows 인증 개요](https://technet.microsoft.com/en-us/library/hh831472.aspx)를 참조하세요.   
+ 인증 모드에 대한 자세한 내용은 [Windows 인증 개요](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))를 참조하세요.   
   
 ### <a name="anti-virus-software-is-blocking-the-connections"></a>바이러스 백신 소프트웨어가 연결을 차단함  
  Windows 바이러스 백신 소프트웨어는 원격 디버거 연결을 허용하지만 일부 타사 바이러스 백신 소프트웨어가 차단할 수도 있습니다. 이러한 연결을 허용하는 방법을 알아보려면 해당 바이러스 백신 소프트웨어에 대한 설명서를 확인합니다.  
@@ -168,4 +168,4 @@ Visual Studio에서 프로젝트 속성을 확인 하 고 서버 이름이 올�
  더 많은 원격 디버거 도움말을 보려면 원격 디버거의 도움말 페이지를 엽니다 (**도움말 > 사용량** 원격 디버거의).
   
 ## <a name="see-also"></a>참고 항목  
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a0a235062b24ab940057a020ce3f9e20ceaebaa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ac8c8bb1b206461749b20660d8131f747fd637de
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279585"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074119"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>오류: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.
 이 오류 메시지는 Visual Studio가 원격 컴퓨터에서 Visual Studio 원격 디버깅 모니터의 올바른 인스턴스를 찾을 수 없음을 의미합니다. 원격으로 디버깅을 수행하려면 Visual Studio 원격 디버깅 모니터를 설치해야 합니다. 다운로드 하 고 원격 디버거를 설정 하는 방법에 대 한 내용은 [원격 디버깅](../debugger/remote-debugging.md)합니다.  
@@ -38,13 +38,13 @@ ms.locfileid: "44279585"
  다음 섹션에서는 이 메시지가 수신되는 몇 가지 다른 이유 및 문제를 해결하기 위해 수행할 수 있는 작업을 보여 줍니다.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>원격 컴퓨터에 연결할 수 없음  
- 원격 컴퓨터를 [ping](https://technet.microsoft.com/en-us/library/ee624059\(v=ws.10\).aspx) 하려고 합니다. Ping에 응답 하지 않으면 원격 도구 중 하나를 연결할 수 없습니다. 원격 컴퓨터를 다시 부팅하거나 네트워크에서 올바르게 구성되었는지 확인합니다.  
+ 원격 컴퓨터를 [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) 하려고 합니다. Ping에 응답 하지 않으면 원격 도구 중 하나를 연결할 수 없습니다. 원격 컴퓨터를 다시 부팅하거나 네트워크에서 올바르게 구성되었는지 확인합니다.  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>원격 디버거 버전이 Visual Studio의 버전과 일치 하지  
  로컬로 실행하는 Visual Studio 버전이 원격 컴퓨터에서 실행되는 원격 디버깅 모니터 버전과 일치해야 합니다. 이 문제를 해결하려면 일치하는 버전의 원격 디버깅 모니터를 다운로드하여 설치합니다. [다운로드 센터](http://www.microsoft.com/en-us/download) 로 이동하여 올바른 버전의 원격 디버거를 찾습니다.  
   
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>로컬 및 원격 컴퓨터의 인증 모드가 서로 다름  
- 로컬 및 원격 컴퓨터에서 동일한 인증 모드를 사용해야 합니다. 이 문제를 해결하려면 두 컴퓨터에서 모두 동일한 인증 모드를 사용 중인지 확인합니다. 인증 모드에 대한 자세한 내용은 [Windows 인증 개요](https://technet.microsoft.com/en-us/library/hh831472.aspx)를 참조하세요.  
+ 로컬 및 원격 컴퓨터에서 동일한 인증 모드를 사용해야 합니다. 이 문제를 해결하려면 두 컴퓨터에서 모두 동일한 인증 모드를 사용 중인지 확인합니다. 인증 모드에 대한 자세한 내용은 [Windows 인증 개요](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))를 참조하세요.  
   
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>원격 디버거가 다른 사용자 계정으로 실행되고 있음  
  다음 방법 중 하나를 사용하여 이 문제를 해결할 수 있습니다.  
