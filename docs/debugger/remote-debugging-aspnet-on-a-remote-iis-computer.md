@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d9515d208f2ab4bb8c429d5063e5134676c71c24
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bcb0db3a6eab91c517ce731ddf6e201d5a73f1f8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785959"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101073"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Visual Studio 2017에서 원격 IIS 컴퓨터의 원격 디버그 ASP.NET Core
 IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 고 앱을 배포할 컴퓨터에서 원격 도구를 실행 한 다음 Visual Studio에서 실행 중인 앱에 연결 합니다.
@@ -147,12 +147,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
 이 자습서에서는 Visual Studio 2017을 사용 하는 것입니다.
 
-원격 디버거 다운로드 페이지를 여는 데 문제가 있으면 확인할 [파일 다운로드를 차단 해제](../debugger/remote-debugging.md#unblock_msvsmon) 도움말에 대 한 합니다.
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> 일부 시나리오에서는 파일 공유에서 원격 디버거를 실행 하는 것이 가장 효율적일 수 있습니다. 자세한 내용은 [파일 공유에서 원격 디버거 실행](../debugger/remote-debugging.md#fileshare_msvsmon)합니다.
   
 ## <a name="BKMK_setup"></a> Windows Server에서 원격 디버거 설정
 
