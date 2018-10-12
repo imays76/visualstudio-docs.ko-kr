@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: cc889accc116fb2115ae56155a190ed6ea2d3fc0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 821da7c5d131acea62e944055ec6c450e4bc5154
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797854"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101110"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Visual Studio 2017에서 Azure에는 IIS에서 ASP.NET Core 원격 디버그
 
@@ -183,8 +183,6 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 ### <a name="BKMK_msvsmon"></a> 다운로드 하 여 Windows Server에서 원격 도구 설치
 
 이 자습서에서는 Visual Studio 2017을 사용 하는 것입니다.
-
-원격 디버거 다운로드 페이지를 여는 데 문제가 있으면 확인할 [파일 다운로드를 차단 해제](../debugger/remote-debugging.md#unblock_msvsmon) 도움말에 대 한 합니다.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
