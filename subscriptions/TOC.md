@@ -17,7 +17,7 @@
 ## 구독자 혜택 사용
 ### 도구
 #### [Visual Studio IDE ](vs-ide-benefit.md)
-#### [Azure DevOps Services](vs-azure-devops.md)
+#### [Azure DevOps](vs-azure-devops.md)
 #### [Azure 크레딧](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
@@ -31,7 +31,7 @@
 ### [전문적인 개발](professional-development.md)
 #### [LinkedIn 학습](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Opsgility](vs-opsgility.md)
+#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Xamarin University 교육](vs-xamarin.md)
 #### [MSDN Magazine 구독](vs-msdn.md)

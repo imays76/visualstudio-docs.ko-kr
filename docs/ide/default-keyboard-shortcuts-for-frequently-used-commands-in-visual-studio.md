@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512550"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370980"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio에서 자주 사용되는 명령의 기본 바로 가기 키
 
@@ -150,7 +150,7 @@ ms.locfileid: "39512550"
 |보기.개체브라우저|**Ctrl+Alt+J**[전역]|
 |보기.출력|**Ctrl+Alt+O**[전역]|
 |보기.속성창|**F4**|
-|View.Refresh|**F5**[팀 탐색기, Team Foundation Build 정보 편집기]|
+|View.Refresh|**F5**[팀 탐색기]|
 |보기.서버탐색기|**Ctrl+Alt+S**[전역]|
 |보기.스마트태그표시|**Ctrl+.** [Global]<br /><br /> 또는 **Shift+Alt+F10**[전역, HTML 편집기 디자인 뷰]|
 |보기.솔루션탐색기|**Ctrl+Alt+L**[전역]|

@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 WhiteSource Bolt 구독을 활성
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279169"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542353"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 구독의 WhiteSource Bolt
 
@@ -45,7 +45,7 @@ ms.locfileid: "44279169"
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 혜택 확장 설치](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - 다음으로, 사용할 Azure DevOps Services 조직을 선택하고 **확인**을 클릭합니다.  (아직 Azure DevOps Services를 설정하지 않은 경우 [혜택](https://my.visualstudio.com/benefits) 페이지에서 Azure DevOps Services 혜택을 활성화합니다.)
+    - 다음으로, 사용할 Azure DevOps 조직을 선택하고 **확인**을 클릭합니다.  (아직 Azure DevOps Services를 설정하지 않은 경우 [혜택](https://my.visualstudio.com/benefits) 페이지에서 Azure DevOps Services 혜택을 활성화합니다.)
 
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 혜택 계정 확인](_img\vs-whitesource\vs-whitesource-confirm-account.png)
@@ -54,7 +54,7 @@ ms.locfileid: "44279169"
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 혜택 설치 완료](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Azure DevOps Services 프로젝트 대시보드를 열고 **Azure Pipelines** 메뉴를 클릭한 후 **WhiteSource Bolt**를 선택합니다.
+5.  Azure DevOps 프로젝트 대시보드를 열고 **Azure Pipelines** 메뉴를 클릭한 후 **WhiteSource Bolt**를 선택합니다.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 혜택 확장 추가](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 

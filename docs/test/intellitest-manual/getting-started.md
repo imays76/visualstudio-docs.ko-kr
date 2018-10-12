@@ -1,5 +1,5 @@
 ---
-title: 단위 테스트 만들기 명령을 사용하여 단위 테스트 메서드 스텁 만들기
+title: IntelliTest 소개
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 72bba467bae5528333b520bdb40f5f4593982df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 37246d3dc612a44057c21f41145414f60bac0860
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966502"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135475"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Microsoft IntelliTest 시작
 

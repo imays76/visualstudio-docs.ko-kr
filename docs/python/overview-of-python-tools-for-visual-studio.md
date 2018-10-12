@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef83d9caebbeea1496a627282ba2c30b47cc0e22
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552112"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029149"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
@@ -30,7 +30,7 @@ Python은 현재 Mac용 Visual Studio에서 지원되지 않지만 Visual Studio
 
 - [설치 지침](installing-python-support-in-visual-studio.md)에 따라 Python 워크로드를 설치합니다.
 - 이 문서의 섹션을 통해 Visual Studio의 Python 기능을 숙지합니다. Visual Studio의 Python 소개 [비디오 시리즈(Microsoft Virtual Academy)를 시청](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)할 수 있습니다(총 22분).
-- 빠른 시작을 하나 이상 수행하여 프로젝트를 만듭니다. 확실하지 않은 경우 [Flask를 사용하여 웹앱 만들기](../ide/quickstart-python.md?context=visualstudio/python/default)부터 시작합니다.
+- 빠른 시작을 하나 이상 수행하여 프로젝트를 만듭니다. 확실하지 않은 경우 [Flask를 사용하여 웹앱 만들기](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)부터 시작합니다.
 - 전체 종단 간 환경을 위한 [Visual Studio에서 Python 작업](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 자습서를 수행합니다.
 
 ## <a name="support-for-multiple-interpreters"></a>다중 인터프리터 지원.
@@ -45,7 +45,7 @@ Visual Studio의 컨텍스트 내에서 Python을 대화형으로 실행하려�
 
 - 비디오(2분 35초): [Python 환경 관리](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
 - Docs: [Python 환경 관리](managing-python-environments-in-visual-studio.md)
-- Docs: [Python 환경 창 참조](python-environments-window-tab-reference.md)
+- Docs: [Python 환경 참조](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>다양한 편집 기능, IntelliSense 및 코드 이해
 

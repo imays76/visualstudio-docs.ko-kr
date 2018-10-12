@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독을 구입하는 방법
+title: Visual Studio 클라우드 구독을 구매하는 방법
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
@@ -9,12 +9,12 @@ description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e183b74e326efa65b810f7f46fd198e43aa796bf
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 878a335f5b576ee3ccf439b35e8a8adc861a9864
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289307"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495663"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입
 
@@ -25,6 +25,9 @@ ms.locfileid: "43289307"
 ## <a name="before-you-start"></a>시작하기 전에
 
 *   구매를 청구하려면 [Azure 구독](https://azure.microsoft.com/pricing/purchase-options/)이 필요합니다. Visual Studio Marketplace에서 첫 번째 구매 전에 또는 첫 번째 구매를 진행하면서 [등록](https://portal.azure.com)할 수 있습니다.
+
+## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>누가 Visual Studio 클라우드 구독을 구매할 수 있나요?
+Azure 구독에 대한 [소유자 또는 참가자 액세스 권한](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)이 있는 누구나 클라우드 구독을 구매할 수 있습니다.  
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>클라우드 구독 구입 방법
 

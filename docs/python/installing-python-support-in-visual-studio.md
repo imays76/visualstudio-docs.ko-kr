@@ -1,7 +1,7 @@
 ---
 title: Python 지원 설치
 description: 옵션 및 설치 위치를 포함하여 Visual Studio 2017, 2015, 2013, 2012 및 2010에서 PTVS(Visual Studio용 Python 도구)를 설치하는 방법입니다.
-ms.date: 06/26/2018
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626906"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168372"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 지원 설치 방법
 
@@ -25,8 +25,6 @@ Visual Studio용 Python 지원(Visual Studio용 Python 도구 또는 PTVS라고�
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 및 이전 버전](#visual-studio-2013-and-earlier)
-
-Visual Studio 2015 이전 버전의 경우 별도로 선택한 [Python 인터프리터도 설치](installing-python-interpreters.md)해야 합니다(Python 3.5 이전 버전, 3.6+는 지원되지 않으며 **지원되지 않는 Python 버전 3.6**과 같은 메시지가 표시됨). 같은 페이지는 Visual Studio 2017에 기존 Python 인터프리터 추가를 위한 지침도 포함합니다.
 
 설치 단계를 따른 후 Python 지원을 신속하게 테스트하려면 **Alt**+**I**를 누르고 `2+2`를 입력하여 **Python 대화형** 창을 엽니다. `4`의 출력이 표시되지 않으면 수행한 단계를 다시 확인합니다.
 
@@ -96,7 +94,7 @@ Visual Studio에서 Python 설치 또는 실행 문제가 발생하는 경우 �
 
     ![Visual Studio 2015 설치 관리자의 PTVS 옵션](media/installation-vs2015.png)
 
-1. Visual Studio 설치가 완료되면 [원하는 Python 인터프리터를 설치](installing-python-interpreters.md)합니다. 이미 인터프리터가 설치되어 있고 Visual Studio에서 이를 자동으로 검색하지 않는 경우 [기존 환경 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)을 참조하세요.
+1. Visual Studio 설치가 완료되면 [원하는 Python 인터프리터를 설치](installing-python-interpreters.md)합니다. Visual Studio 2015는 Python 3.5 이하만 지원합니다. 이후 버전에서는 **지원되지 않는 Python 버전 3.6**과 같은 메시지를 생성합니다. 이미 인터프리터가 설치되어 있고 Visual Studio에서 이를 자동으로 검색하지 않는 경우 [기존 환경 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)을 참조하세요.
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 및 이전 버전
 

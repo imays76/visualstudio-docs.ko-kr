@@ -2,7 +2,7 @@
 title: Visual Studio를 사용하여 C#으로 ASP.NET Core 웹앱 만들기
 description: C# 및 ASP.NET Core를 사용하여 단계별로 Visual Studio에서 간단한 Hello World 웹앱을 만드는 방법을 알아봅니다.
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135613"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028938"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -39,9 +39,9 @@ ms.locfileid: "46135613"
 
 1. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자의 위쪽 드롭다운 메뉴에 **ASP.NET Core 2.0** 이 표시되는지 확인합니다. 그런 다음, **웹 응용 프로그램**을 선택하고 **확인**을 선택합니다.
 
-  ![Visual Studio에서 C# ASP.NET Core 프로젝트를 만드는 방법을 보여주는 애니메이션 처리된 .gif 파일 보기](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![Visual Studio에서 C# ASP.NET Core 프로젝트를 만드는 방법을 보여주는 애니메이션 처리된 .gif 파일 보기](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  곧 Visual Studio에서 프로젝트 파일이 열립니다.
+   곧 Visual Studio에서 프로젝트 파일이 열립니다.
 
    > [!NOTE]
    > **.NET Core** 프로젝트 템플릿 범주가 표시되지 않으면 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다.
@@ -58,13 +58,15 @@ ms.locfileid: "46135613"
 
 다음으로, "Hello World" 웹앱을 만들고 실행합니다. 방법은 다음과 같습니다.
 
-1. **솔루션 탐색기**에서 **Pages** 폴더를 확장한 다음, **About.cshtml**을 선택합니다.
+1. Visual Studio의 **솔루션 탐색기**에서 **Pages** 폴더를 확장합니다. 그런 다음, **About.cshtml**을 선택합니다.
 
-   이 파일은 웹앱에서 이름이 **정보**로 이름이 지정된 페이지에 해당합니다.
+   ![솔루션 탐색기에서 About.cshtml 파일 선택](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   이 파일은 웹 브라우저에서 실행되는 웹앱에서 **정보**라는 페이지에 해당합니다.
 
    ![웹앱의 정보 페이지](../ide/media/csharp-aspnet-about-page.png)
 
-1. “추가 정보” 텍스트를 “**Hello World!**”로 변경합니다.
+1. Visual Studio 코드 편집기에서 “추가 정보” 텍스트를 “**Hello World!**”로 변경합니다.
 
 1. **솔루션 탐색기**에서 **About.cshtml**을 확장한 다음, **About.cshtml.cs**를 선택합니다.
 
@@ -72,12 +74,12 @@ ms.locfileid: "46135613"
 
 1. **IIS Express**를선 택하거나 **Ctrl**+**F5**를 눌러 앱을 실행하고 웹 브라우저에서 엽니다.
 
-  ![Visual Studio에서 C# ASP.NET Core 웹앱을 만들고 실행하는 방법을 보여주는 애니메이션 처리된 .gif 파일 보기](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![Visual Studio에서 C# ASP.NET Core 웹앱을 만들고 실행하는 방법을 보여주는 애니메이션 처리된 .gif 파일 보기](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > **‘IIS Express’ 웹 서버에 연결할 수 없습니다**라는 오류 메시지가 발생하면 Visual Studio를 닫은 후 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 엽니다. 그런 다음 응용 프로그램을 다시 실행합니다.
 
-1. **정보** 페이지에 업데이트된 텍스트가 포함되는지 확인합니다.
+1. 웹 브라우저에서 **정보** 페이지에 업데이트된 텍스트가 포함되는지 확인합니다.
 
 1. 웹 브라우저를 닫습니다.
 

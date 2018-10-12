@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125004"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548207"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
@@ -312,9 +312,11 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 ## <a name="run-the-app"></a>앱 실행
 
-1. 크롬이 현재 디버그 대상으로 선택되었는지 확인 합니다.
+1. 현재 디버그 대상으로 Chrome을 선택합니다.
 
     ![디버그 대상으로 크롬 선택](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
 
 1. 앱을 실행하려면 **F5**(**디버그** > **디버깅 시작**) 키 또는 녹색 화살표 단추를 누릅니다.
 
@@ -361,6 +363,8 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 1. 다음 그림에 표시된 것처럼 Visual Studio로 전환하고 `render()` 기능의 *app-bundle.js* 코드에서 중단점을 설정합니다.
 
     ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+
+    *app-bundle.js*에서 `render()` 함수를 찾으려면 **Ctrl**+**F**를 사용합니다(**편집** > **찾기 및 바꾸기** > **빠른 찾기** 사용).
 
 1. Visual Studio에서 디버그 대상으로 선택된 크롬을 사용하여 **Ctrl**+**F5**(**디버그** > **디버깅하지 않고 시작**) 키를 눌러 브라우저에서 앱을 실행합니다.
 

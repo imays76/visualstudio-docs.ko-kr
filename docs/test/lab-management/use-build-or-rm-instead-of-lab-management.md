@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 자동화된 테스트를 위해 Build 또는 Release Management 사용
+title: 자동화된 테스트를 위해 빌드 또는 릴리스 관리 사용
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320620"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135612"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>자동화된 테스트를 위해 Lab Management 대신 Build 및 Release Management 사용
+# <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>자동화된 테스트를 위해 Lab Management 대신 Azure Test Plans 사용
 
 이 항목에서는 자동화된 테스트 또는 빌드-배포-테스트 자동화에 MTM(Microsoft Test Manager) 및 Lab Management를 사용할 경우 TFS(Team Foundation Server) 및 Azure Test Plans의 [빌드 및 릴리스](/azure/devops/pipelines/index?view=vsts) 기능을 사용하여 동일한 목표를 달성하는 방법을 설명합니다.
 
@@ -64,7 +64,7 @@ Lab Center의 셀프 서비스 프로비전 기능에는 두 가지 목표가 �
 | 컴퓨터에 연결합니다. | 환경 뷰어에서 랩 환경을 엽니다. | SCVMM 관리 콘솔을 사용하여 직접 가상 컴퓨터에 연결합니다. 또는 가상 컴퓨터의 IP 주소 또는 DNS 이름을 사용하여 원격 데스크톱 세션을 엽니다. |
 | 환경 검사점을 만들거나 환경을 새로운 검사점으로 복원합니다. | 환경 뷰어에서 랩 환경을 엽니다. 검사점을 만들거나 이전 검사점으로 복원하는 옵션을 선택합니다. | SCVMM 관리 콘솔을 사용하여 컴퓨터에서 이러한 작업을 수행합니다. 또는 더 큰 자동화의 일부로 이러한 단계를 수행하려면 [SCVMM 통합 확장](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)의 검사점 작업을 환경의 일부로 릴리스 정의에 포함합니다. |
 
-## <a name="creation-of-network-isolated-environments"></a>네트워크 격리 환경 만들기
+## <a name="create-network-isolated-environments"></a>네트워크 격리 환경 만들기
 
 네트워크 격리 랩 환경은 네트워크 충돌 없이 안전하게 복제할 수 있는 SCVMM 가상 컴퓨터 그룹입니다. 이 작업은 네트워크 인터페이스 집합을 사용하여 개인 네트워크에서 가상 컴퓨터를 구성하고 또 다른 네트워크 인터페이스 카드 집합을 사용하여 공용 네트워크에서 가상 컴퓨터를 구성한 일련의 명령을 사용하여 MTM에서 수행되었습니다.
 

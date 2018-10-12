@@ -2,7 +2,7 @@
 title: Visual Studio에서 C# 및 ASP.NET Core 시작
 description: C#을 사용하여 단계별로 Visual Studio에서 ASP.NET Core 웹앱을 만드는 방법을 알아봅니다.
 ms.custom: ''
-ms.date: 08/10/2018
+ms.date: 09/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -15,22 +15,22 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: fb1532a76d9bc530146ba5a0f563bcaa9389226c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627114"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496118"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>자습서: Visual Studio에서 C# 및 ASP.NET Core 시작
 
-Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자습서에서는 C# ASP.NET Core 웹앱을 만들고, 해당 앱을 변경하며, IDE의 일부 기능을 살펴보고, 앱을 실행합니다.
+Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자습서에서는 C# ASP.NET Core 웹앱을 만들고, 해당 앱을 변경하며, IDE의 일부 기능을 살펴본 후, 앱을 실행합니다.
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-먼저 ASP.NET Core 프로젝트를 만들 것입니다. 아무 것도 추가하지 않아도 웹 사이트에 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
+먼저 ASP.NET Core 프로젝트를 만들 것입니다. 아무것도 추가하지 않아도 모든 기능을 갖춘 웹 사이트에 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
 
 1. Visual Studio 2017을 엽니다.
 
@@ -38,7 +38,7 @@ Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자�
 
 3. 왼쪽 창의 **새 프로젝트** 대화 상자에서 **Visual C#**, **Web**을 차례로 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 응용 프로그램**을 선택합니다. 그런 다음, 파일 이름을 *MyCoreApp*으로 지정하고, **확인**을 선택합니다.
 
-   ![Visual Studio IDE의 새 프로젝트 대화 상자의 ASP.NET Core 웹 응용 프로그램 프로젝트 템플릿](../ide/media/csharp-aspnet-choose-template-name-mycoreapp-mvc.png)
+   ![Visual Studio IDE의 새 프로젝트 대화 상자의 ASP.NET Core 웹 응용 프로그램 프로젝트 템플릿](../ide/media/csharp-aspnet-choose-template-name-razor-mycoreapp-file.png)
 
 ### <a name="add-a-workload-optional"></a>(선택 사항) 워크로드 추가
 
@@ -48,7 +48,7 @@ Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자�
 
 1. **새 프로젝트** 대화 상자에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다.
 
-   ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크 선택](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크 선택](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
 1. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
@@ -66,107 +66,111 @@ Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자�
 
 ### <a name="add-a-project-template"></a>프로젝트 템플릿 추가
 
-1. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자에서 **웹 응용 프로그램모델-뷰-컨트롤러)** 프로젝트 템플릿을 선택합니다.
+1. **새 ASP.NET Core 웹 응용 프로그램** 대화 상자에서 **웹 응용 프로그램** 프로젝트 템플릿을 선택합니다.
 
-1. 상단 드롭다운 메뉴에 **ASP.NET Core 2.0**이 표시되는지 확인합니다. 그런 다음, **확인**을 선택합니다.
+1. 위쪽 드롭다운 메뉴에 **ASP.NET Core 2.1**이 표시되는지 확인합니다. 그런 다음, **확인**을 선택합니다.
 
-   ![새 ASP.NET Core 웹 응용 프로그램 대화 상자](../ide/media/new-project-csharp-aspnet-web-app-mvc.png)
+   ![새 ASP.NET Core 웹 응용 프로그램 대화 상자](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
 
 ### <a name="about-your-solution"></a>솔루션 정보
 
-이 솔루션은 앱을 다음과 같이 세 가지 주요 구성 요소로 구분하는 MVC(모델-뷰-컨트롤러) 아키텍처 패턴을 따릅니다. 
-
-* **M(모델)** 은 앱 데이터를 나타내는 클래스를 포함합니다. 모델 클래스는 유효성 검사 논리를 사용하여 해당 데이터의 비즈니스 규칙을 적용합니다. 일반적으로 모델 개체는 모델 상태를 검색하고 데이터베이스에 저장합니다.
-* **V(뷰)** 는 앱의 UI(사용자 인터페이스)를 표시하는 구성 요소입니다. 일반적으로 이 UI는 모델 데이터를 표시합니다.
-* **C(컨트롤러)** 는 브라우저 요청을 처리하는 클래스를 포함합니다. 모델 데이터를 검색하고 응답을 반환하는 뷰 템플릿을 호출합니다. MVC 앱에서 뷰는 정보만 표시합니다. 즉 컨트롤러가 사용자 입력 및 상호 작용을 처리하고 응답합니다.
-
-MVC 패턴을 통해 기존 모놀리식 응용 프로그램보다 테스트 및 업데이트가 용이한 앱을 만들 수 있습니다.
+이 솔루션은 **Razor 페이지** 디자인 패턴을 따릅니다. 이는 Razor 페이지 자체 내에 모델 및 컨트롤러 코드를 포함하도록 간소화된 [MVC(Model-View-Controller)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) 디자인 패턴과 다릅니다.
 
 ## <a name="tour-your-solution"></a>솔루션 둘러보기
 
- 1. 프로젝트 템플릿은 **MyCoreApp**이라는 단일 ASP.NET Core 프로젝트와 솔루션을 만듭니다. 프로젝트 노드를 확장하면 그 안의 콘텐츠가 표시됩니다.
+ 1. 프로젝트 템플릿은 _MyCoreApp_이라는 단일 ASP.NET Core 프로젝트와 솔루션을 만듭니다. 해당 콘텐츠를 보려면 **솔루션 탐색기** 탭을 선택합니다.
 
-    ![Visual Studio의 ASP.NET 솔루션 탐색기](../ide/media/csharp-aspnet-solution-explorer-mycoreapp-mvc.png)
+    ![Visual Studio for Razor Pages 솔루션에서 MyCoreApp으로 이름이 지정된 ASP.NET 솔루션 탐색기](../ide/media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
- 1. **컨트롤러** 폴더에서 *HomeController.cs* 파일을 엽니다.
+ 1. **Pages** 폴더를 확장한 후 *About.cshtml*을 확장합니다.
 
-     ![Visual Studio 솔루션 탐색기의 HomeController.cs 파일](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
+     ![Visual Studio 솔루션 탐색기의 About.cshtml 파일](../ide/media/csharp-aspnet-razor-solution-explorer-aboutcshtml.png)
 
- 1. *HomeController.cs* 파일을 봅니다.
+ 1. 코드 편집기에서 **About.cshtml** 파일을 봅니다.
 
-     ![Visual Studio 코드 창의 HomeController.cs](../ide/media/csharp-aspnet-home-controller-code.png)
+     ![Visual Studio 코드 편집기에서 About.cshtml 파일 보기](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
- 1. 이 프로젝트에는 각 컨트롤러에 매핑되는 하위 폴더를 포함하는 **Views** 폴더도 있습니다. 예를 들어 */Home/About* 경로에 대한 뷰 CSHTML 파일(HTML 확장)은 *Views/Home/About.cshtml*에 있습니다. 해당 파일을 엽니다.
+ 1. **About.cshtml.cs** 파일을 선택합니다.
 
-     ![Visual Studio 솔루션 탐색기의 About.cshtml 파일](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
+     ![Visual Studio 코드 편집기에서 About.cshtml.cs 파일 선택](../ide/media/csharp-aspnet-razor-solution-explorer-aboutcshtmlcs.png)
 
-    이 CSHTML 파일은 표준 태그와 인라인 C# 조합을 기준으로 HTML을 렌더링하기 위해 Razor 구문을 사용합니다.
+ 1. 코드 편집기에서 **About.cshtml.cs** 파일을 봅니다.
 
-     ![Visual Studio 코드 창의 About.cshtml](../ide/media/csharp-aspnet-about-cshtml-code.png)
+     ![Visual Studio 코드 편집기에서 About.cshtml 파일 보기](../ide/media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
-    >[!NOTE]
-    > Razor에 대한 자세한 내용은 [Razor 구문을 사용하여 C# 및 ASP.NET 시작](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) 페이지를 참조하세요.
+ 1. 프로젝트에는 웹 사이트의 루트인 **wwwroot** 폴더가 포함됩니다. 내용을 보려면 폴더를 확장합니다.
 
- 1. 프로젝트에는 웹 사이트의 루트인 **wwwroot** 폴더도 포함됩니다. 내용을 보려면 폴더를 확장합니다.
-
-     ![Visual Studio 솔루션 탐색기의 wwwroot 폴더](../ide/media/csharp-aspnet-solution-wwwroot.png)
+     ![Visual Studio 솔루션 탐색기의 wwwroot 폴더](../ide/media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
 
     원하는 경로에 직접 &mdash;CSS, 이미지 및 JavaScript 라이브러리와 같은&mdash; 정적 사이트 콘텐츠를 배치할 수 있습니다.
 
- 1. 런타임 시 프로젝트, 해당 패키지 및 앱을 관리하는 여러 구성 파일이 있습니다. 예를 들어 기본 응용 프로그램 [구성](/aspnet/core/fundamentals/configuration)은 *appsettings.json*에 저장됩니다. 하지만 *appsettings.Development.json*을 사용하여 이러한 설정을 재정의할 수 있습니다. **appsettings.json** 파일을 확장하여 **appsettings.Development.json** 파일을 봅니다.
+ 1. 또한 프로젝트에는 런타임에 웹앱을 관리하는 구성 파일이 포함됩니다. 기본 응용 프로그램 [구성](/aspnet/core/fundamentals/configuration)은 *appsettings.json*에 저장됩니다. 하지만 *appsettings.Development.json*을 사용하여 이러한 설정을 재정의할 수 있습니다. **appsettings.json** 파일을 확장하여 **appsettings.Development.json** 파일을 봅니다.
 
-     ![Visual Studio 솔루션 탐색기의 구성 파일](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
+     ![Visual Studio 솔루션 탐색기의 구성 파일](../ide/media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
 ## <a name="run-debug-and-make-changes"></a>실행, 디버그 및 변경
 
-1. IDE에서 **IIS Express** 단추를 선택하여 디버그 모드에서 앱을 빌드 및 실행합니다. 또는 **F5**를 누르거나 메뉴 모음에서 **디버그 > 디버깅 시작**을 선택합니다.
+1. IDE에서 **IIS Express** 단추를 선택하여 디버그 모드에서 앱을 빌드 및 실행합니다. 또는 **F5** 키를 누르거나 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택합니다.
 
-     ![Visual Studio에서 IIS Express 단추 선택](../ide/media/csharp-aspnet-iis-express-button.png)
+     ![Visual Studio에서 IIS Express 단추 선택](../ide/media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
      > **'IIS Express' 웹 서버에 연결할 수 없습니다**라는 오류 메시지가 발생하면 Visual Studio를 닫은 후 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 엽니다. 그런 다음 응용 프로그램을 다시 실행합니다.
 
-1. Visual Studio가 브라우저 창을 시작합니다. **About**을 선택합니다.
+1. Visual Studio가 브라우저 창을 시작합니다. 메뉴 모음에 **홈**, **정보** 및 **연락처** 페이지가 표시됩니다. 표시되지 않으면 “햄버거” 메뉴 항목을 선택하여 표시합니다.
 
-   ![앱의 브라우저 창에서 About 선택](../ide/media/csharp-aspnet-browser-page.png)
+    ![웹앱의 메뉴 모음에서 “햄버거” 메뉴 항목 선택](../ide/media/csharp-aspnet-razor-browser-page.png)
 
-   무엇보다 브라우저의 **About** 페이지는 *HomeController.cs* 파일에서 설정된 텍스트를 렌더링합니다.
+1. 메뉴 모음에서 **정보**를 선택합니다.
 
-   ![About 페이지에서 텍스트 보기](../ide/media/csharp-aspnet-browser-page-about.png)
+   ![앱의 브라우저 창 메뉴 모음에서 정보 선택](../ide/media/csharp-aspnet-razor-browser-page-about-menu.png)
 
-1. 브라우저 창을 열어둔 상태에서 Visual Studio로 돌아갑니다. 아직 열려 있지 않으면 *Controllers/HomeController.cs*를 엽니다.
+   무엇보다 브라우저의 **정보** 페이지는 *About.cshtml* 파일에서 설정된 텍스트를 렌더링합니다.
 
-   ![Visual Studio 솔루션 탐색기에서 HomeController.cs 파일 열기](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
+   ![About 페이지에서 텍스트 보기](../ide/media/csharp-aspnet-razor-browser-page-about.png)
 
-1. **About** 메서드의 첫 줄에 중단점을 설정합니다. 이를 위해 여백을 클릭하거나 줄에 커서를 두고 **F9**를 누릅니다.
+1. 브라우저 창을 열어둔 상태에서 Visual Studio로 돌아갑니다.
 
-   이 줄은 *Views/Home/About.cshtml*의 CSHTML 페이지에서 렌더링되는 **ViewData** 컬렉션에 일부 데이터를 설정합니다.
+1. Visual Studio에서 **About.cshtml**을 선택합니다. 그런 다음, _changed_ 단어를 삭제하고 이 위치에 _file and directory_ 단어를 추가합니다.
 
-   ![About.cshtml에서 About 메서드의 첫 줄에 중단점을 설정합니다.  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
+    ![About.cshtml 파일에서 텍스트 변경](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
-1. 브라우저로 돌아가 **About** 페이지를 새로 고칩니다. 이렇게 하면 Visual Studio에서 중단점이 트리거됩니다.
+1. **About.cshtml.cs**를 선택합니다. 그런 다음, 다음 바로 가기를 사용하여 파일 맨 위에서 `using` 지시문을 정리합니다.
 
-1. Visual Studio에서 **ViewData** 멤버 위에 마우스를 가져가 데이터를 확인합니다.
+   회색으로 표시된 `using` 지시문을 선택하면 [빠른 작업](../ide/quick-actions.md) 전구 메뉴가 캐럿 바로 아래 또는 왼쪽 여백에 나타납니다. 전구 메뉴를 선택한 후 **불필요한 Using 제거**를 선택합니다.
 
-   ![자세한 정보를 보기 위해 About 메서드의 ViewData 멤버 보기](../ide/media/csharp-aspnet-home-controller-view-breakpoint-info.png)
+   ![About.cshtml.cs 파일에서 불필요한 Using 제거](../ide/media/csharp-aspnet-razor-remove-unnecessary-usings.png)
 
-1. 중단점을 추가하는 데 사용한 것과 같은 방법으로 응용 프로그램 중단점을 제거합니다.
+     Visual Studio가 파일에서 불필요한 `using` 지시문을 삭제합니다.
 
-1. *Views/Home/About.cshtml*을 엽니다.
+1. 그런 다음, `OnGet()` 메서드에서 본문을 다음 코드로 변경합니다.
 
-   ![솔루션 탐색기에서 About.cshtml 선택](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
+     ```csharp
+     public void OnGet()
+     {
+         string directory = Environment.CurrentDirectory;
+     Message = String.Format("Your directory is {0}.", directory);
+     }
+    ```
+1. **환경** 및 **문자열** 아래에 두 개의 물결선 밑줄이 표시됩니다. 이러한 형식은 범위에 없으므로 물결선 밑줄이 표시됩니다.
 
-1. **"additional"** 텍스트를 **"changed"** 으로 변경하여 파일을 저장합니다.
+   ![OnGet 메서드에 물결선 밑줄로 표시된 오류](../ide/media/csharp-aspnet-razor-add-new-on-get-method.png)
 
-   !["additional" 텍스트를 "changed"로 표시되게 변경](../ide/media/csharp-aspnet-about-cshtml-code-change.png)
+    **오류 목록** 도구 모음을 열고 같은 오류가 나열되는지 확인합니다. (**오류 목록** 도구 모음이 표시되지 않으면 메뉴 모음에서 **보기** > **오류 목록**을 선택합니다.)
 
-1. 브라우저 창으로 돌아가 업데이트된 텍스트를 확인합니다. 변경한 텍스트가 표시되지 않으면 브라우저를 새로 고칩니다.
+   ![Visual Studio의 오류 목록](../ide/media/csharp-aspnet-razor-error-list.png)
 
-    ![브라우저 창을 새로 고쳐 변경된 텍스트 확인](../ide/media/csharp-aspnet-browser-page-about-changed.png)
+1. 이 문제를 해결해 보겠습니다. 코드 편집기에서 오류가 있는 줄에 커서를 놓고 왼쪽 여백에서 [빠른 작업] 전구 메뉴를 선택합니다. 그런 다음, 드롭다운 메뉴에서 **using System;** 을 선택하여 이 지시문을 파일 맨 위에 추가하고 오류를 해결합니다.
 
-1. 도구 모음에서 **디버깅 중지** 단추를 선택하여 디버깅을 중지합니다. 또는 **Shift**+**F5**를 누르거나 메뉴 모음에서 **디버그** > **디버깅 중지**를 선택합니다.
+   ![“using System;” 지시문 추가](../ide/media/csharp-aspnet-razor-add-usings.png)
 
-   ![도구 모음에서 디버깅 중지 단추 선택](../ide/media/csharp-aspnet-stop-debugging.png)
+1. **Ctrl**+**S**를 눌러 변경 내용을 저장하고 웹 브라우저에서 앱을 새로 고칩니다.
+
+1. 웹 사이트 위쪽에서 **정보**를 선택하여 변경 내용을 확인합니다.
+
+   ![변경 내용이 포함된 업데이트된 정보 페이지 표시](../ide/media/csharp-aspnet-razor-browser-page-about-changed.png)
+
+1. 웹 브라우저를 닫고, **Shift**+**F5**를 눌러 디버그 모드를 중지한 다음, Visual Studio를 닫습니다.
 
 ## <a name="quick-answers-faq"></a>빠른 답변 FAQ
 
@@ -188,9 +192,6 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
 축하합니다. 이 자습서를 마쳤습니다. C#, ASP.NET Core 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. C# 및 ASP.NET을 사용하여 웹앱 또는 웹 사이트를 만드는 방법에 대한 자세한 내용은 다음 자습서를 계속 진행합니다.
 
-> [!div class="nextstepaction"]
-> [ASP.NET Core를 사용하여 MVC 웹앱 만들기](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x)
->
 > [!div class="nextstepaction"]
 > [ASP.NET Core를 사용하여 Razor 페이지 웹앱 만들기](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)를 참조하세요.
 
