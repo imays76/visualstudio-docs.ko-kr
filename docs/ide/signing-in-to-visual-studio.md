@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284187"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542496"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
@@ -36,7 +36,7 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
 - **Visual Studio 평가 기간 연장** – 평가 기간을 30일로 제한하지 않고 추가로 90일 동안 Visual Studio Professional 또는 Visual Studio Enterprise를 사용할 수 있습니다.
 
-- **Visual Studio 구독 또는 Azure DevOps Services 조직과 연결된 계정을 사용하는 경우 Visual Studio를 잠금 해제합니다**. [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)을 참조하세요.
+- **Visual Studio 구독 또는 Azure DevOps 조직과 연결된 계정을 사용하는 경우 Visual Studio를 잠금 해제합니다**. [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)을 참조하세요.
 
 - IDE에서 동일한 계정의 자격 증명을 묻는 메시지를 다시 표시하지 않고 **Azure 및 Azure DevOps Services 등의 서비스에 자동으로 연결**합니다.
 

@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279689"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612664"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 명령줄 옵션
 
@@ -54,6 +54,10 @@ ms.locfileid: "44279689"
 |**/ListSettingsProviders**|설치된 테스트 설정 공급자를 나열합니다.|
 |**/Blame**|테스트가 실행됨에 따라 추적하고, 테스트가 프로세스 크래시를 호스트하는 경우 크래시 발생 시 실행되었던 특정 테스트까지 포함하여 실행 시퀀스의 테스트 이름을 내보냅니다. 이 출력으로 더 손쉽게 잘못된 테스트를 격리하고 추가 항목을 진단할 수 있습니다. [추가 정보](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*파일 이름*]**|지정된 파일에 진단 추적 로그를 기록합니다.|
+|**/ResultsDirectory:[*path*]**|테스트 결과 디렉터리가 존재하지 않는 경우 지정된 경로에 생성됩니다.<br />예: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*parentProcessId*]**|현재 프로세스를 시작하는 일을 담당하는 부모 프로세스의 프로세스 ID입니다.|
+|**/Port:[*port*]**|소켓 연결 및 이벤트 메시지를 받기 위한 포트입니다.|
+|**/Collect:[*dataCollector friendlyName*]**|테스트 실행에 대한 데이터 수집기를 사용하도록 설정합니다. [추가 정보](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > 옵션 및 값은 대/소문자를 구분하지 않습니다.

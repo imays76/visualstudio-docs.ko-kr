@@ -14,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc0fcb1983d6cfa7a3fe9e1fffff7070c3caf3e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: faa0e17537f8f5b5e10b4d133615e3d82471c629
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36302860"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495884"
 ---
-# <a name="talk-to-us"></a>의견 보내기
+# <a name="visual-studio-product-feedback"></a>Visual Studio 제품 피드백
 
 제품과 설명서를 개선할 수 있는 아이디어를 보내 주세요. 항상 개인적으로 회신을 드릴 수는 없지만 피드백을 담당자에게 전해 드리겠습니다.
 

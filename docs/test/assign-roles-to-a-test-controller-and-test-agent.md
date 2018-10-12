@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 자동화된 테스트를 위해 테스트 컨트롤러 및 테스트 에이전트에 역할 할당
+title: 자동화된 테스트를 위해 테스트 컨트롤러 및 테스트 에이전트에 역할 할당
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280613"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370733"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>역할을 테스트 컨트롤러와 테스트 에이전트에 할당
 

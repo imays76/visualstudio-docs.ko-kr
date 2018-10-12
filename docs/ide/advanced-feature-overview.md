@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c32f63f6272d550604df79186ae7c54cfc3f22e
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 79fc62c4b48c6e2ee3ce959082f7f8ba6cb646c7
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320945"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542392"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017의 기능
 
@@ -106,7 +106,7 @@ Azure DevOps Services는 소프트웨어를 계획, 호스트, 자동화 및 배
 
 TFS(Team Foundation Server)는 Visual Studio용 응용 프로그램 수명 주기 관리 허브입니다. 개발 프로세스와 관련된 모든 사람이 단일 솔루션을 사용하여 참여할 수 있도록 해줍니다. TFS는 성격이 다른 팀과 프로젝트들을 관리하는 데 유용합니다.
 
-네트워크에 Azure DevOps Services 조직 또는 Team Foundation Server가 있는 경우 Visual Studio의 **팀 탐색기** 창을 통해 연결합니다. 이 창에서 코드를 소스 제어에 체크 인 또는 체크 아웃하고, 작업 항목을 관리하고, 빌드를 시작하고, 단체 방 및 작업 영역에 액세스할 수 있습니다. **빠른 실행** 상자나 **보기** > **팀 탐색기** 또는 **팀** > **연결 관리**의 주 메뉴에서 **팀 탐색기**를 열 수 있습니다.
+네트워크에 Azure DevOps 조직 또는 Team Foundation Server가 있는 경우 Visual Studio의 **팀 탐색기** 창을 통해 연결합니다. 이 창에서 코드를 소스 제어에 체크 인 또는 체크 아웃하고, 작업 항목을 관리하고, 빌드를 시작하고, 단체 방 및 작업 영역에 액세스할 수 있습니다. **빠른 실행** 상자나 **보기** > **팀 탐색기** 또는 **팀** > **연결 관리**의 주 메뉴에서 **팀 탐색기**를 열 수 있습니다.
 
 다음 이미지는 Azure DevOps Services에서 호스트되는 솔루션에 대한 **팀 탐색기** 창을 보여 줍니다.
 

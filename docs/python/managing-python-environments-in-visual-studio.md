@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 2c7706e635cc159b7ae85274d46c2be762926ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320828"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551265"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
@@ -78,7 +78,7 @@ Visual Studio 2017 버전 15.7 이상에서는 Conda 환경을 자동으로 검�
 ## <a name="the-python-environments-window"></a>Python 환경 창
 
 > [!Note]
-> 이 섹션에 표시된 스크린샷은 Visual Studio 15.8를 나타냅니다. Visual Studio의 버전에 따라 UI가 약간씩 다르게 표시될 수 있습니다.
+> 이 섹션에 표시된 스크린샷은 Visual Studio 15.8를 나타냅니다. Visual Studio의 버전에 따라 UI가 다르게 표시될 수 있습니다.
 
 Visual Studio에서 인식하는 환경이 **Python 환경** 창에 표시됩니다. 창을 열려면 다음 방법 중 하나를 사용합니다.
 

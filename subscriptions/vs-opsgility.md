@@ -3,38 +3,36 @@ title: Visual Studio 구독의 Opsgility 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 09/19/2018
 ms.topic: Get-Started-Article
 description: 선택한 Visual Studio 구독에 포함된 Opsgility 교육 혜택에 대해 알아봅니다.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0409eef71ebd97b98f93631b0229d5d8526362
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d27e3a10e60a22a026824fe5eae7f7f64bd07414
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280898"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495533"
 ---
-# <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Opsgility 혜택
+# <a name="the-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Opsgility 교육 혜택
 
-선택한 Visual Studio 구독에는 주문형 교육에 대한 1년 액세스 및 강사 진행 교육에 대한 15% 할인과 함께 실습, 인증 경로 등에 대한 액세스가 포함됩니다.
+선택된 Visual Studio 구독에는 라이브 랩 환경 및 인증 학습 경로 액세스를 통해 전문 주문형 교육에 최대 6개월 동안 액세스할 수 있습니다.
 
 ## <a name="activation-steps"></a>활성화 단계
 1.  [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
-2.  혜택 페이지의 도구 섹션에서 Opsgility 타일을 찾고 혜택 타일 아래쪽에 있는 **활성화** 링크를 클릭합니다.
-
-3.  Opsgility 혜택을 사용하려면 혜택 타일의 아래쪽에 있는 **코드 가져오기** 링크를 클릭합니다.   쿠폰 코드가 성공적으로 검색되었다는 알림을 받게 됩니다.  **활성화**를 클릭하여 계속합니다.
+2.  Skill Me Up 혜택을 사용하려면 혜택 타일의 아래쪽에 있는 **코드 가져오기** 링크를 클릭합니다.   쿠폰 코드가 성공적으로 검색되었다는 알림을 받게 됩니다.  **활성화**를 클릭하여 계속합니다.
     > [!div class="mx-imgBorder"]
     > ![Opsgility 혜택 타일](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
-4.  [Visual Studio Enterprise에 대한 Opsgility 온라인 교육](https://www.opsgility.com/vse) 방문 페이지로 리디렉션됩니다.  (지원 전문가와의 채팅 세션을 시작할 수 있는 기회를 제공받을 수 있습니다.  채팅을 시작하지 않으려면 해당 창을 최소화하면 됩니다.)  요청한 연락처 정보를 입력하고 **등록**을 클릭합니다.
+3.  [Visual Studio Enterprise에 대한 Opsgility 온라인 교육](https://www.opsgility.com/vse) 방문 페이지로 리디렉션됩니다.  (지원 전문가와의 채팅 세션을 시작할 수 있는 기회를 제공받을 수 있습니다.  채팅을 시작하지 않으려면 해당 창을 최소화하면 됩니다.)  요청한 연락처 정보를 입력하고 **등록**을 클릭합니다.
     > [!div class="mx-imgBorder"]
     > ![Opsgility 혜택 방문 페이지](_img\vs-opsgility\vs-opsgility-registration.png)
 
-5.  이것이 전부입니다!  학습을 시작할 준비가 되었습니다.  시작을 돕기 위해 페이지의 왼쪽에는 제안된 학습 트랙 목록이 있습니다.  즐겨보세요!
+4.  이것이 전부입니다!  학습을 시작할 준비가 되었습니다.  시작을 돕기 위해 페이지의 왼쪽에는 제안된 학습 트랙 목록이 있습니다.  즐겨보세요!
     > [!div class="mx-imgBorder"]
     > ![Opsgility 혜택 홈 페이지](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
@@ -45,7 +43,7 @@ ms.locfileid: "44280898"
 | Visual Studio Professional(표준, 연간 클라우드) | VL, Azure, 일반 정품                                       | 6개월                                                            |아니요.  새 구독자만 사용할 수 있음         |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 6개월                                             |  아니요.  새 구독자만 사용할 수 있음         |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 6개월                                              | 아니요.  새 구독자만 사용할 수 있음         |
-| Visual Studio Dev Essentials | 해당 없음  | 3개월 |아니요.  새 구독자만 사용할 수 있음 |
+| Visual Studio Dev Essentials | 해당 없음  | 3개월 | 아니요.  새 구독자만 사용할 수 있음  |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
 *제외: MPN(Microsoft 파트너 네트워크), MVP(Microsoft Valued Partner), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
