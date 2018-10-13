@@ -1,7 +1,7 @@
 ---
 title: '테스트 영역 1: 소스 제어에서 열기에 추가 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06cf33af8d642e9bee5e72306620449458258d43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4a79bc38227728a5881c973ed26baa375d082ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553717"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178921"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>테스트 영역 1: 소스 제어에서 열기 / 추가
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [테스트 영역 1: 소스 제어에서 열기를 추가](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-1-add-to-open-from-source-control)합니다.  
-  
 이 소스 제어 플러그 인 테스트 영역에서는 소스 제어에서 프로젝트 또는 솔루션을 배치 하 고 소스 제어에서 검색 합니다.  
   
 ## <a name="command-menu-access"></a>명령 메뉴 액세스  

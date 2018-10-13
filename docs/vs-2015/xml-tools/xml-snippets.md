@@ -1,7 +1,7 @@
 ---
 title: XML 코드 조각 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae360d1aea43006138397b3bed2857a2b1dad59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf1ebeb70931e2e12f056ecfbaa45a6833e031df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183965"
 ---
 # <a name="xml-snippets"></a>XML 조각
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [XML 조각](https://docs.microsoft.com/visualstudio/xml-tools/xml-snippets)합니다.  
-  
   
 XML 편집기 기능 이라는 기능을 제공 *XML 조각*, XML 파일을 보다 신속 하 게 만들 수 있습니다. XML 조각을 파일에 삽입하면 이 XML 조각을 다시 사용할 수 있습니다. XSD(XML 스키마 정의 언어) 스키마를 기반으로 XML 데이터를 생성할 수도 있습니다.  
   

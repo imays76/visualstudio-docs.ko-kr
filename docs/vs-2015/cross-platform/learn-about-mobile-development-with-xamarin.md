@@ -1,7 +1,7 @@
 ---
 title: Xamarin을 사용한 모바일 개발에 대해 알아보기 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: be4fda884fc4abf9c0a5360b8e7c8c06765bbda2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b6580602e730ae2f8cfc6fe47366d57ce1ff7ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178817"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin을 사용한 모바일 개발에 대해 알아보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Xamarin 사용한 모바일 개발에 대 한 자세한](https://docs.microsoft.com/visualstudio/cross-platform/learn-about-mobile-development-with-xamarin)합니다.  
-  
   
 이 항목에서는 Xamarin을 사용한 플랫폼 간 모바일 앱 개발을 이해하는 데 도움되는 개요 자료를 안내합니다. 아직 Visual Studio 및 Xamarin을 설치하지 않았으면 먼저 [Setup and install](../cross-platform/setup-and-install.md) 프로세스를 시작하고 여기로 돌아와서 설치 관리자가 실행되는 동안 이러한 리소스를 살펴봅니다.  
   

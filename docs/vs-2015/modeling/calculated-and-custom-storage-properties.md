@@ -1,7 +1,7 @@
 ---
 title: 계산 및 사용자 지정 저장소 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e11ae9833d61e2ff48341b577d6aa1cdbc54afc6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179493"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>계산된 저장소 속성 및 사용자 지정 저장소 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 저장소 속성 및 계산](https://docs.microsoft.com/visualstudio/modeling/calculated-and-custom-storage-properties)합니다.  
-  
 도메인 특정 언어 (DSL)의 모든 도메인 속성에 언어 탐색기에서 다이어그램에 사용자에 게 표시 하 고 프로그램 코드에서 액세스할 수 있습니다. 그러나 속성은 해당 값을 저장 하는 방식에서 다릅니다.  
   
 ## <a name="kinds-of-domain-properties"></a>도메인 속성의 종류  

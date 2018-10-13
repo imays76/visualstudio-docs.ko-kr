@@ -1,7 +1,7 @@
 ---
 title: 1x1 뷰포트 크기 변형 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c0052a2d59dbcef1d7ea32eab789ab955750f3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea21a12cb8bf1b37524a4b563c70a43eeed6f7f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565249"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184875"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 뷰포트 크기 변형
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [1x1 뷰포트 크기 변형](https://docs.microsoft.com/visualstudio/debugger/graphics/1x1-viewport-size-variant)합니다.  
-  
 모든 렌더링 대상의 뷰포트 크기를 1x1 픽셀로 줄입니다.  
   
 ## <a name="interpretation"></a>해석  

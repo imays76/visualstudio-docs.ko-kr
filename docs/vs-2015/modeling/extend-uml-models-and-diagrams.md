@@ -1,7 +1,7 @@
 ---
 title: UML 모델 및 다이어그램 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,17 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179129"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML 모델 및 다이어그램 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [확장: UML 모델 및 다이어그램](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams)합니다.  
-  
-이 항목에서는 Visual Studio와 함께 제공된 UML 모델링 도구를 확장할 수 있는 다양한 방법을 간략하게 설명합니다. 각 모델 유형 및 도구를 지 원하는 Visual Studio의 버전을 보려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.  
+이 항목에서는 Visual Studio와 함께 제공된 UML 모델링 도구를 확장할 수 있는 다양한 방법을 간략하게 설명합니다. 각 모델 유형 및 도구를 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
  다음 예제 시나리오에서 Fabrikam은 공항 수하물 처리 시스템을 설계 및 설치합니다. 공항 프로젝트 간에는 기본 장비 및 장비를 제어하는 소프트웨어에 많은 공통점이 있습니다. 그러나 컨베이어 벨트, 체크인 데스크, 저장 창고, 기타 가방 처리 장비와 같은 여러 가지 요소가 크게 달라질 수 있습니다.  
   
@@ -41,7 +39,7 @@ ms.locfileid: "47541628"
   
 ##  <a name="Requirements"></a> 요구 사항  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
+-   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 -   [Visual Studio 2015용 SDK 모델링](http://www.microsoft.com/download/details.aspx?id=48148).  
   

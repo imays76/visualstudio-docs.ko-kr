@@ -1,7 +1,7 @@
 ---
 title: 컨트롤 프로그램 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b213ee6eca5d132c663e86d6829b688952d150d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef80fcda875b20f7da99d21f57fef740da4c2836
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175619"
 ---
 # <a name="program-control"></a>프로그램 제어
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로그램 제어가](https://docs.microsoft.com/visualstudio/extensibility/debugger/program-control)합니다.  
-  
 Visual Studio에서 다음 단계별 실행의 모든 디버깅 및 루틴을 계속 프로그램 수준에서 발생 합니다.  
   
 -   특정 프레임 환경에서 실행 될 다음 명령으로 컴퓨터를 설정, 다음 문 설정  

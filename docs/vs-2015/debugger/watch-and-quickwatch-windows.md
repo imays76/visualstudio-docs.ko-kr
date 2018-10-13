@@ -1,7 +1,7 @@
 ---
 title: 조사식 및 간략 한 조사식 Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173630"
 ---
 # <a name="watch-and-quickwatch-windows"></a>조사식 및 간략한 조사식 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 변수에 대 한 조사식 설정](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows)합니다.  
-  
 사용할 수는 **Watch** (**디버그 / Windows / 조사식 / 조사식 (1, 2, 3, 4)**) 및 **간략 한 조사식** (변수를 마우스 오른쪽 단추로 클릭 / **디버그 / 간략 한 조사식**) windows에서 디버깅 세션 중 변수와 식을 조사할 합니다.  차이점은 **조사식** 창에는 여러 변수가 표시될 수 있는 반면 **간략한 조사식** 창에는 한 번에 하나의 변수가 표시된다는 것입니다.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>간략한 조사식을 사용하여 단일 변수 관찰  

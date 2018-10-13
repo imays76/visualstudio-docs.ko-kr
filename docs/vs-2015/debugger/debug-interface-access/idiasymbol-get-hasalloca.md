@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_hasalloca | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e173db5a823246a6474067c016e368e1f7a3b950
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8040301135b0feaa3fa55a67f4852fe471c2ee2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552587"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179714"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiasymbol:: Get_hasalloca](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-hasalloca)합니다.  
-  
 함수 호출을 포함 하는지 여부를 지정 하는 플래그를 검색 `alloca` (사용 되는 스택에 메모리를 할당할).  
   
 ## <a name="syntax"></a>구문  

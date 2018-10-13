@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에 로그인 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6caed797e739b04d356adcc042cbe437d19cb515
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8cf27eea0b51750651e5511344f1a83820632609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550640"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185434"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio에 로그인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에 로그인](https://docs.microsoft.com/visualstudio/ide/signing-in-to-visual-studio)합니다.  
-  
 IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개발 환경을 자신에게 맞게 설정하고 최적화할 수 있습니다.  
   
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio에 로그인해야 하는 이유는 무엇인가요?  

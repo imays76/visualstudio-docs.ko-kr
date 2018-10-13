@@ -1,7 +1,7 @@
 ---
 title: 파일 저장소 및 XML Serialization을 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592899"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183022"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>파일 저장소 및 XML Serialization 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 파일 저장소 및 XML Serialization](https://docs.microsoft.com/visualstudio/modeling/customizing-file-storage-and-xml-serialization)합니다.  
-  
 사용자 인스턴스를 저장 하는 경우 또는 *모델*, 도메인 특정 언어 (DSL)의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], XML 파일로 만들어지거나 업데이트 됨. 파일은 저장소에 모델을 다시 다시 로드 될 수 있습니다.  
   
  아래에서 설정을 조정 하 여 serialization 체계를 사용자 지정할 수 있습니다 **Xml 직렬화 동작** DSL 탐색기에서. 아래에 있는 노드가 **Xml 직렬화 동작** 모든 도메인 클래스, 속성 및 관계에 대 한 합니다. 관계의 원본 클래스 아래에 있습니다. 셰이프, 커넥터 및 다이어그램 클래스에 해당 하는 노드가 있습니다.  

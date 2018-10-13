@@ -1,7 +1,7 @@
 ---
 title: 실행 취소 하 고 레거시 API를 사용 하 여 다시 실행 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 838c0ddf-fdf3-4df1-8d21-79610b8ba0b1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bb1cc883941c8365e4d4341c93084beaef44d48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2ff049635d75608114be380c9697faf0585725
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554469"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177894"
 ---
 # <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>관리 실행 취소 및 레거시 API를 사용 하 여 다시 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [실행 취소를 관리 하 고 레거시 API를 사용 하 여 다시 실행](https://docs.microsoft.com/visualstudio/extensibility/managing-undo-and-redo-by-using-the-legacy-api)합니다.  
-  
 편집기는 코드를 수정 하는 경우 최근 변경 내용이 되돌릴 수 있도록 하는 실행 취소 작업을 지원 해야 합니다. 대부분의 편집기에서 구현 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 하며 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 통합된 개발 환경 (IDE)에서 자동으로 제공 하는 실행 취소 기능을 가질 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

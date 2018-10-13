@@ -1,7 +1,7 @@
 ---
 title: 웹 사이트 지원 특성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3fd60c1ffcb6bb4d3c386cf55fb1f33540bb3dd2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39ee9ee4e842dc49484170845cd451366aeb3a3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172850"
 ---
 # <a name="web-site-support-attributes"></a>웹 사이트 지원 특성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [웹 사이트 지원 특성](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-attributes)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 웹 사이트 프로젝트 프로그래밍 언어로 웹에 대 한 지원을 제공 하기 위해 확장할 수 있습니다. 언어를 사용 하 여 자체 등록 해야 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 템플릿에 나타날 수 있도록 합니다 **새 웹 사이트** 언어 선택 대화 상자.  
   
  IronPython Studio 샘플 웹 사이트 지원이 포함 됩니다. 사용 하 여 찾을 수 있습니다 합니다 [VSSDK 샘플](../../misc/vssdk-samples.md)합니다. 새 웹 프로젝트에 대 한 코드 숨김 언어로 IronPython을 등록 하는 다음 특성 클래스를 포함 합니다.  

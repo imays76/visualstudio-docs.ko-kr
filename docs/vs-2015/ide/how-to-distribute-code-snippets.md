@@ -1,7 +1,7 @@
 ---
 title: '방법: 코드 조각 배포 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bda2aa5e7639b951b0df6bb83ff2d50fd4331e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185707"
 ---
 # <a name="how-to-distribute-code-snippets"></a>방법: 코드 조각 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 코드 조각 배포](https://docs.microsoft.com/visualstudio/ide/how-to-distribute-code-snippets)합니다.  
-  
 친구에게 코드 조각을 제공하고 코드 조각 관리자를 사용하여 각자의 컴퓨터에 조각을 설치하도록 하면 됩니다. 그러나 배포할 조각이 여러 개이거나 조각을 더 광범위하게 배포하려는 경우 Visual Studio 사용자가 설치할 수 있는 Visual Studio 확장에 조각 파일을 포함합니다.  
   
  Visual Studio 확장을 만들려면 Visual Studio SDK를 설치해야 합니다. Visual Studio 설치에서 일치 하는 VSSDK 버전을 찾으려면 [Visual Studio 2015 다운로드](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx)합니다.  

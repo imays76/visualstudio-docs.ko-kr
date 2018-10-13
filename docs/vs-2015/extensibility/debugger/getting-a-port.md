@@ -1,7 +1,7 @@
 ---
 title: 포트 가져오기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 719da05cf3d408322480ed5a7edb1f20dd12fa89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 809757df7d3a69eaf82bcda9fce78a45cece4e70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550031"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183068"
 ---
 # <a name="getting-a-port"></a>포트 가져오기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [포트 가져오기](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-a-port)합니다.  
-  
 포트는 프로세스를 실행 하는 컴퓨터에 대 한 연결을 나타냅니다. 해당 컴퓨터는 로컬 컴퓨터 또는 원격 컴퓨터 일 수 있습니다 (하는 가능한 경우 실행 될 수는 비 Windows 기반 운영 체제를 참조 하세요 [포트](../../extensibility/debugger/ports.md) 자세한).  
   
  포트는 표현 합니다 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 인터페이스입니다. 포트에 연결 된 컴퓨터에서 실행 중인 프로세스에 대 한 정보를 가져오는 데 사용 됩니다.  

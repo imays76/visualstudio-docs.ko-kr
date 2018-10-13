@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dcb8734057e3308f28cce471670bde8aed8a748
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d78a77d45183272994d05c85fe79ad84759ecb23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565006"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187462"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugReference2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2)합니다.  
-  
 이 인터페이스는 스택 프레임 속성 또는 다른 일부 속성에 대 한 참조를 나타냅니다.  
   
 > [!NOTE]

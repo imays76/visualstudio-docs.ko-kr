@@ -1,7 +1,7 @@
 ---
 title: 셰이더 디자이너 예제 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22e7691df4a64616b0fcc6456c3f91b3b04328a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a10c05a0f63f57422cb0e4b4d6baf3413d9a2ce9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174748"
 ---
 # <a name="shader-designer-examples"></a>셰이더 디자이너 예제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [셰이더 디자이너 예제](https://docs.microsoft.com/visualstudio/designers/shader-designer-examples)합니다.  
-  
 설명서의 이 섹션에 있는 문서에는 셰이더 디자이너를 사용하여 다양한 그래픽 효과를 만드는 방법을 보여 주는 예제가 포함되어 있습니다.  
   
 ## <a name="related-topics"></a>관련 항목  

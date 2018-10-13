@@ -1,7 +1,7 @@
 ---
 title: WPF MSBuild 작업 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3423d08777cc19a29fcb145e4394866ce445aec4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5266b5b6274eb9a39f6603598b90cd551f25caef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185473"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 작업 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WPF MSBuild 작업 참조](https://docs.microsoft.com/visualstudio/msbuild/wpf-msbuild-task-reference)합니다.  
-  
   
 WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일하고 리소스를 처리하는 작업 등을 포함한 추가적인 빌드 작업 집합을 사용하여 Microsoft Build Engine(MSBuild)을 확장합니다.  
   

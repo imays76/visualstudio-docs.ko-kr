@@ -1,7 +1,7 @@
 ---
 title: '방법: Spy + + 시작 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9eb5d8cd8a5ca0ba32f59e483265942379eb3122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50b9e68862c8dfc3d608f965cb61ee1e0c1012b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550647"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180312"
 ---
 # <a name="how-to-start-spy"></a>방법: Spy++ 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Spy + + 시작](https://docs.microsoft.com/visualstudio/debugger/how-to-start-spy-increment)합니다.  
-  
 시작할 수 있습니다 Spy + + 또는 Visual Studio에서 명령 프롬프트에서.  
   
  시작 하는 경우 Spy + +, 컴퓨터로 변경, 클릭 수 있는 권한을 묻는 메시지가 표시 되 면 **예**합니다.  

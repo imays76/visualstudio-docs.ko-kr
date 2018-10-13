@@ -1,7 +1,7 @@
 ---
 title: ': 열거자는 수 ca1038 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d0bc23e78580329443c06cd419febd50e3d3db27
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 94b154fe1069c9c9af61ca955fc25da9677c5fde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180325"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: 열거자는 강력한 형식이어야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1038: 열거자는 강력한 형식 이어야 합니다](https://docs.microsoft.com/visualstudio/code-quality/ca1038-enumerators-should-be-strongly-typed)합니다.
-
 |||
 |-|-|
 |TypeName|EnumeratorsShouldBeStronglyTyped|

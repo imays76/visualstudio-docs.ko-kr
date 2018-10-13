@@ -1,7 +1,7 @@
 ---
 title: '방법: WCF 서비스 한 단계씩 실행 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b779c8bc2e6da3975f1f70265482c706c9141375
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 205dc10829227d2bb2f151687d7b4d4defbe03fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184955"
 ---
 # <a name="how-to-step-into-wcf-services"></a>방법: WCF 서비스 한 단계씩 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: WCF 서비스 한 단계씩 실행](https://docs.microsoft.com/visualstudio/debugger/how-to-step-into-wcf-services)합니다.  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서는 WCF 서비스를 한 단계씩 실행할 수 있습니다. WCF 서비스가 클라이언트와 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션인 경우에는 WCF 서비스 내의 중단점을 적중할 수 있습니다.  
   
  단계별 코드 실행이 제대로 작동하도록 하려면 app.config 또는 Web.config 파일에서 디버깅을 사용하도록 설정해야 합니다. 디버깅을 사용 하 고 WCF 서비스를 한 단계씩 실행할 때의 제한 사항, 참조 하는 방법에 대 한 자세한 [WCF 디버깅의 제한 사항](../debugger/limitations-on-wcf-debugging.md)합니다.  

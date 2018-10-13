@@ -1,7 +1,7 @@
 ---
 title: 격리 셸 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61cd1d84978baa6f8deb08b2a2cc9327dad543c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3804ded3106c68c1298063b38fb3d384685a18a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175554"
 ---
 # <a name="customizing-the-isolated-shell"></a>격리 셸 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [격리 셸 사용자 지정](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell)합니다.  
-  
 Visual Studio 사용자 인터페이스의 다양 한 측면을 변경 하 고 명령 및 특수화 된 응용 프로그램에 포함 된 기능을 제한 하 여 Visual Studio 격리 셸 응용 프로그램을 사용자 지정할 수 있습니다.  
   
 ## <a name="using-the-applicationpkgdef-file"></a>Application.pkgdef 파일 사용  

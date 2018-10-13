@@ -1,7 +1,7 @@
 ---
 title: BP_REQUEST_INFO2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5568e696f8463e2a8e5c64467bc82f192d790b5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95eee92b91c00d509363d4dd96d0770096c36f43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542173"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185174"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [BP_REQUEST_INFO2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-request-info2)합니다.  
-  
 공급 업체 GUID, 제약 조건 및 추적점을 포함 하 여 중단점을 구현 하는 데 필요한 정보를 포함 합니다.  
   
 ## <a name="syntax"></a>구문  

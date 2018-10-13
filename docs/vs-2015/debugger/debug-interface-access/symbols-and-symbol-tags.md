@@ -1,7 +1,7 @@
 ---
 title: 기호 및 기호 태그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04dfbe961b122ded6ddb5ff19d70091ba6c408c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7eaf514ce88b20954ace1206ab625ae55ed12cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552031"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189789"
 ---
 # <a name="symbols-and-symbol-tags"></a>기호 및 기호 태그
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [기호 및 기호 태그](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symbols-and-symbol-tags)합니다.  
-  
 컴파일된 프로그램에 대 한 디버그 정보는 디버그 인터페이스 액세스 (DIA) SDK Api를 사용 하 여 액세스할 수 있는 기호로 프로그램 데이터베이스 (.pdb) 파일에 저장 됩니다. 모든 기호는 [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) 와 [idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) 속성입니다. 합니다 `symTag` 속성에 정의 된 대로 기호의 종류를 나타내는 합니다 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거형입니다. 합니다 `symIndexId` 속성이 `DWORD` 기호의 모든 인스턴스에 대 한 고유 식별자를 포함 하는 값입니다.  
   
  기호에는 가장 자주 다른 기호에 대 한 참조 뿐만 아니라 기호에 대 한 추가 정보를 지정할 수 있는 속성을 [idiasymbol:: Get_lexicalparent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) 또는 [idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). 참조로 반환 됩니다 대 한 참조를 포함 하는 속성을 쿼리 하는 경우는 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 개체입니다. 이러한 속성은 항상 쌍을 이루는 다른 속성을 사용 하 여 "Id"를 사용 하 여 접미사가 있지만 동일한 이름으로 예를 들어 [idiasymbol:: Get_lexicalparentid](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) 하 고 [idiasymbol:: Get_classparentid](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)합니다. 테이블 [기호 위치](../../debugger/debug-interface-access/symbol-locations.md)를 [어휘 기호 형식 계층 구조](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), 및 [기호 종류의 클래스 계층 구조](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) 다양 한 종류의 각 속성을 간략하게 설명의 기호입니다. 이러한 속성에 대 한 관련 정보 또는 다른 기호에 대 한 참조가 있을 수 있습니다. 때문에 `*Id` 속성은 해당 관련된 속성의 서 수 단순히 숫자 식별자, 추가로 토론에서 생략 하는 합니다. 참조 하는 매개 변수 설명이 필요한 경우에 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: InstallShield Limited Edition | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 016833993251916804c5949559fb9646e6130879
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482b06a079346e91a91708d32733754a3f98a3db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189672"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [InstallShield Limited Edition](https://docs.microsoft.com/visualstudio/deployment/installshield-limited-edition)합니다.  
-  
 InstallShield Limited Edition을 사용하여 설치 파일을 만든 다음 사용자에게 배포하면 사용자가 네트워크에 연결하지 않고도 데스크톱 응용 프로그램 또는 구성 요소를 설치할 수 있습니다. InstallShield Limited Edition은 Visual Studio Professional 및 Enterprise Edition 사용자에 대해 무료로 제공됩니다. Visual Studio에서 더 이상 지원하지 않는 Windows Installer 기술을 대체합니다. ClickOnce를 사용하여 응용 프로그램과 구성 요소를 배포할 수도 있으며, 이 경우 네트워크에 연결해야 합니다. [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)를 참조하세요.  
   
 > [!NOTE]

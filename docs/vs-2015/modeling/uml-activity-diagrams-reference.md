@@ -1,7 +1,7 @@
 ---
 title: 'UML 동작 다이어그램: 참조 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bfe4eaad401ce61534e5785ed82b9e33fa2f6610
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543164"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177842"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML 동작 다이어그램: 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 동작 다이어그램: 참조](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-reference)합니다.  
-  
 *동작 다이어그램* 일련의 작업을 통한 작업 흐름으로 비즈니스 프로세스 또는 소프트웨어 프로세스를 보여 줍니다. 사용자, 소프트웨어 구성 요소 또는 컴퓨터가 이러한 작업을 수행할 수 있습니다.  
   
  다음 예제와 같이 동작 다이어그램을 사용하여 여러 유형의 프로세스를 설명할 수 있습니다.  

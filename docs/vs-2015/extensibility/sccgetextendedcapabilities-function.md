@@ -1,7 +1,7 @@
 ---
 title: SccGetExtendedCapabilities 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016b44e8dcd8218b8c3fbd569ba6a27b77d9d204
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03476339f4cf70f572bc76c90f9919dd3513df17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553721"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181027"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccGetExtendedCapabilities 함수](https://docs.microsoft.com/visualstudio/extensibility/sccgetextendedcapabilities-function)합니다.  
-  
 이 함수는 소스 제어 플러그 인에서 지 원하는 추가 기능을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  

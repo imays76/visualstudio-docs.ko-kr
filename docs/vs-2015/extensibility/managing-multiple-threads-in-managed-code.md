@@ -1,7 +1,7 @@
 ---
 title: 관리 코드에서 다중 스레드 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7be5763081da023742f53c3b2d22e0d0f4aad167
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c1438c7425ba3d3fe1071fb2d06d7bc3345d900
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186734"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>관리 코드에서 다중 스레드 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 관리 코드에서 다중 스레드 관리](https://docs.microsoft.com/visualstudio/extensibility/managing-multiple-threads-in-managed-code)합니다.  
-  
 비동기 메서드를 호출 하거나 Visual Studio UI 스레드가 아닌 스레드에서 실행 되는 작업에는 관리 되는 VSPackage 확장에 있는 경우 아래 제공 된 지침을 따라야 합니다. 작업에 대 한 다른 스레드가 완료 되기를 대기할 필요가 없기 때문에 UI 스레드를 반응 형 유지할 수 있습니다. 코드를 효율적으로 수행할 수 스택 공간을 차지 하는 추가 스레드 필요가 없기 때문에 있고 더 안정적이 고 교착 상태 및 중지 문제를 방지 하기 때문에 디버그 하는 일을 쉽게 만들 수 있습니다.  
   
  일반적으로 전환할 수 UI 스레드에서 다른 스레드 또는 그 반대의 경우도 마찬가지입니다. 메서드는 반환 될 때 현재 스레드를 원래 호출한 스레드가 됩니다.  

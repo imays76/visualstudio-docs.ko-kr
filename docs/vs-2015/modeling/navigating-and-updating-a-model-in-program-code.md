@@ -1,7 +1,7 @@
 ---
 title: 프로그램 코드 탐색 및 모델 업데이트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee04ef978714f2d4925ed14604bf700fd623ef7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4630c6a277c6d9698c7fd1d65b5a292862dc3438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190680"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>프로그램 코드에서 모델 탐색 및 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [탐색 및 업데이트 프로그램 코드에서 모델](https://docs.microsoft.com/visualstudio/modeling/navigating-and-updating-a-model-in-program-code)합니다.  
-  
 만들고 모델 요소를 삭제, 해당 속성을 설정 하 고 및 요소 간에 링크를 삭제 하는 코드를 작성할 수 있습니다. 트랜잭션 내에서 모든 변경 해야 합니다. 요소는 다이어그램에서 볼 수, 다이어그램 "문제가 해결 됩니다" 자동으로 트랜잭션이 끝날 때.  
   
 ## <a name="in-this-topic"></a>이 항목의 내용  

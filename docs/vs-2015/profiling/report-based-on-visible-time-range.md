@@ -1,7 +1,7 @@
 ---
 title: 표시되는 시간 범위를 기반으로 하는 보고서 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c07943ada629e79fc88be54da915fb9f464fd0cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f13ab0b7d7ff1ea7ba264ed264b1ba70b79195b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556373"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176243"
 ---
 # <a name="report-based-on-visible-time-range"></a>표시되는 시간 범위를 기반으로 하는 보고서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visible 시간 범위를 기반으로 보고서](https://docs.microsoft.com/visualstudio/profiling/report-based-on-visible-time-range)합니다.  
-  
 프로필 뷰는 현재 표시된 시간 범위 및 채널을 기반으로 하는 보고서를 표시합니다. 다른 데이터 하위 집합에 대한 세부 정보를 보려면 범례에서 항목을 클릭합니다.  
   
  여기의 테이블에서 데이터에 대한 자세한 정보를 찾을 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 클래스 다이어그램에 UML 특성의 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9cd12bb002efbf28443b8052382c29ed87036b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b3f1379aa692cae06c38ac6bf55c6efba4d5c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173075"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>UML 클래스 다이어그램 특성의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [속성의 특성을 UML 클래스 다이어그램](https://docs.microsoft.com/visualstudio/modeling/properties-of-attributes-on-uml-class-diagrams)합니다.  
-  
 UML 클래스 다이어그램에서 클래스 및 인터페이스에 *특성* 을 추가할 수 있습니다. 특성은 클래스 또는 인터페이스의 인스턴스에 연결할 수 있는 값을 정의합니다.  
   
  특성을 추가하려면 클래스 또는 인터페이스를 마우스 오른쪽 단추로 클릭하고 **추가**를 가리키고 **특성**을 클릭합니다.  

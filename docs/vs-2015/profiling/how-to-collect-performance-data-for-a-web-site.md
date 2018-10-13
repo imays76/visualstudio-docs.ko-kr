@@ -1,7 +1,7 @@
 ---
 title: '방법: 웹 사이트에 대한 성능 데이터 수집 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d854345ca32500b379e68249e516f9e1efcd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185915"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>방법: 웹 사이트에 대한 성능 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 웹 사이트에 대 한 성능 데이터 수집](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-performance-data-for-a-web-site)합니다.  
-  
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램에 대한 성능 데이터를 수집하려면 **성능 마법사**를 사용할 수 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 열려 있는 웹 응용 프로그램을 프로파일링하거나, 로컬 컴퓨터에 있고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에 열려 있지 않은 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 사이트를 프로파일링할 수 있습니다.  
   
 > [!NOTE]
@@ -53,7 +51,7 @@ ms.locfileid: "47557354"
   
 ### <a name="to-profile-a-web-site-project"></a>웹 사이트 프로젝트를 프로파일링하려면  
   
-1.  [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 또는 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]에서 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 프로젝트를 엽니다.  
+1.  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 또는 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 에서 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]웹 프로젝트를 엽니다.  
   
 2.  **분석** 메뉴에서 **성능 마법사 시작**을 클릭합니다.  
   

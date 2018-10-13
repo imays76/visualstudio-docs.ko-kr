@@ -1,7 +1,7 @@
 ---
 title: 여러 사용자 계정으로 작업 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3559e6df1f675489d15b2cfd53ef80737e003cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176269"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [여러 사용자 계정으로 작업](https://docs.microsoft.com/visualstudio/ide/work-with-multiple-user-accounts)합니다.  
-  
 여러 Microsoft 계정 및/또는 회사나 학교 계정이 있는 경우 별도로 로그인하지 않고도 모든 계정에서 리소스에 액세스할 수 있도록 모든 계정을 Visual Studio에 추가할 수 있습니다. Visual Studio 2015 RTM 날짜를 기준으로 Azure, Application Insights, Team Foundation Server 및 Office 365 서비스는 간소화된 로그인 환경을 지원합니다. 시간이 지나면서 추가 서비스를 사용할 수 있게 됩니다.  
   
  한 대의 컴퓨터에서 여러 계정을 추가한 후 다른 컴퓨터에서 Visual Studio에 로그인하면 해당 계정 집합이 사용자와 함께 로밍됩니다. 계정 이름은 로밍되지만 자격 증명은 그렇지 않습니다. 따라서 새 컴퓨터에서 처음으로 해당 리소스를 사용하려고 할 경우 다른 계정에 대한 자격 증명을 입력하라는 메시지가 표시됩니다.  

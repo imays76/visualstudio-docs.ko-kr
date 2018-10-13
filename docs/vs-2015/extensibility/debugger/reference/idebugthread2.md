@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5a19e207e0c5f23c8f757e428789dfc265bb19b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdd6d15d5ac5547502b1b7dbc4c4f60a0a0e5750
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549888"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189028"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugThread2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthread2)합니다.  
-  
 이 인터페이스는 프로그램에서 실행 중인 스레드를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: 버전 제어에서 모델 및 다이어그램 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,24 +14,22 @@ caps.latest.revision: 32
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aa1da880195e3566460d8169c6eed4e81bb0fb1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187570"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>버전 제어에서 모델 및 다이어그램 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [버전 제어에서 모델 및 다이어그램 관리](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control)합니다.  
-  
-사용 하 여 모델링 프로젝트 및 다이어그램, 코드 맵 (.dgml 파일)을 비롯 한 여러 버전을 관리 [Team Foundation 버전 제어 또는 Git를 사용 하 여](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); 하거나 시각적 개체를 사용 하 여 클라우드 또는 온-프레미스 Team Foundation Server를 사용 하 여 Studio Team Services입니다.  
+온-프레미스 Team Foundation Server에서 또는 Visual Studio Team Services를 통해 클라우드에서 [Team Foundation 버전 제어 또는 Git를 사용](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)하여 코드 맵(.dgml 파일)을 비롯한 모델링 프로젝트 및 다이어그램의 여러 버전을 관리합니다.  
   
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
 > [!IMPORTANT]
->  같은 모델링 프로젝트에서 여러 사용자가 작업할 경우 주의하세요. 하는 방법을 알아보려면 [중간 규모 또는 대규모 프로젝트에서 모델을 구성](../modeling/structure-your-modeling-solution.md)합니다.  
+>  같은 모델링 프로젝트에서 여러 사용자가 작업할 경우 주의하세요. [중간 규모 또는 대규모 프로젝트에서 모델을 구성](../modeling/structure-your-modeling-solution.md)하는 방법을 살펴보세요.  
   
 ##  <a name="ModelingProjects"></a> 모델링 프로젝트의 파일  
  다른 파일에 대한 작업을 수행하는 둘 이상의 사용자가 동시에 한 모델링 프로젝트에서 작업을 수행할 수 있습니다.  
@@ -66,7 +64,7 @@ ms.locfileid: "47556820"
   
 -   패키지를 계속 추적할 수 있도록 패키지 파일 이름을 바꿔서 실제 패키지 이름을 반영합니다.  
   
--   [!INCLUDE[esprscc](../includes/esprscc-md.md)]를 항상 수행 **체크** 하 고 **최신 버전 가져오기** 개별 파일이 아니라 전체 모델링 프로젝트에서 작업 합니다.  
+-   [!INCLUDE[esprscc](../includes/esprscc-md.md)]에서는 항상 개별 파일이 아니라 전체 모델링 프로젝트에서 **체크 인** 및 **최신 버전 가져오기** 작업을 수행합니다.  
   
 -   항상 모델링 프로젝트를 체크 인하기 전에 즉시 **가져오기** 작업을 수행합니다.  
   
@@ -82,7 +80,7 @@ ms.locfileid: "47556820"
   
 -   패키지 경계를 교차하는 관계의 속성 변경.  
   
--   체크 아웃 잠금에 대 한 자세한 참조 [체크 아웃 및 파일 편집](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)합니다.  
+-   체크 아웃 잠금에 대해 알아보려면 [파일 체크 아웃 및 편집](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)을 참조하세요.  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>프로젝트 폴더에 다이어그램 파일을 넣거나 빼려면  
   
@@ -102,7 +100,7 @@ ms.locfileid: "47556820"
     >  파일을 다른 프로젝트로 이동할 수는 없습니다.  
   
 ##  <a name="Merging"></a> 모델 파일 및 다이어그램의 변경 내용 병합  
- 둘 이상의 사용자가 한 모델에서 동시에 작업한 후에 [!INCLUDE[esprscc](../includes/esprscc-md.md)]에서는 모델 파일에서 변경 내용을 병합할지 묻는 메시지를 표시합니다. 이전 섹션에서 설명된 대로 개별 프로젝트에서 작업하면 대부분 병합할 필요가 없습니다. 보통 나머지 충돌은 자동으로 안전하게 병합될 수 있습니다. 다음과 같은 변경 내용은 문제를 일으키지 않습니다.  
+ 둘 이상의 사용자가 한 모델에서 동시에 작업하고 나면 [!INCLUDE[esprscc](../includes/esprscc-md.md)] 에서는 모델 파일에서 변경 내용을 병합할지 묻는 메시지를 표시합니다. 이전 섹션에서 설명된 대로 개별 프로젝트에서 작업하면 대부분 병합할 필요가 없습니다. 보통 나머지 충돌은 자동으로 안전하게 병합될 수 있습니다. 다음과 같은 변경 내용은 문제를 일으키지 않습니다.  
   
 -   수명선 형식. 기존 형식에서 수명선을 만든 경우가 아니면 수명선을 상호 작용(시퀀스 다이어그램)에 추가할 경우 형식이 루트 모델에 저장됩니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 685896404846e2bd5049256440981ee1247dd115
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06ddc1a27dceafb2b526925f6ee6649b1d62c6ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180299"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDiaLoadCallback2](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialoadcallback2)합니다.  
-  
 콜백 프로시저 찾기, 찾기 프로세스에 적용할 제한 수 있도록 DIA 기호에서 받습니다.  
   
 ## <a name="syntax"></a>구문  

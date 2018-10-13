@@ -1,7 +1,7 @@
 ---
 title: '11단계: 프로그램 실행 및 기타 기능 사용 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38d83c46ecf910a4df5050c6e73de58a1a0963b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a80a962017cc54e6ce7aae6201079f976dee9ab1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553991"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172278"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>11단계: 프로그램 실행 및 기타 기능 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [11 단계: 프로그램 실행 및 기타 기능](https://docs.microsoft.com/visualstudio/ide/step-11-run-your-program-and-try-other-features)합니다.  
-  
 이제 프로그램이 완성되어 실행할 준비가 되었으므로 프로그램을 실행하고 PictureBox의 배경색을 설정할 수 있습니다. 더 자세한 내용을 알아보려면 폼의 색의 변경하고, 단추와 확인란을 사용자 지정하고, 폼의 속성을 변경하여 프로그램을 향상시킵니다.  
   
  샘플의 전체 버전을 다운로드하려면 [전체 사진 뷰어 자습서 샘플](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)을 참조하세요.  

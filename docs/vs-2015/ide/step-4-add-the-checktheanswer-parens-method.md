@@ -1,7 +1,7 @@
 ---
 title: '4단계: CheckTheAnswer() 메서드 추가 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9aa6c85776606c45590521113c322f9709cd561
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf3f58e9d597af067db9e5d3037a78572a1528ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181111"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4단계: CheckTheAnswer() 메서드 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [4 단계: checktheanswer () 메서드 추가](https://docs.microsoft.com/visualstudio/ide/step-4-add-the-checktheanswer-parens-method)합니다.  
-  
 이 자습서의 4단계에서는 수학 문제의 답이 맞는지 여부를 확인하는 `CheckTheAnswer()` 메서드를 작성합니다. 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2015 디버거의 새로운 기능 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b7a854e872a7739054379b1f6d01794f142f448
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 743875ef4ab7582bd4c1a254c82f168b96ba8208
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47593123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188619"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2015"></a>Visual Studio 2015 디버거의 새로운 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거에 대 한 새로운](https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio)합니다.  
-  
 Visual Studio 2015 업데이트 1 디버깅 및 진단의 모든 새로운 기능에 대한 자세한 내용은 [Visual Studio 2015 업데이트 1 릴리스 정보](https://www.visualstudio.com/news/vs2015-update1-vs#debug)를 참조하세요.  
   
  Visual Studio 2015 RTM 디버깅 및 진단의 모든 새로운 기능에 대한 자세한 내용은 [Visual Studio 2015 릴리스 정보](https://www.visualstudio.com/news/vs2015-vs#debug)를 참조하세요.  
@@ -43,7 +41,7 @@ Visual Studio 2015 업데이트 1 디버깅 및 진단의 모든 새로운 기�
 ## <a name="visual-studio-2015-update-1-changes"></a>Visual Studio 2015 업데이트 1 변경 내용  
  C++ 편집하며 계속하기는 더 많은 기능을 지원합니다. 자세한 내용은 [편집 하며 계속 하기 (Visual c + +)](../debugger/edit-and-continue-visual-cpp.md)합니다.  
   
- Visual C++ 액세스 위반을 디버깅하기 위해 새 예외 대화 상자에서 해당 예외를 발생시킨 포인터를 지정합니다. 자세한 내용은 참조 하십시오 [액세스 위반을 어떻게 디버그할 수 있습니다?](../debugger/how-can-i-debug-an-access-violation-q.md) 고 [Visual Studio 2015 업데이트 1에서 c + + 액세스 위반 디버깅 향상](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
+ Visual C++ 액세스 위반을 디버깅하기 위해 새 예외 대화 상자에서 해당 예외를 발생시킨 포인터를 지정합니다. 자세한 내용은 [How Can I Debug an Access Violation?](../debugger/how-can-i-debug-an-access-violation-q.md) 및 [Visual Studio 2015 업데이트 1에서 C++ 액세스 위반 디버깅 향상](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
   
 ## <a name="visual-studio-2015-rtm-debugger-ui-and-hotkey-changes"></a>Visual Studio 2015 RTM 디버거 UI 및 바로 가기 키 변경  
  예외 및 중단점 UI에 중요한 UI 변경 사항이 있습니다.  

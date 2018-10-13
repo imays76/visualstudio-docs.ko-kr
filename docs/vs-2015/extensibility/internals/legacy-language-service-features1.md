@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스 기능 1 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed5b66c8148df36b89cfb6e6ae048a05f393551
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e864f9899c274fe58da16cdb5581058dd20f725
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550336"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185400"
 ---
 # <a name="legacy-language-service-features"></a>레거시 언어 서비스 기능
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스 기능 1](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-features1)합니다.  
-  
 하나 이상의 관리 되는 패키지 프레임 워크 (MPF) 언어 서비스를 지원할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 구문 강조 표시, IntelliSense 및 중단점 유효성 검사와 같은 기능을 합니다. 각 기능 독립적으로 구현할 수 있지만 파서와 스캐너만 해야 하는 구문 강조 표시를 제외 하 고 스캐너 모두 필요 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

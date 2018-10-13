@@ -1,7 +1,7 @@
 ---
 title: 옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38374893aea62af1b664065edf0ca9195f3dd301
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9669437ff47bc141c898a61c055b3a0de8d5d235
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189295"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run)합니다.  
-  
   
 이 대화 상자에서 동시에 빌드할 수 있는 Visual C++ 또는 Visual C# 프로젝트의 최대 개수, 특정 기본 빌드 동작 및 일부 빌드 로그 설정을 지정할 수 있습니다. 열려는 합니다 **옵션** 대화 상자에서 **도구**를 **옵션** 메뉴 모음에서. 이 옵션 집합에 액세스 하려면 확장 **프로젝트 및 솔루션**를 선택한 후 **빌드 및 실행**합니다.  
   

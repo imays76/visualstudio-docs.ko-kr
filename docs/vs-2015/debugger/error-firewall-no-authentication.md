@@ -1,7 +1,7 @@
 ---
 title: '오류: 방화벽 인증 안 함 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dca0d4421cb8b8b5e720ca079547f13ec75e3705
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8907dac5310e2f70ff5a7053cc564e72b0b2cd98
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550631"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186045"
 ---
 # <a name="error-firewall-no-authentication"></a>오류: 방화벽 인증 안 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: 방화벽 인증 안 함](https://docs.microsoft.com/visualstudio/debugger/error-firewall-no-authentication)합니다.  
-  
 원격 컴퓨터의 인터넷 연결 방화벽이 원격 디버깅을 허용하도록 설정되어 있지 않습니다. `No Authentication`을 사용하여 원격으로 디버깅하는 경우 msvsmon.exe가 예외 목록에 추가되어 있어야 합니다. 일부 IPSEC 포트를 열어야 할 수도 있습니다.  
   
 > [!NOTE]

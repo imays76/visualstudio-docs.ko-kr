@@ -1,7 +1,7 @@
 ---
 title: 오류 코드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bd6fd1eb6966b23912e0181ee147a4e8715b4ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220d53db343a90f6e19e0f365c621cbf55186a8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189984"
 ---
 # <a name="error-codes"></a>오류 코드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류 코드](https://docs.microsoft.com/visualstudio/extensibility/error-codes)합니다.  
-  
 원본 제어 플러그 인 API 함수에서 오류를 반환 하는 경우 다음 오류 코드 중 하나를 사용할 수 있습니다. 모든 오류는 경고 또는 정보 제공 용 이므로 오류 코드는 양수, 음수 이며 성공 0입니다.  
   
 |오류 코드|값|설명|  

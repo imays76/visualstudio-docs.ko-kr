@@ -1,7 +1,7 @@
 ---
 title: '방법: 자체 호스팅된 WCF 서비스 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1e87af205a88e84942eb4958876c2030a175065
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8f1fee46a1df931842992df1daa38942ca07bc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564825"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182249"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>방법: 자체 호스팅 WCF 서비스 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 자체 호스팅 WCF 서비스 디버그](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-a-self-hosted-wcf-service)합니다.  
-  
 A *호스 티 드 서비스를 자체* 는 IIS, WCF 서비스 호스트 내에서 실행 하지 않는 WCF 서비스 또는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 개발 서버입니다. 자체 호스팅된 WCF를 디버그 하는 가장 쉬운 방법은 구성 하는 것 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 선택 하면 클라이언트와 서버를 시작 하려면 **디버깅 시작** 에 **디버그** 메뉴.  
   
  WCF 서비스가 자체 호스트 하는 내부 또는 NT 서비스와 같은 이러한 방식으로 시작할 수 없는 프로세스 하는 경우이 메서드를 사용할 수 없습니다. 대신, 다음 중 하나를 수행할 수 있습니다.  

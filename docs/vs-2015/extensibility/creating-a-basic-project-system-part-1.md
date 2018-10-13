@@ -1,7 +1,7 @@
 ---
 title: 기본 프로젝트 시스템 만들기, 1 부 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8735ed6760df7d9b4ad21c673bdda75cddb6f7d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da91c08e42604bdcf5d8f0471acdd7d74992a5e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173827"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>기본 프로젝트 시스템 만들기, 1부
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [기본 프로젝트 시스템, 1 부 만들기](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-1)합니다.  
-  
 Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타 자산을 구성 하는 데 사용할 컨테이너를 사용 합니다. 프로젝트에서 솔루션의 자식으로 표시 합니다 **솔루션 탐색기**합니다. 프로젝트를 사용 하 여 구성, 빌드, 디버그 및 소스 코드를 배포 및 웹 서비스, 데이터베이스 및 기타 리소스에 대 한 참조를 만들 수 있습니다.  
   
  프로젝트는 Visual C# 프로젝트의.csproj 파일 예를 들어 프로젝트 파일에 정의 됩니다. 사용자 고유의 프로젝트 파일 이름 확장명을 가진 고유한 프로젝트 형식을 만들 수 있습니다. 프로젝트 형식에 대 한 자세한 내용은 참조 하세요. [프로젝트 형식](../extensibility/internals/project-types.md)합니다.  

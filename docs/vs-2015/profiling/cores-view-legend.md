@@ -1,7 +1,7 @@
 ---
 title: 코어 뷰 범례 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6416b9bf96b3a23fce72df56190df9dfd5847531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d28cef1493371fc55fc15c38a1e493d0cad0621
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176256"
 ---
 # <a name="cores-view-legend"></a>코어 뷰 범례
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코어 뷰 범례](https://docs.microsoft.com/visualstudio/profiling/cores-view-legend)합니다.  
-  
 코어 뷰 범례는 색 및 이름으로 각 스레드를 식별합니다. 여기에는 코어 간 컨텍스트 전환 횟수, 총 컨텍스트 전환 및 코어 간 컨텍스트 전환 비율을 보여주는 열이 포함되어 있습니다. 범례의 행은 코어 간 컨텍스트 전환 횟수를 기준으로 내림차순으로 정렬됩니다.  
   
  범례에서 행을 선택하여 타임라인에 표시되는 스레드를 필터링할 수 있습니다. 선택한 스레드만 타임라인에 표시됩니다. 선택된 행이 없으면 타임라인에 모든 행이 표시됩니다.  

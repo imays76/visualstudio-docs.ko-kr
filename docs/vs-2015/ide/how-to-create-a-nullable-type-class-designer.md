@@ -1,7 +1,7 @@
 ---
 title: '방법: Nullable 형식 만들기(클래스 디자이너) | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f93d5a18b71a054a147b396afd293c6bdce36c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179428"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>방법: Nullable 형식 만들기(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Nullable 형식 (클래스 디자이너) 만들기](https://docs.microsoft.com/visualstudio/ide/how-to-create-a-nullable-type-class-designer)합니다.  
-  
 특정 값 형식에 항상 정의된 값이 포함되거나 필요한 것은 아닙니다. 이는 일부 필드에 값이 할당되지 않을 수 있는 데이터베이스에서 일반적인 경우입니다. 예를 들어 데이터베이스 필드에 null 값을 할당하여 아직 값이 할당되지 않았음을 나타낼 수 있습니다.  
   
  *Nullable 형식*은 해당 형식에 대한 일반적인 값 범위 및 null 값도 사용하도록 확장하는 값 형식입니다. Nullable\<Int32>로도 나타내는 `Int32`의 nullable에는 -2147483648에서 2147483647까지 값이 할당되거나 null 값이 할당될 수 있습니다. Nullable\<bool>에는 `True`, `False` 또는 null(전혀 값이 없음) 값이 할당될 수 있습니다.  

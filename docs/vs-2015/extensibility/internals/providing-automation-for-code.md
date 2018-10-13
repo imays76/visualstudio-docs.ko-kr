@@ -1,7 +1,7 @@
 ---
 title: 코드에 대 한 자동화 제공 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 456927337331c15b3392b03175d83f2a63f87e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d70958f88bcd48ce3e2a18f2b086367800541a22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541347"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172877"
 ---
 # <a name="providing-automation-for-code"></a>코드에 대한 자동화 제공
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드에 대 한 자동화 제공](https://docs.microsoft.com/visualstudio/extensibility/internals/providing-automation-for-code)합니다.  
-  
 코드에 대 한 자동화 모델을 만들 필요는 없습니다. 환경 SDK는 이렇게 하는 것에 대 한 샘플을 제공 하지 않습니다. 코드 모델에 대 한 정보를 참조 하세요.를 <xref:EnvDTE.CodeModel> 개체입니다.  
   
  코드 모델을 구현 하려면 내부 데이터 구조에 의해 결정 되는 모든 인터페이스를 구현 해야 합니다. 개체에서 파생 되어야 합니다는 `IDispatch` 클래스입니다.  

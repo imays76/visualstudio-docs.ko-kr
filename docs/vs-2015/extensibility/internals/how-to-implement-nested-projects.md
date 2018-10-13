@@ -1,7 +1,7 @@
 ---
 title: '방법: 중첩 된 프로젝트를 구현 합니다. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 860f231771db2385afa830a97749286f128e77f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3892d02e39eb29039f815df5ff9174ce39415a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173578"
 ---
 # <a name="how-to-implement-nested-projects"></a>방법: 중첩 된 프로젝트를 구현 합니다.
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 중첩 된 프로젝트 구현](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-implement-nested-projects)합니다.  
-  
 만들 때 중첩 된 프로젝트 형식이 있습니다 구현 해야 하는 몇 가지 추가 단계는 합니다. 부모 프로젝트를 솔루션의 중첩 된 (자식) 프로젝트에 동일한 작업을 수행 중 일부에 적용 됩니다. 부모 프로젝트는 유사한 솔루션에 프로젝트의 컨테이너입니다. 특히, 중첩 된 프로젝트의 계층 구조를 빌드할 부모 프로젝트 및 솔루션에서 발생 해야 하는 여러 이벤트 있습니다. 이러한 이벤트는 중첩 된 프로젝트를 만들기 위한 다음 프로세스에 설명 되어 있습니다.  
   
 ### <a name="to-create-nested-projects"></a>중첩 된 프로젝트를 만들려면  

@@ -1,7 +1,7 @@
 ---
 title: 앱 (JavaScript) 새로 고침 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca647572eac68dcf70d21b7ed687212a0229568f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c38083a1a8e0255891b29ae23e5cf36d066e27a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180572"
 ---
 # <a name="refresh-an-app-javascript"></a>앱 새로 고침(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [앱 (JavaScript) 새로 고침](https://docs.microsoft.com/visualstudio/debugger/refresh-an-app-javascript)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  디버깅 하 고 다음 JavaScript를 사용 하 여 선택 하 여 스토어 앱을 새로 고침 하는 동안 코드에는 변경할 수는 **새로 고침 Windows 앱** 단추를 **디버그** 도구 모음입니다. 이 단추를 선택하면 디버거를 중지하여 다시 시작하지 않고 응용 프로그램을 다시 로드합니다. 새로 고침 기능을 사용하면 HTML, CSS 및 JavaScript 코드를 수정하고 결과를 빠르게 확인할 수 있습니다. 이 기능은 Windows 스토어 및 Windows Phone 스토어 앱에서 모두 지원됩니다.  

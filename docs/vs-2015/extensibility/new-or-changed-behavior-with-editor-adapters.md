@@ -1,7 +1,7 @@
 ---
 title: 편집기 어댑터를 사용 하 여 새롭거나 변경 된 동작 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce1cc8c95fcd2c6a34342b71c1c94bf5930e0e51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 740fc83a9ded8ad35b93120d6fdec5767ceeea82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555050"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178960"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>편집기 어댑터를 사용 하 여 새롭거나 변경 된 동작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [새로 만들기 또는 편집기 어댑터를 사용 하 여 변경 된 동작](https://docs.microsoft.com/visualstudio/extensibility/new-or-changed-behavior-with-editor-adapters)합니다.  
-  
 편집기 어댑터의 동작에 다음과 같은 차이점을 알도록 해야 Visual Studio 핵심 편집기의 이전 버전에 대해 작성 된 코드를 업데이트 하는 새로운 API를 사용 하는 대신 편집기 어댑터 (또는 shim)를 사용 하려는 경우 이전 코어 편집기 관련 하 여입니다.  
   
 ## <a name="features"></a>기능  

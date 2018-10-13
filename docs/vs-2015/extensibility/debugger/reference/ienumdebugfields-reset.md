@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFields::Reset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 38ff61e4-0120-42e8-971a-16be6050b425
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fab8459f1cb279fd514730e7c3319bba951d04a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6af2eb12a0f87e07120350ff05eb11846c07644c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175242"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IEnumDebugFields::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugfields-reset)합니다.  
-  
 이 메서드는 첫 번째 요소를 열거형을 초기화합니다.  
   
 ## <a name="syntax"></a>구문  

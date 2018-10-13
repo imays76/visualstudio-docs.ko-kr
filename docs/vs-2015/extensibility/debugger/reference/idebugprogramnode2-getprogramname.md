@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetProgramName | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f12266d29d02e15adeb08168ea39c6663e9f24b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2424ac4f17d858274dd97810206c76f4b860604
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556693"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182847"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProgramNode2::GetProgramName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramnode2-getprogramname)합니다.  
-  
 프로그램의 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

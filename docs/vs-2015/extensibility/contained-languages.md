@@ -1,7 +1,7 @@
 ---
 title: 언어를 포함 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,17 +15,16 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0b455a526bf1b32de90588a103c23855e730946
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f297027d2196cf69c241f651fd84cbb18ecfa1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554815"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184966"
 ---
 # <a name="contained-languages"></a>포함 된 언어
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [포함 된 언어](https://docs.microsoft.com/visualstudio/extensibility/contained-languages)합니다.  
   
 *언어 포함* 은 다른 언어에 포함 된 언어입니다. 예를 들어, HTML [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 페이지에 포함 될 수 있습니다 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 또는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 스크립트입니다. 이중 언어 아키텍처는 HTML 및 스크립팅 언어에 대 한 IntelliSense, 색 지정 및 다른 편집 기능을 제공 하는.aspx 파일 편집기 필요 합니다.  
   

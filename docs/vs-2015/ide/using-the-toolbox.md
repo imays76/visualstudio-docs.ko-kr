@@ -1,7 +1,7 @@
 ---
 title: 도구 상자 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 140387efef05d7f03812a2d5147aa3cdfc111ed1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28f142a011f86afe70bfe83fd2cec274548c7b50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541597"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173149"
 ---
 # <a name="using-the-toolbox"></a>도구 상자 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도구 상자를 사용 하 여](https://docs.microsoft.com/visualstudio/ide/using-the-toolbox)입니다.  
-  
 도구 상자를 사용하여 프로젝트에 컨트롤과 기타 항목을 추가할 수 있습니다. 여러 컨트롤을 사용 중인 디자이너 화면에 끌어 놓은 다음 해당 컨트롤의 크기를 조정하고 배치할 수 있습니다.  
   
  도구 상자는 XAML 파일의 디자이너 보기와 같은 디자이너 보기와 함께 나타납니다. 현재 디자이너에서 사용할 수 있는 컨트롤만 도구 상자에 표시됩니다.  

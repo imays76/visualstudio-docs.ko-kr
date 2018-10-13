@@ -1,7 +1,7 @@
 ---
 title: '&lt;trustInfo&gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dd14e5bf24262d7f6c16245c74d093ca556cc2fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175567"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 요소 (ClickOnce 응용 프로그램)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ &lt;trustInfo&gt; 요소 (ClickOnce 응용 프로그램)](https://docs.microsoft.com/visualstudio/deployment/trustinfo-element-clickonce-application)합니다.  
-  
 응용 프로그램을 클라이언트 컴퓨터에서 실행하는 데 필요한 최소 보안 권한을 설명합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -279,7 +277,7 @@ ms.locfileid: "47551774"
   
 ## <a name="see-also"></a>참고 항목  
  [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)   
- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

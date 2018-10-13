@@ -1,7 +1,7 @@
 ---
 title: 'UML 클래스 다이어그램: 지침 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 073fb32fae3d02e7edaa8adb8347901e797d047f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181781"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML 클래스 다이어그램: 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 클래스 다이어그램: 지침](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-guidelines)합니다.  
-  
 Visual Studio에서 사용할 수는 *UML 클래스 다이어그램* 데이터 형식 및 해당 관계를 구현과 분리 합니다. 이 다이어그램은 클래스의 구현 대신 논리적 측면에 중점을 둘 때 사용됩니다.  
   
  UML 클래스 다이어그램을 만들려면에 **아키텍처** 메뉴 선택 **새 UML 다이어그램 또는 레이어 다이어그램**합니다.  

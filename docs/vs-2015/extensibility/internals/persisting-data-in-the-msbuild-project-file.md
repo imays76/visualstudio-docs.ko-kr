@@ -1,7 +1,7 @@
 ---
 title: MSBuild 프로젝트 파일에 데이터를 유지 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 288fe5387a25ed74f0fd18d9d461328f4e922724
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fb062ab2a3f3ad692c3b8aff2d6b8d5fefef207
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187696"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild 프로젝트 파일의 데이터 유지
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 프로젝트 파일의 데이터 유지](https://docs.microsoft.com/visualstudio/extensibility/internals/persisting-data-in-the-msbuild-project-file)합니다.  
-  
 프로젝트 하위 형식이 면 나중에 사용할 프로젝트 파일에 하위 형식의 특정 데이터를 유지 해야 합니다. 프로젝트 하위 형식이 면 다음 요구 사항을 충족 하기 위해 프로젝트 파일 지 속성을 사용 합니다.  
   
 1.  프로젝트 빌드의 일부로 사용 되는 데이터를 유지 합니다. (Microsoft Build Engine에 대 한 자세한 내용은 참조 하세요. [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) 빌드 관련 정보를 수행할 수 있습니다.  

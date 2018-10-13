@@ -1,7 +1,7 @@
 ---
 title: 속성 &lt;속성 이름이&gt; 연결에 참여 하 고 있으므로 삭제할 수 없습니다 &lt;연결 이름&gt; | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6983d52615219c386b049eea33f9f911956c6d59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdd2c2ab26709a017801e8ae34e4ee6f2223c2c3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177738"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>속성 &lt;속성 이름이&gt; 연결에 참여 하 고 있으므로 삭제할 수 없습니다 &lt;연결 이름&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [속성을 &lt;속성 이름&gt; 연결에 참여 하 고 있으므로 삭제할 수 없습니다 &lt;연결 이름&gt;](https://docs.microsoft.com/visualstudio/data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name)합니다.  
-  
   
 선택한 속성이로 설정 되어는 **연결 속성** 클래스 간의 연결에 대 한 오류 메시지에 표시 합니다. 속성이 데이터 클래스 간 연결에 참여 중인 경우에는 해당 속성을 삭제할 수 없습니다.  
   

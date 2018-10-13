@@ -1,7 +1,7 @@
 ---
 title: '방법: 액세스 및 현재 선택 영역 제약 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 308187842eeaed8e216336ab84c6e9036c1ced70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187579"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>방법: 현재 선택 항목 액세스 및 제약
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 액세스 및 현재 선택 영역 제약](https://docs.microsoft.com/visualstudio/modeling/how-to-access-and-constrain-the-current-selection)합니다.  
-  
 도메인 특정 언어에 대 한 명령 또는 제스처 처리기를 작성 하는 경우 사용자를 마우스 오른쪽 단추로 클릭 하는 요소를 확인할 수 있습니다. 또한 일부 셰이프나 필드 선택에서 방지할 수 있습니다. 예를 들어, 사용자는 아이콘 decorator가 때 모양을 포함 하는 대신 선택 되도록 정렬할 수 있습니다. 이 방식으로 선택 제한 작성 해야 하는 처리기의 수를 줄입니다. 또한 쉽게 decorator를 방지 하지 않고도 셰이프에서 아무 곳 이나 클릭 수 있는 사용자에 대 한 합니다.  
   
 ## <a name="accessing-the-current-selection-from-a-command-handler"></a>명령 처리기에서 현재 선택 영역에 액세스  

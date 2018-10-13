@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 생산성 팁 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05bac3fe7d5272674b141b15459d2d21c521cc0f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ced1b47c0e5b9d50fb8752dc79ab516ca682bd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543784"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173332"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio 생산성 팁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 생산성 팁](https://docs.microsoft.com/visualstudio/ide/productivity-tips-for-visual-studio)합니다.  
-  
 아래의 팁을 사용하면 Visual Studio에서 더욱 신속하고 효과적으로 코드를 작성, 탐색 및 디버깅할 수 있습니다. 공통된 바로 가기 키에 대한 자세한 내용은 [팁과 요령](../ide/tips-and-tricks-for-visual-studio.md)을 참조하세요. 자세한 목록은 [바로 가기 키 식별 및 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) 및 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.  
   
  이 항목은 다음 섹션으로 구성되어 있습니다.  

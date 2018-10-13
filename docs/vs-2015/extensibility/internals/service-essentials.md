@@ -1,7 +1,7 @@
 ---
 title: Essentials 서비스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 497f894f1ae8eef6c58ffeea542128105a51336b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec9ccc92a8650c71336fc4a6916b797bd449dc7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555824"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178138"
 ---
 # <a name="service-essentials"></a>서비스 필수 항목
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Service Essentials](https://docs.microsoft.com/visualstudio/extensibility/internals/service-essentials)합니다.  
-  
 서비스는 두 Vspackage 간의 계약입니다. 하나의 VSPackage를 사용 하는 다른 VSPackage에 대 한 인터페이스의 특정 집합을 제공 합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 다른 Vspackage에 서비스를 제공 하는 Vspackage의 컬렉션인 됩니다.  
   
  예를 들어 활동 로그에 작성 하는 데 사용할 수 있는 IVsActivityLog 인터페이스를 가져올 SVsActivityLog 서비스를 사용할 수 있습니다. 자세한 내용은 [방법: 활동 로그를 사용 하 여](../../extensibility/how-to-use-the-activity-log.md)입니다.  

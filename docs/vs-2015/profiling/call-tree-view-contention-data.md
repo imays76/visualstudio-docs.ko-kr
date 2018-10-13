@@ -1,7 +1,7 @@
 ---
 title: 호출 트리 뷰 - 경합 데이터 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 337152a7a91f7e2f6ce4a19a4cb77b166ebe5754
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4b4b7b0ac3a6bb77c539b54162bf449e19771a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541995"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179224"
 ---
 # <a name="call-tree-view---contention-data"></a>호출 트리 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [호출 트리 뷰-경합 데이터](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-contention-data)입니다.  
-  
 호출 트리 뷰에는 프로파일링 된 응용 프로그램에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 응용 프로그램 또는 구성 요소에 대한 진입점입니다. 각 함수 노드는 호출한 모든 함수, 다른 스레드 또는 프로세스와 리소스에 대해 경합하기 때문에 함수가 차단된 횟수 및 함수가 차단된 시간을 나열합니다.  
   
  호출 트리 뷰의 값은 호출 트리의 부모 함수가 호출한 함수 인스턴스에 대한 값입니다. 비율 값은 프로파일링 실행 시 총 경합 수와 함수 인스턴스 값을 비교하여 계산됩니다.  

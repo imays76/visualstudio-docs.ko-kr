@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::Attach | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ff2520a64ca338cb703c5e22f8a0c021b52540
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09024b9a3a28016b79a0843d3b0ea9455dd452a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174774"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProcess2::Attach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-attach)합니다.  
-  
 세션 디버그 관리자 (SDM) 프로세스에 연결 합니다.  
   
 ## <a name="syntax"></a>구문  

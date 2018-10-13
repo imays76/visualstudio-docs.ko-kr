@@ -1,7 +1,7 @@
 ---
 title: 프로파일링 및 Windows Vista 보안 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 736e7a04813a6c56d6cab6d1886171e321d583cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 141c8ee9e2a5924ce74dca119e1ba897add0c04b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556997"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185903"
 ---
 # <a name="profiling-and-windows-vista-security"></a>프로파일링 및 Windows Vista 보안
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로 파일링 및 Windows Vista 보안](https://docs.microsoft.com/visualstudio/profiling/profiling-and-windows-vista-security)합니다.  
-  
 컴퓨터 관리자가 사용 가능하도록 설정한 [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] 사용자 액세스 권한 설정에 따라 개별 사용자에게 해당 컴퓨터에서 프로세스를 프로파일링하기 위한 보안 권한이 있을 수 있습니다. 다음 예제에서는 사용자 간에 가능한 차이점을 보여 줍니다.  
   
 -   관리자가 드라이버 및 서비스를 시작하도록 설정한 경우 일부 사용자는 고급 프로파일링 기능에 액세스할 수 있습니다.  

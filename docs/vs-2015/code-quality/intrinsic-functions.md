@@ -1,7 +1,7 @@
 ---
 title: 내장 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a391bc1f5208b47ffb1aca51dbbd40b5b15fb04d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b50742c0176b8c880d3ed0b58b7b8ef76355777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174488"
 ---
 # <a name="intrinsic-functions"></a>내장 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [내장 함수](https://docs.microsoft.com/visualstudio/code-quality/intrinsic-functions)합니다.  
-  
 SAL의 식을 제공 하는 의도 하지 않은 식 C/c + + 식일 수 있습니다-예를 들어, + +,--를이 컨텍스트에서 의도 하지 않은 모든 함수 호출 합니다.  그러나 SAL는 일부 함수와 비슷한 개체 및 SAL 식에서 사용할 수 있는 일부 예약 된 기호를 제공 합니다. 이러한 이라고 *내장 함수*합니다.  
   
 ## <a name="general-purpose"></a>일반 용도  
@@ -44,7 +42,7 @@ SAL의 식을 제공 하는 의도 하지 않은 식 C/c + + 식일 수 있습�
 |`_Inexpressible_(expr)`|버퍼의 크기는 너무 복잡해 서 주석 식을 사용 하 여 표시할 수 있는 상황을 표현 합니다.-예를 들어, 멤버를 선택한 경우 입력된 데이터 집합을 검색 하 고 다음 계산 하 여 계산 됩니다.|  
 |`_Nullterm_length_(param)`|`param` null 종결자를 포함 하지 않습니다 하지만 최대 버퍼의 요소 수가입니다. 비 집계, void가 아닌 형식의 모든 버퍼를 적용할 수 있습니다.|  
 |`_Old_(expr)`|전제 조건에서 계산 될 때 `_Old_` 입력된 값을 반환 합니다 `expr`합니다.  값을 반환 한다는 사후 조건에서 계산할 때 `expr` 사전 조건에서 계산한 되는 것입니다.|  
-|`_Param_(n)`|합니다 `n`번째 매개 변수가 1부터 계산 함수에 대 `n`, 및 `n` 리터럴 정수 계열 상수입니다. 매개 변수 이름이 인 경우이 주석은 매개 변수 이름으로 액세스할 수 있도록 동일 합니다. **참고:** `n` 줄임표에 의해 정의 됩니다 또는 이름이 사용 되지 않습니다 함수 프로토타입의 사용할 수 있습니다 하는 위치 매개 변수를 참조할 수 있습니다.  |  
+|`_Param_(n)`|합니다 `n`번째 매개 변수가 1부터 계산 함수에 대 `n`, 및 `n` 리터럴 정수 계열 상수입니다. 매개 변수 이름이 인 경우이 주석은 매개 변수 이름으로 액세스할 수 있도록 동일 합니다. **참고:** `n` 줄임표에 의해 정의 됩니다 또는 이름이 사용 되지 않습니다 함수 프로토타입의 사용할 수 있습니다 하는 위치 매개 변수를 참조할 수 있습니다.|  
 |`return`|C/c + + 예약 키워드 `return` 함수의 반환 값을 나타내는 SAL 식에 사용할 수 있습니다.  값은 post 상태에만 사용할 수 이 사전 상태에서 사용 하려면 구문 오류입니다.|  
   
 ## <a name="string-specific"></a>특정 문자열  

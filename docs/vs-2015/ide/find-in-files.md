@@ -1,7 +1,7 @@
 ---
 title: 파일에서 찾기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2f6f51f53642f0eb17cbbae5498ce1c4c288a867
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553192"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178258"
 ---
 # <a name="find-in-files"></a>파일에서 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [파일에서 찾기](https://docs.microsoft.com/visualstudio/ide/find-in-files)합니다.  
-  
 파일 * *에서 찾기를 사용 하면 지정된 된 파일 집합을 검색할 수 있습니다. 찾은 일치 항목과 수행된 작업이 **결과 옵션**에서 선택된 **결과 찾기** 창에 나열됩니다.  
   
  다음 방법 중 하나를 사용하여 **찾기 및 바꾸기** 창에서 **파일에서 찾기**를 표시할 수 있습니다.  

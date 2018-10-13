@@ -1,7 +1,7 @@
 ---
 title: '방법: MIP 수준 만들기 및 수정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 629b7a2d2b1b80c8a2eede4ebd7a3c016651b2bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9578fd2bdafeaf8c9a3e9fcd3dd5523b4d8cc7f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184290"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>방법: MIP 수준 만들기 및 수정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 만들기 및 수정 MIP 수준](https://docs.microsoft.com/visualstudio/designers/how-to-create-and-modify-mip-levels)합니다.  
-  
 이 문서에서는 **이미지 편집기**를 사용하여 질감 공간 LoD(세밀도)에 대한 *MIP 수준*을 생성하고 수정하는 방법을 보여 줍니다.  
   
 ## <a name="generating-mip-levels"></a>MIP 수준 생성  

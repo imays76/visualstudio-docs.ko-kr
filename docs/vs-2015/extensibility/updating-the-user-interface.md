@@ -1,7 +1,7 @@
 ---
 title: 사용자 인터페이스 업데이트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77fa7407c6c271b66104ed6d835bc516a40c288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564598"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181043"
 ---
 # <a name="updating-the-user-interface"></a>사용자 인터페이스 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 인터페이스 업데이트](https://docs.microsoft.com/visualstudio/extensibility/updating-the-user-interface)합니다.  
-  
 명령을 구현한 후에 새 명령의 상태를 사용 하 여 사용자 인터페이스를 업데이트 하는 코드를 추가할 수 있습니다.  
   
  일반적인 Win32 응용 프로그램을 명령 집합을 지속적으로 폴링할 수 있습니다 하 고 해당 사용자를 볼 경우에 개별 명령의 상태를 조정할 수 있습니다. 그러나 때문에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셸 Vspackage의 무제한을 호스트할 수 있습니다, 광범위 한 폴링 응답성, 특히 관리 코드와 COM. interop 어셈블리에서 폴링 저하 될 수 있습니다  

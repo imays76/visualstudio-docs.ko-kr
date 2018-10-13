@@ -1,7 +1,7 @@
 ---
 title: Blend에서 XAML 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1fe1c312c747e25fc1b1e93a51e26d6e67c4a9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c2e135c788ce4fc632efa617323e7ac6fc1f3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179883"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend에서 XAML 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Blend에서 XAML 디버그](https://docs.microsoft.com/visualstudio/debugger/debug-xaml-in-blend)합니다.  
-  
 [!INCLUDE[blend_first](../includes/blend-first-md.md)]의 도구를 사용하여 앱에서 XAML을 디버그할 수 있습니다. 프로젝트를 빌드하면 오류가 표시 됩니다는 **결과** 패널입니다. 오류를 두 번 클릭하여 오류와 관련된 태그를 찾습니다. 작업 공간을 추가로 해야 하는 경우 숨길 수 있습니다 합니다 **결과** F12 키를 눌러 패널입니다.  
   
 ## <a name="syntax-errors"></a>구문 오류  

@@ -1,7 +1,7 @@
 ---
 title: MSBuild를 사용하여 빌드 로그 가져오기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc6d3981b2c671eda2a121f698835dd7932894bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176009"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>MSBuild를 사용하여 빌드 로그 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 사용 하 여 빌드 로그 가져오기](https://docs.microsoft.com/visualstudio/msbuild/obtaining-build-logs-with-msbuild)합니다.  
-  
   
 MSBuild에서 스위치를 사용하면 검토할 빌드 데이터의 양과 하나 이상의 파일에 빌드 데이터를 저장할지를 지정할 수 있습니다. 빌드 데이터를 수집하는 사용자 지정 로거를 지정할 수도 있습니다. 이 항목에서 다루지 않는 MSBuild 명령줄 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.  
   

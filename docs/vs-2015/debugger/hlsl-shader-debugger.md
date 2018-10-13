@@ -1,7 +1,7 @@
 ---
 title: HLSL 셰이더 디버거 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1f2fe68cf380016adf4efc6b731b29843503638
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d759a587057550930271a91205f278704c4cbc21
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174189"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 셰이더 디버거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [HLSL 셰이더 디버거](https://docs.microsoft.com/visualstudio/debugger/graphics/hlsl-shader-debugger)합니다.  
-  
 Visual Studio Graphics Analyzer의 HLSL 디버거를 사용하면 앱의 실제 조건에서 HLSL 셰이더 코드가 작동하는 방식을 이해할 수 있습니다.  
   
  이것은 HLSL 디버거입니다.  

@@ -1,7 +1,7 @@
 ---
 title: 대체 문자열을 사용 합니다. Pkgdef 및 합니다. Pkgundef 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b1755d63-d794-4fd7-864b-70a9684881c2
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24996e4e32ab86af46fce5280947719f906ffc3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f679f5c4f817002fa92475a1fba7dc38caa34984
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556797"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175294"
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>대체 문자열을 사용 합니다. Pkgdef 및 합니다. Pkgundef 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [대체 문자열에 사용 됩니다. Pkgdef 및 합니다. Pkgundef 파일](https://docs.microsoft.com/visualstudio/extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files)합니다.  
-  
 .pkgdef에서 아래 나열 된 대체 문자열을 사용할 수 있습니다 하 고 Visual Studio에 대해 정의한.pkgundef 파일 격리 셸 응용 프로그램 키를 누릅니다.  
   
 ## <a name="substitution-strings"></a>대체 문자열  

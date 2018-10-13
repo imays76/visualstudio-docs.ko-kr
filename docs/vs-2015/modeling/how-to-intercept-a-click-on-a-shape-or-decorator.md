@@ -1,7 +1,7 @@
 ---
 title: '방법: 모양 또는 데코레이터 클릭 가로채기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 306e61307a6d9a5ff41a3a4492365bef39ab8449
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ca1917d71ff2ef0961e9f5c99839759c7decff3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554906"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176048"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>방법: 모양 또는 데코레이터 클릭 가로채기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 모양 또는 데코레이터 클릭 가로채기](https://docs.microsoft.com/visualstudio/modeling/how-to-intercept-a-click-on-a-shape-or-decorator)합니다.  
-  
 다음 절차에 셰이프 또는 아이콘 데코레이터 클릭 가로채기 방법을 보여 줍니다. 두 번 클릭, 끌기가 가로챌 수 있습니다 하 고 다른 제스처에 응답 하는 요소를 확인 합니다.  
   
 ## <a name="to-intercept-clicks-on-shapes"></a>모양에 대 한 클릭 가로채기 위해  

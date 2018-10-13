@@ -1,7 +1,7 @@
 ---
 title: 'CA2130: 보안 위험 상수는 투명 해야 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a74d6fe3c0507914fa4bd9723a53579db230c467
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 0e8e76469a60a8b14157b840b9b050519b9a6ac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186584"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: 보안 위험 상수는 투명해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA2130: 보안 위험 상수는 투명 해야 합니다.](https://docs.microsoft.com/visualstudio/code-quality/ca2130-security-critical-constants-should-be-transparent)합니다.
-
 |||
 |-|-|
 |TypeName|ConstantsShouldBeTransparent|

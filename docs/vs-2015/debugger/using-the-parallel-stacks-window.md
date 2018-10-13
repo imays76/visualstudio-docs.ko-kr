@@ -1,7 +1,7 @@
 ---
 title: 병렬을 사용 하 여 스택 창 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01dd627143c072fea6dec99ea47ee4d6919dd62e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182175"
 ---
 # <a name="using-the-parallel-stacks-window"></a>병렬 스택 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [병렬 스택 창 사용](https://docs.microsoft.com/visualstudio/debugger/using-the-parallel-stacks-window)합니다.  
-  
 합니다 **병렬 스택** 창은 다중 스레드 응용 프로그램을 디버깅할 때 유용 합니다. 해당 **스레드 뷰** 응용 프로그램에서 모든 스레드에 대 한 호출 스택 정보를 표시 합니다. 따라서 스레드와 스레드 스택 프레임 간을 탐색할 수 있습니다. 관리 코드에는 **작업 보기** 의 호출 스택이 표시 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 개체입니다. 네이티브 코드에는 **작업 보기** 의 호출 스택이 표시 [작업 그룹](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)를 [병렬 알고리즘](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [비동기 에이전트](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), 및 [간단한 작업](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)합니다.  
   
 ## <a name="threads-view"></a>스레드 뷰  

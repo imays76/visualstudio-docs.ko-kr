@@ -1,7 +1,7 @@
 ---
 title: 테스트 탐색기를 사용하여 기존 C++ 응용 프로그램 유닛 테스트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542169"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172460"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>테스트 탐색기를 사용하여 기존 C++ 응용 프로그램 유닛 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [단위 테스트 탐색기를 사용 하 여 기존 c + + 응용 프로그램을 테스트](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer)합니다.  
-  
 기존 응용 프로그램을 변경하기 전에 단위 테스트로 코드가 올바른지 확인해야 합니다. 이렇게 하면 변경으로 인해 버그가 발생하지 않았음을 확신할 수 있습니다. 응용 프로그램에 아직 단위 테스트가 없으면 이 항목에 설명된 기술을 사용하여 단위 테스트를 추가할 수 있습니다. 여기서는 기존 Visual C++ 코드에 대해 코드 테스트 방법을 결정하는 것으로 시작하여 테스트를 생성 및 작성하고 마지막으로 테스트를 실행하는 단위 테스트를 추가하는 방법에 대해 설명합니다.  
   
 ## <a name="deciding-how-to-test-your-code"></a>코드 테스트 방법 결정  

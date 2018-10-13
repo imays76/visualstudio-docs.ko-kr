@@ -1,7 +1,7 @@
 ---
 title: COM 디버깅 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e35bc648c12c53a092987b6c771c1793e58fd1c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27721346eb5c8ab4f8700b34c150a9e862b1dbf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184264"
 ---
 # <a name="com-debugging-tools"></a>COM 디버깅 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [COM 디버깅 도구](https://docs.microsoft.com/visualstudio/debugger/com-debugging-tools)합니다.  
-  
 이 항목에서는 COM 프로그램의 테스트 및 검사를 도와 주는 도구를 소개합니다.  
   
  OLE/COM 개체 뷰어  

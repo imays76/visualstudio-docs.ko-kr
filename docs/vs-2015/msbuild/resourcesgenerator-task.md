@@ -1,7 +1,7 @@
 ---
 title: ResourcesGenerator 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63ee00754683156dad2bd34a93ff43f820eb37c7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d2d470c91d6303976e5afcbffc7f4eff968ea04
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173305"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ResourcesGenerator 작업](https://docs.microsoft.com/visualstudio/msbuild/resourcesgenerator-task)합니다.  
-  
   
 <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 작업은 하나 이상의 리소스(.jpg, .ico, .bmp, 이진 형식의 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 및 기타 확장 형식)를 .resources 파일에 포함합니다.  
   

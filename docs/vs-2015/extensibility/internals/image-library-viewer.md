@@ -1,7 +1,7 @@
 ---
 title: 이미지 라이브러리 뷰어 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1af471eeada5f6da04f4fdf6b4ee69cc0741110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184108"
 ---
 # <a name="image-library-viewer"></a>이미지 라이브러리 뷰어
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [이미지 라이브러리 뷰어](https://docs.microsoft.com/visualstudio/extensibility/internals/image-library-viewer)합니다.  
-  
 Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual Studio는 동일한 방식으로 조작할 수 있도록 이미지 매니페스트를 검색할 수 있습니다. 백그라운드, 크기, DPI, 고대비 등 및 기타 설정을 변경할 수 있습니다. 또한 도구는 각 이미지 매니페스트에 대 한 정보를 로드를 표시 하 고 이미지 매니페스트에서 각 이미지에 대 한 소스 정보를 표시 합니다. 이 도구에 유용합니다.  
   
 1.  오류 진단  

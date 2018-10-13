@@ -1,7 +1,7 @@
 ---
 title: 도메인 특정 언어에 대 한 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 971c63d25aee9c8676921b5ee7e112ae41a8a251
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553769"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175268"
 ---
 # <a name="about-domain-specific-languages"></a>도메인별 언어 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 언어에 대 한](https://docs.microsoft.com/visualstudio/modeling/about-domain-specific-languages)합니다.  
-  
 C# 등 UML 범용 언어에서 달리 도메인 특정 언어 (DSL)는 문 특정 문제 영역에 도메인 익스프레스 하도록 설계 되었습니다.  
   
  잘 알려진 Dsl 정규식과 SQL을 포함 합니다. 각 DSL은 자체 범위를 벗어나는 아이디어를 설명 하는 텍스트 문자열 또는 데이터베이스에 있지만 훨씬 더 작업을 설명 하는 범용 언어 보다 훨씬 더 바람직합니다. 개별 산업 자신의 Dsl 수도 있습니다. 예를 들어 통신 업계에서 호출 설명 언어는 광범위 하 게 전화를 걸의 상태 순서를 지정 하 고 공중에서 업계를 이동 하는 데 사용 됩니다 표준 DSL는 항공편 예약에 설명 하는 데 사용 됩니다.  

@@ -1,7 +1,7 @@
 ---
 title: '연습: 계측을 사용하여 명령줄 프로파일링 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38702e7f296640ff43caeb18380aad95636df30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4362db36cb4b4695b667fc680dad58ce4092eced
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178011"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>연습: 계측을 사용하여 명령줄 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 명령줄 프로 파일링 사용 하 여 계측](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-instrumentation)합니다.  
-  
 이 연습에서는 프로파일링 도구의 계측 방법을 사용하여 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 독립 실행형 응용 프로그램을 프로파일링해 자세한 타이밍 및 호출 수 데이터를 수집하는 과정을 안내합니다. 이 연습에서는 다음 작업을 수행합니다.  
   
 -   [VSInstr](../profiling/vsinstr.md) 명령줄 도구를 사용하여 계측된 이진 파일을 생성합니다.  

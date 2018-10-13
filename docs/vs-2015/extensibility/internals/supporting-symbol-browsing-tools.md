@@ -1,7 +1,7 @@
 ---
 title: 기호 검색 도구를 지 원하는 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c406cdf7b975e37522bccc0d45687593b1a35ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df1b61d387497c1e83519fde104ad6a66d92133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187319"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>기호 검색 도구 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [기호를 지 원하는 검색 도구](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-symbol-browsing-tools)합니다.  
-  
 **개체 브라우저**, **클래스 뷰**를 **호출 브라우저** 하 고 **기호 찾기 결과** 도구는 Visual Studio의 기능을 검색 하는 기호를 제공 합니다. 이러한 도구는 기호의 계층적 트리 보기를 표시 하 고 트리에서 기호 사이의 관계를 보여 줍니다. 네임 스페이스, 개체, 클래스, 클래스 멤버 및 다양 한 구성 요소에 포함 된 다른 언어 요소에 기호를 나타낼 수 있습니다. 구성 요소에는 Visual Studio 프로젝트의 경우 외부 포함 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 구성 요소 및 형식 (.tlb) 라이브러리. 자세한 내용은 [코드 구조 보기](../../ide/viewing-the-structure-of-code.md)를 참조하세요.  
   
 ## <a name="symbol-browsing-libraries"></a>기호 검색 라이브러리  

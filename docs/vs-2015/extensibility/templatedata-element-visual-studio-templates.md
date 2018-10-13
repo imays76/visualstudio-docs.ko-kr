@@ -1,7 +1,7 @@
 ---
 title: TemplateData 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03825105f549030c05ac202f1e3601977adec7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52ca9ada28f40beb26ce88c6dfcd42a170ea5010
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172356"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [TemplateData 요소 (Visual Studio 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/templatedata-element-visual-studio-templates)합니다.  
-  
 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.  
   
  \<VSTemplate>  
@@ -56,7 +54,7 @@ ms.locfileid: "47543949"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[Name](../extensibility/name-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 표시 된 대로 템플릿의 이름을 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.|  
+|[이름](../extensibility/name-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 표시 된 대로 템플릿의 이름을 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.|  
 |[설명](../extensibility/description-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 표시 된 대로 템플릿의 설명을 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.|  
 |[아이콘](../extensibility/icon-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 경로 중에 나타나는 아이콘으로 사용 되는 이미지 파일의 파일 이름을 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 템플릿에 대 한 대화 상자.|  
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 지정 된 그룹에 나타나도록 프로젝트 템플릿을 분류 합니다 **새 프로젝트** 대화 상자.|  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 권한 설정 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4bed698bd520255dd762aa223e3eb94a5d704e6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555368"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187553"
 ---
 # <a name="how-to-set-permissions"></a>방법: 권한 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 권한 설정](https://docs.microsoft.com/visualstudio/profiling/how-to-set-permissions)합니다.  
-  
 이 항목에서는 컴퓨터 관리자가 해당 컴퓨터에 대한 관리자 권한이 없는 사용자 또는 그룹에게 프로파일링에 필요한 보안 권한을 부여하는 방식을 설명합니다.  
   
  기본 보안 원칙에 의하면 응용 프로그램은 필요한 권한보다 크지 않은 권한으로 실행되어야 합니다. 이 원칙은 사용자에게도 적용됩니다. 사용자가 Administrators 그룹이 아닌 사용자 그룹의 구성원으로 로그온할 때 전체 권한을 가질 수 있다면 사용자에게 관리자 권한을 부여하면 안 됩니다. 첫 번째 절차 "사용자 권한을 가진 사용자 계정을 만들려면"에서는 사용자 그룹의 구성원에 대한 사용자 계정을 만드는 방법을 설명합니다.  

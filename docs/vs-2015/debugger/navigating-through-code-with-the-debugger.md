@@ -1,14 +1,14 @@
 ---
 title: 디버거로 코드 탐색 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 dev_langs:
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b5bbca0b547510056b1aecfa0e7237e40a9814
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186162"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>디버거로 코드 탐색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio의 디버거를 사용 하 여 코드 탐색](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)합니다.  
-  
 명령 및 바로 가기를 디버거에서 코드를 탐색 하는 데 익숙한을 가져와 빠르고 쉽게 찾고 앱 관련 문제를 해결 하 게 합니다. 하면 디버거에서 코드를 탐색 하는 동안 [앱의 상태를 검사](https://msdn.microsoft.com/library/mt243867.aspx#BKMK_Inspect_Variables) 또는 해당 실행 흐름에 자세히 알아봅니다.  
   
 ## <a name="start-debugging"></a>디버깅 시작  

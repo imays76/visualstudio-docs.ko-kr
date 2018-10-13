@@ -1,7 +1,7 @@
 ---
 title: XAML 디자이너 에서 컨트롤을 삽입하고 해당 동작을 수정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5807f503a76ba92383c3081bc0258da7f29d10fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca377bcb37b44e1545d0502289217d331a495fae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179376"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>XAML 디자이너 에서 컨트롤을 삽입하고 해당 동작을 수정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [컨트롤을 삽입 하 고 XAML 디자이너에서 해당 동작을 수정](https://docs.microsoft.com/visualstudio/designers/insert-controls-and-modify-their-behavior-in-xaml-designer)합니다.  
-  
 컨트롤을 사용하면 사용자가 앱과 상호 작용할 수 있습니다. 컨트롤을 사용하여 정보를 수집하고 개체에 애니메이션 효과를 적용하고 데이터 소스를 쿼리하는 등 여러 동작을 수행할 수 있습니다.  
   
  **항목 내용**  

@@ -1,7 +1,7 @@
 ---
 title: SolutionFolder 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 48a6afddc8f434d03bba75ab55f31666aabdbe39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0123c813e0270970bb4fbd1ba5b2a9b2ce2cbc15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185525"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SolutionFolder 요소 (Visual Studio 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/solutionfolder-element-visual-studio-templates)합니다.  
-  
 다중 프로젝트 템플릿의 프로젝트를 그룹화합니다.  
   
  \<VSTemplate>  

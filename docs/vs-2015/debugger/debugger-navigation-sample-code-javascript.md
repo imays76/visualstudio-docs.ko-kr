@@ -1,7 +1,7 @@
 ---
 title: 디버거 탐색 샘플 코드 (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10c7fb0a2ae5aa16174541010568d81787479a10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33703a08212c46d4207ff320fcd947f5161d4f8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174176"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>디버거 탐색 샘플 코드(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거 탐색 샘플 코드 (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/debugger-navigation-sample-code-javascript)합니다.  
-  
 이 항목의 코드에 대 한 샘플 파일이 합니다 [(JavaScript) 디버그 세션에서 실행 제어](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) 항목입니다.  
   
 ## <a name="defaultjs-sample-code"></a>default.js 샘플 코드  

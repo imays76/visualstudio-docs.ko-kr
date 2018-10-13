@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스에서 문 완성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 337ea5de468755fcba5cefe0fe4067b73bd59def
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab481ff516cb6b10a4330b4255ea3e75a333f3da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175060"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 명령문 완성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스에서 문 완성](https://docs.microsoft.com/visualstudio/extensibility/internals/statement-completion-in-a-legacy-language-service)합니다.  
-  
 문 완성 하는 언어 서비스는 언어 키워드 또는 핵심 편집기에 입력 시작 하는 요소를 완료 하는 사용자를 사용 하면 프로세스. 이 항목에는 문 완성 작동 원리 및 언어 서비스에서 구현 하는 방법을 설명 합니다.  
   
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 문 완성 기능을 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [연습: 문 완성 표시](../../extensibility/walkthrough-displaying-statement-completion.md)합니다.  

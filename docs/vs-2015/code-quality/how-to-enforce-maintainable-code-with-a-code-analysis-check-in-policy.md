@@ -1,7 +1,7 @@
 ---
 title: '방법: 코드 분석 체크 인 정책 사용 하 여 유지 관리 가능한 코드 적용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 97b321fe5a72c6f3ace680476340eca48f7ed309
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555355"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174853"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>방법: 코드 분석 체크 인 정책을 통해 유지 관리할 수 있는 코드 적용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 코드 분석 체크 인 정책 사용 하 여 유지 관리 가능한 코드 적용](https://docs.microsoft.com/visualstudio/code-quality/how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy)합니다.  
-  
 개발자가 복잡 하 고 해당 코드의 유지 관리 용이성 측정 코드 메트릭 도구를 사용할 수 있지만 코드 메트릭 체크 인 정책의 일부로 호출할 수 없습니다. 그러나 팀 코드 메트릭 표준 사용 하 여 해당 코드의 호환성을 확인 하 고 체크 인 정책을 통해 규칙을 적용 하는 코드 분석 규칙을 설정할 수 있습니다. 코드 메트릭에 대 한 자세한 내용은 참조는 [코드 메트릭 값](../code-quality/code-metrics-values.md)합니다.  
   
  개발자는 상속 깊이, 클래스 결합, 유지 관리 인덱스 및 복잡성 규칙 코드 분석 체크 인 정책을 통해 유지 관리 가능한 코드에 적용할 수 있습니다. 이러한 규칙의 모든 네는 코드 분석 정책 편집기에서 "유지 관리 규칙" 범주에 있습니다.  

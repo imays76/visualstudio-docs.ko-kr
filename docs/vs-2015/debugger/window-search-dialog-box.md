@@ -1,7 +1,7 @@
 ---
 title: 창 검색 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd352f1943d4576f848f5bd8d1a51b9196d72d03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9ec54fb45a84ade7d0f87cb2c7a7c5d953b9df4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554849"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179974"
 ---
 # <a name="window-search-dialog-box"></a>창 경로 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [창 검색 대화 상자](https://docs.microsoft.com/visualstudio/debugger/window-search-dialog-box)합니다.  
-  
 이 대화 상자를 사용 하 여 찾아서의 특정 창에 대 한 노드를 선택 [Windows 보기](../debugger/windows-view.md)합니다. 이 대화 상자를 표시 하려면 Windows 보기 창에 포커스를 이동 합니다. 선택한 **창 찾기** 에서 합니다 **검색** 메뉴.  
   
  사용할 수는 **찾기 도구** 창 핸들을 입력 하거나 캡션과 클래스 창을 식별할 수 있습니다 하 창 또는 사용자를 선택 합니다.  

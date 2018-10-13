@@ -1,7 +1,7 @@
 ---
 title: '방법: 그래프 뷰를 사용 하 여 스키마 집합 개요 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0b7c3d1d9f351e496469e5b13552ec78e1548f5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3722af4aef2f56d6da1c2a79840c05edd2a87b65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557319"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181365"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>방법: 그래프 뷰를 사용하여 스키마 집합의 개요 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 그래프 뷰 스키마 설정 사용 하 여 개요 가져오기](https://docs.microsoft.com/visualstudio/xml-tools/how-to-get-an-overview-of-a-schema-set-using-the-graph-view)합니다.  
-  
   
 이 항목에서는 사용 하는 방법을 설명 합니다 [그래프 뷰](../xml-tools/graph-view.md) 스키마 집합 및 노드 간 관계에 있는 노드의 상위 수준 보기를 확인 합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: Windows 스토어 앱 실행 시뮬레이터에서 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190725"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>시뮬레이터에서 Windows 스토어 앱 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows 스토어 앱 실행 시뮬레이터에서](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator)합니다.  
-  
 Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토어 앱을 시뮬레이션하는 데스크톱 응용 프로그램입니다. 개발 컴퓨터에서 응용 프로그램을 실행하고 일반적인 터치 및 회전 이벤트를 시뮬레이트할 수 있습니다. 에뮬레이트하려는 실제 화면 크기와 해상도를 선택하고 네트워크 연결 속성을 시뮬레이트할 수도 있습니다.  
   
  시뮬레이터는 Windows 스토어 앱을 디자인, 개발, 디버그 및 테스트할 수 있는 환경을 제공합니다. 그러나 앱을 Windows 스토어에 게시하기 전 먼저 실제 장치에서 앱을 테스트해야 합니다.  
@@ -104,7 +102,7 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
  화면 크기 및 해상도는 *Screen width inches, pixel width X pixel height*로 나열됩니다. 화면 크기와 해상도 모두 시뮬레이션됩니다. 시뮬레이터에서의 위치 좌표는 선택한 장치 크기 및 해상도의 좌표로 변환됩니다.  
   
 > [!NOTE]
->  비트맵 이미지의 배율이 조정된 버전을 응용 프로그램에 저장할 수 있으며 그러면 Windows에서 현재 배율에 맞는 올바른 이미지가 로드됩니다. 자세한 내용은 [응답성 있는 설계 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)합니다. 그러나 Windows에서 해상도에 맞는 다른 이미지를 선택하도록 시뮬레이터 해상도를 변경하면 디버그 세션을 중지한 후 다시 시작해야만 새 이미지를 볼 수 있습니다.  
+>  비트맵 이미지의 배율이 조정된 버전을 응용 프로그램에 저장할 수 있으며 그러면 Windows에서 현재 배율에 맞는 올바른 이미지가 로드됩니다. 자세한 내용은 [응답성 있는 설계 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)을 참조하세요. 그러나 Windows에서 해상도에 맞는 다른 이미지를 선택하도록 시뮬레이터 해상도를 변경하면 디버그 세션을 중지한 후 다시 시작해야만 새 이미지를 볼 수 있습니다.  
   
 ##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Windows 스토어에 제출할 응용 프로그램의 스크린샷 캡처  
  Windows 앱 스토어에 앱을 제출할 때 앱의 스크린샷을 포함해야 합니다.  
@@ -119,9 +117,9 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
      ![스크린샷 설정 상황에 맞는 메뉴](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 네트워크 연결 속성 시뮬레이트  
- 앱 사용자가 네트워크 연결 비용이나 데이터 계획 상태 변경을 지속적으로 인지하고, 지정된 데이터 전송 제한의 로밍 또는 초과로 인한 추가 비용이 발생하지 않도록 앱에서 이 정보를 사용하여 요금제 네트워크 연결 비용을 관리할 수 있습니다. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) Api를 사용 하면 응답할 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 및 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 서명 하는 이벤트입니다. [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)을 참조하세요.  
+ 앱 사용자가 네트워크 연결 비용이나 데이터 계획 상태 변경을 지속적으로 인지하고, 지정된 데이터 전송 제한의 로밍 또는 초과로 인한 추가 비용이 발생하지 않도록 앱에서 이 정보를 사용하여 요금제 네트워크 연결 비용을 관리할 수 있습니다. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API를 통해 서명된 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 및 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 이벤트에 응답할 수 있습니다. [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)을 참조하세요.  
   
- 시뮬레이터를 디버그 하거나 테스트 네트워크 비용 인식 코드를 통해 노출 되는 네트워크의 속성을 모방 하면 합니다 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 반환한 개체가 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
+ 네트워크 비용 인식 코드를 디버그하거나 테스트하려면 시뮬레이터가 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 에서 반환되는 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)개체를 통해 노출되는 네트워크의 속성을 모방하면 됩니다.  
   
  네트워크 속성을 시뮬레이트하려면  
   
@@ -131,15 +129,15 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
   
      확인란을 선택 취소하여 시뮬레이션을 제거하고 현재 연결된 인터페이스의 네트워크 속성으로 돌아갑니다.  
   
-3.  시뮬레이트된 네트워크의 **프로필 이름** 을 입력합니다. 시뮬레이션을 식별 하는 데 사용할 수 있는 고유한 이름을 사용 하는 것이 좋습니다 합니다 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 의 속성을 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 개체입니다.  
+3.  시뮬레이트된 네트워크의 **프로필 이름** 을 입력합니다. [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 개체의 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 속성에서 시뮬레이션을 식별하는 데 사용할 수 있도록 고유한 이름을 사용하는 것이 좋습니다.  
   
-4.  선택 된 [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) 에서 프로필에 대 한 값을 **네트워크 비용 형식** 목록.  
+4.  [네트워크 비용 형식](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) 목록에서 프로필에 **NetworkCostType** 값을 선택합니다.  
   
-5.  **데이터 한계 상태 플래그** 목록을 설정할 수 있습니다 합니다 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 속성 또는 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)속성을 true로 선택할 수 있습니다 또는  **데이터 한계 미만** 두 값을 false로 설정 합니다.  
+5.  **데이터 한계 상태 플래그** 목록에서 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 속성이나 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)속성을 true로 설정하거나 **데이터 한계 미만** 을 선택하여 두 값을 false로 설정할 수 있습니다.  
   
-6.  **로밍 상태** 목록으로 설정 합니다 [로밍](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 속성입니다.  
+6.  **로밍 상태** 목록에서 [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 속성을 설정합니다.  
   
-7.  선택할 **속성 설정** 에서 포그라운드를 트리거하여 네트워크 속성을 시뮬레이션 하기 위해 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 이벤트 및 백그라운드 [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 형식의 **NetworkStateChange**합니다.  
+7.  **속성 설정** 을 선택하고 포그라운드 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 이벤트 및 [NetworkStateChange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 형식의 백그라운드 **SystemTrigger**를 트리거하여 네트워크 속성을 시뮬레이트합니다.  
   
  **네트워크 연결 관리에 대한 자세한 내용**  
   

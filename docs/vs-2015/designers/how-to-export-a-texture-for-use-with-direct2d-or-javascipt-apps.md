@@ -1,7 +1,7 @@
 ---
 title: '방법: Direct2D 또는 Javascript 앱과 함께 사용하기 위해 질감 내보내기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b064620174a3a64194eee3ae18bffbe330ece13b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43854b2d0aad0e1466f8d8b6fcb45921999aba5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553286"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186292"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>방법: Direct2D 또는 Javascript 앱과 함께 사용하기 위해 질감 내보내기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Direct2D 또는 Javascipt 앱을 사용 하 여 사용 하기 위해 질감 내보내기](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps)합니다.  
-  
 이미지 콘텐츠 파이프라인은 Direct2D의 내부 렌더링 규칙과 호환 되는 질감을 생성할 수 있습니다. 이 종류의 질감은 Direct2D를 사용하는 앱 및 JavaScript를 통해 생성된 Windows 스토어 앱에서 사용하기에 적합합니다.  
   
  이 문서는 다음 활동을 보여 줍니다.  
