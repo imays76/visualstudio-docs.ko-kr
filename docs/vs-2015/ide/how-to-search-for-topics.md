@@ -1,7 +1,7 @@
 ---
 title: '방법: 항목 검색 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c094e255a6e87c1b2d6d8036bf033874399e000
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248291"
 ---
 # <a name="how-to-search-for-topics"></a>방법: 항목 검색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 항목 검색](https://docs.microsoft.com/visualstudio/ide/how-to-search-for-topics)합니다.  
-  
 전체 텍스트 검색 기능을 사용하여 특정 단어를 포함하는 모든 항목을 찾을 수 있습니다. 또한, 와일드카드 식, 논리 연산자 및 고급 검색 연산자를 사용하여 검색을 구체화하고 사용자 지정할 수도 있습니다.  
   
 ### <a name="to-open-the-search-tab"></a>검색 탭을 열려면  

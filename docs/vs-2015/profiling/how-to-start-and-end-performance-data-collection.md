@@ -1,7 +1,7 @@
 ---
 title: '방법: 성능 데이터 수집 시작 및 종료 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7c7848f8bb45ae9c97dacdd75c42e8345646e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6d98a8a72c28bc3e70a3b6b0f0d55ce74522cb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556121"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229699"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>방법: 성능 데이터 수집 시작 및 종료
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 시작 및 종료 성능 데이터 수집](https://docs.microsoft.com/visualstudio/profiling/how-to-start-and-end-performance-data-collection)합니다.  
-  
 프로파일링을 시작하기 전에 프로파일링할 대상 이진 파일을 성능 세션에 추가해야 합니다. 대상을 추가하려면 **성능 탐색기**에서 **대상**을 마우스 오른쪽 단추로 클릭하고 **대상 이진 파일 추가**를 클릭합니다. **대상 이진 파일 추가** 대화 상자에서 파일 이름을 선택하고 **열기**를 클릭합니다. 새 이진 파일이 추가됩니다.  
   
 ### <a name="to-start-profiling"></a>프로파일링을 시작하려면  

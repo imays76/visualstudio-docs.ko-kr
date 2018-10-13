@@ -1,14 +1,14 @@
 ---
 title: 초보자를 위한 성능 프로파일링 지침 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -20,18 +20,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6bd3085e3aef314d8768656eb66e61647b1676
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f69ae132a47f81438abb43bd11b04fee869aa66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226683"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>초보자를 위한 성능 프로파일링 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 성능 프로 파일링 초보자 가이드](https://docs.microsoft.com/visualstudio/profiling/beginners-guide-to-performance-profiling)합니다.  
-  
 Visual Studio 프로파일링 도구를 사용하여 응용 프로그램의 성능 문제를 분석할 수 있습니다. 다음 절차에서는 **샘플링** 데이터 사용 방법을 보여 줍니다.  
   
  **샘플링**은 응용 프로그램에서 대부분의 사용자 모드 작업을 수행하는 함수를 표시하는 통계 프로파일링 방법입니다. 응용 프로그램의 속도를 빠르게 만드는 영역을 찾으려는 경우 샘플링으로 시작하면 좋습니다.  

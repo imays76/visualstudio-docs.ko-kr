@@ -1,7 +1,7 @@
 ---
 title: '방법: ASP.NET 프로세스의 이름 찾기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d29d40f55bc693040d1acce632feba72b0a58d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550168"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268907"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>방법: ASP.NET 프로세스의 이름 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ASP.NET 프로세스의 이름을 찾으려면](https://docs.microsoft.com/visualstudio/debugger/how-to-find-the-name-of-the-aspnet-process)합니다.  
-  
 실행 중인 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램에 연결하려면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스의 이름을 알고 있어야 합니다.  
   
 -   IIS 6.0 또는 IIS 7.0을 실행하는 경우 이 이름은 w3wp.exe입니다.  

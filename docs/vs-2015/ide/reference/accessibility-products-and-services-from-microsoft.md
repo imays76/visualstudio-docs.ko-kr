@@ -1,7 +1,7 @@
 ---
 title: Microsoft의 접근성 제품 및 서비스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7336a1e4a12b0db326b536f59f9562d772bc94df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556170"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215776"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft의 내게 필요한 옵션 제품 및 서비스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Microsoft의 내게 필요한 옵션 제품 및 서비스](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-products-and-services-from-microsoft)합니다.  
-  
   
 Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽게 만들기 위해 최선을 다하고 있습니다. 다음 항목에서는 장애가 있는 사용자가 Microsoft Windows를 보다 쉽게 사용할 수 있도록 하는 기능, 제품 및 서비스에 대한 정보를 제공합니다.  
   

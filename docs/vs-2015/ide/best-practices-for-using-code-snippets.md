@@ -1,7 +1,7 @@
 ---
 title: 코드 조각을 사용하는 방법에 대한 유용한 정보 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c775dd0f5c7242779dcded5027ebf92e51a0406
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543866"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241321"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>코드 조각을 사용하는 방법에 대한 유용한 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 조각 사용에 대 한 모범 사례](https://docs.microsoft.com/visualstudio/ide/best-practices-for-using-code-snippets)합니다.  
-  
 코드 조각의 코드에는 작업을 수행하는 가장 기본적인 방법만 표시됩니다. 대부분 응용 프로그램에서는 응용 프로그램에 맞게 코드를 수정해야 합니다.  
   
 ## <a name="handling-exceptions"></a>예외 처리  

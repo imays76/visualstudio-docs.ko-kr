@@ -1,7 +1,7 @@
 ---
 title: 코딩된 UI 테스트에 대한 모범 사례 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bc2f84134eb6e8d96b6d9e5f070d2725e438cc62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b44b00a8b8fe995266675b9e6acb52681ff82f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254932"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>최선의 코딩된 UI 테스트 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코딩 된 UI 테스트에 대 한 모범 사례](https://docs.microsoft.com/visualstudio/test/best-practices-for-coded-ui-tests)합니다.  
-  
 이 항목에서는 코딩된 UI 테스트를 개발할 때 따라야 할 모범 사례를 설명합니다.  
   
  **요구 사항**  

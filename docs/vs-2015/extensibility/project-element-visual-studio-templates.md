@@ -1,7 +1,7 @@
 ---
 title: Project 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5c318d26c0a09aaca03cb0043c2b0eb54d43146
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7f0ee60ac515e40a54103f3b34ac492aab51068
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191856"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 요소 (Visual Studio 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/project-element-visual-studio-templates)합니다.  
-  
 파일 또는 프로젝트에 추가할 디렉터리를 지정 합니다.  
   
  \<VSTemplate>  

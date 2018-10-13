@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentTextEvents2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 95eae8da7779a23e9bf285eff2f637fbcd4633e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 485a9ec411a0c852d731815cbe6e6c3356b34847
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265107"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugDocumentTextEvents2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttextevents2)합니다.  
-  
 이 인터페이스는 Visual Studio 디버그 엔진에 의해 제공 되는 소스 문서의 변경 내용을 알릴 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  

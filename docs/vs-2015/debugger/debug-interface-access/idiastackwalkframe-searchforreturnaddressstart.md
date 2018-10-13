@@ -1,7 +1,7 @@
 ---
 title: 'Idiastackwalkframe:: Searchforreturnaddressstart | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef077fcea728f8440ca07ae316fdc87ea5b88089
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f88799ca9cc66cca091e828479db6e36377f4ee6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260977"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiastackwalkframe:: Searchforreturnaddressstart](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart)합니다.  
-  
 지정한 스택 프레임이 나 지정된 된 주소 반환 주소를 검색합니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 12551e10640b522f1405cb6a4fa0476f4f7b48c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268335"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](https://docs.microsoft.com/visualstudio/modeling/design-time-code-generation-by-using-t4-text-templates)합니다.  
-  
 디자인 타임 T4 텍스트 템플릿을 사용하면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트에서 프로그램 코드 및 기타 파일을 생성할 수 있습니다. 데이터에 따라 생성 되는 코드를 달라 지도록 템플릿을 작성 일반적으로 *모델*합니다. 모델은 응용 프로그램 요구 사항에 대한 주요 정보를 포함하는 파일 또는 데이터베이스입니다.  
   
  워크플로를 테이블이나 다이어그램으로 정의하는 모델을 예로 들어 보겠습니다. 해당 모델에서 워크플로를 실행하는 소프트웨어를 생성할 수 있습니다. 사용자 요구 사항이 변경되면 사용자와 함께 새 워크플로에 대해 쉽게 논의할 수 있습니다. 워크플로에서 코드를 다시 생성하는 것이 코드를 직접 업데이트하는 것보다 안정적입니다.  
@@ -88,7 +86,7 @@ ms.locfileid: "47550527"
   
 -   템플릿을 저장하는 경우  
   
--   클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션에서 모든 템플릿이 변환됩니다.  
+-   클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션에서 모든 템플릿이 변형됩니다.  
   
 -   **솔루션 탐색기**의 바로 가기 메뉴에서 파일, 선택 **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.  
   

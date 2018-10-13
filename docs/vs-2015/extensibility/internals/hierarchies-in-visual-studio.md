@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 계층 구조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba640fab1c1564a8fa957d9f7b183e02db86a858
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7ec254b80234b2eec4955cd2b57a641a233b1a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552480"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250655"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio의 계층 구조
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 계층](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-in-visual-studio)합니다.  
-  
 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 로 프로젝트를 표시 하는 통합된 개발 환경 (IDE)를 *계층*합니다. IDE에서 계층은 각 노드에 연결 된 속성 집합에 있는 노드의 트리입니다. A *계층 프로젝트* 은 프로젝트의 항목, 항목의 관계 및 항목의 관련된 속성 및 명령을 포함 하는 컨테이너입니다.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], 계층 인터페이스를 사용 하 여 프로젝트 계층 구조를 관리할 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스 명령을 표준 명령 처리기 대신 적절 한 계층 구조 창에 프로젝트 항목에서 호출을 리디렉션합니다.  

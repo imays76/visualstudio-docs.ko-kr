@@ -1,7 +1,7 @@
 ---
 title: 형식 및 관계 보기(클래스 디자이너) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dc7bf4d9f005b5514be5ec6765744b8d043a3979
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240762"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>형식 및 관계 보기(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [형식 및 관계 (클래스 디자이너) 보기](https://docs.microsoft.com/visualstudio/ide/viewing-types-and-relationships-class-designer)합니다.  
-  
 클래스 디자이너는 클래스 다이어그램을 사용하여 형식의 세부 정보를 표시합니다(예: 해당 구성 멤버 및 공유할 관계). 이러한 엔터티의 시각화는 코드에 대한 동적 뷰입니다. 즉, 디자이너에서 형식을 편집하고 엔터티의 소스 코드에 반영된 편집 내용을 확인할 수 있습니다. 마찬가지로 클래스 다이어그램은 코드에서 엔터티의 변경 내용과 동기화됩니다.  
   
 > [!NOTE]

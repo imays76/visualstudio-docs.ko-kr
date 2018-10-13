@@ -1,7 +1,7 @@
 ---
 title: 명령을 사용 하 여 열기를 사용 하 여 파일을 표시 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83160c6a55f73dc1dc81c602260ffa53830b3e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60098a53b23641152bc90125608e839e0308931d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543856"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263252"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>연결 프로그램 명령을 사용하여 파일 표시
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [표시 파일 열기와 명령을 사용 하 여](https://docs.microsoft.com/visualstudio/extensibility/internals/displaying-files-by-using-the-open-with-command)입니다.  
-  
 프로젝트를 표시 하기 위해 IDE를 요청할 수 있습니다 합니다 **연결 프로그램** 대화 상자. 이 요청 라는 표준 편집기의 선택 된 파일을 열 수입니다. 다음 단계는이 프로세스를 설명 합니다.  
   
 1.  프로젝트를 호출 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, OSE_UseOpenWithDialog에 대 한 값을 지정 하는 `OSEOpenDocEditor` 매개 변수입니다.  

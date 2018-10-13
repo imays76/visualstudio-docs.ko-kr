@@ -1,7 +1,7 @@
 ---
 title: 소스 제어 플러그 인을 찾기 위한 키로 사용 되는 문자열 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e2a663f11834a063faa0017cd37f6f542ab98ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f49ac150af84cdd5dfae52e905cb353722b0ed0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552001"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243635"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>소스 제어 플러그 인을 찾기 위한 키로 사용되는 문자열
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [문자열을 원본 제어 플러그 인을 찾기 위한 키로 사용 되는](https://docs.microsoft.com/visualstudio/extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in)합니다.  
-  
 다음 문자열은 정보를 찾기 위해 소스 제어 플러그 인 레지스트리 액세스 키입니다.  
   
  `STR_SCC_PROVIDER_REG_LOCATION`를 `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, 및 `STR_SCCPROVIDERNAME` 레지스트리 키 또는 값을 원본 제어 플러그 인으로 Visual Studio에 대 한 DLL을 등록 하는 데 사용 됩니다.  

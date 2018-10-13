@@ -1,7 +1,7 @@
 ---
 title: '웹 응용 프로그램 디버깅: 문제 해결 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e04357cfdb9c1fc19f67e56c089270ecac1091f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96e16b6b1ba1b971cdce71e9ad17b112bf1f0148
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268829"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>웹 응용 프로그램 디버깅: 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [웹 응용 프로그램 디버깅: 문제 해결](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications-troubleshooting)합니다.  
-  
 이 단원에는 오류를 해결하는 데 사용할 수 있는 일반적인 절차가 포함되어 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

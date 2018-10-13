@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 구문 색 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57d8115be296beba910da7a1bdb1019645c0ee5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c938f6d4a08e164638e70be969fe310fe2a324c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223499"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>레거시 언어 서비스의 구문 색 지정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 구문 색 지정](https://docs.microsoft.com/visualstudio/extensibility/internals/syntax-colorizing-in-a-legacy-language-service)합니다.  
-  
 구문 색 지정에는 서로 다른 색 및 스타일에 소스 파일에 표시 되는 프로그래밍 언어의 다양 한 요소를 발생 시키는 기능입니다. 이 기능을 지원 하려면 파서 또는 어휘 요소 또는 파일에는 토큰의 형식을 식별할 수는 스캐너를 제공 해야 합니다. 다양 한 언어 키워드, 구분 기호 (예: 괄호 또는 중괄호) 및 주석을 가지에서 색을 지정 하 여 구분 합니다.  
   
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/extending-the-editor-and-language-services.md)합니다.  

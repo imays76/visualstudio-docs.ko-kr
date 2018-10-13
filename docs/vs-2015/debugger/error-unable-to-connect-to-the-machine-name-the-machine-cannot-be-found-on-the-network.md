@@ -1,7 +1,7 @@
 ---
 title: '오류: 컴퓨터에 연결할 수 없습니다 &lt;이름을&gt;입니다. 네트워크에서 컴퓨터를 찾을 수 없습니다. | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbd5299c8bd14581a9228b7aa0491af6455b1fda
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e2c60723827466942ea02b8881f234e38fa438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223083"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>오류: 컴퓨터에 연결할 수 없습니다 &lt;이름을&gt;입니다. 네트워크에서 컴퓨터를 찾을 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: 컴퓨터에 연결할 수 없습니다 &lt;이름&gt;합니다. 네트워크에서 컴퓨터를 찾을 수 없습니다. ](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network).  
-  
 이 오류는 다음과 같은 경우에 발생합니다.  
   
 -   원격 컴퓨터에 대한 연결이 끊어진 경우  

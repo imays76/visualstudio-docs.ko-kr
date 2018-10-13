@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback2::RestrictReferencePathAccess | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a2ba01723edae02034c90bde32e49c9e4bf5fc6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61e3a7735760a74eb81f94a86ffd4de3329eb355
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260106"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDiaLoadCallback2::RestrictReferencePathAccess](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess)합니다.  
-  
 .Pdb 파일을 찾는.exe 파일이 위치한 경로에 허용 되는지 여부를 결정 합니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine3::LoadSymbols | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c846a440-1d91-4d48-b8f1-82e902ae152b
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2c3f4a7569fe81a680ffb143f93ce294fd5273e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7cdb7db24dc31b8cc36d214eb3c78b1a9a233cc7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265978"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugEngine3::LoadSymbols](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine3-loadsymbols)합니다.  
-  
 이 디버깅 엔진으로 디버깅 중인 모든 모듈에 대 한 기호 (필요한 경우)으로 로드 합니다.  
   
 ## <a name="syntax"></a>구문  

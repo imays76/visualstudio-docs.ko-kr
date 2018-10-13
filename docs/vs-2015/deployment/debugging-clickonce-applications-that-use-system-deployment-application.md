@@ -1,7 +1,7 @@
 ---
 title: System.Deployment.Application을 사용 하는 ClickOnce 응용 프로그램 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b57db2c1c4c5b2bd3ca91762f28b2f3360929671
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab43a3dbe75001f8713d5fff98953f6a5ce43881
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228672"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application을 사용하는 ClickOnce 응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버깅 ClickOnce 응용 프로그램을 사용 하 여 System.Deployment.Application](https://docs.microsoft.com/visualstudio/deployment/debugging-clickonce-applications-that-use-system-deployment-application)합니다.  
-  
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포를 사용 하면 응용 프로그램 업데이트 되는 방식을 구성할 수 있습니다. 그러나 사용 및 사용자 지정 하는 경우 고급 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 제공한 배포 개체 모델에 액세스 해야 배포 기능을 <xref:System.Deployment.Application>입니다. 사용할 수는 <xref:System.Deployment.Application> 와 같은 고급 작업에 대 한 Api:  
   
 -   응용 프로그램에서 "지금 업데이트" 옵션 만들기  

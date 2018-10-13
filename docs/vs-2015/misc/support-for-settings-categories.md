@@ -1,7 +1,7 @@
 ---
 title: 설정 범주에 대 한 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: douge
-ms.openlocfilehash: 474537895af5c51c7abd7439b58f8ef5994bdc11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244935"
 ---
 # <a name="support-for-settings-categories"></a>설정 범주에 대한 지원
 설정 범주는 IDE(통합 개발 환경)를 사용자 지정하는 옵션 그룹으로 구성됩니다. 예를 들어 설정은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창의 레이아웃과 메뉴의 내용을 제어할 수 있습니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
@@ -41,7 +41,7 @@ ms.locfileid: "47552061"
 -   <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>로 둘을 연결합니다.  
   
 ## <a name="support-for-settings-categories"></a>설정 범주에 대한 지원  
- <xref:Microsoft.VisualStudio.Shell.Package> 클래스는 범주 만들기 지원을 제공합니다. <xref:Microsoft.VisualStudio.Shell.DialogPage> 클래스는 범주를 구현합니다. <xref:Microsoft.VisualStudio.Shell.DialogPage>의 기본 구현은 public 속성을 범주로서 사용자에게 제공합니다. 자세한 내용은 [Creating a Settings Category](../extensibility/creating-a-settings-category.md)합니다.  
+ <xref:Microsoft.VisualStudio.Shell.Package> 클래스는 범주 만들기 지원을 제공합니다. <xref:Microsoft.VisualStudio.Shell.DialogPage> 클래스는 범주를 구현합니다. <xref:Microsoft.VisualStudio.Shell.DialogPage>의 기본 구현은 public 속성을 범주로서 사용자에게 제공합니다. 자세한 내용은 [Creating a Settings Category](../extensibility/creating-a-settings-category.md)을 참조하세요.  
   
  <xref:Microsoft.VisualStudio.Shell.DialogPage> 클래스는 옵션 페이지와 사용자 설정에 대해 지속성을 제공하는 <xref:Microsoft.VisualStudio.Shell.IProfileManager>를 구현합니다. <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> 및 <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> 메서드는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 각각 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter>로서 제공하는 vssettings 파일에 설정을 유지합니다. <xref:Microsoft.VisualStudio.Shell.IProfileManager.ResetSettings%2A> 메서드는 설정을 기본값으로 다시 설정합니다.  
   

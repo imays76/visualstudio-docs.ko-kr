@@ -1,7 +1,7 @@
 ---
 title: 옵션 및 옵션 페이지 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97bf59649d0f2099261bef7a3e425f2fe7fc553e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261042"
 ---
 # <a name="options-and-options-pages"></a>옵션 및 옵션 페이지
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션 및 옵션 페이지](https://docs.microsoft.com/visualstudio/extensibility/internals/options-and-options-pages)합니다.  
-  
 클릭 **옵션** 에 **도구** 메뉴가 열립니다 합니다 **옵션** 대화 상자. 이 대화 상자에서 옵션은 옵션 페이지 라고 합니다. 탐색 창에서 트리 컨트롤 옵션 범주를 포함 하며 모든 범주 옵션 페이지입니다. 페이지를 선택 하면 해당 옵션이 오른쪽 창에 나타납니다. 이러한 페이지에서는 VSPackage의 상태를 확인 하는 옵션 값을 변경할 수 있습니다.  
   
 ## <a name="support-for-options-pages"></a>옵션 페이지에 대 한 지원  

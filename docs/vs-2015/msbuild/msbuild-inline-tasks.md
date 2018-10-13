@@ -1,7 +1,7 @@
 ---
 title: MSBuild 인라인 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7030a83203acaae71366f2a196cd3599c25b6072
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: b706aa4de24152a7cf656b2cec9aee64f36d7773
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "47593266"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223459"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 인라인 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 인라인 작업](https://docs.microsoft.com/visualstudio/msbuild/msbuild-inline-tasks)합니다.  
-  
   
 MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.  
   

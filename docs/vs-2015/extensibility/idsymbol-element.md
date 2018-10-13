@@ -1,7 +1,7 @@
 ---
 title: IDSymbol 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3ab239c85fbf3e9ebc83825750b78a1e6fdbf7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3b4876144093d5e937a194095af1b128dc3efabd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253047"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDSymbol 요소](https://docs.microsoft.com/visualstudio/extensibility/idsymbol-element)합니다.  
-  
 `IDSymbol` 요소 메뉴, 그룹 또는 명령을 나타내는 guid: id 쌍의 ID를 포함 합니다. 부모에서 가져온 GUID `GuidSymbol` 요소입니다. `IDSymbol` 요소에는 `name` 특성에 포함 되어 있는 ID에 대 한 친숙 한 이름을 지정 하는 `value` 특성.  
   
 ## <a name="syntax"></a>구문  

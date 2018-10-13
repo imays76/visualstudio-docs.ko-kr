@@ -1,7 +1,7 @@
 ---
 title: 소스 제어 패키지 모델 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 220d8596827c637b578e4ccb52796607b9bfd413
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b67274702906b4e1c778dd66e2cac2b96a84b6e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237161"
 ---
 # <a name="model-for-source-control-packages"></a>소스 제어 패키지 모델
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 패키지 모델](https://docs.microsoft.com/visualstudio/extensibility/internals/model-for-source-control-packages)합니다.  
-  
 다음 모델은 원본 제어 구현 예를 나타냅니다. 모델에서 구현 해야 하는 인터페이스 및 환경 서비스를 호출 해야 하는 것이 표시 됩니다. 모든 서비스와 마찬가지로 실제로 서비스를 통해 가져와야 하는 특정 인터페이스의 메서드를 호출 합니다. 클래스의 이름은 쉽게 소스 제어를 수행 하는 방법을 확인할 수 있도록 식별 됩니다.  
   
  ![SCC&#95;TUP 예제](../../extensibility/internals/media/scc-tup.gif "SCC_TUP")  

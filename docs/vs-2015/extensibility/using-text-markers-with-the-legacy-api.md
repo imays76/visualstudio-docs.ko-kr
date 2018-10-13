@@ -1,7 +1,7 @@
 ---
 title: 텍스트 마커를 사용 하 여 레거시 API를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b276a678d4b5e97e3ef949bdf1fd74b37070f9d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f863571672c42f63912629844fd72d8c92ca8400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263668"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>텍스트 마커를 사용 하 여 레거시 API를 사용 하 여
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 API를 사용 하 여 텍스트 마커를 사용 하 여](https://docs.microsoft.com/visualstudio/extensibility/using-text-markers-with-the-legacy-api)입니다.  
-  
 텍스트 마커 부동 표시에 영향을 줄 수 있는 버퍼의 텍스트 범위 및 텍스트 영역의 동작은 합니다. 표식은 중단점, 책갈피, 물결 무늬 밑줄 및 읽기 전용 영역을 포함 합니다. 텍스트 마커 구문 색 지정 기본적으로 다릅니다. 구문 색 지정은 텍스트 영역을 사용 하 여 연결 된 언어 구문의 통신 하는 빠른 방법은 합니다. 속도가 중요 한 Windows 화면에는 연결 하는 경우에 일반적으로 구문 색 지정 요청 됩니다. 구문 색 지정만 텍스트의 색을 변경합니다. 텍스트 마커는 다른 여러 텍스트 속성을 변경할 수 있습니다. 텍스트 마커 "float"를 업데이트 하 고 특별 한 동작을 적용할 수의 색을 지정 합니다.  
   
  텍스트 마커를 사용 하 여 연결 된 성능 오버 헤드 때문에 텍스트 버퍼에 대 한 많은 표식을 만들지 마십시오. 각 표식에는 사용자 편집 하는 버퍼의 내용이 될 때마다 업데이트 됩니다.  

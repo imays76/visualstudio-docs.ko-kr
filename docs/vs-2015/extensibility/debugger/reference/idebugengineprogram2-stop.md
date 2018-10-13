@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineProgram2::Stop | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29067ce022150f53612ba053cee5ce20c2c96fa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0bd5312d611d261b6b0912edbd45c49fe07d2024
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564364"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235887"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugEngineProgram2::Stop](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengineprogram2-stop)합니다.  
-  
 이 프로그램에서 실행 중인 모든 스레드를 중지 합니다.  
   
 ## <a name="syntax"></a>구문  

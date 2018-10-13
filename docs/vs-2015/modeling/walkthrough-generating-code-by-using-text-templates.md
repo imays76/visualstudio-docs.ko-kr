@@ -1,7 +1,7 @@
 ---
 title: '연습: 텍스트 템플릿을 사용 하 여 코드 생성 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79454acf09a0f3b09e87af1ac91aa72c23ef86fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556558"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229374"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>연습: 텍스트 템플릿을 사용하여 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 텍스트 템플릿을 사용 하 여 코드 생성](https://docs.microsoft.com/visualstudio/modeling/walkthrough-generating-code-by-using-text-templates)합니다.  
-  
 코드 생성 기능을 사용하면 강력한 형식을 가지고 있지만 소스 모델이 변경될 때 손쉽게 변경할 수 있는 프로그램 코드를 생성할 수 있습니다. 이와 반대로, 구성 파일을 허용하는 완전한 제네릭 프로그램을 작성하는 대체 방식을 사용할 경우에는 좀 더 유연성이 있지만 코드를 읽고 변경하기가 쉽지 않으며 코드의 성능도 그렇게 좋지 않습니다. 이 연습에서는 이러한 이점을 보여 줍니다.  
   
 ## <a name="typed-code-for-reading-xml"></a>XML 읽기를 위한 형식화된 코드  

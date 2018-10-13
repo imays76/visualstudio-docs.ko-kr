@@ -1,7 +1,7 @@
 ---
 title: 모델링 솔루션 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96f545c980cd49c6f70c45f3ee7fc80be3a25421
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4409891b7d6cbc4be5f46b598cd5910f3e0e9284
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554865"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243037"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모델링 솔루션](https://docs.microsoft.com/visualstudio/modeling/structure-your-modeling-solution)합니다.  
-  
 개발 프로젝트에서 모델을 효과적으로 사용하려면 팀 멤버가 프로젝트의 다른 파트 모델에서 동시에 작업할 수 있어야 합니다. 이 항목에서는 전체 레이어 다이어그램의 레이어에 해당하는 여러 파트로 응용 프로그램을 나누는 체계를 제안합니다.  
   
  프로젝트 또는 하위 프로젝트에서 신속하게 시작하려면 선택한 프로젝트 구조를 따르는 프로젝트 템플릿을 사용하는 것이 유용합니다. 이 항목에서는 이러한 템플릿을 만들고 사용하는 방법을 설명합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 찾기 명령 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6deea29955bac41fb9714f094456775862259b40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf2ef55aa291016719c5f481d70dadd09f4403d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556185"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259183"
 ---
 # <a name="find-command"></a>찾기 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [찾기 명령을](https://docs.microsoft.com/visualstudio/ide/reference/find-command)합니다.  
-  
   
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기** 탭에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일을 검색합니다.  
   
@@ -93,7 +91,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)   
- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

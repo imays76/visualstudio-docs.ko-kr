@@ -1,7 +1,7 @@
 ---
 title: 'CA2132: 기본 생성자 해야 최소한 기본 형식 기본 생성자 만큼 중요 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ecf78792e18df4956fa0147754879fb2e80648bc
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 3237b9350492ed5e7cd323b38cd4dae4b30a5db9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47592323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243245"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: 기본 생성자는 최소한 기본 형식 기본 생성자만큼 중요해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA2132: 기본 생성자는 최소한 기본 형식 기본 생성자 만큼 중요 해야 합니다.](https://docs.microsoft.com/visualstudio/code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors)합니다.
-
 |||
 |-|-|
 |TypeName|DefaultConstructorsMustHaveConsistentTransparency|

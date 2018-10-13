@@ -1,7 +1,7 @@
 ---
 title: '&lt;요약&gt; (JavaScript) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6b4808112e746e30f0e40d4626f546c3f99b193
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 8ee08ed1e2a5feb1f5a87f7d6337a4b5f1e47a22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879020"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252410"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;요약&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 함수 또는 메서드에 대한 설명을 지정합니다.  
   
 ## <a name="syntax"></a>구문  

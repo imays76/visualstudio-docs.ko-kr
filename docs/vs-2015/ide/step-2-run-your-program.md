@@ -1,7 +1,7 @@
 ---
 title: '2단계: 프로그램 실행 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3312f5017344e4a4710a330750c86727d097c15c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4c8c3788a40941d2cc6fe563af8bd030b2b913d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555822"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242192"
 ---
 # <a name="step-2-run-your-program"></a>2단계: 프로그램 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [2 단계: 프로그램 실행](https://docs.microsoft.com/visualstudio/ide/step-2-run-your-program)합니다.  
-  
 새 솔루션을 만들면서 실행되는 프로그램을 실제로 빌드했습니다. 이 프로그램은 아직 많은 작업을 수행하지 않고 단순히 제목 표시줄에 **Form1**이 표시된 빈 창만 표시하지만 실행되고 있는 프로그램이 맞습니다.  
   
  ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 1](http://go.microsoft.com/fwlink/?LinkId=205209) 또는 [자습서 1: C#에서 사진 뷰어 만들기 - 비디오 1](http://go.microsoft.com/fwlink/?LinkId=205199)을 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.  

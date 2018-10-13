@@ -1,7 +1,7 @@
 ---
 title: 성능 세션 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552924"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242816"
 ---
 # <a name="performance-session-overview"></a>성능 세션 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 세션 개요](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview)합니다.  
-  
 이 개요에서는 프로파일링의 기본 사항에 대해 설명합니다. 성능 작업을 처음 수행하는 개발자는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구를 통해 빠르게 생산성을 높이고 코드 성능을 개선하는 방법을 파악할 수 있습니다. 그리고 프로파일링에 대해 잘 알고 있는 개발자는 특정 프로파일링 도구의 기능과 프로세스에 대해 대략적으로 확인할 수 있습니다.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구를 사용하면 소스 코드의 성능 문제를 파악하고 사용 가능한 해결 방법의 성능을 비교할 수 있습니다. 프로파일링 도구 마법사와 기본 설정을 사용하면 대다수 성능 문제를 즉시 파악할 수 있습니다. 프로파일링 도구의 기능과 옵션을 통해 프로파일링 프로세스를 정확하게 제어할 수 있습니다. 이러한 제어에는 코드 섹션의 정확한 대상 지정, 블록 수준 타이밍 정보 수집, 데이터에 추가 프로세서 및 시스템 성능 데이터 포함 등이 있습니다.  

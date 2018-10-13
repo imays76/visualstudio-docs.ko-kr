@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_container | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c52bdb047dcaf8f3fb705c8ef6bfcfd6b90dd393
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b41a17d1eff1067aef278e3071c4464a2ffed3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554017"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237421"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiasymbol:: Get_container](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-container)합니다.  
-  
 이 함수는이 기호의 부모/컨테이너를 나타내는 기호에 대 한 포인터를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  

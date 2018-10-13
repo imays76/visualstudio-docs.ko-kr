@@ -1,7 +1,7 @@
 ---
 title: RegPkg 유틸리티 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d793097034dde050c8a3f45a1f227603e4a64d3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b046bd72e6fa44eda5d40faea52bd6e5e294528e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541620"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255049"
 ---
 # <a name="regpkg-utility"></a>RegPkg 유틸리티
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [RegPkg 유틸리티](https://docs.microsoft.com/visualstudio/extensibility/internals/regpkg-utility)합니다.  
-  
 > [!NOTE]
 >  Visual Studio에서 패키지를 등록 하려면.pkgdef 파일을 사용 하 여는 것이 좋습니다. 이 VSIX 배포에 대 한 요구 사항인 시스템 레지스트리에 액세스 하지 않고도 확장 배포에 대 한 수 있습니다. Pkgdef 파일을 사용 하 여 만들어진 합니다 [CreatePkgDef 유틸리티](../../extensibility/internals/createpkgdef-utility.md)합니다. Visual Studio 패키지 배포에 대 한 자세한 내용은 참조 하세요. [Visual Studio 확장 전달](../../extensibility/shipping-visual-studio-extensions.md)합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 시작 명령 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6e70a682d9b9ef67e9f0372173c3396a0706cd2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3b2f482fb33664796a4e6fe451a6a2917e9592f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247718"
 ---
 # <a name="start-command"></a>시작 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Start 명령을](https://docs.microsoft.com/visualstudio/ide/reference/start-command)합니다.  
-  
   
 시작 프로젝트 디버깅을 시작합니다.  
   
@@ -58,7 +56,7 @@ Debug.Start [address]
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)   
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

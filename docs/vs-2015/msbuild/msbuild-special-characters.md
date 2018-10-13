@@ -1,7 +1,7 @@
 ---
 title: MSBuild 특수 문자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fcbafb43a059221e5572c9c807cadfdefe68134
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c9ce1697f370ec1beec8ce12faceb15825fbe5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256453"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 특수 문자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 특수 문자](https://docs.microsoft.com/visualstudio/msbuild/msbuild-special-characters)합니다.  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 특정 컨텍스트에서 특별한 용도로 사용할 일부 문자를 예약합니다. 예약된 컨텍스트에서 문자 그대로 사용하려는 경우 이러한 문자를 이스케이프 처리해야 합니다. 예를 들어 별표는 항목 정의의 `Include` 및 `Exclude` 특성 및 `CreateItem`에 대한 호출에서만 특별한 의미를 가집니다. 별표를 해당 컨텍스트 중 하나에서 별표로 표시하려면 이스케이프 처리해야 합니다. 모든 다른 컨텍스트에서 별표를 표시하려는 곳에 입력합니다.  
   

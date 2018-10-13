@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointRequest3::GetRequestInfo2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 33942e4a-0a0a-49e8-a693-004954f6d38a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 62c04aef42571eebe96e2f03b3cc99eedd8e7b3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8644e4df05500489c70ca43943572316dde790c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565282"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237200"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugBreakpointRequest3::GetRequestInfo2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2)합니다.  
-  
 이 메서드는이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

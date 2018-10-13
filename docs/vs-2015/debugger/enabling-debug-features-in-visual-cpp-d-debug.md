@@ -1,7 +1,7 @@
 ---
 title: Visual c + +에서 디버그 기능 활성화 (-/d_debug) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67de755105f30ee4a88daeef26bc29bc9841ae39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 452cf6ac386affb886e9a318e8686eea85e59d66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237148"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Visual C++에서 디버그 기능 활성화(/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual c + +에서 디버그 기능 사용 하도록 설정 (-/d_debug)](https://docs.microsoft.com/visualstudio/debugger/enabling-debug-features-in-visual-cpp-d-debug)합니다.  
-  
 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]을 어설션 기호를 사용 하 여 프로그램을 컴파일할 때 사용 하도록 설정 같은 디버깅 기능 **_DEBUG** 정의 합니다. 정의할 수 있습니다 **_DEBUG** 두 가지 방법 중 하나에서:  
   
 -   지정할 **#define _DEBUG** 소스 코드에서 또는  

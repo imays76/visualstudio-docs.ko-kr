@@ -1,7 +1,7 @@
 ---
 title: 서버 및 ClickOnce 배포에서 클라이언트 구성 문제 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 17ab417649818e9f56dbd1065929a6240a23d417
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543468"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231532"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [서버 및 클라이언트 구성 문제 ClickOnce 배포에서](https://docs.microsoft.com/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments)합니다.  
-  
 인터넷 정보 서비스 (IIS)를 사용 하 여 Windows Server에서 배포에는 Windows에서 인식 하지 못하는 파일 형식을 포함 하 고 Microsoft Word 파일을 같은 IIS는 해당 파일을 전송할 거부 하 고 배포에 실패 합니다.  
   
  또한 일부 웹 서버 응용 프로그램 소프트웨어와 같이 및 웹 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], 파일의 목록을 포함 및 파일 형식을 다운로드할 수 없습니다. 예를 들어 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 모든 Web.config 파일의 다운로드를 차단 합니다. 이러한 파일에는 사용자 이름과 암호 같은 중요 한 정보가 들어 있습니다.  

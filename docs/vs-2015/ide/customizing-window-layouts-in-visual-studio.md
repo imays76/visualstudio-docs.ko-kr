@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 창 레이아웃 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7f581c920a0f42105c1409e320b941a12dbc5f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218818"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Visual Studio에서 창 레이아웃 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 창 레이아웃 사용자 지정](https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio)합니다.  
-  
 Visual Studio에서 창의 위치, 크기 및 동작을 사용자 지정하여 다양한 개발 워크플로에 가장 적합한 창 레이아웃을 만들 수 있습니다. 레이아웃을 사용자 지정할 때 IDE에서는 레이아웃을 기억합니다. 예를 들어 **솔루션 탐색기** 의 도킹 위치를 변경한 후 Visual Studio를 닫고 다음에 다시 시작하면 다른 컴퓨터에서 작업하고 있는 경우에도 **솔루션 탐색기** 가 같은 위치에 도킹됩니다. 또한 사용자 지정 레이아웃에 이름을 지정하고 저장한 다음 단일 명령으로 레이아웃 간을 전환할 수 있습니다. 예를 들어 편집용 레이아웃과 디버그용 레이아웃을 만들고 **창 &#124; 창 레이아웃 적용** 메뉴 명령을 사용하여 레이아웃 간에 전환할 수 있습니다.  
   
 ## <a name="kinds-of-windows"></a>창 종류  

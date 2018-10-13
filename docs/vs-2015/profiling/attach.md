@@ -1,7 +1,7 @@
 ---
 title: 연결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7724aa0691e26f35c429a46f570f3f80ed8dd06f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c102b00fa8ab66d5f86111a8749fcbbc23c75d6b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251684"
 ---
 # <a name="attach"></a>연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연결](https://docs.microsoft.com/visualstudio/profiling/attach)합니다.  
-  
 VSPerfCmd.exe **Attach** 옵션은 PID(프로세스 ID)로 지정된 실행 중인 프로세스의 샘플 프로파일링을 시작합니다.  
   
  **Attach** 옵션을 사용하려면 Start 옵션에서 **Sample** 메서드를 지정해야 합니다.  

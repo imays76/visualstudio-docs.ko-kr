@@ -1,7 +1,7 @@
 ---
 title: 데이터 집합 시각화 도우미 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffee1a0dce220ffaa0834781497a0e1cdd6f61e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fd4fb907ddbfab2803491d742227653a5e919fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255738"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>데이터 집합 시각화 도우미 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터 집합 시각화 도우미 대화 상자](https://docs.microsoft.com/visualstudio/debugger/dataset-visualizer-dialog-box)합니다.  
-  
 데이터 집합 시각화 도우미를 사용하면 DataSet, DataTable, DataView 또는 DataViewManager 개체의 내용을 볼 수 있습니다. 디버거 변수 창이나 DataTip에서 이러한 개체 중 하나의 값 옆에 나타나는 돋보기 아이콘을 클릭하면 이 시각화 도우미에 액세스할 수 있습니다.  
   
  이 시각화 도우미에서 개체를 변경할 수 있습니다. 변경 내용은 행을 커밋하는 즉시 저장됩니다.  

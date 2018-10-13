@@ -1,7 +1,7 @@
 ---
 title: 프로필 및 스테레오 타입을 사용 하 여 모델 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dd494b475b5d9068597857a2f4df12e5fed8e2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a64fa754d2693f6ea469eb2ec211935c896ebb9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254948"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>프로필 및 스테레오타입을 사용하여 모델 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로필 및 스테레오 타입을 사용 하 여 모델 사용자 지정](https://docs.microsoft.com/visualstudio/modeling/customize-your-model-with-profiles-and-stereotypes)합니다.  
-  
 Visual Studio에서 클래스 및 구성 요소와 같은 표준 UML 모델 요소를 조정하여 특정 용도에 맞게 사용자 지정할 수 있습니다. 적용할 수는 *스테레오 타입* 요소의 속성 목록을 변경할 수 있는 모델 요소에 있습니다. 호출 하는 컬렉션 내에서 정의 된 스테레오 타입 *프로필*합니다.  
   
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  

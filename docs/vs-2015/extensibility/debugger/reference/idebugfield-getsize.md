@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetSize | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 73329924-3751-4f44-af54-5986b7943374
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6cfafbd4572aeb3b71992883afeafa8feffbcc69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c448db3c1f065e911e82bcb209255f1074f2d8ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240216"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugField::GetSize](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield-getsize)합니다.  
-  
 이 메서드는 바이트에 있는 필드의 크기를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

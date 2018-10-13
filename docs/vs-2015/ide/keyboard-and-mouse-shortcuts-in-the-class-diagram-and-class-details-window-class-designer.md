@@ -1,7 +1,7 @@
 ---
 title: 클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기(클래스 디자이너) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 144c2d70cf734f8d1c9602fad96bf4e1c6d8a0c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247912"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [키보드 및 마우스 바로 가기 클래스 다이어그램 및 클래스 세부 내용 창 (클래스 디자이너)](https://docs.microsoft.com/visualstudio/ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer)합니다.  
-  
 마우스 외에도 키보드를 사용하여 클래스 디자이너 및 **클래스 세부 내용** 창에서 탐색 작업을 수행할 수 있습니다.  
   
  **항목 내용**  

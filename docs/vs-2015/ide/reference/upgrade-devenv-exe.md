@@ -1,7 +1,7 @@
 ---
 title: -Upgrade(devenv.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4dc3a9000056babd5a05577dfa95af42a824f538
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79a00da92ac2da6eb37fa1eef90fa112598d23f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541613"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264963"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [-Upgrade (devenv.exe)](https://docs.microsoft.com/visualstudio/ide/reference/upgrade-devenv-exe)합니다.  
-  
   
 솔루션 파일 및 모든 프로젝트 파일이나 지정한 프로젝트 파일을 이러한 파일의 현재 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 형식으로 업데이트합니다.  
   

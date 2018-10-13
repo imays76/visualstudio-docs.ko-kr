@@ -1,7 +1,7 @@
 ---
 title: 옵션 페이지, 환경, 노드 속성 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acc91b6588e7e999f0390a3bc7d7108b4e6af2b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239644"
 ---
 # <a name="options-page-environment-node-properties"></a>옵션 페이지, 환경 노드 속성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션 페이지, 환경 노드 속성](https://docs.microsoft.com/visualstudio/ide/reference/options-page-environment-node-properties)합니다.  
-  
   
 이 문서에서는 **옵션** 대화 상자의 **환경** 범주, `DTE.Properties("Environment", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다. 각 하위 단원의 제목은 속성 컬렉션에 액세스하는 데 사용되는 호출이며, 각 하위 단원의 표에는 컬렉션의 속성이 나열되어 있습니다.  
   

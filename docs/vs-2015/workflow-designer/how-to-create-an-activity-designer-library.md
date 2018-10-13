@@ -1,7 +1,7 @@
 ---
 title: '방법: 활동 디자이너 라이브러리 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 128c36a4aca22cb2da08c3d88162fed658f27de4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6802f92f349d15d48935f4e7c3db85abf7c12535
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543780"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258273"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>방법: 활동 디자이너 라이브러리 만들기
 사용자 지정 활동 디자이너를 사용하여 표준 또는 사용자 지정 활동을 위한 사용자 인터페이스를 만들 수 있습니다. 사용자 인터페이스의 복잡성을 조절하고 한 가지 활동에 대해 두 개 이상의 활동 디자이너를 만들 수 있습니다. 이 시나리오에서는 여러 대상에 맞게 조정한 디자이너를 만들 수 있습니다.  

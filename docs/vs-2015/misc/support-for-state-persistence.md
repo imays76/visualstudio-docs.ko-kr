@@ -1,7 +1,7 @@
 ---
 title: 상태 지 속성에 대 한 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d25866f2-8d1f-477f-8aa5-3af3fbbf6e97
 caps.latest.revision: 15
 manager: douge
-ms.openlocfilehash: 23278842d3a4c7c7123e5e84a07014749873a6f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b7eb294b38a5fb19303a175347adcdaa0f0ba22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549522"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242829"
 ---
 # <a name="support-for-state-persistence"></a>상태 지속성 지원
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 공통 개체의 상태를 유지할 수 있습니다. 예를 들어, 솔루션 및 프로젝트 속성에 저장 되며 솔루션 및 프로젝트 파일에서 복원 됩니다. 사용자 설정을 내보내고 설정 파일에서 가져올 수 있습니다.  

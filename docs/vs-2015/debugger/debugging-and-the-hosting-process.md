@@ -1,7 +1,7 @@
 ---
 title: 디버깅 및 호스팅 프로세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cc008f12f4312df2d63f019a0d33a7b727e5ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3643e8a6c7bcb97d032771b4f98cbd926d9fd5a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249500"
 ---
 # <a name="debugging-and-the-hosting-process"></a>디버깅 및 호스팅 프로세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버깅 및 the Hosting Process](https://docs.microsoft.com/visualstudio/debugger/debugging-and-the-hosting-process)합니다.  
-  
 Visual Studio 호스팅 프로세스를 사용하면 디버거 성능을 향상시킬 수 있고 부분 신뢰 디버깅 및 디자인 타임 식 계산 등과 같은 새로운 디버거 기능을 사용할 수 있습니다. 필요한 경우 호스팅 프로세스를 비활성화할 수 있습니다. 자세한 내용은 [How to: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md)을 참조하세요. 다음 섹션에서는 호스팅 프로세스를 사용하는 경우와 사용하지 않는 경우의 몇 가지 디버깅 차이점에 대해 설명합니다.  
   
 ## <a name="partial-trust-debugging-and-click-once-security"></a>부분 신뢰 디버깅 및 ClickOnce 보안  
@@ -46,7 +44,7 @@ Visual Studio 호스팅 프로세스를 사용하면 디버거 성능을 향상�
  `AppDomain.CurrentDomain.FriendlyName` 은 호스팅 프로세스가 활성화되어 있는지 여부에 따라 서로 다른 결과를 반환합니다. 호스팅 프로세스를 사용할 수 있는 상태에서 `AppDomain.CurrentDomain.FriendlyName` 을 호출하면 *app_name*`.vhost.exe`이 반환됩니다. 호스팅 프로세스를 사용할 수 없는 상태에서 호출하면 *app_name*`.exe`이 반환됩니다.  
   
 ## <a name="assemblygetcallingassemblyfullname-differences"></a>Assembly.GetCallingAssembly().FullName의 반환 결과  
- `Assembly.GetCallingAssembly().FullName` 은 호스팅 프로세스가 활성화되어 있는지 여부에 따라 서로 다른 결과를 반환합니다. 호스팅 프로세스를 사용할 수 있는 상태에서 `Assembly.GetCallingAssembly().FullName` 을 호출하면 `mscorlib`가 반환됩니다. 호스팅 프로세스를 사용할 수 없는 상태에서 `Assembly.GetCallingAssembly().FullName` 을 호출하면 응용 프로그램 이름이 반환됩니다.  
+ `Assembly.GetCallingAssembly().FullName` 은 호스팅 프로세스가 활성화되어 있는지 여부에 따라 서로 다른 결과를 반환합니다. 호스팅 프로세스를 사용할 수 있는 상태에서 `Assembly.GetCallingAssembly().FullName`을 호출하면 `mscorlib`가 반환됩니다. 호스팅 프로세스를 사용할 수 없는 상태에서 `Assembly.GetCallingAssembly().FullName` 을 호출하면 응용 프로그램 이름이 반환됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [호스팅 프로세스(vshost.exe)](../ide/hosting-process-vshost-exe.md)   

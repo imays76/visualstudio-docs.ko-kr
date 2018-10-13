@@ -1,7 +1,7 @@
 ---
 title: Choose 요소(MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dbb67391a2dcb3aea15eca2b06d52664ea8cebf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c5fe8ede508f82984bb3101ecb74cb2ed3e7626
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225740"
 ---
 # <a name="choose-element-msbuild"></a>Choose 요소(MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Choose 요소 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/choose-element-msbuild)합니다.  
-  
   
 자식 요소를 평가하여 평가할 `ItemGroup` 요소 및/또는 `PropertyGroup` 요소의 집합 하나를 선택합니다.  
   

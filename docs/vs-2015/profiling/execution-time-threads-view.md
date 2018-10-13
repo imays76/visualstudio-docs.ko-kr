@@ -1,7 +1,7 @@
 ---
 title: 실행 시간(스레드 뷰) | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b25048fdeeea6e1c5724ecc313993cbf74b617be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14e873196767c295ea3f333bbf8ef5217dc79d44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251208"
 ---
 # <a name="execution-time-threads-view"></a>실행 시간(스레드 뷰)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [실행 시간 (스레드 뷰)](https://docs.microsoft.com/visualstudio/profiling/execution-time-threads-view)합니다.  
-  
 스레드가 시스템의 논리 코어에서 활발히 작업을 수행할 경우 스레드 뷰 타임라인의 이러한 세그먼트는 실행 시간을 나타냅니다.  
   
  스레드 상태가 변경되면 커널 컨텍스트 스위치 이벤트를 통해 감지됩니다. ETW(Windows용 이벤트 추적)는 밀리초마다 샘플 스택을 캡처합니다. 매우 짧은 녹색 세그먼트에서는 샘플이 수집되지 않을 수 있습니다. 따라서 일부 짧은 실행 세그먼트는 호출 스택을 표시하지 않을 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: IDE 상수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1a791dd1190bc083d2be398d88722daa227cf12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44058a483e4181b7f1918b63c844b2bb4345c89c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551197"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236433"
 ---
 # <a name="ide-constants"></a>IDE 상수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDE 상수](https://docs.microsoft.com/visualstudio/extensibility/ide-constants)합니다.  
-  
 <xref:Microsoft.VisualStudio.VSConstants> 클래스는 통합된 개발 환경 (IDE)에 관련 된 헤더 파일에만 이전에 정의 된 있고 상수를 제공 합니다.  
   
 ## <a name="logical-and-physical-views"></a>논리적 및 물리적 보기  

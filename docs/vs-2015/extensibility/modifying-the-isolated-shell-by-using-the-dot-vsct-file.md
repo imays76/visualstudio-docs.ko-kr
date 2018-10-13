@@ -1,7 +1,7 @@
 ---
 title: 사용 하 여 격리 셸 수정 합니다. Vsct 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6d147c2d-10e9-400e-b8ce-5566287b41ba
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0606d28f151f0d9c85980121e3129bd9204c61b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67955586333cf665b7cffd5039ef2f6e051834a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260002"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>사용 하 여 격리 셸 수정 합니다. Vsct 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [의 격리 셸을 사용 하 여 수정 합니다. Vsct 파일](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file)합니다.  
-  
 Visual Studio 격리 셸 프로젝트에 대 한 UI 프로젝트는 응용 프로그램에서 사용할 수 있는 응용 프로그램 그룹 및 개별 명령을 지정할 수 있는.vsct 파일을 포함 합니다. 다음은 수정 되지 않은.vsct 파일에서 발췌입니다.  
   
 ```  

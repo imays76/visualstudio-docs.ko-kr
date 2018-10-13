@@ -1,7 +1,7 @@
 ---
 title: '방법: 시각화 도우미 설치 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5152c47635f8ca2f2bb0a6a32c7767682006860a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5539b17ee4d10f603f1adfe2ce7e459332181cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564965"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250226"
 ---
 # <a name="how-to-install-a-visualizer"></a>방법: 시각화 도우미 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 시각화 도우미 설치](https://docs.microsoft.com/visualstudio/debugger/how-to-install-a-visualizer)합니다.  
-  
 시각화 도우미를 만든 후에는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 사용할 수 있도록 이 시각화 도우미를 설치해야 합니다. 시각화 도우미를 설치하는 과정은 간단합니다.  
   
 > [!NOTE]

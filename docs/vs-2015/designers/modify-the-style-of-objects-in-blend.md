@@ -1,7 +1,7 @@
 ---
 title: Blend에서 개체 스타일 수정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6205eea283bec68a3fbbf5c95a5bac36fdbaee9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240155"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend에서 개체 스타일 수정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Blend에서 개체 스타일 수정](https://docs.microsoft.com/visualstudio/designers/modify-the-style-of-objects-in-blend)합니다.  
-  
 개체를 사용자 지정하는 가장 쉬운 방법은 **속성** 창에서 속성을 설정하는 방법입니다.  
   
  설정이나 설정 그룹을 다시 사용하려면 다시 사용할 수 있는 리소스를 만듭니다. 이러한 리소스로는 *스타일*, *템플릿* 또는 사용자 지정 색 등을 들 수 있습니다. 또한 해당 상태에 따라 컨트롤이 다르게 표시되도록 할 수 있습니다. 예를 들어 사용자가 단추를 클릭할 때 단추가 녹색으로 바뀝니다.  

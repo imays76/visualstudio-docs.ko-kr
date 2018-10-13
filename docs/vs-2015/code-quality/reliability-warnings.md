@@ -1,7 +1,7 @@
 ---
 title: 안정성 경고 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3bfaff6a434a138024f0baa454935a6da4e67da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5add1f5436546d64c1c50e2613c72ffce922acf3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551900"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269128"
 ---
 # <a name="reliability-warnings"></a>안정성 경고
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [안정성 경고](https://docs.microsoft.com/visualstudio/code-quality/reliability-warnings)합니다.  
-  
 안정성 경고 올바른 메모리 및 스레드 사용과 같은 라이브러리 및 응용 프로그램 안정성을 지원합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

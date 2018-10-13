@@ -1,7 +1,7 @@
 ---
 title: 기본 프로젝트 시스템 만들기, 2 부 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea16f64d07450eabebb0ff49f8c8ea26a0214ffa
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1e5661b7bd11891f43427749a158f33f07444e43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236641"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>기본 프로젝트 시스템 만들기, 2부
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [기본 프로젝트 시스템, 2 부 만들기](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-2)합니다.  
-  
 이 시리즈의 첫 번째 연습의 [기본 프로젝트 시스템, 1 부 만들기](../extensibility/creating-a-basic-project-system-part-1.md), 기본 프로젝트 시스템을 만드는 방법을 보여 줍니다. 이 연습에서는 Visual Studio 템플릿, 속성 페이지 및 기타 기능을 추가 하 여 기본 프로젝트 시스템에 작성 합니다. 이 시작 하기 전에 첫 번째 연습을 완료 해야 합니다.  
   
  이 연습에서는 프로젝트 파일 이름 확장명.myproj 있는 프로젝트 형식을 만드는 방법을 설명 합니다. 이 연습을 완료 하려면 기존 Visual C# 프로젝트 시스템에서이 연습을 활용 하기 때문에 고유 언어를 만들 필요가 없습니다.  

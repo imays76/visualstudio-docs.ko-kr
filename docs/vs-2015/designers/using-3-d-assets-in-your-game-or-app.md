@@ -1,7 +1,7 @@
 ---
 title: 게임 또는 앱에서 3차원 자산 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226312"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>게임 또는 응용 프로그램에 3차원 자산 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Your 게임 또는 앱에서 3d 자산을 사용 하 여](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app)입니다.  
-  
 이 문서에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 3-D 자산을 처리하여 빌드에 포함하는 방법에 대해 설명합니다.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 도구를 사용하여 3-D 자산을 만들면 그 다음 단계는 만든 자산을 앱에서 사용하는 것입니다. 자산을 사용하려면 DirectX가 인식할 수 있는 형식으로 변환해야 합니다. 자산 변환을 지원하기 위해 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 생성할 수 있는 각 종류의 자산에 대해 빌드 사용자 지정을 제공합니다. 빌드에 자산을 포함하려면 빌드 사용자 지정을 사용하도록 프로젝트를 구성하고 프로젝트에 자산을 추가하며 올바른 빌드 사용자 지정을 사용하도록 자산을 구성하기만 하면 됩니다. 그런 다음 앱으로 자산을 로드한 후 다른 모든 DirectX 앱에서 하는 것처럼 DirectX 리소스를 만든 후 채워 자산을 사용할 수 있습니다.  

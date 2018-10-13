@@ -1,7 +1,7 @@
 ---
 title: 솔루션 탐색기 도구 모음에 명령 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254401"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>솔루션 탐색기 도구 모음에 명령 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션 탐색기 도구 모음에 명령 추가](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar)합니다.  
-  
 이 연습에서는 단추를 추가 하는 방법을 보여 줍니다.는 **솔루션 탐색기** 도구 모음입니다.  
   
  Visual Studio 도구 모음 또는 메뉴에 있는 모든 명령은 단추를 호출 됩니다. 단추를 클릭할 때 명령 처리기의 코드가 실행 됩니다. 일반적으로 한 그룹을 형성 하려면 관련된 명령은 함께 그룹화 됩니다. 메뉴 또는 도구 모음에는 그룹에 대 한 컨테이너로 작동합니다. 우선 순위 그룹의 개별 명령을 표시 메뉴 또는 도구 모음 순서를 결정 합니다. 표시 유형을 제어 하 여 도구 모음 또는 메뉴에 표시 되는 단추를 방지할 수 있습니다. 에 나열 된 명령을 `<VisibilityConstraints>` .vsct 파일의 섹션에서는 연결 된 컨텍스트에만 표시 됩니다. 표시 여부는 그룹에 적용할 수 없습니다.  

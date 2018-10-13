@@ -1,7 +1,7 @@
 ---
 title: MSI 및 VSIX 배포 DSL의 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9842dd41b01d10405c3e3cae0d0dde2a704ecdf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7c1ad9b9790a7d7fda27bab0d409480f8114d3a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258299"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSI 및 VSIX 배포 DSL의](https://docs.microsoft.com/visualstudio/modeling/msi-and-vsix-deployment-of-a-dsl)합니다.  
-  
 사용자 고유의 컴퓨터 또는 다른 컴퓨터에 도메인 특정 언어를 설치할 수 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 대상 컴퓨터에 이미 설치 되어 있어야 합니다.  
   
 ##  <a name="which"></a> VSIX 및 MSI 배포 중에서 선택  

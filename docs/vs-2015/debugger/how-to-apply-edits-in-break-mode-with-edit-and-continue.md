@@ -1,7 +1,7 @@
 ---
 title: '방법: 편집을 사용 하 여 중단 모드에서 편집을 적용 하 고 계속 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c9b380c4a28beb50a2048eb00aa68f81bf27449
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ebab549e6d32b355355e4970f4191ea9a024e871
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266387"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>방법: 편집하며 계속하기를 사용하여 중단 모드에서 편집 적용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 편집 하며 계속 하기를 사용 하 여 중단 모드에서 편집 적용](https://docs.microsoft.com/visualstudio/debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue)합니다.  
-  
 편집하며 계속하기를 사용하면 실행을 중지한 후에 다시 시작하지 않고도 중단 모드에서 코드를 편집한 다음 계속 진행할 수 있습니다.  
   
  다음과 같은 디버깅 시나리오에서는 편집하며 계속하기를 사용할 수 없습니다.  

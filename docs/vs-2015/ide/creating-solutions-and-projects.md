@@ -1,7 +1,7 @@
 ---
 title: 솔루션 및 프로젝트 만들기 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee777b8b1d2664fbaa284033f21624238d5cf456
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543717"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248536"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션 및 프로젝트 만들기](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects)합니다.  
-  
 프로젝트는 응용 프로그램 빌드에 필요한 모든 항목에 대한 논리적 컨테이너입니다. 주 메뉴에서 **파일 &#124; 새로 만들기 &#124; 프로젝트**를 선택하여 프로젝트를 만드는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 프로젝트가 포함될 솔루션을 만듭니다. 그런 다음 필요한 경우 새 프로젝트나 기존 프로젝트를 솔루션에 더 추가할 수 있습니다. 기존 코드 파일에서 프로젝트를 만들 수 있으며 작업을 마쳤을 때 삭제될 임시 프로젝트(.NET만 해당)를 만들 수 있습니다.  
   
 > [!NOTE]

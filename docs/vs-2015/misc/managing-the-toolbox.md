@@ -1,7 +1,7 @@
 ---
 title: 관리 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,29 +15,29 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: fa9b30429de00f950e4d9de160fe72ece7f06760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254413"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
-합니다 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 멤버 자격과 모양을 관리할을 편집기 또는 디자이너와 같은 VSPackage로 허용 합니다 **도구 상자**합니다.  
+[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 에서는 편집기 또는 디자이너와 같은 VSPackage로 **도구 상자**의 멤버 자격과 모양을 관리할 수 있습니다.  
   
- 또한 **도구 상자** 자체는 자동화를 사용하여 관리할 수 있습니다. 자동화를 통해 도구 상자를 관리 하는 방법은 참조 하세요 [방법: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)합니다.  
+ 또한 **도구 상자** 자체는 자동화를 사용하여 관리할 수 있습니다. 자동화를 통해 도구 상자를 관리하는 방법에 대한 자세한 내용은 [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)를 참조하세요.  
   
 ## <a name="automatic-toolbox-tab-selection"></a>자동 도구 상자 탭 선택  
  현재 활성화된 편집기 또는 디자이너에 따라 특정 **도구 상자** 탭 또는 범주를 자동으로 활성화할 수 있습니다. 예를 들어 폼 디자이너가 활성화된 경우 **모든 Windows Forms** 탭이 선택되도록 할 수 있습니다.  
   
  이 지원은 다음이 필요한 편집기 및 디자이너로 제한됩니다.  
   
-1.  편집기 또는 디자이너의 인스턴스를 제공하는 팩터리 개체 구현. 디자이너 또는 편집기 팩터리 개체를 구현 하는 방법은 참조 하세요 [편집기 팩터리](../extensibility/editor-factories.md)합니다.  
+1.  편집기 또는 디자이너의 인스턴스를 제공하는 팩터리 개체 구현. 디자이너 또는 편집기 팩터리 개체를 구현하는 방법에 대한 자세한 내용은 [Editor Factories](../extensibility/editor-factories.md)를 참조하세요.  
   
 2.  편집기 또는 디자이너가 있으면 자동으로 활성화되는 도구 상자 탭 등록.  
   
 ## <a name="controlling-the-toolbox"></a>도구 상자 제어  
- 자동화 지원을 보완 합니다 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Vspackage 많이 제어 하는 방법을 제공 하려면 다음 인터페이스를 제공 **도구 상자** 관리 됩니다.  
+ 자동화 지원을 보완하기 위해 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 에서는 VSPackage가 **도구 상자** 의 관리 방법을 보다 완벽하게 제어할 수 있도록 하는 다음 인터페이스를 제공됩니다.  
   
 |인터페이스|설명|  
 |---------------|-----------------|  
@@ -72,7 +72,7 @@ ms.locfileid: "47541624"
   
 -   <xref:System.Drawing.Design.IToolboxService>를 사용하는 경우 범주 이름 등의 지역화된 정보를 관리하는 것은 구현자의 책임입니다.  
   
- 설정 메커니즘을 사용하여 IDE의 **도구** 메뉴에 있는 **설정 가져오기/내보내기** 명령에서 사용자가 액세스하는 **도구 상자** 설정을 저장할 수 있습니다. 설정을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Extending User Settings and 옵션](../extensibility/extending-user-settings-and-options.md)합니다.  
+ 설정 메커니즘을 사용하여 IDE의 **도구** 메뉴에 있는 **설정 가져오기/내보내기** 명령에서 사용자가 액세스하는 **도구 상자** 설정을 저장할 수 있습니다. 설정을 사용하는 방법에 대한 자세한 내용은 [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [도구 상자 확장](../misc/extending-the-toolbox.md)

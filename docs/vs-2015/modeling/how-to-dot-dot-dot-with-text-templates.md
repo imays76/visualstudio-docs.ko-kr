@@ -1,7 +1,7 @@
 ---
 title: 텍스트 템플릿 사용 방법 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04cba7688e358f3267bd4f3fb45b2ac10e83b286
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231506"
 ---
 # <a name="how-to--with-text-templates"></a>텍스트 템플릿 사용 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [텍스트 템플릿 사용 방법](https://docs.microsoft.com/visualstudio/modeling/how-to-dot-dot-dot-with-text-templates)합니다.  
-  
 텍스트 템플릿 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모든 종류의 텍스트를 생성 하는 유용한 방법을 제공 합니다. 텍스트 템플릿 텍스트를 생성 하려면 프로젝트 코드의 일부를 생성 하기 위해 디자인 타임 및 런타임에 응용 프로그램의 일부로 사용할 수 있습니다. 이 항목에서는 가장 자주 요약 "어떻게 할까요?" 라는 메시지가 표시 질문입니다.  
   
  이 항목에서는 여러 개의 답변 글머리 기호 뒤에 나오는 제안이 대체 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 스토어 앱에 대한 단위 테스트 만들기 및 실행 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 76a73232cf4c522baf261d50910d188234e8a4c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249511"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Visual Studio에서 스토어 앱에 대한 단위 테스트 만들기 및 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [만들기 및 Visual Studio에서 스토어 앱 용 실행된 단위 테스트](https://docs.microsoft.com/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)합니다.  
-  
 Visual Studio 2012 Express for Windows 8 단위 테스트 도구는 소프트웨어 개발 방식에 단위 테스트를 통합하려는 개발자 및 팀을 지원하기 위해 마련되었습니다. 단위 테스트는 Visual C#, Visual Basic 및 Visual C++ 프로젝트의 클래스 메서드에서 논리 오류를 찾는 효율적이고 유지 관리할 수 있는 방법을 개발자 및 테스터에게 제공합니다.  
   
 > [!NOTE]

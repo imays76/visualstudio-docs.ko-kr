@@ -1,7 +1,7 @@
 ---
 title: '방법: 오류 표식 구현 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b09696cb8419fe763e62047ff179cb6f6338f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ff4df9e76494e6409ce9d988781926e1a10602a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242959"
 ---
 # <a name="how-to-implement-error-markers"></a>방법: 오류 마커를 구현 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 구현 오류 표식](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-error-markers)합니다.  
-  
 오류 표식 (또는 빨간색 물결 무늬 밑줄)은 가장 어려운 구현 하려면 텍스트 편집기 사용자 지정 합니다. 그러나 VSPackage의 사용자에 게 혜택을 제공 하는 데 비용이 훨씬 보다 클 수 있습니다. 약간 오류 표식에 언어 파서 하다 구불구불한 또는 물결 모양의 빨간색 선으로 잘못 된 고 판단 되는 텍스트를 표시 합니다. 잘못 된 코드를 시각적으로 표시 하 여 프로그래머에 게 도움이 됩니다.  
   
  텍스트 마커를 사용 하 여 빨간색 물결 무늬 밑줄을 구현 합니다. 일반적으로 언어 서비스 추가 빨간색 물결 무늬 밑줄 텍스트 버퍼에 백그라운드 통과로 유휴 시간에 또는 백그라운드 스레드에서 합니다.  

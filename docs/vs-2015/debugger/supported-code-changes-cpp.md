@@ -1,7 +1,7 @@
 ---
 title: 코드 변경 (c + +)를 지원 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e56918753d93cfd70a3d9a7458f36a72bbabaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225357"
 ---
 # <a name="supported-code-changes-c"></a>지원되는 코드 변경(C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [지원 되는 코드 변경 (c + +)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-cpp)합니다.  
-  
 Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유형을 처리합니다. 그러나 일부 변경 내용은 프로그램을 실행하는 동안 적용할 수 없습니다. 이러한 변경 내용을 적용하려면 실행을 중지하고 새로운 버전의 코드를 빌드해야 합니다.  
   
  Visual Studio에서 C++용 편집하며 계속하기를 사용하는 방법에 대한 자세한 내용은 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 를 참조하세요.  
@@ -77,7 +75,7 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
 ##  <a name="BKMK_Unsupported_scenarios"></a> 지원되지 않는 시나리오  
  다음과 같은 디버깅 시나리오에서는 C/C++의 편집하며 계속하기를 사용할 수 없습니다.  
   
--   로 컴파일한 네이티브 앱 디버그 [/Zo (최적화 된 디버깅 향상)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+-   [/Zo(최적화된 디버깅 향상)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)로 컴파일한 네이티브 앱 디버그  
   
 -   Visual Studio 2015 업데이트 1 이전의 Visual Studio 버전에서 Windows 스토어 앱 또는 구성 요소를 디버그합니다. Visual Studio 2015 업데이트 1부터는 `/ZI` 스위치로  `/bigobj` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다. `/FASTLINK` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다.  
   
@@ -147,7 +145,7 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
 3.  **미리 컴파일 허용** 확인란 선택을 취소합니다.  
   
 ##  <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 특성 제한 사항  
- 편집하며 계속하기는 IDL(인터페이스 정의) 파일을 다시 생성하지 않습니다. 따라서 디버깅하는 동안 IDL 특성의 변경 내용이 반영되지 않습니다. IDL 특성을 변경한 결과를 확인하려면 디버깅을 중단하고 앱을 다시 빌드해야 합니다. 편집하며 계속하기는 IDL 특성이 변경되어도 오류나 경고를 생성하지 않습니다. 자세한 내용은 [IDL 특성](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)합니다.  
+ 편집하며 계속하기는 IDL(인터페이스 정의) 파일을 다시 생성하지 않습니다. 따라서 디버깅하는 동안 IDL 특성의 변경 내용이 반영되지 않습니다. IDL 특성을 변경한 결과를 확인하려면 디버깅을 중단하고 앱을 다시 빌드해야 합니다. 편집하며 계속하기는 IDL 특성이 변경되어도 오류나 경고를 생성하지 않습니다. 자세한 내용은 [IDL 특성](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

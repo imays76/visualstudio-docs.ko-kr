@@ -1,7 +1,7 @@
 ---
 title: SccBackgroundGet 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 162bbc427b48ee10ea3a0b88837cf012f1c3fd07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2131eabd0c5933e949ab3119a89c79681f2faab1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256648"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccBackgroundGet 함수](https://docs.microsoft.com/visualstudio/extensibility/sccbackgroundget-function)합니다.  
-  
 이 함수는 소스 제어에서 각 지정된 된 파일의 사용자 상호 작용 없이 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

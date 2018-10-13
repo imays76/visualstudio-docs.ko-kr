@@ -1,7 +1,7 @@
 ---
 title: 옵션 대화 상자, 환경, 국가별 설정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6aacaecc14b7a941fcbec54fcf1e26bf9d62690a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98e806101b685f6691dc276bccc58d157af6bc54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239631"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 국가별 설정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [국가별 설정, 환경, 옵션 대화 상자](https://docs.microsoft.com/visualstudio/ide/reference/international-settings-environment-options-dialog-box)합니다.  
-  
   
 국가별 설정 페이지를 사용하면 컴퓨터에 여러 언어 버전의 IDE(통합 개발 환경)가 설치된 경우 기본 언어를 변경할 수 있습니다. **도구** 메뉴에서 **옵션**을 선택한 다음 **환경** 폴더에서 **국가별 설정**을 선택하여 이 대화 상자에 액세스할 수 있습니다. 이 페이지가 목록에 나타나지 않으면 **옵션** 대화 상자에서 **모든 설정 표시**를 선택합니다.  
   

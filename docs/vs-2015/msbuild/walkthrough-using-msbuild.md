@@ -1,7 +1,7 @@
 ---
 title: '연습: MSBuild 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dc173f438af65d6952d0d5df8adecd56530c801
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d5970c7612e38b33e1f25d8e19b63a1042a9b6b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565025"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266697"
 ---
 # <a name="walkthrough-using-msbuild"></a>연습: MSBuild 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: MSBuild를 사용 하 여](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-using-msbuild)입니다.  
-  
   
 MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습에서는 MSBuild의 구성 요소를 소개하고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. 학습 내용은 다음과 같습니다.  
   

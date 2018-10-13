@@ -1,7 +1,7 @@
 ---
 title: '방법: 웹 응용 프로그램 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,23 +24,21 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dce1129282dc7273631e261bb32d313f65ce381
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4e185b1b35a2462547ca8689dc1a4bfe80ff036
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544196"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260814"
 ---
 # <a name="how-to-debug-web-applications"></a>방법: 웹 응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 웹 응용 프로그램 디버그](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-web-applications)합니다.  
-  
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램을 개발 하기 위한 기본 기술 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거에서는 로컬 컴퓨터 또는 원격 서버에서 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램을 디버깅하는 강력한 도구를 제공합니다. 이 항목에서는 디버그 하는 방법을 설명를 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로젝트 개발 중입니다. 디버깅 하는 방법에 대 한 자세한를 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 프로덕션 서버에 이미 배포 된 응용 프로그램을 참조 하십시오 [배포 된 웹 응용 프로그램 디버깅](../debugger/debugging-deployed-web-applications.md)합니다.  
   
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램을 디버깅하려면  
   
--   필요한 권한이 있어야 합니다. 자세한 내용은 [시스템 요구 사항](../debugger/aspnet-debugging-system-requirements.md)합니다.  
+-   필요한 권한이 있어야 합니다. 자세한 내용은 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)항목을 참조하세요.  
   
 -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 디버깅에 사용할 수 있어야 합니다 **프로젝트 속성**합니다.  
   

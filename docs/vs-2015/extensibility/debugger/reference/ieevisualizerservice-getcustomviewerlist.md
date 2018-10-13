@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerService::GetCustomViewerList | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e037ac728c47b2b4610d866b2ba3868dc44b4eb0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3010461a8270acabc7ffeab8e0f51191839cc1a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541335"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269076"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IEEVisualizerService::GetCustomViewerList](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist)합니다.  
-  
 이 메서드는이 서비스에서 인식 되는 형식 시각화 도우미의 목록을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  

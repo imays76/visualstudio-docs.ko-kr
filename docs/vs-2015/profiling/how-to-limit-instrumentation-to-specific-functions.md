@@ -1,7 +1,7 @@
 ---
 title: '방법: 특정 함수로 계측 제한 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab089bd02fafc4dc711fa01c49a9690bbd9f6a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0432a3e07d10db9daa03395f182836726bdf753
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249186"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>방법: 특정 함수로 계측 제한
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 특정 함수로 계측 제한](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-functions)합니다.  
-  
 **성능 세션**의 **고급** 페이지 또는 대상 이진 속성 페이지에서 옵션을 설정하여 계측 및 데이터 수집을 하나 이상의 함수로 제한할 수 있습니다.  
   
 -   성능 세션 속성 페이지에서 함수를 지정하면 세션의 모든 계측된 이진 파일에서 해당 함수만 계측됩니다.  

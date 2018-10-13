@@ -1,7 +1,7 @@
 ---
 title: 오류를 액세스 하는 데이터 문제 해결에 대 한 추가 리소스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -234,18 +234,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 3971ac35e308c134fbf0f25fc2ed05e741616e8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552733"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263025"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>데이터 액세스 오류 문제 해결에 대 한 추가 리소스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류를 액세스 하는 데이터 문제 해결에 대 한 추가 리소스](https://docs.microsoft.com/visualstudio/data-tools/additional-resources-for-troubleshooting-data-access-errors)합니다.  
-  
   
 MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. 다음 표에 데이터 관련 포럼 MSDN에서 확인할 수 있습니다.  
   

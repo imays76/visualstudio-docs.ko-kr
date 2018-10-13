@@ -1,7 +1,7 @@
 ---
 title: 기본 프로젝트의 개체 모델 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc9a5494ad888da9707af0d8af40dc5ea3d242b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b5c70ce13341eeb4a522c16fe336d5f644f830b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228730"
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>기본 프로젝트의 개체 모델 확장
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [기본 프로젝트의 개체 모델 확장](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-the-object-model-of-the-base-project)합니다.  
-  
 프로젝트 하위 형식에는 다음 위치에서 기본 프로젝트의 자동화 개체 모델을 확장 될 수 있습니다.  
   
 -   Project.Extender ("\<ProjectSubtypeName >")-이 통해 프로젝트 하위 형식에서 사용자 지정 메서드를 사용 하 여 개체를 제공 하는 <xref:EnvDTE.Project>합니다. 프로젝트 하위 형식 Automation Extender를 사용 하 여 노출할 수는 `Project` 개체입니다. <xref:EnvDTE80.IInternalExtenderProvider>주 프로젝트 하위 형식 aggregator에서 구현 된 인터페이스에 대 한 해당 개체를 제공 해야 합니다 `VSHPROPID_ExtObjectCATID` 에서 <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> (해당 하는 `itemid` VSITEMID_ROOT의 값에서 `VSITEMID`) CATID입니다.  

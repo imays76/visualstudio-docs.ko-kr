@@ -1,7 +1,7 @@
 ---
 title: VSPackage 설치 시나리오 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b88dcef6eebe552c23268cb307248956db5486b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 819f6b9a1da5979e3e9647d6a0773d741f13e945
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253060"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 설치 시나리오
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSPackage 설치 시나리오](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-setup-scenarios)합니다.  
-  
 유연 하 게 VSPackage 설치 관리자를 디자인 하는 것이 반드시 합니다. 예를 들어, 보안 패치를 나중에 해제 해야 할 수 있습니다 또는 철저 한-side-by-side 버전 관리를 지원 해야 비즈니스 전략을 변경할 수 있습니다.  
   
  [Visual Studio의 여러 버전을 지 원하는](../../extensibility/supporting-multiple-versions-of-visual-studio.md), 장점 및 지원-나란히 설치의 문제를 확인할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage의 공유 또는 side-by-side-설치 합니다. 즉, side-by-side-Vspackage 가장 유연성을 제공 하의 새 기능을 지원 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  

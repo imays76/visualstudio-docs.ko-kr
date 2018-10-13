@@ -1,7 +1,7 @@
 ---
 title: '방법: 참조 관리자를 사용하여 참조 추가 또는 제거 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c243fc2a95e547a2b978f50be18e13c6295fa83a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4958785f2db12dada9bcf062d3865b6b1ae19869
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258182"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 참조 추가 또는 제거 참조 관리자를 사용 하 여](https://docs.microsoft.com/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager)입니다.  
-  
 **참조 관리자** 대화 상자를 사용하여 사용자가 개발했거나 Microsoft 또는 타사에서 개발한 구성 요소에 대한 참조를 추가하고 관리할 수 있습니다. 유니버설 Windows 앱을 개발하는 경우 프로젝트에서 올바른 모든 Windows SDK DLL을 자동으로 참조합니다. .NET 응용 프로그램을 개발하는 경우 프로젝트에서 자동으로 mscorlib.dll을 참조합니다. 일부 .NET API는 수동으로 추가해야 하는 구성 요소에서 노출됩니다. COM 구성 요소 또는 사용자 지정 구성 요소에 대한 참조를 수동으로 추가해야 합니다.  
   
 ## <a name="adding-and-removing-a-reference"></a>참조 추가 및 제거  

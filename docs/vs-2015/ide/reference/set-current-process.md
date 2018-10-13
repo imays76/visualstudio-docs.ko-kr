@@ -1,7 +1,7 @@
 ---
 title: 현재 프로세스 설정 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5281d1c0d926d8d6acdedf323649216c74a4cab9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0baea39c341e8034ff222de32548d0518f115e82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246664"
 ---
 # <a name="set-current-process"></a>현재 프로세스 설정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [현재 프로세스 설정](https://docs.microsoft.com/visualstudio/ide/reference/set-current-process)합니다.  
-  
   
 디버거에서 지정한 프로세스를 활성 프로세스로 설정합니다.  
   
@@ -54,7 +52,7 @@ Debug.SetCurrentProcess index
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)   
  [명령 창](../../ide/reference/command-window.md)   
- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

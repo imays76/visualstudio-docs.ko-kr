@@ -1,7 +1,7 @@
 ---
 title: TableAdapter를 사용 하 여 데이터를 업데이트 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2dfeced126cfa80d28ad1e3245486c63101e6e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19e694e617b15b42029ff641516c59fcecdfbd69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555412"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237278"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter를 사용하여 데이터 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [TableAdapter를 사용 하 여 데이터를 업데이트](https://docs.microsoft.com/visualstudio/data-tools/update-data-by-using-a-tableadapter)합니다.  
-  
   
 데이터 집합의 데이터를 수정 하 고 유효성을 검사 된 후 databaseby 호출을 다시 업데이트 된 데이터를 보낼 수 있습니다 합니다 `Update` 메서드를 [TableAdapter](../data-tools/tableadapter-overview.md)합니다. `Update` 메서드는 단일 데이터 테이블을 업데이트 하 고 올바른 명령을 (INSERT, UPDATE 또는 DELETE)에 따라 실행을 <xref:System.Data.DataRow.RowState%2A> 테이블의 각 데이터 행입니다. 데이터 집합에 관련 테이블, Visual Studio는 업데이트를 수행 하는 데 사용할 수 있는 TableAdapterManager 클래스를 생성 합니다. TableAdapterManager 클래스는 데이터베이스에 정의 된 외래 키 제약 조건에 따라 올바른 순서로 업데이트를 확인 합니다. 데이터 바인딩된 컨트롤을 사용 하면 데이터 바인딩 아키텍처 tableAdapterManager 호출 되는 TableAdapterManager 클래스의 멤버 변수를 만듭니다. 자세한 내용은 [계층적 업데이트 개요](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)합니다.  
   

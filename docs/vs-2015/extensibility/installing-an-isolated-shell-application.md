@@ -1,7 +1,7 @@
 ---
 title: 격리 셸 응용 프로그램 설치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7b1ba12f39accf863b051ec7096ee835a03ff64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257350"
 ---
 # <a name="installing-an-isolated-shell-application"></a>격리 셸 응용 프로그램 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [격리 셸 응용 프로그램을 설치](https://docs.microsoft.com/visualstudio/extensibility/installing-an-isolated-shell-application)합니다.  
-  
 셸 앱을 설치 하려면 다음 단계를 수행 해야 합니다.  
   
 -   솔루션을 준비 합니다.  

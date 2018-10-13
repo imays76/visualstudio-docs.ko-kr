@@ -1,7 +1,7 @@
 ---
 title: 디버그 후크 함수 작성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5761b0a32e7739a5611f2d3d07183f0c529fc60c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4439b3c308a3c76172b0de4aa5c8a95f92092c5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218987"
 ---
 # <a name="debug-hook-function-writing"></a>디버그 후크 함수 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버그 후크 함수 작성](https://docs.microsoft.com/visualstudio/debugger/debug-hook-function-writing)합니다.  
-  
 이 단원에서는 디버거의 표준 처리 과정에서 미리 정의된 특정 지점에 코드를 삽입하기 위해 작성할 수 있는 여러 가지 사용자 지정 디버그 후크 함수에 대해 설명합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

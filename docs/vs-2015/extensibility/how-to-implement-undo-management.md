@@ -1,7 +1,7 @@
 ---
 title: '방법: 실행 취소 관리 구현 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47b71b7e2760af18605d3ded52b68cfc38742e65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72355b396dc88fc02c1ccdfb4f3a2ed4afe66467
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246287"
 ---
 # <a name="how-to-implement-undo-management"></a>방법: 실행 취소 관리 구현
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 실행 취소 관리 구현](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-undo-management)합니다.  
-  
 실행 취소 관리에 사용 되는 기본 인터페이스는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, 환경에서 구현 되는 합니다. 실행 취소 관리를 지원 하려면 별도 실행 취소 단위를 구현 합니다. (즉, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, 여러 개별 단계로 포함할 수 있습니다.  
   
  실행 취소 관리를 구현 하는 방법을 여부 편집기 뷰를 여러 개를 지원 하는지 여부에 따라 달라 집니다. 각 구현에 대 한 절차는 다음 섹션에서 자세히 설명 합니다.  

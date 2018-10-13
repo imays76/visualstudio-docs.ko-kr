@@ -1,7 +1,7 @@
 ---
 title: 선택한 연결에 지원 되지 않는 데이터베이스 공급자를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e38bda495521bf81c6eb4b9a00a0f32620a71fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4e717bf0f1da2b7b25d62d4639690ae1cce0273
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241360"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>선택한 연결에서 지원되지 않는 데이터베이스 공급자를 사용합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [선택한 연결에 지원 되지 않는 데이터베이스 공급자를 사용 하 여](https://docs.microsoft.com/visualstudio/data-tools/the-selected-connection-uses-an-unsupported-database-provider)입니다.  
-  
   
 이 메시지는.NET Framework Data Provider for SQL Server에서 사용 하지 않는 항목을 끌어 오면 나타납니다 **서버 탐색기**/**데이터베이스 탐색기** 에 [LINQ to SQL Visual Studio의 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)합니다.  
   

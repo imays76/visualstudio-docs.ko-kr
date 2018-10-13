@@ -1,7 +1,7 @@
 ---
 title: VSIX 패키지 서명 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f25ce39fe1c96d0e45b89fdd6114ce6984be2d16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263886"
 ---
 # <a name="signing-vsix-packages"></a>VSIX 패키지 서명
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSIX 패키지 서명](https://docs.microsoft.com/visualstudio/extensibility/signing-vsix-packages)합니다.  
-  
 확장 어셈블리는 Visual Studio에서 실행할 수는 있지만 이렇게 하는 것이 좋습니다 전에 서명할 필요가 없습니다.  
   
  확장 프로그램을 보호 하 고 사용 하 여 손상 되지 않았는지 확인 하려는 경우에 VSIX 패키지에 디지털 서명을 추가할 수 있습니다. VSIX에 서명 하는 경우 VSIX 설치 관리자는 서명 및 서명 자체에 대 한 자세한 정보를 나타내는 메시지가 표시 됩니다. VSIX의 내용을 수정 된 VSIX 다시 서명 되지 않은 경우 VSIX 설치 관리자 서명이 유효한 지 표시 됩니다. 설치 중지 되지 않으면 있지만 사용자에 게 경고가 표시 됩니다.  

@@ -1,7 +1,7 @@
 ---
 title: 리소스에서 매니페스트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fba4d5ca7611bab24488ed5c48247241a2b74bf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b18e81cfa265f79e05f1cfb1dcfbca1f348b341d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551764"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252436"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [리소스에서 매니페스트](https://docs.microsoft.com/visualstudio/extensibility/internals/manifest-from-resources)합니다.  
-  
 리소스 도구에서 매니페스트는 이미지 리소스 (.png 또는.xaml 파일)의 목록을 사용 하 고 이러한 이미지는 Visual Studio 이미지 서비스와 함께 사용할 수 있도록.imagemanifest 파일을 생성 하는 콘솔 응용 프로그램. 또한 이미지를 기존.imagemanifest 추가할이 도구를 사용할 수 있습니다. 이 도구는 높은 DPI 및 테마를 Visual Studio 확장에는 이미지에 대 한 지원을 추가 하는 데 유용 합니다. 생성 된.imagemanifest 파일에 포함 되어 있고 Visual Studio 확장 (.vsix)의 일부로 배포 합니다.  
   
 ## <a name="how-to-use-the-tool"></a>이 도구를 사용 하는 방법  

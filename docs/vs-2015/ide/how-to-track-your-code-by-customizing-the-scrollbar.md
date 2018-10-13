@@ -1,7 +1,7 @@
 ---
 title: '방법: 스크롤 막대를 사용자 지정하여 코드 추적 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cbf25e7f3f46d58919c6cdffd95663de18a0fe2e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcbce0884dbc5be78371b6df00b0eb482aa8c26e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543437"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270792"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>How to: Track Your Code by Customizing the Scrollbar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

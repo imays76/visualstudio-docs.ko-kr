@@ -1,7 +1,7 @@
 ---
 title: 사용 가능한 서비스 목록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b09e58ee64eeb27940ea30f9a03429706b720cf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658a4406b16c3f79f3c485e62e6de8027bb35167
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248107"
 ---
 # <a name="list-of-available-services"></a>사용 가능한 서비스 목록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용 가능한 서비스 목록](https://docs.microsoft.com/visualstudio/extensibility/internals/list-of-available-services)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 및 Visual Studio SDK는 다음 서비스를 지원 합니다. 일부 패키지는 여기에 나열 되지 자신의 서비스를 제공 합니다.-예를 들어 언어 서비스는 단일 서비스가 없는 GUID입니다. 레지스트리에서 언어 서비스의 GUID를 찾으려면 언어의 이름을 사용 해야 합니다.  
   
  여기에 나열 된 또는 일부 다른 소스 (예: 언어 서비스)에서 가져온 서비스 Guid를 사용 하 여 각 서비스를 사용 하 여 표시 된 인터페이스나 기본 인터페이스를 가져옵니다.  

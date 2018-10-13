@@ -1,7 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, XAML, 서식 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -36,18 +36,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bf43a9c13b273339d58f376b684a94444861d4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0cf67db7d7109003c3befa5c5e263190f0258965
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265958"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>옵션, 텍스트 편집기, XAML, 서식
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션, 텍스트 편집기, XAML, 서식 지정](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-xaml-formatting)합니다.  
-  
   
 **서식** 속성 페이지를 사용하여 XAML 문서에서 요소와 특성의 형식 지정 방법을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 **도구** 메뉴를 클릭한 후 **옵션**을 클릭합니다. **서식** 속성 페이지에 액세스하려면 **텍스트 편집기**, **XAML**, **서식** 노드를 확장합니다.  
   

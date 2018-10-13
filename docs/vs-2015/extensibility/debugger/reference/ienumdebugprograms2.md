@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPrograms2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2871a64ce618d03a96900d916a56fb0c598e47e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cbb01738876eb342fecb83f7f6d09c850ee89636
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247639"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IEnumDebugPrograms2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugprograms2)합니다.  
-  
 이 인터페이스는 현재 디버그 세션에서 실행 중인 프로그램을 열거 합니다.  
   
 ## <a name="syntax"></a>구문  

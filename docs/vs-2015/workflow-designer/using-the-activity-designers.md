@@ -1,7 +1,7 @@
 ---
 title: 활동 디자이너를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c370b48d0534303947ca2e940adf95e178422c56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224239"
 ---
 # <a name="using-the-activity-designers"></a>활동 디자이너 사용
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에는 활동 및 워크플로를 생성할 때 사용할 수 있는 여러 가지 시스템 제공 활동이 포함되어 있습니다. 이 단원에서는 사용할 수 있는 시스템 제공 활동 및 디자이너의 범주에 대해 설명합니다. 이러한 각 범주의 개별 활동 및 개별 디자이너에 대한 항목에서는 해당 활동의 역할과 사용 방법에 대한 지침을 제공합니다.  
