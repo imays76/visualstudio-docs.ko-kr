@@ -1,7 +1,7 @@
 ---
 title: 편집기 가져오기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7017d4a99bbfd58a854ba1cd33230f11928024cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b7bb4ccf7c599b66d8e4e50c01270d5fede1f3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171881"
 ---
 # <a name="editor-imports"></a>편집기 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집기 가져오기](https://docs.microsoft.com/visualstudio/extensibility/editor-imports)합니다.  
-  
 편집기 서비스, 팩터리 및 핵심 편집기를 다양 한 종류의 액세스를 사용 하 여 확장을 제공 하는 브로커의 숫자를 가져올 수 있습니다. 예를 들어, 가져올 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 을 제공 하기는 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 지정된 된 콘텐츠 형식에 대 한 합니다. (이 검색기 허용 텍스트 버퍼에서 다른 유형의 검색을 수행 합니다.)  
   
  편집기 가져오기를 사용 하려면 가져올 있습니다 필드 또는 Managed Extensibility Framework 구성 요소 파트를 내보내는 클래스의 속성으로.  

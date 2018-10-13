@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 배포에 대 한 자세한 정보 표시 로그 파일을 지정 합니다. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b30260267fca5b7de16316e84082fc3b464f7deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27efe283c8484412cc5d3c697560a393b3eddbc6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171811"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>방법: ClickOnce 배포에 대한 자세한 로그 파일 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 배포에 대 한 자세한 정보 표시 로그 파일 지정](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-verbose-log-files-for-clickonce-deployments)합니다.  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 모든 배포에 대 한 활동 로그를 유지 관리합니다. 이러한 로그는 설치, 초기화, 업데이트 및 제거와 관련 된 세부 정보 문서는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 합니다. 세부 사항이 증가 하는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 레지스트리 편집기를 사용 하 여 이러한 로그 파일에 쓰기 (**regedit.exe**) 세부 정보 표시 수준을 지정 하려면.  
   
 > [!CAUTION]

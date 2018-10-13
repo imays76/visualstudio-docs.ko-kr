@@ -1,7 +1,7 @@
 ---
 title: SccGetEvents 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e73fea52d207d4f9834d5c3eabb15bf733c7e23
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 720b2fdb6be29ebc21bad5f6e7062d818e4529c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171758"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccGetEvents 함수](https://docs.microsoft.com/visualstudio/extensibility/sccgetevents-function)합니다.  
-  
 이 함수는 큐에 대기 중인된 상태 이벤트를 검색합니다.  
   
 ## <a name="syntax"></a>구문  

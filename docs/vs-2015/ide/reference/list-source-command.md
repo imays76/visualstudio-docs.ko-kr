@@ -1,7 +1,7 @@
 ---
 title: 소스 열거 명령 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce57d39d609268e2570d588e6863eb1e8b8d3111
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff216ddd8943ea971669c6ebb1c7c0306b02160f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171979"
 ---
 # <a name="list-source-command"></a>소스 목록 표시 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 열거 명령](https://docs.microsoft.com/visualstudio/ide/reference/list-source-command)입니다.  
-  
   
 소스 코드의 지정된 줄을 표시합니다.  
   

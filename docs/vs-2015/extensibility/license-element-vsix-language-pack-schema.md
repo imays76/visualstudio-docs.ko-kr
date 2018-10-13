@@ -1,7 +1,7 @@
 ---
 title: 요소 (VSIX 언어 팩 스키마) 라이선스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecf1913878137d84346275beccb512027f74f8f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66aa5d8166ce39dee80e23af20365eca6f5f8fee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552087"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172265"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>License 요소 (VSIX 언어 팩 스키마)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [License 요소 (VSIX 언어 팩 스키마)](https://docs.microsoft.com/visualstudio/extensibility/license-element-vsix-language-pack-schema)합니다.  
-  
 선택 사항입니다. 지역화 된 버전의 확장에 대 한 라이선스 파일의 경로입니다.  
   
 ## <a name="syntax"></a>구문  

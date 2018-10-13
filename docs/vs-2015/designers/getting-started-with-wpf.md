@@ -1,7 +1,7 @@
 ---
 title: WPF 시작 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4fc3d97c98356ce4978093fae0afd62eb0bcbac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f408042c5c8a07e00b37adffacc9c3e6b13207d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172304"
 ---
 # <a name="getting-started-with-wpf"></a>WPF 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Getting Started with WPF](https://docs.microsoft.com/visualstudio/designers/getting-started-with-wpf)합니다.  
-  
 WPF(Windows Presentation Foundation)는 데스크톱 클라이언트 응용 프로그램을 만드는 UI 프레임워크입니다. WPF 개발 플랫폼은 응용 프로그램 모델, 리소스, 컨트롤, 그래픽, 레이아웃, 데이터 바인딩, 문서 및 보안을 포함하여 다양한 응용 프로그램 개발 기능 집합을 지원합니다. .NET Framework의 하위 집합이므로 이전에 ASP.NET 또는 Windows Forms를 사용하여 .NET Framework로 응용 프로그램을 빌드한 경우 프로그래밍 환경이 비슷합니다. WPF는 XAML(Extensible Application Markup Language)을 사용하여 응용 프로그램 프로그래밍을 위한 선언적 모델을 제공합니다. 이 섹션의 항목에서는 WPF를 소개하고 WPF를 시작하는 데 유용한 정보를 제공합니다.  
   
 ## <a name="where-should-i-start"></a>시작 지점  

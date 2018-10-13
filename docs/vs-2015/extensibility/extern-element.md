@@ -1,7 +1,7 @@
 ---
 title: Extern 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dce51835164424272874b42b6073131607c7272
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc1b406fa0675a481b538446f9c4bf0716475872
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565427"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171888"
 ---
 # <a name="extern-element"></a>Extern 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Extern 요소](https://docs.microsoft.com/visualstudio/extensibility/extern-element)합니다.  
-  
 Extern 요소는 컴파일 타임에.vsct 파일을 사용 하 여 병합할 모든 외부 헤더 (.h) 파일을 참조 합니다. VSCT 컴파일러인 지정 되거나 참조 포함 경로에 병합할 파일 이어야 합니다는 [포함 요소](../extensibility/include-element.md)합니다. 파일은 다른.vsct 파일 또는 c + + 헤더 파일 수 있습니다.  
   
  폼의 헤더 파일에 정의 해야 "#define [기호] [Value]" 값을 이전에 정의 된 경우 다른 기호를 수 있습니다. 명령은 항목의 조건문에서 정의 사용할 수 있습니다. 실제로 사용 되는 모든 기호는 무시 됩니다.  

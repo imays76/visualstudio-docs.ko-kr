@@ -1,7 +1,7 @@
 ---
 title: VSPackage 개발을 위한 Devenv 명령줄 스위치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bb10653a784b6d481717965e68b445c24b3f3db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80f67d2c640106d0956f4feda06c4969bbeadeac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172057"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 개발을 위한 Devenv 명령줄 스위치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSPackage 개발을 위한 Devenv 명령줄 스위치](https://docs.microsoft.com/visualstudio/extensibility/devenv-command-line-switches-for-vspackage-development)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 개발자는 devenv.exe가 Visual Studio 통합된 개발 환경 (IDE)를 시작 하는 파일을 실행할 때 명령줄에서 작업을 자동화할 수 있습니다.  
   
  작업은 다음과 같습니다.  
