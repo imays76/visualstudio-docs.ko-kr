@@ -1,7 +1,7 @@
 ---
 title: 솔루션 사용자 옵션 (합니다. Suo) 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408acad4031417f4c3dd70b49758f8bee8e2819d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6e9ccc973c4187cce5f44f6f13262fbee0ea53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186799"
 ---
 # <a name="solution-user-options-suo-file"></a>솔루션 사용자 옵션(.Suo) 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션 사용자 옵션 (합니다. Suo) 파일](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-user-options-dot-suo-file)합니다.  
-  
 솔루션 사용자 옵션 (.suo) 파일 사용자별 솔루션 옵션을 포함합니다. 소스 코드 제어에이 파일을 체크 해야 합니다.  
   
  솔루션 사용자 옵션 (.suo) 파일에는 구조적된 저장소 또는 복합을 이진 형식으로 저장 된 파일입니다. .Suo 파일에 정보를 확인 하는 데 사용할 수 있는 키가 아닌 스트림의 이름을 사용 하 여 스트림으로 사용자 정보를 저장 합니다. 솔루션 사용자 옵션 파일 사용자 기본 설정을 저장 하는 데 사용 되 고 Visual Studio 솔루션을 저장 하는 경우 자동으로 생성 됩니다.  

@@ -1,7 +1,7 @@
 ---
 title: 데이터 집합의 데이터 편집 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4a581608c0be728b3f6686cbfb7ad5f7abe750e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4a24b088922de30f421621a5f367287b84e3ddc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184850"
 ---
 # <a name="edit-data-in-datasets"></a>데이터 집합의 데이터 편집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터 집합의 데이터 편집](https://docs.microsoft.com/visualstudio/data-tools/edit-data-in-datasets)합니다.  
-  
   
 모든 데이터베이스의 테이블에서 데이터를 편집할 때 처럼 데이터 테이블의에서 데이터를 편집 합니다. 프로세스는 삽입, 업데이트 및 테이블의 레코드를 삭제 하는 중에 포함할 수 있습니다. 데이터 바인딩된 폼에 있는 사용자가 편집 가능한 필드를 지정할 수 있습니다. 이러한 경우 데이터 바인딩 인프라는 모든 변경 내용 추적 나중에 변경 내용을 데이터베이스로 다시 전송 수 있도록 처리 합니다. 프로그래밍 방식으로 데이터를 편집을 수행한 경우 해당 변경 내용을 다시 데이터베이스에 전송 하려는 개체와 수에 대 한 변경 내용 추적을 수행 하는 메서드를 사용 해야 합니다.  
   

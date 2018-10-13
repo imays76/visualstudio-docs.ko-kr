@@ -1,7 +1,7 @@
 ---
 title: 메시지 뷰 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d603ad157786df756f130c3bf203961b48a610f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76d033cdbe0949cfe861f44be8f390d72c316af8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556375"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182093"
 ---
 # <a name="messages-view"></a>메시지 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [메시지 보기](https://docs.microsoft.com/visualstudio/debugger/messages-view)합니다.  
-  
 각 창에는 관련된 메시지 스트림이 있습니다. 메시지 보기 창에는이 메시지 스트림을 표시합니다. 창 핸들, 메시지 코드 및 메시지가 표시 됩니다. 스레드 또는 프로세스에 대 한 메시지 보기를 만들 수 있습니다. 이 옵션을 사용 하면 특정 프로세스 또는 스레드 창 초기화 메시지를 캡처하는 데 특히 유용는 소유 하는 모든 창에 전송 된 메시지를 볼 수 있습니다.  
   
  아래는 일반적인 메시지 보기 창에 나타납니다. 첫 번째 열에는 창 핸들을 포함 하 고 두 번째 열에는 메시지 코드가 포함 되어 있습니다. (에서 설명한 [메시지 코드](../debugger/message-codes.md)). 디코딩된 메시지 매개 변수 및 반환 값은 오른쪽에 있습니다.  

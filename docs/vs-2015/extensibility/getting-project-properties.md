@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 속성 가져오기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71f7eb7d14a829d05dd28d7fd0a03108aecf9871
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb2526e9e6655bd0dd60af1a525be21227881949
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564391"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182587"
 ---
 # <a name="getting-project-properties"></a>프로젝트 속성 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 속성 가져오기](https://docs.microsoft.com/visualstudio/extensibility/getting-project-properties)합니다.  
-  
 이 연습에서는 도구 창에서 프로젝트 속성을 표시 하는 방법입니다.  
   
 ## <a name="prerequisites"></a>전제 조건  

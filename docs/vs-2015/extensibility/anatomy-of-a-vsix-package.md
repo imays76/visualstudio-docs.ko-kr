@@ -1,7 +1,7 @@
 ---
 title: VSIX 패키지 분석 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645d9bff0b1f1bd3ac3afe3f5c815d9b9cd208d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 207abbda08134c2a1e065cf73050fc2451d4eaab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181462"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 패키지 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSIX 패키지 분석](https://docs.microsoft.com/visualstudio/extensibility/anatomy-of-a-vsix-package)합니다.  
-  
 VSIX 패키지는 Visual Studio 확장을 설치 하 고 분류를 사용 하 여 메타 데이터와 함께 하나 이상의 Visual Studio 확장을 포함 하는.vsix 파일입니다. 해당 메타 데이터는 VSIX 매니페스트 및 [Content_Types].xml 파일에 포함 됩니다. VSIX 패키지 지역화 된 설치 프로그램 텍스트를 제공 하려면 하나 이상의 Extension.vsixlangpack 파일 포함 될 수도 있습니다 및 종속성을 설치 하는 추가 VSIX 패키지를 포함할 수 있습니다.  
   
  VSIX 패키지 형식으로 OPC Open Packaging Conventions () 표준을 따릅니다. 패키지 이진 파일에 포함 하 고 매니페스트 [Content_Types].xml 파일 및.vsix 파일을 지원 파일. 하나의 VSIX 패키지는 여러 프로젝트나 자신의 매니페스트는 여러 패키지의 출력을 포함할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 스레드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8070107a1befab999f2edd47d32e25e84266b86d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bda2bc0c79f766b4c6322850a22d2a830499ff58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188276"
 ---
 # <a name="threads"></a>스레드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [스레드](https://docs.microsoft.com/visualstudio/extensibility/debugger/threads)합니다.  
-  
 디버거 아키텍처 측면을 **스레드**:  
   
 -   기본 단위 계산입니다. 스레드는 순차적으로 하나의 코드 컨텍스트에서 다음으로 이동 하는 단일 호출 스택, 컨텍스트 내에서 명령을 실행 합니다.  

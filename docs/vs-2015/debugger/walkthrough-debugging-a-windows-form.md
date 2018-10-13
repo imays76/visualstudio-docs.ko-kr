@@ -1,7 +1,7 @@
 ---
 title: '연습: Windows Form 디버깅 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cf2fd93c76d4be7c032518148acad27b4937f3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 665f2513d96b58a541970252c81848c20672f48b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555460"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180260"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>연습: Windows Form 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: Windows Form 디버깅](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-windows-form)합니다.  
-  
 Windows 폼에는 가장 일반적인 관리 되는 응용 프로그램 중 하나입니다. Windows 폼에 표준 Windows 응용 프로그램을 만듭니다. Visual Basic, C# 또는 c + +를 사용 하 여이 연습을 완료할 수 있습니다.  
   
  먼저, 열려 있는 솔루션을 닫아야 합니다.  

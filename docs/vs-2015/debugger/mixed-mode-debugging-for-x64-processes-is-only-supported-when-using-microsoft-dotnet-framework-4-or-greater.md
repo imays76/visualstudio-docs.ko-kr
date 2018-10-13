@@ -1,7 +1,7 @@
 ---
 title: 혼합된 모드 디버깅 Microsoft.NET Framework 4를 사용 하는 경우에 프로세스는 x64 이상을 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0297d9bcfb380261d2ad2e73853ded70285f1b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7735e1199e7871324fe22b0af33d2ff3230ca51
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549662"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175775"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 프로세스의 혼합 모드 디버깅은 Microsoft.NET Framework 4 이상을 사용할 때만 지원됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [혼합된 모드 디버깅 Microsoft.NET Framework 4를 사용 하는 경우에 프로세스는 x64 이상을](https://docs.microsoft.com/visualstudio/debugger/mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoft-dotnet-framework-4-or-greater)합니다.  
-  
 NET Framework 버전 이전 4 보다 지원을 제공 하지 않습니다 x64 혼합 모드 디버깅에 대 한 처리 합니다. 따라서 디버깅하는 동안 네이티브 코드에서 관리 코드로 또는 그 반대로 실행할 수 없습니다.  
   
 ### <a name="workarounds"></a>해결 방법  

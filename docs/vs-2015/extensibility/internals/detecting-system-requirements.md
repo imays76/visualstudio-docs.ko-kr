@@ -1,7 +1,7 @@
 ---
 title: 시스템 요구 사항 검색 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c9bdb2a9f33f848ed0ba879aa178efd8dd96016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187478"
 ---
 # <a name="detecting-system-requirements"></a>시스템 요구 사항 검색
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시스템 요구 사항 검색](https://docs.microsoft.com/visualstudio/extensibility/internals/detecting-system-requirements)합니다.  
-  
 VSPackage는 Visual Studio가 설치 되어 있지 않으면 작동 하지 않습니다. Microsoft Windows Installer를 사용 하 여 VSPackage의 설치를 관리할 때 Visual Studio가 설치 되어 있는지 여부를 검색 하려면 설치 관리자를 구성할 수 있습니다. 예를 들어 다른 요구 사항에 대 한 시스템을 확인 하 고, 특정 버전의 Windows 또는 특정 양의 RAM 구성할 수도 있습니다.  
   
 ## <a name="detecting-visual-studio-editions"></a>Visual Studio 버전 검색  

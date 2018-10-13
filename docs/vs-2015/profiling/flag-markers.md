@@ -1,7 +1,7 @@
 ---
 title: 플래그 표식 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58d366b38cfbf89052bb9bedfb8d397985680705
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be38217610c94f269bc334e7441456f9b1bd1c18
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180819"
 ---
 # <a name="flag-markers"></a>플래그 표식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [플래그 표식](https://docs.microsoft.com/visualstudio/profiling/flag-markers)합니다.  
-  
 플래그 마커는 응용 프로그램에서 특정 시점에 발생한 항목을 나타냅니다. 플래그는 여러 종류의 응용 프로그램 이벤트를 나타낼 수 있습니다. 예를 들어 특정 작업 항목이 예약되었거나 예외가 throw될 때 플래그가 표시될 수 있습니다. 작업 병렬 라이브러리와 같은 런타임도 플래그를 생성할 수 있습니다.  
   
 ## <a name="flag-importance"></a>플래그 중요도  

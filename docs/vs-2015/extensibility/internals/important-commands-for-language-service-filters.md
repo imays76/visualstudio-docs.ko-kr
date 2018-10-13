@@ -1,7 +1,7 @@
 ---
 title: 언어에 대 한 중요 명령 필터 서비스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7305a8263e62711c711a926289ca570a88cf0d15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f2cceeffe22422abb9648d75e669cf74ff0b17e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175281"
 ---
 # <a name="important-commands-for-language-service-filters"></a>언어 서비스 필터에 대한 중요 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [언어 서비스 필터에 대 한 중요 명령](https://docs.microsoft.com/visualstudio/extensibility/internals/important-commands-for-language-service-filters)입니다.  
-  
 완전 한 기능의 언어 서비스 필터를 만들려는 경우에 다음 명령을 처리 하는 것이 좋습니다. 명령 식별자의 전체 목록에 정의 되어는 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 관리 되지 않는 관리 되는 코드와 Stdidcmd.h 헤더에 대 한 열거형 파일 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 코드입니다. Stdidcmd.h 파일에서 찾을 수 있습니다 *Visual Studio SDK 설치 경로*\VisualStudioIntegration\Common\Inc 합니다.  
   
 ## <a name="commands-to-handle"></a>핸들에는 명령  

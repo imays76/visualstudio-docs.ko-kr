@@ -1,7 +1,7 @@
 ---
 title: 단계별 디버깅 옵션 (레거시) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: b87496e3aa7ea25e4b7cd8decf53cb425448dbf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f8840ba13d9b0caed2631d328593a0c23a110cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173284"
 ---
 # <a name="debug-stepping-options-legacy"></a>단계별 디버깅 옵션(레거시)
 이 항목에서는 [!INCLUDE[wf](../includes/wf-md.md)]에서 동시 활동이 있는 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 응용 프로그램을 디버깅하는 방법에 대해 설명합니다. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.  

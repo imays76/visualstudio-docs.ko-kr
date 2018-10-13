@@ -1,7 +1,7 @@
 ---
 title: 내게 필요한 옵션을 제공하는 응용 프로그램 설계를 위한 리소스 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4576508ba8864e6fc85d4151f3ae696e39a18c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178284"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>내게 필요한 옵션을 제공하는 응용 프로그램 설계를 위한 리소스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [액세스할 수 있는 응용 프로그램 설계에 대 한 리소스](https://docs.microsoft.com/visualstudio/ide/reference/resources-for-designing-accessible-applications)합니다.  
-  
   
 다음 링크를 사용하면 내게 필요한 옵션이 있는 Windows 응용 프로그램과 웹 사이트 개발을 위한 팁과 예제뿐만 아니라 내게 필요한 옵션이 있는 응용 프로그램 디자인을 지원하는 기술 관련 정보를 찾을 수 있습니다. 내게 필요한 옵션에 대한 일반적인 내용은 [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)에서 온라인으로 찾을 수 있습니다.  
   

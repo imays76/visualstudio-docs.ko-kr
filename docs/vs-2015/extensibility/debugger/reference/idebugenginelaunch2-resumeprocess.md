@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineLaunch2::ResumeProcess | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 61ccc14e-75c6-44e7-aae4-57a9aac52089
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2447571d45b8d97ab9c9303be1e1804fb9c3bce3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d4d0c0865ea19ade6a268abfa40327b3714b453
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186214"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugEngineLaunch2::ResumeProcess](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenginelaunch2-resumeprocess)합니다.  
-  
 프로세스 실행을 다시 시작 합니다.  
   
 ## <a name="syntax"></a>구문  

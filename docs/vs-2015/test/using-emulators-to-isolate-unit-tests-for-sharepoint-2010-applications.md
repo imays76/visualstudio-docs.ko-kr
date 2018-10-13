@@ -1,7 +1,7 @@
 ---
 title: 에뮬레이터를 사용하여 SharePoint 2010 응용 프로그램용 단위 테스트 격리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,24 +13,22 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85e3236e83d29e16c4501091cebf644605bfa82c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178310"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>에뮬레이터를 사용하여 Sharepoint 2010 응용 프로그램용 단위 테스트 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [에뮬레이터를 사용 하 여 Sharepoint 2010 응용 프로그램용 단위 테스트를 격리](https://docs.microsoft.com/visualstudio/test/using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications)합니다.  
-  
 Microsoft.SharePoint.Emulators 패키지는 Microsoft SharePoint 2010 응용 프로그램에 대한 격리된 단위 테스트를 만들도록 도와주는 라이브러리 집합을 제공합니다. 에뮬레이터는 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 격리 프레임워크의 [shim](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)을 사용하여 SharePoint API의 가장 일반적인 개체 및 메서드를 가장하는 간단한 메모리 내 개체를 만듭니다. SharePoint 메서드가 에뮬레이트되지 않는 경우가 에뮬레이터의 기본 동작을 변경하려면 Fakes shim을 만들어서 원하는 결과를 제공할 수 있습니다.  
   
  기존 테스트 메서드 및 클래스는 에뮬레이터 컨텍스트에서 실행되도록 쉽게 변환될 수 있습니다. 이 기능을 통해 이중 사용 테스트를 만들 수 있습니다. 이중 사용 테스트는 실제 SharePoint API에 대한 통합 테스트와 에뮬레이터를 사용하는 격리된 단위 테스트 간에 전환할 수 있습니다.  
   
 ##  <a name="BKMK_In_this_topic"></a> 항목 내용  
- [Requirements](#BKMK_Requirements)  
+ [요구 사항](#BKMK_Requirements)  
   
  [AppointmentsWebPart 예제](#BKMK_The_AppointmentsWebPart_example)  
   

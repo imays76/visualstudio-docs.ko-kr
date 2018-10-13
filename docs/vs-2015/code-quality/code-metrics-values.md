@@ -1,7 +1,7 @@
 ---
 title: 코드 메트릭 값 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7b14dd65be49fdc6f7da8de6c605683dd7089410
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0c22a6659105a3d00f5c73cd880a33d357e216e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183458"
 ---
 # <a name="code-metrics-values"></a>코드 메트릭 값
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 메트릭 값](https://docs.microsoft.com/visualstudio/code-quality/code-metrics-values)합니다.  
-  
 코드 메트릭은 개발자가 개발 중인 코드에 대해 더 정확히 파악할 수 있도록 하는 소프트웨어 측정 방법입니다. 코드 메트릭을 활용 하 여 개발자는 형식 및/또는 메서드는 수정 하거나 더 철저 하 게 테스트를 파악할 수 있습니다. 개발 팀은 잠재적 위험을 식별 하 고 프로젝트의 현재 상태를 이해 하 고 소프트웨어 개발 하는 동안 진행률을 추적할 수 있습니다.  
   
 ## <a name="software-measurements"></a>소프트웨어 측정  

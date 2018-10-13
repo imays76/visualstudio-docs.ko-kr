@@ -1,7 +1,7 @@
 ---
 title: 파일 열기 명령을 사용 하 여 파일을 표시 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 139eb83f2260c44a3e0f8c50868d42aca8160694
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d9b4198a2d88d7a3a71f07a393ed8e4e07df1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177543"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>파일 열기 명령을 사용하여 파일 표시
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [열린 파일 명령을 사용 하 여 표시 파일](https://docs.microsoft.com/visualstudio/extensibility/internals/displaying-files-by-using-the-open-file-command)합니다.  
-  
 다음 단계는 IDE가 처리 하는 방법을 설명 합니다 **열려 있는 파일** 명령에서 사용할 수 있는 **파일** 메뉴에서 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 또한 단계는 프로젝트가이 명령에서 발생 하는 호출에 응답 해야 하는 방법을 설명 합니다.  
   
  클릭할 때를 **열려 있는 파일** 명령을 **파일** 메뉴에서 파일을 선택 하 고는 **열려 있는 파일** 대화 상자에서 다음 프로세스가 발생 합니다.  

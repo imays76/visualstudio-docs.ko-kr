@@ -1,7 +1,7 @@
 ---
 title: '방법: Visual c + + 프로젝트를 Visual Studio 2015로 업그레이드 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8fcc3e835e2a8cb6613dc78e67383f534f97f7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8673d2d1648acad973ebfa339e0334a5c1fd769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188573"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>방법: Visual C++ 프로젝트를 Visual Studio 2015로 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual c + +
   
  프로젝트를 업데이트하라는 메시지가 나타나지 않으면 프로젝트를 업그레이드할 필요가 없습니다.  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이전의 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 버전에서 프로젝트(.vcproj)를 만든 경우 해당 프로젝트를 업데이트해야 합니다.  
+-   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이전의 [!INCLUDE[vs2010](../includes/vs2010-md.md)]버전에서 프로젝트(.vcproj)를 만든 경우 해당 프로젝트를 업데이트해야 합니다.  
   
 -   [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 또는 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]에서 프로젝트(.vcxproj)를 만든 경우 두 가지 옵션이 있습니다.  
   
-    -   업데이트를 건너뛸 수 있습니다. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 또는 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]의 Visual C++ 도구에 대한 액세스 권한이 있을 경우 프로젝트를 변경하지 않고 로드합니다. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]가 있는 동일한 컴퓨터에서 프로젝트를 만드는 데 사용한 버전의 Visual Studio를 설치하여 이 액세스 권한을 제공할 수 있습니다. 자세한 내용은 [Visual Studio 버전을 설치 하 여 나란히](../install/install-visual-studio-versions-side-by-side.md)합니다.  
+    -   업데이트를 건너뛸 수 있습니다. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 또는 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]의 Visual C++ 도구에 대한 액세스 권한이 있을 경우 프로젝트를 변경하지 않고 로드합니다. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]가 있는 동일한 컴퓨터에서 프로젝트를 만드는 데 사용한 버전의 Visual Studio를 설치하여 이 액세스 권한을 제공할 수 있습니다. 자세한 내용은 [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md)를 참조하세요.  
   
-    -   이 항목의 뒷부분에서 설명하는 사항을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 변경하도록 허용하여 프로젝트를 업데이트할 수 있습니다. 솔루션에 Visual C++ 프로젝트가 두 개 이상 있을 경우 이를 모두 업데이트해야 합니다.  
+    -   이 항목의 뒷부분에서 설명하는 사항을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 변경하도록 허용하여 프로젝트를 업데이트할 수 있습니다. 솔루션에 Visual C++ 프로젝트가 두 개 이상 있을 경우 이를 모두 업데이트해야 합니다.  
   
         > [!NOTE]
         >  프롬프트 메시지가 처음 나타날 때 업데이트를 거부할 경우 **프로젝트** 메뉴에서 **VC++ 프로젝트 업데이트** 를 선택하여 나중에 프로젝트를 업데이트할 수 있습니다. 명령이 나타나지 않으면 업데이트할 필요가 없습니다.  
@@ -52,7 +52,7 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual c + +
   
 -   [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 컴파일러 및 라이브러리(PlatformToolset = VisualStudio v140)를 사용하도록 프로젝트를 변경합니다.  
   
--   에 대 한 [!INCLUDE[cppcli](../includes/cppcli-md.md)] 프로젝트의 경우 TargetFrameworkVersion을.NET Framework 4.5.2로 변경 합니다.  
+-   [!INCLUDE[cppcli](../includes/cppcli-md.md)] 프로젝트의 경우 TargetFrameworkVersion을 .NET Framework 4.5.2로 변경합니다.  
   
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>사용자 지정 플랫폼 도구 집합 계속 사용  
  [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]에서 사용자 지정 플랫폼 도구 집합으로 계속 작업하려면 해당 도구 집합이 %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\(x86 컴퓨터) 또는 %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\(x64 컴퓨터)에 있어야 합니다. 사용자 지정 플랫폼 도구 집합을 만드는 방법에 대한 자세한 내용은 Visual C++ 팀 블로그에서 [C++ 네이티브 멀티 타기팅](http://go.microsoft.com/fwlink/?LinkId=248587) 을 참조하세요.  

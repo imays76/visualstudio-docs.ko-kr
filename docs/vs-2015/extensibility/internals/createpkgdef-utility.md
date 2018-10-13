@@ -1,7 +1,7 @@
 ---
 title: CreatePkgDef 유틸리티 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec77937e18ab437107b0e9d269fb4b5c7c8e2381
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63334ba9d454407bb93a87bf89b12cb472184d58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552321"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181599"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 유틸리티
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CreatePkgDef 유틸리티](https://docs.microsoft.com/visualstudio/extensibility/internals/createpkgdef-utility)합니다.  
-  
 매개 변수로 Visual Studio 확장명.dll 파일을 사용 하 고.dll 함께.pkgdef 파일을 만듭니다. 그렇지 않으면 작성 될 수 있는 시스템 레지스트리에 확장을 설치할 때 모든 정보를 포함 하는.pkgdef 파일.  
   
 > [!NOTE]

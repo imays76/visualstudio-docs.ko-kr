@@ -1,7 +1,7 @@
 ---
 title: '방법: ASP.NET 예외 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d37a67fd0b25de79ceb764e9e80884b97310a307
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a08e382ed9d97aa659012934d3edef45151e10ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178531"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>방법: ASP.NET 예외 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ASP.NET 예외 디버그](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-aspnet-exceptions)합니다.  
-  
 강력한 개발의 중요 한 부분이 예외 디버깅은 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램입니다. 예외를 디버깅 하는 방법에 대 한 일반 정보를 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)합니다.  
   
  처리 되지 않은 디버그 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 예외를 확인 해야 디버거를 중지 하도록 합니다. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 런타임에는 최상위 예외 처리기가 있습니다. 따라서 디버거는 처리되지 않은 예외에서 기본적으로 중단되지 않습니다. 예외가 throw 될 때 디버거를 중단 하려면를 선택 해야 **예외가 발생할 경우 중단: Throw 됩니다** 에서 특정 예외에 대 한 설정 된 **예외** 대화 상자.  

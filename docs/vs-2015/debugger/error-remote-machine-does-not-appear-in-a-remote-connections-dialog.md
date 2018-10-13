@@ -1,7 +1,7 @@
 ---
 title: '오류: 원격 컴퓨터를 원격 연결 대화 상자에 나타나지 않습니다 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 552be1e38cdb7401af36b287b23091d754c35980
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7b849ea60c48bc5127ddd50167415629daec4e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185161"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>오류: 원격 컴퓨터는 원격 연결 대화 상자에 표시되지 않습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: 원격 컴퓨터를 원격 연결 대화 상자에 나타나지 않으면](https://docs.microsoft.com/visualstudio/debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog)합니다.  
-  
 원격 컴퓨터가 원격 연결 대화 상자에 표시되지 않는 경우 다음과 같은 일반적인 원인을 확인합니다.  
   
- 관리 되는 호환성 모드를 사용 하는 경우 Visual Studio 2010 설명서를 확인 하세요. [원격 디버깅 문제 해결-Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) 합니다.  
+ 관리되는 호환성 모드를 사용하는 경우 Visual Studio 2010 설명서를 확인하세요. [원격 디버깅 문제 해결 - Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) .  
   
 ### <a name="common-causes-for-this-error"></a>이 오류의 일반적인 원인  
   

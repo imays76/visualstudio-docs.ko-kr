@@ -1,7 +1,7 @@
 ---
 title: SccGet 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b2e9b0d74acecfa9789ba899018058b7c61c2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb6f5204b1605969a37fd6528dda0ccaa7b8fe7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556535"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175203"
 ---
 # <a name="sccget-function"></a>SccGet 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccGet 함수](https://docs.microsoft.com/visualstudio/extensibility/sccget-function)합니다.  
-  
 이 함수는 하나 이상의 파일 보기 및 컴파일하기 위한 아니라 편집의 복사본을 검색 합니다. 대부분의 시스템에서 파일 읽기 전용으로 태그가 지정 됩니다.  
   
 ## <a name="syntax"></a>구문  

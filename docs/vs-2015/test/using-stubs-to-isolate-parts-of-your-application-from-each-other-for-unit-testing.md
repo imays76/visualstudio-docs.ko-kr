@@ -1,7 +1,7 @@
 ---
 title: 스텁을 사용하여 유닛 테스트를 위한 응용 프로그램의 여러 부분을 서로 격리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b83a9e73661e6b8c525a800376453cf8cff6a53c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182185"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 유닛 테스트를 위한 응용 프로그램의 여러 부분을 서로 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [스텁을 사용 하 여 단위 테스트를 위해 서로 응용 프로그램의 일부를 격리](https://docs.microsoft.com/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing)합니다.  
-  
 스텁 형식 *는 호출 하는 다른 구성 요소 테스트는 구성 요소를 쉽게 격리할 수 있도록 Microsoft Fakes 프레임 워크를 제공 하는 두 가지 기술 중 하나입니다. 스텁은 테스트 중 다른 구성 요소의 자리를 차지하는 작은 코드입니다. 스텁을 사용하는 이점은 일관적 결과를 반환하기 때문에 테스트를 더 쉽게 작성할 수 있다는 점입니다. 또한 아직 다른 구성 요소가 작동하지 않을 경우에도 테스트를 실행할 수 있습니다.  
   
  Fakes의 개요 및 빠른 시작 가이드를 보려면 [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)를 참조하세요.  

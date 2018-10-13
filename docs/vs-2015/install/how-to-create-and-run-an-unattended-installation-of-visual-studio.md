@@ -1,7 +1,7 @@
 ---
 title: '방법: 만들기 및 Visual Studio의 무인된 설치를 실행 합니다. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,17 +17,17 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3604c43dc3a406c303b3b056fe3b155efe182e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173851"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 대한 설치 응용 프로그램을 DVD와 같은 미디어 대신 인트라넷을 통해 무인(즉, 사용자 지정된 자동 설치) 설치로 실행할 수 있습니다. 이 항목에서는 준비 하는 방법을 설명 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이 유형의 네트워크 공유에서 설치 합니다.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에 대한 설치 응용 프로그램을 DVD와 같은 미디어 대신 인트라넷을 통해 무인(즉, 사용자 지정된 자동 설치) 설치로 실행할 수 있습니다. 이 항목에서는 준비 하는 방법을 설명 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이 유형의 네트워크 공유에서 설치 합니다.  
   
 ## <a name="creating-a-network-image"></a>네트워크 이미지 만들기  
  먼저 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 미디어의 네트워크 이미지를 만듭니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "47555366"
      경로에 폴더 이름에 공백을 포함 하는 경우 설치가 실패할 수도 있습니다 (예를 들어, "\\\\*ServerName*\IDE install" 또는 \\ \\ *ServerName*\Visual studio\\).  
   
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>무인 모드로 Visual Studio 배포  
- 무인 모드로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 배포하려면 AdminDeployment.xml 파일을 수정해야 합니다. 이렇게 하려면 먼저 만들어야 AdminDeployment.xml 파일을 사용 하 여 합니다 `/CreateAdminFile`  *\<파일 위치 >* 명령줄 매개 변수입니다. 그런 다음 이 파일을 사용하여 네트워크에 Visual Studio의 배포를 푸시하거나 *Drive*:\IDEinstall\packages 디렉터리에 해당 파일을 복사한 경우 끌어와서 설치할 수 있습니다. AdminDeployment.xml 파일은 운영 체제, 아키텍처, Visual Studio 버전 또는 운영 체제 언어에 고유하지 않습니다.  
+ 무인 모드로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 배포하려면 AdminDeployment.xml 파일을 수정해야 합니다. 이렇게 하려면 먼저 만들어야 AdminDeployment.xml 파일을 사용 하 여 합니다 `/CreateAdminFile`  *\<파일 위치 >* 명령줄 매개 변수입니다. 그런 다음 이 파일을 사용하여 네트워크에 Visual Studio의 배포를 푸시하거나 *Drive*:\IDEinstall\packages 디렉터리에 해당 파일을 복사한 경우 끌어와서 설치할 수 있습니다. AdminDeployment.xml 파일은 운영 체제, 아키텍처, Visual Studio 버전 또는 운영 체제 언어에 고유하지 않습니다.  
   
 > [!CAUTION]
 >  AdminDeployment.xml 파일에서 선택된 것으로 나열된 항목이 설치되지 않는 경우도 있습니다. 이 문제를 해결하려면 "선택됨="yes""로 표시된 항목을 AdminDeployment.xml 파일의 **끝** 에 배치합니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "47555366"
 >  이 작업을 수행하는 또 다른 방법은 단순히 부모의 선택적 자식을 생략하는 것입니다. 즉, "선택됨="no"" 항목을 포함하지 마세요. 하지만 "선택됨="yes"" 항목은 모두 AdminDeployment.xml 파일의 끝에 배치해야 합니다.  
   
 > [!IMPORTANT]
->  설치하는 동안 컴퓨터가 한 번 이상 자동으로 다시 시작될 수 있습니다. 다시 시작한 후, 컴퓨터를 다시 시작하기 전에 설치를 수행하기 위해 로그온했던 사용자 계정으로 다시 로그인해야 합니다. 무인 설치를 실행하기 전에 필수 조건을 설치하여 자동으로 다시 시작되지 않게 할 수 있습니다. 자세한 내용은 섹션을 참조 하지 않도록 다시 시작 하는 동안 "설치"에 [Visual Studio 관리자 가이드](../install/visual-studio-administrator-guide.md)합니다.  
+>  설치하는 동안 컴퓨터가 한 번 이상 자동으로 다시 시작될 수 있습니다. 다시 시작한 후, 컴퓨터를 다시 시작하기 전에 설치를 수행하기 위해 로그온했던 사용자 계정으로 다시 로그인해야 합니다. 무인 설치를 실행하기 전에 필수 조건을 설치하여 자동으로 다시 시작되지 않게 할 수 있습니다. 자세한 내용은 [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md)에서 “설치 중 다시 시작 방지” 섹션을 참조하세요.  
   
  AdminDeployment 파일 스키마에는 다음 요소가 포함되어 있습니다.  
   
@@ -111,7 +111,7 @@ ms.locfileid: "47555366"
   
 -   **제어판**을 열고 **프로그램 및 기능**을 선택합니다.  
   
--   선택할 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 선택한 후 **변경**합니다.  
+-   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 선택한 다음 **변경**을 선택합니다.  
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Visual Studio가 설치된 후 클라이언트 컴퓨터에서 AdminDeployment 설정을 변경하려면  
   

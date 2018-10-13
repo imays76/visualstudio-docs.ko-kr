@@ -1,7 +1,7 @@
 ---
 title: 프로세스 속성 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23df984e13f2f8d022a4731926d0747450c7faaf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0c58dfd492886a5e4a222ba758c0652f73c014
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552312"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180949"
 ---
 # <a name="process-properties-dialog-box"></a>프로젝트 속성 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로세스 속성 대화 상자](https://docs.microsoft.com/visualstudio/debugger/process-properties-dialog-box)합니다.  
-  
 이 대화 상자를 사용 하 여 특정 프로세스에 대해 자세히 알아봅니다. 이 대화 상자를 표시 하려면 포커스를 이동 하는 [프로세스 뷰에](../debugger/processes-view.md) 창입니다. 선택한 프로세스 노드 트리에서 선택 **속성** 에서 합니다 **보기** 메뉴.  
   
  Windows 98 및 Windows 95 운영 체제에서 수정된 된 버전의 합니다 **일반** 탭이 표시 됩니다.  

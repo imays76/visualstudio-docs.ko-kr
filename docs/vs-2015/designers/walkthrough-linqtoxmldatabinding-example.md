@@ -1,7 +1,7 @@
 ---
 title: '연습: LinqToXmlDataBinding 예제 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 723f6b121d844fa5a8e504e8106fdcfc6c58f012
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54e714aa95ee1206e278546bcd61e31687c45211
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182297"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>연습: LinqToXmlDataBinding 예제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: LinqToXmlDataBinding 예제](https://docs.microsoft.com/visualstudio/designers/walkthrough-linqtoxmldatabinding-example)합니다.  
-  
 이 연습에서는 LinqToXmlDataBinding 예제에 대해 설명하고 두 가지 기본 소스 파일인 L2DBForm.xaml과 L2DBForm.xaml.cs의 몇 가지 흥미로운 내용을 살펴봅니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
@@ -53,7 +51,7 @@ ms.locfileid: "47564960"
 |항목|설명|  
 |-----------|-----------------|  
 |[L2DBForm.xaml 소스 코드](../designers/l2dbform-xaml-source-code.md)|L2DBForm.xaml 파일의 XAML 코드에 대한 내용과 설명이 포함되어 있습니다.|  
-|[L2DBForm.xaml.cs 소스 코드](../designers/l2dbform-xaml-cs-source-code.md)|L2DBForm.xaml.cs 파일의 C# 소스 코드에 대한 내용과 설명이 포함되어 있습니다.|  
+|[L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)|L2DBForm.xaml.cs 파일의 C# 소스 코드에 대한 내용과 설명이 포함되어 있습니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [LINQ to XML 예제를 사용한 WPF 데이터 바인딩](../designers/wpf-data-binding-using-linq-to-xml-example.md)   

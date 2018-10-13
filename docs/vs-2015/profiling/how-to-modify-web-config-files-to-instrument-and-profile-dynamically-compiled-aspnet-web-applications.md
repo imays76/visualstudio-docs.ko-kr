@@ -1,7 +1,7 @@
 ---
 title: '방법: 계측할 Web.Config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 응용 프로그램 프로파일링 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2b9f0220d2b25b9bf7f3e319ef8a63ae5ea3a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555358"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176308"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>방법: 계측할 Web.Config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 응용 프로그램 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Web.Config 파일을 계측 하 고 동적으로 컴파일된 ASP.NET 웹 응용 프로그램 프로 파일링 수정](https://docs.microsoft.com/visualstudio/profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구 계측 방법을 사용하여 동적으로 컴파일된 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램에서 세부 타이밍 데이터, .NET 메모리 할당 데이터 및 .NET 개체 수명 데이터를 수집할 수 있습니다.  
   
  이 항목에서는 web.config 구성 파일을 수정하여 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램의 계측 및 프로파일링을 사용하도록 설정하는 방법을 설명합니다.  
@@ -148,7 +146,7 @@ ms.locfileid: "47555358"
     |특성 이름|특성 값|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**값**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  또 다른 **add** 요소를 **appSettings** 요소의 자식으로 추가합니다.  
   
@@ -157,7 +155,7 @@ ms.locfileid: "47555358"
     |특성 이름|특성 값|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**value**|`PerformanceToolsFolder`|  
+    |**값**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder`는 프로파일러 실행 파일의 경로입니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 기본 위치에 설치되면 값은 **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**가 됩니다.  
   

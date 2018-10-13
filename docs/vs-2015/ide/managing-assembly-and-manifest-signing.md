@@ -1,7 +1,7 @@
 ---
 title: 어셈블리 및 매니페스트 서명 관리 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76ab4cc115f8c9f052f48c6e0dccd06693ddb970
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172746"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>어셈블리 및 매니페스트 서명 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [관리 어셈블리 및 매니페스트 서명](https://docs.microsoft.com/visualstudio/ide/managing-assembly-and-manifest-signing)합니다.  
-  
 강력한 이름 서명은 소프트웨어 구성 요소에 전역적으로 고유한 ID를 제공합니다. 강력한 이름은 어셈블리가 다른 사용자에 의해 스푸핑되지 않도록 보장하고 구성 요소 종속성 및 구성 문이 올바른 구성 요소 및 구성 요소 버전에 매핑되도록 하는 데 사용됩니다.  
   
  강력한 이름은 어셈블리 ID(단순 텍스트 이름, 버전 번호 및 문화권 정보) 및 공개 키 토큰과 디지털 서명으로 구성됩니다.  

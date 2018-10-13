@@ -1,7 +1,7 @@
 ---
 title: Windows Forms 응용 프로그램에서 데이터를 필터링 및 정렬 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e32e64672fc01f328643e78e572e12d57b751f39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1ea216e20045cd7b8cfba3c70a3126a673519be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175593"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Windows Forms 응용 프로그램에서 데이터 필터링 및 정렬
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows Forms 응용 프로그램에서 데이터를 필터링 및 정렬](https://docs.microsoft.com/visualstudio/data-tools/filter-and-sort-data-in-a-windows-forms-application)합니다.  
-  
   
 설정 하 여 데이터를 필터링 합니다 <xref:System.Windows.Forms.BindingSource.Filter%2A> 속성을 원하는 레코드를 반환 하는 문자열 식입니다.  
   

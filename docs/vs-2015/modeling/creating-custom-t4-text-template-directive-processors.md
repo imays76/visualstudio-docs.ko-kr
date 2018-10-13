@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d97b87289be6f6fb685fe9f1b4e5ee4309bd0431
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176932"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](https://docs.microsoft.com/visualstudio/modeling/creating-custom-t4-text-template-directive-processors)합니다.  
-  
 *텍스트 템플릿 변형 프로세스* 사용을 *텍스트 템플릿* 파일을 입력 하 고 텍스트 파일을 출력으로 생성 합니다. 합니다 *텍스트 템플릿 변환 엔진* 프로세스 엔진과 상호 작용 하는 텍스트 템플릿 변형 호스트와 하나 이상의 텍스트 템플릿 컨트롤 *지시문 프로세서* 완료 하는 프로세스입니다. 자세한 내용은 [은 텍스트 템플릿 변형 프로세스](../modeling/the-text-template-transformation-process.md)합니다.  
   
  사용자 지정 지시문 프로세서를 만들려면 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 또는 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>에서 상속하는 클래스를 만듭니다.  

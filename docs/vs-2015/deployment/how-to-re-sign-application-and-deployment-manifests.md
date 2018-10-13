@@ -1,7 +1,7 @@
 ---
 title: '방법: 응용 프로그램 및 배포 매니페스트에 다시 서명 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d16dfa86c4620868178687bcde3323f3e55b31b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 734258871e72e6272abcd61c4efa1a00765f8a32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185720"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 응용 프로그램 및 배포 매니페스트에 다시 서명
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: re-sign Application and Deployment Manifests](https://docs.microsoft.com/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests)합니다.  
-  
 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램 (xbap) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트에 대 한 배포 속성을 변경한 후 두 응용 프로그램에 다시 서명 해야 하 고 사용 하 여 배포 매니페스트는 인증서입니다. 이 프로세스는 변조 된 파일은 최종 사용자 컴퓨터에 설치 되지 않았는지 확인 하는 데 도움이 됩니다.  
   
  매니페스트를 다시 서명할 수 있습니다 다른 시나리오 고객에 게는 응용 프로그램에 서명 하 고 자체 인증서를 사용 하 여 배포 매니페스트 하는 경우입니다.  
@@ -131,7 +129,7 @@ Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로
  [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [방법: ClickOnce 응용 프로그램의 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [방법: 제한된 권한으로 ClickOnce 응용 프로그램 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [방법: ClickOnce 응용 프로그램에 대 한 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [방법: ClickOnce 응용 프로그램의 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [방법: ClickOnce 신뢰 프롬프트 동작 구성](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
 
 

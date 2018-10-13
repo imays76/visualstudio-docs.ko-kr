@@ -1,7 +1,7 @@
 ---
 title: Windows 스토어 앱 실행 로컬 컴퓨터의 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d69e4224627d78d4fdd9482097ef248e69f6571f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b460d1eecfe96cddce27926ee8e31aae258d8dcf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553358"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188387"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>로컬 컴퓨터에서 Windows 스토어 앱 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [로컬 컴퓨터에서 실행 Windows 스토어 앱](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-the-local-machine)합니다.  
-  
 Windows에만 적용] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Windows 스토어 앱에 대한 성능 분석을 디버깅, 테스트 또는 실행하려면 Visual Studio를 호스트하는 동일한 컴퓨터에서 앱을 실행하면 됩니다. 장치의 디스플레이에서 터치 기능을 사용할 수 있으면 앱의 전체 기능을 실행할 수 있습니다. 그렇지 않으면 마우스 및 키보드 제스처만 사용할 수 있습니다.  

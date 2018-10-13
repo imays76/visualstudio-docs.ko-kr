@@ -1,7 +1,7 @@
 ---
 title: 계측을 사용하여 자세한 타이밍 데이터 수집 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3d2335c73f68f790e9b3def8f2a1d4ced7c969
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8355911a54e6682b763d7f3aecbf29812fa4a1e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592722"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186266"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>계측을 사용하여 자세한 타이밍 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [계측을 사용 하 여 자세한 타이밍 데이터 수집](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-by-using-instrumentation)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구 계측 방법은 모듈의 복사본에 프로파일링 코드를 삽입합니다. 코드는 프로파일링 실행 중 모듈의 각 함수 시작, 종료 및 함수 호출을 기록합니다. 계측 방법은 코드의 한 섹션에 대한 자세한 타이밍 정보를 수집하고 입력 및 출력 작업이 응용 프로그램 성능에 미치는 영향을 이해하는 데 유용합니다.  
   
  다음 절차 중 하나를 사용하여 계측 방법을 지정할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 레이어 다이어그램을 사용 하 여 코드 유효성 검사 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5430d436684be0bbf50004204da8bcd6a18d9bee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173721"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>레이어 다이어그램에 대해 코드 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [종속성 다이어그램을 사용 하 여 코드의 유효성을 검사](https://docs.microsoft.com/visualstudio/modeling/validate-code-with-layer-diagrams)합니다.  
-  
 코드가 디자인과 충돌하지 않는지 확인하기 위해 Visual Studio에서 레이어 다이어그램을 사용하여 코드의 유효성을 검사할 수 있습니다. 이 경우 다음에 도움이 됩니다.  
   
 -   코드의 종속성과 레이어 다이어그램의 종속성 사이의 충돌을 찾을 수 있습니다.  

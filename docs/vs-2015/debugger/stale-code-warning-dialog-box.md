@@ -1,7 +1,7 @@
 ---
 title: 부실 코드 경고 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56e57eb23dc98cee800a2f25b685b001d3232d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a93d9b6900ed3e1331f61495e4e80b96d446d410
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179623"
 ---
 # <a name="stale-code-warning-dialog-box"></a>부실 코드 경고 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [부실 코드 경고 대화 상자](https://docs.microsoft.com/visualstudio/debugger/stale-code-warning-dialog-box)합니다.  
-  
 이 대화 상자가 나타납니다 했으면 코드 기본 변경을 **편집 하며 계속 하기** 즉시 적용 하지 못했습니다. 그 결과 현재 스택 프레임의 일부 네이티브 코드가 만료되어 부실 코드가 됩니다. 자세한 내용은 [방법: 부실 코드 작업](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4)합니다.  
   
  **이 대화 상자를 다시 표시 안 함**  

@@ -1,7 +1,7 @@
 ---
 title: 편집 하며 계속 하기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e1215bfbc8696c86a4ac2ec976b8302089b977
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df27a9f2eaa9c6a923a17c640f19ab94c608d6df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554185"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175723"
 ---
 # <a name="edit-and-continue"></a>편집하며 계속하기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집 하며 계속 하기](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue)합니다.  
-  
 편집하며 계속하기는 프로그램이 중단 모드에 있는 동안 소스 코드를 변경하여 시간을 절약할 수 있는 기능입니다. 같은 실행 명령을 선택 하 여 프로그램 실행을 다시 시작 하면 **계속** 하거나 **단계**, 편집 및 계속 자동으로 코드 변경 내용을 몇 가지 제한 사항이 적용 됩니다. 이 기능을 사용하면 전체 프로그램을 중지하고 다시 컴파일한 다음 디버깅 세션을 다시 시작하는 대신 디버깅 세션을 진행하는 과정에서 코드를 변경할 수 있습니다.  
   
  이 단원에 포함된 항목은 다음과 같습니다.  

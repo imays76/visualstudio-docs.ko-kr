@@ -1,7 +1,7 @@
 ---
 title: 솔루션 (합니다. Sln) 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 737186560f6e1cde0fc35d16dab35fb146685fbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b6248bf97650212324fe9ca0791ccbd981d92ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173682"
 ---
 # <a name="solution-sln-file"></a>솔루션(.Sln) 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션 (합니다. Sln) 파일](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-dot-sln-file)합니다.  
-  
 솔루션에는 Visual Studio에서 프로젝트를 구성 하는 것에 대 한 구조입니다. 솔루션은 프로젝트 (텍스트 기반, 공유).sln 및.suo (이진, 사용자 고유의 솔루션 옵션) 파일에 대 한 상태 정보를 유지 관리 합니다. .Suo 파일에 자세한 내용은 참조 하세요. [솔루션 사용자 옵션 (합니다. Suo) 파일](../../extensibility/internals/solution-user-options-dot-suo-file.md)합니다.  
   
  환경을 호출 하는 VSPackage는.sln 파일에서 참조 하 고 결과로 로드 되 면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> .sln 파일에서 읽을 수 있습니다.  

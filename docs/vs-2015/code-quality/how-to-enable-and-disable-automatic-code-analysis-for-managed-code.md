@@ -1,7 +1,7 @@
 ---
 title: '방법: 사용 하도록 설정 하 고 관리 되는 코드에 대 한 자동 코드 분석 사용 안 함 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9c1300da37893a9203aee173180711f0ecc2e288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58c86c3273de8224c84229f6291a371a9c3ff215
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188012"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>방법: 관리 코드에 대한 자동 코드 분석 활성화 및 비활성화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 설정 및 관리 코드에 대 한 자동 코드 분석 사용 안 함](https://docs.microsoft.com/visualstudio/code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code)합니다.  
-  
 관리 코드 프로젝트의 각 빌드 전에 실행할 코드 분석을 구성할 수 있습니다. 각각에 대 한 다양 한 코드 분석 속성을 설정할 수 있습니다 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 구성 합니다.  
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>자동 코드 분석을 사용할지 설정 합니다.  

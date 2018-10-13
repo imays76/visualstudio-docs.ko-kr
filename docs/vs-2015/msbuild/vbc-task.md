@@ -1,7 +1,7 @@
 ---
 title: Vbc 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0457456651e233c44e5e8e5ae44e30013e0de0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184251"
 ---
 # <a name="vbc-task"></a>Vbc 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Vbc 작업](https://docs.microsoft.com/visualstudio/msbuild/vbc-task)합니다.  
-  
   
 실행 파일(.exe), 동적 링크 라이브러리(.dll) 또는 코드 모듈(.netmodule)을 생성하는 vbc.exe를 래핑합니다. vbc.exe에 대한 자세한 내용은 [Visual Basic 명령줄 컴파일러](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)를 참조하세요.  
   

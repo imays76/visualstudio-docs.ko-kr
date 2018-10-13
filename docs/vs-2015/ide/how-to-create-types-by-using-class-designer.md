@@ -1,7 +1,7 @@
 ---
 title: '방법: 클래스 디자이너를 사용하여 형식 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f7671b1336b0b722f02cc100c7055fef817cb582
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175036"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>방법: 클래스 디자이너를 사용하여 형식 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 클래스 디자이너를 사용 하 여 형식 만들기](https://docs.microsoft.com/visualstudio/ide/how-to-create-types-by-using-class-designer)합니다.  
-  
 새로운 형식의 Visual C# .NET 및 Visual Basic .NET 프로젝트를 디자인하려면 클래스 다이어그램에서 해당 형식을 만듭니다. 기존 형식을 보려면 [방법: 기존 형식 보기(클래스 디자이너)](../ide/how-to-view-existing-types-class-designer.md)를 참조하세요.  
   
 -   [새 형식 만들기](#CreateType)  

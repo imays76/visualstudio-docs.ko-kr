@@ -1,7 +1,7 @@
 ---
 title: 유틸리티 노드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa242e6c2f609c8ac6214fcbd20d210f7c794b77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551418"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174423"
 ---
 # <a name="utility-nodes"></a>유틸리티 노드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [유틸리티 노드](https://docs.microsoft.com/visualstudio/designers/utility-nodes)합니다.  
-  
 셰이더 디자이너에서 유틸리티 노드는 다른 범주에 명확하게 맞지 않는 일반적인 유용한 셰이더 계산을 나타냅니다. 벡터를 함께 추가하거나 결과를 조건부로 선택하는 등의 단순한 작업을 수행하는 유틸리티 노드도 있고, 널리 사용되는 조명 모델에 따라 조명의 기여도를 계산하는 등의 복잡한 작업을 수행하는 유틸리티 노드도 있습니다.  
   
 ## <a name="utility-node-reference"></a>유틸리티 노드 참조  

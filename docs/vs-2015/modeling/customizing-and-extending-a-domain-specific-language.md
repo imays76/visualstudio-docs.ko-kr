@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 및 도메인 특정 언어를 확장 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 158bebd18e62ac23560a09fcfacb2125e1988477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180689"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>도메인별 언어 사용자 지정 및 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 및 도메인 특정 언어 확장](https://docs.microsoft.com/visualstudio/modeling/customizing-and-extending-a-domain-specific-language)합니다.  
-  
 Visual Studio 모델링 및 시각화 SDK (VMSDK)는 모델링 도구를 정의할 수 있습니다 여러 수준을 제공 합니다.  
   
 1.  DSL 정의 다이어그램을 사용 하 여 도메인 특정 언어 (DSL)를 정의 합니다. 신속 하 게 사용 되는 다이어그램 표기법, 읽을 수 있는 XML 양식 및 코드 및 기타 아티팩트를 생성 하는 데 필요한 기본 도구를 사용 하 여 DSL을 만들 수 있습니다.  

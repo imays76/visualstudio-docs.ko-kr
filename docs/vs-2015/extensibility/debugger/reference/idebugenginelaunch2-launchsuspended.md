@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineLaunch2::LaunchSuspended | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8fe234359d864f5df3ae568b8f3ec0c55c0ee9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 941b398b8b93bf20abc307f45f1a23bbcb16275b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183315"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugEngineLaunch2::LaunchSuspended](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenginelaunch2-launchsuspended)합니다.  
-  
 이 메서드는 디버그 엔진 (DE)를 사용 하 여 프로세스를 시작합니다.  
   
 ## <a name="syntax"></a>구문  

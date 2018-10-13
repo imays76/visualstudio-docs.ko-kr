@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 속성 사용자 인터페이스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9418603e13fad91aa9d40c2d05f6ebc1d83a5e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57c9bb58ab1d930c6beb2e1cfa9cc4b9b6ec52fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553542"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172293"
 ---
 # <a name="project-property-user-interface"></a>프로젝트 속성 사용자 인터페이스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 속성 사용자 인터페이스](https://docs.microsoft.com/visualstudio/extensibility/internals/project-property-user-interface)합니다.  
-  
 프로젝트 하위 형식 프로젝트에서 항목을 사용할 수 있습니다 **속성 페이지** 대화 상자 기본 프로젝트에서 제공 되기 때문 숨기기 또는 제공 하 고, 읽기 전용 컨트롤 및 전체 페이지를 확인 또는 프로젝트 하위 형식의 특정 페이지를 추가할**속성 페이지** 대화 상자.  
   
 ## <a name="extending-the-project-property-dialog-box"></a>프로젝트 속성 대화 상자를 확장합니다.  

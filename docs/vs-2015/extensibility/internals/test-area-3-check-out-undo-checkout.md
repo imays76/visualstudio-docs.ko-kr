@@ -1,7 +1,7 @@
 ---
 title: '테스트 영역 3: 체크 아웃 실행 취소 체크 아웃 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea99ec9b182f63beced94885533c650e7a79671a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fd293abc674059f7c0046e076e4166b7dffa631
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178596"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>테스트 영역 3: 체크 아웃/체크 아웃 취소
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [테스트 영역 3: Out-Undo 체크 아웃 확인](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-3-check-out-undo-checkout)합니다.  
-  
 이 소스 제어 플러그 인 테스트 영역에서는 통해 버전 저장소에서 항목을 편집 및 되돌리기 합니다 **체크 아웃** 및 **체크 아웃 취소** 명령입니다.  
   
  **체크 아웃**: 표시 버전 저장소에 항목을 체크 아웃할 때 수정 읽기/쓰기를 로컬 복사본.  

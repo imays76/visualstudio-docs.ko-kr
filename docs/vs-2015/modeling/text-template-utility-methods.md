@@ -1,7 +1,7 @@
 ---
 title: 텍스트 템플릿 유틸리티 메서드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 98506212abe977b16a2c580ae16075b557eb3c2a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a9c5a0b4b6c85a301c5d3a0e12ad3687f54aeb0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554224"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186305"
 ---
 # <a name="text-template-utility-methods"></a>텍스트 템플릿 유틸리티 메서드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [텍스트 템플릿 유틸리티 메서드](https://docs.microsoft.com/visualstudio/modeling/text-template-utility-methods)합니다.  
-  
 코드를 작성할 때 항상를 사용할 수 있는 여러 가지가 있습니다를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 텍스트 템플릿. 에 정의 된 이러한 메서드가 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>합니다.  
   
 > [!TIP]

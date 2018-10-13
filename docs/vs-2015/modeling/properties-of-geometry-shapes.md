@@ -1,7 +1,7 @@
 ---
 title: 기 하 도형의 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 70424ef2b3ce091b1c1290db2c4962481c9f68ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a531dadba426bc04a788d7c75516afd581d1722f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178895"
 ---
 # <a name="properties-of-geometry-shapes"></a>기하 도형의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [속성의 기 하 도형](https://docs.microsoft.com/visualstudio/modeling/properties-of-geometry-shapes)합니다.  
-  
 도메인 특정 언어의 도메인 클래스의 인스턴스가 표시 되는 방식을 지정 하려면 기 하 도형에 사용할 수 있습니다. 자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.  
   
  기 하 도형 다음 표에 나열 된 속성을 가집니다.  

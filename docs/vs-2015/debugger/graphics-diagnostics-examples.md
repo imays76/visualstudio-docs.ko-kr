@@ -1,7 +1,7 @@
 ---
 title: 그래픽 진단 예제 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee2476b8456492db52bcf802c127a22b5faec7e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02b8c3d8d21e19f671901a353af00163c17025fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550259"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188541"
 ---
 # <a name="graphics-diagnostics-examples"></a>그래픽 진단 예제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [그래픽 진단 예제](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-diagnostics-examples)합니다.  
-  
 다음 예제에서는 DirectX 기반 앱에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단을 사용하여 렌더링 문제를 디버깅하는 방법을 보여줍니다.  
   
 ## <a name="capturing-graphics-information"></a>그래픽 정보 캡처  

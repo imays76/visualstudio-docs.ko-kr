@@ -1,7 +1,7 @@
 ---
 title: '연습: 편집기 확장을 사용 하 여 셸 명령 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0965a44350d431dcc60058956f0b42f5393025e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea320b18dc9164c0cbf87cbccf1c33ea7fab2230
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185590"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>연습: 편집기 확장에서 셸 명령 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 편집기 확장에서 셸 명령 사용](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-using-a-shell-command-with-an-editor-extension)합니다.  
-  
 VSPackage에서 편집기 메뉴 명령과 같은 기능을 추가할 수 있습니다. 이 연습에서는 adornment 메뉴 명령을 호출 하 여 편집기에서 텍스트 뷰를 추가 하는 방법을 보여 줍니다.  
   
  이 연습에서는 vspackage Framework MEF (Managed Extensibility) 구성 요소 파트를 함께 사용 하는 방법을 보여 줍니다. Visual Studio shell을 사용 하 여 메뉴 명령을 등록 하는 VSPackage를 사용 해야 하 고 명령을 사용 하 여 MEF 구성 요소 파트에 액세스할 수 있습니다.  

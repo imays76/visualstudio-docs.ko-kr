@@ -1,7 +1,7 @@
 ---
 title: 메뉴 명령에 아이콘 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051fc6b33a04870f0d21e14ecbe0adc8fcd525be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b264a6b03baf5b77796b329ef6dd05fa4614bad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551459"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184524"
 ---
 # <a name="adding-icons-to-menu-commands"></a>메뉴 명령에 아이콘 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [메뉴 명령에 아이콘 추가](https://docs.microsoft.com/visualstudio/extensibility/adding-icons-to-menu-commands)합니다.  
-  
 명령 메뉴와 도구 모음에서 나타날 수 있습니다. 도구 모음 명령 아이콘 및 텍스트 모두를 사용 하 여 일반적으로 나타납니다. 단순한 아이콘 (공간을 절약 하려면) 하는 동안 메뉴를 사용 하 여 표시할 명령에 대 한 일반적인 것입니다.  
   
  아이콘은 16 x 16 픽셀 (높이) 및 8 비트 색 농도 (256 색) 또는 32 비트 색 농도 (true 색) 일 수 있습니다. 32 비트 컬러 아이콘 기본 설정 됩니다. 아이콘은 여러 비트맵 존재할 수 있지만 일반적으로 단일 비트맵의 가로 단일 행에 정렬 됩니다. 이 비트맵 비트맵에서 사용할 수 있는 개별 아이콘을 함께.vsct 파일에서 선언 됩니다. 에 대 한 참조를 [Bitmaps 요소](../extensibility/bitmaps-element.md) 대 한 자세한 내용은 합니다.  

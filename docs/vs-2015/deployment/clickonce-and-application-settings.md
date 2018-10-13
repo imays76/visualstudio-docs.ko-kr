@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 및 응용 프로그램 설정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2aa565721bc934fb78a7b183b0e4b4b637bafaf8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176990"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 및 응용 프로그램 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 및 응용 프로그램 설정을](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-application-settings)합니다.  
-  
 Windows Forms에 대 한 응용 프로그램 설정을 쉽게 만들고, 저장 및 사용자 지정 응용 프로그램 및 클라이언트에서 사용자 기본 설정을 유지 합니다. 다음 문서에는 ClickOnce 응용 프로그램에서는 응용 프로그램 설정 파일을 작업 하는 방법 및 다음 버전으로 업그레이드 하는 경우 ClickOnce가 설정을 마이그레이션하는 방법을 설명 합니다.  
   
  아래 정보는 기본 응용 프로그램 설정 공급자에만 적용 됩니다는 <xref:System.Configuration.LocalFileSettingsProvider> 클래스입니다. 사용자 지정 공급자를 제공 하는 경우 해당 공급자는 해당 데이터를 저장 하는 방법 및 설정 버전 간에 업그레이드 하는 방법을 결정 합니다. 응용 프로그램 설정 공급자에 대 한 자세한 내용은 참조 하세요. [응용 프로그램 설정 아키텍처](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562)합니다.  

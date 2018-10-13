@@ -1,7 +1,7 @@
 ---
 title: 단위 테스트 프로젝트 만들기 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eb9c64fca2bcd4086073fc349d2c81fa2a62be31
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c592b634b6005033b5b43dcdccf2fdef83025a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179057"
 ---
 # <a name="create-a-unit-test-project"></a>단위 테스트 프로젝트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [단위 테스트 프로젝트 만들기](https://docs.microsoft.com/visualstudio/test/create-a-unit-test-project)합니다.  
-  
 단위 테스트는 종종 테스트 중인 코드의 구조를 반영합니다. 예를 들어 프로젝트의 각 코드 프로젝트에 대해 단위 테스트 프로젝트를 만들 수 있습니다. 테스트 프로젝트는 프로덕션 코드와 동일한 솔루션에 있거나 개별 솔루션에 있을 수 있습니다. 한 솔루션에 여러 개의 테스트 프로젝트를 포함할 수 있습니다.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: L2DBForm.xaml.cs 소스 코드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 741c91f290b7e509110c0320013965f8cf9bef0e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180609"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [L2DBForm.xaml.cs 소스 코드](https://docs.microsoft.com/visualstudio/designers/l2dbform-xaml-cs-source-code)합니다.  
-  
 이 항목에는 L2DBForm.xaml.cs 파일의 C# 소스 코드에 대한 내용과 설명이 포함되어 있습니다. 이 파일에 포함된 L2XDBForm partial 클래스는 데이터 멤버와 `OnRemove` 및 `OnAddBook` 단추 클릭 이벤트 처리기라는 세 가지 논리 섹션으로 나뉠 수 있습니다.  
   
 ## <a name="data-members"></a>데이터 멤버  

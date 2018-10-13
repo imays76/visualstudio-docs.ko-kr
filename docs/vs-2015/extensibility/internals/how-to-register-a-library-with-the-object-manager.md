@@ -1,7 +1,7 @@
 ---
 title: '방법: 개체 관리자에 라이브러리 등록 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91b03bdf1287c66d86de9e5cd037d6a779a52bad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 204291cae617c704943889b8b88c590145935db3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174709"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>방법: 개체 관리자에 라이브러리 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 개체 관리자에 라이브러리 등록](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-register-a-library-with-the-object-manager)합니다.  
-  
 와 같은 도구 기호 검색 **클래스 뷰**, **개체 브라우저**를 **호출 브라우저** 고 **기호 찾기 결과**를 볼 수 있도록 외부 구성 요소 또는 프로젝트의 기호입니다. 기호는 네임 스페이스, 클래스, 인터페이스, 메서드 및 다른 언어 요소를 포함 합니다. 라이브러리는 이러한 기호를 추적 하 고 노출 하는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 데이터를 사용 하 여 도구를 채우는 개체 관리자입니다.  
   
  개체 관리자는 사용 가능한 모든 라이브러리의 추적 합니다. 각 라이브러리 개체 관리자를 사용 하 여 기호 검색 도구에 대 한 기호를 제공 하기 전에 등록 해야 합니다.  

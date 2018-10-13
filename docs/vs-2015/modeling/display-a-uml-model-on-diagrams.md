@@ -1,7 +1,7 @@
 ---
 title: 다이어그램에 UML 모델 표시 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5439394885ecdd3801b34bb224144bad16d4c2f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 412bddfa7a25f613a3a400905d13dff478b5a309
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173162"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>다이어그램에 UML 모델 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [다이어그램에 UML 모델 표시](https://docs.microsoft.com/visualstudio/modeling/display-a-uml-model-on-diagrams)합니다.  
-  
-Visual Studio 확장에 대한 프로그램 코드에서 모델 요소가 다이어그램에 표시되는 방식을 제어할 수 있습니다. UML 모델을 지 원하는 Visual Studio 버전을 참조 하세요 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.  
+Visual Studio 확장에 대한 프로그램 코드에서 모델 요소가 다이어그램에 표시되는 방식을 제어할 수 있습니다. UML 모델을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
  항목 내용:  
  -   [다이어그램에서 요소를 표시 하려면](#Display)  

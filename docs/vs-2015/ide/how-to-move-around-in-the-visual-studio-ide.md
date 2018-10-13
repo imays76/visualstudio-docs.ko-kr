@@ -1,7 +1,7 @@
 ---
 title: '방법: Visual Studio IDE에서 이동 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52d5025b4758463c708d80784db71835e2807abd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189061"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>방법: Visual Studio IDE에서 이동
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Visual Studio IDE에서 이동 주위](https://docs.microsoft.com/visualstudio/ide/how-to-move-around-in-the-visual-studio-ide)합니다.  
-  
 IDE(통합 개발 환경)는 기본 설정이나 프로젝트 요구 사항에 따라 몇 가지 방법으로 창에서 창으로 이동하고 파일에서 파일로 이동할 수 있도록 하기 위해 설계되었습니다. 편집기에 열려 있는 파일 전체를 순환하거나 IDE의 모든 활성 도구 창을 순환하도록 선택할 수 있습니다. 마지막으로 액세스한 순서에 관계없이 편집기에 열려 있는 원하는 파일로 직접 전환할 수도 있습니다. 이러한 기능은 IDE에서 작업할 때 생산성을 높이는 데 유용할 수 있습니다.  
   
 > [!NOTE]

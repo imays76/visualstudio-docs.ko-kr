@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugObjects::GetCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9cbc5db4-03ae-479f-a664-13cad66ad210
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a69211e333371bd3b4672cbd34374552e4966d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9478ac84637bc76bed42488931b2457ab5aadf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552446"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178024"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IEnumDebugObjects::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugobjects-getcount)합니다.  
-  
 이 메서드는 열거형의 요소 수를 반환합니다.  
   
 ## <a name="syntax"></a>구문  

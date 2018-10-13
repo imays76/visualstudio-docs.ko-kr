@@ -1,7 +1,7 @@
 ---
 title: 텍스트 템플릿에서 Visual Studio ModelBus를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3c6c3d9e35f14a03f8130982c562ba812ac11d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6defdf3613f9ac8f270a8e0140115cdca2328e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557406"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189399"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>텍스트 템플릿에서 Visual Studio ModelBus 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [텍스트 템플릿에서 Visual Studio ModelBus를 사용 하 여](https://docs.microsoft.com/visualstudio/modeling/using-visual-studio-modelbus-in-a-text-template)입니다.  
-  
 포함 하는 모델을 읽는 텍스트 템플릿을 작성 하는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 참조, 액세스 대상 모델에 대 한 참조를 해결 하는 것이 좋습니다. 이 경우 텍스트 템플릿 및 참조 도메인 특정 언어 (Dsl)를 적용 해야 할 수도 있습니다.  
   
 -   참조의 대상이 되는 DSL 텍스트 템플릿에서 액세스에 대해 구성 된 ModelBus 어댑터가 있어야 합니다. 또한 다른 코드에서 DSL을 액세스 하는 경우 다시 구성 된 어댑터는 표준 ModelBus 어댑터 외에도 필요 합니다.  

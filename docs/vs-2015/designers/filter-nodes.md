@@ -1,7 +1,7 @@
 ---
 title: 필터 노드 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2789676505588c2041abfd876a228fc456ee3607
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8046fcbeebe2af0c6c7ebb725ffe4ed6cfa263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549577"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178583"
 ---
 # <a name="filter-nodes"></a>필터 노드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [필터 노드](https://docs.microsoft.com/visualstudio/designers/filter-nodes)합니다.  
-  
 셰이더 디자이너에서 필터 노드는 색상 또는 질감 샘플 등의 입력을 비유적 색 값으로 변환합니다. 이러한 비유적 색 값은 일반적으로 비사실적 렌더링에서 사용되거나 다른 시각적 효과의 구성 요소로 사용됩니다.  
   
 ## <a name="filter-node-reference"></a>필터 노드 참조  

@@ -1,7 +1,7 @@
 ---
 title: 만들기 및 관리 모달 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b79ec93ae3783355d41d78a25dd5083dd5cd6361
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49db22686481abd824b94178c854d681a1373db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177257"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>모달 대화 상자 만들기 및 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [만들고 모달 대화 상자 관리](https://docs.microsoft.com/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)합니다.  
-  
 Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부모 창 대화 상자 표시 되는 동안 않도록은 다음 대화 상자를 닫은 후 다시 부모 창을 사용 하도록 설정 해야 합니다. 이렇게 하지 않으면 오류가 나타날 수 있습니다. "Microsoft Visual Studio 모달 대화 상자가 활성화 되어 있으므로를 종료할 수 없는 합니다. 활성 대화 상자를 닫고 다시 시도 하십시오. "  
   
  이 작업을 수행 하는 방법은 두 가지가 있습니다. 파생 하는 WPF 대화 상자를 사용 하는 경우 권장 되는 방법은 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>를 호출한 다음 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> 대화 상자를 표시 합니다. 이 작업을 수행 하는 경우 부모 창의 모달 상태를 관리할 필요가 없습니다.  

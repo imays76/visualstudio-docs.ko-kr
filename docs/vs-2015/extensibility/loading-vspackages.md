@@ -1,7 +1,7 @@
 ---
 title: Vspackage를 로드 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6e128b4e8decef7d8dfabc1f2bd8a56ea592e06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2294f40158c37b404a9e0301a5204b022c7f1fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554514"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173019"
 ---
 # <a name="loading-vspackages"></a>VSPackage 로드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Vspackage 로드](https://docs.microsoft.com/visualstudio/extensibility/loading-vspackages)합니다.  
-  
 Vspackage는 해당 기능이 필요한 경우에 Visual Studio에 로드 됩니다. 예를 들어, Visual Studio 프로젝트 팩터리 또는 VSPackage 구현 하는 서비스를 사용 하는 경우 VSPackage가 로드 됩니다. 이 기능은 성능 향상을 위해 가능할 때마다 사용 되는 지연 된 로드를 라고 합니다.  
   
 > [!NOTE]

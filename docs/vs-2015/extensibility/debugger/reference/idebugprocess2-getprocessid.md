@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::GetProcessId | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f44a35e3204e71ec37805dcc35711d6f38785d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e00afb58bbbf683ec4f2f71ebe727f4396a6fd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188132"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProcess2::GetProcessId](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-getprocessid)합니다.  
-  
 이 프로세스에 대 한 GUID를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

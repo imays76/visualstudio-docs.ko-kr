@@ -1,7 +1,7 @@
 ---
 title: 코드 조각 스키마 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9dfcb6e7bc29fe29f33b919545a6781a731b7734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188127"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 조각 스키마 참조](https://docs.microsoft.com/visualstudio/ide/code-snippets-schema-reference)합니다.  
-  
 IntelliSense 코드 조각은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 응용 프로그램에 삽입되도록 미리 작성된 코드 부분입니다. 코드 조각을 제공함으로써 반복 코드를 입력하거나 샘플 검색에 드는 시간을 줄여 생산성을 높일 수 있습니다. IntelliSense 코드 조각 XML 스키마를 사용하여 사용자 지정 코드 조각을 만들어 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 이미 포함되어 있는 코드 조각에 추가할 수 있습니다.  
   
 ## <a name="intellisense-code-snippets-schema-elements"></a>IntelliSense 코드 조각 스키마 요소  

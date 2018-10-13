@@ -1,7 +1,7 @@
 ---
 title: '방법: 워크플로 디자이너에서 활동 대리자 정의 및 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5bf6a53879e90dab2a0a57d99ee27d81bd1dfc35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f7b69d0fb1ccd547d522d65fab803bd79a10ed2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183380"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 활동 대리자 정의 및 사용
 [!INCLUDE[net_v45](../includes/net-v45-md.md)]에서는 <xref:System.Activities.Statements.InvokeDelegate> 작업에 대해 기본으로 제공되는 새 디자이너를 포함하고 있습니다. 이 디자이너는 <xref:System.Activities.ActivityDelegate> 또는 <xref:System.Activities.ActivityAction> 같은 <xref:System.Activities.ActivityFunc%601>에서 파생되는 작업에 대리자를 할당하는 데 사용할 수 있습니다.  

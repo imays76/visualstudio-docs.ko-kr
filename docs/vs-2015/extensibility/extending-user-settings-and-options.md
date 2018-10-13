@@ -1,7 +1,7 @@
 ---
 title: 사용자 설정 및 옵션 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84bfc4f7aaf8065fe6776cd0e058c79730674e29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: defc56dc9ebe924a4aee660c1d73072a2c3df7ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551499"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177634"
 ---
 # <a name="extending-user-settings-and-options"></a>사용자 설정 및 옵션 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Extending User Settings and 옵션](https://docs.microsoft.com/visualstudio/extensibility/extending-user-settings-and-options)합니다.  
-  
 Visual Studio에서 사용자 기본 설정을 유지 하기 위해 두 가지 방법이 있습니다. 합니다 **도구 / 옵션** 페이지에 다양 한 일반 및 특정 언어 관련 설정에 대 한 고유한 값을 설정 하는 작업을 할 수 있습니다. 사용자 설정에는 일반 Visual Studio 구성 속성을 지정할 수가 있습니다. 옵션 페이지에 대 한 자세한 내용은 참조 하세요. [옵션 및 옵션 페이지](../extensibility/internals/options-and-options-pages.md)합니다. 사용자 설정에 대 한 자세한 내용은 참조 하세요. [사용자 설정에 대 한 지원을](../extensibility/internals/support-for-user-settings.md)합니다.  
   
  [옵션 페이지 만들기](../extensibility/creating-an-options-page.md)  

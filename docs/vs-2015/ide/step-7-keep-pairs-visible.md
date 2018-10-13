@@ -1,7 +1,7 @@
 ---
 title: '7단계: 쌍 표시 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e47b2308c085e9fd30cc18bc3afd45584e29274c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b796fa9735337b5cc8f8cb8d955b33bc6a77e76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189009"
 ---
 # <a name="step-7-keep-pairs-visible"></a>7단계: 쌍 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [7 단계: 쌍 표시](https://docs.microsoft.com/visualstudio/ide/step-7-keep-pairs-visible)합니다.  
-  
 플레이어가 서로 일치하지 않는 아이콘 쌍을 선택하는 경우 게임이 제대로 실행됩니다. 그러나 일치하는 쌍을 선택할 경우에는 어떻게 되는지 고려해야 합니다. 타이머를 설정(`Start()` 메서드 사용)하여 아이콘이 사라지게 하는 대신 `firstClicked` 및 `secondClicked` 참조 변수를 사용하여 선택한 두 레이블의 색을 다시 설정하는 것이 아니라 레이블을 더 이상 추적하지 않도록 게임 자체를 다시 설정해야 합니다.  
   
 ### <a name="to-keep-pairs-visible"></a>쌍을 표시하려면  

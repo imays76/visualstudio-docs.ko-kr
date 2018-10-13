@@ -1,7 +1,7 @@
 ---
 title: '연습: 코어 편집기 만들기 및 등록 하는 편집기 파일 형식 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8a3b85af8e3852985125e41e3ef3727e59e3269
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a79bbcbba412c008d4f4641f01ff23c9c4f9952f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556813"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187306"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>연습: 코어 편집기 만들기 및 등록 하는 편집기 파일 형식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [핵심 편집기 만들기 및 등록 된 편집기 파일 형식이](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type)합니다.  
-  
 이 연습에는 시작 하는 VSPackage를 만드는 방법을 보여 줍니다는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .myext 파일 이름 확장명을 가진 파일의 핵심 편집기가 로드 됩니다.  
   
 ## <a name="prerequisites"></a>전제 조건  

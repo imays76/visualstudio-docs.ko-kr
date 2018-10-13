@@ -1,7 +1,7 @@
 ---
 title: 계층 구조 및 선택 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6bac5e0635b97c191a2261c25143aaf2fd2b4d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 236ac170967800320afcddb6a4d837356bc8f16a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172772"
 ---
 # <a name="hierarchies-and-selection"></a>계층 구조 및 선택
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [계층 구조 및 선택](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-and-selection)합니다.  
-  
 사용자 지정할 때 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]를 이해 해야 하는 방법을 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 및 사용자에 게 표시 되는 내용을 확인 하려면 선택 항목 컨텍스트를 사용 하는 방법 등의 계층이 처리 합니다. 이 섹션의 개념을 설명 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 계층 및 선택 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

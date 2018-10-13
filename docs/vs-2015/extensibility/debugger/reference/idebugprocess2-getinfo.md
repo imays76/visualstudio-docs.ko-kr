@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::GetInfo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2489688942086eedde555c3c43bd864475c7158f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9f7cd13ba71d15e28d88005821020b38df29399
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554896"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186657"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProcess2::GetInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-getinfo)합니다.  
-  
 프로세스에 대 한 설명을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

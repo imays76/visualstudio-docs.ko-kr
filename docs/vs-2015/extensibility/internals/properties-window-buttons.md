@@ -1,7 +1,7 @@
 ---
 title: 속성 창 단추 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 579f0a287e171872fccebbd251fae618ba615692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05b23a5dff0c668487f569ceb4fcd5efb6a582aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176802"
 ---
 # <a name="properties-window-buttons"></a>속성 창 단추
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [속성 창 단추](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-buttons)합니다.  
-  
 개발 언어 및 제품 종류에 따라 특정 단추에 대 한 도구 모음에서 기본적으로 표시 되는 **속성** 창입니다. 모든 경우에는 **항목별**, **Alphabetized**합니다 **속성**, 및 **속성 페이지** 단추가 표시 됩니다. Visual C# 및 Visual Basic의 경우에 **이벤트** 단추가 표시 됩니다. 특정 Visual c + + 프로젝트에는 **VC + + 메시지** 하며 **VC 재정의** 단추가 표시 됩니다. 기타 프로젝트 형식에 대 한 추가 단추를 표시 될 수 있습니다. 단추에 대 한 자세한 내용은 합니다 **속성** 창 참조 [속성 창](../../ide/reference/properties-window.md)합니다.  
   
 ## <a name="implementation-of-properties-window-buttons"></a>속성 창 단추 구현  

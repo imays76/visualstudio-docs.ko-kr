@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 지 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5c44fde30720fe17f4b9f3a5d679750ccb78ee6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 068f919ae0717158220712bfe010c58cd401d5d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177112"
 ---
 # <a name="project-persistence"></a>프로젝트 지속성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 지 속성](https://docs.microsoft.com/visualstudio/extensibility/internals/project-persistence)합니다.  
-  
 지 속성은 프로젝트에 대 한 주요 디자인 고려 사항. 파일을 나타내는 프로젝트 항목을 사용 하는 대부분의 프로젝트 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 도 해당 데이터는 파일 기반 프로젝트를 지원 합니다. 프로젝트 및 프로젝트 파일을 소유한 파일 모두 유지 해야 합니다. IDE 자체 또는 프로젝트 항목을 저장 하려면 프로젝트에 지시 합니다.  
   
  프로젝트 템플릿에서 프로젝트 팩터리에 전달 됩니다. 템플릿은 특정 프로젝트 형식의 요구 사항에 따라 모든 프로젝트 항목의 초기화를 지원 해야 합니다. 이러한 템플릿은 프로젝트 파일로 저장 고 나중에 솔루션을 통해 IDE에 의해 관리 되는 수 있습니다. 자세한 내용은 [만들 프로젝트 인스턴스에서 사용 하 여 프로젝트 팩터리](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) 하 고 [솔루션](../../extensibility/internals/solutions.md)합니다.  

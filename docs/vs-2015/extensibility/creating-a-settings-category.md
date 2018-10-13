@@ -1,7 +1,7 @@
 ---
 title: Creating a Settings Category | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91c46e5a222526dd68d98be0c855067cd96b10f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1a59e2c185460ffd9b9326c8458681f5953de76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186151"
 ---
 # <a name="creating-a-settings-category"></a>설정 범주 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Creating a Settings Category](https://docs.microsoft.com/visualstudio/extensibility/creating-a-settings-category)합니다.  
-  
 이 연습에서는 Visual Studio 설정 범주를 만들고 값을 저장 하 고 설정 파일에서 값을 복원 하려면 사용 합니다. 설정 범주는 "사용자 지정 설정 지점;"으로 표시 되는 관련된 속성의 그룹 즉,에서 확인란으로는 **가져오기 및 내보내기 설정을** 마법사. (에서 찾을 수 있습니다 합니다 **도구** 메뉴.) 설정 저장 되거나, 범주로 서 복원 되 고 개별 설정 마법사에 표시 되지 않습니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
  파생 시켜 설정 범주를 만들면는 <xref:Microsoft.VisualStudio.Shell.DialogPage> 클래스입니다.  

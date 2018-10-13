@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense에 대 한 JSDoc 주석 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e24338a75dd631cee86ea8ac81e774e81732bba5
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f5d21405b64901e20ffd82594672319ecbf0d223
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189230"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>JavaScript IntelliSense에 대한 JSDoc 주석 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 Visual Studio의 IntelliSense는 표준 JSDoc 주석을 사용하여 스크립트에 추가하는 정보를 표시합니다. JSDoc 주석을 사용하여 함수, 필드 및 변수와 같은 코드 요소에 대한 정보를 제공할 수 있습니다.  
   
 ## <a name="jsdoc-comment-tags"></a>JSDoc 주석 태그  

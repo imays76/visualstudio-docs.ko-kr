@@ -1,7 +1,7 @@
 ---
 title: SccCheckin 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 27d2f5fc2bec3f7e082593e3adcd65a0407f0bc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e36885749a732051cb03b60bd4a5faf6b71310d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189083"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccCheckin 함수](https://docs.microsoft.com/visualstudio/extensibility/scccheckin-function)합니다.  
-  
 이전에 체크 아웃 된 파일이 원본 제어 시스템에 변경 내용을 저장 하 고 새 버전을 만드는이 함수를 확인 합니다. 이 함수는 개수 및 체크 인 파일의 이름 배열을 사용 하 여 호출 됩니다.  
   
 ## <a name="syntax"></a>구문  

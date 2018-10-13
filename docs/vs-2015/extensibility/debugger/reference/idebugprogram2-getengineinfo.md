@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::GetEngineInfo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e242a0d2fa414e4f735d5964d65308a68b58d774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86def91e6b771d5574ff904467e05b5c37f8b5f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187496"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProgram2::GetEngineInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-getengineinfo)합니다.  
-  
 이 프로그램을 실행 하는 디버그 엔진 (DE)의 GUID와 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

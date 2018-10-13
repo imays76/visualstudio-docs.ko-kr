@@ -1,7 +1,7 @@
 ---
 title: WPF 응용 프로그램에서 관련된 데이터 표시 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4068bcbf3ead7114013b93f02a784d682e5b4d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174150"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>WPF 응용 프로그램에서 관련된 데이터 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WPF 응용 프로그램에서 관련된 데이터 표시](https://docs.microsoft.com/visualstudio/data-tools/display-related-data-in-wpf-applications)합니다.  
-  
   
 일부 응용 프로그램에서 여러 테이블 또는 부모-자식 관계에서 서로 관련 된 엔터티를 함께 제공 되는 데이터로 작업 하는 것이 좋습니다. 예를 들어 고객을 표시 하는 표를 표시 하려면 수는 `Customers` 테이블입니다. 사용자가 특정 고객을 선택 하면 다른 표의 관련에서 해당 고객의 주문을 `Orders` 테이블입니다.  
   

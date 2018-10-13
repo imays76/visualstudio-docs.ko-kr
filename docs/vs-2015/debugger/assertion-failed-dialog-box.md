@@ -1,7 +1,7 @@
 ---
 title: 어설션 실패 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37ddbc77cbeeb96344383b7cec0011f0ca3187b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: edb218b98b5eb07faaa222acfba33fd64877313c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181378"
 ---
 # <a name="assertion-failed-dialog-box"></a>어설션 오류 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [어설션 실패 대화 상자](https://docs.microsoft.com/visualstudio/debugger/assertion-failed-dialog-box)합니다.  
-  
 어설션 문은 프로그램의 특정 지점에서 true를 유지하도록 조건을 지정합니다. 조건이 true를 유지하지 않으면 어설션 오류가 발생하고 프로그램 실행이 중단되며 이 대화 상자가 나타납니다.  
   
 |클릭|대상|  

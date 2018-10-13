@@ -1,7 +1,7 @@
 ---
 title: 셰이더 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564601"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182797"
 ---
 # <a name="shader-designer"></a>셰이더 디자이너
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [셰이더 디자이너](https://docs.microsoft.com/visualstudio/designers/shader-designer)합니다.  
-  
 이 문서에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셰이더 디자이너를 사용하여 *셰이더*라는 사용자 지정 시각 효과를 만들고 수정하고 내보내는 방법을 설명합니다.  
   
  셰이더 디자이너를 사용하면 HLSL 프로그래밍에 대해 모르더라도 게임 또는 앱용 사용자 지정 시각 효과를 만들 수 있습니다. 셰이더 디자이너에서 셰이더를 만들려는 경우 셰이더를 그래프로 배치하면 됩니다. 즉, 데이터와 작업을 나타내는 *노드*를 디자인 화면에 추가한 다음 노드를 서로 연결하여 작업에서 데이터를 처리하는 방법을 정의합니다. 각 작업 노드에서는 해당 지점까지의 효과 미리 보기가 제공되므로 효과의 결과를 시각화할 수 있습니다. 데이터는 노드를 통과하여 셰이더의 출력을 나타내는 최종 노드 방향으로 이동합니다.  

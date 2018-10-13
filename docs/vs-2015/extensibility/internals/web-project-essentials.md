@@ -1,7 +1,7 @@
 ---
 title: 웹 프로젝트 필수 항목 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3ec8de19f1546941d3e96c8c2cebebad408c9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b30dd0616fcf2f59044a782bf8611ef2fa946f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188755"
 ---
 # <a name="web-project-essentials"></a>웹 프로젝트 필수 항목
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [웹 프로젝트 필수 항목](https://docs.microsoft.com/visualstudio/extensibility/internals/web-project-essentials)합니다.  
-  
 웹 프로젝트는 웹 응용 프로그램을 만듭니다. 스마트 웹 페이지에 있는 웹 응용 프로그램을 만들려면 웹 프로젝트를 사용할 수 있습니다. 스마트 웹 페이지에는 필요에 따라 웹 페이지를 렌더링 하는 서버 쪽 코드를 있습니다.  
   
  와 같은 일반적인 프로그래밍 언어를 사용 하 여 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 또는 [!INCLUDE[csprcs](../../includes/csprcs-md.md)], 수집 및 사용자 로부터 정보를 처리 하 고, 데이터베이스에 저장 하 고 등 스마트 웹 페이지를 만들 수 있습니다.  

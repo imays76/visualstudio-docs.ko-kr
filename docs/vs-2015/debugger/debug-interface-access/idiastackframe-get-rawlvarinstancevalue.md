@@ -1,7 +1,7 @@
 ---
 title: 'Idiastackframe:: Get_rawlvarinstancevalue | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aca4ea4468409937cd0b90b7c2201898a9f93a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 440a780ccd92a6f8f46f74c462e4adfc591c97ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175515"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiastackframe:: Get_rawlvarinstancevalue](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue)합니다.  
-  
 이 메서드는 원시 바이트로 지정 된 지역 변수 값을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -54,7 +52,7 @@ HRESULT get_rawLVarInstanceValue(
  [out] 실제 버퍼에 저장 된 바이트 수를 반환 합니다.  
   
  `pbData`  
- [out] 데이터를 입력할 버퍼입니다. 사용할 수는 없습니다 `NULL`합니다.  
+ [out] 데이터를 입력할 버퍼입니다. 이는 `NULL`이 될 수 없습니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  

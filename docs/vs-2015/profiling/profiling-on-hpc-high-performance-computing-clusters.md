@@ -1,7 +1,7 @@
 ---
 title: HPC(고성능 컴퓨팅) 클러스터에서 프로파일링 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c67732552239f995b5edd6a328ae1de4fa379e3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178947"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC(High Performance Computing) 클러스터에서 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [HPC (High Performance Computing) 클러스터에서 프로 파일링](https://docs.microsoft.com/visualstudio/profiling/profiling-on-hpc-high-performance-computing-clusters)합니다.  
-  
 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 또는 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 프로파일링 도구의 샘플링 방법을 사용하여 Microsoft Windows HPC 클러스터의 컴퓨터 노드에서 프로파일링을 수행할 수 있습니다. HPC에 대한 자세한 내용은 Microsoft 웹 사이트에서 [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393)를 참조하세요.  
   
 ## <a name="prerequisites"></a>전제 조건  

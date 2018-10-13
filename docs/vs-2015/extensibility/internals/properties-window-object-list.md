@@ -1,7 +1,7 @@
 ---
 title: 속성 창 개요 목록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87592deaec57b5638336cf191f12896cccbcb5b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fd821da5d54afdb7ea8b3d16dc32f818222a961
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564383"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183107"
 ---
 # <a name="properties-window-object-list"></a>속성 창 개요 목록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [속성 창 개요 목록](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-object-list)합니다.  
-  
 개체 목록에는 **속성** 창 하나 이상의 선택한 창 내에서 사용할 수 있는 기타 개체 선택을 변경할 수 있는 드롭다운 목록입니다. 에 대 한 호출 트리거이 목록 내에서 다른 개체를 선택 하면 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> 알리는 환경의 new-object가 선택 되어 있는지를 합니다. 표시 되는 정보는 **속성** 창이 새로 선택한 개체에 연결 된 속성을 표시 하려면 다음 변경 됩니다.  
   
 ## <a name="the-object-list"></a>개체 목록  

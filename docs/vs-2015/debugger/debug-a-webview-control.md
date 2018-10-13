@@ -1,7 +1,7 @@
 ---
 title: WebView 컨트롤 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6b75f9dadbe1223c41989ff148028a355157bff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb004576546fd028b97fa3ebb2b68ad8f4ee2f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189842"
 ---
 # <a name="debug-a-webview-control"></a>WebView 컨트롤 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WebView 컨트롤 디버그](https://docs.microsoft.com/visualstudio/debugger/debug-a-webview-control)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Windows 런타임 앱에서 `WebView` 컨트롤을 조사 및 디버깅하려면 앱 시작 시 스크립트 디버거를 연결하도록 Visual Studio를 구성하면 됩니다. Visual Studio 2013 업데이트 2부터 디버거를 사용하여 다음의 두 가지 방법으로 `WebView` 컨트롤과 상호 작용할 수 있습니다.  

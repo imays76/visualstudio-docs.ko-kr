@@ -1,7 +1,7 @@
 ---
 title: 데이터 소스 창에 사용자 지정 컨트롤 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acdab62754a8cbbe7b97ea9723fba202d5078ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553693"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183640"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>데이터 소스 창에 사용자 지정 컨트롤 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터 소스 창에 사용자 지정 컨트롤을 추가할](https://docs.microsoft.com/visualstudio/data-tools/add-custom-controls-to-the-data-sources-window)합니다.  
-  
   
 항목을 끌면 합니다 **데이터 원본** 창 데이터 바인딩된 컨트롤을 만드는 디자인 화면에 사용자가 만든 컨트롤의 형식을 선택할 수 있습니다. 창의 각 항목에는 드롭다운 목록에서 선택할 수 있는 컨트롤을 표시 하는 있습니다. 각 항목에 연결 된 컨트롤 집합에는 항목의 데이터 형식에 의해 결정 됩니다. 만들려는 컨트롤 목록에 나타나지 않으면, 목록 컨트롤을 추가 하려면이 항목의 지침을 따라 수 있습니다.  
   

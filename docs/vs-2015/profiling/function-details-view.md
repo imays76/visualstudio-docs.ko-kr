@@ -1,7 +1,7 @@
 ---
 title: 함수 정보 뷰 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b243e6fee02e0d093cac17352803bfd66016bdf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 980f676a0197e84523d4fa6a080e72abc02ccb4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543196"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181905"
 ---
 # <a name="function-details-view"></a>함수 정보 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [함수 정보 뷰](https://docs.microsoft.com/visualstudio/profiling/function-details-view)합니다.  
-  
 **함수 정보 뷰** 창에는 다음과 같은 정보가 표시됩니다.  
   
 -   **비용 분산** 가로 막대형 차트는 선택한 함수와 선택한 함수를 실행한 호출 함수의 관계 및 선택한 함수와 해당 함수에 의해 호출된 함수의 관계를 나타냅니다.  

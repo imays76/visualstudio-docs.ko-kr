@@ -1,7 +1,7 @@
 ---
 title: 구성 및 SelectedItem 개체 자동화 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9d5da07c4505aef38fbef22b8680a8c0914056a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80c67567a3e9ed3fd482a9a88f6d52cddcc0a3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550156"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185421"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>구성 SelectedItem 개체 자동화
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [구성 및 SelectedItem 개체 자동화](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-for-configuration-and-selecteditem-objects)합니다.  
-  
 빌드 및에서 선택한 항목 프로세스를 자동화할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
   
 ## <a name="automation-for-builds"></a>빌드에 대 한 자동화  

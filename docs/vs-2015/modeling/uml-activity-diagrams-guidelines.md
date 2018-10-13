@@ -1,7 +1,7 @@
 ---
 title: 'UML 동작 다이어그램: 지침 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 23665bb9e3241f9fe32913bbd5816a39404d0842
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de4ea9890f6a39fa263129f3a0df9559ae9ab479
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176646"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML 동작 다이어그램: 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 동작 다이어그램: 지침](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-guidelines)합니다.  
-  
 Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통한 작업 흐름으로 비즈니스 프로세스 또는 소프트웨어 알고리즘을 설명합니다. 사용자, 소프트웨어 구성 요소 또는 장치가 이러한 작업을 수행할 수 있습니다. 비디오 데모를 참조 하세요. [동작 다이어그램을 사용 하 여 비즈니스 워크플로 캡처](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)합니다.  
   
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  

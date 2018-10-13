@@ -1,7 +1,7 @@
 ---
 title: 'DA0503: 프로파일링 중인 프로세스에 대한 평균 작업 집합(바이트) | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e71d7e630505d44392610ab5ba94c19b3928f7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75d27084ec0d086770db088db9708d5ea4608066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181729"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: 프로파일링 중인 프로세스에 대한 평균 작업 집합(바이트)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DA0503: 프로 파일링 중인 프로세스에 대 한 바이트의 평균 작업 집합](https://docs.microsoft.com/visualstudio/profiling/da0503-average-working-set-in-bytes-for-the-process-being-profiled)합니다.  
-  
 규칙 Id | DA0503 |  
 | 범주 | 리소스 모니터링 |  
 | 프로 파일링 방법을 | 모든 |  

@@ -1,7 +1,7 @@
 ---
 title: UML 모델에 대 한 유효성 검사 제약 조건 정의 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,23 +14,21 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176542"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML 모델에 대한 유효성 검사 제약 조건 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 모델에 대 한 유효성 검사 제약 조건 정의](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models)합니다.  
-  
 모델이 지정된 조건을 충족하는지 여부를 테스트하는 유효성 검사 제약 조건을 정의할 수 있습니다. 예를 들어 사용자가 상속 관계 루프를 만들지 않도록 제약 조건을 정의할 수 있습니다. 제약 조건은 사용자가 모델을 열거나 저장하려고 할 때 호출되며, 수동으로 호출할 수도 있습니다. 제약 조건이 실패하면 정의한 오류 메시지가 오류 창에 추가됩니다. 이러한 제약 조건을[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension)로 패키징하고 다른 Visual Studio 사용자에게 배포할 수 있습니다.  
   
  데이터베이스와 같은 외부 리소스에 대해 모델의 유효성을 검사하는 제약 조건을 정의할 수도 있습니다. 레이어 다이어그램에 대해 프로그램 코드의 유효성을 검사 하려는 경우 참조 [레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)합니다.  
   
- UML 모델을 지 원하는 Visual Studio 버전을 참조 하세요 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.  
+ UML 모델을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
 ## <a name="requirements"></a>요구 사항  
  참조 [요구 사항](../modeling/extend-uml-models-and-diagrams.md#Requirements)합니다.  
@@ -190,13 +188,13 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1.  **F5**키를 누르거나, **디버그** 메뉴에서 **디버깅 시작**을 선택합니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 시작됩니다.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다.  
   
-     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 시작 되지 않습니다.  
+     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 가 시작되지 않는 경우:  
   
     -   프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.  
   
-    -   솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. 확인 문자열을 **시작 외부 프로그램** 필드의 전체 경로 이름에는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 일반적으로:  
+    -   솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. 시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름인지 확인합니다.  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -244,7 +242,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }  
 ```  
   
- 참조 [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md) 에 대 한 내용은 메서드 및 형식을 탐색 하 고 모델을 읽는 사용할 수 있습니다.  
+ 모델을 탐색하고 읽는 데 사용할 수 있는 메서드 및 형식에 대한 자세한 내용은 [Programming with the UML API](../modeling/programming-with-the-uml-api.md) 을 참조하세요.  
   
 ### <a name="about-validation-constraint-methods"></a>유효성 검사 제약 조건 메서드 정보  
  각 유효성 검사 제약 조건은 다음 형식의 메서드에 의해 정의됩니다.  

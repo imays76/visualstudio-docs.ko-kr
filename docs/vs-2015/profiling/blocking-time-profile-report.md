@@ -1,7 +1,7 @@
 ---
 title: 차단 시간 프로필 보고서 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae0c4f34f0d3447f63afbf08e9d788304b2d353f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180806"
 ---
 # <a name="blocking-time-profile-report"></a>차단 시간 프로필 보고서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [차단 시간 프로필 보고서](https://docs.microsoft.com/visualstudio/profiling/blocking-time-profile-report)합니다.  
-  
 프로필 보고서에서는 "I/O" 또는 "동기화" 등의 각 차단 범주와 관련된 호출 스택에 대한 집계 차단 시간 데이터를 제공합니다. 선점 보고서에는 선점 인스턴스 수와 함께 현재 프로세스를 선점한 프로세스가 나열됩니다. 차단 프로필 보고서를 빌드하기 위해 이 도구는 차단 API 호출을 수집하고 이를 호출 스택 트리에 누적합니다. 이 보고서에 표시되는 데이터는 현재 시간 범위, 숨겨진 스레드 및 적용할 수 있는 다음 두 개의 필터에 따라 달라집니다.  
   
 -   [내 코드만]을 선택하면 사용자 코드와 사용자 코드 아래에 한 수준이 포함된 스택 프레임만 표시됩니다.  

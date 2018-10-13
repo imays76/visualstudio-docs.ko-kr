@@ -1,7 +1,7 @@
 ---
 title: 코드 구조 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49f424e62517c42ac7a48fcdeb4d16c25f70eba1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173617"
 ---
 # <a name="viewing-the-structure-of-code"></a>코드 구조 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 구조 보기](https://docs.microsoft.com/visualstudio/ide/viewing-the-structure-of-code)합니다.  
-  
 Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의 개체 및 멤버, COM 구성 요소, DLL(동적 연결 라이브러리) 및 TLB(형식 라이브러리)를 검사할 수 있습니다.  
   
  이 문서의 다음 섹션에서는 다양한 코드 구조 창에 관해 설명합니다.  

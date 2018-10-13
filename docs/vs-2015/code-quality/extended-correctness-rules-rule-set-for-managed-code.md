@@ -1,7 +1,7 @@
 ---
 title: 관리 코드에 대 한 확장된 수정 규칙 규칙 집합 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aa22234c797a47fba945ba65343532df3565aefc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cebb3f492bb3aec873f503c2efcacb7220ec9739
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187431"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>관리 코드에 대한 확장 수정 규칙 규칙 집합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [관리 되는 코드에 대 한 확장 수정 규칙 규칙 집합](https://docs.microsoft.com/visualstudio/code-quality/extended-correctness-rules-rule-set-for-managed-code)합니다.  
-  
 코드 분석에서 보고 하는 논리 및 프레임 워크 사용 오류를 최대화 하는 Microsoft 확장 수정 규칙 규칙 집합입니다. COM 상호 운용성 및 모바일 응용 프로그램 같은 특정 시나리오에 주안점을 둡니다. 프로젝트 또는 프로젝트의 추가 문제 찾기 이러한 시나리오 중 하나가 적용 되는 경우이 규칙 집합을 포함 하는 것이 좋습니다.  
   
  Microsoft 확장 수정 규칙 규칙 집합 Microsoft 기본 수정 규칙 규칙에 설정 된 규칙을 포함 합니다. 기본 수정 규칙 Microsoft 최소 권장 규칙 규칙에 설정 된 규칙을 포함 합니다. 자세한 내용은 참조 [관리 되는 코드에 대 한 기본 수정 규칙 규칙 집합](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) 고 [관리 코드에 대 한 관리 권장 규칙 규칙 집합](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

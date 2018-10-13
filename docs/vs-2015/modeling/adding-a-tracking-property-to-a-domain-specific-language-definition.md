@@ -1,7 +1,7 @@
 ---
 title: 도메인별 언어 정의에 추적 속성 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f17058f2300e607707a5f2208eebe9bb2570095
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551576"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183005"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>도메인별 언어 정의에 추적 속성 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 언어 정의에 추적 속성 추가](https://docs.microsoft.com/visualstudio/modeling/adding-a-tracking-property-to-a-domain-specific-language-definition)합니다.  
-  
 이 연습에서는 도메인 모델에 추적 속성을 추가 하는 방법을 보여 줍니다.  
   
  A *도메인 추적* 속성은 사용자가 업데이트할 수는 있지만 다른 요소나 도메인 속성의 값을 사용 하 여 계산 되는 기본 값 속성입니다.  
