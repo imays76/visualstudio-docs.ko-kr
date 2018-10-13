@@ -1,7 +1,7 @@
 ---
 title: 구문 색 지정 구현 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259256"
 ---
 # <a name="implementing-syntax-coloring"></a>구문 색 지정 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [구문 색 지정 구현](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring)합니다.  
-  
 구문 색 지정을 제공 하는 언어 서비스 파서를 색 항목 배열로 텍스트 줄을 변환한 이러한 색 항목에 해당 하는 토큰 형식을 반환 합니다. 파서가 색 항목 목록에 속해 있는 토큰 유형을 반환 해야 합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 적절 한 토큰 형식 colorizer 개체에 의해 할당 된 특성에 따라 코드 창에서 각 색 항목을 표시 합니다.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 파서 인터페이스를 지정 하지 않는 파서가 구현은 전적으로 사용자 및 합니다. 그러나 Visual Studio 언어 패키지 프로젝트의 기본 파서 구현이 제공 됩니다. 관리 코드에 대해 관리 패키지 프레임 워크 (MPF) 텍스트 색을 지정 하는 것에 대 한 전체 지원의 제공 합니다.  

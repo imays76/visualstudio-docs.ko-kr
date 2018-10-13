@@ -1,7 +1,7 @@
 ---
 title: 줄 뷰 - .NET 메모리 샘플링 데이터 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3aa0c91cb6f26dd2a914195791c12421798c43b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b77a262edcbf55f7c1f14c36d35a8618f5b788dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543464"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243019"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>줄 뷰 - .NET 메모리 샘플링 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [줄 뷰-.NET 메모리 샘플링 데이터](https://docs.microsoft.com/visualstudio/profiling/lines-view-dotnet-memory-sampling-data)입니다.  
-  
 샘플링 방법을 사용하는 .NET 메모리 할당 프로파일링 데이터에 대한 줄 뷰에는 프로파일링 실행 중 메모리를 할당한 문이 나열됩니다. 열에는 할당의 크기와 할당 수도 포함됩니다.  
   
  소스 파일에서는 하나의 문이 소스 파일의 여러 줄에 걸쳐 있거나 한 줄에 여러 문이 포함될 수 있습니다.  

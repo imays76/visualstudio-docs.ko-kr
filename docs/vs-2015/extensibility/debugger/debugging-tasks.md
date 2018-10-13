@@ -1,7 +1,7 @@
 ---
 title: 디버깅 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64a9a55a659b4aaa81a1e491445400d18de30a40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab02c40911f4dbeb2d4452bebfd42c13ec232fc4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254067"
 ---
 # <a name="debugging-tasks"></a>디버깅 작업
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버깅 작업](https://docs.microsoft.com/visualstudio/extensibility/debugger/debugging-tasks)합니다.  
-  
 프로그램을 디버깅 하려면이 시작 해야 합니다 및는 디버그 엔진 (DE)에 연결 해야 합니다. 그렇지 않으면는 DE 이전에 시작된 된 프로그램에 연결 되어야 합니다. 연결 되 면는 DE 특정 시작 이벤트를 생성 해야 합니다. 응답으로 디버그 패키지는 IDE에서 설정 된 중단점은 바인딩 하려고 합니다. 프로그램에서 바인딩된 중단점에 도달 하면 중지 하 고 사용자 입력을 기다립니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

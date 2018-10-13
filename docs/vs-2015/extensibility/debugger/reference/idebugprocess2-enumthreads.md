@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::EnumThreads | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30fb71dbb1fa6edbce9201cd757dd96f401f1e5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c6cf90b66c2a74f6f189a5531c019832ca8b72e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247378"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProcess2::EnumThreads](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-enumthreads)합니다.  
-  
 프로세스에서 실행 중인 모든 스레드의 목록을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  

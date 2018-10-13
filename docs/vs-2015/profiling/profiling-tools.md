@@ -1,7 +1,7 @@
 ---
 title: 프로파일링 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550693"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244040"
 ---
 # <a name="profiling-tools"></a>프로파일링 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 프로 파일링](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour)합니다.  
-  
 프로파일링 및 진단 도구는 메모리 및 CPU 사용량 진단 및 응용 프로그램 수준 문제 진단을 도와줍니다. 이러한 도구를 사용하면 디버거에서 응용 프로그램을 실행하는 동안 데이터(예: 변수 값, 함수 호출, 이벤트)를 누적할 수 있습니다. 코드를 실행하는 동안 다양한 지점에서 응용 프로그램 상태를 볼 수 있습니다.  
   
  프로젝트 형식에(예: 데스크톱, UWP, ASP.NET) 사용할 수 있는 도구를 보려면 아래쪽의 요약을 확인합니다.  
@@ -48,7 +46,7 @@ ms.locfileid: "47550693"
 ## <a name="cpu-usage"></a>CPU 사용량  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- **CPU 사용량** 도구는 CPU에서 C++, C#/VB 및 JavaScript 코드 실행에 시간을 소모하는 상황을 보여 줍니다.  이 도구는 데스크톱 및 Windows 유니버설 앱은 물론 Azure 앱 서비스 앱에서 사용할 수 있습니다. **CPU 사용량** 도구는 디버깅하는 동안 **진단 도구** 창에서 실행하거나(**디버그/Windows/진단 도구 표시**) 디버거 외부에서(**디버그/성능 프로파일러...**) 실행할 수 있습니다. 참조 [CPU 사용량](../profiling/cpu-usage.md) 자세한 내용은 합니다.  
+ **CPU 사용량** 도구는 CPU에서 C++, C#/VB 및 JavaScript 코드 실행에 시간을 소모하는 상황을 보여 줍니다.  이 도구는 데스크톱 및 Windows 유니버설 앱은 물론 Azure 앱 서비스 앱에서 사용할 수 있습니다. **CPU 사용량** 도구는 디버깅하는 동안 **진단 도구** 창에서 실행하거나(**디버그/Windows/진단 도구 표시**) 디버거 외부에서(**디버그/성능 프로파일러...**) 실행할 수 있습니다. 다른 방법에 대한 자세한 내용을 보려면 [CPU 사용량](../profiling/cpu-usage.md) 을(를) 참조하세요.  
   
 ## <a name="performance-explorer"></a>성능 탐색기  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  

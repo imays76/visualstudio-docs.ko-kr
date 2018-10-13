@@ -1,7 +1,7 @@
 ---
 title: Side-by-side-파일 연결 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79bd0fe8d298aaa6635cb30efaf7f4d0d0be8c28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253983"
 ---
 # <a name="managing-side-by-side-file-associations"></a>병렬 파일 연결 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Side-by-side-파일 연결 관리](https://docs.microsoft.com/visualstudio/extensibility/managing-side-by-side-file-associations)합니다.  
-  
 VSPackage 파일 연결을 제공 하는 경우는 side-by-side-설치를 처리 하는 방법을 결정 해야 특정 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 파일을 호출 해야 합니다. 호환 되지 않는 파일 형식 문제를 복합 합니다.  
   
  사용자는 데이터 손실 없이 새 버전이 기존 파일을 로드할 수 있습니다 있도록 이전 버전과 호환 되도록 제품의 새 버전을 기대 합니다. 이상적으로 VSPackage 수 모두 로드 및 저장 이전 버전의 파일 형식. true가 아닐 경우에 파일 형식을 VSPackage의 새 버전으로 업그레이드를 제공 해야 합니다. 이 방식의 단점은 이전 버전에서 업그레이드 된 파일을 열 수 없습니다.  

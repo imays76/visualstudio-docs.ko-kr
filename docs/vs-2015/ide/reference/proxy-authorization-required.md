@@ -1,7 +1,7 @@
 ---
 title: 프록시 권한 필요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 855fa85a8135ceac60f262fc5510fad4aa34b006
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2650dadddefe3be18a4406eb4fd07c5599622212
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551579"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259216"
 ---
 # <a name="proxy-authorization-required"></a>프록시 권한 필요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프록시 인증 필요](https://docs.microsoft.com/visualstudio/ide/reference/proxy-authorization-required)합니다.  
-  
   
 이 오류는 대개 사용자가 프록시 서버를 통해 Visual Studio Online에 연결했는데 프록시 서버에서 호출을 차단하는 경우 발생합니다. Visual Studio Online은 사용자의 IDE 로그인 상태를 유지하는 데 사용됩니다.  
   

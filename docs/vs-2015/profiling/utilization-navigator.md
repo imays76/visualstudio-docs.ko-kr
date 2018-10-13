@@ -1,7 +1,7 @@
 ---
 title: 사용률 탐색기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9458e57d210b9f0b7d822cbf56555776a6ddf29
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238591"
 ---
 # <a name="utilization-navigator"></a>사용률 탐색기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용률 탐색기](https://docs.microsoft.com/visualstudio/profiling/utilization-navigator)합니다.  
-  
 동시성 시각화 도우미의 사용률 탐색기를 사용하면 추적에서 시간 간격을 선택할 수 있습니다. 동시성 시각화 도우미는 시간 경과에 따라 대상 프로세스의 CPU 코어 사용률을 보여줍니다. 그러면 CPU 사용률 패턴을 쉽게 검토할 수 있으며, 사용률 데이터와 다른 보기의 데이터를 비교할 수 있습니다. 사용률 탐색기는 동시성 시각화 도우미에서 모든 보기의 맨 위에 나타납니다. 다음 그림은 사용률 탐색기를 보여줍니다.  
   
  ![선택한 기간을 나타내는 사용률 탐색기](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  

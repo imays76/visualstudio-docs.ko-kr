@@ -1,7 +1,7 @@
 ---
 title: 연결을 만들 수 없습니다 &lt;연결 이름&gt; -속성 형식이 일치 하지 않는 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6254fd662e1ce021839f1cae5e77de5000453185
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 674a7de3bf3b4988bfd92390305a03c968d1dbe2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268517"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>연결을 만들 수 없습니다 &lt;연결 이름&gt; -속성 형식이 일치 하지 않습니다
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연결을 만들 수 없습니다 &lt;연결 이름&gt; -속성 형식이 일치 하지 않는](https://docs.microsoft.com/visualstudio/data-tools/cannot-create-an-association-association-name-property-types-do-not-match)합니다.  
-  
   
 연결을 만들 수 없습니다. \<연결 이름 >-속성 형식이 일치 하지 않습니다. 속성이 없는 일치 하는 형식: \<속성 이름 >.  
   

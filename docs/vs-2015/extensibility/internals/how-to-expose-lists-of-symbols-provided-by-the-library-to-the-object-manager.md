@@ -1,7 +1,7 @@
 ---
 title: '방법: 개체 관리자에 라이브러리에서 제공 하는 기호 목록을 노출 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0773e20a71516fab47f4bd0c72a1c3a50531532c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09a13b7fecb0d1e337def074b91eb92913a65b70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263629"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>방법: 개체 관리자에 라이브러리에서 제공 하는 기호 목록을 표시 합니다.
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [노출 나열의 제공 된 기호 개체 관리자에](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager)입니다.  
-  
 기호 검색 도구 **클래스 뷰**를 **개체 브라우저**를 **호출 브라우저** 및 **기호 찾기 결과**, 새 데이터에 대 한 요청을 전달 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 개체 관리자입니다. 개체 관리자를 적절 한 라이브러리를 찾아서 새 기호 목록을 요청 합니다. 라이브러리 요청한 데이터를 제공 하 여 응답 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 를 통해 개체 관리자는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 인터페이스. 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 의 메서드를 호출 하는 개체 관리자 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 채우거 나 기호 검색 도구 보기 업데이트를 사용 하 여 데이터를 가져오기 위해 인터페이스입니다.  
   
  라이브러리 도구에서 호출 됩니다, 노드를 확장할 또는 뷰를 새로 고칠 때 데이터에 대 한 요청 발생할 수 있습니다. 기호 검색 도구를 처음으로 호출 되 면 개체 관리자는 최상위 목록을 제공 하기 위해 라이브러리를 요청 합니다. 사용자 목록 노드를 확장 하는 경우 라이브러리 노드 아래에서 자식 목록을 제공 합니다. 관심 있는 항목의 인덱스를 포함 하는 모든 개체 관리자 조회 합니다. 새 목록을 표시할 개체 관리자는 항목, 이름, 내게 필요한 옵션 및 다른 속성 유형의 목록에 있는 항목 수를 결정 해야 합니다.  

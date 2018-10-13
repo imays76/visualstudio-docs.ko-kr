@@ -1,7 +1,7 @@
 ---
 title: .NET 메모리 할당 뷰 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e53fe27148901bc4af78f9b607c0e3a70ba4b91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63b5938131713c32f410f89c80a3efefa8b6c346
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268244"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 메모리 할당 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [.NET 메모리 할당 뷰](https://docs.microsoft.com/visualstudio/profiling/dotnet-memory-allocations-view)합니다.  
-  
 할당 뷰는 프로파일링 실행 중에 생성된 형식을 나열합니다. 각 형식은 형식의 할당에서 발생한 함수 실행 경로를 표시하는 호출 트리의 루트 노드입니다.  
   
  형식 행의 데이터는 프로파일링 실행 시에 생성된 형식의 개체의 총 수 및 해당 형식의 개체에 대해 할당된 바이트의 총 수를 표시합니다. 형식에 대한 포괄 값과 제외 값은 항상 동일합니다.  

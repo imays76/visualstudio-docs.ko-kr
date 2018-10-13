@@ -1,7 +1,7 @@
 ---
 title: ': Ca1005 파일을 제네릭 형식에 매개 변수 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d807fc581b6c4f0c06b2b2de1c86a148c30c4ff7
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: ed72b3ebb8ccacbf18e27bade20e1777e6434166
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591154"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259521"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: 제네릭 형식에 매개 변수를 너무 많이 사용하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1005: 제네릭 형식에 매개 변수를 방지](https://docs.microsoft.com/visualstudio/code-quality/ca1005-avoid-excessive-parameters-on-generic-types)합니다.
-
 |||
 |-|-|
 |TypeName|AvoidExcessiveParametersOnGenericTypes|

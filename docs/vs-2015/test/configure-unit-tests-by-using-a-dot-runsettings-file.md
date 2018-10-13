@@ -1,7 +1,7 @@
 ---
 title: .runsettings 파일을 사용하여 단위 테스트 구성 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e071364a6aaf7e83c554200548574c52b9b49ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553169"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255621"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings 파일을 사용하여 단위 테스트 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [.runsettings 파일을 사용 하 여 단위 테스트 구성](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)합니다.  
-  
 *.runsettings 파일을 사용하여 Visual Studio의 단위 테스트를 구성할 수 있습니다. 확장명으로 ‘.runsettings’를 사용하면 파일 이름은 아무런 상관이 없습니다. 예를 들어, 테스트가 실행되는 .NET Framework, 테스트 결과가 전달되는 디렉터리 및 테스트 실행 중에 수집된 데이터를 변경할 수 있습니다.  
   
  특수 구성을 원하지 않는다면 *.runsettings 파일이 필요하지 않습니다. 가장 자주 사용하는 경우는 [코드 검사](../test/customizing-code-coverage-analysis.md)를 사용자 지정하는 경우입니다.  

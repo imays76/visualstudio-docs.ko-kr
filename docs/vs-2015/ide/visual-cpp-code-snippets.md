@@ -1,7 +1,7 @@
 ---
 title: Visual C++ 코드 조각 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f4286d7797f6c9a23d84f49a74d67113f9554da0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242764"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 코드 조각
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual c + + 코드 조각](https://docs.microsoft.com/visualstudio/ide/visual-cpp-code-snippets)합니다.  
-  
 Visual Studio에서 코드 조각을 사용하여 일반적으로 사용되는 코드를 C++ 코드 파일에 추가할 수 있습니다. 일반적으로 C#에서와 거의 같은 방법으로 코드 조각을 사용하지만 기본 코드 조각 집합은 서로 다릅니다.  
   
  코드의 특정 위치에 코드 조각을 추가하거나(삽입) 몇몇 선택된 코드를 코드 조각으로 감쌀 수 있습니다.  

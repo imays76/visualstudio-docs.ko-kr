@@ -1,7 +1,7 @@
 ---
 title: 상수 노드 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eeeff91d6c30774d89544ab7cfd5c1f5db759620
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b062f6190213fc2b18670f50fdd527c4c3f212a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260067"
 ---
 # <a name="constant-nodes"></a>상수 노드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [상수 노드](https://docs.microsoft.com/visualstudio/designers/constant-nodes)합니다.  
-  
 셰이더 디자이너에서 상수 노드는 픽셀 셰이더 계산의 리터럴 값과 보간된 꼭짓점 특성을 나타냅니다. 꼭짓점 특성이 보간되므로(따라서 각 픽셀마다 다름), 각 픽셀 셰이더 인스턴스에서 다른 버전의 상수를 받습니다. 이렇게 하면 각 픽셀의 모양이 고유합니다.  
   
 ## <a name="vertex-attribute-interpolation"></a>꼭짓점 특성 보간  

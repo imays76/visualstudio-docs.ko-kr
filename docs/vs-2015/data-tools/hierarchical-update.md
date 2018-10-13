@@ -1,7 +1,7 @@
 ---
 title: 계층적 업데이트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddef56f8ec38d73524db661b89e83c456bc50ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239384"
 ---
 # <a name="hierarchical-update"></a>계층적 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [계층적 업데이트](https://docs.microsoft.com/visualstudio/data-tools/hierarchical-update)합니다.  
-  
   
 계층적 업데이트 * 무결성 규칙을 유지 하면서 데이터베이스에 다시 (둘 이상의 관련된 테이블을 사용 하 여 데이터 집합)에서 업데이트 된 데이터를 저장 하는 프로세스를 말합니다. *참조 무결성* 삽입, 업데이트 및 삭제 관련된 레코드의 동작을 제어 하는 데이터베이스에서 제약 조건에 의해 제공 되는 일관성 규칙을 가리킵니다. 예를 들어 참조 무결성 적용 해당 고객에 대 한 주문을 만들 수 있도록 허용 하기 전에 고객 레코드를 생성 하는 것입니다.  데이터 집합의 관계에 대 한 자세한 내용은 참조 하세요. [데이터 집합의 관계](../data-tools/relationships-in-datasets.md)  
   

@@ -1,7 +1,7 @@
 ---
 title: 문자 모양 제어 (소스 제어 VSPackage) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cec0adc7c637dee7821552079c2c6f55296e9d0e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad922a083e11007bb20ab83006a04726a38a034e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267608"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>문자 모양 제어(소스 제어 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [문자 모양 제어 (소스 제어 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/glyph-control-source-control-vspackage)합니다.  
-  
 전체 통합 소스 제어 Vspackage를 사용할 수 있는 부분은 원본 제어에서 항목의 상태를 나타내는 고유한 문자 모양을 표시 하는 기능입니다.  
   
 ## <a name="levels-of-glyph-control"></a>수준의 문자 모양 제어  

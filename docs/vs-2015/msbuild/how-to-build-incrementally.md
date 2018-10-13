@@ -1,7 +1,7 @@
 ---
 title: '방법: 증분 빌드 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dca1950a2c9ef7ee69c3f26bca1d2fe4ddf010e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551773"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275056"
 ---
 # <a name="how-to-build-incrementally"></a>방법: 증분 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 증분 빌드](https://docs.microsoft.com/visualstudio/msbuild/how-to-build-incrementally)합니다.  
-  
   
 큰 프로젝트를 빌드할 경우 최신 상태에 있는 이전에 빌드된 구성 요소를 다시 빌드하지 않는 것이 중요합니다. 매번 모든 대상이 빌드되면 각 빌드를 완료하는 데 시간이 오래 걸릴 수 있습니다. 증분 빌드(이전에 빌드되지 않은 대상만 또는 오래된 대상이 다시 빌드되는 빌드)를 사용하도록 설정하기 위해 [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)])에서는 입력 파일의 타임스탬프를 출력 파일의 타임스탬프와 비교하고 대상을 건너뛰거나, 빌드하거나, 부분적으로 다시 빌드할지 결정할 수 있습니다. 하지만 입력과 출력 간에는 일대일 매핑이 있어야 합니다. 변환을 사용하여 대상이 이 직접 매핑을 식별하도록 할 수 있습니다. 변환에 대한 자세한 내용은 [변환](../msbuild/msbuild-transforms.md)을 참조하세요.  
   

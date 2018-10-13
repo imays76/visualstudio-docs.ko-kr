@@ -1,7 +1,7 @@
 ---
 title: 작업 창 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565165"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226202"
 ---
 # <a name="using-the-tasks-window"></a>작업 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [작업 창 사용](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window)합니다.  
-  
 **태스크** 창은 합니다 **스레드** 창에 대 한 정보를 표시 한다는 점을 제외 하 고 <xref:System.Threading.Tasks.Task?displayProperty=fullName>를 [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), 또는 [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) 각 스레드 대신 개체입니다. 스레드와 마찬가지로, 작업은 동시에 실행할 수 있는 비동기 작업을 나타내지만 여러 작업이 같은 스레드에서 실행될 수도 있습니다. 참조 [JavaScript (Windows 스토어 앱)의 비동기 프로그래밍](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) 자세한 내용은 합니다.  
   
  관리 코드에서 사용할 수 있습니다는 **태스크** 창을 사용 하 여 작업할 때 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 개체 또는 합니다 **await** 및 **비동기** 키워드 (**Await** 하 고 **Async** VisualBasic에서). 관리 코드의 작업에 대 한 자세한 내용은 참조 하세요. [병렬 프로그래밍](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)합니다.  

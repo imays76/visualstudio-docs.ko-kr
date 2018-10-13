@@ -1,7 +1,7 @@
 ---
 title: SccDiff 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bacfa40d04a897d73213c833e41c199f88981c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a98f35e2829bc2eb84b9604e6b16a7b4f3f9ade
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555017"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242803"
 ---
 # <a name="sccdiff-function"></a>SccDiff 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccDiff 함수](https://docs.microsoft.com/visualstudio/extensibility/sccdiff-function)합니다.  
-  
 이 함수 표시 (또는 확인만 필요한 경우)에서 차이점 (로컬 디스크)의 현재 파일 및 해당 마지막 체크 인 버전 원본 제어 시스템입니다.  
   
 ## <a name="syntax"></a>구문  

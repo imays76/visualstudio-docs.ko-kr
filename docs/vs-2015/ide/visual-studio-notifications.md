@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 알림 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea1ce5086b9afea272fefd68660d1ef2881bde22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60d5ce504b9e4725035b662d0ccb6dd97b294e57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553845"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274354"
 ---
 # <a name="visual-studio-notifications"></a>Visual Studio 알림
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 알림](https://docs.microsoft.com/visualstudio/ide/visual-studio-notifications)합니다.  
-  
 Visual Studio에는 다양한 이벤트를 알리는 알림 시스템이 있습니다.  
   
 1.  Visual Studio 내의 구성 요소에 대한 업데이트를 사용할 수 있습니다.  

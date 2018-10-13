@@ -1,7 +1,7 @@
 ---
 title: VSCT 컴파일러 명령줄 플래그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 19ebf1713c2a0d42b1269befa3bea28d4dc0309b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fe76797d64bf2fac4f077fd5c2e5f582cfb0448f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553889"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260717"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 컴파일러 명령줄 플래그
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSCT 컴파일러 명령줄 플래그](https://docs.microsoft.com/visualstudio/extensibility/internals/vsct-compiler-command-line-flags)합니다.  
-  
 Visual Studio 명령 테이블 (VSCT) 컴파일러.vsct 파일의 컴파일이 성공 하도록 명령줄 스위치를 제공 합니다.  
   
 ## <a name="command-line-parameters"></a>명령줄 매개 변수  

@@ -1,7 +1,7 @@
 ---
 title: 코드 분석 체크 인 정책에 대 한 버전 호환성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e5d243ecda08dde83bf2dbc77595d4df3849cf54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554277"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261484"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>코드 분석 체크 인 정책에 대한 버전 호환성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 분석 체크 인 정책에 대 한 버전 호환성](https://docs.microsoft.com/visualstudio/code-quality/version-compatibility-for-code-analysis-check-in-policies)합니다.  
-  
 코드 분석 체크 인 정책의 서로 다른 버전을 사용 하 여 작성 하 고 평가 해야 하는 경우 [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], 하는 방법의 차이점을 알아야 [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] 및 [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] 체크 인 정책을 평가 합니다.  
   
 ## <a name="version-compatibility-for-evaluating-check-in-policies"></a>체크 인 정책을 평가 하는 것에 대 한 버전 호환성  

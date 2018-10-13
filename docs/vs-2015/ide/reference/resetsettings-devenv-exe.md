@@ -1,7 +1,7 @@
 ---
 title: -ResetSettings(devenv.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25697a792b0c48746a1d7840b8091ea718f5cdc7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 276205ae2aab3c38ceb3d4f1419e0bac13ae626c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550406"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273496"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings(devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [-ResetSettings (devenv.exe)](https://docs.microsoft.com/visualstudio/ide/reference/resetsettings-devenv-exe)합니다.  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 기본 설정을 복원하고 자동으로 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE를 시작합니다. 필요에 따라 설정을 지정한 .vssettings 파일로 다시 설정합니다.  
   

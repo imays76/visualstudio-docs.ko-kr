@@ -1,7 +1,7 @@
 ---
 title: 관리 되는 Vspackage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a4f17068-c563-45a8-bbbf-4203ea99e9d2
 caps.latest.revision: 34
 manager: douge
-ms.openlocfilehash: f221cf99234a2e3128e29636368e5fa78169425d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44507112ceb3e7bed452ef4ced7633001224ad82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227086"
 ---
 # <a name="managed-vspackages"></a>관리되는 VSPackage
-다음 항목에서는 VSPackage를 만드는 방법을 설명 합니다. VSPackage는 확장 하는 소프트웨어 모듈의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (UI) 사용자 인터페이스 요소, 서비스, 프로젝트, 편집기 및 디자이너를 제공 하 여 통합된 개발 환경 (IDE)입니다. 자세한 내용은 [Vspackage](../extensibility/internals/vspackages.md)합니다.  
+다음 항목에서는 VSPackage를 만드는 방법을 설명 합니다. VSPackage는 확장 하는 소프트웨어 모듈의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (UI) 사용자 인터페이스 요소, 서비스, 프로젝트, 편집기 및 디자이너를 제공 하 여 통합된 개발 환경 (IDE)입니다. 자세한 내용은 [VSPackages](../extensibility/internals/vspackages.md)을 참조하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [Visual Studio Interop 어셈블리 사용](../extensibility/internals/using-visual-studio-interop-assemblies.md)  

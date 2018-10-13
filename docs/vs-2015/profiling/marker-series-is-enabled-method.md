@@ -1,7 +1,7 @@
 ---
 title: marker_series::is_enabled 메서드 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db5a91a3b2212967cb1de915f15abb9d5caa9d98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 774b1281209787a19cdd83e4ef1019e4bf63591c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263798"
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled 메서드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [marker_series:: is_enabled 메서드](https://docs.microsoft.com/visualstudio/profiling/marker-series-is-enabled-method)합니다.  
-  
 모든 세션에서 공급자를 사용하도록 설정했는지 확인합니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: 데이터 집합 및 Tableadapter를 다른 프로젝트로 분리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5041814910c3d893b1a6161a72fbb675751a9ccf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cca40c194db476558ff14b5c92a6919c15d204a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541940"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272404"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>데이터 집합 및 TableAdapter를 다른 프로젝트로 분리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터 집합 및 Tableadapter를 다른 프로젝트로 분리](https://docs.microsoft.com/visualstudio/data-tools/separate-datasets-and-tableadapters-into-different-projects)합니다.  
-  
   
 형식화 된 데이터 집합 향상 된 있도록 합니다 [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) dataset 클래스는 별도 프로젝트로 생성 될 수 있습니다. 이 통해 빠르게 응용 프로그램 계층을 분리 하 고 n 계층 데이터 응용 프로그램을 생성할 수 있습니다.  
   

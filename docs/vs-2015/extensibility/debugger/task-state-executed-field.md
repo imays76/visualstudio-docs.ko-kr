@@ -1,7 +1,7 @@
 ---
 title: TASK_STATE_EXECUTED 필드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0791a1848a5992fb1802f9f7059a5046197e44c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 720be6d6ea0c237276d1905686bebd72ccd9207d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556161"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243258"
 ---
 # <a name="taskstateexecuted-field"></a>TASK_STATE_EXECUTED 필드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [TASK_STATE_EXECUTED 필드](https://docs.microsoft.com/visualstudio/extensibility/debugger/task-state-executed-field)합니다.  
-  
 작업이 실행되고 있지만 완료되지 않았습니다.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   

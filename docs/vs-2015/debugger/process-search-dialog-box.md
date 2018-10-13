@@ -1,7 +1,7 @@
 ---
 title: 프로세스 검색 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 455921678267ae918175445bdd06fe4391f84fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43f856e849974375e9360dac1844e634c9915000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244649"
 ---
 # <a name="process-search-dialog-box"></a>프로세스 검색 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로세스 검색 대화 상자](https://docs.microsoft.com/visualstudio/debugger/process-search-dialog-box)합니다.  
-  
 이 대화 상자를 사용 하 여 찾아서 특정 프로세스에 대 한 노드를 선택 [프로세스 뷰](../debugger/processes-view.md)합니다. 이 대화 상자를 표시 하려면 포커스를 이동 하는 **프로세스** 뷰 창. 선택한 **프로세스 찾기** 에서 합니다 **검색** 메뉴.  
   
  다음 설정은 사용할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 시퀀스 다이어그램에 UML 요소 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,22 +18,20 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b1f83999f3859583c4429ff3bf19482f01d90546
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7af657496fc95b07c7149f75fa03087eb1988606
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245221"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>UML 시퀀스 다이어그램 요소의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [uml 요소의 속성 시퀀스 다이어그램](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-sequence-diagrams)합니다.  
-  
 UML 시퀀스 다이어그램에서 다이어그램의 각 요소에는 속성이 있습니다. 요소의 속성을 보려면 다이어그램 또는 요소를 마우스 오른쪽 단추로 **UML 모델 탐색기** 을 클릭 한 다음 **속성**합니다. 속성에 표시 된 **속성** 창입니다.  
   
 > [!NOTE]
->  이 항목은 UML 시퀀스 다이어그램 요소의 속성에 대한 것입니다. UML 시퀀스 다이어그램을 읽는 방법에 대 한 자세한 내용은 참조 하세요. [UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)합니다. UML 시퀀스 다이어그램을 그리는 방법에 대 한 자세한 내용은 참조 하세요. [UML 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md)합니다.  
+>  이 항목은 UML 시퀀스 다이어그램 요소의 속성에 대한 것입니다. UML 시퀀스 다이어그램을 읽는 방법에 대 한 자세한 내용은 참조 하세요. [UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)합니다. UML 시퀀스 다이어그램을 그리는 방법에 대한 자세한 내용은 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)을 참조하세요.  
   
 ## <a name="properties-of-elements"></a>요소의 속성  
   

@@ -1,7 +1,7 @@
 ---
 title: '&lt;어셈블리&gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: edd968ffb6f2b0422e54bc6d456c1090d189fcc0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44437c0ff78c5f957a0d774530e8911513ba0fd6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553734"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191778"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;어셈블리&gt; 요소 (ClickOnce 응용 프로그램)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ &lt;어셈블리&gt; 요소 (ClickOnce 응용 프로그램)](https://docs.microsoft.com/visualstudio/deployment/assembly-element-clickonce-application)합니다.  
-  
 응용 프로그램 매니페스트에 대 한 최상위 요소입니다.  
   
 ## <a name="syntax"></a>구문  

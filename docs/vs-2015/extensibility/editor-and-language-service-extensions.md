@@ -1,7 +1,7 @@
 ---
 title: 편집기 및 언어 서비스 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e464b46185339bd1a22b433e4784154dbdb818c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5512aa9fc40e9f2ef7619cc5cf80f2751de15327
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564322"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265977"
 ---
 # <a name="editor-and-language-service-extensions"></a>편집기 및 언어 서비스 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집기 및 언어 서비스 확장](https://docs.microsoft.com/visualstudio/extensibility/editor-and-language-service-extensions)합니다.  
-  
 Visual Studio 코드 편집기의 대부분의 기능을 확장할 수 있습니다. 편집기는 Windows Presentation Foundation (WPF)에 기반 하 고 관리 코드에 기록 됩니다. 이전 버전의 Visual Studio의 디자인에서이 디자인 다른 하지만 같은 기능을 대부분을 제공 합니다. 편집기를 확장 하는 프레임 워크 MEF (Managed Extensibility)를 사용 합니다.  
   
  Visual Studio SDK 라고도 하는 어댑터를 제공 *shim* 이전 버전용으로 작성 된 Vspackage를 지원 하도록 합니다. 그럼에도 불구 하 고는 기존 VSPackage가 더 나은 성능 및 안정성을 가져올 새 기술 업데이트 하는 것이 좋습니다.  

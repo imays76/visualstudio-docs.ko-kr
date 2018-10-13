@@ -1,7 +1,7 @@
 ---
 title: 원격 디버깅용 Windows 방화벽 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9189cbc49d327a9106284dc6078eed3e21cc0f9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541767"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273886"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>원격 디버깅을 위해 Windows 방화벽 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [원격 디버깅용 Windows 방화벽 구성](https://docs.microsoft.com/visualstudio/debugger/configure-the-windows-firewall-for-remote-debugging)합니다.  
-  
 이 항목에서는 다음 운영 체제를 실행하는 컴퓨터에서 원격 디버깅을 사용하도록 방화벽을 구성하는 방법을 설명합니다.  
   
 -   Windows 7  
@@ -119,7 +117,7 @@ ms.locfileid: "47541767"
 8.  **인바운드 규칙** 또는 **아웃바운드 규칙** 목록에 새 규칙이 표시됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

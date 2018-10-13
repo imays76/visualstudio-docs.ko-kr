@@ -1,7 +1,7 @@
 ---
 title: 원본 제어 통합 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8fc2368fd2da031342cf76ab7ba9abb85e6f4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224187"
 ---
 # <a name="source-control-integration-overview"></a>소스 제어 통합 개요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 통합 개요](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-overview)합니다.  
-  
 이 섹션에서는 Visual Studio 소스 제어;에 통합 하는 두 가지 방법 비교 소스 제어 플러그 인 및 원본 제어 솔루션을 제공 하 고 새 소스 제어 기능을 강조 표시 하는 VSPackage는 합니다. Visual Studio 자동 솔루션 기반 전환 뿐 아니라 소스 제어 Vspackage와 원본 제어 플러그 인 간에 수동 전환할 수 있습니다.  
   
 ## <a name="source-control-integration"></a>소스 제어 통합  

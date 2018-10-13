@@ -1,7 +1,7 @@
 ---
 title: 잘못 동작하는 다중 스레드 응용 프로그램의 일반 패턴 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91a8ba5e4cecddd4acc047d891b491dac963044b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 846c756511bc10a3d019294a16ba2d2e98fb37a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555745"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244117"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>잘못 동작하는 다중 스레드 응용 프로그램의 일반 패턴
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Poorly-Behaved 다중 스레드 응용 프로그램에 대 한 일반적인 패턴](https://docs.microsoft.com/visualstudio/profiling/common-patterns-for-poorly-behaved-multithreaded-applications)합니다.  
-  
 동시성 시각화 도우미를 사용하면 개발자는 다중 스레드 응용 프로그램의 동작을 시각화할 수 있습니다. 이 도구에는 잘못 동작하는 다중 스레드 응용 프로그램에 대한 일반적인 패턴의 갤러리가 포함되어 있습니다. 갤러리에는 각 패턴으로 표시되는 동작에 대한 설명, 해당 동작의 가능한 결과 및 그 동작을 해결하는 가장 일반적인 방법과 함께 도구를 통해 노출되는 일반적이고 인식 가능한 시각적 패턴이 포함되어 있습니다.  
   
 ## <a name="lock-contention-and-serialized-execution"></a>잠금 경합 및 직렬화된 실행  

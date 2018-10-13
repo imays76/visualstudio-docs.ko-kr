@@ -1,7 +1,7 @@
 ---
 title: 모델 편집기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d53d22baf0ff1e458a2dd1ee601f59cdfe081ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264050"
 ---
 # <a name="model-editor"></a>모델 편집기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모델 편집기](https://docs.microsoft.com/visualstudio/designers/model-editor)합니다.  
-  
 이 문서에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이미지 편집기로 3차원 모델을 보고, 만들며 수정하는 방법을 설명합니다.  
   
  모델 편집기를 사용하여 처음부터 기본적인 3차원 모델을 만들거나 모든 기능을 갖춘 3차원 모델링 도구를 사용하여 만든 더 복잡한 3차원 모델을 보고 수정할 수 있습니다. 모델 편집기는 DirectX 응용 프로그램 개발에 사용되는 여러 가지 3차원 모델 형식을 지원합니다.  
@@ -317,7 +315,7 @@ ms.locfileid: "47564411"
 |제목|설명|  
 |-----------|-----------------|  
 |[게임 및 응용 프로그램을 위한 3D 자산 작업](../designers/working-with-3-d-assets-for-games-and-apps.md)|텍스처, 이미지, 3차원 모델 및 셰이더 효과 같은 그래픽 자산으로 작업하는 데 사용할 수 있는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 도구에 대한 개요를 제공합니다.|  
-|[이미지 편집기](../designers/image-editor.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|  
+|[Image Editor](../designers/image-editor.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|  
 |[셰이더 디자이너](../designers/shader-designer.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셰이더 디자이너를 사용하여 셰이더 작업을 수행하는 방법을 설명합니다.|
 
 

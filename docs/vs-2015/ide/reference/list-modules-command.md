@@ -1,7 +1,7 @@
 ---
 title: 모듈 목록 표시 명령 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1593879f59642347f58d9c8229aac7d2a9d70261
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97a269fd5ed0e30e648e2dade210ab0238c8d759
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246698"
 ---
 # <a name="list-modules-command"></a>모듈 목록 표시 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모듈 목록 표시 명령](https://docs.microsoft.com/visualstudio/ide/reference/list-modules-command)입니다.  
-  
   
 현재 프로세스에 대한 모듈을 나열합니다.  
   

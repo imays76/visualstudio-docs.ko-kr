@@ -1,7 +1,7 @@
 ---
 title: 웹 사이트 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 128c5d94bbb508e6cf168f3de5662ba88b9d6193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4272c6a89864f72d4f823b53283d9d18fafaae0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263811"
 ---
 # <a name="web-site-support"></a>웹 사이트 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [웹 사이트 지원](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support)합니다.  
-  
 웹 사이트 프로젝트 시스템은 웹 프로젝트를 만드는 프로젝트 시스템. 웹 프로젝트는 웹 응용 프로그램에 만듭니다. 웹 사이트 프로젝트 코드를 연결 된 각 웹 페이지에 대 한 하나의 실행 파일을 생성 합니다. 추가 파일 /App_Code 폴더의 소스 코드 파일에서 생성 됩니다.  
   
  웹 사이트 프로젝트 시스템은 기존 프로젝트 시스템에 템플릿 및 등록 특성을 추가 하 여 생성 됩니다. 이러한 특성 중 하나는 언어에 대 한 IntelliSense 공급자를 선택합니다. IntelliSense 공급자 구현 참조를 처리 하 고 캐시 되지 않은 스마트 웹 페이지를 요청 하는 경우 언어 컴파일러를 호출 합니다.  

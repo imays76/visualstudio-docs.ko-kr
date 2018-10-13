@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 중괄호 일치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3a2267805681b092c7a48537e72e5f0ca0b3ecb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7742b54b69cea8d1f814a4ac4fd8cc190dfe2b99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265059"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>레거시 언어 서비스의 중괄호 일치
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 중괄호 일치](https://docs.microsoft.com/visualstudio/extensibility/internals/brace-matching-in-a-legacy-language-service)합니다.  
-  
 중괄호 일치 괄호와 중괄호와 같이 함께 수행 해야 하는 언어 요소를 추적 하는 개발자는 데 도움이 됩니다. 개발자가 닫는 중괄호를 여는 중괄호 강조 표시 됩니다.  
   
  쌍 및 삼중 쌍 이라는 두 가지 또는 세 개의 동시 발생 요소를 일치 시킬 수 있습니다. 삼중 쌍은 세 개의 동시 발생 요소의 집합입니다. 예를 들어 C#에서 `foreach` 문을 forms 3: "`foreach()`","`{`", 및 "`}`"입니다. 세 요소 모두에 닫는 중괄호를 입력할 때 강조 표시 됩니다.  

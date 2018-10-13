@@ -1,7 +1,7 @@
 ---
 title: 호출자/호출 수신자 뷰 - 계측 데이터 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9f00ecf2bf9e99fe2dc40c9a849fa6bbf576bc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc820808db428ec1b4919c5d65ca9e12091a987e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552469"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250551"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>호출자/호출 수신자 뷰 - 계측 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [호출자-호출 수신자 뷰-계측 데이터](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-instrumentation-data)입니다.  
-  
 호출자/호출 수신자 뷰는 호출 트리에서 선택한 함수와 해당 부모 및 자식 함수에 대한 프로파일링 정보를 표시합니다. 호출자/호출 수신자 뷰에는 세 개의 표가 포함되어 있습니다.  
   
  **현재 함수**는 가운데 표에 표시되며, 선택한 함수에 대한 프로파일링 정보를 보여 줍니다. 값에는 해당 함수에 대한 모든 호출이 포함됩니다.  

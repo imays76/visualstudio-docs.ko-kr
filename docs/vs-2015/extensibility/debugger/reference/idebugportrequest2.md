@@ -1,7 +1,7 @@
 ---
 title: IDebugPortRequest2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7873d3d73556bae671cc1150525eb3d08a136e27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 211871e0a80e3d9d5f96c4d5735bb18bc1fef213
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557243"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254334"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugPortRequest2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportrequest2)합니다.  
-  
 이 인터페이스는 포트를 설명합니다. 이 설명은 포트 공급자에 포트를 추가할 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  

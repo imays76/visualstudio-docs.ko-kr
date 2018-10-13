@@ -1,7 +1,7 @@
 ---
 title: '연습: 서명 도움말 표시 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24c3eea821209485b5d57335c0c948cae92b4a20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0642b798668e24e7ba1e6595ab3c8ea6dba6885e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550341"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247925"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>연습: 서명 도움말 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 서명 도움말 표시](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-signature-help)합니다.  
-  
 서명 도움말 (라고도 *매개 변수 정보*) 매개 변수 목록 시작 문자 (일반적으로 여는 괄호)를 입력 하는 경우 도구 설명에 메서드의 시그니처를 표시 합니다. 매개 변수 및 매개 변수 구분 기호 (쉼표)를 입력 한 도구 설명 굵게 표시 된 다음 매개 변수를 표시 하도록 업데이트 됩니다. 언어 서비스의 컨텍스트에서 시그니처 도움말를 정의할 수 있습니다 또는 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 바로 해당 형식에 대 한 시그니처 도움말을 표시할 수 있습니다 또는 기존 콘텐츠 형식 (예: "text")에 대 한 시그니처 도움말를 표시할 수 있습니다. 이 연습에서는 "text" 콘텐츠 형식에 대 한 시그니처 도움말을 표시 하는 방법을 보여 줍니다.  
   
  예를 들어, 특정 문자를 입력 하 여 서명 도움말 트리거됩니다 일반적으로 "(" (괄호) 고 예를 들어 다른 문자를 입력 하 여 해제 ")" (닫는 괄호). 키 입력에 대 한 명령 처리기를 사용 하 여 문자를 입력 하 여 트리거되는 IntelliSense 기능을 구현할 수 있습니다 (합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스) 및 구현 하는 처리기 공급자는 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 인터페이스입니다. 시그니처 도움말에 참여 하는 서명의 목록인 시그니처 도움말 원본을 만들려면 구현 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> 인터페이스와 구현 하는 소스 공급자는 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> 인터페이스입니다. 공급자 프레임 워크 MEF (Managed Extensibility) 구성 요소 이며 서비스 및 브로커, 예를 들어, 원본 및 컨트롤러 클래스 내보내기 및 가져오기에 대 한 책임이 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, 텍스트 버퍼에서 탐색할 수 있는 및 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, 시그니처 도움말 세션의 트리거.  
@@ -40,7 +38,7 @@ ms.locfileid: "47550341"
   
 #### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `SignatureHelpTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `SignatureHelpTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -63,7 +61,7 @@ ms.locfileid: "47550341"
   
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>시그니처 도움말 서명 및 매개 변수를 구현 하려면  
   
-1.  클래스 파일을 추가 하 고 이름을 `SignatureHelpSource`입니다.  
+1.  클래스 파일을 추가하고 이름을 `SignatureHelpSource`로 지정합니다.  
   
 2.  다음 가져오기를 추가 합니다.  
   

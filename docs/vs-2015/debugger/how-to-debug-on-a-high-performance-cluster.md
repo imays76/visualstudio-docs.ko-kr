@@ -1,7 +1,7 @@
 ---
 title: '방법: 고성능 클러스터에서 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ce148ab317b14aad6cd1e2c48a6f9245c81df98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5d57e1ff9a4ab082698b1c5d31b09a668cdc1c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262552"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>방법: 고성능 클러스터에서 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법:는 고성능 클러스터에서 디버그](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-on-a-high-performance-cluster)합니다.  
-  
 고성능 클러스터에서 다중 처리 프로그램을 디버깅하는 방법은 원격 컴퓨터에서 일반적인 프로그램을 디버깅하는 방법과 비슷합니다. 그러나 여기에는 몇 가지 추가로 고려해야 할 사항이 있습니다. 일반적인 원격 설치 요구 사항에 대 한 참조 [원격 디버깅](../debugger/remote-debugging.md)합니다.  
   
  고성능 클러스터에서 디버깅하는 경우 원격 디버깅에 제공되는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버깅 창과 기술을 모두 사용할 수 있습니다. 그러나 디버깅을 원격으로 수행하므로 외부 콘솔 창은 사용할 수 없습니다.  

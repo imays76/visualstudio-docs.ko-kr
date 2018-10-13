@@ -1,7 +1,7 @@
 ---
 title: 내 확장 페이지, 프로젝트 디자이너(Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8d93cc4fae950f94db0d750257bc74d5f1ad050
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4f9e4eee1b0613906c3cc08227a4f2157fb296
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552529"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227054"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>프로젝트 디자이너, My 확장 페이지(Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [내 확장 페이지, 프로젝트 디자이너 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)합니다.  
-  
   
 **프로젝트 디자이너**의 **내 확장** 페이지를 사용하여 프로젝트에서 `My` 네임스페이스 확장을 관리합니다. `My` 네임스페이스 확장을 사용하면 `My` 네임스페이스를 사용자 지정하여 고유한 사용자 지정 멤버를 추가할 수 있습니다. 사용자 지정 `My` 네임스페이스 확장을 만드는 방법에 대한 내용은 [Visual Basic에서 내 네임스페이스 확장](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e)을 참조하세요.  
   

@@ -1,7 +1,7 @@
 ---
 title: 기호 로드 정보 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1a8b644bf56210a0484957a444ef32de23dc3d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8caded198e3eeaa324d439d4d8756c20f054b022
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218766"
 ---
 # <a name="symbol-load-information-dialog-box"></a>기호 로드 정보 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [기호 로드 정보 대화 상자](https://docs.microsoft.com/visualstudio/debugger/symbol-load-information-dialog-box)합니다.  
-  
 **기호 로드 정보** 대화 상자에서 마우스 오른쪽 단추로 클릭 하면 열립니다는 **모듈** 창 선택 **기호 로드 정보**합니다.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  

@@ -1,7 +1,7 @@
 ---
 title: 이동성 경고 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 804c10b83f0fd648b11d0d50b9315225a6441ee6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e73864234604f22ec15340740442505fec3e078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270077"
 ---
 # <a name="mobility-warnings"></a>이동성 경고
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [이동성 경고](https://docs.microsoft.com/visualstudio/code-quality/mobility-warnings)합니다.  
-  
 이동성 경고 효율적인 전원 사용을 지원 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

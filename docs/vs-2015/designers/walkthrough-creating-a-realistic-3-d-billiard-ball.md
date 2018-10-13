@@ -1,7 +1,7 @@
 ---
 title: '연습: 사실적인 3차원 당구공 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f20907e33ba8a0f077c0d68c6fbfebf2fd1d0b44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303d826a22ff67ec499fcd4e8d59d6a7819a822d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274120"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>연습: 사실적인 3차원 당구공 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 사실적인 3 차원 당구 공 만들기](https://docs.microsoft.com/visualstudio/designers/walkthrough-creating-a-realistic-3-d-billiard-ball)합니다.  
-  
 이 연습에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 셰이더 디자이너 및 이미지 편집기를 사용하여 사실적인 3차원 당구공을 만드는 방법을 보여 줍니다. 당구공의 3차원 모양을 만들려면 여러 셰이더 기술을 적절한 질감 리소스와 결합합니다.  
   
  이 문서는 다음 활동을 보여 줍니다.  

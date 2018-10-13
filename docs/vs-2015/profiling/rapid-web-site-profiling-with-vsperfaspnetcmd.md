@@ -1,7 +1,7 @@
 ---
 title: VSPerfASPNETCmd를 사용한 빠른 웹 사이트 프로파일링 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16bef2afa14d992300649d4ec9ffd9752def099
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 5911a574bb10e284cfd9aa2a58cff9fddba5c7ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247665"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd를 사용한 빠른 웹 사이트 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [신속 하 게 웹 사이트 프로 파일링 VSPerfASPNETCmd를 사용한](https://docs.microsoft.com/visualstudio/profiling/rapid-web-site-profiling-with-vsperfaspnetcmd)합니다.  
-  
 **VSPerfASPNETCmd** 명령줄 도구를 사용하면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램을 쉽게 프로파일링할 수 있습니다. [VSPerfCmd](../profiling/vsperfcmd.md) 명령줄 도구와 비교하면 옵션 수가 더 적고, 환경 변수를 설정할 필요가 없으며, 컴퓨터를 다시 부팅하지 않아도 됩니다. 독립 실행형 프로파일러를 사용하여 프로파일링할 때는 기본적으로 **VSPerfASPNETCmd**를 사용합니다. 자세한 내용은 [방법: 독립 실행형 프로파일러 설치](../profiling/how-to-install-the-stand-alone-profiler.md)를 참조하세요.  
   
 > [!NOTE]

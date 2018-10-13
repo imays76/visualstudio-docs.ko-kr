@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 디자인 하위 유형 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b4d9f77f4ea1a302efb38bb75ebecd2ee54c1f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549474"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243825"
 ---
 # <a name="project-subtypes-design"></a>프로젝트 하위 형식 디자인
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 하위 형식 디자인](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes-design)합니다.  
-  
 Microsoft Build Engine (MSBuild)을 기준으로 프로젝트를 확장 하는 Vspackage를 사용 하는 프로젝트 하위 형식 있습니다. 집계를 사용 하 여 다시 사용할 수 있습니다에서 구현 되는 관리 되는 코어 프로젝트 시스템의 대량 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 아직 여전히 특정 시나리오에 대 한 동작을 사용자 지정 합니다.  
   
  다음 항목에는 기본 디자인 및 구현 프로젝트 하위 형식의 세부 정보:  

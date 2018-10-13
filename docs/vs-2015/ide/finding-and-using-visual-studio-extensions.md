@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 확장 찾기 및 사용 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e05d9cf092d3f6cca3d7ef674c3f2bf137a0896f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268179"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio 확장명 찾기 및 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [찾기 및 Visual Studio Extensions를 사용 하 여](https://docs.microsoft.com/visualstudio/ide/finding-and-using-visual-studio-extensions)입니다.  
-  
 Visual Studio 확장은 Visual Studio 내에서 실행되고 새로운 기능 또는 향상된 Visual Studio 기능을 제공하는 코드 패키지입니다. Visual Studio 확장에 대한 자세한 정보는 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)에서 찾을 수 있습니다.  
   
  **확장 및 업데이트** 대화 상자를 사용하여 웹 사이트 및 다른 위치에서 Visual Studio 확장과 샘플을 설치를 할 수 있으며 사용, 사용 안 함, 업데이트 또는 제거를 할 수 있습니다. **도구 / 확장 및 업데이트**로 이동하거나 **빠른 실행** 창에 **확장** 을 입력합니다. 대화 상자에는 설치된 샘플 및 확장의 업데이트도 표시됩니다. 확장을 웹 사이트에서 다운로드하거나 다른 개발자에게서 얻을 수도 있습니다.  

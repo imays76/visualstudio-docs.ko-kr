@@ -1,7 +1,7 @@
 ---
 title: 시작 페이지 사용자 지정 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b217c098f34240ddc4505821ae8446e4244605da
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 052f05c3485e9ecdfbfe74b6a142c44c7b0699ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592803"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239787"
 ---
 # <a name="creating-a-custom-start-page"></a>사용자 지정 시작 페이지 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 시작 페이지 만들기](https://docs.microsoft.com/visualstudio/extensibility/creating-a-custom-start-page)합니다.  
-  
 에 설명 된 대로 시작 페이지 프로젝트 템플릿을 사용 하 여 사용자 지정 시작 페이지를 만들 수 없으면 [시작 페이지](../misc/creating-your-own-start-page.md),이 문서의 단계를 수행 하 여 수동으로 만들 수 있습니다.  
   
 ## <a name="creating-a-blank-start-page"></a>빈 시작 페이지 만들기  

@@ -1,7 +1,7 @@
 ---
 title: 'CA1815: 때 equals를 재정의 하 고 값 형식에서 equals 또는 같음 연산자 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 09f9ef7ecb9dce361c2a060501e18fc4b36dd18a
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 68347f007cb0d3c6151db1e4a1f4dd151be80aea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47592307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252696"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1815: 값 형식에서 equals 또는 같음 연산자 및 equals를 재정의](https://docs.microsoft.com/visualstudio/code-quality/ca1815-override-equals-and-operator-equals-on-value-types)합니다.
-
 |||
 |-|-|
 |TypeName|OverrideEqualsAndOperatorEqualsOnValueTypes|

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 스토어 앱 실행 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 697ee8f4a3c9b796e5270e2a48a9786b657b3636
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f16b0d6dc3d1f4f37119826d841aaef1cd8871b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249530"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Visual Studio에서 스토어 앱 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 스토어 앱 실행](https://docs.microsoft.com/visualstudio/debugger/run-store-apps-from-visual-studio)합니다.  
-  
 스토어 앱은 광범위한 장치에서 실행되고, Visual Studio에서는 이러한 앱을 실행하고 앱과 상호 작용할 수 있는 다양한 방법을 제공합니다. "F5" 기능이 향상되어 개발하는 동안 앱을 쉽게 디버깅하고 프로파일링 및 테스트할 수 있게 되었습니다.  
   
  ![디버깅 시작 및 대상 선택](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")  

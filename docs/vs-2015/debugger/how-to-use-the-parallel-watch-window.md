@@ -1,7 +1,7 @@
 ---
 title: '방법: 병렬 조사식 창 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88c4efe15e2afd3f4158b93cf8701109cd3902b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553512"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249433"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>방법: 병렬 조사식 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [병렬 스레드에서 변수에 조사식 설정](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-parallel-watch-window)합니다.  
-  
 병렬 조사식 창에서 한 식이 여러 스레드에서 보유하는 값을 동시에 표시할 수 있습니다. 각 행은 응용 프로그램에서 실행 중인 스레드를 나타냅니다. 스레드는 여러 행에 나타날 수도 있습니다. 보다 구체적으로 말하자면, 각 행은 함수 시그니처가 현재 스택 프레임의 함수와 일치하는 함수 호출을 나타냅니다. 열에 있는 항목의 정렬, 순서 변경, 제거 및 그룹화를 수행할 수 있습니다. 스레드에 플래그를 지정하거나 해제할 수 있으며 스레드를 중지(일시 중단)하거나 재개(다시 시작)할 수 있습니다. 다음 열에 표시 되는 **병렬 조사식** 창:  
   
 -   특히 주의할 스레드를 표시할 수 있는 플래그 열  

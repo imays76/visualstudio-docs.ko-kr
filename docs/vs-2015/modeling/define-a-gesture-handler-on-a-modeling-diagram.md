@@ -1,7 +1,7 @@
 ---
 title: 모델링 다이어그램의 제스처 처리기를 정의 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248086"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>모델링 다이어그램의 제스처 처리기 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모델링 다이어그램의 제스처 처리기 정의](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram)합니다.  
-  
 Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어그램으로 끌 때 수행되는 명령을 정의할 수 있습니다. 이러한 확장을[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension)로 패키징하고 다른 Visual Studio 사용자에게 배포할 수 있습니다.  
   
  끌려는 요소 형식 및 다이어그램 형식에 대한 기본 제공 동작이 이미 있으면 이 동작에 추가하거나 이 동작을 재정의하지 못할 수 있습니다.  
@@ -242,13 +240,13 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
   
 1.  **F5**키를 누르거나, **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 시작됩니다.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다.  
   
-     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 시작 되지 않습니다.  
+     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 가 시작되지 않는 경우:  
   
     -   프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.  
   
-    -   솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 속성을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. 확인 문자열을 **시작 외부 프로그램** 필드의 전체 경로 이름에는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 일반적으로:  
+    -   솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 속성을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. 시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름인지 확인합니다.  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -327,7 +325,7 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
      소스 개체가 UML 모델 탐색기 또는 다른 UML 다이어그램에서 끌어온 UML 요소 이면 가리킵니다 [가져올 모델 IDataObject에서에서 UML 요소](../modeling/get-uml-model-elements-from-idataobject.md)합니다.  
   
 ### <a name="writing-the-code-of-the-methods"></a>메서드 코드 작성  
- 읽기 모델을 업데이트 하는 코드를 작성 하는 방법에 대 한 자세한 내용은 참조 하세요. [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md)합니다.  
+ 모델을 읽고 업데이트하는 코드를 작성하는 방법에 대한 자세한 내용은 [Programming with the UML API](../modeling/programming-with-the-uml-api.md)을 참조하세요.  
   
  끌기 작업의 모델 정보에 액세스 하는 방법에 대 한 내용은 [가져올 모델 IDataObject에서에서 UML 요소](../modeling/get-uml-model-elements-from-idataobject.md)합니다.  
   

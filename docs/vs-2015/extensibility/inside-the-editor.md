@@ -1,7 +1,7 @@
 ---
 title: 편집기 내부에서 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0333c6e25aca7650fbdc3c09709e282bfd97b868
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55bd1e82af3e87fc7845bd122794888a24ca7f02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251968"
 ---
 # <a name="inside-the-editor"></a>편집기 기본 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집기 내에서](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)합니다.  
-  
 편집기는 텍스트 보기 및 사용자 인터페이스에서 모델 별도 텍스트 편집기를 유지 하도록 설계 된 다른 하위 시스템의 숫자로 구성 됩니다.  
   
  이 섹션에서는 편집기의 다양 한 측면을 설명합니다.  

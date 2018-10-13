@@ -1,7 +1,7 @@
 ---
 title: '연습: 인라인 작업 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 727c8cec7309952189558d2f4b7aebc8ec99738d
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 265a83444ce495452767b217a84072bfc17377d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250200"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>연습: 인라인 작업 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 인라인 작업 만들기](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-creating-an-inline-task)합니다.  
-  
   
 MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 자세한 내용은 [인라인 작업](../msbuild/msbuild-inline-tasks.md)을 참조하세요.  
   

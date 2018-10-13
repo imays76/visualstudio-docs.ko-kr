@@ -1,7 +1,7 @@
 ---
 title: Xamarin 환경 확인 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,20 +10,18 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6c3d629f4b5a634c1dbc2c55f44db1db144e9a81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66428a7f06aee5449191a13e2712ae119daffb0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243494"
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin 환경 확인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Xamarin 환경 확인](https://docs.microsoft.com/visualstudio/cross-platform/verify-your-xamarin-environment)합니다.  
   
-  
-설치 관리자가 완료되면( [Setup and install](../cross-platform/setup-and-install.md)참조) 몇 분 동안 Xamarin 개발을 경험할 모든 준비가 되었는지 확인하세요.  
+설치 관리자가 완료되면([설정 및 설치](../cross-platform/setup-and-install.md) 참조) 몇 분 동안 Xamarin 개발을 경험할 모든 준비가 되었는지 확인하세요.  
   
  이러한 확인을 완료한 후에는 다음 연습 중 하나 또는 두 연습을 모두 진행할 수 있습니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 규칙에는 모델 내부의 변경 내용 전파 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2e0b710d96d5da7b31ac2fce7542b0c981fe1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab05923a02176f4c0d8aa30ac9d26b0e41868396
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222718"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>규칙으로 모델 내부의 변경 내용 전파
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [규칙이 전파 변경 내용을 내에서 모델](https://docs.microsoft.com/visualstudio/modeling/rules-propagate-changes-within-the-model)합니다.  
-  
 Visualization and Modeling SDK (VMSDK)에서 다른 요소에서 변경 전파 하는 저장소 규칙을 만들 수 있습니다. 저장소의 모든 요소에는 변경이 발생 하는 경우 규칙은 가장 바깥쪽 트랜잭션이 커밋될 때 일반적으로 실행할 예약 됩니다. 다른 유형의 여러 가지 요소를 추가 또는 삭제와 같은 이벤트에 대 한 규칙이 있습니다. 요소, 모양 또는 다이어그램의 특정 형식에 규칙을 연결할 수 있습니다. 많은 기본 제공 기능 규칙에 의해 정의 됩니다: 다이어그램 모델 변경 될 때 업데이트 되는 규칙을 확인 하는 예를 들어, 합니다. 사용자 고유의 규칙을 추가 하 여 도메인 특정 언어를 사용자 지정할 수 있습니다.  
   
  저장소 규칙 저장소-즉, 내부 변경 내용 전파 변경 내용을 모델 요소, 관계, 모양 또는 커넥터 및 해당 도메인 속성에 특히 유용 합니다. 사용자는 실행 취소 또는 다시 실행 명령을 호출 하는 경우 규칙이 실행 되지 않습니다. 대신 트랜잭션 관리자 저장소 콘텐츠는 올바른 상태로 복원할 수 있습니다. Store 외부의 리소스에 대 한 변경 내용을 전파 하려는 경우 이벤트 저장을 사용 합니다. 자세한 내용은 [이벤트 처리기 전파 변경 외부 모델](../modeling/event-handlers-propagate-changes-outside-the-model.md)합니다.  

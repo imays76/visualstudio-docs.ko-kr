@@ -1,7 +1,7 @@
 ---
 title: 배포 후 문제 진단 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7979cdde9ec6411db83753b0006a2f55c4afb4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270597"
 ---
 # <a name="diagnose-problems-after-deployment"></a>배포 후 문제 진단
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [배포 후 문제 진단](https://docs.microsoft.com/visualstudio/debugger/diagnose-problems-after-deployment)합니다.  
-  
 IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하려면 Visual Studio에서 IntelliTrace 로그를 디버그하는 데 필요한 올바른 소스 파일과 기호 파일을 자동으로 찾을 수 있도록 릴리스에 빌드 정보를 포함합니다.  
   
  Microsoft Monitoring Agent를 사용하여 IntelliTrace를 제어하는 경우에는 웹 서버에서 응용 프로그램 성능 모니터링도 설정해야 합니다. 이 모니터링을 통해, 앱이 실행되는 동안 진단 이벤트가 기록되고 해당 이벤트가 IntelliTrace 로그 파일에 저장됩니다. 그런 다음 Visual Studio Enterprise(Professional 또는 Community Edition 아님)에서 이벤트를 살펴보고, 이벤트가 발생한 코드로 이동하고, 해당 시점에 기록된 값을 살펴보고, 실행된 코드의 이전이나 이후 위치로 이동할 수 있습니다. 문제를 찾아 수정한 후에는 이 사이클을 반복하여 향후 발생할 수 있는 문제를 조기에 찾아 빠르게 해결할 수 있도록 릴리스를 빌드, 릴리스, 모니터링합니다.  
@@ -63,7 +61,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
   
      ![빌드 정의 TFS 2013에 기호 경로 설정](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     기호에 대 한 자세한 내용은 참조 하세요 [기호 데이터 게시](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)합니다.  
+     기호에 대한 자세한 내용은 [기호 데이터 게시](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)를 참조하세요.  
   
 4.  이 MSBuild 인수를 추가하여 TFS 및 기호 위치를 빌드 매니페스트 파일에 포함합니다.  
   
@@ -156,7 +154,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
  다른 방법을 사용하여 앱을 배포할 경우에는 빌드 매니페스트가 "*ProjectName*.BuildInfo.config"에서 "BuildInfo.config"라는 이름으로 바뀌어 웹 서버에서 앱의 Web.config 파일과 같은 폴더에 저장되었는지 확인해야 합니다.  
   
 ## <a name="step-3-monitor-your-app"></a>3단계: 앱 모니터링  
- 앱의 문제를 모니터링하고 진단 이벤트를 기록하고 해당 이벤트를 IntelliTrace 로그 파일에 저장할 수 있도록 웹 서버에 응용 프로그램 성능 모니터링을 설정합니다. 참조 [배포 문제에 대해 릴리스 모니터링](../debugger/using-the-intellitrace-stand-alone-collector.md)합니다.  
+ 앱의 문제를 모니터링하고 진단 이벤트를 기록하고 해당 이벤트를 IntelliTrace 로그 파일에 저장할 수 있도록 웹 서버에 응용 프로그램 성능 모니터링을 설정합니다. [배포 문제에 대해 릴리스 모니터링](../debugger/using-the-intellitrace-stand-alone-collector.md)을 참조하세요.  
   
 ##  <a name="InvestigateEvents"></a> 4 단계: 문제 찾기  
  IntelliTrace를 사용하여 기록된 이벤트를 검토하고 코드를 디버그하려면 개발 컴퓨터 또는 다른 컴퓨터에 Visual Studio Enterprise가 있어야 합니다. 문제 진단을 도와주는 CodeLens, 디버거 지도 및 코드 맵 등의 도구를 사용할 수도 있습니다.  
@@ -209,7 +207,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
   
      ![성능 이벤트에서 응용 프로그램 코드 이동](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
-     이제 다른 기록된 값, 호출 스택을 검토하고 코드를 단계적으로 실행하거나 **IntelliTrace** 창을 사용하여 이 성능 이벤트 동안 호출된 [다른 메서드 사이에 "in time"을 뒤나 앞으로 이동](../debugger/intellitrace.md) 합니다. [기타 모든 이벤트 및 IntelliTrace 로그의 정보는 무엇입니까? ](../debugger/using-saved-intellitrace-data.md) [무엇 하면 여기에서?](#WhatElse) [성능 이벤트에 대 한 자세히 알고 싶으십니까?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     이제 다른 기록된 값, 호출 스택을 검토하고 코드를 단계적으로 실행하거나 **IntelliTrace** 창을 사용하여 이 성능 이벤트 동안 호출된 [다른 메서드 사이에 "in time"을 뒤나 앞으로 이동](../debugger/intellitrace.md) 합니다. [IntelliTrace 로그에 포함되어 있는 기타 모든 이벤트 및 정보는 무엇인가요?](../debugger/using-saved-intellitrace-data.md)[What else can I do from here?](#WhatElse)[성능 이벤트에 대한 더 자세히 알고 싶으세요?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
   
 ### <a name="diagnose-an-exception"></a>예외 진단  
   
@@ -227,7 +225,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
   
 ###  <a name="WhatElse"></a> 여기에서 다른 어떻게 해야 합니까?  
   
--   [이 코드에 대 한 자세한 내용을 보려면](../ide/find-code-changes-and-other-history-with-codelens.md)합니다. 편집기에서 CodeLens 표시기를 사용하여(편집기를 종료하지 않고) 이 코드에 대한 참조, 변경 기록, 관련 버그, 작업 항목, 코드 검토 또는 단위 테스트를 찾아 볼 수 있습니다.  
+-   [이 코드에 대한 자세한 정보를 알아봅니다](../ide/find-code-changes-and-other-history-with-codelens.md). 편집기에서 CodeLens 표시기를 사용하여(편집기를 종료하지 않고) 이 코드에 대한 참조, 변경 기록, 관련 버그, 작업 항목, 코드 검토 또는 단위 테스트를 찾아 볼 수 있습니다.  
   
      ![CodeLens &#45; 이 코드에 대 한 참조를 보려면](../debugger/media/ffr-itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
   
@@ -311,7 +309,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
   
      빌드 시스템( `"TeamBuild"` 또는 `"MSBuild"`) 및 다음의 필수 속성에 대한 정보입니다.  
   
-    -   **BuildLabel** (TeamBuild용): 빌드 이름 및 번호입니다. 이 레이블은 배포 이벤트의 이름으로도 사용됩니다. 빌드 번호에 대 한 자세한 내용은 참조 하세요. [사용 하 여 빌드 번호 완료 된 빌드에 의미 있는 이름을 부여](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)합니다.  
+    -   **BuildLabel** (TeamBuild용): 빌드 이름 및 번호입니다. 이 레이블은 배포 이벤트의 이름으로도 사용됩니다. 빌드 번호에 대한 자세한 내용은 [빌드 번호를 사용하여 완료된 빌드에 의미 있는 이름 지정](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)을 참조하세요.  
   
     -   **SymbolPath** (권장): 세미콜론으로 구분한 기호(PDB 파일) 위치 URI 목록입니다. 이러한 URI는 URL 또는 UNC일 수 있습니다. 이 정보를 통해 Visual Studio에서는 사용자가 디버깅을 손쉽게 할 수 있도록 일치하는 기호를 쉽게 찾을 수 있습니다.  
   
@@ -371,7 +369,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
      ![소스 제어에서 열기 &#45; 마이그레이션된](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 ####  <a name="WhatWorkspace"></a> Q: 작업 영역 이란?  
- **A:** 프로그램 [작업 영역은 소스 사본을 저장](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) 개발 하 고이 개별적으로 테스트 하기 전에 확인 작업의 수 있도록 합니다. 발견된 솔루션 또는 프로젝트에 특별히 매핑된 작업 영역이 아직 없는 경우 Visual Studio는 사용 가능한 작업 영역을 선택하거나 기본 작업 영역 이름으로 사용자 컴퓨터 이름을 사용하는 새 작업 영역을 만들 것인지 묻는 메시지를 표시합니다.  
+ **A:** [작업 영역은 소스 사본을 저장](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) 하므로 작업을 체크 인하기 전에 개별적으로 개발하고 테스트할 수 있습니다. 발견된 솔루션 또는 프로젝트에 특별히 매핑된 작업 영역이 아직 없는 경우 Visual Studio는 사용 가능한 작업 영역을 선택하거나 기본 작업 영역 이름으로 사용자 컴퓨터 이름을 사용하는 새 작업 영역을 만들 것인지 묻는 메시지를 표시합니다.  
   
 ####  <a name="UntrustedSymbols"></a> 신뢰할 수 없는 기호에 대 한이 메시지는 q: 하나요?  
  ![신뢰할 수 없는 기호 경로 사용 하 여 디버그? ](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

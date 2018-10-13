@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::IsReadOnly | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 310b5609b999cd21fae73f31085c258c762e2917
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80fb398202aacc02ad97ebce294a7fd6d3ccf919
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253174"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugObject::IsReadOnly](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject-isreadonly)합니다.  
-  
 이 개체가 읽기 전용인 경우를 결정 합니다.  
   
 ## <a name="syntax"></a>구문  

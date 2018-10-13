@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7e85e0d2deb60b505345dfe609f83efe38c638a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24e4a6c4ac68eba5694e89a85d94e68689f58761
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557456"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257266"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDiaSymbol](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol)합니다.  
-  
 기호 인스턴스의 속성을 설명합니다.  
   
 ## <a name="syntax"></a>구문  

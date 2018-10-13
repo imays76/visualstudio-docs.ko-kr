@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentText2::GetText | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8e19bebca0f2c1e7405a1ebb432d1328dafa552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 257d15d1382b6a4765a45d6a04daf51dec3ee04a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248140"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugDocumentText2::GetText](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttext2-gettext)합니다.  
-  
 문서의 지정된 된 위치에서 텍스트를 검색합니다.  
   
 ## <a name="syntax"></a>구문  

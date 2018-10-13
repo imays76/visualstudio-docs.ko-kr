@@ -1,7 +1,7 @@
 ---
 title: MSBuild 잘 알려진 항목 메타데이터 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02464cd6c7116da988903d8a8f19f36c900595f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8d83c6eaf441b72bc3774f4117653826da47613
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234054"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 잘 알려인 항목 메타데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 잘 알려진 항목 메타 데이터](https://docs.microsoft.com/visualstudio/msbuild/msbuild-well-known-item-metadata)입니다.  
-  
   
 다음 표에서는 만들어질 때 모든 항목에 할당된 메타데이터에 대해 설명합니다. 각 예제에서 프로젝트에 파일 `C:\MyProject\Source\Program.cs`를 포함하는 데 다음과 같은 항목 선언이 사용되었습니다.  
   

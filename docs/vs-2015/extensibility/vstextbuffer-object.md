@@ -1,7 +1,7 @@
 ---
 title: VSTextBuffer 개체 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 897604c39f64df2208b3b0e17da2c0ddfe8cc2ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3466e52a980c9a8013491002fd3e005c9b98546
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541359"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267698"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSTextBuffer 개체](https://docs.microsoft.com/visualstudio/extensibility/vstextbuffer-object)합니다.  
-  
 텍스트 버퍼 개체는 일반적으로 파일을 사용 하 여 연결 된 유니코드 문자의 스트림을 나타냅니다. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 마법사의 경우와 같이 핵심 편집기의 컨텍스트 외부에서 개체를 사용할 수 있습니다.  
   
  다음 표에서의 인터페이스를 보여 줍니다. `VSTextBuffer`합니다.  

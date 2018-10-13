@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 파일에 데이터 저장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: adecbedc7f8a7ca90c88548b4b4ab6f7b826f2ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3b46bffab25420b89ddb16c5eccfa64784d66e82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542861"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274445"
 ---
 # <a name="saving-data-in-project-files"></a>프로젝트 파일에 데이터 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 파일에서 데이터 저장](https://docs.microsoft.com/visualstudio/extensibility/saving-data-in-project-files)합니다.  
-  
 프로젝트 하위 형식 저장 하 고 프로젝트 파일에서 하위 형식의 특정 데이터를 검색할 수 있습니다. 관리 패키지 프레임 워크 (MPF)는이 작업을 수행 하는 두 가지 인터페이스를 제공 합니다.  
   
 -   합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 인터페이스의 액세스 속성 값을 허용 합니다 **MSBuild** 프로젝트 파일의 섹션입니다. 제공 하는 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 로드 하거나 저장 된 사용자가 관련된 데이터를 빌드할 때마다 사용자가 호출할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 개발 하는 동안 시스템 유효성 검사 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b0d65d99cf99c7f1468a0bf596eb687f931b5d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33d5de340455e5e0f6a39dd9ce470d2e96327216
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262186"
 ---
 # <a name="validate-your-system-during-development"></a>개발하는 동안 시스템 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [개발 하는 동안 시스템 유효성 검사](https://docs.microsoft.com/visualstudio/modeling/validate-your-system-during-development)합니다.  
-  
 Visual Studio에서는 소프트웨어와 사용자 요구 사항 및 시스템 아키텍처의 일관성을 유지할 수 있습니다.  
   
  이러한 각 기능을 지원하는 Visual Studio의 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)를 참조하세요.  

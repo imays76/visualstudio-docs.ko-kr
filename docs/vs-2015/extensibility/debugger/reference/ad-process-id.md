@@ -1,7 +1,7 @@
 ---
 title: AD_PROCESS_ID | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93d50800f77705c24bdc2762be932161779372e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c573683ddde6199e8a9c0f1e8802547d286a7aa0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277487"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [AD_PROCESS_ID](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ad-process-id)합니다.  
-  
 시스템 ID 또는 GUID 일 수 있는 프로세스 ID를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  

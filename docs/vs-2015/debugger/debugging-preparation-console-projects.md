@@ -1,7 +1,7 @@
 ---
 title: '디버깅 준비: 콘솔 프로젝트 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be92c7a77791e1cb329392773d19ce9e794bed75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 870bbccafb25c855557bcd8c02a13d0218e5935a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265865"
 ---
 # <a name="debugging-preparation-console-projects"></a>디버깅 준비: 콘솔 프로젝트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버깅 준비: 콘솔 프로젝트](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-console-projects)합니다.  
-  
 콘솔 프로젝트 디버깅을 준비하는 과정은 Windows 프로젝트 디버깅을 준비하는 과정과 비슷하지만 몇 가지 사항을 추가로 고려해야 합니다. 자세한 내용은 [Windows Forms 응용 프로그램](../debugger/debugging-preparation-windows-forms-applications.md), 및 [디버깅 준비: Windows Forms 응용 프로그램 (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)합니다. 콘솔 응용 프로그램은 모두 비슷하므로 이 항목에서는 다음과 같은 프로젝트 형식을 다룹니다.  
   
 -   C# 콘솔 응용 프로그램  

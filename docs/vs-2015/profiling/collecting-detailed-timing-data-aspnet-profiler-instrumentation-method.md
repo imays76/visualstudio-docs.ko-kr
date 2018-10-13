@@ -1,7 +1,7 @@
 ---
 title: 명령줄에서 프로파일러 계측 방법을 사용하여 ASP.NET 웹 응용 프로그램에 대한 자세한 타이밍 데이터 수집 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eabd6d66079fc003bb87e867c0b5bb572c3bddc1
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: a1a6e53eb896a1e38033667620d07752294eb6a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592563"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255361"
 ---
 # <a name="collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>명령줄에서 프로파일러 계측 방법을 사용하여 ASP.NET 웹 응용 프로그램에 대한 자세한 타이밍 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [수집 자세한 타이밍 데이터를 ASP.NET 웹 응용 프로그램 사용에 대 한 명령줄에서 Profiler 계측 방법을](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line)합니다.  
-  
 이 섹션에서는 **VSPerfCmd** 명령줄 도구 및 계측 방법을 사용하여 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램에 대한 자세한 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.  
   
 > [!NOTE]

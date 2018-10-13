@@ -1,7 +1,7 @@
 ---
 title: 호출 계층 구조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 212109c37e1c85d5ddbc55413ab5a972edbfa337
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592738"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260086"
 ---
 # <a name="call-hierarchy"></a>호출 계층 구조
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [호출 계층 구조](https://docs.microsoft.com/visualstudio/ide/reference/call-hierarchy)합니다.  
-  
   
 호출 계층 구조를 사용하면 선택된 메서드, 속성 또는 생성자에서 모든 호출을 표시하여 코드를 탐색할 수 있습니다. 이렇게 하면 코드가 흐르는 방식을 더 잘 이해하고 코드에 대한 변경 사항의 영향을 평가할 수 있습니다. 메서드 호출의 복합 체인과 코드에 대한 추가적인 진입점을 보기 위해 여러 수주의 코드를 검토하여 모든 가능한 실행 경로를 탐색할 수 있습니다.  
   

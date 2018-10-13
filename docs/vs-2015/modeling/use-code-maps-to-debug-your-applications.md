@@ -1,12 +1,12 @@
 ---
 title: 코드 맵을 사용 하 여 응용 프로그램 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
 - Visual Studio Ultimate, navigating code visually
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f3dd19804a8e7749a976b5334ea691918eeae906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 354c99a9e11f7dbf86f93dab48f669c206323ce5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552621"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264007"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>코드 맵을 사용하여 응용 프로그램 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 맵을 사용 하 여 응용 프로그램 디버그](https://docs.microsoft.com/visualstudio/modeling/use-code-maps-to-debug-your-applications)합니다.  
-  
 코드 맵을 사용하면 많은 코드베이스, 익숙하지 않은 코드 또는 레거시 코드에서 길을 잃는 것을 방지할 수 있습니다. 예를 들어, 디버깅 시 여러 파일 및 프로젝트에서 코드를 확인해야 합니다. 코드 맵을 사용하여 코드를 탐색하고 코드 조각 간의 관계를 확인할 수 있습니다. 이렇게 하면 머릿속에서 이 코드를 추적하거나 별도 다이어그램을 그리지 않아도 됩니다. 따라서 작업이 중단된 경우 코드 맵을 통해 작업 중인 코드에 대한 기억을 상기시킬 수 있습니다.  
   
  ![코드 맵 &#45; 코드의 관계를 매핑할](../modeling/media/codemapstoryboardpaint.png "CodeMapStoryboardPaint")  

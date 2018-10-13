@@ -1,7 +1,7 @@
 ---
 title: '방법: 현재 세션 설정 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58f3b357b01c278c4deea6915716eef8795bf440
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cce4be924b1defcd840fe2f23019d27d22ebf59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257883"
 ---
 # <a name="how-to-set-the-current-session"></a>방법: 현재 세션 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 현재 세션 설정](https://docs.microsoft.com/visualstudio/profiling/how-to-set-the-current-session)합니다.  
-  
 **성능 탐색기**에서 여러 성능 세션을 열고 현재 세션으로 설정할 시각적 성능 세션 중 하나를 선택할 수 있습니다.  
   
  **요구 사항**  

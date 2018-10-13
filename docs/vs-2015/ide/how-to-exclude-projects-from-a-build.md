@@ -1,7 +1,7 @@
 ---
 title: '방법: 빌드에서 프로젝트 제외 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f0db1294bd7df2451c4ec496dc5064b122b73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1d7bfbf2b12113bd7d80a6dd6af19b4470e30b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554500"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242855"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>방법: 빌드에서 프로젝트 제외
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 빌드에서 프로젝트 제외](https://docs.microsoft.com/visualstudio/ide/how-to-exclude-projects-from-a-build)합니다.  
-  
 포함된 일부 프로젝트를 빌드하지 않고도 솔루션을 빌드할 수 있습니다. 예를 들어, 빌드를 중단하는 프로젝트를 제외할 수 있습니다. 그런 다음 문제를 조사하고 해결한 후 프로젝트를 빌드할 수 있습니다.  
   
  다음 방법을 사용하여 프로젝트를 제외할 수 있습니다.  

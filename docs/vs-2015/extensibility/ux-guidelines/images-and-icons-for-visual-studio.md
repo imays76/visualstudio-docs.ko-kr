@@ -1,7 +1,7 @@
 ---
 title: Visual Studio의 이미지 및 아이콘 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c443f59cb33bd73775b85244ca6811050c47b245
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a818bf9b1975692c220b2be82b2fed7ca97fad13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255751"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio의 이미지 및 아이콘
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio의 이미지 및 아이콘](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/images-and-icons-for-visual-studio)합니다.  
-  
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio에서 이미지 사용  
  아트 워크를 만들기 전에 하는 것이 좋습니다에 1,000 개 이상 이미지를 사용 합니다 [Visual Studio 이미지 라이브러리](http://www.microsoft.com/en-my/download/details.aspx?id=35825)합니다.  
   

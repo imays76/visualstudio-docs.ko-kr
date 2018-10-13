@@ -1,7 +1,7 @@
 ---
 title: .NET 메모리 할당 및 수명 데이터 수집 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 057bdb7073b1518e20ec0bee461d19478033e3b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245561"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>.NET 메모리 할당 및 수명 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [.NET 메모리 할당 및 수명 데이터 수집](https://docs.microsoft.com/visualstudio/profiling/collecting-dotnet-memory-allocation-and-lifetime-data)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구는 .NET 메모리 할당 및 개체 수명 데이터의 수집을 지원하므로, 응용 프로그램에서 메모리 관련 성능 문제를 감지하는 데 도움이 됩니다.  
   
 -   .NET 메모리 할당에 대한 데이터에는 할당된 .NET Framework 메모리 개체의 크기와 수가 포함됩니다.  

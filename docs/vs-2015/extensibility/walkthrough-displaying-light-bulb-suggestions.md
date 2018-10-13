@@ -1,7 +1,7 @@
 ---
 title: '연습: Displaying Light Bulb Suggestions | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c36dad27a4d4a5bff5381b99041f7221447645e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565164"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252501"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>연습: 밝은 전구 추천 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 밝은 전구 추천 표시](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-light-bulb-suggestions)합니다.  
-  
 전구는 Visual Studio 편집기에 사용 되는 일련의 작업을 표시 하도록 확장, 예를 들어 기본 제공 코드 분석기 및 코드 리팩터링에 의해 식별 된 문제에 대 한 수정 하는 아이콘입니다.  
   
  Visual C# 및 Visual Basic 편집기에서 작성 하 고 자동으로 전구를 표시 하는 작업을 사용 하 여 사용자 고유의 코드 분석기 패키지는.NET 컴파일러 플랫폼 ("Roslyn")을 사용할 수 있습니다. 자세한 내용은 다음을 참조하세요.  
@@ -50,7 +48,7 @@ ms.locfileid: "47565164"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>MEF(Managed Extensibility Framework) 프로젝트 만들기  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `LightBulbTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `LightBulbTest`로 지정합니다.  
   
 2.  추가 된 **편집기 분류자** 프로젝트 항목 템플릿을입니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -228,14 +226,14 @@ ms.locfileid: "47565164"
   
 1.  프로젝트에서 Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll 집합에 대 한 참조를 추가 **로컬 복사** 에 `False`입니다.  
   
-2.  두 개의 클래스를 만드는 첫 번째 `UpperCaseSuggestedAction` 및 두 번째 명명 된 `LowerCaseSuggestedAction`합니다. 두 클래스 모두 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>를 구현합니다.  
+2.  두 개의 클래스를 만듭니다. 첫 번째 클래스의 이름은 `UpperCaseSuggestedAction` 이고 두 번째 클래스의 이름은 `LowerCaseSuggestedAction`입니다. 두 클래스 모두 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>를 구현합니다.  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     하나를 호출 한다는 점을 제외 하면 두 클래스는 유사 <xref:System.String.ToUpper%2A> 및 기타 호출 <xref:System.String.ToLower%2A>합니다. 다음 단계에서는 대문자 동작 클래스만 설명하지만 두 클래스를 모두 구현해야 합니다. 대문자 동작 구현 단계를 소문자 동작 구현 패턴으로 사용합니다.  
+     한 클래스는 <xref:System.String.ToUpper%2A>를 호출하고 다른 클래스는 <xref:System.String.ToLower%2A>를 호출한다는 점을 제외하고 두 클래스는 유사합니다. 다음 단계에서는 대문자 동작 클래스만 설명하지만 두 클래스를 모두 구현해야 합니다. 대문자 동작 구현 단계를 소문자 동작 구현 패턴으로 사용합니다.  
   
 3.  다음 추가 문을 사용 하 여 이러한 클래스에 대 한 합니다.  
   
@@ -325,7 +323,7 @@ ms.locfileid: "47565164"
     }  
     ```  
   
-9. 구현 된 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> 범위에 있는 텍스트를 해당 대문자로 바꾸어 메서드.  
+9. 범위에 있는 텍스트를 해당 대문자로 바꾸어 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> 메서드를 구현합니다.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  

@@ -1,7 +1,7 @@
 ---
 title: 도메인 특정 언어에서 코드 생성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fbe7e40a277174eb556a61b50eb88279adebfb2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232000"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>도메인별 언어에서 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 언어에서 코드 생성](https://docs.microsoft.com/visualstudio/modeling/generating-code-from-a-domain-specific-language)합니다.  
-  
 Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] 모델에 표현 된 데이터에서 코드, 문서, 구성 파일 및 기타 아티팩트를 생성 하는 강력한 방법을 제공 합니다. 사용 하 여 [!INCLUDE[dsl](../includes/dsl-md.md)], 데이터를 나타내는 클래스의 집합을 만들 수 있습니다 및 이름이 클래스에서 텍스트 템플릿을 작성할 수 있습니다 및 해당 데이터를 반영 하는 속성입니다.  
   
  예를 들어, Fabrikam 고객 이름 및 전자 메일 주소 XML 파일을 있습니다. 개발자는 고객은 클래스, 속성 이름 및 전자 메일을 사용 하 여 모델을 만듭니다. HTML 페이지의 일부로 모든 고객의 테이블을 생성 하는이 부분을 포함 하 여 데이터를 처리 하는 데 여러 텍스트 템플릿을 작성 합니다.  

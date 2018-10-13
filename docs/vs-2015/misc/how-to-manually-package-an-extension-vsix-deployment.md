@@ -1,7 +1,7 @@
 ---
 title: '방법: 수동으로 확장명 패키지 (VSIX 배포) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,26 +12,26 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: 16803e9019928da5676850899025b190df08a30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269310"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>방법: 수동으로 확장명 패키지(VSIX 배포)
-래핑할 VSIX 패키지를 만들 수는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 배포에 대 한 확장입니다. 패키지를 만드는 방법에는 다음 세 가지가 있습니다.  
+배포를 위해 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장을 래핑할 VSIX 패키지를 만들 수 있습니다. 패키지를 만드는 방법에는 다음 세 가지가 있습니다.  
   
--   VSIX 패키지 프로젝트에 포함 된 확장성 템플릿 중 하나를 사용 하 여 만들기는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. 이것이 대부분의 시나리오에서 가장 쉬운 옵션입니다.  
+-   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK에 포함된 확장성 템플릿 중 하나를 사용하여 VSIX 패키지 프로젝트를 만듭니다. 이것이 대부분의 시나리오에서 가장 쉬운 옵션입니다.  
   
--   빈에서 확장 프로젝트의 출력을 래핑합니다 [VSIX 프로젝트](../extensibility/vsix-project-template.md)합니다. 템플릿, 지원되지 않는 어셈블리 및 사용자 지정 형식에 이 옵션을 사용하는 것이 좋습니다.  
+-   빈 [VSIX 프로젝트](../extensibility/vsix-project-template.md)에 확장 프로젝트의 출력을 래핑합니다. 템플릿, 지원되지 않는 어셈블리 및 사용자 지정 형식에 이 옵션을 사용하는 것이 좋습니다.  
   
 -   VSIX 패키지를 수동으로 만듭니다. 다른 두 옵션을 사용할 수 없는 경우에만 이 옵션을 사용하는 것이 좋습니다.  
   
  이 문서에서는 세 번째 옵션을 설명합니다.  
   
 ## <a name="creating-a-vsix-package"></a>VSIX 패키지 만들기  
- 확장을 수동으로 패키지하려면 extension.manifest 파일 및 [Content_Types].xml 파일을 확장 프로젝트에 추가하고 빌드 출력과 함께 압축 파일에 넣은 다음 .vsix 파일 이름 확장명을 갖도록 압축 파일의 이름을 바꿉니다. 패키지할 확장에서 지원 되는 형식 이어야 합니다 [VSIX 스키마](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다.  
+ 확장을 수동으로 패키지하려면 extension.manifest 파일 및 [Content_Types].xml 파일을 확장 프로젝트에 추가하고 빌드 출력과 함께 압축 파일에 넣은 다음 .vsix 파일 이름 확장명을 갖도록 압축 파일의 이름을 바꿉니다. 패키지할 확장은 [VSIX 스키마](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)에서 지원되는 형식이어야 합니다.  
   
 > [!NOTE]
 >  VSIX 패키지에 있는 파일의 이름에 공백을 포함할 수 없습니다 나으로 리소스 URI (Uniform Identifier), 예약 된 문자 아래에 정의 된 [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)합니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "47542729"
   
 2.  XML 파일을 만들고 이름을 `extension.vsixmanifest`로 지정합니다.  
   
-3.  VSIX 스키마에 따라 extension.vsixmanifest 파일을 채웁니다. 예제 매니페스트는 대해서 [PackageManifest 요소 (루트 요소, VSX 스키마)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)합니다.  
+3.  VSIX 스키마에 따라 extension.vsixmanifest 파일을 채웁니다. 예제 매니페스트는 [PackageManifest 요소(루트 요소, VSX 스키마)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)를 참조하세요.  
   
 4.  두 번째 XML 파일을 만들고 이름을 `[Content_Types].xml`로 지정합니다.  
   

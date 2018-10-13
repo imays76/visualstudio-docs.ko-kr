@@ -1,7 +1,7 @@
 ---
 title: 디자이너 초기화 및 메타 데이터 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550f4c00d669d22b8c4a887c2917d9afdc462278
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260891"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>디자이너 초기화 및 메타데이터 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디자이너 초기화 및 메타 데이터 구성](https://docs.microsoft.com/visualstudio/extensibility/designer-initialization-and-metadata-configuration)합니다.  
-  
 응용 프로그램을 다른 처리 하는 도구 특정 디자이너에서 사용 되는 정의 대 한 메커니즘을 제공 하는 디자이너 또는 디자이너 구성 요소에 연결 된 필터 특성과 메타 데이터의 조작 <xref:System.Type> 개체 (예: 데이터 구조 클래스 또는 그래픽 엔터티) 경우 디자이너를 사용할 수 있고 디자이너를 지원 하도록 Visual Studio IDE를 구성 하는 방법 (인스턴스는 **도구 상자** 범주 또는 탭).  
   
  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] vspackage는 메타 데이터의 조작 및 디자이너나 디자이너 구성 요소의 초기화의 제어를 용이 하 게 여러 메커니즘을 제공 합니다.  

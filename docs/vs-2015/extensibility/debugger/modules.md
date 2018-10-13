@@ -1,7 +1,7 @@
 ---
 title: 모듈 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 996e1ea00ded30f985de93941203e05253603d9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acd08e6874051bdd2ab9e2bc0e034498b3b611e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250239"
 ---
 # <a name="modules"></a>모듈
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모듈](https://docs.microsoft.com/visualstudio/extensibility/debugger/modules)합니다.  
-  
 디버거 아키텍처 측면을 **모듈**:  
   
 -   코드 예: 실행 파일 또는 DLL의 물리적 컨테이너입니다.  

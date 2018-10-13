@@ -1,7 +1,7 @@
 ---
 title: UML 시퀀스 다이어그램의 조각으로 제어 흐름 설명 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,24 +20,22 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05cb3be018db16a2377132896a98f0d2b13bfa07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554210"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260223"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>UML 시퀀스 다이어그램의 조각으로 제어 흐름을 설명합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 시퀀스 다이어그램의 조각으로 제어 흐름 Describe](https://docs.microsoft.com/visualstudio/modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams)합니다.  
-  
 UML 시퀀스 다이어그램에서 *결합 조각* 을 통해 루프, 분기 및 기타 대체 방법을 표시할 수 있습니다.  
   
  결합 조각은 하나 이상의 *상호 작용 피연산자*로 구성되고 이 상호 작용 피연산자는 각각 하나 이상의 메시지, 사용 작용 사용 또는 결합 조각을 포함합니다.  
   
 > [!NOTE]
->  이 항목에서는 시퀀스 다이어그램의 조각에 대해 설명합니다. UML 시퀀스 다이어그램을 읽는 방법에 대 한 자세한 내용은 참조 하세요. [UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)합니다. UML 시퀀스 다이어그램을 그리는 방법에 대 한 자세한 내용은 참조 하세요. [UML 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md)합니다.  
+>  이 항목에서는 시퀀스 다이어그램의 조각에 대해 설명합니다. UML 시퀀스 다이어그램을 읽는 방법에 대 한 자세한 내용은 참조 하세요. [UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)합니다. UML 시퀀스 다이어그램을 그리는 방법에 대한 자세한 내용은 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)을 참조하세요.  
   
  ![결합 조각 두 개의 상호 작용 피연산자를 사용 하 여](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   

@@ -1,7 +1,7 @@
 ---
 title: 'CA1057: 문자열 URI 오버 로드는 System.Uri 오버 로드를 호출할 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7cb8f559e4290c27c7b241bc15daf6ff79298372
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e428d0a6353eb5f8f8827dcf5581a41c6ab9a467
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263785"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: 문자열 URI 오버로드는 System.Uri 오버로드를 호출합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1057: 문자열 URI 오버 로드는 System.Uri 오버 로드를 호출할](https://docs.microsoft.com/visualstudio/code-quality/ca1057-string-uri-overloads-call-system-uri-overloads)합니다.
-
 |||
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|

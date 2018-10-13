@@ -1,7 +1,7 @@
 ---
 title: '5단계: 폼에 컨트롤 추가 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f22adb245bbe1926b353c4b5d72fa18d947d29ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7f7c65577a08b9aa9d6750b857e2c38939031f38
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257025"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5단계: 폼에 컨트롤 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [5 단계: 폼에 컨트롤 추가](https://docs.microsoft.com/visualstudio/ide/step-5-add-controls-to-your-form)합니다.  
-  
 이 단계에서는 `PictureBox` 컨트롤 및 `CheckBox` 컨트롤과 같은 컨트롤을 폼에 추가합니다. 그런 다음 폼에 단추를 추가합니다.  
   
  ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 2](http://go.microsoft.com/fwlink/?LinkId=205211) 또는 [자습서 1: C#에서 사진 뷰어 만들기 - 비디오 2](http://go.microsoft.com/fwlink/?LinkId=205200)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.  

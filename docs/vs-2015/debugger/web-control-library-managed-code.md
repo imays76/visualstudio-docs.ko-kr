@@ -1,7 +1,7 @@
 ---
 title: 웹 컨트롤 라이브러리 (관리 코드) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bdc9c62699e905a2c7aaee106dcb9cba14ac312
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7e942fe6909d41ed5000f5e8a4f31f0de87cf9e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262528"
 ---
 # <a name="web-control-library-managed-code"></a>웹 컨트롤 라이브러리(관리 코드)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [웹 컨트롤 라이브러리 (관리 코드)](https://docs.microsoft.com/visualstudio/debugger/web-control-library-managed-code)합니다.  
-  
 웹 컨트롤 라이브러리 프로젝트 템플릿은 DLL을 만듭니다. 클래스 라이브러리는 DLL이므로 직접 실행할 수 없고, 컨트롤을 포함하는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 페이지를 만들어야 합니다. 자세한 내용은 [웹 컨트롤 라이브러리 템플릿](http://msdn.microsoft.com/en-us/00666b07-71d2-4ace-a13c-cc130a3ce372)합니다.  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>웹 컨트롤 라이브러리를 디버깅하려면(방법 1)  

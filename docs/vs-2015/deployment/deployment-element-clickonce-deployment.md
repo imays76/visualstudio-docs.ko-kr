@@ -1,7 +1,7 @@
 ---
 title: '&lt;배포&gt; 요소 (ClickOnce 배포) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65ca88f335dfbbe270eedf25464a05194740fbd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231546"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;배포&gt; 요소 (ClickOnce 배포)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ &lt;배포&gt; 요소 (ClickOnce 배포)](https://docs.microsoft.com/visualstudio/deployment/deployment-element-clickonce-deployment)합니다.  
-  
 업데이트를 배포하고 시스템에 노출하는 데 사용되는 특성을 식별합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -81,12 +79,12 @@ ms.locfileid: "47553543"
  `deployment` 다음 자식 요소를 포함 합니다.  
   
 ## <a name="subscription"></a>구독  
- 선택 사항입니다. 포함 된 `update` 요소입니다. `subscription` 요소는 특성이 없습니다. 경우는 `subscription` 요소가 없는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 업데이트를 검색 하지 것입니다. 경우는 `install` 특성을 `deployment` 요소는 `false`, `subscription` 요소가 무시 하기 때문에 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 최신 버전을 사용 하는 네트워크에서 항상 실행 되는 응용 프로그램.  
+ 선택 사항입니다. 포함 된 `update` 요소입니다. `subscription` 요소에는 특성이 없습니다. 경우는 `subscription` 요소가 없는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 업데이트를 검색 하지 것입니다. 경우는 `install` 특성을 `deployment` 요소는 `false`, `subscription` 요소가 무시 하기 때문에 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 최신 버전을 사용 하는 네트워크에서 항상 실행 되는 응용 프로그램.  
   
 ## <a name="update"></a>업데이트  
  필수. 이 요소는 자식 합니다 `subscription` 요소 중 하나를 포함 합니다 `beforeApplicationStartup` 또는 `expiration` 요소. `beforeApplicationStartup` 및 `expiration` 둘 다 같은 배포 매니페스트에서 지정할 수 없습니다.  
   
- `update` 요소는 특성이 없습니다.  
+ `update` 요소에는 특성이 없습니다.  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  선택 사항입니다. 이 요소는 자식은 `update` 요소 특성이 없습니다. 경우는 `beforeApplicationStartup` 요소가 있으면 응용 프로그램이 됩니다 때 차단 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 클라이언트 온라인 상태 이면 업데이트를 확인 합니다. 이 요소가 없으면 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 먼저 지정 된 값에 따라 업데이트 검색을 `expiration` 요소입니다. `beforeApplicationStartup` 및 `expiration` 둘 다 같은 배포 매니페스트에서 지정할 수 없습니다.  

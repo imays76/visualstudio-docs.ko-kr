@@ -1,7 +1,7 @@
 ---
 title: 도메인 특정 언어에서 유효성 검사 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2ba087620d926c651be18c8993d992d3bc498952
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75df1e1f2bbc5bc5c3bdd56b8c16f0587f18751b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554508"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263642"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>도메인별 언어에서 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 언어에서 유효성 검사](https://docs.microsoft.com/visualstudio/modeling/validation-in-a-domain-specific-language)합니다.  
-  
 DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절한지를 확인하는 유효성 검사 제약 조건을 정의할 수 있습니다. 예를 들어 DSL에서 여러 세대를 포함하는 가족 구성도 그리기를 허용하는 경우 자녀의 생년월일을 부모의 생년월일 이후로 지정하도록 하는 제약 조건을 작성할 수 있습니다.  
   
  실행을 열 때 모델을 저장 하는 경우 사용자가 명시적으로 실행할 때 유효성 검사 제약 조건이 있습니다 합니다 **유효성 검사** 메뉴 명령입니다. 프로그램 제어 하에서 유효성 검사를 실행할 수도 있습니다. 예를 들어 속성 값 또는 관계 변경에 대한 응답으로 유효성 검사를 실행할 수 있습니다.  

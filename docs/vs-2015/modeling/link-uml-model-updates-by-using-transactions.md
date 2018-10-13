@@ -1,7 +1,7 @@
 ---
 title: 트랜잭션을 사용 하 여 UML 모델 업데이트 연결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274263"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>트랜잭션을 사용하여 UML 모델 업데이트 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [트랜잭션을 사용 하 여 링크 UML 모델 업데이트](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions)합니다.  
-  
-Visual Studio에서 UML 디자이너 확장을 정의할 때 몇 가지 변경 사항이 라는 단일 트랜잭션으로 그룹화 할 수 있습니다는 *연결 된 실행 취소 컨텍스트*합니다. UML 모델을 지 원하는 Visual Studio 버전을 참조 하세요 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.  
+Visual Studio에서 UML 디자이너 확장을 정의할 때 몇 가지 변경 사항이 라는 단일 트랜잭션으로 그룹화 할 수 있습니다는 *연결 된 실행 취소 컨텍스트*합니다. UML 모델을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
  기본적으로 코드에서 모델에 수행하는 각 수정 작업은 사용자가 개별적으로 취소할 수 있습니다. 예를 들어 두 UML 클래스의 이름을 교환하는 메뉴 명령을 정의하는 경우 사용자가 명령을 호출한 다음 하나의 실행 취소를 수행할 수 있습니다. 이렇게 하면 하나의 이름 변경만 취소되고 다른 이름 변경은 취소되지 않으므로 모델이 의도하지 않은 상태가 됩니다.  
   

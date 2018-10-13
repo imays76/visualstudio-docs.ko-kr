@@ -1,7 +1,7 @@
 ---
 title: 상태 표시줄 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc9a691b3ee8955f7fad33c84d7d0d40652e6a8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea7854bb90564f68a7f178ceda7b561b123dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244740"
 ---
 # <a name="extending-the-status-bar"></a>상태 표시줄 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [상태 표시줄 확장](https://docs.microsoft.com/visualstudio/extensibility/extending-the-status-bar)합니다.  
-  
 정보를 표시 하는 IDE의 아래쪽에 Visual Studio 상태 표시줄을 사용할 수 있습니다.  
   
  4 개 지역에서 정보 및 UI 상태 표시줄을 확장 하는 경우 표시할 수 있습니다: 피드백 영역, 진행률 표시줄, 애니메이션 영역 및 디자이너 영역입니다. 피드백 영역을 사용 하면 텍스트를 표시 하 고 표시 된 텍스트를 강조 표시할 수 있습니다. 진행률 표시줄 단기 실행 파일을 저장 하는 등의 작업에 대 한 증분 진행률을 보여 줍니다. 애니메이션 영역에는 장기 실행 작업 또는 솔루션의 여러 프로젝트 빌드 같은 결정 되지 않은 길이의 작업에 대 한 지속적으로 반복 애니메이션을 표시 합니다. 및 디자이너 영역 커서 위치의 줄 및 열 번호를 보여 줍니다.  

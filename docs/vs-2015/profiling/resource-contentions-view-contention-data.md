@@ -1,7 +1,7 @@
 ---
 title: 리소스 경합 뷰 - 경합 데이터 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3f18cf1131e61ba88832d59e0e77f462c088bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c6db867b582c4d1f5b0722d085e8a2eac48d182f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253021"
 ---
 # <a name="resource-contentions-view---contention-data"></a>리소스 경합 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [리소스 경합 뷰-경합 데이터](https://docs.microsoft.com/visualstudio/profiling/resource-contentions-view-contention-data)입니다.  
-  
 리소스 경합 뷰에는 경합 이벤트의 출처인 리소스의 경합 데이터 목록이 표시됩니다. 다른 스레드의 함수가 리소스에 대한 배타적 액세스 권한을 확보하여 스레드가 해당 리소스 액세스를 대기해야 하는 경우 경합 이벤트가 발생합니다. 각 리소스는 경합 이벤트가 발생한 함수 실행 경로를 표시하는 호출 트리의 루트 노드입니다.  
   
 ## <a name="data-values"></a>데이터 값  

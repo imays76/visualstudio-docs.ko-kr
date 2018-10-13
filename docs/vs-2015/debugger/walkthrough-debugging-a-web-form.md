@@ -1,7 +1,7 @@
 ---
 title: '연습: Web Form 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,22 +28,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff54238649947f578535dee2b813aa4daa90681
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8cbda461c4472ed020087e7e606b1ab86ddb6b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275134"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>연습: Web Form 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: Web Form 디버그](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-web-form)합니다.  
-  
 이 연습 과정에서는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램(Web Form)의 디버깅 방법을 보여 줍니다. 시작 및 실행을 중지 하 고, 중단점을 설정 하 고에서 변수를 검사 하는 방법을 표시 합니다 **조사식** 창입니다.  
   
 > [!NOTE]
->  이 연습을 수행하려면 서버 컴퓨터에 대한 관리자 권한이 있어야 합니다. 기본적으로 aspnet_wp.exe나 w3wp.exe 같은 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스로 실행됩니다. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]을 디버깅하려면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]이 실행되는 컴퓨터에서 관리자 권한이 있어야 합니다. 자세한 내용은 [시스템 요구 사항](../debugger/aspnet-debugging-system-requirements.md)합니다.  
+>  이 연습을 수행하려면 서버 컴퓨터에 대한 관리자 권한이 있어야 합니다. 기본적으로 aspnet_wp.exe나 w3wp.exe 같은 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스로 실행됩니다. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]을 디버깅하려면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]이 실행되는 컴퓨터에서 관리자 권한이 있어야 합니다. 자세한 내용은 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)항목을 참조하세요.  
   
  표시되는 대화 상자와 메뉴 명령은 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   

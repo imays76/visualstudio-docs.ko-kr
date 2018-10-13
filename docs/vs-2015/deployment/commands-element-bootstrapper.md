@@ -1,7 +1,7 @@
 ---
 title: '&lt;명령을&gt; 요소 (부트스트래퍼) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5802aae6b3476eb9688da484e6ec36b818c2d61a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 309f93658cee6663c2b5673c03c6621330e7fa39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553841"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276577"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;명령을&gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ &lt;명령&gt; 요소 (부트스트래퍼)](https://docs.microsoft.com/visualstudio/deployment/commands-element-bootstrapper)합니다.  
-  
 `Commands` 요소 아래에서 설명 하는 테스트를 구현 하는 `InstallChecks` 요소를 패키지를 선언 하 고는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 부트스트래퍼를 테스트에 실패 하면 설치 해야 합니다.  
   
 ## <a name="syntax"></a>구문  

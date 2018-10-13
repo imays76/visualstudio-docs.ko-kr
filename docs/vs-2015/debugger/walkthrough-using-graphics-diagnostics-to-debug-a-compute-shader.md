@@ -1,7 +1,7 @@
 ---
 title: '연습: 그래픽 진단을 사용 하 여 계산 셰이더 디버깅 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46db6517571e1d5df592ce322c89c1b18c75926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9742fa2c17bf982cde7c919648d76c63ff761ac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557041"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250148"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>연습: 그래픽 진단을 사용하여 계산 셰이더 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 그래픽 진단 계산 셰이더 디버깅을 사용 하 여](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader)입니다.  
-  
 이 연습에서는 잘못된 결과를 생성하는 계산 셰이더를 Visual Studio 그래픽 진단 도구를 사용하여 조사하는 방법을 보여 줍니다.  
   
  이 연습에서는 다음 작업을 설명합니다.  
@@ -41,7 +39,7 @@ ms.locfileid: "47557041"
   
  ![시뮬레이트된 fluid 올바르게 작동 합니다. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
- 그래픽 로그의 그래픽 문제를 포착 하는 방법에 대 한 자세한 내용은 [그래픽 정보 캡처](../debugger/capturing-graphics-information.md)합니다.  
+ 그래픽 로그의 그래픽 문제를 포착하는 방법에 대한 자세한 내용은 [Capturing Graphics Information](../debugger/capturing-graphics-information.md)를 참조하세요.  
   
 ## <a name="investigation"></a>조사  
  그래픽 진단 도구를 사용하여 캡처된 프레임을 검사할 수 있도록 그래픽 로그 파일을 로드할 수 있습니다.  

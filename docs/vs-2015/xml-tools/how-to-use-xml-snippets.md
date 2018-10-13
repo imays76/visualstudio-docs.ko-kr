@@ -1,7 +1,7 @@
 ---
 title: '방법: XML 조각 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0025ef0033aba0b04c43b2e1a44c3790322dfd5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245858"
 ---
 # <a name="how-to-use-xml-snippets"></a>방법: XML 조각 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 사용 하 여 XML 조각](https://docs.microsoft.com/visualstudio/xml-tools/how-to-use-xml-snippets)합니다.  
-  
   
 XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML 조각을 호출할 수 있습니다. 합니다 **코드 조각 삽입** 명령은 커서 위치에서 XML 조각을 삽입 합니다. 합니다 **감싸기** 명령을 선택한 텍스트 주위의 XML 조각을 래핑합니다. 각 XML 조각에는 조각 형식이 지정되어 있습니다. 조각 형식은 조각을 사용 하 여 사용할 수 있는지 확인 합니다 **코드 조각 삽입** 명령인을 **감싸기** 명령 또는 둘 다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 옵션 페이지 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff543e0b75b4bd1ca09068f6de7b62248c515158
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90a99ca6f577ed7a04c9b1623c767484e592b4eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243089"
 ---
 # <a name="creating-options-pages"></a>옵션 페이지 만들기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션 페이지 만들기](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-options-pages)합니다.  
-  
 에 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 관리 패키지 프레임 워크 클래스에서 파생 된 <xref:Microsoft.VisualStudio.Shell.DialogPage> 확장을 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 추가 하 여 IDE **옵션** 아래 페이지를 **도구** 메뉴.  
   
  구현 하는 개체를 지정 **도구 옵션** 페이지에서 특정 Vspackage와 사용 하 여 연결 된 된 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 개체입니다.  

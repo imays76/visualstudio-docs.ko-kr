@@ -1,7 +1,7 @@
 ---
 title: 편집기에서 레거시 인터페이스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ae8f087a9f52ca2eff130b7972c2cd9d68a139f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48e468a8b0378e33f8c3f371b5da8dc5fd7b8758
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271574"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>편집기에서 레거시 인터페이스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집기에서 레거시 인터페이스](https://docs.microsoft.com/visualstudio/extensibility/legacy-interfaces-in-the-editor)합니다.  
-  
 레거시 인터페이스에서 Visual Studio 편집기에 액세스할 수 있습니다. 라고 하는 어댑터를 포함 하는 Visual Studio SDK *shim*, 이러한 인터페이스 새 편집기와 상호 작용할 수 있도록 합니다. 그럼에도 불구 하 고 새 편집기 API를 사용 하도록 레거시 코드를 업데이트 하는 것이 좋습니다. 코드를 더 잘 수행 됩니다 및 Windows Presentation Foundation (WPF) 등의 프레임 워크 MEF (Managed Extensibility) 새 기술을 사용할 수 있습니다.  
   
 ## <a name="related-topics"></a>관련 항목  

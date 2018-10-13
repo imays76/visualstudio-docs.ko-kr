@@ -1,7 +1,7 @@
 ---
 title: 서비스 참조 구성 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60a1c7a057495b89aa8923d424fb09d9ecb1c232
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24da338378739afca6ad228582a29069aebde9f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266983"
 ---
 # <a name="configure-service-reference-dialog-box"></a>서비스 참조 구성 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [서비스 참조 구성 대화 상자](https://docs.microsoft.com/visualstudio/data-tools/configure-service-reference-dialog-box)합니다.  
-  
   
 합니다 **서비스 참조 구성** 대화 상자를 사용 하는 동작을 구성할 수 있습니다 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 서비스입니다.  
   

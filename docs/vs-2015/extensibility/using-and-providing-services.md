@@ -1,7 +1,7 @@
 ---
 title: 서비스 사용 및 제공 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facf0bb9968e3ffbc9a68eb8eee906f300eb1859
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2aca4c0d9ce518410250b8274d70e17d27ab859
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247613"
 ---
 # <a name="using-and-providing-services"></a>서비스 사용 및 제공
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용 및 제공 서비스](https://docs.microsoft.com/visualstudio/extensibility/using-and-providing-services)합니다.  
-  
 서비스는 두 Vspackage 간의 계약입니다. 하나의 VSPackage를 사용 하는 다른 VSPackage에 대 한 인터페이스의 특정 집합을 제공 합니다. 예를 들어 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 제공 된 <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> 서비스 모든 VSPackage를 로드 합니다. 이 서비스는 제공 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 인터페이스를 활동 로그에 쓰는 데 사용할 수 있습니다. 자세한 내용은 [방법: 활동 로그를 사용 하 여](../extensibility/how-to-use-the-activity-log.md)입니다.  
   
  Vspackage는 자체에서 사용 하 여 서비스를 제공할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> 인터페이스...  

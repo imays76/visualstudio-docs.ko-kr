@@ -1,7 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, 모든 언어 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fd7fc6b0c5c82c29d5f315a8797416e540dcb99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2584f56e31dea55ff7a4d67b61b8c7453ade4c10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255712"
 ---
 # <a name="options-text-editor-all-languages"></a>옵션, 텍스트 편집기, 모든 언어
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션, 텍스트 편집기 모든 언어](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-all-languages)합니다.  
-  
   
 이 대화 상자에서는 코드 편집기의 기본 동작을 변경할 수 있습니다. 이러한 설정은 HTML 디자이너의 소스 뷰와 같이 코드 편집기를 기반으로 하는 다른 편집기에도 적용됩니다. 이 대화 상자를 열려면 **도구** 메뉴에서 **옵션**을 선택합니다. **텍스트 편집기** 폴더 내에서 **모든 언어** 하위 폴더를 확장하고 **일반**을 선택합니다.  
   

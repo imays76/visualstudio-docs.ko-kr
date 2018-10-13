@@ -1,7 +1,7 @@
 ---
 title: '연습: 다시 서명 하는 필요가 없고 브랜드 정보가 유지 되는 ClickOnce 응용 프로그램을 수동으로 배포 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 85453b899501d83191016bde0edd40b4e2a96d94
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2d6531a94a99e2a1c24d80e9f326d23fcc6c4ec3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252995"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>연습: 다시 서명할 필요가 없고 브랜드 정보가 유지되는 ClickOnce 응용 프로그램 수동 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 다시 서명 하지 않아도 되는 ClickOnce 응용 프로그램 및 해당 보존 브랜딩 정보를 수동으로 배포](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information)합니다.  
-  
 만들 때는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 및 고객 게시할 수 있도록 제공 및 배포, 고객에 일반적으로 배포 매니페스트를 업데이트 하 고 다시 서명 해야 했습니다. 여전히 대부분의 경우에는 이러한 방식이 사용 되 고 있지만,.NET Framework 3.5를 사용 하면 만들려는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 새 배포 매니페스트를 다시 생성할 필요 없이 고객에 게 배포할 수 있는 배포 합니다. 자세한 내용은 [배포 ClickOnce 응용 프로그램에 대 한 테스트 및 프로덕션 서버 Resigning 없이](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)합니다.  
   
  만들 때는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 및 고객 게시할 수 있도록 제공 및 배포, 응용 프로그램 고객의 브랜드를 사용 하거나 브랜딩이 유지할 수 있습니다. 예를 들어, 응용 프로그램을 단일 소유 응용 프로그램인 경우 브랜딩이 유지 하는 것이 좋습니다. 응용 프로그램은 항상 각 고객에 대 한 사용자 지정, 경우에 고객의 브랜드를 사용 하는 것이 좋습니다. .NET Framework 3.5 응용 프로그램 배포를 조직에 부여 하는 경우 사용자의 브랜드를 유지할 수 있습니다, 게시자 정보 및 보안 서명 수 있습니다. 자세한 내용은 [ClickOnce 응용 프로그램 만들기 다른 사용자에 대 한 배포를](../deployment/creating-clickonce-applications-for-others-to-deploy.md)입니다.  

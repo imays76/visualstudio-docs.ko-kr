@@ -1,7 +1,7 @@
 ---
 title: 소스 제어 VSPackage 디자인 요소를 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efc1133a57db0c179fbac05db9f6472237577e9e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8645a853e1be5b3ef43f2e471b2c2a6a0f143d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557142"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269349"
 ---
 # <a name="source-control-vspackage-design-elements"></a>소스 제어 VSPackage 디자인 요소
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 VSPackage 디자인 요소](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-design-elements)합니다.  
-  
 이 섹션의에서 항목에서는 소스 제어 VSPackage의 긴밀 한 통합에 대 한 구현 해야 구조를 간략하게 설명 합니다. 또한 인터페이스를 나열 하 고 서비스는 소스 제어 VSPackage를 구현할 수 있습니다 다른 소스 제어 VSPackage 사용 수 인터페이스 및 서비스를 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 모델 및 기능을 제어 하는 구성 요소를 해당 소스를 지원 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

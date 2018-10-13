@@ -1,7 +1,7 @@
 ---
 title: 일반, 텍스트 편집기, 옵션 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -53,18 +53,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3288ead8d962499311c557adcd428b8fa18036de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47fb93aebeecf50ae20616fc47033be60724cd45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555836"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257831"
 ---
 # <a name="options-text-editor-general"></a>일반, 텍스트 편집기, 옵션
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션, 텍스트 편집기, 일반](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-general)합니다.  
-  
   
 이 대화 상자에서는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 코드 및 텍스트 편집기에 대한 전역 설정을 변경할 수 있습니다. 이 대화 상자를 표시하려면 **도구** 메뉴에서 **옵션**을 클릭하고, **텍스트 편집기** 폴더를 확장하고, **일반**을 클릭합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: '방법: 워크플로 콘솔 응용 프로그램 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8a6b38f6026e7a9bba1e668f47a37b32feaa2b7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad509e0e57f2c8996c13ffbe1d8f8890d2954dec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541754"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251669"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>방법: 워크플로 콘솔 응용 프로그램 만들기
 [!INCLUDE[wf](../includes/wf-md.md)]에서는 시스템 또는 사용자 프로세스를 실행하는 워크플로를 만들 수 있습니다. [!INCLUDE[wfd1](../includes/wfd1-md.md)]에는 이러한 워크플로를 만들 수 있는 디자인 화면이 있습니다. [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 내에서 워크플로를 만드는 데 사용되거나 디자이너를 다시 호스트하는 다른 응용 프로그램에 통합될 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 소스 제어 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93b00df779d5b650de59c91196b8fc004efa6994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 875ee92c91081b2df097e96bf833ea2fcf775f6d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247515"
 ---
 # <a name="source-control"></a>소스 제어
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control)입니다.  
-  
 이 섹션에서는 설명의 통합된 기능으로 소스 제어를 구현 하기 위한 옵션 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], 소스 제어 플러그 인 또는 소스 제어 VSPackage 통해.  
   
 ## <a name="in-this-section"></a>섹션 내용  
@@ -47,5 +45,5 @@ ms.locfileid: "47557393"
  원본 제어 플러그 인 API에 대 한 참조입니다.  
   
  [프로젝트 확장](../../extensibility/extending-projects.md)  
- 사용 하는 방법에 설명 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 및 코드 파일 및 리소스 파일을 소스 제어를 구현 하는 방법을 구성 하는 솔루션입니다.
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 및 솔루션을 사용하여 코드 파일 및 리소스 파일을 구성하는 방법 및 소스 제어를 구현하는 방법을 설명합니다.
 

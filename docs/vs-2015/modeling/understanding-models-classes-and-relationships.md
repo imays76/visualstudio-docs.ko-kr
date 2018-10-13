@@ -1,7 +1,7 @@
 ---
 title: 모델, 클래스 및 관계 이해 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b954177573c70ccd30da422f2155d675a430e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549497"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271793"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>모델, 클래스 및 관계 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모델, 클래스 및 관계 이해](https://docs.microsoft.com/visualstudio/modeling/understanding-models-classes-and-relationships)합니다.  
-  
 도메인 특정 언어 (DSL) 작성할 수 있는 모든 사용자 지정 프로그램 코드와 함께 해당 DSL 정의 파일에서 정의 됩니다. DSL 솔루션에 있는 프로그램 코드의 대부분은이 파일에서 생성 됩니다.  
   
  이 항목에서는 DSL 정의의 핵심 기능을 설명 합니다.  

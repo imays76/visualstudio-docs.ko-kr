@@ -1,7 +1,7 @@
 ---
 title: API 참조 (Visual Studio 디버깅) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a4348e6e60c722d8116b682386785a8cfba6cde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 979a6b999e34b5cec57e4a0d324f8c273fbe5dc2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222102"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 참조(Visual Studio 디버깅)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [API 참조 (Visual Studio 디버깅)](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/api-reference-visual-studio-debugging)합니다.  
-  
 참조 섹션 구문 및 모든 API 요소에 대 한 사용법을 보여 주는 가이드 API에 대 한 개념적인 개요 및 다양 한 코드 예제를 포함 합니다. 모든 참조는 범주별으로 사전순으로 나열 됩니다.  
   
  다음 표에서 일반적인 `HRESULT` 메서드에서 반환 되는 값입니다.  

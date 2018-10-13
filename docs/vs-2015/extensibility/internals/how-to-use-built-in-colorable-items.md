@@ -1,7 +1,7 @@
 ---
 title: '방법: 기본 제공 색 항목 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20ed9b5424363eceec8cf4c3c5275a3a937a7003
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cd6cc62e54fa35a8b146c93e2931b2cf35145b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542580"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209780"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>방법: 기본 제공 색 항목 사용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 사용 하 여 기본 제공 색 항목](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-use-built-in-colorable-items)합니다.  
-  
 기본 제공 색 항목을 사용 하면 먼저 알려야 통합된 개발 환경 (IDE)이 경우에 고유한 사용자 지정 색 항목을 제공 하지 않는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 개체입니다. 언어 서비스에 대 한 레지스트리 항목을 설정 하 여이 작업을 수행 합니다.  
   
 ### <a name="to-use-built-in-colorable-items"></a>기본 제공 색 항목을 사용 하려면  

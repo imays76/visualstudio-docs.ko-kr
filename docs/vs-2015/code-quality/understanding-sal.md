@@ -1,7 +1,7 @@
 ---
 title: SAL 이해 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae6b16cc7f69aaf365188c488416d35402de9ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253255"
 ---
 # <a name="understanding-sal"></a>SAL 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [이해 SAL](https://docs.microsoft.com/visualstudio/code-quality/understanding-sal)합니다.  
-  
 Microsoft 소스 코드 주석 언어 (SAL) 함수에서 해당 매개 변수에 가정 및 완료 될 때 수행 하는 보장을 사용 하는 방법을 설명 하는 데 사용할 수 있는 주석의 집합을 제공 합니다. 주석 헤더 파일에 정의 된 `<sal.h>`합니다. C + + 용 visual Studio 코드 분석 SAL 주석을 사용 하 여 함수에 대 한 분석 내용을 수정. Windows 드라이버 개발에 대 한 SAL 2.0에 대 한 자세한 내용은 참조 [Windows 드라이버에 대 한 SAL 2.0 주석](http://go.microsoft.com/fwlink/?LinkId=250979)합니다.  
   
  기본적으로, C 및 c + + 개발자가 일관 되 게 의도 및 불변성을 표현 하는 데만 제한적된으로 제공 합니다. SAL 주석을 사용 하 여 하를 사용 하는 개발자 사용 하는 방법을 보다 잘 이해할 수 있도록 자세히 함수를 설명할 수 있습니다.  

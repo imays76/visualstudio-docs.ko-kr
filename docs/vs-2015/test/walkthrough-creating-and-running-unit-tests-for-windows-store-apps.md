@@ -1,7 +1,7 @@
 ---
 title: '연습: Windows 스토어 앱용 단위 테스트 만들기 및 실행 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9b84c53f3c1f2c48948b456d3a85460bfb70a9ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251916"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>연습: Windows 스토어 앱용 단위 테스트 만들기 및 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: Windows 스토어 앱에 대 한 단위 테스트 만들기 및 실행](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-windows-store-apps)합니다.  
-  
 Visual Studio에는 관리되는 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 응용 프로그램에 대한 단위 테스트 지원이 포함되어 있으며, Visual C#, Visual Basic 및 Visual C++에 대한 단위 테스트 라이브러리 템플릿이 포함되어 있습니다.  
   
 > [!TIP]

@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a012c40026921419fee1f70b3db8294e3397079d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acb8347adff9d6addb4e809d86d93f14f0809b98
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236602"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IPropertyProxyEESide](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ipropertyproxyeeside)합니다.  
-  
 이 인터페이스는 연결된 된 개체에서 데이터를 볼 수는 메서드를 제공 합니다. 이 인터페이스는 형식 시각화 도우미에 대 한 지원의 일부입니다.  
   
 ## <a name="syntax"></a>구문  

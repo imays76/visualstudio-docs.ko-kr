@@ -1,7 +1,7 @@
 ---
 title: '방법: GPU 스레드 창 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a747ec02e8b47649e42ec8fcb600de97f549c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3c58bed9dd25cc9d25ad122b4c4c42f72ddf60f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236810"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>방법: GPU 스레드 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거에서 GPU 스레드 보기](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-gpu-threads-window)합니다.  
-  
 GPU 스레드 창에서 디버깅 중인 응용 프로그램의 GPU에서 실행되는 스레드를 검사하고 관련 작업을 수행할 수 있습니다. GPU에서 실행 되는 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [c + + AMP 개요](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc)합니다.  
   
  GPU 스레드 창에는 각 행이 모든 열에서 값이 동일한 GPU 스레드의 집합을 나타내는 테이블이 포함되어 있습니다. 열에 있는 항목의 정렬, 순서 변경, 제거 및 그룹화를 수행할 수 있습니다. GPU 스레드 창에서 스레드에 플래그를 지정하거나 해제할 수 있으며 스레드를 중지(일시 중단)하거나 재개(다시 시작)할 수 있습니다. 다음과 같은 열이 GPU 스레드 창에 표시됩니다.  

@@ -1,7 +1,7 @@
 ---
 title: 모듈 뷰 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baf208e30a96efa73e0524fc10a761ac01c316e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c84b71772c42bf11b90005a6951aadbc4b222e53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543075"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239215"
 ---
 # <a name="modules-view"></a>모듈 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모듈 뷰](https://docs.microsoft.com/visualstudio/profiling/modules-view)합니다.  
-  
 모듈 뷰는 프로파일링 데이터의 모듈을 나열합니다. 각 모듈은 계층 트리의 루트 노드입니다. 모듈의 프로파일링된 함수는 모듈 노드 아래에 나열됩니다. 프로파일링 데이터가 샘플링 방법을 사용하여 수집된 경우 줄 정보는 함수 노드 아래에 나열되고 명령 포인터 데이터는 줄 노드 아래에 나열됩니다.  
   
  모듈 성능 데이터의 뷰를 표시하거나 닫으려면 모듈 이름을 확장하거나 축소합니다.  

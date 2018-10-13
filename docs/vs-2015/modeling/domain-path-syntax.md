@@ -1,7 +1,7 @@
 ---
 title: 도메인 경로 구문 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6df1f73614a8df59ee0bff8fb76610382d58b4e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e98715bae8869619e8d9f2852c810153984777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551058"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254776"
 ---
 # <a name="domain-path-syntax"></a>도메인 경로 구문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인 경로 구문](https://docs.microsoft.com/visualstudio/modeling/domain-path-syntax)합니다.  
-  
 DSL 정의는 XPath 유형 구문을 사용하여 모델에서 특정 요소를 찾습니다.  
   
  일반적으로는 이 구문을 직접 사용할 필요가 없습니다. DSL 정보 또는 속성 창에서 이 구문이 표시되면 아래쪽 화살표를 클릭하고 경로 편집기를 사용할 수 있습니다. 그러나 경로는 편집기를 사용하고 나면 이 폼의 필드에 표시됩니다.  

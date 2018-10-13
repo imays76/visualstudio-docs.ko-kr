@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 도구 모음의 Guid 및 Id | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f24e406f0d7e4fe9782ccba56aa33dfbb4b658fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa336f6187611a8ad54866f18cc1f46996daf07
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275082"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 도구 모음의 GUID 및 ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Guid 및 Id의 Visual Studio 도구 모음](https://docs.microsoft.com/visualstudio/extensibility/internals/guids-and-ids-of-visual-studio-toolbars)합니다.  
-  
 이 항목에서는 Visual Studio 통합된 개발 환경 (IDE)에 포함 된 도구 모음의 GUID 및 ID 값을 열거 하 고 포함 된 그룹의 키를 누릅니다. 이러한 값은 Visual Studio SDK의 일부로 설치 되는.vsct 파일에서 정의 됩니다. 자세한 내용은 [IDE-Defined 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  
   
 > [!NOTE]

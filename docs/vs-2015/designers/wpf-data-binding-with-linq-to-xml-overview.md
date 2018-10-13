@@ -1,7 +1,7 @@
 ---
 title: LINQ to XML로 WPF 데이터 바인딩 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 584645062920143787c599c317a9ca93dd7da2b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247275"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML로 WPF 데이터 바인딩 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [LINQ to XML 개요 사용한 WPF 데이터 바인딩](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview)합니다.  
-  
 이 항목에서는 <xref:System.Xml.Linq> 네임스페이스의 동적 데이터 바인딩 기능에 대해 소개합니다. 이러한 기능을 WPF(Windows Presentation Foundation)의 UI(사용자 인터페이스) 요소에 대한 데이터 소스로 사용할 수 있습니다.  
   
 ## <a name="xaml-and-linq-to-xml"></a>XAML 및 LINQ to XML  

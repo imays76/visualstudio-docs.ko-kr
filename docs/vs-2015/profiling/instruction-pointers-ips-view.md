@@ -1,7 +1,7 @@
 ---
 title: IP(명령 포인터) 뷰 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 822af38922782996126443f3c664c3dd7d5d44ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 457aa922bbc386d3bc2b7b62296a6d876c42f601
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251747"
 ---
 # <a name="instruction-pointers-ips-view"></a>IP(명령 포인터) 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Ip (명령 포인터) 뷰](https://docs.microsoft.com/visualstudio/profiling/instruction-pointers-ips-view)합니다.  
-  
 명령 포인터 뷰를 사용하면 샘플링 프로파일링 중 실행되는 특정 명령을 확인할 수 있습니다.  
   
  계측 프로파일링 중에는 이 뷰를 사용할 수 없습니다.  

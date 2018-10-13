@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에 대 한 레이아웃 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25ba43a08bc2c886302894d891800ac1db87a18a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67117992e7043335152adea59d7e15f7bbdcce00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254760"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio에 대 한 레이아웃
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에 대 한 레이아웃](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/layout-for-visual-studio)합니다.  
-  
 대부분의 Visual Studio 대화 상자 [유틸리티 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), 다음 표준에 대화 상자는 unthemed 되 [Windows Desktop 대화 상자 레이아웃 원칙](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)합니다. Visual Studio UI를 새로 고치려면 이동, 띄 대화 상자의 일부 환경으로 제품 정의 설정 하는 새 디자인을가지고 있습니다. 이러한 [테마가 지정 된 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 모양이 테마를 지정 합니다.  
   
 ##  <a name="BKMK_UtilityDialogLayout"></a> 유틸리티 대화 상자 레이아웃  

@@ -1,7 +1,7 @@
 ---
 title: Spy + + 소개 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f219d2e15dfeef325ea6ec7be44878e674cf10e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276265"
 ---
 # <a name="introducing-spy"></a>Spy++ 소개
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Spy + + 소개](https://docs.microsoft.com/visualstudio/debugger/introducing-spy-increment)합니다.  
-  
 Spy++에서는 다음 작업을 수행할 수 있습니다.  
   
 -   시스템 개체 간의 관계를 그래픽 트리로 표시합니다. 여기에는 [프로세스](../debugger/processes-view.md), [스레드](../debugger/threads-view.md)및 [창](../debugger/windows-view.md)이 포함됩니다.  
@@ -40,7 +38,7 @@ Spy++에서는 다음 작업을 수행할 수 있습니다.
   
 -   [찾기 도구](../debugger/how-to-use-the-finder-tool.md) 로 마우스 포인터를 이동하여 창을 선택합니다.  
   
--   설정할 **메시지 옵션** 복잡 한 메시지 로그 선택 매개 변수를 사용 하 여 합니다.  
+-   복잡한 메시지 로그 선택 매개 변수를 사용하여 **메시지 옵션** 을 설정합니다.  
   
  Spy++의 도구 모음과 하이퍼링크를 사용하면 더 빨리 작업할 수 있습니다. 또한 Spy++는 활성 보기를 업데이트할 수 있는 **새로 고침** 명령, 검색을 더 용이하게 해 주는 **창 찾기 도구** , 보기 창을 사용자 지정할 수 있는 **글꼴** 대화 상자를 제공합니다. 또한 Spy++에서는 사용자 기본 설정을 저장 및 복원할 수 있습니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 컨텍스트 매개 변수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c890a1ffa91d4e6017411e99b4845304a2399279
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 663583129453fc8bd9b71c2be2337a5528f9f7d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238085"
 ---
 # <a name="context-parameters"></a>컨텍스트 매개 변수
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [컨텍스트 매개 변수](https://docs.microsoft.com/visualstudio/extensibility/internals/context-parameters)합니다.  
-  
 에 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE) 마법사를 추가할 수 있습니다 합니다 **새 프로젝트**를 **새 항목 추가**, 또는 **하위 프로젝트 추가** 대화 상자. 추가 마법사에서 사용할 수는 **파일** 메뉴에서 프로젝트를 마우스 오른쪽 단추로 클릭 **솔루션 탐색기**합니다. IDE는 마법사의 구현에 컨텍스트 매개 변수를 전달합니다. IDE는 마법사를 호출 하는 경우 프로젝트의 상태를 정의 하는 컨텍스트 매개 변수입니다.  
   
  IDE 설정 하 여 마법사를 시작 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> IDE의 호출에서 플래그를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> 프로젝트에 대 한 메서드. 설정 된 경우 프로젝트를 수행 해야 하는 `IVsExtensibility::RunWizardFile` 등록된 마법사 이름 또는 GUID 및 IDE에서 전달 하는 다른 컨텍스트 매개 변수를 사용 하 여 실행할 메서드를 합니다.  

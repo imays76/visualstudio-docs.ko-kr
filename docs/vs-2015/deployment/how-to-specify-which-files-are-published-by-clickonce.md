@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce를 통해 게시할 파일 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c56d378c8adee1801fb82fc4a2ed84e5b05c0aef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268322"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>방법: ClickOnce를 통해 게시할 파일 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 지정 하는 파일 ClickOnce를 통해 게시할](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-which-files-are-published-by-clickonce)합니다.  
-  
 게시 하는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 프로젝트의 응용 프로그램, 모든 비 코드 파일은 응용 프로그램과 함께 배포 됩니다. 경우에 따라 원하는 또는 특정 파일을 게시 해야 할 수 있습니다 또는 조건에 따라 특정 파일을 설치 하는 것이 좋습니다. Visual Studio, 파일을 제외 하 고, 데이터 파일 또는 필수 구성 요소를으로 파일을 표시 하 고, 조건부 설치를 위한 파일 그룹을 만들려면 하는 기능을 제공 합니다.  
   
  파일에 대 한는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램에서 관리 되는 **응용 프로그램 파일** 에서 액세스할 수 있는 대화 상자는 **게시** 페이지를 **프로젝트 디자이너**합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 바로 가기 키 (HTML 및 JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b35a13c09c4d846088bb1f86bbea28193bd7e07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57a808a8c94780f32bdb33fed948be816872150c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271637"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>바로 가기 키(HTML 및 JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [바로 가기 키 (HTML 및 JavaScript)](https://docs.microsoft.com/visualstudio/debugger/keyboard-shortcuts-html-and-javascript)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  HTML 및 JavaScript를 사용하는 스토어 앱을 디버깅하기 위한 Visual Studio의 바로 가기 키입니다.  

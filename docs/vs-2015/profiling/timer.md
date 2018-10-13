@@ -1,7 +1,7 @@
 ---
 title: Timer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a17f756a293ba8909054043713a14340ff9bf39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acca8f8bf77c465873bae25a61de18230a038234
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247698"
 ---
 # <a name="timer"></a>Timer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [타이머](https://docs.microsoft.com/visualstudio/profiling/timer)합니다.  
-  
 VSPerfCmd.exe **Timer** 옵션은 프로세서 클록 주기로 샘플링되는 프로파일링 이벤트를 설정하고 경우에 따라 샘플링 간격의 주기 수를 기본값 10,000,000에서 변경합니다. 1GH(1기가헤르츠) 프로세서에서 10,000,000 클록 주기는 초당 샘플 100개입니다. 지정할 수 있는 최소 주기 수는 50,000입니다.  
   
  **Timer**는 샘플링 프로파일링 메서드를 사용하는 경우에만 사용할 수 있고 **Launch** 또는 **Attach** 옵션도 포함하는 명령줄에서만 사용할 수 있습니다.  

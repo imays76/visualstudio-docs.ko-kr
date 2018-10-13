@@ -1,7 +1,7 @@
 ---
 title: '연습: C / c + + 코드의 오류 분석 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 37
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c944a50330f458240b3da2fea8952abb5b8f02b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5c2f6bfeabb80c03b1940ada2f57abbefb60173
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272651"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>연습: C/C++ 코드의 오류 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: C/c + + 코드 오류에 대 한 분석](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-c-cpp-code-for-defects)합니다.  
-  
 이 연습에서는 C/c + + 코드에 대 한 코드 분석 도구를 사용 하 여 잠재적인 코드 오류에 대 한 C/c + + 코드를 분석 하는 방법에 설명 합니다.  
   
  이 연습에서는 잠재적인 코드 오류에 대 한 C/c + + 코드를 분석 하려면 코드 분석을 사용 하는 프로세스를 통해 단계입니다.  

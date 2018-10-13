@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 형식 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336658e0a216f7fc24435715bf978ce5badefe5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564325"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271780"
 ---
 # <a name="registering-a-project-type"></a>프로젝트 형식 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 형식 등록](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-project-type)합니다.  
-  
 레지스트리 항목을 사용 하도록 설정 하는 새 프로젝트 형식을 만들면 만들어야 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 인식 및 프로젝트 형식을 사용 하 여 작동 합니다. 일반적으로 레지스트리 스크립트 (.rgs) 파일을 사용 하 여 이러한 레지스트리 항목을 만듭니다.  
   
  아래 예제에서 레지스트리에서 문을 기본 경로 제공 하 고 데이터 해당 하는 경우 뒤에 각 문에 대 한 레지스트리 스크립트에서 항목을 포함 하는 테이블입니다. 테이블은 스크립트 항목 및 문에 대 한 추가 정보를 제공합니다.  

@@ -1,7 +1,7 @@
 ---
 title: '연습: 구성 파일을 통한 데이터 소스 정의 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 48bd09cdd068adba49147222cc7458afe77c61e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552842"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253008"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 통한 데이터 소스 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 구성 파일을 사용 하 여 데이터 원본을 정의 하려면](https://docs.microsoft.com/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source)합니다.  
-  
 이 연습에서는 app.config 파일에 정의된 데이터 원본을 유닛 테스트에 사용하는 방법을 설명합니다. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 클래스에 사용될 수 있는 데이터 원본을 정의하는 app.config 파일을 만드는 방법을 알아봅니다. 이 연습에서 수행할 작업은 다음과 같습니다.  
   
 -   app.config 파일 만들기  

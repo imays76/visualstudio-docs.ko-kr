@@ -1,7 +1,7 @@
 ---
 title: 솔루션 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8735f841f7b26f03c30bc7f42b06b3ca5e260d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553256"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245802"
 ---
 # <a name="solution-configuration"></a>솔루션 구성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션 구성](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-configuration)합니다.  
-  
 솔루션 구성은 솔루션 수준 속성을 저장합니다. 동작을 직접 실행 합니다 **시작** (F5) 키 및 **빌드** 명령입니다. 기본적으로 이러한 명령을 빌드 및 디버그 구성을 시작 합니다. 두 명령 모두 솔루션 구성의 컨텍스트에서 실행 됩니다. 즉, 사용자가 시작 하 고 모든 활성 솔루션 설정을 통해 구성 된 빌드를 F5를 기대할 수 있습니다. 환경 빌드 및 실행에 연결할 때 프로젝트 대신 솔루션에 대 한 최적화 하도록 설계 되었습니다.  
   
  표준 Visual Studio 도구 모음 시작 단추 및 솔루션 구성 드롭다운 시작 단추의 오른쪽을 포함합니다. 이 목록에는 f5 키를 누를 때 시작할 구성을 선택, 자신의 솔루션 구성 만들기 또는 기존 구성을 편집할 수가 있습니다.  

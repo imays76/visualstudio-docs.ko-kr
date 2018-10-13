@@ -1,7 +1,7 @@
 ---
 title: '오류: 함수를 계산 합니다. &#39;함수&#39; 시간이 초과 되어 안전 하지 않은 방식으로 중단 하는 데 필요한 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,18 +13,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b78d4b8f433c925521a978ab5c3a5076f329c407
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5505597c156302f0799667a45239935914fa2fa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255289"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>오류: 함수를 계산 합니다. &#39;함수&#39; 시간이 초과 되어 안전 하지 않은 방식으로 중단 하는 데 필요한
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: 함수를 평가 &#39;함수&#39; 초과 되어 안전 하지 않은 방식으로 중단 하는 데 필요한](https://docs.microsoft.com/visualstudio/debugger/error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way)합니다.  
-  
 전체 메시지 텍스트: 시간이 초과 되어 안전 하지 않은 방식으로 중단 하는 데 필요한 'function' 함수를 계산 합니다. 대상 프로세스를 손상 있을 수 있습니다. 
 
 디버거는 쉽게.NET 개체의 상태를 검사 추가 코드 (일반적으로 속성 getter 메서드 및 ToString 함수)를 실행 하는 디버깅된 프로세스를 자동으로 실행 됩니다. 대부분의 모든 시나리오에서 이러한 함수는 신속 하 게 완료 하 고 디버깅을 훨씬 쉽게 확인 합니다. 그러나 디버거 샌드박스에서 응용 프로그램을 실행 하지 않습니다. 결과적으로, 속성 getter 또는 중단 된 네이티브 함수를 호출 하는 ToString 메서드를 복구할 수 없는 긴 시간 제한이 발생할 수 있습니다. 이 오류 메시지에서 발견 되 면이 발생 했습니다.

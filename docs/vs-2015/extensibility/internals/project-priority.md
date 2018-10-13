@@ -1,7 +1,7 @@
 ---
 title: 우선 순위를 프로젝트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57698e78c9228177e7f078cd725c1d4571e36d76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f3f541da86efbc7e3b77c24bb0bf0fcf7465709
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240541"
 ---
 # <a name="project-priority"></a>프로젝트 우선 순위
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 우선 순위](https://docs.microsoft.com/visualstudio/extensibility/internals/project-priority)합니다.  
-  
 프로젝트 항목에는 일반적으로 솔루션에 프로젝트가 하나만의 멤버인 경우 따라서 IDE 쉽게 확인할 수는 프로젝트가 항목을 열 때 사용 됩니다. 그러나 항목이 둘 이상의 프로젝트의 멤버인 경우 IDE 항목을 열기 위한 최상의 프로젝트를 확인할 수는 우선 순위 체계를 사용 합니다.  
   
  다음은 프로젝트 우선 순위 체계를 보여 줍니다.  

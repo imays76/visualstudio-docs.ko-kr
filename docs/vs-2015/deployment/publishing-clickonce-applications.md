@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 응용 프로그램 게시 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f1e15ed2a1b2c2224a5e51cd02cf7609e40d5d29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549457"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265644"
 ---
 # <a name="publishing-clickonce-applications"></a>ClickOnce 응용 프로그램 게시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 응용 프로그램 게시](https://docs.microsoft.com/visualstudio/deployment/publishing-clickonce-applications)합니다.  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 처음으로 게시할 때는 게시 마법사를 사용하여 게시 속성을 설정할 수 있습니다. 마법사에서는 일부 속성만 사용 가능하며 기타 모든 설정은 기본값으로 설정됩니다.  
   
  게시 속성을 추가로 변경에 **게시** 페이지에 **프로젝트 디자이너**합니다.  

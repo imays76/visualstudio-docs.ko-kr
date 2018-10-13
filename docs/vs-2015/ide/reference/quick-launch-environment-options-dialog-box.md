@@ -1,7 +1,7 @@
 ---
 title: 빠른 실행, 환경, 옵션 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bf2e22db54e064de6716d4ca1325a9e5435318f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e012e5ec4d9326cb1e6732ed78a8de8a60aeda8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541855"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269063"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 빠른 실행
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션 대화 상자, 환경, 빠른 실행](https://docs.microsoft.com/visualstudio/ide/reference/quick-launch-environment-options-dialog-box)합니다.  
-  
   
 **빠른 실행**을 사용하면 옵션, 템플릿, 메뉴 등의 IDE 자산에 대해 신속하게 검색하고 동작을 실행할 수 있습니다. 코드 및 기호를 검색하는 데는 **빠른 실행**을 사용할 수 없습니다. **빠른 실행** 검색 상자는 메뉴 모음의 오른쪽 위 모서리에 있으며 Ctrl+Q 키를 선택하여 액세스할 수 있습니다. 간단히 상자에 검색 문자열을 입력합니다. @ 이 포함된 문자열을 검색하려면 ”@@” 을 사용합니다.   
   

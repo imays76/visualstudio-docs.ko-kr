@@ -1,7 +1,7 @@
 ---
 title: RequireJS 용으로 IntelliSense 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246716"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>RequireJS용으로 IntelliSense 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 Visual Studio 2013 업데이트 4부터는 널리 사용되는 RequireJS JavaScript 파일 및 모듈식 로더가 지원됩니다. RequireJS를 사용하면 코드 모듈 간의 종속성을 더 쉽게 정의하고 필요할 때만 동적으로 모듈을 로드할 수 있습니다. RequireJS가 사용되는 JavaScript 코드를 작성할 때는 코드 내에서 `require()` 호출을 통해 참조하거나 모듈 정의에서 참조한 모듈에 대해 IntelliSense 제안 사항이 제공됩니다.  
   
  기본적으로 Visual Studio는 RequireJS를 지원하기 위한 매우 기본적인 구성을 지원하지만 일반적으로는 사용자 지정 구성 설정을 지정(라이브러리에 대한 별칭을 정의)합니다. 이 항목에서는 프로젝트의 고유한 설정을 사용하도록 Visual Studio를 사용자 지정하는 여러 가지 방법을 설명합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 프로세스 속성 대화 상자, 메모리 탭 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45d7933b70555a3c80a094ea8cd3f982e232f5de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 724e760c585f0e6423164e1a6bb28aefbf696c2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245801"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>프로세스 속성 대화 상자, 메모리 탭
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로세스 속성 대화 상자, 메모리 탭](https://docs.microsoft.com/visualstudio/debugger/memory-tab-process-properties-dialog-box)합니다.  
-  
 사용 된 **메모리** 프로세스가 메모리를 사용 하는 방법을 표시 하는 탭 합니다. 표시할 합니다 [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md), 포커스를 이동 하는 [프로세스 뷰에](../debugger/processes-view.md) 창입니다. 선택한 프로세스 노드 트리에서 선택 **속성** 에서 합니다 **보기** 메뉴.  
   
  다음 설정을 사용할 합니다 **메모리** 탭:  
