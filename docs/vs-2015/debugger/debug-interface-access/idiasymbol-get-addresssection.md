@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_addresssection | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1b0b71f904757684772895b9f0dd5a9cffc277a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccf331ff282c2a53853cacadb2433f6b4412074a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206767"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiasymbol:: Get_addresssection](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-addresssection)합니다.  
-  
 섹션에 대 한 부분 주소 위치를 검색합니다. 사용 시기를 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 로 설정 된 `LocIsStatic`합니다.  
   
 ## <a name="syntax"></a>구문  

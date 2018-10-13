@@ -1,7 +1,7 @@
 ---
 title: 레거시 워크플로 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f47c3731c4a240198a5bd08adaeebc32d98e631d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e35b16d10bf59b4ae8c91de2a5281d540c0e67c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210602"
 ---
 # <a name="debugging-legacy-workflows"></a>레거시 워크플로 디버깅
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]의 레거시 [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]를 사용하여 .NET Framework 3.0 또는 3.5를 대상으로 하는 [!INCLUDE[wf](../includes/wf-md.md)] 응용 프로그램을 빌드하는 경우 다른 프로그램의 경우와 같이 중단점을 설정하고, 프로세스에 연결하고, 스레드 및 호출 스택을 검사하는 방법으로 워크플로를 디버깅할 수 있습니다. 뿐만 아니라 원격으로 디버깅할 수도 있습니다.  

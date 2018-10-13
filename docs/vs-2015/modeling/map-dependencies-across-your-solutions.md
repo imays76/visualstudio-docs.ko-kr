@@ -1,12 +1,12 @@
 ---
 title: 솔루션 전체의 종속성 매핑 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -32,18 +32,16 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 06dc2d18ab6641847e2f0edb0d34cb671bca28a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200774"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>솔루션 전체의 종속성 매핑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션 전체의 종속성 매핑](https://docs.microsoft.com/visualstudio/modeling/map-dependencies-across-your-solutions)합니다.  
-  
 코드 간의 종속성을 파악하려는 경우 코드 맵을 만들어 해당 코드를 시각화합니다. 그러면 전체 파일과 코드 줄을 확인하지 않고도 여러 코드가 서로 맞는지 파악할 수 있습니다.  
   
  ![솔루션 전체의 종속성 보기](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
@@ -289,7 +287,7 @@ ms.locfileid: "47543458"
      ![필터 창을 사용 하 여 디스플레이 단순화](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ##  <a name="SeeSourceHeader"></a> C 및 C++ 소스 파일과 헤더 파일 간 종속성 확인  
- C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝트에 대해 찾아보기 정보 컴파일러 옵션(**/FR**)을 설정합니다. 참조 [/FR, /Fr (만듭니다. Sbr 파일)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)합니다. 그렇지 않으면 메시지가 표시되고 이 옵션을 설정하라는 메시지가 나타납니다. **확인**을 선택하면 현재 맵에 대해서만 옵션이 설정됩니다. 이후 모든 맵에 대해 메시지를 숨기도록 선택할 수 있습니다. 이 메시지를 숨기는 경우 다시 표시되도록 설정할 수 있습니다. 이렇게 하려면 다음 레지스트리 키를 `0` 으로 설정하거나 해당 키를 삭제합니다.  
+ C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝트에 대해 찾아보기 정보 컴파일러 옵션(**/FR**)을 설정합니다. [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)를 참조하세요. 그렇지 않으면 메시지가 표시되고 이 옵션을 설정하라는 메시지가 나타납니다. **확인**을 선택하면 현재 맵에 대해서만 옵션이 설정됩니다. 이후 모든 맵에 대해 메시지를 숨기도록 선택할 수 있습니다. 이 메시지를 숨기는 경우 다시 표시되도록 설정할 수 있습니다. 이렇게 하려면 다음 레지스트리 키를 `0` 으로 설정하거나 해당 키를 삭제합니다.  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
@@ -315,12 +313,12 @@ ms.locfileid: "47543458"
 |**문제**|**가능한 원인**|**해결**|  
 |---------------|------------------------|--------------------|  
 |코드 맵을 생성하지 못했습니다.|솔루션에 프로젝트가 성공적으로 만들어지지 않습니다.|발생한 빌드 오류를 수정하고 맵을 재생성합니다.|  
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 코드 맵을 생성 하려고 할 때가 응답 하지 않음 합니다 **아키텍처** 메뉴.|프로그램 데이터베이스 파일(.pdb)이 손상될 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|솔루션을 다시 빌드한 다음 다시 시도합니다.|  
-|IntelliSense 검색 데이터베이스에 대한 특정 설정을 사용할 수 없습니다.|특정 IntelliSense 설정을 비활성화 될 수 있습니다 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **옵션** 대화 상자.|설정을 사용할 수 있도록 설정합니다.<br /><br /> 참조 [옵션, 텍스트 편집기, C/c + +, 고급](../ide/reference/options-text-editor-c-cpp-advanced.md)합니다.|  
-|**알 수 없는 메서드** 라는 메시지가 메서드 노드에 나타납니다.<br /><br /> 이 문제는 메서드의 이름을 확인할 수 없기 때문에 발생합니다.|이진 파일에 기본 재배치 테이블이 없을 수 있습니다.|링커에서 **/FIXED:NO** 옵션을 설정합니다.<br /><br /> 참조 [/FIXED (고정된 기준 주소)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)합니다.|  
-||프로그램 데이터베이스 파일(.pdb)이 빌드되지 않았을 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|링커에서 **/DEBUG** 옵션을 설정합니다.<br /><br /> 참조 [/debug (디버그 정보 생성)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)합니다.|  
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 아키텍처 **메뉴에서 코드 맵을 생성하려고 하면** 가 응답하지 않습니다.|프로그램 데이터베이스 파일(.pdb)이 손상될 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|솔루션을 다시 빌드한 다음 다시 시도합니다.|  
+|IntelliSense 검색 데이터베이스에 대한 특정 설정을 사용할 수 없습니다.|특정 IntelliSense 설정을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**옵션** 대화 상자에서 사용하지 못할 수 있습니다.|설정을 사용할 수 있도록 설정합니다.<br /><br /> 참조 [옵션, 텍스트 편집기, C/c + +, 고급](../ide/reference/options-text-editor-c-cpp-advanced.md)합니다.|  
+|**알 수 없는 메서드** 라는 메시지가 메서드 노드에 나타납니다.<br /><br /> 이 문제는 메서드의 이름을 확인할 수 없기 때문에 발생합니다.|이진 파일에 기본 재배치 테이블이 없을 수 있습니다.|링커에서 **/FIXED:NO** 옵션을 설정합니다.<br /><br /> [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)를 참조하세요.|  
+||프로그램 데이터베이스 파일(.pdb)이 빌드되지 않았을 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|링커에서 **/DEBUG** 옵션을 설정합니다.<br /><br /> [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)를 참조하세요.|  
 ||.pdb 파일을 열 수 없거나 예상되는 위치에서 찾을 수 없습니다.|.pdb 파일이 예상되는 위치에 있는지 확인합니다.|  
-||디버그 정보가 .pdb 파일에서 제거되었습니다.|**/PDBSTRIPPED** 옵션이 링커에서 사용된 경우 전체 .pdb 파일을 대신 포함합니다.<br /><br /> 참조 [/PDBSTRIPPED (전용 기호 제거)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)합니다.|  
+||디버그 정보가 .pdb 파일에서 제거되었습니다.|**/PDBSTRIPPED** 옵션이 링커에서 사용된 경우 전체 .pdb 파일을 대신 포함합니다.<br /><br /> [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)를 참조하세요.|  
 ||호출자가 함수가 아니며 이진 파일의 썽크이거나 데이터 섹션의 포인터입니다.|호출자가 썽크이면 썽크를 방지하기 위해 `_declspec(dllimport)`를 사용해 봅니다.<br /><br /> 참조<br /><br /> -   [일반 규칙 및 제한 사항](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [__Declspec (dllimport)을 사용 하 여 함수 호출 가져오기](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ##  <a name="RenderMoreQuickly"></a> 코드 맵을 더 빠르게 렌더링  

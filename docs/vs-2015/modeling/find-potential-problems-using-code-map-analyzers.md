@@ -1,12 +1,12 @@
 ---
 title: 코드 맵 분석기를 사용 하 여 잠재적 문제 찾기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemapanalyzers
 helpviewer_keywords:
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b15a6d95e2a64aa09d57cb4fba02ab0369be5799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccac7f869c0395839e2c63354558df0389ced36b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204804"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>코드 맵 분석기를 사용하여 잠재적 문제 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드를 사용 하 여 잠재적인 문제를 발견 매핑할 분석기](https://docs.microsoft.com/visualstudio/modeling/find-potential-problems-using-code-map-analyzers)합니다.  
-  
 코드 맵에서 분석기를 실행하여 지나치게 복잡하거나 개선이 필요한 코드를 식별할 수 있습니다. 예를 들어 다음 분석기를 사용할 수 있습니다.  
   
 |**다음을 포함하는 코드 찾기**|**다음 영역을 검사하여 여부 확인**|  

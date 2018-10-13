@@ -1,7 +1,7 @@
 ---
 title: ADO.NET을 사용 하 여 간단한 데이터 응용 프로그램 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204311"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용 하 여 간단한 데이터 응용 프로그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ADO.NET을 사용 하 여 간단한 데이터 응용 프로그램을 만들](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet)합니다.  
-  
   
 데이터베이스의 데이터를 조작하는 응용 프로그램을 만들면 연결 문자열 정의, 데이터 삽입 및 저장 프로시저 실행과 같은 기본 작업을 수행합니다. 이 항목에 따라 Visual C# 또는 Visual Basic 및 ADO.NET을 사용 하 여 간단한 Windows Forms "데이터 폼" 응용 프로그램 내에서 데이터베이스와 상호 작용 하는 방법을 확인할 수 있습니다.  모든.NET 데이터 기술-LINQ to SQL과 Entity Framework 데이터 집합을 포함 하 여, 궁극적으로이 문서에 나와 있는 것과 매우 유사한 단계를 수행 합니다.  
   
@@ -221,7 +219,7 @@ ms.locfileid: "47552731"
   
     |주석|설명|  
     |-------------|-----------------|  
-    |Util-1|추가 된 `System.Configuration` 네임 스페이스입니다.|  
+    |Util-1|`System.Configuration` 네임스페이스를 추가합니다.|  
     |Util-2|`returnValue` 변수를 정의하고 `null`(C#) 또는 `Nothing`(Visual Basic)으로 초기화합니다.|  
     |Util-3|입력 한 경우에 `connString` 연결 문자열의 이름으로는 **속성** 지정 해야 창 `"SimpleDataApp.Properties.Settings.connString"` (C#) 또는 `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) 코드에서입니다.|  
   

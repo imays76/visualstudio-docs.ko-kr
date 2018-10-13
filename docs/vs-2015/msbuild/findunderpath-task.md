@@ -1,7 +1,7 @@
 ---
 title: FindUnderPath 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1bfee95e8fddc5fa296a3559a8175187a830911
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6ff04bad3f2f8c18175c8e96647fa1217c44725
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565297"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198538"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [FindUnderPath 작업](https://docs.microsoft.com/visualstudio/msbuild/findunderpath-task)합니다.  
-  
   
 지정된 항목 컬렉션의 항목에 지정된 폴더 및 모든 하위 폴더에 있는 경로가 있는지를 확인합니다.  
   

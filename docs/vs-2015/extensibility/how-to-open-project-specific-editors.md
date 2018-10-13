@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로젝트별 편집기 열기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a529237b8aa77fbb909278d5a7accd2e9a45265
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 255d95d92aae3f73e4c5f77a6f7a5a4219d73d19
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198148"
 ---
 # <a name="how-to-open-project-specific-editors"></a>방법: 프로젝트별 편집기 열기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 프로젝트별 편집기 열기](https://docs.microsoft.com/visualstudio/extensibility/how-to-open-project-specific-editors)합니다.  
-  
 프로젝트에서 열려 있는 항목 파일을 기본적으로 해당 프로젝트에 대 한 특정 편집기에 바인딩되어 있으면 프로젝트 프로젝트별 편집기를 사용 하 여 파일을 열어야 합니다. 파일은 편집기를 선택 하는 IDE 메커니즘으로 위임할 수 없습니다. 예를 들어 표준 비트맵 편집기를 사용 하는 대신 프로젝트에 고유한 파일의 정보를 인식 하는 특정 비트맵 편집기를 지정 하려면이 프로젝트별 편집기 옵션을 사용할 수 있습니다.  
   
  IDE 호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> 메서드 특정 프로젝트에서 파일을 열어야 한다는 결정 합니다. 자세한 내용은 [열린 파일 명령을 사용 하 여 표시 파일](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)합니다. 구현 하려면 다음 지침을 따르세요는 `OpenItem` 메서드를 사용 하려면 프로젝트 프로젝트별 편집기를 사용 하 여 파일을 엽니다.  

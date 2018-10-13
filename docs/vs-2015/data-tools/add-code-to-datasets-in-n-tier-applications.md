@@ -1,7 +1,7 @@
 ---
 title: N 계층 응용 프로그램에서 데이터 집합에 코드를 추가 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74786c7fc32057881afd05b62dd2f48dfddbaffe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48f27d2e1bb72b7c5c0aaf1a66673beae003dd66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202217"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 계층 응용 프로그램에서 데이터 집합에 코드 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [n 계층 응용 프로그램에서 데이터 집합에 코드 추가](https://docs.microsoft.com/visualstudio/data-tools/add-code-to-datasets-in-n-tier-applications)합니다.  
-  
   
 데이터 집합에 대 한 partial 클래스 파일을 만들고 코드를 추가 하 여 데이터 집합의 기능을 확장할 수 있습니다 (코드를 추가 하는 대신 합니다 *DatasetName*합니다. Dataset.Designer 파일)입니다. Partial 클래스를 여러 실제 파일에서 나눌 특정 클래스에 대 한 코드를 사용 합니다. 자세한 내용은 [부분](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) 하거나 [Partial 클래스 및 메서드](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)합니다.  
   

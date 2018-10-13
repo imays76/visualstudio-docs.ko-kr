@@ -1,7 +1,7 @@
 ---
 title: '자습서 2: 시간이 지정된 수학 퀴즈 만들기 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ec4c1bd1c01229ab0c8f32a78e2b7483a1efc06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205076"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [자습서 2: 시간이 지정 된 수학 퀴즈 만들기](https://docs.microsoft.com/visualstudio/ide/tutorial-2-create-a-timed-math-quiz)합니다.  
-  
 이 자습서에서는 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드합니다. 여기에서는 다음과 같은 작업을 수행하는 방법에 대해 배우게 됩니다.  
   
 -   `Random` 클래스를 사용하여 난수를 생성합니다.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 형식 간의 상속 보기(클래스 디자이너) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 090f2475a095607f22b30a328f6ab3c9ed4fc8e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31d5c57408765b74ec736b8ec5c6dd8edc9d8a01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202023"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>방법: 형식 간의 상속 보기(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 뷰 형식 간의 상속 (클래스 디자이너)](https://docs.microsoft.com/visualstudio/ide/how-to-view-inheritance-between-types-class-designer)합니다.  
-  
 클래스 디자이너의 클래스 다이어그램에서 기본 형식과 파생 형식 간에 상속 관계(있는 경우)를 찾을 수 있습니다. 두 형식 간에 상속 관계가 없는 경우 새로 만들려면 [방법: 형식 간의 상속 만들기(클래스 디자이너)](../ide/how-to-create-inheritance-between-types-class-designer.md)를 참조하세요.  
   
 ### <a name="to-find-the-base-type"></a>기본 형식을 찾으려면  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 라이브러리의 기호 식별 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f10cc65d30f8d9b2d58fa02822494ae7e6a6940
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1aaeb8046ae83b6a53dc40e411a907f7dcf7a1a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205922"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>방법: 라이브러리의 기호 식별
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 라이브러리의 기호 식별](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-identify-symbols-in-a-library)합니다.  
-  
 기호 검색 도구는 기호의 계층적 뷰를 표시합니다. 기호는 네임 스페이스, 개체, 클래스, 클래스 멤버 및 다른 언어 요소를 나타냅니다.  
   
  계층의 각 기호를 기호 라이브러리에 의해 전달 된 탐색 정보로 식별할 수 있습니다는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 다음 인터페이스를 통해 개체 관리자:  

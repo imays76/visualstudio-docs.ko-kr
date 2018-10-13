@@ -1,7 +1,7 @@
 ---
 title: VSIX 색 컴파일러 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08358c8d4b77834bf0dfefe626891de44b2b754c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3594d587f9d4968127b6e81a5c5e3b5549a9df89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551596"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207326"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 색 컴파일러
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSIX 색 컴파일러](https://docs.microsoft.com/visualstudio/extensibility/internals/vsix-color-compiler)합니다.  
-  
 Visual Studio 확장명 색 컴파일러 도구는 기존 Visual Studio 테마에 대 한 색을 나타내는.xml 파일을 사용 하는 콘솔 응용 프로그램 및 변환 하는.pkgdef 파일에 Visual Studio에서 해당 색을 사용할 수 있습니다. .Xml 파일 간의 차이점을 비교 하기가 쉽지 이기 때문에이 도구는 소스 제어에서 사용자 지정 색을 관리 하는 데 유용 합니다. 것도 연결 될 수 있습니다 빌드 환경에 빌드 출력이 잘못.pkgdef 파일을 되도록 합니다.  
   
  **테마 XML 스키마**  

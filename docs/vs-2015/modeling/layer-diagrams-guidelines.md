@@ -1,7 +1,7 @@
 ---
 title: '레이어 다이어그램: 지침 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202581"
 ---
 # <a name="layer-diagrams-guidelines"></a>레이어 다이어그램: 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [종속성 다이어그램: 지침](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines)합니다.  
-  
 만들어 높은 수준에서 앱의 아키텍처를 설명 *레이어 다이어그램* Visual Studio에서. 레이어 다이어그램에서 코드의 유효성을 검사하여 코드가 디자인과 일치하는지 확인합니다. 빌드 프로세스에 레이어 유효성 검사를 포함할 수도 있습니다. 참조 [Channel 9 비디오: 디자인 및 아키텍처 레이어 다이어그램을 사용 하 여 유효성 검사](http://go.microsoft.com/fwlink/?LinkID=252073)합니다.  
   
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  

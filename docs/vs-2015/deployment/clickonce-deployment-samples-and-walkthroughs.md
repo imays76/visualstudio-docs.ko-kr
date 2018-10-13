@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 배포 샘플 및 연습 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7d83d296ff0d5a8578f75487e6bb1863eb33e993
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc16747838347810e12e293d718b355f492a158e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554049"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207222"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 배포 샘플 및 연습
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 배포 샘플 및 연습](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)합니다.  
-  
 이 섹션에서는 샘플 응용 프로그램, 예제 코드 및 구문, 구조 및 Windows Forms, WPF 및 콘솔 응용 프로그램을 배포 하는 데 사용 되는 기술을 설명 하는 단계별 연습을 포함 합니다.  
   
  샘플 코드는 교육 목적 제공 및 수정 하지 않고 배포 된 솔루션에서 사용할 수 없습니다. 특히 보안 더욱 주의를 기울여야 합니다.  

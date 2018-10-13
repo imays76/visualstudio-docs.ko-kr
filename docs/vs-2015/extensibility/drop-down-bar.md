@@ -1,7 +1,7 @@
 ---
 title: 드롭다운 표시줄 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3fd7482878e218b263dae6bc6195c930ea71876
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e66dcc1353da2eab6a3fbea365a2a78c564e98d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203374"
 ---
 # <a name="drop-down-bar"></a>드롭다운 표시줄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [드롭 다운 모음](https://docs.microsoft.com/visualstudio/extensibility/drop-down-bar)합니다.  
-  
 드롭다운 표시줄 코드 창의 맨 위에 있는 제공 되 고 두 개의 드롭다운 목록이 포함 되어 있습니다.  
   
 ## <a name="drop-down-bar-interfaces"></a>드롭다운 표시줄 인터페이스  

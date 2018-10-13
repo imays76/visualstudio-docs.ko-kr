@@ -1,7 +1,7 @@
 ---
 title: CompilandEnv | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af2eddcf6c1abebdd829297bf196fd7b8503d2b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c0579595814e882cb7cab73cf7fd20ae6f267e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555416"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199266"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CompilandEnv](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compilandenv)합니다.  
-  
 컴파일러는 기호를 사용 하 여 추가 환경 변수를 포함할 수 있습니다. 하나의 `SymTagCompilandEnv` 이러한 변수가 각각에 대 한 기호입니다.  
   
 ## <a name="properties"></a>속성  

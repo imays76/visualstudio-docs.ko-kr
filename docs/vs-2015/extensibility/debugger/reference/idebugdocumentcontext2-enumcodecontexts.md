@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::EnumCodeContexts | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f8628851a8db78acc70e82a0248b5e6723e7bb3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82b71ed6ca6efa3c216299e53107fef97c820d94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207755"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugDocumentContext2::EnumCodeContexts](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts)합니다.  
-  
 이 문서 컨텍스트와 연결 된 모든 코드 컨텍스트 목록을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: 소스 비 표시 개요에서 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7f02a57be8d267126deb6736c9e0a690b1ac3e2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209042"
 ---
 # <a name="in-source-suppression-overview"></a>ISS 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 비 표시 개요에서](https://docs.microsoft.com/visualstudio/code-quality/in-source-suppression-overview)합니다.  
-  
 소스에서 추가 하 여 관리 코드에서 코드 분석 위반을 무시 또는 표시 하지 않을 수 있다는 합니다 **SuppressMessage** 위반을 일으키는 코드 세그먼트에는 특성입니다. 합니다 **SuppressMessage** CODE_ANALYSIS 컴파일 기호는 컴파일 타임에 정의 된 경우에 관리 코드 어셈블리의 IL 메타 데이터에 포함 된 조건부 특성입니다.  
   
  C++/CLI에서 CA_SUPPRESS_MESSAGE 또는 CA_GLOBAL_SUPPRESS_MESSAGE 매크로를 헤더 파일에 사용하여 특성을 추가합니다.  

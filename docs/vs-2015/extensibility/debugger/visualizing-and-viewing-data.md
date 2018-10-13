@@ -1,7 +1,7 @@
 ---
 title: 데이터 시각화 및 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10d83291a8d5820241ff2837b6b4a773c7b6fdba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a88969139c993163c88f2dc16fc8cbdb7a62feb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202776"
 ---
 # <a name="visualizing-and-viewing-data"></a>데이터 시각화 및 보기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시각화 및 데이터 보기](https://docs.microsoft.com/visualstudio/extensibility/debugger/visualizing-and-viewing-data)합니다.  
-  
 개발자에 게 신속 하 게 의미 있는 방식으로 시각화 도우미 및 데이터를 제공 하는 사용자 지정 뷰어를 입력 합니다. 식 계산기 (EE) 수 뿐만 아니라 타사 형식 시각화 도우미를 지원 뿐만 아니라 자체 사용자 지정 뷰어를 제공 합니다.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 얼마나 많은 형식 시각화 도우미 및 사용자 지정 뷰어는 호출 하 여 개체의 형식과 연결을 결정 합니다 [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 메서드. Visual Studio를 호출 하는 경우 하나 이상의 형식 시각화 도우미 또는 사용자 지정 뷰어에서 사용할 수는 [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 뷰어와 시각화 도우미의 목록을 검색 하는 방법 (목록을 실제로 `CLSID`구현 하는 s를 시각화 도우미 및 뷰어) 사용자에 게 표시 합니다.  

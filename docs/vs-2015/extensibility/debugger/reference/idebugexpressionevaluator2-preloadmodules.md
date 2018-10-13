@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator2::PreloadModules | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65e9096c11c54c0ae8d7b4bd63b2cf3d26b284cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a26018805f3e716a7d1ee61dc9862ed6021c09f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208860"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugExpressionEvaluator2::PreloadModules](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpressionevaluator2-preloadmodules)합니다.  
-  
 지정 된 기호 공급자로 지정 된 모듈을 미리 로드 합니다.  
   
 ## <a name="syntax"></a>구문  

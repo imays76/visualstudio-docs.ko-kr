@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 편집기의 문서 데이터 및 문서 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6df543f832fa85ea6d74fc2846355fbf9deab912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 258718a99e774b7098ff29dd66efc51a57062475
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206910"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>사용자 지정 편집기의 문서 데이터 및 문서 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [문서 데이터 및 사용자 지정 편집기의 문서 뷰](https://docs.microsoft.com/visualstudio/extensibility/document-data-and-document-view-in-custom-editors)합니다.  
-  
 사용자 지정 편집기를 두 부분으로 구성 됩니다: 문서 데이터 개체 및 문서 뷰 개체입니다. 이름으로 문서 데이터 개체 표시 될 텍스트 데이터를 나타내고 문서 뷰 개체 (또는 "보기") 문서 데이터 개체를 표시 하는 하나 이상의 windows를 나타냅니다.  
   
 ## <a name="document-data-object"></a>문서 데이터 개체  

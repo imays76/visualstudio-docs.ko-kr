@@ -1,7 +1,7 @@
 ---
 title: 방법:는 XSD 스키마 파일 만들기 및 편집 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8d8fd2506dbd0e9bd01debdb94ac5ae29f35421
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d843f9bf40b0cfee0d643a28a6757d9a491f0e8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541306"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210407"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>방법: XSD 스키마 파일 만들기 및 편집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법:는 XSD 스키마 파일 만들기 및 편집](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-and-edit-an-xsd-schema-file)합니다.  
-  
   
 이 항목에서는 새 XML 스키마(XSD) 파일을 만들고 XSD 파일에 콘텐츠를 추가하는 방법에 대해 설명합니다.  
   

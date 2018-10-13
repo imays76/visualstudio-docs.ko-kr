@@ -1,7 +1,7 @@
 ---
 title: 'CA3075: 안전 하지 않은 DTD 처리 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7c8a7fefe3b39c68040101e73ec678d92a81a875
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b201631d86d0fd36a0f35d2842400473abf5fc3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591262"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201580"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: 안전하지 않은 DTD 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA3075: 안전 하지 않은 DTD 처리](https://docs.microsoft.com/visualstudio/code-quality/ca3075-insecure-dtd-processing)합니다.
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -36,7 +33,7 @@ ms.locfileid: "47591262"
  안전하지 않은 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 인스턴스를 사용하거나 외부 엔터티 소스를 참조하면 파서는 신뢰할 수 없는 입력을 허용하고 공격자에게 중요 한 정보를 공개할 수 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- [문서 유형 정의 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 정의 된 대로 XML 파서는 문서의 유효성을 확인할 수 있습니다 하는 두 가지 방법 중 하나인 합니다 [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)합니다. 이 규칙은 속성 및 개발자 가능성에 대 한 경고를 신뢰할 수 없는 데이터가 허용 되는 인스턴스에 찾아 [정보 공개](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 야기할 수 있는 위협 [서비스 거부 (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 공격입니다. 다음 경우에 이 규칙이 트리거됩니다.
+ [DTD(문서 종류 정의)](https://msdn.microsoft.com/library/aa468547.aspx) 는 XML 파서가  [W3C(World Wide Web Consortium) XML(Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)에 정의된 대로 문서의 유효성을 확인할 수 있는 두 가지 방법 중 하나입니다. 이 규칙은 신뢰할 수 없는 데이터가 허용되는 속성 및 인스턴스를 찾아 [DoS(서비스 거부)](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 공격을 야기할 수 있는 잠재적인 [Information Disclosure](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 위협을 개발자에게 경고합니다. 다음 경우에 이 규칙이 트리거됩니다.
 
 -   <xref:System.Xml.XmlReader> 를 사용하여 외부 XML 엔터티를 확인하는 <xref:System.Xml.XmlUrlResolver>인스턴스에서 DtdProcessing이 사용되도록 설정된 경우
 
@@ -70,7 +67,7 @@ ms.locfileid: "47591262"
 
  .NET 4 이상
 
--   DtdProcessing 속성을 설정 하 여 신뢰할 수 없는 소스를 처리 하는 경우 DtdProcessing을 설정 하지 않도록 [Prohibit 또는 Ignore](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
+-   DtdProcessing 속성을 [Prohibit 또는 Ignore](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)로 설정하여 신뢰할 수 없는 소스를 처리하는 경우 DtdProcessing을 사용할 수 없도록 합니다.
 
 -   Load() 메서드가 모든 InnerXml 경우에서 XmlReader 인스턴스를 사용하는지 확인합니다.
 

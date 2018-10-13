@@ -1,7 +1,7 @@
 ---
 title: Vspackage의 보안 모범 사례 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e294995a25b0369ab839680a97fe670f9a99508d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80c27618582f42f1647e49cbf3f64d6b493dfd8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203595"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>VSPackage의 보안 모범 사례
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Vspackage의 보안 모범 사례](https://docs.microsoft.com/visualstudio/extensibility/internals/best-practices-for-security-in-vspackages)합니다.  
-  
 설치 하는 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 컴퓨터에서 관리자 자격 증명을 사용 하 여 컨텍스트 실행 수. 보안 및 배포의 기본 단위를 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 응용 프로그램은 합니다 [Vspackage](../../extensibility/internals/vspackages.md)합니다. 사용 하 여 VSPackage를 등록 해야 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], 관리자 자격 증명도 필요 합니다.  
   
  관리자에는 레지스트리 및 파일 시스템에 작성 하 고 모든 코드를 실행할 수 모든 권한을 가집니다. 개발, 배포 하 고, VSPackage를 설치 하려면 이러한 권한이 있어야 합니다.  

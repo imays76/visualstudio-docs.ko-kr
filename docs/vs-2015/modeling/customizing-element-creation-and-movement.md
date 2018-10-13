@@ -1,7 +1,7 @@
 ---
 title: 요소 만들기 및 이동 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 589c8c9be01477a2319943b47b329d09a80dc16f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203530"
 ---
 # <a name="customizing-element-creation-and-movement"></a>요소 만들기 및 이동 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 요소 만들기 및 이동](https://docs.microsoft.com/visualstudio/modeling/customizing-element-creation-and-movement)합니다.  
-  
 요소를 끌 수 다른 도구에서 또는 붙여넣기 또는 이동 작업을 허용할 수 있습니다. 지정 된 관계를 사용 하 여 대상 요소에 연결 하는 이동된 된 요소를 사용할 수 있습니다.  
   
  요소 병합 지시문 (EMD) 이상의 모델 요소 경우 어떻게 할지 지정 *병합* 다른 모델 요소에 있습니다. 이런 경우:  

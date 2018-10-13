@@ -1,7 +1,7 @@
 ---
 title: SDI 서버 응용 프로그램 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c6ee3ee3a1273c02dd094f89c099230024eabfc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba975d21e1fbef2d32b45dd4ebdc758e8b6cf575
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199071"
 ---
 # <a name="sdi-server-applications"></a>SDI 서버 응용 프로그램
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SDI 서버 응용 프로그램](https://docs.microsoft.com/visualstudio/debugger/sdi-server-applications)합니다.  
-  
 SDI 서버 응용 프로그램을 디버깅 하는 경우를 지정 해야 합니다 `/Embedding` 또는 `/Automation` 에 **명령줄 인수** 속성에는 *프로젝트* C/c + +, C#에 대 한 속성 페이지 대화 상자 또는 Visual Basic 프로젝트입니다.  
   
  이 명령줄 인수를 사용하면 컨테이너에서 실행하는 것처럼 디버거에서 서버 응용 프로그램을 실행할 수 있습니다. 그런 다음 프로그램 관리자나 파일 관리자에서 컨테이너를 시작하면 컨테이너는 디버거에서 시작된 서버 인스턴스를 사용합니다.  

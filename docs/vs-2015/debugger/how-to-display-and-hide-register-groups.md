@@ -1,7 +1,7 @@
 ---
 title: '방법: 레지스터 그룹 표시 및 숨기기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3060a21d9ffbaf079696eef83f01b7f0787ed59a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206494"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>방법: 레지스터 그룹 표시 및 숨기기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 레지스터 그룹 숨기기 및 표시](https://docs.microsoft.com/visualstudio/debugger/how-to-display-and-hide-register-groups)합니다.  
-  
 합니다 **등록** 기간은 주소 수준 디버깅을 활성화 하는 경우에 사용할 수 있습니다 합니다 **옵션** 대화 상자에서 **디버깅** 노드를 **일반**범주입니다.  
   
  간단 하 게 표시 합니다 **등록** 창 레지스터를 그룹으로 구성 합니다. 마우스 오른쪽 단추로 클릭할 경우 합니다 **등록** 창을 표시 하거나 아래 절차에 따라 필요에 따라 숨길 수 있습니다 이러한 그룹을 포함 하는 바로 가기 메뉴가 표시 됩니다.  

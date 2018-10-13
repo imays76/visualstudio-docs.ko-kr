@@ -1,7 +1,7 @@
 ---
 title: Windows Installer 패키지를 authoring | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9b56ea9120e3cbee18d8018420a94748dc52eec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ed245a1d26be951f6cada4b8ae58c158102d190
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541785"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198280"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Windows Installer 패키지 작성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows Installer 패키지를 Authoring](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-a-windows-installer-package)합니다.  
-  
 데이터 드라이브는 Windows Installer 모델입니다. 레지스트리 항목을 쓰고 파일을 복사 하는 절차 스크립트를 작성 하는 대신 예를 들어 만든 파일 및 레지스트리 데이터를 포함 하는 데이터베이스 테이블의 행과 열입니다.  
   
 ## <a name="database-entries"></a>데이터베이스 항목  

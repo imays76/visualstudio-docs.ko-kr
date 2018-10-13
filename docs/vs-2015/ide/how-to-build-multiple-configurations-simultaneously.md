@@ -1,7 +1,7 @@
 ---
 title: '방법: 여러 구성 동시 빌드 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bca6142edff2eea293db50f0af9b8f86a4fc47dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e34be1203ba97c23302bd28dcf7578ba6cffd2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542514"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205584"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>방법: 여러 구성 동시 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 여러 구성 동시 빌드](https://docs.microsoft.com/visualstudio/ide/how-to-build-multiple-configurations-simultaneously)합니다.  
-  
 **일괄 빌드** 대화 상자를 통해 여러 빌드 구성 또는 모든 빌드 구성을 동시에 사용하여 대부분의 프로젝트 형식을 빌드할 수 있습니다. 그러나 다음과 같은 유형의 프로젝트는 여러 빌드 구성에서 동시에 빌드할 수 없습니다.  
   
 1.  JavaScript를 사용하여 빌드된 Windows용 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱  

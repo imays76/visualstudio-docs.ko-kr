@@ -1,7 +1,7 @@
 ---
 title: 클래스 다이어그램에 UML 작업의 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2392cf951c5f25a5b287a1d56338b03bebb27e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207027"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML 클래스 다이어그램 작업의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [클래스 다이어그램에 UML 작업의 속성](https://docs.microsoft.com/visualstudio/modeling/properties-of-operations-on-uml-class-diagrams)합니다.  
-  
 UML 클래스 다이어그램을 추가할 수 있습니다 *operations* 클래스 및 인터페이스에 있습니다. 작업은 클래스 또는 인터페이스 인스턴스에서 수행할 수 있는 메서드 또는 함수입니다.  
   
  작업을 추가 하는 클래스 또는 인터페이스를 마우스 오른쪽 단추로 클릭, 가리킨 **추가**를 클릭 하 고 **작업**합니다.  

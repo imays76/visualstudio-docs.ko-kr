@@ -1,7 +1,7 @@
 ---
 title: 여러 프로젝트 연결 간 설정 적용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc2be78900e7bef33be138dfc8ed9dc1531af7c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81d6a1f540314863e4e24b3b91c7f4112e0af8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197615"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>여러 프로젝트 연결 간 설정 적용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [응용 프로그램의 설정에서 여러 프로젝트 연결](https://docs.microsoft.com/visualstudio/extensibility/internals/application-of-settings-across-multiple-project-connections)합니다.  
-  
 소스 제어 플러그 인 원본 제어 플러그 인 API 1.2를 사용 하 여 빌드된 여러 프로젝트 또는 여러 연결 컨텍스트 간에 동일한 소스 제어 작업을 실행 하 일괄 처리 작업을 사용할 수입니다. 중복 제거, 프로젝트별 사용자 환경에서 대화 상자에 일괄 처리를 사용할 수 있습니다.  
   
  사용자는 원본 제어 플러그 인 API 1.1 (예를 들어 두 웹 프로젝트에서 다른 파일 공유 컴퓨터)를 사용 하 여 빌드된 둘 이상의 연결을 소스 제어 플러그 인에 속하는 여러 항목을 선택 하 고 체크 아웃, 사용자에 게 동일한 대화 상자 표시 반복적으로 합니다. 사용자가 클릭 하는 경우에 이런 합니다 **모든 항목에 적용** IDE에는 각 연결 컨텍스트에 대 한 상태로 다시 설정 하기 때문에 대화 상자에서 확인란 합니다.  

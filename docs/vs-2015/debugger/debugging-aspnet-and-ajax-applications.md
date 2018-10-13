@@ -1,7 +1,7 @@
 ---
 title: ASP.NET 및 AJAX 응용 프로그램 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81ca66b7f7d4dde596b465211cb92cec5e695ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5943b75513394b44d88dfcfa496e56dad267171
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556391"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205207"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>ASP.NET 및 AJAX 응용 프로그램 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Debugging ASP.NET 및 AJAX 응용 프로그램](https://docs.microsoft.com/visualstudio/debugger/debugging-aspnet-and-ajax-applications)합니다.  
-  
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램을 디버깅하는 방법은 Windows Form 또는 다른 Windows 응용 프로그램을 디버깅하는 방법과 비슷합니다. 두 종류의 응용 프로그램 모두 컨트롤과 이벤트를 포함하기 때문입니다. 그러나 이 두 종류의 응용 프로그램 간에는 기본적인 차이점도 있습니다.  
   
 -   웹 응용 프로그램에서는 상태 추적이 더 복잡합니다.  
@@ -53,7 +51,7 @@ ms.locfileid: "47556391"
  [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)  
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 예외를 디버깅하려면 내 코드만 옵션을 활성화해야 하는 이유에 대해 설명합니다.  
   
- [디버깅 및 Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  AJAX 코드를 디버깅하는 데 유용할 수 있는 일부 기술 및 도구에 대해 설명합니다.  
   
  [IntelliTrace](../debugger/intellitrace.md)  

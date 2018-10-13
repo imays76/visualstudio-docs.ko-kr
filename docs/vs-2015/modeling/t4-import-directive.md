@@ -1,7 +1,7 @@
 ---
 title: T4 Import 지시문 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2b0b4332f9c156bc9690ef94f8670e963203b5a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550942"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204341"
 ---
 # <a name="t4-import-directive"></a>T4 Import 지시문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [T4 Import 지시문](https://docs.microsoft.com/visualstudio/modeling/t4-import-directive)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 텍스트 템플릿의 코드 블록에서 `import` 지시문을 사용하면 정규화된 이름을 제공하지 않고 다른 네임스페이스의 요소를 참조할 수 있습니다. 이 지시문은 C#의 `using` 또는 `imports`의 [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)]에 해당합니다.  
   
  T4 텍스트 템플릿 작성의 일반적인 개요를 참조 하세요 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.  

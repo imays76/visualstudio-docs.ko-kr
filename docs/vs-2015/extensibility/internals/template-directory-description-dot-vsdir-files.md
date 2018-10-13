@@ -1,7 +1,7 @@
 ---
 title: 템플릿 디렉터리 설명 (합니다. Vsdir) 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201984"
 ---
 # <a name="template-directory-description-vsdir-files"></a>템플릿 디렉터리 설명(.Vsdir) 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [템플릿 디렉터리 설명 (합니다. Vsdir) 파일](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files)합니다.  
-  
 템플릿 디렉터리 설명 (.vsdir) 파일은 통합된 개발 환경 (IDE) 폴더, 마법사.vsz 파일 및 대화 상자에서 프로젝트와 연결 된 템플릿 파일을 표시할 수 있도록 하는 텍스트 파일입니다. 콘텐츠 파일 또는 폴더당 하나의 레코드를 포함합니다. 참조 된 위치에 모든.vsdir 파일 하나만.vsdir 파일 여러 폴더, 마법사 또는 템플릿 파일을 설명 하기 위해 일반적으로 제공 되지만 병합 됩니다.  
   
  .Vsdir 파일.vsdir 파일 자체에 참조 되는 파일 폴더 (하위)은 모든 동일한 디렉터리에 있습니다. IDE 마법사를 실행 또는 표시 폴더 또는 파일의 경우는 **새 프로젝트** 하거나 **새 항목 추가** IDE.vsdir 파일 인지 여부를 확인 하려면 실행 파일이 있는 디렉터리를 검사 대화 상자 존재 합니다. .Vsdir 파일을 발견할 경우 실행 또는 표시 폴더 또는 파일에 대 한 항목이 포함 되어 있는지 확인 하는 IDE를 읽습니다. 항목이 발견 되는 경우 IDE는 정보를 사용 하 여 마법사 실행 또는 콘텐츠 표시 합니다.  

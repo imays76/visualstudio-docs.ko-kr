@@ -1,7 +1,7 @@
 ---
 title: CRT 디버그 라이브러리 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87b0923153d5e4d0a3c5e4eb33a97e31fd3b2802
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd9eb706627600b9c32b4cda7c020174777d1a2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552579"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199520"
 ---
 # <a name="crt-debug-library-use"></a>CRT 디버그 라이브러리 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CRT 디버그 라이브러리 사용](https://docs.microsoft.com/visualstudio/debugger/crt-debug-library-use)합니다.  
-  
 C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. CRT 디버그 라이브러리 중 하나를 사용 하려면 사용 하 여 연결 해야 합니다 [디버그](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) 컴파일하여 **/MDd**를 **/MTd**, 또는 **/LDd**합니다.  
   
 ## <a name="remarks"></a>설명  

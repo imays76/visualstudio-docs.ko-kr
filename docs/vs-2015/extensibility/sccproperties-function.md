@@ -1,7 +1,7 @@
 ---
 title: SccProperties 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bb8fd8172468dc1fc4d60d0f5e36ee7b4f9a588
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5b4324fd2e140e2df55d8324c4942308db7b968
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204936"
 ---
 # <a name="sccproperties-function"></a>SccProperties 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccProperties 함수](https://docs.microsoft.com/visualstudio/extensibility/sccproperties-function)합니다.  
-  
 이 함수는 파일 또는 프로젝트에 대 한 소스 제어 속성을 표시합니다.  
   
 ## <a name="syntax"></a>구문  

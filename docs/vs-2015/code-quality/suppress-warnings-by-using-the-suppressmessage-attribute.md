@@ -1,7 +1,7 @@
 ---
 title: SuppressMessage 특성을 사용 하 여 경고 표시 안 함 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ea1aff6aa086c5babb3e6ecf52e7427ffa06813
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91ae1c5d15ddbb364aeba16c2c4de49ce19d09c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205961"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>SuppressMessage 특성을 사용하여 경고 표시 안 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [표시 하지 않으려면 경고 사용 하 여 SuppressMessage 특성](https://docs.microsoft.com/visualstudio/code-quality/suppress-warnings-by-using-the-suppressmessage-attribute)합니다.  
-  
 경고 코드를 검토 하 고 경고를 않아야 함을 결정 했음을 팀 멤버에 게 나타냄으로써 임을 나타내려면는 것이 유용 합니다. 소스 비 표시 오류 (ISS)에서 개발자를 경고를 생성 하는 위치 가까이 경고를 표시 하지 않는 특성을 적용할 수 있습니다. 소스 파일에 직접 ISS 특성을 추가할 수 있습니다 또는 바로 가기 메뉴를 사용할 수는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
 ## <a name="in-this-section"></a>섹션 내용  

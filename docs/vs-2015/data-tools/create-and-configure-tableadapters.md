@@ -1,7 +1,7 @@
 ---
 title: Tableadapter 만들기 및 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df2a5313ace294c536dc1e8cdaab6ce0adcaeabb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c1c9337fac3cde818fd8af298813c89c8c13daf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199253"
 ---
 # <a name="create-and-configure-tableadapters"></a>TableAdapter 만들기 및 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [만들기 및 Tableadapter 구성](https://docs.microsoft.com/visualstudio/data-tools/create-and-configure-tableadapters)합니다.  
-  
   
 Tableadapter 응용 프로그램과 데이터베이스 간에 통신을 제공합니다. 데이터베이스, 쿼리 실행된 또는 저장된 프로시저에 연결 하 고 새 데이터를 반환 하거나 테이블 또는 기존 채우기 <xref:System.Data.DataTable> 반환된 된 데이터를 사용 하 여 합니다. 또한 Tableadapter 다시 데이터베이스에 응용 프로그램에서 업데이트 된 데이터를 보낼 수 있습니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 967675e5113c3f104294ae9fe19fce8d7c39d818
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 005473e0d98f9a66a32c1cd4478a7d84261a5501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197524"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugSymbolProviderDirect::GetSymUnmanagedReader](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader)합니다.  
-  
 비관리 코드에 대 한 기호 판독기를 검색합니다.  
   
 ## <a name="syntax"></a>구문  

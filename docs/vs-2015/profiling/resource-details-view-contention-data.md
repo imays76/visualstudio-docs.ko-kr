@@ -1,7 +1,7 @@
 ---
 title: 리소스 정보 뷰 - 경합 데이터 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 760240544971062da3a5161eab7d203ba6d097c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a99cce1d78c91ce2300e30127d0e5375d2cc1b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203725"
 ---
 # <a name="resource-details-view---contention-data"></a>리소스 정보 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [리소스 정보 뷰-경합 데이터](https://docs.microsoft.com/visualstudio/profiling/resource-details-view-contention-data)입니다.  
-  
 리소스 정보 뷰에는 선택한 리소스에 대한 경합으로 인해 발생한 차단 이벤트의 시간 표시 막대 그래프가 표시됩니다. 다른 스레드가 리소스에 대한 액세스를 잠가 스레드가 실행을 일시 중단해야 했던 경우 차단 이벤트가 발생합니다.  
   
  이 뷰는 각 스레드의 실행 시간 표시 막대를 가로 막대로, 각 차단 이벤트를 스레드 시간 표시 막대의 세로 막대로 나타냅니다. 필요한 경우 시간 표시 막대의 섹션을 확대하여 개별 이벤트를 확인할 수 있습니다. 이벤트를 발생시킨 함수의 실행 경로(호출 스택)를 확인하려면 이벤트 막대를 클릭합니다. 그러면 **호출 스택** 창에 함수가 표시됩니다. 함수의 소스 코드를 사용할 수 있는 경우, 함수 이름을 클릭하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 인터페이스에서 소스 파일을 편집할 수 있습니다.  

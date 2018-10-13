@@ -1,7 +1,7 @@
 ---
 title: 하위 메뉴에 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93d34c0402eeb963cfb49ab3a890a97e77b625a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e822cf57b8fee46b1bfb7e9f6801c89ef66daf3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565010"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199123"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>메뉴에 하위 메뉴 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [하위 메뉴에 추가](https://docs.microsoft.com/visualstudio/extensibility/adding-a-submenu-to-a-menu)합니다.  
-  
 이 연습에서 데모 기반 [Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) 하위 메뉴를 추가 하는 방법을 표시 하 여 합니다 **TestMenu** 메뉴.  
   
  하위 메뉴에는 다른 메뉴에 표시 되는 보조 메뉴입니다. 하위 메뉴 이름 뒤에 오는 화살표로 식별할 수 있습니다. 하위 메뉴 및 명령을 표시할 수 하면 이름을 클릭 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 상태 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a786954884ab0a654246a46f88f6a270e4088cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b78977c1c99057890525a7ebdd11ad92b1743f4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553896"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205987"
 ---
 # <a name="status"></a>상태
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [상태](https://docs.microsoft.com/visualstudio/profiling/status)합니다.  
-  
 VSPerfCmd.exe **Status** 옵션은 프로파일러의 상태에 대한 정보 및 현재 프로파일링되는 모든 프로세스를 표시합니다.  
   
  **Status** 옵션은 명령줄에 지정된 유일한 옵션이어야 합니다. 프로파일러는 상태를 표시하려면 VSPerfCmd.exe **Start** 옵션으로 초기화되어야 합니다.  

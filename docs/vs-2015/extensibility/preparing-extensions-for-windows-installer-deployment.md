@@ -1,7 +1,7 @@
 ---
 title: Windows Installer 배포에 대 한 확장 준비 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b83e7d59e17b91e3a47625917de4ec7366f8389d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4483fef9c200f6814c247f14ee956bfef4582e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551318"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197927"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Windows Installer 배포에 대한 확장 준비
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows에 대 한 확장 준비 Installer 배포](https://docs.microsoft.com/visualstudio/extensibility/preparing-extensions-for-windows-installer-deployment)합니다.  
-  
 VSIX 패키지를 배포 하려면 Windows Installer 패키지 (MSI)를 사용할 수 없습니다. 그러나 MSI 배포용 VSIX 패키지의 내용을 추출할 수 있습니다. 이 문서에는 해당 기본 출력은 설치 프로젝트에 포함할 VSIX 패키지 프로젝트를 준비 하는 방법을 보여 줍니다.  
   
 ## <a name="preparing-an-extension-project-for-windows-installer-deployment"></a>Windows Installer 배포에 대 한 확장 프로젝트를 준비 하는 중  

@@ -1,7 +1,7 @@
 ---
 title: 코딩된 UI 테스트에 다른 웹 브라우저 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73fea4d5d3cccf90070e2e2a013684e2344205f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210381"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코딩 된 UI 테스트를 사용 하 여 다른 웹 브라우저를 사용 하 여](https://docs.microsoft.com/visualstudio/test/using-different-web-browsers-with-coded-ui-tests)입니다.  
-  
 코딩된 UI 테스트는 Internet Explorer로 테스트를 기록하여 웹 응용 프로그램 테스트를 자동화합니다. 그런 다음 이러한 웹 응용 프로그램에 대해 Internet Explorer 또는 기타 브라우저를 사용하여 테스트를 사용자 지정하고 재생할 수 있습니다.  
   
  **요구 사항**  

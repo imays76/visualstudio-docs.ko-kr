@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetConstraints | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 944771d8039c278de80bdd3bb8d317da7674487e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8008db1ee61adb310d22f30bdecac71ab0c9f250
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553887"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202646"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugGenericParamField::GetConstraints](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebuggenericparamfield-getconstraints)합니다.  
-  
 이 제네릭 매개 변수를 사용 하 여 연결 된 제약 조건을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  

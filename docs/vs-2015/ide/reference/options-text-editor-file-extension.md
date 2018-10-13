@@ -1,7 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, 파일 확장명 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99f6d7b90b86b4a5ffefadd98f30ef2f3326fa61
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 953417bf6d3c89df452878a3070937f29112c67c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204128"
 ---
 # <a name="options-text-editor-file-extension"></a>옵션, 텍스트 편집기, 파일 확장명
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션, 텍스트 편집기, 파일 확장명](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-file-extension)합니다.  
-  
   
 이 [옵션] 대화 상자에서는 특정 파일 확장명을 가진 모든 파일이 Visual Studio IDE(통합 개발 환경)에서 처리되는 방법을 지정할 수 있습니다. 입력하는 각 **확장명**에 대해 편집 환경을 선택할 수 있습니다. 이렇게 하면 특정 형식의 문서가 열리는 IDE 편집기 또는 디자이너를 선택할 수 있습니다. 이러한 옵션을 표시하려면 **도구** 메뉴에서 **옵션**을 선택하고, **텍스트 편집기** 노드를 확장하고, **파일 확장명**을 선택합니다.  
   

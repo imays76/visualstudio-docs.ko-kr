@@ -1,7 +1,7 @@
 ---
 title: '방법: 인수 디자이너 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: eaff53dc04c0ad2367147ae91c7de756e5ca4366
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81b24b8c0344cc6a8cf1559126a4faf0bc2b6f4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550887"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206624"
 ---
 # <a name="how-to-use-the-argument-designer"></a>방법: 인수 디자이너 사용
 이전 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전과 비교할 때 인수 디자이너에서 데이터를 활동에서/으로 전달하기가 쉬워졌습니다. 클릭 하 여 디자이너에 액세스할 합니다 **인수** 디자인 캔버스의 왼쪽 아래 모서리에 있는 단추입니다. 디자이너를 정렬할 수 있습니다 각 열 머리글을 제외 하 고 있고 테이블 형식에서으로 표시 되는 인수의 목록을 포함 합니다 **기본값** 열입니다. 각 인수에는 이름, in/out/in-out/속성 방향, 형식 및 기본 식 값(있는 경우)이 포함됩니다. 이름 및 기본 식 값은 편집할 수 있는 텍스트 필드이며, 형식과 방향은 드롭다운입니다. [!INCLUDE[crabout](../includes/crabout-md.md)] 인수를 참조 하세요 [변수 및 인수](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)합니다.  

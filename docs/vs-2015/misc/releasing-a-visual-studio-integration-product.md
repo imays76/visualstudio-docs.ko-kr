@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 통합 제품 릴리스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c94ed6a5-d5a2-40d3-b227-65318a3eb364
 caps.latest.revision: 17
 manager: douge
-ms.openlocfilehash: 24f4b4c01dcd00de8a258e90e310dc7e4b98bf11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c571a01aab27e56375d92f9abbced386a12bce7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542892"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197498"
 ---
 # <a name="releasing-a-visual-studio-integration-product"></a>Visual Studio 통합 제품 릴리스
 이 섹션의 항목에서는 VSPackage를 빌드 및 설치하고 VSIT(Visual Studio 통합 테스트)를 사용하여 Visual Studio 통합 제품을 릴리스하는 방법을 보여 줍니다.  
@@ -37,4 +37,4 @@ ms.locfileid: "47542892"
   
 ## <a name="related-sections"></a>관련 단원  
  [Visual Studio SDK를 사용 하 여 테스트에 대 한 사용자 지정](http://msdn.microsoft.com/en-us/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
- 사용 하는 방법에 설명 합니다 [!INCLUDE[esprtest](../includes/esprtest-md.md)] 도구 모음을 만들고 관리, 편집 및 테스트를 실행 하 고도 가져올 하 고 테스트 결과 저장 합니다.
+ [!INCLUDE[esprtest](../includes/esprtest-md.md)] 도구 모음을 사용하여 테스트를 만들고 관리, 편집 및 실행하며 테스트 결과를 가져오고 저장하는 방법을 설명합니다.

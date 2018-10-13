@@ -1,7 +1,7 @@
 ---
 title: 자동화 모델을 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da79ac654f37b8f9fd9ceaa1eac3df09204f7196
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51579a61cad76cd3164a8ddce739511e7a81d622
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203179"
 ---
 # <a name="using-the-automation-model"></a>자동화 모델 사용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [자동화 모델을 사용 하 여](https://docs.microsoft.com/visualstudio/extensibility/internals/using-the-automation-model)입니다.  
-  
 속성 및 메서드를 호출 하 여 가져올 수 있습니다 자동화에 VSPackage를 연결한 후 합니다 <xref:EnvDTE.DTEClass.GetObject%2A> 메서드는 <xref:EnvDTE._DTE> 개체를 검색 하려는 개체를 나타내는 문자열을 전달 합니다.  
   
 ## <a name="obtaining-project-objects"></a>프로젝트 개체 가져오기  

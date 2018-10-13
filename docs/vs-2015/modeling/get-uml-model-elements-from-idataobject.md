@@ -1,7 +1,7 @@
 ---
 title: IDataObject에서 UML 모델 요소 가져오기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a69a6f20fdccdce9d8795c68bf0a70c74604428b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07dd0d092883e643e093c27349574a6509cd9dfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199569"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>IDataObject에서 UML 모델 요소 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [가져올 모델 IDataObject에서에서 UML 요소](https://docs.microsoft.com/visualstudio/modeling/get-uml-model-elements-from-idataobject)합니다.  
-  
 사용자가 소스에서 다이어그램으로 요소를 끌어 오면 끌어 온 요소가 `System.Windows.Forms.IDataObject`에서 인코딩됩니다. 인코딩은 소스 개체 형식에 따라 다릅니다. 다음 조각에서는 소스가 UML 다이어그램일 때 요소를 검색하는 방법을 보여 줍니다.  
   
 > [!NOTE]

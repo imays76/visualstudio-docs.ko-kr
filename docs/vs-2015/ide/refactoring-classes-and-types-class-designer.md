@@ -1,7 +1,7 @@
 ---
 title: 클래스 및 형식 리팩터링(클래스 디자이너) | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8704977447a7f7aa45b7991ae4451818dc4bfb58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551947"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207964"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>클래스 및 형식 리팩터링(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [클래스 및 형식 (클래스 디자이너) 리팩터링](https://docs.microsoft.com/visualstudio/ide/refactoring-classes-and-types-class-designer)합니다.  
-  
 코드를 리팩터링할 때 외부 동작이 아닌 내부 구조와 개체 설계 방식을 변경하면 코드를 보다 효율적이며 쉽게 이해하고 유지 관리할 수 있습니다. 클래스 디자이너 및 클래스 세부 내용 창을 사용하면 Visual Studio 프로젝트에서 Visual C# .NET, Visual Basic .NET 또는 C++ 코드를 리팩터링할 때 수행해야 하는 작업과 버그 발생 가능성을 줄일 수 있습니다.  
   
 > [!NOTE]

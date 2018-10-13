@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 잠금을 해제 하는 방법 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1da2baf294035563da3f4bf2b915cc02b8496a6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553711"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198863"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio 잠금을 해제하는 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 잠금을 해제 하는 방법을](https://docs.microsoft.com/visualstudio/ide/how-to-unlock-visual-studio)합니다.  
-  
 최대 30일 동안 무료로 Visual Studio 평가판을 사용할 수 있습니다. IDE에 로그인하면 90일 평가판 사용 기간을 연장할 수 있습니다. Visual Studio를 계속 사용하려면 다음과 같은 방법으로 IDE를 잠금 해제할 수 있습니다.  
   
 1.  온라인 구독 사용  

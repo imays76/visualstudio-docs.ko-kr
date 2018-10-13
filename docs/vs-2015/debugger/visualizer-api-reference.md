@@ -1,7 +1,7 @@
 ---
 title: 시각화 도우미 API 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ab8b56cb8eea3424d03292d761816c7b7ac9fb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 849b8d93722f7ca70ba161b297449dc33cfd1acc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206351"
 ---
 # <a name="visualizer-api-reference"></a>시각화 도우미 API 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시각화 도우미 API 참조](https://docs.microsoft.com/visualstudio/debugger/visualizer-api-reference)합니다.  
-  
 시각화 도우미 API는 Visual Studio 디버거용 시각화 도우미를 작성하려는 사용자를 위해 제공됩니다. 시각화 도우미는 Visual Studio 디버거 사용자 인터페이스의 기능을 확장하는 작은 응용 프로그램입니다. 시각화 도우미에서는 설계 대상으로 선택된 특정 형식의 데이터 개체를 표시하고 선택에 따라서는 이 개체를 편집할 수도 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

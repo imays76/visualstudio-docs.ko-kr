@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 Service2의 매개 변수 정보 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bee48d3688a43a3dbfb32848818c318f1cf7b2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557314"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200033"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>레거시 언어 서비스의 매개 변수 정보
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 Service2의 매개 변수 정보](https://docs.microsoft.com/visualstudio/extensibility/internals/parameter-info-in-a-legacy-language-service2)합니다.  
-  
 IntelliSense 매개 변수 정보는 메서드 매개 변수 목록에 대 한 문자 (일반적으로 여는 괄호)를 시작 하는 사용자가 매개 변수 목록 메서드 시그니처를 표시 하는 도구 설명입니다. 각 매개 변수를 입력 매개 변수 구분 기호 (쉼표)를 입력 하 고 도구 설명 굵게 표시 된 다음 매개 변수를 표시 하도록 업데이트 됩니다.  
   
  관리 되는 패키지 프레임 워크 (MPF) 클래스는 관리 매개 변수 정보 도구 설명에 대 한 지원을 제공 합니다. 매개 변수 시작 매개 변수 다음으로, 및 매개 변수 끝 문자 및 해당 메서드 서명과 연결 된 해당 매개 변수 목록을 제공 해야 파서를 검색 해야 합니다.  

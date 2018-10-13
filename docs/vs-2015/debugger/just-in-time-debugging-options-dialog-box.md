@@ -1,7 +1,7 @@
 ---
 title: Just-in-time, 디버깅, 옵션 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8675bc383a492f4d7ca762fa052a0e6174fe01bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207495"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>옵션 대화 상자, 디버깅, Just-In-Time
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Just 시간, 디버깅, 옵션 대화 상자](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-options-dialog-box)합니다.  
-  
 액세스 하는 **Just In Time** 페이지로 이동 하는 **도구** 메뉴를 클릭 **옵션**합니다. 에 **옵션** 대화 상자에서 **디버깅** 노드와 선택 **Just In Time**합니다. 이 페이지에서는 관리 코드, 네이티브 코드 및 스크립트에 대해 Just-In-Time 디버깅을 사용하도록 설정할 수 있습니다. 자세한 내용은 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)합니다.  
   
  다음과 같은 프로그램 유형에 대해 Just-In-Time 디버깅을 사용하도록 설정할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: '1단계: 프로젝트 만들기 및 폼에 테이블 추가 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02b87c7a2f7384b69c6037eb77090ba76a2481f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dade91d67418fcaf788ffbcea0c5a7764e4840a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565168"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204466"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1단계: 프로젝트 만들기 및 폼에 테이블 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [1 단계: 프로젝트를 만들고 폼에 테이블 추가](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-project-and-add-a-table-to-your-form)합니다.  
-  
 일치 게임을 만들 때 첫 번째 단계에서는 프로젝트를 만들고 폼에 테이블을 추가합니다. 테이블을 사용하면 4x4 모눈에 순서대로 아이콘을 정렬할 수 있습니다. 또한 게임 보드의 모양을 개선하는 몇 가지 속성을 설정할 수 있습니다.  
   
 ### <a name="to-create-a-project-and-add-a-table-to-your-form"></a>프로젝트를 만들고 폼에 테이블을 추가하려면  

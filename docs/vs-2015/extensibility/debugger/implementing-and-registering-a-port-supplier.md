@@ -1,7 +1,7 @@
 ---
 title: 구현 하 고 포트 공급자 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe8e5cac0b1737d7c3dbd7e9301e0ca25d778db4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86490e3d7df07008f23b9a12f1167b2004972a1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555799"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205220"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>포트 공급자 구현 및 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [구현 및 포트 공급자 등록](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-and-registering-a-port-supplier)합니다.  
-  
 포트 공급자의 역할 추적에 프로세스를 관리 하는 포트를 제공 하는 것입니다. 포트를 작성 해야 합니다. 이때부터 CoCreate를 사용 하 여 포트 공급자의 GUID (세션 디버그 관리자 [SDM] 포트 공급자 선택한 사용자 또는 프로젝트 시스템에서 지정 된 포트 공급자를 사용 합니다.)를 사용 하 여 포트 공급자가 인스턴스화됩니다. SDM을 호출 합니다 [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) 모든 포트를 추가할 수 있는지 확인 합니다. 새 포트를 호출 하 여 요청 된 경우 포트를 추가할 수 있습니다 [포트 추가](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) 전달 하는 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) 는 포트에 설명 합니다. `AddPort` 새 포트를 나타내는 반환 합니다는 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 인터페이스입니다.  
   
 ## <a name="discussion"></a>토론  

@@ -1,7 +1,7 @@
 ---
 title: Spy + +를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e7600447e84ec1181d608c2d54a3ebbaa6136d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a787eb2e5963454239da27605e7e6cf6893f6c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551551"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210355"
 ---
 # <a name="using-spy"></a>Spy++ 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Spy + +를 사용 하 여](https://docs.microsoft.com/visualstudio/debugger/using-spy-increment)입니다.  
-  
 Spy + + (SPYXX 합니다. EXE)는 시스템의 프로세스, 스레드, 창 및 창 메시지의 그래픽 보기를 제공 하는 Win32 기반 유틸리티입니다. Spy + + 도움말의이 섹션에는 다음 도움말 항목을 다룹니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

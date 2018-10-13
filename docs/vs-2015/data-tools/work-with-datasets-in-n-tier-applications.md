@@ -1,7 +1,7 @@
 ---
 title: N 계층 응용 프로그램에서 데이터 집합 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61f3686488a460ef4c7091521c2165f575e76fa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d05204edfd7c3cd5daecad3a1cb21ba5ba7e60d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205974"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>n 계층 응용 프로그램에서 데이터 집합 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [n 계층 응용 프로그램에서 데이터 집합 작업](https://docs.microsoft.com/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)합니다.  
-  
   
 N 계층 데이터 응용 프로그램 *는 여러 논리 계층으로 분리 되어 있는 데이터 중심 응용 프로그램 (또는 *계층*). 다시 말해서 N 계층 데이터 응용 프로그램은 여러 프로젝트로 구분되며 데이터 액세스 계층, 비즈니스 논리 계층 및 표시 계층이 각 프로젝트에 포함되는 응용 프로그램입니다. 자세한 내용은 [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)합니다.  
   

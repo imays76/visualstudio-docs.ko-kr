@@ -1,7 +1,7 @@
 ---
 title: 관리 코드의 COM 상수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b2be5a360dd661438ac68c02e3294e025494af4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 403ec1a62f2d0a161ac08b78ddd4cbd4ff7da827
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206715"
 ---
 # <a name="com-constants-in-managed-code"></a>관리 코드의 COM 상수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [관리 코드의 COM 상수](https://docs.microsoft.com/visualstudio/extensibility/com-constants-in-managed-code)합니다.  
-  
 관리 패키지 프레임 워크 (MPF) 관리 코드에 사용 가능한 몇 가지 표준 COM 상수를 만듭니다. 이러한 상수는 참조용 아래 나열 됩니다.  
   
 ## <a name="boolean-hresult-values"></a>부울 HRESULT 값  

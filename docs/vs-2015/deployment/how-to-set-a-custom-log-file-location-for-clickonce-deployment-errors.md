@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 배포 오류에 대 한 사용자 지정 로그 파일 위치 설정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9f061037b6349838b145627125527f64b68a2856
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4108287e120eabb4c8fc38d1dc29f2a81ea3d47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207703"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>방법: ClickOnce 배포 오류에 대한 사용자 지정 로그 파일 위치 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 배포 오류에 대 한 사용자 지정 로그 파일 위치 설정](https://docs.microsoft.com/visualstudio/deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors)합니다.  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 모든 배포에 대 한 활성화 로그 파일을 유지 관리합니다. 이러한 로그 문서를 설치 하 고 초기화 하는 모든 오류를 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 합니다. 기본적으로 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 각 배포 활성화에 대해 하나의 로그 파일을 만듭니다. 이러한 로그 파일 임시 인터넷 파일 폴더에 저장 합니다. 배포에 대 한 로그 파일 활성화 오류가 발생 하 고 사용자가 클릭할 때 사용자에 게 표시 됩니다 **세부 정보** 결과 오류 대화 상자에서.  
   
  레지스트리 편집기를 사용 하 여 특정 클라이언트에 대 한이 동작을 변경할 수 있습니다 (**regedit.exe**) 사용자 지정 로그 파일 경로 설정 합니다. 이 경우 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 활성화 성공 및 실패 한 모든 배포에 대 한 단일 파일에 기록 합니다.  

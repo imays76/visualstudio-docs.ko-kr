@@ -1,7 +1,7 @@
 ---
 title: 범위 표식 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee6943210a4a333625e524afe020e9994824daee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7abd22757b202e902cce9056df578944c58ff4b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204349"
 ---
 # <a name="span-markers"></a>범위 표식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [범위 표식](https://docs.microsoft.com/visualstudio/profiling/span-markers)합니다.  
-  
 범위 표식은 응용 프로그램에서 중요한 한 단계를 나타냅니다. 예를 들어 범위를 사용하면 특정 작업 항목을 처리하는 기간의 간격을 나타낼 수 있습니다. 범위의 길이는 해당 응용 프로그램 단계의 길이를 나타냅니다. 다음 그림은 동시성 시각화 도우미에서 범위를 보여줍니다.  
   
  ![Concurrency 시각화의 범위 표식](../profiling/media/cvmarkerspan.png "CVMarkerSpan")  

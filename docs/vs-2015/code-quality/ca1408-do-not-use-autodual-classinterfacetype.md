@@ -1,7 +1,7 @@
 ---
 title: 'CA1408: AutoDual ClassInterfaceType을 사용 하지 마십시오 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45b9e3b9e562b9b3303d170226845a97af2a0d5a
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 818a4a83382cf721fc3fd2614bfc86b633edde2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591311"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203556"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: AutoDual ClassInterfaceType을 사용하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1408: AutoDual ClassInterfaceType을 사용 하지 마십시오](https://docs.microsoft.com/visualstudio/code-quality/ca1408-do-not-use-autodual-classinterfacetype)합니다.
-
 |||
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|

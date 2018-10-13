@@ -1,7 +1,7 @@
 ---
 title: '연습: 음영으로 인 한 오류를 렌더링 디버깅 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bd3416e9a3902a77489b4d3a5547e3614376c59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210173"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>연습: 음영으로 인한 렌더링 오류 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 디버깅 렌더링 오류로 인해 음영](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-debugging-rendering-errors-due-to-shading)합니다.  
-  
-이 연습에 사용 하는 방법을 보여 줍니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단 개체는 색상이 잘못 지정 셰이더 버그로 인해를 조사 합니다.  
+이 연습에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단을 사용하여 셰이더 버그로 인해 색상이 잘못 지정된 개체를 조사하는 방법을 보여 줍니다.  
   
  이 연습에서는 다음 방법을 설명합니다.  
   
@@ -48,7 +46,7 @@ ms.locfileid: "47555484"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>그래픽 로그에서 프레임을 검사하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 누락 된 모델을 보여 주는 프레임이 포함 된 그래픽 로그를 로드 합니다. 새 그래픽 로그 문서 창이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 나타납니다. 이 창의 맨 윗 부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
+1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 누락된 모델을 보여 주는 프레임이 포함된 그래픽 로그를 로드합니다. 새 그래픽 로그 문서 창이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 나타납니다. 이 창의 맨 윗 부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
   
 2.  **프레임 목록**에서 개체의 모양이 올바르지 않은 프레임을 선택합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서 그래픽 로그 문서 창은 다음과 같습니다.  
   

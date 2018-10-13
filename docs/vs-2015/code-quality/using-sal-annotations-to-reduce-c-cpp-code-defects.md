@@ -1,7 +1,7 @@
 ---
 title: C-c + + 코드 오류를 줄이기 위한 SAL 주석 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 29
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdeb2c4d03d172d3bd2051077b3099515faf7b67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca7e8a406b02aa5d3b09d9ad588546ae3d965b89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207016"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](https://docs.microsoft.com/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)합니다.  
-  
 SAL은 Microsoft 소스 코드 주석 언어입니다. 소스 코드 주석을 사용 하 여 할 수 있습니다 의도 코드 숨김 명시적입니다. 이러한 주석은 상당히 적은 수의 거짓 긍정 및 거짓 부 정의 사용 하 여 코드를 보다 정확 하 게 분석을 자동화 된 정적 분석 도구에도 사용 하도록 설정 합니다.  
   
  설명서의이 섹션의 문서 SAL 구문에 대 한 참조를 제공 하며 사용의 예로 제공 SAL 측면에 설명 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: '오류: IIS Admin Service 응답 하지 않아서 보안 검사에 실패 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f91c872b2012ad677e13450dcb9301b4c8a762fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a90a684a9de45e1fba67460d0ba0f01554d248f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553899"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207196"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>오류: IIS 관리자 서비스에서 응답이 없기 때문에 보안 검사에 실패했습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류:는 보안 확인 실패 하기 때문에 IIS Admin Service 응답 하지 않은](https://docs.microsoft.com/visualstudio/debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond)합니다.  
-  
 이 오류는 IIS 관리자 서비스에서 응답하지 않을 때 발생합니다. 일반적으로 이는 설치한 IIS에 문제가 있음을 나타냅니다. 먼저 서비스를 사용 하 여 실행 중인지를 확인 합니다 **Services** 에서 도구 **관리 도구**합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  

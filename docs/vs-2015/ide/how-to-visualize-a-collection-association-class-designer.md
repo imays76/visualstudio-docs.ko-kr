@@ -1,7 +1,7 @@
 ---
 title: '방법: 컬렉션 형식 연결 시각화(클래스 디자이너) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 42cf379e9cfb2d8a84412a534eb13702febc945a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8e997cf30e4fe8508dd8e1fa8049bdc83e93d53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197693"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>방법: 컬렉션 형식 연결 시각화(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 컬렉션 형식 연결 (클래스 디자이너) 시각화](https://docs.microsoft.com/visualstudio/ide/how-to-visualize-a-collection-association-class-designer)합니다.  
-  
 다른 형식의 컬렉션에 해당하는 속성 및 필드를 컬렉션 형식 연결로 클래스 다이어그램에 표시할 수 있습니다. 일반 연결은 필드 또는 속성을 소유 클래스와 필드 형식을 연결하는 선으로 표시하지만, 컬렉션 형식 연결은 소유 클래스와 수집된 형식을 연결하는 선으로 표시합니다.  
   
 ### <a name="to-create-a-collection-association"></a>컬렉션 형식 연결을 만들려면  

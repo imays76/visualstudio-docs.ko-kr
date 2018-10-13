@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 상황에 맞는 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 280864c69e75d37c73095320787d74e61a93ab38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24db09c97b499ee10aaf5d84fa1d8eb328042a3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551042"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203322"
 ---
 # <a name="project-context"></a>프로젝트 컨텍스트
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 상황에 맞는](https://docs.microsoft.com/visualstudio/extensibility/internals/project-context)합니다.  
-  
 사용자 추가, 프로젝트 및 프로젝트 항목을 사용 하 여 작동 하는 경우 IDE 다양 한 작업을 수행할지 결정할 프로젝트 컨텍스트의 개념을 사용 합니다.  
   
  일반적으로 파일은 사용자가 명시적으로 선택 하 여 작성 하는 표준 프로젝트 개체를 **새 프로젝트** 명령 또는 선택 하 여 사용할 수 있도록 설정 합니다 **프로젝트 열기** 명령을  **파일** 메뉴. 이러한 경우 파일을 만들고 프로젝트의 컨텍스트에서 열 및 프로젝트 형식 문서를 편집 하는 것에 대 한 컨텍스트를 정의 합니다.  

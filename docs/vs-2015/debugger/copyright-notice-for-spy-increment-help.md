@@ -1,7 +1,7 @@
 ---
 title: Spy + + 도움말에 대 한 저작권 표시 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5040f4918f140435665e24db8e57e6fbd759551e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa95cd2500cf2bc228f5787d77490f0cbfc5fd4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201541"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ 도움말에 대한 저작권 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Spy + + 도움말에 대 한 저작권 표시](https://docs.microsoft.com/visualstudio/debugger/copyright-notice-for-spy-increment-help)합니다.  
-  
 이 문서의 내용은 예고 없이 변경될 수 있습니다. 여기서 예제에 사용된 회사, 이름 및 데이터는 다른 설명이 없는 한 실제 데이터가 아닙니다. 이 설명서의 어떠한 부분도 Microsoft Corporation의 명시적인 서면 승인 없이는 어떠한 형식이나 수단(전기적 또는 기계적) 또는 목적으로도 복제되거나 전송될 수 없습니다.  
   
  © 1993-2010 Microsoft Corporation. All rights reserved.  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 및 Xamarin | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a45ce4e6f319dffbb59f8f2040ad815f0e01e71c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b9682f17716946c642186ee91c84b8060879b0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199578"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 및 Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 및 Xamarin](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-and-xamarin)합니다.  
-  
   
 Xamarin은 일반적인 C#/.NET 코드베이스에서 네이티브 iOS, Android 및 Windows 앱을 빌드하여 플랫폼 간에 75%에서 거의 100%까지 코드를 재사용할 수 있는 모바일 앱 개발 플랫폼입니다. Xamarin 및 C#으로 작성된 앱에는 기본 플랫폼 API에 대한 모든 권한이 있으며, 네이티브 사용자 인터페이스를 빌드하는 기능 및 런타임 성능에 거의 영향을 주지 않도록 플랫폼별 패키지로 컴파일하는 기능이 있습니다. 참고: Xamarin도 F#을 지원하지만 이 설명서에서는 C#에 대해서만 중점적으로 설명합니다. Visual Basic은 현재 지원되지 않습니다.  
   
