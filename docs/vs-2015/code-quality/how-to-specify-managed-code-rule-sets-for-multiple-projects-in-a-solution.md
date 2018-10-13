@@ -1,7 +1,7 @@
 ---
 title: '방법: 여러 프로젝트를 솔루션에 대 한 관리 코드 규칙 집합 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 42b04eb88e6edee2d8250ac29a26f4cfe6562a29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2469491eeb5419c70e208bbf6e1ed7809657dbc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218701"
 ---
 # <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>방법: 솔루션의 여러 프로젝트에 대한 관리 코드 규칙 집합 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 지정 관리 코드 규칙 집합을 솔루션의 여러 프로젝트에 대 한](https://docs.microsoft.com/visualstudio/code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution)합니다.  
-  
 솔루션의 관리 되는 모든 프로젝트는 Microsoft 최소 권장 규칙 코드 분석을 할당 하는 데 기본적으로 *규칙 집합*합니다. 솔루션에 대 한 속성 대화 상자에서 솔루션의 프로젝트에 할당 되는 규칙 집합을 변경할 수 있습니다.  
   
 > [!NOTE]

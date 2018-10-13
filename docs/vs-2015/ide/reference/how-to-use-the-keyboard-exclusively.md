@@ -1,7 +1,7 @@
 ---
 title: '방법: 단독으로 키보드 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f1ca0ccf38911c8614bf1429c6f658bb9c957c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543725"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238526"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>방법: 단독으로 키보드 사용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 단독으로 키보드 사용](https://docs.microsoft.com/visualstudio/ide/reference/how-to-use-the-keyboard-exclusively)합니다.  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]에서는 IDE(통합 개발 환경) 내에서 쉽게 탐색 및 코딩할 수 있도록 하는 다양한 기본 바로 가기 키 조합을 제공합니다. Visual Studio에서 사용되는 바로 가기 키의 전체 목록은 [기본 바로 가기 키](../../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요. 다른 Microsoft 제품에 사용 가능한 바로 가기 키에 대한 자세한 내용은 [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400)을 참조하세요.  
   

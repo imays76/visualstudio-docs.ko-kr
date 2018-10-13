@@ -1,7 +1,7 @@
 ---
 title: '방법: 레거시 언어 서비스의 확장된 개요 표시 지원 제공 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ab97a9b26c1dd76949a4bae6dd9640319398bd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6371339da12d88832e84d5086ed2d8a83226a94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239542"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스의 확장된 개요 표시 지원 제공
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [언어 서비스의 개요 표시 지원 제공](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service)합니다.  
-  
 초과 지 원하는 언어에 대 한 개요 표시 지원 확장을 위한 두 가지는 **정의 부분만 보이기** 명령입니다. 편집기 제어 개요 영역을 추가 하 고 클라이언트 제어 개요 영역을 추가할 수 있습니다.  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>추가 편집기 제어 개요 영역  

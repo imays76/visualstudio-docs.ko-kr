@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로젝트 템플릿 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7e8efd905667c235d80d64e1c7ca7660281a9ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb68a9902fc3adf9f2643b52e069cf182d9ca75a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551761"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225513"
 ---
 # <a name="how-to-create-project-templates"></a>방법: 프로젝트 템플릿 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 프로젝트 템플릿 만들기](https://docs.microsoft.com/visualstudio/ide/how-to-create-project-templates)합니다.  
-  
 이 절차에서는 템플릿을 .zip 파일로 패키징하는 **템플릿 내보내기** 마법사를 사용하여 템플릿을 만들 수 있습니다. 템플릿 내보내기 마법사 확장을 사용하거나 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]에 포함된 템플릿을 사용하여 개선된 배포를 위한 VSIX 파일 형식으로 템플릿을 만들 수 있고 템플릿을 수동으로 만들 수도 있습니다.  
   
 ### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>표준 템플릿 내보내기 마법사를 사용하여 사용자 지정 프로젝트 템플릿을 만들려면  

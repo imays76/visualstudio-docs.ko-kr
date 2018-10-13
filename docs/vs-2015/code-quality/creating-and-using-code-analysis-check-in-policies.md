@@ -1,7 +1,7 @@
 ---
 title: 코드 분석 체크 인 정책 만들기 및 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543293"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238357"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>코드 분석 체크 인 정책 만들기 및 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [만들기 및 사용 하 여 코드 분석 체크 인 정책](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies)합니다.  
-  
 Team Foundation 버전 제어 (TFVC)를 사용 하면.NET Framework 및 네이티브 (C/c + +) 코드 프로젝트에서 팀 프로젝트에 대 한 코드 분석 체크 인 정책을 만들 수 있습니다. 제어 코드 베이스에 체크 인 된 코드의 품질을 개선 하는 코드 분석 체크 인 정책에 따라 사용할 수 있습니다.  
   
  정책을 로컬 빌드가 최신 및 가장 최근의 소스 파일에 대해 코드 분석이 실행 된 경우에 전달 합니다. 최소한 코드 프로젝트에서 사용 되는 코드 분석 규칙 팀 프로젝트 체크 인 정책에 정의 된 것과 동일한 규칙을 포함 해야 합니다. 팀 프로젝트 설정에서 오류로 지정 된 규칙 코드 프로젝트에서 오류로 지정 해야 합니다.  

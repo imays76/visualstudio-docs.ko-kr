@@ -1,7 +1,7 @@
 ---
 title: 도구 상자 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: douge
-ms.openlocfilehash: 674b9d1dcebc7ec4a9019c652f0909904fe952c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 444cf6b27179408414cc7df55d634497683004a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543789"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230336"
 ---
 # <a name="extending-the-toolbox"></a>도구 상자 확장
-합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **도구 상자** IDE의 끌어서 놓기 메커니즘을 통해 편집기 및 디자이너에 기능을 제공 하는 개체의 컬렉션을 제공 합니다.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **도구 상자** 에서 IDE의 끌어서 놓기 메커니즘을 통해 편집기 및 디자이너에 기능을 제공하는 개체의 컬렉션을 제공합니다.  
   
- 두 가지 기본와 작동 하는 VSPackage는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **도구 상자**:  
+ VSPackage는 다음과 같은 두 가지 기본 방법으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **도구 상자**작업을 수행합니다.  
   
 -   VSPackage는 새 데이터 항목 및 컨트롤을 **도구 상자**에 추가할 수 있습니다.  
   
@@ -43,10 +43,10 @@ ms.locfileid: "47543789"
   
 ## <a name="related-sections"></a>관련 단원  
  [방법: 도구 상자 창 관리](http://msdn.microsoft.com/en-us/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
- 사용 하는 방법에 설명 합니다 **도구 상자** 에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE).  
+ **IDE(통합 개발 환경)에서** 도구 상자 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 로 작업하는 방법을 설명합니다.  
   
  [방법: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  자동화 프로그래밍 모델을 사용하여 **도구 상자** 를 관리하는 방법을 설명합니다.  
   
  [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)  
- 사용 하는 방법에 설명 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 나머지와 일치 하는 UI 요소를 만들려면 서비스 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 서비스를 사용하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 나머지와 일치하는 UI 요소를 만드는 방법을 설명합니다.

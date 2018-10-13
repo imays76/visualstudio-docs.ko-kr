@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 멤버 완성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c17404b115c7e8b3f8036c52e493f6932411731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240814"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 멤버 완성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 멤버 완성](https://docs.microsoft.com/visualstudio/extensibility/internals/member-completion-in-a-legacy-language-service)합니다.  
-  
 IntelliSense 멤버 완성이 클래스, 구조체, 열거형 또는 네임 스페이스와 같은 특정 범위의 가능한 멤버 목록을 표시 하는 도구 설명 합니다. 예를 들어 C#에서는 사용자가 "this" 뒤에 마침표 또는 현재 범위에서 구조체는 클래스의 모든 멤버 목록을 표시 됩니다 선택할 수 있는 목록에서.  
   
  (MPF)에서 관리 되는 패키지 프레임 워크 도구 팁 및 도구 설명; 목록의 관리에 대 한 지원 제공 필요한 모든는 목록에 표시 되는 데이터를 제공 합니다.이 언어 구문 분석기에서는 협력입니다.  

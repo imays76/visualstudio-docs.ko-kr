@@ -1,7 +1,7 @@
 ---
 title: 보안 문제 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0459f7e91fbced71dda0bb401ffe056b5cd49f52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c20ef751960bed02b6b6b1d393f168a9b8e510f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542522"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219377"
 ---
 # <a name="security-issues"></a>보안 문제
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [보안 문제](https://docs.microsoft.com/visualstudio/extensibility/debugger/security-issues)합니다.  
-  
 Visual Studio를 사용 하 여 프로그램을 디버깅 하려면 필요한 권한만 개발자 프로그램을 실행 해야 하는 것과 같은 됩니다. 대부분의 경우 (인터넷 정보 서비스와 같은 다른 서비스와 관련 된 경우가 더 높은 수준의 권한 요구할 수 있음)에 대 한 원격 디버깅 포함 됩니다.  
   
  Visual Studio를 실행 하는 동안 프로세스 디버그 관리자 (PDM) 로컬 컴퓨터에서 디버그 프로세스를 추적 합니다. 원격으로 msvsmon.exe를 호출 하는 프로그램은 원격 디버깅을 처리 하 여 PDM를 사용할 수 있도록 하는 개발자에 의해 시작 됩니다. (해당 msvsmon.exe 서비스 및 해당 컴퓨터에서 원격 디버깅을 사용 하려면 수동으로 시작 해야 note 합니다.) Visual Studio (또는 msvsmon.exe)를 실행 하지 않는 경우에 프로세스 없음 디버깅에 대 한 추적 됩니다.  

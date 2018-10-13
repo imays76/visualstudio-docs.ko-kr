@@ -1,7 +1,7 @@
 ---
 title: XML 스키마 디자이너 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcf60a61cb6311e7794abe2961cdf1f319bde7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e69fdb617fc5ce6fd91bd89422561ab6a1c65d61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233274"
 ---
 # <a name="xml-schema-designer-tasks"></a>XML 스키마 디자이너 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [XML 스키마 디자이너 작업](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer-tasks)합니다.  
-  
   
 이 단원에서는 XML 스키마 디자이너 도구를 사용하여 일반적인 작업을 수행하는 방법에 대해 설명합니다.  
   

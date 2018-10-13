@@ -1,7 +1,7 @@
 ---
 title: '방법: 미리 곱한 알파를 사용하는 질감 내보내기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5089ff81121e9390968fe7e3900eb28cededc27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d15ac70fbbc9291dca32f25ed5f3c3378b6b848
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542314"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239735"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>방법: 미리 증가된 알파를 사용하는 질감 내보내기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 미리 증가 된 알파 하는 질감 내보내기](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-that-has-premultiplied-alpha)합니다.  
-  
 이미지 콘텐츠 파이프라인은 소스 이미지에서 미리 곱한 알파를 생성할 수 있습니다. 이 방법은 더 간단히 사용할 수 있고 미리 곱한 알파가 포함되지 않은 질감보다 더 강력할 수 있습니다.  
   
  이 문서는 다음 활동을 보여 줍니다.  

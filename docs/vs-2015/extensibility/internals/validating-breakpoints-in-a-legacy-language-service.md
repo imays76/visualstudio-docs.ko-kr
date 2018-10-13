@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 중단점 유효성 검사 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3fbfd2ca8ec3377d8c7d97e38fb4669a2d2042b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2739bfd8807552653e7bb302e5e5efad2835529b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216842"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>레거시 언어 서비스의 중단점 유효성 검사
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 중단점 유효성 검사](https://docs.microsoft.com/visualstudio/extensibility/internals/validating-breakpoints-in-a-legacy-language-service)합니다.  
-  
 중단점 디버거에서 실행 되는 동안 특정 지점에서 프로그램 실행 중지 해야 함을 나타냅니다. 편집기에 중단점의 올바른 위치를 구성 하는 데 대 한 지식은 없는 사용자 소스 파일에서 줄 중단점을 배치 수 있습니다. 디버거를 시작할 때 실행 중인 프로그램에 적절 한 위치에 바인딩됩니다 (보류 중단점 라고 함)은 표시 된 중단점의 모든 나타납니다. 중단점의 유효성을 검사 했는지 한 번에 유효한 코드 위치 표시 합니다. 예를 들어, 메모 중단점 올바르지 소스 코드의 위치에 있는 코드 없이 있기 때문에 합니다. 디버거가 잘못 된 중단점을 해제합니다.  
   
  언어 서비스에서 표시 되 고 소스 코드를 인식 하므로 디버거를 시작 하기 전에 중단점을 확인할 수 것입니다. 재정의할 수 있습니다는 <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> 중단점의 올바른 위치를 지정 하는 범위를 반환 하는 방법입니다. 중단점 위치는 계속 디버거를 시작할 경우 디버거에서 로드할 때까지 기다리지 않고 잘못 된 중단점의 사용자가 알림을 유효성이 검사 됩니다.  

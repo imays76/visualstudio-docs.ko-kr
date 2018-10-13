@@ -1,7 +1,7 @@
 ---
 title: 식별자 문 완성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 630d0f55792b06cd1c99f9c1947a5ae73bce2683
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f0f990526bc142b9951ab095e4bbf26636c94e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881035"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241273"
 ---
 # <a name="statement-completion-for-identifiers"></a>식별자 문 완성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 JavaScript 변수 선언에 대 한 입력 명시적 허용 하지 않습니다. 결과적으로, IntelliSense 개체에 대 한 완성 목록을 제공할 항상 수 없습니다. 다양 한 상황에서 발생할 수 있습니다. 다음은 몇 가지 일반적인 경우입니다.  
   
 -   매개 변수는 선언 되지만 호출 되지 않았습니다 다른 곳에서 활성 문서에서 다음 예와에서 같이 합니다.  

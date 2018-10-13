@@ -1,7 +1,7 @@
 ---
 title: 시작 페이지를 직접 만드는 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: 87195c318f6bdc04dc0cfde54c35577142661224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232078"
 ---
 # <a name="creating-your-own-start-page"></a>고유한 시작 페이지 만들기
 시작 페이지 프로젝트 템플릿을 사용하거나 빈 시작 페이지를 만들어 사용자 지정 시작 페이지를 만들 수 있습니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "47541752"
   
 2.  StartPage.xaml을 엽니다.  
   
-3.  외부 xml 요소 및 포함 하는 그리드 페이지 콘텐츠를 모두 제거 <xref:System.Windows.Controls.Grid> 요소는.xaml 파일에는 다음 예제와 유사 합니다.  
+3.  .xaml 파일이 다음 예제와 같도록 외부 xml 요소 및 포함하는 그리드 <xref:System.Windows.Controls.Grid> 요소만 남기고 페이지 콘텐츠를 모두 제거합니다.  
   
     ```xaml
        <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -102,7 +102,7 @@ ms.locfileid: "47541752"
   
      작동하는 시작 페이지가 표시됩니다. 새 변경 내용을 확인하려면 실험적 인스턴스를 닫고 변경된 파일을 다시 복사한 다음 실험적 인스턴스를 다시 열어야 합니다.  
   
- bin\debug 디렉터리의 .vsix 파일을 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkID=123847) 웹 사이트나 다른 웹 사이트 또는 인트라넷 공유에 업로드하여 사용자 지정 시작 페이지를 공유할 수 있습니다. 자세한 내용은 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)합니다.  
+ bin\debug 디렉터리의 .vsix 파일을 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkID=123847) 웹 사이트나 다른 웹 사이트 또는 인트라넷 공유에 업로드하여 사용자 지정 시작 페이지를 공유할 수 있습니다. 자세한 내용은 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)   

@@ -1,7 +1,7 @@
 ---
 title: 추가 하 고 속성 페이지를 제거 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02295041a660ff3e4e7b0565cffd260a4e64c78d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b78fd8c6d89e93e208d00cda069f93a4deb10e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221990"
 ---
 # <a name="adding-and-removing-property-pages"></a>속성 페이지 추가 및 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [추가 및 제거 하는 속성 페이지](https://docs.microsoft.com/visualstudio/extensibility/adding-and-removing-property-pages)합니다.  
-  
 프로젝트 속성, 설정 및 리소스를 관리 하기 위한 중앙된 위치를 제공 하는 프로젝트 디자이너 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 단일 창으로 표시 된 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE (통합 개발 환경) 및 오른쪽에서 왼쪽에 있는 탭을 통해 액세스 되는 창 수를 포함 합니다. 프로젝트 디자이너 (속성 페이지 라고도 함)는 창의 프로젝트 형식 및 언어에 따라 다릅니다. 프로젝트 디자이너를 사용 하 여 액세스할 수 있습니다 합니다 **속성** 명령 합니다 **프로젝트** 메뉴.  
   
  프로젝트 하위 형식 자주 프로젝트 디자이너의 추가 속성 페이지를 표시 해야 합니다. 마찬가지로, 기본 제공 속성 페이지를 제거할 수는 몇 가지 프로젝트 하위 형식이 필요할 수 있습니다. 중 하나를 수행 하려면 프로젝트 하위 유형을 구현 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 인터페이스를 재정의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> 메서드. 이 메서드를 재정의 하 고 사용 하 여 `propId` 매개 변수 값 중 하나를 포함 하는 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 열거형, 필터링, 추가 하거나 프로젝트 속성을 제거할 수 있습니다. 예를 들어 구성에 종속 된 속성 페이지에 페이지를 추가 해야 합니다. 이 위해 구성에 종속 된 속성 페이지를 필터링 한 후 기존 목록에 새 페이지를 추가 해야 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 템플릿 매개 변수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eb91c5137ff405562115cbe318d6a723d369d95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238903"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [템플릿 매개 변수](https://docs.microsoft.com/visualstudio/ide/template-parameters)합니다.  
-  
 템플릿에 매개 변수를 사용하여 템플릿이 인스턴스화될 때 클래스 이름 및 네임스페이스 등 템플릿의 주요 부분 값을 바꿀 수 있습니다. 사용자가 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 **확인**을 클릭하는 경우 이러한 매개 변수는 백그라운드에서 실행되는 템플릿 마법사로 바뀝니다.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>템플릿 매개 변수 선언 및 사용  

@@ -1,7 +1,7 @@
 ---
 title: '방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74908b64c6ef1f17d040e74abd4e9b1013929c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7301a05ff17c20532a394fd1f26ab9fd98c3b65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237889"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 사용자 지정 메뉴와 Visual Studio에서 도구 모음](https://docs.microsoft.com/visualstudio/ide/how-to-customize-menus-and-toolbars-in-visual-studio)합니다.  
-  
 메뉴 모음의 도구 모음 및 메뉴를 추가 및 제거하는 방법뿐만 아니라 지정된 도구 모음 또는 메뉴의 명령을 제거하여 Visual Studio를 사용자 지정할 수 있습니다.  
   
 > [!WARNING]

@@ -1,7 +1,7 @@
 ---
 title: 기호 (.pdb)을 지정 하 고 Visual Studio 디버거에서 파일 원본 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b988a2e3defa1a434cc825ad78e7c92dd30c382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226982"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거에서 기호 (.pdb) 및 소스 파일 지정](https://docs.microsoft.com/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)합니다.  
-  
 프로그램 데이터베이스(.pdb) 파일로, 기호 파일이라고도 하며 클래스, 메서드 및 기타 코드의 소스 파일을 만드는 식별자를 프로젝트의 컴파일된 실행 파일에 사용되는 식별자에 매핑합니다. .pdb 파일은 소스 코드의 문을 실행 파일의 실행 명령에 매핑합니다. 디버거는 이 정보를 사용하여 두 가지 주요 정보를 확인합니다. 즉, Visual Studio IDE에 표시되는 소스 파일 및 줄 번호와 중단점을 설정할 때 중지될 실행 파일 내 위치를 확인합니다. 기호 파일에는 소스 파일의 원래 위치도 포함되어 있으며 소스 파일을 검색할 수 있는 소스 서버의 위치도 필요에 따라 포함되어 있습니다.  
   
  Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 코드에 대한 .pdb 및 소스 파일의 기본 위치를 알고 있습니다. 프로젝트에서 호출하는 Windows 또는 타사 코드와 같은 프로젝트 소스 코드 외부의 코드를 디버깅하려는 경우, .pdb(및 필요에 따라 외부 코드의 소스 파일)의 위치를 지정해야 하며 이러한 파일은 실행 파일의 빌드와 정확히 일치해야 합니다.  
@@ -101,16 +99,16 @@ ms.locfileid: "47592875"
   
  이 옵션을 선택하면 DLL 내보내기 테이블이 로드됩니다. Windows 메시지, Windows 프로시저(WindowProcs), COM 개체, 마샬링 또는 기호가 없는 DLL을 사용하여 작업하는 경우 DLL 내보내기 테이블의 기호 정보가 유용할 수 있지만, DLL 내보내기 정보를 읽으면 오버헤드가 발생합니다. 따라서 이 기능은 기본적으로 해제되어 있습니다.  
   
- DLL의 내보내기 테이블에서 사용할 수 있는 기호를 확인하려면 `dumpbin /exports`를 사용하십시오. 모든 32비트 시스템 DLL에 기호를 사용할 수 있습니다. `dumpbin /exports` 출력을 읽으면 영숫자가 아닌 문자를 포함하여 정확한 함수 이름을 확인할 수 있습니다. 이 방법은 함수에 중단점을 설정하는 데 유용합니다. DLL 내보내기 테이블에 있는 함수 이름은 디버거에서 일부가 잘린 상태로 나타날 수 있습니다. 호출은 현재 함수(가장 안쪽에 중첩된)가 맨 위에 표시되어 호출한 순서로 나열됩니다. 자세한 내용은 [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)합니다.  
+ DLL의 내보내기 테이블에서 사용할 수 있는 기호를 확인하려면 `dumpbin /exports`를 사용하십시오. 모든 32비트 시스템 DLL에 기호를 사용할 수 있습니다. `dumpbin /exports` 출력을 읽으면 영숫자가 아닌 문자를 포함하여 정확한 함수 이름을 확인할 수 있습니다. 이 방법은 함수에 중단점을 설정하는 데 유용합니다. DLL 내보내기 테이블에 있는 함수 이름은 디버거에서 일부가 잘린 상태로 나타날 수 있습니다. 호출은 현재 함수(가장 안쪽에 중첩된)가 맨 위에 표시되어 호출한 순서로 나열됩니다. 자세한 내용은 [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)를 참조하십시오.  
   
 ###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> 기호 서버를 사용하여 로컬 컴퓨터에 없는 기호 파일 찾기  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 symsrv 프로토콜을 구현하는 기호 서버에서 디버깅 기호 파일을 다운로드할 수 있습니다. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) 하며 [도구에 대 한 Windows 디버깅](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 기호 서버를 구현할 수 있는 도구가 두 가지 있습니다. VS **옵션** 대화 상자에서 사용할 기호 서버를 지정합니다.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 는 symsrv 프로토콜을 구현하는 기호 서버에서 디버깅 기호 파일을 다운로드할 수 있습니다. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) 와 [Windows용 디버깅 도구](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 는 기호 서버를 구현할 수 있는 두 가지 도구입니다. VS **옵션** 대화 상자에서 사용할 기호 서버를 지정합니다.  
   
  사용할 수 있는 기호 서버는 다음과 같습니다.  
   
  **Microsoft 공용 기호 서버**  
   
- 시스템 DLL이나 타사 라이브러리를 호출하는 동안 발생하는 충돌을 디버깅하려면 Windows DLL, EXE 및 장치 드라이버에 대한 기호가 포함된 시스템 .pdb 파일이 필요한 경우가 많습니다. 이러한 기호는 Microsoft 공용 기호 서버에서 가져올 수 있습니다. Microsoft 공용 기호 서버는 MDAC, IIS, ISA 및 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 외에도 Windows 운영 체제용 기호를 제공합니다.  
+ 시스템 DLL이나 타사 라이브러리를 호출하는 동안 발생하는 충돌을 디버깅하려면 Windows DLL, EXE 및 장치 드라이버에 대한 기호가 포함된 시스템 .pdb 파일이 필요한 경우가 많습니다. 이러한 기호는 Microsoft 공용 기호 서버에서 가져올 수 있습니다. Microsoft 공용 기호 서버는 MDAC, IIS, ISA 및 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]외에도 Windows 운영 체제용 기호를 제공합니다.  
   
  Microsoft 기호 서버를 사용하려면 **디버그** 메뉴의 **옵션 및 설정** 을 선택한 다음 **기호**를 선택합니다. **Microsoft 기호 서버**를 선택합니다.  
   
@@ -146,7 +144,7 @@ ms.locfileid: "47592875"
   
 -   검색 경로를 변경하려면 선택되지 않은 경로를 선택하거나 **새로 만들기** 를 선택하고 새 경로를 입력합니다. 경로를 다시 검색하고 발견되는 기호 파일을 로드하려면 **로드** 를 선택합니다.  
   
--   선택할 **찾아보기**_실행 파일 이름_**...**  기호 옵션을 재정의 하는 검색 경로 다시 시도 하세요. 기호 파일이 발견되는 경우 로드되거나, 파일 탐색기가 표시되어 기호 파일을 수동으로 선택할 수 있습니다.  
+-   **실행 파일 이름**_찾아보기_**...** 를 선택하여 기호 옵션을 재정의하고 검색 경로를 다시 시도합니다. 기호 파일이 발견되는 경우 로드되거나, 파일 탐색기가 표시되어 기호 파일을 수동으로 선택할 수 있습니다.  
   
 -   경로를 다시 검색하고 발견되는 기호 파일을 로드하려면 **기호 설정 변경...** 을 선택하여 VS 옵션 대화 상자의 **옵션** / **기호** 페이지를 표시합니다.  
   
@@ -172,9 +170,9 @@ ms.locfileid: "47592875"
   
  **C++ 옵션**  
   
- 프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. 사용 하 여 빌드하면.pdb 파일이 만들어질 [/ZI 또는 /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (C/c + +)에 대 한 합니다.  
+ 프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. .pdb 파일은 [/ZI 또는 /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 를 사용하여 빌드할 때 만들어집니다(C/C++의 경우).  
   
- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]서 [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) 옵션은 컴파일러에서 만드는.pdb 파일의 이름을 합니다. 프로젝트를 만들면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 마법사를 사용 하는 **/Fd** 라는.pdb 파일을 만드는 옵션이 설정 되어 *프로젝트*.pdb.  
+ [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]의 [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) 는 컴파일러에서 만드는 .pdb 파일의 이름을 지정하는 옵션입니다. 마법사를 사용하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 프로젝트를 만드는 경우, 이름이 **project** .pdb인 .pdb 파일을 만들도록 */Fd*옵션이 설정됩니다.  
   
  메이크파일을 사용하여 C/C++ 응용 프로그램을 빌드하는 경우, **/Fd** 없이 **/ZI** 또는 **/Zi**를 지정하여 .pdb 파일 2개가 만들어집니다.  
   
@@ -190,7 +188,7 @@ ms.locfileid: "47592875"
   
  **.NET Framework 옵션**  
   
- 프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. .pdb 파일은 **/debug**로 빌드하는 경우 만들어집니다. **/debug:full** 또는 **/debug:pdbonly**를 사용하여 응용 프로그램을 빌드할 수 있습니다. **/debug:full** 을 사용하여 빌드하면 디버깅 가능한 코드가 생성됩니다. **/debug:pdbonly** 를 사용하여 빌드하면 .pdb 파일이 생성되지만 디버그 정보를 사용할 수 있다는 사실을 JIT 컴파일러에 알리는 `DebuggableAttribute` 는 생성되지 않습니다. 디버깅할 수 없도록 하려는 릴리스 빌드에 대해 .pdb 파일을 생성하려면 **/debug:pdbonly** 를 사용합니다. 자세한 내용은 [/debug (C# 컴파일러 옵션)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) 하거나 [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2)합니다.  
+ 프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. .pdb 파일은 **/debug**로 빌드하는 경우 만들어집니다. **/debug:full** 또는 **/debug:pdbonly**를 사용하여 응용 프로그램을 빌드할 수 있습니다. **/debug:full** 을 사용하여 빌드하면 디버깅 가능한 코드가 생성됩니다. **/debug:pdbonly** 를 사용하여 빌드하면 .pdb 파일이 생성되지만 디버그 정보를 사용할 수 있다는 사실을 JIT 컴파일러에 알리는 `DebuggableAttribute` 는 생성되지 않습니다. 디버깅할 수 없도록 하려는 릴리스 빌드에 대해 .pdb 파일을 생성하려면 **/debug:pdbonly** 를 사용합니다. 자세한 내용은 [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) 또는 [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2)를 참조하세요.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거는 project.pdb 파일을 찾기 위해 EXE 또는 DLL 파일에서 .pdb 파일의 경로를 사용합니다. 디버거가 해당 위치에서 .pdb 파일을 찾을 수 없거나 경로가 올바르지 않은 경우, 디버거는 EXE가 포함된 경로를 검색한 다음 **옵션** 대화 상자에 지정된 기호 경로를 검색합니다. 이 경로는 일반적으로 **기호** 노드의 **디버깅** 폴더입니다. 디버거는 디버깅 중인 실행 파일과 일치하지 않는 .pdb 파일은 로드하지 않습니다. 디버거가 .pdb 파일을 찾지 못하면 기호를 검색하거나 검색 경로에 위치를 더 추가할 수 있는 **기호 찾기** 대화 상자가 나타납니다.  
   

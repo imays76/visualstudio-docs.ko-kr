@@ -1,7 +1,7 @@
 ---
 title: XML 스키마 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1aa88b7181166fb1b339180a52929ed87abf420
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13f35c5bdadd74935f8b29d4b59031337f880ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236836"
 ---
 # <a name="xml-schema-designer"></a>XML 스키마 디자이너
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [XML 스키마 디자이너](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer)합니다.  
-  
   
 XML 스키마 디자이너(XSD 디자이너)는 서로 다른 수준의 추상화에서 스키마 집합을 시각화하는 데 사용되는 그래픽 도구입니다. 다음은 XSD 디자이너의 주요 구성 요소입니다.    
   

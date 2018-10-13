@@ -1,7 +1,7 @@
 ---
 title: UML 클래스 다이어그램에서 코드 생성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222836"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>UML 클래스 다이어그램에서 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 클래스 다이어그램에서 코드 생성](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams)합니다.  
-  
 Visual Studio에서 UML 클래스 다이어그램에서 Visual C#.NET 코드를 생성 하려면 사용 합니다 **코드 생성** 명령입니다. 기본적으로 이 명령은 사용자가 선택한 각 UML 형식에 대해 C# 형식을 생성합니다. 코드를 생성하는 텍스트 템플릿을 수정하거나 복사하여 이 동작을 수정하고 확장할 수 있습니다. 모델의 여러 패키지에 포함된 형식에 대해 각기 다른 동작을 지정할 수 있습니다.  
   
  합니다 **코드 생성** 각 UML 클래스 또는 다른 요소에 대해 하나의 파일을 생성 하 고 사용자의 선택한 요소에서 코드를 생성 하려면 명령은 데 특히 적합 합니다. 예를 들어 다음 스크린 샷에서는 두 가지 UML 클래스에서 생성된 두 개의 C# 파일을 보여줍니다.  
@@ -173,9 +171,9 @@ Visual Studio에서 UML 클래스 다이어그램에서 Visual C#.NET 코드를 
     |------------------|---------------------|  
     |이름|이 바인딩의 이름입니다. 포함하는 패키지 또는 모델에서 상속한 바인딩을 재정의하려면 재정의할 바인딩과 동일한 이름을 사용합니다.|  
     |덮어쓰기|true이면 모든 기존 코드를 덮어씁니다.|  
-    |대상 이름|생성된 파일의 이름입니다.<br /><br /> 식을이 문자열에 같은 삽입할 `{Name}` 또는 `{Owner.Name}`합니다. 예를 들어, 작성할 수 있습니다: `{Owner.Name}_{Name}`합니다. 식은 모델 요소에 대해 평가됩니다. 식에서는 요소의 속성을 사용할 수 있지만 메서드의 속성은 사용할 수 없습니다. 속성을 사용할 수를 찾으려면 형식의 속성을 찾아 **Microsoft.VisualStudio.Uml.\*** . **중요:** `{Name}` 하거나 `{Owner.Name}` 에서만 사용할 수는 **대상 이름** 속성입니다.   생성된 클래스의 이름을 변경하려면 템플릿을 수정해야 합니다. 자세한 내용은 [텍스트 템플릿 작성](#writing)합니다.|  
+    |대상 이름|생성된 파일의 이름입니다.<br /><br /> 식을이 문자열에 같은 삽입할 `{Name}` 또는 `{Owner.Name}`합니다. 예를 들어, 작성할 수 있습니다: `{Owner.Name}_{Name}`합니다. 식은 모델 요소에 대해 평가됩니다. 식에서는 요소의 속성을 사용할 수 있지만 메서드의 속성은 사용할 수 없습니다. 속성을 사용할 수를 찾으려면 형식의 속성을 찾아 **Microsoft.VisualStudio.Uml.\*** . **중요:** `{Name}` 하거나 `{Owner.Name}` 에서만 사용할 수는 **대상 이름** 속성입니다. 생성된 클래스의 이름을 변경하려면 템플릿을 수정해야 합니다. 자세한 내용은 [텍스트 템플릿 작성](#writing)합니다.|  
     |프로젝트 경로|변환의 출력 파일을 포함할 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트의 경로를 지정합니다. 새 프로젝트를 만들려면 형식화된 값을 사용하고, 줄임표 단추를 선택 (**[...]** ) 기존 프로젝트를 선택 합니다.<br /><br /> 새 프로젝트가 없는 경우 만들어지며, C# 클래스 라이브러리 프로젝트가 됩니다.<br /><br /> 이렇게 하려면 프로젝트를 직접 입력해야 합니다. %ProgramFiles% 또는 %LocalAppData%와 같은 환경 변수 매크로를 포함할 수 있습니다.|  
-    |대상 디렉터리|대상 파일이 생성된 폴더입니다. 경로는 프로젝트 폴더에 상대적입니다.<br /><br /> `{PackageStructure}` 식을 사용하여, 포함하는 패키지의 이름에 해당하는 경로를 삽입할 수 있습니다. 기본값은 `\GeneratedCode\{PackageStructure}`입니다. %TEMP% 또는 %HomePath%와 같은 환경 변수도 포함할 수 있습니다. **중요:** `{PackageStructure}` 에서만 사용할 수는 **대상 디렉터리** 속성입니다.  |  
+    |대상 디렉터리|대상 파일이 생성된 폴더입니다. 경로는 프로젝트 폴더에 상대적입니다.<br /><br /> `{PackageStructure}` 식을 사용하여, 포함하는 패키지의 이름에 해당하는 경로를 삽입할 수 있습니다. 기본값은 `\GeneratedCode\{PackageStructure}`입니다. %TEMP% 또는 %HomePath%와 같은 환경 변수도 포함할 수 있습니다. **중요:** `{PackageStructure}` 에서만 사용할 수는 **대상 디렉터리** 속성입니다.|  
     |템플릿 파일 경로|변환을 수행할 템플릿입니다.<br /><br /> 제공된 템플릿을 사용하거나 사용자 고유의 템플릿을 만들 수 있습니다. 다음 위치에서 제공된 템플릿을 찾을 수 있습니다.<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  바인딩을 원하는 만큼 요소에 연결할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: Windows Forms 응용 프로그램에서 조회 테이블 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a61286dee857f6e8f08a815e6058ce1761a646bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 334acba1e70545f1f8be758e34c8fc4843878406
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223896"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms 응용 프로그램에서 조회 테이블 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows Forms 응용 프로그램에서 조회 테이블 만들기](https://docs.microsoft.com/visualstudio/data-tools/create-lookup-tables-in-windows-forms-applications)합니다.  
-  
   
 용어 *조회 테이블* 두 관련된 데이터 테이블에 바인딩되는 컨트롤에 설명 합니다. 이러한 조회 컨트롤에는 두 번째 테이블에서 선택한 값을 기준으로 첫 번째 테이블의 데이터를에서 표시 합니다.  
   

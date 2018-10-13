@@ -1,7 +1,7 @@
 ---
 title: 도움말 뷰어의 내게 필요한 옵션 기능 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 623e2c6514f8eddfd587848aff5fc68c29640885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d6dee81d823c52986922d59a4e41f402db4fbd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554626"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242139"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>도움말 뷰어의 내게 필요한 옵션 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [내게 필요한 옵션 기능 도움말 뷰어의](https://docs.microsoft.com/visualstudio/ide/accessibility-features-of-the-help-viewer)합니다.  
-  
 Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽게 만들기 위해 최선을 다하고 있습니다. 이 항목에는 Microsoft 도움말 뷰어 2.2를 다양한 범위의 기능을 가진 사람들이 액세스할 수 있도록 도와주는 기능, 제품 및 서비스에 대한 정보가 포함되어 있습니다.  
   
 ## <a name="keyboard-access"></a>키보드 액세스  

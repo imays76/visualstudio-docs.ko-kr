@@ -1,7 +1,7 @@
 ---
 title: IntelliSense 호스팅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20e2c0d2c14a0191811453b8e1a5cadf3d314e98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6b02716effa95beb1492c25c56d835e6deb91de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550660"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216985"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 호스팅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IntelliSense 호스팅](https://docs.microsoft.com/visualstudio/extensibility/intellisense-hosting)합니다.  
-  
 Visual Studio IntelliSense 호스팅 수 있습니다. Visual Studio 텍스트 편집기에서 호스트 되지 않는 코드에 대 한 IntelliSense를 제공 하면 IntellSense 있습니다 호스팅.  
   
 ## <a name="intellisense-hosting-usage"></a>IntelliSense 호스팅 사용  

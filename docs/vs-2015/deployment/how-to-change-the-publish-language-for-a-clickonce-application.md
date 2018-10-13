@@ -1,7 +1,7 @@
 ---
 title: '방법: 변경 된 ClickOnce 응용 프로그램에 대 한 게시 되는 언어 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 90699b4e12c8384327a3840799506e393bed2e82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2330f234b5b00fdde99376fbe5664bd5dbd99551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239659"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램의 게시 언어 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 응용 프로그램에 대 한 Change the Publish Language](https://docs.microsoft.com/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application)합니다.  
-  
 게시 하는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 사용자 인터페이스 언어 및 개발 컴퓨터의 문화권을 기본값으로 설치 중에 표시 합니다. 지역화 된 응용 프로그램을 게시 하는 경우에 언어 및 지역화 된 버전과 일치 하는 문화권을 지정 하는 것이 해야 합니다. 에 의해 결정 되기는 `Publish language` 프로젝트에 대 한 속성입니다.  
   
  `Publish language` 에서 속성을 설정할 수 있습니다 합니다 **게시 옵션** 에서 액세스할 수 있는 대화 상자를 **게시** 페이지를 **프로젝트 디자이너**합니다.  

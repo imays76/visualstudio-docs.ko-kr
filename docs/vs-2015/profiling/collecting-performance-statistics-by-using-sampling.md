@@ -1,7 +1,7 @@
 ---
 title: 샘플링을 사용하여 성능 통계 수집 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce6a9fed51e4c5dc93fca406dbb43787700d83d2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: eaa8ae8c5e073d4c83ae6489cd32953b0959072f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223700"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>샘플링을 사용하여 성능 통계 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [샘플링을 사용 하 여 성능 통계 수집](https://docs.microsoft.com/visualstudio/profiling/collecting-performance-statistics-by-using-sampling)합니다.  
-  
 기본적으로는 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 프로파일링 도구 샘플링 방법은 10,000,000 프로세서 주기마다(1GHz 컴퓨터에서 약 1/100초마다) 프로파일링 정보를 수집합니다. 샘플링 방법은 프로세서 사용률 문제를 찾는 데 유용하며, 대부분의 성능 조사를 시작할 수 있는 방법으로 제안됩니다.  
   
  **요구 사항**  

@@ -1,7 +1,7 @@
 ---
 title: '&lt;종속성&gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8a998e5649b45b3e442701bd78c95f85844f71d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541524"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233859"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;종속성&gt; 요소 (ClickOnce 응용 프로그램)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ &lt;종속성&gt; 요소 (ClickOnce 응용 프로그램)](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-application)합니다.  
-  
 응용 프로그램에 필요한 플랫폼 또는 어셈블리 종속성을 식별 합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -152,12 +150,12 @@ ms.locfileid: "47541524"
 |`language`|선택 사항입니다. 예: EN-US, 어셈블리의 두 부분 언어 코드를 식별합니다.|  
   
 ### <a name="hash"></a>hash  
- 합니다 `hash` 의 선택적 자식 요소입니다는 `assemblyIdentity` 요소입니다. `hash` 요소는 특성이 없습니다.  
+ 합니다 `hash` 의 선택적 자식 요소입니다는 `assemblyIdentity` 요소입니다. `hash` 요소에는 특성이 없습니다.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 후에 변경 된 파일이 없음을 확인 하기를 보안 검사는 응용 프로그램의 모든 파일의 해시를 알고리즘을 사용 합니다. 경우는 `hash` 요소가 포함 되지 않은,이 검사가 수행 되지 것입니다. 따라서 생략 된 `hash` 요소 권장 되지 않습니다.  
   
 ### <a name="dsigtransforms"></a>dsig:Transforms  
- 합니다 `dsig:Transforms` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:Transforms` 요소는 특성이 없습니다.  
+ 합니다 `dsig:Transforms` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:Transforms` 요소에는 특성이 없습니다.  
   
 ### <a name="dsigtransform"></a>dsig:Transform  
  합니다 `dsig:Transform` 의 필수 자식 요소인는 `dsig:Transforms` 요소입니다. `dsig:Transform` 요소에는 다음 특성이 있습니다.  
@@ -174,7 +172,7 @@ ms.locfileid: "47541524"
 |`Algorithm`|이 파일에 대 한 다이제스트를 계산 하는 데 사용 된 알고리즘입니다. 사용 하는 유일한 값 현재 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 는 `http://www.w3.org/2000/09/xmldsig#sha1`합니다.|  
   
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue  
- 합니다 `dsig:DigestValue` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:DigestValue` 요소는 특성이 없습니다. 요소의 텍스트 값은 지정된 된 파일에 대 한 계산 된 해시입니다.  
+ 합니다 `dsig:DigestValue` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:DigestValue` 요소에는 특성이 없습니다. 요소의 텍스트 값은 지정된 된 파일에 대 한 계산 된 해시입니다.  
   
 ## <a name="remarks"></a>설명  
  해당 응용 프로그램에서 사용 하는 모든 어셈블리에 있어야 `dependency` 요소입니다. 종속 어셈블리는 플랫폼 어셈블리와 전역 어셈블리 캐시에 미리 설치 해야 하는 어셈블리를 포함 하지 않습니다.  

@@ -1,7 +1,7 @@
 ---
 title: VTableShape | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2f40c276cbbac7815c3a21778e7980616c879cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59733a5f9a18c227fed7e0301d2a9df8bcfa6c58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238723"
 ---
 # <a name="vtableshape"></a>VTableShape
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VTableShape](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/vtableshape)합니다.  
-  
 합니다 [VTable](../../debugger/debug-interface-access/vtable.md) 심볼 클래스 자식 구분 기호에는 `SymTagVTableShape` 태그입니다.  
   
 ## <a name="properties"></a>속성  

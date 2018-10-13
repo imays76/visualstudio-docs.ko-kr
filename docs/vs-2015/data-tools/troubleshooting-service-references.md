@@ -1,7 +1,7 @@
 ---
 title: 서비스 참조 문제 해결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880892"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223966"
 ---
 # <a name="troubleshooting-service-references"></a>서비스 참조 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [서비스 참조 문제 해결](https://docs.microsoft.com/visualstudio/data-tools/troubleshooting-service-references)합니다.
-
 이 항목에서는 사용 하 여 작업할 때 발생할 수 있는 일반적인 문제 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 나 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 참조 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.
 
 ## <a name="error-returning-data-from-a-service"></a>서비스에서 데이터를 반환 하는 오류

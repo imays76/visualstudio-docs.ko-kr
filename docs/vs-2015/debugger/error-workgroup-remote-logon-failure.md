@@ -1,7 +1,7 @@
 ---
 title: '오류: 작업 그룹 원격 로그온 실패 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46d7043eba9d357f410d1a05655870ef5e1121d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 489fb331f08c95bf26a9b99c1143575aaa44257f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236030"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>오류: 작업 그룹 원격 로그온 실패
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: 작업 그룹 원격 로그온 실패](https://docs.microsoft.com/visualstudio/debugger/error-workgroup-remote-logon-failure)합니다.  
-  
 이 오류의 의미는 다음과 같습니다.  
   
  로그온 실패: 사용자 이름을 알 수 없거나 암호가 잘못되었습니다.  
@@ -91,7 +89,7 @@ ms.locfileid: "47551404"
   
 ## <a name="see-also"></a>참고 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

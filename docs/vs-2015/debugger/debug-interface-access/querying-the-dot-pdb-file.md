@@ -1,7 +1,7 @@
 ---
 title: 쿼리 합니다. Pdb 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae3034cf9f02d6d37c55bafe392610b1f1544fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7d056224d23f487abf25776a52ca80079c08a9f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236069"
 ---
 # <a name="querying-the-pdb-file"></a>.Pdb 파일 쿼리
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [쿼리 합니다. Pdb 파일](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/querying-the-dot-pdb-file)합니다.  
-  
 프로그램 데이터베이스 파일 (확장 확장자는.pdb) 이진 파일 형식 및 컴파일 및 연결 프로젝트 과정에서 수집 된 기호 디버깅 정보를 포함 하는 경우 사용 하 여 C/c + + 프로그램을 컴파일할 때 PDB 파일을 만들 **/ZI** 또는 **/Zi** 또는 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]를 [!INCLUDE[csprcs](../../includes/csprcs-md.md)], 또는 [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] 사용 하 여 프로그래밍 합니다 **디버그** 옵션입니다. 개체 파일에는 디버깅 정보에 대 한.pdb 파일에 대 한 참조를 포함 합니다. Pdb 파일에 대 한 자세한 내용은 참조 하세요. [PDB 파일](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f)합니다. DIA 응용 프로그램을 다음과 같은 일반적인 단계를 사용 하 여 다양 한 기호, 개체 및 실행 가능 이미지 내의 데이터 요소에 대 한 자세한 정보를 얻을 수 있습니다.  
   
 ### <a name="to-query-the-pdb-file"></a>.Pdb 파일 쿼리  

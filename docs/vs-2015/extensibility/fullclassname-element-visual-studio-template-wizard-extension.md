@@ -1,7 +1,7 @@
 ---
 title: FullClassName 요소 (Visual Studio 템플릿 마법사 확장명) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25f291d787a6efe03c6b8cf8dff27157f48d1596
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0b34f992c711b09736055a3ec303703055a8d74
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556836"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224253"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 요소(Visual Studio 템플릿 마법사 확장명)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [FullClassName 요소 (Visual Studio 템플릿 마법사 확장명)](https://docs.microsoft.com/visualstudio/extensibility/fullclassname-element-visual-studio-template-wizard-extension)합니다.  
-  
 구현 하는 클래스의 정규화 된 이름을 `IWizard` 인터페이스입니다.  
   
  \<VSTemplate>  

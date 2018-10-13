@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ade0234423c907c675bc1dd53e3436dfa38ca26e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb67c01732f5347e13c09146379d2b79298d198d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236056"
 ---
 # <a name="projects"></a>프로젝트
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트](https://docs.microsoft.com/visualstudio/extensibility/internals/projects)합니다.  
-  
 Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및에 표시 되는 기타 리소스를 구성 하는 데 사용할 컨테이너 **솔루션 탐색기**합니다. 일반적으로 프로젝트는 소스 코드 파일 및 비트맵 파일 같은 리소스에 대 한 참조를 저장 하는 파일 (예를 들어 C# 프로젝트의.csproj 파일)입니다. 구성, 빌드, 디버그 및 소스 코드를 배포할 수 있습니다. 프로젝트, 웹 서비스 및 데이터베이스 및 기타 리소스에 대 한 참조입니다. Vspackage는 세 가지 주요 방법으로 Visual Studio 프로젝트 시스템을 확장할 수 있습니다: *프로젝트 형식*, *프로젝트 하위 형식*, 및 *사용자 지정 도구*합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

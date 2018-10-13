@@ -1,7 +1,7 @@
 ---
 title: 레이어 다이어그램에 사용자 지정 속성 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1fc9c3e67cbb10484c814acb0eedbfbae2729eb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235159"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>레이어 다이어그램에 사용자 지정 속성 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [종속성 다이어그램에 사용자 지정 속성 추가](https://docs.microsoft.com/visualstudio/modeling/add-custom-properties-to-layer-diagrams)합니다.  
-  
 레이어 다이어그램의 확장 코드를 작성할 때 레이어 다이어그램의 요소와 함께 값을 저장할 수 있습니다. 값은 다이어그램이 저장되고 다시 열릴 때 유지됩니다. 이러한 속성에 나타날 수도 있습니다는 **속성** 창 사용자가 보고 편집할 수 있도록 합니다. 예를 들어 사용자가 각 레이어에 대한 정규식을 지정하고, 각 레이어의 클래스 이름이 사용자가 지정한 패턴을 따르는지 확인하기 위해 유효성 검사 코드를 작성하도록 허용할 수 있습니다.  
   
 ## <a name="properties-not-visible-to-the-user"></a>사용자에게 표시되지 않는 속성  

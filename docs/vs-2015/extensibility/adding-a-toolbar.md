@@ -1,7 +1,7 @@
 ---
 title: 도구 모음 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ebfd86a05be72b5a0c35664dee0dc0fcd4189be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3aa697ab6ac25c1fe273f4229cff462f097a35e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222913"
 ---
 # <a name="adding-a-toolbar"></a>도구 모음 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도구 모음 추가](https://docs.microsoft.com/visualstudio/extensibility/adding-a-toolbar)합니다.  
-  
 이 연습에서는 Visual Studio IDE에 도구 모음을 추가 하는 방법을 보여 줍니다.  
   
  도구 모음 명령에 바인딩된 단추를 포함 하는 가로 또는 세로 줄무늬 됩니다. 해당 구현에 따라 IDE에서 도구 모음 위치가 변경 되 면, 주요 IDE 창의 한쪽에 도킹 하거나 수 다른 창 앞에 유지 하려고 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 컨트롤 이벤트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ac93da53f21b56df38a6ad597d7c4911075a670
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7dcdcf67b4349a5e15e06c702177194045c62f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236472"
 ---
 # <a name="control-events"></a>컨트롤 이벤트
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [컨트롤 이벤트](https://docs.microsoft.com/visualstudio/extensibility/debugger/control-events)합니다.  
-  
 프로그램의 제어 된 실행 하는 동안 이벤트를 보내야 합니다. 사용 하 여 전송 된 모든 이벤트를 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) 인터페이스를 구현 해야 하는 특성이 합니다 [IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) 메서드.  
   
 ## <a name="additional-methods"></a>추가 메서드  

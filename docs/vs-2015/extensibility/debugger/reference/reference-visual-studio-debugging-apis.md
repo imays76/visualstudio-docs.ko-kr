@@ -1,7 +1,7 @@
 ---
 title: 참조 (Visual Studio 디버깅 Api) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3af0907f1a3b5c59cd857b118ec47ab2cae983b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3e45670976d0f7ba26312b39ce448b6736f8ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191843"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>참조(Visual Studio 디버깅 API)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [참조 (Visual Studio 디버깅 Api)](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis)합니다.  
-  
 Visual Studio 디버깅 SDK 참조의 런타임 아키텍처 및 디버거 및 해당 구성 요소 기능에 대 한 기본 모델을 간략하게 설명합니다. 설명서에서는 인터페이스를 통해 정의 하는 동작 외에도 설명 구성 요소 및 인터페이스에 대 한 최대한 적은 가정 합니다.  
   
  참조 섹션의 목적은으로 다양 한 지원 가능한 언어, 실행된 시간 및 운영 체제의 집합을 제공 하는 것입니다.  

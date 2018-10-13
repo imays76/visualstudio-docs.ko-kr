@@ -1,7 +1,7 @@
 ---
 title: '방법: 메시지 뷰에서 메시지 검색 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 984c3f0dc9b61059b53a7caf5a859d3413c99e62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c609e927244f0d0c297bdebedab451a6af59bd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553739"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232884"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>방법: 메시지 뷰에서 메시지 검색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 메시지 뷰에서 메시지 검색](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-message-in-messages-view)합니다.  
-  
 검색 조건으로 해당 핸들, 형식 또는 메시지 ID를 사용 하 여 메시지 보기에서 특정 메시지를 검색할 수 있습니다. 이러한-조합일-유효한 검색 조건이 됩니다. 초기 검색으로 지정할 수 있습니다. 대화 상자의 필드에에서는 현재 선택 된 메시지의 특성을 사용 하 여 미리 로드 됩니다.  
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>메시지 뷰에서 메시지 검색  
