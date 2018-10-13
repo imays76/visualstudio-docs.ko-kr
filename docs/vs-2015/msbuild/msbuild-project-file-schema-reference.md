@@ -1,7 +1,7 @@
 ---
 title: MSBuild 프로젝트 파일 스키마 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 134a66a38886201a9f53ed5d15dda009b095d72f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd1add4f68bb2e0648cf3cf08b72b1bc6f592595
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542865"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305983"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 프로젝트 파일 스키마 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 프로젝트 파일 스키마 참조](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)합니다.  
-  
   
 이 항목에서는 사용 가능한 특성 및 자식 요소가 포함된 모든 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] XML 스키마 요소의 표를 제공합니다.  
   

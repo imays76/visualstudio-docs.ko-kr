@@ -1,7 +1,7 @@
 ---
 title: 레거시 활동 디자이너를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a3970a4453c23a47b609886c24d0b8fe62efd3e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c71fa8d901653babd8c3558da7eff8ff16058c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296831"
 ---
 # <a name="using-the-legacy-activity-designer"></a>레거시 활동 디자이너 사용
 이 항목에서는 레거시 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에서 활동 디자이너를 사용하는 방법에 대해 설명합니다. 레거시 디자이너는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 하는 경우에 사용합니다.  

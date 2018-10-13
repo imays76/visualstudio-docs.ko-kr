@@ -1,7 +1,7 @@
 ---
 title: FxCopCmd 오류 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 96889b90061760393761f12514bd6a9351f83c53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae6b19d9901eb2a2d047b4c262b02a825c0f83b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564324"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303214"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd 오류
 FxCopCmd 심각한 되도록 모든 오류를 고려 하지 않습니다. FxCopCmd 부분 분석을 수행 하는 데 충분 한 정보가 있으면 발생 하는 분석 및 보고서 오류 수행 합니다. 32 비트 정수 오류 코드, 오류에 해당 하는 숫자 값의 비트 조합을 포함 합니다.  

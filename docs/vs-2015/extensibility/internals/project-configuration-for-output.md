@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 출력에 대 한 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c2d4a8641189e7ff9d4190ee68a578f5dd51785
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5e871a2053bb14b30ad47955104edb5c3fe4658
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543601"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304124"
 ---
 # <a name="project-configuration-for-output"></a>출력에 대한 프로젝트 구성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [출력에 대 한 프로젝트 구성을](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-output)합니다.  
-  
 모든 구성에는 실행 파일 또는 리소스 파일과 같은 출력 항목을 생성 하는 빌드 프로세스의 집합을 지원할 수 있습니다. 이러한 출력 항목은 사용자에 게 개인 및 관련된 형식의 실행 파일 (.exe,.dll,.lib) 및 원본 파일 (.idl,.h 파일)와 같은 출력을 연결 하는 그룹에 배치할 수 있습니다.  
   
  출력 항목을 통해 사용할 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> 메서드를 열거 하 고는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> 메서드. 출력 항목을 그룹화 하려는 경우 프로젝트도 구현 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> 인터페이스입니다.  

@@ -1,7 +1,7 @@
 ---
 title: '오류: 웹 사이트 작업자 프로세스 종료 되었습니다 IIS에서 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81396165841b0c23a317a857e73d7adbf88971dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66ed595d5c6bf23e6c9525c1043a74592c3fb48e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272911"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>오류: IIS에서 웹 사이트 작업자 프로세스를 종료했습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: IIS에서 웹 사이트 작업자 프로세스를 종료 했습니다](https://docs.microsoft.com/visualstudio/debugger/error-web-site-worker-process-has-been-terminated-by-iis)합니다.  
-  
 디버거가 웹 사이트에서 코드 실행을 중지했습니다. 이로 인해 IIS(인터넷 정보 서비스)에서는 작업자 프로세스가 응답을 중지한 것으로 가정하여 작업자 프로세스를 종료했습니다.  
   
  디버깅을 계속하려면 작업자 프로세스를 계속하도록 IIS를 구성해야 합니다. 이 오류 메시지는 IIS 7 이전 버전의 IIS에서는 표시되지 않습니다.  

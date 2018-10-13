@@ -1,7 +1,7 @@
 ---
 title: Vspackage 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 79b9424e-7e9b-4fc8-9b9f-00212674573c
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c826b61e4f6d2255be7b7fdad967bab0d8dea74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6bbfc837323ddb103405ab289e89322ddb344040
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550402"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243570"
 ---
 # <a name="registering-vspackages"></a>VSPackage 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Vspackage 등록](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-vspackages)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .pkgdef 파일을 설명 하 고 VSPackage를 찾을 때까지 의존 합니다. .Pkgdef 파일 시스템 레지스트리에 추가 될 모든 등록 정보를 포함 합니다. 소스 코드에 특성을 추가 하 고 다음을 실행 하 여 관리 되는 Vspackage 등록 합니다 [CreatePkgDef 유틸리티](../../extensibility/internals/createpkgdef-utility.md) .pkgdef 파일을 생성 하려면 결과 어셈블리에 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

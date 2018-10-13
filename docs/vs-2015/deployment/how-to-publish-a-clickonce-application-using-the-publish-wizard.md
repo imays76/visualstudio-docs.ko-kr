@@ -1,7 +1,7 @@
 ---
 title: '방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 46b969a20859ed537549aaede8818e10c0d13fde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82600212626ea5c5f0543579b82d95903f1fcc8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293906"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>방법: 게시 마법사를 사용하여 ClickOnce 응용 프로그램 게시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 응용 프로그램 게시 마법사를 사용 하 여 게시](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)합니다.  
-  
 ClickOnce 응용 프로그램을 사용자에게 제공하려면 파일 공유나 경로, FTP 서버 또는 이동식 미디어에 해당 응용 프로그램을 게시해야 합니다. 게시 마법사를 사용 하 여 응용 프로그램을 게시할 수 있습니다. 게시와 관련 된 추가 속성에서 사용할 수는 **게시** 페이지의 **프로젝트 디자이너**합니다. 자세한 내용은 [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)합니다.  
   
  게시 마법사를 실행하기 전에 게시 속성을 적절하게 설정해야 합니다. 예를 들어, ClickOnce 응용 프로그램에 서명 하는 키를 지정 하려는 경우 할 수 있는 등의 **서명** 페이지의 **프로젝트 디자이너**합니다. 자세한 내용은 [ClickOnce 응용 프로그램 게시](../deployment/securing-clickonce-applications.md)를 참조하세요.  

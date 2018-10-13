@@ -1,7 +1,7 @@
 ---
 title: 디렉터리 상태 코드 열거자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24f6dde65def4569eb8163d281f872011be0275c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 178d208b944cd52c641d60be7e0004c359896680
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556568"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264077"
 ---
 # <a name="directory-status-code-enumerator"></a>디렉터리 상태 코드 열거자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디렉터리 상태 코드 열거자](https://docs.microsoft.com/visualstudio/extensibility/directory-status-code-enumerator)합니다.  
-  
 `SccDirStatus` 소스 제어 시스템에서 디렉터리의 상태를 지정 하는 명명 된 상수 값을 포함 하는 열거자입니다. 이 열거형은에서 사용 된 [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)합니다. 이 원본 제어 플러그 인 API 버전 1.2에에서 도입 되었습니다.  
   
 ## <a name="syntax"></a>구문  

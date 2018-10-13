@@ -1,7 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, JavaScript, 서식 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a5a69d556beb8ebf3d3f75720614f7258b1780
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271052"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>옵션, 텍스트 편집기, JavaScript, 서식
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션, 텍스트 편집기, JavaScript, 서식](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-javascript-formatting)합니다.  
-  
   
 **옵션** 대화 상자의 **서식** 페이지를 사용하여 코드 편집기의 서식 코드에 대한 옵션을 설정합니다. 메뉴 모음에서 이 페이지에 액세스하려면 **도구**, **옵션**을 선택한 다음 **텍스트 편집기**, **JavaScript** 및 **서식**을 확장합니다.  
   

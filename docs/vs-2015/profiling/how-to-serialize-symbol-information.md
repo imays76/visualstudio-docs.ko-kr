@@ -1,7 +1,7 @@
 ---
 title: '방법: 기호 정보 직렬화 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04bce9383142ee6916fa7ade50feda072019f530
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6c0e567131d36cbc7e805533f7d5acb9c5f3277
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256557"
 ---
 # <a name="how-to-serialize-symbol-information"></a>방법: 기호 정보 직렬화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 기호 정보 직렬화](https://docs.microsoft.com/visualstudio/profiling/how-to-serialize-symbol-information)합니다.  
-  
 응용 프로그램을 분석하기 위해 포함해야 하는 기호를 직렬화할 수 있습니다. 기호를 직렬화하면 기호가 .vsp 파일에 추가됩니다. 기호 정보를 .vsp 파일에 추가하면 다른 사용자가 원래 기호에 대한 액세스 권한이 없어도 성능 보고서를 분석할 수 있습니다. 기호가 직렬화되지 않은 경우 .vsp 파일을 분석하려면 원래 계측된 .exe 및 .pdb 파일이 있어야 합니다.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>기호 정보를 자동으로 직렬화하려면  

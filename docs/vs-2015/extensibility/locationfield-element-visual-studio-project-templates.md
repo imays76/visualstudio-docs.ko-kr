@@ -1,7 +1,7 @@
 ---
 title: LocationField 요소 (Visual Studio 프로젝트 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea66808097c0e62d6c36781d7f288ed06975f6e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d913c6c1c340e0599828ef2f5528b8741ddf20b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294530"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 요소(Visual Studio 프로젝트 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [LocationField 요소 (Visual Studio 프로젝트 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/locationfield-element-visual-studio-project-templates)합니다.  
-  
 지정 여부는 **위치** 텍스트 상자에 **새 프로젝트** 대화 상자 활성화, 비활성화 또는 프로젝트 템플릿에 대 한 숨겨진 합니다.  
   
  \<VSTemplate>  

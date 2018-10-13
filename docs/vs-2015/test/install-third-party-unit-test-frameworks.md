@@ -1,7 +1,7 @@
 ---
 title: 타사 단위 테스트 프레임워크 설치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0f17f4c49c88b341c6ccc7583f7069c8b5142a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e10d7545973e1c202f29c17e9e3ba06f024501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301121"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>타사 단위 테스트 프레임워크 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [타사 단위 테스트 프레임 워크 설치](https://docs.microsoft.com/visualstudio/test/install-third-party-unit-test-frameworks)합니다.  
-  
 Visual Studio 테스트 탐색기는 탐색기의 어댑터 인터페이스를 개발한 단위 테스트 프레임워크를 실행할 수 있습니다. 프레임워크 설치 프로그램은 이진 파일을 설치하고, 지원하는 언어의 Visual Studio 프로젝트 템플릿을 추가합니다. 템플릿으로 프로젝트를 만들면 프레임워크가 테스트 탐색기에 등록됩니다. Visual Studio 솔루션에는 다양한 프레임워크를 사용하고 다양한 언어로 대상이 지정되는 단위 테스트 프로젝트가 포함될 수 있습니다. 테스트 탐색기는 이들 모두를 실행합니다.  
   
  **요구 사항**  

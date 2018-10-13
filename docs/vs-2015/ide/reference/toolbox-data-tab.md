@@ -1,7 +1,7 @@
 ---
 title: 도구 상자, 데이터 탭 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b844e3c9caf20cf0fff873c6485b8324a8dbe26b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307653"
 ---
 # <a name="toolbox-data-tab"></a>도구 상자, 데이터 탭
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도구 상자, 데이터 탭](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-data-tab)합니다.  
-  
   
 폼 및 구성 요소에 추가할 수 있는 데이터 개체를 표시합니다. 연결된 디자이너가 있는 프로젝트를 만들 경우 **도구 상자**의 **데이터** 탭이 표시됩니다. Visual Studio 통합 개발 환경에는 기본적으로 **도구 상자**가 표시됩니다. **도구 상자**를 표시해야 할 경우 **보기** 메뉴에서 **도구 상자**를 선택합니다.  
   

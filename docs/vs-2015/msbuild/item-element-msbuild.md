@@ -1,7 +1,7 @@
 ---
 title: Item 요소(MSBuild) | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50bcae08190d052d02ec2cf468396692163a272d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1dfec558a9958d980d25d4160c4b7f2ce269cbb5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551870"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270037"
 ---
 # <a name="item-element-msbuild"></a>Item 요소(MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Item 요소 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/item-element-msbuild)합니다.  
-  
   
 사용자 정의 항목 및 해당 메타데이터를 포함합니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트에서 사용되는 모든 항목은 `ItemGroup` 요소의 자식으로 지정해야 합니다.  
   

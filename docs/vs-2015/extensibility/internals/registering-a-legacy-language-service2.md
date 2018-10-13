@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 Service2 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 59fbdb3417bbeb09a47f1c7a7b0552f230a6d269
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 833dfbfe62a7e8b669460d332ade43f670a4a13e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287081"
 ---
 # <a name="registering-a-legacy-language-service"></a>레거시 언어 서비스 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 Service2 등록](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service2)합니다.  
-  
 다음 섹션에서는 레지스트리 항목 목록을 다양 한 언어에 대 한 서비스 옵션에서 사용할 수 있는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
   
  다음 레지스트리 항목을 목록의 *VS 레지스트리 루트* HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 같으면\\*X.Y*여기서 *X.Y* 는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 버전 번호입니다.  

@@ -1,7 +1,7 @@
 ---
 title: '연습: 데이터 집합 디자이너에서 DataTable 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 832dba200fca438d000bae101381389ea20cfb17
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f0f31528239794b9c7a3b4a4bf98542ed4bbcf2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299964"
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>연습: 데이터 집합 디자이너에서 DataTable 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "47550038"
   
 2.  열 이름을 `SongID`입니다.  
   
-3.  에 **속성** 창에서 설정 합니다 <xref:System.Data.DataColumn.DataType%2A> 속성을 <xref:System.Int16?displayProperty=fullName>합니다.  
+3.  **속성** 창에서 <xref:System.Data.DataColumn.DataType%2A> 속성을 <xref:System.Int16?displayProperty=fullName>로 설정합니다.  
   
 4.  이 프로세스를 반복 하 고 다음 열을 추가 합니다.  
   

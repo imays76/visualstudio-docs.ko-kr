@@ -1,7 +1,7 @@
 ---
 title: '방법: 도메인별 언어에서 표준 메뉴 명령 수정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 740e26434190857907af61170222922180abc9b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302148"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인별 언어에서 표준 메뉴 명령 수정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 도메인별 언어에서 표준 메뉴 명령 수정](https://docs.microsoft.com/visualstudio/modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language)합니다.  
-  
 DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 수 있습니다. 예를 들어, 수정할 수 있습니다 **잘라내기** 중요 한 정보가 제외 되도록 합니다. 이렇게 하려면 명령 집합 클래스에서 메서드를 재정의합니다. 이러한 클래스는 DslPackage 프로젝트의 CommandSet.cs 파일에서 정의되며 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>에서 파생됩니다.  
   
  요약하자면 명령을 수정하려는 경우 다음 단계를 수행합니다.  

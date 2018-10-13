@@ -1,7 +1,7 @@
 ---
 title: '방법: 관리 코드에 스레드 이름 설정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0175bee3280f3ecfdb49fc280007810d4e1c2860
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a921fcdcd19114842e026f1ebc3bcb699e200f89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256107"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>방법: 관리 코드에 스레드 이름 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 관리 코드에 스레드 이름 설정](https://docs.microsoft.com/visualstudio/debugger/how-to-set-a-thread-name-in-managed-code)합니다.  
-  
 스레드 명명 기능은 Visual Studio의 모든 버전에서 사용할 수 있습니다. 스레드 명명 기능은에서 스레드를 추적할 때 유용 합니다 **스레드** 창입니다. 때문에 합니다 **스레드** 창을 Visual Studio Express edition에서 사용할 수 없는, Express 버전에서는 스레드 명명이 유용 합니다.  
   
  관리 코드에 스레드 이름을 설정하려면 <xref:System.Threading.Thread.Name%2A> 속성을 사용합니다.  

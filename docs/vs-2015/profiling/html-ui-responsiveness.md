@@ -1,7 +1,7 @@
 ---
 title: HTML UI 응답성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2c40052484cb8ee25cbb7d3ddbc353fd1dacc2c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269102"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 응답성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [HTML UI 응답성 분석 UWP 앱에서](https://docs.microsoft.com/visualstudio/profiling/html-ui-responsiveness)합니다.  
-  
 이 항목에서는 Windows 유니버설 앱에 사용할 수 있는 성능 도구인 UI 응답성 프로파일러를 사용하여 앱에서 성능 문제를 격리하는 방법에 대해 설명합니다.  
   
  UI 응답성 프로파일러는 일반적으로 다음과 같은 증상과 함께 발생하는 UI 응답성 문제 또는 플랫폼의 의도하지 않은 결과와 같은 문제를 격리하는 데 유용합니다.  

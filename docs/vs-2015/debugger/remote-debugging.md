@@ -1,14 +1,14 @@
 ---
 title: 원격 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -24,18 +24,16 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 58df8dd3c95d5962b5966660599c65951d659ac2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306529"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [원격 디버깅](https://docs.microsoft.com/visualstudio/debugger/remote-debugging)합니다.  
-  
 다른 컴퓨터에 배포된 Visual Studio 응용 프로그램을 디버그할 수 있습니다.  이렇게 하려면 Visual Studio 원격 디버거를 사용합니다.  
   
  여기에 제공된 정보는 Windows 데스크톱 응용 프로그램 및 ASP.NET 응용 프로그램에 적용됩니다.  원격 디버깅 Windows 스토어 앱 및 Azure 앱에 대 한 정보를 참조 하세요 [Windows 스토어 및 Azure 앱에서 원격 디버깅](#bkmk_winstoreAzure)합니다.  

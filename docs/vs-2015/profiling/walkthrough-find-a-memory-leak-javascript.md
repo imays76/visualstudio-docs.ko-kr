@@ -1,7 +1,7 @@
 ---
 title: '연습: 메모리 누수 찾기(JavaScript) | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 242dd78d7110a36e0c8baf4d1ea1e1a7f323a1c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234197"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>연습: 메모리 누수 찾기(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 메모리 누수 찾기 (JavaScript)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-find-a-memory-leak-javascript)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  이 연습에서는 JavaScript 메모리 분석기를 사용하여 간단한 메모리 문제를 식별하고 수정하는 과정을 안내합니다. JavaScript 메모리 분석기는 JavaScript를 사용하여 Windows용으로 작성된 Visual Studio for Windows 스토어 앱에서 사용할 수 있습니다. 이 시나리오에서는 DOM 요소를 만들어질 때와 같은 속도로 삭제하지 않고 메모리에 잘못 유지하는 앱을 만듭니다.  

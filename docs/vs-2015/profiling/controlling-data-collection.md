@@ -1,7 +1,7 @@
 ---
 title: 데이터 수집 제어 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6170ee5e93bcb8faeadd1d918468a44c4badb99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7735d8b7276c62953c063d2cbda18d0dc59cc5a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306594"
 ---
 # <a name="controlling-data-collection"></a>데이터 컬렉션 제어
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터 수집 제어](https://docs.microsoft.com/visualstudio/profiling/controlling-data-collection)입니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구를 사용하면 성능 세션 중 프로파일링 데이터가 수집되는 시기를 제어하고 프로파일링되는 함수를 지정할 수 있습니다. 이 섹션에서는 **성능 탐색기** 및 **데이터 수집 제어** 창에서 데이터 수집을 시작하고 중지하는 방법 및 프로파일링 데이터가 수집되는 개체를 제한하는 방법을 설명합니다.  
   
 ## <a name="common-tasks"></a>일반 작업  

@@ -1,7 +1,7 @@
 ---
 title: 서식 지정, XML, 텍스트 편집기, 옵션 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 352a43cbe16540f1b231077bb1b7c23dd45ffcec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8379393dd5327359789f8621cf67ed55e89209
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256674"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>서식 지정, XML, 텍스트 편집기, 옵션 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [서식 지정, XML, 텍스트 편집기, 옵션 대화 상자](https://docs.microsoft.com/visualstudio/xml-tools/formatting-xml-text-editor-options-dialog-box)합니다.  
-  
   
 이 대화 상자에서는 XML 편집기에 대한 서식 설정을 지정할 수 있습니다. 액세스할 수 있습니다 합니다 **옵션** 대화 상자를 **도구** 메뉴.  
   

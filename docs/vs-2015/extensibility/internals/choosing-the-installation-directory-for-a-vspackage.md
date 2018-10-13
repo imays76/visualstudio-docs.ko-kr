@@ -1,7 +1,7 @@
 ---
 title: VSPackage 용 설치 디렉터리를 선택 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ebe7ce3855b2d91687251176dc3dd5acd4c7ad2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266976"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>VSPackage용 설치 디렉터리 선택
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSPackage에 대 한 설치 디렉터리를 선택](https://docs.microsoft.com/visualstudio/extensibility/internals/choosing-the-installation-directory-for-a-vspackage)합니다.  
-  
 VSPackage 및 해당 지원 파일을 사용자의 파일 시스템에 있어야 합니다. 위치는 VSPackage는 관리 또는 사용자 선택을 확인 하 고-side-by-side 버전 관리 체계를 관리 되지 않는 하는지 여부에 따라 달라 집니다.  
   
 ## <a name="unmanaged-vspackages"></a>관리 되지 않는 Vspackage  

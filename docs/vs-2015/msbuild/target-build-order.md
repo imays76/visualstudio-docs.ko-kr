@@ -1,7 +1,7 @@
 ---
 title: 대상 빌드 순서 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e17a0556e7ab5cef2d600327af5a6e3b24f15b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d973c688243ce9b5923ec193edcd573770b1569
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241243"
 ---
 # <a name="target-build-order"></a>대상 빌드 순서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [대상 빌드 순서](https://docs.microsoft.com/visualstudio/msbuild/target-build-order)합니다.  
-  
   
 단일 대상에 대한 입력이 다른 대상의 출력을 사용하는 경우에는 대상의 순서를 지정해야 합니다. 다음과 같은 특성을 사용하여 대상이 실행되는 순서를 지정할 수 있습니다.  
   

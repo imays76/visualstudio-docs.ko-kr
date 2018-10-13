@@ -1,7 +1,7 @@
 ---
 title: 코딩된 UI 테스트를 사용하여 SharePoint 2010 응용 프로그램 테스트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 63e4a776ccd7f818502586cf6bcca5294e6b0e58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 346362a6812882bd795b6180ac735e51f13e3530
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542842"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303760"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 SharePoint 2010 응용 프로그램 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코딩 된 UI 테스트를 사용 하 여 SharePoint 2010 응용 테스트](https://docs.microsoft.com/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)합니다.  
-  
 SharePoint 응용 프로그램에 코딩된 UI 테스트를 포함하면 해당 UI 컨트롤을 포함해서 전체 응용 프로그램이 올바르게 작동하는지 확인할 수 있습니다. 코딩된 UI 테스트는 또한 사용자 인터페이스에서 값 및 논리의 유효성을 검사할 수 있습니다.  
   
  **요구 사항**  

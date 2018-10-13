@@ -1,7 +1,7 @@
 ---
 title: 'CA1403: 자동 레이아웃 형식은 COM 노출 이어야 하지 합니다 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5051b784c1e7fe239ceec4fc0e1856765ce6f57f
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 807ea553a4e4cf9c1ec349058dbaa6d025075538
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248770"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: 자동 레이아웃 형식은 COM 노출이면 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1403: 자동 레이아웃 형식은 com 노출 이면 안](https://docs.microsoft.com/visualstudio/code-quality/ca1403-auto-layout-types-should-not-be-com-visible)합니다.
-
 |||
 |-|-|
 |TypeName|AutoLayoutTypesShouldNotBeComVisible|

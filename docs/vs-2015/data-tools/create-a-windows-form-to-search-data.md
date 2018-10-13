@@ -1,7 +1,7 @@
 ---
 title: 데이터를 검색 하는 Windows Form 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a64377e2689ca4e5111f316c13808aee6cfb59be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554831"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270623"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>데이터 검색을 위한 Windows Form 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터를 검색 하는 Windows Form 만들기](https://docs.microsoft.com/visualstudio/data-tools/create-a-windows-form-to-search-data)합니다.  
-  
   
 일반적인 응용 프로그램 시나리오에서는 선택한 데이터를 폼에 표시합니다. 특정 고객의 주문이나 특정 주문의 정보를 표시하려는 경우를 예로 들 수 있습니다. 이 시나리오에서는 사용자가 폼에 정보를 입력하면 해당 사용자의 입력을 매개 변수로 사용하여 쿼리가 실행됩니다. 즉 매개 변수가 있는 쿼리를 기준으로 데이터가 선택됩니다. 쿼리는 사용자가 입력한 기준을 만족하는 데이터만 반환합니다. 이 연습에서는 특정 구/군/시의 고객을 반환하는 쿼리를 만들고 사용자 인터페이스를 수정하여, 사용자가 구/군/시 이름을 입력한 후 단추를 눌러 쿼리를 실행할 수 있도록 하는 방법을 보여줍니다.  
   

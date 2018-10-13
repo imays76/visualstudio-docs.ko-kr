@@ -1,7 +1,7 @@
 ---
 title: '연습: XSLT 계층 구조를 사용 하 여 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ecbefef6cb179807e4b1546794a1fe1bcf418823
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b94a958a915ad7858575e093cae525df17cc23e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542233"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280964"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>연습: XSLT 계층 구조 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: XSLT 계층 구조를 사용 하 여](https://docs.microsoft.com/visualstudio/xml-tools/walkthrough-using-xslt-hierarchy)입니다.  
-  
   
 XSLT 계층 구조 도구를 사용하면 많은 XML 개발 작업을 간단하게 수행할 수 있습니다. XSLT 스타일시트에서는 `includes` 및 `imports` 명령을 사용하는 경우가 자주 있습니다. 컴파일은 주 스타일시트에서 시작하지만 XSLT 스타일시트를 컴파일했을 때 오류가 발생하는 경우 이러한 오류는 주 스타일시트와 다른 소스에서 발생된 것일 수 있습니다. 오류를 해결하거나 스타일시트를 편집하려면 포함되거나 가져온 스타일시트에 액세스할 수 있어야 합니다. 디버거에서 스타일시트를 단계별로 실행하면 포함되거나 가져온 스타일시트가 열릴 수 있으며 하나 이상의 포함된 스타일시트의 일부 지점에 중단점을 추가할 수 있습니다.  
   

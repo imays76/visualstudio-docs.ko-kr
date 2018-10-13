@@ -1,7 +1,7 @@
 ---
 title: '방법: 추가 계측 옵션 지정 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1726a8ad414ca6450f056044d520f73021c59f46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7988eb9c3a4893e4a74021a094bf877f1fe32fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254321"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>방법: 추가 계측 옵션 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 추가 계측 옵션 지정](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-additional-instrumentation-options)합니다.  
-  
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] IDE(통합 개발 환경) 내에서 또는 명령줄 도구를 사용하여 이진을 계측할 수 있습니다. IDE 내에서 이진 파일을 계측할 경우 [VSInstr](../profiling/vsinstr.md) 도구에 대한 추가적인 계측 옵션을 지정하여 계측 중에 수집된 데이터 볼륨을 제어할 수 있습니다. 이러한 옵션은 세션 또는 대상 수준에서 사용할 수 있습니다. 예를 들어 계측 프로세스 중에 특정 함수를 포함하거나 제외하려면 대상 수준에서 추가적인 계측 옵션을 사용합니다.  
   
  **요구 사항**  

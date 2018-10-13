@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2010에서 코딩된 UI 테스트 업그레이드 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9a82102259212743fe11a9936f3b24dee85340ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549409"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298950"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010에서 코딩된 UI 테스트 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2010에서 코딩 된 UI 테스트 업그레이드](https://docs.microsoft.com/visualstudio/test/upgrading-coded-ui-tests-from-visual-studio-2010)합니다.  
-  
 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1에서 만든, 코딩된 UI 테스트를 포함하는 테스트 프로젝트는 Visual Studio 2012에서 열 때 자동으로 복구됩니다. 테스트 프로젝트를 소스 제어로 체크 인하면 프로젝트 파일은 복구를 위해 체크 아웃됩니다. 복구된 다음에는 코딩된 UI 테스트를 포함하는 이러한 테스트 프로젝트를 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1과 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 모두 사용할 수 있습니다.  
   
  **요구 사항**  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9f4e834eb02c30bee0fedfa90ddb17d3fa766fb1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301563"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 만들기 또는 업데이트 표준 코드 분석 체크 인 정책](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies)합니다.  
-  
 코드 분석 체크 인 정책을 사용 하 여 팀 프로젝트의 모든 코드 프로젝트에 대해 코드 분석 실행 수 있도록 요구할 수 있습니다. 코드 분석에 필요한 코드 베이스에 체크 인 된 코드의 품질을 향상 시킬 수 있습니다.  
   
 > [!NOTE]

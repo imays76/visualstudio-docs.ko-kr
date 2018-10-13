@@ -1,7 +1,7 @@
 ---
 title: '방법: 사용자 지정 디버그 엔진 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b7ef3385d48e07e4c5fcd9619515b650ca193d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e1bd7e2c3f05fd54829d042ec15fd59b783d238
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555900"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247236"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>방법: 사용자 지정 디버그 엔진 디버그
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 사용자 지정 디버그 엔진 디버그](https://docs.microsoft.com/visualstudio/extensibility/debugger/how-to-debug-a-custom-debug-engine)합니다.  
-  
 프로젝트 형식에서 디버그 엔진 (DE)를 시작 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> 메서드. 즉, 인스턴스의 제어 하는 DE 시작 되는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 형식을 제어 합니다. 그러나 해당 인스턴스의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 는 DE를 디버깅할 수 없습니다. 다음에 사용자 지정 DE을 디버그할 수 있도록 단계는 같습니다.  
   
 > [!NOTE]

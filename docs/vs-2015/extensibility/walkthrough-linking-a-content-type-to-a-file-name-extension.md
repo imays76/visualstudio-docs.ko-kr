@@ -1,7 +1,7 @@
 ---
 title: '연습: 파일 이름 확장명에 콘텐츠 형식 연결 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1742da19e2d99cbb22d930b7146b1f9859e19cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45534f4a85cd289360c098083228ac5f28025a90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261731"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>연습: 파일 이름 확장명에 콘텐츠 형식 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 콘텐츠 형식을 파일 이름 확장명을 연결할](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension)합니다.  
-  
 고유의 콘텐츠 형식을 정의 하 고 편집기 프레임 워크 MEF (Managed Extensibility) 확장을 사용 하 여 파일 이름 확장명을 링크 수 있습니다. 경우에 따라 파일 확장명을 이미 정의 되어 언어 서비스로; 그럼에도 불구 하 고 MEF와 함께 사용 하려면 여전히 연결 해야이 콘텐츠 형식.  
   
 ## <a name="prerequisites"></a>전제 조건  
@@ -34,13 +32,13 @@ ms.locfileid: "47565191"
   
 ## <a name="creating-a-mef-project"></a>MEF 프로젝트 만들기  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `ContentTypeTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `ContentTypeTest`로 지정합니다.  
   
 2.  **source.extension.vsixmanifest** 파일을 이동 합니다 **자산** 탭을 설정 합니다 **형식** 필드를 **Microsoft.VisualStudio.MefComponent**, **소스** 필드를 **현재 솔루션의 프로젝트**, 및 **프로젝트** 필드를 프로젝트의 이름입니다.  
   
 ## <a name="defining-the-content-type"></a>콘텐츠 형식 정의  
   
-1.  클래스 파일을 추가 하 고 이름을 `FileAndContentTypes`입니다.  
+1.  클래스 파일을 추가하고 이름을 `FileAndContentTypes`로 지정합니다.  
   
 2.  다음 어셈블리에 대한 참조를 추가합니다.  
   

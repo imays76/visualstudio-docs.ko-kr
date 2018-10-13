@@ -1,7 +1,7 @@
 ---
 title: '연습: ClickOnce 배포 디자이너를 사용 하 여 API 사용 하 여 요청 시 위성 어셈블리 다운로드 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8ed393a17c3489e0133a4a6534deb8f2dab1e428
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ca86e2ed1a05c8e325a99686281db3a7cf8f56e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306230"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>연습: 디자이너를 사용하여 ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: ClickOnce 배포 API를 사용 하 여 디자이너는 요청 시 위성 어셈블리 다운로드](https://docs.microsoft.com/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer)합니다.  
-  
 위성 어셈블리를 사용하면 Windows Forms 응용 프로그램을 여러 문화권에 맞게 구성할 수 있습니다. *위성 어셈블리* 는 응용 프로그램의 기본 문화권 이외의 문화권을 위한 응용 프로그램 리소스가 포함된 어셈블리입니다.  
   
- 에 설명 된 대로 [ClickOnce 응용 프로그램 지역화](../deployment/localizing-clickonce-applications.md), 동일한 여러 문화권을 위한 여러 위성 어셈블리를 포함할 수 있습니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 합니다. 기본적으로 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에서는 단일 클라이언트에 하나의 위성 어셈블리만 필요한 경우라도 배포의 모든 위성 어셈블리를 클라이언트 컴퓨터에 다운로드합니다.  
+ 에 설명 된 대로 [ClickOnce 응용 프로그램 지역화](../deployment/localizing-clickonce-applications.md), 동일한 여러 문화권을 위한 여러 위성 어셈블리를 포함할 수 있습니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 합니다. 기본적으로 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 에서는 단일 클라이언트에 하나의 위성 어셈블리만 필요한 경우라도 배포의 모든 위성 어셈블리를 클라이언트 컴퓨터에 다운로드합니다.  
   
  이 연습에서는 위성 어셈블리를 선택적 항목으로 표시하고 클라이언트 컴퓨터의 현재 문화권 설정에 필요한 어셈블리만 다운로드하는 방법을 설명합니다.  
   

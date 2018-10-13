@@ -1,7 +1,7 @@
 ---
 title: MFC 디버깅 기술 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4828b7b5ee5d0812c8a9b1afa2ff2def783c3d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b311954172038d20327ab92283812a8b157a0d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303916"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 디버깅 기술
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MFC 디버깅 기술](https://docs.microsoft.com/visualstudio/debugger/mfc-debugging-techniques)합니다.  
-  
 다음은 MFC 프로그램을 디버깅하는 데 유용한 디버깅 기술입니다.  
   
 ##  <a name="BKMK_In_this_topic"></a> 항목 내용  
@@ -72,7 +70,7 @@ ms.locfileid: "47555481"
     -   [선택한 모듈의 디버그 정보를 사용하여 MFC 응용 프로그램 빌드](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC는 특수 [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 소스 코드에 하드 코드 중단점에 대 한 함수:  
+ MFC를 사용하면 소스 코드의 하드 코드 중단점에 특별한 [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 함수를 사용할 수 있습니다.  
   
 ```  
 AfxDebugBreak( );  
@@ -92,7 +90,7 @@ _asm int 3
  [항목 내용](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_TRACE_macro"></a> TRACE 매크로  
- 디버거에서 프로그램에서 메시지를 표시할 [출력 창](../ide/reference/output-window.md)를 사용할 수는 [ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) 매크로나 MFC [추적](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 매크로입니다. [어설션](../debugger/c-cpp-assertions.md)과 마찬가지로 추적 매크로는 프로그램의 디버그 버전에서만 활성화되며 릴리스 버전에서 컴파일하면 사라집니다.  
+ 디버거 [출력 창](../ide/reference/output-window.md)에 프로그램 메시지를 표시하기 위해 [ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) 매크로나 MFC [TRACE](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 매크로를 사용할 수 있습니다. [어설션](../debugger/c-cpp-assertions.md)과 마찬가지로 추적 매크로는 프로그램의 디버그 버전에서만 활성화되며 릴리스 버전에서 컴파일하면 사라집니다.  
   
  다음 예제에서는 **TRACE** 매크로 사용법을 몇 가지 보여 줍니다. `printf`와 같이 **TRACE** 매크로도 많은 인수를 처리할 수 있습니다.  
   
@@ -120,7 +118,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ```  
   
- 대 한 자세한 내용은 합니다 **추적** 매크로 참조 하십시오 [진단 서비스](http://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8)합니다.  
+ **TRACE** 매크로에 대한 자세한 정보는 [Diagnostic Services](http://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8)를 참조하십시오.  
   
  [항목 내용](#BKMK_In_this_topic)  
   
@@ -128,7 +126,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  MFC는 할당할 수는 있어도 할당을 취소할 수 없는 메모리를 탐지하는 클래스와 함수를 가지고 있습니다.  
   
 ###  <a name="BKMK_Tracking_memory_allocations"></a> 메모리 할당 추적  
- Mfc에서는 매크로 사용할 수 있습니다 [DEBUG_NEW](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 대신 합니다 **새** 메모리를 찾으려면 연산자 누수입니다. 프로그램의 디버그 버전에서 `DEBUG_NEW` 는 할당된 각 개체의 파일 이름과 줄 번호를 추적합니다. 프로그램의 릴리스 버전을 컴파일할 경우 `DEBUG_NEW` 는 파일 이름과 줄 번호 정보 없이 간단한 **new** 연산자를 확인합니다. 따라서 프로그램의 릴리스 버전에서는 속도가 저하되지 않습니다.  
+ MFC에서 [new](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 연산자 자리에 **DEBUG_NEW** 매크로를 사용하면 메모리 누수를 찾는 데 도움이 됩니다. 프로그램의 디버그 버전에서 `DEBUG_NEW` 는 할당된 각 개체의 파일 이름과 줄 번호를 추적합니다. 프로그램의 릴리스 버전을 컴파일할 경우 `DEBUG_NEW` 는 파일 이름과 줄 번호 정보 없이 간단한 **new** 연산자를 확인합니다. 따라서 프로그램의 릴리스 버전에서는 속도가 저하되지 않습니다.  
   
  `DEBUG_NEW` new **자리에**를 사용하기 위해 프로그램 전체를 다시 작성하는 대신, 다음과 같이 소스 파일에서 이 매크로를 정의할 수 있습니다.  
   
@@ -147,17 +145,17 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **메모리 진단을 활성화하거나 비활성화하려면**  
   
--   전역 함수를 호출 [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 사용 하도록 설정 하 여 진단 메모리 할당자를 사용 하지 않도록 설정 합니다. 디버그 라이브러리에서는 메모리 진단이 기본적으로 활성화되어 있기 때문에 일반적으로 이 기능을 사용하여 일시적으로 비활성화하며 이는 프로그램 실행 속도를 높이고 진단 결과를 줄입니다.  
+-   전역 함수 [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 을 호출하여 진단 메모리 할당자를 활성화하거나 비활성화합니다. 디버그 라이브러리에서는 메모리 진단이 기본적으로 활성화되어 있기 때문에 일반적으로 이 기능을 사용하여 일시적으로 비활성화하며 이는 프로그램 실행 속도를 높이고 진단 결과를 줄입니다.  
   
  **afxMemDF로 특정 메모리 진단 기능을 선택하려면**  
   
--   메모리 진단 기능 보다 정밀 하 게 제어를 원한다 면 선택적으로 하면 각 메모리 진단 기능 설정 및 해제 MFC 전역 변수의 값을 설정 [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)합니다. 이 변수는 열거 형식 **afxMemDF**가 지정한 대로 다음과 같은 값을 가질 수 있습니다.  
+-   메모리 진단 기능을 보다 자세히 제어하려면 MFC 전역 함수 [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)의 값을 설정하여 각 메모리 진단 기능 사용 여부를 지정할 수 있습니다. 이 변수는 열거 형식 **afxMemDF**가 지정한 대로 다음과 같은 값을 가질 수 있습니다.  
   
     |값|설명|  
     |-----------|-----------------|  
     |**allocMemDF**|진단 메모리 할당자를 사용합니다(기본값).|  
     |**delayFreeMemDF**|`delete` 또는 `free` 를 호출할 경우 프로그램이 종료될 때까지 메모리 해제를 지연시킵니다. 이렇게 하면 프로그램이 가능한 최대 메모리를 할당하게 됩니다.|  
-    |**checkAlwaysMemDF**|호출 [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) 될 때마다 메모리를 할당 하거나 해제 합니다.|  
+    |**checkAlwaysMemDF**|메모리를 할당하거나 해제할 때마다 [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) 를 호출합니다.|  
   
      논리적 OR 연산을 수행하면 다음과 같이 이 값들을 조합하여 사용할 수 있습니다.  
   
@@ -169,11 +167,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 메모리 스냅숏 만들기  
   
-1.  만들기는 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체를 호출 합니다 [cmemorystate:: Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 멤버 함수입니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
+1.  [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체를 만들고 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 멤버 함수를 호출합니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
   
 2.  프로그램이 메모리 할당 작업과 할당 취소 작업을 수행하면 다른 `CMemoryState` 개체를 만들고 해당 개체에 대해 `Checkpoint` 를 호출합니다. 그러면 메모리 사용에 대한 두 번째 스냅숏이 만들어집니다.  
   
-3.  세 번째를 만들 `CMemoryState` 개체와 호출 해당 [cmemorystate:: Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 멤버 함수에 인수로 제공 하 여 이전의 두 `CMemoryState` 개체입니다. 두 메모리 상태가 서로 다르면 `Difference` 함수가 0이 아닌 값을 반환합니다. 이것은 할당이 취소되지 않은 메모리 블록이 있음을 나타냅니다.  
+3.  세 번째 `CMemoryState` 개체를 만들고 이전의 두 [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 개체를 인수로 제공하여 `CMemoryState` 멤버 함수를 호출합니다. 두 메모리 상태가 서로 다르면 `Difference` 함수가 0이 아닌 값을 반환합니다. 이것은 할당이 취소되지 않은 메모리 블록이 있음을 나타냅니다.  
   
      다음 예제는 해당 코드의 내용을 보여 줍니다.  
   
@@ -198,14 +196,14 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     메모리를 검사 문을으로 묶어야 `#ifdef` [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** 프로그램의 디버그 버전 에서만에서 컴파일되지 않도록 차단 합니다.  
+     메모리를 검사하는 문은 프로그램의 디버그 버전에서만 컴파일되도록 `#ifdef`[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** 블록으로 묶어야 합니다.  
   
-     다른 멤버 함수를 사용할 수 이제 메모리 누수가 배웠으므로 [cmemorystate:: Dumpstatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 찾을 수 있도록 합니다.  
+     이제 메모리 누수가 확인되었으므로 다른 멤버 함수인 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 를 사용하여 해당 위치를 찾을 수 있습니다.  
   
  [항목 내용](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> 메모리 통계 보기  
- 합니다 [cmemorystate:: Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 함수는 두 메모리 상태 개체를 살펴를 상태의 시작과 끝 사이의 힙에서 할당 취소 되지 않은 모든 개체를 검색 합니다. 후 메모리 스냅숏을 비교 하를 사용 하 여 `CMemoryState::Difference`를 호출할 수 있습니다 [cmemorystate:: Dumpstatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 할당이 취소 되지 않은 개체에 대 한 정보를 가져오려고 합니다.  
+ [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 함수는 두 메모리 상태 개체를 살펴 상태의 시작과 끝 사이의 힙에서 할당 취소되지 않은 모든 개체를 검색합니다. 메모리 스냅숏을 만들고 `CMemoryState::Difference`를 사용하여 스냅숏을 비교한 후 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 를 호출하여 할당이 취소되지 않은 개체에 대한 정보를 가져올 수 있습니다.  
   
  다음 예제를 참조하세요.  
   
@@ -240,10 +238,10 @@ Total allocations: 67 bytes
  [항목 내용](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> 개체 덤프 수행  
- MFC 프로그램에서 사용할 수 있습니다 [cmemorystate:: Dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) 할당이 취소 되지 않은 힙에서 모든 개체의 설명을 덤프할 수 있습니다. `DumpAllObjectsSince` 마지막 할당 된 모든 개체를 덤프 [cmemorystate:: Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)합니다. `Checkpoint` 를 호출할 수 없는 경우 `DumpAllObjectsSince` 가 현재 메모리에 있는 모든 개체와 비개체를 덤프합니다.  
+ MFC 프로그램에서 사용할 수 있습니다 [cmemorystate:: Dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) 할당이 취소 되지 않은 힙에서 모든 개체의 설명을 덤프할 수 있습니다. `DumpAllObjectsSince` 는 마지막 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)를 단순히 호출할 뿐입니다. `Checkpoint` 를 호출할 수 없는 경우 `DumpAllObjectsSince` 가 현재 메모리에 있는 모든 개체와 비개체를 덤프합니다.  
   
 > [!NOTE]
->  MFC 개체 덤프를 사용 해야 [진단 추적을 활성화](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)합니다.  
+>  MFC 개체를 덤프하려면 먼저 [진단 추적을 활성화](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)해야 합니다.  
   
 > [!NOTE]
 >  프로그램을 종료할 때 MFC가 누수된 개체를 모두 자동으로 덤프하므로 해당 지점에서 개체를 덤프할 코드를 만들 필요가 없습니다.  
@@ -281,7 +279,7 @@ Phone #: 581-0215
   
  전역 변수 `_afxBreakAlloc` 을 중괄호 안에 있는 번호에 설정하여 특정 메모리 할당에 중단점을 설정할 수 있습니다. 프로그램을 다시 실행하면 할당할 때 디버거가 실행을 중단합니다. 그러면 호출 스택에서 프로그램이 해당 지점에 도달한 방법을 알 수 있습니다.  
   
- C 런타임 라이브러리에는 유사한 함수가 [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1), C 런타임 할당에 사용할 수 있습니다.  
+ C 런타임 라이브러리에는 C 런타임 할당에 사용할 수 있는 유사한 함수인 [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1)이 있습니다.  
   
  [항목 내용](#BKMK_In_this_topic)  
   
@@ -312,7 +310,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` 생성자는 `char`의 포인터가 되는 세 인수를 가지며, 이들 인수는 `CString` 멤버 변수를 초기화하는 데 사용됩니다. 메모리 덤프에서 `CPerson` 개체와 세 개의 비개체 블록(3, 4, 5)을 볼 수 있습니다. 이들은 `CString` 멤버 변수 문자를 가지고 있으며 `CPerson` 개체 소멸자를 호출할 때 삭제되지 않습니다.  
   
- 블록 번호 2는 `CPerson` 개체 자신입니다. `$51A4` 블록의 주소를 나타내고 개체에 의해 출력 된 내용의 뒤 `CPerson`::`Dump` 호출한 경우 [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)합니다.  
+ 블록 번호 2는 `CPerson` 개체 자신입니다. `$51A4` 는 블록 주소로서 다음에 개체 내용이 표시되며, 개체 내용은 `CPerson`DumpAllObjectsSince`Dump` 가 호출할 때 [::](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)를 사용하여 출력됩니다.  
   
  블록 번호 1은 `CString` 프레임 변수와 연결되어 있다고 볼 수 있습니다. 해당 시퀀스 번호와 크기가 프레임 `CString` 변수에 있는 문자의 번호와 일치하기 때문입니다. 프레임이 범위를 벗어나면 프레임에 할당된 변수는 자동으로 할당 취소됩니다.  
   
@@ -369,9 +367,9 @@ Phone #: 581-0215
  [항목 내용](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> 개체 덤프 사용자 지정  
- 클래스를 파생 하는 경우 [CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)를 재정의할 수 있습니다 합니다 `Dump` 멤버 함수를 사용 하는 경우 추가 정보를 제공 [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) 합니다 로개체를덤프할[출력 창](../ide/reference/output-window.md)합니다.  
+ [CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)에서 클래스를 파생시키는 경우 `Dump` DumpAllObjectsSince [를 사용하여](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) 출력 창 [으로 개체를 덤프할 때](../ide/reference/output-window.md)멤버 함수를 재정의하여 추가 정보를 제공할 수 있습니다.  
   
- 합니다 `Dump` 함수는 텍스트의 표현을 씁니다 개체의 멤버 변수는 덤프 컨텍스트 ([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). 덤프 컨텍스트는 I/O 스트림과 유사합니다. 추가 연산자(**<<**)를 사용하여 `CDumpContext`를 단순히 호출할 뿐입니다.  
+ `Dump` 함수는 덤프 컨텍스트([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa))에 개체 멤버 변수의 텍스트 표현을 작성합니다. 덤프 컨텍스트는 I/O 스트림과 유사합니다. 추가 연산자(**<<**)를 사용하여 `CDumpContext`를 단순히 호출할 뿐입니다.  
   
  `Dump` 함수를 재정의하려면 먼저 `Dump` 의 기본 클래스 버전을 호출하여 기본 클래스 개체의 내용을 덤프해야 합니다. 그런 다음 파생 클래스의 각 멤버 변수에 대한 텍스트 설명과 값을 출력하십시오.  
   
@@ -489,7 +487,7 @@ pMyPerson->Dump( afxDump );
   
 7.  **빌드** 메뉴에서 **빌드** 를 선택하여 날짜가 지난 프로젝트 파일을 다시 빌드합니다.  
   
- 이 항목에서 설명한 기술 대신 외부 메이크파일을 사용하여 파일마다 개별적인 옵션을 정의할 수도 있습니다. 이 경우 MFC 디버그 라이브러리를 사용 하 여 링크를 정의 해야 합니다는 [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) 각 모듈에 대 한 플래그입니다. MFC 릴리스 라이브러리를 사용하려면 NDEBUG를 정의해야 합니다. 외부 메이크파일 작성에 대 한 자세한 내용은 참조는 [NMAKE 참조](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)합니다.  
+ 이 항목에서 설명한 기술 대신 외부 메이크파일을 사용하여 파일마다 개별적인 옵션을 정의할 수도 있습니다. 이 경우에 MFC 디버그 라이브러리와 링크하려면 각 모듈에 [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) 플래그를 정의해야 합니다. MFC 릴리스 라이브러리를 사용하려면 NDEBUG를 정의해야 합니다. 외부 메이크파일 작성에 대한 자세한 내용은 [NMAKE 참조](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)를 참조하십시오.  
   
  [항목 내용](#BKMK_In_this_topic)  
   

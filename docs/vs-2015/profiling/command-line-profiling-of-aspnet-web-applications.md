@@ -1,7 +1,7 @@
 ---
 title: ASP.NET 웹 응용 프로그램의 명령줄 프로파일링 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dd299aac87a03009e39034a3e5282777419506c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3942744df8708ff7932dc663b1c4a55ec2dad471
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565314"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257922"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET 웹 응용 프로그램의 명령줄 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [명령줄 프로 파일링의 ASP.NET 웹 응용 프로그램](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-of-aspnet-web-applications)합니다.  
-  
 이 섹션에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령줄에서 프로파일링 도구를 사용하여 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램의 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.  
   
 > [!NOTE]

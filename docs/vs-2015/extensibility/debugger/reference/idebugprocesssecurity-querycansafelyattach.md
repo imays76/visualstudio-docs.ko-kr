@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 243c8556e38bd89200ca591d4b087e441baf57f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5380df694196f8a0ec8fea11aefd429ccfeca039
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564845"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239332"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProcessSecurity::QueryCanSafelyAttach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach)합니다.  
-  
 이 메서드는 사용자는 안전 하지 않은 프로세스에 연결 하려면 먼저 경고를 표시 하려면 포트 공급자를 사용 합니다.  
   
 ## <a name="syntax"></a>구문  

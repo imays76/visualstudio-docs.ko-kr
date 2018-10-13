@@ -1,7 +1,7 @@
 ---
 title: MSBuild 일괄 처리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d868beddd498b112fa2f5a4de52f473c8ba3041
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24baafbaf213e90999a5e4e0eea030f2ef608501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554912"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304176"
 ---
 # <a name="msbuild-batching"></a>MSBuild 일괄 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 일괄 처리](https://docs.microsoft.com/visualstudio/msbuild/msbuild-batching)합니다.  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에는 항목 목록을 항목 메타데이터에 따라 여러 다른 범주 또는 일괄 처리로 나누고 각 일괄 처리를 사용하여 한 번에 하나의 대상 또는 작업을 실행하는 기능이 있습니다.  
   

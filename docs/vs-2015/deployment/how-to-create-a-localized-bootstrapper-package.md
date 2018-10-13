@@ -1,7 +1,7 @@
 ---
 title: '방법: 지역화 된 부트스트래퍼 패키지 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf92009cc7eadde4594bc8edb70f553b09b48010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304761"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>방법: 지역화된 부트스트래퍼 패키지 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 지역화 된 부트스트래퍼 패키지 만들기](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-localized-bootstrapper-package)합니다.  
-  
 부트스트래퍼 패키지를 만든 후에는 각 로캘에 대해 두 파일, 즉 eula.rtf와 같은 소프트웨어 사용 약관 파일과 패키지 매니페스트(package.xml)를 추가로 만들어 부트스트래퍼 패키지의 지역화된 버전을 만들 수 있습니다.  
   
  Visual Studio 2010에는 기본적으로 .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 및 F# Runtime 4.0용 지역화된 부트스트래퍼 패키지만 포함되어 있습니다. 3개 단계를 완료하면 다른 부트스트래퍼용 지역화된 패키지를 만들 수 있습니다.  

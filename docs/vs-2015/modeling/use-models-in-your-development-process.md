@@ -1,14 +1,14 @@
 ---
 title: 개발 프로세스에서 모델을 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
@@ -16,18 +16,16 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ff2526d6ff7bb19448674aed043848e760b85e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286002"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모델을 사용 하 여 개발 프로세스에서](https://docs.microsoft.com/visualstudio/modeling/use-models-in-your-development-process)합니다.  
-  
 Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는 구성 요소를 이해하고 변경할 수 있습니다. 모델은 시스템이 작동하는 세계를 시각화하고, 사용자 요구를 명확하게 설명하고, 시스템 아키텍처를 정의하고, 코드를 분석하고, 코드가 요구 사항을 충족하는지 확인하는 데 도움이 됩니다. 참조 [Channel 9 비디오: 모델링을 통해 아키텍처 개선](http://go.microsoft.com/fwlink/?LinkID=252078)합니다.  
   
  각 모델 형식을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)를 참조하세요.  

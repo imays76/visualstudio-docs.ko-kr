@@ -1,7 +1,7 @@
 ---
 title: '새 프로젝트 생성: 내부 살펴보기, 2 부 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 132baff48f92b8ff6cea5841c41bdb7824fd2753
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ce2ad60c2c3c072ab5e38f2dbee11035d44176a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279593"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>새 프로젝트 생성: 내부 살펴보기, 2부
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [새 프로젝트 생성: 내부 살펴보기, 2 부](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-two)합니다.  
-  
 [새 프로젝트 생성: 내부 살펴보기, 1 부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) 살펴본 방법을 **새 프로젝트** 대화 상자가 채워집니다. 선택한를 가정해 보겠습니다를 **Visual C# Windows 응용 프로그램**작성, 합니다 **이름** 및 **위치** 텍스트 상자 및 확인을 클릭된 합니다.  
   
 ## <a name="generating-the-solution-files"></a>솔루션 파일 생성  

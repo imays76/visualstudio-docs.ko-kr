@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로파일링 도구 호출 추적 보고서 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b643e0bf356e7ffb3bf6030ff46cf38ad4a1d98a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b3d54c0d9c053b8ea35b6f8000135b259f8323a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564599"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251903"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>방법: 프로파일링 도구 호출 추적 보고서 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법:는 프로 파일링 도구 호출 추적 보고서 만들기](https://docs.microsoft.com/visualstudio/profiling/how-to-create-a-profiling-tools-call-trace-report)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구에 대한 *호출 추적 보고서*는 응용 프로그램의 함수에 대한 각 진입 지점 및 종료 지점에 대한 타이밍 정보와 함수로 다른 함수에 대한 각 호출을 나열합니다. 호출 추적 보고서는 계측 방법으로 수집된 경우에만 프로파일링 데이터에 사용할 수 있습니다.  
   
 > [!NOTE]

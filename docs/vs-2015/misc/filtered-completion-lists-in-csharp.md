@@ -1,7 +1,7 @@
 ---
 title: 필터링 된 C#의 완성 목록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 17
 author: BillWagner
 ms.author: billchi
 manager: douge
-ms.openlocfilehash: 60b5094c5cacc264fb2a30f9ae7e6445f1859971
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3960862563728aa4220210581b278a624e2f040
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551468"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258975"
 ---
 # <a name="filtered-completion-lists-in-c"></a>C#의 필터링된 완성 목록 #
 이 콘텐츠를 움직인 [C#의 완성 목록](../misc/completion-lists-in-csharp.md)

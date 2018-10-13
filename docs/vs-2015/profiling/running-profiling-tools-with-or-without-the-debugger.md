@@ -1,7 +1,7 @@
 ---
 title: 디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938d1dc3e257ad4737e5fd33d831feb0c16a81d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551155"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301485"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [실행 Profiling Tools With or Without the Debugger](https://docs.microsoft.com/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger)합니다.  
-  
 Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 중 일부(예: **CPU 사용** 및 **메모리 사용**)는 디버거를 사용하거나 사용하지 않고 실행될 수 있습니다. 디버거가 없는 성능 도구는 릴리스 구성에서 실행될 수 있으며, 디버거 통합 도구는 디버그 구성에서 실행될 수 있습니다.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>디버거를 사용하여 도구를 실행할지 여부 선택  

@@ -1,7 +1,7 @@
 ---
 title: 필요한 이벤트 보내기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1a3803b12c2941f9e76d1bb97d5885940197192
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 154157a8de67cd1bef8fd489b3c1fc7406a05629
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556810"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303672"
 ---
 # <a name="sending-the-required-events"></a>필요한 이벤트 보내기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [필요한 이벤트를 보내는](https://docs.microsoft.com/visualstudio/extensibility/debugger/sending-the-required-events)합니다.  
-  
 필요한 이벤트를 보내는 데이 절차를 따르십시오.  
   
 ## <a name="process-for-sending-required-events"></a>필요한 이벤트를 전송 하기 위한 프로세스  

@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 매개 변수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 21d85eb55e20eb27a67856cec1fea7f6fa539b41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8831517b7b679762e12356927b39e244a2a5dd1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553688"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305406"
 ---
 # <a name="custom-parameters"></a>사용자 지정 매개 변수
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 매개 변수](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-parameters)합니다.  
-  
 사용자 지정 매개 변수는 마법사를 시작한 후 마법사의 작업을 제어 합니다. 관련된.vsz 파일에는 통합된 개발 환경 (IDE)에서 패키지 되 고 마법사를 시작할 때 문자열의 배열로 마법사에 전달 하는 사용자 정의 매개 변수 배열을 제공 합니다. 마법사는 다음 문자열의 배열을 구문 분석 하 고 마법사의 실제 작동을 제어 하는 정보를 사용 합니다. 이런 방식으로 마법사.vsz 파일의 내용에 따라 기능을 사용자 지정할 수 있습니다.  
   
  반면에 컨텍스트 매개 변수 마법사가 시작 하는 경우 프로젝트의 상태를 정의 합니다. 자세한 내용은 [컨텍스트 매개 변수](../../extensibility/internals/context-parameters.md)합니다.  

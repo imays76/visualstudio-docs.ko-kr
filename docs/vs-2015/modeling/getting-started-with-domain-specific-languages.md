@@ -1,7 +1,7 @@
 ---
 title: 도메인별 언어 시작 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 128c96c6bd400f74ac698df550fdba70ffec2eed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc0cf72be3fccbfdafd5ab3a7570ea6aac900f11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251981"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>도메인별 언어 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 언어 시작](https://docs.microsoft.com/visualstudio/modeling/getting-started-with-domain-specific-languages)합니다.  
-  
 이 항목에서는 정의 하 고 Visual Studio 용 모델링 SDK를 사용 하 여 만든 도메인 특정 언어 (DSL)를 사용 하 여 기본적인 개념을 설명 합니다.  
   
  Dsl을 처음 접하는 경우 진행 하는 것이 좋습니다 합니다 **DSL 도구 랩**,이 사이트에서 찾을 수 있는: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
@@ -115,7 +113,7 @@ ms.locfileid: "47541388"
   
      DSL을 빌드하고 실험적 인스턴스의 설치 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 시작됩니다. 실험적 인스턴스에서 레지스트리를 별도 하위 트리에서 해당 설정을 여기서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 디버깅을 위해 등록 됩니다. 표준 인스턴스의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그곳에 등록 된 확장에 대 한 액세스 권한이 없습니다.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다. 실험적 인스턴스에서 레지스트리를 별도 하위 트리에서 해당 설정을 여기서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 디버깅을 위해 등록 됩니다. 표준 인스턴스의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그곳에 등록 된 확장에 대 한 액세스 권한이 없습니다.  
   
 3.  실험적 인스턴스에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 명명 된 모델 파일을 엽니다 **테스트** 에서 **솔루션 탐색기**합니다.  
   

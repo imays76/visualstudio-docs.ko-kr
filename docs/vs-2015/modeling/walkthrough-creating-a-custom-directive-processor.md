@@ -1,7 +1,7 @@
 ---
 title: '연습: 사용자 지정 지시문 프로세서 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d84fd8f389db771c1cbabbc3c5b830837703808e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 6e9a46f5f686182fe78164499a8370e96ba87a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274692"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 사용자 지정 지시문 프로세서 만들기](https://docs.microsoft.com/visualstudio/modeling/walkthrough-creating-a-custom-directive-processor)합니다.  
-  
 지시문 프로세서 * 하는 코드를 추가 하 여 작동 합니다 *생성 된 변형 클래스*합니다. 호출 하는 경우는 *지시문* 에서 *텍스트 템플릿*를 텍스트 템플릿에 작성 하는 코드의 나머지 부분에서 지시문이 제공 하는 기능을 사용할 수 있습니다.  
   
  사용자 고유의 사용자 지정 지시문 프로세서를 작성할 수 있으며, 이 프로세서를 사용하여 텍스트 템플릿을 사용자 지정할 수 있습니다. 사용자 지정 지시문 프로세서를 만들려면 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 또는 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>에서 상속하는 클래스를 만듭니다.  

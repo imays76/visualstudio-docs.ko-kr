@@ -1,7 +1,7 @@
 ---
 title: 사용자(VSPerfCmd) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b306637cfaa4c58222700f3a1a9b1aaa96b03df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b390852c94477a6b02d43b0dbc7678384c622ced
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302005"
 ---
 # <a name="user-vsperfcmd"></a>사용자(VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 (VSPerfCmd)](https://docs.microsoft.com/visualstudio/profiling/user-vsperfcmd)합니다.  
-  
 **User** 옵션은 프로파일링된 프로세스를 소유한 계정의 도메인 및 사용자 이름을 지정합니다. 이 옵션은 프로세스가 로그온한 사용자 이외의 사용자로 실행 중인 경우에만 필요합니다. [Windows 작업 관리자]의 [프로세스] 탭에 있는 [사용자 이름] 열에 프로세스 소유자가 나열됩니다.  
   
  합니다 **사용자** 옵션 포함 하는 명령줄에서 지정할 수 있습니다 합니다 **시작** 옵션 옵션입니다.  

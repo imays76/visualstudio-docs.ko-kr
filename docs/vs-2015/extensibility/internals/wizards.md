@@ -1,7 +1,7 @@
 ---
 title: 마법사 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1396837a0d9eee3b31a5e938a2305052d5cc2761
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2331c75b5e0d708d6a2d0fa1ab987cc869879cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556531"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224304"
 ---
 # <a name="wizards"></a>마법사
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [마법사](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards)합니다.  
-  
 일반적으로 추가 되도록 하려면 마법사를 만든 후의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE (통합 개발 환경) 다른 사용자가 사용할 수 있도록 합니다. 그러면 추가 마법사에 표시 합니다 **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자. 보려는 **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자에서 공개 솔루션을 마우스 오른쪽 단추로 클릭 **솔루션 탐색기**를 가리키고 **추가**, 및 누른 **새 프로젝트** 하거나 **새 항목**합니다.  
   
  마법사에서 구현할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 사용자가 열면 사용 가능한 값의 트리 뷰에서 선택 합니다 **새 프로젝트 추가** 대화 상자 또는 **새 항목 추가** 대화 상자에서 시기는 마우스 오른쪽 단추로 클릭 에 있는 항목 **솔루션 탐색기**합니다.  
@@ -61,5 +59,5 @@ ms.locfileid: "47556531"
  마법사를 만드는 방법을 보여 줍니다.  
   
  [프로젝트 확장](../../extensibility/extending-projects.md)  
- 사용 하는 방법에 설명 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 및 코드 파일 및 리소스 파일을 소스 제어를 구현 하는 방법을 구성 하는 솔루션입니다.
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 및 솔루션을 사용하여 코드 파일 및 리소스 파일을 구성하는 방법 및 소스 제어를 구현하는 방법을 설명합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: T4 템플릿 지시문 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 01369002b5deaa5456d09d6a93e774ad36f85c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248226"
 ---
 # <a name="t4-template-directive"></a>T4 템플릿 지시문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [T4 템플릿 지시문](https://docs.microsoft.com/visualstudio/modeling/t4-template-directive)합니다.  
-  
 일반적으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 텍스트 템플릿은 템플릿의 처리 방식을 지정하는 `template` 지시문으로 시작합니다. 하나의 텍스트 템플릿 및 템플릿이 포함된 파일에는 템플릿 지시문이 하나만 있어야 합니다.  
   
  텍스트 템플릿 작성의 일반적인 개요를 참조 하세요 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.  
@@ -34,7 +32,7 @@ ms.locfileid: "47550411"
 <#@ template [language="VB"] [compilerOptions="options"] [culture="code"] [debug="true"] [hostspecific="true"] [inherits="templateBaseClass"] [visibility="internal"] [linePragmas="false"] #>  
 ```  
   
- `template` 지시문에는 변환의 다양한 측면을 지정할 수 있도록 하는 몇 가지 특성이 있습니다. 모든 특성은 선택적입니다.  
+ `template` 지시문에는 변형의 다양한 측면을 지정할 수 있도록 하는 몇 가지 특성이 있습니다. 모든 특성은 선택적입니다.  
   
 ## <a name="compileroptions-attribute"></a>compilerOptions 특성  
  예제:  

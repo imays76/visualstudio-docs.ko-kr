@@ -1,7 +1,7 @@
 ---
 title: '방법: Windows Forms를 사용 하는 도구 상자 컨트롤 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: f052c881bc9ca7180d5d9132b1acd4377bf5f6da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263720"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>방법: Windows Forms를 사용하는 도구 상자 컨트롤 만들기
-에 포함 된 Windows Forms 도구 상자 컨트롤 템플릿을 합니다 [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] 에 자동으로 추가 되는 Windows Forms 컨트롤을 만들 수 있습니다 합니다 **도구 상자** 확장이 설치 되는 경우. 이 항목에서는 템플릿을 사용하여 다른 사용자에게 배포할 수 있는 **도구 상자** 컨트롤을 만드는 방법을 보여 줍니다.  
+확장이 설치될 때 [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] 에 들어 있는 Windows Forms 도구 상자 컨트롤 템플릿을 통해 자동으로 **도구 상자** 에 추가된 Windows Forms 컨트롤을 만들 수 있습니다. 이 항목에서는 템플릿을 사용하여 다른 사용자에게 배포할 수 있는 **도구 상자** 컨트롤을 만드는 방법을 보여 줍니다.  
   
 > [!NOTE]
 >  Visual Studio SDK를 다운로드하는 방법을 알아보려면 MSDN 웹 사이트의 [Visual Studio 확장성 개발자 센터](http://go.microsoft.com/fwlink/?linkid=121964) 를 참조하세요.  

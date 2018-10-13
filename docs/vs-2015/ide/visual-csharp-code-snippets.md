@@ -1,7 +1,7 @@
 ---
 title: Visual C# 코드 조각 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297416"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 코드 조각
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual C# 코드 조각](https://docs.microsoft.com/visualstudio/ide/visual-csharp-code-snippets)합니다.  
-  
 코드 조각은 신속하게 코드에 삽입할 수 있는 준비된 코드 조각입니다. 예를 들어 `for` 코드 조각에서는 비어 있는 `for` 루프를 만듭니다. 일부 코드 조각은 코드 감싸기 코드 조각으로, 코드 줄을 선택한 다음 선택한 코드 줄을 통합하는 코드 조각을 선택할 수 있습니다. 예를 들어 코드 줄을 선택한 다음 `for` 코드 조각을 활성화하는 경우 루프 블록 안에 해당 코드 줄을 포함하여 `for` 루프를 만듭니다. 코드 조각을 사용하면 빠르고 쉽게, 안정적으로 프로그램 코드를 작성할 수 있습니다.  
   
  커서 위치에 코드 조각을 삽입하거나, 현재 선택한 코드 주위에 코드 감싸기 코드 조각을 삽입할 수 있습니다. 코드 조각 삽입기는 **IntelliSense** 메뉴의 **코드 조각 삽입** 또는 **코드 감싸기** 명령을 통해 또는 바로 가기 키 Ctrl+K, X 또는 Ctrl+K, S를 차례로 각각 사용하여 호출됩니다.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 워크플로 프로젝트 (레거시)에 새 항목을 추가 합니다. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 1a0ccdc10a76f8c8bc594130bcba5210190fb34a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26be9519a4f9ee496ea36a61debffec7f96ffbe5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301160"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>방법: 워크플로 프로젝트에 새 항목 추가(레거시)
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 또는 [!INCLUDE[vs2010](../includes/vs2010-md.md)]를 대상으로 하는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 제공 레거시 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 사용하여 워크플로 프로젝트를 만든 후에는 [!INCLUDE[wf](../includes/wf-md.md)] 항목과 그 밖의 친숙한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 항목을 프로젝트에 추가할 수 있습니다.  

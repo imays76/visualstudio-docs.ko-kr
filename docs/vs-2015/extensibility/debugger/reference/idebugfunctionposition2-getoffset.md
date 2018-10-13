@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionPosition2::GetOffset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 60943782-aec7-4be2-b222-1984ed53a543
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cdfcaa8302d2c9d72ad0d0156a07a06f9e4bdf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a4ecfcae2d564f47767a21dd013899ede4276f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295401"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugFunctionPosition2::GetOffset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfunctionposition2-getoffset)합니다.  
-  
 소스 문서에서 함수의 위치를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  

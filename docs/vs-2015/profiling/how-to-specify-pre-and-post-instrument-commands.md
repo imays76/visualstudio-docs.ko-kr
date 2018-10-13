@@ -1,7 +1,7 @@
 ---
 title: '방법: 계측 전 명령 및 계측 후 명령 지정 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20cf4545a217adf07cc753a1d2ab190a00e3d4f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305469"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>방법: 계측 전 명령 및 계측 후 명령 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 빌드 전 및 계측 후 명령을 지정](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-pre-and-post-instrument-commands)합니다.  
-  
 성능 세션의 이진 파일이 계측되기 전이나 계측된 후 실행되는 명령을 지정할 수 있습니다. 명령줄에서 실행될 수 있는 모든 명령을 계측 전 또는 계측 후 이벤트로 지정할 수 있습니다. 예를 들어 이진 파일이 계측된 후 실행되는 배치 파일에서 강력한 이름 키를 사용하여 어셈블리 재서명을 자동화하는 명령을 지정할 수 있습니다.  
   
  프로파일링 실행의 모든 계측된 이진 파일에 대한 명령이나 개별 이진 파일에 대한 명령을 지정합니다. 그러나 계측 프로세스 전에 실행할 계측 전 명령을 하나만 지정하고 계측 프로세스 후에 실행할 계측 후 명령을 하나만 지정할 수 있습니다. 모든 이진 파일 및 개별 이진 파일에 대한 명령을 둘 다 지정할 수는 없습니다. 모든 이진 파일에 대한 명령을 지정하면 세션에서 각 이진 파일의 계측 이전 또는 이후에 명령이 실행됩니다.  

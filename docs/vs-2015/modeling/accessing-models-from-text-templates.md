@@ -1,7 +1,7 @@
 ---
 title: 텍스트 템플릿에서 모델에 액세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5f23a080f33b668d185f4e7b1409da5b4ac97deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553328"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257194"
 ---
 # <a name="accessing-models-from-text-templates"></a>텍스트 템플릿에서 모델에 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [텍스트 템플릿에서 모델에 액세스](https://docs.microsoft.com/visualstudio/modeling/accessing-models-from-text-templates)합니다.  
-  
 텍스트 템플릿을 사용 하 여 보고서 파일, 소스 코드 파일 및 도메인 특정 언어 모델을 기반으로 하는 기타 텍스트 파일을 만들 수 있습니다. 텍스트 템플릿에 대 한 기본 정보를 참조 하세요. [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)합니다. 텍스트 템플릿 DSL을 디버깅할 때 실험적 모드에서 작동 하 고 DSL를 배포한 컴퓨터 에서도 작동 합니다.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 원격 컴퓨터에 접속하려고 시도하는 동안 DCOM 오류가 발생했습니다. 액세스가 거부되었습니다. | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cabac4997480b626714c129daef0511643ae2a50
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95c9abfbba2eb1e5c3e107440f0988b1002c1386
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215802"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>원격 컴퓨터에 접속하려고 시도하는 동안 DCOM 오류가 발생했습니다. 액세스가 거부되었습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [원격 컴퓨터에 연결 하는 동안는 DCOM 오류가 발생 합니다. 액세스가 거부 되었습니다. ](https://docs.microsoft.com/visualstudio/debugger/a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied).  
-  
 원격 디버깅은 다음과 같은 상황에서 원격 컴퓨터와 로컬 컴퓨터 간의 통신에 DCOM을 사용합니다.  
   
 -   디버거가 **기본 호환성 모드** 로 설정되거나 **도구 / 옵션 / 디버깅** 페이지에서 **관리되는 호환성 모드** 가 선택된 경우  
@@ -60,7 +58,7 @@ ms.locfileid: "47555890"
   
 ## <a name="see-also"></a>참고 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

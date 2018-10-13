@@ -1,7 +1,7 @@
 ---
 title: UI 텍스트 및 Visual Studio에 대 한 도움말 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f3e8f7541c83372c0d822c3db4bc0e20b3af1a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541312"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303818"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 텍스트 및 Visual Studio에 대 한 도움말
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UI 텍스트 및 Visual Studio에 대 한 도움말](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/ui-text-and-help-for-visual-studio)합니다.  
-  
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 텍스트 및 용어  
  포괄적 텍스트 매우 효과적인 UI에 중요 합니다. 소프트웨어 사용자가 읽을 경향이 레이블을 먼저 해당 namely 당면한 작업을 완료 하는 게 가장 적합 합니다. 정적 텍스트 적은 빈도로 읽힙니다. 대략적인 순서로 UI의 읽을 뒤에 전체 창에 빠른 검색을 사용 하 여 해당 작업 세션을 시작 하도록 계획 합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: '방법: 응용 프로그램 및 배포 매니페스트 서명 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ed26d1dec6251ef856ab9cad6b74bba2a4190b81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3162d65f8712c7db55be1bced9f815ecfaa866f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299736"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>방법: 응용 프로그램 및 배포 매니페스트 서명
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Sign Application and Deployment Manifests](https://docs.microsoft.com/visualstudio/ide/how-to-sign-application-and-deployment-manifests)합니다.  
-  
 ClickOnce 배포를 사용하여 응용 프로그램을 게시하려면 응용 프로그램 및 배포 매니페스트가 공개/개인 키 쌍으로 서명되고 Authenticode 기술로 서명되어야 합니다. Windows 인증서 저장소의 인증서 또는 키 파일을 사용하여 매니페스트에 서명할 수 있습니다.  
   
  ClickOnce 배포에 대한 자세한 내용은 [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)를 참조하세요.  

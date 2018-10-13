@@ -1,7 +1,7 @@
 ---
 title: 데이터베이스 및 Visual Studio에서 데이터 계층 응용 프로그램 만들기 및 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ea5370349204765932baed828ffb9c9332b088f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82caaa97e4b6471e3c585fb23c49af00b2ceef0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241620"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>데이터베이스 및 Visual Studio에서 데이터 계층 응용 프로그램 만들기 및 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [만들기 및 관리 데이터베이스 및 데이터 계층 응용 프로그램](https://docs.microsoft.com/visualstudio/data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio)합니다.  
-  
   
 중요]
 >  이전 버전에 포함 된 데이터베이스 프로젝트 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 지금 나와 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] 도구입니다. 자세한 내용은 [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126)합니다.  

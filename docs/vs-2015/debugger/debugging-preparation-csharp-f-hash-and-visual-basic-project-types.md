@@ -1,7 +1,7 @@
 ---
 title: '디버깅 준비: C#, F # 및 Visual Basic 프로젝트 형식 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70bdc94339af45295599adac8fab03fbe30a93a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54dc950c606a78f277252b30a57e5de8c796df15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274913"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>디버깅 준비: C#, F# 및 Visual Basic 프로젝트 형식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버깅 준비: C#, F # 및 Visual Basic 프로젝트 형식](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types)합니다.  
-  
 이 단원의 항목에서는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트 템플릿으로 만든 C#, F# 및 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.  
   
  참고로 그룹화 된 출력으로 Dll을 만드는 프로젝트 형식과 [DLL 프로젝트 디버깅](../debugger/debugging-dll-projects.md) 의 공통적인 특징 때문입니다.  

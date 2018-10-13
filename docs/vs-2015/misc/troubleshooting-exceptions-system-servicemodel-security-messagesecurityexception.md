@@ -1,7 +1,7 @@
 ---
 title: '예외 문제 해결: System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 9d886b8eeddc84c8b6597bca77e2d7b63ca21875
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241232"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>예외 문제 해결: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> 때 예외가 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 확인 메시지 보안이 잘못 되거나 손상 되었습니다. 이 오류는 다음 조건에 모두 해당될 때 가장 자주 발생합니다.  
@@ -37,7 +37,7 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> 때 예외가 [!I
  **ASP.Net Development Server를 사용 하는 경우 NTLM 인증 문제를 해결 합니다.**  
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server에서는 대개 NTLM(Windows NT Challenge/Response) 보안을 사용하지 않으므로 익명 액세스가 허용됩니다. 하지만 터미널 서비스 세션을 실행하거나 원격 연결을 사용하는 경우에는 기본적으로 NTLM 보안이 사용됩니다. NTLM이 사용되면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server를 시작한 사용자 또는 프로세스의 자격 증명과 비교하여 모든 로컬 호스트 요청의 유효성이 검사됩니다. 이를 통해 보안 위협이 감소됩니다. 그러나 WCF에서도 자체 인증을 수행하며 관리자가 아닌 계정에서 WCF 서비스를 사용할 수 없도록 금지합니다.  
   
- 원격 사용자를 사용 하 여 웹 사이트를 발생할 경우를 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 개발 서버 그리고 웹 서비스 또는 WCF 서비스를 사용 하 여 작업, 사용자 지정 서비스 바인딩을 만들고 하거나 NTLM 보안을 해제 합니다.  
+ 원격 사용자가 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server를 통해 웹 사이트를 실행하면서 웹 서비스 또는 WCF 서비스를 함께 사용하는 경우 사용자 지정 서비스 바인딩을 만들거나 NTLM 보안을 해제할 수 있습니다.  
   
 > [!IMPORTANT]
 >  보안 위협이 발생할 수 있으므로 NTLM 보안을 해제하지 않는 것이 좋습니다.  

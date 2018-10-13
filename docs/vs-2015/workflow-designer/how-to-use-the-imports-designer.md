@@ -1,7 +1,7 @@
 ---
 title: '방법: 가져오기 디자이너를 사용 하 여 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f1fc68f77e714efcd1d577cce6c988ef0943d71c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 776fbd9ba58268adb16957c732b96a7c8303b213
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278384"
 ---
 # <a name="how-to-use-the-imports-designer"></a>방법: 가져오기 디자이너 사용
 가져오기 디자이너를 사용하여 식에서 사용할 형식의 네임스페이스를 입력할 수 있습니다. 마찬가지로 합니다 **가져옵니다** 또는 **사용 하 여** Visual BASIC.NET 및 가져오기 디자이너에 네임 스페이스 지정 C# 키워드를 사용 하 단순히 식 대신 정규화 된 형식 이름을 입력할 수 있습니다 버전 형식 이름입니다.  

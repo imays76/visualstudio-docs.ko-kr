@@ -1,7 +1,7 @@
 ---
 title: 속성 Window Fields and Interfaces | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2315310ed1ae5bbea748dabb5661384500941d0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a413fd1787e4197cf46de6936523ef576016a37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300315"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Properties Window Fields and 인터페이스](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-fields-and-interfaces)합니다.  
-  
 모델에 표시 되는 정보를 확인 하려면 선택 합니다 **속성** IDE에서 포커스가 있는 창에서 창 기반 합니다. 모든 창 및 선택된 된 창 내에서 개체에 전역 선택 컨텍스트에 푸시된 해당 선택 컨텍스트 개체를 가질 수 있습니다. 해당 창에 포커스가 있는 경우 창 프레임의 값을 사용 하 여 전역 선택 컨텍스트를 업데이트 하는 환경입니다. 포커스 변경 되 면 선택 항목 컨텍스트를 그렇습니다.  
   
 ## <a name="tracking-selection-in-the-ide"></a>IDE에서 추적 선택  

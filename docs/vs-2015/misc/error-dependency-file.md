@@ -1,7 +1,7 @@
 ---
 title: '오류: 종속성 &#39;파일&#39; 프로젝트에서 &#39;프로젝트&#39; 종속성과 충돌 하므로 실행된 디렉터리에 복사할 수 없습니다 &#39;파일&#39; | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 6f571ec21094a28077f63bf86d4afe97af5429dd
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 0a8d6fe7440a39fc207d8d9a1b56bea06547e273
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274302"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>오류: 종속성 &#39;파일&#39; 프로젝트에서 &#39;프로젝트&#39; 종속성과 충돌 하므로 실행된 디렉터리에 복사할 수 없습니다 &#39;파일&#39;
 참조 간에 충돌이 존재합니다. 즉, 실행할 응용 프로그램의 bin 디렉터리에 파일 이름이 같은 둘 이상의 고유 종속성을 복사하려고 했습니다. 종속성이 모두 기본 참조가 아니므로 실행 디렉터리에서 충돌을 해결할 수 없습니다.  

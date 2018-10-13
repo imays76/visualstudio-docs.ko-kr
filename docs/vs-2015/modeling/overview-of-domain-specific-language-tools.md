@@ -1,7 +1,7 @@
 ---
 title: 도메인 특정 언어 도구 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 694ebbc73b531f4fab1c8b2f9621e14f4145bd70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273262"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>도메인별 언어 도구 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 언어 도구 개요](https://docs.microsoft.com/visualstudio/modeling/overview-of-domain-specific-language-tools)합니다.  
-  
 도메인 특정 언어 도구 (DSL 도구)에서 호스팅되는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 도메인 특정 언어를 디자인 하 고 다음 사용자에 게 필요한 언어를 기반으로 하는 모델을 만드는 모든 항목을 생성 합니다.  
   
  다음 도구는 DSL 도구에 포함 됩니다.  

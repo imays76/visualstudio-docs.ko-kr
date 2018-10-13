@@ -1,7 +1,7 @@
 ---
 title: WPF 소개 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 656d65da1713c87090615e2e692006203cd72b7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8eee94b8d3e2b384ac645cf1178403556f0496ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277422"
 ---
 # <a name="introduction-to-wpf"></a>WPF 소개
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [의 WPF 소개](https://docs.microsoft.com/visualstudio/designers/introduction-to-wpf)합니다.  
-  
 WPF(Windows Presentation Foundation)를 사용하면 시각적으로 뛰어난 사용자 환경을 통해 Windows용 데스크톱 클라이언트 응용 프로그램을 만들 수 있습니다.  
   
  ![Contoso Healthcare UI 샘플](../designers/media/wpfintrofigure24.png "WPFIntroFigure24")  

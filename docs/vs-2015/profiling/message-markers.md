@@ -1,7 +1,7 @@
 ---
 title: 메시지 표식 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd2487466518622ebd1b2a52c4e4697be23a40d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9bc998a697dcf387df21b7e5576a8548d51d0e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269949"
 ---
 # <a name="message-markers"></a>메시지 표식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [메시지 표식](https://docs.microsoft.com/visualstudio/profiling/message-markers)합니다.  
-  
 메시지 표식은 로그 출력을 나타냅니다. 메시지는 특정 시간에 특정 스레드에서 생성되는 문자열입니다. 다른 도구에 사용할 수 있도록 메시지를 텍스트 파일로 내보낼 수 있습니다. 동시성 시각화 도우미에서 메시지에 포인터를 두면 메시지 문자열을 볼 수 있습니다. 또한 [표식 보고서](../profiling/markers-report.md)에서 모든 메시지 표식을 볼 수 있습니다.  다음 그림은 메시지 표식을 보여줍니다.  
   
 ## <a name="message-aggregation-markers"></a>메시지 집계 표식  

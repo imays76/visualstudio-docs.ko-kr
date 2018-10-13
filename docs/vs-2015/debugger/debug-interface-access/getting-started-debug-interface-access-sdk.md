@@ -1,7 +1,7 @@
 ---
 title: (디버그 인터페이스 액세스 SDK)를 시작 하기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68b87c3789d0cc54f8492eed36c3028cf7a87df9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d24d4b1fe15656f074ce580a809fe394d861a71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549991"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252488"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>시작(디버그 인터페이스 액세스 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Getting Started (디버그 인터페이스 액세스 SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/getting-started-debug-interface-access-sdk)합니다.  
-  
 디버그 인터페이스 액세스 (DIA) SDK 지침 설명서와 DIA API를 사용 하는 방법을 보여 주는 샘플을 제공 합니다. .Pdb 및.dbg 파일을 열고 기호, 값, 특성, 주소 및 기타 디버깅 정보에 대 한 해당 콘텐츠를 검색 하는 사용자 지정 응용 프로그램을 개발할 DIA SDK의 인터페이스 및 메서드를 사용 합니다. 이 SDK는 또한 c + + 응용 프로그램의 문장 부호를 사용 하 여 연결 속성에 대 한 참조 테이블을 제공 합니다.  
   
  가장 DIA SDK를 사용 하려면 다음을 사용 하 여 알아두어야 하 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: '새 프로젝트 생성: 내부 살펴보기, 1 부 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07532630263c4f7ff8fe0d9281abbbbd47772b3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302616"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>새 프로젝트 생성: 내부 살펴보기, 1부
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [새 프로젝트 생성: 내부 살펴보기, 1 부](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-one)합니다.  
-  
 고유의 프로젝트 형식을 만드는 방법에 대 한 생각 적이 있습니까? 새 프로젝트를 만들 때 실제로 무엇이 발생 궁금해? 살펴보기 해 실제로 그럴까요 참조 보겠습니다.  
   
  Visual Studio를 조정 하는 작업을 여러 가지가 있습니다.  

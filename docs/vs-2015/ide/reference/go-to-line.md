@@ -1,7 +1,7 @@
 ---
 title: 줄 이동 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7f0268bfc2519600022d2d2214c693fe3a2ae0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 129783c558df130bc952c2573abad968a9df9d41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555905"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304111"
 ---
 # <a name="go-to-line"></a>줄 이동
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [줄 이동](https://docs.microsoft.com/visualstudio/ide/reference/go-to-line)합니다.  
-  
   
 이 대화 상자를 사용하면 활성 문서의 특정 줄로 이동할 수 있습니다. 이 대화 상자에 액세스하려면 편집할 문서를 연 후 **편집** 메뉴에서 **이동**을 선택합니다.  
   

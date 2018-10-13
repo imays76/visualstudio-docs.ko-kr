@@ -1,7 +1,7 @@
 ---
 title: 요소를 포함 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9dd762d9232443230dae29e94efd78f2e67d66f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fdc57962b101b864370e2a70fdc6327ef7e6110
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302331"
 ---
 # <a name="include-element"></a>Include 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [포함 요소](https://docs.microsoft.com/visualstudio/extensibility/include-element)합니다.  
-  
 찾을 수 있는 파일을 지정 하는 Include 요소에 제공 된 현재 파일에 삽입에 대 한 경로 포함 합니다.  모든 기호 및 형식 정의 컴파일된 결과 포함 됩니다.  
   
 ## <a name="syntax"></a>구문  

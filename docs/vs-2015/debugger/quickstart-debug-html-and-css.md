@@ -1,7 +1,7 @@
 ---
 title: '빠른 시작: HTML 및 CSS 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225487"
 ---
 # <a name="quickstart-debug-html-and-css"></a>퀵 스타트: HTML 및 CSS 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [빠른 시작: HTML 및 CSS 디버깅](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  JavaScript 앱의 경우 Visual Studio에서 Internet Explorer 및 Visual Studio 개발자에게 익숙한 기능이 포함된 포괄적인 디버깅 환경을 제공합니다. 이러한 기능은 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], Windows Phone 스토어 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에 대해 지원됩니다.  
@@ -299,9 +297,9 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 -   [!INCLUDE[win81](../includes/win81-md.md)]에서 실행 중인 Internet Explorer 11  
   
--   [!INCLUDE[win8](../includes/win8-md.md)]에서 실행 중인 Internet Explorer 10  
+-   [!INCLUDE[win8](../includes/win8-md.md)]  
   
- 이동 [같습니다](http://go.microsoft.com/fwlink/?LinkID=232448) 다운로드 하려면 [!INCLUDE[win8](../includes/win8-md.md)] 및 Visual Studio입니다.  
+ [및 Visual Studio를 다운로드하려면](http://go.microsoft.com/fwlink/?LinkID=232448) 여기 [!INCLUDE[win8](../includes/win8-md.md)] 로 이동합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -311,7 +309,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
  [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)   
  [WebView 컨트롤 디버그](../debugger/debug-a-webview-control.md)   
  [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [HTML, CSS 및 JavaScript 샘플 코드 디버그](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [기술 지원 및 접근성](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
 

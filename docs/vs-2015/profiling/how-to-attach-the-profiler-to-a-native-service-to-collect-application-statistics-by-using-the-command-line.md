@@ -1,7 +1,7 @@
 ---
 title: '방법: 명령줄을 통해 네이티브 서비스에 프로파일러를 연결하여 응용 프로그램 통계 수집 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca35c58c25ca989bba65a315a1cfd05f05e20fc0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: fbbf8dcdd476c60f83cf2fdb73b503506c429a79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879268"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306022"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 네이티브 서비스에 프로파일러를 연결하여 응용 프로그램 통계 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 명령줄을 사용 하 여 네이티브 서비스 응용 프로그램 통계 수집에 Profiler 연결할](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line)합니다.  
-  
 이 항목에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 네이티브 서비스에 연결하고 샘플링 방법을 통해 성능 통계를 수집하는 방법에 대해 설명합니다.  
   
 > [!NOTE]

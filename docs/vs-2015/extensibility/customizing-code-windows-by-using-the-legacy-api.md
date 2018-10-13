@@ -1,7 +1,7 @@
 ---
 title: 레거시 API를 사용 하 여 코드 Windows를 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7738ef02b7f26e78197ca974fdc03b60c157799f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c698f9661866ad6d2900bb7feb0f0f4a17d21589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299990"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 사용자 지정 코드 Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 API를 사용 하 여 사용자 지정 코드 Windows](https://docs.microsoft.com/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api)합니다.  
-  
 코드 창에는 하나 이상의 텍스트 뷰를 지 원하는 문서 창 개체입니다. 코드 창의 정확한 기능 관련 된 언어 서비스에 따라 달라 집니다. (MDI) 다중 문서 인터페이스 모드로 코드 MDI 자식 프레임입니다.  
   
  각 언어 서비스에서는 고유한 코드 창 관리자를 제공할 수 있습니다 및 코드 windows 언어 서비스에 의해 제어 됩니다. 이 언어 서비스를 자체 장식을 물결선, 색 지정 등 코드 창에 추가할 수 있습니다. Core 창을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [레거시 API는 편집기에서 사용 하 여 Core 인스턴스화](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)합니다.  

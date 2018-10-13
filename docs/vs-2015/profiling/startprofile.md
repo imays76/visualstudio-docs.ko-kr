@@ -1,7 +1,7 @@
 ---
 title: StartProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8755dcf0b392d17234a3f1224a04de4603840fc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06bc362a2e1b3a5f574d3926e26680a7d98b9ec7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244077"
 ---
 # <a name="startprofile"></a>StartProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [StartProfile](https://docs.microsoft.com/visualstudio/profiling/startprofile)합니다.  
-  
 `StartProfile` 함수는 지정된 프로파일링 수준에 대한 카운터를 1(on)로 설정합니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: 도메인별 언어 솔루션 템플릿 선택 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cded93126f4e02aa5f0417819c7a76f17e0da6d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268497"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>도메인별 언어 솔루션 템플릿 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 언어 솔루션 템플릿 선택](https://docs.microsoft.com/visualstudio/modeling/choosing-a-domain-specific-language-solution-template)합니다.  
-  
 도메인별 언어 솔루션을 만들려면 도메인 특정 언어 디자이너 마법사에서 사용할 수 있는 솔루션 템플릿 중 하나를 선택 합니다. 서식 파일을 만들려고 할 수 있는 언어와 가장 유사한를 선택 하 여 시작 솔루션을 확인 해야 할 수정 작업을 최소화할 수 있습니다.  
   
  다음 솔루션 템플릿은 도메인별 언어 디자이너 마법사에서 사용할 수 있습니다.  

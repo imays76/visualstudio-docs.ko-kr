@@ -1,7 +1,7 @@
 ---
 title: 가장 최근에 사용한 되는 하위 메뉴에 목록 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a5f0177243c178890673986b0c04b4627505e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223735"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>하위 메뉴에 가장 최근에 사용한 메뉴 목록 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [하위 메뉴에는 가장 최근에 사용한 목록 추가](https://docs.microsoft.com/visualstudio/extensibility/adding-a-most-recently-used-list-to-a-submenu)합니다.  
-  
 이 연습에서 데모 기반 [하위 메뉴에 추가](../extensibility/adding-a-submenu-to-a-menu.md), 동적 목록을 하위 메뉴에 추가 하는 방법을 보여줍니다. 동적 목록 mru (가장 최근에 사용 됨) 목록을 만들기 위한 기본을 형성 합니다.  
   
  동적 메뉴 목록을 메뉴에 자리 표시자를 사용 하 여 시작합니다. 메뉴 표시 되며, 때마다 Visual Studio 통합된 개발 환경 (IDE) 자리 표시자에 표시 되는 모든 명령에 대 한 VSPackage를 요청 합니다. 메뉴의 동적 목록이 어디서 나 발생할 수 있습니다. 그러나 동적 목록은 일반적으로 저장 되 고 하위 메뉴 또는 메뉴 하단에 단독으로 표시 합니다. 이러한 디자인 패턴을 사용 하 여 동적 목록을 확장 하 고 메뉴에서 다른 명령의 위치를 영향을 주지 않고 계약 명령 사용할 수 있습니다. 이 연습에서는 동적 MRU 목록의 하위 메뉴의 나머지 부분에서 줄으로 구분 된 기존 하위 메뉴의 맨 아래에 표시 됩니다.  

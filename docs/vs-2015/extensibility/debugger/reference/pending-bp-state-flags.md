@@ -1,7 +1,7 @@
 ---
 title: PENDING_BP_STATE_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb5587a66814b7eb3341787aa1654fe6c1c99f20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0cd33e5671c6652837cc7cda68e7cfe6243463a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291637"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [PENDING_BP_STATE_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/pending-bp-state-flags)합니다.  
-  
 보류 중인 중단점 상태 플래그를 지정합니다.  
   
 ## <a name="syntax"></a>구문  

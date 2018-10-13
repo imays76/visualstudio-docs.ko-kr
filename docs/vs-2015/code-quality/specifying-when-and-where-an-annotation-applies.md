@@ -1,7 +1,7 @@
 ---
 title: 주석 적용 시기 및 위치 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca11e9339534c1053a62442f4eb2e4a65ca2a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4772dc980743db131002dbde80346836e9dc4c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303357"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>주석 적용 시기 및 위치 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [를 지정 하 고 여기서는 주석이 적용 됩니다](https://docs.microsoft.com/visualstudio/code-quality/specifying-when-and-where-an-annotation-applies)합니다.  
-  
 주석의 조건부 경우 분석기를 지정 하려면 다른 주석이 필요할 수 있습니다.  예를 들어 함수에 변수 동기식 또는 비동기식 일 수 있는 경우 함수는 다음과 같이 동작 합니다: 동기 경우에서이 항상 결국 성공 하지만 비동기 작업의 경우에 오류를 보고 즉시 성공 수 없습니다. 함수를 동기적으로 호출 되 면 반환 있을 것 때문에 코드 분석기 값을 제공 결과 값을 확인 합니다.  그러나 함수를 비동기적으로 호출 하 고 함수 결과 확인 하지 않습니다, 심각한 오류가 발생할 수 있습니다. 이 예제에서는 사용할 수 있는 상황을 보여 줍니다.는 `_When_` 주석-이 문서의 뒷부분에서 설명-검사할 수 있도록 합니다.  
   
 ## <a name="structural-annotations"></a>구조적 주석  

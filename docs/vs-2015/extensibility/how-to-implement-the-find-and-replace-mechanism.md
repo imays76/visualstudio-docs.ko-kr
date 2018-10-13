@@ -1,7 +1,7 @@
 ---
 title: '방법: 찾기 구현 및 메커니즘을 바꾸기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bbd348db-3d19-42eb-99a2-3e808528c0ca
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eaae77979fc15954b4480a038c791a15bd95ab65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4ec48a1392efa67f17432f071c9bf4894c35e87
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543436"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304020"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>방법: 구현 찾기 및 바꾸기 메커니즘
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 찾기 및 바꾸기 메커니즘을 구현](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-the-find-and-replace-mechanism)합니다.  
-  
 Visual Studio 찾기/바꾸기를 구현 하는 두 가지를 제공 합니다. 한 가지 방법은 셸에 텍스트 이미지를 전달 하 고 검색, 강조 표시 및 대체 텍스트를 처리 하도록 하는 것입니다. 이 여러 텍스트 범위를 지정할 수가 있습니다. 또는 VSPackage는 자체에서 이러한 기능을 제어할 수 있습니다. 두 경우 모두 현재 대상 및 열려 있는 모든 문서에 대 한 대상에 대 한 shell에 알려야 합니다.  
   
 ### <a name="to-implement-findreplace"></a>찾기/바꾸기 구현 하려면  

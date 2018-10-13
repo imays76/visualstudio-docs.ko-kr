@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로세스 뷰에서 프로세스 검색 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ebb0c6a13db0fdc1a586a78038f759c59f8b110
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222900"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>방법: 프로세스 뷰에서 프로세스 검색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 프로세스 뷰에서 프로세스 검색](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-process-in-processes-view)합니다.  
-  
 검색 조건으로 해당 프로세스 ID 또는 모듈 문자열을 사용 하 여 프로세스 보기에서 특정 프로세스에 대 한 검색할 수 있습니다. 또한 검색 시작 방향을 지정할 수 있습니다. 대화 상자의 필드에에서 프로세스 트리에서 선택한 프로세스의 특성을 표시 됩니다.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>프로세스 뷰에서 프로세스 검색 하려면  

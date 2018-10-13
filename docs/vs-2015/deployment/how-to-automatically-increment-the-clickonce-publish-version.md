@@ -1,7 +1,7 @@
 ---
 title: '방법: 게시 버전 자동 증가 ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bf59ba569b7530accf4293954606923ee614d305
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac5b4e67c0bbebba7586715e4ba491bf11bacc4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300224"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>방법: ClickOnce 게시 버전 자동 증가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 게시 버전 자동 증가](https://docs.microsoft.com/visualstudio/deployment/how-to-automatically-increment-the-clickonce-publish-version)합니다.  
-  
 게시 하는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 변경 합니다 `Publish Version` 속성 하면 응용 프로그램이 업데이트로 게시 합니다. 기본적으로 Visual Studio 자동으로 증가 합니다 `Revision` 횟수는 `Publish Version` 응용 프로그램을 게시할 때마다 합니다.  
   
  이 동작을 비활성화할 수는 **게시** 페이지를 **프로젝트 디자이너**합니다.  

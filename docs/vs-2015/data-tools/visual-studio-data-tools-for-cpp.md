@@ -1,7 +1,7 @@
 ---
 title: C + + 용 visual Studio 데이터 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556160"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306191"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C + + 용 visual Studio 데이터 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [c + + 용 Visual Studio data tools](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp)합니다.  
-  
   
 종종 네이티브 c + +는 데이터 원본에 액세스 하는 가장 빠른 성능의 제공할 수 있습니다. 그러나 Visual Studio에서 c + + 응용 프로그램에 대 한 도구는 데이터.NET 응용 프로그램에 대 한 다양 하지 않습니다. 예를 들어, 데이터 소스 창의 데이터 원본 c + + 디자인 화면으로 끌어서 사용할 수 없습니다. 개체-관계형 레이어를 필요한를 사용 하는 경우에 직접 작성 하거나 타사 제품을 사용 합니다.  Microsoft Foundation Class 라이브러리를 사용 하는 응용 프로그램 메모리에 데이터를 저장 하 고 사용자에 게 표시 하려면 일부 데이터베이스 클래스와 함께 문서 및 뷰를 사용할 수 있지만 데이터 바인딩 기능에 대 한 마찬가지입니다. 자세한 내용은 [Visual c + +에서 데이터 액세스](https://msdn.microsoft.com/library/7wtdsdkh.aspx) 합니다.  
   

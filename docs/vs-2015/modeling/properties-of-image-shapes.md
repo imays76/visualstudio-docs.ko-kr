@@ -1,7 +1,7 @@
 ---
 title: 이미지 모양의 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 395d042bd5152d741d5188ed87faec801cd17cb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304098"
 ---
 # <a name="properties-of-image-shapes"></a>이미지 모양의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [이미지 모양의 속성](https://docs.microsoft.com/visualstudio/modeling/properties-of-image-shapes)합니다.  
-  
 도메인 클래스가 생성된 된 디자이너에서 표시 하는 방법을 지정 하려면 이미지 셰이프를 사용할 수 있습니다. 이미지 모양을 설정 하 여 정의 된 `Image` 미리 정의 된 이미지 파일을 클래스의 속성입니다. 다음 형식이 지원 됩니다.  
   
 -   .gif  

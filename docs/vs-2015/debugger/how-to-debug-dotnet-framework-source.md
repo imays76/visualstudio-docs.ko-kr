@@ -1,7 +1,7 @@
 ---
 title: 방법:.NET Framework 소스 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c2bd633a4f6c6b0580b23d0fbf1bb25094247
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c717e1d9eccce48319d8a73dd52d7f13ce36296e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240619"
 ---
 # <a name="how-to-debug-net-framework-source"></a>방법: .NET Framework 소스 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법:.NET Framework 소스 디버그](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-dotnet-framework-source)합니다.  
-  
 최신 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에 대 한 새로운 기능을 제공 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 디버깅 합니다. 디버그 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 소스 코드에 대 한 기호 디버깅에 대 한 액세스 있어야 합니다. 한 단계씩 실행할 수 있도록 해야 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 원본입니다.  
   
  설정할 수 있습니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 단계별 실행 및 기호를 다운로드 합니다 **옵션** 대화 상자. 기호 다운로드를 설정할 때 기호를 즉시 다운로드할 수도 있고 나중에 다운로드하도록 옵션만 설정해 놓을 수도 있습니다. 기호를 즉시 다운로드하지 않으면 기호는 다음 번에 응용 프로그램 디버깅을 시작할 때 다운로드됩니다. 수동으로 다운로드 하 여 수행할 수도 있습니다는 **모듈** 창 또는 **호출 스택** 창입니다.  

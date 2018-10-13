@@ -1,7 +1,7 @@
 ---
 title: RC 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ff118a6d32a182d1060cc051f24352b16037039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 04bd592f919ab3ced11b36dceba7ce4178927884
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259352"
 ---
 # <a name="rc-task"></a>RC 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [RC 작업](https://docs.microsoft.com/visualstudio/msbuild/rc-task)합니다.  
-  
   
 Microsoft Windows 리소스 컴파일러 도구, rc.exe를 래핑합니다. **RC** 작업은 커서, 아이콘, 비트맵, 대화 상자 및 글꼴과 같은 리소스를 리소스(.res) 파일로 컴파일합니다. 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "리소스 컴파일러"를 참조하세요.  
   

@@ -1,7 +1,7 @@
 ---
 title: CvReleaseProvider 함수 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e62e897b56407ab985125361700da60d4e0fdcd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5b644dfdb469d84b90a1a0d7d59651fbad2460b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300783"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CvReleaseProvider 함수](https://docs.microsoft.com/visualstudio/profiling/cvreleaseprovider-function)합니다.  
-  
 표식 공급자를 해제합니다. 표식 공급자 해제가 이 공급자의 이전에 만든 표식 계열에 영향을 주지 않습니다. 표식 계열은 CvReleaseMarkerSeries 호출을 통해 별도로 해제해야 합니다. 공급자를 해제하지 못하면 메모리 누수가 발생합니다.  
   
 ## <a name="syntax"></a>구문  
