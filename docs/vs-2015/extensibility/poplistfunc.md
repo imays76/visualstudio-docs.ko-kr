@@ -1,7 +1,7 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8b193eae0e41f48c0f947bbf8af596084a1544f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b085401b905011fcf62f5ef94cc214af1d978f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556399"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224551"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [POPLISTFUNC](https://docs.microsoft.com/visualstudio/extensibility/poplistfunc)합니다.  
-  
 이 콜백은에 제공 되는 [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE에서 소스 제어 플러그 인 파일 또는 디렉터리의 목록을 업데이트 하는 데 사용 됩니다 (도 제공는 `SccPopulateList` 함수).  
   
  사용자가 선택 하는 경우는 **가져오기** 명령을 IDE에서 IDE를 가져올 수 있는 모든 파일의 목록 상자를 표시 합니다. 그러나 IDE 모르는 사용자; 발생할 수 있는 모든 파일의 정확한 목록을 만 플러그 인에이 목록입니다. 다른 사용자에 게는 소스 코드 제어 프로젝트에 파일을 추가 했지만, 이러한 파일은 목록의 나타나지만 IDE에 대 한 알 수 없습니다. IDE를 가져올 수는 것이 생각 하는 파일의 목록을 작성 합니다. 호출 전에이 목록을 사용자에 게 표시 합니다 [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` 소스 제어 플러그 인을 제공 추가 하 고 목록에서 파일을 삭제 합니다.  

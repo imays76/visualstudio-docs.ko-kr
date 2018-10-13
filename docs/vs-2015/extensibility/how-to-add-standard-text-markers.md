@@ -1,7 +1,7 @@
 ---
 title: '방법: 표준 텍스트 마커를 추가 합니다. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41232fab8545fcd0ed65c039969e40b03e754d2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7deaccc41e506f2ad696fd3e2ec700fcd5367433
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217869"
 ---
 # <a name="how-to-add-standard-text-markers"></a>방법: 표준 텍스트 마커를 추가 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 표준 텍스트 마커 추가](https://docs.microsoft.com/visualstudio/extensibility/how-to-add-standard-text-markers)합니다.  
-  
 와 함께 제공 되는 기본 텍스트 표식 유형 중 하나를 만들려면 다음 절차는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 핵심 편집기입니다.  
   
 ### <a name="to-create-a-text-marker"></a>텍스트 마커를 만들려면  

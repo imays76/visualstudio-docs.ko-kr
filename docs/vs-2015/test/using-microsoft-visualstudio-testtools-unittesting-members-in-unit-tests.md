@@ -1,7 +1,7 @@
 ---
 title: 단위 테스트에서 Microsoft.VisualStudio.TestTools.UnitTesting 구성원 사용 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,15 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ef2c5f81f868f2b5d7eac68030b842bd1c45067c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 691b1e46f7657eb027fa48b31f31119cae0c7451
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216652"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>단위 테스트에서 Microsoft.VisualStudio.TestTools.UnitTesting 멤버 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [단위 테스트에서 Microsoft.VisualStudio.TestTools.UnitTesting 멤버 사용 하 여](https://docs.microsoft.com/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests)입니다.
-
 단위 테스트 프레임워크는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 단위 테스트를 지원합니다. 단위 테스트를 코딩하는 경우 <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 네임스페이스의 클래스 및 멤버를 사용합니다. 단위 테스트를 처음부터 작성했거나 테스트 중인 코드에서 생성된 단위 테스트를 다시 정의하는 경우 이러한 클래스와 멤버를 사용할 수 있습니다.
 
 ## <a name="groups-of-elements"></a>요소 그룹

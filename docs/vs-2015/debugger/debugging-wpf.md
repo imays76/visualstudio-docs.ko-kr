@@ -1,7 +1,7 @@
 ---
 title: WPF 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce2a30c1197abb323a60db3939d70dc3eec4fd37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c182c95ec8fe888dcea50925b06f0da40bb61e87
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553279"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212097"
 ---
 # <a name="debugging-wpf"></a>WPF 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Debugging WPF](https://docs.microsoft.com/visualstudio/debugger/debugging-wpf)합니다.  
-  
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서는 WPF 응용 프로그램을 보다 쉽게 디버깅할 수 있는 추가 기능을 제공합니다.  
   
 ## <a name="related-topics"></a>관련 항목  

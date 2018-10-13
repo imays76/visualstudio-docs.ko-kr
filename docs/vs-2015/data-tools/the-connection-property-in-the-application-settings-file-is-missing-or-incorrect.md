@@ -1,7 +1,7 @@
 ---
 title: 응용 프로그램 설정 파일의 연결 속성이 없거나 잘못 된 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f49731e554c737a8dd0a26dab22f5ccaad99cc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b01ae69a63014f4f413e89942a3b9b3c6a74db61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216224"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>응용 프로그램 설정 파일에서 연결 속성이 없거나 잘못되었습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [응용 프로그램 설정 파일의 연결 속성이 없거나 잘못 된](https://docs.microsoft.com/visualstudio/data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect)합니다.  
-  
   
 응용 프로그램 설정 파일의 연결 속성이 없거나 잘못되었습니다. .dbml 파일의 연결 문자열이 대신 사용되었습니다.  
   

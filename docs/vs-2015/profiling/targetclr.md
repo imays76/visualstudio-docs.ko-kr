@@ -1,7 +1,7 @@
 ---
 title: TargetCLR | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 915ca4a859b4c80f785262f1c05698c4d34a683b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e4691f2cdb138a034a9237e6b455c96c53f7ce7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220144"
 ---
 # <a name="targetclr"></a>TargetCLR
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [TargetCLR](https://docs.microsoft.com/visualstudio/profiling/targetclr)합니다.  
-  
 **TargetCLR** 옵션은 한 응용 프로그램에 두 개 이상의 CLR 버전이 로드된 경우 프로파일링할 CLR(공용 언어 런타임) 버전을 지정합니다.  
   
  기본적으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구는 응용 프로그램에서 로드된 CLR의 첫 번째 버전을 대상으로 합니다.  

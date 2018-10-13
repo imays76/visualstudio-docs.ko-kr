@@ -1,7 +1,7 @@
 ---
 title: 사용자 설정에 대 한 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,23 +17,21 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12200fcee084a58520047ca4731dbcc1ed1b4ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74f96a6177409057d2c24aca6103de29d97e19fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564849"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215659"
 ---
 # <a name="support-for-user-settings"></a>사용자 설정 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 설정에 대 한 지원을](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-user-settings)합니다.  
-  
 VSPackage를 사용자가 유지 되는 상태 변수 그룹이 있는 하나 이상의 설정 범주를 정의할 수 있습니다 합니다 **설정 가져오기/내보내기** 명령을 합니다 **도구** 메뉴. 이 지 속성을 사용 하려면 설정을 Api 사용에 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]합니다.  
   
  사용자 지정 설정 지점 및 GUID 라고 하는 레지스트리 항목을 VSPackage의 설정 범주를 정의 합니다. VSPackage는 여러 설정 범주를 지원할 수 있습니다, 그리고 각각 사용자 지정 설정 지점으로 정의 합니다.  
   
--   Interop 어셈블리를 기반으로 하는 설정의 구현 (사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> 인터페이스) 레지스트리를 편집 하거나 등록자 스크립트 (.rgs 파일)를 사용 하 여 사용자 지정 설정 지점 만들어야 합니다. 자세한 내용은 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)합니다.  
+-   Interop 어셈블리를 기반으로 하는 설정의 구현 (사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> 인터페이스) 레지스트리를 편집 하거나 등록자 스크립트 (.rgs 파일)를 사용 하 여 사용자 지정 설정 지점 만들어야 합니다. 자세한 내용은 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)을 참조하십시오.  
   
 -   관리 패키지 프레임 워크 (MPF)를 사용 하는 코드를 연결 하 여 사용자 지정 설정 지점을 만들어야는 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 각 사용자 지정 설정 지점에 대 한 vspackage입니다.  
   

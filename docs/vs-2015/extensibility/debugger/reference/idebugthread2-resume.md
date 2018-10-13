@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::Resume | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a3591ff3363a267b65c41093b18ff8d3ed154d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4ac56cd7763fa8fe3ee1326a83efd33f5f2a396
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214489"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugThread2::Resume](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthread2-resume)합니다.  
-  
 스레드의 실행을 다시 시작합니다.  
   
 ## <a name="syntax"></a>구문  

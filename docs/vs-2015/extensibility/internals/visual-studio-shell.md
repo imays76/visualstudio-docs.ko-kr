@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Shell | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d96d4204e105324a9c209f74f9aee160c3eddde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f0ef1e207fffc4d44963b968caad392b9d976c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222406"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio Shell](https://docs.microsoft.com/visualstudio/extensibility/internals/visual-studio-shell)합니다.  
-  
 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell은 통합의 주요 에이전트인 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 셸에 공통 서비스를 공유 하는 Vspackage를 사용 하도록 설정 하려면 필요한 기능을 제공 합니다. 때문에 아키텍처 목표 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 는 Vspackage의 기본 기능이 vest 방법은 셸에서 기본 기능을 제공 하 고 Vspackage 해당 구성 요소 간에 간 통신을 지원 하기 위한 프레임 워크입니다.  
   
 ## <a name="shell-responsibilities"></a>셸 책임  

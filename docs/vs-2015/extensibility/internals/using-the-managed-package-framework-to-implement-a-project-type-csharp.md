@@ -1,7 +1,7 @@
 ---
 title: 관리 되는 패키지 프레임 워크를 사용 하 여 프로젝트 형식 (C#)를 구현 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72d2ce8d817ab0d01a1a54f5e001165cd943c478
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: faedd7d5630205679c851ab5f9d6b46bbe25e3ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541578"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213735"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>관리 패키지 프레임워크를 사용하여 프로젝트 형식 구현(C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [를 사용 하 여 관리 되는 패키지 프레임 워크는 프로젝트 형식 (C#)](https://docs.microsoft.com/visualstudio/extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp)합니다.  
-  
 관리 패키지 프레임 워크 (MPF)는 C#을 사용 하거나 사용자 고유의 프로젝트 형식 구현에서 상속 하는 클래스를 제공 합니다. MPF는 프로젝트 형식의 특정 구현에 집중할 수 자유롭게 다양 한 Visual Studio에서는 프로젝트 형식에 제공 하려면 인터페이스를 구현 합니다.  
   
 ## <a name="using-the-mpf-project-source-code"></a>MPF 프로젝트 소스 코드를 사용 하 여  

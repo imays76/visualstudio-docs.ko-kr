@@ -1,7 +1,7 @@
 ---
 title: OnError 요소(MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 323aff310061cf62af7cac10ee266c15d24e6eae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10f89d21441418ae0b5c267c0fea7e8451115afe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228711"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 요소(MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [OnError 요소 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/onerror-element-msbuild)합니다.  
-  
   
 `ContinueOnError` 특성이 실패한 태스크의 `false`인 경우 하나 이상의 대상이 실행되도록 합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 혼합 코드 및 호출 스택 창에서 누락 된 정보 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c91b2e49dc94057ab7929380ad1b819cd01731d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03277af5f1cca5c3ded7b43a82ca6bbe74c5e756
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552460"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212214"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>호출 스택 창의 혼합 코드 및 누락된 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [혼합 코드 및 호출 스택 창에서 누락 된 정보](https://docs.microsoft.com/visualstudio/debugger/mixed-code-and-missing-information-in-the-call-stack-window)합니다.  
-  
 관리 코드에 대한 호출 스택과 네이티브 코드에 대한 호출 스택은 서로 다르기 때문에 코드 형식이 혼합된 경우 디버거에서 전제 호출 스택이 표시되지 않을 수 있습니다. 네이티브 코드가 관리 코드를 호출 하는 경우 표시 될 수도 있습니다 변경 합니다 **호출 스택** 창:  
   
 -   관리 되는 코드 바로 위의 네이티브 프레임이 없을 수 있습니다 합니다 **호출 스택** 창입니다. 자세한 내용은 [방법: 네이티브 프레임이 호출 스택 창에서 누락 된 경우에 관리 코드를 나가기](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)합니다.  

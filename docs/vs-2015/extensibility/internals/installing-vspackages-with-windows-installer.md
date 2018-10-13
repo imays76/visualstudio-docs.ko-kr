@@ -1,7 +1,7 @@
 ---
 title: Windows Installer를 사용 하 여 Vspackage 설치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9776c4c9ec58bc84bd1e60bc5eb98d7bda1c0130
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae0e99b278924a123410f5590cea9f8239acd9ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227970"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows Installer를 사용하여 VSPackage 설치
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows Installer를 사용 하 여 Vspackage 설치](https://docs.microsoft.com/visualstudio/extensibility/internals/installing-vspackages-with-windows-installer)합니다.  
-  
 VSPackage에 통합 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 것 이상의 사용자의 컴퓨터에 파일을 복사 해야 합니다. VSPackage의 설치 관리자 VSPackage 및 해당 종속 파일을 설치 및 등록 하며 통합 해야 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. VSPackage에서 아이콘을 표시 하는 등 통합 기능을 활용을 걸릴 수 있습니다는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 화면 및에 대 한 대화 상자를 시작 합니다.  
   
  Microsoft Windows Installer 파일에 Vspackage를 배포 하는 방법이 권장된 됩니다. 사용 하기 쉬운 Windows Installer 패키지에서 지 원하는 Windows 운영 체제에서 실행할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 자세한 내용은 [Windows Installer](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)합니다.  

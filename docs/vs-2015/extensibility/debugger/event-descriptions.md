@@ -1,7 +1,7 @@
 ---
 title: 이벤트 설명 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 160cd1558401e488dec82e79627f306ef98e75ef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed2b4ccb50a40ce9820c2170b4994a6559ad7f3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217341"
 ---
 # <a name="event-descriptions"></a>이벤트 설명
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [이벤트 설명](https://docs.microsoft.com/visualstudio/extensibility/debugger/event-descriptions)합니다.  
-  
 각 유형의 이벤트에는 특정 용도가 있습니다.  
   
 ## <a name="events-and-the-reasons-for-their-use"></a>이벤트 및 용도 대 한 이유  

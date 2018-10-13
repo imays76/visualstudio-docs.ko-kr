@@ -1,7 +1,7 @@
 ---
 title: SQL Server 예제 데이터베이스 설치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a7e82091d93a14e53eed4ee67da086ee1a3c892
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b681a5ee965ac32120f72ac2e0064a72ce7fa76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550901"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213262"
 ---
 # <a name="install-sql-server-sample-databases"></a>SQL Server 예제 데이터베이스 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Install SQL Server 예제 데이터베이스](https://docs.microsoft.com/visualstudio/data-tools/install-sql-server-sample-databases)합니다.  
-  
   
 예제 데이터베이스는 SQL 및 LINQ 쿼리, 데이터 바인딩, Entity Framework 모델링 및 등을 사용 하 여 실험에 대 한 유용 합니다.  각 데이터베이스 제품 예제 데이터베이스 자체에 있습니다. Northwind 및 AdventureWorks는 두 가지 인기 있는 SQL Server 샘플 데이터베이스입니다.  
   

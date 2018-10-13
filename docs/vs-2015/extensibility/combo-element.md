@@ -1,7 +1,7 @@
 ---
 title: Combo 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a65391ad0bd294c847d1474d1aee63e26f41ca5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c6255fade6658ed6244caf81a356586b4c5f57b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213553"
 ---
 # <a name="combo-element"></a>Combo 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Combo 요소](https://docs.microsoft.com/visualstudio/extensibility/combo-element)합니다.  
-  
 콤보 상자에 표시 되는 명령을 정의 합니다. 네 가지 종류의 콤보 상자, 다음과 같이: DropDownCombo, DynamicCombo, IndexCombo, 및 MRUCombo 합니다.  
   
 ## <a name="syntax"></a>구문  

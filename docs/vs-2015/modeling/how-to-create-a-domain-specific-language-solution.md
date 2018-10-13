@@ -1,7 +1,7 @@
 ---
 title: '방법: 도메인별 언어 솔루션 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 305360700463f1b5379f711598e6eed31c1de36c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542845"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223221"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 도메인별 언어 솔루션 만들기](https://docs.microsoft.com/visualstudio/modeling/how-to-create-a-domain-specific-language-solution)합니다.  
-  
 도메인 특정 언어 (DSL) 이라는 특수을 사용 하 여 만들어지는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션입니다.  
   
 ## <a name="prerequisites"></a>전제 조건  

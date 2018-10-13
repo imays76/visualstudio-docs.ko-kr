@@ -1,7 +1,7 @@
 ---
 title: 식 평가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c51cc08da8c71a2ac1f25d02461ea9c24797ebc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0aae7193c6840d389f7990f155fecb0149edc7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213683"
 ---
 # <a name="evaluating-expressions"></a>식 계산
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [식 평가](https://docs.microsoft.com/visualstudio/extensibility/debugger/evaluating-expressions)합니다.  
-  
 식은 자동, 조사식, 간략 한 조사식, 또는 즉시 windows에서 전달 하는 문자열에서 만들어집니다. 식을 계산할 때 이름과 변수 또는 인수 및 해당 값의 형식을 포함 하는 인쇄 가능한 문자열을 생성 합니다. 이 문자열은 해당 IDE 창에 표시 됩니다.  
   
 ## <a name="implementation"></a>구현  

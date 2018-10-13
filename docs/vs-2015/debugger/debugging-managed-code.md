@@ -1,7 +1,7 @@
 ---
 title: 관리 코드 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211590"
 ---
 # <a name="debugging-managed-code"></a>관리 코드 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Debugging Managed Code](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code)합니다.  
-  
 이 단원에서는 Visual Basic, C# 및 C++ 등 공용 언어 런타임을 대상으로 하는 언어로 작성된 관리되는 응용 프로그램의 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. 자세한 내용은 [디버거를 사용 하 여](../debugger/debugger-basics.md)입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
@@ -56,7 +54,7 @@ ms.locfileid: "47564389"
  [OnStart 메서드 디버깅](../debugger/how-to-debug-the-onstart-method.md)  
  관리되는 Windows 서비스의 `OnStart` 메서드를 디버깅할 수 있는 코드 예제를 제공합니다. Windows 서비스의 `OnStart` 메서드를 디버깅하려면 몇 줄의 코드를 추가하여 서비스를 시뮬레이션해야 합니다.  
   
- [혼합 모드 디버깅](../debugger/debugging-mixed-mode-applications.md)  
+ [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
  혼합 모드 응용 프로그램을 디버깅하는 방법에 대해 설명합니다. 혼합 모드 응용 프로그램은 네이티브 코드와 관리 코드가 결합된 응용 프로그램입니다.  
   
  [오류: 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  

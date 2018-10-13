@@ -1,7 +1,7 @@
 ---
 title: '연습: 디자인 타임에 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd63fca37bbb55f99ecb99a18596c128451bd807
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4ff1d0e1c155784bd6116be2bc6eb63e6c53d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227235"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>연습: 디자인 타임에 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 디자인 타임에 디버깅](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-at-design-time)합니다.  
-  
 Visual Studio를 사용할 수 있습니다 **직접 실행** 응용 프로그램이 실행 되지 않는 상태 함수나 서브루틴을 실행 하는 창입니다. 함수 또는 서브루틴에 중단점이 포함 된, Visual Studio는 해당 시점에서 실행을 중단 합니다. 그런 다음 디버거 창을 사용하여 프로그램 상태를 조사할 수 있습니다. 이 기능은 디자인 타임에 디버깅 호출 됩니다.  
   
  다음 절차에서는이 기능을 사용 하는 방법을 보여 줍니다.  

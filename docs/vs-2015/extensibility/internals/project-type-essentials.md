@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 형식 필수 항목 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd2c0db72cce80f5345475dfd7e82b019b0ec22a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f4f2163526e1bd324e87b6ffd78bafa98965490
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554496"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222484"
 ---
 # <a name="project-type-essentials"></a>프로젝트 형식 필수 항목
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 형식 필수 항목](https://docs.microsoft.com/visualstudio/extensibility/internals/project-type-essentials)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 같은 언어에 대 한 여러 프로젝트 유형이 포함 되어 있습니다 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 또는 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 또한 사용자 고유의 프로젝트 형식을 만들 수 있습니다.  
   
  사용자 지정 명령, 편집기, 또는 도구 창을 추가 하려는 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], 새 프로젝트 형식을 만들지 않고이 수행할 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.  

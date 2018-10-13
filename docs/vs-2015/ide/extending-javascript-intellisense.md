@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59189ae35ce43877e59309382dfd9cbf278ce8f0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214255"
 ---
 # <a name="extending-javascript-intellisense"></a>JavaScript IntelliSense 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 JavaScript IntelliSense 확장성 기능을 사용 하면 타사 라이브러리에 대 한 JavaScript 편집기의 IntelliSense 결과 사용자 지정할 수 있습니다. 이 이러한 라이브러리를 사용 하는 개발자의 환경을 개선할 수 있습니다.  
   
  JavaScript language service 프로젝트에 추가 되는 타사 JavaScript 라이브러리에 대 한 IntelliSense 기능을 제공 합니다. 대부분의 라이브러리에 대 한 문 완성 언어 서비스에서 자동으로 제공 됩니다. 다음 그림은 문 완성의 예제를 보여 줍니다.  

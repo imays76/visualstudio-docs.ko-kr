@@ -1,7 +1,7 @@
 ---
 title: '방법: 뷰와 XML 편집기 간 전환 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d739f9923c3686995508d56391513cdd503f5c94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03edf2ba9d2e9c5042328a62606d9bbae47bb0f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218454"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>방법: 뷰와 XML 편집기 간 전환
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 보기 간에 전환 하 고 XML 편집기](https://docs.microsoft.com/visualstudio/xml-tools/how-to-switch-between-views-and-the-xml-editor)합니다.  
-  
   
 이 항목에서는 XML 스키마 디자이너(XSD 디자이너) 뷰와 XML 편집기 간을 전환하는 방법을 보여 줍니다. 이 예제에서는 합니다 [구매 주문 스키마](../xml-tools/sample-xsd-file-simple-schema.md)합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 범주 및 표시 항목 구현 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c47bc8bc4cae609ad378dabaf64f239b7aa47c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4a9f18330060888527466c29f911a37ce29ce46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218675"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>사용자 지정 범주 및 표시 항목 구현
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 범주를 구현 하 고 표시 항목](https://docs.microsoft.com/visualstudio/extensibility/implementing-custom-categories-and-display-items)합니다.  
-  
 VSPackage를 해당 텍스트의 색 및 글꼴의 제어를 제공할 수는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자 지정 범주 및 표시 항목을 통해 통합된 개발 환경 (IDE)입니다.  
   
  사용자 지정 범주 및 표시 항목에는 **글꼴 및 색** 속성 페이지. 열려는 합니다 **글꼴 및 색** 속성 페이지를 **도구** 메뉴에서 클릭 **옵션**합니다. 확장 **환경을** 을 클릭 한 다음 **글꼴 및 색**합니다.  

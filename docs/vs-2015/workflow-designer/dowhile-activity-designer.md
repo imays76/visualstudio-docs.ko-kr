@@ -1,7 +1,7 @@
 ---
 title: DoWhile 활동 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 911e6d6d94090ddcdd43fcd9511624e209f7c03c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec9bc21095905f373cf302deedd73bbce678a6de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227658"
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile 활동 디자이너
 <xref:System.Activities.Statements.DoWhile> 활동 실행에 포함 된 해당 <xref:System.Activities.Statements.DoWhile.Body%2A> 최소한 한 번에 지정된 된 조건이 평가 될 때까지 **false**합니다. 루프 본문에 포함된 활동을 0번 이상 실행해야 할 경우 <xref:System.Activities.Statements.While> 활동을 대신 사용하세요.  

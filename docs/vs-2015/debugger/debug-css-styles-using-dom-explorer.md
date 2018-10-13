@@ -1,7 +1,7 @@
 ---
 title: DOM 탐색기를 사용 하 여 CSS 스타일 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 889626b5d80afebfd701a7bc347466da97ba707b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a30ac9669c7093c7eb3b656076c606cbf5a9fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556075"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220744"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>DOM 탐색기를 사용하여 CSS 스타일 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DOM 탐색기를 사용 하 여 디버그 하는 CSS 스타일](https://docs.microsoft.com/visualstudio/debugger/debug-css-styles-using-dom-explorer)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Windows 스토어 앱, Windows Phone 스토어 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱을 디버그할 때 선택한 DOM 요소 및 해당 요소의 자식 요소에 대한 CSS 규칙을 보고 변경할 수 있습니다.  

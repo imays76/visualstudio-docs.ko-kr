@@ -1,7 +1,7 @@
 ---
 title: 응용 프로그램 배포 필수 구성 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217934"
 ---
 # <a name="application-deployment-prerequisites"></a>응용 프로그램 배포 필수 구성 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [응용 프로그램 배포 필수 구성 요소](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites)합니다.  
-  
 응용 프로그램을 올바르게 설치 및 실행하려면 응용 프로그램이 사용할 모든 구성 요소가 대상 컴퓨터에 이미 설치되어 있는지를 먼저 확인해야 합니다. 예를 들어 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하여 만드는 대부분의 응용 프로그램은 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]를 사용하므로 응용 프로그램을 설치하기 전에 올바른 공용 언어 런타임 버전을 대상 컴퓨터에 설치해야 합니다.  
   
  이러한 필수 구성이 요소를 선택할 수 있습니다 합니다 **필수 조건 대화 상자** 설치의 일부로.NET Framework 및 기타 재배포 가능 패키지를 설치 합니다. 이 방법은 이라고 *부트스트래핑*합니다. 그런 다음, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows 실행 프로그램 Setup.exe, 라고도 생성 한 *부트스트래퍼*. 부트스트래퍼는 응용 프로그램을 실행하기 전에 이러한 필수 구성 요소를 설치합니다. 이러한 필수 구성이 요소를 선택 하는 방법에 대 한 자세한 내용은 참조 하세요. [필수 조건 대화 상자](../ide/reference/prerequisites-dialog-box.md)합니다.  

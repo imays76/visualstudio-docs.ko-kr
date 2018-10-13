@@ -1,7 +1,7 @@
 ---
 title: 네트워크 사용량 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e324f81d4f7580a25f0f2b5c1850c1343a85c6ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227749"
 ---
 # <a name="network-usage"></a>네트워크 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 UWP 앱에서 네트워크 사용량 분석](https://docs.microsoft.com/visualstudio/profiling/network-usage)합니다.  
-  
 Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx)를 사용하여 수행된 네트워크 작업에 대한 데이터를 수집합니다. 데이터를 분석하면 액세스 및 인증 문제, 잘못된 캐시 사용 및 저하된 디스플레이와 다운로드 성능을 해결하는 데 도움이 될 수 있습니다.  
   
  네트워크 도구는 Windows 유니버설 플랫폼 앱만 지원합니다. 지금은 다른 플랫폼이 지원되지 않습니다.  
@@ -38,7 +36,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
   
 1.  Visual Studio에서 프로젝트를 엽니다.  
   
-2.  메뉴에서 **디버그/성능 프로파일러...** 를 클릭합니다. **네트워크**를 선택한 다음 **시작**을 선택합니다.  
+2.  메뉴에서 **디버그/성능 프로파일러...** 를 클릭합니다. 네트워크를 선택한 다음 **시작**을 선택합니다.  
   
 3.  네트워크 도구에서 앱의 HTTP 트래픽 수집을 시작합니다.  
   

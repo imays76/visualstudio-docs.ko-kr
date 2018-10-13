@@ -1,7 +1,7 @@
 ---
 title: '방법: 편집 하며 계속 하기 설정 / 해제 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57a9ec8b8e25da6edb36e1983e45f7bb78251208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550164"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212833"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>방법: 편집하며 계속하기 설정/해제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 사용 하도록 설정 하 고 사용 하지 않도록 설정 편집 하며 계속 하기](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue)합니다.  
-  
 사용 하지 않도록 설정 하거나 편집 하며 계속 하기를 사용 하도록 설정 합니다 **옵션** 디자인 타임에 대화 상자. 디버깅 중에는 이 설정을 변경할 수 없습니다.  
   
  편집하며 계속하기는 디버그 빌드에서만 작동합니다. 네이티브 C++의 경우 편집하며 계속하기를 실행하려면 /INCREMENTAL 옵션을 사용해야 합니다.  

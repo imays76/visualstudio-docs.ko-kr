@@ -1,7 +1,7 @@
 ---
 title: Task 클래스-내부 멤버 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a110e81f149fc04c973fcfe0160873a0bf633f72
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1fb04d3bc15fcac80cbe91d65a0d11ee9e71335
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218493"
 ---
 # <a name="task-class---internal-members"></a>Task 클래스 - 내부 멤버
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Task 클래스-내부 멤버](https://docs.microsoft.com/visualstudio/extensibility/debugger/task-class-internal-members)합니다.  
-  
 내부 멤버에 설명 합니다 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 도움이 되는 클래스 사용자 지정 디버거를 구현 합니다. 이 클래스에 대 한 일반 정보에 대 한 참조를 <xref:System.Threading.Tasks.Task> 참조 항목입니다.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   

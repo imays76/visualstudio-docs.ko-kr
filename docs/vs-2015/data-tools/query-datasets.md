@@ -1,7 +1,7 @@
 ---
 title: 데이터 집합 쿼리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52ccf91d349bc298c5be3fb020ad42ed78699e9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552427"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219299"
 ---
 # <a name="query-datasets"></a>데이터 집합 쿼리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터 집합 쿼리](https://docs.microsoft.com/visualstudio/data-tools/query-datasets)합니다.  
-  
   
 데이터 집합의 특정 레코드를 검색 하려면 FindBy 메서드를 사용 하 여 DataTable에서, 테이블의 행 컬렉션을 통해 사용자 고유의 foreach 루프를 작성 또는 사용 하 여 [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)합니다. LINQ to DataSet입니다.  
   

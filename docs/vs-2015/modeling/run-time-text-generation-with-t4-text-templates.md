@@ -1,7 +1,7 @@
 ---
 title: T4 텍스트 템플릿 사용 하 여 런타임 텍스트 생성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564872"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214749"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates)합니다.  
-  
 사용 하 여 런타임 시 응용 프로그램에서 텍스트 문자열을 생성할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 런타임 텍스트 템플릿. 응용 프로그램을 실행 하는 컴퓨터 필요가 없는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 런타임 템플릿 때때로 이라고 "전처리 된 텍스트 템플릿을" 템플릿은 컴파일 시간에 런타임 시 실행 되는 코드를 생성 합니다.  
   
  각 템플릿은 생성 된 문자열 및 프로그램 코드 조각에 표시 될 텍스트의 혼합입니다. 프로그램 조각은 변수 부분 문자열에 대 한 값을 제공 하며 조건부로 / 반복 부분을 제어할 수도 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Fakes를 사용하여 테스트 중인 코드 격리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b91678cf5fa4cd0620a5b8e860339baa8ee0d75a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a918b8077693ea199c20e776eaddc57c79b3975a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550526"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228009"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [테스트 대상 코드 격리 Microsoft Fakes를 사용 하 여](https://docs.microsoft.com/visualstudio/test/isolating-code-under-test-with-microsoft-fakes)입니다.  
-  
 Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 응용 프로그램의 다른 부분을 교체함으로써 사용자가 테스트 중인 코드를 격리시켜 줍니다. 테스트에서 제어하는 작은 코드 조각입니다. 테스트를 위해 코드를 격리하여 테스트가 실패할 경우 원인이 어디에 있는지 파악합니다. 응용 프로그램의 다른 부분이 아직 작동하지 않더라도 스텁 및 shim을 사용해서 코드를 테스트할 수도 있습니다.  
   
  Fakes는 두 가지 버전이 있습니다.  

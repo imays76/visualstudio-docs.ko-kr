@@ -1,7 +1,7 @@
 ---
 title: 성능 도구 데이터 분석 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 46
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb70fa86ac54c14d8105a0481b3a09b5aa777f39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ca00f13a6b15d934e6be9eb1a379de04ea5fc0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550438"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229140"
 ---
 # <a name="analyzing-performance-tools-data"></a>성능 도구 데이터 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 도구 데이터 분석](https://docs.microsoft.com/visualstudio/profiling/analyzing-performance-tools-data)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 성능 보고서를 사용하면 응용 프로그램 성능 문제를 확인하고 분석할 수 있습니다. 이 섹션에서는 성능 데이터를 검사하는 데 사용할 수 있는 성능 보고서 및 뷰에 대한 개요를 제공합니다.  
   
 ## <a name="common-tasks"></a>일반 작업  

@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 빌드에 대 한 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799330ffa4fbedc5d1fee1ff4cb2f0dfdb3049f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcac8acced823f294c4e6dd33302e3eea30b0439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221119"
 ---
 # <a name="project-configuration-for-building"></a>빌드를 위한 프로젝트 구성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [건물에 대 한 프로젝트 구성](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-building)합니다.  
-  
 지정된 된 솔루션에 솔루션 구성 목록은 솔루션 구성 대화 상자에서 관리 됩니다.  
   
  사용자 자신의 고유 이름을 사용 하 여 각 추가 솔루션 구성을 만들 수 있습니다. 사용자가 새 솔루션 구성을 만든 경우 IDE는 기본값으로 프로젝트 또는 디버그의 해당 구성 이름은 해당 이름이 없는 경우. 사용자는 필요한 경우 특정 요구 사항에 맞게 선택 영역을 변경할 수 있습니다. 프로젝트에 새 솔루션 구성의 이름과 일치 하는 구성을 지원 하는 경우이 동작에만 예외가입니다. 예를 들어, Project1 및 Project2를 솔루션에 포함 되어 있습니다. Project1에 디버그, 소매 및 MyConfig1 프로젝트 구성이 있습니다. Project2에 디버그, 소매 및 MyConfig2 프로젝트 구성이 있습니다.  

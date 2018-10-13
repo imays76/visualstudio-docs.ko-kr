@@ -1,7 +1,7 @@
 ---
 title: TargetPlatformName 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,19 +13,17 @@ ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a82a30c8df696e5666d81b18a8f60641debf828
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dea9ff1c1c27c88592a4a13c55ae06b07328d811
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211720"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [TargetPlatformName 요소 (Visual Studio 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/targetplatformname-element-visual-studio-templates)합니다.  
-  
-프로젝트 템플릿의 대상 플랫폼을 지정합니다. 이 요소는 프로젝트 템플릿을 만들려면 사용 되도록 지정 데 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱.  
+프로젝트 템플릿의 대상 플랫폼을 지정합니다. 이 요소는 프로젝트 템플릿을 사용하여 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱을 만들도록 지정하는 데 사용됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -60,7 +58,7 @@ ms.locfileid: "47553245"
  텍스트는 **Windows**여야 합니다.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 지정 하는 프로젝트 템플릿의 대상 [!INCLUDE[win8](../includes/win8-md.md)] 이상.  
+ 이 예제에서는 프로젝트 템플릿이 [!INCLUDE[win8](../includes/win8-md.md)] 이상을 대상으로 하도록 지정합니다.  
   
 ```xml  
 <VSTemplate Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">   

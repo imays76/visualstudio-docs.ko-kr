@@ -1,7 +1,7 @@
 ---
 title: Visual Studio의 동기화 된 설정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e0facac569671c880004d1fc1a7aa29487e7926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29e962192644d605f83504fb14df10398e1237ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228399"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio의 동기화된 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 설정 동기화](https://docs.microsoft.com/visualstudio/ide/synchronized-settings-in-visual-studio)합니다.  
-  
 동일한 개인 설정 계정을 사용하여 여러 컴퓨터에서 Visual Studio에 로그인하는 경우 기본적으로 설정이 모든 컴퓨터에서 동기화됩니다.  
   
 ## <a name="synchronized-settings"></a>동기화된 설정  

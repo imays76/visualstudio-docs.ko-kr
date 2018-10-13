@@ -1,7 +1,7 @@
 ---
 title: 레거시 API에서 텍스트 버퍼 이벤트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799443f4674c48201a161dbbd02d525afdb3218c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3db7d7a4b2c52e4b831078f789dea75c73b337
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218727"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>레거시 API에서 텍스트 버퍼 이벤트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 API에서 텍스트 버퍼 이벤트](https://docs.microsoft.com/visualstudio/extensibility/text-buffer-events-in-the-legacy-api)합니다.  
-  
 텍스트 버퍼 개체는 다양 한 상황에 응답할 수 있도록 여러 가지 이벤트를 내보냅니다.  
   
  기존 API를 사용 하는 경우에 텍스트 버퍼 변경 알림을 수신 하려면 다음 인터페이스를 구현 해야 합니다. 사용 하 여 텍스트 버퍼에 대 한 인터페이스를 노출 합니다 `IConnectionPointContainer` 버퍼에서 텍스트 버퍼 줄에 대 한 알림을 받으려면 인터페이스 변경 합니다. 자세한 내용은 [방법: 레거시 API를 사용 하 여 텍스트 버퍼 이벤트에 대 한 등록](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)합니다. 경우 `IVsTextStreamEvents` 또는 `IVsTextLinesEvents` 인터페이스 변경 내용이 반환 됩니다 중 하나 또는 two 차원 좌표에서 각각.  

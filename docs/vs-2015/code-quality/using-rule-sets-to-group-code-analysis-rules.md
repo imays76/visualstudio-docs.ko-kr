@@ -1,7 +1,7 @@
 ---
 title: 코드 분석 규칙 그룹화를 설정 하는 규칙을 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae7374ae6b713fe7fa1911cdcce3effa600482b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8af8cbc27a61369640a80dbccb4d99dd2466f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220586"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>규칙 집합을 사용하여 코드 분석 규칙 그룹화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 분석 규칙 그룹화를 사용 하 여 규칙 집합](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules)합니다.  
-  
 코드 분석을 구성 하는 경우 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], 또는 [!INCLUDE[vsPro](../includes/vspro-md.md)], Microsoft 기본 제공 목록에서 선택할 수 있습니다 *규칙 집합*합니다. 규칙 집합은 특정 조건과 대상된 문제를 식별 하는 코드 분석 규칙의 논리적 그룹화입니다. 예를 들어 공개적으로 사용 가능한 Api에 대 한 코드를 스캔 하도록 설계 된 규칙 집합을 적용할 수 있습니다 하거나 최소 권장 규칙을 포함 하는 규칙 집합을 적용할 수 있습니다. 모든 규칙을 포함 하는 규칙 집합을 적용할 수도 있습니다.  
   
  규칙에 추가 또는 삭제 규칙 또는 규칙을 변경 하 여 집합을 사용자 지정할 수 있습니다 합니다 **오류 목록** 경고 또는 오류 창입니다. 사용자 지정된 규칙 집합에는 특정 개발 환경의 요구 사항을 충족할 수 있습니다. 규칙 집합을 사용자 지정 하는 경우 규칙 설정 페이지 검색 및 필터링 프로세스에서 도움이 도구를 제공 합니다.  

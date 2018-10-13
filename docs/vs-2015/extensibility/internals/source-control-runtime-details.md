@@ -1,7 +1,7 @@
 ---
 title: 소스 제어 런타임 세부 정보 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca2d6830a9feb61c088274761995eeb227b1d661
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38b086f578d71c291ef12cb7b90e3ba1ce1ee89f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212436"
 ---
 # <a name="source-control-runtime-details"></a>소스 제어 런타임 세부 정보
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 런타임 세부 정보](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-runtime-details)합니다.  
-  
 사용자는 마법사와 같은 자동화 컨트롤러를 통해 또는 소스 제어에 프로젝트의 파일을 추가 하는 경우 프로젝트를 소스 제어에 추가 됩니다. 프로젝트에서는 자체에 대 한 소스 제어; 것 해당 소스 제어를 지원 하지만 수동으로를 추가 해야 합니다.  
   
 ## <a name="registering-with-a-source-control-package"></a>소스 제어 패키지를 사용 하 여 등록  

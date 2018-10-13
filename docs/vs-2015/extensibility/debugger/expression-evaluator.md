@@ -1,7 +1,7 @@
 ---
 title: 식 계산기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8856284869a256f9be08931b36db644621a3202d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c65705cd38ef202d06e6461f59e5b4e5ae5c9a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225292"
 ---
 # <a name="expression-evaluator"></a>식 계산기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [식 계산기](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluator)합니다.  
-  
 식 계산기 (EE)를 IDE 중단 모드에 있을 때 사용자가 볼 수 있도록 하는 언어 구문 분석 하 고 런타임 시 변수 및 식 평가를 구문을 검사 합니다.  
   
 ## <a name="using-expression-evaluators"></a>식 계산기를 사용 하 여  

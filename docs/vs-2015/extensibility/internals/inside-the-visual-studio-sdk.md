@@ -1,7 +1,7 @@
 ---
 title: Visual Studio SDK 기본 사항 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf54468618e12abdd29921677687201f9840a70c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d22e5c1384e4b24bd3b05cb868a40cede19ba1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543940"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214710"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK 기본 사항
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [내 Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/inside-the-visual-studio-sdk)합니다.  
-  
 이 섹션에서는 Visual Studio 아키텍처, 구성 요소, 서비스, 스키마, 유틸리티 등을 비롯 한 Visual Studio 확장에 대 한 자세한 정보를 제공 합니다.  
   
 ## <a name="extensibility-architecture"></a>확장성 아키텍처  
@@ -38,7 +36,7 @@ ms.locfileid: "47543940"
 Visual Studio 아키텍처의 일반화 된 보기  
   
 ## <a name="vspackages"></a>VSPackages  
- VSPackage는 UI 요소, 서비스, 프로젝트, 편집기 및 디자이너를 사용하여 Visual Studio를 구성 및 확장하는 소프트웨어 모듈입니다. Vspackage는 Visual Studio의 중앙 아키텍처 단위입니다. 자세한 내용은 [Vspackage](../../extensibility/internals/vspackages.md)합니다.  
+ VSPackage는 UI 요소, 서비스, 프로젝트, 편집기 및 디자이너를 사용하여 Visual Studio를 구성 및 확장하는 소프트웨어 모듈입니다. Vspackage는 Visual Studio의 중앙 아키텍처 단위입니다. 자세한 내용은 [VSPackages](../../extensibility/internals/vspackages.md)을 참조하세요.  
   
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  Visual Studio shell 기본 기능을 제공 하 고 해당 구성 요소 Vspackage 및 MEF 확장 간에 간 통신을 지원 합니다. 자세한 내용은 [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 언어 서비스 및 핵심 편집기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6de7975c085073bf9082f77499a6456b44a55b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a1ccca0b20a681505ef197c4eefad1b3a813af6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218324"
 ---
 # <a name="language-services-and-the-core-editor"></a>언어 서비스 및 핵심 편집기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [언어 서비스 및 핵심 편집기](https://docs.microsoft.com/visualstudio/extensibility/language-services-and-the-core-editor)합니다.  
-  
 Visual Studio의 편집기는 언어 서비스를 사용 하 여 자주 연결 됩니다. 무엇 보다도 언어 서비스 구문 색 지정, 문 완성, IntelliSense 및 텍스트 서식 지정을 제공합니다.  
   
 ## <a name="core-editors-and-document-data-objects"></a>코어 편집기 및 문서 데이터 개체  

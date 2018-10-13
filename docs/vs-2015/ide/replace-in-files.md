@@ -1,7 +1,7 @@
 ---
 title: 파일에서 바꾸기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e693e1166a1612ae8ca82f5d1e8c0e742539da0a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555914"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228828"
 ---
 # <a name="replace-in-files"></a>파일에서 바꾸기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [파일에서 바꾸기](https://docs.microsoft.com/visualstudio/ide/replace-in-files)합니다.  
-  
 파일 * *에서 바꾸기 문자열 또는 식에 대 한 파일의 지정 된 집합의 코드를 검색 하 고 찾은 일치 항목의 일부 또는 전부를 변경할 수 있습니다. 찾은 일치 항목과 수행된 작업이 **결과 옵션**에서 선택된 **결과 찾기** 창에 나열됩니다.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 주 어셈블리 및 지역화된 위성 어셈블리의 버전 번호 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 041c23c56b99ec1abba43081d6422f0f05d05e60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5c6d5e16a77a8c04964beb38e21ebf82ede7f0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223043"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>주 어셈블리 및 지역화된 위성 어셈블리의 버전 번호
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

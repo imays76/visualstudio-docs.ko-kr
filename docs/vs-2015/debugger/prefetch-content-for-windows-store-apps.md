@@ -1,7 +1,7 @@
 ---
 title: Windows 스토어 앱 용 콘텐츠 프리페치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc1b01e0cd841c6239a7f2ef76f964482348ee16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9329cad2f0125288aeea146070188d023d1a126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211447"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Windows 스토어 앱용 콘텐츠 프리페치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows 스토어 앱 용 콘텐츠 프리페치](https://docs.microsoft.com/visualstudio/debugger/prefetch-content-for-windows-store-apps)합니다.  
-  
 Windows에만 적용] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Windows 스토어 앱 응답 속도를 높이려면, 웹 페이지 또는 이미지 같은 일부 웹 콘텐츠를 앱의 미리 로드 하려면 Windows를 요청할 수 있습니다 [WinINet](http://msdn.microsoft.com/en-us/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)캐시 합니다. 이 기능을 프리페치라고 합니다. 시작 시에 사용되는 콘텐츠에 특히 효과적이지만 자주 사용되는 다른 콘텐츠도 프리페치할 수 있습니다. 메서드를 [Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) 클래스를 사용 하면 미리 로드 하려는 콘텐츠의 Uri를 지정할 수 있습니다. Windows SDK를 참조 하세요 [콘텐츠 프리페치 샘플](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) 앱에 ContentPrefetcher 기능을 추가 하는 방법의 예입니다.  

@@ -1,7 +1,7 @@
 ---
 title: '연습: 개인정보 취급 방침 프롬프트 표시를 사용자 지정 부트스트래퍼를 만들어 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 790aa1c67ef8c76e404876bd61a42d4b286892da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217966"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>연습: 사용자 지정 부트스트래퍼를 만들어 개인 정보 취급 방침 프롬프트 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: Creating a Custom Bootstrapper Show a Privacy Prompt를](https://docs.microsoft.com/visualstudio/deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt)입니다.  
-  
 최신 파일 버전 및 어셈블리 버전을 사용 하 여 어셈블리를 사용할 수 있게 되 면 자동으로 업데이트 하도록 ClickOnce 응용 프로그램을 구성할 수 있습니다. 되도록 고객에 게이 동작에 동의 하는, 개인정보 처리 방침 프롬프트를 표시할 수 있습니다. 그런 다음 응용 프로그램이 자동으로 업데이트 하는 권한을 부여할 것인지를 선택할 수 있습니다. 응용 프로그램에 자동으로 업데이트 하도록 허용 되지 않습니다 설치 하지 않습니다.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

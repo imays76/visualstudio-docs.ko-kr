@@ -1,7 +1,7 @@
 ---
 title: 프로그램 코드에서 레이어 모델 탐색 및 업데이트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3b4be16e9778ffe39e03e55254f6e38e64f3ad21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69286377a302fabc900fe4cf9384bb65d094a378
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214937"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>프로그램 코드에서 레이어 모델 탐색 및 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [탐색 및 업데이트 프로그램 코드에서 모델 계층](https://docs.microsoft.com/visualstudio/modeling/navigate-and-update-layer-models-in-program-code)합니다.  
-  
 이 항목에서는 프로그램 코드를 사용하여 탐색하고 업데이트할 수 있는 레이어 모델의 요소와 관계에 대해 설명합니다. 사용자의 관점에서 본 레이어 다이어그램에 대 한 자세한 내용은 참조 하세요. [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md) 하 고 [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)합니다.  
   
  이 항목에서 설명하는 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> 모델은 보다 일반적인 <xref:Microsoft.VisualStudio.GraphModel> 모델의 단순한 버전입니다. 작성 하는 경우는 [메뉴 명령 또는 제스처 확장이](../modeling/add-commands-and-gestures-to-layer-diagrams.md)를 사용 하 여는 `Layer` 모델. 작성 하는 경우는 [레이어 유효성 검사 확장](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)를 사용 하는 것이 쉽습니다는 `GraphModel`합니다.  

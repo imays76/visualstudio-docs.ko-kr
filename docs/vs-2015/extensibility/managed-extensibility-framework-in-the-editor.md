@@ -1,7 +1,7 @@
 ---
 title: Managed Extensibility Framework 편집기에서 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57c27b710e6d01c6aa378b00ef4c3b40afb12b14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7fb7214f4cd9d338c06e9f1eba5f1cc2c50fbc0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555739"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215672"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>편집기의 Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집기에서 Managed Extensibility Framework](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)합니다.  
-  
 편집기는 프레임 워크 MEF (Managed Extensibility) 구성 요소를 사용 하 여 빌드됩니다. 사용자 고유의 MEF 구성 요소 편집기를 확장을 빌드하고 코드 편집기 구성 요소도 사용할 수 있습니다.  
   
 ## <a name="overview-of-the-managed-extensibility-framework"></a>Managed Extensibility Framework 개요  

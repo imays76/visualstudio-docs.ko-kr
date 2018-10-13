@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::GetPort | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e39b6e5a-64eb-48cf-a53d-da4fdb968e2d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5aa2f90f13a452ba611b7bf66e809f6fef4b3239
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45498934579b5e5f0b62efcbab0f558e6bb2381e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221028"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProcess2::GetPort](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-getport)합니다.  
-  
 프로세스에서 실행 되는 포트를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

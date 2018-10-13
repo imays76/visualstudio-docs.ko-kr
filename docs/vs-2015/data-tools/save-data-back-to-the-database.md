@@ -1,7 +1,7 @@
 ---
 title: 데이터베이스에 데이터를 저장 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93af342cca97d1e116b122a1e5387be1c182a42a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554665"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215165"
 ---
 # <a name="save-data-back-to-the-database"></a>데이터를 다시 데이터베이스에 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터를 데이터베이스에 다시 저장](https://docs.microsoft.com/visualstudio/data-tools/save-data-back-to-the-database)합니다.  
-  
   
 데이터 집합에는 데이터의 메모리 내 복사본입니다. 해당 데이터를 수정할 경우 해당 변경 내용을 다시 데이터베이스에 저장 하는 것이 좋습니다. 이렇게 하면 세 가지 방법 중 하나에서:  
   

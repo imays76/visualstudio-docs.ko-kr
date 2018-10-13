@@ -1,7 +1,7 @@
 ---
 title: Visual C++ IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f4e4d59b57c61dea2c42b2b99714b8bf0bdf154
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543446"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212942"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual c + + Intellisense](https://docs.microsoft.com/visualstudio/ide/visual-cpp-intellisense)합니다.  
-  
 Visual Studio 2015에서 IntelliSense는 프로젝트의 파일과 단일 코드 파일에 사용할 수 있습니다. 플랫폼 간 프로젝트에서는 Android 또는 iOS 컨텍스트에 있는 경우에도 공유 코드 프로젝트의 .cpp 및 .c 파일에서 일부 IntelliSense 기능을 사용할 수 있습니다.  
   
 ## <a name="intellisense-features-in-c"></a>C++의 IntelliSense 기능  

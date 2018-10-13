@@ -1,7 +1,7 @@
 ---
 title: VisibilityConstraints 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fd6d6968984f0640dd73067c286a4259ade6745
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5b290884a2377cdaba573788f0881ec82a19cdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222380"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VisibilityConstraints 요소](https://docs.microsoft.com/visualstudio/extensibility/visibilityconstraints-element)합니다.  
-  
 VisibilityConstraints 요소는 정적 도구 모음 및 명령 그룹의 표시 여부를 결정합니다. 표시 여부는 처음에 의해 제어 됩니다는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSPackage를 로드 하지 않고 통합된 개발 환경 (IDE)입니다.  
   
 ## <a name="syntax"></a>구문  

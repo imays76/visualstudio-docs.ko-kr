@@ -1,7 +1,7 @@
 ---
 title: IDebugEnumField::GetValueFromStringCaseInsensitive | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b113966f30bbec62dbd9901594d01e7074d687ec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a89e2ccfadd9585fcf5de4e4e7c97198829c34ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564596"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211473"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugEnumField::GetValueFromStringCaseInsensitive](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive)합니다.  
-  
 이 메서드가 열거형 상수의 이름과 연관 된 값을 반환 하는 대/소문자 구분 검색을 사용 합니다.  
   
 ## <a name="syntax"></a>구문  

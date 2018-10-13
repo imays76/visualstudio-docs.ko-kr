@@ -1,7 +1,7 @@
 ---
 title: ManagedType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ecba4bff4d8a63ba7cd5e12d30983ae16b84505d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9c1c3c4d27a339311412fcac31006a244e3f52b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221379"
 ---
 # <a name="managedtype"></a>ManagedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ManagedType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/managedtype)합니다.  
-  
 관리 되는 형식 (메타 데이터 또는 네이티브 C#과 같은 언어의 메모리 및 리소스 관리 기능에 의해 정의 된 모든 기호)으로 식별 되는 `SymTagManagedType` 기호입니다.  
   
 ## <a name="properties"></a>속성  

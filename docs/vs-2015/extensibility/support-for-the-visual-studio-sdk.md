@@ -1,7 +1,7 @@
 ---
 title: Visual Studio SDK에 대 한 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05e5e4d30601c59d04a96cdca2e71609ea3e0bc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3e33a47052a399b0edac2bb4425c27872cb6b37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229205"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK 지원
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio SDK에 대 한 지원을](https://docs.microsoft.com/visualstudio/extensibility/support-for-the-visual-studio-sdk)합니다.  
-  
 몇 가지 지원 옵션은 Visual Studio 통합된 개발 환경 (IDE)를 확장 하는 방법에 대 한 질문이 있는 고객이 사용할 수 있습니다.  
   
 ## <a name="free-support"></a>무료 지원  

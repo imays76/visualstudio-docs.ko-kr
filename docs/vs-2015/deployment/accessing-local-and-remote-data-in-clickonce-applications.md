@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 응용 프로그램의 로컬 및 원격 데이터 액세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3659df70b6b253d0cf23bb8eb033709fc6916e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218845"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce 응용 프로그램의 로컬 및 원격 데이터 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [로컬 및 ClickOnce 응용 프로그램의 원격 데이터 액세스](https://docs.microsoft.com/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)합니다.  
-  
 대부분 응용 프로그램에서는 데이터를 사용하거나 생성합니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에서는 로컬에서 또는 원격으로 데이터를 읽고 쓰는 다양한 옵션을 제공합니다.  
   
 ## <a name="local-data"></a>로컬 데이터  
@@ -75,7 +73,7 @@ ms.locfileid: "47564351"
 #### <a name="data-directory-and-application-versions"></a>데이터 디렉터리 및 응용 프로그램 버전  
  각 응용 프로그램 버전에는 다른 버전에서 격리된 고유한 데이터 디렉터리가 있습니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에서는 응용 프로그램에 런타임에 새 데이터 파일을 만들 위치가 있도록 데이터 파일이 배포에 포함되는지와 관계없이 이 디렉터리를 만듭니다. 새 응용 프로그램 버전이 설치될 때 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에서는 기존 데이터 파일이 원래 배포에 포함되거나 응용 프로그램에서 만들어지는지와 관계없이 모든 기존 데이터 파일을 이전 버전의 데이터 디렉터리에서 새 버전의 데이터 디렉터리로 복사합니다.  
   
- 데이터 파일에 새 버전과 다른 이전 응용 프로그램 버전의 해시 값이 있으면 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에서는 이전 버전의 파일을 새 버전의 서버로 바꿉니다. 또한 이전 버전의 응용 프로그램이 새 버전 배포에 포함된 것과 같은 이름의 파일을 만들었다면 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에서는 새 파일로 이전 버전 파일을 덮어씁니다. 두 경우에 모두 이전 파일은 데이터 디렉터리 내의 `.pre`하위 디렉터리에 포함되므로 응용 프로그램이 마이그레이션을 위해 계속 이전 데이터에 액세스할 수 있습니다.  
+ 데이터 파일에 새 버전과 다른 이전 응용 프로그램 버전의 해시 값이 있으면 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에서는 이전 버전의 파일을 새 버전의 서버로 바꿉니다. 또한 이전 버전의 응용 프로그램이 새 버전 배포에 포함된 것과 같은 이름의 파일을 만들었다면 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 에서는 새 파일로 이전 버전 파일을 덮어씁니다. 두 경우에 모두 이전 파일은 데이터 디렉터리 내의 `.pre`하위 디렉터리에 포함되므로 응용 프로그램이 마이그레이션을 위해 계속 이전 데이터에 액세스할 수 있습니다.  
   
  세부적인 데이터 마이그레이션이 필요하면 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 API를 사용하여 이전 데이터 디렉터리에서 새 데이터 디렉터리로 사용자 지정 마이그레이션을 수행할 수 있습니다. <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A>을 사용하여 사용 가능한 다운로드가 있는지 테스트하거나, <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> 또는 <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>를 사용하여 업데이트를 다운로드하고 업데이트가 완료된 후 사용자 지정 데이터 마이그레이션 작업을 수행해야 합니다.  
   
@@ -84,7 +82,7 @@ ms.locfileid: "47564351"
   
  격리된 저장소는 모든 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에서 작동합니다. 격리된 저장소는 추가적인 권한을 부여할 필요 없이 부분적으로 신뢰할 수 있는 응용 프로그램에서도 작동합니다. 응용 프로그램이 부분 신뢰로 실행되어야 하지만 응용 프로그램 특정 데이터를 유지 관리해야 하면 격리된 저장소를 사용해야 합니다.  
   
- 자세한 내용은 [격리 된 저장소](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)합니다.  
+ 자세한 내용은 [격리된 저장소](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)을 참조하세요.  
   
 ### <a name="other-local-files"></a>기타 로컬 파일  
  응용 프로그램이 보고서, 이미지, 음악 등의 최종 사용자 데이터를 사용하거나 저장해야 하면 응용 프로그램에는 로컬 파일 시스템에서 데이터를 읽고 쓸 수 있는 <xref:System.Security.Permissions.FileIOPermission> 이 필요합니다.  
@@ -93,7 +91,7 @@ ms.locfileid: "47564351"
  나중에 응용 프로그램이 원격 웹 사이트에서 고객 데이터나 시장 정보와 같은 정보를 검색해야 할 수 있습니다. 이 섹션에서는 원격 데이터를 검색하는 가장 일반적인 방법을 설명합니다.  
   
 ### <a name="accessing-files-by-using-http"></a>HTTP를 사용하여 파일에 액세스  
- <xref:System.Net.WebClient> 네임스페이스의 <xref:System.Net.HttpWebRequest> 또는 <xref:System.Net> 클래스를 사용하여 웹 서버에서 데이터에 액세스할 수 있습니다. 데이터는 정적 파일이거나 원시 텍스트 또는 XML 데이터를 반환하는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램일 수 있습니다. 데이터가 XML 형식이면 포함된 <xref:System.Xml.XmlDocument> 메서드가 URL을 인수로 사용하는 <xref:System.Xml.XmlDocument.Load%2A> 클래스를 사용하여 데이터를 가장 빠르게 검색할 수 있습니다. 예를 들어 참조 [DOM에 XML 문서 읽어오기](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)합니다.  
+ <xref:System.Net.WebClient> 네임스페이스의 <xref:System.Net.HttpWebRequest> 또는 <xref:System.Net> 클래스를 사용하여 웹 서버에서 데이터에 액세스할 수 있습니다. 데이터는 정적 파일이거나 원시 텍스트 또는 XML 데이터를 반환하는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램일 수 있습니다. 데이터가 XML 형식이면 포함된 <xref:System.Xml.XmlDocument> 메서드가 URL을 인수로 사용하는 <xref:System.Xml.XmlDocument.Load%2A> 클래스를 사용하여 데이터를 가장 빠르게 검색할 수 있습니다. 예제를 보려면 [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)를 참조하십시오.  
   
  응용 프로그램이 HTTP를 통해 원격 데이터에 액세스할 경우 보안을 고려해야 합니다. 기본적으로 응용 프로그램 배포 방법에 따라 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램의 네트워크 리소스 액세스가 제한될 수 있습니다. 악의적인 프로그램이 권한 있는 원격 데이터에 액세스하지 못하도록 차단하거나 사용자 컴퓨터를 사용하여 네트워크의 다른 컴퓨터를 공격하지 못하도록 차단하기 위해 이러한 제한이 적용됩니다.  
   
@@ -105,7 +103,7 @@ ms.locfileid: "47564351"
 |파일 공유 설치|웹 서버에 액세스할 수 없습니다.|  
 |CD-ROM 설치|웹 서버에 액세스할 수 있습니다.|  
   
- 보안 제한으로 인해 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램이 웹 서버에 액세스할 수 없으면 응용 프로그램은 해당 웹 사이트에 대한 <xref:System.Net.WebPermission>을 어설션해야 합니다. 에 대 한 보안 권한을 높이 방법에 대 한 자세한 내용은 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 참조 하세요 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)합니다.  
+ 보안 제한으로 인해 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램이 웹 서버에 액세스할 수 없으면 응용 프로그램은 해당 웹 사이트에 대한 <xref:System.Net.WebPermission> 을 어설션해야 합니다. 에 대 한 보안 권한을 높이 방법에 대 한 자세한 내용은 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 참조 하세요 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)합니다.  
   
 ### <a name="accessing-data-through-an-xml-web-service"></a>XML Web Service를 통해 데이터에 액세스  
  데이터를 XML Web service로 노출하면 XML Web service 프록시를 통해 데이터에 액세스할 수 있습니다. 프록시는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]을(를) 사용하여 만든 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 클래스입니다. 고객 검색, 주문 제출 등의 XML Web service 작업은 프록시에서 메서드로 노출됩니다. 이를 통해 원시 텍스트 또는 XML 파일보다 훨씬 더 쉽게 Web services를 사용할 수 있습니다.  

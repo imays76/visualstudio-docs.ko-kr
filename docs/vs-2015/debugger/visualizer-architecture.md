@@ -1,7 +1,7 @@
 ---
 title: 시각화 도우미 아키텍처 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 086877250d513d8f8b033c9085bd1ff80ce3fa87
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc9f03650e4e99b7a7277f183993b84d79a67ab2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553293"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217128"
 ---
 # <a name="visualizer-architecture"></a>시각화 도우미 아키텍처
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시각화 도우미 아키텍처](https://docs.microsoft.com/visualstudio/debugger/visualizer-architecture)합니다.  
-  
 디버거 시각화 도우미의 아키텍처는 두 부분으로 구성되어 있습니다.  
   
 -   합니다 *디버거 쪽* Visual Studio 디버거 내에서 실행 됩니다. 디버거 쪽 코드에서는 시각화 도우미의 사용자 인터페이스를 만들고 표시합니다.  

@@ -1,7 +1,7 @@
 ---
 title: UML 다이어그램을 이미지 파일로 내보내기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 72df20d9d696d6a7febc7931e7a1e342a07632a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93972dfda37b47c3d8b7ae25cfdf8e69578af1ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228360"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>UML 다이어그램을 이미지 파일로 내보내기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [내보내기 UML 다이어그램을 이미지 파일로](https://docs.microsoft.com/visualstudio/modeling/export-uml-diagrams-to-image-files)합니다.  
-  
 UML 문서를 내보낼 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로그램 제어에서 사용 되는 이미지입니다. 예를 들어 자동 문서 생성의 일부로 이 작업을 수행할 수 있습니다.  
   
  수동으로 문서를 이미지로 내보내려는 경우 다이어그램에서 모양을 복사하고 Word 등의 다른 프로그램에 붙여넣을 수 있습니다. 문서를 XPS 형식으로 인쇄할 수도 있습니다. 자세한 내용은 [다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)합니다.  

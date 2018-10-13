@@ -1,7 +1,7 @@
 ---
 title: 디자이너를 사용 하 여 SQL database 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 7a641edfbe1b584d324bffca3404a1f7cd3a72ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541459"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220755"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>디자이너를 사용 하 여 SQL database 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디자이너를 사용 하 여 SQL 데이터베이스를 만들](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-designer)합니다.  
-  
   
 테이블 추가 및 만들기 및 SQL Server Express LocalDB의 로컬 데이터베이스 파일을 업데이트 하려면 Visual Studio를 사용 하 여 열 정의와 같은 기본 작업을 탐색할 수 있습니다. 이 연습을 마친 후 로컬 데이터베이스를 사용하여 고급 기능을 알아보고 다른 연습을 미리 준비할 수 있습니다.  
   

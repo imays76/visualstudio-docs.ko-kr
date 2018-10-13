@@ -1,7 +1,7 @@
 ---
 title: 데이터 (디버그 인터페이스 액세스 SDK) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a52548ba72a9c3ef35397b2e16085da61c2ae3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37e06bf6fb74355690310dc6549b6333d7223a73
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216670"
 ---
 # <a name="data-debug-interface-access-sdk"></a>데이터(디버그 인터페이스 액세스 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터 (디버그 인터페이스 액세스 SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/data-debug-interface-access-sdk)합니다.  
-  
 모든 변수를 매개 변수, 지역 변수, 전역 변수 및 클래스 멤버 등으로 식별 됩니다 `SymTagData` 기호입니다. 상수 값 (`LocIsConstant`)는이 형식을 사용 하 여 식별 됩니다.  
   
 ## <a name="properties"></a>속성  

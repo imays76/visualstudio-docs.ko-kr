@@ -1,7 +1,7 @@
 ---
 title: 코드 및 텍스트 편집기에서 코드 작성 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220534"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>코드 및 텍스트 편집기에서 코드 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 및 텍스트 편집기에서 코드 작성](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor)합니다.
-
 Visual Studio 편집기에서는 코드를 더 쉽게 작성 및 관리할 수 있는 다양한 기능을 제공합니다. 개요를 사용하여 여러 코드 블록을 확장 및 축소할 수 있습니다. IntelliSense, **개체 브라우저**및 호출 계층 구조를 사용하여 사용 중인 코드에 대해 자세히 알아볼 수 있습니다. **다음 탐색**, **정의로 이동**및 **모든 참조 찾기**와 같은 기능을 사용하여 코드 내부를 탐색할 수 있습니다. 코드 조각이 있는 코드 블록을 삽입할 수 있고 **사용법에서 생성**과 같은 기능을 사용하여 코드를 생성할 수 있습니다. 이전에 Visual Studio 2015 편집기를 사용한 적이 없을 경우 빠른 개요를 보려면 [코드 편집](https://www.visualstudio.com/features/ide-vs) 을 참조하세요.  
 
  다양한 방법으로 코드를 볼 수 있습니다. 솔루션의 클래스 뷰를 표시하려면 **클래스 뷰** 창을 열거나 **솔루션 탐색기** 의 클래스 파일 아래의 노드를 확장합니다.  

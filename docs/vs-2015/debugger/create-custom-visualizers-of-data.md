@@ -1,7 +1,7 @@
 ---
 title: 데이터의 사용자 지정 시각화 도우미 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a025068d1657d9feb569a77731aa8bab517bae2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fccaad8cb22bdd5193f2a674c5a9c6bafb49a7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217635"
 ---
 # <a name="create-custom-visualizers-of-data"></a>데이터의 사용자 지정 시각화 도우미 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터의 사용자 지정 시각화 도우미 만들기](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data)합니다.  
-  
 시각화 도우미는 구성 요소는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 디버거 사용자 인터페이스입니다. A *시각화 도우미* 대화 상자 또는 해당 데이터 형식에 적합 한 방식으로 변수나 개체를 표시할 다른 인터페이스를 만듭니다. 예를 들어 HTML 시각화 도우미는 HTML 문자열을 해석하고 브라우저 창에서와 마찬가지로 그 결과를 표시합니다. 비트맵 시각화 도우미는 비트맵 구조를 해석하고 그 구조가 표현하는 그래픽을 표시합니다. 일부 시각화 도우미에서는 데이터를 볼 수 있을 뿐만 아니라 수정할 수도 있습니다.  
   
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 디버거에는 6가지 표준 시각화 도우미가 포함되어 있습니다. 텍스트, HTML, XML 및 JSON 시각화 도우미, 문자열 개체에서 사용 되는 WPF 개체 시각적 트리의; 속성을 표시 하는 것에 대 한 WPF 트리 시각화 도우미 및 DataSet, DataView 및 DataTable 개체에 대해 작동 하는 데이터 집합 시각화 도우미입니다. 향후 Microsoft Corporation의 추가 시각화 도우미를 다운로드할 수 있으며 타사와 커뮤니티의 시각화 도우미도 사용 가능합니다. 또한 자신만의 시각화 도우미를 직접 작성하여 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 디버거에 설치할 수 있습니다.  

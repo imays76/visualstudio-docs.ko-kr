@@ -1,7 +1,7 @@
 ---
 title: Interop 어셈블리를 사용 하 여 명령 상태 결정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 22648a85f8c8774896914b9519aa3d10d3dc732d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd5e3cfc8aa330ef9f41835594b14bb29d254ac3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222428"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>Interop 어셈블리를 사용하여 명령 상태 결정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [결정 명령 상태에서 사용 하 여 Interop 어셈블리](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-command-status-by-using-interop-assemblies)합니다.  
-  
 VSPackage 해야 기록해 상태의 명령 처리할 수 있습니다. VSPackage 내에서 처리 명령을 설정 또는 해제 하는 경우 환경이 확인할 수 없습니다. 이 명령은 상태에 대 한 환경에 알림을 보내야 VSPackage의 경우, 예를 들어 일반 상태 같은 명령은 **잘라내기**를 **복사본**, 및 **붙여넣기**합니다.  
   
 ## <a name="status-notification-sources"></a>상태 알림 원본  

@@ -1,7 +1,7 @@
 ---
 title: 옵션 페이지 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6e26a534f7bb02d0a309d436d9b62927639a6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: bd04ea51fb73f6f095c9f5bcddce735deb06066e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219702"
 ---
 # <a name="creating-an-options-page"></a>옵션 페이지 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션 페이지 만들기](https://docs.microsoft.com/visualstudio/extensibility/creating-an-options-page)합니다.  
-  
 이 연습을 검토 하 고 속성을 설정 하려면 속성 표를 사용 하는 간단한 도구/옵션 페이지를 만듭니다.  
   
  이러한 속성을 저장 및 설정 파일에서 복원할 다음이 단계를 수행 하 고 확인할 [Creating a Settings Category](../extensibility/creating-a-settings-category.md)합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_backendminor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3169318bc1f73a8e23e0b4f72f1683a23e8b99c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 494d0b8311de61dcff3c6adbb5edbb46e01cb50e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219130"
 ---
 # <a name="idiasymbolgetbackendminor"></a>IDiaSymbol::get_backEndMinor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiasymbol:: Get_backendminor](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-backendminor)합니다.  
-  
 컴파일러의 백 엔드 부 버전 번호를 검색합니다.  
   
 ## <a name="syntax"></a>구문  

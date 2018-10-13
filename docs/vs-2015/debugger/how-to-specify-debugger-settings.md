@@ -1,7 +1,7 @@
 ---
 title: '방법: 디버거 설정 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cbfe565c66650b310c674ef22ecee74ea31a498
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7251c2cf2c2b8d6879a85dfdc4427dc456fbf8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564334"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215555"
 ---
 # <a name="how-to-specify-debugger-settings"></a>방법: 디버거 설정 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 디버거 설정 지정](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-debugger-settings)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 변수 표시 방법, 특정 경고 표시 여부, 중단점 설정 방법, 프로그램 중단이 실행 프로그램에 미치는 영향 등을 포함하여 디버거 작동에 대한 여러 가지 설정을 지정할 수 있습니다. 디버거 설정에 지정 하는 **옵션** 대화 상자.  
   
 ### <a name="to-set-debugger-options"></a>디버거 옵션을 설정하려면  
@@ -50,7 +48,7 @@ ms.locfileid: "47564334"
   
 3.  에 **디버깅** 폴더 옵션의 범주를 선택 합니다.  
   
-     에 있는 가장 일반적인 옵션을 **일반** 범주입니다. 자세한 내용은 [옵션 대화 상자, 디버깅, 일반](../debugger/general-debugging-options-dialog-box.md)합니다.  
+     에 있는 가장 일반적인 옵션을 **일반** 범주입니다. 자세한 내용은 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)을 참조하세요.  
   
 4.  원하는 옵션을 선택하거나 해제합니다. 옵션에 대한 도움말을 보려면 F1 키를 누르십시오.  
   

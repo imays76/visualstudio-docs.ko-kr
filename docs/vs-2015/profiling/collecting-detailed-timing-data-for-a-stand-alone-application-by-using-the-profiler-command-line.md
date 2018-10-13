@@ -1,7 +1,7 @@
 ---
 title: 프로파일러 명령줄을 사용하여 독립 실행형 응용 프로그램에 대한 자세한 타이밍 데이터 수집 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 100c7396e5532d09a8035ca1260be26e0e2e8636
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50eb6705cb1aef0bb1cca3de5716656c77191c3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227430"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 응용 프로그램에 대한 자세한 타이밍 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Profiler 명령줄을 사용 하는 독립 실행형 응용 프로그램에 대 한 자세한 타이밍 데이터 수집](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line)합니다.  
-  
 이 섹션에서는 명령줄 도구에서 계측 방법을 사용하여 클라이언트(독립 실행형) 구성 요소에 대한 자세한 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.  
   
 ## <a name="common-tasks"></a>일반 작업  

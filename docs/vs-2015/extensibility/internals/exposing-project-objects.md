@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 개체 노출 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5514589660df1850dc2f5d9fce3079f6769ec06e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3cc9f3ffc7869506dc5ac46a715c9bd7b042a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210799"
 ---
 # <a name="exposing-project-objects"></a>프로젝트 개체 노출
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 개체 노출](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-project-objects)합니다.  
-  
 프로젝트 형식 사용자 지정 자동화 인터페이스를 사용 하 여 프로젝트에 대 한 액세스를 허용 하려면 자동화 개체를 제공할 수 있습니다. 모든 프로젝트 형식 표준 제공할 예정입니다 <xref:EnvDTE.Project> 에서 액세스 되는 자동화 개체 <xref:EnvDTE.Solution>, IDE에서 열려 있는 모든 프로젝트의 컬렉션이 들어 있는입니다. 프로젝트의 각 항목에 의해 노출 되 될를 <xref:EnvDTE.ProjectItem> 개체를 사용 하 여 액세스할 <xref:EnvDTE.Project.ProjectItems>합니다. 이러한 표준 automation 개체 외에도 프로젝트 프로젝트 관련 자동화 개체를 제공할 수 있습니다.  
   
  사용자 지정 루트 수준의 자동화 하는 개체에 액세스할 수 있습니다 사용 하 여 루트 DTE 개체에서 바인딩된을 만들 수 있습니다 `DTE.<customeObjectName>` 또는 `DTE.GetObject(“<customObjectName>”)`합니다. 예를 들어, Visual c + + DTE를 사용 하 여 액세스할 수 있는 "VCProjects"를 호출 하는 c + + 프로젝트 관련 프로젝트 컬렉션을 만듭니다. VCProjects 또는 DTE 합니다. GetObject("VCProjects") 합니다. 또한는 Project.CodeModel ProjectItem.Object 및 ProjectItem.FileCodeModel를 노출 하는 프로젝트 항목, 가장 많이 파생 된 개체에 대 한 쿼리 될 수 있는 프로젝트 형식에 대해 고유한 Project.Object를 만들 수 있습니다.  
