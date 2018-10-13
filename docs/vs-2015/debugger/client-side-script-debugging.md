@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 쪽 스크립트 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5ef2f9640922b1379d30979519761ca009e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554284"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288030"
 ---
 # <a name="client-side-script-debugging"></a>클라이언트 쪽 스크립트 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [클라이언트 쪽 스크립트 디버깅](https://docs.microsoft.com/visualstudio/debugger/client-side-script-debugging)합니다.  
-  
 Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트에서 오류를 찾아 수정하기 위한 포괄적인 디버깅 환경을 제공합니다.  
   
 ## <a name="opening-script-documents"></a>스크립트 문서 열기  
@@ -67,14 +65,14 @@ Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트
 ## <a name="debugging-ajax-script-applications"></a>AJAX 스크립트 응용 프로그램 디버깅  
  AJAX 사용 웹 응용 프로그램은 스크립트 코드를 매우 많이 사용하며 특수한 디버깅 문제를 발생시키는 경우가 많습니다. AJAX 디버깅 기술에 대한 자세한 내용은 다음 항목을 참조하십시오.  
   
- [디버깅 및 Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)합니다.  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)에서는 원하는 모든 스크립트 문서를 열 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ASP.NET 및 AJAX 응용 프로그램 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [스크립트 디버깅의 제한 사항](../debugger/limitations-on-script-debugging.md)   
  [변수 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [직접 실행 창](../ide/reference/immediate-window.md)   
- [디버깅 및 Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
 
 
 

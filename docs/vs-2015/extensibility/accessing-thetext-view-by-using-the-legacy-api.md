@@ -1,7 +1,7 @@
 ---
 title: 레거시 API를 사용 하 여 텍스트 보기에 액세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a65dcf8c67169e26fa508dfa7043717ea919df7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 943a55f09404224ec3d9b793c2ff473b90a66f0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552319"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296194"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 텍스트 보기에 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 API를 사용 하 여 텍스트 뷰 액세스](https://docs.microsoft.com/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api)합니다.  
-  
 텍스트 뷰는 텍스트 버퍼에 저장 되는 텍스트를 표시 합니다. 다음 섹션에 나와 있는 것 처럼 기존 API를 사용 하 여 텍스트 보기에 액세스할 수 있습니다.  
   
 ## <a name="text-view-object"></a>텍스트 뷰 개체  

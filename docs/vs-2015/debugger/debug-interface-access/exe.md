@@ -1,7 +1,7 @@
 ---
 title: Exe | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b72a1bb8448373d090f6c71e97c7c53933f7c544
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdfa22db349718a217017684f9c816d7bba436a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552725"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291507"
 ---
 # <a name="exe"></a>Exe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Exe](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/exe)합니다.  
-  
 .exe 또는.dll 파일의 전역 범위를 나타내므로 Exe가 유일한 어휘를 포함 하지 않고 기호 또는 부모 클래스입니다. 하나의 기호는는 `SymTagExe` 파일당 태그입니다. 합니다 [idiasession:: Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) 메서드 기호를 반환 합니다.  
   
 ## <a name="properties"></a>속성  

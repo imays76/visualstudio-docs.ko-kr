@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 및 Authenticode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,26 +24,24 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289487"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 및 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 및 Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode)합니다.  
-  
-Authenticode *는 업계 표준 암호화를 사용 하 여 응용 프로그램의 게시자의 신뢰성을 확인 하는 디지털 인증서로 응용 프로그램 코드에 서명 하는 Microsoft 기술입니다. 응용 프로그램 배포에 Authenticode를 사용 하 여 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 트로이 목마의 위험을 줄입니다. 트로이 목마는 악의적인 제3자가 신뢰할 수 있는 기존의 소스에서 온 적법한 프로그램처럼 속여 표시하는 바이러스 또는 기타 유해 프로그램입니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포에 디지털 인증서로 서명하는 것은 어셈블리와 파일이 손상되지 않았음을 확인하기 위한 선택적인 단계입니다.  
+Authenticode *는 업계 표준 암호화를 사용 하 여 응용 프로그램의 게시자의 신뢰성을 확인 하는 디지털 인증서로 응용 프로그램 코드에 서명 하는 Microsoft 기술입니다. 응용 프로그램 배포에 Authenticode를 사용하여 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 는 트로이 목마의 위험을 줄입니다. 트로이 목마는 악의적인 제3자가 신뢰할 수 있는 기존의 소스에서 온 적법한 프로그램처럼 속여 표시하는 바이러스 또는 기타 유해 프로그램입니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포에 디지털 인증서로 서명하는 것은 어셈블리와 파일이 손상되지 않았음을 확인하기 위한 선택적인 단계입니다.  
   
  다음 섹션에서는 Authenticode에 사용되는 서로 다른 유형의 디지털 인증서, CA(인증 기관)를 사용하여 인증서를 검증하는 방법, 인증서에서 타임스탬프의 역할, 인증서에 사용할 수 있는 저장소의 메서드에 대해 설명합니다.  
   
 ## <a name="authenticode-and-code-signing"></a>Authenticode 및 코드 서명  
  *디지털 인증서* 란 인증서가 발급된 게시자 및 인증서를 발급한 기관에 대해 설명하는 메타데이터와 함께 공개/개인 암호화 키 쌍을 포함하는 파일입니다.  
   
- 다양한 유형의 Authenticode 인증서가 있습니다. 각 인증서는 서로 다른 서명 유형에 맞게 구성되어 있습니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램의 경우 코드 서명을 위한 유효한 Authenticode 인증서가 반드시 필요합니다. 로그인 하려는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 다른 종류의 예: 디지털 전자 메일 인증서, 인증서를 사용 하 여 응용 프로그램 작동 하지 것입니다. 자세한 내용은 [코드 서명 소개](http://go.microsoft.com/fwlink/?LinkId=179452)를 참조하세요.  
+ 다양한 유형의 Authenticode 인증서가 있습니다. 각 인증서는 서로 다른 서명 유형에 맞게 구성되어 있습니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램의 경우 코드 서명을 위한 유효한 Authenticode 인증서가 반드시 필요합니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램에 다른 유형의 인증서(예: 디지털 전자 메일 인증서)로 서명하려고 시도하면 작동하지 않습니다. 자세한 내용은 [코드 서명 소개](http://go.microsoft.com/fwlink/?LinkId=179452)를 참조하세요.  
   
  세 가지 방법 중 하나로 코드 서명을 위한 인증서를 가져올 수 있습니다.  
   
@@ -76,7 +74,7 @@ Authenticode *는 업계 표준 암호화를 사용 하 여 응용 프로그램�
   
 ### <a name="storing-certificates"></a>인증서 저장  
   
--   인증서를 .pfx 파일로 파일 시스템에 저장하거나 키 컨테이너 내부에 저장할 수 있습니다. Windows 도메인의 사용자는 여러 키 컨테이너를 가질 수 있습니다. 사용자가 .pfx에 저장해야 한다고 지정하지 않는 한, 기본적으로 MakeCert.exe는 인증서를 개인 키 컨테이너에 저장합니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포를 만들기 위한 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 도구인 Mage.exe 및 MageUI.exe에서는 어떤 방식으로 저장된 인증서든 사용할 수 있습니다.  
+-   인증서를 .pfx 파일로 파일 시스템에 저장하거나 키 컨테이너 내부에 저장할 수 있습니다. Windows 도메인의 사용자는 여러 키 컨테이너를 가질 수 있습니다. 사용자가 .pfx에 저장해야 한다고 지정하지 않는 한, 기본적으로 MakeCert.exe는 인증서를 개인 키 컨테이너에 저장합니다. [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 배포를 만들기 위한 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 도구인 Mage.exe 및 MageUI.exe에서는 어떤 방식으로 저장된 인증서든 사용할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   

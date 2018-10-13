@@ -1,7 +1,7 @@
 ---
 title: Visual Studio API를 사용 하 여 UML 모델 열기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b492f7c7bcb1c6b33ee7f07b1f054027057835aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e92ece9a8097071c8d8cef5b77ca9fdb242d677f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552693"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292710"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Visual Studio API를 사용하여 UML 모델 열기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio API를 사용 하 여 UML 모델 열기](https://docs.microsoft.com/visualstudio/modeling/open-a-uml-model-by-using-the-visual-studio-api)합니다.  
-  
 API를 사용하여 Visual Studio 사용자 인터페이스에서 모델 및 다이어그램을 열 수도 있습니다.  
   
  사용자에게 표시하지 않고 프로그램 코드에서 모델을 읽기만 하려는 경우 다음 메서드를 사용할 수 있습니다.  

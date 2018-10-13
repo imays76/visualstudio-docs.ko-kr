@@ -1,7 +1,7 @@
 ---
 title: FuncDebugStart | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a0c18b0eed351e059f39adfdc9b66aff6509c7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76c88ba68de21eb9f3327953a31776870dc51507
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293802"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [FuncDebugStart](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/funcdebugstart)합니다.  
-  
 함수에 정의 된 지점에는 디버깅 하는 경우 지점에 대 한 기호도 식별 되는 시작 하는 것을 `SymTagFuncDebugStart` 태그입니다.  
   
 ## <a name="properties"></a>속성  

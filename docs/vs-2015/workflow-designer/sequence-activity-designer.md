@@ -1,7 +1,7 @@
 ---
 title: 활동 디자이너를 시퀀스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: d3f005ba61ad93eb2b1dd2663831b33a133b64e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d676c4270d636d0869d5b2f95f7a265bf0a085ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282778"
 ---
 # <a name="sequence-activity-designer"></a>Sequence 활동 디자이너
 <xref:System.Activities.Statements.Sequence> 활동에는 순서대로 실행되는 정렬된 자식 활동 컬렉션이 들어 있습니다.  

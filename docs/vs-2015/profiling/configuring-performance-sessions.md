@@ -1,7 +1,7 @@
 ---
 title: 성능 세션 구성 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e804e1638574d6918a1db4effbfbc1c20c80f63e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b858d7a521f53876e185d8d4deb2b3467833d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285339"
 ---
 # <a name="configuring-performance-sessions"></a>성능 세션 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 세션 구성](https://docs.microsoft.com/visualstudio/profiling/configuring-performance-sessions)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구를 사용하여 다양한 응용 프로그램 종류에 대한 성능 데이터를 수집할 수 있습니다. 이 섹션에서는 성능 세션 및 대상 이진 파일의 성능 Wizardand 속성을 사용하여 관심 있는 데이터를 수집하도록 프로파일링 도구를 구성하는 방법을 보여 줍니다. 프로파일링 도구 구성 속성을 사용하여 프로파일링 실행에서 수집되는 데이터의 양을 제어할 수도 있습니다. 자세한 내용은 [데이터 수집 제어](../profiling/controlling-data-collection.md)를 참조하세요.  
   
 > [!NOTE]

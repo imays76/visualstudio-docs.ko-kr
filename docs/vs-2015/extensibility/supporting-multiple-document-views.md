@@ -1,7 +1,7 @@
 ---
 title: 여러 문서 보기 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c1dc6614e90b0f4830991116440e94048145bae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543609"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282702"
 ---
 # <a name="supporting-multiple-document-views"></a>여러 문서 보기 지원
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Supporting Multiple Document Views](https://docs.microsoft.com/visualstudio/extensibility/supporting-multiple-document-views)합니다.  
-  
 편집기에 대 한 별도 문서 데이터 및 문서 보기 개체를 만들어 문서 둘 이상의 뷰를 제공할 수 있습니다. 추가 문서 보기를는 유용할 수 있는 경우에 따라 다음과 같습니다.  
   
 -   새 창 지원: 편집기에서 엽니다 기간이 이미 사용자를 선택 하 여 새 창을 열 수 있도록 원하는 편집기는 동일한 형식의 두 개 이상의 보기를 제공 하는 **새 창** 명령을 **창** 메뉴.  

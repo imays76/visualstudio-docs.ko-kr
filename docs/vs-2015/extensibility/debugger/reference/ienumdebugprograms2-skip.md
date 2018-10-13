@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPrograms2::Skip | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b283858b-b375-4760-bfec-ab37de89958d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa500bf653fc9cf0356d5eebbd6ea66299766ddc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0ce7d173af3f9b4cd8c454895798011c5f08575
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287314"
 ---
 # <a name="ienumdebugprograms2skip"></a>IEnumDebugPrograms2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IEnumDebugPrograms2::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugprograms2-skip)합니다.  
-  
 지정 된 개수의 요소를 건너뜁니다.  
   
 ## <a name="syntax"></a>구문  

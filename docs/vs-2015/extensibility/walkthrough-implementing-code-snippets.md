@@ -1,7 +1,7 @@
 ---
 title: '연습: 코드 조각 구현 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d0ef82422b5f9cd419bf31e8b92b789fac1226
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b11234cd9dda19d010eb8408c359067697d95d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287159"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>연습: 코드 조각 구현
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 코드 조각 구현](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-implementing-code-snippets)합니다.  
-  
 코드 조각을 작성 하 고 확장의 사용자가 자신의 코드에 추가할 수 있도록 편집기 확장에 포함할 수 있습니다.  
   
  코드 조각에는 코드 또는 파일에 통합할 수 있는 기타 텍스트의 일부입니다. 특정 프로그래밍 언어에 대 한 등록 된 모든 조각을 보려면 합니다 **도구** 메뉴에서 클릭 **코드 조각 관리자**합니다. 코드 조각에서 원하는 위치를 마우스 오른쪽 단추로 파일에서 코드 조각을 삽입 하려면 클릭 **코드 조각 삽입** 하거나 **감싸기**원하는 코드 조각을 찾아서 두 번 클릭 합니다. 코드 조각의 관련 부분을 수정 하 고 enter 또는 ESC 키 계약에 동의를 탭 또는 SHIFT + TAB 키를 누릅니다. 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조하세요.  

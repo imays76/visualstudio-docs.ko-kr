@@ -1,7 +1,7 @@
 ---
 title: 다중 인스턴스 도구 창 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286366"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>다중 인스턴스 도구 창 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [다중 인스턴스 도구 창 만들기](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window)합니다.  
-  
 여러 인스턴스가 동시에 열릴 수 있도록 도구 창을 프로그래밍할 수 있습니다. 기본적으로 도구 창을 열고 하나의 인스턴스만을 가질 수 있습니다.  
   
  다중 인스턴스 도구 창을 사용 하는 경우에 몇 가지 관련된 정보 소스를 동시에 표시할 수 있습니다. 예를 들어, 여러 줄에 배치할 수 있습니다 <xref:System.Windows.Forms.TextBox> 프로그래밍 세션 중 몇 가지 코드 조각을 동시에 사용할 수 있도록 다중 인스턴스 도구 창에서 제어 합니다. 또한 예를 들어 배치할 수 있습니다는 <xref:System.Windows.Forms.DataGrid> 컨트롤 및 드롭다운 목록 상자에 다중 인스턴스 도구 창 여러 실시간 데이터 소스를 동시에 추적할 수 있도록 합니다.  

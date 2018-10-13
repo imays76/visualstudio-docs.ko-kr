@@ -1,7 +1,7 @@
 ---
 title: '연습: 내 첫 번째 WPF 데스크톱 응용 프로그램2 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5994c17ff4e7e6071a22d235ab6888727b9ed026
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47593274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289921"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>연습: 내 첫 WPF 데스크톱 응용 프로그램
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 내 첫 WPF 데스크톱 응용 프로그램 2](https://docs.microsoft.com/visualstudio/designers/walkthrough-my-first-wpf-desktop-application2)합니다.  
-  
 name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 개발에 대해 소개 합니다. XAML 태그, 코드 숨김, 응용 프로그램 정의, 컨트롤, 레이아웃, 데이터 바인딩, 스타일 등 대부분의 WPF 데스크톱 응용 프로그램에 공통된 요소를 포함하는 기본 응용 프로그램을 만듭니다.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> 응용 프로그램 프로젝트 만들기  

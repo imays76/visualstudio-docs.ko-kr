@@ -1,7 +1,7 @@
 ---
 title: Menus 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e2192b3c23d15843180108079eb0bd78686b90d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eac871afd7498a8eb06aee6954e9589abe53d545
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550534"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297747"
 ---
 # <a name="menus-element"></a>Menus 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Menus 요소](https://docs.microsoft.com/visualstudio/extensibility/menus-element)합니다.  
-  
 모든 메뉴 및 VSPackage 구현 하는 도구 모음을 정의 합니다.  
   
 ## <a name="syntax"></a>구문  

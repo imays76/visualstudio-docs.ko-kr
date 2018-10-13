@@ -1,7 +1,7 @@
 ---
 title: '연습: 그래픽 정보를 프로그래밍 방식으로 캡처 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5807dcc1b5d4aef42d698fa051f425a17fab7f8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543597"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298157"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>연습: 프로그래밍 방식으로 그래픽 정보 캡처
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 프로그래밍 그래픽 정보 캡처](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information-programmatically)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단을 사용하여 Direct3D 앱에서 그래픽 정보를 프로그래밍 방식으로 캡처할 수 있습니다.  
   
  프로그래밍 방식 캡처는 다음과 같은 시나리오에서 유용합니다.  
@@ -113,7 +111,7 @@ ms.locfileid: "47543597"
     ```  
   
     > [!NOTE]
-    >  경우 `DXGIGetDebugInterface1` 반환 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), 그래픽 진단 모드로 앱이 실행 중인지 확인 하십시오 (Alt + F5에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    >  `DXGIGetDebugInterface1` 이 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`)를 반환하는 경우 앱이 그래픽 진단에서 실행되고 있는지 확인합니다( [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 Alt+F5)로 앱을 실행해야 합니다.  
   
 ### <a name="capturing-graphics-information"></a>그래픽 정보 캡처  
  이제 유효한 `IDXGraphicsAnalysis` 인터페이스가 있으므로 `BeginCapture` 및 `EndCapture` 를 사용하여 그래픽 정보를 캡처할 수 있습니다.  
@@ -154,7 +152,7 @@ ms.locfileid: "47543597"
   
  컴퓨터에서 실행 중인 앱에서 원격 캡처 API를 사용하려면 먼저 해당 컴퓨터에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]용 원격 도구를 설치해야 합니다. 원격 도구 버전마다 지원하는 하드웨어 플랫폼이 다릅니다. 원격 도구 설치 방법에 대한 자세한 내용은 Microsoft 다운로드 웹 사이트에서 [원격 도구 다운로드 페이지](http://go.microsoft.com/fwlink/p/?LinkId=246691) 를 참조하세요.  
   
- 그렇지 않으면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 32비트 앱용 원격 캡처를 수행하기 위한 필수 구성 요소를 설치합니다.  
+ 그렇지 않으면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 32비트 앱용 원격 캡처를 수행하기 위한 필수 구성 요소를 설치합니다.  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 비롯한 대부분의 Windows 데스크톱 앱이 ARM 장치용 [!INCLUDE[win8](../includes/win8-md.md)]에서 지원되지 않으므로 ARM 장치에서 그래픽 진단을 캡처하는 유일한 방법은 프로그래밍 캡처 API와 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]용 원격 도구를 함께 사용하는 것입니다.  
@@ -207,7 +205,7 @@ ms.locfileid: "47543597"
   
 ## <a name="see-also"></a>참고 항목  
  [연습: 그래픽 정보 캡처](../debugger/walkthrough-capturing-graphics-information.md)   
- [그래픽 정보 캡처](../debugger/capturing-graphics-information.md)   
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [명령줄 캡처 도구](../debugger/command-line-capture-tool.md)
 
 

@@ -1,7 +1,7 @@
 ---
 title: 텍스트 템플릿에서 Visual Studio 또는 다른 호스트 액세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5bcd1811db000b39f7c9897f1329434af9fe5258
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3eb61ab5d372d02581c68391d125c7def23a402a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298482"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>텍스트 템플릿에서 Visual Studio 또는 다른 호스트 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에 액세스 또는 다른 호스트 텍스트 템플릿에서](https://docs.microsoft.com/visualstudio/modeling/accessing-visual-studio-or-other-hosts-from-a-text-template)합니다.  
-  
 텍스트 템플릿에서 같은 템플릿을 실행 하는 호스트에 의해 노출 되는 속성과 메서드를 사용할 수 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]입니다.  
   
  이 일반 텍스트 템플릿, 없습니다 전처리 된 텍스트 템플릿 적용 됩니다.  

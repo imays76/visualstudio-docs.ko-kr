@@ -1,7 +1,7 @@
 ---
 title: CorrelatesOn 정의 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 01af296f4cb7dcaa7785438c54527337c110f609
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3171efb985eec54d0e935d2e8499c69631c6dfc8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285820"
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn 정의 대화 상자
 **CorrelatesOn** 대화 상자에서 사용 됩니다 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 편집 하는 <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> 의 속성을 <xref:System.ServiceModel.Activities.Receive> 활동. [!INCLUDE[crdefault](../includes/crdefault-md.md)] 합니다 [수신](../workflow-designer/receive-activity-designer.md) 항목입니다.  

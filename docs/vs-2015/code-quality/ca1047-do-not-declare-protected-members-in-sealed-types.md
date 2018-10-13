@@ -1,7 +1,7 @@
 ---
 title: 'CA1047: protected 멤버를 sealed 형식 선언 하지 마십시오 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a9c61d3910a550f957b9940c1280f4fd2c17bdc
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 2cb15dc0befc6ede58f6f66788cb9bf8a3629f73
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287874"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: protected 멤버를 sealed 형식으로 선언하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1047: protected 멤버를 sealed 형식 선언 하지 마십시오](https://docs.microsoft.com/visualstudio/code-quality/ca1047-do-not-declare-protected-members-in-sealed-types)합니다.
-
 |||
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|

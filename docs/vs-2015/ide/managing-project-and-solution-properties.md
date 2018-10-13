@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 및 솔루션 속성 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bca50ff8128782bda1841120996f3f3dda6d4ad2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43b46fc40da93352c4748662b66df91f0d25802b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290552"
 ---
 # <a name="managing-project-and-solution-properties"></a>프로젝트 및 솔루션 속성 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 및 솔루션 속성 관리](https://docs.microsoft.com/visualstudio/ide/managing-project-and-solution-properties)합니다.  
-  
 프로젝트에는 컴파일, 디버깅, 테스트 및 배포의 다양한 측면을 제어하는 속성이 있습니다. 일부 속성은 모든 프로젝트 형식 간에 공통적으로 적용되고 일부 속성은 특정 언어 또는 플랫폼에 고유합니다. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 속성을 선택하거나 메뉴 모음의 **QuickLaunch** 검색 상자에 속성을 입력하여 프로젝트 속성에 액세스합니다.  
   
  ![프로젝트 상황에 맞는 메뉴](../ide/media/vs2015-proj-prop-menu.gif "vs2015_proj_prop_menu")  

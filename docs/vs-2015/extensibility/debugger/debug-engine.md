@@ -1,7 +1,7 @@
 ---
 title: 디버그 엔진 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89f2c2fafb397246a8a2df8dab7d59a361edc11c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 781712ad9ef199073028b62a3fc5a50b4c2cad77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282687"
 ---
 # <a name="debug-engine"></a>디버그 엔진
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버그 엔진](https://docs.microsoft.com/visualstudio/extensibility/debugger/debug-engine)합니다.  
-  
 디버그 엔진 (DE) 작동 인터프리터 또는 운영 시스템 실행 제어, 중단점 및 식 평가 같은 디버깅 서비스를 제공 합니다. DE는 디버그 중인 프로그램의 상태를 모니터링 하는 일을 담당 합니다. 이 위해 수행 하는 DE 어떤 방법이 지원 되는 런타임에서 사용 가능한 런타임에서 CPU 또는 Api에서 제공 하는지 여부를 사용 합니다.  
   
  예를 들어, 공용 언어 런타임 (CLR) ICorDebugXXX 인터페이스를 통해 실행 중인 프로그램을 모니터링 하는 메커니즘을 제공 합니다. CLR을 지 원하는 DE 디버깅 중인 관리 코드 프로그램을 추적 하기 위해 적절 한 ICorDebugXXX 인터페이스를 사용 합니다. 이러한 정보를 전달 하는 세션 디버그 관리자 (SDM) 상태 변경 후 통신을 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  

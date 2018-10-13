@@ -1,7 +1,7 @@
 ---
 title: 문서 잠금 소유자 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cf3e532a7a20be746405a7c5f90bb2c345a36cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba494d38384263570289b3f84b90fc8b5b5931e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296727"
 ---
 # <a name="document-lock-holder-management"></a>문서 잠금 소유자 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [문서 잠금 소유자 관리](https://docs.microsoft.com/visualstudio/extensibility/document-lock-holder-management)합니다.  
-  
 문서 테이블 실행 (RDT)는 열려 있는 문서 및 편집 잠금을의 개수를 유지 합니다. 문서 창에 열려 있는 문서를 표시 하는 사용자 없이 백그라운드에서 편집할 프로그래밍 방식으로 때 문서는 RDT에 대해 한 편집 잠금을 배치할 수 있습니다. 이 기능은 그래픽 사용자 인터페이스를 통해 여러 파일을 수정 하는 디자이너에서 자주 사용 됩니다.  
   
 ## <a name="document-lock-holder-scenarios"></a>문서 잠금 소유자 시나리오  

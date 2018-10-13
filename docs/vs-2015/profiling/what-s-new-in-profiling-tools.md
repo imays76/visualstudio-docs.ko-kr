@@ -1,7 +1,7 @@
 ---
 title: 프로파일링 도구의 새로운 기능 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ab7fe2362bbf9779854bb1c79bfb4de9ffd1600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5cb1d89409b38fea4e3745de7a619e913c6122f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290162"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>새로운&#39;프로 파일링 도구 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로 파일링의 새로운](https://docs.microsoft.com/visualstudio/profiling/what-s-new-in-profiling-tools)합니다.  
-  
 Visual Studio 2015 업데이트 1 디버깅 및 진단의 모든 새로운 기능에 대한 자세한 내용은 [Visual Studio 2015 업데이트 1 릴리스 정보](https://www.visualstudio.com/news/vs2015-update1-vs#debug)를 참조하세요.  
   
  Visual Studio 2015 디버깅 및 진단의 모든 새로운 기능에 대한 자세한 내용은 [Visual Studio 2015 릴리스 정보](https://www.visualstudio.com/news/vs2015-vs#Debug)를 참조하세요.  
@@ -42,7 +40,7 @@ Visual Studio 2015 업데이트 1 디버깅 및 진단의 모든 새로운 기�
  이제 디버깅 하는 동안 새 **진단 도구** 창에서 진단 도구를 실행할 수 있습니다. 이 창은 자동으로 표시되지만 새 메뉴 항목 **진단 도구 표시** (바로 가기 키 **Ctrl+Alt+F2**)를 사용하여 열 수도 있습니다.  
   
 ## <a name="diagnostics-without-debugging-ui-and-hotkey-changes"></a>디버깅 UI 및 변경된 바로 가기 키를 사용하지 않고 진단  
- 디버깅 하지 않고 진단 실행,로 이동 **디버그 / 디버깅 하지 않고 진단 시작 도구** 또는 **디버그 / Profiler / 성능 Profiler...** . Visual Studio 2013이에서 찾을 **분석 / 성능 및 진단** 하거나 **디버그 / 성능 및 진단**합니다.  
+ 디버깅 하지 않고 진단 실행,로 이동 **디버그 / 디버깅 하지 않고 진단 시작 도구** 또는 **디버그 / Profiler / 성능 Profiler...** . Visual Studio 2013에서는 **분석/성능 및 진단** 또는 **디버그/성능 및 진단**에서 이 기능을 찾을 수 있습니다.  
   
  이제 **성능 탐색기** 를 **디버그/프로파일러/성능 탐색기**에서 찾을 수 있습니다. Visual Studio 2013에서는 **분석/프로파일러**에서 이 기능을 찾을 수 있습니다.  
   

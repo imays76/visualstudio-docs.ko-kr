@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 응용 프로그램 업데이트를 수행 하는 방법 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8011447de248c2dbcdbd513dc4e51106ceb3a568
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c2e135a2b872ecd389149626ac09caf02734f40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298027"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce에서 응용 프로그램 업데이트가 수행되는 방식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [어떻게 ClickOnce 수행 응용 프로그램 업데이트](https://docs.microsoft.com/visualstudio/deployment/how-clickonce-performs-application-updates)합니다.  
-  
 ClickOnce 응용 프로그램의 배포 매니페스트에 지정 된 파일 버전 정보를 사용 하 여 응용 프로그램의 파일을 업데이트할 것인지를 결정 합니다. ClickOnce 라는 기술을 사용 하 여 업데이트가 시작 된 후 *파일을 패치* 응용 프로그램 파일의 중복 다운로드를 방지 합니다.  
   
 ## <a name="file-patching"></a>파일 패치  

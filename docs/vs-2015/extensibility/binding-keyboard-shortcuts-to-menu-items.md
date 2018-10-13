@@ -1,7 +1,7 @@
 ---
 title: 메뉴 항목에 바로 가기 키 바인딩 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f661129a4706ce0ac501a5fbad9a7ce5a60e3127
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc5c937033087e3bea7b5326e90be64410fcfb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552496"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277474"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [메뉴 항목에 바로 가기 키 바인딩](https://docs.microsoft.com/visualstudio/extensibility/binding-keyboard-shortcuts-to-menu-items)합니다.  
-  
 바로 가기 키 사용자 지정 메뉴 명령을 바인딩할 바로.vsct 파일 패키지에 항목을 추가 합니다. 이 항목에서는 바로 가기 키 사용자 지정 단추, 메뉴 항목 또는 도구 모음 명령에 매핑하는 방법 및 기본 편집기에서 키보드 매핑을 적용 하거나 사용자 지정 편집기를 제한 하는 방법을 설명 합니다.  
   
  기존 Visual Studio 메뉴 항목에 바로 가기 키에 할당 하려면을 참조 하세요 [사용자 지정 바로 가기 키 식별 및](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)합니다.  

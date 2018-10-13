@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 데이터에 컨트롤 바인딩 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85bfcb03ea2f383d8f1517d17c866c2320891aaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a4143777e51a03867e94f1d4ebdd9c8182a5401
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291574"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 컨트롤 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 데이터에 컨트롤 바인딩](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)합니다.  
-  
   
 데이터를 컨트롤에 바인딩하여 응용 프로그램 사용자에게 데이터를 표시할 수 있습니다. 항목을 끌어 데이터 바인딩된 컨트롤 이러한를 만들 수 있습니다 합니다 **데이터 원본** 창 디자인 화면 또는 Visual Studio에서 화면에서 컨트롤입니다.  
   

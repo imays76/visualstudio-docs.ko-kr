@@ -1,7 +1,7 @@
 ---
 title: '방법: 클래스 다이어그램 사용자 지정(클래스 디자이너) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d55744331cfa0aa78649a3654d7863ecc2287835
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552444"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296181"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>방법: 클래스 다이어그램 사용자 지정(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 클래스 다이어그램 사용자 지정 (클래스 디자이너)](https://docs.microsoft.com/visualstudio/ide/how-to-customize-class-diagrams-class-designer)합니다.  
-  
 클래스 다이어그램에서 정보가 표시되는 방법을 변경할 수 있습니다. 디자인 화면의 전체 다이어그램 또는 개별 형식을 사용자 지정할 수 있습니다.  
   
  예를 들어 다이어그램의 어디에서나 전체 클래스 다이어그램의 확대/축소 수준을 조정하고, 개별 형식 멤버의 그룹화 및 정렬 방법을 변경하고, 관계를 숨기거나 표시하고, 개별 형식 또는 형식의 집합을 이동할 수 있습니다.  

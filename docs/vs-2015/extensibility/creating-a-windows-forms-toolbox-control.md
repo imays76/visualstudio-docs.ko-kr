@@ -1,7 +1,7 @@
 ---
 title: 도구 상자 컨트롤을 Forms는 Windows 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc1deab4439133eb43348289fcfbba204a1cf9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294218"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows Forms 도구 상자 컨트롤 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows Forms 도구 상자 컨트롤 만들기](https://docs.microsoft.com/visualstudio/extensibility/creating-a-windows-forms-toolbox-control)합니다.  
-  
 Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상자 컨트롤 항목 템플릿을 사용 하면 자동으로 추가 되는 컨트롤을 만듭니다는 **도구 상자** 확장이 설치 되는 경우. 이 항목에서는 템플릿을 사용 하 여 다른 사용자에 게 배포할 수 있는 간단한 카운터 컨트롤을 만드는 방법을 보여 줍니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
@@ -67,7 +65,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
     |`Button1`|**텍스트**|다시 설정|  
   
 ### <a name="coding-the-user-control"></a>사용자 정의 컨트롤 코딩  
- `Counter` 컨트롤은 카운터를 증가시키는 메서드, 카운터가 증가될 때마다 발생하는 이벤트, `Reset` 단추 및 현재 카운트, 표시 텍스트 및 `Reset` 단추의 표시/숨김 여부를 저장하는 속성 3개를 노출합니다. `ProvideToolboxControl` 특성의 위치를 결정 합니다 **도구 상자** 는 `Counter` 컨트롤이 나타납니다.  
+ `Counter` 컨트롤은 카운터를 증가시키는 메서드, 카운터가 증가될 때마다 발생하는 이벤트, `Reset` 단추 및 현재 카운트, 표시 텍스트 및 `Reset` 단추의 표시/숨김 여부를 저장하는 속성 3개를 노출합니다. `ProvideToolboxControl` 특성은 **도구 상자** 에서 `Counter` 컨트롤이 나타나는 위치를 결정합니다.  
   
 ##### <a name="to-code-the-user-control"></a>사용자 정의 컨트롤 코딩  
   
@@ -145,7 +143,7 @@ Visual Studio 확장성 도구 (VS SDK)에 포함 된 Windows Forms 도구 상�
   
     ```  
   
-8.  클래스 정의 바로 위의는 `ProvideToolboxControl` 특성 선언에서 첫 번째 매개 변수의 값을 변경 합니다 `"MyWinFormsControl.Counter"` 에 `"General"`입니다. **도구 상자**에서 컨트롤을 호스트할 항목 그룹의 이름이 설정됩니다.  
+8.  클래스 정의 바로 위의 `ProvideToolboxControl` 특성 선언에서 첫 번째 매개 변수 값을 `"MyWinFormsControl.Counter"` 에서 `"General"`로 변경합니다. **도구 상자**에서 컨트롤을 호스트할 항목 그룹의 이름이 설정됩니다.  
   
      다음 예제에서는 `ProvideToolboxControl` 특성 및 조정된 클래스 정의를 보여 줍니다.  
   

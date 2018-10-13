@@ -1,7 +1,7 @@
 ---
 title: 요소를 기호 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d36bcf22d012d4543267d1b57d41567baf3e85b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b436f200d6d3a1ef668967cf5dbb9cd934699976
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552451"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283636"
 ---
 # <a name="symbols-element"></a>Symbols 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Symbols 요소](https://docs.microsoft.com/visualstudio/extensibility/symbols-element)합니다.  
-  
 Guid 및 기타 VSCT 요소에서 사용 되는 Id를 정의 합니다. 비관리 코드에 대 한이 정보 일반적으로 제공 하 여 지정 된 헤더 파일에서 [Extern 요소](../extensibility/extern-element.md)합니다. 코드는이 정보를 정의 하는 기호 요소의 자식 요소를 관리 합니다.  
   
  기존.cto 파일에서.vsct 파일을 만든 경우 기호를 기호 요소의 자식으로 생성 됩니다. 자세한 내용은 참조 하세요. [방법: 만들기를 합니다. 기존 Vsct 파일입니다. Cto 파일](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)합니다.  

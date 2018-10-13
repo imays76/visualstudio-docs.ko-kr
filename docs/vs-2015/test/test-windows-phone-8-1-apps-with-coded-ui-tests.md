@@ -1,7 +1,7 @@
 ---
 title: 코딩된 UI 테스트를 사용하여 Windows UWP 및 8.1 Phone 앱 테스트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c9472346212d68b3ee682450995d55eb0a5ddd9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285937"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 Windows UWP 및 8.1 Phone 앱 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [테스트 Windows UWP 및 8.1 Phone 앱 코딩 된 UI 테스트를 사용 하 여](https://docs.microsoft.com/visualstudio/test/test-windows-phone-8-1-apps-with-coded-ui-tests)입니다.  
-  
 모바일 장치 또는 에뮬레이터에서 실행되는 UWP 앱 및 XAML 기반 Phone 8.1 앱에 대한 UI 테스트를 만드는 데 이 연습을 사용합니다.   
   
 ## <a name="create-a-simple-windows-phone-app"></a>간단한 Windows Phone 앱 만들기  

@@ -1,7 +1,7 @@
 ---
 title: 디버거를 사용한 예외 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285924"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>디버거를 사용한 예외 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 디버거를 사용한 예외 관리](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger)합니다.  
-  
 예외는 프로그램이 실행되는 동안 발생하는 오류 상태를 나타냅니다. 가장 중요한 예외에 응답하는 처리기를 제공할 수 있고 제공해야 하지만, 확인하려는 예외에 대해 디버거가 중단되도록 설정하는 방법을 알아야 합니다.  
   
  예외가 발생하면 디버거가 예외 메시지를 출력 창에 씁니다. 다음과 같은 경우에 실행이 중단될 수 있습니다.  
@@ -58,7 +56,7 @@ ms.locfileid: "47552299"
   
 -   예외가 발생하면 즉시 처리기가 호출되기 전에 실행이 중단되도록 디버거가 설정된 경우  
   
--   설정한 경우 [Just My Code](../debugger/just-my-code.md), 사용자 코드에서 처리 되지 않은 모든 예외에서 중단 되도록 디버거가 설정 되 고 있습니다.  
+-   [Just My Code](../debugger/just-my-code.md)을 설정했으며, 사용자 코드에서 처리되지 않은 예외가 발견되면 중단되도록 디버거가 설정된 경우  
   
 > [!NOTE]
 >  ASP.NET에는 브라우저에 오류 페이지를 표시하는 최상위 예외 처리기가 있습니다. **내 코드만** 이 설정되지 않은 경우에는 실행이 중단되지 않습니다. 예제를 보려면 아래의 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 를 참조하세요.  

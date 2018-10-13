@@ -1,7 +1,7 @@
 ---
 title: FunctionType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4df43e751a07e9116f442a04c1fd934792c24504
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e56c038ef0dc3cb9b60f060914923cae3070894f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298092"
 ---
 # <a name="functiontype"></a>FunctionType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [FunctionType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/functiontype)합니다.  
-  
 각 고유 함수 서명으로 식별 되는 `SymTagFunctionType` 기호입니다. 각 매개 변수에 사용 하 여 클래스 자식 기호로 식별 되는 `SymTagFunctionArgType` 태그입니다.  
   
 ## <a name="properties"></a>속성  

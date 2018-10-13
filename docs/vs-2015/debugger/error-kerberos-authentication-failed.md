@@ -1,7 +1,7 @@
 ---
 title: ': Kerberos 인증 오류 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed475ecf2ac0bd62dd710832540d599cb367aedc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1fbea1d9279bb85c82a534873941f74ac7586e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293204"
 ---
 # <a name="error-kerberos-authentication-failed"></a>오류: Kerberos 인증에 실패했습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: Kerberos 인증에 실패 했습니다](https://docs.microsoft.com/visualstudio/debugger/error-kerberos-authentication-failed)합니다.  
-  
 원격 디버깅을 시작할 때 다음 오류 메시지가 나타날 수 있습니다.  
   
 ```  
@@ -71,7 +69,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ## <a name="see-also"></a>참고 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

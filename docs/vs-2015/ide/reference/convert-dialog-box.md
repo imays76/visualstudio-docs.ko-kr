@@ -1,7 +1,7 @@
 ---
 title: 변환 대화 상자 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c11336399ec9bda3743c4ae858e99c98050f8ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d08c18daf91e9fa4d879d9a2f12242a1c75b8ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542083"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282999"
 ---
 # <a name="convert-dialog-box"></a>변환 대화 상자
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [변환 대화 상자](https://docs.microsoft.com/visualstudio/ide/reference/convert-dialog-box)합니다.  
-  
   
 **변환** 대화 상자에서는 변환 도구를 선택하여 이전 프로젝트에서 새 프로젝트를 만들 수 있습니다(예: Visual Basic 6 프로젝트에서 [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] 프로젝트 만들기). Visual Studio의 이전 버전에서 만든 프로젝트를 업그레이드하려면 CodePlex 웹 사이트에서 제공하는 [Visual Studio 프로젝트 변환기](http://go.microsoft.com/fwlink/?LinkID=246465)를 사용할 수도 있습니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: AL(어셈블리 링커) 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f30928d989ebceef0c3d786396d78f0a126dc96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf0f5995b9f0e2fca0d909b9d0da0dbe6b386978
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552238"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280477"
 ---
 # <a name="al-assembly-linker-task"></a>AL(어셈블리 링커) 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [AL (어셈블리 링커) 작업](https://docs.microsoft.com/visualstudio/msbuild/al-assembly-linker-task)합니다.  
-  
   
 AL 작업은 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]와 함께 배포되는 도구인 AL.exe를 래핑합니다. 이 어셈블리 링커 도구는 모듈 또는 리소스 파일에 해당하는 하나 이상의 파일에 있는 매니페스트로 어셈블리를 생성하는 데 사용됩니다. 컴파일러 및 개발 환경에서 이러한 기능을 이미 제공할 수 있으므로 이 작업을 직접 사용할 필요가 없는 경우가 많습니다. 어셈블리 링커는 혼합 언어 개발에서 생성될 수 있는 것과 같은 여러 구성 요소 파일에서 단일 어셈블리를 만들어야 하는 개발자에게 가장 유용합니다. 이 작업은 모듈을 단일 어셈블리 파일로 결합하지 않습니다. 결과 어셈블리가 올바르게 로드되려면 여전히 개별 모듈이 분산되어야 하고 사용 가능해야 하기 때문입니다. AL.exe에 대한 자세한 내용은 [Al.exe(어셈블리 링커)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)를 참조하세요.  
   

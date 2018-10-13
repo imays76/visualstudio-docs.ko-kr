@@ -1,7 +1,7 @@
 ---
 title: 명령줄에서 프로파일링 도구 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b827f7cca775e544049a23bcc8b0a431d11b332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c9f056bb95458ef8bbe9c221fdfbbfaa322e9e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298391"
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>명령줄에서 프로파일링 도구 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로 파일링 도구에서 명령줄 사용](https://docs.microsoft.com/visualstudio/profiling/using-the-profiling-tools-from-the-command-line)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 명령줄 도구를 사용하면 명령 프롬프트에서 응용 프로그램을 프로파일링하고 배치 파일 및 스크립팅을 통해 프로파일링을 자동화할 수 있습니다. 또한 명령 프롬프트에서 보고서 파일을 생성할 수 있습니다. 간단한 독립 실행형 프로파일러를 사용하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 설치되어 있지 않은 컴퓨터에서 데이터를 수집할 수 있습니다.  
   
 > [!NOTE]

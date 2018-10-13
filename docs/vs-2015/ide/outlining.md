@@ -1,7 +1,7 @@
 ---
 title: 개요 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 939bb5ac1188a54217339c1bf3e9e3a828493d90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542610"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282518"
 ---
 # <a name="outlining"></a>개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [개요](https://docs.microsoft.com/visualstudio/ide/outlining)합니다.  
-  
 더하기 기호(+) 아래에 표시되도록 코드 영역을 축소하여 일부 코드를 뷰에서 숨길 수 있습니다. 더하기 기호를 클릭하면 축소된 영역이 확장됩니다. 또는 Ctrl+M+M을 눌러 영역을 축소한 다음 Ctrl+M+M을 눌러 다시 확장할 수 있습니다. 코드 바로 왼쪽에 표시되는 개요 여백의 영역에서 아무 줄이나 두 번 클릭하여 개요 영역을 축소할 수도 있습니다. 축소된 영역을 마우스로 가리키면 축소된 영역의 내용을 도구 설명으로 확인할 수 있습니다.  
   
  여백을 마우스로 가리키면 개요 여백의 영역도 강조 표시됩니다. 일부 색 구성에서는 기본 강조 색이 다소 희미하게 보일 수도 있습니다. **도구/옵션/환경/글꼴 및 색/축소 가능한 영역**에서 변경할 수 있습니다.  

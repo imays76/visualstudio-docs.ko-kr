@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monitoring Agent를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b85b115d7599cf6762806076494c862a5711bbb3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3dcaf561e54f160e19e2c330486179609c810109
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286743"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio 2017에서 최신 설명서를 참조 하세요 [Microsoft Monitor
 > [!NOTE]
 >  **IntelliTrace 독립 실행형 수집기**를 사용하면 대상 환경을 변경하지 않고 원격 컴퓨터의 웹, SharePoint, WPF 및 Windows Forms 앱에 대해 IntelliTrace 진단 및 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 **Monitor** 모드로 실행하는 경우에 비해 독립 실행형 수집기가 성능에 더 큰 영향을 줍니다. 참조 [IntelliTrace 독립 실행형 수집기를 사용 하 여](../debugger/using-the-intellitrace-stand-alone-collector.md)입니다.  
   
- System Center 2012를 사용하는 경우 Microsoft Monitoring Agent와 Operations Manager를 함께 사용하면 문제에 대한 경고를 받고 저장된 IntelliTrace 로그의 링크를 사용하여 Team Foundation Server 작업 항목을 만들 수 있습니다. 그런 다음 추가 디버깅을 위해 이러한 작업 항목을 다른 사용자에게 할당할 수 있습니다. 참조 [개발 프로세스와 Operations Manager 통합](http://technet.microsoft.com/library/jj614609.aspx) 하 고 [Microsoft Monitoring Agent를 사용 하 여 모니터링](http://technet.microsoft.com/library/dn465153.aspx)합니다.  
+ System Center 2012를 사용하는 경우 Microsoft Monitoring Agent와 Operations Manager를 함께 사용하면 문제에 대한 경고를 받고 저장된 IntelliTrace 로그의 링크를 사용하여 Team Foundation Server 작업 항목을 만들 수 있습니다. 그런 다음 추가 디버깅을 위해 이러한 작업 항목을 다른 사용자에게 할당할 수 있습니다. [개발 프로세스와 Operations Manager 통합](http://technet.microsoft.com/library/jj614609.aspx) 및 [Microsoft Monitoring Agent를 사용하여 모니터링](http://technet.microsoft.com/library/dn465153.aspx)을 참조하세요.  
   
  시작하기 전에 작성 및 배포된 코드와 일치하는 소스와 기호가 있는지 확인합니다. 그러면 IntelliTrace 로그에서 진단 이벤트 디버깅 및 검색을 시작할 때 응용 프로그램 코드로 직접 이동할 수 있습니다. Visual Studio에서 배포된 코드에 대해 일치하는 소스를 자동으로 찾아서 열 수 있도록[빌드를 설정](../debugger/diagnose-problems-after-deployment.md) 합니다.  
   
@@ -48,7 +48,7 @@ Visual Studio 2017에서 최신 설명서를 참조 하세요 [Microsoft Monitor
   
 1.  다음 사항을 확인합니다.  
   
-    -   웹 서버에서 실행 중인 [지원 되는 버전의 인터넷 정보 서비스 (IIS)](http://technet.microsoft.com/library/dn465154.aspx)합니다.  
+    -   웹 서버에서 [지원되는 버전의 IIS(인터넷 정보 서비스)](http://technet.microsoft.com/library/dn465154.aspx)를 실행 중입니다.  
   
     -   웹 서버에 .NET Framework 3.5, 4 또는 4.5가 설치되어 있습니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: '방법: 사용자 계정으로 작업자 프로세스 실행 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,19 +25,17 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08ac00384110cc73175286365fef6ee4b67a0170
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a07e492bf8c3ae71b430acd5bde69a852b96baee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280191"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>방법: 사용자 계정으로 작업자 프로세스 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전을 찾을 수 있습니다 [방법: 실행 된 작업자 프로세스 사용자 계정으로](https://docs.microsoft.com/visualstudio/debugger/how-to-run-the-worker-process-under-a-user-account)입니다.  
-  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스(aspnet_wp.exe 또는 w3wp.exe)를 사용자 계정으로 실행할 수 있도록 컴퓨터를 설정하려면 다음 단계를 따르십시오.  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스(aspnet_wp.exe 또는 w3wp.exe)를 사용자 계정으로 실행할 수 있도록 컴퓨터를 설정하려면 다음 단계를 따르세요.  
   
 ## <a name="procedure"></a>프로시저  
   
@@ -73,7 +71,7 @@ ms.locfileid: "47544032"
     net start w3svc  
     ```  
   
-6.  CONFIG 폴더와 같은 경로에 있는 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 폴더를 찾습니다. 임시를 마우스 오른쪽 단추로 클릭 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 선택한 파일 폴더 **속성** 바로 가기 메뉴.  
+6.  CONFIG 폴더와 같은 경로에 있는 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 폴더를 찾습니다. Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 폴더를 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **속성** 을 선택합니다.  
   
 7.  **Temporary ASP.NET Files 속성** 대화 상자에서 **보안** 탭을 클릭합니다.  
   

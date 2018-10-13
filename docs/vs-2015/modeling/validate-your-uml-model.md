@@ -1,7 +1,7 @@
 ---
 title: UML 모델 유효성 검사 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 42e0733668a1f96dc1881d4d4d58a575eeb9eb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292697"
 ---
 # <a name="validate-your-uml-model"></a>UML 모델 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 모델 유효성 검사](https://docs.microsoft.com/visualstudio/modeling/validate-your-uml-model)합니다.  
-  
 Visual Studio에서 그릴 수 있는 일부 UML 모델은 프로젝트에서 잘못된 것으로 간주할 수 있습니다. 예를 들어 사용 사례의 행위자를 나타내는 수명선이 있는 시퀀스 다이어그램에 항상 사용 사례가 연결되도록 할 수 있습니다. 설치 또는 정의할 수 있습니다 *제약 조건* 이와 같은 요구 사항에 맞게 팀 데 도움이 되는 합니다. 제약 조건은 사용자가 모델을 저장하거나 열 때 적용할 수 있는 메뉴 명령으로 호출할 수 있습니다.  
   
  제약 조건은 팀에서 UML 모델을 해석 및 사용하는 방법에 따라 달라지므로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에는 제공되지 않습니다. 그러나 고유한 제약 조건을 정의하고 다른 사용자가 정의한 제약 조건을 설치할 수 있습니다. 참조 제약 조건을 정의 및 패키지에 배포 하는 방법에 알아보려면 [UML 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md)합니다.  

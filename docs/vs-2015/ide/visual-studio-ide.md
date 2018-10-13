@@ -1,7 +1,7 @@
 ---
 title: Visual Studio IDE | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98d0da464c5c156d959a05410326cebd4cd870f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292788"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio IDE 설명서](https://docs.microsoft.com/visualstudio/ide/index)합니다.
-
 Microsoft Visual Studio 2015는 계획 단계에서 UI 디자인, 코딩, 테스트, 디버그, 코드 품질 및 성능 분석, 고객에게 배포 및 사용량에 대한 원격 분석 수집에 이르기까지 소프트웨어를 만들기 위한 도구 제품군입니다. 이러한 도구는 가능한 한 매끄럽게 작동하도록 설계되었으며, 모두 Visual Studio IDE(통합 개발 환경)를 통해 노출됩니다.
 
 Visual Studio를 사용하여 모바일 클라이언트용 단순한 스토어 앱과 게임에서 엔터프라이즈 및 데이터 센터를 지원하는 대규모의 복잡한 시스템에 이르기까지 많은 종류의 응용 프로그램을 만들 수 있습니다. 만들 수 있습니다.
@@ -36,9 +33,9 @@ Visual Studio를 사용하여 모바일 클라이언트용 단순한 스토어 �
 
 - 게임 및 Xbox를 포함 하 여, DirectX를 사용 하 여 Windows 장치의 다양 한 그래픽 위주 응용 프로그램.
 
-Visual Studio는 기본적으로 C#, C 및 C++, JavaScript, F# 및 Visual Basic을 지원합니다. Visual Studio 작동을 통해서는 Unity와 같은 타사 응용 프로그램에 잘 통합 된 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 확장 및 Apache Cordova 통해 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). 특수 작업을 수행하는 사용자 지정 도구를 만들어 Visual Studio를 직접 확장할 수 있습니다.
+Visual Studio는 기본적으로 C#, C 및 C++, JavaScript, F# 및 Visual Basic을 지원합니다. Visual Studio는 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 확장을 통해서는 Unity와 같은 타사 응용 프로그램과, [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)를 통해서는 Apache Cordova와 잘 작동하고 통합됩니다. 특수 작업을 수행하는 사용자 지정 도구를 만들어 Visual Studio를 직접 확장할 수 있습니다.
 
-Visual Studio를 사용한 경험이 없는 경우 사용 하 여 기본 사항을 알아봅니다 우리의 [Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md) 자습서 및 연습 합니다.
+전에 Visual Studio를 사용해 보지 않았다면 [Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md) 자습서 및 연습에서 기본 사항에 대해 알아보세요.
 
 Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 면 참조 [Visual Studio 2015의 새로운](../what-s-new-in-visual-studio-2015.md)합니다.
 
@@ -55,20 +52,20 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 ### <a name="signing-in"></a>로그인
  Visual Studio를 처음 시작할 때 Microsoft 계정이나 회사 또는 학교 계정으로 로그인할 수 있습니다. 로그인을 하면 창 레이아웃 등 여러 장치 간에 설정을 동기화하고 Azure 구독 및 Visual Studio Team Services와 같이 필요할 수 있는 서비스에 자동으로 연결할 수 있습니다. 구독 기반 라이선스가 있는 경우 라이선스 토큰을 최신 상태로 유지하기 위해 정기적으로 Visual Studio에 로그인해야 합니다. 제품 키 라이선스가 있는 경우 로그인할 필요가 없지만 로그인하면 더 편리하게 Azure, Office 365, Salesforce.com에서 Visual Studio Team Services 및 사용자 계정에 연결할 수 있습니다. 자세한 내용은 [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)을 참조하세요.
 
- 여러 개의 Visual Studio Team Services 계정, Azure 계정 또는 MSDN 구독이 있는 경우 연결하여 한 번의 로그인으로 모든 계정의 리소스와 서비스에 액세스할 수 있습니다. 자세한 내용은 [여러 사용자 계정으로 작업](../ide/work-with-multiple-user-accounts.md)을 참조하세요.
+ 여러 개의 Visual Studio Team Services 계정, Azure 계정 또는 MSDN 구독이 있는 경우 연결하여 한 번의 로그인으로 모든 계정의 리소스와 서비스에 액세스할 수 있습니다. 자세한 내용은 [Work with multiple user accounts](../ide/work-with-multiple-user-accounts.md)을 참조하세요.
 
 ### <a name="staying-up-to-date"></a>최신 정보
  제목 표시줄의 오른쪽 위에 있는 알림 아이콘은 Visual Studio 또는 설치된 관련 구성 요소에 대한 업데이트가 있을 경우 알려줍니다. 이러한 알림을 해제할지 또는 관련 작업을 수행할지를 선택할 수 있습니다. 자세한 내용은 [Visual Studio 알림](../ide/visual-studio-notifications.md)을 참조하세요.
 
 ### <a name="finding-things-and-getting-help"></a>항목 찾기 및 도움말 보기
- 합니다 [빠른 실행](../ide/reference/quick-launch-environment-options-dialog-box.md) 아래에 표시 된 창은 Visual Studio 명령, 도구, 기능, 찾기 및 바로 가기 키 또는 메뉴 위치를 알 수 없는 경우 등에 신속 하 게 합니다. 찾으려는 내용을 입력하기만 하면 빠른 실행에서 관련 링크가 제공됩니다.
+ 바로 가기 키 또는 메뉴 위치를 모르는 경우 아래에 표시된 [빠른 실행](../ide/reference/quick-launch-environment-options-dialog-box.md) 창을 통해 Visual Studio 명령, 도구, 기능 등을 빠르게 찾을 수 있습니다. 찾으려는 내용을 입력하기만 하면 빠른 실행에서 관련 링크가 제공됩니다.
 
  !['새 프로젝트'의 빠른 실행 결과](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
  MSDN은 Microsoft 기술 문서 웹 사이트입니다. 지금 이 페이지도 MSDN에서 읽고 있습니다. Visual Studio에서 **F1** 키를 눌러 활성 창에 대한 MSDN 도움말 페이지로 이동할 수 있습니다. 코드 편집기에서 **F1** 키를 눌러 API 또는 현재 캐럿 위치의 키워드에 대한 MSDN 도움말 페이지로 이동할 수도 있습니다. 예를 들어 C# 파일에서 임의 위치나 끝에 캐럿을 배치를 `System.String` 선언인 누릅니다 **F1** 에 대 한 MSDN 도움말 페이지로 이동할 <xref:System.String>합니다.
 
 ### <a name="giving-feedback"></a>피드백 제공
- 원할 경우 언제든지 Visual Studio에 대한 피드백을 쉽게 보낼 수 있습니다. **빠른 실행** 옆의 제목 표시줄에 있는 피드백 아이콘을 클릭한 다음 **문제 보고** 또는 **제안하기**를 클릭합니다. Visual Studio의 시험판 버전에는 **이 제품 평가** 옵션도 있습니다. Microsoft는 이러한 의견을 모두 확인하고 제품을 개선하는 데 사용합니다. 자세한 내용은 [의견 보내기](../ide/talk-to-us.md)를 참조하세요.
+ 원할 경우 언제든지 Visual Studio에 대한 피드백을 쉽게 보낼 수 있습니다. **빠른 실행** 옆의 제목 표시줄에 있는 피드백 아이콘을 클릭한 다음 **문제 보고** 또는 **제안하기**를 클릭합니다. Visual Studio의 시험판 버전에는 **이 제품 평가** 옵션도 있습니다. Microsoft는 이러한 의견을 모두 확인하고 제품을 개선하는 데 사용합니다. 자세한 내용은 [Talk to Us](../ide/talk-to-us.md)을 참조하세요.
 
 ### <a name="personalizing-the-ide"></a>IDE 개인 설정
  개발 스타일에 맞게 창 레이아웃을 사용자 지정할 수 있습니다. 언제든지 창을 도킹하거나 부동 창으로 만들거나 숨길 수 있으며 전체 화면 모드로 편집기를 실행할 수도 있습니다. 특정 컨텍스트에 필요한 창만 표시하는 사용자 지정 창 레이아웃을 여러 개 만들고 저장할 수 있습니다. 예를 들어 코드 편집기만 표시되도록 전체 화면 레이아웃을 만들 수 있습니다. 또한 디버깅 및 팀 작업을 위해 다양한 레이아웃을 만들 수 있습니다. 자세한 내용은 [창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)을 참조하세요.
@@ -94,7 +91,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
  ![Visual Studio 새 프로젝트 대화 상자](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
 
 ## <a name="designing-the-user-interface"></a>사용자 인터페이스 디자인
- 디자이너는 코드를 작성하지 않고도 사용자 인터페이스를 만들 수 있게 해주는 직관적인 도구입니다. 목록 상자, 일정 및 단추와 같은 UI 컨트롤을 끌 수는 [도구 상자](../ide/reference/toolbox.md) 창 또는 대화 상자를 나타내는 디자인 화면으로 창입니다. 코드를 작성하지 않고도 요소의 크기를 조정하고 요소를 다시 정렬할 수 있습니다. 디자이너는 사용자 인터페이스가 있는 모든 프로젝트 형식에 대해 포함됩니다.
+ 디자이너는 코드를 작성하지 않고도 사용자 인터페이스를 만들 수 있게 해주는 직관적인 도구입니다. [Toolbox](../ide/reference/toolbox.md) 창에서 창 또는 대화 상자를 나타내는 디자인 화면으로 목록 상자, 일정 및 단추와 같은 UI 컨트롤을 끌어다 놓을 수 있습니다. 코드를 작성하지 않고도 요소의 크기를 조정하고 요소를 다시 정렬할 수 있습니다. 디자이너는 사용자 인터페이스가 있는 모든 프로젝트 형식에 대해 포함됩니다.
 
  프로젝트에 XAML 기반 사용자 인터페이스가 있는 경우 기본 디자이너는 Visual Studio와 매끄럽게 작동하는 정교한 그래픽 도구인 Blend for Visual Studio입니다.
 
@@ -119,7 +116,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
  텍스트 편집기는 보다 효율적인 코드를 더 빠르게 작성할 수 있도록 도와주는 많은 생산성 기능이 포함된 대화형(원할 경우)입니다. 기능은 언어에 따라 달라지며, 기능을 설정하거나 해제하기 위해 언어를 사용할 필요가 없습니다(빠른 실행에서 "편집기" 입력). 몇 가지 일반적인 생산성 기능은 다음과 같습니다.
 
-1.  [리팩터링](../ide/refactoring-in-visual-studio.md) 선택한 코드 줄을 다른 위치, 함수 매개 변수 다시 정렬 등 코드 이동 별도 함수로 이동, 변수의 지능형 이름 바꾸기와 같은 작업이 포함 됩니다.
+1.  [Refactoring](../ide/refactoring-in-visual-studio.md) 에는 변수의 지능형 이름 바꾸기, 선택한 코드 줄을 별도 함수로 이동, 코드를 다른 위치로 이동, 함수 매개 변수 다시 정렬 등의 작업이 포함됩니다.
 
 2.  *IntelliSense* 는 편집기에서 직접 코드에 대한 형식 정보를 표시하고 경우에 따라 약간의 코드를 자동으로 작성하는 인기 있는 기능 집합에 대한 포괄적인 용어입니다. IntelliSense는 별도의 도움말 창에서 형식 정보를 조회할 필요가 없도록 기본 설명서를 편집기에 인라인으로 포함하는 것과 같습니다. IntelliSense 기능은 언어에 따라 달라집니다. 자세한 내용은 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md)를 참조하세요. 다음 그림에서는 일부 IntelliSense 기능의 작동을 보여 줍니다.
 
@@ -131,7 +128,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
 4.  [책갈피](../ide/setting-bookmarks-in-code.md)를 사용하면 작업 중인 파일의 특정 줄로 빠르게 이동할 수 있습니다.
 
-5.  텍스트 편집기 상황에 맞는 메뉴에서 [호출 계층 구조](../ide/reference/call-hierarchy.md) 창을 호출하여 캐럿 아래의 메서드를 호출하고 해당 메서드에 의해 호출되는 메서드를 표시할 수 있습니다.
+5.  텍스트 편집기 상황에 맞는 메뉴에서 [Call Hierarchy](../ide/reference/call-hierarchy.md) 창을 호출하여 캐럿 아래의 메서드를 호출하고 해당 메서드에 의해 호출되는 메서드를 표시할 수 있습니다.
 
 6.  **코드 렌즈** 를 사용하면 편집기 내에서 코드 참조, 코드 변경 내용, 연결된 버그, 작업 항목, 코드 검토 및 단위 테스트를 확인할 수 있습니다. 자세한 내용은 [코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)를 참조하세요.
 
@@ -158,7 +155,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
  디버거 자체에 포함된 여러 개의 창을 통해 지역 변수, 호출 스택 및 런타임 환경의 기타 측면을 보고 조작할 수 있습니다. 이러한 창은 **디버그** 메뉴에서 찾을 수 있습니다.
 
- [직접 실행 창](../ide/reference/immediate-window.md)에서는 식을 입력하고 결과를 즉시 확인할 수 있습니다.
+ [Immediate Window](../ide/reference/immediate-window.md) 에서는 식을 입력하고 결과를 즉시 확인할 수 있습니다.
 
  [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) 창은 실행 중인 .NET 프로그램의 각 메서드 호출 및 기타 이벤트를 기록하며, 문제가 발생한 위치를 빠르게 찾을 수 있도록 도와줍니다.
 
@@ -173,7 +170,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
  Visual Studio에는 정적 및 런타임 분석을 위한 강력한 도구가 포함되어 있습니다. 정적 분석 도구는 디자인, 세계화, 상호 운용성, 성능, 보안 및 기타 범주의 잠재적 오류를 식별하는 데 도움이 됩니다. 성능 테스트 또는 프로파일링에는 프로그램이 실행되는 방식을 측정하는 작업이 포함됩니다. 이러한 도구는 **분석** 메뉴에서 액세스합니다. 자세한 내용은 [Visual Studio 진단 도구로 품질 개선](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)을 참조하세요.
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>클라우드 서비스 및 데이터베이스에 연결
- 합니다 [서버 탐색기](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) 개인 설정 계정 (하나에 로그인 할 때), SQL Server 인스턴스, Azure, Salesforce.com, Office 365를 비롯 하 여 관리 되는 모든 계정의 리소스를 표시 하는 Visual Studio의 창 고 웹 사이트입니다.
+ Visual Studio의 [서버 탐색기](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) 창은 SQL Server 인스턴스, Azure, Salesforce.com, Office 365 및 웹 사이트를 포함하여 개인 설정 계정(로그인할 때 사용된 계정)으로 관리되는 모든 계정의 리소스를 보여 줍니다.
 
  ![서버 탐색기](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
@@ -190,9 +187,9 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
  Visual Studio 아키텍처 및 모델링 도구를 사용하여 앱을 디자인하고 모델링할 수 있습니다. 이러한 도구는 코드의 구조, 동작 및 관계를 시각화하는 데 도움이 됩니다. 개발 프로세스의 일부로 응용 프로그램 수명 주기 전체에 걸쳐 다양한 상세 수준으로 모델을 만들 수 있습니다. 모델 요소를 Team Foundation Server 작업 항목 및 개발 계획에 연결하여 요구 사항, 작업, 테스트 사례, 버그 및 모델과 연결된 기타 작업을 추적할 수 있습니다. 자세한 내용은 [앱 디자인 및 모델링](../modeling/analyze-and-model-your-architecture.md)을 참조하세요.
 
 ## <a name="extending-visual-studio-through-the-visual-studio-sdk"></a>Visual Studio SDK를 통해 Visual Studio 확장
- Visual Studio는 확장 가능한 플랫폼입니다. Visual Studio 확장은 IDE와 통합되는 사용자 지정 도구입니다. 타사 확장을 추가하거나 고유한 확장을 만들 수 있습니다. 자세한 내용은 [Visual Studio 확장 개발](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)합니다.
+ Visual Studio는 확장 가능한 플랫폼입니다. Visual Studio 확장은 IDE와 통합되는 사용자 지정 도구입니다. 타사 확장을 추가하거나 고유한 확장을 만들 수 있습니다. 자세한 내용은 [Visual Studio 확장 개발](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)을 참조하세요.
 
- [Visual Studio 사용자 환경 지침](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)은 Visual Studio용 확장을 작성하는 모든 사용자가 반드시 참조해야 하는 내용입니다. 이 플랫폼별 지침에는 대화 상자 디자인, 글꼴, 색, 아이콘, 공용 컨트롤뿐만 아니라, 새로운 기능이 Visual Studio와 완벽하게 통합되도록 만들어 줄 기타 정보까지 포함되어 있습니다.
+ [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md) 은 Visual Studio용 확장을 작성하는 모든 사용자가 반드시 참조해야 하는 내용입니다. 이 플랫폼별 지침에는 대화 상자 디자인, 글꼴, 색, 아이콘, 공용 컨트롤뿐만 아니라, 새로운 기능이 Visual Studio와 완벽하게 통합되도록 만들어 줄 기타 정보까지 포함되어 있습니다.
 
 ## <a name="in-this-guide"></a>이 가이드의 내용
 

@@ -1,7 +1,7 @@
 ---
 title: 구성 옵션 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85fa1b9d19beca6bd879d98bc7a24af0fd5756c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542856"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294296"
 ---
 # <a name="configuration-options-overview"></a>구성 옵션 개요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [구성 옵션 개요](https://docs.microsoft.com/visualstudio/extensibility/internals/configuration-options-overview)합니다.  
-  
 프로젝트에 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 여러 구성을 빌드할 수 있는, 디버깅, 실행 및/또는 배포를 지원할 수 있습니다. 구성에는 명명된 된 집합의 속성, 일반적으로 컴파일러 스위치 및 파일 위치를 사용 하 여 설명 된 빌드 형식입니다. 기본적으로 새 솔루션 디버그 및 릴리스 구성을 포함 합니다. 이러한 구성은 특정 솔루션 및/또는 프로젝트 요구 사항에 맞게 수정 또는 해당 기본 설정을 사용 하 여 적용할 수 있습니다. 일부 패키지는 두 가지 방법으로 빌드할 수 있습니다: ActiveX 편집기 또는 내부 구성 요소로 합니다. 그러나 여러 구성을 지원 하기 위해 프로젝트 필요가 없습니다. 사용 가능한 하나의 구성만 있으면 해당 구성은 모든 솔루션 구성에 매핑됩니다.  
   
  일반적으로 두 부분 구성에 이루어진-구성 이름 (예: 디버그 또는 릴리스) 및 플랫폼 설정 합니다. 구성의 플랫폼 이름은 API와 같은 경우 구성 대상에 설정 된 환경 또는 운영 체제 플랫폼을 식별 합니다. 사용자의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ; 플랫폼을 만들 수 없습니다. 허용 하는 VSPackage 프로젝트 중에서 선택 해야 합니다. 패키지 작성자에 의해 설정 된 모든 조건에 따라 때 패키지의 개발 중에 만들어진 배달 플랫폼 사용자 설치 VSPackage로 원하는 모든 플랫폼 이름을 발생할 수 있습니다. 사용자 속성 페이지에서 인스턴스화되는 VSPackage를 통해 사용할 수 있게 하는 플랫폼 목록에서 선택한 수 있습니다.  

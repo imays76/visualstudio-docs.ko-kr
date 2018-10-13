@@ -1,7 +1,7 @@
 ---
 title: '방법: 문서 데이터에 보기 연결 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 423634a98b09af8d549442cb8f24964228496227
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cbba98f26417d7f980734fc1a948b10d54f2437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292879"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>방법: 문서 데이터에 보기 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 문서 데이터 연결 보기](https://docs.microsoft.com/visualstudio/extensibility/how-to-attach-views-to-document-data)합니다.  
-  
 새 문서 보기에 있는 경우에 기존 문서 데이터 개체에 연결할 수 있습니다.  
   
 ### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>기존 문서 데이터 개체에 뷰를 연결할 수 경우를 확인 하려면  

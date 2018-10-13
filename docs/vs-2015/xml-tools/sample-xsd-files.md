@@ -1,7 +1,7 @@
 ---
 title: 샘플 XSD 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93137a1ab163b77078b18967858968b3efb38b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f2cf35070cc8ec76b128e85bc9219400bbaf3d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542320"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297390"
 ---
 # <a name="sample-xsd-files"></a>샘플 XSD 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [샘플 XSD 파일](https://docs.microsoft.com/visualstudio/xml-tools/sample-xsd-files)합니다.  
-  
   
 다음 예제 파일은 XSD 스키마 디자이너 설명서에서 사용됩니다.  
   

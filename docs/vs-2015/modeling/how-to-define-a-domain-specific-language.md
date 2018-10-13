@@ -1,7 +1,7 @@
 ---
 title: 도메인 특정 언어를 정의 하는 방법 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a6d8e38231de3877f4b9f4087b98fa6582f7c21
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 018b14a3bd52cf097e5afa81fd3703d9ba46e087
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295180"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>도메인별 언어 정의 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 언어 정의 방법](https://docs.microsoft.com/visualstudio/modeling/how-to-define-a-domain-specific-language)합니다.  
-  
 DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 만듭니다. 이 솔루션의 중요한 요소는 DslDefinition.dsl에 저장되는 DSL 정의 다이어그램입니다. DSL 정의는 DSL의 클래스와 모양을 정의합니다. 이러한 요소를 수정하고 필요한 내용을 추가한 후에 프로그램 코드를 추가하여 DSL을 보다 자세하게 사용자 지정할 수 있습니다.  
   
  Dsl을 처음 접하는 경우 진행 하는 것이 좋습니다 합니다 **DSL 도구 랩**,이 사이트에서 찾을 수 있는: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
@@ -242,7 +240,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>다이어그램에 모양으로 표시되는 요소 클래스를 정의하려면  
   
-1.  **정의 하 고에 설명 된 대로 도메인 클래스를 테스트할**[도메인 클래스 정의](#classes) **합니다.**   
+1.  **정의 하 고에 설명 된 대로 도메인 클래스를 테스트할**[도메인 클래스 정의](#classes) **합니다.**  
   
     -   클래스의 부모는 루트 클래스여야 합니다. 즉 루트 클래스와 새 도메인 클래스 간에 포함 관계가 있어야 합니다.  
   

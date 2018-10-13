@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72fb6f9f0ceb3b9f2ae04f39b2c37c416acf47b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0726457567221f5adb091d543cc17621179021
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278410"
 ---
 # <a name="custom-tools"></a>사용자 지정 도구
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 도구](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-tools)합니다.  
-  
 *사용자 지정 도구* 프로젝트에서 항목을 사용 하 여 도구에 연결 하 고 파일을 저장할 때마다 해당 도구를 실행할 수 있습니다. 특정 사용자 지정 도구 라고도 *단일 파일 생성기*는 그 반대로 데이터에서 코드를 생성 하는 변환기를 구현 하는 데 자주 사용 됩니다. 예를 들어, 단일 파일 생성기 만들기 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 고 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] .settings 및.resx 파일에서 코드를 원본입니다. 생성된 된 소스 코드.settings 및.resx 파일의 데이터에 대 한 강력한 형식의 액세스를 제공합니다. 합니다 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 고 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 프로젝트 형식 사용자 지정 도구를 지원 합니다. [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트 형식 하지 않습니다. 사용자 고유의 프로젝트 형식을 사용자 지정 도구 기능도 사용할 수 있습니다.  
   
  사용자 지정 도구를 구현 하는 등록 된 구성 요소는 `IVsSingleFileGenerator` 인터페이스입니다.  
@@ -63,5 +61,5 @@ ms.locfileid: "47550920"
   
 ## <a name="related-sections"></a>관련 단원  
  [프로젝트 확장](../../extensibility/extending-projects.md)  
- 사용 하는 방법에 설명 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 및 코드 파일 및 리소스 파일을 소스 제어를 구현 하는 방법을 구성 하는 솔루션입니다.
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 및 솔루션을 사용하여 코드 파일 및 리소스 파일을 구성하는 방법 및 소스 제어를 구현하는 방법을 설명합니다.
 

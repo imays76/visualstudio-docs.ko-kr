@@ -1,7 +1,7 @@
 ---
 title: 디버깅 하는 동안 XAML 속성 검사 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb10290e14290f59950e6b291d479de2099ac7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 282b93ac9f04f5e547567e8380e65826f433ba2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565342"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282258"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>디버그하는 동안 XAML 속성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버깅 하는 동안 검사할 XAML 속성](https://docs.microsoft.com/visualstudio/debugger/inspect-xaml-properties-while-debugging)합니다.  
-  
 실시간 보기를 사용 하 여 실행 중인 XAML 코드를 가져올 수 있습니다 합니다 **라이브 시각적 트리** 하며 **라이브 속성 탐색기**합니다. 이러한 도구는 실행 중인 XAML 응용 프로그램의 UI 요소에 대한 트리 뷰를 제공하고 선택한 UI 요소의 런타임 속성을 보여 줍니다.  
   
  다음 구성에서 이러한 도구를 사용할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 온라인 ClickOnce 응용 프로그램에서 쿼리 문자열 정보 검색 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,19 +21,17 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 808e6a8d6264f616eec7716ddeb173bfccb906bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78b4edd85d47087033cc20189f2c9edc4d7fcd34
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278930"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>방법: 온라인 ClickOnce 응용 프로그램에서 쿼리 문자열 정보 검색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 온라인 ClickOnce 응용 프로그램에서 쿼리 문자열 정보 검색](https://docs.microsoft.com/visualstudio/deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application)합니다.  
-  
-*쿼리 문자열* 은 임의의 정보를 *name=value*형식으로 포함하는, 물음표(?)로 시작되는 URL의 일부입니다. `servername`에 호스트하는 `WindowsApp1`이라는 이름의 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램이 있으며, 응용 프로그램이 시작될 때 `username` 변수에 대해 값을 전달하려 한다고 가정해 보겠습니다. URL은 다음과 같습니다.  
+*쿼리 문자열* 은 임의의 정보를 *name=value*형식으로 포함하는, 물음표(?)로 시작되는 URL의 일부입니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 에 호스트하는 `WindowsApp1` 이라는 이름의 `servername`응용 프로그램이 있으며, 응용 프로그램이 시작될 때 `username` 변수에 대해 값을 전달하려 한다고 가정해 보겠습니다. URL은 다음과 같습니다.  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
   
@@ -71,7 +69,7 @@ ms.locfileid: "47565345"
     MageUI  
     ```  
   
-2.  **파일** 메뉴에서 **엽니다**에 대 한 배포 매니페스트를 엽니다 프로그램 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 파일인 응용 프로그램 끝나는 `.application` 확장 합니다.  
+2.  **파일** 메뉴에서 **열기**를 선택하고 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램에 대한 배포 매니페스트를 엽니다( `.application` 확장명으로 끝나는 파일).  
   
 3.  왼쪽 탐색 창에서 **배포 옵션** 패널을 선택하고, **응용 프로그램으로 URL 매개 변수가 전달되도록 허용** 확인란을 선택합니다.  
   
@@ -86,7 +84,7 @@ ms.locfileid: "47565345"
  온라인 전용인 응용 프로그램은 항상 URL을 통해 활성화됩니다. 그러나 이 경우, 쿼리 문자열 매개 변수가 누락되거나 손상되더라도 제대로 작동하도록 응용 프로그램을 작성해야 합니다.  
   
 ## <a name="net-framework-security"></a>.NET Framework 보안  
- 악의적인 문자의 입력을 사용 전에 지우려는 경우에만 URL 매개 변수가 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램에 전달되도록 하세요. 예를 들어 따옴표, 슬래시 또는 세미콜론이 포함된 문자열은 데이터베이스에 대한 SQL 쿼리에서 필터링되지 않고 사용될 경우 임의의 데이터 작업을 수행할 수 있습니다. 쿼리 문자열 보안에 대 한 자세한 내용은 참조 하세요. [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)합니다.  
+ 악의적인 문자의 입력을 사용 전에 지우려는 경우에만 URL 매개 변수가 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램에 전달되도록 하세요. 예를 들어 따옴표, 슬래시 또는 세미콜론이 포함된 문자열은 데이터베이스에 대한 SQL 쿼리에서 필터링되지 않고 사용될 경우 임의의 데이터 작업을 수행할 수 있습니다. 쿼리 문자열 보안에 대한 자세한 내용은 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)

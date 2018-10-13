@@ -1,7 +1,7 @@
 ---
 title: SccBeginBatch 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e62074fa30d68e4cd283fb431f0ae64cff957ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50fa6d14507a9af98d9ca303bc7bf9dbbf93ab6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283454"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccBeginBatch 함수](https://docs.microsoft.com/visualstudio/extensibility/sccbeginbatch-function)합니다.  
-  
 이 함수는 소스 제어 작업의 일괄 처리 시퀀스를 시작합니다. 합니다 [SccEndBatch](../extensibility/sccendbatch-function.md) 일괄 처리를 종료 하도록 호출 됩니다. 이러한 일괄 처리를 중첩할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  

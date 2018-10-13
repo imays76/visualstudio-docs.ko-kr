@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProviderDirect | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c0d8ea7a4d01b3fe18eccab67adfadb1a62cd75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc17037934829705d98b15e857980d9c5c3c3e65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551894"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277019"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugSymbolProviderDirect](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolproviderdirect)합니다.  
-  
 메타 데이터 및 core 기호 인터페이스에 직접 액세스할 수 있는 기호 공급자를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  

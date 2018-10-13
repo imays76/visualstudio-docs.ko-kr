@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 Service1 구현 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c77e935946d06dd2448c1f9bda85fd8b6b69aa2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ccc8d23dfb62bcbb5575ea328f74f57f15f6d16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549689"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291267"
 ---
 # <a name="implementing-a-legacy-language-service"></a>레거시 언어 서비스 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 Service1 구현](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-a-legacy-language-service1)합니다.  
-  
 구문 강조, 중괄호 일치 및 IntelliSense 완성 등 다양 한 기능을 지 원하는 레거시 언어 서비스를 구현 하려면 클래스 (MPF) 관리 되는 패키지 프레임 워크에서를 사용할 수 있습니다.  
   
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 언어 서비스를 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/editor-and-language-service-extensions.md)합니다.  

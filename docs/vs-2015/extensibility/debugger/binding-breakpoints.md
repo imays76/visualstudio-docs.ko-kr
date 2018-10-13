@@ -1,7 +1,7 @@
 ---
 title: 중단점 바인딩 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19c1fc2857cf007f223f4cbb8e8bb307f972c94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6e89a671d8b243869639a5c3825233ff60b19c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283324"
 ---
 # <a name="binding-breakpoints"></a>중단점 바인딩
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [바인딩 중단점](https://docs.microsoft.com/visualstudio/extensibility/debugger/binding-breakpoints)합니다.  
-  
 중단점을 설정 하는 사용자를 하는 경우 아마도 F9 키를 눌러 IDE는 요청을 작성 및 중단점을 만들려고 하면 디버그 세션을 라는 메시지가 표시 됩니다.  
   
 ## <a name="setting-a-breakpoint"></a>중단점 설정  

@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 및 구성 속성에 대 한 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cdae139ae64f5404da04a98ff1167c51d679af2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f506340e75b7d0d1001f00ff46592bc60efab77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556573"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294348"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>프로젝트 및 구성 속성 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 및 구성 속성에 대 한 지원을](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-project-and-configuration-properties)합니다.  
-  
 합니다 **속성** 창에는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE) 프로젝트 및 구성 속성을 표시할 수 있습니다. 사용자는 응용 프로그램에 대 한 속성을 설정할 수 있도록 고유한 프로젝트 형식에 대 한 속성 페이지를 제공할 수 있습니다.  
   
  프로젝트 노드를 선택 하 여 **솔루션 탐색기** 클릭 한 다음 **속성** 에 **프로젝트** 메뉴에서 프로젝트 및 구성을 포함 하는 대화 상자를 열 수 있습니다 속성입니다. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 하 고 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)],이 대화 상자에 탭 페이지로 표시 됩니다. 이러한 언어에서 파생 된 형식 프로젝트를 [일반, 환경, 옵션 대화 상자](../../ide/reference/general-environment-options-dialog-box.md). 자세한 내용은 [빌드에 없음: 연습: 프로젝트 노출 및 구성 속성 (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)합니다.  

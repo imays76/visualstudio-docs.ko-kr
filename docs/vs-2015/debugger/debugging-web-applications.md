@@ -1,7 +1,7 @@
 ---
 title: 웹 응용 프로그램 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 265b0cfef3bb8d3afa1607da397b7e46a4cc69b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d6cbc06376329a80d9bade6751df5333438ea2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294681"
 ---
 # <a name="debugging-web-applications"></a>웹 응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [웹 응용 프로그램 디버깅](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications)합니다.  
-  
 이 단원에서는 다양한 형식의 웹 응용 프로그램을 디버깅하는 방법에 대해 설명합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

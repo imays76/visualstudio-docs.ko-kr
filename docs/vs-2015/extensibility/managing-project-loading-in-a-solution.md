@@ -1,7 +1,7 @@
 ---
 title: 솔루션의 프로젝트 로드 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dab040cc22375244d0a091eeb63d8ad011c3b12f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281387"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>솔루션의 프로젝트 로드 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션의 프로젝트 로드 관리](https://docs.microsoft.com/visualstudio/extensibility/managing-project-loading-in-a-solution)합니다.  
-  
 Visual Studio 솔루션을 다 수의 프로젝트를 포함할 수 있습니다. 기본 Visual Studio 동작은 솔루션을 열 때 솔루션의 모든 프로젝트를 로드 하 고 사용자가 프로젝트 모두 로드 작업이 완료 될 때까지 액세스할 수 없도록 합니다. 프로젝트 로드 하는 과정은 2 분 이상 지속 로드 되는 프로젝트의 수와 프로젝트의 총 수를 보여 주는 진행률 표시줄이 표시 됩니다. 사용자는 여러 프로젝트가 포함 된 솔루션에서 작업 하는 동안 프로젝트를 언로드할 수 있지만이 절차에 몇 가지 단점이 있습니다: 언로드된 프로젝트에는 솔루션 다시 빌드 명령의 일부로 빌드되지 않는 닫은 IntelliSense 설명은 형식 및 멤버 프로젝트 표시 되지 않습니다.  
   
  개발자는 솔루션 로드 시간을 줄이고 하 고 관리자 솔루션 로드를 만들어 동작을 로드 하는 프로젝트를 관리할 수 있습니다. 솔루션 로드 관리자 수 특정 프로젝트 또는 프로젝트 형식에 대 한 우선 순위를 로드 하는 다양 한 프로젝트 설정, 백그라운드 빌드를 시작 하기 전에 프로젝트는 로드 되도록, 다른 백그라운드 작업이 완료 될 때까지 백그라운드 로드를 지연 및 수행 다른 프로젝트 로드 관리 작업입니다.  
