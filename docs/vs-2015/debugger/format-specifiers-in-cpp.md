@@ -1,14 +1,14 @@
 ---
 title: Format Specifiers in c + + | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -33,18 +33,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d495fff6848a8d62be5a4471ee6a036cf9054fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564349"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249823"
 ---
 # <a name="format-specifiers-in-c"></a>C++의 형식 지정자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [c + +의 형식 지정자](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-cpp)합니다.  
-  
 형식 지정자를 사용하여 **조사식** 창에 값이 표시되는 형식을 변경할 수 있습니다.  
   
  또한 **직접 실행** 창, **명령** 창 및 소스 창에서도 형식 지정자를 사용할 수 있습니다. 이러한 창에서 식을 일시 중지하면 결과가 DataTip에 나타납니다. DataTip 표시는 형식 지정자를 반영합니다.  
@@ -151,7 +149,7 @@ int main() {
   
 |지정자|형식|식|표시되는 값|  
 |---------------|------------|----------------|---------------------|  
-|n|10진수 정수|pBuffer[32]|`pBuffer` 를 요소가 32개인 배열로 표시합니다.|
+|n|10진수 정수|pBuffer[32]|`pBuffer`를 요소가 32개인 배열로 표시합니다.|
 
 
 

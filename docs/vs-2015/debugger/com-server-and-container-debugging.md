@@ -1,7 +1,7 @@
 ---
 title: COM 서버 및 컨테이너 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531c485f50a4a775ca2933c40f5ff74ca9c43717
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df02319e081abe882cef7031eba144ef22d7c4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263063"
 ---
 # <a name="com-server-and-container-debugging"></a>COM 서버 및 컨테이너 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [COM 서버 및 컨테이너 디버깅](https://docs.microsoft.com/visualstudio/debugger/com-server-and-container-debugging)합니다.  
-  
 COM 응용 프로그램은 프로그래머가 직접 제어할 수 없는 많은 작업을 수행합니다. DLL 사이의 통신, 개체 사용 횟수, 클립보드 작업 등 제한된 몇 가지 영역에서 프로그램이 비정상적으로 작동할 수 있습니다. 이러한 문제가 발생하면 먼저 문제가 발생한 위치를 추적해야 합니다.  
   
  Visual Studio 디버거에서는 컨테이너와 서버 사이를 이동하면서 단계적으로 실행할 수 있습니다. RPC(원격 프로시저 호출) 사이에서 단계별 실행도 가능합니다.  

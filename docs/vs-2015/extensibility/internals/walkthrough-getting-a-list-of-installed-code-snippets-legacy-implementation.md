@@ -1,7 +1,7 @@
 ---
 title: '연습: 코드 조각 (레거시 구현) 설치 목록 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb5aea9af28ec455688176fa1d0f3a4e45acc038
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2074000e2e77f842f63e1cb00e2fa7c25f42836b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248143"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>연습: 설치된 코드 조각 목록 가져오기(레거시 구현)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [는 목록의 설치 된 코드 조각 (레거시)를 가져오는](https://docs.microsoft.com/visualstudio/extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation)합니다.  
-  
 코드 조각에서 키나 메뉴 명령 (허용 하는 설치 된 코드 조각 목록 중에서 선택)를 사용 하 여 원본 버퍼에 삽입할 수 있는 코드는 IntelliSense 완성 목록에서 조각 바로 가기를 선택 합니다.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> 메서드는 특정 언어 GUID에 대 한 모든 코드 조각을 가져옵니다. 해당 조각에 대 한 바로 가기는 IntelliSense 완성 목록에 삽입할 수 있습니다.  

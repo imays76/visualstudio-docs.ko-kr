@@ -1,7 +1,7 @@
 ---
 title: '2단계: 임의의 개체 및 아이콘 목록 추가 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1dbe540a9fb0c9128e2813064228a98a3bece74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2740e61de964f3b0c72f44e9a5c11018894c4fe0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226657"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2단계: 임의의 개체 및 아이콘 목록 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [2 단계: 임의의 개체 및 아이콘 목록 추가](https://docs.microsoft.com/visualstudio/ide/step-2-add-a-random-object-and-a-list-of-icons)합니다.  
-  
 이 단계에서는 게임에 사용할 일치하는 기호의 집합을 만듭니다. 각 기호는 폼의 TableLayoutPanel에 있는 임의의 두 셀에 추가됩니다. 이렇게 하려면 두 개의 `new` 문을 사용하여 두 개체를 만듭니다. 첫 번째 개체는 수학 퀴즈 게임에서 사용한 것과 비슷한 `Random` 개체입니다. 이 개체는 TableLayoutPanel의 셀을 임의로 선택하기 위해 이 코드에 사용됩니다. 두 번째 개체는 사용자에게 새로울 수도 있는데, 임의로 선택한 기호를 저장하는 데 사용되는 `List` 개체입니다.  
   
 ### <a name="to-add-a-random-object-and-a-list-of-icons"></a>Random 개체 및 아이콘 목록을 추가하려면  

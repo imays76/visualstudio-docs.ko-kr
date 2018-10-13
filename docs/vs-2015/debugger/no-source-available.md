@@ -1,7 +1,7 @@
 ---
 title: 소스 없음 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fd7643dd7334a220d1e5c78ef12bddf07af11f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f9213abc9dab5824422b0fadf3920ffb188ab14
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266086"
 ---
 # <a name="no-source-available"></a>소스 없음
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [원본에 사용할 수 없는](https://docs.microsoft.com/visualstudio/debugger/no-source-available)합니다.  
-  
 프로젝트에 보려고 하는 코드의 소스 코드가 포함되어 있지 않습니다. 일반적인 원인에 소스 코드가 없는 모듈을 두 번 클릭 합니다 **호출 스택 창** 하거나 **스레드 창**합니다. 디버깅을 계속할 수 있지만 소스 창에서 중단점을 설정하고 현재 위치에서 다른 작업을 수행할 수는 없습니다. 중단점을 설정 해야 할 경우 사용 합니다 **디스어셈블리 창** 대신 합니다.  
   
  솔루션 속성 페이지에서 디버거가 소스 파일을 찾는 디렉터리를 변경하거나 디버거가 선택된 소스 파일을 무시하도록 지정할 수 있습니다. 참조 [디버그 소스 파일을 공용 속성, 솔루션 속성 페이지 대화 상자](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)합니다.  

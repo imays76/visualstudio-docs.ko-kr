@@ -1,7 +1,7 @@
 ---
 title: '연습: 꼭 짓 점 음영으로 인해 개체 누락 된 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 16856796cf6b31b8273fa4d2d3c35b7dd100e0cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241971"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>연습: 꼭짓점 음영으로 인해 누락된 개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 꼭 짓 점 음영으로 개체 인해 누락 된](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading)합니다.  
-  
 이 연습에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단 도구를 사용하여 꼭짓점 셰이더 단계 동안 발생하는 오류로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.  
   
  이 연습에서는 다음 작업을 설명합니다.  

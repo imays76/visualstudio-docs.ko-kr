@@ -1,7 +1,7 @@
 ---
 title: COM 및 ActiveX 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e874daab692c918a39980d207ccea7a88f50f01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fca2af4745ffa932431d65771ae6c4e1761199d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246924"
 ---
 # <a name="com-and-activex-debugging"></a>COM 및 ActiveX 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [COM 및 ActiveX 디버깅](https://docs.microsoft.com/visualstudio/debugger/com-and-activex-debugging)합니다.  
-  
 이 단원에서는 COM 응용 프로그램과 ActiveX 컨트롤의 디버깅에 대한 팁을 제공합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

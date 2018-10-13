@@ -1,7 +1,7 @@
 ---
 title: 추가 상관 관계 이니셜라이저 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8543ebd784af13251663155327c2bfb9097b4904
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d4d69185bef36ab514c984716cc6606f6068fb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275693"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>상관 관계 이니셜라이저 추가 대화 상자
 **상관 관계 이니셜라이저 추가** 대화 상자에서 사용 됩니다 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 구성 하는 **CorrelationInitializers** 의 속성을 <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, 및 <xref:System.ServiceModel.Activities.ReceiveReply> 활동입니다. [!INCLUDE[crabout](../includes/crabout-md.md)] 이 상자를 사용 하는 활동 디자이너 참조를 [보낼](../workflow-designer/send-activity-designer.md), [수신](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), 및 [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) 항목입니다.  

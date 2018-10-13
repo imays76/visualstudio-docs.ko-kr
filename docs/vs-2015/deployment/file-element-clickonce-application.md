@@ -1,7 +1,7 @@
 ---
 title: '&lt;파일&gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bf5f0c803c9c60c9a4846aeba960cbdbf4c8129b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270740"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;파일&gt; 요소 (ClickOnce 응용 프로그램)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ &lt;파일&gt; 요소 (ClickOnce 응용 프로그램)](https://docs.microsoft.com/visualstudio/deployment/file-element-clickonce-application)합니다.  
-  
 다운로드 하 고 응용 프로그램에서 사용 하는 어셈블리 이외의 모든 파일을 식별 합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -122,7 +120,7 @@ ms.locfileid: "47556659"
 |---------------|-----------------|  
 |`clsid`|필수. 클래스의 ID는 GUID로 표시 하는 COM 구성 요소입니다.|  
 |`description`|선택 사항입니다. 클래스 이름입니다.|  
-|`threadingModel`|선택 사항입니다. In process COM 클래스에 의해 사용 되는 스레딩 모델입니다. 이 속성이 null 인 경우에 스레딩 모델이 사용 됩니다. 구성 요소는 클라이언트의 주 스레드에서 만들어지고이 스레드가 다른 스레드에서 호출 마샬링됩니다. 다음은 유효한 값을 보여 줍니다.<br /><br /> `Apartment`, `Free`, `Both` 및 `Neutral`가 있습니다.|  
+|`threadingModel`|선택 사항입니다. In process COM 클래스에 의해 사용 되는 스레딩 모델입니다. 이 속성이 null 인 경우에 스레딩 모델이 사용 됩니다. 구성 요소는 클라이언트의 주 스레드에서 만들어지고이 스레드가 다른 스레드에서 호출 마샬링됩니다. 다음은 유효한 값을 보여 줍니다.<br /><br /> `Apartment`, `Free`, `Both`및 `Neutral`가 있습니다.|  
 |`tlbid`|선택 사항입니다. 이 COM 구성 요소에 대 한 형식 라이브러리에 대 한 GUID입니다.|  
 |`progid`|선택 사항입니다. COM 구성 요소와 연결 된 버전별 프로그래밍 식별자입니다. 형식의 `ProgID` 는 `<vendor>.<component>.<version>`합니다.|  
 |`miscStatus`|선택 사항입니다. 어셈블리에 중복 매니페스트 제공 하는 정보는 `MiscStatus` 레지스트리 키입니다. 경우에 대 한 값을 `miscStatusIcon`, `miscStatusContent`, `miscStatusDocprint`, 또는 `miscStatusThumbnail` 특성을 찾을 수 없는, 해당 기본값에 나열 된 `miscStatus` 누락 된 특성에 사용 됩니다. 다음 표에서 특성 값의 쉼표로 구분 된 목록을 값일 수 있습니다. COM 클래스는 OCX 클래스에 필요한 경우이 특성을 사용할 수 있는 `MiscStatus` 레지스트리 키 값입니다.|  
@@ -154,7 +152,7 @@ ms.locfileid: "47556659"
 |`Name`|선택 사항입니다. 인터페이스의 이름을 코드에 표시 됩니다.|  
 |`Tlbid`|선택 사항입니다. 으로 지정한 인터페이스의 설명을 포함 하는 형식 라이브러리를 `iid` 특성입니다.|  
 |`proxyStubClass32`|선택 사항입니다. 32 비트 프록시 Dll의에서 CLSID를 IID를 매핑합니다.|  
-|`threadingModel`|선택 사항입니다. 선택 사항입니다. In process COM 클래스에 의해 사용 되는 스레딩 모델입니다. 이 속성이 null 인 경우에 스레딩 모델이 사용 됩니다. 구성 요소는 클라이언트의 주 스레드에서 만들어지고이 스레드가 다른 스레드에서 호출 마샬링됩니다. 다음은 유효한 값을 보여 줍니다.<br /><br /> `Apartment`, `Free`, `Both` 및 `Neutral`가 있습니다.|  
+|`threadingModel`|선택 사항입니다. 선택 사항입니다. In process COM 클래스에 의해 사용 되는 스레딩 모델입니다. 이 속성이 null 인 경우에 스레딩 모델이 사용 됩니다. 구성 요소는 클라이언트의 주 스레드에서 만들어지고이 스레드가 다른 스레드에서 호출 마샬링됩니다. 다음은 유효한 값을 보여 줍니다.<br /><br /> `Apartment`, `Free`, `Both`및 `Neutral`가 있습니다.|  
   
 ## <a name="windowclass"></a>windowClass  
  `windowClass` 의 선택적 자식 요소입니다 합니다 `file` 요소 이지만 경우에 필요할 수 있습니다는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 등록-COM을 사용 하 여 배포 하려는 COM 구성 요소를 포함 하는 응용 프로그램 요소에 적용 되는 버전을 포함 해야 하는 COM 구성 요소에 의해 정의 되는 창 클래스를 가리킵니다. 요소는 다음 특성을 포함 합니다.  
@@ -164,14 +162,14 @@ ms.locfileid: "47556659"
 |`versioned`|선택 사항입니다. 창 클래스를 포함 하는 어셈블리의 버전을 포함 여부는 내부 창 클래스 등록에 사용 되는 이름을 제어 합니다. 이 특성의 값이 될 수 있습니다 `yes` 또는 `no`합니다. 기본값은 `yes`입니다. 값 `no` side-by-side-구성 요소 및 해당 하는 비--side-by-side 구성 요소를 동일한 창 클래스 정의 되어 있고 동일한 창 클래스 동일 하 게 취급 하려는 경우에 사용 해야 합니다. 창 클래스 등록에 대 한 일반적인 규칙 적용-만 적용 버전에 없기 때문에 창 클래스를 등록 하는 첫 번째 구성 요소를 등록할 수 있게 됩니다.|  
   
 ## <a name="hash"></a>hash  
- 합니다 `hash` 의 선택적 자식 요소입니다는 `file` 요소입니다. `hash` 요소는 특성이 없습니다.  
+ 합니다 `hash` 의 선택적 자식 요소입니다는 `file` 요소입니다. `hash` 요소에는 특성이 없습니다.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 후에 변경 된 파일이 없음을 확인 하기를 보안 검사는 응용 프로그램의 모든 파일의 해시를 알고리즘을 사용 합니다. 경우는 `hash` 요소가 포함 되지 않은,이 검사가 수행 되지 것입니다. 따라서 생략 된 `hash` 요소 권장 되지 않습니다.  
   
  해당 매니페스트 디지털 안 매니페스트 해시 되지 않은 파일에 있으면 해시 되지 않은 파일의 내용을 확인할 수 없습니다 때문에 서명 합니다.  
   
 ## <a name="dsigtransforms"></a>dsig:Transforms  
- 합니다 `dsig:Transforms` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:Transforms` 요소는 특성이 없습니다.  
+ 합니다 `dsig:Transforms` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:Transforms` 요소에는 특성이 없습니다.  
   
 ## <a name="dsigtransform"></a>dsig:Transform  
  합니다 `dsig:Transform` 의 필수 자식 요소인는 `dsig:Transforms` 요소입니다. `dsig:Transform` 요소에는 다음 특성이 있습니다.  
@@ -188,7 +186,7 @@ ms.locfileid: "47556659"
 |`Algorithm`|이 파일에 대 한 다이제스트를 계산 하는 데 사용 된 알고리즘입니다. 사용 하는 유일한 값 현재 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 는 `http://www.w3.org/2000/09/xmldsig#sha1`합니다.|  
   
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue  
- 합니다 `dsig:DigestValue` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:DigestValue` 요소는 특성이 없습니다. 요소의 텍스트 값은 지정된 된 파일에 대 한 계산 된 해시입니다.  
+ 합니다 `dsig:DigestValue` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:DigestValue` 요소에는 특성이 없습니다. 요소의 텍스트 값은 지정된 된 파일에 대 한 계산 된 해시입니다.  
   
 ## <a name="remarks"></a>설명  
  이 요소는 응용 프로그램을 구성 하는 모든 어셈블리 이외의 파일을 식별 하 고 특히 파일 확인에 대 한 해시 값입니다. 이 요소는 파일에 연결 된 구성 요소 개체 모델 (COM) 격리 데이터를 포함할 수도 있습니다. 사용자가 파일을 변경 하는 경우 응용 프로그램 매니페스트 파일은 또한 변경 내용을 반영 하도록 업데이트 되어야 합니다.  
@@ -209,7 +207,7 @@ ms.locfileid: "47556659"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

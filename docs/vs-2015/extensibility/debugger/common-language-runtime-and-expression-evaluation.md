@@ -1,7 +1,7 @@
 ---
 title: 공용 언어 런타임 및 식 평가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e5a896609d4dc28fb3b320f6d71f0b02b705229
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96f7da8da932fb535141712cc7725f1cfb120227
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244948"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>공용 언어 런타임 및 식 계산
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [공용 언어 런타임 및 식 평가](https://docs.microsoft.com/visualstudio/extensibility/debugger/common-language-runtime-and-expression-evaluation)합니다.  
-  
 > [!IMPORTANT]
 >  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   

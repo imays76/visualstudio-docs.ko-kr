@@ -1,7 +1,7 @@
 ---
 title: '방법: 코드 프로젝트 규칙 집합을 팀 프로젝트 체크 인 정책과 동기화 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565330"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263122"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>방법: 코드 프로젝트 규칙 집합을 팀 프로젝트 체크 인 정책과 동기화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 팀 프로젝트 체크 인 정책 사용 하 여 코드 프로젝트 규칙 집합 동기화](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy)합니다.  
-  
 체크 인 정책에 대 한 설정 규칙에 지정 된 규칙을 하나 이상 포함 된 규칙 집합을 지정 하 여 동기화 할 팀 프로젝트 체크 인 정책 코드 프로젝트에 대 한 코드 분석 설정이 있습니다. 수석 개발자 이름의 하 고 체크 인 정책에 대해 설정할 규칙의 위치를 알릴 수 있습니다. 프로젝트에 대 한 코드 분석 규칙 집합이 올바르게 사용 하도록 다음 옵션 중 하나를 사용할 수 있습니다.  
   
 -   체크 인 정책 Microsoft 기본 제공 규칙 집합 중 하나를 사용 하는 경우 코드 프로젝트에 대 한 속성 대화 상자를 엽니다, 그리고 코드 분석 페이지를 표시 하 고 코드 프로젝트 설정의 코드 분석 페이지에서 해당 규칙 집합을 선택 합니다. 표준 규칙 집합은 Visual Studio를 사용 하 여 자동으로 설치 됩니다. Microsoft는 읽기 전용으로 설정 됩니다 및 편집할 수 없습니다. 규칙 집합 편집 되지 않으면 규칙의 정책 및 로컬 규칙 집합에 일치 하도록 보장 됩니다.  

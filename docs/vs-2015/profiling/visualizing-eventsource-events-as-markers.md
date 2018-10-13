@@ -1,7 +1,7 @@
 ---
 title: EventSource 이벤트를 표식으로 시각화 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9e3c86c40d35ae92cee8594979e298abfc8652b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4167ed020b0ec071e9fbe212dbb74ce0d54c03c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251890"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>EventSource 이벤트를 표식으로 시각화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [EventSource 이벤트를 표식으로 시각화](https://docs.microsoft.com/visualstudio/profiling/visualizing-eventsource-events-as-markers)합니다.  
-  
 Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있으며, 표식이 표시되는 방식을 제어할 수 있습니다. EventSource 표식을 보려면 [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자를 사용하여 ETW 공급자 GUID를 등록합니다. Concurrency 시각화에는 EventSource 이벤트를 [플래그 표식](../profiling/flag-markers.md), [범위 표식](../profiling/span-markers.md) 및 [메시지 표식](../profiling/message-markers.md)으로 나타내기 위한 기본 규칙이 있습니다. 이벤트에 사용자 지정 필드를 추가하여 EventSource 이벤트가 표시되는 방식을 사용자 지정할 수 있습니다. 표식에 대한 자세한 내용은 [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)을 참조하세요. EventSource 이벤트에 대한 자세한 내용은 <xref:System.Diagnostics.Tracing>를 참조하세요.  
   
 ## <a name="default-visualization-of-eventsource-events"></a>EventSource 이벤트의 기본 시각화  

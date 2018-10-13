@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 응용 프로그램의 URL 활성화 해제 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ad43abbafe1d5f70bb2de748154a0066aa3d8927
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47fc07ade4529ab99a4c687ea62791ec083d2d0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550175"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273333"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>방법: ClickOnce 응용 프로그램의 URL 활성화를 사용하지 않도록 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 응용의 URL 활성화 해제](https://docs.microsoft.com/visualstudio/deployment/how-to-disable-url-activation-of-clickonce-applications)합니다.  
-  
 일반적으로 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램은 웹 서버에서 설치된 후 바로 자동으로 시작됩니다. 보안상의 이유로이 동작을 사용 하지 않도록 설정 하 여 사용자가 응용 프로그램을 시작 하도록 설정할 수 있습니다 합니다 **시작** 메뉴 대신 합니다. 다음 절차에서는 URL 활성화를 사용하지 않도록 설정하는 방법에 대해 설명합니다.  
   
  이 방법은 웹 서버에서 사용자 컴퓨터에 설치된 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램에 대해서만 사용할 수 있습니다. URL을 사용하여 시작할 수 있는 온라인 전용 응용 프로그램에는 사용할 수 없습니다. 참조 및 설치 된 온라인 전용 응용 프로그램 간의 차이점에 대 한 자세한 내용은 [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)합니다.  

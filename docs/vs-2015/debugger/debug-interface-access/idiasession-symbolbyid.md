@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Symbolbyid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4bf9dba9daea14ce98e5b5e4d0555b93fa56052
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60b7495abd70eb7e02408cfe711701ec15f5ac4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541473"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272716"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiasession:: Symbolbyid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-symbolbyid)합니다.  
-  
 해당 고유 식별자로 기호를 검색합니다.  
   
 ## <a name="syntax"></a>구문  

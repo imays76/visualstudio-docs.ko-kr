@@ -1,7 +1,7 @@
 ---
 title: '9단계: 기타 기능 사용 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30ce78a2c045ae1d0968605079ab4fd0548e9d14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e0eefc947f71da5332ac3ef248cc73a41818880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553243"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255127"
 ---
 # <a name="step-9-try-other-features"></a>9단계: 기타 기능 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [9 단계: 기타 기능](https://docs.microsoft.com/visualstudio/ide/step-9-try-other-features)합니다.  
-  
 아이콘과 색을 변경하고 게임 타이머와 소리를 추가하는 등 다른 작업을 더 시도해 볼 수 있습니다. 보드를 크게 하거나 타이머를 조정해 보면 게임을 더 흥미롭게 즐길 수 있습니다.  
   
  샘플의 전체 버전을 다운로드하려면 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)(전체 일치 게임 자습서 샘플)을 참조하세요.  

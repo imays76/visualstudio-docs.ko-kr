@@ -1,7 +1,7 @@
 ---
 title: MSBuild 조건부 구문 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7997db7fc5c7dd866de8f9d573779ead29e5e9d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc84f8ec612ff602a615f27489bce617b5b7009a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264149"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 조건부 구문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 조건부 구문](https://docs.microsoft.com/visualstudio/msbuild/msbuild-conditional-constructs)합니다.  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) 및 [Otherwise](../msbuild/otherwise-element-msbuild.md) 요소를 포함하는 / 또는 처리에 메커니즘을 제공합니다.  
   

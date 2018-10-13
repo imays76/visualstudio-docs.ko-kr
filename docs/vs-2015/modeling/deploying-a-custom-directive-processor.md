@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 지시문 프로세서 배포 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d95aae0908a4e1e2ba72e860d56ec975b051f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251955"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>사용자 지정 지시문 처리기 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 지시문 프로세서 배포](https://docs.microsoft.com/visualstudio/modeling/deploying-a-custom-directive-processor)합니다.  
-  
 임의의 컴퓨터의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 사용자 지정 지시문 프로세서를 사용하려면 이 항목에서 설명하는 방법 중 하나로 해당 프로세서를 등록해야 합니다.  
   
  이러한 방법은 다음과 같습니다.  
@@ -159,7 +157,7 @@ ms.locfileid: "47543465"
   
  .pkgdef 파일이 빌드 폴더에 나타나는지 확인합니다. 빌드 폴더는 대개 bin\Debug 또는 bin\Release입니다. 이 파일이 나타나지 않으면 텍스트 편집기에서 .csproj 파일을 열고 `<GeneratePkgDefFile>false</GeneratePkgDefFile>` 노드를 제거합니다.  
   
- 자세한 내용은 [Vspackage](../extensibility/internals/vspackages.md)합니다.  
+ 자세한 내용은 [VSPackages](../extensibility/internals/vspackages.md)을 참조하세요.  
   
 ## <a name="setting-a-registry-key"></a>레지스트리 키 설정  
  사용자 지정 지시문 프로세서를 설치하는 이 방법은 가장 선호되지 않는 방법입니다. 이 방법으로는 간편하게 지시문 프로세서를 사용하거나 사용하지 않도록 설정할 수 없으며 지시문 프로세서를 다른 사용자에게 배포할 수 없습니다.  

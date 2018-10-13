@@ -1,7 +1,7 @@
 ---
 title: '테스트 영역 6: 삭제 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a05b84b3c75cec22f008b5f690c8b4ee0f8c6df3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554057"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261816"
 ---
 # <a name="test-area-6-delete"></a>테스트 영역 6: 삭제
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [테스트 영역 6: 삭제](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-6-delete)합니다.  
-  
 이 소스 제어 플러그 인 테스트 영역 삭제 작업을 설명합니다.  
   
  소스 제어에서 삭제 작업에 응답할 **솔루션 탐색기**합니다.  

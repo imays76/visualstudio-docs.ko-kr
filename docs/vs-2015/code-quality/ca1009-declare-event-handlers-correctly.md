@@ -1,7 +1,7 @@
 ---
 title: 'CA1009: 이벤트 처리기를 제대로 선언 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b227e11f17a7a20ddf68b9a44317d965538bbab6
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: c2833382ef8befa861a0947dd1c58e39bd69480f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591226"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236680"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: 이벤트 처리기를 제대로 선언하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1009: 이벤트 처리기를 제대로 선언](https://docs.microsoft.com/visualstudio/code-quality/ca1009-declare-event-handlers-correctly)합니다.
-
 |||
 |-|-|
 |TypeName|DeclareEventHandlersCorrectly|

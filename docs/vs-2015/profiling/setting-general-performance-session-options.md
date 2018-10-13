@@ -1,7 +1,7 @@
 ---
 title: 일반 성능 세션 옵션 설정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abf40be314191096447e389ef145385d2e0f616b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33848b2985cdc4303b75bdc493bfaf33af36b1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256778"
 ---
 # <a name="setting-general-performance-session-options"></a>일반 성능 세션 옵션 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [일반 성능 세션 옵션 설정](https://docs.microsoft.com/visualstudio/profiling/setting-general-performance-session-options)합니다.  
-  
 성능 세션에 대한 속성 대화 상자의 **일반** 페이지에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구 성능 세션에 대한 수집 방법 및 프로파일링 데이터 명명 규칙을 설정할 수 있습니다. **성능 탐색기**에서 이 대화 상자를 열려면 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
   
  **요구 사항**  

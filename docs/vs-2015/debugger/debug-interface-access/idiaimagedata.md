@@ -1,7 +1,7 @@
 ---
 title: IDiaImageData | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33cf9a06ca549e1bbf816bce40f0d939e20c58fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d53552e8d2807518d8fcca854e5b36b6dfe9288
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269997"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDiaImageData](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaimagedata)합니다.  
-  
 모듈 또는 이미지의 기본 위치와 메모리 오프셋의 세부 정보를 표시합니다.  
   
 ## <a name="syntax"></a>구문  

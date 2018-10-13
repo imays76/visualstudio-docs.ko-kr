@@ -1,7 +1,7 @@
 ---
 title: Windows 유니버설 앱에서 CPU 사용량 분석 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f57fdf99c6ccb19c6d8add600943d799d3a28ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250720"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Windows 유니버설 앱에서 CPU 사용량 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [유니버설 Windows 앱에서 CPU 사용량 분석](https://docs.microsoft.com/visualstudio/profiling/analyze-cpu-usage-in-a-windows-universal-app)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  앱 성능 문제를 검토해야 하는 경우 앱에서 CPU를 사용하는 방식을 파악하는 것부터 시작하는 것이 좋습니다. **CPU 사용량** 도구는 CPU가 코드 실행 시간을 어디에 소모하는지를 보여 줍니다. 특정 시나리오에 초점을 CPU 사용량을 실행할 수 있습니다 합니다 [XAML UI 응답성](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) 도구인 합니다 [에너지 소비](../profiling/analyze-energy-use-in-store-apps.md) 도구 또는 둘 다 단일 진단 세션에서.  

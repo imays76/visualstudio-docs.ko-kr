@@ -1,7 +1,7 @@
 ---
 title: 파일 상태 코드 열거자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e41a0181c22f8b760156ec41e1e450aa0f3cf740
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18e8b61c16b3a49d19b7571d529af633f6074d48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268387"
 ---
 # <a name="file-status-code-enumerator"></a>파일 상태 코드 열거자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [파일 상태 코드 열거자](https://docs.microsoft.com/visualstudio/extensibility/file-status-code-enumerator)합니다.  
-  
 `SccStatus` 소스 제어 시스템에서 파일의 상태를 지정 하는 명명 된 상수 값을 포함 하는 열거자입니다. 이 열거형은에서 사용 합니다 [SccQueryInfo](../extensibility/sccqueryinfo-function.md) 하며 `POPLISTFUNC` 콜백 함수 (참조 [POPLISTFUNC](../extensibility/poplistfunc.md) 세부 정보에 대 한).  
   
 ## <a name="syntax"></a>구문  

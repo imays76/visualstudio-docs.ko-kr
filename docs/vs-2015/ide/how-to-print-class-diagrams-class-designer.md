@@ -1,7 +1,7 @@
 ---
 title: '방법: 클래스 다이어그램 인쇄(클래스 디자이너) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39914413948af38cd103aae195b1130346675d21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4261fd0b246c43090738bb2e4cd882412ad799b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264136"
 ---
 # <a name="how-to-print-class-diagrams-class-designer"></a>방법: 클래스 다이어그램 인쇄(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 클래스 다이어그램 인쇄 (클래스 디자이너)](https://docs.microsoft.com/visualstudio/ide/how-to-print-class-diagrams-class-designer)합니다.  
-  
 Visual Studio의 인쇄 기능을 사용하여 클래스 다이어그램을 인쇄할 수 있습니다.  
   
 ### <a name="to-print-a-class-diagram"></a>클래스 다이어그램을 인쇄하려면  

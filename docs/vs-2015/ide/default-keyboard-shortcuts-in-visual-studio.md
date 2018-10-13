@@ -1,7 +1,7 @@
 ---
 title: Visual Studio의 기본 바로 가기 키 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdd1c4b29a90d10af3593d50f2578f8dbf27bf66
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247184"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio의 기본 바로 가기 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio의 기본 바로 가기 키](https://docs.microsoft.com/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)합니다.  
-  
 해당 바로 가기 키를 선택하여 Visual Studio의 다양한 명령 및 창에 보다 쉽게 액세스할 수 있습니다. 이 항목에는 Visual Studio를 설치할 때 선택한 일반 개발 프로필의 기본 바로 가기 목록이 나와 있습니다. 선택한 프로필에 관계없이 **옵션** 대화 상자를 열고 **환경** 노드를 확장한 다음 **키보드**를 선택하여 명령의 바로 가기를 확인할 수 있습니다. 또한 지정한 명령에 다른 바로 가기를 할당하여 바로 가기를 사용자 지정할 수도 있습니다.  
   
  일반적인 바로 가기 키 목록과 기타 생산성 정보는 [팁과 요령](../ide/tips-and-tricks-for-visual-studio.md) 및 [생산성 팁](../ide/productivity-tips-for-visual-studio.md)을 참조하세요.  

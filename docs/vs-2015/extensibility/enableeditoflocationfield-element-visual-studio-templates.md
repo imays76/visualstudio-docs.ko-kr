@@ -1,7 +1,7 @@
 ---
 title: EnableEditOfLocationField 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af7488a2f67faf9bacc51b54fc17226c412c1733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98d59f92291becedb4dba53c5e10012dddd51e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274705"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [EnableEditOfLocationField 요소 (Visual Studio 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/enableeditoflocationfield-element-visual-studio-templates)합니다.  
-  
 사용자 위치 필드를 편집할 수는 경우를 지정 합니다.  
   
  \<VSTemplate>  

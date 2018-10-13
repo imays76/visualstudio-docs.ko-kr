@@ -1,7 +1,7 @@
 ---
 title: WCF 서비스 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b47ac0d54f69ef4976c9f6a60b087247e1421e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d556f8a35cff99c1098323a9e2911af20bd2277c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551084"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258698"
 ---
 # <a name="debugging-wcf-services"></a>WCF 서비스 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WCF 서비스 디버깅](https://docs.microsoft.com/visualstudio/debugger/debugging-wcf-services)합니다.  
-  
 섹션 내용  
  [WCF 디버깅의 제한 사항](../debugger/limitations-on-wcf-debugging.md)  
  WCF 디버깅의 사용 제한에 대해 설명합니다.  

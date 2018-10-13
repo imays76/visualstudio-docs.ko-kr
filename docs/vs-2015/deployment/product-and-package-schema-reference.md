@@ -1,7 +1,7 @@
 ---
 title: 제품 및 패키지 스키마 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271037"
 ---
 # <a name="product-and-package-schema-reference"></a>제품 및 패키지 스키마 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [제품 및 패키지 스키마 참조](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference)합니다.  
-  
 A *제품 파일* 에 필요한 외부 종속성의 모든 설명 하는 XML 매니페스트는는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램입니다. 외부 종속성의 예로 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 및 Microsoft Data Access Components (MDAC). 패키지 파일을 제품 파일과 유사 하지만 지역화 된 어셈블리, 사용권 계약 및 설명서 등의 종속성을의 문화권 종속 구성 요소를 설치 하는 데 사용 됩니다.  
   
  제품 및 패키지 파일 구성 중 최상위 `Product` 또는 `Package` 요소에는 다음 요소가 포함 된 각 합니다.  
@@ -169,7 +167,7 @@ A *제품 파일* 에 필요한 외부 종속성의 모든 설명 하는 XML 매
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

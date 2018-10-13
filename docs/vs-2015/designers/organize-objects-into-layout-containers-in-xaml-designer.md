@@ -1,7 +1,7 @@
 ---
 title: XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329e41454431c0d19adda5175b455449d4f48e7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550355"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219559"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [개체를 XAML 디자이너에서 레이아웃 컨테이너로 구성](https://docs.microsoft.com/visualstudio/designers/organize-objects-into-layout-containers-in-xaml-designer)합니다.  
-  
 페이지에 개체를 표시할 위치를 가정해 보겠습니다. 개체로는 이미지, 단추, 비디오 등을 들 수 있습니다. 개체를 행 및 열로 표시하거나 가로나 세로로 한 줄로 표시하거나 고정된 위치에 표시할 수 있습니다.  
   
  페이지에 어떻게 표시할지 결정했으면 레이아웃 패널을 선택합니다. 개체를 추가할 대상이 필요하기 때문에 모든 페이지 작업은 여기에서 시작됩니다. 기본적으로 것을 **그리드** 되지만 변경할 수 있습니다.  
@@ -109,7 +107,7 @@ ms.locfileid: "47550355"
   
 -   [테두리](#Border)  
   
--   [팝업](#Popup)  
+-   [Popup](#Popup)  
   
 -   [ScrollViewer](#Scroll)  
   

@@ -1,7 +1,7 @@
 ---
 title: DataContext 메서드의 반환 형식 변경 작업은 실행 취소할 수 없습니다 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2adc93f6426c39d26395bdeb88fb8c37112a1a98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a53bfc66c379be0d6d90d03314f84eef89bd98a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233820"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>DataContext 메서드의 반환 형식 변경은 취소할 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DataContext 메서드의 반환 형식 변경 작업은 실행 취소할 수 없습니다](https://docs.microsoft.com/visualstudio/data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone)합니다.  
-  
   
 DataContext 메서드의 반환 형식을 변경하면 실행 취소할 수 없습니다. 자동으로 생성된 형식으로 되돌리려면 항목을 서버 탐색기/데이터베이스 탐색기에서 O/R 디자이너로 끌어 와야 합니다. 반환 형식을 변경하시겠습니까?  
   

@@ -1,7 +1,7 @@
 ---
 title: 프로젝트에서 파일을 엽니다는 편집기 결정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b144b9d380e652857b08733e48d43b5b7609ffd6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba2241a8c8572b46dab0d4df1776f65ab8f10d67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241035"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>프로젝트에서 파일을 여는 편집기 결정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트에서 파일을 엽니다는 편집기 결정](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-which-editor-opens-a-file-in-a-project)합니다.  
-  
 사용자의 프로젝트에서 파일을 열면 환경 최종적으로 적절 한 편집기를 열거나 해당 파일에 대 한 디자이너는 폴링 프로세스를 진행 합니다. 환경에서 사용 되는 초기 절차 표준 및 사용자 지정 편집기에 대해 동일 합니다. 파일 열기를 사용 하는 편집기를 폴링할 때이 환경에서는 다양 한 조건 및 VSPackage이이 프로세스 중 환경과 조정 해야 합니다.  
   
  사용자 선택 하면 예를 들어 합니다 **열기** 명령을 **파일** 메뉴 후 선택 `filename`.rtf (또는 다른 파일 확장명이.rtf) 환경은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> 결과적으로 솔루션의 모든 프로젝트 인스턴스를 순환 하는 각 프로젝트에 대해 구현입니다. 프로젝트에는 우선 순위에 따라 문서에 대 한 클레임을 식별 하는 플래그 집합을 반환 합니다. 가장 높은 우선 순위를 사용 하 여, 환경이 적절 한 호출. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> 메서드. 폴링 프로세스에 대 한 자세한 내용은 [추가 프로젝트 및 프로젝트 항목 템플릿](../../extensibility/internals/adding-project-and-project-item-templates.md)합니다.  

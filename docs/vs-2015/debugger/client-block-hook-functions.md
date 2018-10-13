@@ -1,7 +1,7 @@
 ---
 title: 클라이언트 블록 후크 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bbfb24566a59047e47090f92a040c3c2fe8a12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55b3200f93d5dd969687411f04ddca481ca099e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550912"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250696"
 ---
 # <a name="client-block-hook-functions"></a>클라이언트 블록 후크 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [클라이언트 블록 후크 함수](https://docs.microsoft.com/visualstudio/debugger/client-block-hook-functions)합니다.  
-  
 적절한 함수를 작성하여 `_CLIENT_BLOCK` 블록에 저장되는 데이터 내용을 보고하거나 그 유효성을 검사할 수 있습니다. CRTDBG.H에 정의된 대로 다음과 같은 프로토타입을 가진 함수를 작성해야 합니다.  
   
 ```  

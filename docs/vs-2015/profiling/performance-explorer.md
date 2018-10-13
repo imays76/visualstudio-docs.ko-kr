@@ -1,7 +1,7 @@
 ---
 title: 성능 탐색기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2076aaa86f51da7928b0f81213ff97553262eb56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d504c06cb038bbaa7298249384e88ad5bb2d5705
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541706"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248484"
 ---
 # <a name="performance-explorer"></a>성능 탐색기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 탐색기](https://docs.microsoft.com/visualstudio/profiling/performance-explorer)합니다.  
-  
 개발자는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구를 사용하여 코드의 성능 관련 문제를 측정, 평가 및 조정할 수 있습니다. 이러한 도구는 IDE에 완벽하게 통합되어 원활하고 편리한 사용자 환경을 제공합니다.  
   
  응용 프로그램을 프로파일링하는 것은 간단합니다. 먼저 새 성능 세션을 만듭니다. Visual Studio Team System Development Edition에서는 성능 세션 마법사를 사용해서 새 성능 세션을 만들 수 있습니다. 성능 세션이 끝난 후 프로파일링하는 동안 수집된 데이터가 .vsp 파일에 저장됩니다. IDE 안에서 .vsp 파일을 볼 수 있습니다. 수집된 데이터에서 성능 문제를 시각화하고 감지하기 위해 여러 보고서 뷰를 사용할 수 있습니다.  

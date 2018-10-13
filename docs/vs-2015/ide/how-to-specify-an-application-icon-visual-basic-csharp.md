@@ -1,7 +1,7 @@
 ---
 title: '방법: 응용 프로그램 아이콘 지정(Visual Basic, C#) | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d696766d2dd32ada86d74754dce87320e8f1627
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97c452cbdf4d8f0393160ad15e0bb192998961a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564541"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235432"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>방법: 응용 프로그램 아이콘 지정(Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: (Visual Basic, C#) 응용 프로그램 아이콘 지정](https://docs.microsoft.com/visualstudio/ide/how-to-specify-an-application-icon-visual-basic-csharp)합니다.  
-  
 프로젝트에 대한 `Icon` 속성은 컴파일된 응용 프로그램에 대해 파일 탐색기 및 Windows 작업 표시줄에서 표시되는 아이콘 파일(.ico)을 지정합니다.  
   
  `Icon` 속성은 **프로젝트 디자이너**의 **응용 프로그램** 창에서 액세스할 수 있습니다. 이 속성에는 리소스나 콘텐츠 파일로 프로젝트에 추가된 아이콘 목록이 포함되어 있습니다.  

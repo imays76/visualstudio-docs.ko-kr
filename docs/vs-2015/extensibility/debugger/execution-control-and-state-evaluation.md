@@ -1,7 +1,7 @@
 ---
 title: 실행 제어 및 상태 평가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72b13fece6129c6b3996363bb0ec082330c9b686
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20c2737d233e90cba5813709b2c4cf8ac232105f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263200"
 ---
 # <a name="execution-control-and-state-evaluation"></a>실행 제어 및 상태 평가
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [실행 제어 및 상태 평가가](https://docs.microsoft.com/visualstudio/extensibility/debugger/execution-control-and-state-evaluation)합니다.  
-  
 응용 프로그램을 디버깅할 함수를 한 단계씩 실행, 중단점에서 중지 및 계속 실행 같은 실행 제어 기능을 구현 해야 합니다. Visual Studio 기반 디버깅 디버거 구성 요소 사이 전송 하는 이벤트에 해당 실행 제어  
   
 ## <a name="in-this-section"></a>섹션 내용  

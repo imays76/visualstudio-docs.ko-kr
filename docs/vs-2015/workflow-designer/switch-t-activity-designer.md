@@ -1,7 +1,7 @@
 ---
 title: 스위치&lt;T&gt; 활동 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 3b7ae322bbdb4d93106c468409cab77127e5eb0b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244766"
 ---
 # <a name="switchlttgt-activity-designer"></a>스위치&lt;T&gt; 활동 디자이너
 <xref:System.Activities.Statements.Switch%601> 활동은 지정된 식을 계산하고 연관된 키가 계산에서 얻은 값과 일치하는 활동 컬렉션의 활동을 실행합니다.  

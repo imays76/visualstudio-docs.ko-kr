@@ -1,7 +1,7 @@
 ---
 title: '방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e10c19480004345d4a5df1d628972a788794e13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254477"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 코드 보기 및 편집 보기 정의 사용 하 여 (Alt + f12 키)에 의해](https://docs.microsoft.com/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12)합니다.  
-  
 **정의 피킹(Peeking)** 명령을 사용하여 작성하고 있는 코드에서 전환하지 않고 코드를 보고 편집할 수 있습니다. **정의 피킹(Peeking)** 및 **정의로 이동**은 같은 정보를 표시하지만 **정의 피킹(Peeking)** 은 팝업 창에 표시하고 **정의로 이동**은 별도의 코드 창에 코드를 표시합니다. **정의로 이동**을 사용하면 컨텍스트(즉, 활성 코드 창, 현재 줄 및 커서 위치)를 정의 코드 창으로 전환합니다. **정의 피킹(Peeking)** 을 사용하면 정의를 보고 편집하며 정의 파일 내부로 이동하여 원래 코드 파일을 유지할 수 있습니다.  
   
  **정의 피킹(Peeking)** 은 C#, Visual Basic 및 C++ 코드에서 사용할 수 있습니다. Visual basic에서는 **피킹** 링크를 표시 합니다 **개체 브라우저** 정의 메타 데이터 (예를 들어, 기본 제공 되는.NET Framework 형식)에 없는 기호에 대 한 합니다.  

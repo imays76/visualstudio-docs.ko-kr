@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 확장 전달 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,18 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c419de36379b277a661442e2d863696db02c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac367f2482a6b8bc5b5b25fca72e8ca05e1f58b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260191"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 확장 전달
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **참고**: Visual Studio 갤러리의 Visual Studio Marketplace 교체 되 고 있습니다. 자세한 내용은이 항목의 최신 버전을 참조 하세요.
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 확장 전달](https://docs.microsoft.com/visualstudio/extensibility/shipping-visual-studio-extensions)합니다.  
   
 확장 프로그램 개발을 완료 한 후 다른 컴퓨터에 설치 친구 및 동료와 공유할 또는 Visual Studio 갤러리에 게시할 수 있습니다. 이 섹션에서는 게시 하 고 확장 프로그램을 유지 하기 위해 수행 해야 하는 모든 항목 설명:.vsix 파일을 게시, 지역화, 및 업데이트를 사용 합니다.  
   

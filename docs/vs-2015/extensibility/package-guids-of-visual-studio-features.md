@@ -1,7 +1,7 @@
 ---
 title: 패키지 Guid Visual Studio의 기능 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f56f0356-f3ac-48bc-9674-94259e29a4df
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb8263c3f36e4633cdc81b179f10587a3bfa0e8b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ccac7110c5be5fcb0a7f846ca2756ecc334d767
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233289"
 ---
 # <a name="package-guids-of-visual-studio-features"></a>Visual Studio 기능의 패키지 Guid
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 기능의 패키지 Guid](https://docs.microsoft.com/visualstudio/extensibility/package-guids-of-visual-studio-features)합니다.  
-  
 격리 셸 응용 프로그램의.pkgundef 파일에서 응용 프로그램에서 특정 패키지를 제외 하려면 다음 Guid를 사용할 수 있습니다.  
   
 ## <a name="package-guids"></a>패키지 Guid  

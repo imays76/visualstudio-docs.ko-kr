@@ -1,7 +1,7 @@
 ---
 title: '방법: 실행 중인 프로세스에 성능 도구 연결 및 분리 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 373e697826540a3636d8cb6295119f7405c95c53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51ac98095f8b0dc6e303a0fc4135e022e9de5011
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272157"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>방법: 실행 중인 프로세스에 성능 도구 연결 및 분리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 연결 및 분리 성능 도구를 실행 중인 프로세스](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-and-detach-performance-tools-to-running-processes)합니다.  
-  
 프로파일러를 사용하여 실행 프로세스에 연결하거나 실행 프로세스에서 분리하여 더 쉽게 성능 데이터를 샘플링하고 수집할 수 있습니다. 이 방법을 사용하면 응용 프로그램 로드 시간에 대한 데이터를 수집하지 않거나 특정 상태에 도달한 후 프로세스의 성능을 모니터링하려고 할 때 프로세스를 프로파일링할 수 있습니다.  
   
 > [!NOTE]

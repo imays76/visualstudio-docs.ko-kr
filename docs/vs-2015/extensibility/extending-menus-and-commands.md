@@ -1,7 +1,7 @@
 ---
 title: 메뉴 및 명령 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 158759d2511b6ba1209a045a898969fce774e0a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20ec62586f9a725c1a33da60986d3c8729f0e402
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261003"
 ---
 # <a name="extending-menus-and-commands"></a>메뉴 및 명령 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [확장 메뉴 및 명령을](https://docs.microsoft.com/visualstudio/extensibility/extending-menus-and-commands)합니다.  
-  
 Visual Studio에 작업 및 프로세스를 추가 하는 방법은 있습니다. 대부분의 명령 메뉴 또는 도구 모음에 표시 됩니다. VSPackage 프로젝트 템플릿은 기본적인 명령을 구현 하는 방법을 보여 줍니다. 약간 더 긴 하지만 여전히 기본적인 구현을 참조 하세요 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
   
  Visual Studio 명령, 메뉴 및 도구 모음에 대 한 자세한 내용은 참조 하세요. [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)합니다.  

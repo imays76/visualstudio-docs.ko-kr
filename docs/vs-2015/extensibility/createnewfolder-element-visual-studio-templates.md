@@ -1,7 +1,7 @@
 ---
 title: CreateNewFolder 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42b01012a6a15dbf31782ccf4dd4502338ce4595
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed756b9b7a558f600ced6b9a91ca50b21dc40267
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542632"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264123"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CreateNewFolder 요소 (Visual Studio 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/createnewfolder-element-visual-studio-templates)합니다.  
-  
 프로젝트를 만들 대상 디렉터리가 없음을 확인할지 여부를 결정합니다. 디렉터리가 있으면 프로젝트에 대해 새 디렉터리를 만들 수 있습니다. 일반적으로는 모든 공통 프로젝트 형식이 새 디렉터리에 새 프로젝트를 만들지 여부를 결정하는 데 사용하는 `NewProjectRequiresNewFolder(VsTemplate)` 레지스트리 플래그(`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`)가 이 설정을 재정의합니다.  
   
  \<VSTemplate>  

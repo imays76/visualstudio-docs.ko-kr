@@ -1,14 +1,14 @@
 ---
 title: 디버거를 시작 하기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,18 +19,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2269ceae72f620677f51af960f7fe164f7982412
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4642fa76a9891d07e927fa37650976180568f7a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249953"
 ---
 # <a name="getting-started-with-the-debugger"></a>디버거 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거 기능 둘러보기](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour)합니다.  
-  
 Visual Studio 디버거는 모든 언어에서 쉽게 사용할 수 있습니다. 여기서는 간단한 C# 프로그램을 디버그하는 방법을 보여 주겠지만 C++ 및 JavaScript와 같은 다른 언어의 코드에 동일한 단계를 적용할 수 있습니다.  
   
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a> 기본 C# 프로젝트 디버그  

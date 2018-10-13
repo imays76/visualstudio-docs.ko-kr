@@ -1,7 +1,7 @@
 ---
 title: IDE의 선택 및 통화 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87796930b8b1f76e7601bfd2dbffdddcf8d32da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551069"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270936"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE의 선택 및 통화
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDE의 선택 및 통화](https://docs.microsoft.com/visualstudio/extensibility/internals/selection-and-currency-in-the-ide)합니다.  
-  
 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE) 선택을 사용 하 여 현재 선택한 개체 사용자에 대 한 정보를 유지 관리 *상황에 맞는*합니다. 선택 항목 컨텍스트를 사용 하 여 Vspackage 두 가지 방법으로 추적 하는 통화로 포함이 될 수 있습니다.  
   
 -   IDE에 Vspackage에 대 한 통화 정보를 전파 합니다.  

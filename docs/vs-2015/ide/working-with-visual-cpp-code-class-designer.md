@@ -1,7 +1,7 @@
 ---
 title: Visual C++ 코드 사용(클래스 디자이너) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329125ffd1c577bb767fb3661331eeadeacada92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3190aebd98270dee4bb5148868c04a4f5e430781
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269558"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ 코드 사용(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual c + + 코드 (클래스 디자이너)를 사용 하 여 작업](https://docs.microsoft.com/visualstudio/ide/working-with-visual-cpp-code-class-designer)합니다.  
-  
 클래스 디자이너에는 프로젝트의 코드 요소를 시각적으로 나타내 주는 *클래스 다이어그램*이라는 시각적 디자인 화면이 표시됩니다. 클래스 다이어그램을 사용하여 프로젝트의 클래스 및 기타 형식을 디자인하고 시각화할 수 있습니다.  
   
  클래스 디자이너에서 지원되는 C++ 코드 요소는 다음과 같습니다.  

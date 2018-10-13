@@ -1,7 +1,7 @@
 ---
 title: '방법: ASP.NET 응용 프로그램에 대 한 디버깅을 사용 하도록 설정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9f96a53a6ccdd505735a09d3e9c39acaa3517c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d0e7a4b6f6daf4fb93884e6d5673ce550259ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235939"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>방법: ASP.NET 응용 프로그램에 디버깅 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ASP.NET 응용 프로그램에 대 한 디버깅 사용](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)합니다.  
-  
 디버깅을 사용하려면 **프로젝트 속성** 페이지와 응용 프로그램의 web.config 파일 둘 다에서 사용하도록 설정해야 합니다.  
   
 > [!NOTE]  

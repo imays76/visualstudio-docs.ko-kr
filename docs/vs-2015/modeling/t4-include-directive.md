@@ -1,7 +1,7 @@
 ---
 title: T4 Include 지시문 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 32af7c25070f4e93c40d01da0cc0ba09e80c2193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542525"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233989"
 ---
 # <a name="t4-include-directive"></a>T4 Include 지시문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [T4 Include 지시문](https://docs.microsoft.com/visualstudio/modeling/t4-include-directive)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 `<#@include#>` 지시문을 사용하여 다른 파일의 텍스트를 텍스트 템플릿에 포함할 수 있습니다. 텍스트 템플릿에서 첫 번째 클래스 기능 블록 `include` 앞의 어느 곳에나`<#+ ... #>` 지시문을 둘 수 있습니다. 포함된 파일에는 `include` 지시문 및 다른 지시문도 포함할 수 있습니다. 따라서 템플릿 간에 템플릿 코드와 상용구 텍스트를 공유할 수 있습니다.  
   
 ## <a name="using-include-directives"></a>include 지시문 사용  

@@ -1,7 +1,7 @@
 ---
 title: 설정 저장소를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b106604455814e8d8ed13a6c6e1eb3a2d8196b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273366"
 ---
 # <a name="using-the-settings-store"></a>설정 저장소 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [설정 저장소를 사용 하 여](https://docs.microsoft.com/visualstudio/extensibility/using-the-settings-store)입니다.  
-  
 두 가지 종류의 설정 저장 합니다.  
   
 -   설정이 읽기 전용으로 Visual Studio 및 VSPackage는 구성 설정입니다. Visual Studio는 모든 알려진된.pkgdef 파일의 설정은이 저장소에 병합합니다.  

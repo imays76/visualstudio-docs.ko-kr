@@ -1,7 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, C#, IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12379f84ad9807e1a94c38c60b13a580b1fde5dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31c9909e5ea9364e806fdd2d7a39903bf1468abb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553473"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262173"
 ---
 # <a name="options-text-editor-c-intellisense"></a>옵션, 텍스트 편집기, C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션, 텍스트 편집기, C#, IntelliSense](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-intellisense)합니다.  
-  
   
 **IntelliSense** 속성 페이지를 사용하여 Visual C#용 IntelliSense의 동작에 영향을 주는 설정을 수정합니다. **도구** 메뉴에서 **옵션**을 클릭하고, **텍스트 편집기** 폴더에서 **C#** 을 클릭하고 나서, **IntelliSense**를 클릭하여 **IntelliSense** 속성 페이지에 액세스할 수 있습니다.  
   

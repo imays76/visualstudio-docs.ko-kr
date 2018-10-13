@@ -1,7 +1,7 @@
 ---
 title: 이벤트 구독 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 77f277a63d08752ddbcb7e25bae4aa82867d280e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d3a1ab2122c71c0058f993543860754b727473
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247860"
 ---
 # <a name="subscribing-to-an-event"></a>이벤트 구독
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [이벤트를 구독할](https://docs.microsoft.com/visualstudio/extensibility/subscribing-to-an-event)합니다.  
-  
 이 연습에는 실행 중인 문서 테이블 (RDT)의 이벤트에 응답 하는 도구 창을 만드는 방법을 설명 합니다. 도구 창을 구현 하는 사용자 정의 컨트롤을 호스트 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> 메서드는 이벤트 인터페이스를 연결 합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  

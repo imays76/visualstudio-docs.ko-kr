@@ -1,7 +1,7 @@
 ---
 title: '방법: 서비스 가져오기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc21d53df18fe855d0f745fcb4d11708e4ac07b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 426d0b71a23ea53a21b382ec02b8853f9ff2deb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541468"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229686"
 ---
 # <a name="how-to-get-a-service"></a>방법: 서비스 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 서비스 가져오기](https://docs.microsoft.com/visualstudio/extensibility/how-to-get-a-service)합니다.  
-  
 다른 기능에 액세스 하려면 Visual Studio 서비스를 가져올 해야 합니다. 일반적으로 Visual Studio 서비스를 사용할 수 있는 하나 이상의 인터페이스를 제공 합니다. VSPackage에서 대부분의 서비스를 가져올 수 있습니다.  
   
  파생 되는 모든 VSPackage <xref:Microsoft.VisualStudio.Shell.Package> 는 요소가 올바르게 배치 된 및 모든 글로벌 서비스를 요청할 수 있습니다. 패키지 클래스를 구현 하므로 <xref:System.IServiceProvider>, 패키지에서 파생 되는 모든 VSPackage 서비스 공급자 이기도 합니다.  

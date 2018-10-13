@@ -1,7 +1,7 @@
 ---
 title: '방법: 호출 스택 창 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271663"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>방법: 호출 스택 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio의 디버거에서 호출 스택을 보려면](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window)합니다.  
-  
 사용 하 여 합니다 **호출 스택** 창에서 현재 스택에 있는 함수 또는 프로시저 호출을 볼 수 있습니다.  
   
  합니다 **호출 스택** 창에서 작성 된 프로그래밍 언어를 각 함수의 이름을 표시 합니다. 함수 또는 프로시저 이름 다음에는 모듈 이름, 줄 번호 및 매개 변수의 이름, 형식, 값 등의 선택적 정보가 표시될 수 있습니다. 이러한 선택적 정보의 표시 여부를 선택할 수 있습니다.  

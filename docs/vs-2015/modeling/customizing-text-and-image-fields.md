@@ -1,7 +1,7 @@
 ---
 title: 텍스트 및 이미지 필드 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271130"
 ---
 # <a name="customizing-text-and-image-fields"></a>텍스트 및 이미지 필드 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 텍스트 및 이미지 필드](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields)합니다.  
-  
 셰이프의 텍스트 decorator를 정의한 경우에 텍스트 필드에서 표시 됩니다. TextFields와 다른 ShapeFields 초기화의 예제를 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.  
   
  텍스트 필드는 레이블에 할당 된 공간 등의 셰이프 내에서 영역을 관리 하는 개체입니다. TextField 인스턴스는 동일한 클래스의 여러 도형 간에 공유 됩니다. TextField 인스턴스는 각 인스턴스에 대해 개별적으로 레이블의 텍스트를 저장 하지 않습니다: 대신는 `GetDisplayText(ShapeElement)` 메서드 매개 변수로 셰이프를 사용 하 고 해당 모델 요소에 현재 상태에 따라 텍스트를 조회할 수 있습니다.  

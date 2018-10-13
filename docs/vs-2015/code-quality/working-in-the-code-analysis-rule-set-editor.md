@@ -1,7 +1,7 @@
 ---
 title: 집합 편집기에서 코드 분석 규칙 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 098cf799ad99eb61a8aa53112eb7e44ee200c6c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551609"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269648"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>코드 분석 규칙 집합 편집기에서 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 분석 규칙 집합 편집기에서 작업](https://docs.microsoft.com/visualstudio/code-quality/working-in-the-code-analysis-rule-set-editor)합니다.  
-  
 코드 분석 규칙 집합 편집기를 사용 하면 사용자 지정 규칙 집합에 포함 된 규칙을 지정 하 고 작업을 지정할 수 있습니다. 또한 코드 분석 규칙 위반이 발생할 때 수행할 동작을 지정할 수 있습니다.  
   
 |작업|설명|  

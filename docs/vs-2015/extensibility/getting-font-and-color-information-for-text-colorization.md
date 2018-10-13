@@ -1,7 +1,7 @@
 ---
 title: 글꼴 및 텍스트 색 지정에 대 한 색 정보를 가져오는 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d4b5ebbaea2b146f1b853360b88bad2363ce77f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274250"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>글꼴 및 텍스트 색 지정에 대 한 색 정보 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [가져오는 글꼴 및 텍스트 색 지정에 대 한 색 정보](https://docs.microsoft.com/visualstudio/extensibility/getting-font-and-color-information-for-text-colorization)합니다.  
-  
 렌더링 또는 사용자 인터페이스 (UI) 요소에 컬러로 텍스트를 표시 하는 프로세스는 프로젝트, 기술 및 개발자 환경 설정의 유형에 따라 달라 집니다. 합니다 **글꼴 및 색** 속성 페이지 설정을 저장 합니다.  
   
  컬러로 텍스트를 표시 하는 대부분의 구현 해야 합니다 `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` 디스플레이 설정 표시, 검색 및 텍스트를 저장에 대 한 인터페이스를 연결 합니다.  

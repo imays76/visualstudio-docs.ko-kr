@@ -1,7 +1,7 @@
 ---
 title: 속성 창 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a5ae14866780be08633f5a7cf07f70c5b94bcca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554453"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241737"
 ---
 # <a name="customizing-the-properties-window"></a>속성 창 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [속성 창 사용자 지정](https://docs.microsoft.com/visualstudio/modeling/customizing-the-properties-window)합니다.  
-  
 사용자 지정할 수 있습니다 모양 및 동작의 속성 창에서 도메인 특정 언어 (DSL) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. DSL 정의에서 각 도메인 클래스에 도메인 속성을 정의합니다. 기본적으로 모델 탐색기 또는 다이어그램에서 클래스의 인스턴스를 선택 하면 속성 창에서 모든 도메인 속성 나열 됩니다. 이 수 다이어그램에서 셰이프 필드에 매핑되지 않은 하는 경우에 하 고 도메인 속성의 값을 편집 합니다.  
   
 ## <a name="names-descriptions-and-categories"></a>이름, 설명 및 범주  

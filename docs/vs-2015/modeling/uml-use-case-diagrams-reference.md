@@ -1,7 +1,7 @@
 ---
 title: 'UML 사용 사례 다이어그램: 참조 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2bc0d23a1404925183af00ab710a422639e51654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256310"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML 사용 사례 다이어그램: 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 사용 사례 다이어그램: 참조](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-reference)합니다.  
-  
 Visual Studio에는 *사용 사례 다이어그램* 응용 프로그램 또는 시스템을 사용 하는 사용자 및 수행할 수 있는 것을 사용 하 여 요약 되어 있습니다. UML 사용 사례 다이어그램을 만들려면에 **아키텍처** 메뉴에서 클릭 **새 UML 또는 레이어 다이어그램**합니다.  
   
  사용 사례 다이어그램은 사용자 요구 사항 설명에 대한 포커스 역할을 합니다. 요구 사항, 사용자 및 주요 구성 요소 간의 관계를 설명합니다. 요구 사항을 자세히 설명하지는 않습니다. 이는 각 사용 사례에 연결될 수 있는 문서 또는 별도 다이어그램에서 설명할 수 있습니다. 사용 사례 다이어그램 하는 방법을 이해, 논의 및 사용자의 요구를 통신 하는 방법에 대 한 내용은 [사용자 요구 사항 모델](../modeling/model-user-requirements.md)합니다.  

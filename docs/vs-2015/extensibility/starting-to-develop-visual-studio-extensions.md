@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 확장 개발 시작 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 441abc9254fac5b70270fc622740d03ecc43d512
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96f98fe27812235d742d5a116f930ab8e70b2cd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224161"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio 확장 개발 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 확장 개발 시작](https://docs.microsoft.com/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)합니다.  
-  
 전에 Visual Studio 확장을 써 본 적, 아마도 경우 몇 가지 질문입니다. 몇 가지 가장 일반적인 위협을 여기 나열 되어 있습니다. 피드백 단추를 사용 하 여 원하는 정보를 표시 되지 않는 경우 (**이 페이지가 도움이 되었나요?** 화면의 맨 아래에서) 원하는 요청 합니다.  
   
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>소프트웨어 Visual Studio 확장 개발 하나요?  

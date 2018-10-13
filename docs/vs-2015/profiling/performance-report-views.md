@@ -1,7 +1,7 @@
 ---
 title: 성능 보고서 뷰 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c95e1da832012853dcc70df60087af29ad9d7e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c940b13eb7e09969ff746a3d4ba3fe2910173fcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249680"
 ---
 # <a name="performance-report-views"></a>성능 보고서 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 보고서 뷰](https://docs.microsoft.com/visualstudio/profiling/performance-report-views)합니다.  
-  
 이 섹션에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 보고서 및 뷰에 대한 참조 정보를 제공합니다. 프로파일링 데이터 파일의 뷰는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] IDE(통합 개발 환경)에 표시됩니다. 보고서는 [VSPerfReport](../profiling/vsperfreport.md) 명령줄 도구를 통해 생성됩니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

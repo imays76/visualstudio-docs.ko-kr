@@ -1,7 +1,7 @@
 ---
 title: 명령 디자인 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,22 +16,20 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6fe22e67d97af7dc7b8c900dd10c301d02d8c5a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564602"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252470"
 ---
 # <a name="command-design"></a>명령 디자인
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [명령 디자인](https://docs.microsoft.com/visualstudio/extensibility/internals/command-design)합니다.  
-  
 VSPackage에 명령을 추가할 때 표시할 경우, 사용 가능한 경우 및 처리 하는 방법 지정 해야 합니다.  
   
 ## <a name="defining-commands"></a>명령 정의  
- 새 명령을 정의 하려면 VSPackage 프로젝트에 Visual Studio 명령 테이블 (.vsct) 파일을 포함 합니다. Visual Studio 패키지 템플릿을 사용 하 여 VSPackage를 만든 경우 프로젝트는 이러한 파일 중 하나가 포함 되어 있습니다. 자세한 내용은 참조 하세요. [Visual Studio 명령 테이블 (합니다. Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)합니다.  
+ 새 명령을 정의 하려면 VSPackage 프로젝트에 Visual Studio 명령 테이블 (.vsct) 파일을 포함 합니다. Visual Studio 패키지 템플릿을 사용 하 여 VSPackage를 만든 경우 프로젝트는 이러한 파일 중 하나가 포함 되어 있습니다. 자세한 내용은 [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)을 참조하세요.  
   
  Visual Studio 명령을 표시할 수 있도록를 찾으면 모든.vsct 파일을 병합 합니다. 이러한 파일 이진 VSPackage 별개 이기 때문에 Visual Studio 명령을 찾기 위해 패키지를 로드 하지 않아도 됩니다. 자세한 내용은 [어떻게 Vspackage 추가 사용자 인터페이스 요소](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)합니다.  
   

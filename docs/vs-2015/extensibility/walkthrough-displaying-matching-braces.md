@@ -1,7 +1,7 @@
 ---
 title: '연습: 괄호 일치 표시 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542039"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247834"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>연습: 괄호 일치 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 괄호 일치 표시](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces)합니다.  
-  
 중괄호 일치 하려면 중괄호를 정의 하 고 다음 캐럿 중괄호 중 하나에 있으면 텍스트 표식 태그를 여는 중괄호를 추가 하 여 일치와 같은 언어 기반 기능을 구현할 수 있습니다. 언어의 컨텍스트에서 중괄호를 정의할 수 있습니다 또는 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 해당 형식에만 태그를 적용할 수 또는 기존 콘텐츠 형식 (예: "text")에 태그를 적용할 수 있습니다. 다음 연습에는 중괄호 일치 하는 "text" 콘텐츠 형식에 대 한 태그를 적용 하는 방법을 보여 줍니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
@@ -36,7 +34,7 @@ ms.locfileid: "47542039"
   
 #### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면  
   
-1.  편집기 분류자 프로젝트를 만듭니다. 솔루션 이름을 `BraceMatchingTest`입니다.  
+1.  편집기 분류자 프로젝트를 만듭니다. 솔루션의 이름을 `BraceMatchingTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   

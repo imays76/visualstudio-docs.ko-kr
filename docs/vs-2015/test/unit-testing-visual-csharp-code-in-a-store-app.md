@@ -1,7 +1,7 @@
 ---
 title: 스토어 앱의 Visual C# 코드 유닛 테스트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: e85326210049b96b37868f2e0cc78b6c71e91cc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245442"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>스토어 앱의 Visual C# 코드 유닛 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [스토어 앱의 Visual C# 코드 유닛 테스트](https://docs.microsoft.com/visualstudio/test/unit-testing-visual-csharp-code-in-a-store-app)합니다.  
-  
 이 항목에서는 Windows 스토어 앱에서 Visual C# 클래스에 대한 단위 테스트를 만드는 한 가지 방법에 대해 설명합니다. Rooter 클래스는 지정된 숫자의 제곱근 예상 값을 계산하는 함수를 구현하여 미적분법의 극한 이론을 보여 줍니다. Maths 응용 프로그램은 이 함수를 사용하여 수학으로 할 수 있는 재미있는 작업을 사용자에게 보여 줄 수 있습니다.  
   
  이 항목에서는 개발의 첫 단계로 단위 테스트를 사용하는 방법을 보여 줍니다. 이 방법에서는 먼저 테스트하고 있는 시스템에서 특정 동작을 확인하는 테스트 메서드를 작성한 다음 테스트를 통과하는 코드를 작성합니다. 다음 절차의 순서를 변경함으로써 이 전략을 반대로 적용하여 먼저 테스트할 코드를 작성한 다음 단위 테스트를 작성할 수 있습니다.  

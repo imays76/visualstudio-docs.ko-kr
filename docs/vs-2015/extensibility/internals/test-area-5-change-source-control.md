@@ -1,7 +1,7 @@
 ---
 title: '테스트 영역 5: 소스 제어 변경 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5aab46b6a87f6178219075ac64951be3b76fd7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229257"
 ---
 # <a name="test-area-5-change-source-control"></a>테스트 영역 5: 소스 제어 변경
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [테스트 영역 5: 소스 제어 변경](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-5-change-source-control)합니다.  
-  
 이 소스 제어 플러그 인 테스트 영역에서는 통한 소스 제어 변경 합니다 **소스 제어 변경** 명령입니다.  
   
  **소스 제어 변경** 명령은 사용자에 대 한 네 가지 기본 기능을 제공 합니다.  

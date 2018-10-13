@@ -1,7 +1,7 @@
 ---
 title: MSSCCPRJ 합니다. SCC 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a3387d5563cee60149c8d59a0d7f7179c211a10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a220dbbf80320603b997f03ca16db58dd2865be0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246027"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSSCCPRJ 합니다. SCC 파일](https://docs.microsoft.com/visualstudio/extensibility/mssccprj-scc-file)합니다.  
-  
 Visual Studio 솔루션 또는 프로젝트를 IDE를 사용 하 여 소스 제어에 배치 되 면 IDE 문자열의 형태로 플러그 인 소스 제어에서 두 가지 중요 정보를 받습니다. 이러한 문자열에 "AuxPath" 및 "ProjName" IDE에 불투명 되지만 버전 제어에서 솔루션이 나 프로젝트를 찾을 플러그 인에서 사용 됩니다. IDE 일반적으로 이러한 문자열 처음으로 호출 하 여 가져옵니다 합니다 [SccGetProjPath](../extensibility/sccgetprojpath-function.md), 다음에 대 한 이후 호출에 대 한 솔루션 또는 프로젝트 파일에 저장 하는 [SccOpenProject](../extensibility/sccopenproject-function.md)합니다. 솔루션 및 프로젝트 파일에 포함 하는 경우 "AuxPath" 및 "ProjName" 문자열은 자동으로 업데이트 되지 사용자 분기를 포크를 만들거나 버전 제어 중인 솔루션 및 프로젝트 파일을 복사 합니다. 솔루션 및 프로젝트 파일을 버전 제어에서의 올바른 위치를 가리키는지 확인 하려면 사용자가 문자열을 수동으로 업데이트 해야 합니다. 불투명 문자열 되며, 때문에 해당 하지 않을 지우기 업데이트 하는 방법.  
   
  소스 제어 플러그 인 "AuxPath" 및 "ProjName" 문자열을 MSSCCPRJ 이라는 특수 파일에 저장 하 여이 문제를 방지할 수 있습니다. SCC 파일입니다. 가 소유 하 고 플러그 인에서 유지 관리 하는 로컬, 클라이언트 쪽 파일입니다. 이 파일 소스 제어 두지 않습니다 하지만 원본 제어 파일을 포함 하는 모든 디렉터리에 대 한 플러그 인에서 생성 됩니다. 파일은 Visual Studio 솔루션 및 프로젝트 파일을 확인 하려면 소스 제어 플러그 인을 표준 또는 사용자가 제공한 목록을 파일 확장명을 비교할 수 있습니다. 일단 IDE 플러그 인을 MSSCCPRJ 지원함을 검색 합니다. SCC 파일을 더 이상 "AuxPath"를 포함 하 고 솔루션 및 프로젝트 파일을 "ProjName" 문자열을 MSSCCPRJ에서 해당 문자열을 읽습니다. SCC 파일을 대신 합니다.  

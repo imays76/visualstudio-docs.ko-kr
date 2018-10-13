@@ -1,7 +1,7 @@
 ---
 title: '방법: COM 클라이언트 및 서버 RPC 디버깅을 사용 하 여 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b64c01f502dbe4194561776f121e21475d61d43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4222bdfcc2f54159e69bd89e30da3c0e85d7a5b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549665"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268101"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>방법: RPC 디버깅을 사용하여 COM 클라이언트 및 서버 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 디버그 COM 클라이언트 및 서버를 사용 하 여 RPC 디버깅](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging)합니다.  
-  
 RPC(원격 프로시저 호출) 디버깅을 사용하면 COM 클라이언트/서버 응용 프로그램을 디버깅할 수 있습니다. RPC 디버깅을 사용하려면 다음과 같은 방법으로 활성화해야 합니다. RPC 디버깅을 활성화하고 클라이언트에서 서버 호출을 한 단계씩 실행하면 디버거에서 서버에 연결하여 코드를 디버깅할 수 있습니다. 디버거를 연결하면 클라이언트 및 서버 프로세스에서 모든 디버거 기능을 사용할 수 있습니다.  
   
 ### <a name="to-enable-rpc-debugging"></a>RPC 디버깅을 활성화하려면  

@@ -1,7 +1,7 @@
 ---
 title: 관리 코드에 대 한 사용자 지정 코드 분석 체크 인 정책 구현 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268972"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [관리 코드에 대 한 구현 사용자 지정 코드 분석 체크 인 정책을](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code)합니다.  
-  
 버전 제어에 체크 인 정책은 팀 프로젝트의 멤버가 되기 전에 소스 코드에 대해 실행 해야 하는 규칙 집합을 지정 하는 코드 분석 체크 인 합니다. Microsoft의 표준 집합을 제공 *규칙 집합* 기능 영역에 그룹 코드 분석 규칙. *사용자 지정 체크 인 정책 규칙 집합* 팀 프로젝트에 관련 된 코드 분석 규칙 집합을 지정 합니다. 규칙 집합을.ruleset 파일에 저장 됩니다.  
   
  체크 인 정책은 팀 프로젝트 수준에서 설정 되며 버전 컨트롤 트리에.ruleset 파일의 위치에 따라 지정 됩니다. 팀 정책 사용자 지정 규칙 집합의 버전 제어 위치에 제한은 없습니다.  

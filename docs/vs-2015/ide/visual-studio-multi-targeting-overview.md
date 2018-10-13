@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 멀티 타기팅 개요 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277071"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 다중 대상 지정 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 멀티 타겟팅 개요](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 이 버전에서는 응용 프로그램에 필요한 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 지정할 수 있습니다. 따라서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 이 버전을 사용해서 이전 버전에서 시작한 프로젝트 개발을 계속하려는 경우 프레임워크 대상을 변경할 필요가 없습니다. 여러 가지 버전의 프레임워크를 대상으로 지정하는 프로젝트가 포함된 솔루션을 만들 수도 있습니다. 프레임워크 대상 지정을 통해 응용 프로그램에서 지정된 버전의 프레임워크에서 제공되는 기능만 사용하도록 할 수 있습니다.  
   
 > [!TIP]

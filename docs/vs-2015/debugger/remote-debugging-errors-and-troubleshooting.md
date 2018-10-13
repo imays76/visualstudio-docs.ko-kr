@@ -1,7 +1,7 @@
 ---
 title: 원격 디버깅 오류 및 문제 해결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d7c4d6e559b60844b7d6661beb29e9d6483d107
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8f85c0a45c30b6fd80305aa1bb4d76d67e0e6cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270974"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>원격 디버깅 오류 및 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [원격 디버깅 오류 및 문제 해결](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-errors-and-troubleshooting)합니다.  
-  
 원격으로 디버깅할 때 다음과 같은 오류가 발생할 수 있습니다.  
   
 -   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
@@ -53,7 +51,7 @@ ms.locfileid: "47555792"
 -   [오류: 원격 컴퓨터는 원격 연결 대화 상자에 표시되지 않습니다.](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>참고 항목  
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

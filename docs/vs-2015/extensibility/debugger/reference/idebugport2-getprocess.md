@@ -1,7 +1,7 @@
 ---
 title: IDebugPort2::GetProcess | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 82ff7e571c9f9240dcf4febf9adf2360cc058519
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ef273dd23d7d9cd5954e25db18bf4ef60a5e0e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243349"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugPort2::GetProcess](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugport2-getprocess)합니다.  
-  
 지정 된 포트에서 실행 중인 프로세스를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

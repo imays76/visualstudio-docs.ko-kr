@@ -1,7 +1,7 @@
 ---
 title: '연습: 여백 모양 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83b721c7b0ac33d9a37d9705cd780edcd591d9aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a44b816df914567ff3470f6726ac7ba380921839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551855"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271000"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>연습: 여백 문자 모양 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 여백 모양 만들기](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-margin-glyph)합니다.  
-  
 사용자 지정 편집기 확장을 사용 하 여 편집기 여백의 모양을 사용자 지정할 수 있습니다. 이 연습에서는 "todo" 라는 단어 코드 주석 안에 나타날 때마다 표시기 여백에 사용자 지정 문자 모양을 배치 합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
@@ -34,7 +32,7 @@ ms.locfileid: "47551855"
   
 ## <a name="creating-a-mef-project"></a>MEF 프로젝트 만들기  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `TodoGlyphTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `TodoGlyphTest`로 지정합니다.  
   
 2.  편집기 분류자 프로젝트 항목을 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -45,7 +43,7 @@ ms.locfileid: "47551855"
   
 #### <a name="to-define-the-glyph"></a>문자 모양을 정의 하려면  
   
-1.  클래스 파일을 추가 하 고 이름을 `TodoGlyphFactory`입니다.  
+1.  클래스 파일을 추가하고 이름을 `TodoGlyphFactory`로 지정합니다.  
   
 2.  다음 추가 선언을 사용 하 여 합니다.  
   

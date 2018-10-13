@@ -1,7 +1,7 @@
 ---
 title: XML 스키마 디자이너 작업 영역 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22515ffe0e195006f1080738fc5b0686e647d5ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae20cd6a2eb8a4e3d8c1869cc4a0c707ccdf6de2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542984"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240957"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML 스키마 디자이너 작업 영역
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [XML 스키마 디자이너 작업 영역](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer-workspace)합니다.  
-  
   
 XML 스키마 디자이너(XSD 디자이너)는 XML 스키마를 탐색하는 데 사용되는 그래픽 도구입니다. 이외에 [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md), 찾아보기 및 XML 스키마 트리를 탐색 및 검색을 수행할 수 있습니다, XSD 디자이너에서는 XSD 스키마를 자세히 탐색할 수 있도록 하는 세 가지 보기를 제공 합니다. 시작 뷰는 XSD 디자이너의 시작 지점입니다. 시작 뷰에서 XSD 디자이너의 다른 뷰로 탐색하고 스키마 집합의 세부 정보를 확인할 수 있습니다. 그래프 뷰를 통해 스키마 집합 및 스키마 노드 간 관계를 간략하게 볼 수 있습니다. 콘텐츠 모델 뷰에서는 단순/복합 형식, 요소, 그룹, 특성 및 특성 그룹을 포함하여 로컬 스키마 노드와 전역 스키마 노드의 세부 정보를 그래픽으로 표현할 수 있습니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 자동화 모델에 영향을 주는 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 510faa67dc9b967e488931b149e2497bdf853d79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 102a84781d033948490fb87e8b775f3b85ab61ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268426"
 ---
 # <a name="contributing-to-the-automation-model"></a>Contributing to the Automation Model
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [자동화 모델에 영향을 주는](https://docs.microsoft.com/visualstudio/extensibility/internals/contributing-to-the-automation-model)합니다.  
-  
 Visual Studio 환경 사용자 지정에 대 한 일련의 자동화 인터페이스를 제공 합니다. 자동화 모델에는 최종 사용자가 Visual Studio 추가 기능 및 확장을 만들 수 있는 개체 모델이입니다.  
   
  또한 적합 하면 VSPackage 개발자는 자동화 모델에 영향을 주는 이 작업을 수행 하면 최종 사용자가 추가 기능 만들기에서 VSPackage를 사용할 때 일반적으로 일관 된 사용자 모델 경험을 제공 하 여 VSPackage의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  

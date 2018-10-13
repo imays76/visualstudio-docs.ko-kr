@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame3::InterceptCurrentException | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80bb98c22ecd220b4dbb8d817eb8bad6351e37bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4125fd5ee02240211d631ee51b50e34338af89c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274133"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugStackFrame3::InterceptCurrentException](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception)합니다.  
-  
 현재 예외를 차단 하려는 경우 현재 스택 프레임에는 디버거에서 호출 됩니다.  
   
 ## <a name="syntax"></a>구문  

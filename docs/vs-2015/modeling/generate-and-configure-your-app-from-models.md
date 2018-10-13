@@ -1,7 +1,7 @@
 ---
 title: 생성 하 고 모델에서 앱 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d972e56ebd434f9e302d48ce325c66320f50be74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240645"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>모델에서 앱 생성 및 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [생성 및 모델에서 앱 구성](https://docs.microsoft.com/visualstudio/modeling/generate-and-configure-your-app-from-models)합니다.  
-  
 모델에서 응용 프로그램의 일부를 생성하거나 구성할 수 있습니다. 모델은 UML 또는 DSL일 수 있습니다.  
   
  모델은 코드보다 더 직접적으로 요구 사항을 나타냅니다. 모델에서 직접 응용 프로그램의 동작을 파생시키면 코드를 업데이트하는 것보다 훨씬 더 빠르고 안정적으로 변경된 요구 사항에 응답할 수 있습니다. 파생을 설정하려면 일부 초기 작업이 필요하지만 요구 사항 변경이 예상되거나 제품의 여러 변형을 계획하는 경우 이 투자는 가치가 있습니다.  

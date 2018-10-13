@@ -1,7 +1,7 @@
 ---
 title: 'Vsgdbg:: Vsgdbg (생성자) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a35443dbf4fc413908c61e989d2138122c0991
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a3188116e3b0316ccb6f3892bdd12d7e7ee2677
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251812"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg(생성자)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [vsgdbg:: Vsgdbg (생성자)](https://docs.microsoft.com/visualstudio/debugger/graphics/vsgdbg-vsgdbg-constructor)합니다.  
-  
 그래픽 진단의 사용자 앱 구성 요소를 준비하거나 준비하지 않고 `VsgDbg` 클래스의 인스턴스를 생성하여 지정된 Boolean 매개 변수에 따라 그래픽 정보를 캡처하고 기록합니다.  
   
 ## <a name="syntax"></a>구문  

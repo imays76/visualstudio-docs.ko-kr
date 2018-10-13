@@ -1,7 +1,7 @@
 ---
 title: '방법: 사용자 지정 규칙 집합 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee21452912fa87b63b49db609828ef44cac7c4c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255504"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>방법: 사용자 지정 규칙 집합 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 사용자 지정 규칙 집합 만들기](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-custom-rule-set)합니다.  
-  
 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], 및 [!INCLUDE[vsPro](../includes/vspro-md.md)]를 만들고 사용자 지정을 수정할 수 있습니다 *규칙 집합* 코드 분석을 사용 하 여 연결 된 특정 프로젝트 요구 사항에 맞게 합니다. 사용자 지정 규칙 집합을 만들려면, 하나를 열면 또는 더 많은 표준 규칙 규칙 집합 편집기에서 설정 합니다. 다음 추가 하거나 특정 규칙을 제거할 수 있으며 코드 분석 규칙을 위반 했습니다 결정 하는 경우 발생 하는 동작을 변경할 수 있습니다.  
   
  새 사용자 지정 규칙 집합을 만들려면 새 파일 이름을 사용 하 여 저장 합니다. 사용자 지정 규칙 집합을 프로젝트에 자동으로 할당 됩니다.  

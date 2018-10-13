@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스 인터페이스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e68b9b5273d78d35086369f00106b1ebbde4a8ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249212"
 ---
 # <a name="legacy-language-service-interfaces"></a>레거시 언어 서비스 인터페이스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스 인터페이스](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-interfaces)합니다.  
-  
 모든 특정 프로그래밍 언어에 대해 한 번에 언어 서비스의 인스턴스가 하나만 수 있습니다. 그러나 단일 언어 서비스는 둘 이상의 편집기를 사용할 수 있습니다.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 특정 편집기와 언어 서비스를 연결 하지 않습니다. 따라서 언어 서비스 작업을 요청 하는 경우 적절 한 편집기를 매개 변수로 식별 해야 합니다.  
@@ -43,7 +41,7 @@ ms.locfileid: "47542639"
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock>(선택 사항)  
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (선택 사항)  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 모든 언어 서비스 인터페이스를 구현 해야 합니다. 것 colorizer를 검색 하는 언어 서비스와 연결 된 파일 이름 확장명을 언어의 지역화 된 이름과 같은 언어 서비스에 대 한 정보를 제공 합니다.  
   

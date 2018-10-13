@@ -1,7 +1,7 @@
 ---
 title: VSPackage Essentials | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6c72a73c-5d2a-4052-a62f-89b5847c937c
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: 0d5f795713a447f12c54efc0dab207eda875c2f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc9bc58209fb176c20d7ad2a8a6fca565de6380e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260847"
 ---
 # <a name="vspackage-essentials"></a>VSPackage Essentials
 VSPackage는 UI 요소, 서비스, 프로젝트, 편집기 및 디자이너를 사용하여 Visual Studio를 구성 및 확장하는 소프트웨어 모듈입니다. VSPackage는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 중앙 아키텍처 단위입니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 자체는 주로 VSPackage 컬렉션으로 기록됩니다.  

@@ -1,7 +1,7 @@
 ---
 title: 컨트롤의 코딩된 UI 테스트 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 316c8e80a1ccfd95ea83114092604e1542292a05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247873"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>컨트롤의 코딩된 UI 테스트 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코딩 된 UI 테스트 컨트롤의 사용](https://docs.microsoft.com/visualstudio/test/enable-coded-ui-testing-of-your-controls)합니다.  
-  
 코딩된 UI 테스트 프레임워크에 대한 지원을 구현하면 컨트롤을 보다 쉽게 테스트할 수 있습니다. 지원 수준 증가는 점진적으로 추가할 수 있습니다. 이를 위해서는 먼저 기록 및 재생 및 속성 유효성 검사 지원부터 시작합니다. 이를 기반으로 사용해서 코딩된 UI 테스트 빌더가 사용자 컨트롤의 사용자 정의 속성을 인식하도록 허용하고 생성된 코드에서 이러한 속성에 액세스하기 위한 사용자 정의 클래스를 제공할 수 있습니다. 또한 기록 중인 작업의 의도와 가까운 방식으로 코딩된 UI 테스트 빌더가 작업을 캡처하도록 할 수 있습니다.  
   
  **항목 내용:**  

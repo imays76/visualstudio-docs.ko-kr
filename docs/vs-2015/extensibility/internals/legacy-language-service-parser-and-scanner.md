@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스 파서 및 검사기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f3d704be00294f1b7b52e5a9bd4a01d0692bc5ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880248"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255296"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>레거시 언어 서비스 파서 및 검사기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스 파서 및 검사기](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-parser-and-scanner)합니다.  
-  
 파서가 언어 서비스의 핵심입니다. 관리 패키지 프레임 워크 (MPF) 언어 클래스에 표시 되는 코드에 대 한 정보를 선택 하는 언어 파서가 필요 합니다. 파서를 어휘 토큰으로 텍스트를 구분 하 고 그런 다음 해당 토큰 유형 및 기능을 식별 합니다.  
   
 ## <a name="discussion"></a>토론  

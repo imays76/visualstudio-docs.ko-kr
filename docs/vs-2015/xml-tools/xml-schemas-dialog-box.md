@@ -1,7 +1,7 @@
 ---
 title: XML 스키마 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d388dc928b2f15c084034831a4b05f9d6420a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e229919a625241f270090eb59be4aa8cd478c18c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251695"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 스키마 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [XML 스키마 대화 상자](https://docs.microsoft.com/visualstudio/xml-tools/xml-schemas-dialog-box)합니다.  
-  
   
 합니다 **XML 스키마** XML 문서를 사용 하 여 연결 하는 XML 스키마 정의 언어 (XSD) 스키마 선택 대화 상자를 사용 합니다. 스키마 캐시에서 스키마를 선택하거나 캐시에 없는 스키마를 지정할 수 있습니다. 선택한 스키마는 스키마 집합의 일부분으로 간주됩니다. 스키마 집합은 IntelliSense 및 XML 문서 유효성 검사에 사용됩니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 옵션 대화 상자, 환경, 자동 복구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fc2eb7cb70fbbafc91880d33b01c87f84073dfa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4be9e975c850101874bd0ecef51478cc4c3067c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264003"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 자동 저장
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [자동 저장, 환경, 옵션 대화 상자](https://docs.microsoft.com/visualstudio/ide/reference/autorecover-environment-options-dialog-box)합니다.  
-  
   
 [옵션] 대화 상자의 이 페이지를 사용하여 파일을 자동으로 백업할지 여부를 지정합니다. 이 페이지에서는 IDE(통합 개발 환경)가 예기치 않게 종료될 때 수정된 파일을 복원할지 여부를 지정할 수도 있습니다. 이 대화 상자에 액세스하려면 **도구** 메뉴, **옵션**, **환경** 폴더, **자동 복구** 페이지를 차례로 선택합니다. 이 페이지가 목록에 나타나지 않으면 **옵션** 대화 상자에서 **모든 설정 표시**를 선택합니다.  
   

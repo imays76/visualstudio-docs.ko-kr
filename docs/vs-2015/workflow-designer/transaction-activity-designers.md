@@ -1,7 +1,7 @@
 ---
 title: 트랜잭션 활동 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 3bd211dbc2f9bf10eb00092dcd7501a20c724afc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85afc69eae7e2478be9d98ec714048509bac3236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543074"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266155"
 ---
 # <a name="transaction-activity-designers"></a>트랜잭션 활동 디자이너
 트랜잭션 활동 디자이너는 보정 및 확인과 같은 트랜잭션 활동을 만들고 구성하는 데 사용됩니다. 이 단원의 항목 및 아래 표의 항목에서는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 활동 및 템플릿 디자이너의 사용 방법에 대한 지침을 제공합니다.  

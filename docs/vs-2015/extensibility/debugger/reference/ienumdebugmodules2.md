@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugModules2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26ce00fd82c9d11dbea2aa5bf02be6454558e302
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8177463d1eabf222c34fefc09eb7115cd010e97f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551767"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266736"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IEnumDebugModules2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugmodules2)합니다.  
-  
 이 인터페이스에는 모듈의 목록을 열거합니다.  
   
 ## <a name="syntax"></a>구문  

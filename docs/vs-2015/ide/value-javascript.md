@@ -1,7 +1,7 @@
 ---
 title: '&lt;값&gt; (JavaScript) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a19732336cbbba16c0cebda75735a2a807240d6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1ad9f3834efd56ffbddb4686e741b7d85d3363c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264175"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;값&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 에 대 한 설명서 정보 지정 `get` 및 `set` ECMAScript 3 속성에 대 한 함수입니다.  
   
 ## <a name="syntax"></a>구문  

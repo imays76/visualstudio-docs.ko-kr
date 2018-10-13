@@ -1,7 +1,7 @@
 ---
 title: '방법: Windows Communication Foundation 계약 작업 (레거시)를 구현 합니다. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f4277de8f97951847bf448636fec1b9c652f9359
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97e6e72a7de4a9da7dc5086a2fecaea2b378b553
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264162"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>방법: Windows Communication Foundation 계약 작업 구현(레거시)
 이 항목에서는 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 또는 [!INCLUDE[wfd1](../includes/wfd1-md.md)]를 대상으로 하는 레거시 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]를 사용하여 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 계약 작업을 구현하는 방법에 대해 설명합니다.  

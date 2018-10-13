@@ -1,7 +1,7 @@
 ---
 title: '방법: Code Center Premium 소스로 사용 하 여 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a453f7e926175b6ebf4825d015626e0f81688f35
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248269"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>방법: Code Center Premium의 소스 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 코드 Center Premium의 소스를 사용 하 여 디버그](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-with-code-center-premium-source)합니다.  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 디버거를 사용하면 Microsoft MSDN Code Center Premium의 보안 공유 소스를 디버깅할 수 있습니다.  
   
  이 항목에서는 Visual Studio에서 Code Center Premium을 설치하고 소스 코드를 디버깅하는 방법에 대해 설명합니다.  

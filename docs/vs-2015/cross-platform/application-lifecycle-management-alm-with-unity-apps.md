@@ -1,7 +1,7 @@
 ---
 title: ALM(Application Lifecycle Management) 및 Unity 앱 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 23e501554bf5a8502cc8ac5a271c0a803ad25808
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 997533d55274ef23966a3b229886f67023d20bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247028"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>ALM(Application Lifecycle Management) 및 Unity 앱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [응용 프로그램 수명 주기 관리 (ALM) 및 Unity 앱](https://docs.microsoft.com/visualstudio/cross-platform/application-lifecycle-management-alm-with-unity-apps)합니다.  
-  
   
 최신 플랫폼용 앱을 개발하려면 코드 작성 이외에도 많은 작업을 수행해야 합니다. DevOps(개발+운영)라는 이러한 활동은 앱의 전체 수명 주기에 걸쳐 있으며 민첩한 작업 계획 및 추적, 코드 디자인 및 구현, 소스 코드 리포지토리 관리, 빌드 실행, 연속 통합 및 배포 관리, 테스트(유닛 테스트 및 UI 테스트 포함), 개발 및 프로덕션 환경에서 다양한 형태의 진단 실행, 원격 분석 및 분석을 통해 실시간으로 앱 성능과 사용자 동작 모니터링을 포함합니다.  
   

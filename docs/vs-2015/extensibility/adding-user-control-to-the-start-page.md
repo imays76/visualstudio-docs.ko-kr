@@ -1,7 +1,7 @@
 ---
 title: 시작 페이지에 사용자 컨트롤 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c2ccd76343cd340725751bf1ce2c332fe96c37
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259989"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>시작 페이지에 사용자 컨트롤 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시작 페이지에 사용자 정의 컨트롤 추가](https://docs.microsoft.com/visualstudio/extensibility/adding-user-control-to-the-start-page)합니다.  
-  
 이 연습에서는 사용자 지정 시작 페이지에 대 한 DLL 참조를 추가 하는 방법을 보여 줍니다. 예제는 솔루션을 사용자 컨트롤을 사용자 컨트롤을 빌드하고 시작 페이지.xaml 파일에서 빌드된 어셈블리를 참조 하는 다음을 추가 합니다. 새 탭을 기본 웹 브라우저로 함수는 사용자 컨트롤을 호스팅합니다.  
   
  .Xaml 파일에서 호출할 수 있는 모든 어셈블리를 추가 하려면 동일한 프로세스를 사용할 수 있습니다.  

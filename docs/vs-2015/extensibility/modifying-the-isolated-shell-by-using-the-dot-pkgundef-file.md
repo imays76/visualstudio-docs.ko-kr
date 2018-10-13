@@ -1,7 +1,7 @@
 ---
 title: 사용 하 여 격리 셸 수정 합니다. Pkgundef 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9cee2a20-f8ac-4d9d-aef9-068fcd9f27a4
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3741fc9abdae6693670538c80288dfdefcefd84e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5663c3e7f8dfb3460e163c851751bde95fb630d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256427"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>사용 하 여 격리 셸 수정 합니다. Pkgundef 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [의 격리 셸을 사용 하 여 수정 합니다. Pkgundef 파일](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file)합니다.  
-  
 격리 셸 응용 프로그램에서 지정 된 레지스트리 항목을 제외.pkgundef 파일을 수정할 수 있습니다. 일반적으로 처음으로 컴퓨터에 응용 프로그램이 시작 되는 Visual Studio shell 복사 기존 Visual Studio 레지스트리 항목을 응용 프로그램에 대 한 루트 레지스트리 키입니다. 현재 설치 된 Vspackage에 대 한 참조가 포함 됩니다.  
   
  격리 셸 응용 프로그램에서 특정 레지스트리 항목을 제외할 항목 뒤에 키를 패키지 하는 응용 프로그램.pkgundef 파일에 추가 합니다. .Pkgdef 파일에서와 마찬가지로 키 및 항목은 표시 즉, [$RootKey $] 또는 [$RootKey$\\*하위 키*] 및 "*항목*" =*값*여기서 *하위 키* 하위 키에 영향을 줄은 *항목이* 제거할 항목이 및 *값* 은 `""` 또는 `dword:00000000`합니다.  

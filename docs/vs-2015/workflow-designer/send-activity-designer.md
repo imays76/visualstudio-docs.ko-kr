@@ -1,7 +1,7 @@
 ---
 title: 보내기 활동 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 95aa5a3bd0cefae930d2eb0023b6ddd7afbe14e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d2d0bfb5d760d21f832523231b4984362ba2eb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272690"
 ---
 # <a name="send-activity-designer"></a>Sent 활동 디자이너
 **보낼** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.ServiceModel.Activities.Send> 활동입니다.  

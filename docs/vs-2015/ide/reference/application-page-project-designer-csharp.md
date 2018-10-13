@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 디자이너, 응용 프로그램 페이지(C#) | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22970716ed5bb13c3a9539f91288e8addf469f11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565186"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264084"
 ---
 # <a name="application-page-project-designer-c"></a>프로젝트 디자이너, 응용 프로그램 페이지(C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [응용 프로그램 페이지, 프로젝트 디자이너 (C#)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-csharp)합니다.  
-  
   
 **프로젝트 디자이너**의 **응용 프로그램** 페이지를 사용하여 프로젝트의 응용 프로그램 설정과 속성을 지정할 수 있습니다.  
   
@@ -109,7 +107,7 @@ ms.locfileid: "47565186"
   
 ## <a name="see-also"></a>참고 항목  
 [응용 프로그램 속성 관리](../../ide/application-properties.md)  
- [Office 솔루션에서 코드 작성](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+ [Writing Code in Office Solutions](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
 
 
 

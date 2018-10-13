@@ -1,7 +1,7 @@
 ---
 title: Tableadapter를 사용 하 여 데이터 집합 채우기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c25bbba01d89935044e82a67b3ce40f99d1bf9a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251853"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Tableadapter를 사용 하 여 데이터 집합 채우기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Tableadapter를 사용 하 여 데이터 집합 채우기](https://docs.microsoft.com/visualstudio/data-tools/fill-datasets-by-using-tableadapters)합니다.  
-  
   
 TableAdapter 구성 요소를 기반으로 쿼리 또는 저장된 프로시저 수를 지정 하는 하나 이상의 데이터베이스에서 데이터를 사용 하 여 데이터 집합을 채웁니다. Tableadapter를 수행할 수도 있습니다 추가, 업데이트 및 데이터 집합에 수행한 변경 내용을 유지 하려면 데이터베이스를 삭제 합니다. 또한 특정 테이블에 관련 되지 않은 전역 명령을 실행할 수 있습니다.  
   

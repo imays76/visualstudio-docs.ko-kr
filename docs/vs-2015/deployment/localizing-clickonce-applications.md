@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 응용 프로그램 지역화 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 285c1273114fe7f59b2ee0bb6bc612d18cbaf32e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550042"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261471"
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce 응용 프로그램 지역화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 응용 프로그램 지역화](https://docs.microsoft.com/visualstudio/deployment/localizing-clickonce-applications)합니다.  
-  
 지역화는 응용 프로그램을 특정 문화권에 적합하게 만드는 프로세스입니다. 이 프로세스에서는 UI(사용자 인터페이스) 텍스트를 지역별 언어로 번역하고, 올바른 데이터 및 통화 형식 지정을 사용하고, 양식에서 컨트롤 크기를 조정하고, 필요하면 오른쪽에서 왼쪽으로 컨트롤을 미러링합니다.  
   
  응용 프로그램을 지역화하면 위성 어셈블리 하나 이상이 만들어집니다. 각 어셈블리에는 지정된 문화권과 관련된 UI 문자열, 이미지 및 기타 리소스가 포함됩니다. 응용 프로그램의 주 실행 파일에는 응용 프로그램의 기본 문화권에 대한 문자열이 포함됩니다.  

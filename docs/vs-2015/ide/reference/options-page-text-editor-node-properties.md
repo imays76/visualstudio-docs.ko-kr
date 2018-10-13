@@ -1,7 +1,7 @@
 ---
 title: 옵션 페이지, 텍스트 편집기 노드 속성 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 945b1b41abf44c8525677bfb332afdf9f6f7788f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241906"
 ---
 # <a name="options-page-text-editor-node-properties"></a>옵션 페이지, 텍스트 편집기 노드 속성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션 페이지, 텍스트 편집기 노드 속성](https://docs.microsoft.com/visualstudio/ide/reference/options-page-text-editor-node-properties)합니다.  
-  
   
 이 문서에서는 **옵션** 대화 상자의 **텍스트 편집기** 범주, `DTE.Properties("TextEditor", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다. 각 하위 단원의 제목은 `Properties` 컬렉션에 액세스하는 데 사용되는 호출이며, 각 하위 단원의 표에는 컬렉션의 속성이 나열되어 있습니다.  
   

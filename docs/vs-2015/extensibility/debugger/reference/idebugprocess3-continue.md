@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3::Continue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2cda72271a7a4654280a93e7fa7150c0dd295405
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fe66b5cc4c07f55d821d00b8769664fb3c24445
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276642"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProcess3::Continue](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3-continue)합니다.  
-  
 계속 중지 된 상태에서이 프로세스를 실행 합니다. 이전 실행 상태 (예: 단계)은 유지, 프로세스를 다시 실행을 시작 합니다.  
   
 > [!NOTE]

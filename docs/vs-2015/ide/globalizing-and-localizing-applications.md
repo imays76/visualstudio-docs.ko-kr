@@ -1,7 +1,7 @@
 ---
 title: 응용 프로그램 전역화 및 지역화 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca0a66cba037bc653ad1d93f74dd915c3292e65f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66634bf6c14e316140e001fd8bb147504736981b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543277"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246105"
 ---
 # <a name="globalizing-and-localizing-applications"></a>응용 프로그램 전역화 및 지역화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

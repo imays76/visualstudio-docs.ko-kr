@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier2::EnumPorts | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 88b57fd2-eba1-44fa-bd34-cf2ad2b1ff87
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd59945d028dcd0938dcc3fe186eca1d40f556ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b39ee4d4a31bea6563681143a564eee71a1b3912
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543945"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264116"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugPortSupplier2::EnumPorts](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplier2-enumports)합니다.  
-  
 포트 공급자가 제공 하는 모든 포트의 목록을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  

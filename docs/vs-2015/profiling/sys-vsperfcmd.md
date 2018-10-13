@@ -1,7 +1,7 @@
 ---
 title: Sys (VSPerfCmd) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb87886e4b40643a23e661294c6fcf0a2a74332b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7a8a24960e3e0535453e537bd9f1ebfdc6990d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554630"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276382"
 ---
 # <a name="sys-vsperfcmd"></a>Sys(VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Sys (VSPerfCmd)](https://docs.microsoft.com/visualstudio/profiling/sys-vsperfcmd)합니다.  
-  
 VSPerfCmd.exe **Sys** 옵션은 시스템 호출 이벤트(프로파일링된 응용 프로그램에서 운영 체제로 함수 호출)로 샘플링되는 프로파일링 이벤트를 설정하고 필요에 따라 기본값 10의 샘플링 간격에서 시스템 호출 수를 변경합니다.  
   
  **Sys**는 **Launch** 또는 **Attach** 옵션도 포함하는 명령줄에서만 사용할 수 있습니다.  

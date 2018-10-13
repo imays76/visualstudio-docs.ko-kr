@@ -1,7 +1,7 @@
 ---
 title: 단일 및 다중 탭 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84893d8465316d35098efbc99eb7ba988fcbe8d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e429add1b4b18cff84a2933601c56c7b026db15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236004"
 ---
 # <a name="single-and-multi-tab-views"></a>단일 및 다중 탭 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [단일 및 다중 탭 보기](https://docs.microsoft.com/visualstudio/extensibility/single-and-multi-tab-views)합니다.  
-  
 편집기 다양 한 뷰를 만들 수 있습니다. 한 가지 예는 코드 편집기 창은 다른 폼 디자이너가 있습니다.  
   
  다중 탭 보기 여러 탭이 있는 뷰입니다. 예를 들어, HTML 편집기에서는 두 개의 탭 아래쪽에: **디자인** 하 고 **원본**각 논리적 보기. 디자인 뷰를 다른 웹 페이지를 구성 하는 HTML을 표시 하는 동안 렌더링된 된 웹 페이지를 표시 합니다.  

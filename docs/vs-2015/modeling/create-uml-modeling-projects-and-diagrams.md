@@ -1,7 +1,7 @@
 ---
 title: UML 모델링 프로젝트 및 다이어그램 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250486"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML 모델링 프로젝트 및 다이어그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [만들 UML 모델링 프로젝트 및 다이어그램](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams)합니다.  
-  
 UML 모델링은 소프트웨어 시스템을 이해하고 토론하며 디자인하는 데 도움이 됩니다. Visual Studio는 가장 자주 사용되는 UML 다이어그램 중 5가지인 동작, 클래스, 구성 요소, 시퀀스 및 사용 사례에 대한 템플릿을 제공합니다. 또한 시스템 구조를 정의하는 데 도움이 되는 레이어 다이어그램을 만들 수 있습니다.  
   
  UML 모델링 다이어그램 및 레이어 다이어그램은 모델링 프로젝트 내에만 존재할 수 있습니다. 각 모델링 프로젝트에는 공유 UML 모델 및 여러 UML 다이어그램이 포함됩니다. 각 다이어그램은 모델의 부분 뷰입니다. UML 모델은 UML 다이어그램의 모든 요소를 포함하고 UML 모델 탐색기를 사용하여 볼 수 있습니다. 모델 및 다이어그램에 해당 관계에 대 한 자세한 내용은 [편집 UML 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md)합니다. 버전 제어에서 프로젝트를 모델링 하는 방법에 대 한 내용은 [버전 제어에서 모델 및 다이어그램 관리](../modeling/manage-models-and-diagrams-under-version-control.md) 고 [모델링 솔루션](../modeling/structure-your-modeling-solution.md)  
@@ -148,7 +146,7 @@ UML 모델링은 소프트웨어 시스템을 이해하고 토론하며 디자�
   
 -   소스 코드의 뷰로 만들어진 클래스 다이어그램. UML 클래스 다이어그램과 관련이 없습니다. 자세한 내용은 [보기 클래스와 형식 디자인 및](../ide/designing-and-viewing-classes-and-types.md)합니다.  
   
--   코드 맵. 참조 [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)합니다.  
+-   코드 맵. [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)을 참조하세요.  
   
 -   도메인 관련 언어와 같이 UML 다이어그램 또는 레이어 다이어그램이 아닌 다이어그램.  
   

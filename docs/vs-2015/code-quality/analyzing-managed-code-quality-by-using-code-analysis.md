@@ -1,7 +1,7 @@
 ---
 title: 코드 분석을 사용 하 여 관리 코드 품질 분석 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3e0538c47dec2dd11b9488a80dd4f71baddc487f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e034db6fc7383ea5f944900713dffe1cc3e78473
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542155"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263903"
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>코드 분석을 사용하여 관리 코드 품질 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [를 사용 하 여 코드 분석을 통해 관리 코드 품질 분석](https://docs.microsoft.com/visualstudio/code-quality/analyzing-managed-code-quality-by-using-code-analysis)합니다.  
-  
 Visual Studio에서 코드 분석 도구를 사용하면 비보안 데이터 액세스, 사용 위반 및 디자인 문제와 같은 코드에서 잠재적인 문제를 검색할 수 있습니다. 코드 분석은.NET Framework, 네이티브 (C 및 c + +) 및 데이터베이스 응용 프로그램에서 작동합니다. 관리 코드에 대 한 코드 분석 규칙 구성 *규칙 집합* 코딩과 특정 대상으로 하는 합니다.  
   
 ## <a name="common-tasks"></a>일반 작업  

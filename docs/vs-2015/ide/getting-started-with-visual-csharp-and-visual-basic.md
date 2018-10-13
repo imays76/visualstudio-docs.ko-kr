@@ -1,14 +1,14 @@
 ---
 title: Visual C# 및 Visual Basic 시작 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
 - Visual Basic tutorial
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d526da8cb5013de7f56d5cc43b8ee2ec52014b47
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253775"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# 및 Visual Basic 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Getting Started with Visual C# 및 Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)합니다.  
-  
 이 자습서는 Visual C# 또는 Microsoft Visual Basic 초보자를 위한 자습서입니다. 이 자습서는 Visual C# 및 Visual Basic을 소개하는 일련의 순차적 단원으로 구성되어 있습니다. 즐겁게 배우고 훌륭한 소프트웨어를 개발해 보십시오.  
   
  Visual C++에 대한 자세한 내용은 [Visual C++ 리소스](http://msdn.microsoft.com/vstudio/hh386302.aspx)를 참조하세요.  

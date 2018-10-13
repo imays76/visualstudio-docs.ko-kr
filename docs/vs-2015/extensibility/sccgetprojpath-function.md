@@ -1,7 +1,7 @@
 ---
 title: SccGetProjPath 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0809ab976712d45f1cae8ec39990438e591744f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e80cae5439ec1ec0042a1357c0675a2013ff718
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543225"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269296"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccGetProjPath 함수](https://docs.microsoft.com/visualstudio/extensibility/sccgetprojpath-function)합니다.  
-  
 이 함수는 프로젝트 경로 소스 제어 플러그 인에 의미 있는 문자열에 대 한 라는 메시지입니다. 사용자가 있는 경우 라고 합니다.  
   
 -   새 프로젝트 만들기  

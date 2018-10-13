@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 탐색 모음에 대 한 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e62ac19a42877c1c7c995ffd3d416b5225514b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556630"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267373"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>레거시 언어 서비스의 탐색 모음 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 탐색 모음에 대 한 지원을](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service)합니다.  
-  
 편집기 보기의 맨 위에 있는 탐색 모음에서 파일 형식 및 멤버를 표시합니다. 왼쪽된 드롭다운 목록에 표시 됩니다 및 멤버 드롭다운 오른쪽에 표시 됩니다. 사용자가 유형을 선택 하면 형식의 첫 번째 줄에 캐럿 배치 됩니다. 사용자가 멤버를 선택 하면 멤버의 정의에 캐럿 배치 됩니다. 드롭다운 목록 상자 캐럿의 현재 위치를 반영 하도록 업데이트 됩니다.  
   
 ## <a name="displaying-and-updating-the-navigation-bar"></a>표시 및 탐색 모음 업데이트  

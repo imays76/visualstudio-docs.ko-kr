@@ -1,7 +1,7 @@
 ---
 title: '방법: 리소스 만들기 및 적용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75041cb9db00b48ea81dfe9a8639c41e4267262c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f89540c7ca084c6ef60d83b7678bb8cd4f56990
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236511"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>방법: 리소스 만들기 및 적용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [만들 리소스를 적용 하는 방법을](https://docs.microsoft.com/visualstudio/designers/how-to-create-and-apply-a-resource)합니다.  
-  
 XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는 다시 사용 가능한 엔터티에 저장됩니다. 스타일을 사용하면 요소 속성을 설정하고 여러 요소에 걸쳐 일관된 모양을 위해 이러한 설정을 통해 다시 사용할 수 있습니다. [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx)은 컨트롤의 모양을 정의하며 리소스로 적용될 수도 있습니다. 자세한 내용은 [빠른 시작: 컨트롤 스타일 지정](http://go.microsoft.com/fwlink/?LinkID=248239) 및 [빠른 시작: 컨트롤 템플릿](http://go.microsoft.com/fwlink/?LinkID=247982)을 참조하세요.  
   
  기존 속성인 [스타일](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) 또는 `ControlTemplate`으로 새 리소스를 만들 때마다 **리소스 만들기** 대화 상자를 사용하여 응용 프로그램 수준, 문서 수준 또는 요소 수준에서 리소스를 정의할 수 있습니다. 이러한 수준에 따라 리소스를 사용할 수 있는 위치가 결정됩니다. 예를 들어 요소 수준에서 리소스를 정의하는 경우 리소스 만든 요소에만 적용할 수 있습니다. 또한 다른 프로젝트에서 다시 사용할 수 있는 별도 파일인 리소스 사전에 리소스를 저장할 수 있습니다.  

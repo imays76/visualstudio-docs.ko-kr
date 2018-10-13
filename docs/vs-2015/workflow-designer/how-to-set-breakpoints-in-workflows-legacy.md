@@ -1,7 +1,7 @@
 ---
 title: '방법: 중단점 워크플로에 설정 (레거시) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ac587b238d52e8955a4fe70cabc89444b39c712d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 158592ccef331c541bf27494856cfa1314b21f88
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252553"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>방법: 워크플로에 중단점 설정(레거시)
 이 항목에서는 레거시 [!INCLUDE[wf](../includes/wf-md.md)]를 사용하여 빌드된 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 응용 프로그램에 중단점을 설정하는 방법에 대해 설명합니다. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[wf2](../includes/wf2-md.md)] 응용 프로그램이 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.  

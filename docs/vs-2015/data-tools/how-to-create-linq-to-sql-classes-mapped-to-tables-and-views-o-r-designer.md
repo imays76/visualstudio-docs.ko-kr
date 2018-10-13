@@ -1,7 +1,7 @@
 ---
 title: '방법: LINQ to SQL 클래스 매핑 테이블 및 뷰 (O-r 디자이너) 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d9cebc980b62a5676ee4e65e5554086a273fa73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269545"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>방법: LINQ to SQL 클래스 매핑 테이블 및 뷰 (O/R 디자이너) 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 만들 매핑된 LINQ to SQL 클래스 테이블 및 뷰 (O-r 디자이너)](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer)합니다.
-
 LINQ to SQL 클래스 데이터베이스 테이블 및 뷰에 매핑되는 이라고 *엔터티 클래스*합니다. 엔터티 클래스는 레코드에 매핑되지만 엔터티 클래스의 개별 속성 레코드를 구성 하는 각 열에 매핑됩니다. 테이블 또는 뷰를 끌어 데이터베이스 테이블 또는 뷰에에 기반한 엔터티 클래스를 만듭니다 **서버 탐색기**/**데이터베이스 탐색기** 에 [의 LINQ to SQL 도구 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)합니다. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 클래스를 생성 하 고 특정 적용 [! LINQ to SQL 특성을 사용 하도록 설정 [! SQL 기능에는 LINQ (데이터 통신 및 편집의 기능을 <xref:System.Data.Linq.DataContext>). 에 대 한 자세한 내용은 [! LINQ to SQL 클래스를 참조 하세요 [LINQ to SQL 개체 모델](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)합니다.
 
 > [!NOTE]

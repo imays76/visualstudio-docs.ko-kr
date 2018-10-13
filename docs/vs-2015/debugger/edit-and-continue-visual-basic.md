@@ -1,7 +1,7 @@
 ---
 title: 편집 하며 계속 하기 (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 825eac4ab53e95904e85a794b665ce6f6b11f873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61ce8f61092bdcc612ea535debfcface976ebff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265123"
 ---
 # <a name="edit-and-continue-visual-basic"></a>편집하며 계속하기(Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집 하며 계속 하기 (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic)합니다.  
-  
 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 디버깅의 편집하며 계속하기 기능을 사용하면 코드가 중단 모드에서 실행되는 동안 코드를 변경할 수 있습니다. 코드 편집을 적용한 후에 새 편집 내용이 적용된 상태로 코드 실행을 다시 시작하고 그 결과를 확인할 수 있습니다.  
   
  편집하며 계속하기 기능은 중단 모드를 시작할 때마다 사용할 수 있습니다. 중단 모드에서 소스 창에 노란색 화살표로 표시되는 명령 포인터는 다음에 실행할 줄을 가리키며 메서드 또는 속성 본문 내의 실행문에 위치합니다. 중단 모드에서 실행문에 대한 거의 모든 종류의 변경 작업을 수행할 수 있고 이 변경 내용은 내부 프로젝트에 통합됩니다. 그러나 중단 모드에서 공용 메서드, 공용 필드 또는 클래스 선언 같은 선언문에 대한 변경은 일반적으로 허용되지 않습니다.  

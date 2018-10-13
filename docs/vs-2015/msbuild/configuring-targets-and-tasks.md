@@ -1,7 +1,7 @@
 ---
 title: 대상 및 작업 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7756e649fe9bc5907c888ae6141bed45eae8ccae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bb82483b0adef6343423984e3b0d6fa21d0d678
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263517"
 ---
 # <a name="configuring-targets-and-tasks"></a>대상 및 작업 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [대상 및 작업 구성](https://docs.microsoft.com/visualstudio/msbuild/configuring-targets-and-tasks)합니다.  
-  
   
 MSBuild 대상 및 작업을 구성하여 MSBuild를 통해 out-of-process로 실행할 수 있으므로 현재 실행하고 있는 컨텍스트와는 다른 컨텍스트를 대상으로 지정할 수 있습니다. 예를 들어, 개발 컴퓨터가 64비트 .NET Framework 4.5 운영 체제에서 실행되는 동안 32비트 .NET Framework 2.0 응용 프로그램을 대상으로 지정할 수 있습니다. 또한 .NET Framework 4 또는 이전 버전을 실행하는 컴퓨터를 대상으로 지정할 수 있습니다. 32비트 또는 64비트 및 특정 .NET Framework 버전의 조합은 *대상 컨텍스트*로 알려져 있습니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: Windows 레지스트리에서 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e0d3b3a1d7a91e8d4d7f8fc80e57434df3d4c62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f3ea7aa24a6c049b5cee6e130dee839952bef2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541467"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266861"
 ---
 # <a name="tool-windows-in-the-registry"></a>레지스트리에서 Windows 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레지스트리에서 도구 Windows](https://docs.microsoft.com/visualstudio/extensibility/tool-windows-in-the-registry)합니다.  
-  
 도구 창을 제공 하는 Vspackage를 등록 해야 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 으로 도구 창 공급자입니다. Visual Studio 패키지 템플릿을 사용 하 여 만든 도구 windows는 기본적으로이 작업을 수행 합니다. 도구 창 공급자는 기본 도구 창 크기 및 위치에 도구 창 및 도킹 스타일으로 사용 하는 창의 GUID 등의 표시 유형 특성을 지정 하는 시스템 레지스트리 키를 있습니다.  
   
  관리 되는 도구 창 공급자는 개발 하는 동안 소스 코드에 특성을 추가 하 고 다음 결과 어셈블리에서 RegPkg.exe 유틸리티가 실행 하 여 도구 창을 등록 합니다. 자세한 내용은 [도구 창 등록](../extensibility/registering-a-tool-window.md)합니다.  

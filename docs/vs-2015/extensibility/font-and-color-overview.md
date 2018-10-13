@@ -1,7 +1,7 @@
 ---
 title: 글꼴 및 색 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4321619f249a992d9cdd044f621a21d85a6c380
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9fdc81a3fddd4458a54d35c9e5a1b943726b101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245197"
 ---
 # <a name="font-and-color-overview"></a>글꼴 및 색 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [글꼴 및 색 개요](https://docs.microsoft.com/visualstudio/extensibility/font-and-color-overview)합니다.  
-  
 이 항목의 텍스트 글꼴 및 색 설정에 설명 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE)입니다. 범주 및 표시 항목의 개념 소개 하 고 Vspackage 및 핵심 편집기 텍스트 특성을 사용 하는 방법에 대해 설명 합니다.  
   
 ## <a name="the-fonts-and-colors-property-page"></a>글꼴 및 색 속성 페이지  

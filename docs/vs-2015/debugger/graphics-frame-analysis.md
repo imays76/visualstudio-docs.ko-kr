@@ -1,7 +1,7 @@
 ---
 title: 그래픽 프레임 분석 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 048379326f0bcc69cdadb828f6f2f741499d1d46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18b2143d46416ba339bffd4ff1b691c3a9e76fda
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278306"
 ---
 # <a name="graphics-frame-analysis"></a>그래픽 프레임 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [그래픽 프레임 분석](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-frame-analysis)합니다.  
-  
 Visual Studio Graphics Analyzer의 그래픽 프레임 분석을 사용하여 Direct3D 게임 또는 앱의 렌더링 성능을 분석하고 최적화합니다.  
   
 > [!IMPORTANT]

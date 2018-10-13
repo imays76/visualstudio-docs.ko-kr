@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 응용 프로그램에 대 한 업데이트 관리 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 32a221b994bba78f70d70c758ae6c7f58f0668bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555157"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272469"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램에 대한 업데이트 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 응용 프로그램에 대 한 업데이트 관리](https://docs.microsoft.com/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application)합니다.  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 업데이트를 자동으로 또는 프로그래밍 방식으로 확인할 수 있습니다. 개발자는 업데이트 검사를 수행 하는 방법과 시기, 필수 업데이트 인지 여부 및 업데이트를 확인 하는 위치를 지정 하는 유연성을 많이 해야 합니다.  
   
  응용 프로그램이 시작 된 후 설정 된 간격으로 또는 응용 프로그램 시작 전에 자동으로 업데이트를 확인 하려면 응용 프로그램을 구성할 수 있습니다. 또한을 최소 필수 버전으로 지정할 수 있습니다. 즉, 사용자의 버전이 필수 버전 보다 낮은 경우에 업데이트가 설치 됩니다.  

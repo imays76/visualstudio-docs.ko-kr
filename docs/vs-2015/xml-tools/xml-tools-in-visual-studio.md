@@ -1,7 +1,7 @@
 ---
 title: Visual Studio의 XML 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bcc9a3d40aec66eb63543e1e038027b588e61889
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 56c4fe7671751b7a7cd16c7065205978728f8f99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543839"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234132"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio의 XML 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio의 XML 도구](https://docs.microsoft.com/visualstudio/xml-tools/xml-tools-in-visual-studio)합니다.  
-  
   
 Extensible Markup Language (XML) *은 데이터를 설명 하는 형식을 제공 하는 마크업 언어입니다. 이 언어를 사용하면 콘텐츠를 보다 정확하게 선언하고 여러 플랫폼 간에 보다 의미 있는 검색 결과를 얻을 수 있습니다. 또한 XML을 사용하는 경우 표시를 데이터 자체와 구분할 수 있습니다. 예를 들어 HTML에서는 태그를 사용하여 데이터를 굵게, 기울임꼴 등으로 표시하도록 브라우저에 명령하지만 XML에서는 태그를 사용하여 구/군/시 이름, 기온, 기압 등의 데이터만을 설명합니다. XML에서는 XSL(Extensible Stylesheet Language) 및 CSS(CSS 스타일시트)와 같은 스타일시트를 사용하여 브라우저에 데이터를 표시합니다. XML에서는 데이터가 표시 및 프로세스와 구분되므로 여러 스타일시트 및 응용 프로그램을 적용하여 데이터를 원하는 방식으로 표시 및 처리할 수 있습니다.  
   

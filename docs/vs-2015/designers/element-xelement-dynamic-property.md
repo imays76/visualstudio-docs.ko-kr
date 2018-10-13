@@ -1,7 +1,7 @@
 ---
 title: Element(XElement 동적 속성) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 56689506db04ee2aedd484093506db4a4fc7453d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 879e5afb112df1f4c82cec150175b24456c1b0a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554613"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256154"
 ---
 # <a name="element-xelement-dynamic-property"></a>요소(XElement 동적 속성)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Element (XElement 동적 속성)](https://docs.microsoft.com/visualstudio/designers/element-xelement-dynamic-property)합니다.  
-  
 지정한 확장된 이름에 해당하는 자식 요소 인스턴스를 검색하는 데 사용되는 인덱서를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

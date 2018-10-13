@@ -1,7 +1,7 @@
 ---
 title: '방법: 다중 프로젝트 템플릿 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce7147df5b15dd6aaa639c27b2d2ffbc0b3d3152
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256570"
 ---
 # <a name="how-to-create-multi-project-templates"></a>방법: 다중 프로젝트 템플릿 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 다중 프로젝트 템플릿 만들기](https://docs.microsoft.com/visualstudio/ide/how-to-create-multi-project-templates)합니다.  
-  
 다중 프로젝트 템플릿은 두 개 이상의 프로젝트에 대한 컨테이너로 사용됩니다. **새 프로젝트** 대화 상자에서 다중 프로젝트 템플릿에 기반하는 프로젝트를 만든 경우 템플릿의 모든 프로젝트를 솔루션에 추가합니다.  
   
  다중 프로젝트 템플릿에는 .zip 파일로 압축된 다음 항목이 포함되어야 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: VSInstr 경고 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 993ea5f9a6acd07439ce2e551928683e635a13af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13e9363ea40350c5fe23a8fdde45504f70d411a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249160"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 경고
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSInstr 경고](https://docs.microsoft.com/visualstudio/profiling/vsinstr-warnings)합니다.  
-  
 다음 표에는 VSInstr.exe 도구에서 발생되는 경고가 나와 있습니다. 경고 번호와 NOWARN 옵션을 함께 사용하여 경고가 표시되지 않도록 할 수 있습니다.  
   
 |경고 번호|설명|  
