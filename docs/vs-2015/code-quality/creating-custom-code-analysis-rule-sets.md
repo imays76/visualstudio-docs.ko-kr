@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 코드 분석 규칙 집합 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67df017724f31a14504bbd7e2b66657b1db918b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273587"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>사용자 지정 코드 분석 규칙 집합 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 코드 분석 규칙 집합 만들기](https://docs.microsoft.com/visualstudio/code-quality/creating-custom-code-analysis-rule-sets)합니다.  
-  
 하나 이상의 규칙을 포함 하는 규칙 집합을 지정 하 여 관리 코드 프로젝트에 코드 분석 규칙을 적용 합니다. Microsoft 표준 규칙 집합에는 함수 및 깊이으로 구성 된 규칙 그룹을 제공 합니다. 예를 들어, Microsoft 기본 디자인 지침 규칙 및 Microsoft 확장 디자인 지침 규칙 규칙 확장 규칙 집합의 명명 규칙에 주안점을 사용 하 여 유용성 및 유지 관리 문제에 중점을 둔을 포함 합니다.  
   
  두 가지를 결합 하는 사용자 지정 규칙 집합을 만들 수도 있습니다 하거나 더 많은 표준 규칙 집합 또는 하나 이상의 표준 규칙 집합에서 규칙을 지정 합니다. .Ruleset 파일 설정 사용자 지정 규칙을 저장 하 고 여러 코드 프로젝트에 지정할 수 있습니다.  

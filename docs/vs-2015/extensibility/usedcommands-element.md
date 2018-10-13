@@ -1,7 +1,7 @@
 ---
 title: UsedCommands 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8a3f4719b6d35be56ba447279d3a85d2a3f5118
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fe7f29fabb62b7f7703ad501d332c9d37c1e47b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276375"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UsedCommands 요소](https://docs.microsoft.com/visualstudio/extensibility/usedcommands-element)합니다.  
-  
 UsedCommands 요소 UsedCommand 요소 및 기타 UsedCommands 그룹화를 그룹화합니다.  
   
  UsedCommands 요소는 선택 사항입니다. 패키지 외부에 정의 된 명령을 호출 하지 않으면.vsct 파일의이 섹션을 포함할 필요가 없습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 등록 및 선택 (소스 제어 VSPackage) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef8cf369d2660523bdfe4ad6eaa83be5748eedf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305788"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>등록 및 선택(소스 제어 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [등록 및 선택 (소스 제어 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/registration-and-selection-source-control-vspackage)합니다.  
-  
 소스 제어 VSPackage를 노출 하려면 등록 해야 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 둘 이상의 소스 제어 VSPackage를 등록 하는 경우 사용자가 적절 한 시간에 로드 하는 VSPackage 선택할 수 있습니다. 참조 [Vspackage](../../extensibility/internals/vspackages.md) Vspackage 및 등록 하는 방법에 대 한 자세한 내용은 합니다.  
   
 ## <a name="registering-a-source-control-package"></a>원본 제어 패키지 등록  

@@ -1,7 +1,7 @@
 ---
 title: XML 문서 주석 (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5accfb63d33a028048c9715cfe9cdf728a5db2d
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 26d690948378998f83d4fe6c8f909ffca1d3df8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878839"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225630"
 ---
 # <a name="xml-documentation-comments-javascript"></a>XML 문서 주석(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 Javascript에서 소스 코드의 특수 주석 필드에 XML 태그를 넣어 코드 설명서를 만들 수 있습니다. IntelliSense는 이러한 XML 태그를 사용하여 JavaScript 개체에 대한 정보를 제공합니다.  
   
  코드 주석의 위치는 특정 태그에 따라 달라집니다.  

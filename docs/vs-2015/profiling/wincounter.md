@@ -1,7 +1,7 @@
 ---
 title: WinCounter | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a8e381ed058c30dcbf1760f380cf065c1443cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1331dcc09359868e9524f8a4fca7ed070342cbcc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554347"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300627"
 ---
 # <a name="wincounter"></a>WinCounter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WinCounter](https://docs.microsoft.com/visualstudio/profiling/wincounter)합니다.  
-  
 **WinCounter** 옵션은 Windows 또는 응용 프로그램 성능 카운터를 지정하여 프로파일링 실행 동안 설정한 간격에 따라 수집합니다. Windows 및 응용 프로그램 성능 카운터는 프로파일링 데이터 파일에 표시로 나열됩니다. 여러 성능 카운터를 지정하여 별도 옵션에 수집할 수 있습니다.  
   
  기본적으로 카운터는 500밀리초마다 수집됩니다. **AutoMark** 옵션을 사용하여 다른 수집 간격을 지정합니다.  

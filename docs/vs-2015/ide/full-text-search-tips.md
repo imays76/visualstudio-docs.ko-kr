@@ -1,7 +1,7 @@
 ---
 title: 전체 텍스트 검색 팁 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f5fe5e4d4e1f5e1c071bd4da89588022bde9831
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555677"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303435"
 ---
 # <a name="full-text-search-tips"></a>전체 텍스트 검색 팁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [전체 텍스트 검색 팁](https://docs.microsoft.com/visualstudio/ide/full-text-search-tips)합니다.  
-  
 도움말에서 정보를 찾는 유용한 방법 중 하나는 전체 텍스트 검색을 수행하는 것입니다. 결과를 구체화하고 사용자 지정하려면 구문이 쿼리에 미치는 영향을 이해해야 합니다. 이 항목에서는 쿼리 작성에 도움이 되는 팁, 절차 및 자세한 구문 정보를 제공합니다.  
   
 ## <a name="full-text-search-tips"></a>전체 텍스트 검색 팁  

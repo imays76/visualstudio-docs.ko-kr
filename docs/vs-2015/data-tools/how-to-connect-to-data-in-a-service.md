@@ -1,7 +1,7 @@
 ---
 title: '방법: 데이터 서비스에 연결 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 303e41c5d194fbb1c03e35dd37990f8b63dedf4f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce851a864dd11759c36c7ae6cb275e9e71cd11a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301797"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>방법: 서비스의 데이터에 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 데이터 서비스에 연결할](https://docs.microsoft.com/visualstudio/data-tools/how-to-connect-to-data-in-a-service)합니다.  
-  
   
 응용 프로그램을 실행 하 여 서비스에서 반환 되는 데이터 연결 합니다 [데이터 소스 구성 마법사](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) 를 선택 하 고 **서비스** 에 **데이터소스형식선택**페이지.  
   

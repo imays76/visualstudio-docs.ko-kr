@@ -1,7 +1,7 @@
 ---
 title: 보고서 뷰 필터링 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5fe6ce49a9ffee4230cfd4c0528b53761bc1caf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238292"
 ---
 # <a name="filtering-report-views"></a>보고서 뷰 필터링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [보고서 뷰 필터링](https://docs.microsoft.com/visualstudio/profiling/filtering-report-views)합니다.  
-  
 프로파일링 데이터 파일에 필터를 적용하여 성능 보고서 뷰에 표시되고 보고서 파일로 내보내는 프로파일링 데이터를 제한할 수 있습니다. 타임스탬프 값 사이의 데이터로 보고서를 제한하고, 특정 프로세스 및 스레드로 데이터를 제한할 수 있습니다. 파일에 필터를 저장한 다음 저장된 필터를 가져와서 다른 프로파일링 데이터 파일에서 필터를 만들 수 있습니다.  
   
  요약 뷰에서 그래픽 타임라인을 사용하여 보고서를 시간 세그먼트로 제한할 수도 있습니다. [방법: 요약 타임라인에서 보고서 뷰 필터링](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)을 참조하세요.  

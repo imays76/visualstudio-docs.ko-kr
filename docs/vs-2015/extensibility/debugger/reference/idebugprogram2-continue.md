@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::Continue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e545e69cf05f5d40555e31546ec8d92d8d7f6e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4429e4ba9d60dfa8db78ba38257a93b4c14c87e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543186"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226228"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProgram2::Continue](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-continue)합니다.  
-  
 중지 된 상태에서이 프로그램 실행을 계속 합니다. 이전 실행 상태 (예: 단계)은 유지, 프로그램이 다시 실행을 시작 하 고 있습니다.  
   
 > [!NOTE]

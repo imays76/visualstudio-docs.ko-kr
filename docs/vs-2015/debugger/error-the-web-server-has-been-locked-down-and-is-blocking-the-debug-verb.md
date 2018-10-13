@@ -1,7 +1,7 @@
 ---
 title: '오류: 웹 서버가 잠겨 있기 차단 하 고 DEBUG 동사 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d523b53d4f3175305ed19813cab276d42931c27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5a31f09577333f702ffa2ef94e0aacc07283cbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299756"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: The 웹 서버에 된 잠긴 작동 중단 및 DEBUG 동사를 차단 하는](https://docs.microsoft.com/visualstudio/debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb)합니다.  
-  
 IIS 잠금 도구가 실행되었고 URLScan이 설치되어 활성화되어 있기 때문에 웹 응용 프로그램 또는 XML Web services를 한 단계씩 실행하지 못했습니다. 이 상태가 되면 IIS에서 DEBUG 동사를 받을 수 없습니다.  
   
  URLScan은 IIS 잠금 도구와 함께 작동하는 보안 도구로서, IIS 웹 사이트 관리자는 이 도구를 사용하여 필요하지 않은 기능을 끄고 서버에서 처리하는 HTTP 요청 형식을 제한할 수 있습니다. URLScan 보안 도구를 사용하면 특정 HTTP 요청을 차단하여 위험한 요청이 서버로 들어와 서버가 손상되는 것을 방지할 수 있습니다.  

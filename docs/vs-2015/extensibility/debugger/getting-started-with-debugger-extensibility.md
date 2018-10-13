@@ -1,7 +1,7 @@
 ---
 title: 디버거 확장성 시작 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8f056ed8fff53eb166b37f2adba9daa17f12916
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 321c4790decb81d91ef57afe6bedffcd89a179e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304975"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>디버거 확장성 시작
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거 확장성 시작](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-started-with-debugger-extensibility)합니다.  
-  
 합니다 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 만들고 디버거 구성 요소 내에서 프로그램을 디버그 하는 데 사용자 지정 해야 하는 정보를 제공 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 환경입니다.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 가 이전에 수행 하는 테스트가 광범위 한 유용성에서 파생 하는 향상 된 추가 디버깅 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 디버거. 사용할 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 다국어 응용 프로그램을 단계별로 디버깅 즉석에서 응용 프로그램 및 다중 언어 솔루션을 디버깅 하는 동안 변수 편집 구현할 수 있습니다.  

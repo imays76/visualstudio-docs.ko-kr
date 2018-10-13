@@ -1,7 +1,7 @@
 ---
 title: '9단계: 코드 검토, 주석 처리 및 테스트 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e520d77a09ac9a1b1f19670c6638d064430af80f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3743c31aeca3c6e34afa84ed8c9ee3ddd59d98a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300406"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9단계: 코드 검토, 주석 처리 및 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [9 단계: 테스트 코드 검토, 주석 및](https://docs.microsoft.com/visualstudio/ide/step-9-review-comment-and-test-your-code)합니다.  
-  
 다음으로 코드에 주석을 추가합니다. 주석은 프로그램 동작에 영향을 주지 않는 일종의 메모로서 코드를 읽는 사용자가 코드에서 수행하는 작업을 보다 쉽게 이해할 수 있도록 도와줍니다. 코드에 주석을 추가하는 것은 좋은 습관입니다. Visual C#에서는 두 개의 슬래시(//)를 사용하여 주석 줄을 표시하고, Visual Basic에서는 작은따옴표(')를 사용하여 주석 줄을 표시합니다. 주석을 추가한 후에는 프로그램을 테스트합니다. 프로젝트에서 작업하는 동안 자주 코드를 실행하고 테스트하는 것은 좋은 습관이며, 코드가 더 복잡해지기 전에 조기에 문제를 파악하고 해결할 수 있습니다. 이를 *반복적 테스트*라고 합니다.  
   
  이제 아직 완성되지는 않았지만 그림을 로드할 수 있는 프로그램이 빌드되었습니다. 코드에 주석을 추가하고 테스트하려면 먼저 이러한 작업에 자주 사용될 다음과 같은 코드 개념을 알아야 합니다.  

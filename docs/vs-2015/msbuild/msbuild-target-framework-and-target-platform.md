@@ -1,7 +1,7 @@
 ---
 title: MSBuild 대상 프레임워크 및 대상 플랫폼 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e699096af425897e3bd3c724b483cc3fea2ffb29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd227c94b81babab262a6a7210aabd68ca1e143e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239138"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 대상 프레임워크 및 대상 플랫폼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 대상 프레임 워크 및 대상 플랫폼](https://docs.microsoft.com/visualstudio/msbuild/msbuild-target-framework-and-target-platform)합니다.  
-  
   
 프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼*에서 실행되도록 빌드할 수 있습니다.  예를 들어 802x86 프로세서 제품군("x86")과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 응용 프로그램을 타기팅할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다.  
   

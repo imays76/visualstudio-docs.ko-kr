@@ -1,7 +1,7 @@
 ---
 title: '방법: MIP 맵을 포함하는 질감 내보내기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a876676eed593bfa06c3e89521522d9901c58ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10a8a918de6f4228e34660b1699b3b9204e5218d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299665"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>방법: 밉 맵을 포함하는 질감 내보내기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: mip 맵을 포함 하는 질감 내보내기](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-that-contains-mipmaps)합니다.  
-  
 이미지 콘텐츠 파이프라인은 프로젝트의 빌드 단계 중에 소스 이미지에서 MIP 맵을 생성할 수 있습니다. 각 MIP 수준의 이미지 콘텐츠를 수동으로 지정할 필요가 없는 경우(이 작업은 특정 효과를 적용하기 위해 수행할 수 있음) 빌드 시 MIP 맵을 생성하면 MIP 맵 콘텐츠가 동기화되지 않고 런타임에 MIP 맵을 생성하는 동안 성능이 저하되지 않습니다.  
   
  이 문서는 다음 활동을 보여 줍니다.  

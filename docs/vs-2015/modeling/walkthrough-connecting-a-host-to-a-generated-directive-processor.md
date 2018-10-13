@@ -1,7 +1,7 @@
 ---
 title: '연습: 생성된 된 지시문 프로세서에 호스트 연결 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 451dcf21e8965de9ea350577c819daefb150a5d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251939"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 생성 된 지시문 프로세서에 호스트 연결](https://docs.microsoft.com/visualstudio/modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor)합니다.  
-  
 텍스트 템플릿을 처리 하는 고유한 호스트를 작성할 수 있습니다. 기본 사용자 지정 호스트를 보여 줍니다 [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)합니다. 여러 출력 파일을 생성 하는 등의 기능을 추가 하려면 해당 호스트를 확장할 수 있습니다.  
   
  이 연습에서는 텍스트 템플릿 지시문 프로세서를 호출 하는 지원 하도록 해당 사용자 지정 호스트를 확장 합니다. 도메인 특정 언어를 정의 하는 경우 생성 된 *지시문 프로세서* 도메인 모델에 대 한 합니다. 지시문 프로세서를 사용 하면 쉽게 어셈블리를 작성 하 고 import 지시문 템플릿에 필요성이 줄어듭니다 모델에 액세스 하는 템플릿을 작성할 수 있습니다.  

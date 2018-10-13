@@ -1,7 +1,7 @@
 ---
 title: Windows 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd40259af773e268a8786f370591d5d0a474b05e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261705"
 ---
 # <a name="windows-view"></a>창 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows 보기](https://docs.microsoft.com/visualstudio/debugger/windows-view)합니다.  
-  
 처음 열면 Spy + +, Windows 뷰 시스템의 모든 창과 컨트롤의 트리를 표시 합니다. 창 핸들 및 클래스 이름이 표시 됩니다. 현재 데스크톱 기간은 트리의 맨 위에 있는 것입니다. 다른 모든 windows 데스크톱의 자식 이며 표준 창 계층에 따라 표시 됩니다. 형제 창이 해당 부모의 아래 expansible 목록에 나타납니다.  
   
  아래 그림에는 확장 최상위 노드를 사용 하 여 일반적인 Spy + + Windows 뷰를 보여 줍니다.  

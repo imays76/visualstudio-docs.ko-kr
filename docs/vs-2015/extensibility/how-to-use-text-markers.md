@@ -1,7 +1,7 @@
 ---
 title: '방법: 텍스트 표식을 사용 하 여 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 291b24af4faf2cb285f744dff232a541c2f364f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c23bcddceaf3d019add25c5d60ed843912348cc7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243414"
 ---
 # <a name="how-to-use-text-markers"></a>방법: 텍스트 마커를 사용 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 사용 하 여 텍스트 마커](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-text-markers)합니다.  
-  
 텍스트 마커를 편집 하려면 적용할 수는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 개체입니다.  
   
 ## <a name="procedures"></a>절차  

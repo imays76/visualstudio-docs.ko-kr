@@ -1,7 +1,7 @@
 ---
 title: (Xaml 및 C#) Visual Studio에서 디버깅 세션 탐색 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306308"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Visual Studio에서 디버깅 세션 탐색(XAML 및 C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [(Xaml 및 C#) Visual Studio에서 디버깅 세션 탐색](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp)합니다.  
-  
 이 빠른 시작에서는 Visual Studio 디버그 세션을 탐색하는 방법 및 세션에서 프로그램 상태를 보고 변경하는 방법을 보여 줍니다.  
   
  이 빠른 시작은 처음으로 Visual Studio를 사용하여 디버깅하는 개발자 및 Visual Studio 디버그 세션 탐색에 대해 자세히 알아보려는 개발자를 위한 것이며, 디버깅 자체의 기술에 대해서는 설명하지 않습니다. 샘플 코드의 메서드는 이 항목에서 설명하는 디버깅 절차를 보여 주기 위해서만 설계되었습니다. 이 메서드는 앱 또는 함수 디자인의 모범 사례를 사용하지 않습니다. 실제로 메서드 및 앱 자체가 많은 기능을 수행하지 않는다는 것을 금방 알 수 있습니다.  

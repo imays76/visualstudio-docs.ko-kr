@@ -1,7 +1,7 @@
 ---
 title: 개체 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 732e4270d1e3325c66a44e13bde25cf831973642
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a113e0240fae8c4cd34e8c1632a5244a3711575
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299613"
 ---
 # <a name="objects"></a>개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [개체](https://docs.microsoft.com/visualstudio/extensibility/objects)합니다.  
-  
 다음과 같은 참조 정보는 핵심 텍스트 편집기의 인스턴스를 만드는 데 사용 되는 개체를 설명 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

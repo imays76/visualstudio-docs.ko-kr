@@ -1,7 +1,7 @@
 ---
 title: 소스 제어 Vspackage 시작 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6336c5f683d503923f14fa45a75004301393297d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b28b659d6f0af9164033e681a15d2fa2b4d1bd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565098"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272222"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>소스 제어 VSPackage 시작
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 Vspackage 시작](https://docs.microsoft.com/visualstudio/extensibility/internals/getting-started-with-source-control-vspackages)합니다.  
-  
 소스 제어 VSPackage는 소스 제어 플러그 인에 대해 고급 대체입니다. (참조 [는 원본 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md) 원본에 대 한 자세한 내용은 플러그 인을 제어 합니다.) 소스 제어 VSPackage 소스 컨트롤 모델, 기능 및 사용자 인터페이스 (UI)를 완전히 제어할 수 있습니다 및 통합 하는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage로 환경입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

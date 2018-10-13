@@ -1,7 +1,7 @@
 ---
 title: 실행 취소 디자이너 지원을 제공 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbd83149ad638eed7a1dc714c782f3958d3ea448
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ca68d0046e7dc46087fa6de3835bd6246bc58e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267360"
 ---
 # <a name="supplying-undo-support-to-designers"></a>디자이너에 실행 취소 지원 제공
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디자이너에 실행 취소 지원 제공](https://docs.microsoft.com/visualstudio/extensibility/supplying-undo-support-to-designers)합니다.  
-  
 일반적으로 디자이너, 편집기와 같은 코드 요소를 수정 하는 경우 사용자가 최근 변경 내용이 되돌릴 수 있도록 실행 취소 작업을 지원 해야 합니다.  
   
  Visual Studio에서 구현 하는 대부분의 디자이너는 실행 취소 지원 환경에서 자동으로 제공 합니다.  

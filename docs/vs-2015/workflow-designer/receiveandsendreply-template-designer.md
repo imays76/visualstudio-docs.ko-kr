@@ -1,7 +1,7 @@
 ---
 title: ReceiveAndSendReply 템플릿 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 098df3cd22736ce5a187ca9988be6906c81a3fb0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6536ea4053e889e45fa85d2230a73c446bd1feea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302993"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 템플릿 디자이너
 **ReceiveAndSendReply** 서식 파일은 쌍을 만드는 데 미리 구성 된 <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 내에서 작업을 <xref:System.Activities.Statements.Sequence> 요청/응답 메시지 교환의 일환으로 상호 연결 되는 서버의 패턴입니다.  

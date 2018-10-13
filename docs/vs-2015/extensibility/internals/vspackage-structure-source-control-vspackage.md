@@ -1,7 +1,7 @@
 ---
 title: VSPackage 구조 (소스 제어 VSPackage) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c27eb3c0bc977f716d3437042e1e4105eb1692d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305034"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 구조(소스 제어 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSPackage 구조 (소스 제어 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-structure-source-control-vspackage)합니다.  
-  
 소스 제어 패키지 SDK를 사용 하 여 자신의 소스 제어 기능을 통합 하는 원본 제어 구현자를 허용 하는 VSPackage를 만들기 위한 지침 제공을 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 환경입니다. VSPackage는 일반적으로 하 여 요청 시 로드 되는 COM 구성 요소는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 해당 레지스트리 항목에서 패키지를 통해 보급 되는 서비스를 기반으로 한 통합된 개발 환경 (IDE)입니다. 모든 VSPackage 구현 해야 합니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>합니다. 제공 하는 서비스를 일반적으로 사용 하는 VSPackage는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE proffers 자체의 일부 서비스 및 합니다.  
   
  VSPackage는 해당 메뉴 항목을 선언 하 고.vsct 파일을 통해 기본 항목 상태를 설정 합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE는 VSPackage가 로드 될 때까지이 상태에서 메뉴 항목을 표시 합니다. 이후에 VSPackage 구현 된 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드는 메뉴 항목을 사용할지 여부를 합니다.  

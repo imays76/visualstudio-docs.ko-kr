@@ -1,7 +1,7 @@
 ---
 title: '방법: 트랜잭션을 사용 모델을 업데이트 하 여 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fe70656f5bcc9e8c132594ff6bb4fec646e5df5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236862"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>방법: 트랜잭션을 사용하여 모델 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 트랜잭션을 사용 하 여 모델 업데이트](https://docs.microsoft.com/visualstudio/modeling/how-to-use-transactions-to-update-the-model)합니다.  
-  
 트랜잭션에 저장소에 대 한 변경 내용을 그룹으로 처리할지 있는지 확인 합니다. 그룹화 된 변경 내용은 커밋 또는 단일 단위로 롤백될 수 있습니다.  
   
  프로그램 코드를 수정, 추가 또는 저장소에 있는 모든 요소를 삭제 될 때마다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK 트랜잭션 내에서 이렇게 해야 합니다. 활성 인스턴스가 있어야 <xref:Microsoft.VisualStudio.Modeling.Transaction> 변경이 발생할 때 저장소와 연결 합니다. 이 모든 모델 요소, 관계, 모양, 다이어그램 및 해당 속성에 적용 됩니다.  

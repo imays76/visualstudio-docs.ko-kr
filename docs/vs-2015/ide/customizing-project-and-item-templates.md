@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 템플릿 및 항목 템플릿 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 594b8a73cab470b29b2e3a81da8739ec6965f14e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c26203fe5a3cd187ef53a573d31697ef16567f59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550313"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234275"
 ---
 # <a name="customizing-project-and-item-templates"></a>프로젝트 템플릿 및 항목 템플릿 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 프로젝트 및 항목 템플릿](https://docs.microsoft.com/visualstudio/ide/customizing-project-and-item-templates)합니다.  
-  
 프로젝트 및 항목 템플릿을 만든 후에도 필요에 맞게 추가로 사용자 지정할 수 있습니다.  
   
  예를 들어, 아래와 같은 작업을 수행할 수 있습니다.  

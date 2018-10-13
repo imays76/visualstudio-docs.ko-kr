@@ -1,7 +1,7 @@
 ---
 title: '방법: COM 서버 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79e9ffce5e7cd77acb4784fd2d26b268efad7b3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7f728762022fc51efcfafb49755894be1086f5b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549460"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266934"
 ---
 # <a name="how-to-debug-com-servers"></a>방법: COM 서버 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: COM 서버 디버그](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-com-servers)합니다.  
-  
 COM 서버 응용 프로그램을 디버깅할 경우 쉽게 해결할 수 없는 몇 가지 문제가 발생합니다.  
   
  컨테이너 응용 프로그램에 대한 디버깅 정보가 없거나 필요하지 않은 경우에는 다음 3단계 절차를 통해 서버 응용 프로그램 디버깅을 시작할 수 있습니다.  

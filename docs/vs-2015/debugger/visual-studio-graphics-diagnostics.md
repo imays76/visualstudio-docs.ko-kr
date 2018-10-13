@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 그래픽 진단 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c708900a0eebb2f4de1515eeab2f788eb5345a03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1ada0fb0379846d7c0a0af5a6ab28906b29f619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294205"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 그래픽 진단](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)합니다.  
-  
 Visual Studio*그래픽 진단* 기록 하 고 다음 Direct3D 앱의 렌더링 및 성능 문제를 분석에 대 한 도구 집합이 있습니다. Windows PC에서 로컬로 실행 중이거나 Windows 장치 에뮬레이터 또는 원격 PC나 장치에서 실행 중인 앱에서 그래픽 진단을 사용할 수 있습니다.  
   
  그래픽 진단 워크플로에서는 동작을 즉시 분석, 공유 또는 나중에 저장할 수 있도록 먼저 앱이 Direct3D를 사용하는 방법(라이브, 실행 시)에 대한 기록을 캡처합니다. 캡처 세션을 시작할 수 있습니다 및 Visual Studio 또는 명령줄 캡처 도구를 사용 하 여 수동으로 제어할 **dxcap.exe**합니다. 그래픽 진단 캡처 API를 사용하여 프로그래밍 방식으로 캡처 세션을 시작 및 제어할 수도 있습니다.  
@@ -47,7 +45,7 @@ Visual Studio*그래픽 진단* 기록 하 고 다음 Direct3D 앱의 렌더링 
  [시작](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  이 섹션에서는 Visual Studio 그래픽 진단을 설치하는 방법 및 Direct3D 앱과 함께 그래픽 진단을 사용하는 방법을 알아보겠습니다.  
   
- [그래픽 정보 캡처](../debugger/capturing-graphics-information.md)  
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
  그래픽 진단을 사용하여 앱의 렌더링 문제를 검사하려면 먼저 앱에서 DirectX를 사용하는 방식에 대한 정보를 기록합니다. 녹음/녹화 세션 중 앱 정상적으로 실행 하면 *캡처* (즉, 선택)에서 관심 있는 프레임입니다. 캡처에는 프레임이 렌더링되는 방법에 대한 자세한 정보가 포함됩니다. 나중에 검사하거나 팀의 다른 멤버와 공유할 수 있도록 캡처한 정보를 그래픽 로그 문서로 저장할 수 있습니다.  
   
  [GPU 사용량](../debugger/gpu-usage.md)  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 엔터티 클래스에 유효성 검사 추가 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f512a330a1253f0db9b0f7e75de5f0a6ca52658d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: faa6f205bfc4033ea4adb92f5d0d0a6718d4ac47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593010"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286405"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>방법: 엔터티 클래스에 유효성 검사 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 엔터티 클래스에 유효성 검사 추가](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-validation-to-entity-classes)합니다.  
-  
   
 *유효성 검사* 엔터티 클래스는 데이터 개체에 입력 한 값 제약 조건 개체의 스키마 및 응용 프로그램에 대 한 설정 된 규칙에 부합 하는 프로세스 확인입니다. 업데이트를 내부 데이터베이스에 보내기 전에 데이터의 유효성을 검사하면 오류를 줄일 수 있습니다. 또한 응용 프로그램과 데이터베이스 간에 발생할 수 있는 잠재적 라운드트립 횟수를 줄일 수 있습니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: Visual Basic에서 지원 되지 않는 편집 편집 하며 계속 하기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffe536b21b5569ad3427dfe4e3b281887cc00b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542616"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296324"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic 편집하며 계속하기에서 지원되지 않는 편집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Basic 편집 하며 계속 하기에서 지원 되지 않는 편집](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue)합니다.  
-  
 편집하며 계속하기를 사용하면 중단 모드에서 프로그램 실행을 중지하고 실행 코드를 변경한 다음 새로 통합된 변경 내용을 사용하여 프로그램 실행을 다시 시작할 수 있습니다. 클래스의 공용 구조체에 영향을 주는 선언 코드 편집은 일반적으로 허용되지 않지만, 클래스 내의 private 선언, 속성 본문 또는 메서드에 대한 다양한 편집이 허용됩니다.  
   
  지원되지 않는 변경을 수행해야 하는 경우에는 디버깅을 중지하고 변경한 다음 디버깅 세션을 새로 시작해야 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 메뉴 항목 동적 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: edd3a97eea69843bcd09a9483a7cea196d3a4c5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb0cd49d8ce9f1851bd54bb3362932de775eb2c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300204"
 ---
 # <a name="dynamically-adding-menu-items"></a>메뉴 항목 동적 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [메뉴 항목 동적 추가](https://docs.microsoft.com/visualstudio/extensibility/dynamically-adding-menu-items)합니다.  
-  
 지정 하 여 런타임에 메뉴 항목을 추가할 수는 `DynamicItemStart` 명령을 Visual Studio 명령 테이블 (.vsct) 파일에서 자리 표시자 단추 정의에서 플래그를 표시 하 고 처리 명령이 항목 코드에서 메뉴의 수를 정의 합니다. VSPackage가 로드 되 면 자리 표시자 동적 메뉴 항목으로 바뀝니다.  
   
  Visual Studio에서의 동적 목록을 사용 합니다 **가장 최근에 사용 됨** 최근에 열린 문서의 이름을 표시 하는 (사용한 MRU) 목록의 하며 **Windows** 창의 이름을 표시 하는 목록을 현재 열려 있습니다.   `DynamicItemStart` 플래그 명령 정의를 VSPackage 열릴 때까지 명령은 자리 표시자 지정 합니다. VSPackage가 열리면 자리 표시자는 0 또는 런타임 시 생성 되 고 동적 목록에 추가할 수 있는 추가 명령은 바뀝니다. VSPackage 열릴 때까지 동적 목록이 표시 되는 나타나는 메뉴에서 위치를 볼 수 있습니다.  동적 목록으로 채우려면 Visual Studio는 첫 번째 문자가 자리 표시자의 ID와 동일 하는 ID 사용 하 여 명령에 대 한 검색할 VSPackage를 요청 합니다. Visual Studio가 일치 하는 명령을 찾으면 명령의 이름을 동적 목록에 추가 합니다. 그런 다음 ID를 증가 하 고 더 동적 명령 없을 때까지 동적 목록에 추가 하는 다른 일치 하는 명령을 찾습니다.  

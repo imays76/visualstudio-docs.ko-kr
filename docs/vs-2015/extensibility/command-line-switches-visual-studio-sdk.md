@@ -1,7 +1,7 @@
 ---
 title: 명령줄 스위치 (Visual Studio SDK) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70a30a4441fc3e2126608860f671357128025cfe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04a40cde9caeb3386776bbfb6cd31c9a2931d0d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303142"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>명령줄 스위치(Visual Studio SDK)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [명령줄 스위치 (Visual Studio SDK)](https://docs.microsoft.com/visualstudio/extensibility/command-line-switches-visual-studio-sdk)합니다.  
-  
 Devenv.exe를 시작 하는 실행 파일을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE), 특히 vspackage 개발에 대 한 명령줄 스위치를 지원 합니다. Vspackage 수 또한 자신의 스위치에서 사용할 수 있도록 Devenv 명령줄입니다. 다음 항목에서는 IDE에서 명령줄 스위치를 사용 하는 방법에 대 한 정보를 제공 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

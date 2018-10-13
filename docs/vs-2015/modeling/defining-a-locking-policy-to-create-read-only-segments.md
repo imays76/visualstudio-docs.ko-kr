@@ -1,7 +1,7 @@
 ---
 title: 잠금 정책을 정의 하 여 읽기 전용 세그먼트 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8af4722d76b9d68f4e880175bccdb1730b6e163b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231415"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [잠금 정책을 정의 하는 읽기 전용 세그먼트 만들기를](https://docs.microsoft.com/visualstudio/modeling/defining-a-locking-policy-to-create-read-only-segments)입니다.  
-  
 불변성 API는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK을 통해 프로그램에서는 잠금 일부 또는 전체 도메인 특정 언어 (DSL) 모델을 읽을 수 있지만 변경 되지 않도록 합니다. 이 읽기 전용 옵션이 사용할 수 있습니다, 예를 들어 사용자 동료 들이 주석 달기 및 DSL 모델 검토를 요청할 수 있지만 원래 변경에서 차단할 수 있습니다.  
   
  또한 DSL 작성자 정의할 수 있습니다는 *잠금 정책을 합니다.* 잠금 정책을 허용, 허용 되지 않음 또는 필수 되는 잠금을 정의 합니다. 예를 들어 DSL에 게시할 때 새 명령을 사용 하 여 확장 하는 타사 개발자가 게 요청할 수 있습니다. 하지만 모델의 지정 된 파트의 읽기 전용 상태를 변경 하지 못하도록 잠금 정책을 사용할 수도 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 파일 열기 명령 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 51be74b491ee9a45cfac4735332146b9c5ffb06d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b519d8defcdc4b43dd7ca84552536ca655bb348
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247938"
 ---
 # <a name="open-file-command"></a>파일 열기 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [열려 있는 파일 명령](https://docs.microsoft.com/visualstudio/ide/reference/open-file-command)입니다.  
-  
   
 기존 파일을 열고 편집기를 지정할 수 있습니다.  
   
@@ -72,7 +70,7 @@ File.OpenFile filename [/e:editorname]
  [명령 창](../../ide/reference/command-window.md)   
  [직접 실행 창](../../ide/reference/immediate-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

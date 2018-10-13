@@ -1,7 +1,7 @@
 ---
 title: '연습: XSLT Profiler | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a52682dbbec3f4e1cdc50027ca365cd9a1ca44b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229452"
 ---
 # <a name="walkthrough-xslt-profiler"></a>연습: XSLT 프로파일러
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: XSLT Profiler](https://docs.microsoft.com/visualstudio/xml-tools/walkthrough-xslt-profiler)합니다.  
-  
   
 XSLT 프로파일러는 XSLT 코드의 성능 관련 문제를 측정 및 평가하고, 대상으로 지정하는 데 도움이 되는 자세한 XSLT 성능 보고서를 만듭니다. XSLT 프로파일러에는 XSL 및 XSLT 스타일시트 최적화에 유용한 힌트도 포함되어 있습니다. 최대 성능이 필요한 XSLT 응용 프로그램의 경우 이 도구가 반드시 필요합니다.  
   

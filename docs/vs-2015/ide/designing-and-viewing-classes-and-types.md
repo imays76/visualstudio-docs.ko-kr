@@ -1,7 +1,7 @@
 ---
 title: 클래스와 형식 디자인 및 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2a882f5da56884c86d042d2c562796ae6111dc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191624"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>클래스와 형식 디자인 및 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [보기 클래스와 형식 디자인 및](https://docs.microsoft.com/visualstudio/ide/designing-and-viewing-classes-and-types)합니다.  
-  
 Visual Studio에서 클래스 디자이너를 사용하여 코드의 클래스와 기타 형식을 디자인, 시각화 및 리팩터링할 수 있습니다. 클래스 다이어그램을 사용하면 Visual C# .NET, Visual Basic .NET 또는 C++ 프로젝트에서 클래스를 만들고 편집하거나 프로젝트 구조를 보다 효율적으로 파악하거나 코드를 다시 구성할 수 있습니다.  
   
  클래스 다이어그램을 사용하여 수행할 수 있는 자세한 작업은 다음과 같습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,19 +15,17 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62fd774744c9bb9184d3dcc25eb7827f93feb223
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551914"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303461"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>사용자 지정 호스트를 사용하여 텍스트 템플릿 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](https://docs.microsoft.com/visualstudio/modeling/processing-text-templates-by-using-a-custom-host)합니다.  
-  
-합니다 *텍스트 템플릿 변환* 프로세스에서는 *텍스트 템플릿* 파일을 입력 하 고 텍스트 파일을 출력으로 생성 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서나 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 설치된 컴퓨터에서 실행되는 독립 실행형 응용 프로그램에서 텍스트 변환 엔진을 호출할 수 있습니다. 그러나 제공 해야 합니다는 *텍스트 템플릿 호스트*합니다. 이 클래스는 템플릿을 환경에 연결하여 어셈블리, 포함 파일 등의 리소스를 찾고 출력 및 오류 메시지를 처리합니다.  
+합니다 *텍스트 템플릿 변환* 프로세스에서는 *텍스트 템플릿* 파일을 입력 하 고 텍스트 파일을 출력으로 생성 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장명에서나 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 설치된 컴퓨터에서 실행되는 독립 실행형 응용 프로그램에서 텍스트 변형 엔진을 호출할 수 있습니다. 그러나 제공 해야 합니다는 *텍스트 템플릿 호스트*합니다. 이 클래스는 템플릿을 환경에 연결하여 어셈블리, 포함 파일 등의 리소스를 찾고 출력 및 오류 메시지를 처리합니다.  
   
 > [!TIP]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 실행될 패키지나 확장을 작성하는 경우 고유 호스트를 작성하는 대신 텍스트 템플릿 서비스를 사용하십시오. 자세한 내용은 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)합니다.  

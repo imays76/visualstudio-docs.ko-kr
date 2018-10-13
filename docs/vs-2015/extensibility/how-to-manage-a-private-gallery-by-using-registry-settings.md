@@ -1,7 +1,7 @@
 ---
 title: '방법: 레지스트리 설정을 사용 하 여 개인 갤러리 관리 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b65e4155cbe1a91836bf578fa6e60196f8f8579
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec96812041ce6d86857dbd53414f5120ccf5a524
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542279"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242036"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>방법: 레지스트리 설정을 사용 하 여 개인 갤러리 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법:를 개인 갤러리에서 설정을 사용 하 여 레지스트리 관리](https://docs.microsoft.com/visualstudio/extensibility/how-to-manage-a-private-gallery-by-using-registry-settings)합니다.  
-  
 관리자 또는 격리 셸 확장의 개발자 인 경우에 컨트롤, 템플릿 및 도구는 Visual Studio 갤러리, 샘플 갤러리 또는 전용 갤러리에 대 한 액세스를 제어할 수 있습니다. 갤러리 사용 가능 여부 확인, 수정 된 레지스트리 키와 값을 설명 하는.pkgdef 파일을 만듭니다.  
   
 ## <a name="managing-private-galleries"></a>전용 갤러리 관리  

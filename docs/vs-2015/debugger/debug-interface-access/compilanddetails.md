@@ -1,7 +1,7 @@
 ---
 title: CompilandDetails | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c385d82dfc9a4223610000642b82b8cffe4a7109
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37468ba708ded9d1fd0b976fd3771d1a18291d71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266632"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CompilandDetails](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compilanddetails)합니다.  
-  
 컴파일 대상 정보 기호를 간에 분할 되는 `SymTagCompiland` 태그 (낮은 세밀도) 및 `SymTagCompilandDetails` 태그 (높은 세밀도). `SymTagCompilandDetails` 추가 기호를 로드 해야 합니다. 그러나 다양 한으로 사용할 수 없는 컴파일 대상에 대 한 정보를 제공 된 `SymTagCompiland` 기호입니다.  
   
 ## <a name="properties"></a>속성  

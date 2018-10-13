@@ -1,7 +1,7 @@
 ---
 title: 스레드 뷰(병렬 성능) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 644308065518afa9caf6fb0db088c2ffc556a8e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300250"
 ---
 # <a name="threads-view-parallel-performance"></a>스레드 뷰(병렬 성능)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [스레드 뷰 (병렬 성능)](https://docs.microsoft.com/visualstudio/profiling/threads-view-parallel-performance)합니다.  
-  
 스레드 뷰는 Concurrency 시각화에서 가장 자세하며 다양한 기능을 제공하는 뷰입니다. 이 보기를 사용하면 동기화, I/O 또는 기타 이유로 인해 스레드가 차단되는지 아니면 실행되고 있는지를 확인할 수 있습니다.  
   
  프로필 분석 중에 Concurrency 시각화는 각 응용 프로그램 스레드에 대해 모든 운영 체제 컨텍스트 전환 이벤트를 검사합니다. 컨텍스트 전환은 다음과 같은 여러 가지 이유로 인해 발생할 수 있습니다.  

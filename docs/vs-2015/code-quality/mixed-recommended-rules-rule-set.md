@@ -1,7 +1,7 @@
 ---
 title: 혼합된 권장 규칙 규칙 집합 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ccf58c04c266741350e834cedbfdeebf237c9f71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf0fa74c80a570271e6fb5e92dbb2d3fc46f1551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299405"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>혼합 권장 규칙 규칙 집합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [혼합 권장 규칙 규칙 집합](https://docs.microsoft.com/visualstudio/code-quality/mixed-recommended-rules-rule-set)합니다.  
-  
 Microsoft 혼합 권장 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 일반적이 고 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만든 모든 사용자 지정 규칙 집합에 설정 합니다.이 규칙을 포함 해야 합니다. 이 규칙 집합은 Visual Studio Professional edition 이상 구성 하도록 설계 되었습니다.  
   
 |규칙|설명|  

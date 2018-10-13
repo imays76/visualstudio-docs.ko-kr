@@ -1,7 +1,7 @@
 ---
 title: WPF 응용 프로그램에서 조회 테이블 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12940c7be5e09975c6a6cf71fad94c47f3f6db32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303344"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF 응용 프로그램에서 조회 테이블 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WPF 응용 프로그램에서 조회 테이블 만들기](https://docs.microsoft.com/visualstudio/data-tools/create-lookup-tables-in-wpf-applications)합니다.  
-  
   
 용어 *조회 표* (라고도 *조회 바인딩을*) 다른 테이블의 외래 키 필드의 값을 기반으로 하는 하나의 데이터 테이블의에서 정보를 표시 하는 컨트롤에 설명 합니다. 부모 테이블의 기본 노드 드래그 하 여 조회 테이블을 만들 수도 있고 개체를 **데이터 원본** 열 또는 관련된 자식 테이블의 속성에 이미 바인딩된 컨트롤을 창입니다.  
   
@@ -46,7 +44,7 @@ ms.locfileid: "47550024"
   
 1.  프로젝트에 관련 된 데이터를 사용 하 여 데이터 원본의 다음 유형 중 하나를 추가 합니다.  
   
-    -   데이터 집합 또는 엔터티 데이터 모델입니다. 자세한 내용은 [방법: 데이터베이스의 데이터에에서 연결할](../data-tools/how-to-connect-to-data-in-a-database.md)합니다.  
+    -   데이터 집합 또는 엔터티 데이터 모델입니다. 자세한 내용은 [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md)을 참조하십시오.  
   
     -   WCF 데이터 서비스에서 WCF 서비스 또는 웹 서비스입니다. 자세한 내용은 [방법: 데이터 서비스에 연결할](../data-tools/how-to-connect-to-data-in-a-service.md)합니다.  
   

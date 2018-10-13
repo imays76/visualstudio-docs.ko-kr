@@ -1,7 +1,7 @@
 ---
 title: MSBuild 도구 집합(ToolsVersion) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8dff8f8852054f4c7f3ff49ef10e6f760c62436b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552283"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242777"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 도구 집합(ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 도구 집합 (ToolsVersion)](https://docs.microsoft.com/visualstudio/msbuild/msbuild-toolset-toolsversion)합니다.  
-  
   
 MSBuild는 응용 프로그램을 빌드하기 위한 작업, 대상 및 도구로 구성된 도구 집합을 사용합니다. 일반적으로 MSBuild 도구 집합에는 microsoft.common.tasks 파일, microsoft.common.targets 파일 및 컴파일러(예: csc.exe 및 vbc.exe)가 포함되어 있습니다. 대부분의 도구 집합을 사용하여 응용 프로그램을 둘 이상의 .NET Framework 버전 및 둘 이상의 시스템 플랫폼으로 컴파일할 수 있습니다. 그러나 MSBuild 2.0 도구 집합을 사용해서는 .NET Framework 2.0만 대상으로 할 수 있습니다.  
   

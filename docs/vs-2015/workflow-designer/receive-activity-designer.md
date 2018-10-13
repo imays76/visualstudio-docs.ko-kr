@@ -1,7 +1,7 @@
 ---
 title: Receive 활동 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f285a2d900c4f286435e4e06c4db15967f1d7aab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2ccae6d53a44704aeb770fb60e5e2a0c9aecd3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287237"
 ---
 # <a name="receive-activity-designer"></a>Receive 활동 디자이너
 합니다 **수신** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.ServiceModel.Activities.Receive> 활동입니다. <xref:System.ServiceModel.Activities.Receive> 활동은 기본 제공 형식(예:  <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> 또는 <xref:System.Xml.Linq.XElement>)이거나 serialize될 수 있는 응용 프로그램 정의 데이터 계약, 메시지 계약 또는 XML 클래스 중 하나인 메시지를 수신하는 활동입니다.  

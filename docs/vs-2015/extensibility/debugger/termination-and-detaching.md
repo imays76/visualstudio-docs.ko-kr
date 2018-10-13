@@ -1,7 +1,7 @@
 ---
 title: 종료 및 분리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 268c1e51-6363-45d1-964c-1ab99bdfa4f9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7742ec8ef896006bc00bcbdfcf4961c15acdf746
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb6705c1189649b986776b99cd105f1e9532e160
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550541"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305333"
 ---
 # <a name="termination-and-detaching"></a>종료 및 분리
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [종료 및 분리](https://docs.microsoft.com/visualstudio/extensibility/debugger/termination-and-detaching)합니다.  
-  
 다음은 정상 종료에 대 한 설명입니다.  
   
 ## <a name="discussion"></a>토론  

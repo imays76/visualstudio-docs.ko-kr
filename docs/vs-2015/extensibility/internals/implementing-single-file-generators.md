@@ -1,7 +1,7 @@
 ---
 title: 단일 파일 생성기 구현 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30294f901f3e0536caeb84dc55af5630db24956a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f77b8dd1f28431665aae5d6c64da58d038a156b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300967"
 ---
 # <a name="implementing-single-file-generators"></a>단일 파일 생성기 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Single-file Generators 구현](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-single-file-generators)합니다.  
-  
 사용자 지정 도구-단일 파일 생성기 라고도-확장을 사용할 수는 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 하 고 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 프로젝트 시스템에서 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 사용자 지정 도구는를 구현 하는 COM 구성 요소는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> 인터페이스입니다. 이 인터페이스를 사용 하 여 사용자 지정 도구 단일 출력 파일에 단일 입력된 파일을 변환 합니다. 변환의 결과 소스 코드를 수 있습니다 또는 다른 출력 유용 합니다. 사용자 지정 도구에서 생성 된 코드 파일의 두 가지 예는 비주얼 디자이너 및 웹 서비스 설명 언어 (WSDL)를 사용 하 여 생성 된 파일의 변경 내용에 대 한 응답으로 생성 된 코드입니다.  
   
  프로젝트 시스템 호출을 사용자 지정 도구가 로드 되 면 때나 입력된 파일을 저장 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> 메서드를에 대 한 참조를 전달 하 고를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> 콜백 인터페이스를 도구 사용자에 게 해당 진행 상태를 보고할 수 가능해 집니다.  

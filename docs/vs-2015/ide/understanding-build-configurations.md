@@ -1,7 +1,7 @@
 ---
 title: 빌드 구성 이해 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d847b560b2dcedcd7b6841eccff17f40016c73fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304137"
 ---
 # <a name="understanding-build-configurations"></a>빌드 구성 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [빌드 구성 이해](https://docs.microsoft.com/visualstudio/ide/understanding-build-configurations)합니다.  
-  
 다양한 종류의 빌드에서 사용할 솔루션 및 프로젝트 속성에 대한 여러 구성을 저장할 수 있습니다. 구성을 만들거나, 선택하거나, 수정하거나, 삭제하려면 **구성 관리자**를 사용합니다. 구성 관리자를 열려면 메뉴 모음에서 **빌드**, **구성 관리자**를 선택하거나 **빠른 실행** 상자에 **구성**을 입력합니다. **표준** 도구 모음에서 **솔루션 구성** 목록을 사용하여 구성을 선택하거나 **구성 관리자**를 열 수도 있습니다.  
   
 > [!NOTE]

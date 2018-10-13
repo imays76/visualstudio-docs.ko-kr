@@ -1,7 +1,7 @@
 ---
 title: '방법: 시각화 도우미를 사용 하 여 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,12 +28,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: cc158e0d84db56bc26262d60acd0fb8e92e47188
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdf4c9b3a2ea8dc1322a10799f7f7051b71e035c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306516"
 ---
 # <a name="how-to-use-a-visualizer"></a>방법: 시각화 도우미 사용
 시각화 도우미를 사용하여 변수 또는 개체의 내용을 데이터 형식에 대해 의미 있는 방식으로 표시할 수 있습니다. 시각화 도우미를 사용할 수 있습니다 **DataTips**, **조사식** 창에는 **자동** 창 또는 **지역** 창.  

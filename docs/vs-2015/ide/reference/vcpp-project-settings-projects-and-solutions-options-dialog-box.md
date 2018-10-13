@@ -1,7 +1,7 @@
 ---
 title: VC++ 프로젝트 설정, 프로젝트 및 솔루션, 옵션 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8b6f588a1361c9184b67e510688128f621754f82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1491d639ace0cba80530ea1613525480bad07f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238864"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>옵션 대화 상자, 프로젝트 및 솔루션, VC++ 프로젝트 설정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VC + + 프로젝트 설정, 프로젝트 및 솔루션, 옵션 대화 상자](https://docs.microsoft.com/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)합니다.  
-  
   
 이 대화 상자를 사용하면 빌드 로깅 및 지원 파일 형식과 관련된 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트 설정을 정의할 수 있습니다.  
   

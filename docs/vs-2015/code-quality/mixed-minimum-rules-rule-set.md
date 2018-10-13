@@ -1,7 +1,7 @@
 ---
 title: 혼합된 최소 규칙 규칙 집합 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 97576ff579e1fabd5f48b4e8bf6781dc2d30acb6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3d153a99341012bd06f9f27a87bca260962c7ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249836"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>혼합 최소 규칙 규칙 집합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [혼합 최소 규칙 규칙 집합](https://docs.microsoft.com/visualstudio/code-quality/mixed-minimum-rules-rule-set)합니다.  
-  
 Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그램 작동 중단을 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만든 모든 사용자 지정 규칙 집합에 설정 합니다.이 규칙을 포함 해야 합니다.  
   
 |규칙|설명|  

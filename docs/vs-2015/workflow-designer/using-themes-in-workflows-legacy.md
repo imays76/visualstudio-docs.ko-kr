@@ -1,7 +1,7 @@
 ---
 title: 테마를 사용 하 여 워크플로의 (레거시) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c1bb0392054717844cc9f0943f57aaa33d0c887c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b69913605e57ed0ef4b4a2b025287821f679369d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233020"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>워크플로에서 테마 사용(레거시)
 이 항목에서는 [!INCLUDE[wf](../includes/wf-md.md)] 또는 [!INCLUDE[wfd1](../includes/wfd1-md.md)]를 대상으로 하는 레거시 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]를 사용할 경우 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]에서 테마를 사용하는 방법에 대해 설명합니다.  

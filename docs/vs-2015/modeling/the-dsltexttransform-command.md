@@ -1,7 +1,7 @@
 ---
 title: DslTextTransform 명령 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a565fa6226348a1fe1b6dcfcbb67f704e74abc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1dbbf44a4adfe20f1940da32540eaad81c97251b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269375"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform 명령
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [The DslTextTransform 명령](https://docs.microsoft.com/visualstudio/modeling/the-dsltexttransform-command)입니다.  
-  
 DslTextTransform.cmd은 TextTransform.exe를 호출 하 고 일반 옵션을 사용 하 여 실행 하는 스크립트. DslTextTransformation.cmd를 사용 하 여의 야간 빌드를 자동화 하 여 [!INCLUDE[dsl](../includes/dsl-md.md)] 프로젝트입니다. 자세한 내용은 [TextTransform 유틸리티를 사용 하 여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)합니다.  
   
  DslTextTransform.cmd은 다음 디렉터리에 있습니다.  

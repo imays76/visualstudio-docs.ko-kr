@@ -1,7 +1,7 @@
 ---
 title: 코드 분석 경고 CheckId 별 관리 코드용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -264,18 +264,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2401f35f950b676dd51ba24db640936e550f4d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8518771d93b3bb3342aa5eedb23c03266a11052
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280269"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리되는 코드에 대한 CheckId별 코드 분석 경고
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CheckId 별 코드 관리에 대 한 코드 분석 경고](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-warnings-for-managed-code-by-checkid)합니다.  
-  
 다음 표에서는 관리 코드에 대한 코드 분석 경고를 경고의 CheckId 식별자별로 보여 줍니다.  
   
 ## <a name="warnings"></a>경고  

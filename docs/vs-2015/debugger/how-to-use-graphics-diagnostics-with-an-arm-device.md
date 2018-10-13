@@ -1,7 +1,7 @@
 ---
 title: '방법: ARM 장치의 그래픽 진단 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24067412f875001185a0709c41f930ce3cdc8f3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b5b2430f0fe3ca5100fdec072fdf9e21eb221b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255835"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>방법: ARM 장치의 그래픽 진단 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ARM 장치를 사용 하 여 그래픽 진단을 사용 하 여](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-use-graphics-diagnostics-with-an-arm-device)입니다.  
-  
 그래픽 진단은 Windows RT 8.1 또는 Windows Phone 8.1을 실행하는 ARM 기반 장치에서 Direct3D 앱의 원격 디버깅을 제공합니다. 이 장치에서 Direct3D 앱을 실행 중에는 Direct3D 앱에서 그래픽 정보를 캡처하거나 해당 장치를 이전에 캡처된 그래픽 정보를 위한 재생 컴퓨터로 사용할 수 있습니다.  
   
 ## <a name="using-graphics-diagnostics-with-an-arm-based-device"></a>ARM 기반 장치에서 그래픽 진단 사용  

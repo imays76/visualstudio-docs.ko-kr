@@ -1,14 +1,14 @@
 ---
 title: 중단점을 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -46,18 +46,15 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c111b2704401ff6f98025026fc51d19b434503f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553538"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304891"
 ---
 # <a name="using-breakpoints"></a>중단점 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [중단점을 사용 하 여](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)입니다. 
-
 예를 들어 코드 변수의 상태를 확인하거나 호출 스택을 검토하기 위해 디버거 실행을 중지하려는 경우 중단점을 설정할 수 있습니다. 개발자 도구 상자에 가장 중요한 디버깅 기술 중 하나가 있습니다.
   
 ##  <a name="BKMK_Overview"></a> 소스 코드에서 함수 중단점 설정  
@@ -175,7 +172,7 @@ ms.locfileid: "47553538"
  디버거에서 인식하는 모든 유효한 식은 조건이 될 수 있습니다. 유효한 식에 대한 자세한 내용은 [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md)을 참조하세요.  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>중단점 조건에서 개체 ID 사용(C# 및 F#)  
- 특정 개체의 동작을 관찰하려는 경우가 있습니다. 예를 들어 개체가 컬렉션에 두 번 이상 삽입된 이유를 확인할 수 있습니다. C# 및 F #에서의 특정 인스턴스에 대 한 개체 Id를 만들 수 있습니다 [형식을 참조](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) 및 중단점 조건에서 사용 합니다. 개체 ID는 CLR(공용 언어 런타임) 디버깅 서비스에 의해 생성되고 개체와 연결됩니다.  개체 ID를 만들려면 다음을 수행합니다.  
+ 특정 개체의 동작을 관찰하려는 경우가 있습니다. 예를 들어 개체가 컬렉션에 두 번 이상 삽입된 이유를 확인할 수 있습니다. C# 및 F#에서 [참조 형식](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) 의 특정 인스턴스에 대한 개체 ID를 만들고 중단점 조건에서 사용할 수 있습니다. 개체 ID는 CLR(공용 언어 런타임) 디버깅 서비스에 의해 생성되고 개체와 연결됩니다.  개체 ID를 만들려면 다음을 수행합니다.  
   
 1.  개체를 만들고 일정 시간 후에 코드에서 중단점을 설정합니다.  
   

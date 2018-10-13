@@ -1,7 +1,7 @@
 ---
 title: 고급 보안 설정 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72b8bb7f6301672e89c54c9fa73a72bad8148999
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff49418b23317b590776c0f81d334480f460780a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233001"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>고급 보안 설정 대화 상자
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [고급 보안 설정 대화 상자](https://docs.microsoft.com/visualstudio/ide/reference/advanced-security-settings-dialog-box)합니다.  
-  
   
 이 대화 상자를 사용하면 영역 디버깅과 관련된 보안 설정을 지정할 수 있습니다.  
   

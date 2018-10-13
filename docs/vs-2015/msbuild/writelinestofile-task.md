@@ -1,7 +1,7 @@
 ---
 title: WriteLinesToFile 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0256ea6242a01cd8e18017889dc450bc60e6fc82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4af63679437e0b128472d084a55f1ef24a93bc4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301849"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WriteLinesToFile 작업](https://docs.microsoft.com/visualstudio/msbuild/writelinestofile-task)합니다.  
-  
   
 지정된 항목의 경로를 지정된 텍스트 파일에 씁니다.  
   
@@ -47,7 +45,7 @@ ms.locfileid: "47556064"
 |`File`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 항목을 쓸 파일을 지정합니다.|  
 |`Lines`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 파일에 쓸 항목을 지정합니다.|  
 |`Overwrite`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업에서 파일의 모든 기존 내용을 덮어씁니다.|  
-|`Encoding`|선택적 `String` 매개 변수입니다.<br /><br /> 문자 인코딩을 선택합니다(예: "Unicode").  <xref:System.Text.Encoding>을 참조하십시오.|  
+|`Encoding`|선택적 `String` 매개 변수입니다.<br /><br /> 문자 인코딩을 선택합니다(예: "Unicode").  <xref:System.Text.Encoding>을 참조하세요.|  
   
 ## <a name="remarks"></a>설명  
  `Overwrite`가 `true`인 경우 새 파일을 만들고 파일에 내용을 쓴 다음 파일을 닫습니다. 대상 파일이 이미 있으면 덮어씁니다. `Overwrite`가 `false`인 경우 콘텐츠를 파일에 추가합니다. 대상 파일이 아직 없으면 만듭니다.  

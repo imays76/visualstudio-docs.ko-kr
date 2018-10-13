@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 사용자 인터페이스 (소스 제어 VSPackage) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e544408f4cea3e9ec4e388ab76f4224abd7aa69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543444"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303955"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>사용자 지정 사용자 인터페이스(소스 제어 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 사용자 인터페이스 (소스 제어 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-user-interface-source-control-vspackage)합니다.  
-  
 VSPackage는 Visual Studio 명령 테이블 (.vsct) 파일을 통해 해당 메뉴 항목 및 기본 상태로 선언합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE)는 VSPackage가 로드 될 때까지 기본 상태로 메뉴 항목을 표시 합니다. 이후에 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메뉴 항목을 사용할지 여부를 호출 합니다.  
   
  VSPackage 명령 사용자 인터페이스 (UI) 컨텍스트에 따라 VSPackage를 자동으로 로드할 수 있도록 레지스트리 키를 설정할 수 있습니다, 그리고 방금 특정 UI 컨텍스트로 전환 하는 대신 요청 시 VSPackage가 로드 되지만 일반적으로 소스 제어 합니다. AutoLoadPackages 레지스트리 키에 대 한 자세한 내용은 참조 하세요. [관리 Vspackage](../../extensibility/managing-vspackages.md)합니다.  

@@ -1,7 +1,7 @@
 ---
 title: '&lt;반환&gt; (JavaScript) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 733fa3706eb7c8eeef6a8e8243eaeeac6d1b0f78
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e56a1ba624603e69c07f769706b02a1e46927699
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879734"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302642"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;반환&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 함수 또는 메서드 호출의 결과 대 한 문서 정보를 지정합니다.  
   
 ## <a name="syntax"></a>구문  

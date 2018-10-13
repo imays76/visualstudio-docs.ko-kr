@@ -1,31 +1,29 @@
 ---
 title: '연습: Visual C# 또는 Visual Basic으로 간단한 응용 프로그램 만들기 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 269616a5d8725399ecc5f577bc400b75de596332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49c1a38130b2182b18d5355181fabbf2703140a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551619"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305554"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>연습: Visual C# 또는 Visual Basic으로 간단한 응용 프로그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: Visual C# 또는 Visual Basic로 간단한 응용 프로그램을 만드는](https://docs.microsoft.com/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic)합니다.  
-  
 이 연습을 완료하면 Visual Studio를 사용하여 응용 프로그램을 개발할 때 사용할 수 있는 여러 도구, 대화 상자 및 디자이너에 익숙해집니다. IDE(통합 개발 환경)의 작업에 대해 배우면서 간단한 “Hello, World” 스타일의 응용 프로그램을 만들고, UI를 디자인하고, 코드를 추가하고, 오류를 디버깅하게 됩니다.  
   
  이 항목에는 다음과 같은 단원이 포함되어 있습니다.  

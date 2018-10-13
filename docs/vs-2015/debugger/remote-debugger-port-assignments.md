@@ -1,7 +1,7 @@
 ---
 title: 원격 디버거 포트 할당 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e44169c436eb3a164a418413341c1689b37a649f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a9730a4f096ffbbe89eb3b6fef40393232efdfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550567"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273028"
 ---
 # <a name="remote-debugger-port-assignments"></a>원격 디버거 포트 할당
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Remote Debugger Port Assignments](https://docs.microsoft.com/visualstudio/debugger/remote-debugger-port-assignments)합니다.  
-  
 Visual Studio 원격 디버거는 응용 프로그램 또는 백그라운드 서비스로 실행할 수 있습니다. 응용 프로그램으로 실행되는 경우 다음과 같이 기본적으로 할당되는 포트를 사용합니다.  
   
 -   Visual Studio 2015: 4020  
@@ -66,7 +64,7 @@ Visual Studio 원격 디버거는 응용 프로그램 또는 백그라운드 서
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
 ## <a name="see-also"></a>참고 항목  
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

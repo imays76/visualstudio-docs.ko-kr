@@ -1,7 +1,7 @@
 ---
 title: HTML, CSS 및 JavaScript 샘플 코드 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df54fb1bc1555f5f1327921d8e35ee5e7599f0d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ba252c237c519f34ad407ab78997a02e87675fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241347"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>HTML, CSS 및 JavaScript 샘플 코드 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버그 HTML, CSS 및 JavaScript 샘플 코드](https://docs.microsoft.com/visualstudio/debugger/debug-html-css-and-javascript-sample-code)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  이 항목의 코드에 대 한 샘플 파일이 [빠른 시작: HTML 및 CSS 디버깅](../debugger/quickstart-debug-html-and-css.md)합니다. QuickStart에서 의도적으로 제공되는 오류는 이 버전의 코드에서 수정됩니다.  

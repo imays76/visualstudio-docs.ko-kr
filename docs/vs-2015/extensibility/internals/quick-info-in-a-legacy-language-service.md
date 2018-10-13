@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 요약 정보 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ba5d6d2c08d6b4d39efe9d662dda7a0e324cbf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1dab76881ac7cd4fe5cba36ec79dc48f4c1ecf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541579"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250688"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>레거시 언어 서비스의 빠른 정보
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 요약 정보](https://docs.microsoft.com/visualstudio/extensibility/internals/quick-info-in-a-legacy-language-service)합니다.  
-  
 사용자 중 하나는 식별자에 캐럿을 배치 하 고 선택 하는 경우 IntelliSense 요약 정보 소스에서 식별자에 대 한 정보를 표시 **요약 정보** 에서 합니다 **IntelliSense** 메뉴 또는 마우스를 보유 합니다. 식별자 위로 커서입니다. 이렇게 하면 식별자에 대 한 정보를 사용 하 여 표시할 도구 설명 합니다. 이 정보는 일반적으로 식별자 형식으로 구성 됩니다. 디버그 엔진 활성 상태인 경우이 정보는 현재 값을 포함할 수 있습니다. 언어 서비스 식별자만 처리 하는 동안 디버그 엔진은 식 값을 제공 합니다.  
   
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 참조 하세요 [연습: QuickInfo 도구 설명 표시](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)합니다.  

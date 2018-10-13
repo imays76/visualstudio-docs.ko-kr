@@ -1,14 +1,14 @@
 ---
 title: '시나리오: 모델링 및 시각화를 사용 하 여 디자인 변경 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
 - modeling software [Visual Studio ALM]
@@ -22,21 +22,19 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 67fd284bca4e81c36cd6e7e185b9c4712f07e6b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303045"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시나리오: 시각화를 사용 하 고 모델링 하 여 디자인 변경](https://docs.microsoft.com/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling)합니다.  
-  
 Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨어 시스템이 사용자의 요구를 충족하는지 확인합니다. UML(Unified Modeling Language) 다이어그램, 코드 맵, 레이어 다이어그램 및 클래스 다이어그램과 같은 도구를 사용하여 다음을 수행합니다.  
   
- 각 도구를 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
+ 각 도구를 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
 -   사용자의 요구 사항 및 비즈니스 프로세스를 분명하게 설명합니다.  
   
@@ -292,7 +290,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
   
 |**다이어그램**|**설명 내용**|  
 |-----------------|-------------------|  
-|*레이어 다이어그램*<br /><br /> 참조<br /><br /> -   [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />-   [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />-   [레이어 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 레이어 다이어그램을 구성 하 고 아티팩트를 매핑하는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 라는 추상 그룹에는 솔루션 *레이어*합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 레이어 다이어그램은 의도한 시스템 디자인을 설명하고 해당 디자인에 대해 발전하는 코드의 유효성을 검사하는 데 유용합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 레이어 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|  
+|*레이어 다이어그램*<br /><br /> 참조<br /><br /> -   [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />-   [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />-   [레이어 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 레이어 다이어그램에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션에서 아티팩트를 구성하고 *레이어*라는 추상 그룹에 매핑합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 레이어 다이어그램은 의도한 시스템 디자인을 설명하고 해당 디자인에 대해 발전하는 코드의 유효성을 검사하는 데 유용합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 레이어 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|  
   
  예를 들어 다음 레이어 다이어그램에서는 레이어 간 종속성 및 각 레이어와 연결된 아티팩트 수를 설명합니다.  
   
@@ -306,7 +304,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
   
 -   [빌드 프로세스 정의](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [제어 된 체크 인 빌드 프로세스를 사용 하 여 변경 내용 유효성 검사](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+-   [제어된 체크 인 빌드 프로세스를 사용하여 변경 내용 유효성 검사](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
 -   [빌드 프로세스 템플릿 사용자 지정](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
@@ -343,13 +341,13 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
   
  참조  
   
--   [Visual Studio Team Services 또는 Team Foundation Server를 사용 하 여 작업 추적](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+-   [Visual Studio Team Services 또는 Team Foundation Server를 사용하여 작업 추적](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 -   [모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)  
   
--   [차트, 대시보드 및 Visual Studio ALM에 대 한 보고서](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+-   [Visual Studio ALM용 차트, 대시보드 및 보고서](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
--   [백로그 및 프로젝트를 사용 하 여 작업 만들기](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+-   [Project를 사용하여 백로그 및 작업 만들기](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ###  <a name="TestValidateCheckInCode"></a> 코드 테스트, 유효성 검사 및 체크 인  
  팀에서 각 작업을 완료하면 코드를 Team Foundation 버전 제어에 체크 인하고 잊지 않도록 Team Foundation Server에서 미리 알림을 수신합니다. Team Foundation Server가 체크 인을 승인하기 전에 팀에서는 단위 테스트 및 레이어 유효성 검사를 실행하여 테스트 사례 및 디자인에 대해 코드를 확인합니다. Team Foundation Server를 사용하여 빌드, 자동화된 단위 테스트 및 레이어 유효성 검사를 정기적으로 실행합니다. 이렇게 하면 코드가 다음 기준을 충족하는지 확인할 수 있습니다.  
@@ -650,7 +648,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
   
      컴파일된 코드의 간략한 개요를 확인하려면 빈 코드 맵을 만들고 어셈블리 파일이나 이진 파일을 맵 표면으로 끌어옵니다.  
   
--   특정 코드 또는 솔루션 항목을 살펴보려면 솔루션 탐색기를 사용하여 시각화할 항목 및 관계를 선택합니다. 그다음에 새 맵을 생성하거나 선택된 항목을 기존 맵에 추가할 수 있습니다. 참조 [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)합니다.  
+-   특정 코드 또는 솔루션 항목을 살펴보려면 솔루션 탐색기를 사용하여 시각화할 항목 및 관계를 선택합니다. 그다음에 새 맵을 생성하거나 선택된 항목을 기존 맵에 추가할 수 있습니다. [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)을 참조하세요.  
   
 -   맵을 살펴보는 데 도움이 되도록 수행할 작업 종류에 맞게 레이아웃을 다시 정렬합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: IDebugBeforeSymbolSearchEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6ac247054a5048a7e2354f29415e203e03c7aaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 501e0a255bcc440d6419405f8d4ae22e0b44b854
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306659"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugBeforeSymbolSearchEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbeforesymbolsearchevent2)합니다.  
-  
 기호 로드 하는 동안 메시지 표시줄 (SDM) 상태를 설정 하려면 세션 디버그 관리자에 게이 인터페이스를 전송 하는 디버그 엔진 (DE).  
   
 ## <a name="syntax"></a>구문  

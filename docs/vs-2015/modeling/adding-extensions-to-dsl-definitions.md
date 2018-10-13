@@ -1,7 +1,7 @@
 ---
 title: DSL 정의에 확장 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3b8cb28edb6959511a0cfdf157e323d6706e5f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550688"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261081"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>DSL 정의에 확장 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DSL 정의에 확장 추가](https://docs.microsoft.com/visualstudio/modeling/adding-extensions-to-dsl-definitions)합니다.  
-  
 DSL 정의 확장을 사용 하면 도메인 특정 언어 (DSL)에 대 한 확장의 패키지를 만들 수 있습니다. 에 VSIX Visual Studio Integration Extension ()에 포함 되는 DSL 확장을 동일한 방식으로 DSL에서 사용자의 컴퓨터에 설치할 수 있습니다. 추가 기능 동적으로 사용 하도록 설정 하 고 런타임 시 사용 하지 않도록 설정 될 수 있습니다. Dsl 확장에 대 한 명시적으로 디자인할 수 없고 확장 디자인할 수 있습니다 나중 또는 제 3 자에서 확장 된 DSL을 변경 하지 않고 있습니다.  
   
  추가 기능을 다음과 같습니다.  

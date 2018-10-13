@@ -1,7 +1,7 @@
 ---
 title: 'UML 시퀀스 다이어그램: 지침 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 388bb32aa871b220768e856e96cced2d5bced694
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542524"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278683"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 시퀀스 다이어그램: 지침](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-guidelines)합니다.  
-  
 Visual Studio에서 그릴 수 있습니다는 *시퀀스 다이어그램* 상호 작용을 표시 합니다. 상호 작용은 클래스, 구성 요소, 하위 시스템 또는 행위자의 일반적인 인스턴스 간 메시지 시퀀스입니다.  
   
  UML 시퀀스 다이어그램은 UML 모델의 일부이며 UML 모델링 프로젝트 내에만 존재합니다. UML 시퀀스 다이어그램을 만들려면 하는 **아키텍처** 메뉴에서 클릭 **새 UML 또는 레이어 다이어그램**합니다. 자세히 알아보세요 [UML 시퀀스 다이어그램 요소](../modeling/uml-sequence-diagrams-reference.md) 하거나 [UML 모델링 다이어그램](../modeling/edit-uml-models-and-diagrams.md) 일반적입니다. 비디오 데모를 참조 하세요 [시퀀스 다이어그램 (2010)를 사용 하 여 상호 작용 스케치](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams)합니다.  

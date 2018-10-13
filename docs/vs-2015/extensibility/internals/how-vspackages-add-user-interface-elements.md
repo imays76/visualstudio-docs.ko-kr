@@ -1,7 +1,7 @@
 ---
 title: Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6265edea1044c1ee7be25725268a792d78a79cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283272"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage에서 사용자 인터페이스 요소를 추가하는 방법
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [어떻게 Vspackage 추가 사용자 인터페이스 요소](https://docs.microsoft.com/visualstudio/extensibility/internals/how-vspackages-add-user-interface-elements)합니다.  
-  
 VSPackage는 사용자 인터페이스 (UI) 요소, 예를 들어, 메뉴, 도구 모음을 추가 하 고 도구 창은.vsct 파일을 사용 하 여 Visual Studio를 수 있습니다.  
   
  UI 요소에 대 한 디자인 지침을 찾을 수 있습니다 [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)합니다.  

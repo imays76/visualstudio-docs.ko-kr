@@ -1,7 +1,7 @@
 ---
 title: '방법: Windows에 대 한 자동화 제공 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6fad49e2841186cea677a165bdb48c4a1af5b41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9dd3dee875cfe7af7e482204130abc53bcaba616
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552599"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305749"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>방법: Windows에 대 한 자동화 제공
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Windows에 대 한 자동화 제공](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-provide-automation-for-windows)합니다.  
-  
 문서 창과 도구에 대 한 자동화를 제공할 수 있습니다. 창에서 자동화 개체를 사용할 수 있도록 하 고 환경에 아직 때마다 자동화 끄 제공 작업 목록으로 바로 사용할 수 있는 자동화 개체를 제공 합니다.  
   
 ## <a name="automation-for-tool-windows"></a>Windows 도구에 대 한 자동화  

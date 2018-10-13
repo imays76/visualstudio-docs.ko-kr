@@ -1,7 +1,7 @@
 ---
 title: 이벤트 처리기로 모델 외부의 변경 내용을 전파 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303201"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>이벤트 처리기로 모델 외부의 변경 내용 전파
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [이벤트 처리기 전파 변경 외부 모델](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model)합니다.  
-  
 Visualization and Modeling SDK에서와 같은 비 저장소 변수, 파일, 다른 저장소 또는 다른 모델 저장소의 외부 리소스에 대 한 변경 내용을 전파 하려면 store 이벤트 처리기를 정의할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 합니다. 저장소 이벤트 처리기는 트리거 이벤트가 발생 한 트랜잭션이 종료 된 후 실행 됩니다. 또한 실행 취소 또는 다시 실행 작업에서 실행 됩니다. 따라서 저장소 규칙과 달리 저장소 이벤트는 외부 저장소에 있는 값을 업데이트 하는 데 가장 유용 합니다. .NET 이벤트와는 달리 저장소 이벤트 처리기 클래스를 수신 대기 하도록 등록 됩니다: 각 인스턴스에 대 한 별도 처리기를 등록할 필요가 없습니다. 변경 내용을 처리 하는 다양 한 방법 중에서 선택 하는 방법에 대 한 자세한 내용은 참조 하세요. [에 응답 하 고 변경 내용을 전파](../modeling/responding-to-and-propagating-changes.md)합니다.  
   
  그래픽 표면 및 기타 사용자 인터페이스 컨트롤은 저장소 이벤트에 의해 처리 될 수 있는 외부 리소스의 예입니다.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: CPU 카운터 데이터 수집 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f7c9f88dbbc3d7d2022736528f2b35fa3a325b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299873"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: CPU 카운터 데이터 수집](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-cpu-counter-data)합니다.  
-  
 CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 데 사용됩니다. 이 항목에서는 계측 프로파일링 방법을 사용하는 경우 이벤트 카운터 데이터를 수집하는 방법을 보여 줍니다.  
   
  **요구 사항**  

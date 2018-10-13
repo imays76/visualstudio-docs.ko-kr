@@ -1,7 +1,7 @@
 ---
 title: 레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ef9831dd5268c545373433d728df7e36d31cf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231103"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](https://docs.microsoft.com/visualstudio/modeling/add-custom-architecture-validation-to-layer-diagrams)합니다.  
-  
 Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 코드의 유효성을 검사하여 소스 코드가 레이어 다이어그램의 종속성을 따르는지 확인할 수 있습니다. 표준 유효성 검사 알고리즘이 있지만 고유한 유효성 검사 확장을 정의할 수 있습니다.  
   
  사용자가 레이어 다이어그램에서 **아키텍처 유효성 검사** 명령을 선택하면 표준 유효성 검사 메서드가 호출되고, 이어서 설치된 유효성 검사 확장이 호출됩니다.  
@@ -122,7 +120,7 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
     > [!NOTE]
     >  메서드는 특정 상황에서만 호출되고 중단점은 자동으로 작동하지 않습니다. 자세한 내용은 [레이어 유효성 검사 디버그](#debugging)를 참조하세요.  
   
-8.  기본 인스턴스에서 VSIX를 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 또는 다른 컴퓨터에서 찾을 **.vsix** 파일을 **bin** 의 VSIX 프로젝트 디렉터리. VSIX를 설치할 컴퓨터에 파일을 복사합니다. Windows 탐색기에서 VSIX 파일을 두 번 클릭합니다. (Windows 8의 파일 탐색기.)  
+8.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치하려면 **.vsix\*** 디렉터리에서 **.vsix** 파일을 찾습니다. VSIX를 설치할 컴퓨터에 파일을 복사합니다. Windows 탐색기에서 VSIX 파일을 두 번 클릭합니다. (Windows 8의 파일 탐색기.)  
   
      파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.  
   
@@ -215,12 +213,12 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
   
  유효성 검사 프로세스에 디버거를 연결하려면 유효성 검사 메서드의 시작 부분에 `System.Diagnostics.Debugger.Launch()` 에 대한 호출을 삽입합니다. 디버깅 대화 상자가 나타나면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 주 인스턴스를 선택합니다.  
   
- 또는 `System.Windows.Forms.MessageBox.Show()`에 대한 호출을 삽입할 수 있습니다. 주 인스턴스로 이동 하는 메시지 상자가 표시 되 면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 고 합니다 **디버그** 메뉴 **프로세스에 연결**합니다. 이름이 **Graphcmd.exe**인 프로세스를 선택합니다.  
+ 또는 `System.Windows.Forms.MessageBox.Show()`에 대한 호출을 삽입할 수 있습니다. 메시지 상자가 나타나면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 주 인스턴스로 이동하고 **디버그** 메뉴에서 **프로세스에 연결**을 클릭합니다. 이름이 **Graphcmd.exe**인 프로세스를 선택합니다.  
   
  항상 Crtl+F5(**디버깅하지 않고 시작**)를 눌러서 실험적 인스턴스를 시작합니다.  
   
 ### <a name="deploying-a-validation-extension"></a>유효성 검사 확장 배포  
- 적합한 Visual Studio 버전이 설치된 컴퓨터에 유효성 검사 확장을 설치하려면 대상 컴퓨터에서 VSIX 파일을 엽니다. [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]가 설치된 컴퓨터에 설치하려면 VSIX 콘텐츠를 Extensions 폴더로 수동으로 추출해야 합니다. 자세한 내용은 [레이어 모델 확장 배포](../modeling/deploy-a-layer-model-extension.md)합니다.  
+ 적합한 Visual Studio 버전이 설치된 컴퓨터에 유효성 검사 확장을 설치하려면 대상 컴퓨터에서 VSIX 파일을 엽니다. [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 가 설치된 컴퓨터에 설치하려면 VSIX 콘텐츠를 Extensions 폴더로 수동으로 추출해야 합니다. 자세한 내용은 [레이어 모델 확장 배포](../modeling/deploy-a-layer-model-extension.md)합니다.  
   
 ##  <a name="example"></a> Example code  
   

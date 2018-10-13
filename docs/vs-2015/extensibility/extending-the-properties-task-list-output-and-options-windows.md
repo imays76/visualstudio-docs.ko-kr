@@ -1,7 +1,7 @@
 ---
 title: 확장 속성, 작업 목록, 출력 및 옵션 Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aff8da28ecdf91ffa2b21ddb03a62315e2943d6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89c744db125b45c51d2459d8a830b23e855fd2c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556999"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302655"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>속성, 작업 목록, 출력 및 옵션 창 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [확장 속성, 작업 목록, 출력 및 옵션 Windows](https://docs.microsoft.com/visualstudio/extensibility/extending-the-properties-task-list-output-and-options-windows)합니다.  
-  
 Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습에서는 새 도구 창에 대 한 정보를 통합 하는 방법을 보여 줍니다 **옵션** 페이지 및의 새 설정 합니다 **속성** 페이지, 그리고에 쓰는 방법은 **작업목록** 하 고 **출력** windows.  
   
 ## <a name="prerequisites"></a>전제 조건  

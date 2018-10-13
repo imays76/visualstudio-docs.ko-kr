@@ -1,7 +1,7 @@
 ---
 title: DOM 탐색기를 사용 하 여 레이아웃 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 413f24ffa1927998cb9d2d98880e92de4e68f534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65d0bc2dbd48609f1e229691551ab2b713988471
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272621"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>DOM 탐색기를 사용하여 레이아웃 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DOM 탐색기를 사용 하 여 디버그 레이아웃](https://docs.microsoft.com/visualstudio/debugger/debug-layout-using-dom-explorer)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- 합니다 **레이아웃** DOM 탐색기의 탭을 [CSS 상자 모델](http://go.microsoft.com/fwlink/?LinkID=238778) 에서 선택한 요소에 대 한를 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱, Windows Phone 스토어 앱 또는 Apache Cordova 대 한 Visual Studio Tools를 사용 하 여 만든 앱입니다. 상자 모델의 이 시각적 표현을 사용하여 요소의 모양을 좌우하는 레이아웃 관련 값을 식별하고 수정할 수 있습니다.  
+ DOM 탐색기의 **레이아웃** 탭에는 [앱, Windows Phone 스토어 앱 또는 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에서 선택한 요소에 대한](http://go.microsoft.com/fwlink/?LinkID=238778) CSS 상자 모델 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 을 보여 줍니다. 상자 모델의 이 시각적 표현을 사용하여 요소의 모양을 좌우하는 레이아웃 관련 값을 식별하고 수정할 수 있습니다.  
   
 > [!TIP]
 >  **레이아웃** 탭에서 변경한 내용은 영구적이지 않습니다. 소스 코드를 영구적으로 변경한 다음 디버그 도구 모음에서 **Windows 앱 새로 고침** 단추(Windows 스토어 및 Windows Phone 스토어 앱만 해당)를 사용하여 앱을 새로 고칠 수 있습니다. 이렇게 하면 디버거를 다시 시작하지 않아도 됩니다.  

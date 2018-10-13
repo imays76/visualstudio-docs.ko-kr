@@ -1,7 +1,7 @@
 ---
 title: 모듈 뷰 - 경합 데이터 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccd57d1bbc81c44ce1b6130613e9752f2fc55b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4461795294df4824d2af2c8ada02e2f5929e0c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306000"
 ---
 # <a name="modules-view---contention-data"></a>모듈 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모듈 뷰-경합 데이터](https://docs.microsoft.com/visualstudio/profiling/modules-view-contention-data)입니다.  
-  
 경합 데이터의 모듈 뷰에는 프로파일링 데이터에서 샘플링된 모듈별로 그룹화된 동시성 데이터가 표시됩니다. 각 모듈은 계층 트리의 루트입니다. 경합 이벤트가 발생한 모듈의 함수는 모듈 노드 아래에 나열됩니다.  
   
  경합 이벤트가 발생했을 때 함수가 해당 고유 코드를 실행 중이었다면, 즉 함수가 호출 스택 맨 위에 있었다면 실행 중이었던 소스 줄 및 명령 주소가 함수 노드 아래에 나열됩니다. 소스 줄이나 명령을 실행할 때는 해당 줄 또는 명령 포인터에 대한 데이터가 수집되므로, 줄 데이터 및 명령 데이터에 대한 포괄 값과 전용 값은 항상 동일합니다.  

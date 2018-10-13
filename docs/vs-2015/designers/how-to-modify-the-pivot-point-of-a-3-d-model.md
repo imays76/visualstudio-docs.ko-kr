@@ -1,7 +1,7 @@
 ---
 title: '방법: 3D 모델의 피벗 점 수정 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19864f98df2b10d06362969d82752b68b6ba26c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d787a18e506baa3fd131c50332afa7fe51b7ca05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300393"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>방법: 3차원 모델의 피벗 점 수정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 3d 모델의 피벗 점 수정](https://docs.microsoft.com/visualstudio/designers/how-to-modify-the-pivot-point-of-a-3-d-model)합니다.  
-  
 이 문서에서는 모델 편집기를 사용하여 3D 모델의 *피벗 점*을 수정하는 방법을 설명합니다. 피벗 점은 회전 및 크기 조정에 사용할 개체의 수학적 중심을 정의하는 공간의 점입니다.  
   
  이 문서는 다음 활동을 보여 줍니다.  

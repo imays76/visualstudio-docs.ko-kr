@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 명령의 Guid 및 Id | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc949b400cc5c6a6efe231dff8f0ae17155ef6e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93efc7bfec5f4ba3e545dec7fff57f73e49260d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302447"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 명령의 GUID 및 ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Guid 및 Visual Studio 명령 Id](https://docs.microsoft.com/visualstudio/extensibility/internals/guids-and-ids-of-visual-studio-commands)합니다.  
-  
 Visual Studio 통합된 개발 환경 (IDE)에 포함 된 명령의 GUID 및 ID 값은 Visual Studio SDK의 일부로 설치 되는.vsct 파일에서 정의 됩니다. 자세한 내용은 [IDE-Defined 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  
   
  .Vsct 파일에 정의 된 IDE 개체를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [확장 메뉴 및 명령을](../../extensibility/extending-menus-and-commands.md)합니다.  

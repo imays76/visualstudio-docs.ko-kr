@@ -1,7 +1,7 @@
 ---
 title: ItemDefinitionGroup 요소(MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fbb9e018968c8336c098f36991ee92651c85fd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 534bad91ad4b909d798def84630cf54b64cd6ccf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306061"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 요소(MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ItemDefinitionGroup 요소 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/itemdefinitiongroup-element-msbuild)합니다.  
-  
   
 `ItemDefinitionGroup` 요소를 사용하면 기본적으로 프로젝트의 모든 항목에 적용되는 메타데이터 값인 항목 정의 집합을 정의할 수 있습니다. ItemDefinitionGroup을 사용하면 [CreateItem 작업](../msbuild/createitem-task.md) 및 [CreateProperty 작업](../msbuild/createproperty-task.md)을 사용할 필요가 없습니다. 자세한 내용은 [항목 정의](../msbuild/item-definitions.md)를 참조하세요.  
   

@@ -1,7 +1,7 @@
 ---
 title: '연습: 응용 프로그램 빌드 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 442472bcad12fe42382bc8e76a668eda1705e549
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c9c4ba3367fb852420185ac8e978f138544d785
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552318"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300523"
 ---
 # <a name="walkthrough-building-an-application"></a>연습: 응용 프로그램 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 응용 프로그램 빌드](https://docs.microsoft.com/visualstudio/ide/walkthrough-building-an-application)합니다.  
-  
 이 연습을 완료하면 Visual Studio로 응용 프로그램을 빌드할 때 구성할 수 있는 여러 옵션에 더 익숙해집니다. 다른 작업 중에 샘플 응용 프로그램에 대한 사용자 지정 빌드 구성을 만들고, 특정 경고 메시지를 숨기고, 빌드 출력 정보를 늘립니다.  
   
  이 항목에는 다음과 같은 단원이 포함되어 있습니다.  

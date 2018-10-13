@@ -1,7 +1,7 @@
 ---
 title: C++용 Microsoft 단위 테스트 프레임워크를 사용하여 C/C++용 단위 테스트 작성 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e5da38500e5fd35fb14e1854fe1fa378a8553c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250538"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++용 Microsoft 유닛 테스트 프레임워크를 사용하여 C/C++용 유닛 테스트 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [c + + 용 Microsoft 단위 테스트 프레임 워크를 사용 하 여 C/c + +에 대 한 쓰기 유닛 테스트](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp)합니다.  
-  
 Visual Studio에서는 C++로 작성된 관리되지 않는 코드에 대한 단위 테스트를 만들 수 있습니다. 관리되지 않는 코드는 네이티브 코드라고도 합니다.  
   
  다음 절차에는 시작하는 도움이 되는 중요한 정보가 포함되어 있습니다. 이후 섹션에서는 각 단계를 자세히 설명하는 연습이 제공됩니다.  

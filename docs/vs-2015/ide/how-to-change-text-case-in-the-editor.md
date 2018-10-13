@@ -1,7 +1,7 @@
 ---
 title: '방법: 편집기에서 텍스트의 대/소문자 변경 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f673f42d26b82602deedde0d5ceec01a81adf3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee4765914c1b7e5756a7f4acb907d6d9e29d3653
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304150"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>방법: 편집기에서 텍스트의 대/소문자 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 편집기에서 변경 텍스트 대/소문자](https://docs.microsoft.com/visualstudio/ide/how-to-change-text-case-in-the-editor)합니다.  
-  
 메뉴 명령이나 바로 가기 키를 사용하여 선택한 텍스트의 대/소문자를 모두 대문자로 또는 모두 소문자로 변환할 수 있습니다.  
   
 > [!NOTE]

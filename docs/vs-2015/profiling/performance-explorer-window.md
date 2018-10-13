@@ -1,7 +1,7 @@
 ---
 title: 성능 탐색기 창 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60d272a823e07c1e377fa41987f77ea2178092b4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad46acea26d15b0ceaecd629ae99a784f30d90a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557044"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230310"
 ---
 # <a name="performance-explorer-window"></a>성능 탐색기 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 탐색기 창](https://docs.microsoft.com/visualstudio/profiling/performance-explorer-window)합니다.  
-  
 IDE(통합 개발 환경) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 **성능 탐색기** 창에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구를 사용하여 성능 세션을 구성 및 시작할 수 있습니다.  
   
  **요구 사항**  

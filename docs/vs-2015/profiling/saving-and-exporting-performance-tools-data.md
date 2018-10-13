@@ -1,7 +1,7 @@
 ---
 title: 성능 도구 데이터 저장 및 내보내기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62c3d4bf115e7044ae05131a5c03eca9ebded150
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2eec24927f7e5b8897df988a51fb87f469088e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236043"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>성능 도구 데이터 저장 및 내보내기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [저장 및 성능 도구 데이터 내보내기](https://docs.microsoft.com/visualstudio/profiling/saving-and-exporting-performance-tools-data)합니다.  
-  
 이 항목에서는 성능 데이터 파일을 저장하고 내보내는 방법을 설명합니다.  
   
 ##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> 방법: 성능 데이터 파일을 분석 보고서 파일로 저장  

@@ -1,7 +1,7 @@
 ---
 title: 'DA0029: 지원되지 않는 CLR 버전 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df5deda533c21033d26af4b8dc08d98a5dafc583
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6334fc69607f6d39e75d20c3b3ca228507db169d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541382"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265145"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: 지원되지 않는 CLR 버전
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DA0029: 지원 되지 않는 CLR 버전](https://docs.microsoft.com/visualstudio/profiling/da0029-unsupported-clr-version)합니다.  
-  
 규칙 Id | DA0029 |  
 | 범주 | 프로 파일링 도구 사용 |  
 | 프로 파일링 방법을 | 명령줄에서 프로 파일링 |  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 용 UX Essentials | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a5f59dcb99c149e860244cde5f7dc0a30822578
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303324"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 용 UX Essentials
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 용 UX Essentials](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/ux-essentials-for-visual-studio)합니다.  
-  
 ## <a name="best-practices"></a>최선의 구현 방법  
   
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Visual Studio 환경 내에서 일관 되어야 합니다.  
