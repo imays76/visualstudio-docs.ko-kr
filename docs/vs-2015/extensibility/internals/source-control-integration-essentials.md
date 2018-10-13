@@ -1,7 +1,7 @@
 ---
 title: 원본 제어 통합 필수 항목 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37508599b01f2639df416c56181f1c9b8672cd5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232362"
 ---
 # <a name="source-control-integration-essentials"></a>소스 제어 통합 필수 항목
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 통합 필수 항목](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-essentials)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 두 가지 유형의 원본 제어 통합을 지원 합니다: 기본 기능을 제공 하 고 (이전의 MSSCCI API)를 원본 제어 플러그 인 API 및 VSPackage 기반 소스 제어 통합 솔루션을 사용 하 여 빌드되는 소스 제어 플러그 인입니다 보다 강력한 기능을 제공합니다.  
   
 ## <a name="source-control-plug-in"></a>소스 제어 플러그 인  

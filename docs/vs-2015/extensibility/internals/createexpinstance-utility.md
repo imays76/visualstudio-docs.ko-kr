@@ -1,7 +1,7 @@
 ---
 title: CreateExpInstance 유틸리티 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9b08ba5ac68a09f6c44937634375add3065e5e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e5b47a329e9ff1c9a8c34fa8476ae1b2fb909c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550553"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234971"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 유틸리티
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CreateExpInstance 유틸리티](https://docs.microsoft.com/visualstudio/extensibility/internals/createexpinstance-utility)합니다.  
-  
 CreateExpInstance 유틸리티를 만드는 데, 다시 설정 하거나 Visual Studio의 실험적 인스턴스를 삭제 합니다. 디버그 하 고 내부 제품을 변경 하지 않고 Visual Studio 확장을 테스트 하는 실험적 인스턴스를 사용할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: NuGet을 사용한 참조 추가와 확장 SDK를 사용한 참조 추가 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54197aa4f8074c206e05e41d2b70d81a76c38f1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 031b582665abeb14f705725c7bee97f272bd5ab4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564773"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235809"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>NuGet을 사용한 참조 추가와 확장명 SDK를 사용한 참조 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [참조 추가 사용 하 여 NuGet와 확장 SDK](https://docs.microsoft.com/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)합니다.  
-  
 Visual Studio에 대한 NuGet 확장 또는 SDK(소프트웨어 개발 키트)를 사용하여 Visual Studio 프로젝트 내에서 사용할 패키지를 제공할 수 있습니다. 이 항목에서 설명하는 두 메커니즘 간의 유사점과 차이점을 참조하여 작업에 가장 적합한 메커니즘을 선택할 수 있습니다.  
   
 -   NuGet은 프로젝트 솔루션에 라이브러리를 통합하는 과정을 간소화하는 오픈 소스 패키지 관리 시스템입니다. 자세한 내용은 [NuGet 개요](http://go.microsoft.com/fwlink/?LinkId=254877)를 참조하세요.  

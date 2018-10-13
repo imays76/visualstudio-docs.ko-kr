@@ -1,7 +1,7 @@
 ---
 title: 문서 및 다이어그램에 사용 사례 연결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0fd5bfedc803ff928a87f34abece9b2449a5033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232533"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>문서 및 다이어그램에 사용 사례 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [문서 및 다이어그램에 사용 사례 연결](https://docs.microsoft.com/visualstudio/modeling/link-a-use-case-to-documents-and-diagrams)합니다.  
-  
 사용 사례 다이어그램의 사용 사례를 다른 다이어그램 또는 문서에 연결할 수 있습니다. 예를 들어 다음과 같은 다이어그램 및 문서에 사용 사례를 연결할 수 있습니다.  
   
 -   사용자와 시스템 또는 주요 구성 요소 간의 상호 작용을 통해 사용 사례의 목표가 인식되는 방식을 보여 주는 시퀀스 다이어그램  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 스크립트 문서 보기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc24c5e9c2332516cbf939e14581a2df7bea44eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f32fc5537fae9483401ac479eb4585d1e19108
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230516"
 ---
 # <a name="how-to-view-script-documents"></a>방법: 스크립트 문서 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 스크립트 문서 보기](https://docs.microsoft.com/visualstudio/debugger/how-to-view-script-documents)합니다.  
-  
 이전 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 서버 쪽 스크립트에서 생성된 클라이언트 쪽 스크립트 파일이 스크립트 탐색기 창에 나타납니다. 스크립트 탐색기 창은 종종 숨겨지므로 클라이언트 쪽 스크립트를 사용할 수 있는지 확인할 수 없는 경우도 있습니다.  
   
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서는 서버 쪽 스크립트에서 생성된 클라이언트 쪽 스크립트 파일이 솔루션 탐색기에 나타납니다. 솔루션 탐색기는 기본적으로 표시됩니다. 스크립트 탐색기 창은 사용되지 않습니다.  

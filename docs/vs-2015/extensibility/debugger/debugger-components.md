@@ -1,7 +1,7 @@
 ---
 title: 디버거 구성 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b1b8f12a8bfa15a352f38d021a64a6f9f8b9244
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f1f13f3a9008d86812b0e1e11886cdc66457271e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232598"
 ---
 # <a name="debugger-components"></a>디버거 구성 요소
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거 구성 요소](https://docs.microsoft.com/visualstudio/extensibility/debugger/debugger-components)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 디버거는 VSPackage로 구현 되었으며 전체 디버그 세션을 관리 합니다. 디버그 세션에는 다음 요소가 구성 됩니다.  
   
 -   **디버그 패키지:** 는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 디버거는 디버깅 중인 항목에 관계 없이 동일한 사용자 인터페이스를 제공 합니다.  

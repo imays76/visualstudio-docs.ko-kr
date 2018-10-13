@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer3::GetServerName | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e23b8a581668e0f8c726ac8e3b14212308e86ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9b3144097bf7eea103961210e28261554e37165
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230713"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugCoreServer3::GetServerName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcoreserver3-getservername)합니다.  
-  
 서버의 이름을 검색합니다.  
   
 ## <a name="syntax"></a>구문  

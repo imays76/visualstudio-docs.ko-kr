@@ -1,7 +1,7 @@
 ---
 title: CL 작업 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e10c5d6ed0e4b992f5b573cd46bd1248d8d24d90
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddc31a98419553228b099e2dfb8652992b884176
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592819"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234834"
 ---
 # <a name="cl-task"></a>CL 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CL 작업](https://docs.microsoft.com/visualstudio/msbuild/cl-task)합니다.  
-  
   
 Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행(.exe) 파일, 동적 연결 라이브러리(.dll) 파일 또는 코드 모듈(.netmodule) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)을 참조하세요.  
   
@@ -545,7 +543,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
      소스 파일에 대한 전처리 기호를 정의합니다.  
   
-     자세한 내용은 [/D(전처리기 정의)](http://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba)를 참조하세요.  
+     자세한 내용은 [/D (Preprocessor Definitions)](http://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba)을 참조하세요.  
   
 -   **PreprocessOutput**  
   

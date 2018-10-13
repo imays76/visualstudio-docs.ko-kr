@@ -1,7 +1,7 @@
 ---
 title: 중첩 된 프로젝트에 대 한 마법사 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4621627faae761bfe63b7fd056427a3771d21582
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ad12e0884818688c56643e72cb62b7dbfe6f194
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556761"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234938"
 ---
 # <a name="wizard-support-for-nested-projects"></a>중첩된 프로젝트에 대한 마법사 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [중첩 된 프로젝트에 대 한 마법사 지원](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-support-for-nested-projects)합니다.  
-  
 중첩 된 프로젝트에 대 한 부모 프로젝트 구현할 수 있는 두 가지 마법사를 실행 하는 IDE: 합니다 **새 프로젝트** 마법사와 **항목 추가** 마법사.  
   
  사용자가 시작 하는 경우는 **새 프로젝트** 를 선택 하 여 마법사 **프로젝트 추가** 를 클릭 하 고 **새 프로젝트** 파일 메뉴 또는 선택 하 여 **추가** 마우스 오른쪽 단추로 클릭 하 고 **새 프로젝트** IDE가 솔루션 탐색기에서 다음을 실행 합니다. 합니다 **AddProject** 명령과 부모 프로젝트의 구현 된 **AddProject**명령은 서식 파일 프로젝트 파일 또는 컨텍스트 매개 변수 집합이 포함 된 마법사 (.vsz) 파일을 반환 합니다.  

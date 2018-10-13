@@ -1,7 +1,7 @@
 ---
 title: 소스 서버 보안 경고 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b971a05f9cd8873a1dbac3cafe6865ffce238868
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f75ae71cb03e4811e5fa0599bd1ee51371c7891
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230103"
 ---
 # <a name="source-server-security-alert"></a>소스 서버 보안 경고
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 서버 보안 경고](https://docs.microsoft.com/visualstudio/debugger/source-server-security-alert)합니다.  
-  
 소스 서버를 사용할 경우 알 수 있고 신뢰할 수 있는 위치의 기호 파일만 사용합니다.  
   
  이 경고는 소스 서버 지원을 사용하는 경우에 나타납니다. 소스 서버 명령은 디버그 기호 파일(PDB 파일)에 포함되어 있습니다. PDB 파일의 출처를 확인해야 합니다.  
