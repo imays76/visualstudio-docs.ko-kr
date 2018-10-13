@@ -1,7 +1,7 @@
 ---
 title: 선택 컨텍스트 개체 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a74e86cb050dcbc1262bd3bf060f76b8bbc38f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228659"
 ---
 # <a name="selection-context-objects"></a>선택 컨텍스트 개체
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [선택 컨텍스트 개체](https://docs.microsoft.com/visualstudio/extensibility/internals/selection-context-objects)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE) 전역 선택 컨텍스트 개체를 사용 하 여 IDE에서 표시 되어야 할 사항을 결정 합니다. IDE의 각 창 전역 선택 컨텍스트에 푸시된 자체 선택 컨텍스트 개체를 가질 수 있습니다. IDE는 해당 창에 포커스가 있는 경우 창에서 값을 사용 하 여 전역 선택 항목 컨텍스트를 업데이트 합니다. 자세한 내용은 [사용자에 게 피드백](../../extensibility/internals/feedback-to-the-user.md)합니다.  
   
  각 창 프레임 또는 IDE에서 사이트에 라는 서비스 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>합니다. 창 프레임에 배치 되는 VSPackage로 생성 된 개체를 호출 해야 합니다 `QueryService` 에 대 한 포인터를 가져올 메서드를는 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 인터페이스입니다.  

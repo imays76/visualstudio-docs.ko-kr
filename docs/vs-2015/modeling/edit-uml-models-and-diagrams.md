@@ -1,7 +1,7 @@
 ---
 title: UML 모델 및 다이어그램 편집 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0620f0a1212d7abd864a9428492d95067098ef16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52d83911da0f8c1a54618a389db3cff6bbcbab1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245827"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>UML 모델 및 다이어그램 편집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집 UML 모델 및 다이어그램](https://docs.microsoft.com/visualstudio/modeling/edit-uml-models-and-diagrams)합니다.  
-  
 여러 다른 형식의 다이어그램에서 제공하는 뷰를 통해 UML 모델을 만들고 편집할 수 있습니다. 이러한 다이어그램은 시스템에 대한 여러 관점을 제공하여 해당 디자인 및 요구 사항의 다양한 측면을 이해하고 논의하는 데 도움을 줍니다. Visual Studio는 가장 자주 사용되는 형식의 UML 다이어그램 중 5가지에 대한 템플릿을 제공합니다.  
   
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  

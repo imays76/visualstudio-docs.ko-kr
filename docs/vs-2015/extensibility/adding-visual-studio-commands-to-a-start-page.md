@@ -1,7 +1,7 @@
 ---
 title: 시작 페이지를 Visual Studio 명령 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3625f64686265123cd0b7e6f432db47cd978ae3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a301357765f85d80afb71985d51044227204997
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541604"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256245"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>시작 페이지에 Visual Studio 명령 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시작 페이지 Visual Studio 명령 추가](https://docs.microsoft.com/visualstudio/extensibility/adding-visual-studio-commands-to-a-start-page)합니다.  
-  
 사용자 지정 시작 페이지를 만들 때 Visual Studio 명령에 추가할 수 있습니다. 이 문서에는 Visual Studio 명령 시작 페이지 XAML 개체를 바인딩할 다양 한 방법을 설명 합니다.  
   
  XAML에서 명령에 대 한 자세한 내용은 참조 하세요. [명령 개요](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  

@@ -1,7 +1,7 @@
 ---
 title: 일반적으로 프로젝트를 확장 하는 데 사용 되는 개체에 대 한 Catid | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2ad075ac384dc8bc4f83d16034715515fde5b04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f9daee3e188aeb098961aa6631f7901efad2aa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549711"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224057"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>일반적으로 프로젝트를 확장하는 데 사용되는 개체에 대한 CATID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [개체는는 일반적으로 데 프로젝트 확장에 대 한 Catid](https://docs.microsoft.com/visualstudio/extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects)합니다.  
-  
 다음 표에서 확장 하는 데 사용 되는 Catid `Project` 및 `ProjectItem` 자동화 개체에 대 한 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], 및 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트. 이러한 Catid VSLangProj.olb에 정의 됩니다.  
   
 ## <a name="listing-of-catids"></a>Catid 목록  

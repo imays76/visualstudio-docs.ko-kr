@@ -1,7 +1,7 @@
 ---
 title: 다이어그램에 배경 이미지 설정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240554"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [다이어그램에 배경 이미지 설정](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK에서는 사용자 지정 코드를 사용하여 생성된 디자이너의 배경 이미지를 설정할 수 있습니다.  
   
 ## <a name="setting-the-background-image"></a>배경 이미지 설정  
@@ -52,7 +50,7 @@ ms.locfileid: "47550673"
   
 11. Resources.Designer.cs가 없는 경우 클릭 Resources.resx 파일에서 **솔루션 탐색기**합니다.  
   
-12. 에 **속성** 창에서 설정 합니다 `Custom Tool` 속성을 `ResXFileCodeGenerator`합니다.  
+12. **속성** 창에서 `Custom Tool` 속성을 `ResXFileCodeGenerator`로 설정합니다.  
   
 13. **솔루션 탐색기**Dsl 프로젝트를 마우스 오른쪽 단추로 클릭, 가리킨 **추가**를 클릭 하 고 **새 폴더**합니다.  
   

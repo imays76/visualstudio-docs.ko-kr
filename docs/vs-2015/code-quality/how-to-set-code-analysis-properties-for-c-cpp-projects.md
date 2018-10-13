@@ -1,7 +1,7 @@
 ---
 title: '방법: c-c + + 프로젝트에 대 한 코드 분석 속성 설정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c0b396394e003f97c60a65ee37b94810e692e28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5be7d600da2f1f402de3f6d083851edb11bf8dda
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224824"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>방법: C/C++ 프로젝트의 코드 분석 속성 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: C/c + + 프로젝트에 대 한 코드 분석 속성 설정](https://docs.microsoft.com/visualstudio/code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects)합니다.  
-  
 프로젝트의 각 구성에 있는 코드를 분석 하려면 코드 분석 도구를 사용 하는 규칙을 구성할 수 있습니다. 또한 생성 하 고 타사 도구에서 프로젝트에 추가 된 코드에서 발생 한 경고를 표시 하지 않으려면 코드 분석을 보낼 수 있습니다.  
   
 ## <a name="code-analysis-property-page"></a>코드 분석 속성 페이지  

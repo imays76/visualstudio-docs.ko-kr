@@ -1,7 +1,7 @@
 ---
 title: 셰이더 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d84d5aa52ebfe7ad29886296031d492c1945d8c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72325522886ed1bc6ab262152c84fc3660231d86
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226852"
 ---
 # <a name="working-with-shaders"></a>셰이더 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [셰이더 작업](https://docs.microsoft.com/visualstudio/designers/working-with-shaders)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 그래프 기반 셰이더 디자이너를 사용하여 사용자 지정 셰이더 효과를 디자인할 수 있습니다. DirectX 기반 게임 또는 앱에서 이 셰이더를 사용할 수 있습니다.  
   
 ## <a name="shaders"></a>셰이더  

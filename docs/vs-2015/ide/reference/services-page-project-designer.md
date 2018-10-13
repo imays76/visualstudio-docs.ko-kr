@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 디자이너, 서비스 페이지 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d08052f52a7a9130b9809d6ffaa5fe801a9c668d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a968283a8836c9a31c1d7f1e6552c8302d87140
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243700"
 ---
 # <a name="services-page-project-designer"></a>프로젝트 디자이너, 서비스 페이지
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 디자이너, 서비스 페이지](https://docs.microsoft.com/visualstudio/ide/reference/services-page-project-designer)합니다.  
-  
   
 클라이언트 응용 프로그램 서비스를 통해 Windows Forms 및 WPF(Windows Presentation Foundation) 응용 프로그램에서 [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] 로그인, 역할 및 프로필 서비스에 간편하게 액세스할 수 있습니다. **프로젝트 디자이너**의 **서비스** 페이지를 사용하여 프로젝트에 대해 클라이언트 응용 프로그램 서비스를 사용하도록 설정하고 구성할 수 있습니다.  
   

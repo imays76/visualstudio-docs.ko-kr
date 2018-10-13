@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3::DisableENC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 528f1a6789b09bde6313cdd00fe0cd4974c6cf31
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b14019d94f322f8822825477e18d60c0a54490c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192142"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProcess3::DisableENC](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3-disableenc)합니다.  
-  
 이 메서드가 명시적으로 편집 하며 계속 하기가 비활성화가이 프로세스에 대 한 포함 하는 모든 프로그램. 사용자 지정 포트 공급자는 항상 반환 `E_NOTIMPL`합니다.  
   
 ## <a name="syntax"></a>구문  

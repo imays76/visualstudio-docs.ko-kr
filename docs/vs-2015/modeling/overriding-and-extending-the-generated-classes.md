@@ -1,7 +1,7 @@
 ---
 title: 생성 된 클래스 재정의 및 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 31db7980738c8976fdcd318e87d8350a833f6252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268172"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>생성된 클래스 재정의 및 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [생성 된 클래스 재정의 및 확장](https://docs.microsoft.com/visualstudio/modeling/overriding-and-extending-the-generated-classes)합니다.  
-  
 DSL 정의 플랫폼은 강력한 도메인 특정 언어를 기반으로 하는 도구 집합을 작성할 수 있습니다. 많은 확장과 adaptation DSL 정의에서 생성 된 클래스 재정의 및 확장 하 여 만들 수 있습니다. 이러한 클래스는 DSL 정의 다이어그램에서 명시적으로 정의한 도메인 클래스 뿐 아니라 뿐만 아니라 도구 상자, 탐색기, serialization 및 등을 정의 하는 다른 클래스를 포함 합니다.  
   
 ## <a name="extensibility-mechanisms"></a>확장성 메커니즘  

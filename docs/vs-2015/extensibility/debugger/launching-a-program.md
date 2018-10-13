@@ -1,7 +1,7 @@
 ---
 title: 프로그램 시작 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5987f793e6f0164654f280f8417494066e3e5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27b7daadd3642a4eb35d993e37b6ade3bd829972
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242552"
 ---
 # <a name="launching-a-program"></a>프로그램 시작
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로그램을 실행할](https://docs.microsoft.com/visualstudio/extensibility/debugger/launching-a-program)합니다.  
-  
 프로그램을 디버깅 하려는 사용자가 IDE에서 디버거를 실행 하도록 f5 수 있습니다. 이 일련의 궁극적으로 IDE의 다시 연결 되거나 연결 프로그램에 다음과 같이 되는 디버그 엔진 (DE)에 연결 하는 이벤트를 시작 합니다.  
   
 1.  IDE는 먼저 현재 프로젝트는 솔루션의 디버그 설정을 가져올 프로젝트 패키지를 호출 합니다. 시작 디렉터리, 환경 변수, 프로그램 실행은 포트 및 지정 된 경우 해당 프로그램을 만드는 데 DE의 설정에 포함 됩니다. 이러한 설정은 디버그 패키지에 전달 됩니다.  

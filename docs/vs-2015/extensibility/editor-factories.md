@@ -1,7 +1,7 @@
 ---
 title: 편집기 팩터리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645dd84b7a864a160e48582b92fbc44b8708309b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97f53e944e140948b769c351fef6c9b91f4aa008
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246911"
 ---
 # <a name="editor-factories"></a>편집기 팩터리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집기 팩터리](https://docs.microsoft.com/visualstudio/extensibility/editor-factories)합니다.  
-  
 편집기 팩터리를 편집기 개체를 만들고 실제 뷰 라고 창 프레임에 넣습니다. 문서 데이터 및 편집기 및 디자이너를 만드는 데 필요한 문서 뷰 개체를 만듭니다. 편집기 팩터리를 Visual Studio 핵심 편집기 및 모든 표준 편집기를 만들 필요 합니다. 편집기 팩터리를 사용 하 여 사용자 지정 편집기를 만들 수도 있습니다.  
   
  편집기 팩터리를 구현 하 여 만든는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 인터페이스입니다. 다음 예제를 구현 하는 방법을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 편집기 팩터리를 만들려면:  

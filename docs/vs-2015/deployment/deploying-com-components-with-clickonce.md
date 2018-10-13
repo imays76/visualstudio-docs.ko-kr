@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 사용 하 여 COM 구성 요소 배포 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2ddf7e14d3a9e1ceb2e1432e70942dd455621058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549442"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246846"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce를 사용하여 COM 구성 요소 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 사용 하 여 COM 구성 요소 배포](https://docs.microsoft.com/visualstudio/deployment/deploying-com-components-with-clickonce)합니다.  
-  
 일반적으로 기존 COM 구성 요소의 배포는 어려운 작업 이었습니다. 구성 요소는 전역으로 등록 해야 하 고 따라서 겹치는 응용 프로그램 간에 원치 않는 부작용을 일으킬 수 있습니다. 이 이런 아니므로 일반적으로.NET Framework 응용 프로그램에서 문제가 구성 요소는 응용 프로그램에 완전히 격리 또는 side-by-side-호환 됩니다. Visual Studio를 사용 하면 Windows XP 또는 더 높은 운영 체제에서 격리 된 COM 구성 요소를 배포할 수 있습니다.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .NET 응용 프로그램을 배포 하는 쉽고 안전한 메커니즘을 제공 합니다. 그러나 레거시 COM 구성 요소를 사용 하는 응용 프로그램을 배포 하는 것에 대 한 추가 단계를 수행 해야 합니다. 이 항목에서는 격리 된 COM 구성 요소를 배포 하 고 (예를 들어, Visual Basic 6.0 또는 Visual c + +)에서 네이티브 구성 요소를 참조 하는 방법을 설명 합니다.  

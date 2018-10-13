@@ -1,7 +1,7 @@
 ---
 title: 레거시 API를 사용 하 여 편집기 컨트롤 및 메뉴를 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5a4e5acc7dfc3db2eefad146db24849f1c3b36d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2038d3e084778a6df6c765be5fbff9e7d53a1f90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553359"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240502"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 편집기 컨트롤 및 메뉴를 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집기 컨트롤 사용자 지정 및 레거시 API를 사용 하 여 메뉴](https://docs.microsoft.com/visualstudio/extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api)합니다.  
-  
 언어 서비스 또는 텍스트 뷰 상황에 맞는 메뉴 및 편집기에서 컨트롤을 제어할 수 있습니다. 이 섹션의 페이지에는 이러한 기능을 사용 하는 방법을 자세히 설명 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

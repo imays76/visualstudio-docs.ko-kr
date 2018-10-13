@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier2::CanAddPort | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 41f69e0a-e82c-473d-8b7a-0c40fc5730fc
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1478841e6fdd48a6c956486153db7bf4e81435fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db45b66ee47a22aff9c3dfca944a4524450df607
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244389"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugPortSupplier2::CanAddPort](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplier2-canaddport)합니다.  
-  
 포트 공급자가 새 포트를 추가할 수 있는지 확인 합니다.  
   
 ## <a name="syntax"></a>구문  

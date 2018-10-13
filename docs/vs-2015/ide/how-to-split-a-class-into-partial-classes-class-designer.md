@@ -1,7 +1,7 @@
 ---
 title: '방법: 클래스를 Partial 클래스로 분할(클래스 디자이너) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bbf355caf4a67e54a53f7447f813bf5870b9086
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245481"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>방법: 클래스를 부분 클래스로 분할(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 클래스 (클래스 디자이너) 클래스를 부분 클래스로 분할](https://docs.microsoft.com/visualstudio/ide/how-to-split-a-class-into-partial-classes-class-designer)합니다.  
-  
 Visual Basic의 `Partial` 키워드 또는 Visual C#의 `partial` 키워드를 사용하여 여러 선언에서 클래스 또는 구조체의 선언을 나눌 수 있습니다. 원하는 만큼 다양한 소스 파일 또는 하나의 소스 파일에서 원하는 개수만큼 partial 선언을 사용할 수 있습니다. 그러나 모든 선언이 동일한 어셈블리와 동일한 네임스페이스에 있어야 합니다.  
   
  Partial 클래스는 여러 상황에서 유용합니다. 예를 들어, 대규모 프로젝트에서 작업하는 경우 하나의 클래스를 둘 이상의 파일에 나누면 둘 이상의 프로그래머가 동시에 작업할 수 있습니다. Visual Studio에서 생성된 코드로 작업하는 경우 소스 파일을 다시 만들 필요 없이 클래스를 변경할 수 있습니다. Visual Studio에서 생성된 코드의 예로는 Windows Forms 및 웹 서비스 래퍼 코드가 있습니다. 따라서 Visual Studio에서 만든 파일을 수정하지 않고도 자동 생성된 클래스를 사용하는 코드를 만들 수 있습니다.  

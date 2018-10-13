@@ -1,7 +1,7 @@
 ---
 title: 참조 페이지, 프로젝트 디자이너(Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5e89b77749b331665869393b2b3cf7e520d3371
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254711"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>참조 페이지, 프로젝트 디자이너(Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [참조 페이지, 프로젝트 디자이너 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic)합니다.  
-  
   
 **프로젝트 디자이너**의 **참조** 페이지를 사용하여 프로젝트에서 참조, 웹 참조 및 가져온 네임스페이스를 관리합니다. 프로젝트에는 COM 구성 요소, XML 웹 서비스, .NET Framework 클래스 라이브러리나 어셈블리 또는 기타 클래스 라이브러리에 대한 참조가 포함될 수 있습니다. 참조 사용에 대한 자세한 내용은 [프로젝트의 참조 관리](../../ide/managing-references-in-a-project.md)를 참조하세요.  
   

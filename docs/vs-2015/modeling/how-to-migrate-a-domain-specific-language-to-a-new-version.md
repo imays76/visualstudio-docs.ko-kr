@@ -1,7 +1,7 @@
 ---
 title: '방법: 도메인별 언어 새 버전으로 마이그레이션 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d97e0204122e6dfcae89da7b04a0a303a0bd9a4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad5204b4a90018d935028dc517c09ac608043c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269427"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>방법: 도메인별 언어를 새 버전으로 마이그레이션
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 도메인별 언어를 새 버전으로 마이그레이션하기](https://docs.microsoft.com/visualstudio/modeling/how-to-migrate-a-domain-specific-language-to-a-new-version)합니다.  
-  
 정의 및 도메인 특정 언어를 사용 하는 프로젝트를 마이그레이션할 수 있습니다 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 버전의 [!INCLUDE[dsl](../includes/dsl-md.md)] 와 함께 배포 된는 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)]합니다.  
   
  마이그레이션 도구가의 일부로 제공 됩니다 [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]합니다. 도구 변환 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 및 솔루션을 사용 하거나 DSL 도구를 정의 합니다.  

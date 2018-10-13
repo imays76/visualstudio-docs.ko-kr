@@ -1,7 +1,7 @@
 ---
 title: '방법: 비주얼 스타일을 사용 하도록 설정 하 여 WPF 응용 프로그램 게시 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b93ea96bfaa03dc11cccf137c04e7d0cf3ca50ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592802"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250213"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: 비주얼 스타일을 사용하여 WPF 응용 프로그램 게시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 비주얼 스타일 사용 WPF 응용 프로그램을 게시](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled)합니다.  
-  
 비주얼 스타일을 사용자가 선택한 테마에 따라 변경 되는 공용 컨트롤의 모양을 사용 하도록 설정 합니다. 기본적으로 비주얼 스타일을 수동으로 활성화 해야 하므로 Windows Presentation Foundation (WPF) 응용 프로그램에 대 한 사용 되지 않습니다. 그러나 WPF 응용 프로그램에 대 한 비주얼 스타일을 사용 하도록 설정 하 고 다음 솔루션을 게시 하면 오류가 발생 합니다. 이 항목에서는이 오류 및 사용 하도록 설정 하는 비주얼 스타일을 사용 하 여 WPF 응용 프로그램을 게시 하기 위한 프로세스를 해결 하는 방법을 설명 합니다. 비주얼 스타일에 대 한 자세한 내용은 참조 하세요. [스타일에 대 한 시각적 개요](http://msdn.microsoft.com/en-us/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)합니다. 오류 메시지에 대 한 자세한 내용은 참조 하세요. [ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)합니다.  
   
  오류를 해결 하 고 솔루션을 게시 하려면 다음 작업을 수행 해야 합니다.  

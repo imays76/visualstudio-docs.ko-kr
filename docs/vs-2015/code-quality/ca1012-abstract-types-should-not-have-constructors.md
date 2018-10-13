@@ -1,7 +1,7 @@
 ---
 title: ': 추상 형식 ca1012 안 생성자 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,15 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 692dfc0ad69cf4d71d82953e2cc9965733915dc6
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: f5091cdf1a9af38b0e0b45fcf1ba99f91de03683
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238279"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: 추상 형식에는 생성자를 사용하면 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1012: 추상 형식에는 생성자를 사용 해야 합니다.](https://docs.microsoft.com/visualstudio/code-quality/ca1012-abstract-types-should-not-have-constructors)합니다.
-
 |||
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|

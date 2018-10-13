@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79dc8f28d101a2c7bdd9749dcd9b3dadb4204273
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49d81f86e934f05b619f4c78c83dd42763880726
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554451"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241815"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugExpressionEvaluator3::Parse2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpressionevaluator3-parse2)합니다.  
-  
 기호 공급자 및 평가 프레임의 주소를 제공 하는 구문 분석 된 식에 식 문자열을 변환 합니다.  
   
 ## <a name="syntax"></a>구문  

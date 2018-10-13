@@ -1,7 +1,7 @@
 ---
 title: Combos 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8822907b8b813c9a18b36920636439c17950e9bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e1afd7bfa46e669c5125db18049e26984cf8d63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552421"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245890"
 ---
 # <a name="combos-element"></a>Combos 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Combos 요소](https://docs.microsoft.com/visualstudio/extensibility/combos-element)합니다.  
-  
 그룹 [Combo 요소](../extensibility/combo-element.md) 요소입니다.  
   
 ## <a name="syntax"></a>구문  

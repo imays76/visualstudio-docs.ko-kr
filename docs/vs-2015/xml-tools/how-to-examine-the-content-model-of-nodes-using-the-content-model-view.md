@@ -1,7 +1,7 @@
 ---
 title: '방법: 콘텐츠 모델 뷰를 사용 하 여 노드의 콘텐츠 모델 검사 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25e47eed752a78caebcbae66a527cc847ac7d8f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca6c86772cc3ad27b537052961afea50fad7b876
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541861"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245949"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>방법: 콘텐츠 모델 뷰를 사용하여 노드의 콘텐츠 모델 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 콘텐츠 모델 뷰에서 콘텐츠 모델의 노드를 사용 하 여 검사](https://docs.microsoft.com/visualstudio/xml-tools/how-to-examine-the-content-model-of-nodes-using-the-content-model-view)합니다.  
-  
   
 이 항목에서는 사용 하 여 노드를 탐색 하는 방법을 설명 합니다 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'CA1411: COM 등록 메서드는 나타나지 않아야 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 410531222f19632f6358bdbc320b95fe1254bafe
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 3f42bc0f6434cb67a3b6796e78a08cd874f436b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591725"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225704"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: COM 등록 메서드는 노출되면 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1411: COM 등록 메서드는 나타나지 않아야](https://docs.microsoft.com/visualstudio/code-quality/ca1411-com-registration-methods-should-not-be-visible)합니다.
-
 |||
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|

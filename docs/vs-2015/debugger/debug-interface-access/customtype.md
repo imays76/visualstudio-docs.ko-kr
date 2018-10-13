@@ -1,7 +1,7 @@
 ---
 title: CustomType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09179038fcef717d2c5d8ab00d1d05125663f89a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c9e2f9dd3c3ed02bfc111641d48bdc74282e946
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237590"
 ---
 # <a name="customtype"></a>CustomType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CustomType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/customtype)합니다.  
-  
 공급 업체에서 정의한 형식 (컴파일러 별 형식)으로 식별 되는 `SymTagCustomType` 기호입니다.  
   
 ## <a name="properties"></a>속성  

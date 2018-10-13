@@ -1,7 +1,7 @@
 ---
 title: 앱 모델&#39;s 아키텍처 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f07ac7b18564a14c3c71e6647f519ee47d40c9a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263707"
 ---
 # <a name="model-your-app39s-architecture"></a>앱 모델&#39;s 아키텍처
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [앱 모델&#39;s 아키텍처](https://docs.microsoft.com/visualstudio/modeling/model-your-app-s-architecture)합니다.  
-  
 소프트웨어 시스템 또는 응용 프로그램 사용자를 충족 하는지 확인 하는 데 필요, 전체 구조 설명 및 소프트웨어 시스템 또는 응용 프로그램의 동작의 일부로 Visual Studio에서 모델을 만들 수 있습니다. 모델을 사용하여 디자인 전체에서 사용되는 패턴을 설명할 수도 있습니다. 이러한 모델은 기존 아키텍처를 이해하고, 변경 내용을 논의하고, 의도를 명확하게 전달하는 데 도움이 됩니다.  
   
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  

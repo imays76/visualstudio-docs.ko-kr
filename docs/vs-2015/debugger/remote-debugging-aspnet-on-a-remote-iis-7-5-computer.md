@@ -1,31 +1,29 @@
 ---
 title: 원격 IIS 7.5의 원격 디버깅 ASP.NET 컴퓨터 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de51ed1cda2116b1f3b8b698be6e4653a1b648fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 124a4775593a161b1de7f55465bf20739909e4f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239852"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>원격 IIS 컴퓨터의 원격 디버깅 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [원격 IIS 컴퓨터의 원격 디버그 ASP.NET](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)합니다.  
-  
 IIS 사용 하 여 Windows Server 컴퓨터에 ASP.NET 웹 응용 프로그램을 배포 하 고 원격 디버깅에 대해 설정할 수 있습니다. 이 가이드에는 설정 및 Visual Studio 2015 MVC 4.5.2 응용 프로그램을 구성 하 고, IIS에 배포 하 고 Visual Studio에서 원격 디버거를 연결 하는 방법을 설명 합니다.
 
 이러한 절차 이러한 서버 구성에서 테스트 되었습니다.
@@ -38,7 +36,7 @@ IIS 사용 하 여 Windows Server 컴퓨터에 ASP.NET 웹 응용 프로그램�
 
 Windows Server 컴퓨터에 원격 디버거를 다운로드 하는 방법에 대 한 지침은 [원격 디버깅](../debugger/remote-debugging.md)합니다.
 
-ASP.NET 응용 프로그램의 원격 디버깅을 위해 관리자 권한으로 원격 디버거 응용 프로그램을 실행 하거나 원격 디버거를 서비스로 시작 합니다. 원격 디버거를 서비스에서 찾을 수 있습니다 하는 서비스로 실행 하는 방법에 대 한 세부 정보 [원격 디버깅](../debugger/remote-debugging.md)합니다.
+ASP.NET 응용 프로그램의 원격 디버깅을 위해 관리자 권한으로 원격 디버거 응용 프로그램을 실행 하거나 원격 디버거를 서비스로 시작 합니다. 원격 디버거를 서비스로 실행하는 방법에 대한 자세한 내용은 [Remote Debugging](../debugger/remote-debugging.md)에서 확인할 수 있습니다.
 
 설치 되 면 원격 디버거가 대상 컴퓨터에서 실행 되 고 있는지 확인 합니다. (없는 경우 검색할 **원격 디버거** 에 **시작** 메뉴. ) 원격 디버거 창에는 다음과 같습니다. (4020는 기본 포트 번호)
 

@@ -1,7 +1,7 @@
 ---
 title: 디버그하지 않는 경우의 메모리 사용량2 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4c68aed5411e007ba5b48c3b1d9d32ce632da98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267425"
 ---
 # <a name="memory-usage-without-debugging"></a>디버그하지 않는 경우의 메모리 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VS 디버거 없이 메모리 사용 분석](https://docs.microsoft.com/visualstudio/profiling/memory-usage-without-debugging2)합니다.  
-  
 디버그하지 않고 **메모리 사용량** 도구를 사용하여 다음을 수행할 수 있습니다.  
   
 -   시나리오를 개발하는 동안 Visual Studio에서 직접 앱의 메모리 사용 권한을 모니터링합니다.  

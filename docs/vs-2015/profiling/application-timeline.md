@@ -1,7 +1,7 @@
 ---
 title: 응용 프로그램 타임라인 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2310b6f1fc6808d64d3b51b488bf4e4c4726e689
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df71c984c017b731e5168d6079415ee26543bbbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541999"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226789"
 ---
 # <a name="application-timeline"></a>응용 프로그램 타임라인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 XAML 앱의 리소스 소비량 분석](https://docs.microsoft.com/visualstudio/profiling/application-timeline)합니다.  
-  
 **응용 프로그램 타임라인** 프로파일러를 사용하여 XAML 응용 프로그램에서 응용 프로그램 상호 작용 관련 성능 문제를 찾으세요. 이 도구를 사용하면 응용 프로그램의 리소스 소비에 대해 자세히 알 수 있어서 XAML 응용 프로그램의 성능을 개선하는 데 도움이 됩니다. 응용 프로그램 UI 프레임(레이아웃 및 렌더링)을 준비하고, 네트워크 및 디스크 요청을 처리하여, 응용 프로그램 시작, 페이지 로드 및 창 크기 조정과 같은 시나리오에서 응용 프로그램이 보낸 시간을 분석할 수 있습니다.  
   
  **응용 프로그램 타임라인**은 **디버그 / 성능 프로파일러...** 명령으로 시작할 수 있는 도구 중 하나입니다.  

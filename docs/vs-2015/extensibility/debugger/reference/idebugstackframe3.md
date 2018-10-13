@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame3 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f032ac6b5fb348916c51f8cc98e1726b0795e21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4c2921991f3844e0d116694a8caadbae8d049e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543087"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269362"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugStackFrame3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstackframe3)합니다.  
-  
 이 인터페이스를 확장 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 가로챈된 예외를 처리 합니다.  
   
 ## <a name="syntax"></a>구문  

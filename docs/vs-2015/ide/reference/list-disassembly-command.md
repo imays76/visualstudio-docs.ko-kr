@@ -1,7 +1,7 @@
 ---
 title: 디스어셈블리 목록 표시 명령 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6834bc8f6c9bc3aacb95ae3705195fde32c4d6cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cbdc3ee566135fe86301deefe1e8be8db431f9f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256661"
 ---
 # <a name="list-disassembly-command"></a>디스어셈블리 목록 표시 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디스어셈블리 목록 표시 명령](https://docs.microsoft.com/visualstudio/ide/reference/list-disassembly-command)입니다.  
-  
   
 디버그 프로세스를 시작하고 오류 처리 방식을 지정할 수 있습니다.  
   
@@ -75,7 +73,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)   
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

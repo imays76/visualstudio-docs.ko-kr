@@ -1,7 +1,7 @@
 ---
 title: 도움말 뷰어 관리자 가이드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97d28d0651be2fd04e283b05e5a9a0e81997c338
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256960"
 ---
 # <a name="help-viewer-administrator-guide"></a>도움말 뷰어 관리자 가이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도움말 뷰어 관리자 가이드](https://docs.microsoft.com/visualstudio/ide/help-viewer-administrator-guide)합니다.  
-  
 도움말 뷰어에서는 인터넷에 액세스하거나 액세스하지 않고 네트워크 환경에 대한 로컬 도움말 설치를 관리할 수 있습니다. 로컬 도움말 콘텐츠는 컴퓨터별로 구성됩니다. 기본적으로 사용자가 로컬 도움말 설치를 업데이트하려면 관리자 권한을 갖고 있어야 합니다.  
   
  네트워크 환경에서 클라이언트가 인터넷에 액세스할 수 있는 경우 도움말 뷰어를 통해 명령줄 스크립트를 사용하여 인터넷에서 로컬 도움말 콘텐츠를 배포할 수 있습니다.  
@@ -136,7 +134,7 @@ ms.locfileid: "47541369"
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *foldername*> \ /y /e /k /o  
   
-     예를 들면 `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o` 같은 형식입니다.  
+     `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
   
 ### <a name="deploying-the-content"></a>콘텐츠 배포  
   

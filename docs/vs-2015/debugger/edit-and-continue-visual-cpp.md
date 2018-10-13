@@ -1,7 +1,7 @@
 ---
 title: 편집 하며 계속 (Visual c + +) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b95de832050cd6283b85ec4fe6bd99b67c8c1d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555910"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255088"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집 하며 계속 하기 (Visual c + +)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-cpp)합니다.  
-  
 Visual C++ 프로젝트에서 편집하며 계속하기를 사용할 수 있습니다. 참조 [지원 되는 코드 변경 (c + +)](../debugger/supported-code-changes-cpp.md) 편집 하며 계속 하기의 제한 사항에 대 한 정보에 대 한 합니다.  
   
  Visual Studio 2015 업데이트 1부터 이제 사용할 수 있습니다 편집 하며 계속 하기 Windows 스토어 c + + 앱 및 DirectX 앱에서 이제 지원 하기 때문에 합니다 **/ZI** 사용 하 여 컴파일러 스위치 **/bigobj** 전환 합니다. 컴파일된 이진 파일을 사용 하 여 편집 하며 계속 하기를 사용할 수도 있습니다는 **/FASTLINK** 전환 합니다.  

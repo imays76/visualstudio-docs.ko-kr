@@ -1,7 +1,7 @@
 ---
 title: 템플릿 정책 및 속성 창 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f8b2085818c539fe0e751a63562496363b43555
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 56ba04319023c60edca1e295d07d864e959f5f7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236927"
 ---
 # <a name="template-policy-and-the-properties-window"></a>템플릿 정책 및 속성 창
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [템플릿 정책 및 속성 창](https://docs.microsoft.com/visualstudio/extensibility/internals/template-policy-and-the-properties-window)합니다.  
-  
 엔터프라이즈 템플릿 프로젝트 내에서 프로젝트를 억제 되 면 해당 엔터프라이즈 템플릿 프로젝트에는 정책을 적용할 수 있습니다. 템플릿 정책 속성에 대 한 기본값을 설정, 속성, 속성을 추가 숨기고 등에 사용할 수 있는 시스템을 제한 됩니다.  
   
  템플릿 정책을 사용 하 여 정보의 표시를 제어 하는 **속성** 기간은 구현에서 다른 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> 템플릿 정책 제한 솔루션 또는 프로젝트 수준에서 개체 속성을 사용할 수 있지만 구성 요소 수준에서 개체 속성을 처리 합니다. 즉  

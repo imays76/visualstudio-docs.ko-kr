@@ -1,7 +1,7 @@
 ---
 title: InvokeMethod 활동 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 871e684c3503567411f49b419fcf8c47866a35d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27be9bc979ba1f3e86996aaf913502ca80142ebd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252969"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 활동 디자이너
 **InvokeMethod** 디자이너 만들기 및 구성 되는 <xref:System.Activities.Statements.InvokeMethod> 활동입니다.  

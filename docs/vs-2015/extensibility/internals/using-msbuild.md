@@ -1,7 +1,7 @@
 ---
 title: MSBuild를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8b776823c78835ad687a110c1fcc0ba1382bead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d382261615624fe099694af5b067de55090ad0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229335"
 ---
 # <a name="using-msbuild"></a>MSBuild 사용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild를 사용 하 여](https://docs.microsoft.com/visualstudio/extensibility/internals/using-msbuild)입니다.  
-  
 MSBuild를 완벽 하 게 빌드할 수, 작업, 빌드 및 빌드 구성 프로젝트 항목을 설명 하는 프로젝트 파일 만들기에 대 한 잘 정의 되 고 확장 가능한 XML 형식으로 제공 합니다.  
   
  MSBuild 기반 언어 프로젝트 시스템의 종단 간 샘플을 IronPython 샘플 심층 분석에 참조를[VSSDK 샘플](../../misc/vssdk-samples.md)합니다.  

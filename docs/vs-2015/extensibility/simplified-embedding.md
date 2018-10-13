@@ -1,7 +1,7 @@
 ---
 title: 간단한 포함 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de1ef1b6538c010a1428dfa54ea4296a870d7ad5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3919e64e9ce8a3e343a9ebba997a178f4f4230e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555825"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257506"
 ---
 # <a name="simplified-embedding"></a>간단한 포함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [간체 포함](https://docs.microsoft.com/visualstudio/extensibility/simplified-embedding)합니다.  
-  
 해당 문서 뷰 개체 (즉, 자식 수) 부모가 되는 경우 편집기에서 활성화 되어 단순화 포함 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 인터페이스 해당 창 명령을 처리 하기 위해 구현 됩니다. 간단한 포함 편집기 활성 컨트롤을 호스팅할 수 없습니다. 간단한 포함 편집기를 만드는 데 개체는 다음 그림에 표시 됩니다.  
   
  ![간단한 포함 편집기 그래픽](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  

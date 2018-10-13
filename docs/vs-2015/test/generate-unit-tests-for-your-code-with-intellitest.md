@@ -1,7 +1,7 @@
 ---
 title: IntelliTest를 사용하여 코드에 대한 단위 테스트 생성 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee613343f184019c546c0fd9fae0f5ecd355a12b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6743db0b10d8df4f131f8125b3e2f83bca262054
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226514"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>IntelliTest를 사용하여 코드에 대한 단위 테스트 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IntelliTest 사용 하 여 코드에 대 한 단위 테스트 생성](https://docs.microsoft.com/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)합니다.  
-  
 IntelliTest는 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스트 도구 모음을 생성합니다. 코드의 모든 문에 대해 해당 문을 실행할 테스트 입력이 생성됩니다. 코드의 모든 조건부 분기에 대해 사례 분석이 수행됩니다. 예를 들어 if 문, 어설션 및 예외를 throw할 수 있는 모든 작업이 분석됩니다. 이 분석은 각 메서드에 대해 매개 변수가 있는 단위 테스트용 테스트 데이터를 생성하는 데 사용됩니다(높은 코드 검사가 포함된 단위 테스트 생성).  
   
  IntelliTest를 실행하면 오류가 발생하는 테스트를 쉽게 확인하고 필요한 코드를 추가하여 수정할 수 있습니다. 생성된 테스트 중에서 재발 테스트 모음을 제공하기 위해 테스트 프로젝트에 저장할 테스트를 선택할 수 있습니다. 코드를 변경하면 IntelliTest를 다시 실행하여 생성된 테스트를 코드 변경 내용과 동기화합니다.  

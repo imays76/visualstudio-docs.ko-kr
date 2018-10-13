@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 디자이너, 디버그 페이지 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfe8539d7b15af1faa22911b69686cf9243db418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f16abf5fbf21678187a22efc9a368df7785057ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271364"
 ---
 # <a name="debug-page-project-designer"></a>프로젝트 디자이너, 디버그 페이지
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 디자이너, 디버그 페이지](https://docs.microsoft.com/visualstudio/ide/reference/debug-page-project-designer)합니다.  
-  
   
 > [!WARNING]
 >  이 항목은 Windows 스토어 응용 프로그램에 적용되지 않습니다. Windows 개발자 센터에서 [디버그 세션 시작(VB, C#, C++ 및 XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)을 참조하세요.  

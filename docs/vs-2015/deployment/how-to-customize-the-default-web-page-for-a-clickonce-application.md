@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 응용 프로그램에 대 한 기본 웹 페이지를 사용자 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bae699d0425f622f81ca14427934271b8d45eefb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b87019a824acada616865fd65cfd6aade8aa6ec9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551601"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243427"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램의 기본 웹 페이지 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 응용 프로그램에 대 한 기본 웹 페이지를 사용자 지정](https://docs.microsoft.com/visualstudio/deployment/how-to-customize-the-default-web-page-for-a-clickonce-application)합니다.  
-  
 ClickOnce 응용 프로그램을 웹에 게시할 때 웹 페이지를 자동으로 생성 되어 응용 프로그램과 함께 게시 합니다. 기본 페이지에는 응용 프로그램 및 응용 프로그램을 설치 하거나 필수 구성 요소를 설치 하거나 MSDN에서 도움말에 액세스 하는 링크의 이름을 포함 합니다.  
   
 > [!NOTE]

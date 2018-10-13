@@ -1,7 +1,7 @@
 ---
 title: METADATA_TYPE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d7b6f6e38a92be62c676e69197d990cb53989db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f25efb69848f569401143435412406bd2093eb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260756"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [METADATA_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/metadata-type)합니다.  
-  
 이 구조체는 메타 데이터에서 가져온 필드 형식에 대 한 정보를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  

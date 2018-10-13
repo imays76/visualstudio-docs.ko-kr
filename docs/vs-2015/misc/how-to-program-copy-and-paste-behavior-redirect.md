@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그램 복사 및 붙여넣기 동작-리디렉션 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: 1268914e887645c833fa25f998ece0f88d80e795
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5fa570b117e4b31454ddb92d13e991c8981c4fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216972"
 ---
 # <a name="how-to-program-copy-and-paste-behavior---redirect"></a>방법: 프로그램 복사 및 붙여넣기 동작 - 리디렉션
 이 항목의 내용은 유사한 주제와 병합 되었습니다. 참조 하세요 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)합니다.

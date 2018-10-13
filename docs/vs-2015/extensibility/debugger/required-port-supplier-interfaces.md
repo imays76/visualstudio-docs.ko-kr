@@ -1,7 +1,7 @@
 ---
 title: 필요한 포트 공급자 인터페이스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 960cd5668fe49ba50e79f036848948ec8e0bbfc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 251b5c9d96ac7d0e82705c81b1b568e2d85b88f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248191"
 ---
 # <a name="required-port-supplier-interfaces"></a>필요한 포트 공급자 인터페이스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [필요한 포트 공급자 인터페이스](https://docs.microsoft.com/visualstudio/extensibility/debugger/required-port-supplier-interfaces)합니다.  
-  
 포트 공급자 구현 해야 합니다 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 인터페이스.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
   
  포트 공급자를 제공 하므로 포트, 해당 구현도 해야 합니다. 따라서 다음 인터페이스를 구현 해야 합니다.  

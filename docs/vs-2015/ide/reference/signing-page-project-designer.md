@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 디자이너, 서명 페이지 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eef35adac40b51e1ec46404d9b0da5cbe22f7509
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4aa8ee86032c4cadf9cbfa59d3db840102be669
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263947"
 ---
 # <a name="signing-page-project-designer"></a>프로젝트 디자이너, 서명 페이지
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 디자이너, 서명 페이지](https://docs.microsoft.com/visualstudio/ide/reference/signing-page-project-designer)합니다.  
-  
   
 **프로젝트 디자이너**의 **서명** 페이지를 사용하여 응용 프로그램 및 배포 매니페스트에 서명하고 어셈블리에도 서명합니다(강력한 이름 서명).  
   

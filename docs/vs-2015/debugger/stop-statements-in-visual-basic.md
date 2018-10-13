@@ -1,7 +1,7 @@
 ---
 title: Visual Basic의 stop 문 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fcb4e3018dad53ef869748a4394363dba78f71c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45752b6b33a68e785dd9de028bd5c3de2930e964
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541615"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261913"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic의 Stop 문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Basic의 Stop 문을](https://docs.microsoft.com/visualstudio/debugger/stop-statements-in-visual-basic)합니다.  
-  
 중단점을 설정하는 대신 Visual Basic의 Stop 문을 사용하는 프로그래밍 방식을 제공합니다. 디버거에서는 Stop 문이 나올 경우 프로그램 실행을 중단하여 중단 모드를 시작합니다. C# 프로그래머는 System.Diagnostics.Debugger.Break에 대한 호출을 사용하여 동일한 결과를 얻을 수 있습니다.  
   
  Stop 문을 설정하거나 제거하려면 소스 코드를 편집해야 합니다. 중단점을 설정하거나 제거하는 것처럼 디버거 명령을 사용하여 Stop 문을 설정하거나 제거할 수는 없습니다.  

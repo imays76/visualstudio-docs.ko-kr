@@ -1,7 +1,7 @@
 ---
 title: 호출 트리 뷰 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b672670dc621b66e51228678af025db8d7f449b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df170176397bd8b74c169e8331baaffa9f6b744
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225448"
 ---
 # <a name="call-tree-view"></a>호출 트리 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [호출 트리 뷰](https://docs.microsoft.com/visualstudio/profiling/call-tree-view)합니다.  
-  
 호출 트리 뷰에는 프로파일링 된 응용 프로그램에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 응용 프로그램 또는 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 성능 데이터가 나열됩니다.  
   
  호출 트리 뷰를 확장하여 시간을 가장 많이 사용했거나 가장 자주 샘플링된 함수의 실행 경로를 강조 표시할 수도 있습니다. 가장 성능 비용이 높은 경로를 표시하려면 함수를 마우스 오른쪽 단추로 클릭한 다음 **실행 부하 과다 경로 확장**을 클릭합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 워크플로 디자이너를 사용 하 여 응용 프로그램 개발 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6a010a0df75e683ad26ac0ca297a0ab817bd22cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71cde900802543a21a20bc02e95bcfedc50d5541
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541747"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259157"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>워크플로 디자이너로 응용 프로그램 개발
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]는 [!INCLUDE[wf](../includes/wf-md.md)] 개발 환경에 호스트되는 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]에서 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 응용 프로그램을 디버깅하고 그래픽을 생성하는 비주얼 디자이너 겸 디버거입니다. 여기서 템플릿 및 활동 디자이너를 사용하여 복합 워크플로 응용 프로그램, 활동 라이브러리 또는 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 서비스를 생성할 수 있습니다. [!INCLUDE[crabout](../includes/crabout-md.md)] 워크플로 참조 합니다 [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)합니다.  

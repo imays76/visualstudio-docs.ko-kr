@@ -1,7 +1,7 @@
 ---
 title: 레이어 다이어그램에 명령 및 제스처 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9434c93caf9cfe614a01cf9a10912f1d0562b9bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223220"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>레이어 다이어그램에 명령 및 제스처 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [종속성 다이어그램에 명령 및 제스처 추가](https://docs.microsoft.com/visualstudio/modeling/add-commands-and-gestures-to-layer-diagrams)합니다.  
-  
 Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 및 제스처 처리기를 정의할 수 있습니다. 이러한 확장을 다른 Visual Studio 사용자에게 배포할 수 있는 VSIX(Visual Studio Integration Extension)로 패키지할 수 있습니다.  
   
  필요한 경우 동일한 Visual Studio 프로젝트에서 여러 개의 명령 및 제스처 처리기를 정의할 수 있습니다. 이러한 여러 프로젝트를 하나의 VSIX에 결합할 수도 있습니다. 예를 들어 레이어 명령, 도메인 특정 언어 및 UML 다이어그램 명령을 포함하는 단일 VSIX를 정의할 수 있습니다.  
@@ -50,7 +48,7 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
   
 3.  확장을 테스트하려면 **Ctrl+F5** 또는 **F5**키를 누릅니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 시작됩니다. 이 인스턴스에서 레이어 다이어그램을 만듭니다. 이 다이어그램에서 명령 또는 제스처 확장이 작동해야 합니다.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다. 이 인스턴스에서 레이어 다이어그램을 만듭니다. 이 다이어그램에서 명령 또는 제스처 확장이 작동해야 합니다.  
   
 4.  실험적 인스턴스를 닫고 샘플 코드를 수정합니다. 자세한 내용은 [탐색 및 업데이트 프로그램 코드에서 모델 계층](../modeling/navigate-and-update-layer-models-in-program-code.md)합니다.  
   
@@ -111,7 +109,7 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
   
 2.  기능을 테스트하려면 Ctrl+F5 또는 F5 키를 누릅니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 열립니다. 이 인스턴스에서 레이어 다이어그램을 만들거나 엽니다.  
   
-3.  기본 인스턴스에서 VSIX를 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 또는 다른 컴퓨터에서 찾을 **.vsix** 파일을 **bin** 의 VSIX 프로젝트 디렉터리. VSIX를 설치할 컴퓨터에 파일을 복사합니다. Windows 탐색기(Windows 8에서는 파일 탐색기)에서 VSIX 파일을 두 번 클릭합니다.  
+3.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치하려면 **.vsix\*** 디렉터리에서 **.vsix** 파일을 찾습니다. VSIX를 설치할 컴퓨터에 파일을 복사합니다. Windows 탐색기(Windows 8에서는 파일 탐색기)에서 VSIX 파일을 두 번 클릭합니다.  
   
      파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.  
   

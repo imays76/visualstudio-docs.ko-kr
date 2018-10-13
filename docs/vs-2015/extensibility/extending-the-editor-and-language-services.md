@@ -1,7 +1,7 @@
 ---
 title: 편집기 및 언어 서비스 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8102b8fb4afc02ca0540d75b3c0d08ef75b964d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a7233a89dbda0ebd333979de752296df45bf712
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259197"
 ---
 # <a name="extending-the-editor-and-language-services"></a>편집기 및 언어 서비스 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집기 및 언어 서비스 확장](https://docs.microsoft.com/visualstudio/extensibility/extending-the-editor-and-language-services)합니다.  
-  
 언어 서비스 기능 (예: IntelliSense) 자체 편집기를 추가할 수 있으며 Visual Studio code 편집기의 대부분의 기능을 확장할 수 있습니다.  확장할 수 있습니다의 전체 목록을 참조 하세요 [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)합니다.  
   
  Framework MEF (Managed Extensibility)를 사용 하 여 대부분의 편집기 기능을 확장 합니다. 예를 들어, 구문 색 지정을 확장 하려면 편집기 기능을 사용 하는 경우는 MEF 작성할 수 있습니다 *구성 요소 파트* 다른 색 지정 및 원하는 방식 처리 하려는 분류를 정의 하는 합니다. 편집기는 또한 여러 확장 같은 기능을 지원합니다.  

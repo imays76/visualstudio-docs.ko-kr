@@ -1,7 +1,7 @@
 ---
 title: '방법: 네이티브 코드에 스레드 이름 설정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b369aaef3134c64ddabbc03d8f7391bcdea3647
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c040677dfe88c4fdd5db2f7077cfcea9e81099c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191687"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>방법: 네이티브 코드에 스레드 이름 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 네이티브 코드에 스레드 이름 설정](https://docs.microsoft.com/visualstudio/debugger/how-to-set-a-thread-name-in-native-code)합니다.  
-  
 프로그램의 스레드 이름을 설정하려면 다음 코드 예제와 같이 `SetThreadName` 함수를 사용합니다. `threadName` 매개 변수에 대한 메모리가 해제될 수 있도록 스레드 이름이 스레드에 복사됩니다.  
   
 ## <a name="example"></a>예제  

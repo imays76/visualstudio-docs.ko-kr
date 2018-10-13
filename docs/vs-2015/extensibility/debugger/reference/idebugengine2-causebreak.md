@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::CauseBreak | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c568fb753dd86680f8942a97c46e78ae31fc7cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b7795299dfd2a0840610f81e74d60858499fdb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259014"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugEngine2::CauseBreak](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine2-causebreak)합니다.  
-  
 이 디버그 엔진 (DE) 다음에 실행을 중지 하 여 디버깅 중인 모든 프로그램 요청 실행 하려고 해당 스레드 중 하나입니다.  
   
 ## <a name="syntax"></a>구문  

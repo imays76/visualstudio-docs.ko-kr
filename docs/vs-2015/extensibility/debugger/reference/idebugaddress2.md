@@ -1,7 +1,7 @@
 ---
 title: IDebugAddress2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 988e53c53b83658a2ca4338659a5f805f3bcf0e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad7c5aa4d2d16c6b0d2489ff571ee3ce32a86afb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555448"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235185"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugAddress2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugaddress2)합니다.  
-  
 이 인터페이스는 주소의 개체를 소유 하는 프로세스의 ID에 대 한 액세스는이 인터페이스에서 표시를 제공 합니다.  
   
 ## <a name="syntax"></a>구문  

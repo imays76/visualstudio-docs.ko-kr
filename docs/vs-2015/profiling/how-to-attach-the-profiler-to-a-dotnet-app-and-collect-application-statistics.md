@@ -1,7 +1,7 @@
 ---
 title: '방법: 명령줄을 통해 .NET Framework 독립 실행형 응용 프로그램에 프로파일러를 연결하여 응용 프로그램 통계 수집 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f8e2d186fbd0d3226ee3a1b023345ea8369cb627
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 665a04990704797e1396b70cbc8c269f16a9f193
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244129"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 .NET Framework 독립 실행형 응용 프로그램에 프로파일러를 연결하여 응용 프로그램 통계 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 명령줄을 사용 하 여.NET Framework 독립 실행형 응용 프로그램 및 응용 프로그램 통계 수집에 Profiler 연결](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line)합니다.  
-  
 이 항목은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구 명령줄 도구를 사용하여 실행 중인 .NET Framework 독립 실행형(클라이언트) 응용 프로그램에 프로파일러를 연결하고 샘플링 방법을 사용하여 성능 통계를 수집하는 방법을 설명합니다.  
   
 > [!NOTE]

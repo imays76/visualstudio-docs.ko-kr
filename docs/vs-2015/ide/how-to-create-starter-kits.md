@@ -1,7 +1,7 @@
 ---
 title: '방법: 시작 키트 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9bafe28889bf652b3c66f04e9489a3042a1621
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243390"
 ---
 # <a name="how-to-create-starter-kits"></a>방법: 시작 키트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 시작 키트 만들기](https://docs.microsoft.com/visualstudio/ide/how-to-create-starter-kits)합니다.  
-  
 시작 키트에는 완전한 응용 프로그램에 대한 코드와 응용 프로그램을 수정하거나 확장하는 방법에 대한 설명서가 들어 있습니다. 시작 키트를 만드는 것은 근본적으로 일반 프로젝트 템플릿을 만드는 것과 동일합니다. 단, 시작 키트에 기초한 프로젝트가 생성될 때 열리도록 설정된 설명서 파일이 시작 키트에 포함된다는 점이 다릅니다.  
   
 ## <a name="designing-and-developing-a-starter-kit"></a>시작 키트 디자인 및 개발  

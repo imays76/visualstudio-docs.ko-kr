@@ -1,7 +1,7 @@
 ---
 title: 데이터베이스 시스템, 도구 및 샘플 설치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1dea5adb6903c7beaf39c65909296224afa2a44c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f18ace9a18eefd0758e581b83001b85c3f48a3da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244285"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>데이터베이스 시스템, 도구 및 샘플 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터베이스 시스템, 도구 및 샘플 설치](https://docs.microsoft.com/visualstudio/data-tools/installing-database-systems-tools-and-samples)합니다.  
-  
   
 Visual Studio 자체는 내부적으로 사용 하 여 항목을 제외한 모든 데이터베이스 시스템을 포함 되지 않습니다. Visual Studio에서 데이터에 연결 된 응용 프로그램을 개발 하려면 일반적으로 로컬 개발 컴퓨터에 데이터베이스 시스템을 설치 하 고 배포 응용 프로그램 및 데이터베이스를 프로덕션 환경으로 준비 되 면 합니다. .NET 응용 프로그램에서 액세스할 수 있도록 하 고 Visual Studio 데이터 도구 창에 표시 될 데이터베이스 시스템에 대 한 ADO.NET 데이터 공급자가 있어야 합니다. 구체적으로 공급자는.NET 응용 프로그램에서 엔터티 데이터 모델을 사용 하려는 경우 Entity Framework을 지원 해야 합니다.     대부분의 공급자는 NuGet 패키지 관리자를 통해 또는 Visual Studio 갤러리를 통해 제공 됩니다.  
   

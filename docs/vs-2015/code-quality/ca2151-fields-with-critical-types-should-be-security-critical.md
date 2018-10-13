@@ -1,7 +1,7 @@
 ---
 title: 'CA2151: 중요 한 형식을 사용 하 여 필드 여야 보안에 중요 한 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,15 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2ce99a404dacdbcc82c628f8f682c53883948ff
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e2627c13f496623d281ed5e3c486592b2a4de6e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "47593219"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253532"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: 중요한 형식이 포함된 필드는 보안에 중요한 필드여야 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA2151: 중요 한 형식을 사용 하 여 필드에는 보안에 중요 한를 사용 해야 합니다.](https://docs.microsoft.com/visualstudio/code-quality/ca2151-fields-with-critical-types-should-be-security-critical)합니다.
-
 |||
 |-|-|
 |TypeName||

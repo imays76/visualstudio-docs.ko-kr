@@ -1,7 +1,7 @@
 ---
 title: ': 형식 이름은 Ca1724 네임 스페이스 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5028646e5c937caad60a35e67ab9935a5755929a
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 64999653e326cc99ca9b1880966406dde41ce52e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246769"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: 형식 이름은 네임스페이스와 달라야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1724: 형식 이름은 해야 하지 일치 네임 스페이스](https://docs.microsoft.com/visualstudio/code-quality/ca1724-type-names-should-not-match-namespaces)합니다.
-
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|

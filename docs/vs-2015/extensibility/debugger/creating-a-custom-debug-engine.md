@@ -1,7 +1,7 @@
 ---
 title: 디버그 엔진을 사용자 지정 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f071d15b0900fb256fba02502b2e31e72ad2222a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acacb3b990b94e7bf4ed2a3a13d3b29031102a20
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237707"
 ---
 # <a name="creating-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 만들기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 디버그 엔진 만들기](https://docs.microsoft.com/visualstudio/extensibility/debugger/creating-a-custom-debug-engine)합니다.  
-  
 디버그 엔진 (DE)는 구성 요소로, 특정 런타임 아키텍처를 디버깅할 수 있습니다. 일반적으로 런타임 환경 별로 하나의 DE 구현이입니다.  
   
 > [!NOTE]

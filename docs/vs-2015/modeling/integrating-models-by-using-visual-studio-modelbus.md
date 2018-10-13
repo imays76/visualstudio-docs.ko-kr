@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Modelbus를 사용 하 여 모델 통합 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2cbc89ae03e96a574e3d63a8448628d29ecf163f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1aa105ea43eaee0c82ee4572c21beb2e7b74315a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256258"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus를 사용하여 모델 통합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio Modelbus를 사용 하 여 모델 통합](https://docs.microsoft.com/visualstudio/modeling/integrating-models-by-using-visual-studio-modelbus)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus는 모델에 다른 도구에서 그리고 모델 간에 링크를 만드는 메서드를 제공 합니다. 예를 들어, 도메인 특정 언어 (DSL) 모델과 UML 모델을 연결할 수 있습니다. 통합 DSL 집합을 만들 수 있습니다.  
   
  ModelBus에서는 모델 또는 모델 내의 특정 요소에 대한 고유 참조를 만들 수 있습니다. 이 참조는 다른 모델의 요소 등 모델 외부에 저장할 수 있습니다. 나중에 도구에서 요소에 액세스해야 하면 ModelBus 인프라에서 적절한 모델을 로드하고 요소를 반환합니다. 원하는 경우 사용자에게 모델을 표시할 수 있습니다. 이전 위치에서 파일에 액세스할 수 없으면 ModelBus에서 사용자에게 파일을 찾으라는 메시지를 표시합니다. 사용자가 파일을 찾으면 해당 파일에 대한 모든 참조가 수정됩니다.  

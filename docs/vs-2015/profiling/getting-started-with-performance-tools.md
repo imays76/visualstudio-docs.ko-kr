@@ -1,7 +1,7 @@
 ---
 title: 성능 도구 시작 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bb0fa65bbd11e18f6b83fafe0a7ad8df9fd15eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89822656a518c13467e20b9b79ad36fd09ef36a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249488"
 ---
 # <a name="getting-started-with-performance-tools"></a>성능 도구 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 도구 시작](https://docs.microsoft.com/visualstudio/profiling/getting-started-with-performance-tools)합니다.  
-  
 이 섹션에서는 Visual Studio 성능 도구를 사용하여 코드 성능을 수집, 표시 및 분석할 때 적용할 개념과 작업을 간단히 살펴봅니다.  
   
  이러한 도구는 성능 데이터를 수집하고 분석하는 다양한 방법을 제공합니다. 그러나 대부분의 경우 가장 좋은 방법은 코드에서 성능 문제를 나타낼 수 있는 응용 프로그램 통계를 수집하는 데 사용되는 성능 마법사의 기본 설정을 사용하는 것입니다.  

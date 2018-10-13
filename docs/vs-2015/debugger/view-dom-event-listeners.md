@@ -1,7 +1,7 @@
 ---
 title: DOM 이벤트 수신기 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223303"
 ---
 # <a name="view-dom-event-listeners"></a>DOM 이벤트 수신기 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DOM 이벤트 수신기 보기](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  합니다 **이벤트** DOM 탐색기의 탭에는 DOM 요소와 연결 된 이벤트를 표시 합니다. 각각의 최상위 노드를 **이벤트** 탭 활성 구독자가 있는 이벤트를 나타냅니다. 최상위 노드에는 특정 이벤트에 대해 등록된 이벤트 수신기를 나타내는 하위 노드가 포함되어 있습니다. 이벤트를 수신기를 볼 수 있을뿐 아니라 이 탭을 사용하여 JavaScript 코드에서 이벤트 수신기 위치를 탐색할 수도 있습니다. 이 항목의 내용은 HTML 및 JavaScript로 작성된 스토어 앱에 적용됩니다.  
@@ -62,7 +60,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 6.  DOM 탐색기의 오른쪽 상단에 있는 `Find`를 선택합니다.  
   
-7.  형식 `ListView`, 한 다음 Enter를 누릅니다.  
+7.  `ListView`를 입력한 후 Enter 키를 누릅니다.  
   
 8.  필요한 경우 선택 합니다 **다음** 단추를를 `DIV` 나타내는 요소는 `ListView` 컨트롤 (이 요소에는 `data-win-control` 값 `WinJS.UI.ListView`).  
   

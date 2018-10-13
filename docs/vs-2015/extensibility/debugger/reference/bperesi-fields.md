@@ -1,7 +1,7 @@
 ---
 title: BPERESI_FIELDS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8207271404811f3da3dd03782974abd9e67fb576
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ccfcba3936c1a4c4cbac1f80e24fbc8caf6c38f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233275"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [BPERESI_FIELDS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bperesi-fields)합니다.  
-  
 중단점의 실패 한 확인에 대 한 검색할 정보를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  

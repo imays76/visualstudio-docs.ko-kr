@@ -1,7 +1,7 @@
 ---
 title: Visual Studio의 상호 작용 패턴 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf21a8aa3c2a2813c71907d1d79bdcd4f7cde323
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac6dde1b09e0488f3ae07b3a6ea02409d69892e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192064"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Visual Studio의 상호 작용 패턴
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio의 상호 작용 패턴](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/interaction-patterns-for-visual-studio)합니다.  
-  
 ## <a name="overview"></a>개요  
  디자인 패턴에는 일반적으로 비슷한 제약 조건 집합을 사용 하 여 문제를 해결 하는 특정 상황에서 적용할 수 있는 디자인의 핵심 이며 기능 및 시스템 디자이너는 시작 점으로 특정 상황에 적용할 수 있는 이러한 디자인 패턴을 사용 합니다.  
   

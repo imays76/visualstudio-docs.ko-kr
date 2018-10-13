@@ -1,7 +1,7 @@
 ---
 title: '방법: Visual Studio 확장 기능 업데이트 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3675b8f342601ee3b79169a6c39e849686d7c12e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d86f723ae4c9acc64dfe7643552b9a74b78963
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254906"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>방법: Visual Studio 확장 기능 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Visual Studio 확장 기능 업데이트](https://docs.microsoft.com/visualstudio/extensibility/how-to-update-a-visual-studio-extension)합니다.  
-  
 사용 하 여 시스템에서 Visual Studio 확장을 업데이트할 수 있습니다 **확장 및 업데이트** 업데이트 된 버전을 설치 합니다. 확장의 업데이트 된 버전을 만들면 VSIX 매니페스트의 버전 번호를 증가 시켜 업데이트 되었음을 표시할 수 있습니다.  
   
  들어오는 확장의 VSIX 매니페스트가 동일한 업데이트가 설치 됩니다 `ID` 하나씩 설치 및 더 높은 `Version` 수입니다. 경우는 `Version` 번호는 동일 하거나 낮은, 패키지를 설치할 수 없습니다. 경우는 `ID` 값 일치 하지 않는 경우 아직 설치 되지 않은 패키지를 별도 확장으로 인식 됩니다.  

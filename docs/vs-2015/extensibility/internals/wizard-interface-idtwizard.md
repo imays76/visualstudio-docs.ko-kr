@@ -1,7 +1,7 @@
 ---
 title: 마법사 인터페이스 (IDTWizard) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb811f0ea6ae3d1be01b5d00f6359503d8f0d581
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28f50dc747e04e909644a6b74f2f4af0d7551248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266862"
 ---
 # <a name="wizard-interface-idtwizard"></a>마법사 인터페이스(IDTWizard)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [마법사 인터페이스 (IDTWizard)](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-interface-idtwizard)합니다.  
-  
 통합된 개발 환경 (IDE)에서 사용 하 여 <xref:EnvDTE.IDTWizard> 마법사를 사용 하 여 통신 하는 인터페이스입니다. 마법사는 IDE에서 설치 하려면이 인터페이스를 구현 해야 합니다.  
   
  <xref:EnvDTE.IDTWizard.Execute%2A> 메서드는 연결 된 유일한 메서드는 <xref:EnvDTE.IDTWizard> 인터페이스입니다. 이 메서드를 구현 하는 마법사 및 IDE 인터페이스에서 메서드를 호출 합니다. 다음 예제에서는 메서드의 서명을 보여 줍니다.  

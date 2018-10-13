@@ -1,7 +1,7 @@
 ---
 title: UML 모델 요소 형식 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b8cb26c6e3d6cd51d087454d0b0c0700c1793db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 782485523cd5c80e61032eafc575c111592895b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252384"
 ---
 # <a name="uml-model-element-types"></a>UML 모델 요소 형식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 모델 요소 형식](https://docs.microsoft.com/visualstudio/modeling/uml-model-element-types)합니다.  
-  
 프로그래밍 인터페이스를 통해 UML 모델을 읽고 조작할 수 있습니다. 이 항목에서는 요소 형식의 계층 구조를 요약해서 설명합니다. 계층 구조는 UML 사양에 정의된 것과 동일합니다.  
   
  각 형식의 세부 정보에 제공 됩니다 [UML 모델링 확장성에 대 한 API 참조](../modeling/api-reference-for-uml-modeling-extensibility.md)합니다.  

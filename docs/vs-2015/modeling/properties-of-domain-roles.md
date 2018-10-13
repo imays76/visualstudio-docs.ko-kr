@@ -1,7 +1,7 @@
 ---
 title: 도메인 역할의 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6dc3f92bf1f9788f501b96540b35006ff112267b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51149979544c19b0a887ad77e80a26284051778b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244090"
 ---
 # <a name="properties-of-domain-roles"></a>도메인 역할의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인 역할의 속성](https://docs.microsoft.com/visualstudio/modeling/properties-of-domain-roles)합니다.  
-  
 다음 표의 속성이 도메인 역할 연관 됩니다. 도메인 역할에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.  
   
 |속성|설명|기본|  

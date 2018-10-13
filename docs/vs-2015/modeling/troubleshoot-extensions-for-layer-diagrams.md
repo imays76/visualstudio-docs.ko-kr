@@ -1,7 +1,7 @@
 ---
 title: 레이어 다이어그램의 확장 문제 해결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 44d06774d5eec41885bf9efbcf74a76373d22b2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250070"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>레이어 다이어그램의 확장명 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [종속성 다이어그램의 확장 문제 해결](https://docs.microsoft.com/visualstudio/modeling/troubleshoot-extensions-for-layer-diagrams)합니다.  
-  
 이 항목에서는 레이어 모델 확장을 만들 때 발생할 수 있는 몇 가지 문제를 해결합니다.  
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>F5 키를 눌러 내 확장을 디버그할 때 내 명령, 제스처 처리기, 유효성 검사 확장 또는 사용자 지정 속성이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스의 레이어 다이어그램에 나타나지 않습니다.  

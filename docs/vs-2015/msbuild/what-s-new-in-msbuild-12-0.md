@@ -1,7 +1,7 @@
 ---
 title: MSBuild 12.0의 새로운 기능 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91ec9044461cf57bba8bb36a0d2e029635155c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f10fa5496795947c041482d5ae5dc7b6112da67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565023"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247403"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>MSBuild 12.0의 새로운 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](https://docs.microsoft.com/visualstudio/)합니다.  
-  
 MSBuild는 이제 .NET Framework의 일부가 아니라 Visual Studio의 일부로 설치되었습니다. 현재 MSBuild 버전 번호는 12.0입니다. MSBuild를 개별적으로 설치하려면 [MSBuild 다운로드](http://go.microsoft.com/fwlink/?LinkId=309745)에서 설치 패키지를 다운로드하세요.  
   
 ## <a name="changed-path"></a>변경된 경로  

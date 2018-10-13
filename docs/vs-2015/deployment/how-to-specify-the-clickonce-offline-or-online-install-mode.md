@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 오프 라인 지정 또는 온라인 설치 모드 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7f277966070e142ebc24d70acfcf4bf5502f419a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b243811f2c6c36266443cd34e0e37ddd01390f87
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266073"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>방법: ClickOnce 오프라인 또는 온라인 설치 모드 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법:는 ClickOnce 오프 라인 또는 온라인 설치 모드 지정](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-the-clickonce-offline-or-online-install-mode)합니다.  
-  
 합니다 `Install Mode` 에 대 한는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 여부를 결정은 응용 프로그램 사용 가능한 오프 라인 또는 온라인입니다. 선택 하는 경우 **응용 프로그램은 온라인**, 사용자에 액세스할 수 있어야 합니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 위치 (웹 페이지 또는 파일 공유) 응용 프로그램을 실행 하기 위해 게시 합니다. 선택 하는 경우 **응용 프로그램을 오프 라인으로**, 항목을 추가 하는 응용 프로그램을 **시작** 메뉴 및 **프로그램 추가 / 제거** 대화 상자, 사용자는 연결 되지 않은 경우 응용 프로그램을 실행할 수 있습니다.  
   
  `Install Mode` 에서 설정할 수 있습니다 합니다 **게시** 페이지를 **프로젝트 디자이너**합니다.  

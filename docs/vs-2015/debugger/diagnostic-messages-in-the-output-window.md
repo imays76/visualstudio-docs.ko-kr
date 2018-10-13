@@ -1,7 +1,7 @@
 ---
 title: 출력 창의 진단 메시지 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0a9e0bb4fa34133937e39b310cb05360e66a443
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246796"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>출력 창에 표시되는 진단 메시지
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [출력 창에 진단 메시지](https://docs.microsoft.com/visualstudio/debugger/diagnostic-messages-in-the-output-window)합니다.  
-  
 <xref:System.Diagnostics> 클래스 라이브러리에 포함된 Debug 클래스 또는 Trace 클래스를 사용하여 출력 창에 런타임 메시지를 표시할 수 있습니다. 디버그 버전 프로그램에서만 출력할 경우에는 Debug 클래스를 사용하십시오. 디버그 및 릴리스 버전에서 모두 출력하려면 Trace 클래스를 사용하십시오.  
   
 ## <a name="output-methods"></a>출력 메서드  

@@ -1,7 +1,7 @@
 ---
 title: 식 계산 (Visual Studio 디버깅 SDK) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd5fb9ac88b2535c897978cdd63f9cf0716d53a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80e30f9a7579d511a6d2c1678d0980efdb7b8d2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238045"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>식 계산(Visual Studio 디버깅 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [식 계산 (Visual Studio 디버깅 SDK)](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk)합니다.  
-  
 중단 모드에서 IDE 프로그램의 여러 변수가 포함 된 간단한 식을 계산할 수 있어야 합니다. 이를 위해 디버그 엔진 (DE) 구문 분석 하 고 IDE의 창 중 하나에 입력 한 식을 계산할 수 있어야 합니다.  
   
  식을 사용 하 여 만들어집니다 합니다 [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 되며 메서드 결과 표시 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스입니다.  

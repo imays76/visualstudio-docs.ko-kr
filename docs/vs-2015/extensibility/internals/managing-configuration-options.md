@@ -1,7 +1,7 @@
 ---
 title: 관리 구성 옵션 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae7c6208c185b000646a2430864f2e021c8f74ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b114948ad662b9c027e208609dc1e48a6bec8979
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243232"
 ---
 # <a name="managing-configuration-options"></a>구성 옵션 관리
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [구성 옵션 관리](https://docs.microsoft.com/visualstudio/extensibility/internals/managing-configuration-options)합니다.  
-  
 새 프로젝트 형식의 만들면 어떻게 프로젝트가 빌드되는, 패키지, 배포 및 실행을 결정 하는 프로젝트 및 솔루션 구성 설정을 관리 해야 합니다. 다음 항목 프로젝트 및 솔루션 구성에 설명 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

@@ -1,7 +1,7 @@
 ---
 title: 지원 코드 변경 내용 (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 655d80792bf1a2ab6c1af658bcfb6fb3648f5d10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02777efc206fed14c32a2cc73d31e475fd9e2064
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550799"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262568"
 ---
 # <a name="supported-code-changes-c"></a>지원되는 코드 변경(C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [지원 되는 코드 변경 (C#)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-csharp)합니다.  
-  
 편집하며 계속하기에서는 메서드 본문 내의 코드 변경 유형을 대부분 처리합니다. 그러나 메서드 본문 외부의 변경 내용 대부분과 메서드 본문 내의 몇 가지 변경 내용은 디버깅 중에 적용할 수 없습니다. 이러한 지원되지 않는 변경 내용을 적용하려면 디버깅을 중지하고 새로운 버전의 코드로 다시 시작해야 합니다.  
   
  디버깅 세션 중에 C# 코드에 적용할 수 없는 변경 내용은 다음과 같습니다.  

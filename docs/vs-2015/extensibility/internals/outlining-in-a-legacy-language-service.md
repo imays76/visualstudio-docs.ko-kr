@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e450a41db4e56067424e89acf8bb4af048acfc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69ea15c814472303ffd3a0097e7e61777805d487
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565294"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263226"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>레거시 언어 서비스의 개요 표시
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 개요](https://docs.microsoft.com/visualstudio/extensibility/internals/outlining-in-a-legacy-language-service)합니다.  
-  
 개요 개요 또는 개요로 복잡 한 프로그램을 축소할 수 있습니다. 예를 들어 C#의 모든 메서드는 메서드 시그니처를 보여 주는 단일 줄으로 축소할 수 있습니다. 또한 구조체와 클래스 구조 및 클래스의 이름만 표시 하도록 축소할 수 있습니다. 단일 메서드 내에서 복잡 한 논리 축소할 수 있습니다와 같은 문 첫 번째 줄만 표시 하 여 전체 흐름을 나타내기 위해 `foreach`, `if`, 및 `while`합니다.  
   
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 참조 하세요 [연습: 개요](../../extensibility/walkthrough-outlining.md)합니다.  

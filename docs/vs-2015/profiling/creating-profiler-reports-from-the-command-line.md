@@ -1,7 +1,7 @@
 ---
 title: 명령줄에서 프로파일러 보고서 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d94a2c6c025ada73e1d43e041c2bf6e30f8b66c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb90505dacbb22268087d3eb15a8df39fdcc932
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238773"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>명령줄에서 프로파일러 보고서 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [명령줄에서 Profiler 보고서 만들기](https://docs.microsoft.com/visualstudio/profiling/creating-profiler-reports-from-the-command-line)합니다.  
-  
 **VSPerfReport** 명령줄 도구를 통해 프로파일링 데이터(.vsp) 파일에서 .xml 또는 쉼표로 구분된 값(.csv) 보고서를 만들 수 있습니다. VSPerfReport 보고서 유형은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 대한 인터페이스의 테이블 기반 뷰와 일치합니다. 코드만 표시하고 프로파일링 데이터 파일의 세그먼트만 표시하도록 보고서를 필터링할 수 있습니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.  
   
  또한 .vsp 파일에 기호를 포함하고 열 더 작고 더 빠른 미리 분석된 보고서(.vsps) 파일을 만들어 프로파일링 데이터 파일을 더 쉽게 공유할 수 있습니다.  

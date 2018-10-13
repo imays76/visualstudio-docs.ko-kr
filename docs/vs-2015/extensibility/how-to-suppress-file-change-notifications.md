@@ -1,7 +1,7 @@
 ---
 title: '방법: 파일 변경 알림 표시 안 함 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257519"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>방법: 파일 변경 알림 표시 안 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 파일 변경 알림 표시 안 함](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications)합니다.  
-  
 메시지와 함께 대화 상자가 표시 텍스트 버퍼를 나타내는 물리적 파일이 변경 된 경우 **다음 항목의 변경 내용을 저장 하 시겠습니까?** 이 파일 변경 알림 이라고 합니다. 하지만 많은 변경 하는 경우 파일을이 대화 상자를 반복적으로 표시 될 수 있습니다 신속 하 게 성가신.  
   
  다음 절차를 사용 하 여이 대화 상자를 프로그래밍 방식으로 억제할 수 있습니다. 이 작업을 수행 하 여 다시 로드할 수 있습니다 파일 즉시 될 때마다 변경 내용을 저장 하 라는 메시지를 표시 하지 않고 있습니다.  

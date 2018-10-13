@@ -1,7 +1,7 @@
 ---
 title: XML 문서 속성, 속성 창 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7145c81a87235d37a0e4825509e7f8fb94ab0f7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c93defe6f5c56966195f1514b5aa76464f6f3013
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236563"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 문서 속성, 속성 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [XML 문서 속성, 속성 창](https://docs.microsoft.com/visualstudio/xml-tools/xml-document-properties-properties-window)합니다.  
-  
   
 합니다 **속성** 창 XML 편집기에서 활성화 되어 있는 문서에 대 한 기본 정보를 제공 합니다. 현재 활성화되어 있는 XML 문서의 형식에 따라 사용할 수 있는 속성이 달라집니다.  
   

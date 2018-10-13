@@ -1,7 +1,7 @@
 ---
 title: '방법: 편집기의 글꼴 및 색 변경 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b150e7b7d8271a8be8037dbd98732518f95fe1df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fb415c68884b2486d0bd45559530f1a36c90bfc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543613"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229319"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>방법: 편집기의 글꼴 및 색 변경
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 글꼴 및 색 편집기에서 변경](https://docs.microsoft.com/visualstudio/ide/reference/how-to-change-fonts-and-colors-in-the-editor)합니다.  
-  
   
 코드 편집기에서 다양한 텍스트 **표시 항목**의 기본 글꼴을 변경하고, 글꼴 크기를 조정하고, 전경색 및 배경색을 변경할 수 있습니다. 글꼴 설정을 변경할 경우 다음 정보를 고려하세요.  
   

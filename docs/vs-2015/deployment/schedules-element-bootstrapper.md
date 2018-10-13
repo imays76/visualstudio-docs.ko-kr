@@ -1,7 +1,7 @@
 ---
 title: '&lt;일정&gt; 요소 (부트스트래퍼) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c72ee64bcc174bcd11d800bbc8dd0e1b9848b746
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba556d1f9ab7dfefd5502ee150354d4f664d6710
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250993"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;일정&gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ &lt;일정&gt; 요소 (부트스트래퍼)](https://docs.microsoft.com/visualstudio/deployment/schedules-element-bootstrapper)합니다.  
-  
 `Schedules` 요소에 포함 되어 `Schedule` 특정 시간의 정의한 명령 정의 하는 요소는 `Command` 요소를 실행 해야 합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -50,7 +48,7 @@ ms.locfileid: "47553292"
 ```  
   
 ## <a name="elements-and-attributes"></a>요소 및 특성  
- 합니다 `Schedules` 요소인 자식은 `Product` 요소입니다. 각 `Product` 요소 하나만 있을 `Schedules` 요소입니다. `Schedules` 요소는 특성이 없습니다.  
+ 합니다 `Schedules` 요소인 자식은 `Product` 요소입니다. 각 `Product` 요소 하나만 있을 `Schedules` 요소입니다. `Schedules` 요소에는 특성이 없습니다.  
   
 ## <a name="schedule"></a>일정  
  합니다 `Schedule` 요소인 자식은 `Schedules` 요소입니다. A `Schedules` 요소 하나 이상이 있어야 `Schedule` 요소입니다.  

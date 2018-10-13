@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 보안 설정 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65cba913afdee2379e5f702dda460cea2a33598f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73f4e16dc0d088ca617b49ee1250f51c4ae769e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226030"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>How to: Enable ClickOnce Security Settings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 보안 설정 사용](https://docs.microsoft.com/visualstudio/deployment/how-to-enable-clickonce-security-settings)합니다.  
-  
 응용 프로그램을 게시 하기 위해 ClickOnce 응용 프로그램에 대 한 코드 액세스 보안을 사용할 수 있어야 합니다. 게시 마법사를 사용 하 여 응용 프로그램을 게시할 때 자동으로 수행 됩니다.  
   
  일부 경우에 코드 액세스 보안을 사용 하도록 설정 하면 성능에 영향을 빌드하거나 응용 프로그램을 디버깅 하는 경우 이러한 경우에 일시적으로 보안 설정을 사용 하지 않도록 설정 하려고 할 수 있습니다.  

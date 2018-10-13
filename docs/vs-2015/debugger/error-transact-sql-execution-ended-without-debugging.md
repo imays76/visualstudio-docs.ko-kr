@@ -1,7 +1,7 @@
 ---
 title: '오류: TRANSACT-SQL 실행이 디버깅 없이 끝났습니다 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7de8aaba3abf4ef7c767ed549b5454b1599e808d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db777a7b35ce6576640b6ac688ae716c0e41f676
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241672"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>오류: 디버깅 없이 Transact-SQL 실행이 중지되었습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: 디버깅 없이 TRANSACT-SQL 실행이 끝난](https://docs.microsoft.com/visualstudio/debugger/error-transact-sql-execution-ended-without-debugging)합니다.  
-  
 이 오류는 Transact-SQL 또는 SQLCLR 프로시저를 디버깅하려 할 때 디버거가 SQL Server에서 디버깅 메시지를 받지 못하는 경우에 발생합니다.  
   
  이 오류는 네트워크 문제나 SQL Server와 관련된 문제가 원인일 수도 있지만 대부분의 경우는 권한 문제 때문입니다.  
@@ -60,7 +58,7 @@ ms.locfileid: "47557317"
  [SQL 디버깅 설정](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
  [방법: 디버깅을 위해 SQL Server 사용 권한 설정](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)   
- [원격 디버깅](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

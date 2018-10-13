@@ -1,7 +1,7 @@
 ---
 title: Visual Studio를 사용하여 개발 시작 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: deeb0b377c863bdfb742e4d483e8b5e5f160dd1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2575e3e9ffa5f1b67709bc1fd342dbcf95417aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261510"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Get Started Developing with Visual Studio](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio)합니다.  
-  
 클라우드를 비롯한 다양한 환경에서 제품을 [다운로드](http://www.visualstudio.com/community) 한 후 다음 페이지에서 코딩을 시작하는 데 도움을 얻을 수 있습니다.  
   
 -   **[웹앱 만들기](https://www.visualstudio.com/features/modern-web-tooling-vs):** 현대적인 웹 응용 프로그램을 만들고 배포하는 데 필요한 도구입니다.  
@@ -40,7 +38,7 @@ ms.locfileid: "47553452"
   
 -   **[C# 또는 Visual Basic(Xamarin)으로 플랫폼 간 모바일 앱 만들기](../cross-platform/visual-studio-and-xamarin.md)**: Visual Studio 및 Xamarin용 도구를 사용하여 Android, iOS 및 유니버설 Windows 플랫폼에서 실행되는 모바일 앱을 공유 코드베이스를 활용하여 만들기 시작할 수 있습니다.  
   
-     샘플 로드:[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (네이티브 UI) 또는 [Xamarin Forms Todo 샘플](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms 공유 UI) &#124; [자습서 수행](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [찾아보기 docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [비디오를 시청 하세요.                                                                  ](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     샘플 로드:[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (네이티브 UI) 또는 [Xamarin Forms Todo 샘플](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms 공유 UI) &#124; [자습서 수행](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [찾아보기 docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [비디오를 시청 하세요.](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
   
 -   **[C++로 네이티브 플랫폼 간 앱 및 라이브러리 만들기](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Android, iOS 및 유니버설 Windows 플랫폼에서 실행되는 C++ 앱 및 라이브러리를 만들기 시작하려면 여기로 이동하세요.  
   

@@ -1,7 +1,7 @@
 ---
 title: 시각화 도우미 보안 고려 사항 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f041aa4506906291f429e8825ca42b7ea30f14c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45eb2f245e55f178d1c488c1269388851741de39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564562"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237122"
 ---
 # <a name="visualizer-security-considerations"></a>시각화 도우미 보안 고려 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시각화 도우미 보안 고려 사항](https://docs.microsoft.com/visualstudio/debugger/visualizer-security-considerations)합니다.  
-  
 시각화 도우미를 작성할 때는 보안 문제를 고려해야 합니다. 당장은 이러한 잠재적 위협에 대한 취약점이 발견되지 않더라도 개발자는 이러한 문제의 가능성을 인식하고 여기서 설명하는 적절한 보안 예방책에 따라 향후 발생할 수 있는 위험에 대비해야 합니다.  
   
  디버거 시각화 도우미에는 부분 신뢰 응용 프로그램에 허용되는 것보다 많은 권한이 필요합니다. 부분 신뢰 코드에서 중지하면 시각화 도우미가 로드되지 않습니다. 시각화 도우미를 사용하여 디버깅하려면 완전 신뢰 코드를 실행해야 합니다.  

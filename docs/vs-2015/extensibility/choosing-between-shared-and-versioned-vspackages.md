@@ -1,7 +1,7 @@
 ---
 title: 공유 및 버전 관리 Vspackage 중에서 선택 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14b2ec1884fcbbebb28667e04d03e2c1424175dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565360"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263694"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>공유 및 버전 관리 VSPackage 중에서 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [공유 간의 선택 및 버전 관리 Vspackage](https://docs.microsoft.com/visualstudio/extensibility/choosing-between-shared-and-versioned-vspackages)합니다.  
-  
 다른 버전의 Visual Studio는 동일한 컴퓨터에 공존할 수 있습니다. Vspackage의 혼합을 지원할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전입니다.  
   
  두 가지 전략, 공유 전략 또는 버전이 있는 전략 중 하나를 통해 Vspackage의 side-by-side-설치를 사용할 수 있습니다. 여러 버전의 현재 상태를 수용 하는 둘 다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전의 연결을 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  

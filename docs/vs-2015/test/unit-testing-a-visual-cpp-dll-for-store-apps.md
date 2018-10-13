@@ -1,7 +1,7 @@
 ---
 title: 스토어 앱의 Visual C++ DLL 단위 테스트 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 6396fccd3e0203e90c38936c53016810803a1975
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244363"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>스토어 앱의 Visual C++ DLL 유닛 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [스토어 앱 용 Visual c + + DLL 유닛 테스트](https://docs.microsoft.com/visualstudio/test/unit-testing-a-visual-cpp-dll-for-store-apps)합니다.  
-  
 이 항목에서는 Windows 스토어 앱의 C++ DLL에 대한 단위 테스트를 만드는 방법을 보여 줍니다. RooterLib DLL은 지정된 숫자의 예상 제곱근을 계산하는 함수를 구현하여 미적분학 한계 이론에 대한 희미한 기억을 보여 줍니다. 이러한 DLL은 수학을 활용하여 수행할 수 있는 재미 있는 사항들을 사용자에게 보여 주는 Windows 스토어 앱에 포함할 수 있습니다.  
   
  이 항목에서는 개발의 첫 단계로 단위 테스트를 사용하는 방법을 보여 줍니다. 이 방법에서는 먼저 테스트하고 있는 시스템에서 특정 동작을 확인하는 테스트 메서드를 작성한 다음 테스트를 통과하는 코드를 작성합니다. 다음 절차의 순서를 변경함으로써 이 전략을 반대로 적용하여 먼저 테스트할 코드를 작성한 다음 단위 테스트를 작성할 수 있습니다.  

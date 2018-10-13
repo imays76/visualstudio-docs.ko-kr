@@ -1,7 +1,7 @@
 ---
 title: '방법: 디버그 및 릴리스 구성 설정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -40,18 +40,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 137c85f5433343327cf677ef76c1116bd6ef6821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e0dae046e02685e7ce1d6ce7f744b568e47c5eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243128"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>방법: 디버그 및 릴리스 구성 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 디버그 및 릴리스 구성 설정](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations)합니다.  
-  
 Visual Studio 프로젝트에는 사용하는 프로그램에 대한 별도의 릴리스 및 디버그 구성이 있습니다. 이름이 의미하는 것처럼 디버그 버전은 디버깅용으로 빌드하고 릴리스 버전은 최종 릴리스 배포용으로 빌드합니다.  
   
  프로그램의 디버그 구성은 완전히 기호화된 디버그 정보를 사용하여 컴파일되며 최적화되지 않습니다. 최적화하면 소스 코드와 생성된 명령 간의 관계가 복잡해지므로 디버깅이 복잡해집니다.  

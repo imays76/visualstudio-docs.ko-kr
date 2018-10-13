@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 데이터 집합 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -56,18 +56,16 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d01dd2de60285d669f5a36a2f6ddf7a08449dad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5881542c78c5c055d1cbc26d54eb5e478a13124
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254347"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio에서 데이터 집합 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 데이터 집합 도구](https://docs.microsoft.com/visualstudio/data-tools/dataset-tools-in-visual-studio)합니다.  
-  
   
 참고]
 >  데이터 집합 및 관련된 클래스는 응용 프로그램은 데이터베이스에서 연결이 끊어진 동안 메모리에 있는 데이터로 작업 하는 응용 프로그램을 사용 하도록 설정 하는 초기에 종사해에서 레거시.NET 기술입니다. 사용자가 데이터를 수정 하 고 다시 데이터베이스에 변경 내용을 유지할 수 있게 하는 응용 프로그램에 특히 유용 합니다. 데이터 집합, 매우 성공적 이었던 기술이 입증 하지만 새로운.NET 응용 프로그램 Entity Framework를 사용 하는 것이 좋습니다. 더 간단한 프로그래밍 인터페이스에 및 entity Framework 개체 모델로 테이블 형식 데이터로 작업 하는 더 자연 스러운 방법을 제공 합니다.  

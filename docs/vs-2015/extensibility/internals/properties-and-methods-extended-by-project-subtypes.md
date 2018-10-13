@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 하위 형식에서 속성 및 메서드 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 143c15cd757912aa79e7e9d92d7c138def16db7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c589c6d40e49bf064c805c35e88433556f7b677
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260212"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>프로젝트 하위 형식에 의해 확장된 속성 및 메서드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [속성 및 메서드 확장 프로젝트 하위 형식](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-and-methods-extended-by-project-subtypes)합니다.  
-  
 프로젝트 하위 형식에 전력을 많이 소모 되므로 기본 프로젝트의 집계로 생성 된 프로젝트의 동작에 영향을 줍니다. 이 섹션에서는 프로젝트 하위 형식에 의해 수정 되거나 향상 될 수 있는 기능 중 일부를 요약 합니다.  
   
 ## <a name="features-gained-by-aggregation"></a>집계를 통해 얻은 기능  

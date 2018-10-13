@@ -1,7 +1,7 @@
 ---
 title: 워크플로 프로젝트 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: faa63966d0f23aaf8d0392b968f9ec420e02d348
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ba558e77aae5ae40d5b754c30b648f4ba2ea2af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555816"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236719"
 ---
 # <a name="creating-a-workflow-project"></a>워크플로 프로젝트 만들기
 워크플로, [!INCLUDE[indigo1](../includes/indigo1-md.md)] 워크플로 서비스, 사용자 지정 활동 및 사용자 지정 활동 디자이너는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 템플릿을 사용하여 만들 수 있습니다. 이 단원에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 제공되는 프로젝트 템플릿을 사용하여 라이브러리 및 응용 프로그램을 만드는 방법에 대해 설명합니다.  

@@ -1,7 +1,7 @@
 ---
 title: ThreadOn 및 ThreadOff | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a6b327905fd844679263eabf0fffb832ee81c73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249108"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 및 ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ThreadOn 및 ThreadOff](https://docs.microsoft.com/visualstudio/profiling/threadon-and-threadoff)합니다.  
-  
 VSPerfCmd.exe **ThreadOff** 및 **ThreadOn** 하위 명령은 계측 방법을 사용하는 명령줄 프로파일링 세션에서만 사용할 수 있습니다. **ThreadOff** 및 **ThreadOn**은 지정된 스레드에 대한 프로파일링을 일시 중지하고 다시 시작합니다. **ThreadOff**는 스레드 프로파일링을 중지하고 **ThreadOn**은 스레드 프로파일링을 시작합니다.  
   
  대부분의 경우에서 **ThreadOn** 또는 **ThreadOff**를 VSPerfCmd.exe 명령줄의 유일한 옵션으로 지정하지만 **GlobalOn**, **GlobalOff**, **ProcessOn** 및 **ProcessOff** 하위 명령과 함께 결합될 수도 있습니다.  

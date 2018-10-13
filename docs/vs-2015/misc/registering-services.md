@@ -1,7 +1,7 @@
 ---
 title: 서비스 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: douge
-ms.openlocfilehash: f56c73bbb09c659a76083e511d79d487402477ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219689"
 ---
 # <a name="registering-services"></a>서비스 등록
 요청 시 로드를 지원하려면 서비스 공급자가 글로벌 서비스를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 등록해야 합니다.  
   
  개발 중에 관리되는 서비스 공급자는 패키지에 대한 소스 코드에 특성을 추가한 다음 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에서 패키지를 빌드하여 서비스 및 서비스 재정의를 등록합니다. 이렇게 하면 결과 어셈블리에서 RegPkg.exe 유틸리티가 실행되어 패키지를 등록하고 배포 준비를 합니다. 자세한 내용은 [방법: 서비스 등록](../misc/how-to-register-a-service.md)합니다.  
   
- 관리되지 않는 서비스 공급자는 시스템 레지스트리의 서비스 섹션 또는 서비스 재정의 섹션에서 제공하는 서비스를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 등록해야 합니다. 다음 .reg 파일 조각은 SVsTextManager 서비스를 등록하는 방법을 보여 줍니다.  
+ 관리되지 않는 서비스 공급자는 시스템 레지스트리의 서비스 섹션 또는 서비스 재정의 섹션에서 제공하는 서비스를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에 등록해야 합니다. 다음 .reg 파일 조각은 SVsTextManager 서비스를 등록하는 방법을 보여 줍니다.  
   
 ```  
 [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]  

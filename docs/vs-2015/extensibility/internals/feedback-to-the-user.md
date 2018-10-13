@@ -1,7 +1,7 @@
 ---
 title: 사용자에 게 피드백 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3462edb539822cd856cd7281566674b4ed0c4def
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb2942d0449e69ef25e26e6194d67bc7b0484e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263853"
 ---
 # <a name="feedback-to-the-user"></a>사용자에 대한 피드백
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자에 게 피드백](https://docs.microsoft.com/visualstudio/extensibility/internals/feedback-to-the-user)합니다.  
-  
 에 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE) 시각적 피드백을 사용할 수 있는 기능에 관한 사용자의 현재 선택 영역 및 전역 선택 컨텍스트를 기반으로 합니다. 다음 표에서 다른 선택 컨텍스트에서 사용할 수 있는 기능을 보여 줍니다.  
   
 |선택 항목 컨텍스트|사용할 수 있는 기능|  

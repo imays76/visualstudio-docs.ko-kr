@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findchildren | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97fed0f8ce7ff0712054b2aa3408217efe39f706
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ed41228f203997505161dcaeba9776afd73419e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265119"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiasession:: Findchildren](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findchildren)합니다.  
-  
 지정한 부모 식별자의 이름 및 기호 형식과 일치 하는 모든 자식을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: MSBuild 항목 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 522de2d2a10e58c1f7d6a42b2456c63648655a86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229361"
 ---
 # <a name="msbuild-items"></a>MSBuild 항목
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 항목](https://docs.microsoft.com/visualstudio/msbuild/msbuild-items)합니다.  
-  
   
 MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파일을 나타냅니다. 항목은 해당 요소 이름에 따라 항목 종류로 그룹화됩니다. 항목 종류는 작업의 매개 변수로 사용할 수 있는 명명된 항목 목록입니다. 작업은 항목 값을 사용하여 빌드 프로세스의 단계를 수행합니다.  
   

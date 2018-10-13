@@ -1,7 +1,7 @@
 ---
 title: 포트에 알림 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81b27b4da563c01c809203690c05702530f58416
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541567"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263551"
 ---
 # <a name="notifying-the-port"></a>포트에 알림
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [포트에 알림](https://docs.microsoft.com/visualstudio/extensibility/debugger/notifying-the-port)합니다.  
-  
 프로그램을 시작한 후 포트 알려야, 다음과 같습니다.  
   
 1.  포트를 새 프로그램 노드를 수신 하면 디버그 세션에 다시 프로그램 생성 이벤트를 보냅니다. 이벤트에는 저마다 프로그램을 나타내는 인터페이스입니다.  

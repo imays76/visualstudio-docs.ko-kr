@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 정의 모델링 도구 상자 항목 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd2d7ff2b31e8975574cb6b2780a352faa1cd663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252371"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>사용자 지정 모델링 도구 상자 항목 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [정의 사용자 지정 모델링 도구 상자 항목](https://docs.microsoft.com/visualstudio/modeling/define-a-custom-modeling-toolbox-item)합니다.  
-  
 자주 사용하는 패턴에 따라 요소 또는 요소 그룹을 쉽게 만들 수 있도록 Visual Studio의 모델링 다이어그램 도구 상자에 새로운 도구를 추가할 수 있습니다. 다른 Visual Studio 사용자에게 이러한 도구 상자 항목을 배포할 수 있습니다.  
   
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  

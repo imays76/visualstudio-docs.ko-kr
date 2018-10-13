@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 모델의 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3c26bb501e28c324233e4991fc8023b2adcdcf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248562"
 ---
 # <a name="elements-of-a-project-model"></a>프로젝트 모델의 요소
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 모델의 요소](https://docs.microsoft.com/visualstudio/extensibility/internals/elements-of-a-project-model)합니다.  
-  
 모든 프로젝트에서 구현 및 인터페이스 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 기본 구조를 공유 합니다: 프로젝트 형식에 대 한 프로젝트 모델. 개발 하는 VSPackage가 프로젝트 모델의 디자인 관련 결정 사항을 준수 하 고 IDE에서 제공 하는 전역 기능와 함께 작동 하는 개체를 만듭니다. 프로젝트 항목을 유지 하는 방법을 제어할 수 있지만 예를 들어 제어 하지 않으면 파일을 유지 해야 하는 알림입니다. 사용자는 열린 항목에 포커스를 배치 하 고 선택 하는 경우 **저장** 에 **파일** 메뉴에서를 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 메뉴 모음 프로젝트 형식 코드 해야 IDE에서 명령 가로채기, 파일을 보존 및 파일을 더 이상 변경 알림을 IDE에 다시 보냅니다.  
   
  VSPackage는 IDE 인터페이스에 대 한 액세스를 제공 하는 서비스를 통해 IDE 상호 작용 합니다. 예를 들어 특정 서비스를 통해 모니터 및 경로 명령 및 프로젝트에서 선택한 항목에 대 한 컨텍스트 정보를 제공 합니다. 모든 전역 IDE 기능을 VSPackage에 필요한 서비스에서 제공 됩니다. 서비스에 대 한 자세한 내용은 참조 하세요. [방법: 서비스 가져오기](../../extensibility/how-to-get-a-service.md)합니다.  

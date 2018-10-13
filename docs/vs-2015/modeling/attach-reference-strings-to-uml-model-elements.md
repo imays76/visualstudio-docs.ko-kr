@@ -1,7 +1,7 @@
 ---
 title: UML 모델 요소에 참조 문자열 연결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0d917bf0553fbea06c73d3f4ce57f01b3f99a36d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f62c99f09638127f42f1f8e36594e60a58d3b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243856"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>UML 모델 요소에 참조 문자열 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML에 참조 문자열 연결 모델 요소](https://docs.microsoft.com/visualstudio/modeling/attach-reference-strings-to-uml-model-elements)합니다.  
-  
 모델 요소에 임의 문자열을 연결하는 코드를 작성할 수 있습니다. 예를 들어 문자열은 URI, 캐시된 계산 결과 또는 다른 모델의 요소에 대한 ModelBus 참조일 수 있습니다. 각 문자열은 IReference 개체에 포함됩니다. 개수에 관계없이 IReference 개체를 각 모델 요소에 연결할 수 있습니다.  
   
  각 IReference 개체에는 이름이 있습니다. 이 이름을 사용하여 참조 값을 해석하는 방법을 나타낼 수 있습니다. 예를 들어 이름을 "URI"로 설정하여 값이 URI로 해석되어야 함을 나타낼 수 있습니다. 모델링 도구에서 사용하는 몇 가지 미리 정의된 참조 이름 값이 있습니다.  

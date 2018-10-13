@@ -1,7 +1,7 @@
 ---
 title: 메모리 목록 표시 명령 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d2a440c43ad4bfaf5791a60422533a04bed21d72
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 25be71041f0ab127037a25a03cff1d6ffe42ac97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224499"
 ---
 # <a name="list-memory-command"></a>메모리 목록 표시 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [메모리 목록 표시 명령](https://docs.microsoft.com/visualstudio/ide/reference/list-memory-command)입니다.  
-  
   
 지정된 메모리 범위의 내용을 표시합니다.  
   
@@ -97,7 +95,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)   
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

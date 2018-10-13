@@ -1,7 +1,7 @@
 ---
 title: 작업 일괄 처리의 항목 메타데이터 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 358535cced9568ba385809857ab641bd93b35daa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552905"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256986"
 ---
 # <a name="item-metadata-in-task-batching"></a>작업 일괄 처리의 항목 메타데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [작업 일괄 처리의 항목 메타 데이터](https://docs.microsoft.com/visualstudio/msbuild/item-metadata-in-task-batching)입니다.  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에는 항목 목록을 항목 메타데이터에 따라 여러 다른 범주 또는 일괄 처리로 나누고 각 일괄 처리를 사용하여 한 번에 하나의 작업을 실행하는 기능이 있습니다. 어떤 항목이 어떤 일괄 처리를 통해 전달될지 정확히 이해하는 것은 어려울 수 있습니다. 이 항목에서는 일괄 처리와 관련된 다음과 같은 일반적인 시나리오를 다룹니다.  
   

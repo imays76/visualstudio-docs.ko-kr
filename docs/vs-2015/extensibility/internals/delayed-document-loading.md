@@ -1,7 +1,7 @@
 ---
 title: 지연 된 문서 로드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3469484518a4d802c8fc0de11a32533fa429d3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67fe53cefe3d128869d53592bf3e5c42a9d27a4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240918"
 ---
 # <a name="delayed-document-loading"></a>지연된 문서 로드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [문서를 로드 지연](https://docs.microsoft.com/visualstudio/extensibility/internals/delayed-document-loading)합니다.  
-  
 사용자는 Visual Studio 솔루션 다시 열릴 때 대부분의 관련된 문서를 즉시 로드 되지 않습니다. 문서 창 프레임의 초기화 보류 중 상태에 만들어지고 (스텁 프레임) 자리 표시자 문서 실행 문서 테이블 (RDT)에 배치 됩니다.  
   
  확장은 프로젝트 문서를 로드 하기 전에 문서에 요소를 쿼리하여 불필요 하 게 로드 될 수 있습니다. Visual Studio에 대 한 전체 메모리 사용 공간이 늘어날 수 있습니다.  

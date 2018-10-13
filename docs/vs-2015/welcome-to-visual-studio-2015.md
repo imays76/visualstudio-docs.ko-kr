@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2015 시작 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 71ef72b3374967cb977ad8891b66fd0b91732707
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f950ffa99fa6c68d51349e2b059b3e621ed069d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231239"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 시작
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "47554030"
   
  지금 바로 코딩을 시작하려면 [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) 를 무료로 다운로드하세요. 플랫폼 간 개발을 수행하려는 경우에는 선택적 패키지를 설치해야 합니다. ( [여러 가지 Visual Studio 버전](http://www.visualstudio.com/products/compare-visual-studio-products-vs)에서 더욱 다양한 기능을 사용할 수 있습니다.)  
   
- 지금 바로 새 프로젝트를 만들고 코드 작성을 시작해 보세요. 먼저 만들려는 앱의 유형을 선택합니다. 할 수 있습니다 [둘러보기](./ide/visual-studio-ide.md) 도구를 사용 하 여 살펴보려면 Visual Studio IDE입니다.  
+ 지금 바로 새 프로젝트를 만들고 코드 작성을 시작해 보세요. 먼저 만들려는 앱의 유형을 선택합니다. 도구에 익숙해지기 위해 Visual Studio IDE를 [둘러볼](./ide/visual-studio-ide.md) 수도 있습니다.  
   
  [코드 갤러리](https://code.msdn.microsoft.com/) 를 탐색하여 더 신속하게 앱을 작성하는 데 도움이 되는 샘플을 찾아보는 것도 잊지 마세요.  
   
@@ -57,15 +57,15 @@ ms.locfileid: "47554030"
   
  앱 요구 사항과 사용하려는 언어에 따라 필요한 도구를 선택합니다.  
   
-1.  [Visual Studio 용 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): C#에서 모든 장치에 대 한 기본 공용 코드  
+1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): C#을 사용하는 모든 장치용 공용 코드베이스  
   
-2.  [Visual Studio를 사용 하 여 Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): HTML, CSS 및 JavaScript 또는 Typescript에 대 한 기본 공용 코드  
+2.  [Apache Cordova with Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): HTML, CSS 및 JavaScript 또는 Typescript용 공용 코드베이스  
   
 3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): C#에서 2d/3d 게임 개발  
   
-4.  [플랫폼 간 개발용 c + +](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): 공유 코드 라이브러리 및 c + + 앱  
+4.  [플랫폼 간 개발용 C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): C++를 사용하는 공유 코드 라이브러리 및 앱  
   
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Android 용 Visual Studio 에뮬레이터: IDE에 관계 없이 Android 앱을 테스트 및 디버그  
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Android용 Visual Studio 에뮬레이터: IDE에 관계 없이 Android 앱 디버그 및 테스트  
   
 ## <a name="connect-your-apps-to-services"></a>앱을 서비스에 연결  
  다음과 같은 서비스에 즉시 연결할 수 있습니다(각 서비스에 대한 계정이 있다고 가정함).  
@@ -82,7 +82,7 @@ ms.locfileid: "47554030"
 ## <a name="build-test-and-manage-your-code"></a>코드 빌드, 테스트 및 관리  
   
 ### <a name="check-in-your-code"></a>코드 체크 인  
- 팀에서 작업하는 경우 팀의 모든 구성원이 동일한 코드베이스를 사용하도록 최신 버전의 코드도 공유해야 합니다.  Visual Studio는 Visual Studio Team Services나 Team Foundation Server와 원활하게 통합되어 Git 또는 TFVC(Team Foundation 버전 제어)를 통해 버전 제어를 제공합니다. 로컬 서버를 유지 관리하지 않고 클라우드에 코드를 저장하려면 Visual Studio Team Services를 사용하고, 온-프레미스 서버를 사용하려면 Team Foundation Server를 사용합니다. 코드 프로젝트를 만들 때마다 버전 제어에 추가하는 옵션이 있습니다. 시스템은 사용자의 요구에 가장 적합 한 버전 제어에 대 한 설명: [버전 제어를 사용 하 여](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)입니다.  
+ 팀에서 작업하는 경우 팀의 모든 구성원이 동일한 코드베이스를 사용하도록 최신 버전의 코드도 공유해야 합니다.  Visual Studio는 Visual Studio Team Services나 Team Foundation Server와 원활하게 통합되어 Git 또는 TFVC(Team Foundation 버전 제어)를 통해 버전 제어를 제공합니다. 로컬 서버를 유지 관리하지 않고 클라우드에 코드를 저장하려면 Visual Studio Team Services를 사용하고, 온-프레미스 서버를 사용하려면 Team Foundation Server를 사용합니다. 코드 프로젝트를 만들 때마다 버전 제어에 추가하는 옵션이 있습니다. 요구 사항에 가장 적합한 버전 제어에 대해 알아보려면 [버전 제어 사용](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)을 참조하세요.  
   
 ### <a name="build-your-app"></a>응용 프로그램 빌드  
  [로컬로 앱을 빌드](./ide/compiling-and-building-in-visual-studio.md) 하고 올바르게 작동하는지 확인할 수 있습니다. 그런 다음 [디버깅 도구](./debugger/debugging-in-visual-studio.md) 를 사용하여 앱 관련 문제를 해결합니다. 또는 공유 빌드 서버나 클라우드에서 프로젝트를 빌드할 수 있습니다. 팀의 개발자들이 버전 제어에 체크 인한 코드를 빌드하도록 빌드 프로세스를 자동화합니다. 예를 들어 밤마다 또는 코드를 체크 인할 때마다 하나 이상의 프로젝트를 빌드할 수 있습니다.  
@@ -131,7 +131,7 @@ ms.locfileid: "47554030"
   
 -   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)  
   
--   [DevOps 및 애플리케이션 수명 주기 관리](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)  
+-   [DevOps 및 응용 프로그램 수명 주기 관리](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)  
   
 -   [의견 보내기](./ide/talk-to-us.md)
 
