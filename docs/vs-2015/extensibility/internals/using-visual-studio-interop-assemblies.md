@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Interop 어셈블리를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,42 +17,40 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 942db931178cedba21468f42e7412ba3e93a1aa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38d33733c9ab2c9b3a1b0eb44fad30b46ae3c029
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195629"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Visual Studio Interop 어셈블리 사용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio Interop 어셈블리를 사용 하 여](https://docs.microsoft.com/visualstudio/extensibility/internals/using-visual-studio-interop-assemblies)입니다.  
-  
 Visual Studio interop 어셈블리는 Visual Studio 확장성을 제공 하는 COM 인터페이스에 액세스 하는 관리 되는 응용 프로그램을 허용 합니다. 가지 직선 COM 인터페이스 및 해당 interop 버전 간의 일부 차이점이 있습니다. 예를 들어 Hresult int 값으로 표현 일반적으로 동일한 방식으로 예외를 처리 해야 및 (특히 out 매개 변수) 매개 변수를 다르게 처리 됩니다.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>COM에서 관리 코드로 반환되는 HRESULT 처리  
- 관리 코드에서 COM 인터페이스를 호출하는 경우 HRESULT 값을 검사하고 필요에 따라 예외를 발생시킵니다. 합니다 <xref:Microsoft.VisualStudio.ErrorHandler> 클래스를 포함 합니다 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> HRESULT 값에 따라 COM 예외를 throw 하는 메서드를 전달 합니다.  
+ 관리 코드에서 COM 인터페이스를 호출하는 경우 HRESULT 값을 검사하고 필요에 따라 예외를 발생시킵니다. <xref:Microsoft.VisualStudio.ErrorHandler> 클래스에는 전달된 HRESULT의 값에 따라 COM 예외를 발생시키는 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 메서드가 포함되어 있습니다.  
   
- 기본적으로 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 0 보다 작은 값을 가진 HRESULT가 전달 될 때마다 예외를 throw 합니다. 이러한 Hresult가 허용 되는 값 없음 예외를 throw 해야 않았고의 경우 추가 hresult 값에 전달 되어야 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 값이 테스트 된 후입니다. 테스트할 HRESULT 명시적으로 전달 된 HRESULT 값과 일치 하는 경우 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, 예외가 throw 되지 않습니다.  
+ 기본적으로 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>는 0보다 작은 값을 가진 HRESULT가 전달될 때마다 예외를 발생시킵니다. 이러한 HRESULT가 허용되는 값이며 예외가 발생하지 않아야 하는 경우 값이 테스트된 후에 추가 HRESULT 값을 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>에 전달해야 합니다. 테스트되는 HRESULT가 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>에 명시적으로 전달된 HRESULT 값과 일치하는 경우 예외가 발생하지 않습니다.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants> 클래스 일반적인 HRESULT에 대 한 예를 들어 상수를 포함 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 하 고 <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, 및 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] HRESULT, 예를 들어 <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> 및 <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>합니다. <xref:Microsoft.VisualStudio.VSConstants> 제공 된 <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> 및 <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> COM.의 SUCCEEDED 및 FAILED 매크로에 해당 하는 방법  
+>  <xref:Microsoft.VisualStudio.VSConstants> 클래스 일반적인 HRESULT에 대 한 예를 들어 상수를 포함 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 하 고 <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, 및 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] HRESULT, 예를 들어 <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> 및 <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>합니다. 또한 <xref:Microsoft.VisualStudio.VSConstants>는 COM의 SUCCEEDED 및 FAILED 매크로에 해당하는 <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> 및 <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> 메서드를 제공합니다.  
   
- 예를 들어 다음 함수 호출은는 <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> 는 허용 되는 반환 값 이지만 다른 HRESULT 오류가 0 보다 작은 나타냅니다.  
+ 예를 들어 <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>은 허용되는 반환 값이지만 0보다 작은 다른 HRESULT는 오류를 나타내는 다음 함수 호출을 고려해 보세요.  
   
  [!code-csharp[VSSDKHRESULTInformation#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkhresultinformation/cs/vssdkhresultinformationpackage.cs#1)]
  [!code-vb[VSSDKHRESULTInformation#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhresultinformation/vb/vssdkhresultinformationpackage.vb#1)]  
   
- 허용 되는 반환 값을 둘 이상 있는, 경우 추가 HRESULT 값만 추가할 수에 대 한 호출 목록 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>합니다.  
+ 허용되는 반환 값이 둘 이상 있는 경우 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 호출의 목록에 다른 HRESULT 값을 추가하면 됩니다.  
   
  [!code-csharp[VSSDKHRESULTInformation#2](../../snippets/csharp/VS_Snippets_VSSDK/vssdkhresultinformation/cs/vssdkhresultinformationpackage.cs#2)]
  [!code-vb[VSSDKHRESULTInformation#2](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhresultinformation/vb/vssdkhresultinformationpackage.vb#2)]  
   
 ## <a name="returning-hresults-to-com-from-managed-code"></a>관리 코드에서 COM으로 HRESULT 반환  
- 예외가 발생 하는 경우 관리 코드 반환 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 호출한 COM 함수에 있습니다. COM interop는 관리 코드에서 강력한 형식의 일반적인 예외를 지원합니다. 예를 들어 받는 메서드가 있다고는 허용 되지 않는 `null` 인수 throw는 <xref:System.ArgumentNullException>합니다.  
+ 예외가 발생하지 않는 경우 관리 코드가 호출한 COM 함수에 <xref:Microsoft.VisualStudio.VSConstants.S_OK>를 반환합니다. COM interop는 관리 코드에서 강력한 형식의 일반적인 예외를 지원합니다. 예를 들어 허용되지 않는 `null` 인수를 받은 메서드는 <xref:System.ArgumentNullException>을 발생시킵니다.  
   
- 사용할 수 있습니다를 COM에 반환 하려는 HRESULT를 알고 있지만 확실 하지 않은 예외를 발생 시켜야 하는 경우는 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 적절 한 예외를 throw 하는 방법입니다. 예를 들어 비표준 오류를 사용 하더라도 작동 <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>합니다. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 에 매핑하려고 HRESULT를 강력한 형식의 예외에 전달. 매핑할 수 없는 경우 대신 일반 COM 예외를 발생시킵니다. 최종 결과로 HRESULT에 전달 해야 하는 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 관리 코드에서 호출한 COM 함수에 반환 됩니다.  
+ 어떤 예외를 발생시켜야 하는지 모르지만 COM에 반환하려는 HRESULT를 알고 있는 경우 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 메서드를 사용하여 적절한 예외를 발생시킬 수 있습니다. 이는 비표준 오류(예: <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>)에도 적용됩니다. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>이 전달된 HRESULT를 강력한 형식의 예외에 매핑하려고 합니다. 매핑할 수 없는 경우 대신 일반 COM 예외를 발생시킵니다. 최종 결과로, 관리 코드에서 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>에 전달하는 HRESULT가 호출한 COM 함수에 반환됩니다.  
   
 > [!NOTE]
 >  예외가 발생하면 성능이 저하되며 비정상적인 프로그램 상태를 나타냅니다. 자주 발생하는 상태는 예외를 발생시키는 대신 인라인으로 처리해야 합니다.  

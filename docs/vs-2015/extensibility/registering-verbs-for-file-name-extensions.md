@@ -1,7 +1,7 @@
 ---
 title: 파일 이름 확장명에 대 한 동사 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6c42b1682c7f599513b9894646b30dee029740e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196328"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>파일 이름 확장명에 대한 동사 등록
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [파일 이름 확장명에 대 한 동사 등록](https://docs.microsoft.com/visualstudio/extensibility/registering-verbs-for-file-name-extensions)합니다.  
-  
 응용 프로그램의 파일 이름 확장명을 연결에는 일반적으로 사용자가 파일을 두 번 클릭할 때 발생 하는 기본 작업이 있습니다. 이 작업 동사 예를 들어 열기 작업에 해당 하는 연결 된 것이 좋습니다.  
   
  HKEY_CLASSES_ROOT에 있는 셸 키를 사용 하 여 확장에 대 한 프로그래밍 방식 식별자 (ProgID)을 사용 하 여 연결 된 동사를 등록할 수 있습니다\\*progid*\shell 합니다. 자세한 내용은 [파일 형식](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)합니다.  

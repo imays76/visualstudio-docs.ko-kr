@@ -1,7 +1,7 @@
 ---
 title: 진행률 대화 상자에서 디버깅을 중지 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e96e76f809f6c2f8f02267fe080e9e6742af4587
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 440d71a5a84ba5cd9390cc0ba9dfb6319be61cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549906"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190478"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>진행하고 있는 디버깅을 중지하고 있습니다... 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [중지 디버깅 진행률 대화 상자에서](https://docs.microsoft.com/visualstudio/debugger/stop-debugging-in-progress-dialog-box)합니다.  
-  
 이 대화 상자는 디버거가 디버깅 세션을 중지하려고 할 때 세션 중지에 시간이 오래 걸릴 경우에 나타납니다. 일반적으로 디버깅 세션 중지는 매우 빠르게 이루어지므로 이 대화 상자가 나타나지 않습니다. 그러나 경우에 따라 디버깅 중인 모든 프로세스에서 분리하는 데 시간이 추가로 소요됩니다. 세션을 중지하는 데 몇 초 이상 걸리거나 분리 오류가 발생하는 경우 이 대화 상자가 나타납니다. 이러한 현상이 자주 발생하는 경우 내부 문제가 그 원인일 수 있으며 필요하면 기술 지원 서비스에 문의할 수 있습니다.  
   
  프로세스가 분리 되 고이 대화 상자가 사라질 때까지 대기 하거나 사용할 수 있습니다 합니다 **지금 중지** 단추를 강제로 즉시 종료 합니다.  

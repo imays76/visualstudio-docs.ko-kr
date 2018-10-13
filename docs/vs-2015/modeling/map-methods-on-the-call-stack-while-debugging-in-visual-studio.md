@@ -1,14 +1,14 @@
 ---
 title: Visual Studio에서 디버깅 하는 동안 호출 스택의 메서드 매핑 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -35,18 +35,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 72080588cb27351b9778e6c25dc0b70c5c39dc24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dab0d3acf7d7f0234531ddc7074f8e8402d13b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196640"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio에서 디버깅하는 동안 호출 스택의 맵 메서드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 디버깅 하는 동안 호출 스택의 메서드 매핑](https://docs.microsoft.com/visualstudio/debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio)합니다.  
-  
 디버깅하는 동안 호출 스택을 시각적으로 추적할 코드 맵을 만듭니다. 맵을 기록해 두면 코드에서 어떤 작업을 하고 있는지 추적하여 버그를 찾는 데 집중할 수 있습니다.  
   
  ![코드 맵의 호출 스택으로 디버그](../debugger/media/debuggermap-overview.png "DebuggerMap_Overview")  

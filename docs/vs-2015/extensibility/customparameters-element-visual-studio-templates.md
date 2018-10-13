@@ -1,7 +1,7 @@
 ---
 title: CustomParameters 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b74b32b3134dbbb2fefdf9fc7d1913a36efbdb5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 01fa2b214f878a2b834f78a1c78cfd7d3651a609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190751"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CustomParameters 요소 (Visual Studio 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/customparameters-element-visual-studio-templates)합니다.  
-  
 이 마법사에서는 매개 변수 대체를 수행 하는 경우 템플릿 마법사에 전달 되는 사용자 지정 매개 변수를 그룹화 합니다.  
   
 ## <a name="syntax"></a>구문  

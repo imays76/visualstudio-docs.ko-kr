@@ -1,7 +1,7 @@
 ---
 title: '방법: 추가, 업데이트 또는 WCF 데이터 서비스 참조를 제거 합니다. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8af59a4a33c0ac86c6e15e43d655cbf4f79b3406
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b14a83b195809dff89fa89bb6fcf91050e2f8a0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192259"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 추가, 업데이트 또는 WCF 데이터 서비스 참조를 제거](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference)합니다.  
-  
   
 A *서비스 참조* 액세스 하나 이상의 프로젝트를 사용 하면 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]합니다. 사용 합니다 **서비스 참조 추가** 대화 상자를 검색할 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 로컬 영역 네트워크에 로컬에서 또는 인터넷에 현재 솔루션에서.  
   

@@ -1,7 +1,7 @@
 ---
 title: Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195522"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](https://docs.microsoft.com/visualstudio/profiling/performance-tools-on-windows-8-and-windows-server-2012-applications)합니다.  
-  
 Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 성능 도구가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. Windows 스토어 앱에는 새로운 수집 기술도 필요합니다. 이 항목에서는 Windows 8 및 Windows Server 2012 플랫폼의 성능 도구 관련 변경 내용에 대해 설명합니다.  
   
 > [!NOTE]
@@ -143,7 +141,7 @@ Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual St
   
  **원격 컴퓨터에서 TIP 데이터 수집**  
   
- 원격 컴퓨터에서 계층 상호 작용 데이터를 수집 하려면 복사 해야 합니다 **vs\_프로파일러\_**_\<플랫폼 >_ **\_**  _\<언어 >_**.exe** 에서 파일을 _% VSInstallDir %_**tools\performance Tools\Setups**폴더의 Visual Studio 컴퓨터를 원격 컴퓨터를 설치 합니다. 프로 파일링 도구를 사용할 수 없습니다는 [Visual Studio 원격 도구가](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 패키지를 다운로드 합니다.  
+ 원격 컴퓨터에서 계층 상호 작용 데이터를 수집 하려면 복사 해야 합니다 **vs\_프로파일러\_**_\<플랫폼 >_ **\_**  _\<언어 >_**.exe** 에서 파일을 _% VSInstallDir %_**tools\performance Tools\Setups**폴더의 Visual Studio 컴퓨터를 원격 컴퓨터를 설치 합니다. [Visual Studio 원격 도구](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 다운로드 패키지의 프로파일링 도구를 사용할 수 없습니다.  
   
  [VSPerfCmd](../profiling/vsperfcmd.md) 또는 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)를 사용하여 프로파일링 데이터를 수집할 수 있습니다.  
   

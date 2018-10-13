@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 응용 프로그램의 게시 페이지 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c1aeb81c6430e8ee4719565dd52c7e404c860939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c10033f7e3f3a4336177c8c66721bd6b79ba4c71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553514"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196692"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램의 게시 페이지 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 응용 프로그램에 대 한 게시 페이지 지정](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-publish-page-for-a-clickonce-application)합니다.  
-  
 게시 하는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 기본 웹 페이지 (publish.htm)를 생성 되 고 응용 프로그램과 함께 게시 합니다. 이 페이지에 설명 하는 도움말 항목에 대 한 링크 및 응용 프로그램 및/또는 필수 구성 요소를 설치 하기 위한 링크를 사용 하는, 응용 프로그램의 이름을 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]입니다. 합니다 **게시 페이지** 프로젝트에 대 한 속성을 사용 하면 웹 페이지의 이름을 지정할 수 있습니다 프로그램 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램입니다.  
   
  게시 페이지 지정 되 면를 게시 하면 다음에 해당 복사할 게시 위치입니다. 해당 덮어쓰지 않고 다시 게시 하는 경우. 페이지의 모양을 사용자 지정 하려는 경우 변경 내용을 손실에 대 한 걱정 없이를 수행할 수 있습니다. 자세한 내용은 [방법: ClickOnce 기본 웹 페이지 사용자 지정](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)합니다.  

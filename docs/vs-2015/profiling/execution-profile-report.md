@@ -1,7 +1,7 @@
 ---
 title: 실행 프로필 보고서 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6e13e18857ce67bc5d333fb2d91b2df97fdc08d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb4b84193f341163dc0a39ded71781cc678c7650
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192662"
 ---
 # <a name="execution-profile-report"></a>실행 프로필 보고서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [실행 프로필 보고서](https://docs.microsoft.com/visualstudio/profiling/execution-profile-report)합니다.  
-  
 실행 프로필 보고서는 전통적인 샘플링 프로필입니다. 논리 코어에서 스레드가 실행 중인 기간에 거의 밀리초마다 샘플이 수집되고 동시성 시각화에서는 누적된 샘플 스택 집합의 데이터를 정렬하여 일반적인 호출 트리를 빌드합니다. 현재 시간 범위와 숨겨진 스레드 및 적용될 수 있는 다음과 같은 필터가 이 테이블의 데이터에 영향을 미칠 수 있습니다.  
   
 -   내 코드만을 선택하면 사용자 코드와 사용자 코드 아래에 한 수준이 포함된 스택 프레임만 표시됩니다.  

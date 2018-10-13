@@ -1,7 +1,7 @@
 ---
 title: 클래스 다이어그램에 UML 형식의 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d76d02720ba1dd5dc98dd2b260743b415d2bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de4bcd2779e448c48bd8ac6e66edf25ef4edddc5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552279"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193169"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML 클래스 다이어그램 형식의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [uml 형식의 속성 클래스 다이어그램](https://docs.microsoft.com/visualstudio/modeling/properties-of-types-on-uml-class-diagrams)합니다.  
-  
 UML 클래스 다이어그램에는 *형식* 클래스, 인터페이스 또는 열거형입니다.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: '오류: RPC에 인증이 필요 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e606c0e730b279723248a3fdbdd5b3e2bca1c4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5643e815386541bb9045eb56cacbd68e7e9b998d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193838"
 ---
 # <a name="error-rpc-requires-authentication"></a>오류: RPC에 인증이 필요합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: RPC 인증 필요](https://docs.microsoft.com/visualstudio/debugger/error-rpc-requires-authentication)합니다.  
-  
 Visual Studio 디버거에서 원격 컴퓨터에 연결할 수 없습니다. 로컬 컴퓨터에서 RPC 정책을 사용하도록 설정되어 있어 원격 디버깅을 수행할 수 없습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  

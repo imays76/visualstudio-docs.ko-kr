@@ -1,14 +1,14 @@
 ---
 title: 자동 및 지역 Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 877d145f83ce15cd5c1bb49b607519888ad0e96b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191323"
 ---
 # <a name="autos-and-locals-windows"></a>자동 및 지역 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio의 디버거에서 변수 검사](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows)합니다.  
-  
 **자동** 창(디버깅하는 동안 **Ctrl+Alt+V, A**또는 **디버그/Windows/자동**) 및 **지역** 창(디버깅하는 동안 **Ctrl+Alt+V, L**또는 **디버그/Windows/지역**)은 디버깅하는 동안 변수 값을 확인하려는 경우에 매우 유용합니다. **지역** 창에는 로컬 범위에 정의되는 변수가 표시되며, 일반적으로 현재 실행되고 있는 함수 또는 메서드입니다. **자동** 창에는 현재 줄(디버거가 중지되어 있는 위치)에 사용된 변수가 표시됩니다. 정확히 표시되는 변수는 언어에 따라 달라집니다. 자동 창에 변수가 표시를 참조 하세요. 아래.  
   
  기본 디버깅에 대한 자세한 내용은 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)을 참조하세요.  

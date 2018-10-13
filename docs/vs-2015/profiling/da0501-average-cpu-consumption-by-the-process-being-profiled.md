@@ -1,7 +1,7 @@
 ---
 title: 'DA0501: 프로파일링 중인 프로세스의 평균 CPU 사용 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7c9b36521c9d4afec0daba945de415477bcd948
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e2a270195a4d3689b2a5756c4633654bd3f06ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194215"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: 프로파일링 중인 프로세스의 평균 CPU 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DA0501: 프로 파일링 중인 프로세스의 평균 CPU 사용.](https://docs.microsoft.com/visualstudio/profiling/da0501-average-cpu-consumption-by-the-process-being-profiled)합니다.  
-  
 규칙 Id | DA501 |  
 | 범주 | 리소스 모니터링 |  
 | 프로 파일링 방법을 | 모든 |  

@@ -1,7 +1,7 @@
 ---
 title: 솔루션 탐색기 필터 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df93778a54da9c24b59228bd27e4930721273cbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dfe0d8e8341847941880bd2b44ee29341cc07ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557412"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195756"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>솔루션 탐색기 필터 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션 탐색기 필터 확장](https://docs.microsoft.com/visualstudio/extensibility/extending-the-solution-explorer-filter)합니다.  
-  
 확장할 수 있습니다 **솔루션 탐색기** 기능을 다른 파일을 표시할지를 필터링 합니다. 예를 들어 C# 클래스 팩터리의 파일만 표시 하는 필터를 만들면 합니다 **솔루션 탐색기**처럼이 연습을 보여 줍니다.  
   
 ## <a name="prerequisites"></a>전제 조건  

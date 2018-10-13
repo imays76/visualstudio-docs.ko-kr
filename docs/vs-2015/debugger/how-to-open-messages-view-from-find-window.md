@@ -1,7 +1,7 @@
 ---
 title: '방법: 창 찾기에서 메시지 뷰 열기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b847124ff6be20f91827d2ec3fc311d5cd48ece2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6068418c897bdc5a61fee0ee785e8d2abf7b5ea7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190556"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>방법: 창 찾기에서 메시지 뷰 열기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 창 찾기 메시지 뷰 열기](https://docs.microsoft.com/visualstudio/debugger/how-to-open-messages-view-from-find-window)합니다.  
-  
 편리 하 게 사용 하 여 찾을 수 있습니다 합니다 **창 찾기** 대상 창을 연 다음 해당 창 메시지 뷰 대화 상자.  
   
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>창 찾기 대화 상자를 사용 하 여 메시지 보기 창을 열려면  

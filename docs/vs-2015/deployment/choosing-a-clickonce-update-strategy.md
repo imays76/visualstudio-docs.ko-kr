@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 업데이트 전략 선택 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a4db43fd289aab969ec2d4c4031cdfbe1a3a18ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ed97cecb01a8e42a01a3e358ecc953857ca55b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543602"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191349"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>ClickOnce 업데이트 전략 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 업데이트 전략 선택](https://docs.microsoft.com/visualstudio/deployment/choosing-a-clickonce-update-strategy)합니다.  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]는 자동 응용 프로그램 업데이트를 제공할 수 있습니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램은 주기적으로 응용 프로그램에 업데이트를 사용할 수 있는지 여부를 확인 하려면 해당 배포 매니페스트 파일을 읽습니다. 사용 가능한 경우 새 버전의 응용 프로그램을 다운로드하여 실행합니다. 효율성을 위해 변경된 파일만 다운로드합니다.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 디자인할 경우 응용 프로그램에서 사용 가능한 업데이트를 확인하는 데 사용할 전략을 결정해야 합니다. 사용할 수 있는 세 가지 기본 전략은 응용 프로그램 시작 시 업데이트 확인, 응용 프로그램 시작 후 업데이트 확인(백그라운드 스레드에서 실행) 또는 업데이트용 사용자 인터페이스 제공입니다.  

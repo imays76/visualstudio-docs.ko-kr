@@ -1,7 +1,7 @@
 ---
 title: Spy + + 도움말 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 383322fb5b79820cdd05208b807071e5fd125377
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a61446ef9f0cff37a2d07fc2e6111321dbef32d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196952"
 ---
 # <a name="spy-help"></a>Spy++ 도움말
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Spy + + 도움말](https://docs.microsoft.com/visualstudio/debugger/spy-increment-help)합니다.  
-  
 Spy + + 유틸리티에 대 한 설명서에서 사용 하 여 Spy + +와 Spy + + 보기의 일반 항목의 두 그룹이 포함 되어 있습니다. 이러한 각 사용 가능한 메뉴 명령과 대화 상자에서 추가 세부 정보를 제공 하는 Spy + + 참조를 옵니다.  
   
 ## <a name="using-spy"></a>Spy++ 사용  

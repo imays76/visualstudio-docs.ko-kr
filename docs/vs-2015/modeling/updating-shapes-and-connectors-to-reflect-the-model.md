@@ -1,7 +1,7 @@
 ---
 title: 모양 및 연결선은 모델을 반영 하도록 업데이트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 99539a417ea61073cb4826d6a1e94e96564a108f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192454"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>모양 및 연결선을 업데이트하여 모델 반영
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [업데이트 모양 및 연결선은 모델을 반영 하도록](https://docs.microsoft.com/visualstudio/modeling/updating-shapes-and-connectors-to-reflect-the-model)합니다.  
-  
 도메인 특정 언어에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 기본 모델의 상태를 반영 하는 도형의 모양을 만들 수 있습니다.  
   
  이 항목의 코드 예제에 추가 해야는 `.cs` 파일에 `Dsl` 프로젝트입니다. 각 파일에서 이러한 문을 필요 합니다.  

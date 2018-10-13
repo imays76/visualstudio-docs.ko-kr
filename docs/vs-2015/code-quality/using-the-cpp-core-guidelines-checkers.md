@@ -1,7 +1,7 @@
 ---
 title: C + + Core Guidelines 검사기 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f7813659f63e14c22ee40dc28eaa5b2d029288e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541773"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194092"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C + + Core Guidelines 검사기 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [c + + Core Guidelines 검사기 사용](https://docs.microsoft.com/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers)합니다.  
-  
 C + + Core Guidelines는 이식 가능한 집합 지침, 규칙 및 c + + 전문가가 및 디자이너에서 생성 하는 c + +에서 코딩 하는 방법에 대 한 모범 사례입니다.  Visual Studio는 이제 c + + Core Guidelines의 준수에 대 한 코드를 확인 하 고 개선 사항을 제안 받을 분석 도구가 코드에 대 한 추가 규칙을 만드는 추가 패키지를 지원 합니다.  
   
 ## <a name="the-c-core-guidelines-project"></a>C + + Core Guidelines 프로젝트  

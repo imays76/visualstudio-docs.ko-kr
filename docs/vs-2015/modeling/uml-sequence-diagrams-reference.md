@@ -1,7 +1,7 @@
 ---
 title: 'UML 시퀀스 다이어그램: 참조 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564593"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195132"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>UML 시퀀스 다이어그램: 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 시퀀스 다이어그램: 참조](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference)합니다.  
-  
 Visual Studio에는 *시퀀스 다이어그램* 클래스, 구성 요소, 하위 시스템 또는 행위자 인스턴스 간의 메시지의 시퀀스를 나타내는 상호 작용을 보여 줍니다. 시간은 다이어그램 아래로 진행하고, 참가자 간의 제어 흐름을 보여 줍니다. 시퀀스 다이어그램을 사용하여 클래스와 메서드 대신 인스턴스 및 이벤트를 시각화합니다. 동일한 형식의 인스턴스가 두 개 이상 다이어그램에 나타날 수 있습니다. 동일한 메시지가 두 번 이상 나타날 수도 있습니다.  
   
  UML 시퀀스 다이어그램은 UML 모델의 일부이며 UML 모델링 프로젝트 내에만 존재합니다. UML 시퀀스 다이어그램을 만들려면 하는 **아키텍처** 메뉴에서 클릭 **새 UML 또는 레이어 다이어그램**합니다. 만들고 그리는 방법에 대해 자세히 알아봅니다 [UML 시퀀스 다이어그램](../modeling/uml-sequence-diagrams-guidelines.md) 하거나 [UML 모델링 다이어그램](../modeling/edit-uml-models-and-diagrams.md) 일반적입니다.  

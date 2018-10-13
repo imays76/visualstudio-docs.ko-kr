@@ -1,7 +1,7 @@
 ---
 title: 마법사 (합니다. Vsz) 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24296384ec66386cdcb735547a1b6ce9c64a0618
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d8d36ba617f5d5828354e32b5b0f45ed9ec1ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554044"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197172"
 ---
 # <a name="wizard-vsz-file"></a>마법사(.Vsz) 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [마법사 (합니다. Vsz) 파일](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-dot-vsz-file)합니다.  
-  
 통합된 개발 환경 (IDE) 마법사를 시작 하도록.vsz 파일을 사용 합니다. 이러한.vsz 파일 IDE를 호출 하는 마법사를 결정 하는 데 사용 하는 정보와 마법사 전달할 정보를 포함 합니다.  
   
  .Vsz 파일을 사용 하면 섹션이 없습니다.이 있는.ini 서식 있는 텍스트 파일의 버전이 있습니다. IDE에 알려진 정보 파일의 시작 부분에 저장 됩니다. 이 IDE를 호출 하는 마법사 및 IDE에 전달할.vsz 파일에 있는 매개 변수 간의 링크를 제공 합니다. 파일의 나머지 마법사 관련 되어 있으며 IDE에 의해 수집 되 고 특정 마법사에 전달 된 매개 변수를 제공 합니다.  

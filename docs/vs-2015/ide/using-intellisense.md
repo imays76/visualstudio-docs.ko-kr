@@ -1,7 +1,7 @@
 ---
 title: IntelliSense 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5cc5efe7dd32fe5953012594a5bb5fce49f947d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 586a0b31166f3b7696865e54f7d2df9c415315f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549615"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197199"
 ---
 # <a name="using-intellisense"></a>IntelliSense 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IntelliSense를 사용 하 여](https://docs.microsoft.com/visualstudio/ide/using-intellisense)입니다.  
-  
 IntelliSense는 멤버 목록, 매개 변수 정보, 요약 정보 및 단어 자동 완성 등 여러 기능을 위한 제네릭 형식입니다. 이러한 기능을 사용하면 사용 중인 코드에 대한 자세한 정보를 보고, 입력하는 매개 변수를 계속 추적하고, 단 몇 번의 키 입력으로 속성과 메서드에 대한 호출을 추가할 수 있습니다.  
   
  IntelliSense의 많은 부분은 언어별로 고유합니다. 다른 언어의 IntelliSense에 대한 자세한 내용을 보려면 참고 항목의 항목을 참조하세요.  

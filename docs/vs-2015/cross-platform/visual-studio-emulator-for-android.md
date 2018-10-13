@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Emulator for Android | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ed701537501c5acfe77d9d3469dbcc64208c85a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 403f27609b5af0556412ccac3f13009aab4638c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196392"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio Emulator for Android](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-emulator-for-android)합니다.  
-  
   
 Android용 Visual Studio 에뮬레이터는 Android 장치를 에뮬레이트하는 데스크톱 응용 프로그램입니다. 물리적 장치를 사용하지 않고도 Android 앱을 디버그하고 테스트할 수 있는 가상화된 환경을 제공합니다. 또한 응용 프로그램 프로토타입을 위한 격리된 환경을 제공합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 메모리 할당 및 개체 수명 데이터 값 이해 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1470e8c279ac47191a8bc91182c67df19a083339
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c18a7c078e647f6feef152d3f4f185cb6026c32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550320"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194222"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>메모리 할당 및 개체 수명 데이터 값 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [이해 메모리 할당 및 개체 수명 데이터 값](https://docs.microsoft.com/visualstudio/profiling/understanding-memory-allocation-and-object-lifetime-data-values)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 *.NET 메모리 할당* 프로파일링 방법은 할당에서 생성되었거나 가비지 수집에서 삭제된 개체 크기 및 수에 대한 정보를 수집하고 이벤트가 발생할 때 함수 *호출 스택*에 대한 추가 정보를 수집합니다. *호출 스택*은 프로세서에서 실행되는 함수에 대한 정보를 저장하는 동적 구조체입니다.  
   
  **요구 사항**  

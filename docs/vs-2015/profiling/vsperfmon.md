@@ -1,7 +1,7 @@
 ---
 title: VSPerfMon | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b06a91268560f3762ad78b2be238e8e30192ca53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1af640bc4b9ecca585a069b0eb1e7ee732dee4ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192974"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSPerfMon](https://docs.microsoft.com/visualstudio/profiling/vsperfmon)합니다.  
-  
 VSPerfMon 도구를 사용하면 응용 프로그램의 성능 데이터를 수집할 수 있습니다. 일반적으로는 VSPerfCmd.exe를 사용하여 이 도구를 실행합니다. VSPerfMon에는 VSPerfCmd 도구를 사용하는 경우에는 제공되지 않는 프로세스 연결 또는 분리에 대한 추가 정보가 표시됩니다. 이 정보를 보려면 별도의 창에서 VSPerfMon을 시작합니다. VSPerfMon을 호출하려면 다음 구문을 사용합니다.  
   
 ```  

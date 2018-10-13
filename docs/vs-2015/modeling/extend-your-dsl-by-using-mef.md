@@ -1,7 +1,7 @@
 ---
 title: MEF를 사용 하 여 DSL 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 378aab6aaac3c45dc0a912dc62f5ebf55fffd46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4b3eea594bbfca0701fc8e719af0cf481fa434c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544202"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194137"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF를 사용하여 DSL 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MEF를 사용 하 여 DSL 확장](https://docs.microsoft.com/visualstudio/modeling/extend-your-dsl-by-using-mef)합니다.  
-  
 도메인 특정 언어 (DSL) Framework MEF (Managed Extensibility)를 사용 하 여 확장할 수 있습니다. 사용자 또는 다른 개발자는 DSL 정 및 프로그램 코드를 변경 하지 않고 DSL에 대 한 확장을 쓸 수 됩니다. 이러한 확장 메뉴 명령, 끌어서 놓기 처리기 및 유효성 검사를 포함 합니다. 사용자는 DSL에를 설치 하 고 다음에 대 한 필요에 따라 확장을 설치 하는 일을 할 수 됩니다.  
   
  또한 DSL에서 MEF를 사용 하도록 설정 하면 수, DSL의 기능 중 일부를 작성 하기 쉽도록는 모든 DSL과 함께 작성 하는 경우에 합니다.  

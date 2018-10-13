@@ -1,7 +1,7 @@
 ---
 title: SupportsMasterPage 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6740145f280e28aca216ee298343bfa661ca5b48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1886121e7dd92e14fca48e220899d84c7cbc5632
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191557"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SupportsMasterPage 요소 (Visual Studio 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/supportsmasterpage-element-visual-studio-templates)합니다.  
-  
 지정 여부는 **마스터 페이지 선택** 확인란이 활성화 합니다 **새 항목 추가** 대화 상자.  
   
  \<VSTemplate>  

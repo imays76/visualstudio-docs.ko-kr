@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스에서 사용자 지정 문서 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6e29fe0831385456a36f6d3519c28f5adf1006a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 139c5b92d8dd9198e518c50b45531138e5cbc06b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194861"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>레거시 언어 서비스의 사용자 지정 문서 속성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 사용자 지정 문서 속성](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-document-properties-in-a-legacy-language-service)합니다.  
-  
 문서 속성에 표시 될 수는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **속성** 창입니다. 프로그래밍 언어 개별 원본 파일과 연결 된 속성이 없는 일반적으로 합니다. 그러나 XML 인코딩, 스키마 및 스타일 시트에 영향을 주는 문서 속성을 지원 합니다.  
   
 ## <a name="discussion"></a>토론  

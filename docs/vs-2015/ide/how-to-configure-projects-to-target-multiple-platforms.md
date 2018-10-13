@@ -1,7 +1,7 @@
 ---
 title: '방법: 여러 플랫폼을 대상으로 한 프로젝트 구성 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07c949e392ee2203804a8675a7659e71ced5c0fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4056a390bf2ed486df6391d48fd17c1d0af2cdad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194742"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>방법: 여러 플랫폼을 대상으로 한 프로젝트 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 여러 플랫폼을 대상으로 한 프로젝트 구성](https://docs.microsoft.com/visualstudio/ide/how-to-configure-projects-to-target-multiple-platforms)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]은(는) 여러 가지 다양한 CPU 아키텍처 또는 플랫폼을 대상으로 한 솔루션을 한 번에 제공할 수 있는 방법을 제공합니다. 이를 설정하는 속성은 **Configuration Manager** 대화 상자를 통해 액세스합니다.  
   
 ## <a name="targeting-a-platform"></a>대상 플랫폼 지정  

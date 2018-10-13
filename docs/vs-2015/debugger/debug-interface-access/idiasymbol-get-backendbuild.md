@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_backendbuild | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8c3577d809e28f448f807616852f7baf447705f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c35afdd308990e76436214963ef7d1766aeb15b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193793"
 ---
 # <a name="idiasymbolgetbackendbuild"></a>IDiaSymbol::get_backEndBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiasymbol:: Get_backendbuild](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-backendbuild)합니다.  
-  
 컴파일러의 백 엔드 빌드 번호를 검색합니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 성능 경고 보기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5605bbaa63e87082507eec18e4da86bb3295819
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88a6b4cf8368d46084223c8ddfe5c7f2bf1950a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196562"
 ---
 # <a name="how-to-view-performance-warnings"></a>방법: 성능 경고 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 성능 경고 보기](https://docs.microsoft.com/visualstudio/profiling/how-to-view-performance-warnings)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 성능 경고는 프로파일링된 응용 프로그램에서 프로그램 실행 속도를 저하시킬 수 있는 문제를 나타냅니다. 또한 경고는 보다 유용한 데이터를 수집하기 위해 수집 방법을 변경해야 할 수 있음을 나타낼 수도 있습니다. 성능 경고는 프로파일링 세션에서 자동으로 생성되며 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에서 프로파일링 데이터 파일을 열 때 **오류 목록** 창에 표시됩니다.  
   
  프로파일링 데이터 파일을 열 때 **오류 목록** 창이 표시되지 않는 경우 **보기** 메뉴를 클릭한 다음 **오류 목록**을 클릭합니다.

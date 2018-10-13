@@ -1,7 +1,7 @@
 ---
 title: Friend (디버그 인터페이스 액세스 SDK) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1348b943d34ac5db3891bc0c9cd3beb6e5c0cf8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1135380ee2bffb06bf7edc27b0253d1244922e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190127"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend(디버그 인터페이스 액세스 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Friend (디버그 인터페이스 액세스 SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/friend-debug-interface-access-sdk)합니다.  
-  
 Friend 함수 및 Friend 클래스도 식별 됩니다 `SymTagFriend` 기호입니다. 부모의 자식 사용자 정의 형식 (Udt) 되며 갖습니다를 [idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) 속성입니다.  
   
 ## <a name="properties"></a>속성  

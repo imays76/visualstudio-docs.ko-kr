@@ -1,7 +1,7 @@
 ---
 title: 레거시 API를 사용 하 여 언어 서비스 컨텍스트에서 제공 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72bcd275fab0ae8380167dbbc8a9fae21c28a36c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 950e7606292487f10ee6e901e82abaa3c6f92a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195732"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 언어에 대 한 서비스 컨텍스트 제공
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 API를 사용 하 여 언어 서비스 컨텍스트에서 제공](https://docs.microsoft.com/visualstudio/extensibility/providing-a-language-service-context-by-using-the-legacy-api)합니다.  
-  
 두 가지 옵션을 사용 하 여 사용자 컨텍스트를 제공 하는 언어 서비스는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 핵심 편집기: 텍스트 표식 컨텍스트를 제공 하거나 모든 사용자 컨텍스트를 제공 합니다. 여기에 각 간의 차이점 요약 되어 있습니다.  
   
  사용자 고유의 편집기에 연결 된 언어 서비스에 대 한 컨텍스트를 제공 하는 방법은 참조 하세요 [방법: 편집기에 대 한 컨텍스트를 제공](../extensibility/how-to-provide-context-for-editors.md)합니다.  

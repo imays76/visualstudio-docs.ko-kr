@@ -1,7 +1,7 @@
 ---
 title: '7단계: 곱하기 및 나누기 문제 추가 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83c85dfdca66e9df3634f84795042b331bf3f760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c0c2b069ebb75cbe4547528317544172b1d7ae2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551466"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195158"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>7단계: 곱하기 및 나누기 문제 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [7 단계: 곱하기 및 나누기 문제 추가](https://docs.microsoft.com/visualstudio/ide/step-7-add-multiplication-and-division-problems)합니다.  
-  
 이 자습서의 7단계에서는 곱하기와 나누기 문제를 추가합니다. 하지만 먼저 이렇게 변경하는 방법을 살펴보겠습니다. 값을 저장하는 첫 단계를 알아야 합니다.  
   
 ### <a name="to-add-multiplication-and-division-problems"></a>곱하기 및 나누기 문제를 추가하려면  

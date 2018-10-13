@@ -1,7 +1,7 @@
 ---
 title: Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -36,18 +36,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a1a26e3a119f89f89ea71997b1463bc8d3fa8daf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55b6ddc1d0e8e3a3caaee89547874e9e38115a17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194690"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](https://docs.microsoft.com/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio)합니다.  
-  
   
 Visual Studio는 Windows Communication Foundation (WCF)를 사용 하 여 작업에 대 한 도구를 제공 하 고 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], 분산 응용 프로그램을 만들기 위한 Microsoft 기술입니다. 이 항목에서 서비스에 대해 소개를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 관점입니다. 전체 설명서를 참조 하세요 [WCF Data Services 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)합니다.  
   

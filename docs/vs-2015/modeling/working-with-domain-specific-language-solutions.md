@@ -1,7 +1,7 @@
 ---
 title: 도메인별 언어 솔루션 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bab89088ec189e99b1856977f8ea4915cae999e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f511ee44b983c388fb3a51c01d5e9424127036b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564336"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190296"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>도메인별 언어 솔루션 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 언어 솔루션 작업](https://docs.microsoft.com/visualstudio/modeling/working-with-domain-specific-language-solutions)합니다.  
-  
 도메인 특정 언어 (DSL)를 사용 하 여 만들어집니다는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션입니다. 설정 하 고 솔루션을 사용자 지정 하는 방법에 대 한이 섹션이입니다.  
   
 ## <a name="in-this-section"></a>이 섹션의 내용  

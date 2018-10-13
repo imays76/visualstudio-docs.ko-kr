@@ -1,7 +1,7 @@
 ---
 title: '방법: 기술 지원을 위한 링크 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 333e9729012c24f93c6b3cefef3903e47af45ae6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2a772122851bb48e5cb5f0cf388110df8e5b371
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196146"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>방법: 기술 지원을 위한 링크 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 기술 지원을 위한 링크 지정](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-link-for-technical-support)합니다.  
-  
 게시 하는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 **지원 URL** 웹 페이지 또는 사용자가 응용 프로그램에 대 한 정보를 이동할 파일 공유를 식별 하는 속성입니다. 이 속성은 선택 사항입니다. URL을 제공 하는 경우 응용 프로그램의 항목에 표시 됩니다 **프로그램 추가 / 제거** 대화 상자.  
   
  **지원 URL** 속성에 설정할 수 있습니다 합니다 **게시** 페이지를 **프로젝트 디자이너**합니다.  

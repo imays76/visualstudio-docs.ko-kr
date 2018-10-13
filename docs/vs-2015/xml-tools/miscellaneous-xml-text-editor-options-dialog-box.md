@@ -1,7 +1,7 @@
 ---
 title: 기타, XML, 텍스트 편집기, 옵션 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5ef4588689360bb3ebf6465ff77b09809865cbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a58ef682ec269ebf83cb72bfbd7801da1fc17c64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553168"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194508"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>기타, XML, 텍스트 편집기, 옵션 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [기타, XML, 텍스트 편집기, 옵션 대화 상자](https://docs.microsoft.com/visualstudio/xml-tools/miscellaneous-xml-text-editor-options-dialog-box)합니다.  
-  
   
 이 대화 상자에서는 XML 편집기에 대한 자동 완성 기능 및 스키마 설정을 변경할 수 있습니다. 액세스할 수 있습니다 합니다 **옵션** 대화 상자를 **도구** 메뉴.  
   
