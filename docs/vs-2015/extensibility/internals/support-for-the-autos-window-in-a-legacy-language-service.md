@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 자동 창에 대 한 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68d9266ce81da0819bbf0f17c06409afcb02083f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05a3181206f9e73ffe7800a581fc93c3712c4afa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283623"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>레거시 언어 서비스의 자동 창 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 자동 창에 대 한 지원을](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service)합니다.  
-  
 합니다 **자동** 변수 등 디버깅 중인 프로그램 (되거나 중단점 또는 예외)를 일시 중지 되 면 범위에 있는 매개 변수 식 창에 표시 됩니다. 로컬 또는 전역 변수 및 매개 변수는 로컬 범위에서 변경 된 식이 포함할 수 있습니다. 합니다 **자동** 창 클래스, 구조체 또는 다른 일종의 인스턴스화를 포함할 수도 있습니다. 식 계산기를 평가할 수 있는 모든 항목에 잠재적으로 표시할 수는 **자동** 창입니다.  
   
  에 대 한 직접 지원 (MPF)에서 관리 되는 패키지 프레임 워크를 **자동** 창입니다. 그러나 재정의 하는 경우는 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> 메서드를 제공 하는 식의 목록을 반환할 수 있습니다 합니다 **자동** 창입니다.  

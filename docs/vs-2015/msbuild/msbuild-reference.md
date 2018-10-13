@@ -1,7 +1,7 @@
 ---
 title: MSBuild 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33ec64d3eb1ec4faa1566bb2d8f90d23f14a0555
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99a082355742ad81ee2ac2e7280a17cfd233a2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552264"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292307"
 ---
 # <a name="msbuild-reference"></a>MSBuild 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [MSBuild 참조](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reference)합니다.  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]용 빌드 시스템입니다. 다음 링크를 통해 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 참조 정보가 포함된 항목으로 이동할 수 있습니다.  
   

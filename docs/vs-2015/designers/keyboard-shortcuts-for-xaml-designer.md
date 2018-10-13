@@ -1,7 +1,7 @@
 ---
 title: XAML 디자이너에 대한 바로 가기 키 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd5fb40534c2c1f55ae5f18c63fcf0ec7ab6b2bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53eef64f396b6c9362a42d351bd546d97f8d205a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552422"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271403"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>XAML 디자이너에 대한 바로 가기 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [XAML 디자이너에 대 한 바로 가기 키](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-for-xaml-designer)합니다.  
-  
 XAML 디자이너의 바로 가기 키를 사용하면 마우스 단추를 여러 번 클릭해야 하는 동작을 바로 가기 키 하나로 줄일 수 있으므로 작업 속도를 향상시킬 수 있습니다.  
   
 ## <a name="element-shortcuts"></a>요소 바로 가기  

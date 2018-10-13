@@ -1,7 +1,7 @@
 ---
 title: 작성 합니다. Vsct 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552473"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283675"
 ---
 # <a name="authoring-vsct-files"></a>작성 합니다. Vsct 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [제작 합니다. Vsct 파일](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files)합니다.  
-  
 이 문서에는 Visual Studio 통합된 개발 환경 (IDE)에 메뉴 항목, 도구 모음 및 기타 사용자 인터페이스 (UI) 요소를 추가 하려면.vsct 파일을 작성 하는 방법을 보여 줍니다. .Vsct 파일을 이미 없는 Visual Studio 패키지 (VSPackage) UI 요소를 추가 하는 경우 다음이 단계를 사용 합니다.  
   
  새 프로젝트의 경우 선택 사항에 따라 이미 사용자 지정 편집기, 도구 창이 나 메뉴 명령에 대 한 필수 요소는.vsct 파일을 생성 하기 때문에 Visual Studio 패키지 템플릿을 사용 하는 것이 좋습니다. VSPackage의 요구 사항에 맞게이.vsct 파일을 수정할 수 있습니다. .Vsct 파일을 수정 하는 방법에 대 한 자세한 내용은에 나와 있는 예제를 참조 하세요 [확장 메뉴 및 명령을](../../extensibility/extending-menus-and-commands.md)합니다.  

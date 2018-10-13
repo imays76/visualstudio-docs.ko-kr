@@ -1,7 +1,7 @@
 ---
 title: '검사 목록: 새 프로젝트 형식 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f73462d32e0b047e0b2427646cfc5a3709c5e78a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8047ea1aeb6a163a627f9198ca3f6731419949ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285989"
 ---
 # <a name="checklist-creating-new-project-types"></a>검사 목록: 새 프로젝트 형식 만들기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [검사 목록: 새 프로젝트 형식 만들기](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-new-project-types)합니다.  
-  
 새 프로젝트 형식을 만들려면 몇 가지 작업을 완료 해야 합니다. 다음 검사 목록을 이러한 작업에 대 한 지침을 제공합니다.  
   
 1.  새 프로젝트 형식에 대 한 기능을 디자인 합니다. 자세한 내용은 [프로젝트 형식 디자인 결정](../../extensibility/internals/project-type-design-decisions.md)합니다.  
@@ -58,7 +56,7 @@ ms.locfileid: "47542191"
   
     -   개체 또는 클래스에서 파생 된 `IDispatch`, 자동화에 사용할 수 있습니다.  
   
-    -   XML 명령 테이블 (.vsct) 파일입니다. 자세한 내용은 참조 하세요. [Visual Studio 명령 테이블 (합니다. Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)합니다.  
+    -   XML 명령 테이블 (.vsct) 파일입니다. 자세한 내용은 [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)을 참조하세요.  
   
 6.  테스트, 디버깅 및 프로젝트 형식 시작 합니다.  
   

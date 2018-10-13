@@ -1,7 +1,7 @@
 ---
 title: Windows 스토어 앱 (JavaScript)에 대 한 Visual Studio 디버그 세션에서 스토어 앱의 실행을 제어 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881139"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275524"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Windows 스토어 앱에 대한 Visual Studio 디버그 세션에서 스토어 앱의 실행 제어(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows 스토어 앱 (JavaScript)에 대 한 Visual Studio 디버그 세션에서 스토어 앱의 실행을 제어](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript)입니다.  
-  
 이 빠른 시작에서는 Visual Studio 디버거에서 탐색하는 방법 및 세션에서 프로그램 상태를 보는 방법을 보여 줍니다.  
   
  이 빠른 시작은 처음으로 Visual Studio를 사용하여 디버깅하는 개발자 및 Visual Studio 디버그 세션 탐색에 대해 자세히 알아보려는 개발자를 위한 것이며, 디버깅 자체의 기술에 대해서는 설명하지 않습니다. 샘플 코드의 함수는 이 항목에서 설명하는 디버깅 절차를 보여 주기 위해서만 설계되었습니다. 이 함수는 앱 또는 함수 디자인의 모범 사례를 사용하지 않습니다. 실제로 함수 및 앱 자체가 많은 기능을 수행하지 않는다는 것을 금방 알 수 있습니다.  

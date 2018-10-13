@@ -1,7 +1,7 @@
 ---
 title: '연습: 문 완성 표시 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d7cd7a1ea3ffa3fd85cbe8ed7088347298f849c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280584"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>연습: 문 완성 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 문 완성 표시](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-statement-completion)합니다.  
-  
 완성 기능을 제공 하려는 식별자를 정의 하 고 다음 완료 세션을 트리거 언어 기반 문 완성을 구현할 수 있습니다. 기존 콘텐츠 형식에 대 한 완료를 트리거할 수 있습니다 또는 정의 문 완성 언어 서비스의 컨텍스트에서 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 해당 형식만 완성 표시-예를 들어 일반 "텍스트"입니다. 이 연습에서는 텍스트 파일의 콘텐츠 형식인 "일반 텍스트" 콘텐츠 형식에 대 한 문 완성을 트리거하는 방법을 보여 줍니다. "Text" 콘텐츠 형식은 코드 및 XML 파일을 포함 하 여 모든 콘텐츠 형식, 상위 항목입니다.  
   
  문 완성은 일반적으로 특정 문자를 입력 하 여 트리거됩니다-예를 들어, "using"와 같은 식별자의 시작 부분을 입력 하 여 합니다. 일반적으로 선택 항목을 커밋 스페이스바, 탭 또는 Enter 키를 눌러 해제 됩니다. 키 입력에 대 한 명령 처리기를 사용 하 여 문자를 입력 하 여 트리거되는 IntelliSense 기능을 구현할 수 있습니다 (합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스) 및 구현 하는 처리기 공급자는 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 인터페이스입니다. 구현 완료에 참여 하는 식별자의 목록인 완료 소스를 만드는 데는 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> 인터페이스와 완료 원본 공급자 (의 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> 인터페이스). 공급자는 프레임 워크 MEF (Managed Extensibility) 구성 요소 파트. 서비스 및 브로커는 원본 및 컨트롤러 클래스 내보내기 및 가져오기에 대 한-예를 들어 합니다 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, 텍스트 버퍼에 대 한 탐색을 사용 하도록 설정 하는 및 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, 완료 세션의 트리거.  
@@ -40,7 +38,7 @@ ms.locfileid: "47564853"
   
 #### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `CompletionTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `CompletionTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -65,7 +63,7 @@ ms.locfileid: "47564853"
   
 #### <a name="to-implement-the-completion-source"></a>완료 소스를 구현 하려면  
   
-1.  클래스 파일을 추가 하 고 이름을 `TestCompletionSource`입니다.  
+1.  클래스 파일을 추가하고 이름을 `TestCompletionSource`로 지정합니다.  
   
 2.  이러한 가져오기를 추가 합니다.  
   

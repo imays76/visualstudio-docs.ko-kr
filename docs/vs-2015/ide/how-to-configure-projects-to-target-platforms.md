@@ -1,7 +1,7 @@
 ---
 title: '방법: 플랫폼을 대상으로 한 프로젝트 구성 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a79b32583b130b62dc9946acd71776ac67159817
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e945a3a55f1ea4f9e68b96209e350c843324c30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294517"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>방법: 플랫폼을 대상으로 한 프로젝트 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 플랫폼을 대상으로 한 프로젝트 구성](https://docs.microsoft.com/visualstudio/ide/how-to-configure-projects-to-target-platforms)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 64비트 플랫폼을 비롯하여 다양한 플랫폼을 대상으로 하는 응용 프로그램을 설정할 수 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 64비트 플랫폼 지원에 대한 자세한 내용은 [64비트 응용 프로그램](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)을 참조하세요.  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>구성 관리자에서 대상 플랫폼 지정  

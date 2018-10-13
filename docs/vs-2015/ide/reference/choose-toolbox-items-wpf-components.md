@@ -1,7 +1,7 @@
 ---
 title: 도구 상자 항목 선택, WPF 구성 요소 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 057f354b06002c9b1708478f3e3a9592a47a7065
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c36c34f637993354b131430394e5980c9266d03
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552724"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299691"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>도구 상자 항목 선택, WPF 구성 요소
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도구 상자 항목 선택, WPF 구성 요소](https://docs.microsoft.com/visualstudio/ide/reference/choose-toolbox-items-wpf-components)합니다.  
-  
   
 **도구 상자 항목 선택** 대화 상자의 이 탭에는 로컬 컴퓨터에서 사용할 수 있는 WPF(Windows Presentation Foundation) 컨트롤 목록이 표시됩니다. 이 목록을 표시하려면 **도구** 메뉴에서 **도구 상자 항목 선택**을 선택하여 **도구 상자 항목 선택** 대화 상자를 표시하고 **WPF 구성 요소** 탭을 선택합니다. 나열된 구성 요소를 정렬하려면 열 머리글을 선택합니다.  
   

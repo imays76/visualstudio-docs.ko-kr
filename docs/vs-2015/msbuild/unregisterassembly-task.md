@@ -1,7 +1,7 @@
 ---
 title: UnregisterAssembly 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d363d56b6b4cfd9b8112729a3434fa517d8f519d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcfddcf1603a16ee4d436766e4f34fa2c41491bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298612"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UnregisterAssembly 작업](https://docs.microsoft.com/visualstudio/msbuild/unregisterassembly-task)합니다.  
-  
   
 COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [RegisterAssembly 작업](../msbuild/registerassembly-task.md)의 역작업을 수행합니다.  
   

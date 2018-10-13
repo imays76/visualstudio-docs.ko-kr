@@ -1,7 +1,7 @@
 ---
 title: 호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cd30b9dcc72ba2afd97577f69ac059a2e8a1d32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8cb22cb8274ea9af8fbea045eeeb779835c84a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556453"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273834"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [호출자-호출 수신자 뷰-NET 메모리 계측 데이터](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-net-memory-instrumentation-data)입니다.  
-  
 계측 방법을 사용하여 수집한 .NET 메모리 프로파일링 데이터의 호출자/호출 수신자 뷰는 선택한 함수와 선택한 해당 함수의 부모 및 자식 함수에 대한 할당 및 타이밍 데이터를 표시합니다. 호출자/호출 수신자 뷰에는 세 개의 표가 포함되어 있습니다.  
   
  **현재 함수**는 가운데 표에 표시되며, 선택한 함수에 대한 메모리 프로파일링 정보를 보여 줍니다. 값에는 함수에 대한 모든 샘플링 호출이 포함되어 있습니다.  

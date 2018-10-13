@@ -1,7 +1,7 @@
 ---
 title: Blend for Visual Studio를 사용하여 UI 만들기 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8609163dadcfc6425874c86c4aaf49f9452401ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 206664ef95d7eda5d906bf62599819a92fc6506f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564590"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289902"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio를 사용하여 UI 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 용 Blend를 사용 하 여 UI 만들기](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio)합니다.  
-  
 Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) 및 [Windows 스토어](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 앱을 디자인할 수 있습니다. Visual Studio와 같은 기본 XAML 디자인 환경을 제공하고, 애니메이션 및 동작과 같은 고급 작업에 대한 비주얼 디자이너를 추가합니다.  
   
  Blend for Visual Studio는 Visual Studio의 일부로 포함되어 있으므로 다운로드할 필요가 없습니다. 그러나 시스템에 설치하려면 Visual Studio 설치 관리자에서 직접 선택해야 합니다.  

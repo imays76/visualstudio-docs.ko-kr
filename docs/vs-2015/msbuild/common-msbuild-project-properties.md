@@ -1,7 +1,7 @@
 ---
 title: 일반적인 MSBuild 프로젝트 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8795360edca1db43fc5f2daf18ffc67c5b1abf16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30371d20e240e5679664a687c5ca098519cac9c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553578"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300055"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [일반적인 MSBuild 프로젝트 속성](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties)합니다.  
-  
   
 다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 .targets 파일에 포함된 자주 사용하는 속성을 보여 줍니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 파일 이름 확장명에 대 한 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8a299d7b2470b16761e4a418e0717a91c2929e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4278e27b4070ad3330b488cb8b426ffbd6484b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279814"
 ---
 # <a name="about-file-name-extensions"></a>파일 확장명 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [파일 이름 확장명에 대 한](https://docs.microsoft.com/visualstudio/extensibility/about-file-name-extensions)합니다.  
-  
 버전을 사용 하 여 연결 하는 VSPackage의 파일 확장명을 등록 하면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 이 중요 한 경우 둘 이상의 버전이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 컴퓨터에 설치 됩니다.  
   
  Vspackage에 대 한 파일 확장명은 연결 된 ProgID (프로그래밍 식별자)를 가리키는 기본값을 사용 하 여 키 HKEY_CLASSES_ROOT 아래 등록 됩니다.  

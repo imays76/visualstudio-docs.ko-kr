@@ -1,7 +1,7 @@
 ---
 title: 코드 분석 정책 오류 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ff0e93d7259217cec67ab1ecd52073860089eaed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb8e429c7f8ee54ab2c7f0bad08129542d4ce87d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557058"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286380"
 ---
 # <a name="code-analysis-policy-errors"></a>코드 분석 정책 오류
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 분석 정책 오류](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-policy-errors)합니다.  
-  
 체크 인할 때 코드 분석 정책이 충족 되지 않으면 다음과 같은 오류가 발생 합니다.  
   
  **하나 이상의 프로젝트에 대 한 코드 분석 설정이 코드 분석 정책과 호환 되지 않습니다.**  

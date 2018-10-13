@@ -1,7 +1,7 @@
 ---
 title: '방법: Visual Basic 개발자 설정을 적용하여 빌드 구성 관리 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f96242e638e10ac494b0d56e0fb1b89601a35e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b191b5d4223d32e4d620c779f5813c0db651a6cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300562"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>방법: Visual Basic 개발자 설정을 적용하여 빌드 구성 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Visual Basic 개발자 설정을 적용 하 여 빌드 구성 관리](https://docs.microsoft.com/visualstudio/ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied)합니다.  
-  
 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 개발자 설정이 적용되면 기본적으로 모든 고급 빌드 구성 옵션이 숨겨집니다. 이 항목에서는 이러한 설정을 수동으로 사용하도록 설정하는 방법을 설명합니다.  
   
 ## <a name="enabling-advanced-build-configurations"></a>고급 빌드 구성 사용  

@@ -1,7 +1,7 @@
 ---
 title: '연습: ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,21 +27,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dfd9b73b7cd12108f86f566eb8d1d4a1c3823f4f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e6de316fd0ff66e0815da7fa935d21e23a8285e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306334"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>연습: ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드](https://docs.microsoft.com/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api)합니다.  
-  
 위성 어셈블리를 사용하면 Windows Forms 응용 프로그램을 여러 문화권에 맞게 구성할 수 있습니다. *위성 어셈블리* 는 응용 프로그램의 기본 문화권 이외의 문화권을 위한 응용 프로그램 리소스가 포함된 어셈블리입니다.  
   
- 에 설명 된 대로 [ClickOnce 응용 프로그램 지역화](../deployment/localizing-clickonce-applications.md), 동일한 여러 문화권을 위한 여러 위성 어셈블리를 포함할 수 있습니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 합니다. 기본적으로 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에서는 단일 클라이언트에 하나의 위성 어셈블리만 필요한 경우라도 배포의 모든 위성 어셈블리를 클라이언트 컴퓨터에 다운로드합니다.  
+ 에 설명 된 대로 [ClickOnce 응용 프로그램 지역화](../deployment/localizing-clickonce-applications.md), 동일한 여러 문화권을 위한 여러 위성 어셈블리를 포함할 수 있습니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 합니다. 기본적으로 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 에서는 단일 클라이언트에 하나의 위성 어셈블리만 필요한 경우라도 배포의 모든 위성 어셈블리를 클라이언트 컴퓨터에 다운로드합니다.  
   
  이 연습에서는 위성 어셈블리를 선택적 항목으로 표시하고 클라이언트 컴퓨터의 현재 문화권 설정에 필요한 어셈블리만 다운로드하는 방법을 설명합니다. 다음 절차에서는 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]에서 사용할 수 있는 도구를 사용합니다. 또한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서도 이 작업을 수행할 수 있습니다.  또한 [연습: 디자이너를 사용하여 ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) 또는 [연습: 디자이너를 사용하여 ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))를 참조하세요.  
   
@@ -49,7 +47,7 @@ ms.locfileid: "47541705"
 >  테스트를 위해 다음 코드 예제에서는 프로그래밍 방식으로 문화권을 `ja-JP`로 설정합니다. 이 코드를 프로덕션 환경에 맞게 조정하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 나오는 "다음 단계" 섹션을 참조하세요.  
   
 ## <a name="prerequisites"></a>전제 조건  
- 이 항목에서는 사용자가 Visual Studio를 사용하여 응용 프로그램에 지역화된 리소스를 추가하는 방법을 알고 있다고 가정합니다. 자세한 지침은 [연습: Windows Forms 지역화](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx)합니다.  
+ 이 항목에서는 사용자가 Visual Studio를 사용하여 응용 프로그램에 지역화된 리소스를 추가하는 방법을 알고 있다고 가정합니다. 자세한 내용은 [연습: Windows Forms 지역화](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx)를 참조하세요.  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>요청 시 위성 어셈블리를 다운로드하려면  
   

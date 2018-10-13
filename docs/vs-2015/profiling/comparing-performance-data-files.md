@@ -1,7 +1,7 @@
 ---
 title: 성능 데이터 파일 비교 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd1c93942282c8a5cb3baf9fdf007a0ba55e3ebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65543b917a35ec50c3feadbfa4c8db917f4aeb78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555757"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306165"
 ---
 # <a name="comparing-performance-data-files"></a>성능 데이터 파일 비교
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 데이터 파일 비교](https://docs.microsoft.com/visualstudio/profiling/comparing-performance-data-files)합니다.  
-  
 프로파일링 도구 데이터 파일 비교 기능을 통해 두 개의 보고서 파일(.VSP/또는 VSP)을 선택하고 프로파일링 세션 간에 발생하는 차이, 성능 저하 및 향상된 기능을 보여 주는 보고서를 생성할 수 있습니다.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 데이터 파일 비교 보고서는 한 프로파일링 데이터 파일의 분석 결과와 다른 데이터 파일의 기본 분석 결과를 비교합니다. 두 데이터 파일은 모두 동일한 프로파일링 방법을 사용하여 생성된 것이어야 합니다. 분석된 비교 보고서는.vsps 파일로 저장됩니다.  

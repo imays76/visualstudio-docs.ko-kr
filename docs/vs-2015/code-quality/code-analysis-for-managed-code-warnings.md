@@ -1,7 +1,7 @@
 ---
 title: 관리 코드 경고에 대 한 코드 분석 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e1d74a44db244ed83e7d05fb09e66c96475466c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552633"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278917"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>관리 코드 경고에 대한 코드 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [관리 코드 경고에 대 한 코드 분석](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-warnings)합니다.  
-  
 관리 코드 분석 도구는 관리 코드 라이브러리의 규칙 위반을 나타내는 경고를 제공합니다. 경고는 디자인, 지역화, 성능, 보안 등의 규칙 영역으로 구성됩니다. 각 경고는 관리 코드 분석 규칙을 위반했음을 나타냅니다. 이 섹션에서는 각 관리 코드 분석 경고에 대한 자세한 논의와 예제를 제공합니다.  
   
  다음 표에서 각 경고에 대해 제공되는 정보의 형식을 보여 줍니다.  
@@ -56,17 +54,17 @@ ms.locfileid: "47552633"
 |-|-|  
 |[CheckId별 경고](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|CheckId별로 모든 경고 나열|  
 |[암호화 경고](../code-quality/cryptography-warnings.md)|암호화를 올바르게 사용하여 더 안전한 라이브러리 및 응용 프로그램을 지원하는 경고입니다.|  
-|[디자인 경고](../code-quality/design-warnings.md)|지정 된 대로 올바른 라이브러리 디자인을 지 원하는 경고입니다는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 하기도 합니다.|  
+|[디자인 경고](../code-quality/design-warnings.md)|[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 디자인 지침에 지정된 것과 같이 올바른 라이브러리 디자인을 지원하는 경고입니다.|  
 |[전역화 경고](../code-quality/globalization-warnings.md)|지역화에 대비한 라이브러리 및 응용 프로그램을 지원하는 경고입니다.|  
 |[상호 운용성 경고](../code-quality/interoperability-warnings.md)|COM 클라이언트와의 상호 작용을 지원하는 경고입니다.|  
 |[유지 관리 경고](../code-quality/maintainability-warnings.md)|라이브러리 및 응용 프로그램 유지 관리를 지원하는 경고입니다.|  
 |[Mobility Warnings](../code-quality/mobility-warnings.md)|효율적인 전원 사용을 지원하는 경고입니다.|  
-|[이름 지정 경고](../code-quality/naming-warnings.md)|명명 규칙 준수를 지 원하는 경고입니다는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 하기도 합니다.|  
+|[이름 지정 경고](../code-quality/naming-warnings.md)|[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 디자인 지침의 명명 규칙 준수를 지원하는 경고입니다.|  
 |[성능 경고](../code-quality/performance-warnings.md)|고성능 라이브러리 및 응용 프로그램을 지원하는 경고입니다.|  
 |[Portability Warnings](../code-quality/portability-warnings.md)|여러 플랫폼 간의 이식성을 지원하는 경고입니다.|  
 |[안정성 경고](../code-quality/reliability-warnings.md)|올바른 메모리 및 스레드 사용과 같은 라이브러리 및 응용 프로그램 안정성을 지원하는 경고입니다.|  
 |[보안 경고](../code-quality/security-warnings.md)|더 안전한 라이브러리 및 응용 프로그램을 지원하는 경고입니다.|  
-|[사용법 경고](../code-quality/usage-warnings.md)|경고의 적절 한 사용을 지는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]합니다.|  
+|[사용법 경고](../code-quality/usage-warnings.md)|[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 적절한 사용을 지원하는 경고입니다.|  
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|체크 인할 때 코드 분석 정책이 충족되지 않은 경우에 발생하는 오류입니다.|
 
 

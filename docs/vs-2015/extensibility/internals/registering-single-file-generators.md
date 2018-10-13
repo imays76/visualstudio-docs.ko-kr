@@ -1,7 +1,7 @@
 ---
 title: 단일 파일 생성기 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d500227f60552fea171b038523808e4409cf9c33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb21fe95b2e351ca64a4f9434354abb0bfc42b1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303565"
 ---
 # <a name="registering-single-file-generators"></a>단일 파일 생성기 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [단일 파일 생성기 등록](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-single-file-generators)합니다.  
-  
 사용자 지정 도구에서 사용할 수 있도록 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], 따라서를 등록 해야 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 인스턴스화할 수 있습니다 및 특정 프로젝트 형식에 연결 합니다.  
   
 ### <a name="to-register-a-custom-tool"></a>사용자 지정 도구를 등록 하려면  

@@ -1,7 +1,7 @@
 ---
 title: SccGetCommandOptions 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7838ffaccbef6e4bdcde97313f118e7aa13b4d1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b3efc963c71b6dfb18a014a46ae2f3442ef2524
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543957"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271585"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccGetCommandOptions 함수](https://docs.microsoft.com/visualstudio/extensibility/sccgetcommandoptions-function)합니다.  
-  
 이 함수는 지정 된 명령에 대 한 고급 옵션에 대 한 라는 메시지입니다.  
   
 ## <a name="syntax"></a>구문  

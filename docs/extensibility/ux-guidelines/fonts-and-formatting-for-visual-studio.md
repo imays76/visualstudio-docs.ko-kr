@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48864000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273093"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>글꼴 및 Visual Studio에 대 한 서식 지정
 ##  <a name="BKMK_TheEnvironmentFont"></a> 환경 글꼴
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` 부울 값을 반환? (null 허용 부울 값) 사용 하 여는 `DialogResult`, 필요한 경우 사용할 수 있습니다. 반환 값은 대화 상자를 사용 하 여 닫힌 경우 true **확인**합니다.  
   
- 자체에서 작업을 하 고 호스트 되는 일부 WPF UI를 표시 하는 경우 `HwndSource`, 팝업 창 등 Win32/WinForms 부모 창 창의 자식 창에 WPF 설정 해야 합니다 `FontFamily` 및 `FontSize` WPF e의 루트 요소에 대해 lement 합니다. (주 창에 속성을 설정 하는 셸에서 있지만 지난 상속 되지 것입니다는 `HWND`). 셸에 속성을 바인딩할 수, 다음과 같은 리소스를 제공 합니다.  
+ 자체에서 작업을 하 고 호스트 되는 일부 WPF UI를 표시 하는 경우 `HwndSource`, 팝업 창 등 Win32/WinForms 부모 창의 자식 창에 WPF 설정 해야 합니다 `FontFamily` 및 `FontSize` WPF 요소의 루트 요소에 합니다. (주 창에 속성을 설정 하는 셸에서 있지만 지난 상속 되지 것입니다는 `HWND`). 셸에 속성을 바인딩할 수, 다음과 같은 리소스를 제공 합니다.  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  

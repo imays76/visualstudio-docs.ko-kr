@@ -1,7 +1,7 @@
 ---
 title: 소스 제어 저장소를 로컬 프로젝트 폴더의 선택적 비교 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6806a01127250b2376fee0aa77d55554eeba9bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d904b279757e034050b79e16c1c1d61382e54746
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555248"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276655"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>로컬 프로젝트 폴더와 소스 제어 저장소의 선택적 비교
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 저장소를 프로젝트 폴더 비교](https://docs.microsoft.com/visualstudio/extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store)합니다.  
-  
 원본 제어 플러그 인 API 1.2 로컬 프로젝트 폴더 및 소스 제어 간의 비교 함수를 사용 하 여 이루어집니다 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) 하 고 [SccDirDiff](../../extensibility/sccdirdiff-function.md)합니다.  
   
  내 **솔루션 탐색기**폴더를 선택 하 여 개별 파일을 대신 하는 경우를 **버전 비교** 바로 가기 메뉴를 호출 하는 새 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) 및[ SccDirDiff](../../extensibility/sccdirdiff-function.md) 소스 제어 플러그 인입니다.  

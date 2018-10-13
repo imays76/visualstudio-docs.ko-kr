@@ -1,7 +1,7 @@
 ---
 title: '연습: 그래픽 정보 캡처 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de553729d37bb82d1b30c6a142f7e65c983bb1c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543334"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273015"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>연습: 그래픽 정보 캡처
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 그래픽 정보 캡처](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information)합니다.  
-  
-이 연습을 사용 하는 방법에 설명 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Direct3D 앱에서 그래픽 정보를 수동으로 캡처하려면 그래픽 진단 합니다.  
+이 연습에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단을 사용하여 Direct3D 앱에서 그래픽 정보를 수동으로 캡처하는 방법을 보여 줍니다.  
   
  이 연습에서는 다음 작업을 설명합니다.  
   
@@ -39,7 +37,7 @@ ms.locfileid: "47543334"
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>프로젝트 또는 솔루션이 로드된 후 그래픽 정보 캡처를 사용하도록 설정하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 그래픽 정보를 캡처할 앱 용 프로젝트 또는 솔루션 파일을 로드 합니다.  
+1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 그래픽 정보를 캡처하려는 앱용 프로젝트 또는 솔루션 파일을 로드합니다.  
   
 2.  그래픽 진단 도구 모음에서 **진단 시작**을 선택합니다.  
   
@@ -69,7 +67,7 @@ ms.locfileid: "47543334"
 -   그래픽 진단 도구를 사용하여 캡처한 그래픽 정보를 분석하는 방법에 대해 알아봅니다. 참조 [개요](../debugger/overview-of-visual-studio-graphics-diagnostics.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [그래픽 정보 캡처](../debugger/capturing-graphics-information.md)
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
 
 
 

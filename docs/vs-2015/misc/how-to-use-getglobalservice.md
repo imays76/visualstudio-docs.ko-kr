@@ -1,7 +1,7 @@
 ---
 title: '방법: Getglobalservice | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: douge
-ms.openlocfilehash: bd0a82281d2271f9badfbda9a7b32d20edf0c12c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ce0d5657fa65cd727da2b97b3dd24735a81937a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551966"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276132"
 ---
 # <a name="how-to-use-getglobalservice"></a>방법: GetGlobalService 사용
 경우에 따라 도구 창에서 서비스 가져오기 또는 배치 되지 않습니다. 그러지 않으면 요소가 서비스를 알지 못하는 서비스 공급자를 사용 하 여 배치 된 컨테이너를 제어 해야 합니다. 예를 들어, 다음 컨트롤 내에서 활동 로그에 작성 하는 것이 좋습니다. 이러한 및 기타 시나리오에 대 한 자세한 내용은 참조 하세요. [방법: 서비스 문제 해결](../extensibility/how-to-troubleshoot-services.md)합니다.  

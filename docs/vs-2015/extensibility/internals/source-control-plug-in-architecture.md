@@ -1,7 +1,7 @@
 ---
 title: 원본 제어 플러그 인 아키텍처 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15446ac6ed0da57775416abfbe2ee737bc2fe663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 885e761cc23d6dac86882943bf15401586acc656
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282349"
 ---
 # <a name="source-control-plug-in-architecture"></a>소스 제어 플러그 인 아키텍처
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 플러그 인 아키텍처](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-plug-in-architecture)합니다.  
-  
 소스 제어 지원에 추가할 수 있습니다는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 구현 하 고 소스 제어 플러그 인을 연결 하 여 통합된 개발 환경 (IDE)입니다. IDE는 잘 정의 된 원본 제어 플러그 인 API를 통해 플러그 인 소스 제어에 연결합니다. IDE 도구 모음 및 메뉴 명령으로 구성 된 사용자 인터페이스 (UI)를 제공 하 여 원본 제어 시스템의 버전 제어 기능을 노출 합니다. 소스 제어 플러그 인 소스 제어 기능을 구현합니다.  
   
 ## <a name="source-control-plug-in-resources"></a>소스 제어 플러그 인 리소스  

@@ -1,7 +1,7 @@
 ---
 title: Blend의 아트보드 보조 키 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc6939a0c9630dfde3fa482606afc72f7d6bba12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a730ec3c50880087d9200d5c7003e7b3cb631bca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278189"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend의 아트보드 보조 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Blend의 아트 보드 보조 키](https://docs.microsoft.com/visualstudio/designers/artboard-modifier-keys-in-blend)합니다.  
-  
 일부 바로 가기 키는 연결된 메뉴 항목이 없으므로 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 사용자 인터페이스를 통해 찾을 수 없습니다. 다음 표에는 개체 크기 조정 등의 작업을 수정하는 바로 가기가 나열되어 있습니다.  
   
 |수행할 작업|방법|  

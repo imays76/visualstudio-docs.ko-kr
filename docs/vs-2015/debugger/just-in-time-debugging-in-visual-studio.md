@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서-Just-in-time 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1256584c2d4517b566095b3b71c6d080c6327df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541749"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294049"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio에서 Just-In-Time 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 Just-In-Time 디버깅](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-in-visual-studio)합니다.  
-  
 Just-in-time 디버깅 Visual Studio 자동으로 시작 외부 Visual Studio를 실행 하는 응용 프로그램에서 예외 또는 충돌이 발생 합니다. 이 옵션을 사용 하면 Visual Studio 실행 중이지 않을 때 응용 프로그램을 테스트 하 고 문제가 발생 한 경우 Visual Studio를 사용 하 여 디버깅을 시작할 수 있습니다.
 
 Just-in-time 디버깅은 Windows 데스크톱 앱에 대 한 작동합니다. Windows 유니버설 앱에 대 한 작동 하지 않습니다 하 고 시각화 도우미 같은 네이티브 응용 프로그램에서 호스트 되는 관리 코드에 대해 작동 하지 않습니다.

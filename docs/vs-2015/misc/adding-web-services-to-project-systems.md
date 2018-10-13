@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 시스템에 웹 서비스 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8efa078b-68b2-45a2-9be2-44f807bc0d7f
 caps.latest.revision: 8
 manager: douge
-ms.openlocfilehash: 80de75b1b10a761e88b86c0982c0dc925c6eeeb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88966ee17567970d0807792c57c2483cadb22f63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280321"
 ---
 # <a name="adding-web-services-to-project-systems"></a>프로젝트 시스템에 웹 서비스 추가
 XML Web services는 일반적으로 SOAP (Simple Object Access Protocol) 프로토콜을 사용 하 여 프로젝트 시스템에 프로그래밍 방식으로 정보를 반환 하는 URL 주소 지정 가능 리소스입니다. 웹 서비스를 사용 하 여 VSPackage 프로젝트 시스템에 통합할 수 있습니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> 인터페이스입니다.  

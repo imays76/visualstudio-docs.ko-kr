@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 응용 프로그램에 대 한 시작 메뉴 이름 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 303d2cb53ce65fdc4a53a039c78664316579fece
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98554ef2dc9b1f5bdd3ef1879f32b2c2319a7a1b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277782"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램의 시작 메뉴 이름 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ClickOnce 응용 프로그램에 대 한 시작 메뉴 이름 지정](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application)합니다.  
-  
 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 사용 하 여 온라인 및 오프 라인 설치를 항목에 추가 됩니다 합니다 **시작** 메뉴 및 **프로그램 추가 / 제거** 목록입니다. 기본적으로 표시 이름은 응용 프로그램 어셈블리의 이름과 동일 하지만 설정 하 여 표시 이름을 변경할 수 있습니다 **Product name** 에 **게시 옵션** 대화 상자.  
   
  **제품 이름** 표시할 항목의 이름이 됩니다 publish.htm 페이지에서, 설치 된 오프 라인 응용 프로그램에 대 한는 **시작** 메뉴에 표시 되는 이름 수도 있습니다 **추가 또는 제거 프로그램**합니다.  

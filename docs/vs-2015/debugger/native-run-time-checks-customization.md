@@ -1,7 +1,7 @@
 ---
 title: 네이티브 런타임 검사 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65aaef84c96605eb0ac5a4836c637c2990a15477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300887"
 ---
 # <a name="native-run-time-checks-customization"></a>네이티브 런타임 검사 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [네이티브 런타임 검사 사용자 지정](https://docs.microsoft.com/visualstudio/debugger/native-run-time-checks-customization)합니다.  
-  
 로 컴파일할 때 **/RTC** (런타임 검사) 사용 하 여 또는 `runtime_checks` pragma를 C 런타임 라이브러리 네이티브 런타임 검사를 제공 합니다. 다음과 같은 경우에는 CRT 런타임 검사를 사용자 지정할 수도 있습니다.  
   
 -   런타임 검사 메시지를 파일 또는 기본 위치 이외의 대상으로 라우팅하는 경우  

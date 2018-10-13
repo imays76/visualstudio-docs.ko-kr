@@ -1,7 +1,7 @@
 ---
 title: 코어 뷰 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bce1c1ca458b8d06af89c669a76a2a93371fad5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09103357e207712b8678b2de9c9573cc14331dbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550437"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283233"
 ---
 # <a name="cores-view"></a>코어 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코어 뷰](https://docs.microsoft.com/visualstudio/profiling/cores-view)합니다.  
-  
 코어 뷰에는 스레드 실행이 논리적 프로세서 코어에 매핑된 방법을 보여줍니다. 서버 응용 프로그램을 작성할 때 이 뷰를 통해 스레드 선호도 또는 스레드 풀 관리를 사용하여 캐시 성능을 최적화할 수 있습니다. 또한 스레드 선호도를 사용해서 코어 간 마이그레이션 문제가 더 심각해질 수 있는 경우를 조사할 수 있습니다. 코어 뷰에는 그래프와 범례의 두 부분이 포함됩니다.  
   
  그래프에서 Y축에는 논리 코어가 표시되고 X축에는 시간이 표시됩니다. 그래프의 모든 스레드에는 시간 경과에 따라 코어 간 이동을 추적할 수 있도록 고유 색상이 포함됩니다. 범례 영역에서 스레드를 선택하면 이 그래프에서 스레드를 필터링할 수 있습니다.  

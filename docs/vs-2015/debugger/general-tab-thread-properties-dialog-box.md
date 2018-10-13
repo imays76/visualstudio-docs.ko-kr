@@ -1,7 +1,7 @@
 ---
 title: 스레드 속성 대화 상자, 일반 탭 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2610e76710d2c3138d981e3a2df83345cac418bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26eed1eb9d40fe78de34512f9e560ca59c19df12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307705"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>스레드 속성 대화 상자, 일반 탭
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [스레드 속성 대화 상자, 일반 탭](https://docs.microsoft.com/visualstudio/debugger/general-tab-thread-properties-dialog-box)합니다.  
-  
 특정 스레드에 대 한 자세한 내용은이 대화 상자를 사용 합니다. 이 대화 상자를 표시 하려면 포커스를 이동 하는 [스레드 뷰](../debugger/threads-view.md) 창을 열거나 [메시지 뷰](../debugger/messages-view.md) 메시지를 확장 합니다. 선택한 스레드 노드 트리에서 선택 **속성** 에서 합니다 **보기** 메뉴.  
   
  **Thread Properties** 대화 상자에는 하나의 창에는 **일반** 탭. 다음 설정은 사용할 수 있습니다.  

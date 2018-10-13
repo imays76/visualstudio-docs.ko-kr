@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::Seek | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25728eee417d1d2f9a5d334d61572d602449fee2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84f966521c05347d02a13ba70a65528ba3d68a84
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277227"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugDocumentContext2::Seek](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentcontext2-seek)합니다.  
-  
 문이나 줄의 지정된 된 수 만큼 문서 컨텍스트를 이동합니다.  
   
 ## <a name="syntax"></a>구문  

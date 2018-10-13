@@ -1,7 +1,7 @@
 ---
 title: '1단계: Windows Forms 응용 프로그램 프로젝트 만들기 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d494cb565e00633e36af35f230b0208ee0378a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd6c7f5398575f70da4414cfd529dbd6a67f5c6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292385"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>1단계: Windows Forms 응용 프로그램 프로젝트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [1 단계: Windows Forms 응용 프로그램 프로젝트 만들기](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-windows-forms-application-project)합니다.  
-  
 사진 뷰어를 만드는 첫 번째 단계는 Windows Forms 응용 프로그램 프로젝트를 만드는 것입니다.  
   
  ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 1](http://go.microsoft.com/fwlink/?LinkId=205209) 또는 [자습서 1: C#에서 사진 뷰어 만들기 - 비디오 1](http://go.microsoft.com/fwlink/?LinkId=205199)을 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.  

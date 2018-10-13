@@ -1,7 +1,7 @@
 ---
 title: '디버깅 준비: ASP.NET 웹 응용 프로그램 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,19 +24,17 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553334"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292892"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>디버깅 준비: ASP.NET 웹 응용 프로그램
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버깅 준비: ASP.NET 웹 응용 프로그램](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications)합니다.  
-  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]웹 사이트 템플릿은 Web Form 응용 프로그램을 만듭니다. 이 템플릿을 사용하여 웹 사이트를 만드는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 디버깅을 위한 기본 설정을 만듭니다. 에 **프로젝트 속성** 대화 상자에서 웹 페이지를 시작 페이지로 사용할지을 지정할 수 있습니다. 디버깅을 시작 하는 경우는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]이러한 기본 설정 사용 하 여 웹 사이트 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Internet Explorer를 시작 하 고 디버거를 연결 합니다 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스 (aspnet_wp.exe 또는 w3wp.exe)). 자세한 내용은 [시스템 요구 사항](../debugger/aspnet-debugging-system-requirements.md)합니다.  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]웹 사이트 템플릿은 Web Form 응용 프로그램을 만듭니다. 이 템플릿을 사용하여 웹 사이트를 만드는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 디버깅을 위한 기본 설정을 만듭니다. 에 **프로젝트 속성** 대화 상자에서 웹 페이지를 시작 페이지로 사용할지을 지정할 수 있습니다. 디버깅을 시작 하는 경우는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]이러한 기본 설정 사용 하 여 웹 사이트 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Internet Explorer를 시작 하 고 디버거를 연결 합니다 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스 (aspnet_wp.exe 또는 w3wp.exe)). 자세한 내용은 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)항목을 참조하세요.  
   
 ### <a name="to-create-a-web-forms-application"></a>Web Forms 응용 프로그램을 만들려면  
   

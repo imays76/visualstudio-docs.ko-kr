@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND_EX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b4f2dc56d9199742fad9fc15614f1c1d4e619fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8dcf18bae79b20f833e156d3186cf806c7c050f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293893"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [FIELD_KIND_EX](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/field-kind-ex)합니다.  
-  
 필드의 추가 종류를 열거 하는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체에 포함 될 수 있습니다. 이 열거형을 확장 합니다 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 열거형입니다.  
   
 ## <a name="syntax"></a>구문  

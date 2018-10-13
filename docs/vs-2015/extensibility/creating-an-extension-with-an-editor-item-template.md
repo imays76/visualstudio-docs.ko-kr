@@ -1,7 +1,7 @@
 ---
 title: 편집기 항목 템플릿을 사용 하 여 확장을 만드는 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 245963c433c264212096d129d99d86367e006b4f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c91c515051760fd1eda4585155a2303ef895466e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273704"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>편집기 항목 템플릿을 사용하여 확장 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](https://docs.microsoft.com/visualstudio/extensibility/creating-an-extension-with-an-editor-item-template)합니다.  
-  
 편집기 분류자, 프로그램 및 여백을 추가 하는 기본 편집기 확장을 만들려면 Visual Studio SDK에 포함 된 항목 템플릿을 사용할 수 있습니다. 편집기 항목 템플릿은 Visual C# 또는 Visual Basic VSIX 프로젝트에 사용할 수 있습니다.  
   
 ## <a name="prerequisites"></a>전제 조건  

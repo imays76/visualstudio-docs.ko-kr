@@ -1,14 +1,14 @@
 ---
 title: 디버거의 식 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 dev_langs:
@@ -32,18 +32,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b8350356b82b6d2cefc3fda725d90dccea75e55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542267"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289330"
 ---
 # <a name="expressions-in-the-debugger"></a>디버거에서 사용하는 식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거에서 식을](https://docs.microsoft.com/visualstudio/debugger/expressions-in-the-debugger)합니다.  
-  
 Visual Studio 디버거에는 **간략한 조사식** 대화 상자, **조사식** 창 또는 **직접 실행** 창에 식을 입력할 때 사용되는 식 계산기가 포함되어 있습니다. 식 계산기는 **중단점** 창과 디버거의 여러 가지 다른 부분에서도 사용됩니다.  
   
  다음 섹션에서는 다양한 언어의 식에 대한 세부 정보를 제공합니다.  
@@ -138,7 +136,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - 지원되지 않는 식  
   
 ### <a name="dynamic-objects"></a>동적 개체  
- 디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. 구현 하는 경우 개체는 <xref:System.Dynamic.IDynamicMetaObjectProvider> 동적 뷰 노드가 추가 됩니다는 조사식 창에서 계산 됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.  
+ 디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. <xref:System.Dynamic.IDynamicMetaObjectProvider>를 구현하는 개체가 조사식 창에서 평가될 때 동적 뷰 노드가 추가됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.  
   
  동적 개체의 다음 기능은 지원되지 않습니다.  
   
@@ -162,7 +160,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - 지원되지 않는 식  
   
 ### <a name="dynamic-objects"></a>동적 개체  
- 디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. 구현 하는 경우 개체는 <xref:System.Dynamic.IDynamicMetaObjectProvider> 동적 뷰 노드가 추가 됩니다는 조사식 창에서 계산 됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.  
+ 디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. <xref:System.Dynamic.IDynamicMetaObjectProvider>를 구현하는 개체가 조사식 창에서 평가될 때 동적 뷰 노드가 추가됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.  
   
  동적 개체의 다음 기능은 지원되지 않습니다.  
   
@@ -223,7 +221,7 @@ int main()
   
 ## <a name="see-also"></a>참고 항목  
  [C + +의 형식 지정자](../debugger/format-specifiers-in-cpp.md)   
- [컨텍스트 연산자 (c + +)](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)   
  [의사 변수](../debugger/pseudovariables.md)
 

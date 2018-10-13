@@ -1,7 +1,7 @@
 ---
 title: '관리 디버깅: 권장 속성 설정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50fa9b61d017be3e860c10f11688bcd79f252969
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b9c5b317498d9a10c5e111b8bbd4d0a05350d73
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542926"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288602"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>관리되는 디버깅: 권장 속성 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [관리 디버깅: 권장 속성 설정](https://docs.microsoft.com/visualstudio/debugger/managed-debugging-recommended-property-settings)합니다.  
-  
 일부 속성은 모든 관리되는 디버깅 시나리오에서 동일한 방식으로 설정해야 합니다.  
   
  다음 표에는 권장 속성 설정이 나와 있습니다.  

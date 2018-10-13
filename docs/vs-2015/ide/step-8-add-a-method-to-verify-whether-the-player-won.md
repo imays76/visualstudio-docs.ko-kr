@@ -1,7 +1,7 @@
 ---
 title: '8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5484d98801eacfbf56984d923594d29ad7196fad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 278d8d71378c0d14047fe8e012fed21951101548
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306635"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [8 단계: 확인 여부는 게임 플레이어가 겼는 메서드 추가](https://docs.microsoft.com/visualstudio/ide/step-8-add-a-method-to-verify-whether-the-player-won)합니다.  
-  
 재미있는 게임을 만들었지만 이를 마무리하려면 추가 항목이 필요합니다. 플레이어가 이기면 게임이 끝나야 하므로 `CheckForWinner()` 메서드를 추가하여 플레이어가 이겼는지 여부를 확인해야 합니다.  
   
 ### <a name="to-add-a-method-to-verify-whether-the-player-won"></a>플레이어가 게임에 이겼는지 여부를 확인하기 위해 메서드를 추가하려면  

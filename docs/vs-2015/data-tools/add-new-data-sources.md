@@ -1,7 +1,7 @@
 ---
 title: 새 데이터 소스 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb629119655327c7608025d66bb5e42d857d039d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279151"
 ---
 # <a name="add-new-data-sources"></a>새 데이터 소스 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [새 데이터 원본을 추가](https://docs.microsoft.com/visualstudio/data-tools/add-new-data-sources)합니다.  
-  
   
 Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 데이터 저장소에 연결 하 고.NET 응용 프로그램에 데이터를 노출 하는.NET 개체를 가리킵니다. Visual Studio 디자이너에서 데이터베이스 개체를 끌어서 폼에 데이터를 바인딩하는 상용구 코드를 생성 하는 데이터 원본의 출력을 사용할 수는 **데이터 원본** 창입니다. 이 유형의 데이터 원본 수 있습니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 격리 셸 응용 프로그램 배포 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c503a985-d67a-4ef8-9123-7744a78f2f17
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7388a5b723b5346f1f653024215c16ba474fa48a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d05e6a88c9da52492a49462880a04e578feadb5c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556863"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305814"
 ---
 # <a name="distributing-isolated-shell-applications"></a>격리 셸 응용 프로그램 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [격리 셸 응용 프로그램 배포](https://docs.microsoft.com/visualstudio/extensibility/distributing-isolated-shell-applications)합니다.  
-  
 격리 셸 응용 프로그램을 만들기 위해 Visual Studio 및 Visual Studio SDK를 설치 해야 합니다. 다른 사용자 또는 고객의 컴퓨터에 응용 프로그램을 배포 하려면 격리 셸에 대 한 특별 한 재배포 가능 패키지를 포함 해야 합니다.  
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>격리 셸 응용 프로그램을 배포 하기 위한 필수 구성 요소  

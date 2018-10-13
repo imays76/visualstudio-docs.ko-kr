@@ -1,7 +1,7 @@
 ---
 title: 내 코드만(스레드 뷰) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be1c495a9bf3becc36f23508ac71f40b42bf7600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64f08b9cfe7a0fd0d455d548f3685dbbea6160af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296857"
 ---
 # <a name="just-my-code-threads-view"></a>내 코드만(스레드 뷰)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [내 코드만 (스레드 뷰)](https://docs.microsoft.com/visualstudio/profiling/just-my-code-threads-view)합니다.  
-  
 이 옵션을 선택하는 경우 호출 스택을 필터링하여 사용자 코드와 호출된 함수의 한 수준만을 표시합니다.  
   
  이 옵션을 활성화하여 호출 스택의 복잡성을 상당히 줄일 수 있으며 특정 문제를 더 쉽게 진단할 수 있도록 할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 그래픽 진단 재생 컴퓨터 변경 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e33d2acc46cbf92c9b2bbd699903ad3169661a54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 327dd9c14c4bbfe2b5c37cbe26823d8bd02c76ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551558"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274471"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>방법: 그래픽 진단 재생 컴퓨터 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 그래픽 진단 재생 컴퓨터 변경](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-change-the-graphics-diagnostics-playback-machine)합니다.  
-  
 재생할 수 있습니다 그래픽 정보는 원격 컴퓨터 또는 장치를 사용 하 여 또는 로컬 컴퓨터를 사용 하 여 합니다.  
   
 ## <a name="choosing-a-playback-machine"></a>재생 컴퓨터를 선택합니다.  

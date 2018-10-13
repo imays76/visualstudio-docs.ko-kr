@@ -1,7 +1,7 @@
 ---
 title: 편집 하며 계속 하기 대화 상자 (c + +) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364538c4c4b3d485d136ddfbe4acf6de81228e4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4faa19868f3520a761b40419234ce7a77125a914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280180"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>편집하며 계속하기 대화 상자(C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집 하며 계속 대화 상자 (c + +)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box-cpp)합니다.  
-  
 편집하며 계속하기에서 네이티브 코드에 변경 내용을 적용할 수 없습니다. 일시적인 현상일 수 있습니다. 편집하며 계속하기에서 네이티브 코드 변경 내용을 즉시 적용할 수 없지만 디버깅 세션 중에 이후에 적용할 수 있는 경우가 있습니다(예: 지금 실행되는 프로시저에 대한 현재 호출을 완료한 후). 자세한 내용은 [편집 하며 계속 하기](../debugger/edit-and-continue.md)합니다.  
   
  디버그하는 동안 코드를 편집하여 오류를 수정하거나, 디버깅을 중지하고 코드를 수정하거나, 오류를 무시하고 디버깅을 계속할 수 있습니다. 수정하지 않고 계속하면 코드 변경 내용이 즉시 적용되지 않습니다.  

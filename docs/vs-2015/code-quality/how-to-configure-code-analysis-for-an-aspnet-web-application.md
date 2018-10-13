@@ -1,7 +1,7 @@
 ---
 title: '방법: ASP.NET 웹 응용 프로그램에 대 한 코드 분석 구성 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b611e303c61e7be9586d6d746e5c859c8dbb5b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf7450341dd166977d67639f4f3762fae6ef89c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283909"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>방법: ASP.NET 웹 응용 프로그램에 대한 코드 분석 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: ASP.NET 웹 응용 프로그램에 대 한 코드 분석 구성](https://docs.microsoft.com/visualstudio/code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application)합니다.  
-  
 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 하 고 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 코드 분석의 목록에서 선택할 수 있습니다 *규칙 집합* 적용할 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램입니다. 기본 규칙 집합은 Microsoft Mininimum 권장 규칙. 웹 사이트에 적용 되도록 설정 하는 다른 규칙을 선택할 수 있습니다.  
   
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>ASP.NET 페이지 프레임워크 프로젝트에 대한 규칙 집합을 구성하려면  

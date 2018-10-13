@@ -1,7 +1,7 @@
 ---
 title: '방법: 스레드 창 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5004f437b55709bf6db0a59fc17b42894cc17e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1073383ef8964fd6c7d754918f7550179372f9f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306256"
 ---
 # <a name="how-to-use-the-threads-window"></a>방법: 스레드 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [스레드 창을 사용 하는 다중 스레드 앱 디버깅](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window)합니다.  
-  
 에 **스레드** 창을 검토 하 고 수 디버깅 중인 응용 프로그램에서 스레드를 사용 하 여 작동 합니다.  
   
  합니다 **스레드** 창에 각 행이 응용 프로그램에서 스레드를 나타내는 테이블이 있습니다. 기본적으로 이 테이블에는 응용 프로그램의 모든 스레드가 나열되지만 목록을 필터링하여 관심 있는 스레드만 표시할 수 있습니다. 열마다 다른 유형의 정보가 있습니다. 일부 열을 숨길 수도 있습니다. 모든 열을 표시하면 왼쪽부터 다음 정보가 나타납니다.  

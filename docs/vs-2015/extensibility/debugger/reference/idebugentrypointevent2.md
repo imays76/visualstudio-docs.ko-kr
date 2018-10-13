@@ -1,7 +1,7 @@
 ---
 title: IDebugEntryPointEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c823ef8266f54a9d97bf9311083d77ae170f067
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a3b7c05b8898971d43520b7138e5b7c4e146b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284286"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugEntryPointEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugentrypointevent2)합니다.  
-  
 디버그 엔진 (DE) 프로그램 사용자 코드의 첫 번째 명령은 실행 되려고 할 때 (SDM) 세션 디버그 관리자에 게이 인터페이스를 보냅니다.  
   
 ## <a name="syntax"></a>구문  

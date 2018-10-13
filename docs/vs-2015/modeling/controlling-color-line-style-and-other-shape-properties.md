@@ -1,7 +1,7 @@
 ---
 title: 색, 선 스타일 및 기타 모양 속성 제어 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1722a3f8a5ff05589cfad987fff6448d44e96ec8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5694e81721bcc16b13c1857a07072fcaef00a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285482"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>색, 선 스타일 및 기타 모양 속성 제어
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [제어 색, 선 스타일 및 기타 모양 속성](https://docs.microsoft.com/visualstudio/modeling/controlling-color-line-style-and-other-shape-properties)합니다.  
-  
 몇 가지 모양 속성 같은 색 노출 될 수 있지만' ' – 즉, 연결 모양의 도메인 속성에 합니다. 다른 사용자가 직접 제어 해야 합니다.  
   
 ## <a name="exposing-a-property"></a>속성을 노출합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 포트 모양의 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eedc86aaa0c711ee847f82bf008164d2f003bb3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcb6ad091d0b65e5b368f5822659a909e9f4c42a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290708"
 ---
 # <a name="properties-of-port-shapes"></a>포트 모양의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [속성의 Port 셰이프](https://docs.microsoft.com/visualstudio/modeling/properties-of-port-shapes)합니다.  
-  
 생성된 된 디자이너에서 도메인 클래스를 나타냅니다 port 셰이프를 사용할 수 있습니다.  
   
  자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.  

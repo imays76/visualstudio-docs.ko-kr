@@ -1,7 +1,7 @@
 ---
 title: 그래픽 상태 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b53745cc7a166d32633897c65888f4018f6068
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f422c60d568834c585b0ea9a74332b838ee556c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307627"
 ---
 # <a name="graphics-state"></a>그래픽 상태
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [그래픽 상태](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-state)합니다.  
-  
 Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현재 이벤트 시간에 활성화된 그래픽 상태를 이해하는 데 도움이 됩니다.  
   
 ## <a name="understanding-the-state-window"></a>상태 창 이해  

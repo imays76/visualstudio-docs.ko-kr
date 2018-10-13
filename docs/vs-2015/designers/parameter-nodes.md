@@ -1,7 +1,7 @@
 ---
 title: 매개 변수 노드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bed941a35af21b78ea5159a218ccd36d2ff5f1e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276292"
 ---
 # <a name="parameter-nodes"></a>매개 변수 노드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [매개 변수 노드](https://docs.microsoft.com/visualstudio/designers/parameter-nodes)합니다.  
-  
 셰이더 디자이너에서 매개 변수 노드는 그리기별로 앱에 의해 제어되는 셰이더에 대한 입력(예: 재질 속성, 방향성 광원, 카메라 위치, 시간)을 나타냅니다. 각 그리기 호출에서 이러한 매개 변수를 변경할 수 있으므로 같은 셰이더를 사용해 개체를 다른 모양으로 표시할 수 있습니다.  
   
 ## <a name="parameter-node-reference"></a>매개 변수 노드 참조  
