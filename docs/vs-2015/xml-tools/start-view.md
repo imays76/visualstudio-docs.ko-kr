@@ -1,7 +1,7 @@
 ---
 title: 시작 뷰 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c85849089351f016b43988f3bf778cd66ed9a166
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f3ae39fa1b90140794b7dd4c571dabed2c12d95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550167"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234249"
 ---
 # <a name="start-view"></a>시작 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시작 뷰](https://docs.microsoft.com/visualstudio/xml-tools/start-view)합니다.  
-  
   
 시작 뷰는 XML 스키마(XSD) 디자이너의 시작 지점입니다. 새 XSD 파일을 만들면 처음에 시작 뷰가 보입니다.  
   

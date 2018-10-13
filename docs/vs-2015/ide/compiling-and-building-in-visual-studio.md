@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 컴파일 및 빌드 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec3a74d911a32d7e7f869ee099c70914cafe9a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65fbe40a3609b0729bdc376196940f2adb670a2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565293"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229231"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Visual Studio에서 컴파일 및 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 컴파일 및 빌드](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio)합니다.  
-  
 Visual Studio를 사용하여 개발 주기 동안 잦은 간격으로 응용 프로그램을 빌드하고 어셈블리 및 실행 가능 프로그램을 만들 수 있습니다. 코드를 자주 빌드하면 잘못된 구문, 맞춤법 오류가 있는 키워드 및 형식 불일치와 같은 컴파일 타임 오류를 조기에 식별할 수 있습니다. 디버그 버전의 코드를 자주 빌드하고 실행하면 논리 오류 및 의미 오류와 같은 런타임 오류도 찾아 해결할 수 있습니다.  
   
  프로젝트 또는 솔루션을 완전히 개발하고 충분히 디버깅한 후에는 릴리스 빌드에서 해당 구성 요소를 컴파일할 수 있습니다. 기본적으로 릴리스 빌드는 디버그 버전보다 작고 빠르게 실행되도록 최적화 및 디자인됩니다. 자세한 내용은 [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.  

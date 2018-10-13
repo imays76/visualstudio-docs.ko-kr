@@ -1,7 +1,7 @@
 ---
 title: 배포를 관리 하는 것에 대 한 프로젝트 구성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54ed242f0992e84a43315579c8af4017de21ef8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc39271d235db9351edf4307c838519ce89748be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230460"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>배포 관리를 위한 프로젝트 구성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [배포 관리에 대 한 프로젝트 구성을](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-managing-deployment)합니다.  
-  
 배포는 물리적으로 디버깅 및 설치에 대 한 예상 되는 위치를 빌드 프로세스에서 출력 항목을 이동 하는 행위. 예를 들어, 웹 응용 프로그램을 로컬 컴퓨터에서 작성 및 서버에 배치 될 수 있습니다.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트는 두 가지 방법을 지원 배포에 포함 될 수 있습니다.  

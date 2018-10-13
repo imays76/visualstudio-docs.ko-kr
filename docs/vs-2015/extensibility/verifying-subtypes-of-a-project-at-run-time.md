@@ -1,7 +1,7 @@
 ---
 title: 런타임에 프로젝트의 하위 형식 확인 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e77fa60687ecfebdae8555b516af678cf3966211
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8aa68670b82fdba0f189cfb8bf2a06db15f33b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215061"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>런타임에 프로젝트의 하위 형식 확인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [런타임에 프로젝트의 하위 형식 확인](https://docs.microsoft.com/visualstudio/extensibility/verifying-subtypes-of-a-project-at-run-time)합니다.  
-  
 사용자 지정 프로젝트 하위 형식에 따라 달라 지는 VSPackage를 검색할 하위 형식 없으면 정상적으로 실패 하는 하위 유형을 논리를 포함 해야 합니다. 다음 절차에는 지정 된 하위 있는지 확인 하는 방법을 보여 줍니다.  
   
 ### <a name="to-verify-the-presence-of-a-subtype"></a>하위 형식이 있는지 확인 하려면  

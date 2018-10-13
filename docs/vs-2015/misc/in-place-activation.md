@@ -1,7 +1,7 @@
 ---
 title: 내부 활성화 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: douge
-ms.openlocfilehash: c41ac709efd980dc1f49307d4fdffb465c9c627e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232195"
 ---
 # <a name="in-place-activation"></a>내부 활성화
 편집기 뷰에서 ActiveX 또는 기타 활성 컨트롤을 호스트하는 경우 바로 활성화 모델을 사용하여 ActiveX 컨트롤 또는 활성 문서 데이터 개체로 편집기 뷰를 구현해야 합니다.  
@@ -51,7 +51,7 @@ ms.locfileid: "47554018"
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|보기|포함 개체가 컨테이너에 기본 기능을 제공하고 통신하는 주요 수단입니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>|보기|내부 개체의 활성화 및 비활성화를 관리하고 표시할 내부 개체 크기를 결정합니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceObject>|보기|내부 개체, 연결된 응용 프로그램의 가장 바깥쪽 프레임 창 및 포함 개체를 포함하는 응용 프로그램의 문서 창 간에 직접 통신 채널을 제공합니다.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|보기|ActiveX 개체를 구현합니다. 메서드에 <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> 고 `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` 별도 문서 데이터 및 보기는 IDE에서 사용 되지 않습니다.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|보기|ActiveX 개체를 구현합니다. 문서 데이터 및 보기를 분리하는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> 및 `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` 의 메서드는 IDE에서 사용되지 않습니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|보기/데이터|문서 데이터 개체, 문서 보기 개체 또는 둘 다가 명령 처리에 참여할 수 있게 합니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|보기|상태 표시줄 업데이트를 사용하도록 설정합니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|보기|도구 상자에 항목을 추가할 수 있게 합니다.|  

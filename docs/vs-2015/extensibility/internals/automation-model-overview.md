@@ -1,7 +1,7 @@
 ---
 title: 자동화 모델 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fdce23e892fe2fa14dc7f24f95d5744be2c67c39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551417"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235692"
 ---
 # <a name="automation-model-overview"></a>자동화 모델 개요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [자동화 모델 개요](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-model-overview)합니다.  
-  
 자동화 모델 개체는 Visual Studio 추가 기능에서 이나 확장을 작성할 수 있습니다 집합이 이루어져 있습니다. 추가 기능에 Visual Studio 환경을 조작 하 고 일반적인 작업을 자동화할 수 있는 응용 프로그램. Visual Studio 확장 Visual Studio 구성 요소를 사용자 지정 만들거나 텍스트 편집기와 같은 표준 구성 요소의 기능을 추가할 수 있습니다.  
   
 ## <a name="objects-in-the-automation-model"></a>자동화 모델의 개체  

@@ -1,7 +1,7 @@
 ---
 title: 하위 항목(XElement 동적 속성) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29f73bb664e9664ac2a3c56942c86949c9e2bba2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a21527162a8204ec47c5af9630caf3041d8e220
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229933"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>하위 항목(XElement 동적 속성)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Descendants (XElement 동적 속성)](https://docs.microsoft.com/visualstudio/designers/descendants-xelement-dynamic-property)합니다.  
-  
 지정한 확장된 이름과 일치하는 현재 요소의 하위 요소를 모두 검색하는 데 사용되는 인덱서를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  

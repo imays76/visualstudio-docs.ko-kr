@@ -1,7 +1,7 @@
 ---
 title: 예외 후 실행 계속 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a71d71622809dfaeea399355e490fe4e69b52b9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9e99a29c097bdf5e23bdb8f4955cd1ccc7ec19e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230128"
 ---
 # <a name="continuing-execution-after-an-exception"></a>예외 후 실행 계속
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [예외가 후 계속 실행](https://docs.microsoft.com/visualstudio/debugger/continuing-execution-after-an-exception)합니다.  
-  
 예외로 인해 디버거에서 실행이 중단되면 대화 상자가 나타납니다. Visual Basic 또는 C#에 대해 확인할 수 있습니다 합니다 [예외 도우미](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) 기본적으로 대화 상자. C + +에 대 한 이전 나타납니다 **예외** 대화 상자. Visual Basic 또는 C#을 사용 하는 경우 있지만 사용 하지 않도록 설정한 합니다 **예외 도우미** 에 **옵션** 대화 상자에서 표시 됩니다는 **예외** 대화 상자.  
   
  경우는 **예외 도우미** 하거나 **예외** 대화 상자가 나타나면 예외를 발생 시킨 문제를 해결 하는 데 할 수 있습니다.  

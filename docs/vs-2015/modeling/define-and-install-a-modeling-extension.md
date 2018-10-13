@@ -1,7 +1,7 @@
 ---
 title: 모델링 확장 정의 및 설치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234405"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>모델링 확장 정의 및 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [정의 하 고 모델링 확장을 설치](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension)합니다.  
-  
 Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 있습니다. 이러한 방식으로 사용자 고유의 요구에 따라 다이어그램 및 모델을 조정할 수 있습니다. 예를 들어 메뉴 명령, UML 프로필, 유효성 검사 제약 조건 및 도구 상자 항목을 정의할 수 있습니다. 단일 확장에서 여러 개의 구성 요소를 정의할 수 있습니다. [VSIX(Visual Studio Integration Extension)](http://go.microsoft.com/fwlink/?LinkId=160780)(영문) 형식으로 이러한 확장을 다른 Visual Studio 사용자에게 배포할 수도 있습니다. Visual Studio에서 VSIX 프로젝트를 사용하여 VSIX를 만들 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  참조 [요구 사항](../modeling/extend-uml-models-and-diagrams.md#Requirements)합니다.  
   
- 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
+ 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
 ## <a name="creating-a-modeling-extension-solution"></a>모델링 확장 솔루션 만들기  
  모델링 확장을 정의하려면 다음 프로젝트를 포함하는 솔루션을 만들어야 합니다.  
@@ -102,9 +100,9 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
   
 #### <a name="to-run-an-extension-during-its-development"></a>개발 중에 확장을 실행하려면  
   
-1.  에 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **디버그** 메뉴에서 선택 **디버깅 시작**합니다.  
+1.  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **디버그** 메뉴에서 **Start 디버그ging**을 선택합니다.  
   
-     프로젝트가 빌드되고, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]의 새 인스턴스가 실험적 모드에서 시작됩니다.  
+     프로젝트가 빌드되고, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 의 새 인스턴스가 실험적 모드에서 시작됩니다.  
   
     -   또는 **디버깅하지 않고 시작**을 선택할 수 있습니다. 이렇게 하면 프로그램을 시작하는 데 걸리는 시간이 줄어듭니다.  
   

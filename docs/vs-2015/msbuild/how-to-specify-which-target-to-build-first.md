@@ -1,7 +1,7 @@
 ---
 title: '방법: 먼저 빌드할 대상 지정 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28fa9137166c19a81aad2c75204400639916e472
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3978d72372f2aa9a0c57184083c67476886016aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554947"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232117"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>방법: 먼저 빌드할 대상 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 대상 지정 먼저 빌드할](https://docs.microsoft.com/visualstudio/msbuild/how-to-specify-which-target-to-build-first)합니다.  
-  
   
 프로젝트 파일에는 프로젝트 빌드 방식을 정의하는 하나 이상의 `Target` 요소가 포함됩니다. 프로젝트 파일에 `DefaultTargets` 특성, `InitialTargets` 특성이 포함되거나 대상이 명령줄에서 **/target** 스위치를 사용하여 지정된 경우가 아니면 [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) 엔진은 발견한 첫 번째 프로젝트 및 모든 종속성을 빌드합니다.  
   

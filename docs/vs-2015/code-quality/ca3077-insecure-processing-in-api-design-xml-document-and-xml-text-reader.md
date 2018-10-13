@@ -1,7 +1,7 @@
 ---
 title: 'CA3077: API 디자인, XML 문서 및 XML 텍스트 판독기의 안전 하지 않은 처리 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 175d655c2283dfe764564d42b6893b12d1f09e22
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e70b31b86d8eb19f2d6dd437feea34a499ed7747
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233536"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: API 디자인, XML 문서 및 XML 텍스트 판독기의 안전하지 않은 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA3077: API 디자인, XML 문서 및 XML 텍스트 판독기의 안전 하지 않은 처리](https://docs.microsoft.com/visualstudio/code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader)합니다.
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
@@ -36,7 +33,7 @@ ms.locfileid: "47591883"
  XMLDocument 및 XMLTextReader에서 파생된 API를 디자인할 경우 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>에 주의해야 합니다.  외부 엔터티 소스를 참조하거나 확인할 때 안전하지 않은 DTDProcessing 인스턴스를 사용하거나 XML에서 안전하지 않은 값을 설정하면 정보가 공개될 수 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- [문서 유형 정의 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) 정의 된 대로 XML 파서는 문서의 유효성을 확인할 수 있습니다 하는 두 가지 방법 중 하나인 합니다 [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)합니다. 이 규칙은 속성 및 개발자 가능성에 대 한 경고를 신뢰할 수 없는 데이터가 허용 되는 인스턴스에 찾아 [정보 공개](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 야기할 수 있는 위협 [서비스 거부 (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 공격입니다. 다음 경우에 이 규칙이 트리거됩니다.
+ [DTD(문서 종류 정의)](https://msdn.microsoft.com/library/aa468547.aspx) 는 XML 파서가  [W3C(World Wide Web Consortium) XML(Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)에 정의된 대로 문서의 유효성을 확인할 수 있는 두 가지 방법 중 하나입니다. 이 규칙은 신뢰할 수 없는 데이터가 허용되는 속성 및 인스턴스를 찾아 [DoS(서비스 거부)](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 공격을 야기할 수 있는 잠재적인 [Information Disclosure](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 위협을 개발자에게 경고합니다. 다음 경우에 이 규칙이 트리거됩니다.
 
 -   <xref:System.Xml.XmlDocument> 또는 <xref:System.Xml.XmlTextReader> 클래스는 DTD 처리를 위해 기본 해결 프로그램 값을 사용 합니다.
 

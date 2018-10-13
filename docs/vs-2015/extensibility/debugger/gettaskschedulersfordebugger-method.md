@@ -1,7 +1,7 @@
 ---
 title: GetTaskSchedulersForDebugger 메서드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d2bc798575cafbeb04837c3065d69b76ee872df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c763499a053119340ca6827d3190aa4163af4fe0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552084"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229959"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 메서드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [GetTaskSchedulersForDebugger 메서드](https://docs.microsoft.com/visualstudio/extensibility/debugger/gettaskschedulersfordebugger-method)합니다.  
-  
 모든 배열을 검색 <xref:System.Threading.Tasks.TaskScheduler> 현재 활성화 되어 있는 개체입니다.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **어셈블리:** mscorlib (mscorlib.dll)  
   

@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 Service1 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0aebd8142d5ceed2acb113dbfaec5904271d4468
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4177507e8633fa5596da07f5df349df28a66f2a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555006"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230598"
 ---
 # <a name="registering-a-legacy-language-service"></a>레거시 언어 서비스 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 Service1 등록](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service1)합니다.  
-  
 VSPackage에서 제공 되는 언어 서비스에서 관리 되는 패키지 프레임 워크에 MPF (), (참조 [Vspackage](../../extensibility/internals/vspackages.md))으로 등록 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 레지스트리 키 및 항목을 추가 하 여 합니다. 이 등록 프로세스는 부분적으로 설치 하는 동안 및 런타임 시 일부에서 수행 됩니다.  
   
 ## <a name="register-the-language-service-by-using-attributes"></a>특성을 사용 하 여 언어 서비스 등록  

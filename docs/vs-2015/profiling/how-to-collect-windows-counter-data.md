@@ -1,7 +1,7 @@
 ---
 title: '방법: Windows 카운터 데이터 수집 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f0ace1d920cdd4f2c503c608a1695b04c1251f2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dfaed19949dac532949e1d4a10bb744ec464580
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227333"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>방법: Windows 카운터 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Windows 카운터 데이터 수집](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-windows-counter-data)합니다.  
-  
 Windows 카운터는 프로파일링 중에 설정된 간격으로 수집할 수 있는 시스템 성능 카운터입니다. 프로파일링 도구 보고서의 표시 뷰에서 각 수집 간격에 대한 행에는 **AutoMark** 레이블이 지정됩니다. 행에는 해당 간격으로 성능 카운터 값을 설명하는 열이 포함됩니다. 두 개의 특정 표시 간에 경과한 기간으로 분석을 제한하려면 표시를 선택하고, 마우스 오른쪽 단추를 클릭하고 나서, 바로 가기 메뉴에서 **필터링 기준** ->  **표시**를 선택합니다.  
   
  **요구 사항**  

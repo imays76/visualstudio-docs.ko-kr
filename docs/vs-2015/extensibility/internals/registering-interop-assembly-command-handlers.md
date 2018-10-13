@@ -1,7 +1,7 @@
 ---
 title: Interop 어셈블리 명령 처리기를 등록 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2288c1692f50e3937bbfa71502a0572a1747c976
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea0ea8a8374f63335e3e5b2a7c00bdb8c3084d11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234974"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Interop 어셈블리 명령 처리기를 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Interop 어셈블리 명령 처리기 등록](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-interop-assembly-command-handlers)합니다.  
-  
 VSPackage를 등록 해야 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 는 통합된 개발 환경 (IDE)는 해당 명령을 올바르게 라우팅합니다.  
   
- 수동 편집 하거나 등록자 (.rgs) 파일을 사용 하 여 레지스트리를 업데이트할 수 있습니다. 자세한 내용은 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)합니다.  
+ 수동 편집 하거나 등록자 (.rgs) 파일을 사용 하 여 레지스트리를 업데이트할 수 있습니다. 자세한 내용은 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)을 참조하십시오.  
   
  관리 패키지 프레임 워크 (MPF)를 통해이 기능을 제공 합니다 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 클래스입니다.  
   

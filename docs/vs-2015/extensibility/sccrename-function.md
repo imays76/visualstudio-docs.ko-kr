@@ -1,7 +1,7 @@
 ---
 title: SccRename 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 455b49790d0d7a6ba84b7d8c39d84f6e4a7ed6a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ef59da920e8011e5b2a23e14dcd58cdc07365d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232214"
 ---
 # <a name="sccrename-function"></a>SccRename 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccRename 함수](https://docs.microsoft.com/visualstudio/extensibility/sccrename-function)합니다.  
-  
 이 함수에는 소스 제어 시스템에서 파일을 이름을 바꿉니다.  
   
 ## <a name="syntax"></a>구문  
