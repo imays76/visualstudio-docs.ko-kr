@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에 대한 팁과 요령 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 353ab484ae10070abe80270ec2dd210d355310a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30412c96ee0acf23e74125151b5d7d3050ab9af7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554295"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237486"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio에 대한 유용한 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio를 위한 팁과 트릭](https://docs.microsoft.com/visualstudio/ide/tips-and-tricks-for-visual-studio)합니다.  
-  
 이 항목에 나온 바로 가기를 사용하여 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]에서 쉽게 이동할 수 있습니다. 일반적인 내용은 [\<PAVEOVER> Visual Studio의 바로 가기 키](http://msdn.microsoft.com/en-us/2e15e27f-296b-4e9c-91e6-d91ea0110a67)를 참조하세요. 접근성을 위해 Visual Studio를 최적화하는 방법에 대한 자세한 내용은 [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)을 참조하세요.  
   
 -   [창 관리](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)  

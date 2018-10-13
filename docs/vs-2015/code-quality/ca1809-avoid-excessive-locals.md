@@ -1,7 +1,7 @@
 ---
 title: ': Ca1809 과도 한 로컬 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c41836e2a7e7e5530d83ff0eaf854b88de42f38f
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1e019c79138ab635e056852df426c5060d46da0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223897"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: 불필요한 로컬 항목을 사용하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1809: 불필요 한 로컬 항목 방지](https://docs.microsoft.com/visualstudio/code-quality/ca1809-avoid-excessive-locals)합니다.
-
 |||
 |-|-|
 |TypeName|AvoidExcessiveLocals|

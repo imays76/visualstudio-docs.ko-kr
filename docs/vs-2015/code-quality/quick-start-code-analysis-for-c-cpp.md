@@ -1,7 +1,7 @@
 ---
 title: '빠른 시작: c-c + +에 대 한 코드 분석 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97e3aa842a2ebb19492370836058ec2236a44564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552576"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241776"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>퀵 스타트: C/C++용 코드 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [빠른 시작: C/c + + 용 코드 분석](https://docs.microsoft.com/visualstudio/code-quality/quick-start-code-analysis-for-c-cpp)합니다.  
-  
 C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 응용 프로그램의 품질을 향상시킬 수 있습니다. 이 테스트를 통해 발견 하기 어려운 결함 또는 프로그래밍 관행의 위반의 일반적인 문제를 찾을 수 있습니다. 코드 분석에서는 올바르지만 해당 코드를 사용하는 당사자나 다른 사용자에게 문제를 일으킬 수 있는 특정 코드 패턴을 검색하므로 코드 분석 경고는 컴파일러 오류 및 경고와 다릅니다.  
   
 ## <a name="in-this-topic"></a>항목 내용  

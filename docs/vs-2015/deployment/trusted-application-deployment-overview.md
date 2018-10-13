@@ -1,7 +1,7 @@
 ---
 title: 신뢰할 수 있는 응용 프로그램 배포 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: afcfc0d2a494b27359de041b13a8e9595ede1bc7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215919"
 ---
 # <a name="trusted-application-deployment-overview"></a>신뢰할 수 있는 응용 프로그램 배포 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Trusted Application Deployment Overview](https://docs.microsoft.com/visualstudio/deployment/trusted-application-deployment-overview)합니다.  
-  
 이 항목에서는 신뢰할 수 있는 응용 프로그램 배포 기술을 사용하여, 관리자 권한이 있는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 배포하는 방법에 대한 개요를 제공합니다.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 기술에 포함된 신뢰할 수 있는 배포를 사용하면 규모에 관계없이 모든 조직이 사용자에게 메시지를 표시하지 않고 더 안전하고 더 보호된 방식으로 관리되는 응용 프로그램에 대한 추가적인 권한을 더 쉽게 부여할 수 있습니다. 신뢰할 수 있는 응용 프로그램 배포를 통해 조직은 Authenticode 인증서를 사용하여 식별된 신뢰할 수 있는 게시자 목록이 클라이언트 컴퓨터에 포함되도록 구성할 수 있습니다. 따라서 이들 신뢰할 수 있는 게시자의 하나가 서명한 모든 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램은 더 높은 수준의 신뢰를 받습니다.  
@@ -90,12 +88,12 @@ ms.locfileid: "47549503"
 -   CertMgr.exe - Internet Explorer의 구성 요소이므로 Windows 98 및 모든 이후 버전에 있습니다. 자세한 내용은 [Certmgr.exe (인증서 관리자 도구)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)합니다.  
   
 ### <a name="create-a-clickonce-application"></a>ClickOnce 응용 프로그램 만들기  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램은 응용 프로그램을 설명하고 설치 매개 변수를 제공하는 매니페스트 파일과 결합된 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 클라이언트 응용 프로그램입니다. 프로그램으로 전환할 수는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 를 사용 하 여 응용 프로그램을 **게시** 명령을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 또는 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]에 포함된 도구를 사용하여 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포에 필요한 모든 파일을 생성할 수 있습니다. 자세한 단계 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 참조 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램은 응용 프로그램을 설명하고 설치 매개 변수를 제공하는 매니페스트 파일과 결합된 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 클라이언트 응용 프로그램입니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 에서 **게시** 명령을 사용하여 프로그램을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]응용 프로그램으로 전환할 수 있습니다. 또는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 에 포함된 도구를 사용하여 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]배포에 필요한 모든 파일을 생성할 수 있습니다. 자세한 단계 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 참조 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)합니다.  
   
  신뢰할 수 있는 응용 프로그램 배포는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에 관련되고 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램에서만 사용할 수 있습니다.  
   
 ### <a name="sign-the-deployment"></a>배포에 서명  
- 인증서를 가져오고 나서 이 인증서를 사용하여 배포에 서명해야 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 게시 마법사를 사용하여 응용 프로그램을 배포할 경우 인증서를 직접 지정하지 않았다면 마법사가 자동으로 테스트 인증서를 생성합니다. 사용할 수도 있습니다는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 디자이너 창을 CA가 제공한 인증서를 제공 합니다.  [방법: 게시 마법사를 사용하여 ClickOnce 응용 프로그램 게시](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) 또는 [방법: 게시 마법사를 사용하여 ClickOnce 응용 프로그램 게시](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))를 참조하세요.  
+ 인증서를 가져오고 나서 이 인증서를 사용하여 배포에 서명해야 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 게시 마법사를 사용하여 응용 프로그램을 배포할 경우 인증서를 직접 지정하지 않았다면 마법사가 자동으로 테스트 인증서를 생성합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 디자이너 창을 사용하여 CA가 제공한 인증서를 제공할 수도 있습니다.  [방법: 게시 마법사를 사용하여 ClickOnce 응용 프로그램 게시](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) 또는 [방법: 게시 마법사를 사용하여 ClickOnce 응용 프로그램 게시](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))를 참조하세요.  
   
 > [!CAUTION]
 >  테스트 인증서를 사용하여 응용 프로그램을 배포하는 것은 권장하지 않습니다.  

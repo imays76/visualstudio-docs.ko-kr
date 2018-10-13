@@ -1,7 +1,7 @@
 ---
 title: 네이티브 개체의 사용자 지정 뷰 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab7343a13d1c5182e207728a2d4772b6704789ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23a6b08bcc592284f8cb2381abe1967d50428873
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236537"
 ---
 # <a name="create-custom-views-of-native-objects"></a>네이티브 개체의 사용자 지정 뷰 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [네이티브 개체의 사용자 지정 뷰 만들기](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects)합니다.  
-  
 Visual Studio Natvis 프레임워크를 사용하면 Visual Studio에서 **조사식**, **지역**, **데이터 팁** 창 같은 디버거 변수 창에 네이티브 형식을 표시하는 방법을 사용자 지정할 수 있습니다.  
   
  Natvis는 이전 버전의 Visual Studio에서 사용된 **autoexp.dat** 파일을 대체하며 XML 구문, 보다 효과적인 진단 기능, 버전 관리 기능, 다중 파일 지원을 제공합니다.  
@@ -356,7 +354,7 @@ Visual Studio Natvis 프레임워크를 사용하면 Visual Studio에서 **조�
 -   `Expand` 노드가 아래에 자식 노드 없이 지정된 경우 형식을 디버거 창에서 확장할 수 없습니다.  
   
 ####  <a name="BKMK_Item_expansion"></a> 항목 확장  
- `Item` 요소는 `Expand` 노드에서 사용되는 가장 기본적이면서 일반적인 요소입니다. `Item` 은 단일 자식 요소를 정의합니다. 예를 들어 `CRect` , `top`, `left`및 `right`을 해당 필드로 가지고 있는 `bottom` 클래스와 다음과 같은 시각화 항목이 있다고 가정해 보겠습니다.  
+ `Item` 요소는 `Expand` 노드에서 사용되는 가장 기본적이면서 일반적인 요소입니다. `Item` 은 단일 자식 요소를 정의합니다. 예를 들어 `CRect`, `top`, `left` 및 `right`을 해당 필드로 가지고 있는 `bottom` 클래스와 다음과 같은 시각화 항목이 있다고 가정해 보겠습니다.  
   
 ```xml  
 <Type Name="CRect">  

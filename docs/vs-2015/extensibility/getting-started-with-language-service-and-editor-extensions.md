@@ -1,7 +1,7 @@
 ---
 title: 언어 서비스 및 편집기 확장 시작 하기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d2ca0b3a4c1128c316ca2967033752ab45799648
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227008"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>언어 서비스 및 편집기 확장 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [언어 서비스 및 편집기 확장 시작](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-language-service-and-editor-extensions)합니다.  
-  
 고유한 프로그래밍 언어 또는 모든 콘텐츠 형식에 개요, 중괄호 일치, IntelliSense 및 light bulbs와 같은 언어 서비스 기능을 추가 하려면 편집기 확장을 사용할 수 있습니다. Visual Studio 편집기에서 색 지정, 여백, 프로그램 및 기타 시각적 요소 예를 들어 텍스트의 동작과 모양을 사용자 지정할 수도 있습니다. 또한 고유한 형식의 콘텐츠를 정의 하 고 콘텐츠에 표시 되는 텍스트 보기의 동작과 모양을 지정할 수 있습니다.  
   
  편집기 확장 작성을 시작, Visual Studio SDK의 일부로 설치 되는 편집기 프로젝트 템플릿을 사용 합니다. Visual Studio SDK는 Vspackage를 사용 하 여 또는 Framework MEF (Managed Extensibility)를 사용 하 여 Visual Studio 확장 개발을 쉽게 해 주는 도구 집합을 다운로드 합니다.  

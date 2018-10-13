@@ -1,7 +1,7 @@
 ---
 title: IDebugExpression2::EvaluateAsync | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d40d619c0e26b9b7f099972a8559791b6686044
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4369375991010264dc3ec5e9ea6b62f6991470f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229296"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugExpression2::EvaluateAsync](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpression2-evaluateasync)합니다.  
-  
 이 메서드는 비동기적으로 식을 계산 합니다.  
   
 ## <a name="syntax"></a>구문  

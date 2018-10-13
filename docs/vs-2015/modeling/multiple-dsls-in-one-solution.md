@@ -1,7 +1,7 @@
 ---
 title: 하나의 솔루션에 여러 dsl 포함 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 341f5f40ff5c7274de9bbaf977464b15a56315a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ee5bb3213fd7033bb5e3c12f6f9bf8b20c69410f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229478"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>하나의 솔루션에 여러 DSL 포함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [하나의 솔루션에 여러 dsl 포함](https://docs.microsoft.com/visualstudio/modeling/multiple-dsls-in-one-solution)합니다.  
-  
 여러 DSL이 함께 설치되도록 단일 솔루션의 일부분으로 패키지할 수 있습니다.  
   
  다양한 기술을 통해 여러 DSL을 통합할 수 있습니다. 자세한 내용은 참조 하세요. [Visual Studio Modelbus를 사용 하 여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md) 하 고 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) 및 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)합니다.  

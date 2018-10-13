@@ -1,7 +1,7 @@
 ---
 title: 활동 뷰 (레거시) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ef7aaa042ea358ecdf3d45b6ee75dd14cf117a01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5fb8368228118b210865b1a351d12b1b5da4b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229316"
 ---
 # <a name="activity-views-legacy"></a>활동 뷰(레거시)
 [!INCLUDE[wf](../includes/wf-md.md)]에서 제공하는 많은 활동은 워크플로를 구성하는 데 사용되며 이러한 활동에는 레거시 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에서 사용할 수 있는 몇 가지 디자인 뷰가 있습니다. 활동 디자이너를 끌어다 놓으면 합니다 **도구 상자** 디자인 화면으로 이동 하 고 그 후 작업을 선택할 때마다 사용 하 여 다른 디자인 뷰 간을 전환할 수 있습니다는 **워크플로**메뉴 또는 선택된 된 작업을 마우스 오른쪽 단추로 클릭 합니다. 또한 선택된 항목의 이름 위로 포인터를 옮기면 드롭다운 탭 집합이 나타나 여러 뷰 사이를 전환할 때 사용할 수 있습니다.  

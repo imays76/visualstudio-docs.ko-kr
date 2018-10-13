@@ -1,7 +1,7 @@
 ---
 title: 사용법 경고 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: dd793812e8b751d8fd3d03ef728a504855b797a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 01c6ea3734029879037154e9bad2224f6154ff54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543542"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238162"
 ---
 # <a name="usage-warnings"></a>사용법 경고
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용법 경고](https://docs.microsoft.com/visualstudio/code-quality/usage-warnings)합니다.  
-  
 사용량 경고는.NET Framework의 적절 한 사용을 지원합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

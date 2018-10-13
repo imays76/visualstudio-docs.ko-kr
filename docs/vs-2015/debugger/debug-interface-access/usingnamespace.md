@@ -1,7 +1,7 @@
 ---
 title: UsingNameSpace | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbedc0fa1c718bf45472fa29309fa5d460c1c001
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fcbd1df6ca9bfa014b6a53dc3fcc6e2455858b2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232916"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UsingNameSpace](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/usingnamespace)합니다.  
-  
 일부 기호 네임 스페이스에 의해 참조 될 수 있습니다 및 이후에로 식별 되었을 것을 `SymTagUsingNameSpace` 태그입니다.  
   
 > [!NOTE]

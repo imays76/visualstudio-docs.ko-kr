@@ -1,7 +1,7 @@
 ---
 title: (VB, C#, c + + 및 XAML) Visual Studio에서 스토어 앱에 대 한 디버깅 세션을 시작 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -39,18 +39,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 80394d5a778ec4202a41e30d895280f75aaa61a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b87c4ab58c103d1ccbcf20b8b49b64d9f1aec85e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241295"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Visual Studio에서 스토어 앱의 디버깅 세션 시작(VB, C#, C++ 및 XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [(VB, C#, c + + 및 XAML) Visual Studio에서 스토어 앱에 대 한 디버깅 세션을 시작](https://docs.microsoft.com/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  이 항목에서는 XAML과 Visual C++, Visual C# 또는 Visual Basic으로 작성된 스토어 앱에서 디버깅 세션을 시작하는 방법을 설명합니다. 응용 프로그램 디버깅에는 디버깅 세션 구성과 응용 프로그램 시작 방법 선택이 모두 포함됩니다.  

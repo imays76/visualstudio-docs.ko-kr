@@ -1,7 +1,7 @@
 ---
 title: InitializeCorrelation 활동 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 314b5de716017d4c5c40653eed678626f00c20ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9dd9d622785fbfebd8560daf9bf459716381ddbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234028"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 활동 디자이너
 합니다 **InitializeCorrelation** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.ServiceModel.Activities.InitializeCorrelation> 보내거나 받기 전에 메시지 간 상관 관계를 설정 하는 데 사용 되는 작업입니다.  

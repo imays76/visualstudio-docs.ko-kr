@@ -1,7 +1,7 @@
 ---
 title: 새로운&#39;소스 제어의 새로운 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f098c9f46d649a8b93c29eff57c5606438d3e399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fac4b901c7e9b3c5a59e125a9480b21703b19a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553155"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217057"
 ---
 # <a name="what39s-new-in-source-control"></a>새로운&#39;소스 제어 기능
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [어떤&#39;소스 제어의](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-source-control)합니다.  
-  
 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 소스 제어 VSPackage를 구현 하 여 긴밀히 통합된 원본 제어 솔루션을 제공할 수 있습니다. 이 섹션에서는 소스 제어 Vspackage의 기능을 설명 하 고 구현 하는 단계 개요를 제공 합니다.  
   
 ## <a name="the-source-control-vspackage"></a>소스 제어 VSPackage  

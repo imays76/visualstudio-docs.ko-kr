@@ -1,7 +1,7 @@
 ---
 title: '방법: 배포 업데이트를 위한 대체 위치를 지정 합니다. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a0db7eddc38a2b2ab3581ba2b1ff04c90e2adb77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c992feab2b31ffebf07dcea36bc5bd5cfddc6eab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565173"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228802"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>방법: 배포 업데이트를 위한 대체 위치 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 배포 업데이트를 위한 대체 위치를 지정](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-an-alternate-location-for-deployment-updates)합니다.  
-  
 설치할 수 있습니다 프로그램 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] CD 또는 파일 공유에서 처음에 응용 프로그램 이지만 응용 프로그램 웹에 대 한 주기적인 업데이트를 확인 해야 합니다. 응용 프로그램을 처음 설치한 후 웹에서 자동으로 업데이트할 수 있도록 배포 매니페스트에 업데이트에 대 한 대체 위치를 지정할 수 있습니다.  
   
 > [!NOTE]

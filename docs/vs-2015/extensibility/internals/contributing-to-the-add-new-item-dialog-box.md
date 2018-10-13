@@ -1,7 +1,7 @@
 ---
 title: 기여 하는 새 항목 추가 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5fcbac8b9e26bcca5a588846c14972156761d5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7e9ce7df2adc05468a27de5f4eaac52c68a07e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541339"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215893"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 적용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [새 항목 추가 대화 상자에 영향을 주는](https://docs.microsoft.com/visualstudio/extensibility/internals/contributing-to-the-add-new-item-dialog-box)합니다.  
-  
 프로젝트 하위 형식에 대 한 항목의 전체 새 디렉터리를 제공할 수는 **새 항목 추가** 등록 하 여 대화 상자 **항목 추가** 에서 템플릿은 `Projects` 레지스트리 하위 키입니다.  
   
 ## <a name="registering-add-new-item-templates"></a>등록 새 항목 추가 템플릿  

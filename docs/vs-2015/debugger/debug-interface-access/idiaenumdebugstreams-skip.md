@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumdebugstreams:: Skip | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f88f8cad8db9965827b2fc424b2c1660924f65b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a76581ac5500fa8b150f43ff6d1febb9f1a63b89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218838"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiaenumdebugstreams:: Skip](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumdebugstreams-skip)합니다.  
-  
 디버그 스트림 열거형 시퀀스에서 지정 된 수를 건너뜁니다.  
   
 ## <a name="syntax"></a>구문  

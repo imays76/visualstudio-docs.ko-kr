@@ -1,7 +1,7 @@
 ---
 title: '연습: QuickInfo 도구 설명 표시 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b13dce0ea4f2bb54c802b63fd19f74b8173e94d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553840"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237655"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>연습: QuickInfo 도구 설명 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: QuickInfo 도구 설명 표시](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-quickinfo-tooltips)합니다.  
-  
 요약 정보 기능은 IntelliSense 메서드 시그니처를 표시 하는 메서드 이름 위로 포인터를 이동 하는 경우 사용자 설명 하며 QuickInfo 설명을 제공 하려면 식별자를 정의 하 고 콘텐츠를 표시 하는 도구 설명을 만드는 QuickInfo 같은 언어 기반 기능을 구현할 수 있습니다. 언어 서비스의 컨텍스트에서 QuickInfo를 정의할 수 있습니다 또는 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 바로 해당 형식에 대 한 요약 정보를 표시할 수 있습니다 또는 기존 콘텐츠 형식 (예: "text")에 대 한 요약 정보를 표시할 수 있습니다. 이 연습에서는 "text" 콘텐츠 형식에 대 한 요약 정보를 표시 하는 방법을 보여 줍니다.  
   
  이 연습의 QuickInfo 예제 메서드 이름을 위로 포인터를 이동할 때 도구 설명을 표시 합니다. 이 디자인에서는 이러한 네 가지 인터페이스를 구현 해야 합니다.  
@@ -50,7 +48,7 @@ ms.locfileid: "47553840"
   
 #### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `QuickInfoTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `QuickInfoTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -61,7 +59,7 @@ ms.locfileid: "47553840"
   
 #### <a name="to-implement-the-quickinfo-source"></a>QuickInfo 소스를 구현 하려면  
   
-1.  클래스 파일을 추가 하 고 이름을 `TestQuickInfoSource`입니다.  
+1.  클래스 파일을 추가하고 이름을 `TestQuickInfoSource`로 지정합니다.  
   
 2.  Microsoft.VisualStudio.Language.IntelliSense에 대 한 참조를 추가 합니다.  
   
@@ -160,7 +158,7 @@ ms.locfileid: "47553840"
      [!code-csharp[VSSDKQuickInfoTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#16)]
      [!code-vb[VSSDKQuickInfoTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#16)]  
   
-2.  가져오기는 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> 속성으로.  
+2.  <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>를 속성으로 가져옵니다.  
   
      [!code-csharp[VSSDKQuickInfoTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#17)]
      [!code-vb[VSSDKQuickInfoTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#17)]  

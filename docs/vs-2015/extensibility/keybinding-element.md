@@ -1,7 +1,7 @@
 ---
 title: KeyBinding 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dd7f56a91661850a3154ad09376340696513646
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808897b632353e47185cdbd5606d6f2eed1361b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231820"
 ---
 # <a name="keybinding-element"></a>KeyBinding 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [KeyBinding 요소](https://docs.microsoft.com/visualstudio/extensibility/keybinding-element)합니다.  
-  
 KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.  
   
  명령에는 상호 연결 된 단일 및 이중 키 바인딩을 가질 수 있습니다. 단일 키 바인딩의 예로 CTRL + S에 대 한 합니다 **저장할** 명령입니다. 이중 키 바인딩을 두 개의 연속 키 조합의 명령을 트리거할 필요 합니다. 이중 키 바인딩을 예로 CTRL + K, CTRL + K를 책갈피를 설정 합니다.  

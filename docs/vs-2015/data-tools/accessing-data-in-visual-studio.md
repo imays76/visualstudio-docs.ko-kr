@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 데이터 액세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 452e7dbc1f151bc39791e04d708eaf1cf870b4cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eacf075a0ba8689ff0cb5ca822d5cc8ca2f7ad1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233911"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio에서 데이터 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 데이터 액세스](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio)합니다.  
-  
   
 Visual Studio에서 거의 모든 데이터베이스 제품 또는 서비스의 형식으로 어디서 나 데이터에 연결 하는 응용 프로그램을 만들 수 있습니다-공용, 개인 또는 하이브리드 클라우드 또는 로컬 영역 네트워크에 로컬 컴퓨터에서.  
   

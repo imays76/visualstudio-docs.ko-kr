@@ -1,7 +1,7 @@
 ---
 title: GPU 작업 그래프 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5a0ef828b221219c3abae0e46ec40d21b6b045c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90e84dbe71b529aef3cfad20172f62d65f8871d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230206"
 ---
 # <a name="gpu-activity-graph"></a>GPU 작업 그래프
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [GPU 작업 그래프](https://docs.microsoft.com/visualstudio/profiling/gpu-activity-graph)합니다.  
-  
 동시성 시각화 도우미에서 GPU 작업 그래프는 시간 경과에 따라 사용 중인 DirectX 엔진의 개수로 측정되는 시스템의 DirectX 작업 수준을 표시합니다.  그래프에는 사용된 특정 엔진이 표시되지 않습니다.  엔진은 GPU 작업을 처리 중일 때 사용 중인 것으로 간주됩니다.  
   
 ## <a name="gpu-activity-graph-colors"></a>GPU 작업 그래프 색상  

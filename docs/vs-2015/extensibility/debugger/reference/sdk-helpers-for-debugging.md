@@ -1,7 +1,7 @@
 ---
 title: 디버깅을 위한 SDK 도우미 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 010827bc484ceed7c24c12759a2d6e610abad95e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4b058b4e3f831f4d8eddcbd816e4e35dbd83803
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232863"
 ---
 # <a name="sdk-helpers-for-debugging"></a>디버깅을 위한 SDK 도우미
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버깅을 위한 SDK 도우미](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/sdk-helpers-for-debugging)합니다.  
-  
 이러한 함수와 선언은 c + +에서 디버그 엔진, 식 계산기 및 기호 공급자를 구현 하는 것에 대 한 전역 도우미 함수입니다.  
   
 > [!NOTE]

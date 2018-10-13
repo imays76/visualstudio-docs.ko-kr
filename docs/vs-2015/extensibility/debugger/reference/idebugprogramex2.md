@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramEx2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b04a592bfb2d2a341ce2431461b4c23fd7088b3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb8009203a4d97ef5ecce37751495300b3b9248c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241526"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugProgramEx2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramex2)합니다.  
-  
 이 인터페이스는 세션을 디버그 관리자 (SDM) 프로그램에 연결 및 프로그램과 연결 된 프로그램 노드를 가져올 수 있습니다.  
   
 ## <a name="syntax"></a>구문  

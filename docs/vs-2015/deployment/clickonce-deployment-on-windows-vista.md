@@ -1,7 +1,7 @@
 ---
 title: Windows Vista의 ClickOnce 배포 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8057cc9c27d99058d5f16052864082e288591457
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6340d34e6f974cf8e7ea6f2dd7fea38b5ef94a57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224512"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista의 ClickOnce 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows Vista의 ClickOnce 배포](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-on-windows-vista)합니다.  
-  
 Visual Studio에서 응용 프로그램 구축 Windows Vista에서 사용자 계정 컨트롤 (UAC)에 일반적으로 포함된 된 매니페스트 생성에 대 한 응용 프로그램의 실행 파일의 XML 데이터를 이진으로 인코딩됩니다. 등록이 필요 없는 COM 및 ClickOnce 응용 프로그램 외부 매니페스트가 필요 하기 때문에 Visual Studio는 이러한 프로젝트 형식에 대 한 포함 된 매니페스트 대신 UAC 데이터가 포함 된 파일을 생성 합니다. 기본적으로 Visual Studio (등록 필요 없는 COM 및 ClickOnce 배포)에 대 한 외부 UAC 매니페스트 정보를 생성 하거나 응용 프로그램의 실행 파일 (다른 모든 경우)에 포함할 app.manifest 라는 파일에서 정보를 사용 합니다. Visual Studio 매니페스트 생성을 위한 다음 옵션을 제공합니다.  
   
 -   포함된 된 매니페스트를 사용 합니다. 응용 프로그램의 실행 파일에 UAC 데이터를 포함 하 고 일반 사용자로 실행 합니다.  

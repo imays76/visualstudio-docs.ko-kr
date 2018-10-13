@@ -1,7 +1,7 @@
 ---
 title: 보고서 매크로 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f3637aeee41f764825a0d8f8cd4fdca2cb3e94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84b5e72b15d085e29823fb8c8e116a153ff550e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224382"
 ---
 # <a name="macros-for-reporting"></a>보고서 매크로
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [보고에 대 한 매크로](https://docs.microsoft.com/visualstudio/debugger/macros-for-reporting)합니다.  
-  
 사용할 수는 **_RPTn**, 및 **_RPTFn** crtdbg 매크로입니다. 사용을 대체 하려면 H `printf` 문을 디버깅 합니다. 이러한 매크로 사용 중인 버전에 자동으로 나타나지 빌드에서 **_DEBUG** 묶습니다 필요가 없습니다 이므로 정의 되지 않은 **#ifdef**s입니다.  
   
 |매크로|설명|  

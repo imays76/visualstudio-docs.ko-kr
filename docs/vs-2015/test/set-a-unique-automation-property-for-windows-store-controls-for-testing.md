@@ -1,7 +1,7 @@
 ---
 title: 테스트를 위해 Windows 스토어 컨트롤에 대한 고유 자동화 속성 설정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dd593efa23d40278a314f6b1c1d90e7f7905922
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e20186a7615f774f3cef0b57c56a61a3b076b8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238877"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>테스트를 위해 Windows 스토어 컨트롤에 대한 고유 자동화 속성 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [테스트는 고유한 자동화 속성에 대 한 Windows 스토어 컨트롤 설정](https://docs.microsoft.com/visualstudio/test/set-a-unique-automation-property-for-windows-store-controls-for-testing)합니다.  
-  
 XAML 기반 Windows 스토어 응용 프로그램용 코딩된 UI 테스트를 실행하려는 경우 각 컨트롤을 식별하는 고유한 자동화 속성이 있어야 합니다.  
   
  응용 프로그램에서 XAML 컨트롤의 형식에 따라 고유한 자동화 속성을 할당할 수 있습니다. 다음과 같은 상황에서 이 고유한 자동화 속성을 할당하는 방법은 다음과 같습니다.  

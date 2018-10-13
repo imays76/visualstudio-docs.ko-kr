@@ -1,7 +1,7 @@
 ---
 title: WPF 도구 상자 컨트롤 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0785ebf5177e892bd5c450525af10dd61d381fc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a521566d25509750334e4f1202699787c3343ca6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225617"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>WPF 도구 상자 컨트롤 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WPF 도구 상자 컨트롤 만들기](https://docs.microsoft.com/visualstudio/extensibility/creating-a-wpf-toolbox-control)합니다.  
-  
 WPF (Windows Presentation Framework) 도구 상자 컨트롤 템플릿을 통해 자동으로 추가 되는 WPF 컨트롤을 만들 수는 **도구 상자** 확장이 설치 되는 경우. 이 항목에서는 템플릿을 사용 하 여 만드는 방법을 보여 줍니다.는 **도구 상자** 컨트롤을 다른 사용자에 게 배포할 수 있습니다.  
   
  Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
@@ -47,7 +45,7 @@ WPF (Windows Presentation Framework) 도구 상자 컨트롤 템플릿을 통해
   
 1.  MyToolboxControl.xaml 디자이너에서 엽니다.  
   
-     디자이너 표시를 <xref:System.Windows.Controls.Grid> 포함 된 컨트롤을 <xref:System.Windows.Controls.Button> 제어 합니다.  
+     디자이너에 <xref:System.Windows.Controls.Button> 컨트롤이 포함된 <xref:System.Windows.Controls.Grid> 컨트롤이 표시됩니다.  
   
 2.  표 형태 레이아웃을 정렬 합니다. 선택 하는 경우는 <xref:System.Windows.Controls.Grid> 그리드의 왼쪽된 위 가장자리에 표시 하는 파란색 컨트롤 막대를 제어 합니다. 막대를 클릭 하 여 표에 행과 열을 추가할 수 있습니다.  
   

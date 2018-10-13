@@ -1,7 +1,7 @@
 ---
 title: 참조 (프로그래밍 방식 캡처) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70581d468c32964d7e081ec0ee4af3fe411b71b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c68b196829b1ecf27732e325c6d2b402c720c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553632"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230349"
 ---
 # <a name="reference-programmatic-capture"></a>참조(프로그램 방식 캡처)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [참조 (프로그래밍 방식 캡처)](https://docs.microsoft.com/visualstudio/debugger/graphics/reference-programmatic-capture)합니다.  
-  
 그래픽 진단에서는 프로그래밍 방식 캡처 API를 통해 해당 캡처 기능을 프로그래밍 방식으로 제어할 수 있습니다. 이 API를 사용하면 메시지를 전환하여 그래픽 진단 HUD(헤드업 디스플레이)에 추가하고, 그래픽 로그 파일을 초기화하고 만들며, 그래픽 정보를 캡처할 수 있습니다.  
   
 ## <a name="programmatic-capture-apis"></a>프로그래밍 방식 캡처 API  
@@ -48,7 +46,7 @@ ms.locfileid: "47553632"
   
 |제목|설명|  
 |-----------|-----------------|  
-|[그래픽 정보 캡처](../debugger/capturing-graphics-information.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단 도구를 사용하여 렌더링 문제를 진단할 수 있도록 DirectX 기반 앱에서 그래픽 정보를 캡처하는 방법을 보여 줍니다.|  
+|[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단 도구를 사용하여 렌더링 문제를 진단할 수 있도록 DirectX 기반 앱에서 그래픽 정보를 캡처하는 방법을 보여 줍니다.|  
 |[개요](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|그래픽 진단을 사용하여 DirectX 게임 및 앱의 렌더링 오류를 디버그하는 방법을 보여 줍니다.|
 
 
