@@ -1,7 +1,7 @@
 ---
 title: Windows Forms 기반 도메인별 언어 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ab494b0ecb0529938ab3e3b473c8f6d8be18273e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8dddddb3ce012c0785fb528f8ee66082ea86b51e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196042"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 도메인별 언어 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Windows Forms-Based 도메인별 언어 만들기](https://docs.microsoft.com/visualstudio/modeling/creating-a-windows-forms-based-domain-specific-language)합니다.  
-  
 DSL 다이어그램을 사용 하는 대신, 도메인 특정 언어 (DSL) 모델의 상태를 표시 하려면 Windows Forms를 사용할 수 있습니다. 이 항목에서는 안내 DSL에 Windows 폼을 바인딩, 사용 하 여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK.  
   
  ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  

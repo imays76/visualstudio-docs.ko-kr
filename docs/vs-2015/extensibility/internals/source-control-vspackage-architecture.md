@@ -1,7 +1,7 @@
 ---
 title: 소스 제어 VSPackage 아키텍처 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d2a76a877581085b6bdffd8522bfcea24ea9e24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190465"
 ---
 # <a name="source-control-vspackage-architecture"></a>소스 제어 VSPackage 아키텍처
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 VSPackage 아키텍처](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-architecture)합니다.  
-  
 소스 제어 패키지를 사용 하는 VSPackage는 서비스는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE를 제공 합니다. 소스 제어 패키지를 원본 제어 서비스와 해당 기능을 제공합니다. 또한 소스 제어 패키지는 소스 제어 플러그 인에 소스 제어 통합을 보다 융통성이 뛰어납니다. 또한 대안 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
   
  소스 제어 플러그 인 소스 제어 플러그 인 API를 구현 하는 엄격한 계약을 적용 합니다. 예를 들어, 플러그 인 바꿀 수 없습니다 기본 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 사용자 인터페이스 (UI). 또한 소스 제어 플러그 인 API는 고유한 소스 제어 모델을 구현 하는 플러그 인을 사용 하지 않습니다. 그러나 원본 제어 패키지를는 모두 이러한 제한 사항을 극복합니다. 소스 제어 패키지에 원본 제어 환경 완전히 제어는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 사용자입니다. 또한 소스 제어 패키지 자체의 소스 제어 모델 및 논리를 사용할 수 있고 모든 소스 제어와 관련 된 사용자 인터페이스를 정의할 수 있습니다.  

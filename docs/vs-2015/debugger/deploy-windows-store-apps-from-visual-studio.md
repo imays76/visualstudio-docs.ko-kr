@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 Windows 스토어 앱 배포 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1212665b8e7e1c28fa30f50c1cd64a0dc5c217bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196107"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Visual Studio에서 Windows 스토어 앱 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 배포 Windows 스토어 앱](https://docs.microsoft.com/visualstudio/debugger/deploy-windows-store-apps-from-visual-studio)합니다.  
-  
 Windows에만 적용] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Visual Studio 배포 기능은 대상 장치에서 Visual Studio로 만든 Windows 스토어 앱을 빌드 및 등록합니다. 정확히 앱이 등록되는 방법은 대상 장치가 로컬 장치인지 원격 장치인지에 따라 달라집니다.  

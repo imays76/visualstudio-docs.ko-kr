@@ -1,7 +1,7 @@
 ---
 title: Detach | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56ad870d4638607ad03b60b33bb7d648dbbca424
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cbc4f3372c82a760a7445cbe5ad780fe5f7ccc49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552825"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196549"
 ---
 # <a name="detach"></a>Detach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [분리](https://docs.microsoft.com/visualstudio/profiling/detach)합니다.  
-  
 VSPerfCmd.exe **Detach** 옵션은 지정된 프로세스 또는 지정되지 않은 경우 모든 프로세서에서 프로파일러의 연결을 끊습니다. 프로파일링은 샘플링 방법을 사용하여 초기화되어야 합니다.  
   
  **Launch** 또는 **Attach** 옵션으로 시작된 프로파일링은 **Detach**로 분리될 수 있습니다. 프로파일러는 후속 **Attach** 명령을 사용하여 다시 연결될 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio SDK의에서 이벤트 노출 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5b68428d419b3608781ee9525ae107a7239b53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195574"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Visual Studio SDK의 이벤트 노출
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio SDK에 대 한 이벤트 노출](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-events-in-the-visual-studio-sdk)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 있습니다 자동화를 사용 하 여 이벤트의 소스가 있습니다. 프로젝트 및 프로젝트 항목에 대 한 이벤트 소싱 하는 것이 좋습니다.  
   
  자동화 소비자가 이벤트를 검색 합니다 <xref:EnvDTE.DTEClass.Events%2A> 개체 또는 <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). 환경 `IDispatch::Invoke` 를 사용 하 여 합니다 `DISPATCH_METHOD` 또는 `DISPATCH_PROPERTYGET` 이벤트를 반환 하는 플래그입니다.  

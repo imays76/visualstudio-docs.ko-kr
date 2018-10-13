@@ -1,7 +1,7 @@
 ---
 title: 'CA2224: 같음 연산자를 오버 로드에 equals를 재정의 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cd7acd4b99d3278d75aa3721137511857e04fe7c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 64b5c7113b5616733b6528cf0790f25211e18f6c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591328"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192872"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA2224: 같음 연산자를 오버 로드할 때 equals 재정의](https://docs.microsoft.com/visualstudio/code-quality/ca2224-override-equals-on-overloading-operator-equals)합니다.
-
 |||
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|

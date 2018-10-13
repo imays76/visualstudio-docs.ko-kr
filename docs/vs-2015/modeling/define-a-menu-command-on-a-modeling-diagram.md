@@ -1,7 +1,7 @@
 ---
 title: 모델링 다이어그램의 메뉴 명령 정의 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1a93ab331771db3303ffcbcb7c067c4c325e6a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193156"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>모델링 다이어그램의 메뉴 명령 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모델링 다이어그램의 메뉴 명령 정의](https://docs.microsoft.com/visualstudio/modeling/define-a-menu-command-on-a-modeling-diagram)합니다.  
-  
 Visual Studio에서 UML 다이어그램의 바로 가기 메뉴에 추가 메뉴 항목을 정의할 수 있습니다. 다이어그램에서 임의 요소의 바로 가기 메뉴에 메뉴 명령을 표시하고 사용하도록 설정할지 여부를 제어할 수 있으며, 사용자가 메뉴 항목을 선택할 때 실행되는 코드를 작성할 수 있습니다. 이러한 확장을[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension)로 패키징하고 다른 Visual Studio 사용자에게 배포할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
@@ -72,7 +70,7 @@ Visual Studio에서 UML 다이어그램의 바로 가기 메뉴에 추가 메뉴
   
     |참조|수행할 수 있는 기능|  
     |---------------|--------------------------------|  
-    |System.ComponentModel.Composition|구성 요소를 사용 하 여 정의할 [Framework MEF (Managed Extensibility)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)합니다.|  
+    |System.ComponentModel.Composition|[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)를 사용하여 구성 요소를 정의합니다.|  
     |Microsoft.VisualStudio.Uml.Interfaces|모델 요소의 속성을 읽고 변경합니다.|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility|다이어그램에서 모델 요소를 만들고 모양을 수정합니다.|  
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|모델 이벤트 처리기를 정의합니다.<br /><br /> 모델에 대한 일련의 변경 내용을 캡슐화합니다. 자세한 내용은 [트랜잭션을 사용 하 여 링크 UML 모델 업데이트](../modeling/link-uml-model-updates-by-using-transactions.md)합니다.|  
@@ -221,13 +219,13 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
 1.  **F5**키를 누르거나, **디버그** 메뉴에서 **디버깅 시작**을 선택합니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 시작됩니다.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다.  
   
-     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 시작 되지 않습니다.  
+     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 가 시작되지 않는 경우:  
   
     -   프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.  
   
-    -   솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. 확인 문자열을 **시작 외부 프로그램** 필드의 전체 경로 이름에는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 일반적으로:  
+    -   솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. 시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름인지 확인합니다.  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   

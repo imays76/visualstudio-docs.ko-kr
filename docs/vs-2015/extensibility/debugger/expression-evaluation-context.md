@@ -1,7 +1,7 @@
 ---
 title: 식 계산 컨텍스트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc2c2ecc4f7867c2ad39ba72f9edcb72c0935ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb3fcf4d15a1c9020b7bd64587362fcf442f79c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551563"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194060"
 ---
 # <a name="expression-evaluation-context"></a>식 계산 컨텍스트
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [식 계산 컨텍스트](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluation-context)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 디버깅 하는 **식 계산 컨텍스트**:  
   
 -   식 계산에 대 한 컨텍스트를 나타냅니다. 일반적으로 평가 컨텍스트 변수, 매개 변수, 함수 및 메서드를 평가 하는 어휘 범위에 해당 합니다. 예를 들어, 스택 프레임을 사용 하 여 연결 하는 식 계산 컨텍스트는 해당 하는 경우 로컬 변수, 메서드 매개 변수 및 클래스 멤버를 평가 하는 것에 대 한 컨텍스트를 제공 합니다.  

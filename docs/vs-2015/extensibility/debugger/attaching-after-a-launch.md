@@ -1,7 +1,7 @@
 ---
 title: 시작 후 연결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 874d9034abed93ab504730c628833d4d60f02452
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ddc66b7037c05458062a87eb8ddd757e32c91590
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193858"
 ---
 # <a name="attaching-after-a-launch"></a>시작 후 연결
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연결 후는 시작](https://docs.microsoft.com/visualstudio/extensibility/debugger/attaching-after-a-launch)합니다.  
-  
 프로그램 시작 디버그 세션 언급된 프로그램에 디버그 엔진 (DE)를 연결할 준비가 된 것입니다.  
   
 ## <a name="design-decisions"></a>디자인 결정  

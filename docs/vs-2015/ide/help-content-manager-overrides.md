@@ -1,7 +1,7 @@
 ---
 title: 도움말 콘텐츠 관리자 재정의 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fae83a05b3f6f8774e7ed119483274f22c4ddc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35c3d8a13ace801a06e7d1c658c9923e1432ef59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552005"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190257"
 ---
 # <a name="help-content-manager-overrides"></a>도움말 콘텐츠 관리자 재정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도움말 콘텐츠 관리자 재정의](https://docs.microsoft.com/visualstudio/ide/help-content-manager-overrides)합니다.  
-  
 레지스트리를 수정하여 Visual Studio IDE에서 도움말 뷰어와 도움말 관련 기능의 기본 동작을 변경할 수 있습니다.  
   
 |작업|레지스트리 키|값 및 정의|  

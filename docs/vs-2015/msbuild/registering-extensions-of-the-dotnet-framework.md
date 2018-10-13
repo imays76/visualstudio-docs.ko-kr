@@ -1,7 +1,7 @@
 ---
 title: .NET Framework 확장명 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a2d3e281562be5234e0a70a877a6c169c346995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a1a1966bbe68bccd12261ca6a05002485cefe1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196926"
 ---
-# <a name="registering-extensions-of-the-net-framework"></a>.NET Framework 확장 등록
+# <a name="registering-extensions-of-the-net-framework"></a>.NET Framework 확장명 등록
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [.NET Framework 확장명 등록](https://docs.microsoft.com/visualstudio/msbuild/registering-extensions-of-the-dotnet-framework)합니다.  
-  
   
 .NET Framework의 특정 버전을 확장하는 어셈블리를 개발할 수 있습니다. 해당 어셈블리가 Visual Studio의 **참조 추가** 대화 상자에 표시되도록 설정하려면 이 어셈블리를 포함하는 폴더를 시스템 레지스트리에 추가해야 합니다.  
   

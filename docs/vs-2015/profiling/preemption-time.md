@@ -1,7 +1,7 @@
 ---
 title: 선점 시간 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 614b049bf7aa881ce4454d8f832190b0391ff342
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 943111386539ddb9ac686b0551dfe176f9e2d320
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194079"
 ---
 # <a name="preemption-time"></a>선점 시간
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [선점 시간](https://docs.microsoft.com/visualstudio/profiling/preemption-time)합니다.  
-  
 타임라인의 이러한 세그먼트는 선점 시간으로 분류되는 차단 시간과 관련이 있습니다. 이 범주는 다음과 같은 이유 중 하나로 스레드가 해제됨을 의미합니다.  
   
 -   스케줄러가 더 높은 우선 순위 스레드를 사용하여 해당 스레드를 대체했습니다.  

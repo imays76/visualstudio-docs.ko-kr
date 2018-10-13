@@ -1,7 +1,7 @@
 ---
 title: '샘플 Excel 확장: TechnologyManager 클래스 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 440591cae5251c614c13738668bbe71d43f90600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190582"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>샘플 Excel 확장: TechnologyManager 클래스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [샘플 Excel 확장: TechnologyManager 클래스](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-technologymanager-class)합니다.  
-  
 이 클래스는 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> 클래스를 확장하고 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 확장용 핵심 서비스를 제공합니다. 기본 클래스에는 여러 가지 메서드가 있지만, 이 샘플에서는 이러한 메서드 중 일부만 사용합니다.  
   
  일부 메서드는 속성 값만 반환합니다. 개발자는 대부분의 메서드를 통해 코딩된 UI 테스트 엔진에서 기본적으로 제공되는 기본 알고리즘을 재정의할 수 있습니다. 이러한 메서드는 <xref:System.NotSupportedException>를 throw하거나 `null`을 반환하여 기본 알고리즘을 사용하도록 프레임워크에 알립니다.  

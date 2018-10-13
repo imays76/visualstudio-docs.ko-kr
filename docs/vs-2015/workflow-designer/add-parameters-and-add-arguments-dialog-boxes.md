@@ -1,7 +1,7 @@
 ---
 title: 매개 변수 추가 및 인수 추가 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f6fd230fbc168782cacaf475ab5a050370033a5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d01eb02a68666007021aad9d789502e58f684528
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196706"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>매개 변수 추가 및 인수 추가 대화 상자
 다음 표에 사용자 인터페이스 (UI) 요소에는 **매개 변수 추가** 사용 하는 대화 상자는 <xref:System.Activities.Statements.InvokeMethod> 디자이너입니다.  

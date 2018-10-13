@@ -1,7 +1,7 @@
 ---
 title: 로컬 콘텐츠 설치 및 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564355"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193845"
 ---
 # <a name="install-and-manage-local-content"></a>로컬 콘텐츠 설치 및 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [설치 및 로컬 콘텐츠 관리](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content)합니다.  
-  
 Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항에 따라 컴퓨터에 설치된 도움말 콘텐츠를 추가, 제거, 업데이트 및 이동할 수 있습니다.  
   
  로컬 컴퓨터에서 콘텐츠를 관리하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 또한 엔터프라이즈 환경에서 작업하는 경우에는 로컬 콘텐츠를 관리하지 못할 수도 있습니다. 시스템 관리자가 조직을 위해 해당 결정을 내릴 수도 있기 때문입니다. 자세한 내용은 [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)를 참조하세요.  

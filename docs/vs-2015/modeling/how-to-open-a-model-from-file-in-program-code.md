@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로그램 코드로 파일에서 모델 열기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0884148a6e3f390654842b5e35a9e53643ea17d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f3397cb520014ee9997a116ebbbfbc1c20dc9f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190504"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>방법: 프로그램 코드로 파일에서 모델 열기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 프로그램 코드로 파일에서 모델 열기](https://docs.microsoft.com/visualstudio/modeling/how-to-open-a-model-from-file-in-program-code)합니다.  
-  
 모든 응용 프로그램에서 DSL 모델을 열 수 있습니다.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장이이 목적을 위해 ModelBus를 사용할 수 있습니다. ModelBus는 모델 또는 모델에서 요소를 참조 하 고이 이동 하는 경우 모델을 찾는 데 표준 메커니즘을 제공 합니다. 자세한 내용은 [Visual Studio Modelbus를 사용 하 여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md)합니다.  

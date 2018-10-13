@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b64dc915dddb7290eb80a8a38352e87a331e0dd0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194716"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [JavaScript IntelliSense](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense)합니다.  
-  
 IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 제공되므로 코드를 빠르게 작성하면서 오류도 줄일 수 있습니다. JavaScript 편집기에서 클라이언트 스크립트를 작성할 때 IntelliSense에는 현재 컨텍스트를 기준으로 사용할 수 있는 개체, 함수, 속성 및 매개 변수가 나열되므로 사용자는 IntelliSense에서 제공하는 팝업 목록에서 코딩 옵션을 선택하여 코드를 완성할 수 있습니다.  
   
  IntelliSense를 사용하면 다음과 같은 작업을 더욱 쉽게 완료할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: DebuggerTypeProxy 특성 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa4b5d363366f61b9001a3ac7f476804c0c2de19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0014ec8677cf8b437780ab23fdd521f3ec5f938
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196318"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>DebuggerTypeProxy 특성 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DebuggerTypeProxy 특성 사용 하 여](https://docs.microsoft.com/visualstudio/debugger/using-debuggertypeproxy-attribute)입니다.  
-  
 DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & autoUpgrade = True)에 프록시가 지정 또는 대리 항목 형식과 방법 형식 변경에 대 한 디버거 창에 표시 됩니다. 프록시에 원래 형식 대신 프록시가 있는 변수를 볼 때 합니다 **표시할**합니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 개인 멤버는 표시되지 않습니다.  
   
  이 특성은 다음 항목에 적용될 수 있습니다.  

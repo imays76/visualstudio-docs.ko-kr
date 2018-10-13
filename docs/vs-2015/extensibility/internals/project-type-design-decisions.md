@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 형식 디자인 결정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 49f4b198da38a53360efffcdff82daa6fcdb350c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195483"
 ---
 # <a name="project-type-design-decisions"></a>프로젝트 형식 디자인 결정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로젝트 형식 디자인 결정](https://docs.microsoft.com/visualstudio/extensibility/internals/project-type-design-decisions)합니다.  
-  
 새 프로젝트 형식을 만들기 전에 프로젝트 형식에 대 한 몇 가지 디자인 결정 해야 합니다. 프로젝트를 포함 하는 항목, 프로젝트 파일은 유지 하는 방법 및 어떤 약정 모델 유형을 사용할지 결정 해야 합니다.  
   
 ## <a name="project-items"></a>프로젝트 항목  

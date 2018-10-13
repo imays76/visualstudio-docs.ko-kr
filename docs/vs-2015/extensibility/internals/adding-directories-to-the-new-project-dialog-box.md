@@ -1,7 +1,7 @@
 ---
 title: 새 프로젝트 대화 상자에 디렉터리 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e22f0566ddde7bfd795bb01141deabbecd532a19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd99b6a58bb5203e7e0dfd7df95494cb258c9228
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190491"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>새 프로젝트 대화 상자에 디렉터리 추가
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [새 프로젝트 대화 상자에 디렉터리 추가](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-directories-to-the-new-project-dialog-box)합니다.  
-  
 새 프로젝트 형식을 만들면도 등록할 수 있습니다에 새 디렉터리를 **새 프로젝트** 대화 상자를 템플릿으로 사용 하기 위해 표시 합니다. 다음 코드 예제에서는 노드 라고도 하며 새 디렉터리를 등록 하는 방법에 설명 합니다. 예제에서는 VSPackage CLSID_Package에서 노출 하는 템플릿 등록 됩니다. 결과적으로 좌 변의 합니다 **새 프로젝트** 대화 상자 이름 Folder_Label_ResID 리소스를 기준으로 추가 노드를 제공 합니다. 이 리소스는 VSPackage 위성 DLL에서에서 로드 됩니다.  
   
  합니다 **폴더** 값 Folder_Label_ResID 노드에 표시 되는 폴더의 GUID를 나타냅니다. GUID를 나타내는 예에서는 **기타 프로젝트** 폴더에는 **프로젝트 형식** 창의 **새 프로젝트** 대화 상자. 경우는 **기타 프로젝트** 값이 없음, 레이블이 최상위에 배치 됩니다.  

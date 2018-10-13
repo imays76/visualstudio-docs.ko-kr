@@ -1,7 +1,7 @@
 ---
 title: 스레드 및 프로세스 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bda70d9f99b4b97623d5d9f03ca440721f9a728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 711aaeaa76edbb4ea9d070254213f9a7207e12f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191492"
 ---
 # <a name="debug-threads-and-processes"></a>스레드 및 프로세스 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버그 스레드 및 프로세스](https://docs.microsoft.com/visualstudio/debugger/debug-threads-and-processes)합니다.  
-  
 스레드 * 및 *프로세스* 전산학 석사 학위 관련된 개념은 있습니다. 이 둘은 모두 특정 순서로 실행해야 할 명령 시퀀스를 나타냅니다. 그러나 개별 스레드 또는 프로세스의 명령은 함께 실행할 수 있습니다.  
   
  프로세스는 운영 체제에 있으며 사용자에게 프로그램이나 응용 프로그램으로 표시됩니다. 반면에 스레드는 프로세스 내에 있습니다. 따라서이 스레드는 라고도 *가벼운 프로세스*합니다. 각 프로세스는 하나 이상의 스레드로 구성됩니다.  

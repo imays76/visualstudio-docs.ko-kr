@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35bce0368c9f14fa135caedd27bdf3aa9d0ae208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 172fe17d0ff3093ce8988c1de0ba991aba5bc9a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197225"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugDocumentTextEvents2::onUpdateTextAttributes](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes)합니다.  
-  
 문서에서 텍스트 특성 업데이트 되었습니다는 디버그 패키지에 알립니다.  
   
 ## <a name="syntax"></a>구문  

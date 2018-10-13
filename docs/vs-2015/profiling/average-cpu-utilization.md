@@ -1,7 +1,7 @@
 ---
 title: 평균 CPU 사용률 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84c2069df69c63e7fee43f9241ee866f708cc8f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e96f396a6c4f3f2129f4d9a57add3b0495332a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550867"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191739"
 ---
 # <a name="average-cpu-utilization"></a>평균 CPU 사용률
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [평균 CPU 사용률](https://docs.microsoft.com/visualstudio/profiling/average-cpu-utilization)합니다.  
-  
 프로세스의 기간 동안 시스템 논리 코어의 프로파일링된 프로세스의 평균 사용률을 보여 줍니다. 이 그래프에서는 특정 시간에 활성 상태인 코어를 구체적으로 보여주지는 않습니다. 예를 들어 특정 시간 동안 두 개의 코어가 각각 50% 용량으로 실행되는 경우 이 뷰에서는 하나의 논리 코어가 사용되고 있는 것으로 표시됩니다.  
   
 ## <a name="see-also"></a>참고 항목  

@@ -1,7 +1,7 @@
 ---
 title: '7단계: 폼에 대화 상자 구성 요소 추가 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b6f819495cd6787398fadf414bcfebb2c3eefec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192948"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7단계: 폼에 대화 상자 구성 요소 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [7 단계: 폼에 대화 상자 구성 요소 추가](https://docs.microsoft.com/visualstudio/ide/step-7-add-dialog-components-to-your-form)합니다.  
-  
 이 단계에서, 그림 파일을 열고 배경색을 선택할 수 있도록 프로그램을 설정하려면 **OpenFileDialog** 구성 요소 및 **ColorDialog** 구성 요소를 폼에 추가합니다.  
   
  구성 요소는 몇 가지 점에서 컨트롤과 비슷합니다. 도구 상자를 사용하여 구성 요소를 폼에 추가하고 **속성** 창을 사용하여 구성 요소의 속성을 설정합니다. 그러나 컨트롤과 달리 구성 요소를 폼에 추가할 때는 실제로 폼에 표시되는 항목이 추가되지 않습니다. 대신 코드를 사용하여 트리거할 수 있는 특정 동작이 제공됩니다. 예를 들어 **파일 열기** 대화 상자를 여는 것은 바로 구성 요소입니다.  

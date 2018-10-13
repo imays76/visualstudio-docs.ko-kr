@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Interop 어셈블리 매개 변수 마샬링 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: douge
-ms.openlocfilehash: 77b94eeb4195654edabdd566eae762593b785496
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551849"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195021"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio Interop 어셈블리 매개 변수 마샬링
 관리 코드에서 기록 되는 Vspackage를 호출 하거나 관리 되지 않는 COM 코드에서 호출 해야 합니다. 일반적으로 메서드 인수를 변환 또는 자동으로 interop 마샬러가 마샬링됩니다. 그러나 경우에 따라 인수 변환할 수 없는 간단한 방식입니다. 이러한 경우 interop 어셈블리 메서드 프로토타입 매개 변수는 COM 함수 매개 변수를 최대한 가깝게 일치 하도록 사용 됩니다. 자세한 내용은 [Interop 마샬링](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)합니다.  

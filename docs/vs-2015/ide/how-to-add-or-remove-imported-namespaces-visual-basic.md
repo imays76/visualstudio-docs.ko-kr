@@ -1,7 +1,7 @@
 ---
 title: '방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c70f5187300c3c7d661055f78911bdedb926fdc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 730ebcf8029abf51e6cb04c74b826593139cfdc5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196406"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전을 찾을 수 있습니다 [방법: 가져온 네임 스페이스 (Visual Basic)를 제거 또는 추가](https://docs.microsoft.com/visualstudio/ide/how-to-add-or-remove-imported-namespaces-visual-basic)합니다.  
-  
 네임스페이스를 가져오면 해당 네임스페이스의 요소를 정규화하지 않고 코드에서 사용할 수 있습니다. 예를 들어 `System.Messaging.MessageQueue` 클래스의 `Create` 메서드에 액세스하려면 `System.Messaging` 네임스페이스를 가져오고 코드에 필요한 요소를 `MessageQueue.Create`로 참조하면 됩니다.  
   
  가져온 네임스페이스는 **프로젝트 디자이너**의 **참조** 페이지에서 관리됩니다. 이 대화 상자에서 지정하는 가져오기는 컴파일러(`/imports`)에 직접 전달되고 프로젝트의 모든 파일에 적용됩니다. `Imports` 문을 사용하여 단일 소스 코드 파일에서 네임스페이스를 사용합니다.  
