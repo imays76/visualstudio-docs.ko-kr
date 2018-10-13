@@ -1,7 +1,7 @@
 ---
 title: '연습: 추가 기능을 사용자 지정 편집기에 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee6ca09f1bef7057e64287afb4ff8522fffb3f06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f0d7c79590c197b7c226fb2cb2841235049bb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283064"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>연습: 사용자 지정 편집기에 기능 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 추가 기능을 사용자 지정 편집기에](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-adding-features-to-a-custom-editor)입니다.  
-  
 사용자 지정 편집기를 만든 후에 더 많은 기능을 추가할 수 있습니다.  
   
 ### <a name="to-create-an-editor-for-a-vspackage"></a>VSPackage에 대 한 편집기를 만들려면  
@@ -128,7 +126,7 @@ ms.locfileid: "47554034"
   
 13. 편집기에서 자동화 개체 모델을 구현 하 여 노출 된 `IDispatch` 인터페이스입니다.  
   
-     자세한 내용은 [자동화 모델에 영향을 주는](../extensibility/internals/contributing-to-the-automation-model.md)합니다.  
+     자세한 내용은 [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md)을 참조하세요.  
   
 ## <a name="robust-programming"></a>강력한 프로그래밍  
   

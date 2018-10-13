@@ -1,7 +1,7 @@
 ---
 title: Interop 어셈블리의 계약 명령 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a5e2a7abb298aa43aefbf3f04c048c5928bd555
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3ce0eecd5bb231af12d4007f02e729560970453
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303019"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Interop 어셈블리의 명령 계약
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Interop 어셈블리의 명령 계약](https://docs.microsoft.com/visualstudio/extensibility/internals/command-contracts-in-interop-assemblies)합니다.  
-  
 통해 명령을 처리 하는 것에 대 한 기본 계약 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스 호출 하는 환경입니다는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드를 확인 하는 명령을 지원 되는지 여부를 고 지원 되는 경우, 해당 상태 및 텍스트를 확인 하려면. 그런 다음 환경은 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 명령을 실행 하는 방법입니다.  
   
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드는 모든 명령에 대 한 동일 하 게 처리 됩니다. 호출 하 여 관리 (예를 들어 드롭 다운 목록)가 필요한 경우 추가 통신을 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 적절 한 매개 변수를 사용 하 여 메서드. 이러한 매개 변수의 해석은 지정 된 명령에 따라 달라 집니다.  

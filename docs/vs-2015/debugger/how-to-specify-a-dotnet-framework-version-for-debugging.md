@@ -1,7 +1,7 @@
 ---
 title: '방법: 디버깅을 위한.NET Framework 버전 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a07975591525f9109fecfbfb5aaa27642fc9562
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 914c4bfb58485bd1d423e58bbe8fc8ab7f1a898a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550248"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272963"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>방법: 디버깅을 위한 .NET Framework 버전 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법:.NET Framework 버전에 대 한 디버깅 지정](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-a-dotnet-framework-version-for-debugging)합니다.  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 디버거는 현재 버전을 비롯하여 이전 버전의 Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 디버깅을 지원합니다. 디버거가 올바른 버전의 Visual Studio에서 응용 프로그램을 시작 하는 경우 식별할 항상 수는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 디버깅 하는 응용 프로그램에 대 한 합니다. 응용 프로그램이 이미 실행 되 고 사용 하는 경우 **연결할**, 디버거 항상 못할의 이전 버전을 식별 하는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]합니다. 이러한 문제가 발생하면 다음과 같은 오류 메시지가 표시됩니다.  
   
  디버거가 응용 프로그램에서 사용하는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전을 잘못 예상했는지 확인합니다.  

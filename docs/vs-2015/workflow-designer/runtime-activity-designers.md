@@ -1,7 +1,7 @@
 ---
 title: 런타임 활동 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: b25db3bc67ca05cd123c0e4d4b0a15c43a568d2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4385a692167fcfa0c39cb5c5f2bc18c7695733e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306867"
 ---
 # <a name="runtime-activity-designers"></a>런타임 활동 디자이너
 Runtime 활동 디자이너는 워크플로 활동을 지속하고 종료하는 데 사용됩니다. 이 단원의 항목에서는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 활동 디자이너의 사용 방법에 대한 지침을 제공합니다.  

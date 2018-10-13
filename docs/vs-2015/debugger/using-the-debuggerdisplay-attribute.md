@@ -1,7 +1,7 @@
 ---
 title: DebuggerDisplay 특성 사용 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,19 +23,17 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb5e47cbaea7c7a39201f25adf6955a2e22c9b9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299418"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DebuggerDisplay 특성을 사용 하 여](https://docs.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute)입니다.  
-  
-<xref:System.Diagnostics.DebuggerDisplayAttribute> 개체, 속성 또는 필드가 디버거 변수 창에 표시 되는 방법을 제어 합니다. 이 특성은 형식, 대리자, 속성, 필드 및 어셈블리에 적용할 수 있습니다.  
+<xref:System.Diagnostics.DebuggerDisplayAttribute>는 개체, 속성 또는 필드가 디버거 변수 창에 표시되는 방식을 제어합니다. 이 특성은 형식, 대리자, 속성, 필드 및 어셈블리에 적용할 수 있습니다.  
   
  `DebuggerDisplay` 특성에는 형식 인스턴스에 대한 값 열에 표시되는 문자열인 단일 인수가 있습니다. 이 문자열에는 중괄호(`{` 및 `}`)가 포함될 수 있습니다. 중괄호 쌍 안의 텍스트는 필드, 속성 또는 메서드로 확인됩니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: System.Activities 탭, 도구 상자 항목 선택 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9c769058aaf86796780645c77b5bc2173db52048
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544058"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292047"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities 탭, 도구 상자 항목 선택 대화 상자
 이 탭에는 **도구 상자 항목 선택** 대화 상자에 목록이 표시 됩니다 [!INCLUDE[wf](../includes/wf-md.md)] 활동, 템플릿 및 항목을 사용할 수 있습니다. 이 목록을 표시 하려면 선택 **도구 상자 항목 선택** 에서 **도구** 메뉴 또는 마우스 오른쪽 단추로 클릭 합니다 **도구 상자** 선택 하 고 **항목 선택**표시할 합니다 **도구 상자 항목 선택** 대화 상자에서 선택한 후 해당 **System.Activities** 탭 합니다. 목록에 기본적으로 System.Activities, System.ServiceModel.Activities 및 System.Activities.Core.Presentation 어셈블리의 워크플로 활동이 포함 그러나만 시스템에서 제공한 표시 하는 활동 및 활동에 표시 되는 다른 어셈블리를 통해 추가 된 **도구 상자** 기본적으로 선택 됩니다. 최근에 추가 된 활동을 자동으로 선택 됩니다 및에 표시 된 **도구 상자** 클릭 하면 **확인** 대화 상자에서. 또한 이러한 항목에는 표시 된 **도구 상자** 활동/항목/템플릿이 있는 네임 스페이스에 해당 하는 새 범주입니다.  

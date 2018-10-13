@@ -1,7 +1,7 @@
 ---
 title: LIB 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dcdcece820af764e627aafc43ef405c627724b68
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 75e15c0230526fc7647144cbde566c693be58cbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285508"
 ---
 # <a name="lib-task"></a>LIB 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [LIB 작업](https://docs.microsoft.com/visualstudio/msbuild/lib-task)합니다.  
-  
   
 Microsoft 32비트 라이브러리 관리자 도구인 lib.exe를 래핑합니다. 라이브러리 관리자는 COFF(공용 개체 파일 형식) 개체 파일의 라이브러리를 만들고 관리합니다. 또한 라이브러리 관리자를 사용하여 내보내기 파일을 만들고 내보낸 정의를 참조하는 라이브러리를 가져올 수 있습니다. 자세한 내용은 [LIB 참조](http://msdn.microsoft.com/library/ecc7f643-bbd4-47a3-8dc6-b360f880db91) 및 [LIB 실행](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)을 참조하세요.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'CA1404: P / Invoke 후에 바로 GetLastError를 호출 합니다. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 848ab5a19e4e4dc51e898ce764bd381a29d1eafb
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 444617094e1f2bf3217a49f32652b240918abd8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297780"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: P/Invoke 다음에 바로 GetLastError를 호출하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1404: P-invoke 직후 호출 GetLastError](https://docs.microsoft.com/visualstudio/code-quality/ca1404-call-getlasterror-immediately-after-p-invoke)합니다.
-
 |||
 |-|-|
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|

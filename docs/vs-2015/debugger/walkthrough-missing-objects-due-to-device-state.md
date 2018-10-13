@@ -1,7 +1,7 @@
 ---
 title: '연습: 장치 상태로 인해 개체 누락 된 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665075ce6656d2cebb246b7591821491b1cf2f58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95d962ec83b5d0c3a89d41ab8f8cc40ee76ffbb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555417"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280841"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>연습: 장치 상태로 인해 누락된 개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 장치 상태로 개체 인해 누락 된](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-device-state)합니다.  
-  
-이 연습에 사용 하는 방법을 보여 줍니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 로 인해 누락 된 개체를 조사 하려면 그래픽 진단을 잘못 장치 상태를 구성 합니다.  
+이 연습에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단을 사용하여 잘못 구성된 장치 상태로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.  
   
  이 연습에서는 다음 방법을 설명합니다.  
   
@@ -45,14 +43,14 @@ ms.locfileid: "47555417"
   
  ![문제가 수정 되기 전의 앱](../debugger/media/vsg-walkthru1-firstview.png "vsg_walkthru1_firstview")  
   
- 그래픽 로그의 그래픽 문제를 포착 하는 방법에 대 한 자세한 내용은 [그래픽 정보 캡처](../debugger/capturing-graphics-information.md)합니다.  
+ 그래픽 로그의 그래픽 문제를 포착하는 방법에 대한 자세한 내용은 [Capturing Graphics Information](../debugger/capturing-graphics-information.md)를 참조하세요.  
   
 ## <a name="investigation"></a>조사  
  그래픽 진단 도구를 사용하면 그래픽 로그 파일을 로드하여 테스트 중에 캡처한 프레임을 검사할 수 있습니다.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>그래픽 로그에서 프레임을 검사하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 누락 된 모델을 보여 주는 프레임이 포함 된 그래픽 로그를 로드 합니다. 새 그래픽 진단 탭 나타나는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 이 탭의 맨 윗부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
+1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 누락된 모델을 보여 주는 프레임이 포함된 그래픽 로그를 로드합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 새 그래픽 진단 탭이 나타납니다. 이 탭의 맨 윗부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
   
 2.  **프레임 목록**에서 모델이 표시되지 않는 것을 보여 주는 프레임을 선택합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서 그래픽 로그 탭은 다음과 같습니다.  
   
@@ -104,7 +102,7 @@ ms.locfileid: "47555417"
   
 1.  **그래픽 개체 테이블** 창을 엽니다. **그래픽 진단** 도구 모음에서 **개체 테이블**을 선택합니다.  
   
-2.  **그래픽 개체 테이블** 에서 **D3D10 장치**개체를 찾은 후 **D3D10 장치** 개체를 엽니다. 새 **d3d10 장치** 탭에서 열립니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 이 작업을 보다 쉽게 진행하기 위해 **그래픽 개체 테이블** 을 **유형**별로 정렬할 수 있습니다.  
+2.  **그래픽 개체 테이블** 에서 **D3D10 장치**개체를 찾은 후 **D3D10 장치** 개체를 엽니다. 새 **d3d10 장치** 탭이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 열립니다. 이 작업을 보다 쉽게 진행하기 위해 **그래픽 개체 테이블** 을 **유형**별로 정렬할 수 있습니다.  
   
      ![그래픽 개체 테이블 및 관련된 장치 상태](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
   

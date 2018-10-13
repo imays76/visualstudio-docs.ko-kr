@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 응용 프로그램 매니페스트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 28d96d1edaba18b6b6c171139db116ad7f8b49bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57e48816ede7210a268cc465da1eee3b6ff43d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289590"
 ---
 # <a name="clickonce-application-manifest"></a>ndptecclick
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 응용 프로그램 매니페스트](https://docs.microsoft.com/visualstudio/deployment/clickonce-application-manifest)합니다.  
-  
 A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 매니페스트를 사용 하 여 배포 된 응용 프로그램을 설명 하는 XML 파일은 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]합니다.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 매니페스트는 다음 요소 및 특성을 갖습니다.  
@@ -44,7 +42,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 매
 |[\<trustInfo > 요소](../deployment/trustinfo-element-clickonce-application.md)|응용 프로그램 보안 요구 사항을 식별합니다.|없음|  
 |[\<entryPoint > 요소](../deployment/entrypoint-element-clickonce-application.md)|필수. 응용 프로그램 코드 진입점을 식별합니다.|`name`|  
 |[\<종속성 > 요소](../deployment/dependency-element-clickonce-application.md)|필수. 응용 프로그램을 실행하는 데 필요한 각 종속성을 식별합니다. 필요에 따라 사전 설치해야 하는 어셈블리를 식별합니다.|없음|  
-|[\<파일 > 요소](../deployment/file-element-clickonce-application.md)|선택 사항입니다. 응용 프로그램에서 사용 되는 각 어셈블리 이외의 파일을 식별 합니다. 파일에 연결된 COM(구성 요소 개체 모델) 격리 데이터를 포함할 수 있습니다.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<file> 요소](../deployment/file-element-clickonce-application.md)|선택 사항입니다. 응용 프로그램에서 사용 되는 각 어셈블리 이외의 파일을 식별 합니다. 파일에 연결된 COM(구성 요소 개체 모델) 격리 데이터를 포함할 수 있습니다.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation > 요소](../deployment/fileassociation-element-clickonce-application.md)|선택 사항입니다. 응용 프로그램과 연결할 파일 확장명을 식별 합니다.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>설명  

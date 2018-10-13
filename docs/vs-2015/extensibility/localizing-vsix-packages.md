@@ -1,7 +1,7 @@
 ---
 title: VSIX 패키지 지역화 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bad0b3307e4b0e5358bd04d4990d0012685300d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49ec131e4fa5ec635fa63763ccac9493134e2f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292905"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX 패키지 지역화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSIX 패키지 지역화](https://docs.microsoft.com/visualstudio/extensibility/localizing-vsix-packages)합니다.  
-  
 대상 언어별로 Extension.vsixlangpack 파일을 만들고 올바른 폴더에 배치 하 여 VSIX 패키지를 지역화할 수 있습니다. 지역화 된 패키지를 설치 하면 확장의 지역화 된 이름은 지역화 된 설명과 함께 표시 됩니다. 지역화 된 라이선스 파일 또는 지역화 된 정보를 가리키는 URL을 제공 하는 경우도 표시 됩니다.  
   
  VSIX 패키지 콘텐츠를 추가 하는 VSPackage를 포함 하는 경우 메뉴 명령 또는 기타 UI 참조 [메뉴 명령 지역화](../extensibility/localizing-menu-commands.md) 새 UI 요소를 지역화 하는 방법에 대 한 정보에 대 한 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: 배포 된 웹 응용 프로그램 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 896cec857b38dd5fb0d7119aed06ca08d2df1e35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc9aefdb6fca70eae0343a5f7fffde661b5a7be1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564340"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276317"
 ---
 # <a name="debugging-deployed-web-applications"></a>배포된 웹 응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [배포 된 웹 응용 프로그램 디버깅](https://docs.microsoft.com/visualstudio/debugger/debugging-deployed-web-applications)합니다.  
-  
 프로덕션 서버에서 실행 중인 웹 응용 프로그램을 디버깅해야 하는 경우에는 이 작업을 수행할 때 주의해야 합니다. 예를 들어 디버깅하기 위해 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스에 연결하여 중단점을 적중하는 경우 작업자 프로세스의 모든 관리 코드가 중단되어 서버의 모든 사용자에 대해 작업이 중지될 수 있습니다. 프로덕션 서버에서 디버깅하려면 프로덕션 작업에 미칠 수 있는 모든 영향을 고려해야 합니다.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하여 배포된 응용 프로그램을 디버깅하려면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스에 연결하고 디버거에서 해당 응용 프로그램에 대한 기호에 액세스할 수 있는지 확인해야 합니다. 또한 해당 응용 프로그램의 소스 파일도 찾아서 열어야 합니다. 자세한 내용은 참조 하세요. [지정할 기호 (.pdb) 및 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [방법: ASP.NET 프로세스의 이름을 찾으려면](../debugger/how-to-find-the-name-of-the-aspnet-process.md), 및 [시스템 요구 사항](../debugger/aspnet-debugging-system-requirements.md)합니다.  

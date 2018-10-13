@@ -1,7 +1,7 @@
 ---
 title: 메모리 Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549660"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297197"
 ---
 # <a name="memory-windows"></a>메모리 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거에서 변수에 대 한 메모리 보기](https://docs.microsoft.com/visualstudio/debugger/memory-windows)합니다.  
-  
 합니다 **메모리** 창 응용 프로그램에서 사용 되는 메모리 공간을 볼 수 있습니다. 합니다 **Watch** 창 **간략 한 조사식** 대화 상자에서 **자동** 창 및 **지역** 창에는 변수의 내용을 표시 메모리의 특정 위치에 저장 합니다. 하지만 **메모리** 창 큰 그림을 보여 줍니다. 이 뷰는 다른 창들에는 잘 표시되지 않는 버퍼나 큰 문자열 등의 큰 데이터를 검사하는 데 편리합니다. 그러나 합니다 **메모리** 창 데이터 표시로 제한 되지 않습니다. 메모리 창에는 메모리 공간의 할당되지 않은 메모리에 데이터, 코드 또는 임의 가비지 비트 중 어떤 내용이 있든 관계없이 메모리 공간의 모든 내용이 표시됩니다.  
   
  합니다 **메모리** 기간은 주소 수준 디버깅을 활성화 하는 경우에 사용할 수 있습니다 합니다 **옵션**대화 상자에서**디버깅** 노드. 합니다 **메모리** 기간은 메모리 개념을 인식 하지 못하는 언어인 SQL 스크립트에 사용할 수 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 편집을 사용 하 고 계속 하기 (C#) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4305c39c62dfcc927ea7295ceec786d3da40f56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 536a54958154a8ec4741ea979f70caf7183dbd12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298339"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>방법: 편집하며 계속하기 사용(C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 사용 하 여 편집 하며 계속 하기 (C#)](https://docs.microsoft.com/visualstudio/debugger/how-to-use-edit-and-continue-csharp)합니다.  
-  
 C#에서 편집하며 계속하기를 사용하면 디버깅하는 동안 중단 모드에서 코드를 변경할 수 있습니다. 디버깅 세션을 중지하고 다시 시작하지 않고도 변경 내용을 적용할 수 있습니다.  
   
  편집 하며 계속 하기는 자동으로 호출 중단 모드에서 변경한 다음 디버거 실행을 선택 하는 경우와 같은 명령을 **계속**하십시오 **단계**, 또는 **다음 문 설정**, 또는 디버거 창에서 함수를 계산 합니다.  

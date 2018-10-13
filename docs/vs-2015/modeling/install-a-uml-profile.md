@@ -1,7 +1,7 @@
 ---
 title: UML 프로필 설치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47346af32cf1b86ddf2f526e271127e4bde2da95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b72c87f79ce5bafbc655fade59d6a8b7570f694
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557451"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275212"
 ---
 # <a name="install-a-uml-profile"></a>UML 프로필 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 프로필 설치](https://docs.microsoft.com/visualstudio/modeling/install-a-uml-profile)합니다.  
-  
 UML 프로필을 통해 Visual Studio를 확장할 수 있습니다. 프로필을 사용하면 UML 모델에서 만들 수 있는 요소에 스테레오타입 및 다른 속성을 추가할 수 있습니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
  프로필을 사용하여 만든 UML 모델을 받은 경우 동일한 프로필을 설치하지 않으면 일부 속성이 표시되지 않습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 코드 편집기에서 데이터 팁의 데이터 값 보기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1a7e755fd81bb66d822f7232e903fea9c53087c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273925"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>코드 편집기에서 데이터 팁의 데이터 값 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 편집기에서 데이터 팁의 데이터 값 보기](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor)합니다.  
-  
 DataTips를 통해 디버깅하는 동안 프로그램의 변수에 대한 정보를 손쉽게 볼 수 있습니다. DataTips는 중단 모드에서 현재 실행 범위 내의 변수에 대해서만 작동합니다.  
   
  [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]DataTips를 소스 파일 내의 특정 위치에 고정할 수 있습니다, 또는 모두를 기반으로 부동 상태로 있을 수 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows.  

@@ -1,7 +1,7 @@
 ---
 title: iOS를 사용하여 빌드할 도구 설치 및 구성 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 84ff5fbd829fa47452ba258d431dcc0d0148ebf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2fe10b960de79694050af5cbad3e707bb21568b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295284"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [설치 And Configure Tools to Build using iOS](https://docs.microsoft.com/visualstudio/cross-platform/install-and-configure-tools-to-build-using-ios)합니다.  
-  
   
 플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버깅하고 iOS 시뮬레이터 또는 iOS 장치에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 코드를 빌드하고 원격으로 실행해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트 [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)를 설정 및 구성해야 합니다. 원격 에이전트는 Visual Studio의 빌드 요청을 처리하고 Mac에 연결된 iOS 장치 또는 Mac의 iOS 시뮬레이터에서 앱을 실행합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 코드 검사 문제 해결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5934f1e42b9954d0d8206db90304142d77f8df78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306053"
 ---
 # <a name="troubleshooting-code-coverage"></a>코드 검사 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 검사 문제 해결](https://docs.microsoft.com/visualstudio/test/troubleshooting-code-coverage)합니다.  
-  
 Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 어셈블리(.dll 또는 .exe 파일)에 대한 데이터를 수집합니다. 그러나 코드 검사 결과 창에 "빈 결과 작성됨: ..."과 유사한 오류가 표시될 수 있습니다. 이 문제가 발생하는 이유는 여러 가지가 있습니다. 이 항목은 이러한 문제를 해결하는 데 유용합니다.  
   
 ## <a name="what-you-should-see"></a>표시 내용  

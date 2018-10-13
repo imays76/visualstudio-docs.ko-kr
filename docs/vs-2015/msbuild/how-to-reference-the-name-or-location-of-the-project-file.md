@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로젝트 파일의 이름 또는 위치 참조 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5834622204249eac33bae6e67dc51f4ff98a9135
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc4da4df18c2a214372ec6ea67865c10c507677e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296012"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>방법: 프로젝트 파일의 이름 또는 위치 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 이름 또는 프로젝트 파일의 위치 참조](https://docs.microsoft.com/visualstudio/msbuild/how-to-reference-the-name-or-location-of-the-project-file)합니다.  
-  
   
 자체 속성을 만들 필요 없이 프로젝트 파일 자체에 있는 프로젝트의 이름 또는 위치를 사용할 수 있습니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 프로젝트 파일 이름 및 프로젝트와 관련된 기타 속성을 참조하는 예약된 속성을 제공합니다. 예약된 속성에 대한 자세한 내용은 [MSBuild의 예약된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)을 참조하세요.  
   

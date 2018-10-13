@@ -1,7 +1,7 @@
 ---
 title: 응용 프로그램 설정 관리(.NET) | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc739c3ad34d5ed3b3de0a72ec76245c1ba0c155
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555842"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289512"
 ---
 # <a name="managing-application-settings-net"></a>응용 프로그램 설정 관리(.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [응용 프로그램 설정 관리 (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet)합니다.  
-  
 응용 프로그램 설정을 사용하여 응용 프로그램 정보를 동적으로 저장할 수 있습니다. 설정을 사용하면 응용 프로그램 코드(예: 연결 문자열), 사용자 기본 설정 및 런타임에 필요한 기타 정보에 포함되지 않아야 하는 정보를 클라이언트 컴퓨터에 저장할 수 있습니다.  
   
  응용 프로그램 설정은 이전 버전의 Visual Studio에서 사용되던 동적 속성을 대체합니다.  

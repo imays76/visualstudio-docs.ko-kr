@@ -1,7 +1,7 @@
 ---
 title: 전구를 사용하여 빠른 작업 수행 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd0c28f55be540207c7590e068c0b5f93a2abc39
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 338e8e82e8b8f904c6f7f1e9e5f079e3de788bd3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294569"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>전구를 사용하여 빠른 작업 수행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 전구는 Visual Studio 2015의 새로운 생산성 기능입니다. 전구는 Visual Studio 편집기에 나타나고 리팩터링 및 오류 해결과 같은 빠른 작업을 수행하기 위해 클릭할 수 있는 아이콘입니다. 전구는 오류 해결 및 리팩터링 지원을 한곳에 집중화하며 대개는 현재 입력하고 있는 줄이 여기에 해당합니다.  
   
  ![작은 전구 아이콘](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")  

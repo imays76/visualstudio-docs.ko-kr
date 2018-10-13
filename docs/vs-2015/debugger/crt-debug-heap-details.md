@@ -1,7 +1,7 @@
 ---
 title: CRT 디버그 힙 정보 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -80,18 +80,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bffaf070bfd92be0611156df65f008bd06c1ec32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a97054db575d1d92f2077efe46d89573fba02dfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542262"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297744"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 디버그 힙 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CRT Debug Heap Details](https://docs.microsoft.com/visualstudio/debugger/crt-debug-heap-details)합니다.  
-  
 이 항목에서는 CRT 디버그 힙에 대해 자세히 설명합니다.  
   
 ##  <a name="BKMK_Contents"></a> 목차  

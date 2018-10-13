@@ -1,7 +1,7 @@
 ---
 title: 특정 대상 .NET Framework 버전 지정 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae41e7aea5bd4a1a355993a061829a190e1ef80b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277929"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>특정 대상 .NET Framework 버전 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [특정.NET Framework 버전 대상 지정](https://docs.microsoft.com/visualstudio/ide/targeting-a-specific-dotnet-framework-version)합니다.  
-  
 Visual Studio에서는 프로젝트에서 대상으로 하려는 .NET Framework의 버전 또는 프로필을 지정할 수 있습니다. 응용 프로그램이 다른 컴퓨터에서 실행되려면 응용 프로그램이 대상으로 하는 Framework 버전이 컴퓨터에 설치된 Framework 버전과 호환되어야 합니다.  
   
  이 섹션에는 프로젝트에서 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 특정 버전을 대상으로 하는 방법에 대해 설명하는 항목이 있습니다.  

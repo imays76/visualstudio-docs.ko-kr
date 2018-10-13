@@ -1,7 +1,7 @@
 ---
 title: 코드 메트릭 데이터 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 954b81dfe738ebd0de1f8aa38cb4975a05333feb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae1ba68981b3ed462fc4f0f849226913c81ce1e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302213"
 ---
 # <a name="working-with-code-metrics-data"></a>코드 메트릭 데이터 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드 메트릭 데이터 작업](https://docs.microsoft.com/visualstudio/code-quality/working-with-code-metrics-data)합니다.  
-  
 합니다 **코드 메트릭 결과** 코드 메트릭 분석 하 여 생성 되는 데이터 창에 표시 됩니다. 코드 메트릭 데이터 값에 대 한 자세한 내용은 참조 하세요. [코드 메트릭 값](../code-quality/code-metrics-values.md)합니다.  
   
  이 항목에는 다음과 같은 단원이 포함되어 있습니다.  

@@ -1,7 +1,7 @@
 ---
 title: 전역 설정을 모니터링 하는 텍스트 관리자를 사용 하 여 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d7f93d0b736548f9ee815e0870a89dbd30ea21d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303313"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>전역 설정을 모니터링 하는 텍스트 관리자를 사용 하 여
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [모니터 전역 설정에 텍스트 관리자를 사용 하 여](https://docs.microsoft.com/visualstudio/extensibility/using-the-text-manager-to-monitor-global-settings)입니다.  
-  
 핵심 편집기를 구현 하는 경우 이러한 변경 내용은 편집기 인스턴스에 영향을 줄 수 있으므로 전역 설정에 대 한 변경 내용을 모니터링 해야 합니다. 텍스트 관리자에 의해 발생 하는 이벤트를 수신 하 여 변경 내용을 추적할 수 있습니다. 예를 들어, 코어 편집기에서 해당 문서 데이터 개체와 같은 모양이 나 구성 요소의 동작에 대 한 전역 기본 설정을 지정 하는 경우 텍스트 관리자는이 정보를 저장 및 영향을 받는 모든 클라이언트에 통신 합니다.  
   
 ## <a name="text-manager-functions"></a>텍스트 관리자 함수  

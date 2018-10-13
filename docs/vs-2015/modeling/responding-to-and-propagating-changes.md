@@ -1,7 +1,7 @@
 ---
 title: 변경 내용 전파에 응답 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 157908b1d612f840f4d1c3e48c5ecd0350491b39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32deaa75ed09ad1a1320ec72d95d75adc92c12b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280386"
 ---
 # <a name="responding-to-and-propagating-changes"></a>변경 내용에 대한 대응 및 전파
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [에 응답 하 고 변경 내용을 전파](https://docs.microsoft.com/visualstudio/modeling/responding-to-and-propagating-changes)합니다.  
-  
 요소를 생성, 삭제 하거나 업데이트할 때이 모델의 다른 부분 또는 파일, 데이터베이스 또는 다른 구성 요소와 같은 외부 리소스에 변경 내용을 전파 하는 코드를 작성할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

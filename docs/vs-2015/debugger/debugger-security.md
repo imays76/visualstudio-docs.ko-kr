@@ -1,7 +1,7 @@
 ---
 title: 디버거 보안 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f40dfc655148530045b6566ac56d77553951b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556328"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290500"
 ---
 # <a name="debugger-security"></a>디버거 보안
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버거 보안](https://docs.microsoft.com/visualstudio/debugger/debugger-security)합니다.  
-  
 다른 프로세스를 디버깅하는 기능을 사용하면 특히 원격으로 디버깅하는 경우 등과 같이 일반적으로 얻을 수 없는 매우 강력한 성능을 발휘할 수 있습니다. 이 경우 디버깅 중인 컴퓨터에 대해 악의적인 사용자가 디버거를 통해 광범위한 손상을 입힐 수 있습니다.  
   
  그러나 많은 개발자들은 보안 위협이 반대 방향으로 진행될 수도 있다는 사실을 깨닫지 못하고 있습니다. 디버기 프로세스의 악의적인 코드로 인해 디버깅 컴퓨터의 보안이 위험에 처할 수 있습니다. 주의해야 할 보안 위험 요소에는 여러 가지가 있습니다.  
@@ -91,7 +89,7 @@ ms.locfileid: "47556328"
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)   
  [Debugger Basics](../debugger/debugger-basics.md) (디버거 기본 사항)  
  [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 다음 정보가 의심 스 럽 또는 확실 하지 않은 경우이 프로세스에 연결 하지 않습니다](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
- [보안 경고: 디버거가 신뢰할 수 없는 명령을 실행해야 합니다.](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
 
 
 

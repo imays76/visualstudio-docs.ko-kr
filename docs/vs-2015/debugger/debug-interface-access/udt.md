@@ -1,7 +1,7 @@
 ---
 title: UDT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91b552dc16ea71da41322bbdaee242c9f950a022
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa3ed69315ebb2fa80d001fb60b16ed65cbcbbbb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280009"
 ---
 # <a name="udt"></a>UDT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UDT](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/udt)합니다.  
-  
 각 클래스, 구조체 및 공용으로 식별 되는 `SymTagUDT` 기호입니다. 각 멤버, 함수, 데이터 또는 중첩 된 형식 및 각 기본 클래스에 사용자 정의 형식 (UDT)의 클래스 자식으로 나타납니다.  
   
 ## <a name="properties"></a>속성  

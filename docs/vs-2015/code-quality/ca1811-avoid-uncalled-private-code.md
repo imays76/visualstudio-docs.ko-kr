@@ -1,7 +1,7 @@
 ---
 title: ': Ca1811 호출 되지 않는 개인 코드 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2f08d3fe31d6a314de9bc64441add64246f8e256
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 6907ffdfc8fa7fec097ce1c1adf9eeabdd890ccc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293568"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1811: 호출 되지 않는 전용 코드를 방지](https://docs.microsoft.com/visualstudio/code-quality/ca1811-avoid-uncalled-private-code)합니다.
-
 |||
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|

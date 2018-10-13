@@ -1,7 +1,7 @@
 ---
 title: 텍스트 찾기 및 바꾸기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43f98a53746e609f75118fa3a490ef99e6a4adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564539"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273444"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Finding and Replacing Text](https://docs.microsoft.com/visualstudio/ide/finding-and-replacing-text)합니다.  
-  
 **찾기 및 바꾸기** 컨트롤 또는 **파일에서 찾기/바꾸기**를 사용하여 **찾기 결과** 창과 같은 특정 텍스트 기반 출력 창 또는 Visual Studio Code 편집기에서 텍스트를 찾아서 바꿀 수 있습니다. XAML 디자이너, Windows Forms 디자이너와 같은 일부 디자이너 창 및 도구 창에서 검색하여 바꿀 수도 있습니다.  
   
  검색 범위를 현재 문서, 현재 솔루션 또는 사용자 지정 폴더 집합으로 지정할 수 있습니다. 다중 파일 검색을 위해 파일 이름 확장명 집합을 지정할 수도 있습니다. .NET 정규식을 사용하여 검색 구문을 사용자 지정할 수 있습니다.  

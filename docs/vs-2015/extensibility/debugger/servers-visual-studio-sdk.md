@@ -1,7 +1,7 @@
 ---
 title: 서버 (Visual Studio SDK) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e79e5e00bb4708359c19fd6a2ff95c7f31fd1179
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84fb3ea778dd5652458c185171dc3fbcaca5a098
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565298"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274224"
 ---
 # <a name="servers-visual-studio-sdk"></a>서버(Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [(Visual Studio SDK) 서버](https://docs.microsoft.com/visualstudio/extensibility/debugger/servers-visual-studio-sdk)합니다.  
-  
 디버거 아키텍처 측면을 **server**:  
   
 -   포트 및 포트 공급 업체의 컨테이너 이며 세션 디버그 관리자 (SDM) 포트 및 포트 공급 업체와 통신 하 고 디버그 엔진에 사용 됩니다.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 레거시 언어 서비스의 개요 표시 지원 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336e8c04116afa5523a10f7e0617fdc18678c5d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97fb82459540e897d88283d0c09ba3a81b265c00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299262"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스의 개요 표시 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 레거시 언어 서비스의 개요 표시 지원](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-support-outlining-in-a-legacy-language-service)합니다.  
-  
 개요 확장 또는 축소 텍스트의 서로 다른 지역에 사용 됩니다. 사용 되는 방식으로 개요 다른 언어에서 다르게 정의할 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요.  
   
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 개요를 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [연습: 개요](../../extensibility/walkthrough-outlining.md)합니다.  

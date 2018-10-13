@@ -1,7 +1,7 @@
 ---
 title: '오류: 사이트에서 IP 주소를 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93d64f06db4b1f070da4f0963ed879ef64e4cb33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 62d975903bc29835cbf43a21e38fe727a37aec9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554319"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306360"
 ---
 # <a name="error-site-uses-ip-address"></a>오류: 사이트에서 IP 주소를 사용합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: IP 주소를 사용 하는 사이트](https://docs.microsoft.com/visualstudio/debugger/error-site-uses-ip-address)합니다.  
-  
 이 오류는 디버거에서 IP 주소를 사용하는 웹 응용 프로그램에 자동으로 연결하려고 할 때 발생합니다. 변경 하는 경우 이런 **웹 사이트 id** 하 **특정 IP 주소를 사용 하 여** IIS에서 합니다.  
   
  자동 연결이 제대로 동작하기 위해서는 컴퓨터 이름뿐 아니라 특정 IP 주소도 함께 사용하여 프로젝트를 만들어야 합니다. 그렇지 않으면 디버거에서 컴퓨터 이름을 localhost로 변경하므로 DEBUG 동사를 IIS로 보낼 수 없게 됩니다.  

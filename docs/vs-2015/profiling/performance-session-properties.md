@@ -1,7 +1,7 @@
 ---
 title: 성능 세션 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cc3832c0e5a1c4aed99de070b15b0b83ae1254f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306152"
 ---
 # <a name="performance-session-properties"></a>성능 세션 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 세션 속성](https://docs.microsoft.com/visualstudio/profiling/performance-session-properties)합니다.  
-  
 **성능 세션**에서는 응용 프로그램을 프로파일링하는 방식을 결정하는 설정을 구성할 수 있습니다. 또한 프로파일링 세션에 대해 생성되는 보고서도 저장됩니다.  
   
  **요구 사항**  

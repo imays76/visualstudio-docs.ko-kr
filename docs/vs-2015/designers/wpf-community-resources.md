@@ -1,7 +1,7 @@
 ---
 title: WPF 커뮤니티 리소스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06b7022f44f6aa8c180e28ef13493d17c1a008df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 326670dcb5087961b17d45f8f945c989da044c9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297104"
 ---
 # <a name="wpf-community-resources"></a>WPF 커뮤니티 리소스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WPF 커뮤니티 리소스](https://docs.microsoft.com/visualstudio/designers/wpf-community-resources)합니다.  
-  
 Microsoft는 WPF 팀 멤버 및 커뮤니티 리더가 생성한 블로그, 포럼 및 Microsoft Connect 피드백 센터를 포함하여 배우고, 토론하고, WPF(Windows Presentation Foundation)에 대한 피드백을 제공하는 다양한 커뮤니티 리소스를 제공합니다.  
   
 ## <a name="community"></a>커뮤니티  

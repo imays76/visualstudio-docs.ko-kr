@@ -1,7 +1,7 @@
 ---
 title: 기호 공급자 인터페이스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30f8d8d758c9165fdb65064de394cd67349ce57c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e34b0240c7f700aed245081a5be4586c1b9b0d52
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283220"
 ---
 # <a name="symbol-provider-interfaces"></a>기호 공급자 인터페이스
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [기호 공급자 인터페이스](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/symbol-provider-interfaces)합니다.  
-  
 다음은에 대 한 기호 처리 인터페이스는 [!INCLUDE[vsipsdk](../../../includes/vsipsdk-md.md)]합니다.  
   
 ## <a name="discussion"></a>토론  

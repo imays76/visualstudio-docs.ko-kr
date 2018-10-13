@@ -1,7 +1,7 @@
 ---
 title: 글꼴 대화 상자 (Microsoft Spy + + 도움말) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8e753bd3f0e00e813556813689cb0702fc43214
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0fa7fcf78180790e9f57ae2f944a9b5683e8423
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288072"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>글꼴 대화 상자(Microsoft Spy++ 도움말)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [글꼴 대화 상자 (Microsoft Spy + + 도움말)](https://docs.microsoft.com/visualstudio/debugger/font-dialog-box-microsoft-spy-increment-help)합니다.  
-  
 이 대화 상자를 사용 하 여 문자에 사용 된 글꼴을 구성 하는 [Spy + + 뷰](../debugger/spy-increment-views.md) 창입니다. 이 대화 상자를 표시 하려면 확장 합니다 **뷰** 메뉴 선택 **글꼴**합니다.  
   
  다음 설정은 사용할 수 있습니다.  

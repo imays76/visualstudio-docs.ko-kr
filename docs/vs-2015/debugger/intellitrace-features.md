@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace 기능 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 73
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15b58b80a3ab3c9ae1a515eda82a946d56c0554d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4443c18b6972d87d49272d33e7d2f33c25277c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552125"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278553"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IntelliTrace 기능](https://docs.microsoft.com/visualstudio/debugger/intellitrace-features)합니다.  
-  
 IntelliTrace를 사용하여 응용 프로그램의 이벤트 및 메서드 호출을 기록하고 실행 중 다양한 지점에서 상태(호출 스택 및 지역 변수 값)를 검사할 수 있습니다. 일반적으로 디버깅을 시작-IntelliTrace가 기본적으로 켜져 및 새에서 IntelliTrace가 기록 정보를 볼 수 있습니다 **진단 도구** 창의 합니다 **이벤트** 탭 합니다. 이벤트를 선택 하 고 클릭 **기록 디버깅 활성화** 호출 스택 및이 이벤트에 대 한 기록 된 지역 변수를 확인 합니다.  
   
  단계별 설명을 참조 하세요 [연습: IntelliTrace를 사용 하 여](../debugger/walkthrough-using-intellitrace.md)입니다.  

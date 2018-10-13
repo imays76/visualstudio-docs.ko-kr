@@ -1,7 +1,7 @@
 ---
 title: 하나 이상의 선택한 데이터베이스 개체는 대상 클래스의 스키마와 일치 하지 않는 스키마를 반환 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 516d7c30345b66fe2c57879db5ff6ab1f38fdd4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f59583c1ab8bd38c1e1fb3207970ac9478d498
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272677"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>선택한 데이터베이스 개체 중 하나 이상이 대상 클래스의 스키마와 일치하지 않는 스키마를 반환합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [대상 클래스의 스키마와 일치 하지 않는 스키마를 반환 하는 하나 이상의 선택한 데이터베이스 개체](https://docs.microsoft.com/visualstudio/data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class)합니다.  
-  
   
 선택한 하나 이상의 데이터베이스 개체에서 대상 데이터 클래스 스키마와 일치하지 않는 스키마를 반환합니다. 디자이너에 아무 것도 추가되지 않았습니다.  
   

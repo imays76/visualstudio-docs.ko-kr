@@ -1,7 +1,7 @@
 ---
 title: IDebugClassField::EnumNestedClasses | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8f7f01b1412eabe2b9ef8ad43f66038545b254f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a554c65ca06681aa89fd2583038bf958fc3f51bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281283"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugClassField::EnumNestedClasses](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugclassfield-enumnestedclasses)합니다.  
-  
 이 클래스에서 중첩 된 클래스에 대 한 열거자를 만듭니다.  
   
 ## <a name="syntax"></a>구문  

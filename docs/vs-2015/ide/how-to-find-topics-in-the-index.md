@@ -1,7 +1,7 @@
 ---
 title: '방법: 색인에서 항목 찾기 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46021283b922758a8b4c5eafad1adeda3d6be573
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296805"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>방법: 색인에서 항목 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 색인에서 항목 찾기](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-index)합니다.  
-  
 색인에는 설치된 콘텐츠 항목과 연결된 키워드 목록이 포함되어 있습니다. 각 항목에 둘 이상의 키워드가 연결되어 있을 수 있으며, 각 키워드가 둘 이상의 항목에 연결되어 있을 수도 있습니다. 책의 색인과 동일한 방식으로 이 색인을 사용합니다.  
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>색인을 사용하여 항목을 찾으려면  

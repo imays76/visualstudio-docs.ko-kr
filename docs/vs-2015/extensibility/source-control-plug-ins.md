@@ -1,7 +1,7 @@
 ---
 title: 원본 제어 플러그 인 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e633a504d0f7efd42db61723d7902fbd6c38dec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 636d36ba34f1c02061671d286725cdd80f6463ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550926"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291540"
 ---
 # <a name="source-control-plug-ins"></a>소스 제어 플러그 인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 플러그 인](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-ins)합니다.  
-  
 소스 제어 플러그 인 SDK 참조 섹션에는 소스 제어 시스템으로 통합 될 수 있도록 전체 인터페이스 사양을 포함 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 구문 및 의미 체계의 소스 제어 플러그 인 인터페이스를 구현 해야 하는 다양 한 함수 및 데이터 형식 지정을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE)입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

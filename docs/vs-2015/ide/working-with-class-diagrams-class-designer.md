@@ -1,7 +1,7 @@
 ---
 title: 클래스 다이어그램 사용(클래스 디자이너) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf7812d7d0047b71bac846e03ec15e7b3c92869f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306711"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>클래스 다이어그램 사용(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [클래스 다이어그램 (클래스 디자이너)를 사용 하 여 작업](https://docs.microsoft.com/visualstudio/ide/working-with-class-diagrams-class-designer)합니다.  
-  
 클래스 다이어그램을 사용하면 다른 사용자가 작성했거나 자신이 오래 전에 작성한 프로젝트의 클래스 구조를 쉽게 이해할 수 있습니다. 그러면 프로젝트 정보를 사용자 지정하고 다른 사용자와 공유 및 제공할 수 있습니다.  
   
  프로젝트 정보를 제공하는 첫 단계에서는 보여 주려는 정보를 표시하는 클래스 다이어그램을 만듭니다. 자세한 내용은 [형식 및 관계 보기(클래스 디자이너)](../ide/viewing-types-and-relationships-class-designer.md)를 참조하세요. 개별 프로젝트 보기, 선택한 프로젝트 형식 하위 집합 또는 선택한 형식의 멤버 하위 집합을 표시하는 데 사용할 수 있는 여러 클래스 다이어그램을 프로젝트에 대해 만들 수 있습니다.  

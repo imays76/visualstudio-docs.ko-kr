@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 및 항목 템플릿 등록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 42d1bbb5ab83970ff4a251f65f17f782a646e2e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306815"
 ---
 # <a name="registering-project-and-item-templates"></a>프로젝트 템플릿 및 항목 템플릿 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [등록 프로젝트 및 항목 템플릿](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-project-and-item-templates)합니다.  
-  
 프로젝트 형식에는 해당 프로젝트 및 프로젝트 항목 템플릿을 위치한 디렉터리를 등록 해야 합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 에 표시할 작업을 결정 하 여 프로젝트 형식과 연결 된 등록 정보를 사용 하는 **새 프로젝트 추가** 하 고 **새 항목 추가** 대화 상자.  
   
  템플릿에 대 한 자세한 내용은 참조 하세요. [추가 프로젝트 및 프로젝트 항목 템플릿](../../extensibility/internals/adding-project-and-project-item-templates.md)합니다.  

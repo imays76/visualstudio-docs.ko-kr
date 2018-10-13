@@ -1,7 +1,7 @@
 ---
 title: 함수 뷰 - 계측 데이터 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c99ac53b5059877a7025d978439a8c3468640eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60238ee0fab8819d2b44ff68ba5122b7f65444ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556130"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306880"
 ---
 # <a name="functions-view---instrumentation-data"></a>함수 뷰 - 계측 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [함수 뷰-계측 데이터](https://docs.microsoft.com/visualstudio/profiling/functions-view-instrumentation-data)입니다.  
-  
 함수 보고서 뷰는 함수 이름별로 프로파일링 데이터를 나열합니다.  
   
 ## <a name="general"></a>일반  

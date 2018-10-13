@@ -1,7 +1,7 @@
 ---
 title: 'Idiaframedata:: Get_virtualaddress | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58a5c2929920c3af0735655723d20a687650a119
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d525737856107b8b64ab7cbd274efd956c3ee4ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272326"
 ---
 # <a name="idiaframedatagetvirtualaddress"></a>IDiaFrameData::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiaframedata:: Get_virtualaddress](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-virtualaddress)합니다.  
-  
 프레임에 대 한 코드의 가상 주소 (VA)를 검색합니다.  
   
 ## <a name="syntax"></a>구문  

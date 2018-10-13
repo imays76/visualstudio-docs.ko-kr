@@ -1,7 +1,7 @@
 ---
 title: '방법: ClickOnce 응용 프로그램에 대 한 파일 연결 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 0cfdbb9262f9a70f3f680554f562ff6c5c2380b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b6d5d7b6196b78bfaa68d944b9e652dabf54b85
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554363"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300963"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램에 대한 파일 연결 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 파일 연결에 대 한 ClickOnce 응용 프로그램 만들기](https://docs.microsoft.com/visualstudio/deployment/how-to-create-file-associations-for-a-clickonce-application)합니다.  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 사용자가 이러한 형식의 파일을 열면 자동으로 시작 될 됩니다 있도록 응용 프로그램은 하나 이상의 파일 이름 확장명을 사용 하 여 연결할 수 있습니다. 에 파일 이름 확장명 지원을 추가 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램은 간단 합니다.  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>ClickOnce 응용 프로그램에 대 한 파일 연결을 만들려면  

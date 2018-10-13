@@ -1,7 +1,7 @@
 ---
 title: 사용자 인터페이스 디자인 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fed919390bfd63018b0d5aed46fcb17a38a39fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fe7b4742867b36852bbac15ad7ba1e10a77daf0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306672"
 ---
 # <a name="designing-user-interfaces"></a>사용자 인터페이스 디자인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 인터페이스 디자인](https://docs.microsoft.com/visualstudio/designers/designing-user-interfaces)합니다.  
-  
 Visual Studio의 다양한 도구를 사용하여 응용 프로그램용 사용자 인터페이스를 만들고 디자인할 수 있습니다.  
   
 |자세한 정보를 확인할 항목|보기|  

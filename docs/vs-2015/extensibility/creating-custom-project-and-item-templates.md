@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 프로젝트 및 항목 템플릿 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 3135702050caf1b1825c41eb909958a7ab5d8ffb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47593122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304631"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>사용자 지정 프로젝트 및 항목 템플릿 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 프로젝트 및 항목 템플릿 만들기](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-project-and-item-templates)합니다.  
-  
 Visual Studio SDK에는 사용자 지정 프로젝트 템플릿 및 사용자 지정 항목 템플릿을 만드는 프로젝트 템플릿이 포함 됩니다. 이러한 템플릿은 몇 가지 일반적인 매개 변수 대체 단어를 포함 하 고 zip 파일로 빌드합니다. 자동으로 배포 되지, 및 실험적 인스턴스에서 사용할 수 있습니다. Zip을 복사 해야 위치로 파일  
   
  템플릿 만들기 템플릿 더 큰 확장에 템플릿을 포함할 수 있습니다. 이렇게 하면 소스 파일에 대해 버전 제어를 구현 하 고 템플릿 프로젝트의 그룹을 하나의 VSIX 패키지를 작성할 수 있습니다.  

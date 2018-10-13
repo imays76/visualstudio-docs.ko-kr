@@ -1,7 +1,7 @@
 ---
 title: '방법: 호스팅 프로세스 비활성화 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2a3c2eee43d333ee7b58907a8471f4be9815bd47
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281400"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: Disable the Hosting Process](https://docs.microsoft.com/visualstudio/ide/how-to-disable-the-hosting-process)합니다.  
-  
 호스팅 프로세스를 사용하면 특정 API에 대한 호출에 영향이 있을 수 있습니다. 이 경우 올바른 결과를 반환하기 위해 호스팅 프로세스를 사용하지 않도록 설정해야 합니다.  
   
 ### <a name="to-disable-the-hosting-process"></a>호스팅 프로세스를 사용하지 않도록 설정하려면  

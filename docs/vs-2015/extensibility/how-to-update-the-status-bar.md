@@ -1,7 +1,7 @@
 ---
 title: '방법: 상태 표시줄 업데이트 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97b96023682d1acfda5aa0c47c07169b558c7569
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd784b718fb370ec8ce04937119a9d64995cdd8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301095"
 ---
 # <a name="how-to-update-the-status-bar"></a>방법: 상태 표시줄 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 상태 표시줄 업데이트](https://docs.microsoft.com/visualstudio/extensibility/how-to-update-the-status-bar)합니다.  
-  
 합니다 **상태 표시줄** 는 하나 이상의 상태 텍스트 줄 또는 표시기를 포함 하는 여러 응용 프로그램 창의 아래쪽에 있는 컨트롤 막대입니다.  
   
 ### <a name="to-update-the-status-bar"></a>상태 표시줄을 업데이트 하려면  

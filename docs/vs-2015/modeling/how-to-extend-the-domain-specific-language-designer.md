@@ -1,7 +1,7 @@
 ---
 title: '방법: 도메인별 언어 디자이너 확장 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 568b5f608d06c61b25b84bce56bb8c80a1a6d690
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294270"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인별 언어 디자이너 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ DSL 정의 편집 하는 데 사용 하는 디자이너에 확장을 만들 수 
      System.Windows.Forms  
   
 ## <a name="testing-and-deployment"></a>테스트 및 배포  
- 확장을이 항목의 테스트를 빌드하고 솔루션을 실행 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 열립니다. 이 인스턴스에서 DSL 솔루션을 엽니다. DslDefinition 다이어그램을 편집 합니다. 확장 동작을 볼 수 있습니다.  
+ 확장을이 항목의 테스트를 빌드하고 솔루션을 실행 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 열립니다. 이 인스턴스에서 DSL 솔루션을 엽니다. DslDefinition 다이어그램을 편집 합니다. 확장 동작을 볼 수 있습니다.  
   
  확장을 배포 하는 기본 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 다른 컴퓨터에 다음이 단계를 수행 합니다.  
   

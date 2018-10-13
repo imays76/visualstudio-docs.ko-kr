@@ -1,7 +1,7 @@
 ---
 title: 클래스 디자이너의 Visual C++ 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 884d8cc74ea550c804aa6dd6ac735eb6f70be789
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285690"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>클래스 디자이너의 Visual C++ 클래스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [클래스 디자이너의 Visual c + + 클래스](https://docs.microsoft.com/visualstudio/ide/visual-cpp-classes-in-class-designer)합니다.  
-  
 클래스 디자이너는 C++ 클래스를 지원하며, C++ 클래스가 여러 상속 관계를 포함한다는 점을 제외하고 Visual Basic 및 Visual C# 클래스 모양과 동일한 방식으로 네이티브 C++ 클래스를 시각화합니다. 클래스 모양을 확장하여 추가 필드와 메서드를 클래스에 표시하거나 축소하여 공간을 절약할 수 있습니다.  
   
 > [!NOTE]

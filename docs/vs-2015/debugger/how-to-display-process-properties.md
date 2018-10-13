@@ -1,7 +1,7 @@
 ---
 title: '방법: 프로세스 속성 표시 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb77bcc22ab4e507f5b35d29c191efe26e9ad3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6816aed50bd7d03338508856472f893b441842e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542766"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296077"
 ---
 # <a name="how-to-display-process-properties"></a>방법: 프로세스 속성 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 프로세스 속성 표시](https://docs.microsoft.com/visualstudio/debugger/how-to-display-process-properties)합니다.  
-  
 에 나열 된 프로세스에 대 한 자세한 내용을 알아보려면 [프로세스 뷰](../debugger/processes-view.md)를 사용 합니다 [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)합니다.  
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>프로세스 속성 대화 상자를 열려면  

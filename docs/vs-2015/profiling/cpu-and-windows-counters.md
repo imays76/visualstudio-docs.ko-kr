@@ -1,7 +1,7 @@
 ---
 title: CPU 및 Windows 카운터 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a50dc0669b649a68a34402ed93ddc858e179cb57
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301823"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 및 Windows 카운터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CPU 및 Windows 카운터](https://docs.microsoft.com/visualstudio/profiling/cpu-and-windows-counters)합니다.  
-  
 Visual Studio 프로파일러를 사용하면 운영 체제(Windows 카운터)에 의해 생성된 성능 데이터 및 프로세서 단위(CPU 카운터)에 의해 생성된 성능 데이터를 수집할 수 있습니다.  
   
  **요구 사항**  

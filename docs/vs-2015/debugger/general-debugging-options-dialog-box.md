@@ -1,7 +1,7 @@
 ---
 title: 옵션 대화 상자, 디버깅, 일반 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c765ad6431572c224fa5458b9a4c65d9bb7a8cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 222cd90f73611aa40980679795debf4cb5eb2c0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306893"
 ---
 # <a name="general-debugging-options-dialog-box"></a>옵션 대화 상자, 디버깅, 일반
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [옵션 대화 상자, 디버깅, 일반](https://docs.microsoft.com/visualstudio/debugger/general-debugging-options-dialog-box)합니다.  
-  
 합니다**도구 / 옵션 / 디버깅 / 일반** 페이지에서는 다음 옵션을 설정할 수 있습니다.  
   
  **모든 중단점을 삭제 하기 전에 확인**  
@@ -130,7 +128,7 @@ ms.locfileid: "47556019"
  **Dll 내보내기 로드**  
  dll 내보내기 테이블이 로드됩니다. Windows 메시지, Windows 프로시저(WindowProcs), COM 개체, 마샬링 또는 기호가 없는 dll을 사용하여 작업하는 경우 dll 내보내기 테이블의 기호 정보가 유용할 수 있지만, dll 내보내기 정보를 읽으면 일부 오버헤드가 발생합니다. 따라서 이 기능은 기본적으로 해제되어 있습니다.  
   
- Dll의 내보내기 테이블에서 사용할 수 있는 기호를 보려면 사용 하 여 `dumpbin /exports`입니다. 모든 32비트 시스템 dll에 기호를 사용할 수 있습니다. `dumpbin /exports` 출력을 읽으면 영숫자가 아닌 문자를 포함하여 정확한 함수 이름을 확인할 수 있습니다. 이 방법은 함수에 중단점을 설정하는 데 유용합니다. dll 내보내기 테이블에 있는 함수 이름은 디버거에서 일부가 잘린 상태로 나타날 수 있습니다. 호출은 현재 함수(가장 안쪽에 중첩된)가 맨 위에 표시되어 호출한 순서로 나열됩니다. 자세한 내용은 [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)합니다.  
+ dll의 내보내기 테이블에서 사용할 수 있는 기호를 확인하려면 `dumpbin /exports`를 사용하세요. 모든 32비트 시스템 dll에 기호를 사용할 수 있습니다. `dumpbin /exports` 출력을 읽으면 영숫자가 아닌 문자를 포함하여 정확한 함수 이름을 확인할 수 있습니다. 이 방법은 함수에 중단점을 설정하는 데 유용합니다. dll 내보내기 테이블에 있는 함수 이름은 디버거에서 일부가 잘린 상태로 나타날 수 있습니다. 호출은 현재 함수(가장 안쪽에 중첩된)가 맨 위에 표시되어 호출한 순서로 나열됩니다. 자세한 내용은 [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)를 참조하십시오.  
   
  **병렬 스택 다이어그램 거꾸로 표시**  
  스택에 표시 되는 방향을 제어 합니다 **병렬 스택** 창입니다.  

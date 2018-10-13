@@ -1,7 +1,7 @@
 ---
 title: 속성 확장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541577"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303708"
 ---
 # <a name="extending-properties"></a>속성 확장
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [확장 속성](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties)합니다.  
-  
 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **속성** 창은 COM 및 COM + 구성 요소에 대 한 유니버설 속성 브라우저를 모두 지원 하며 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 제품입니다. 합니다 **속성** 창을 사용 하 여 작동 `ITypeInfo` 정보 및 COM + 통합된 개발 환경 (IDE)에서 다른 창에서 현재 선택한 개체에 대 한 디자인 타임 속성을 나열 하려면 메타 데이터를 입력 합니다.  
   
  합니다 **속성** F4 키를 누르거나 바로 가기 키를 선택 하 여 열 수 있는 창 **속성 창** 에 **보기** 메뉴는 보기 및 편집 하는 데 사용 됩니다 구성에 관계 없이, 디자인 타임 속성 및 선택한 개체의 이벤트입니다. 솔루션 및 프로젝트와 관련 된 구성에 종속 된 속성에 표시 됩니다 [속성 페이지](../../extensibility/internals/property-pages.md)합니다. 자세한 내용은 [NIB: 프로젝트 속성](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50)를 [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md), 및 [NIB: 항목 관리 프로젝트에서](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)합니다.  
@@ -96,5 +94,5 @@ ms.locfileid: "47541577"
  에 대해 설명 하는 방법을 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 참조, 데이터 연결, 폴더 및 솔루션 및 프로젝트를 통해 개발 작업에 필요한 파일을 같은 항목을 효율적으로 관리 합니다.  
   
  [Visual Studio의 다른 부분 확장](../../extensibility/extending-other-parts-of-visual-studio.md)  
- 사용 하는 방법에 설명 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 의 나머지와 일치 하는 UI 요소를 만들려면 서비스 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 서비스를 사용하여 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]의 나머지와 일치하는 UI 요소를 만드는 방법을 설명합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: 앱 용 모델 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 60
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 769542e2f2864864146cb0f94c4dbf5bf1920b5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb7c2e0095d83ecbe21e6002f86c44682745341a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552316"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301901"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [앱에 대 한 모델을 만들](https://docs.microsoft.com/visualstudio/modeling/create-models-for-your-app)합니다.  
-  
 모델링 다이어그램을 통해 코드에 대한 아이디어 및 소프트웨어 시스템에서 지원해야 하는 사용자 요구 사항을 이해하고 분명히 설명하고 전달할 수 있습니다. 예를 들어 사용자 요구 사항을 설명 및 전달하려면 UML(Unified Modeling Language) 사용 사례, 동작, 클래스 및 시퀀스 다이어그램을 사용하면 됩니다. 시스템 기능을 설명 및 전달하려면 UML 구성 요소, 클래스, 동작 및 시퀀스 다이어그램을 사용하면 됩니다.  
   
  참조 [Channel 9 비디오: 모델링을 통해 아키텍처 개선](http://go.microsoft.com/fwlink/?LinkID=252078)합니다.  

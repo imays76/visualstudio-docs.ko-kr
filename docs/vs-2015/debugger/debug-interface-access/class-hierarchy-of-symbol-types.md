@@ -1,7 +1,7 @@
 ---
 title: 기호 형식의 계층 구조 클래스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35db9ca51285e10310a7fcee0c6db32dd9dff4a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6fc7ee76ae8f7b1490d61cc0cc0022b719b0d7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284039"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>기호 형식의 클래스 계층 구조
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [기호 종류의 클래스 계층 구조](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/class-hierarchy-of-symbol-types)합니다.  
-  
 다음 표에서 클래스 계층 구조에서 기호 형식을 설명합니다.  
   
 ## <a name="symbol-types"></a>기호 형식  

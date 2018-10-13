@@ -1,7 +1,7 @@
 ---
 title: PF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ba9558683311d77742b89a4ae4841ed5b7d8511
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34a313d9bde54258b9fa3d7e8ca09d3c7aba4432
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299132"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [PF](https://docs.microsoft.com/visualstudio/profiling/pf)합니다.  
-  
 VSPerfCmd.exe **PF** 옵션은 페이지 폴트로 샘플링되는 프로파일링 이벤트를 설정하고 경우에 따라 샘플링 간격의 페이지 폴트 수를 기본값 10에서 변경합니다.  
   
 > [!NOTE]

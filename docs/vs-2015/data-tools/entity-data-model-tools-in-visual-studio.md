@@ -1,7 +1,7 @@
 ---
 title: 엔터티 데이터 모델 Visual Studio에서 도구 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 487b3ecd6f9b7fbdc7065e8d69e9e64e939f565e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290474"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Visual Studio에서 엔터티 데이터 모델 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 엔터티 데이터 모델 도구](https://docs.microsoft.com/visualstudio/data-tools/entity-data-model-tools-in-visual-studio)합니다.  
-  
   
 Entity Framework는.NET 개발자가 도메인별 개체를 사용 하 여 관계형 데이터로 작업할 수 있도록 하는 개체-관계형 매핑 기술 합니다. 개발자들이 보통 작성해야 하는 데이터 액세스 코드가 대부분 필요하지 않게 됩니다. Entity Framework는 모델링 기술을 새로운.NET 응용 프로그램에 대 한 권장 되는 개체-관계형 매핑을 (ORM).  
   

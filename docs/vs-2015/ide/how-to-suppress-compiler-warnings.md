@@ -1,7 +1,7 @@
 ---
 title: '방법: 컴파일러 경고 표시 안 함 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286093"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 컴파일러 경고 표시 안 함](https://docs.microsoft.com/visualstudio/ide/how-to-suppress-compiler-warnings)합니다.  
-  
 포함하지 않을 컴파일러 경고 종류를 하나 이상 지정하여 빌드 로그의 혼잡을 방지할 수 있습니다. 예를 들어 이 방법을 사용하면 빌드 로그의 자세한 정도를 보통, 자세히 또는 진단으로 설정할 경우 자동으로 생성되는 정보의 전체가 아니라 일부를 검토할 수 있습니다. 자세한 정도에 대한 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.  
   
 ### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# 또는 F#에 대한 특정 경고를 표시하지 않으려면  

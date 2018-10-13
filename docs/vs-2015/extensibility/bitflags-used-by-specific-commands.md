@@ -1,7 +1,7 @@
 ---
 title: 특정 명령에 사용 되는 비트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7f9a633dd88e0018c6c9ccc82438ed99770885c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97569043b84cbfc18a62e3058f03e4f7f6c4b8f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553525"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300367"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>특정 명령에 사용되는 Bitflag
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [비트는 특정 명령에 사용](https://docs.microsoft.com/visualstudio/extensibility/bitflags-used-by-specific-commands)합니다.  
-  
 단일 값에 하나 이상의 비트를 설정 하 여 원본 제어 플러그 인 API 함수 개수의 동작을 수정할 수 있습니다. 이러한 값을 비트 라고 합니다. 원본 제어 플러그 인 API에서 사용 하는 다양 한 비트는 사용 하는 함수에 의해 그룹화 여기서 자세히 나와 있습니다.  
   
 ## <a name="checked-out-flag"></a>체크 아웃 플래그  

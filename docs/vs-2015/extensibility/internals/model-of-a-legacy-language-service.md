@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스 모델 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ccea832f1979601a764c0b979b0f7d4d72bd796
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543785"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294036"
 ---
 # <a name="model-of-a-legacy-language-service"></a>레거시 언어 서비스 모델
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 모델](https://docs.microsoft.com/visualstudio/extensibility/internals/model-of-a-legacy-language-service)합니다.  
-  
 언어 서비스는 특정 언어에 대 한 기능과 요소를 정의 하 고 해당 언어에 대 한 정보를 사용 하 여 편집기를 제공 하는 데 사용 됩니다. 예를 들어, 편집기 구문 색 지정을 지원 하기 위해 요소 및 언어의 키워드를 알고 있어야 합니다.  
   
  언어 서비스는 편집기와 편집기를 포함 하는 보기에서 관리 하는 텍스트 버퍼를 사용 하 여 밀접 하 게 작동 합니다. Microsoft IntelliSense **요약 정보** 옵션은 예제 언어 서비스를 제공 하는 기능입니다.  

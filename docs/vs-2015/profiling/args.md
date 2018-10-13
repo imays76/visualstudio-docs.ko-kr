@@ -1,7 +1,7 @@
 ---
 title: Args | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4092a0f75808942eabf170a10f4dcec0836ca337
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81652fea2dbc552dadeb9789ba06c27d0396e617
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284430"
 ---
 # <a name="args"></a>Args
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Args](https://docs.microsoft.com/visualstudio/profiling/args)합니다.  
-  
 VSPerfCmd.exe **Args** 옵션은 **Launch** 하위 명령의 대상 응용 프로그램에 전달되는 인수 목록을 지정합니다.  
   
  명령줄에서 **Launch**도 지정한 경우에만 **Args**를 사용할 수 있습니다. **Launch**가 지정된 경우 **Args**는 선택 사항입니다.  
