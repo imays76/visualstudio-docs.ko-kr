@@ -1,7 +1,7 @@
 ---
 title: '8단계: 사진 표시 단추 이벤트 처리기를 위한 코드 작성 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c45ee51c36b589a88be3cff187038835134d316
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543623"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203270"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 그림 단추 이벤트 처리기 표시를 위한 코드 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [8 단계: 그림 단추 이벤트 처리기 표시를 위한 코드를 작성](https://docs.microsoft.com/visualstudio/ide/step-8-write-code-for-the-show-a-picture-button-event-handler)합니다.  
-  
 이 단계에서는 **사진 표시** 단추가 다음과 같이 작동하도록 합니다.  
   
 -   사용자가 이 단추를 선택하면 프로그램에서 **파일 열기** 대화 상자가 열립니다.  

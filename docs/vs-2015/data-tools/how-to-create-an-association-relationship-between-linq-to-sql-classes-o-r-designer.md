@@ -1,7 +1,7 @@
 ---
 title: '방법: LINQ to SQL 클래스 (O-r 디자이너) 사이 연결 (관계) 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14b60094150467aeda7641d018e06db15e7bda03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c739fcf11cec7eb841b99e58b01ada32cfdfd49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542277"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209367"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>방법: LINQ to SQL 클래스 (O/R 디자이너) 사이 연결 (관계) 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: LINQ to SQL 클래스 (O-r 디자이너) 사이 연결 (관계) 만들기](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer)합니다.  
-  
   
 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]에서 엔터티 클래스 간의 연결은 데이터베이스 테이블 간의 관계와 비슷합니다. 사용 하 여 엔터티 클래스 간의 연결을 만들 수 있습니다 합니다 **연결 편집기** 대화 상자.  
   

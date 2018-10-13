@@ -1,7 +1,7 @@
 ---
 title: 텍스트 템플릿 변형 프로세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c7b39517e5e4c88bbefe6bf378e1dffd3c233872
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203777"
 ---
 # <a name="the-text-template-transformation-process"></a>텍스트 템플릿 변형 프로세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [은 텍스트 템플릿 변형 프로세스](https://docs.microsoft.com/visualstudio/modeling/the-text-template-transformation-process)합니다.  
-  
 텍스트 템플릿 변형 프로세스의 입력으로 텍스트 템플릿 파일을 출력으로 새 텍스트 파일을 생성 합니다. 예를 들어 텍스트 템플릿을 사용 하 여 Visual Basic 또는 C# 코드를 생성 하거나 HTML 보고서를 생성할 수 있습니다.  
   
  세 가지 구성 요소가이 프로세스에 참여할: 엔진, 호스트와 지시문 프로세서. 엔진 제어 프로세스를 출력 파일을 생성 하기 위해 호스트와 지시문 프로세서와 상호 작용 합니다. 호스트 파일 및 어셈블리를 찾는 등 환경 상호 작용을 제공 합니다. 지시문 프로세서는 XML 파일 또는 데이터베이스에서 데이터 읽기 등의 기능을 추가 합니다.  

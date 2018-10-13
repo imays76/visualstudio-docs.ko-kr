@@ -1,7 +1,7 @@
 ---
 title: 솔루션 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 78c6ac4b-6817-4bf3-ae2f-053e4ff96d17
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67a1b1cac6f74bb01547bd2caee13ef5098f8a43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d978ab6b1c301f2c8d308d774bb31966acf7a57d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208964"
 ---
 # <a name="solutions"></a>솔루션
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션](https://docs.microsoft.com/visualstudio/extensibility/internals/solutions)합니다.  
-  
 솔루션은 그룹 응용 프로그램을 만들기 위해 함께 작동 하는 하나 이상의 프로젝트입니다. 솔루션에 관련 된 프로젝트 및 상태 정보를 두 개의 솔루션 파일, 텍스트 기반 솔루션 (.sln) 파일 및 이진 솔루션 사용자 옵션 (.suo) 파일에 저장 됩니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

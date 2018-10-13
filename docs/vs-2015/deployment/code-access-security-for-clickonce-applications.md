@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 응용 프로그램에 대 한 코드 액세스 보안 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 71b9344e552cb03d65b0093b1d5e0707689ec6af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197979"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 응용 프로그램의 코드 액세스 보안
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 응용 프로그램에 대 한 코드 액세스 보안](https://docs.microsoft.com/visualstudio/deployment/code-access-security-for-clickonce-applications)합니다.  
-  
 ClickOnce 응용 프로그램은 .NET Framework를 기반으로 하며 코드 액세스 보안 제약 조건의 적용을 받습니다. 따라서 코드 액세스 보안의 의미를 이해하여 ClickOnce 응용 프로그램을 적절하게 작성해야 합니다.  
   
  코드 액세스 보안은 보호된 리소스와 작업에 대한 코드의 액세스를 제한하는 .NET Framework의 메커니즘입니다. 응용 프로그램 설치 관리자의 위치에 적합한 영역을 사용하도록 ClickOnce 응용 프로그램에 대한 코드 액세스 보안 권한을 구성해야 합니다. 대부분의 경우 제한된 사용 권한 집합을 위한 **인터넷** 영역 또는 보다 큰 사용 권한 집합을 위한 **로컬 인트라넷** 영역을 선택할 수 있습니다.  
@@ -105,7 +103,7 @@ ClickOnce 응용 프로그램은 .NET Framework를 기반으로 하며 코드 �
  [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)   
  [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [방법: ClickOnce 응용 프로그램의 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [방법: 제한된 권한으로 ClickOnce 응용 프로그램 디버그](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)   
  [프로젝트 디자이너, 보안 페이지](../ide/reference/security-page-project-designer.md)
 

@@ -1,7 +1,7 @@
 ---
 title: CRT 라이브러리를 사용 하 여 메모리 누수 찾기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198083"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT 라이브러리를 사용하여 메모리 누수 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [찾기 메모리 누수를 사용 하 여 CRT 라이브러리](https://docs.microsoft.com/visualstudio/debugger/finding-memory-leaks-using-the-crt-library)합니다.  
-  
 이전에 할당한 메모리를 올바르게 할당 해제하지 못한 상태로 정의되는 메모리 누수는 C/C++ 응용 프로그램에서 가장 미묘하고 찾아 내기 어려운 버그입니다. 소량의 메모리 누수는 처음에는 알아차리지 못하는 경우가 많지만 시간이 지나면서 누적된 메모리 누수량이 많아지면 성능 저하에서부터 메모리 고갈로 인한 응용 프로그램 충돌에 이르기까지 다양한 증상이 발생할 수 있습니다. 더 심한 경우 누수 응용 프로그램이 사용 가능한 메모리를 모두 소진하여 다른 응용 프로그램에서도 충돌이 발생하면 문제의 원인이 되는 응용 프로그램을 파악하기가 어려워질 수 있습니다. 메모리 누수는 겉으로는 심각해 보이지 않더라도 반드시 해결해야 하는 다른 문제의 전조 증상인 경우도 있습니다.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거와 CRT(C 런타임) 라이브러리에서는 메모리 누수를 탐지하고 식별할 수 있는 효과적인 수단을 제공합니다.  

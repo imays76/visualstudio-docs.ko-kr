@@ -1,7 +1,7 @@
 ---
 title: 클래스 및 기타 형식 작업(클래스 디자이너) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7690c24e8691858dbc0c027ea765b92f54144b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5282b37fca3e35e23e6ca343538aad12854b7bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198306"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>클래스 및 기타 형식 사용(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [클래스 및 기타 형식 (클래스 디자이너)를 사용 하 여 작업](https://docs.microsoft.com/visualstudio/ide/working-with-classes-and-other-types-class-designer)합니다.  
-  
 Visual Studio의 클래스 디자이너를 사용하여 중요한 클래스와 형식을 만들고 편집하면 해당 클래스와 형식에 보다 쉽게 집중할 수 있습니다. 클래스 다이어그램을 사용하면 Visual C# .NET, Visual Basic .NET 또는 C++ 코드를 보다 자세하게 확인하면서 작업할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

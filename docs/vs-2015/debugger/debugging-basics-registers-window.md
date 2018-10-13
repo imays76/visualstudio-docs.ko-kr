@@ -1,7 +1,7 @@
 ---
 title: '디버깅 기본 사항: 레지스터 창 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 201f9b1401889aacfbf748962d472cb4323ec0bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa204726632f55ad6aa1b79e0b9d071864a5dcaa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550048"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210303"
 ---
 # <a name="debugging-basics-registers-window"></a>디버깅 기본 사항: 레지스터 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [디버깅 기본 사항: 레지스터 창](https://docs.microsoft.com/visualstudio/debugger/debugging-basics-registers-window)합니다.  
-  
 합니다 **등록** 기간은 주소 수준 디버깅을 활성화 하는 경우에 사용할 수 있습니다 합니다 **옵션** 대화 상자에서 **디버깅** 노드.  
   
  레지스터는 프로세서(CPU) 내의 특정 위치로, 여기에는 프로세서에서 현재 사용 중인 작은 데이터가 저장됩니다. 소스 코드를 컴파일하거나 해석하면 데이터가 메모리에서 레지스터로 이동하고, 필요할 때 다시 레지스터에서 메모리로 이동하는 명령이 생성됩니다. 레지스터의 데이터에 액세스하는 것이 메모리의 데이터에 액세스하는 것보다 훨씬 빠릅니다. 그러므로 프로세서가 레지스터를 반복하여 로드하고 언로드하도록 하는 코드에 비해 프로세서에서 데이터를 레지스터에 보관하여 반복해서 데이터에 액세스하도록 하는 코드의 실행 속도가 훨씬 빠릅니다. 컴파일러가 쉽게 데이터를 레지스터에 보관하고 다른 최적화를 수행하도록 하려면 전역 변수의 사용을 피하고 가능한 한 지역 변수를 사용하는 것이 좋습니다. 이러한 방식으로 작성된 코드는 참조 집약성이 좋습니다. C/C++와 같은 일부 언어에서 프로그래머는 언제나 변수를 레지스터에 보관하라고 컴파일러에 알리는 레지스터 변수를 선언할 수 있습니다. 자세한 내용은 [Register Keyword](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)합니다.  

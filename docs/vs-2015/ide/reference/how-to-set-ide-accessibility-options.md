@@ -1,7 +1,7 @@
 ---
 title: '방법: IDE 접근성 옵션 설정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c51e525b097d1282add6d4404173473f43eba815
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5701efe5da55ebd85d683da55f90f41223220c91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205896"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>방법: IDE 내게 필요한 옵션 설정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: IDE 내게 필요한 옵션 설정](https://docs.microsoft.com/visualstudio/ide/reference/how-to-set-ide-accessibility-options)합니다.  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]에는 시각 장애인의 읽기와 손 장애인의 쓰기를 도와주는 기능이 포함되어 있습니다. 또한, 편집기에서 텍스트 크기와 색을 변경하고, 도구 모음에서 텍스트와 단추의 크기를 변경하고, 메서드와 매개 변수를 자동 완성하는 등의 다양한 기능이 제공됩니다.  
   

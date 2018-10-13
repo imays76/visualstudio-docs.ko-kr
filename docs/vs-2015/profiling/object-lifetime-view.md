@@ -1,7 +1,7 @@
 ---
 title: 개체 수명 뷰 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aaff07ecc6732403ef1d611cb23129207a27351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202854"
 ---
 # <a name="object-lifetime-view"></a>개체 수명 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [개체 수명 뷰](https://docs.microsoft.com/visualstudio/profiling/object-lifetime-view)합니다.  
-  
 개체 수명 뷰는 성능 세션 속성 페이지에서 **.NET 개체 수명 데이터도 수집**이 선택된 경우 사용 가능합니다.  
   
  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 가비지 수집기는 응용 프로그램의 메모리 할당 및 해제를 관리합니다. 가비지 수집기의 성능을 최적화하기 위해 관리되는 힙은 0세대, 1세대 및 2세대의 3개 세대로 나뉩니다. 런타임의 가비지 수집기는 새 개체를 0세대에 저장합니다. 수집이 완료된 후에 남아 있는 개체는 승격되어 1세대 및 2세대에 저장됩니다.  

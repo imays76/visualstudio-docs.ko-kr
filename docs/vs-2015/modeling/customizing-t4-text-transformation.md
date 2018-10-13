@@ -1,7 +1,7 @@
 ---
 title: T4 텍스트 변환 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e304b38979b80c1d67d3f88accdbfa584406c9cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc44c1de2e0a590b73916a8496a7fe5cae7cb07e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200241"
 ---
 # <a name="customizing-t4-text-transformation"></a>T4 텍스트 변형 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 T4 텍스트 변환](https://docs.microsoft.com/visualstudio/modeling/customizing-t4-text-transformation)합니다.  
-  
 텍스트 템플릿은의 기능 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로그램 코드 또는 변환 프로세스를 통해 기타 텍스트 파일을 생성할 수 있도록 합니다. 사용 하 여 [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)], 텍스트 템플릿 지시문 프로세서 또는 텍스트 템플릿 호스트를 사용자 지정 하 여 기본 템플릿 변형 프로세스를 확장할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

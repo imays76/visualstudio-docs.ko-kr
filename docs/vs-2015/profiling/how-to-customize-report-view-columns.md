@@ -1,7 +1,7 @@
 ---
 title: '방법: 보고서 뷰 열 사용자 지정 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14e6e751f826d0ee52db5f00712a225f2171ecc9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5bc7b18e4df3baac4f6acb65d39c9ab66bcafa5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202815"
 ---
 # <a name="how-to-customize-report-view-columns"></a>방법: 보고서 뷰 열 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 보고서 뷰 열 사용자 지정](https://docs.microsoft.com/visualstudio/profiling/how-to-customize-report-view-columns)합니다.  
-  
 Visual Studio Team System Development Edition의 성능 도구는 효율적인 사용자 환경을 제공할 수 있도록 IDE(통합 개발 환경)에 완전히 통합되어 있습니다. 다음 목록은 열을 추가, 제거 및 재정렬하여 사용자 지정할 수 있는 뷰를 나타냅니다.  
   
 -   [모듈 뷰](../profiling/modules-view.md)  

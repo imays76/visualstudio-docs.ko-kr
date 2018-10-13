@@ -1,7 +1,7 @@
 ---
 title: 상황에 맞는 메뉴 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b95f913f5705b115473847b12b3fd1df8a5bcff8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b53174776b93d94c38982a430db3213ba184b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207731"
 ---
 # <a name="context-menus"></a>상황에 맞는 메뉴
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [상황에 맞는 메뉴](https://docs.microsoft.com/visualstudio/extensibility/context-menus)합니다.  
-  
 상황에 맞는 메뉴 클라이언트 영역의 활성 지역에서 단추로 클릭할 때 표시 되 고 마우스 오른쪽 단추를 놓을 때의 선택을 취소 합니다.  
   
 ## <a name="editor-context-menus"></a>편집기 상황에 맞는 메뉴  

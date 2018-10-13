@@ -1,7 +1,7 @@
 ---
 title: Assert 클래스 사용 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 14bdea144a28e971d99ea8528b66e0bce1164035
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6775f7ea22bab5d210eb4e2993e81bd4a9587560
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208314"
 ---
 # <a name="using-the-assert-classes"></a>Assert 클래스 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Assert 클래스를 사용 하 여](https://docs.microsoft.com/visualstudio/test/using-the-assert-classes)입니다.  
-  
 UnitTestingFramework 네임스페이스의 Assert 클래스를 사용하여 특정 기능을 확인합니다. 단위 테스트 메서드는 개발 코드에서 메서드 코드를 실행하지만, Assert 문을 포함하는 경우에만 코드의 동작이 정확한지 여부를 보고합니다.  
   
 ## <a name="kinds-of-asserts"></a>Assert의 종류  

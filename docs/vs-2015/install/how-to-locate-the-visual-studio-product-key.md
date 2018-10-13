@@ -1,7 +1,7 @@
 ---
 title: '방법: Visual Studio 제품 키 찾기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,17 +17,17 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 53b7b0dfc12744bf41847273d291633c348273d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed65437d82436473468a73d4cbce2a669a42328e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543819"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198369"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>How to: Locate the Visual Studio Product Key
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-고객 지원 팀과 작업하거나, 평가판에서 업그레이드하거나, 사용자 고유의 레코드를 업데이트하는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 제품 키를 찾으려고 할 수 있습니다.  
+고객 지원 팀과 작업하거나, 평가판에서 업그레이드하거나, 사용자 고유의 레코드를 업데이트하는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 제품 키를 찾으려고 할 수 있습니다.  
   
 ### <a name="to-find-the-product-key-for-visual-studio"></a>Visual Studio의 제품 키를 찾으려면  
   

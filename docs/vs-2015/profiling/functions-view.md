@@ -1,7 +1,7 @@
 ---
 title: 함수 뷰 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4bc15c21400b720bd5dde9c18111d7cc68afc34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ae3a5053c6e1cdd5f3e8ab36c80823fdb13b41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551167"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205610"
 ---
 # <a name="functions-view"></a>함수 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [함수 뷰](https://docs.microsoft.com/visualstudio/profiling/functions-view)합니다.  
-  
 함수 뷰에는 프로파일링 중에 호출된 함수가 나열됩니다.  
   
  기본적으로 함수는 이름으로 나열됩니다. 모듈로 함수를 보려면 함수 뷰 창을 마우스 오른쪽 단추로 클릭한 다음 **모듈 뷰에 표시**를 선택합니다. 모듈 뷰를 표시합니다.  

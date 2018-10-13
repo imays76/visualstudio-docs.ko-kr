@@ -1,7 +1,7 @@
 ---
 title: 응용 프로그램 속성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,19 +18,17 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f56ede85ffe643b995e3c7b51327693c8ef8847
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209016"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [응용 프로그램 속성](https://docs.microsoft.com/visualstudio/ide/application-properties)합니다.  
-  
-**프로젝트 디자이너**의 **응용 프로그램** 창에서 응용 프로그램 종류, 시작 개체 및 어셈블리 정보와 같은 Visual Basic, C# 및 F # 응용 프로그램에 대한 일반 응용 프로그램 속성을 설정할 수 있습니다.  
+**프로젝트 디자이너**의 **응용 프로그램** 창에서 응용 프로그램 종류, 시작 개체 및 어셈블리 정보와 같은 Visual Basic, C# 및 F# 응용 프로그램에 대한 일반 응용 프로그램 속성을 설정할 수 있습니다.  
   
  **응용 프로그램** 창에서 다음 작업을 수행할 수 있습니다.  
   

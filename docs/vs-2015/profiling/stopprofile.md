@@ -1,7 +1,7 @@
 ---
 title: StopProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 326ed9afa9d277babde5cda99ba5640f6d66bd98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d6b3777f29447cb6291cfabd8bcc5f5930587a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556395"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209146"
 ---
 # <a name="stopprofile"></a>StopProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [StopProfile](https://docs.microsoft.com/visualstudio/profiling/stopprofile)합니다.  
-  
 `StopProfile` 함수는 지정된 프로파일링 수준에 대한 카운터를 0(off)으로 설정합니다.  
   
 ## <a name="syntax"></a>구문  

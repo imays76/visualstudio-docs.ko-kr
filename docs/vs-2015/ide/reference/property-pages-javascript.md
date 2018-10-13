@@ -1,7 +1,7 @@
 ---
 title: 속성 페이지, JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1491c904be7cf44d739add233a05ba5f01b5df1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3753c11851c1ab4f5e9e32df55c37f0b22d2f3bc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206832"
 ---
 # <a name="property-pages-javascript"></a>속성 페이지, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [속성 페이지, JavaScript](https://docs.microsoft.com/visualstudio/ide/reference/property-pages-javascript)합니다.  
-  
   
 **속성 페이지**에서 프로젝트 설정에 액세스할 수 있습니다. **속성 페이지**에 표시되는 페이지를 사용하여 프로젝트 속성을 변경할 수 있습니다.  
   

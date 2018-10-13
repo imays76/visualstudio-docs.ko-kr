@@ -1,7 +1,7 @@
 ---
 title: IDebugExceptionEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f873f76eeac3af93d8ce031d2b4315e2dcacc72
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b45a4cd07a914b05c3c6c3f4ccc187eed405fc6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556035"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197290"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugExceptionEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexceptionevent2)합니다.  
-  
 디버그 엔진 (DE)는 현재 실행 중인 프로그램에 예외가 throw 되 면 (SDM) 세션 디버그 관리자에 게이 인터페이스를 보냅니다.  
   
 ## <a name="syntax"></a>구문  

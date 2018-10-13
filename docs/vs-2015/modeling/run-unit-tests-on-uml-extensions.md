@@ -1,7 +1,7 @@
 ---
 title: UML 확장에서 단위 테스트 실행 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,23 +12,21 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ac030a4e0b93d189a8b69db5f1df52b65bdf11df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552286"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205070"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>UML 확장에서 단위 테스트 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 확장에서 단위 테스트 실행](https://docs.microsoft.com/visualstudio/modeling/run-unit-tests-on-uml-extensions)합니다.  
-  
 변경을 연속으로 수행할 때 코드를 안정적으로 유지하려면 단위 테스트를 작성하여 정기적인 빌드 프로세스의 일부분으로 수행하는 것이 좋습니다. 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요. Visual Studio 모델링 확장용 테스트를 설정하려면 몇 가지 주요 정보가 필요합니다. 요약하자면 다음과 같습니다.  
   
 -   [VSIX 확장용 단위 테스트를 설정합니다.](#Host)  
   
-     VS IDE 호스트 어댑터를 사용하여 테스트를 실행합니다. 각 테스트 메서드 앞에 `[HostType("VS IDE")]`를 접두사로 지정합니다. 테스트를 실행할 때 이 호스트 어댑터는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 시작합니다.  
+     VS IDE 호스트 어댑터를 사용하여 테스트를 실행합니다. 각 테스트 메서드 앞에 `[HostType("VS IDE")]`를 접두사로 지정합니다. 테스트를 실행할 때 이 호스트 어댑터는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 시작합니다.  
   
 -   [DTE 및 ModelStore 액세스](#DTE)  
   

@@ -1,7 +1,7 @@
 ---
 title: 시각화 도우미 및 사용자 지정 뷰어를 입력 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d347e7b18722aa8f8901abac3966150b3dca97cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d71aeac0c3cde321df4f77874a2d679162cf1d54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201892"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>형식 시각화 도우미 및 사용자 지정 뷰어
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [형식 시각화 도우미 및 사용자 지정 뷰어](https://docs.microsoft.com/visualstudio/extensibility/debugger/type-visualizer-and-custom-viewer)합니다.  
-  
 형식 시각화 도우미는 매우 구체적인 형식으로 데이터를 표시 하는 구성 요소입니다. 이 형식은 전적으로 시각화 도우미의 구현자, 최종 사용자 또는 제 3 자 공급 업체 시각화 도우미의 수입니다.  
   
  사용자 지정 뷰어는 데이터의 매우 구체적인 형식으로 표시 하는 사용자 지정 식 계산기의 부분입니다. 이 형식은 전적으로 식 계산기 (EE)의 구현자는 형식으로는 사용자 지정 뷰어 구현 자가 됩니다.  

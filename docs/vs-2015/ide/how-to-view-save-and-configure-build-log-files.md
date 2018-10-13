@@ -1,7 +1,7 @@
 ---
 title: '방법: 빌드 로그 파일 보기, 저장 및 구성 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d30e2b571e0a46afa10c8100085e6c23513159e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26ece0c0d46e5c747ac05bae8c2d4fc793c34601
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207404"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>방법: 빌드 로그 파일 보기, 저장 및 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전을 찾을 수 있습니다 [방법: 뷰, 저장 및 빌드 로그 파일 구성](https://docs.microsoft.com/visualstudio/ide/how-to-view-save-and-configure-build-log-files)합니다.  
-  
 Visual Studio IDE에서 프로젝트를 빌드한 후에 **출력** 창에서 해당 빌드에 대한 정보를 볼 수 있습니다. 예를 들어 이 정보를 사용하여 빌드 실패를 해결할 수 있습니다. C++ 프로젝트의 경우 자동으로 만들고 저장된 .txt 파일에서도 동일한 정보를 볼 수 있습니다. 관리 코드 프로젝트의 경우 **출력** 창에서 .txt 파일로 정보를 복사하고 붙여넣은 다음 직접 저장할 수 있습니다. 또한 IDE를 사용하여 각 빌드에 대해 보려는 어떤 종류의 정보를 지정할 수 있습니다.  
   
  MSBuild를 사용하여 모든 종류의 프로젝트를 빌드하는 경우 .txt 파일을 만들어 빌드에 대한 정보를 저장할 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)를 참조하세요.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 성능 데이터 수집 일시 중지 및 다시 시작 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c780e3bbb545ec3611b00dd56d21cb3f87c75d44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0e3c64575d7efe6ee724ee2486d7785a5f655f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205623"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>방법: 성능 데이터 수집 일시 중지 및 다시 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 일시 중지 및 다시 시작 성능 데이터 수집](https://docs.microsoft.com/visualstudio/profiling/how-to-pause-and-resume-performance-data-collection)합니다.  
-  
 프로파일링 세션 페이지 창에서 프로파일링 데이터의 컬렉션을 대화형으로 제어할 수 있습니다.  
   
  데이터 수집을 제어하면 프로파일 데이터 파일의 크기를 줄이고 관심 있는 작업에 대한 데이터만 수집할 수 있습니다. 성능 세션에서 프로파일링을 여러 번 일시 중지하고 다시 시작할 수 있습니다.  

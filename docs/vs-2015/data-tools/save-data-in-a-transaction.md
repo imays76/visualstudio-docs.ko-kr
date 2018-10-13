@@ -1,7 +1,7 @@
 ---
 title: 트랜잭션에 데이터 저장 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4b6d6befe4bbe29147a59b9700b8f148154e6c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60f3014707fe9b06818bf9a47745ca8b253290d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551376"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208906"
 ---
 # <a name="save-data-in-a-transaction"></a>트랜잭션에 데이터 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [트랜잭션에 데이터 저장](https://docs.microsoft.com/visualstudio/data-tools/save-data-in-a-transaction)합니다.  
-  
   
 이 연습에서는 사용 하 여 트랜잭션에서 데이터를 저장 하는 방법에 설명 합니다 <xref:System.Transactions> 네임 스페이스입니다. 이 예에서는 Northwind 샘플 데이터베이스의 `Customers` 및 `Orders` 테이블을 사용합니다.  
   

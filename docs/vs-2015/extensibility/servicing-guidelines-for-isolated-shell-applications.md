@@ -1,7 +1,7 @@
 ---
 title: 격리 된 셸 응용 프로그램 서비스에 대 한 지침 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dff7d9349e5081fa0e8ab64bfd32c90b83f19de3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70d59500c49c6e6939d85a35d9c1ff9393f5708e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208392"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>격리 셸 응용 프로그램에 대 한 지침 제공
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [격리 셸 응용 프로그램에 대 한 서비스 지침](https://docs.microsoft.com/visualstudio/extensibility/servicing-guidelines-for-isolated-shell-applications)합니다.  
-  
 Visual Studio 격리 셸 응용 프로그램을 배포 하는 경우에 설치 된 후 응용 프로그램에 대 한 소프트웨어 업데이트를 제공할 수 해야 합니다. 이 위해 Microsoft Installer (MSI) 파일을 사용 하 여 응용 프로그램을 설치 해야 합니다. 이 종류의 설치에는 웹에서 재배포할 수 하기 위해 Microsoft에서 제공 하는 소프트웨어 업데이트 다운로드 및 사용자 지정의 개입 없이 고객에 게 사용 수 있습니다.  
   
 ## <a name="servicing-requirements"></a>서비스 요구 사항  

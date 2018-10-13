@@ -1,7 +1,7 @@
 ---
 title: 아이콘 또는 데코레이터의 가시성 제어 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9cc74f7ba8c71c2b8828ad19c4d6af80d6e8b8e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207859"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>아이콘 또는 데코레이터의 가시성 제어
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [아이콘 또는 데코레이터의 가시성 제어](https://docs.microsoft.com/visualstudio/modeling/controlling-the-visibility-of-an-icon-or-decorator)입니다.  
-  
 A *데코레이터* 아이콘 또는 셰이프를 도메인 특정 언어 (DSL)에 표시 되는 텍스트 줄. 데코레이터 표시를 확인 하 고 상태 모델의 속성에 따라 사라질 수 있습니다. 예를 들어 개인을 나타낼 셰이프를에서 사용자의 성별, 자녀 수에 따라 표시 되는 서로 다른 아이콘이 있을 수 있습니다.  
   
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>아이콘 또는 데코레이터의 가시성 제어  

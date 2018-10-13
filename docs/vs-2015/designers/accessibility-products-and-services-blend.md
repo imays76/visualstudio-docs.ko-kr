@@ -1,7 +1,7 @@
 ---
 title: 내게 필요한 옵션 제품 및 서비스(Blend) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 394940ae59ceb87cf2bc71d71584fe0bf39eb0b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880786"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197823"
 ---
 # <a name="accessibility-products-and-services-blend"></a>내게 필요한 옵션 제품 및 서비스(Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [내게 필요한 옵션 제품 및 서비스 (Blend)](https://docs.microsoft.com/visualstudio/designers/accessibility-products-and-services-blend)합니다.  
-  
 Microsoft는 제품과 서비스를 모든 사용자가 사용하기 더욱 쉽게 만들기 위해 최선을 다하고 있습니다. 다음 섹션에서는 장애가 있는 사용자가 Microsoft Windows를 보다 쉽게 사용할 수 있도록 하는 기능, 제품 및 서비스에 대한 정보를 제공합니다.  
   
 -   "Windows의 접근성 기능"  

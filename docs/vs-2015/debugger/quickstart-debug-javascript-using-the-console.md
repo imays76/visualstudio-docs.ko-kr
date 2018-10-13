@@ -1,7 +1,7 @@
 ---
 title: '빠른 시작: 콘솔을 사용한 JavaScript 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58aee96aead76444ea2363c79db6e4d8060b1346
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549467"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205519"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>퀵 스타트: 콘솔을 사용하여 Debug JavaScript 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [빠른 시작: 콘솔을 사용 하 여 디버그 JavaScript](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-javascript-using-the-console)합니다.  
-  
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  JavaScript 콘솔 창에서 JavaScript를 사용하여 빌드된 스토어 앱을 조작하고 디버그할 수 있습니다. 이러한 기능은 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱, Windows Phone 스토어 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에 대해 지원됩니다. 콘솔 명령 참조는 [JavaScript Console commands](../debugger/javascript-console-commands.md)을 참조하세요.  
@@ -176,7 +174,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
      또한 `items._data` 개체에는 예상보다 훨씬 더 많은 항목이 있습니다.  
   
-10. 프롬프트에서 `Data.items.push` 를 입력하고 Enter 키를 누릅니다. 콘솔 창에 [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] 프로젝트 파일에서 구현되는 `push` 함수의 시각화 도우미가 표시됩니다. 이 앱에서는 `push` 를 사용하여 올바른 항목을 추가합니다. IntelliSense를 사용하여 조금만 조사하면 `setAt` 을 사용하여 기본 이미지를 바꿔야 함을 알 수 있습니다.  
+10. 프롬프트에서 `Data.items.push` 를 입력하고 Enter 키를 누릅니다. 콘솔 창에 `push` 프로젝트 파일에서 구현되는 [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] 함수의 시각화 도우미가 표시됩니다. 이 앱에서는 `push` 를 사용하여 올바른 항목을 추가합니다. IntelliSense를 사용하여 조금만 조사하면 `setAt` 을 사용하여 기본 이미지를 바꿔야 함을 알 수 있습니다.  
   
 11. 디버깅 세션을 중지하지 않고 이 문제를 대화식으로 수정하려면, default.js를 열고 `updateImages` 함수에서 이 코드를 선택합니다.  
   
@@ -280,11 +278,11 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 -   [!INCLUDE[win81](../includes/win81-md.md)]에서 실행 중인 Internet Explorer 11  
   
--   [!INCLUDE[win8](../includes/win8-md.md)]에서 실행 중인 Internet Explorer 10  
+-   [!INCLUDE[win8](../includes/win8-md.md)]  
   
 ## <a name="see-also"></a>참고 항목  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)   
  [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [HTML, CSS 및 JavaScript 샘플 코드 디버그](../debugger/debug-html-css-and-javascript-sample-code.md)   

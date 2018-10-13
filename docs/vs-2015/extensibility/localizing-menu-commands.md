@@ -1,7 +1,7 @@
 ---
 title: 메뉴 명령 지역화 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce3cbbf101e357f761ffaf256d0b130a0c005fdb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550689"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197708"
 ---
 # <a name="localizing-menu-commands"></a>메뉴 명령 지역화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [메뉴 명령 지역화](https://docs.microsoft.com/visualstudio/extensibility/localizing-menu-commands)합니다.  
-  
 메뉴에 대 한 지역화 된 텍스트를 제공할 수 있습니다 및 도구 모음 지역화.vsct 파일을 만들어 명령 및 내용을 통합 하려면 VSPackage를 제거한 다음 프로젝트 파일을 업데이트에 대 한.resx 파일을 지역화 합니다.  
   
  설치 환경이 지역화 하는 방법에 대 한 정보를 참조 하세요 [VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)합니다.  

@@ -1,7 +1,7 @@
 ---
 title: SccCheckout 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4cf1d8196c855612aab93404ca24072c8262e122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad6621b2a7e4493883bf3639f388a76fa4e552fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210544"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccCheckout 함수](https://docs.microsoft.com/visualstudio/extensibility/scccheckout-function)합니다.  
-  
 정규화 된 파일 이름 목록이 들어이 함수 체크 로컬 드라이브에 있습니다. 체크 아웃 되 고 모든 파일에 주석을 적용 됩니다. 주석 인수 수를 `null` 문자열입니다.  
   
 ## <a name="syntax"></a>구문  

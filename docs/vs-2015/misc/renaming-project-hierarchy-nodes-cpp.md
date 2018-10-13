@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 계층 구조 노드 (c + +) 이름 바꾸기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cea5968e-e9f8-41a5-b068-622df542247c
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: 57e647f2926452fe32b4d3975b0cd151d0fc9823
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b86096834b2a841b3fe35e1045bc3897bb7667f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203764"
 ---
 # <a name="renaming-project-hierarchy-nodes-c"></a>프로젝트 계층 구조 노드 이름 바꾸기(C++)
 관리 되지 않는 c + +에 대 한 HierUtil7 프로젝트 프레임 워크를 사용 하 여 프로젝트 폴더 계층 구조 노드를 바꿀 수 있습니다. 자세한 내용은 [HierUtil7 샘플](http://msdn.microsoft.com/en-us/29c15184-a70c-4813-86c2-fb1d47442d11)합니다.  

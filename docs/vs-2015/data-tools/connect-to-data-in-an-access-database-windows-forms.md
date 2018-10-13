@@ -1,7 +1,7 @@
 ---
 title: Access 데이터베이스 (Windows Forms)에서 데이터에 연결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ddab545909730a4fe7f94adf59c6cee74c86409
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4741dedb907bb88513147a98b916831abd965576
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554894"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207352"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Access 데이터베이스 (Windows Forms)에서 데이터에 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Access 데이터베이스 (Windows Forms)에서 데이터 연결](https://docs.microsoft.com/visualstudio/data-tools/connect-to-data-in-an-access-database-windows-forms)합니다.  
-  
   
 Visual Studio를 사용 하 여 Access 데이터베이스 (.mdf 파일 또는.accdb 파일)에 연결할 수 있습니다. 에 데이터가 나타납니다 연결을 정의한 후 합니다 **데이터 원본** 창입니다. 그 창에서 테이블 또는 뷰를 폼으로 끌 수 있습니다. Visual Studio에서 프로젝트 시스템에서 이러한 로컬 데이터베이스 파일을 관리 하는 방법을 이해 하 고 참조 하려는 경우 [방법: 프로젝트의 로컬 데이터 파일 관리](../data-tools/how-to-manage-local-data-files-in-your-project.md)합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: '연습: 샘플링을 사용하여 명령줄 프로파일링 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 703faf6ca5cd50fc340ecf81dec1c7c619d3bfa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cec9ac0038c84e267d046d35e5d65cc83d9c35c3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541319"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203218"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>연습: 샘플링을 사용하여 명령줄 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 명령줄 프로 파일링 사용 하 여 샘플링](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-sampling)합니다.  
-  
 이 연습에서는 성능 문제를 파악하도록 명령줄 도구와 샘플링을 사용하여 응용 프로그램을 프로파일링하는 방법을 설명합니다.  
   
  이 연습에서는 명령줄 도구를 사용하여 관리되는 응용 프로그램을 프로파일링하고, 샘플링을 사용하여 응용 프로그램의 성능 문제를 격리 및 식별하는 과정을 단계별로 진행합니다.  

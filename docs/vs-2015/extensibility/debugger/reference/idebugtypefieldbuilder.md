@@ -1,7 +1,7 @@
 ---
 title: IDebugTypeFieldBuilder | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e88ab51bd6af9b2b1741d00d7097a9b07baa5c15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 201f52e6fb49ca3974288c82e0ba74bec0d9caa3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202490"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugTypeFieldBuilder](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugtypefieldbuilder)합니다.  
-  
 형식을 나타내는 필드를 만들 수를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  

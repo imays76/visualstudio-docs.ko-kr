@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 버전에서 나란히 설치 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ae67e83b2f1444c09129ed5242afac2c3939c954
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199903"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio 버전-Side-by-side 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "47556852"
 이전 버전이 설치된 컴퓨터에 이 버전의 Visual Studio를 설치할 수 있습니다. 설치 오류가 발생할 경우 문제를 직접 디버그할 수 있도록 [로그 수집 도구](http://go.microsoft.com/fwlink/?LinkId=262077) 를 사용하여 오류에 대한 정보를 수집할 수 있습니다.  
   
 > [!NOTE]
->  설치 하는 것이 좋습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전 출시 된 순서입니다. 예를 들어 Visual Studio 2015를 설치하기 전에 Visual Studio 2013을 설치합니다.  
+>  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전은 출시 순서대로 설치하는 것이 좋습니다. 예를 들어 Visual Studio 2015를 설치하기 전에 Visual Studio 2013을 설치합니다.  
   
  여러 버전을 함께 설치하기 전에 다음과 같은 조건을 검토해야 합니다.  
   
--   만든 솔루션을 열려면 Visual Studio 2015를 사용 하는 경우 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], 나중에 열려면 하 고 Visual Studio 2015 특정 기능을 구현 하지 않은 이전 버전에서 다시 솔루션을 수정할 수 있습니다.  
+-   Visual Studio 2015를 사용하여 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]에서 만든 솔루션을 여는 경우 Visual Studio 2015 특정 기능을 구현하지 않았다면 나중에 이전 버전에서 다시 솔루션을 열어 수정할 수 있습니다.  
   
--   만든 솔루션을 열려면 Visual Studio 2015를 사용 하려는 경우 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 이전 버전을 프로젝트와 Visual Studio 2015와 호환 되도록 파일을 수정 해야 할 수 있습니다. 자세한 내용은 참조는 [포트, 마이그레이션 및 Visual Studio 프로젝트 업그레이드](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) 페이지입니다.  
+-   Visual Studio 2015를 사용하여 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 이전 버전에서 만든 솔루션을 열려면 Visual Studio 2015와 호환되도록 프로젝트와 파일을 수정해야 할 수 있습니다. 자세한 내용은 참조는 [포트, 마이그레이션 및 Visual Studio 프로젝트 업그레이드](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) 페이지입니다.  
   
--   둘 이상의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전이 설치된 컴퓨터에서 한 버전을 제거할 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 파일 연결이 모든 버전에 대해 제거됩니다. 사용 하 여이 파일 연결을 다시 매핑할 수 있습니다는 **파일 연결 복원** 단추를 **환경**를 **일반** 페이지는 [옵션](../ide/reference/general-environment-options-dialog-box.md) 대화 상자.  
+-   둘 이상의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전이 설치된 컴퓨터에서 한 버전을 제거할 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 파일 연결이 모든 버전에 대해 제거됩니다. **옵션** 대화 상자의 **환경**, **일반** 페이지에 있는 [파일 연결 복원](../ide/reference/general-environment-options-dialog-box.md) 단추를 사용하여 이 파일 연결을 다시 매핑할 수 있습니다.  
   
 -   모든 확장이 호환되는 것은 아니므로 Visual Studio에서는 확장을 자동으로 업그레이드하지 않습니다. [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkId=178891) 또는 소프트웨어 게시자에서 확장을 다시 설치해야 합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: 확장 및 도구 Windows 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ba7833a48647043fcb9b6d8ca9095be7cabef0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591351f41d0cd85de92836990e8d8523258f3d33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199942"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>도구 창 확장 및 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [확장 및 사용자 지정 도구 Windows](https://docs.microsoft.com/visualstudio/extensibility/extending-and-customizing-tool-windows)합니다.  
-  
 Visual Studio는 여러 가지 도구 창, 문서 창 및 대화 상자 창 예를 들어 windows 제공합니다. 속성 창, 출력 창 및 작업 목록 창에는 같은 다른 windows 도구 창의 종류가.입니다.  
   
 ## <a name="tool-windows"></a>도구 창  
@@ -43,7 +41,7 @@ Visual Studio는 여러 가지 도구 창, 문서 창 및 대화 상자 창 예�
   
  도구 창을 문서 프레임에서 도킹, 부동 또는 탭할 수 있습니다. 도구 창 프레임이 IDE에서 제공되고 크기, 위치, 도킹 상태 및 기타 영구적 속성을 제어하는 데 사용됩니다. 도구 창에서 내용을 표시합니다. 기본 크기 및 위치는 도구 창이 처음 열릴 때만 적용되고 이후에는 도구 창 상태가 유지됩니다.  
   
- 도구 창에서 WPF 사용자 컨트롤을 호스트하고 도구 모음을 지원할 수 있습니다. 재정의할 수 있습니다는 <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> 속성을 호스팅된 컨트롤의 핸들을 반환 합니다.  
+ 도구 창에서 WPF 사용자 컨트롤을 호스트하고 도구 모음을 지원할 수 있습니다. <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> 속성을 재정의하여 호스트된 컨트롤의 핸들을 반환할 수 있습니다.  
   
  도구 창에 다양 한 기능을 추가할 수 있습니다. 예를 들어, 도구 모음을 추가할 수 있습니다: [도구 모음 도구 창에 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 또는 바로 가기 메뉴: [도구 창의 바로 가기 메뉴를 추가](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md)합니다. 도구 창 내에서 항목을 검색할 수 있는 검색 컨트롤을 추가할 수 있습니다: [도구 창에 검색 추가](../extensibility/adding-search-to-a-tool-window.md)합니다.  
   

@@ -1,7 +1,7 @@
 ---
 title: VisibilityItem 요소 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f7ceeecbd8d68053d4759a3da3cd552545a4285
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 46f8d4557c5abcc14963a87cd8c90217abd3ab1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555020"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209458"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VisibilityItem 요소](https://docs.microsoft.com/visualstudio/extensibility/visibilityitem-element)합니다.  
-  
 `VisibilityItem` 요소 도구 모음 및 명령 정적 표시 여부를 결정 합니다. 모든 항목에는 명령 또는 메뉴 및 연결 된 명령 UI 컨텍스트를 식별합니다. Visual Studio 명령, 메뉴 및 도구 모음 및 표시 여부를 정의 하는 Vspackage를 로드 하지 않고 검색 합니다. IDE를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 명령 UI 컨텍스트의 활성 상태 인지 여부를 결정 하는 방법.  
   
  Visual Studio에서는 명령 표시는 VSPackage에서 결정 해야 하는 VSPackage가 로드 한 후 보다는 `VisibilityItem`합니다. 명령의 표시 여부를 확인 하려면 하거나 구현할 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 이벤트 처리기 또는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 명령을 구현 하는 방법에 따라 메서드.  

@@ -1,7 +1,7 @@
 ---
 title: N 계층 응용 프로그램에서 Tableadapter에 코드 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd46596ff474a33be42b8c5118404845a39c2b7d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b5302790d694c23da9e5385adf43c185dc66583
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551939"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207677"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>n 계층 응용 프로그램에서 TableAdapter에 코드 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [n 계층 응용 프로그램에서 Tableadapter에 코드를 추가](https://docs.microsoft.com/visualstudio/data-tools/add-code-to-tableadapters-in-n-tier-applications)합니다.  
-  
   
 기능을 확장할 수 있습니다는 `TableAdapter` 에 대 한 partial 클래스 파일을 만들어 합니다 `TableAdapter` 코드를 추가 하 (코드를 추가 하는 대신 합니다 *DatasetName*. DataSet.Designer 파일)입니다. Partial 클래스를 여러 실제 파일에서 나눌 특정 클래스에 대 한 코드를 사용 합니다. 자세한 내용은 [부분](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) 하거나 [partial (형식)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)합니다.  
   

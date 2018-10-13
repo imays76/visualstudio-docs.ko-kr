@@ -1,7 +1,7 @@
 ---
 title: JIT 최적화 및 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555350"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201991"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 최적화 및 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [JIT 최적화 및 디버깅](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging)합니다.  
-  
 관리 되는 응용 프로그램을 디버깅할 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기본적으로 시간 (JIT) 코드 최적화를 표시 하지 않습니다. JIT 최적화를 사용하지 않으면 최적화되지 않은 코드를 디버깅하게 됩니다. 코드가 최적화되지 않으므로 코드 실행 속도는 약간 느려지지만 디버깅은 더 철저하게 수행할 수 있습니다. 최적화된 코드는 디버깅하기가 더 어려우므로 최적화된 코드에서는 발생하지만 최적화되지 않은 버전의 코드에서는 재현되지 않는 버그를 발견한 경우에만 이를 수행하는 것이 좋습니다.  
   
  JIT 최적화에서 제어 됩니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 여는 **모듈을 로드할 때 JIT 최적화** 옵션입니다. 이 옵션을 찾을 수 있습니다는 **일반** 페이지를 **디버깅** 에 노드를 **옵션** 대화 상자.  

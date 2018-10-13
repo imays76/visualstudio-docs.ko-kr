@@ -1,7 +1,7 @@
 ---
 title: 부트스트래퍼 패키지 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ee6badf48d0d196001c948495f9b658114c66ff6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208915"
 ---
 # <a name="creating-bootstrapper-packages"></a>부트스트래퍼 패키지 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [부트스트래퍼 패키지 만들기](https://docs.microsoft.com/visualstudio/deployment/creating-bootstrapper-packages)합니다.  
-  
 설치 프로그램은 일반 설치 관리자로서 Windows Installer(.msi) 파일 및 실행 프로그램과 같은 재배포 가능 구성 요소를 검색 및 설치하도록 구성할 수 있습니다. 설치 관리자를 부트스트래퍼라고도 합니다. 구성 요소 설치를 관리하는 메타데이터를 지정하는 XML 매니페스트 집합을 통해 설치 프로그램을 프로그래밍합니다.  
   
  부트스트래퍼는 먼저 필수 구성 요소가 이미 설치되었는지를 검색합니다. 필수 구성 요소가 설치되지 않은 경우 부트스트래퍼는 먼저 사용권 계약을 표시합니다. 그런 다음 최종 사용자가 사용권 계약에 동의하면 필수 구성 요소 설치가 시작됩니다. 그렇지 않고 모든 필수 구성 요소가 검색되면 부트스트래퍼는 응용 프로그램 설치 관리자만 시작합니다.  
@@ -135,7 +133,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [방법: ClickOnce 응용 프로그램을 사용하여 필수 조건 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [필수 조건 대화 상자](../ide/reference/prerequisites-dialog-box.md)   
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)   
- [Visual Studio 2005 부트스트래퍼를 사용 시작 설치](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Visual Studio 2005 부트스트래퍼를 사용하여 설치 시작](http://go.microsoft.com/fwlink/?LinkId=107537)
 
 
 

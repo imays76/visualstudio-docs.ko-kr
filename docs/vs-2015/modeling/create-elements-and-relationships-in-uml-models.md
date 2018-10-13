@@ -1,7 +1,7 @@
 ---
 title: UML 모델에서 요소 및 관계 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 55d1a54fad3a420c60cf69bc93d29a675f9e802e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0e68a3701d4455c0a627bd275eaab2cd857abc1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198551"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>UML 모델에서 요소 및 관계 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML 모델에서 요소 및 관계를 만들](https://docs.microsoft.com/visualstudio/modeling/create-elements-and-relationships-in-uml-models)합니다.  
-  
 Visual Studio 확장에 대한 프로그램 코드에서 요소 및 관계를 만들고 삭제할 수 있습니다.  
   
 ## <a name="create-a-model-element"></a>모델 요소 만들기  

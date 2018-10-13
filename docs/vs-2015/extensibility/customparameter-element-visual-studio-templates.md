@@ -1,7 +1,7 @@
 ---
 title: CustomParameter 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d968f255607bd0d98dc83945bfcb555400a1573a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9540b42497b15eace2ed7a54ef9c26f76c0576a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198850"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [CustomParameter 요소 (Visual Studio 템플릿)](https://docs.microsoft.com/visualstudio/extensibility/customparameter-element-visual-studio-templates)합니다.  
-  
 사용자 지정 매개 변수 이름 및 템플릿에서 프로젝트 또는 항목을 만들 때 사용할 값을 포함 합니다.  
   
 ## <a name="syntax"></a>구문  

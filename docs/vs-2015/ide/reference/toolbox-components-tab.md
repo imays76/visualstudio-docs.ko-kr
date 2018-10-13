@@ -1,7 +1,7 @@
 ---
 title: 도구 상자, 구성 요소 탭 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b253e170adc8510aebd9c96a468169058d2a87fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 405c7db0ca437aa5462068e2be3cfcc2d76c1cae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203127"
 ---
 # <a name="toolbox-components-tab"></a>도구 상자, 구성 요소 탭
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도구 상자, 구성 요소 탭](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-components-tab)합니다.  
-  
   
 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 및 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 디자이너에 추가할 수 있는 구성 요소를 표시합니다. <xref:System.Messaging.MessageQueue> 및 <xref:System.Diagnostics.EventLog>와 같이 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]에 함께 제공되는 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 구성 요소 이외에 사용자 지정 또는 타사 구성 요소를 이 탭에 추가할 수 있습니다. 자세한 내용은 [방법: 도구 상자 탭 조작](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)을 참조하세요.  
   

@@ -1,7 +1,7 @@
 ---
 title: 도구 창에 검색 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8bdee40e2af2e09844314cd1727f480b3cd33462
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564563"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206923"
 ---
 # <a name="adding-search-to-a-tool-window"></a>도구 창에 검색 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도구 창에 검색 추가](https://docs.microsoft.com/visualstudio/extensibility/adding-search-to-a-tool-window)합니다.  
-  
 를 작성 하거나 도구 창 확장 프로그램에서 업데이트할 때 Visual Studio에서 다른 곳에 표시 되는 동일한 검색 기능을 추가할 수 있습니다. 이 기능에는 다음 기능이 포함 됩니다.  
   
 -   도구 모음 사용자 지정 영역에 항상 있는 검색 상자입니다.  
@@ -57,7 +55,7 @@ ms.locfileid: "47564563"
   
 ## <a name="to-create-a-vsix-project"></a>VSIX 프로젝트를 만들려면  
   
-1.  라는 VSIX 프로젝트를 만듭니다 `TestToolWindowSearch` 라는 도구 창 **TestSearch**합니다. 이 작업을 수행 하는 도움이 필요한 경우 참조 [도구 창으로 확장을 만드는](../extensibility/creating-an-extension-with-a-tool-window.md)합니다.  
+1.  라는 VSIX 프로젝트를 만듭니다 `TestToolWindowSearch` 라는 도구 창 **TestSearch**합니다. 이 작업에 대한 도움이 필요한 경우 [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조하세요.  
   
 ## <a name="to-create-a-tool-window"></a>도구 창을 만들려면  
   

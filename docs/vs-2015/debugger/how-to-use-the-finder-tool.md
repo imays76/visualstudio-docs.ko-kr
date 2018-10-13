@@ -1,7 +1,7 @@
 ---
 title: '방법: 찾기 도구 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 748ca2cf70e69aa786e8ec02f0d6bee9f6d9d485
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 935aab109ef15fc1478ca92bb901cbb353b89cb5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198759"
 ---
 # <a name="how-to-use-the-finder-tool"></a>방법: 찾기 도구 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 찾기 도구를 사용 하 여](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-finder-tool)입니다.  
-  
 찾기 도구에서 사용할 수는 **창 찾기** 창 속성이 나 메시지를 표시 하려면 대화 상자. 또한 찾기 도구 사용 안 함된 자식 창을 찾습니다 하 고 어떤 항목도 강조 표시 하는 창의 자식 창이 겹친 사용 하지 않도록 설정 되는지를 수 있습니다.  
   
  ![Spy&#43; &#43; 창 찾기 대화 상자](../debugger/media/icon-spy-find.png "Icon_Spy + + 찾기 (_f)")  

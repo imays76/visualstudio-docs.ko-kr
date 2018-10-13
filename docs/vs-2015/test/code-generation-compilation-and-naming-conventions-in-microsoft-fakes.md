@@ -1,7 +1,7 @@
 ---
 title: Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 98969c10a5a4464ea36b60aa1f4f024a6d96e1f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93d08695a891aeda0d4f153fa2f3e6738d647b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200020"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [생성, 컴파일 및 명명 규칙 Microsoft Fakes의 코드](https://docs.microsoft.com/visualstudio/test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes)합니다.  
-  
 이 항목에서는 Fakes 코드 생성 및 컴파일의 옵션과 문제에 대해 설명하고 Fakes 생성 형식, 멤버 및 매개 변수에 대한 명명 규칙을 설명합니다.  
   
  **요구 사항**  

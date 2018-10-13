@@ -1,7 +1,7 @@
 ---
 title: 새로운&#39;Visual Studio에서 디자인에 대 한 새로운 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,15 @@ caps.latest.revision: 34
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d710d17caaf60cea7b11a1ebd81d91796fdb46d6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3d6ab30934750f2c825029c1433ea7ca68447dcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204284"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio의 디자인에 대한 새로운 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [어떤&#39;Visual Studio에서 디자인에 대 한 새로운](https://docs.microsoft.com/visualstudio/modeling/what-s-new-for-design-in-visual-studio)합니다.
-
 이 Visual Studio 릴리스에는 더 효율적으로 코드를 이해하고 디자인할 수 있도록 다음과 같은 개선 기능이 포함되어 있습니다.
 
  **코드 맵 및 종속성 그래프**
@@ -62,7 +59,7 @@ ms.locfileid: "47859109"
 
 -   **클래스 뷰 및 개체 브라우저에서 다이어그램 만들기**. 클래스 뷰 및 개체 브라우저 창에서 파일 및 어셈블리를 새 맵이나 기존 맵에 끌어서 놓습니다.
 
- 참조 [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)합니다.
+ [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)을 참조하세요.
 
  **이 릴리스에서 다른 디자인 및 모델링 변경:**
 
