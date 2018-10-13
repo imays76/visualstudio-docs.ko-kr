@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 코드 서식 다시 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5361706e4dbb3c009de903a53cc78fcb7b93634
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53cdbc963c7701d0073634ef133c2ef2d54fa9a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211031"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 서식 다시 지정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 코드를 다시 포맷](https://docs.microsoft.com/visualstudio/extensibility/internals/reformatting-code-in-a-legacy-language-service)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 소스 코드 들여쓰기 및 공백 사용을 정규화 하 여 서식이 다시 지정 될 수 있습니다. 이 삽입 또는 공백이 나 탭에서 각 줄의 시작 부분을 제거, 줄 사이 새 줄 추가 공간을 탭 또는 탭을 공백으로 바꿉니다 포함할 수 있습니다.  
   
 > [!NOTE]

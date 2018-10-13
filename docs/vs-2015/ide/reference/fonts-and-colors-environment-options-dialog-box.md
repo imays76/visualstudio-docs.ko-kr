@@ -1,7 +1,7 @@
 ---
 title: 옵션 대화 상자, 환경, 글꼴 및 색 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8831cfdbf22d80cce39fbae81fffa46b8944e92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551923"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220722"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 글꼴 및 색
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [글꼴 및 색, 환경, 옵션 대화 상자](https://docs.microsoft.com/visualstudio/ide/reference/fonts-and-colors-environment-options-dialog-box)합니다.  
-  
   
 **옵션** 대화 상자의 **글꼴 및 색** 페이지를 사용하면 IDE(통합 개발 환경)에서 여러 사용자 인터페이스 요소의 사용자 지정 글꼴 및 색 구성표를 설정할 수 있습니다. **도구/옵션**을 클릭한 다음 **환경/글꼴 및 색**을 선택하여 이 대화 상자에 액세스할 수 있습니다. 이 페이지가 목록에 나타나지 않으면 **옵션** 대화 상자에서 **모든 설정 표시**를 선택합니다.  
   

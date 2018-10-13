@@ -1,7 +1,7 @@
 ---
 title: 항목에 추가 된 새 항목 추가 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 641c593a0c8f957982801824bd4f81bd62b904d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223108"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>새 항목 추가 대화 상자에 항목 추가
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [새 항목 추가 대화 상자에 항목 추가](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes)합니다.  
-  
 항목을 추가 하기 위한 프로세스를 **새 항목 추가** 레지스트리 키를 사용 하 여 대화 상자를 시작 합니다. AddItemTemplates 섹션에서는의 경로 및 이름에 사용할 수 있는 어떤 항목에 있는 디렉터리의 다음 레지스트리 항목에 표시 된 대로 합니다 **새 항목 추가** 대화 상자에 배치 됩니다.  
   
 > [!NOTE]

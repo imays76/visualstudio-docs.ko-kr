@@ -1,7 +1,7 @@
 ---
 title: 코드에 책갈피 설정 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 989333e23310009a4b3282fb4520395a32d6b270
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbb6775411af7bc93cd8168af460974fb5c18d3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219754"
 ---
 # <a name="setting-bookmarks-in-code"></a>코드에 책갈피 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [코드에서 책갈피 설정](https://docs.microsoft.com/visualstudio/ide/setting-bookmarks-in-code)합니다.  
-  
 코드의 줄에 책갈피를 표시하여 특정 위치로 신속하게 돌아가거나 여러 위치 간에 앞뒤로 이동할 수 있습니다.  
   
  책갈피 명령 및 아이콘은 책갈피 창(**보기/책갈피 창**) 및 텍스트 편집기 도구 모음 두 곳에서 사용할 수 있습니다.  

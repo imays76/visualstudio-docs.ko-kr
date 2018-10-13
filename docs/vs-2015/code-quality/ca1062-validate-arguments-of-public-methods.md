@@ -1,7 +1,7 @@
 ---
 title: 'CA1062: public 메서드의 인수의 유효성을 검사 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,15 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8fd4534c333dfe31801d13a99b6ee7b3f0c25e33
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 7fd1cc9786c82a7abb5c8cca589317bae56c4b00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47592363"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221691"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: public 메서드의 인수의 유효성을 검사하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA1062: public 메서드의 인수의 유효성을 검사](https://docs.microsoft.com/visualstudio/code-quality/ca1062-validate-arguments-of-public-methods)합니다.
-
 |||
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|

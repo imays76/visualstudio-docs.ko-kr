@@ -1,7 +1,7 @@
 ---
 title: '&lt;종속성&gt; 요소 (ClickOnce 배포) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 735b37196586f540186a3ca43c9c315ede51d084
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214930"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;종속성&gt; 요소 (ClickOnce 배포)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ &lt;종속성&gt; 요소 (ClickOnce 배포)](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-deployment)합니다.  
-  
 를 설치 하려면 응용 프로그램의 버전 및 응용 프로그램 매니페스트의 위치를 식별 합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -109,12 +107,12 @@ ms.locfileid: "47552672"
 |`type`|선택 사항입니다. 이전 버전과 호환성 Windows-side-by-side를 사용 하 여 설치 기술에 대 한 합니다. 허용 된 값만 `win32`합니다.|  
   
 ## <a name="hash"></a>hash  
- 합니다 `hash` 의 선택적 자식 요소입니다는 `file` 요소입니다. `hash` 요소는 특성이 없습니다.  
+ 합니다 `hash` 의 선택적 자식 요소입니다는 `file` 요소입니다. `hash` 요소에는 특성이 없습니다.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 후에 변경 된 파일이 없음을 확인 하기를 보안 검사는 응용 프로그램의 모든 파일의 해시를 알고리즘을 사용 합니다. 경우는 `hash` 요소가 포함 되지 않은,이 검사가 수행 되지 것입니다. 따라서 생략 된 `hash` 요소 권장 되지 않습니다.  
   
 ## <a name="dsigtransforms"></a>dsig:Transforms  
- 합니다 `dsig:Transforms` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:Transforms` 요소는 특성이 없습니다.  
+ 합니다 `dsig:Transforms` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:Transforms` 요소에는 특성이 없습니다.  
   
 ## <a name="dsigtransform"></a>dsig:Transform  
  합니다 `dsig:Transform` 의 필수 자식 요소인는 `dsig:Transforms` 요소입니다. 다음 표에서 특성을 `dsig:Transform` 요소입니다.  
@@ -131,7 +129,7 @@ ms.locfileid: "47552672"
 |`Algorithm`|이 파일에 대 한 다이제스트를 계산 하는 데 사용 된 알고리즘입니다. 사용 하는 유일한 값 현재 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 는 `http://www.w3.org/2000/09/xmldsig#sha1`합니다.|  
   
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue  
- 합니다 `dsig:DigestValue` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:DigestValue` 요소는 특성이 없습니다. 요소의 텍스트 값은 지정된 된 파일에 대 한 계산 된 해시입니다.  
+ 합니다 `dsig:DigestValue` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:DigestValue` 요소에는 특성이 없습니다. 요소의 텍스트 값은 지정된 된 파일에 대 한 계산 된 해시입니다.  
   
 ## <a name="remarks"></a>설명  
  배포 매니페스트는 일반적으로 단일 있습니다 `assemblyIdentity` 이름과 응용 프로그램 매니페스트 버전을 식별 하는 요소입니다.  

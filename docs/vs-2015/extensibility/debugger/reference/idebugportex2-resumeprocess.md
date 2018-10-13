@@ -1,7 +1,7 @@
 ---
 title: IDebugPortEx2::ResumeProcess | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e80a6960-9456-4764-9320-e7b1bd57fe5d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: abb8532b6c73f1dd98c81056ff4c8a4bcc72d897
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8d86fd8bf362bf8b9d82188b5ee570e1fae8e99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222302"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugPortEx2::ResumeProcess](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportex2-resumeprocess)합니다.  
-  
 프로세스의 실행을 다시 시작합니다.  
   
 ## <a name="syntax"></a>구문  

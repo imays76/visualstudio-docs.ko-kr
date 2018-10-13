@@ -1,7 +1,7 @@
 ---
 title: 그래픽 이벤트 목록 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abe27b75810777bcef0fb80a35c5bb5fb44fe983
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 812f58109431bdf2e0cf623b05797009bef5a822
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210784"
 ---
 # <a name="graphics-event-list"></a>그래픽 이벤트 목록
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [그래픽 이벤트 목록](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-event-list)합니다.  
-  
 Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 게임 또는 앱의 프레임 렌더링 중 기록된 Direct3D 이벤트를 살펴봅니다.  
   
  이벤트 목록은 다음과 같습니다.  

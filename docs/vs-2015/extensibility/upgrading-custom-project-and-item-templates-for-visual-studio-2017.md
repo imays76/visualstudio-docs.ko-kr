@@ -1,7 +1,7 @@
 ---
 title: Visual Studio "15"에 대 한 사용자 지정 프로젝트 및 항목 템플릿 업그레이드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02c7b14051a41616ed1b98812d1f1b7762f7165e
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47593114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221158"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Visual Studio "15"에 대 한 사용자 지정 프로젝트 및 항목 템플릿 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [사용자 지정 프로젝트 업그레이드 및 Visual Studio에 대 한 항목 템플릿 ](https://docs.microsoft.com/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017)합니다.  
-  
 Visual Studio "15"에서 시작 하 여 Visual Studio Preview 4,.vsix 또는.msi 설치 된 프로젝트 및 항목 템플릿을 검색 하는 방법은 변경 됩니다. 사용자 지정 프로젝트 또는 항목 템플릿을 사용 하는 확장을 소유 하는 경우 확장을 업데이트 해야 합니다. 이 항목에서는 해야 할 사항을 설명 합니다.  
   
  이 변경은 Visual Studio "15"는 영향을 줍니다. 이전 버전의 Visual Studio에는 영향을 주지 않습니다.  

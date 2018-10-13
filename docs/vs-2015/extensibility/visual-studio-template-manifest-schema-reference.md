@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 템플릿 매니페스트 스키마 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b079e6b7356cdd84a98314beef95f4b1a8fbc5ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28301729091333191bcb0c381e37e20d3d9c53aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217098"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 템플릿 매니페스트 스키마 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 템플릿 매니페스트 스키마 참조](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-template-manifest-schema-reference)합니다.  
-  
 이 스키마는 Visual Studio 프로젝트 또는 항목 템플릿에 대해 생성 된 Visual Studio 템플릿 매니페스트 (.vstman) 파일의 형식을 설명 하 고 위치 및 템플릿에 대 한 기타 관련 정보를 설명 합니다.  
   
  : 있기 때문에 별도 항목 및 프로젝트 템플릿 디렉터리, 매니페스트 되지 다양 한 항목 및 프로젝트 템플릿이 있어야 합니다.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 활동 로그를 사용 하 여 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79a06bd3bcaa8b6361d0aaa19dffb8081d652a3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4804f07a673abb99d2b0405b397fe53d2e52f589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556619"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212453"
 ---
 # <a name="how-to-use-the-activity-log"></a>방법: 활동 로그 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 활동 로그를 사용 하 여](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-the-activity-log)입니다.  
-  
 Vspackage는 활동 로그에 메시지를 작성할 수 있습니다. 이 기능은 소매 환경에서 Vspackage를 디버깅 하는 데 특히 유용 합니다.  
   
 > [!TIP]

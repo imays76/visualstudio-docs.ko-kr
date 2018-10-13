@@ -1,7 +1,7 @@
 ---
 title: TextTransform 유틸리티를 사용 하 여 파일 생성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 069f7f5ef2c579c10c1ee7c19989c79ce3ad63bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7dbe189c9b46c10dc7bac5da4b87457d7c6ecbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227450"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>TextTransform 유틸리티 사용하여 파일 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [TextTransform 유틸리티를 사용 하 여 파일 생성](https://docs.microsoft.com/visualstudio/modeling/generating-files-with-the-texttransform-utility)합니다.  
-  
 TextTransform.exe는 텍스트 템플릿을 변환 하는 데 사용할 수 있는 명령줄 도구입니다. TextTransform.exe를 호출할 때 인수로 텍스트 템플릿 파일의 이름을 지정 합니다. TextTransform.exe는 텍스트 변형 엔진을 호출 하 고 텍스트 템플릿을 처리 합니다. 일반적으로 TextTransform.exe 스크립트에서 호출 됩니다. 그러나이 아니므로 일반적으로 필요한 Visual Studio 또는 빌드 프로세스에서 텍스트 변환 작업을 수행할 수 있습니다.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 'DA0024: 과도한 GC CPU 시간 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fdc10bc78bed3597ea121376ca2235cfd6acbc7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba4069e653ce692c0561c63853bf6f4c8bf5f67a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543031"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221327"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: 과도한 GC CPU 시간
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DA0024: 과도 한 GC CPU 시간이](https://docs.microsoft.com/visualstudio/profiling/da0024-excessive-gc-cpu-time)합니다.  
-  
 규칙 Id | DA0024 |  
 | 범주. NET Framework 사용 |  
 | 프로 파일링 방법을 | 모든 |  

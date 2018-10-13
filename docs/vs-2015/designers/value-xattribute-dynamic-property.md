@@ -1,7 +1,7 @@
 ---
 title: Value(XAttribute 동적 속성) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af8f122bfbf2ce37b161afb5f0665a9677ef2f3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd9ea1fa163980a39bcd9981b9e1d757d72fcb6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555901"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229153"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value(XAttribute 동적 속성)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Value (XAttribute 동적 속성)](https://docs.microsoft.com/visualstudio/designers/value-xattribute-dynamic-property)합니다.  
-  
 XML 특성의 값을 가져오거나 설정합니다.  
   
 ## <a name="syntax"></a>구문  

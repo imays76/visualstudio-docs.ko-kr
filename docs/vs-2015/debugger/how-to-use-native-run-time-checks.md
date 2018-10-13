@@ -1,7 +1,7 @@
 ---
 title: '방법: 네이티브 런타임 검사 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -46,19 +46,17 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e90af82b5f3d7cd88d3b8488b0ebd9a4359b566f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1efa6852a9bb1c2ec6cd4cabf63ca761506cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220222"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 기능 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 사용 하 여 네이티브 런타임 검사](https://docs.microsoft.com/visualstudio/debugger/how-to-use-native-run-time-checks)합니다.  
-  
-Visual c + +에서는 네이티브 따르면 [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) 와 같은 일반적인 런타임 오류를 catch 합니다.  
+Visual C++에서는 네이티브 [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) 를 사용하여 다음과 같은 일반적인 런타임 오류를 catch할 수 있습니다.  
   
 -   스택 포인터 손상  
   

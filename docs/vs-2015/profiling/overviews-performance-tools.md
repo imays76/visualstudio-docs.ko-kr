@@ -1,7 +1,7 @@
 ---
 title: 개요(성능 도구) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bea4bba1314c6363308cf36b0eb075e256ddd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 679f85dc565ba55631bf6ef9877803ca407e9f85
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226267"
 ---
 # <a name="overviews-performance-tools"></a>개요(성능 도구)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [개요 (성능 도구)](https://docs.microsoft.com/visualstudio/profiling/overviews-performance-tools)합니다.  
-  
 이 섹션에서는 개발 중인 응용 프로그램의 성능 특성을 측정하는 데 사용할 수 있는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 개념과 용어를 간략하게 설명합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

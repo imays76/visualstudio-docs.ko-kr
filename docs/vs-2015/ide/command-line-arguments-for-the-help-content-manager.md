@@ -1,7 +1,7 @@
 ---
 title: 도움말 콘텐츠 관리자에 대한 명령줄 인수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b5497eaaf74e36997150529f7a962ab02101d1a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553910"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214697"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>도움말 콘텐츠 관리자에 대한 명령줄 인수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도움말 콘텐츠 관리자 명령줄 인수](https://docs.microsoft.com/visualstudio/ide/command-line-arguments-for-the-help-content-manager)합니다.  
-  
 도움말 콘텐츠 관리자(HlpCtntmgr.exe)의 명령줄 인수를 사용하여 로컬 도움말 콘텐츠를 배포하고 관리하는 방법을 지정할 수 있습니다. 관리자 권한으로 이 명령줄 도구에 대한 스크립트를 실행해야 하며 이러한 스크립트를 서비스로 실행할 수는 없습니다. 이 도구를 사용하여 다음과 같은 작업을 수행할 수 있습니다.  
   
 -   디스크 또는 클라우드에서 로컬 도움말 콘텐츠를 추가하거나 업데이트합니다.  

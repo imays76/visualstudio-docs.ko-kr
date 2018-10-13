@@ -1,7 +1,7 @@
 ---
 title: 프로그램에서 단계별로 실행하는 경우 어떻게 포커스를 유지할 수 있습니까? | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7598e25a6e436702b88b7e10d6cde7968a8cc61d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29704c2543981ffd8276575d7f4ecf4fb2cbf957
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211954"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>프로그램에서 단계별로 실행하는 경우 어떻게 포커스를 유지할 수 있습니까?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [어떻게 해야 합니까 유지 포커스 경우 단계별 실행을 통해 내 프로그램?](https://docs.microsoft.com/visualstudio/debugger/how-can-i-keep-focus-when-stepping-through-my-program-q)합니다.  
-  
 설명  
  프로그램에 창 활성화에 대한 문제가 생겼습니다. 프로그램에서 단계별로 디버거를 실행하면 프로그램이 계속해서 포커스를 잃어 버리기 때문에 문제 재현 기능이 방해를 받습니다. 어떻게 해결할 수 있습니까?  
   

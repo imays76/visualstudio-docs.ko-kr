@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 시작 페이지 사용자 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bc8c27c98127bbbdfd7a1dddbab7124b8dc1d32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ece49968c4a887e89f91feb83fae3de23aa2c282
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211486"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Visual Studio 시작 페이지 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 시작 페이지 사용자 지정](https://docs.microsoft.com/visualstudio/ide/customizing-the-start-page-for-visual-studio)합니다.  
-  
 Visual Studio의 시작 페이지를 사용자 지정할 수 있는 기본 방법에는 **프로젝트 열기** 대화 상자 표시 또는 가장 최근에 로드한 솔루션 열기 등 여러 가지가 있습니다. 도구 창에서 실행되는 WPF(Windows Presentation Foundation) XAML 페이지인 사용자 지정 시작 페이지를 표시하고 Visual Studio 내부에 있는 명령을 실행할 수도 있습니다.  
   
 ## <a name="customizing-the-default-start-page"></a>기본 시작 페이지 사용자 지정  

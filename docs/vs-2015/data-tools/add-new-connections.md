@@ -1,7 +1,7 @@
 ---
 title: 새 연결 추가 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 13398a1b0aebc921c9600518c87888bd2b5cdea7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218510"
 ---
 # <a name="add-new-connections"></a>새 연결 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [새 연결 추가](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections)합니다.  
-  
   
 데이터베이스 또는 서비스에 대 한 연결을 테스트 하 고 데이터베이스의 내용과 스키마를 사용 하 여 탐색할 수 있습니다 **서버 탐색기**하십시오 **클라우드 탐색기**, 또는 **SQL Server 개체 탐색기**. 이러한 windows 기능을 어느 정도 까지는 겹칩니다. 기본 차이점은:  
   

@@ -1,7 +1,7 @@
 ---
 title: WCF 디버깅의 제한 사항 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a74fbdae86e1603e97aedb8d293c5a78f522d027
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551616"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219156"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 디버깅의 제한 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [WCF 디버깅의 제한 사항](https://docs.microsoft.com/visualstudio/debugger/limitations-on-wcf-debugging)합니다.  
-  
 다음 세 가지 방법으로 WCF 서비스의 디버깅을 시작할 수 있습니다.  
   
 -   서비스를 호출하는 클라이언트 프로세스를 디버깅합니다. 디버거가 서비스를 한 단계씩 실행합니다. 서비스가 클라이언트 응용 프로그램과 같은 솔루션에 있지 않아도 됩니다.  

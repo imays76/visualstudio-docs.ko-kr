@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 배포 관련 오류 문제 해결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4ec87f12dc97ced54248c7323643b417fb14a63c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541734"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213644"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 배포 관련 오류 문제 해결](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-specific-errors-in-clickonce-deployments)합니다.  
-  
 이 항목에서는 배포 하는 경우 발생할 수 있는 다음과 같은 일반적인 오류가 나열을 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 하 고 각 문제를 해결 하는 단계를 제공 합니다.  
   
 ## <a name="general-errors"></a>일반 오류  

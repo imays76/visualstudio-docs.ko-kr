@@ -1,7 +1,7 @@
 ---
 title: 편집 하며 계속 하기 오류 메시지 대화 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d649df9584fc06ee08b7a7d1e846597c12519019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b6252fbaf67a9a5b4173c0fee3f65607e9cc462
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549879"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227242"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>편집하며 계속하기 오류 메시지 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [편집 하며 계속 오류 메시지 대화 상자가](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-error-message-dialog-box)합니다.  
-  
 편집 하며 계속 하기를 지 원하는 언어에서 디버깅 하는 경우이 대화 상자 표시 하지만 **편집 하며 계속 하기** 를 코드 변경 내용이 유형에 사용할 수 없습니다. 대화 상자 안의 오류 메시지에서 보다 자세한 설명을 제공합니다. 이 대화 상자가 표시될 수 있는 원인은 다음과 같습니다.  
   
 -   관리되지 않는 디버깅을 사용하도록 설정된 상태에서 관리 코드를 편집하려고 한 경우. 편집하며 계속하기는 혼합 모드 디버깅에서 작동하지 않습니다.  

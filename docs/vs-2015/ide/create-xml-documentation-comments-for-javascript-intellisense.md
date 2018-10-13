@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense에 대 한 XML 문서 주석 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220560"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>JavaScript IntelliSense에 대 한 XML 문서 주석 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 2017 설명서](/visualstudio/)합니다.  
-  
 *XML 문서 주석* JavaScript 함수, 필드 및 변수와 같은 코드 요소에 대 한 정보를 제공 하는 스크립트를 추가 하는 주석이 됩니다. Visual Studio에서 이러한 텍스트 설명은 스크립트 함수를 참조 하는 경우에 IntelliSense를 사용 하 여 표시 됩니다.  
   
  이 항목에서는 XML 문서 주석을 사용 하 여 기본 자습서를 제공 합니다. 와 같은 다른 요소를 사용 하는 방법은 [ \<var >](../ide/var-javascript.md) 하 고 [ \<값 >](../ide/value-javascript.md), 추가 코드 예제에 대 한 참조 및 [XML 문서 주석 ](../ide/xml-documentation-comments-javascript.md). 와 같은 비동기 콜백이 대 한 IntelliSense 정보를 제공 하는 것에 대 한 자세한를 `Promise`를 참조 하세요 [ \<반환 >](../ide/returns-javascript.md)합니다.  

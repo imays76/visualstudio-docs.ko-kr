@@ -1,7 +1,7 @@
 ---
 title: XML 편집기와의 통합 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9066e4941fad5acbb0d8da2f6f6165ee99402873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72cbb498184317f79cdd91a59e60dab430dfcce7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214502"
 ---
 # <a name="integration-with-xml-editor"></a>XML 편집기와의 통합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [XML 편집기와 통합](https://docs.microsoft.com/visualstudio/xml-tools/integration-with-xml-editor)합니다.  
-  
   
 XML 스키마 디자이너는 XML 편집기와 통합되었습니다. XML 편집기에서 XSD 파일을 수정 하면 변경에 반영 됩니다 합니다 [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)합니다. 있는 경우는 [그래프 뷰](../xml-tools/graph-view.md) 또는 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md) 열려 변경도 반영 됩니다 있습니다. 다음 방법을 사용하여 XML 스키마 디자이너와 XML 편집기 간을 탐색할 수 있습니다.  
   

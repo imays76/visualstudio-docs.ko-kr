@@ -1,7 +1,7 @@
 ---
 title: 복잡성 및 관리 되는 코드 관리 용이성 측정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 062ac6f8c9610c8b8e877c3d975fb1f4b6eef4e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b83ab0627685d599d0866d789c18bee8d08659a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214229"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>관리 코드의 복잡성 및 유지 관리 용이성 측정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [측정 복잡성과 관리 되는 코드 관리 용이성](https://docs.microsoft.com/visualstudio/code-quality/measuring-complexity-and-maintainability-of-managed-code)합니다.  
-  
 최신 소프트웨어 응용 프로그램의 복잡성이 높아 안정적이 고 유지 관리 가능한 코드 만들기가 늘어납니다. 최근 몇 년 동안에서 많은 소프트웨어 측정값, 코드 메트릭 이라는 개발한는 개발자가 코드 재작업이 나 향상 된 테스트를 해야 하는 위치 이해에 도움이 됩니다.  
   
  개발자가 사용할 수 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 복잡 하 고 관리 코드의 유지 관리 편의성을 측정 하는 코드 메트릭 데이터를 생성 합니다. 전체 솔루션 또는 단일 프로젝트에 대해 코드 메트릭 데이터를 생성할 수 있습니다.  

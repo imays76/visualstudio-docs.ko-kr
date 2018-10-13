@@ -1,7 +1,7 @@
 ---
 title: SccAddFromScc 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1dd8ee409fd1facae82a8b8c6eeb418a68b4a6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 759bc4d64419959812a07bac90bceb940dea4391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220736"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [SccAddFromScc 함수](https://docs.microsoft.com/visualstudio/extensibility/sccaddfromscc-function)합니다.  
-  
 이 함수는 이미 소스 제어 시스템에 있는 파일을 찾을 수 있도록 하 고 이후에 현재 프로젝트의 일부인 이러한 파일을 확인 합니다. 예를 들어이 함수 파일을 복사 하지 않고 현재 프로젝트에 공통 헤더 파일을 가져올 수 있습니다. 파일의 반환 배열 `lplpFileNames`, IDE 프로젝트에 추가 하는 사용자가 파일의 목록을 포함 합니다.  
   
 ## <a name="syntax"></a>구문  

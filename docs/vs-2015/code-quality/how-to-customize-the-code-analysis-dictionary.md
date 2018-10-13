@@ -1,7 +1,7 @@
 ---
 title: '방법: 코드 분석 사전 사용자 지정 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a46631e9f69c89af0e1d283c484ad71023821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543855"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227920"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>방법: 코드 분석 사전 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 코드 분석 사전 사용자 지정](https://docs.microsoft.com/visualstudio/code-quality/how-to-customize-the-code-analysis-dictionary)합니다.  
-  
 코드 분석의 다른 명명 규칙, 맞춤법 및 문법의 경우에는 오류에 대 한 코드의 식별자를 확인 하는 기본 제공 사전을 사용 하 여 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 지침입니다. 사용자 지정 사전을 Xml 파일을 추가, 제거 또는 수정 용어, 약어 및 기본 제공 사전에 머리 글자어를 만들 수 있습니다.  
   
  예를 들어, 코드 라는 클래스를 포함 **DoorKnokker**합니다. 코드 분석으로 두 단어의 복합 이름을 식별 합니다. **도어** 하 고 **knokker**합니다. 경고가 발생 한 다음 해당 하는 **knokker** 맞춤법이 잘못 되었다는 합니다. 철자를 인식 하도록 코드 분석을 적용할 용어를 추가할 수 있습니다 **knokker** 사용자 지정 사전입니다.  

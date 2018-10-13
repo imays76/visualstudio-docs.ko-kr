@@ -1,7 +1,7 @@
 ---
 title: Visual Studio에서 스토어 앱 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3afe6e31062b8f55add97455f0e1836128b7d0e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2e9780672abbff1cec9c74298579e575e59a665
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555446"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219143"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Visual Studio에서 스토어 앱 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio에서 스토어 앱 디버깅](https://docs.microsoft.com/visualstudio/debugger/debug-store-apps-in-visual-studio)합니다.  
-  
 Visual Studio 디버거를 사용하면 프로그램의 실행을 제어하고 프로그램의 상태를 검사할 수 있습니다. 디버거를 사용하여 Windows 스토어 앱에서 결함의 원인을 찾고 앱 작동 방법을 정확하게 파악할 수 있습니다. 디버거에서 실행을 일시 중단(중단)하면 Visual Studio에는 실행 코드가 포함된 소스 파일이 표시되고 실행 문이 강조 표시됩니다. 변수 값, 실행 함수의 호출 스택과 그 외 프로그램 상태에 관한 측면을 볼 수 있습니다. 한 번에 프로그램 문을 하나씩 계속 실행(단계별 실행)하면 문에서 프로그램 값을 변경하는 방법을 확인할 수 있습니다. JavaScript로 작성된 앱에서 페이지의 DOM을 검사 및 조작할 수 있습니다.  
   
 ## <a name="in-this-section"></a>단원 내용  

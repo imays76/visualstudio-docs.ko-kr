@@ -1,7 +1,7 @@
 ---
 title: 시각화에 대 한 지원 되는 Visual Studio 버전 &amp; Modeling SDK | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ebfedef5231234ab6c9d0e1319cd6d427a832bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee0e8021c68e16409bb1c107920cd802e06ee165
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227066"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>시각화에 대 한 지원 되는 Visual Studio 버전 &amp; 모델링 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [시각화를 위한 Visual Studio 버전 지원 &amp; Modeling SDK](https://docs.microsoft.com/visualstudio/modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk)합니다.  
-  
 다음은 지원 되는 Visual Studio 버전 목록을 [!INCLUDE[dsl](../includes/dsl-md.md)] 제작 및 배포 환경입니다. 이러한 버전에 대 한 자세한 내용은 Microsoft을 참조 하세요 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [개발자 센터](http://go.microsoft.com/fwlink/?LinkId=75628)합니다.  
   
 ## <a name="authoring-edition"></a>작성 버전  

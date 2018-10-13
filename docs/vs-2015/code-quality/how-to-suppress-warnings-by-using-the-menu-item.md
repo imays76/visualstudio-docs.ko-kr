@@ -1,7 +1,7 @@
 ---
 title: '방법: 메뉴 항목을 사용 하 여 경고 표시 안 함 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be62471a950dc794bc3b9ff704cb187bbc943ce1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c756a5ab6516d78f5370622555898c98658e8b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211790"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>방법: 메뉴 항목을 사용하여 경고 표시 안 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 메뉴 항목을 사용 하 여 경고 표시 안 함](https://docs.microsoft.com/visualstudio/code-quality/how-to-suppress-warnings-by-using-the-menu-item)합니다.  
-  
 참고]
 >  웹 사이트 프로젝트에서는 ISS(In source suppression)가 지원되지 않습니다.  
   

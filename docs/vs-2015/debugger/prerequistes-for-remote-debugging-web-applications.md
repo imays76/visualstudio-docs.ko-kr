@@ -1,7 +1,7 @@
 ---
 title: 웹 응용 프로그램 원격 디버깅의 필수 조건 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 197a6e9b433173f1de13e3506db79e7edf53bade
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 448e6e7705e4df7330abce0e919adc705721102c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227307"
 ---
 # <a name="prerequistes-for-remote-debugging-web-applications"></a>웹 응용 프로그램 원격 디버깅의 필수 구성 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [원격 디버깅 웹 응용 프로그램에 대 한 필수 구성 요소](https://docs.microsoft.com/visualstudio/debugger/prerequistes-for-remote-debugging-web-applications)합니다.  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거를 사용하면 로컬 컴퓨터나 원격 서버에서 웹 응용 프로그램을 투명하게 디버깅할 수 있습니다. 즉, 로컬 컴퓨터나 원격 서버에서 디버거가 같은 방식으로 작동하며 동일한 디버거 기능을 사용할 수 있습니다. 그러나 원격 디버깅이 올바르게 작동하기 위해서는 몇 가지 필수 조건이 있습니다.  
   
 -   디버깅할 서버에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 원격 디버깅 구성 요소가 설치되어 있어야 합니다. 자세한 내용은 [원격 디버깅 설정](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)합니다.  

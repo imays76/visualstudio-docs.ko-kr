@@ -1,7 +1,7 @@
 ---
 title: IDE에 의해 구현 된 콜백 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2293640ebb0cc788d104f02f790c32bb47ced6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84533d95eb6bc0f6433d0b021d429c13e504c13d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541738"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212786"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE에서 구현된 콜백 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDE에 의해 콜백 함수 구현](https://docs.microsoft.com/visualstudio/extensibility/callback-functions-implemented-by-the-ide)합니다.  
-  
 와 통합 하 고 통합 된 최종 사용자 환경을 제공 하기 위해 최대한 원활 하 게으로 통합된 개발 환경 (IDE) 소스 제어 플러그 인 사용할 수 IDE에 의해 구현 되는 콜백 함수. 플러그 인이 함수를 호출할 수 이러한 정보는 IDE를 전달 하는 소스 제어 작업 중 적절 한 시간 IDE 기본 UI에 포함 된 요소로이 정보를 표시할 수 있습니다. 사용자 이면 플러그 인 사용 자체 UI 보다이 시나리오에서 덜 조각난 된 환경이 있습니다.  
   
  필수 헤더 파일이 scc.h입니다. 기본 위치는 \Program Files\VSIP 8.0\EnvSDK\common\inc\\합니다. 소스 제어 플러그 인 샘플 \Program Files\VSIP 8.0\MSSCCI에 VSIP 폴더에서 이기도\\합니다.  

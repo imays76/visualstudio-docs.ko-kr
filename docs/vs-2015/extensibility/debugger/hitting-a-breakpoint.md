@@ -1,7 +1,7 @@
 ---
 title: 중단점 적중 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a77816e3-b15b-46a0-90cd-be7242e4d6c9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 394ff3ba3826240df43faea4acd4aee107de1969
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4b5805621d1fd58f6c5d39c779e6b87719edac6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555045"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214983"
 ---
 # <a name="hitting-a-breakpoint"></a>중단점 적중
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [중단점 적중](https://docs.microsoft.com/visualstudio/extensibility/debugger/hitting-a-breakpoint)합니다.  
-  
 다음 프로세스 디버그 엔진 (DE)를 실행 하거나 단계별로 실행 하는 동안 중단점에 도달 하면 설명 합니다.  
   
 ## <a name="troubleshooting-a-hit-breakpoint"></a>적중 횟수 중단점 문제 해결  

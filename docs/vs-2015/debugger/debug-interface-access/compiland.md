@@ -1,7 +1,7 @@
 ---
 title: 컴파일 대상 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5f4d168c1b6f8a4719a14eac26f6d88df2e2f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34cb6f2c8660a6344ca906f036abd3292a69dda3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217167"
 ---
 # <a name="compiland"></a>컴파일 대상
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Compiland](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compiland)합니다.  
-  
 하나의 `SymTagCompiland` .exe 파일에 연결 된 각 컴파일 대상 기호입니다. Compiland 정보 기호를 간에 분할 되는 `SymTagCompiland` 추가 컴파일 대상 기호를 로드 하지 않고 검색할 수 있는 태그 및 사용 하 여 기호를 `SymTagCompilandDetails` 태그 추가 기호를 로드 해야 할 수 있습니다.  
   
 ## <a name="properties"></a>속성  

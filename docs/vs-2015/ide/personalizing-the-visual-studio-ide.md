@@ -1,7 +1,7 @@
 ---
 title: Visual Studio IDE 개인 설정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549626"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219999"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Visual Studio IDE 개인 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio IDE 개인 설정](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide)합니다.  
-  
 이 섹션에서는 사용자 고유의 개발 스타일 및 요구 사항을 가장 효과적으로 지원하기 위해 다양한 방식으로 Visual Studio를 개인 설정하는 방법에 대해 설명합니다. 여러 창 레이아웃을 정의하고 저장할 수 있으며 창 레이아웃 간을 전환할 수 있습니다. 예를 들어 코딩용 레이아웃과 디버깅용 레이아웃을 정의할 수 있습니다. 코드 편집기에서 각 언어에 대한 색, 글꼴 및 서식을 사용자 지정할 수 있습니다. 파란색, 어둡게 또는 밝게 환경 색 테마 중에서 선택하거나, Visual Studio 코드 갤러리에서 Visual Studio 테마 편집기를 다운로드하고 설치하여 사용자 지정 테마를 만들 수 있습니다. 다른 많은 옵션도 [옵션 대화 상자, 환경](../ide/reference/environment-options-dialog-box.md)을 통해 노출됩니다.  
   
  대부분의 설정은 Visual Studio 인스턴스 간에 로밍됩니다. 자세한 내용은 [동기화된 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요.  

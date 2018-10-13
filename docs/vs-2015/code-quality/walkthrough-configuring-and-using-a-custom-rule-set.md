@@ -1,7 +1,7 @@
 ---
 title: '연습: 규칙 집합을 구성 하 고 사용자 지정을 사용 하 여 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221639"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>연습: 사용자 지정 규칙 집합 구성 및 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 구성 및 사용자 지정 규칙 집합을 사용 하 여](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set)입니다.  
-  
 이 연습에서는 사용자 지정을 사용 하도록 구성 된 코드 분석 도구를 사용 하는 방법을 보여 줍니다 *규칙 집합* 클래스 라이브러리에서. 대체 규칙 집합을 특정 요구 사항에 줄 바꿈하지 않는 방식으로 해결할 수 있는 문제에 대 한 레거시 코드 검사와 같은 솔루션에 지정 하거나 선택할 수 있습니다 하는 프로젝트 형식에 연결 하는 규칙 집합을 선택할 수 있습니다. 두 경우 모두 규칙 집합 또한 사용자 지정할 수 있습니다 제대로 프로젝트 요구 사항에 맞게 조정 합니다.  
   
  이 연습에서는 이러한 프로세스를 단계별로 진행 합니다.  

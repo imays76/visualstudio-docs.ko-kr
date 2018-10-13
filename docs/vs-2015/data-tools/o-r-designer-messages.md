@@ -1,7 +1,7 @@
 ---
 title: O-r 디자이너 메시지 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53e7179c4edbd1ead3684307eca84ef19f1e48b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c055321c3936f92c21d5bff6ac63ecbeb7c982e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217650"
 ---
 # <a name="or-designer-messages"></a>O/R 디자이너 메시지
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [O-r 디자이너 메시지](https://docs.microsoft.com/visualstudio/data-tools/o-r-designer-messages)합니다.  
-  
   
 이 항목에서는 O/R 디자이너를 사용할 때 발생할 수 있는 다음과 같은 메시지에 대해 설명합니다.  
   

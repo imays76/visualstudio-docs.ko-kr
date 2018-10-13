@@ -1,7 +1,7 @@
 ---
 title: UML을 확장 하는 프로필 정의 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221262"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>프로필을 정의하여 UML 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [UML을 확장 하는 프로필 정의](https://docs.microsoft.com/visualstudio/modeling/define-a-profile-to-extend-uml)합니다.  
-  
 정의할 수 있습니다는 *UML 프로필* 특정 용도 맞게 표준 모델 요소를 사용자 지정할 수 있습니다. 하나 이상의 프로필을 정의 *UML 스테레오 타입*합니다. 스테레오타입을 사용하여 특정 종류의 개체를 나타내는 것으로 형식을 표시할 수 있습니다. 스테레오타입은 요소의 속성 목록을 확장할 수도 있습니다.  
   
  지원되는 버전의 Visual Studio와 함께 여러 프로필이 설치됩니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요. 이러한 프로필 및 스테레오 타입을 적용 하는 방법에 대 한 자세한 내용은 참조 하세요. [프로필 및 스테레오 타입을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md)합니다.  

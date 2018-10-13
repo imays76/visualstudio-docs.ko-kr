@@ -1,7 +1,7 @@
 ---
 title: 'VsgDbg:: ~ VsgDbg (소멸자) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed5e53aee9bed8ee070011de1a44001b910066a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c43fb5c46ce3c1f33cfbb79fd68f793381f84e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212058"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg(소멸자)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VsgDbg:: ~ VsgDbg (소멸자)](https://docs.microsoft.com/visualstudio/debugger/graphics/vsgdbg-tilde-vsgdbg-destructor)합니다.  
-  
 인스턴스를 제거 합니다 `VsgDbg` 클래스입니다. 그래픽 정보를 기록 하 고 적극적으로 그래픽 로그 파일을 종료 하 고 닫은 및 적극적으로 그래픽 정보를 캡처하는 동안 사용 된 리소스가 해제 됩니다.  
   
 ## <a name="syntax"></a>구문  

@@ -1,7 +1,7 @@
 ---
 title: 다른 디버깅 기능 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8eb47e75ea0b2e523af99bbc4f3d45e75d578f05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bab0d6d7f0e57186d21d620589a86dc89fa9010
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216621"
 ---
 # <a name="more-debugging-features"></a>추가 디버그 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [추가 기능 디버깅](https://docs.microsoft.com/visualstudio/debugger/more-debugging-features)합니다.  
-  
 이 섹션에는 Visual Studio 디버거와 함께 사용할 수 있는 추가 기능이 포함되어 있습니다.  
   
  디버그를 더 빠르고 쉽게 해주는 팁과 요령 목록이 필요하면 [디버그 팁과 요령](http://blogs.msdn.com/b/visualstudio/archive/2015/05/22/debugging-tips-and-tricks.aspx)을 참조하세요.  

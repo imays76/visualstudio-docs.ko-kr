@@ -1,7 +1,7 @@
 ---
 title: '연습: 관리 되는 코드의 코드 오류 분석 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9137e7319cd8cddfb54ab4b6a6929567b24bb6e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217487"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>연습: 관리 코드의 코드 오류 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 코드 오류에 대 한 관리 코드 분석](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-managed-code-for-code-defects)합니다.  
-  
 이 연습에서는 코드 분석 도구를 사용 하 여 코드 오류에 대 한 관리 되는 프로젝트를 분석 합니다.  
   
  이 연습에서는 Microsoft.NET Framework 디자인 지침을 사용 하 여 규칙에 대 한.NET 관리 코드 어셈블리를 분석 하려면 코드 분석을 사용 하는 프로세스 안내 합니다.  

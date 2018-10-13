@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttribute | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7891e9be85fbac4f01a81e41dd36195f1ec41cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fafb47239512cab4110118d6f464e0c96e22096
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225968"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugCustomAttribute](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomattribute)합니다.  
-  
 이 인터페이스는 사용자 지정 특성을 나타내며 이름, 부모 및 특성의 클래스 형식을 제공할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
