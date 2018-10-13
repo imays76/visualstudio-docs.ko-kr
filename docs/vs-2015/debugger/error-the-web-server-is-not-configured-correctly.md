@@ -1,7 +1,7 @@
 ---
 title: '오류: 웹 서버가 올바르게 구성 되지 않은 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,25 +23,23 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82d827e0f821712306cf1ec6049129fbf4437d67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec803ea53dfa86c713b2287eb863efabc2351918
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171213"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>오류: 웹 서버가 제대로 구성되어 있지 않습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [오류: 웹 서버가 올바르게 구성 되지 않았습니다](https://docs.microsoft.com/visualstudio/debugger/error-the-web-server-is-not-configured-correctly)합니다.  
-  
 이 오류가 발생하는 원인은 다음과 같습니다.  
   
 -   다른 컴퓨터에 복사했거나, 수동으로 이름을 변경했거나, 위치를 옮긴 .NET 웹 응용 프로그램을 디버깅하려는 경우  
   
 -   IIS 연결이 충분하지 않은 경우 IIS에 웹 사이트를 배포하는 방법에 대한 자세한 내용은 [웹 사이트 만들기](http://www.iis.net/learn/get-started/getting-started-with-iis/create-a-web-site)를 참조하세요.  
   
--   ASP.NET 응용 프로그램을 디버그 하려는 경우를 참조 하세요 [IIS에 게시](https://docs.asp.net/en/latest/publishing/iis.html) 8 이상, IIS를 실행 하는 원격 컴퓨터에 배포에 대 한 지침은 또는 [Remote Debugging ASP.NET on a Remote IIS 7.5 Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) IIS 7.5를 실행 하는 원격 컴퓨터에 배포에 대 한 지침은 합니다.  
+-   ASP.NET 응용 프로그램을 디버그하려는 경우 [IIS에 게시](https://docs.asp.net/en/latest/publishing/iis.html) 에서 IIS 8 이상을 실행하는 원격 컴퓨터에 배포하는 방법에 대한 지침을 확인하거나, [Remote Debugging ASP.NET on a Remote IIS 7.5 Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 에서 IIS 7.5를 실행하는 원격 컴퓨터에 배포하는 방법에 대한 지침을 확인하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [웹 응용 프로그램 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

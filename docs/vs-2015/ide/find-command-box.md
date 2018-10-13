@@ -1,7 +1,7 @@
 ---
 title: 찾기 명령 상자 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22ced396f8a18cf2a665ed7a1ba1016b16e44c8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e818df222e9b7343facc989c1b61be30c098b64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172577"
 ---
 # <a name="findcommand-box"></a>찾기/명령 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [찾기 / 명령 상자](https://docs.microsoft.com/visualstudio/ide/find-command-box)합니다.  
-  
 텍스트를 검색하고 **찾기/명령** 상자에서 Visual Studio 명령을 실행할 수 있습니다. **찾기/명령** 상자를 도구 모음 컨트롤로 사용할 수 있지만 이 상자는 더 이상 기본적으로 표시되지 않습니다. **찾기/명령** 상자를 표시하려면 **표준** 도구 모음에서 **단추 추가/제거**를 선택하고 나서 **찾기**를 선택합니다.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 실행하려면 앞에 보다 큼(>) 기호를 붙입니다.  

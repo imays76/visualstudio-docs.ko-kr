@@ -1,7 +1,7 @@
 ---
 title: '연습: 프로파일러 API 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7eb2d4c3acfc8f2a98de1364b1f98aa451abaed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad4b22be98396fe58734f9c785da201450bdafcc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542924"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172538"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>연습: 프로파일러 API 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: Profiler를 사용 하 여 Api](https://docs.microsoft.com/visualstudio/profiling/walkthrough-using-profiler-apis)합니다.  
-  
 연습에서는 C# 응용 프로그램을 사용하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구 API를 사용하는 방법을 보여 줍니다. 프로파일러 API를 사용하여 계측 프로파일링 동안 수집되는 데이터 양을 제한합니다.  
   
  이 연습의 단계는 일반적으로 C/C++ 응용 프로그램에 적용됩니다. 각 언어의 경우 빌드 환경을 적절하게 구성해야 합니다.  

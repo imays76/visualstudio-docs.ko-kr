@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 사용자 환경 지침 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5773bdbd493b29281d148066306daf5ad9d2d2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c64ed14a412902679d96a45c45d06438d57fcc64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172005"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 사용자 환경 지침
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio User Experience Guidelines](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines)합니다.  
-  
 Visual Studio에 대 한 새로운 기능을 디자인 하는 사람에 게 Visual Studio 사용자 환경 지침 수는 있습니다. 다음이 지침에는 일반적인 사용자 모델과 상호 작용 패턴에 대 한 정보 때문에 새 사용자 인터페이스 (UI) 디자이너에는 원활 하 고 개발 환경 내에서 일관 된 사용자 환경을 만들 수 있습니다.  
   
  Windows에서 제공 하는 지침을 이해 하는 Microsoft 제품 의미에 대 한 소프트웨어를 개발 합니다. 가지 알아야 할 세 가지 중요 한 리소스가 있습니다.  
