@@ -1,7 +1,7 @@
 ---
 title: 응용 프로그램 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38f4e65040c9a4ab0afb5217a0b83ccffd894929
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c45ef73b4fe448d64a23292c83de8f01e0b6f339
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550880"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281699"
 ---
 # <a name="debugging-applications"></a>응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [응용 프로그램 디버깅](https://docs.microsoft.com/visualstudio/debugger/debugging-applications)합니다.  
-  
 다음 섹션에서는 특정 유형의 응용 프로그램에 대한 디버그를 설명합니다. 다른 응용 프로그램 종류와 다른 언어는 다른 설정과 기술을 필요로 하며, 디버그해야 하는 다양한 문제를 발생시킵니다.  
   
 ## <a name="debugging-for-different-types-of-applications"></a>다양한 유형의 응용 프로그램에 대한 디버그  

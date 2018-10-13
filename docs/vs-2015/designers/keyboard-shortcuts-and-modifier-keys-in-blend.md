@@ -1,7 +1,7 @@
 ---
 title: Blend의 바로 가기 키 및 보조 키 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba02644e3be4aeb5b9d6d1dced8e990065552eee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40970dbbffcb6f20fe605ac07a10ae359e300578
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555706"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283896"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend의 바로 가기 키 및 보조 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [바로 가기 키 및 보조키 Blend에서](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-and-modifier-keys-in-blend)합니다.  
-  
 바로 가기 키를 사용하면 마우스 단추를 여러 번 클릭해야 하는 동작을 바로 가기 키 하나로 줄일 수 있으므로 작업 속도를 향상시킬 수 있습니다. [!INCLUDE[blend_first](../includes/blend-first-md.md)]의 바로 가기 키는 다음의 두 범주로 제공됩니다.  
   
 -   **선택키** 선택키를 사용하면 키보드에서 특정 키를 눌러 대화 상자의 영역이나 메뉴 명령에 액세스할 수 있습니다. 선택키는 현재 선택한 명령이나 대화 상자에 나타나는 밑줄로 식별할 수 있습니다.  

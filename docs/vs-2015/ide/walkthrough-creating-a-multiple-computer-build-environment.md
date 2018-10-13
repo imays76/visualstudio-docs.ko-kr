@@ -1,7 +1,7 @@
 ---
 title: '연습: 여러 컴퓨터 빌드 환경 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da285fd1b769aa22127a81753c6bb49ca16954cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93d5e45bc4e8efd146391c5dff78bcb11fcf067f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554383"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292086"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>연습: 여러 컴퓨터 빌드 환경 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 여러 컴퓨터 빌드 환경 만들기](https://docs.microsoft.com/visualstudio/ide/walkthrough-creating-a-multiple-computer-build-environment)합니다.  
-  
 호스트 컴퓨터에 Visual Studio를 설치한 다음 다른 컴퓨터가 빌드에 참여할 수 있도록 다양한 파일 및 설정을 해당 컴퓨터로 복사하여 조직 내에서 빌드 환경을 만들 수 있습니다. 다른 컴퓨터에 Visual Studio를 설치할 필요는 없습니다.  
   
  이 문서에서는 외부에 소프트웨어를 재배포하거나 타사에 빌드 환경을 제공하기 위한 권한에 대해 설명하지 않습니다.  

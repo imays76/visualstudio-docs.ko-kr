@@ -1,7 +1,7 @@
 ---
 title: 'ASP.NET 디버깅: 시스템 요구 사항 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5386390261028fd635f93bc06d3a3fc8805ebdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57cdfc52079a11bfb3bd83baa2e3ff2484d368f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286483"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 디버깅: 시스템 요구 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ASP.NET 디버깅: 시스템 요구 사항](https://docs.microsoft.com/visualstudio/debugger/aspnet-debugging-system-requirements)합니다.  
+이 항목에서는 다음과 같은 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 디버깅 시나리오에 대한 소프트웨어 및 보안 요구 사항을 설명합니다.  
   
-이 항목의 소프트웨어 및 보안 요구 사항을 설명 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 디버깅 시나리오:  
-  
--   로컬 디버깅: [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]와 웹 응용 프로그램이 동일한 컴퓨터에서 실행됩니다. 이 시나리오에는 다음 두 가지 경우가 있습니다.  
+-   로컬 디버깅: [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 와 웹 응용 프로그램이 동일한 컴퓨터에서 실행됩니다. 이 시나리오에는 다음 두 가지 경우가 있습니다.  
   
     -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 코드가 파일 시스템에 상주하는 경우  
   
@@ -47,7 +45,7 @@ ms.locfileid: "47541983"
 ## <a name="security-requirements"></a>보안 요구 사항  
  원격 디버깅을 수행하려면 로컬 및 원격 컴퓨터가 도메인 설정 또는 작업 그룹 설정에 있어야 하며,  
   
- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스를 디버깅하려면 해당 프로세스를 디버깅할 수 있는 권한이 있어야 합니다. 기본적으로 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램으로 실행 합니다 **ASPNET** 사용자입니다. 작업자 프로세스가 **ASPNET**또는 **NETWORK SERVICE**로 실행되는 경우 이 프로세스를 디버깅하려면 관리자 권한이 필요합니다.  
+ [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스를 디버깅하려면 해당 프로세스를 디버깅할 수 있는 권한이 있어야 합니다. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램은 기본적으로 **ASPNET** 사용자로 실행됩니다. 작업자 프로세스가 **ASPNET**또는 **NETWORK SERVICE**로 실행되는 경우 이 프로세스를 디버깅하려면 관리자 권한이 필요합니다.  
   
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 작업자 프로세스의 이름은 디버깅 시나리오와 IIS 버전에 따라 다릅니다. 자세한 내용은 [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md)을 참조하세요.  
   

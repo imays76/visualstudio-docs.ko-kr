@@ -1,7 +1,7 @@
 ---
 title: '방법: 빌드 이벤트 지정(C#) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555749"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297299"
 ---
 # <a name="how-to-specify-build-events-c"></a>방법: 빌드 이벤트 지정(C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 빌드 이벤트 지정 (C#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp)합니다.  
-  
 빌드 이벤트를 사용하여 빌드 시작 전 또는 빌드 완료 후 실행되는 명령을 지정합니다. 빌드 이벤트는 빌드가 빌드 프로세스의 해당 지점에 성공적으로 도달할 경우에만 실행됩니다.  
   
  프로젝트가 빌드될 때 빌드 전 이벤트는 PreBuildEvent.bat라는 파일에 추가되고 빌드 후 이벤트는 PostBuildEvent.bat라는 파일에 추가됩니다. 오류 확인을 보장하려면 자체적인 오류 확인 명령을 빌드 단계에 추가합니다.  

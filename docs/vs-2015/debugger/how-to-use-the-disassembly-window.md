@@ -1,7 +1,7 @@
 ---
 title: '방법: 디스어셈블리 창 사용 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17747cdab2987a053ef5fff2bc7b8a11867d94fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555965"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287761"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>방법: 디스어셈블리 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio 디버거의 디스어셈블리 코드 보기](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-disassembly-window)합니다.  
-  
 이 기능은 주소 수준 디버깅을 설정한 경우에 사용할 수는 **옵션** 대화 상자에서 **디버깅** 노드. 스크립트 또는 SQL 디버깅에는 사용할 수 없습니다.  
   
  합니다 **디스어셈블리** 창 컴파일러에서 만든 명령에 해당 하는 어셈블리 코드가 표시 됩니다. 관리 코드를 디버깅하는 경우 이러한 어셈블리 명령은 Visual Studio 컴파일러에서 생성한 MSIL(Microsoft Intermediate Language)이 아닌 JIT(Just-in-Time) 컴파일러에서 만든 네이티브 코드에 대응합니다.  

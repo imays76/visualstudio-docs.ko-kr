@@ -1,7 +1,7 @@
 ---
 title: Windows Workflow Foundation UI 도움말 용 레거시 디자이너 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6adc7a3c3cf119a0b0d7122aa00d51102b407583
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 069c9e8947ec7095c701e560343d37077b060a2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277760"
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Windows Workflow Foundation용 레거시 디자이너 UI 도움말
 이 단원에서는 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에 포함된 레거시 [!INCLUDE[vs2010](../includes/vs2010-md.md)]의 상황에 맞는 도움말 항목을 제공합니다. 레거시 디자이너는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.  

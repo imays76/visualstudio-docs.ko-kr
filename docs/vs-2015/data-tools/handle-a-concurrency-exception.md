@@ -1,7 +1,7 @@
 ---
 title: 동시성 예외 처리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d174aeb48170f1232aa0830bd2532897e7cb6f5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5949578a6515d74d97821608093f8cdf0dfc7b15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295303"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [동시성 예외 처리](https://docs.microsoft.com/visualstudio/data-tools/handle-a-concurrency-exception)합니다.  
-  
   
 동시성 예외 (<xref:System.Data.DBConcurrencyException>)는 두 사용자가 동시에 데이터베이스에서 동일한 데이터를 변경 하려고 할 때 발생 합니다. 이 연습에서는 catch 하는 방법을 보여 주는 Windows 응용 프로그램을 만든를 <xref:System.Data.DBConcurrencyException>오류를 발생 시킨 행 찾아 처리 하는 방법에 대 한 전략에 알아봅니다.  
   

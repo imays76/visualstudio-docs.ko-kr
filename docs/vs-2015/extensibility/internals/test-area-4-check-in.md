@@ -1,7 +1,7 @@
 ---
 title: '테스트 영역 4: 체크 인 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 740ddbfbc24dacaa23200cac1632bf3cf4aef828
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ca7336686fae4c62a274779ea1ad8b13fcb84ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285014"
 ---
 # <a name="test-area-4-check-in"></a>테스트 영역 4: 체크 인
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [테스트 영역 4: 체크 인](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-4-check-in)합니다.  
-  
 이 소스 제어 플러그 인 테스트 영역에서는 업데이트 된 항목을 통해 버전 저장소에 전송 합니다 **체크 인** 명령입니다.  
   
 ## <a name="command-menu-access"></a>명령 메뉴 액세스  

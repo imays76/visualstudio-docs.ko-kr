@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 배포 문제 해결 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7ece1315bf95e5b24c0f689796752a5cde100654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20a162a8280854954a58fb0447957a3894325cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284754"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>ClickOnce 배포 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [ClickOnce 배포 문제 해결](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-clickonce-deployments)합니다.  
-  
 이 항목에서는 진단 하 고 가장 일반적인 문제를 해결할 수 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 합니다.  
   
  대부분의 경우에는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 사용자의 컴퓨터에 다운로드 되 고 아무 문제 없이 실행 합니다. 경우도 있지만 여기서 웹 서버 또는 응용 프로그램 구성 문제는 예측할 수 없는 문제를 일으킬 수 있습니다.  
@@ -60,7 +58,7 @@ ms.locfileid: "47550697"
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

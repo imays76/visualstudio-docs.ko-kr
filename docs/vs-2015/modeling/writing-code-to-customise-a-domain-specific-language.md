@@ -1,7 +1,7 @@
 ---
 title: 도메인별 언어 사용자 지정 하는 코드 작성 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d22bc992da094ea592f508f3d9e0662977e7e534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9debc18c9d99c9b44b66116ff2f956296fdc19f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555439"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293347"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>도메인별 언어를 사용자 지정하는 코드 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [도메인별 도메인별 언어 사용자 지정 하려면 코드 작성](https://docs.microsoft.com/visualstudio/modeling/writing-code-to-customise-a-domain-specific-language)합니다.  
-  
 이 섹션에서는 사용자 지정 코드를 사용 하 여 액세스, 수정 또는 도메인 특정 언어에서 모델을 만드는 방법을 보여 줍니다.  
   
  몇 가지 컨텍스트는 DSL을 사용 하 여 작동 하는 코드를 작성할 수 있습니다 가지가 있습니다.  

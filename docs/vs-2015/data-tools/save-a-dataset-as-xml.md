@@ -1,7 +1,7 @@
 ---
 title: 데이터 집합을 XML로 저장 합니다. | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bfea6a97dd5126216d5163dee1dc17e5f6364b46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a91bc594f2f028f7dfc7a11263b7aac23150b7f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541759"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287575"
 ---
 # <a name="save-a-dataset-as-xml"></a>데이터 집합을 XML로 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [데이터 집합을 XML로 저장](https://docs.microsoft.com/visualstudio/data-tools/save-a-dataset-as-xml)합니다.  
-  
   
 데이터 집합의 XML 데이터를 데이터 집합에서 제공 되는 XML 메서드를 호출 하 여 액세스할 수 있습니다. XML 형식으로 데이터를 저장 하려면 하거나 호출할 수 있습니다 합니다 <xref:System.Data.DataSet.GetXml%2A> 메서드 또는 <xref:System.Data.DataSet.WriteXml%2A> 메서드를 <xref:System.Data.DataSet>입니다.  
   

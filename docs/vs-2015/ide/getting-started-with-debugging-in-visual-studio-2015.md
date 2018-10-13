@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Visual Studio 2015에서 디버그 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec46ba094ccafbb06ec64e181d4a64906feaa205
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281452"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015에서 디버그 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Getting Started with Visual Studio의 디버깅](https://docs.microsoft.com/visualstudio/ide/getting-started-with-debugging-in-visual-studio)합니다.  
-  
 Visual Studio 2015에서는 프로젝트 빌드 및 디버깅 도구의 강력한 통합 집합을 제공합니다. 이 항목에서는 가장 기본적인 디버깅 UI 기능 집합을 사용하여 시작하는 방법을 알아봅니다.  
   
  참고: 이 페이지의 아래쪽에 더 많은 고급 기능과 플랫폼 또는 기능별 항목의 링크가 있습니다.  

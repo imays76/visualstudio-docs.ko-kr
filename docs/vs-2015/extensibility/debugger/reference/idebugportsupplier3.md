@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier3 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14a4e9f704cc5a863030ae6041f3d93276ecf18e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae9b1911d92c8fe2e9a55b7737c37db44aa9d441
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284416"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IDebugPortSupplier3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplier3)합니다.  
-  
 이 인터페이스는 호출자가 포트 공급자 (디스크에 쓴 후)에서 디버거는 호출 간에 포트를 유지 하 고 다음 유지 해당 포트의 목록을 받을 수 있는지 여부를 확인할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  

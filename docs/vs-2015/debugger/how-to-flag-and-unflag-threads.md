@@ -1,7 +1,7 @@
 ---
 title: '방법: 플래그를 지정 및 스레드의 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81de0353311d11cf744487d581296500d62ecb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550784"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289135"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>방법: 스레드에 플래그 지정 및 스레드의 플래그 해제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 플래그 및 스레드의 플래그 해제](https://docs.microsoft.com/visualstudio/debugger/how-to-flag-and-unflag-threads)합니다.  
-  
 아이콘 표시 하 여 특별 한 주의가 하려는 스레드에 플래그를 수는 **스레드**를 **병렬 스택**를 **병렬 조사식**, 및 **GPU 스레드** windows. 이 아이콘은 플래그 설정된 스레드를 다른 스레드와 구분하는 데 도움이 됩니다.  
   
  플래그가 지정 된 스레드 권한도에서 별도로 처리 합니다 **스레드** 목록에서 **디버그 위치** 도구 모음입니다. 이 목록에 모든 스레드나 플래그 설정된 스레드만 표시할 수 있습니다. 스레드에 플래그 지정 된 **스레드** 목록 플래그가 지정 된 스레드만 표시 하도록 자동으로 전환 되지만 전환할 수도 있습니다 적절 하 게 모든 스레드 표시를 다시 합니다.  

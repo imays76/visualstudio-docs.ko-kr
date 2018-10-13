@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 격리 셸 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557001"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286067"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 격리 셸
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Visual Studio Isolated Shell](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell)합니다.  
-  
 Visual Studio isolated shell을 사용 하면-나란히 실행할 수 있는 독립 실행형 응용 프로그램을 만들 수 있습니다 다른 버전의 Visual Studio를 사용 하 여 합니다. 브랜딩 및 주로 Visual Studio 서비스를 사용할 수 있지만 사용자 지정 된 모양이 있는 특수 한 도구를 호스트 하는 데 사용 됩니다. Visual Studio 기능 및 명령 그룹 메뉴 설정할 수 있습니다 쉽게 켜고 끕니다. 응용 프로그램 타이틀, 응용 프로그램 아이콘 및 시작 화면은 완전히 사용자 지정할 수 있습니다. 사용자 지정 가능한 기능의 목록을 보려면 참조 [격리 셸 사용자 지정](../extensibility/customizing-the-isolated-shell.md)합니다.  
   
  격리 된 셸 프로젝트를 사용 하려면 Visual Studio SDK를 설치 해야 합니다. Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  

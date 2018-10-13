@@ -1,7 +1,7 @@
 ---
 title: 성능 경고 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c0f43cd713c5f87530455411a5915f5e357d69ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a586da52a62dbc12abef442fbc379da2fcc14d1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542319"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298053"
 ---
 # <a name="performance-warnings"></a>성능 경고
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 경고](https://docs.microsoft.com/visualstudio/code-quality/performance-warnings)합니다.  
-  
 성능 경고는 고성능 라이브러리 및 응용 프로그램을 지원합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

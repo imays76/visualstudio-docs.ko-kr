@@ -1,7 +1,7 @@
 ---
 title: 레거시 언어 서비스의 완료를 word | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd176c232bafd0d5a7a2b6735ba71b2bb490781d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557121"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285300"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 단어 완성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레거시 언어 서비스의 단어 완성](https://docs.microsoft.com/visualstudio/extensibility/internals/word-completion-in-a-legacy-language-service)합니다.  
-  
 단어 완성 단어를 부분적으로 입력 한 후에 누락 된 문자를 채웁니다. 하나의 가능한 완료의 경우 단어 완성 문자 입력 되 면 완료 됩니다. 한 부분 단어에 둘 이상의 가능성 일치 하는 경우 가능한 완성 목록이 표시 됩니다. 완성 문자는 식별자에 대 한 사용 되지 않는 모든 문자를 수 있습니다.  
   
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/extending-the-editor-and-language-services.md)합니다.  

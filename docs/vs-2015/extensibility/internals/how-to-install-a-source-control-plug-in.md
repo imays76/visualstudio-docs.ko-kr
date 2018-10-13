@@ -1,7 +1,7 @@
 ---
 title: '방법: 소스 제어 플러그 인 설치 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a89244c35c504c3c98ef02e2360ab2daa2f660f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292983"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>방법: 소스 제어 플러그 인 설치
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 소스 제어 플러그 인을 설치](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-install-a-source-control-plug-in)합니다.  
-  
 소스 제어 플러그 인을 만드는 세 가지 단계가 포함 됩니다.  
   
 1.  이 설명서의 원본 제어 플러그 인 API 참조 섹션에 정의 된 함수를 사용 하 여 DLL을 만듭니다.  

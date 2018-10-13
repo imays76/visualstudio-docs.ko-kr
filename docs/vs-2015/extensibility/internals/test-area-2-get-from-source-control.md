@@ -1,7 +1,7 @@
 ---
 title: '테스트 영역 2: 소스 제어에서 가져올 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d30b4a246085fe3a1339e057e516a9a727af1cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bb489c33a39e41ec286678f4670cfba2776ef97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554475"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284182"
 ---
 # <a name="test-area-2-get-from-source-control"></a>테스트 영역 2: 소스 제어에서 가져오기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [테스트 영역 2: 소스 제어에서 가져올](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-2-get-from-source-control)합니다.  
-  
 이 테스트 영역 가져오기 명령을 통해 버전 저장소에서 항목을 검색 하는 것에 대 한 테스트 사례를 설명 합니다. 웹 프로젝트를 로컬에 이러한 테스트 사례를 적용할 수 있습니다.  
   
 ## <a name="command-menu-access"></a>명령 메뉴 액세스  

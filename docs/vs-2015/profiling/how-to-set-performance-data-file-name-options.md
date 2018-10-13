@@ -1,7 +1,7 @@
 ---
 title: '방법: 성능 데이터 파일 이름 옵션 설정 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 19a29c143ecc2ce413e6f6480b2c49e52277af3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1b6171590885d34a16d0d5297b0fe25325ccb9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291956"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>방법: 성능 데이터 파일 이름 옵션 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 성능 데이터 파일 이름 옵션 설정](https://docs.microsoft.com/visualstudio/profiling/how-to-set-performance-data-file-name-options)합니다.  
-  
 기본적으로 다음 구문을 사용하여 프로파일링 데이터 파일(.vsp)을 저장합니다.  
   
  *Path\VSP-File\YYMMDD(N)* **.vsp**  

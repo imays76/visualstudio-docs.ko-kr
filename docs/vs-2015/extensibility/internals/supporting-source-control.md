@@ -1,7 +1,7 @@
 ---
 title: 소스 제어 지원 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01941fdd4899142ae8abb96f57f93e3ebd0b6256
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12a7cb2de6f3710f7b9e608f008d72d3b0b0e777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279580"
 ---
 # <a name="supporting-source-control"></a>소스 제어 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어를 지 원하는](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-source-control)합니다.  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 파일 체크 아웃, 체크 인 및 프로젝트 또는 편집기에 대 한 다른 소스 제어 작업을 지원합니다. 원본 제어 클라이언트로 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 와 같은 소스 제어 패키지를 상호 작용 하도록 설계 됩니다 [!INCLUDE[vsvss](../../includes/vsvss-md.md)], 보관, 버전 관리 및 동적으로 정의 된 파일 집합에 대 한 제어 기능을 제공 하는.  
   
 ## <a name="in-this-section"></a>섹션 내용  

@@ -1,7 +1,7 @@
 ---
 title: 레이어 모델 확장 배포 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5d581ca67a2d3fde5b7acab5937d1aedf88cfa4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291855"
 ---
 # <a name="deploy-a-layer-model-extension"></a>레이어 모델 확장명 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [레이어 모델 확장 배포](https://docs.microsoft.com/visualstudio/modeling/deploy-a-layer-model-extension)합니다.  
-  
 Visual Studio의 다른 사용자는 Visual Studio를 사용하여 만든 레이어 모델링 확장을 설치할 수 있습니다.  
   
 ## <a name="installing-your-extension"></a>확장 설치  

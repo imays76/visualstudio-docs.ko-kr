@@ -1,7 +1,7 @@
 ---
 title: 언로드 및 다시 로드에 대 한 고려 사항 중첩 프로젝트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d932096d209d8e39b5d218ceb868453fa9a8a6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1712c05ab1bd6dbf32537d4306517ddf189b4084
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565161"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277565"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>중첩된 프로젝트 언로드 및 다시 로드에 대한 고려 사항
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [언로드 및 중첩 된 프로젝트 다시 로드 시 고려 사항](https://docs.microsoft.com/visualstudio/extensibility/internals/considerations-for-unloading-and-reloading-nested-projects)합니다.  
-  
 중첩 된 프로젝트 형식에서 구현 하는 경우에 언로드하고 프로젝트 다시 로드 하는 경우 추가 단계를 수행 해야 합니다. 올바르게 알리도록 솔루션 이벤트에 대 한 수신기를 올바르게 올려야 합니다 `OnBeforeUnloadProject` 고 `OnAfterLoadProject` 이벤트입니다.  
   
  이 방식으로 이러한 이벤트를 발생 시켜야 하는 한 가지 이유는 소스 코드 제어 (SCC) 서버에서 항목을 삭제 하 고 다음 없는 경우 새로운로 하 고 다시 추가 하지 않을 `Get` SCC에서 작업 합니다. 이런 경우 소스 코드 제어에서 새 파일을 로드할 수는 있으며 언로드하고 다른 경우 모든 파일을 다시 로드 해야 합니다. SCC 호출 `ReloadItem`합니다. 해당 호출의 구현 프로젝트를 삭제 하 고 다시 구현 하 여 다시 만들어야 하는 것 `IVsFireSolutionEvents` 호출할 `OnBeforeUnloadProject` 및 `OnAfterLoadProject`합니다. 이 이것을 수행 하면 SCC는 프로젝트를 일시적으로 삭제 및 다시 추가 알림을 받습니다. 따라서 SCC 프로젝트 서버에서 실제로 삭제 되었으며 다시 추가 하는 경우에 따라 프로젝트에서 작동 하지 않습니다.  

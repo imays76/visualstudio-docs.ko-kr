@@ -1,7 +1,7 @@
 ---
 title: 문서 테이블 실행 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b7f22fed31618c3f0e8b897992da0beb1c0cc80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 131fbf7d5587382b2e47002f52e374dad154d448
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47543128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293074"
 ---
 # <a name="running-document-table"></a>문서 테이블 실행
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [문서 테이블 실행](https://docs.microsoft.com/visualstudio/extensibility/internals/running-document-table)합니다.  
-  
 IDE에는 실행 중인 문서 테이블 (RDT) 라는 내부 구조에 현재 열려 있는 모든 문서 목록을 유지 관리 합니다. 이 목록은 이러한 문서를 편집 하 고는 현재 여부에 관계 없이 메모리에 열려 있는 모든 문서를 포함 합니다. 문서는 지속 되 면 프로젝트에는 주 프로젝트 파일 (예를 들어,.vcxproj) 파일을 포함 하는 모든 항목입니다.  
   
 ## <a name="elements-of-the-running-document-table"></a>실행 중인 문서 테이블의 요소  

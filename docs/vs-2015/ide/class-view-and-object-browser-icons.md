@@ -1,7 +1,7 @@
 ---
 title: 클래스 뷰 및 개체 브라우저 아이콘 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 853ec238cefd5588096b5bd0318acfba30734e52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279742"
 ---
 # <a name="class-view-and-object-browser-icons"></a>클래스 뷰 및 개체 브라우저 아이콘
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [클래스 뷰 및 개체 브라우저 아이콘](https://docs.microsoft.com/visualstudio/ide/class-view-and-object-browser-icons)합니다.  
-  
 클래스 보기 * * 및 **개체 브라우저** 예를 들어 코드 엔터티를 나타내는 아이콘, 네임 스페이스, 클래스, 함수 및 변수를 표시 합니다. 다음 표에서는 아이콘에 대해 설명합니다.  
   
 |아이콘|설명|아이콘|설명|  

@@ -1,7 +1,7 @@
 ---
 title: 함수 매개 변수 및 반환 값에 주석 지정 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -131,18 +131,16 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c3a0cad60dc7867b31238669a612cdb0dac4097
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297169"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [주석을 함수 매개 변수 및 반환 값](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-parameters-and-return-values)합니다.  
-  
 이 문서에서는 간단한 함수 매개 변수에 대 한 주석의 일반적인 용도 설명 합니다.-스칼라 및 구조체와 클래스에 대 한 포인터-버퍼의 대부분의 종류입니다.  이 문서는 또한 주석에 대 한 일반적인 사용 패턴을 보여줍니다. 함수에 관련 된 추가 주석을 참조 하세요. [함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md)  
   
 ## <a name="pointer-parameters"></a>포인터 매개 변수  

@@ -1,7 +1,7 @@
 ---
 title: 솔루션 개요 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0512178d3c47853c9eba7c900a57738da6bed05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292665"
 ---
 # <a name="solutions-overview"></a>솔루션 개요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [솔루션 개요](https://docs.microsoft.com/visualstudio/extensibility/internals/solutions-overview)합니다.  
-  
 솔루션은 그룹 응용 프로그램을 만들기 위해 함께 작동 하는 하나 이상의 프로젝트입니다. 솔루션에 관련 된 프로젝트 및 상태 정보는 두 개의 서로 다른 솔루션 파일에 저장 됩니다. 솔루션 (.sln) 파일은 텍스트 기반 소스 코드 제어에서 및 사용자 간에 공유 될 수 있습니다. 솔루션 사용자 옵션 (.suo) 파일을 이진입니다. 결과적으로,.suo 파일 소스 코드 제어에서 배치할 수 없습니다 및 사용자 관련 정보를 포함 합니다.  
   
  모든 VSPackage는 두 가지 형식의 솔루션 파일을 쓸 수 있습니다. 파일의 특성상에 쓸 구현 하는 두 가지 다른 인터페이스 있습니다. 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> .sln 파일에 텍스트 정보를 기록 하는 인터페이스 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> 인터페이스는 이진 스트림을.suo 파일에 씁니다.  

@@ -1,7 +1,7 @@
 ---
 title: 프로세스 뷰 - 경합 데이터 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 411de842beb616cf4ed7c51d0458e8d7bce82690
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f03a3d5b7033ae0124368425de3d7d85f9f040a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288660"
 ---
 # <a name="process-view---contention-data"></a>프로세스 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로세스 뷰-경합 데이터](https://docs.microsoft.com/visualstudio/profiling/process-view-contention-data)입니다.  
-  
 프로세스 뷰에는 프로파일링 실행 중에 실행된 프로세스와 스레드에 대한 경합 데이터가 표시됩니다.  
   
  기호를 사용할 수 있으면 프로세스는 이름순으로 나열됩니다. 기호를 사용할 수 없으면 프로세스는 메모리 주소(16진수 형식)순으로 나열됩니다. 스레드는 스레드를 생성한 프로세스의 자식으로 나열됩니다.  

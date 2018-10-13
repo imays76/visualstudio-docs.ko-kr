@@ -1,7 +1,7 @@
 ---
 title: 셰이더 디자이너 노드 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f718faebef46308cf74847f75b3a05cd12386704
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293503"
 ---
 # <a name="shader-designer-nodes"></a>셰이더 디자이너 노드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [셰이더 디자이너 노드에](https://docs.microsoft.com/visualstudio/designers/shader-designer-nodes)합니다.  
-  
 설명서의 이 섹션에 있는 문서에는 그래픽 효과를 만드는 데 사용할 수 있는 다양한 셰이더 디자이너 노드에 대한 정보가 포함되어 있습니다.  
   
 ## <a name="nodes-and-node-types"></a>노드 및 노드 형식  

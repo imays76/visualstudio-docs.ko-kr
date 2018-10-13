@@ -1,7 +1,7 @@
 ---
 title: '샘플 Excel 확장: ExtensionPackage 클래스 | Microsoft 문서'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 6e45410a-1819-4d54-ac21-7280152f7e3a
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fadfbf9291daf35cea4e7ef3005cf3791c2fe052
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64e6d838172325bb00cdd8a28ef6adb6d1a345b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47541722"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286015"
 ---
 # <a name="sample-excel-extension-extensionpackage-class"></a>샘플 Excel 확장: ExtensionPackage 클래스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [샘플 Excel 확장: ExtensionPackage 클래스](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-extensionpackage-class)합니다.  
-  
 이 클래스는 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> 클래스를 확장하며 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 워크시트를 테스트하는 코딩된 UI 테스트의 진입점을 제공합니다.  
   
 ## <a name="assembly-attribute"></a>Assembly 특성  

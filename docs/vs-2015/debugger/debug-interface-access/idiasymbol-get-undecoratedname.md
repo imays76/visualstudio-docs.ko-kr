@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_undecoratedname | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 824fa243dc99e6e05f99e16664029649cbaa90a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bb086b101155b75b64e4d0acb8be49ef9e7d73d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297013"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [idiasymbol:: Get_undecoratedname](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-undecoratedname)합니다.  
-  
 C + +를 데코 레이트 하거나 링크, 이름에 대 한 데코 레이트 되지 않은 이름을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  

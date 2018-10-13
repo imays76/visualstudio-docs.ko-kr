@@ -1,7 +1,7 @@
 ---
 title: '방법: Visual Studio 솔루션의 일부가 아닌 실행 파일를 사용 하는 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36acf39ce892afb2a2601b3149987aa8d7e9f4ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 241a1dbf3af5db726f344ab42d53de3fdd30db3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278790"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>방법: Visual Studio 솔루션의 일부가 아닌 실행 파일 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 프로그램 실행 파일의 일부가 아닌 Visual Studio 솔루션을 디버그](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution)합니다.  
-  
 때로는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트에 포함되지 않은 실행 파일을 디버깅해야 하는 경우가 있습니다. 예를 들어 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 외부에서 만든 실행 파일이나 다른 사용자로부터 받은 실행 파일이 이러한 경우입니다.  
   
  이러한 문제는 일반적으로 Visual Studio 외부에서 실행 파일을 시작하고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거를 사용하여 이 파일에 연결하는 방법으로 해결합니다. 자세한 내용은[실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)합니다.  

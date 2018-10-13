@@ -1,7 +1,7 @@
 ---
 title: 'CA2143: 투명 한 메서드 보안 요청을 사용 하지 해야 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ed55d0645e70303f53bbd0d95021d05bb560fe23
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: ac5b2753c2c62148aaf049f717334a0e8e01335c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280763"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: 투명한 메서드는 보안 요청을 사용해서는 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-이 항목의 최신 버전에서 찾을 수 있습니다 [CA2143: 투명 한 메서드는 보안 요청을 사용 하지 않아야](https://docs.microsoft.com/visualstudio/code-quality/ca2143-transparent-methods-should-not-use-security-demands)합니다.
-
 |||
 |-|-|
 |TypeName|TransparentMethodsShouldNotDemand|

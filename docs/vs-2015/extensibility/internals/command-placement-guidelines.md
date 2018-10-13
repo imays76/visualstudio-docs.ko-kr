@@ -1,7 +1,7 @@
 ---
 title: 명령 배치 지침 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81c40e2ee18f828ad379cdaabc40854fb87ccfb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf6c047e649f1615cbb15704621d3c0a8eafaf2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552057"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284884"
 ---
 # <a name="command-placement-guidelines"></a>명령 배치 지침
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [명령 배치 지침](https://docs.microsoft.com/visualstudio/extensibility/internals/command-placement-guidelines)합니다.  
-  
 Visual Studio 통합된 개발 환경 (IDE)에 명령을 배치에 대 한 모범 사례는 명령 집합의 크기에 따라 달라 집니다. 명령 정의 되며.vsct 파일의 정보에 따라 배치 됩니다.  
   
 ## <a name="best-practices-for-all-command-sets"></a>모든 명령 집합에 대 한 모범 사례  

@@ -1,7 +1,7 @@
 ---
 title: XML 리터럴과 XML 스키마 탐색기와의 통합 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4089c34ab4ef65f4c0b468000dd06def5af4559e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60b778ae46dbd44f85973f96baab6e474f60a1f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554416"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295882"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML 리터럴과 XML 스키마 탐색기와의 통합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [통합의 XML 리터럴과 XML 스키마 탐색기와](https://docs.microsoft.com/visualstudio/xml-tools/integration-of-xml-literals-with-xml-schema-explorer)합니다.  
-  
   
 Visual Basic XML 조각을 Visual Basic 코드에 직접 통합할 수 있습니다 의미 하는 XML 리터럴을 지원 합니다. 자세한 내용은 [XML 리터럴 개요](http://go.microsoft.com/fwlink/?LinkId=140325)합니다.  
   

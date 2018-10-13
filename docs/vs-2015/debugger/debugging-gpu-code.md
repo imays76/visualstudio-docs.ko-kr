@@ -1,7 +1,7 @@
 ---
 title: GPU 코드 디버깅 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47554380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279268"
 ---
 # <a name="debugging-gpu-code"></a>GPU 코드 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [GPU 코드 디버그](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code)합니다.  
-  
 GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 있습니다. Visual Studio의 GPU 디버깅 지원에는 경합 상태 감지, 프로세스 시작, 프로세스에 연결 및 디버깅 창에 대한 통합이 포함됩니다.  
   
 ## <a name="supported-platforms"></a>지원되는 플랫폼  
@@ -70,7 +68,7 @@ GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 �
 -   [방법: GPU 스레드 창 사용](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>데이터 동기화 예외  
- 디버거는 실행 중에 몇 가지 데이터 동기화 조건을 식별할 수 있습니다. 조건이 감지되는 경우 디버거는 중단 상태로 전환됩니다. 두 가지 옵션이 있습니다 —**중단** 하거나 **계속**합니다. 사용 하 여 합니다 **예외** 대화 상자도 조건을 중단 되 고 디버거가 이러한 조건을 감지할지 여부를 구성할 수 있습니다. 자세한 내용은 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)합니다. 사용할 수도 있습니다는 **옵션** 대화 상자는 기록 데이터를 데이터의 값을 변경 되지 않는 경우 디버거가 예외를 무시 해야 지정 합니다. 자세한 내용은 [옵션 대화 상자, 디버깅, 일반](../debugger/general-debugging-options-dialog-box.md)합니다.  
+ 디버거는 실행 중에 몇 가지 데이터 동기화 조건을 식별할 수 있습니다. 조건이 감지되는 경우 디버거는 중단 상태로 전환됩니다. 두 가지 옵션이 있습니다 —**중단** 하거나 **계속**합니다. 사용 하 여 합니다 **예외** 대화 상자도 조건을 중단 되 고 디버거가 이러한 조건을 감지할지 여부를 구성할 수 있습니다. 자세한 내용은 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)합니다. 사용할 수도 있습니다는 **옵션** 대화 상자는 기록 데이터를 데이터의 값을 변경 되지 않는 경우 디버거가 예외를 무시 해야 지정 합니다. 자세한 내용은 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)을 참조하세요.  
   
 ## <a name="troubleshooting"></a>문제 해결  
   

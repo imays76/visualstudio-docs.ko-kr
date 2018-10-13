@@ -1,7 +1,7 @@
 ---
 title: Windows Installer 사용 하 여 VSPackage 제거 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24931206b6956d77414a2885758645db71e3cfff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a00f2b9bd39d25510860d1d8da0484910b8991a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552650"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283046"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Windows Installer를 사용하여 VSPackage 제거
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSPackage 사용 하 여 Windows 설치 관리자를 제거](https://docs.microsoft.com/visualstudio/extensibility/internals/uninstalling-a-vspackage-with-windows-installer)합니다.  
-  
 대부분의 경우 Windows 설치 관리자를 제거할 수 VSPackage에서 방금 수행한 VSPackage를 설치 하려면 "취소"입니다. 사용자 지정 작업에서 설명한 [명령은 해야 수 실행 한 후 설치](../../extensibility/internals/commands-that-must-be-run-after-installation.md) 도 제거 후 실행 해야 합니다. Devenv.exe 호출 하 여 설치 및 제거에 모두에 대 한 InstallFinalize 표준 작업 바로 전에 발생 하므로 두 경우 모두 CustomAction 및 InstallExecuteSequence 테이블 항목에 제공 합니다.  
   
 > [!NOTE]

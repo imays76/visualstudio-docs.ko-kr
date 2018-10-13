@@ -1,7 +1,7 @@
 ---
 title: '연습: 시작 페이지에 사용자 설정 저장 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 213f09b4cef1a3530e4759caf5700630fe3319d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48e5b5bf5fe6128ba25252afcf67a18eff7eb7eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283664"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>연습: 시작 페이지에 사용자 설정 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 시작 페이지에서 사용자 설정 저장](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-saving-user-settings-on-a-start-page)합니다.  
-  
 시작 페이지에 대 한 사용자 설정을 유지할 수 있습니다. 이 연습을 수행 하 여 사용자가 단추를 클릭 하 고 다음 시작 페이지가 로드 될 때마다이 설정으로 검색 하는 경우 레지스트리 설정을 저장 하는 컨트롤을 만들 수 있습니다. 시작 페이지 프로젝트 템플릿을 사용자 지정 가능한 사용자 컨트롤을 포함 하 고 해당 컨트롤을 호출 하는 기본 시작 페이지 XAML 때문에 자체 시작 페이지를 수정할 필요가 없습니다.  
   
  이 연습에서 인스턴스화되는 설정 저장소의 인스턴스가 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> 인터페이스를 읽고 호출 되는 경우 다음 레지스트리 위치에 쓰는: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  

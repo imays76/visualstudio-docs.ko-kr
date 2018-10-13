@@ -1,7 +1,7 @@
 ---
 title: '연습: 사용자 지정 편집기 만들기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7156c9426c108d8671fe288b353ebab89b15e32c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2184571bbba906a239ad60d8a7a19903219592f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47549898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292918"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>연습: 사용자 지정 편집기 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 사용자 지정 편집기 만들기](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-custom-editor)합니다.  
-  
 VSPackage 프로젝트 템플릿은 c + +에서 간단한 사용자 지정 편집기를 만들 수 있습니다.  VSPackage 프로젝트 템플릿은 C# 또는 Visual Basic 프로젝트를 더 이상 지원합니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  

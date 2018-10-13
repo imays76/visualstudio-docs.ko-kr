@@ -1,7 +1,7 @@
 ---
 title: 중단점 적중 횟수 대화 상자를가 하는 경우 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 650e390abde6f3ad99e5a0c30591c8d1530df692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0111f2d6c7204a05d7a62ebef9327d927a5881e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281777"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>중단점이 적중될 때 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [때 중단점은 적중 상자](https://docs.microsoft.com/visualstudio/debugger/when-breakpoint-is-hit-dialog-box)합니다.  
-  
 이 대화 상자를 사용 하 여 중단점을 적중 될 때 발생 하는 동작을 사용자 지정할 수 있습니다.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  

@@ -1,7 +1,7 @@
 ---
 title: 요소 단추 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f0bd7167351fdfcf91a093c8cf15abe275246aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fbf300718b7b66bd07704e65cd9d54e043242b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282089"
 ---
 # <a name="buttons-element"></a>Buttons 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [Buttons 요소](https://docs.microsoft.com/visualstudio/extensibility/buttons-element)합니다.  
-  
 그룹 [단추](../extensibility/button-element.md) 개별 명령을 나타내는 요소입니다.  
   
 ## <a name="syntax"></a>구문  

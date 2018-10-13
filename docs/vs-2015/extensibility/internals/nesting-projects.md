@@ -1,7 +1,7 @@
 ---
 title: 중첩 프로젝트 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70a454877a5cb7638edaff8263b6505de16ee9c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ec874d68b7a94811f0733f7045414cb48ddc880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551597"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294257"
 ---
 # <a name="nesting-projects"></a>프로젝트 중첩
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [중첩 프로젝트](https://docs.microsoft.com/visualstudio/extensibility/internals/nesting-projects)합니다.  
-  
 VS 패키지를 사용 하는 엔터프라이즈 응용 프로그램 개발자와 유사한 형식의 프로젝트에서 함께 그룹화 편리 하 게 수 있습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 를 사용 하 여 *중첩 프로젝트*합니다. 예를 들어, 엔터프라이즈 템플릿 프로젝트 범주로 그룹 프로젝트에 중첩 된 프로젝트를 사용합니다. 비즈니스 외관 프로젝트, 웹 UI 프로젝트의 경우 등에 하나의 범주에 함께 그룹화 됩니다.  
   
  이 시나리오의 경우 개발자는 각 부모 프로젝트 아래 중첩할 수는 프로젝트의 수에 제한이 없음을 개발자 한도 프로그래밍 방식으로 제공할 수 있지만 이 유형의 그룹도 만들 수 있습니다 재귀적 경우 자식 부모의 하위 항목인 자식의 하위 프로젝트를 아래 자식 프로젝트와 같은 형식의 프로젝트에 중첩 될 수 있습니다.  

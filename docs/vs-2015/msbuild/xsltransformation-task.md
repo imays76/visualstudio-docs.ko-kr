@@ -1,7 +1,7 @@
 ---
 title: XslTransformation 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ba37f75267e069ede64a25ac4c56bca8a4e8c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dad55677c5b75ec2c2721bd489a031cbf29597da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47553670"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292320"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [XslTransformation 작업](https://docs.microsoft.com/visualstudio/msbuild/xsltransformation-task)합니다.  
-  
   
 XSLT 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 장치 또는 파일로 변환합니다.  
   

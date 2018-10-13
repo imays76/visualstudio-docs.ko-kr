@@ -1,7 +1,7 @@
 ---
 title: 구성 요소 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be8a771c0f5de92664914f4f158db9054e321e19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a2c4fb0f3fa54a2d2b89c8473961143ec3185c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280334"
 ---
 # <a name="component-management"></a>구성 요소 관리
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [구성 요소 관리](https://docs.microsoft.com/visualstudio/extensibility/internals/component-management)합니다.  
-  
 Windows 설치 관리자에서 작업의 단위는 Windows 설치 관리자 구성 요소 (WICs 또는 구성 요소 라고도 함) 라고 합니다. 설치 및 Windows Installer를 사용 하는 설정에 대 한 계산 참조의 기본 단위는 각 WIC를 식별 하는 GUID입니다.  
   
  여러 제품을 사용 하 여 VSPackage 설치 관리자를 만들 수 있습니다, 있지만이 설명에서는 Windows Installer (.msi) 파일의 사용을 가정 합니다. 설치 관리자를 만들 때 발생 하는 모든 시간에 올바른 참조 카운팅 있도록 파일 배포 올바르게 관리 해야 합니다. 따라서 다른 버전의 제품 및 하지 않습니다 방해 또는 서로 다양 한 설치 중단 시나리오를 제거 합니다.  

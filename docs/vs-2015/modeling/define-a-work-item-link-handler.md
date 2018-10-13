@@ -1,7 +1,7 @@
 ---
 title: 작업 항목 링크 처리기 정의 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290422"
 ---
 # <a name="define-a-work-item-link-handler"></a>작업 항목 링크 처리기 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [작업 항목 링크 처리기 정의](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler)합니다.  
-  
 사용자가 UML 모델 요소와 작업 항목 간에 링크를 만들거나 삭제할 때 응답하는 Visual Studio Integration Extension을 만들 수 있습니다. 예를 들어 사용자가 새 작업 항목을 모델 요소에 연결하도록 선택하면 코드에서는 모델의 값으로부터 작업 항목 필드를 초기화합니다.  
   
 ## <a name="set-up-a-uml-extension-solution"></a>UML 확장 솔루션  
@@ -163,7 +161,7 @@ namespace WorkItems
   
 1.  **F5**키를 누르거나, **디버그** 메뉴에서 **디버깅 시작**을 선택합니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 시작됩니다.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다.  
   
      **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 시작, VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정 되어 있는지 확인 하지 않습니다.  
   

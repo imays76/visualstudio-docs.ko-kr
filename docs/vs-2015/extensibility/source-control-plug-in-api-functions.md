@@ -1,7 +1,7 @@
 ---
 title: 원본 제어 플러그 인 API 함수 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eadf9c76fcebe79eb8e8f599aecdf934485a34ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c02d873e2ccb6062f94569d1231b47fc56624fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551599"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293041"
 ---
 # <a name="source-control-plug-in-api-functions"></a>소스 제어 플러그 인 API 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [소스 제어 플러그 인 API 함수](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-api-functions)합니다.  
-  
 원본 제어 플러그 인 API는이 API에 따라 플러그 인 소스 컨트롤에 의해 구현 되어야 하는 다음 함수를 제공 합니다. 비트 플래그를 사용 하 여 연결 된 각 함수와 의미 체계의 서명 및 다른 매개 변수는이 문서에 자세히 설명 합니다.  
   
 ## <a name="initialization-and-housekeeping-functions"></a>초기화 및 정리 작업 기능  

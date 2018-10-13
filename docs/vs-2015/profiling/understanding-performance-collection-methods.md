@@ -1,7 +1,7 @@
 ---
 title: 성능 데이터 수집 방법 이해 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57be2cf704521f25b48495e6537d384633cfd85f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77ccabd5a75e2290f57d97af70d23d6e4e136fbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295726"
 ---
 # <a name="understanding-performance-collection-methods"></a>성능 데이터 수집 방법 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [성능 컬렉션 메서드 이해](https://docs.microsoft.com/visualstudio/profiling/understanding-performance-collection-methods)합니다.  
-  
 Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 데 사용할 수 있는 5가지 방법을 제공합니다. 이 항목에서는 각 방법에 대해 설명하고, 특정 방법으로 데이터를 수집하는 것이 적절한 몇 가지 시나리오를 제시합니다.  
   
 > [!NOTE]

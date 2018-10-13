@@ -1,7 +1,7 @@
 ---
 title: 응용 프로그램 보안 | Microsoft 문서
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57de571a778724a5bb951039c92b7d358c7824bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2838534f8241b347cc22b3c50c595b3973f14b56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47550805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291280"
 ---
 # <a name="securing-applications"></a>응용 프로그램 보안
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [응용 프로그램 보안](https://docs.microsoft.com/visualstudio/ide/securing-applications)합니다.  
-  
 대부분의 응용 프로그램에는 공통된 보안 과제가 있지만 각 응용 프로그램 도메인에는 고유한 보안 과제가 있습니다.  
   
 ## <a name="general-security-considerations"></a>일반적인 보안 고려 사항  

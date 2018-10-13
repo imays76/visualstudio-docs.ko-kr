@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 팩터리를 사용 하 여 프로젝트 인스턴스 만들기 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ae36269de9d9911092bedb87f18f9aff3ca76a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288342"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>프로젝트 팩터리를 사용하여 프로젝트 인스턴스 만들기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [만들 프로젝트 인스턴스에서 사용 하 여 프로젝트 팩터리](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-instances-by-using-project-factories)합니다.  
-  
 프로젝트 형식에 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 사용을 *프로젝트 팩터리* 프로젝트 개체의 인스턴스를 만듭니다. 프로젝트 팩터리 cocreatable COM 개체에 대 한 표준 클래스 팩터리와 비슷합니다. 그러나 프로젝트 개체 cocreatable 하지 않습니다: 프로젝트 팩터리를 사용 하 여 만들 수만 있습니다.  
   
  합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 기존 프로젝트를 로드 하거나에서 새 프로젝트를 만듭니다 때 VSPackage의 구현 프로젝트 팩터리를 호출 하는 IDE [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 프로젝트 개체를 새 솔루션 탐색기를 채우는 데 충분 한 정보를 사용 하 여 IDE를 제공 합니다. 새 프로젝트 개체는 또한 IDE에서 시작 하는 모든 관련 UI 작업을 지원 하기 위한 필수 인터페이스를 제공 합니다.  

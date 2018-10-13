@@ -1,7 +1,7 @@
 ---
 title: '연습: 잘못 구성 된 파이프라인으로 인해 개체 누락 된 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5cbe580bed0cda79a5a218109be1fd7f633f115
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f1b0d94fcc04c8f7ca8c2deb10af4c5dcc0cbbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47555011"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293529"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>연습: 잘못 구성된 파이프라인으로 인해 누락된 개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 잘못 구성 된 파이프라인으로 개체 인해 누락 된](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-misconfigured-pipeline)합니다.  
-  
-이 연습을 사용 하는 방법에 설명 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단 도구는 설정 되지 않은 픽셀 셰이더로 인해 누락 된 개체를 조사 합니다.  
+이 연습에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단 도구를 사용하여 설정되지 않은 픽셀 셰이더로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.  
   
  이 연습에서는 다음 작업을 설명합니다.  
   
@@ -50,7 +48,7 @@ ms.locfileid: "47555011"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>그래픽 로그에서 프레임을 검사하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 누락 된 개체를 보여 주는 프레임이 포함 된 그래픽 로그 문서를 로드 합니다. 새 그래픽 로그 탭에 표시 됩니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 이 탭의 맨 윗부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
+1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 누락된 개체를 보여 주는 프레임이 포함된 그래픽 로그 문서를 로드합니다. 새 그래픽 로그 탭이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 나타납니다. 이 탭의 맨 윗부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.  
   
 2.  **프레임 목록**에서 개체가 표시되지 않는 것을 보여 주는 프레임을 선택합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서 그래픽 로그 탭은 다음과 같습니다.  
   

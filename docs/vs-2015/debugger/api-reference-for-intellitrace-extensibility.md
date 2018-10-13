@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace 확장성을 위한 API 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2956378c8da8d9488ad74db58ce54614411c34f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0506044893049c54ff76ebc39e79d84629b51724
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47544203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295091"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 확장성을 위한 API 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [IntelliTrace 확장성을 위한 API 참조](https://docs.microsoft.com/visualstudio/debugger/api-reference-for-intellitrace-extensibility)합니다.  
-  
 이 단원의 정보는 IntelliTrace 확장성 API를 사용하여 응용 프로그램에서 .itrace 파일을 읽고 디코딩하는 데 도움을 줍니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  

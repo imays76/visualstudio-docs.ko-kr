@@ -1,7 +1,7 @@
 ---
 title: '연습: 병렬 응용 프로그램 디버그 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22a4d8ea3bfe98a034f485be8ceec1004f8fba75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551391"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279775"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>연습: 병렬 응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [연습: 병렬 응용 프로그램을 디버깅](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-parallel-application)합니다.  
-  
 이 연습에 사용 하는 방법을 보여 줍니다 합니다 **병렬 작업** 하 고 **병렬 스택** 병렬 응용 프로그램을 디버깅 하는 windows. 이러한 windows 이해 하 고 사용 하는 코드의 런타임 동작을 확인 하는 데 도움이 합니다 [TPL 작업 병렬 라이브러리 ()](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) 또는 [동시성 런타임](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)합니다. 이 연습에서는 기본 제공 중단점이 있는 샘플 코드를 제공합니다. 사용 하는 방법을 보여 줍니다 코드가 중단 후 합니다 **병렬 작업** 하 고 **병렬 스택** 검사 하는 windows.  
   
  이 연습에서는 다음 작업 방법을 배웁니다.  

@@ -1,7 +1,7 @@
 ---
 title: '방법: 네이티브 프레임이 호출 스택 창에서 누락 된 경우에 관리 코드를 나가기 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 682d4f9c8973f8deee65efa0cd8c0d78061ee00a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2648d73887f79f9b71770164a620bb1a8d674622
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47542759"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279437"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>방법: 호출 스택 창에 네이티브 프레임이 없을 때 관리 코드에서 나가기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 네이티브 프레임이 호출 스택 창에서 누락 된 경우에 관리 코드를 나가기](https://docs.microsoft.com/visualstudio/debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window)합니다.  
-  
 코드에 표시 되지 않는 네이티브 프레임이 있는 경우는 **호출 스택** 창에서 관리 코드에서 나가면 예기치 않은 결과가 발생할 수 있습니다. 이 문제를 해결 하려면 대신 중단점을 사용할 수 있습니다 **프로시저 나가기**합니다.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: '방법: 빌드 이벤트 지정(Visual Basic) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fc4c0efad510c511cde5d6803807a1fb1f8efd67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c9c6c937d0426170854ef3a9de04348005fc0cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47564443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298898"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>방법: 빌드 이벤트 지정(Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [방법: 빌드 이벤트 지정 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-visual-basic)합니다.  
-  
 Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업을 컴파일 프로세스의 일부로 실행하는 데 사용할 수 있습니다. 컴파일 전에 빌드 전 이벤트가 발생하고 컴파일 후에 빌드 후 이벤트가 발생합니다.  
   
  빌드 이벤트는 **빌드 이벤트** 대화 상자에 지정되며 **프로젝트 디자이너**의 **컴파일** 페이지에서 사용할 수 있습니다.  

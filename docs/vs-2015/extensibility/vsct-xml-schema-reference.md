@@ -1,7 +1,7 @@
 ---
 title: VSCT XML 스키마 참조 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84490c5bbaba926cb76927b5e545b88c4c1d4757
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a8975e53d690f4f2e13b08ccf290492955c49b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47551174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293061"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 스키마 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [VSCT XML Schema Reference](https://docs.microsoft.com/visualstudio/extensibility/vsct-xml-schema-reference)합니다.  
-  
 각 요소 및 특성 명령 테이블 컴파일러 스키마 요소의 표 허용 되는 자식을 사용 하 여 제공합니다.  
   
  XML 기반 명령 테이블 (.vsct) 구성 파일을 통합된 개발 환경 (IDE)에 VSPackage가 제공 하는 명령 요소를 정의 합니다. 이러한 요소에는 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자 포함 됩니다.  

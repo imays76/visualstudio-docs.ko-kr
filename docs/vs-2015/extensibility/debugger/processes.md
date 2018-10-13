@@ -1,7 +1,7 @@
 ---
 title: 프로세스 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37aa4436baa449e702d5cb6f76078b2bb36311fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 218f6aa05bebfe0d35776b64e6a42e4fbea4e72f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47557057"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296467"
 ---
 # <a name="processes"></a>프로세스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [프로세스](https://docs.microsoft.com/visualstudio/extensibility/debugger/processes)합니다.  
-  
 디버거 아키텍처 측면을 **프로세스**:  
   
 -   프로그램의 집합에 대 한 컨테이너입니다. 이 Windows 프로세스 스레드의 집합에 대 한 컨테이너인 밀접 하 게 유사 합니다.  
