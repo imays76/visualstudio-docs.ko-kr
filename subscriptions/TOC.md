@@ -25,6 +25,7 @@
 #### [Enterprise Mobility + Security](vs-ems.md)
 #### [Windows 개발자 계정](vs-windows-dev.md)
 #### [Office 365 개발자 구독](vs-office-dev.md)
+#### [Office 365 구독](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [TFS를 위한 최신 요구 사항](vs-modernreq.md)
 #### [Azure Pay-As-You-Go](vs-azure-payg.md)
