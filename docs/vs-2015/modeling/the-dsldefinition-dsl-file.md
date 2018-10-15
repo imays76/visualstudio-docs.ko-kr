@@ -1,7 +1,7 @@
 ---
 title: DslDefinition.dsl 파일 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8d6df6e4957eec471e4d0f1212493c088e19703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bf56b06771b905ec4982f7de7f91648c2e6b3a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47552729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306126"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [DslDefinition.dsl 파일](https://docs.microsoft.com/visualstudio/modeling/the-dsldefinition-dsl-file)합니다.  
-  
 Dsl 프로젝트의 DslDefinition.dsl 파일의 구조에 설명를 [!INCLUDE[dsl](../includes/dsl-md.md)] 정의 하는 솔루션을 *도메인별 언어*합니다. DslDefinition.dsl 파일 클래스 및 관계를 다이어그램, 도형, 커넥터, serialization 형식으로 함께 도메인 특정 언어를 설명 하 고 **도구 상자** 도메인 특정 언어의 고 편집 도구입니다. DSL 솔루션에서 이러한 도구를 정의하는 코드는 DslDefinition.dsl 파일의 정보에 따라 생성됩니다.  
   
  일반적으로 사용 합니다 *도메인별 언어 디자이너* DslDefinition.dsl 파일을 편집 합니다. 그러나 DslDefinition.dsl 파일은 원시 형식이 XML이므로 XML 편집기에서도 열 수 있습니다. 파일에 포함된 정보와 디버깅 및 확장용으로 파일이 구성되는 방식을 파악하면 유용할 수 있습니다.  

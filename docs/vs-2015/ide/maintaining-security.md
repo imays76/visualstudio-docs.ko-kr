@@ -1,7 +1,7 @@
 ---
 title: 보안 유지 관리 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2093e33b2a6b3424b39c8377f8168afd1e90939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793ec2b6f5ccfad1ded9f8a4cc2d4e6c4b994f0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230804"
 ---
 # <a name="maintaining-security"></a>보안 유지 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목의 최신 버전에서 찾을 수 있습니다 [유지 관리 보안](https://docs.microsoft.com/visualstudio/ide/maintaining-security)합니다.  
-  
 지속적인 경계가 보안의 대가라는 말이 있습니다. 응용 프로그램을 디자인하고 개발하는 동안 보안 문제에 최대한 신경을 많이 써도 배포 후에 보안 결함이 나타날 수 있습니다. 응용 프로그램을 감사하고 이벤트 로그를 분석하면 이전에 몰랐던 결함을 발견할 수도 있습니다.  
   
  또한 응용 프로그램에 대한 경계를 늦추지 않아야 할 뿐만 아니라 응용 프로그램이 실행되는 플랫폼과 종속되는 다른 제품의 보안 위협 및 결함을 지속적으로 확인해야 합니다.  
