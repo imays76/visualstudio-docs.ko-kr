@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4c32f3a9b0f0c09b7e7b58aa4c424630326d122
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673913"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325005"
 ---
 # <a name="custom-xml-parts-overview"></a>사용자 지정 XML 부분 개요
   일부 Microsoft Office 응용 프로그램에 대한 문서에 XML 데이터를 포함할 수 있습니다. 데이터 라는 문서에서 XML 데이터를 포함 하는 경우는 *사용자 지정 XML 부분*합니다.  
@@ -76,7 +76,7 @@ ms.locfileid: "35673913"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Office 응용 프로그램을 시작 하지 않고 XML 부분 수정  
  Excel, PowerPoint 또는 Word를 시작하지 않고 사용자 지정 XML 부분을 추가하거나 수정할 수 있습니다. 서버와 같이 Microsoft Office 응용 프로그램이 설치되어 있지 않은 컴퓨터에서 문서의 XML 데이터로 작업하려는 경우에 유용합니다.  
   
- Microsoft Office를 시작하지 않고 사용자 지정 XML 부분을 추가하려면 Open XML SDK의 클래스를 사용합니다. 이러한 클래스는 Office 문서와 관련된 Open XML 콘텐츠에 대한 액세스를 제공하도록 설계되었습니다. 예를 들어, 사용자 지정 XML 부분에 있는 Excel 통합 문서를 추가 하려면 사용 합니다 [AddNewPart\<T >](http://msdn.microsoft.com/47c348c0-77ab-a504-5097-bcd6a213921a) 메서드를 [WorkbookPart](http://msdn.microsoft.com/d011e6f4-77dd-d02d-66ef-dc4a9e7b26f2) 개체입니다. 자세한 내용은 [Open XML SDK 2.0](http://msdn.microsoft.com/f6a9ae68-7989-4208-97f5-3c945137a0ab)합니다.  
+ Microsoft Office를 시작하지 않고 사용자 지정 XML 부분을 추가하려면 Open XML SDK의 클래스를 사용합니다. 이러한 클래스는 Office 문서와 관련된 Open XML 콘텐츠에 대한 액세스를 제공하도록 설계되었습니다. 예를 들어, 사용자 지정 XML 부분에 있는 Excel 통합 문서를 추가 하려면 사용 합니다 [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) 메서드를 [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) 개체입니다. 자세한 내용은 [Open XML SDK](/office/open-xml/open-xml-sdk)합니다.  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Word 콘텐츠 컨트롤에 사용자 지정 XML 부분 바인딩  
  사용자 지정 XML 부분의 요소에 Word 솔루션의 콘텐츠 컨트롤을 바인딩할 수 있습니다. 콘텐츠 컨트롤이 사용자 지정 XML 부분에 바인딩된 경우 사용자 지정 XML 부분의 데이터가 콘텐츠 컨트롤의 UI(사용자 인터페이스)에 표시됩니다. 사용자가 컨트롤의 텍스트를 편집하는 경우 해당 XML 요소가 자동으로 업데이트됩니다. 마찬가지로, 사용자 지정 XML 부분의 요소 값이 변경되는 경우 XML 요소에 바인딩된 콘텐츠 컨트롤에 새 데이터가 표시됩니다. 자세한 내용은 [콘텐츠 컨트롤](../vsto/content-controls.md)합니다.  
