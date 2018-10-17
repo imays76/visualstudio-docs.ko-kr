@@ -9,16 +9,18 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701711"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356784"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 
 Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨테이너 화 된 응용 프로그램의 개발을 간소화 합니다. Visual Studio Dockerfile 및 Helm 차트와 같은 Kubernetes 배포를 지 원하는 데 필요한 코드와 구성 파일을 자동으로 만들 수 있습니다. Azure 개발 공간을 사용 하 여 라이브 Azure Kubernetes Service (AKS) 클러스터에서 코드를 디버그 하거나에서 AKS 클러스터에 직접 게시할 수 Visual Studio 내에서.
+
+이 자습서는 Visual Studio를 사용 하 여 Kubernetes를 지 원하는 프로젝트에 추가 하 고 AKS에 게시를 다룹니다. 사용 하 여 주로 관심이 있다면 [Azure 개발 공간](http://aka.ms/get-azds) 를 디버그 하 고 AKS에서 실행 중인 프로젝트를 테스트 하 게 이동할 수 있습니다 합니다 [Azure 개발 공간 자습서](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) 대신 합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -28,9 +30,9 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 
 - 합니다 [Visual Studio 용 Kubernetes 도구](https://aka.ms/get-vsk8stools), 별도 다운로드로 제공 합니다.
 
-- [Windows 용 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows) 개발 워크스테이션에 설치 된 (즉, 여기서 Visual Studio를 실행), Docker 이미지를 빌드 하려는 경우 로컬에서 실행 되는 Docker 컨테이너를 디버그 하거나 AKS에 게시 합니다.
+- [Windows 용 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows) 개발 워크스테이션에 설치 된 (즉, 여기서 Visual Studio를 실행), Docker 이미지를 빌드 하려는 경우 로컬에서 실행 되는 Docker 컨테이너를 디버그 하거나 AKS에 게시 합니다. (Docker *되지* 빌드 및 Azure 개발 공간을 사용 하 여 AKS에서 Docker 컨테이너를 디버깅 하는 데 필요한.)
 
-- Visual Studio에서 AKS에 게시 하려면:
+- Visual Studio에서 AKS에 게시 하려는 경우 (*되지* Azure 개발 공간을 사용 하 여 AKS에서 디버깅 하는 데 필요한):
 
     1.  합니다 [AKS 게시 도구](https://aka.ms/get-vsk8spublish), 별도 다운로드로 제공 합니다.
 
@@ -78,11 +80,11 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>AKS (Azure Kubernetes Service)에 게시
 
-현재 위치에서 이러한 모든 파일을 사용 하 여 항상 있는 것 처럼 작성 하 고 응용 프로그램 코드를 디버그 하려면 Visual Studio IDE를 사용할 수 있습니다.
+현재 위치에서 이러한 모든 파일을 사용 하 여 항상 있는 것 처럼 작성 하 고 응용 프로그램 코드를 디버그 하려면 Visual Studio IDE를 사용할 수 있습니다. 사용할 수도 있습니다 [Azure 개발 공간](http://aka.ms/get-azds) 신속 하 게 실행 하 고 AKS 클러스터에서 라이브 실행 코드를 디버깅 합니다. 자세한 내용은 참조는 [Azure 개발 공간 자습서](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 만든 후, 원하는 방식으로 실행 되는 코드가 AKS 클러스터에 Visual Studio에서 직접 게시할 수 있습니다.
 
-이렇게 하려면 먼저는 설치한 모든 항목에 설명 된 대로 다시 확인 하는 [필수 구성 요소](#prerequisities) AKS에 게시에 대 한 항목 아래에 있는 섹션 및 링크에 지정 된 모든 명령줄 단계를 실행 합니다. 그런 다음 컨테이너 이미지를 ACR Azure Container Registry ()를 게시 하는 게시 프로필을 설정 합니다. 다음 AKS는 ACR에서 컨테이너 이미지를 풀 하 고 클러스터에 배포할 수 있습니다.
+이렇게 하려면 먼저는 설치한 모든 항목에 설명 된 대로 다시 확인 하는 [필수 구성 요소](#prerequisites) AKS에 게시에 대 한 항목 아래에 있는 섹션 및 링크에 지정 된 모든 명령줄 단계를 실행 합니다. 그런 다음 컨테이너 이미지를 ACR Azure Container Registry ()를 게시 하는 게시 프로필을 설정 합니다. 다음 AKS는 ACR에서 컨테이너 이미지를 풀 하 고 클러스터에 배포할 수 있습니다.
 
 1. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 하 *프로젝트* 선택한 **게시**합니다.
 
@@ -119,3 +121,5 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 ## <a name="next-steps"></a>다음 단계
 
 에 대해 자세히 알아보려면 Azure에서 Kubernetes 개발 읽어 합니다 [AKS 설명서](/azure/aks)합니다.
+
+에 대해 자세히 알아보려면 Azure 개발 공백을 읽으면는 [Azure 개발 공간 설명서](http://aka.ms/get-azds)
