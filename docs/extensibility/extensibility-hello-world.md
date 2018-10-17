@@ -9,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499567"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356758"
 ---
 # <a name="create-your-first-extension-hello-world"></a>첫 번째 확장 만들기: Hello World
 
-이 Hello World 예제에서는 Visual Studio에 대 한 첫 번째 확장 프로그램을 만드는 과정 안내 합니다. 이 자습서에서는 Visual Studio에 새 명령을 추가 하는 방법을 보여줍니다.
+이 Hello World 예제에서는 Visual Studio에 대 한 첫 번째 확장 프로그램을 만드는 과정 안내 합니다. 이 자습서에서는 Visual Studio에 새 명령을 추가 하는 방법을 보여 줍니다.
 
 프로세스에서 학습할 방법:
 
@@ -35,11 +35,12 @@ ms.locfileid: "39499567"
 
 시작 하기 전에 설치 했는지 확인 합니다 **Visual Studio 확장 개발** VSIX 템플릿에 필요 하 고 샘플 코드를 포함 하는 작업입니다.
 
-참고: 모든 버전 (Community, Professional 또는 Enterprise) Visual Studio 확장성 프로젝트를 만들려면 Visual studio를 사용할 수 있습니다.
+> [!NOTE]
+> (Community, Professional 또는 Enterprise) Visual Studio 확장성 프로젝트를 만들려면 Visual Studio의 모든 버전을 사용할 수 있습니다.
 
 ## <a name="create-an-extensibility-project"></a>확장성 프로젝트 만들기
 
-1단계: **파일** 메뉴에서 클릭 **새 프로젝트**합니다. 화면 아래쪽에서 프로젝트의 이름을 입력할 수 있습니다.
+1단계: **파일** 메뉴에서 클릭 **새 프로젝트**합니다. 화면 아래쪽에서 프로젝트의 이름을 입력 합니다.
 
 2단계. **템플릿** 메뉴에서 클릭 **Visual C#**, 클릭 **확장성**를 클릭 하 고 **VSIX 프로젝트**합니다.
 
@@ -53,15 +54,15 @@ ms.locfileid: "39499567"
 
 1단계: 매니페스트를 선택 하면 인스턴스, 메타 데이터, 설명 및 버전에 대 한 변경할 수 있는 옵션을 볼 수 있습니다.
 
-2단계. 프로젝트 (솔루션 아님)를 마우스 오른쪽 단추로 클릭 합니다. 상황에 맞는 메뉴를 클릭 **추가**를 클릭 하 고 **사용자 정의 컨트롤**합니다.
+2단계. 프로젝트 (솔루션 아님)를 마우스 오른쪽 단추로 클릭 합니다. 상황에 맞는 메뉴를 클릭 **추가**를 클릭 하 고 **새 항목**합니다.
 
-3단계. 로 다시 이동 합니다 **확장성** 섹션을 클릭 **사용자 지정 명령**입니다.
+3단계. 선택 된 **확장성** 섹션을 클릭 한 다음 **사용자 지정 명령**입니다.
 
 4단계. 에 **이름을** 맨 아래에 필드에 이름을, 예를 들어 *Command.cs*합니다.
 
 ![사용자 지정 명령](media/hello-world-custom-command.png)
 
-새 명령에 나열 됩니다는 **솔루션 탐색기** 아래 합니다 **리소스** 분기 합니다. 또한 이것이 PNG와 ICO 파일 이미지를 수정 하려는 경우와 같은 명령에 관련 된 다른 파일을 찾을 수 있습니다.
+새 명령에 포함 된 **솔루션 탐색기** 아래의 합니다 **리소스** 분기 합니다. 또한 이것이 PNG와 ICO 파일 이미지를 수정 하려는 경우와 같은 명령에 관련 된 다른 파일을 찾을 수 있습니다.
 
 ## <a name="modify-the-source-code"></a>소스 코드를 수정 합니다.
 
@@ -116,7 +117,7 @@ ms.locfileid: "39499567"
 
 이제 Visual Studio 실험적 인스턴스에서 소스 코드를 실행할 수 있습니다.
 
-1단계: 클릭 **시작** 도구 모음에서 합니다. 이 프로젝트를 빌드하고 디버거를 시작 하면 호출 되는 Visual Studio의 새 인스턴스를 시작 합니다 **실험적 인스턴스**합니다.
+1단계: 클릭 **시작** 도구 모음에서 합니다. 이 프로젝트를 빌드하고 라는 Visual Studio의 새 인스턴스를 시작 하 고 디버거를 시작 합니다 **실험적 인스턴스**합니다.
 
 단어를 보면 **실험적 인스턴스** Visual Studio 제목 표시줄에 있습니다.
 
