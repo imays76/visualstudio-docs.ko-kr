@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc92dc6b560332509f69a975eca63ddb5c191fab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfa467da3ebe500db7f8ee64653f294ad236f445
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849192"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 메서드를 호출 하는 데 필요한 각 인수의 형식에 대 한 열거자를 만듭니다.  
@@ -44,12 +44,12 @@ int EnumArguments(
  [out] 반환 된 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 인수 형식 목록을 나타내는 개체입니다. 인수가 없는 경우 null 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 하거나 인수가 없는 경우 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공 하면 S_OK를 반환 합니다. 또는 인수가 없으면 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 각 요소는 한 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 각 매개 변수의 형식을 나타내는 개체입니다. 호출 된 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 각 매개 변수의 형식에 대 한 정보를 검색 하는 메서드입니다.  
+ 각 요소는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 각 매개 변수의 형식을 나타내는 개체입니다. 호출 된 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 각 매개 변수의 형식에 대 한 정보를 검색할 메서드입니다.  
   
- 다음 호출 매개 변수의 이름을 형식과 함께 필요한 경우는 [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) 메서드.  
+ 매개 변수의 이름을 유형과 함께 필요한 경우 호출 된 [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

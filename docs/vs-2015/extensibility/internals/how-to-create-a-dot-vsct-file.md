@@ -15,27 +15,27 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b28fe38a9d45816481233c3ae267b3c764ee264
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89ac7468b04f9493aca0b57dca832e01d9298f83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847856"
 ---
 # <a name="how-to-create-a-vsct-file"></a>방법: 만들기를 합니다. Vsct 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 XML 기반 Visual Studio 명령 테이블 (.vsct) 구성 파일을 만드는 방법은 여러 가지가 있습니다.  
   
--   새 VSPackage를 만들 수는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 패키지 템플릿.  
+- 새 VSPackage를 만들 수는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 패키지 템플릿.  
   
--   기존.ctc 파일에서 파일을 생성 하려면 XML 기반 명령 테이블 구성 컴파일러 Vsct.exe를 사용할 수 있습니다.  
+- 기존.ctc 파일에서 파일을 생성 하려면 XML 기반 명령 테이블 구성 컴파일러 Vsct.exe를 사용할 수 있습니다.  
   
--   Vsct.exe를 사용 하 여 기존.cto 파일에서.vsct 파일을 생성할 수 있습니다.  
+- Vsct.exe를 사용 하 여 기존.cto 파일에서.vsct 파일을 생성할 수 있습니다.  
   
--   수동으로 새.vsct 파일을 만들 수 있습니다.  
+- 수동으로 새.vsct 파일을 만들 수 있습니다.  
   
- 이 항목에서는 새.vsct 파일을 수동으로 만드는 방법에 설명 합니다.  
+  이 항목에서는 새.vsct 파일을 수동으로 만드는 방법에 설명 합니다.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>새.vsct 파일을 수동으로 만들려면  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 406c870f099d2dbb1e60b0088a68e5a5c252b907
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860307"
 ---
 # <a name="content-model-view"></a>콘텐츠 모델 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,11 +110,11 @@ ms.locfileid: "49274406"
   
  확대/축소는 다음 방법으로 제어할 수 있습니다.  
   
--   마우스가 콘텐츠 모델 뷰 화면 위를 가리킬 때 Ctrl 키를 누른 채 마우스 휠 회전  
+- 마우스가 콘텐츠 모델 뷰 화면 위를 가리킬 때 Ctrl 키를 누른 채 마우스 휠 회전  
   
--   슬라이더 컨트롤 사용. 슬라이더에서는 현재 확대/축소 수준을 보여 줍니다.  
+- 슬라이더 컨트롤 사용. 슬라이더에서는 현재 확대/축소 수준을 보여 줍니다.  
   
- 확대/축소 슬라이더는 해당 슬라이더를 직접 선택하거나, 해당 슬라이더에 마우스를 올려 놓거나, Ctrl 키를 마우스 휠과 함께 사용하여 확대/축소하는 경우 불투명합니다. 이외의 경우 확대/축소 슬라이더는 항상 투명합니다.  
+  확대/축소 슬라이더는 해당 슬라이더를 직접 선택하거나, 해당 슬라이더에 마우스를 올려 놓거나, Ctrl 키를 마우스 휠과 함께 사용하여 확대/축소하는 경우 불투명합니다. 이외의 경우 확대/축소 슬라이더는 항상 투명합니다.  
   
 ## <a name="xml-editor-integration"></a>XML 편집기 통합  
  상황에 맞는 메뉴를 사용하여 XSD 디자이너와 XML 편집기 사이를 전환할 수 있습니다.  

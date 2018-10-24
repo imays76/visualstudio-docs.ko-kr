@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860333"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>디자이너를 사용 하 여 SQL database 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ ms.locfileid: "49220755"
   
 #### <a name="to-create-a-project-and-a-database-file"></a>프로젝트 및 데이터베이스 파일을 만들려면  
   
-1.  라는 Windows Forms 프로젝트를 만듭니다 `SampleDatabaseWalkthrough`합니다.  
+1. 라는 Windows Forms 프로젝트를 만듭니다 `SampleDatabaseWalkthrough`합니다.  
   
-2.  메뉴 모음에서 선택 **프로젝트** > **새 항목 추가**합니다.  
+2. 메뉴 모음에서 선택 **프로젝트** > **새 항목 추가**합니다.  
   
-3.  선택한 항목 템플릿 목록에서 아래로 스크롤하여 **서비스 기반 데이터베이스**합니다.  
+3. 선택한 항목 템플릿 목록에서 아래로 스크롤하여 **서비스 기반 데이터베이스**합니다.  
   
-     ![항목 템플릿 대화 상자](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![항목 템플릿 대화 상자](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  데이터베이스 이름을 **SampleDatabase**를 선택한 후 합니다 **추가** 단추입니다.  
+4. 데이터베이스 이름을 **SampleDatabase**를 선택한 후 합니다 **추가** 단추입니다.  
   
-5.  경우는 **데이터 원본** 창이 열려 있지 않으면, Shift + Alt + D 키를 선택 하 여 또는 메뉴 모음을 선택 하면에서 열어서 **뷰** > **기타 Windows**  >  **데이터 원본**합니다.  
+5. 경우는 **데이터 원본** 창이 열려 있지 않으면, Shift + Alt + D 키를 선택 하 여 또는 메뉴 모음을 선택 하면에서 열어서 **뷰** > **기타 Windows**  >  **데이터 원본**합니다.  
   
-6.  에 **데이터 원본** 창에서 합니다 **새 데이터 소스 추가** 링크 합니다.  
+6. 에 **데이터 원본** 창에서 합니다 **새 데이터 소스 추가** 링크 합니다.  
   
-7.  **데이터 소스 구성 마법사**를 선택 합니다 **다음** 단추는 기본 설정을 적용 하 고 선택한를 네 번을 **마침** 단추.  
+7. **데이터 소스 구성 마법사**를 선택 합니다 **다음** 단추는 기본 설정을 적용 하 고 선택한를 네 번을 **마침** 단추.  
   
- 데이터베이스의 속성 창을 열어 연결 문자열 및 기본 .mdf 파일 위치를 볼 수 있습니다. 데이터베이스 파일이 프로젝트 폴더에 표시 됩니다.  
+   데이터베이스의 속성 창을 열어 연결 문자열 및 기본 .mdf 파일 위치를 볼 수 있습니다. 데이터베이스 파일이 프로젝트 폴더에 표시 됩니다.  
   
 -   Visual Studio에서 선택 **뷰** > **SQL Server 개체 탐색기** 창이 열려 있지 않은 경우. 확장 하 여 속성 창을 엽니다는 **데이터 연결** 노드, SampleDatabase.mdf에 대 한 바로 가기 메뉴를 열고 및 선택한 다음 **속성**합니다.  
   

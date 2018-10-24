@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5949578a6515d74d97821608093f8cdf0dfc7b15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812935"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,13 +129,13 @@ ms.locfileid: "49295303"
   
  Applicationpresents 레코드의 세 가지 버전을 사용 하 여 사용자:  
   
--   데이터베이스의 현재 레코드  
+- 데이터베이스의 현재 레코드  
   
--   데이터 집합에 로드 된 원본 레코드  
+- 데이터 집합에 로드 된 원본 레코드  
   
--   데이터 집합에서 제안 된 변경  
+- 데이터 집합에서 제안 된 변경  
   
- 그러면 사용자는 제안된 된 버전을 사용 하 여 데이터베이스를 덮어쓸 또는 업데이트 작업을 취소 및 데이터베이스의 새 값을 사용 하 여 데이터 집합을 새로 고칠 수 있습니다.  
+  그러면 사용자는 제안된 된 버전을 사용 하 여 데이터베이스를 덮어쓸 또는 업데이트 작업을 취소 및 데이터베이스의 새 값을 사용 하 여 데이터 집합을 새로 고칠 수 있습니다.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>동시성 오류 처리를 사용 하도록 설정 하려면  
   

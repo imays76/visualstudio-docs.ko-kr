@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855601"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>시작 페이지에 사용자 컨트롤 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,41 +141,41 @@ ms.locfileid: "49259989"
 ## <a name="adding-the-user-control-to-the-start-page"></a>시작 페이지에 사용자 정의 컨트롤 추가  
  이 제어를 사용할 수 있도록 시작 페이지 프로젝트 시작 페이지 프로젝트 파일에서 새 컨트롤 라이브러리에 대 한 참조를 추가 합니다. 그런 다음 시작 페이지 XAML 태그에 컨트롤을 추가할 수 있습니다.  
   
-1.  **솔루션 탐색기**, 시작 페이지 프로젝트를 마우스 오른쪽 단추로 클릭 **참조** 을 클릭 한 다음 **참조 추가**합니다.  
+1. **솔루션 탐색기**, 시작 페이지 프로젝트를 마우스 오른쪽 단추로 클릭 **참조** 을 클릭 한 다음 **참조 추가**합니다.  
   
-2.  에 **프로젝트** 탭을 선택 **WebUserControl** 을 클릭 한 다음 **확인**합니다.  
+2. 에 **프로젝트** 탭을 선택 **WebUserControl** 을 클릭 한 다음 **확인**합니다.  
   
-3.  **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.  
+3. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.  
   
-     솔루션을 빌드하기에 게 사용자 정의 컨트롤 제공 IntelliSense 솔루션의 다른 파일에 대 한 합니다.  
+    솔루션을 빌드하기에 게 사용자 정의 컨트롤 제공 IntelliSense 솔루션의 다른 파일에 대 한 합니다.  
   
- 컨트롤에 시작 페이지 XAML 태그를 추가 하려면 어셈블리에 대 한 네임 스페이스 참조를 추가한 다음 페이지의 컨트롤을 배치 합니다.  
+   컨트롤에 시작 페이지 XAML 태그를 추가 하려면 어셈블리에 대 한 네임 스페이스 참조를 추가한 다음 페이지의 컨트롤을 배치 합니다.  
   
 #### <a name="to-add-the-control-to-the-markup"></a>컨트롤 태그에 추가 하려면  
   
-1.  **솔루션 탐색기**, 시작 페이지.xaml 파일을 엽니다.  
+1. **솔루션 탐색기**, 시작 페이지.xaml 파일을 엽니다.  
   
-2.  에 **XAML** 창에 최상위 다음 네임 스페이스 선언을 추가 <xref:System.Windows.Controls.Grid> 요소.  
+2. 에 **XAML** 창에 최상위 다음 네임 스페이스 선언을 추가 <xref:System.Windows.Controls.Grid> 요소.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  에 **XAML** 창에 스크롤은 \<그리드 > 섹션.  
+3. 에 **XAML** 창에 스크롤은 \<그리드 > 섹션.  
   
-     섹션에는 포함을 <xref:System.Windows.Controls.TabControl> 요소에는 <xref:System.Windows.Controls.Grid> 요소입니다.  
+    섹션에는 포함을 <xref:System.Windows.Controls.TabControl> 요소에는 <xref:System.Windows.Controls.Grid> 요소입니다.  
   
-4.  추가 된 \<TabControl > 요소를 포함 하는 \<TabItem > 사용자 정의 컨트롤에 대 한 참조를 포함 하는 합니다.  
+4. 추가 된 \<TabControl > 요소를 포함 하는 \<TabItem > 사용자 정의 컨트롤에 대 한 참조를 포함 하는 합니다.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- 이제 컨트롤을 테스트할 수 있습니다.  
+   이제 컨트롤을 테스트할 수 있습니다.  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>수동으로 만든된 사용자 지정 시작 페이지를 테스트합니다.  
   

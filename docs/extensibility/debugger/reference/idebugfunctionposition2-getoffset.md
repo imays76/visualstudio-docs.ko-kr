@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b38ef58238032530252fa487e320d1bd52d4098
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f06223ffc68ed4728f8cd9181575dac361af1bdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849140"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
-원본 문서의 함수의 위치를 검색 합니다.  
+소스 문서에서 함수의 위치를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,10 +41,10 @@ int GetOffset(
   
 #### <a name="parameters"></a>매개 변수  
  `pPosition`  
- [out에서] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 함수의 위치가 문서에는 포함 된 구조입니다.  
+ [out에서] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조는 문서에서 함수의 위치를 사용 하 여 입력 됩니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)   

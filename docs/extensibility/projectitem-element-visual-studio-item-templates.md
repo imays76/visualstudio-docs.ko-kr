@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855991"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 요소 (Visual Studio 항목 템플릿)
 항목 템플릿에 포함 된 파일을 지정 합니다.  
@@ -51,13 +51,13 @@ ms.locfileid: "39637070"
   
 ### <a name="attributes"></a>특성  
   
-|특성|설명|  
-|---------------|-----------------|  
-|`SubType`|선택적 특성입니다.<br /><br /> 다중 파일 항목 템플릿에 항목의 하위 형식을 지정합니다. 편집기를 확인 하려면이 값은 사용 하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 항목을 열 때 사용 됩니다.|  
-|`CustomTool`|선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목에 대 한 사용자 지정 도구를 설정합니다.|  
-|`ItemType`|선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목에 대 한 ItemType을 설정합니다.|  
-|`ReplaceParameters`|선택적 특성입니다.<br /><br /> 항목 템플릿에서 프로젝트를 만들 때 대체 되어야 하는 매개 변수 값에 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다.|  
-|`TargetFileName`|선택적 특성입니다.<br /><br /> 템플릿에서 만든 항목의 이름을 지정 합니다. 이 특성은 매개 변수 대체를 사용 하 여는 항목 이름을 만드는 데 유용 합니다.|  
+| 특성 | 설명 |
+|---------------------| - |
+| `SubType` | 선택적 특성입니다.<br /><br /> 다중 파일 항목 템플릿에 항목의 하위 형식을 지정합니다. 편집기를 확인 하려면이 값은 사용 하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 항목을 열 때 사용 됩니다. |
+| `CustomTool` | 선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목에 대 한 사용자 지정 도구를 설정합니다. |
+| `ItemType` | 선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목에 대 한 ItemType을 설정합니다. |
+| `ReplaceParameters` | 선택적 특성입니다.<br /><br /> 항목 템플릿에서 프로젝트를 만들 때 대체 되어야 하는 매개 변수 값에 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다. |
+| `TargetFileName` | 선택적 특성입니다.<br /><br /> 템플릿에서 만든 항목의 이름을 지정 합니다. 이 특성은 매개 변수 대체를 사용 하 여는 항목 이름을 만드는 데 유용 합니다. |
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -84,7 +84,7 @@ ms.locfileid: "39637070"
   
  파일 이름은에 사용자 입력에 기반 합니다 항목이 만들어지면이 템플릿에서 **새 항목 추가** 대화 상자. 다중 파일 항목 템플릿을 만들 때 유용 합니다. 자세한 내용은 [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md) 하 고 [템플릿 매개 변수](../ide/template-parameters.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에 대 한 표준 항목 템플릿에 대 한 메타 데이터를 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스입니다.  
   
 ```  

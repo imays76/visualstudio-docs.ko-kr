@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1802d5784ad6e94aee4ff63fb51d2c92dbf164f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa68a3064cd40cca8c62f90c2f144a767ebb9e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855575"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
-사용할 수 있는 디버그 엔진에 대 한 고유 식별자의 배열에 설명합니다.  
+사용할 디버그 엔진에 대 한 고유 식별자의 배열을 설명합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -46,7 +46,7 @@ public struct GUID_ARRAY
  배열에 있는 고유 식별자의 수입니다.  
   
  멤버  
- 고유 식별자를 포함 하는 배열입니다.  
+ 고유 식별자가 포함 된 배열입니다.  
   
 ## <a name="remarks"></a>설명  
  이 구조에서 반환 되는 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) 메서드.  

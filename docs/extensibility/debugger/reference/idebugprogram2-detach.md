@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f2b007fa110c9ef5c344f488e710e3eaf4d097b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ff18f393c609faed6f5aeadbec9903f2d5a5dab5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832538"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
 프로그램에서 디버그 엔진을 분리합니다.  
@@ -38,10 +38,10 @@ int Detach();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 분리 된 프로그램 실행을 계속 하지만 디버그 세션의 일부가 더 이상. 디버그 이벤트를 더 이상 프로그램 디버그 엔진 분리 되 면 전송 됩니다.  
+ 분리 된 프로그램 실행을 계속 이지만 더 이상 디버그 세션에 포함 합니다. 프로그램 디버그 이벤트가 더 이상 디버그 엔진 분리 되 면 전송 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

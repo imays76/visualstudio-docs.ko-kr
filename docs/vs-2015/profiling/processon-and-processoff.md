@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7595d48d0f08fc16bed00385094167b1d65efc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849406"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 및 ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ VSPerfCmd.exe **ProcessOff** 및 **ProcessOn** 하위 명령은 명령줄 프로
   
  **ProcessOff** 및 **ProcessOn** 하위 명령은 프로파일러 API 함수에 의해 조작되는 프로세스 시작/중지에도 영향을 줍니다.  
   
--   **ProcessOff**는 프로세스 시작/중지 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
+- **ProcessOff**는 프로세스 시작/중지 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
   
--   **ProcessOn**은 프로세스 시작/중지 카운트를 즉시 1로 설정하므로 프로파일링이 다시 시작됩니다.  
+- **ProcessOn**은 프로세스 시작/중지 카운트를 즉시 1로 설정하므로 프로파일링이 다시 시작됩니다.  
   
- 자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
+  자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
   
 ## <a name="syntax"></a>구문  
   

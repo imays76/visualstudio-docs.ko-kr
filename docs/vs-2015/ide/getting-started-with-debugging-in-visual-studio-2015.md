@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824440"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015에서 디버그 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Visual Studio 2015에서는 프로젝트 빌드 및 디버깅 도구의 강력�
   
  중단점의 일반적인 용도는 다음과 같습니다.  
   
-1.  크래시 또는 정지의 소스 범위를 좁히기 위해 오류를 발생시킨다고 생각하는 메서드 호출의 코드 주위에 중단점을 분산시킵니다. 한 단계씩 코드를 실행하면서 위반하는 코드 줄을 찾을 때까지 중단점을 제거하고 더 가깝게 중단점을 다시 설정합니다.  
+1. 크래시 또는 정지의 소스 범위를 좁히기 위해 오류를 발생시킨다고 생각하는 메서드 호출의 코드 주위에 중단점을 분산시킵니다. 한 단계씩 코드를 실행하면서 위반하는 코드 줄을 찾을 때까지 중단점을 제거하고 더 가깝게 중단점을 다시 설정합니다.  
   
-2.  새 코드를 도입하는 경우 시작 부분에 중단점을 설정하고 한 단계씩 코드를 실행하여 예상대로 작동하는지 확인합니다.  
+2. 새 코드를 도입하는 경우 시작 부분에 중단점을 설정하고 한 단계씩 코드를 실행하여 예상대로 작동하는지 확인합니다.  
   
-3.  복잡한 동작을 구현한 경우 프로그램이 중단될 때 변수 및 데이터의 값을 검사할 수 있도록 알고리즘 코드에 대한 중단점을 설정합니다.  
+3. 복잡한 동작을 구현한 경우 프로그램이 중단될 때 변수 및 데이터의 값을 검사할 수 있도록 알고리즘 코드에 대한 중단점을 설정합니다.  
   
-4.  C 또는 C++ 코드를 작성하는 경우 메모리 관련 오류를 디버그할 때 주소 값(NULL 검색) 및 참조 횟수를 검사할 수 있도록 중단점을 사용하여 코드를 중지합니다.  
+4. C 또는 C++ 코드를 작성하는 경우 메모리 관련 오류를 디버그할 때 주소 값(NULL 검색) 및 참조 횟수를 검사할 수 있도록 중단점을 사용하여 코드를 중지합니다.  
   
- 중단점 사용 방법에 대한 자세한 내용은 [중단점 사용](../debugger/using-breakpoints.md)을 참조하세요.  
+   중단점 사용 방법에 대한 자세한 내용은 [중단점 사용](../debugger/using-breakpoints.md)을 참조하세요.  
   
 ### <a name="setting-conditional-breakpoints"></a>조건부 중단점 설정  
  루프 또는 재귀에 중단점이 있는 경우 또는 자주 한 단계씩 실행하는 많은 중단점이 있는 경우 조건부 중단점을 사용하여 특정 조건이 충족되는 경우에만 코드가 일시 중단되도록 합니다. 그렇지 않으면 F11 키를 많이 누르게 됩니다.  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3f89502beeb1e8165450c7c07f3f55f83dd39e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed77975e1a1d337354e7ac743e4b47e3c84ed701
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855817"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-허용 (하거나 허용 하지 않는) 프로그램이 중지 된 경우에 해당 스레드에서 발생 되는 식 계산 합니다.  
+허용 하거나 허용 하지 않습니다 프로그램을 중지 하는 경우에 특정 스레드에서 발생 되는 식 계산.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,27 +49,27 @@ int WatchForExpressionEvaluationOnThread(
   
 #### <a name="parameters"></a>매개 변수  
  `pOriginatingProgram`  
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 은 식을 평가 하 여 프로그램을 나타내는 개체입니다.  
+ [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 식을 평가 하는 프로그램을 나타내는 개체입니다.  
   
  `dwTid`  
- [in] 스레드 식별자를 지정합니다.  
+ [in] 스레드의 식별자를 지정합니다.  
   
  `dwEvalFlags`  
- [in] 플래그의 조합 된 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 계산을 수행할 수는 하는 방법을 지정 하는 열거형입니다.  
+ [in] 플래그의 조합을 합니다 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 평가 수행 하는 방법을 지정 하는 열거형입니다.  
   
  `pExprCallback`  
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 식 평가 중에 발생 하는 디버그 이벤트를 보내는 데 사용할 개체입니다.  
+ [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체 식 평가 중에 발생 하는 디버그 이벤트를 보내는 데 사용 됩니다.  
   
  `fWatch`  
- [in] 0이 아닌 경우 (`TRUE`)로 식별 되는 스레드에서 식 평가 사용 하면 `dwTid`, 그렇지 않으면 0 (`FALSE`) 해당 스레드에서 식 평가 허용 하지 않습니다.  
+ [in] 0이 아닌 경우 (`TRUE`)를 구분 하는 스레드에서 식 평가 허용 `dwTid`이 고, 그렇지 않으면 0 (`FALSE`) 해당 스레드에서 식 평가 허용 하지 않습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 세션 디버그 관리자 (SDM)로 식별 되는 프로그램을 요청 하는 경우는 `pOriginatingProgram` 매개 변수는 식을 계산 하기 위해이 메서드를 호출 하 여 연결 된 다른 모든 프로그램에 게 알려 줍니다.  
+ 세션 디버그 관리자 (SDM)로 식별 되는 프로그램을 요청 하는 경우는 `pOriginatingProgram` 매개 변수 식을 평가 하려면이 메서드를 호출 하 여 다른 모든 연결 된 프로그램에 알립니다.  
   
- 한 프로그램에서 식 계산에서 코드를 실행, 함수 평가 또는 모든 평가 인해 발생할 수 있습니다 `IDispatch` 속성입니다. 이 인해이 메서드를 실행 하 고이 프로그램에서 스레드가 중지 될 수 있습니다 하는 경우에 완료 식 평가 수 있습니다.  
+ 한 프로그램에서 식 계산 함수 평가 또는 모든 평가 인해 다른에서 실행 되도록 코드 않을 `IDispatch` 속성입니다. 이 때문에이 메서드는 실행 하 고이 프로그램에서 스레드를 중지할 수 있습니다 하는 경우에 완료 식 평가 사용 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

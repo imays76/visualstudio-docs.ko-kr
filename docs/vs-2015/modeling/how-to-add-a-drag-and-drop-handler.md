@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e163386c7f00f0646bb711617e402a1873e544e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848984"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>방법: 끌어서 놓기 처리기 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,45 +51,45 @@ using System.Linq;
   
  새 파일에서 끌기 작업에 응답해야 하는 모양 또는 다이어그램 클래스에 대해 partial 클래스를 정의합니다. 이렇게 하려면 다음 메서드를 재정의합니다.  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A> - 끌기 작업 중에 마우스 포인터가 모양 안으로 들어가면 이 메서드가 호출됩니다. 메서드는 사용자가 끌어 온 항목을 검사한 다음 사용자가 이 모양에 해당 항목을 놓을 수 있는지 여부를 나타내도록 Effect 속성을 설정해야 합니다. Effect 속성은 해당 모양 위에 있는 커서의 모양을 결정하며 사용자가 마우스 단추를 놓을 때 `OnDragDrop()`을 호출할지도 결정합니다.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A> - 끌기 작업 중에 마우스 포인터가 모양 안으로 들어가면 이 메서드가 호출됩니다. 메서드는 사용자가 끌어 온 항목을 검사한 다음 사용자가 이 모양에 해당 항목을 놓을 수 있는지 여부를 나타내도록 Effect 속성을 설정해야 합니다. Effect 속성은 해당 모양 위에 있는 커서의 모양을 결정하며 사용자가 마우스 단추를 놓을 때 `OnDragDrop()`을 호출할지도 결정합니다.  
   
-    ```csharp  
-    partial class MyShape // MyShape generated from DSL Definition.  
-    {  
-        public override void OnDragOver(DiagramDragEventArgs e)  
+  ```csharp  
+  partial class MyShape // MyShape generated from DSL Definition.  
+  {  
+      public override void OnDragOver(DiagramDragEventArgs e)  
+      {  
+        base.OnDragOver(e);  
+        if (e.Effect == System.Windows.Forms.DragDropEffects.None   
+             && IsAcceptableDropItem(e)) // To be defined  
         {  
-          base.OnDragOver(e);  
-          if (e.Effect == System.Windows.Forms.DragDropEffects.None   
-               && IsAcceptableDropItem(e)) // To be defined  
-          {  
-            e.Effect = System.Windows.Forms.DragDropEffects.Copy;  
-          }  
+          e.Effect = System.Windows.Forms.DragDropEffects.Copy;  
         }  
+      }  
   
-    ```  
+  ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> - `OnDragOver(DiagramDragEventArgs e)`가 이전에 `e.Effect`를 `None` 이외의 값으로 설정한 경우 마우스 포인터가 이 모양이나 다이어그램 위에 있는 상태에서 사용자가 마우스 단추를 놓으면 이 메서드가 호출됩니다.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> - `OnDragOver(DiagramDragEventArgs e)`가 이전에 `e.Effect`를 `None` 이외의 값으로 설정한 경우 마우스 포인터가 이 모양이나 다이어그램 위에 있는 상태에서 사용자가 마우스 단추를 놓으면 이 메서드가 호출됩니다.  
   
-    ```csharp  
-    public override void OnDragDrop(DiagramDragEventArgs e)  
+  ```csharp  
+  public override void OnDragDrop(DiagramDragEventArgs e)  
+      {  
+        if (!IsAcceptableDropItem(e))  
         {  
-          if (!IsAcceptableDropItem(e))  
-          {  
-            base.OnDragDrop(e);  
-          }  
-          else   
-          { // Process the dragged item, for example merging a copy into the diagram  
-            ProcessDragDropItem(e); // To be defined  
-          }    
+          base.OnDragDrop(e);  
         }  
+        else   
+        { // Process the dragged item, for example merging a copy into the diagram  
+          ProcessDragDropItem(e); // To be defined  
+        }    
+      }  
   
-    ```  
+  ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> - 사용자가 모양이나 다이어그램을 두 번 클릭하면 이 메서드가 호출됩니다.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> - 사용자가 모양이나 다이어그램을 두 번 클릭하면 이 메서드가 호출됩니다.  
   
-     자세한 내용은 [방법: 모양 또는 데코레이터 클릭 가로채기](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)합니다.  
+   자세한 내용은 [방법: 모양 또는 데코레이터 클릭 가로채기](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)합니다.  
   
- 끌어 온 항목이 적절한지 여부를 확인하도록 `IsAcceptableDropItem(e)`을 정의하고 항목을 놓을 때 모델을 업데이트하도록 ProcessDragDropItem(e)을 정의합니다. 이러한 메서드는 먼저 이벤트 인수에서 항목을 추출해야 합니다. 그렇게 하는 방법에 대 한 정보를 참조 하세요 [끌어 온된 항목에 대 한 참조를 가져오는 방법을](#extracting)합니다.  
+  끌어 온 항목이 적절한지 여부를 확인하도록 `IsAcceptableDropItem(e)`을 정의하고 항목을 놓을 때 모델을 업데이트하도록 ProcessDragDropItem(e)을 정의합니다. 이러한 메서드는 먼저 이벤트 인수에서 항목을 추출해야 합니다. 그렇게 하는 방법에 대 한 정보를 참조 하세요 [끌어 온된 항목에 대 한 참조를 가져오는 방법을](#extracting)합니다.  
   
 ##  <a name="MEF"></a> MEF를 사용 하 여 제스처 처리기 정의  
  MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 설치 가능한 구성 요소를 정의할 수 있습니다. 자세한 내용은 [MEF(관리되는 확장성 프레임워크 개요)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)를 참조하십시오.  
@@ -139,32 +139,32 @@ using System.Linq;
   
  끌기 소스 정보를 사용할 수 있는 형식을 검색하려면 `OnDragOver()` 또는 `CanDragDrop()` 진입 위치에 중단점을 설정하여 디버깅 모드에서 코드를 실행합니다. `DiagramDragEventArgs` 매개 변수의 값을 검사합니다. 정보는 두 가지 형식으로 제공됩니다.  
   
--   <xref:System.Windows.Forms.IDataObject>  `Data` –이 속성은 보통 둘 이상의 형식으로 원본 개체의 serialize 된 버전을 제공 합니다. 이 속성의 가장 유용한 기능은 다음과 같습니다.  
+- <xref:System.Windows.Forms.IDataObject>  `Data` –이 속성은 보통 둘 이상의 형식으로 원본 개체의 serialize 된 버전을 제공 합니다. 이 속성의 가장 유용한 기능은 다음과 같습니다.  
   
-    -   diagramEventArgs.Data.GetDataFormats() - 끌어 온 개체를 디코딩할 수 있는 형식을 나열합니다. 예를 들어 사용자가 바탕 화면에서 파일을 끄는 경우 사용 가능한 형식에는 파일 이름("`FileNameW`")이 포함됩니다.  
+  -   diagramEventArgs.Data.GetDataFormats() - 끌어 온 개체를 디코딩할 수 있는 형식을 나열합니다. 예를 들어 사용자가 바탕 화면에서 파일을 끄는 경우 사용 가능한 형식에는 파일 이름("`FileNameW`")이 포함됩니다.  
   
-    -   `diagramEventArgs.Data.GetData(format)` - 끌어 온 개체를 지정된 형식으로 디코딩하고 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.  
+  -   `diagramEventArgs.Data.GetData(format)` - 끌어 온 개체를 지정된 형식으로 디코딩하고 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.  
   
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
+       `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
-         소스의 모델 버스 참조와 같은 개체를 고유한 사용자 지정 형식으로 전송할 수도 있습니다. 자세한 내용은 [끌어서 놓기에서 모델 버스 참조 보내기 방법](#mbr)합니다.  
+       소스의 모델 버스 참조와 같은 개체를 고유한 사용자 지정 형식으로 전송할 수도 있습니다. 자세한 내용은 [끌어서 놓기에서 모델 버스 참조 보내기 방법](#mbr)합니다.  
   
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` – 사용자가 DSL 또는 UML 모델에서 항목을 끌어 하도록 하려는 경우이 속성을 사용 합니다. 요소 그룹 프로토타입은 하나 이상의 개체, 링크 및 해당 속성 값을 포함하며 붙여넣기 작업과 도구 상자에서 요소를 추가할 때도 사용됩니다. 프로토타입에서는 개체와 해당 형식을 GUID로 식별합니다. 예를 들어 다음 코드를 사용하면 UML 다이어그램 또는 UML 모델 탐색기에서 클래스 요소를 끌어 놓을 수 있습니다.  
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` – 사용자가 DSL 또는 UML 모델에서 항목을 끌어 하도록 하려는 경우이 속성을 사용 합니다. 요소 그룹 프로토타입은 하나 이상의 개체, 링크 및 해당 속성 값을 포함하며 붙여넣기 작업과 도구 상자에서 요소를 추가할 때도 사용됩니다. 프로토타입에서는 개체와 해당 형식을 GUID로 식별합니다. 예를 들어 다음 코드를 사용하면 UML 다이어그램 또는 UML 모델 탐색기에서 클래스 요소를 끌어 놓을 수 있습니다.  
   
-    ```csharp  
-    private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
-    {  
-      return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
-            element.DomainClassId.ToString()   
-            == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.  
-     // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId  
-    }  
+  ```csharp  
+  private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
+  {  
+    return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
+          element.DomainClassId.ToString()   
+          == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.  
+   // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId  
+  }  
   
-    ```  
+  ```  
   
-     UML 모양을 수락하려면 실험을 통해 UML 모양 클래스의 GUID를 확인합니다. 일반적으로 모든 다이어그램에는 둘 이상의 요소 형식이 있습니다. 또한 DSL이나 UML 다이어그램에서 끄는 개체는 모델 요소가 아닌 모양입니다.  
+   UML 모양을 수락하려면 실험을 통해 UML 모양 클래스의 GUID를 확인합니다. 일반적으로 모든 다이어그램에는 둘 이상의 요소 형식이 있습니다. 또한 DSL이나 UML 다이어그램에서 끄는 개체는 모델 요소가 아닌 모양입니다.  
   
- `DiagramDragEventArgs`에는 현재 마우스 포인터 위치와 사용자가 Ctrl, Alt, Shift 키를 누르고 있는지 여부를 나타내는 속성도 있습니다.  
+  `DiagramDragEventArgs`에는 현재 마우스 포인터 위치와 사용자가 Ctrl, Alt, Shift 키를 누르고 있는지 여부를 나타내는 속성도 있습니다.  
   
 ##  <a name="getOriginal"></a> 끌어 온 요소의 원본을 가져오는 방법  
  이벤트 인수의 `Data` 및 `Prototype` 속성은 끌어 온 모양의 참조만을 포함합니다. 일반적으로는 특정 방식으로 프로토타입에서 파생되는 대상 DSL에 개체를 만들려면 파일 내용을 읽거나 모양이 표시하는 모델 요소로 이동하는 등의 방법으로 원본에 액세스해야 합니다.  Visual Studio ModelBus를 사용하면 원본에 액세스할 수 있습니다.  

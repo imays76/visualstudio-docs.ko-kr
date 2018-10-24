@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dee03e2cd7b1c22faf5f1b06ec5efe763bad1387
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844420"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>연습: 기본 사이트 정의 프로젝트 만들기
   이 연습에서는 일부 컨트롤에 시각적 웹 파트를 포함 하는 기본 사이트 정의 만드는 방법을 보여 줍니다. 명확성을 위해 사용자가 만든 시각적 웹 파트에만 몇 가지 컨트롤이 있습니다. 그러나 더 많은 기능을 포함 하는 보다 복잡 한 SharePoint 사이트 정의 만들 수 있습니다.  
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   사이트 정의 사용 하 여 만들기는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트 템플릿.  
+- 사이트 정의 사용 하 여 만들기는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트 템플릿.  
   
--   SharePoint에서 사이트 정의 사용 하 여 SharePoint 사이트를 만드는 중입니다.  
+- SharePoint에서 사이트 정의 사용 하 여 SharePoint 사이트를 만드는 중입니다.  
   
--   시각적 웹 파트를 솔루션에 추가 합니다.  
+- 시각적 웹 파트를 솔루션에 추가 합니다.  
   
--   새 시각적 웹 파트를 추가 하 여 사이트의 default.aspx 페이지를 사용자 지정 합니다.  
+- 새 시각적 웹 파트를 추가 하 여 사이트의 default.aspx 페이지를 사용자 지정 합니다.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -52,29 +52,29 @@ ms.locfileid: "37119825"
   
 #### <a name="to-create-a-site-definition-project"></a>사이트 정의 프로젝트를 만들려면  
   
-1.  메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. IDE는 메뉴 모음에서 Visual Basic 개발 설정을 사용 하도록 설정 하는 경우 선택할 **파일** > **새 프로젝트**합니다.  
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. IDE는 메뉴 모음에서 Visual Basic 개발 설정을 사용 하도록 설정 하는 경우 선택할 **파일** > **새 프로젝트**합니다.  
   
-     **새 프로젝트** 대화 상자가 나타납니다.  
+    **새 프로젝트** 대화 상자가 나타납니다.  
   
-2.  확장을 **Visual C#** 노드 또는 **Visual Basic** 노드를 확장 합니다 **SharePoint** 노드를 선택한 후는 **2010** 노드.  
+2. 확장을 **Visual C#** 노드 또는 **Visual Basic** 노드를 확장 합니다 **SharePoint** 노드를 선택한 후는 **2010** 노드.  
   
-3.  에 **템플릿을** 목록에서 선택 합니다 **SharePoint 2010 프로젝트** 템플릿.  
+3. 에 **템플릿을** 목록에서 선택 합니다 **SharePoint 2010 프로젝트** 템플릿.  
   
-4.  에 **이름** 상자에 입력 합니다 **TestSiteDef**를 선택한 후는 **확인** 단추입니다.  
+4. 에 **이름** 상자에 입력 합니다 **TestSiteDef**를 선택한 후는 **확인** 단추입니다.  
   
-     합니다 **SharePoint 사용자 지정 마법사** 나타납니다.  
+    합니다 **SharePoint 사용자 지정 마법사** 나타납니다.  
   
-5.  에 **디버깅에 대 한 사이트 및 보안 수준을 지정할** 페이지에서 사이트 정의 디버그 하려는 SharePoint 사이트에 대 한 URL을 입력 하거나 기본 위치를 사용 하 여 (http://*시스템 이름*/).  
+5. 에 **디버깅에 대 한 사이트 및 보안 수준을 지정할** 페이지에서 사이트 정의 디버그 하려는 SharePoint 사이트에 대 한 URL을 입력 하거나 기본 위치를 사용 하 여 (http://<em>시스템 이름</em>/).  
   
-6.  에 **이 SharePoint 솔루션의 신뢰 수준을?** 섹션을 선택 합니다 **팜 솔루션으로 배포** 옵션 단추입니다.  
+6. 에 **이 SharePoint 솔루션의 신뢰 수준을?** 섹션을 선택 합니다 **팜 솔루션으로 배포** 옵션 단추입니다.  
   
-     모든 사이트 정의 프로젝트가 팜 솔루션으로 배포 되어야 합니다. 샌드박스 솔루션과 팜 솔루션 비교에 대 한 자세한 내용은 참조 하세요. [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)합니다.  
+    모든 사이트 정의 프로젝트가 팜 솔루션으로 배포 되어야 합니다. 샌드박스 솔루션과 팜 솔루션 비교에 대 한 자세한 내용은 참조 하세요. [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)합니다.  
   
-7.  선택 된 **완료** 단추입니다.  
+7. 선택 된 **완료** 단추입니다.  
   
-     프로젝트에 나타납니다 **솔루션 탐색기**합니다.  
+    프로젝트에 나타납니다 **솔루션 탐색기**합니다.  
   
-8.  **솔루션 탐색기**, 프로젝트 노드를 선택한 다음, 메뉴 모음에서 **프로젝트** > **새 항목 추가**합니다.  
+8. **솔루션 탐색기**, 프로젝트 노드를 선택한 다음, 메뉴 모음에서 **프로젝트** > **새 항목 추가**합니다.  
   
 9. 준 **Visual C#** 또는 **Visual Basic**를 확장 합니다 **SharePoint** 노드를 선택한 후는 **2010** 노드.  
   

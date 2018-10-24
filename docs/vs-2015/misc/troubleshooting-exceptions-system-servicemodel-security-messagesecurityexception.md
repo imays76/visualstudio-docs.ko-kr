@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 676f51b34bfc83d0a2af195da85a2c46cae08ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853170"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>예외 문제 해결: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> 때 예외가 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 확인 메시지 보안이 잘못 되거나 손상 되었습니다. 이 오류는 다음 조건에 모두 해당될 때 가장 자주 발생합니다.  
@@ -48,35 +48,35 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> 때 예외가 [!I
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>ASP.NET Development Server 내에 호스팅된 WCF 서비스에 대한 사용자 지정 서비스 바인딩을 만들려면  
   
-1.  예외가 발생한 WCF 서비스에 대한 Web.config 파일을 엽니다.  
+1. 예외가 발생한 WCF 서비스에 대한 Web.config 파일을 엽니다.  
   
-2.  Web.config 파일에 다음 정보를 입력합니다.  
+2. Web.config 파일에 다음 정보를 입력합니다.  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  Web.config 파일을 저장한 다음 닫습니다.  
+3. Web.config 파일을 저장한 다음 닫습니다.  
   
-4.  WCF 또는 웹 서비스에 대한 코드에서 엔드포인트 값을 다음과 같이 변경합니다.  
+4. WCF 또는 웹 서비스에 대한 코드에서 엔드포인트 값을 다음과 같이 변경합니다.  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     이렇게 하면 서비스에 사용자 지정 바인딩이 사용됩니다.  
+    이렇게 하면 서비스에 사용자 지정 바인딩이 사용됩니다.  
   
-5.  서비스에 액세스하는 웹 응용 프로그램에 서비스에 대한 참조를 추가합니다. **서비스 참조 추가** 대화 상자에서 예외가 발생한 원래 서비스에 대해 수행한 것과 같은 방법으로 서비스에 대한 참조를 추가합니다.  
+5. 서비스에 액세스하는 웹 응용 프로그램에 서비스에 대한 참조를 추가합니다. **서비스 참조 추가** 대화 상자에서 예외가 발생한 원래 서비스에 대해 수행한 것과 같은 방법으로 서비스에 대한 참조를 추가합니다.  
   
- WCF 서비스 참조를 사용하는 경우 다음 단계에 따라 NTLM 보안을 해제할 수 있습니다.  
+   WCF 서비스 참조를 사용하는 경우 다음 단계에 따라 NTLM 보안을 해제할 수 있습니다.  
   
 > [!IMPORTANT]
 >  보안 위협이 발생할 수 있으므로 NTLM 보안을 해제하지 않는 것이 좋습니다.  

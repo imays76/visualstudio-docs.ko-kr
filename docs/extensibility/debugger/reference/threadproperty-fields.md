@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5733bfa889a38c1d143fdd3bfbd8f208fed13a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44692c4715db3db8f65a85bd66a129b4d17e5138
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855549"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
-검색 된 스레드에 대 한 정보를 지정 합니다.  
+스레드에 대 한 정보를 검색할 수를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -54,32 +54,32 @@ public enum enum_THREADPROPERTY_FIELDS {
   
 ## <a name="members"></a>멤버  
  TPF_ID  
- 초기화/사용 된 `dwThreadId` 필드는 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조입니다.  
+ 초기화/사용 된 `dwThreadId` 필드를 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조입니다.  
   
  TPF_SUSPENDCOUNT  
- 초기화/사용 된 `dwSuspendCount` 필드는 `THREADPROPERTIE`S 구조입니다.  
+ 초기화/사용 합니다 `dwSuspendCount` 필드는 `THREADPROPERTIE`S 구조입니다.  
   
  TPF_STATE  
- 초기화/사용 된 `dwThreadState` 필드는 `THREADPROPERTIE`S 구조입니다.  
+ 초기화/사용 합니다 `dwThreadState` 필드는 `THREADPROPERTIE`S 구조입니다.  
   
  TPF_PRIORITY  
- 초기화/사용 된 `bstrPriority` 필드는 `THREADPROPERTIE`S 구조입니다.  
+ 초기화/사용 합니다 `bstrPriority` 필드는 `THREADPROPERTIE`S 구조입니다.  
   
  TPF_NAME  
- 초기화/사용 된 `bstrName` 필드는 `THREADPROPERTIE`S 구조입니다.  
+ 초기화/사용 합니다 `bstrName` 필드는 `THREADPROPERTIE`S 구조입니다.  
   
  TPF_LOCATION  
- 초기화/사용 된 `bstrLocation` 필드는 `THREADPROPERTIE`S 구조입니다.  
+ 초기화/사용 합니다 `bstrLocation` 필드는 `THREADPROPERTIE`S 구조입니다.  
   
  TPF_ALLFIELDS  
  모든 필드를 지정합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에 대 한 인수로 전달 되는 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 의 필드를 나타내도록 메서드를는 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조를 초기화할 수는 있습니다.  
+ 이러한 값을 인수로 전달 됩니다는 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 의 필드를 나타내려면 메서드는 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조는 초기화할 합니다.  
   
- 이러한 값에도 사용 됩니다 `dwFields` 의 멤버는 `THREADPROPERTIES` 구조에는 필드는 사용 되지 않으며 유효한 합니다.  
+ 이러한 값에도 사용 됩니다 `dwFields` 의 멤버는 `THREADPROPERTIES` 에 유효 하 고 사용 되는 필드는 구조체.  
   
- 이러한 플래그 비트와 함께 `OR`합니다.  
+ 이러한 플래그는 비트과 결합 될 수 `OR`입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

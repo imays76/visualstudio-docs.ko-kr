@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad870c9b470e96a120e334c79ed5b36e44cca41a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33b1a45d1c5dc3275ebbde8124986705bcac51ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856797"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>방법: 형식 간의 연결 만들기(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ ms.locfileid: "49247886"
   
 ### <a name="to-change-the-name-of-an-association"></a>연결의 이름을 변경하려면  
   
--   다이어그램 화면에서 연결 선의 레이블을 클릭한 후에 편집합니다.  
+- 다이어그램 화면에서 연결 선의 레이블을 클릭한 후에 편집합니다.  
   
- \- 또는 -  
+  \- 또는 -  
   
 1.  연결로 표시된 속성이 있는 모양을 클릭합니다.  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b1b5d67faea0ce5c1c2a56b3f411cd4f947067
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 789385ae229214beeb6c2ab9be90a964127e5e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819734"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 이 구조는 컴퓨터에서 실행 중인 프로세스에 대 한 정보를 제공 합니다.  
@@ -45,16 +45,16 @@ public struct PROVIDER_PROCESS_DATA {
   
 ## <a name="members"></a>멤버  
  필드  
- 플래그의 조합 된 [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) 어떤 필드 입력을 나타내는 열거형입니다.  
+ 플래그의 조합을 합니다 [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) 열거형을 나타내는 필드 채워집니다.  
   
  ProgramNodes  
- A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) 프로그램 노드의 배열이 포함 된 구조입니다.  
+ A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) 프로그램 노드의 배열을 포함 하는 구조입니다.  
   
  fIsDebuggerPresent  
- 0이 아닌 (`TRUE`) 하는 경우는 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 디버거가 실행 되 고, 0 (`FALSE`) 없는 경우.  
+ 0이 아닌 값 (`TRUE`) 하는 경우는 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 디버거가 실행 되 고, 0 (`FALSE`) 없는 경우.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 전달 되는 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 으로 채워지면 메서드.  
+ 이 구조에 전달 되는 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 메서드 위치에서 채워집니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

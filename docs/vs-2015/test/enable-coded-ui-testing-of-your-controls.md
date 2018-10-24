@@ -13,12 +13,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848542"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>컨트롤의 코딩된 UI 테스트 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "49247873"
   
  **항목 내용:**  
   
-1.  [접근성을 구현하여 기록 및 재생, 속성 유효성 검사를 지원](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [접근성을 구현하여 기록 및 재생, 속성 유효성 검사를 지원](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [속성 공급자를 구현하여 사용자 지정 속성의 유효성 검사를 지원](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [속성 공급자를 구현하여 사용자 지정 속성의 유효성 검사를 지원](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [사용자 지정 속성에 액세스하기 위해 클래스를 구현하여 코드 생성을 지원](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [사용자 지정 속성에 액세스하기 위해 클래스를 구현하여 코드 생성을 지원](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [작업 필터를 구현하여 의도 인식 작업을 지원](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [작업 필터를 구현하여 의도 인식 작업을 지원](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> 접근성을 구현하여 기록 및 재생, 속성 유효성 검사를 지원  
  코딩된 UI 테스트 빌더는 기록 중 발견된 컨트롤에 대한 정보를 캡처하고 해당 세션을 재생하기 위한 코드를 생성합니다. 컨트롤이 액세스 가능성을 지원하지 않을 경우, 코딩된 UI 테스트 빌더는 화면 좌표를 사용하여 작업(예: 마우스 클릭)을 캡처합니다. 테스트를 재생하면 생성된 코드가 동일 화면 좌표에서 이러한 마우스 클릭을 실행합니다. 테스트를 재생할 때 컨트롤이 화면의 다른 위치에 표시되면 생성된 코드가 컨트롤에 대해 해당 작업을 수행하는 데 실패합니다. 다른 화면 구성 또는 다른 환경에서 테스트를 재생하거나 UI 레이아웃이 변경된 다음에 재생할 경우에는 작업이 실패할 수 있습니다.  

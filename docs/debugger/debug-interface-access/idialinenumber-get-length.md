@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21323095ffd427f860f750521605832377f9a22b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 08462f0ffb70663583398352cd980c744cd7648e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849868"
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
-블록의 바이트 수를 검색합니다.  
+블록의 바이트 수를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,7 +40,7 @@ HRESULT get_length (
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 로 표현 되는 블록은 줄에서 소스 코드의 길이 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 개체입니다.  
+ 블록의 길이가 소스 코드 줄에 의해 표시 된 대로 합니다 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 개체입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

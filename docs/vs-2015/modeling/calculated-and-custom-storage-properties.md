@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852858"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>계산된 저장소 속성 및 사용자 지정 저장소 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ ms.locfileid: "49179493"
   
  그러나 실행 취소 또는 다시 실행을 호출 하는 사용자 또는 트랜잭션을 롤백하는 경우 Set 메서드 호출할 수도 있습니다. 때 <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> 가 true 이면 Set 메서드는 다음과 같이 동작 해야 합니다.  
   
--   해당 변경해 서는 안 다른 도메인 속성에 값을 할당 하는 등 저장소에 있습니다. 실행 취소 관리자는 해당 값을 설정 합니다.  
+- 해당 변경해 서는 안 다른 도메인 속성에 값을 할당 하는 등 저장소에 있습니다. 실행 취소 관리자는 해당 값을 설정 합니다.  
   
--   그러나 해당 데이터베이스 또는 파일 내용, store 외부의 개체와 같은 외부 리소스를 업데이트 해야 합니다. 저장소의 값을 사용 하 여 synchronism에 보관 됩니다는 있는지 확인 합니다.  
+- 그러나 해당 데이터베이스 또는 파일 내용, store 외부의 개체와 같은 외부 리소스를 업데이트 해야 합니다. 저장소의 값을 사용 하 여 synchronism에 보관 됩니다는 있는지 확인 합니다.  
   
- 예를 들어:  
+  예를 들어:  
   
 ```  
 void SetAgeValue(int value)  

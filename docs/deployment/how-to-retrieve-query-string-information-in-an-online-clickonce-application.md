@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829770"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>방법: 온라인 ClickOnce 응용 프로그램에서 쿼리 문자열 정보 검색
 *쿼리 문자열* 은 임의의 정보를 *name=value*형식으로 포함하는, 물음표(?)로 시작되는 URL의 일부입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 호스트하는 `WindowsApp1` 이라는 이름의 `servername`응용 프로그램이 있으며, 응용 프로그램이 시작될 때 `username` 변수에 대해 값을 전달하려 한다고 가정해 보겠습니다. URL은 다음과 같습니다.  
@@ -57,17 +57,17 @@ ms.locfileid: "44282454"
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>MageUI.exe를 사용하여 ClickOnce 응용 프로그램에서 쿼리 문자열이 전달되도록 하려면  
   
-1.  .NET 명령 프롬프트를 열고 다음을 입력합니다.  
+1. .NET 명령 프롬프트를 열고 다음을 입력합니다.  
   
-    ```cmd  
-    MageUI  
-    ```  
+   ```cmd  
+   MageUI  
+   ```  
   
-2.  **파일** 메뉴에서 **열기**를 선택하고 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에 대한 배포 매니페스트를 엽니다( `.application` 확장명으로 끝나는 파일).  
+2. **파일** 메뉴에서 **열기**를 선택하고 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에 대한 배포 매니페스트를 엽니다( `.application` 확장명으로 끝나는 파일).  
   
-3.  왼쪽 탐색 창에서 **배포 옵션** 패널을 선택하고, **응용 프로그램으로 URL 매개 변수가 전달되도록 허용** 확인란을 선택합니다.  
+3. 왼쪽 탐색 창에서 **배포 옵션** 패널을 선택하고, **응용 프로그램으로 URL 매개 변수가 전달되도록 허용** 확인란을 선택합니다.  
   
-4.  **파일** 메뉴에서 **저장**을 선택합니다.  
+4. **파일** 메뉴에서 **저장**을 선택합니다.  
   
 > [!NOTE]
 >  또는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]에서 쿼리 문자열이 전달되도록 할 수 있습니다. **프로젝트 속성** 을 열고 **게시**탭을 선택하고 **옵션** 단추를 클릭한 다음 **매니페스트** 를 선택하여 **응용 프로그램으로 URL 매개 변수가 전달되도록 허용**확인란을 선택합니다.  

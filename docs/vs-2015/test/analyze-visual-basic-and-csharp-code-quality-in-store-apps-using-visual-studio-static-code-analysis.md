@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306115"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828704"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 정적 코드 분석을 사용하여 스토어 앱의 Visual Basic 및 C# 코드 품질 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 ##  <a name="BKMK_Run"></a> 코드 분석 실행  
  Visual Studio 솔루션에서 코드 문석을 실행하려면 다음을 수행합니다.  
   
--   **빌드** 메뉴에서 **솔루션에서 코드 분석 실행**을 선택합니다.  
+- **빌드** 메뉴에서 **솔루션에서 코드 분석 실행**을 선택합니다.  
   
- 프로젝트를 빌드할 때마다 자동으로 코드 분석을 실행하려면 다음을 수행합니다.  
+  프로젝트를 빌드할 때마다 자동으로 코드 분석을 실행하려면 다음을 수행합니다.  
   
-1.  솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 선택합니다.  
+1. 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 선택합니다.  
   
-2.  프로젝트 속성 페이지에서 **코드 분석**을 선택한 다음 **빌드에 코드 분석 사용(CODEANALYSIS 상수 정의)** 을 선택합니다.  
+2. 프로젝트 속성 페이지에서 **코드 분석**을 선택한 다음 **빌드에 코드 분석 사용(CODEANALYSIS 상수 정의)** 을 선택합니다.  
   
- 솔루션이 컴파일되고 코드 분석이 실행됩니다. 코드 분석 창에 결과가 나타납니다.  
+   솔루션이 컴파일되고 코드 분석이 실행됩니다. 코드 분석 창에 결과가 나타납니다.  
   
- ![코드 분석 창](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![코드 분석 창](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> 코드 분석 경고 분석 및 해결  
  특정 경고를 분석하려면 코드 분석 창에서 경고 제목을 클릭합니다. 경고가 확장되어 문제에 대한 자세한 정보가 표시됩니다.  
@@ -80,15 +80,15 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
  경고를 표시하지 않으려면 다음을 수행합니다.  
   
-1.  자세한 정보가 표시되지 않으면 경고 제목을 클릭하여 확장합니다.  
+1. 자세한 정보가 표시되지 않으면 경고 제목을 클릭하여 확장합니다.  
   
-2.  경고 아래쪽에서 **작업** 링크를 선택합니다.  
+2. 경고 아래쪽에서 **작업** 링크를 선택합니다.  
   
-3.  **메시지 표시 안 함**을 가리킨 다음 **소스** 또는 **비표시 오류(Suppression) 파일**을 선택합니다.  
+3. **메시지 표시 안 함**을 가리킨 다음 **소스** 또는 **비표시 오류(Suppression) 파일**을 선택합니다.  
   
-    -   **소스**를 선택하면 경고를 생성시킨 메서드 위의 소스 파일에 `SuppressMessage` 특성이 삽입됩니다. 그러면 비표시 오류(Suppression)를 더 쉽게 검색할 수 있습니다.  
+   - **소스**를 선택하면 경고를 생성시킨 메서드 위의 소스 파일에 `SuppressMessage` 특성이 삽입됩니다. 그러면 비표시 오류(Suppression)를 더 쉽게 검색할 수 있습니다.  
   
-    -   **비표시 오류(Suppression) 파일**을 선택하면 프로젝트의 **GlobalSuppressions.cs** 파일에 `SuppressMessage`가 추가됩니다. 그러면 비표시 오류(Suppression)를 더 쉽게 관리할 수 있습니다. 또한 **GlobalSuppression.cs**에 추가된 `SuppressMessage` 특성은 경고를 발생시킨 메서드를 대상으로 합니다. 이 경우 경고가 표시되지 않는 현상이 전체적으로 적용되지는 않습니다.  
+   - **비표시 오류(Suppression) 파일**을 선택하면 프로젝트의 **GlobalSuppressions.cs** 파일에 `SuppressMessage`가 추가됩니다. 그러면 비표시 오류(Suppression)를 더 쉽게 관리할 수 있습니다. 또한 **GlobalSuppression.cs**에 추가된 `SuppressMessage` 특성은 경고를 발생시킨 메서드를 대상으로 합니다. 이 경우 경고가 표시되지 않는 현상이 전체적으로 적용되지는 않습니다.  
   
      경고를 소스 파일에서 표시하지 않을지 비표시 오류(Suppression) 파일에서 표시하지 않을지 여부는 해당 코딩 스타일과 요구에 따라 결정하면 됩니다.  
   

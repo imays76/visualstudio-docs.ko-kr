@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22f6cadaa88d6cc87ec70451d9da850cd49b7753
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a93877066e90bbc72ca58181d192219e898897d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833891"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 이 메서드는 지정 된 각 디버그 엔진 (DE)에 대 한 프로그램 노드를 추가 합니다.  
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>매개 변수  
  `guidLaunchingEngine`  
- [in] `GUID` 프로그램을 시작 하는 사용 하는 것 (및 자체 프로그램 노드를 추가 하려면 가정)는 DE의 합니다.  
+ [in] `GUID` 프로그램을 시작 하는 데는 (및 자체 프로그램 노드를 추가 하려면 가정)는 DE입니다.  
   
  `rgguidSpecificEngines`  
- [in] 배열 `GUID`DEs 노드를 추가할 응용 프로그램의 s입니다.  
+ [in] 배열을 `GUID`의프로그램에 대 한 노드를 추가할 수는 DEs입니다.  
   
  `celtSpecificEngines`  
- [in] 수가 `GUID`에 s는 `rgguidSpecificEngines` 배열입니다.  
+ [in] 수가 `GUID`의 `rgguidSpecificEngines` 배열입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- [노드 프로그램](../../../extensibility/debugger/program-nodes.md) 에 나열 된 각 DE에 추가할 수 `rgguidSpecificEngines`-시작 엔진은 제외 하 고 (에 지정 된 `guidLaunchingEngine`), 프로그램을 시작할 때 자체 프로그램 노드를 추가 가정 된 합니다.  
+ [노드 프로그램](../../../extensibility/debugger/program-nodes.md) 에 나열 된 각 DE 예정 `rgguidSpecificEngines`-시작 엔진 제외 하 고 (에 지정 된 대로 `guidLaunchingEngine`), 프로그램을 시작할 때 자체 프로그램 노드를 추가 하려면 가정 된 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
