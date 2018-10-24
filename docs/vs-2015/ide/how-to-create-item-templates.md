@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 689a9fee79b570fc73cebff0b7c8e99439975c1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863635"
 ---
 # <a name="how-to-create-item-templates"></a>방법: 항목 템플릿 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,87 +62,87 @@ ms.locfileid: "49244623"
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>항목 템플릿을 저장소 프로젝트에서 사용할 수 있도록 하려면  
   
-1.  위 절차의 단계에 따라 항목 템플릿을 내보냅니다.  
+1. 위 절차의 단계에 따라 항목 템플릿을 내보냅니다.  
   
-2.  ..\Users\\*username*\Documents\Visual Studio *Version*\Templates\ItemTemplates\(또는 **My Exported Templates**) 폴더에 복사된 .zip 파일에서 .vstemplate 파일을 추출합니다.  
+2. ..\Users\\*username*\Documents\Visual Studio *Version*\Templates\ItemTemplates\(또는 **My Exported Templates**) 폴더에 복사된 .zip 파일에서 .vstemplate 파일을 추출합니다.  
   
-3.  Visual Studio에서 .vstemplate 파일을 엽니다.  
+3. Visual Studio에서 .vstemplate 파일을 엽니다.  
   
-4.  Windows 8.1 저장소 C# 프로젝트의 경우 .vstemplate 파일에 다음 XML을 열고 닫는 `<TemplateData>` 태그(`<TemplateGroupID>WinRT-Managed</TemplateGroupID>`)로 묶어 추가합니다.  
+4. Windows 8.1 저장소 C# 프로젝트의 경우 .vstemplate 파일에 다음 XML을 열고 닫는 `<TemplateData>` 태그(`<TemplateGroupID>WinRT-Managed</TemplateGroupID>`)로 묶어 추가합니다.  
   
-     C++ Windows 8.1 스토어 프로젝트에서는 `WinRT-Native-6.3` 값을 사용합니다. Windows 10 및 기타 프로젝트 유형의 경우 [TemplateGroupID 요소(Visual Studio 템플릿)](../extensibility/templategroupid-element-visual-studio-templates.md)를 참조하세요.  
+    C++ Windows 8.1 스토어 프로젝트에서는 `WinRT-Native-6.3` 값을 사용합니다. Windows 10 및 기타 프로젝트 유형의 경우 [TemplateGroupID 요소(Visual Studio 템플릿)](../extensibility/templategroupid-element-visual-studio-templates.md)를 참조하세요.  
   
-     다음 예제에서는 XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 행이 추가된 이후 .vstemplate 파일의 전체 내용을 보여 줍니다. 이 예제는 C# 프로젝트에만 적용됩니다. <ProjectTpe> 및 \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 요소를 수정하여 다른 언어 및 프로젝트 유형을 지정할 수 있습니다.  
+    다음 예제에서는 XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 행이 추가된 이후 .vstemplate 파일의 전체 내용을 보여 줍니다. 이 예제는 C# 프로젝트에만 적용됩니다. <ProjectTpe> 및 \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 요소를 수정하여 다른 언어 및 프로젝트 유형을 지정할 수 있습니다.  
   
-    ```xml  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
-      <TemplateData>  
-        <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
-        <Name>MyItemStoreTemplate</Name>  
-        <Description>This is an example itemtemplate</Description>  
-        <ProjectType>CSharp</ProjectType>  
-        <SortOrder>10</SortOrder>  
-        <Icon>__TemplateIcon.ico</Icon>  
-        <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
-      </TemplateData>  
-      <TemplateContent>  
-        <References />  
-        <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
-        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
+     <TemplateData>  
+       <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
+       <Name>MyItemStoreTemplate</Name>  
+       <Description>This is an example itemtemplate</Description>  
+       <ProjectType>CSharp</ProjectType>  
+       <SortOrder>10</SortOrder>  
+       <Icon>__TemplateIcon.ico</Icon>  
+       <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
+     </TemplateData>  
+     <TemplateContent>  
+       <References />  
+       <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
+       <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-     가능한 다른 TemplateGroupID 값은 [TemplateGroupID 요소(Visual Studio 템플릿)](../extensibility/templategroupid-element-visual-studio-templates.md)를 참조하세요. 전체 .vstemplate 참조는 [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조하세요.  
+    가능한 다른 TemplateGroupID 값은 [TemplateGroupID 요소(Visual Studio 템플릿)](../extensibility/templategroupid-element-visual-studio-templates.md)를 참조하세요. 전체 .vstemplate 참조는 [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조하세요.  
   
-5.  Visual Studio에서 .vstemplate 파일을 저장한 다음 닫습니다.  
+5. Visual Studio에서 .vstemplate 파일을 저장한 다음 닫습니다.  
   
-6.  .vstemplate 파일을 복사하여 ..\Users\\*username*\Documents\Visual Studio *Version*\Templates\ItemTemplates\ 폴더에 있는 .zip 파일에 다시 붙여넣습니다.  
+6. .vstemplate 파일을 복사하여 ..\Users\\*username*\Documents\Visual Studio *Version*\Templates\ItemTemplates\ 폴더에 있는 .zip 파일에 다시 붙여넣습니다.  
   
-     **파일 복사** 대화 상자가 나타나면 **복사하는 파일로 대상 파일 덮어쓰기** 옵션을 선택합니다.  
+    **파일 복사** 대화 상자가 나타나면 **복사하는 파일로 대상 파일 덮어쓰기** 옵션을 선택합니다.  
   
- 이제 **새 항목 추가** 대화 상자에서 이 템플릿을 기반으로 한 항목을 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 프로젝트에 추가할 수 있습니다.  
+   이제 **새 항목 추가** 대화 상자에서 이 템플릿을 기반으로 한 항목을 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 프로젝트에 추가할 수 있습니다.  
   
- 매개 변수 이름에 대한 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조하세요.  
+   매개 변수 이름에 대한 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조하세요.  
   
 ### <a name="to-enable-templates-for-specific-project-sub-types"></a>특정 프로젝트 하위 유형에 템플릿을 사용하도록 설정하려면  
   
-1.  개발 환경에서는 특정 프로젝트에 대해 프로젝트 항목을 항목 추가 대화 상자에서 사용할 수 있도록 할 수 있습니다. 이 절차를 사용하여 Windows, 웹, Office 또는 데이터베이스 프로젝트에 대해 사용할 수 있는 사용자 지정 항목을 만들 수 있습니다.  
+1. 개발 환경에서는 특정 프로젝트에 대해 프로젝트 항목을 항목 추가 대화 상자에서 사용할 수 있도록 할 수 있습니다. 이 절차를 사용하여 Windows, 웹, Office 또는 데이터베이스 프로젝트에 대해 사용할 수 있는 사용자 지정 항목을 만들 수 있습니다.  
   
-     .vstemplate 파일에서 항목 템플릿에 대한 ProjectType 요소를 찾습니다.  
+    .vstemplate 파일에서 항목 템플릿에 대한 ProjectType 요소를 찾습니다.  
   
-     ProjectType 요소 바로 뒤에 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소를 추가합니다.  
+    ProjectType 요소 바로 뒤에 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소를 추가합니다.  
   
-2.  요소의 텍스트 값을 다음 값 중 하나로 설정합니다.  
+2. 요소의 텍스트 값을 다음 값 중 하나로 설정합니다.  
   
-    1.  Windows  
+   1. Windows  
   
-    2.  Office  
+   2. Office  
   
-    3.  데이터베이스  
+   3. 데이터베이스  
   
-    4.  웹  
+   4. 웹  
   
-     예: `<ProjectSubType>Database</ProjectSubType>`  
+      예: `<ProjectSubType>Database</ProjectSubType>`  
   
-     다음 예제에서는 Office 프로젝트에 사용할 수 있는 항목 템플릿을 보여 줍니다.  
+      다음 예제에서는 Office 프로젝트에 사용할 수 있는 항목 템플릿을 보여 줍니다.  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
-        <TemplateData>  
-            <Name>Class</Name>  
-            <Description>An empty class file</Description>  
-            <Icon>Class.ico</Icon>  
-            <ProjectType>CSharp</ProjectType>  
-            <ProjectSubType>Office</ProjectSubType>  
-            <DefaultName>Class.cs</DefaultName>  
-        </TemplateData>  
-        <TemplateContent>  
-            <ProjectItem>Class1.cs</ProjectItem>  
-        </TemplateContent>  
-    </VSTemplate>  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
+       <TemplateData>  
+           <Name>Class</Name>  
+           <Description>An empty class file</Description>  
+           <Icon>Class.ico</Icon>  
+           <ProjectType>CSharp</ProjectType>  
+           <ProjectSubType>Office</ProjectSubType>  
+           <DefaultName>Class.cs</DefaultName>  
+       </TemplateData>  
+       <TemplateContent>  
+           <ProjectItem>Class1.cs</ProjectItem>  
+       </TemplateContent>  
+   </VSTemplate>  
   
-    ```  
+   ```  
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>템플릿 내보내기 마법사를 사용하지 않고 항목 템플릿을 수동으로 만들려면  
   

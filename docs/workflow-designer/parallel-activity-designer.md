@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4f10b9bb564268f5aeee59d871fd44324097cc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 76e0d7646645c7d86859de7f79ff22a46131c4a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863765"
 ---
 # <a name="parallel-activity-designer"></a>Parallel 활동 디자이너
 
@@ -42,13 +42,13 @@ ms.locfileid: "36756678"
 다음 표에서는 가장 유용한 Parallel 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **병렬**합니다. 값을 선택적으로 편집할 수 있습니다 합니다 **속성** 표에서 또는 활동 디자이너 머리글에서 직접.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|실행할 자식 활동의 컬렉션을 포함합니다.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|분기가 완료된 후 확인됩니다. 로 평가 되 면 **True**, 예약 된 보류 중인 분기가 취소 됩니다. 이 속성이 설정 되지 않았거나를 평가 하는 경우 **False**, 모든 자식 활동이 완료 되 면 작업 완료 합니다. 기본값은 **null**합니다.|
 
 ## <a name="see-also"></a>참고자료
 
-- [시퀀스](../workflow-designer/sequence-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)

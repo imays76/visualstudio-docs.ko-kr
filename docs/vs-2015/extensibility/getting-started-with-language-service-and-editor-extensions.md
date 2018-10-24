@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862764"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>언어 서비스 및 편집기 확장 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ ms.locfileid: "49227008"
   
  다음은 일부 편집기 확장의 기본 종류입니다.  
   
--   여백 및 스크롤 막대  
+- 여백 및 스크롤 막대  
   
--   Tags  
+- Tags  
   
--   선의 도구 영역  
+- 선의 도구 영역  
   
--   옵션  
+- 옵션  
   
--   IntelliSense  
+- IntelliSense  
   
- 편집기 확장 지점에 대 한 자세한 내용은 참조 하세요. [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)합니다.  
+  편집기 확장 지점에 대 한 자세한 내용은 참조 하세요. [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)합니다.  
   
 ## <a name="deploying-editor-extensions"></a>편집기 확장 배포  
  Visual Studio 편집기 확장 솔루션을 구축 솔루션에 source.extension.vsixmanifest 라는 메타 데이터 파일을 추가한 다음 Visual Studio에 알려져 있는 폴더에 이진 파일 및 매니페스트의 복사본을 추가 하 여 배포 합니다. 매니페스트 파일 (예를 들어, 이름, 작성자, 버전 및 유형의 콘텐츠) 확장에 대 한 기본적인 사항을 정의합니다. VSIX 매니페스트 파일 및 확장을 배포 하는 방법에 대 한 자세한 내용은 참조 하세요. [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)합니다.  

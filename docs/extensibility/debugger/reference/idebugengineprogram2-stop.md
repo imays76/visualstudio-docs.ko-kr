@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab5bec65dc3f53681d40743bea694295ff69944b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 17919b42f97d2255325c1ceae119014521325c7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860827"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 이 프로그램에서 실행 중인 모든 스레드를 중지 합니다.  
@@ -38,12 +38,12 @@ int Stop();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 다중 프로그램 환경에서이 프로그램을 디버깅 되는 호출 됩니다. 다른 프로그램에서 중지 이벤트를 받으면이 프로그램에이 메서드가 호출 됩니다. 이 메서드 구현은 비동기; 해야 합니다. 즉, 모든 스레드는이 메서드가 반환 되기 전에 중지 하는 데 필요한 이어야 합니다. 이 메서드의 구현을 호출 처럼 간단 해질 수 있습니다는 [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) 이 프로그램에 메서드.  
+ 이 메서드는 다중 프로그램 환경에서이 프로그램을 디버깅 되는 호출 됩니다. 다른 프로그램에서 중지 이벤트를 수신 되 면이 메서드는이 프로그램에서 호출 됩니다. 이 메서드의 구현은 비동기; 여야 합니다. 즉, 모든 스레드는이 메서드가 반환 되기 전에 중지 해야 합니다. 이 메서드의 구현을 호출 처럼 간단할 수 있습니다 합니다 [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) 이 프로그램에는 메서드.  
   
- 디버그 이벤트가이 메서드에 대 한 응답으로 전송 됩니다.  
+ 디버그 이벤트가 없습니다이 메서드에 대 한 응답으로 전송 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

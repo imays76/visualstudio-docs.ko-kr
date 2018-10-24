@@ -10,12 +10,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4b6580602e730ae2f8cfc6fe47366d57ce1ff7ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9390182f6fec91d049a1c080e33802aecfed305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860697"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin을 사용한 모바일 개발에 대해 알아보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "49178817"
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>주요 사항: Visual Studio 및 Xamarin 환경 개요  
  *5-15분*  
   
--   Visual Studio 및 Xamarin이 설치된 Windows 컴퓨터에서 대부분 작업을 수행합니다. 이 컴퓨터에서 직접 Windows 및 Android 앱을 빌드하고 장치나 에뮬레이터에서 실행 및 디버그합니다. Mac을 통해 원격으로 iOS 앱을 빌드, 실행 및 디버그할 수도 있습니다. Windows 컴퓨터의 Visual Studio를 iOS 스토리보드 디자이너 및 iOS 시뮬레이터에 연결할 수도 있습니다.  
+- Visual Studio 및 Xamarin이 설치된 Windows 컴퓨터에서 대부분 작업을 수행합니다. 이 컴퓨터에서 직접 Windows 및 Android 앱을 빌드하고 장치나 에뮬레이터에서 실행 및 디버그합니다. Mac을 통해 원격으로 iOS 앱을 빌드, 실행 및 디버그할 수도 있습니다. Windows 컴퓨터의 Visual Studio를 iOS 스토리보드 디자이너 및 iOS 시뮬레이터에 연결할 수도 있습니다.  
   
--   Xcode 및 Xamarin이 설치된 Mac은 iOS 앱용 빌드/서명 호스트 및 런타임 환경으로 사용됩니다. Windows 컴퓨터의 Visual Studio에서 iOS에 대한 빌드는 이 Mac으로 위임됩니다. Visual Studio에서 iOS 앱을 디버그하면 앱은 Mac의 iOS 시뮬레이터에서 실행되거나 Mac에 연결된 테더링된 장치에서 직접 실행됩니다. 이 경우 Mac이나 그 주변에서 앱을 조작하고 Visual Studio에서 디버깅을 수행합니다.  
+- Xcode 및 Xamarin이 설치된 Mac은 iOS 앱용 빌드/서명 호스트 및 런타임 환경으로 사용됩니다. Windows 컴퓨터의 Visual Studio에서 iOS에 대한 빌드는 이 Mac으로 위임됩니다. Visual Studio에서 iOS 앱을 디버그하면 앱은 Mac의 iOS 시뮬레이터에서 실행되거나 Mac에 연결된 테더링된 장치에서 직접 실행됩니다. 이 경우 Mac이나 그 주변에서 앱을 조작하고 Visual Studio에서 디버깅을 수행합니다.  
   
- 이러한 관계는 아래에서 설명하고 iOS 앱 작업에 대한 자세한 내용은 [Visual Studio용 Xamarin.iOS 소개](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (영문)(xamarin.com)를 참조하세요.  
+  이러한 관계는 아래에서 설명하고 iOS 앱 작업에 대한 자세한 내용은 [Visual Studio용 Xamarin.iOS 소개](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (영문)(xamarin.com)를 참조하세요.  
   
- ![Xamarin 환경에서 Windows 및 Mac 개발 컴퓨터 간의 관계](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
+  ![Xamarin 환경에서 Windows 및 Mac 개발 컴퓨터 간의 관계](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>주요 사항: 프로젝트 구성 방법  
  *10~30분*  
@@ -64,15 +64,15 @@ ms.locfileid: "49178817"
   
  어떤 방법을 사용할지 고민할 필요가 없습니다. Xamarin Native와 Xamarin.Forms의 조합을 사용하여 앱을 구현할 수 있습니다.  
   
--   Xamarin.Forms를 사용하여 로그인, 연락처 양식 및 검색 결과와 같이 플랫폼 간에 유사한 UI 및 기능을 제공하는 범용 화면을 빌드합니다.  
+- Xamarin.Forms를 사용하여 로그인, 연락처 양식 및 검색 결과와 같이 플랫폼 간에 유사한 UI 및 기능을 제공하는 범용 화면을 빌드합니다.  
   
--   Xamarin.Forms의 다양한 사용자 지정 기능을 사용하여 플랫폼 기준으로 UI를 조정합니다. 여기에는 코드 및 XAML 둘 다에서 사용하여 사용자 지정 보기를 만들고, 기존 렌더러를 확장하고, 사용자 지정 렌더러를 만들 수 있는 OnPlatform API가 포함됩니다.  
+- Xamarin.Forms의 다양한 사용자 지정 기능을 사용하여 플랫폼 기준으로 UI를 조정합니다. 여기에는 코드 및 XAML 둘 다에서 사용하여 사용자 지정 보기를 만들고, 기존 렌더러를 확장하고, 사용자 지정 렌더러를 만들 수 있는 OnPlatform API가 포함됩니다.  
   
--   필요한 경우 Xamarin Native를 사용하여 각 플랫폼의 고유한 UI 기능을 사용하는 화면(예: 네이티브 카메라 캡처 및 이미지 조작을 사용하는 화면)을 빌드합니다.  
+- 필요한 경우 Xamarin Native를 사용하여 각 플랫폼의 고유한 UI 기능을 사용하는 화면(예: 네이티브 카메라 캡처 및 이미지 조작을 사용하는 화면)을 빌드합니다.  
   
- 항상 Xamarin.Forms 솔루션부터 시작하여 플랫폼 간에 공유되는 UI 코드를 설정하고 사용자 지정 기능을 사용하여 플랫폼별 조정을 수행하는 것이 좋습니다. 완전한 플랫폼별 화면이 필요한 경우 Xamarin Native를 사용하여 개별적으로 추가할 수 있습니다.  
+  항상 Xamarin.Forms 솔루션부터 시작하여 플랫폼 간에 공유되는 UI 코드를 설정하고 사용자 지정 기능을 사용하여 플랫폼별 조정을 수행하는 것이 좋습니다. 완전한 플랫폼별 화면이 필요한 경우 Xamarin Native를 사용하여 개별적으로 추가할 수 있습니다.  
   
- 자세히 알아보려면:  
+  자세히 알아보려면:  
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com)에서는 Xamarin.Forms 및 네이티브 UI 레이어(Xamarin.iOS 및 Xamarin.Android)에 대한 간단한 개요와 장점 및 단점을 제공합니다.  
   

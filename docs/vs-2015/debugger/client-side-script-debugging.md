@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1abbf86799b290bd8afd9ed76fdb7f94b390c1b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865858"
 ---
 # <a name="client-side-script-debugging"></a>클라이언트 쪽 스크립트 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,17 +47,17 @@ Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트
   
  다음 중 한 가지가 발생하면 디버거가 스크립트에 자동으로 연결됩니다.  
   
--   스크립트에 설정한 중단점을 적중합니다.  
+- 스크립트에 설정한 중단점을 적중합니다.  
   
--   스크립트 코드에서 VBScript `Stop` 문 또는 JScript `debugger` 문을 적중합니다.  
+- 스크립트 코드에서 VBScript `Stop` 문 또는 JScript `debugger` 문을 적중합니다.  
   
--   브라우저 또는 서버에서 스크립트에 구문 또는 런타임 오류가 발생합니다. 이렇게 되면 디버깅 시작 옵션이 포함된 대화 상자가 표시됩니다.  
+- 브라우저 또는 서버에서 스크립트에 구문 또는 런타임 오류가 발생합니다. 이렇게 되면 디버깅 시작 옵션이 포함된 대화 상자가 표시됩니다.  
   
- 디버거를 수동으로 스크립트에 연결하는 경우 스크립트 프로세스는 중단될 때까지 계속 실행됩니다. 이 경우 **디버그** 메뉴에서 **중단** 을 선택하면 프로세스를 중단할 수 있습니다.  
+  디버거를 수동으로 스크립트에 연결하는 경우 스크립트 프로세스는 중단될 때까지 계속 실행됩니다. 이 경우 **디버그** 메뉴에서 **중단** 을 선택하면 프로세스를 중단할 수 있습니다.  
   
- 디버거가 자동으로 연결되는 경우 스크립트 실행은 중단점, `Stop` 문 또는 `debugger` 문이 있는 줄, 오류가 발생한 줄 또는 Internet Explorer에서 디버깅을 시작하도록 선택한 지점에서 중단됩니다.  
+  디버거가 자동으로 연결되는 경우 스크립트 실행은 중단점, `Stop` 문 또는 `debugger` 문이 있는 줄, 오류가 발생한 줄 또는 Internet Explorer에서 디버깅을 시작하도록 선택한 지점에서 중단됩니다.  
   
- 이 위치에서 일반 디버거 기능을 사용하여 디버깅을 시작할 수 있습니다. 예를 들어 **단계** 명령을 사용하면 계속해서 코드를 한 줄씩 실행할 수 있습니다. **호출 스택** 창을 사용하여 스크립트 흐름을 보고 제어할 수 있습니다. 그리고 변수 창이나 **직접 실행** 창을 사용하면 변수 및 속성을 보거나 변경할 수 있습니다.  
+  이 위치에서 일반 디버거 기능을 사용하여 디버깅을 시작할 수 있습니다. 예를 들어 **단계** 명령을 사용하면 계속해서 코드를 한 줄씩 실행할 수 있습니다. **호출 스택** 창을 사용하여 스크립트 흐름을 보고 제어할 수 있습니다. 그리고 변수 창이나 **직접 실행** 창을 사용하면 변수 및 속성을 보거나 변경할 수 있습니다.  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>스크립트 디버깅에 대한 자세한 오류 메시지  
  Visual Studio는 일반적인 스크립트 디버깅 문제에 대한 자세한 오류 메시지를 제공합니다. 이러한 메시지는 Internet Explorer에 수동으로 연결하는 경우가 아니면 표시되지 않습니다. Internet Explorer가 자동으로 열릴 때 오류 조건이 발생하는 경우에는 오류 메시지를 볼 수 있도록 수동으로 연결해 보십시오.  

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867665"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 유틸리티
 만들고 매개 변수로 Visual Studio 확장명.dll 파일을 *.pkgdef* 함께 파일을 *.dll* 파일입니다. 합니다 *.pkgdef* 파일 그렇지 않으면 작성 될 수 있는 시스템 레지스트리에 확장을 설치할 때 모든 정보를 포함 합니다.  
@@ -53,13 +53,13 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
  합니다 *.pkgdef* 파일이 다음 위치 중 하나에 설치 되어야 합니다. 
 
- - *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
+- *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
- - *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
     
- 설치 폴더는 경우 *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, 확장이 Visual Studio에서 인식할 수는 있지만 기본적으로 비활성화 됩니다. 사용자를 사용 하 여 확장을 설정할 수 있습니다 **확장 및 업데이트**합니다. 
+  설치 폴더는 경우 *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, 확장이 Visual Studio에서 인식할 수는 있지만 기본적으로 비활성화 됩니다. 사용자를 사용 하 여 확장을 설정할 수 있습니다 **확장 및 업데이트**합니다. 
    
- 설치 폴더는 경우 *%vsinstalldir%\Common7\IDE\Extensions\\*, 확장은 기본적으로 사용 됩니다.  
+  설치 폴더는 경우 *%vsinstalldir%\Common7\IDE\Extensions\\*, 확장은 기본적으로 사용 됩니다.  
   
 > [!NOTE]
 >  합니다 **확장 및 업데이트** VSIX 패키지의 일부로 설치 되어 있지 않으면 확장에 액세스 하는 도구를 사용할 수 없습니다.  

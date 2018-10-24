@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18045c8b6c388839f09ba42284ab498caf11dbf5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866573"
 ---
 # <a name="item-definitions"></a>항목 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,11 +94,11 @@ ms.locfileid: "49182067"
 ## <a name="additive-and-multiple-definitions"></a>가산 및 다중 정의  
  정의를 추가하거나 여러 ItemDefinitionGroup을 사용할 때는 다음 사항에 유의하세요.  
   
--   추가 메타데이터 사양은 형식에 추가됩니다.  
+- 추가 메타데이터 사양은 형식에 추가됩니다.  
   
--   마지막 사양이 우선적으로 적용됩니다.  
+- 마지막 사양이 우선적으로 적용됩니다.  
   
- 여러 ItemDefinitionGroup이 있는 경우 각 후속 사양은 해당 메타데이터를 이전 정의에 추가합니다. 예를 들어:  
+  여러 ItemDefinitionGroup이 있는 경우 각 후속 사양은 해당 메타데이터를 이전 정의에 추가합니다. 예를 들어:  
   
 ```  
 <ItemDefinitionGroup>  

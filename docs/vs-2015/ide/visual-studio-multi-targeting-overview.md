@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857681"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 다중 대상 지정 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ ms.locfileid: "49277071"
 ## <a name="framework-targeting-features"></a>프레임워크 대상 지정 기능  
  프레임워크 대상 지정에는 다음 기능이 포함됩니다.  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 이전 버전을 대상으로 하는 프로젝트를 열면 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서는 프로젝트를 자동으로 업그레이드하거나 대상을 있는 그대로 유지할 수 있습니다.  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 이전 버전을 대상으로 하는 프로젝트를 열면 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서는 프로젝트를 자동으로 업그레이드하거나 대상을 있는 그대로 유지할 수 있습니다.  
   
--   프로젝트를 만들 경우 대상으로 지정할 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 버전을 지정할 수 있습니다.  
+- 프로젝트를 만들 경우 대상으로 지정할 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 버전을 지정할 수 있습니다.  
   
--   기존 프로젝트에서 대상으로 지정하는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 버전을 변경할 수 있습니다.  
+- 기존 프로젝트에서 대상으로 지정하는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 버전을 변경할 수 있습니다.  
   
--   같은 솔루션에 포함된 여러 프로젝트에서 각각 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 다른 버전을 대상으로 지정할 수 있습니다.  
+- 같은 솔루션에 포함된 여러 프로젝트에서 각각 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 다른 버전을 대상으로 지정할 수 있습니다.  
   
--   프로젝트에서 대상으로 지정하는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 버전을 변경하면 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서는 필요에 따라 참조 및 구성 파일을 변경합니다.  
+- 프로젝트에서 대상으로 지정하는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 버전을 변경하면 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서는 필요에 따라 참조 및 구성 파일을 변경합니다.  
   
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 이전 버전을 대상으로 지정하는 프로젝트 관련 작업을 할 경우 Visual Studio에서는 다음과 같이 개발 환경을 동적으로 변경합니다.  
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 이전 버전을 대상으로 지정하는 프로젝트 관련 작업을 할 경우 Visual Studio에서는 다음과 같이 개발 환경을 동적으로 변경합니다.  
   
--   **새 프로젝트** 대화 상자, **새 항목 추가** 대화 상자, **새 참조 추가** 대화 상자 및 **서비스 참조 추가** 대화 상자에서 항목을 필터링하여 대상 버전에서 사용할 수 없는 선택 항목을 생략합니다.  
+- **새 프로젝트** 대화 상자, **새 항목 추가** 대화 상자, **새 참조 추가** 대화 상자 및 **서비스 참조 추가** 대화 상자에서 항목을 필터링하여 대상 버전에서 사용할 수 없는 선택 항목을 생략합니다.  
   
--   **도구 상자**에서 사용자 지정 컨트롤을 필터링하여 대상 버전에서 사용할 수 없는 컨트롤을 제거하고 여러 컨트롤을 사용할 수 있을 경우에는 가장 최신 컨트롤만 표시합니다.  
+- **도구 상자**에서 사용자 지정 컨트롤을 필터링하여 대상 버전에서 사용할 수 없는 컨트롤을 제거하고 여러 컨트롤을 사용할 수 있을 경우에는 가장 최신 컨트롤만 표시합니다.  
   
--   IntelliSense를 필터링하여 대상 버전에서 사용할 수 없는 언어 기능을 생략합니다.  
+- IntelliSense를 필터링하여 대상 버전에서 사용할 수 없는 언어 기능을 생략합니다.  
   
--   **속성** 창에서 속성을 필터링하여 대상 버전에서 사용할 수 없는 속성을 생략합니다.  
+- **속성** 창에서 속성을 필터링하여 대상 버전에서 사용할 수 없는 속성을 생략합니다.  
   
--   메뉴 옵션을 필터링하여 대상 버전에서 사용할 수 없는 옵션을 생략합니다.  
+- 메뉴 옵션을 필터링하여 대상 버전에서 사용할 수 없는 옵션을 생략합니다.  
   
--   빌드에는 컴파일러 버전 및 대상 버전에 적절한 컴파일러 옵션을 사용합니다.  
+- 빌드에는 컴파일러 버전 및 대상 버전에 적절한 컴파일러 옵션을 사용합니다.  
   
 > [!NOTE]
 >  프레임워크 대상 지정을 수행해도 응용 프로그램이 제대로 실행되지 않을 수 있습니다. 응용 프로그램을 테스트하여 대상 버전에 대해 실행되는지 확인해야 합니다. .NET Framework 2.0 이전의 프레임워크 버전은 대상으로 지정할 수 없습니다.  

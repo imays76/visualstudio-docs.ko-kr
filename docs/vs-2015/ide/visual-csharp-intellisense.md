@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862205"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual C# IntelliSense는 편집기에서 코딩할 때와 [직접 실행 모드
 ## <a name="completion-lists"></a>완성 목록  
  Visual C#의 IntelliSense 완성 목록에는 멤버 목록, 단어 자동 완성 등의 토큰이 있습니다. 이를 통해 다음 항목에 빠르게 액세스할 수 있습니다.  
   
--   형식 또는 네임스페이스의 멤버  
+- 형식 또는 네임스페이스의 멤버  
   
--   변수, 명령 및 함수 이름  
+- 변수, 명령 및 함수 이름  
   
--   [코드 조각](#CodeSnippets),  
+- [코드 조각](#CodeSnippets),  
   
--   [언어 키워드](#Keywords),  
+- [언어 키워드](#Keywords),  
   
--   [확장명 메서드](#ExtensionMethods)  
+- [확장명 메서드](#ExtensionMethods)  
   
- 또한 C#의 완성 목록은 컨텍스트에 따라 관련이 없는 토큰을 필터링하고 토큰을 미리 선택할 정도로 스마트합니다. 자세한 내용은 [C#의 필터링 된 완성 목록](../misc/filtered-completion-lists-in-csharp.md) 하 고 [C#의 미리 선택 된 완성 목록 항목](../misc/pre-selected-completion-list-items-in-csharp.md)합니다.  
+  또한 C#의 완성 목록은 컨텍스트에 따라 관련이 없는 토큰을 필터링하고 토큰을 미리 선택할 정도로 스마트합니다. 자세한 내용은 [C#의 필터링 된 완성 목록](../misc/filtered-completion-lists-in-csharp.md) 하 고 [C#의 미리 선택 된 완성 목록 항목](../misc/pre-selected-completion-list-items-in-csharp.md)합니다.  
   
 ###  <a name="CodeSnippets"></a> 완성 목록의 코드 조각  
  Visual C#의 완성 목록에는 미리 정의된 코드 본문을 프로그램에 쉽게 삽입하도록 지원하는 코드 조각이 포함되어 있습니다. 코드 조각은 완성 목록에 코드 조각의 [Shortcut 요소(IntelliSense 코드 조각)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa)로 나타납니다.  Visual C#에서 기본적으로 사용할 수 있는 코드 조각에 대한 자세한 내용은 [Visual C# 코드 조각](../ide/visual-csharp-code-snippets.md)을 참조하세요.  
@@ -123,23 +123,23 @@ Visual C# IntelliSense는 편집기에서 코딩할 때와 [직접 실행 모드
   
  적절한 옵션을 표시하려면 다음 절차 중 하나를 사용할 수 있습니다.  
   
--   정의되지 않은 식별자를 클릭합니다. 짧은 밑줄이 가장 왼쪽 문자 아래에 나타납니다. 짧은 밑줄에 마우스 포인터를 놓으면 스마트 태그(아이콘)가 나타납니다. 스마트 태그를 클릭합니다.  
+- 정의되지 않은 식별자를 클릭합니다. 짧은 밑줄이 가장 왼쪽 문자 아래에 나타납니다. 짧은 밑줄에 마우스 포인터를 놓으면 스마트 태그(아이콘)가 나타납니다. 스마트 태그를 클릭합니다.  
   
--   정의되지 않은 식별자를 클릭한 다음 Ctrl+.(마침표)를 누릅니다.  
+- 정의되지 않은 식별자를 클릭한 다음 Ctrl+.(마침표)를 누릅니다.  
   
--   정의되지 않은 식별자를 마우스 오른쪽 단추로 클릭한 다음 **생성**을 클릭합니다.  
+- 정의되지 않은 식별자를 마우스 오른쪽 단추로 클릭한 다음 **생성**을 클릭합니다.  
   
- 표시되는 옵션에는 다음이 포함될 수 있습니다.  
+  표시되는 옵션에는 다음이 포함될 수 있습니다.  
   
--   **속성 스텁 생성**  
+- **속성 스텁 생성**  
   
--   **필드 스텁 생성**  
+- **필드 스텁 생성**  
   
--   **메서드 스텁 생성**  
+- **메서드 스텁 생성**  
   
--   **클래스 생성**  
+- **클래스 생성**  
   
--   **새 형식 생성**(클래스, 구조체, 인터페이스 또는 열거형의 경우)  
+- **새 형식 생성**(클래스, 구조체, 인터페이스 또는 열거형의 경우)  
   
 ## <a name="generate-event-handlers"></a>이벤트 처리기 생성  
  코드 편집기에서 IntelliSense는 메서드(이벤트 처리기)를 이벤트 필드에 연결하는 데 도움이 될 수 있습니다.  

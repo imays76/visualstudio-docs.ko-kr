@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eed16e010c4fc070b9cc8be57731c97c2f03b2ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862283"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML 동작 다이어그램: 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "49177842"
   
  다음 예제와 같이 동작 다이어그램을 사용하여 여러 유형의 프로세스를 설명할 수 있습니다.  
   
--   사용자와 시스템 간의 비즈니스 프로세스 또는 워크플로. 자세한 내용은 [사용자 요구 사항 모델](../modeling/model-user-requirements.md)합니다.  
+- 사용자와 시스템 간의 비즈니스 프로세스 또는 워크플로. 자세한 내용은 [사용자 요구 사항 모델](../modeling/model-user-requirements.md)합니다.  
   
--   사용 사례에서 수행된 단계. 자세한 내용은 [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)합니다.  
+- 사용 사례에서 수행된 단계. 자세한 내용은 [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)합니다.  
   
--   소프트웨어 프로토콜, 즉 구성 요소 간에 허용되는 상호 작용 시퀀스  
+- 소프트웨어 프로토콜, 즉 구성 요소 간에 허용되는 상호 작용 시퀀스  
   
--   소프트웨어 알고리즘  
+- 소프트웨어 알고리즘  
   
- 이 항목에서는 동작 다이어그램에서 사용할 수 있는 요소에 대해 설명합니다. 자세한 내용은 활동을 그리는 방법에 대 한 다이어그램 참조 [UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)합니다. UML 동작 다이어그램을 만들려면 합니다 **아키텍처** 메뉴에서 클릭 **새 UML 또는 레이어 다이어그램**합니다. 일반적 모델링 다이어그램을 그리는 방법에 대 한 자세한 내용은 참조 하세요. [편집 UML 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md)합니다.  
+  이 항목에서는 동작 다이어그램에서 사용할 수 있는 요소에 대해 설명합니다. 자세한 내용은 활동을 그리는 방법에 대 한 다이어그램 참조 [UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)합니다. UML 동작 다이어그램을 만들려면 합니다 **아키텍처** 메뉴에서 클릭 **새 UML 또는 레이어 다이어그램**합니다. 일반적 모델링 다이어그램을 그리는 방법에 대 한 자세한 내용은 참조 하세요. [편집 UML 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md)합니다.  
   
 ## <a name="reading-activity-diagrams"></a>동작 다이어그램 읽기  
  다음 섹션의 표에서는 동작 다이어그램에 사용할 수 있는 요소 및 주요 속성에 대해 설명합니다. 요소 속성의 전체 목록을 참조 하세요 [UML 동작 다이어그램 요소의 속성](../modeling/properties-of-elements-on-uml-activity-diagrams.md)합니다.  

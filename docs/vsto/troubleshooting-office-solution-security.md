@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 347cd6cfa1e773d3900e7294d691f061d91a762d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862933"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Office 솔루션 보안 문제 해결
   이 항목에서는 Office 솔루션 보안 작업을 수행할 때 발생할 수 있는 일반적인 문제를 해결 하기 위한 팁을 포함 합니다.  
@@ -32,17 +32,17 @@ ms.locfileid: "35675119"
   
  배포 매니페스트의 URL 영역 5 중 하나로 분류할 수 있습니다.  
   
--   내 컴퓨터  
+- 내 컴퓨터  
   
--   인터넷  
+- 인터넷  
   
--   로컬 인트라넷  
+- 로컬 인트라넷  
   
--   신뢰할 수 있는 사이트  
+- 신뢰할 수 있는 사이트  
   
--   제한 된 사이트  
+- 제한 된 사이트  
   
- 배포 매니페스트의 위치 제한 된 사이트 영역에 할당 되 면 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 솔루션을 설치 하지 않습니다. 위치 라고 하 고 수 하는 경우 신뢰할 수 있는, 사용자 수 제한 된 사이트 영역에서 위치를 제거 하 고 솔루션을 설치 합니다. 영역을 관리 하는 방법에 대 한 자세한 내용은 [ClickOnce 신뢰할 수 있는 게시자 구성](http://go.microsoft.com/fwlink/?LinkId=94774)합니다.  
+  배포 매니페스트의 위치 제한 된 사이트 영역에 할당 되 면 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 솔루션을 설치 하지 않습니다. 위치 라고 하 고 수 하는 경우 신뢰할 수 있는, 사용자 수 제한 된 사이트 영역에서 위치를 제거 하 고 솔루션을 설치 합니다. 영역을 관리 하는 방법에 대 한 자세한 내용은 [ClickOnce 신뢰할 수 있는 게시자 구성](http://go.microsoft.com/fwlink/?LinkId=94774)합니다.  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Internet Explorer 7 또는 Internet Explorer 보안 강화 구성을 설치 하는 경우 네트워크 파일 공유 또는 웹 위치에서 솔루션을 설치할 수 없습니다.  
  Internet Explorer 향상 된 보안 구성 (IEESC) Windows Server 2003 이상 버전에서는 및 Internet Explorer 7 이상 크게 인터넷을 탐색 하는 사용자의 기능을 제한 합니다. 사용자가 네트워크 파일 공유 또는 웹 위치에서 Office 솔루션을 설치 하려고 하면 다음 오류 메시지가 발생할 수 있습니다. "인증서 사용 에대한배포매니페스트에서명하기때문에이응용프로그램에서사용자지정기능이작동하지것입니다*SolutionName* 를 신뢰할 수 없습니다. 관리자에 게 문의에 게 문의 합니다. "  

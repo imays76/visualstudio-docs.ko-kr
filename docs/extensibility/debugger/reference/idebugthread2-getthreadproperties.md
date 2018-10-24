@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76b2f11e53f8fca5fdf277ce982bcb767d7c8828
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 169c33bc000e45ea44600b738a05bd25fd0f6a0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864588"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 이 스레드를 설명 하는 속성을 가져옵니다.  
@@ -54,7 +54,7 @@ int GetThreadProperties (
 ## <a name="remarks"></a>설명  
  이 메서드에서 반환 되는 정보는 일반적으로에 표시 된 **스레드** 디버그 창입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` 를 구현 하는 개체를 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 인터페이스입니다.  
   
 ```cpp  

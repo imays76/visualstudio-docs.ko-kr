@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862166"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>방법: 단독으로 키보드 사용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238526"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>키보드에서 도구 상자의 컨트롤을 디자이너에 추가하려면  
   
-1.  메뉴 모음에서 **보기**, **도구 상자**를 차례로 선택합니다.  
+1. 메뉴 모음에서 **보기**, **도구 상자**를 차례로 선택합니다.  
   
-2.  Ctrl+위쪽 화살표 또는 Ctrl+아래쪽 화살표 키를 선택하여 현재 도구 상자 탭의 섹션 간에 이동합니다.  
+2. Ctrl+위쪽 화살표 또는 Ctrl+아래쪽 화살표 키를 선택하여 현재 도구 상자 탭의 섹션 간에 이동합니다.  
   
-3.  위쪽 화살표 또는 **아래쪽 화살표** 키를 선택하여 컨트롤 간에 이동합니다.  
+3. 위쪽 화살표 또는 **아래쪽 화살표** 키를 선택하여 컨트롤 간에 이동합니다.  
   
-4.  컨트롤이 선택된 후 Enter 키를 선택합니다.  
+4. 컨트롤이 선택된 후 Enter 키를 선택합니다.  
   
- 컨트롤이 폼 또는 디자이너에 추가됩니다.  
+   컨트롤이 폼 또는 디자이너에 추가됩니다.  
   
 ## <a name="dialog-box-options"></a>대화 상자 옵션  
  키보드를 사용하여 대화 상자에서 옵션 간에 이동하고 옵션 설정을 변경할 수 있습니다.  

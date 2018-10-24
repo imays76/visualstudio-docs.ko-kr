@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864675"
 ---
 # <a name="extend-projects"></a>프로젝트를 확장 합니다.
 프로젝트 및 솔루션은 Visual Studio 코드 및 리소스 파일을 컴파일 및 배포 단위로 구성 하는 방법입니다. 프로젝트에 대 한 자세한 정보를 찾을 수 있습니다 [프로젝트 (Visual Studio SDK)](../extensibility/extending-projects.md)합니다.  
@@ -36,7 +36,7 @@ ms.locfileid: "42902821"
  사용자 지정 프로젝트 시스템을 만드는 방법을 설명 합니다.  
   
  [프로젝트 파일에서 데이터를 저장 합니다.](../extensibility/saving-data-in-project-files.md)  
- 설명 프로젝트에 추가 하는 방법 (*.* proj *) 파일입니다.  
+ 설명 프로젝트에 추가 하는 방법 (<em>.</em> proj *) 파일입니다.  
   
  [런타임에 프로젝트의 하위 형식 확인](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  런타임에 프로젝트의 하위 형식을 확인 하는 방법에 설명 합니다.  

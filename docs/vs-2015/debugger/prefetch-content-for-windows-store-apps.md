@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9329cad2f0125288aeea146070188d023d1a126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1da34d2baba519f9b8fa8cfde5756e8fccdfe7b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868731"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Windows 스토어 앱용 콘텐츠 프리페치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Windows에만 적용] (.. /Image/windows_only_content.png "windows_only_content"
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>ContentPrefetcher 지정 리소스를 강제로 미리 로드하려면  
  이 절차는 이미 ContentPrefetcher 기능을 설정하고 응용 프로그램 프로젝트에서 미리 로드할 콘텐츠 URI를 지정했다는 가정 하에 진행됩니다. 시작 하 고 선택 하기 전에 앱을 중지 해야 지정된 리소스가 새롭거나 수정 된 경우 콘텐츠를 미리 로드 하도록 합니다 **Windows 스토어 응용 프로그램 프리페치 트리거** 명령입니다. 먼저 응용 프로그램을 실행하여 URI를 등록합니다. **Windows 스토어 응용 프로그램 프리페치 트리거** 명령이 ContentPrefetcher의 콘텐츠를 다운로드 및 캐시에 추가 강제로 수행 합니다. 후속 응용 프로그램 실행 시 콘텐츠가 미리 로드되었다고 가정할 수 있습니다.  
   
-1.  응용 프로그램을 시작하여 프리페치 콘텐츠 URI를 앱과 함께 등록합니다. 에 **디버그** 메뉴 선택 **디버깅 시작** (바로 가기 키: F5).  
+1. 응용 프로그램을 시작하여 프리페치 콘텐츠 URI를 앱과 함께 등록합니다. 에 **디버그** 메뉴 선택 **디버깅 시작** (바로 가기 키: F5).  
   
-2.  에 **디버그** 메뉴 선택 **디버깅 중지** (바로 가기 키: Shift + F5).  
+2. 에 **디버그** 메뉴 선택 **디버깅 중지** (바로 가기 키: Shift + F5).  
   
-3.  에 **디버그** 메뉴 선택 **기타 디버그 대상** 를 선택한 후 **Windows 스토어 응용 프로그램 프리페치 트리거**합니다.  
+3. 에 **디버그** 메뉴 선택 **기타 디버그 대상** 를 선택한 후 **Windows 스토어 응용 프로그램 프리페치 트리거**합니다.  
   
- 이제 프리페치된 웹 리소스로 응용 프로그램을 디버그, 테스트 또는 분석할 수 있습니다.  
+   이제 프리페치된 웹 리소스로 응용 프로그램을 디버그, 테스트 또는 분석할 수 있습니다.  
   
 > [!NOTE]
 >  지정된 웹 콘텐츠를 추가 또는 수정할 때마다 이러한 단계를 반복합니다.  
