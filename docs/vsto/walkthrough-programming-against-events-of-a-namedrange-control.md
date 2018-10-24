@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9810ba5086d3de8f5d3ad91bc2c62e0d30d349
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812520"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>연습: NamedRange 컨트롤의 이벤트 프로그래밍
   이 연습에서는 추가 하는 방법을 보여 줍니다.는 <xref:Microsoft.Office.Tools.Excel.NamedRange> Microsoft Office Excel 워크시트 및 Visual Studio에서 Office 개발 도구를 사용 하 여 해당 이벤트에 대 한 프로그램을 컨트롤 합니다.  
@@ -87,15 +87,15 @@ ms.locfileid: "35675341"
   
 ### <a name="to-add-text-to-your-worksheet"></a>워크시트에 텍스트를 추가 하려면  
   
-1.  셀에서 **A1**, 다음 텍스트를 입력 합니다.  
+1. 셀에서 **A1**, 다음 텍스트를 입력 합니다.  
   
-     **이것이 NamedRange 컨트롤의 예입니다.**  
+    **이것이 NamedRange 컨트롤의 예입니다.**  
   
-2.  셀에서 **A3** (왼쪽에 `namedRange2`), 다음 텍스트를 입력 합니다.  
+2. 셀에서 **A3** (왼쪽에 `namedRange2`), 다음 텍스트를 입력 합니다.  
   
-     **이벤트:**  
+    **이벤트:**  
   
- 다음 섹션에서는 텍스트를 삽입 하는 코드를 작성 합니다 `namedRange2` 의 속성을 수정 하 고는 `namedRange2` 컨트롤에 대 한 응답에는 <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, 및 <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> 이벤트의 `namedRange1`합니다.  
+   다음 섹션에서는 텍스트를 삽입 하는 코드를 작성 합니다 `namedRange2` 의 속성을 수정 하 고는 `namedRange2` 컨트롤에 대 한 응답에는 <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, 및 <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> 이벤트의 `namedRange1`합니다.  
   
 ## <a name="add-code-to-respond-to-the-beforedoubleclick-event"></a>BeforeDoubleClick 이벤트에 응답 하는 코드를 추가 합니다.  
   

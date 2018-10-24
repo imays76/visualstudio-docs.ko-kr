@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 950b5bb005d1c414308ed0db053be1c1c0c41113
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eb77905968cd40bffa400ebf8e68f6a7fd7df4c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822854"
 ---
 # <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
 소스 파일 이름을 검색합니다.  
@@ -37,7 +37,7 @@ HRESULT get_fileName (
  [out] 소스 파일 이름을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
