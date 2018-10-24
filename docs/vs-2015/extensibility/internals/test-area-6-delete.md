@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838753"
 ---
 # <a name="test-area-6-delete"></a>테스트 영역 6: 삭제
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49261816"
   
  다음은 삭제할 수 있는 항목의 목록.  
   
--   파일  
+- 파일  
   
--   폴더  
+- 폴더  
   
--   프로젝트  
+- 프로젝트  
   
- 프로젝트 형식에 따라 수 있을 **제거할** (디스크의 파일을 리프) 프로젝트 또는 **삭제** 프로젝트 (디스크의 파일을 제거 합니다.). 프로젝트 또는 항목에서 두 동작 모두 제거 **솔루션 탐색기**합니다.  
+  프로젝트 형식에 따라 수 있을 **제거할** (디스크의 파일을 리프) 프로젝트 또는 **삭제** 프로젝트 (디스크의 파일을 제거 합니다.). 프로젝트 또는 항목에서 두 동작 모두 제거 **솔루션 탐색기**합니다.  
   
 ## <a name="expected-behavior"></a>예상된 된 동작  
  Delete 테스트 영역에서 테스트 사례에 대해 예상 되는 동작은 다음과 같습니다.  

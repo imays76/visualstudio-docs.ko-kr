@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bc48a5f2c5bd05816ca11aac89d6dd63b9fd78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833402"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 및 ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ VSPerfCmd.exe **ThreadOff** 및 **ThreadOn** 하위 명령은 계측 방법을 �
   
  **ThreadOff** 및 **ThreadOn** 하위 명령은 프로파일러 API 함수에 의해 조작되는 스레드 시작/중지에도 영향을 줍니다.  
   
--   **ThreadOff**는 스레드 Start/Stop 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
+- **ThreadOff**는 스레드 Start/Stop 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
   
--   **ThreadOn**은 스레드 Start/Stop 카운트를 즉시 1로 설정하므로 프로파일링을 다시 시작합니다.  
+- **ThreadOn**은 스레드 Start/Stop 카운트를 즉시 1로 설정하므로 프로파일링을 다시 시작합니다.  
   
- 자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
+  자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
   
 ## <a name="syntax"></a>구문  
   

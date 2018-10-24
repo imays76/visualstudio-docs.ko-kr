@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836777"
 ---
 # <a name="source-control-integration-overview"></a>소스 제어 통합 개요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49224187"
   
  원본 제어 플러그 인 API를 사용 하 여 플러그 인 소스 제어를 구현 하려면 다음이 단계를 수행 합니다.  
   
-1.  에 지정 된 함수를 구현 하는 DLL을 만드는 [소스 제어 플러그 인](../../extensibility/source-control-plug-ins.md)합니다.  
+1. 에 지정 된 함수를 구현 하는 DLL을 만드는 [소스 제어 플러그 인](../../extensibility/source-control-plug-ins.md)합니다.  
   
-2.  적절 한 레지스트리 항목을 만들어 DLL을 등록 (에 설명 된 [방법: 소스 제어 플러그 인을 설치](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. 적절 한 레지스트리 항목을 만들어 DLL을 등록 (에 설명 된 [방법: 소스 제어 플러그 인을 설치](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
-3.  UI 및 표시 (Visual Studio 구성 요소 소스 제어 플러그 인을 통해 소스 제어 기능을 처리 하는) 소스 제어 어댑터 패키지에서 메시지가 표시 되 면 도우미 만들기  
+3. UI 및 표시 (Visual Studio 구성 요소 소스 제어 플러그 인을 통해 소스 제어 기능을 처리 하는) 소스 제어 어댑터 패키지에서 메시지가 표시 되 면 도우미 만들기  
   
- 원본 제어 명령에 대 한 응답으로 Visual Studio IDE 기본 작업에 대 한 표준 UI가 표시 한 다음 정보를 전달 소스 제어 플러그 인 원본 제어 플러그 인 API에 정의 된 함수를 통해. 고급 옵션을 소스 제어 플러그 인에 호출할 수는 자체 UI를 표시 하도록 예를 들어, 소스 제어 프로젝트에 대 한 검색 합니다. 즉, 사용자 소스 제어를 사용 하 여 처리할 때 두 가지 다를 수 있는 스타일의 UI 사용 하 여 표시 될 수 있습니다: Visual Studio에서 제공 하는 UI 및 소스 제어 플러그 인을 제공 하는 UI입니다. 고급 소스 제어 작업을 사용 하 여 가장 눈에 띄는입니다.  
+   원본 제어 명령에 대 한 응답으로 Visual Studio IDE 기본 작업에 대 한 표준 UI가 표시 한 다음 정보를 전달 소스 제어 플러그 인 원본 제어 플러그 인 API에 정의 된 함수를 통해. 고급 옵션을 소스 제어 플러그 인에 호출할 수는 자체 UI를 표시 하도록 예를 들어, 소스 제어 프로젝트에 대 한 검색 합니다. 즉, 사용자 소스 제어를 사용 하 여 처리할 때 두 가지 다를 수 있는 스타일의 UI 사용 하 여 표시 될 수 있습니다: Visual Studio에서 제공 하는 UI 및 소스 제어 플러그 인을 제공 하는 UI입니다. 고급 소스 제어 작업을 사용 하 여 가장 눈에 띄는입니다.  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>소스 제어 플러그 인을 구현 하는 데 단점  
   

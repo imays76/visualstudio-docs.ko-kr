@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837565"
 ---
 # <a name="customizing-deletion-behavior"></a>삭제 동작 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ ms.locfileid: "49202763"
   
 #### <a name="to-set-delete-propagation"></a>삭제 전파를 설정하려면  
   
-1.  DSL 정의 다이어그램에서 선택 합니다 *역할* 를 삭제를 전파 합니다. 역할은 도메인 관계 상자 왼쪽이나 오른쪽의 선으로 표시됩니다.  
+1. DSL 정의 다이어그램에서 선택 합니다 *역할* 를 삭제를 전파 합니다. 역할은 도메인 관계 상자 왼쪽이나 오른쪽의 선으로 표시됩니다.  
   
-     예를 들어 앨범을 삭제할 때마다 관련 아티스트도 삭제되도록 지정하려면 Artist 도메인 클래스에 연결된 역할을 선택합니다.  
+    예를 들어 앨범을 삭제할 때마다 관련 아티스트도 삭제되도록 지정하려면 Artist 도메인 클래스에 연결된 역할을 선택합니다.  
   
-2.  속성 창에서 설정 된 **Propagates Delete** 속성입니다.  
+2. 속성 창에서 설정 된 **Propagates Delete** 속성입니다.  
   
-3.  F5 키를 누르고 다음 사항을 확인합니다.  
+3. F5 키를 누르고 다음 사항을 확인합니다.  
   
-    -   이 관계의 인스턴스를 삭제하면 선택한 역할의 요소도 삭제됩니다.  
+   -   이 관계의 인스턴스를 삭제하면 선택한 역할의 요소도 삭제됩니다.  
   
-    -   반대쪽 역할의 요소를 삭제하면 이 관계 인스턴스가 삭제되며 이 역할에서 관련된 요소도 삭제됩니다.  
+   -   반대쪽 역할의 요소를 삭제하면 이 관계 인스턴스가 삭제되며 이 역할에서 관련된 요소도 삭제됩니다.  
   
- 확인할 수도 있습니다는 **Propagates Delete** 옵션을 **DSL 정보** 창입니다. 도메인 클래스를 선택 하 고 DSL 세부 정보 창에서 엽니다는 **Delete Behavior** 옆쪽 창에 단추를 클릭 하 여 페이지입니다. 합니다 **전파** 각 관계의 반대 역할에 대 한 옵션이 표시 됩니다. **스타일 삭제** 열에 표시 여부를 합니다 **전파** 옵션 기본 설정 되어 있지만 별도 영향을 주지 없습니다.  
+   확인할 수도 있습니다는 **Propagates Delete** 옵션을 **DSL 정보** 창입니다. 도메인 클래스를 선택 하 고 DSL 세부 정보 창에서 엽니다는 **Delete Behavior** 옆쪽 창에 단추를 클릭 하 여 페이지입니다. 합니다 **전파** 각 관계의 반대 역할에 대 한 옵션이 표시 됩니다. **스타일 삭제** 열에 표시 여부를 합니다 **전파** 옵션 기본 설정 되어 있지만 별도 영향을 주지 없습니다.  
   
 ## <a name="delete-propagation-by-using-program-code"></a>프로그램 코드를 사용하여 삭제 전파  
  DSL 정의 파일의 옵션을 사용하는 경우 삭제가 바로 인접한 항목으로 전파되는지 여부만을 선택할 수 있습니다. 더 복잡한 삭제 전파 체계를 구현하려는 경우에는 프로그램 코드를 작성하면 됩니다.  
@@ -138,17 +138,17 @@ partial class MusicLibDeleteClosure
 ##  <a name="ondeleting"></a> OnDeleting 및 OnDeleted 사용  
  도메인 클래스나 도메인 관계에서 `OnDeleting()` 또는 `OnDeleted()`를 재정의할 수 있습니다.  
   
-1.  요소를 삭제하려고 하면 해당 관계가 끊기기 전에 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>이 호출됩니다. 이 시점에서는 해당 요소와 다른 요소 간에 계속 이동할 수 있으며 해당 요소는 아직 `store.ElementDirectory`에 있습니다.  
+1. 요소를 삭제하려고 하면 해당 관계가 끊기기 전에 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>이 호출됩니다. 이 시점에서는 해당 요소와 다른 요소 간에 계속 이동할 수 있으며 해당 요소는 아직 `store.ElementDirectory`에 있습니다.  
   
-     여러 요소를 동시에 삭제하는 경우에는 삭제를 수행하기 전에 모든 요소에 대해 OnDeleting이 호출됩니다.  
+    여러 요소를 동시에 삭제하는 경우에는 삭제를 수행하기 전에 모든 요소에 대해 OnDeleting이 호출됩니다.  
   
-     `IsDeleting`이 true가 됩니다.  
+    `IsDeleting`이 true가 됩니다.  
   
-2.  요소가 삭제되면 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>가 호출됩니다. 삭제된 요소는 필요 시 Undo를 수행할 수 있도록 CLR 힙에 남아 있지만 다른 요소에서 연결이 해제되며 `store.ElementDirectory`에서 제거됩니다. 관계에 대 한 역할은 이전 역할 수행자를 계속 참조 합니다.`IsDeleted` 그렇습니다.  
+2. 요소가 삭제되면 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>가 호출됩니다. 삭제된 요소는 필요 시 Undo를 수행할 수 있도록 CLR 힙에 남아 있지만 다른 요소에서 연결이 해제되며 `store.ElementDirectory`에서 제거됩니다. 관계에 대 한 역할은 이전 역할 수행자를 계속 참조 합니다.`IsDeleted` 그렇습니다.  
   
-3.  사용자가 요소를 만든 후 Undo를 호출할 때와 Redo에서 이전 삭제를 반복할 때 OnDeleting 및 OnDeleted가 호출됩니다. 이러한 경우 store 요소를 업데이트하지 않으려면 `this.Store.InUndoRedoOrRollback`을 사용합니다. 자세한 내용은 [방법: 트랜잭션을 사용 하 여 모델 업데이트](../modeling/how-to-use-transactions-to-update-the-model.md)합니다.  
+3. 사용자가 요소를 만든 후 Undo를 호출할 때와 Redo에서 이전 삭제를 반복할 때 OnDeleting 및 OnDeleted가 호출됩니다. 이러한 경우 store 요소를 업데이트하지 않으려면 `this.Store.InUndoRedoOrRollback`을 사용합니다. 자세한 내용은 [방법: 트랜잭션을 사용 하 여 모델 업데이트](../modeling/how-to-use-transactions-to-update-the-model.md)합니다.  
   
- 예를 들어 다음 코드는 마지막 자식 Song을 삭제하면 Album을 삭제합니다.  
+   예를 들어 다음 코드는 마지막 자식 Song을 삭제하면 Album을 삭제합니다.  
   
 ```  
   

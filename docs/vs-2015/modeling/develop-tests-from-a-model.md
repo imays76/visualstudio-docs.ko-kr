@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825119"
 ---
 # <a name="develop-tests-from-a-model"></a>모델에서 테스트 개발
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ ms.locfileid: "49236758"
   
 ###### <a name="to-link-tests-to-a-use-case"></a>사용 사례에 테스트를 연결하려면  
   
-1.  [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다. 내용은 작업을 수행 하는 방법을 알아보려면 [응용 프로그램 테스트](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)합니다.  
+1. [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다. 내용은 작업을 수행 하는 방법을 알아보려면 [응용 프로그램 테스트](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)합니다.  
   
-     만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]에서 작업 항목이 됩니다. 프로젝트가 [!INCLUDE[esprfound](../includes/esprfound-md.md)]에서 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [Visual Studio Team Services 또는 Team Foundation Server를 사용 하 여 작업 추적](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)합니다.  
+    만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]에서 작업 항목이 됩니다. 프로젝트가 [!INCLUDE[esprfound](../includes/esprfound-md.md)]에서 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [Visual Studio Team Services 또는 Team Foundation Server를 사용 하 여 작업 추적](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)합니다.  
   
-2.  모델에서 하나 이상의 사용 사례에 요구 사항 작업 항목을 연결합니다.  
+2. 모델에서 하나 이상의 사용 사례에 요구 사항 작업 항목을 연결합니다.  
   
-     사용 사례 다이어그램에서 사용 사례를 마우스 오른쪽 단추로 클릭 하 고 클릭 **작업 항목에 링크**합니다. 자세한 내용은 [모델 요소에 연결 하 고 작업 항목](../modeling/link-model-elements-and-work-items.md)합니다.  
+    사용 사례 다이어그램에서 사용 사례를 마우스 오른쪽 단추로 클릭 하 고 클릭 **작업 항목에 링크**합니다. 자세한 내용은 [모델 요소에 연결 하 고 작업 항목](../modeling/link-model-elements-and-work-items.md)합니다.  
   
-3.  테스트 도구 모음에 사용 사례를 확인하는 테스트 사례를 추가합니다.  
+3. 테스트 도구 모음에 사용 사례를 확인하는 테스트 사례를 추가합니다.  
   
- 일반적으로 각 사용자 스토리 또는 요구 사항 작업 항목은 모델의 여러 사용 사례에 연결되며, 각 사용 사례는 여러 사용자 스토리 또는 요구 사항에 연결됩니다. 이는 각 사용자 스토리 또는 요구 사항이 여러 사용 사례를 개발하는 작업 집합을 포함하기 때문입니다. 예를 들어 프로젝트의 초기 반복에서 고객이 카탈로그에서 항목을 선택하고 배달시킬 수 있는 기본 사용자 스토리를 개발할 수 있습니다. 이후 반복에서는 사용자가 주문을 완료할 때 대금을 지불하고 공급자가 상품을 보낸 후 돈을 받는 스토리일 수 있습니다.  각 스토리에서 상품 주문 사용 사례의 사후 조건에 절을 추가합니다.  
+   일반적으로 각 사용자 스토리 또는 요구 사항 작업 항목은 모델의 여러 사용 사례에 연결되며, 각 사용 사례는 여러 사용자 스토리 또는 요구 사항에 연결됩니다. 이는 각 사용자 스토리 또는 요구 사항이 여러 사용 사례를 개발하는 작업 집합을 포함하기 때문입니다. 예를 들어 프로젝트의 초기 반복에서 고객이 카탈로그에서 항목을 선택하고 배달시킬 수 있는 기본 사용자 스토리를 개발할 수 있습니다. 이후 반복에서는 사용자가 주문을 완료할 때 대금을 지불하고 공급자가 상품을 보낸 후 돈을 받는 스토리일 수 있습니다.  각 스토리에서 상품 주문 사용 사례의 사후 조건에 절을 추가합니다.  
   
- 사용 사례 다이어그램의 별도 주석에 이러한 절을 작성하여 요구 사항과 사후 조건의 절 간에 별도의 링크를 만들 수 있습니다. 각 주석을 요구 사항 작업 항목에 연결하고, 주석을 다이어그램의 사용 사례에 연결할 수 있습니다.  
+   사용 사례 다이어그램의 별도 주석에 이러한 절을 작성하여 요구 사항과 사후 조건의 절 간에 별도의 링크를 만들 수 있습니다. 각 주석을 요구 사항 작업 항목에 연결하고, 주석을 다이어그램의 사용 사례에 연결할 수 있습니다.  
   
 ### <a name="base-tests-on-the-requirements-types"></a>요구 사항 형식에 따른 테스트  
  요구 사항 모델의 형식, 즉 클래스, 인터페이스 및 열거형은 사용자가 비즈니스에 대해 생각하고 전달하는 방식과 관련해서 개념 및 관계를 설명합니다. 시스템의 내부 디자인에만 관련된 형식은 제외됩니다.  

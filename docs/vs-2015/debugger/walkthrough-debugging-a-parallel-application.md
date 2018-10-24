@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823660"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>연습: 병렬 응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ ms.locfileid: "49279775"
   
 #### <a name="to-create-the-sample-project"></a>샘플 프로젝트를 만들려면  
   
-1.  Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-2.  에 **설치 된 템플릿** 창, Visual C#, Visual Basic 또는 Visual c + +를 선택 합니다. 관리되는 언어의 경우 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]이 프레임워크 상자에 표시되는지 확인합니다.  
+2. 에 **설치 된 템플릿** 창, Visual C#, Visual Basic 또는 Visual c + +를 선택 합니다. 관리되는 언어의 경우 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]이 프레임워크 상자에 표시되는지 확인합니다.  
   
-3.  선택 **콘솔 응용 프로그램** 을 클릭 한 다음 **확인**합니다. 기본값인 Debug 구성을 유지합니다.  
+3. 선택 **콘솔 응용 프로그램** 을 클릭 한 다음 **확인**합니다. 기본값인 Debug 구성을 유지합니다.  
   
-4.  프로젝트에서 .cpp, .cs 또는 .vb 코드 파일을 엽니다. 내용을 삭제하여 빈 코드 파일을 만듭니다.  
+4. 프로젝트에서 .cpp, .cs 또는 .vb 코드 파일을 엽니다. 내용을 삭제하여 빈 코드 파일을 만듭니다.  
   
-5.  선택한 언어의 다음 코드를 빈 코드 파일에 붙여 넣습니다.  
+5. 선택한 언어의 다음 코드를 빈 코드 파일에 붙여 넣습니다.  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  에 **파일** 메뉴에서 클릭 **모두 저장**합니다.  
+6. 에 **파일** 메뉴에서 클릭 **모두 저장**합니다.  
   
-2.  에 **빌드할** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.  
+7. 에 **빌드할** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.  
   
-     `Debugger.Break`(C++ 샘플의 경우 `DebugBreak`)가 4번 호출됩니다. 따라서 중단점을 삽입할 필요가 없으며 응용 프로그램을 실행하기만 하면 디버거에서 응용 프로그램이 최대 4번 중단됩니다.  
+    `Debugger.Break`(C++ 샘플의 경우 `DebugBreak`)가 4번 호출됩니다. 따라서 중단점을 삽입할 필요가 없으며 응용 프로그램을 실행하기만 하면 디버거에서 응용 프로그램이 최대 4번 중단됩니다.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>병렬 스택 창 사용: 스레드 뷰  
  **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다. 첫 번째 중단점이 적중될 때까지 기다립니다.  
@@ -153,33 +153,33 @@ ms.locfileid: "49279775"
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>3번째 중단점까지 실행을 계속하려면  
   
-1.  3 번째 중단점이 적중 될 때까지 실행을 다시 시작 합니다 **디버그** 메뉴에서 클릭 **계속**합니다.  
+1. 3 번째 중단점이 적중 될 때까지 실행을 다시 시작 합니다 **디버그** 메뉴에서 클릭 **계속**합니다.  
   
-     여러 스레드가 동일한 메서드에 있지만 메서드가 호출 스택의 시작 지점에 있지 않은 경우 메서드가 서로 다른 상자에 나타납니다. 현재 중단점의 예는 S.L입니다. 이 중단점은 3개의 스레드를 포함하며 3개의 상자에 나타납니다. S.L을 두 번 클릭합니다.  
+    여러 스레드가 동일한 메서드에 있지만 메서드가 호출 스택의 시작 지점에 있지 않은 경우 메서드가 서로 다른 상자에 나타납니다. 현재 중단점의 예는 S.L입니다. 이 중단점은 3개의 스레드를 포함하며 3개의 상자에 나타납니다. S.L을 두 번 클릭합니다.  
   
-     ![병렬 스택 창의 실행 경로](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![병렬 스택 창의 실행 경로](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     다른 두 상자에서 S.L이 굵게 표시되므로 해당 위치를 확인할 수 있습니다. 확인 하려는 경우는 프레임 s.l이 호출 되는 프레임과 호출을 클릭 합니다 **메서드 뷰 설정/해제** 도구 모음 단추입니다. 다음 그림에서는 메서드 뷰를 표시 합니다 **병렬 스택** 창입니다.  
+    다른 두 상자에서 S.L이 굵게 표시되므로 해당 위치를 확인할 수 있습니다. 확인 하려는 경우는 프레임 s.l이 호출 되는 프레임과 호출을 클릭 합니다 **메서드 뷰 설정/해제** 도구 모음 단추입니다. 다음 그림에서는 메서드 뷰를 표시 합니다 **병렬 스택** 창입니다.  
   
-     ![병렬 스택 창의 메서드 뷰](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![병렬 스택 창의 메서드 뷰](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     다이어그램이 선택한 메서드를 축으로 회전하고 뷰 중간에 있는 자체 상자에 배치됩니다. 호출 수신자와 호출자가 맨 위와 맨 아래에 나타납니다. 클릭 합니다 **메서드 뷰 설정/해제** 단추 다시이 모드를 종료 합니다.  
+    다이어그램이 선택한 메서드를 축으로 회전하고 뷰 중간에 있는 자체 상자에 배치됩니다. 호출 수신자와 호출자가 맨 위와 맨 아래에 나타납니다. 클릭 합니다 **메서드 뷰 설정/해제** 단추 다시이 모드를 종료 합니다.  
   
-     바로 가기 메뉴를 **병렬 스택** 창도는 다음과 같은 다른 항목입니다.  
+    바로 가기 메뉴를 **병렬 스택** 창도는 다음과 같은 다른 항목입니다.  
   
-    -   **16 진수 표시** 10 진수 및 16 진수는 도구 설명의 번호를 설정/해제 합니다.  
+   - **16 진수 표시** 10 진수 및 16 진수는 도구 설명의 번호를 설정/해제 합니다.  
   
-    -   **기호 로드 정보** 하 고 **기호 설정** 해당 대화 상자를 엽니다.  
+   - **기호 로드 정보** 하 고 **기호 설정** 해당 대화 상자를 엽니다.  
   
-    -   **소스 코드로 이동** 하 고 **디스어셈블리로 이동** 편집기에서 선택한 메서드로 이동 합니다.  
+   - **소스 코드로 이동** 하 고 **디스어셈블리로 이동** 편집기에서 선택한 메서드로 이동 합니다.  
   
-    -   **외부 코드 표시** 는 사용자 코드에 없는 경우에 모든 프레임을 표시 합니다. 이 메뉴 항목을 사용하면 추가 프레임을 수용할 수 있게 다이어그램이 확장됩니다. 추가 프레임에 대한 기호가 없어서 프레임이 흐리게 표시될 수 있습니다.  
+   - **외부 코드 표시** 는 사용자 코드에 없는 경우에 모든 프레임을 표시 합니다. 이 메뉴 항목을 사용하면 추가 프레임을 수용할 수 있게 다이어그램이 확장됩니다. 추가 프레임에 대한 기호가 없어서 프레임이 흐리게 표시될 수 있습니다.  
   
      큰 다이어그램이 있는 경우 다음 중단점으로 한 단계씩 코드를 실행할 때 뷰가 현재 스레드의 활성 스택 프레임(중단점을 처음 적중하는 스레드)으로 자동 스크롤되게 할 수 있습니다. 에 **병렬 스택** 창 있는지 확인 합니다 **현재 스택 프레임으로 자동 스크롤** 단추가 도구 모음에서 합니다.  
   
      ![병렬 스택 창의 자동 스크롤](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  계속 하기 전에 합니다 **병렬 스택** 창에서 모든 서 왼쪽 및 아래쪽으로 스크롤합니다.  
+2. 계속 하기 전에 합니다 **병렬 스택** 창에서 모든 서 왼쪽 및 아래쪽으로 스크롤합니다.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>4번째 중단점까지 실행을 계속하려면  
   

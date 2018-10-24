@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f04ea48505bee0f27fdeaa62458aa7ef8df915e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6aa1f4027746ebf1304362217c16fffa7e68a75d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822413"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>옵션, 텍스트 편집기, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ ms.locfileid: "49279637"
   
  미리 정의된 참조 그룹을 사용하여 다른 JavaScript 프로젝트의 범위에 있는 특정 IntelliSense .js 파일을 지정할 수 있습니다. 다음 네 가지 참조 그룹을 사용할 수 있습니다.  
   
--   암시적(Windows *버전*), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 앱용 이 그룹에 포함된 파일은 JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 앱용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
+- 암시적(Windows *버전*), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 앱용 이 그룹에 포함된 파일은 JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 앱용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
   
--   암시적(웹), HTML5 프로젝트용 이 그룹에 포함된 파일은 이러한 프로젝트 형식용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
+- 암시적(웹), HTML5 프로젝트용 이 그룹에 포함된 파일은 이러한 프로젝트 형식용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
   
--   전용 근로자 참조 그룹, HTML5 웹 작업자용 이 그룹에 지정된 파일은 전용 근로자 참조 그룹을 명시적으로 참조하는 .js 파일 범위에 속합니다.  
+- 전용 근로자 참조 그룹, HTML5 웹 작업자용 이 그룹에 지정된 파일은 전용 근로자 참조 그룹을 명시적으로 참조하는 .js 파일 범위에 속합니다.  
   
--   일반, 다른 JavaScript 프로젝트 형식용  
+- 일반, 다른 JavaScript 프로젝트 형식용  
   
- **포함된 파일**  
- 이 옵션은 언어 서비스 컨텍스트에 로드되는 파일의 순서를 지정합니다. **제거**, **위로 이동**및 **아래로 이동** 단추를 사용하여 이 순서를 구성할 수 있습니다. IntelliSense가 제대로 작동하려면 다른 파일에 종속된 파일은 다른 파일 뒤에 로드해야 합니다.  
+  **포함된 파일**  
+  이 옵션은 언어 서비스 컨텍스트에 로드되는 파일의 순서를 지정합니다. **제거**, **위로 이동**및 **아래로 이동** 단추를 사용하여 이 순서를 구성할 수 있습니다. IntelliSense가 제대로 작동하려면 다른 파일에 종속된 파일은 다른 파일 뒤에 로드해야 합니다.  
   
 > [!CAUTION]
 >  하나의 개체가 두 개 이상의 암시적 참조에서 조건 없이 정의된 경우, 이 목록의 마지막 참조가 개체 정의에 사용됩니다.  

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837583"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>XAML 디자이너에서 프로젝트 코드 디버그 또는 사용하지 않도록 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ ms.locfileid: "49306373"
   
  프로젝트 코드는 다음을 포함합니다.  
   
--   사용자 지정 컨트롤 및 사용자 지정 컨트롤  
+- 사용자 지정 컨트롤 및 사용자 지정 컨트롤  
   
--   클래스 라이브러리  
+- 클래스 라이브러리  
   
--   값 변환기  
+- 값 변환기  
   
--   프로젝트 코드에서 생성된 디자인 타임 데이터에 대한 바인딩  
+- 프로젝트 코드에서 생성된 디자인 타임 데이터에 대한 바인딩  
   
- 프로젝트 코드를 사용하지 않도록 설정한 경우 Visual Studio에서 데이터를 더 이상 사용할 수 없는 바인딩에 대한 속성 이름과 같은 자리 표시자를 보여 주거나 더 이상 실행하지 않는 컨트롤에 대한 자리 표시자를 보여 줍니다.  
+  프로젝트 코드를 사용하지 않도록 설정한 경우 Visual Studio에서 데이터를 더 이상 사용할 수 없는 바인딩에 대한 속성 이름과 같은 자리 표시자를 보여 주거나 더 이상 실행하지 않는 컨트롤에 대한 자리 표시자를 보여 줍니다.  
   
- ![처리되지 않은 예외 대화 상자](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![처리되지 않은 예외 대화 상자](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>프로젝트 코드가 예외를 발생시키는지 확인하려면  
   

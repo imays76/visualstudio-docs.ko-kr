@@ -15,12 +15,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f26f37a945ce9ec665e924662d117f43e49ab77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839338"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>연습: 문 완성 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,48 +152,48 @@ ms.locfileid: "49280584"
   
 #### <a name="to-implement-the-completion-command-handler"></a>완료 명령 처리기를 구현 하려면  
   
-1.  라는 클래스를 추가 `TestCompletionCommandHandler` 구현 하는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. 라는 클래스를 추가 `TestCompletionCommandHandler` 구현 하는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
-     [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
+    [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
+    [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
   
-2.  다음 명령 처리기 (하려는 전달할 명령), 텍스트 뷰 (이 통해 다양 한 서비스에 대 한 액세스) 명령 처리기 공급자를 개인 필드를 추가 및 완료 세션:  
+2. 다음 명령 처리기 (하려는 전달할 명령), 텍스트 뷰 (이 통해 다양 한 서비스에 대 한 액세스) 명령 처리기 공급자를 개인 필드를 추가 및 완료 세션:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
-     [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
+    [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
+    [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
   
-3.  텍스트 뷰 및 공급자 필드를 설정 하 고 명령 체인에 명령을 추가 하는 생성자를 추가 합니다.  
+3. 텍스트 뷰 및 공급자 필드를 설정 하 고 명령 체인에 명령을 추가 하는 생성자를 추가 합니다.  
   
-     [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
-     [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
+    [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
+    [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
   
-4.  구현 된 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 따라 명령을 전달 하 여 메서드:  
+4. 구현 된 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 따라 명령을 전달 하 여 메서드:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
-     [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
+    [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
+    [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
   
-5.  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 메서드를 구현합니다. 이 메서드는 키 입력을 받으면 이러한 작업 중 하나를 수행 해야 합니다.  
+5. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 메서드를 구현합니다. 이 메서드는 키 입력을 받으면 이러한 작업 중 하나를 수행 해야 합니다.  
   
-    -   문자 버퍼에 쓸 수 및 트리거해야 하거나 완료를 필터링 할 수 있습니다. (인쇄 문자가 작업을 수행 합니다.)  
+   - 문자 버퍼에 쓸 수 및 트리거해야 하거나 완료를 필터링 할 수 있습니다. (인쇄 문자가 작업을 수행 합니다.)  
   
-    -   가 완료 되 면 커밋 있지만 버퍼에 쓸 문자를 허용 하지 마십시오. (공백, 탭 및 Enter 경우 이렇게 완성 세션이 표시 됩니다.)  
+   - 가 완료 되 면 커밋 있지만 버퍼에 쓸 문자를 허용 하지 마십시오. (공백, 탭 및 Enter 경우 이렇게 완성 세션이 표시 됩니다.)  
   
-    -   명령 다음 처리기에 전달할 수 있습니다. (모든 기타 명령입니다.)  
+   - 명령 다음 처리기에 전달할 수 있습니다. (모든 기타 명령입니다.)  
   
      이 메서드는 UI를 표시할 수 있으므로 호출 <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> automation 컨텍스트에서 호출 되지 않습니다 있도록 합니다.  
   
      [!code-csharp[VSSDKCompletionTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#19)]
      [!code-vb[VSSDKCompletionTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#19)]  
   
-6.  다음이 코드는 완료 세션을 트리거하는 전용 메서드입니다.  
+6. 다음이 코드는 완료 세션을 트리거하는 전용 메서드입니다.  
   
-     [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
-     [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
+    [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
+    [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
   
-7.  다음 예제에서 구독을 취소 하는 개인 메서드는는 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> 이벤트:  
+7. 다음 예제에서 구독을 취소 하는 개인 메서드는는 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> 이벤트:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
-     [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
+    [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
+    [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
   
 ## <a name="building-and-testing-the-code"></a>코드 빌드 및 테스트  
  이 코드를 테스트 하려면 CompletionTest 솔루션 빌드하고 실험적 인스턴스에서 실행 합니다.  

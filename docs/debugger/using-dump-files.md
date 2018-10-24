@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c346c74b88f899101d30a0ecfb3a46544093a596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847860"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Visual Studio를 사용 하 여 덤프 파일 사용
 힙을; 없이 사용 하 여 덤프 파일 덤프 파일 만들기 덤프 파일 열기 이진 파일, pdb의 및 덤프 파일에 대 한 소스 파일을 찾습니다.
@@ -64,11 +64,11 @@ ms.locfileid: "44281028"
 ##  <a name="BKMK_Create_a_dump_file"></a> 덤프 파일 만들기
  Visual Studio에서 덤프 파일을 만들려면
 
--   Visual Studio에서 프로세스를 디버깅하는 동안 디버거가 예외 또는 중단점에서 중지되었을 때 덤프 파일을 저장할 수 있습니다. 선택 **디버그**, 한 다음 **이름으로 덤프 저장**, 한 다음 **디버그**합니다. 에 **다른 이름으로 덤프 저장** 대화 상자의 합니다 **형식으로 저장** 목록을 선택할 수 있습니다 **미니 덤프** 또는 **힙 사용 미니 덤프** (기본값).
+- Visual Studio에서 프로세스를 디버깅하는 동안 디버거가 예외 또는 중단점에서 중지되었을 때 덤프 파일을 저장할 수 있습니다. 선택 **디버그**, 한 다음 **이름으로 덤프 저장**, 한 다음 **디버그**합니다. 에 **다른 이름으로 덤프 저장** 대화 상자의 합니다 **형식으로 저장** 목록을 선택할 수 있습니다 **미니 덤프** 또는 **힙 사용 미니 덤프** (기본값).
 
--   사용 하 여 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md) 사용 디버거 외부에서 실행 되는 충돌된 한 프로세스에 디버거를 연결할를 다음 덤프 파일을 저장 합니다. 참조 [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- 사용 하 여 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md) 사용 디버거 외부에서 실행 되는 충돌된 한 프로세스에 디버거를 연결할를 다음 덤프 파일을 저장 합니다. 참조 [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
- 또한 Windows 미니덤프 형식을 지원하는 프로그램으로 덤프 파일을 만들 수도 있습니다. 예를 들어 합니다 **Procdump** 명령줄 유틸리티 [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) 트리거 또는 주문형으로 기반으로 프로세스 크래시 덤프 파일을 만들 수 있습니다. 참조 [요구 사항 및 제한 사항](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) 다른 도구를 사용 하 여 덤프 파일을 만들도록 하는 방법에 대 한 자세한 내용은이 항목의 합니다.
+  또한 Windows 미니덤프 형식을 지원하는 프로그램으로 덤프 파일을 만들 수도 있습니다. 예를 들어 합니다 **Procdump** 명령줄 유틸리티 [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) 트리거 또는 주문형으로 기반으로 프로세스 크래시 덤프 파일을 만들 수 있습니다. 참조 [요구 사항 및 제한 사항](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) 다른 도구를 사용 하 여 덤프 파일을 만들도록 하는 방법에 대 한 자세한 내용은이 항목의 합니다.
 
 ##  <a name="BKMK_Open_a_dump_file"></a> 덤프 파일 열기
 
@@ -85,31 +85,31 @@ ms.locfileid: "44281028"
 ##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 이진 파일, 기호 (.pdb) 파일 및 소스 파일 찾기
  덤프 파일을 디버깅하기 위해 Visual Studio의 전체 기능을 사용하려면 다음에 액세스해야 합니다.
 
--   덤프가 만들어진 .exe 파일과 덤프 프로세스에서 사용된 다른 이진 파일(DLL 등)
+- 덤프가 만들어진 .exe 파일과 덤프 프로세스에서 사용된 다른 이진 파일(DLL 등)
 
-     힙 데이터를 포함하는 덤프를 디버깅하는 경우 Visual Studio에서는 일부 모듈의 누락된 이진 파일 문제를 처리할 수 있지만 유효한 호출 스택을 생성하는 데 충분한 모듈의 이진 파일이 있어야 합니다. Visual Studio에서는 힙을 포함하는 덤프 파일에 네이티브 모듈을 포함합니다.
+   힙 데이터를 포함하는 덤프를 디버깅하는 경우 Visual Studio에서는 일부 모듈의 누락된 이진 파일 문제를 처리할 수 있지만 유효한 호출 스택을 생성하는 데 충분한 모듈의 이진 파일이 있어야 합니다. Visual Studio에서는 힙을 포함하는 덤프 파일에 네이티브 모듈을 포함합니다.
 
--   .exe 및 기타 이진 파일에 대한 기호(.pdb) 파일
+- .exe 및 기타 이진 파일에 대한 기호(.pdb) 파일
 
--   관심 있는 모듈의 소스 파일
+- 관심 있는 모듈의 소스 파일
 
-     실행 파일과 .pdb 파일은 덤프가 만들어졌을 때 사용된 파일의 버전 및 빌드와 정확히 일치해야 합니다.
+   실행 파일과 .pdb 파일은 덤프가 만들어졌을 때 사용된 파일의 버전 및 빌드와 정확히 일치해야 합니다.
 
-     소스 파일을 찾을 수 없는 경우에 모듈의 디스어셈블리를 사용 하 여 디버깅할 수 있습니다.
+   소스 파일을 찾을 수 없는 경우에 모듈의 디스어셈블리를 사용 하 여 디버깅할 수 있습니다.
 
- **실행 파일에 대 한 기본 검색 경로**
+  **실행 파일에 대 한 기본 검색 경로**
 
- Visual Studio는 자동으로 이러한 덤프 파일에 포함 되지 않은 실행 파일이 위치를 검색 합니다.
+  Visual Studio는 자동으로 이러한 덤프 파일에 포함 되지 않은 실행 파일이 위치를 검색 합니다.
 
-1.  덤프 파일이 포함된 디렉터리
+1. 덤프 파일이 포함된 디렉터리
 
-2.  덤프 파일에서 지정된 모듈의 경로. 덤프가 수집된 컴퓨터의 모듈 경로입니다.
+2. 덤프 파일에서 지정된 모듈의 경로. 덤프가 수집된 컴퓨터의 모듈 경로입니다.
 
-3.  에 지정 된 기호 경로 **디버깅**를 **옵션**를 **기호** Visual studio 페이지 **도구**, **옵션**  대화 상자. 이 페이지에서 검색할 위치를 더 추가할 수 있습니다.
+3. 에 지정 된 기호 경로 **디버깅**를 **옵션**를 **기호** Visual studio 페이지 **도구**, **옵션**  대화 상자. 이 페이지에서 검색할 위치를 더 추가할 수 있습니다.
 
- **아니요 이진을 사용 하 여 > 기호 > 원본 페이지**
+   **아니요 이진을 사용 하 여 > 기호 > 원본 페이지**
 
- Visual Studio에서는 덤프의 모듈을 디버그 하는 데 필요한 파일을 찾을 수 없으므로 적절 한 페이지 표시 (**이진 파일 없음**를 **기호를 찾을 수 없음**, 또는 **소스 없음**). 이러한 페이지에서는 문제의 원인에 대한 자세한 정보를 제공하고 파일의 올바른 위치를 식별하는 데 도움이 되는 작업 링크를 제공합니다. [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요.
+   Visual Studio에서는 덤프의 모듈을 디버그 하는 데 필요한 파일을 찾을 수 없으므로 적절 한 페이지 표시 (**이진 파일 없음**를 **기호를 찾을 수 없음**, 또는 **소스 없음**). 이러한 페이지에서는 문제의 원인에 대한 자세한 정보를 제공하고 파일의 올바른 위치를 식별하는 데 도움이 되는 작업 링크를 제공합니다. [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

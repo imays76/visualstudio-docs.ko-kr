@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822114"
 ---
 # <a name="localize-clickonce-applications"></a>ClickOnce 응용 프로그램 지역화
 지역화는 응용 프로그램을 특정 문화권에 적합하게 만드는 프로세스입니다. 이 프로세스에서는 UI(사용자 인터페이스) 텍스트를 지역별 언어로 번역하고, 올바른 데이터 및 통화 형식 지정을 사용하고, 양식에서 컨트롤 크기를 조정하고, 필요하면 오른쪽에서 왼쪽으로 컨트롤을 미러링합니다.  
@@ -69,16 +69,16 @@ ms.locfileid: "44279344"
   
  요청 시 위성 어셈블리 다운로드는 요청 시 기타 유형 어셈블리를 다운로드하는 것과 약간 다릅니다. 사용 하 여이 시나리오를 사용 하도록 설정 하는 방법에 자세한 내용과 코드 예제는 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 용 도구 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]를 참조 하세요 [연습: ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 이 시나리오를 사용하도록 설정할 수도 있습니다.  도 참조 하세요 [연습: ClickOnce 배포 API를 사용 하 여 디자이너는 요청 시 위성 어셈블리 다운로드](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) 또는 [연습: ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드 디자이너를 사용 하 여](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))입니다.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 이 시나리오를 사용하도록 설정할 수도 있습니다.  또한 [연습: 디자이너를 사용하여 ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) 또는 [연습: 디자이너를 사용하여 ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))를 참조하세요.  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>배포 하기 전에 지역화 된 ClickOnce 응용 프로그램 테스트  
  위성 어셈블리는 응용 프로그램의 주 스레드에 대한 <xref:System.Threading.Thread.CurrentUICulture%2A> 속성이 위성 어셈블리의 문화권으로 설정된 경우에만 Windows Forms 응용 프로그램에 사용됩니다. 로컬 시장의 고객은 이미 문화권이 해당 기본값으로 설정된 지역화된 Windows 버전을 실행하고 있을 수 있습니다.  
   
  응용 프로그램을 고객에게 제공하기 전에 지역화된 배포를 테스트하는 세 가지 옵션이 있습니다.  
   
--   해당하는 지역화 버전 Windows에서 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 실행할 수 있습니다.  
+- 해당하는 지역화 버전 Windows에서 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 실행할 수 있습니다.  
   
--   응용 프로그램에서 <xref:System.Threading.Thread.CurrentUICulture%2A> 속성을 프로그래밍 방식으로 설정할 수 있습니다. <xref:System.Windows.Forms.Application.Run%2A> 메서드를 호출하기 전에 이 속성을 설정해야 합니다.  
+- 응용 프로그램에서 <xref:System.Threading.Thread.CurrentUICulture%2A> 속성을 프로그래밍 방식으로 설정할 수 있습니다. <xref:System.Windows.Forms.Application.Run%2A> 메서드를 호출하기 전에 이 속성을 설정해야 합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [\<assemblyIdentity > 요소](../deployment/assemblyidentity-element-clickonce-deployment.md)   

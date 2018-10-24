@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb256778f2bf92827ff98c5cafbb77bfdcba6c12
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2dc5e2509e3edda0c9cd89b84a3e109e0ac2d0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828382"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-지정 된 컴파일 대상 및 소스 파일 식별자 내의 줄 번호를 검색합니다.  
+지정 된 컴파일 대상 및 원본 파일 식별자 내의 줄 번호를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,16 +36,16 @@ HRESULT findLines (
   
 #### <a name="parameters"></a>매개 변수  
  `compiland`  
- [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 컴파일 대상을 나타내는 개체입니다. 이 인터페이스를 사용 하 여 줄 번호를 검색 하는 컨텍스트.  
+ [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 컴파일 대상을 나타내는 개체입니다. 줄 번호를 검색 하는 컨텍스트로이 인터페이스를 사용 합니다.  
   
  `file`  
- [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 줄 번호에 대 한 검색 하려는 소스 파일을 나타내는 개체입니다.  
+ [in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 줄 번호를 검색 하는 원본 파일을 나타내는 개체입니다.  
   
  `ppResult`  
- [out] 반환 된 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 줄 번호의 목록을 포함 하는 개체를 검색 합니다.  
+ [out] 반환 된 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 줄 번호의 목록을 포함 하는 개체 검색 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   

@@ -15,31 +15,31 @@ ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35dc4c6b80975ccddc42e54d0d7f39cf9024d62d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fb00e995e1a684438e99428437b4bca1069b970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831382"
 ---
 # <a name="implementing-a-legacy-language-service"></a>레거시 언어 서비스 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 MPF ()에서 관리 되는 패키지 프레임 워크를 사용 하 여 언어 서비스 구현에서 클래스를 파생 해야 합니다는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스 및 다음 추상 메서드 및 속성을 구현 합니다.  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 메서드  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 메서드  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 메서드  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 메서드  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> 속성  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> 속성  
   
- 이러한 메서드 및 속성의 구현에 대 한 자세한 내용은 아래 해당 섹션을 참조 하십시오.  
+  이러한 메서드 및 속성의 구현에 대 한 자세한 내용은 아래 해당 섹션을 참조 하십시오.  
   
- 추가 기능을 지원 하려면 언어 서비스는 MPF 언어 서비스 클래스 중 하나에서 클래스를 파생 해야 할 수 있습니다. 예를 들어 추가 메뉴 명령을 지원 하기 위해 파생 시켜야에서 클래스를 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스를 재정의 하는 다양 한 메서드를 처리 명령 (참조 <xref:Microsoft.VisualStudio.Package.ViewFilter> 세부 정보에 대 한). <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스는 다양 한 다양 한 클래스의 새 인스턴스를 만드는 호출 되는 메서드를 제공 하며 클래스의 인스턴스를 제공 하려면 적절 한 만들기 메서드를 재정의 합니다. 재정의 해야 하는 예를 들어 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 자신만의 인스턴스를 반환 하는 클래스 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스. 자세한 내용은 "사용자 지정 클래스 인스턴스화" 섹션을 참조 하세요.  
+  추가 기능을 지원 하려면 언어 서비스는 MPF 언어 서비스 클래스 중 하나에서 클래스를 파생 해야 할 수 있습니다. 예를 들어 추가 메뉴 명령을 지원 하기 위해 파생 시켜야에서 클래스를 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스를 재정의 하는 다양 한 메서드를 처리 명령 (참조 <xref:Microsoft.VisualStudio.Package.ViewFilter> 세부 정보에 대 한). <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스는 다양 한 다양 한 클래스의 새 인스턴스를 만드는 호출 되는 메서드를 제공 하며 클래스의 인스턴스를 제공 하려면 적절 한 만들기 메서드를 재정의 합니다. 재정의 해야 하는 예를 들어 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 자신만의 인스턴스를 반환 하는 클래스 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스. 자세한 내용은 "사용자 지정 클래스 인스턴스화" 섹션을 참조 하세요.  
   
- 언어 서비스는 여러 위치에서 사용 되는 자체 아이콘을 제공할 수도 있습니다. 예를 들어 IntelliSense 완성 목록이 표시 되 면 목록의 각 항목에 연결 된 메서드, 클래스, 네임 스페이스, 속성, 항목을 표시 하는 아이콘 있을 수 있습니다 또는 무엇이 든 해당 언어에 대해 필요한 합니다. 이러한 아이콘을 사용 하는 모든 IntelliSense 목록에는 **탐색 모음**, 및는 **오류 목록** 작업 창. 자세한 내용은 아래 "언어 서비스 이미지" 섹션을 참조 하세요.  
+  언어 서비스는 여러 위치에서 사용 되는 자체 아이콘을 제공할 수도 있습니다. 예를 들어 IntelliSense 완성 목록이 표시 되 면 목록의 각 항목에 연결 된 메서드, 클래스, 네임 스페이스, 속성, 항목을 표시 하는 아이콘 있을 수 있습니다 또는 무엇이 든 해당 언어에 대해 필요한 합니다. 이러한 아이콘을 사용 하는 모든 IntelliSense 목록에는 **탐색 모음**, 및는 **오류 목록** 작업 창. 자세한 내용은 아래 "언어 서비스 이미지" 섹션을 참조 하세요.  
   
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences 메서드  
  합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 의 동일한 인스턴스를 항상 반환 하는 메서드를 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 클래스입니다. 기본을 사용할 수 있습니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 언어 서비스에 대 한 추가 기본 설정을 수행 해야 하는 경우 클래스입니다. MPF 언어 서비스 클래스를 하나 이상 있는지를 가정 자료 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 클래스입니다.  

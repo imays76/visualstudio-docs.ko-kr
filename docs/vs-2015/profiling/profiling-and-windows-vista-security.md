@@ -17,25 +17,25 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141c8ee9e2a5924ce74dca119e1ba897add0c04b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 567640eafb3886d51469447eba31e439ca150618
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836985"
 ---
 # <a name="profiling-and-windows-vista-security"></a>프로파일링 및 Windows Vista 보안
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 컴퓨터 관리자가 사용 가능하도록 설정한 [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] 사용자 액세스 권한 설정에 따라 개별 사용자에게 해당 컴퓨터에서 프로세스를 프로파일링하기 위한 보안 권한이 있을 수 있습니다. 다음 예제에서는 사용자 간에 가능한 차이점을 보여 줍니다.  
   
--   관리자가 드라이버 및 서비스를 시작하도록 설정한 경우 일부 사용자는 고급 프로파일링 기능에 액세스할 수 있습니다.  
+- 관리자가 드라이버 및 서비스를 시작하도록 설정한 경우 일부 사용자는 고급 프로파일링 기능에 액세스할 수 있습니다.  
   
--   도메인 사용자는 샘플 프로파일링에만 액세스가 가능할 수 있습니다.  
+- 도메인 사용자는 샘플 프로파일링에만 액세스가 가능할 수 있습니다.  
   
--   일부 사용자는 다른 모든 사용자에 대해 프로파일링 액세스를 거부할 수 있습니다.  
+- 일부 사용자는 다른 모든 사용자에 대해 프로파일링 액세스를 거부할 수 있습니다.  
   
- 자세한 내용은 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.  
+  자세한 내용은 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.  
   
 ## <a name="cross-session-profiling"></a>상호 세션 프로파일링  
  *상호 세션 프로파일링*은 다른 로그온 세션에서 실행되는 프로세스를 프로파일링하는 기능입니다. 대부분의 서비스가 세션 0에서 실행되며 사용자는 세션 0을 직접 실행할 수 없는 경우를 예로 들어 보겠습니다. 이 경우 성능 탐색기 도구 모음의 **프로세스에 연결** 단추나 VSPerfCmd 명령줄 도구의 /attach 옵션을 사용하면 다른 로그온 세션의 대다수 프로세스를 프로파일링할 수 있습니다.  

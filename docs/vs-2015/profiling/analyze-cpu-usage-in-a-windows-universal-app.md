@@ -20,12 +20,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833605"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Windows 유니버설 앱에서 CPU 사용량 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> CPU 사용량 데이터 수집  
  ![시뮬레이터에서 앱의 릴리스 빌드 실행](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  Visual Studio에서 배포 대상을 **시뮬레이터**로, 솔루션 구성을 **릴리스**로 설정합니다.  
+1. Visual Studio에서 배포 대상을 **시뮬레이터**로, 솔루션 구성을 **릴리스**로 설정합니다.  
   
-    -   시뮬레이터에서 앱을 실행하면 앱과 Visual Studio IDE를 서로 쉽게 전환할 수 있습니다.  
+   -   시뮬레이터에서 앱을 실행하면 앱과 Visual Studio IDE를 서로 쉽게 전환할 수 있습니다.  
   
-    -   **릴리스** 모드에서 이 앱을 실행하면 앱의 실제 성능을 더 잘 파악할 수 있습니다.  
+   -   **릴리스** 모드에서 이 앱을 실행하면 앱의 실제 성능을 더 잘 파악할 수 있습니다.  
   
-2.  **디버그** 메뉴에서 **성능 프로파일러...** 를 선택합니다.  
+2. **디버그** 메뉴에서 **성능 프로파일러...** 를 선택합니다.  
   
-3.  성능 및 진단 허브에서 **CPU 사용량**을 선택한 다음 **시작**을 선택합니다.  
+3. 성능 및 진단 허브에서 **CPU 사용량**을 선택한 다음 **시작**을 선택합니다.  
   
-     ![CpuUsage 진단 세션 시작](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![CpuUsage 진단 세션 시작](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  앱이 시작되면 **최대 수 가져오기**를 클릭합니다. 출력이 표시되면 약 1초간 기다린 다음 **Get Max Number Async**(비동기적으로 최대 수 가져오기)를 선택합니다. 단추를 클릭하는 시간 사이에 대기하면 진단 보고서에서 단추 클릭 루틴을 좀 더 쉽게 격리할 수 있습니다.  
+4. 앱이 시작되면 **최대 수 가져오기**를 클릭합니다. 출력이 표시되면 약 1초간 기다린 다음 **Get Max Number Async**(비동기적으로 최대 수 가져오기)를 선택합니다. 단추를 클릭하는 시간 사이에 대기하면 진단 보고서에서 단추 클릭 루틴을 좀 더 쉽게 격리할 수 있습니다.  
   
-5.  두 번째 출력 줄이 나타나면 성능 및 진단 허브에서 **수집 중지** 를 선택합니다.  
+5. 두 번째 출력 줄이 나타나면 성능 및 진단 허브에서 **수집 중지** 를 선택합니다.  
   
- ![CpuUsage 데이터 컬렉션 중지](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![CpuUsage 데이터 컬렉션 중지](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU 사용량 도구에서 데이터를 분석하고 보고서를 표시합니다.  
+   CPU 사용량 도구에서 데이터를 분석하고 보고서를 표시합니다.  
   
- ![CpuUsage 보고서](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![CpuUsage 보고서](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> CPU 사용량 보고서 분석  
   

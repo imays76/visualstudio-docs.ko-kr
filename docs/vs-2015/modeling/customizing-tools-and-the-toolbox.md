@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847814"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>도구 및 도구 상자 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,15 +183,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>연결 작성기용 사용자 지정 코드  
  사용자 인터페이스에는 연결 작성기의 여러 사용자 지정 형식을 정의하는 4개 확인란이 있습니다.  
   
--   합니다 **Custom accept** 확인란 원본 또는 대상 역할 지시문  
+- 합니다 **Custom accept** 확인란 원본 또는 대상 역할 지시문  
   
--   합니다 **Custom connect** 확인란 원본 또는 대상 역할 지시문  
+- 합니다 **Custom connect** 확인란 원본 또는 대상 역할 지시문  
   
--   합니다 **사용자 지정 연결을 사용 하 여** 확인란 연결 지시문  
+- 합니다 **사용자 지정 연결을 사용 하 여** 확인란 연결 지시문  
   
--   합니다 **Is Custom** 연결 작성기의 속성  
+- 합니다 **Is Custom** 연결 작성기의 속성  
   
- 이러한 사용자 지정을 수행하려면 프로그램 코드를 입력해야 합니다. 입력해야 하는 코드를 확인하려면 위의 확인란 중 하나를 선택하고 모든 템플릿 변환을 클릭한 후에 솔루션을 빌드합니다. 그러면 오류 보고서가 표시됩니다. 오류 보고서를 두 번 클릭하면 추가해야 하는 코드를 설명하는 주석이 표시됩니다.  
+  이러한 사용자 지정을 수행하려면 프로그램 코드를 입력해야 합니다. 입력해야 하는 코드를 확인하려면 위의 확인란 중 하나를 선택하고 모든 템플릿 변환을 클릭한 후에 솔루션을 빌드합니다. 그러면 오류 보고서가 표시됩니다. 오류 보고서를 두 번 클릭하면 추가해야 하는 코드를 설명하는 주석이 표시됩니다.  
   
 > [!NOTE]
 >  사용자 지정 코드를 추가하려면 GeneratedCode 폴더의 코드 파일이 아닌 별도의 코드 파일에 부분 클래스 정의를 만듭니다. 작업 내용 손실을 방지하려면 생성된 코드 파일을 편집해서는 안 됩니다. 자세한 내용은 [생성 된 클래스 재정의 및 확장](../modeling/overriding-and-extending-the-generated-classes.md)합니다.  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79a80d5a37c341a46d32e9bedac8f7ff416158da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab5fd153706e1f28da1931165179f479c7052e82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836452"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 문서 클래스 식별자를 가져옵니다.  
@@ -44,10 +44,10 @@ int GetDocumentClassID(
  [out] 문서 클래스 id는 GUID를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 문서를 나타내는 각각의 개별 클래스를 인스턴스화하 GUID 클래스를 사용할 수 있습니다.  
+ 각각 문서를 나타내는 개별 클래스를 인스턴스화할 클래스 GUID를 사용할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

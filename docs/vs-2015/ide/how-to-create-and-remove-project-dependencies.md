@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 559aea010cb7403e9e8ea52f8bf6c6fb549c665c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823842"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>방법: 프로젝트 종속성 만들기 및 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,20 +37,20 @@ ms.locfileid: "49247710"
   
 ### <a name="to-assign-dependencies-to-projects"></a>프로젝트에 종속성을 할당하려면  
   
-1.  솔루션 탐색기에서 프로젝트를 선택합니다.  
+1. 솔루션 탐색기에서 프로젝트를 선택합니다.  
   
-2.  **프로젝트** 메뉴에서 **프로젝트 종속성**을 선택합니다.  
+2. **프로젝트** 메뉴에서 **프로젝트 종속성**을 선택합니다.  
   
-     **프로젝트 종속성** 대화 상자가 열립니다.  
+    **프로젝트 종속성** 대화 상자가 열립니다.  
   
-    > [!NOTE]
-    >  **프로젝트 종속성** 옵션은 프로젝트가 두 개 이상 포함된 솔루션에서만 사용할 수 있습니다.  
+   > [!NOTE]
+   >  **프로젝트 종속성** 옵션은 프로젝트가 두 개 이상 포함된 솔루션에서만 사용할 수 있습니다.  
   
-3.  **종속성** 탭의 **프로젝트** 드롭다운 메뉴에서 프로젝트를 선택합니다.  
+3. **종속성** 탭의 **프로젝트** 드롭다운 메뉴에서 프로젝트를 선택합니다.  
   
-4.  **다음에 종속** 필드에서 이 프로젝트를 빌드하기 전에 빌드해야 하는 다른 프로젝트의 확인란을 선택합니다.  
+4. **다음에 종속** 필드에서 이 프로젝트를 빌드하기 전에 빌드해야 하는 다른 프로젝트의 확인란을 선택합니다.  
   
- 프로젝트 종속성을 만들기 전에 솔루션이 두 개 이상의 프로젝트로 구성되어 있어야 합니다.  
+   프로젝트 종속성을 만들기 전에 솔루션이 두 개 이상의 프로젝트로 구성되어 있어야 합니다.  
   
 ### <a name="to-remove-dependencies-from-projects"></a>프로젝트에서 종속성을 제거하려면  
   

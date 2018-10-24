@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816686"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 중단점을 사용 합니다.
 중단점은 개발자의 도구 상자에서 가장 중요 한 디버깅 기술 중 하나입니다. 디버거가 실행을 일시 중지 하려는 위치에 중단점을 설정 합니다. 예를 들어, 다음 코드 변수의 상태를 보거나 특정 중단점에서 호출 스택을 확인 하는 것이 좋습니다.  
@@ -203,15 +203,15 @@ ms.locfileid: "49356810"
 
 **중단점 조건을 설정 합니다.**
 
-1.  중단점 기호를 마우스 오른쪽 단추로 클릭 **조건을**합니다. 또는 중단점 기호 위로 마우스를 가져가고 합니다 **설정을** 아이콘을 선택한 후 **조건** 에 **중단점 설정** 창.  
+1. 중단점 기호를 마우스 오른쪽 단추로 클릭 **조건을**합니다. 또는 중단점 기호 위로 마우스를 가져가고 합니다 **설정을** 아이콘을 선택한 후 **조건** 에 **중단점 설정** 창.  
 
-    조건을 설정할 수도 있습니다는 **중단점** 중단점을 마우스 오른쪽 단추로 클릭 하 고 선택 하 여 창 **설정**를 선택한 다음 **조건**합니다. 
+   조건을 설정할 수도 있습니다는 **중단점** 중단점을 마우스 오른쪽 단추로 클릭 하 고 선택 하 여 창 **설정**를 선택한 다음 **조건**합니다. 
   
-  ![중단점 설정](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![중단점 설정](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. 드롭다운 목록에서 선택 **조건식**를 **적중 횟수**, 또는 **필터**, 값을 적절 하 게 설정 합니다. 
+2. 드롭다운 목록에서 선택 **조건식**를 **적중 횟수**, 또는 **필터**, 값을 적절 하 게 설정 합니다. 
   
-1. 선택 **닫습니다** 누르거나 **Ctrl**+**Enter** 닫으려면 합니다 **중단점 설정** 창. 또는에서 **중단점** 창에서 **확인** 는 대화 상자를 닫습니다. 
+3. 선택 **닫습니다** 누르거나 **Ctrl**+**Enter** 닫으려면 합니다 **중단점 설정** 창. 또는에서 **중단점** 창에서 **확인** 는 대화 상자를 닫습니다. 
 
 중단점 조건 집합을 사용 하 여 표시를 **+** 소스 코드에서 기호 및 **중단점** windows. 
 

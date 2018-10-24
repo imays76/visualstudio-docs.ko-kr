@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc829148916ed65be4e166906b03244f688bb66
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f03b9af3f34fe7d06d2612a036e3ecd6003ee5c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830732"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 함수
 이 함수는 이미 소스 제어 시스템에 있는 파일을 찾을 수 있도록 하 고 이후에 현재 프로젝트의 일부인 이러한 파일을 확인 합니다. 예를 들어이 함수 파일을 복사 하지 않고 현재 프로젝트에 공통 헤더 파일을 가져올 수 있습니다. 파일의 반환 배열 `lplpFileNames`, IDE 프로젝트에 추가 하는 사용자가 파일의 목록을 포함 합니다.  

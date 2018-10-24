@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cc0af2cfc56b22e2b6488056a73004d653431d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c76d197a03d644fa841e55e7e7910f4d0541840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841990"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
-검색 한 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 컨텍스트를 설명 하는 구조입니다.  
+검색을 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 컨텍스트를 설명 하는 구조입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,13 +44,13 @@ int GetInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `dwFields`  
- [in] 플래그의 조합을 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 의 필드를 나타내는 열거형은 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 해야 하는 구조를 입력 합니다.  
+ [in] 플래그의 조합을 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 의 필드를 나타내는 열거형을 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조 되 입력 합니다.  
   
  `pInfo`  
- [out에서] `CONTEXT_INFO` 구조체에 이름이 입력 되어입니다.  
+ [out에서] `CONTEXT_INFO` 에서 채워진 구조입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   

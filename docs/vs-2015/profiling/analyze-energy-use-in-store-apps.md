@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86d1959d6850ae73d38970a197f8b369310fac3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824427"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>스토어 앱의 에너지 사용 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터
   
  에너지 소비 프로파일러는 이러한 *전원* 및 *에너지*에 대한 정의를 사용합니다.  
   
--   *전원* 은 일정 시간 동안 일을 수행하는 데 사용된 힘의 효율을 측정합니다. 전기 과학에서 전력의 표준 단위는 *와트*입니다. 와트는 1암페어의 전류가 1볼트의 전위 차이를 통해 흐를 때 작업이 수행되는 속도로 정의됩니다. **전원 사용** 그래프에서 단위가 **mW** (밀리와트)로 표시되고 1mW는 1W의 1/1000에 해당합니다.  
+- *전원* 은 일정 시간 동안 일을 수행하는 데 사용된 힘의 효율을 측정합니다. 전기 과학에서 전력의 표준 단위는 *와트*입니다. 와트는 1암페어의 전류가 1볼트의 전위 차이를 통해 흐를 때 작업이 수행되는 속도로 정의됩니다. **전원 사용** 그래프에서 단위가 **mW** (밀리와트)로 표시되고 1mW는 1W의 1/1000에 해당합니다.  
   
-     전력은 속도이므로 방향(일정 시간 동안 작업이 증가하거나 감소할 수 있음)과 속도(작업이 증가하거나 감소하는 양)가 있습니다.  
+   전력은 속도이므로 방향(일정 시간 동안 작업이 증가하거나 감소할 수 있음)과 속도(작업이 증가하거나 감소하는 양)가 있습니다.  
   
--   *에너지* 는 배터리의 전력 용량과 같이 총 전력량을 용량 또는 전위로 측정하거나 일정 기간 동안 사용된 총 전력량으로 측정합니다. 에너지 단위는 1시간 동안 1와트가 일정하게 적용된 전력량인 와트-시간입니다. **에너지 요약**에서 단위가 **mW-h**(밀리와트시)로 표시됩니다.  
+- *에너지* 는 배터리의 전력 용량과 같이 총 전력량을 용량 또는 전위로 측정하거나 일정 기간 동안 사용된 총 전력량으로 측정합니다. 에너지 단위는 1시간 동안 1와트가 일정하게 적용된 전력량인 와트-시간입니다. **에너지 요약**에서 단위가 **mW-h**(밀리와트시)로 표시됩니다.  
   
- ![에너지 양, 사용한 전원, 사용한 전체 에너지](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![에너지 양, 사용한 전원, 사용한 전체 에너지](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- 예를 들어, 태블릿의 완전히 충전된 배터리에는 저장된 에너지가 상당히 많습니다. 네트워크 통신, 값 계산, 그래픽 표시 등의 작업을 수행하는 데 에너지를 사용하므로 다른 속도로 배터리 전력이 소실됩니다. 특정 기간 동안 소비된 총 전력도 에너지로 측정합니다.  
+  예를 들어, 태블릿의 완전히 충전된 배터리에는 저장된 에너지가 상당히 많습니다. 네트워크 통신, 값 계산, 그래픽 표시 등의 작업을 수행하는 데 에너지를 사용하므로 다른 속도로 배터리 전력이 소실됩니다. 특정 기간 동안 소비된 총 전력도 에너지로 측정합니다.  
   
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> 사용자 표시로 시나리오 식별  
  프로파일링 데이터에 *사용자 표시* 를 추가하여 타임라인 눈금자의 영역을 식별할 수 있습니다.  
@@ -65,8 +65,8 @@ Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터
  메서드가 실행되면 프로파일링 데이터에 사용자 표시와 메시지가 추가됩니다.  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel 구현 된 [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) 인터페이스 (로 프로젝션 [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) C# 및 VB에서). 운영 체제 리소스 누수를 방지 하려면 호출 [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (C# 및 VB에서 Windows.Foundation.Diagnostics.LoggingChannel.Dispose())는 로깅 채널이 완료 될 때입니다.  
-> -   열린 각 로깅 채널의 이름은 고유해야 합니다. 동일한 이름의 새 로깅 채널을 삭제되지 않은 채널로 만들려고 하면 예외가 발생합니다.  
+> - Windows.Foundation.Diagnostics LoggingChannel 구현 된 [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) 인터페이스 (로 프로젝션 [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) C# 및 VB에서). 운영 체제 리소스 누수를 방지 하려면 호출 [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (C# 및 VB에서 Windows.Foundation.Diagnostics.LoggingChannel.Dispose())는 로깅 채널이 완료 될 때입니다.  
+>   -   열린 각 로깅 채널의 이름은 고유해야 합니다. 동일한 이름의 새 로깅 채널을 삭제되지 않은 채널로 만들려고 하면 예외가 발생합니다.  
   
  예제는 Windows SDK 샘플 [LoggingSession 샘플](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 을 참조하세요.  
   
@@ -86,9 +86,9 @@ if (performance && performance.mark) {
  더 정확하게 예측하려면 배터리 전원을 사용하는 저전력 장치에서 앱의 에너지 사용을 프로파일링합니다. Visual Studio는 이러한 장치에서 대부분 실행되지 않으므로 Visual Studio 원격 도구를 사용하여 장치에 Visual Studio 컴퓨터를 연결해야 합니다. 원격 장치에 연결하려면 Visual Studio 프로젝트와 원격 장치를 모두 구성해야 합니다. 자세한 내용은 [원격 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)을 참조하세요.  
   
 > [!TIP]
->  -   Windows 스토어 시뮬레이터 또는 Visual Studio 컴퓨터에서 에너지 프로파일링이 권장되지 않습니다. 실제 장치에서 프로파일링할 경우 실제에 훨씬 더 가까운 데이터가 제공됩니다.  
-> -   대상 장치에 배터리 전원을 연결한 상태에서 프로파일링합니다.  
-> -   동일한 리소스(네트워크, CPU 또는 디스플레이)를 사용할 수 있는 다른 앱을 닫습니다.  
+> - Windows 스토어 시뮬레이터 또는 Visual Studio 컴퓨터에서 에너지 프로파일링이 권장되지 않습니다. 실제 장치에서 프로파일링할 경우 실제에 훨씬 더 가까운 데이터가 제공됩니다.  
+>   -   대상 장치에 배터리 전원을 연결한 상태에서 프로파일링합니다.  
+>   -   동일한 리소스(네트워크, CPU 또는 디스플레이)를 사용할 수 있는 다른 앱을 닫습니다.  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> 앱의 에너지 프로파일 데이터 수집  
   
@@ -112,15 +112,15 @@ if (performance && performance.mark) {
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> 설치된 에너지 프로파일 데이터 수집  
  에너지 소비 도구는 Visual Studio 솔루션에서 시작하거나 Windows 스토어에서 설치하는 Windows 스토어 8.1 앱에서만 실행할 수 있습니다. 솔루션을 Visual Studio에서 열 경우 기본 대상은 **시작 프로젝트**입니다. 설치된 앱을 대상으로 하려면  
   
-1.  **대상 변경** 을 선택한 다음 **설치된 응용 프로그램**을 선택합니다.  
+1. **대상 변경** 을 선택한 다음 **설치된 응용 프로그램**을 선택합니다.  
   
-2.  **설치된 응용 프로그램 패키지 선택** 목록에서 대상을 선택합니다.  
+2. **설치된 응용 프로그램 패키지 선택** 목록에서 대상을 선택합니다.  
   
-3.  진단 허브 페이지에서 **에너지 소비** 를 선택합니다.  
+3. 진단 허브 페이지에서 **에너지 소비** 를 선택합니다.  
   
-4.  프로파일링을 시작하려면 **시작** 을 선택합니다.  
+4. 프로파일링을 시작하려면 **시작** 을 선택합니다.  
   
- 프로파일링을 중지하려면 Visual Studio로 다시 전환하고(Alt + Tab) 진단 허브 페이지에서 **수집 중지** 를 선택합니다.  
+   프로파일링을 중지하려면 Visual Studio로 다시 전환하고(Alt + Tab) 진단 허브 페이지에서 **수집 중지** 를 선택합니다.  
   
 ##  <a name="BKMK_Analyze_energy_profile_data"></a> 에너지 프로파일 데이터 분석  
  에너지 프로필 데이터가 Visual Studio 문서 창에 표시됩니다.  

@@ -15,12 +15,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be4e5fb7f5c5013ee9151f5db9b30d91a0894ee4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9dc7d2ef8aabab628f13ce9648e0fa5dc1f3b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845097"
 ---
 # <a name="how-to-provide-a-service"></a>방법: 서비스 제공
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,50 +36,50 @@ VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 
   
 #### <a name="implementing-a-service"></a>서비스 구현  
   
-1.  VSIX 프로젝트를 만듭니다 (**파일 / 새로 만들기 / 프로젝트 / Visual C# / 확장성 / VSIX 프로젝트**).  
+1. VSIX 프로젝트를 만듭니다 (**파일 / 새로 만들기 / 프로젝트 / Visual C# / 확장성 / VSIX 프로젝트**).  
   
-2.  VSPackage 프로젝트에 추가 합니다. 프로젝트 노드를 선택 합니다 **솔루션 탐색기** 클릭 **추가 / 새 항목 / Visual C# 항목 / 확장성 / Visual Studio 패키지**합니다.  
+2. VSPackage 프로젝트에 추가 합니다. 프로젝트 노드를 선택 합니다 **솔루션 탐색기** 클릭 **추가 / 새 항목 / Visual C# 항목 / 확장성 / Visual Studio 패키지**합니다.  
   
-3.  서비스를 구현 하려면 세 가지 형식을 만들 필요 합니다.  
+3. 서비스를 구현 하려면 세 가지 형식을 만들 필요 합니다.  
   
-    -   서비스를 설명 하는 인터페이스입니다. 이러한 인터페이스의 대부분은 빈, 즉, 이러한 방법이 없습니다.  
+   - 서비스를 설명 하는 인터페이스입니다. 이러한 인터페이스의 대부분은 빈, 즉, 이러한 방법이 없습니다.  
   
-    -   서비스 인터페이스를 설명 하는 인터페이스입니다. 이 인터페이스 메서드를 구현할 수를 포함 합니다.  
+   - 서비스 인터페이스를 설명 하는 인터페이스입니다. 이 인터페이스 메서드를 구현할 수를 포함 합니다.  
   
-    -   서비스와 서비스 인터페이스를 구현 하는 클래스입니다.  
+   - 서비스와 서비스 인터페이스를 구현 하는 클래스입니다.  
   
      다음 예제에서는 세 가지 형식의 매우 기본적인 구현을 보여 줍니다. 서비스 클래스의 생성자는 서비스 공급자를 설정 해야 합니다.  
   
-    ```csharp  
-    public class MyService : SMyService, IMyService  
-    {  
-        private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
-        private string myString;  
-        public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
-        {  
-            Trace.WriteLine(  
-                   "Constructing a new instance of MyService");  
-            serviceProvider = sp;  
-        }  
-        public void Hello()  
-        {  
-            myString = "hello";  
-        }  
-        public string Goodbye()  
-        {  
-           return "goodbye";  
-        }  
-    }  
-    public interface SMyService  
-    {  
-    }  
-    public interface IMyService  
-    {  
-        void Hello();  
-        string Goodbye();  
-    }  
+   ```csharp  
+   public class MyService : SMyService, IMyService  
+   {  
+       private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
+       private string myString;  
+       public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
+       {  
+           Trace.WriteLine(  
+                  "Constructing a new instance of MyService");  
+           serviceProvider = sp;  
+       }  
+       public void Hello()  
+       {  
+           myString = "hello";  
+       }  
+       public string Goodbye()  
+       {  
+          return "goodbye";  
+       }  
+   }  
+   public interface SMyService  
+   {  
+   }  
+   public interface IMyService  
+   {  
+       void Hello();  
+       string Goodbye();  
+   }  
   
-    ```  
+   ```  
   
 ### <a name="registering-a-service"></a>서비스 등록  
   
