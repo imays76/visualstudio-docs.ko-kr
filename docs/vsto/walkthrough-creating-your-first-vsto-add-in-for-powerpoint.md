@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f35779debdad5a43781b2fe7221085f3fe0e1010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882595"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>연습: PowerPoint 용 첫 VSTO 추가 기능에 만들기
   이 연습에서는 Microsoft Office PowerPoint 용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프레젠테이션에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
@@ -32,15 +32,15 @@ ms.locfileid: "42636224"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   PowerPoint용 PowerPoint VSTO 추가 기능 프로젝트 만들기  
+- PowerPoint용 PowerPoint VSTO 추가 기능 프로젝트 만들기  
   
--   PowerPoint의 개체 모델을 사용하여 각각의 새 슬라이드에 텍스트 상자를 추가하는 코드 작성  
+- PowerPoint의 개체 모델을 사용하여 각각의 새 슬라이드에 텍스트 상자를 추가하는 코드 작성  
   
--   테스트를 위해 프로젝트 빌드 및 실행  
+- 테스트를 위해 프로젝트 빌드 및 실행  
   
--   VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 프로젝트 정리  
+- VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 프로젝트 정리  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -78,18 +78,18 @@ ms.locfileid: "42636224"
   
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>각각의 새 슬라이드에 텍스트 상자를 추가하려면  
   
-1.  ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드에 대 한 이벤트 처리기를 정의 합니다 [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 이벤트는 <xref:Microsoft.Office.Interop.PowerPoint.Application> 개체입니다.  
+1. ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드에 대 한 이벤트 처리기를 정의 합니다 [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 이벤트는 <xref:Microsoft.Office.Interop.PowerPoint.Application> 개체입니다.  
   
-     사용자가 활성 프레젠테이션에 새 슬라이드를 추가하면 이 이벤트 처리기가 새 슬라이드의 맨 위에 텍스트 상자를 추가하고 텍스트 상자에 일부 텍스트를 추가합니다.  
+    사용자가 활성 프레젠테이션에 새 슬라이드를 추가하면 이 이벤트 처리기가 새 슬라이드의 맨 위에 텍스트 상자를 추가하고 텍스트 상자에 일부 텍스트를 추가합니다.  
   
-     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  C#을 사용하는 경우 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 연결 해야 합니다 `Application_PresentationNewSlide` 이벤트 처리기는 [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 이벤트입니다.  
+2. C#을 사용하는 경우 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 연결 해야 합니다 `Application_PresentationNewSlide` 이벤트 처리기는 [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 이벤트입니다.  
   
-     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
- 각각의 새 슬라이드를 수정하기 위해 이전 코드 예제에서는 다음 개체를 사용합니다.  
+   각각의 새 슬라이드를 수정하기 위해 이전 코드 예제에서는 다음 개체를 사용합니다.  
   
 -   `Application` 클래스의 `ThisAddIn` 필드. `Application` 필드는 PowerPoint의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.PowerPoint.Application> 개체를 반환합니다.  
   

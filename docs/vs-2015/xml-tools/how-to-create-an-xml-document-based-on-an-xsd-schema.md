@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54d7ead9f759e990b741ac9c5219af693d10a412
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884227"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>방법: XSD 스키마를 기반으로 XML 문서 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "49287328"
   
  다음과 같은 경우 이 옵션을 사용할 수 있습니다.  
   
--   스키마의 다양한 구문 용도를 파악하려는 경우  
+- 스키마의 다양한 구문 용도를 파악하려는 경우  
   
--   스키마에서 의도된 작업을 수행하는지 확인하려는 경우  
+- 스키마에서 의도된 작업을 수행하는지 확인하려는 경우  
   
- 합니다 **샘플 XML 생성** 기능은 전역 요소에 사용할 수만 있으며 올바른 XML 스키마 집합이 필요 합니다.  
+  합니다 **샘플 XML 생성** 기능은 전역 요소에 사용할 수만 있으며 올바른 XML 스키마 집합이 필요 합니다.  
   
- 일반적으로 이 기능은 유효한 XML 문서를 생성합니다. 그러나 스키마에 다음 중 하나 이상이 포함되어 있으면 예제 XML이 유효하지 않을 수 있습니다.  
+  일반적으로 이 기능은 유효한 XML 문서를 생성합니다. 그러나 스키마에 다음 중 하나 이상이 포함되어 있으면 예제 XML이 유효하지 않을 수 있습니다.  
   
--   `xs:key`, `xs:keyref` 및 `xs:unique` ID 제약 조건  
+- `xs:key`, `xs:keyref` 및 `xs:unique` ID 제약 조건  
   
--   `xs:pattern` 패싯  
+- `xs:pattern` 패싯  
   
--   `xs:QName` 형식의 열거형  
+- `xs:QName` 형식의 열거형  
   
--   `xs:ENTITY`, `xs:ENTITIES` 및 `xs:NOTATION` 형식  
+- `xs:ENTITY`, `xs:ENTITIES` 및 `xs:NOTATION` 형식  
   
- 또한 `xs:base64Binary` 콘텐츠는 해당 형식의 스키마에 열거형이 나타나는 경우에만 생성됩니다.  
+  또한 `xs:base64Binary` 콘텐츠는 해당 형식의 스키마에 열거형이 나타나는 경우에만 생성됩니다.  
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>XSD 파일을 기반으로 XML 인스턴스 문서를 생성하려면  
   

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542418"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882668"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 디버거를 소개
 
@@ -188,7 +188,7 @@ F10 함수나 (코드가 계속 실행) 앱 코드에서 메서드를 한 단계
 
 예외 도우미에는 오류를 디버깅할 수 있는 훌륭한 기능입니다. 오류 세부 정보 보기와 같은 작업을 수행 하 고 예외 도우미에서 조사식을 추가할 수도 있습니다. 또는 필요한 경우 특정 예외를 throw 하는 것에 대 한 조건을 변경할 수 있습니다.
 
->  [!NOTE]
+> [!NOTE]
 > 예외 도우미에 예외 도우미 대체 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]합니다.
 
 확장 된 **예외 설정** 수 있지만이 예외 형식을 처리 하는 방법에 대 한 다른 옵션을 보려면 노드를이 살펴보기 위해 아무 것도 변경할 필요가 없습니다!
