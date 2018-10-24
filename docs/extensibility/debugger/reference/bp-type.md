@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 823b2b4bd53aabfdbcc887fe8ce4e1bf1bf858d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c525b30a290a1a0c5f732f65967acb50219c9647
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905167"
 ---
 # <a name="bptype"></a>BP_TYPE
-중단점이 코드 위치에, 데이터 위치 또는 지정는 중단점의 또 다른 유형.  
+중단점이 코드 위치, 데이터 위치, 여부는 다른 유형의 중단점을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -57,10 +57,10 @@ public enum enum_BP_TYPE {
  데이터 중단점을 지정합니다.  
   
  BPT_SPECIAL  
- 중단점을 코드 또는 데이터 형식을 지정 합니다. 이 형식은 더 이상 사용할 수 없습니다.  
+ 코드 또는 데이터 형식이 모두 중단점을 지정 합니다. 이 형식은 사용 되지 않습니다 하며 사용할 수 없습니다.  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 매개 변수로 전달 되는 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 및 [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) 메서드.  
+ 매개 변수로 전달 합니다 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 하 고 [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

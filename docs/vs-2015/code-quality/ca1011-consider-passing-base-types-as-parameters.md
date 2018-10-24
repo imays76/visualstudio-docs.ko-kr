@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 71bf8247fca736fd1257ec7489c71752cd9cc21a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a9afb073ef3e722a2a07a05e1ee8629b31b4cfab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898644"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: 기본 형식을 매개 변수로 전달해 보십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
@@ -48,13 +49,13 @@ ms.locfileid: "49220157"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
--   메서드는 파생된 형식에서 제공 되는 특정 기능이 필요한 경우
+- 메서드는 파생된 형식에서 제공 되는 특정 기능이 필요한 경우
 
-     \- 또는 -
+   \- 또는 -
 
--   더 많이 파생 된 형식 또는 파생된 된 유형에 적용 하는 메서드에 전달 됩니다.
+- 더 많이 파생 된 형식 또는 파생된 된 유형에 적용 하는 메서드에 전달 됩니다.
 
- 이러한 경우 컴파일러 및 런타임에서 제공 하는 강력한 형식 검사로 인해 코드를 보다 강력한 됩니다.
+  이러한 경우 컴파일러 및 런타임에서 제공 하는 강력한 형식 검사로 인해 코드를 보다 강력한 됩니다.
 
 ## <a name="example"></a>예제
  다음 예제에서는 메서드를 보여 줍니다 `ManipulateFileStream`, 함께만 사용할 수 있는 <xref:System.IO.FileStream> 이 규칙을 위반 하는 개체입니다. 두 번째 메서드를 `ManipulateAnyStream`를 대체 하 여 규칙을 충족 합니다 <xref:System.IO.FileStream> 매개 변수를 사용 하 여를 <xref:System.IO.Stream>입니다.

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ca011f519c53924681d2c1a7042f25dcfaad208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910968"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>연습: 항목 템플릿, 2 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 항목 템플릿을 사용 하 여 연결 후 템플릿에 대 한 마법사를 제공 하려면 수도 있습니다. 서식 파일 프로젝트에 프로젝트 항목의 새 인스턴스를 추가 하는 데 사용할 사용자 로부터 정보를 수집 하는 마법사를 사용할 수 있습니다. 정보를 수집 하는 프로젝트 항목을 초기화에 사용할 수 있습니다.  
@@ -44,15 +44,15 @@ ms.locfileid: "42635202"
   
  또한이 연습을 완료 하려면 개발 컴퓨터의 다음 구성 요소가 필요 합니다.  
   
--   Windows, SharePoint 및 Visual Studio의 버전을 지원 합니다.
+- Windows, SharePoint 및 Visual Studio의 버전을 지원 합니다.
   
--   Visual Studio SDK입니다. 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
+- Visual Studio SDK입니다. 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
- 다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
+  다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
   
--   Visual Studio에서 프로젝트 및 항목 템플릿에 대 한 마법사를 제공 합니다. 자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md) 및 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스입니다.  
+- Visual Studio에서 프로젝트 및 항목 템플릿에 대 한 마법사를 제공 합니다. 자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md) 및 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스입니다.  
   
--   SharePoint에서 사용자 지정 동작입니다. 자세한 내용은 [사용자 지정 동작](http://go.microsoft.com/fwlink/?LinkId=177800)합니다.  
+- SharePoint에서 사용자 지정 동작입니다. 자세한 내용은 [사용자 지정 동작](http://go.microsoft.com/fwlink/?LinkId=177800)합니다.  
   
 ## <a name="create-the-wizard-project"></a>마법사 프로젝트를 만들려면
  이 연습을 완료 하려면 CustomActionProjectItem 솔루션에서 만든 프로젝트를 추가 해야 합니다 [연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목을 만들어](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)합니다. 구현 합니다 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스 및이 프로젝트에서 마법사 UI를 정의 합니다.  

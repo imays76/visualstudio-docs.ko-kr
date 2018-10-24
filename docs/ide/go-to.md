@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907055"
 ---
 # <a name="find-code-using-go-to-commands"></a>이동 명령을 사용하여 코드 찾기
 
@@ -27,10 +27,10 @@ Visual Studio의 **이동** 명령은 지정한 항목을 찾기 쉽도록 포�
 
 ## <a name="how-to-use-it"></a>사용 방법
 
-입력        | 함수
+입력 | 함수
 ------------ | ---
 **키보드** | **Ctrl**+**T** 또는 **Ctrl**+**,** 를 누름
-**마우스**    | **편집** > **이동** > **전체로 이동**을 선택
+**마우스** | **편집** > **이동** > **전체로 이동**을 선택
 
 코드 편집기의 오른쪽 위에 작은 창이 표시됩니다.
 
@@ -56,7 +56,7 @@ Visual Studio의 **이동** 명령은 지정한 항목을 찾기 쉽도록 포�
 
 접두사 | 아이콘 | 바로 가기 | 설명
 :-: | - | - | -
-:| ![줄 아이콘](media/gotoall-line-icon.png) | **Ctrl**+**G**         | 지정된 줄 번호로 이동합니다.
+:| ![줄 아이콘](media/gotoall-line-icon.png) | **Ctrl**+**G** | 지정된 줄 번호로 이동합니다.
 f| ![파일 아이콘](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | 지정된 파일로 이동합니다.
 r| ![최근에 사용한 파일 아이콘](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | 지정되고 최근에 방문한 파일로 이동
 t| ![형식 아이콘](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | 지정된 형식으로 이동합니다.
@@ -85,8 +85,8 @@ t| ![형식 아이콘](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+
 설정 | 설명
 ------- | ---
 미리 보기 탭 사용 | 선택한 항목을 IDE의 미리 보기 탭에서 즉시 표시합니다.
-자세한 정보 표시    | 문서 주석의 프로젝트, 파일, 줄 및 요약 정보를 창에 표시합니다.
-창 가운데 맞춤   | 이 창을 코드 편집기의 오른쪽 위가 아니라 가운데 위로 이동합니다.
+자세한 정보 표시 | 문서 주석의 프로젝트, 파일, 줄 및 요약 정보를 창에 표시합니다.
+창 가운데 맞춤 | 이 창을 코드 편집기의 오른쪽 위가 아니라 가운데 위로 이동합니다.
 
 ## <a name="see-also"></a>참고 항목
 

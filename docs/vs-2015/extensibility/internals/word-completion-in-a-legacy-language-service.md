@@ -17,12 +17,12 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1cf22cd0bc717e9e9e3d0b06b76bed8420d1778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910799"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 단어 완성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "49285300"
   
 ## <a name="implementation-steps"></a>구현 단계  
   
-1.  사용자가 선택 하는 경우 **단어 자동 완성** 에서 합니다 **IntelliSense** 메뉴는 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 명령 언어 서비스로 전송 됩니다.  
+1. 사용자가 선택 하는 경우 **단어 자동 완성** 에서 합니다 **IntelliSense** 메뉴는 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 명령 언어 서비스로 전송 됩니다.  
   
-2.  <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스 명령 및 호출을 catch 합니다 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다.  
+2. <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스 명령 및 호출을 catch 합니다 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다.  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source> 호출을 다음 클래스는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 가능한 단어 완성 및 도구 설명에 있는 단어를 사용 하 여 목록을 표시 하는 목록을 가져오기 위한 메서드를를 <xref:Microsoft.VisualStudio.Package.CompletionSet> 클래스입니다.  
+3. <xref:Microsoft.VisualStudio.Package.Source> 호출을 다음 클래스는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 가능한 단어 완성 및 도구 설명에 있는 단어를 사용 하 여 목록을 표시 하는 목록을 가져오기 위한 메서드를를 <xref:Microsoft.VisualStudio.Package.CompletionSet> 클래스입니다.  
   
-     하나의 일치 하는 word, 없는 경우는 <xref:Microsoft.VisualStudio.Package.Source> 는 단어를 완성 하는 클래스입니다.  
+    하나의 일치 하는 word, 없는 경우는 <xref:Microsoft.VisualStudio.Package.Source> 는 단어를 완성 하는 클래스입니다.  
   
- 또는 스캐너 트리거 값을 반환 하는 경우 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 식별자의 첫 번째 문자를 입력할 때 합니다 <xref:Microsoft.VisualStudio.Package.Source> 클래스는이 검색 하 고 호출 합니다 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다. 이 경우 파서에서 문자를 멤버 선택의 존재를 검색 하 고 멤버의 목록을 제공 해야 합니다.  
+   또는 스캐너 트리거 값을 반환 하는 경우 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 식별자의 첫 번째 문자를 입력할 때 합니다 <xref:Microsoft.VisualStudio.Package.Source> 클래스는이 검색 하 고 호출 합니다 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다. 이 경우 파서에서 문자를 멤버 선택의 존재를 검색 하 고 멤버의 목록을 제공 해야 합니다.  
   
 ## <a name="enabling-support-for-the-complete-word"></a>단어 자동 완성에 대 한 지원을 사용 하도록 설정  
  단어 완성 집합에 대 한 지원을 사용 하도록 설정 합니다 `CodeSense` 명명 된 매개 변수를 전달 합니다 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 언어 패키지와 관련 된 사용자 특성입니다. 이 설정의 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> 속성에는 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 클래스입니다.  

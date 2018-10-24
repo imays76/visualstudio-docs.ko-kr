@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd92e4e4b5f4a0ae77cfae393d2d51446e17bcfe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906047"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint 용 웹 파트 만들기
   웹 파트를 사용 하 여 브라우저를 사용 하 여 콘텐츠, 모양 및 SharePoint 사이트의 페이지의 동작을 수정할 수 있습니다. 웹 파트는 웹 파트 페이지 내에서 실행 되는 서버 쪽 컨트롤: SharePoint 사이트에 표시 되는 페이지의 구성 요소 들은 합니다. 참조 [구성 요소: 웹 파트](http://go.microsoft.com/fwlink/?LinkID=182097)합니다.  
@@ -84,25 +84,25 @@ ms.locfileid: "36327218"
 ## <a name="visual-web-part-limitations"></a>비주얼 웹 파트 제한
  Visual Studio부터 샌드박스 SharePoint 솔루션 및 팜 솔루션에 비주얼 웹 파트를 추가할 수 있습니다. 그러나 비주얼 웹 파트는 다음 제한 사항이 있습니다.  
   
--   비주얼 웹 파트는 대체 가능 매개 변수를 지원 하지 않습니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)합니다.  
+- 비주얼 웹 파트는 대체 가능 매개 변수를 지원 하지 않습니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)합니다.  
   
--   사용자 정의 컨트롤 또는 비주얼 웹 파트 놓 및 삭제 하거나 복사할 수 없습니다 비주얼 웹 파트에 있습니다. 이 작업에 빌드 오류가 발생 합니다.  
+- 사용자 정의 컨트롤 또는 비주얼 웹 파트 놓 및 삭제 하거나 복사할 수 없습니다 비주얼 웹 파트에 있습니다. 이 작업에 빌드 오류가 발생 합니다.  
   
--   비주얼 웹 파트 $SPUrl 같은 SharePoint 서버 토큰을 직접 지원 하지 않습니다. 자세한 내용은 항목의 "토큰 제한에 샌드박스 비주얼 웹 파트"를 참조 하세요 [문제를 해결 하는 SharePoint 솔루션](../sharepoint/troubleshooting-sharepoint-solutions.md)합니다.  
+- 비주얼 웹 파트 $SPUrl 같은 SharePoint 서버 토큰을 직접 지원 하지 않습니다. 자세한 내용은 항목의 "토큰 제한에 샌드박스 비주얼 웹 파트"를 참조 하세요 [문제를 해결 하는 SharePoint 솔루션](../sharepoint/troubleshooting-sharepoint-solutions.md)합니다.  
   
--   샌드박스 솔루션의 비주얼 웹 파트에 오류 메시지가 가끔 표시, "샌드박스 코드 실행 요청이 거부 되었습니다는 샌드박스 코드 호스트 서비스 사용자가 너무 많아 요청을 처리 하기 때문에." 이 오류에 대 한 자세한 내용은의이 게시물을 참조 하세요. 합니다 [SharePoint Developer Team Blog](http://go.microsoft.com/fwlink/?LinkId=225932)합니다.  
+- 샌드박스 솔루션의 비주얼 웹 파트에 오류 메시지가 가끔 표시, "샌드박스 코드 실행 요청이 거부 되었습니다는 샌드박스 코드 호스트 서비스 사용자가 너무 많아 요청을 처리 하기 때문에." 이 오류에 대 한 자세한 내용은의이 게시물을 참조 하세요. 합니다 [SharePoint Developer Team Blog](http://go.microsoft.com/fwlink/?LinkId=225932)합니다.  
   
--   Visual Studio에서 서버 측 JavaScript 디버깅은 지원 되지 않지만 클라이언트 쪽 JavaScript 디버깅은 지원 합니다.  
+- Visual Studio에서 서버 측 JavaScript 디버깅은 지원 되지 않지만 클라이언트 쪽 JavaScript 디버깅은 지원 합니다.  
   
-     인라인 JavaScript를 서버측 태그 파일에 추가할 수 있지만 태그에 추가 된 중단점에 대 한 디버깅이 지원 되지 않습니다. JavaScript를 디버깅 하려면 태그 파일에서 외부 JavaScript 파일을 참조 하 고 JavaScript 파일에 중단점을 설정 합니다.  
+   인라인 JavaScript를 서버측 태그 파일에 추가할 수 있지만 태그에 추가 된 중단점에 대 한 디버깅이 지원 되지 않습니다. JavaScript를 디버깅 하려면 태그 파일에서 외부 JavaScript 파일을 참조 하 고 JavaScript 파일에 중단점을 설정 합니다.  
   
--   인라인 디버깅 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 코드 태그 파일 대신 생성 된 코드 파일에서 수행 해야 합니다.  
+- 인라인 디버깅 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 코드 태그 파일 대신 생성 된 코드 파일에서 수행 해야 합니다.  
   
--   비주얼 웹 파트 사용을 지원 하지 않습니다는 `<@ Assembly Src=` 지시문입니다.  
+- 비주얼 웹 파트 사용을 지원 하지 않습니다는 `<@ Assembly Src=` 지시문입니다.  
   
--   SharePoint 웹 컨트롤 및 일부 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 컨트롤은 SharePoint 샌드박스 환경에서 지원 되지 않습니다. 오류를 샌드박스 솔루션의 비주얼 웹 파트에서 지원 되지 않는 제어를 사용 하면 "형식 또는 네임 스페이스 이름 'Microsoft.SharePoint.WebControls 네임 스페이스에 'Theme' 존재 하지 않는" 나타납니다.  
+- SharePoint 웹 컨트롤 및 일부 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 컨트롤은 SharePoint 샌드박스 환경에서 지원 되지 않습니다. 오류를 샌드박스 솔루션의 비주얼 웹 파트에서 지원 되지 않는 제어를 사용 하면 "형식 또는 네임 스페이스 이름 'Microsoft.SharePoint.WebControls 네임 스페이스에 'Theme' 존재 하지 않는" 나타납니다.  
   
- 샌드박스 솔루션에 대 한 자세한 내용은 참조 하세요. [차이점 샌드박스 솔루션과 팜 솔루션](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)합니다.  
+  샌드박스 솔루션에 대 한 자세한 내용은 참조 하세요. [차이점 샌드박스 솔루션과 팜 솔루션](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)합니다.  
   
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>이전 스타일의 SharePoint 기반 웹 파트 만들기
  사용자 지정을 만드는 데 Visual Studio에서 템플릿을 사용할 수 있습니다 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] 웹 파트를 SharePoint에 대 한 합니다. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] 웹 파트 위에 빌드됩니다는 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 웹 파트 인프라 및 새 프로젝트에 대 한 권장 되는 형식이 있습니다.  

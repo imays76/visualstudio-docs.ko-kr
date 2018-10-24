@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad4b22be98396fe58734f9c785da201450bdafcc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d046015b1a88b3699fa8ef572e39e2ffefec2064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898761"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>연습: 프로파일러 API 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,19 +124,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Visual Studio IDE에서 데이터를 수집하고 보려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE를 엽니다. **분석** 메뉴에서 **프로파일러**를 가리킨 다음 **새 성능 세션**을 선택합니다.  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE를 엽니다. **분석** 메뉴에서 **프로파일러**를 가리킨 다음 **새 성능 세션**을 선택합니다.  
   
-2.  **성능 탐색기** 창의 **대상** 목록에 컴파일된 이진 파일을 추가합니다. **대상**을 마우스 오른쪽 단추로 클릭한 다음 **대상 이진 파일 추가**를 선택합니다. **대상 이진 파일 추가** 대화 상자에서 이진 파일을 찾은 다음 **열기**를 클릭합니다.  
+2. **성능 탐색기** 창의 **대상** 목록에 컴파일된 이진 파일을 추가합니다. **대상**을 마우스 오른쪽 단추로 클릭한 다음 **대상 이진 파일 추가**를 선택합니다. **대상 이진 파일 추가** 대화 상자에서 이진 파일을 찾은 다음 **열기**를 클릭합니다.  
   
-3.  **성능 탐색기** 도구 모음의 **메서드** 목록에서 **계측**을 선택합니다.  
+3. **성능 탐색기** 도구 모음의 **메서드** 목록에서 **계측**을 선택합니다.  
   
-4.  **프로파일링 시작**을 클릭합니다.  
+4. **프로파일링 시작**을 클릭합니다.  
   
-     프로파일러는 이진 파일을 계측 및 실행하고 성능 보고서 파일을 만듭니다. 성능 보고서 파일은 **성능 탐색기**의 **보고서** 노드에 표시됩니다.  
+    프로파일러는 이진 파일을 계측 및 실행하고 성능 보고서 파일을 만듭니다. 성능 보고서 파일은 **성능 탐색기**의 **보고서** 노드에 표시됩니다.  
   
-5.  결과 성능 보고서 파일을 엽니다.  
+5. 결과 성능 보고서 파일을 엽니다.  
   
- 기본적으로 프로파일러가 시작되면 프로파일러는 전역 수준에서 데이터를 수집합니다. 프로그램의 시작 부분에서 다음 코드는 전역 프로파일링을 해제합니다.  
+   기본적으로 프로파일러가 시작되면 프로파일러는 전역 수준에서 데이터를 수집합니다. 프로그램의 시작 부분에서 다음 코드는 전역 프로파일링을 해제합니다.  
   
 ```  
 DataCollection.StopProfile(  

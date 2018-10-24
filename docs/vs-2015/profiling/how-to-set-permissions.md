@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905267"
 ---
 # <a name="how-to-set-permissions"></a>방법: 권한 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49187553"
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 사용자 그룹의 구성원은 팀의 다른 구성원과 공유되는 디스크의 폴더 및 파일에 대한 액세스 권한이 필요합니다. 두 번째 절차 "공유된 프로젝트 파일에 대한 액세스 권한을 부여하려면"에서는 이 액세스 권한을 부여하는 방법을 설명합니다.  
+  사용자 그룹의 구성원은 팀의 다른 구성원과 공유되는 디스크의 폴더 및 파일에 대한 액세스 권한이 필요합니다. 두 번째 절차 "공유된 프로젝트 파일에 대한 액세스 권한을 부여하려면"에서는 이 액세스 권한을 부여하는 방법을 설명합니다.  
   
- 사용자 그룹의 멤버는 관리자가 해당 사용자에게 프로파일링 도구의 소프트웨어 드라이버에 대한 액세스 권한을 부여한 경우 프로파일링 도구를 실행할 수 있습니다. 마지막 절차 “프로파일링 드라이버에 대한 액세스 권한을 부여하려면"에서는 이 드라이버에 대한 액세스 권한을 부여하는 방법을 설명합니다.  
+  사용자 그룹의 멤버는 관리자가 해당 사용자에게 프로파일링 도구의 소프트웨어 드라이버에 대한 액세스 권한을 부여한 경우 프로파일링 도구를 실행할 수 있습니다. 마지막 절차 “프로파일링 드라이버에 대한 액세스 권한을 부여하려면"에서는 이 드라이버에 대한 액세스 권한을 부여하는 방법을 설명합니다.  
   
 > [!NOTE]
 >  이러한 절차의 단계를 수행하려면 관리자 권한이 필요합니다.  
@@ -89,47 +89,47 @@ ms.locfileid: "49187553"
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>프로파일링 드라이버에 대한 액세스 권한을 부여하려면  
   
-1.  관리자 권한으로 명령 프롬프트를 엽니다.  
+1. 관리자 권한으로 명령 프롬프트를 엽니다.  
   
-2.  디렉터리를 다음으로 변경합니다.  
+2. 디렉터리를 다음으로 변경합니다.  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  다음 명령을 실행합니다.  
+3. 다음 명령을 실행합니다.  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     이 명령은 프로파일링 도구용 드라이버를 설치하고 시작합니다.  
+    이 명령은 프로파일링 도구용 드라이버를 설치하고 시작합니다.  
   
-     이 명령은 관리자가 아닌 사용자가 사용자 프로세스 공간에서 제공되는 프로파일링 기능을 사용할 수 있도록 프로파일링 드라이버 및 서비스를 시작합니다. 관리자만 명령을 실행할 수 있고 관리자가 아닌 사용자의 경우 명령이 실패합니다.  
+    이 명령은 관리자가 아닌 사용자가 사용자 프로세스 공간에서 제공되는 프로파일링 기능을 사용할 수 있도록 프로파일링 드라이버 및 서비스를 시작합니다. 관리자만 명령을 실행할 수 있고 관리자가 아닌 사용자의 경우 명령이 실패합니다.  
   
-     이 절차의 최종 단계를 수행하지 않으면 이 단계의 결과는 컴퓨터가 다시 시작된 후 실행 취소됩니다.  
+    이 절차의 최종 단계를 수행하지 않으면 이 단계의 결과는 컴퓨터가 다시 시작된 후 실행 취소됩니다.  
   
-4.  명령을 실행하여 컴퓨터에 대한 관리자 권한이 없는 사용자 또는 그룹이 프로파일링 드라이버 기능에 액세스하도록 허용합니다.  
+4. 명령을 실행하여 컴퓨터에 대한 관리자 권한이 없는 사용자 또는 그룹이 프로파일링 드라이버 기능에 액세스하도록 허용합니다.  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     이 명령을 실행하면 프로파일링 도구에 대한 액세스 권한이 \<user name> 또는 \<group name> 계정에 부여됩니다. \<right> 옵션에 따라 사용자가 액세스할 수 있는 프로파일링 기능이 결정됩니다. 이 \<right> 옵션은 다음 값 중 하나 이상일 수 있습니다.  
+    이 명령을 실행하면 프로파일링 도구에 대한 액세스 권한이 \<user name> 또는 \<group name> 계정에 부여됩니다. \<right> 옵션에 따라 사용자가 액세스할 수 있는 프로파일링 기능이 결정됩니다. 이 \<right> 옵션은 다음 값 중 하나 이상일 수 있습니다.  
   
-    -   FullAccess - 서비스에서 성능 데이터 수집, 프로파일링 및 세션 간 프로파일링을 포함한 모든 프로파일링 방법에 액세스하도록 허용합니다.  
+   -   FullAccess - 서비스에서 성능 데이터 수집, 프로파일링 및 세션 간 프로파일링을 포함한 모든 프로파일링 방법에 액세스하도록 허용합니다.  
   
-    -   SampleProfiling - 샘플 프로파일링 방법에 액세스하도록 허용합니다.  
+   -   SampleProfiling - 샘플 프로파일링 방법에 액세스하도록 허용합니다.  
   
-    -   CrossSession - 프로파일링 서비스에 필요한 세션 간 프로파일링에 액세스하도록 허용합니다.  
+   -   CrossSession - 프로파일링 서비스에 필요한 세션 간 프로파일링에 액세스하도록 허용합니다.  
   
-5.  (선택 사항) 컴퓨터가 다시 시작된 후 이전 단계의 결과를 보존하려면 다음 명령을 실행합니다.  
+5. (선택 사항) 컴퓨터가 다시 시작된 후 이전 단계의 결과를 보존하려면 다음 명령을 실행합니다.  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- 이제 지정된 사용자는 로그온한 후 관리자 권한 없이 프로파일링 도구를 사용할 수 있습니다.  
+   이제 지정된 사용자는 로그온한 후 관리자 권한 없이 프로파일링 도구를 사용할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d1b0dec7c165162645f30d4734f05885047083
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47364a88ca5e49a691120b198ce32b74e9d895d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113278"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905547"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
-프로세스의 실행을 다시 시작 합니다.  
+프로세스의 실행을 다시 시작합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,10 +41,10 @@ int ResumeProcess(
   
 #### <a name="parameters"></a>매개 변수  
  `pPortProcess`  
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 다시 시작할 프로세스를 나타내는 개체입니다.  
+ [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 다시 시작 될 프로세스를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   

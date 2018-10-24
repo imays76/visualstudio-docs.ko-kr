@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e62f13d0c947ef8f1a9cfdd014f5c03b194ea71d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908355"
 ---
 # <a name="actions-pane-overview"></a>작업 창 개요
   작업창은 사용자 지정 가능한 **문서 동작** 특정 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서에 연결 된 작업창 합니다. 작업창과 같은 다른 기본 제공 작업창과 함께 Office 작업창 내에서 호스트 되는 **XML 원본은** Excel에서 작업 창 또는 **스타일 및 서식** word에서 작업창입니다. Windows Forms 컨트롤 또는 WPF 컨트롤을 사용하여 작업 창 사용자 인터페이스를 디자인할 수 있습니다.
@@ -48,16 +48,16 @@ ms.locfileid: "35675268"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>작업 창에 여러 개의 컨트롤 추가  
  사용자 컨트롤의 컨트롤을 그룹화 하 고 다음 사용자 정의 컨트롤을 추가 해야 작업 창에 여러 컨트롤을 추가 하는 경우는 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 속성입니다. 이 프로세스에는 다음 단계가 포함됩니다.  
 
-1.  작업 창의 사용자 인터페이스 (UI)를 추가 하 여 만듭니다는 **작업 창 컨트롤** 또는 **사용자 정의 컨트롤** 프로젝트 항목입니다. 두 항목에는 모두 사용자 지정 Windows Forms <xref:System.Windows.Forms.UserControl> 클래스가 포함되어 있습니다. **작업 창 컨트롤** 하 고 **사용자 정의 컨트롤** 항목은 동일 하며, 유일한 차이점은 해당 이름입니다.  
+1. 작업 창의 사용자 인터페이스 (UI)를 추가 하 여 만듭니다는 **작업 창 컨트롤** 또는 **사용자 정의 컨트롤** 프로젝트 항목입니다. 두 항목에는 모두 사용자 지정 Windows Forms <xref:System.Windows.Forms.UserControl> 클래스가 포함되어 있습니다. **작업 창 컨트롤** 하 고 **사용자 정의 컨트롤** 항목은 동일 하며, 유일한 차이점은 해당 이름입니다.  
 
-2.  디자이너를 사용하여 또는 코드를 작성하여 <xref:System.Windows.Forms.UserControl>에 Windows Forms 컨트롤을 추가합니다.  
+2. 디자이너를 사용하여 또는 코드를 작성하여 <xref:System.Windows.Forms.UserControl>에 Windows Forms 컨트롤을 추가합니다.  
 
-    > [!NOTE]  
-    >  Windows Forms <xref:System.Windows.Forms.UserControl>에 WPF <xref:System.Windows.Controls.UserControl>을 추가하여 작업 창에 WPF 컨트롤을 추가할 수도 있습니다. 자세한 내용은 [Office 솔루션에서 사용 하 여 WPF 컨트롤](../vsto/using-wpf-controls-in-office-solutions.md)합니다.  
+   > [!NOTE]  
+   >  Windows Forms <xref:System.Windows.Forms.UserControl>에 WPF <xref:System.Windows.Controls.UserControl>을 추가하여 작업 창에 WPF 컨트롤을 추가할 수도 있습니다. 자세한 내용은 [Office 솔루션에서 사용 하 여 WPF 컨트롤](../vsto/using-wpf-controls-in-office-solutions.md)합니다.  
 
-3.  프로젝트에서 `ThisWorkbook`(Excel용) 또는 `ThisDocument`(Word용) 클래스의 `ActionsPane` 필드에 포함된 컨트롤에 사용자 지정 사용자 정의 컨트롤의 인스턴스를 추가합니다.  
+3. 프로젝트에서 `ThisWorkbook`(Excel용) 또는 `ThisDocument`(Word용) 클래스의 `ActionsPane` 필드에 포함된 컨트롤에 사용자 지정 사용자 정의 컨트롤의 인스턴스를 추가합니다.  
 
- 이 프로세스를 자세히 보여 주는 예제를 보려면 [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.  
+   이 프로세스를 자세히 보여 주는 예제를 보려면 [방법: Word 문서에 작업창을 추가 하거나 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)합니다.  
 
 ## <a name="hide-the-actions-pane"></a>작업 창 숨기기  
  <xref:Microsoft.Office.Tools.ActionsPane> 클래스에는 <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> 메서드 및 <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> 속성이 있지만 <xref:Microsoft.Office.Tools.ActionsPane> 클래스 자체의 멤버를 사용하여 사용자 인터페이스에서 작업 창을 제거할 수 없습니다. 호출을 <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> 메서드 또는 설정 합니다 <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> 속성을 **false** ; 작업 창의 컨트롤만 숨겨집니다 작업창 숨겨지지 않습니다.  

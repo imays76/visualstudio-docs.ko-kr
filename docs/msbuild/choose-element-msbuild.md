@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895472"
 ---
 # <a name="choose-element-msbuild"></a>Choose 요소(MSBuild)
 자식 요소를 평가하여 평가할 `ItemGroup` 요소 및/또는 `PropertyGroup` 요소의 집합 하나를 선택합니다.  
@@ -64,11 +64,11 @@ ms.locfileid: "37945771"
 
 ### <a name="parent-elements"></a>부모 요소  
 
-|요소|설명|  
-|-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|모든 `When` 요소가 `false`로 평가될 경우 실행할 코드 블록을 지정합니다.|  
-|[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
-|[When](../msbuild/when-element-msbuild.md)|`Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다.|  
+| 요소 | 설명 |
+| - | - |
+| [Otherwise](../msbuild/otherwise-element-msbuild.md) | 모든 `When` 요소가 `false`로 평가될 경우 실행할 코드 블록을 지정합니다. |
+| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
+| [When](../msbuild/when-element-msbuild.md) | `Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다. |
 
 ## <a name="remarks"></a>설명  
  `Choose`, `When` 및 `Otherwise` 요소는 몇 가지 가능한 대안 중에서 실행할 코드의 한 섹션을 선택하는 방법을 제공하기 위해 함께 사용됩니다. 자세한 내용은 [조건부 구문](../msbuild/msbuild-conditional-constructs.md)을 참조하세요.  

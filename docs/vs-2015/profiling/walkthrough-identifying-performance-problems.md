@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274484"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896148"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>연습: 성능 문제 확인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49274484"
   
 ## <a name="prerequisites"></a>전제 조건  
   
--   C#에 대한 중간 정도의 이해도  
+- C#에 대한 중간 정도의 이해도  
   
--   [PeopleTrax 샘플](../profiling/peopletrax-sample-profiling-tools.md)의 복사본  
+- [PeopleTrax 샘플](../profiling/peopletrax-sample-profiling-tools.md)의 복사본  
   
- 프로파일링을 통해 제공되는 정보를 사용하려면 디버깅 기호 정보를 준비해 두는 것이 가장 좋습니다.  
+  프로파일링을 통해 제공되는 정보를 사용하려면 디버깅 기호 정보를 준비해 두는 것이 가장 좋습니다.  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>샘플링 방법을 사용하여 프로 파일링  
  샘플링은 해당하는 프로세스를 주기적으로 폴링하여 활성 함수를 확인하는 프로파일링 방법입니다. 결과 데이터는 프로세스를 샘플링할 때 확인하려는 함수가 호출 스택 위에 있었던 빈도에 해당하는 수를 제공합니다.  
@@ -139,29 +139,29 @@ ms.locfileid: "49274484"
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>계측된 프로파일링 결과를 분석하려면  
   
-1.  보고서 **요약** 뷰의 시간 표시 막대 그래프에는 프로파일링 실행 과정 동안 프로그램의 CPU 사용률이 표시됩니다. 데이터 내보내기 작업의 경우 그래프 오른쪽의 CPU 사용률이 크게 높아지거나 안정적으로 유지됩니다. 성능 세션을 필터링하여 내보내기 작업에서 수집된 데이터만 표시하고 분석할 수 있습니다. 데이터 내보내기 작업이 시작된 그래프상의 지점 왼쪽을 클릭합니다. 해당 작업의 오른쪽을 다시 클릭합니다. 그런 다음 시간 표시 막대 오른쪽의 링크 목록에서 **선택 필터**를 클릭합니다.  
+1. 보고서 **요약** 뷰의 시간 표시 막대 그래프에는 프로파일링 실행 과정 동안 프로그램의 CPU 사용률이 표시됩니다. 데이터 내보내기 작업의 경우 그래프 오른쪽의 CPU 사용률이 크게 높아지거나 안정적으로 유지됩니다. 성능 세션을 필터링하여 내보내기 작업에서 수집된 데이터만 표시하고 분석할 수 있습니다. 데이터 내보내기 작업이 시작된 그래프상의 지점 왼쪽을 클릭합니다. 해당 작업의 오른쪽을 다시 클릭합니다. 그런 다음 시간 표시 막대 오른쪽의 링크 목록에서 **선택 필터**를 클릭합니다.  
   
-     **실행 부하 과다 경로** 트리에는 PeopleTrax.Form1.ExportData 메서드에 의해 호출된 <xref:System.String.Concat%2A> 메서드가 작업 시간 중 대부분을 사용함이 표시됩니다. **System.String.Concat**는 **개별 작업이 가장 많은 함수** 목록에서도 맨 위에 있으므로 이 함수에 소요되는 시간을 줄이는 것이 최적화에서 중요한 작업일 가능성이 높습니다.  
+    **실행 부하 과다 경로** 트리에는 PeopleTrax.Form1.ExportData 메서드에 의해 호출된 <xref:System.String.Concat%2A> 메서드가 작업 시간 중 대부분을 사용함이 표시됩니다. **System.String.Concat**는 **개별 작업이 가장 많은 함수** 목록에서도 맨 위에 있으므로 이 함수에 소요되는 시간을 줄이는 것이 최적화에서 중요한 작업일 가능성이 높습니다.  
   
-2.  요약 테이블 중 하나에서 **System.String.Concat**를 두 번 클릭하여 함수 정보 뷰에서 자세한 내용을 확인합니다.  
+2. 요약 테이블 중 하나에서 **System.String.Concat**를 두 번 클릭하여 함수 정보 뷰에서 자세한 내용을 확인합니다.  
   
-3.  Concat를 호출하는 메서드는 PeopleTrax.Form1.ExportData뿐임을 확인할 수 있습니다. **호출 함수**에서 **PeopleTrax.Form1.ExportData**를 클릭하여 함수 정보 뷰의 대상으로 해당 메서드를 선택합니다.  
+3. Concat를 호출하는 메서드는 PeopleTrax.Form1.ExportData뿐임을 확인할 수 있습니다. **호출 함수**에서 **PeopleTrax.Form1.ExportData**를 클릭하여 함수 정보 뷰의 대상으로 해당 메서드를 선택합니다.  
   
-4.  함수 코드 뷰 창에서 메서드를 검사합니다. **System.String.Concat**에 대한 리터럴 호출은 없습니다. 대신 += 피연산자는 여러 번 사용됩니다. 컴파일러는 이 피연산자를 **System.String.Concat** 호출로 바꿉니다. .NET Framework에서는 문자열을 수정하면 새 문자열이 할당됩니다. .NET Framework에는 문자열 연결용으로 최적화된 <xref:System.Text.StringBuilder> 클래스가 포함되어 있습니다.  
+4. 함수 코드 뷰 창에서 메서드를 검사합니다. **System.String.Concat**에 대한 리터럴 호출은 없습니다. 대신 += 피연산자는 여러 번 사용됩니다. 컴파일러는 이 피연산자를 **System.String.Concat** 호출로 바꿉니다. .NET Framework에서는 문자열을 수정하면 새 문자열이 할당됩니다. .NET Framework에는 문자열 연결용으로 최적화된 <xref:System.Text.StringBuilder> 클래스가 포함되어 있습니다.  
   
-5.  이 문제 영역을 최적화된 코드로 바꾸려면 PeoplexTrax 프로젝트의 조건부 컴파일 기호로 OPTIMIZED_EXPORTDATA를 추가합니다.  
+5. 이 문제 영역을 최적화된 코드로 바꾸려면 PeoplexTrax 프로젝트의 조건부 컴파일 기호로 OPTIMIZED_EXPORTDATA를 추가합니다.  
   
-6.  솔루션 탐색기에서 PeopleTrax 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다.  
+6. 솔루션 탐색기에서 PeopleTrax 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다.  
   
-     PeopleTrax 프로젝트 속성 폼이 나타납니다.  
+    PeopleTrax 프로젝트 속성 폼이 나타납니다.  
   
-7.  **빌드** 탭을 클릭합니다.  
+7. **빌드** 탭을 클릭합니다.  
   
-8.  **조건부 컴파일 기호** 텍스트 상자에 **OPTIMIZED_EXPORTDATA**를 입력합니다.  
+8. **조건부 컴파일 기호** 텍스트 상자에 **OPTIMIZED_EXPORTDATA**를 입력합니다.  
   
 9. 프로젝트 속성 폼을 닫고 메시지가 표시되면 **모두 저장**을 선택합니다.  
   
- 응용 프로그램을 다시 실행하면 성능이 현저히 향상 되었음을 확인할 수 있습니다. 성능이 사용자가 체감할 수 있도록 향상되더라도 프로파일링 세션을 다시 실행하는 것이 좋습니다. 첫 번째 문제로 인해 다른 문제는 명확하게 드러나지 않았을 수도 있으므로, 문제를 해결한 후에 데이터를 검토해야 합니다.  
+   응용 프로그램을 다시 실행하면 성능이 현저히 향상 되었음을 확인할 수 있습니다. 성능이 사용자가 체감할 수 있도록 향상되더라도 프로파일링 세션을 다시 실행하는 것이 좋습니다. 첫 번째 문제로 인해 다른 문제는 명확하게 드러나지 않았을 수도 있으므로, 문제를 해결한 후에 데이터를 검토해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [개요](../profiling/overviews-performance-tools.md)   

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910630"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>이벤트 처리기로 모델 외부의 변경 내용 전파
 
@@ -173,7 +173,7 @@ private static void AlbumTitleAdjuster(object sender,
 각 이벤트 유형에 Store.EventManagerDirectory에서 컬렉션에 해당합니다. 추가 하거나 언제 든 지 이벤트 처리기를 제거할 수 있습니다 하지만 일반적인 문서를 로드 하는 경우에 추가 하는 것입니다.
 
 |`EventManagerDirectory` 속성 이름|될 때 실행|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|도메인 클래스, 도메인 관계, 모양, 연결선 또는 다이어그램의 인스턴스가 만들어집니다.|
 |ElementDeleted|모델 요소 상점의 요소 디렉터리에서 제거 되었습니다 이며 더 이상 원본 또는 관계의 대상입니다. 요소는 실제로 메모리에서 삭제 되지 되지만 이후 실행 취소의 경우 유지 됩니다.|
 |ElementEventsBegun|외부 트랜잭션이 끝날 때 호출 됩니다.|

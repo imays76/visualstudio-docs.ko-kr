@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2adef763b46a00f380ef7fb0f9f2d0a3ecdcfb8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909701"
 ---
 # <a name="modify-load-test-logging-settings"></a>부하 테스트 로깅 설정 수정
 
@@ -24,7 +24,7 @@ ms.locfileid: "39379659"
 *테스트 컨트롤러*에서는 테스트가 실행되는 동안 수집된 모든 부하 테스트 샘플 데이터를 데이터베이스 로그에 스풀링합니다. 타이밍 정보와 오류 정보 같은 추가 데이터는 테스트가 완료된 후에 데이터베이스로 로드됩니다.
 
 |작업|관련 항목|
-|----------|-----------------------|
+|-|-----------------------|
 |**부하 테스트가 실행되는 동안 로그를 저장할 빈도 지정:** 부하 테스트가 실행될 때 테스트 로그를 저장할 빈도를 지정할 수 있습니다.|-   [방법: 테스트 로그를 저장할 빈도 지정](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**부하 테스트가 실패할 경우 로그 저장:** 부하 테스트가 실패할 때마다 테스트 로그를 저장할지 여부를 지정할 수 있습니다.|-   [방법: 테스트 실패를 테스트 로그에 저장할지 여부 지정](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**로그 파일의 최대 파일 크기 설정:** 테스트 컨트롤러 서비스와 연결된 XML 구성 파일을 편집하여 로그 파일에 사용할 최대 파일 크기를 지정할 수 있습니다.|[방법: 로그 파일의 최대 크기 지정](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|

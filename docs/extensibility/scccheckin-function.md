@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc60657eae830fa02d87f52225de780d8a688c11
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 95e63c9d8875bb222bf0ab1c161b4437de7466dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898280"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 함수
 이전에 체크 아웃 된 파일이 원본 제어 시스템에 변경 내용을 저장 하 고 새 버전을 만드는이 함수를 확인 합니다. 이 함수는 개수 및 체크 인 파일의 이름 배열을 사용 하 여 호출 됩니다.  

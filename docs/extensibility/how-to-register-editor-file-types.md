@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638432"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896928"
 ---
 # <a name="how-to-register-editor-file-types"></a>방법: 편집기 파일 형식 등록
 일부분으로 제공 하는 등록 특성을 사용 하 여 편집기 파일 형식을 등록 하는 가장 쉬운 방법은는 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 관리 되는 패키지 프레임 워크 (MPF) 클래스입니다. 네이티브에서 패키지를 구현 하는 경우 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], 편집기 및 연결 된 확장을 등록 하는 레지스트리 스크립트를 작성할 수도 있습니다.
@@ -26,44 +26,44 @@ ms.locfileid: "39638432"
 
 ### <a name="to-register-editor-file-types-using-mpf-classes"></a>MPF 클래스를 사용 하 여 편집기 파일 형식 등록
 
-1.  제공 된 <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> VSPackage의 클래스에 편집기에 대 한 적절 한 매개 변수를 사용 하 여 클래스입니다.
+1. 제공 된 <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> VSPackage의 클래스에 편집기에 대 한 적절 한 매개 변수를 사용 하 여 클래스입니다.
 
-    ```
-    [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
-         ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
-         TemplateDir = "..\\..\\Templates",
-         NameResourceID = 106)]
-    ```
+   ```
+   [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
+        ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
+        TemplateDir = "..\\..\\Templates",
+        NameResourceID = 106)]
+   ```
 
-     여기서 *합니다. 샘플* 이 편집기에 대해 등록 된 확장 이며 "32" 우선 순위 수준입니다.
+    여기서 *합니다. 샘플* 이 편집기에 대해 등록 된 확장 이며 "32" 우선 순위 수준입니다.
 
-     합니다 `projectGuid` 에 정의 된 기타 파일 형식에 대 한 guid <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>합니다. 결과 파일은 빌드 프로세스의 일부가 되도록 하지 있도록 기타 파일 형식이 제공 됩니다.
+    합니다 `projectGuid` 에 정의 된 기타 파일 형식에 대 한 guid <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>합니다. 결과 파일은 빌드 프로세스의 일부가 되도록 하지 있도록 기타 파일 형식이 제공 됩니다.
 
-     *TemplateDir* 관리 되는 기본 편집기 샘플에 포함 되어 있는 템플릿 파일이 포함 된 폴더를 나타냅니다.
+    *TemplateDir* 관리 되는 기본 편집기 샘플에 포함 되어 있는 템플릿 파일이 포함 된 폴더를 나타냅니다.
 
-     `NameResourceID` 에 정의 되어는 *Resources.h* BasicEditorUI 프로젝트의 파일 및 편집기를 "내 편집기"로 식별 합니다.
+    `NameResourceID` 에 정의 되어는 *Resources.h* BasicEditorUI 프로젝트의 파일 및 편집기를 "내 편집기"로 식별 합니다.
 
-2.  <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드를 재정의합니다.
+2. <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드를 재정의합니다.
 
-     구현에서는 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드를 호출 합니다 <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> 메서드와으로 편집기 팩터리의 인스턴스 아래에서 설명 하는 전달 합니다.
+    구현에서는 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드를 호출 합니다 <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> 메서드와으로 편집기 팩터리의 인스턴스 아래에서 설명 하는 전달 합니다.
 
-    ```csharp
-    protected override void Initialize()
-    {
-        Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
-        "Entering Initialize() of: {0}", this.ToString()));
-        base.Initialize();
-           //Create Editor Factory
-        editorFactory = new EditorFactory(this);
-        base.RegisterEditorFactory(editorFactory);
-    }
-    ```
+   ```csharp
+   protected override void Initialize()
+   {
+       Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
+       "Entering Initialize() of: {0}", this.ToString()));
+       base.Initialize();
+          //Create Editor Factory
+       editorFactory = new EditorFactory(this);
+       base.RegisterEditorFactory(editorFactory);
+   }
+   ```
 
-     이 단계는 편집기 팩터리와 편집기 파일 확장명을 등록합니다.
+    이 단계는 편집기 팩터리와 편집기 파일 확장명을 등록합니다.
 
-3.  편집기 팩터리를 등록 취소 합니다.
+3. 편집기 팩터리를 등록 취소 합니다.
 
-     편집기 팩터리 VSPackage 삭제 될 때 자동으로 등록 된지 않습니다. 편집기 팩터리 개체 구현 하는 경우는 <xref:System.IDisposable> 인터페이스를 해당 `Dispose` 팩터리를 등록을 취소 한 후 메서드는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.
+    편집기 팩터리 VSPackage 삭제 될 때 자동으로 등록 된지 않습니다. 편집기 팩터리 개체 구현 하는 경우는 <xref:System.IDisposable> 인터페이스를 해당 `Dispose` 팩터리를 등록을 취소 한 후 메서드는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.
 
 ## <a name="registration-using-a-registry-script"></a>레지스트리 스크립트를 사용 하 여 등록
  네이티브에서 파일 형식과 편집기 팩터리를 등록 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 이루어집니다 다음에 설명 된 대로 windows 레지스트리에 쓸 레지스트리 스크립트를 사용 하 합니다.

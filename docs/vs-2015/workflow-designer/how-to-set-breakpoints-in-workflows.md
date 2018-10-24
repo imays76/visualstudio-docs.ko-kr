@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 18d87e523e9c0456f0f80add89c2ade32cf903fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896226"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>방법: 워크플로에 중단점 설정
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에서는 Visual Basic 또는 C# 코드를 사용할 때와 같이 그래픽 워크플로의 중단점을 설정할 수 있습니다. 예상대로 설정한 각 중단점에서 워크플로 실행이 중지됩니다.  
@@ -26,10 +26,10 @@ ms.locfileid: "49199812"
   
 > [!NOTE]
 >  호출된 워크플로에는 중단점을 설정할 수 없습니다.  
-  
+> 
 > [!WARNING]
->  옵션을 선택 했는지 확인 **내 코드만 사용 (관리 전용)** 에서 합니다 **도구**에 **옵션**를 **디버깅** 하기 전에 메뉴 디버그 합니다. 두 시퀀스가 다른 시퀀스 내에 중첩 된 있고 첫 번째 내부 시퀀스에 중단점을 설정한 경우 키를 눌러 **F11** 하는 경우 두 번째 내부 시퀀스에 디버깅 되지 것입니다는 **내 코드만 사용 (관리 전용)** 을 선택 합니다.  
-  
+>  옵션을 선택 했는지 확인 **내 코드만 사용 (관리 전용)** 에서 합니다 **도구**에 **옵션**를 **디버깅** 하기 전에 메뉴 디버그 합니다. 두 시퀀스가 다른 시퀀스 내에 중첩 된 있고 첫 번째 내부 시퀀스에 중단점을 설정한 경우 키를 눌러 **F11** 하는 경우 두 번째 내부 시퀀스에 디버깅 되지 것입니다는 <strong>내 코드만 사용 (관리 전용)</strong>을 선택 합니다.  
+> 
 > [!WARNING]
 >  XAML 파일 속성에 대한 전체 경로가 정확하지 않은 경우 워크플로의 중단점이 적중되지 않습니다. XAML 파일의 전체 경로는 프로젝트/솔루션을 다른 폴더 또는 다른 시스템으로 이동한 후 정확성을 잃습니다. Ctrl+S를 선택하여 전체 경로 속성을 저장하고 업데이트하세요.  
   

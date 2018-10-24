@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905105"
 ---
 # <a name="keybinding-element"></a>KeyBinding 요소
 KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정합니다.  
   
- 명령에는 상호 연결 된 단일 및 이중 키 바인딩을 가질 수 있습니다. 단일 키 바인딩을 예로 **Ctrl**+**S** 에 대 한 합니다 **저장** 명령입니다. 이중 키 바인딩을 두 개의 연속 키 조합의 명령을 트리거할 필요 합니다. 이중 키 바인딩을 예로 **Ctrl * +** K**를**Ctrl**+** K * * 책갈피를 설정 합니다.  
+ 명령에는 상호 연결 된 단일 및 이중 키 바인딩을 가질 수 있습니다. 단일 키 바인딩을 예로 **Ctrl**+**S** 에 대 한 합니다 **저장** 명령입니다. 이중 키 바인딩을 두 개의 연속 키 조합의 명령을 트리거할 필요 합니다. 이중 키 바인딩을 예로 <strong>Ctrl*+</strong>K<strong>를</strong>Ctrl<strong>+</strong>K** 책갈피를 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   

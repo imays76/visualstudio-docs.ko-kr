@@ -14,35 +14,36 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f5d21405b64901e20ffd82594672319ecbf0d223
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d338b2bece99f720670871a1b92c6b2a57c4280
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189230"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908589"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>JavaScript IntelliSense에 대한 JSDoc 주석 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio의 IntelliSense는 표준 JSDoc 주석을 사용하여 스크립트에 추가하는 정보를 표시합니다. JSDoc 주석을 사용하여 함수, 필드 및 변수와 같은 코드 요소에 대한 정보를 제공할 수 있습니다.  
-  
+
 ## <a name="jsdoc-comment-tags"></a>JSDoc 주석 태그  
  다음과 같은 표준 JSDoc 주석 태그는 IntelliSense에서 코드에 대한 정보를 표시하는 데 사용됩니다.  
-  
-|JSDoc 태그|구문|노트|  
-|---------------|------------|-----------|  
-|@deprecated|@deprecated *설명*|사용되지 않는 함수 또는 메서드를 지정합니다.|  
-|@description|@description *설명*|함수 또는 메서드에 대한 설명을 지정합니다.|  
-|@param|@param {*형식*} *parameterName * * 설명*|함수 또는 메서드의 매개 변수에 대한 정보를 지정합니다.<br /><br /> TypeScript 지원 @paramTag합니다.|  
-|@property|@property {*형식*} *propertyName*|설명을 포함하여 개체에 정의된 필드 또는 멤버에 대한 정보를 지정합니다.|  
-|@returns|@returns {*형식*}|반환 값을 지정합니다.<br /><br /> TypeScript를 사용 하 여 @returnType 대신 @returns합니다.|  
-|@summary|@summary *설명*|함수 또는 메서드에 대 한 설명을 지정 합니다 (동일 @description).|  
-|@type|@type {*형식*}|상수 또는 변수의 형식을 지정합니다.|  
-|@typedef|@typedef {*형식*} *customTypeName*|사용자 지정 형식을 지정합니다.|  
-  
+
+
+|  JSDoc 태그   |                       구문                        |                                                     노트                                                      |
+|--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| @deprecated  |              @deprecated *설명*              |                                   사용되지 않는 함수 또는 메서드를 지정합니다.                                   |
+| @description |             @description *설명*              |                              함수 또는 메서드에 대한 설명을 지정합니다.                               |
+|    @param    | @param {*형식*} *parameterName*<em>설명</em> | 함수 또는 메서드의 매개 변수에 대한 정보를 지정합니다.<br /><br /> TypeScript 지원 @paramTag합니다. |
+|  @property   |          @property {*형식*} *propertyName*          |   설명을 포함하여 개체에 정의된 필드 또는 멤버에 대한 정보를 지정합니다.    |
+|   @returns   |                  @returns {*형식*}                  |           반환 값을 지정합니다.<br /><br /> TypeScript를 사용 하 여 @returnType 대신 @returns합니다.           |
+|   @summary   |               @summary *설명*                |                   함수 또는 메서드에 대 한 설명을 지정 합니다 (동일 @description).                   |
+|    @type     |                   @type {*형식*}                    |                                상수 또는 변수의 형식을 지정합니다.                                |
+|   @typedef   |         @typedef {*형식*} *customTypeName*          |                                            사용자 지정 형식을 지정합니다.                                            |
+
 ### <a name="examples"></a>예제  
  다음 예제에서는 사용 합니다 @description, @param, 및 @return 라는 함수에 대 한 JSDoc 태그 `getArea`합니다.  
-  
+
 ```javascript  
 /** @description Determines the area of a circle that has the specified radius parameter.  
  * @param {number} radius The radius of the circle.  
@@ -54,13 +55,13 @@ function getArea(radius) {
     return areaVal;  
 }  
 ```  
-  
+
  앞의 예제에서 IntelliSense는 `getArea`에 대한 여는 괄호를 입력할 때 설명, 매개 변수 및 반환 정보를 표시합니다.  
-  
+
  ![함수에 대 한 IntelliSense 정보](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")  
-  
+
  다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 @typedef 사용 하 여 태그를 @property 태그입니다.  
-  
+
 ```javascript  
 /**  
   * @typedef {object} Weather  
@@ -68,22 +69,22 @@ function getArea(radius) {
   */  
 function getForecast(Weather) {  
 }  
-  
+
 var w = new Weather();  
 ```  
-  
+
  다음 예제에서는 사용 된 @type JSDoc 태그입니다. 이 예제와 같이 초기 별표 쌍을 수행 하는 별표 (*)를 단일 (\*\*)은 필요 하지 않습니다.  
-  
+
 ```javascript  
 /**  
     @type {string}  
 */  
 const RED = 'FF0000';  
-  
+
 ```  
-  
+
  다음 예제에서는 사용 하는 방법의 @deprecated JSDoc 태그입니다.  
-  
+
 ```javascript  
 /**  
  * @deprecated since version 2.0  

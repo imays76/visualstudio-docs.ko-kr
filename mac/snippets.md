@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 864b39331944e881fe1bcdcfefa2dd7c1cebab09
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: bc362c950b919a4f9f663b5bd3ce1a2f0cbfb00a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906856"
 ---
 # <a name="code-snippets"></a>코드 조각 
 
@@ -28,11 +28,11 @@ _코드 템플릿_이라고도 하는 코드 조각은 미리 작성된 코드 �
 
 * **도구 상자** - 도구 상자 패드를 사용하여 모든 코드 조각의 목록을 표시합니다. 도구 상자의 템플릿을 소스 코드에서 올바른 위치에 끌어 놓습니다.
 
- ![도구 상자의 코드 조각](media/source-editor-image14.png)
+  ![도구 상자의 코드 조각](media/source-editor-image14.png)
 
 * **템플릿 삽입 명령** - 현재는 템플릿 삽입 기능에 설정된 기본 키 바인딩이 없습니다. 키 바인딩을 만들려면 **Visual Studio > 기본 설정... > 키 바인딩**으로 이동하고 `template`을 검색합니다. 이렇게 하면 [바인딩 편집] 필드에 원하는 키 바인딩을 추가한 다음 **적용**을 클릭할 수 있습니다.
 
- ![템플릿 삽입 명령](media/source-editor-image15.png)
+  ![템플릿 삽입 명령](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>새 템플릿 만들기
 

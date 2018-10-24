@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b6c27bdd3f6806545551a766d92550622001ee
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bc43329070795415962cf18068f8320ae7458604
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905418"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Visual Studio SDK에는 이벤트를 노출 합니다.
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 있습니다 자동화를 사용 하 여 이벤트의 소스가 있습니다. 프로젝트 및 프로젝트 항목에 대 한 이벤트 소싱 하는 것이 좋습니다.  
@@ -28,23 +28,23 @@ ms.locfileid: "39500409"
   
  다음 프로세스에서는 VSPackage 관련 이벤트가 반환 되는 방법을 설명 합니다.  
   
-1.  환경을 시작합니다.  
+1. 환경을 시작합니다.  
   
-2.  아래에 있는 모든 값 이름이 레지스트리에서 읽고 합니다 **Automation**를 **AutomationEvents**, 및 **AutomationProperties** 모든 Vspackage, 및의 이름은 해당 하는 저장소 키를 테이블입니다.  
+2. 아래에 있는 모든 값 이름이 레지스트리에서 읽고 합니다 **Automation**를 **AutomationEvents**, 및 **AutomationProperties** 모든 Vspackage, 및의 이름은 해당 하는 저장소 키를 테이블입니다.  
   
-3.  이 예제에서는 automation 소비자를 호출 `DTE.Events.AutomationProjectsEvents` 또는 `DTE.Events.AutomationProjectItemsEvents`합니다.  
+3. 이 예제에서는 automation 소비자를 호출 `DTE.Events.AutomationProjectsEvents` 또는 `DTE.Events.AutomationProjectItemsEvents`합니다.  
   
-4.  환경은 테이블에서 문자열 매개 변수를 찾아서 해당 VSPackage를 로드 합니다.  
+4. 환경은 테이블에서 문자열 매개 변수를 찾아서 해당 VSPackage를 로드 합니다.  
   
-5.  환경 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 메서드 호출에이 예제에서는 전달 된 이름을 사용 하 여 `AutomationProjectsEvents` 또는 `AutomationProjectItemsEvents`합니다.  
+5. 환경 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 메서드 호출에이 예제에서는 전달 된 이름을 사용 하 여 `AutomationProjectsEvents` 또는 `AutomationProjectItemsEvents`합니다.  
   
-6.  VSPackage와 같은 메서드를가지고 있는 루트 개체를 만듭니다 `get_AutomationProjectsEvents` 고 `get_AutomationProjectItemEvents` 다음 개체에 IDispatch 포인터를 반환 합니다.  
+6. VSPackage와 같은 메서드를가지고 있는 루트 개체를 만듭니다 `get_AutomationProjectsEvents` 고 `get_AutomationProjectItemEvents` 다음 개체에 IDispatch 포인터를 반환 합니다.  
   
-7.  Automation 호출에 전달 된 이름을 기반으로 적절 한 메서드를 호출 하는 환경.  
+7. Automation 호출에 전달 된 이름을 기반으로 적절 한 메서드를 호출 하는 환경.  
   
-8.  `get_` 메서드 둘 다 구현 하는 다른 IDispatch 기반 이벤트 개체를 만듭니다를 `IConnectionPointContainer` 인터페이스 및 `IConnectionPoint` 인터페이스 및 반환은 `IDispatchpointer` 개체입니다.  
+8. `get_` 메서드 둘 다 구현 하는 다른 IDispatch 기반 이벤트 개체를 만듭니다를 `IConnectionPointContainer` 인터페이스 및 `IConnectionPoint` 인터페이스 및 반환은 `IDispatchpointer` 개체입니다.  
   
- Automation을 사용 하 여 이벤트를 노출 하려면에 응답 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 및 조사식 레지스트리에 추가 하는 문자열입니다. 문자열에 기본 프로젝트 샘플 *BscProjectsEvents* 하 고 *BscProjectItemsEvents*합니다.  
+   Automation을 사용 하 여 이벤트를 노출 하려면에 응답 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 및 조사식 레지스트리에 추가 하는 문자열입니다. 문자열에 기본 프로젝트 샘플 *BscProjectsEvents* 하 고 *BscProjectItemsEvents*합니다.  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>기본 프로젝트 샘플에서 레지스트리 항목  
  이 섹션에서는 레지스트리에 자동화 이벤트 값을 추가 하는 위치를 보여 줍니다.  
@@ -55,7 +55,7 @@ ms.locfileid: "39500409"
   
  **AutomationProjectItemEvents** = 반환 된 `AutomationProjectItemsEvents` 개체입니다.  
   
-|name|형식|범위|설명|  
+|이름|형식|범위|설명|  
 |----------|----------|-----------|-----------------|  
 |기본 (@)|REG_SZ|사용 되지 않는|사용되지 않습니다. 설명서에 대 한 데이터 필드를 사용할 수 있습니다.|  
 |*AutomationProjectsEvents*|REG_SZ|이벤트 개체의 이름입니다.|키 이름에만 관련이 있습니다. 설명서에 대 한 데이터 필드를 사용할 수 있습니다.<br /><br /> 이 예제에서는 기본 프로젝트 샘플에서 제공 됩니다.|  

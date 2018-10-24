@@ -13,12 +13,12 @@ ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc1d47030cf8c71b681e7f6f2ff3c6df5dfa58eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c10611ee05178f907c36aae268b0d6990a9e6606
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905703"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>연습: C++를 사용하여 SDK 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,27 +148,27 @@ ms.locfileid: "49243713"
   
 ##  <a name="createSample"></a> 클래스 라이브러리를 사용 하는 샘플 앱을 만들려면  
   
-1.  메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
+1. 메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
   
-2.  템플릿 목록에서 확장 **Visual c + +** 를 **Windows 스토어**를 선택한 후 **비어 있는 앱**합니다. 에 **이름** 상자에서 지정 **NativeMathSDKSample**를 선택한 후는 **확인** 단추입니다.  
+2. 템플릿 목록에서 확장 **Visual c + +** 를 **Windows 스토어**를 선택한 후 **비어 있는 앱**합니다. 에 **이름** 상자에서 지정 **NativeMathSDKSample**를 선택한 후는 **확인** 단추입니다.  
   
-3.  **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **NativeMathSDKSample** 프로젝트를 선택한 후 **추가**를 **참조**합니다.  
+3. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **NativeMathSDKSample** 프로젝트를 선택한 후 **추가**를 **참조**합니다.  
   
-4.  에 **공용 속성**를 **프레임 워크 및 참조** 속성 페이지 참조 형식 목록에서 확장 **Windows**를 선택한 후 **확장** . 세부 정보 창에서 선택 합니다 **네이티브 수학 SDK** 확장을 선택한 후는 **새 참조 추가** 단추입니다.  
+4. 에 **공용 속성**를 **프레임 워크 및 참조** 속성 페이지 참조 형식 목록에서 확장 **Windows**를 선택한 후 **확장** . 세부 정보 창에서 선택 합니다 **네이티브 수학 SDK** 확장을 선택한 후는 **새 참조 추가** 단추입니다.  
   
-5.  **참조 추가** 대화 상자를 선택 합니다 **네이티브 수학 SDK** 확인란을 선택한 후는 **확인** 단추.  
+5. **참조 추가** 대화 상자를 선택 합니다 **네이티브 수학 SDK** 확인란을 선택한 후는 **확인** 단추.  
   
-6.  NativeMathSDKSample에 대 한 프로젝트 속성을 표시 합니다.  
+6. NativeMathSDKSample에 대 한 프로젝트 속성을 표시 합니다.  
   
-     NativeMathSDK.props에 정의 된 속성 참조를 추가한 경우에 적용 되었습니다. 검사 하 여이 확인할 수 있습니다 합니다 **VC + + 디렉터리** 프로젝트의 속성 **구성 속성**합니다.  
+    NativeMathSDK.props에 정의 된 속성 참조를 추가한 경우에 적용 되었습니다. 검사 하 여이 확인할 수 있습니다 합니다 **VC + + 디렉터리** 프로젝트의 속성 **구성 속성**합니다.  
   
-7.  **솔루션 탐색기**MainPage.xaml을 열고 다음 XAML을 사용 하 여 해당 콘텐츠를 대체 합니다.  
+7. **솔루션 탐색기**MainPage.xaml을 열고 다음 XAML을 사용 하 여 해당 콘텐츠를 대체 합니다.  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
   
-8.  Mainpage.xaml.h이이 코드와 일치 하도록 업데이트 합니다.  
+8. Mainpage.xaml.h이이 코드와 일치 하도록 업데이트 합니다.  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
   
 9. MainPage.xaml.cpp이이 코드와 일치 하도록 업데이트 합니다.  
   
@@ -180,7 +180,7 @@ ms.locfileid: "49243713"
   
      올바른 결과 표시 합니다.  
   
- 이 연습에서는 만들고를 호출 하는 확장 SDK를 사용 하는 방법을 보여 주었습니다.는 [!INCLUDE[wrt](../includes/wrt-md.md)] 라이브러리 및 비-[!INCLUDE[wrt](../includes/wrt-md.md)] 라이브러리입니다.  
+    이 연습에서는 만들고를 호출 하는 확장 SDK를 사용 하는 방법을 보여 주었습니다.는 [!INCLUDE[wrt](../includes/wrt-md.md)] 라이브러리 및 비-[!INCLUDE[wrt](../includes/wrt-md.md)] 라이브러리입니다.  
   
 ## <a name="next-steps"></a>다음 단계  
   
