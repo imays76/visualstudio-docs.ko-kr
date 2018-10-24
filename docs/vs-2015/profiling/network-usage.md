@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812168"
 ---
 # <a name="network-usage"></a>네트워크 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
 ## <a name="collecting-network-tool-data"></a>네트워크 도구 데이터 수집  
  Visual Studio가 설치된 컴퓨터에 열려 있는 Visual Studio 프로젝트로 **네트워크** 도구를 실행해야 합니다.  
   
-1.  Visual Studio에서 프로젝트를 엽니다.  
+1. Visual Studio에서 프로젝트를 엽니다.  
   
-2.  메뉴에서 **디버그/성능 프로파일러...** 를 클릭합니다. 네트워크를 선택한 다음 **시작**을 선택합니다.  
+2. 메뉴에서 **디버그/성능 프로파일러...** 를 클릭합니다. 네트워크를 선택한 다음 **시작**을 선택합니다.  
   
-3.  네트워크 도구에서 앱의 HTTP 트래픽 수집을 시작합니다.  
+3. 네트워크 도구에서 앱의 HTTP 트래픽 수집을 시작합니다.  
   
-     앱을 실행하면 왼쪽 창의 요약 보기에 캡처된 HTTP 작업 목록이 자동으로 표시됩니다. 요약 보기에서 항목을 선택하면 오른쪽 창의 세부 정보 패널에서 자세한 내용을 볼 수 있습니다.  
+    앱을 실행하면 왼쪽 창의 요약 보기에 캡처된 HTTP 작업 목록이 자동으로 표시됩니다. 요약 보기에서 항목을 선택하면 오른쪽 창의 세부 정보 패널에서 자세한 내용을 볼 수 있습니다.  
   
-4.  앱을 닫으려면 **중지** 를 선택합니다.  
+4. 앱을 닫으려면 **중지** 를 선택합니다.  
   
- 보고서 창의 모습은 다음과 같아야 합니다.  
+   보고서 창의 모습은 다음과 같아야 합니다.  
   
- ![네트워크 창](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![네트워크 창](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>데이터 분석  
  앱이 실행되는 동안 또는 앱을 닫은 후에도, 요약 보기에 표시된 네트워크 작업 중에서 선택하여 캡처된 HTTP 트래픽을 분석할 수 있습니다.  
