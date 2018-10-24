@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b31b99e38eeec2ff1e5e31bc6bdaeed3d3be3d83
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 071f13420fe9482e99189ca29eeb09d319f182bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936430"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 스키마 조건부 특성
 모든 목록 및 항목에 조건부 특성을 적용할 수 있습니다. 논리 연산자 및 기호 확장 식에는 true 또는 false로 평가합니다. True 이면 연결 된 목록이 나 항목이 결과 출력에 포함 됩니다.  

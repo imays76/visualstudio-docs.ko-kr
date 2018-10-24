@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b26883d0800611f2fba5cbf7a02907fef1d948
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0e223853c8bf805d7466fffec184032b24ec9e88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937800"
 ---
 # <a name="how-to-debug-optimized-code"></a>방법: 최적화된 코드 디버깅
 > [!NOTE]
@@ -43,37 +43,37 @@ ms.locfileid: "44280820"
   
  최적화는 다음 항목에 영향을 미칠 수 있습니다.  
   
--   지역 변수. 최적화 프로그램에 의해 제거되거나 디버거에서 인식하지 못하는 위치로 이동할 수 있습니다.  
+- 지역 변수. 최적화 프로그램에 의해 제거되거나 디버거에서 인식하지 못하는 위치로 이동할 수 있습니다.  
   
--   함수 내 위치. 최적화 프로그램에서 코드 블록을 병합할 때 변경됩니다.  
+- 함수 내 위치. 최적화 프로그램에서 코드 블록을 병합할 때 변경됩니다.  
   
--   호출 스택 프레임의 함수 이름. 최적화 프로그램에서 두 함수를 병합할 때 문제가 발생할 수 있습니다.  
+- 호출 스택 프레임의 함수 이름. 최적화 프로그램에서 두 함수를 병합할 때 문제가 발생할 수 있습니다.  
   
- 모든 프레임에 대한 기호가 있음을 전제로, 호출 스택에 표시되는 프레임은 거의 아무 문제가 없습니다. 스택이 손상되거나 함수가 어셈블리 언어로 작성되거나 운영 체제 프레임이 호출 스택의 기호와 일치하지 않는 경우 호출 스택의 프레임에 문제가 발생합니다.  
+  모든 프레임에 대한 기호가 있음을 전제로, 호출 스택에 표시되는 프레임은 거의 아무 문제가 없습니다. 스택이 손상되거나 함수가 어셈블리 언어로 작성되거나 운영 체제 프레임이 호출 스택의 기호와 일치하지 않는 경우 호출 스택의 프레임에 문제가 발생합니다.  
   
- 전역 변수, 정적 변수 및 구조 레이아웃은 항상 올바르게 표시됩니다. 구조를 가리키는 포인터가 있고 포인터 값이 올바르면 구조의 모든 멤버 변수에 올바른 값이 표시됩니다.  
+  전역 변수, 정적 변수 및 구조 레이아웃은 항상 올바르게 표시됩니다. 구조를 가리키는 포인터가 있고 포인터 값이 올바르면 구조의 모든 멤버 변수에 올바른 값이 표시됩니다.  
   
- 따라서 가능하면 최적화되지 않은 프로그램 버전을 사용하여 디버깅해야 합니다. 기본적으로 최적화는 Visual C++ 프로그램의 디버그 구성에서 해제되고 릴리스 구성에서는 설정됩니다.  
+  따라서 가능하면 최적화되지 않은 프로그램 버전을 사용하여 디버깅해야 합니다. 기본적으로 최적화는 Visual C++ 프로그램의 디버그 구성에서 해제되고 릴리스 구성에서는 설정됩니다.  
   
- 그러나 최적화된 프로그램 버전에서만 버그가 나타날 수도 있습니다. 이 경우에는 최적화된 코드를 디버깅해야 합니다.  
+  그러나 최적화된 프로그램 버전에서만 버그가 나타날 수도 있습니다. 이 경우에는 최적화된 코드를 디버깅해야 합니다.  
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>디버그 빌드 구성에서 최적화를 설정하려면  
   
-1.  새 프로젝트를 만들 때는 `Win32 Debug` 대상을 선택합니다. 사용 된 `Win32``Debug` 프로그램이 완전히 디버그 되 고을 빌드할 준비가 될 때까지 대상는 `Win32 Release` 대상입니다. 컴파일러는 `Win32 Debug` 대상을 최적화하지 않습니다.  
+1. 새 프로젝트를 만들 때는 `Win32 Debug` 대상을 선택합니다. 사용 된 `Win32``Debug` 프로그램이 완전히 디버그 되 고을 빌드할 준비가 될 때까지 대상는 `Win32 Release` 대상입니다. 컴파일러는 `Win32 Debug` 대상을 최적화하지 않습니다.  
   
-2.  솔루션 탐색기에서 프로젝트를 선택합니다.  
+2. 솔루션 탐색기에서 프로젝트를 선택합니다.  
   
-3.  에 **뷰** 메뉴에서 클릭 **속성 페이지**합니다.  
+3. 에 **뷰** 메뉴에서 클릭 **속성 페이지**합니다.  
   
-4.  에 **속성 페이지** 대화 상자에서 `Debug` 에서 선택한를 **구성** 드롭 다운 목록.  
+4. 에 **속성 페이지** 대화 상자에서 `Debug` 에서 선택한를 **구성** 드롭 다운 목록.  
   
-5.  왼쪽의 폴더 보기를 선택 합니다 **C/c + +** 폴더입니다.  
+5. 왼쪽의 폴더 보기를 선택 합니다 **C/c + +** 폴더입니다.  
   
-6.  아래는 **c + +** 폴더 `Optimization`합니다.  
+6. 아래는 **c + +** 폴더 `Optimization`합니다.  
   
-7.  오른쪽의 속성 목록에서 `Optimization`을 찾습니다. 옆에 있는 설정은 `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`합니다. 다른 옵션 중 하나를 선택 (`Minimum Size``(`[/o1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`합니다 `Maximum Speed``(` [/o2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`하십시오 `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`, 또는 `Custom`).  
+7. 오른쪽의 속성 목록에서 `Optimization`을 찾습니다. 옆에 있는 설정은 `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`합니다. 다른 옵션 중 하나를 선택 (`Minimum Size``(`[/o1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`합니다 `Maximum Speed``(` [/o2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`하십시오 `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`, 또는 `Custom`).  
   
-8.  `Custom`에 대해 `Optimization` 옵션을 선택한 경우 속성 목록에 있는 다른 속성에도 옵션을 설정할 수 있습니다.  
+8. `Custom`에 대해 `Optimization` 옵션을 선택한 경우 속성 목록에 있는 다른 속성에도 옵션을 설정할 수 있습니다.  
   
 9. 구성 속성, C/c + + 프로젝트 속성 페이지의 명령줄 노드를 선택 하 고 추가 `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` 하는 **추가 옵션** 입력란입니다.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "44280820"
     >   
     >  추가 `/Zo` 없게 [편집 하며 계속 하기](../debugger/edit-and-continue-visual-csharp.md)합니다.  
   
- 최적화 된 코드를 디버깅할 때 사용 합니다 **디스어셈블리** 창 어떤 명령이 실제로 생성 되 고 실행을 확인 합니다. 중단점을 설정할 때는 중단점이 명령과 함께 이동할 수도 있다는 것을 알아야 합니다. 예를 들어, 다음 코드를 고려하십시오.  
+   최적화 된 코드를 디버깅할 때 사용 합니다 **디스어셈블리** 창 어떤 명령이 실제로 생성 되 고 실행을 확인 합니다. 중단점을 설정할 때는 중단점이 명령과 함께 이동할 수도 있다는 것을 알아야 합니다. 예를 들어, 다음 코드를 고려하십시오.  
   
 ```cpp
 for (x=0; x<10; x++)  

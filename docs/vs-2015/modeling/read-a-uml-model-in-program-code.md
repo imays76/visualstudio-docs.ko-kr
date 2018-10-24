@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 014f7d7c76577cd9a749807eb994785d45f56e68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9bb652ee6b7ea9500d2ac153ca06d8b11430c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942551"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>프로그램 코드에서 UML 모델 읽기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,31 +81,31 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>독립 실행형 응용 프로그램에서 모델을 읽기 위해 참조를 추가하려면  
   
-1.  솔루션 탐색기에서 응용 프로그램을 작성 하는 지정 하 고 클릭 한 다음 프로젝트를 마우스 오른쪽 단추로 **속성**합니다. 속성 편집기에서에 **응용 프로그램** 탭에서 **대상 프레임 워크** .NET Framework의 필수 버전으로 합니다.  
+1. 솔루션 탐색기에서 응용 프로그램을 작성 하는 지정 하 고 클릭 한 다음 프로젝트를 마우스 오른쪽 단추로 **속성**합니다. 속성 편집기에서에 **응용 프로그램** 탭에서 **대상 프레임 워크** .NET Framework의 필수 버전으로 합니다.  
   
-2.  UML 모델에 액세스하는 데 필요한 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 참조를 추가합니다. 일반적으로 다음과 같습니다.  
+2. UML 모델에 액세스하는 데 필요한 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 참조를 추가합니다. 일반적으로 다음과 같습니다.  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
-3.  이전 섹션에 나열 된 참조 외에도 다음 프로젝트 참조를 추가할 **\Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies**:  
+3. 이전 섹션에 나열 된 참조 외에도 다음 프로젝트 참조를 추가할 **\Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies**:  
   
-    -   Microsoft.VisualStudio.Uml.dll  
+   - Microsoft.VisualStudio.Uml.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
   
      응용 프로그램에서 다이어그램을 읽으려는 경우 다음 참조가 필요할 수도 있습니다.  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md)   

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9b9a49ee6a59870d37676e2ca969e99a1516658
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9f7696018ec191e851c0d5864ad36e3eeb31b599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941739"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio 인스턴스 검색 및 관리 도구
 
@@ -61,8 +61,8 @@ Visual Studio 2017에서 레지스트리 설정은 전용 위치에 저장되므
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 
-  > [!NOTE]
-  > `<config>`는 찾아볼 Visual Studio의 인스턴스에 해당합니다.
+   > [!NOTE]
+   > `<config>`는 찾아볼 Visual Studio의 인스턴스에 해당합니다.
 
 하이브 이름을 입력하라는 메시지가 표시됩니다. 이 이름은 격리된 하이브의 이름이 됩니다. 이 작업을 한 후에는 직접 만든 격리된 하이브에서 레지스트리를 찾을 수 있습니다.
 

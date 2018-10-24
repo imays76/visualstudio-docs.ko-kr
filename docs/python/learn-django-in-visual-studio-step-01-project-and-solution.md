@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942763"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Django 웹 프레임워크 시작
 
@@ -163,16 +163,16 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
 
     ![Python 프로젝트 상황에 맞는 메뉴의 Django 명령](media/django/step01-django-commands-menu.png)
 
-1. 프로젝트에 프로젝트와 동일한 이름의 폴더가 있습니다. 여기에는 기본 Django 프로젝트 파일이 포함됩니다.
+2. 프로젝트에 프로젝트와 동일한 이름의 폴더가 있습니다. 여기에는 기본 Django 프로젝트 파일이 포함됩니다.
 
-    - *__init.py*: 이 폴더가 Python 패키지임을 Python에 알려주는 빈 파일입니다.
-    - *wsgi.py*: WSGI 호환 웹 서버가 프로젝트를 제공하는 진입점입니다. 일반적으로 이 파일은 프로덕션 웹 서버에 대한 후크를 제공하므로 있는 그대로 유지합니다.
-    - *settings.py*: Django 프로젝트에 대한 설정을 포함하며, 웹앱 개발 과정에서 수정할 수 있습니다.
-    - *urls.py*: Django 프로젝트의 목차를 포함하며, 개발 과정에서 수정할 수도 있습니다.
+   - *__init.py*: 이 폴더가 Python 패키지임을 Python에 알려주는 빈 파일입니다.
+   - *wsgi.py*: WSGI 호환 웹 서버가 프로젝트를 제공하는 진입점입니다. 일반적으로 이 파일은 프로덕션 웹 서버에 대한 후크를 제공하므로 있는 그대로 유지합니다.
+   - *settings.py*: Django 프로젝트에 대한 설정을 포함하며, 웹앱 개발 과정에서 수정할 수 있습니다.
+   - *urls.py*: Django 프로젝트의 목차를 포함하며, 개발 과정에서 수정할 수도 있습니다.
 
-    ![솔루션 탐색기의 Django 프로젝트 파일](media/django/step01-django-project-in-solution-explorer.png)
+     ![솔루션 탐색기의 Django 프로젝트 파일](media/django/step01-django-project-in-solution-explorer.png)
 
-1. 앞에서 설명한 대로 Visual Studio 템플릿은 프로젝트에 *requirements.txt* 파일을 추가하여 Django 패키지 종속성을 지정합니다. 이 파일은 처음으로 프로젝트를 만들 때 가상 환경을 만들도록 초대하는 데 필요합니다.
+3. 앞에서 설명한 대로 Visual Studio 템플릿은 프로젝트에 *requirements.txt* 파일을 추가하여 Django 패키지 종속성을 지정합니다. 이 파일은 처음으로 프로젝트를 만들 때 가상 환경을 만들도록 초대하는 데 필요합니다.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>질문: 다른 패키지를 설치한 후 Visual Studio가 가상 환경에서 requirements.txt 파일을 생성할 수 있나요?
 

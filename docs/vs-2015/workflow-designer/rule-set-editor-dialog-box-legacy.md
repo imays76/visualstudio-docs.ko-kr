@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942402"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>규칙 집합 편집기 대화 상자(레거시)
 에 대해 설명 하는 방법을 사용 하 여는 **규칙 집합 편집기** 레거시 대화 상자 [!INCLUDE[wfd1](../includes/wfd1-md.md)]합니다. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.  
@@ -67,19 +67,19 @@ ms.locfileid: "49294582"
   
  식은 다음과 같은 연산자를 지원합니다.  
   
--   관계형 연산자: ==, =, !=  
+- 관계형 연산자: ==, =, !=  
   
--   비교 연산자: <, \<=, >, > =  
+- 비교 연산자: <, \<=, >, > =  
   
--   산술 연산자: +, - , *, /, MOD  
+- 산술 연산자: +, - , *, /, MOD  
   
--   논리 연산자:를 & &, OR, &#124; &#124;, NOT,!  
+- 논리 연산자:를 & &, OR, &#124; &#124;, NOT,!  
   
--   비트 연산자: &,&#124;  
+- 비트 연산자: &,&#124;  
   
- 식 연산자 우선 순위는 C# 연산자 우선 순위 규칙을 따릅니다.  
+  식 연산자 우선 순위는 C# 연산자 우선 순위 규칙을 따릅니다.  
   
- 조건에 대 한 자세한 내용은 참조 하세요. [워크플로에서 조건 사용](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77)합니다.  
+  조건에 대 한 자세한 내용은 참조 하세요. [워크플로에서 조건 사용](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77)합니다.  
   
 ### <a name="halt-and-update-functions"></a>Halt 및 Update 함수  
  **Thenactions:** 하 고 **Else 작업:** 식은 지원 **중단** 하 고 **업데이트** 함수. 사용 하는 **중단** 함수를 입력 **중단** 에 **Thenaction:** 또는 **Else 작업:** 입력란. 합니다 **중단** 작업 규칙 집합 실행이 즉시 중지 시키고 호출 코드로 컨트롤을 반환 합니다. 사용 된 **업데이트** 전방 연결과 함께 함수입니다.  

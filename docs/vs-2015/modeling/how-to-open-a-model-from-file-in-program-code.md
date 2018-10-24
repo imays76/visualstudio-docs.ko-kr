@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f3397cb520014ee9997a116ebbbfbc1c20dc9f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940868"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>방법: 프로그램 코드로 파일에서 모델 열기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,13 +63,13 @@ ms.locfileid: "49190504"
 ## <a name="reading-from-a-file"></a>파일에서 읽기  
  다음 예에서는 읽기는 중요 한 클래스에는 다음과 같이 DSL 하도록 설계 됩니다.  
   
--   FamilyTreeModel  
+- FamilyTreeModel  
   
--   FamilyTreeSerializationHelper  
+- FamilyTreeSerializationHelper  
   
--   FamilyTreeDomainModel  
+- FamilyTreeDomainModel  
   
- 이 DSL의 다른 도메인 클래스는 사람입니다.  
+  이 DSL의 다른 도메인 클래스는 사람입니다.  
   
 ```  
 using System;  

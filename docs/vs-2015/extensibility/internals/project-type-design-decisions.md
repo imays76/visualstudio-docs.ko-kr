@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195483"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939555"
 ---
 # <a name="project-type-design-decisions"></a>프로젝트 형식 디자인 결정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ ms.locfileid: "49195483"
   
  프로젝트의 항목에 대 한 지 속성 관련 하 여 고려할 몇 가지 옵션이 있습니다. 다음 옵션 중 하나를 수행할 수 있습니다.  
   
--   가 변경 된 경우 각 파일을 개별적으로 저장 합니다.  
+- 가 변경 된 경우 각 파일을 개별적으로 저장 합니다.  
   
--   단일에서 트랜잭션 수를 캡처할 **저장할** 작업 합니다.  
+- 단일에서 트랜잭션 수를 캡처할 **저장할** 작업 합니다.  
   
--   파일을 로컬로 저장 서버에 게시 하거나 항목이 나타내는 원격 개체의 데이터 연결 하는 경우 프로젝트 항목을 저장 하는 다른 방법 사용 합니다.  
+- 파일을 로컬로 저장 서버에 게시 하거나 항목이 나타내는 원격 개체의 데이터 연결 하는 경우 프로젝트 항목을 저장 하는 다른 방법 사용 합니다.  
   
- 지 속성에 대 한 자세한 내용은 참조 하세요. [프로젝트 지 속성](../../extensibility/internals/project-persistence.md) 하 고 [열기 및 프로젝트 항목 저장](../../extensibility/internals/opening-and-saving-project-items.md)합니다.  
+  지 속성에 대 한 자세한 내용은 참조 하세요. [프로젝트 지 속성](../../extensibility/internals/project-persistence.md) 하 고 [열기 및 프로젝트 항목 저장](../../extensibility/internals/opening-and-saving-project-items.md)합니다.  
   
 ## <a name="project-commitment-model"></a>프로젝트 약정 모델  
  지속형된 데이터 개체를 열 수는 직접 모드 또는 트 랜 잭 트 모드에서?  

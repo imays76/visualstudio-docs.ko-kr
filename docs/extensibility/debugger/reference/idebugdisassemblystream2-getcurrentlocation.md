@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c76adbeee7086e28b7673a9eb1a90bb8b9650c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5888acf00ee611ac219ef66af4faf0e5ffc464ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942363"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 현재 코드 위치를 나타내는 코드 위치 식별자를 반환 합니다.  
@@ -41,13 +41,13 @@ int GetCurrentLocation(
   
 #### <a name="parameters"></a>매개 변수  
  `puCodeLocationId`  
- [out] 코드 위치 식별자를 반환합니다. 에 대 한 설명 섹션을 참조는 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 방법에 대 한 설명은 코드 위치 식별자입니다.  
+ [out] 코드 위치 식별자를 반환합니다. 에 대 한 설명 섹션을 참조 합니다 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 코드 위치 식별자에 대 한 메서드.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 호출 하 여 코드 컨텍스트로 변환할 수 코드 위치 식별자는 [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) 메서드.  
+ 코드 위치 식별자는 호출 하 여 코드 컨텍스트를 변환할 수 있습니다 합니다 [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   

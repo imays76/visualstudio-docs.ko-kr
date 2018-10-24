@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a56d1eac34c5076be8dbcd7b4e38363a12fe392f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 46ad24a6bf8e4efbcb0c1a0009bb8210247ccb5e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941362"
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
-소스 압축 사용 표시기를 검색 합니다.  
+사용 되는 원본 압축 표시기를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_sourceCompression (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 사용 되는 원본 압축의 표시를 반환 합니다. 0 값을 압축 하지 않고 소스를 사용 했는지를 나타냅니다.  
+ [out] 사용 되는 원본 압축 표시기를 반환 합니다. 0 값 압축 하지 않고 소스를 사용 했는지를 나타냅니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드에 의해 반환 되는 값은 사용 된 컴파일러 관련이 있습니다. 예를 들어, 컴파일러는 실행 길이 인코딩 또는 Huffman 스타일 압축을 사용할 수 있습니다.  
+ 이 메서드에서 반환 된 값 사용 된 컴파일러와 관련이 있습니다. 예를 들어, 컴파일러는 실행 길이 인코딩 또는 Huffman 스타일 압축을 사용할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

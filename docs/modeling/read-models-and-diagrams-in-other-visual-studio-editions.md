@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 466c9c6598102381e0b2163b800cc2a9616d7fff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936981"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
 모델 생성을 지원하지 않는 Visual Studio 버전에서 모델을 열면 읽기 전용 모드로 모델이 열립니다. 이 모드에서는 다이어그램의 레이아웃을 변경할 수 있지만 모델을 변경할 수는 없습니다.
@@ -47,16 +47,16 @@ ms.locfileid: "47859681"
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>읽기 전용 모드에서 수행할 수 있는 변경 내용
  모델 생성을 지원하지 않는 Visual Studio 버전에서 모델 및 다이어그램을 열면 모델을 변경할 수 없습니다. 즉, 다이어그램이나 모델 탐색기에 표시되는 요소 및 관계를 변경할 수 없습니다. 그러나 다음과 같이 다이어그램의 레이아웃을 일부 변경할 수 있습니다.
 
--   다이어그램에서 모양 및 연결선을 다시 정렬합니다.
+- 다이어그램에서 모양 및 연결선을 다시 정렬합니다.
 
--   모양을 확장 및 축소합니다.
+- 모양을 확장 및 축소합니다.
 
- 이러한 변경 내용을 저장할 수 있습니다. 업데이트 된 변경 내용을 다른 사용자에 게 표시 하려는 경우 전송 이상 해야 **.layout** 파일입니다.
+  이러한 변경 내용을 저장할 수 있습니다. 업데이트 된 변경 내용을 다른 사용자에 게 표시 하려는 경우 전송 이상 해야 **.layout** 파일입니다.
 
 ## <a name="RelatedTopics"></a> 관련된 항목
 
 |제목|설명|
-|-----------|-----------------|
+|-|-|
 |[종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)|레이어 다이어그램에는 기존 아키텍처 또는 제안된 아키텍처의 구조가 표시됩니다. 코드가 작성되면 레이어 다이어그램에 대해 자동으로 유효성을 검사할 수 있습니다.|
 
 ## <a name="see-also"></a>참고 항목

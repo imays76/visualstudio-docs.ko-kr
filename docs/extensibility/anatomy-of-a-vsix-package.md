@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937735"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 패키지 분석
 VSIX 패키지를 *.vsix* 하나 이상의 Visual Studio 확장 Visual Studio 메타 데이터를 포함 하는 파일 분류 및 확장 설치를 사용 하 여 합니다. 메타 데이터가 포함 된 VSIX 매니페스트의 하며 *[Content_Types].xml* 파일입니다. VSIX 패키지를 하나 이상 포함 될 수도 있습니다 *Extension.vsixlangpack* 있도록 지역화 된 설치 텍스트 파일과 종속성을 설치 하는 추가 VSIX 패키지를 포함할 수 있습니다.  
@@ -55,7 +55,7 @@ VSIX 패키지를 *.vsix* 하나 이상의 Visual Studio 확장 Visual Studio �
 ## <a name="installation-location"></a>설치 위치  
  설치 하는 동안 **확장 및 업데이트** 하위 폴더에 VSIX 패키지의 내용을 찾습니다 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*합니다.  
   
- 기본적으로 설치에만 적용 됩니다는 현재 사용자 때문 *% LocalAppData %* 사용자별 디렉터리입니다. 그러나 설정 하는 경우는 [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) 매니페스트를 요소의 `True`에서 확장을 설치할 *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* 되며 컴퓨터의 모든 사용자에 게 제공 됩니다.  
+ 기본적으로 설치에만 적용 됩니다는 현재 사용자 때문 *% LocalAppData %* 사용자별 디렉터리입니다. 그러나 설정 하는 경우는 [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) 매니페스트를 요소의 `True`에서 확장을 설치할 <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> 되며 컴퓨터의 모든 사용자에 게 제공 됩니다.  
   
 ## <a name="contenttypesxml"></a>[Content_Types].xml  
  합니다 *[Content_Types].xml* 파일에서 확장 된 파일 형식 식별 *.vsix* 파일입니다. Visual Studio 패키지를 설치 하는 동안이 파일을 사용 하지만 파일 자체를 설치 하지 않습니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [[Content_types].xml 파일의 구조](the-structure-of-the-content-types-dot-xml-file.md)합니다.  

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 49329dab868e5d8fb1418915a27449de3cbd1f7e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: cd7f1f36374f3411b5a76f5df5e3e25bb52df230
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948644"
 ---
 # <a name="t4-assembly-directive"></a>T4 Assembly 지시문
 
@@ -34,11 +34,11 @@ Visual Studio 디자인 타임 텍스트 템플릿에서 `assembly` 지시문 �
 
  어셈블리 이름은 다음 중 하나여야 합니다.
 
--   GAC 어셈블리의 강력한 이름(예: `System.Xml.dll`). `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`와 같은 긴 형식도 사용할 수 있습니다. 자세한 내용은 <xref:System.Reflection.AssemblyName>을 참조하세요.
+- GAC 어셈블리의 강력한 이름(예: `System.Xml.dll`). `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`와 같은 긴 형식도 사용할 수 있습니다. 자세한 내용은 <xref:System.Reflection.AssemblyName>을 참조하세요.
 
--   어셈블리의 절대 경로
+- 어셈블리의 절대 경로
 
- 사용할 수는 `$(variableName)` 와 같은 Visual Studio 변수를 참조 하는 구문은 `$(SolutionDir)`, 및 `%VariableName%` 참조 환경 변수를 합니다. 예를 들어:
+  사용할 수는 `$(variableName)` 와 같은 Visual Studio 변수를 참조 하는 구문은 `$(SolutionDir)`, 및 `%VariableName%` 참조 환경 변수를 합니다. 예를 들어:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -49,21 +49,21 @@ Visual Studio 디자인 타임 텍스트 템플릿에서 `assembly` 지시문 �
 ## <a name="standard-assemblies"></a>표준 어셈블리
  다음 어셈블리가 자동으로 로드되므로 해당 어셈블리에 대한 assembly 지시문을 작성할 필요가 없습니다.
 
--   `Microsoft.VisualStudio.TextTemplating.1*.dll`
+- `Microsoft.VisualStudio.TextTemplating.1*.dll`
 
--   `System.dll`
+- `System.dll`
 
--   `WindowsBase.dll`
+- `WindowsBase.dll`
 
- 사용자 지정 지시문을 사용하는 경우 지시문 프로세서에서 추가 어셈블리를 로드할 수 있습니다. 예를 들어 DSL(Domain-Specific Language)을 위한 템플릿을 작성하는 경우 다음 어셈블리에 대한 assembly 지시문을 작성할 필요가 없습니다.
+  사용자 지정 지시문을 사용하는 경우 지시문 프로세서에서 추가 어셈블리를 로드할 수 있습니다. 예를 들어 DSL(Domain-Specific Language)을 위한 템플릿을 작성하는 경우 다음 어셈블리에 대한 assembly 지시문을 작성할 필요가 없습니다.
 
--   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
+- `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
 
--   `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`
+- `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`
 
--   `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
+- `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
 
--   DSL이 들어 있는 어셈블리
+- DSL이 들어 있는 어셈블리
 
 ## <a name="msbuild"></a> MSBuild 및 Visual Studio에서 프로젝트 속성 사용
  $ (Solutiondir)와 같은 visual Studio 매크로 MSBuild에서 작동 하지 않습니다. 빌드 컴퓨터에서 템플릿을 변형하려는 경우 대신 프로젝트 속성을 사용해야 합니다.
@@ -82,7 +82,6 @@ Visual Studio 디자인 타임 텍스트 템플릿에서 `assembly` 지시문 �
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
  이제 Visual Studio 및 MSBuild에서 모두 올바르게 변형된 텍스트 템플릿의 프로젝트 속성을 사용할 수 있습니다.
