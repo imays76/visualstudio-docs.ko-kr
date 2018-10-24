@@ -3,7 +3,7 @@
 ## [Visual Studio 2015 설치](install/install-visual-studio-2015.md)
 ## [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 ## [Visual Studio IDE](ide/visual-studio-ide.md)
-## [확장성](extensibility/extensibility-in-visual-studio.md)
+## [확장성](extensibility/visual-studio-sdk.md)
 ## [데이터 액세스](data-tools/accessing-data-in-visual-studio.md)
 ## [플랫폼 간 모바일 개발](cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 ## [Visual Basic](/dotnet/visual-basic)

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db39f9c58c0fa2f0ea57d94cd1be404173720088
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848503"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기
 
@@ -31,7 +31,7 @@ ms.locfileid: "33957316"
 클래스 다이어그램에서는 다음과 같은 마우스 동작이 지원됩니다.
 
 |마우스 조합|컨텍스트|설명|
-|-----------------------|-------------|-----------------|
+| - |-------------|-----------------|
 |두 번 클릭|Shape 요소|코드 편집기를 엽니다.|
 |두 번 클릭|롤리팝 커넥터|롤리팝을 확장/축소합니다.|
 |두 번 클릭|롤리팝 커넥터 레이블|**인터페이스 표시** 명령을 호출합니다.|

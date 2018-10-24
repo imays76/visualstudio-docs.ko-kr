@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b76efc5c1c476f69a11804c74cd3341139c9c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080316"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863857"
 ---
 # <a name="midl-task"></a>MIDL 작업
 MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*를 래핑합니다. 자세한 내용은 [MIDL 명령줄 참조](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference)를 참조하세요.  
@@ -245,7 +245,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*�
   
      `true`인 경우 입력 파일의 형식이 *mktyplib.exe* 버전 2.03과 호환되어야 합니다.  
   
-     자세한 내용은 [MIDL 명령줄 참조](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference)에서 **/mktyplib203** 옵션을 참조하세요. MSDN 웹 사이트에서 [ODL 파일 구문](https://msdn.microsoft.com/library/windows/desktop/ms221683(v=vs.85).aspx)도 참조하세요.  
+     자세한 내용은 [MIDL 명령줄 참조](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference)에서 **/mktyplib203** 옵션을 참조하세요. MSDN 웹 사이트에서 [ODL 파일 구문](/previous-versions/windows/desktop/automat/odl-file-syntax)도 참조하세요.  
   
 -   **OutputDirectory**  
   

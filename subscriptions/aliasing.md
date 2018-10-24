@@ -9,12 +9,12 @@ description: 별칭 또는 대화명을 사용하는 경우 로그인에 실패�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854470"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음
 
@@ -76,8 +76,7 @@ ms.locfileid: "39637684"
 4. 검색 창에서 **아래쪽 화살표**를 클릭합니다.
 5. “전자 메일 주소” 필드를 사용하여 구독자를 검색합니다.
 6. 결과 목록에서 구독자의 **성**을 클릭합니다.
-7. 
-              **편집**을 클릭합니다.
+7. **편집**을 클릭합니다.
 8. [전자 메일 주소] 필드를 원하는 디렉터리 주소로 변경하고 **저장**을 클릭합니다.
 9. 아래 전자 메일 템플릿을 사용하여 구독이 프로비전되었음을 구독자에게 알립니다.
 
@@ -117,10 +116,10 @@ Visual Studio 구독이 할당되었습니다.  https://my.visualstudio.com을 �
 1. https://my.visualstudio.com으로 이동하여 **새 Microsoft 계정 만들기**를 클릭합니다.
 
 2. 필드를 완료합니다.
-    - Someone@example.com 상자에 시작 전자 메일을 받은 전자 메일 주소를 입력합니다.
-    - 암호를 만듭니다.
-    - 프로모션 설정을 선택합니다.
-    - **다음**을 클릭합니다.
+   - Someone@example.com 상자에 시작 전자 메일을 받은 전자 메일 주소를 입력합니다.
+   - 암호를 만듭니다.
+   - 프로모션 설정을 선택합니다.
+   - **다음**을 클릭합니다.
 
 3. 유효성 검사 단계를 완료하고 **다음**을 클릭합니다.
 
@@ -142,10 +141,10 @@ Visual Studio 구독이 할당되었고 시작 이메일을 기반으로 https:/
 2. 오른쪽에서 [새 Microsoft 계정 만들기]를 클릭합니다.
 
 3. 폼을 완료합니다.
-    - someone@example.com 상자에서 회사 전자 메일 주소를 사용합니다.
-    - 암호를 입력합니다.
-    - 프로모션 기본 설정을 선택합니다.
-    - 다음을 클릭합니다.
+   - someone@example.com 상자에서 회사 전자 메일 주소를 사용합니다.
+   - 암호를 입력합니다.
+   - 프로모션 기본 설정을 선택합니다.
+   - 다음을 클릭합니다.
 
 4. 계정 유효성 검사 단계를 완료합니다.
 

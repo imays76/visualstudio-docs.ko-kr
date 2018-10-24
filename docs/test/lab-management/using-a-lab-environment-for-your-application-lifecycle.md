@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837115"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 
@@ -36,9 +36,9 @@ ms.locfileid: "44321179"
 |![클라우드 랩 환경](../media/topology_cloud.png)| 이 랩 환경에서는 _서버 토폴로지_와 비슷한 기능과 특징을 제공하지만 로컬 환경에서 실행되는 실제 또는 가상 컴퓨터에 대한 요구 사항이 제거되므로 설정 시간이 단축되고, 유지 관리가 간소화되고, 비용이 최소화됩니다. Microsoft Azure와 같은 클라우드 환경에서는 여러 웹 사이트와 가상 컴퓨터를 사용자 지정 네트워킹과 함께 설정하는 것이 빠르고 간편합니다.|
 |![클라이언트 서버 랩 환경](../media/topology_clientserver.png)| 이 랩 환경에는 서버 및 클라이언트 구성 요소를 갖는 응용 프로그램을 테스트하는 데 주로 사용되는 *클라이언트-서버 토폴로지*가 있습니다. 클라이언트/서버 토폴로지에서는 응용 프로그램을 테스트하는 데 사용되는 모든 서버 및 클라이언트 컴퓨터가 랩 환경에 있습니다. 이 토폴로지를 사용하면 테스트에 영향을 주는 모든 컴퓨터에서 테스트 데이터를 수집할 수 있습니다.|
 
-|   |   |
+| | |
 |---|---|
-|  ![동영상에 대한 비디오 카메라 아이콘](../../install/media/video-icon.png)  |    테스트할 랩 환경 관리에 대한 [동영상을 시청](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)하세요. |
+| ![동영상에 대한 비디오 카메라 아이콘](../../install/media/video-icon.png) | 테스트할 랩 환경 관리에 대한 [동영상을 시청](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)하세요. |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Azure Pipelines 또는 Team Foundation Server의 빌드 및 릴리스와 함께 클라우드 사용
 
@@ -95,7 +95,7 @@ SCVMM에 대한 자세한 내용은 [Virtual Machine Manager](/azure/devops/pipe
 표준 환경과 SCVMM 환경에서는 여러 가지 동일한 기능이 지원됩니다. 하지만 고려해야 할 몇 가지 중요한 차이점이 있습니다. 다음 테이블에서는 표준 환경과 SCVMM 환경에서 지원되는 기능을 비교할 수 있습니다.
 
 |기능|SCVMM 환경|표준 환경|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**테스트**|||
 |수동 테스트 실행|지원함|지원함|
 |코딩된 UI 및 기타 자동화된 테스트 실행|지원함|지원함|
@@ -117,7 +117,7 @@ SCVMM에 대한 자세한 내용은 [Virtual Machine Manager](/azure/devops/pipe
 계속하기 전에 숙지하고 있어야 할 몇 가지 개념이 다음에 나와 있습니다.
 
 |용어|설명|
-|----------|-----------------|
+|-|-----------------|
 |랩 센터|랩 환경을 만들고 관리하는 Microsoft Test Manager 영역입니다.|
 |Azure DevOps 프로젝트 랩|이 환경에 연결하여 가상 컴퓨터를 실행할 수 있도록 설정되어 있는 랩 환경 컬렉션입니다.|
 |Azure DevOps 프로젝트 라이브러리|프로젝트의 호스트 그룹에 가져온 저장된 가상 머신, 템플릿 및 저장된 랩 환경의 보관 저장소입니다. 라이브러리의 항목은 SCVMM 환경에 사용할 수 있지만 표준 환경에 직접 추가할 수 없습니다. 라이브러리의 항목을 실행할 수 없으며 대신, 새 환경을 배포하는 데 사용할 수 있습니다.|

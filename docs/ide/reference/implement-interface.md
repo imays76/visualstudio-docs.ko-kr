@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b17e924a6736d37b78709a516f6ca9068d4711c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d34c3978b119b978e83204967e4d5f6af5946314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811544"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Visual Studio에서 인터페이스 구현
 
@@ -36,22 +36,22 @@ ms.locfileid: "31946444"
 
    - C#: 
 
-    ![강조 표시된 코드 C#](media/interface-highlight-cs.png)
+       ![강조 표시된 코드 C#](media/interface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![강조 표시된 코드 VB](media/interface-highlight-vb.png)
+       ![강조 표시된 코드 VB](media/interface-highlight-vb.png)
 
-1. 다음 작업 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
-     - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-     - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
-     - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
+      - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
 
-1. 드롭다운 메뉴에서 **인터페이스 구현**을 선택합니다.
+3. 드롭다운 메뉴에서 **인터페이스 구현**을 선택합니다.
 
    ![인터페이스 구현 미리 보기](media/interface-preview-cs.png)
 
@@ -63,11 +63,11 @@ ms.locfileid: "31946444"
 
    - C#: 
 
-      ![인터페이스 구현 결과 C#](media/interface-result-cs.png)
+       ![인터페이스 구현 결과 C#](media/interface-result-cs.png)
 
    - Visual Basic:
 
-      ![인터페이스 구현 결과 VB](media/interface-result-vb.png)
+       ![인터페이스 구현 결과 VB](media/interface-result-vb.png)
 
    > [!TIP]
    > (C#만 해당) 이름 충돌을 방지하려면 **명시적으로 인터페이스 구현** 옵션을 사용하여 생성된 각 메서드 앞에 인터페이스 이름을 추가합니다.

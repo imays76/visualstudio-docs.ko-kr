@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 6e5e6b90350aa16d4e0ffee04673a1aa1063cded
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836348"
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity 설정
 
@@ -57,11 +57,11 @@ Mac용 Visual Studio Tools for Unity 확장은 기본적으로 사용 가능하�
 
 1. Visual Studio 메뉴에서 **확장...** 을 선택합니다.
 
-  ![확장 선택](media/setup-vsmac-tools-unity-image1.png)
+   ![확장 선택](media/setup-vsmac-tools-unity-image1.png)
 
-1. [게임 개발] 섹션을 확장하고 [Mac용 Visual Studio Tools for Unity] 항목을 확인합니다.
+2. [게임 개발] 섹션을 확장하고 [Mac용 Visual Studio Tools for Unity] 항목을 확인합니다.
 
-  ![Unity 항목 보기](media/setup-vsmac-tools-unity-image2.png)
+   ![Unity 항목 보기](media/setup-vsmac-tools-unity-image2.png)
 
 ## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하도록 Unity 구성
 
@@ -69,16 +69,16 @@ Unity 2018.1부터 Visual Studio는 Unity의 기본 외부 스크립트 편집�
 
 1. Unity 메뉴에서 **기본 설정...** 을 선택합니다.
 
-  ![기본 설정 선택](media/setup-vsmac-tools-unity-image4.png)
+   ![기본 설정 선택](media/setup-vsmac-tools-unity-image4.png)
 
-1. 기본 설정 대화 상자에서 **외부 도구** 탭을 선택합니다.
+2. 기본 설정 대화 상자에서 **외부 도구** 탭을 선택합니다.
 
-1. 외부 스크립트 편집기 드롭다운 목록에서 **Visual Studio**가 있을 경우 이를 선택하고, 그렇지 않을 경우 **찾아보기...** 를 선택합니다.
+3. 외부 스크립트 편집기 드롭다운 목록에서 **Visual Studio**가 있을 경우 이를 선택하고, 그렇지 않을 경우 **찾아보기...** 를 선택합니다.
 
-  ![Visual Studio 선택](media/setup-vsmac-tools-unity-image5.png)
+   ![Visual Studio 선택](media/setup-vsmac-tools-unity-image5.png)
 
-1. **찾아보기...** 를 선택한 경우 응용 프로그램 디렉터리로 이동하여 Visual Studio를 선택하고 **열기**를 클릭합니다.
+4. **찾아보기...** 를 선택한 경우 응용 프로그램 디렉터리로 이동하여 Visual Studio를 선택하고 **열기**를 클릭합니다.
 
-  ![열기 선택](media/setup-vsmac-tools-unity-image6.png)
+   ![열기 선택](media/setup-vsmac-tools-unity-image6.png)
 
-1. Visual Studio가 **외부 스크립트 편집기** 목록에서 선택되면 [기본 설정] 대화 상자를 닫아 구성 프로세스를 완료합니다.
+5. Visual Studio가 **외부 스크립트 편집기** 목록에서 선택되면 [기본 설정] 대화 상자를 닫아 구성 프로세스를 완료합니다.

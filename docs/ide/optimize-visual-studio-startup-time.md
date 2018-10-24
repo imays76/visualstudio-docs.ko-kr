@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 451238283e5f256f9c7c302bd81dd45ad2825cf4
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 20f56af789a84ef73c66e0cd50c87ec48a6212a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884058"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio 시작 시간 최적화
 
@@ -59,13 +59,13 @@ Visual Studio에서 시작 속도가 느린 것을 감지하면 속도 저하를
 
 3. 다음 세 가지 옵션 중 하나를 선택합니다.
 
-    - **기본 동작 사용:** 도구 창에 대한 기본 동작입니다. 이 옵션을 선택하면 시작 성능이 향상되지 않습니다.
+   - **기본 동작 사용:** 도구 창에 대한 기본 동작입니다. 이 옵션을 선택하면 시작 성능이 향상되지 않습니다.
 
-    - **시작 시 창 표시 안 함:** 이전 세션에서 열려 있는 경우에도 Visual Studio를 열 때 지정한 도구 창이 항상 닫힙니다. 원하는 경우 적절한 메뉴에서 도구 창을 열 수 있습니다.
+   - **시작 시 창 표시 안 함:** 이전 세션에서 열려 있는 경우에도 Visual Studio를 열 때 지정한 도구 창이 항상 닫힙니다. 원하는 경우 적절한 메뉴에서 도구 창을 열 수 있습니다.
 
-    - **시작 시 창 자동 숨기기:** 도구 창이 이전 세션에서 열려 있는 경우 이 옵션은 시작 시 도구 창의 그룹이 축소되어 도구 창이 초기화되지 않도록 합니다. 이 옵션은 도구 창을 사용하는 경우에 적합합니다. 도구 창을 여전히 사용할 수 있지만 더 이상 Visual Studio 시작 시간에 부정적 영향을 미치지 않습니다.
+   - **시작 시 창 자동 숨기기:** 도구 창이 이전 세션에서 열려 있는 경우 이 옵션은 시작 시 도구 창의 그룹이 축소되어 도구 창이 초기화되지 않도록 합니다. 이 옵션은 도구 창을 사용하는 경우에 적합합니다. 도구 창을 여전히 사용할 수 있지만 더 이상 Visual Studio 시작 시간에 부정적 영향을 미치지 않습니다.
 
-    ![Visual Studio 성능 관리 - 도구 창 보기](../ide/media/vside_perfdialog_toolwindows.png)
+     ![Visual Studio 성능 관리 - 도구 창 보기](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
 > 일부 이전 버전의 Visual Studio 2017에는 **경량 솔루션 로드**라는 기능이 있습니다. Visual Studio 2017 버전 15.5 이상에서는 이 기능을 더 이상 사용할 수 없습니다. Visual Studio 2017 버전 15.5 이상에서는 경량 솔루션 로드 없이도 관리 코드가 포함된 대규모 솔루션이 이전보다 훨씬 빠르게 로드됩니다.

@@ -9,18 +9,18 @@ description: 관리자가 만료된 Visual Studio 구독을 처리하는 방법�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ed407abbf4da1914f8a7faa03bbec5ae74b87049
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a5f968eef0418a89d4db78f8d79258bfe6004385
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815756"
 ---
 # <a name="handling-expired-subscriptions"></a>만료된 구독 처리
 
 사용자의 구독이 만료된 경우 포털의 구독자 목록에 이름 옆에 빨간색 막대로 표시됩니다. 해당 구독자가 Visual Studio 구독 혜택을 계속 사용하려면 해당 라이선스를 갱신해야 합니다. 
 > [!div class="mx-imgBorder"]
-> ![만료된 구독 목록](_img\expired-subscriptions\expired-list.png)
+> ![만료된 구독 목록](_img/expired-subscriptions/expired-list.png)
 
 **구독을 갱신하려면**
 1.  볼륨 라이선스 재판매인 또는 Microsoft 판매자에게 문의하세요. 

@@ -16,21 +16,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1a6912f1b3877eadf6739d696f01d0f391a97b30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892716"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>방법: 편집기의 글꼴 및 색 변경
 코드 편집기에서 다양한 텍스트 **표시 항목**의 기본 글꼴을 변경하고, 글꼴 크기를 조정하고, 전경색 및 배경색을 변경할 수 있습니다. 글꼴 설정을 변경할 경우 다음 정보를 고려하세요.
 
--   **글꼴** 및 **크기** 설정은 모든 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 편집기의 모든 텍스트 요소에 대한 전역 설정입니다.
+- **글꼴** 및 **크기** 설정은 모든 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 편집기의 모든 텍스트 요소에 대한 전역 설정입니다.
 
--   고정 너비 글꼴의 이름은 굵게 표시됩니다.
+- 고정 너비 글꼴의 이름은 굵게 표시됩니다.
 
--   각 형식의 텍스트 요소에 대한 **항목 전경**, **항목 배경** 및 **굵게** 옵션을 설정할 수 있습니다. 예를 들어 **주석** 및 **책갈피**에 대한 색을 변경하고 **굵게**를 선택하면 다른 형식의 텍스트 요소는 영향을 받지 않습니다.
+- 각 형식의 텍스트 요소에 대한 **항목 전경**, **항목 배경** 및 **굵게** 옵션을 설정할 수 있습니다. 예를 들어 **주석** 및 **책갈피**에 대한 색을 변경하고 **굵게**를 선택하면 다른 형식의 텍스트 요소는 영향을 받지 않습니다.
 
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 활성 설정 또는 버전에 따라 **도움말**에 설명된 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.

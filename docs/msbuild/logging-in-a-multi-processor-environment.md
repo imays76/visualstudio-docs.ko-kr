@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077580"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879254"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>다중 프로세서 환경에서의 로그인
 MSBuild에서는 다중 프로세서를 사용할 수 있기 때문에 프로젝트 빌드 시간을 크게 줄일 수 있는 반면 로깅은 복잡해집니다. 단일 프로세서 환경에서 로거는 예측 가능하고 순차적인 방식으로 들어오는 이벤트, 메시지, 경고 및 오류를 처리할 수 있습니다. 그러나 다중 프로세서 환경에서 여러 원본의 이벤트는 동시에 또는 순서 없이 도착할 수 있습니다. MSBuild에서는 새 다중 프로세서 인식 로거가 제공되며, 사용자 지정 "전달 로거"를 만들 수 있습니다.  
@@ -62,15 +62,15 @@ public interface IForwardingLogger: INodeLogger
  자세한 내용은 [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조하세요.  
   
 ### <a name="attaching-a-distributed-logger"></a>분산된 로거 연결  
- 명령줄 빌드에서 분산된 로거를 연결하려면 `/distributedlogger`(또는 간단히 `/dl`) 스위치를 사용합니다. 로거 형식 및 클래스의 이름을 지정하기 위한 형식은 분산된 로거가 두 개의 로깅 클래스(전달 로거 및 중앙 로거)로 구성된 것을 제외하고 `/logger` 스위치에 대한 것과 동일합니다. 다음은 분산된 로거 연결의 예입니다.  
+ 명령줄 빌드에서 분산된 로거를 연결하려면 `-distributedlogger`(또는 간단히 `-dl`) 스위치를 사용합니다. 로거 형식 및 클래스의 이름을 지정하기 위한 형식은 분산된 로거가 두 개의 로깅 클래스(전달 로거 및 중앙 로거)로 구성된 것을 제외하고 `-logger` 스위치에 대한 것과 동일합니다. 다음은 분산된 로거 연결의 예입니다.  
   
 ```cmd  
-msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
+msbuild.exe *.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
 ```  
   
- 별표(*)는 `/dl` 스위치에서 두 개의 로거 이름을 구분합니다.  
+ 별표(*)는 `-dl` 스위치에서 두 개의 로거 이름을 구분합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [빌드 로거](../msbuild/build-loggers.md)   

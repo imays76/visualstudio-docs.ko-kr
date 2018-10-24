@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827716"
 ---
 # <a name="set-up-remote-workspaces"></a>원격 작업 영역 설정
 
@@ -97,15 +97,15 @@ SSL 인증서를 Windows에서 수동으로 설치해야 합니다. 다음 지�
 자체 서명된 인증서를 자체적으로 발급하려면 다음을 수행합니다.
 
 1. Linux 머신에 SSH 또는 로그인합니다.
-1. `ssl-cert` 패키지를 설치합니다.
+2. `ssl-cert` 패키지를 설치합니다.
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. `make-ssl-cert`를 실행하여 기본 자체 서명된 SSL 인증서를 생성합니다.
+3. `make-ssl-cert`를 실행하여 기본 자체 서명된 SSL 인증서를 생성합니다.
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. 생성된 키와 PEM 파일을 PFX로 변환합니다. 생성된 PFX는 홈 폴더에 있어야 합니다.
+4. 생성된 키와 PEM 파일을 PFX로 변환합니다. 생성된 PFX는 홈 폴더에 있어야 합니다.
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
 1. 다음 중 하나를 다운로드하여 설치합니다.
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R for Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R for Windows](https://cran.r-project.org/bin/windows/base/)
 
-    두 항목의 기능은 똑같지만 Microsoft R Open은 [Intel Math Kernel Library](https://software.intel.com/intel-mkl)의 허가로 추가적인 하드웨어 가속화된 선형 대수 라이브러리를 활용합니다.
+     두 항목의 기능은 똑같지만 Microsoft R Open은 [Intel Math Kernel Library](https://software.intel.com/intel-mkl)의 허가로 추가적인 하드웨어 가속화된 선형 대수 라이브러리를 활용합니다.
 
-1. [R Services 설치 관리자](https://aka.ms/rtvs-services)를 실행하고 메시지가 표시되면 다시 부팅합니다. 설치 관리자에서 다음을 수행합니다.
+2. [R Services 설치 관리자](https://aka.ms/rtvs-services)를 실행하고 메시지가 표시되면 다시 부팅합니다. 설치 관리자에서 다음을 수행합니다.
 
     - *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\*에 폴더를 만들고, 필요한 모든 이진 파일을 복사합니다.
     - `RHostBrokerService` 및 `RUserProfileService`를 설치하고 자동으로 시작되도록 구성합니다.
@@ -160,12 +160,12 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
 1. 다음 중 하나를 다운로드하여 설치합니다.
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R for Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R for Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    두 항목의 기능은 똑같지만 Microsoft R Open은 [Intel Math Kernel Library](https://software.intel.com/intel-mkl)의 허가로 추가적인 하드웨어 가속화된 선형 대수 라이브러리를 활용합니다.
+     두 항목의 기능은 똑같지만 Microsoft R Open은 [Intel Math Kernel Library](https://software.intel.com/intel-mkl)의 허가로 추가적인 하드웨어 가속화된 선형 대수 라이브러리를 활용합니다.
 
-1. 물리적 Ubuntu 컴퓨터, Azure Ubuntu VM, WSL(Linux용 Windows 하위 시스템) 및 Azure 컨테이너 리포지토리에서 실행되는 컨테이너를 비롯한 Docker 컨테이너가 설명되어 있는 [Linux용 원격 R Service](setting-up-remote-r-service-on-linux.md)의 지침을 따릅니다.
+2. 물리적 Ubuntu 컴퓨터, Azure Ubuntu VM, WSL(Linux용 Windows 하위 시스템) 및 Azure 컨테이너 리포지토리에서 실행되는 컨테이너를 비롯한 Docker 컨테이너가 설명되어 있는 [Linux용 원격 R Service](setting-up-remote-r-service-on-linux.md)의 지침을 따릅니다.
 
 ## <a name="configure-r-services"></a>R Services 구성
 

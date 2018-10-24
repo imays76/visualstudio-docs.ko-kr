@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865923"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 및 Windows 카운터
 
@@ -93,15 +93,15 @@ Visual Studio IDE에서 컴퓨터에 사용 가능한 카운터를 나열하려�
 
 2. 다음 작업 중 하나를 수행합니다.
 
-    -   **샘플링**을 클릭한 후 **샘플** 이벤트 목록에서 **성능 카운터**를 선택합니다. CPU 카운터가 **사용 가능한 성능 카운터**에 나열됩니다.
+   - **샘플링**을 클릭한 후 **샘플** 이벤트 목록에서 **성능 카운터**를 선택합니다. CPU 카운터가 **사용 가능한 성능 카운터**에 나열됩니다.
 
-         **참고** 이전 샘플링 구성으로 돌아가려면 **취소**를 클릭합니다.
+      **참고** 이전 샘플링 구성으로 돌아가려면 **취소**를 클릭합니다.
 
      또는
 
-    -   **CPU 카운터**를 선택한 후 **CPU 카운터 수집**을 선택합니다. CPU 카운터가 **사용 가능한 카운터**에 나열됩니다.
+   - **CPU 카운터**를 선택한 후 **CPU 카운터 수집**을 선택합니다. CPU 카운터가 **사용 가능한 카운터**에 나열됩니다.
 
-         **참고** 이전 카운터 수집 구성으로 돌아가려면 **취소**를 클릭합니다.
+      **참고** 이전 카운터 수집 구성으로 돌아가려면 **취소**를 클릭합니다.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>현재 플랫폼에서 지원되는 Windows 카운터의 목록을 보려면
 

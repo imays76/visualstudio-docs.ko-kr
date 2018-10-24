@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ba201b4518b350a96c4c4057f6945d24ea603f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 07031432218f2d4e0eb037582f2b1f5a76193cdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879760"
 ---
 # <a name="options-page-environment-node-properties"></a>옵션 페이지, 환경 노드 속성
 이 문서에서는 **옵션** 대화 상자의 **환경** 범주, `DTE.Properties("Environment", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다. 각 하위 단원의 제목은 속성 컬렉션에 액세스하는 데 사용되는 호출이며, 각 하위 단원의 표에는 컬렉션의 속성이 나열되어 있습니다.
@@ -27,7 +27,7 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "General")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |ShowStatusBar|Get/Set (Boolean)|상태 표시줄이 표시되는지 여부를 확인합니다.|
 |WindowMenuContainsNItems|Get/Set(Short)|문서 창이 Windows 메뉴 맨 아래에 포함되는 방식을 결정합니다.|
 |MRUListContainsNItems|Get/Set(Short)|다수의 파일이 "가장 최근에 사용됨" 하위 메뉴에 표시되는 방식을 결정합니다.|
@@ -42,7 +42,7 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |MacrosEnabled|Get/Set (Boolean)|매크로를 실행할 수 있습니다.|
 |AddinsEnabled|Get/Set (Boolean)|추가 기능을 로드할 수 있습니다.|
 |LoadAddinsFromTheWeb|Get/Set (Boolean)|추가 기능을 웹의 URL에서 로드할 수 있습니다.|
@@ -51,7 +51,7 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "Documents")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (Boolean)|현재 문서를 저장하는 경우 새 파일을 열면 현재 문서 창이 다시 사용되는지 여부를 결정합니다. `false`로 설정하면 열리는 각 문서에 대해 항상 새 문서 창이 열립니다.|
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|운영 체제가 디스크에서 파일이 수정되었음을 IDE에 알리면 환경이 IDE에서 열려 있는 파일을 자동으로 다시 로드하는지 여부를 결정합니다.|
 |AutoloadExternalChanges|Get/Set (Boolean)|열린 문서가 수정되지 않은 경우 열려 있는 문서에 대한 외부 수정 사항이 감지되면 수정된 파일을 자동으로 다시 로드하는지 여부를 결정합니다. 열린 문서가 수정되며 이 속성이 `true`인 경우 IDE에서는 마치 속성이 `false`인 것처럼 메시지를 표시합니다.|
@@ -68,7 +68,7 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "ExtensionManager")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |EnableAdminExtensions|Get/Set (Boolean)|관리자 자격 증명으로 Visual Studio가 실행될 때 사용자별 확장을 로드합니다. 이 값이 변경된 후에는 Visual Studio를 다시 시작해야 합니다.|
 |EnableOnline|Get/Set (Boolean)|Visual Studio Marketplace에 있는 확장에 액세스할 수 있도록 합니다.|
 |AutomaticallyCheckForUpdates|Get/Set (Boolean)|설치된 확장에 대한 업데이트를 자동으로 확인합니다.|
@@ -77,7 +77,7 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "FindAndReplace")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |ShowWarningMessages|Get/Set (Boolean)|경고 메시지를 표시합니다.|
 |InitializeFromEditor|Get/Set (Boolean)|**찾을 내용** 상자를 편집기의 텍스트로 자동으로 채웁니다.|
 |ShowMessageBoxes|Get/Set (Boolean)|정보 메시지를 표시합니다.|
@@ -87,7 +87,7 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "Import and Export Settings")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |TrackTeamSettings|Get/Set (Boolean)|파일에 TeamSettingsFile에서 지정된 설정을 사용합니다.|
 |TeamSettingsFile|Get/Set(문자열)|팀 설정이 포함된 파일의 이름입니다.|
 |AutoSaveFile|Get/Set(문자열)|사용자 설정이 자동으로 저장되는 파일의 이름입니다.|
@@ -96,21 +96,21 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "International")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |언어|Get/Set(문자열)|Visual Studio에 대한 현재 언어의 LCID 값입니다.|
 
 ## <a name="keyboard"></a>키보드
  `DTE.Properties("Environment", "Keyboard")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |Scheme|Get/Set(문자열)|기본 제공 스키마, 로드된 .vsk 파일의 전체 경로가 포함된 문자열 또는 .vsk 파일이 로드되지 않은 경우 "(기본값)"이 포함된 문자열을 반환합니다.|
 
 ## <a name="projects-and-solution"></a>프로젝트 및 솔루션
  `DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |OnRunOrPreview|Get/Set(문자열)|빌드된 프로젝트를 미리 보거나 실행하기 전에 IDE에서 모든 항목을 저장하는지 여부를 결정합니다.|
 |ProjectsLocation|Get/Set(문자열)|**프로젝트 추가** 대화 상자가 새 프로젝트를 저장하는 기본 디렉터리를 결정합니다.|
 |ShowOutputWindowBeforeBuild|Get/Set (Boolean)|빌드를 시작하면 **출력** 창이 표시되는지 여부를 결정합니다.|
@@ -133,7 +133,7 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "Startup")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |OnStartUp|Get/Set(Enum)|<xref:EnvDTE.vsStartUp>에서 시작 시 수행할 작업으로, 값 0부터 5까지 사용됩니다.<br /><br /> -   0: 홈페이지 열기<br />-   1: 마지막으로 로드한 솔루션 로드<br />-   2: **프로젝트 열기** 대화 상자 표시<br />-   3: **새 프로젝트** 대화 상자 표시<br />-   4: 빈 환경 표시<br />-   5: 시작 페이지 표시|
 |StartPageRSSUrl|Get/Set(문자열)|시작 시 사용되는 RSS 피드의 URL입니다.|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|StartPageRefreshInterval에 지정된 간격이 지날 때마다 시작 페이지를 새로 고칩니다.|
@@ -143,7 +143,7 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "TaskList")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (Boolean)|**작업 목록**에서 작업을 삭제할 때 확인 상자를 표시하는지 여부를 지정합니다.|
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|표시되지 않을 사용자 작업을 추가할 때 경고가 표시되도록 할지 여부를 지정합니다.|
 |DontShowFilePaths|Get/Set (Boolean)|작업 목록에 전체 파일 경로를 표시할지 여부를 지정합니다.|
@@ -153,7 +153,7 @@ ms.locfileid: "31953925"
  `DTE.Properties("Environment", "WebBrowser")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |HomePage|Get/Set(문자열)|홈페이지 URL을 나타냅니다.|
 |SearchPage|Get/Set(문자열)|검색 페이지 URL을 나타냅니다.|
 |ViewSourceIn|Get/Set(Enum)|<xref:EnvDTE.vsBrowserViewSource>(소스, 디자인, 외부)입니다.|

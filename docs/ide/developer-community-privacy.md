@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836829"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
@@ -33,13 +33,13 @@ ms.locfileid: "36327078"
 
 1. 작성한 보고서에서 **주석 추가**를 선택하여 문제에 대한 개인 설명을 작성합니다.
 
-1. 회신 편집기에서 **제출** 및 **취소** 단추 아래의 컨트롤을 사용하여 회신 대상을 지정합니다. **중재자 및 원래 게시자가 볼 수 있음**을 선택하여 Microsoft 직원과 본인만 볼 수 있도록 제한합니다.
+2. 회신 편집기에서 **제출** 및 **취소** 단추 아래의 컨트롤을 사용하여 회신 대상을 지정합니다. **중재자 및 원래 게시자가 볼 수 있음**을 선택하여 Microsoft 직원과 본인만 볼 수 있도록 제한합니다.
 
    ![개발자 커뮤니티의 개인 정보 제어](media/developer-community-privacy-control.png)
 
    지정한 사람만이 주석과 그 안에 포함된 이미지, 링크 또는 코드를 볼 수 있습니다. 주석 아래의 모든 회신은 원래 주석과 동일한 공개 설정을 가집니다. 이는 회신의 개인 정보 컨트롤이 공개 제한 상태를 올바르게 표시하지 않는 경우에도 마찬가지입니다.
 
-1. 재현에 필요한 설명 및 기타 정보, 이미지 및 첨부 파일을 추가합니다. **제출** 단추를 선택하여 이 정보를 비공개로 보냅니다.
+3. 재현에 필요한 설명 및 기타 정보, 이미지 및 첨부 파일을 추가합니다. **제출** 단추를 선택하여 이 정보를 비공개로 보냅니다.
 
    > [!NOTE]
    > 첨부된 파일은 2GB까지 최대 10개로 제한됩니다. 더 큰 파일을 업로드해야 하는 경우 새 문제 보고서를 제출하거나 개인 주석으로 Microsoft 직원에게 업로드 URL을 요청할 수 있습니다.
@@ -82,8 +82,8 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
 
    - 덤프 파일
 
-   > [!NOTE]
-   > 보고서를 제출하기 전에 제출하지 않으려는 기록 데이터를 삭제할 수 있습니다.
+    > [!NOTE]
+    > 보고서를 제출하기 전에 제출하지 않으려는 기록 데이터를 삭제할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

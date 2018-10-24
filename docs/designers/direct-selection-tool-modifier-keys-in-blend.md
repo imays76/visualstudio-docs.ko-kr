@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c17d5802e919108dfcb888f38acebe32c093bb76
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876232"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend의 직접 선택 도구 보조 키
 다음 표에는 **직접 선택** 도구 ![직접 선택 도구](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png)를 사용하여 기존 경로의 모양을 수정하는 데 사용할 수 있는 바로 가기가 나와 있습니다. 기존 패스에서 점을 추가 또는 제거하거나 두 개의 기존 패스를 조인하려면 **펜** 도구를 사용합니다.
 
 |수행할 작업|방법|포인터|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |패스의 점에 대해 탄젠트 핸들 표시|패스의 점을 클릭합니다.|![패스의 점에 대해 탄젠트 핸들 표시](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> 점 이동 포인터|
 |패스의 점을 이동합니다.|패스의 점을 끕니다.|![패스의 점을 이동합니다.](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> 점 이동 포인터|
 |패스의 두 점 간 세그먼트에 대해 탄젠트 핸들 표시|패스의 세그먼트를 클릭합니다.|![패스의 두 점 간 세그먼트에 대해 탄젠트 핸들 표시](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> 세그먼트 이동 포인터|

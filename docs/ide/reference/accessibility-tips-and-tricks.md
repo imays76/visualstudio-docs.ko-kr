@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747458"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811843"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio의 내게 필요한 옵션 팁과 요령
 
@@ -48,7 +48,7 @@ Visual Studio 편집기에는 코드 줄에서 특정 시점에 특성 및 기�
 Visual Studio IDE에는 대부분의 도구 창에 있는 것과 같은 도구 모음이 있습니다. 다음 바로 가기 키 조합을 사용하여 도구 모음에 액세스할 수 있습니다.
 
 |기능|설명|키 조합|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |IDE 도구 모음|표준 도구 모음에서 첫 번째 단추를 선택합니다.|**ALT**, **CTRL** + **TAB**|
 |도구 창 도구 모음|포커스를 도구 창의 도구 모음으로 이동합니다. <br> <br> **참고:** 이 기능은 대부분의 도구 창에서 작동하지만 포커스가 도구 창에 있을 때만 작동합니다. 또한 Alt 키 전에 Shift 키를 선택해야 합니다. 팀 탐색기와 같은 일부 도구 창에서는 Alt 키를 선택하기 전에 잠시 Shift 키를 누르고 있어야 합니다.|**Shift** + **Alt**|
 |도구 모음|다음 도구 모음의 첫 번째 항목으로 이동합니다(포커스가 도구 모음에 있을 때).|**CTRL** + **TAB**|
@@ -58,7 +58,7 @@ Visual Studio IDE에는 대부분의 도구 창에 있는 것과 같은 도구 �
 일부 기타 유용한 바로 가기 키 조합은 다음과 같습니다.
 
 |기능|설명|키 조합|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |IDE|고대비를 켜고 끕니다. <br> <br> **참고:** 표준 Windows 바로 가기|**왼쪽 ALT+왼쪽 SHIFT+PRINT SCREEN**|
 |대화 상자|대화 상자에서 확인란 옵션을 선택 또는 선택 취소합니다. <br> <br> **참고:** 표준 Windows 바로 가기|**스페이스바**|
 |상황에 맞는 메뉴|상황에 맞는(마우스 오른쪽 단추 클릭) 메뉴를 엽니다. <br> <br> **참고:** 표준 Windows 바로 가기|**SHIFT** + **F10**|
@@ -83,18 +83,18 @@ Windows에서 소리 애플릿을 사용하여 Visual Studio 프로그램 이벤
 
 1. Windows 10을 실행하는 컴퓨터의 **검색** 상자에서 **시스템 소리 변경**을 입력합니다.
 
-  ![Windows 10에서 검색 상자](media/type-here-to-search.png)
+   ![Windows 10에서 검색 상자](media/type-here-to-search.png)
 
-  (또는 Cortana를 사용하도록 설정한 경우 "Hey Cortana" 및 "시스템 소리 변경"이라고 차례로 말합니다.)
+   (또는 Cortana를 사용하도록 설정한 경우 "Hey Cortana" 및 "시스템 소리 변경"이라고 차례로 말합니다.)
 
 2. **시스템 소리 변경**을 두 번 클릭합니다.
 
-  ![Windows 10에서 검색 결과](media/change-system-sounds.png)
+   ![Windows 10에서 검색 결과](media/change-system-sounds.png)
 
 3. **소리** 대화 상자에서 **소리** 탭을 클릭합니다. <br><br>
- 그런 다음 **프로그램 이벤트**에서 **Microsoft Visual Studio**로 스크롤하여 사용자가 선택한 이벤트에 적용하려는 소리를 선택합니다.
+   그런 다음 **프로그램 이벤트**에서 **Microsoft Visual Studio**로 스크롤하여 사용자가 선택한 이벤트에 적용하려는 소리를 선택합니다.
 
-  ![Windows 10에서 소리 애플릿의 소리 탭](media/sound-applet.png)
+   ![Windows 10에서 소리 애플릿의 소리 탭](media/sound-applet.png)
 
 4. **확인**을 클릭합니다.
 

@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2a9e85f94e4c6baa06984b2b84e03c836eab53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aa5a33524ab33ace5b88ea965155df3506fdad4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872813"
 ---
 # <a name="concurrency-visualizer"></a>동시성 시각화 도우미
 > [!NOTE]
 >  동시성 시각화 도우미는 Visual Studio의 선택적 확장입니다. 다음 링크에서 동시성 시각화 도우미와 동시성 시각화 수집 도구를 다운로드하세요.  
->   
->  -   [Visual Studio 2017용 동시성 시각화 도우미](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) 확장을 다운로드합니다.  
->  -   [Visual Studio 2015용 동시성 시각화 도우미](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 확장을 다운로드합니다.  
-> -   [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/en-in/download/details.aspx?id=49103)를 다운로드합니다.  
->   
->      [동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio 2015용 동시성 시각화 도우미에서 확인할 수 있습니다. 이 도구는 Visual Studio가 설치되어 있지 않은 컴퓨터에서도 사용할 수 있습니다.  
+> 
+> - [Visual Studio 2017용 동시성 시각화 도우미](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) 확장을 다운로드합니다.  
+> - [Visual Studio 2015용 동시성 시각화 도우미](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 확장을 다운로드합니다.  
+>   -   [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/download/details.aspx?id=49103)를 다운로드합니다.  
+> 
+>   [동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio 2015용 동시성 시각화 도우미에서 확인할 수 있습니다. 이 도구는 Visual Studio가 설치되어 있지 않은 컴퓨터에서도 사용할 수 있습니다.  
   
  동시성 시각화 도우미를 사용하여 다중 스레드 앱이 어떻게 작업을 수행하는지 확인할 수 있습니다. 동시성 시각화 도우미의 뷰에서는 프로그램의 스레드와 시스템 전체의 일시적 관계를 보여 주는 그래픽, 표 및 텍스트 형식의 데이터를 제공합니다. 동시성 시각화 도우미를 사용하여 성능 병목 지점, 불충분한 CPU 사용률, 스레드 경합, 코어 스레드 간 마이그레이션, 동기화 지연, DirectX 동작, 겹쳐 있는 I/O 영역 및 기타 정보를 찾을 수 있습니다. 뷰에서는 항상 그래픽 출력을 호출 스택 및 소스 코드에 연결하여 실행 가능한 데이터를 제공합니다.  
 

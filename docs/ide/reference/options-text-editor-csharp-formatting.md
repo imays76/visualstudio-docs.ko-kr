@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f302445ebc8de788fc6776900f73b45550d73fa3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bcd63e9a155843d715e63fb6514e22f356847d2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821385"
 ---
 # <a name="options-text-editor-c-formatting"></a>옵션, 텍스트 편집기, C#, 서식
 
@@ -57,12 +57,12 @@ ms.locfileid: "42627185"
 |**단일 줄 제어문에 대해 중괄호 추가/제거**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 단일 줄 제어문에서 중괄호를 추가하거나 제거합니다.| csharp_prefer_braces<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **코드 블록 기본 설정** > **중괄호 기본 사용** |
 |**내게 필요한 옵션 한정자 추가**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 누락된 내게 필요한 옵션 한정자를 추가합니다.| dotnet_style_require_accessibility_modifiers |
 |**내게 필요한 옵션 한정자 정렬**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 내게 필요한 옵션 한정자를 정렬합니다.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**식/블록 본문 기본 설정 적용**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 본문을 차단하거나 반대로 수행하도록 식 본문 멤버를 변환합니다.| [식 본문 멤버 EditorConfig 옵션](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **식 기본 설정** > **메서드, 생성자 등에 식 본문 사용**  |
-|**암시적/명시적 형식 기본 설정 적용**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 `var`를 명시적 형식 또는 반대로 변환합니다.| [명시적 형식 EditorConfig 옵션](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **'var' 기본 설정**  |
+|**식/블록 본문 기본 설정 적용**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 본문을 차단하거나 반대로 수행하도록 식 본문 멤버를 변환합니다.| [식 본문 멤버 EditorConfig 옵션](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **식 기본 설정** > **메서드, 생성자 등에 식 본문 사용** |
+|**암시적/명시적 형식 기본 설정 적용**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 `var`를 명시적 형식 또는 반대로 변환합니다.| [명시적 형식 EditorConfig 옵션](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **'var' 기본 설정** |
 |**인라인 'out' 변수 기본 설정 적용**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 가능한 경우 `out` 변수를 인라인합니다.| csharp_style_inlined_variable_declaration<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **변수 기본 설정** > **인라인 변수 선언 기본 사용** |
 |**언어/프레임워크 형식 기본 설정 적용**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 언어 형식을 프레임워크 형식으로 또는 반대로 변환합니다.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **미리 정의된 형식 기본 설정** |
 |**개체/컬렉션 초기화 기본 설정 적용**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 가능한 경우 개체 및 컬렉션 이니셜라이저를 사용합니다.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **식 기본 설정** > **개체 이니셜라이저 기본 사용** 또는 **컬렉션 이니셜라이저 기본 사용** |
-|**'this.' 한정자 기본 설정 적용**|이 옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 `this.` 기본 설정을 적용합니다.| [this. 한정자 EditorConfig 옵션](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **'this.' 기본 설정**  |
+|**'this.' 한정자 기본 설정 적용**|이 옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 `this.` 기본 설정을 적용합니다.| [this. 한정자 EditorConfig 옵션](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **'this.' 기본 설정** |
 |**가능한 경우 전용 필드를 읽기 전용으로 만들기**|옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 가능한 경우 전용 필드를 `readonly`로 만듭니다.| dotnet_style_readonly_field<br/><br/>**도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **필드 기본 설정** > **읽기 전용 기본 사용** |
 |**불필요한 캐스트 제거**|이 옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 불필요한 캐스트를 제거합니다.| N/A |
 |**사용하지 않는 변수 제거**|이 옵션을 선택하면 **Edit.FormatDocument**를 트리거할 때 사용하지 않는 변수를 제거합니다.| N/A |

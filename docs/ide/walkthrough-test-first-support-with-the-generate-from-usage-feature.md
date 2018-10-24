@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821491"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>연습: 관례에서 생성 기능을 통한 테스트 우선 개발
 
@@ -36,15 +36,15 @@ ms.locfileid: "34748194"
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Windows 클래스 라이브러리 프로젝트 및 테스트 프로젝트 만들기
 
-1.  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 새 **Windows 클래스 라이브러리** 프로젝트를 만듭니다. 사용하는 언어에 따라 이름을 `GFUDemo_VB` 또는 `GFUDemo_CS`로 지정합니다.
+1. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 새 **Windows 클래스 라이브러리** 프로젝트를 만듭니다. 사용하는 언어에 따라 이름을 `GFUDemo_VB` 또는 `GFUDemo_CS`로 지정합니다.
 
-2.  **솔루션 탐색기**에서 맨 위의 솔루션 아이콘을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음 **새 프로젝트**를 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **테스트**를 선택합니다.
+2. **솔루션 탐색기**에서 맨 위의 솔루션 아이콘을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음 **새 프로젝트**를 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **테스트**를 선택합니다.
 
-3.  가운데 창에서 **단위 테스트 프로젝트**를 선택하고 기본 이름인 `UnitTestProject1`을 적용합니다. 다음 그림에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]에 표시되는 경우의 대화 상자를 보여 줍니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서도 대화 상자가 유사하게 표시됩니다.
+3. 가운데 창에서 **단위 테스트 프로젝트**를 선택하고 기본 이름인 `UnitTestProject1`을 적용합니다. 다음 그림에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]에 표시되는 경우의 대화 상자를 보여 줍니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서도 대화 상자가 유사하게 표시됩니다.
 
-     ![새 테스트 프로젝트 대화 상자](../ide/media/newproject_test.png)
+    ![새 테스트 프로젝트 대화 상자](../ide/media/newproject_test.png)
 
-4.  **확인** 을 선택하여 **새 프로젝트** 대화 상자를 닫습니다.
+4. **확인** 을 선택하여 **새 프로젝트** 대화 상자를 닫습니다.
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>클래스 라이브러리 프로젝트에 참조 추가
 
@@ -58,20 +58,20 @@ ms.locfileid: "34748194"
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>단위 테스트에서 새 클래스 생성
 
-1.  테스트 프로젝트에는 *UnitTest1*이라는 파일이 포함되어 있습니다. **솔루션 탐색기**에서 이 파일을 두 번 클릭하여 코드 편집기에서 엽니다. 테스트 클래스 및 테스트 메서드가 생성되었습니다.
+1. 테스트 프로젝트에는 *UnitTest1*이라는 파일이 포함되어 있습니다. **솔루션 탐색기**에서 이 파일을 두 번 클릭하여 코드 편집기에서 엽니다. 테스트 클래스 및 테스트 메서드가 생성되었습니다.
 
-2.  `UnitTest1` 클래스에 대한 선언을 찾아서 이름을 `AutomobileTest`로 바꿉니다.
+2. `UnitTest1` 클래스에 대한 선언을 찾아서 이름을 `AutomobileTest`로 바꿉니다.
 
- > [!NOTE]
- >  이제 IntelliSense는 IntelliSense 문 완성을 위해 *완성 모드* 및 *제안 모드*라는 두 가지 대안을 제공합니다. 클래스 및 멤버를 정의하기 전에 사용하는 경우에는 제안 모드를 사용합니다. **IntelliSense** 창이 열려 있으면 **Ctrl**+**Alt**+**스페이스**를 눌러 완성 모드와 제안 모드 간을 전환할 수 있습니다. 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요. 제안 모드는 다음 단계에서 `Automobile` 을 입력할 때 도움이 됩니다.
+   > [!NOTE]
+   >  이제 IntelliSense는 IntelliSense 문 완성을 위해 *완성 모드* 및 *제안 모드*라는 두 가지 대안을 제공합니다. 클래스 및 멤버를 정의하기 전에 사용하는 경우에는 제안 모드를 사용합니다. **IntelliSense** 창이 열려 있으면 **Ctrl**+**Alt**+**스페이스**를 눌러 완성 모드와 제안 모드 간을 전환할 수 있습니다. 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요. 제안 모드는 다음 단계에서 `Automobile` 을 입력할 때 도움이 됩니다.
 
-3.  `TestMethod1()` 메서드를 찾아서 이름을 `DefaultAutomobileIsInitializedCorrectly()`로 바꿉니다. 이 메서드 내에서 다음 스크린샷과 같이 `Automobile`이라는 클래스의 새 인스턴스를 만듭니다. 컴파일 타임 오류를 나타내는 물결선이 표시되고 왼쪽 여백(C#에만 해당) 또는 가리키는 경우 오류 표시선 바로 아래에 [빠른 작업](../ide/quick-actions.md) 전구가 나타납니다.
+3. `TestMethod1()` 메서드를 찾아서 이름을 `DefaultAutomobileIsInitializedCorrectly()`로 바꿉니다. 이 메서드 내에서 다음 스크린샷과 같이 `Automobile`이라는 클래스의 새 인스턴스를 만듭니다. 컴파일 타임 오류를 나타내는 물결선이 표시되고 왼쪽 여백(C#에만 해당) 또는 가리키는 경우 오류 표시선 바로 아래에 [빠른 작업](../ide/quick-actions.md) 전구가 나타납니다.
 
-     ![Visual Basic의 빠른 작업](../ide/media/genclass_underlinevb.png)
+    ![Visual Basic의 빠른 작업](../ide/media/genclass_underlinevb.png)
 
-     ![C&#35;의 빠른 작업](../ide/media/genclass_underline.png)
+    ![C&#35;의 빠른 작업](../ide/media/genclass_underline.png)
 
-4.  **빠른 작업** 전구를 선택하거나 클릭합니다. `Automobile` 유형이 정의되지 않았다는 오류 메시지가 표시됩니다. 또한 몇 가지 솔루션이 표시됩니다.
+4. **빠른 작업** 전구를 선택하거나 클릭합니다. `Automobile` 유형이 정의되지 않았다는 오류 메시지가 표시됩니다. 또한 몇 가지 솔루션이 표시됩니다.
 
 5. **새 형식 생성**을 클릭하여 **형식 생성** 대화 상자를 엽니다. 이 대화 상자는 다른 프로젝트에서 형식 생성을 포함하는 옵션을 제공합니다.
 
@@ -79,9 +79,9 @@ ms.locfileid: "34748194"
 
      ![새 형식 생성 대화 상자](../ide/media/genotherdialog.png)
 
-6.  **확인** 을 클릭하여 대화 상자를 닫고 새 파일을 만듭니다.
+7. **확인** 을 클릭하여 대화 상자를 닫고 새 파일을 만듭니다.
 
-7.  **솔루션 탐색기**의 **GFUDemo_VB** 또는 **GFUDemo_CS** 프로젝트 노드 아래에서 새 *Automobile.vb* 또는 *Automobile.cs* 파일이 있는지 확인합니다. 코드 편집기에서 포커스는 여전히 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`에 있으며 이를 통해 최소한의 사용 중단으로 테스트를 계속해서 작성할 수 있습니다.
+8. **솔루션 탐색기**의 **GFUDemo_VB** 또는 **GFUDemo_CS** 프로젝트 노드 아래에서 새 *Automobile.vb* 또는 *Automobile.cs* 파일이 있는지 확인합니다. 코드 편집기에서 포커스는 여전히 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`에 있으며 이를 통해 최소한의 사용 중단으로 테스트를 계속해서 작성할 수 있습니다.
 
 ### <a name="generate-a-property-stub"></a>속성 스텁 생성
 제품 사양에 따라 `Automobile` 클래스에 `Model` 및 `TopSpeed`라는 두 개의 공용 속성이 있다고 가정합니다. 이러한 속성은 기본값 `"Not specified"` 및 `-1` 을 사용하여 기본 생성자에서 초기화되어야 합니다. 다음 단위 테스트는 기본 생성자가 속성을 올바른 기본값으로 설정하는지 확인합니다.

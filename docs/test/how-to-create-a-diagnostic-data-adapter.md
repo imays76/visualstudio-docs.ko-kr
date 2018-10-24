@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851610"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 
@@ -33,7 +33,7 @@ ms.locfileid: "44321192"
  아래 목록에는 진단 데이터 어댑터를 만들 때 사용할 수 있는 몇 가지 주요 이벤트가 나와 있습니다. 진단 데이터 어댑터 이벤트의 전체 목록을 보려면 추상 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 클래스를 참조하십시오.
 
 |이벤트(event)|설명|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|테스트 실행을 시작합니다.|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|테스트 실행을 끝냅니다.|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|테스트 실행의 각 테스트를 시작합니다.|
@@ -52,78 +52,78 @@ ms.locfileid: "44321192"
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>진단 데이터 어댑터를 만들고 설치하려면
 
-1.  새 클래스 라이브러리를 만듭니다.
+1. 새 클래스 라이브러리를 만듭니다.
 
-    1.  **파일** 메뉴에서 **새로 만들기**를 선택한 다음, **새 프로젝트**를 가리킵니다.
+   1.  **파일** 메뉴에서 **새로 만들기**를 선택한 다음, **새 프로젝트**를 가리킵니다.
 
-    2.  **프로젝트 형식**에서 사용할 언어를 선택합니다.
+   2.  **프로젝트 형식**에서 사용할 언어를 선택합니다.
 
-    3.  **Visual Studio에 설치되어 있는 템플릿**에서 **클래스 라이브러리**를 선택합니다.
+   3.  **Visual Studio에 설치되어 있는 템플릿**에서 **클래스 라이브러리**를 선택합니다.
 
-    4.  진단 데이터 어댑터의 이름을 입력합니다.
+   4.  진단 데이터 어댑터의 이름을 입력합니다.
 
-    5.  **확인**을 선택합니다.
+   5.  **확인**을 선택합니다.
 
-2.  어셈블리 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**을 추가합니다.
+2. 어셈블리 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**을 추가합니다.
 
-    1.  **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
+   1.  **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
 
-    2.  **.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**을 찾습니다.
+   2.  **.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**을 찾습니다.
 
-    3.  **확인**을 선택합니다.
+   3.  **확인**을 선택합니다.
 
-3.  어셈블리 **Microsoft.VisualStudio.QualityTools.Common**을 추가합니다.
+3. 어셈블리 **Microsoft.VisualStudio.QualityTools.Common**을 추가합니다.
 
-    1.  **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
+   1.  **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
 
-    2.  **/.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.Common.dll**을 찾습니다.
+   2.  **/.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.Common.dll**을 찾습니다.
 
-    3.  **확인**을 선택합니다.
+   3.  **확인**을 선택합니다.
 
-4.  다음 `using` 문을 클래스 파일에 추가합니다.
+4. 다음 `using` 문을 클래스 파일에 추가합니다.
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute>를 진단 데이터 어댑터의 클래스에 추가하여 이를 진단 데이터 어댑터로 표시합니다. 여기서 **회사**, **제품** 및 **버전**을 진단 데이터 어댑터에 맞는 적절한 정보로 바꿉니다.
+5. <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute>를 진단 데이터 어댑터의 클래스에 추가하여 이를 진단 데이터 어댑터로 표시합니다. 여기서 **회사**, **제품** 및 **버전**을 진단 데이터 어댑터에 맞는 적절한 정보로 바꿉니다.
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> 특성을 클래스에 추가합니다. 여기서 매개 변수를 진단 데이터 어댑터에 맞는 적절한 정보로 바꿉니다.
+6. <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> 특성을 클래스에 추가합니다. 여기서 매개 변수를 진단 데이터 어댑터에 맞는 적절한 정보로 바꿉니다.
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     이렇게 지정한 이름이 테스트 설정 작업에 표시됩니다.
+    이렇게 지정한 이름이 테스트 설정 작업에 표시됩니다.
 
-    > [!NOTE]
-    > <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>를 추가하여 이 데이터 어댑터에 대한 사용자 지정 구성 편집기의 `Type`을 지정하고, 필요할 경우 편집기에 사용할 도움말 파일을 지정할 수도 있습니다.
-    >
-    > 또한 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>를 적용하여 이 특성이 항상 사용되도록 지정할 수도 있습니다.
+   > [!NOTE]
+   > <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>를 추가하여 이 데이터 어댑터에 대한 사용자 지정 구성 편집기의 `Type`을 지정하고, 필요할 경우 편집기에 사용할 도움말 파일을 지정할 수도 있습니다.
+   >
+   > 또한 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>를 적용하여 이 특성이 항상 사용되도록 지정할 수도 있습니다.
 
-7.  진단 데이터 어댑터 클래스는 다음과 같이 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> 클래스에서 상속되어야 합니다.
+7. 진단 데이터 어댑터 클래스는 다음과 같이 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> 클래스에서 상속되어야 합니다.
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  다음과 같이 지역 변수를 추가합니다.
+8. 다음과 같이 지역 변수를 추가합니다.
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> 메서드 및 **Dispose** 메서드를 추가합니다. `Initialize` 메서드에서 다음과 같이 데이터 싱크 및 테스트 설정의 구성 데이터를 초기화하고 사용할 이벤트 처리기를 등록합니다.
 
@@ -273,7 +273,7 @@ ms.locfileid: "44321192"
 
 17. 진단 데이터 어댑터가 선택된 테스트 설정을 사용하여 테스트를 실행합니다.
 
-   지정한 데이터 파일이 테스트 결과에 연결됩니다.
+    지정한 데이터 파일이 테스트 결과에 연결됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

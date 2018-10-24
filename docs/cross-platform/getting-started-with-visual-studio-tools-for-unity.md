@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855211"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
 
@@ -47,7 +47,7 @@ Unity 설치에 포함되는 Visual Studio의 버전은 최신 버전이 아닐 
 
 Visual Studio 2017이 이미 설치되어 있거나 수동으로 설치하려는 경우에는 Visual Studio 설치 관리자를 실행합니다.
 
-1. [Visual Studio 설치 관리자를 다운로드](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio)하거나 이미 설치된 경우에는 설치 관리자를 엽니다.
+1. [Visual Studio 설치 관리자를 다운로드](/visualstudio/install/install-visual-studio)하거나 이미 설치된 경우에는 설치 관리자를 엽니다.
 
 1. 원하는 Visual Studio 버전에 대해 **수정**(이미 설치된 경우) 또는 **설치**(새 설치의 경우)를 클릭합니다.
 
@@ -63,21 +63,21 @@ Unity 2018.1부터 Visual Studio는 Unity의 기본 외부 스크립트 편집�
 
 1. **편집** 메뉴에서 **기본 설정**을 선택합니다.
 
-  ![기본 설정 선택](media/vstu_unity-preferences.png)
+   ![기본 설정 선택](media/vstu_unity-preferences.png)
 
-1. 기본 설정 대화 상자에서 **외부 도구** 탭을 선택합니다.
+2. 기본 설정 대화 상자에서 **외부 도구** 탭을 선택합니다.
 
-1. 외부 스크립트 편집기 드롭다운 목록에서 원하는 **Visual Studio** 버전이 있을 경우 이를 선택하고, 그렇지 않을 경우 **찾아보기...** 를 선택합니다.
+3. 외부 스크립트 편집기 드롭다운 목록에서 원하는 **Visual Studio** 버전이 있을 경우 이를 선택하고, 그렇지 않을 경우 **찾아보기...** 를 선택합니다.
 
-  ![Visual Studio 선택](media/vstu_unity-external-tools.png)
+   ![Visual Studio 선택](media/vstu_unity-external-tools.png)
 
-1. **찾아보기...** 를 선택한 경우 Visual Studio 설치 디렉터리 내부의 **Common7/IDE** 디렉터리로 이동하고 **devenv.exe**를 선택합니다. 그런 다음, **열기**를 클릭합니다.
+4. **찾아보기...** 를 선택한 경우 Visual Studio 설치 디렉터리 내부의 **Common7/IDE** 디렉터리로 이동하고 **devenv.exe**를 선택합니다. 그런 다음, **열기**를 클릭합니다.
 
-  ![열기 선택](media/vstu_browse-for-application.png)
+   ![열기 선택](media/vstu_browse-for-application.png)
 
-1. **외부 스크립트 편집기** 목록에서 Visual Studio를 선택한 후 **편집기 연결** 확인란이 선택되어 있는지 확인합니다.
+5. **외부 스크립트 편집기** 목록에서 Visual Studio를 선택한 후 **편집기 연결** 확인란이 선택되어 있는지 확인합니다.
 
-1. **기본 설정** 대화 상자를 닫아 구성 프로세스를 완료합니다.
+6. **기본 설정** 대화 상자를 닫아 구성 프로세스를 완료합니다.
 
 ## <a name="support-for-older-versions"></a>이전 버전 지원
 

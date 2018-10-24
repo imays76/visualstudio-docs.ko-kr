@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834289"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고
 
@@ -38,7 +38,7 @@ ms.locfileid: "39176332"
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-|
 |**성능 및 스트레스 보고서 만들기:** Microsoft Excel을 사용하여 부하 및 웹 성능 테스트에 대한 보고서를 만들 수 있습니다.|- [방법: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Microsoft Word를 사용하여 수동으로 성능 및 스트레스 보고서 만들기:** 요약, 테이블 및 그래프 데이터를 Microsoft Word 문서에 복사하여 붙여넣는 방법으로 부하 및 웹 성능 테스트에 대한 보고서를 수동으로 만들 수 있습니다.|- [방법: Microsoft Word를 사용하여 수동으로 부하 테스트 성능 보고서 만들기](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 

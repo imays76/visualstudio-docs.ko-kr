@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837141"
 ---
 # <a name="edit-load-test-scenarios"></a>부하 테스트 시나리오 편집
 
@@ -46,7 +46,7 @@ ms.locfileid: "39180245"
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-----------------------|
 |**시나리오에 인위적인 상호 작용 일시 중지 추가:** 인지 시간을 사용하여 웹 사이트와의 상호 작용 간에 대기하게 되는 사람의 동작을 시뮬레이트할 수 있습니다. 인지 시간은 웹 성능 테스트의 요청 간이나 부하 테스트 시나리오의 테스트 반복 간에 발생합니다. 부하 테스트에서 인지 시간 사용은 보다 정확한 부하 시뮬레이션을 만드는 데 유용합니다.|-   [인지 시간을 편집하여 웹 사이트 사용자 상호 작용 지연 시뮬레이트](../test/edit-think-times-in-load-test-scenarios.md)|
 |**시나리오에 필요한 가상 사용자 수 지정:** 부하 패턴 속성을 구성하여 부하 테스트 중에 시뮬레이션된 사용자 부하가 조정되는 방식을 지정할 수 있습니다. 일정 부하, 단계 부하 및 목표 기반 부하라는 세 가지 부하 패턴이 기본적으로 제공됩니다. 부하 패턴을 선택하고 부하 테스트 목표에 맞는 적절한 수준으로 속성을 조정합니다.|-   [모델 가상 사용자 동작에 대한 부하 패턴 편집](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**시나리오에서 가상 사용자가 테스트를 실행할 확률 구성:** 테스트 조합을 사용하여 부하 테스트 시나리오에서 가상 사용자가 특정 테스트를 실행할 확률을 지정할 수 있습니다. 이렇게 하면 부하를 보다 사실적으로 시뮬레이션할 수 있습니다. 응용 프로그램에서 워크플로를 하나만 사용하는 대신 여러 워크플로를 사용하면 최종 사용자가 응용 프로그램과 상호 작용하는 방식을 보다 가깝게 테스트할 수 있습니다.|-   [텍스트 조합 모델 편집](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

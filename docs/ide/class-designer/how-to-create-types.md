@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842263"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>방법: 클래스 디자이너를 사용하여 형식 만들기
 
@@ -71,21 +71,21 @@ ms.locfileid: "33957258"
 
 ##  <a name="CustAttributeType"></a> 형식에 사용자 지정 특성 적용
 
-1.  클래스 다이어그램에서 형식의 모양을 클릭합니다.
+1. 클래스 다이어그램에서 형식의 모양을 클릭합니다.
 
-2.  **속성**에서 해당 형식의 **사용자 지정 특성** 속성 옆에 있는 줄임표(...) 단추를 클릭합니다.
+2. **속성**에서 해당 형식의 **사용자 지정 특성** 속성 옆에 있는 줄임표(...) 단추를 클릭합니다.
 
-3.  하나 이상의 사용자 지정 특성을 한 줄에 하나씩 추가합니다. 중괄호로 묶지 마십시오.
+3. 하나 이상의 사용자 지정 특성을 한 줄에 하나씩 추가합니다. 중괄호로 묶지 마십시오.
 
    사용자 지정 특성이 해당 형식에 적용됩니다.
 
 ##  <a name="CustAttributeMember"></a> 형식 멤버에 사용자 지정 특성 적용
 
-1.  클래스 다이어그램에서 형식 모양에 있는 멤버의 이름을 클릭하거나 클래스 세부 내용 창에서 해당 행을 클릭합니다.
+1. 클래스 다이어그램에서 형식 모양에 있는 멤버의 이름을 클릭하거나 클래스 세부 내용 창에서 해당 행을 클릭합니다.
 
-2.  **속성**에서 해당 멤버의 **사용자 지정 특성** 속성을 찾습니다.
+2. **속성**에서 해당 멤버의 **사용자 지정 특성** 속성을 찾습니다.
 
-3.  하나 이상의 사용자 지정 특성을 한 줄에 하나씩 추가합니다. 중괄호로 묶지 마십시오.
+3. 하나 이상의 사용자 지정 특성을 한 줄에 하나씩 추가합니다. 중괄호로 묶지 마십시오.
 
    사용자 지정 특성이 해당 형식에 적용됩니다.
 

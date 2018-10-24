@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 14949313b0e44dd7e86480177c56819d3fdb22f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a4e3dc416a406976403dceb0568cea5b8cbfd56e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775093"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880541"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
@@ -50,7 +50,7 @@ Visual Studio Tools for Unity는 Visual Studio만의 강력한 [디버깅](using
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity
 
-Mac용 Visual Studio는 Unity 프로젝트도 지원합니다. 자세한 내용은 [Mac용 Visual Studio Tools for Unity 설명서](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools)를 참조하세요.
+Mac용 Visual Studio는 Unity 프로젝트도 지원합니다. 자세한 내용은 [Mac용 Visual Studio Tools for Unity 설명서](/visualstudio/mac/unity-tools)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

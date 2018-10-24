@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7890f5c1db26616ec1041b202a3863d1fbfae20e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845454"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트 결과 분석
 
@@ -44,7 +44,7 @@ ms.locfileid: "36234165"
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-|
 |**부하 테스트 결과 액세스:** 부하 테스트 편집기에서 부하 테스트를 실행할 경우 부하 테스트 결과가 자동으로 열리고 실행 중인 부하 테스트가 **부하 테스트 분석기**에 표시됩니다.|-   [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)|
 |**부하 테스트에 분석 주석 추가:** 분석을 수행할 때 부하 테스트에 주석을 추가할 수 있습니다. 주석은 부하 테스트 결과와 함께 영구적으로 저장됩니다. 입력하는 설명은 부하 테스트 편집기에서 **부하 테스트 결과 열기 및 관리** 대화 상자의 부하 테스트에 연결된 **설명** 열에도 표시됩니다.<br /><br /> 자세한 내용은 [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)를 참조하세요.<br /><br /> 또한 주석은 부하 테스트 결과에 대한 Excel 보고서를 만들 때도 표시됩니다.<br /><br /> 자세한 내용은 [테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고](../test/compare-load-test-results.md)를 참조하세요.|-   [방법: 완료된 부하 테스트를 분석하는 동안 주석 추가](../test/how-to-add-comments-on-a-completed-load-test.md)|
 |**부하 테스트 결과 분석:** 부하 테스트 실행 데이터에 액세스한 후 결과 데이터를 분석할 수 있습니다. 부하 테스트 요약을 통해 결과를 바로 확인할 수 있습니다. 부하 테스트 요약에는 핵심 결과가 간단하고 읽기 쉬운 형식으로 표시됩니다.<br /><br /> 부하 테스트 요약은 인쇄가 가능하므로 이해 관계자에게 결과를 편리하게 전달할 수 있습니다.<br /><br /> 결과 그래프 및 테이블을 사용하여 부하 테스트 결과의 세부 정보를 분석할 수 있습니다. 여기에는 **오류**, **페이지**, **요청**, **SQL 추적**, **테스트**, **임계값** 및 **트랜잭션**이 포함됩니다.|-   [부하 테스트 결과 요약 개요](../test/load-test-results-summary-overview.md)<br />-   [방법: 웹 페이지 응답 보기](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [임계값 규칙 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [테이블 뷰에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813000"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트에서 임계값 규칙 위반 분석
 
@@ -35,7 +35,7 @@ ms.locfileid: "36234987"
  임계값 위반 테이블에는 처음 1,000개의 위반이 표시됩니다. 이 테이블에는 다음과 같은 열이 있습니다.
 
 |열|설명|기본적으로 표시되는지 여부|
-|------------|-----------------|------------------------|
+|-|-|-|
 |시간|부하 테스트 도중 위반이 발생한 시간입니다.|예|
 |컴퓨터|테스트 도중 위반이 발생한 컴퓨터의 이름입니다. **참고:** Rig에서 부하 테스트를 실행하는 경우 이 정보가 중요합니다.|예|
 |범주|위반이 발생한 성능 카운터 범주입니다.|예|
