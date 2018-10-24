@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907042"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 명령줄 스위치
 
@@ -61,7 +61,7 @@ Devenv를 사용하면 IDE(통합 개발 환경)에 대한 다양한 옵션을 �
 다음 명령줄 스위치는 IDE를 표시하고 설명된 작업을 수행합니다.
 
 |명령줄 스위치|설명|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|IDE를 시작하고 지정한 명령을 실행합니다.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|디버거의 제어로 C++ 실행 파일을 로드합니다. 이 스위치는 Visual Basic 또는 C# 실행 파일에 제공되지 않습니다. 자세한 내용은 [디버거에서 자동으로 프로세스 시작](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)을 참조하세요.|
 |[/LCID 또는 /l](../../ide/reference/lcid-devenv-exe.md)|IDE의 기본 언어를 설정합니다. 지정한 언어가 Visual Studio 설치에 포함되어 있지 않은 경우 이 설정은 무시됩니다.|
@@ -77,7 +77,7 @@ Devenv를 사용하면 IDE(통합 개발 환경)에 대한 다양한 옵션을 �
 다음 명령줄 스위치는 IDE를 표시하지 않습니다.
 
 |명령줄 스위치|설명|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|**명령 프롬프트 창**에 devenv 스위치에 대한 도움말을 표시합니다.<br /><br /> **Devenv /?**|
 |[/Build](../../ide/reference/build-devenv-exe.md)|지정한 솔루션의 구성에 따라 지정한 솔루션 또는 프로젝트를 빌드합니다.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|소스 파일에 영향을 주지 않고 빌드 명령에 의해 생성된 파일을 삭제합니다.<br /><br /> **Devenv myproj.csproj /clean**|

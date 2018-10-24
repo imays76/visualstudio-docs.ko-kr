@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f717a61e79e9f91f9f79a32d1da5020b0084516
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d8d9c479c1dac638a63ce45d114c4a66e0a213d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908426"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-함수를 호출 하 고 개체로 결과 값을 반환 합니다.  
+함수를 호출 하 고 결과 개체 값을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,22 +47,22 @@ int Evaluate(
   
 #### <a name="parameters"></a>매개 변수  
  `ppParams`  
- [in] 배열을 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 입력된 매개 변수를 나타내는 개체입니다. 중 하나를 사용 하 여 만든 각 매개이 변수에 `Create` 의 메서드는 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스입니다.  
+ [in] 배열을 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 입력된 매개 변수를 나타내는 개체입니다. 중 하나를 사용 하 여 만든 각 매개이 변수에 `Create` 의 메서드를 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스입니다.  
   
  `dwParams`  
  [in] 매개 변수 개수는 `ppParams` 배열입니다.  
   
  `dwTimeout`  
- [in] 이 메서드로부터 반환 하기 전에 대기할 밀리초 단위로 최대 시간을 지정 합니다. 사용 하 여 `INFINITE` 무기한 대기를 나타냅니다.  
+ [in] 이 메서드에서 반환 되기 전에 대기할 밀리초 단위로 최대 시간을 지정 합니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.  
   
  `ppResult`  
- [out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 함수 개체의 값을 나타내는입니다.  
+ [out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 개체로 함수의 값을 나타내는입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 설정 하 고 호출 함수가을 실행 하는이 메서드는 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 개체입니다.  
+ 이 메서드를 나타내는 함수 호출을 실행 합니다 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 개체입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

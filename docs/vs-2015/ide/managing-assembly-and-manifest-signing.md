@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909681"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>어셈블리 및 매니페스트 서명 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ ms.locfileid: "49172746"
 ## <a name="asset-types-and-signing"></a>자산 형식 및 서명  
  .NET 어셈블리 및 응용 프로그램 매니페스트에 서명할 수 있습니다. 이러한 요구 사항은 다음과 같습니다.  
   
--   실행 파일(.exe)  
+- 실행 파일(.exe)  
   
--   응용 프로그램 매니페스트(.exe.manifest)  
+- 응용 프로그램 매니페스트(.exe.manifest)  
   
--   배포 매니페스트(.application)  
+- 배포 매니페스트(.application)  
   
--   공유 구성 요소 어셈블리(.dll)  
+- 공유 구성 요소 어셈블리(.dll)  
   
- 다음 자산 형식에 서명해야 합니다.  
+  다음 자산 형식에 서명해야 합니다.  
   
-1.  어셈블리(GAC(전역 어셈블리 캐시)에 배포하려는 경우).  
+1. 어셈블리(GAC(전역 어셈블리 캐시)에 배포하려는 경우).  
   
-2.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 및 배포 매니페스트. Visual Studio에서는 이러한 응용 프로그램에 기본적으로 서명할 수 있습니다.  
+2. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 및 배포 매니페스트. Visual Studio에서는 이러한 응용 프로그램에 기본적으로 서명할 수 있습니다.  
   
-3.  주 interop 어셈블리(COM 상호 운용성에 사용됨). TLBIMP 유틸리티는 COM 형식 라이브러리에서 주 interop 어셈블리를 만들 때 강력한 이름 지정을 적용합니다.  
+3. 주 interop 어셈블리(COM 상호 운용성에 사용됨). TLBIMP 유틸리티는 COM 형식 라이브러리에서 주 interop 어셈블리를 만들 때 강력한 이름 지정을 적용합니다.  
   
- 일반적으로 실행 파일에는 서명하면 안 됩니다. 강력한 이름의 구성 요소는 응용 프로그램과 함께 배포되는 강력한 이름이 아닌 구성 요소를 참조할 수 없습니다. Visual Studio에서는 응용 프로그램 실행 파일에 서명하지 않고 약한 이름의 실행 파일을 가리키는 응용 프로그램 매니페스트에 서명합니다. 일반적으로 응용 프로그램 전용의 구성 요소에는 서명하지 않는 것이 좋습니다. 서명으로 인해 종속성 관리가 더 어려워질 수 있기 때문입니다.  
+   일반적으로 실행 파일에는 서명하면 안 됩니다. 강력한 이름의 구성 요소는 응용 프로그램과 함께 배포되는 강력한 이름이 아닌 구성 요소를 참조할 수 없습니다. Visual Studio에서는 응용 프로그램 실행 파일에 서명하지 않고 약한 이름의 실행 파일을 가리키는 응용 프로그램 매니페스트에 서명합니다. 일반적으로 응용 프로그램 전용의 구성 요소에는 서명하지 않는 것이 좋습니다. 서명으로 인해 종속성 관리가 더 어려워질 수 있기 때문입니다.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Visual Studio에서 어셈블리에 서명하는 방법  
  [프로젝트 속성] 창의 **서명** 탭을 사용하여 응용 프로그램 또는 구성 요소에 서명합니다(**솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하거나, **빠른 실행** 창에 **프로젝트 속성**을 입력하거나, **솔루션 탐색기** 창 내에서 ALT+ ENTER를 누름). **서명** 탭을 선택하고 나서 **어셈블리 서명** 확인란을 선택합니다.  

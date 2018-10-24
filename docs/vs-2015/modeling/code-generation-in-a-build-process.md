@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907926"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스의 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ MSBuild에서 일부 기능을 구성하기 위해 프로젝트 파일을 편집
 
 `AfterTransform`에서 파일 목록을 참조할 수 있습니다.
 
--   GeneratedFiles - 프로세스에서 쓴 파일의 목록입니다. 기존 읽기 전용 파일을 덮어쓴 파일의 경우 %(GeneratedFiles.ReadOnlyFileOverwritten)이 true입니다. 이러한 파일은 소스 제어에서 체크 아웃할 수 있습니다.
+- GeneratedFiles - 프로세스에서 쓴 파일의 목록입니다. 기존 읽기 전용 파일을 덮어쓴 파일의 경우 %(GeneratedFiles.ReadOnlyFileOverwritten)이 true입니다. 이러한 파일은 소스 제어에서 체크 아웃할 수 있습니다.
 
--   NonGeneratedFiles - 덮어쓰지 않은 읽기 전용 파일의 목록입니다.
+- NonGeneratedFiles - 덮어쓰지 않은 읽기 전용 파일의 목록입니다.
 
- 예를 들어, 생성된 파일을 체크 아웃하는 작업을 정의합니다.
+  예를 들어, 생성된 파일을 체크 아웃하는 작업을 정의합니다.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath 및 OutputFileName
 
@@ -255,7 +255,6 @@ $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 �
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 이제 assembly 및 Include 지시문에서 프로젝트 속성을 사용할 수 있습니다.

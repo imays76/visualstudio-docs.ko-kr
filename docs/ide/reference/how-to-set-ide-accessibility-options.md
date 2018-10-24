@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f977c30f1f4d6db7ce165de8483c8fd1977922d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909798"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>방법: IDE 접근성 옵션 설정
 
@@ -46,7 +46,7 @@ ms.locfileid: "31952105"
 
  **도구** 대화 상자, **환경** 옵션의 **글꼴 및 색** 창에서 **명령** 창, **직접 실행** 창 및 **출력** 창과 같은 텍스트 기반 도구 창에 대한 설정을 변경할 수 있습니다. **[모든 텍스트 도구 창]** 이 **설정 표시** 드롭다운 목록에서 선택되면 기본 설정은 **항목 전경** 및 **항목 배경** 드롭다운 목록에 **기본값**으로 나열됩니다. 텍스트가 편집기에 표시되는 방식에 대한 설정을 변경할 수도 있습니다.
 
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>텍스트 기반 도구 창 및 편집기에서 텍스트 크기를 변경하려면
+#### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>텍스트 기반 도구 창 및 편집기에서 텍스트 크기를 변경하려면
 
 1.  **도구** 메뉴에서 **옵션**을 선택합니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "31952105"
 6.  **크기**에서 새 글꼴 크기를 선택합니다.
 
     > [!NOTE]
-    >  텍스트 기반 도구 창 및 편집기의 텍스트 크기를 다시 설정하려면 **기본값 사용**을 선택합니다.
+    > 텍스트 기반 도구 창 및 편집기의 텍스트 크기를 다시 설정하려면 **기본값 사용**을 선택합니다.
 
 7.  **확인**을 선택합니다.
 
@@ -78,10 +78,9 @@ ms.locfileid: "31952105"
  편집기에서 텍스트, 여백 표시기, 공백 및 코드 요소의 기본색을 변경할 수도 있습니다.
 
 > [!NOTE]
-> 운영 체제의 모든 응용 프로그램 창에 고대비 색을 사용하려면 왼쪽 **ALT+** 왼쪽 **SHIFT+PRINT SCREEN**을 누릅니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]가 열릴 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]를 닫았다 열면 고대비 색이 완전히 구현됩니다.
+> 운영 체제의 모든 응용 프로그램 창에 고대비 색을 사용하려면 왼쪽 <strong>ALT+</strong>왼쪽 **SHIFT+PRINT SCREEN**을 누릅니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]가 열릴 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]를 닫았다 열면 고대비 색이 완전히 구현됩니다.
 
-
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>편집기에서 항목의 색을 변경하려면
+#### <a name="to-change-the-color-of-items-in-the-editor"></a>편집기에서 항목의 색을 변경하려면
 
 1.  **도구** 메뉴에서 **옵션**을 선택합니다.
 
@@ -99,7 +98,7 @@ ms.locfileid: "31952105"
 
  도구 모음의 사용 가능성과 접근성을 개선하기 위해 도구 모음 단추에 텍스트를 추가할 수 있습니다.
 
-#### <a name="to-assign-text-to-toolbar-buttons"></a>도구 모음 단추에 텍스트를 할당하려면
+### <a name="to-assign-text-to-toolbar-buttons"></a>도구 모음 단추에 텍스트를 할당하려면
 
 1.  **도구** 메뉴에서 **사용자 지정**을 선택합니다.
 
@@ -113,7 +112,7 @@ ms.locfileid: "31952105"
 
 6.  **이미지 및 텍스트**를 선택합니다.
 
-#### <a name="to-modify-the-displayed-text-in-a-button"></a>단추에 표시된 텍스트를 수정하려면
+### <a name="to-modify-the-displayed-text-in-a-button"></a>단추에 표시된 텍스트를 수정하려면
 
 1.  **선택 사항 수정**을 다시 선택합니다.
 

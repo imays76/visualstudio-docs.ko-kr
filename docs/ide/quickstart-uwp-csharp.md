@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dd638a539b8956716aa60b5361bd003c18d35f9b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908927"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>빠른 시작: XAML 및 C&#35를 사용하여 Visual Studio에서 첫 번째 유니버설 Windows 플랫폼 응용 프로그램 만들기
 
@@ -46,9 +46,9 @@ ms.locfileid: "36283327"
 
    ![새 유니버설 Windows 플랫폼 프로젝트 대화 상자에서 기본 대상 버전 및 최소 버전 설정에 동의](../ide/media/new-uwp-project-target-minver-dialog.png)
 
-  > [!NOTE]
-  > 처음으로 Visual Studio를 사용하여 UWP 앱을 만든 경우 **설정** 대화 상자가 나타날 수 있습니다. **개발자 모드**를 선택한 다음, **예**를 선택합니다.<br><br>
- ![UWP 설정 대화 상자에서 개발자 모드를 사용하도록 설정](../ide/media/enable-developer-mode.png)<br><br>Visual Studio는 사용자용 추가 개발자 모드 패키지를 설치합니다. 패키지 설치가 완료되면 **설정** 대화 상자를 닫습니다.
+   > [!NOTE]
+   > 처음으로 Visual Studio를 사용하여 UWP 앱을 만든 경우 **설정** 대화 상자가 나타날 수 있습니다. **개발자 모드**를 선택한 다음, **예**를 선택합니다.<br><br>
+   ![UWP 설정 대화 상자에서 개발자 모드를 사용하도록 설정](../ide/media/enable-developer-mode.png)<br><br>Visual Studio는 사용자용 추가 개발자 모드 패키지를 설치합니다. 패키지 설치가 완료되면 **설정** 대화 상자를 닫습니다.
 
 ## <a name="create-the-application"></a>응용 프로그램 만들기
 
@@ -58,29 +58,29 @@ ms.locfileid: "36283327"
 
 1. **솔루션 탐색기**에서 *MainPage.xaml*을 두 번 클릭하여 분할 보기를 엽니다.
 
-  ![솔루션 탐색기에서 MainPage.xaml 열기 ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
+   ![솔루션 탐색기에서 MainPage.xaml 열기 ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  디자인 캔버스를 포함하는 **XAML 디자이너** 및 코드를 추가하거나 변경할 수 있는 **XAML 편집기**라는 두 개의 창이 있습니다.
+   디자인 캔버스를 포함하는 **XAML 디자이너** 및 코드를 추가하거나 변경할 수 있는 **XAML 편집기**라는 두 개의 창이 있습니다.
 
-  ![XAML 편집기의 XAML 디자이너 창](../ide/media/uwp-xaml-editor.png)
+   ![XAML 편집기의 XAML 디자이너 창](../ide/media/uwp-xaml-editor.png)
 
 2. **도구 상자**를 선택하여 도구 상자 플라이아웃 창을 엽니다.
 
-  ![도구 상자를 클릭하여 도구 상자 플라이아웃 창 열기](../ide/media/uwp-toolbox.png)
+   ![도구 상자를 클릭하여 도구 상자 플라이아웃 창 열기](../ide/media/uwp-toolbox.png)
 
-  (**도구 상자** 옵션이 표시되지 않으면 메뉴 모음에서 열 수 있습니다. 그러려면 **보기** > **도구 모음**을 선택합니다. 또는 **Ctrl**+**Alt**+**X** 키를 누릅니다.)
+   (**도구 상자** 옵션이 표시되지 않으면 메뉴 모음에서 열 수 있습니다. 그러려면 **보기** > **도구 모음**을 선택합니다. 또는 **Ctrl**+**Alt**+**X** 키를 누릅니다.)
 
 3. **Pin** 아이콘을 클릭하여 도구 상자 창을 고정합니다.
 
-  ![Pin 아이콘을 클릭하여 도구 상자 창 고정](../ide/media/uwp-toolbox-autohide.png)
+   ![Pin 아이콘을 클릭하여 도구 상자 창 고정](../ide/media/uwp-toolbox-autohide.png)
 
 4. **단추** 컨트롤을 클릭해 디자인 캔버스로 끌어옵니다.
 
    ![단추 컨트롤을 클릭해 디자인 캔버스로 끌어오기](../ide/media/uwp-toolbox-add-button-control.png)
 
-  **XAML 편집기**에 코드가 표시되면 단추가 추가된 것도 확인할 수 있습니다.
+   **XAML 편집기**에 코드가 표시되면 단추가 추가된 것도 확인할 수 있습니다.
 
-  ![단추 컨트롤을 클릭해 디자인 캔버스로 끌어오기](../ide/media/uwp-xaml-control-code-window.png)
+   ![단추 컨트롤을 클릭해 디자인 캔버스로 끌어오기](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>단추에 레이블 추가
 
@@ -100,18 +100,18 @@ ms.locfileid: "36283327"
 
 2. 코드 숨김 페이지, *MainPage.xaml.cs*에서 이벤트 처리기 코드를 편집합니다.
 
- 지금부터가 흥미로운 부분입니다. 기본 이벤트 처리기는 다음과 같습니다.
+   지금부터가 흥미로운 부분입니다. 기본 이벤트 처리기는 다음과 같습니다.
 
    ![기본 Button_Click 이벤트 처리기 ](../ide/media/uwp-button-click-code.png)
 
- 다음과 같이 되도록 바꿔보겠습니다.
+   다음과 같이 되도록 바꿔보겠습니다.
 
     ![새 비동기 Button_Click 이벤트 처리기 ](../ide/media/uwp-add-hello-world-async-code.png)
 
-  복사 및 붙여넣기할 코드는 다음과 같습니다.
+   복사 및 붙여넣기할 코드는 다음과 같습니다.
 
-  ```C#
-  private async void Button_Click(object sender, RoutedEventArgs e)
+   ```C#
+   private async void Button_Click(object sender, RoutedEventArgs e)
          {
              MediaElement mediaElement = new MediaElement();
              var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
@@ -119,7 +119,7 @@ ms.locfileid: "36283327"
              mediaElement.SetSource(stream, stream.ContentType);
              mediaElement.Play();
          }
-  ```
+   ```
 
 #### <a name="what-did-we-just-do"></a>무엇을 했습니까?
 
@@ -141,7 +141,7 @@ ms.locfileid: "36283327"
 
 3. **Hello World** 단추를 클릭합니다.
 
- Windows 10 장치는 말 그대로 "Hello, World!"라고 말합니다.
+   Windows 10 장치는 말 그대로 "Hello, World!"라고 말합니다.
 
 4. 앱을 닫으려면 도구 모음에서 **디버깅 중지** 단추를 클릭합니다. (또는 메뉴 모음에서 **디버그** > **디버깅 중지**를 선택하거나 **Shift**+**F5** 키를 누릅니다.)
 

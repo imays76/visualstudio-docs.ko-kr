@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a1a6888ca35df54ff6073aefaf686327b4cd8a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b5a485baaa1fdeab4a0d4c61b82f5381a931ac85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897188"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>성능 데이터 파일을 사용하여 기호 정보 저장
 
@@ -43,7 +43,7 @@ Visual Studio IDE 또는 명령줄에서 기호를 직렬화할 수 있습니다
 
 - 형식 데이터를 수집한 경우 vsperfreport 명령줄에 /SUMMARY:TYPE을 추가합니다.
 
- Windows 또는 기타 Microsoft 프로그램에서 기호가 표시되지 않는 경우 다음을 수행합니다.
+  Windows 또는 기타 Microsoft 프로그램에서 기호가 표시되지 않는 경우 다음을 수행합니다.
 
 - Windows 기호 캐시의 경로를 설정했는지 확인합니다. 기호 캐시 경로를 설정하려면 다음 중 하나를 수행합니다.
 

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 553f183eff03ae6437e7db37102005a5e901c0a4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 953f74b309d8dc147d04d86b843f138002de972f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081646"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910682"
 ---
 # <a name="access-stored-font-and-color-settings"></a>저장 된 글꼴 및 색 설정에 액세스
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 글꼴에 대 한 수정 된 설정을 저장 하 고 레지스트리에 색입니다. 사용할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 이러한 설정에 액세스 하는 인터페이스입니다.
@@ -49,17 +49,17 @@ ms.locfileid: "39081646"
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>글꼴 및 색의 상태 지 속성을 사용 하려면
  유지 글꼴 및 색에 포함 됩니다.
 
--   IDE 설정 레지스트리에 저장 된 설정을 사용 하 여 동기화 합니다.
+- IDE 설정 레지스트리에 저장 된 설정을 사용 하 여 동기화 합니다.
 
--   레지스트리 수정 정보를 전파 합니다.
+- 레지스트리 수정 정보를 전파 합니다.
 
--   설정 하 고 설정을 레지스트리에 저장 된 검색 됩니다.
+- 설정 하 고 설정을 레지스트리에 저장 된 검색 됩니다.
 
- IDE 설정을 사용 하 여 저장소 설정을 동기화 하는 것은 대부분 투명 합니다. 기본 IDE에 대 한 업데이트 된 설정을 자동으로 작성 **표시 항목** 범주의 레지스트리 항목에 있습니다.
+  IDE 설정을 사용 하 여 저장소 설정을 동기화 하는 것은 대부분 투명 합니다. 기본 IDE에 대 한 업데이트 된 설정을 자동으로 작성 **표시 항목** 범주의 레지스트리 항목에 있습니다.
 
- VSPackage 이벤트는 생성 해야 여러 Vspackage 특정 범주를 공유 하는 경우 때의 메서드는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 인터페이스는 저장된 레지스트리 설정을 수정 하는 데 사용 됩니다.
+  VSPackage 이벤트는 생성 해야 여러 Vspackage 특정 범주를 공유 하는 경우 때의 메서드는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 인터페이스는 저장된 레지스트리 설정을 수정 하는 데 사용 됩니다.
 
- 이벤트 생성은 기본적으로 사용 되지 않습니다. 이벤트 생성을 사용 하려면 범주를 사용 하 여 열려 있어야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>합니다. 적절 한 호출을 IDE가 범주를 열어 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> VSPackage 구현 하는 메서드입니다.
+  이벤트 생성은 기본적으로 사용 되지 않습니다. 이벤트 생성을 사용 하려면 범주를 사용 하 여 열려 있어야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>합니다. 적절 한 호출을 IDE가 범주를 열어 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> VSPackage 구현 하는 메서드입니다.
 
 > [!NOTE]
 >  통해 수정 합니다 **글꼴 및 색** 의 독립 이벤트를 생성 하는 속성 페이지 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>합니다. 사용할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> 인터페이스의 메서드를 호출 하기 전에 캐시 된 글꼴 및 색 설정의 업데이트가 필요한 지 여부를 결정 하는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 클래스입니다.

@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63cd97a23f26d23b99aa7c93be90cef91a630856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906171"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C + + Core Guidelines 검사기 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ C + + Core Guidelines는 이식 가능한 집합 지침, 규칙 및 c + + 전문
   
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>Microsoft.CppCoreCheck 패키지 프로젝트를 추가 하려면  
   
-1.  **솔루션 탐색기**, 패키지를 추가 하려면 솔루션에서 프로젝트의 상황에 맞는 메뉴를 열려면 마우스 오른쪽 단추로 클릭 합니다. 선택할 **NuGet 패키지 관리** 열려는 합니다 **NuGet 패키지 관리자**합니다.  
+1. **솔루션 탐색기**, 패키지를 추가 하려면 솔루션에서 프로젝트의 상황에 맞는 메뉴를 열려면 마우스 오른쪽 단추로 클릭 합니다. 선택할 **NuGet 패키지 관리** 열려는 합니다 **NuGet 패키지 관리자**합니다.  
   
-2.  에 **NuGet 패키지 관리자** 창, Microsoft.CppCoreCheck 검색 합니다.  
+2. 에 **NuGet 패키지 관리자** 창, Microsoft.CppCoreCheck 검색 합니다.  
   
-     ![Nuget 패키지 관리자 창을 CppCoreCheck 패키지를 보여 줍니다](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
+    ![Nuget 패키지 관리자 창을 CppCoreCheck 패키지를 보여 줍니다](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3.  Microsoft.CppCoreCheck 패키지를 선택 하 고 다음을 선택 합니다 **설치** 프로젝트에 규칙을 추가 하려면 단추입니다.  
+3. Microsoft.CppCoreCheck 패키지를 선택 하 고 다음을 선택 합니다 **설치** 프로젝트에 규칙을 추가 하려면 단추입니다.  
   
- NuGet 패키지를 프로젝트에서 코드 분석을 활성화할 때 호출 되는 프로젝트에 추가 MSBuild.targets 파일을 추가 합니다. .Targets 파일을이 Visual Studio 코드 분석 도구에 추가 확장으로 c + + Core Check 규칙을 추가합니다.  
+   NuGet 패키지를 프로젝트에서 코드 분석을 활성화할 때 호출 되는 프로젝트에 추가 MSBuild.targets 파일을 추가 합니다. .Targets 파일을이 Visual Studio 코드 분석 도구에 추가 확장으로 c + + Core Check 규칙을 추가합니다.  
   
- 선택 하 여 프로젝트에서 코드 분석을 사용할 수 있습니다를 **빌드에 코드 분석 사용** 에서 확인란을 선택 합니다 **코드 분석** 섹션을 **속성 페이지** 대화 상자 프로젝트입니다.  
+   선택 하 여 프로젝트에서 코드 분석을 사용할 수 있습니다를 **빌드에 코드 분석 사용** 에서 확인란을 선택 합니다 **코드 분석** 섹션을 **속성 페이지** 대화 상자 프로젝트입니다.  
   
- ![코드 분석 일반 설정에 대 한 속성 페이지](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![코드 분석 일반 설정에 대 한 속성 페이지](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
- C + + Core Check 규칙을 사용 하면 코드 분석을 사용 하는 경우 실행 되는 기본 규칙 집합의 일부가 됩니다. 개발 중인 c + + Core Check 규칙 이기 때문에 일부 규칙 모든 코드에 대 한 사용할 준비가 되지 않을 수 있지만 개발 하는 동안 정보를 제공 되지 않을 수 있습니다. 이러한 규칙은 실험적으로 해제 됩니다. 프로젝트 속성에서 해제 또는 실험적 규칙을 실행할 것인지를 선택할 수 있습니다.  
+   C + + Core Check 규칙을 사용 하면 코드 분석을 사용 하는 경우 실행 되는 기본 규칙 집합의 일부가 됩니다. 개발 중인 c + + Core Check 규칙 이기 때문에 일부 규칙 모든 코드에 대 한 사용할 준비가 되지 않을 수 있지만 개발 하는 동안 정보를 제공 되지 않을 수 있습니다. 이러한 규칙은 실험적으로 해제 됩니다. 프로젝트 속성에서 해제 또는 실험적 규칙을 실행할 것인지를 선택할 수 있습니다.  
   
- ![코드 분석 확장 설정에 대 한 속성 페이지](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![코드 분석 확장 설정에 대 한 속성 페이지](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
- C + + Core Check 규칙 집합을 사용 하지 않도록 설정 하거나, 엽니다는 **속성 페이지** 프로젝트 대화 상자. 아래 **구성 속성**를 확장 하 고 **코드 분석**를 **확장**합니다. 드롭다운 목록 옆에 제어할 **사용 c + + Core Check (릴리스)** 또는 **사용 c + + Core Check (실험적)**, 선택 **예** 또는 **아니요**합니다. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.  
+   C + + Core Check 규칙 집합을 사용 하지 않도록 설정 하거나, 엽니다는 **속성 페이지** 프로젝트 대화 상자. 아래 **구성 속성**를 확장 하 고 **코드 분석**를 **확장**합니다. 드롭다운 목록 옆에 제어할 **사용 c + + Core Check (릴리스)** 또는 **사용 c + + Core Check (실험적)**, 선택 **예** 또는 **아니요**합니다. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>형식, 범위 및 수명 확인  
  C + + Core Check 패키지에는 현재 검사기에 대 한 포함 합니다 [형식 안전성](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [보안 경계](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), 및 [수명 안전](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) 프로필.  
@@ -81,15 +81,15 @@ int main()
   
  이 예제에서는 c + + Core Check 규칙을 찾을 수 있는 경고의 일부를 보여 줍니다.  
   
--   규칙 하세요 (type.5 C26494: 항상 개체를 초기화 합니다.  
+- 규칙 하세요 (type.5 C26494: 항상 개체를 초기화 합니다.  
   
--   C26485은 규칙 Bounds.3: 포인터로 배열으로 인해 고갈 상태가 없습니다.  
+- C26485은 규칙 Bounds.3: 포인터로 배열으로 인해 고갈 상태가 없습니다.  
   
--   C26481은 규칙 합니다 (bounds.1: 포인터 산술 연산을 사용 하지 마세요. 대신 `span`를 사용하세요.  
+- C26481은 규칙 합니다 (bounds.1: 포인터 산술 연산을 사용 하지 마세요. 대신 `span`를 사용하세요.  
   
- C + + Core Check 코드 분석 규칙 집합은를 설치 하 고이 코드를 컴파일할 때 사용 하도록 설정 하는 경우 처음 두 개의 경고를 출력 하지만 세 번째 표시 되지 않습니다. 빌드 출력에서 예제 코드는 다음과 같습니다.  
+  C + + Core Check 코드 분석 규칙 집합은를 설치 하 고이 코드를 컴파일할 때 사용 하도록 설정 하는 경우 처음 두 개의 경고를 출력 하지만 세 번째 표시 되지 않습니다. 빌드 출력에서 예제 코드는 다음과 같습니다.  
   
- **1 >---빌드 시작: 프로젝트: CoreCheckExample, 구성: Debug Win32-**  
+  **1 >---빌드 시작: 프로젝트: CoreCheckExample, 구성: Debug Win32-**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P->**  

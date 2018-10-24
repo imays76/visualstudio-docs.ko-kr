@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5e0b81f1d21348a11ceff8d74d326b95e311303
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 7cd3c7a5b191ee74005eb79da0767223ca43de08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895487"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 설치에 대한 명령줄 매개 변수 예
 
@@ -34,80 +34,80 @@ ms.locfileid: "43138008"
 
 * 대화형 프롬프트 없이 진행률이 표시되는 Visual Studio의 최소 인스턴스를 설치합니다.
 
- ```cmd
- vs_enterprise.exe --installPath C:\minVS ^
+  ```cmd
+  vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
- ```
+  ```
 
 * 대화형 프롬프트 없이 진행률이 표시되는 명령줄을 사용하여 Visual Studio 인스턴스를 업데이트합니다.
 
- ```cmd
- vs_enterprise.exe --update --quiet --wait
- vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
- ```
+  ```cmd
+  vs_enterprise.exe --update --quiet --wait
+  vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+  ```
 
- > [!NOTE]
- > 두 명령이 모두 필요합니다. 첫 번째 명령은 Visual Studio 설치 관리자를 업데이트합니다. 두 번째 명령은 Visual Studio 인스턴스를 업데이트합니다. [사용자 계정 컨트롤] 대화 상자를 사용하지 않으려면 명령 프롬프트를 관리자 권한으로 실행합니다.
+  > [!NOTE]
+  > 두 명령이 모두 필요합니다. 첫 번째 명령은 Visual Studio 설치 관리자를 업데이트합니다. 두 번째 명령은 Visual Studio 인스턴스를 업데이트합니다. [사용자 계정 컨트롤] 대화 상자를 사용하지 않으려면 명령 프롬프트를 관리자 권한으로 실행합니다.
 
 * 제품을 설치해야만 반환되는 프랑스어 언어 팩을 포함한 Visual Studio의 데스크톱 인스턴스를 자동으로 설치합니다.
 
- ```cmd
- vs_enterprise.exe --installPath C:\desktopVS ^
+  ```cmd
+  vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --includeRecommended --quiet --wait
- ```
+  ```
 
- > [!NOTE]
- > `--wait` 매개 변수는 배치 파일에서 사용하도록 설계되었습니다. 배치 파일에서 다음 명령의 실행은 설치가 완료될 때까지 계속되지 않습니다. `%ERRORLEVEL%` 환경 변수는 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지에 나오는 대로 명령의 반환 값을 포함합니다.
+  > [!NOTE]
+  > `--wait` 매개 변수는 배치 파일에서 사용하도록 설계되었습니다. 배치 파일에서 다음 명령의 실행은 설치가 완료될 때까지 계속되지 않습니다. `%ERRORLEVEL%` 환경 변수는 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지에 나오는 대로 명령의 반환 값을 포함합니다.
 
 ## <a name="using---layout"></a>--layout 사용
 
 * Visual Studio 핵심 편집기를 다운로드합니다(최소한의 Visual Studio 구성). 영어 언어 팩만 포함:
 
- ```cmd
- vs_community.exe --layout C:\VS2017
+  ```cmd
+  vs_community.exe --layout C:\VS2017
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
- ```
+  ```
 
 * .NET 데스크톱 및 .NET 웹 워크로드를 모든 권장 구성 요소 및 GitHub 확장명과 함께 다운로드합니다. 영어 언어 팩만 포함:
 
- ```cmd
- vs_community.exe --layout C:\VS2017 ^
+  ```cmd
+  vs_community.exe --layout C:\VS2017 ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --add Component.GitHub.VisualStudio ^
    --includeRecommended
- ```
+  ```
 
 ## <a name="using---includerecommended"></a>--includeRecommended 사용
 
 * Visual Studio 2017 Enterprise Edition에서 사용할 수 있는 모든 워크로드 및 구성 요소의 대화형 설치를 시작합니다.
 
- ```cmd
- vs_enterprise.exe --all --includeRecommended --includeOptional
- ```
+  ```cmd
+  vs_enterprise.exe --all --includeRecommended --includeOptional
+  ```
 
 * Node.js 개발 지원을 통해 Visual Studio 2017 Community Edition이 이미 설치된 컴퓨터에 Visual Studio 2017 Professional의 두 번째 명명된 인스턴스를 설치합니다.
 
- ```cmd
- vs_professional.exe --installPath C:\VSforNode ^
+  ```cmd
+  vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
- ```
+  ```
 
 ## <a name="using---remove"></a>--remove 사용
 
 * 기본 설치된 Visual Studio 인스턴스에서 프로파일링 도구 구성 요소를 제거합니다.
 
- ```cmd
- vs_enterprise.exe modify ^
+  ```cmd
+  vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
- ```
+  ```
 
 ## <a name="using---path"></a>--path 사용
 
@@ -115,19 +115,19 @@ ms.locfileid: "43138008"
 
 * 설치, 캐시 및 공유 경로 사용:
 
- `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache" --path shared="C:\VS\shared"`
+  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache" --path shared="C:\VS\shared"`
 
 * 설치 및 캐시 경로만 사용:
 
- `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache"`
+  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache"`
 
 * 설치 및 공유 경로만 사용:
 
- `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path shared="C:\VS\shared"`
+  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path shared="C:\VS\shared"`
 
 * 설치 경로만 사용:
 
- `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
+  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906561"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 솔루션
   Visual Studio에서는 Microsoft Office PowerPoint용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 PowerPoint를 자동화하거나, PowerPoint 기능을 확장하거나, PowerPoint UI(사용자 인터페이스)를 사용자 지정할 수 있습니다.  
@@ -42,15 +42,15 @@ ms.locfileid: "35673996"
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>PowerPoint 개체 모델을 사용 하 여 PowerPoint를 자동화 합니다.  
  PowerPoint 개체 모델은 PowerPoint 자동화에 사용할 수 있는 다양한 형식을 노출합니다. 이러한 형식을 사용하여 일반적인 작업을 수행하는 코드를 작성할 수 있습니다.  
   
--   프로그래밍 방식으로 프레젠테이션을 만들고 형식을 지정합니다.  
+- 프로그래밍 방식으로 프레젠테이션을 만들고 형식을 지정합니다.  
   
--   프레젠테이션에 슬라이드를 추가하거나 제거합니다.  
+- 프레젠테이션에 슬라이드를 추가하거나 제거합니다.  
   
--   슬라이드에 도형을 추가하거나 변경합니다.  
+- 슬라이드에 도형을 추가하거나 변경합니다.  
   
- VSTO 추가 기능에서 PowerPoint 개체 모델에 액세스 하려면 사용 합니다 `Application` 필드는 `ThisAddIn` 프로젝트에서 클래스입니다. `Application` 필드는 PowerPoint의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.PowerPoint.Application> 개체를 반환합니다. 자세한 내용은 [프로그램 VSTO Add-ins](../vsto/programming-vsto-add-ins.md)합니다.  
+  VSTO 추가 기능에서 PowerPoint 개체 모델에 액세스 하려면 사용 합니다 `Application` 필드는 `ThisAddIn` 프로젝트에서 클래스입니다. `Application` 필드는 PowerPoint의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.PowerPoint.Application> 개체를 반환합니다. 자세한 내용은 [프로그램 VSTO Add-ins](../vsto/programming-vsto-add-ins.md)합니다.  
   
- PowerPoint 개체 모델을 호출할 때 PowerPoint의 주 Interop 어셈블리에서 제공되는 형식을 사용합니다. 주 interop 어셈블리는 VSTO 추가 기능의 관리 코드와 PowerPoint의 COM 개체 모델 간의 다리 역할을 합니다. PowerPoint 주 interop 어셈블리의 모든 형식은 <xref:Microsoft.Office.Interop.PowerPoint> 네임스페이스에서 정의됩니다. 주 interop 어셈블리에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) 하 고 [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md).  
+  PowerPoint 개체 모델을 호출할 때 PowerPoint의 주 Interop 어셈블리에서 제공되는 형식을 사용합니다. 주 interop 어셈블리는 VSTO 추가 기능의 관리 코드와 PowerPoint의 COM 개체 모델 간의 다리 역할을 합니다. PowerPoint 주 interop 어셈블리의 모든 형식은 <xref:Microsoft.Office.Interop.PowerPoint> 네임스페이스에서 정의됩니다. 주 interop 어셈블리에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) 하 고 [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md).  
   
 ##  <a name="WordOMDocumentation"></a> PowerPoint 개체 모델 설명서 사용  
  PowerPoint 개체 모델에 대한 자세한 내용은 PowerPoint PIA(주 interop 어셈블리) 참조 및 VBA 개체 모델 참조를 참조할 수 있습니다.  
@@ -80,7 +80,7 @@ ms.locfileid: "35673996"
  [연습: PowerPoint 용 첫 VSTO 추가 기능에 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Vsto 추가 기능의 아키텍처](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)   
  [Office 솔루션에서 코드를 작성 합니다.](../vsto/writing-code-in-office-solutions.md)   

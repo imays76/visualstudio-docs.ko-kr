@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
-ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
+ms.openlocfilehash: 48cdb36294f027fcd2e47fca8d903caf5856c236
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43289282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906067"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017을 최신 릴리스 버전으로 업데이트
 
@@ -42,7 +42,7 @@ IDE 내에서 바로 사용하기 쉽도록 설치 및 업데이트 환경이 �
 
 2. 알림 플래그를 선택하여 **알림** 허브를 열고 설치할 업데이트를 선택합니다.
 
-  ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/vs-install-notifications-hub-15dot6.png "Visual Studio 2017의 알림 허브")
+   ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/vs-install-notifications-hub-15dot6.png "Visual Studio 2017의 알림 허브")
 
 3. **업데이트** 대화 상자가 열리면 **지금 업데이트**를 선택합니다.
 
@@ -82,14 +82,14 @@ IDE 내에서 바로 사용하기 쉽도록 설치 및 업데이트 환경이 �
 
 2. 설치 관리자를 엽니다. 계속하기 전에 Visual Studio 설치 관리자를 업데이트해야 할 수도 있습니다.
 
-  > [!NOTE]
-  > Windows 10을 실행하는 컴퓨터에서는 **V** 문자 아래에 **Visual Studio 설치 관리자**로 설치 관리자가 나타나거나, **M** 문자 아래에 **Microsoft Visual Studio 설치 관리자**로 나타납니다.
+   > [!NOTE]
+   > Windows 10을 실행하는 컴퓨터에서는 **V** 문자 아래에 **Visual Studio 설치 관리자**로 설치 관리자가 나타나거나, **M** 문자 아래에 **Microsoft Visual Studio 설치 관리자**로 나타납니다.
 
-2. 설치 관리자의 **제품** 페이지에서 사용자가 설치한 Visual Studio의 버전을 확인합니다.
+3. 설치 관리자의 **제품** 페이지에서 사용자가 설치한 Visual Studio의 버전을 확인합니다.
 
-3. 업데이트를 사용할 수 있는 경우 **업데이트** 단추가 표시됩니다. (설치 관리자가 업데이트를 사용할 수 있는지 여부를 확인하는 데 몇 초 정도 걸릴 수 있습니다.)
+4. 업데이트를 사용할 수 있는 경우 **업데이트** 단추가 표시됩니다. (설치 관리자가 업데이트를 사용할 수 있는지 여부를 확인하는 데 몇 초 정도 걸릴 수 있습니다.)
 
-  **업데이트** 단추를 선택하여 업데이트를 설치합니다.
+   **업데이트** 단추를 선택하여 업데이트를 설치합니다.
 
      ![Visual Studio 설치 관리자를 사용하여 Visual Studio 2017 업데이트](media/update-visual-studio.png "Visual Studio 설치 관리자를 사용하여 Visual Studio 2017 업데이트")
 
@@ -101,19 +101,19 @@ IDE 내에서 바로 사용하기 쉽도록 설치 및 업데이트 환경이 �
 
 1. 업데이트가 있으면 Visual Studio에 해당 알림 플래그가 있습니다.
 
-  ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/notification-flag.png "Visual Studio의 업데이트 알림 플래그")
+   ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/notification-flag.png "Visual Studio의 업데이트 알림 플래그")
 
-  알림 플래그를 선택하여 **알림** 허브를 엽니다.
+   알림 플래그를 선택하여 **알림** 허브를 엽니다.
 
-  ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/notifications-hub.png "Visual Studio의 알림 허브")
+   ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/notifications-hub.png "Visual Studio의 알림 허브")
 
 2. **“Visual Studio 업데이트” 사용 가능**을 선택하여 **확장 및 업데이트** 대화 상자를 엽니다.
 
-  ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/notifications-hub-select.png "Visual Studio의 알림 허브")
+   ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/notifications-hub-select.png "Visual Studio의 알림 허브")
 
 3. **확장 및 업데이트** 대화 상자에서 **업데이트** 단추를 선택합니다.
 
-  ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/notifications-extensions-and-updates.png "Visual Studio의 확장 및 업데이트 대화 상자")
+   ![알림 허브를 사용하여 Visual Studio 2017 업데이트](media/notifications-extensions-and-updates.png "Visual Studio의 확장 및 업데이트 대화 상자")
 
 #### <a name="more-about-visual-studio-notifications"></a>Visual Studio 알림 상세 정보
 
@@ -135,14 +135,14 @@ Visual Studio는 Visual Studio 자체나 구성 요소에 사용 가능한 업�
 
 1. 설치 관리자를 엽니다. 계속하기 전에 설치 관리자를 업데이트해야 할 수 있습니다. 이 경우 업데이트하라는 메시지가 나타납니다.
 
-  > [!NOTE]
-  > Windows 10을 실행하는 컴퓨터에서는 **V** 문자 아래에 **Visual Studio 설치 관리자**로 설치 관리자가 나타나거나, **M** 문자 아래에 **Microsoft Visual Studio 설치 관리자**로 나타납니다.
+   > [!NOTE]
+   > Windows 10을 실행하는 컴퓨터에서는 **V** 문자 아래에 **Visual Studio 설치 관리자**로 설치 관리자가 나타나거나, **M** 문자 아래에 **Microsoft Visual Studio 설치 관리자**로 나타납니다.
 
 2. 설치 관리자의 **제품** 페이지에서 사용자가 설치한 Visual Studio의 버전을 확인합니다.
 
 3. 업데이트를 사용할 수 있는 경우 **업데이트** 단추가 표시됩니다. (설치 관리자가 업데이트를 사용할 수 있는지 여부를 확인하는 데 몇 초 정도 걸릴 수 있습니다.)
 
-  **업데이트** 단추를 선택하여 업데이트를 설치합니다.
+   **업데이트** 단추를 선택하여 업데이트를 설치합니다.
 
      ![Visual Studio 설치 관리자를 사용하여 Visual Studio 2017 업데이트](media/update-visual-studio.png "Visual Studio 설치 관리자를 사용하여 Visual Studio 2017 업데이트")
 

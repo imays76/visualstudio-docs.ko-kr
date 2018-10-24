@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b706aa4de24152a7cf656b2cec9aee64f36d7773
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f210aa8e33859f41046edc8e524cbfbeaf5417b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898618"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 인라인 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,23 +54,23 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
  이 예제의 `UsingTask` 요소에는 작업 및 해당 작업을 컴파일하는 인라인 작업 팩터리를 설명하는 세 가지 특성이 있습니다.  
   
--   `TaskName` 특성은 작업의 이름을 지정합니다(이 경우 `DoNothing`).  
+- `TaskName` 특성은 작업의 이름을 지정합니다(이 경우 `DoNothing`).  
   
--   `TaskFactory` 특성은 인라인 작업 팩터리를 구현하는 클래스의 이름을 지정합니다.  
+- `TaskFactory` 특성은 인라인 작업 팩터리를 구현하는 클래스의 이름을 지정합니다.  
   
--   `AssemblyFile` 특성은 인라인 작업 팩터리를 위치를 지정합니다. 또는 `AssemblyName` 특성을 사용하여 일반적으로 GAC(전역 어셈블리 캐시)에 있는 인라인 작업 팩터리 클래스의 정규화된 이름을 지정할 수 있습니다.  
+- `AssemblyFile` 특성은 인라인 작업 팩터리를 위치를 지정합니다. 또는 `AssemblyName` 특성을 사용하여 일반적으로 GAC(전역 어셈블리 캐시)에 있는 인라인 작업 팩터리 클래스의 정규화된 이름을 지정할 수 있습니다.  
   
- `DoNothing` 작업의 나머지 요소는 비어 있으며 인라인 작업의 순서 및 구조를 보여 주기 위해 제공됩니다. 이 항목의 뒷부분에 보다 강력한 예제가 제공됩니다.  
+  `DoNothing` 작업의 나머지 요소는 비어 있으며 인라인 작업의 순서 및 구조를 보여 주기 위해 제공됩니다. 이 항목의 뒷부분에 보다 강력한 예제가 제공됩니다.  
   
--   `ParameterGroup` 요소는 선택적입니다. 이 요소를 지정하면 작업에 대한 매개 변수를 선언합니다. 입력 및 출력 매개 변수에 대한 자세한 내용은 이 항목 뒷부분에 나오는 "입력 및 출력 매개 변수"를 참조하세요.  
+- `ParameterGroup` 요소는 선택적입니다. 이 요소를 지정하면 작업에 대한 매개 변수를 선언합니다. 입력 및 출력 매개 변수에 대한 자세한 내용은 이 항목 뒷부분에 나오는 "입력 및 출력 매개 변수"를 참조하세요.  
   
--   `Task` 요소는 작업 소스 코드를 설명하고 포함합니다.  
+- `Task` 요소는 작업 소스 코드를 설명하고 포함합니다.  
   
--   `Reference` 요소는 코드에서 사용하는 .NET 어셈블리에 대한 참조를 지정합니다. 이 요소를 사용하는 것은 Visual Studio에서 프로젝트에 대한 참조를 추가하는 것과 같습니다. `Include` 특성은 참조된 어셈블리의 경로를 지정합니다.  
+- `Reference` 요소는 코드에서 사용하는 .NET 어셈블리에 대한 참조를 지정합니다. 이 요소를 사용하는 것은 Visual Studio에서 프로젝트에 대한 참조를 추가하는 것과 같습니다. `Include` 특성은 참조된 어셈블리의 경로를 지정합니다.  
   
--   `Using` 요소는 액세스하려는 네임스페이스를 나열합니다. 이 요소는 Visual C#의 `Using` 문과 비슷합니다. `Namespace` 특성은 포함할 네임스페이스를 지정합니다.  
+- `Using` 요소는 액세스하려는 네임스페이스를 나열합니다. 이 요소는 Visual C#의 `Using` 문과 비슷합니다. `Namespace` 특성은 포함할 네임스페이스를 지정합니다.  
   
- `Reference` 및 `Using` 요소는 언어와 관련이 없습니다. 인라인 작업은 지원되는 .NET CodeDom 언어 중 하나(예: Visual Basic 또는 Visual C#)로 작성할 수 있습니다.  
+  `Reference` 및 `Using` 요소는 언어와 관련이 없습니다. 인라인 작업은 지원되는 .NET CodeDom 언어 중 하나(예: Visual Basic 또는 Visual C#)로 작성할 수 있습니다.  
   
 > [!NOTE]
 >  `Task` 요소에 의해 포함된 요소는 작업 팩터리(이 경우 코드 작업 팩터리)마다 고유합니다.  
@@ -82,15 +82,15 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
  `Type` 특성은 `Code` 요소에서 발견되는 코드의 형식을 지정합니다.  
   
--   `Type` 값이 `Class`이면 `Code` 요소는 <xref:Microsoft.Build.Framework.ITask> 인터페이스에서 파생되는 클래스에 대한 코드를 포함합니다.  
+- `Type` 값이 `Class`이면 `Code` 요소는 <xref:Microsoft.Build.Framework.ITask> 인터페이스에서 파생되는 클래스에 대한 코드를 포함합니다.  
   
--   `Type` 값이 `Method`이면 코드는 <xref:Microsoft.Build.Framework.ITask> 인터페이스의 `Execute` 메서드에 대한 재정의를 정의합니다.  
+- `Type` 값이 `Method`이면 코드는 <xref:Microsoft.Build.Framework.ITask> 인터페이스의 `Execute` 메서드에 대한 재정의를 정의합니다.  
   
--   `Type` 값이 `Fragment`이면 코드는 서명 또는 `return` 문이 아니라 `Execute` 메서드의 내용을 정의합니다.  
+- `Type` 값이 `Fragment`이면 코드는 서명 또는 `return` 문이 아니라 `Execute` 메서드의 내용을 정의합니다.  
   
- 코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" 또는 ">"와 같은 예약 문자 이스케이프에 신경쓰지 않아도 됩니다.  
+  코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" 또는 ">"와 같은 예약 문자 이스케이프에 신경쓰지 않아도 됩니다.  
   
- 또는 `Code` 요소의 `Source` 특성을 사용하여 작업에 대한 코드를 포함하는 파일의 위치를 지정할 수 있습니다. 소스 파일의 코드는 `Type` 특성으로 지정된 형식이어야 합니다. `Source` 특성이 있으면 `Type`의 기본값은 `Class`입니다. `Source`가 없으면 기본값은 `Fragment`입니다.  
+  또는 `Code` 요소의 `Source` 특성을 사용하여 작업에 대한 코드를 포함하는 파일의 위치를 지정할 수 있습니다. 소스 파일의 코드는 `Type` 특성으로 지정된 형식이어야 합니다. `Source` 특성이 있으면 `Type`의 기본값은 `Class`입니다. `Source`가 없으면 기본값은 `Fragment`입니다.  
   
 > [!NOTE]
 >  소스 파일에서 클래스 이름을 정의할 때 클래스 이름은 [UsingTask](../msbuild/usingtask-element-msbuild.md) 요소의 `TaskName` 특성에 부합되어야 합니다.  
@@ -143,13 +143,13 @@ Log.LogError("Hello, world!");
   
  매개 변수는 다음과 같은 특성을 하나 이상 포함할 수 있습니다.  
   
--   `Required`는 기본적으로 `false`인 선택적 특성입니다. `true`이면 매개 변수는 필수이며 작업을 호출하기 전에 값을 지정해야 합니다.  
+- `Required`는 기본적으로 `false`인 선택적 특성입니다. `true`이면 매개 변수는 필수이며 작업을 호출하기 전에 값을 지정해야 합니다.  
   
--   `ParameterType`는 기본적으로 `System.String`인 선택적 특성입니다. System.Convert.ChangeType을 사용하여 특정 문자열로 변환되거나 이러한 문자열에서 변환될 수 있는 항목 또는 값에 해당하는 어떤 정규화된 형식으로도 설정될 수 있습니다. (즉, 외부 작업과 주고받을 수 있는 모든 형식을 나타냅니다.)  
+- `ParameterType`는 기본적으로 `System.String`인 선택적 특성입니다. System.Convert.ChangeType을 사용하여 특정 문자열로 변환되거나 이러한 문자열에서 변환될 수 있는 항목 또는 값에 해당하는 어떤 정규화된 형식으로도 설정될 수 있습니다. (즉, 외부 작업과 주고받을 수 있는 모든 형식을 나타냅니다.)  
   
--   `Output`는 기본적으로 `false`인 선택적 특성입니다. `true`이면 먼저 매개 변수에 값이 지정되어야 Execute 메서드에서 반환될 수 있습니다.  
+- `Output`는 기본적으로 `false`인 선택적 특성입니다. `true`이면 먼저 매개 변수에 값이 지정되어야 Execute 메서드에서 반환될 수 있습니다.  
   
- 예를 들어 개체에 적용된  
+  예를 들어 개체에 적용된  
   
 ```  
 <ParameterGroup>  
@@ -161,13 +161,13 @@ Log.LogError("Hello, world!");
   
  다음과 같은 세 개의 매개 변수를 정의합니다.  
   
--   `Expression`은 System.String 형식의 필수 입력 매개 변수입니다.  
+- `Expression`은 System.String 형식의 필수 입력 매개 변수입니다.  
   
--   `Files`는 필수 항목 목록 입력 매개 변수입니다.  
+- `Files`는 필수 항목 목록 입력 매개 변수입니다.  
   
--   `Tally`는 System.Int32 형식의 출력 매개 변수입니다.  
+- `Tally`는 System.Int32 형식의 출력 매개 변수입니다.  
   
- `Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다. 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.  
+  `Code` 요소에 `Fragment` 또는 `Method`의 `Type` 특성이 있는 경우 모든 매개 변수에 대해 자동으로 속성이 만들어집니다. 그렇지 않으면 작업 소스 코드에서 속성을 명시적으로 선언해야 하며 이러한 속성은 해당 매개 변수 정의와 정확히 일치해야 합니다.  
   
 ## <a name="example"></a>예제  
  다음 인라인 작업은 지정된 파일에서 나오는 모든 토큰을 지정된 값으로 바꿉니다.  

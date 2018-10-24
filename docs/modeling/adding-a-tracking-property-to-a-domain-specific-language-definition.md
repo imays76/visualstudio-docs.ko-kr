@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898722"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>도메인 특정 언어 정의에 추적 속성 추가
 
@@ -30,29 +30,30 @@ A *도메인 추적* 속성은 사용자가 업데이트할 수는 있지만 다
 
 이 연습에서는 모델의 기본 Namespace 속성을 기반으로 기본 값이 있는 속성을 추적 하는 Namespace가 있는 도메인 특정 언어 (DSL)를 만듭니다. 속성을 추적 하는 방법에 대 한 자세한 내용은 참조 하세요. [추적 속성 정의](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)합니다.
 
--   추적 속성 설명자 DSL 도구 지원입니다. 그러나 추적 속성을 추가 하려면 DSL 디자이너를 사용할 수 없습니다. 따라서 정의 및 추적 속성을 구현 하는 사용자 지정 코드를 추가 해야 합니다.
+- 추적 속성 설명자 DSL 도구 지원입니다. 그러나 추적 속성을 추가 하려면 DSL 디자이너를 사용할 수 없습니다. 따라서 정의 및 추적 속성을 구현 하는 사용자 지정 코드를 추가 해야 합니다.
 
- 추적 속성에 두 개의 상태:, 추적 및 사용자가 업데이트 됩니다. 추적 속성에는 다음과 같은 기능이 있습니다.
+  추적 속성에 두 개의 상태:, 추적 및 사용자가 업데이트 됩니다. 추적 속성에는 다음과 같은 기능이 있습니다.
 
--   추적 상태에 있을 때 하 고 추적 속성의 값을 계산한 다음 값이 모델 변경의 다른 속성으로 업데이트 됩니다.
+- 추적 상태에 있을 때 하 고 추적 속성의 값을 계산한 다음 값이 모델 변경의 다른 속성으로 업데이트 됩니다.
 
--   업데이트 된 경우 추적 속성의 값을 사용자 상태에 의해 사용자 속성이 마지막으로 설정 된 값을 유지 합니다.
+- 업데이트 된 경우 추적 속성의 값을 사용자 상태에 의해 사용자 속성이 마지막으로 설정 된 값을 유지 합니다.
 
--   에 **속성** 창을 **재설정** 속성이 업데이트 된 경우에 추적 속성 가능 명령은 사용자 상태에 따라 합니다. 합니다 **재설정** 추적 속성을 설정 하는 명령 상태를 추적 합니다.
+- 에 **속성** 창을 **재설정** 속성이 업데이트 된 경우에 추적 속성 가능 명령은 사용자 상태에 따라 합니다. 합니다 **재설정** 추적 속성을 설정 하는 명령 상태를 추적 합니다.
 
--   에 **속성** 창, 추적 속성 추적 상태를 해당 값은 일반 글꼴로 표시 됩니다.
+- 에 **속성** 창, 추적 속성 추적 상태를 해당 값은 일반 글꼴로 표시 됩니다.
 
--   에 **속성** 창 추적 속성이 업데이트 된 경우 사용자 상태에 의해 해당 값은 굵은 글꼴로 표시 됩니다.
+- 에 **속성** 창 추적 속성이 업데이트 된 경우 사용자 상태에 의해 해당 값은 굵은 글꼴로 표시 됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
 이 연습을 시작 하기 전에 이러한 구성 요소를 먼저 설치 해야 합니다.
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>프로젝트를 만듭니다.
 
@@ -718,33 +719,33 @@ XML serialization에 대 한 사용자 지정 후 로드 동작을 지 원하는
 
 다음 단계에서에서 빌드 및 실행은 DSL 디자이너의 새 인스턴스를 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 추적 속성 제대로 작동 하는지 확인할 수 있도록 합니다.
 
-1.  에 **빌드할** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.
+1. 에 **빌드할** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.
 
-2.  **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.
+2. **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.
 
-     실험적 빌드 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 열립니다 합니다 **디버깅** 빈 테스트 파일을 포함 하는 솔루션입니다.
+    실험적 빌드 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 열립니다 합니다 **디버깅** 빈 테스트 파일을 포함 하는 솔루션입니다.
 
-3.  **솔루션 탐색기**Test.trackingPropertyDsl 파일을 디자이너에서 열을 두 번 클릭 하 고 디자인 화면을 클릭 합니다.
+3. **솔루션 탐색기**Test.trackingPropertyDsl 파일을 디자이너에서 열을 두 번 클릭 하 고 디자인 화면을 클릭 합니다.
 
-     되었는지 확인 합니다 **속성** 다이어그램 창을 **Default Namespace** 속성은 **DefaultNamespace**, 및 **사용자지정요소** 속성은 **0/0**합니다.
+    되었는지 확인 합니다 **속성** 다이어그램 창을 **Default Namespace** 속성은 **DefaultNamespace**, 및 **사용자지정요소** 속성은 **0/0**합니다.
 
-4.  끌어서를 **ExampleElement** 요소를 **도구 상자** 다이어그램 화면.
+4. 끌어서를 **ExampleElement** 요소를 **도구 상자** 다이어그램 화면.
 
-5.  에 **속성** 선택 요소에 대 한 창 합니다 **요소 Namespace** 속성에서 값을 변경 하 고 **DefaultNamespace** 를  **OtherNamespace**합니다.
+5. 에 **속성** 선택 요소에 대 한 창 합니다 **요소 Namespace** 속성에서 값을 변경 하 고 **DefaultNamespace** 를  **OtherNamespace**합니다.
 
-     값 **요소 Namespace** 이제 굵게 표시 됩니다.
+    값 **요소 Namespace** 이제 굵게 표시 됩니다.
 
-6.  에 **속성** 창에서 마우스 오른쪽 단추로 클릭 **요소 Namespace**, 클릭 하 고 **재설정**.
+6. 에 **속성** 창에서 마우스 오른쪽 단추로 클릭 **요소 Namespace**, 클릭 하 고 **재설정**.
 
-     속성의 값으로 변경 됩니다 **DefaultNamespace**, 값이 일반 글꼴로 표시 됩니다.
+    속성의 값으로 변경 됩니다 **DefaultNamespace**, 값이 일반 글꼴로 표시 됩니다.
 
-     마우스 오른쪽 단추로 클릭 **요소 Namespace** 다시 합니다. 합니다 **재설정** 속성은 현재 추적 상태 때문에 이제 명령이 비활성화 됩니다.
+    마우스 오른쪽 단추로 클릭 **요소 Namespace** 다시 합니다. 합니다 **재설정** 속성은 현재 추적 상태 때문에 이제 명령이 비활성화 됩니다.
 
-7.  다른 끌어 **ExampleElement** 에서 합니다 **도구 상자** 다이어그램 화면을 변경 해당 **요소 Namespace** 를 **OtherNamespace**합니다.
+7. 다른 끌어 **ExampleElement** 에서 합니다 **도구 상자** 다이어그램 화면을 변경 해당 **요소 Namespace** 를 **OtherNamespace**합니다.
 
-8.  디자인 화면을 클릭 합니다.
+8. 디자인 화면을 클릭 합니다.
 
-     에 **속성** 다이어그램의 값에 대 한 창 **사용자 지정 요소** 되었습니다 **1/2**합니다.
+    에 **속성** 다이어그램의 값에 대 한 창 **사용자 지정 요소** 되었습니다 **1/2**합니다.
 
 9. 변경 **Default Namespace** 에서 다이어그램에 대 한 **DefaultNamespace** 하 **NewNamespace**합니다.
 

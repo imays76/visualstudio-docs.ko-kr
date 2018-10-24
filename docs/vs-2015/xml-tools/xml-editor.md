@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee20be802884e20b885e232da43f2ade9f96dbfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236875"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896330"
 ---
 # <a name="xml-editor"></a>XML 편집기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "49236875"
   
 XML 편집기는 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 텍스트 편집기를 기반으로 하며 XML 언어를 추가 지원합니다. XML 편집기에는 다음 기능이 있습니다.  
   
--   XML 1.0 구문 검사  
+- XML 1.0 구문 검사  
   
--   입력하는 동안 스키마 유효성 검사  
+- 입력하는 동안 스키마 유효성 검사  
   
--   스키마에 의해 생성된 조각을 비롯한 XML 조각 지원  
+- 스키마에 의해 생성된 조각을 비롯한 XML 조각 지원  
   
--   DTD(문서 형식 정의) 지원  
+- DTD(문서 형식 정의) 지원  
   
--   XSD(XML 스키마 정의 언어) 스키마 지원  
+- XSD(XML 스키마 정의 언어) 스키마 지원  
   
--   XML 인스턴스 문서에서 XML 스키마 만들기  
+- XML 인스턴스 문서에서 XML 스키마 만들기  
   
--   DTD 또는 XDR(XML-Data Reduced) 스키마를 XML 스키마로 변환  
+- DTD 또는 XDR(XML-Data Reduced) 스키마를 XML 스키마로 변환  
   
--   XSLT 1.0 구문 검사  
+- XSLT 1.0 구문 검사  
   
--   요소를 확장명 및 축소할 수 있도록 문서 개요 표시  
+- 요소를 확장명 및 축소할 수 있도록 문서 개요 표시  
   
--   와 통합 된 [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)합니다. 이를 통해 XML 스키마를 계층적으로 표시할 수 있습니다.  
+- 와 통합 된 [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)합니다. 이를 통해 XML 스키마를 계층적으로 표시할 수 있습니다.  
   
- XML 편집기는 .xml, .xsd, .xsl, .config 등의 잘 알려진 파일 확장명에 대해 호출됩니다. 또한 파일에 XML이 포함된 경우 알려지지 않은 파일 확장명에 대해서도 호출됩니다. 있습니다도 파일을 열 수는 XML 편집기로 사용 하 여 합니다 **프로그램** 옵션과 키를 누른 채 목록에서 XML 편집기를 선택 합니다.  
+  XML 편집기는 .xml, .xsd, .xsl, .config 등의 잘 알려진 파일 확장명에 대해 호출됩니다. 또한 파일에 XML이 포함된 경우 알려지지 않은 파일 확장명에 대해서도 호출됩니다. 있습니다도 파일을 열 수는 XML 편집기로 사용 하 여 합니다 **프로그램** 옵션과 키를 누른 채 목록에서 XML 편집기를 선택 합니다.  
   
 ## <a name="express-editions"></a>Express Edition  
  Visual Studio Express Edition에서는 다음 XML 편집기 기능을 사용할 수 없습니다.  

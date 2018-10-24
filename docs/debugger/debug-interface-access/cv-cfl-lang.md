@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c383fd188c035dfacf41cdf86a84b4afe8dfa40d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63426af550894df0e9796babaec91ff5758bbf1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909918"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
-응용 프로그램이 나 연결 된 모듈의 소스 코드 언어를 지정합니다.  
+응용 프로그램 또는 연결 된 모듈의 소스 코드 언어를 지정합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -56,7 +56,7 @@ typedef enum CV_CFL_LANG {
  응용 프로그램 언어는 c + +입니다.  
   
  CV_CFL_FORTRAN  
- 응용 프로그램 언어는 포트란입니다.  
+ 응용 프로그램 언어가 FORTRAN 합니다.  
   
  CV_CFL_MASM  
  응용 프로그램 언어는 Microsoft Macro Assembler입니다.  
@@ -65,7 +65,7 @@ typedef enum CV_CFL_LANG {
  응용 프로그램 언어는 파스칼식입니다.  
   
  CV_CFL_BASIC  
- 응용 프로그램 언어 BASIC입니다.  
+ 응용 프로그램 언어는 BASIC입니다.  
   
  CV_CFL_COBOL  
  응용 프로그램 언어는 COBOL입니다.  
@@ -74,34 +74,34 @@ typedef enum CV_CFL_LANG {
  응용 프로그램에는 링커 생성 모듈입니다.  
   
  CV_CFL_CVTRES  
- 응용 프로그램은 리소스 모듈 CVTRES 도구와 함께 변환 합니다.  
+ 응용 프로그램은 CVTRES 도구를 사용 하 여 변환 하는 리소스 모듈입니다.  
   
  CV_CFL_CVTPGD  
- 응용 프로그램은 CVTPGD 도구로 생성 된 액세스에 최적화 된 POGO 모듈.  
+ 응용 프로그램은 CVTPGD 도구를 사용 하 여 생성 된 POGO 액세스에 최적화 된 모듈입니다.  
   
  CV_CFL_CSHARP  
  응용 프로그램 언어는 C#입니다.  
   
  CV_CFL_VB  
- 응용 프로그램 언어에는 Visual Basic입니다.  
+ 응용 프로그램 언어는 Visual Basic입니다.  
   
  CV_CFL_ILASM  
- 응용 프로그램 언어에는 중간 언어 어셈블리 (즉, 공용 언어 런타임 (CLR) 어셈블리)입니다.  
+ 응용 프로그램 언어는 중간 언어 어셈블리 (즉, 공용 언어 런타임 (CLR) 어셈블리)입니다.  
   
  CV_CFL_JAVA  
- 응용 프로그램 언어는 Java입니다.  
+ 응용 프로그램 언어가 Java 합니다.  
   
  CV_CFL_JSCRIPT  
  응용 프로그램 언어는 Jscript입니다.  
   
  CV_CFL_MSIL  
- 응용 프로그램 언어는는 알 수 없는 언어 MSIL (Microsoft Intermediate)를 사용 하 여 결과 수는 [/LTCG (링크 타임 코드 생성)](/cpp/build/reference/ltcg-link-time-code-generation) 전환 합니다.  
+ 응용 프로그램 언어가 알 수 없는 언어 MSIL (Microsoft Intermediate)를 사용 하 여 결과 수를 [/LTCG (링크 타임 코드 생성)](/cpp/build/reference/ltcg-link-time-code-generation) 전환 합니다.  
   
  CV_CFL_HLSL  
- 응용 프로그램 언어는 높은 수준의 셰이더 언어입니다.  
+ 응용 프로그램 언어는 High Level Shader Language입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에 대 한 호출에서 반환될지는 [idiasymbol:: Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) 메서드.  
+ 이 열거형의 값에는 호출에서 반환 되는 [idiasymbol:: Get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: cvconst.h  

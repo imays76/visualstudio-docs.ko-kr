@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 417d901504eb20894b3bd3e83d286dac4e66b072
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 371be943dc062c5c3b5aac7f59493aa5f4f53002
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897152"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag 함수
 동시성 시각화 도우미 추적 파일에 플래그를 씁니다.  
@@ -88,7 +88,7 @@ HRESULT CvWriteFlagExVA(
   
  **유니코드:** CvWriteFlagExW, CvWriteFlagExVW  
   
- **ANSI:** CvWriteFlagExA, CvWriteFlagExVA  
+ <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA  
   
 ## <a name="see-also"></a>참고 항목  
  [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)

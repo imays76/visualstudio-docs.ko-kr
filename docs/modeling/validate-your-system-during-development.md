@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e7a8ff8ac2de47e9f4d52e44f61ea4ec99f7d87f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283628"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907302"
 ---
 # <a name="validate-your-system-during-development"></a>개발하는 동안 시스템 유효성 검사
 Visual Studio에서는 소프트웨어와 사용자 요구 사항 및 시스템 아키텍처의 일관성을 유지할 수 있습니다.
@@ -27,14 +27,14 @@ Visual Studio에서는 소프트웨어와 사용자 요구 사항 및 시스템 
  다음 작업으로 소프트웨어의 유효성을 검사합니다.
 
 |**작업**|**관련 항목**|
-|---------------|---------------------------|
+|-|-|
 |**소프트웨어가 사용자 요구 사항을 충족하는지 확인합니다**.<br /><br /> 요구 사항 및 아키텍처 모델을 사용하여 시스템 및 해당 구성 요소의 테스트를 구성하도록 지원할 수 있습니다. 이렇게 하면 사용자 및 기타 이해 관계자에게 중요한 요구 사항을 테스트하는지 확인할 수 있고 요구 사항이 변경될 때 테스트를 빠르게 업데이트할 수 있습니다.|-   [모델에서 테스트 개발](../modeling/develop-tests-from-a-model.md)|
 |**소프트웨어와 의도한 시스템 디자인의 일관성이 유지되는지 확인합니다.**<br /><br /> 종속성 다이어그램 응용 프로그램의 구성 요소 간의 의도 한 종속성을 설명합니다. 개발하는 동안 코드의 실제 종속성이 의도한 디자인을 따르는지 확인할 수 있습니다.|-   [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="external-resources"></a>외부 리소스
 
 |**범주**|**링크**|
-|------------------|---------------|
+|-|-|
 |**비디오**|![비디오 링크](../data-tools/media/playvideo.gif) [Channel 9: Doug 7: 코드 이해 및 Visual Studio 2010을 사용 하 여 시스템 디자인](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif) [Channel 9: 종속성 다이어그램을 사용 하 여 응용 프로그램 설계](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif) [MSDN 어떻게 할까요? 시리즈: 종속성 다이어그램을 사용 하 여 코드 유효성을 검사 하는 방법](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**포럼**|-   [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|

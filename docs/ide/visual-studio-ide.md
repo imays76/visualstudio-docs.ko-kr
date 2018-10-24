@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907523"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE 시작
 
@@ -94,11 +94,11 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
 - [정의로 이동](../ide/go-to-and-peek-definition.md)
 
-  정의로 이동 기능은 함수 또는 형식이 정의된 위치로 직접 이동합니다.
+   정의로 이동 기능은 함수 또는 형식이 정의된 위치로 직접 이동합니다.
 
    ![정의로 이동](../ide/media/go-to-definition-menu.png)
 
-- [정의 보기](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [정의 피킹(Peeking)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    **정의 보기** 창은 실제로 개별 파일을 열지 않고 메서드 또는 형식의 정의 보여 줍니다.
 
@@ -112,14 +112,14 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
    ![메뉴 모음의 파일 > 새 프로젝트](../ide/media/file-new-project-menu.png)
 
-1. **새 프로젝트** 대화 상자에는 여러 프로젝트 *템플릿*이 표시됩니다. 템플릿에는 지정된 프로젝트 형식에 필요한 기본 파일과 설정이 포함되어 있습니다. **Visual C#** 에서 **.NET Core** 범주를 선택한 다음 **콘솔 앱(.NET Core)** 템플릿을 선택합니다. **이름** 텍스트 상자에 **HelloWorld**를 입력한 다음, **확인** 단추를 선택합니다.
+2. **새 프로젝트** 대화 상자에는 여러 프로젝트 *템플릿*이 표시됩니다. 템플릿에는 지정된 프로젝트 형식에 필요한 기본 파일과 설정이 포함되어 있습니다. **Visual C#** 에서 **.NET Core** 범주를 선택한 다음 **콘솔 앱(.NET Core)** 템플릿을 선택합니다. **이름** 텍스트 상자에 **HelloWorld**를 입력한 다음, **확인** 단추를 선택합니다.
 
    ![.NET Core 앱 템플릿](../ide/media/overview-new-project-dialog.png)
 
    Visual Studio가 프로젝트를 만듭니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 응용 프로그램입니다. 콘솔(프로그램 출력) 창에서
 
-  > [!NOTE]
-  > **.NET Core** 범주가 표시되지 않으면 **.NET Core 플랫폼 간 개발** 워크로드를 설치해야 합니다. 이를 수행하려면 **새 프로젝트** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 열리면 아래로 스크롤하여 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+   > [!NOTE]
+   > **.NET Core** 범주가 표시되지 않으면 **.NET Core 플랫폼 간 개발** 워크로드를 설치해야 합니다. 이를 수행하려면 **새 프로젝트** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 열리면 아래로 스크롤하여 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
 
    잠시 후 다음과 같은 정보가 표시됩니다.
 
@@ -127,21 +127,21 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
    응용 프로그램의 C# 코드는 대부분의 공간을 차지하는 편집기 창에 표시됩니다. 텍스트는 지정된 색으로 자동으로 표시되어 다른 부분(예: 키워드 또는 형식)을 나타냅니다. 또한 코드에서 작은 세로 파선은 서로 일치하는 중괄호를 나타내며, 줄 번호는 나중에 코드를 찾는 데 도움이 됩니다. 작은 상자 안에 있는 빼기 기호를 선택하여 코드 블록을 축소하거나 확장할 수 있습니다. 이 코드 개요 기능을 사용하면 필요 없는 코드를 숨길 수 있으므로 화면 상의 혼란을 최소화할 수 있습니다. 프로젝트 파일은 **솔루션 탐색기**라는 창의 오른쪽에 나열됩니다.
 
-  ![빨간색 상자가 있는 Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
+   ![빨간색 상자가 있는 Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
 
-  다른 메뉴와 도구 창을 사용할 수 있지만 지금은 넘어가겠습니다.
+   다른 메뉴와 도구 창을 사용할 수 있지만 지금은 넘어가겠습니다.
 
-1. 이제 앱을 시작합니다. 메뉴 모음의 **디버그** 메뉴에서 **디버깅하지 않고 시작**을 선택하면 됩니다. **Ctrl**+**F5**를 누를 수도 있습니다.
+3. 이제 앱을 시작합니다. 메뉴 모음의 **디버그** 메뉴에서 **디버깅하지 않고 시작**을 선택하면 됩니다. **Ctrl**+**F5**를 누를 수도 있습니다.
 
-  ![디버그 > 디버깅하지 않고 시작 메뉴](../ide/media/overview-start-without-debugging.png)
+   ![디버그 > 디버깅하지 않고 시작 메뉴](../ide/media/overview-start-without-debugging.png)
 
-  Visual Studio에서 앱을 빌드하며, 콘솔 창이 열리고 **Hello World!** 메시지가 표시됩니다. 이제 실행 중인 앱이 있습니다!
+   Visual Studio에서 앱을 빌드하며, 콘솔 창이 열리고 **Hello World!** 메시지가 표시됩니다. 이제 실행 중인 앱이 있습니다!
 
-  ![콘솔 창](../ide/media/overview-console-window.png)
+   ![콘솔 창](../ide/media/overview-console-window.png)
 
-1. 콘솔 창을 닫으려면 키보드에서 아무 키나 누릅니다.
+4. 콘솔 창을 닫으려면 키보드에서 아무 키나 누릅니다.
 
-1. 앱에 일부 코드를 추가하겠습니다. `Console.WriteLine("Hello World!");` 줄 앞에 다음 C# 코드를 추가합니다.
+5. 앱에 일부 코드를 추가하겠습니다. `Console.WriteLine("Hello World!");` 줄 앞에 다음 C# 코드를 추가합니다.
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -150,21 +150,21 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
    이 코드는 콘솔 창에 **이름이 무엇입니까?** 를 표시한 다음, 사용자가 텍스트를 입력한 후 **Enter** 키를 누를 때까지 기다립니다.
 
-1. `Console.WriteLine("Hello World!");`이라고 표시된 줄을 다음 코드로 변경합니다.
+6. `Console.WriteLine("Hello World!");`이라고 표시된 줄을 다음 코드로 변경합니다.
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. **디버그** > **디버깅하지 않고 시작**을 선택하거나 **Ctrl**+**F5**를 눌러 앱을 다시 실행합니다.
+7. **디버그** > **디버깅하지 않고 시작**을 선택하거나 **Ctrl**+**F5**를 눌러 앱을 다시 실행합니다.
 
    Visual Studio에서 앱을 다시 빌드하고, 콘솔 창이 열리며 사용자 이름을 묻는 메시지가 표시됩니다.
 
-1. 콘솔 창에 이름을 입력하고 **Enter** 키를 누릅니다.
+8. 콘솔 창에 이름을 입력하고 **Enter** 키를 누릅니다.
 
    ![콘솔 창 입력](media/overview-console-input.png)
 
-1. 아무 키나 눌러 콘솔 창을 닫고 실행 중인 프로그램을 중지합니다.
+9. 아무 키나 눌러 콘솔 창을 닫고 실행 중인 프로그램을 중지합니다.
 
 ## <a name="use-refactoring-and-intellisense"></a>리팩터링 및 IntelliSense 사용
 
@@ -174,11 +174,11 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
 1. `name` 변수를 두 번 클릭하여 선택합니다.
 
-1. 변수의 새 이름 **username**을 입력합니다.
+2. 변수의 새 이름 **username**을 입력합니다.
 
    변수 주위에 회색 상자가 나타나고 여백에 전구가 나타납니다.
 
-1. 전구 아이콘을 선택하여 사용 가능한 [빠른 작업](quick-actions.md)을 표시합니다. **'name'의 이름을 'username'으로 바꾸기**를 선택합니다.
+3. 전구 아이콘을 선택하여 사용 가능한 [빠른 작업](quick-actions.md)을 표시합니다. **'name'의 이름을 'username'으로 바꾸기**를 선택합니다.
 
    ![Visual Studio에서 작업 이름 바꾸기](media/rename-quick-action.png)
 
@@ -186,15 +186,15 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
 
    ![Visual Studio에서 이름 바꾸기 리팩터링을 보여 주는 애니메이션된 gif](media/rename-refactoring.gif)
 
-1. 이제 IntelliSense를 살펴보겠습니다. `Console.WriteLine($"\nHello {username}!");`이라고 표시된 줄 아래에 **DateTime now = DateTime**을 입력합니다.
+4. 이제 IntelliSense를 살펴보겠습니다. `Console.WriteLine($"\nHello {username}!");`이라고 표시된 줄 아래에 **DateTime now = DateTime**을 입력합니다.
 
    상자에 <xref:System.DateTime> 클래스의 멤버가 표시됩니다. 또한 현재 선택된 멤버의 설명이 별도 상자에 표시됩니다.
 
    ![Visual Studio의 IntelliSense 목록 멤버](media/intellisense-list-members.png)
 
-1. 클래스의 속성인 **Now**라는 멤버를 두 번 클릭하거나 **Tab** 키를 눌러 선택합니다. 세미콜론 **;** 를 추가하여 코드 줄을 완료합니다.
+5. 클래스의 속성인 **Now**라는 멤버를 두 번 클릭하거나 **Tab** 키를 눌러 선택합니다. 세미콜론 **;** 를 추가하여 코드 줄을 완료합니다.
 
-1. 그 아래에 다음 코드 줄을 입력하거나 복사합니다.
+6. 그 아래에 다음 코드 줄을 입력하거나 복사합니다.
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -206,17 +206,17 @@ Visual Studio를 처음 시작하면 필요에 따라 Microsoft 계정이나 회
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType>은 인쇄 후 줄 종결자를 추가하지 않는다는 점에서 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>과 약간 다릅니다. 즉, 출력으로 전송되는 다음 텍스트가 같은 줄에 인쇄됩니다. 코드에서 이러한 각 메서드 위로 마우스를 가져가면 설명을 볼 수 있습니다.
 
-1. 다음으로, 리팩터링을 다시 사용하여 코드를 좀 더 간결하게 만듭니다. `DateTime now = DateTime.Now;` 줄에서 변수 `now`를 클릭합니다.
+7. 다음으로, 리팩터링을 다시 사용하여 코드를 좀 더 간결하게 만듭니다. `DateTime now = DateTime.Now;` 줄에서 변수 `now`를 클릭합니다.
 
    해당 줄의 여백에 작은 스크루드라이버 아이콘이 나타납니다.
 
-1. 스크루드라이버 아이콘을 클릭하면 Visual Studio에서 제안하는 사항을 볼 수 있습니다. 여기에는 전체 동작을 변경하지 않고 코드 줄을 제거할 수 있는 [인라인 임시 변수](reference/inline-temporary-variable.md) 리팩터링이 표시되어 있습니다.
+8. 스크루드라이버 아이콘을 클릭하면 Visual Studio에서 제안하는 사항을 볼 수 있습니다. 여기에는 전체 동작을 변경하지 않고 코드 줄을 제거할 수 있는 [인라인 임시 변수](reference/inline-temporary-variable.md) 리팩터링이 표시되어 있습니다.
 
    ![Visual Studio의 인라인 임시 변수 리팩터링](media/inline-temporary-variable-refactoring.png)
 
-1. **인라인 임시 변수**를 클릭하여 코드를 리팩터링합니다.
+9. **인라인 임시 변수**를 클릭하여 코드를 리팩터링합니다.
 
-1. **Ctrl**+**F5** 키를 눌러 프로그램을 다시 실행합니다. 출력은 다음과 같습니다.
+10. **Ctrl**+**F5** 키를 눌러 프로그램을 다시 실행합니다. 출력은 다음과 같습니다.
 
    ![프로그램 출력이 표시된 콘솔 창](../ide/media/overview-console-final.png)
 
@@ -252,7 +252,7 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 
 1. 메뉴 모음에서 **도구** > **옵션**을 선택하여 **옵션** 대화 상자를 엽니다.
 
-1. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어두운**으로 변경한 다음, **확인**을 선택합니다.
+2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어두운**으로 변경한 다음, **확인**을 선택합니다.
 
    전체 IDE의 색 테마가 **어둡게**로 변경됩니다.
 

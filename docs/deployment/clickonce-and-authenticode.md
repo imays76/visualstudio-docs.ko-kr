@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907445"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 및 Authenticode
 *Authenticode* 는 업계 표준 암호화를 사용하여 응용 프로그램 게시자의 신뢰성을 확인하는 디지털 인증서로 응용 프로그램 코드에 서명하는 Microsoft 기술입니다. 응용 프로그램 배포에 Authenticode를 사용하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 는 트로이 목마의 위험을 줄입니다. 트로이 목마는 악의적인 제3자가 신뢰할 수 있는 기존의 소스에서 온 적법한 프로그램처럼 속여 표시하는 바이러스 또는 기타 유해 프로그램입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포에 디지털 인증서로 서명하는 것은 어셈블리와 파일이 손상되지 않았음을 확인하기 위한 선택적인 단계입니다.  
@@ -39,11 +39,11 @@ ms.locfileid: "39512212"
   
  세 가지 방법 중 하나로 코드 서명을 위한 인증서를 가져올 수 있습니다.  
   
--   인증서 공급업체에서 인증서를 구매합니다.  
+- 인증서 공급업체에서 인증서를 구매합니다.  
   
--   디지털 인증서를 만드는 조직의 담당 그룹에서 인증서를 받습니다.  
+- 디지털 인증서를 만드는 조직의 담당 그룹에서 인증서를 받습니다.  
   
--   New-selfsignedcertificate PowerShell cmdlet을 사용 하거나 사용 하 여 사용자 고유의 인증서를 생성 *MakeCert.exe*에 포함 되어 있는 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]입니다.  
+- New-selfsignedcertificate PowerShell cmdlet을 사용 하거나 사용 하 여 사용자 고유의 인증서를 생성 *MakeCert.exe*에 포함 되어 있는 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]입니다.  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>어떻게 인증 기관을 사용 하면  
  New-selfsignedcertificate를 사용 하 여 생성 된 인증서 또는 *MakeCert.exe* 유틸리티 라고는 *자체 인증서* 또는 *테스트 인증서*합니다. 이런이 종류의 인증서 동일 하 게 훨씬 작동 방식으로 *.snk* 파일은.NET Framework에서 작동 합니다. 공개/개인 암호화 키 쌍으로만 구성되어 있으며 게시자에 대한 확인 가능한 정보가 포함되어 있지 않습니다. 신뢰 수준이 높은 인트라넷에서 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 배포하는 경우 자체 서명 인증서를 사용할 수 있습니다. 그러나 이러한 응용 프로그램을 클라이언트 컴퓨터에서 실행하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 는 이를 알 수 없는 게시자에서 온 것으로 식별합니다. 기본적으로 자체 인증서로 서명되고 인터넷을 통해 배포된 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 신뢰할 수 있는 응용 프로그램 배포를 사용할 수 없습니다.  
@@ -68,7 +68,7 @@ ms.locfileid: "39512212"
   
 ### <a name="store-certificates"></a>인증서 저장  
   
--   인증서를 저장할 수 있습니다는 *.pfx* 파일 시스템에서 파일 키 컨테이너 내부에 저장할 수 있습니다. Windows 도메인의 사용자는 여러 키 컨테이너를 가질 수 있습니다. 기본적으로 *MakeCert.exe* 에 저장 해야 한다고 지정 하지 않으면 인증서 개인 키 컨테이너에 저장 된 *.pfx* 대신 합니다. *Mage.exe* 하 고 *MageUI.exe*의 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 를 만들기 위한 도구 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 방식 중 하나에 저장 된 인증서를 사용 하 여 배포를 사용 합니다.  
+- 인증서를 저장할 수 있습니다는 *.pfx* 파일 시스템에서 파일 키 컨테이너 내부에 저장할 수 있습니다. Windows 도메인의 사용자는 여러 키 컨테이너를 가질 수 있습니다. 기본적으로 *MakeCert.exe* 에 저장 해야 한다고 지정 하지 않으면 인증서 개인 키 컨테이너에 저장 된 *.pfx* 대신 합니다. *Mage.exe* 하 고 *MageUI.exe*의 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 를 만들기 위한 도구 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 방식 중 하나에 저장 된 인증서를 사용 하 여 배포를 사용 합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   

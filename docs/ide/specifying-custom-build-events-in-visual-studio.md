@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908744"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio에서 사용자 지정 빌드 이벤트 지정
 
@@ -37,24 +37,24 @@ ms.locfileid: "31945924"
 
  최상의 결과를 얻으려면 다음 서식 지정 팁을 따릅니다.
 
--   *.bat* 파일을 실행하는 모든 빌드 이벤트 앞에 `call` 명령문을 추가합니다.
+- *.bat* 파일을 실행하는 모든 빌드 이벤트 앞에 `call` 명령문을 추가합니다.
 
-     예: `call C:\MyFile.bat`
+   예: `call C:\MyFile.bat`
 
-     예: `call C:\MyFile.bat call C:\MyFile2.bat`
+   예: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   파일 경로를 따옴표로 묶습니다.
+- 파일 경로를 따옴표로 묶습니다.
 
-     예([!INCLUDE[win8](../debugger/includes/win8_md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
+   예([!INCLUDE[win8](../debugger/includes/win8_md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   줄 바꿈을 사용하여 여러 명령을 구분합니다.
+- 줄 바꿈을 사용하여 여러 명령을 구분합니다.
 
--   필요에 따라 와일드카드를 포함합니다.
+- 필요에 따라 와일드카드를 포함합니다.
 
-     예: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
+   예: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
-    > [!NOTE]
-    >  위 코드의 `%I`는 배치 스크립트에서 `%%I`여야 합니다.
+  > [!NOTE]
+  >  위 코드의 `%I`는 배치 스크립트에서 `%%I`여야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c01bf88cc86f0b63c7dc63deb257f077f61541a0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908804"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>방법: 부하 테스트 결과의 그래프에서 카운터 추가 및 삭제
 
@@ -33,7 +33,7 @@ ms.locfileid: "39176686"
  다음은 샘플링 주기에 대한 몇 가지 지침입니다.
 
 |부하 테스트 지속 시간|권장 샘플링 주기|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1시간|5초|
 |1-8시간|15초|
 |8-24시간|30초|

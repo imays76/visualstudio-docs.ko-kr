@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef8ac70ae10389bb39a86e5ad305f3457c54bbb8
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: afbb16d3f5bd9d9278ba6e787a6bba673cc28acb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910012"
 ---
 # <a name="create-a-settings-category"></a>설정 범주 만들기
 이 연습에서는 Visual Studio 설정 범주를 만들고 값을 저장 하 고 설정 파일에서 값을 복원 하려면 사용 합니다. 설정 범주는 "사용자 지정 설정 지점;"으로 표시 되는 관련된 속성의 그룹 즉,에서 확인란으로는 **가져오기 및 내보내기 설정을** 마법사. (에서 찾을 수 있습니다 합니다 **도구** 메뉴.) 설정 저장 되거나, 범주로 서 복원 되 고 개별 설정 마법사에 표시 되지 않습니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.  
@@ -39,7 +39,7 @@ ms.locfileid: "39499725"
   
 2.  열기는 *VSPackage.resx* 파일과 이러한 3 개의 문자열 리소스를 추가 합니다.  
   
-    |name|값|  
+    |이름|값|  
     |----------|-----------|  
     |106|내 범주|  
     |107|내 설정|  
