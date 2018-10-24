@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893394"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>연습: 사용자 지정 부트스트래퍼를 만들어 개인 정보 취급 방침 프롬프트 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ ms.locfileid: "49217966"
   
 #### <a name="to-create-a-consent-dialog-box"></a>동의 대화 상자를 만들려면  
   
-1.  **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
+1. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-2.  에 **새 프로젝트** 대화 상자, 클릭 **Windows**를 클릭 하 고 **WindowsFormsApplication**합니다.  
+2. 에 **새 프로젝트** 대화 상자, 클릭 **Windows**를 클릭 하 고 **WindowsFormsApplication**합니다.  
   
-3.  에 대 한 합니다 **이름**, 형식 **ConsentDialog**를 클릭 하 고 **확인**합니다.  
+3. 에 대 한 합니다 **이름**, 형식 **ConsentDialog**를 클릭 하 고 **확인**합니다.  
   
-4.  디자이너에서 폼을 클릭 합니다.  
+4. 디자이너에서 폼을 클릭 합니다.  
   
-5.  에 **속성** 창에서 변경 합니다 **텍스트** 속성을 **업데이트 승인 대화 상자**합니다.  
+5. 에 **속성** 창에서 변경 합니다 **텍스트** 속성을 **업데이트 승인 대화 상자**합니다.  
   
-6.  에 **도구 상자**, 확장 **모든 Windows Forms**를 끌어서를 **레이블** 컨트롤을 폼입니다.  
+6. 에 **도구 상자**, 확장 **모든 Windows Forms**를 끌어서를 **레이블** 컨트롤을 폼입니다.  
   
-7.  디자이너에서 레이블 컨트롤을 클릭 합니다.  
+7. 디자이너에서 레이블 컨트롤을 클릭 합니다.  
   
-8.  에 **속성** 창에서 변경 합니다 **텍스트** 속성 **모양을** 다음과:  
+8. 에 **속성** 창에서 변경 합니다 **텍스트** 속성 **모양을** 다음과:  
   
-     응용 프로그램을 설치 하려고 합니다. 웹에서 최신 업데이트를 확인 합니다. "동의 안 함"을 클릭 하 여 응용 프로그램을 확인 하 고 인터넷에서 업데이트를 자동으로 설치 권한을 부여 합니다.  
+    응용 프로그램을 설치 하려고 합니다. 웹에서 최신 업데이트를 확인 합니다. "동의 안 함"을 클릭 하 여 응용 프로그램을 확인 하 고 인터넷에서 업데이트를 자동으로 설치 권한을 부여 합니다.  
   
 9. 에 **도구 상자**, 끌어를 **확인란을** 중간 폼에 컨트롤입니다.  
   
@@ -118,28 +118,28 @@ ms.locfileid: "49217966"
   
      Visual Basic 개발자에 해당:  
   
-    1.  **솔루션 탐색기**, 클릭 **ConsentDialog**합니다.  
+    1. **솔루션 탐색기**, 클릭 **ConsentDialog**합니다.  
   
-    2.  에 **프로젝트** 메뉴에서 클릭 **모듈 추가**를 클릭 하 고 **추가**합니다.  
+    2. 에 **프로젝트** 메뉴에서 클릭 **모듈 추가**를 클릭 하 고 **추가**합니다.  
   
-    3.  Module1.vb 코드 파일에 다음 코드를 추가 합니다.  
+    3. Module1.vb 코드 파일에 다음 코드를 추가 합니다.  
   
-         [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
+        [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
   
-    4.  에 **프로젝트** 메뉴에서 클릭 **ConsentDialog 속성**를 클릭 하 고는 **응용 프로그램** 탭 합니다.  
+    4. 에 **프로젝트** 메뉴에서 클릭 **ConsentDialog 속성**를 클릭 하 고는 **응용 프로그램** 탭 합니다.  
   
-    5.  선택 취소 **응용 프로그램 프레임 워크 사용**합니다.  
+    5. 선택 취소 **응용 프로그램 프레임 워크 사용**합니다.  
   
-    6.  에 **시작 개체** 드롭 다운 메뉴에서 **Module1**합니다.  
+    6. 에 **시작 개체** 드롭 다운 메뉴에서 **Module1**합니다.  
   
-        > [!NOTE]
-        >  Windows XP 비주얼 스타일, 응용 프로그램 이벤트, 시작 화면, 단일 인스턴스 응용 프로그램 등과 같은 기능을 비활성화 응용 프로그램 프레임 워크를 사용 하지 않도록 설정 합니다. 자세한 내용은 [프로젝트 디자이너, 응용 프로그램 페이지(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)를 참조하세요.  
+       > [!NOTE]
+       >  Windows XP 비주얼 스타일, 응용 프로그램 이벤트, 시작 화면, 단일 인스턴스 응용 프로그램 등과 같은 기능을 비활성화 응용 프로그램 프레임 워크를 사용 하지 않도록 설정 합니다. 자세한 내용은 [프로젝트 디자이너, 응용 프로그램 페이지(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)를 참조하세요.  
   
-     Visual C# 개발자에 해당:  
+       Visual C# 개발자에 해당:  
   
-     Program.cs 코드 파일을 열고 다음 코드를 추가 합니다.  
+       Program.cs 코드 파일을 열고 다음 코드를 추가 합니다.  
   
-     [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
+       [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
   
 26. 에 **빌드** 메뉴에서 클릭 **BuildSolution**합니다.  
   

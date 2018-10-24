@@ -16,12 +16,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cca327ffe8dbf260915b5eaa143bef6bb631e690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198590"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893418"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>방법: 줄 수준 샘플링 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49198590"
 ### <a name="available-data"></a>사용 가능한 데이터  
  사용 가능한 줄 수준 샘플링 데이터에는 다음 정보가 포함됩니다.  
   
--   함수 이름.  
+- 함수 이름.  
   
--   함수 주소.  
+- 함수 주소.  
   
--   줄 시작 - 샘플링된 코드의 줄 번호.  
+- 줄 시작 - 샘플링된 코드의 줄 번호.  
   
--   줄 끝 – 소스 줄 끝 번호. 단일 프로그램 문이 여러 소스 코드 줄에 걸쳐 있는 경우를 제외하고 이는 일반적으로 "줄 시작" 데이터와 동일합니다.  
+- 줄 끝 – 소스 줄 끝 번호. 단일 프로그램 문이 여러 소스 코드 줄에 걸쳐 있는 경우를 제외하고 이는 일반적으로 "줄 시작" 데이터와 동일합니다.  
   
--   문자 시작 – 집계 샘플의 시작 열. 단일 줄에 여러 프로그램 문이 포함된 경우를 제외하고 이는 일반적으로 0입니다.  
+- 문자 시작 – 집계 샘플의 시작 열. 단일 줄에 여러 프로그램 문이 포함된 경우를 제외하고 이는 일반적으로 0입니다.  
   
--   문자 끝 – 집계 샘플의 끝 열.  
+- 문자 끝 – 집계 샘플의 끝 열.  
   
--   IP – 집계 샘플이 사용된 주소(IP 뷰 전용).  
+- IP – 집계 샘플이 사용된 주소(IP 뷰 전용).  
   
- **모듈** 뷰에서 함수에 줄 수준 통계가 있으면 통계가 각 함수 아래에 중첩됩니다. 또한 각 줄 아래에 중첩된 IP 수준 통계가 제공됩니다.  
+  **모듈** 뷰에서 함수에 줄 수준 통계가 있으면 통계가 각 함수 아래에 중첩됩니다. 또한 각 줄 아래에 중첩된 IP 수준 통계가 제공됩니다.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>관리 코드의 줄 수준 샘플링 끄기  
  줄 수준 샘플링은 기본적으로 켜집니다. 다음 중 하나를 수행하여 관리 코드의 줄 수준 데이터 수집을 끌 수 있습니다.  

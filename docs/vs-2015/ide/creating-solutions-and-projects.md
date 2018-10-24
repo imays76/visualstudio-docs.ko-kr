@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893704"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ ms.locfileid: "49248536"
   
 #### <a name="to-create-an-empty-solution"></a>빈 솔루션을 만들려면  
   
-1.  **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **새 프로젝트**를 클릭합니다.  
+1. **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **새 프로젝트**를 클릭합니다.  
   
-2.  왼쪽 창에서 **설치됨**을 선택하고 **기타 프로젝트 형식**을 선택한 다음 확장된 목록에서 **Visual Studio 솔루션** 을 선택합니다.  
+2. 왼쪽 창에서 **설치됨**을 선택하고 **기타 프로젝트 형식**을 선택한 다음 확장된 목록에서 **Visual Studio 솔루션** 을 선택합니다.  
   
-3.  가운데 창에서 **빈 솔루션**을 선택합니다.  
+3. 가운데 창에서 **빈 솔루션**을 선택합니다.  
   
-4.  솔루션의 **이름** 및 **위치** 값을 설정하고 **확인**을 클릭합니다.  
+4. 솔루션의 **이름** 및 **위치** 값을 설정하고 **확인**을 클릭합니다.  
   
- 빈 솔루션을 만든 후 **프로젝트** 메뉴에서 **새 항목 추가** 또는 **기존 항목 추가** 를 클릭하여 새 프로젝트나 항목 또는 기존 프로젝트나 항목을 추가할 수 있습니다.  
+   빈 솔루션을 만든 후 **프로젝트** 메뉴에서 **새 항목 추가** 또는 **기존 항목 추가** 를 클릭하여 새 프로젝트나 항목 또는 기존 프로젝트나 항목을 추가할 수 있습니다.  
   
 ### <a name="deleting-solutions"></a>솔루션 삭제  
  솔루션을 영구적으로 삭제할 수 있으나 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하여 삭제하지는 않습니다. 솔루션을 삭제하기 전에 다른 솔루션에서 다시 사용할 수도 있는 프로젝트를 모두 이동합니다. 그런 다음 파일 탐색기를 사용하여 .sln 및 .suo 솔루션 파일이 포함된 디렉터리를 삭제합니다.  

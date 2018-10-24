@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895342"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>워크플로 디자이너의 바로 가기 키
 키보드를 사용하여 [!INCLUDE[wfd1](../includes/wfd1-md.md)]의 모든 핵심 기능에 액세스할 수 있습니다.  
@@ -49,29 +49,29 @@ ms.locfileid: "49267802"
 ### <a name="flowchart"></a>Flowchart  
  다음 목록은 키보드로 순서도를 구성하는 데 사용되는 제스처를 보여 줍니다. [!INCLUDE[wfd2](../includes/wfd2-md.md)]의 나머지 부분에서와 마찬가지로 [!INCLUDE[vs2010](../includes/vs2010-md.md)]에 제공된 전역 도구 상자 바로 가기를 사용하여 디자이너 화면에 활동을 추가합니다.  
   
--   활동을 이동하려면 활동을 선택하고 화살표 키를 사용하여 활동 위치를 조정합니다.  
+- 활동을 이동하려면 활동을 선택하고 화살표 키를 사용하여 활동 위치를 조정합니다.  
   
--   순서도의 크기를 조정하려면 화살표 키를 사용하여 순서도의 현재 경계 너머로 활동을 이동합니다. 순서도의 크기가 자동으로 조정됩니다.  
+- 순서도의 크기를 조정하려면 화살표 키를 사용하여 순서도의 현재 경계 너머로 활동을 이동합니다. 순서도의 크기가 자동으로 조정됩니다.  
   
--   활동을 시작 노드로 설정 하려면 사용 합니다 **노드로 설정** 상황에 맞는 메뉴 명령을 합니다.  
+- 활동을 시작 노드로 설정 하려면 사용 합니다 **노드로 설정** 상황에 맞는 메뉴 명령을 합니다.  
   
--   활동을 연결하려면  
+- 활동을 연결하려면  
   
-    1.  소스 활동으로 이동하여 해당 활동을 선택합니다.  
+  1.  소스 활동으로 이동하여 해당 활동을 선택합니다.  
   
-    2.  Ctrl+E, M을 여러 번 눌러 키보드 포커스를 대상 활동으로 옮깁니다.  
+  2.  Ctrl+E, M을 여러 번 눌러 키보드 포커스를 대상 활동으로 옮깁니다.  
   
-    3.  Ctrl+E, S를 눌러 대상 활동을 선택 항목에 추가합니다.  
+  3.  Ctrl+E, S를 눌러 대상 활동을 선택 항목에 추가합니다.  
   
-    4.  Ctrl+E, F를 눌러 소스의 커넥터를 대상에 추가합니다.  
+  4.  Ctrl+E, F를 눌러 소스의 커넥터를 대상에 추가합니다.  
   
- 키보드로 활동을 연결하는 방법에 대한 참고 사항은 다음과 같습니다.  
+  키보드로 활동을 연결하는 방법에 대한 참고 사항은 다음과 같습니다.  
   
--   더 많은 활동을 선택 항목에 추가한 후 Ctrl+E, F를 눌러 여러 연결을 동시에 만들 수 있습니다. 선택 항목에 활동을 추가한 순서로 연결이 이루어집니다.  
+- 더 많은 활동을 선택 항목에 추가한 후 Ctrl+E, F를 눌러 여러 연결을 동시에 만들 수 있습니다. 선택 항목에 활동을 추가한 순서로 연결이 이루어집니다.  
   
--   활동 쌍을 연결할 수 없는 경우(예: 소스 활동에 나가는 연결이 이미 있는 경우)에도 가능하면 선택 항목의 활동 사이에 다른 연결이 설정됩니다.  
+- 활동 쌍을 연결할 수 없는 경우(예: 소스 활동에 나가는 연결이 이미 있는 경우)에도 가능하면 선택 항목의 활동 사이에 다른 연결이 설정됩니다.  
   
--   경우는 **FlowDecision** 선택 영역에 포함 되어 및 **FlowDecision** 에 나가는 커넥터가 없는 경우 커넥터에 배치 됩니다는 **True** 분기 합니다.  
+- 경우는 **FlowDecision** 선택 영역에 포함 되어 및 **FlowDecision** 에 나가는 커넥터가 없는 경우 커넥터에 배치 됩니다는 **True** 분기 합니다.  
   
 ### <a name="expression-editing"></a>식 편집  
  기본적으로 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]의 식 편집기에는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 텍스트 편집을 위한 기본 바로 가기 키가 적용되며 다음과 같은 제한 사항이 있습니다.  

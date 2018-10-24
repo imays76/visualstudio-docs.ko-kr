@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a3fffb36d7070701b99382c320e3a2d23b9a2b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893405"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Visual Studio에서 엔터티 데이터 모델 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,20 +38,20 @@ Entity Framework는.NET 개발자가 도메인별 개체를 사용 하 여 관�
   
  다음은 Visual Studio 2015에서 엔터티 데이터 모델 도구를 구성 하는 특정 도구입니다.  
   
--   사용할 수는 [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] 디자이너** (**Entity Designer**)를 시각적으로 만들고 엔터티, 연결, 매핑 및 상속 관계를 수정 합니다. 합니다 **Entity Designer** 경우에 생성 [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] 또는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 개체 계층 코드입니다.  
+- 사용할 수는 [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] 디자이너** (**Entity Designer**)를 시각적으로 만들고 엔터티, 연결, 매핑 및 상속 관계를 수정 합니다. 합니다 **Entity Designer** 경우에 생성 [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] 또는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 개체 계층 코드입니다.  
   
--   사용할 수는  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] 마법사** 기존 데이터베이스에서 개념적 모델을 생성 하 여 응용 프로그램에 데이터베이스 연결 정보를 추가 합니다.  
+- 사용할 수는  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] 마법사** 기존 데이터베이스에서 개념적 모델을 생성 하 여 응용 프로그램에 데이터베이스 연결 정보를 추가 합니다.  
   
--   사용할 수는 **데이터베이스 만들기 마법사** 를 먼저 개념적 모델을 만든 다음 모델을 지 원하는 데이터베이스를 만듭니다.  
+- 사용할 수는 **데이터베이스 만들기 마법사** 를 먼저 개념적 모델을 만든 다음 모델을 지 원하는 데이터베이스를 만듭니다.  
   
--   사용할 수는 **모델 업데이트 마법사** 기본 데이터베이스가 변경 된 경우에 개념적 모델, 저장소 모델 및 매핑을 업데이트 합니다.  
+- 사용할 수는 **모델 업데이트 마법사** 기본 데이터베이스가 변경 된 경우에 개념적 모델, 저장소 모델 및 매핑을 업데이트 합니다.  
   
-    > [!NOTE]
-    >  Visual Studio 2010부터 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] 도구가 지원 하지 않습니다 [!INCLUDE[ss2k](../includes/ss2k-md.md)]합니다.  
+  > [!NOTE]
+  >  Visual Studio 2010부터 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] 도구가 지원 하지 않습니다 [!INCLUDE[ss2k](../includes/ss2k-md.md)]합니다.  
   
- 도구 생성 하거나.edmx 파일을 수정 합니다. 이 파일에는 개념적 모델, 저장소 모델 간의 매핑을 설명 하는 정보가 들어 있습니다. 자세한 내용은 [EDMX](https://msdn.microsoft.com/data/jj650889.aspx)합니다.  
+  도구 생성 하거나.edmx 파일을 수정 합니다. 이 파일에는 개념적 모델, 저장소 모델 간의 매핑을 설명 하는 정보가 들어 있습니다. 자세한 내용은 [EDMX](https://msdn.microsoft.com/data/jj650889.aspx)합니다.  
   
- Entity Framework 파워 도구에서는 엔터티 데이터 모델을 사용 하는 응용 프로그램을 빌드할 수 있습니다. 도구 수 개념적 모델을 생성, 기존 모델의 유효성을 검사, 개념적 모델을 기반으로 하는 개체 클래스가 포함 된 소스 코드 파일을 생성 및 모델을 생성 하는 뷰가 포함 된 소스 코드 파일을 생성 합니다. 자세한 내용은 [Pre-Generated 매핑 뷰](https://msdn.microsoft.com/data/dn469601.aspx)합니다.  
+  Entity Framework 파워 도구에서는 엔터티 데이터 모델을 사용 하는 응용 프로그램을 빌드할 수 있습니다. 도구 수 개념적 모델을 생성, 기존 모델의 유효성을 검사, 개념적 모델을 기반으로 하는 개체 클래스가 포함 된 소스 코드 파일을 생성 및 모델을 생성 하는 뷰가 포함 된 소스 코드 파일을 생성 합니다. 자세한 내용은 [Pre-Generated 매핑 뷰](https://msdn.microsoft.com/data/dn469601.aspx)합니다.  
   
 ## <a name="related-topics"></a>관련 항목  
   

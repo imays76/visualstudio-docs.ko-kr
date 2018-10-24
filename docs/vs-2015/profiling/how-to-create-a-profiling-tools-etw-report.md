@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ccffb796b32313f9b7e48e1a61e5625085d3078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 84556a47fe352054255a331c2e689d519c217f63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891851"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>방법: 프로파일링 도구 ETW 보고서 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ETW(Windows용 이벤트 추적) 보고서에는 [!INCLUDE[vsprvs](../includes/v
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]용 인터페이스에는 ETW 보고서를 표시할 수 없습니다.  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]용 인터페이스를 사용하여 ETW 데이터를 수집하는 방법에 대한 자세한 내용은 [방법: ETW(Windows용 이벤트 추적) 데이터 수집](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)을 참조하세요.  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]용 인터페이스를 사용하여 ETW 데이터를 수집하는 방법에 대한 자세한 내용은 [방법: ETW(Windows용 이벤트 추적) 데이터 수집](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)을 참조하세요.  
   
--   명령 프롬프트에서 ETW 데이터를 수집하는 방법에 대한 자세한 내용은 [VSPerfCmd](../profiling/vsperfcmd.md) 및 [이벤트](../profiling/events-vsperfcmd.md)를 참조하세요.  
+- 명령 프롬프트에서 ETW 데이터를 수집하는 방법에 대한 자세한 내용은 [VSPerfCmd](../profiling/vsperfcmd.md) 및 [이벤트](../profiling/events-vsperfcmd.md)를 참조하세요.  
   
- **VSReport/summary:etw** 명령을 사용하여 ETW 보고서를 생성합니다. ETW 데이터를 포함하는 .etl은 프로파일링 데이터(.vsp 또는 .vsps) 파일과 동일한 디렉터리에 있어야 합니다. 기본적으로 이 보고서는 쉼표로 구분된 값(.csv) 파일로 생성됩니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.  
+  **VSReport/summary:etw** 명령을 사용하여 ETW 보고서를 생성합니다. ETW 데이터를 포함하는 .etl은 프로파일링 데이터(.vsp 또는 .vsps) 파일과 동일한 디렉터리에 있어야 합니다. 기본적으로 이 보고서는 쉼표로 구분된 값(.csv) 파일로 생성됩니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.  
   
 ### <a name="to-generate-an-etw-report"></a>ETW 보고서를 생성하려면  
   
