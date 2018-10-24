@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e452b0e1ab6de862723cfdc36f7b7226a01d676
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e7872b7d697d0989f0efb9985a8b1b253a27322
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854613"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 이름이 지정 된 사용자 지정 특성을 검색 합니다.  
@@ -47,16 +47,16 @@ int GetCustomAttributeByName(
  [in] 사용자 지정 특성의 이름입니다.  
   
  `ppBlob`  
- [out에서] 사용자 지정 특성 데이터를 포함 하는 바이트 배열입니다.  
+ [out에서] 사용자 지정 특성 데이터가 포함 된 바이트 배열입니다.  
   
  `pdwLen`  
  [out] 바이트의 길이 `ppBlob` 매개 변수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 사용자 지정 특성이 없는 경우 반환 `S_FALSE`합니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공 하면 반환 `S_OK`합니다. 사용자 지정 특성이 없으면 반환 `S_FALSE`합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugClassFieldSymbol** 공개 하는 개체는 [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugClassFieldSymbol** 노출 하는 개체를 [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(  

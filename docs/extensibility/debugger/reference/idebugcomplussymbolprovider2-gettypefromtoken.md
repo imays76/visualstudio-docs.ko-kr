@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e0860ae08332f364e707dcde70b345ce4dae181
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c514df27914ed0c40239e6d06130ab7df25d07c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858331"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-해당 토큰이 지정 된 형식을 검색 합니다.  
+해당 토큰을 지정 하는 형식을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -55,13 +55,13 @@ int GetTypeFromToken(
  [in] 검색할 형식의 토큰입니다.  
   
  `ppField`  
- [out] 나타내는 형식을 반환는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)합니다.  
+ [out] 나타내는 형식을 반환 합니다 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 공개 하는 개체는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetTypeFromToken(  

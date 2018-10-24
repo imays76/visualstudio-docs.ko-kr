@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 120bf38afbf05f367757de3a5e453cab8b4311b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43c8c7dcba7ea1125c031f0cc64a902d88f67017
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849430"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-식 계산을 제어 하는 플래그에 대 한 유효한 값을 열거 합니다. 이 열거형 확장는 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 열거 합니다.  
+식 계산을 제어 하는 플래그에 대 한 유효한 값을 열거 합니다. 이 열거형을 확장 합니다 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 열거형입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -66,7 +66,7 @@ public enum enum_EVALFLAGS90
   
 #### <a name="parameters"></a>매개 변수  
  EVAL90_RETURNVALUE  
- 있는 경우 반환 값을 평가할 지정 합니다.  
+ 있는 경우 반환 값을 평가 하는 것을 지정 합니다.  
   
  EVAL90_NOSIDEEFFECTS  
  파생 작업이 허용 되지 않음을 지정 합니다.  
@@ -75,25 +75,25 @@ public enum enum_EVALFLAGS90
  중단점에서 중지를 지정합니다.  
   
  EVAL90_ALLOWERRORREPORT  
- 해당 오류를 사용 하려면 호스트에 보고를 지정 합니다. Internet Explorer에서 스크립트에서 식 평가에 주로 사용 됩니다.  
+ 해당 오류 수를 보고 호스트를 지정 합니다. Internet Explorer에서 스크립트의 식 평가 위해 주로 사용 됩니다.  
   
  EVAL90_FUNCTION_AS_ADDRESS  
- 함수를 호출 하는 대신 주소로 평가 될 강제로 함수입니다.  
+ 함수를 호출 하는 대신 주소로 평가할 강제로 함수입니다.  
   
  EVAL90_NOFUNCEVAL  
- 확인할 함수를 방지 합니다. 예를 들어는 `int` 식에 토큰 `myExpression(int) + 10`합니다. 이 함수는 주소로 시 키 지 않고 값을 올바르게 평가할 수 있습니다.  
+ 함수를에서 확인할 수 없습니다. 예를 들어 합니다 `int` 식에서 토큰 `myExpression(int) + 10`합니다. 이 함수는 주소로 아니지만 값을 올바르게 평가할 수 있습니다.  
   
  EVAL90_NOEVENTS  
- 식 평가 중 발생 하는 이벤트 보내지 않아야 세션 디버그 관리자 (SDM) 또는 IDE에 표시 하는 플래그입니다.  
+ 식 평가 중 발생 하는 이벤트를 보내지 세션 디버그 관리자 (SDM) 또는 IDE를 표시 하는 플래그입니다.  
   
  EVAL90_DESIGN_TIME_EXPR_EVAL  
  디자인 타임 식 계산을 사용 하도록 설정 합니다.  
   
  EVAL90_ALLOW_IMPLICIT_VARS  
- 암시적 변수 만들기를 허용 합니다.  
+ 암시적 변수 만들 수 있도록 허용 합니다.  
   
  EVAL90_FORCE_EVALUATION_NOW  
- 즉시 실행 되도록 평가 수행 하도록 합니다. 사용자 요청과 같은 요청을 처리 하는 경우에 유용 합니다.  
+ 즉시 실행 되도록 강제로 평가 합니다. 사용자 요청과 같이 요청을 서비스 하는 경우에 유용 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: Msdbg90.h  

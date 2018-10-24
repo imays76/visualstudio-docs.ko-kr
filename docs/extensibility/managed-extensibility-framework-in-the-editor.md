@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d107b1b55808149f480629b8a06f981598a992
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a5ea47032ed2c5e4fb9b99afb214e068ca39d692
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857525"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>편집기에서 managed Extensibility Framework
 편집기는 프레임 워크 MEF (Managed Extensibility) 구성 요소를 사용 하 여 빌드됩니다. 사용자 고유의 MEF 구성 요소 편집기를 확장을 빌드하고 코드 편집기 구성 요소도 사용할 수 있습니다.  
@@ -33,13 +33,13 @@ ms.locfileid: "39638608"
 ### <a name="component-parts-and-composition-containers"></a>구성 요소 및 컴퍼지션 컨테이너  
  구성 요소 부분은 다음 중 하나 (또는 둘 다)를 수행할 수 있는 클래스의 멤버 이거나 클래스:  
   
--   다른 구성 요소를 사용 합니다.  
+- 다른 구성 요소를 사용 합니다.  
   
--   다른 구성 요소에서 사용할 수  
+- 다른 구성 요소에서 사용할 수  
   
- 예를 들어 쇼핑 응용 프로그램을 웨어하우스 인벤토리 구성 요소에 의해 제공 되는 제품 가용성 데이터에 의존 하는 주문 항목 구성 요소가 있는 것이 좋습니다. MEF 관점에서 인벤토리 파트 수 *내보낼* 제품 가용성 데이터 및 주문 항목 파트 수 있습니다 *가져오기* 데이터입니다. 주문 항목 부분과 인벤토리 부분; 서로에 대해 알아야 할 없는 합니다 *컴퍼지션 컨테이너* (호스트 응용 프로그램에서 제공) 내보내기 집합을 유지 하 고 내보내기를 해결을 담당 하 고 가져옵니다.  
+  예를 들어 쇼핑 응용 프로그램을 웨어하우스 인벤토리 구성 요소에 의해 제공 되는 제품 가용성 데이터에 의존 하는 주문 항목 구성 요소가 있는 것이 좋습니다. MEF 관점에서 인벤토리 파트 수 *내보낼* 제품 가용성 데이터 및 주문 항목 파트 수 있습니다 *가져오기* 데이터입니다. 주문 항목 부분과 인벤토리 부분; 서로에 대해 알아야 할 없는 합니다 *컴퍼지션 컨테이너* (호스트 응용 프로그램에서 제공) 내보내기 집합을 유지 하 고 내보내기를 해결을 담당 하 고 가져옵니다.  
   
- 컴퍼지션 컨테이너 <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, 호스트에서 일반적으로 소유 합니다. 컴퍼지션 컨테이너를 유지 관리를 *카탈로그* 내보낸된 구성 요소입니다.  
+  컴퍼지션 컨테이너 <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, 호스트에서 일반적으로 소유 합니다. 컴퍼지션 컨테이너를 유지 관리를 *카탈로그* 내보낸된 구성 요소입니다.  
   
 ### <a name="export-and-import-component-parts"></a>구성 요소 부분을 가져오고 내보내려면  
  공용 클래스 또는 클래스 (속성 또는 메서드)의 공용 멤버 함수로 구현으로 모든 기능을 내보낼 수 있습니다. 에 구성 요소 파트에서 파생 시킬 필요가 없습니다 <xref:System.ComponentModel.Composition.Primitives.ComposablePart>합니다. 대신 추가 해야 합니다는 <xref:System.ComponentModel.Composition.ExportAttribute> 클래스 또는 클래스 멤버를 내보내려는 특성입니다. 이 특성은 지정 된 *계약* 파트는 다른 구성 요소에서 기능을 가져올 수 있습니다.  

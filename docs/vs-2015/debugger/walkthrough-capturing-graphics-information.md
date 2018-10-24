@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d76c3e2b6caada74deb6d7c99dead93b0cf7e65c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825328"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>연습: 그래픽 정보 캡처
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,23 +43,23 @@ ms.locfileid: "49273015"
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>프로젝트 또는 솔루션을 로드하지 않고 그래픽 정보 캡처를 사용하도록 설정하려면  
   
-1.  메뉴 모음에서 **파일**, **열기**, **프로젝트/솔루션**을 선택합니다. **프로젝트 열기** 대화 상자가 나타납니다.  
+1. 메뉴 모음에서 **파일**, **열기**, **프로젝트/솔루션**을 선택합니다. **프로젝트 열기** 대화 상자가 나타납니다.  
   
-2.  프로젝트 또는 솔루션 파일 대신, 그래픽 정보를 캡처할 앱용 실행 파일을 지정한 후 **열기**를 선택합니다.  
+2. 프로젝트 또는 솔루션 파일 대신, 그래픽 정보를 캡처할 앱용 실행 파일을 지정한 후 **열기**를 선택합니다.  
   
-3.  메뉴 모음에서 **디버그**, **그래픽**, **진단 시작**을 선택합니다.  
+3. 메뉴 모음에서 **디버그**, **그래픽**, **진단 시작**을 선택합니다.  
   
- 응용 프로그램을 시작하고 프레임을 렌더링한 후 그래픽 정보를 캡처할 수 있습니다.  
+   응용 프로그램을 시작하고 프레임을 렌더링한 후 그래픽 정보를 캡처할 수 있습니다.  
   
 #### <a name="to-capture-graphics-information"></a>그래픽 정보를 캡처하려면  
   
--   그래픽 진단 도구 모음에서 **캡처** 단추를 선택합니다. ![그래픽 캡처 단추 아이콘](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+- 그래픽 진단 도구 모음에서 **캡처** 단추를 선택합니다. ![그래픽 캡처 단추 아이콘](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-     또는  
+   또는  
   
-     앱에 포커스가 있는 상태에서 **Print Screen**을 누릅니다.  
+   앱에 포커스가 있는 상태에서 **Print Screen**을 누릅니다.  
   
- 프레임에 대한 정보를 캡처할 때마다 그래픽 진단 기능은 Direct3D 이벤트와 연결된 상태를 기록하고 그래픽 로그에 해당 데이터를 추가합니다. 각 그래픽 진단 세션에 대해 새 그래픽 로그가 생성됩니다. 그래픽 로그에 대 한 자세한 내용은 [개요](../debugger/overview-of-visual-studio-graphics-diagnostics.md)합니다.  
+  프레임에 대한 정보를 캡처할 때마다 그래픽 진단 기능은 Direct3D 이벤트와 연결된 상태를 기록하고 그래픽 로그에 해당 데이터를 추가합니다. 각 그래픽 진단 세션에 대해 새 그래픽 로그가 생성됩니다. 그래픽 로그에 대 한 자세한 내용은 [개요](../debugger/overview-of-visual-studio-graphics-diagnostics.md)합니다.  
   
 ## <a name="next-steps"></a>다음 단계  
  이 연습에서는 그래픽 정보를 수동으로 캡처하는 방법을 보여 주었습니다. 다음 단계로 아래 옵션을 고려해 보세요.  

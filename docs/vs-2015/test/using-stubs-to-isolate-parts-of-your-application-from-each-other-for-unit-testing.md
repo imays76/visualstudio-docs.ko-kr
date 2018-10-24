@@ -13,12 +13,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853186"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 유닛 테스트를 위한 응용 프로그램의 여러 부분을 서로 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,13 +125,13 @@ End Function
   
  인터페이스 삽입은 다음과 같은 규칙을 적용합니다.  
   
--   응용 프로그램의 구성 요소 코드는 선언 또는 `new` 문에서 다른 구성 요소의 클래스를 명시적으로 참조하면 안 됩니다. 대신, 변수 및 매개 변수는 인터페이스를 사용하여 선언해야 합니다. 구성 요소 인스턴스는 구성 요소 컨테이너로만 만들 수 있습니다.  
+- 응용 프로그램의 구성 요소 코드는 선언 또는 `new` 문에서 다른 구성 요소의 클래스를 명시적으로 참조하면 안 됩니다. 대신, 변수 및 매개 변수는 인터페이스를 사용하여 선언해야 합니다. 구성 요소 인스턴스는 구성 요소 컨테이너로만 만들 수 있습니다.  
   
-     이 경우 "구성 요소"란 함께 개발하고 업데이트하는 클래스 또는 클래스의 그룹을 의미합니다. 일반적으로 구성 요소는 Visual Studio 프로젝트의 코드입니다. 한 구성 요소 안에 있는 클래스는 동시에 업데이트되므로 결합을 해제하는 것은 그보다 중요하지 않습니다.  
+   이 경우 "구성 요소"란 함께 개발하고 업데이트하는 클래스 또는 클래스의 그룹을 의미합니다. 일반적으로 구성 요소는 Visual Studio 프로젝트의 코드입니다. 한 구성 요소 안에 있는 클래스는 동시에 업데이트되므로 결합을 해제하는 것은 그보다 중요하지 않습니다.  
   
-     또한 System.dll과 같이 비교적 안정적 플랫폼의 클래스에서 구성 요소를 분리하는 것도 그렇게 중요하지 않습니다. 이러한 모든 클래스의 인터페이스를 작성할 경우 코드가 복잡해집니다.  
+   또한 System.dll과 같이 비교적 안정적 플랫폼의 클래스에서 구성 요소를 분리하는 것도 그렇게 중요하지 않습니다. 이러한 모든 클래스의 인터페이스를 작성할 경우 코드가 복잡해집니다.  
   
- 따라서 StockAnalyzer 코드는 다음과 같은 인터페이스로 StockFeed에서 연결을 해제하여 개선할 수 있습니다.  
+  따라서 StockAnalyzer 코드는 다음과 같은 인터페이스로 StockFeed에서 연결을 해제하여 개선할 수 있습니다.  
   
 ```csharp  
 public interface IStockFeed  

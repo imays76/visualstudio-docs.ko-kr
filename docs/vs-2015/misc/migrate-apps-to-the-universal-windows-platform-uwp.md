@@ -14,27 +14,27 @@ caps.latest.revision: 19
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a23cdd24ad696795127a4469c447f12e9d191930
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d59ccac2ef8f91fae9bede5951ff42ec5a43be0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848555"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)로 앱 마이그레이션
 필요한 경우 Windows 스토어 8.1 앱, Windows Phone 8.1 앱 또는 Visual Studio 2015 RC로 만든 유니버설 Windows 앱에 대한 기존 프로젝트 파일을 수동으로 변경하면 Visual Studio 2015 RTM과 함께 사용할 수 있습니다. Windows 앱 프로젝트 및 Windows Phone 프로젝트를 둘 다 포함하는 Windows 8.1 유니버설 앱이 있는 경우 각 프로젝트를 마이그레이션하는 단계를 따라야 합니다.  
   
  이제 유니버설 Windows 플랫폼을 사용할 경우 하나 이상의 장치 제품군을 앱의 대상으로 지정합니다. 유니버설 Windows 앱에 대한 자세한 내용은 이 [플랫폼 가이드](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx)(영문)를 참조하세요.  
   
--   유니버설 Windows 플랫폼을 사용하려면[기존 C#/VB Windows 스토어 8.1 또는 Windows Phone 8.1 앱을 마이그레이션](#MigrateCSharp) 합니다.  
+- 유니버설 Windows 플랫폼을 사용하려면[기존 C#/VB Windows 스토어 8.1 또는 Windows Phone 8.1 앱을 마이그레이션](#MigrateCSharp) 합니다.  
   
--   유니버설 Windows 플랫폼을 사용하려면[기존 C++ Windows 스토어 8.1 또는 Windows Phone 8.1 앱을 마이그레이션](#MigrateCPlusPlus) 합니다.  
+- 유니버설 Windows 플랫폼을 사용하려면[기존 C++ Windows 스토어 8.1 또는 Windows Phone 8.1 앱을 마이그레이션](#MigrateCPlusPlus) 합니다.  
   
--   [Visual Studio 2015 RC로 만든 기존 유니버설 Windows 앱에 필요한 변경 내용](#PreviousVersions)  
+- [Visual Studio 2015 RC로 만든 기존 유니버설 Windows 앱에 필요한 변경 내용](#PreviousVersions)  
   
--   [Visual Studio 2015 RC로 만든 유니버설 Windows 앱의 기존 단위 테스트 프로젝트에 필요한 변경 내용](#MigrateUnitTest)  
+- [Visual Studio 2015 RC로 만든 유니버설 Windows 앱의 기존 단위 테스트 프로젝트에 필요한 변경 내용](#MigrateUnitTest)  
   
- 이러한 모든 변경 내용을 적용하지 않으려면 새 유니버설 Windows 프로젝트에 [기존 앱을 포팅](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 하는 방법을 알아보세요.  
+  이러한 모든 변경 내용을 적용하지 않으려면 새 유니버설 Windows 프로젝트에 [기존 앱을 포팅](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 하는 방법을 알아보세요.  
   
 ##  <a name="MigrateCSharp"></a> 유니버설 Windows 플랫폼을 사용 하려면 C# /VB Windows 스토어 8.1 또는 Windows Phone 8.1 앱 마이그레이션  
   
@@ -333,121 +333,121 @@ ms.locfileid: "49285950"
   
 #### <a name="update-your-package-manifest-file"></a>패키지 매니페스트 파일 업데이트  
   
-1.  프로젝트에서 Package.appxmanifest 파일을 엽니다. 각 Windows 스토어 및 Windows Phone 프로젝트에 대해 Package.AppxManifest 파일을 편집해야 합니다.  
+1. 프로젝트에서 Package.appxmanifest 파일을 엽니다. 각 Windows 스토어 및 Windows Phone 프로젝트에 대해 Package.AppxManifest 파일을 편집해야 합니다.  
   
-2.  업데이트 해야 합니다 \<패키지 > 기존 프로젝트 형식에 따라 새 스키마를 사용 하 여 요소입니다. 먼저 Windows 스토어 또는 Windows Phone 프로젝트가 있는지 여부에 따라 아래 스키마를 제거합니다.  
+2. 업데이트 해야 합니다 \<패키지 > 기존 프로젝트 형식에 따라 새 스키마를 사용 하 여 요소입니다. 먼저 Windows 스토어 또는 Windows Phone 프로젝트가 있는지 여부에 따라 아래 스키마를 제거합니다.  
   
-     **Windows 스토어 프로젝트의 경우 OLD:** 여 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
+    **Windows 스토어 프로젝트의 경우 OLD:** 여 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
-        xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
+       xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">  
   
-    ```  
+   ```  
   
-     **Windows Phone 프로젝트의 경우 OLD:** 여 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
+    **Windows Phone 프로젝트의 경우 OLD:** 여 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
-    xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"  
-    xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"  
-    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
-    ```  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/2010/manifest"     
+   xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"  
+   xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"  
+   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
+   ```  
   
-     **유니버설 Windows 플랫폼의 새로운 기능:** 아래 스키마를 추가 하면 \<패키지 > 요소입니다. 방금 제거한 스키마에 대한 요소에서 연결된 네임스페이스 식별자 접두사를 모두 제거합니다. IgnorableNamespaces 속성을 uap mp로 업데이트합니다. 새 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
+    **유니버설 Windows 플랫폼의 새로운 기능:** 아래 스키마를 추가 하면 \<패키지 > 요소입니다. 방금 제거한 스키마에 대한 요소에서 연결된 네임스페이스 식별자 접두사를 모두 제거합니다. IgnorableNamespaces 속성을 uap mp로 업데이트합니다. 새 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
   
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"  
-        xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"  
-        xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"  
-       IgnorableNamespaces= "uap mp">  
+   ```xml  
+   <Package  
+       xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"  
+       xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"  
+       xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"  
+      IgnorableNamespaces= "uap mp">  
   
-    ```  
+   ```  
   
-3.  추가 된 \<종속성 > 자식 요소를는 \<패키지 > 요소입니다. 다음 추가 \<TargetDeviceFamily > 자식 요소를이 \<종속성 > Name, MinVersion 및 MaxVersionTested 특성을 가진 요소입니다. Name 특성에 Windows.Universal 값을 지정합니다. MinVersion 및 MaxVersionTested에 설치한 유니버설 Windows 플랫폼 버전 값을 지정합니다. 이 요소는 다음과 유사하게 표시됩니다.  
+3. 추가 된 \<종속성 > 자식 요소를는 \<패키지 > 요소입니다. 다음 추가 \<TargetDeviceFamily > 자식 요소를이 \<종속성 > Name, MinVersion 및 MaxVersionTested 특성을 가진 요소입니다. Name 특성에 Windows.Universal 값을 지정합니다. MinVersion 및 MaxVersionTested에 설치한 유니버설 Windows 플랫폼 버전 값을 지정합니다. 이 요소는 다음과 유사하게 표시됩니다.  
   
-    ```xml  
-    <Dependencies>  
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />  
-    </Dependencies>  
-    ```  
+   ```xml  
+   <Dependencies>  
+   <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />  
+   </Dependencies>  
+   ```  
   
-4.  **Windows 저장소만:** 에 추가 해야를 \<mp:PhoneIdentity > 자식 요소를는 \<패키지 > 요소입니다. PhoneProductId 특성 및 PhonePublisherId 특성을 추가합니다. PhoneProductId를 같은 이름 특성 값을 설정 합니다 \<Identity > 요소입니다. PhonePublishedId 값을 00000000-0000-0000-0000-000000000000으로 설정합니다. 다음과 같습니다.  
+4. **Windows 저장소만:** 에 추가 해야를 \<mp:PhoneIdentity > 자식 요소를는 \<패키지 > 요소입니다. PhoneProductId 특성 및 PhonePublisherId 특성을 추가합니다. PhoneProductId를 같은 이름 특성 값을 설정 합니다 \<Identity > 요소입니다. PhonePublishedId 값을 00000000-0000-0000-0000-000000000000으로 설정합니다. 다음과 같습니다.  
   
-    ```xml  
-    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
-    <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>  
-    ```  
+   ```xml  
+   <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
+   <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>  
+   ```  
   
-5.  찾기는 \<필수 구성 요소 > 요소가이 요소와 해당 자식 요소를 삭제 합니다.  
+5. 찾기는 \<필수 구성 요소 > 요소가이 요소와 해당 자식 요소를 삭제 합니다.  
   
-6.  추가 된 **uap** 다음 네임 스페이스 \<리소스 > 요소: Scale, DXFeatureLevel. 예를 들어:  
+6. 추가 된 **uap** 다음 네임 스페이스 \<리소스 > 요소: Scale, DXFeatureLevel. 예를 들어:  
   
-    ```xml  
-    <Resources>  
-      <Resource Language="en-us"/>  
-     <Resource uap:Scale="180"/>  
-     <Resource uap:DXFeatureLevel="dx11"/>  
-    </Resources>  
+   ```xml  
+   <Resources>  
+     <Resource Language="en-us"/>  
+    <Resource uap:Scale="180"/>  
+    <Resource uap:DXFeatureLevel="dx11"/>  
+   </Resources>  
   
-    ```  
+   ```  
   
-7.  추가 된 **uap** 다음 네임 스페이스 \<기능 > 요소: documentsLibrary, picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates, removableStorage, appointments 및 contacts입니다. 예를 들어:  
+7. 추가 된 **uap** 다음 네임 스페이스 \<기능 > 요소: documentsLibrary, picturesLibrary, videosLibrary, musicLibrary, enterpriseAuthentication, sharedUserCertificates, removableStorage, appointments 및 contacts입니다. 예를 들어:  
   
-    ```xml  
-    <Capabilities>  
-      <uap:Capability Name="documentsLibrary"/>  
-      <uap:Capability Name="removableStorage"/>  
-    </Capabilities>  
+   ```xml  
+   <Capabilities>  
+     <uap:Capability Name="documentsLibrary"/>  
+     <uap:Capability Name="removableStorage"/>  
+   </Capabilities>  
   
-    ```  
+   ```  
   
-8.  추가 합니다 **uap** 네임 스페이스는 \<VisualElements > 요소 및 해당 자식 요소입니다. 예를 들어:  
+8. 추가 합니다 **uap** 네임 스페이스는 \<VisualElements > 요소 및 해당 자식 요소입니다. 예를 들어:  
   
-    ```xml  
-    <uap:VisualElements  
-        DisplayName="My WWA App"  
-        Square150x150Logo="images/150x150.png"  
-        Square44x44Logo="images/44x44.png"  
-        Description="My WWA App"  
-        BackgroundColor="#777777">  
-      <uap:SplashScreen Image="images/splash.png"/>  
-    </uap:VisualElements>  
+   ```xml  
+   <uap:VisualElements  
+       DisplayName="My WWA App"  
+       Square150x150Logo="images/150x150.png"  
+       Square44x44Logo="images/44x44.png"  
+       Description="My WWA App"  
+       BackgroundColor="#777777">  
+     <uap:SplashScreen Image="images/splash.png"/>  
+   </uap:VisualElements>  
   
-    ```  
+   ```  
   
-     **Windows 스토어만 해당:** 타일 크기 이름이 변경되었습니다. 특성을 변경 합니다 \<VisualElements > 새 맞게 요소 타일 크기를 수렴 합니다. 70x70은 71x71이 되고, 30x30은 44x44가 됩니다.  
+    **Windows 스토어만 해당:** 타일 크기 이름이 변경되었습니다. 특성을 변경 합니다 \<VisualElements > 새 맞게 요소 타일 크기를 수렴 합니다. 70x70은 71x71이 되고, 30x30은 44x44가 됩니다.  
   
-     **OLD:** 타일 크기 이름  
+    **OLD:** 타일 크기 이름  
   
-    ```xml  
-    <m2:VisualElements  
-        …  
-        Square30x30Logo="Assets\SmallLogo.png"  
-        …>  
-     <m2:DefaultTile  
-          …  
-          Square70x70Logo="images/70x70.png">  
-    </m2:VisualElements>  
+   ```xml  
+   <m2:VisualElements  
+       …  
+       Square30x30Logo="Assets\SmallLogo.png"  
+       …>  
+    <m2:DefaultTile  
+         …  
+         Square70x70Logo="images/70x70.png">  
+   </m2:VisualElements>  
   
-    ```  
+   ```  
   
-     **NEW:** 타일 크기 이름  
+    **NEW:** 타일 크기 이름  
   
-    ```xml  
-    <uap:VisualElements  
-        …  
-        Square44x44Logo="Assets\SmallLogo.png"  
-        …>  
-     <uap:DefaultTile  
-          …  
-          Square71x71Logo="images/70x70.png">  
-    </uap:VisualElements>  
+   ```xml  
+   <uap:VisualElements  
+       …  
+       Square44x44Logo="Assets\SmallLogo.png"  
+       …>  
+    <uap:DefaultTile  
+         …  
+         Square71x71Logo="images/70x70.png">  
+   </uap:VisualElements>  
   
-    ```  
+   ```  
   
 9. 추가 합니다 **uap** 네임 스페이스는 \<ApplicationContentUriRules >와 모든 자식 요소입니다. 예를 들어:  
   
@@ -563,28 +563,28 @@ ms.locfileid: "49285950"
   
 15. 사용되지 않는 요소를 모두 제거합니다.  
   
-    1.  이러한 특성에 대 한 \<VisualElements >는 사용 되지 않으며 제거 해야 합니다.  
+    1. 이러한 특성에 대 한 \<VisualElements >는 사용 되지 않으며 제거 해야 합니다.  
   
-        -   \<VisualElements > 특성: ForegroundText, ToastCapable  
+       - \<VisualElements > 특성: ForegroundText, ToastCapable  
   
-        -   \<DefaultTile > 특성 DefaultSize  
+       - \<DefaultTile > 특성 DefaultSize  
   
-        -   \<ApplicationView > 요소  
+       - \<ApplicationView > 요소  
   
          예를 들어:  
   
-        ```xml  
-        <m2:VisualElements  
-            …  
-            ForegroundText="dark"  
-            ToastCapable="true">  
-        <m2:DefaultTile DefaultSize="square150x150Logo"/>  
-          <m2:ApplicationView MinWidth="width320"/>  
-        </m2:VisualElements>  
+       ```xml  
+       <m2:VisualElements  
+           …  
+           ForegroundText="dark"  
+           ToastCapable="true">  
+       <m2:DefaultTile DefaultSize="square150x150Logo"/>  
+         <m2:ApplicationView MinWidth="width320"/>  
+       </m2:VisualElements>  
   
-        ```  
+       ```  
   
-    2.  Windows.contact 및 windows.contactPicker 확장과 이러한 확장 아래의 모든 요소를 제거합니다.  
+    2. Windows.contact 및 windows.contactPicker 확장과 이러한 확장 아래의 모든 요소를 제거합니다.  
   
 16. Package.appxmanifest 파일을 저장합니다. Visual Studio를 닫습니다.  
   
@@ -618,113 +618,113 @@ ms.locfileid: "49285950"
   
 ##### <a name="update-your-cvb-projects-to-use-the-latest-universal-windows-platform"></a>최신 유니버설 Windows 플랫폼을 사용하도록 C#/VB 프로젝트 업데이트  
   
-1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 장치에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
+1. 설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 장치에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
   
-     ![설치 된 버전을 보려면 폴더를 엽니다](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
+    ![설치 된 버전을 보려면 폴더를 엽니다](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
-     유니버설 Windows 플랫폼 버전을 두 개 이상 설치할 수 있습니다. 최신 버전을 앱에 사용하는 것이 좋습니다.  
+    유니버설 Windows 플랫폼 버전을 두 개 이상 설치할 수 있습니다. 최신 버전을 앱에 사용하는 것이 좋습니다.  
   
-2.  파일 탐색기를 사용하여 UWP 프로젝트가 저장되어 있는 폴더로 이동합니다. packages.config 파일을 삭제하고 이 폴더에 새 .json 파일을 만듭니다. 파일의 이름을 project.json으로 지정하고 이 파일에 다음 콘텐츠를 추가합니다.  
+2. 파일 탐색기를 사용하여 UWP 프로젝트가 저장되어 있는 폴더로 이동합니다. packages.config 파일을 삭제하고 이 폴더에 새 .json 파일을 만듭니다. 파일의 이름을 project.json으로 지정하고 이 파일에 다음 콘텐츠를 추가합니다.  
   
-    ```json  
+   ```json  
   
-    {  
-      "dependencies": {  
-        "Microsoft.ApplicationInsights": "1.0.0",  
-        "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",  
-        "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",  
-        "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"  
-      },  
-      "frameworks": {  
-        "uap10.0": {}  
-      },  
-      "runtimes": {  
-        "win10-arm": {},  
-        "win10-arm-aot": {},  
-        "win10-x86": {},  
-        "win10-x86-aot": {},  
-        "win10-x64": {},  
-        "win10-x64-aot": {}  
-      }  
-    }  
+   {  
+     "dependencies": {  
+       "Microsoft.ApplicationInsights": "1.0.0",  
+       "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",  
+       "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",  
+       "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"  
+     },  
+     "frameworks": {  
+       "uap10.0": {}  
+     },  
+     "runtimes": {  
+       "win10-arm": {},  
+       "win10-arm-aot": {},  
+       "win10-x86": {},  
+       "win10-x86-aot": {},  
+       "win10-x64": {},  
+       "win10-x64-aot": {}  
+     }  
+   }  
   
-    ```  
+   ```  
   
-3.  Visual Studio에서 C#/VB 유니버설 Windows 앱을 포함하는 솔루션을 엽니다. 프로젝트 파일(.csproj 또는 .vbproj 파일)을 업데이트해야 한다고 표시됩니다. 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 이 파일을 편집하도록 선택합니다.  
+3. Visual Studio에서 C#/VB 유니버설 Windows 앱을 포함하는 솔루션을 엽니다. 프로젝트 파일(.csproj 또는 .vbproj 파일)을 업데이트해야 한다고 표시됩니다. 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 이 파일을 편집하도록 선택합니다.  
   
-     ![프로젝트를 마우스 오른쪽 단추로 클릭 하 고 편집을 선택 합니다](../misc/media/uap-editproject.png "UAP_EditProject")  
+    ![프로젝트를 마우스 오른쪽 단추로 클릭 하 고 편집을 선택 합니다](../misc/media/uap-editproject.png "UAP_EditProject")  
   
-4.  찾을 합니다 \<PropertyGroup > 포함 하는 요소는 \<TargetPlatformVersion > 및 \<TargetPlatformMinVersion > 요소입니다. 기존 값을 변경 합니다 \<TargetPlatformVersion > 및 \<TargetPlatformMinVersion > 요소를 설치한 유니버설 Windows 플랫폼의 동일한 버전 이어야 합니다.  
+4. 찾을 합니다 \<PropertyGroup > 포함 하는 요소는 \<TargetPlatformVersion > 및 \<TargetPlatformMinVersion > 요소입니다. 기존 값을 변경 합니다 \<TargetPlatformVersion > 및 \<TargetPlatformMinVersion > 요소를 설치한 유니버설 Windows 플랫폼의 동일한 버전 이어야 합니다.  
   
-     유니버설 Windows 앱의 기본 자산 배율은 200입니다. 추가 해야 Visual Studio 2015 RC 포함 된 자산에 배율이 100을 사용 하 여 만든 프로젝트는 \<UapDefaultAssetScale > 100이 PropertyGroup에 값을 가진 요소입니다. [자산 및 배율](http://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
+    유니버설 Windows 앱의 기본 자산 배율은 200입니다. 추가 해야 Visual Studio 2015 RC 포함 된 자산에 배율이 100을 사용 하 여 만든 프로젝트는 \<UapDefaultAssetScale > 100이 PropertyGroup에 값을 가진 요소입니다. [자산 및 배율](http://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
   
-5.  UWP 확장 SDK(예: Windows Mobile SDK)에 참조를 추가한 경우 SDK 버전을 업데이트해야 합니다. 예를 들어 다음 \<SDKReference > 요소:  
+5. UWP 확장 SDK(예: Windows Mobile SDK)에 참조를 추가한 경우 SDK 버전을 업데이트해야 합니다. 예를 들어 다음 \<SDKReference > 요소:  
   
-    ```xml  
-    <SDKReference Include="WindowsMobile, Version=10.0.0.1">  
-          <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
-    </SDKReference>  
+   ```xml  
+   <SDKReference Include="WindowsMobile, Version=10.0.0.1">  
+         <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
+   </SDKReference>  
   
-    ```  
+   ```  
   
-     다음과 같이 변경해야 합니다.  
+    다음과 같이 변경해야 합니다.  
   
-    ```xml  
-    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">  
-          <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
-    </SDKReference>  
+   ```xml  
+   <SDKReference Include="WindowsMobile, Version=10.0.10240.0">  
+         <Name>Microsoft Mobile Extension SDK for Universal App Platform</Name>  
+   </SDKReference>  
   
-    ```  
+   ```  
   
-6.  찾기는 \<대상 > 요소 값이 있는 이름 특성을 가진: EnsureNuGetPackageBuildImports 합니다. 이 요소와 이 요소의 모든 자식을 삭제합니다.  
+6. 찾기는 \<대상 > 요소 값이 있는 이름 특성을 가진: EnsureNuGetPackageBuildImports 합니다. 이 요소와 이 요소의 모든 자식을 삭제합니다.  
   
-    ```xml  
-    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
-        <PropertyGroup>  
-          <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>  
-        </PropertyGroup>  
-        <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets'))" />  
-        <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets'))" />  
-    </Target>  
-    ```  
+   ```xml  
+   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
+       <PropertyGroup>  
+         <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>  
+       </PropertyGroup>  
+       <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets'))" />  
+       <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets'))" />  
+   </Target>  
+   ```  
   
-7.  찾기 및 삭제는 \<가져오기 > 같이 Microsoft.Diagnostics.Tracing.EventSource와 Microsoft.ApplicationInsights를 참조 하는 Project와 Condition 특성이 있는 요소:  
+7. 찾기 및 삭제는 \<가져오기 > 같이 Microsoft.Diagnostics.Tracing.EventSource와 Microsoft.ApplicationInsights를 참조 하는 Project와 Condition 특성이 있는 요소:  
   
-    ```xml  
-    <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />  
-    <Import Project="..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" />  
+   ```xml  
+   <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />  
+   <Import Project="..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\build\portable-win81+wpa81\Microsoft.ApplicationInsights.targets')" />  
   
-    ```  
+   ```  
   
-8.  찾을 합니다 \<ItemGroup > 있는 \<참조 > NuGet 패키지에 자식 요소입니다. 이 정보는 향후 단계에 필요하므로 참조되는 NuGet 패키지를 기록해 둡니다. Visual Studio 2015 RC와 Visual Studio 2015 RTM에서 Windows 10 프로젝트 형식의 중요한 한 가지 차이점은 RTM 형식이 [NuGet](http://docs.nuget.org/) 버전 3을 사용한다는 것입니다.  
+8. 찾을 합니다 \<ItemGroup > 있는 \<참조 > NuGet 패키지에 자식 요소입니다. 이 정보는 향후 단계에 필요하므로 참조되는 NuGet 패키지를 기록해 둡니다. Visual Studio 2015 RC와 Visual Studio 2015 RTM에서 Windows 10 프로젝트 형식의 중요한 한 가지 차이점은 RTM 형식이 [NuGet](http://docs.nuget.org/) 버전 3을 사용한다는 것입니다.  
   
-     제거 된 \<ItemGroup > 및 모든 자식입니다. 예를 들어 Visual Studio RC로 만든 UWP 프로젝트에서 다음과 같은 NuGet 패키지를 제거해야 합니다.  
+    제거 된 \<ItemGroup > 및 모든 자식입니다. 예를 들어 Visual Studio RC로 만든 UWP 프로젝트에서 다음과 같은 NuGet 패키지를 제거해야 합니다.  
   
-    ```xml  
-    <ItemGroup>  
-        <Reference Include="Microsoft.ApplicationInsights, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsApps.0.14.3-build00177\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="Microsoft.ApplicationInsights.PersistenceChannel, Version=0.14.3.186, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
-          <HintPath>..\packages\Microsoft.ApplicationInsights.PersistenceChannel.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
-          <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-        <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
-          <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>  
-          <Private>True</Private>  
-        </Reference>  
-      </ItemGroup>  
+   ```xml  
+   <ItemGroup>  
+       <Reference Include="Microsoft.ApplicationInsights, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows, Version=0.14.3.177, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsApps.0.14.3-build00177\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="Microsoft.ApplicationInsights.PersistenceChannel, Version=0.14.3.186, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">  
+         <HintPath>..\packages\Microsoft.ApplicationInsights.PersistenceChannel.0.14.3-build00177\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
+         <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+       <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">  
+         <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>  
+         <Private>True</Private>  
+       </Reference>  
+     </ItemGroup>  
   
-    ```  
+   ```  
   
 9. 찾을 합니다 \<ItemGroup > 포함 하는 요소는 \<AppxManifest > 요소입니다. 없는 경우는 \<없음 >로 설정 하는 포함 특성을 가진 요소: packages.config를 삭제 합니다. 또한 추가 \<없음 > 요소는 포함 된 특성 및 해당 값을 설정: project.json 합니다.  
   
@@ -746,9 +746,9 @@ ms.locfileid: "49285950"
   
 14. NuGet 관리자를 사용하여 이전 단계에서 삭제한 패키지를 추가합니다. Visual Studio 2015 RC와 Visual Studio 2015 RTM에서 Windows 10 프로젝트 형식의 중요한 한 가지 차이점은 RTM 형식이 [NuGet](http://docs.nuget.org/) 버전 3을 사용한다는 것입니다.  
   
- 이제 앱을 코딩, 빌드 및 디버그할 수 있습니다.  
+    이제 앱을 코딩, 빌드 및 디버그할 수 있습니다.  
   
- 유니버설 Windows 앱에 대한 단위 테스트 프로젝트가 있는 경우 [이 단계](#MigrateUnitTest)를 따라야 합니다.  
+    유니버설 Windows 앱에 대한 단위 테스트 프로젝트가 있는 경우 [이 단계](#MigrateUnitTest)를 따라야 합니다.  
   
 ###  <a name="RCUpdate10CPlusPlus"></a> 최신 유니버설 Windows 플랫폼을 사용 하도록 c + + 프로젝트 업데이트  
   
@@ -826,176 +826,176 @@ ms.locfileid: "49285950"
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> C# /VB 단위 테스트 프로젝트를 업데이트 합니다.  
   
-1.  Visual Studio에서 C#/VB 단위 테스트 프로젝트를 포함하는 솔루션을 엽니다. 값을 변경 합니다 \<OuttputType > 요소를: AppContainerExe 합니다.  
+1. Visual Studio에서 C#/VB 단위 테스트 프로젝트를 포함하는 솔루션을 엽니다. 값을 변경 합니다 \<OuttputType > 요소를: AppContainerExe 합니다.  
   
-    ```xml  
+   ```xml  
   
-    <OutputType>AppContainerExe</OutputType>  
+   <OutputType>AppContainerExe</OutputType>  
   
-    ```  
+   ```  
   
-2.  이 요소를 대체할 \<EnableCoreRuntime > false\</EnableCoreRuntime > 다음 요소를 사용 하 여:  
+2. 이 요소를 대체할 \<EnableCoreRuntime > false\</EnableCoreRuntime > 다음 요소를 사용 하 여:  
   
-    ```xml  
+   ```xml  
   
-    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>  
+   <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>  
   
-    ```  
+   ```  
   
-3.  다음 줄을 제거합니다.  
+3. 다음 줄을 제거합니다.  
   
-    ```xml  
+   ```xml  
   
-    <PropertyGroup>  
-        <AppXPackage>True</AppXPackage>  
-        <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>  
-     </PropertyGroup>  
-     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
-     <PlatformTarget>AnyCPU</PlatformTarget>  
-     <DebugSymbols>true</DebugSymbols>  
-     <DebugType>full</DebugType>  
-     <Optimize>false</Optimize>  
-     <OutputPath>bin\Debug\</OutputPath>  
-     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
-     <ErrorReport>prompt</ErrorReport>  
-     <WarningLevel>4</WarningLevel>  
-     </PropertyGroup>  
-     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">  
-        <PlatformTarget>AnyCPU</PlatformTarget>  
-        <DebugType>pdbonly</DebugType>  
-        <Optimize>true</Optimize>  
-        <OutputPath>bin\Release\</OutputPath>  
-        <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
-        <ErrorReport>prompt</ErrorReport>  
-        <WarningLevel>4</WarningLevel>  
-     </PropertyGroup>  
+   <PropertyGroup>  
+       <AppXPackage>True</AppXPackage>  
+       <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>  
+    </PropertyGroup>  
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
+    <PlatformTarget>AnyCPU</PlatformTarget>  
+    <DebugSymbols>true</DebugSymbols>  
+    <DebugType>full</DebugType>  
+    <Optimize>false</Optimize>  
+    <OutputPath>bin\Debug\</OutputPath>  
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
+    <ErrorReport>prompt</ErrorReport>  
+    <WarningLevel>4</WarningLevel>  
+    </PropertyGroup>  
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">  
+       <PlatformTarget>AnyCPU</PlatformTarget>  
+       <DebugType>pdbonly</DebugType>  
+       <Optimize>true</Optimize>  
+       <OutputPath>bin\Release\</OutputPath>  
+       <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>  
+       <ErrorReport>prompt</ErrorReport>  
+       <WarningLevel>4</WarningLevel>  
+    </PropertyGroup>  
   
-    ```  
+   ```  
   
-4.  이 요소를 추가 \<UseDotNetNativeToolchain > true\</UseDotNetNativeToolchain > 이러한 속성 그룹에 자식 요소로:  
+4. 이 요소를 추가 \<UseDotNetNativeToolchain > true\</UseDotNetNativeToolchain > 이러한 속성 그룹에 자식 요소로:  
   
-    ```xml  
+   ```xml  
   
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">  
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X86'">  
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X64'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X86'">  
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|X64'">  
   
-    ```  
+   ```  
   
-5.  다음을 삭제 \<ItemGroup > 요소:  
+5. 다음을 삭제 \<ItemGroup > 요소:  
   
-    ```xml  
+   ```xml  
   
-    <ItemGroup>  
-       <Compile Include="Properties\AssemblyInfo.cs" />  
-       <Compile Include="UnitTest.cs" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <AppxManifest Include="Package.appxmanifest">  
-          <SubType>Designer</SubType>  
-       </AppxManifest>  
-       <None Include="packages.config" />  
-       <None Include="UnitTestProject1_TemporaryKey.pfx" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <Content Include="Properties\Default.rd.xml" />  
-       <Content Include="Assets\Logo.scale-240.png" />  
-       <Content Include="Assets\SmallLogo.scale-240.png" />  
-       <Content Include="Assets\SplashScreen.scale-240.png" />  
-       <Content Include="Assets\Square71x71Logo.scale-240.png" />  
-       <Content Include="Assets\StoreLogo.scale-240.png" />  
-       <Content Include="Assets\WideLogo.scale-240.png" />  
-    </ItemGroup>  
+   <ItemGroup>  
+      <Compile Include="Properties\AssemblyInfo.cs" />  
+      <Compile Include="UnitTest.cs" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <AppxManifest Include="Package.appxmanifest">  
+         <SubType>Designer</SubType>  
+      </AppxManifest>  
+      <None Include="packages.config" />  
+      <None Include="UnitTestProject1_TemporaryKey.pfx" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <Content Include="Properties\Default.rd.xml" />  
+      <Content Include="Assets\Logo.scale-240.png" />  
+      <Content Include="Assets\SmallLogo.scale-240.png" />  
+      <Content Include="Assets\SplashScreen.scale-240.png" />  
+      <Content Include="Assets\Square71x71Logo.scale-240.png" />  
+      <Content Include="Assets\StoreLogo.scale-240.png" />  
+      <Content Include="Assets\WideLogo.scale-240.png" />  
+   </ItemGroup>  
   
-    ```  
+   ```  
   
-     삭제한 요소를 다음 요소로 바꿉니다.  
+    삭제한 요소를 다음 요소로 바꿉니다.  
   
-    ```xml  
+   ```xml  
   
-    <ItemGroup>  
-       <Compile Include="Properties\AssemblyInfo.cs" />  
-       <Compile Include="UnitTestApp.xaml.cs">  
-          <DependentUpon>UnitTestApp.xaml</DependentUpon>  
-       </Compile>  
-       <Compile Include="UnitTest.cs" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <ApplicationDefinition Include="UnitTestApp.xaml">  
-          <Generator>MSBuild:Compile</Generator>  
-          <SubType>Designer</SubType>  
-       </ApplicationDefinition>  
-    </ItemGroup>  
-    <ItemGroup>  
-       <AppxManifest Include="Package.appxmanifest">  
-          <SubType>Designer</SubType>  
-       </AppxManifest>  
-       <None Include="UnitTestProject1_TemporaryKey.pfx" />  
-    </ItemGroup>  
-    <ItemGroup>  
-       <Content Include="Properties\UnitTestApp.rd.xml" />  
-       <Content Include="Assets\LockScreenLogo.scale-200.png" />  
-       <Content Include="Assets\SplashScreen.scale-200.png" />  
-       <Content Include="Assets\Square150x150Logo.scale-200.png" />  
-       <Content Include="Assets\Square44x44Logo.scale-200.png" />  
-       <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />  
-       <Content Include="Assets\StoreLogo.png" />  
-       <Content Include="Assets\Wide310x150Logo.scale-200.png" />  
-    </ItemGroup>  
-    ```  
+   <ItemGroup>  
+      <Compile Include="Properties\AssemblyInfo.cs" />  
+      <Compile Include="UnitTestApp.xaml.cs">  
+         <DependentUpon>UnitTestApp.xaml</DependentUpon>  
+      </Compile>  
+      <Compile Include="UnitTest.cs" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <ApplicationDefinition Include="UnitTestApp.xaml">  
+         <Generator>MSBuild:Compile</Generator>  
+         <SubType>Designer</SubType>  
+      </ApplicationDefinition>  
+   </ItemGroup>  
+   <ItemGroup>  
+      <AppxManifest Include="Package.appxmanifest">  
+         <SubType>Designer</SubType>  
+      </AppxManifest>  
+      <None Include="UnitTestProject1_TemporaryKey.pfx" />  
+   </ItemGroup>  
+   <ItemGroup>  
+      <Content Include="Properties\UnitTestApp.rd.xml" />  
+      <Content Include="Assets\LockScreenLogo.scale-200.png" />  
+      <Content Include="Assets\SplashScreen.scale-200.png" />  
+      <Content Include="Assets\Square150x150Logo.scale-200.png" />  
+      <Content Include="Assets\Square44x44Logo.scale-200.png" />  
+      <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />  
+      <Content Include="Assets\StoreLogo.png" />  
+      <Content Include="Assets\Wide310x150Logo.scale-200.png" />  
+   </ItemGroup>  
+   ```  
   
-6.  새 단위 테스트 프로젝트를 만들고 UnitTestApp.xaml 및 UnitTestApp.xaml.cs 파일을 새 프로젝트에서 업데이트하려는 기존 단위 테스트 프로젝트로 복사합니다.  
+6. 새 단위 테스트 프로젝트를 만들고 UnitTestApp.xaml 및 UnitTestApp.xaml.cs 파일을 새 프로젝트에서 업데이트하려는 기존 단위 테스트 프로젝트로 복사합니다.  
   
-7.  UnitTestApp.rd.xml 파일을 새 단위 테스트 프로젝트의 Properties 폴더에서 업데이트하려는 기존 단위 테스트 프로젝트의 Properties 폴더로 복사합니다.  
+7. UnitTestApp.rd.xml 파일을 새 단위 테스트 프로젝트의 Properties 폴더에서 업데이트하려는 기존 단위 테스트 프로젝트의 Properties 폴더로 복사합니다.  
   
-8.  프로젝트에서 Package.appxmanifest 파일을 엽니다. 그런 다음 파일에서 다음 요소를 삭제합니다.  
+8. 프로젝트에서 Package.appxmanifest 파일을 엽니다. 그런 다음 파일에서 다음 요소를 삭제합니다.  
   
-    ```xml  
+   ```xml  
   
-    <Applications>  
-       <Application Id="vstest.executionengine.universal.App"  
-             Executable="vstest.executionengine.appcontainer.uap.exe"  
-             EntryPoint="Microsoft.VisualStudio.TestPlatform.TestExecutor.AppContainer.App">  
-          <uap:VisualElements  
-             DisplayName="UnitTestProject1"  
-             Square150x150Logo="Assets\Logo.png"  
-             Square44x44Logo="Assets\SmallLogo.png"  
-             Description="UnitTestProject1"  
-             BackgroundColor="#464646">  
-             <uap:SplashScreen Image="Assets\SplashScreen.png" />  
-          </uap:VisualElements>  
-       </Application>  
-    </Applications>  
-    <Capabilities>  
-       <Capability Name="internetClientServer" />  
-    </Capabilities>  
-    ```  
+   <Applications>  
+      <Application Id="vstest.executionengine.universal.App"  
+            Executable="vstest.executionengine.appcontainer.uap.exe"  
+            EntryPoint="Microsoft.VisualStudio.TestPlatform.TestExecutor.AppContainer.App">  
+         <uap:VisualElements  
+            DisplayName="UnitTestProject1"  
+            Square150x150Logo="Assets\Logo.png"  
+            Square44x44Logo="Assets\SmallLogo.png"  
+            Description="UnitTestProject1"  
+            BackgroundColor="#464646">  
+            <uap:SplashScreen Image="Assets\SplashScreen.png" />  
+         </uap:VisualElements>  
+      </Application>  
+   </Applications>  
+   <Capabilities>  
+      <Capability Name="internetClientServer" />  
+   </Capabilities>  
+   ```  
   
-     삭제한 요소를 다음 요소로 바꿉니다. 아래 요소에서 UnitTestProject1 대신 프로젝트의 이름을 기반으로 ProjectName에 적절한 값을 사용합니다.  
+    삭제한 요소를 다음 요소로 바꿉니다. 아래 요소에서 UnitTestProject1 대신 프로젝트의 이름을 기반으로 ProjectName에 적절한 값을 사용합니다.  
   
-    ```xml  
+   ```xml  
   
-    <Applications>  
-       <Application Id="vstest.executionengine.universal.App"   
-             Executable="$targetnametoken$.exe"  
-             EntryPoint="UnitTestProject1.App">  
-          <uap:VisualElements  
-                DisplayName="UnitTestProject1"  
-                Square150x150Logo="Assets\Square150x150Logo.png"  
-                Square44x44Logo="Assets\Square44x44Logo.png"  
-                Description="UnitTestProject1"  
-                BackgroundColor="transparent">  
-             <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>  
-             <uap:SplashScreen Image="Assets\SplashScreen.png" />  
-          </uap:VisualElements>  
-       </Application>  
-    </Applications>  
-    <Capabilities>  
-       <Capability Name="internetClient" />  
-    </Capabilities>  
-    ```  
+   <Applications>  
+      <Application Id="vstest.executionengine.universal.App"   
+            Executable="$targetnametoken$.exe"  
+            EntryPoint="UnitTestProject1.App">  
+         <uap:VisualElements  
+               DisplayName="UnitTestProject1"  
+               Square150x150Logo="Assets\Square150x150Logo.png"  
+               Square44x44Logo="Assets\Square44x44Logo.png"  
+               Description="UnitTestProject1"  
+               BackgroundColor="transparent">  
+            <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>  
+            <uap:SplashScreen Image="Assets\SplashScreen.png" />  
+         </uap:VisualElements>  
+      </Application>  
+   </Applications>  
+   <Capabilities>  
+      <Capability Name="internetClient" />  
+   </Capabilities>  
+   ```  
   
- 이제 단위 테스트를 실행할 수 있습니다.  
+   이제 단위 테스트를 실행할 수 있습니다.  
   
 ###  <a name="UnitTestRCUpdate10CPlusPlus"></a> 최신 유니버설 Windows 플랫폼을 사용 하도록 c + + 프로젝트 업데이트  
   

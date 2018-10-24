@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851064"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>퀵 스타트: C/C++용 코드 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 응�
   
  솔루션에 대한 코드 분석을 실행하려면  
   
--   **빌드** 메뉴에서 **솔루션에서 코드 분석 실행**을 선택합니다.  
+- **빌드** 메뉴에서 **솔루션에서 코드 분석 실행**을 선택합니다.  
   
- 프로젝트에 대한 코드 분석을 실행하려면  
+  프로젝트에 대한 코드 분석을 실행하려면  
   
--   솔루션 탐색기에서 프로젝트 이름을 선택합니다.  
+- 솔루션 탐색기에서 프로젝트 이름을 선택합니다.  
   
--   에 **빌드** 메뉴 선택 **에서 코드 분석 실행** *프로젝트 이름을*입니다.  
+- 에 **빌드** 메뉴 선택 **에서 코드 분석 실행** *프로젝트 이름을*입니다.  
   
- 프로젝트 또는 솔루션이 컴파일되고 코드 분석이 실행됩니다. 코드 분석 창에 결과가 나타납니다.  
+  프로젝트 또는 솔루션이 컴파일되고 코드 분석이 실행됩니다. 코드 분석 창에 결과가 나타납니다.  
   
 ##  <a name="BKMK_Analyze"></a> 분석 및 코드 분석 경고를 해결 합니다.  
  특정 경고를 분석하려면 코드 분석 창에서 경고 제목을 선택합니다. 경고가 확장되어 문제에 대한 자세한 정보가 표시됩니다. 가능한 경우 코드 분석에서는 경고를 발생시킨 분석 논리와 줄 번호를 표시합니다. 문제의 가능한 해결 방법을 비롯하여 경고에 대한 자세한 내용을 보려면 경고 ID를 선택하여 메시지에 대한 MSND 라이브러리의 도움말 항목을 표시하세요.  
@@ -106,13 +106,13 @@ C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 응�
   
  경고를 표시하지 않으려면  
   
-1.  자세한 정보가 표시되지 않으면 경고 제목을 선택하여 확장합니다.  
+1. 자세한 정보가 표시되지 않으면 경고 제목을 선택하여 확장합니다.  
   
-2.  경고 아래쪽에서 **작업** 링크를 선택합니다.  
+2. 경고 아래쪽에서 **작업** 링크를 선택합니다.  
   
-3.  선택할 **메시지 표시 안 함** 를 선택한 후 **소스**합니다.  
+3. 선택할 **메시지 표시 안 함** 를 선택한 후 **소스**합니다.  
   
- 메시지를 표시하지 않도록 설정하면 코드 줄에 대한 경고를 표시하지 않는 `#pragma warning (disable:`*WarningId*`)`가 삽입됩니다.  
+   메시지를 표시하지 않도록 설정하면 코드 줄에 대한 경고를 표시하지 않는 `#pragma warning (disable:`*WarningId*`)`가 삽입됩니다.  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> 작업 항목에 대 한 코드 분석 경고 만들기  
  작업 항목 추적 기능을 사용하여 Visual Studio에서 버그를 기록할 수 있습니다. 이 기능을 사용하려면 Team Foundation Server 인스턴스에 연결해야 합니다.  

@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 76967e02d730b06438136bb0354ce5a67a648ea4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6661eeeeaa802e482dd540f7a7793186f917edf3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853807"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>방법: Visual Studio의 파일 복사 위치 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ ClickOnce를 사용하여 응용 프로그램을 게시하는 경우 `Publish Lo
   
 ### <a name="to-specify-a-publishing-location"></a>게시 위치를 지정하려면  
   
-1.  **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
+1. **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
   
-2.  클릭 합니다 **게시** 탭 합니다.  
+2. 클릭 합니다 **게시** 탭 합니다.  
   
-3.  에 **게시 위치** 필드에 다음 형식 중 하나를 사용 하 여 게시 위치를 입력 합니다.  
+3. 에 **게시 위치** 필드에 다음 형식 중 하나를 사용 하 여 게시 위치를 입력 합니다.  
   
-    -   파일 공유 나 디스크 경로 게시 하려면 UNC 경로 사용 하 여 경로 입력 (\\\Server\ApplicationName) 또는 파일 경로 (C:\Deploy\ApplicationName).  
+   - 파일 공유 나 디스크 경로 게시 하려면 UNC 경로 사용 하 여 경로 입력 (\\\Server\ApplicationName) 또는 파일 경로 (C:\Deploy\ApplicationName).  
   
-    -   FTP 서버에 게시하려면 ftp://ftp.microsoft.com/ApplicationName 형식을 사용하여 경로를 입력합니다.  
+   - FTP 서버에 게시하려면 ftp://ftp.microsoft.com/ApplicationName 형식을 사용하여 경로를 입력합니다.  
   
      텍스트에 있어야 합니다 **게시 위치** 상자에서 찾아보기 (**...** ) 단추가 작동 하려면.  
   

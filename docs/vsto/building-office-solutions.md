@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847580"
 ---
 # <a name="build-office-solutions"></a>Office 솔루션 빌드
   일반적으로 Office 프로젝트를 빌드하고 디버깅하는 것은 Windows Forms와 같이 Visual Studio에서 다른 형식의 프로젝트를 빌드하고 디버깅하는 것과 같습니다. 이 섹션의 항목에서는 차이점에 대해 설명합니다. 응용 프로그램을 빌드하는 방법에 대 한 일반 정보를 참조 하세요. [Visual Studio에서 컴파일 및 빌드](/visualstudio/ide/compiling-and-building-in-visual-studio)합니다.  
@@ -64,23 +64,23 @@ ms.locfileid: "35675148"
 ### <a name="application-level-projects"></a>응용 프로그램 수준 프로젝트  
  VSTO 추가 기능 프로젝트를 빌드하면 프로젝트 출력에 다음 항목이 포함 됩니다.  
   
--   프로젝트 어셈블리 및 **true** 로 설정된 해당 **로컬 복사**속성을 가진 참조되는 모든 어셈블리  
+- 프로젝트 어셈블리 및 **true** 로 설정된 해당 **로컬 복사**속성을 가진 참조되는 모든 어셈블리  
   
--   파일 이름 확장명에는 응용 프로그램 매니페스트의 *.manifest*합니다. 자세한 내용은 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
+- 파일 이름 확장명에는 응용 프로그램 매니페스트의 *.manifest*합니다. 자세한 내용은 [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)합니다.  
   
--   배포 매니페스트 파일 이름 확장명이 *.vsto*합니다. 자세한 내용은 [Deployment manifests for Office 솔루션](../vsto/deployment-manifests-for-office-solutions.md)합니다.  
+- 배포 매니페스트 파일 이름 확장명이 *.vsto*합니다. 자세한 내용은 [Deployment manifests for Office 솔루션](../vsto/deployment-manifests-for-office-solutions.md)합니다.  
   
--   프로그램 데이터베이스 (*PDB*) 프로젝트 어셈블리 파일입니다.  
+- 프로그램 데이터베이스 (*PDB*) 프로젝트 어셈블리 파일입니다.  
   
- 또한 VSTO 추가 기능 프로젝트의 빌드 프로세스는 VSTO 추가 기능을 로드하는 데 필요한 개발 컴퓨터에서 레지스트리 항목 집합을 만듭니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.  
+  또한 VSTO 추가 기능 프로젝트의 빌드 프로세스는 VSTO 추가 기능을 로드하는 데 필요한 개발 컴퓨터에서 레지스트리 항목 집합을 만듭니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.  
   
- 양식 영역을 포함하는 Outlook VSTO 추가 기능 프로젝트를 빌드하는 경우 빌드 프로세스는 다음과 같은 추가 정보를 레지스트리에 추가합니다.  
+  양식 영역을 포함하는 Outlook VSTO 추가 기능 프로젝트를 빌드하는 경우 빌드 프로세스는 다음과 같은 추가 정보를 레지스트리에 추가합니다.  
   
--   하나 이상의 양식 영역과 연결된 각 메시지 클래스에 대한 키  
+- 하나 이상의 양식 영역과 연결된 각 메시지 클래스에 대한 키  
   
--   각 양식 영역에 대한 항목 및 Outlook VSTO 추가 기능의 이름을 나타내는 관련된 값  
+- 각 양식 영역에 대한 항목 및 Outlook VSTO 추가 기능의 이름을 나타내는 관련된 값  
   
- Outlook은 이 정보를 양식 영역으로 로드해야 합니다.  
+  Outlook은 이 정보를 양식 영역으로 로드해야 합니다.  
   
 ## <a name="referenced-assemblies"></a>참조된 어셈블리  
  Office 솔루션 빌드 프로젝트에서 어셈블리(클래스 라이브러리 프로젝트 포함)를 참조할 수 있습니다. 모든 참조된 어셈블리에는 **로컬 복사**라는 속성이 있습니다. **로컬 복사** 는 어셈블리를 출력 디렉터리에 복사할지 여부를 나타냅니다. 기본적으로 이 속성은 **true**로 설정됩니다. **로컬 복사** 를 **true** 로 설정한 모든 참조된 어셈블리는 출력 디렉터리에 복사됩니다.  

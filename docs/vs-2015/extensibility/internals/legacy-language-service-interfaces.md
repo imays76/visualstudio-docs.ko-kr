@@ -16,12 +16,12 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d64ff7ec1aea24a5e98b3f37339639440e31bf42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837245"
 ---
 # <a name="legacy-language-service-interfaces"></a>레거시 언어 서비스 인터페이스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "49249212"
   
  임의 개수의 별도 클래스에서 핵심 언어 서비스 인터페이스를 구현할 수 있습니다. 그러나 일반적인 방법은 다음과 같습니다. 단일 클래스에 다음 인터페이스를 구현 합니다.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (선택 사항)  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (선택 사항)  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 모든 언어 서비스 인터페이스를 구현 해야 합니다. 것 colorizer를 검색 하는 언어 서비스와 연결 된 파일 이름 확장명을 언어의 지역화 된 이름과 같은 언어 서비스에 대 한 정보를 제공 합니다.  
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 모든 언어 서비스 인터페이스를 구현 해야 합니다. 것 colorizer를 검색 하는 언어 서비스와 연결 된 파일 이름 확장명을 언어의 지역화 된 이름과 같은 언어 서비스에 대 한 정보를 제공 합니다.  
   
 ## <a name="additional-language-service-interfaces"></a>추가 언어 서비스 인터페이스  
  언어 서비스를 사용 하 여 다른 인터페이스를 제공할 수 있습니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 텍스트 버퍼의 각 인스턴스에 대해 이러한 인터페이스의 개별 인스턴스를 요청합니다. 따라서 구현 해야 이러한 각 인터페이스의 자체 개체입니다. 다음 표에서 텍스트 버퍼 인스턴스 당 하나의 인스턴스를 필요로 하는 인터페이스를 보여 줍니다.  

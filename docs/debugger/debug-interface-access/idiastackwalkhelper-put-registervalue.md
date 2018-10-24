@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c094384fd4c1e01b28edcc809d58ab56b3bb225
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81ac9c2366f97497fca4f7faa49facf2a3f819b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838935"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
-레지스터의 값을 설정합니다.  
+레지스터의 값을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,16 +35,16 @@ HRESULT put_registerValue (
   
 #### <a name="parameters"></a>매개 변수  
  `index`  
- [in] 값은 [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md) 에 쓸 수는 레지스터를 지정 하는 열거형입니다.  
+ [in] 값을 [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md) 쓸 레지스터를 지정 하는 열거형입니다.  
   
  `NewVal`  
- [in] 새 레지스터 값입니다.  
+ [in] 새 값을 등록합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 값의 크기, 불구 하 고 구현만 등록 일반적으로 저장 저장 해야 합니다. 예를 들어 8 비트 레지스터 가장 낮은 8-비트만 지정된 된 값의 저장 합니다.  
+ 값의 크기에도 불구 하 고 구현만 무엇입니까 레지스터 일반적으로 보유 저장 해야 합니다. 예를 들어, 8 비트 레지스터를 가장 낮은 8-비트만 지정된 된 값의 저장 해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850817"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 프로젝트 시스템 확장 및 도구 집합 통합
 
@@ -478,12 +478,13 @@ CPS 컨텍스트 형식에 대해 다른 값을 지원 되지만 Visual c + + �
 
 합니다 `PageTemplate` 특성은 규칙에 표시 되는 방식을 정의 합니다 **속성 페이지** 대화 합니다. 특성을 다음이 값 중 하나일 수 있습니다.
 
-|특성|설명|
-|-|-|
-`generic`|모든 속성이 범주 머리글 아래에서 한 페이지에 표시 됩니다.<br/>규칙에 대 한 표시 될 수 있습니다 `Project` 하 고 `PropertySheet` 컨텍스트를 아닌 `File`합니다.<br/><br/> 예: `$(VCTargetsPath)` \\ *1033*\\*general.xml*
-`tool`|범주는 하위로 표시 됩니다.<br/>규칙이 모든 컨텍스트에 표시 될 수 있습니다: `Project`, `PropertySheet` 고 `File`입니다.<br/>프로젝트 항목이 있는 경우에 규칙은 프로젝트 속성에 표시 합니다 `ItemType` 에 정의 된 `Rule.DataSource`규칙 이름에 포함 되어 있지 않으면는 `ProjectTools` 항목 그룹입니다.<br/><br/>예: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
-`debugger`|페이지는 디버깅 페이지의 일부로 표시 됩니다.<br/>범주는 현재 무시 됩니다.<br/>규칙 이름이 디버그 시작 관리자 MEF 개체의 일치 해야 `ExportDebugger` 특성입니다.<br/><br/>예: `$(VCTargetsPath)` \\ *1033*\\*디버거\_로컬\_windows.xml*
-*custom*| 사용자 지정 템플릿입니다. 템플릿의 이름은 일치 해야 합니다는 `ExportPropertyPageUIFactoryProvider` 특성을 `PropertyPageUIFactoryProvider` MEF 개체입니다. 참조 **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**합니다.<br/><br/> 예: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
+
+| 특성 | 설명 |
+|------------| - |
+| `generic` | 모든 속성이 범주 머리글 아래에서 한 페이지에 표시 됩니다.<br/>규칙에 대 한 표시 될 수 있습니다 `Project` 하 고 `PropertySheet` 컨텍스트를 아닌 `File`합니다.<br/><br/> 예: `$(VCTargetsPath)` \\ *1033*\\*general.xml* |
+| `tool` | 범주는 하위로 표시 됩니다.<br/>규칙이 모든 컨텍스트에 표시 될 수 있습니다: `Project`, `PropertySheet` 고 `File`입니다.<br/>프로젝트 항목이 있는 경우에 규칙은 프로젝트 속성에 표시 합니다 `ItemType` 에 정의 된 `Rule.DataSource`규칙 이름에 포함 되어 있지 않으면는 `ProjectTools` 항목 그룹입니다.<br/><br/>예: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
+| `debugger` | 페이지는 디버깅 페이지의 일부로 표시 됩니다.<br/>범주는 현재 무시 됩니다.<br/>규칙 이름이 디버그 시작 관리자 MEF 개체의 일치 해야 `ExportDebugger` 특성입니다.<br/><br/>예: `$(VCTargetsPath)` \\ *1033*\\*디버거\_로컬\_windows.xml* |
+| *custom* | 사용자 지정 템플릿입니다. 템플릿의 이름은 일치 해야 합니다는 `ExportPropertyPageUIFactoryProvider` 특성을 `PropertyPageUIFactoryProvider` MEF 개체입니다. 참조 **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**합니다.<br/><br/> 예: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
 
 규칙 속성 그리드 기반 템플릿의 하나를 사용 하는 경우 해당 속성에 대 한 이러한 확장 지점을 사용할 수 있습니다.
 

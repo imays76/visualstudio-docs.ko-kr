@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31eb949588353a6f2f11ddbbdf516d1a5da63488
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 08f5ec37d38824ca640dd19827db3b1d355d0ad7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815641"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: 적절한 경우 이벤트를 사용하십시오.
+
 |||
 |-|-|
 |TypeName|UseEventsWhereAppropriate|

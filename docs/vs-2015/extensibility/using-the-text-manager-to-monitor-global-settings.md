@@ -16,12 +16,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25ba131512c8c57e9ddda21526ef76177d4ca4a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839689"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>전역 설정을 모니터링 하는 텍스트 관리자를 사용 하 여
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ ms.locfileid: "49303313"
 ## <a name="text-manager-functions"></a>텍스트 관리자 함수  
  텍스트 관리자는 다음과 같은 설정의 수에 대 한 이벤트를 발생 시킵니다.  
   
--   소스 코드 제어에서 버퍼 인지 여부  
+- 소스 코드 제어에서 버퍼 인지 여부  
   
--   파일 변경 알림을 등록 하는 방법  
+- 파일 변경 알림을 등록 하는 방법  
   
--   특정 버퍼를 사용 하 여 연결 된 뷰를 추적 하는 방법  
+- 특정 버퍼를 사용 하 여 연결 된 뷰를 추적 하는 방법  
   
--   텍스트 색 지정 기본 설정  
+- 텍스트 색 지정 기본 설정  
   
--   기본 공간 및 탭  
+- 기본 공간 및 탭  
   
- 지정된 된 언어에 고유한 기본 텍스트 관리자가 관리 되지 않습니다. 이러한 설정은 각 언어 서비스에 의해 관리 되어야 합니다.  
+  지정된 된 언어에 고유한 기본 텍스트 관리자가 관리 되지 않습니다. 이러한 설정은 각 언어 서비스에 의해 관리 되어야 합니다.  
   
- 제공 하는 텍스트 관리자에 대 한 이벤트 알림을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> 인터페이스입니다. 이 인터페이스를 구현 합니다. 클라이언트에서 이벤트를 처리 하는 개체는 텍스트 관리자 발생 합니다. 사용 하 여 이러한 이벤트에 대 한 등록을 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> 텍스트 관리자 인터페이스입니다.  
+  제공 하는 텍스트 관리자에 대 한 이벤트 알림을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> 인터페이스입니다. 이 인터페이스를 구현 합니다. 클라이언트에서 이벤트를 처리 하는 개체는 텍스트 관리자 발생 합니다. 사용 하 여 이러한 이벤트에 대 한 등록을 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> 텍스트 관리자 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [핵심 편집기 내에서](../extensibility/inside-the-core-editor.md)   

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 102ad26fcc746c8400cfa5114d9559fc11729dee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31b7baad0350ef0524aee81e61f9019b8e91a9de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857148"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
-사용자는 통합된 개발 환경 (IDE)에서 입력할 수 있는 문자열을 기반으로 코드 중단점을 설정 하기 위한 사용.  
+통합된 개발 환경 (IDE)에서 사용자가 입력할 수 있는 문자열을 기반으로 코드 중단점을 설정 하는 데 사용 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,13 +36,13 @@ typedef struct _BP_LOCATION_CODE_STRING {
   
 ## <a name="members"></a>멤버  
  `bstrContext`  
- 코드 내에서 중단점 호출 스택에 보듯이 메서드 또는 함수 이름, 일반적으로의 컨텍스트.  
+ 코드 내에서 중단점, 호출 스택에 표시 된 메서드 또는 함수 이름 일반적으로의 컨텍스트.  
   
  `bstrCodeExpr`  
- 사용자에 코드 중단점을 설명 하기 위해 입력 하는 문자열입니다.  
+ 사용자가에 코드 중단점을 설명 하는 문자열입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조는의 구성원은 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 공용 구조체의 일부로 구조입니다.  
+ 이 구조체의 멤버인 합니다 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 공용 구조체의 일부로 구조입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

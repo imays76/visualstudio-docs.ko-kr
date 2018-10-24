@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830693"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>부모 솔루션에 대 한 컨테이너 폴더 만들기
 원본 제어 플러그 인 API 버전 1.2에는 사용자 솔루션 내에서 모든 웹 프로젝트에 대 한 단일 루트 원본 제어 대상을 지정할 수 있습니다. 이 단일 루트를 슈퍼 통합 루트 (도메인 이름 얻기) 라고 합니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "39498872"
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 도메인 이름 얻기 폴더의 이름을 동일 하 게 솔루션 이름과 확장명이 없는 것이 좋습니다. 다음 표에서 두 가지 버전의 동작을 보여 줍니다.  
   
 |기능|소스 제어 플러그 인 API 버전 1.1|소스 제어 플러그 인 API 버전 1.2|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |소스 코드 제어에 솔루션 추가|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |소스 제어 중인 솔루션에 프로젝트 추가|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **참고:** Visual Studio 솔루션을 SUR.의 직계 자식이 있다고 가정|  
   

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a4bcd63435e380ea7d913bb984fe8cf464392d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb5d634671e1a8fb7fc517cb50145e88f46ca7be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857239"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
-오류의 원인이 된 보류 중인 중단점을 가져옵니다.  
+오류를 발생 시킨 보류 중인 중단점을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,10 +41,10 @@ int GetPendingBreakpoint (
   
 #### <a name="parameters"></a>매개 변수  
  `ppPendingBreakpoint`  
- [out] 반환 된 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 바인딩할 수에 실패 한 보류 중인 중단점을 나타내는 개체입니다.  
+ [out] 반환을 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 바인딩할 실패 한 보류 중인 중단점을 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   

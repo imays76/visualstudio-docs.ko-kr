@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851935"
 ---
 # <a name="msbuild-items"></a>MSBuild 항목
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,13 +100,13 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
 ##  <a name="BKMK_Wildcards"></a> 와일드카드를 사용하여 항목 지정  
  **, \* 및 ? 와일드카드 문자를 사용하여 각 파일을 개별적으로 나열하는 대신 파일 그룹을 빌드의 입력으로 지정할 수 있습니다.  
   
--   ? 와일드카드 문자는 단일 문자를 찾습니다.  
+- ? 와일드카드 문자는 단일 문자를 찾습니다.  
   
--   \* 와일드카드 문자는 0개 이상의 문자를 찾습니다.  
+- \* 와일드카드 문자는 0개 이상의 문자를 찾습니다.  
   
--   \*\* 와일드카드 문자 시퀀스는 부분 경로를 찾습니다.  
+- \*\* 와일드카드 문자 시퀀스는 부분 경로를 찾습니다.  
   
- 예를 들어 프로젝트 파일에서 다음 요소를 사용하여 프로젝트 파일이 포함된 디렉터리의 모든 .cs 파일을 지정할 수 있습니다.  
+  예를 들어 프로젝트 파일에서 다음 요소를 사용하여 프로젝트 파일이 포함된 디렉터리의 모든 .cs 파일을 지정할 수 있습니다.  
   
 ```  
 <CSFile Include="*.cs"/>  

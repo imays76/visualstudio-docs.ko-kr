@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836738"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>솔루션 탐색기 도구 모음에 명령 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,41 +87,41 @@ ms.locfileid: "49254401"
   
 #### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>하나 이상의 프로젝트가 열려 있는 경우 한 단추를 표시 하려면  
   
-1.  에 `<Buttons>` 섹션 ToolbarButtonPackage.vsct의 기존에 두 명령 플래그를 추가 `<Button>` 요소 사이의 합니다 `<Strings>` 및 `<Icons>` 태그입니다.  
+1. 에 `<Buttons>` 섹션 ToolbarButtonPackage.vsct의 기존에 두 명령 플래그를 추가 `<Button>` 요소 사이의 합니다 `<Strings>` 및 `<Icons>` 태그입니다.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     `DefaultInvisible` 및 `DynamicVisibility` 플래그 설정 해야 하므로 해당 항목에는 `<VisibilityConstraints>` 섹션 영향을 받을 수.  
+    `DefaultInvisible` 및 `DynamicVisibility` 플래그 설정 해야 하므로 해당 항목에는 `<VisibilityConstraints>` 섹션 영향을 받을 수.  
   
-2.  만들기는 `<VisibilityConstraints>` 섹션에는 두 개는 `<VisibilityItem>` 항목입니다. 새 섹션 닫는 바로 뒤 저장 `</Commands>` 태그입니다.  
+2. 만들기는 `<VisibilityConstraints>` 섹션에는 두 개는 `<VisibilityItem>` 항목입니다. 새 섹션 닫는 바로 뒤 저장 `</Commands>` 태그입니다.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     각 표시 유형 항목에는 지정한 단추 표시 되는 조건을 나타냅니다. 여러 조건에 적용 하려면 같은 단추에 대 한 여러 항목을 만들어야 합니다.  
+    각 표시 유형 항목에는 지정한 단추 표시 되는 조건을 나타냅니다. 여러 조건에 적용 하려면 같은 단추에 대 한 여러 항목을 만들어야 합니다.  
   
-3.  프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 표시 됩니다.  
+3. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 표시 됩니다.  
   
-     합니다 **솔루션 탐색기** 취소선 단추 도구 모음에 없습니다.  
+    합니다 **솔루션 탐색기** 취소선 단추 도구 모음에 없습니다.  
   
-4.  프로젝트가 포함 된 모든 솔루션을 엽니다.  
+4. 프로젝트가 포함 된 모든 솔루션을 엽니다.  
   
-     취소선 단추 기존 단추의 오른쪽 도구 모음에 표시 됩니다.  
+    취소선 단추 기존 단추의 오른쪽 도구 모음에 표시 됩니다.  
   
-5.  에 **파일** 메뉴에서 클릭 **솔루션 닫기**합니다. 단추가 도구 모음에서 사라집니다.  
+5. 에 **파일** 메뉴에서 클릭 **솔루션 닫기**합니다. 단추가 도구 모음에서 사라집니다.  
   
- 단추의 표시 여부에 의해 제어 됩니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSPackage가 로드 될 때까지 합니다. VSPackage를 로드 한 다음 단추의 표시 여부는 VSPackage에서 제어 됩니다.  자세한 내용은 참조 하세요. [Menucommand 합니다. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)합니다.  
+   단추의 표시 여부에 의해 제어 됩니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSPackage가 로드 될 때까지 합니다. VSPackage를 로드 한 다음 단추의 표시 여부는 VSPackage에서 제어 됩니다.  자세한 내용은 참조 하세요. [Menucommand 합니다. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

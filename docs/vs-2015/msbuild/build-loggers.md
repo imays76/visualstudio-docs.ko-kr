@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 855160fa1e1f02bbebecaa8ddc522bb92f3f5bd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbf27388013b71945879537dffff1e53a7314e7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853247"
 ---
 # <a name="build-loggers"></a>빌드 로거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "49226438"
   
  로거를 구현할 때 다음 두 가지 방법을 사용할 수 있습니다.  
   
--   <xref:Microsoft.Build.Framework.ILogger> 인터페이스를 직접 구현합니다.  
+- <xref:Microsoft.Build.Framework.ILogger> 인터페이스를 직접 구현합니다.  
   
--   도우미 클래스 <xref:Microsoft.Build.Utilities.Logger>에서 클래스를 파생합니다. 이 클래스는 Microsoft.Build.Utilities.dll 어셈블리에서 정의됩니다. <xref:Microsoft.Build.Utilities.Logger>는 <xref:Microsoft.Build.Framework.ILogger>를 구현하고 일부 <xref:Microsoft.Build.Framework.ILogger> 멤버의 기본 구현을 제공합니다.  
+- 도우미 클래스 <xref:Microsoft.Build.Utilities.Logger>에서 클래스를 파생합니다. 이 클래스는 Microsoft.Build.Utilities.dll 어셈블리에서 정의됩니다. <xref:Microsoft.Build.Utilities.Logger>는 <xref:Microsoft.Build.Framework.ILogger>를 구현하고 일부 <xref:Microsoft.Build.Framework.ILogger> 멤버의 기본 구현을 제공합니다.  
   
- 이 항목에서는 <xref:Microsoft.Build.Utilities.Logger>에서 파생되는 단순 로거를 작성하는 방법을 설명하고 특정 빌드 이벤트에 대한 응답으로 콘솔에 메시지를 표시합니다.  
+  이 항목에서는 <xref:Microsoft.Build.Utilities.Logger>에서 파생되는 단순 로거를 작성하는 방법을 설명하고 특정 빌드 이벤트에 대한 응답으로 콘솔에 메시지를 표시합니다.  
   
 ## <a name="registering-for-events"></a>이벤트 등록  
  로거의 목적은 빌드 엔진에 의해 보고되는 빌드 진행률에 대한 정보를 수집한 후 해당 정보를 유용한 방식으로 보고하는 것입니다. 모든 로거는 로거가 이벤트를 등록하는 위치에 해당하는 <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> 메서드를 재정의해야 합니다. 이 예제에서는 로거가 <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> 및 <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> 이벤트를 등록합니다.  

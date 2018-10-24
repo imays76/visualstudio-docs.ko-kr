@@ -9,20 +9,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d274241700dfdac393544f554f7025ea4d0bcb46
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6e2925eb3bfaf64a48b36c3c7205dce36538123c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823599"
 ---
 # <a name="code-maps-for-c-projects"></a>C + + 프로젝트에 대 한 코드 맵
 
 C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝트에 대해 찾아보기 정보 컴파일러 옵션(**/FR**)을 설정합니다. 그렇지 않으면 메시지가 표시되고 이 옵션을 설정하라는 메시지가 나타납니다. **확인**을 선택하면 현재 맵에 대해서만 옵션이 설정됩니다. 이후 모든 맵에 대해 메시지를 숨기도록 선택할 수 있습니다.
 
-Visual C++ 프로젝트가 포함된 솔루션을 열 때 IntelliSense 데이터베이스를 업데이트하는 데 시간이 걸릴 수 있습니다. 이 시간 동안 있습니다 못할 헤더에 대 한 코드 맵을 만들 (*.h* 또는 `#include`) IntelliSense 데이터베이스가 업데이트를 완료할 때까지 파일입니다. Visual Studio 상태 표시줄에서 업데이트 진행률을 모니터링할 수 있습니다.
+Visual C++ 프로젝트가 포함된 솔루션을 열 때 IntelliSense 데이터베이스를 업데이트하는 데 시간이 걸릴 수 있습니다. 이 시간 동안 있습니다 못할 헤더에 대 한 코드 맵을 만드는 데 (*.h* 또는 `#include`) IntelliSense 데이터베이스가 업데이트를 완료할 때까지 파일입니다. Visual Studio 상태 표시줄에서 업데이트 진행률을 모니터링할 수 있습니다.
 
-- 모든 소스 파일 및 솔루션의 헤더 파일 간의 종속성을 보려면 선택 **아키텍처** > **포함 파일의 그래프 생성**합니다.
+- 모든 소스 파일과 헤더 파일 솔루션 간 종속성을 보려면 선택 **아키텍처** > **포함 파일의 그래프 생성**합니다.
 
    ![네이티브 코드의 종속성 그래프](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -38,13 +38,13 @@ Visual C++ 프로젝트가 포함된 솔루션을 열 때 IntelliSense 데이터
 
 - 대부분의 **표시** 메뉴 항목은 C 및 C++ 코드에 사용할 수 없습니다.
 
-C 및 c + + 코드에 대 한 코드 맵을 만들 때는 이러한 문제가 발생할 수 있습니다.
+C 및 c + + 코드에 대해 코드 맵을 만들 때 이러한 문제가 발생할 수 있습니다.
 
 |**문제**|**가능한 원인**|**해결**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |코드 맵을 생성하지 못했습니다.|솔루션에 프로젝트가 성공적으로 만들어지지 않습니다.|발생한 빌드 오류를 수정하고 맵을 재생성합니다.|
-|코드 맵을 생성 하려고 하면 visual Studio가 응답 하지 않습니다는 **아키텍처** 메뉴.|프로그램 데이터베이스 파일(.pdb)이 손상될 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|솔루션을 다시 빌드한 다음 다시 시도합니다.|
-|IntelliSense 검색 데이터베이스에 대한 특정 설정을 사용할 수 없습니다.|Visual Studio에서 사용할 수 없습니다 특정 IntelliSense 설정을 **옵션** 대화 상자.|설정을 사용할 수 있도록 설정합니다.<br /><br /> 참조 [옵션, 텍스트 편집기, C/c + +, 고급](../ide/reference/options-text-editor-c-cpp-advanced.md)합니다.|
+|코드 맵을 생성 하려고 할 때 visual Studio가 응답 하지 않는 합니다 **아키텍처** 메뉴.|프로그램 데이터베이스 파일(.pdb)이 손상될 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|솔루션을 다시 빌드한 다음 다시 시도합니다.|
+|IntelliSense 검색 데이터베이스에 대한 특정 설정을 사용할 수 없습니다.|Visual Studio에서 특정 IntelliSense 설정을 사용할 수 있습니다 **옵션** 대화 상자.|설정을 사용할 수 있도록 설정합니다.<br /><br /> 참조 [옵션, 텍스트 편집기, C/c + +, 고급](../ide/reference/options-text-editor-c-cpp-advanced.md)합니다.|
 |**알 수 없는 메서드** 라는 메시지가 메서드 노드에 나타납니다.<br /><br /> 이 문제는 메서드의 이름을 확인할 수 없기 때문에 발생합니다.|이진 파일에 기본 재배치 테이블이 없을 수 있습니다.|링커에서 **/FIXED:NO** 옵션을 설정합니다.|
 ||프로그램 데이터베이스 파일(.pdb)이 빌드되지 않았을 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|링커에서 **/DEBUG** 옵션을 설정합니다.|
 ||.pdb 파일을 열 수 없거나 예상되는 위치에서 찾을 수 없습니다.|.pdb 파일이 예상되는 위치에 있는지 확인합니다.|
@@ -53,4 +53,4 @@ C 및 c + + 코드에 대 한 코드 맵을 만들 때는 이러한 문제가 �
 
 ## <a name="see-also"></a>참고자료
 
-- [코드 맵 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)
+- [코드 맵 사용 하 여 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)

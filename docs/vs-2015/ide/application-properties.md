@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848620"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ ms.locfileid: "49209016"
   
  **응용 프로그램** 창에서 다음 작업을 수행할 수 있습니다.  
   
--   어셈블리 정보 지정  
+- 어셈블리 정보 지정  
   
--   응용 프로그램에 대한 시작 화면 지정  
+- 응용 프로그램에 대한 시작 화면 지정  
   
--   응용 프로그램 수준 이벤트 지정  
+- 응용 프로그램 수준 이벤트 지정  
   
--   어셈블리 이름 변경  
+- 어셈블리 이름 변경  
   
--   응용 프로그램에 대한 네임스페이스 변경  
+- 응용 프로그램에 대한 네임스페이스 변경  
   
--   응용 프로그램 종류 변경  
+- 응용 프로그램 종류 변경  
   
--   응용 프로그램에 대한 시작 개체 변경  
+- 응용 프로그램에 대한 시작 개체 변경  
   
--   응용 프로그램 아이콘 지정  
+- 응용 프로그램 아이콘 지정  
   
--   Windows XP 시각적 스타일 사용  
+- Windows XP 시각적 스타일 사용  
   
--   응용 프로그램에 대한 인스턴스 만들기 동작 지정  
+- 응용 프로그램에 대한 인스턴스 만들기 동작 지정  
   
--   사용자 지정 사용자 인증 사용  
+- 사용자 지정 사용자 인증 사용  
   
--   응용 프로그램에 대한 종료 동작 지정  
+- 응용 프로그램에 대한 종료 동작 지정  
   
- 응용 프로그램에 사용할 수 있는 작업은 사용되는 개발 언어에 따라 달라집니다.  
+  응용 프로그램에 사용할 수 있는 작업은 사용되는 개발 언어에 따라 달라집니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [방법: 응용 프로그램 아이콘 지정(Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

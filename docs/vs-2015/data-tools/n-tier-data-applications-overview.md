@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852923"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 계층 데이터 응용 프로그램 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ N-계층 * 데이터 응용 프로그램은 여러 구분 되는 데이터 응�
 ## <a name="presentation-tier"></a>프레젠테이션 계층  
  합니다 *프레젠테이션 계층* 사용자가 응용 프로그램 상호 작용 하는 계층입니다. 여기에 포함 된 추가 응용 프로그램 논리 수도 있습니다. 일반적인 프레젠테이션 계층 구성 요소는 다음과 같습니다.  
   
--   바인딩 구성 요소와 같은 데이터를 <xref:System.Windows.Forms.BindingSource> 고 <xref:System.Windows.Forms.BindingNavigator>입니다.  
+- 바인딩 구성 요소와 같은 데이터를 <xref:System.Windows.Forms.BindingSource> 고 <xref:System.Windows.Forms.BindingNavigator>입니다.  
   
--   같은 개체의 데이터를 표현 [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) 프레젠테이션 계층에서 사용 하기 위해 엔터티 클래스입니다.  
+- 같은 개체의 데이터를 표현 [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) 프레젠테이션 계층에서 사용 하기 위해 엔터티 클래스입니다.  
   
- 일반적으로 프레젠테이션 계층 서비스 참조를 사용 하 여 중간 계층에 액세스 (예를 들어, 한 [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) 응용 프로그램). 프레젠테이션 계층 데이터 계층을 직접 액세스 하지는 않습니다. 프레젠테이션 계층은 중간 계층에서 데이터 액세스 구성 요소를 통해 데이터 계층을 사용 하 여 통신합니다.  
+  일반적으로 프레젠테이션 계층 서비스 참조를 사용 하 여 중간 계층에 액세스 (예를 들어, 한 [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) 응용 프로그램). 프레젠테이션 계층 데이터 계층을 직접 액세스 하지는 않습니다. 프레젠테이션 계층은 중간 계층에서 데이터 액세스 구성 요소를 통해 데이터 계층을 사용 하 여 통신합니다.  
   
 ## <a name="middle-tier"></a>중간 계층  
  합니다 *중간 계층* 는 계층 프레젠테이션 계층과 데이터 계층을 사용 하 여 서로 통신할 수 있습니다. 일반적인 중간 계층 구성 요소는 다음과 같습니다.  
   
--   비즈니스 규칙 및 데이터 유효성 검사 등의 비즈니스 논리  
+- 비즈니스 규칙 및 데이터 유효성 검사 등의 비즈니스 논리  
   
--   데이터 액세스 구성 요소와 같은 논리:  
+- 데이터 액세스 구성 요소와 같은 논리:  
   
-    -   [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) 하 고 [Dataadapter 및 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)합니다.  
+  -   [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) 하 고 [Dataadapter 및 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)합니다.  
   
-    -   같은 개체의 데이터를 표현 [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) 엔터티 클래스입니다.  
+  -   같은 개체의 데이터를 표현 [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) 엔터티 클래스입니다.  
   
-    -   일반적인 응용 프로그램 서비스, 인증, 권한 부여 및 개인 설정 등.  
+  -   일반적인 응용 프로그램 서비스, 인증, 권한 부여 및 개인 설정 등.  
   
- 다음 그림에서는 Visual Studio에서 사용할 수 있는 및 수 적합 한 위치 n 계층 응용 프로그램의 중간 계층에 있는 기술과 기능을 보여 줍니다.  
+  다음 그림에서는 Visual Studio에서 사용할 수 있는 및 수 적합 한 위치 n 계층 응용 프로그램의 중간 계층에 있는 기술과 기능을 보여 줍니다.  
   
- ![중간 계층 구성 요소](../data-tools/media/ntiermid.png "NtierMid")  
-중간 계층  
+  ![중간 계층 구성 요소](../data-tools/media/ntiermid.png "NtierMid")  
+  중간 계층  
   
- 일반적으로 중간 계층 데이터 연결을 사용 하 여 데이터 계층에 연결 합니다. 이 데이터 연결의 데이터 액세스 구성 요소가 일반적으로 저장 됩니다.  
+  일반적으로 중간 계층 데이터 연결을 사용 하 여 데이터 계층에 연결 합니다. 이 데이터 연결의 데이터 액세스 구성 요소가 일반적으로 저장 됩니다.  
   
 ## <a name="data-tier"></a>데이터 계층  
  합니다 *데이터 계층* 는 기본적으로 응용 프로그램 데이터를 저장 하는 서버 (예를 들어, 실행 하는 서버 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).  

@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cb5e3fe219d6ed8d976cf4bf03b3411dd5855a5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 000e28642a10c565e525b2714eed0d7abaca9340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858877"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: 식별자는 키워드와 달라야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
@@ -44,13 +45,13 @@ ms.locfileid: "49189776"
 
  이 규칙은 다음 언어의 키워드를 확인합니다.
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- 대/소문자 구분 비교는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 키워드 및 대/소문자 구분 비교는 다른 언어에 사용 됩니다.
+  대/소문자 구분 비교는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 키워드 및 대/소문자 구분 비교는 다른 언어에 사용 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  키워드 목록에 나타나지 않는 이름을 선택 합니다.

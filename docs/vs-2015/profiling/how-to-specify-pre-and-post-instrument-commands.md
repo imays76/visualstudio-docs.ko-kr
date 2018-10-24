@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34ebe35ba7cad601a0ba5d43cd5c424743cb2684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305469"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848386"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>방법: 계측 전 명령 및 계측 후 명령 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +36,25 @@ ms.locfileid: "49305469"
   
  **Requirements**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 명령이 실행되는 작업 디렉터리는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]를 실행 중인 운영 체제 및 프로파일링된 응용 프로그램의 대상 플랫폼에 따라 달라집니다.  
+  명령이 실행되는 작업 디렉터리는 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]를 실행 중인 운영 체제 및 프로파일링된 응용 프로그램의 대상 플랫폼에 따라 달라집니다.  
   
- **32비트 컴퓨터**  
+  **32비트 컴퓨터**  
   
- 32비트 컴퓨터에서 기본 프로파일러 도구가 위치한 디렉터리는 드라이브\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools입니다.  
+  32비트 컴퓨터에서 기본 프로파일러 도구가 위치한 디렉터리는 드라이브\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools입니다.  
   
- **64비트 컴퓨터**  
+  **64비트 컴퓨터**  
   
- 64비트 컴퓨터에서 프로파일링된 응용 프로그램의 대상 플랫폼에 따라 경로를 지정합니다.  
+  64비트 컴퓨터에서 프로파일링된 응용 프로그램의 대상 플랫폼에 따라 경로를 지정합니다.  
   
--   32비트 응용 프로그램의 경우 기본 프로파일러 도구 디렉터리는 다음과 같습니다.  
+- 32비트 응용 프로그램의 경우 기본 프로파일러 도구 디렉터리는 다음과 같습니다.  
   
-     *드라이브*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+   *드라이브*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
--   64비트 응용 프로그램의 경우 기본 프로파일러 도구가 위치한 디렉터리는 다음과 같습니다.  
+- 64비트 응용 프로그램의 경우 기본 프로파일러 도구가 위치한 디렉터리는 다음과 같습니다.  
   
-     *드라이브*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
+   *드라이브*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>계측 전 명령을 지정하려면  
   

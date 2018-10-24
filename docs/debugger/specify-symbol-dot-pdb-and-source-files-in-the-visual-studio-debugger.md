@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850245"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정
 
@@ -67,24 +67,24 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
    
    기본적으로 DLL을 만든 경우 또는 *.exe* 전체 경로 파일 이름을 연결 된 컴퓨터에 링커 파일 배치 *.pdb* DLL의 파일 또는 *.exe* 파일입니다. 디버거에서 기호 파일 위치에 존재 하는지 확인 합니다.  
    
-1. DLL 같은 폴더 또는 *.exe* 파일입니다.
+2. DLL 같은 폴더 또는 *.exe* 파일입니다.
    
-1. 기호 파일에 대 한 디버거 옵션에서 지정 된 모든 위치입니다. 참조를 추가 및 기호 위치를 사용 하도록 설정 하려면 [기호 위치를 구성 하 고 로드 옵션](#BKMK_Specify_symbol_locations_and_loading_behavior)합니다. 
+3. 기호 파일에 대 한 디버거 옵션에서 지정 된 모든 위치입니다. 참조를 추가 및 기호 위치를 사용 하도록 설정 하려면 [기호 위치를 구성 하 고 로드 옵션](#BKMK_Specify_symbol_locations_and_loading_behavior)합니다. 
    
-    - 모든 로컬 기호 캐시 폴더입니다.  
+   - 모든 로컬 기호 캐시 폴더입니다.  
   
-    - 선택한 경우 네트워크, 인터넷 또는 로컬 기호 서버 및 Microsoft 기호 서버 등의 위치를 지정 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 구현 하는 기호 서버에서 디버깅 기호 파일을 다운로드할 수는 `symsrv` 프로토콜입니다. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) 하며 [도구에 대 한 Windows 디버깅](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 기호 서버를 사용할 수 있는 도구가 두 가지 있습니다. 
+   - 선택한 경우 네트워크, 인터넷 또는 로컬 기호 서버 및 Microsoft 기호 서버 등의 위치를 지정 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 구현 하는 기호 서버에서 디버깅 기호 파일을 다운로드할 수는 `symsrv` 프로토콜입니다. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) 하며 [도구에 대 한 Windows 디버깅](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 기호 서버를 사용할 수 있는 도구가 두 가지 있습니다. 
       
-      기호 서버를 사용할 수는 다음과 같습니다.  
+     기호 서버를 사용할 수는 다음과 같습니다.  
       
-      **공용 Microsoft 기호 서버**: 시스템 DLL 이나 타사 라이브러리를 호출 하는 동안 발생 하는 충돌을 디버깅 하려면 해야 시스템 *.pdb* 파일입니다. 시스템 *.pdb* Windows Dll에 대 한 기호를 포함 하는 파일 *.exe* 파일 및 장치 드라이버입니다. Windows 운영 체제, MDAC, IIS, ISA, 기호를 가져올 수 있습니다 및 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 공용 Microsoft 기호 서버에서. 
+     **공용 Microsoft 기호 서버**: 시스템 DLL 이나 타사 라이브러리를 호출 하는 동안 발생 하는 충돌을 디버깅 하려면 해야 시스템 *.pdb* 파일입니다. 시스템 *.pdb* Windows Dll에 대 한 기호를 포함 하는 파일 *.exe* 파일 및 장치 드라이버입니다. Windows 운영 체제, MDAC, IIS, ISA, 기호를 가져올 수 있습니다 및 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 공용 Microsoft 기호 서버에서. 
       
-      **기호 서버에 내부 네트워크 또는 로컬 컴퓨터에**: 팀 또는 회사 외부 원본에서 귀하의 제품 및 기호에 대 한 캐시로 기호 서버를 만들 수 있습니다. 기호 서버가 사용자의 컴퓨터에 있을 수도 있습니다. 
+     **기호 서버에 내부 네트워크 또는 로컬 컴퓨터에**: 팀 또는 회사 외부 원본에서 귀하의 제품 및 기호에 대 한 캐시로 기호 서버를 만들 수 있습니다. 기호 서버가 사용자의 컴퓨터에 있을 수도 있습니다. 
       
-      **타사 기호 서버**: Windows 응용 프로그램 및 라이브러리의 타사 공급자를 인터넷에 기호 서버에 대 한 액세스를 제공할 수 있습니다. 
+     **타사 기호 서버**: Windows 응용 프로그램 및 라이브러리의 타사 공급자를 인터넷에 기호 서버에 대 한 액세스를 제공할 수 있습니다. 
     
-    > [!WARNING]
-    > 공용 Microsoft 기호 서버 이외의 기호 서버를 사용 하는 경우 해당 경로 및 기호 서버를 신뢰할 수 있는지 확인 합니다. 기호 파일에서 임의의 실행 코드를 포함할 수 있으므로 보안 위협에 노출 될 수 있습니다.  
+     > [!WARNING]
+     > 공용 Microsoft 기호 서버 이외의 기호 서버를 사용 하는 경우 해당 경로 및 기호 서버를 신뢰할 수 있는지 확인 합니다. 기호 파일에서 임의의 실행 코드를 포함할 수 있으므로 보안 위협에 노출 될 수 있습니다.  
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>기호 위치 및 로드 옵션 구성
@@ -101,7 +101,7 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
    
    ![도구 &#45; 옵션 &#45; 디버깅 &#45; 기호 페이지](media/dbg-options-symbols.png "도구 &#45; 옵션 &#45; 디버그 &#45; 기호 페이지")  
    
-1. 아래 **기호 파일 (.pdb) 위치**,
+2. 아래 **기호 파일 (.pdb) 위치**,
    - 사용 하 여 **Microsoft 기호 서버**, 확인란을 선택 합니다.  
    
    - 새 기호 서버 위치를 추가 하려면
@@ -119,21 +119,21 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
    - URL 또는 경로 편집 하려면 항목을 두 번 클릭 하거나 선택 하 고 키를 눌러 **F2**합니다.  
    - 항목을 제거 하려면를 선택 하 고 다음을 선택 합니다 **-** 아이콘입니다.
   
-1.  (선택 사항) 아래에서 기호 로드 성능을 개선 하기 위해 **이 디렉터리의 기호 캐시**, 기호 서버에 복사할 수 있는 로컬 폴더 경로를 기호 형식입니다.  
+3. (선택 사항) 아래에서 기호 로드 성능을 개선 하기 위해 **이 디렉터리의 기호 캐시**, 기호 서버에 복사할 수 있는 로컬 폴더 경로를 기호 형식입니다.  
   
-    > [!NOTE]
-    > 로컬 기호 캐시 C:\Windows 또는 하위 폴더와 같은 보호 된 폴더에 배치 하지 마십시오. 대신 읽기/쓰기 폴더를 사용하십시오.  
+   > [!NOTE]
+   > 로컬 기호 캐시 C:\Windows 또는 하위 폴더와 같은 보호 된 폴더에 배치 하지 마십시오. 대신 읽기/쓰기 폴더를 사용하십시오.  
   
-    > [!NOTE]
-    > C + + 프로젝트에 있는 경우에 `_NT_SYMBOL_PATH` 환경 변수 설정에서 설정 값을 재정의 합니다 **이 디렉터리의 기호 캐시**합니다.
+   > [!NOTE]
+   > C + + 프로젝트에 있는 경우에 `_NT_SYMBOL_PATH` 환경 변수 설정에서 설정 값을 재정의 합니다 **이 디렉터리의 기호 캐시**합니다.
   
-1. 디버거에서 로드를 원하는 모듈을 지정 합니다 **기호 파일 (.pdb) 위치** 시작 되 면 합니다.  
+4. 디버거에서 로드를 원하는 모듈을 지정 합니다 **기호 파일 (.pdb) 위치** 시작 되 면 합니다.  
   
-  -  선택 **제외 되지 않은 모두 모듈 로드** (기본값)에서 기호 파일 위치를 제외 하는 모듈을 제외 하 고 모든 모듈에 대 한 모든 기호를 로드 하려면. 특정 모듈을 제외 하려면 선택 **제외 된 모듈 지정**를 선택 합니다 **+** 아이콘을 선택 하 고 제외할 모듈의 이름을 입력 **확인**합니다.  
+   -  선택 **제외 되지 않은 모두 모듈 로드** (기본값)에서 기호 파일 위치를 제외 하는 모듈을 제외 하 고 모든 모듈에 대 한 모든 기호를 로드 하려면. 특정 모듈을 제외 하려면 선택 **제외 된 모듈 지정**를 선택 합니다 **+** 아이콘을 선택 하 고 제외할 모듈의 이름을 입력 **확인**합니다.  
   
-  -  기호 파일 위치에서 지정 된 모듈만 로드를 선택 **지정 된 모듈만 로드**합니다. 선택 **포함 된 모듈 지정**를 선택 합니다 **+** 아이콘을 포함 하 여 선택한 모듈의 이름을 입력 **확인**합니다. 다른 모듈에 대 한 기호 파일이 로드 되지 않습니다.  
+   -  기호 파일 위치에서 지정 된 모듈만 로드를 선택 **지정 된 모듈만 로드**합니다. 선택 **포함 된 모듈 지정**를 선택 합니다 **+** 아이콘을 포함 하 여 선택한 모듈의 이름을 입력 **확인**합니다. 다른 모듈에 대 한 기호 파일이 로드 되지 않습니다.  
   
-1.  **확인**을 선택합니다.
+5. **확인**을 선택합니다.
 
 ## <a name="other-symbol-options-for-debugging"></a>디버깅에 대 한 다른 기호 옵션
   
@@ -162,7 +162,7 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
   
   이 항목 및 자식 항목을 선택 합니다. **부분 신뢰 어셈블리 (관리 전용)에 대해 소스 서버 허용** 하 고 **항상 묻지 않고 신뢰할 수 없는 소스 서버 명령 실행** 보안 위험을 증가 시킬 수 있습니다.  
   
-  ![원본 서버 옵션을 사용 하도록 설정](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
+  ![소스 서버 옵션 사용](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
 
 ## <a name="compiler-symbol-options"></a>컴파일러 기호 옵션  
 
@@ -232,7 +232,7 @@ Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 자동으�
    
 이 문제가 발생 하면 디버거 표시 합니다 **로드 된 기호 없음** 또는 **로드 된 소스 없음** 찾기 및 필요한 기호 또는 소스를 로드 하는 데는 페이지입니다.  
   
- ![로드 된 기호 없음 페이지](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
+ ![기호가 로드 페이지 없음](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
   
 **에 누락 된 기호 찾기 및 로드 하는 데 로드 된 기호 없음 문서 페이지를 사용 합니다.**  
   

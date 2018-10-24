@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5647a62064857bca6a6352a14fe56eff4386f9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825818"
 ---
 # <a name="how-to-use-the-activity-log"></a>방법: 활동 로그 사용
 Vspackage는 활동 로그에 메시지를 작성할 수 있습니다. 이 기능은 소매 환경에서 Vspackage를 디버깅 하는 데 특히 유용 합니다.  
@@ -47,15 +47,15 @@ Vspackage는 활동 로그에 메시지를 작성할 수 있습니다. 이 기�
   
 ## <a name="to-examine-the-activity-log"></a>활동 로그를 검사 하려면  
   
-1.  Visual Studio를 실행 합니다 [로그](../ide/reference/log-devenv-exe.md) 세션 중 ActivityLog.xml 디스크에 쓸 수 있는 명령줄 스위치입니다.
+1. Visual Studio를 실행 합니다 [로그](../ide/reference/log-devenv-exe.md) 세션 중 ActivityLog.xml 디스크에 쓸 수 있는 명령줄 스위치입니다.
 
-2.  Visual Studio를 닫은 후 활동 로그의 하위 폴더에서 Visual Studio 데이터에 대 한 찾기: **% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml* 합니다.  
+2. Visual Studio를 닫은 후 활동 로그의 하위 폴더에서 Visual Studio 데이터에 대 한 찾기:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*합니다.  
   
-3.  임의의 텍스트 편집기를 사용 하 여 활동 로그를 엽니다. 다음은 일반적인 항목:  
+3. 임의의 텍스트 편집기를 사용 하 여 활동 로그를 엽니다. 다음은 일반적인 항목:  
   
-    ```  
-    Called for: Company.MyApp.MyAppPackage ...  
-    ```  
+   ```  
+   Called for: Company.MyApp.MyAppPackage ...  
+   ```  
   
 ## <a name="robust-programming"></a>강력한 프로그래밍  
  활동 로그 서비스 이기 때문에 활동 로그 VSPackage 생성자에서 사용할 수 없는 경우  
