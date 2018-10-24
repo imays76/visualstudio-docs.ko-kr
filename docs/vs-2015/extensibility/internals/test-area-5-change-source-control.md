@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856667"
 ---
 # <a name="test-area-5-change-source-control"></a>테스트 영역 5: 소스 제어 변경
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ ms.locfileid: "49229257"
   
  **소스 제어 변경** 명령은 사용자에 대 한 네 가지 기본 기능을 제공 합니다.  
   
--   **바인딩:**  
+- **바인딩:**  
   
-     사용자를 설정 또는 다시 설정 하는 원본 제어 솔루션/프로젝트와 버전 저장소에 있습니다.  
+   사용자를 설정 또는 다시 설정 하는 원본 제어 솔루션/프로젝트와 버전 저장소에 있습니다.  
   
--   **바인딩 해제 합니다.**  
+- **바인딩 해제 합니다.**  
   
-     각 연결 단위로에서 소스 제어에서 프로젝트/솔루션을 제거합니다.  
+   각 연결 단위로에서 소스 제어에서 프로젝트/솔루션을 제거합니다.  
   
--   **연결/연결 끊기:**  
+- **연결/연결 끊기:**  
   
- 영역 3에서 설명 하는 제어 된 솔루션의 설정/해제 연결 또는 오프 라인 상태입니다. 자세한 내용은 [테스트 영역 3: 체크 아웃 / 체크 아웃 취소](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)합니다.  
+  영역 3에서 설명 하는 제어 된 솔루션의 설정/해제 연결 또는 오프 라인 상태입니다. 자세한 내용은 [테스트 영역 3: 체크 아웃 / 체크 아웃 취소](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)합니다.  
   
 ## <a name="command-menu-access"></a>명령 메뉴 액세스  
  다음 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 테스트 사례의 통합된 개발 환경 메뉴 경로가 사용 됩니다.  

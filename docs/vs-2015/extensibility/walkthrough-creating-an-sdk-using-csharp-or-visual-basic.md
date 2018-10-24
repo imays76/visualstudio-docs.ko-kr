@@ -13,12 +13,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f792553e29a4b24d30a25dd835db0b96befcbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824271"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>연습: C# 또는 Visual Basic을 사용하여 SDK 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,23 +138,23 @@ ms.locfileid: "49215607"
   
 ##  <a name="createSample"></a> 클래스 라이브러리를 사용 하는 샘플 앱을 만들려면  
   
-1.  메뉴 모음에서 **파일**, **새로 만들기**하십시오 **새 프로젝트**.  
+1. 메뉴 모음에서 **파일**, **새로 만들기**하십시오 **새 프로젝트**.  
   
-2.  템플릿 목록에서 확장 **Visual C#** 또는 **Visual Basic**를 선택한 후는 **Windows 스토어** 노드.  
+2. 템플릿 목록에서 확장 **Visual C#** 또는 **Visual Basic**를 선택한 후는 **Windows 스토어** 노드.  
   
-3.  선택 합니다 **비어 있는 앱** 서식 파일을 프로젝트의 이름 **ArithmeticUI**를 선택한 후는 **확인** 단추입니다.  
+3. 선택 합니다 **비어 있는 앱** 서식 파일을 프로젝트의 이름 **ArithmeticUI**를 선택한 후는 **확인** 단추입니다.  
   
-4.  **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **ArithmeticUI** 프로젝트를 선택한 후 **추가**를 **참조**합니다.  
+4. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **ArithmeticUI** 프로젝트를 선택한 후 **추가**를 **참조**합니다.  
   
-5.  참조 형식의 목록에서 확장 **Windows**를 선택한 후 **확장**합니다.  
+5. 참조 형식의 목록에서 확장 **Windows**를 선택한 후 **확장**합니다.  
   
-6.  세부 정보 창에서 선택 합니다 **간단한 수학 SDK** 확장 합니다.  
+6. 세부 정보 창에서 선택 합니다 **간단한 수학 SDK** 확장 합니다.  
   
-     SDK에 대 한 추가 정보가 표시 됩니다. 선택할 수 있습니다는 **자세한 정보** 열려면 링크 http://www.msdn.microsoft.com처럼이 연습의 앞부분에서 SDKManifest.xml 파일에 지정 합니다.  
+    SDK에 대 한 추가 정보가 표시 됩니다. 선택할 수 있습니다는 **자세한 정보** 열려면 링크 http://www.msdn.microsoft.com처럼이 연습의 앞부분에서 SDKManifest.xml 파일에 지정 합니다.  
   
-7.  **참조 관리자** 대화 상자를 선택 합니다 **간단한 수학 SDK** 확인란을 선택한 후는 **확인** 단추.  
+7. **참조 관리자** 대화 상자를 선택 합니다 **간단한 수학 SDK** 확인란을 선택한 후는 **확인** 단추.  
   
-8.  메뉴 모음에서 **뷰**하십시오 **개체 브라우저**합니다.  
+8. 메뉴 모음에서 **뷰**하십시오 **개체 브라우저**합니다.  
   
 9. 에 **찾아보기** 목록에서 선택 **간단한 수학**합니다.  
   
@@ -176,7 +176,7 @@ ms.locfileid: "49215607"
   
      올바른 결과 표시 합니다.  
   
- 성공적으로 만들고 확장명 SDK를 사용 합니다.  
+    성공적으로 만들고 확장명 SDK를 사용 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [연습: c + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

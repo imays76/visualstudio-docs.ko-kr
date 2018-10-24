@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872072"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>명령줄에서 계층 상호 작용 데이터 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,36 +55,36 @@ ms.locfileid: "49228421"
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>Windows 데스크톱 응용 프로그램 예제 프로파일링  
   
-1.  관리자 권한으로 명령 프롬프트 창을 엽니다. **시작**을 클릭하고 **모든 프로그램**, **보조 프로그램**을 차례로 가리킵니다. **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.  
+1. 관리자 권한으로 명령 프롬프트 창을 엽니다. **시작**을 클릭하고 **모든 프로그램**, **보조 프로그램**을 차례로 가리킵니다. **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.  
   
-2.  .NET 프로파일링 및 TIP 환경 변수를 초기화합니다. 다음 명령을 입력합니다.  
+2. .NET 프로파일링 및 TIP 환경 변수를 초기화합니다. 다음 명령을 입력합니다.  
   
-    ```  
-    vsperfclrenv /traceon  
-    vsperfclrenv /interactionon  
-    ```  
+   ```  
+   vsperfclrenv /traceon  
+   vsperfclrenv /interactionon  
+   ```  
   
-3.  프로파일러를 시작합니다. 다음 명령을 입력합니다.  
+3. 프로파일러를 시작합니다. 다음 명령을 입력합니다.  
   
-    ```  
-    vsperfcmd /start:trace /output:Desktop_tip.vsp   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:Desktop_tip.vsp   
+   ```  
   
-4.  VSPerfCmd로 응용 프로그램을 시작합니다. 다음 명령을 입력합니다.  
+4. VSPerfCmd로 응용 프로그램을 시작합니다. 다음 명령을 입력합니다.  
   
-    ```  
-    vsperfcmd /launch:DesktopApp.exe  
-    ```  
+   ```  
+   vsperfcmd /launch:DesktopApp.exe  
+   ```  
   
-5.  응용 프로그램을 실행하여 프로파일링 데이터를 수집한 다음 정상적인 방법으로 응용 프로그램을 닫습니다.  
+5. 응용 프로그램을 실행하여 프로파일링 데이터를 수집한 다음 정상적인 방법으로 응용 프로그램을 닫습니다.  
   
-6.  TIP 환경 변수를 지웁니다. 다음 명령을 입력합니다.  
+6. TIP 환경 변수를 지웁니다. 다음 명령을 입력합니다.  
   
-    ```  
-    vsperfclrenv /off  
-    ```  
+   ```  
+   vsperfclrenv /off  
+   ```  
   
- 자세한 내용은 [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)을 참조하세요.  
+   자세한 내용은 [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)을 참조하세요.  
   
 ### <a name="profiling-services"></a>서비스 프로파일링  
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램을 포함하여 서비스를 프로파일링하려면 **VSPerfClrEnv /GlobalInteractionOn** 옵션을 사용하여 환경 변수를 설정하고 **VSPerfClrEnv /GlobalInteractionOff** 옵션을 사용하여 제거합니다.  
@@ -95,33 +95,33 @@ ms.locfileid: "49228421"
   
 ##### <a name="profiling-a-windows-service-example"></a>Windows 서비스 프로파일링 예제  
   
-1.  필요한 경우 서비스를 설치합니다.  
+1. 필요한 경우 서비스를 설치합니다.  
   
-2.  관리자 권한으로 명령 프롬프트 창을 엽니다. **시작**을 클릭하고 **모든 프로그램**, **보조 프로그램**을 차례로 가리킵니다. **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.  
+2. 관리자 권한으로 명령 프롬프트 창을 엽니다. **시작**을 클릭하고 **모든 프로그램**, **보조 프로그램**을 차례로 가리킵니다. **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.  
   
-3.  .NET 프로파일링 환경 변수를 초기화합니다. 다음 명령을 입력합니다.  
+3. .NET 프로파일링 환경 변수를 초기화합니다. 다음 명령을 입력합니다.  
   
-    ```  
-    vsperfclrenv /globaltraceon  
-    ```  
+   ```  
+   vsperfclrenv /globaltraceon  
+   ```  
   
-4.  TIP 환경 변수를 초기화합니다. 다음 명령을 입력합니다.  
+4. TIP 환경 변수를 초기화합니다. 다음 명령을 입력합니다.  
   
-    ```  
-    vsperfclrenv /globalinteractionon  
-    ```  
+   ```  
+   vsperfclrenv /globalinteractionon  
+   ```  
   
-5.  환경 변수를 등록하기 위해 컴퓨터를 다시 시작합니다.  
+5. 환경 변수를 등록하기 위해 컴퓨터를 다시 시작합니다.  
   
-6.  관리자 권한으로 명령 프롬프트 창을 엽니다.  
+6. 관리자 권한으로 명령 프롬프트 창을 엽니다.  
   
-7.  프로파일러를 시작합니다. 다음 명령을 입력합니다.  
+7. 프로파일러를 시작합니다. 다음 명령을 입력합니다.  
   
-    ```  
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
+   ```  
   
-8.  필요한 경우 서비스를 시작합니다.  
+8. 필요한 경우 서비스를 시작합니다.  
   
 9. 프로파일러를 서비스에 연결합니다. 다음 명령을 입력합니다.  
   
@@ -143,11 +143,11 @@ ms.locfileid: "49228421"
   
 13. 지운 환경 변수를 등록하기 위해 컴퓨터를 다시 시작합니다.  
   
- 자세한 내용은 다음 항목 중 하나를 참조하십시오.  
+    자세한 내용은 다음 항목 중 하나를 참조하십시오.  
   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
- [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)  
+    [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd를 사용하여 계층 상호 작용 데이터 추가  
  VSPerfASPNETCmd 명령줄 도구를 사용하면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램을 손쉽게 프로파일링할 수 있습니다. **VSPerfCmd** 명령줄 도구와 비교하면 옵션 수가 더 적고, 환경 변수를 설정할 필요가 없으며, 컴퓨터를 다시 부팅하지 않아도 됩니다. VSPerfASPNETCmd의 이러한 기능 덕분에 계층 상호 작용 데이터를 매우 쉽게 수집할 수 있습니다.  

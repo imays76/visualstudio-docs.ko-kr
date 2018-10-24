@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 714ca84a860f01ecc0df6536adb5ea9bb60989fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820501"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서의 c + +에서 형식 지정자
 형식 지정자를 사용하여 **조사식** 창에 값이 표시되는 형식을 변경할 수 있습니다.  
@@ -43,9 +43,9 @@ ms.locfileid: "37057758"
   
 > [!NOTE]
 >  Visual Studio 네이티브 디버거가 새로운 디버깅 엔진으로 변경 되 면 추가 된 몇 가지 새 형식 지정자 및 일부 기존 제거 되었습니다. C++/CLI를 사용하여 interop(혼합 네이티브 및 관리) 디버깅을 수행할 때 이전 디버거가 계속 사용됩니다. 이 항목의 다음 섹션에서는 각 디버그 엔진에 대한 형식 지정자를 보여 줍니다.
->   
->  -   [형식 지정자](#BKMK_Visual_Studio_2012_format_specifiers) 에서는 새로운 디버깅 엔진의 형식 지정자에 대해 설명합니다.  
-> -   [C++/CLI를 사용하는 interop 디버깅의 형식 지정자](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 에서는 이전 디버깅 엔진의 형식 지정자에 대해 설명합니다.  
+> 
+> - [형식 지정자](#BKMK_Visual_Studio_2012_format_specifiers) 에서는 새로운 디버깅 엔진의 형식 지정자에 대해 설명합니다.  
+>   -   [C++/CLI를 사용하는 interop 디버깅의 형식 지정자](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 에서는 이전 디버깅 엔진의 형식 지정자에 대해 설명합니다.  
   
 ## <a name="using-format-specifiers"></a>형식 지정자 사용  
  다음과 같은 코드를 가정해 봅니다.  
@@ -144,4 +144,4 @@ int main() {
   
 |지정자|형식|식|표시되는 값|  
 |---------------|------------|----------------|---------------------|  
-|n|10진수 정수|pBuffer[32]|`pBuffer` 를 요소가 32개인 배열로 표시합니다.|
+|n|10진수 정수|pBuffer[32]|`pBuffer`를 요소가 32개인 배열로 표시합니다.|

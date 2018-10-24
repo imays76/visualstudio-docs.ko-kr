@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3978d72372f2aa9a0c57184083c67476886016aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840703"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>방법: 먼저 빌드할 대상 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49232117"
   
 #### <a name="to-specify-one-initial-target"></a>하나의 초기 대상을 지정합니다.  
   
--   `Project` 요소의 `InitialTargets` 특성에서 기본 대상을 지정합니다. 예를 들어:  
+- `Project` 요소의 `InitialTargets` 특성에서 기본 대상을 지정합니다. 예를 들어:  
   
-     `<Project InitialTargets="Clean">`  
+   `<Project InitialTargets="Clean">`  
   
- 대상을 순서대로 나열하고 각 대상으로 세미콜론으로 구분하여 `InitialTargets` 특성에서 두 개 이상의 초기 대상을 지정할 수 있습니다. 목록의 대상은 순차적으로 실행됩니다.  
+  대상을 순서대로 나열하고 각 대상으로 세미콜론으로 구분하여 `InitialTargets` 특성에서 두 개 이상의 초기 대상을 지정할 수 있습니다. 목록의 대상은 순차적으로 실행됩니다.  
   
 #### <a name="to-specify-more-than-one-initial-target"></a>두 개 이상의 초기 대상을 지정하려면  
   
@@ -53,11 +53,11 @@ ms.locfileid: "49232117"
   
 #### <a name="to-specify-one-default-target"></a>하나의 기본 대상을 지정하려면  
   
--   `Project` 요소의 `DefaultTargets` 특성에서 기본 대상을 지정합니다. 예를 들어:  
+- `Project` 요소의 `DefaultTargets` 특성에서 기본 대상을 지정합니다. 예를 들어:  
   
-     `<Project DefaultTargets="Compile">`  
+   `<Project DefaultTargets="Compile">`  
   
- 대상을 순서대로 나열하고 각 대상으로 세미콜론으로 구분하여 `DefaultTargets` 특성에서 두 개 이상의 기본 대상을 지정할 수 있습니다. 목록의 대상은 순차적으로 실행됩니다.  
+  대상을 순서대로 나열하고 각 대상으로 세미콜론으로 구분하여 `DefaultTargets` 특성에서 두 개 이상의 기본 대상을 지정할 수 있습니다. 목록의 대상은 순차적으로 실행됩니다.  
   
 #### <a name="to-specify-more-than-one-default-target"></a>두 개 이상의 기본 대상을 지정하려면  
   

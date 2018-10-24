@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868432"
 ---
 # <a name="elements-of-the-isolated-shell"></a>격리 셸의 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49246053"
 ## <a name="run-time-settings"></a>런타임 설정  
  격리 셸 응용 프로그램을 시작 하는 경우 Visual Studio shell의 시작 진입점을 호출 합니다. 응용 프로그램 설정에는 응용 프로그램이 시작 되 면 다음과 같이 정의 됩니다.  
   
-1.  Visual Studio shell 특정 키에 대 한 응용 프로그램 레지스트리를 확인합니다. 키에 대 한 설정을 시작 진입점에 대 한 호출에 지정 되어 있으면 해당 값 레지스트리 값을 재정의 합니다.  
+1. Visual Studio shell 특정 키에 대 한 응용 프로그램 레지스트리를 확인합니다. 키에 대 한 설정을 시작 진입점에 대 한 호출에 지정 되어 있으면 해당 값 레지스트리 값을 재정의 합니다.  
   
-2.  레지스트리 나 항목 지점 설정의 값을 지정 하는 매개 변수 경우 설정의 기본값이 사용 됩니다.  
+2. 레지스트리 나 항목 지점 설정의 값을 지정 하는 매개 변수 경우 설정의 기본값이 사용 됩니다.  
   
- 명령줄에서 응용 프로그램을 시작 하면 모든 명령줄 스위치는 Devenv를 동일한 방식으로 처리 하는 Visual Studio shell에 전달 됩니다. Devenv 스위치에 대 한 자세한 내용은 참조 하십시오 [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md) 하 고 [VSPackage 개발을 위한 Devenv 명령줄 스위치](../extensibility/devenv-command-line-switches-for-vspackage-development.md)합니다. 명령줄 스위치에 대 한 패키지를 등록 하는 방법에 대 한 자세한 내용은 참조 하세요. [명령줄 스위치 추가](../extensibility/adding-command-line-switches.md)합니다.  
+   명령줄에서 응용 프로그램을 시작 하면 모든 명령줄 스위치는 Devenv를 동일한 방식으로 처리 하는 Visual Studio shell에 전달 됩니다. Devenv 스위치에 대 한 자세한 내용은 참조 하십시오 [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md) 하 고 [VSPackage 개발을 위한 Devenv 명령줄 스위치](../extensibility/devenv-command-line-switches-for-vspackage-development.md)합니다. 명령줄 스위치에 대 한 패키지를 등록 하는 방법에 대 한 자세한 내용은 참조 하세요. [명령줄 스위치 추가](../extensibility/adding-command-line-switches.md)합니다.  
   
 ## <a name="the-start-entry-point"></a>시작 진입점  
  Appenvstub.dll 파일 격리 셸 액세스에 대 한 진입점을 포함 합니다. 응용 프로그램이 시작 되 면 시작 항목 Appenvstub.dll 지점을 호출 합니다.  

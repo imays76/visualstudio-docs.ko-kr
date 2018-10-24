@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2072006941c0572fc8072f2dd99afe7d324326bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858356"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842848"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>모델 공유 및 다이어그램 내보내기
 Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동료와 공유할 수 있습니다.
@@ -46,7 +46,7 @@ Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동
 ## <a name="related-topics"></a>관련 항목
 
 |제목|설명|
-|-----------|-----------------|
+|-|-|
 |[모델링 솔루션 구성](../modeling/structure-your-modeling-solution.md)|대규모 또는 중간 규모 프로젝트에서 모델을 공유합니다.|
 |[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|다이어그램의 일부를 PowerPoint 또는 Word와 같은 응용 프로그램으로 복사하거나 다이어그램을 XPS 파일로 인쇄할 수 있습니다.|
 |[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)|모델 및 다이어그램의 개요입니다.|

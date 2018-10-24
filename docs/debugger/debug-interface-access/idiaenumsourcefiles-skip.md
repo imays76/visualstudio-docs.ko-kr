@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dedc9e3218d56c4e58f35c70b3bce8bf4dd8ae7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2e517f03a13debfd13dacfe92b4bb08bfddc727
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849062"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
-열거형 시퀀스의 소스 파일의 지정 된 수를 건너뜁니다.  
+열거형 시퀀스를 소스 파일의 지정 된 수를 건너뜁니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>매개 변수  
  celt  
- [in] 열거형 시퀀스를 건너뛰려면에서 소스 파일의 수입니다.  
+ [in] 건너뛸 열거형 시퀀스에서 원본 파일의 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 건너뛸 자세한 소스 파일이 없는 경우.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 건너뛸 자세한 원본 파일이 없는 경우.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

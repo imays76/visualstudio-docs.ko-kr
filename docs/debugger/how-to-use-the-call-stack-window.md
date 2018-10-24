@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853612"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>호출 스택 보기 및 Visual Studio 디버거에서 호출 스택 창 사용
 
@@ -45,17 +45,17 @@ ms.locfileid: "43774735"
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > 합니다 **호출 스택** Eclipse와 같은 일부 Ide 창에 디버그 관점 비슷합니다. 
-
+> 
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 여기서 설명하는 것과 다를 수 있습니다. 설정을 변경 하려면 선택 **설정 가져오기 및 내보내기** 에 **도구** 메뉴.  참조 [IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>디버거 내에서 호출 스택을 보려면 
   
--   디버깅 하는 동안 합니다 **디버그** 메뉴에서 **Windows > 호출 스택**합니다.
+- 디버깅 하는 동안 합니다 **디버그** 메뉴에서 **Windows > 호출 스택**합니다.
 
- ![호출 스택 창](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![호출 스택 창](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 노란색 화살표는 현재 실행 포인터가 있는 스택 프레임을 나타냅니다. 기본적으로이 원본에 해당 정보가 표시 되는 스택 프레임 **지역**를 **자동**합니다 **조사식**, 및 **디스어셈블리** windows . 디버거 컨텍스트 스택의 다른 프레임으로 변경 하려는 경우 수 이렇게 [다른 스택 프레임으로 전환](#bkmk_switch)합니다.   
   

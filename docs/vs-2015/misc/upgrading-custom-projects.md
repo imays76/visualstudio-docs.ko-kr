@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: 1eceaee51778e9eafa6d81f819a17a25377b2841
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12b99770a7ab884e077ad6ba051a35d6e5316a49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844681"
 ---
 # <a name="upgrading-custom-projects"></a>사용자 지정 프로젝트 업그레이드
 제품의 다른 Visual Studio 버전 간에 프로젝트 파일에 있는 정보를 변경하는 경우 이전 버전에서 새 버전으로의 프로젝트 파일 업그레이드를 지원해야 합니다. 참여할 수 있도록 업그레이드를 지원 합니다 **Visual Studio 변환 마법사**를 구현를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스입니다. 이 인터페이스에는 복사 업그레이드에 사용할 수 있는 메커니즘만 포함되어 있습니다. 프로젝트 업그레이드는 솔루션의 일부가 열릴 때 수행됩니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스는 프로젝트 팩터리에서 구현되거나 적어도 프로젝트 팩터리에서 얻을 수 있어야 합니다.  
@@ -65,31 +65,31 @@ ms.locfileid: "49173594"
   
 #### <a name="to-implement-ivsprojectupgrade"></a>IVsProjectUpgrade를 구현하려면  
   
-1.  사용자가 프로젝트를 열면 프로젝트가 열린 후 프로젝트에 대한 다른 사용자 작업을 수행할 수 있기 전에 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 메서드가 호출됩니다. 사용자에게 솔루션을 업그레이드하라는 메시지가 이미 표시된 경우 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> 플래그가 `grfUpgradeFlags` 매개 변수에 전달됩니다. 사용자가 프로젝트를 직접 이러한 경우 사용 하는 **기존 프로젝트 추가** 명령인 경우 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> 플래그가 전달 되지 않으며 프로젝트를 업그레이드 하 라는 메시지를 해야 합니다.  
+1. 사용자가 프로젝트를 열면 프로젝트가 열린 후 프로젝트에 대한 다른 사용자 작업을 수행할 수 있기 전에 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 메서드가 호출됩니다. 사용자에게 솔루션을 업그레이드하라는 메시지가 이미 표시된 경우 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> 플래그가 `grfUpgradeFlags` 매개 변수에 전달됩니다. 사용자가 프로젝트를 직접 이러한 경우 사용 하는 **기존 프로젝트 추가** 명령인 경우 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> 플래그가 전달 되지 않으며 프로젝트를 업그레이드 하 라는 메시지를 해야 합니다.  
   
-2.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 호출에 응답하여 프로젝트에서는 프로젝트 파일이 업그레이드되었는지 평가해야 합니다. 프로젝트에서 프로젝트 형식을 새 버전으로 업그레이드할 필요가 없는 경우에는 간단히 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 플래그를 반환할 수 있습니다.  
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 호출에 응답하여 프로젝트에서는 프로젝트 파일이 업그레이드되었는지 평가해야 합니다. 프로젝트에서 프로젝트 형식을 새 버전으로 업그레이드할 필요가 없는 경우에는 간단히 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 플래그를 반환할 수 있습니다.  
   
-3.  프로젝트에서 프로젝트 형식을 새 버전으로 업그레이드해야 하는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 메서드를 호출하고 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> 값을 `rgfQueryEdit` 매개 변수에 전달하여 프로젝트 파일을 수정할 수 있는지 여부를 확인해야 합니다. 그런 다음 프로젝트에서 다음을 수행해야 합니다.  
+3. 프로젝트에서 프로젝트 형식을 새 버전으로 업그레이드해야 하는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 메서드를 호출하고 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> 값을 `rgfQueryEdit` 매개 변수에 전달하여 프로젝트 파일을 수정할 수 있는지 여부를 확인해야 합니다. 그런 다음 프로젝트에서 다음을 수행해야 합니다.  
   
-    -   `pfEditCanceled` 매개 변수에서 반환된 `VSQueryEditResult` 값이 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>인 경우 프로젝트 파일을 쓸 수 있으므로 업그레이드를 진행할 수 있습니다.  
+   -   `pfEditCanceled` 매개 변수에서 반환된 `VSQueryEditResult` 값이 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>인 경우 프로젝트 파일을 쓸 수 있으므로 업그레이드를 진행할 수 있습니다.  
   
-    -   `pfEditCanceled` 매개 변수에서 반환된 `VSQueryEditResult` 값이 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>이고 `VSQueryEditResult` 값에 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> 비트가 설정된 경우에는 사용자가 권한 문제를 직접 해결해야 하므로 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>에서 오류를 반환해야 합니다. 그런 다음 프로젝트에서 다음을 수행해야 합니다.  
+   -   `pfEditCanceled` 매개 변수에서 반환된 `VSQueryEditResult` 값이 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>이고 `VSQueryEditResult` 값에 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> 비트가 설정된 경우에는 사용자가 권한 문제를 직접 해결해야 하므로 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>에서 오류를 반환해야 합니다. 그런 다음 프로젝트에서 다음을 수행해야 합니다.  
   
-         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>를 호출하여 사용자에게 오류를 보고합니다. 그리고 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> 오류 코드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>에 반환합니다.  
+        <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>를 호출하여 사용자에게 오류를 보고합니다. 그리고 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> 오류 코드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>에 반환합니다.  
   
-    -   `VSQueryEditResult` 값이 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>이고 `VSQueryEditResultFlags` 값에 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> 비트가 설정된 경우에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>,...)를 호출하여 프로젝트 파일을 체크 아웃해야 합니다.  
+   -   `VSQueryEditResult` 값이 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>이고 `VSQueryEditResultFlags` 값에 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> 비트가 설정된 경우에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>,...)를 호출하여 프로젝트 파일을 체크 아웃해야 합니다.  
   
-4.  프로젝트 파일에 대한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 호출로 파일이 체크 아웃되고 최신 버전이 검색되는 경우에는 프로젝트가 언로드되었다가 다시 로드됩니다. 프로젝트의 다른 인스턴스가 생성되면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 메서드가 다시 호출됩니다. 이 두 번째 호출에서 프로젝트 파일을 디스크에 쓸 수 있습니다. 프로젝트에서 프로젝트 파일의 복사본을 .OLD 확장명을 사용하는 이전 형식으로 저장하고 필요한 업그레이드 변경을 수행한 다음 프로젝트 파일을 새 형식으로 저장하는 것이 좋습니다. 마찬가지로 업그레이드 프로세스의 일부가 실패하면 메서드에서는 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>를 반환하여 오류를 표시해야 합니다. 이로 인해 솔루션 탐색기에서 프로젝트가 언로드됩니다.  
+4. 프로젝트 파일에 대한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 호출로 파일이 체크 아웃되고 최신 버전이 검색되는 경우에는 프로젝트가 언로드되었다가 다시 로드됩니다. 프로젝트의 다른 인스턴스가 생성되면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 메서드가 다시 호출됩니다. 이 두 번째 호출에서 프로젝트 파일을 디스크에 쓸 수 있습니다. 프로젝트에서 프로젝트 파일의 복사본을 .OLD 확장명을 사용하는 이전 형식으로 저장하고 필요한 업그레이드 변경을 수행한 다음 프로젝트 파일을 새 형식으로 저장하는 것이 좋습니다. 마찬가지로 업그레이드 프로세스의 일부가 실패하면 메서드에서는 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>를 반환하여 오류를 표시해야 합니다. 이로 인해 솔루션 탐색기에서 프로젝트가 언로드됩니다.  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 메서드 호출(ReportOnly 값 지정)에서 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> 및 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> 플래그를 반환하는 경우에 대해 환경에서 수행되는 전체 프로세스를 이해해야 합니다.  
+    <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 메서드 호출(ReportOnly 값 지정)에서 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> 및 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> 플래그를 반환하는 경우에 대해 환경에서 수행되는 전체 프로세스를 이해해야 합니다.  
   
-5.  사용자가 프로젝트 파일을 열려고 합니다.  
+5. 사용자가 프로젝트 파일을 열려고 합니다.  
   
-6.  환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> 구현을 호출합니다.  
+6. 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> 구현을 호출합니다.  
   
-7.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A>가 `true`를 반환하는 경우 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> 구현을 호출합니다.  
+7. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A>가 `true`를 반환하는 경우 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> 구현을 호출합니다.  
   
-8.  환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> 구현을 호출하여 파일을 열고 프로젝트 개체(예: Project1)를 초기화합니다.  
+8. 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> 구현을 호출하여 파일을 열고 프로젝트 개체(예: Project1)를 초기화합니다.  
   
 9. 환경에서 `IVsProjectUpgrade::UpgradeProject` 구현을 호출하여 프로젝트 파일을 업그레이드해야 하는지 여부를 확인합니다.  
   
@@ -99,28 +99,28 @@ ms.locfileid: "49173594"
   
 12. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 구현에서 `IVsQueryEditQuerySave::QueryEditFiles` (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>)를 호출합니다.  
   
- 이 호출로 인해 프로젝트 파일의 새 복사본이 체크 아웃되고 최신 버전이 검색될 수 있으며 프로젝트 파일을 다시 로드해야 합니다. 이때 다음 두 가지 중 하나가 발생합니다.  
+    이 호출로 인해 프로젝트 파일의 새 복사본이 체크 아웃되고 최신 버전이 검색될 수 있으며 프로젝트 파일을 다시 로드해야 합니다. 이때 다음 두 가지 중 하나가 발생합니다.  
   
--   프로젝트 다시 로드를 직접 처리하는 경우 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (VSITEMID_ROOT) 구현을 호출합니다. 이 호출을 받는 경우 프로젝트의 첫 번째 인스턴스(Project1)를 다시 로드하고 계속 프로젝트 파일을 업그레이드합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>)에 대해 `true`를 반환하는 경우 환경에서 사용자가 프로젝트 다시 로드를 직접 처리한다고 인식합니다.  
+- 프로젝트 다시 로드를 직접 처리하는 경우 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (VSITEMID_ROOT) 구현을 호출합니다. 이 호출을 받는 경우 프로젝트의 첫 번째 인스턴스(Project1)를 다시 로드하고 계속 프로젝트 파일을 업그레이드합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>)에 대해 `true`를 반환하는 경우 환경에서 사용자가 프로젝트 다시 로드를 직접 처리한다고 인식합니다.  
   
--   프로젝트 다시 로드를 직접 처리하지 않는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>)에 대해 `false`를 반환합니다. 이 경우 앞 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>([QEF_ForceEdit_NoPrompting](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True)를 [QEF_DisallowInMemoryEdits](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True)를) 반환 환경으로 다른 새 예를 들어 Project2 프로젝트의 인스턴스를 만듭니다 다음과 같습니다.  
+- 프로젝트 다시 로드를 직접 처리하지 않는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>)에 대해 `false`를 반환합니다. 이 경우 앞 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>([QEF_ForceEdit_NoPrompting](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True)를 [QEF_DisallowInMemoryEdits](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True)를) 반환 환경으로 다른 새 예를 들어 Project2 프로젝트의 인스턴스를 만듭니다 다음과 같습니다.  
   
-    1.  환경에서 첫 번째 프로젝트 개체 Project1에 대해 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A>를; 호출하여 이 개체를 비활성 상태로 둡니다.  
+  1.  환경에서 첫 번째 프로젝트 개체 Project1에 대해 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A>를; 호출하여 이 개체를 비활성 상태로 둡니다.  
   
-    2.  환경에서 `IVsProjectFactory::CreateProject` 구현하여 프로젝트의 두 번째 인스턴스 Project2를 만듭니다.  
+  2.  환경에서 `IVsProjectFactory::CreateProject` 구현하여 프로젝트의 두 번째 인스턴스 Project2를 만듭니다.  
   
-    3.  환경에서 `IPersistFileFormat::Load` 구현을 호출하여 파일을 열고 두 번째 프로젝트 개체 Project2를 초기화합니다.  
+  3.  환경에서 `IPersistFileFormat::Load` 구현을 호출하여 파일을 열고 두 번째 프로젝트 개체 Project2를 초기화합니다.  
   
-    4.  환경에서 `IVsProjectUpgrade::UpgradeProject` 를 두 번째로 호출하여 프로젝트 개체를 업그레이드해야 하는지 여부를 결정합니다. 그러나 이 호출은 프로젝트의 새로운 두 번째 인스턴스 Project2에 대해 수행됩니다. 이 프로젝트가 솔루션에 열려 있는 프로젝트입니다.  
+  4.  환경에서 `IVsProjectUpgrade::UpgradeProject` 를 두 번째로 호출하여 프로젝트 개체를 업그레이드해야 하는지 여부를 결정합니다. 그러나 이 호출은 프로젝트의 새로운 두 번째 인스턴스 Project2에 대해 수행됩니다. 이 프로젝트가 솔루션에 열려 있는 프로젝트입니다.  
   
-        > [!NOTE]
-        >  첫 번째 프로젝트 Project1이 비활성 상태로 있는 인스턴스에서는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 구현에 대한 첫 번째 호출에서 <xref:Microsoft.VisualStudio.VSConstants.S_OK>를 반환해야 합니다. 참조 [기본 프로젝트](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) 구현의 `IVsProjectUpgrade::UpgradeProject`합니다.  
+      > [!NOTE]
+      >  첫 번째 프로젝트 Project1이 비활성 상태로 있는 인스턴스에서는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 구현에 대한 첫 번째 호출에서 <xref:Microsoft.VisualStudio.VSConstants.S_OK>를 반환해야 합니다. 참조 [기본 프로젝트](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) 구현의 `IVsProjectUpgrade::UpgradeProject`합니다.  
   
-    5.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>를 호출하고 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> 값을 `rgfQueryEdit` 매개 변수에 전달합니다.  
+  5.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>를 호출하고 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> 값을 `rgfQueryEdit` 매개 변수에 전달합니다.  
   
-    6.  환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>를 반환하고 프로젝트 파일을 쓸 수 있으므로 업그레이드를 진행할 수 있습니다.  
+  6.  환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>를 반환하고 프로젝트 파일을 쓸 수 있으므로 업그레이드를 진행할 수 있습니다.  
   
- 업그레이드하지 않으면 `IVsProjectUpgrade::UpgradeProject`에서 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>를 반환합니다. 업그레이드가 필요하지 않거나 업그레이드하지 않으려면 `IVsProjectUpgrade::UpgradeProject` 호출을 no-op으로 처리합니다. <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>를 반환하는 경우 프로젝트에 대한 자리 표시자 노드가 솔루션에 추가됩니다.  
+  업그레이드하지 않으면 `IVsProjectUpgrade::UpgradeProject`에서 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>를 반환합니다. 업그레이드가 필요하지 않거나 업그레이드하지 않으려면 `IVsProjectUpgrade::UpgradeProject` 호출을 no-op으로 처리합니다. <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>를 반환하는 경우 프로젝트에 대한 자리 표시자 노드가 솔루션에 추가됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 변환 마법사](http://msdn.microsoft.com/en-us/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   

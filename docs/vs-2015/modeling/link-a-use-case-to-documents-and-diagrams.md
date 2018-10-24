@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824505"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>문서 및 다이어그램에 사용 사례 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 사용 사례 다이어그램의 사용 사례를 다른 다이어그램 또는 문서에 연결할 수 있습니다. 예를 들어 다음과 같은 다이어그램 및 문서에 사용 사례를 연결할 수 있습니다.  
   
--   사용자와 시스템 또는 주요 구성 요소 간의 상호 작용을 통해 사용 사례의 목표가 인식되는 방식을 보여 주는 시퀀스 다이어그램  
+- 사용자와 시스템 또는 주요 구성 요소 간의 상호 작용을 통해 사용 사례의 목표가 인식되는 방식을 보여 주는 시퀀스 다이어그램  
   
--   사용 사례를 수행할 때 사용자와 시스템 또는 주요 구성 요소의 자세한 작업을 보여 주는 동작 다이어그램  
+- 사용 사례를 수행할 때 사용자와 시스템 또는 주요 구성 요소의 자세한 작업을 보여 주는 동작 다이어그램  
   
--   사용 사례를 자세히 설명하는 OneNote 페이지 또는 단락  
+- 사용 사례를 자세히 설명하는 OneNote 페이지 또는 단락  
   
--   사용 사례를 자세히 설명하는 Word 문서 또는 PowerPoint 프레젠테이션 이러한 문서를 솔루션이나 팀이 액세스할 수 있는 위치(예: SharePoint 사이트)에 유지할 수 있습니다.  
+- 사용 사례를 자세히 설명하는 Word 문서 또는 PowerPoint 프레젠테이션 이러한 문서를 솔루션이나 팀이 액세스할 수 있는 위치(예: SharePoint 사이트)에 유지할 수 있습니다.  
   
- 문서에 사용 사례를 연결하려면 사용 사례 다이어그램에 아티팩트를 만들고 사용 사례를 아티팩트에 연결합니다. 아티팩트의 속성에서 다른 다이어그램 또는 문서의 파일 경로를 설정합니다. 아티팩트를 두 번 클릭하면 다른 다이어그램 또는 문서가 열립니다.  
+  문서에 사용 사례를 연결하려면 사용 사례 다이어그램에 아티팩트를 만들고 사용 사례를 아티팩트에 연결합니다. 아티팩트의 속성에서 다른 다이어그램 또는 문서의 파일 경로를 설정합니다. 아티팩트를 두 번 클릭하면 다른 다이어그램 또는 문서가 열립니다.  
   
- 각 사용 사례에 아티팩트를 원하는 수만큼 연결할 수 있습니다. 또한 사용 사례 다이어그램에서 여러 종류의 요소에 아티팩트를 연결할 수도 있습니다.  
+  각 사용 사례에 아티팩트를 원하는 수만큼 연결할 수 있습니다. 또한 사용 사례 다이어그램에서 여러 종류의 요소에 아티팩트를 연결할 수도 있습니다.  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>아티팩트와 연결된 문서를 열려면  
   

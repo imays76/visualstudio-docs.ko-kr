@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30c1a0add4dcb10b5b202b43b791c27a7c14640c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859709"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET용 Visual Studio 데이터 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Visual Studio 및.NET Framework에는 광범위 한 API 및 도구 데이터베�
   
  일반적인 과정은 다음과 같습니다.  
   
-1.  로컬 컴퓨터에 개발 또는 테스트 데이터베이스를 설치 합니다. 참조 [데이터베이스 시스템, 도구 및 샘플 설치](../data-tools/installing-database-systems-tools-and-samples.md)합니다. Azure 데이터 서비스를 사용 하는 경우이 단계가 필요 하지 않습니다.  
+1. 로컬 컴퓨터에 개발 또는 테스트 데이터베이스를 설치 합니다. 참조 [데이터베이스 시스템, 도구 및 샘플 설치](../data-tools/installing-database-systems-tools-and-samples.md)합니다. Azure 데이터 서비스를 사용 하는 경우이 단계가 필요 하지 않습니다.  
   
-2.  Visual Studio에서 데이터베이스 (또는 서비스 또는 로컬 파일)에 대 한 연결을 테스트 합니다. 참조 [새 연결 추가](../data-tools/add-new-connections.md)합니다.  
+2. Visual Studio에서 데이터베이스 (또는 서비스 또는 로컬 파일)에 대 한 연결을 테스트 합니다. 참조 [새 연결 추가](../data-tools/add-new-connections.md)합니다.  
   
-3.  (선택 사항) 도구를 사용 하 여 생성 하 고 새 모델을 구성 합니다. Entity Framework를 기반으로 하는 모델은 새 응용 프로그램에 대 한 기본 권장 사항을입니다. 모델 중 하나를 사용 하는 응용 프로그램 상호 작용 하는 데이터 원본입니다. 모델은 데이터베이스 또는 서비스 및 응용 프로그램 사이 논리적으로 배치 합니다.  참조 [새 데이터 원본을 추가](../data-tools/add-new-data-sources.md)합니다.  
+3. (선택 사항) 도구를 사용 하 여 생성 하 고 새 모델을 구성 합니다. Entity Framework를 기반으로 하는 모델은 새 응용 프로그램에 대 한 기본 권장 사항을입니다. 모델 중 하나를 사용 하는 응용 프로그램 상호 작용 하는 데이터 원본입니다. 모델은 데이터베이스 또는 서비스 및 응용 프로그램 사이 논리적으로 배치 합니다.  참조 [새 데이터 원본을 추가](../data-tools/add-new-data-sources.md)합니다.  
   
-4.  데이터 소스를 끌어 합니다 **데이터 원본** 지정 하는 방식으로 사용자에 게 데이터를 표시 하는 데이터 바인딩 코드를 생성 하는 Windows Forms, ASP.NET 또는 Windows Presentation Foundation 디자인 화면으로 창. 참조 [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)합니다.  
+4. 데이터 소스를 끌어 합니다 **데이터 원본** 지정 하는 방식으로 사용자에 게 데이터를 표시 하는 데이터 바인딩 코드를 생성 하는 Windows Forms, ASP.NET 또는 Windows Presentation Foundation 디자인 화면으로 창. 참조 [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)합니다.  
   
-5.  비즈니스 규칙, 검색 및 데이터 유효성 검사 또는 기본 데이터베이스를 노출 하는 사용자 지정 기능을 활용 하는 항목에 대 한 사용자 지정 코드를 추가 합니다.  
+5. 비즈니스 규칙, 검색 및 데이터 유효성 검사 또는 기본 데이터베이스를 노출 하는 사용자 지정 기능을 활용 하는 항목에 대 한 사용자 지정 코드를 추가 합니다.  
   
- 3 단계를 건너뛸 수 있으며 모델을 사용 하는 것이 아니라 데이터베이스에 직접 명령 실행 하는.NET 응용 프로그램을 프로그래밍할 수 있습니다. 이 경우에 관련 설명서를 보면: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)합니다. 여전히 사용할 수 있는 데이터 소스 구성 마법사 및 디자이너 메모리와 해당 개체에 데이터 바인딩 UI 컨트롤에 고유한 개체를 채울 때 데이터 바인딩 코드를 생성 하려면 note 합니다.  
+   3 단계를 건너뛸 수 있으며 모델을 사용 하는 것이 아니라 데이터베이스에 직접 명령 실행 하는.NET 응용 프로그램을 프로그래밍할 수 있습니다. 이 경우에 관련 설명서를 보면: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)합니다. 여전히 사용할 수 있는 데이터 소스 구성 마법사 및 디자이너 메모리와 해당 개체에 데이터 바인딩 UI 컨트롤에 고유한 개체를 채울 때 데이터 바인딩 코드를 생성 하려면 note 합니다.  
   
 ## <a name="in-this-section"></a>단원 내용  
   

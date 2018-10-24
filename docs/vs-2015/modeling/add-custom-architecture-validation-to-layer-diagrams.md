@@ -14,12 +14,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26be7c766127c1da5d7aa4f26b2fb49cf510b850
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897917"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,26 +44,26 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>프로젝트 템플릿을 사용하여 확장을 정의하려면  
   
-1.  **파일** 메뉴에서 **새 프로젝트** 명령을 사용하여 새 솔루션에서 프로젝트를 만듭니다.  
+1. **파일** 메뉴에서 **새 프로젝트** 명령을 사용하여 새 솔루션에서 프로젝트를 만듭니다.  
   
-2.  **새 프로젝트** 대화 상자의 **모델링 프로젝트**아래에서 **레이어 디자이너 유효성 검사 확장**을 선택합니다.  
+2. **새 프로젝트** 대화 상자의 **모델링 프로젝트**아래에서 **레이어 디자이너 유효성 검사 확장**을 선택합니다.  
   
-     템플릿에서 작은 예제가 포함된 프로젝트를 만듭니다.  
+    템플릿에서 작은 예제가 포함된 프로젝트를 만듭니다.  
   
-    > [!WARNING]
-    >  Makethe 템플릿에 제대로 작동 합니다.  
-    >   
-    >  -   `LogValidationError` 에 대한 호출을 편집하여 선택적 인수 `errorSourceNodes` 및 `errorTargetNodes`를 제거합니다.  
-    > -   사용자 지정 속성을 사용 하는 경우에 언급 된 업데이트를 적용 [레이어 다이어그램에 사용자 지정 속성 추가](../modeling/add-custom-properties-to-layer-diagrams.md)합니다.  
+   > [!WARNING]
+   >  Makethe 템플릿에 제대로 작동 합니다.  
+   > 
+   > - `LogValidationError` 에 대한 호출을 편집하여 선택적 인수 `errorSourceNodes` 및 `errorTargetNodes`를 제거합니다.  
+   >   -   사용자 지정 속성을 사용 하는 경우에 언급 된 업데이트를 적용 [레이어 다이어그램에 사용자 지정 속성 추가](../modeling/add-custom-properties-to-layer-diagrams.md)합니다.  
   
-3.  코드를 편집하여 유효성 검사를 정의합니다. 자세한 내용은 [프로그래밍 유효성 검사](#programming)를 참조하세요.  
+3. 코드를 편집하여 유효성 검사를 정의합니다. 자세한 내용은 [프로그래밍 유효성 검사](#programming)를 참조하세요.  
   
-4.  확장을 테스트하려면 [레이어 유효성 검사 디버그](#debugging)를 참조하세요.  
+4. 확장을 테스트하려면 [레이어 유효성 검사 디버그](#debugging)를 참조하세요.  
   
-    > [!NOTE]
-    >  메서드는 특정 상황에서만 호출되고 중단점은 자동으로 작동하지 않습니다. 자세한 내용은 [레이어 유효성 검사 디버그](#debugging)를 참조하세요.  
+   > [!NOTE]
+   >  메서드는 특정 상황에서만 호출되고 중단점은 자동으로 작동하지 않습니다. 자세한 내용은 [레이어 유효성 검사 디버그](#debugging)를 참조하세요.  
   
-5.  기본 인스턴스에서 확장을 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 또는 다른 컴퓨터에서 찾을 합니다 **.vsix** 파일 **bin\\\*** 합니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.  
+5. 기본 인스턴스에서 확장을 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 또는 다른 컴퓨터에서 찾을 합니다 **.vsix** 파일 *bin\\*합니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>개별 VSIX에 레이어 유효성 검사기 추가  
  레이어 유효성 검사기, 명령 및 기타 확장이 포함된 하나의 VSIX를 만들려면 VSIX를 정의하는 프로젝트 하나와 처리기에 대한 개별 프로젝트를 만드는 것이 좋습니다. 모델링 확장의 다른 형식에 대 한 정보를 참조 하세요 [확장: UML 모델 및 다이어그램](../modeling/extend-uml-models-and-diagrams.md)합니다.  
@@ -127,42 +127,42 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
 ##  <a name="programming"></a> 프로그래밍 유효성 검사  
  레이어 유효성 검사 확장을 정의하려면 다음 특징을 가진 클래스를 정의합니다.  
   
--   전체 선언 형식은 다음과 같습니다.  
+- 전체 선언 형식은 다음과 같습니다.  
   
-    ```  
+  ```  
   
-    using System.ComponentModel.Composition;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
-    using Microsoft.VisualStudio.GraphModel;  
-    ...  
-     [Export(typeof(IValidateArchitectureExtension))]  
-      public partial class Validator1Extension :  
-                      IValidateArchitectureExtension  
+  using System.ComponentModel.Composition;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
+  using Microsoft.VisualStudio.GraphModel;  
+  ...  
+   [Export(typeof(IValidateArchitectureExtension))]  
+    public partial class Validator1Extension :  
+                    IValidateArchitectureExtension  
+    {  
+      public void ValidateArchitecture(Graph graph)  
       {  
-        public void ValidateArchitecture(Graph graph)  
-        {  
-           GraphSchema schema = graph.DocumentSchema;  
-          ...  
-      } }  
-    ```  
+         GraphSchema schema = graph.DocumentSchema;  
+        ...  
+    } }  
+  ```  
   
--   오류를 검색할 때 `LogValidationError()`를 사용하여 오류를 보고할 수 있습니다.  
+- 오류를 검색할 때 `LogValidationError()`를 사용하여 오류를 보고할 수 있습니다.  
   
-    > [!WARNING]
-    >  `LogValidationError`의 선택적 매개 변수를 사용하지 마세요.  
+  > [!WARNING]
+  >  `LogValidationError`의 선택적 매개 변수를 사용하지 마세요.  
   
- 사용자가 **아키텍처 유효성 검사** 메뉴 명령을 호출하면 레이어 런타임 시스템에서는 레이어 및 해당 아티팩트를 분석하여 그래프를 생성합니다. 그래프는 다음 네 파트로 구성됩니다.  
+  사용자가 **아키텍처 유효성 검사** 메뉴 명령을 호출하면 레이어 런타임 시스템에서는 레이어 및 해당 아티팩트를 분석하여 그래프를 생성합니다. 그래프는 다음 네 파트로 구성됩니다.  
   
--   그래프에서 노드 및 링크로 표시되는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션의 레이어 모델.  
+- 그래프에서 노드 및 링크로 표시되는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션의 레이어 모델.  
   
--   솔루션에 정의되고 노드로 표시되는 코드, 프로젝트 항목 및 기타 아티팩트와 분석 프로세스에서 검색되는 종속성을 나타내는 링크.  
+- 솔루션에 정의되고 노드로 표시되는 코드, 프로젝트 항목 및 기타 아티팩트와 분석 프로세스에서 검색되는 종속성을 나타내는 링크.  
   
--   레이어 노드에서 코드 아티팩트 노드로 연결된 링크.  
+- 레이어 노드에서 코드 아티팩트 노드로 연결된 링크.  
   
--   유효성 검사기에서 검색된 오류를 나타내는 노드.  
+- 유효성 검사기에서 검색된 오류를 나타내는 노드.  
   
- 그래프가 생성되면 표준 유효성 검사 메서드가 호출됩니다. 호출이 완료되면 모든 설치된 확장 유효성 검사 메서드가 지정되지 않은 순서로 호출됩니다. 그래프는 그래프를 검사하고 발견한 오류를 보고할 수 있는 각 `ValidateArchitecture` 메서드에 전달됩니다.  
+  그래프가 생성되면 표준 유효성 검사 메서드가 호출됩니다. 호출이 완료되면 모든 설치된 확장 유효성 검사 메서드가 지정되지 않은 순서로 호출됩니다. 그래프는 그래프를 검사하고 발견한 오류를 보고할 수 있는 각 `ValidateArchitecture` 메서드에 전달됩니다.  
   
 > [!NOTE]
 >  이는 UML 다이어그램에 적용되는 유효성 검사 프로세스와 동일하지 않으며 도메인 특정 언어에서 사용할 수 있는 유효성 검사 프로세스와 동일하지 않습니다.  
@@ -173,25 +173,25 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
   
  각 노드와 각 링크에는 각 노드 및 링크가 나타내는 요소 또는 관계의 형식을 지정하는 범주가 하나 이상 있습니다. 일반적인 그래프의 노드에는 다음 범주가 있습니다.  
   
--   Dsl.LayerModel  
+- Dsl.LayerModel  
   
--   Dsl.Layer  
+- Dsl.Layer  
   
--   Dsl.Reference  
+- Dsl.Reference  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Namespace  
+- CodeSchema_Namespace  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Method  
+- CodeSchema_Method  
   
--   CodeSchema_Field  
+- CodeSchema_Field  
   
--   CodeSchema_Property  
+- CodeSchema_Property  
   
- 코드에서 레이어에서 요소로 연결된 링크에는 “Represents” 범주가 있습니다.  
+  코드에서 레이어에서 요소로 연결된 링크에는 “Represents” 범주가 있습니다.  
   
 ##  <a name="debugging"></a> 유효성 검사 디버그  
  레이어 유효성 검사 확장을 디버그하려면 Ctrl+F5를 누릅니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 열립니다. 이 인스턴스에서 레이어 모델을 열거나 만듭니다. 이 모델은 코드와 연결되어야 하고 종속성을 하나 이상 포함해야 합니다.  
@@ -199,11 +199,11 @@ Visual Studio에서 사용자는 레이어 모델에 대해 프로젝트 소스 
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>종속성이 포함된 솔루션으로 테스트  
  다음 특징이 있어야 유효성 검사가 실행됩니다.  
   
--   레이어 다이어그램에 종속성 링크가 하나 이상 있습니다.  
+- 레이어 다이어그램에 종속성 링크가 하나 이상 있습니다.  
   
--   모델에 코드 요소와 연결된 레이어가 있습니다.  
+- 모델에 코드 요소와 연결된 레이어가 있습니다.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스를 처음으로 시작하여 유효성 검사 확장을 테스트할 경우 이러한 특징이 포함된 솔루션을 열거나 만듭니다.  
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스를 처음으로 시작하여 유효성 검사 확장을 테스트할 경우 이러한 특징이 포함된 솔루션을 열거나 만듭니다.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>아키텍처 유효성 검사 전에 솔루션 정리 실행  
  유효성 검사 코드를 업데이트할 때마다 유효성 검사 명령을 테스트하기 전에 실험적 솔루션에서 **빌드** 메뉴의 **솔루션 정리** 를 사용합니다. 유효성 검사의 결과가 캐시되므로 이 작업이 필요합니다. 테스트 레이어 다이어그램 또는 해당 코드를 업데이트하지 않았으면 유효성 검사 메서드가 실행되지 않습니다.  

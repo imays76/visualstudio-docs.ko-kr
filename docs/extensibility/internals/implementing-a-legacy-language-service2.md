@@ -13,34 +13,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee151375cfff8977249ca5e21255401235987886
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dccbac140aefb952eed97006cbcae6a61f94ac92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855419"
 ---
 # <a name="implementing-a-legacy-language-service"></a>레거시 언어 서비스 구현
 MPF ()에서 관리 되는 패키지 프레임 워크를 사용 하 여 언어 서비스 구현에서 클래스를 파생 해야 합니다는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스 및 다음 추상 메서드 및 속성을 구현 합니다.  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 메서드  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 메서드  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 메서드  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 메서드  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> 속성  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> 속성  
   
- 이러한 메서드 및 속성의 구현에 대 한 자세한 내용은 아래 해당 섹션을 참조 하십시오.  
+  이러한 메서드 및 속성의 구현에 대 한 자세한 내용은 아래 해당 섹션을 참조 하십시오.  
   
- 추가 기능을 지원 하려면 언어 서비스는 MPF 언어 서비스 클래스 중 하나에서 클래스를 파생 해야 할 수 있습니다. 예를 들어 추가 메뉴 명령을 지원 하기 위해 파생 시켜야에서 클래스를 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스를 재정의 하는 다양 한 메서드를 처리 명령 (참조 <xref:Microsoft.VisualStudio.Package.ViewFilter> 세부 정보에 대 한). <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스는 다양 한 다양 한 클래스의 새 인스턴스를 만드는 호출 되는 메서드를 제공 하며 클래스의 인스턴스를 제공 하려면 적절 한 만들기 메서드를 재정의 합니다. 재정의 해야 하는 예를 들어 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 자신만의 인스턴스를 반환 하는 클래스 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스. 자세한 내용은 "사용자 지정 클래스 인스턴스화" 섹션을 참조 하세요.  
+  추가 기능을 지원 하려면 언어 서비스는 MPF 언어 서비스 클래스 중 하나에서 클래스를 파생 해야 할 수 있습니다. 예를 들어 추가 메뉴 명령을 지원 하기 위해 파생 시켜야에서 클래스를 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스를 재정의 하는 다양 한 메서드를 처리 명령 (참조 <xref:Microsoft.VisualStudio.Package.ViewFilter> 세부 정보에 대 한). <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스는 다양 한 다양 한 클래스의 새 인스턴스를 만드는 호출 되는 메서드를 제공 하며 클래스의 인스턴스를 제공 하려면 적절 한 만들기 메서드를 재정의 합니다. 재정의 해야 하는 예를 들어 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 자신만의 인스턴스를 반환 하는 클래스 <xref:Microsoft.VisualStudio.Package.ViewFilter> 클래스. 자세한 내용은 "사용자 지정 클래스 인스턴스화" 섹션을 참조 하세요.  
   
- 언어 서비스는 여러 위치에서 사용 되는 자체 아이콘을 제공할 수도 있습니다. 예를 들어 IntelliSense 완성 목록이 표시 되 면 목록의 각 항목에 연결 된 메서드, 클래스, 네임 스페이스, 속성, 항목을 표시 하는 아이콘 있을 수 있습니다 또는 무엇이 든 해당 언어에 대해 필요한 합니다. 이러한 아이콘을 사용 하는 모든 IntelliSense 목록에는 **탐색 모음**, 및는 **오류 목록** 작업 창. 자세한 내용은 아래 "언어 서비스 이미지" 섹션을 참조 하세요.  
+  언어 서비스는 여러 위치에서 사용 되는 자체 아이콘을 제공할 수도 있습니다. 예를 들어 IntelliSense 완성 목록이 표시 되 면 목록의 각 항목에 연결 된 메서드, 클래스, 네임 스페이스, 속성, 항목을 표시 하는 아이콘 있을 수 있습니다 또는 무엇이 든 해당 언어에 대해 필요한 합니다. 이러한 아이콘을 사용 하는 모든 IntelliSense 목록에는 **탐색 모음**, 및는 **오류 목록** 작업 창. 자세한 내용은 아래 "언어 서비스 이미지" 섹션을 참조 하세요.  
   
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences 메서드  
  합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 의 동일한 인스턴스를 항상 반환 하는 메서드를 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 클래스입니다. 기본을 사용할 수 있습니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 언어 서비스에 대 한 추가 기본 설정을 수행 해야 하는 경우 클래스입니다. MPF 언어 서비스 클래스를 하나 이상 있는지를 가정 자료 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 클래스입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  일반적인 구현을 보여 주는이 예제는 <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 메서드. 이 예제에서는 기본 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 클래스입니다.  
   
 ```csharp  
@@ -71,7 +71,7 @@ namespace TestLanguagePackage
 ## <a name="getscanner-method"></a>GetScanner 메서드  
  인스턴스를 반환 하는이 메서드는 <xref:Microsoft.VisualStudio.Package.IScanner> 줄 기반 파서 또는 토큰 및 해당 형식 및 트리거를 가져오는 데 사용 되는 스캐너를 구현 하는 개체입니다. 이 스캐너는는 <xref:Microsoft.VisualStudio.Package.Colorizer> 더 복잡 한 구문 분석 작업에 궁금할 토큰 유형 및 트리거를 가져오기 위한 스캐너도 사용할 수 있지만 색 지정에 대 한 클래스입니다. 구현 하는 클래스를 제공 해야 합니다 <xref:Microsoft.VisualStudio.Package.IScanner> 인터페이스 이므로에서 모든 메서드를 구현 해야 합니다는 <xref:Microsoft.VisualStudio.Package.IScanner> 인터페이스입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  일반적인 구현을 보여 주는이 예제는 <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 메서드. 합니다 `TestScanner` 구현 클래스는 <xref:Microsoft.VisualStudio.Package.IScanner> 인터페이스 (표시 되지 않음).  
   
 ```csharp  
@@ -122,7 +122,7 @@ namespace TestLanguagePackage
 ## <a name="parsesource-method"></a>ParseSource 메서드  
  여러 가지 이유로 수에 따라 소스 파일을 구문 분석 합니다. 이 메서드는 지정 된 된 <xref:Microsoft.VisualStudio.Package.ParseRequest> 특정 구문 분석 작업에서 예상 되는 결과 설명 하는 개체입니다. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드 토큰 기능 및 범위를 결정 하는 더 복잡 한 파서를 호출 합니다. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드 중괄호 일치 뿐만 아니라 IntelliSense 작업에 대 한 지원에서 사용 됩니다. 이러한 고급 작업을 지원 하지 않는 경우에 여전히 반환 해야 올바른 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 개체에 구현 하는 클래스를 만드는 데 필요 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 인터페이스 및 해당 인터페이스의 모든 메서드를 구현 합니다. 모든 메서드에서 null 값을 반환할 수 있지만 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 개체 자체에 null 값을 아니어야 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  최소 구현을 보여 주는이 예제는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드 및 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 클래스를 컴파일하고 실제로 더 많은 고급 기능 중 하나를 지원 하지 않고 함수 언어 서비스를 허용 하는 데 충분 합니다.  
   
 ```csharp  
@@ -172,7 +172,7 @@ namespace TestLanguagePackage
 ## <a name="name-property"></a>Name 속성  
  이 속성에는 언어 서비스의 이름을 반환합니다. 언어 서비스 등록 되었을 때 지정 된 동일한 이름 이어야 합니다. 이 이름은 다양 한 위치는 가장 두드러진는 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 이름을 레지스트리에 액세스할 수 있는 사용 되는 클래스입니다. 레지스트리 항목 및 키의 이름은 레지스트리의 사용 되므로이 속성에서 반환한 이름을 지역화 되지 해야 합니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  가능한 한 가지 구현을 보여 주는이 예제는 <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> 속성입니다. 여기서 이름을 하드 코드 된는: 언어 서비스를 등록 하는 중에 사용할 수 있도록 리소스 파일에서 가져올 실제 이름 (참조 [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
   
 ```csharp  

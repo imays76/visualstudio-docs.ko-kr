@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906925"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 구조(소스 제어 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49305034"
   
  VSPackage 의미 체계는 다음과 같습니다.  
   
--   VSPackage 기능 구현 될 인터페이스 (의 `IVsPackage` 인터페이스)  
+- VSPackage 기능 구현 될 인터페이스 (의 `IVsPackage` 인터페이스)  
   
--   UI 명령을 구현 (.vsct 파일 및 구현의 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스)  
+- UI 명령을 구현 (.vsct 파일 및 구현의 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스)  
   
--   사용 하 여 VSPackage의 등록 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
+- 사용 하 여 VSPackage의 등록 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
   
- 소스 제어 VSPackage와 통신 해야 이러한 다른 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 엔터티:  
+  소스 제어 VSPackage와 통신 해야 이러한 다른 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 엔터티:  
   
--   프로젝트  
+- 프로젝트  
   
--   편집기  
+- 편집기  
   
--   솔루션  
+- 솔루션  
   
--   Windows  
+- Windows  
   
--   실행 중인 문서 테이블  
+- 실행 중인 문서 테이블  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>사용 될 수 있는 visual Studio 환경 서비스  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  
