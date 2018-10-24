@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df83017e60a9d3600c7e49bcf888c771a748cee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3f53031bd29af50b90f88868a36f340ee460201a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915310"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-부모 가속기 스텁 함수에에서 지정 된 태그 값에 해당 하는 변수에 대 한 기호의 열거형을 반환 합니다.  
+부모 Accelerator 스텁 함수에서에서 지정 된 태그 값에 해당 하는 변수에 대 한 기호의 열거형을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,16 +34,16 @@ HRESULT findSymbolsForAcceleratorPointerTag (
   
 #### <a name="parameters"></a>매개 변수  
  `parent`  
- [in] 검색할 가속기 스텁 함수에 해당 하는 IDiaSymbol 합니다.  
+ [in] 검색할 Accelerator 스텁 함수에 해당 하는 IDiaSymbol 합니다.  
   
  `tagValue`  
  [in] 포인터 태그 값입니다.  
   
  `ppResult`  
- [out] 에 대 한 포인터는 `IDiaEnumSymbols` 결과 함께 초기화 된 인터페이스 포인터입니다.  
+ [out] 에 대 한 포인터는 `IDiaEnumSymbols` 결과 사용 하 여 초기화 된 인터페이스 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

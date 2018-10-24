@@ -32,12 +32,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914319"
 ---
 # <a name="expressions-in-the-debugger"></a>디버거에서 사용하는 식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,13 +104,13 @@ int main()
   
  디버거 내장 함수의 특징은 다음과 같습니다.  
   
--   안전이 보장됩니다. 디버거 내장 함수를 실행하는 경우 디버깅 중인 프로세스가 손상되지 않습니다.  
+- 안전이 보장됩니다. 디버거 내장 함수를 실행하는 경우 디버깅 중인 프로세스가 손상되지 않습니다.  
   
--   모든 식에서 허용됩니다. 파생 작업과 함수 실행이 허용되지 않는 시나리오에서도 허용됩니다.  
+- 모든 식에서 허용됩니다. 파생 작업과 함수 실행이 허용되지 않는 시나리오에서도 허용됩니다.  
   
--   미니덤프 디버깅과 같이 일반 함수 호출이 가능하지 않은 시나리오에서 작동합니다.  
+- 미니덤프 디버깅과 같이 일반 함수 호출이 가능하지 않은 시나리오에서 작동합니다.  
   
- 디버거 내장 함수를 사용하면 식 계산도 보다 편리해질 수 있습니다. 예를 들어 `strncmp(str, “asd”)` 는 `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`보다 중단점 조건에서 작성하기가 훨씬 쉽습니다. )  
+  디버거 내장 함수를 사용하면 식 계산도 보다 편리해질 수 있습니다. 예를 들어 `strncmp(str, “asd”)` 는 `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`보다 중단점 조건에서 작성하기가 훨씬 쉽습니다. )  
   
 |영역|내장 함수|  
 |----------|-------------------------|  

@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911852"
 ---
 # <a name="hresult-information-in-managed-code"></a>관리 되는 코드의 HRESULT 정보
 HRESULT 반환 값을 발견할 경우 관리 코드와 COM 간의 상호 작용으로 인해 문제가 발생할 수 있습니다.  
   
  COM 인터페이스에서 HRESULT 반환 값은 다음과 같은 역할을 할 수 있습니다.  
   
--   오류 정보(예: <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>)를 제공합니다.  
+- 오류 정보(예: <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>)를 제공합니다.  
   
--   일반적인 프로그램 동작에 대한 상태 정보를 제공합니다.  
+- 일반적인 프로그램 동작에 대한 상태 정보를 제공합니다.  
   
- COM이 관리 코드를 호출하는 경우 HRESULT로 인해 다음과 같은 문제가 발생할 수 있습니다.  
+  COM이 관리 코드를 호출하는 경우 HRESULT로 인해 다음과 같은 문제가 발생할 수 있습니다.  
   
--   0보다 작은 HRESULT 값(오류 코드)을 반환하는 COM 함수가 예외를 생성합니다.  
+- 0보다 작은 HRESULT 값(오류 코드)을 반환하는 COM 함수가 예외를 생성합니다.  
   
--   둘 이상의 서로 다른 성공 코드를 정기적으로 반환하는 COM 메서드(예: <xref:Microsoft.VisualStudio.VSConstants.S_OK> 또는 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>)를 구분할 수 없습니다.  
+- 둘 이상의 서로 다른 성공 코드를 정기적으로 반환하는 COM 메서드(예: <xref:Microsoft.VisualStudio.VSConstants.S_OK> 또는 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>)를 구분할 수 없습니다.  
   
- 대부분의 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] COM 함수는 0보다 작은 HRESULT 값을 반환하거나 여러 성공 코드를 반환하기 때문에 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] interop 어셈블리는 메서드 서명이 유지되도록 작성되었습니다. 모든 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] interop 메서드는 `int` 형식입니다. HRESULT 값은 변경 및 예외 생성 없이 interop 계층을 통해 전달됩니다.  
+  대부분의 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] COM 함수는 0보다 작은 HRESULT 값을 반환하거나 여러 성공 코드를 반환하기 때문에 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] interop 어셈블리는 메서드 서명이 유지되도록 작성되었습니다. 모든 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] interop 메서드는 `int` 형식입니다. HRESULT 값은 변경 및 예외 생성 없이 interop 계층을 통해 전달됩니다.  
   
- COM 함수는 호출하는 관리되는 메서드에 HRESULT를 반환하므로 호출하는 메서드가 HRESULT를 확인하고 필요에 따라 예외를 발생시켜야 합니다.  
+  COM 함수는 호출하는 관리되는 메서드에 HRESULT를 반환하므로 호출하는 메서드가 HRESULT를 확인하고 필요에 따라 예외를 발생시켜야 합니다.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>COM에서 관리 코드로 반환되는 HRESULT 처리  
  관리 코드에서 COM 인터페이스를 호출하는 경우 HRESULT 값을 검사하고 필요에 따라 예외를 발생시킵니다. <xref:Microsoft.VisualStudio.ErrorHandler> 클래스에는 전달된 HRESULT의 값에 따라 COM 예외를 발생시키는 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 메서드가 포함되어 있습니다.  

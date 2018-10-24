@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af0ce2e4ff9b8df28ebc0c6dd57ad5b4ebee895f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914569"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 및 Windows 카운터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,19 +93,19 @@ Visual Studio 프로파일러를 사용하면 운영 체제(Windows 카운터)�
   
 ##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>현재 플랫폼에서 지원되는 모든 CPU 카운터의 목록을 보려면  
   
-1.  성능 탐색기에서 성능 세션을 마우스 오른쪽 단추로 클릭한 후 **속성**을 클릭합니다.  
+1. 성능 탐색기에서 성능 세션을 마우스 오른쪽 단추로 클릭한 후 **속성**을 클릭합니다.  
   
-2.  다음 작업 중 하나를 수행합니다.  
+2. 다음 작업 중 하나를 수행합니다.  
   
-    -   **샘플링**을 클릭한 후 **샘플** 이벤트 목록에서 **성능 카운터**를 선택합니다. CPU 카운터가 **사용 가능한 성능 카운터**에 나열됩니다.  
+   - **샘플링**을 클릭한 후 **샘플** 이벤트 목록에서 **성능 카운터**를 선택합니다. CPU 카운터가 **사용 가능한 성능 카운터**에 나열됩니다.  
   
-         **참고** 이전 샘플링 구성으로 돌아가려면 **취소**를 클릭합니다.  
+      **참고** 이전 샘플링 구성으로 돌아가려면 **취소**를 클릭합니다.  
   
      또는  
   
-    -   **CPU 카운터**를 선택한 후 **CPU 카운터 수집**을 선택합니다. CPU 카운터가 **사용 가능한 카운터**에 나열됩니다.  
+   - **CPU 카운터**를 선택한 후 **CPU 카운터 수집**을 선택합니다. CPU 카운터가 **사용 가능한 카운터**에 나열됩니다.  
   
-         **참고** 이전 카운터 수집 구성으로 돌아가려면 **취소**를 클릭합니다.  
+      **참고** 이전 카운터 수집 구성으로 돌아가려면 **취소**를 클릭합니다.  
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>현재 플랫폼에서 지원되는 Windows 카운터의 목록을 보려면  
   
