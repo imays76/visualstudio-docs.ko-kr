@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a968f642b8a4bf26e2e69d1d3ddff45dc1f25
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0687209b1e4144064c6e6e934cd7443f1aa2c496
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104217"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834554"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
-이 구조에 지역 변수, 매개 변수 또는 다른 필드에 설명 합니다.  
+이 구조는 지역 변수, 매개 변수 또는 다른 필드를 설명합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
   
 ## <a name="members"></a>멤버  
  dwFields  
- 플래그의 조합 된 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 멤버 입력을 지정 하는 열거형입니다.  
+ 플래그의 조합을 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 채워지는 멤버를 지정 하는 열거형입니다.  
   
  bstrFullName  
  필드의 전체 이름입니다.  
@@ -61,10 +61,10 @@ public struct FIELD_INFO {
  필드의 형식입니다.  
   
  dwModifiers  
- 플래그의 조합 된 [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) 필드를 설명 하는 열거형입니다.  
+ 플래그의 조합을 합니다 [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) 필드를 설명 하는 열거형입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 으로 채워지면 메서드.  
+ 이 구조에 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 메서드 위치에서 채워집니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1a812575d14ef6595d58cc3ecc5d9f94b8f5635
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 642f46e9497e20cd8a8276265fb434c5bd7522bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851181"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>디버거 확장성 시작
 합니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 만들고 디버거 구성 요소 내에서 프로그램을 디버그 하는 데 사용자 지정 해야 하는 정보를 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 환경입니다.  
@@ -31,11 +31,11 @@ ms.locfileid: "39231290"
   
  효율적으로 사용 하는 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], 다음 항목에 알고 있어야 합니다.  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE)  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE)  
   
--   C + + 프로그래밍 언어  
+- C + + 프로그래밍 언어  
   
--   ATL COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>단원 내용  
  [디버거 확장 로드맵](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542458"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825422"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ Visual Studio Enterprise Edition(Professional 또는 Community Edition 아님)�
 
 ## <a name="IntelliTraceSupport"></a> IntelliTrace로 디버깅할 수 있는 앱
 
-|||
-|-|-|
-|**전체 지원**|-Visual Basic 및 Visual C# 응용 프로그램을.NET Framework 2.0 이상 버전을 사용 합니다.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 및 64비트 앱을 포함한 대부분의 응용 프로그램을 디버깅할 수 있습니다.<br/>IntelliTrace 사용 하 여 SharePoint 응용 프로그램을 디버깅 하려면 참조 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)합니다.<br/> IntelliTrace 사용 하 여 Microsoft Azure 앱 디버그를 참조 하세요 [IntelliTrace 및 Visual Studio를 사용 하 여 게시 된 클라우드 서비스 디버깅](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)합니다.|
-|**제한적된 지원**|-타기 팅 IntelliTrace를 사용 하 여 스냅숏 보기 Windows 지원 네이티브 앱 뒤로 이동 합니다. 디버거 및 예외 이벤트만 지원 됩니다.<br />-.NET core 및 ASP.NET Core 앱에 대 한 특정 이벤트만 (MVC 컨트롤러, ADO.NET 및 HTTPClicent 이벤트)에서 지원 로컬 디버깅 합니다. 독립 실행형 수집기는.NET Core 또는 ASP.NET Core 앱에 대 한 지원 되지 않습니다.<br />-F #를 실험적으로 응용 프로그램<br />-UWP 앱만 이벤트에 대 한 지원|
-|**지원 되지 않음**|-다른 언어 및 스크립트<br />-Windows 서비스, Silverlight, Xbox 또는 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 앱|
+| | |
+|---------------------| - |
+| **전체 지원** | -Visual Basic 및 Visual C# 응용 프로그램을.NET Framework 2.0 이상 버전을 사용 합니다.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 및 64비트 앱을 포함한 대부분의 응용 프로그램을 디버깅할 수 있습니다.<br/>IntelliTrace 사용 하 여 SharePoint 응용 프로그램을 디버깅 하려면 참조 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)합니다.<br/> IntelliTrace 사용 하 여 Microsoft Azure 앱 디버그를 참조 하세요 [IntelliTrace 및 Visual Studio를 사용 하 여 게시 된 클라우드 서비스 디버깅](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)합니다. |
+| **제한적된 지원** | -타기 팅 IntelliTrace를 사용 하 여 스냅숏 보기 Windows 지원 네이티브 앱 뒤로 이동 합니다. 디버거 및 예외 이벤트만 지원 됩니다.<br />-.NET core 및 ASP.NET Core 앱에 대 한 특정 이벤트만 (MVC 컨트롤러, ADO.NET 및 HTTPClicent 이벤트)에서 지원 로컬 디버깅 합니다. 독립 실행형 수집기는.NET Core 또는 ASP.NET Core 앱에 대 한 지원 되지 않습니다.<br />-F #를 실험적으로 응용 프로그램<br />-UWP 앱만 이벤트에 대 한 지원 |
+| **지원 되지 않음** | -다른 언어 및 스크립트<br />-Windows 서비스, Silverlight, Xbox 또는 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 앱 |
 
 > [!NOTE]
 > 이미 실행 중인 프로세스를 디버깅 하려는 경우에 IntelliTrace 이벤트에만 사용 (호출 정보 없음)를 수집할 수 있습니다. 로컬 컴퓨터 에서만 32 비트 또는 64 비트 프로세스에 연결할 수 있습니다. 프로세스에 연결 하기 전에 발생 하는 이벤트 수집 되지 않습니다.
@@ -77,7 +77,7 @@ IntelliTrace는 재현하기 어렵거나 배포할 때 발생하는 오류를 �
 
 - Microsoft Monitoring Agent 단독으로 또는 System Center 2012와 함께 사용할 때 IIS에서 호스팅된 ASP.NET 웹 앱 또는 배포에서 실행 중인 SharePoint 2010 및 SharePoint 2013 응용 프로그램. 참조 [IntelliTrace 독립 실행형 수집기를 사용 하 여](../debugger/using-the-intellitrace-stand-alone-collector.md) 하 고 [Microsoft Monitoring Agent를 사용 하 여 모니터링](http://technet.microsoft.com/library/dn465153.aspx)합니다.
 
- 다음은 IntelliTrace를 이용하여 디버깅하는 몇 가지 예입니다.
+  다음은 IntelliTrace를 이용하여 디버깅하는 몇 가지 예입니다.
 
 - 응용 프로그램의 데이터 파일이 손상되었지만 이 이벤트가 어디에서 발생했는지 모릅니다.
 
@@ -111,11 +111,11 @@ IntelliTrace는 재현하기 어렵거나 배포할 때 발생하는 오류를 �
 
      기본적으로 성능을 위해 IntelliTrace 기록 하지 않습니다는 디버거 이벤트에 대 한 가능한 모든 값입니다. 대신, 다음 값을 기록합니다.
 
-    - 값을 **지역** 창입니다. 유지 합니다 **지역** 창을 열어 이러한 값을 확인 합니다.
+  - 값을 **지역** 창입니다. 유지 합니다 **지역** 창을 열어 이러한 값을 확인 합니다.
 
-    - 값을 **자동** 경우에만 창 합니다 **자동** 창이 열려
+  - 값을 **자동** 경우에만 창 합니다 **자동** 창이 열려
 
-    - 해당 값을 보기 위해 소스 창에 있는 변수 위로 마우스 포인터를 이동하면 나타나는 DataTips의 값입니다. IntelliTrace는 고정된 DataTips에서는 값을 수집하지 않습니다.
+  - 해당 값을 보기 위해 소스 창에 있는 변수 위로 마우스 포인터를 이동하면 나타나는 DataTips의 값입니다. IntelliTrace는 고정된 DataTips에서는 값을 수집하지 않습니다.
 
     IntelliTrace 이벤트 및 스냅숏 모드를 설정 하는 경우 IntelliTrace가 스냅숏을 응용 프로그램의 프로세스에서 각 디버거 **중단점** 하 고 **단계** 이벤트입니다. 이 값을 기록 합니다 **지역**, **자동**, 및 **조사식** windows 열려 있는 여부에 관계 없이 windows. 모든 고정된 데이터 팁의 값도 수집 됩니다.
 

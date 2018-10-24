@@ -30,12 +30,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b448f84e0103d5cf98ae27c519e247ad3d0c25
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3bd033a9341975b6b785076188a53daf3e91a5a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817348"
 ---
 # <a name="debugging-mixed-mode-applications"></a>혼합 모드 응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ ms.locfileid: "49202178"
   
 #### <a name="to-turn-off-property-evaluation"></a>속성 확인을 해제하려면  
   
-1.  **도구** 메뉴에서 **옵션**을 선택합니다.  
+1. **도구** 메뉴에서 **옵션**을 선택합니다.  
   
-2.  에 **옵션** 대화 상자를 엽니다는 **디버깅** 폴더를 선택 합니다 **일반** 범주입니다.  
+2. 에 **옵션** 대화 상자를 엽니다는 **디버깅** 폴더를 선택 합니다 **일반** 범주입니다.  
   
-3.  선택을 취소 합니다 **속성 확인 및 기타 암시적 함수 호출** 확인란 합니다.  
+3. 선택을 취소 합니다 **속성 확인 및 기타 암시적 함수 호출** 확인란 합니다.  
   
- 네이티브 호출 스택과 관리되는 호출 스택이 서로 다르기 때문에 디버거는 혼합 코드에 대한 완전한 호출 스택을 항상 제공할 수는 없습니다. 네이티브 코드가 관리 코드를 호출할 경우 약간 다를 수 있습니다. 자세한 내용은 [혼합 코드 및 호출 스택 창에서 누락 된 정보](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)합니다.  
+   네이티브 호출 스택과 관리되는 호출 스택이 서로 다르기 때문에 디버거는 혼합 코드에 대한 완전한 호출 스택을 항상 제공할 수는 없습니다. 네이티브 코드가 관리 코드를 호출할 경우 약간 다를 수 있습니다. 자세한 내용은 [혼합 코드 및 호출 스택 창에서 누락 된 정보](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [관리 코드 디버그](../debugger/debugging-managed-code.md)

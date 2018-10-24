@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc4da4df18c2a214372ec6ea67865c10c507677e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8631d10d56a35f8cf4ef6024d087bf94ec89b9d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845734"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>방법: 프로젝트 파일의 이름 또는 위치 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ ms.locfileid: "49296012"
   
 #### <a name="to-use-the-msbuildprojectname-property"></a>MSBuildProjectName 속성을 사용하려면  
   
--   속성을 사용하는 것처럼 $() 표시를 사용하여 프로젝트 파일에서 속성을 참조합니다. 예를 들어:  
+- 속성을 사용하는 것처럼 $() 표시를 사용하여 프로젝트 파일에서 속성을 참조합니다. 예를 들어:  
   
-    ```  
-    <CSC Sources = "@(CSFile)"   
-        OutputAssembly = "$(MSBuildProjectName).exe"/>  
-    </CSC>  
-    ```  
+  ```  
+  <CSC Sources = "@(CSFile)"   
+      OutputAssembly = "$(MSBuildProjectName).exe"/>  
+  </CSC>  
+  ```  
   
- 예약된 속성 사용의 장점은 프로젝트 파일 이름에 대한 모든 변경 내용이 자동으로 통합된다는 점입니다. 다음에 프로젝트를 빌드할 때 출력 파일에 새 이름이 포함되고 직접 추가 작업을 할 필요가 없습니다.  
+  예약된 속성 사용의 장점은 프로젝트 파일 이름에 대한 모든 변경 내용이 자동으로 통합된다는 점입니다. 다음에 프로젝트를 빌드할 때 출력 파일에 새 이름이 포함되고 직접 추가 작업을 할 필요가 없습니다.  
   
 > [!NOTE]
 >  프로젝트 파일에서 예약된 속성을 다시 정의할 수 없습니다.  

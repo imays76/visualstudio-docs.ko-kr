@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841106"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015를 설치 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Visual Studio 2017에 대 한 최신 설치 설명서를 참조 하세요 [Visua
   
 #### <a name="to-install-or-uninstall-help-content"></a>도움말 콘텐츠를 설치 또는 제거하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 메뉴 모음에서 **도움말**, **도움말 콘텐츠 추가 및 제거**를 선택합니다.  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 메뉴 모음에서 **도움말**, **도움말 콘텐츠 추가 및 제거**를 선택합니다.  
   
-2.  **Microsoft 도움말 뷰어** 의 **콘텐츠 관리**탭에서 도움말 콘텐츠의 설치 소스를 선택합니다.  
+2. **Microsoft 도움말 뷰어** 의 **콘텐츠 관리**탭에서 도움말 콘텐츠의 설치 소스를 선택합니다.  
   
-3.  특정 도움말 컬렉션을 찾고자 하는 경우 이름 또는 키워드를 입력 합니다 **검색** 텍스트 상자 및 누릅니다 **Enter**합니다.  
+3. 특정 도움말 컬렉션을 찾고자 하는 경우 이름 또는 키워드를 입력 합니다 **검색** 텍스트 상자 및 누릅니다 **Enter**합니다.  
   
-4.  원하는 도움말 컬렉션의 이름 옆에 있는 **추가** 또는 **제거** 링크를 선택합니다.  
+4. 원하는 도움말 컬렉션의 이름 옆에 있는 **추가** 또는 **제거** 링크를 선택합니다.  
   
-5.  클릭 합니다 **업데이트** 단추입니다.  
+5. 클릭 합니다 **업데이트** 단추입니다.  
   
- 설치 또는 오프 라인 도움말을 배포 하는 방법에 대 한 자세한 내용은 참조는 [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)합니다.  
+   설치 또는 오프 라인 도움말을 배포 하는 방법에 대 한 자세한 내용은 참조는 [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)합니다.  
   
 ##  <a name="serviceReleases"></a> 서비스 릴리스 및 제품 업데이트 확인  
  모든 확장이 호환 되므로, 이전 버전에서 업그레이드할 때 Visual Studio 확장을 업그레이드 자동으로 하지 않습니다. 확장을 다시 설치 해야 합니다 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkId=178891) 또는 소프트웨어 게시자에서입니다.  

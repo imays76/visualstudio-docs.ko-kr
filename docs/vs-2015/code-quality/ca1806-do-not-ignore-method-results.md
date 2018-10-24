@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830589"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: 메서드 결과를 무시하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250109"
 ## <a name="cause"></a>원인  
  이 경고에 대 한 몇 가지 가능한 이유는  
   
--   새 개체가 만들어지지만 사용 되지 않습니다.  
+- 새 개체가 만들어지지만 사용 되지 않습니다.  
   
--   만들고 새 문자열을 반환 하는 메서드를 호출 하 고 새 문자열을 사용 되지 않습니다.  
+- 만들고 새 문자열을 반환 하는 메서드를 호출 하 고 새 문자열을 사용 되지 않습니다.  
   
--   COM 또는 P/Invoke 메서드는 HRESULT 또는 오류 코드를 반환 하는 사용 되지 않습니다. 규칙 설명  
+- COM 또는 P/Invoke 메서드는 HRESULT 또는 오류 코드를 반환 하는 사용 되지 않습니다. 규칙 설명  
   
- 불필요 한 개체 생성 및 사용 되지 않는 개체의 연결 된 가비지 수집에는 성능이 저하 됩니다.  
+  불필요 한 개체 생성 및 사용 되지 않는 개체의 연결 된 가비지 수집에는 성능이 저하 됩니다.  
   
- 문자열을 변경할 수 없는 및 String.ToUpper 등 호출 메서드에 있는 문자열의 인스턴스를 수정 하는 대신 문자열의 새 인스턴스를 반환 합니다.  
+  문자열을 변경할 수 없는 및 String.ToUpper 등 호출 메서드에 있는 문자열의 인스턴스를 수정 하는 대신 문자열의 새 인스턴스를 반환 합니다.  
   
- HRESULT 또는 오류 코드를 무시 하면 리소스가 부족 하거나 오류 조건에서 예기치 않은 동작이 발생할 수 있습니다.  
+  HRESULT 또는 오류 코드를 무시 하면 리소스가 부족 하거나 오류 조건에서 예기치 않은 동작이 발생할 수 있습니다.  
   
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법  
  메서드는 사용 되지 않는 B 개체의 새 인스턴스를 만드는 경우 인스턴스를 다른 메서드에 인수로 전달 하거나 인스턴스가 변수에 할당 합니다. 개체 생성이 필요한 경우 제거 합니다.-또는-  

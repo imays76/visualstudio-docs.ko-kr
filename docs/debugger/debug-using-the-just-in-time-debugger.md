@@ -13,174 +13,189 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168398"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382750"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Just-In-Time 디버거를 사용 하 여 Visual Studio에서 디버그
-Just-in-time 디버깅 Visual Studio 자동으로 시작 외부 Visual Studio를 실행 하는 응용 프로그램에서 예외 또는 충돌이 발생 합니다. 이 옵션을 사용 하면 Visual Studio 실행 중이지 않을 때 응용 프로그램을 테스트 하 고 문제가 발생 한 경우 Visual Studio를 사용 하 여 디버깅을 시작할 수 있습니다.
 
-Just-in-time 디버깅은 Windows 데스크톱 앱에 대 한 작동합니다. 유니버설 Windows 앱의 경우 작동 하지 않습니다 하 고 시각화 도우미 같은 네이티브 응용 프로그램에서 호스트 되는 관리 코드에 대해 작동 하지 않습니다.
+Just-in-time 디버깅 수 Visual Studio 자동으로 시작 하면 외부 Visual Studio 오류 또는 크래시를 실행 중인 앱입니다. Just In Time 디버깅, Visual Studio 외부에서 앱을 테스트 하 고 문제가 발생 한 경우 디버깅을 시작 하려면 Visual Studio를 열고 사용할 수 있습니다.
+
+Just-in-time 디버깅은 Windows 데스크톱 앱에 대 한 작동합니다. 시각화 도우미 같은 네이티브 응용 프로그램에서 호스트 되는 관리 코드 또는 유니버설 Windows 앱에 대 한 작동 하지 않습니다.
 
 > [!TIP]
-> 시간에 응답 하는 방법을 알고 싶으면 디버거 대화 상자, 참조 [이 항목에서는](../debugger/just-in-time-debugging-in-visual-studio.md)합니다.
+> 만 하려는 경우는 Just-In-Time 디버거 대화 상자가 표시를 중지 하지만 하지 Visual studio가 설치를 참조 하십시오 [Just-In-Time 디버거를 사용 하지 않도록 설정](../debugger/just-in-time-debugging-in-visual-studio.md)합니다. 한 번 Visual Studio가 설치 되어 있으면 해야 [Windows 레지스트리에서 사용 하지 않도록 설정 하면 시간 디버깅](#disable-just-in-time-debugging-from-the-windows-registry)합니다. 
 
-##  <a name="BKMK_Enabling"></a> 사용 하지 않도록 설정 하면 시간에 디버깅 사용 또는 사용
-Just In Time Visual Studio에서 디버깅을 사용 하지 않도록 설정 하거나 설정할 수 있습니다 **도구 > 옵션** 대화 상자.
+##  <a name="BKMK_Enabling"></a> Just In Time Visual Studio에서 디버깅을 사용할지 설정 합니다.
 
-#### <a name="to-enable-or-disable-just-in-time-debugging"></a>Just-In-Time 디버깅을 활성화하거나 비활성화하려면
+>[!NOTE]
+>를 사용 하거나 Just In Time 디버깅을 사용 하지 않도록 설정 하려면 실행 해야 Visual Studio를 관리자 권한으로 합니다. 활성화 또는 비활성화 Just In Time 레지스트리 키를 설정 하는 디버깅 하 고 해당 키를 변경 하려면 관리자 권한이 필요할 수 있습니다. 관리자 권한으로 Visual Studio를 열려면 Visual Studio 앱을 마우스 오른쪽 단추로 클릭 하 고 선택 **관리자 권한으로 실행**합니다. 
 
-1.  관리자 권한으로 Visual Studio를 열고 (마우스 오른쪽 단추로 **관리자 권한으로 실행**).
+Just In Time Visual Studio에서 디버깅을 구성할 수 있습니다 **도구가** > **옵션** (또는 **디버그** > **옵션**) 대화 상자입니다. 
 
-    활성화 또는 비활성화 Just In Time 레지스트리 키를 설정 하는 디버깅 하 고 해당 키를 변경 하려면 관리자 권한이 필요할 수 있습니다.
+**사용 하거나 사용 하지 않도록 설정 하면 시간 디버깅:**
 
-2. **도구** 메뉴에서 **옵션**을 클릭합니다.
+1. 에 **도구** 하거나 **디버그** 메뉴에서 **옵션** > **디버깅**  >   **Just In Time**합니다.
 
-2.  에 **옵션** 대화 상자를 확장 합니다 **디버깅** 노드.
+   ![JIT 디버깅을 사용할지](../debugger/media/dbg-jit-enable-or-disable.png "JIT 디버깅을 사용할지")
 
-3.  에 **디버깅** 노드를 선택 **Just In Time**합니다.
+1. 에 **이러한 유형의 코드에 Just-In-Time 디버깅 사용** 상자 시간 Just-디버그 하려면 디버그 하려는 코드의 형식을 선택 합니다: **관리 되는**에 **네이티브**, 및/또는  **스크립트**합니다.
+   
+1. **확인**을 선택합니다.
 
-    ![JIT 디버깅을 사용할지](../debugger/media/dbg-jit-enable-or-disable.png "JIT 디버깅을 사용할지")
+시간에만 사용 하도록 설정 하면 앱 작동이 중단 되거나 오류를 참조 하는 경우 열리지 않으면 디버거, 하지만 [문제를 해결 하는 Just-In-Time 디버깅](#jit_errors)합니다.
 
-4.  에 **Just-In-Time 디버깅 사용 이러한 유형의 코드** 상자에서 선택 하거나 해당 프로그램 형식 선택을 취소: **관리 되는**, **네이티브**, 또는 **스크립트**.
+## <a name="disable-just-in-time-debugging-from-the-windows-registry"></a>Just In Time Windows 레지스트리에서 디버깅을 사용 하지 않도록 설정
 
-5.  **확인**을 클릭합니다.
+컴퓨터에 Visual Studio가 더 이상 설치되어 있지 않아도 Just-In-Time 디버깅은 계속 활성화되어 있습니다. Visual Studio가 설치 되지 않은, 경우에 Just In Time Windows 레지스트리를 편집 하 여 디버깅을 비활성화할 수 없습니다.
 
-    시간에만 사용 하도록 설정 하면 디버거, 하지만 표시 되지 않는 응용 프로그램 충돌 또는 예외를 참조 하십시오 [Just In Time 디버깅 오류](#jit_errors)합니다.
+**Just In Time 레지스트리를 편집 하 여 디버깅을 사용 하지 않도록 설정 합니다.**
 
-컴퓨터에 Visual Studio가 더 이상 설치되어 있지 않아도 Just-In-Time 디버깅은 계속 활성화되어 있습니다. Visual Studio 설치 되어 있지 않으면 Just In Time Visual Studio에서 디버깅을 비활성화할 수 없습니다 **옵션** 대화 상자. 이 경우 Windows 레지스트리를 편집하여 Just-In-Time 디버깅을 비활성화할 수 있습니다.
-
-#### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>레지스트리를 편집하여 Just-In-Time 디버깅을 비활성화하려면
-
-1.  에 **시작** 메뉴, 검색 및 실행 `regedit.exe`
+1.  Windows에서 **시작** 메뉴에서 실행 합니다 **레지스트리 편집기** (*regedit.exe*).
 
 2.  에 **레지스트리 편집기** 창 찾기 및 다음 레지스트리 항목을 삭제 합니다.
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\합니다. NETFramework\DbgManagedDebugger**
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\합니다. NETFramework\DbgManagedDebugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![JIT 레지스트리 키](../debugger/media/dbg-jit-registry.png "JIT 레지스트리 키")
 
 3.  컴퓨터는 64 비트 운영 체제를 실행 하는 경우 다음 레지스트리 항목을 삭제 합니다.
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\합니다. NETFramework\DbgManagedDebugger**
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\합니다. NETFramework\DbgManagedDebugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
-4.  실수로 다른 레지스트리 키를 삭제하거나 변경하지 않도록 주의합니다.
+    삭제 하거나 다른 레지스트리 키를 변경할 필요가 있는지 확인 합니다.
 
 5.  닫기 합니다 **레지스트리 편집기** 창입니다.
 
-#### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Windows Form에 Just-In-Time 디버깅을 사용하려면
+## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Just In Time 사용 Windows Form의 디버깅
 
-1.  기본적으로 Windows Forms 응용 프로그램에는 복구할 수 있는 경우 프로그램을 계속 실행할 수 있도록 하는 최상위 예외 처리기가 있습니다. 예를 들어, Windows Forms 응용 프로그램에서 처리 되지 않은 예외를 throw 하는 경우 다음과 같은 대화 상자가 나타납니다.
+기본적으로 Windows Form 앱에는 앱에 복구할 수 있는 경우 계속 실행 하는 최상위 예외 처리기를 있습니다. Windows Forms 앱에서 처리 되지 않은 예외를 throw 하는 경우 다음 대화 상자가 표시 됩니다.
 
-     ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
+![처리 되지 않은 예외를 Windows Form](../debugger/media/windowsformsunhandledexception.png "Windows 양식 처리 되지 않은 예외")
 
-     Windows Forms 응용 프로그램의 디버깅을 사용 하면 시간을에 다음과 같은 추가 단계를 수행 해야 합니다.
+Just In Time 표준 Windows 폼 오류를 처리 하는 대신 디버깅을 사용 하도록 설정 하려면 이러한 설정을 추가 합니다.
 
-2.  설정 합니다 `jitDebugging` 값을 `true` 에 `system.windows.form` 합니다 machine.config 섹션 또는  *\<응용 프로그램 이름 >*. exe.config 파일:
-
+-  `system.windows.forms` 의 섹션을 *machine.config* 또는  *\<앱 이름 >. exe.config* 파일에서 설정 합니다 `jitDebugging` 값을 `true`:
+    
     ```xml
     <configuration>
         <system.windows.forms jitDebugging="true" />
     </configuration>
     ```
+    
+-  c + + Windows Form 응용 프로그램에서 설정할 수도 `DebuggableAttribute` 하 `true` 에 *.config* 파일 또는 코드에서. 사용 하 여 컴파일하면 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 하지 않고 [/Og](/cpp/build/reference/og-global-optimizations), 컴파일러를이 특성을 설정 합니다. 그러나 최적화 되지 않은 릴리스 빌드 디버깅 하려는 경우 설정 해야 합니다 `DebuggableAttribute` 앱의 다음 줄을 추가 하 여 *AssemblyInfo.cpp* 파일:
 
-3.  C++ Windows Forms 응용 프로그램의 경우 .config 파일이나 코드에서 `DebuggableAttribute`도 설정해야 합니다. 사용 하 여 컴파일하면 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 하지 않고 [/Og](/cpp/build/reference/og-global-optimizations), 컴파일러를이 특성을 설정 합니다. 그러나 최적화되지 않은 릴리스 빌드를 디버깅하려면 이 특성을 직접 설정해야 합니다. 응용 프로그램의 AssemblyInfo.cpp 파일에 다음 줄을 추가하여 이 특성을 설정할 수 있습니다.
+   ```cpp
+   [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
+   ```
+   
+   자세한 내용은 <xref:System.Diagnostics.DebuggableAttribute>을 참조하세요.
 
-    ```cpp
-    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
-    ```
+## <a name="BKMK_Using_JIT"></a>Just In Time을 사용 하 여 디버깅
+ 이 예제에서는 시간 하기만 하면 됩니다-앱에서 오류를 throw 하는 경우 디버깅을 안내 합니다.
 
-     자세한 내용은 <xref:System.Diagnostics.DebuggableAttribute>을 참조하세요.
+ - Visual Studio를 설치 하려면 다음이 단계를 수행 해야 합니다. Visual Studio가 없는 경우 무료 다운로드할 수 있습니다 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)합니다.
+   
+ - 있는지 Just In Time을 확인은 디버깅 [활성화](#BKMK_Enabling) 에 **도구** > **옵션** > **디버깅**  >  **Just In Time**합니다.
 
-## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Just-in-time 디버깅 사용
- 이 섹션에서는 실행 예외를 throw 하는 경우 어떻게 되는지 보여 줍니다.
+예를 들어 해야는 C# 를 throw 하는 Visual Studio에서 콘솔 앱을 [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
- Visual Studio를 설치 하려면 다음이 단계를 수행 해야 합니다. Visual Studio가 없는 경우 무료 다운로드할 수 있습니다 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)합니다.
+1. Visual studio는 C# 콘솔 앱 (**파일** > **새로 만들기** > **프로젝트** > **C#**  >  **콘솔 응용 프로그램**) 라는 *ThrowsNullException*합니다. Visual Studio에서 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [연습: 간단한 응용 프로그램](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)합니다.
+   
+1. Visual Studio에서 프로젝트가 열리면 엽니다는 *Program.cs* 파일입니다. 콘솔에 줄을 출력 하 고 다음 NullReferenceException을 throw 하는 다음 코드를 사용 하 여 main () 메서드를 바꿉니다.
+   
+   ```csharp
+   static void Main(string[] args)
+   {
+       Console.WriteLine("we will now throw a NullReferenceException");
+       throw new NullReferenceException("this is the exception thrown by the console app");
+   }
+   ```
+   
+1. 솔루션을 빌드하려면 선택 합니다 **디버깅할** (기본값) 또는 **릴리스** 구성을 선택한 후 **빌드** > **솔루션 다시 빌드** . 
+   
+   >[!NOTE]
+   >- 선택할 **디버그** 전체 디버깅 환경을 구성 합니다. 
+   >- 선택 하는 경우 [릴리스](../debugger/how-to-set-debug-and-release-configurations.md) 구성을 해제 해야 [Just My Code](../debugger/just-my-code.md) 이 절차를 수행 하려면. 아래 **도구** > **옵션** > **디버깅**을 선택 취소 **내 코드만**합니다.
+   빌드 구성에 대 한 자세한 내용은 참조 하세요. [빌드 구성 이해](../ide/understanding-build-configurations.md)합니다.
+   
+1. 기본 제공된 앱을 엽니다 *ThrowsNullException.exe* 에서 프로그램 C# 프로젝트 폴더 (*...\ThrowsNullException\ThrowsNullException\bin\Debug* 하거나 *...\ThrowsNullException\ ThrowsNullException\bin\Release*). 
+   
+   다음 명령 창에 표시 됩니다.
+   
+   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   
+1. 합니다 **Just-In-Time 디버거 선택** 대화 상자가 열립니다.
+   
+   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   
+   아래 **사용 가능한 디버거**를 선택 **의 새 인스턴스 \<에 기본 Visual Studio 버전 >** 아직 선택 하지 않은 경우. 
+   
+1. **확인**을 선택합니다.
+   
+   Visual Studio의 새 인스턴스에서 예외를 발생 시킨 줄에서 중지 된 실행과 ThrowsNullException 프로젝트를 엽니다.
+   
+   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
 
- Just In Time 있는지 확인은 디버깅 [사용](#BKMK_Enabling)합니다.
-
- 이 섹션에서는 throw 하는 Visual Studio에서 C# 콘솔 앱을 확인 합니다는 [NullReferenceException](/dotnet/api/system.nullreferenceexception)합니다.
-
- Visual Studio에서 C# 콘솔 앱을 만듭니다 (**파일 > 새로 만들기 > 프로젝트 > Visual C# > 콘솔 응용 프로그램**) 이라는 **ThrowsNullException**합니다. Visual Studio에서 프로젝트를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [연습: 간단한 응용 프로그램](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)합니다.
-
- Visual Studio에서 프로젝트가 열리면 Program.cs 파일을 엽니다. 콘솔에 줄을 출력 하 고 다음 NullReferenceException을 throw 하는 다음 코드를 사용 하 여 main () 메서드를 바꿉니다.
-
-```csharp
-static void Main(string[] args)
-{
-    Console.WriteLine("we will now throw a NullReferenceException");
-    throw new NullReferenceException("this is the exception thrown by the console app");
-}
-```
-
-> [!IMPORTANT]
->  이 절차에서 작동 하도록 하기 위해를 [릴리스 구성을](../debugger/how-to-set-debug-and-release-configurations.md)를 해제 해야 [Just My Code](../debugger/just-my-code.md)합니다. Visual Studio에서 클릭 **도구 > 옵션**합니다. 에 **옵션** 대화 상자에서 **디버깅**합니다. 검사를 제거 **내 코드만**합니다.
-
- 솔루션을 빌드합니다 (Visual Studio에서 선택 **빌드 > 솔루션 다시 빌드**). 디버그 또는 릴리스 구성을 선택할 수 있습니다 (선택 **디버그** 완벽 한 디버깅 환경을 위해). 빌드 구성에 대한 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.
-
- 빌드 프로세스는 실행 ThrowsNullException.exe를 만듭니다. C# 프로젝트를 만든 폴더에서 찾을 수 있습니다: **...\ThrowsNullException\ThrowsNullException\bin\Debug** 하거나 **...\ThrowsNullException\ThrowsNullException\bin\Release**합니다.
-
- ThrowsNullException.exe를 두 번 클릭 합니다. 이 같은 명령 창이 표시 됩니다.
-
- ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
-
- 몇 초 후 오류 창이 나타납니다.
-
- ![ThrowsNullExceptionError](../debugger/media/throwsnullexceptionerror.png "ThrowsNullExceptionError")
-
- 클릭 하지 마세요 **취소**! 두 개의 단추를 몇 초 후 표시 **디버그** 하 고 **프로그램을 닫아**합니다. 클릭 **디버그**합니다.
+이 시점에서 디버깅을 시작할 수 있습니다. 실제 앱을 디버깅할 경우 코드는 예외를 throw 하는 이유를 확인 해야 합니다.
 
 > [!CAUTION]
->  응용 프로그램에 신뢰할 수 없는 코드가 보안 경고 대화 상자가 나타납니다. 이 대화 상자에서 디버깅을 계속할지 여부를 결정할 수 있습니다. 디버깅을 계속하기 전에 코드를 신뢰할 수 있는지 확인해야 합니다. 직접 작성한 코드인지, 코드 작성자를 신뢰할 수 있는지, 응용 프로그램이 원격 컴퓨터에서 실행 중인 경우 프로세스 이름을 알 수 있는지 등을 확인합니다. 응용 프로그램이 로컬로 실행 중이라고 해서 반드시 신뢰할 수 있는 것은 아닙니다. 컴퓨터에서 악의적인 코드가 실행 될 가능성을 고려 합니다. 코드를 하려는 경우 디버그를 신뢰할 수, 클릭 **디버그**합니다. 그렇지 않은 경우 클릭 **디버깅 하지 마십시오**합니다.
+> 신뢰할 수 없는 코드를 포함 하는 앱을 디버깅을 계속할지 여부를 결정할 수 있도록 보안 경고 대화 상자가 나타납니다. 디버깅을 계속 하기 전에 코드를 신뢰할 수 있는지 여부를 결정 합니다. 직접 작성한 코드인지, 응용 프로그램이 원격 컴퓨터에서 실행 중인 경우 프로세스 이름을 알 수 있는지 등을 확인합니다. 앱을 로컬로 실행 중인 경우 컴퓨터에서 실행 되는 악성 코드가 될 가능성을 고려 합니다. 코드는 신뢰할 수 있는 하려는 경우 선택 **확인**합니다. 그렇지 않으면 **취소**를 선택합니다.
 
- 합니다 **Visual Studio Just-In-Time Debugger** 창이 나타납니다.
+## <a name="jit_errors"></a> Just In Time 해결 디버깅 
 
- ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+Just In Time 경우 디버깅 시작 되지 않는 앱 충돌 하는 경우 Visual Studio에서 사용 하도록 설정 하는 경우에:
 
- 아래 **사용 가능한 디버거**, 것을 확인할 수는 **Microsoft Visual Studio의 새 인스턴스 <available version>**  줄을 선택 합니다. 이미 선택 되지 않은 경우 지금 선택할.
+- Windows 오류 보고 컴퓨터에 처리 오류 시간이 걸리는 수 없습니다. 
+  
+  이 문제를 해결 하려면 추가 레지스트리 편집기를 사용을 **DWORD 값** 의 **사용 안 함**를 사용 하 여 **값 데이터** 의 **1**, 다음 레지스트리 키에:
+  
+  
 
- 창의 맨 아래 **선택한 디버거를 사용 하 여 디버깅 하 시겠습니까?**, 클릭 **예**합니다.
+  - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows 오류 보고**
+    
+  - (64 비트 컴퓨터용): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 오류 보고**
+  
+  자세한 내용은 참조 하세요. [합니다. WER 설정](https://docs.microsoft.com/windows/desktop/wer/wer-settings)합니다.
+  
+- 시간에만 알려진된 Windows 문제를 일으킬 수 디버거 실패 합니다. 
+  
+  수정을 추가 하는 것을 **Dword** 의 **자동**를 사용 하 여 **값 데이터** 의 **1**, 다음 레지스트리 키에:
+  
+  
+  - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
+    
+  - (64 비트 컴퓨터용): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
- Visual Studio의 새 인스턴스를에서 예외를 throw 하는 줄에서 중지 된 실행과 ThrowsNullException 프로젝트를 엽니다.
-
- ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
-
- 이 시점에서 디버깅을 시작할 수 있습니다. 실제 응용 프로그램의 경우 코드는 예외를 throw 하는 이유를 확인 해야 합니다.
-
-## <a name="jit_errors"></a> Just-in-time 디버깅 오류
- 프로그램 충돌 및 기능을 사용 하도록 설정 해야 하는 경우 대화 상자에 표시 되지이 컴퓨터에 Windows 오류 보고 설정으로 인해 있습니다. 추가 해야 합니다는 **사용 안 함** 다음 레지스트리 키 값 및 값 1로 설정 합니다.
-
-* HKLM\Software\Microsoft\Windows\Windows 오류 보고
-* HKLM\Software\WOW6432Node\Microsoft\Windows\Windows 오류 보고
- 
-이러한 설정에 대 한 자세한 내용은 참조 하세요. [합니다. WER 설정](https://docs.microsoft.com/windows/desktop/wer/wer-settings)합니다.
-
-또한 Just In Time와 연관 된 다음 오류 메시지가 나타날 디버깅 합니다.
+Just In Time 중 다음 오류 메시지가 표시 될 수 있습니다 디버깅:
 
 - **충돌 하는 프로세스에 연결할 수 없습니다. 지정된 된 프로그램을 Windows 또는 MS-DOS 프로그램이 아닙니다.**
 
-    이 오류는 다른 사용자로 실행 되는 프로세스에 연결 하려고 할 때 발생 합니다.
+    디버거가 다른 사용자에서 실행 중인 프로세스에 연결 하려고 했습니다.
 
-    Visual Studio 시작이이 문제를 해결 하려면 엽니다는 **프로세스에 연결** 대화 상자를 **디버그** 메뉴 및 찾기 프로세스에서 디버그 하려는 **사용 가능한 프로세스**목록입니다. 프로세스의 이름을 모르는 경우 확인 합니다 **Visual Studio Just-In-Time Debugger** 대화 및 참고 프로세스 id입니다. 프로세스를 선택 합니다 **사용 가능한 프로세스** 나열 하 고 클릭 **연결**합니다. 에 **Visual Studio Just-In-Time Debugger** 대화 상자에서 클릭 **No** 대화 상자를 닫습니다.
+    Visual Studio에서이 문제를 해결 하려면 엽니다 **디버그** > **프로세스에 연결**를 디버그 하려면 프로세스를 찾습니다는 **사용 가능한 프로세스** 목록입니다. 프로세스의 이름을 모르는 경우의 프로세스 ID를 찾을 합니다 **Visual Studio Just-In-Time Debugger** 대화 합니다. 프로세스를 선택 합니다 **사용 가능한 프로세스** 목록에서 선택한 **연결**합니다. 선택 **No** 시간에서 Just를 해제 하려면 디버거 대화 합니다.
 
 - **사용자가 로그온 하기 때문에 디버거를 시작할 수 없습니다.**
 
-    이 오류는 콘솔에 로그온한 사용자가 없는 컴퓨터에서 Just-In-Time 디버깅 시 Visual Studio를 시작하려고 할 때 발생합니다. 로그온한 사용자가 없으므로 Just-In-Time 디버깅 대화 상자를 표시할 사용자 세션이 없습니다.
+    시간에 하면 표시할 사용자 세션이 이므로 콘솔에 로그온 한 사용자가 대화를 디버깅 합니다.
 
     이 문제를 해결하려면 컴퓨터에 로그온합니다.
 
 - **클래스가 등록 되지 않았습니다.**
 
-    이 오류는 설치 문제 등으로 인해 등록되지 않은 COM 클래스를 디버거에서 만들려고 했음을 의미합니다.
+    등록 되지 않은, 아마도 설치 문제로 인해 COM 클래스를 디버거에서 만들려고 합니다.
 
-    이 문제를 해결하려면 설치 디스크를 사용하여 Visual Studio를 다시 설치하거나 Visual Studio 설치를 복구합니다.
+    이 문제를 해결 하려면 Visual Studio 설치 관리자를 사용 하 여 다시 설치 하거나 Visual Studio 설치를 복구 합니다.
 
-## <a name="see-also"></a>참고 항목
- [디버거 보안](../debugger/debugger-security.md) [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md) [Just 시간, 디버깅, 옵션 대화 상자](../debugger/just-in-time-debugging-options-dialog-box.md) [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결 될 수 있습니다 위험 합니다. 아래의 정보가 의심스럽거나 잘 모르겠으면 이 프로세스에 연결하지 마세요.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+## <a name="see-also"></a>참고자료
+- [디버거 보안](../debugger/debugger-security.md)
+- [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)
+- [Just In Time, 디버깅, 옵션 대화 상자](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 아래의 정보가 의심스럽거나 잘 모르겠으면 이 프로세스에 연결하지 마세요.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

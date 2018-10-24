@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c08258c98b46536f17f7819ce01c296d2d1900
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7799316a933e5f021df78699e41e6e9483746575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845955"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
-스택 프레임에 저장 되어 있는 지정 된 레지스터의 값을 검색 합니다.  
+스택 프레임에 저장 된 지정 된 레지스터의 값을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,7 +41,7 @@ HRESULT get_registerValue(
  [out] 레지스터에 저장 하는 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

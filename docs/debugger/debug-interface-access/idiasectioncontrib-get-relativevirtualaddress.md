@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4e0fb8f77315a91fa3fcb3fac975b5614aa57f5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 25fce77625d00cdcf3c76691e60a7bf2feafe6b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825798"
 ---
 # <a name="idiasectioncontribgetrelativevirtualaddress"></a>IDiaSectionContrib::get_relativeVirtualAddress
-이미지 상대 가상 주소 (RVA) 기여도 검색합니다.  
+이미지의 상대 가상 주소 (RVA)에 대 한 기여도 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,7 +34,7 @@ HRESULT get_relativeVirtualAddress (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] RVA 기여도 이미지를 반환합니다.  
+ [out] 이미지에 대 한 기여도의 RVA를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  

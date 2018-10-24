@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b07bdc7ab114619629ab4ef360ded3bf6655e6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285118"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814417"
 ---
 # <a name="options-text-editor-cc-experimental"></a>옵션, 텍스트 편집기, C/C++, 실험적
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ ms.locfileid: "49285118"
   
  Visual Studio 갤러리의 추가 텍스트 편집기 기능은 [여기](http://go.microsoft.com/fwlink/?LinkId=692016)에서 목록을 참조하세요. 예제는 [C++ 빠른 조치 방법](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)(영문)이며, 다음을 지원합니다.  
   
--   **누락된 #include 추가** - 코드의 알 수 없는 기호에 대해 관련 #include를 제안합니다.  
+- **누락된 #include 추가** - 코드의 알 수 없는 기호에 대해 관련 #include를 제안합니다.  
   
--   **네임스페이스/정규화 기호를 사용하여 추가** - 네임스페이스를 제외하고 이전 항목과 유사합니다.  
+- **네임스페이스/정규화 기호를 사용하여 추가** - 네임스페이스를 제외하고 이전 항목과 유사합니다.  
   
--   **누락된 세미콜론 추가**  
+- **누락된 세미콜론 추가**  
   
--   **MSDN 도움말** - MSDN에서 오류 메시지를 검색합니다.  
+- **MSDN 도움말** - MSDN에서 오류 메시지를 검색합니다.  
   
- 물결선을 가리켜서 전구를 표시하거나 기본 바로 가기 키 Ctrl+.(Ctrl+점)을 사용할 수 있습니다. 바로 가기 키의 경우 특정 오류나 토큰에 캐럿을 배치할 필요가 없으며 오류와 같은 줄에 있기만 하면 해당 줄의 모든 항목에 대한 제안을 호출할 수 있습니다.  
+  물결선을 가리켜서 전구를 표시하거나 기본 바로 가기 키 Ctrl+.(Ctrl+점)을 사용할 수 있습니다. 바로 가기 키의 경우 특정 오류나 토큰에 캐럿을 배치할 필요가 없으며 오류와 같은 줄에 있기만 하면 해당 줄의 모든 항목에 대한 제안을 호출할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [언어별 편집기 옵션 설정](../../ide/reference/setting-language-specific-editor-options.md)   

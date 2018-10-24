@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811505"
 ---
 # <a name="how-to-resize-listobject-controls"></a>방법: ListObject 컨트롤 크기 조정
   <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤의 크기는 Microsoft Office Excel 통합 문서에 추가할 때 설정하지만 나중에 크기를 조정할 수 있습니다. 예를 들어 2열로 된 목록을 3열로 변경할 수 있습니다.  
@@ -32,15 +32,15 @@ ms.locfileid: "35674783"
   
  이 항목에서는 다음 작업에 대해 설명합니다.  
   
--   [디자인 타임에 ListObject 컨트롤 크기 조정](#designtime)  
+- [디자인 타임에 ListObject 컨트롤 크기 조정](#designtime)  
   
--   [런타임에 문서 수준 프로젝트에서 ListObject 컨트롤 크기 조정](#runtimedoclevel)  
+- [런타임에 문서 수준 프로젝트에서 ListObject 컨트롤 크기 조정](#runtimedoclevel)  
   
--   [런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 크기 조정](#runtimeaddin)  
+- [런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 크기 조정](#runtimeaddin)  
   
- 에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 참조 하세요 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.  
+  에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 참조 하세요 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [런타임에 데이터 바인딩된 목록 개체에 대 한 열 i: 추가 하는 방법?](http://go.microsoft.com/fwlink/?LinkID=130318)합니다.  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [런타임에 데이터 바인딩된 목록 개체에 대 한 열 i: 추가 하는 방법?](http://go.microsoft.com/fwlink/?LinkID=130318)합니다.  
   
 ##  <a name="designtime"></a> 디자인 타임에 ListObject 컨트롤 크기 조정  
  목록 크기를 조정하려면 크기 조정 핸들 중 하나를 클릭하여 끌거나 **목록 크기 조정** 대화 상자에서 크기를 재정의합니다.  

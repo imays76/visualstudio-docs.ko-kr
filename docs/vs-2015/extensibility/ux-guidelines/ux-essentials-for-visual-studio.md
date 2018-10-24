@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848659"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 용 UX Essentials
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303324"
 ### <a name="hyperlink-anti-patterns"></a>하이퍼링크 안티패턴  
  다음 예제에서는 두 가지 안티 패턴을 포함합니다.  
   
-1.  Hover에 빨간색 켜기 전경은 글꼴 서비스에서 올바른 공유 색 사용 하지 않는 것을 의미 합니다.  
+1. Hover에 빨간색 켜기 전경은 글꼴 서비스에서 올바른 공유 색 사용 하지 않는 것을 의미 합니다.  
   
-2.  개념 항목에 대 한 링크에 대 한 적절 한 텍스트 아닙니다 "자세히". 사용자의 목표는 없습니다. 자세한 내용은 해당 선택의 결과 이해 하는 것입니다.  
+2. 개념 항목에 대 한 링크에 대 한 적절 한 텍스트 아닙니다 "자세히". 사용자의 목표는 없습니다. 자세한 내용은 해당 선택의 결과 이해 하는 것입니다.  
   
- ![앤티 하이퍼링크&#45;패턴](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
+   ![앤티 하이퍼링크&#45;패턴](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
   
- **무시 컬러 서비스와 "자세한 내용을 보려면" 대 한 하이퍼링크를 사용 하 여 Visual Studio 안티 패턴입니다.**  
+   **무시 컬러 서비스와 "자세한 내용을 보려면" 대 한 하이퍼링크를 사용 하 여 Visual Studio 안티 패턴입니다.**  
   
- **향상 된 솔루션:** 링크를 클릭 하 여 사용자 요청 하는 질문을 제기 합니다.  
+   **향상 된 솔루션:** 링크를 클릭 하 여 사용자 요청 하는 질문을 제기 합니다.  
   
 -   Windows Azure 서비스는 어떻게 작동 하나요?  
   

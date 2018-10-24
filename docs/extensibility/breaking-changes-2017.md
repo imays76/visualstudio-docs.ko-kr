@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826494"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 확장성의 변경 내용
 
@@ -59,13 +59,14 @@ Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Setti
 > [INSTALLDIR] 아래 Visual Studio의 설치 루트 디렉터리를 가리킵니다. *VSIXInstaller.exe* 는 자동으로이 채우는 하지만 사용자 지정 배포 코드를 작성 하려면 읽어보세요 [Visual Studio 찾기](locating-visual-studio.md)합니다.
 
 * GAC에만 설치 된 어셈블리:
-  * 이러한 어셈블리는 이제 설치 * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* 하거나 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*합니다. 이러한 폴더를 사용 하면 Visual Studio 프로세스의 검색 경로에 속합니다.
+  * 이러한 어셈블리는 이제 설치 <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> 하거나 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*합니다. 이러한 폴더를 사용 하면 Visual Studio 프로세스의 검색 경로에 속합니다.
+
 * 비 검색 경로 GAC에 설치 된 어셈블리:
   * GAC의 복사본은 설치 프로그램에서 제거 되었습니다.
   * A *.pkgdef* 파일 어셈블리에 대 한 코드 베이스 엔트리를 지정 하려면 추가 되었습니다.
 
     예를 들어:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ Visual Studio 프로세스 내에서 실행 되는 코드는 Visual Studio Setti
   * 코드는 Visual Studio 핵심 어셈블리를 찾을 수 됩니다.
   * 사용 하는 것이 좋습니다는 *.pkgdef* 필요한 경우 어셈블리에 대 한 경로 지정 하는 파일입니다.
 * 확장은 Visual Studio 프로세스 외부에서 실행 되 하는 경우:
-  * 아래에서 Visual Studio 핵심 어셈블리에 대 한 확인 하는 것이 좋습니다. * [INSTALLDIR] \Common7\IDE\*하십시오 *[INSTALLDIR] \Common7\IDE\PublicAssemblies* 또는 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*구성 파일 또는 어셈블리 확인자를 사용 하 여 합니다.
+  * 아래에서 Visual Studio 핵심 어셈블리에 대 한 확인 하는 것이 좋습니다 <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> 또는 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*구성 파일 또는 어셈블리 확인자를 사용 하 여 합니다.
 
 ## <a name="change-reduce-registry-impact"></a>변경: 레지스트리 영향 줄이기
 

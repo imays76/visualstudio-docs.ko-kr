@@ -15,17 +15,17 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1cc8f2b2efc6c538af84d54cb487a8e35dbba6f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817277"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>연습: 사용자 지정 텍스트 템플릿 호스트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A *텍스트 템플릿**호스트*  수 있도록 하는 환경을 제공는 *텍스트 템플릿 변환 엔진* 실행 되도록 합니다. 호스트는 파일 시스템과 엔진의 상호 작용을 관리합니다. 엔진 또는 *지시문 프로세서* 해야 하는 파일 또는 어셈블리 호스트에서 리소스를 요청할 수 있습니다. 그러면 호스트는 디렉터리와 전역 어셈블리 캐시를 검색하여 요청된 리소스를 찾을 수 있습니다. 자세한 내용은 [은 텍스트 템플릿 변형 프로세스](../modeling/the-text-template-transformation-process.md)합니다.  
+*텍스트 템플릿을*<em>호스트</em> 수 있는 환경을 제공 합니다 *텍스트 템플릿 변환 엔진* 실행 합니다. 호스트는 파일 시스템과 엔진의 상호 작용을 관리합니다. 엔진 또는 *지시문 프로세서* 해야 하는 파일 또는 어셈블리 호스트에서 리소스를 요청할 수 있습니다. 그러면 호스트는 디렉터리와 전역 어셈블리 캐시를 검색하여 요청된 리소스를 찾을 수 있습니다. 자세한 내용은 [은 텍스트 템플릿 변형 프로세스](../modeling/the-text-template-transformation-process.md)합니다.  
   
  사용 하려는 경우 사용자 지정 호스트를 작성할 수 있습니다 합니다 *텍스트 템플릿 변환* 기능을 외부 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 또는 사용자 지정 도구에 통합 하려는 경우. 사용자 지정 호스트를 만들려면 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>에서 상속되는 클래스를 만들어야 합니다. 개별 메서드에 대한 문서를 보려면 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>를 참조하십시오.  
   

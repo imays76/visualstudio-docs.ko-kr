@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843537"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경
   이 연습에서는 Microsoft Office Excel 워크시트에서 확인란을 사용 하 여 서식을 변경 하려면의 기본 사항을 보여 줍니다. 만들고 프로젝트에 코드를 추가 하려면 Visual Studio에서 Office 개발 도구를 사용 합니다. 결과 전체 샘플을 보려면 Excel 컨트롤 샘플을 참조 하세요 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)합니다.  
@@ -101,24 +101,24 @@ ms.locfileid: "38778372"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>NamedRange 컨트롤에 텍스트를 추가 하려면  
   
-1.  **Excel 컨트롤** 끌어서 도구 상자 탭을 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 셀 **b 9**합니다.  
+1. **Excel 컨트롤** 끌어서 도구 상자 탭을 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 셀 **b 9**합니다.  
   
-2.  확인 **$B$ 9** 편집 가능한 텍스트 상자 및 해당 셀에 표시 됩니다 **b 9** 을 선택 합니다. 없는 경우 셀을 클릭 **b 9** 하 여 선택 합니다.  
+2. 확인 **$B$ 9** 편집 가능한 텍스트 상자 및 해당 셀에 표시 됩니다 **b 9** 을 선택 합니다. 없는 경우 셀을 클릭 **b 9** 하 여 선택 합니다.  
   
-3.  **확인**을 클릭합니다.  
+3. **확인**을 클릭합니다.  
   
-4.  셀 **b 9** 명명 된 범위가 됩니다 `NamedRange1`합니다.  
+4. 셀 **b 9** 명명 된 범위가 됩니다 `NamedRange1`합니다.  
   
-     워크시트로 표시 표시가 없습니다 하지만 `NamedRange1` 나타나는 합니다 **이름 상자** (워크시트 바로 위 왼쪽) 셀 **b 9** 선택 합니다.  
+    워크시트로 표시 표시가 없습니다 하지만 `NamedRange1` 나타나는 합니다 **이름 상자** (워크시트 바로 위 왼쪽) 셀 **b 9** 선택 합니다.  
   
-5.  해야 **NamedRange1** 의 개체 이름 목록 상자에 표시 되는 **속성** 창에서 다음 속성을 변경:  
+5. 해야 **NamedRange1** 의 개체 이름 목록 상자에 표시 되는 **속성** 창에서 다음 속성을 변경:  
   
-    |속성|값|  
-    |--------------|-----------|  
-    |**이름**|**텍스트 글꼴**|  
-    |**Value2**|**이 텍스트의 서식을 변경 하는 확인란을 클릭 합니다.**|  
+   |속성|값|  
+   |--------------|-----------|  
+   |**이름**|**텍스트 글꼴**|  
+   |**Value2**|**이 텍스트의 서식을 변경 하는 확인란을 클릭 합니다.**|  
   
- 그런 다음 옵션을 선택할 때 텍스트의 서식을 지정 하는 코드를 작성 합니다.  
+   그런 다음 옵션을 선택할 때 텍스트의 서식을 지정 하는 코드를 작성 합니다.  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>옵션을 선택할 때 텍스트의 서식을 지정합니다  
  이 섹션에서는 워크시트에 있는 텍스트의 형식이 변경 되는 사용자가 서식 옵션을 선택 하면 되도록 코드를 작성 합니다.  

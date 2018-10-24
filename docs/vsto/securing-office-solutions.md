@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846202"
 ---
 # <a name="secure-office-solutions"></a>Office 솔루션 보안
   Office 솔루션에 대 한 보안 모델에서는 여러 가지 기술을: 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Microsoft Office 및 Internet Explorer 제한 된 사이트 영역에 보안 센터. 다음 섹션에서는 다양한 보안 기능의 작동 방식을 설명합니다.  
   
--   [Office 솔루션에 신뢰를 부여](#GrantingTrustToSolutions)  
+- [Office 솔루션에 신뢰를 부여](#GrantingTrustToSolutions)  
   
--   [문서에 신뢰를 부여](#GrantingTrustToDocuments)  
+- [문서에 신뢰를 부여](#GrantingTrustToDocuments)  
   
--   [Windows Installer를 사용 하는 경우에 신뢰 부여](#GrantingTrustWindowsInstaller)  
+- [Windows Installer를 사용 하는 경우에 신뢰 부여](#GrantingTrustWindowsInstaller)  
   
--   [Office 솔루션에 대 한 특정 보안 고려 사항](#Security)  
+- [Office 솔루션에 대 한 특정 보안 고려 사항](#Security)  
   
--   [개발 중 보안](#SecurityDuringDeployment)  
+- [개발 중 보안](#SecurityDuringDeployment)  
   
--   [Visual Studio Tools for Office 런타임](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio Tools for Office 런타임](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> Office 솔루션에 신뢰를 부여  
  Office 솔루션에 신뢰를 부여하는 것은 각 최종 사용자의 보안 정책을 수정하여 다음 증거에 따라 Office 솔루션을 신뢰하는 것입니다.  
   
--   배포 매니페스트에 서명하는 데 사용되는 인증서입니다.  
+- 배포 매니페스트에 서명하는 데 사용되는 인증서입니다.  
   
--   배포 매니페스트의 URL입니다.  
+- 배포 매니페스트의 URL입니다.  
   
- 자세한 내용은 [Office 솔루션에 신뢰를 부여](../vsto/granting-trust-to-office-solutions.md)합니다.  
+  자세한 내용은 [Office 솔루션에 신뢰를 부여](../vsto/granting-trust-to-office-solutions.md)합니다.  
   
 ##  <a name="GrantingTrustToDocuments"></a> 문서에 신뢰를 부여  
  문서 수준 사용자 지정을 사용하려면 문서가 신뢰할 수 있는 위치로 지정된 디렉터리에 있어야 합니다. 자세한 내용은 [문서에 신뢰 부여](../vsto/granting-trust-to-documents.md)합니다.  
@@ -65,11 +65,11 @@ ms.locfileid: "49074067"
 ### <a name="document-level-solutions"></a>문서 수준 솔루션  
  다음 유형의 프로젝트를 개발하고 있다면 Microsoft Office 응용 프로그램의 신뢰할 수 있는 위치 목록에 문서의 정규화된 경로를 추가해야 합니다.  
   
--   문서 수준 솔루션에 있는 네트워크 파일 공유와 같은  *\\\servername\sharename*합니다.  
+- 문서 수준 솔루션에 있는 네트워크 파일 공유와 같은  *\\\servername\sharename*합니다.  
   
--   솔루션을 사용 하는 Word 용 문서 수준 *.doc* 하거나 *.docm* 파일입니다.  
+- 솔루션을 사용 하는 Word 용 문서 수준 *.doc* 하거나 *.docm* 파일입니다.  
   
- 신뢰할 수 있는 위치 목록에 문서 위치를 추가할 때 하위 디렉터리를 포함하거나, 특히 디버그 및 빌드 폴더를 포함합니다. 자세한 내용은 Microsoft Office Online 도움말 문서를 참조 [만들기, 제거 또는 변경 프로그램 파일에 대 한 신뢰할 수 있는 위치](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)합니다.  
+  신뢰할 수 있는 위치 목록에 문서 위치를 추가할 때 하위 디렉터리를 포함하거나, 특히 디버그 및 빌드 폴더를 포함합니다. 자세한 내용은 Microsoft Office Online 도움말 문서를 참조 [만들기, 제거 또는 변경 프로그램 파일에 대 한 신뢰할 수 있는 위치](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)합니다.  
   
 ### <a name="temporary-certificates"></a>임시 인증서  
  서명 인증서가 없는 경우 Visual Studio가 임시 인증서를 만듭니다. 이 임시 인증서는 배포하는 동안에만 사용하고 배포를 위해 공식 인증서를 구입해야 합니다.  

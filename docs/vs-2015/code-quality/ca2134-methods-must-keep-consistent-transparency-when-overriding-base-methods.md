@@ -16,15 +16,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fdb43405cb920510993a3acead454bac366e959d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 218114a87b3f81fb4b422852b6d92f952474f668
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211798"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844200"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: 메서드는 기본 메서드를 재정의할 때 일관성 있는 방식을 유지해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MethodsMustOverrideWithConsistentTransparency|

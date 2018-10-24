@@ -16,12 +16,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd93f4e0f2d9cca4d7fd12f9c69733655cb99127
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fffb77788a4ac88f2ee607dd989de8c7aab8aebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821931"
 ---
 # <a name="custom-colorable-items"></a>사용자 지정 색 항목
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,31 +45,31 @@ ms.locfileid: "49192090"
   
 ## <a name="implementing-custom-colorable-items"></a>사용자 지정 색 항목 구현  
   
-1.  예를 들어 키워드, 연산자 및 식별자 언어로 색이 지정 될 해야 무엇을 정의 합니다.  
+1. 예를 들어 키워드, 연산자 및 식별자 언어로 색이 지정 될 해야 무엇을 정의 합니다.  
   
-2.  이러한 색 항목의 열거형을 만듭니다.  
+2. 이러한 색 항목의 열거형을 만듭니다.  
   
-3.  파서 또는 열거 된 값을 사용 하 여 스캐너에서 반환 되는 토큰 형식에 연결 합니다.  
+3. 파서 또는 열거 된 값을 사용 하 여 스캐너에서 반환 되는 토큰 형식에 연결 합니다.  
   
-     예를 들어, 토큰 형식을 나타내는 값을 사용자 지정 색 항목 열거에 동일한 값을 수 있습니다.  
+    예를 들어, 토큰 형식을 나타내는 값을 사용자 지정 색 항목 열거에 동일한 값을 수 있습니다.  
   
-4.  구현의 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 에서 메서드에 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 개체, 특성 목록에 해당 하는 파서 또는 스캐너에서 반환 되는 토큰 형식에 사용자 지정 색 항목 열거형의 값으로 입력 합니다.  
+4. 구현의 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 에서 메서드에 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 개체, 특성 목록에 해당 하는 파서 또는 스캐너에서 반환 되는 토큰 형식에 사용자 지정 색 항목 열거형의 값으로 입력 합니다.  
   
-5.  구현 하는 동일한 클래스에는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 인터페이스를 구현 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 인터페이스와 해당 두 메서드를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>합니다.  
+5. 구현 하는 동일한 클래스에는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 인터페이스를 구현 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 인터페이스와 해당 두 메서드를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>합니다.  
   
-6.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 인터페이스를 구현합니다.  
+6. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 인터페이스를 구현합니다.  
   
-7.  24 비트 또는 높은 색 값을 지원 하려는 경우 구현할 수도 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 인터페이스입니다.  
+7. 24 비트 또는 높은 색 값을 지원 하려는 경우 구현할 수도 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 인터페이스입니다.  
   
-8.  언어 서비스 개체를 포함 하는 목록을 만듭니다 프로그램 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 개체가 프로그램 파서 또는 스캐너를 식별할 수 있습니다 각 색 항목에 대해 하나씩 들어 있습니다.  
+8. 언어 서비스 개체를 포함 하는 목록을 만듭니다 프로그램 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 개체가 프로그램 파서 또는 스캐너를 식별할 수 있습니다 각 색 항목에 대해 하나씩 들어 있습니다.  
   
-     사용자 지정 색 항목 열거의 해당 값을 사용 하 여 목록의 각 항목에 액세스할 수 있습니다. 목록에 열거형 값을 인덱스로 사용 합니다. 목록의 첫 번째 항목을 액세스 하지 않는다는, 기본 텍스트에 해당 하므로 스타일을 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 항상 자체를 처리 합니다. 자리 표시자 색 항목을 목록 맨 앞에 삽입 하 여이 보완할 수 있습니다.  
+    사용자 지정 색 항목 열거의 해당 값을 사용 하 여 목록의 각 항목에 액세스할 수 있습니다. 목록에 열거형 값을 인덱스로 사용 합니다. 목록의 첫 번째 항목을 액세스 하지 않는다는, 기본 텍스트에 해당 하므로 스타일을 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 항상 자체를 처리 합니다. 자리 표시자 색 항목을 목록 맨 앞에 삽입 하 여이 보완할 수 있습니다.  
   
 9. 구현에는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> 메서드를 사용자 지정 색 항목 목록의 항목 개수를 반환 합니다.  
   
 10. 구현에는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> 메서드를 목록에서 요청 된 색 항목을 반환 합니다.  
   
- 구현 하는 방법의 예는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 하 고 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 인터페이스를 참조 하세요. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
+    구현 하는 방법의 예는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 하 고 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 인터페이스를 참조 하세요. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
   
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스의 모델](../../extensibility/internals/model-of-a-legacy-language-service.md)   
