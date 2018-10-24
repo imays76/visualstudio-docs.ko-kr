@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 1347e6170b5cf58a4e88365d7c1653389cfb6607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950656"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>자동화된 테스트를 위해 Lab Management 대신 Azure Test Plans 사용
 
@@ -27,7 +27,7 @@ ms.locfileid: "46135612"
 MTM 및 Lab Management는 XAML 빌드 정의를 사용하여 응용 프로그램의 빌드, 배포 및 테스트를 자동화합니다. XAML 빌드는 랩 환경, 테스트 도구 모음 및 테스트 설정과 같이 MTM에서 만들어진 다양한 생성자와 빌드 컨트롤러, 빌드 에이전트, 테스트 컨트롤러, 테스트 에이전트 등의 다양한 인프라를 사용하여 이 목표를 달성합니다. TFS 및 Azure Pipelines의 Build 또는 Release Management를 사용하여 더 적은 단계로 동일한 목적을 달성할 수 있습니다.
 
 | 단계 | XAML 빌드 사용 | Build 또는 Release Management 사용 |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | 빌드를 배포하고 테스트를 실행할 컴퓨터를 식별합니다. | 해당 컴퓨터가 포함된 MTM의 표준 랩 환경을 만듭니다. | N/A |
 | 실행할 테스트를 식별합니다. | MTM에서 테스트 도구 모음을 만들고, 테스트 사례를 만들고, 각 테스트 사례와 자동화를 연결합니다. 테스트를 실행할 랩 환경에서 컴퓨터의 역할을 식별하는 테스트 설정을 MTM에서 만듭니다. | 테스트 계획을 통해 테스트를 관리하려면 같은 방식으로 MTM에서 자동화된 테스트 도구 모음을 만듭니다. 또는 빌드에서 생성된 테스트 이진 파일에서 직접 테스트를 실행하려면 이 단계를 건너뛸 수 있습니다. 어느 경우에도 테스트 설정을 만들 필요가 없습니다. |
 | 배포 및 테스트를 자동화합니다. | LabDefaultTemplate.*.xaml을 사용하여 XAML 빌드 정의를 만듭니다. 빌드 정의에서 빌드, 테스트 도구 모음 및 랩 환경을 지정합니다. | 단일 환경을 사용하여 [빌드 또는 릴리스 파이프라인](/azure/devops/pipelines/index?view=vsts)을 만듭니다. 명령줄 작업을 사용하여 XAML 빌드 정의에서 동일한 배포 스크립트를 실행하고 테스트 에이전트 배포 및 기능 테스트 실행 작업을 사용하여 자동화된 테스트를 실행합니다. 컴퓨터 및 해당 자격 증명 목록을 이러한 작업의 입력으로 지정합니다. |
@@ -58,7 +58,7 @@ Lab Center의 셀프 서비스 프로비전 기능에는 두 가지 목표가 �
 다음 표에는 랩 센터에서 수행하는 일반적인 활동과 SCVMM 또는 Azure(인프라 관리 활동인 경우)를 통해서 또는 TFS 및 Azure DevOps Services(테스트 또는 배포 활동인 경우)를 통해 해당 활동을 수행하는 방법이 요약되어 있습니다.
 
 | 단계 | Lab Center 사용 | Build 또는 Release Management 사용 |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | 환경 템플릿 라이브러리를 관리합니다. | 랩 환경을 만듭니다. 가상 컴퓨터에 필요한 소프트웨어를 설치합니다. 환경을 Sysprep하고 라이브러리의 템플릿으로 저장합니다. | SCVMM 관리 콘솔을 사용하여 직접 가상 머신 템플릿 또는 서비스 템플릿을 만들고 관리합니다. Azure를 사용하는 경우 [Azure 빠른 시작 템플릿](https://azure.microsoft.com/resources/templates/)중 하나를 선택합니다. |
 | 랩 환경을 만듭니다. | 라이브러리에서 환경 템플릿을 선택하고 배포합니다. 가상 머신 구성을 사용자 지정하는데 필요한 매개 변수를 제공합니다. | SCVMM 관리 콘솔을 사용하여 직접 템플릿을 기반으로 VM 또는 서비스 인스턴스를 만듭니다. Azure Portal을 사용하여 직접 리소스를 만듭니다. 또는 환경을 사용하여 릴리스 정의를 만듭니다. Azure 작업 또는 [SCVMM 통합 확장](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)의 작업을 사용하여 새 가상 컴퓨터를 만듭니다. 이 정의의 새 릴리스를 만드는 것은 Lab Center에서 새 환경을 만드는 것과 같습니다. |
 | 컴퓨터에 연결합니다. | 환경 뷰어에서 랩 환경을 엽니다. | SCVMM 관리 콘솔을 사용하여 직접 가상 컴퓨터에 연결합니다. 또는 가상 컴퓨터의 IP 주소 또는 DNS 이름을 사용하여 원격 데스크톱 세션을 엽니다. |

@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890051"
 ---
 # <a name="lines-view---contention-data"></a>줄 뷰 - 경합 데이터
 경합 데이터의 줄 뷰에는 프로파일링 실행 시 샘플이 수집될 때 실행되고 있던 문에 대한 성능 데이터가 나열됩니다. 소스 파일에서는 하나의 문이 소스 파일의 여러 줄에 걸쳐 있거나 한 줄에 여러 문이 포함될 수 있습니다.  
   
  문은 다음 데이터에 의해 식별됩니다.  
   
--   함수 문이 포함된 소스 파일.  
+- 함수 문이 포함된 소스 파일.  
   
--   문이 포함된 함수.  
+- 문이 포함된 함수.  
   
--   문이 시작되는 소스 줄.  
+- 문이 시작되는 소스 줄.  
   
--   문이 시작되는 소스 줄의 문자.  
+- 문이 시작되는 소스 줄의 문자.  
   
--   문이 끝나는 소스 줄.  
+- 문이 끝나는 소스 줄.  
   
--   문이 끝나는 소스 줄의 문자.  
+- 문이 끝나는 소스 줄의 문자.  
   
- 줄 이름 열은 식별자 데이터의 정렬 가능한 연결을 제공합니다.  
+  줄 이름 열은 식별자 데이터의 정렬 가능한 연결을 제공합니다.  
   
- 다음 표에서는 줄 뷰 보고서의 열에 대해 설명합니다.  
+  다음 표에서는 줄 뷰 보고서의 열에 대해 설명합니다.  
   
 |열|설명|  
 |------------|-----------------|  

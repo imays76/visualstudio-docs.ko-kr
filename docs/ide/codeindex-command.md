@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926152"
 ---
 # <a name="codeindex-command"></a>CodeIndex 명령
 
@@ -41,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### <a name="parameters"></a>매개 변수
 
 |**인수**|**설명**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|프로젝트 컬렉션의 이름을 지정합니다. 이름에 공백이 있으면 “Fabrikam 웹 사이트”와 같이 이름을 큰따옴표로 묶습니다.|
 |`CollectionId`|프로젝트 컬렉션의 ID 번호를 지정합니다.|
 |`ServerPath`|코드 파일의 경로를 지정합니다.|
 
 |**옵션**|**설명**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|코드 인덱싱 서비스의 상태 및 구성을 보여 줍니다.|
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: 모든 변경 집합의 인덱싱을 시작합니다.<br />-   **off**: 모든 변경 집합의 인덱싱을 중지합니다.<br />-   **keepupOnly**: 이전에 만든 변경 집합의 인덱싱을 중지하고 새 변경 집합의 인덱싱만 시작합니다.|
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> 서버 경로의 시작이나 끝 또는 양쪽 끝에 와일드카드 문자(*)를 사용할 수 있습니다.|인덱싱하지 않을 코드 파일의 목록 및 해당 경로를 지정합니다.<br /><br /> -   **add**: 인덱싱하지 않을 파일을 무시된 파일 목록에 추가합니다.<br />-   **remove**: 인덱싱할 파일을 무시된 파일 목록에서 제거합니다.<br />-   **removeAll**: 무시된 파일 목록을 지우고 모든 파일의 인덱싱을 시작합니다.<br />-   **view**: 인덱싱되고 있지 않는 모든 파일이 표시됩니다.|

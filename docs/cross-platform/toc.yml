@@ -1,23 +1,9 @@
 items:
 - name: Visual Studio에서 플랫폼 간 모바일 개발
   href: cross-platform-mobile-development-in-visual-studio.md
-- name: Visual Studio 및 Xamarin
-  href: visual-studio-and-xamarin.md
-  items:
-  - name: 설정 및 설치
-    href: setup-and-install.md
-  - name: Xamarin을 사용한 모바일 개발에 대해 알아보기
-    href: learn-about-mobile-development-with-xamarin.md
-  - name: Xamarin 환경 확인
-    href: verify-your-xamarin-environment.md
-  - name: Visual Studio에서 Xamarin.Forms를 사용한 앱 빌드 기본 사항 알아보기
-    href: learn-app-building-basics-with-xamarin-forms-in-visual-studio.md
-  - name: Visual Studio에서 Xamarin을 사용하여 네이티브 UI로 앱 빌드
-    href: build-apps-with-native-ui-using-xamarin-in-visual-studio.md
-  - name: Xamarin 앱을 사용한 DevOps
-    href: application-lifecycle-management-alm-with-xamarin-apps.md
-  - name: Mac 사용자용 설정, 설치 및 확인
-    href: setup-install-and-verifications-for-mac-users.md
+- name: Visual Studio Tools for Xamarin
+  displayName: .NET Mobile Developer Tools (Android & iOS)
+  href: /xamarin/
 - name: Apache Cordova용 Visual Studio Tools
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools for Unity
@@ -88,9 +74,9 @@ items:
     href: system-requirements-for-the-visual-studio-emulator-for-android.md
   - name: Android용 Visual Studio 에뮬레이터 문제 해결
     href: troubleshooting-the-visual-studio-emulator-for-android.md
-ms.openlocfilehash: d0c4b3ba48784ec7b168a167373816c652a5f11b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 0126179459596c389703c065e85e2f5da41e070c
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224977"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991525"

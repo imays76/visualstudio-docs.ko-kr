@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925218"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>코딩된 UI 테스트 분석
 
@@ -27,7 +27,7 @@ ms.locfileid: "39180323"
 코딩된 UI 테스트를 만드는 경우 **코딩된 UI 테스트 빌더**에서 테스트 대상 사용자 인터페이스 맵과 모든 테스트에 대한 테스트 메서드, 매개 변수 및 어설션을 만듭니다. 각 테스트에 대한 클래스 파일도 만듭니다.
 
 |파일|목차|편집 가능 여부|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[선언 섹션](#UIMapDesignerFile)<br /><br /> [UIMap 클래스](#UIMapClass)(부분, 자동 생성됨)<br /><br /> [메서드](#UIMapMethods)<br /><br /> [속성](#UIMapProperties)|아니요|
 |[UIMap.cs](#UIMapCS)|[UIMap 클래스](#UIMapCS)(부분)|예|
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 클래스](#CodedUITestCS)<br /><br /> [메서드](#CodedUITestMethods)<br /><br /> [속성](#CodedUITestProperties)|예|

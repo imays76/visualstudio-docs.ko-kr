@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918885"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP 앱에서 네트워크 사용 분석
 Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/windows.web.http)를 사용하여 수행된 네트워크 작업에 대한 데이터를 수집합니다. 데이터를 분석하면 액세스 및 인증 문제, 잘못된 캐시 사용 및 저하된 디스플레이와 다운로드 성능을 해결하는 데 도움이 될 수 있습니다.  
@@ -28,19 +28,19 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/
 ## <a name="collect-network-tool-data"></a>네트워크 도구 데이터 수집  
  Visual Studio가 설치된 컴퓨터에 열려 있는 Visual Studio 프로젝트로 **네트워크** 도구를 실행해야 합니다.  
   
-1.  Visual Studio에서 프로젝트를 엽니다.  
+1. Visual Studio에서 프로젝트를 엽니다.  
   
-2.  메뉴에서 **디버그/성능 프로파일러**를 클릭합니다. **네트워크**를 선택한 다음 **시작**을 선택합니다.  
+2. 메뉴에서 **디버그/성능 프로파일러**를 클릭합니다. **네트워크**를 선택한 다음 **시작**을 선택합니다.  
   
-3.  네트워크 도구에서 앱의 HTTP 트래픽 수집을 시작합니다.  
+3. 네트워크 도구에서 앱의 HTTP 트래픽 수집을 시작합니다.  
   
-     앱을 실행하면 왼쪽 창의 요약 보기에 캡처된 HTTP 작업 목록이 자동으로 표시됩니다. 요약 보기에서 항목을 선택하면 오른쪽 창의 세부 정보 패널에서 자세한 내용을 볼 수 있습니다.  
+    앱을 실행하면 왼쪽 창의 요약 보기에 캡처된 HTTP 작업 목록이 자동으로 표시됩니다. 요약 보기에서 항목을 선택하면 오른쪽 창의 세부 정보 패널에서 자세한 내용을 볼 수 있습니다.  
   
-4.  앱을 닫으려면 **중지** 를 선택합니다.  
+4. 앱을 닫으려면 **중지** 를 선택합니다.  
   
- 보고서 창의 모습은 다음과 같아야 합니다.  
+   보고서 창의 모습은 다음과 같아야 합니다.  
   
- ![네트워크 창](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+   ![네트워크 창](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyze-data"></a>데이터 분석  
  앱이 실행되는 동안 또는 앱을 닫은 후에도, 요약 보기에 표시된 네트워크 작업 중에서 선택하여 캡처된 HTTP 트래픽을 분석할 수 있습니다.  

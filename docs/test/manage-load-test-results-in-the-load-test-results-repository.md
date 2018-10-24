@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950019"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리
 
@@ -44,7 +44,7 @@ ms.locfileid: "39380360"
 ## <a name="load-test-analyzer-tasks"></a>부하 테스트 분석기 작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-----------------------|
 |**부하 테스트 결과 리포지토리 설정:** SQL 데이터베이스에 부하 테스트 결과 리포지토리를 설정할 수 있습니다. **참고:** 테스트 컨트롤러를 설치할 때 부하 테스트 리포지토리를 만들 수도 있습니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.||
 |**결과 리포지토리 선택 및 보기:** 특정 결과 리포지토리를 선택할 수 있습니다. 로컬 결과 저장소로 제한되지는 않습니다. 부하 테스트는 주로 에이전트 컴퓨터의 원격 집합에서 실행됩니다. 에이전트나 로컬 컴퓨터의 테스트 결과는 부하 테스트 결과 저장소가 만들어진 모든 SQL 서버에 저장할 수 있습니다. 에이전트나 로컬 컴퓨터 모두 **테스트 컨트롤러 관리** 창을 사용하여 부하 테스트 결과를 저장할 위치를 식별해야 합니다.|-   [방법: 부하 테스트 결과 리포지토리 선택](../test/how-to-select-a-load-test-results-repository.md)<br />-   [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)|
 |**리포지토리에서 부하 테스트 결과 삭제:** **부하 테스트 결과 열기 및 관리** 대화 상자를 사용하여 **부하 테스트 편집기**에서 부하 테스트 결과를 제거할 수 있습니다.|-   [방법: 리포지토리에서 부하 테스트 결과 삭제](../test/how-to-delete-load-test-results-from-a-repository.md)|

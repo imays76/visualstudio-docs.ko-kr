@@ -9,12 +9,12 @@ description: 구독자 목록과 해당 구독 할당의 세부 정보를 내보
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9b2e03235391826c7a8cc486089a5a3e6384b09a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 8881c2d1779d3aea8289397e459c70868698e0f3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867251"
 ---
 # <a name="exporting-subscription-information"></a>구독 정보 내보내기
 
@@ -24,4 +24,4 @@ Visual Studio 구독 [관리자 포털](https://manage.visualstudio.com)에서 �
 
 내보내기를 수행하려면 단순히 **내보내기** 탭을 선택하면 파일이 로컬 컴퓨터로 다운로드됩니다. 파일에는 내보내기 날짜뿐만 아니라 사용자 구독을 포함하는 계약의 이름이 포함됩니다.  
 > [!div class="mx-imgBorder"]
-> ![구독자 내보내기](_img\exporting-subscriptions\exporting-subscriptions.png)
+> ![구독자 내보내기](_img/exporting-subscriptions/exporting-subscriptions.png)

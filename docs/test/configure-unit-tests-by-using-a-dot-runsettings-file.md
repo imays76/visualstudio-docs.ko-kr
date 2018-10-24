@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1410e6054432509d82cf6a19619d595bac845697
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903558"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -137,7 +137,7 @@ ms.locfileid: "46495637"
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
   </MSTest>
 
@@ -164,7 +164,7 @@ ms.locfileid: "46495637"
 **RunConfiguration** 요소는 다음과 같은 요소를 포함할 수 있습니다.
 
 |노드|기본|값|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||테스트 결과가 배치될 디렉터리입니다.|
 |**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />이 설정은 테스트를 검색하고 실행하는 데 사용할 단위 테스트 프레임워크의 버전을 지정합니다. 이 버전은 단위 테스트 프로젝트의 빌드 속성에 지정하는 .NET 플랫폼의 버전과 다를 수 있습니다.|
 |**TargetPlatform**|x86|x86, x64|
@@ -241,7 +241,7 @@ TestRunParameters를 사용하려면 개인 <xref:Microsoft.VisualStudio.TestToo
 이러한 설정은 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 특성을 가진 테스트 메서드를 실행하는 테스트 어댑터에 따라 달라집니다.
 
 |구성|기본|값|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012에서 MSTest 어댑터는 더욱 빠르고 확장성 가능하도록 최적화되었습니다. 테스트가 실행되는 순서와 같은 일부 동작은 이전 버전 Visual Studio처럼 정확하지 않을 수 있습니다. 이전 테스트 어댑터를 사용하려면 이 값을 **true**로 설정합니다.<br /><br />예를 들어, 단위 테스트에 대해 *app.config* 파일을 지정한 경우 이 설정을 사용할 수 있습니다.<br /><br />새 어댑터를 사용할 수 있도록 테스트를 리팩터링하는 것이 좋습니다.|
 |**IgnoreTestImpact**|False|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [이전 빌드 이후 실행해야 할 테스트](https://msdn.microsoft.com/library/dd286589)를 참조하세요.|
 |**SettingsFile**||여기에서 MSTest 어댑터와 함께 사용할 테스트 설정 파일을 지정할 수 있습니다. **테스트** > **테스트 설정** > **테스트 설정 파일 선택**을 선택하여 테스트 설정 파일을 지정할 수도 있습니다.<br /><br />이 값을 지정하면 **ForcedlegacyMode** 도 **true**로 설정해야 합니다.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|

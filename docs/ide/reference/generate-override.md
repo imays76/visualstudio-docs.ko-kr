@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c366ce3d393e639590e5d45fc55ad5523be920b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919067"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio에서 재정의 생성
 
@@ -36,13 +36,13 @@ ms.locfileid: "31943868"
 
    - C#: 
 
-    ![IntelliSense 재정의 C#](media/override-intellisense-cs.png)
+      ![IntelliSense 재정의 C#](media/override-intellisense-cs.png)
 
    - Visual Basic:
 
-    ![IntelliSense 재정의 VB](media/override-intellisense-vb.png)
+      ![IntelliSense 재정의 VB](media/override-intellisense-vb.png)
 
-1. 기본 클래스에서 재정의할 메서드를 선택합니다.
+2. 기본 클래스에서 재정의할 메서드를 선택합니다.
 
    > [!TIP]
    > - 속성 아이콘 사용 ![속성 아이콘](media/override-property-cs.png) 목록에서 속성을 표시하거나 숨깁니다.
@@ -52,11 +52,11 @@ ms.locfileid: "31943868"
 
    - C#: 
 
-      ![재정의 결과 C#](media/override-result-cs.png)
+       ![재정의 결과 C#](media/override-result-cs.png)
 
    - Visual Basic:
 
-      ![재정의 결과 VB](media/override-result-vb.png)
+       ![재정의 결과 VB](media/override-result-vb.png)
 
 ## <a name="see-also"></a>참고 항목
 

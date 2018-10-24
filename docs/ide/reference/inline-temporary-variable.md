@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: acfbfd2a23c85c81e0956190ff8e9e8501533559
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb6fc6888e33b2cc0d210e9cb1e1aababe304f2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916766"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>임시 변수 인라인 리팩터링
 
@@ -39,30 +39,30 @@ ms.locfileid: "31945612"
 
    - C#: 
 
-    ![강조 표시된 코드 - C#](media/inline-highlight-cs.png)
+       ![강조 표시된 코드 - C#](media/inline-highlight-cs.png)
 
    - Visual Basic:
 
-    ![강조 표시된 코드 - Visual Basic](media/inline-highlight-vb.png)
+       ![강조 표시된 코드 - Visual Basic](media/inline-highlight-vb.png)
 
-1. 다음 작업 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
-     - 코드를 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
 
-1. [미리 보기] 창 팝업에서 **인라인 임시 변수**를 선택합니다.
+3. [미리 보기] 창 팝업에서 **인라인 임시 변수**를 선택합니다.
 
    변수가 제거되고 해당 사용이 변수 값으로 대체됩니다.
 
    - C#: 
 
-    ![인라인 결과 - C#](media/inline-result-cs.png)
+      ![인라인 결과 - C#](media/inline-result-cs.png)
 
    - Visual Basic:
 
-    ![인라인 결과 - Visual Basic](media/inline-result-vb.png)
+      ![인라인 결과 - Visual Basic](media/inline-result-vb.png)
 
 ## <a name="see-also"></a>참고 항목
 

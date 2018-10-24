@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380203"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932353"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>방법: 부하 테스트 결과에서 그래프의 지역으로 확대
 
@@ -94,15 +94,15 @@ ms.locfileid: "39380203"
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>선택하여 끌기로 그래프 영역을 확대/축소하려면
 
-1.  확대/축소 영역의 한 쪽 끝에서 그래프를 선택합니다.
+1. 확대/축소 영역의 한 쪽 끝에서 그래프를 선택합니다.
 
-2.  마우스 포인터를 확대/축소 영역의 다른 쪽 끝으로 끕니다.
+2. 마우스 포인터를 확대/축소 영역의 다른 쪽 끝으로 끕니다.
 
-3.  마우스 단추를 놓습니다.
+3. 마우스 단추를 놓습니다.
 
-     이렇게 하면 선택하여 끌기로 정의한 영역이 확대됩니다.
+    이렇게 하면 선택하여 끌기로 정의한 영역이 확대됩니다.
 
- 다음 절차에서는 확대/축소 막대의 끝을 조정하지 않고 빠르게 축소하는 방법을 설명합니다.
+   다음 절차에서는 확대/축소 막대의 끝을 조정하지 않고 빠르게 축소하는 방법을 설명합니다.
 
 ### <a name="to-zoom-out"></a>축소하려면
 

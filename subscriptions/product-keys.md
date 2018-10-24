@@ -9,12 +9,12 @@ description: Visual Studio 구독에서 제품 키를 얻고 관리하는 방법
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900854"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 사용
 
@@ -79,11 +79,11 @@ MPN, BizSpark, MCT 소프트웨어 및 서비스 및 MCT를 통해 제공되는 
 
 
 제품 키를 요청하려면
-1.  Visual Studio 구독에 로그인합니다.  제품을 다운로드하거나 제품 키를 요청하려면 로그인해야 합니다.
-2.  [제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 탭을 클릭합니다.
-3.  제품 키는 제품 이름별 사전순으로 나열됩니다.  원하는 제품의 이름으로 스크롤하거나 페이지 위쪽의 검색 표시줄을 사용하여 검색할 수 있습니다.
-    > [!div class="mx-imgBorder"]
-    > ![제품 키 검색](_img\product-keys\visio-product-key-cropped.png)
+1. Visual Studio 구독에 로그인합니다.  제품을 다운로드하거나 제품 키를 요청하려면 로그인해야 합니다.
+2. [제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 탭을 클릭합니다.
+3. 제품 키는 제품 이름별 사전순으로 나열됩니다.  원하는 제품의 이름으로 스크롤하거나 페이지 위쪽의 검색 표시줄을 사용하여 검색할 수 있습니다.
+   > [!div class="mx-imgBorder"]
+   > ![제품 키 검색](_img/product-keys/visio-product-key-cropped.png)
 
 이 예에서는 검색 표시줄을 사용하여 Visio 2010에 대한 제품 키를 찾습니다.
 여기서는 Visio 2010의 몇 가지 버전이 나열되어 있습니다.  이미 Visio Standard 2010 및 Visio Premium 2010에 대해 각각 하나의 키를 요청했으며, 둘 다에 4개의 키가 남아 있습니다.  요청한 키는 모두 일반 정품 키이며 페이지에 표시됩니다.  **메모** 열에서 요청한 키에 대한 간단한 메모를 기록할 수 있습니다.  **요청됨** 열의 날짜와 함께 이 메모를 사용하면 요청한 키를 추적할 수 있습니다.  예를 들어 키를 사용하여 제품 설치를 정품 인증할 때 메모를 만들 수 있습니다.

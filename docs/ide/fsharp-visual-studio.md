@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921433"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Visual F#을 사용하여 Visual Studio에서 개발
 
@@ -61,7 +61,7 @@ Visual Studio의 F#에서 다양한 프로젝트 및 항목 템플릿을 사용�
 **프로젝트 디자이너**는 관련된 기능을 그룹화하는 여러 프로젝트 속성 페이지로 구성됩니다. F# 프로젝트에 사용할 수 있는 페이지는 주로 다른 언어에 사용 가능한 하위 집합이며 다음 표에 설명되어 있습니다. 링크는 해당하는 C# **프로젝트 디자이너** 페이지에 제공됩니다.
 
 |프로젝트 디자이너 페이지|관련 링크|설명|
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |응용 프로그램|[응용 프로그램 페이지, 프로젝트 디자이너](reference/application-page-project-designer-csharp.md)|라이브러리 또는 실행 파일을 만드는지 여부, 응용 프로그램이 대상으로 지정하는 .NET Framework의 버전 및 응용 프로그램이 사용하는 리소스 파일이 저장되는 위치에 대한 정보와 같은 응용 프로그램 수준 설정 및 속성을 지정할 수 있습니다.|
 |빌드|[프로젝트 디자이너, 빌드 페이지](reference/build-page-project-designer-csharp.md)|코드가 컴파일되는 방식을 제어할 수 있습니다.|
 |빌드 이벤트|[빌드 이벤트 페이지, 프로젝트 디자이너](reference/build-events-page-project-designer-csharp.md)|컴파일 전후에 실행할 명령을 지정할 수 있습니다.|
@@ -75,7 +75,7 @@ Visual Studio의 F#에서 다양한 프로젝트 및 항목 템플릿을 사용�
 다음 표에는 F#에 관련된 설정이 요약되어 있습니다.
 
 |프로젝트 디자이너 페이지|설정|설명|
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |빌드|Tail 호출 생성|선택하는 경우 MSIL(Microsoft Intermediate Language) 명령을 사용할 수 있습니다. 그러면 스택 프레임을 tail 재귀 함수에 다시 사용할 수 있습니다. `--tailcalls` 컴파일러 옵션과 동일합니다.|
 |빌드|다른 플래그|추가 컴파일러 명령줄 옵션을 지정할 수 있습니다.|
 

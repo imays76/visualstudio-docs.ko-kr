@@ -9,12 +9,12 @@ description: Visual Studio 구독을 MPN 파트너에 대한 최종 사용자에
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a81cf891a58a8c6bf206b057b883d133d92b0a85
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949112"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)을 통해 제공된 Visual Studio 구독 관리
 
@@ -68,7 +68,7 @@ Microsoft Action Pack 구독자 및 Visual Studio 구독
 
 > [!NOTE]
 > Visual Studio 구독에는 기술 담당자 역할이 필요합니다.
-    - 8페이지 - 역량 파트너에 대한 Visual Studio 구독 할당
+>     - 8페이지 - 역량 파트너에 대한 Visual Studio 구독 할당
 
 ## <a name="need-help"></a>도움이 필요하십니까?
 구독자 및 프로그램 관리자는 Microsoft 파트너 네트워크 지원 팀과 직접 작업하여 구독에 액세스하는 구독자의 문제를 해결해야 합니다. 도움이 필요한 [파트너 지원](https://partner.microsoft.com/support) 페이지를 참조하세요. (MPN 로그인 자격 증명이 필요합니다.)

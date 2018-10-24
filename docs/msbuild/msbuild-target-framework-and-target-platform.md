@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2fc6fb0be13dbda001c23a4d51e11dc9f53853d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bfb45efc199ea1f643c71bdc19a90862bb6c5dd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916064"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 대상 프레임워크 및 대상 플랫폼
 프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼*에서 실행되도록 빌드할 수 있습니다.  예를 들어 802x86 프로세서 제품군(“x86”)과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 응용 프로그램을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다.  
@@ -25,23 +25,23 @@ ms.locfileid: "43774709"
   
  현재 사용할 수 있는 .NET Framework 버전은 다음과 같습니다.  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0(Visual Studio 2005에 포함됨)  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0(Visual Studio 2005에 포함됨)  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0([!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]에 포함됨)  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0([!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]에 포함됨)  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5([!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]에 포함됨)  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5([!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]에 포함됨)  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6([!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)]에 포함됨)  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6([!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)]에 포함됨)  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1  
 
 .NET Framework의 버전은 목록에서 참조 가능하도록 만드는 어셈블리에 따라 서로 다릅니다. 예를 들어 프로젝트가 .NET Framework 버전 3.0 이상을 대상으로 하지 않는 경우 WPF(Windows Presentation Foundation) 응용 프로그램을 빌드할 수 없습니다.  
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929207"
 ---
 # <a name="options-page-text-editor-node-properties"></a>옵션 페이지, 텍스트 편집기 노드 속성
 이 문서에서는 **옵션** 대화 상자의 **텍스트 편집기** 범주, `DTE.Properties("TextEditor", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다. 각 하위 단원의 제목은 `Properties` 컬렉션에 액세스하는 데 사용되는 호출이며, 각 하위 단원의 표에는 컬렉션의 속성이 나열되어 있습니다.
@@ -29,7 +29,7 @@ ms.locfileid: "39177814"
  `DTE.Properties("TextEditor", "General")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|`True`인 경우 선택 항목이 있는 상태에서 Esc 키를 누르면 선택 항목을 만든 작업이 시작된 위치로 삽입 지점이 이동합니다. `False`인 경우 선택 항목의 반대쪽 끝으로 삽입 지점이 이동합니다.|
 |DragNDropTextEditing|Get/Set (Boolean)|선택된 텍스트 영역을 문서의 다른 위치로 끌어서 놓아 복사 또는 잘라내기/붙여넣기 작업을 수행할 수 있는지 여부를 지정합니다.|
 |HorizontalScrollBar|Get/Set (Boolean)|편집기 창에 가로 스크롤 막대가 있는지 여부를 지정합니다.|
@@ -48,7 +48,7 @@ ms.locfileid: "39177814"
  `PlainText` 편집기 옵션은 텍스트 파일을 편집할 때 편집기 설정에 영향을 줍니다. 각 프로그래밍 언어와 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 패키지에는 고유한 자체 **텍스트 편집기** 설정이 있습니다. 예를 들어, [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 편집기 설정을 보거나 변경하려면 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`를 사용합니다. **SQL 스크립트** 편집기 설정의 경우 `DTE.Properties("TextEditor", "SQL ")`를 사용합니다.
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|사용자가 변수 참조 다음에 마침표를 입력하는 경우 사용할 수 있는 멤버 목록이 자동으로 나타나는지 여부를 지정합니다.|
 |AutoListParams|Get/Set (Boolean)|사용자가 함수 이름 다음에 "("를 입력하는 경우 인수 목록에 대한 설명이 자동으로 나타나는지 여부를 지정합니다.|
 |HideAdvancedMembers|Get/Set (Boolean)|문 완성에서 모든 멤버를 나열하는지 자주 사용되는 멤버만을 나열하는지 여부를 지정합니다.|

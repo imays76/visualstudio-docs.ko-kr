@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919743"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>자습서: Azure Functions 시작
 
@@ -34,17 +34,17 @@ ms.locfileid: "43224311"
 
 1. **Mac용 Visual Studio**를 시작합니다.
 
-1. **파일 > 새 솔루션**을 선택합니다.
+2. **파일 > 새 솔루션**을 선택합니다.
 
-1. **클라우드 > 일반** 범주에서 **Azure Functions** 템플릿을 선택합니다. C#을 사용하여 Azure Functions를 호스트하는 .NET 클래스 라이브러리를 만듭니다. **다음**을 클릭합니다.
+3. **클라우드 > 일반** 범주에서 **Azure Functions** 템플릿을 선택합니다. C#을 사용하여 Azure Functions를 호스트하는 .NET 클래스 라이브러리를 만듭니다. **다음**을 클릭합니다.
 
     ![Azure Functions 템플릿 선택](media/azure-functions-lab-image1.png)
 
-1. **프로젝트 이름**을 **"AzureFunctionsLab"** 을 설정하고 **만들기**를 클릭합니다.
+4. **프로젝트 이름**을 **"AzureFunctionsLab"** 을 설정하고 **만들기**를 클릭합니다.
 
     ![Azure 함수 프로젝트 이름 지정 및 만들기](media/azure-functions-lab-image2.png)
 
-1. **솔루션 패드**의 노드를 확장합니다. 기본 프로젝트 템플릿에는 Newtonsoft.Json 패키지뿐 아니라 여러 Azure WebJobs 패키지에 대한 NuGet 참조가 포함됩니다. 
+5. **솔루션 패드**의 노드를 확장합니다. 기본 프로젝트 템플릿에는 Newtonsoft.Json 패키지뿐 아니라 여러 Azure WebJobs 패키지에 대한 NuGet 참조가 포함됩니다. 
 
      다음과 같은 세 개의 파일도 있습니다.  
         - **host.json** – 호스트에 대한 전역 구성 옵션을 설명합니다.  

@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb699b02723e88454f26f4b897cfd7ba3ff46592
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901192"
 ---
 # <a name="understand-build-configurations"></a>빌드 구성 이해
 
@@ -51,7 +51,7 @@ ms.locfileid: "32425127"
 
 > [!NOTE]
 > 새 솔루션 구성을 정의하고 **새 프로젝트 구성 만들기** 확인란을 선택하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 모든 프로젝트에 새 구성이 자동으로 할당됩니다. 마찬가지로, 새 솔루션 플랫폼을 정의하고 **새 프로젝트 플랫폼 만들기** 확인란을 선택하면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 모든 프로젝트에 새 플랫폼이 자동으로 할당됩니다. 또한 새 플랫폼을 대상으로 하는 프로젝트를 추가하면 Visual Studio에서 해당 플랫폼이 솔루션 플랫폼 목록에 추가되고 모든 프로젝트에 할당됩니다.
->
+> 
 > 각 프로젝트에 대한 설정은 여전히 수정할 수 있습니다.
 
 활성 솔루션 구성도 IDE에 컨텍스트를 제공합니다. 예를 들어 프로젝트 작업을 진행 중인데 이 프로젝트가 모바일 장치용으로 빌드될 것이라고 구성에 지정되어 있으면, 모바일 장치 프로젝트에 사용할 수 있는 항목만 **도구 상자**에 표시됩니다.
