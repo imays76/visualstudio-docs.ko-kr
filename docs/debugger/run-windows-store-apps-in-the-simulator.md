@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882771"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>시뮬레이터에서 UWP 앱 실행
 UWP 앱 용 Visual Studio 시뮬레이터는 UWP 앱을 시뮬레이션 하는 데스크톱 응용 프로그램입니다. 일반적으로 로컬 컴퓨터, 연결된 된 장치 또는 원격 컴퓨터에서 디버그 하려고 합니다. 그러나 일부 시나리오에서는 Visual Studio 시뮬레이터를 사용 하 여 다른 실제 화면 크기와 해상도 에뮬레이션 하려는 합니다. 일반적인 터치 및 회전 이벤트를 시뮬레이션 하 고 네트워크 연결 속성을 시뮬레이트할 수도 있습니다.
@@ -109,41 +109,41 @@ UWP 앱 용 Visual Studio 시뮬레이터는 UWP 앱을 시뮬레이션 하는 �
      ![스크린샷 설정 상황에 맞는 메뉴](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 네트워크 연결 속성 시뮬레이트  
- 앱의 사용자가 네트워크 연결 비용이 나 데이터 계획 상태 변경을 지속적으로 인지 하 고이 정보를 사용 하 여 로밍 또는 초과 대 한 추가 비용이 발생 하지 않도록 앱을 사용 하도록 설정 하 여 요금제 네트워크 연결 비용을 관리할 수 있습니다는 지정 된 데이터 전송 제한 합니다. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) Api를 사용 하면 응답할 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 및 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 서명 하는 이벤트입니다. 참조 [빠른 시작: 요금제 네트워크 비용 관리 제약 조건](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)합니다.  
+ 앱의 사용자가 네트워크 연결 비용이 나 데이터 계획 상태 변경을 지속적으로 인지 하 고이 정보를 사용 하 여 로밍 또는 초과 대 한 추가 비용이 발생 하지 않도록 앱을 사용 하도록 설정 하 여 요금제 네트워크 연결 비용을 관리할 수 있습니다는 지정 된 데이터 전송 제한 합니다. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API를 통해 서명된 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 및 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 이벤트에 응답할 수 있습니다. [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)을 참조하세요.  
   
  시뮬레이터를 디버그 하거나 테스트 네트워크 비용 인식 코드를 통해 노출 되는 네트워크의 속성을 모방 하면 합니다 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 반환한 개체가 [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)합니다.
   
  네트워크 속성을 시뮬레이트하려면  
   
-1.  시뮬레이터 도구 모음에서 **네트워크 속성 변경** 단추를 선택합니다.  
+1. 시뮬레이터 도구 모음에서 **네트워크 속성 변경** 단추를 선택합니다.  
   
-2.  **네트워크 속성 설정** 대화 상자에서 **시뮬레이션된 네트워크 속성 사용**을 선택합니다.  
+2. **네트워크 속성 설정** 대화 상자에서 **시뮬레이션된 네트워크 속성 사용**을 선택합니다.  
   
-     확인란을 선택 취소하여 시뮬레이션을 제거하고 현재 연결된 인터페이스의 네트워크 속성으로 돌아갑니다.  
+    확인란을 선택 취소하여 시뮬레이션을 제거하고 현재 연결된 인터페이스의 네트워크 속성으로 돌아갑니다.  
   
-3.  시뮬레이트된 네트워크의 **프로필 이름** 을 입력합니다. 시뮬레이션을 식별 하는 데 사용할 수 있는 고유한 이름을 사용 하는 것이 좋습니다 합니다 [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) 의 속성을 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 개체입니다.  
+3. 시뮬레이트된 네트워크의 **프로필 이름** 을 입력합니다. [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 개체의 [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) 속성에서 시뮬레이션을 식별하는 데 사용할 수 있도록 고유한 이름을 사용하는 것이 좋습니다.  
   
-4.  선택 된 [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) 에서 프로필에 대 한 값을 **네트워크 비용 형식** 목록.  
+4. [네트워크 비용 형식](/uwp/api/windows.networking.connectivity.networkcosttype) 목록에서 프로필에 **NetworkCostType** 값을 선택합니다.  
   
-5.  **데이터 한계 상태 플래그** 목록을 설정할 수 있습니다 합니다 [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) 속성 또는 [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) 속성을 true로 선택할 수 있습니다 또는  **데이터 한계 미만** 두 값을 false로 설정 합니다.  
+5. **데이터 한계 상태 플래그** 목록을 설정할 수 있습니다 합니다 [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) 속성 또는 [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) 속성을 true로 선택할 수 있습니다 또는  **데이터 한계 미만** 두 값을 false로 설정 합니다.  
   
-6.  **로밍 상태** 목록으로 설정 합니다 [로밍](/uwp/api/windows.networking.connectivity.connectioncost) 속성입니다.  
+6. **로밍 상태** 목록에서 [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) 속성을 설정합니다.  
   
-7.  선택할 **속성 설정** 에서 포그라운드를 트리거하여 네트워크 속성을 시뮬레이션 하기 위해 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 이벤트 및 백그라운드 [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) 형식의 **NetworkStateChange**합니다.  
+7. **속성 설정** 을 선택하고 포그라운드 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 이벤트 및 [NetworkStateChange](/uwp/api/windows.applicationmodel.background.systemtrigger) 형식의 백그라운드 **SystemTrigger**를 트리거하여 네트워크 속성을 시뮬레이트합니다.  
   
- **네트워크 연결 관리에 대한 자세한 내용**  
+   **네트워크 연결 관리에 대한 자세한 내용**  
   
- [빠른 시작:는 데이터 통신 연결 네트워크 비용 제약 조건의 관리](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [네트워크 정보 샘플](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [네트워크 정보 샘플](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [에너지 사용 분석](../profiling/analyze-energy-use-in-store-apps.md)  
+   [에너지 사용 분석](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [백그라운드 작업과 함께 시스템 이벤트에 응답 하는 방법](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [백그라운드 작업과 함께 시스템 이벤트에 응답하는 방법](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [UWP 앱에서 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [UWP 앱에서 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 키보드로 시뮬레이터 탐색  
  키를 눌러 시뮬레이터 도구 모음을 탐색할 수 있습니다 **CTRL + ALT + 위쪽 화살표** 시뮬레이터 창에서 시뮬레이터 도구 모음에 포커스를 전환 합니다. **위쪽 화살표** 및 **아래쪽 화살표** 를 사용하여 도구 모음 단추 간에 이동합니다.  

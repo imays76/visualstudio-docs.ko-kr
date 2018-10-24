@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c5bb33c73ab6bf57bcb421c70e8fdae567baf95
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97575ebf233cf959ab7a49d50a6e0b8ac1453e08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883265"
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
 모든 사용 가능한 포트 공급 업체 목록을 검색합니다.  
@@ -41,10 +41,10 @@ int EnumPortSuppliers(
   
 #### <a name="parameters"></a>매개 변수  
  `ppEnum`  
- [out] 반환 된 [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) 포트의 모든 공급 업체 목록을 포함 하는 개체입니다.  
+ [out] 반환 된 [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) 모든 포트 공급자의 목록을 포함 하는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

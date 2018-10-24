@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883356"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>연습: 명령줄을 통해 Visual Studio 확장 기능 게시
 
@@ -33,12 +33,12 @@ VsixPublisher.exe는 Marketplace에 게시 Visual Studio 확장에 대 한 명�
 
 확장 Marketplace에 게시 합니다. 확장은 vsix, exe/msi 파일로 또는 링크를 수 있습니다. 동일한 버전을 사용 하 여 확장을 이미 있는 경우 확장을 덮어씁니다. 확장을 아직 없는 경우 새 확장을 만들어집니다.
 
-|명령 옵션                    |설명  |
+|명령 옵션 |설명 |
 |---------|---------|
-|페이로드 (필수)                 |  에 대 한 경로일 게시할 페이로드 또는 "자세한 정보 URL"로 사용 하는 링크입니다.      |
-|publishManifest (필수)         |  사용할 파일을 매니페스트 하는 게시에 대 한 경로입니다.       |
-|ignoreWarnings                     |  확장을 게시할 때 무시할 경고의 목록입니다. 이러한 경고는 확장을 게시할 때 명령줄 메시지로 표시 됩니다. (예를 들어, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken                 |  개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다. 지정 하지 않으면 pat에 로그인 한 사용자 로부터 획득 됩니다.       |
+|페이로드 (필수) | 에 대 한 경로일 게시할 페이로드 또는 "자세한 정보 URL"로 사용 하는 링크입니다. |
+|publishManifest (필수) | 사용할 파일을 매니페스트 하는 게시에 대 한 경로입니다. |
+|ignoreWarnings | 확장을 게시할 때 무시할 경고의 목록입니다. 이러한 경고는 확장을 게시할 때 명령줄 메시지로 표시 됩니다. (예를 들어, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|personalAccesToken | 개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다. 지정 하지 않으면 pat에 로그인 한 사용자 로부터 획득 됩니다. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Marketplace에서 게시자를 만듭니다. 또한 게시자 (예: 확장 삭제/게시) 이후 작업에 대 한 컴퓨터에 기록 합니다.
 
-|명령 옵션                    |설명  |
+|명령 옵션 |설명 |
 |---------|---------|
-|displayName (필수)             |  게시자 표시 이름입니다.      |
-|publisherName (필수)           |  (예를 들어 식별자) 게시자의 이름입니다.      |
-|personalAccessToken (필수)     |  개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다.      |
-|shortDescription                   |  게시자 (파일이 아님)의 간단한 설명입니다.       |
-|longDescription                    |  게시자 (파일이 아님)의 긴 설명입니다.      |
+|displayName (필수) | 게시자 표시 이름입니다. |
+|publisherName (필수) | (예를 들어 식별자) 게시자의 이름입니다. |
+|personalAccessToken (필수) | 개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다. |
+|shortDescription | 게시자 (파일이 아님)의 간단한 설명입니다. |
+|longDescription | 게시자 (파일이 아님)의 긴 설명입니다. |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Marketplace에서 게시자를 삭제합니다.
 
-|명령 옵션                    |설명  |
+|명령 옵션 |설명 |
 |---------|---------|
-|publisherName (필수)           |  (예를 들어 식별자) 게시자의 이름입니다.      |
-|personalAccessToken (필수)     |  개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다.      |
+|publisherName (필수) | (예를 들어 식별자) 게시자의 이름입니다. |
+|personalAccessToken (필수) | 개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Marketplace에서 확장을 삭제합니다.
 
-|명령 옵션                    |설명  |
+|명령 옵션 |설명 |
 |---------|---------|
-|extensionName (필수)           |  삭제할 확장의 이름입니다.      |
-|publisherName (필수)           |  (예를 들어 식별자) 게시자의 이름입니다.      |
-|personalAccessToken                |  개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다. 지정 하지 않으면 pat에 로그인 한 사용자 로부터 획득 됩니다.     |
+|extensionName (필수) | 삭제할 확장의 이름입니다. |
+|publisherName (필수) | (예를 들어 식별자) 게시자의 이름입니다. |
+|personalAccessToken | 개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다. 지정 하지 않으면 pat에 로그인 한 사용자 로부터 획득 됩니다. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 게시자 컴퓨터에 로그인 합니다.
 
-|명령 옵션                    |설명  |
+|명령 옵션 |설명 |
 |---------|---------|
-|(필수 personalAccessToken      |  개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다.      |
-|publisherName (필수)           |  (예를 들어 식별자) 게시자의 이름입니다.      |
-|덮어쓰기                          |  새 개인 액세스 토큰을 사용 하 여 모든 기존 게시자를 덮어쓸 수 해야 지정 합니다.     |
+|(필수 personalAccessToken | 개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다. |
+|publisherName (필수) | (예를 들어 식별자) 게시자의 이름입니다. |
+|덮어쓰기 | 새 개인 액세스 토큰을 사용 하 여 모든 기존 게시자를 덮어쓸 수 해야 지정 합니다. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 컴퓨터에서 게시자를 기록합니다.
 
-|명령 옵션                    |설명  |
+|명령 옵션 |설명 |
 |---------|---------|
-|publisherName (필수)           |  (예를 들어 식별자) 게시자의 이름입니다.      |
-|ignoreMissingPublisher             |  지정된 된 게시자가 이미 로그인 하지 하는 경우 도구 오류가 아니라 해야 하는 것을 지정 합니다.     |
+|publisherName (필수) | (예를 들어 식별자) 게시자의 이름입니다. |
+|ignoreMissingPublisher | 지정된 된 게시자가 이미 로그인 하지 하는 경우 도구 오류가 아니라 해야 하는 것을 지정 합니다. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"

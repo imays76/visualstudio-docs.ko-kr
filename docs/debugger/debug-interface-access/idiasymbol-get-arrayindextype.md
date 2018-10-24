@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1212bb62888d1bed546a7c12ae4cfc48c22d0a07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882408"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 기호의 배열 인덱스 형식의 기호 인터페이스를 검색합니다.  
@@ -34,16 +34,16 @@ HRESULT get_arrayIndexType (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 기호의 배열 인덱스 유형을 나타내는 개체입니다.  
+ [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 기호의 배열 인덱스 형식을 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 일부 언어 배열에 대 한 인덱스로 사용 되는 형식을 지정할 수 있습니다. 이 메서드에서 반환 된 기호에 해당 형식을 지정 합니다.  
+ 일부 언어에는 배열에 대 한 인덱스로 사용 되는 유형을 지정할 수 있습니다. 이 메서드에서 반환 된 기호에 해당 형식을 지정 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

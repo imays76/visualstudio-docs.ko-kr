@@ -9,12 +9,12 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f662a4383c56c21528b3dab556928fdaa043095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884097"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>방법: Visual Studio 확장에 대 한 규칙 기반 UI 컨텍스트 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,75 +28,75 @@ Visual Studio에서는 특정 하는 경우 Vspackage 로드가 잘 알려진 <x
   
  규칙 기반 UI 컨텍스트는 여러 가지 방법으로 사용할 수 있습니다.  
   
-1.  명령 및 도구 창에 대 한 표시 유형 제약 조건을 지정 합니다. UI 컨텍스트 규칙이 만족 될 때까지 명령/도구 창을 숨길 수 있습니다.  
+1. 명령 및 도구 창에 대 한 표시 유형 제약 조건을 지정 합니다. UI 컨텍스트 규칙이 만족 될 때까지 명령/도구 창을 숨길 수 있습니다.  
   
-2.  자동으로 로드 제약 조건: 규칙이 충족 될 경우에 자동 로드 패키지  
+2. 자동으로 로드 제약 조건: 규칙이 충족 될 경우에 자동 로드 패키지  
   
-3.  지연 된 작업: 지정된 된 간격에 전달 하 고 규칙에 부합 함 계속 될 때까지 로드를 지연 합니다.  
+3. 지연 된 작업: 지정된 된 간격에 전달 하 고 규칙에 부합 함 계속 될 때까지 로드를 지연 합니다.  
   
- 모든 Visual Studio 확장에 의해 메커니즘을 사용할 수 있습니다.  
+   모든 Visual Studio 확장에 의해 메커니즘을 사용할 수 있습니다.  
   
 ## <a name="create-a-rule-based-ui-context"></a>규칙 기반 UI 컨텍스트 만들기  
  라는 TestPackage ".config" 확장명을 가진 파일에만 적용 되는 메뉴 명령을 제공 하는 확장 있다고 가정 합니다. VS2015를 하기 전에 가장 적합 한 옵션 TestPackage 로드 된 경우 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI 컨텍스트의 활성화 되었습니다. 이 로드 된 솔루션도.config 파일이 없고 있으므로 효율적이 고 하지 않습니다. 알려주세요 참조 규칙 기반 UI 컨텍스트를 사용 하 여 UI 컨텍스트의 경우.config 확장명을 가진 파일에만 활성화할 수 있습니다을 선택 하는 방법과 해당 UI 컨텍스트에서 활성화 되 면 TestPackage 로드 합니다.  
   
-1.  새 UIContext GUID를 정의 하 고 VSPackage 클래스에 추가 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 고 <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>입니다.  
+1. 새 UIContext GUID를 정의 하 고 VSPackage 클래스에 추가 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 고 <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>입니다.  
   
-     예를 들어 새 UIContext 가정 "UIContextGuid" 추가 됩니다. 만든 GUID (도구를 클릭 하 여 GUID를 만들 수 있습니다-> guid 만들기) "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" 됩니다. 추가한 다음 패키지 클래스 내에서:  
+    예를 들어 새 UIContext 가정 "UIContextGuid" 추가 됩니다. 만든 GUID (도구를 클릭 하 여 GUID를 만들 수 있습니다-> guid 만들기) "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" 됩니다. 추가한 다음 패키지 클래스 내에서:  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     특성에 대해 다음을 추가 합니다. (이러한 특성의 세부 정보에 대해서는 나중)  
+    특성에 대해 다음을 추가 합니다. (이러한 특성의 세부 정보에 대해서는 나중)  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     이러한 메타 데이터는 새 UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 및 단일 용어에 "DotConfig"를 참조 하는 식을 정의 합니다. 정규식 패턴과 일치 하는 이름이 활성 계층 구조에서 현재 선택한 때마다 true로 평가 되는 "DotConfig" 용어 "\\.config$" (".config"로 끝나는). (기본값) 디버깅에 유용한 규칙에 대 한 선택적인 이름을 정의합니다.  
+    이러한 메타 데이터는 새 UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 및 단일 용어에 "DotConfig"를 참조 하는 식을 정의 합니다. 정규식 패턴과 일치 하는 이름이 활성 계층 구조에서 현재 선택한 때마다 true로 평가 되는 "DotConfig" 용어 "\\.config$" (".config"로 끝나는). (기본값) 디버깅에 유용한 규칙에 대 한 선택적인 이름을 정의합니다.  
   
-     특성의 값은 나중에 빌드 시간 중에 생성 된 pkgdef에 추가 됩니다.  
+    특성의 값은 나중에 빌드 시간 중에 생성 된 pkgdef에 추가 됩니다.  
   
-2.  TestPackage의 명령에 대 한 VSCT 파일에서 적절 한 명령에 "DynamicVisibility" 플래그를 추가 합니다.  
+2. TestPackage의 명령에 대 한 VSCT 파일에서 적절 한 명령에 "DynamicVisibility" 플래그를 추가 합니다.  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  VSCT의 표시 유형 섹션에서는 새 UIContext # 1에 정의 된 GUID 적절 한 명령을 연결 합니다.  
+3. VSCT의 표시 유형 섹션에서는 새 UIContext # 1에 정의 된 GUID 적절 한 명령을 연결 합니다.  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  Symbols 섹션에는 UIContext의 정의 추가 합니다.  
+4. Symbols 섹션에는 UIContext의 정의 추가 합니다.  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     이제 솔루션 탐색기에서 선택한 항목은 ".config" 파일 및 이러한 명령 중 하나를 선택할 때까지 패키지를 로드할 수는 경우에 *.config 파일에 대 한 상황에 맞는 메뉴 명령을 표시 됩니다.  
+    이제 솔루션 탐색기에서 선택한 항목은 ".config" 파일 및 이러한 명령 중 하나를 선택할 때까지 패키지를 로드할 수는 경우에 *.config 파일에 대 한 상황에 맞는 메뉴 명령을 표시 됩니다.  
   
- 다음으로, 패키지만 때 기대 하는 로드를 확인 하려면 디버거를 사용해 보겠습니다. 디버깅 하려면 TestPackage:  
+   다음으로, 패키지만 때 기대 하는 로드를 확인 하려면 디버거를 사용해 보겠습니다. 디버깅 하려면 TestPackage:  
   
-1.  중단점을 설정 합니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드.  
+5. 중단점을 설정 합니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드.  
   
-2.  TestPackage 빌드하고 디버깅을 시작 합니다.  
+6. TestPackage 빌드하고 디버깅을 시작 합니다.  
   
-3.  프로젝트를 만들거나 엽니다.  
+7. 프로젝트를 만들거나 엽니다.  
   
-4.  이외의.config 확장명을 가진 모든 파일을 선택 합니다. 중단점이 적중 되지 해야 합니다.  
+8. 이외의.config 확장명을 가진 모든 파일을 선택 합니다. 중단점이 적중 되지 해야 합니다.  
   
-5.  App.Config 파일을 선택 합니다.  
+9. App.Config 파일을 선택 합니다.  
   
- TestPackage 로드 하 고 중단점에서 중지 됩니다.  
+   TestPackage 로드 하 고 중단점에서 중지 됩니다.  
   
 ## <a name="adding-more-rules-for-ui-context"></a>UI 컨텍스트에 대 한 자세한 규칙을 추가합니다.  
  UI 상황에 맞는 규칙 부울 식 되므로 UI 컨텍스트에 대 한 더 제한적인된 규칙을 추가할 수 있습니다. 예를 들어, 위의 UI 컨텍스트에서 규칙이 프로젝트와 솔루션을 로드할 때만 적용 되도록 지정할 수 있습니다. 이러한 방식으로 명령을 열고 ".config" 파일을 프로젝트의 일부가 아니라 독립 실행형 파일로 표시 되지 않습니다.  
