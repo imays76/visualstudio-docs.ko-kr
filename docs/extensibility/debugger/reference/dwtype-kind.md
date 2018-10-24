@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eaa1b9edc128b5e13641bb5b38296fd96740ab4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4339c18f7aa745c8b741c0a431b6073300ff145b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841769"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
-형식을 해석 하는 방법을 지정는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다.  
+형식의 해석 하는 방법을 지정는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,16 +47,16 @@ public enum enum_dwTYPE_KIND {
   
 #### <a name="parameters"></a>매개 변수  
  TYPE_KIND_METADATA  
- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) union으로 해석할지는 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) 구조입니다.  
+ 합니다 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) union으로 해석할지를 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) 구조입니다.  
   
  TYPE_KIND_PDB  
- `TYPE_INFO` union으로 해석할지는 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) 구조입니다.  
+ 합니다 `TYPE_INFO` union으로 해석할지를 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) 구조입니다.  
   
  TYPE_KIND_BUILT  
- `TYPE_INFO` union으로 해석할지는 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) 구조입니다.  
+ 합니다 `TYPE_INFO` union으로 해석할지를 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) 구조입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에 표시는 `dwKind` 필드는 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 구조체를 해석 하는 방법을 결정 하는 데 사용 되는 `type` 공용 구조체 멤버입니다. `TYPE_INFO` 에 대 한 호출에서 반환 된 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 메서드.  
+ 이 열거형의 값이 나타나는 `dwKind` 필드를 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 구조체이 고 해석 하는 방법을 결정 하는 데 사용 되는 `type` 공용 구조체 멤버입니다. 합니다 `TYPE_INFO` 구조에 대 한 호출에서 반환 되는 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  

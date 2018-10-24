@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202ba0f384fb658efd45ec446b27a385c98c37d4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842237"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 텍스트 및 Visual Studio에 대 한 도움말
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 텍스트 및 용어  
@@ -315,15 +315,15 @@ ms.locfileid: "39511785"
   
  이 솔루션에 버그를 일으킬 수 있는 네 가지 가정을 합니다.  
   
--   대화 상자의 도움말 단추 **IDHELP** (9).  
+- 대화 상자의 도움말 단추 **IDHELP** (9).  
   
--   도움말 단추 숨겨질 때 대화 상자를 올바르게 표시 합니다.  
+- 도움말 단추 숨겨질 때 대화 상자를 올바르게 표시 합니다.  
   
--   대화 상자는 winproc를 대체 하지 않아야 합니다.  
+- 대화 상자는 winproc를 대체 하지 않아야 합니다.  
   
--   대화 상자는 다른 대화 상자 내에서 포함 되지 않습니다.  
+- 대화 상자는 다른 대화 상자 내에서 포함 되지 않습니다.  
   
- 대화 상자 msenv 내에 상주 하 고 사용 하지 않는 경우 **VBDialogBoxParam**를 활용 하 여 조사 **VBDialogBoxParam** 고유한 처리기를 구현 하기 전에 합니다.  
+  대화 상자 msenv 내에 상주 하 고 사용 하지 않는 경우 **VBDialogBoxParam**를 활용 하 여 조사 **VBDialogBoxParam** 고유한 처리기를 구현 하기 전에 합니다.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>다른 패키지를 통해 생성 대화 상자  
  Msenv 외부에 있는 대화 상자에 대 한 사용자 고유의 솔루션을 구현할 수 있습니다. VSPackage의 공유 대화 상자 클래스에 대 한 제목 표시줄에 단추를 이동 하거나 각 대화 상자에서 처리기를 구현 하는 것이 좋습니다. 다음 코드는 시작할 수 있도록 하는 구현의 기본 구조:  

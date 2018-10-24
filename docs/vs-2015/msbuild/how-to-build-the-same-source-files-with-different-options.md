@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831005"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>방법: 동일한 소스 파일을 다른 옵션을 사용하여 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ ms.locfileid: "49243921"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>명령줄에서 둘 이상의 프로젝트 속성을 지정하려면  
   
--   **/property** 또는 **/p** 스위치와 속성 및 속성 값을 함께 여러 번 사용하거나, 하나의 **/property** 또는 **/p** 스위치와 세미콜론(;)으로 구분된 여러 속성을 사용합니다. 예를 들어:  
+- **/property** 또는 **/p** 스위치와 속성 및 속성 값을 함께 여러 번 사용하거나, 하나의 **/property** 또는 **/p** 스위치와 세미콜론(;)으로 구분된 여러 속성을 사용합니다. 예를 들어:  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - 또는-  
+   - 또는-  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- 환경 변수는 속성으로 처리되고 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 의해 자동으로 통합되기도 합니다. 환경 변수 사용에 대한 자세한 내용은 [방법: 빌드 시 환경 변수 사용](../msbuild/how-to-use-environment-variables-in-a-build.md)을 참조하세요.  
+  환경 변수는 속성으로 처리되고 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 의해 자동으로 통합되기도 합니다. 환경 변수 사용에 대한 자세한 내용은 [방법: 빌드 시 환경 변수 사용](../msbuild/how-to-use-environment-variables-in-a-build.md)을 참조하세요.  
   
- 명령 줄에서 지정된 속성 값이 프로젝트 파일에서 같은 속성에 설정된 모든 값보다 우선 적용되고 프로젝트 파일의 값이 환경 변수의 값보다 우선 적용됩니다.  
+  명령 줄에서 지정된 속성 값이 프로젝트 파일에서 같은 속성에 설정된 모든 값보다 우선 적용되고 프로젝트 파일의 값이 환경 변수의 값보다 우선 적용됩니다.  
   
- 프로젝트 태그에서 `TreatAsLocalProperty` 특성을 사용하여 이 동작을 변경할 수 있습니다. 해당 특성을 통해 나열된 속성 이름의 경우 명령줄에서 지정된 속성 값이 프로젝트 파일의 값보다 우선 적용되지 않습니다. 이 항목의 뒷부분에 있는 예제를 참조하세요.  
+  프로젝트 태그에서 `TreatAsLocalProperty` 특성을 사용하여 이 동작을 변경할 수 있습니다. 해당 특성을 통해 나열된 속성 이름의 경우 명령줄에서 지정된 속성 값이 프로젝트 파일의 값보다 우선 적용되지 않습니다. 이 항목의 뒷부분에 있는 예제를 참조하세요.  
   
 ## <a name="example"></a>예제  
  다음 코드 예제 "Hello World" 프로젝트에는 디버그 빌드 및 릴리스 빌드를 만드는 데 사용할 수 있는 새로운 두 가지 속성 그룹이 포함됩니다.  

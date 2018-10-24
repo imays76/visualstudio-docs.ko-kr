@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 477c3103ce3d0da27ee0f149065a1d58eca21a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38ed3c8396457f66fe40148216587b750c493190
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827027"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 및 GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ VSPerfCmd.exe **GlobalOff** 및 **GlobalOn** 옵션은 명령줄 프로파일링
   
  **GlobalOff** 및 **GlobalOn** 옵션은 프로파일러 API 함수에 의해 조작되는 전역 Start/Stop 카운트에도 영향을 줍니다.  
   
--   **GlobalOff**는 전역 Start/Stop 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
+- **GlobalOff**는 전역 Start/Stop 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
   
--   **GlobalOn**은 전역 Start/Stop 카운트를 즉시 1로 설정하므로 프로파일링이 재개됩니다.  
+- **GlobalOn**은 전역 Start/Stop 카운트를 즉시 1로 설정하므로 프로파일링이 재개됩니다.  
   
- 자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
+  자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
   
 ## <a name="syntax"></a>구문  
   

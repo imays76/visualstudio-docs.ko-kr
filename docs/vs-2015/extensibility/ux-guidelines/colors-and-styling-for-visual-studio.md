@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831760"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>색 및 Visual Studio에 대 한 스타일 지정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,23 +26,23 @@ ms.locfileid: "49267412"
 ## <a name="using-color-in-visual-studio"></a>Visual Studio에서 색을 사용 하 여  
  Visual Studio에서 색 장식 뿐만 아니라 통신 도구는 기본적으로 사용 됩니다. 최소 색을 사용 하 고 하려는 상황에 대 한 예약 합니다.  
   
--   통신 의미 또는 정보 (예: 플랫폼 또는 언어 한정자)  
+- 통신 의미 또는 정보 (예: 플랫폼 또는 언어 한정자)  
   
--   (예: 상태 표시) 주의 유치  
+- (예: 상태 표시) 주의 유치  
   
--   가독성을 향상 하 고 UI를 탐색 하기 위한 랜드마크 제공  
+- 가독성을 향상 하 고 UI를 탐색 하기 위한 랜드마크 제공  
   
--   증가 요구 적합성  
+- 증가 요구 적합성  
   
- Visual Studio에서 UI 요소에 색을 할당 하기 위한 몇 가지 옵션이 있습니다. 경우에 따라 그림 어려울 수 있습니다 올바르게 사용 하는 방법 또는 옵션 아웃 할 수를 사용 합니다. 이 항목에서는 사용 하는 데 도움이 됩니다.  
+  Visual Studio에서 UI 요소에 색을 할당 하기 위한 몇 가지 옵션이 있습니다. 경우에 따라 그림 어려울 수 있습니다 올바르게 사용 하는 방법 또는 옵션 아웃 할 수를 사용 합니다. 이 항목에서는 사용 하는 데 도움이 됩니다.  
   
-1.  다른 서비스 및 Visual Studio에서 색을 정의 하는 데 사용 하는 시스템을 이해 합니다.  
+1. 다른 서비스 및 Visual Studio에서 색을 정의 하는 데 사용 하는 시스템을 이해 합니다.  
   
-2.  지정된 된 요소에 대 한 올바른 옵션을 선택 합니다.  
+2. 지정된 된 요소에 대 한 올바른 옵션을 선택 합니다.  
   
-3.  선택한 옵션을 올바르게 사용 합니다.  
+3. 선택한 옵션을 올바르게 사용 합니다.  
   
- **중요:** 하드 코딩 16 진수, RGB 또는 시스템 색에 UI 요소에 없습니다. 서비스를 사용 하 여 hue 튜닝의 유연성을 허용 합니다. 또한 서비스 없이 수 없게 됩니다의 테마 전환 기능을 활용 하는 [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)합니다.  
+   **중요:** 하드 코딩 16 진수, RGB 또는 시스템 색에 UI 요소에 없습니다. 서비스를 사용 하 여 hue 튜닝의 유연성을 허용 합니다. 또한 서비스 없이 수 없게 됩니다의 테마 전환 기능을 활용 하는 [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)합니다.  
   
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Visual Studio 인터페이스 요소에 색을 할당 하기 위한 메서드  
  UI 요소에 가장 적합 한 방법을 선택 합니다.  
@@ -383,23 +383,23 @@ protected override void Dispose(bool disposing)
   
  메서드를 통해 구현 [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) 사용 하 여 IDE를 제공 해야 합니다.  
   
--   범주의 표시 항목 목록  
+- 범주의 표시 항목 목록  
   
--   표시 항목에 대 한 지역화할 수 있는 이름  
+- 표시 항목에 대 한 지역화할 수 있는 이름  
   
--   범주의 각 멤버에 대 한 정보를 표시 합니다.  
+- 범주의 각 멤버에 대 한 정보를 표시 합니다.  
   
- **참고:** 범주 중 일부는 표시 항목을 하나 이상 포함 해야 합니다.  
+  **참고:** 범주 중 일부는 표시 항목을 하나 이상 포함 해야 합니다.  
   
- IDE를 사용 합니다 **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** 여러 범주의 합집합을 정의 하는 인터페이스입니다.  
+  IDE를 사용 합니다 **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** 여러 범주의 합집합을 정의 하는 인터페이스입니다.  
   
- 구현을 사용 하 여 IDE를 제공합니다.  
+  구현을 사용 하 여 IDE를 제공합니다.  
   
--   지정된 된 그룹을 구성 하는 범주 목록  
+- 지정된 된 그룹을 구성 하는 범주 목록  
   
--   인스턴스에 액세스 [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) 그룹 내에서 각 범주를 지원 합니다.  
+- 인스턴스에 액세스 [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) 그룹 내에서 각 범주를 지원 합니다.  
   
--   지역화할 수 있는 그룹 이름  
+- 지역화할 수 있는 그룹 이름  
   
 #### <a name="updating-the-ide"></a>IDE를 업데이트 하는 중  
  IDE 글꼴 및 색 설정에 대 한 정보를 캐시합니다. 따라서 IDE 글꼴 및 색 구성의 모든 수정 후 캐시를 최신 상태로 것이 좋습니다.  
@@ -411,13 +411,13 @@ protected override void Dispose(bool disposing)
   
  이 작업을 수행 하려면 VSPackage 해야 합니다.  
   
--   **IDE에서 생성 된 이벤트를 처리할** 를 구현 하 여 합니다 [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) 인터페이스입니다. IDE 글꼴 및 색 페이지의 사용자 수정 다음 적절 한 메서드를 호출 합니다. 예를 들어 호출을 [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) 새 글꼴을 선택 하는 경우 메서드.  
+- **IDE에서 생성 된 이벤트를 처리할** 를 구현 하 여 합니다 [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) 인터페이스입니다. IDE 글꼴 및 색 페이지의 사용자 수정 다음 적절 한 메서드를 호출 합니다. 예를 들어 호출을 [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) 새 글꼴을 선택 하는 경우 메서드.  
   
- **OR**  
+  **OR**  
   
--   **변경 내용에 대 한 IDE를 폴링할**합니다. 시스템이 구현 통해 수행할 수 있습니다 [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) 인터페이스입니다. 하지만 주로 지원용 지 속성을 [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) 메서드 표시 항목에 대 한 글꼴 및 색 정보를 가져올 수 있습니다. 글꼴 및 색 설정에 대 한 자세한 내용은 MSDN 문서를 참조 하세요 [에 액세스 하는 저장 된 글꼴 및 색 설정](https://msdn.microsoft.com/library/bb166382.aspx)합니다.  
+- **변경 내용에 대 한 IDE를 폴링할**합니다. 시스템이 구현 통해 수행할 수 있습니다 [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) 인터페이스입니다. 하지만 주로 지원용 지 속성을 [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) 메서드 표시 항목에 대 한 글꼴 및 색 정보를 가져올 수 있습니다. 글꼴 및 색 설정에 대 한 자세한 내용은 MSDN 문서를 참조 하세요 [에 액세스 하는 저장 된 글꼴 및 색 설정](https://msdn.microsoft.com/library/bb166382.aspx)합니다.  
   
- **참고:** 폴링 결과가 올바른지 확인 하려면 사용 합니다 [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) 캐시 플러시 및 업데이트의 검색 메서드를 호출 하는 데 필요한 경우를 결정 하는 인터페이스를 [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) 인터페이스입니다.  
+  **참고:** 폴링 결과가 올바른지 확인 하려면 사용 합니다 [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) 캐시 플러시 및 업데이트의 검색 메서드를 호출 하는 데 필요한 경우를 결정 하는 인터페이스를 [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) 인터페이스입니다.  
   
 #### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>인터페이스를 구현 하지 않고 사용자 지정 글꼴 및 색 범주를 등록  
  다음 코드 예제에서는 사용자 지정 글꼴을 등록 하 고 인터페이스를 구현 하지 않고도 색 범주 하는 방법을 보여 줍니다.  

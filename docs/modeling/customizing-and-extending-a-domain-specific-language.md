@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816706"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>도메인별 언어 사용자 지정 및 확장
 Visual Studio 모델링 및 시각화 SDK (VMSDK)는 모델링 도구를 정의할 수 있습니다 여러 수준을 제공 합니다.
@@ -35,7 +35,7 @@ Visual Studio 모델링 및 시각화 SDK (VMSDK)는 모델링 도구를 정의�
 ## <a name="customShapes"></a> 이 섹션에서
 
 |이 결과를 얻으려면|이 항목을 참조 하세요.|
-|----------------------------|-------------------------|
+|-|-|
 |도형의 색 및 스타일 속성을 설정 하려면 사용자를 허용 합니다.|셰이프 또는 연결선 클래스를 마우스 오른쪽 **Add Exposed**, 한 항목을 클릭 합니다.<br /><br /> 참조 [다이어그램의 프레젠테이션 사용자 지정](../modeling/customizing-presentation-on-the-diagram.md)합니다.|
 |다른 모델 요소 클래스의 초기 높이 및 너비, 색, 도구 설명 등의 속성을 공유 다이어그램에서 유사 합니다.|셰이프 또는 연결선 클래스 간의 상속을 사용 합니다. 파생 된 모양 및 파생 된 도메인 클래스 간의 매핑을 부모의 매핑 정보를 상속합니다.<br /><br /> 또는 동일한 모양 클래스를 다른 도메인 클래스를 매핑합니다.|
 |모델 요소 클래스는 다양 한 모양 컨텍스트에서 표시 됩니다.|동일한 도메인 클래스에 둘 이상의 모양 클래스를 매핑하십시오. 솔루션을 빌드하면 오류 보고서를 따르고 데 모양을 결정 하는 요청 된 코드를 제공 합니다.|

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc287887baf2530786b03b591d6c03592055e55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b173394aba18c47a18a7a683db0f35d474bb4eeb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833852"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 가리키는 개체를 가져옵니다.  
@@ -43,16 +43,16 @@ int Dereference(
   
 #### <a name="parameters"></a>매개 변수  
  `dwIndex`  
- [in] 개체의 시작 부분에서 간단한 바이트 오프셋 가리키는입니다.  
+ [in] 개체의 시작 부분에서 간단한 바이트 오프셋을 지정 합니다.  
   
  `ppObject`  
- [out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 있는 경우, 가리키는 플러스 오프셋, 개체를 나타내는 개체입니다.  
+ [out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 있으면를 가리키는 plus 오프셋을 나타내는 개체를 개체.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다. 이 개체가 다른 개체를 가리키지 않을 경우 E_FAIL을 반환 합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다. 이 개체가 다른 개체를 가리키지 않을 경우 E_FAIL을 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 기본 형식 또는 클래스 또는 구조체와 같은 보다 복잡 한 형식을 가리키는 개체가 될 수 있습니다.  
+ 기본 형식 또는 클래스 또는 구조체와 같은 보다 복잡 한 형식을 가리키는 개체가 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

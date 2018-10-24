@@ -17,12 +17,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7422b0dae02b12d731713f6da416361798d3276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824312"
 ---
 # <a name="elimination-of-sak-files"></a>~SAK 파일 제거
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "49216101"
 ## <a name="sak-files"></a>~ SAK 파일  
  Visual Studio.NET 2003 접두사가 추가 된 임시 파일을 만든 ~ SAK 합니다. 이러한 파일을 사용 하 여 소스 제어 플러그 인을 지원 하는지 확인할 수 있습니다:  
   
--   MSSCCPRJ 합니다. SCC 파일입니다.  
+- MSSCCPRJ 합니다. SCC 파일입니다.  
   
--   여러 (공유) 체크 아웃 합니다.  
+- 여러 (공유) 체크 아웃 합니다.  
   
- 플러그 인에 대해 원본 제어 플러그 인 API 1.2에서 제공 하는 고급 함수를 지 원하는, IDE는 새로운 기능, 플래그 및 다음 섹션에 자세히 설명 하는 함수를 사용 하 여 임시 파일을 만들지 않고 이러한 기능을 검색할 수 있습니다.  
+  플러그 인에 대해 원본 제어 플러그 인 API 1.2에서 제공 하는 고급 함수를 지 원하는, IDE는 새로운 기능, 플래그 및 다음 섹션에 자세히 설명 하는 함수를 사용 하 여 임시 파일을 만들지 않고 이러한 기능을 검색할 수 있습니다.  
   
 ## <a name="new-capability-flags"></a>새 기능 플래그  
  `SCC_CAP_SCCFILE`  

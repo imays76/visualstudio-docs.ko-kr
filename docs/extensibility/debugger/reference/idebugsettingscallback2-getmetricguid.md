@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9b1d9d96a390d36ad2b322cba088388daaca050
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d7b45d5126f1fc437f54ed028ae7f2f5535c207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831148"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
-메트릭 이름이 지정 된 고유 식별자를 검색 합니다.  
+이름이 지정 된 메트릭의 고유 식별자를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -54,10 +54,10 @@ private int GetMetricGuid(
  [in] 메트릭의 이름입니다.  
   
  `pguidValue`  
- [out] 에 대 한 메트릭의 고유 식별자를 반환합니다.  
+ [out] 메트릭의 고유 식별자를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

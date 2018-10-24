@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd1ddaff24cbceb73af3982cc7be3e9f09d351c2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b7f7d52ad8dc75f8e8bd313794b44c231522cde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829939"
 ---
 # <a name="how-to-update-the-status-bar"></a>방법: 상태 표시줄 업데이트
 합니다 **상태 표시줄** 는 하나 이상의 상태 텍스트 줄 또는 표시기를 포함 하는 여러 응용 프로그램 창의 아래쪽에 있는 컨트롤 막대입니다.  
@@ -35,19 +35,19 @@ ms.locfileid: "39499954"
 ## <a name="robust-programming"></a>강력한 프로그래밍  
  A **상태 표시줄** 네 개의 별도 필드를 포함 합니다.  
   
--   상태 텍스트  
+- 상태 텍스트  
   
--   진행률 표시줄  
+- 진행률 표시줄  
   
--   애니메이션된 아이콘  
+- 애니메이션된 아이콘  
   
--   편집기 정보  
+- 편집기 정보  
   
- 자세한 내용은 [상태 표시줄](/cpp/mfc/status-bars)합니다.  
+  자세한 내용은 [상태 표시줄](/cpp/mfc/status-bars)합니다.  
   
- IDE에서 자동으로 호출 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 메서드의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 구현에 문서 창을 활성화할 때입니다.  
+  IDE에서 자동으로 호출 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 메서드의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 구현에 문서 창을 활성화할 때입니다.  
   
- VSPackage 구현자는 상태 표시줄에서 상태 텍스트를 업데이트 하는 일을 담당 합니다. IDE 상태 텍스트 필드를 빈 텍스트로 설정 된 경우이 문자열 "READY"로 다시 설정 ("") 유휴 시간에 있습니다.  
+  VSPackage 구현자는 상태 표시줄에서 상태 텍스트를 업데이트 하는 일을 담당 합니다. IDE 상태 텍스트 필드를 빈 텍스트로 설정 된 경우이 문자열 "READY"로 다시 설정 ("") 유휴 시간에 있습니다.  
   
 ## <a name="see-also"></a>참고자료  
  [상태 표시줄](/cpp/mfc/status-bars)

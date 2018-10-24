@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837076"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>방법: 병렬 조사식 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 병렬 조사식 창에서 한 식이 여러 스레드에서 보유하는 값을 동시에 표시할 수 있습니다. 각 행은 응용 프로그램에서 실행 중인 스레드를 나타냅니다. 스레드는 여러 행에 나타날 수도 있습니다. 보다 구체적으로 말하자면, 각 행은 함수 시그니처가 현재 스택 프레임의 함수와 일치하는 함수 호출을 나타냅니다. 열에 있는 항목의 정렬, 순서 변경, 제거 및 그룹화를 수행할 수 있습니다. 스레드에 플래그를 지정하거나 해제할 수 있으며 스레드를 중지(일시 중단)하거나 재개(다시 시작)할 수 있습니다. 다음 열에 표시 되는 **병렬 조사식** 창:  
   
--   특히 주의할 스레드를 표시할 수 있는 플래그 열  
+- 특히 주의할 스레드를 표시할 수 있는 플래그 열  
   
--   화살표가 선택된 프레임을 나타내는 프레임 열  
+- 화살표가 선택된 프레임을 나타내는 프레임 열  
   
--   컴퓨터, 프로세스, 타일, 작업 및 스레드를 표시할 수 있는 구성 가능한 열  
+- 컴퓨터, 프로세스, 타일, 작업 및 스레드를 표시할 수 있는 구성 가능한 열  
   
-    > [!TIP]
-    >  열어야 합니다는 **병렬 태스크** 창에서 작업 정보를 표시 하는 **병렬 조사식** 창.  
+  > [!TIP]
+  >  열어야 합니다는 **병렬 태스크** 창에서 작업 정보를 표시 하는 **병렬 조사식** 창.  
   
--   합니다  **\<조사식 추가 >** 열에서 조사할 식을 입력할 수 있습니다.  
+- 합니다  **\<조사식 추가 >** 열에서 조사할 식을 입력할 수 있습니다.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>병렬 조사식 창을 표시하려면  
   

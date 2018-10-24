@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b113d0d62156d77d08fa2fcdbb415d0518eba3a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddede8542cda7499a9781c19a6baf1c58acfd125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839546"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 인터페이스
   로드 하는 구성 요소를 만드는 IManagedAddin 인터페이스를 구현 하는 VSTO 추가 기능을 관리 합니다. 이 인터페이스는 2007 Microsoft Office 시스템에서 추가되었습니다.  
@@ -57,25 +57,25 @@ interface IManagedAddin : IUnknown
 ## <a name="how-managed-add-ins-are-loaded"></a>관리 되는 추가 기능이 로드 되는 방법  
  다음 단계는 응용 프로그램을 시작할 때 발생합니다.  
   
-1.  응용 프로그램에서는 다음 레지스트리 키에서 항목을 검색하여 VSTO 추가 기능을 찾습니다.  
+1. 응용 프로그램에서는 다음 레지스트리 키에서 항목을 검색하여 VSTO 추가 기능을 찾습니다.  
   
-     **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<응용 프로그램 이름 >_ \Addins\**  
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<응용 프로그램 이름 >* \Addins\\**  
   
-     이 레지스트리 키의 각 항목은 VSTO 추가 기능의 고유 ID입니다. 일반적으로 VSTO 추가 기능 어셈블리의 이름입니다.  
+    이 레지스트리 키의 각 항목은 VSTO 추가 기능의 고유 ID입니다. 일반적으로 VSTO 추가 기능 어셈블리의 이름입니다.  
   
-2.  응용 프로그램은 각 VSTO 추가 기능에 대한 항목에서 `Manifest` 항목을 찾습니다.  
+2. 응용 프로그램은 각 VSTO 추가 기능에 대한 항목에서 `Manifest` 항목을 찾습니다.  
   
-     관리 되는 VSTO 추가 기능 매니페스트의 전체 경로 저장할 수는 `Manifest` 아래에 항목이 **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<응용 프로그램 이름 >_ \Addins\\  _\<-add-in ID >_** 합니다. 매니페스트는 VSTO 추가 기능을 로드하는 데 사용되는 정보를 제공하는 파일(일반적으로 XML 파일)입니다.  
+    관리 되는 VSTO 추가 기능에서 매니페스트의 전체 경로 저장할 수 있는 `Manifest` 항목 **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<응용 프로그램 이름 >_ \Addins\\  _\<ID 추가 기능에서 >_**. 매니페스트는 VSTO 추가 기능을 로드하는 데 사용되는 정보를 제공하는 파일(일반적으로 XML 파일)입니다.  
   
-3.  응용 프로그램에서 `Manifest` 항목을 찾으면 관리되는 VSTO 추가 기능 로더 구성 요소를 로드하려고 합니다. 응용 프로그램 IManagedAddin 인터페이스를 구현 하는 COM 개체를 생성 하 여이 작업을 수행 합니다.  
+3. 응용 프로그램에서 `Manifest` 항목을 찾으면 관리되는 VSTO 추가 기능 로더 구성 요소를 로드하려고 합니다. 응용 프로그램 IManagedAddin 인터페이스를 구현 하는 COM 개체를 생성 하 여이 작업을 수행 합니다.  
   
-     합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 는 VSTO 추가 기능 로더 구성 요소를 포함 (*VSTOLoader.dll*), IManagedAddin 인터페이스를 구현 하 여 직접 만들 수 있습니다.  
+    합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 는 VSTO 추가 기능 로더 구성 요소를 포함 (*VSTOLoader.dll*), IManagedAddin 인터페이스를 구현 하 여 직접 만들 수 있습니다.  
   
-4.  응용 프로그램은 [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 메서드를 호출하여 `Manifest` 항목의 값을 전달합니다.  
+4. 응용 프로그램은 [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 메서드를 호출하여 `Manifest` 항목의 값을 전달합니다.  
   
-5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 메서드는 로드 중인 VSTO 추가 기능을 위한 보안 정책 및 응용 프로그램 도메인을 구성하는 등 VSTO 추가 기능을 로드하는 데 필요한 작업을 수행합니다.  
+5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 메서드는 로드 중인 VSTO 추가 기능을 위한 보안 정책 및 응용 프로그램 도메인을 구성하는 등 VSTO 추가 기능을 로드하는 데 필요한 작업을 수행합니다.  
   
- 레지스트리에 대 한 자세한 내용은 Microsoft Office 응용 프로그램 검색 하 고 로드를 사용 하는 키 관리 되는 VSTO 추가 기능을 참조 하십시오 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.  
+   레지스트리에 대 한 자세한 내용은 Microsoft Office 응용 프로그램 검색 하 고 로드를 사용 하는 키 관리 되는 VSTO 추가 기능을 참조 하십시오 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.  
   
 ## <a name="guidance-to-implement-imanagedaddin"></a>IManagedAddin 구현 하기 위한 지침  
  IManagedAddin를 구현 하는 경우 다음 CLSID를 사용 하 여 구현이 포함 된 DLL을 등록 해야 합니다.  

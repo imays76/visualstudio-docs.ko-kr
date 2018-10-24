@@ -20,12 +20,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89c744db125b45c51d2459d8a830b23e855fd2c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf62ce18094b7580d0e4d2d2dd2cb2b6ab139287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836478"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>속성, 작업 목록, 출력 및 옵션 창 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,33 +102,33 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 ## <a name="create-an-options-page"></a>옵션 페이지 만들기  
  페이지에 제공할 수 있습니다 합니다 **옵션** 대화 상자의 사용자가 도구 창에 대 한 설정을 변경할 수 있도록 합니다. 옵션 페이지 만들기 옵션 및 TodoListPackage.cs 또는 TodoListPackage.vb 파일에서 항목을 설명 하는 두 클래스에 필요 합니다.  
   
-1.  라는 클래스를 추가 `ToolsOptions.cs`합니다. 상속 ToolsOptions 클래스 <xref:Microsoft.VisualStudio.Shell.DialogPage>합니다.  
+1. 라는 클래스를 추가 `ToolsOptions.cs`합니다. 상속 ToolsOptions 클래스 <xref:Microsoft.VisualStudio.Shell.DialogPage>합니다.  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  다음 추가 문을 사용 하 여:  
+2. 다음 추가 문을 사용 하 여:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  이 연습의 옵션 페이지 DaysAhead 라는 하나의 옵션만을 제공 합니다. 라는 private 필드를 추가 **daysAhead** 속성 및 이름이 **DaysAhead** ToolsOptions 클래스:  
+3. 이 연습의 옵션 페이지 DaysAhead 라는 하나의 옵션만을 제공 합니다. 라는 private 필드를 추가 **daysAhead** 속성 및 이름이 **DaysAhead** ToolsOptions 클래스:  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- 이제 해야 프로젝트가 옵션 페이지를 인식 합니다.  
+   이제 해야 프로젝트가 옵션 페이지를 인식 합니다.  
   
 #### <a name="make-the-options-page-available-to-users"></a>사용자에 게 옵션 페이지를 사용할 수 있도록  
   

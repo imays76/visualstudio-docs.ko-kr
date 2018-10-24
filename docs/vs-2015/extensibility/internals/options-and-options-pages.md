@@ -19,12 +19,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9cd4ea3b1465686ee2c0a0ebcfdc4e3aa2e9e56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816354"
 ---
 # <a name="options-and-options-pages"></a>옵션 및 옵션 페이지
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ ms.locfileid: "49261042"
 ## <a name="option-attributes-and-layout"></a>옵션 특성 및 레이아웃  
  페이지를 제공 하는 사용자 인터페이스 (UI) 옵션을 사용자 지정 옵션 페이지에서의 모양을 결정 합니다. 레이아웃, 레이블 지정 및 일반 옵션 페이지에서 옵션은 다음 특성에 의해 결정 됩니다.  
   
--   <xref:System.ComponentModel.CategoryAttribute> 옵션의 범주를 결정합니다.  
+- <xref:System.ComponentModel.CategoryAttribute> 옵션의 범주를 결정합니다.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute> 옵션의 표시 이름을 결정합니다.  
+- <xref:System.ComponentModel.DisplayNameAttribute> 옵션의 표시 이름을 결정합니다.  
   
--   <xref:System.ComponentModel.DescriptionAttribute> 옵션의 설명에 따라 결정 됩니다.  
+- <xref:System.ComponentModel.DescriptionAttribute> 옵션의 설명에 따라 결정 됩니다.  
   
-    > [!NOTE]
-    >  해당 특성, SRCategory, LocDisplayName, SRDescription, 지역화 문자열 리소스를 사용 하 여 및에 정의 된 합니다 [관리 되는 프로젝트 샘플](http://go.microsoft.com/fwlink/?LinkId=122774)합니다.  
+  > [!NOTE]
+  >  해당 특성, SRCategory, LocDisplayName, SRDescription, 지역화 문자열 리소스를 사용 하 여 및에 정의 된 합니다 [관리 되는 프로젝트 샘플](http://go.microsoft.com/fwlink/?LinkId=122774)합니다.  
   
- 다음과 같은 코드 조각을 생각해 봅시다.  
+  다음과 같은 코드 조각을 생각해 봅시다.  
   
- [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
- [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
+  [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
+  [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
- OptionInteger 옵션으로 옵션 페이지에 나타납니다 **정수 옵션** 에 **My Options** 범주입니다. 옵션을 선택 하는 경우 설명을 **내 정수 옵션**, 설명 상자에 표시 됩니다.  
+  OptionInteger 옵션으로 옵션 페이지에 나타납니다 **정수 옵션** 에 **My Options** 범주입니다. 옵션을 선택 하는 경우 설명을 **내 정수 옵션**, 설명 상자에 표시 됩니다.  
   
 ## <a name="accessing-options-pages-from-another-vspackage"></a>다른 VSPackage에서 옵션 페이지에 액세스  
  자동화 모델을 사용 하 여 다른 VSPackage에서 호스트 하 고 옵션 페이지를 관리 하는 VSPackage는 프로그래밍 방식으로 액세스할 수 있습니다. 예를 들어, 다음 코드에서는 VSPackage는 호스팅 옵션 페이지를으로 등록 됩니다.  

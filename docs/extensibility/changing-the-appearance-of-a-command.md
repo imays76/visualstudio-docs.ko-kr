@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825993"
 ---
 # <a name="change-the-appearance-of-a-command"></a>명령 모양 변경
 명령의 모양을 변경 하 여 사용자에 게 피드백을 제공할 수 있습니다. 예를 들어 명령을 사용할 수 없을 때 다르게 좋습니다. 명령을 사용 가능 여부, 숨기기 또는 표시 하면 또는 확인 하거나 메뉴에서 선택 취소 합니다.  
   
  명령의 모양을 변경 하려면 다음이 작업 중 하나를 수행 합니다.  
   
--   명령 테이블 파일에서 명령 정의에서 적절 한 플래그를 지정 합니다.  
+- 명령 테이블 파일에서 명령 정의에서 적절 한 플래그를 지정 합니다.  
   
--   사용 된 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 서비스입니다.  
+- 사용 된 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 서비스입니다.  
   
--   구현 된 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스 및 원시 명령 개체를 수정 합니다.  
+- 구현 된 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스 및 원시 명령 개체를 수정 합니다.  
   
- 다음 단계를 찾아 관리 패키지 프레임 워크 (MPF)를 사용 하 여 명령의 모양을 업데이트 하는 방법을 보여 줍니다.  
+  다음 단계를 찾아 관리 패키지 프레임 워크 (MPF)를 사용 하 여 명령의 모양을 업데이트 하는 방법을 보여 줍니다.  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>메뉴 명령의 모양을 변경 하려면  
   

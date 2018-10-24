@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6726b2c859143f5dbc9b264e67bb9bb91757de5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819045"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>방법: 추가, 업데이트 또는 WCF 데이터 서비스 참조를 제거 합니다.
 A *서비스 참조* 액세스 하나 이상의 프로젝트를 사용 하면 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]합니다. 사용 합니다 **서비스 참조 추가** 대화 상자를 검색할 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 로컬 영역 네트워크에 로컬에서 또는 인터넷에 현재 솔루션에서.
@@ -55,21 +55,21 @@ A *서비스 참조* 액세스 하나 이상의 프로젝트를 사용 하면 [!
 
 ### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>현재 솔루션에는 서비스에 대 한 참조를 추가 하려면
 
-1.  **솔루션 탐색기**, 서비스를 추가 하 고 클릭 한 다음 원하는 프로젝트 이름을 마우스 오른쪽 단추로 클릭 **서비스 참조 추가**합니다.
+1. **솔루션 탐색기**, 서비스를 추가 하 고 클릭 한 다음 원하는 프로젝트 이름을 마우스 오른쪽 단추로 클릭 **서비스 참조 추가**합니다.
 
-     합니다 **서비스 참조 추가** 대화 상자가 나타납니다.
+    합니다 **서비스 참조 추가** 대화 상자가 나타납니다.
 
-2.  클릭 **검색**합니다.
+2. 클릭 **검색**합니다.
 
-     모든 서비스 (둘 다 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 및 WCF 서비스) 현재 솔루션에 추가 합니다 **Services** 목록입니다.
+    모든 서비스 (둘 다 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 및 WCF 서비스) 현재 솔루션에 추가 합니다 **Services** 목록입니다.
 
-3.  에 **Services** 목록에서 사용 하 고 엔터티 집합을 선택 하려는 서비스에 대 한 노드를 확장 합니다.
+3. 에 **Services** 목록에서 사용 하 고 엔터티 집합을 선택 하려는 서비스에 대 한 노드를 확장 합니다.
 
-4.  에 **Namespace** 상자, 참조에 사용 하려는 네임 스페이스를 입력 합니다.
+4. 에 **Namespace** 상자, 참조에 사용 하려는 네임 스페이스를 입력 합니다.
 
-5.  클릭 **확인** 프로젝트에 대 한 참조를 추가 합니다.
+5. 클릭 **확인** 프로젝트에 대 한 참조를 추가 합니다.
 
-     서비스 클라이언트 (프록시)를 생성 하 고 서비스를 설명 하는 메타 데이터에 추가 되는 *app.config* 파일입니다.
+    서비스 클라이언트 (프록시)를 생성 하 고 서비스를 설명 하는 메타 데이터에 추가 되는 *app.config* 파일입니다.
 
 ## <a name="update-a-service-reference"></a>서비스 참조 업데이트
  엔터티 데이터 모델을 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 경우가 변경 합니다. 이 경우 서비스 참조를 업데이트 해야 합니다.

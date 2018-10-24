@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842642"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Visual Studio에서 디버깅 세션 탐색(XAML 및 C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ ms.locfileid: "49306308"
   
  코드 줄을 한 단계씩 코드 실행하면 디버거가 다음 작업 중 하나를 수행합니다.  
   
--   다음 문이 솔루션의 함수를 호출하지 않을 경우 디버거는 문을 실행하고 다음 문으로 이동한 후 실행을 일시 중단합니다.  
+- 다음 문이 솔루션의 함수를 호출하지 않을 경우 디버거는 문을 실행하고 다음 문으로 이동한 후 실행을 일시 중단합니다.  
   
--   문이 솔루션의 함수를 호출할 경우 디버거는 호출된 함수의 진입점으로 이동한 후 실행을 일시 중단합니다.  
+- 문이 솔루션의 함수를 호출할 경우 디버거는 호출된 함수의 진입점으로 이동한 후 실행을 일시 중단합니다.  
   
- 끝내기 점에 도달할 때까지 Example1 문의 한 단계씩 코드 실행을 계속합니다. 디버거는 메서드의 닫는 중괄호를 강조 표시합니다.  
+  끝내기 점에 도달할 때까지 Example1 문의 한 단계씩 코드 실행을 계속합니다. 디버거는 메서드의 닫는 중괄호를 강조 표시합니다.  
   
- **데이터 팁에서 변수 값을 검사합니다.** 변수 이름 위로 마우스를 이동하면 변수의 이름, 값 및 형식이 데이터 팁에 표시됩니다.  
+  **데이터 팁에서 변수 값을 검사합니다.** 변수 이름 위로 마우스를 이동하면 변수의 이름, 값 및 형식이 데이터 팁에 표시됩니다.  
   
- ![디버거 데이터 팁](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![디버거 데이터 팁](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- 변수 `a`위로 마우스를 이동합니다. 이름, 값 및 데이터 형식을 확인합니다. 변수 `methodTrack`위로 마우스를 이동합니다. 이름, 값 및 데이터 형식을 다시 확인합니다.  
+  변수 `a`위로 마우스를 이동합니다. 이름, 값 및 데이터 형식을 확인합니다. 변수 `methodTrack`위로 마우스를 이동합니다. 이름, 값 및 데이터 형식을 다시 확인합니다.  
   
- **지역 창에서 변수 값을 검사합니다.** On the **디버깅 시작** 메뉴에서 **창**을 가리킨 다음 **지역**를 선택합니다. (키보드: Alt + 4).  
+  **지역 창에서 변수 값을 검사합니다.** On the **디버깅 시작** 메뉴에서 **창**을 가리킨 다음 **지역**를 선택합니다. (키보드: Alt + 4).  
   
- ![지역 창](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![지역 창](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- 지역 창은 함수의 매개 변수 및 변수의 트리 뷰입니다. 개체 변수의 속성은 개체 자체의 자식 노드입니다. `this` 변수는 모든 개체 메서드에서 개체 자체를 나타내는 숨겨진 매개 변수입니다. 이 경우는 MainPage 클래스를 나타냅니다. `methodTrack` 은 MainPage 클래스의 멤버이므로 해당 값 및 데이터 형식이 `this`아래의 줄에 나열됩니다. `this` 노드를 확장하여 `methodTrack` 정보를 확인합니다.  
+  지역 창은 함수의 매개 변수 및 변수의 트리 뷰입니다. 개체 변수의 속성은 개체 자체의 자식 노드입니다. `this` 변수는 모든 개체 메서드에서 개체 자체를 나타내는 숨겨진 매개 변수입니다. 이 경우는 MainPage 클래스를 나타냅니다. `methodTrack` 은 MainPage 클래스의 멤버이므로 해당 값 및 데이터 형식이 `this`아래의 줄에 나열됩니다. `this` 노드를 확장하여 `methodTrack` 정보를 확인합니다.  
   
- **methodTrack 변수에 대한 조사식을 추가합니다.** `methodWatch` 변수는 이 빠른 시작 전체에서 예제에서 호출된 메서드를 표시하는 데 사용됩니다. 변수의 값을 더 쉽게 확인하려면 조사식 창에 추가합니다. 지역 창에서 변수 이름을 마우스 오른쪽 단추로 클릭한 다음 **조사식 추가**를 선택합니다.  
+  **methodTrack 변수에 대한 조사식을 추가합니다.** `methodWatch` 변수는 이 빠른 시작 전체에서 예제에서 호출된 메서드를 표시하는 데 사용됩니다. 변수의 값을 더 쉽게 확인하려면 조사식 창에 추가합니다. 지역 창에서 변수 이름을 마우스 오른쪽 단추로 클릭한 다음 **조사식 추가**를 선택합니다.  
   
- ![조사식 창](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![조사식 창](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- 조사식 창에서 여러 변수를 조사할 수 있습니다. 지역 창 및 데이터 팁 창의 값과 같이 조사 변수의 값은 실행이 일시 중단될 때마다 업데이트됩니다. 코드 편집기에서 조사식 창에 변수를 추가할 수도 있습니다. 조사할 변수를 선택하고 마우스 오른쪽 단추로 클릭한 다음 **조사식 추가**를 선택합니다.  
+  조사식 창에서 여러 변수를 조사할 수 있습니다. 지역 창 및 데이터 팁 창의 값과 같이 조사 변수의 값은 실행이 일시 중단될 때마다 업데이트됩니다. 코드 편집기에서 조사식 창에 변수를 추가할 수도 있습니다. 조사할 변수를 선택하고 마우스 오른쪽 단추로 클릭한 다음 **조사식 추가**를 선택합니다.  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> 한 단계씩 코드 실행, 프로시저 단위 실행 및 메서드 프로시저 나가기  
  부모 메서드에 의해 호출된 메서드를 한 단계씩 코드 실행하는 것과 달리 메서드를 프로시저 단위로 실행하면 자식 메서드가 실행된 다음 부모가 다시 시작될 때 메서드 호출에서 실행이 일시 중단됩니다. 메서드 작동 방식을 잘 알고 있고 메서드 실행이 조사하고 있는 문제에 영향을 주지 않을 것을 확신하는 경우 메서드를 프로시저 단위로 실행할 수 있습니다.  

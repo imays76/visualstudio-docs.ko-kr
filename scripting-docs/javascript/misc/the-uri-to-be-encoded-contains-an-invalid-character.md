@@ -1,5 +1,5 @@
 ---
-title: 인코딩할 URI에 잘못 된 문자가 | Microsoft Docs
+title: 인코딩할 URI에 잘못 된 문자가 | Microsoft 문서
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e93d145ea6b0991123c2a7c80f8acf54a83a264
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832176"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>인코딩될 URI에 잘못된 문자가 있습니다.
-문자열 URI (Uniform Resource Identifier)로 인코딩하 하려고 했지만 잘못 된 문자를 포함 합니다. 대부분의 문자 Uri에 변환 된 문자열 내 유효 하지만, 일부 유니코드 문자 시퀀스를 사용할 수 없습니다.  
+문자열로 URI (일정 한 리소스 식별자)로 인코딩 하려고 하지만 잘못 된 문자가 포함 되어 있어. 대부분의 문자는 Uri로 변환 된 문자열 내에 유효한, 일부 유니코드 문자 시퀀스를 사용할 수 없습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   인코딩할 문자열에 유효한 유니코드 시퀀스를 확인 합니다. 구성 요소 및 구분 기호 시퀀스는 전체 URI로 구성 됩니다. 꺾쇠 괄호의 이름은 구성 요소를 나타내며 및 ":", "/", ";" 및 "?"는 예약 된 문자를 구분 기호로 사용 합니다. 일반 형식은 다음과 같습니다.  
+-   인코딩될 문자열에 올바른 유니코드 문자열만 있는지 확인 합니다. 완전 한 URI 구성 요소 및 구분 기호 구성 됩니다. 꺾쇠 괄호의 이름은 구성 요소를 나타내며와 ":", "/", ";" 및 "?" 예약 된 문자를 구분 기호로 사용 됩니다. 일반 형식은 다음과 같습니다.  
   
     ```JavaScript  
     <Scheme>:<first>/<second>;<third>?<fourth>  

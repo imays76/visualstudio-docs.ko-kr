@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19e57f9cebf6e9a8086f736735527fb647544228
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833761"
 ---
 # <a name="just-my-code"></a>내 코드만
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +52,13 @@ ms.locfileid: "49273938"
   
  다음 세 가지 특성도 디버거에서 내 코드로 간주되는 항목에 영향을 줍니다.  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute>가 적용된 코드는 내 코드가 아님을 디버거에 알립니다.  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute>가 적용된 코드는 내 코드가 아님을 디버거에 알립니다.  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute>가 적용된 코드는 내 코드만 옵션을 해제했더라도 디버거에서 숨겨집니다.  
+- <xref:System.Diagnostics.DebuggerHiddenAttribute>가 적용된 코드는 내 코드만 옵션을 해제했더라도 디버거에서 숨겨집니다.  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute>가 적용된 코드는 디버거에서 한 단계씩 실행되지 않고 단계별로 실행됩니다.  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute>가 적용된 코드는 디버거에서 한 단계씩 실행되지 않고 단계별로 실행됩니다.  
   
- 다른 모든 코드는 사용자 코드로 간주됩니다.  
+  다른 모든 코드는 사용자 코드로 간주됩니다.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> 단계별 실행 동작  
  경우 있습니다 **단계씩** (바로 가기 키: F11) 사용자 코드가 아닌, 사용자의 다음 문으로 코드 디버거 단계입니다. 경우 있습니다 **프로시저 나가기** (키보드: shift+f11), 디버거가 사용자 코드의 다음 줄을 실행 합니다. 사용자 코드가 없는 경우 앱이 종료되거나, 중단점이 적중되거나, 예외가 발생할 때까지 실행이 계속됩니다.  
@@ -80,17 +80,17 @@ ms.locfileid: "49273938"
   
  기본적으로 디버거는 호출 스택 창에서 다음 함수를 사용자가 작성하지 않은 코드로 간주합니다.  
   
--   기호 파일에서 소스 정보가 제거된 함수  
+- 기호 파일에서 소스 정보가 제거된 함수  
   
--   기호 파일에서 스택 프레임에 해당하는 소스 파일이 없음을 나타내는 함수  
+- 기호 파일에서 스택 프레임에 해당하는 소스 파일이 없음을 나타내는 함수  
   
--   `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 폴더의 `*.natjmc` 파일에 지정된 함수  
+- `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 폴더의 `*.natjmc` 파일에 지정된 함수  
   
- **단계별 실행**  
+  **단계별 실행**  
   
- 기본적으로 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 폴더의 `*.natstepfilter` 파일에 지정된 함수만 사용자가 작성하지 않은 코드로 간주됩니다.  
+  기본적으로 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 폴더의 `*.natstepfilter` 파일에 지정된 함수만 사용자가 작성하지 않은 코드로 간주됩니다.  
   
- 고유한 `.natstepfilter` 및 `.natjmc`를 만들어 `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`의 단계별 실행 및 호출 스택 창 동작을 사용자 지정할 수 있습니다.  
+  고유한 `.natstepfilter` 및 `.natjmc`를 만들어 `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`의 단계별 실행 및 호출 스택 창 동작을 사용자 지정할 수 있습니다.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> 단계별 실행 동작  
  경우 있습니다 **단계씩** (바로 가기 키: F11) 사용자 코드에서 비 사용자 코드, 사용자 코드의 다음 줄으로 코드 디버거 단계. 경우 있습니다 **프로시저 나가기** (키보드: shift+f11), 디버거가 사용자 코드의 다음 줄을 실행 합니다. 사용자 코드가 없는 경우 앱이 종료되거나, 중단점이 적중되거나, 예외가 발생할 때까지 실행이 계속됩니다.  
@@ -103,11 +103,11 @@ ms.locfileid: "49273938"
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> 단계별 실행 동작을 사용자 지정  
  `*.natstepfilter` 파일에 사용자가 작성하지 않은 코드로 나열하여 프로시저 단위로 실행할 함수를 지정할 수 있습니다.  
   
--   Visual Studio 컴퓨터의 모든 사용자에 대 한 비 사용자 코드를 지정 하려면.natstepfilter 파일을 추가 합니다 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 폴더입니다.  
+- Visual Studio 컴퓨터의 모든 사용자에 대 한 비 사용자 코드를 지정 하려면.natstepfilter 파일을 추가 합니다 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 폴더입니다.  
   
--   개별 사용자에 대 한 비 사용자 코드를 지정 하려면.natstepfilter 파일을 추가 합니다 `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` 폴더입니다.  
+- 개별 사용자에 대 한 비 사용자 코드를 지정 하려면.natstepfilter 파일을 추가 합니다 `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` 폴더입니다.  
   
- .natstepfilter 파일은이 구문 사용 하 여 xml 파일:  
+  .natstepfilter 파일은이 구문 사용 하 여 xml 파일:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -135,11 +135,11 @@ ms.locfileid: "49273938"
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 호출 스택 동작 사용자 지정  
  `*.natjmc` 파일에 지정하여 호출 스택에서 사용자가 작성하지 않은 코드로 처리할 모듈, 소스 파일 및 함수를 지정할 수 있습니다.  
   
--   Visual Studio 컴퓨터의 모든 사용자에 대 한 비 사용자 코드를 지정 하려면.natjmc 파일을 추가 합니다 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 폴더입니다.  
+- Visual Studio 컴퓨터의 모든 사용자에 대 한 비 사용자 코드를 지정 하려면.natjmc 파일을 추가 합니다 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 폴더입니다.  
   
--   개별 사용자에 대 한 비 사용자 코드를 지정 하려면.natjmc 파일을 추가 합니다 `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` 폴더입니다.  
+- 개별 사용자에 대 한 비 사용자 코드를 지정 하려면.natjmc 파일을 추가 합니다 `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` 폴더입니다.  
   
- .natjmc 파일은이 구문 사용 하 여 xml 파일:  
+  .natjmc 파일은이 구문 사용 하 여 xml 파일:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -197,19 +197,19 @@ ms.locfileid: "49273938"
   
  JavaScript 디버거는 이러한 유형의 코드를 자동으로 분류합니다.  
   
--   호스트에서 제공 하는 문자열을 전달 하 여 실행 되는 스크립트 `eval` 함수는 기밀로 **MyCode**합니다.  
+- 호스트에서 제공 하는 문자열을 전달 하 여 실행 되는 스크립트 `eval` 함수는 기밀로 **MyCode**합니다.  
   
--   문자열을 전달 하 여 실행 되는 스크립트를 `Function` 생성자로 분류 됩니다 **LibraryCode**합니다.  
+- 문자열을 전달 하 여 실행 되는 스크립트를 `Function` 생성자로 분류 됩니다 **LibraryCode**합니다.  
   
--   WinJS 또는 Azure SDK와 같은 프레임 워크 참조에 포함 된 스크립트는 기밀로 **LibraryCode**합니다.  
+- WinJS 또는 Azure SDK와 같은 프레임 워크 참조에 포함 된 스크립트는 기밀로 **LibraryCode**합니다.  
   
--   문자열을 전달 하 여 실행 되는 스크립트를 `setTimeout`, `setImmediate`, 또는 `setInterval` 기능으로 분류 됩니다 **UnrelatedCode**합니다.  
+- 문자열을 전달 하 여 실행 되는 스크립트를 `setTimeout`, `setImmediate`, 또는 `setInterval` 기능으로 분류 됩니다 **UnrelatedCode**합니다.  
   
--   `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json`은 모든 Visual Studio JavaScript 프로젝트에 대해 기타 사용자 코드 및 사용자가 작성하지 않은 코드를 지정합니다.  
+- `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json`은 모든 Visual Studio JavaScript 프로젝트에 대해 기타 사용자 코드 및 사용자가 작성하지 않은 코드를 지정합니다.  
   
- 프로젝트의 루트 폴더에 `mycode.json`이라는 .json 파일을 추가하여 기본 분류를 수정하고 특정 파일 및 URL을 분류할 수 있습니다.  
+  프로젝트의 루트 폴더에 `mycode.json`이라는 .json 파일을 추가하여 기본 분류를 수정하고 특정 파일 및 URL을 분류할 수 있습니다.  
   
- 다른 모든 코드는 기밀로 **MyCode**합니다.  
+  다른 모든 코드는 기밀로 **MyCode**합니다.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> 단계별 실행 동작  
   
@@ -234,30 +234,30 @@ ms.locfileid: "49273938"
 ###  <a name="BKMK_JS_Exception_behavior"></a> 예외 동작  
  처리되지 않는 예외가  
   
--   **MyCode** 나 **LibraryCode** 코드 디버거가 항상 중단 합니다.  
+- **MyCode** 나 **LibraryCode** 코드 디버거가 항상 중단 합니다.  
   
--   **UnrelatedCode** 코드 및 **MyCode** 하거나 **LibraryCode** 코드는 호출 스택에서 디버거가 중단 합니다.  
+- **UnrelatedCode** 코드 및 **MyCode** 하거나 **LibraryCode** 코드는 호출 스택에서 디버거가 중단 합니다.  
   
- 예외 대화 상자에서 예외에 대해 첫째 예외가 사용 되 고 예외가 throw 됩니다 **LibraryCode** 하거나 **UnrelatedCode** 코드:  
+  예외 대화 상자에서 예외에 대해 첫째 예외가 사용 되 고 예외가 throw 됩니다 **LibraryCode** 하거나 **UnrelatedCode** 코드:  
   
--   예외가 처리되었으면 디버거가 중단되지 않습니다.  
+- 예외가 처리되었으면 디버거가 중단되지 않습니다.  
   
--   예외가 처리되지 않았으면 디버거가 중단됩니다.  
+- 예외가 처리되지 않았으면 디버거가 중단됩니다.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> 내 코드만 사용자 지정  
  단일 Visual Studio 프로젝트에 대해 사용자 코드 및 사용자가 작성하지 않은 코드를 분류하려면 프로젝트의 루트 폴더에 `mycode.json`이라는 .json 파일을 추가합니다.  
   
  분류는 다음 순서대로 수행됩니다.  
   
-1.  기본 분류  
+1. 기본 분류  
   
-2.  `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 파일 분류  
+2. `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 파일 분류  
   
-3.  현재 프로젝트의 `mycode. json` 파일 분류  
+3. 현재 프로젝트의 `mycode. json` 파일 분류  
   
- 각 분류 단계는 이전 단계를 재정의합니다. 모든 키 값 쌍을 나열 하지 않아도.json 파일 및 **MyCode**를 **라이브러리**, 및 **Unrelated** 값에 빈 배열 될 수 있습니다.  
+   각 분류 단계는 이전 단계를 재정의합니다. 모든 키 값 쌍을 나열 하지 않아도.json 파일 및 **MyCode**를 **라이브러리**, 및 **Unrelated** 값에 빈 배열 될 수 있습니다.  
   
- 내 코드 .json 파일은 다음 구문을 사용합니다.  
+   내 코드 .json 파일은 다음 구문을 사용합니다.  
   
 ```json  
 {  
@@ -295,15 +295,15 @@ ms.locfileid: "49273938"
   
  다음 키워드 중 하나로 값을 변경할 수 있습니다.  
   
--   `MyCode`  스크립트를 분류 **MyCode**합니다.  
+- `MyCode`  스크립트를 분류 **MyCode**합니다.  
   
--   `Library`  스크립트를 분류 **LibraryCode**합니다.  
+- `Library`  스크립트를 분류 **LibraryCode**합니다.  
   
--   `Unrelated`  스크립트를 분류 **UnrelatedCode**합니다.  
+- `Unrelated`  스크립트를 분류 **UnrelatedCode**합니다.  
   
- **MyCode, Libraries 및 Unrelated**  
+  **MyCode, Libraries 및 Unrelated**  
   
- 합니다 **MyCode**를 **라이브러리**, 및 **Unrelated** url 또는 파일 분류에 포함 하려는 키/값 쌍 지정:  
+  합니다 **MyCode**를 **라이브러리**, 및 **Unrelated** url 또는 파일 분류에 포함 하려는 키/값 쌍 지정:  
   
 |||  
 |-|-|  

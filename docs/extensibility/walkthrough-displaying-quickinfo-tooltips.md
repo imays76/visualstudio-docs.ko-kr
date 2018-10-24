@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824189"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>연습: 표시 QuickInfo 도구 설명 표시
 요약 정보 기능은 IntelliSense 메서드 시그니처를 표시 하는 메서드 이름 위로 포인터를 이동 하는 경우 사용자 설명 하며 QuickInfo 설명을 제공 하려면 식별자를 정의 하 고 콘텐츠를 표시 하는 도구 설명을 만드는 QuickInfo 같은 언어 기반 기능을 구현할 수 있습니다. 언어 서비스의 컨텍스트에서 QuickInfo를 정의할 수 있습니다 또는 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 바로 해당 형식에 대 한 요약 정보를 표시할 수 있습니다 또는 기존 콘텐츠 형식 (예: "text")에 대 한 요약 정보를 표시할 수 있습니다. 이 연습에서는 "text" 콘텐츠 형식에 대 한 요약 정보를 표시 하는 방법을 보여 줍니다.  
   
  이 연습의 QuickInfo 예제 메서드 이름을 위로 포인터를 이동할 때 도구 설명을 표시 합니다. 이 디자인에서는 이러한 네 가지 인터페이스를 구현 해야 합니다.  
   
--   소스 인터페이스  
+- 소스 인터페이스  
   
--   원본 공급자 인터페이스  
+- 원본 공급자 인터페이스  
   
--   컨트롤러 인터페이스  
+- 컨트롤러 인터페이스  
   
--   컨트롤러 공급자 인터페이스  
+- 컨트롤러 공급자 인터페이스  
   
- 원본 및 컨트롤러 공급자 Framework MEF (Managed Extensibility) 구성 요소 부분으로 된 원본 및 컨트롤러 클래스 내보내기에 대 한 책임이 고 가져오기 서비스 broker와 같은 <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, 도구 설명 텍스트를 만듭니다 버퍼 및 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, 작업을 트리거하는 QuickInfo 세션입니다.  
+  원본 및 컨트롤러 공급자 Framework MEF (Managed Extensibility) 구성 요소 부분으로 된 원본 및 컨트롤러 클래스 내보내기에 대 한 책임이 고 가져오기 서비스 broker와 같은 <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, 도구 설명 텍스트를 만듭니다 버퍼 및 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, 작업을 트리거하는 QuickInfo 세션입니다.  
   
- 이 예제에서는 QuickInfo 원본 목록을 사용 하 여 하드 코드 된 메서드 이름 및 설명 하지만 전체 구현 언어 서비스 및 언어 설명서에는 해당 콘텐츠를 제공 하는 일을 담당 합니다.  
+  이 예제에서는 QuickInfo 원본 목록을 사용 하 여 하드 코드 된 메서드 이름 및 설명 하지만 전체 구현 언어 서비스 및 언어 설명서에는 해당 콘텐츠를 제공 하는 일을 담당 합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  Visual Studio 2015부터 다운로드 센터에서 Visual Studio SDK를 설치할 필요가 없습니다. Visual Studio 설치에서 선택적 기능으로 포함 되어 있습니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
@@ -44,7 +44,7 @@ ms.locfileid: "39500032"
   
 ### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `QuickInfoTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `QuickInfoTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -55,7 +55,7 @@ ms.locfileid: "39500032"
   
 #### <a name="to-implement-the-quickinfo-source"></a>QuickInfo 소스를 구현 하려면  
   
-1.  클래스 파일을 추가 하 고 이름을 `TestQuickInfoSource`입니다.  
+1.  클래스 파일을 추가하고 이름을 `TestQuickInfoSource`로 지정합니다.  
   
 2.  에 대 한 참조를 추가 *Microsoft.VisualStudio.Language.IntelliSense*합니다.  
   
@@ -154,7 +154,7 @@ ms.locfileid: "39500032"
      [!code-vb[VSSDKQuickInfoTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)]
      [!code-csharp[VSSDKQuickInfoTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]  
   
-2.  가져오기는 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> 속성으로.  
+2.  <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>를 속성으로 가져옵니다.  
   
      [!code-vb[VSSDKQuickInfoTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)]
      [!code-csharp[VSSDKQuickInfoTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]  

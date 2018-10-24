@@ -15,12 +15,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: da8a33d454b5c406e43fa04157ae154a709cfe1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834060"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ ms.locfileid: "49253171"
   
 > [!TIP]
 >  정확한 결과를 얻으려면  
->   
->  -   컴파일러 최적화가 해제되었는지 확인하세요.  
->   
->      관리되지 않은(네이티브) 코드를 사용하는 경우 디버그 빌드를 사용합니다.  
-> -   각 어셈블리에 대해 .pdb(기호) 파일을 생성하고 있는지 확인합니다.  
->   
->  예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. . 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.  
+> 
+> - 컴파일러 최적화가 해제되었는지 확인하세요.  
+> 
+>   관리되지 않은(네이티브) 코드를 사용하는 경우 디버그 빌드를 사용합니다.  
+>   -   각 어셈블리에 대해 .pdb(기호) 파일을 생성하고 있는지 확인합니다.  
+> 
+>   예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. . 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.  
   
 ## <a name="reporting-in-blocks-or-lines"></a>블록 또는 줄에 보고  
  코드 검사는 *블록*으로 계산됩니다. 블록은 진입점 및 진출점이 정확히 하나씩인 코드입니다.  테스트 실행 중 프로그램의 제어 흐름이 블록을 통과할 경우 해당 블록은 검사된 것으로 계산됩니다. 블록이 사용된 횟수는 결과에 영향을 아무 영향을 미치지 않습니다.  
@@ -255,19 +255,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>빌드 서비스에서 코드 검사 분석  
  코드에 체크 인하면 테스트가 다른 팀원의 나머지 모든 테스트와 함께 빌드 서버에서 실행됩니다. (아직 설정하지 않은 경우 [빌드 프로세스에서 테스트 실행](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)을 참조하세요.) 빌드 서비스에서 코드 검사를 분석하면 전체 프로젝트에 대한 최신 검사 정보를 전체적으로 파악할 수 있습니다. 또한 일반적으로 개발 컴퓨터에서 실행하지 않는 자동화된 시스템 테스트와 기타 코딩된 테스트도 포함됩니다.  
   
-1.  팀 탐색기에서 **빌드**를 연 다음 빌드 정의를 추가하거나 편집합니다.  
+1. 팀 탐색기에서 **빌드**를 연 다음 빌드 정의를 추가하거나 편집합니다.  
   
-2.  **프로세스** 페이지에서 **자동화된 테스트**, **테스트 소스**, **실행 설정**을 확장합니다. **실행 설정 파일 형식**을 **코드 검사 사용**으로 설정합니다.  
+2. **프로세스** 페이지에서 **자동화된 테스트**, **테스트 소스**, **실행 설정**을 확장합니다. **실행 설정 파일 형식**을 **코드 검사 사용**으로 설정합니다.  
   
-     테스트 소스 정의가 두 개 이상일 경우 각각에 대해 이 단계를 반복합니다.  
+    테스트 소스 정의가 두 개 이상일 경우 각각에 대해 이 단계를 반복합니다.  
   
-    -   *하지만 **실행 설정 파일 형식**이라는 필드는 없습니다.*  
+   - <em>라는 이름의 필드가 이지만 **실행 설정 파일 형식</em>*. *  
   
-         **자동화된 테스트**에서 **테스트 어셈블리**를 선택한 다음 줄임표 단추 **[...]** 를 선택합니다. **테스트 실행 추가/편집** 대화 상자의 **Test Runner**에서 **Visual Studio Test Runner**를 선택합니다.  
+      **자동화된 테스트**에서 **테스트 어셈블리**를 선택한 다음 줄임표 단추 **[...]** 를 선택합니다. **테스트 실행 추가/편집** 대화 상자의 **Test Runner**에서 **Visual Studio Test Runner**를 선택합니다.  
   
- ![코드 검사를 위한 빌드 정의 설정 중](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
+   ![코드 검사를 위한 빌드 정의 설정 중](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
   
- 빌드 실행 후 코드 검사 결과가 테스트 실행에 첨부되고 빌드 요약에 나타납니다.  
+   빌드 실행 후 코드 검사 결과가 테스트 실행에 첨부되고 빌드 요약에 나타납니다.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>명령줄에서 코드 검사 분석  
  명령줄에서 테스트를 실행하려면 vstest.console.exe를 사용합니다. 코드 검사는 이 유틸리티의 선택 사항입니다. 자세한 내용은 [MSTest.exe 명령줄 옵션](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)을 참조하세요.  

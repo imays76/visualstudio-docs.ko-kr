@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebda8f3e5b92089900bf8ce2d41b7d5046533895
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3955905252b2293d3c200640ea33d5c23c8fd208
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844460"
 ---
 # <a name="sccget-function"></a>SccGet 함수
 이 함수는 하나 이상의 파일 보기 및 컴파일하기 위한 아니라 편집의 복사본을 검색 합니다. 대부분의 시스템에서 파일 읽기 전용으로 태그가 지정 됩니다.  
