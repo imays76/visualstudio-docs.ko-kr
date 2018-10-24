@@ -17,12 +17,12 @@ ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a89eb4a770371d19e0c7b422fcac2a08d142f731
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c91f0ee5df47f2bb57ecd3c5faece13fb17384f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912294"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ IDebugProcessEx2 : IUnknown
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
  동일한 개체에서이 인터페이스를 구현 하는 사용자 지정 포트 공급자는 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 를 순서 대로 인터페이스:  
   
--   프로세스에 연결 된 세션 추적 지원  
+- 프로세스에 연결 된 세션 추적 지원  
   
--   지원 자동 연결에서 여러 디버그 엔진  
+- 지원 자동 연결에서 여러 디버그 엔진  
   
- 사용자 지정 포트 공급자 선택 하는 경우이 인터페이스를 구현할 수 있습니다.  
+  사용자 지정 포트 공급자 선택 하는 경우이 인터페이스를 구현할 수 있습니다.  
   
 ## <a name="notes-for-callers"></a>호출자에 대 한 정보  
   

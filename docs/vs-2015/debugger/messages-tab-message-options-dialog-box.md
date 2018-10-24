@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912268"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>메시지 옵션 대화 상자, 메시지 탭
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ ms.locfileid: "49298547"
  **메시지 그룹**  
  보기에 대 한 메시지 그룹을 선택 합니다. 가용성 그룹에는 다음이 포함 됩니다.  
   
--   WM_USER: 코드로 WM_USER 보다 크거나 같은 경우  
+- WM_USER: 코드로 WM_USER 보다 크거나 같은 경우  
   
--   등록: 등록 합니다 **RegisterWindowMessage** 호출  
+- 등록: 등록 합니다 **RegisterWindowMessage** 호출  
   
--   알 수 없음: 0 (WM_USER – 1)과 범위에서 알 수 없는 메시지  
+- 알 수 없음: 0 (WM_USER – 1)과 범위에서 알 수 없는 메시지  
   
- 이러한 **메시지 그룹** 아래에 있는 특정 항목에 매핑하지 **표시할 메시지**합니다. 그룹을 선택 하면 선택한 메시지 스트림에 직접 적용 됩니다.  
+  이러한 **메시지 그룹** 아래에 있는 특정 항목에 매핑하지 **표시할 메시지**합니다. 그룹을 선택 하면 선택한 메시지 스트림에 직접 적용 됩니다.  
   
- 내에서 확인란을 회색으로 표시 **메시지 그룹** 나타내는 **표시할 메시지** 목록 상자에 해당 그룹의 메시지에 대해 수정한; 해당 그룹의 메시지 유형 중 일부만 선택 됩니다.  
+  내에서 확인란을 회색으로 표시 **메시지 그룹** 나타내는 **표시할 메시지** 목록 상자에 해당 그룹의 메시지에 대해 수정한; 해당 그룹의 메시지 유형 중 일부만 선택 됩니다.  
   
- **설정을 기본값으로 저장**  
- 메시지 검색 옵션으로 나중에 사용에 대 한 현재 설정을 저장 합니다. Spy + +를 종료 하는 경우에 이러한 설정은 저장 됩니다.
+  **설정을 기본값으로 저장**  
+  메시지 검색 옵션으로 나중에 사용에 대 한 현재 설정을 저장 합니다. Spy + +를 종료 하는 경우에 이러한 설정은 저장 됩니다.
 
 
 

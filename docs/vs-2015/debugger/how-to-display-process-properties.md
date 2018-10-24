@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6816aed50bd7d03338508856472f893b441842e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a9c5f368cef94bdc270d678a25f0ec0d94052b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912879"
 ---
 # <a name="how-to-display-process-properties"></a>방법: 프로세스 속성 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "49296077"
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>프로세스 속성 대화 상자를 열려면  
   
-1.  프로세스에 표시 된 트리에서 선택 **프로세스 뷰**합니다.  
+1. 프로세스에 표시 된 트리에서 선택 **프로세스 뷰**합니다.  
   
-2.  **뷰** 메뉴 선택 **속성**합니다.  
+2. **뷰** 메뉴 선택 **속성**합니다.  
   
- 속성 대화 상자는 아니므로 모달 보기 창에서 다른 항목을 클릭할 수 있습니다 및 대화 상자에서 선택한 항목 정보가 표시 됩니다.
+   속성 대화 상자는 아니므로 모달 보기 창에서 다른 항목을 클릭할 수 있습니다 및 대화 상자에서 선택한 항목 정보가 표시 됩니다.
 
 
 

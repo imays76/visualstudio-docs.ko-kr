@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70766aef19c199a191f141947f1b5a458450c322
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7192483b4f2ce88235fc5e8d48f1d51ef71b442f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913009"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 식의 구문을 분석 하는 방법을 지정 합니다.  
@@ -49,13 +49,13 @@ public enum enum_PARSEFLAGS {
  식 문 임을 나타냅니다.  
   
  PARSE_FUNCTION_AS_ADDRESS  
- 식을 구문 분석 (하 고 나중에 평가) 주소로 임을 나타냅니다.  
+ 식을 구문 분석 (하 고 나중에 평가)는 주소로 임을 나타냅니다.  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
  식이 디자인 타임 동안 구문 분석 되는 나타냅니다 (즉, 디자이너를 열 때).  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 매개 변수로 전달 되는 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 및 [구문 분석](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 메서드.  
+ 매개 변수로 전달 합니다 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 하 고 [구문 분석](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

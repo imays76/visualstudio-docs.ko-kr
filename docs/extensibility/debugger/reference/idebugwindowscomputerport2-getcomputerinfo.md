@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9dff1b64cafa6a212600cd467b86f8ddca83337
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e222eda1553e5fc608f1d34ab34d27da97cd650
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912957"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
-에 있는 컴퓨터에 대 한 정보를 검색 디버거 실행에서 합니다.  
+컴퓨터에 대 한 정보를 검색 디버거의 실행 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,10 +40,10 @@ public int GetComputerInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `pInfo`  
- [out] 컴퓨터 정보를 포함 하는 구조에 대 한 참조입니다.  
+ [out] 컴퓨터 정보가 포함 된 구조에 대 한 참조입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)   

@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912034"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ ms.locfileid: "49193559"
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>시작 프로젝트 및 해당 종속성만 빌드하려면  
   
-1.  메뉴 모음에서 **도구**, **옵션**을 선택합니다.  
+1. 메뉴 모음에서 **도구**, **옵션**을 선택합니다.  
   
-2.  **옵션** 대화 상자에서 **프로젝트 및 솔루션** 노드를 확장하고 **빌드 및 실행** 페이지를 선택합니다.  
+2. **옵션** 대화 상자에서 **프로젝트 및 솔루션** 노드를 확장하고 **빌드 및 실행** 페이지를 선택합니다.  
   
-     **옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행**이 열립니다.  
+    **옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행**이 열립니다.  
   
-3.  **실행할 때 시작 프로젝트와 종속성만 빌드** 확인란을 선택합니다.  
+3. **실행할 때 시작 프로젝트와 종속성만 빌드** 확인란을 선택합니다.  
   
-     이 확인란을 선택하면 다음 단계 중 하나를 수행할 때 현재 시작 프로젝트와 해당 종속성만 빌드됩니다.  
+    이 확인란을 선택하면 다음 단계 중 하나를 수행할 때 현재 시작 프로젝트와 해당 종속성만 빌드됩니다.  
   
-    -   메뉴 모음에서 **디버그**, **시작**(F5)을 선택합니다.  
+   - 메뉴 모음에서 **디버그**, **시작**(F5)을 선택합니다.  
   
-    -   메뉴 모음에서 **빌드**, **솔루션 빌드**(Ctrl+Shift+B)를 선택합니다.  
+   - 메뉴 모음에서 **빌드**, **솔루션 빌드**(Ctrl+Shift+B)를 선택합니다.  
   
      이 확인란의 선택을 취소하면 이전 명령 중 하나를 실행할 때 모든 프로젝트, 해당 종속성 및 솔루션 파일이 빌드됩니다. 이 확인란은 기본적으로 선택되어 있지 않습니다.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>선택한 Visual C++ 프로젝트만 빌드하려면  
   
-1.  [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 프로젝트를 선택한 다음 메뉴 모음에서 **빌드**, **프로젝트만**, 다음 명령 중 하나를 차례로 선택합니다.  
+1. [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 프로젝트를 선택한 다음 메뉴 모음에서 **빌드**, **프로젝트만**, 다음 명령 중 하나를 차례로 선택합니다.  
   
-    -   *ProjectName***만 빌드**  
+   - *ProjectName***만 빌드**  
   
-    -   *ProjectName***만 다시 빌드**  
+   - *ProjectName***만 다시 빌드**  
   
-    -   *ProjectName***만 정리**  
+   - *ProjectName***만 정리**  
   
-    -   *ProjectName***만 링크**  
+   - *ProjectName***만 링크**  
   
      이러한 명령은 프로젝트 종속성 또는 솔루션 파일을 빌드, 다시 빌드, 정리 또는 링크하지 않고 선택한 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 프로젝트에만 적용됩니다. 사용 중인 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전에 따라 **프로젝트만** 하위 메뉴에 추가 명령이 포함될 수 있습니다.  
   

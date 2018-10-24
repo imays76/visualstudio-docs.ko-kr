@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 029cd44bc19bd279ed9b5d46a5fea53539706a23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913893"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "49272365"
   
  이 연습에서는 텍스트 편집기만을 사용하여 기본 프로젝트 파일을 증분 방식으로 만드는 방법을 보여 줍니다. 이 연습에서는 다음과 같은 단계를 따릅니다.  
   
--   최소 응용 프로그램 소스 파일을 만듭니다.  
+- 최소 응용 프로그램 소스 파일을 만듭니다.  
   
--   최소 MSBuild 프로젝트 파일을 만듭니다.  
+- 최소 MSBuild 프로젝트 파일을 만듭니다.  
   
--   MSBuild를 포함하도록 PATH 환경 변수를 확장합니다.  
+- MSBuild를 포함하도록 PATH 환경 변수를 확장합니다.  
   
--   프로젝트 파일을 사용하여 응용 프로그램을 빌드합니다.  
+- 프로젝트 파일을 사용하여 응용 프로그램을 빌드합니다.  
   
--   빌드를 제어하기 위한 속성을 추가합니다.  
+- 빌드를 제어하기 위한 속성을 추가합니다.  
   
--   속성 값을 변경하여 빌드를 제어합니다.  
+- 속성 값을 변경하여 빌드를 제어합니다.  
   
--   빌드에 대상을 추가합니다.  
+- 빌드에 대상을 추가합니다.  
   
--   대상을 지정하여 빌드를 제어합니다.  
+- 대상을 지정하여 빌드를 제어합니다.  
   
--   증분 방식으로 빌드합니다.  
+- 증분 방식으로 빌드합니다.  
   
- 이 연습에서는 명령 프롬프트에서 프로젝트를 빌드하고 결과를 검토하는 방법을 보여 줍니다. MSBuild 및 명령 프롬프트에서 MSBuild를 실행하는 방법에 대한 자세한 내용은 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.  
+  이 연습에서는 명령 프롬프트에서 프로젝트를 빌드하고 결과를 검토하는 방법을 보여 줍니다. MSBuild 및 명령 프롬프트에서 MSBuild를 실행하는 방법에 대한 자세한 내용은 [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)을 참조하세요.  
   
- 연습을 완료하려면 .NET Framework(버전 2.0, 3.5, 4.0 또는 4.5)가 설치되어 있어야 합니다. .NET Framework에 연습에 필요한 MSBuild 및 Visual C# 컴파일러가 포함되어 있기 때문입니다.  
+  연습을 완료하려면 .NET Framework(버전 2.0, 3.5, 4.0 또는 4.5)가 설치되어 있어야 합니다. .NET Framework에 연습에 필요한 MSBuild 및 Visual C# 컴파일러가 포함되어 있기 때문입니다.  
   
 ## <a name="creating-a-minimal-application"></a>최소 응용 프로그램 만들기  
  이 섹션에서는 텍스트 편집기를 사용하여 최소 Visual C# 응용 프로그램 소스 파일을 만드는 방법을 보여 줍니다.  
@@ -109,39 +109,39 @@ ms.locfileid: "49272365"
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>최소 MSBuild 프로젝트 파일을 만들려면  
   
-1.  텍스트 편집기에서 기존 텍스트를 다음 두 줄을 사용하여 바꿉니다.  
+1. 텍스트 편집기에서 기존 텍스트를 다음 두 줄을 사용하여 바꿉니다.  
   
-    ```  
-    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    </Project>  
-    ```  
+   ```  
+   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   </Project>  
+   ```  
   
-2.  이 `ItemGroup` 노드를 `Project` 노드의 자식 요소로 삽입합니다.  
+2. 이 `ItemGroup` 노드를 `Project` 노드의 자식 요소로 삽입합니다.  
   
-    ```  
-    <ItemGroup>  
-      <Compile Include="helloworld.cs" />  
-    </ItemGroup>  
-    ```  
+   ```  
+   <ItemGroup>  
+     <Compile Include="helloworld.cs" />  
+   </ItemGroup>  
+   ```  
   
-     이 `ItemGroup`은 이미 항목 요소를 포함하고 있습니다.  
+    이 `ItemGroup`은 이미 항목 요소를 포함하고 있습니다.  
   
-3.  `Target` 노드를 `Project` 노드의 자식 요소로 추가합니다. 노드의 이름을 `Build`로 지정합니다.  
+3. `Target` 노드를 `Project` 노드의 자식 요소로 추가합니다. 노드의 이름을 `Build`로 지정합니다.  
   
-    ```  
-    <Target Name="Build">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="Build">  
+   </Target>  
+   ```  
   
-4.  이 작업 요소를 `Target` 노드의 자식 요소로 삽입합니다.  
+4. 이 작업 요소를 `Target` 노드의 자식 요소로 삽입합니다.  
   
-    ```  
-    <Csc Sources="@(Compile)"/>  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)"/>  
+   ```  
   
-5.  이 프로젝트 파일을 저장하고 이름을 Helloworld.csproj로 지정합니다.  
+5. 이 프로젝트 파일을 저장하고 이름을 Helloworld.csproj로 지정합니다.  
   
- 최소 프로젝트 파일은 다음 코드와 유사합니다.  
+   최소 프로젝트 파일은 다음 코드와 유사합니다.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -201,36 +201,36 @@ ms.locfileid: "49272365"
   
 #### <a name="to-add-build-properties"></a>빌드 속성을 추가하려면  
   
-1.  명령 프롬프트에서 **del helloworld.exe**를 입력하여 기존 응용 프로그램을 삭제합니다.  
+1. 명령 프롬프트에서 **del helloworld.exe**를 입력하여 기존 응용 프로그램을 삭제합니다.  
   
-2.  프로젝트 파일에서 여는 `PropertyGroup` 요소 바로 뒤에 이 `Project` 요소를 삽입합니다.  
+2. 프로젝트 파일에서 여는 `PropertyGroup` 요소 바로 뒤에 이 `Project` 요소를 삽입합니다.  
   
-    ```  
-    <PropertyGroup>  
-      <AssemblyName>MSBuildSample</AssemblyName>  
-      <OutputPath>Bin\</OutputPath>  
-    </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup>  
+     <AssemblyName>MSBuildSample</AssemblyName>  
+     <OutputPath>Bin\</OutputPath>  
+   </PropertyGroup>  
+   ```  
   
-3.  이 작업을 `Csc` 작업 바로 앞의 Build 대상에 추가합니다.  
+3. 이 작업을 `Csc` 작업 바로 앞의 Build 대상에 추가합니다.  
   
-    ```  
-    <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
-    ```  
+   ```  
+   <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
+   ```  
   
-     `MakeDir` 작업이 `OutputPath` 속성에 의해 이름이 지정된 폴더를 만듭니다(현재 해당 이름의 폴더가 없는 경우).  
+    `MakeDir` 작업이 `OutputPath` 속성에 의해 이름이 지정된 폴더를 만듭니다(현재 해당 이름의 폴더가 없는 경우).  
   
-4.  이 `OutputAssembly` 특성을 `Csc` 작업에 추가합니다.  
+4. 이 `OutputAssembly` 특성을 `Csc` 작업에 추가합니다.  
   
-    ```  
-    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
+   ```  
   
-     그러면 `AssemblyName` 속성에 의해 이름이 지정된 어셈블리를 생성하여 `OutputPath` 속성에 의해 이름이 지정된 폴더에 배치하라는 지시가 Visual C# 컴파일러에 전달됩니다.  
+    그러면 `AssemblyName` 속성에 의해 이름이 지정된 어셈블리를 생성하여 `OutputPath` 속성에 의해 이름이 지정된 폴더에 배치하라는 지시가 Visual C# 컴파일러에 전달됩니다.  
   
-5.  변경 내용을 저장합니다.  
+5. 변경 내용을 저장합니다.  
   
- 이제 프로젝트 파일은 다음 코드와 유사합니다.  
+   이제 프로젝트 파일은 다음 코드와 유사합니다.  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -279,34 +279,34 @@ ms.locfileid: "49272365"
 ## <a name="adding-build-targets"></a>빌드 대상 추가  
  이제 다음과 같이 프로젝트 파일에 대상을 두 개 더 추가합니다.  
   
--   이전 파일을 삭제하는 Clean 대상  
+- 이전 파일을 삭제하는 Clean 대상  
   
--   `DependsOnTargets` 특성을 사용하여 Clean 작업이 Build 작업보다 먼저 실행되도록 하는 Rebuild 대상  
+- `DependsOnTargets` 특성을 사용하여 Clean 작업이 Build 작업보다 먼저 실행되도록 하는 Rebuild 대상  
   
- 대상이 여러 개이므로 이제 Build 대상을 기본 대상으로 설정할 수 있습니다.  
+  대상이 여러 개이므로 이제 Build 대상을 기본 대상으로 설정할 수 있습니다.  
   
 #### <a name="to-add-build-targets"></a>빌드 대상을 추가하려면  
   
-1.  프로젝트 파일에서 이러한 두 대상을 Build 대상 바로 뒤에 추가합니다.  
+1. 프로젝트 파일에서 이러한 두 대상을 Build 대상 바로 뒤에 추가합니다.  
   
-    ```  
-    <Target Name="Clean" >  
-      <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
-    </Target>  
-    <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
-    ```  
+   ```  
+   <Target Name="Clean" >  
+     <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
+   </Target>  
+   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
+   ```  
   
-     Clean 대상은 Delete 작업을 호출하여 응용 프로그램을 삭제합니다. Rebuild 대상은 Clean 대상과 Build 대상이 둘 다 실행될 때까지 실행되지 않습니다. Rebuild 대상에 작업이 없더라도 Rebuild 대상은 Clean 대상이 Build 대상보다 먼저 실행되도록 합니다.  
+    Clean 대상은 Delete 작업을 호출하여 응용 프로그램을 삭제합니다. Rebuild 대상은 Clean 대상과 Build 대상이 둘 다 실행될 때까지 실행되지 않습니다. Rebuild 대상에 작업이 없더라도 Rebuild 대상은 Clean 대상이 Build 대상보다 먼저 실행되도록 합니다.  
   
-2.  이 `DefaultTargets` 특성을 여는 `Project` 요소에 추가합니다.  
+2. 이 `DefaultTargets` 특성을 여는 `Project` 요소에 추가합니다.  
   
-    ```  
-    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    ```  
+   ```  
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   ```  
   
-     그러면 Build 대상이 기본 대상으로 설정됩니다.  
+    그러면 Build 대상이 기본 대상으로 설정됩니다.  
   
- 이제 프로젝트 파일은 다음 코드와 유사합니다.  
+   이제 프로젝트 파일은 다음 코드와 유사합니다.  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

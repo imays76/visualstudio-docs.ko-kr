@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e5e2815985aacd43603d24f1c6f4052b66c19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8ca800c4409c9c3c1b72b625aa8cedac31e5b194
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911637"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
-고유 식별자로 기호를 검색합니다.  
+해당 고유 식별자로 기호를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,15 +41,15 @@ HRESULT symbolById (
  [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 기호를 나타내는 개체를 검색 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 지정된 된 식별자가 고유 하 게 만들 모든 기호 DIA SDK에서 내부적으로 사용 하는 고유 값입니다.  
+ 지정된 된 식별자에는 모든 기호를 고유 하 게 DIA SDK에 의해 내부적으로 사용 되는 고유 값입니다.  
   
- 이 방법을 사용할 수, 예를 들어 다른 기호 형식을 나타내는 기호를 검색할 수 (예제 참조).  
+ 이 방법을 사용할 수, 예를 들어, 다른 기호 유형을 나타내는 기호를 검색할 (예제 참조).  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 검색 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 다른 기호 형식을 나타내는입니다. 사용 하는 방법을 보여 주는이 예제는 `symbolById` 세션에서 메서드. 호출 하는 것 보다 간단한 방법은 [idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) 형식 기호를 직접 검색 하는 메서드입니다.  
+ 이 예제에서는 검색을 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 나타내는 다른 기호의 형식입니다. 사용 하는 방법을 보여 주는이 예제는 `symbolById` 세션에서 메서드. 간단 호출 하는 것은 [idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) 형식 기호를 직접 검색 하는 방법입니다.  
   
 ```C++  
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)  

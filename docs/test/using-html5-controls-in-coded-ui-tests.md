@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 63c33b98244268a086e9db63e2b56e507471c4c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914491"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>코딩된 UI 테스트에서 HTML5 컨트롤 사용
 
@@ -38,7 +38,7 @@ ms.locfileid: "39382760"
  ![HTML5 오디오 컨트롤](../test/media/codedui_html5_audio.png)
 
 |작업|기록 중|생성된 코드|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**오디오 재생**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:00:00부터 \<name> 오디오 재생|HtmlAudio.Play(TimeSpan)|
 |**오디오의 특정 시간까지 검색**|00:01:48까지 \<name> 오디오 검색|HtmlAudio.Seek(TimeSpan)|
 |**오디오 일시 중지**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:01:53에 \<name> 오디오 일시 중지|HtmlAudio.Pause(TimeSpan)|
@@ -62,7 +62,7 @@ ms.locfileid: "39382760"
  ![HTML5 비디오 컨트롤](../test/media/codedui_html5_video.png)
 
 |작업|기록 중|생성된 코드|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**비디오 재생**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:00:00부터 \<name> 비디오 재생|HtmlVideo.Play(TimeSpan)|
 |**비디오의 특정 시간까지 검색**|00:01:48까지 \<name> 비디오 검색|HtmlVideo.Seek(TimeSpan)|
 |**비디오 일시 중지**<br /><br /> 컨트롤 또는 컨트롤 상황에 맞는 메뉴에서 직접|00:01:53에 \<name> 비디오 일시 중지|HtmlVideo.Pause(TimeSpan)|

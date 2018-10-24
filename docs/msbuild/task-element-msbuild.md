@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aff486d906c340bf79939cbe5b43cbc2447d26f5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 512675f0752f675bd393f324220eece87301af8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914829"
 ---
 # <a name="task-element-msbuild"></a>Task 요소(MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 인스턴스를 만들고 실행합니다. 생성된 작업 이름에 따라 요소 이름이 결정됩니다.  
@@ -56,13 +56,13 @@ ms.locfileid: "39153831"
 
 |요소|설명|  
 |-------------|-----------------|  
-|[Output](../msbuild/output-element-msbuild.md)|프로젝트 파일의 작업에서 출력을 저장합니다. 작업에는 `Output` 요소가 없을 수도 있고 하나 이상 있을 수도 있습니다.|  
+|[출력](../msbuild/output-element-msbuild.md)|프로젝트 파일의 작업에서 출력을 저장합니다. 작업에는 `Output` 요소가 없을 수도 있고 하나 이상 있을 수도 있습니다.|  
 
 ### <a name="parent-elements"></a>부모 요소  
 
-|요소|설명|  
-|-------------|-----------------|  
-|[Target](../msbuild/target-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 컨테이너 요소입니다.|  
+| 요소 | 설명 |
+| - | - |
+| [Target](../msbuild/target-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업의 컨테이너 요소입니다. |
 
 ## <a name="remarks"></a>설명  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 `Task` 요소는 작업의 인스턴스를 생성하며 작업에 대한 속성을 설정하고 작업을 실행합니다. `Output` 요소는 프로젝트 파일의 다른 곳에서 사용될 속성이나 항목에 출력 매개 변수를 저장합니다.  

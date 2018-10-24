@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911338"
 ---
 # <a name="registering-a-project-type"></a>프로젝트 형식 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ ms.locfileid: "49271780"
   
  메뉴 항목이 메뉴 정보를 검색할 사용 되는 리소스를 IDE를 가리킵니다. 메뉴 데이터베이스로이 데이터 병합 되었기 동일한 키 레지스트리 MenusMerged 섹션에 추가 됩니다. VSPackage 해야 MenusMerged 섹션에서 아무 것도 직접 수정 합니다. 데이터 필드는 다음 표에 세 개의 쉼표로 구분 된-필드 있습니다. 첫 번째 필드를 메뉴 리소스 파일의 전체 경로 식별합니다.  
   
--   첫 번째 필드를 생략 하면 메뉴 리소스 위성 VSPackage GUID로 식별 되는 DLL에서에서 로드 됩니다.  
+- 첫 번째 필드를 생략 하면 메뉴 리소스 위성 VSPackage GUID로 식별 되는 DLL에서에서 로드 됩니다.  
   
- 두 번째 필드 형식의 CTMENU 메뉴 리소스 ID를 식별합니다.  
+  두 번째 필드 형식의 CTMENU 메뉴 리소스 ID를 식별합니다.  
   
--   리소스 ID를 지정 하 고 첫 번째 매개 변수에서 파일 경로 지정 하는 경우 메뉴 리소스의 전체 파일 경로에서 로드 됩니다.  
+- 리소스 ID를 지정 하 고 첫 번째 매개 변수에서 파일 경로 지정 하는 경우 메뉴 리소스의 전체 파일 경로에서 로드 됩니다.  
   
--   리소스 ID를 제공한 파일 경로가 아닙니다. 그러나 메뉴 리소스 위성 DLL에서에서 로드 됩니다.  
+- 리소스 ID를 제공한 파일 경로가 아닙니다. 그러나 메뉴 리소스 위성 DLL에서에서 로드 됩니다.  
   
--   전체 파일 경로 제공 하 고 리소스 ID를 생략 하는 경우의 CTO 파일로 로드할 파일을 사용할 수 있습니다.  
+- 전체 파일 경로 제공 하 고 리소스 ID를 생략 하는 경우의 CTO 파일로 로드할 파일을 사용할 수 있습니다.  
   
- 마지막 필드 CTMENU 리소스에 대 한 버전 번호를 식별합니다. 버전 번호를 변경 하 여 메뉴를 다시 병합할 수 있습니다.  
+  마지막 필드 CTMENU 리소스에 대 한 버전 번호를 식별합니다. 버전 번호를 변경 하 여 메뉴를 다시 병합할 수 있습니다.  
   
 |이름|형식|데이터|설명|  
 |----------|----------|----------|-----------------|  

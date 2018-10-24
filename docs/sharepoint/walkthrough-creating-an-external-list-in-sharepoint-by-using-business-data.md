@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913971"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 
@@ -187,7 +187,7 @@ Specificfinder 메서드를 사용 하 여 연락처 엔터티를 추가 합니�
 
 10. 다음 필드의 각 형식 설명자를 만들려면 6 단계를 반복 합니다.
 
-    |name|형식 이름|
+    |이름|형식 이름|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
@@ -232,12 +232,12 @@ Specificfinder 메서드를 사용 하 여 연락처 엔터티를 추가 합니�
 
 5. 에 `ContactService` 클래스를 대체 합니다 `ReadList` 메서드를 다음 코드로 합니다. 이 코드는 다음 작업을 수행합니다.
 
-    - AdventureWorks 데이터베이스의 Contacts 테이블에서 데이터를 검색합니다.
+   - AdventureWorks 데이터베이스의 Contacts 테이블에서 데이터를 검색합니다.
 
-    - BDC 서비스에 연락처 엔터티 목록을 반환합니다.
+   - BDC 서비스에 연락처 엔터티 목록을 반환합니다.
 
-    > [!NOTE]
-    > 값을 `ServerName` 필드 서버의 이름입니다.
+     > [!NOTE]
+     > 값을 `ServerName` 필드 서버의 이름입니다.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

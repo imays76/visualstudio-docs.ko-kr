@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912632"
 ---
 # <a name="architecture-of-document-level-customizations"></a>문서 수준 사용자 지정 아키텍처
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 에는 Microsoft Office Word 및 Microsoft Office Excel용 문서 수준 사용자 지정을 만드는 프로젝트가 포함되어 있습니다. 이 항목에서는 다음과 같은 문서 수준 사용자 지정의 측면에 대해 설명합니다.  
   
--   [사용자 지정 이해](#UnderstandingCustomizations)  
+- [사용자 지정 이해](#UnderstandingCustomizations)  
   
--   [사용자 지정 구성 요소](#Components)  
+- [사용자 지정 구성 요소](#Components)  
   
--   [사용자 지정이 Microsoft Office 응용 프로그램과 작동하는 방식](#HowCustomizationsWork)  
+- [사용자 지정이 Microsoft Office 응용 프로그램과 작동하는 방식](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 문서 수준 사용자 지정 만들기에 대 한 일반적인 정보를 참조 하세요 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)하십시오 [Word용문서수준사용자지정프로그래밍시작](../vsto/getting-started-programming-document-level-customizations-for-word.md), 및 [Excel 용 문서 수준 사용자 지정 프로그래밍 시작](../vsto/getting-started-programming-document-level-customizations-for-excel.md)합니다.  
+  문서 수준 사용자 지정 만들기에 대 한 일반적인 정보를 참조 하세요 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)하십시오 [Word용문서수준사용자지정프로그래밍시작](../vsto/getting-started-programming-document-level-customizations-for-word.md), 및 [Excel 용 문서 수준 사용자 지정 프로그래밍 시작](../vsto/getting-started-programming-document-level-customizations-for-excel.md)합니다.  
   
 ##  <a name="UnderstandingCustomizations"></a> 사용자 지정 이해  
  Visual Studio에서 Office 개발자 도구를 사용하여 문서 수준 사용자 지정을 만들 때 특정 문서와 연결된 관리 코드 어셈블리를 만듭니다. 연결된 어셈블리가 있는 문서 또는 통합 문서를 관리 코드 확장이 있다고 말합니다. 자세한 내용은 [디자인 Office 솔루션을 만들고](../vsto/designing-and-creating-office-solutions.md)합니다.  
@@ -94,11 +94,11 @@ ms.locfileid: "35674777"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>.Xml 파일 이름 확장명을 가진 Word 문서에 대 한 지원  
  문서 수준 프로젝트 템플릿에서는 다음과 같은 파일 형식을 기반으로 프로젝트를 만드는 것을 허용하지 않습니다.  
   
--   Word XML 문서 (*\*xml*).  
+- Word XML 문서 (*\*xml*).  
   
--   Word 2003 XML 문서 (*\*xml*).  
+- Word 2003 XML 문서 (*\*xml*).  
   
- 최종 사용자가 이러한 파일 형식으로 사용자 지정을 사용하도록 하려면 위의 표에 지정된 지원되는 파일 형식 중 하나를 사용하는 사용자 지정을 빌드하고 배포합니다. 사용자 지정을 설치한 후 최종 사용자가 문서를 저장할 수 Word XML 문서에서 (*\*xml*) 형식 또는 Word 2003 XML 문서 (*\*xml*) 형식 및 사용자 지정 계속 예상 대로 작동 합니다.  
+  최종 사용자가 이러한 파일 형식으로 사용자 지정을 사용하도록 하려면 위의 표에 지정된 지원되는 파일 형식 중 하나를 사용하는 사용자 지정을 빌드하고 배포합니다. 사용자 지정을 설치한 후 최종 사용자가 문서를 저장할 수 Word XML 문서에서 (*\*xml*) 형식 또는 Word 2003 XML 문서 (*\*xml*) 형식 및 사용자 지정 계속 예상 대로 작동 합니다.  
   
 ##  <a name="Components"></a> 사용자 지정 구성 요소  
  사용자 지정의 주요 구성 요소는 문서와 어셈블리입니다. 이러한 구성 요소 외에 Microsoft Office 응용 프로그램이 사용자 지정을 검색하고 로드하는 방식에서 중요한 역할을 하는 몇 가지 다른 부분이 있습니다.  
@@ -142,11 +142,11 @@ ms.locfileid: "35674777"
   
 8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 은 사용자 지정 어셈블리를 응용 프로그램 도메인에 로드합니다.  
   
-9. 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 호출을 **시작** 사용자 지정 어셈블리에서 이벤트 처리기입니다. 자세한 내용은 참조 하세요. [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)  
+9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 이 사용자 지정 어셈블리에서 **Startup** 이벤트 처리기를 호출합니다. 자세한 내용은 참조 하세요. [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)  
   
 ## <a name="see-also"></a>참고자료  
  [Visual Studio에서 Office 솔루션의 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
- [Vsto 추가 기능의 아키텍처](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)   
  [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)   

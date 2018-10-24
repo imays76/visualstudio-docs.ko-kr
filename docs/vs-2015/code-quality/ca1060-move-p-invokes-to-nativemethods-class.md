@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ac0e1d9ca251e4d12dbdfb59fbfaf115cbdd348d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913867"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invoke를 NativeMethods 클래스로 이동
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
@@ -42,13 +43,13 @@ ms.locfileid: "49228880"
 ## <a name="rule-description"></a>규칙 설명
  플랫폼 호출 메서드를 사용 하 여 표시 된 것과 같은 합니다 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 특성 또는 사용 하 여 정의 된 메서드를를 `Declare` 키워드 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], 비관리 코드에 액세스 합니다. 이러한 메서드는 다음 클래스 중 하나 이어야 합니다.
 
--   **NativeMethods** -이 클래스는 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> 이 클래스에 적용 하지 않아야 합니다.) 이 클래스는 스택 워크가 수행 않으므로 어디서 나 사용할 수 있는 방법입니다.
+- **NativeMethods** -이 클래스는 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> 이 클래스에 적용 하지 않아야 합니다.) 이 클래스는 스택 워크가 수행 않으므로 어디서 나 사용할 수 있는 방법입니다.
 
--   **SafeNativeMethods** -이 클래스를 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> 이 클래스에 적용 됩니다.) 이 클래스는 누구 든 지 호출에 대 한 안전한 방법입니다. 이러한 메서드의 호출자는 메서드는 모든 호출자에 게는 치명적이 지 때문에 사용법은 보안 되도록 전체 보안 검토를 수행 필요가 없습니다.
+- **SafeNativeMethods** -이 클래스를 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> 이 클래스에 적용 됩니다.) 이 클래스는 누구 든 지 호출에 대 한 안전한 방법입니다. 이러한 메서드의 호출자는 메서드는 모든 호출자에 게는 치명적이 지 때문에 사용법은 보안 되도록 전체 보안 검토를 수행 필요가 없습니다.
 
--   **UnsafeNativeMethods** -이 클래스를 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> 이 클래스에 적용 됩니다.) 이 클래스는 잠재적으로 위험한 메서드. 이러한 메서드의 호출자는 사용이 안전한 지 스택 워크도 없으므로 수행할지 되도록 전체 보안 검토를 수행 해야 합니다.
+- **UnsafeNativeMethods** -이 클래스를 비관리 코드 권한에 대 한 스택 워크를 표시 하지 않습니다. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> 이 클래스에 적용 됩니다.) 이 클래스는 잠재적으로 위험한 메서드. 이러한 메서드의 호출자는 사용이 안전한 지 스택 워크도 없으므로 수행할지 되도록 전체 보안 검토를 수행 해야 합니다.
 
- 이러한 클래스를 선언 `internal` (`Friend`, Visual Basic의) 하 고 새 인스턴스가 생성 되지 않도록 하는 private 생성자를 선언 합니다. 이러한 클래스의 메서드 수 있어야 합니다 `static` 하 고 `internal` (`Shared` 및 `Friend` Visual basic에서).
+  이러한 클래스를 선언 `internal` (`Friend`, Visual Basic의) 하 고 새 인스턴스가 생성 되지 않도록 하는 private 생성자를 선언 합니다. 이러한 클래스의 메서드 수 있어야 합니다 `static` 하 고 `internal` (`Shared` 및 `Friend` Visual basic에서).
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 적절 한 메서드를 이동 **NativeMethods** 클래스입니다. 대부분의 응용 프로그램에 대 한 P/Invoke 라는 새 클래스를 이동 **NativeMethods** 충분 합니다.

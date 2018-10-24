@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: da8ff01bed6446cc497c41ad21894c70df090efb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53bddbda7ed89a0d826e135d7989c1b8a01ce594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915245"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리
 
@@ -435,7 +435,6 @@ public class ShimMyClass : ShimBase<MyClass> {
 var shim = new ShimMyClass();
 //return default(T) or do nothing
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
-
 ```
 
 정적 `ShimsBehaviors.Current` 속성을 설정하여 `InstanceBehavior` 속성이 명시적으로 설정되지 않은 shim된 모든 인스턴스에 대해 전역적으로 동작을 변경할 수도 있습니다.
