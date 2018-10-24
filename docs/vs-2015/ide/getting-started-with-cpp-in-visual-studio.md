@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f061382ab5df74b7a94d8578624fb5a0f2dc71f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240450"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816607"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio에서 C++ 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,23 +52,23 @@ ms.locfileid: "49240450"
   
 #### <a name="to-create-a-console-app"></a>콘솔 앱을 만들려면  
   
-1.  메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
+1. 메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
   
-     ![메뉴 모음에서 파일, 새로 만들기, 프로젝트를 차례로 선택합니다.](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
+    ![메뉴 모음에서 파일, 새로 만들기, 프로젝트를 차례로 선택합니다.](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
   
-2.  **Visual C++** 범주에서 **Win32 콘솔 응용 프로그램** 템플릿을 선택한 후 프로젝트 이름을 `GreetingsConsoleApp`으로 지정합니다.  
+2. **Visual C++** 범주에서 **Win32 콘솔 응용 프로그램** 템플릿을 선택한 후 프로젝트 이름을 `GreetingsConsoleApp`으로 지정합니다.  
   
-     ![Win32 콘솔 응용 프로그램 템플릿](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
+    ![Win32 콘솔 응용 프로그램 템플릿](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
   
-3.  Win32 응용 프로그램 마법사가 나타나면 **마침** 단추를 선택합니다.  
+3. Win32 응용 프로그램 마법사가 나타나면 **마침** 단추를 선택합니다.  
   
-     ![Win32 콘솔 응용 프로그램 마법사](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
+    ![Win32 콘솔 응용 프로그램 마법사](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
   
- Win32 콘솔 앱용 기본 파일과 함께 GreetingsConsoleApp 프로젝트 및 솔루션이 생성된 후 **솔루션 탐색기**에 자동으로 로드됩니다. GreetingsConsoleApp.cpp 파일이 코드 편집기에서 열립니다. 다음 항목이 **솔루션 탐색기**에 나타납니다.  
+   Win32 콘솔 앱용 기본 파일과 함께 GreetingsConsoleApp 프로젝트 및 솔루션이 생성된 후 **솔루션 탐색기**에 자동으로 로드됩니다. GreetingsConsoleApp.cpp 파일이 코드 편집기에서 열립니다. 다음 항목이 **솔루션 탐색기**에 나타납니다.  
   
- 그림 4: 프로젝트 항목  
+   그림 4: 프로젝트 항목  
   
- ![솔루션 탐색기의 솔루션 파일](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
+   ![솔루션 탐색기의 솔루션 파일](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
   
 ##  <a name="BKMK_AddCode"></a> 응용 프로그램에 코드 추가  
  다음으로 콘솔 창에 "Hello"를 표시하는 코드를 추가합니다.  
@@ -117,40 +117,40 @@ ms.locfileid: "49240450"
   
 #### <a name="to-add-a-breakpoint"></a>중단점을 추가하려면  
   
-1.  메뉴 모음에서 `return 0;`줄에 중단점을 추가합니다. 왼쪽 여백을 클릭하여 중단점을 설정할 수도 있습니다.  
+1. 메뉴 모음에서 `return 0;`줄에 중단점을 추가합니다. 왼쪽 여백을 클릭하여 중단점을 설정할 수도 있습니다.  
   
-     ![디버그 메뉴의 중단점 설정/해제 명령](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
+    ![디버그 메뉴의 중단점 설정/해제 명령](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
-     편집기 창의 맨 왼쪽 여백 코드 줄 옆에 빨간색 원이 나타납니다.  
+    편집기 창의 맨 왼쪽 여백 코드 줄 옆에 빨간색 원이 나타납니다.  
   
-2.  F5 키를 선택하여 디버깅을 시작합니다.  
+2. F5 키를 선택하여 디버깅을 시작합니다.  
   
-     디버거가 시작되고 단어 **Hello**를 표시하는 콘솔 창이 나타납니다.  
+    디버거가 시작되고 단어 **Hello**를 표시하는 콘솔 창이 나타납니다.  
   
-     ![Windows 명령 프롬프트 창의 Hello 텍스트](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
+    ![Windows 명령 프롬프트 창의 Hello 텍스트](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
   
-3.  Shift+F5를 눌러 디버깅을 중지합니다.  
+3. Shift+F5를 눌러 디버깅을 중지합니다.  
   
- 자세한 내용은 [콘솔 프로젝트](../debugger/debugging-preparation-console-projects.md)를 참조하세요.  
+   자세한 내용은 [콘솔 프로젝트](../debugger/debugging-preparation-console-projects.md)를 참조하세요.  
   
 ##  <a name="BKMK_BuildRelease"></a> 앱 릴리스 버전 빌드  
  모든 것이 작동하는 것을 확인했으므로 응용 프로그램의 릴리스 빌드를 준비할 수 있습니다.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>솔루션 파일을 정리하고 릴리스 버전을 빌드하려면  
   
-1.  메뉴 모음에서 이전 빌드 중에 생성된 중간 파일 및 출력 파일을 삭제합니다.  
+1. 메뉴 모음에서 이전 빌드 중에 생성된 중간 파일 및 출력 파일을 삭제합니다.  
   
-     ![빌드 메뉴의 솔루션 정리 명령](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
+    ![빌드 메뉴의 솔루션 정리 명령](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
   
-2.  GreetingsConsoleApp의 빌드 구성을 **디버그** 에서 **릴리스**로 변경합니다.  
+2. GreetingsConsoleApp의 빌드 구성을 **디버그** 에서 **릴리스**로 변경합니다.  
   
-     ![응용 프로그램 릴리스 버전 빌드](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+    ![응용 프로그램 릴리스 버전 빌드](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
-3.  솔루션을 빌드합니다.  
+3. 솔루션을 빌드합니다.  
   
-     ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+    ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
- 이 연습을 완료한 것을 축하 드립니다! 더 많은 예제를 탐색하려는 경우 [Visual Studio 샘플](../ide/visual-studio-samples.md)을 참조하세요.  
+   이 연습을 완료한 것을 축하 드립니다! 더 많은 예제를 탐색하려는 경우 [Visual Studio 샘플](../ide/visual-studio-samples.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [연습: 간단한 응용 프로그램 만들기](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   

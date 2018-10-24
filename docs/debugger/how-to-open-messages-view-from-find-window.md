@@ -13,44 +13,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af7e15605915849aa57d73b6e3f59ce89500575
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 08f832e61bdb39bc87b59fdd64deab8cd86382a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839221"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>방법: 창 찾기에서 메시지 뷰 열기
-사용 하기 어려운 찾을 수 있습니다는 **창 찾기** 대화 상자의 대상 창을 선택 하 고 다음 해당 창 메시지 뷰를 엽니다.  
-  
-### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>창 찾기 대화 상자를 사용 하 여 메시지 뷰 창을 열려면  
-  
-1.  Spy + +와 대상 창 표시 되도록 창을 정렬 합니다.  
-  
-2.  **Spy** 메뉴 선택 **창 찾기**합니다.  
-  
-     [창 찾기 대화 상자](../debugger/find-window-dialog-box.md) 열립니다.  
-  
-3.  **Windows** 탭을 끌어는 **찾기 도구** 대상 창 위에 있습니다. 도구를 끌어 놓으면는 **창 찾기** 대화 상자는 선택 된 창의 세부 정보를 표시 합니다.  
-  
-     - 또는  
-  
-     (예: 디버거에서 복사 됨)를 확인 하려면 창의 핸들이 있는 경우에 입력할 수 있습니다는 **처리** 입력란.  
-  
-4.  아래 **표시**선택, **메시지**합니다.  
-  
-5.  Press **OK**.  
-  
-     빈 [메시지 뷰](../debugger/messages-view.md) 창이 열리고 및 **메시지** 메뉴가 Spy + + 도구 모음에 추가 됩니다.  
-  
-6.  **메시지** 메뉴 선택 **로깅 옵션**합니다.  
-  
-     [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md) 열립니다.  
-  
-7.  표시할 메시지에 대 한 옵션을 선택 합니다.  
-  
-8.  키를 눌러 **확인** 에 메시지 로깅을 시작 합니다.  
-  
-     선택한 옵션에 따라, 활성 메시지 뷰 창으로 스트리밍되 기 시작 합니다.  
-  
-9. 충분 한 메시지를 사용 하는 경우 선택 **로깅 중지** 에서 **메시지** 메뉴.
+편리 하 게 사용 하 여 찾을 수 있습니다 합니다 **창 찾기** 대상 창을 연 다음 해당 창 메시지 뷰 대화 상자.  
+
+### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>창 찾기 대화 상자를 사용 하 여 메시지 보기 창을 열려면  
+
+1. Spy + + 및 대상 창 표시 되도록 창을 정렬 합니다.  
+
+2. **Spy** 메뉴 선택 **창 찾기**합니다.  
+
+    합니다 [창 찾기 대화 상자](../debugger/find-window-dialog-box.md) 열립니다.  
+
+3. 합니다 **Windows** 탭을 끌어 합니다 **찾기 도구** 대상 창에 대 한 합니다. 도구를 끌면 합니다 **창 찾기** 대화 상자는 선택 된 창의 세부 정보가 표시 됩니다.  
+
+   - 또는  
+
+     에 입력할 수는 창의 핸들입니다 (예: 디버거에서 복사) 검사 하려는 경우는 **처리** 입력란입니다.  
+
+4. 아래 **표시**를 선택 **메시지**합니다.  
+
+5. 키를 눌러 **확인**합니다.  
+
+    Blank [메시지 뷰](../debugger/messages-view.md) 창이 열리고 및 **메시지** 메뉴가 Spy + + 도구 모음에 추가 됩니다.  
+
+6. **메시지** 메뉴 선택 **로깅 옵션**합니다.  
+
+    합니다 [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md) 열립니다.  
+
+7. 표시할 메시지에 대 한 옵션을 선택 합니다.  
+
+8. 키를 눌러 **확인** 메시지 로깅을 시작 합니다.  
+
+    선택한 옵션에 따라 활성 메시지 보기 창으로 스트리밍되 기 시작 합니다.  
+
+9. 충분 한 메시지에 있는 경우 선택할 **로깅 중지** 에서 합니다 **메시지** 메뉴.

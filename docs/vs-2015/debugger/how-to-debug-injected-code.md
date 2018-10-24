@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48091178f9f606adecaa9d0047ea35ef25e2b4a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819786"
 ---
 # <a name="how-to-debug-injected-code"></a>방법: 삽입한 코드 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "49270051"
   
  특성을 사용하면 C++ 프로그래밍을 매우 단순화할 수 있습니다. 자세한 내용은 [개념](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e)합니다. 일부 특성은 컴파일러가 직접 해석합니다. 프로그램 소스에 코드를 삽입하여 컴파일러가 컴파일할 수 있게 하는 특성도 있습니다. 이렇게 코드를 삽입하면 프로그래머가 써야 하는 코드의 양이 줄어들어 보다 쉽게 프로그래밍할 수 있습니다. 그러나 때때로 버그가 발생하여 삽입된 코드를 실행하는 동안 응용 프로그램에 문제가 생기기도 합니다. 이런 경우에는 삽입된 코드를 볼 수 있습니다. Visual Studio에서는 두 가지 방법으로 삽입된 코드를 볼 수 있습니다.  
   
--   삽입 된 코드에서 볼 수 있습니다 합니다 **디스어셈블리** 창입니다.  
+- 삽입 된 코드에서 볼 수 있습니다 합니다 **디스어셈블리** 창입니다.  
   
--   사용 하 여 [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), 원본 및 삽입 된 코드가 포함 된 병합 된 소스 파일을 만들 수 있습니다.  
+- 사용 하 여 [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), 원본 및 삽입 된 코드가 포함 된 병합 된 소스 파일을 만들 수 있습니다.  
   
- 합니다 **디스어셈블리** 창에는 소스 코드와 특성에 의해 삽입 된 코드에 해당 하는 어셈블리 언어 명령을 보여 줍니다. 또한 합니다 **디스어셈블리** 창에는 소스 코드 주석을 표시할 수 있습니다.  
+  합니다 **디스어셈블리** 창에는 소스 코드와 특성에 의해 삽입 된 코드에 해당 하는 어셈블리 언어 명령을 보여 줍니다. 또한 합니다 **디스어셈블리** 창에는 소스 코드 주석을 표시할 수 있습니다.  
   
 ### <a name="to-turn-on-source-annotation"></a>소스 주석을 설정하려면  
   

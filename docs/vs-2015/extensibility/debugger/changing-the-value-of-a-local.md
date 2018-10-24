@@ -16,12 +16,12 @@ ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcdefc93f8d9843ac18a01f52e9c2a36f59ce4ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f07801b22086aa9a1e96a2efc99093a84bc72e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843653"
 ---
 # <a name="changing-the-value-of-a-local"></a>로컬 항목 값 변경
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49226215"
   
  다음은 로컬 값을 변경 하는 프로세스의 개요입니다.  
   
-1.  Visual Studio를 호출 하는 사용자가 새 값을 입력 한 후 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 에 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 로컬 연관 된 개체입니다.  
+1. Visual Studio를 호출 하는 사용자가 새 값을 입력 한 후 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 에 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 로컬 연관 된 개체입니다.  
   
-2.  `IDebugProperty2::SetValueAsString`는 다음 작업을 수행합니다.  
+2. `IDebugProperty2::SetValueAsString`는 다음 작업을 수행합니다.  
   
-    1.  값을 생성 하는 문자열을 평가 합니다.  
+   1.  값을 생성 하는 문자열을 평가 합니다.  
   
-    2.  연결 된 바인딩합니다 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 가져올 개체를 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
+   2.  연결 된 바인딩합니다 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 가져올 개체를 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
   
-    3.  값을 일련의 바이트로 변환합니다.  
+   3.  값을 일련의 바이트로 변환합니다.  
   
-    4.  호출 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 디버깅 중인 프로그램에 액세스할 수 있도록 메모리에 값의 바이트를 배치 하 합니다.  
+   4.  호출 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 디버깅 중인 프로그램에 액세스할 수 있도록 메모리에 값의 바이트를 배치 하 합니다.  
   
-3.  Visual Studio를 새로 고칩니다 합니다 **지역** 표시 (참조 [지역 표시](../../extensibility/debugger/displaying-locals.md) 세부 정보에 대 한).  
+3. Visual Studio를 새로 고칩니다 합니다 **지역** 표시 (참조 [지역 표시](../../extensibility/debugger/displaying-locals.md) 세부 정보에 대 한).  
   
- 변수의 값을 변경 하려면이 절차는 또한 합니다 **조사식** 제외 하 고 창은 합니다 `IDebugProperty2` 대신 사용 되는 지역 변수의 값을 사용 하 여 연결 된 개체를 `IDebugProperty2` 로컬 연관 된 개체 자체입니다.  
+   변수의 값을 변경 하려면이 절차는 또한 합니다 **조사식** 제외 하 고 창은 합니다 `IDebugProperty2` 대신 사용 되는 지역 변수의 값을 사용 하 여 연결 된 개체를 `IDebugProperty2` 로컬 연관 된 개체 자체입니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [값 변경 샘플 구현](../../extensibility/debugger/sample-implementation-of-changing-values.md)  

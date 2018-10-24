@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c126fab0226198fc182fe2c6c956594a11dc2ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831720"
 ---
 # <a name="generate-files-from-a-uml-model"></a>UML 모델에서 파일 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ UML 모델에서 프로그램 코드, 스키마, 문서, 리소스 및 모든 �
   
  다음 세 가지 주요 시나리오가 있습니다.  
   
--   [메뉴 명령에서 파일 생성](#Command) 또는 제스처입니다. UML 모델에서 사용할 수 있는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 정의합니다.  
+- [메뉴 명령에서 파일 생성](#Command) 또는 제스처입니다. UML 모델에서 사용할 수 있는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 정의합니다.  
   
--   [응용 프로그램에서 파일 생성](#Application)합니다. UML 모델을 읽고 파일을 생성하는 응용 프로그램을 작성합니다.  
+- [응용 프로그램에서 파일 생성](#Application)합니다. UML 모델을 읽고 파일을 생성하는 응용 프로그램을 작성합니다.  
   
--   [디자인 타임에 생성](#Design)합니다. 모델을 사용하여 응용 프로그램의 기능 중 일부를 정의하고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션 내에서 코드, 리소스 등을 생성합니다.  
+- [디자인 타임에 생성](#Design)합니다. 모델을 사용하여 응용 프로그램의 기능 중 일부를 정의하고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션 내에서 코드, 리소스 등을 생성합니다.  
   
- 이 항목의 끝에 대 한 설명은 [텍스트 생성을 사용 하는 방법을](#What)합니다. 자세한 내용은 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)합니다.  
+  이 항목의 끝에 대 한 설명은 [텍스트 생성을 사용 하는 방법을](#What)합니다. 자세한 내용은 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)합니다.  
   
 ##  <a name="Command"></a> 메뉴 명령에서 파일을 생성합니다.  
  UML 메뉴 명령 내에서 전처리 텍스트 템플릿을 사용할 수 있습니다. 텍스트 템플릿의 코드 내에서 또는 별도의 partial 클래스에서 다이어그램에 표시되는 모델을 읽을 수 있습니다.  
   
  이러한 기능에 대한 자세한 내용은 다음 항목을 참조하세요.  
   
--   [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+- [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+- [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
--   [UML 모델 탐색](../modeling/navigate-the-uml-model.md)  
+- [UML 모델 탐색](../modeling/navigate-the-uml-model.md)  
   
- 다음 예제에 설명된 접근 방식은 모델 다이어그램 중 하나에서 작업을 시작하는 경우 단일 모델에서 텍스트를 생성하는 데 적합합니다. 별도 컨텍스트에서 모델을 처리 하려면 사용을 고려 [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) 모델 및 해당 요소에 액세스할 수 있습니다.  
+  다음 예제에 설명된 접근 방식은 모델 다이어그램 중 하나에서 작업을 시작하는 경우 단일 모델에서 텍스트를 생성하는 데 적합합니다. 별도 컨텍스트에서 모델을 처리 하려면 사용을 고려 [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) 모델 및 해당 요소에 액세스할 수 있습니다.  
   
 ### <a name="example"></a>예제  
  이 예제를 실행하려면 VSIX([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension) 프로젝트를 만듭니다. 이 예제에 사용 되는 프로젝트 이름이 `VdmGenerator`합니다. 에 **source.extension.vsixmanifest** 파일을 클릭 **콘텐츠 추가** 형식 필드를 설정 하 고 **MEF 구성 요소** 및 현재 프로젝트를 참조 하는 원본 경로입니다. 이 유형의 프로젝트를 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)합니다.  
@@ -174,41 +174,41 @@ Type Class2 ::
   
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>이 예제에 대해 Visual Studio 솔루션을 설정하려면  
   
-1.  새 솔루션의 모델링 프로젝트에서 UML 클래스 다이어그램을 만듭니다.  
+1. 새 솔루션의 모델링 프로젝트에서 UML 클래스 다이어그램을 만듭니다.  
   
-    1.  에 **아키텍처** 메뉴에서 클릭 **새 다이어그램**합니다.  
+   1.  에 **아키텍처** 메뉴에서 클릭 **새 다이어그램**합니다.  
   
-    2.  선택 **UML 클래스 다이어그램**합니다.  
+   2.  선택 **UML 클래스 다이어그램**합니다.  
   
-    3.  프롬프트에 따라 새 솔루션과 모델링 프로젝트를 만듭니다.  
+   3.  프롬프트에 따라 새 솔루션과 모델링 프로젝트를 만듭니다.  
   
-    4.  도구 상자에서 UML 클래스 도구를 끌어 다이어그램에 일부 클래스를 추가합니다.  
+   4.  도구 상자에서 UML 클래스 도구를 끌어 다이어그램에 일부 클래스를 추가합니다.  
   
-    5.  파일을 저장합니다.  
+   5.  파일을 저장합니다.  
   
-2.  동일한 솔루션에서 C# 또는 Visual Basic 프로젝트를 만듭니다.  
+2. 동일한 솔루션에서 C# 또는 Visual Basic 프로젝트를 만듭니다.  
   
-    -   솔루션 탐색기에서 솔루션을 마우스 오른쪽 **추가**를 클릭 하 고 **새 프로젝트**합니다. 아래 **설치 된 템플릿**, 클릭 **Visual Basic** 또는 **Visual C#** 를 선택한 다음와 같은 프로젝트 형식을 **콘솔 응용 프로그램**합니다.  
+   -   솔루션 탐색기에서 솔루션을 마우스 오른쪽 **추가**를 클릭 하 고 **새 프로젝트**합니다. 아래 **설치 된 템플릿**, 클릭 **Visual Basic** 또는 **Visual C#** 를 선택한 다음와 같은 프로젝트 형식을 **콘솔 응용 프로그램**합니다.  
   
-3.  C# 또는 Visual Basic 프로젝트에 일반 텍스트 파일을 추가합니다. 이 파일에는 여러 텍스트 템플릿을 작성하려는 경우 공유되는 코드가 포함됩니다.  
+3. C# 또는 Visual Basic 프로젝트에 일반 텍스트 파일을 추가합니다. 이 파일에는 여러 텍스트 템플릿을 작성하려는 경우 공유되는 코드가 포함됩니다.  
   
-    -   솔루션 탐색기에서 프로젝트를 마우스 오른쪽 **추가**를 클릭 하 고 **새 항목**합니다. 선택 **텍스트 파일**합니다.  
+   - 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 **추가**를 클릭 하 고 **새 항목**합니다. 선택 **텍스트 파일**합니다.  
   
      다음 섹션에 표시된 텍스트를 삽입합니다.  
   
-4.  C# 또는 Visual Basic 프로젝트에 텍스트 템플릿 파일을 추가합니다.  
+4. C# 또는 Visual Basic 프로젝트에 텍스트 템플릿 파일을 추가합니다.  
   
-    -   솔루션 탐색기에서 프로젝트를 마우스 오른쪽 **추가**를 클릭 하 고 **새 항목**합니다. 선택 **텍스트 템플릿**합니다.  
+   - 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 **추가**를 클릭 하 고 **새 항목**합니다. 선택 **텍스트 템플릿**합니다.  
   
      텍스트 템플릿 파일에 다음 코드를 삽입합니다.  
   
-5.  텍스트 템플릿 파일을 저장합니다.  
+5. 텍스트 템플릿 파일을 저장합니다.  
   
-6.  보조 파일의 코드를 검사합니다. 모델의 각 UML 클래스에 대한 클래스를 포함해야 합니다.  
+6. 보조 파일의 코드를 검사합니다. 모델의 각 UML 클래스에 대한 클래스를 포함해야 합니다.  
   
-    1.  Visual Basic 프로젝트를 클릭 **모든 파일 표시** 솔루션 탐색기 도구 모음에서입니다.  
+   1.  Visual Basic 프로젝트를 클릭 **모든 파일 표시** 솔루션 탐색기 도구 모음에서입니다.  
   
-    2.  솔루션 탐색기에서 템플릿 파일 노드를 확장합니다.  
+   2.  솔루션 탐색기에서 템플릿 파일 노드를 확장합니다.  
   
 #### <a name="content-of-the-shared-text-file"></a>공유 텍스트 파일의 내용  
  이 예제에서 파일 이름은 SharedTemplateCode.txt이고 텍스트 템플릿과 동일한 폴더에 있습니다.  

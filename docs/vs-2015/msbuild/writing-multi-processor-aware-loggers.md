@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486c8e32b577b6c794a03c080a909023b40eafde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826392"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>다중 프로세서 인식 로거 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,13 +71,13 @@ public interface INodeLogger: ILogger
   
  다음과 같이 분산 로깅을 사용하는 방법은 두 가지가 있습니다.  
   
--   <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>라는 미리 작성된 전달 로거를 사용자 지정합니다.  
+- <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>라는 미리 작성된 전달 로거를 사용자 지정합니다.  
   
--   사용자 고유의 사용자 지정 전달 로거를 작성합니다.  
+- 사용자 고유의 사용자 지정 전달 로거를 작성합니다.  
   
- 요구 사항에 맞게 ConfigurableForwardingLogger를 수정할 수 있습니다. 이렇게 하려면 MSBuild.exe를 사용하여 명령줄에서 로거를 호출하고 로거에서 중앙 노드로 전달하려는 빌드 이벤트를 나열합니다.  
+  요구 사항에 맞게 ConfigurableForwardingLogger를 수정할 수 있습니다. 이렇게 하려면 MSBuild.exe를 사용하여 명령줄에서 로거를 호출하고 로거에서 중앙 노드로 전달하려는 빌드 이벤트를 나열합니다.  
   
- 대신 사용자 지정 전달 로거를 만들 수 있습니다. 사용자 지정 전달 로거를 만들어 로거의 동작을 미세 조정할 수 있습니다. 그러나 사용자 지정 전달 로거를 만드는 것은 ConfigurableForwardingLogger를 사용자 지정하는 것보다 더 복잡합니다. 자세한 내용은 [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조하세요.  
+  대신 사용자 지정 전달 로거를 만들 수 있습니다. 사용자 지정 전달 로거를 만들어 로거의 동작을 미세 조정할 수 있습니다. 그러나 사용자 지정 전달 로거를 만드는 것은 ConfigurableForwardingLogger를 사용자 지정하는 것보다 더 복잡합니다. 자세한 내용은 [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조하세요.  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>단순 분산 로깅에 ConfigurableForwardingLogger 사용  
  ConfigurableForwardingLogger 또는 사용자 지정 전달 로거를 연결하려면 MSBuild.exe 명령줄 빌드에서 `/distributedlogger` 스위치(간단하게 `/dl`)를 사용합니다. 로거 형식 및 클래스의 이름을 지정하기 위한 형식은 분산 로거가 항상 하나 대신 두 개의 로깅 클래스(전달 로거 및 중앙 로거)를 가진 것을 제외하고 `/logger` 스위치에 대한 것과 동일합니다. 다음은 XMLForwardingLogger라는 사용자 지정 전달 로거를 연결하는 방법의 예입니다.  

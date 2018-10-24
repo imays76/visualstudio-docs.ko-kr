@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e430ac4658cd34db34f87c6b051c9269c3b6454
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 3146de7efb7db567149b7741f2868a932f8476ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842068"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent 사용
 **Microsoft Monitoring Agent**를 사용하면 IIS에서 호스트되는 ASP.NET 웹앱과 SharePoint 2010 또는 2013 응용 프로그램의 오류, 성능 문제 또는 기타 문제를 로컬로 모니터링할 수 있습니다. Monitoring Agent에서 IntelliTrace 로그(.iTrace) 파일로 진단 이벤트를 저장할 수 있습니다. 그런 다음 Visual Studio Enterprise(Professional 또는 Community Edition 아님)에서 로그를 열고 모든 Visual Studio 진단 도구를 사용하여 문제를 디버그할 수 있습니다. 또한 **Trace** 모드에서 Monitoring Agent를 실행하여 IntelliTrace 진단 데이터와 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 [Application Insights](/azure/application-insights/) 및 [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))와 통합할 수 있습니다. Microsoft Monitoring Agent는 설치 시 대상 시스템 환경을 변경합니다.  
@@ -79,33 +79,33 @@ ms.locfileid: "49073664"
 ####  <a name="FullPermissionsITLog"></a> Q: 응용 프로그램 풀에 대한 사용 권한은 어떻게 설정하나요?  
  **A:** Windows **icacls** 명령 또는 Windows 탐색기(파일 탐색기)를 사용합니다. 예를 들어:  
   
--   Windows **icacls** 명령을 통해 사용 권한을 설정하려면 다음 명령을 사용합니다.  
+- Windows **icacls** 명령을 통해 사용 권한을 설정하려면 다음 명령을 사용합니다.  
   
-    -   **DefaultAppPool** 응용 프로그램 풀의 웹앱:  
+  - **DefaultAppPool** 응용 프로그램 풀의 웹앱:  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
   
-    -   **SharePoint - 80** 응용 프로그램 풀의 SharePoint 응용 프로그램:  
+  - **SharePoint - 80** 응용 프로그램 풀의 SharePoint 응용 프로그램:  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     또는  
+    또는  
   
--   Windows 탐색기 또는 파일 탐색기를 통해 사용 권한을 설정하려면 다음 단계를 수행합니다.  
+- Windows 탐색기 또는 파일 탐색기를 통해 사용 권한을 설정하려면 다음 단계를 수행합니다.  
   
-    1.  IntelliTrace 로그 디렉터리의 **속성** 을 엽니다.  
+  1.  IntelliTrace 로그 디렉터리의 **속성** 을 엽니다.  
   
-    2.  **보안** 탭에서 **편집**, **추가**를 차례로 선택합니다.  
+  2.  **보안** 탭에서 **편집**, **추가**를 차례로 선택합니다.  
   
-    3.  **개체 유형을 선택하세요.** 상자에 **기본 제공 보안 계정** 이 표시되는지 확인하고 여기에서 선택 하지는 경우 **개체 유형** 추가 합니다.  
+  3.  **개체 유형을 선택하세요.** 상자에 **기본 제공 보안 계정** 이 표시되는지 확인하고 여기에서 선택 하지는 경우 **개체 유형** 추가 합니다.  
   
-    4.  **찾을 위치를 선택하세요.** 상자에 로컬 컴퓨터가 표시되는지 확인하고 여기에서 선택 하지는 경우 **위치** 를 변경 합니다.  
+  4.  **찾을 위치를 선택하세요.** 상자에 로컬 컴퓨터가 표시되는지 확인하고 여기에서 선택 하지는 경우 **위치** 를 변경 합니다.  
   
-    5.  **선택할 개체 이름을 입력하세요.** 상자에 웹 앱 또는 SharePoint 응용 프로그램의 응용 프로그램 풀을 추가합니다.  
+  5.  **선택할 개체 이름을 입력하세요.** 상자에 웹 앱 또는 SharePoint 응용 프로그램의 응용 프로그램 풀을 추가합니다.  
   
-    6.  **이름 확인** 을 선택하여 이름을 확인합니다. **확인**을 선택합니다.  
+  6.  **이름 확인** 을 선택하여 이름을 확인합니다. **확인**을 선택합니다.  
   
-    7.  응용 프로그램 풀에 있는지 **읽기 & 실행** 권한.  
+  7.  응용 프로그램 풀에 있는지 **읽기 & 실행** 권한.  
   
 ##  <a name="MonitorEvents"></a> 2단계: 앱 모니터링 시작  
  Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) 명령을 사용하여 앱 모니터링을 시작합니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent를 사용하여 웹 응용 프로그램 모니터링](http://technet.microsoft.com/library/dn465157.aspx)을 참조하세요.  
@@ -149,83 +149,83 @@ ms.locfileid: "49073664"
 ####  <a name="Minimizing"></a> Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 해야 하나요?  
  **A:** Microsoft Monitoring Agent는 많은 데이터를 수집할 수 있으므로 수집하도록 선택하는 데이터 및 수집 방법에 따라 앱 성능에 영향을 줄 수 있습니다. 앱 속도를 그대로 유지하면서 대부분의 데이터를 가져올 수 있는 몇 가지 방법은 다음과 같습니다.  
   
--   웹 앱 및 SharePoint 응용 프로그램의 경우 Monitoring Agent는 지정한 응용 프로그램 풀을 공유하는 모든 앱에 대한 데이터를 기록합니다. 이로 인해 단일 응용 프로그램 풀을 공유하는 앱의 속도가 느려질 수 있습니다. 그러나 단일 앱의 모듈에서만 데이터를 수집하도록 제한할 수 있습니다. 앱 속도 저하를 방지하려면 각 앱을 자체 응용 프로그램 풀에서 호스트합니다.  
+- 웹 앱 및 SharePoint 응용 프로그램의 경우 Monitoring Agent는 지정한 응용 프로그램 풀을 공유하는 모든 앱에 대한 데이터를 기록합니다. 이로 인해 단일 응용 프로그램 풀을 공유하는 앱의 속도가 느려질 수 있습니다. 그러나 단일 앱의 모듈에서만 데이터를 수집하도록 제한할 수 있습니다. 앱 속도 저하를 방지하려면 각 앱을 자체 응용 프로그램 풀에서 호스트합니다.  
   
--   Monitoring Agent가 수집 계획에서 데이터를 수집하는 이벤트를 검토합니다. 수집 계획을 편집하여 관련이나 필요가 없는 이벤트를 사용하지 않도록 설정합니다. 이렇게 하면 시작 성능과 런타임 성능을 개선할 수 있습니다.  
+- Monitoring Agent가 수집 계획에서 데이터를 수집하는 이벤트를 검토합니다. 수집 계획을 편집하여 관련이나 필요가 없는 이벤트를 사용하지 않도록 설정합니다. 이렇게 하면 시작 성능과 런타임 성능을 개선할 수 있습니다.  
   
-     이벤트를 사용하지 않도록 설정하려면 `enabled` 요소의 `<DiagnosticEventSpecification>` 특성을 `false`로 설정합니다.  
+   이벤트를 사용하지 않도록 설정하려면 `enabled` 요소의 `<DiagnosticEventSpecification>` 특성을 `false`로 설정합니다.  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     `enabled` 특성이 없으면 이벤트는 사용하도록 설정됩니다.  
+   `enabled` 특성이 없으면 이벤트는 사용하도록 설정됩니다.  
   
-     예를 들면 다음과 같습니다.  
+   예를 들면 다음과 같습니다.  
   
-    -   Windows 워크플로를 사용하지 앱에 대해 Windows 워크플로 이벤트를 사용하지 않도록 설정합니다.  
+  -   Windows 워크플로를 사용하지 앱에 대해 Windows 워크플로 이벤트를 사용하지 않도록 설정합니다.  
   
-    -   레지스트리에 액세스하기는 하지만 레지스트리 설정에 문제가 표시되지 않는 앱에 대해 레지스트리 이벤트를 사용하지 않도록 설정합니다.  
+  -   레지스트리에 액세스하기는 하지만 레지스트리 설정에 문제가 표시되지 않는 앱에 대해 레지스트리 이벤트를 사용하지 않도록 설정합니다.  
   
--   Monitoring Agent가 수집 계획에서 데이터를 수집하는 모듈을 검토합니다. 다음 단계를 수행하여 관련이 있는 모듈만 포함하도록 수집 계획을 편집합니다.  
+- Monitoring Agent가 수집 계획에서 데이터를 수집하는 모듈을 검토합니다. 다음 단계를 수행하여 관련이 있는 모듈만 포함하도록 수집 계획을 편집합니다.  
   
-     이렇게 하면 앱 시작 및 실행 시 Monitoring Agent가 수집하는 메서드 호출 정보 및 기타 계측 데이터의 양이 감소합니다. 이 데이터를 통해 함수 호출로 전달되며 함수 호출에서 반환되는 값을 디버깅 및 검토할 때 코드를 단계별로 실행할 수 있습니다.  
+   이렇게 하면 앱 시작 및 실행 시 Monitoring Agent가 수집하는 메서드 호출 정보 및 기타 계측 데이터의 양이 감소합니다. 이 데이터를 통해 함수 호출로 전달되며 함수 호출에서 반환되는 값을 디버깅 및 검토할 때 코드를 단계별로 실행할 수 있습니다.  
   
-    1.  수집 계획을 엽니다. `<ModuleList>` 요소를 찾습니다.  
+  1. 수집 계획을 엽니다. `<ModuleList>` 요소를 찾습니다.  
   
-    2.  `<ModuleList>`에서 `isExclusionList` 특성을 `false`로 설정합니다.  
+  2. `<ModuleList>`에서 `isExclusionList` 특성을 `false`로 설정합니다.  
   
-    3.  `<Name>` 요소를 사용하여 파일 이름, 문자열 값(이름에 해당 문자열이 들어 있는 모듈이 포함됨) 또는 공개 키 중 하나로 각 모듈을 지정합니다.  
+  3. `<Name>` 요소를 사용하여 파일 이름, 문자열 값(이름에 해당 문자열이 들어 있는 모듈이 포함됨) 또는 공개 키 중 하나로 각 모듈을 지정합니다.  
   
      아래 예제는 Fabrikam Fiber 웹 앱의 기본 웹 모듈에서만 데이터를 수집하는 목록을 만듭니다.  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     이름에 "Fabrikam"이 포함되어 있는 모든 모듈에서 데이터를 수집하려면 다음과 같은 목록을 만듭니다.  
+   이름에 "Fabrikam"이 포함되어 있는 모든 모듈에서 데이터를 수집하려면 다음과 같은 목록을 만듭니다.  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     공개 키 토큰을 지정하여 모듈에서 데이터를 수집하려면 다음과 같은 목록을 만듭니다.  
+   공개 키 토큰을 지정하여 모듈에서 데이터를 수집하려면 다음과 같은 목록을 만듭니다.  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     **Q: 모듈만 제외하면 되지 않나요?**  
+   **Q: 모듈만 제외하면 되지 않나요?**  
   
-     **A:** 기본적으로 수집 계획에서는 `isExclusionList` 특성을 `true`로 설정하여 모듈을 제외합니다. 그러나 모듈을 제외해도 목록 기준을 충족하지 않거나 관련이 없는 모듈(예: 타사 또는 오픈 소스 모듈)에서 데이터가 수집될 수 있습니다.  
+   **A:** 기본적으로 수집 계획에서는 `isExclusionList` 특성을 `true`로 설정하여 모듈을 제외합니다. 그러나 모듈을 제외해도 목록 기준을 충족하지 않거나 관련이 없는 모듈(예: 타사 또는 오픈 소스 모듈)에서 데이터가 수집될 수 있습니다.  
   
 #### <a name="q-what-values-does-the-agent-collect"></a>Q: Monitoring Agent는 어떤 값을 수집하나요?  
  **A:** 성능에 대한 영향을 줄이기 위해 Monitoring Agent는 다음 값만 수집합니다.  
   
--   메서드로 전달되며 메서드에서 반환되는 기본 값 형식  
+- 메서드로 전달되며 메서드에서 반환되는 기본 값 형식  
   
--   메서드로 전달되며 메서드에서 반환되는 최상위 개체의 필드에 포함된 기본 데이터 형식  
+- 메서드로 전달되며 메서드에서 반환되는 최상위 개체의 필드에 포함된 기본 데이터 형식  
   
- 예를 들어 `AlterEmployee` 메서드 서명이 정수 `id` 및 `Employee` 개체 `oldemployee`를 허용한다고 가정해 보겠습니다.  
+  예를 들어 `AlterEmployee` 메서드 서명이 정수 `id` 및 `Employee` 개체 `oldemployee`를 허용한다고 가정해 보겠습니다.  
   
- `public Employee AlterEmployee(int id, Employee oldemployee)`  
+  `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
- `Employee` 형식에는 `Id`, `Name`및 `HomeAddress`특성이 있습니다. 그리고 `Employee` 및 `Address` 형식 간에는 연결 관계가 있습니다.  
+  `Employee` 형식에는 `Id`, `Name`및 `HomeAddress`특성이 있습니다. 그리고 `Employee` 및 `Address` 형식 간에는 연결 관계가 있습니다.  
   
- ![직원과 주소의 관계](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+  ![직원과 주소의 관계](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
- Monitoring Agent는 `id`메서드에서 반환되는 `Employee.Id`, `Employee.Name` , `Employee` 및 `AlterEmployee` 개체의 값을 기록합니다. 그러나 `Address` 개체에 대한 정보는 null인지 여부를 제외하고는 기록하지 않습니다. 또한 `AlterEmployee` 메서드의 로컬 변수에 대한 데이터도 기록하지 않습니다. 단, 다른 메서드가 해당 로컬 변수를 매개 변수로 사용하는 경우에는 로컬 변수가 메서드 매개 변수로 기록됩니다.  
+  Monitoring Agent는 `id`메서드에서 반환되는 `Employee.Id`, `Employee.Name` , `Employee` 및 `AlterEmployee` 개체의 값을 기록합니다. 그러나 `Address` 개체에 대한 정보는 null인지 여부를 제외하고는 기록하지 않습니다. 또한 `AlterEmployee` 메서드의 로컬 변수에 대한 데이터도 기록하지 않습니다. 단, 다른 메서드가 해당 로컬 변수를 매개 변수로 사용하는 경우에는 로컬 변수가 메서드 매개 변수로 기록됩니다.  
   
 ##  <a name="SaveEvents"></a> 3단계: 기록된 이벤트 저장  
  오류 또는 성능 문제가 발견되면 기록된 이벤트를 IntelliTrace 로그에 저장합니다. Monitoring Agent는 이벤트가 기록된 경우에만 로그를 만듭니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent를 사용하여 웹 응용 프로그램 모니터링](http://technet.microsoft.com/library/dn465157.aspx)을 참조하세요.  
@@ -233,63 +233,63 @@ ms.locfileid: "49073664"
 ### <a name="save-recorded-events-but-continue-monitoring"></a>기록된 이벤트를 저장하고 모니터링 계속  
  IntelliTrace 로그를 만들되 앱을 다시 시작하거나 모니터링을 중지하지는 않으려면 다음 단계를 수행합니다. 이렇게 하면 Monitoring Agent는 서버 또는 응용 프로그램이 다시 시작되어도 모니터링을 계속합니다.  
   
-1.  웹 서버에서 관리자 권한으로 Windows PowerShell 명령 프롬프트 창을 엽니다.  
+1. 웹 서버에서 관리자 권한으로 Windows PowerShell 명령 프롬프트 창을 엽니다.  
   
-2.  [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) 명령을 실행하여 IntelliTrace 로그의 스냅숏을 저장합니다.  
+2. [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) 명령을 실행하여 IntelliTrace 로그의 스냅숏을 저장합니다.  
   
-     **Checkpoint-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Checkpoint-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- 또는 -  
+    \- 또는 -  
   
-     **Checkpoint-webapplicationmonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Checkpoint-webapplicationmonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     예를 들어:  
+    예를 들어:  
   
-     **PS c:\\> Checkpoint-webapplicationmonitoring "Fabrikam\FabrikamFiber.Web"**  
+    **PS c:\\> Checkpoint-webapplicationmonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-     또는  
+    또는  
   
-     **PS c: > Checkpoint-webapplicationmonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
+    **PS c: > Checkpoint-webapplicationmonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
-     자세한 내용은 다음을 실행 합니다 **되는 get-help Checkpoint-webapplicationmonitoring-자세한** 명령 또는 **되는 get-help Checkpoint-webapplicationmonitoring-예제** 명령 합니다.  
+    자세한 내용은 다음을 실행 합니다 **되는 get-help Checkpoint-webapplicationmonitoring-자세한** 명령 또는 **되는 get-help Checkpoint-webapplicationmonitoring-예제** 명령 합니다.  
   
-3.  안전한 공유 폴더에 로그를 복사한 다음 Visual Studio Enterprise(Professional 또는 Community Edition 아님)가 설치되어 있는 컴퓨터에서 로그를 엽니다.  
+3. 안전한 공유 폴더에 로그를 복사한 다음 Visual Studio Enterprise(Professional 또는 Community Edition 아님)가 설치되어 있는 컴퓨터에서 로그를 엽니다.  
   
-    > [!IMPORTANT]
-    >  IntelliTrace 로그는 개인 데이터와 중요한 데이터를 포함할 수 있으므로 공유 시 주의해야 합니다. 이러한 로그에 액세스하는 모든 사용자에게 해당 데이터를 볼 권한이 있는지 확인합니다. 이와 관련한 사항은 회사의 개인 정보 보호 정책을 확인하세요.  
+   > [!IMPORTANT]
+   >  IntelliTrace 로그는 개인 데이터와 중요한 데이터를 포함할 수 있으므로 공유 시 주의해야 합니다. 이러한 로그에 액세스하는 모든 사용자에게 해당 데이터를 볼 권한이 있는지 확인합니다. 이와 관련한 사항은 회사의 개인 정보 보호 정책을 확인하세요.  
   
- **다음 단계:** [Visual Studio Enterprise에서 기록된 이벤트 진단](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **다음 단계:** [Visual Studio Enterprise에서 기록된 이벤트 진단](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>기록된 이벤트를 저장하고 모니터링 중지  
  특정 문제를 재현하는 동안에만 진단 정보를 확인하려면 다음 단계를 수행합니다. 그러면 웹 서버에서 모든 웹앱이 다시 시작됩니다.  
   
-1.  웹 서버에서 관리자 권한으로 Windows PowerShell 명령 프롬프트 창을 엽니다.  
+1. 웹 서버에서 관리자 권한으로 Windows PowerShell 명령 프롬프트 창을 엽니다.  
   
-2.  [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) 명령을 실행하여 IntelliTrace 로그를 만든 다음 특정 웹앱 모니터링을 중지합니다.  
+2. [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) 명령을 실행하여 IntelliTrace 로그를 만든 다음 특정 웹앱 모니터링을 중지합니다.  
   
-     **Stop-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Stop-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- 또는 -  
+    \- 또는 -  
   
-     **Stop-webapplicationmonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Stop-webapplicationmonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     또는 모든 웹앱 모니터링을 중지하려면 다음 명령을 실행합니다.  
+    또는 모든 웹앱 모니터링을 중지하려면 다음 명령을 실행합니다.  
   
-     **Stop-webapplicationmonitoring-모두**  
+    **Stop-webapplicationmonitoring-모두**  
   
-     예를 들어:  
+    예를 들어:  
   
-     **PS c:\\> Stop-webapplicationmonitoring "Fabrikam\iFabrikamFiber.Web"**  
+    **PS c:\\> Stop-webapplicationmonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-     \- 또는 -  
+    \- 또는 -  
   
-     **PS c:\\> Stop-webapplicationmonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
+    **PS c:\\> Stop-webapplicationmonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
-     자세한 내용은 다음을 실행 합니다 **되는 get-help Stop-webapplicationmonitoring-자세한** 명령 또는 **되는 get-help Stop-webapplicationmonitoring-예제** 명령 합니다.  
+    자세한 내용은 다음을 실행 합니다 **되는 get-help Stop-webapplicationmonitoring-자세한** 명령 또는 **되는 get-help Stop-webapplicationmonitoring-예제** 명령 합니다.  
   
-3.  안전한 공유 폴더에 로그를 복사한 다음 Visual Studio Enterprise가 설치되어 있는 컴퓨터에서 로그를 엽니다.  
+3. 안전한 공유 폴더에 로그를 복사한 다음 Visual Studio Enterprise가 설치되어 있는 컴퓨터에서 로그를 엽니다.  
   
- **다음 단계:** [Visual Studio Enterprise에서 기록된 이벤트 진단](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **다음 단계:** [Visual Studio Enterprise에서 기록된 이벤트 진단](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Q&A  
   

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ab79ace55b8248b3770f2e5911bf974e724296
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 00ecabcf90e63b18961a828c12ae300be359b5a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839988"
 ---
 # <a name="combo-element"></a>Combo 요소
 콤보 상자에 표시 되는 명령을 정의 합니다. 네 가지 종류의 콤보 상자, 다음과 같이: DropDownCombo, DynamicCombo, IndexCombo, 및 MRUCombo 합니다.  
@@ -64,7 +64,7 @@ ms.locfileid: "39233128"
 |-------------|-----------------|  
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```xml  
 <Combo guid="guidWidgetPackage" id="cmdidInsertOptions"  

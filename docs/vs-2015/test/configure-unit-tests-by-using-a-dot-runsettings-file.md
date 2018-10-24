@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817979"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings 파일을 사용하여 단위 테스트 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "49255621"
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>.runsettings 파일을 사용하여 테스트 사용자 지정  
   
-1.  XML 파일을 Visual Studio 솔루션에 추가하고 이름을 test.runsettings로 바꿉니다. 파일 이름은 아무런 상관이 없지만 확장명은 .runsettings를 사용해야 합니다.  
+1. XML 파일을 Visual Studio 솔루션에 추가하고 이름을 test.runsettings로 바꿉니다. 파일 이름은 아무런 상관이 없지만 확장명은 .runsettings를 사용해야 합니다.  
   
-2.  파일 콘텐츠를 [예제](#example)로 바꿉니다.  
+2. 파일 콘텐츠를 [예제](#example)로 바꿉니다.  
   
-     각자의 요구에 따라 편집합니다.  
+    각자의 요구에 따라 편집합니다.  
   
-3.  **테스트** 메뉴에서 **테스트 설정**, **테스트 설정 파일 선택**을 차례로 선택합니다.  
+3. **테스트** 메뉴에서 **테스트 설정**, **테스트 설정 파일 선택**을 차례로 선택합니다.  
   
- 솔루션에 \*.runsettings 파일을 두 개 이상 만들고 **테스트 설정** 메뉴를 사용하여 다른 시간에 사용하거나 사용하지 않도록 설정할 수 있습니다.  
+   솔루션에 \*.runsettings 파일을 두 개 이상 만들고 **테스트 설정** 메뉴를 사용하여 다른 시간에 사용하거나 사용하지 않도록 설정할 수 있습니다.  
   
- ![실행 설정 파일 사용](../test/media/runsettings-1.png "RunSettings-1")  
+   ![실행 설정 파일 사용](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> 이 예제의 .runsettings 파일 복사  
  다음은 일반적인 *.runsettings 파일입니다. 모든 값에는 기본값이 있으므로 파일의 각 요소는 선택 사항입니다.  

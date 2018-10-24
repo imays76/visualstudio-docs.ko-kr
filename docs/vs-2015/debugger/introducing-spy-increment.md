@@ -16,33 +16,33 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60ad2462d5b5331401384f528c7baf93d91851df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844628"
 ---
 # <a name="introducing-spy"></a>Spy++ 소개
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spy++에서는 다음 작업을 수행할 수 있습니다.  
   
--   시스템 개체 간의 관계를 그래픽 트리로 표시합니다. 여기에는 [프로세스](../debugger/processes-view.md), [스레드](../debugger/threads-view.md)및 [창](../debugger/windows-view.md)이 포함됩니다.  
+- 시스템 개체 간의 관계를 그래픽 트리로 표시합니다. 여기에는 [프로세스](../debugger/processes-view.md), [스레드](../debugger/threads-view.md)및 [창](../debugger/windows-view.md)이 포함됩니다.  
   
--   지정된 [창](../debugger/how-to-search-for-a-window-in-windows-view.md), [스레드](../debugger/how-to-search-for-a-thread-in-threads-view.md), [프로세스](../debugger/how-to-search-for-a-process-in-processes-view.md)또는 [메시지](../debugger/how-to-search-for-a-message-in-messages-view.md)를 검색합니다.  
+- 지정된 [창](../debugger/how-to-search-for-a-window-in-windows-view.md), [스레드](../debugger/how-to-search-for-a-thread-in-threads-view.md), [프로세스](../debugger/how-to-search-for-a-process-in-processes-view.md)또는 [메시지](../debugger/how-to-search-for-a-message-in-messages-view.md)를 검색합니다.  
   
--   선택한 [창](../debugger/how-to-display-window-properties.md), [스레드](../debugger/how-to-display-thread-properties.md), [프로세스](../debugger/how-to-display-process-properties.md)또는 [메시지](../debugger/how-to-display-message-properties.md)의 속성을 봅니다.  
+- 선택한 [창](../debugger/how-to-display-window-properties.md), [스레드](../debugger/how-to-display-thread-properties.md), [프로세스](../debugger/how-to-display-process-properties.md)또는 [메시지](../debugger/how-to-display-message-properties.md)의 속성을 봅니다.  
   
--   보기에서 직접 창, 스레드, 프로세스 또는 메시지를 선택합니다.  
+- 보기에서 직접 창, 스레드, 프로세스 또는 메시지를 선택합니다.  
   
--   [찾기 도구](../debugger/how-to-use-the-finder-tool.md) 로 마우스 포인터를 이동하여 창을 선택합니다.  
+- [찾기 도구](../debugger/how-to-use-the-finder-tool.md) 로 마우스 포인터를 이동하여 창을 선택합니다.  
   
--   복잡한 메시지 로그 선택 매개 변수를 사용하여 **메시지 옵션** 을 설정합니다.  
+- 복잡한 메시지 로그 선택 매개 변수를 사용하여 **메시지 옵션** 을 설정합니다.  
   
- Spy++의 도구 모음과 하이퍼링크를 사용하면 더 빨리 작업할 수 있습니다. 또한 Spy++는 활성 보기를 업데이트할 수 있는 **새로 고침** 명령, 검색을 더 용이하게 해 주는 **창 찾기 도구** , 보기 창을 사용자 지정할 수 있는 **글꼴** 대화 상자를 제공합니다. 또한 Spy++에서는 사용자 기본 설정을 저장 및 복원할 수 있습니다.  
+  Spy++의 도구 모음과 하이퍼링크를 사용하면 더 빨리 작업할 수 있습니다. 또한 Spy++는 활성 보기를 업데이트할 수 있는 **새로 고침** 명령, 검색을 더 용이하게 해 주는 **창 찾기 도구** , 보기 창을 사용자 지정할 수 있는 **글꼴** 대화 상자를 제공합니다. 또한 Spy++에서는 사용자 기본 설정을 저장 및 복원할 수 있습니다.  
   
- 다양한 Spy++ 창에서 마우스 오른쪽 단추를 클릭하면 자주 사용되는 명령의 바로 가기 메뉴를 표시할 수 있습니다. 표시되는 명령은 포인터가 있는 위치에 따라 달라집니다. 예를 들어 창 보기에서 항목을 마우스 오른쪽 단추로 클릭하여 선택한 창이 보이는 경우에 바로 가기 메뉴의 **강조** 를 클릭하면 더 쉽게 찾을 수 있도록 선택한 창의 테두리가 깜빡입니다.  
+  다양한 Spy++ 창에서 마우스 오른쪽 단추를 클릭하면 자주 사용되는 명령의 바로 가기 메뉴를 표시할 수 있습니다. 표시되는 명령은 포인터가 있는 위치에 따라 달라집니다. 예를 들어 창 보기에서 항목을 마우스 오른쪽 단추로 클릭하여 선택한 창이 보이는 경우에 바로 가기 메뉴의 **강조** 를 클릭하면 더 쉽게 찾을 수 있도록 선택한 창의 테두리가 깜빡입니다.  
   
 > [!NOTE]
 >  그 밖에 유사한 두 가지 유틸리티가 있습니다. Spy++: PView는 프로세스 및 스레드에 대한 상세 정보를 표시하고, DDESPY.EXE는 DDE(동적 데이터 교환) 메시지 모니터링에 사용할 수 있습니다.  

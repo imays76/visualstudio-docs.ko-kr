@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4276009244f1d49b89311d5d158a34bebf3fcf23
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: a7ab7b278c03d092e1e559f1eb74f5d6bdc86d85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816861"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
-표시할 통합된 개발 환경 (IDE)에 대 한 하나의 디스어셈블리 명령에 설명 합니다.  
+표시할 통합된 개발 환경 (IDE)에 대 한 하나의 디스어셈블리 명령을 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -65,56 +65,56 @@ public struct DisassemblyData {
   
 ## <a name="members"></a>멤버  
  `dwFields`  
- [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) 채워진 필드를 지정 하는 상수입니다.  
+ 합니다 [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) 채워진 필드를 지정 하는 상수입니다.  
   
  `bstrAddress`  
- 몇 가지 시작 지점 (일반적으로 연결 된 함수의 시작) 로부터의 오프셋으로 주소입니다.  
+ 일부 시작 지점 (일반적으로 연결 된 함수의 시작)에서 오프셋으로 주소입니다.  
   
  `bstrCodeBytes`  
- 이 명령에 대해 코드 바이트입니다.  
+ 이 명령에 대 한 코드 바이트입니다.  
   
  `bstrOpcode`  
- 이 명령에 대해 opcode입니다.  
+ 이 명령에 대 한 opcode입니다.  
   
  `bstrOperands`  
  이 명령에 대 한 피연산자입니다.  
   
  `bstrSymbol`  
- 기호 이름이 있는 경우 연관 된 주소 (공용 기호, 레이블 및 등).  
+ 기호 이름을 있으면 주소 (공용 기호, 레이블 및 등)를 사용 하 여 연결 합니다.  
   
  `uCodeLocationId`  
- 이 코드 위치 식별자 줄을 디스어셈블합니다. 한 줄의 코드 컨텍스트 주소를 다른 형식의 코드 컨텍스트 주소 보다 큰 다음 디스어셈블된 코드 위치 식별자의 첫 번째 두 번째 코드 위치 식별자 보다 클 수도 있습니다.  
+ 디스어셈블된이 줄의 코드 위치 식별자입니다. 한 줄의 코드 컨텍스트 주소를 다른 코드 컨텍스트 주소 보다 큰 다음 첫 번째 디스어셈블된 코드 위치 식별자를 두 번째 코드 위치 식별자를 초과할 수도 있습니다.  
   
  `posBeg`  
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 디스어셈블리 데이터가 시작 되는 문서에서 위치에 해당 하는 합니다.  
+ 합니다 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 디스어셈블리 데이터 시작 하는 문서에는 위치에 해당 하는 합니다.  
   
  `posEnd`  
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 디스어셈블리 데이터 끝나는 문서에서 위치에 해당 하는 합니다.  
+ 합니다 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 디스어셈블리 데이터 끝나는 문서의 위치에 해당 하는 합니다.  
   
  `bstrDocumentUrl`  
- 파일 이름으로 나타낼 수 있는 텍스트 문서에 대 한는 `bstrDocumentUrl` 소스를 찾을 수 있는, 파일 이름 필드는 채웁니다는 형식을 사용 하 여 `file://file name`합니다.  
+ 파일 이름으로 나타낼 수 있는 텍스트 문서에 대 한 합니다 `bstrDocumentUrl` 소스를 찾을 수 있는, 파일 이름 필드는 채웁니다 형식을 사용 하 여 `file://file name`입니다.  
   
- 파일 이름으로 표현할 수 없는 텍스트 문서에 대 한 `bstrDocumentUrl` 는 문서에 대 한 고유 식별자 이며 디버그 엔진 구현 해야 합니다는 [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) 메서드.  
+ 파일 이름으로 표현할 수 없는 텍스트 문서에 대 한 `bstrDocumentUrl` 문서에 대 한 고유 식별자 이며 디버그 엔진 구현 해야 합니다 [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) 메서드.  
   
- 이 필드는 체크섬에 대 한 추가 정보를 포함할 수도 있습니다. 자세한 내용은 설명 부분을 참조 하십시오.  
+ 이 필드는 체크섬에 대 한 추가 정보를 포함할 수도 있습니다. 세부 정보에 대 한 설명을 참조 하세요.  
   
  `dwByteOffset`  
  명령 코드 줄의 시작 부분에서 바이트 수입니다.  
   
  `dwFlags`  
- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) 활성는 플래그를 지정 하는 상수입니다.  
+ 합니다 [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) 활성화 되어 있는 플래그를 지정 하는 상수입니다.  
   
 ## <a name="remarks"></a>설명  
- 각 `DisassemblyData` 구조 디스어셈블리의 명령에 설명 합니다. 이러한 구조체의 배열에서 반환 되는 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 메서드.  
+ 각 `DisassemblyData` 구조 디스어셈블리의 명령 하나에서 설명 합니다. 이러한 구조체의 배열에서 반환 되는 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 메서드.  
   
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조 텍스트 기반 문서에만에 사용 됩니다. 예를 들어 문이나 줄에서 생성 된 첫 번째 명령에 대해서만이 명령에 대 한 소스 코드 범위 입력, `dwByteOffset == 0`합니다.  
+ 합니다 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 텍스트 기반 문서에만 구조를 사용 합니다. 예를 들어 문이나 줄에서 생성 된 첫 번째 명령에 대해서만이 명령에 대 한 소스 코드 범위를 채우는 경우 `dwByteOffset == 0`합니다.  
   
- 문서는 텍스트가 아닌에 대 한 문서 컨텍스트에서에서 얻을 수 있습니다는 코드와 `bstrDocumentUrl` 필드에 null 값 이어야 합니다. 경우는 `bstrDocumentUrl` 필드와 같습니다는 `bstrDocumentUrl` 필드에 이전 `DisassemblyData` 배열 요소를 설정 합니다.는 `bstrDocumentUrl` null 값으로.  
+ 텍스트가 아닌 된 문서에 대 한 코드에서 문서 컨텍스트를 가져오거나 및 `bstrDocumentUrl` 필드에 null 값 이어야 합니다. 경우는 `bstrDocumentUrl` 필드와 동일 합니다 `bstrDocumentUrl` 이전 필드 `DisassemblyData` 설정한 다음 요소를 배열를 `bstrDocumentUrl` null 값으로.  
   
- 경우는 `dwFlags` 필드에는 `DF_DOCUMENT_CHECKSUM` 플래그가 설정, 추가 체크섬 정보에서 가리키는 문자열 뒤에 나오는 다음는 `bstrDocumentUrl` 필드입니다. 특히, null 문자열 종결자 후 있습니다 뒤에 오는 체크섬의 바이트 수를 나타내는 4 바이트 값으로 다시 다음 하 고 차례로 뒤에 체크섬 바이트 체크섬 알고리즘을 식별 하는 GUID입니다. 인코딩 및 디코딩이 필드에서 하는 방법에이 항목의 예제를 참조 하십시오. [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]합니다.  
+ 경우는 `dwFlags` 필드에는 `DF_DOCUMENT_CHECKSUM` 플래그가 설정 추가 체크섬 정보에서 가리키는 문자열 뒤에 나오는 다음는 `bstrDocumentUrl` 필드입니다. 특히, null 문자열 종결자가 오는, 후 있습니다 따릅니다 체크섬의 바이트 수를 나타내는 4 바이트 값 뒤에 그 다음에 다시 체크섬 바이트로 체크섬 알고리즘을 식별 하는 GUID입니다. 인코딩 및 디코딩이 필드에서 하는 방법은이 항목의 예제를 참조 하세요. [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]합니다.  
   
 ## <a name="example"></a>예제  
- `bstrDocumentUrl` 경우 필드 문자열 이외의 추가 정보를 포함 될 수는 `DF_DOCUMENT_CHECKSUM` 플래그가 설정 되어 있습니다. 만들고이 인코딩된 문자열을 읽는 간단에서 [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]합니다. 그러나 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)], 다른 문제를입니다. 사용자를 위해 자세한 내용을 보려면, 다음 예제에서는에서 인코딩된 문자열을 만드는 한 가지 방법은 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] 에서 인코딩된 문자열을 디코딩하는 한 가지 방법은 및 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]합니다.  
+ 합니다 `bstrDocumentUrl` 경우 필드를 문자열 이외의 추가 정보를 포함할 수 있습니다는 `DF_DOCUMENT_CHECKSUM` 플래그를 설정 합니다. 이 인코딩된 문자열을 읽고 만드는 과정은 만들었다면 [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]합니다. 그러나 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)], 또 다른 문제는 것입니다. 사용자에 게 내용을 보려면, 다음 예제에서는에서 인코딩된 문자열을 만드는 한 가지 방법은 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] 인코딩된 문자열을 디코드 하는 한 가지 방법은 및 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]합니다.  
   
 ```csharp  
 using System;  

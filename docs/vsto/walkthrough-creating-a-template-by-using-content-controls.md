@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833189"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>연습: 콘텐츠 컨트롤을 사용 하 여 템플릿 만들기
   이 연습에서는 콘텐츠 컨트롤을 사용하여 Microsoft Office Word 서식 파일에서 구조화되고 재사용 가능한 콘텐츠를 만드는 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다.  
@@ -35,17 +35,17 @@ ms.locfileid: "35674860"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   디자인 타임에 Word 서식 파일에서 콘텐츠 컨트롤이 포함된 표 만들기  
+- 디자인 타임에 Word 서식 파일에서 콘텐츠 컨트롤이 포함된 표 만들기  
   
--   프로그래밍 방식으로 콤보 상자 콘텐츠 컨트롤 및 드롭다운 목록 콘텐츠 컨트롤 채우기  
+- 프로그래밍 방식으로 콤보 상자 콘텐츠 컨트롤 및 드롭다운 목록 콘텐츠 컨트롤 채우기  
   
--   사용자가 지정된 표를 편집할 수 없도록 차단  
+- 사용자가 지정된 표를 편집할 수 없도록 차단  
   
--   서식 파일의 문서 블록 컬렉션에 표 추가  
+- 서식 파일의 문서 블록 컬렉션에 표 추가  
   
--   서식 파일에서 사용 가능한 문서 블록을 표시하는 콘텐츠 컨트롤 만들기  
+- 서식 파일에서 사용 가능한 문서 블록을 표시하는 콘텐츠 컨트롤 만들기  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -68,31 +68,31 @@ ms.locfileid: "35674860"
   
 ### <a name="to-create-the-employee-table"></a>Employee 표를 만들려면  
   
-1.  호스트 되는 Word 서식 파일에는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디자이너 리본 메뉴를 클릭 합니다 **삽입** 탭 합니다.  
+1. 호스트 되는 Word 서식 파일에는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디자이너 리본 메뉴를 클릭 합니다 **삽입** 탭 합니다.  
   
-2.  에 **테이블** 그룹에서 클릭 **테이블**, 두 개의 열 / 행 4 개를 사용 하 여 테이블을 삽입 합니다.  
+2. 에 **테이블** 그룹에서 클릭 **테이블**, 두 개의 열 / 행 4 개를 사용 하 여 테이블을 삽입 합니다.  
   
-3.  다음 열과 비슷하도록 첫 번째 열에 텍스트를 입력합니다.  
+3. 다음 열과 비슷하도록 첫 번째 열에 텍스트를 입력합니다.  
   
-    ||  
-    |-|  
-    |**직원 이름**|  
-    |**채용 날짜**|  
-    |**제목**|  
-    |**그림**|  
+   ||  
+   |-|  
+   |**직원 이름**|  
+   |**채용 날짜**|  
+   |**제목**|  
+   |**그림**|  
   
-4.  두 번째 열의 첫 번째 셀을 클릭 (옆 **Employee Name**).  
+4. 두 번째 열의 첫 번째 셀을 클릭 (옆 **Employee Name**).  
   
-5.  리본에서 **개발자** 탭을 클릭합니다.  
+5. 리본에서 **개발자** 탭을 클릭합니다.  
   
-    > [!NOTE]  
-    >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
+   > [!NOTE]  
+   >  **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본에 개발 도구 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)합니다.  
   
-6.  에 **컨트롤** 그룹에서 클릭 합니다 **텍스트** 단추 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") 를추가할<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>첫째 셀으로 합니다.  
+6. 에 **컨트롤** 그룹에서 클릭 합니다 **텍스트** 단추 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") 를추가할<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>첫째 셀으로 합니다.  
   
-7.  두 번째 열의 두 번째 셀을 클릭 (옆 **Hire Date**).  
+7. 두 번째 열의 두 번째 셀을 클릭 (옆 **Hire Date**).  
   
-8.  **컨트롤** 그룹에서 클릭 합니다 **날짜 선택** 단추 ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") 를추가하려면<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 두 번째 셀에 있습니다.  
+8. **컨트롤** 그룹에서 클릭 합니다 **날짜 선택** 단추 ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") 를추가하려면<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 두 번째 셀에 있습니다.  
   
 9. 두 번째 열의 세 번째 셀을 클릭 (옆 **Title**).  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35674860"
   
 ### <a name="to-create-the-customer-feedback-table"></a>사용자 의견 표를 만들려면  
   
-1.  Word 서식 파일에서 이전에 추가한 employee 표 뒤의 줄을 클릭 하 고 키를 누릅니다 **Enter** 새 단락을 추가 합니다.  
+1. Word 서식 파일에서 이전에 추가한 employee 표 뒤의 줄을 클릭 하 고 키를 누릅니다 **Enter** 새 단락을 추가 합니다.  
   
-2.  리본 메뉴에서를 클릭 합니다 **삽입** 탭 합니다.  
+2. 리본 메뉴에서를 클릭 합니다 **삽입** 탭 합니다.  
   
-3.  에 **테이블** 그룹에서 클릭 **테이블**, 테이블 두 개 열과 3 개의 행을 삽입 합니다.  
+3. 에 **테이블** 그룹에서 클릭 **테이블**, 테이블 두 개 열과 3 개의 행을 삽입 합니다.  
   
-4.  다음 열과 비슷하도록 첫 번째 열에 텍스트를 입력합니다.  
+4. 다음 열과 비슷하도록 첫 번째 열에 텍스트를 입력합니다.  
   
-    ||  
-    |-|  
-    |**고객 이름**|  
-    |**만족도 등급**|  
-    |**설명**|  
+   ||  
+   |-|  
+   |**고객 이름**|  
+   |**만족도 등급**|  
+   |**설명**|  
   
-5.  두 번째 열의 첫 번째 셀을 클릭 (옆 **Customer Name**).  
+5. 두 번째 열의 첫 번째 셀을 클릭 (옆 **Customer Name**).  
   
-6.  리본에서 **개발자** 탭을 클릭합니다.  
+6. 리본에서 **개발자** 탭을 클릭합니다.  
   
-7.  에 **컨트롤** 그룹에서 클릭 합니다 **텍스트** 단추 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") 를추가할<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>첫째 셀으로 합니다.  
+7. 에 **컨트롤** 그룹에서 클릭 합니다 **텍스트** 단추 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") 를추가할<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>첫째 셀으로 합니다.  
   
-8.  두 번째 열의 두 번째 셀을 클릭 (옆 **Satisfaction Rating**).  
+8. 두 번째 열의 두 번째 셀을 클릭 (옆 **Satisfaction Rating**).  
   
 9. 에 **컨트롤** 그룹에서 클릭 합니다 **드롭 다운 목록** 단추 ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") 추가할를 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 두 번째 셀에 있습니다.  
   

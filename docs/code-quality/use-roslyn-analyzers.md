@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817043"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>구성 및 Roslyn 분석기 규칙 사용
 
@@ -121,15 +121,15 @@ A [규칙 집합](../code-quality/using-rule-sets-to-group-code-analysis-rules.m
 
 하나 이상의 진단 표시 하지 않을 수 있습니다 합니다 **오류 목록** 을 선택 하 여 요소를 표시 하지 않으려면 하 고 마우스 오른쪽 단추로 클릭 한 다음 **표시 안 함** > **소스**  나 **표시 안 함** > **억제 파일에**입니다.
 
-   - 선택 하는 경우 **소스**서 **변경 내용 미리 보기** 대화 상자가 열리고 C#의 미리 보기를 보여 줍니다 [#pragma 경고](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 또는 Visual Basic [#Disable 경고](/dotnet/visual-basic/language-reference/directives/directives) 소스 코드에 추가 되는 지시문입니다.
+- 선택 하는 경우 **소스**서 **변경 내용 미리 보기** 대화 상자가 열리고 C#의 미리 보기를 보여 줍니다 [#pragma 경고](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 또는 Visual Basic [#Disable 경고](/dotnet/visual-basic/language-reference/directives/directives) 소스 코드에 추가 되는 지시문입니다.
 
-      ![코드 파일에서 #pragma 경고를 추가 하는 미리 보기](media/pragma-warning-preview.png)
+   ![코드 파일에서 #pragma 경고를 추가 하는 미리 보기](media/pragma-warning-preview.png)
 
-   - 선택 하는 경우 **억제 파일에**의 **변경 내용 미리 보기** 대화 상자가 열리고의 미리 보기를 표시 합니다 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 전역 비 표시 오류 파일에 추가 되는 특성입니다.
+- 선택 하는 경우 **억제 파일에**의 **변경 내용 미리 보기** 대화 상자가 열리고의 미리 보기를 표시 합니다 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 전역 비 표시 오류 파일에 추가 되는 특성입니다.
 
-      ![SuppressMessage 특성 억제 파일에 추가 하는 미리 보기](media/preview-changes-in-suppression-file.png)
+   ![SuppressMessage 특성 억제 파일에 추가 하는 미리 보기](media/preview-changes-in-suppression-file.png)
 
-   에 **변경 내용 미리 보기** 대화 상자에서 **적용**합니다.
+에 **변경 내용 미리 보기** 대화 상자에서 **적용**합니다.
 
 합니다 **오류 목록** 진단 또는 둘 다에서 위반 라이브 코드 분석 및 작성 하는 규칙을 표시 합니다. 빌드 진단 일 수 있으므로 유효 하지 않은 예를 들어, 위반을 수정 하기 위해 코드를 편집 했습니다 해도 다시 작성 하지 않은 경우 억제할 수 없습니다에서 이러한 진단 합니다 **오류 목록**합니다. 그러나 실시간 분석 또는 IntelliSense에서 현재 소스를 사용 하 여 항상 최신임 진단과에서 표시 하지 않을 수 있습니다 합니다 **오류 목록**합니다. 제거 옵션을 마우스 오른쪽 단추로 클릭 하거나 컨텍스트 메뉴에서 사용할 경우 있기 때문일 수 있습니다 여러 개 이상의 빌드에 선택한 진단 합니다. 빌드 진단 선택 항목에서 제외할 전환 합니다 **오류 목록** 에서 원본 필터 **빌드 + IntelliSense** 에 **Intellisense만**. 진단 표시 안 함 및 이전에 설명 된 대로 진행 하려면를 선택 합니다.
 
