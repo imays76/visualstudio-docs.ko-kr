@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878559"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인별 언어 디자이너 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ DSL 정의 편집 하는 데 사용 하는 디자이너에 확장을 만들 수 
   
  확장을 배포 하는 기본 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 다른 컴퓨터에 다음이 단계를 수행 합니다.  
   
-1.  Bin의 VSIX 프로젝트에 VSIX 설치 파일을 찾거나\\*\*\\\*.vsix  
+1. Bin의 VSIX 프로젝트에 VSIX 설치 파일을 찾거나\\*\*\\\*.vsix  
   
-2.  대상 컴퓨터에이 파일을 복사 하 고 Windows 탐색기 (또는 파일 탐색기)에서 두 번 클릭 합니다.  
+2. 대상 컴퓨터에이 파일을 복사 하 고 Windows 탐색기 (또는 파일 탐색기)에서 두 번 클릭 합니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장이 설치 되어 있는지 확인 하려면 확장 관리자가 열립니다.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장이 설치 되어 있는지 확인 하려면 확장 관리자가 열립니다.  
   
- 확장을 제거 하려면 다음이 단계를 수행 합니다.  
+   확장을 제거 하려면 다음이 단계를 수행 합니다.  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.  
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.  
   
-2.  확장을 선택 하 여 삭제 합니다.  
+4. 확장을 선택 하 여 삭제 합니다.  
   
 ## <a name="adding-a-shortcut-menu-command"></a>바로 가기 메뉴 명령 추가  
  바로 가기 메뉴 명령 또는 DSL 탐색기 창에서 DSL 디자이너 화면에 표시 되도록 다음과 비슷한 클래스를 작성 합니다.  

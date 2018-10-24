@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: c8eb9e566f4f5916961a95a1c61f8fdcbb689f1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876219"
 ---
 # <a name="localize-menu-commands"></a>메뉴 명령 지역화
 지역화 된 만들어 메뉴 및 도구 모음 명령에 대 한 지역화 된 텍스트를 제공할 수 있습니다 *.vsct* 파일과 지역화 *.resx* 통합 하기 위해 VSPackage를 및 프로젝트 파일을 업데이트 한 다음 파일을 변경 내용입니다.  
@@ -33,48 +33,48 @@ ms.locfileid: "46495455"
 ## <a name="localize-command-names"></a>명령 이름을 지역화합니다  
  Vspackage에서 메뉴 명령 및 도구 모음 단추에 정의 되어는 *.vsct* 파일입니다.  
   
-1.  **솔루션 탐색기**의 이름을 변경 합니다 *.vsct* 에서 파일 *filename.vsct* 에 *filename.en US.vsct*합니다.  
+1. **솔루션 탐색기**의 이름을 변경 합니다 *.vsct* 에서 파일 *filename.vsct* 에 *filename.en US.vsct*합니다.  
   
-2.  복사본을 만듭니다 *filename.en US.vsct* 각각에 대 한 지역화 된 언어입니다.  
+2. 복사본을 만듭니다 *filename.en US.vsct* 각각에 대 한 지역화 된 언어입니다.  
   
-     각 복사본의 이름을 *파일 이름입니다. { 로캘}.vsct*, 여기서 *{로캘}* 특정 문화권 이름입니다. 문화권 이름 값의 목록을 참조 하세요 [Locale IDs assigned by Microsoft](/windows/uwp/publish/supported-languages)합니다.  
+    각 복사본의 이름을 *파일 이름입니다. { 로캘}.vsct*, 여기서 *{로캘}* 특정 문화권 이름입니다. 문화권 이름 값의 목록을 참조 하세요 [Locale IDs assigned by Microsoft](/windows/uwp/publish/supported-languages)합니다.  
   
-     이러한 *파일 이름입니다. Locale.vsct* 파일 패키지에 대 한 지역화 된 메뉴 텍스트가 포함 됩니다.  
+    이러한 *파일 이름입니다. Locale.vsct* 파일 패키지에 대 한 지역화 된 메뉴 텍스트가 포함 됩니다.  
   
-3.  각 열 *파일 이름입니다. Locale.vsct* 텍스트를 지역화할 파일입니다.  
+3. 각 열 *파일 이름입니다. Locale.vsct* 텍스트를 지역화할 파일입니다.  
   
-    1.  수정 된 [ButtonText](../extensibility/buttontext-element.md) 값 요소는 해당 언어에 적합 하 게 합니다.  
+   1. 수정 된 [ButtonText](../extensibility/buttontext-element.md) 값 요소는 해당 언어에 적합 하 게 합니다.  
   
-    2.  지역화 된 아이콘을 제공 하는 경우 수정 합니다 [비트맵](../extensibility/bitmap-element.md) 대상 파일을 가리키도록 값입니다.  
+   2. 지역화 된 아이콘을 제공 하는 경우 수정 합니다 [비트맵](../extensibility/bitmap-element.md) 대상 파일을 가리키도록 값입니다.  
   
-     다음 예제에서는 패밀리 트리 탐색기 도구 창을 열려면 명령에 대 한 영어와 스페인어 단추 텍스트를 보여 줍니다.  
+      다음 예제에서는 패밀리 트리 탐색기 도구 창을 열려면 명령에 대 한 영어와 스페인어 단추 텍스트를 보여 줍니다.  
   
-     [*FamilyTree.en US.vsct*]  
+      [*FamilyTree.en US.vsct*]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Family Tree Explorer</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Family Tree Explorer</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
-     [*FamilyTree.es ES.vsct*]  
+    [*FamilyTree.es ES.vsct*]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Explorar el arbol genealogico</ButtonText>  
-      </Strings>  
-    </Button>  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Explorar el arbol genealogico</ButtonText>  
+     </Strings>  
+   </Button>  
   
-    ```  
+   ```  
   
 ## <a name="localize-other-text-resources"></a>다른 텍스트 리소스를 지역화 합니다.  
  명령 이름 이외의 텍스트 리소스는 리소스에서 정의 (*.resx*) 파일입니다.  

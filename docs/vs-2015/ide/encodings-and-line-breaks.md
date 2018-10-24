@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880730"
 ---
 # <a name="encodings-and-line-breaks"></a>인코딩 및 줄 바꿈
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ Visual Studio에서 **파일/고급 저장 옵션** 설정을 사용하여 원�
   
  Visual Studio에서 다음 문자는 줄 바꿈으로 해석됩니다.  
   
--   CRLF: 캐리지 리턴 + 줄 바꿈, 유니코드 문자 000D + 000A  
+- CRLF: 캐리지 리턴 + 줄 바꿈, 유니코드 문자 000D + 000A  
   
--   LF: 줄 바꿈, 유니코드 문자 000A  
+- LF: 줄 바꿈, 유니코드 문자 000A  
   
--   NEL: 다음 줄, 유니코드 문자 0085  
+- NEL: 다음 줄, 유니코드 문자 0085  
   
--   LS: 줄 구분 기호, 유니코드 문자 2028  
+- LS: 줄 구분 기호, 유니코드 문자 2028  
   
--   PS: 단락 구분 기호, 유니코드 문자 2029  
+- PS: 단락 구분 기호, 유니코드 문자 2029  
   
- 다른 응용 프로그램에서 복사되는 텍스트는 원래 인코딩 및 줄 바꿈 문자를 유지합니다. 예를 들어 메모장에서 텍스트를 복사하고 Visual Studio의 텍스트 파일로 붙여넣으면 텍스트에는 메모장의 텍스트와 같은 설정이 포함됩니다.  
+  다른 응용 프로그램에서 복사되는 텍스트는 원래 인코딩 및 줄 바꿈 문자를 유지합니다. 예를 들어 메모장에서 텍스트를 복사하고 Visual Studio의 텍스트 파일로 붙여넣으면 텍스트에는 메모장의 텍스트와 같은 설정이 포함됩니다.  
   
- 다른 줄 바꿈 문자가 포함된 파일을 열 경우 일치하지 않는 줄 바꿈 문자를 정규화할지 여부 및 선택할 줄 바꿈 형식을 묻는 대화 상자가 표시될 수 있습니다.
+  다른 줄 바꿈 문자가 포함된 파일을 열 경우 일치하지 않는 줄 바꿈 문자를 정규화할지 여부 및 선택할 줄 바꿈 형식을 묻는 대화 상자가 표시될 수 있습니다.
 
 
 

@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880561"
 ---
 # <a name="detecting-system-requirements"></a>시스템 요구 사항 검색
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPackage는 Visual Studio가 설치 되어 있지 않으면 작동 하지 않�
 ## <a name="detecting-visual-studio-editions"></a>Visual Studio 버전 검색  
  버전의 Visual Studio가 설치 되어 있는지를 확인 하려면 설치 레지스트리 키의 값 (REG_DWORD) 1 적절 한 폴더에는 다음 표에 나열 된 대로 확인 합니다. Visual Studio 버전의 계층 구조는 참고 합니다.  
   
-1.  엔터프라이즈  
+1. 엔터프라이즈  
   
-2.  2차원 형식  
+2. 2차원 형식  
   
-3.  커뮤니티  
+3. 커뮤니티  
   
- "상위" 버전을 설치할 때에 "lower" 버전의 경우 해당 버전에 대 한 레지스트리 키 추가 됩니다. 즉, Enterprise edition이 설치 되어 설치 키 Professional 및 Community 버전 뿐만 아니라 엔터프라이즈에 대 한 1로 설정 됩니다. 따라서 필요한 "최고" 버전에 대해서만 확인 해야 합니다.  
+   "상위" 버전을 설치할 때에 "lower" 버전의 경우 해당 버전에 대 한 레지스트리 키 추가 됩니다. 즉, Enterprise edition이 설치 되어 설치 키 Professional 및 Community 버전 뿐만 아니라 엔터프라이즈에 대 한 1로 설정 됩니다. 따라서 필요한 "최고" 버전에 대해서만 확인 해야 합니다.  
   
 > [!NOTE]
 >  레지스트리 편집기의 64 비트 버전에서는 32 비트 키 아래에 표시 됩니다 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\합니다. Visual Studio 키는 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing 아래\\합니다.  

@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5834768784465b02b896b21339dc240a90781353
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86458fcc630b023cd1495b91a388fe245b71d772
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877636"
 ---
 # <a name="understanding-sampling-data-values"></a>샘플링 데이터 값 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "49221392"
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 프로파일러 분석에서는 프로세서가 대상 프로세스에서 코드를 실행하고 있는지 확인합니다. 프로세서가 대상 프로세스에서 코드를 실행하고 있지 않으면 샘플은 삭제됩니다.  
+  프로파일러 분석에서는 프로세서가 대상 프로세스에서 코드를 실행하고 있는지 확인합니다. 프로세서가 대상 프로세스에서 코드를 실행하고 있지 않으면 샘플은 삭제됩니다.  
   
- 프로세서가 대상 코드를 실행하고 있으면 프로파일러는 호출 스택에서 각 함수의 샘플 개수를 증가시킵니다. 샘플을 가져오는 시간에는 호출 스택에서 하나의 함수만이 현재 코드를 실행하고 있는 상태입니다. 스택의 다른 함수는 자식이 반환되기를 대기 중인 함수 호출 계층의 부모입니다.  
+  프로세서가 대상 코드를 실행하고 있으면 프로파일러는 호출 스택에서 각 함수의 샘플 개수를 증가시킵니다. 샘플을 가져오는 시간에는 호출 스택에서 하나의 함수만이 현재 코드를 실행하고 있는 상태입니다. 스택의 다른 함수는 자식이 반환되기를 대기 중인 함수 호출 계층의 부모입니다.  
   
- 샘플 이벤트의 경우 프로파일러는 현재 명령을 실행 중인 함수의 *전용* 샘플 개수를 증가시킵니다. 전용 샘플은 함수의 전체(*포괄*) 샘플에도 포함되므로 현재 활성 상태인 함수의 포괄 샘플 개수도 증가합니다.  
+  샘플 이벤트의 경우 프로파일러는 현재 명령을 실행 중인 함수의 *전용* 샘플 개수를 증가시킵니다. 전용 샘플은 함수의 전체(*포괄*) 샘플에도 포함되므로 현재 활성 상태인 함수의 포괄 샘플 개수도 증가합니다.  
   
- 프로파일러는 호출 스택에 있는 다른 모든 함수의 포괄 샘플 개수를 증가시킵니다.  
+  프로파일러는 호출 스택에 있는 다른 모든 함수의 포괄 샘플 개수를 증가시킵니다.  
   
 ## <a name="inclusive-samples"></a>포괄 샘플  
  대상 함수 실행 중에 수집된 샘플의 총 수입니다.  

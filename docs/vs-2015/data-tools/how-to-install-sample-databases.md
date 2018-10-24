@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fd51bd397e6db3728c10f52db68d45e226fb605b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ffe88fb54da26468ca510a2f1a7ab6170d88db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881724"
 ---
 # <a name="how-to-install-sample-databases"></a>방법: 샘플 데이터베이스 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,11 +96,11 @@ ms.locfileid: "49251045"
   
 #### <a name="to-install-the-northwind-sample-database-for-microsoft-access"></a>Microsoft Access용 Northwind 샘플 데이터베이스를 설치하려면  
   
-1.  Microsoft Access 2010 이상에서 Northwind 용 온라인 템플릿을 검색 및 선택 **Desktop Northwind 2007 샘플 데이터베이스**합니다.  
+1. Microsoft Access 2010 이상에서 Northwind 용 온라인 템플릿을 검색 및 선택 **Desktop Northwind 2007 샘플 데이터베이스**합니다.  
   
-2.  Microsoft Access에서 데이터베이스 파일을 Northwind.accdb로 저장합니다.  
+2. Microsoft Access에서 데이터베이스 파일을 Northwind.accdb로 저장합니다.  
   
- Access 데이터베이스의 새 확장명은 .accdb입니다. 참조 [Microsoft Access 2010을 사용한 데이터 프로그래밍](http://msdn.microsoft.com/library/office/ff965871.aspx)합니다. 연결 하려면 Northwind 데이터베이스에 대 한 액세스를 사용 하 여 참조 하세요 [방법: Northwind 데이터베이스에 연결할](../data-tools/how-to-connect-to-the-northwind-database.md)합니다.  
+   Access 데이터베이스의 새 확장명은 .accdb입니다. 참조 [Microsoft Access 2010을 사용한 데이터 프로그래밍](http://msdn.microsoft.com/library/office/ff965871.aspx)합니다. 연결 하려면 Northwind 데이터베이스에 대 한 액세스를 사용 하 여 참조 하세요 [방법: Northwind 데이터베이스에 연결할](../data-tools/how-to-connect-to-the-northwind-database.md)합니다.  
   
 ## <a name="net-framework-security"></a>.NET Framework 보안  
  예제 데이터베이스는 설명용으로 제공되었을 뿐, 반드시 최상의 보안 관리를 보여 주는 것은 아닙니다.  

@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b4d7dbe7fc11a41d44063aab558389555a4b7af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879105"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>레이어 다이어그램의 확장명 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "49250070"
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>F5 키를 눌러 내 확장을 디버그할 때 내 명령, 제스처 처리기, 유효성 검사 확장 또는 사용자 지정 속성이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스의 레이어 다이어그램에 나타나지 않습니다.  
   
-1.  실험적 인스턴스에서 확장 솔루션을 엽니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 및는 **빌드** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.  
+1. 실험적 인스턴스에서 확장 솔루션을 엽니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 및는 **빌드** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.  
   
-2.  키를 눌러 **F5** 하거나 **ctrl+f5** 의 실험적 인스턴스를 시작 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 레이어 다이어그램을 열고 확장을 테스트합니다.  
+2. 키를 눌러 **F5** 하거나 **ctrl+f5** 의 실험적 인스턴스를 시작 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 레이어 다이어그램을 열고 확장을 테스트합니다.  
   
- 필요한 경우 다음 절차를 계속 진행합니다.  
+   필요한 경우 다음 절차를 계속 진행합니다.  
   
 #### <a name="an-old-version-of-my-extension-runs"></a>이전 버전의 확장이 실행됩니다.  
   
-1.  실행 중인 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스가 없는지 확인합니다.  
+1. 실행 중인 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스가 없는지 확인합니다.  
   
-2.  폴더를 삭제 합니다: %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache  
+2. 폴더를 삭제 합니다: %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache  
   
-    > [!NOTE]
-    >  % LocalAppData %는 일반적으로 *DriveName*: \Users\\*UserName*\AppData\Local입니다.  
+   > [!NOTE]
+   >  % LocalAppData %는 일반적으로 *DriveName*: \Users\\*UserName*\AppData\Local입니다.  
   
- 필요한 경우 다음 절차를 계속 진행합니다.  
+   필요한 경우 다음 절차를 계속 진행합니다.  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>이전 버전의 유효성 검사 결과가 나타나거나, 내 유효성 검사 메서드가 호출되지 않습니다.  
   

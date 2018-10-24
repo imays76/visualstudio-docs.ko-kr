@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed03ae8ace6fe96c579d324422403d69e2248687
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881965"
 ---
 # <a name="debugger-security"></a>디버거 보안
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49290500"
 ### <a name="managed-debugging-security"></a>관리되는 디버깅 보안  
  다음은 모든 관리되는 디버깅에 적용되는 몇 가지 일반적인 권장 사항입니다.  
   
--   신뢰할 수 없는 사용자의 프로세스에 연결하는 경우에는 주의해야 합니다. 이러한 프로세스에 연결하면 해당 프로세스를 신뢰하는 것으로 간주됩니다. 신뢰할 수 없는 사용자의 프로세스에 연결하려고 하면 이 프로세스에 연결할지 여부를 묻는 보안 경고 확인 대화 상자가 나타납니다. "신뢰할 수 있는 사용자"에는 **aspnet**, **localsystem**, **networkservice**및 **localservice**와 같이 .NET Framework가 설치된 컴퓨터에 일반적으로 정의되는 표준 사용자 집합과 현재 사용자가 포함됩니다. 자세한 내용은 참조 하세요. [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결 하면 위험할 수 있습니다. 다음 정보가 의심 스 럽 또는 확실 하지 않은 경우이 프로세스에 연결 하지 않는](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)합니다.  
+- 신뢰할 수 없는 사용자의 프로세스에 연결하는 경우에는 주의해야 합니다. 이러한 프로세스에 연결하면 해당 프로세스를 신뢰하는 것으로 간주됩니다. 신뢰할 수 없는 사용자의 프로세스에 연결하려고 하면 이 프로세스에 연결할지 여부를 묻는 보안 경고 확인 대화 상자가 나타납니다. "신뢰할 수 있는 사용자"에는 **aspnet**, **localsystem**, **networkservice**및 **localservice**와 같이 .NET Framework가 설치된 컴퓨터에 일반적으로 정의되는 표준 사용자 집합과 현재 사용자가 포함됩니다. 자세한 내용은 참조 하세요. [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결 하면 위험할 수 있습니다. 다음 정보가 의심 스 럽 또는 확실 하지 않은 경우이 프로세스에 연결 하지 않는](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)합니다.  
   
--   인터넷에서 프로젝트를 다운로드하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 로드하는 경우 주의해야 합니다. 이는 디버깅을 하지 않는 경우라 해도 매우 위험한 작업입니다. 이러한 작업은 프로젝트와 여기에 포함된 코드를 신뢰할 수 있는 경우에만 수행해야 합니다.  
+- 인터넷에서 프로젝트를 다운로드하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 로드하는 경우 주의해야 합니다. 이는 디버깅을 하지 않는 경우라 해도 매우 위험한 작업입니다. 이러한 작업은 프로젝트와 여기에 포함된 코드를 신뢰할 수 있는 경우에만 수행해야 합니다.  
   
- 자세한 내용은 [Debugging Managed Code](../debugger/debugging-managed-code.md)을 참조하세요.  
+  자세한 내용은 [Debugging Managed Code](../debugger/debugging-managed-code.md)을 참조하세요.  
   
 ### <a name="remote-debugging-security"></a>원격 디버깅 보안  
  로컬 디버깅은 일반적으로 원격 디버깅보다 안전합니다. 원격 디버깅을 수행하는 경우 공격자가 침투할 수 있는 지점이 더 많아집니다.  
@@ -79,11 +79,11 @@ ms.locfileid: "49290500"
 ### <a name="symbols-and-source-code"></a>기호 및 소스 코드  
  특히 보안과 관련하여 주의해야 할 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 도구에는 다음과 같은 두 가지가 있습니다.  
   
--   소스 코드 리포지토리에서 소스 코드의 버전을 제공하는 소스 서버. 이는 현재 버전의 프로그램 소스 코드가 없는 경우에 유용합니다. [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- 소스 코드 리포지토리에서 소스 코드의 버전을 제공하는 소스 서버. 이는 현재 버전의 프로그램 소스 코드가 없는 경우에 유용합니다. [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
--   시스템 호출 과정에서 충돌을 디버깅하는 데 필요한 기호를 제공하기 위해 사용되는 기호 서버.  
+- 시스템 호출 과정에서 충돌을 디버깅하는 데 필요한 기호를 제공하기 위해 사용되는 기호 서버.  
   
- 참조 [기호 (.pdb)을 지정 하 고 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  참조 [기호 (.pdb)을 지정 하 고 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>참고 항목  
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)   

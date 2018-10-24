@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875101"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>연습: 다시 서명할 필요가 없습니다 없고 브랜드 정보가 유지 되는 ClickOnce 응용 프로그램을 수동으로 배포
 만들 때는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 및 고객 게시할 수 있도록 제공 및 배포, 고객에 일반적으로 배포 매니페스트를 업데이트 하 고 다시 서명 해야 했습니다. 여전히 대부분의 경우에는 이러한 방식이 사용 되 고 있지만,.NET Framework 3.5를 사용 하면 만들려는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 새 배포 매니페스트를 다시 생성할 필요 없이 고객에 게 배포할 수 있는 배포 합니다. 자세한 내용은 [다시 서명 하지 않고 테스트 및 프로덕션 서버용 ClickOnce 배포 응용 프로그램](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)합니다.  
@@ -48,36 +48,36 @@ ms.locfileid: "39511411"
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>여러 배포와 브랜딩 지원 Mage.exe를 사용 하 여 ClickOnce 응용 프로그램을 배포 하려면  
   
-1.  Visual Studio 명령 프롬프트를 열고 또는 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 명령 프롬프트, 및를 저장 하는 디렉터리로 변경 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 파일.  
+1. Visual Studio 명령 프롬프트를 열고 또는 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 명령 프롬프트, 및를 저장 하는 디렉터리로 변경 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 파일.  
   
-2.  배포의 현재 버전의 이름을 딴 디렉터리를 만듭니다. 선택 가능성이 처음으로 응용 프로그램 배포 하는 경우 **1.0.0.0**합니다.  
+2. 배포의 현재 버전의 이름을 딴 디렉터리를 만듭니다. 선택 가능성이 처음으로 응용 프로그램 배포 하는 경우 **1.0.0.0**합니다.  
   
-    > [!NOTE]
-    >  배포의 버전 응용 프로그램 파일의 버전과 다를 수 있습니다.  
+   > [!NOTE]
+   >  배포의 버전 응용 프로그램 파일의 버전과 다를 수 있습니다.  
   
-3.  명명 된 하위 디렉터리를 만듭니다 **bin** 실행 파일, 어셈블리, 리소스 및 데이터 파일을 비롯 한 모든 응용 프로그램 파일을 복사 합니다.  
+3. 명명 된 하위 디렉터리를 만듭니다 **bin** 실행 파일, 어셈블리, 리소스 및 데이터 파일을 비롯 한 모든 응용 프로그램 파일을 복사 합니다.  
   
-4.  Mage.exe에 대 한 호출을 사용 하 여 응용 프로그램 매니페스트를 생성 합니다.  
+4. Mage.exe에 대 한 호출을 사용 하 여 응용 프로그램 매니페스트를 생성 합니다.  
   
-    ```cmd  
-    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
-    ```  
+   ```cmd  
+   mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
+   ```  
   
-5.  디지털 인증서를 사용 하 여 응용 프로그램 매니페스트에 서명 합니다.  
+5. 디지털 인증서를 사용 하 여 응용 프로그램 매니페스트에 서명 합니다.  
   
-    ```cmd  
-    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
-    ```  
+   ```cmd  
+   mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
+   ```  
   
-6.  호출 하 여 배포 매니페스트를 생성 *Mage.exe*합니다. 기본적으로 *Mage.exe* 표시에 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 한다는 온라인 모두 실행할 수 있도록 및 오프 라인 설치 된 응용 프로그램으로 배포 합니다. 응용 프로그램을 사용할 수 있도록의 사용자가 온라인 상태인 경우에 사용 합니다 `-i` 인수 값을 사용 하 여 `f`입니다. 이 응용 프로그램은 여러 배포 기능을 활용 하므로 제외 합니다 `-providerUrl` 인수를 *Mage.exe*합니다. (제외 하 고.NET Framework 버전 3.5 이전 버전에서 `-providerUrl` 에 대해 오프 라인 응용 프로그램 오류가 발생 합니다.)  
+6. 호출 하 여 배포 매니페스트를 생성 *Mage.exe*합니다. 기본적으로 *Mage.exe* 표시에 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 한다는 온라인 모두 실행할 수 있도록 및 오프 라인 설치 된 응용 프로그램으로 배포 합니다. 응용 프로그램을 사용할 수 있도록의 사용자가 온라인 상태인 경우에 사용 합니다 `-i` 인수 값을 사용 하 여 `f`입니다. 이 응용 프로그램은 여러 배포 기능을 활용 하므로 제외 합니다 `-providerUrl` 인수를 *Mage.exe*합니다. (제외 하 고.NET Framework 버전 3.5 이전 버전에서 `-providerUrl` 에 대해 오프 라인 응용 프로그램 오류가 발생 합니다.)  
   
-    ```cmd  
-    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
-    ```  
+   ```cmd  
+   mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
+   ```  
   
-7.  배포 매니페스트를 서명 하지 않습니다.  
+7. 배포 매니페스트를 서명 하지 않습니다.  
   
-8.  자신의 네트워크에서 응용 프로그램을 배포 하는 고객에 게 모든 파일을 제공 합니다.  
+8. 자신의 네트워크에서 응용 프로그램을 배포 하는 고객에 게 모든 파일을 제공 합니다.  
   
 9. 이 시점에서 고객 자신의 자체 생성 된 인증서를 사용 하 여 배포 매니페스트에 서명 해야 합니다. 예를 들어 Adventure Works 라는 회사에 대 한 고객 작동 하는 경우 그 생성할 수 있습니다 사용 하 여 자체 서명 된 인증서를 *MakeCert.exe* 도구입니다. 다음을 사용 하 여는 *Pvk2pfx.exe* 에서 만든 파일을 결합 하는 도구 *MakeCert.exe* 전달할 수 있는 PFX 파일로 *Mage.exe*합니다.  
   
@@ -96,28 +96,28 @@ ms.locfileid: "39511411"
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>여러 배포 및 MageUI.exe를 사용 하 여 브랜딩 지원을 사용 하 여 ClickOnce 응용 프로그램을 배포 하려면  
   
-1.  Visual Studio 명령 프롬프트를 열고 또는 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 저장할가 있는 디렉터리로 이동한 명령 프롬프트에 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 파일입니다.  
+1. Visual Studio 명령 프롬프트를 열고 또는 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 저장할가 있는 디렉터리로 이동한 명령 프롬프트에 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 파일입니다.  
   
-2.  명명 된 하위 디렉터리를 만듭니다 **bin** 실행 파일, 어셈블리, 리소스 및 데이터 파일을 비롯 한 모든 응용 프로그램 파일을 복사 합니다.  
+2. 명명 된 하위 디렉터리를 만듭니다 **bin** 실행 파일, 어셈블리, 리소스 및 데이터 파일을 비롯 한 모든 응용 프로그램 파일을 복사 합니다.  
   
-3.  배포의 현재 버전 하위 디렉터리를 만듭니다. 선택 가능성이 처음으로 응용 프로그램 배포 하는 경우 **1.0.0.0**합니다.  
+3. 배포의 현재 버전 하위 디렉터리를 만듭니다. 선택 가능성이 처음으로 응용 프로그램 배포 하는 경우 **1.0.0.0**합니다.  
   
-    > [!NOTE]
-    >  배포의 버전 응용 프로그램 파일의 버전과 다를 수 있습니다.  
+   > [!NOTE]
+   >  배포의 버전 응용 프로그램 파일의 버전과 다를 수 있습니다.  
   
-4.  이동 합니다 \\ **bin** 2 단계에서 만든 디렉터리에 디렉터리입니다.  
+4. 이동 합니다 \\ **bin** 2 단계에서 만든 디렉터리에 디렉터리입니다.  
   
-5.  그래픽 도구를 시작 *MageUI.exe*합니다.  
+5. 그래픽 도구를 시작 *MageUI.exe*합니다.  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-6.  선택 하 여 새 응용 프로그램 매니페스트를 만듭니다 **파일**, **새로 만들기**, **응용 프로그램 매니페스트** 합니다.  
+6. 선택 하 여 새 응용 프로그램 매니페스트를 만듭니다 **파일**, **새로 만들기**, **응용 프로그램 매니페스트** 합니다.  
   
-7.  기본 **이름을** 탭에서이 배포의 이름 및 버전 번호를 입력 합니다. 또한 값을 제공 **게시자**을 사용할 시작 메뉴에서 응용 프로그램의 바로 가기 링크에 대 한 폴더 이름으로 배포 될 때입니다.  
+7. 기본 **이름을** 탭에서이 배포의 이름 및 버전 번호를 입력 합니다. 또한 값을 제공 **게시자**을 사용할 시작 메뉴에서 응용 프로그램의 바로 가기 링크에 대 한 폴더 이름으로 배포 될 때입니다.  
   
-8.  선택 된 **응용 프로그램 옵션** 탭을 클릭 **사용 하 여 응용 프로그램 매니페스트 신뢰 정보에 대 한**합니다. 이 대 한 타사 브랜딩 하는 것이 이렇게 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램입니다.  
+8. 선택 된 **응용 프로그램 옵션** 탭을 클릭 **사용 하 여 응용 프로그램 매니페스트 신뢰 정보에 대 한**합니다. 이 대 한 타사 브랜딩 하는 것이 이렇게 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램입니다.  
   
 9. 선택 합니다 **파일** 탭을 클릭 합니다 **찾아보기** 단추 옆에 **응용 프로그램 디렉터리** 입력란.  
   

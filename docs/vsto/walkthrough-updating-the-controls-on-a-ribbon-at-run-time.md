@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2d9f8a585b6a9353c9e64cf03b0876e5324a539
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a90355a21fb525b108987ca565689867904ae6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881757"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>연습: 런타임에 리본의 컨트롤 업데이트
   이 연습에서는 리본 개체 모델을 사용 하 여 Office 응용 프로그램에 리본 메뉴가 로드 된 후 리본에서 컨트롤을 업데이트 하는 방법에 설명 합니다.  
@@ -167,49 +167,49 @@ ms.locfileid: "35258803"
   
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>리본 개체 모델을 사용하여 사용자 지정 그룹의 컨트롤을 업데이트하려면  
   
-1.  **프로젝트** 메뉴에서 **참조 추가**를 클릭합니다.  
+1. **프로젝트** 메뉴에서 **참조 추가**를 클릭합니다.  
   
-2.  에 **참조 추가** 대화 상자에서 클릭는 **.NET** 탭을 선택 합니다 **System.Data.Linq** 어셈블리 및 클릭 한 다음 **확인**.  
+2. 에 **참조 추가** 대화 상자에서 클릭는 **.NET** 탭을 선택 합니다 **System.Data.Linq** 어셈블리 및 클릭 한 다음 **확인**.  
   
-     이 어셈블리에는 LINQ(Language-Integrated Queries)를 사용하기 위한 클래스가 포함되어 있습니다. LINQ를 사용하여 Northwind 데이터베이스의 데이터로 사용자 지정 그룹의 컨트롤을 채웁니다.  
+    이 어셈블리에는 LINQ(Language-Integrated Queries)를 사용하기 위한 클래스가 포함되어 있습니다. LINQ를 사용하여 Northwind 데이터베이스의 데이터로 사용자 지정 그룹의 컨트롤을 채웁니다.  
   
-3.  **솔루션 탐색기**, 클릭 **CustomerRibbon.cs** 하거나 **CustomerRibbon.vb** 하 여 선택 합니다.  
+3. **솔루션 탐색기**, 클릭 **CustomerRibbon.cs** 하거나 **CustomerRibbon.vb** 하 여 선택 합니다.  
   
-4.  에 **뷰** 메뉴에서 클릭 **코드**합니다.  
+4. 에 **뷰** 메뉴에서 클릭 **코드**합니다.  
   
-     코드 편집기에서 리본 코드 파일이 열립니다.  
+    코드 편집기에서 리본 코드 파일이 열립니다.  
   
-5.  리본 코드 파일 맨 위에 다음 문을 추가합니다. 이러한 문을 통해 Outlook PIA(주 interop 어셈블리)의 네임스페이스 및 LINQ 네임스페이스에 쉽게 액세스할 수 있습니다.  
+5. 리본 코드 파일 맨 위에 다음 문을 추가합니다. 이러한 문을 통해 Outlook PIA(주 interop 어셈블리)의 네임스페이스 및 LINQ 네임스페이스에 쉽게 액세스할 수 있습니다.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  안에 다음 코드를 추가 합니다 `CustomerRibbon` 클래스입니다. 이 코드는 Northwind 데이터베이스의 Customer, Orders, Order Details 및 Product 테이블 정보를 저장하는 데 사용할 데이터 테이블 및 테이블 어댑터를 선언합니다.  
+6. 안에 다음 코드를 추가 합니다 `CustomerRibbon` 클래스입니다. 이 코드는 Northwind 데이터베이스의 Customer, Orders, Order Details 및 Product 테이블 정보를 저장하는 데 사용할 데이터 테이블 및 테이블 어댑터를 선언합니다.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  `CustomerRibbon` 클래스에 다음 코드 블록을 추가합니다. 이 코드는 런타임에 리본 컨트롤을 만드는 세 가지 도우미 메서드를 추가 합니다.  
+7. `CustomerRibbon` 클래스에 다음 코드 블록을 추가합니다. 이 코드는 런타임에 리본 컨트롤을 만드는 세 가지 도우미 메서드를 추가 합니다.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
   
-8.  `CustomerRibbon_Load` 이벤트 처리기 메서드를 다음 코드로 바꿉니다. 이 코드는 LINQ 쿼리를 사용하여 다음 작업을 수행합니다.  
+8. `CustomerRibbon_Load` 이벤트 처리기 메서드를 다음 코드로 바꿉니다. 이 코드는 LINQ 쿼리를 사용하여 다음 작업을 수행합니다.  
   
-    -   채울 합니다 **고객** Northwind 데이터베이스의 20 개 고객의 이름과 ID를 사용 하 여 콤보 상자입니다.  
+   - 채울 합니다 **고객** Northwind 데이터베이스의 20 개 고객의 이름과 ID를 사용 하 여 콤보 상자입니다.  
   
-    -   `PopulateSalesOrderInfo` 도우미 메서드를 호출합니다. 이 메서드를 업데이트 합니다 **ProductsPurchased** 는 현재 선택한 고객과 관련 된 판매 주문 번호를 사용 하 여 메뉴.  
+   - `PopulateSalesOrderInfo` 도우미 메서드를 호출합니다. 이 메서드를 업데이트 합니다 **ProductsPurchased** 는 현재 선택한 고객과 관련 된 판매 주문 번호를 사용 하 여 메뉴.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]  
   
 9. `CustomerRibbon` 클래스에 다음 코드를 추가합니다. 이 코드는 LINQ 쿼리를 사용하여 다음 작업을 수행합니다.  
   
-    -   하위 메뉴를 추가 합니다 **ProductsPurchased** 는 선택한 고객과 관련 된 각 판매 주문에 대 한 메뉴입니다.  
+   - 하위 메뉴를 추가 합니다 **ProductsPurchased** 는 선택한 고객과 관련 된 각 판매 주문에 대 한 메뉴입니다.  
   
-    -   판매 주문과 관련된 제품에 대한 단추를 각 하위 메뉴에 추가합니다.  
+   - 판매 주문과 관련된 제품에 대한 단추를 각 하위 메뉴에 추가합니다.  
   
-    -   각 단추에 이벤트 처리기를 추가합니다.  
+   - 각 단추에 이벤트 처리기를 추가합니다.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]  
@@ -224,26 +224,26 @@ ms.locfileid: "35258803"
   
 12. `ComboBox1_TextChanged` 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드는 다음 작업을 수행합니다.  
   
-    -   `PopulateSalesOrderInfo` 도우미 메서드를 호출합니다. 이 메서드를 업데이트 합니다 **Products Purchased** 메뉴는 선택한 고객과 관련 된 판매 주문이 있습니다.  
+    - `PopulateSalesOrderInfo` 도우미 메서드를 호출합니다. 이 메서드를 업데이트 합니다 **Products Purchased** 메뉴는 선택한 고객과 관련 된 판매 주문이 있습니다.  
   
-    -   `PopulateMailItem` 도우미 메서드를 호출하고 선택한 고객 이름인 현재 텍스트를 전달합니다. 이 메서드를, 제목 및 본문 채웁니다 새 메일 메시지의 필드입니다.  
+    - `PopulateMailItem` 도우미 메서드를 호출하고 선택한 고객 이름인 현재 텍스트를 전달합니다. 이 메서드를, 제목 및 본문 채웁니다 새 메일 메시지의 필드입니다.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. 다음을 추가 합니다 `Click` 이벤트 처리기는 `CustomerRibbon` 클래스입니다. 이 코드는 새 메일 메시지의 본문 필드에 선택 된 제품의 이름을 추가합니다.  
+13. `Click` 클래스에 다음 `CustomerRibbon` 이벤트 처리기를 추가합니다. 이 코드는 새 메일 메시지의 본문 필드에 선택 된 제품의 이름을 추가합니다.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
   
 14. `CustomerRibbon` 클래스에 다음 코드를 추가합니다. 이 코드는 다음 작업을 수행합니다.  
   
-    -   현재 선택한 고객의 전자 메일 주소를 사용 하 여 새 메일 메시지의 받는 사람 줄을 채웁니다.  
+    - 현재 선택한 고객의 전자 메일 주소를 사용 하 여 새 메일 메시지의 받는 사람 줄을 채웁니다.  
   
-    -   새 메일 메시지의 제목 및 본문 필드에 텍스트를 추가합니다.  
+    - 새 메일 메시지의 제목 및 본문 필드에 텍스트를 추가합니다.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
 ## <a name="test-the-controls-in-the-custom-group"></a>사용자 지정 그룹의 컨트롤을 테스트  
  사용자 지정 그룹에 명명 된 Outlook에서 새 메일 양식을 열면 **Customer Purchases** 에 표시 되는 **메시지** 리본 메뉴의 탭 합니다.  

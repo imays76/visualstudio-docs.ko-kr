@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877493"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>방법: 계측할 Web.Config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 응용 프로그램 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49176308"
   
  web.config 파일의 루트는 **configuration** 요소입니다. 동적으로 컴파일된 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 응용 프로그램을 계측 및 프로파일링하려면 다음 요소를 추가하거나 수정해야 합니다.  
   
--   **configuration/runtime/assemblyBinding/dependentAssembly** 요소 - 프로파일링을 제어하는 Microsoft.VisualStudio.Enterprise.ASPNetHelper 어셈블리를 식별합니다. **dependentAssembly** 요소에는 두 개의 자식 요소인 **assemblyIdentity** 및 **codeBase**가 포함됩니다.  
+- **configuration/runtime/assemblyBinding/dependentAssembly** 요소 - 프로파일링을 제어하는 Microsoft.VisualStudio.Enterprise.ASPNetHelper 어셈블리를 식별합니다. **dependentAssembly** 요소에는 두 개의 자식 요소인 **assemblyIdentity** 및 **codeBase**가 포함됩니다.  
   
--   **configuration/system.web/compilation** 요소 - 대상 어셈블리에 대한 프로파일러 사후 처리 컴파일 단계를 식별합니다.  
+- **configuration/system.web/compilation** 요소 - 대상 어셈블리에 대한 프로파일러 사후 처리 컴파일 단계를 식별합니다.  
   
--   프로파일링 도구의 위치를 식별하는 두 개의 **add** 요소가 **configuration/appSettings** 섹션에 추가됩니다.  
+- 프로파일링 도구의 위치를 식별하는 두 개의 **add** 요소가 **configuration/appSettings** 섹션에 추가됩니다.  
   
- 응용 프로그램 구성을 복원하는 데 사용할 수 있는 원래 web.config 파일의 복사본을 만드는 것이 좋습니다.  
+  응용 프로그램 구성을 복원하는 데 사용할 수 있는 원래 web.config 파일의 복사본을 만드는 것이 좋습니다.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>ASPNetHelper 어셈블리를 configuration/runtime/assemblyBinding/dependentAssembly 요소로 추가하려면  
   
