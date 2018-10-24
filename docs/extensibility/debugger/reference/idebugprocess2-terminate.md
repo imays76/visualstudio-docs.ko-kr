@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3bb6c47a95ff77d19ea8f6cb8803e416c35148c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6ce0c0448a72d2511736ca221bafebfc3ecefe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875374"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
-프로세스를 종료 합니다.  
+프로세스를 종료합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,10 +38,10 @@ int Terminate();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 한 프로세스가 종료 될 때 해당 프로세스 내에서 모든 프로그램 종료 됩니다. none 더 많은 코드를 실행 허용 됩니다.  
+ 프로세스 종료 되 면 해당 프로세스 내에서 모든 프로그램 종료 됩니다. 자세한 코드를 실행할 수는 없음.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

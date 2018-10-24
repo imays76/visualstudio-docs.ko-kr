@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8d991a5444c719696db62ab6f9c3374015ea7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4e077e0d2ac410601698d50c2c6ee0d8ede5cbe9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462145"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875160"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
-섹션 메모 또는 비슷한 정보에 포함 되는지 여부를 나타내는 플래그를 검색 합니다.  
+의견이 나 유사한 정보 섹션이 포함 되는지 여부를 나타내는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_informational(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 섹션에는 설명 또는 다른 정보를 포함 하는 경우는 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 의견이 나 기타 정보; 섹션에 포함 되어 있는 경우 그렇지 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 일반적으로.directive 섹션에는 정보가 포함 되어 있습니다.  
+ 일반적으로.directive 섹션 정보를 포함 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

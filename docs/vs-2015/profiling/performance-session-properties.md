@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879118"
 ---
 # <a name="performance-session-properties"></a>성능 세션 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49306152"
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- **성능 마법사**를 실행하거나 세션을 수동으로 만드는 방법으로 **성능 세션**을 만듭니다. **성능 세션**을 만들고 나면 **성능 탐색기**에 **성능 세션**이 표시됩니다.  
+  **성능 마법사**를 실행하거나 세션을 수동으로 만드는 방법으로 **성능 세션**을 만듭니다. **성능 세션**을 만들고 나면 **성능 탐색기**에 **성능 세션**이 표시됩니다.  
   
- **성능 세션** 속성을 확인하려면 **성능 탐색기**에서 세션 이름을 선택하고 마우스 오른쪽 단추로 클릭한 다음 **속성**을 선택합니다.  
+  **성능 세션** 속성을 확인하려면 **성능 탐색기**에서 세션 이름을 선택하고 마우스 오른쪽 단추로 클릭한 다음 **속성**을 선택합니다.  
   
- 성능 세션에는 다음 속성 페이지가 있습니다.  
+  성능 세션에는 다음 속성 페이지가 있습니다.  
   
 ## <a name="general"></a>일반  
  이러한 설정을 사용하면 프로파일링 방법을 선택하고, .NET 개체 컬렉션 및 수명 데이터를 추가하고, 기본 보고서 위치 및 이름 지정 규칙을 지정할 수 있습니다.  
@@ -59,17 +59,17 @@ ms.locfileid: "49306152"
 ## <a name="sampling"></a>샘플링  
  이러한 설정을 사용하면 프로파일링 방법으로 샘플링을 사용할 때 샘플링 이벤트와 샘플링 간격을 선택할 수 있습니다. 샘플링 이벤트를 사용하여 지정한 간격으로 프로파일링 데이터를 수집합니다. 예를 들어 샘플링 이벤트가 클록 주기이며 샘플링 간격이 10,000,000으로 설정되어 있으면 1천만 클록 주기마다 프로파일링 데이터를 수집합니다. 다음과 같은 네 가지 유형의 샘플 이벤트를 사용할 수 있습니다.  
   
--   클록 주기 - CPU 바인딩 문제  
+- 클록 주기 - CPU 바인딩 문제  
   
--   페이지 폴트 - 메모리 관련 문제  
+- 페이지 폴트 - 메모리 관련 문제  
   
--   시스템 호출 - I/O 관련 문제  
+- 시스템 호출 - I/O 관련 문제  
   
--   성능 카운터 - 낮은 수준의 성능 문제  
+- 성능 카운터 - 낮은 수준의 성능 문제  
   
--   사용 가능한 성능 카운터에 따라 추가 샘플 이벤트를 지정할 수 있습니다.  
+- 사용 가능한 성능 카운터에 따라 추가 샘플 이벤트를 지정할 수 있습니다.  
   
- 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.  
+  자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.  
   
 ## <a name="binary"></a>이항  
  이러한 설정을 사용하면 계측된 이진 파일을 다른 위치로 옮길지 여부를 지정할 수 있습니다. 예를 들어 My.DLL을 프로파일링할 때 계측된 이진 파일을 옮기지 않도록 선택하면 My.Orig.DLL이라는 My.DLL의 백업 복사본이 만들어집니다. 그런 후에는 데이터를 수집하기 위한 프로브를 삽입하여 My.DLL이 수정됩니다. 계측된 이진 파일을 옮기도록 선택하면 원본 이진 파일 이름이 바뀌지 않으며 계측 중에 사용하기 위해 계측된 이진 파일이 지정한 위치에 복사됩니다.  

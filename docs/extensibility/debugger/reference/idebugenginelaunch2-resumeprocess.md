@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 988cb08db3a60cdf2d0f11955d5acc8719c6560f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c24ff23dc7963dca3dddf3a0e725858b3a704d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875363"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
-이력서 처리 실행 합니다.  
+프로세스 실행을 다시 시작 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,13 +41,13 @@ int ResumeProcess (
   
 #### <a name="parameters"></a>매개 변수  
  `pProcess`  
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 프로세스를 다시 시작할 수를 나타내는 개체입니다.  
+ [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 다시 시작 될 프로세스를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 호출 하 여 프로세스가 시작 되었습니다 후 호출 됩니다는 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 메서드.  
+ 이 메서드는 프로세스에 대 한 호출을 사용 하 여 시작 되었습니다 합니다 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   

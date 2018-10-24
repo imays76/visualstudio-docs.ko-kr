@@ -1,5 +1,5 @@
 ---
-title: EX_DBGPROP_INFO_FLAGS | Microsoft Docs
+title: EX_DBGPROP_INFO_FLAGS | Microsoft 문서
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0af0de81c0253b72fe432cb3cefe11c362bc2ec4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e66ff43cd51977bf0c23ca0e024a2e05b53f5022
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878091"
 ---
 # <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
 지정 하는 데 `ExtendedDebugPropertyInfo` 필드입니다.  
@@ -45,7 +45,7 @@ enum {
  속성에 대 한 식별자를 초기화합니다.  
   
  EX_DBGPROP_INFO_NTYPE  
- 속성의 형식을 초기화 합니다.  
+ 초기화 속성의 형식입니다.  
   
  EX_DBGPROP_INFO_NVALUE  
  속성의 값을 초기화합니다.  
@@ -54,7 +54,7 @@ enum {
  초기화는 `plb` 필드입니다.  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- 초기화는 `pDebugExtProp` 포함 된 필드는 `IDebugExtendedProperty` 인터페이스입니다.  
+ 초기화 된 `pDebugExtProp` 포함 된 필드는 `IDebugExtendedProperty` 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   

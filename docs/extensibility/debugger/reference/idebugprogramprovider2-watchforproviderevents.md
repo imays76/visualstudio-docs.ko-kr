@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd2dcaa930db97ee8bab9b2bba168c80444dda8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e245087cdd74ced1b47e2cd02da1e450474fa1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875140"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-프로세스를를 포트 이벤트 알림을 받을 수 있습니다.  
+프로세스를 포트 이벤트의 알림을 받을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,23 +51,23 @@ int WatchForProviderEvents(
   
 #### <a name="parameters"></a>매개 변수  
  `Flags`  
- [in] 플래그의 조합 된 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) 열거 합니다. 다음 플래그는이 호출에 대 한 일반적인:  
+ [in] 플래그의 조합 된 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) 열거형입니다. 이 호출에 대 한 일반 플래그는 다음과 같습니다.  
   
 |플래그|설명|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|호출자에 게 원격 컴퓨터에서 실행 됩니다.|  
-|`PFLAG_DEBUGGEE`|호출자에 게 현재 디버깅 중인 (마샬링하는 작업에 대 한 추가 정보는 각 노드에 대해 반환 됨).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|호출자에 연결 했지만 디버거에서 실행 되지 않습니다.|  
-|`PFLAG_REASON_WATCH`|호출자에 게 이벤트를 조사 하려고 합니다. 이 플래그를 설정 하지 않으면 합니다. 그런 다음 콜백 이벤트가 제거 되 고 호출자에 게는 더 이상 알림을 받습니다.|  
+|`PFLAG_DEBUGGEE`|호출자에 게 현재 디버깅 중인 (마샬링 하는 방법에 대 한 추가 정보는 각 노드에 대해 반환 됨).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|호출자에 연결 되었지만 디버거에서 실행 되지 않습니다.|  
+|`PFLAG_REASON_WATCH`|호출자는 이벤트를 조사 하려고 합니다. 이 플래그를 설정 하지 않으면. 그런 다음 콜백 이벤트 제거 되 고 호출자에 게는 더 이상 알림을 받습니다.|  
   
  `pPort`  
  [in] 포트는 호출 프로세스에서 실행 됩니다.  
   
  `processId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조에 프로그램을 포함 하는 프로세스의 ID를 보유 합니다.  
+ [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조에서 해당 프로그램을 포함 하는 프로세스의 ID를 보유 합니다.  
   
  `EngineFilter`  
- [in] 배열 하는 프로세스와 관련 된 디버그 엔진의 Guid입니다.  
+ [in] 디버그 엔진 프로세스에 연결 된 Guid의 배열입니다.  
   
  `guidLaunchingEngine`  
  [in] \(있는 경우)이이 프로세스를 시작 하는 디버그 엔진의 GUID입니다.  
@@ -76,13 +76,13 @@ int WatchForProviderEvents(
  [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 이벤트 알림을 받는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 해제 되지만 처음으로 호출자에 게 동일한 매개 변수를 전달 호출자를이 메서드에 대 한 이전 호출으로 설정 된 이벤트 처리기를 제거 하려는 경우는 `PFLAG_REASON_WATCH` 플래그입니다.  
+ 호출자가 해제 되지만 처음와 마찬가지로 동일한 매개 변수를 전달할 호출자를이 메서드에 대 한 이전 호출을 사용 하 여 설정 된 이벤트 처리기를 제거 하려는 경우는 `PFLAG_REASON_WATCH` 플래그입니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugEngine** 공개 하는 개체는 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugEngine** 노출 하는 개체를 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 인터페이스입니다.  
   
 ```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  

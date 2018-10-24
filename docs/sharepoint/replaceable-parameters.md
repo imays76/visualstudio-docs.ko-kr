@@ -18,12 +18,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: f6e311f7c0268cecb94498fffda702438ea921b0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879300"
 ---
 # <a name="replaceable-parameters"></a>대체 가능 매개 변수
   대체 가능 매개 변수 또는 *토큰*, 실제 값을 갖는 디자인 타임에 알려지지 않은 SharePoint 솔루션 항목에 대 한 값을 제공 하려면 프로젝트 파일 내에서 사용할 수 있습니다. 표준 비슷합니다 함수에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 템플릿 토큰입니다. 자세한 내용은 [템플릿 매개 변수](/visualstudio/ide/template-parameters)합니다.  
@@ -34,17 +34,17 @@ ms.locfileid: "37119938"
 ## <a name="token-rules"></a>토큰 규칙
  토큰에 다음 규칙이 적용 됩니다.  
   
--   줄의 아무 곳 이나 토큰을 지정할 수 있습니다.  
+- 줄의 아무 곳 이나 토큰을 지정할 수 있습니다.  
   
--   토큰 여러 줄으로 나누어 입력할 수 없습니다.  
+- 토큰 여러 줄으로 나누어 입력할 수 없습니다.  
   
--   같은 줄에 동일한 파일에서 동일한 토큰을 두 번 이상 지정할 수 있습니다.  
+- 같은 줄에 동일한 파일에서 동일한 토큰을 두 번 이상 지정할 수 있습니다.  
   
--   같은 줄에 서로 다른 토큰을 지정할 수 있습니다.  
+- 같은 줄에 서로 다른 토큰을 지정할 수 있습니다.  
   
- 이러한 규칙을 따르지 않는 토큰 무시 되 고 경고 또는 오류를 발생 하지 않습니다.  
+  이러한 규칙을 따르지 않는 토큰 무시 되 고 경고 또는 오류를 발생 하지 않습니다.  
   
- 토큰 문자열 값으로 대체 매니페스트를 변환한 후 즉시 수행 됩니다. 이 대체 토큰을 사용 하 여 매니페스트 템플릿을 편집할 수 있습니다.  
+  토큰 문자열 값으로 대체 매니페스트를 변환한 후 즉시 수행 됩니다. 이 대체 토큰을 사용 하 여 매니페스트 템플릿을 편집할 수 있습니다.  
   
 ### <a name="token-name-resolution"></a>토큰 이름 확인
  대부분의 경우에서 토큰 포함 된 위치에 관계 없이 특정 값을 확인 합니다. 그러나 토큰에 패키지 또는 기능에 관련 되는 토큰의 값 포함 되어 있습니다.에 따라 다릅니다. 예를 들어 기능이 상태인 경우, 토큰 패키지 `$SharePoint.Package.Name$` "Package A." 값을 확인 동일한 기능 인지 B 패키지에 다음 `$SharePoint.Package.Name$` "패키지 b" 확인  
@@ -52,7 +52,7 @@ ms.locfileid: "37119938"
 ## <a name="tokens-list"></a>토큰 목록
  다음 표에서 사용 가능한 토큰을 보여 줍니다.  
   
-|name|설명|  
+|이름|설명|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|이름을 포함 하는 프로젝트 파일을 같은 *NewProj.csproj*합니다.|  
 |$SharePoint.Project.FileNameWithoutExtension$|파일 이름 확장명 없이 포함 하는 프로젝트 파일의 이름입니다. 예를 들어, "NewProj"가 있습니다.|  
@@ -75,19 +75,19 @@ ms.locfileid: "37119938"
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>토큰 바꾸기 파일 확장명 목록에 확장 추가
  기본적으로 패키지에 포함 된 항목을 SharePoint 프로젝트에 속하는 모든 파일에 토큰 이론적으로 사용할 수 있지만 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 패키지 파일, 매니페스트 파일 및 파일 확장명이 있는 경우에 토큰을 검색 합니다.  
   
--   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
+- [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
--   ASCX  
+- ASCX  
   
--   ASPX  
+- ASPX  
   
--   웹 파트  
+- 웹 파트  
   
--   DWP  
+- DWP  
   
- 이러한 확장에 의해 정의 됩니다는 `<TokenReplacementFileExtensions>` 에 있는 Microsoft.VisualStudio.SharePoint.targets 파일의 요소는... \\< 프로그램 파일\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 폴더입니다.  
+  이러한 확장에 의해 정의 됩니다는 `<TokenReplacementFileExtensions>` 에 있는 Microsoft.VisualStudio.SharePoint.targets 파일의 요소는... \\< 프로그램 파일\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 폴더입니다.  
   
- 그러나 목록에 추가 파일 확장명을 추가할 수 있습니다. 추가 된 `<TokenReplacementFileExtensions>` 앞에 정의 된 SharePoint 프로젝트 파일에서 모든 PropertyGroup 요소는 \<가져오기 > SharePoint 대상 파일의 합니다.  
+  그러나 목록에 추가 파일 확장명을 추가할 수 있습니다. 추가 된 `<TokenReplacementFileExtensions>` 앞에 정의 된 SharePoint 프로젝트 파일에서 모든 PropertyGroup 요소는 \<가져오기 > SharePoint 대상 파일의 합니다.  
   
 > [!NOTE]  
 >  토큰 교체는 프로젝트를 컴파일한 후 발생 때문에 컴파일되는와 같은 파일 형식의 파일 확장명에 추가 해서는 안 *.cs*를 *.vb* 하거나 *.resx*합니다. 토큰은 컴파일되지 않는 파일에만 대체 됩니다.  

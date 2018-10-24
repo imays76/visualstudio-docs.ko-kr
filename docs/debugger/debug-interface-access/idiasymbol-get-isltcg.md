@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a799cf16dbf603f75cd810f9c249f4c0e8ba49ec
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7eb1d7308eb03d396ca8a08f915a294ec1debd82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877740"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
-지정 하는 플래그를 검색 여부는 [Compiland](../../debugger/debug-interface-access/compiland.md) 링커 스위치와 연결 된 [/LTCG (링크 타임 코드 생성)](/cpp/build/reference/ltcg-link-time-code-generation)는 전체 프로그램 최적화를 지원 합니다. 이 스위치는 관리 코드에만 적용 됩니다.  
+지정 하는 플래그를 검색 하는지 여부를 [Compiland](../../debugger/debug-interface-access/compiland.md) 링커 스위치를 사용 하 여 연결 되었습니다 [/LTCG (링크 타임 코드 생성)](/cpp/build/reference/ltcg-link-time-code-generation), 전체 프로그램 최적화 하는 데는 도움이 합니다. 이 스위치는 관리 되는 코드에만 적용 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,20 +34,20 @@ HRESULT get_iSLTCG(
   
 #### <a name="parameters"></a>매개 변수  
  pFlag  
- [out] 반환 `TRUE` 경우는 `compiland` /LTCG 링커 스위치와 연결 된; 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 경우는 `compiland` /LTCG 링커 스위치를 사용 하 여 연결 된 그렇지 않으면 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |요구 사항|설명|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
-|버전:|DIA SDK v 8.0|  
+|버전:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 19278cc1fd08a0dd4d4d18e11c7cb7a3e09ae7e0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 21a32cf13f598c894ebc7841f5ef4a0af3af82ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878975"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -41,43 +41,43 @@ ms.locfileid: "47859772"
 ## <a name="OrganizeNodes"></a> 그룹 코드 요소
  새 그룹을 추가하거나 기존 노드를 그룹으로 변환할 수 있습니다.
 
-1.  텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
+1. 텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
 
-2.  코드 요소를 그룹으로 변환하려면 해당 코드 요소에 대한 `<Node/>` 요소를 찾습니다.
+2. 코드 요소를 그룹으로 변환하려면 해당 코드 요소에 대한 `<Node/>` 요소를 찾습니다.
 
-     \- 또는 -
+    \- 또는 -
 
-     새 그룹을 추가하려면 `<Nodes>` 섹션을 찾습니다. 새 `<Node/>` 요소를 추가합니다.
+    새 그룹을 추가하려면 `<Nodes>` 섹션을 찾습니다. 새 `<Node/>` 요소를 추가합니다.
 
-3.  `<Node/>` 요소에 `Group` 특성을 추가하여 그룹을 확장된 상태로 표시할지 축소된 상태로 표시할지를 지정합니다. 예:
+3. `<Node/>` 요소에 `Group` 특성을 추가하여 그룹을 확장된 상태로 표시할지 축소된 상태로 표시할지를 지정합니다. 예:
 
-    ```xml
-    <Nodes>
-       <Node Id="MyFirstGroup" Group="Expanded" />
-       <Node Id="MySecondGroup" Group="Collapsed" />
-    </Nodes>
-    ```
+   ```xml
+   <Nodes>
+      <Node Id="MyFirstGroup" Group="Expanded" />
+      <Node Id="MySecondGroup" Group="Collapsed" />
+   </Nodes>
+   ```
 
-4.  `<Links>` 섹션에서 그룹 코드 요소와 자식 코드 요소 간의 각 관계에 대해 다음 특성을 가진 `<Link/>` 요소가 있는지 확인합니다.
+4. `<Links>` 섹션에서 그룹 코드 요소와 자식 코드 요소 간의 각 관계에 대해 다음 특성을 가진 `<Link/>` 요소가 있는지 확인합니다.
 
-    -   그룹 코드 요소를 지정하는 `Source` 특성
+   - 그룹 코드 요소를 지정하는 `Source` 특성
 
-    -   자식 코드 요소를 지정하는 `Target` 특성
+   - 자식 코드 요소를 지정하는 `Target` 특성
 
-    -   그룹 코드 요소와 자식 코드 요소 간의 `Category` 관계를 지정하는 `Contains` 특성
+   - 그룹 코드 요소와 자식 코드 요소 간의 `Category` 관계를 지정하는 `Contains` 특성
 
      예를 들어:
 
-    ```xml
-    <Links>
-       <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />
-       <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />
-       <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />
-       <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />
-    </Links>
-    ```
+   ```xml
+   <Links>
+      <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />
+      <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />
+      <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />
+      <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />
+   </Links>
+   ```
 
-     에 대 한 자세한 내용은 합니다 `Category` 특성을 참조 하십시오 [코드 요소 및 링크에 범주 할당](#AssignCategories)합니다.
+    에 대 한 자세한 내용은 합니다 `Category` 특성을 참조 하십시오 [코드 요소 및 링크에 범주 할당](#AssignCategories)합니다.
 
 ## <a name="ChangeGraphStyle"></a> 지도의 스타일 변경
  맵의 .dgml 파일을 편집하여 맵의 배경색과 테두리 색을 변경할 수 있습니다. 코드 요소 및 링크의 스타일을 변경 하려면을 참조 하세요 [의 코드 요소 및 링크 스타일 변경](#Highlight)합니다.
@@ -248,81 +248,81 @@ ms.locfileid: "47859772"
 
 ##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>코드 요소 또는 링크 그룹에 사용자 지정 스타일을 적용하려면
 
-1.  텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
+1. 텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
 
-2.  `<Styles></Styles>` 요소가 없으면 `<DirectedGraph></DirectedGraph>` 요소 아래의 `<Links></Links>` 요소 다음에 이 요소를 추가합니다.
+2. `<Styles></Styles>` 요소가 없으면 `<DirectedGraph></DirectedGraph>` 요소 아래의 `<Links></Links>` 요소 다음에 이 요소를 추가합니다.
 
-3.  `<Styles></Styles>` 요소의 `<Style/>` 요소 아래에서 다음 특성을 지정합니다.
+3. `<Styles></Styles>` 요소의 `<Style/>` 요소 아래에서 다음 특성을 지정합니다.
 
-    -   `TargetType="Node` &#124; `Link | Graph"`
+   - `TargetType="Node` &#124; `Link | Graph"`
 
-    -   `GroupLabel="` *NameInLegendBox* `"`
+   - `GroupLabel="` *NameInLegendBox* `"`
 
-    -   `ValueLabel="` *NameInStylePickerBox* `"`
+   - `ValueLabel="` *NameInStylePickerBox* `"`
 
      모든 대상 유형에 사용자 지정 스타일을 적용하려면 조건을 사용하지 않습니다.
 
 ##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>코드 요소 또는 링크 그룹에 조건부 스타일을 적용하려면
 
-1.  텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
+1. 텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
 
-2.  `<Style/>` 요소에 `<Condition/>` 특성이 포함된 `Expression` 요소를 추가하여 부울 값을 반환하는 식을 지정합니다.
+2. `<Style/>` 요소에 `<Condition/>` 특성이 포함된 `Expression` 요소를 추가하여 부울 값을 반환하는 식을 지정합니다.
 
-     예를 들어:
+    예를 들어:
 
-    ```xml
-    <Condition Expression="MyCategory"/>
-    ```
+   ```xml
+   <Condition Expression="MyCategory"/>
+   ```
 
-     - 또는
+    - 또는
 
-    ```xml
-    <Condition Expression="MyCategory > 100"/>
-    ```
+   ```xml
+   <Condition Expression="MyCategory > 100"/>
+   ```
 
-     - 또는
+    - 또는
 
-    ```xml
-    <Condition Expression="HasCategory('MyCategory')"/>
-    ```
+   ```xml
+   <Condition Expression="HasCategory('MyCategory')"/>
+   ```
 
-     이 식에서는 다음과 같은 BNF(Backus-Naur Form) 구문을 사용합니다.
+    이 식에서는 다음과 같은 BNF(Backus-Naur Form) 구문을 사용합니다.
 
-     <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
 
-     <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    <BinaryExpression> ::= <Expression> <Operator> <Expression>
 
-     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
 
-     <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
 
-     <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
 
-     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
 
-     <PropertyGet> :: = 식별자
+    <PropertyGet> :: = 식별자
 
-     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
 
-     <Identifier> ::= [^. ]*
+    <Identifier> ::= [^. ]*
 
-     <Literal> :: = 작은따옴표 또는 큰따옴표로 묶은 문자열 리터럴
+    <Literal> :: = 작은따옴표 또는 큰따옴표로 묶은 문자열 리터럴
 
-     <Number> :: = 선택적 소수점을 사용 하 여 숫자 문자열
+    <Number> :: = 선택적 소수점을 사용 하 여 숫자 문자열
 
-     여러 개 지정할 수 있습니다 `<Condition/>` 모두 스타일을 적용 하려면 만족 해야 하는 요소입니다.
+    여러 개 지정할 수 있습니다 `<Condition/>` 모두 스타일을 적용 하려면 만족 해야 하는 요소입니다.
 
-3.  `<Condition/>` 요소의 다음 줄에서 한 개 또는 여러 개의 `<Setter/>` 요소를 추가하여 조건을 만족하는 맵, 코드 요소 또는 링크에 적용할 `Property` 특성과 고정 `Value` 특성 또는 계산된 `Expression` 특성을 지정합니다.
+3. `<Condition/>` 요소의 다음 줄에서 한 개 또는 여러 개의 `<Setter/>` 요소를 추가하여 조건을 만족하는 맵, 코드 요소 또는 링크에 적용할 `Property` 특성과 고정 `Value` 특성 또는 계산된 `Expression` 특성을 지정합니다.
 
-     예:
+    예:
 
-    ```xml
-    <Setter Property="BackGround" Value="Green"/>
-    ```
+   ```xml
+   <Setter Property="BackGround" Value="Green"/>
+   ```
 
- 이러한 단계를 모두 보여 주는 간단한 예로, 다음 조건은 코드 요소의 `Passed` 범주가 `True`로 설정되었는지 `False`로 설정되었는지에 따라 코드 요소가 녹색 또는 빨간색으로 나타나도록 지정합니다.
+   이러한 단계를 모두 보여 주는 간단한 예로, 다음 조건은 코드 요소의 `Passed` 범주가 `True`로 설정되었는지 `False`로 설정되었는지에 따라 코드 요소가 녹색 또는 빨간색으로 나타나도록 지정합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -571,74 +571,74 @@ ms.locfileid: "47859772"
 
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>코드 요소에 문서 또는 URL을 연결하려면
 
-1.  텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
+1. 텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
 
-2.  원하는 코드 요소에 대한 `<Node/>` 요소를 찾습니다.
+2. 원하는 코드 요소에 대한 `<Node/>` 요소를 찾습니다.
 
-3.  다음 표의 작업 중 하나를 수행합니다.
+3. 다음 표의 작업 중 하나를 수행합니다.
 
-     단일 코드 요소
+    단일 코드 요소
 
-    -   `<Node/>` 또는 `<Link/>` 요소에서 `Reference` 특성을 추가하여 코드 요소 위치를 지정합니다.
+   - `<Node/>` 또는 `<Link/>` 요소에서 `Reference` 특성을 추가하여 코드 요소 위치를 지정합니다.
 
-        > [!NOTE]
-        >  `Reference` 특성은 요소마다 하나씩만 있을 수 있습니다.
+     > [!NOTE]
+     >  `Reference` 특성은 요소마다 하나씩만 있을 수 있습니다.
 
      예:
 
-    ```xml
-    <Nodes>
-       <Node Id="MyNode" Reference="MyDocument.txt" />
-    </Nodes>
-    <Properties>
-       <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />
-    </Properties>
-    ```
+   ```xml
+   <Nodes>
+      <Node Id="MyNode" Reference="MyDocument.txt" />
+   </Nodes>
+   <Properties>
+      <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />
+   </Properties>
+   ```
 
-     여러 코드 요소
+    여러 코드 요소
 
-    1.  `<Node/>` 또는 `<Link/>` 요소에 새 특성을 추가하여 각 참조의 위치를 지정합니다.
+   1. `<Node/>` 또는 `<Link/>` 요소에 새 특성을 추가하여 각 참조의 위치를 지정합니다.
 
-    2.  `<Properties>` 섹션에서 다음 작업을 수행합니다.
+   2. `<Properties>` 섹션에서 다음 작업을 수행합니다.
 
-        1.  각각의 새 참조 형식에 대해 `<Property/>` 요소를 추가합니다.
+      1.  각각의 새 참조 형식에 대해 `<Property/>` 요소를 추가합니다.
 
-        2.  `Id` 특성을 새 참조 특성의 이름으로 설정합니다.
+      2.  `Id` 특성을 새 참조 특성의 이름으로 설정합니다.
 
-        3.  추가 합니다 `IsReference` 특성 및 설정 `True` 코드 요소의 나타나나요 참조 **참조로 이동** 바로 가기 메뉴.
+      3.  추가 합니다 `IsReference` 특성 및 설정 `True` 코드 요소의 나타나나요 참조 **참조로 이동** 바로 가기 메뉴.
 
-        4.  사용 된 `Label` 코드 요소에 표시할 텍스트를 지정 하는 특성 **참조로 이동** 바로 가기 메뉴.
+      4.  사용 된 `Label` 코드 요소에 표시할 텍스트를 지정 하는 특성 **참조로 이동** 바로 가기 메뉴.
 
-     예를 들어:
+      예를 들어:
 
-    ```xml
-    <Nodes>
-       <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>
-    </Nodes>
-    <Properties>
-       <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />
-       <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />
-    </Properties>
-    ```
+   ```xml
+   <Nodes>
+      <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>
+   </Nodes>
+   <Properties>
+      <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />
+      <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />
+   </Properties>
+   ```
 
-     맵에서 코드 요소 이름은 밑줄이 그어진 상태로 표시됩니다. 코드 요소 또는 링크에 대 한 바로 가기 메뉴를 열면 표시 됩니다는 **참조로 이동** 선택 하기 위한 연결 된 코드 요소를 포함 하는 바로 가기 메뉴.
+    맵에서 코드 요소 이름은 밑줄이 그어진 상태로 표시됩니다. 코드 요소 또는 링크에 대 한 바로 가기 메뉴를 열면 표시 됩니다는 **참조로 이동** 선택 하기 위한 연결 된 코드 요소를 포함 하는 바로 가기 메뉴.
 
-4.  `ReferenceTemplate` 특성을 사용하여 URL 등의 일반 문자열을 지정합니다. 이 특성은 여러 참조에서 해당 문자열을 반복하는 대신 사용됩니다.
+4. `ReferenceTemplate` 특성을 사용하여 URL 등의 일반 문자열을 지정합니다. 이 특성은 여러 참조에서 해당 문자열을 반복하는 대신 사용됩니다.
 
-     `ReferenceTemplate` 특성은 참조 값의 자리 표시자를 지정합니다. 다음 예제에서는 `{0}` 특성의 `ReferenceTemplate` 자리 표시자가 `MyFirstReference` 요소의 `MySecondReference` 및 `<Node/>` 특성 값으로 바뀌어 전체 경로를 생성합니다.
+    `ReferenceTemplate` 특성은 참조 값의 자리 표시자를 지정합니다. 다음 예제에서는 `{0}` 특성의 `ReferenceTemplate` 자리 표시자가 `MyFirstReference` 요소의 `MySecondReference` 및 `<Node/>` 특성 값으로 바뀌어 전체 경로를 생성합니다.
 
-    ```xml
-    <Nodes>
-       <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>
-       <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>
-    </Nodes>
-    <Properties>
-       <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>
-       <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>
-    </Properties>
-    ```
+   ```xml
+   <Nodes>
+      <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>
+      <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>
+   </Nodes>
+   <Properties>
+      <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>
+      <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>
+   </Properties>
+   ```
 
-5.  참조된 코드 요소 또는 맵의 코드 요소를 보려면 코드 요소 또는 링크에 대한 바로 가기 메뉴를 엽니다. 선택할 **참조로 이동** 및 다음 코드 요소입니다.
+5. 참조된 코드 요소 또는 맵의 코드 요소를 보려면 코드 요소 또는 링크에 대한 바로 가기 메뉴를 엽니다. 선택할 **참조로 이동** 및 다음 코드 요소입니다.
 
 ## <a name="see-also"></a>참고 항목
 

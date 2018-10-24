@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7e33868c0609483f748c29cdc446bf720509d35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 012d79a99ee8df2acf26106be922fac8c335fae3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878028"
 ---
 # <a name="tier-interactions-view"></a>계층 상호 작용 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49184056"
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
   
- 상호 작용 뷰에서는 두 개의 창에 계층 상호 작용 데이터가 표시됩니다.  
+  상호 작용 뷰에서는 두 개의 창에 계층 상호 작용 데이터가 표시됩니다.  
   
--   마스터 창은 계층적 트리입니다. 최상위 행에는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 페이지 또는 프로세스의 데이터베이스 연결에 대해 집계된 데이터가 포함됩니다. 자식 노드에는 부모의 데이터베이스 연결에 대해 집계된 데이터가 포함됩니다.  
+- 마스터 창은 계층적 트리입니다. 최상위 행에는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 페이지 또는 프로세스의 데이터베이스 연결에 대해 집계된 데이터가 포함됩니다. 자식 노드에는 부모의 데이터베이스 연결에 대해 집계된 데이터가 포함됩니다.  
   
--   마스터 창에서 데이터베이스 호출 노드를 클릭하면 데이터베이스 호출 인스턴스에 대한 데이터가 세부 정보 창에 표시됩니다.  
+- 마스터 창에서 데이터베이스 호출 노드를 클릭하면 데이터베이스 호출 인스턴스에 대한 데이터가 세부 정보 창에 표시됩니다.  
   
- 시간은 밀리초 단위의 숫자 또는 CPU 클록 틱의 횟수로 표시됩니다. 표시되는 시간 단위를 변경하려면**도구** 메뉴를 클릭하고 **옵션**을 클릭한 후에 **시간 값 표시 단위** 옵션 중 하나를 선택합니다.  
+  시간은 밀리초 단위의 숫자 또는 CPU 클록 틱의 횟수로 표시됩니다. 표시되는 시간 단위를 변경하려면**도구** 메뉴를 클릭하고 **옵션**을 클릭한 후에 **시간 값 표시 단위** 옵션 중 하나를 선택합니다.  
   
 ## <a name="master-pane"></a>마스터 창  
   
