@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2421a1f39f2969563bc10a43367936ae499fac30
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863271"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>패키지 및 SharePoint 솔루션 배포
   일반적으로 솔루션 패키지 (.wsp) 파일을 사용 하 여 SharePoint 솔루션을 SharePoint 서버에 배포 됩니다. 기능으로 SharePoint 프로젝트 항목을 구성 하 고 SharePoint 기능을 배포 하는 패키지를 만들려면 Visual Studio를 사용할 수 있습니다.  
@@ -67,23 +67,23 @@ ms.locfileid: "37119544"
 ### <a name="packaging-explorer"></a>패키징 탐색기  
  기능 디자이너 및 패키지 디자이너를 보완 하기 위해 파일을 그룹화 하려면 SharePoint 기능 및 패키지에 패키징 탐색기를 사용할 수 있습니다. 패키지에 기능을 SharePoint 프로젝트의 계층적 뷰를 볼 수는 또한 항목 및 파일입니다. 패키징 탐색기는 다음 작업을 완료 하는 데 사용할 수 있는 도구 창:  
   
--   SharePoint 프로젝트 항목 및 파일을 엽니다.  
+- SharePoint 프로젝트 항목 및 파일을 엽니다.  
   
--   다른 기능 중 하나에서 SharePoint 프로젝트 항목을 끌어서 설정.  
+- 다른 기능 중 하나에서 SharePoint 프로젝트 항목을 끌어서 설정.  
   
--   SharePoint 프로젝트 항목 및 끌어서 기능 한 패키지에서 간에 합니다.  
+- SharePoint 프로젝트 항목 및 끌어서 기능 한 패키지에서 간에 합니다.  
   
--   패키지에 새 기능을 추가 합니다.  
+- 패키지에 새 기능을 추가 합니다.  
   
--   기능 또는 패키지 디자이너를 엽니다.  
+- 기능 또는 패키지 디자이너를 엽니다.  
   
--   기능 및 패키지의 유효성을 검사 합니다.  
+- 기능 및 패키지의 유효성을 검사 합니다.  
   
- Visual Studio에서 SharePoint 개발 도구는 솔루션 패키지를 올바른 형식 인지 확인 하려면 유효성 검사 규칙이 있습니다. 또한 규칙을 확인 하는 *.wsp* 솔루션 파일을 성공적으로 배포 하 고 SharePoint 서버에서 활성화 있습니다. 기능에 대 한 XML 스키마에 대 한 자세한 내용은 참조 하세요 [기능 스키마](http://go.microsoft.com/fwlink/?LinkID=169192)합니다.  
+  Visual Studio에서 SharePoint 개발 도구는 솔루션 패키지를 올바른 형식 인지 확인 하려면 유효성 검사 규칙이 있습니다. 또한 규칙을 확인 하는 *.wsp* 솔루션 파일을 성공적으로 배포 하 고 SharePoint 서버에서 활성화 있습니다. 기능에 대 한 XML 스키마에 대 한 자세한 내용은 참조 하세요 [기능 스키마](http://go.microsoft.com/fwlink/?LinkID=169192)합니다.  
   
- SharePoint 프로젝트 시스템에 사용자 지정 기능 및 패키지 유효성 검사 규칙을 추가할 수 있습니다. 자세한 내용은 [방법: SharePoint 솔루션에 대 한 유효성 검사 규칙 사용자 지정 기능 및 패키지를 만들](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)합니다.  
+  SharePoint 프로젝트 시스템에 사용자 지정 기능 및 패키지 유효성 검사 규칙을 추가할 수 있습니다. 자세한 내용은 [방법: SharePoint 솔루션에 대 한 유효성 검사 규칙 사용자 지정 기능 및 패키지를 만들](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)합니다.  
   
- 패키징 탐색기에 대 한 자세한 내용은 참조 하세요. [방법: 패키징 탐색기를 사용 하 여 패키지에 기능과 항목을 제거 하 고 추가](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)합니다.  
+  패키징 탐색기에 대 한 자세한 내용은 참조 하세요. [방법: 패키징 탐색기를 사용 하 여 패키지에 기능과 항목을 제거 하 고 추가](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)합니다.  
   
 ### <a name="solution-explorer"></a>솔루션 탐색기
  솔루션 탐색기를 사용 하 여 탐색 하 고 SharePoint 프로젝트의 파일을 열 수 있습니다. 솔루션 탐색기에서 상황에 맞는 메뉴를 사용 하 여 기능을 기능 이벤트 수신자를 추가 하 고 리소스 기능. 또한 기능 및 배포에 대 한 패키지를 구성 하는 기능 디자이너 및 패키지 디자이너를 열 수 있습니다.  
@@ -100,13 +100,13 @@ ms.locfileid: "37119544"
   
  예를 들어, 추가 하는 *.xml* SharePoint 프로젝트에 파일을 이러한 작업 중 하나를 수행 합니다.  
   
--   SharePoint "레이아웃" 매핑된 폴더를 프로젝트에 추가 합니다. 이렇게 **솔루션 탐색기** 라는 폴더 **레이아웃** 프로젝트에 대 한 하위 폴더 포함 합니다. 추가 된 *.xml* 새 하위 폴더에는 파일입니다. 기본적으로 파일에서 SharePoint 파일 시스템에 배포 된 *... \TEMPLATE\LAYOUTS\\\<폴더 이름 >* 합니다. 매핑된 폴더를 추가 하는 방법에 대 한 정보를 참조 하세요 [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)합니다.  
+- SharePoint "레이아웃" 매핑된 폴더를 프로젝트에 추가 합니다. 이렇게 **솔루션 탐색기** 라는 폴더 **레이아웃** 프로젝트에 대 한 하위 폴더 포함 합니다. 추가 된 *.xml* 새 하위 폴더에는 파일입니다. 기본적으로 파일에서 SharePoint 파일 시스템에 배포 된 *... \TEMPLATE\LAYOUTS\\\<폴더 이름 >* 합니다. 매핑된 폴더를 추가 하는 방법에 대 한 정보를 참조 하세요 [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)합니다.  
   
--   추가 합니다 *.xml* SharePoint 프로젝트 항목의 폴더에 파일을 변경한를 **배포 유형을** 의 속성을 *.xml* 에서 파일 **NoDeployment**  와 같은 다른 설정과 **RootFile** 하거나 **ElementFile**합니다. 적절 한 **배포 유형을** 설정 파일과 프로젝트에 따라 달라 집니다. 에 대 한 자세한 내용은 합니다 **배포 유형을** 속성 설정을 참조 하세요 [SharePoint 개발 솔루션](../sharepoint/developing-sharepoint-solutions.md)합니다.  
+- 추가 합니다 *.xml* SharePoint 프로젝트 항목의 폴더에 파일을 변경한를 **배포 유형을** 의 속성을 *.xml* 에서 파일 **NoDeployment**  와 같은 다른 설정과 **RootFile** 하거나 **ElementFile**합니다. 적절 한 **배포 유형을** 설정 파일과 프로젝트에 따라 달라 집니다. 에 대 한 자세한 내용은 합니다 **배포 유형을** 속성 설정을 참조 하세요 [SharePoint 개발 솔루션](../sharepoint/developing-sharepoint-solutions.md)합니다.  
   
- 추가 파일을 솔루션의 특정 프로젝트에 적용 되지 않는 경우에 빈 SharePoint 프로젝트를 솔루션에 추가 하 고에 파일을 추가할 수 있습니다. 콘텐츠 데이터베이스에 특히 SharePoint에 파일을 배포 하기 위한 또 다른 방법은 프로젝트에 모듈을 추가 하 고 다음 모듈에 파일을 추가 하는 것입니다. 자세한 내용은 [모듈을 사용 하 여 솔루션에 파일을 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)합니다.  
+  추가 파일을 솔루션의 특정 프로젝트에 적용 되지 않는 경우에 빈 SharePoint 프로젝트를 솔루션에 추가 하 고에 파일을 추가할 수 있습니다. 콘텐츠 데이터베이스에 특히 SharePoint에 파일을 배포 하기 위한 또 다른 방법은 프로젝트에 모듈을 추가 하 고 다음 모듈에 파일을 추가 하는 것입니다. 자세한 내용은 [모듈을 사용 하 여 솔루션에 파일을 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)합니다.  
   
 ## <a name="see-also"></a>참고자료
  [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)   
- [빌드 및 SharePoint 솔루션 디버깅](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   

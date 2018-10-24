@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 676ec19fec1406d85e6a7d9e66865b2794f72aa6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f61247bafe95039b89b43e740ce69693b584604f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866341"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
-중단점의 오류 유형을 지정합니다.  
+중단점 오류 유형을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -62,7 +62,7 @@ public enum enum_BP_ERROR_TYPE {
   
 ## <a name="members"></a>멤버  
  BPET_NONE  
- 오류가 발생 하지 중단점을 지정합니다.  
+ 중단점 오류 없음를 지정합니다.  
   
  BPET_TYPE_WARNING  
  경고 스타일 중단점 오류를 지정합니다.  
@@ -71,13 +71,13 @@ public enum enum_BP_ERROR_TYPE {
  오류-스타일 중단점 오류를 지정 합니다.  
   
  BPET_SEV_HIGH  
- 심각한 중단점 오류를 지정합니다.  
+ 심각도 높은 중단점 오류를 지정합니다.  
   
  BPET_SEV_GENERAL  
- 심각도 보통 중단점 오류를 지정합니다.  
+ 중간 심각도 중단점 오류를 지정합니다.  
   
  BPET_SEV_LOW  
- 낮은 심각도 중단점 오류를 지정합니다.  
+ 심각도 낮은 중단점 오류를 지정합니다.  
   
  BPET_TYPE_MASK  
  마스크 스타일 중단점 오류를 지정합니다.  
@@ -92,12 +92,12 @@ public enum enum_BP_ERROR_TYPE {
  일반 오류 스타일 중단점 오류를 지정합니다.  
   
  BPET_ALL  
- 모든 중단점 오류 유형을 지정합니다.  
+ 모든 중단점 오류 형식을 지정합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에 비트와 함께 사용할 수 있습니다 `OR` 하는 데 사용 하 고는 `dwType` 의 멤버는 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조입니다. 에 대 한 매개 변수로 전달 되는 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) 메서드.  
+ 이러한 값을 비트 결합할 수 있습니다 `OR` 사용 및는 `dwType` 의 멤버는 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조입니다. 매개 변수로 전달 된 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) 메서드.  
   
- 중단점 오류 유형 심각도 및 형식으로 구성 됩니다. 즉, 중단점 오류 형식이 일종 되지 않습니다 (예를 들어 `BPET_TYPE_ERROR`,) 나 심각도 (예를 들어 `BPET_SEV_GENERAL`) 단독으로 합니다. `BPET_GENERAL_WARNING` 및 `BPET_GENERAL_ERROR` 일반 경고 및 오류 중단점에 대 한 미리 정의 된 값을 제공 합니다.  
+ 중단점 오류 유형 심각도 및 형식으로 구성 됩니다. 즉, 중단점 오류 형식 유형 뿐 되지 (예를 들어 `BPET_TYPE_ERROR`,) 또는 심각도 (예를 들어 `BPET_SEV_GENERAL`) 단독으로 합니다. `BPET_GENERAL_WARNING` 및 `BPET_GENERAL_ERROR` 일반 경고 및 오류 중단점에 대 한 미리 정의 된 값을 제공 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

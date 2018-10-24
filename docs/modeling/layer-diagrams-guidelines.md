@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 262dfd7860c5bd16c210e7305599eeb1003372fe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863336"
 ---
 # <a name="dependency-diagrams-guidelines"></a>종속성 다이어그램: 지침
 
@@ -105,7 +105,7 @@ ms.locfileid: "47860071"
 시스템 또는 의도 한 아키텍처를 확인 하려고 하는 변경 내용을 설명 하려면 종속성 다이어그램을 편집 하려면 다음 단계를 사용 합니다. 또한 확장하기 전에 리팩터링을 약간 변경하여 코드의 구조를 향상시키는 것도 고려할 수 있습니다. 참조 [코드 구조 개선](#Improving)합니다.
 
 |**대상**|**다음이 단계를 수행 합니다.**|
-|------------|-----------------------------|
+|-|-|
 |있지 말아야 할 종속성 삭제|종속성을 클릭 한 다음 **삭제**합니다.|
 |종속성 방향 변경 또는 제한|설정 해당 **방향을** 속성입니다.|
 |새 종속성 만들기|사용 된 **종속성** 하 고 **양방향 종속성** 도구입니다.<br /><br /> 종속성을 여러 개 그리려면 이 도구를 두 번 클릭합니다. 완료 되 면 클릭 합니다 **포인터** 도구 또는 키를 눌러를 **ESC** 키.|

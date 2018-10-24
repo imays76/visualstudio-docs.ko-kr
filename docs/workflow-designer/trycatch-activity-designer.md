@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26985893ae5a6431743564e28793957ecf0f9e01
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866391"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 활동 디자이너
 
@@ -42,7 +42,7 @@ ms.locfileid: "36756816"
 다음 표는 <xref:System.Activities.Statements.TryCatch>속성 디자이너에서 사용 되는 방법을 설명 합니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TryCatch> 활동의 선택적 이름을 지정합니다. 기본 TryCatch입니다.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|<xref:System.Activities.Statements.TryCatch>를 실행할 때 먼저 실행된 활동입니다.|
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|컬렉션인 **Catch** 때 확인 해야 할 요소는 <xref:System.Activities.Statements.TryCatch.Try%2A> 활동이 예외를 throw 합니다.<br /><br /> <xref:System.Activities.Statements.TryCatch.Catches%2A>에 하나 이상의 활동을 추가하거나 <xref:System.Activities.Statements.TryCatch.Finally%2A> 블록에 활동을 추가해야 합니다.|
@@ -51,5 +51,5 @@ ms.locfileid: "36756816"
 ## <a name="see-also"></a>참고자료
 
 - [컬렉션](../workflow-designer/collection-activity-designers.md)
-- [다시 throw](../workflow-designer/rethrow-activity-designer.md)
+- [Rethrow](../workflow-designer/rethrow-activity-designer.md)
 - [Throw](../workflow-designer/throw-activity-designer.md)

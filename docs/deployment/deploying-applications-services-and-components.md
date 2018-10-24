@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861633"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>빠른 시작: Visual Studio에서 배포 소개
 
@@ -121,7 +121,7 @@ Visual Studio에서 Microsoft Store 배포에 대 한 앱 패키지를 만들 �
 | 앱 형식 | 배포 시나리오 | 링크 |
 | --- | --- | --- |
 | **Office 앱** | Visual Studio에서 Office 용 추가 기능을 게시할 수 있습니다. | [Office 추가 기능을 게시 및 배포](https://dev.office.com/docs/add-ins/publish/publish) |
-| **WCF 또는 OData 서비스**  | 다른 응용 프로그램 웹 서버에 배포한 WCF RIA 서비스를 사용할 수 있습니다. | [WCF Data Services 개발 및 배포](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **WCF 또는 OData 서비스** | 다른 응용 프로그램 웹 서버에 배포한 WCF RIA 서비스를 사용할 수 있습니다. | [WCF Data Services 개발 및 배포](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch Visual Studio 2017에서 더 이상 지원 되지 않지만 Visual Studio 2015에서 및 이전 버전 배포할 수 없습니다. | [LightSwitch 응용 프로그램 배포](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>다음 단계

@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd99df10b7cfeefea38bd8399c3d21961d65d205
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72aaaa4a3eb75043f4a2cf3bdd20352bdd2af93b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856693"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio에 대 한 공유 색
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ ms.locfileid: "49245390"
  사용  
  -   사용자 지정 메뉴를 만들어야 하는 경우 항상  
   
--   Visual Studio 메뉴와 일치시키려는 새 UI 구성 요소가 있는 경우  
+- Visual Studio 메뉴와 일치시키려는 새 UI 구성 요소가 있는 경우  
   
- 사용 안 함  
- 배경색만 단독으로 사용하지 마세요. 항상 지정된 배경/전경 조합을 사용합니다.  
+  사용 안 함  
+  배경색만 단독으로 사용하지 마세요. 항상 지정된 배경/전경 조합을 사용합니다.  
   
 #### <a name="menu-title"></a>메뉴 제목  
  일반적으로 메뉴가 명령 모음에 있을 경우 메뉴 제목은 배경, 테두리, 제목 텍스트 및 선택적인 문자 모양으로 구성됩니다.  
@@ -64,137 +64,137 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   항상 메뉴 제목과 일치시키지 않으려는 모든 항목  
   
--   지정된 배경/전경 조합 이외의 모든 조합  
+- 지정된 배경/전경 조합 이외의 모든 조합  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![메뉴 제목 기본값](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")  
+  ![메뉴 제목 기본값](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")  
   
- **메뉴 제목**  
+  **메뉴 제목**  
   
- 배경  
+  배경  
   
- 없음  
+  없음  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![메뉴 제목 기본값은 문자 모양](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")  
+  ![메뉴 제목 기본값은 문자 모양](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")  
   
- **문자 모양의 메뉴 제목**  
+  **문자 모양의 메뉴 제목**  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.CommandBarMenuGlyph`  
+  `Environment.CommandBarMenuGlyph`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![메뉴 제목 가리키기](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")  
+  ![메뉴 제목 가리키기](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")  
   
- **메뉴 제목**  
+  **메뉴 제목**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- ![가리키기 문자 모양의 메뉴 제목](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")  
+  ![가리키기 문자 모양의 메뉴 제목](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")  
   
- **문자 모양의 메뉴 제목**  
+  **문자 모양의 메뉴 제목**  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.CommandBarMenuMouseOverGlyph`  
+  `Environment.CommandBarMenuMouseOverGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![메뉴 제목 누름](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")  
+  ![메뉴 제목 누름](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")  
   
- **메뉴 제목**  
+  **메뉴 제목**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![누른 문자 모양의 메뉴 제목](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")  
+  ![누른 문자 모양의 메뉴 제목](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")  
   
- **문자 모양의 메뉴 제목**  
+  **문자 모양의 메뉴 제목**  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.CommandBarMenuMouseDownGlyph`  
+  `Environment.CommandBarMenuMouseDownGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- 왼쪽, 위쪽 및 오른쪽만  
+  왼쪽, 위쪽 및 오른쪽만  
   
- **Disabled**  
+  **Disabled**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![사용 하지 않도록 설정 하는 문자 모양의 메뉴 제목](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")  
+  ![사용 하지 않도록 설정 하는 문자 모양의 메뉴 제목](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")  
   
- **문자 모양의 메뉴 제목**  
+  **문자 모양의 메뉴 제목**  
   
- 배경  
+  배경  
   
- 없음  
+  없음  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
 #### <a name="menu"></a>메뉴  
  개별 메뉴 항목은 메뉴 텍스트와 선택적 아이콘, 확인란 또는 하위 메뉴 문자 모양으로 구성됩니다. 마우스로 가리키면 해당 배경색과 텍스트 색이 바뀝니다. 이 색 토큰은 배경/전경 쌍입니다.  
@@ -207,153 +207,153 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   다른 컨텍스트에서 발생하는 모든 드롭다운 목록  
   
--   지정된 배경/전경 조합 이외의 모든 조합  
+- 지정된 배경/전경 조합 이외의 모든 조합  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![메뉴 기본값](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")  
+  ![메뉴 기본값](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")  
   
- **메뉴**  
+  **메뉴**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- 전경(하위 메뉴 문자 모양)  
+  전경(하위 메뉴 문자 모양)  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- 아이콘 채널 배경  
+  아이콘 채널 배경  
   
- `Environment.CommandBarMenuIconBackground`  
+  `Environment.CommandBarMenuIconBackground`  
   
- 구분 기호  
+  구분 기호  
   
- `Environment.CommandBarMenuSeparator`  
+  `Environment.CommandBarMenuSeparator`  
   
- 그림자  
+  그림자  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- ![메뉴 확인 됨](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")  
+  ![메뉴 확인 됨](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")  
   
- **선택한 상태**  
+  **선택한 상태**  
   
- 확인 표시  
+  확인 표시  
   
- `Environment.CommandBarCheckBox`  
+  `Environment.CommandBarCheckBox`  
   
- 확인 표시 배경  
+  확인 표시 배경  
   
- `Environment.CommandBarSelectedIcon`  
+  `Environment.CommandBarSelectedIcon`  
   
- ![선택한 메뉴](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")  
+  ![선택한 메뉴](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")  
   
- **선택**  
+  **선택**  
   
- 아이콘 배경  
+  아이콘 배경  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- 아이콘 테두리  
+  아이콘 테두리  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![메뉴 가리키기](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")  
+  ![메뉴 가리키기](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")  
   
- **메뉴 항목**  
+  **메뉴 항목**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- 전경(하위 메뉴 문자 모양)  
+  전경(하위 메뉴 문자 모양)  
   
- `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
+  `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
   
- ![메뉴 가리키기 확인 됨](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")  
+  ![메뉴 가리키기 확인 됨](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")  
   
- **선택한 상태**  
+  **선택한 상태**  
   
- 확인 표시  
+  확인 표시  
   
- `Environment.CommandBarCheckBoxMouseOver`  
+  `Environment.CommandBarCheckBoxMouseOver`  
   
- 확인 표시 배경  
+  확인 표시 배경  
   
- `Environment.CommandBarHoverOverSelectedIcon`  
+  `Environment.CommandBarHoverOverSelectedIcon`  
   
- ![메뉴 가리키기 선택 됨](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")  
+  ![메뉴 가리키기 선택 됨](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")  
   
- **선택**  
+  **선택**  
   
- 아이콘 배경  
+  아이콘 배경  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- 아이콘 테두리  
+  아이콘 테두리  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- **Disabled**  
+  **Disabled**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![비활성화 메뉴](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")  
+  ![비활성화 메뉴](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")  
   
- Menu item  
+  Menu item  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- 전경(하위 메뉴 문자 모양)  
+  전경(하위 메뉴 문자 모양)  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- ![메뉴 사용 안 함 확인](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")  
+  ![메뉴 사용 안 함 확인](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")  
   
- 선택한 상태  
+  선택한 상태  
   
- 확인 표시  
+  확인 표시  
   
- `Environment.CommandBarCheckBoxDisabled`  
+  `Environment.CommandBarCheckBoxDisabled`  
   
- 확인 표시 배경  
+  확인 표시 배경  
   
- `Environment.CommandBarSelectedIconDisabled`  
+  `Environment.CommandBarSelectedIconDisabled`  
   
 ### <a name="command-bar"></a>명령 모음  
  명령 모음은 Visual Studio IDE 내의 여러 위치에 나타날 수 있습니다. 특히, 명령 선반에 표시되며 도구 또는 문서 창에 포함됩니다.  
@@ -383,33 +383,33 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   명령 모음과 유사하지 않은 UI 요소  
   
--   토큰 이름이 지정된 구성 요소 이외의 다른 명령 모음 구성 요소  
+- 토큰 이름이 지정된 구성 요소 이외의 다른 명령 모음 구성 요소  
   
- **기본값** (다른 상태 없음)  
+  **기본값** (다른 상태 없음)  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- 배경  
+  배경  
   
- `Environment.CommandBarGradientBegin`  
+  `Environment.CommandBarGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarToolBarBorder`  
+  `Environment.CommandBarToolBarBorder`  
   
- 끌기 핸들  
+  끌기 핸들  
   
- `Environment.CommandBarDragHandle`  
+  `Environment.CommandBarDragHandle`  
   
- 구분 기호  
+  구분 기호  
   
- `Environment.CommandBarToolBarSeparator`  
+  `Environment.CommandBarToolBarSeparator`  
   
- `Environment.CommandBarToolBarSeparatorHighlight`  
+  `Environment.CommandBarToolBarSeparatorHighlight`  
   
 #### <a name="command-icons"></a>명령 아이콘  
  ![명령 아이콘 검토](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")  
@@ -422,139 +422,139 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   고유한 토큰 이름을 가진 컨트롤  
   
--   지정된 배경/전경 조합 이외의 모든 조합  
+- 지정된 배경/전경 조합 이외의 모든 조합  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![명령 아이콘 기본값](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")  
+  ![명령 아이콘 기본값](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")  
   
- **기본**  
+  **기본**  
   
- 배경  
+  배경  
   
- 해당 없음(명령 모음 배경에서 상속됨)  
+  해당 없음(명령 모음 배경에서 상속됨)  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- 테두리  
+  테두리  
   
- N/A  
+  N/A  
   
- ![명령 아이콘 기본값 선택 됨](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")  
+  ![명령 아이콘 기본값 선택 됨](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")  
   
- **선택**  
+  **선택**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextSelected`  
+  `Environment.CommandBarTextSelected`  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **가리키기 및 키보드 포커스 있음**  
+  **가리키기 및 키보드 포커스 있음**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![명령 아이콘 가리키기](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")  
+  ![명령 아이콘 가리키기](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")  
   
- **표준 가리키기**  
+  **표준 가리키기**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- ![명령 아이콘 가리키기 선택 됨](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")  
+  ![명령 아이콘 가리키기 선택 됨](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")  
   
- **선택한 항목 가리키기**  
+  **선택한 항목 가리키기**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextHoverOverSelected`  
+  `Environment.CommandBarTextHoverOverSelected`  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![명령 아이콘 누름](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")  
+  ![명령 아이콘 누름](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")  
   
- **명령 아이콘 누름된**  
+  **명령 아이콘 누름된**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- **Disabled**  
+  **Disabled**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![명령 아이콘 사용 안 함](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")  
+  ![명령 아이콘 사용 안 함](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")  
   
- **사용 안 함된 명령 아이콘**  
+  **사용 안 함된 명령 아이콘**  
   
- 배경  
+  배경  
   
- 해당 없음(명령 모음 배경에서 상속됨)  
+  해당 없음(명령 모음 배경에서 상속됨)  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- 테두리  
+  테두리  
   
- N/A  
+  N/A  
   
 ####  <a name="BKMK_CommandComboBox"></a> 콤보 상자  
   
@@ -566,242 +566,242 @@ ms.locfileid: "49245390"
  사용  
  -   사용자 지정 콤보 상자를 빌드하는 경우  
   
--   콤보 상자와 유사한 명령 모음 컨트롤을 만드는 경우  
+- 콤보 상자와 유사한 명령 모음 컨트롤을 만드는 경우  
   
- 사용 안 함  
- -   명령 모음 UI와 항상 일치시키지 않으려는 모든 항목  
+  사용 안 함  
+  -   명령 모음 UI와 항상 일치시키지 않으려는 모든 항목  
   
--   스타일이 적용된 콤보 상자에 액세스할 수 있는 경우  
+- 스타일이 적용된 콤보 상자에 액세스할 수 있는 경우  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![콤보 상자 입력된 필드](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")  
+  ![콤보 상자 입력된 필드](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")  
   
- **입력된 필드**  
+  **입력된 필드**  
   
- 배경  
+  배경  
   
- `Environment.ComboBoxBackground`  
+  `Environment.ComboBoxBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxText`  
+  `Environment.ComboBoxText`  
   
- 테두리  
+  테두리  
   
- `Environment.ComboBoxBorder`  
+  `Environment.ComboBoxBorder`  
   
- 구분 기호  
+  구분 기호  
   
- 구분 기호 없음  
+  구분 기호 없음  
   
- ![콤보 상자 드롭다운&#45;단추를](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")  
+  ![콤보 상자 드롭다운&#45;단추를](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- 해당 없음(상속됨)  
+  해당 없음(상속됨)  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ComboBoxGlyph`  
+  `Environment.ComboBoxGlyph`  
   
- ![콤보 상자&#47;삭제&#45;드롭다운 목록](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")  
+  ![콤보 상자&#47;삭제&#45;드롭다운 목록](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")  
   
- **드롭다운 목록**  
+  **드롭다운 목록**  
   
- 배경  
+  배경  
   
- `Environment.ComboBoxPopupBackgroundBegin`  
+  `Environment.ComboBoxPopupBackgroundBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- 테두리  
+  테두리  
   
- `Environment.ComboBoxPopupBorder`  
+  `Environment.ComboBoxPopupBorder`  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![콤보 상자 입력된 필드 가리키기](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")  
+  ![콤보 상자 입력된 필드 가리키기](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")  
   
- **입력된 필드**  
+  **입력된 필드**  
   
- 배경  
+  배경  
   
- `Environment.ComboBoxMouseOverBackgroundBegin`  
+  `Environment.ComboBoxMouseOverBackgroundBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxMouseOverText`  
+  `Environment.ComboBoxMouseOverText`  
   
- 테두리  
+  테두리  
   
- `Environment.ComboBoxMouseOverBorder`  
+  `Environment.ComboBoxMouseOverBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `Environment.ComboBoxMouseOverSeparator`  
+  `Environment.ComboBoxMouseOverSeparator`  
   
- ![콤보 상자&#47;삭제&#45;아래로 단추 가리키기](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")  
+  ![콤보 상자&#47;삭제&#45;아래로 단추 가리키기](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- `Environment.ComboBoxButtonMouseOverBackground`  
+  `Environment.ComboBoxButtonMouseOverBackground`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ComboBoxMouseOverGlyph`  
+  `Environment.ComboBoxMouseOverGlyph`  
   
- ![콤보 상자&#47;삭제&#45;드롭다운 목록 가리키기](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")  
+  ![콤보 상자&#47;삭제&#45;드롭다운 목록 가리키기](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")  
   
- **드롭다운 목록**  
+  **드롭다운 목록**  
   
- 배경(메뉴 항목)  
+  배경(메뉴 항목)  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- 테두리(메뉴 항목)  
+  테두리(메뉴 항목)  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **초점을 맞춘**  
+  **초점을 맞춘**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Color.category  
+  토큰 이름: Color.category  
   
- ![포커스가 있는 콤보 상자 입력된 필드](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")  
+  ![포커스가 있는 콤보 상자 입력된 필드](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")  
   
- **입력된 필드**  
+  **입력된 필드**  
   
- 배경  
+  배경  
   
- `Environment.ComboBoxFocusedBackground`  
+  `Environment.ComboBoxFocusedBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxFocusedText`  
+  `Environment.ComboBoxFocusedText`  
   
- 테두리  
+  테두리  
   
- `Environment.ComboBoxFocusedBorder`  
+  `Environment.ComboBoxFocusedBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `Environment.ComboBoxFocusedButtonSeparator`  
+  `Environment.ComboBoxFocusedButtonSeparator`  
   
- ![콤보 상자&#47;삭제&#45;포커스가 있는 단추 아래로](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")  
+  ![콤보 상자&#47;삭제&#45;포커스가 있는 단추 아래로](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- `Environment.ComboBoxFocusedButtonBackground`  
+  `Environment.ComboBoxFocusedButtonBackground`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ComboBoxFocusedGlyph`  
+  `Environment.ComboBoxFocusedGlyph`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Color.category  
+  토큰 이름: Color.category  
   
- ![콤보 상자 입력된 필드 누름](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")  
+  ![콤보 상자 입력된 필드 누름](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")  
   
- **입력된 필드**  
+  **입력된 필드**  
   
- 배경  
+  배경  
   
- `Environment.ComboBoxMouseDownBackground`  
+  `Environment.ComboBoxMouseDownBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxMouseDownText`  
+  `Environment.ComboBoxMouseDownText`  
   
- 테두리  
+  테두리  
   
- `Environment.ComboBoxMouseDownBorder`  
+  `Environment.ComboBoxMouseDownBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `Environment.ComboBoxMouseDownSeparator`  
+  `Environment.ComboBoxMouseDownSeparator`  
   
- ![콤보 상자&#47;삭제&#45;단추 누름 아래로](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")  
+  ![콤보 상자&#47;삭제&#45;단추 누름 아래로](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- `Environment.ComboBoxButtonMouseDownBackground`  
+  `Environment.ComboBoxButtonMouseDownBackground`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ComboBoxMouseDownGlyph`  
+  `Environment.ComboBoxMouseDownGlyph`  
   
- **Disabled**  
+  **Disabled**  
   
- ![콤보 상자 입력된 필드 사용 안 함](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")  
+  ![콤보 상자 입력된 필드 사용 안 함](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")  
   
- **입력된 필드**  
+  **입력된 필드**  
   
- 배경  
+  배경  
   
- `Environment.ComboBoxDisabledBackground`  
+  `Environment.ComboBoxDisabledBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxDisabledText`  
+  `Environment.ComboBoxDisabledText`  
   
- 테두리  
+  테두리  
   
- `Environment.ComboBoxDisabledBorder`  
+  `Environment.ComboBoxDisabledBorder`  
   
- 구분 기호  
+  구분 기호  
   
- 구분 기호 없음  
+  구분 기호 없음  
   
- ![콤보 상자&#47;삭제&#45;단추 사용 안 함 아래로](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")  
+  ![콤보 상자&#47;삭제&#45;단추 사용 안 함 아래로](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- 없음  
+  없음  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ComboBoxDisabledGlyph`  
+  `Environment.ComboBoxDisabledGlyph`  
   
 ####  <a name="BKMK_CommandDropDown"></a> 드롭다운 목록  
   
@@ -816,203 +816,203 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   드롭다운 목록과 유사하지 않은 모든 항목  
   
--   콤보 상자 또는 분할 단추  
+- 콤보 상자 또는 분할 단추  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;선택 필드 아래로](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")  
+  ![삭제&#45;선택 필드 아래로](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")  
   
- **선택 필드**  
+  **선택 필드**  
   
- 배경  
+  배경  
   
- `Environment.DropDownBackground`  
+  `Environment.DropDownBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `DropDownText`  
+  `DropDownText`  
   
- 테두리  
+  테두리  
   
- `DropDownBorder`  
+  `DropDownBorder`  
   
- 구분 기호  
+  구분 기호  
   
- 구분 기호 없음  
+  구분 기호 없음  
   
- ![삭제&#45;단추를](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")  
+  ![삭제&#45;단추를](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- 없음  
+  없음  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.DropDownGlyph`  
+  `Environment.DropDownGlyph`  
   
- ![삭제&#45;목록을 아래로](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")  
+  ![삭제&#45;목록을 아래로](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")  
   
- **드롭다운 목록**  
+  **드롭다운 목록**  
   
- 배경  
+  배경  
   
- `Environment.DropDownPopupBackgroundBegin`  
+  `Environment.DropDownPopupBackgroundBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- 테두리  
+  테두리  
   
- `Environment.DropDownPopupBorder`  
+  `Environment.DropDownPopupBorder`  
   
- 그림자  
+  그림자  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;가리키기 선택 필드 아래로](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")  
+  ![삭제&#45;가리키기 선택 필드 아래로](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")  
   
- **선택 필드**  
+  **선택 필드**  
   
- 배경  
+  배경  
   
- `Environment.DropDownMouseOverBackgroundBegin`  
+  `Environment.DropDownMouseOverBackgroundBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.DropDownMouseOverText`  
+  `Environment.DropDownMouseOverText`  
   
- 테두리  
+  테두리  
   
- `Environment.DropDownMouseOverBorder`  
+  `Environment.DropDownMouseOverBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `Environment.DropDownButtonMouseOverSeparator`  
+  `Environment.DropDownButtonMouseOverSeparator`  
   
- ![삭제&#45;아래로 단추 가리키기](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")  
+  ![삭제&#45;아래로 단추 가리키기](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- `Environment.DropDownButtonMouseOverBackground`  
+  `Environment.DropDownButtonMouseOverBackground`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.DropDownMouseOverGlyph`  
+  `Environment.DropDownMouseOverGlyph`  
   
- ![삭제&#45;드롭다운 목록 가리키기](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")  
+  ![삭제&#45;드롭다운 목록 가리키기](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")  
   
- **드롭다운 목록**  
+  **드롭다운 목록**  
   
- 배경(메뉴 항목)  
+  배경(메뉴 항목)  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- 테두리(메뉴 항목)  
+  테두리(메뉴 항목)  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;선택 필드 누름 아래로](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")  
+  ![삭제&#45;선택 필드 누름 아래로](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")  
   
- **선택 필드**  
+  **선택 필드**  
   
- 배경  
+  배경  
   
- `Environment.DropDownMouseDownBackground`  
+  `Environment.DropDownMouseDownBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.DropDownMouseDownText`  
+  `Environment.DropDownMouseDownText`  
   
- 테두리  
+  테두리  
   
- `Environment.DropDownMouseDownBorder`  
+  `Environment.DropDownMouseDownBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `Environment.DropDownButtonMouseDownSeparator`  
+  `Environment.DropDownButtonMouseDownSeparator`  
   
- ![삭제&#45;단추 누름 아래로](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")  
+  ![삭제&#45;단추 누름 아래로](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- `Environment.DropDownButtonMouseDownBackground`  
+  `Environment.DropDownButtonMouseDownBackground`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.DropDownMouseDownGlyph`  
+  `Environment.DropDownMouseDownGlyph`  
   
- **Disabled**  
+  **Disabled**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;사용 하지 않도록 설정 하는 선택 필드 아래로](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")  
+  ![삭제&#45;사용 하지 않도록 설정 하는 선택 필드 아래로](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")  
   
- 배경  
+  배경  
   
- `Environment.DropDownDisabledBackground`  
+  `Environment.DropDownDisabledBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.DropDownDisabledText`  
+  `Environment.DropDownDisabledText`  
   
- 테두리  
+  테두리  
   
- `Environment.DropDownDisabledBorder`  
+  `Environment.DropDownDisabledBorder`  
   
- 구분 기호  
+  구분 기호  
   
- 구분 기호 없음  
+  구분 기호 없음  
   
- ![삭제&#45;아래로 단추 사용 안 함](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")  
+  ![삭제&#45;아래로 단추 사용 안 함](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")  
   
- 배경  
+  배경  
   
- N/A  
+  N/A  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.DropDownDisabledGlyph`  
+  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>분할 단추  
  분할 단추는 단추, 메뉴, 명령 모음 텍스트 등 다른 명령 모음 컨트롤과 많은 토큰 이름을 공유합니다. 편의를 위해 모든 필요한 작업 및 드롭다운 단추 토큰 이름이 여기에 반복됩니다. 분할 단추 드롭다운 목록은 명령 모음의 구현입니다 [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
@@ -1025,139 +1025,139 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   다른 종류의 단추  
   
--   지정된 배경/전경 조합 이외의 모든 조합  
+- 지정된 배경/전경 조합 이외의 모든 조합  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![분할 단추](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")  
+  ![분할 단추](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")  
   
- **분할 단추 (기본값)**  
+  **분할 단추 (기본값)**  
   
- 배경  
+  배경  
   
- 없음  
+  없음  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.CommandBarSplitButtonGlyph`  
+  `Environment.CommandBarSplitButtonGlyph`  
   
- 테두리  
+  테두리  
   
- N/A  
+  N/A  
   
- 구분 기호  
+  구분 기호  
   
- N/A  
+  N/A  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![분할 단추 가리키기](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")  
+  ![분할 단추 가리키기](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")  
   
- **분할 단추 (가리키기)**  
+  **분할 단추 (가리키기)**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.CommandBarSplitButtonMouseOverGlyph`  
+  `Environment.CommandBarSplitButtonMouseOverGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `Environment.CommandBarSplitButtonSeparator`  
+  `Environment.CommandBarSplitButtonSeparator`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![분할 단추 누름](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")  
+  ![분할 단추 누름](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")  
   
- **분할 단추 (누름)**  
+  **분할 단추 (누름)**  
   
- 배경  
+  배경  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.CommandBarSplitButtonMouseDownGlyph`  
+  `Environment.CommandBarSplitButtonMouseDownGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- 구분 기호  
+  구분 기호  
   
- N/A  
+  N/A  
   
- **Disabled**  
+  **Disabled**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![분할 단추 사용 안 함](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")  
+  ![분할 단추 사용 안 함](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")  
   
- **분할 단추 (사용 안 함)**  
+  **분할 단추 (사용 안 함)**  
   
- 배경  
+  배경  
   
- N/A  
+  N/A  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.ComboBoxItemTextInactive`  
+  `Environment.ComboBoxItemTextInactive`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- 테두리  
+  테두리  
   
- N/A  
+  N/A  
   
- 구분 기호  
+  구분 기호  
   
- N/A  
+  N/A  
   
 #### <a name="more-options-and-overflow-buttons"></a>'기타 옵션' 및 '오버플로' 단추  
  "기타 옵션" 단추는 관련된 명령 모음 단추를 추가하거나 제거하여 명령 모음 그룹을 사용자 지정할 수 있는 경우에 사용됩니다. "오버플로" 단추는 가로 공간이 부족하여 명령 모음이 잘리고, 클릭하면 표시되지 않는 명령 모음 단추를 포함하는 메뉴가 표시될 때 나타납니다. 이러한 두 단추의 색은 동일한 토큰 이름 집합에 의해 제어됩니다.  
@@ -1420,19 +1420,19 @@ ms.locfileid: "49245390"
 #### <a name="open-document-tabs"></a>열린 문서 탭  
  문서 탭 채널에는 열려 있는 각 문서의 이름을 표시하는 탭이 있습니다. 백그라운드에서 문서를 선택하거나 열 수 있으며, 해당 탭에 다음 상태가 반영됩니다.  
   
--   선택한 탭은 문서 저장소에 현재 표시되는 문서를 나타냅니다. 선택한 탭에는 문서 저장소의 위쪽 가장자리에서 확장되는 문서 테두리가 있습니다.  
+- 선택한 탭은 문서 저장소에 현재 표시되는 문서를 나타냅니다. 선택한 탭에는 문서 저장소의 위쪽 가장자리에서 확장되는 문서 테두리가 있습니다.  
   
--   백그라운드 탭은 현재 선택한 탭이 아닌 모든 문서 탭입니다. 클릭하면 선택한 탭이 되며 다음 토큰 이름에서 모든 배경, 테두리 및 텍스트 색을 가져옵니다.  
+- 백그라운드 탭은 현재 선택한 탭이 아닌 모든 문서 탭입니다. 클릭하면 선택한 탭이 되며 다음 토큰 이름에서 모든 배경, 테두리 및 텍스트 색을 가져옵니다.  
   
- ![열린 문서 탭 검토](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![열린 문서 탭 검토](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
   
- 사용  
- 사용자 지정 문서 탭을 만드는 경우  
+  사용  
+  사용자 지정 문서 탭을 만드는 경우  
   
- 사용 안 함  
- -   임시(미리 보기) 탭  
+  사용 안 함  
+  -   임시(미리 보기) 탭  
   
--   셸에 테마 업데이트가 있는 경우 자동으로 변경하지 않으려는 모든 UI  
+- 셸에 테마 업데이트가 있는 경우 자동으로 변경하지 않으려는 모든 UI  
   
 #### <a name="selected-tab"></a>선택한 탭  
  **초점을 맞춘**  
@@ -1553,117 +1553,117 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   임시(미리 보기)가 아닌 모든 종류의 문서 또는 탭  
   
--   셸에 테마 업데이트가 있는 경우 자동으로 변경하지 않으려는 모든 UI  
+- 셸에 테마 업데이트가 있는 경우 자동으로 변경하지 않으려는 모든 UI  
   
- **선택한 미리 보기 탭: 초점을 맞춘**  
+  **선택한 미리 보기 탭: 초점을 맞춘**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![포커스가 있는 미리 보기 탭](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")  
+  ![포커스가 있는 미리 보기 탭](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")  
   
- **포커스가 있는 미리 보기 탭**  
+  **포커스가 있는 미리 보기 탭**  
   
- 배경  
+  배경  
   
- `Environment.FileTabProvisionalSelectedActive`  
+  `Environment.FileTabProvisionalSelectedActive`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.FileTabProvisionalSelectedActiveForeground`  
+  `Environment.FileTabProvisionalSelectedActiveForeground`  
   
- 테두리  
+  테두리  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- 배경색과 동일한 색으로 설정됨  
+  배경색과 동일한 색으로 설정됨  
   
- 문서 테두리  
+  문서 테두리  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- **선택한 미리 보기 탭: 포커스 없음**  
+  **선택한 미리 보기 탭: 포커스 없음**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![포커스가 없는 미리 보기 탭](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")  
+  ![포커스가 없는 미리 보기 탭](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")  
   
- **포커스가 없는 미리 보기 탭**  
+  **포커스가 없는 미리 보기 탭**  
   
- 배경  
+  배경  
   
- `Environment.FileTabProvisionalSelectedInactive`  
+  `Environment.FileTabProvisionalSelectedInactive`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.FileTabProvisionalSelectedInactiveForeground`  
+  `Environment.FileTabProvisionalSelectedInactiveForeground`  
   
- 테두리  
+  테두리  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- 문서 테두리  
+  문서 테두리  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- **백그라운드 미리 보기 탭: 기본값**  
+  **백그라운드 미리 보기 탭: 기본값**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![미리 보기 배경 탭](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")  
+  ![미리 보기 배경 탭](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")  
   
- **미리 보기 탭 백그라운드 탭**  
+  **미리 보기 탭 백그라운드 탭**  
   
- 배경  
+  배경  
   
- `Environment.FileTabProvisionalInactive`  
+  `Environment.FileTabProvisionalInactive`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.FileTabProvisionalInactiveForeground`  
+  `Environment.FileTabProvisionalInactiveForeground`  
   
- 테두리  
+  테두리  
   
- `Environment.FileTabProvisionalInactiveBorder`  
+  `Environment.FileTabProvisionalInactiveBorder`  
   
- 배경색과 동일한 색으로 설정됨  
+  배경색과 동일한 색으로 설정됨  
   
- **백그라운드 미리 보기 탭: 가리킨**  
+  **백그라운드 미리 보기 탭: 가리킨**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![미리 보기 배경 탭 가리키기](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")  
+  ![미리 보기 배경 탭 가리키기](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")  
   
- **미리 보기 탭 백그라운드 탭 가리키기**  
+  **미리 보기 탭 백그라운드 탭 가리키기**  
   
- 배경  
+  배경  
   
- `Environment.FileTabProvisionalHover`  
+  `Environment.FileTabProvisionalHover`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `Environment.FileTabProvisionalHoverForeground`  
+  `Environment.FileTabProvisionalHoverForeground`  
   
- 테두리  
+  테두리  
   
- `Environment.FileTabProvisionalHoverBorder`  
+  `Environment.FileTabProvisionalHoverBorder`  
   
- 배경색과 동일한 색으로 설정됨  
+  배경색과 동일한 색으로 설정됨  
   
 #### <a name="document-overflow-button"></a>문서 오버플로 단추  
  현재 구성에서 모든 문서 탭에 맞는 세로 공간이 있는지 여부에 관계없이 하나 이상의 문서가 열려 있으면 문서 오버플로 단추가 있습니다. **CommandBarMenu** 색으로 제어되는 문서 오버플로 드롭다운 메뉴( [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)참조)는 표시되고 숨겨진 모든 열린 문서의 목록을 표시하며, 모든 열린 문서가 탭 채널에 표시되는지 여부에 따라 오버플로 문자 모양이 바뀝니다.  
@@ -1676,79 +1676,79 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   오버플로 단추와 유사하지 않은 UI  
   
--   명령 모음 오버플로 단추  
+- 명령 모음 오버플로 단추  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")  
+  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")  
   
- **문서 오버플로 단추**  
+  **문서 오버플로 단추**  
   
- 배경  
+  배경  
   
- `Environment.DocWellOverflowButtonBackground`  
+  `Environment.DocWellOverflowButtonBackground`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.DocWellOverflowButtonGlyph`  
+  `Environment.DocWellOverflowButtonGlyph`  
   
- 테두리  
+  테두리  
   
- N/A  
+  N/A  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![가리키기 overflow](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")  
+  ![가리키기 overflow](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")  
   
- **문서 오버플로 단추 가리키기**  
+  **문서 오버플로 단추 가리키기**  
   
- 배경  
+  배경  
   
- `Environment.DocWellOverflowButtonMouseOverBackground`  
+  `Environment.DocWellOverflowButtonMouseOverBackground`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.DocWellOverflowButtonMouseOverGlyph`  
+  `Environment.DocWellOverflowButtonMouseOverGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.DocWellOverflowButtonMouseOverBorder`  
+  `Environment.DocWellOverflowButtonMouseOverBorder`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![오버플로 누름](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")  
+  ![오버플로 누름](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")  
   
- **문서 오버플로 단추 누름**  
+  **문서 오버플로 단추 누름**  
   
- 배경  
+  배경  
   
- `Environment.DocWellOverflowButtonMouseDownBackground`  
+  `Environment.DocWellOverflowButtonMouseDownBackground`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.DocWellOverflowButtonMouseDownGlyph`  
+  `Environment.DocWellOverflowButtonMouseDownGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.DocWellOverflowButtonMouseDownBorder`  
+  `Environment.DocWellOverflowButtonMouseDownBorder`  
   
 ## <a name="tool-windows"></a>도구 창  
  Visual Studio 환경에서 제공되므로 도구 창을 복제할 필요는 없습니다. 그러나 UI가 항상 Visual Studio 환경의 이 부분과 일관되게 나타나도록 도구 창에서 사용된 색을 활용할 수 있습니다.  
@@ -1908,127 +1908,127 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   다른 위치에 표시되는 단추  
   
--   지정된 배경/전경 조합 이외의 모든 조합  
+- 지정된 배경/전경 조합 이외의 모든 조합  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![포커스가 있는 단추 표시줄 제목](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")  
+  ![포커스가 있는 단추 표시줄 제목](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")  
   
- **초점을 맞춘**  
+  **초점을 맞춘**  
   
- 배경  
+  배경  
   
- N/A  
+  N/A  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ToolWindowButtonActiveGlyph`  
+  `Environment.ToolWindowButtonActiveGlyph`  
   
- 테두리  
+  테두리  
   
- N/A  
+  N/A  
   
- ![제목 포커스가 없는 단추 표시줄](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")  
+  ![제목 포커스가 없는 단추 표시줄](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")  
   
- **포커스가 없는**  
+  **포커스가 없는**  
   
- 배경  
+  배경  
   
- N/A  
+  N/A  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ToolWindowButtonInactiveGlyph`  
+  `Environment.ToolWindowButtonInactiveGlyph`  
   
- 테두리  
+  테두리  
   
- N/A  
+  N/A  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![제목 표시줄 단추 가리키기 초점을 맞춘](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")  
+  ![제목 표시줄 단추 가리키기 초점을 맞춘](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")  
   
- **초점을 맞춘**  
+  **초점을 맞춘**  
   
- 배경  
+  배경  
   
- `Environment.ToolWindowButtonHoverActive`  
+  `Environment.ToolWindowButtonHoverActive`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ToolWindowButtonHoverActiveGlyph`  
+  `Environment.ToolWindowButtonHoverActiveGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.ToolWindowButtonHoverActiveBorder`  
+  `Environment.ToolWindowButtonHoverActiveBorder`  
   
- ![제목 표시줄 단추 가리키기 포커스가](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")  
+  ![제목 표시줄 단추 가리키기 포커스가](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")  
   
- **포커스가 없는**  
+  **포커스가 없는**  
   
- 배경  
+  배경  
   
- `Environment.ToolWindowButtonHoverInactive`  
+  `Environment.ToolWindowButtonHoverInactive`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ToolWindowButtonHoverInactiveGlyph`  
+  `Environment.ToolWindowButtonHoverInactiveGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.ToolWindowButtonHoverInactiveBorder`  
+  `Environment.ToolWindowButtonHoverInactiveBorder`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![제목 표시줄 단추 집중 하 고 누른](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")  
+  ![제목 표시줄 단추 집중 하 고 누른](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")  
   
- **초점을 맞춘**  
+  **초점을 맞춘**  
   
- 배경  
+  배경  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ToolWindowButtonDownActiveGlyph`  
+  `Environment.ToolWindowButtonDownActiveGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
- ![제목 표시줄 단추 포커스가 없고 누름](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")  
+  ![제목 표시줄 단추 포커스가 없고 누름](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")  
   
- **포커스가 없는**  
+  **포커스가 없는**  
   
- 배경  
+  배경  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `Environment.ToolWindowButtonDownInactiveGlyph`  
+  `Environment.ToolWindowButtonDownInactiveGlyph`  
   
- 테두리  
+  테두리  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
 ### <a name="tool-window-tabs"></a>도구 창 탭  
  ![도구 창 탭 검토](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303 102_ToolWindowTabRedline")  
@@ -2218,307 +2218,307 @@ ms.locfileid: "49245390"
   
  검색 상자는 여러 상태 중 하나일 수 있으며, 일부 상태는 함께 사용할 수 없습니다.  
   
--   "포커스 있음" 또는 "포커스 없음"은 텍스트 상자에 커서가 있는지 여부를 나타냅니다.  
+- "포커스 있음" 또는 "포커스 없음"은 텍스트 상자에 커서가 있는지 여부를 나타냅니다.  
   
--   "활성" 또는 "비활성"은 사용자가 텍스트 상자에 검색 쿼리를 입력했는지 여부를 나타냅니다.  
+- "활성" 또는 "비활성"은 사용자가 텍스트 상자에 검색 쿼리를 입력했는지 여부를 나타냅니다.  
   
--   "가리키기"는 사용자가 마우스로 검색 상자를 가리켰음을 나타냅니다(이 상태는 다른 모든 상태를 재정의함).  
+- "가리키기"는 사용자가 마우스로 검색 상자를 가리켰음을 나타냅니다(이 상태는 다른 모든 상태를 재정의함).  
   
--   "사용 안 함"은 검색 기능이 현재 컨텍스트에 대해 꺼져 있음을 나타냅니다.  
+- "사용 안 함"은 검색 기능이 현재 컨텍스트에 대해 꺼져 있음을 나타냅니다.  
   
- ![검색 상자 검토](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![검색 상자 검토](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
   
- 사용  
- 사용자 지정 검색 상자를 디자인하는 경우  
+  사용  
+  사용자 지정 검색 상자를 디자인하는 경우  
   
- 사용 안 함  
- -   검색 상자가 아닌 모든 항목  
+  사용 안 함  
+  -   검색 상자가 아닌 모든 항목  
   
--   검색 상자 UI와 항상 일치시키지 않으려는 모든 항목  
+- 검색 상자 UI와 항상 일치시키지 않으려는 모든 항목  
   
- **초점을 맞춘**  
+  **초점을 맞춘**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![포커스가 있는 검색어 입력된 필드](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")  
+  ![포커스가 있는 검색어 입력된 필드](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")  
   
- **입력된 필드**  
+  **입력된 필드**  
   
- 배경  
+  배경  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- 테두리  
+  테두리  
   
- `SearchControl.FocusedBorder`  
+  `SearchControl.FocusedBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- ![포커스가 있는 검색 작업 단추](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")  
+  ![포커스가 있는 검색 작업 단추](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")  
   
- **실행 단추**  
+  **실행 단추**  
   
- 배경  
+  배경  
   
- 없음  
+  없음  
   
- 전경(검색 문자 모양)  
+  전경(검색 문자 모양)  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- 전경(중지 문자 모양)  
+  전경(중지 문자 모양)  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- 전경(지우기 문자 모양)  
+  전경(지우기 문자 모양)  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- 테두리  
+  테두리  
   
- N/A  
+  N/A  
   
- ![검색 저장&#45;포커스가 있는 단추 아래로](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")  
+  ![검색 저장&#45;포커스가 있는 단추 아래로](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- `SearchControl.FocusedDropDownButton`  
+  `SearchControl.FocusedDropDownButton`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `SearchControl.FocusedDropDownButtonGlyph`  
+  `SearchControl.FocusedDropDownButtonGlyph`  
   
- 테두리  
+  테두리  
   
- `SearchControl.FocusedDropDownButtonBorder`  
+  `SearchControl.FocusedDropDownButtonBorder`  
   
- **포커스가 없는**  
+  **포커스가 없는**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![포커스가 없는 검색어 입력된 필드](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")  
+  ![포커스가 없는 검색어 입력된 필드](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")  
   
- **활성 입력된 필드**  
+  **활성 입력된 필드**  
   
- 배경  
+  배경  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- 테두리  
+  테두리  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![검색어 입력된 필드 포커스가 없고 비활성화](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")  
+  ![검색어 입력된 필드 포커스가 없고 비활성화](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")  
   
- **비활성 입력된 필드**  
+  **비활성 입력된 필드**  
   
- 배경  
+  배경  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- 테두리  
+  테두리  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![포커스가 없는 검색 작업 단추](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")  
+  ![포커스가 없는 검색 작업 단추](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")  
   
- **실행 단추**  
+  **실행 단추**  
   
- 배경  
+  배경  
   
- N/A  
+  N/A  
   
- 전경(검색 문자 모양)  
+  전경(검색 문자 모양)  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- 전경(중지 문자 모양)  
+  전경(중지 문자 모양)  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- 전경(지우기 문자 모양)  
+  전경(지우기 문자 모양)  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- 테두리  
+  테두리  
   
- N/A  
+  N/A  
   
- ![검색 저장&#45;단추에 포커스가 없는 아래로](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")  
+  ![검색 저장&#45;단추에 포커스가 없는 아래로](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- `SearchControl.UnfocusedDropDownButton`  
+  `SearchControl.UnfocusedDropDownButton`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `SearchControl.UnfocusedDropDownButtonGlyph`  
+  `SearchControl.UnfocusedDropDownButtonGlyph`  
   
- 테두리  
+  테두리  
   
- `SearchControl.UnfocusedDropDownButtonBorder`  
+  `SearchControl.UnfocusedDropDownButtonBorder`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![검색 작업 단추 누름](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")  
+  ![검색 작업 단추 누름](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")  
   
- **실행 단추**  
+  **실행 단추**  
   
- 배경  
+  배경  
   
- `SearchControl.ActionButtonMouseDown`  
+  `SearchControl.ActionButtonMouseDown`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `SearchControl.ActionButtonMouseDownGlyph`  
+  `SearchControl.ActionButtonMouseDownGlyph`  
   
- 테두리  
+  테두리  
   
- `SearchControl.ActionButtonMouseDownBorder`  
+  `SearchControl.ActionButtonMouseDownBorder`  
   
- ![검색 저장&#45;단추 누름 아래로](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")  
+  ![검색 저장&#45;단추 누름 아래로](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- `SearchControl.MouseDownDropDownButton`  
+  `SearchControl.MouseDownDropDownButton`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `SearchControl.MouseDownDropDownButtonGlyph`  
+  `SearchControl.MouseDownDropDownButtonGlyph`  
   
- 테두리  
+  테두리  
   
- `SearchControl.MouseDownDropDownButtonBorder`  
+  `SearchControl.MouseDownDropDownButtonBorder`  
   
- **강조 표시 된 (텍스트)**  
+  **강조 표시 된 (텍스트)**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![검색 입력된 필드 강조](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")  
+  ![검색 입력된 필드 강조](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")  
   
- **텍스트 강조 표시 된 입력된 필드**  
+  **텍스트 강조 표시 된 입력된 필드**  
   
- 배경  
+  배경  
   
- `SearchControl.Selection`  
+  `SearchControl.Selection`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
- 구분 기호  
+  구분 기호  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- **Disabled**  
+  **Disabled**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![검색어 입력된 필드 사용 안 함](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")  
+  ![검색어 입력된 필드 사용 안 함](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")  
   
- **입력된 필드**  
+  **입력된 필드**  
   
- 배경  
+  배경  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- 테두리  
+  테두리  
   
- `SearchControl.DisabledBorder`  
+  `SearchControl.DisabledBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![검색 작업 단추 사용 안 함](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")  
+  ![검색 작업 단추 사용 안 함](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")  
   
- **실행 단추**  
+  **실행 단추**  
   
- 배경  
+  배경  
   
- 없음  
+  없음  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `SearchControl.ActionButtonDisabledGlyph`  
+  `SearchControl.ActionButtonDisabledGlyph`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
- ![검색 저장&#45;아래로 단추 사용 안 함](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")  
+  ![검색 저장&#45;아래로 단추 사용 안 함](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")  
   
- **드롭다운 단추**  
+  **드롭다운 단추**  
   
- 배경  
+  배경  
   
- 없음  
+  없음  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `SearchControl.DisabledDownButtonGlyph`  
+  `SearchControl.DisabledDownButtonGlyph`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
 #### <a name="search-drop-down-lists"></a>검색 드롭다운 목록  
  검색 상자 드롭다운 메뉴는 Visual Studio의 다른 드롭다운 메뉴보다 약간 더 복잡해질 수 있습니다. "추천 검색어" 및 "검색 옵션" 섹션이 메뉴에 단독으로 또는 함께 표시될 수 있으며, 각 섹션에 색이 별도로 지정됩니다. 또한 함께 표시되는 경우 이러한 두 섹션이 줄로 구분되며, 테두리가 전체 드롭다운 메뉴를 둘러쌉니다.  
@@ -2528,176 +2528,176 @@ ms.locfileid: "49245390"
  사용  
  -   사용자 지정 검색 드롭다운 목록을 만드는 경우  
   
--   올바른 목록 구성 요소에 대해 올바른 토큰 이름 사용  
+- 올바른 목록 구성 요소에 대해 올바른 토큰 이름 사용  
   
- 사용 안 함  
- -   다른 컨텍스트에서 표시되는 드롭다운 목록의 경우  
+  사용 안 함  
+  -   다른 컨텍스트에서 표시되는 드롭다운 목록의 경우  
   
--   지정된 배경/전경 조합 이외의 모든 조합  
+- 지정된 배경/전경 조합 이외의 모든 조합  
   
- **기본 (다른 상태 없음)**  
+  **기본 (다른 상태 없음)**  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- 테두리  
+  테두리  
   
- `SearchControl.PopupBorder`  
+  `SearchControl.PopupBorder`  
   
- 구분 기호  
+  구분 기호  
   
- `SearchControl.PopupSectionHeaderSeparator`  
+  `SearchControl.PopupSectionHeaderSeparator`  
   
- 그림자  
+  그림자  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![제안 검색](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")  
+  ![제안 검색](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")  
   
- **추천된 검색어**  
+  **추천된 검색어**  
   
- 배경  
+  배경  
   
- `SearchControl.PopupItemsListBackgroundGradientBegin`  
+  `SearchControl.PopupItemsListBackgroundGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `SearchControl.PopupItemText`  
+  `SearchControl.PopupItemText`  
   
- ![검색 확인란](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")  
+  ![검색 확인란](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")  
   
- **검색 옵션 (확인란)**  
+  **검색 옵션 (확인란)**  
   
- ![검색 옵션](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")  
+  ![검색 옵션](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")  
   
- **검색 옵션 (링크)**  
+  **검색 옵션 (링크)**  
   
- 배경  
+  배경  
   
- `SearchControl.PopupSectionBackgroundGradientBegin`  
+  `SearchControl.PopupSectionBackgroundGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(확인란 텍스트)  
+  전경(확인란 텍스트)  
   
- `SearchControl.PopupCheckboxText`  
+  `SearchControl.PopupCheckboxText`  
   
- 전경(링크 텍스트)  
+  전경(링크 텍스트)  
   
- `SearchControl.PopupButtonText`  
+  `SearchControl.PopupButtonText`  
   
- 머리글 배경  
+  머리글 배경  
   
- `SearchControl.PopupSectionHeaderGradientBegin`  
+  `SearchControl.PopupSectionHeaderGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(머리글 텍스트)  
+  전경(머리글 텍스트)  
   
- `SearchControl.PopupSectionHeaderText`  
+  `SearchControl.PopupSectionHeaderText`  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![검색 제안 가리키기](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")  
+  ![검색 제안 가리키기](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")  
   
- **추천된 검색어**  
+  **추천된 검색어**  
   
- 배경  
+  배경  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `SearchControl.PopupMouseOverItemText`  
+  `SearchControl.PopupMouseOverItemText`  
   
- 테두리  
+  테두리  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- ![검색 확인란 가리키기](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")  
+  ![검색 확인란 가리키기](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")  
   
- **추천된 검색어 (확인란)**  
+  **추천된 검색어 (확인란)**  
   
- ![검색 옵션 가리키기](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")  
+  ![검색 옵션 가리키기](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")  
   
- **검색 옵션**  
+  **검색 옵션**  
   
- 배경  
+  배경  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(확인란 텍스트)  
+  전경(확인란 텍스트)  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- 전경(링크 텍스트)  
+  전경(링크 텍스트)  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
- 테두리  
+  테두리  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![제안 검색 누름](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")  
+  ![제안 검색 누름](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")  
   
- **추천된 검색어 (확인란)**  
+  **추천된 검색어 (확인란)**  
   
- ![검색 옵션 누름](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")  
+  ![검색 옵션 누름](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")  
   
- **검색 옵션**  
+  **검색 옵션**  
   
- 확인란 배경  
+  확인란 배경  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(확인란 텍스트)  
+  전경(확인란 텍스트)  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- 링크 배경  
+  링크 배경  
   
- `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
   
- 최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
+  최신 테마 UI에서는 사용되지 않지만 이 배경에 대한 그라데이션 중지점 및 값이 있습니다.  
   
- 전경(링크 텍스트)  
+  전경(링크 텍스트)  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
 ### <a name="hyperlink"></a>하이퍼링크  
  하이퍼링크는 전경/배경 쌍이 없는 컨트롤입니다. 모든 경우에, 진한 회색 및 흰색 배경에서 올바르게 표시되는 하이퍼링크 전경색을 사용합니다. 하이퍼링크 컨트롤에 대한 색 토큰을 사용하지 않는 경우 빨간색으로 깜박이는 "누름"의 기본 시스템 색이 표시됩니다. 이는 컨트롤이 올바른 환경 색 토큰을 사용하지 않음을 나타냅니다.  
@@ -2923,181 +2923,181 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   트리 뷰와 유사하지 않은 모든 항목  
   
--   지정된 배경/전경 조합 이외의 모든 조합  
+- 지정된 배경/전경 조합 이외의 모든 조합  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![트리 뷰](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")  
+  ![트리 뷰](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")  
   
- 배경  
+  배경  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `TreeView.Glyph`  
+  `TreeView.Glyph`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![트리 뷰 가리키기](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")  
+  ![트리 뷰 가리키기](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")  
   
- 배경  
+  배경  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `TreeView.GlyphMouseOver`  
+  `TreeView.GlyphMouseOver`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
- **위로 끌기**  
+  **위로 끌기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![트리 뷰 끌기](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")  
+  ![트리 뷰 끌기](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")  
   
- 배경  
+  배경  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `TreeView.DragOverItemGlyph`  
+  `TreeView.DragOverItemGlyph`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
- **선택**  
+  **선택**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![포커스가 있는 뷰를 트리](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")  
+  ![포커스가 있는 뷰를 트리](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")  
   
- **초점을 맞춘**  
+  **초점을 맞춘**  
   
- 배경  
+  배경  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `TreeView.SelectedItemActiveGlyph`  
+  `TreeView.SelectedItemActiveGlyph`  
   
- 테두리  
+  테두리  
   
- `TreeView.FocusVisualBorder`  
+  `TreeView.FocusVisualBorder`  
   
- ![트리 뷰에서 포커스가](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")  
+  ![트리 뷰에서 포커스가](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")  
   
- **포커스가 없는**  
+  **포커스가 없는**  
   
- 배경  
+  배경  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `TreeView.SelectedItemInactiveGlyph`  
+  `TreeView.SelectedItemInactiveGlyph`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
- **선택한 항목 가리키기**  
+  **선택한 항목 가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![트리 뷰 가리키기 초점을 맞춘](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")  
+  ![트리 뷰 가리키기 초점을 맞춘](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")  
   
- **초점을 맞춘**  
+  **초점을 맞춘**  
   
- 배경  
+  배경  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- 테두리  
+  테두리  
   
- 없음`TreeView.FocusVisualBorder`  
+  없음`TreeView.FocusVisualBorder`  
   
- ![트리 뷰에서 포커스가 없는 가리키기](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")  
+  ![트리 뷰에서 포커스가 없는 가리키기](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")  
   
- **포커스가 없는**  
+  **포커스가 없는**  
   
- 배경  
+  배경  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- 전경(텍스트)  
+  전경(텍스트)  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- 전경(문자 모양)  
+  전경(문자 모양)  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
 ### <a name="button-controls"></a>단추 컨트롤  
  ![단추 컨트롤 검토](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 155_ButtonControlRedline")  
@@ -3346,229 +3346,229 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   드롭다운 또는 콤보 상자가 아닌 모든 UI  
   
--   명령 모음의 [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) 또는 [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) 에 대해  
+- 명령 모음의 [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) 또는 [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) 에 대해  
   
- **기본**  
+  **기본**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;아래로&#47;콤보 상자](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")  
+  ![삭제&#45;아래로&#47;콤보 상자](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")  
   
- 배경  
+  배경  
   
- `CommonControls.ComboBoxBackground`  
+  `CommonControls.ComboBoxBackground`  
   
- 테두리  
+  테두리  
   
- `CommonControls.ComboBoxBorder`  
+  `CommonControls.ComboBoxBorder`  
   
- 텍스트  
+  텍스트  
   
- `CommonControls.ComboBoxText`  
+  `CommonControls.ComboBoxText`  
   
- 구분 기호  
+  구분 기호  
   
- `CommonControls.ComboBoxSeparator`  
+  `CommonControls.ComboBoxSeparator`  
   
- 문자 모양  
+  문자 모양  
   
- `CommonControls.ComboBoxGlyph`  
+  `CommonControls.ComboBoxGlyph`  
   
- 문자 모양 배경  
+  문자 모양 배경  
   
- `CommonControls.ComboBoxGlyphBackground`  
+  `CommonControls.ComboBoxGlyphBackground`  
   
- **Disabled**  
+  **Disabled**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;아래로&#47;콤보 상자 사용 안 함](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")  
+  ![삭제&#45;아래로&#47;콤보 상자 사용 안 함](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")  
   
- 배경  
+  배경  
   
- `CommonControls.ComboBoxBackgroundDisabled`  
+  `CommonControls.ComboBoxBackgroundDisabled`  
   
- 테두리  
+  테두리  
   
- `CommonControls.ComboBoxBorderDisabled`  
+  `CommonControls.ComboBoxBorderDisabled`  
   
- 텍스트  
+  텍스트  
   
- `CommonControls.ComboBoxTextDisabled`  
+  `CommonControls.ComboBoxTextDisabled`  
   
- 구분 기호  
+  구분 기호  
   
- `CommonControls.ComboBoxSeparatorDisabled`  
+  `CommonControls.ComboBoxSeparatorDisabled`  
   
- 문자 모양  
+  문자 모양  
   
- `CommonControls.ComboBoxGlyphDisabled`  
+  `CommonControls.ComboBoxGlyphDisabled`  
   
- 문자 모양 배경  
+  문자 모양 배경  
   
- `CommonControls.ComboBoxGlyphBackgroundDisabled`  
+  `CommonControls.ComboBoxGlyphBackgroundDisabled`  
   
- **가리키기**  
+  **가리키기**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;아래로&#47;콤보 상자 가리키기](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")  
+  ![삭제&#45;아래로&#47;콤보 상자 가리키기](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")  
   
- 배경  
+  배경  
   
- `CommonControls.ComboBoxBackgroundHover`  
+  `CommonControls.ComboBoxBackgroundHover`  
   
- 테두리  
+  테두리  
   
- `CommonControls.ComboBoxBorderHover`  
+  `CommonControls.ComboBoxBorderHover`  
   
- 텍스트  
+  텍스트  
   
- `CommonControls.ComboBoxTextHover`  
+  `CommonControls.ComboBoxTextHover`  
   
- 구분 기호  
+  구분 기호  
   
- `CommonControls.ComboBoxSeparatorHover`  
+  `CommonControls.ComboBoxSeparatorHover`  
   
- 문자 모양  
+  문자 모양  
   
- `CommonControls.ComboBoxGlyphHover`  
+  `CommonControls.ComboBoxGlyphHover`  
   
- 문자 모양 배경  
+  문자 모양 배경  
   
- `CommonControls.ComboBoxGlyphBackgroundHover`  
+  `CommonControls.ComboBoxGlyphBackgroundHover`  
   
- **누름**  
+  **누름**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;아래로&#47;콤보 상자 누름](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")  
+  ![삭제&#45;아래로&#47;콤보 상자 누름](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")  
   
- 배경  
+  배경  
   
- `CommonControls.ComboBoxBackgroundPressed`  
+  `CommonControls.ComboBoxBackgroundPressed`  
   
- 테두리  
+  테두리  
   
- `CommonControls.ComboBoxBorderPressed`  
+  `CommonControls.ComboBoxBorderPressed`  
   
- 텍스트  
+  텍스트  
   
- `CommonControls.ComboBoxTextPressed`  
+  `CommonControls.ComboBoxTextPressed`  
   
- 구분 기호  
+  구분 기호  
   
- `CommonControls.ComboBoxSeparatorPressed`  
+  `CommonControls.ComboBoxSeparatorPressed`  
   
- 문자 모양  
+  문자 모양  
   
- `CommonControls.ComboBoxGlyphPressed`  
+  `CommonControls.ComboBoxGlyphPressed`  
   
- 문자 모양 배경  
+  문자 모양 배경  
   
- `CommonControls.ComboBoxGlyphBackgroundPressed`  
+  `CommonControls.ComboBoxGlyphBackgroundPressed`  
   
- **초점을 맞춘**  
+  **초점을 맞춘**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;아래로&#47;콤보 상자 초점을 맞춘](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")  
+  ![삭제&#45;아래로&#47;콤보 상자 초점을 맞춘](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")  
   
- 배경  
+  배경  
   
- `CommonControls.ComboBoxBackgroundFocused`  
+  `CommonControls.ComboBoxBackgroundFocused`  
   
- 테두리  
+  테두리  
   
- `CommonControls.ComboBoxBorderFocused`  
+  `CommonControls.ComboBoxBorderFocused`  
   
- 텍스트  
+  텍스트  
   
- `CommonControls.ComboBoxTextFocused`  
+  `CommonControls.ComboBoxTextFocused`  
   
- 구분 기호  
+  구분 기호  
   
- `CommonControls.ComboBoxSeparatorFocused`  
+  `CommonControls.ComboBoxSeparatorFocused`  
   
- 문자 모양  
+  문자 모양  
   
- `CommonControls.ComboBoxGlyphFocused`  
+  `CommonControls.ComboBoxGlyphFocused`  
   
- 문자 모양 배경  
+  문자 모양 배경  
   
- `CommonControls.ComboBoxGlyphBackgroundFocused`  
+  `CommonControls.ComboBoxGlyphBackgroundFocused`  
   
- **텍스트 입력된 선택**  
+  **텍스트 입력된 선택**  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- ![삭제&#45;아래로&#47;콤보 상자 텍스트 입력](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")  
+  ![삭제&#45;아래로&#47;콤보 상자 텍스트 입력](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")  
   
- 하이라이트  
+  하이라이트  
   
- `CommonControls.ComboBoxTextInputSelection`  
+  `CommonControls.ComboBoxTextInputSelection`  
   
- **누름 – 목록 항목 보기**  
+  **누름 – 목록 항목 보기**  
   
- ![삭제&#45;아래로&#47;콤보 상자 목록 뷰](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")  
+  ![삭제&#45;아래로&#47;콤보 상자 목록 뷰](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")  
   
- 배경  
+  배경  
   
- `CommonControls.ComboBoxListBackground`  
+  `CommonControls.ComboBoxListBackground`  
   
- `CommonControls.ComboBoxListBackgroundHover`  
+  `CommonControls.ComboBoxListBackgroundHover`  
   
- `CommonControls.ComboBoxListItemBackgroundPressed`  
+  `CommonControls.ComboBoxListItemBackgroundPressed`  
   
- `CommonControls.ComboBoxListItemBackgroundFocused`  
+  `CommonControls.ComboBoxListItemBackgroundFocused`  
   
- 테두리  
+  테두리  
   
- `CommonControls.ComboBoxListBorder`  
+  `CommonControls.ComboBoxListBorder`  
   
- `CommonControls.ComboBoxListBorderHover`  
+  `CommonControls.ComboBoxListBorderHover`  
   
- `CommonControls.ComboBoxListBorderPressed`  
+  `CommonControls.ComboBoxListBorderPressed`  
   
- `CommonControls.ComboBoxListBorderFocused`  
+  `CommonControls.ComboBoxListBorderFocused`  
   
- 항목 텍스트  
+  항목 텍스트  
   
- `CommonControls.ComboBoxListItemText`  
+  `CommonControls.ComboBoxListItemText`  
   
- `CommonControls.ComboBoxListItemTextHover`  
+  `CommonControls.ComboBoxListItemTextHover`  
   
- `CommonControls.ComboBoxListItemTextPressed`  
+  `CommonControls.ComboBoxListItemTextPressed`  
   
- `CommonControls.ComboBoxListItemTextFocused`  
+  `CommonControls.ComboBoxListItemTextFocused`  
   
- 배경 그림자  
+  배경 그림자  
   
- `CommonControls.ComboBoxListBackgroundShadow`  
+  `CommonControls.ComboBoxListBackgroundShadow`  
   
 ### <a name="tabular-data-grid-controls"></a>표 형식 데이터(그리드) 컨트롤  
  표 형식 데이터 컨트롤은 그리드 컨트롤이라고도 하며, 여러 열에 많은 양의 데이터를 표시하는 데 사용할 수 있는 Visual Studio의 공용 컨트롤입니다. 표준 표 형식 데이터 컨트롤은 오류 목록 도구 창, IntelliTrace 보고서, 메모리 힙 보기 등 Visual Studio 내의 여러 위치에서 찾을 수 있습니다. 항상 제공된 표준 표 형식 데이터 컨트롤을 사용합니다. 드물긴 하지만 표준 표 형식 데이터 컨트롤에 액세스할 수 없는 경우도 있습니다. 이러한 경우 다음 토큰 이름을 사용하여 Visual Studio의 다른 표 형식 데이터 컨트롤과 UI의 일관성을 유지합니다.  
@@ -3703,66 +3703,66 @@ ms.locfileid: "49245390"
  사용  
  -   매니페스트 디자이너와 유사한 디자이너  
   
--   문서 저장소 내에서 편집기 맨 위에 있는 공용 탭 컨트롤을 사용하는 대신  
+- 문서 저장소 내에서 편집기 맨 위에 있는 공용 탭 컨트롤을 사용하는 대신  
   
- 사용 안 함  
- -   6개가 넘는 탭이 있는 경우  
+  사용 안 함  
+  -   6개가 넘는 탭이 있는 경우  
   
--   매니페스트 디자이너처럼 구조화되지 않은 모든 UI  
+- 매니페스트 디자이너처럼 구조화되지 않은 모든 UI  
   
- 시스템 상태  
+  시스템 상태  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- 기본값(선택됨)  
+  기본값(선택됨)  
   
- 탭  
+  탭  
   
- 배경  
+  배경  
   
- `ManifestDesigner.TabActive`  
+  `ManifestDesigner.TabActive`  
   
- 테두리  
+  테두리  
   
- 없음  
+  없음  
   
- 설명 창  
+  설명 창  
   
- 배경  
+  배경  
   
- `ManifestDesigner.DescriptionPane`  
+  `ManifestDesigner.DescriptionPane`  
   
- 콘텐츠 페이지  
+  콘텐츠 페이지  
   
- 배경  
+  배경  
   
- `ManifestDesigner.Background`  
+  `ManifestDesigner.Background`  
   
- 대화 상자 도우미 텍스트  
+  대화 상자 도우미 텍스트  
   
- `ManifestDesigner.WatermarkText`  
+  `ManifestDesigner.WatermarkText`  
   
- 이 토큰 이름은 해당 기능과 일치하지 않습니다.  
+  이 토큰 이름은 해당 기능과 일치하지 않습니다.  
   
- 선택되지 않음  
+  선택되지 않음  
   
- 탭  
+  탭  
   
- 배경  
+  배경  
   
- `ManifestDesigner.Tab.Inactive`  
+  `ManifestDesigner.Tab.Inactive`  
   
- 가리키기  
+  가리키기  
   
- 탭  
+  탭  
   
- 배경  
+  배경  
   
- `ManifestDesigner.Tab.Mouseover`  
+  `ManifestDesigner.Tab.Mouseover`  
   
 ## <a name="tagging"></a>태깅  
  Visual Studio는 사용자가 추적을 위해 검색 가능한 키워드를 선언할 수 있는 태깅을 지원합니다. 예를 들어 프로젝트 관리자와 개발자는 TFS(Team Foundation Server)를 사용하여 작업 항목에 태깅할 수 있습니다. 아래 표에서는 태그 자체와 가리키기 및 선택한 상태에서 표시되는 "닫기 아이콘" 문자 모양에 대한 색 이름을 제공합니다.  
@@ -3980,39 +3980,39 @@ ms.locfileid: "49245390"
  사용 안 함  
  -   배경 화면이 아닌 위치에 대한 채우기  
   
--   전경 요소를 배치하려는 배경  
+- 전경 요소를 배치하려는 배경  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- 아래쪽 계층  
+  아래쪽 계층  
   
- 배경  
+  배경  
   
- `Environment.EnvironmentBackground`  
+  `Environment.EnvironmentBackground`  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- 위쪽 계층  
+  위쪽 계층  
   
- 배경  
+  배경  
   
- *그라데이션 중지점은 Visual Studio 2013 밝은 테마와 어두운 테마에서 동일한 색 값으로 설정이 됩니다.*  
+  *그라데이션 중지점은 Visual Studio 2013 밝은 테마와 어두운 테마에서 동일한 색 값으로 설정이 됩니다.*  
   
- `Environment.EnvironmentBackgroundGradientBegin`  
+  `Environment.EnvironmentBackgroundGradientBegin`  
   
- `Environment.EnvironmentBackgroundGradientEnd`  
+  `Environment.EnvironmentBackgroundGradientEnd`  
   
- `Environment.EnvironmentBackgroundGradientMiddle1`  
+  `Environment.EnvironmentBackgroundGradientMiddle1`  
   
- `Environment.EnvironmentBackgroundGradientMiddle2`  
+  `Environment.EnvironmentBackgroundGradientMiddle2`  
   
 ### <a name="command-shelf"></a>명령 선반  
  명령 선반 배경에는 두 가지 토큰 이름 집합이 사용되며, 각각 메뉴 모음이 있는 위치와 명령 모음이 있는 위치에 사용됩니다. 개별 명령 모음 그룹에는 자체 배경색 값이 있으며, "명령 모음" 섹션에서 자세히 설명합니다. 메뉴 모음 및 명령 모음 텍스트는 각각 메뉴 및 명령 모음 섹션에서 설명합니다.  
@@ -4022,40 +4022,40 @@ ms.locfileid: "49245390"
  사용  
  -   메뉴 또는 도구 모음을 배치하는 영역  
   
--   올바른 배경 /? 전경 토큰 이름 조합 합니다.  
+- 올바른 배경 /? 전경 토큰 이름 조합 합니다.  
   
- 사용 안 함  
- 명령 선반과 유사하지 않은 영역  
+  사용 안 함  
+  명령 선반과 유사하지 않은 영역  
   
- 구성 요소  
+  구성 요소  
   
- 요소  
+  요소  
   
- 토큰 이름: Category.color  
+  토큰 이름: Category.color  
   
- 메뉴 모음  
+  메뉴 모음  
   
- 배경  
+  배경  
   
- *그라데이션 중지점은 Visual Studio 2013 밝은 테마와 어두운 테마에서 동일한 색 값으로 설정이 됩니다.*  
+  *그라데이션 중지점은 Visual Studio 2013 밝은 테마와 어두운 테마에서 동일한 색 값으로 설정이 됩니다.*  
   
- `Environment.CommandShelfHighlightGradientBegin`  
+  `Environment.CommandShelfHighlightGradientBegin`  
   
- `Environment.CommandShelfHighlightGradientMiddle`  
+  `Environment.CommandShelfHighlightGradientMiddle`  
   
- `Environment.CommandShelfHighlightGradientEnd`  
+  `Environment.CommandShelfHighlightGradientEnd`  
   
- 명령 모음  
+  명령 모음  
   
- 배경  
+  배경  
   
- *그라데이션 중지점은 Visual Studio 2013 밝은 테마와 어두운 테마에서 동일한 색 값으로 설정이 됩니다.*  
+  *그라데이션 중지점은 Visual Studio 2013 밝은 테마와 어두운 테마에서 동일한 색 값으로 설정이 됩니다.*  
   
- `Environment.CommandShelfBackgroundGradientBegin`  
+  `Environment.CommandShelfBackgroundGradientBegin`  
   
- `Environment.CommandShelfBackgroundGradientMiddle`  
+  `Environment.CommandShelfBackgroundGradientMiddle`  
   
- `Environment.CommandShelfBackgroundGradientEnd`  
+  `Environment.CommandShelfBackgroundGradientEnd`  
   
 ## <a name="toolbox"></a>도구 상자  
  도구 상자는 Visual Studio에서 자주 사용되는 공통 도구 창 중 하나입니다. 기본적으로 특수 테마와 스타일이 적용된 트리 컨트롤입니다.  

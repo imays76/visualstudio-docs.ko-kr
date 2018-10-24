@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862192"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>연습: 작업창에서 문서로 텍스트 삽입
   이 연습에는 Microsoft Office Word 문서에서 작업창을 만드는 방법을 보여 줍니다. 작업 창에는 두 개의 입력을 수집 하 고 다음 문서에 텍스트를 보낼 포함 되어 있습니다.  
@@ -60,17 +60,17 @@ ms.locfileid: "35674021"
   
 ### <a name="to-add-text-to-your-document"></a>텍스트 문서를 추가 하려면  
   
-1.  Word 문서에 다음 텍스트를 입력 합니다.  
+1. Word 문서에 다음 텍스트를 입력 합니다.  
   
-     **2008 년 3 월 21 일**  
+    **2008 년 3 월 21 일**  
   
-     **이름**  
+    **이름**  
   
-     **주소**  
+    **주소**  
   
-     **이 Word에서 기본 작업창의 예입니다.**  
+    **이 Word에서 기본 작업창의 예입니다.**  
   
- 추가할 수 있습니다는 <xref:Microsoft.Office.Tools.Word.Bookmark> 에서 끌어 문서에 컨트롤을 **도구 상자** Visual Studio에서 또는 사용 하 여를 **책갈피** Word에서 대화 상자.  
+   추가할 수 있습니다는 <xref:Microsoft.Office.Tools.Word.Bookmark> 에서 끌어 문서에 컨트롤을 **도구 상자** Visual Studio에서 또는 사용 하 여를 **책갈피** Word에서 대화 상자.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>문서에 책갈피 컨트롤을 추가 하려면  
   

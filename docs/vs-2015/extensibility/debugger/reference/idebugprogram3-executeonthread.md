@@ -15,12 +15,12 @@ ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c0fb0c76c24a787b04b673d016e223714de29d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e3f63b0afffb833fdc59bf39ac5214ccc799e0f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865052"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ int ExecuteOnThread(
 ## <a name="remarks"></a>설명  
  세 가지 다른 디버거 실행 중지 후 다시 시작할 수 있습니다.  
   
--   실행: 이전 단계를 취소 하 고 등 다음 중단점까지 실행 합니다.  
+- 실행: 이전 단계를 취소 하 고 등 다음 중단점까지 실행 합니다.  
   
--   단계는 이전 단계를 취소 하 고 새 단계가 완료 될 때까지 실행 합니다.  
+- 단계는 이전 단계를 취소 하 고 새 단계가 완료 될 때까지 실행 합니다.  
   
--   계속: 다시 실행 하 고 이전 단계를 활성 상태 유지 합니다.  
+- 계속: 다시 실행 하 고 이전 단계를 활성 상태 유지 합니다.  
   
- 스레드 전달할 `ExecuteOnThread` 취소 단계를 결정 하는 경우에 유용 합니다. 를 실행 스레드의 실행을 알 수 없는 경우 모든 단계를 취소 합니다. 스레드의 지식을 바탕으로 활성 스레드에서 단계를 취소 해야 합니다.  
+  스레드 전달할 `ExecuteOnThread` 취소 단계를 결정 하는 경우에 유용 합니다. 를 실행 스레드의 실행을 알 수 없는 경우 모든 단계를 취소 합니다. 스레드의 지식을 바탕으로 활성 스레드에서 단계를 취소 해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [실행](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   

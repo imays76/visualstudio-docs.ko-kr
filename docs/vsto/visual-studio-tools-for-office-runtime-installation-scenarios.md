@@ -15,31 +15,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f286acae2996451688b0e1a40c4d758c4de8caf6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857850"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office 런타임 설치 시나리오
   Visual Studio 2010 Tools for Office 런타임 세 가지 방법으로 설치할 수 있습니다.  
   
--   Visual Studio를 설치할 때  
+- Visual Studio를 설치할 때  
   
--   Microsoft Office를 설치할 때  
+- Microsoft Office를 설치할 때  
   
--   Visual Studio 2010 Tools for Office 런타임 재배포 가능 패키지 설치할 때  
+- Visual Studio 2010 Tools for Office 런타임 재배포 가능 패키지 설치할 때  
   
- 설치된 런타임 구성 요소는 컴퓨터의 구성과 설치 시나리오에 따라 달라집니다.  
+  설치된 런타임 구성 요소는 컴퓨터의 구성과 설치 시나리오에 따라 달라집니다.  
   
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>각 설치 시나리오에 설치 된 런타임 구성 요소  
  Visual Studio 2010 Tools for Office 런타임 세 가지 구성 요소: Office 솔루션 로더,.NET Framework 3.5 용 Office 확장 및 용 Office 확장의 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상. 런타임을 설치할 때 Office 솔루션 로더가 항상 설치됩니다. .NET Framework용 Office 확장의 설치는 컴퓨터의 구성과 설치 시나리오에 따라 달라집니다. 런타임을 처음 설치할 때 Office 확장명 중 하나를 설치할 수 없는 경우 런타임은 나중에 특정 요구 사항이 충족될 때 없는 Office 확장을 자동으로 설치합니다. 런타임의이 기능 이라고 *요청 시 설치*합니다.  
   
  다음 표에서는 각 런타임 설치 시나리오에서 기본적으로 설치되는 런타임 구성 요소를 보여 줍니다. 각 시나리오에 대한 자세한 내용은 뒷부분에 있습니다.  
   
-|런타임 설치 시나리오|Office 솔루션 로더|.NET Framework 3.5용 Office 확장|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]용 Office 확장|[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]용 Office 확장|  
-|-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
+|런타임 설치 시나리오|Office 솔루션 로더|.NET Framework 3.5용 Office 확장|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]용 Office 확장명|[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]용 Office 확장|  
+|-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|  
 |[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 이상과 함께|예|예, .NET Framework 3.5가 이미 설치된 경우|예|예|  
 |[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]과 함께|예|예, .NET Framework 3.5가 이미 설치된 경우|아니요|아니요|  
 |Office 2010 서비스 팩 1(SP1) 이상과 함께|예|예, .NET Framework 3.5가 이미 설치된 경우|예, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]가 이미 설치된 경우|아니요|  

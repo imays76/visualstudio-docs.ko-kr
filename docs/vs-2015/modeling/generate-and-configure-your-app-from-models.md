@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96dc292712a04b7a1049400b908bf5f678b63df3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857459"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>모델에서 앱 생성 및 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ ms.locfileid: "49240645"
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>모델에서 응용 프로그램 코드 생성  
  코드를 생성하는 가장 쉬운 방법은 텍스트 템플릿을 사용하는 것입니다. 동일한 코드를 생성할 수 있습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모델을 유지 하는 솔루션입니다. 자세한 내용은 다음을 참조하세요.  
   
--   [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+- [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [UML 모델에서 파일 생성](../modeling/generate-files-from-a-uml-model.md)  
+- [UML 모델에서 파일 생성](../modeling/generate-files-from-a-uml-model.md)  
   
--   [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)  
+- [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)  
   
- 이 방법은 증분 방식으로 적용하는 것이 용이합니다. 특정 사례에서만 작동하는 응용 프로그램으로 시작한 다음 모델에서 변형하려는 몇 가지 파트를 선택합니다. 이러한 파트의 소스 파일 이름을 텍스트 템플릿(.tt) 파일로 바꿉니다. 이때 소스 .cs 파일이 템플릿 파일에서 자동으로 생성되므로 응용 프로그램이 이전처럼 작동합니다.  
+  이 방법은 증분 방식으로 적용하는 것이 용이합니다. 특정 사례에서만 작동하는 응용 프로그램으로 시작한 다음 모델에서 변형하려는 몇 가지 파트를 선택합니다. 이러한 파트의 소스 파일 이름을 텍스트 템플릿(.tt) 파일로 바꿉니다. 이때 소스 .cs 파일이 템플릿 파일에서 자동으로 생성되므로 응용 프로그램이 이전처럼 작동합니다.  
   
- 그런 다음 코드의 한 부분을 사용해서 모델을 읽고 소스 파일의 해당 부분을 생성하는 텍스트 템플릿 식으로 바꿉니다. 다시 응용 프로그램을 실행할 수 있고 이전처럼 작동하도록 모델에서 적어도 하나의 값은 원본 소스를 생성해야 합니다. 다른 모델 값을 테스트한 후 계속해서 코드의 다른 부분에 템플릿 식을 삽입할 수 있습니다.  
+  그런 다음 코드의 한 부분을 사용해서 모델을 읽고 소스 파일의 해당 부분을 생성하는 텍스트 템플릿 식으로 바꿉니다. 다시 응용 프로그램을 실행할 수 있고 이전처럼 작동하도록 모델에서 적어도 하나의 값은 원본 소스를 생성해야 합니다. 다른 모델 값을 테스트한 후 계속해서 코드의 다른 부분에 템플릿 식을 삽입할 수 있습니다.  
   
- 이 증분 방법은 코드 생성이 일반적으로 낮은 위험 방식임을 의미합니다. 결과로 생성된 응용 프로그램은 일반적으로 직접 작성한 버전과 성능이 거의 동일합니다.  
+  이 증분 방법은 코드 생성이 일반적으로 낮은 위험 방식임을 의미합니다. 결과로 생성된 응용 프로그램은 일반적으로 직접 작성한 버전과 성능이 거의 동일합니다.  
   
- 그러나 기존 응용 프로그램에서 시작하는 경우 독립적으로 변형할 수 있도록 모델에 의해 제어되는 다양한 동작을 구분하기 위해 많은 리팩터링이 필요할 수 있습니다. 프로젝트 비용을 예상할 때 응용 프로그램의 이러한 측면을 평가하는 것이 좋습니다.  
+  그러나 기존 응용 프로그램에서 시작하는 경우 독립적으로 변형할 수 있도록 모델에 의해 제어되는 다양한 동작을 구분하기 위해 많은 리팩터링이 필요할 수 있습니다. 프로젝트 비용을 예상할 때 응용 프로그램의 이러한 측면을 평가하는 것이 좋습니다.  
   
 ## <a name="configuring-your-application-from-a-model"></a>모델에서 응용 프로그램 구성  
  런타임에 응용 프로그램의 동작을 변형하려는 경우 응용 프로그램이 컴파일되기 전에 소스 코드를 생성하는 코드 생성을 사용할 수 없습니다. 대신, UML 또는 DSL 모델을 읽고 해당 동작을 적절하게 변형하도록 응용 프로그램을 디자인할 수 있습니다. 자세한 내용은 다음을 참조하세요.  
   
--   [프로그램 코드에서 UML 모델 읽기](../modeling/read-a-uml-model-in-program-code.md)  
+- [프로그램 코드에서 UML 모델 읽기](../modeling/read-a-uml-model-in-program-code.md)  
   
--   [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
- 이 방법도 증분 방식으로 적용할 수 있지만 시작할 때 더 많은 작업이 필요합니다. 모델을 읽고 해당 값이 변수 부분에 액세스할 수 있도록 허용하는 프레임워크를 설정하는 코드를 작성해야 합니다. 변수 부분을 제네릭으로 만드는 경우 코드 생성보다 비용이 훨씬 증가합니다.  
+  이 방법도 증분 방식으로 적용할 수 있지만 시작할 때 더 많은 작업이 필요합니다. 모델을 읽고 해당 값이 변수 부분에 액세스할 수 있도록 허용하는 프레임워크를 설정하는 코드를 작성해야 합니다. 변수 부분을 제네릭으로 만드는 경우 코드 생성보다 비용이 훨씬 증가합니다.  
   
- 제네릭 응용 프로그램은 일반적으로 특정 응용 프로그램보다 성능이 떨어집니다. 성능이 중요한 경우 프로젝트 계획에 이 위험의 평가를 포함해야 합니다.  
+  제네릭 응용 프로그램은 일반적으로 특정 응용 프로그램보다 성능이 떨어집니다. 성능이 중요한 경우 프로젝트 계획에 이 위험의 평가를 포함해야 합니다.  
   
 ## <a name="developing-a-derived-application"></a>파생 응용 프로그램 개발  
  다음과 같은 일반 지침이 유용할 수 있습니다.  

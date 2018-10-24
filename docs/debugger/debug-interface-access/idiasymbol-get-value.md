@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a6249506356f586a2e00d2b2c2bf73eb0283c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 23fb08303840c8d90644a292cac8832e29641246
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481972"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863739"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 상수 값을 검색합니다.  
@@ -34,16 +34,16 @@ HRESULT get_value (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out에서] A `VARIANT` 상수 값을 사용 하 여 입력 되는 개체입니다.  
+ [out에서] `VARIANT` 개체는 상수 값이 채워집니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드에 전달 하기 전에 제공 된 VARIANT은 초기화 합니다. 자세한 내용은 예제를 참조 합니다.  
+ 제공 된 VARIANT는이 메서드에 전달 되기 전에 초기화 되어야 합니다. 자세한 내용은 예제를 참조 하세요.  
   
 ## <a name="example"></a>예제  
   

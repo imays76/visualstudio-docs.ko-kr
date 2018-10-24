@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 586ea5bc944c152ee9ae2c8a2a4e9792b23d5b47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4958e296e83e3de0d8c3e41b73c0b30af144d743
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863206"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 지정 된 포트에서 실행 중인 프로세스를 가져옵니다.  
@@ -49,7 +49,7 @@ int GetProcess(
  [out] 반환 된 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 프로세스를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
