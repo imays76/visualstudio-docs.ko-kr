@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 229097b12e5b32e6be6af6b9614a628346780063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921485"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>그래프 뷰 및 테이블 뷰의 카운터 패널 사용
 
@@ -54,7 +54,7 @@ ms.locfileid: "39176881"
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-----------------------|
 |**그래프 뷰의 그래프에 성능 카운터 추가:** **카운터** 패널에서 그래프에 성능 카운터를 추가하여 부하 테스트 그래프에 여러 종류의 데이터를 추가할 수 있습니다.|-   [방법: 그래프에서 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**위반한 부하 테스트에 지정한 임계값 분석:** 추가 분석을 위해 테이블과 그래프를 추가할 수 있는 임계값 위반을 나타내는 아이콘이 **카운터** 패널에 표시됩니다.|-   [방법: 카운터 패널을 사용하여 임계값 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)|
 |**부하 테스트를 실행하는 동안 발견된 오류 분석:** 추가 분석을 위해 그래프에 오류를 추가할 수 있는 HTTP 오류와 같은 오류 범주 및 하위 범주가 들어 있는 오류 노드가 **카운터** 패널에 포함됩니다.|-   [방법: 카운터 패널을 사용하여 오류 분석](../test/how-to-analyze-errors-using-the-counters-panel.md)|
@@ -66,7 +66,7 @@ ms.locfileid: "39176881"
 다음은 샘플링 주기에 대한 몇 가지 지침입니다.
 
 |부하 테스트 지속 시간|권장 샘플링 주기|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1시간|5초|
 |1-8시간|15초|
 |8-24시간|30초|

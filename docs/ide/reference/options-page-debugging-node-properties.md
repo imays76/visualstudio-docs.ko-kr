@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0556dd29e37f45b460e3dde271384e94b1c09ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920900"
 ---
 # <a name="options-page-debugging-node-properties"></a>옵션 페이지, 디버깅 노드 속성
 다음 표에서는 **옵션** 대화 상자의 **디버깅** 범주, `DTE.Properties("Debugging", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다.
@@ -24,7 +24,7 @@ ms.locfileid: "31951780"
  `DTE.Properties("Debugging", "General")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|프로젝트에서 모든 중단점을 삭제하기 전에 디버거에서 권한에 대한 프롬프트를 표시할지 결정합니다.|
 |BreakAllProcesses|Get/Set (Boolean)|단일 프로세스가 중단될 때마다 디버거에서 모든 프로세스를 중단할지 결정합니다.|
 |BreakAtBoundaries|Get/Set (Boolean)|AppDomain 간에 또는 관리 코드와 네이티브 코드 간에 예외가 경계를 넘을 경우 디버거가 예외를 중간할지 결정합니다.|
@@ -54,7 +54,7 @@ ms.locfileid: "31951780"
  `DTE.Properties("Debugging", "EditAndContinue")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|편집하며 계속하기를 사용할지 결정합니다. 이 옵션은 편집하며 계속하기를 지원하는 모든 언어에 적용됩니다.|
 |InvokedByCommands|Get/Set (Boolean)|사용자가 **한 단계 실행** 또는 **계속**과 같은 디버깅 명령을 선택할 때 편집하며 계속하기가 자동으로 코드 변경 내용을 적용할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|
 |InvokedByCommandsAskFirst|Get/Set (Boolean)|사용자가 **한 단계 실행** 또는 **계속**과 같은 디버깅 명령을 선택할 때 편집하며 계속하기가 코드 변경 내용을 적용하기 위한 권한에 대한 프롬프트를 사용자에게 표시할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|
@@ -66,7 +66,7 @@ ms.locfileid: "31951780"
  `DTE.Properties("Debugging", "JustInTime")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|관리 코드에 Just-In-Time 디버깅을 사용할지 결정합니다.|
 |JitNative|Get/Set (Boolean)|네이티브 코드에 Just-In-Time 디버깅을 사용할지 결정합니다.|
 |JitScript|Get/Set (Boolean)|스크립트 코드에 Just-In-Time 디버깅을 사용할지 결정합니다.|
@@ -75,7 +75,7 @@ ms.locfileid: "31951780"
  `DTE.Properties("Debugging", "Native")`
 
 |속성 항목 이름|값|설명|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|디버거가 DLL 내보내기 테이블을 로드할지 결정합니다.|
 |EnableRPC|Get/Set (Boolean)|디버거가 COM 원격 프로시저 호출에 대해 한 단계씩 코드를 실행할 수 있는지 결정합니다.|
 

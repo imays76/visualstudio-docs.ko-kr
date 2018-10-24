@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b918ed26e6268adb71cbf500a8499f1eed02c54d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899333"
 ---
 # <a name="replace-in-files"></a>파일에서 바꾸기
 
@@ -36,11 +36,11 @@ ms.locfileid: "31951923"
 
 1. **편집** 메뉴에서 **찾기 및 바꾸기**를 확장합니다.
 
-1. **파일에서 바꾸기**를 선택합니다.
+2. **파일에서 바꾸기**를 선택합니다.
 
    — 또는 —
 
-  **찾기 및 바꾸기** 창이 열려 있으면 도구 모음에서 **파일에서 바꾸기**를 선택합니다.
+   **찾기 및 바꾸기** 창이 열려 있으면 도구 모음에서 **파일에서 바꾸기**를 선택합니다.
 
 ## <a name="find-what"></a>찾을 내용
 

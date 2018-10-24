@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa41165041c4be1b4d527f2df20dacfcf0600af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de2f17933977d13fb524d34887a9e9af9c88114
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951108"
 ---
 # <a name="customize-the-help-viewer"></a>도움말 뷰어 사용자 지정
 글꼴 크기, 최대 결과 수 및 영어 콘텐츠 포함 여부 등의 다른 옵션은 물론, 도움말 뷰어 창의 레이아웃을 사용자 지정할 수 있습니다.
@@ -41,7 +41,7 @@ ms.locfileid: "31923841"
 도구 모음의 **뷰어 옵션** 단추를 선택하여 **뷰어 옵션** 대화 상자를 엽니다.
 
 |원하는 작업|이 단계를 실행합니다.|
-|---------------------------|---------------------|
+| - | - |
 |텍스트가 표시되는 글꼴의 크기 변경|**텍스트 크기** 목록에서 크기를 선택합니다.|
 |**검색** 탭에 나타나는 최대 검색 결과 수를 변경합니다.|**최대 검색 결과** 목록에서 값을 선택합니다.|
 |**즐겨찾기** 창에 나타나는 최대 기록 항목 수를 변경합니다.|**저장되는 최대 기록 항목** 목록에서 값을 선택합니다.|

@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 316c1f4a6927805c75feee143f92a8e31ac4dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942922"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>필드 캡슐화 리팩터링
 
@@ -41,20 +41,20 @@ ms.locfileid: "31945248"
 
    - C#: 
 
-    ![강조 표시된 코드 - C#](media/encapsulate-highlight-cs.png)
+       ![강조 표시된 코드 - C#](media/encapsulate-highlight-cs.png)
 
    - Visual Basic:
 
-    ![강조 표시된 코드 - Visual Basic](media/encapsulate-highlight-vb.png)
+       ![강조 표시된 코드 - Visual Basic](media/encapsulate-highlight-vb.png)
 
-1. 다음 작업 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - **Ctrl+R**을 누른 다음 **Ctrl+E**를 누릅니다.  바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **필드 캡슐화** 항목을 선택합니다.
+      - **Ctrl+R**을 누른 다음 **Ctrl+E**를 누릅니다.  바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **필드 캡슐화** 항목을 선택합니다.
    - **마우스**
-     - **편집 > 리팩터링 > 필드 캡슐화**를 선택합니다.
-     - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **필드 캡슐화** 항목을 선택합니다.
+      - **편집 > 리팩터링 > 필드 캡슐화**를 선택합니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **필드 캡슐화** 항목을 선택합니다.
 
    선택 | 설명
    --------- | -----------
@@ -68,11 +68,11 @@ ms.locfileid: "31945248"
 
    - C#: 
 
-    ![속성 캡슐화 결과 - C#](media/encapsulate-result-cs.png)
+      ![속성 캡슐화 결과 - C#](media/encapsulate-result-cs.png)
 
    - Visual Basic:
 
-    ![속성 캡슐화 결과 - Visual Basic](media/encapsulate-result-vb.png)
+      ![속성 캡슐화 결과 - Visual Basic](media/encapsulate-result-vb.png)
 
 ## <a name="see-also"></a>참고 항목
 

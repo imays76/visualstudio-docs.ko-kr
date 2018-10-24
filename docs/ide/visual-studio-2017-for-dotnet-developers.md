@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928349"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 생산성 가이드
 
@@ -57,7 +57,7 @@ ms.locfileid: "46495793"
 > [!NOTE]
 > 기본 Visual Studio keybindings의 바인딩을 해제한 일부 확장 위의 명령을 사용하려면 **도구** > **설정 가져오기 및 내보내기** > **모든 설정 다시 설정** 또는 **도구** > **옵션** > **키보드** > **다시 설정**으로 이동하여 Visual Studio의 기본값으로 키 바인딩을 복원합니다.
 
-[설명서](..\ide\tips-and-tricks-for-visual-studio.md)의 Visual Studio에 있는 바로 가기 키 및 명령을 자세히 알아봅니다.
+[설명서](../ide/tips-and-tricks-for-visual-studio.md)의 Visual Studio에 있는 바로 가기 키 및 명령을 자세히 알아봅니다.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>파일 또는 형식을 빠르게 탐색하는 방법이 있어야 함
 
@@ -161,7 +161,7 @@ git 또는 TFVC를 사용하여 Visual Studio에서 코드를 저장하고 업�
 | 디컴파일된 소스에 탐색을 사용하도록 설정 | 외부 소스에서 형식/멤버에 대한 정의로 이동하고, 메서드 본문을 표시하기 위해 ILSpy 디컴파일러를 사용할 수 있습니다. | **도구** > **옵션** > **텍스트 편집기** > **C#** > **고급** > **Enable navigation to decompiled sources(디컴파일된 소스에 탐색을 사용하도록 설정)** |
 | 완료/제안 모드 | IntelliSense의 완료 동작 변경 -- IntelliJ 배경 개발자는 기본값에서 설정을 변경하는 경향이 있습니다. | **메뉴** > **편집** > **IntelliSense** > **완료 모드 설정/해제** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 편집기에서 코드 참조 정보 및 변경 내용 표시 | **도구** > **옵션** > **텍스트 편집기** > **모든 언어** > **CodeLens** |
-| [코드 조각](../ide/visual-csharp-code-snippets.md) | 일반 상용구를 없애는 도움말 |  코드 조각 이름을 입력하고 **탭** 키를 두 번 누릅니다. |
+| [코드 조각](../ide/visual-csharp-code-snippets.md) | 일반 상용구를 없애는 도움말 | 코드 조각 이름을 입력하고 **탭** 키를 두 번 누릅니다. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>생산적으로 만드는 기능이 누락되거나 성능 저하를 경험합니까?
 

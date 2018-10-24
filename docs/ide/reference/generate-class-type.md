@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67e6e8744672c35bdf13e30269297dcc52c50a04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929610"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio에서 클래스 또는 형식 생성
 
@@ -41,24 +41,24 @@ ms.locfileid: "37116990"
 
    - C#: 
 
-    ![강조 표시된 코드 C#](media/class-highlight-cs.png)
+       ![강조 표시된 코드 C#](media/class-highlight-cs.png)
 
    - Visual Basic:
 
-    ![강조 표시된 코드 VB](media/class-highlight-vb.png)
+       ![강조 표시된 코드 VB](media/class-highlight-vb.png)
 
-1. 다음 작업 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
-     - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-     - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
-     - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
+      - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
 
-    ![클래스 생성 미리 보기](media/class-preview-cs.png)
+      ![클래스 생성 미리 보기](media/class-preview-cs.png)
 
-1. 드롭다운 목록에서 옵션 중 하나를 선택합니다.
+3. 드롭다운 목록에서 옵션 중 하나를 선택합니다.
 
    - 새 파일에 클래스 '*TypeName*' 생성 &mdash;*TypeName*.cs/.vb라는 파일에 *TypeName*라는 클래스 만들기
    - 클래스 '*TypeName*' 생성 &mdash;현재 파일에 *TypeName*이라는 클래스를 만듭니다.
@@ -68,7 +68,7 @@ ms.locfileid: "37116990"
    > [!TIP]
    > 미리 보기 창 맨 아래에 있는 **변경 내용 미리 보기** 링크를 사용하여 선택하기 전에 적용될 [모든 변경 내용을 확인](../../ide/preview-changes.md)합니다.
 
-1. **새 형식 생성** 항목을 선택한 경우 **형식 생성** 대화 상자가 열립니다. 새 형식의 내게 필요한 옵션, 종류 및 위치를 구성합니다.
+4. **새 형식 생성** 항목을 선택한 경우 **형식 생성** 대화 상자가 열립니다. 새 형식의 내게 필요한 옵션, 종류 및 위치를 구성합니다.
 
    ![형식 생성](media/class-newtype-cs.png)
 

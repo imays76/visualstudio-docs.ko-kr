@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 231994db8192f5c44919efcf5823e4e57342f2b1
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942948"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작
 
@@ -64,12 +64,12 @@ public static void Main(string[] args)
 ```
 ASP.NET Core 앱이 [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting) 인스턴스를 통해 호스트를 구성 및 시작하여 main 메서드에서 웹 서버를 만듭니다. 이 작성기는 호스트를 구성할 수 있는 메서드를 제공합니다. 템플릿 앱에서는 다음과 같은 구성이 사용됩니다.
 
- * `UseKestrel`: 앱에서 Kestrel 서버를 사용하도록 지정합니다.
- * `UseContentRoot(Directory.GetCurrentDirectory())`: 이 폴더에서 앱을 시작할 때 웹 프로젝트의 루트 폴더를 앱의 콘텐츠 루트로 사용합니다.
- * `.UseIISIntegration()`: 앱이 IIS에서 작동하도록 지정합니다. ASP.NET Core와 함께 IIS를 사용하려면 `UseKestrel` 및 `UseIISIntegration`을 지정해야 합니다.
- * `.UseStartup<Startup>()`: 시작 클래스를 지정합니다.
+* `UseKestrel`: 앱에서 Kestrel 서버를 사용하도록 지정합니다.
+* `UseContentRoot(Directory.GetCurrentDirectory())`: 이 폴더에서 앱을 시작할 때 웹 프로젝트의 루트 폴더를 앱의 콘텐츠 루트로 사용합니다.
+* `.UseIISIntegration()`: 앱이 IIS에서 작동하도록 지정합니다. ASP.NET Core와 함께 IIS를 사용하려면 `UseKestrel` 및 `UseIISIntegration`을 지정해야 합니다.
+* `.UseStartup<Startup>()`: 시작 클래스를 지정합니다.
 
- 빌드 및 실행 메서드는 앱을 호스트할 IWebHost를 빌드하고 시작하여 들어오는 HTTP 요청을 수신 대기합니다.
+  빌드 및 실행 메서드는 앱을 호스트할 IWebHost를 빌드하고 시작하여 들어오는 HTTP 요청을 수신 대기합니다.
 
 ### <a name="startupcs"></a>Startup.cs
 

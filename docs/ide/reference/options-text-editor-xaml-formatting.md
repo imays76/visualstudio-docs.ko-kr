@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 272fb5368b73e483bb7d2f44c475d5e4e7bfdfcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933575"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>옵션, 텍스트 편집기, XAML, 서식
 **서식** 속성 페이지를 사용하여 XAML 문서에서 요소와 특성의 형식 지정 방법을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 **도구** 메뉴를 클릭한 후 **옵션**을 클릭합니다. **서식** 속성 페이지에 액세스하려면 **텍스트 편집기**, **XAML**, **서식** 노드를 확장합니다.
@@ -96,11 +96,12 @@ ms.locfileid: "31950035"
 ## <a name="element-spacing"></a>요소 간격
  이 설정을 사용하여 XAML 문서에서 요소 정렬 방식을 제어합니다.
 
-|||
-|-|-|
-|**콘텐츠의 줄 바꿈 유지**|요소 콘텐츠의 빈 줄이 제거되지 않습니다.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**콘텐츠의 여러 빈 줄을 한 줄로 축소**|요소 콘텐츠의 빈 줄이 한 줄로 축소됩니다.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**콘텐츠에서 빈 줄 제거**|요소 콘텐츠의 모든 빈 줄이 제거됩니다.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
+
+| | |
+| - | - |
+| **콘텐츠의 줄 바꿈 유지** | 요소 콘텐츠의 빈 줄이 제거되지 않습니다.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>\` |
+| **콘텐츠의 여러 빈 줄을 한 줄로 축소** | 요소 콘텐츠의 빈 줄이 한 줄로 축소됩니다.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>` |
+| **콘텐츠에서 빈 줄 제거** | 요소 콘텐츠의 모든 빈 줄이 제거됩니다.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>` |
 
 ## <a name="miscellaneous-section-auto-insert"></a>기타 섹션, 자동 삽입
  이 설정을 사용하여 태그 및 따옴표가 자동으로 생성되는 경우를 제어합니다.

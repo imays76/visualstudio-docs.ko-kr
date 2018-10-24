@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 6c047be1c797c0304a71ae2c55f256bdc5325aaf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934615"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Mac용 Visual Studio 설정 및 설치
 
@@ -31,60 +31,60 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
 2. 설치 관리자 패키지가 다운로드되면 **VisualStudioInstaller.dmg** 파일을 클릭하여 설치 관리자를 탑재하고 다음 이미지와 같이 로고를 두 번 클릭하여 실행합니다.
 
-  ![설치 관리자 대화 상자](media/installer-image1.png)
+   ![설치 관리자 대화 상자](media/installer-image1.png)
 
 3. 다음 이미지와 비슷한 경고 대화 상자가 표시될 수도 있습니다. 이 경우 **열기**를 클릭합니다.
 
-  ![경고 대화 상자](media/installer-image2.png)
+   ![경고 대화 상자](media/installer-image2.png)
 
 4. 설치 관리자가 시스템을 검사하여 설치 또는 업데이트해야 하는 구성 요소를 확인합니다.
 
-  ![시스템 평가](media/installer-image3.png)
+   ![시스템 평가](media/installer-image3.png)
 
 5. 그런 다음 개인 정보 및 라이선스 조건에 동의하라는 경고 대화 상자가 표시됩니다. **계속** 단추를 눌러 조건에 동의합니다.
 
-  ![라이선스 대화 상자](media/installer-image4.png)
+   ![라이선스 대화 상자](media/installer-image4.png)
 
 6. 설치 관리자가 누락되어 다운로드 및 설치해야 하는 필수 구성 요소 목록을 표시합니다. 여기서 다운로드할 제품을 선택합니다.
 
-  ![항목 선택](media/installer-image5.png)
+   ![항목 선택](media/installer-image5.png)
 
-  일부 플랫폼을 설치하지 않으려는 경우 아래 가이드를 사용하면 설치할 플랫폼을 결정할 수 있습니다.
+   일부 플랫폼을 설치하지 않으려는 경우 아래 가이드를 사용하면 설치할 플랫폼을 결정할 수 있습니다.
 
-  * **Xamarin을 사용하는 앱**:
+   * **Xamarin을 사용하는 앱**:
       - Xamarin.Forms - **Android** 및 **iOS** 플랫폼을 선택합니다.
       - iOS에만 해당 - **iOS** 플랫폼을 선택합니다([**Xcode**](https://developer.apple.com/xcode/)를 설치해야 함).
       - Android에만 해당 - **Android** 플랫폼을 선택합니다(관련 종속성도 선택해야 함).
       - Mac에만 해당 - **macOS** 플랫폼을 선택합니다([**Xcode**](https://developer.apple.com/xcode/)를 설치해야 함).
       - 완벽한 플랫폼 간 Xamarin 앱 - **Android**, **iOS** 및 **macOS** 플랫폼을 선택합니다.
-  * **.NET Core 응용 프로그램** - **.NET Core** 플랫폼을 선택합니다.
-  * **ASP.NET Core 웹 응용 프로그램** - **.NET Core** 플랫폼을 선택합니다.
-  * **플랫폼 간 Unity 게임 개발** - Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다. Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](setup-vsmac-tools-unity.md)를 참조하세요.
+   * **.NET Core 응용 프로그램** - **.NET Core** 플랫폼을 선택합니다.
+   * **ASP.NET Core 웹 응용 프로그램** - **.NET Core** 플랫폼을 선택합니다.
+   * **플랫폼 간 Unity 게임 개발** - Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다. Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](setup-vsmac-tools-unity.md)를 참조하세요.
 
-  이 설치 화면에는 각 개별 구성 요소의 버전 및 크기가 표시됩니다. 각 구성 요소를 클릭하여 해당 구성 요소에 대한 종속성 목록을 표시하거나(Android), 다운로드한 추가 패키지를 확인하거나(.NET Core), 필요한 추가 응용 프로그램을 볼 수 있습니다(iOS 및 macOS).
+   이 설치 화면에는 각 개별 구성 요소의 버전 및 크기가 표시됩니다. 각 구성 요소를 클릭하여 해당 구성 요소에 대한 종속성 목록을 표시하거나(Android), 다운로드한 추가 패키지를 확인하거나(.NET Core), 필요한 추가 응용 프로그램을 볼 수 있습니다(iOS 및 macOS).
 
-  ![Android 추가 종속성](media/installer-image6.png)
+   ![Android 추가 종속성](media/installer-image6.png)
 
 7. 선택 항목에 만족할 경우 **설치 및 업데이트** 단추를 선택하여 설치 프로세스를 시작합니다.
 
 8. 설치 관리자가 선택한 항목의 다운로드 및 설치 프로세스를 시작합니다.
 
-  ![설치 시작](media/installer-image7.png)
+   ![설치 시작](media/installer-image7.png)
 
-  ![Xamarin.Mac 다운로드](media/installer-image8.png)
+   ![Xamarin.Mac 다운로드](media/installer-image8.png)
 
-  ![설치 완료](media/installer-image9.png)
+   ![설치 완료](media/installer-image9.png)
 
 9. 설치를 완료하는 데 필요한 개별 구성 요소에 대한 필수 사용 권한을 상승하라는 메시지가 표시될 수 있습니다. 여기서 관리자 자격 증명을 입력하여 설치 프로세스를 계속합니다.
 
-  ![사용 권한을 입력하여 설치 관리자 계속 진행](media/installer-image10.png)
+   ![사용 권한을 입력하여 설치 관리자 계속 진행](media/installer-image10.png)
 
 10. 설치가 완료되면 **시작**을 눌러 Visual Studio에서 앱 개발을 시작할 수 있습니다.
 
-  ![Visual Studio를 엽니다.](media/installer-image11.png)
+    ![Visual Studio를 엽니다.](media/installer-image11.png)
 
 > [!NOTE]
-원래 설치 중 #6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 [설치 관리자](https://visualstudio.microsoft.com/vs/)를 다시 실행해야 합니다.
+> 원래 설치 중 #6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 [설치 관리자](https://visualstudio.microsoft.com/vs/)를 다시 실행해야 합니다.
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치
