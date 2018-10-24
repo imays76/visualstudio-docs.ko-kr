@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06016472ee627134fb5eb328cf82d0c3de1b5365
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e01ab9de41bd8ead1348eb58308008e55e6323e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891976"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ HRESULT get_isDataAligned(
 >  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 속성은 실행 파일이 기본이 아닌 데이터 정렬을 사용 하 여 컴파일될 때 일반적으로 설정 됩니다. Microsoft c + + 컴파일러 명령줄 옵션을 사용 하 여 데이터 맞춤을 변경할 수는 예를 들어 /Zp*#* 여기서 *#* 바이트 값입니다.  
+ 이 속성은 실행 파일이 기본이 아닌 데이터 정렬을 사용 하 여 컴파일될 때 일반적으로 설정 됩니다. Microsoft c + + 컴파일러 명령줄 옵션을 사용 하 여 데이터 맞춤을 변경할 수는 예를 들어 /Zp<em>#</em>여기서 *#* 바이트 값입니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

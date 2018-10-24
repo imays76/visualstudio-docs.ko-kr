@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893379"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>연습: UI 응답성 개선(HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ ms.locfileid: "49258312"
   
 ### <a name="analyzing-performance-data"></a>성능 데이터 분석  
   
-1.  **디버그** 도구 모음의 **디버깅 시작** 목록에서 Windows Phone 에뮬레이터 중 하나 또는 **시뮬레이터**를 선택합니다.  
+1. **디버그** 도구 모음의 **디버깅 시작** 목록에서 Windows Phone 에뮬레이터 중 하나 또는 **시뮬레이터**를 선택합니다.  
   
-2.  **디버그** 메뉴에서 **성능 및 진단**을 선택합니다.  
+2. **디버그** 메뉴에서 **성능 및 진단**을 선택합니다.  
   
-3.  **사용 가능한 도구**에서 **HTML UI 응답성**을 선택하고 **시작**을 선택합니다.  
+3. **사용 가능한 도구**에서 **HTML UI 응답성**을 선택하고 **시작**을 선택합니다.  
   
-     이 자습서에서는 시작 프로젝트에 프로파일러를 연결합니다. 설치된 앱에 프로파일러를 연결하는 등 기타 옵션에 대한 자세한 내용은 [HTML UI 응답성](../profiling/html-ui-responsiveness.md)을 참조하세요.  
+    이 자습서에서는 시작 프로젝트에 프로파일러를 연결합니다. 설치된 앱에 프로파일러를 연결하는 등 기타 옵션에 대한 자세한 내용은 [HTML UI 응답성](../profiling/html-ui-responsiveness.md)을 참조하세요.  
   
-     프로파일러를 시작하면 VsEtwCollector.exe 실행 권한을 요청하는 사용자 계정 컨트롤이 표시될 수 있습니다. **예**를 선택합니다.  
+    프로파일러를 시작하면 VsEtwCollector.exe 실행 권한을 요청하는 사용자 계정 컨트롤이 표시될 수 있습니다. **예**를 선택합니다.  
   
-4.  실행 중인 앱의 경우 **값 대기**를 선택하고 10초 정도 기다립니다. 약 1초에 한 번씩 단추 텍스트 및 색상 업데이트를 확인합니다.  
+4. 실행 중인 앱의 경우 **값 대기**를 선택하고 10초 정도 기다립니다. 약 1초에 한 번씩 단추 텍스트 및 색상 업데이트를 확인합니다.  
   
-5.  Alt+Tab을 눌러 실행 중인 응용 프로그램에서 Visual Studio로 전환합니다.  
+5. Alt+Tab을 눌러 실행 중인 응용 프로그램에서 Visual Studio로 전환합니다.  
   
-6.  **컬렉션 중지**를 선택합니다.  
+6. **컬렉션 중지**를 선택합니다.  
   
-     Visual Studio 새 탭에 정보가 표시됩니다. CPU 사용률 및 시각적 처리량(FPS) 데이터를 보면 몇 가지 추세를 쉽게 식별할 수 있습니다.  
+    Visual Studio 새 탭에 정보가 표시됩니다. CPU 사용률 및 시각적 처리량(FPS) 데이터를 보면 몇 가지 추세를 쉽게 식별할 수 있습니다.  
   
-    -   **값 대기** 단추를 누르면 약 3초 후에 CPU 사용률이 크게 증가하며 이 시점부터 이벤트의 명백한 패턴(스크립팅, 스타일 및 렌더링 이벤트의 일관성 있는 혼합)이 나타납니다.  
+   - **값 대기** 단추를 누르면 약 3초 후에 CPU 사용률이 크게 증가하며 이 시점부터 이벤트의 명백한 패턴(스크립팅, 스타일 및 렌더링 이벤트의 일관성 있는 혼합)이 나타납니다.  
   
-    -   시각적 처리량에 영향을 주지 않고 FPS의 처리량은 60으로 그대로 유지됩니다(즉, 프레임이 떨어지지 않음).  
+   - 시각적 처리량에 영향을 주지 않고 FPS의 처리량은 60으로 그대로 유지됩니다(즉, 프레임이 떨어지지 않음).  
   
      CPU 사용률 그래프의 일반적인 섹션에서 작업량이 많은 이 주기 동안 앱에서 무엇을 수행하는지 살펴보겠습니다.  
   
-7.  CPU 사용률 그래프의 중간에서 첫 번째와 두 번째 부분을 선택합니다(클릭하여 끌기 기능을 사용하거나 누른 후 화살표 키 사용). 다음 그림에서는 선택 후의 CPU 사용률 그래프를 보여 줍니다. 공유되지 않은 영역이 선택 영역입니다.  
+7. CPU 사용률 그래프의 중간에서 첫 번째와 두 번째 부분을 선택합니다(클릭하여 끌기 기능을 사용하거나 누른 후 화살표 키 사용). 다음 그림에서는 선택 후의 CPU 사용률 그래프를 보여 줍니다. 공유되지 않은 영역이 선택 영역입니다.  
   
-     ![CPU 사용률 그래프](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![CPU 사용률 그래프](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  **확대**를 선택합니다.  
+8. **확대**를 선택합니다.  
   
-     그래프에 선택한 기간이 더 자세히 표시됩니다. 다음 그림에서는 확대 후의 CPU 사용률 그래프를 보여 줍니다. 그래프의 특정 데이터가 다를 수는 있지만, 일반적인 패턴은 확인할 수 있습니다.  
+    그래프에 선택한 기간이 더 자세히 표시됩니다. 다음 그림에서는 확대 후의 CPU 사용률 그래프를 보여 줍니다. 그래프의 특정 데이터가 다를 수는 있지만, 일반적인 패턴은 확인할 수 있습니다.  
   
-     ![확대된 뷰](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![확대된 뷰](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     아래쪽 창의 시간 표시 막대 정보에 선택한 기간에 대한 세부 정보의 예제가 표시됩니다.  
+    아래쪽 창의 시간 표시 막대 정보에 선택한 기간에 대한 세부 정보의 예제가 표시됩니다.  
   
-     ![시간 표시 막대 세부 정보](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![시간 표시 막대 세부 정보](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     시간 표시 막대 정보의 이벤트에서 CPU 사용률 그래프의 시각적 추세를 확인합니다. 짧은 기간 동안 많은 이벤트가 발생합니다. 시간 표시 막대 정보 뷰에 `Timer`, `Layout` 및 `Paint` 이벤트가 표시됩니다.  
+    시간 표시 막대 정보의 이벤트에서 CPU 사용률 그래프의 시각적 추세를 확인합니다. 짧은 기간 동안 많은 이벤트가 발생합니다. 시간 표시 막대 정보 뷰에 `Timer`, `Layout` 및 `Paint` 이벤트가 표시됩니다.  
   
 9. 상황에 맞는 메뉴를 사용하거나 아래쪽 창에서 `Timer` 이벤트 중 하나를 오른쪽 단추로 클릭하고 **이벤트 필터**를 선택합니다. 다음 그림에서는 이 테스트 응용 프로그램의 `Timer` 이벤트 중 하나에 일반적으로 사용하는 세부 정보의 예제를 보여 줍니다.  
   

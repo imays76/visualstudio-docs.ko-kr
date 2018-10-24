@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b16ff8a5969282f2c062c19fed84292f0755d0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 59eece0ffae18b72504c258fd3134c7dc8e952d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894432"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ to XML 동적 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "49212422"
   
  이 단원의 동적 속성은 확인되는 값과 관련하여 다음 두 가지 범주로 나뉩니다.  
   
--   단일 값으로 확인되는 `Value` 및 <xref:System.Xml.Linq.XAttribute> 클래스의 <xref:System.Xml.Linq.XElement> 속성과 같은 간단한 속성  
+- 단일 값으로 확인되는 `Value` 및 <xref:System.Xml.Linq.XAttribute> 클래스의 <xref:System.Xml.Linq.XElement> 속성과 같은 간단한 속성  
   
--   인덱서 형식으로 해석되는 <xref:System.Xml.Linq.XElement>의 [Elements](../designers/elements-xelement-dynamic-property.md) 및 [Descendants](../designers/descendants-xelement-dynamic-property.md) 속성과 같은 인덱싱된 값 - 인덱서 형식을 원하는 값이나 컬렉션으로 확인하려면 확장된 이름 매개 변수가 인덱서 형식에 전달되어야 합니다.  
+- 인덱서 형식으로 해석되는 <xref:System.Xml.Linq.XElement>의 [Elements](../designers/elements-xelement-dynamic-property.md) 및 [Descendants](../designers/descendants-xelement-dynamic-property.md) 속성과 같은 인덱싱된 값 - 인덱서 형식을 원하는 값이나 컬렉션으로 확인하려면 확장된 이름 매개 변수가 인덱서 형식에 전달되어야 합니다.  
   
- <xref:System.Collections.Generic.IEnumerable%601> 형식의 인덱싱된 값을 반환하는 모든 동적 속성은 지연된 실행을 사용합니다. 지연된 실행에 대한 자세한 내용은 [LINQ 쿼리 소개(C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)를 참조하세요.  
+  <xref:System.Collections.Generic.IEnumerable%601> 형식의 인덱싱된 값을 반환하는 모든 동적 속성은 지연된 실행을 사용합니다. 지연된 실행에 대한 자세한 내용은 [LINQ 쿼리 소개(C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)를 참조하세요.  
   
 ## <a name="in-this-section"></a>섹션 내용  
   

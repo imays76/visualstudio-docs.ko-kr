@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892782"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Forms 컨트롤에 대 한 Office 문서 개요
   Windows Forms 컨트롤은 사용자가 데이터를 입력하거나 조작하는 데 사용할 수 있는 개체입니다. Microsoft Office Excel 및 Microsoft Office Word 용 문서 수준 프로젝트에서는 디자인 타임에 프로젝트에서 Windows Forms 컨트롤을 문서 또는 통합 문서를 추가할 수 또는 런타임 시 이러한 컨트롤을 프로그래밍 방식으로 추가할 수 있습니다. Excel 또는 Word에 대 한 열려 있는 문서 또는 VSTO 추가 기능에서 런타임에 워크시트에 이러한 컨트롤을 프로그래밍 방식으로 추가할 수 있습니다.  
@@ -52,25 +52,25 @@ ms.locfileid: "35674482"
  문서에서  
  -   항상 컨트롤을 표시하려는 경우  
   
--   사용자가 문서(예: 편집 화면이 잠긴 폼 기반 문서)에 직접 데이터를 입력하도록 하려는 경우  
+- 사용자가 문서(예: 편집 화면이 잠긴 폼 기반 문서)에 직접 데이터를 입력하도록 하려는 경우  
   
--   컨트롤을 문서의 데이터에 맞춰 표시하려는 경우. 예를 들어 목록 개체의 각 행에 단추를 추가하는 경우 각 목록 항목에 맞추려고 할 수 있습니다.  
+- 컨트롤을 문서의 데이터에 맞춰 표시하려는 경우. 예를 들어 목록 개체의 각 행에 단추를 추가하는 경우 각 목록 항목에 맞추려고 할 수 있습니다.  
   
- 작업 창 또는 사용자 지정 작업창에서  
- -   사용자에게 상황에 맞는 정보를 제공하려는 경우  
+  작업 창 또는 사용자 지정 작업창에서  
+  -   사용자에게 상황에 맞는 정보를 제공하려는 경우  
   
--   문서에 쿼리 컨트롤 및 데이터를 제외한 결과만 표시하려는 경우  
+- 문서에 쿼리 컨트롤 및 데이터를 제외한 결과만 표시하려는 경우  
   
--   컨트롤이 문서와 함께 인쇄되지 않도록 설정하려는 경우  
+- 컨트롤이 문서와 함께 인쇄되지 않도록 설정하려는 경우  
   
--   문서를 볼 때 컨트롤이 방해되지 않도록 설정하려는 경우  
+- 문서를 볼 때 컨트롤이 방해되지 않도록 설정하려는 경우  
   
- Windows Form에서  
- -   UI의 크기를 제어하려는 경우  
+  Windows Form에서  
+  -   UI의 크기를 제어하려는 경우  
   
--   사용자가 컨트롤을 숨기거나 삭제하지 못하게 하려는 경우  
+- 사용자가 컨트롤을 숨기거나 삭제하지 못하게 하려는 경우  
   
--   사용자의 입력을 허용하고 입력이 수신될 때까지 문서에서 작업을 수행할 수 없게 하려는 경우  
+- 사용자의 입력을 허용하고 입력이 수신될 때까지 문서에서 작업을 수행할 수 없게 하려는 경우  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>Windows Forms 컨트롤을 프로그래밍 방식으로 추가  
  Word 문서 및 런타임 시 Excel 워크시트에 Windows Forms 컨트롤을 추가할 수 있습니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 은 가장 일반적인 Windows Forms 컨트롤을 추가하는 데 필요한 도우미 메서드를 제공합니다. 이러한 도우미 메서드를 사용하면 Office 문서에 신속하게 컨트롤을 추가하고 결합된 Windows Forms 컨트롤 기능과 이러한 컨트롤의 Office 관련 기능에 액세스할 수 있습니다.  
@@ -134,13 +134,13 @@ ms.locfileid: "35674482"
   
  런타임 시 Word 문서에 컨트롤을 추가 하면 다른을 사용 하 여 새 컨트롤의 레이아웃 스타일을 지정할 수 있습니다 `Add` \< *컨트롤 클래스*> 메서드 오버 로드는 <xref:Microsoft.Office.Tools.Word.ControlCollection> 클래스:  
   
--   컨트롤을 텍스트에 맞춰 추가하려면 컨트롤의 위치가 지정된 <xref:Microsoft.Office.Interop.Word.Range> 를 사용하는 오버로드를 사용합니다.  
+- 컨트롤을 텍스트에 맞춰 추가하려면 컨트롤의 위치가 지정된 <xref:Microsoft.Office.Interop.Word.Range> 를 사용하는 오버로드를 사용합니다.  
   
--   컨트롤을 부동 셰이프로 추가하려면 컨트롤의 왼쪽 및 위쪽 좌표를 사용하는 오버로드를 사용합니다.  
+- 컨트롤을 부동 셰이프로 추가하려면 컨트롤의 왼쪽 및 위쪽 좌표를 사용하는 오버로드를 사용합니다.  
   
- 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
+  자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
   
- Visual Studio 디자이너에서 Word 서식 파일을 여는 경우 **기본** 보기에서 열리므로 인라인이 아닌 컨트롤은 이 서식 파일에 표시되지 않을 수 있습니다. 컨트롤을 표시하려면 보기를 **인쇄 레이아웃**으로 변경합니다.  
+  Visual Studio 디자이너에서 Word 서식 파일을 여는 경우 **기본** 보기에서 열리므로 인라인이 아닌 컨트롤은 이 서식 파일에 표시되지 않을 수 있습니다. 컨트롤을 표시하려면 보기를 **인쇄 레이아웃**으로 변경합니다.  
   
 ### <a name="controls-outside-the-main-document-body"></a>주 문서 본문 외부 컨트롤  
  Windows Forms 컨트롤은 머리글 또는 바닥글 내부 또는 하위 문서 내에서 지원되지 않습니다.  

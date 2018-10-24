@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2cc91ea41003f153a1b3910510f41bc032bf221
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e30e1d19a52042ad6edeabb6df4ee8e3aaf17b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893879"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 이 구조는 메서드 또는 함수 매개 변수를 나타냅니다.  
@@ -51,10 +51,10 @@ public struct METADATA_ADDRESS_PARAM {
  ID 매개 변수입니다.  
   
  dwIndex  
- 인덱스 매개 변수 목록의 매개 변수입니다.  
+ 매개 변수 목록의 매개 변수의 인덱스입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조체의 공용 구조체의 일부인는 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 때 구조는 `dwKind` 필드는 `DEBUG_ADDRESS_UNION` 구조로 설정 되어 `ADDRESS_KIND_PARAM` (의 값은 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형)입니다.  
+ 이 구조체의 공용 구조체의 일부인를 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 경우 구조체를 `dwKind` 필드를 `DEBUG_ADDRESS_UNION` 구조로 설정 되어 `ADDRESS_KIND_PARAM` (의 값을 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형)입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  

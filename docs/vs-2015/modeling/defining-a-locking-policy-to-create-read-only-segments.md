@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893831"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,11 +74,11 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>잠금 값  
  잠금은 저장소, 파티션 또는 개별 ModelElement에서 설정할 수 있습니다. 잠금이 0이 `Flags` 열거형: 사용 하 여 해당 값을 결합할 수 '&#124;'.  
   
--   이 클래스는 ModelElement의 잠금에는 항상 해당 파티션의 잠금이 포함합니다.  
+- 이 클래스는 ModelElement의 잠금에는 항상 해당 파티션의 잠금이 포함합니다.  
   
--   파티션의 잠금에는 항상 저장소의 잠금이 포함합니다.  
+- 파티션의 잠금에는 항상 저장소의 잠금이 포함합니다.  
   
- 파티션에서 잠금을 설정 하 고 또는 저장 하 고, 동시에 개별 요소에 대 한 잠금을 사용 하지 않도록 설정 수 없습니다.  
+  파티션에서 잠금을 설정 하 고 또는 저장 하 고, 동시에 개별 요소에 대 한 잠금을 사용 하지 않도록 설정 수 없습니다.  
   
 |값|즉 경우 `IsLocked(Value)` true|  
 |-----------|------------------------------------------|  
