@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8684f85c7e5ccb8b4ca93ccc51a24c17ac40f633
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 339b0e9a3637ef375ee3ceee8c5fb84c2670c34f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838246"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
 도메인 특정 언어 (DSL) 특수 한 Visual Studio 솔루션을 사용 하 여 만들어집니다.
@@ -28,12 +28,12 @@ ms.locfileid: "47859616"
 ## <a name="prerequisites"></a>전제 조건
  이 절차를 시작 하기 전에 이러한 구성 요소를 먼저 설치 해야 합니다.
 
-|||
-|-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualization and Modeling SDK||
 
+| | |
+|-|-|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -42,43 +42,43 @@ ms.locfileid: "47859616"
 
 #### <a name="to-create-a-domain-specific-language-solution"></a>도메인별 언어 솔루션을 만들려면
 
-1.  DSL 마법사를 시작 합니다.
+1. DSL 마법사를 시작 합니다.
 
-    1.  **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
+   1. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
 
-    2.  **새 프로젝트** 대화 상자가 나타납니다.
+   2. **새 프로젝트** 대화 상자가 나타납니다.
 
-    3.  아래 **프로젝트 형식**를 확장 합니다 **기타 프로젝트 형식** 노드를 마우스 클릭 **확장성**.
+   3. 아래 **프로젝트 형식**를 확장 합니다 **기타 프로젝트 형식** 노드를 마우스 클릭 **확장성**.
 
-    4.  클릭 **도메인별 언어 디자이너**합니다.
+   4. 클릭 **도메인별 언어 디자이너**합니다.
 
-    5.  에 **이름을** 상자는 솔루션에 대 한 이름을 입력 합니다. **확인**을 클릭합니다.
+   5. 에 **이름을** 상자는 솔루션에 대 한 이름을 입력 합니다. **확인**을 클릭합니다.
 
-         합니다 **도메인별 언어 디자이너 마법사** 나타납니다.
+       합니다 **도메인별 언어 디자이너 마법사** 나타납니다.
 
-        > [!NOTE]
-        >  가급적 코드 생성에 사용할 수 있으므로 이름을 입력 하는 유효한 Visual C# 식별자를 해야 합니다.
+      > [!NOTE]
+      >  가급적 코드 생성에 사용할 수 있으므로 이름을 입력 하는 유효한 Visual C# 식별자를 해야 합니다.
 
-     ![DSL 만들기 대화 상자](../modeling/media/create_dsldialog.png)
+      ![DSL 만들기 대화 상자](../modeling/media/create_dsldialog.png)
 
-2.  DSL 템플릿을 선택 합니다.
+2. DSL 템플릿을 선택 합니다.
 
-     에 **도메인별 언어 옵션 선택** 페이지와 같은 솔루션 템플릿 중 하나를 선택 합니다 **최소 언어**합니다. 만들려는 DSL 비슷한 템플릿을 선택 합니다.
+    에 **도메인별 언어 옵션 선택** 페이지와 같은 솔루션 템플릿 중 하나를 선택 합니다 **최소 언어**합니다. 만들려는 DSL 비슷한 템플릿을 선택 합니다.
 
-     솔루션 템플릿에 대 한 자세한 내용은 참조 하십시오 [도메인별 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)합니다.
+    솔루션 템플릿에 대 한 자세한 내용은 참조 하십시오 [도메인별 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)합니다.
 
-3.  파일 이름 확장명을 입력 합니다 **파일 확장명** 페이지입니다. 컴퓨터에서 고유 해야 하 고 DSL을 설치 하려는 모든 컴퓨터에서. 메시지가 나타납니다 **응용 프로그램이 나 Visual Studio 편집기는이 확장을 사용할**합니다.
+3. 파일 이름 확장명을 입력 합니다 **파일 확장명** 페이지입니다. 컴퓨터에서 고유 해야 하 고 DSL을 설치 하려는 모든 컴퓨터에서. 메시지가 나타납니다 **응용 프로그램이 나 Visual Studio 편집기는이 확장을 사용할**합니다.
 
-    -   완전히 설치 되지 않은 이전 실험적 Dsl의 파일 이름 확장명을 사용한 경우 지울 수는 있습니다 축소를 사용 하 여 합니다 **실험적 인스턴스 재설정** 도구 [Visual Studio SDK] 메뉴에서 찾을 수 있습니다.
+   -   완전히 설치 되지 않은 이전 실험적 Dsl의 파일 이름 확장명을 사용한 경우 지울 수는 있습니다 축소를 사용 하 여 합니다 **실험적 인스턴스 재설정** 도구 [Visual Studio SDK] 메뉴에서 찾을 수 있습니다.
 
-    -   이 파일 확장명을 사용 하는 다른 Visual Studio 확장 컴퓨터에 완전히 설치 된 경우에 제거 하는 것이 좋습니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.
+   -   이 파일 확장명을 사용 하는 다른 Visual Studio 확장 컴퓨터에 완전히 설치 된 경우에 제거 하는 것이 좋습니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.
 
-4.  를 검사 하 고 필요한 경우 필드를 조정, 마법사의 나머지 페이지의 키를 누릅니다. 설정에 만족 했으면 클릭 **완료**합니다. 설정에 대 한 자세한 내용은 참조 하세요. [DSL 디자이너 마법사 페이지](#settings)합니다.
+4. 를 검사 하 고 필요한 경우 필드를 조정, 마법사의 나머지 페이지의 키를 누릅니다. 설정에 만족 했으면 클릭 **완료**합니다. 설정에 대 한 자세한 내용은 참조 하세요. [DSL 디자이너 마법사 페이지](#settings)합니다.
 
-     마법사 라는 두 개의 프로젝트가 포함 된 솔루션을 만듭니다 **Dsl** 하 고 **DslPackage**합니다.
+    마법사 라는 두 개의 프로젝트가 포함 된 솔루션을 만듭니다 **Dsl** 하 고 **DslPackage**합니다.
 
-    > [!NOTE]
-    >  신뢰할 수 없는 소스에서 텍스트 템플릿을 실행 하려면 클릭 하지 경고를 생성 하는 메시지가 표시 되 면 **확인**합니다. 이 메시지가 다시 표시 하지를 설정할 수 있습니다.
+   > [!NOTE]
+   >  신뢰할 수 없는 소스에서 텍스트 템플릿을 실행 하려면 클릭 하지 경고를 생성 하는 메시지가 표시 되 면 **확인**합니다. 이 메시지가 다시 표시 하지를 설정할 수 있습니다.
 
 ## <a name="settings"></a> DSL 디자이너 마법사 페이지
  다양 한 해당 기본값에서 변경 되지 않은 필드를 둘 수 있습니다. 그러나 파일 확장명 필드를 설정 하는 해야 합니다.
