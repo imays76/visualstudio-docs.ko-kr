@@ -17,12 +17,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 59d0de3dd53d7d9ab3a54fc11eb50666d39dfdc7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f79fb0ac4945253f1a10ce98a7e1ed17eaa6de63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950422"
 ---
 # <a name="unit-test-your-code"></a>코드 단위 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ ms.locfileid: "49231220"
   
  단위 테스트 도구는 다음과 같습니다.  
   
-1.  **테스트 탐색기.** 테스트 탐색기에서는 단위 테스트를 실행하고 그 결과를 볼 수 있습니다. 테스트 탐색기에서는 타사 프레임워크를 비롯하여 탐색기용 어댑터가 있는 모든 단위 테스트 프레임워크를 사용할 수 있습니다.  
+1. **테스트 탐색기.** 테스트 탐색기에서는 단위 테스트를 실행하고 그 결과를 볼 수 있습니다. 테스트 탐색기에서는 타사 프레임워크를 비롯하여 탐색기용 어댑터가 있는 모든 단위 테스트 프레임워크를 사용할 수 있습니다.  
   
-2.  **관리 코드용 Microsoft 단위 테스트 프레임워크.** 관리 코드용 Microsoft 단위 테스트 프레임워크는 Visual Studio와 함께 설치되며 .NET 코드 테스트용 프레임워크를 제공합니다.  
+2. **관리 코드용 Microsoft 단위 테스트 프레임워크.** 관리 코드용 Microsoft 단위 테스트 프레임워크는 Visual Studio와 함께 설치되며 .NET 코드 테스트용 프레임워크를 제공합니다.  
   
-3.  **C++용 Microsoft 단위 테스트 프레임워크.** C++용 Microsoft 단위 테스트 프레임워크는 Visual Studio와 함께 설치되며 네이티브 코드 테스트용 프레임워크를 제공합니다.  
+3. **C++용 Microsoft 단위 테스트 프레임워크.** C++용 Microsoft 단위 테스트 프레임워크는 Visual Studio와 함께 설치되며 네이티브 코드 테스트용 프레임워크를 제공합니다.  
   
-4.  **코드 검사 도구.** 단위 테스트가 테스트 탐색기의 명령 하나에서 실행하는 제품 코드의 양을 결정할 수 있습니다.  
+4. **코드 검사 도구.** 단위 테스트가 테스트 탐색기의 명령 하나에서 실행하는 제품 코드의 양을 결정할 수 있습니다.  
   
-5.  **Microsoft Fakes 격리 프레임워크.** Microsoft Fakes 격리 프레임워크는 테스트 중인 코드에서 종속성을 만드는 프로덕션 및 시스템 코드에 대한 대체 클래스 및 메서드를 만들 수 있습니다. 함수에 대한 모조 위임을 구현하여 종속성 개체의 동작과 출력을 제어할 수 있습니다.  
+5. **Microsoft Fakes 격리 프레임워크.** Microsoft Fakes 격리 프레임워크는 테스트 중인 코드에서 종속성을 만드는 프로덕션 및 시스템 코드에 대한 대체 클래스 및 메서드를 만들 수 있습니다. 함수에 대한 모조 위임을 구현하여 종속성 개체의 동작과 출력을 제어할 수 있습니다.  
   
- [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)를 사용하면 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스트 도구 모음을 생성할 수도 있습니다. 코드의 모든 문에 대해 해당 문을 실행할 테스트 입력이 생성됩니다. 코드의 모든 조건부 분기에 대해 사례 분석이 수행됩니다.  
+   [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)를 사용하면 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스트 도구 모음을 생성할 수도 있습니다. 코드의 모든 문에 대해 해당 문을 실행할 테스트 입력이 생성됩니다. 코드의 모든 조건부 분기에 대해 사례 분석이 수행됩니다.  
   
 ## <a name="key-tasks"></a>주요 작업  
  다음 항목은 단위 테스트를 이해하고 만드는 데 유용합니다.  

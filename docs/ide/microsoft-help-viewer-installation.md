@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e902df40e27fb5bf27ca29d9335634844024f3fb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 512a573a0d04f9459080442a2b2b01837ac37229
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747484"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942752"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft 도움말 뷰어 설치
 
@@ -45,9 +45,9 @@ Microsoft 도움말 뷰어를 쉽게 설치하는 다른 방법은 **빠른 실�
 
    ![설치 단추](media/help_viewer_install.png)
 
-|         |         |
+| | |
 |---------|---------|
-|  ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png)  |  Visual Studio 설치 관리자를 사용하여 Microsoft 도움말 뷰어를 설치하는 방법에 대한 [비디오를 봅니다](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171). |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png) | Visual Studio 설치 관리자를 사용하여 Microsoft 도움말 뷰어를 설치하는 방법에 대한 [비디오를 봅니다](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171). |
 
 ## <a name="see-also"></a>참고 항목
 

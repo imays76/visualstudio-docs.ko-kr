@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89750ad7ee47f1238d75d3c51ae0b6ee291944fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940946"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,29 +33,29 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 두 가지 형식의 CPU 카운터 이벤트가 발생합니다.  
+  두 가지 형식의 CPU 카운터 이벤트가 발생합니다.  
   
--   Portable events - 특정 CPU에 관계없이 수집할 수 있는 CPU 이벤트입니다.  
+- Portable events - 특정 CPU에 관계없이 수집할 수 있는 CPU 이벤트입니다.  
   
--   Platform events - 특정 CPU에 연결된 CPU 이벤트입니다.  
+- Platform events - 특정 CPU에 연결된 CPU 이벤트입니다.  
   
- Portable events에는 Instructions Retired 및 Non Halted Cycles 등의 일반적인 이벤트, CPU 버퍼 이벤트, 분기 이벤트, L2 캐시 이벤트가 포함됩니다. 사용 가능한 플랫폼 이벤트 카운터는 프로세서 제조업체에서 결정합니다.  
+  Portable events에는 Instructions Retired 및 Non Halted Cycles 등의 일반적인 이벤트, CPU 버퍼 이벤트, 분기 이벤트, L2 캐시 이벤트가 포함됩니다. 사용 가능한 플랫폼 이벤트 카운터는 프로세서 제조업체에서 결정합니다.  
   
- 이식 가능한 카운터와 플랫폼 카운터 간에 이벤트 범주를 공유할 수 있습니다. 예를 들어 다음 데이터 범주는 두 형식에 공통적인 경우가 많습니다.  
+  이식 가능한 카운터와 플랫폼 카운터 간에 이벤트 범주를 공유할 수 있습니다. 예를 들어 다음 데이터 범주는 두 형식에 공통적인 경우가 많습니다.  
   
--   메모리 이벤트.  
+- 메모리 이벤트.  
   
--   프런트 엔드 이벤트.  
+- 프런트 엔드 이벤트.  
   
--   분기 이벤트.  
+- 분기 이벤트.  
   
- 프로파일러에서 두 가지 방법으로 성능 카운터 데이터를 수집할 수 있습니다.  
+  프로파일러에서 두 가지 방법으로 성능 카운터 데이터를 수집할 수 있습니다.  
   
--   계측을 통해 프로파일링할 경우 하나 이상의 카운터에서 데이터를 수집합니다.  
+- 계측을 통해 프로파일링할 경우 하나 이상의 카운터에서 데이터를 수집합니다.  
   
--   샘플링을 통해 프로파일링할 경우 카운터 이벤트를 샘플링 간격으로 지정합니다. 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.  
+- 샘플링을 통해 프로파일링할 경우 카운터 이벤트를 샘플링 간격으로 지정합니다. 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>계측을 통해 프로파일링할 경우 CPU 성능 카운터 데이터를 수집하려면  
   

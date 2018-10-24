@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435e4d852464a74a1dc4f418ffa9906c1e22791a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a05729efcc475fa99026d99abc24d09c2511a2b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939256"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>방법: 데이터 기반 단위 테스트 만들기
 
@@ -69,7 +69,7 @@ public int AddIntegers(int first, int second)
  `AddIntegers` 메서드를 테스트하기 위해 반환되어야 하는 매개 변수 및 합계의 값 범위를 지정하는 데이터 소스를 만듭니다. 이 예제에서는 `MathsData`이라는 Sql Compact 데이터베이스 및 다음 열 이름과 값이 포함된 `AddIntegersData`라는 테이블을 만듬
 
 |FirstNumber|SecondNumber|Sum|
-|-----------------|------------------|---------|
+|-|------------------|-|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e96f2f03229b12c378a096ecfd7555af1f5cce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 64d30183d01e74bf5e6171d98b5df21c678c8dbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937969"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
-지정된 된 수의 기호 열거형 시퀀스를 건너뜁니다.  
+열거형 시퀀스에서 기호를 지정 된 수를 건너뜁니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>매개 변수  
  celt  
- [in] 열거형 시퀀스를 건너뛰려면의 기호 수입니다.  
+ [in] 건너뛸 열거형 시퀀스에서 기호 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 건너뛸 더 많은 기호가 없는 경우.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 건너뛸 자세한 기호가 없는 경우.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

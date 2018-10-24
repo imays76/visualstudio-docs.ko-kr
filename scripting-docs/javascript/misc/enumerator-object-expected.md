@@ -1,5 +1,5 @@
 ---
-title: Enumerator 개체가 필요 합니다 | Microsoft Docs
+title: Enumerator 개체가 필요 | Microsoft 문서
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 485e6e387f07fd3a54727f5f8e08c0a00743c6d9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935850"
 ---
 # <a name="enumerator-object-expected"></a>Enumerator 개체가 필요합니다.
-호출 하려고는 **Enumerator.prototype.atEnd, Enumerator.prototype.item, Enumerator.prototype.moveFirst,** 또는 **Enumerator.prototype.moveNext** 형식의 다른 개체에서 메서드 보다 `Enumerator`합니다. 이 형식의 호출 개체 유형 이어야 `Enumerator`합니다. 이 규칙을 중단 하는 코드 예제는 다음과 같습니다.  
+호출 하려고 합니다 **Enumerator.prototype.atEnd, Enumerator.prototype.item Enumerator.prototype.moveFirst를** 또는 **Enumerator.prototype.moveNext** 형식의 다른 개체에서 메서드 보다 `Enumerator`합니다. 이 형식의 호출 개체 유형 이어야 `Enumerator`합니다. 이 규칙을 중단 하는 코드의 예는 다음과 같습니다.  
   
 ```JavaScript  
 var o = new Object;  
@@ -38,7 +38,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   호출할는 **Enumerator.prototype.atEnd**, **Enumerator.prototype.item**, **Enumerator.prototype.moveFirst**, 또는  **Enumerator.prototype.moveNext** 형식의 개체에 대 한 메서드 `Enumerator`합니다. 개체를 했는지 확인 하는 프로그램 `Enumerator` 개체를 가져오려면:  
+-   만 호출 합니다 **Enumerator.prototype.atEnd**, **Enumerator.prototype.item**합니다 **Enumerator.prototype.moveFirst**, 또는  **Enumerator.prototype.moveNext** 형식의 개체에 있는 메서드의 `Enumerator`합니다. 개체가 있는지 확인 하려면를 `Enumerator` 개체를 사용 합니다.  
   
     ```  
     if(x instanceof Enumerator)  

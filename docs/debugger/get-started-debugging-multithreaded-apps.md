@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936864"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Visual Studio에서 다중 스레드 응용 프로그램 디버깅 시작
 Visual Studio는 여러 도구와 다중 스레드 응용 프로그램을 디버깅할 수 있도록 사용자 인터페이스 요소를 제공 합니다. 이 자습서에서는 스레드 마커를 사용 하는 방법을 보여 줍니다.는 **병렬 스택** 창에는 **병렬 조사식** 창과 조건부 중단점, 중단점 필터. 이 자습서는 몇 분 정도 걸리지만 완료 익힐 수 다중 스레드 응용 프로그램 디버깅에 대 한 기능을 사용 하 여.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기")  |    [비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) 비슷한 단계를 보여 주는 다중 스레드 디버깅 합니다. |
+| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | [비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) 비슷한 단계를 보여 주는 다중 스레드 디버깅 합니다. |
 
 다른 항목 다른 다중 스레드 디버깅 도구를 사용 하 여 추가 정보를 제공 합니다.
 
@@ -217,30 +217,30 @@ Visual Studio는 여러 도구와 다중 스레드 응용 프로그램을 디버
   
 #### <a name="to-start-debugging"></a>디버깅을 시작하려면  
   
-1.  왼쪽된 여백을 클릭 합니다 `Thread.Sleep` 또는 `this_thread::sleep_for` 문을 새 중단점을 삽입 합니다.  
+1. 왼쪽된 여백을 클릭 합니다 `Thread.Sleep` 또는 `this_thread::sleep_for` 문을 새 중단점을 삽입 합니다.  
   
-     소스 코드 편집기의 왼쪽에 여백에 빨간색 원이 나타납니다. 이 공은 이 위치에 중단점이 설정되었음을 나타냅니다. 
+    소스 코드 편집기의 왼쪽에 여백에 빨간색 원이 나타납니다. 이 공은 이 위치에 중단점이 설정되었음을 나타냅니다. 
   
-2.  에 **디버그** 메뉴에서 클릭 **디버깅 시작** (**F5**).  
+2. 에 **디버그** 메뉴에서 클릭 **디버깅 시작** (**F5**).  
   
-     Visual Studio 솔루션을 빌드합니다, 그리고 앱, 연결 된 디버거와 함께 실행을 시작 및 앱 중단점에서 멈춥니다.  
+    Visual Studio 솔루션을 빌드합니다, 그리고 앱, 연결 된 디버거와 함께 실행을 시작 및 앱 중단점에서 멈춥니다.  
   
-    > [!NOTE]
-    > 콘솔 창에 포커스를 전환 하는 경우 클릭 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 창에 포커스를 돌리는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  
+   > [!NOTE]
+   > 콘솔 창에 포커스를 전환 하는 경우 클릭 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 창에 포커스를 돌리는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  
   
-4.  소스 코드 편집기에서 중단점을 포함 하는 줄을 찾습니다.  
+3. 소스 코드 편집기에서 중단점을 포함 하는 줄을 찾습니다.  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>스레드 마커를 검색 하려면  
 

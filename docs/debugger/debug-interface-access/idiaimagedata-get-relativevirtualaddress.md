@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2651b0ab8ee65967bba08dd415a574171759e218
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 032b4db0a69dd1aeec6b312b8506fd29d079cf0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935603"
 ---
 # <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
-응용 프로그램에 상대적인 모듈의 가상 메모리 내의 위치를 검색합니다.  
+응용 프로그램에 상대적인 모듈의 가상 메모리의 위치를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,7 +37,7 @@ HRESULT get_relativeVirtualAddress (
  [out] 모듈의 상대 가상 메모리 오프셋을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

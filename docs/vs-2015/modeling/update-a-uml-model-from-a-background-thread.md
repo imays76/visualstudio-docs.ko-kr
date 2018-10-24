@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7faef9f085f21db4d4f819746acf52c119189f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940998"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>백그라운드 스레드에서 UML 모델 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,35 +35,35 @@ ms.locfileid: "49216855"
   
 #### <a name="to-run-the-example"></a>예제를 실행하려면  
   
-1.  에 설명 된 대로 C# 프로젝트에서 명령 처리기를 만듭니다 [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)합니다.  
+1. 에 설명 된 대로 C# 프로젝트에서 명령 처리기를 만듭니다 [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)합니다.  
   
-2.  프로젝트에 아래 어셈블리에 대한 참조가 포함되어 있는지 확인합니다.  
+2. 프로젝트에 아래 어셈블리에 대한 참조가 포함되어 있는지 확인합니다.  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces  
+   -   Microsoft.VisualStudio.Uml.Interfaces  
   
-    -   System.ComponentModel.Composition  
+   -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms  
+   -   System.Windows.Forms  
   
-3.  이라는 Windows form을 프로젝트에 추가 **ProgressForm**합니다. 업데이트가 진행 중이라는 메시지가 표시됩니다. 다른 컨트롤은 없어도 됩니다.  
+3. 이라는 Windows form을 프로젝트에 추가 **ProgressForm**합니다. 업데이트가 진행 중이라는 메시지가 표시됩니다. 다른 컨트롤은 없어도 됩니다.  
   
-4.  7단계 후에 표시된 코드를 포함하는 C# 파일을 추가합니다.  
+4. 7단계 후에 표시된 코드를 포함하는 C# 파일을 추가합니다.  
   
-5.  프로젝트를 빌드하고 실행합니다.  
+5. 프로젝트를 빌드하고 실행합니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 새 인스턴스가 실험적 모드에서 시작됩니다.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 새 인스턴스가 실험적 모드에서 시작됩니다.  
   
-6.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스에서 UML 클래스 다이어그램을 만들거나 엽니다.  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스에서 UML 클래스 다이어그램을 만들거나 엽니다.  
   
-7.  UML 클래스 다이어그램에서 아무 곳 이나 마우스 오른쪽 단추로 누른 **여러 UML 클래스 추가**합니다.  
+7. UML 클래스 다이어그램에서 아무 곳 이나 마우스 오른쪽 단추로 누른 **여러 UML 클래스 추가**합니다.  
   
- 여러 개의 새 클래스 상자가 0.5초 간격으로 다이어그램에 하나씩 나타납니다.  
+   여러 개의 새 클래스 상자가 0.5초 간격으로 다이어그램에 하나씩 나타납니다.  
   
 ```csharp  
 using System;  

@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b44b024b3914061bf79f70fedf76c81a3ebffc
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f178c2a129ca0c9817dfa3d8545236705739e5db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938244"
 ---
 # <a name="design-user-interfaces"></a>사용자 인터페이스 디자인
 
 Visual Studio의 다양한 도구를 사용하여 응용 프로그램용 사용자 인터페이스를 만들고 디자인할 수 있습니다.
 
 |자세한 정보를 확인할 항목|보기|
-|-------------------------|---------|
+| - |---------|
 | Visual Studio 및 Blend for Visual Studio에서 XAML 디자이너의 기능 | [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md) |
 | Visual Studio를 사용하는 XAML 기반 앱 디자인|[Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | Blend for Visual Studio를 사용하는 XAML 기반 앱 디자인 | [Blend for Visual Studio를 사용하여 UI 만들기](creating-a-ui-by-using-blend-for-visual-studio.md) |

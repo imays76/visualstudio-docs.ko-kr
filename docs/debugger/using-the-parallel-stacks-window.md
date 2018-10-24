@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d344cc8cd30d250c441788a7920d05086c38ca5f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940010"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>스레드 및 병렬 스택 창을 사용 하 여 작업 보기
 합니다 **병렬 스택** 창은 다중 스레드 응용 프로그램을 디버깅할 때 유용 합니다. 해당 **스레드 뷰** 응용 프로그램에서 모든 스레드에 대 한 호출 스택 정보를 표시 합니다. 따라서 스레드와 스레드 스택 프레임 간을 탐색할 수 있습니다. 관리 코드에는 **작업 보기** 의 호출 스택이 표시 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 개체입니다. 네이티브 코드에는 **작업 보기** 의 호출 스택이 표시 [작업 그룹](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)를 [병렬 알고리즘](/cpp/parallel/concrt/parallel-algorithms), [비동기 에이전트](/cpp/parallel/concrt/asynchronous-agents), 및 [간단한 작업](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)합니다.  
@@ -92,21 +92,21 @@ ms.locfileid: "39176969"
 ## <a name="tasks-view"></a>작업 뷰  
  응용 프로그램을 사용 하는 경우 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 개체 (관리 코드용) 또는 `task_handle` 병렬 처리 표현 (네이티브 코드용) 개체 전환 하려면 병렬 스택 창 도구 모음의 콤보 상자를 사용할 수 없다 *작업 보기*합니다. 작업 뷰에는 스레드 대신 작업의 호출 스택이 표시됩니다. 작업 뷰는 다음과 같이 스레드 뷰와 다릅니다.  
   
--   작업을 실행하고 있지 않은 스레드의 호출 스택이 표시되지 않습니다.  
+- 작업을 실행하고 있지 않은 스레드의 호출 스택이 표시되지 않습니다.  
   
--   작업을 실행 중인 스레드의 호출 스택은 맨 위와 맨 아래에서 시각적으로 잘려 작업과 가장 많이 관련된 프레임을 표시합니다.  
+- 작업을 실행 중인 스레드의 호출 스택은 맨 위와 맨 아래에서 시각적으로 잘려 작업과 가장 많이 관련된 프레임을 표시합니다.  
   
--   여러 작업이 한 스레드에 있으면 이러한 작업의 호출 스택이 개별 노드로 분할됩니다.  
+- 여러 작업이 한 스레드에 있으면 이러한 작업의 호출 스택이 개별 노드로 분할됩니다.  
   
- 다음 그림의 오른쪽에는 병렬 스택 작업 뷰가 표시되고 왼쪽에는 해당 스레드 뷰가 표시됩니다.  
+  다음 그림의 오른쪽에는 병렬 스택 작업 뷰가 표시되고 왼쪽에는 해당 스레드 뷰가 표시됩니다.  
   
- ![작업 뷰의 병렬 스택 창의](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
+  ![작업 뷰의 병렬 스택 창의](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
   
- 전체 호출 스택을 보려면, 스택 프레임을 마우스 오른쪽 단추로 클릭 한 다음 클릭 하 여 방금 스레드 뷰로 전환 **스레드로 이동**합니다.  
+  전체 호출 스택을 보려면, 스택 프레임을 마우스 오른쪽 단추로 클릭 한 다음 클릭 하 여 방금 스레드 뷰로 전환 **스레드로 이동**합니다.  
   
- 메서드를 마우스로 가리키면 이전 표에 설명 된 대로 추가 정보를 볼 수 있습니다. 다음 이미지에서는 스레드 뷰와 작업 뷰에 대한 정보를 도구 설명으로 보여 줍니다.  
+  메서드를 마우스로 가리키면 이전 표에 설명 된 대로 추가 정보를 볼 수 있습니다. 다음 이미지에서는 스레드 뷰와 작업 뷰에 대한 정보를 도구 설명으로 보여 줍니다.  
   
- ![병렬 스택 창의 도구 설명](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
+  ![병렬 스택 창의 도구 설명](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>메서드 뷰  
  스레드 뷰나 작업 뷰에서 도구 모음의 메서드 뷰 아이콘을 클릭하여 현재 메서드를 축으로 그래프를 회전할 수 있습니다. 메서드 뷰에서는 현재 메서드를 호출하거나 현재 메서드에 의해 호출되는 모든 스레드에 대한 메서드를 모두 한눈에 볼 수 있습니다. 다음 그림에서는 스레드 뷰를 보여 주며, 메서드 뷰에서 동일한 정보가 어떻게 표시되는지도 보여 줍니다.  

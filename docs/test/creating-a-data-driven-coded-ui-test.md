@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940452"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>데이터 기반의 코딩된 UI 테스트 만들기
 
@@ -33,64 +33,64 @@ ms.locfileid: "36303042"
 
 ### <a name="step-1---create-a-coded-ui-test"></a>1단계 - 코딩된 UI 테스트 만들기
 
-1.  프로젝트를 만듭니다.
+1. 프로젝트를 만듭니다.
 
-     ![코딩된 UI 테스트 프로젝트 만들기](../test/media/cuit_datadriven_.png)
+    ![코딩된 UI 테스트 프로젝트 만들기](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
    > **코딩된 UI 테스트 프로젝트** 템플릿이 표시되지 않으면, [코딩된 UI 테스트 구성 요소를 설치](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)해야 합니다.
 
-2.  **작업을 기록**하도록 선택합니다.
+2. **작업을 기록**하도록 선택합니다.
 
-     ![작업을 기록하도록 선택](../test/media/cuit_datadriven_generatecodedialog.png)
+    ![작업을 기록하도록 선택](../test/media/cuit_datadriven_generatecodedialog.png)
 
-3.  계산기 앱을 열고 테스트 기록을 시작합니다.
+3. 계산기 앱을 열고 테스트 기록을 시작합니다.
 
-     ![작업 기록](../test/media/cuit_datadriven_cuitbuilder.png)
+    ![작업 기록](../test/media/cuit_datadriven_cuitbuilder.png)
 
-4.  1+2를 추가하고 레코더를 일시 중지한 다음 테스트 메서드를 생성합니다. 나중에 이 사용자 입력의 값을 데이터 파일의 값으로 바꿉니다.
+4. 1+2를 추가하고 레코더를 일시 중지한 다음 테스트 메서드를 생성합니다. 나중에 이 사용자 입력의 값을 데이터 파일의 값으로 바꿉니다.
 
-     ![테스트 메서드 생성](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![테스트 메서드 생성](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
-     테스트 빌더를 닫습니다. 메서드가 테스트에 추가됩니다.
+    테스트 빌더를 닫습니다. 메서드가 테스트에 추가됩니다.
 
-    ```csharp
-    [TestMethod]
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-    }
-    ```
+   ```csharp
+   [TestMethod]
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+   }
+   ```
 
-5.  `AddNumbers()` 메서드를 사용하여 테스트가 실행되는지 확인합니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 상황에 맞는 메뉴를 열고 **테스트 실행**을 선택합니다. (바로 가기 키: **Ctrl**+**R**,**T**).
+5. `AddNumbers()` 메서드를 사용하여 테스트가 실행되는지 확인합니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 상황에 맞는 메뉴를 열고 **테스트 실행**을 선택합니다. (바로 가기 키: **Ctrl**+**R**,**T**).
 
-     테스트 성공 여부를 보여 주는 테스트 결과가 **테스트 탐색기** 창에 표시됩니다. 테스트 탐색기 창을 열려면 **테스트** 메뉴에서 **Windows**와 **테스트 탐색기**를 차례로 선택합니다.
+    테스트 성공 여부를 보여 주는 테스트 결과가 **테스트 탐색기** 창에 표시됩니다. 테스트 탐색기 창을 열려면 **테스트** 메뉴에서 **Windows**와 **테스트 탐색기**를 차례로 선택합니다.
 
-6.  테스트에서 필요한 값을 확인하는 데 사용되는 어설션 매개 변수 값에는 데이터 소스도 사용할 수 있으므로, 어설션을 추가해 두 숫자의 합이 올바른지 유효성을 검사해 보겠습니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 상황에 맞는 메뉴를 열고 **코딩된 UI 테스트에 대한 코드 생성**과 **코딩된 UI 테스트 빌더 사용**을 차례로 선택합니다.
+6. 테스트에서 필요한 값을 확인하는 데 사용되는 어설션 매개 변수 값에는 데이터 소스도 사용할 수 있으므로, 어설션을 추가해 두 숫자의 합이 올바른지 유효성을 검사해 보겠습니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 상황에 맞는 메뉴를 열고 **코딩된 UI 테스트에 대한 코드 생성**과 **코딩된 UI 테스트 빌더 사용**을 차례로 선택합니다.
 
-     합을 표시하는 계산기의 텍스트 컨트롤을 매핑합니다.
+    합을 표시하는 계산기의 텍스트 컨트롤을 매핑합니다.
 
-     ![UI 텍스트 컨트롤 매핑](../test/media/cuit_datadriven_addassertion.png)
+    ![UI 텍스트 컨트롤 매핑](../test/media/cuit_datadriven_addassertion.png)
 
-7.  합의 값이 올바른지 유효성을 검사하는 어설션을 추가합니다. 값이 **3**인 **DisplayText** 속성을 선택한 후 **어설션 추가**를 선택합니다. **AreEqual** 비교 연산자를 사용하여 비교 값이 **3**인지 확인합니다.
+7. 합의 값이 올바른지 유효성을 검사하는 어설션을 추가합니다. 값이 **3**인 **DisplayText** 속성을 선택한 후 **어설션 추가**를 선택합니다. **AreEqual** 비교 연산자를 사용하여 비교 값이 **3**인지 확인합니다.
 
-     ![어설션 구성](../test/media/cuit_datadriven_builderaddassertion2.png)
+    ![어설션 구성](../test/media/cuit_datadriven_builderaddassertion2.png)
 
-8.  어설션을 구성한 후 빌더에서 코드를 다시 생성합니다. 그러면 이 유효성 검사를 위한 새 메서드가 작성됩니다.
+8. 어설션을 구성한 후 빌더에서 코드를 다시 생성합니다. 그러면 이 유효성 검사를 위한 새 메서드가 작성됩니다.
 
-     ![어설션 메서드 생성](../test/media/cuit_datadriven_assertiongencode.png)
+    ![어설션 메서드 생성](../test/media/cuit_datadriven_assertiongencode.png)
 
-     `ValidateSum` 메서드는 `AddNumbers` 메서드의 결과 유효성을 검사하므로 코드 블록 아래쪽으로 이동합니다.
+    `ValidateSum` 메서드는 `AddNumbers` 메서드의 결과 유효성을 검사하므로 코드 블록 아래쪽으로 이동합니다.
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSum();
-    }
-    ```
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSum();
+   }
+   ```
 
 9. `ValidateSum()` 메서드를 사용하여 테스트가 실행되는지 확인합니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 상황에 맞는 메뉴를 열고 **테스트 실행**을 선택합니다. (바로 가기 키: **Ctrl**+**R**,**T**).
 

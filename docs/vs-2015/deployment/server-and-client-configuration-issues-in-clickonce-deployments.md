@@ -23,12 +23,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948943"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "49231532"
   
  일부 웹 서버에.dll,.config 등.mdf 확장명의 파일을 차단할 수 있습니다. Windows 기반 응용 프로그램은 일반적으로 이러한 확장 중 일부를 사용 하 여 파일을 포함 합니다. 사용자가 실행 하려고 하는 경우는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 웹 서버에서 차단된 된 파일에 액세스 하는 응용 프로그램 오류가 발생 합니다. 모든 파일 확장명을 차단 해제 하는 대신 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 기본적으로 ".deploy" 파일 확장명을 사용 하 여 모든 응용 프로그램 파일을 게시 합니다. 따라서 관리자가 다음 세 개의 파일 확장명을 차단 해제 하도록 웹 서버를 구성 해야 하는 합니다.  
   
--   .application  
+- .application  
   
--   .manifest  
+- .manifest  
   
--   .deploy  
+- .deploy  
   
- 선택을 취소 하 여이 옵션을 해제할 수는 있지만 합니다 **".deploy" 파일 확장명을 사용 하 여** 옵션을 합니다 [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), 모든 파일 확장명을 차단 해제 하려면 웹 서버를 구성 해야 하는 경우 응용 프로그램에서 사용 합니다.  
+  선택을 취소 하 여이 옵션을 해제할 수는 있지만 합니다 **".deploy" 파일 확장명을 사용 하 여** 옵션을 합니다 [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), 모든 파일 확장명을 차단 해제 하려면 웹 서버를 구성 해야 하는 경우 응용 프로그램에서 사용 합니다.  
   
- IIS를 설치 하지 않은 위치를 사용 하는 경우.manifest,.application, 및.deploy, 예를 들어 구성 해야 합니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], 또는 다른 웹 서버 (예: Apache)를 사용 하는 경우.  
+  IIS를 설치 하지 않은 위치를 사용 하는 경우.manifest,.application, 및.deploy, 예를 들어 구성 해야 합니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], 또는 다른 웹 서버 (예: Apache)를 사용 하는 경우.  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce 및 Secure Sockets Layer (SSL)  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램이 작동 제대로 SSL을 통해 Internet Explorer에서 SSL 인증서에 대 한 프롬프트를 발생 하는 경우를 제외 하 고 있습니다. 프롬프트 만료 등 사이트 이름이 일치 하지 않는 경우 인증서 또는 인증서를 사용 하 여 문제가 있을 때 발생할 수 있습니다. 있도록 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] SSL 연결을 통해 작업, 인증서, 최신 되었고 인증서 데이터를 사이트 데이터와 일치 하는지 확인 합니다.  
@@ -122,11 +122,11 @@ ms.locfileid: "49231532"
   
  IIS 서버를 사용 하 여 배포 하는 경우 inetmgr.exe를 실행 하 고 기본 웹 페이지에 대 한 새 파일 형식을 추가 합니다.  
   
--   .Application 및.manifest 확장을 위한 MIME 형식을 "application/x-ms-응용 프로그램입니다." 여야 합니다. 다른 파일 형식에 대 한 MIME 형식을 "application/octet-stream으로 합니다.." 여야 합니다.  
+- .Application 및.manifest 확장을 위한 MIME 형식을 "application/x-ms-응용 프로그램입니다." 여야 합니다. 다른 파일 형식에 대 한 MIME 형식을 "application/octet-stream으로 합니다.." 여야 합니다.  
   
--   MIME 형식 확장을 사용 하 여 만든 경우 "*" 다운로드 파일 형식의 파일을 통해 MIME 형식이 "응용 프로그램/옥텟 스트림" 합니다. 그러나 (차단 된 파일 형식 예:.aspx 및.asmx를 다운로드할 수 없습니다.)  
+- MIME 형식 확장을 사용 하 여 만든 경우 "*" 다운로드 파일 형식의 파일을 통해 MIME 형식이 "응용 프로그램/옥텟 스트림" 합니다. 그러나 (차단 된 파일 형식 예:.aspx 및.asmx를 다운로드할 수 없습니다.)  
   
- Windows Server에서 MIME 형식 구성에 대 한 자세한 내용은 참조 Microsoft 기술 자료 문서 KB326965, "IIS 6.0에서는 제공 알 수 없는 MIME 형식이 아닌"에서 [ http://support.microsoft.com/default.aspx?scid=kb; en-우리; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)합니다.  
+  Windows Server에서 MIME 형식 구성에 대 한 자세한 내용은 참조 Microsoft 기술 자료 문서 KB326965, "IIS 6.0에서는 제공 알 수 없는 MIME 형식이 아닌"에서 [ http://support.microsoft.com/default.aspx?scid=kb; en-우리; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)합니다.  
   
 ## <a name="content-type-mappings"></a>콘텐츠 형식 매핑  
  .Application 파일에 대 한 콘텐츠 형식 (MIME 형식이 라고도 함)에 HTTP를 통해 게시 하는 경우 "application/x-ms-응용 프로그램입니다." 이어야 합니다. 있는 경우 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] 서버에 설치, 설정 됩니다를 자동으로 합니다. 이 설치 되지 않은 경우에 대 한 MIME 유형 연결을 만들어야 합니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 vroot (또는 전체 서버).  

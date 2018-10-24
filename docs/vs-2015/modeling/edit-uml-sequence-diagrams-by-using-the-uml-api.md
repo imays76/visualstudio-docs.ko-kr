@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941999"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>UML API를 사용하여 UML 시퀀스 다이어그램 편집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>상호 작용 및 해당 레이아웃 업데이트  
  상호 작용을 업데이트하는 경우 항상 다음 메서드 중 하나로 레이아웃을 업데이트하여 작업을 종료합니다.  
   
--   `ISequenceDiagram.UpdateShapePositions()` 최근에 삽입 되거나 이동 된 모양 및 인접 한 모양의 위치를 조정 합니다.  
+- `ISequenceDiagram.UpdateShapePositions()` 최근에 삽입 되거나 이동 된 모양 및 인접 한 모양의 위치를 조정 합니다.  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])`는 전체 다이어그램을 다시 그립니다. 매개 변수를 사용하여 수명선, 메시지 또는 둘 다의 위치 변경을 지정할 수 있습니다.  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])`는 전체 다이어그램을 다시 그립니다. 매개 변수를 사용하여 수명선, 메시지 또는 둘 다의 위치 변경을 지정할 수 있습니다.  
   
- 이 기능은 특히 새 요소를 삽입하거나 기존 요소를 이동할 때 중요합니다. 다음 작업 중 하나를 수행할 때까지 다이어그램에서 올바른 위치에 배치되지 않습니다. 일련의 변경을 마쳤을 때 다음 작업 중 하나를 한 번만 호출하면 됩니다.  
+  이 기능은 특히 새 요소를 삽입하거나 기존 요소를 이동할 때 중요합니다. 다음 작업 중 하나를 수행할 때까지 다이어그램에서 올바른 위치에 배치되지 않습니다. 일련의 변경을 마쳤을 때 다음 작업 중 하나를 한 번만 호출하면 됩니다.  
   
- 명령 후에 실행 취소를 수행하는 사용자가 당황하지 않도록 `ILinkedUndoTransaction`을 사용하여 변경 내용과 최종 `Layout()` 또는 `UpdateShapePositions()` 작업을 묶습니다. 예:  
+  명령 후에 실행 취소를 수행하는 사용자가 당황하지 않도록 `ILinkedUndoTransaction`을 사용하여 변경 내용과 최종 `Layout()` 또는 `UpdateShapePositions()` 작업을 묶습니다. 예:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

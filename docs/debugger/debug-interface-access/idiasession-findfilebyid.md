@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed79b65823c3a777c13a90331468074347425ef5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7c56d66a78b52e99aecb8cb744cc3d8465d0d243
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941414"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
-소스 파일 식별자도 소스 파일을 검색합니다.  
+원본 파일 식별자에서 소스 파일을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,13 +38,13 @@ HRESULT findFileById (
  [in] 소스 파일 식별자를 지정합니다.  
   
  `ppResult`  
- [out] 반환 된 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 소스 파일을 나타내는 개체를 검색 합니다.  
+ [out] 반환을 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 소스 파일을 나타내는 개체를 검색 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 소스 파일 식별자는 모든 소스 파일을 고유 하 게 DIA SDK를 내부적으로 사용 하는 고유한 값입니다. 이 메서드는 일반적으로 DIA SDK를 내부적으로 사용 됩니다.  
+ 소스 파일 식별자에는 모든 소스 파일을 고유 하 게 DIA SDK를 내부적으로 사용 되는 고유 값입니다. 이 메서드는 일반적으로 DIA SDK를 내부적으로 사용 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

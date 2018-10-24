@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935408"
 ---
 # <a name="relationships-in-datasets"></a>데이터 집합의 관계
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ ms.locfileid: "49275706"
   
  <xref:System.Data.DataRelation> 개체 두 기능을 수행 합니다.  
   
--   수 있도록 사용 가능한 사용 하는 레코드와 관련 레코드입니다. 자식 레코드는 부모 레코드의 경우 (<xref:System.Data.DataRow.GetChildRows%2A>) 및 자식 레코드를 사용 하 여 작업 하는 경우 부모 레코드 (<xref:System.Data.DataRow.GetParentRow%2A>).  
+- 수 있도록 사용 가능한 사용 하는 레코드와 관련 레코드입니다. 자식 레코드는 부모 레코드의 경우 (<xref:System.Data.DataRow.GetChildRows%2A>) 및 자식 레코드를 사용 하 여 작업 하는 경우 부모 레코드 (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   부모 레코드를 삭제 하면 관련 된 자식 레코드를 삭제 하는 등의 참조 무결성 제약 조건을 적용할 수 있습니다.  
+- 부모 레코드를 삭제 하면 관련 된 자식 레코드를 삭제 하는 등의 참조 무결성 제약 조건을 적용할 수 있습니다.  
   
- True는 조인 및의 기능 간의 차이점을 이해 해야는 <xref:System.Data.DataRelation> 개체입니다. True 조인 레코드는 부모 및 자식 테이블에서 가져온 및 단일 기본 레코드 집합에 배치 합니다. 사용 하는 경우는 <xref:System.Data.DataRelation> 개체에 없는 새 레코드 집합이 생성 됩니다. 대신, DataRelation 테이블 간의 관계를 추적 하 고 부모 및 자식 레코드를 동기화 하는 유지 합니다.  
+  True는 조인 및의 기능 간의 차이점을 이해 해야는 <xref:System.Data.DataRelation> 개체입니다. True 조인 레코드는 부모 및 자식 테이블에서 가져온 및 단일 기본 레코드 집합에 배치 합니다. 사용 하는 경우는 <xref:System.Data.DataRelation> 개체에 없는 새 레코드 집합이 생성 됩니다. 대신, DataRelation 테이블 간의 관계를 추적 하 고 부모 및 자식 레코드를 동기화 하는 유지 합니다.  
   
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation 개체 및 제약 조건  
  <xref:System.Data.DataRelation> 개체는 또한 만들고 다음 제약 조건을 적용 하는 데 사용 됩니다.  
   
--   중복 행을 포함 하는 테이블의 열을 보장 하는 고유 제약 합니다.  
+- 중복 행을 포함 하는 테이블의 열을 보장 하는 고유 제약 합니다.  
   
--   데이터 집합의 부모 및 자식 테이블 간에 참조 무결성을 유지 하기 위해 사용할 수 있는 외래 키 제약 합니다.  
+- 데이터 집합의 부모 및 자식 테이블 간에 참조 무결성을 유지 하기 위해 사용할 수 있는 외래 키 제약 합니다.  
   
- 지정 하는 제약 조건은 <xref:System.Data.DataRelation> 개체가 자동으로 해당 개체를 만들거나 속성을 설정 하 여 구현 됩니다. 사용 하 여 외래 키 제약 조건을 만든를 <xref:System.Data.DataRelation> 개체, 인스턴스를 <xref:System.Data.ForeignKeyConstraint> 클래스에 추가 되는 <xref:System.Data.DataRelation> 개체의 <xref:System.Data.DataRelation.ChildKeyConstraint%2A> 속성.  
+  지정 하는 제약 조건은 <xref:System.Data.DataRelation> 개체가 자동으로 해당 개체를 만들거나 속성을 설정 하 여 구현 됩니다. 사용 하 여 외래 키 제약 조건을 만든를 <xref:System.Data.DataRelation> 개체, 인스턴스를 <xref:System.Data.ForeignKeyConstraint> 클래스에 추가 되는 <xref:System.Data.DataRelation> 개체의 <xref:System.Data.DataRelation.ChildKeyConstraint%2A> 속성.  
   
- Unique 제약 조건을 구현 됩니다 설정 하 여 하나를 <xref:System.Data.DataColumn.Unique%2A> 데이터 열의 속성 `true` 의 인스턴스를 추가 하 여를 <xref:System.Data.UniqueConstraint> 클래스를 <xref:System.Data.DataRelation> 개체의 <xref:System.Data.DataRelation.ParentKeyConstraint%2A> 속성입니다. 참조 데이터 집합의 제약을 일시 중단에 대 한 내용은 [데이터 집합을 채우는 동안 제약 조건 해제](../data-tools/turn-off-constraints-while-filling-a-dataset.md)합니다.  
+  Unique 제약 조건을 구현 됩니다 설정 하 여 하나를 <xref:System.Data.DataColumn.Unique%2A> 데이터 열의 속성 `true` 의 인스턴스를 추가 하 여를 <xref:System.Data.UniqueConstraint> 클래스를 <xref:System.Data.DataRelation> 개체의 <xref:System.Data.DataRelation.ParentKeyConstraint%2A> 속성입니다. 참조 데이터 집합의 제약을 일시 중단에 대 한 내용은 [데이터 집합을 채우는 동안 제약 조건 해제](../data-tools/turn-off-constraints-while-filling-a-dataset.md)합니다.  
   
 ### <a name="referential-integrity-rules"></a>참조 무결성 규칙  
  외래 키 제약 조건의 일부로 세 지점에 적용 되는 참조 무결성 규칙을 지정할 수 있습니다.  
   
--   부모 레코드를 업데이트 하는 경우  
+- 부모 레코드를 업데이트 하는 경우  
   
--   부모 레코드를 삭제 하는 경우  
+- 부모 레코드를 삭제 하는 경우  
   
--   변경 허용 되는지 또는 거부 되는 경우  
+- 변경 허용 되는지 또는 거부 되는 경우  
   
- 수 있게 하는 규칙에 지정 된 된 <xref:System.Data.Rule> 열거형 되며 다음 표에 나열 된 합니다.  
+  수 있게 하는 규칙에 지정 된 된 <xref:System.Data.Rule> 열거형 되며 다음 표에 나열 된 합니다.  
   
 |외래 키 제약 조건 규칙|작업|  
 |----------------------------------|------------|  

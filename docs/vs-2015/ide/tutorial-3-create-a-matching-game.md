@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939500"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 일치 게임 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 자습서에서는 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드합니다. 여기에서는 다음과 같은 작업을 수행하는 방법에 대해 배우게 됩니다.  
   
--   아이콘과 같은 개체를 `List` 개체에 저장합니다.  
+- 아이콘과 같은 개체를 `List` 개체에 저장합니다.  
   
--   Visual C#의 `foreach` 루프 또는 Visual Basic의 `For Each` 루프를 사용하여 목록의 개체를 반복합니다.  
+- Visual C#의 `foreach` 루프 또는 Visual Basic의 `For Each` 루프를 사용하여 목록의 개체를 반복합니다.  
   
--   참조 변수를 사용하여 폼 상태를 추적합니다.  
+- 참조 변수를 사용하여 폼 상태를 추적합니다.  
   
--   여러 개체에 사용할 수 있는 이벤트에 응답하는 이벤트 처리기를 빌드합니다.  
+- 여러 개체에 사용할 수 있는 이벤트에 응답하는 이벤트 처리기를 빌드합니다.  
   
--   시작된 후 카운트다운을 실시하고 단 한 번만 이벤트를 발생시키는 타이머를 만듭니다.  
+- 시작된 후 카운트다운을 실시하고 단 한 번만 이벤트를 발생시키는 타이머를 만듭니다.  
   
- 이 자습서를 마치면 다음 그림과 같은 프로그램이 만들어집니다.  
+  이 자습서를 마치면 다음 그림과 같은 프로그램이 만들어집니다.  
   
- ![이 자습서에서 만드는 게임](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-이 자습서에서 만드는 게임  
+  ![이 자습서에서 만드는 게임](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  이 자습서에서 만드는 게임  
   
- 샘플의 전체 버전을 다운로드하려면 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)(전체 일치 게임 자습서 샘플)을 참조하세요.  
+  샘플의 전체 버전을 다운로드하려면 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)(전체 일치 게임 자습서 샘플)을 참조하세요.  
   
 > [!NOTE]
 >  이 자습서에는 Visual C#과 Visual Basic이 둘 다 설명되어 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.  

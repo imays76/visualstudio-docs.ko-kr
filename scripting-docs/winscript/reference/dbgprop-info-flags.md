@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_INFO_FLAGS | Microsoft Docs
+title: DBGPROP_INFO_FLAGS | Microsoft 문서
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9821cde6c159712ff44438b74eea0f8e01247155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941284"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 지정 하는 데 `DebugPropertyInfo` 필드  
@@ -61,10 +61,10 @@ enum {
  초기화는 `dwAttrib` 필드입니다.  
   
  DBGPROP_INFO_DEBUGPROP  
- 초기화는 `pDebugProp` 포함 된 필드는 `IDebugProperty` 인터페이스입니다.  
+ 초기화 된 `pDebugProp` 포함 된 필드는 `IDebugProperty` 인터페이스입니다.  
   
  DBGPROP_INFO_AUTOEXPAND  
- 값 필드는이 형식의 개체에 대 한 사용 가능한 경우 자동 확장 값이 포함 되어야 지정 합니다.  
+ 값 필드는이 형식의 개체에 대 한 사용 가능한 경우 자동 확장 값이 포함 됩니다 지정 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)   

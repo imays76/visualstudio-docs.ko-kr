@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 25bb1d9d26c9f5f4b4447af46cb48b5492429136
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c6f25aa6aa574f856bcce7601602ed2f195e785a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949541"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: serialization 메서드를 올바르게 구현하십시오.
 
@@ -49,7 +49,7 @@ ms.locfileid: "45549329"
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- 형식의 단일 매개 변수를 사용 하는 serialization 이벤트 처리기 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`, 있고 `private` 표시 합니다.
+  형식의 단일 매개 변수를 사용 하는 serialization 이벤트 처리기 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`, 있고 `private` 표시 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 시그니처, 반환 형식 또는 serialization 이벤트 처리기의 표시 여부를 수정 합니다.

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1d7bfbf2b12113bd7d80a6dd6af19b4470e30b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6419d2aa216f625aaf82087f0dc8f453e0d0d475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941843"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>방법: 빌드에서 프로젝트 제외
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "49242855"
   
  다음 방법을 사용하여 프로젝트를 제외할 수 있습니다.  
   
--   활성 솔루션 구성에서 일시적으로 제거  
+- 활성 솔루션 구성에서 일시적으로 제거  
   
--   해당 프로젝트를 포함하지 않는 솔루션 구성 만들기  
+- 해당 프로젝트를 포함하지 않는 솔루션 구성 만들기  
   
- 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.  
+  자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.  
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>활성 솔루션 구성에서 프로젝트를 일시적으로 제거하려면  
   

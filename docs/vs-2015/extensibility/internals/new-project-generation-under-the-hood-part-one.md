@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941229"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>새 프로젝트 생성: 내부 살펴보기, 1부
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>빠른 검토  
  수정 해 보겠습니다 합니다 **새 프로젝트** 대화 상자 및 새 사용자 프로젝트 템플릿 만들기.  
   
-1.  \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp 폴더로 MyProjectNode 하위 폴더를 추가 합니다.  
+1. \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp 폴더로 MyProjectNode 하위 폴더를 추가 합니다.  
   
-2.  임의의 텍스트 편집기를 사용 하 여 MyProjectNode 폴더에 MyProject.vstdir 파일을 만듭니다.  
+2. 임의의 텍스트 편집기를 사용 하 여 MyProjectNode 폴더에 MyProject.vstdir 파일을 만듭니다.  
   
-3.  .Vstdir 파일에 다음이 줄을 추가 합니다.  
+3. .Vstdir 파일에 다음이 줄을 추가 합니다.  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  저장 하 고.vstdir 파일을 닫습니다.  
+4. 저장 하 고.vstdir 파일을 닫습니다.  
   
-5.  임의의 텍스트 편집기를 사용 하 여 MyProjectNode 폴더에 MyProject.vstemplate 파일을 만듭니다.  
+5. 임의의 텍스트 편집기를 사용 하 여 MyProjectNode 폴더에 MyProject.vstemplate 파일을 만듭니다.  
   
-6.  .Vstemplate 파일에 다음이 줄을 추가 합니다.  
+6. .Vstemplate 파일에 다음이 줄을 추가 합니다.  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  The.vstemplate 파일을 저장 하 고 편집기를 닫습니다.  
+7. The.vstemplate 파일을 저장 하 고 편집기를 닫습니다.  
   
-8.  압축된 된 새 MyProjectNode\MyProject.zip 폴더에.vstemplate 파일을 보냅니다.  
+8. 압축된 된 새 MyProjectNode\MyProject.zip 폴더에.vstemplate 파일을 보냅니다.  
   
 9. Visual Studio 명령 창에서 다음을 입력 합니다.  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Visual Studio를 엽니다.  
+   Visual Studio를 엽니다.  
   
-1.  열기는 **새 프로젝트** 대화 상자 및 확장을 **Visual C#** 프로젝트 노드.  
+10. 열기는 **새 프로젝트** 대화 상자 및 확장을 **Visual C#** 프로젝트 노드.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode** 는 Windows 노드 바로 아래 Visual C#의 자식 노드로 표시 됩니다.  
+    **MyProjectNode** 는 Windows 노드 바로 아래 Visual C#의 자식 노드로 표시 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [새 프로젝트 생성: 내부 살펴보기, 2부](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

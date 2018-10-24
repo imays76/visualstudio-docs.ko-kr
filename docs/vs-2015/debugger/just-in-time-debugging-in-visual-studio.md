@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940583"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio에서 Just-In-Time 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Visual Studio Just-에-시간을 표시 하는 경우 수행 해야 하는 작�
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Just-In-Time 디버깅을 활성화하거나 비활성화하려면  
   
-1.  Visual Studio를 엽니다. **도구** 메뉴에서 **옵션**을 클릭합니다.  
+1. Visual Studio를 엽니다. **도구** 메뉴에서 **옵션**을 클릭합니다.  
   
-2.  에 **옵션** 대화 상자를 선택 합니다 **디버깅** 폴더입니다.  
+2. 에 **옵션** 대화 상자를 선택 합니다 **디버깅** 폴더입니다.  
   
-3.  에 **디버깅** 폴더를 선택 합니다 **Just In Time** 페이지입니다.  
+3. 에 **디버깅** 폴더를 선택 합니다 **Just In Time** 페이지입니다.  
   
-4.  에 **Just-In-Time 디버깅 사용 이러한 유형의 코드** 상자에서 선택 하거나 해당 프로그램 형식 선택을 취소: **관리 되는**, **네이티브**, 또는 **스크립트**.  
+4. 에 **Just-In-Time 디버깅 사용 이러한 유형의 코드** 상자에서 선택 하거나 해당 프로그램 형식 선택을 취소: **관리 되는**, **네이티브**, 또는 **스크립트**.  
   
-     활성화되어 있는 Just-In-Time 디버깅을 비활성화하려면 프로그램을 관리자 권한으로 실행해야 합니다. Just-In-Time 디버깅을 활성화하면 레지스트리 키가 설정되고 이 키를 변경하려면 관리자 권한이 있어야 합니다.  
+    활성화되어 있는 Just-In-Time 디버깅을 비활성화하려면 프로그램을 관리자 권한으로 실행해야 합니다. Just-In-Time 디버깅을 활성화하면 레지스트리 키가 설정되고 이 키를 변경하려면 관리자 권한이 있어야 합니다.  
   
-5.  **확인**을 클릭합니다.  
+5. **확인**을 클릭합니다.  
   
- 컴퓨터에 Visual Studio가 더 이상 설치되어 있지 않아도 Just-In-Time 디버깅은 계속 활성화되어 있습니다. Visual Studio 설치 되어 있지 않으면 Just In Time Visual Studio에서 디버깅을 비활성화할 수 없습니다 **옵션** 대화 상자. 이 경우 Windows 레지스트리를 편집하여 Just-In-Time 디버깅을 비활성화할 수 있습니다.  
+   컴퓨터에 Visual Studio가 더 이상 설치되어 있지 않아도 Just-In-Time 디버깅은 계속 활성화되어 있습니다. Visual Studio 설치 되어 있지 않으면 Just In Time Visual Studio에서 디버깅을 비활성화할 수 없습니다 **옵션** 대화 상자. 이 경우 Windows 레지스트리를 편집하여 Just-In-Time 디버깅을 비활성화할 수 있습니다.  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>레지스트리를 편집하여 Just-In-Time 디버깅을 비활성화하려면  
   

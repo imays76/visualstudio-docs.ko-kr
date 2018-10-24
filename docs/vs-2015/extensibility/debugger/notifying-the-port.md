@@ -15,27 +15,27 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4faaea47196e6d247aa62c5a9d067970ddeaaec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937072"
 ---
 # <a name="notifying-the-port"></a>포트에 알림
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 프로그램을 시작한 후 포트 알려야, 다음과 같습니다.  
   
-1.  포트를 새 프로그램 노드를 수신 하면 디버그 세션에 다시 프로그램 생성 이벤트를 보냅니다. 이벤트에는 저마다 프로그램을 나타내는 인터페이스입니다.  
+1. 포트를 새 프로그램 노드를 수신 하면 디버그 세션에 다시 프로그램 생성 이벤트를 보냅니다. 이벤트에는 저마다 프로그램을 나타내는 인터페이스입니다.  
   
-2.  디버그 세션에 연결할 수 있는 디버그 엔진 (DE)의 식별자에 대 한 프로그램을 쿼리 합니다.  
+2. 디버그 세션에 연결할 수 있는 디버그 엔진 (DE)의 식별자에 대 한 프로그램을 쿼리 합니다.  
   
-3.  디버그 세션은 해당 프로그램에 대 한 허용 되는 DEs 목록에는 DE 인지를 확인 합니다. 디버그 세션 디버그 패키지로 전달 된 원래 솔루션의 활성 프로그램 설정에서이 목록을 가져옵니다.  
+3. 디버그 세션은 해당 프로그램에 대 한 허용 되는 DEs 목록에는 DE 인지를 확인 합니다. 디버그 세션 디버그 패키지로 전달 된 원래 솔루션의 활성 프로그램 설정에서이 목록을 가져옵니다.  
   
-     허용 되는 목록에는 DE 이어야 합니다. 그렇지 않으면는 DE 프로그램에 연결 되지 않습니다.  
+    허용 되는 목록에는 DE 이어야 합니다. 그렇지 않으면는 DE 프로그램에 연결 되지 않습니다.  
   
- 프로그래밍 방식으로 포트를 프로그램에 새 노드를 먼저 받으면 만듭니다는 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 프로그램을 나타내는 인터페이스입니다.  
+   프로그래밍 방식으로 포트를 프로그램에 새 노드를 먼저 받으면 만듭니다는 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 프로그램을 나타내는 인터페이스입니다.  
   
 > [!NOTE]
 >  이 혼동 하지는 `IDebugProgram2` 디버그 엔진 (DE)에 의해 나중에 생성 된 인터페이스입니다.  
