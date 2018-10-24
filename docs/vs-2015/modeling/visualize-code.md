@@ -18,29 +18,29 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82ce653eda1ec074f050809845610fbc1ab1bc0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833660"
 ---
 # <a name="visualize-code"></a>코드 시각화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를 이해하고 응용 프로그램을 설명할 수 있습니다. 이렇게 하면 변경 내용이 코드에 미치는 영향을 시각적으로 알아보고 작업 및 해당 변경 내용으로 인한 위험을 평가할 수 있습니다. 예:  
   
--   코드의 관계를 이해하려면 해당 관계를 시각적으로 매핑합니다.  
+- 코드의 관계를 이해하려면 해당 관계를 시각적으로 매핑합니다.  
   
--   시스템의 아키텍처를 설명하고 코드와 디자인의 일관성을 유지하려면 레이어 다이어그램을 만들고 이러한 다이어그램에 대해 코드의 유효성을 검사합니다.  
+- 시스템의 아키텍처를 설명하고 코드와 디자인의 일관성을 유지하려면 레이어 다이어그램을 만들고 이러한 다이어그램에 대해 코드의 유효성을 검사합니다.  
   
--   클래스 구조를 설명하려면 클래스 다이어그램을 만듭니다.  
+- 클래스 구조를 설명하려면 클래스 다이어그램을 만듭니다.  
   
--   시스템의 다양한 측면을 모델링하고 전달하려면 UML(Unified Modeling Language) 다이어그램을 그립니다. 예를 들어 시스템의 구성 요소, 형식, 상호 작용 및 프로세스를 모델링할 수 있습니다.  
+- 시스템의 다양한 측면을 모델링하고 전달하려면 UML(Unified Modeling Language) 다이어그램을 그립니다. 예를 들어 시스템의 구성 요소, 형식, 상호 작용 및 프로세스를 모델링할 수 있습니다.  
   
- 또한 이러한 도구는 프로젝트에 관련된 사용자와 보다 쉽게 커뮤니케이션하는 데 도움이 됩니다. 예를 들어 UML 클래스 다이어그램을 사용하여 프로젝트 이해 관계자, 사용자 및 팀 멤버와 시스템을 논의하기 위한 일반 용어집을 만들 수 있습니다.  
+  또한 이러한 도구는 프로젝트에 관련된 사용자와 보다 쉽게 커뮤니케이션하는 데 도움이 됩니다. 예를 들어 UML 클래스 다이어그램을 사용하여 프로젝트 이해 관계자, 사용자 및 팀 멤버와 시스템을 논의하기 위한 일반 용어집을 만들 수 있습니다.  
   
- 각 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
+  각 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.  
   

@@ -16,55 +16,55 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830758"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>격리 셸 진입점 매개 변수 (c + +)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 셸 기반 응용 프로그램을 시작 하는 경우 Visual Studio shell의 시작 진입점을 호출 합니다. 셸 시작 진입점에 대 한 호출에서 다음 설정은 재정의할 수 있습니다. 각 설정에 대 한 참조 [합니다. Pkgdef 파일](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)합니다.  
   
--   AddinsAllowed  
+- AddinsAllowed  
   
--   AllowsDroppedFilesOnMainWindow  
+- AllowsDroppedFilesOnMainWindow  
   
--   응용 프로그램 이름  
+- 응용 프로그램 이름  
   
--   CommandLineLogo  
+- CommandLineLogo  
   
--   DefaultHomePage  
+- DefaultHomePage  
   
--   DefaultProjectsLocation  
+- DefaultProjectsLocation  
   
--   DefaultSearchPage  
+- DefaultSearchPage  
   
--   DefaultUserFilesFolderRoot  
+- DefaultUserFilesFolderRoot  
   
--   DisableOutputWindow  
+- DisableOutputWindow  
   
--   HideMiscellaneousFilesByDefault  
+- HideMiscellaneousFilesByDefault  
   
--   HideSolutionConcept  
+- HideSolutionConcept  
   
--   NewProjDlgInstalledTemplatesHdr  
+- NewProjDlgInstalledTemplatesHdr  
   
--   NewProjDlgSlnTreeNodeTitle  
+- NewProjDlgSlnTreeNodeTitle  
   
--   SolutionFileCreatorIdentifier  
+- SolutionFileCreatorIdentifier  
   
--   SolutionFileExt  
+- SolutionFileExt  
   
--   UserFilesSubFolderName  
+- UserFilesSubFolderName  
   
--   UserOptsFileExt  
+- UserOptsFileExt  
   
- Visual Studio Shell 격리 템플릿은 소스 파일을 만듭니다 *solutionName*.cpp, 여기서 *solutionName* 응용 프로그램에 대 한 솔루션 이름입니다. 이 파일은 _tWinMain 함수 응용 프로그램에 대 한 주 진입점을 정의 합니다. 이 함수는 셸 시작 진입점을 호출합니다.  
+  Visual Studio Shell 격리 템플릿은 소스 파일을 만듭니다 *solutionName*.cpp, 여기서 *solutionName* 응용 프로그램에 대 한 솔루션 이름입니다. 이 파일은 _tWinMain 함수 응용 프로그램에 대 한 주 진입점을 정의 합니다. 이 함수는 셸 시작 진입점을 호출합니다.  
   
- 응용 프로그램을 시작 하는 경우 이러한 설정을 변경 하 여 응용 프로그램의 동작을 변경할 수 있습니다.  
+  응용 프로그램을 시작 하는 경우 이러한 설정을 변경 하 여 응용 프로그램의 동작을 변경할 수 있습니다.  
   
 ## <a name="parameters"></a>매개 변수  
  Visual Studio shell의 시작 진입점 5 개의 매개 변수를 정의합니다. 처음 네 개의 매개 변수를 변경 하지 마세요. 다섯 번째 매개 변수는 설정 재정의 목록입니다. 셸 시작 진입점은 응용 프로그램의 주 진입점에서 호출 됩니다.  

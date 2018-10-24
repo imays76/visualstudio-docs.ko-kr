@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c6550e4d9af994be1b703b56ab91cb33e6fdf5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824220"
 ---
 # <a name="utilization-navigator"></a>사용률 탐색기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49238591"
   
  사용률 탐색기를 사용해서 표시된 시간 범위를 조작하는 방법은 다음과 같습니다.  
   
--   엄지 단추를 왼쪽 또는 오른쪽으로 끌어서 이동할 수 있습니다. (키보드: 엄지 단추에 포커스를 이동한 다음 왼쪽 또는 오른쪽 화살표 키를 누릅니다.)  
+- 엄지 단추를 왼쪽 또는 오른쪽으로 끌어서 이동할 수 있습니다. (키보드: 엄지 단추에 포커스를 이동한 다음 왼쪽 또는 오른쪽 화살표 키를 누릅니다.)  
   
--   핸들 중 하나를 끌어서 간격을 변경할 수 있습니다. (키보드: 핸들에 포커스를 이동한 다음 왼쪽 또는 오른쪽 화살표 키를 누릅니다.)  
+- 핸들 중 하나를 끌어서 간격을 변경할 수 있습니다. (키보드: 핸들에 포커스를 이동한 다음 왼쪽 또는 오른쪽 화살표 키를 누릅니다.)  
   
- 다른 동시성 시각화 도우미 확대/축소 컨트롤을 사용하여 간격을 변경하면 사용률 탐색기가 변경 내용을 반영하도록 업데이트됩니다.
+  다른 동시성 시각화 도우미 확대/축소 컨트롤을 사용하여 간격을 변경하면 사용률 탐색기가 변경 내용을 반영하도록 업데이트됩니다.
 
 
 

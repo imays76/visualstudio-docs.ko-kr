@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abc8657f57ad58f8a6c259b38e98c34455019186
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5304c77dd772a1aa74b90d89df7eb73361ab7561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836803"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
-기호의 자식을 검색합니다. 반환 되는 로컬 기호에서 최적화 프로그램은 컴파일된 경우 라이브 범위 정보를 포함 합니다.  
+기호의 자식을 검색합니다. 프로그램에서 최적화를 사용 하 여 컴파일된 경우 라이브 범위 정보를 포함 하는 반환 되는 로컬 기호입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,19 +37,19 @@ HRESULT findChildrenEx (
   
 #### <a name="parameters"></a>매개 변수  
  `symtag`  
- [in] 에 정의 된 대로 자식 노드를 검색할 수 기호 태그 지정의 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)합니다. 로 설정 `SymTagNull` 를 검색할 수 있는 모든 자식에 대 한 합니다.  
+ [in] 에 정의 된 대로 검색 되는 자식의 기호 태그를 지정 합니다 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)합니다. 로 `SymTagNull` 검색할 모든 자식에 대 한 합니다.  
   
  `name`  
- [in] 검색할 하위 항목의 이름을 지정 합니다. 로 설정 `NULL` 를 검색할 수 있는 모든 자식에 대 한 합니다.  
+ [in] 검색할 자식 컨트롤의 이름을 지정 합니다. 로 `NULL` 검색할 모든 자식에 대 한 합니다.  
   
  `compareFlags`  
- [in] 이름 일치에 적용할 비교 옵션을 지정 합니다. 값의 [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형 따로 또는 함께 사용할 수 있습니다.  
+ [in] 이름 일치에 적용할 비교 옵션을 지정 합니다. 값을 [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형 따로 또는 함께 사용할 수 있습니다.  
   
  `ppResult`  
- [out] 반환 된 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 자식 기호 목록이 포함 된 개체를 검색 합니다.  
+ [out] 반환 된 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 자식 기호 목록을 포함 하는 개체 검색 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 반환 `S_OK` 기호의 자식이 하나 이상 발견 되었습니다 하거나 반환 하는 경우 `S_FALSE` 자식이 발견 되는 경우; 그러지 않으면 오류 코드가 반환 됩니다.  
+ 반환 `S_OK` 기호의 자식이 하나 이상 찾을 하거나 반환 하는 경우 `S_FALSE` 자식이 없는 경우; 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
  이 메서드는 확장 된 버전의 [idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)합니다.  
