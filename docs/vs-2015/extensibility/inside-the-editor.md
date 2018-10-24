@@ -15,12 +15,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55bd1e82af3e87fc7845bd122794888a24ca7f02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c8589afcd64e62e2869283cb4d2a25835b672e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870590"
 ---
 # <a name="inside-the-editor"></a>편집기 기본 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,42 +29,42 @@ ms.locfileid: "49251968"
   
  이 섹션에서는 편집기의 다양 한 측면을 설명합니다.  
   
--   [하위 시스템 개요](../extensibility/inside-the-editor.md#overview)  
+- [하위 시스템 개요](../extensibility/inside-the-editor.md#overview)  
   
--   [텍스트 모델](../extensibility/inside-the-editor.md#textmodel)  
+- [텍스트 모델](../extensibility/inside-the-editor.md#textmodel)  
   
--   [텍스트 보기](../extensibility/inside-the-editor.md#textview)  
+- [텍스트 보기](../extensibility/inside-the-editor.md#textview)  
   
- 이 섹션에서는 편집기의 기능을 설명합니다.  
+  이 섹션에서는 편집기의 기능을 설명합니다.  
   
--   [태그 및 분류자](../extensibility/inside-the-editor.md#tagsandclassifiers)  
+- [태그 및 분류자](../extensibility/inside-the-editor.md#tagsandclassifiers)  
   
--   [선의 도구 영역](../extensibility/inside-the-editor.md#adornments)  
+- [선의 도구 영역](../extensibility/inside-the-editor.md#adornments)  
   
--   [프로젝션](../extensibility/inside-the-editor.md#projection)  
+- [프로젝션](../extensibility/inside-the-editor.md#projection)  
   
--   [개요](../extensibility/inside-the-editor.md#outlining)  
+- [개요](../extensibility/inside-the-editor.md#outlining)  
   
--   [마우스 바인딩](../extensibility/inside-the-editor.md#mousebindings)  
+- [마우스 바인딩](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [편집기 작업](../extensibility/inside-the-editor.md#editoroperations)  
+- [편집기 작업](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ##  <a name="overview"></a> 하위 시스템 개요  
   
 ### <a name="text-model-subsystem"></a>텍스트 모델 하위 시스템  
  텍스트 모델 하위 시스템은 텍스트를 나타내고 해당 조작을 사용 하도록 설정 하는 일을 담당 합니다. 텍스트 모델 하위 시스템 포함을 <xref:Microsoft.VisualStudio.Text.ITextBuffer> 편집기에서 표시 되는 문자 시퀀스를 설명 하는 인터페이스입니다. 이 텍스트 수정, 추적 및 여러 가지 방법으로 조작할 수 있습니다. 텍스트 모델 다음 측면에 대 한 형식을 제공합니다.  
   
--   텍스트 파일을 연결 하 고 읽기 및 쓰기 파일 시스템에서 관리 하는 서비스입니다.  
+- 텍스트 파일을 연결 하 고 읽기 및 쓰기 파일 시스템에서 관리 하는 서비스입니다.  
   
--   차이점 보관용 사용 하는 서비스 개체의 두 시퀀스 간의 최소 차이점이 발견입니다.  
+- 차이점 보관용 사용 하는 서비스 개체의 두 시퀀스 간의 최소 차이점이 발견입니다.  
   
--   다른 버퍼에 있는 텍스트의 하위 집합 측면에서 버퍼에 텍스트를 설명 하는 데 사용 되는 시스템입니다.  
+- 다른 버퍼에 있는 텍스트의 하위 집합 측면에서 버퍼에 텍스트를 설명 하는 데 사용 되는 시스템입니다.  
   
- 텍스트 모델 하위 시스템은 사용자 인터페이스 (UI) 개념의 무료입니다. 예를 들어는 텍스트 서식 지정 또는 텍스트 레이아웃을 처리 하지 않습니다 하 고 텍스트를 사용 하 여 연결할 수 있는 시각적 장식 알지 합니다.  
+  텍스트 모델 하위 시스템은 사용자 인터페이스 (UI) 개념의 무료입니다. 예를 들어는 텍스트 서식 지정 또는 텍스트 레이아웃을 처리 하지 않습니다 하 고 텍스트를 사용 하 여 연결할 수 있는 시각적 장식 알지 합니다.  
   
- 텍스트 모델 하위 시스템의 공용 형식에 Microsoft.VisualStudio.Text.Data.dll Microsoft.VisualStudio.CoreUtilitiy.dll,.NET Framework 기본 클래스 라이브러리는 Framework MEF (Managed Extensibility)에 의존 하는 포함 됩니다.  
+  텍스트 모델 하위 시스템의 공용 형식에 Microsoft.VisualStudio.Text.Data.dll Microsoft.VisualStudio.CoreUtilitiy.dll,.NET Framework 기본 클래스 라이브러리는 Framework MEF (Managed Extensibility)에 의존 하는 포함 됩니다.  
   
 ### <a name="text-view-subsystem"></a>텍스트 뷰 하위 시스템  
  텍스트 뷰 하위 시스템은 서식 지정 및 텍스트를 표시 하는 일을 담당 합니다. 이 하위 시스템의 형식은 형식을 Windows Presentation Foundation (WPF)를 사용 하는 여부에 따라 두 계층으로 나뉩니다. 가장 중요 한 유형은 <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 고 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, 표시 되는 텍스트 줄 집합 캐럿, 선택 및 WPF UI 요소를 사용 하 여 텍스트를 표시 하기 위한 기능을 제어 하는 합니다. 이 하위 시스템은 또한 텍스트 주위에 여백을 표시 영역을 제공 합니다. 이러한 여백, 확장할 수 있으며 다양 한 종류의 콘텐츠 및 시각적 효과 포함할 수 있습니다. 여백에 줄 번호 표시 및 스크롤 막대는 있습니다.  

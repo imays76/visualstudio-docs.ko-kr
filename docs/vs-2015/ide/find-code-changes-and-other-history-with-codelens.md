@@ -14,12 +14,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825675"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,46 +42,46 @@ ms.locfileid: "49224966"
 ##  <a name="FindReferences"></a> 코드에 대한 참조 찾기  
  필요한 사항:  
   
--   Visual Studio Enterprise 또는 Visual Studio Professional  
+- Visual Studio Enterprise 또는 Visual Studio Professional  
   
--   Visual C# .NET 또는 Visual Basic .NET 코드  
+- Visual C# .NET 또는 Visual Basic .NET 코드  
   
- **참조** 지표를 선택합니다(**Alt + 2**). **0 참조**가 표시된 경우 Visual C# 또는 Visual Basic 코드의 참조가 없습니다. 여기에 XAML, ASPX 파일 등 다른 항목의 참조는 포함되지 않습니다.  
+  **참조** 지표를 선택합니다(**Alt + 2**). **0 참조**가 표시된 경우 Visual C# 또는 Visual Basic 코드의 참조가 없습니다. 여기에 XAML, ASPX 파일 등 다른 항목의 참조는 포함되지 않습니다.  
   
- ![CodeLens &#45; 참조 지표 선택](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
+  ![CodeLens &#45; 참조 지표 선택](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
   
- 참조 코드를 보려면 참조 상단으로 마우스를 이동합니다.  
+  참조 코드를 보려면 참조 상단으로 마우스를 이동합니다.  
   
- ![CodeLens &#45; 참조 피킹(Peeking)](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+  ![CodeLens &#45; 참조 피킹(Peeking)](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
- 참조가 포함된 파일을 열려면 참조를 두 번 클릭합니다.  
+  참조가 포함된 파일을 열려면 참조를 두 번 클릭합니다.  
   
- 이 코드와 해당 참조 간의 관계를 확인하려면 [코드 맵을 만들고](../modeling/map-dependencies-across-your-solutions.md) 코드 맵 바로 가기 메뉴에서 **모든 참조 표시**를 선택합니다.  
+  이 코드와 해당 참조 간의 관계를 확인하려면 [코드 맵을 만들고](../modeling/map-dependencies-across-your-solutions.md) 코드 맵 바로 가기 메뉴에서 **모든 참조 표시**를 선택합니다.  
   
- ![CodeLens &#45; 코드 맵의 참조](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
+  ![CodeLens &#45; 코드 맵의 참조](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
   
 ##  <a name="FindCodeHistory"></a> 코드 기록 및 링크된 항목 찾기  
  코드 기록을 검토하여 코드에 수행된 작업을 확인합니다. 또는 다른 분기의 변경 내용이 코드에 어떤 영향을 미칠 수 있는지 잘 파악할 수 있도록 변경 내용을 코드에 병합하기 전에 검토합니다.  
   
  필요한 사항:  
   
--   Visual Studio Enterprise 또는 Visual Studio Professional  
+- Visual Studio Enterprise 또는 Visual Studio Professional  
   
--   Team Foundation Server 2013 이상, Visual Studio Team Services 또는 Git  
+- Team Foundation Server 2013 이상, Visual Studio Team Services 또는 Git  
   
--   코드 편집기에서 팀에 연락하려는 경우[Lync 2010 이상 또는 비즈니스용 Skype](http://technet.microsoft.com/lync)  
+- 코드 편집기에서 팀에 연락하려는 경우[Lync 2010 이상 또는 비즈니스용 Skype](http://technet.microsoft.com/lync)  
   
- TFVC(Team Foundation 버전 제어) 또는 Git로 저장된 Visual C# .NET 또는 Visual Basic .NET 코드의 경우 클래스 및 메서드 수준에서 CodeLens 세부 정보를 가져옵니다(*code-element-level* 지표). Git 리포지토리가 TfGit에서 호스트되는 경우 TFS 작업 항목에 대한 링크도 가져올 수 있습니다.  
+  TFVC(Team Foundation 버전 제어) 또는 Git로 저장된 Visual C# .NET 또는 Visual Basic .NET 코드의 경우 클래스 및 메서드 수준에서 CodeLens 세부 정보를 가져옵니다(*code-element-level* 지표). Git 리포지토리가 TfGit에서 호스트되는 경우 TFS 작업 항목에 대한 링크도 가져올 수 있습니다.  
   
- ![코드 요소 수준 지표](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+  ![코드 요소 수준 지표](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
- Visual Studio 편집기에서 열 수 있는 기타 모든 파일 형식의 경우 창 맨 아래의 한 지점에서(*파일-수준* 지표) 전체 파일에 대한 CodeLens 세부 정보를 가져옵니다.  
+  Visual Studio 편집기에서 열 수 있는 기타 모든 파일 형식의 경우 창 맨 아래의 한 지점에서(*파일-수준* 지표) 전체 파일에 대한 CodeLens 세부 정보를 가져옵니다.  
   
- ![파일 수준 CodeLens 지표](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+  ![파일 수준 CodeLens 지표](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
- 키보드를 사용하여 지표를 선택하려면 **ALT** 키를 길게 눌러 관련 숫자 키를 표시합니다.  
+  키보드를 사용하여 지표를 선택하려면 **ALT** 키를 길게 눌러 관련 숫자 키를 표시합니다.  
   
- ![Alt 키를 눌러 키보드 액세스 번호 보기](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+  ![Alt 키를 눌러 키보드 액세스 번호 보기](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>코드에서 변경 내용 찾기  
  코드-요소-수준 지표에서 C# 또는 Visual Basic 코드를 변경한 사람 및 변경 내용을 찾습니다. Team Foundation Server 또는 Visual Studio Team Services에서 TFVC(Team Foundation 버전 제어)를 사용하는 경우에 표시됩니다.  
@@ -243,11 +243,11 @@ ms.locfileid: "49224966"
   
  **어떤 Lync 및 Skype 구성이 지원되나요?**  
   
--   비즈니스용 Skype(32비트 또는 64비트)  
+- 비즈니스용 Skype(32비트 또는 64비트)  
   
--   Lync 2010 이상 독립형(32비트 또는 64비트) 단, Windows 8.1의 Lync Basic 2013 제외  
+- Lync 2010 이상 독립형(32비트 또는 64비트) 단, Windows 8.1의 Lync Basic 2013 제외  
   
- CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하지 않습니다. 다른 버전의 Lync 또는 Skype는 Visual Studio의 모든 지역화된 버전에 지역화되지 않을 수 있습니다.  
+  CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하지 않습니다. 다른 버전의 Lync 또는 Skype는 Visual Studio의 모든 지역화된 버전에 지역화되지 않을 수 있습니다.  
   
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Q: CodeLens의 글꼴과 색을 변경하려면 어떻게 해야 하나요?  
  **A:** **도구**, **옵션**, **환경**, **글꼴 및 색**으로 이동합니다.  

@@ -15,18 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f52fccf640cca32d4291b3d6fb8626c38370ded3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e776c91e68e4689c1cc6c54f17397eca495b493
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832660"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
-중지 된 상태에서이 프로그램을 실행을 계속 합니다. 이전 실행 상태 (예: 단계)는 유지, 프로그램 실행을 다시 시작 합니다.  
+중지 된 상태에서이 프로그램 실행을 계속 합니다. 이전 실행 상태 (예: 단계)은 유지, 프로그램이 다시 실행을 시작 하 고 있습니다.  
   
 > [!NOTE]
->  이 메서드는 사용 되지 않습니다. 사용 하 여 [계속](../../../extensibility/debugger/reference/idebugprocess3-continue.md) 메서드 대신 합니다.  
+>  이 메서드는 사용 되지 않습니다. 사용 된 [계속](../../../extensibility/debugger/reference/idebugprocess3-continue.md) 메서드 대신 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,13 +47,13 @@ int Continue(
  [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 스레드를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 디버깅 중인 프로그램 수, 또는 중지 이벤트를 생성 하는 응용 프로그램에 관계 없이이 프로그램에 호출 됩니다. 구현 (예: 단계) 이전 실행 상태를 유지 하 고의 이전 실행을 완료 하기 전에 중지 되지 것 처럼 계속 실행 해야 합니다. 즉,이 프로그램에 한 단계씩 작업 수행 되 던 스레드와 다른 프로그램이 중지 하 고이 메서드가 호출 된 후 중지 되었습니다, 프로그램 원래의 단계씩 작업을 완료 해야 합니다.  
+ 이 메서드는 디버깅 중인 프로그램 수 또는 중지 이벤트를 생성 하는 프로그램에 관계 없이이 프로그램에서 호출 됩니다. 구현 (예: 단계)를 실행 상태로 유지 하 고 이전 실행을 완료 하기 전에 중지 되지 것 처럼 계속 실행 해야 합니다. 즉,이 프로그램에서 스레드 건너뛰기 작업을 수행 중 이었던 작업 및 다른 프로그램 중지 하 고이 메서드를 호출한 다음 중지 되었습니다, 프로그램이 원래 건너뛰기 작업을 완료 해야 합니다.  
   
 > [!WARNING]
->  Stopping 이벤트 또는 즉시 (동기) 이벤트를 보내지 않음 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 이 호출을 처리 하는 동안 그렇지 않은 경우 디버거가 중단 될 수 있습니다.  
+>  Stopping 이벤트 또는 직접 (동기) 이벤트를 전송 하지 마십시오 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 이 호출을 처리 하는 동안 그렇지 않은 경우 디버거가 중단 될 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850518"
 ---
 # <a name="options-text-editor-c-advanced"></a>옵션, 텍스트 편집기, C#, 고급
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Visual C#의 편집기 서식, 코드 리팩터링 및 XML 문서 주석에 대�
  편집기에서 오류에 밑줄 표시  
  코드에서 빌드 오류를 식별합니다. 이 옵션을 선택하면 물결선 밑줄이 특정 의미가 있는 색으로 표시됩니다.  
   
--   구문 분석 오류는 빨강입니다.  
+- 구문 분석 오류는 빨강입니다.  
   
--   빌드 오류는 파랑입니다.  
+- 빌드 오류는 파랑입니다.  
   
--   빌드 경고는 녹색입니다.  
+- 빌드 경고는 녹색입니다.  
   
--   잘못된 [편집하며 계속하기](../../debugger/edit-and-continue.md) 편집은 자주입니다.  
+- 잘못된 [편집하며 계속하기](../../debugger/edit-and-continue.md) 편집은 자주입니다.  
   
- 밑줄 표시된 코드 세그먼트 위로 포인터를 이동하면 오류에 대한 정보가 있는 도구 설명이 표시됩니다.  
+  밑줄 표시된 코드 세그먼트 위로 포인터를 이동하면 오류에 대한 정보가 있는 도구 설명이 표시됩니다.  
   
- 라이브 의미 오류 표시  
- 알 수 없는 형식을 선언 및 사용하거나 알 수 없는 속성을 참조하는 것과 같이 명시적 컴파일 없이 특정 컴파일 오류를 식별합니다.  
+  라이브 의미 오류 표시  
+  알 수 없는 형식을 선언 및 사용하거나 알 수 없는 속성을 참조하는 것과 같이 명시적 컴파일 없이 특정 컴파일 오류를 식별합니다.  
   
- 커서 아래의 기호에 대한 참조 강조  
- 기호 내부에 커서를 놓거나 기호를 클릭하면 코드 파일에 있는 해당 기호의 모든 인스턴스가 강조 표시됩니다.  
+  커서 아래의 기호에 대한 참조 강조  
+  기호 내부에 커서를 놓거나 기호를 클릭하면 코드 파일에 있는 해당 기호의 모든 인스턴스가 강조 표시됩니다.  
   
 ## <a name="refactoring"></a>리팩터링  
  리팩터링 결과 확인  

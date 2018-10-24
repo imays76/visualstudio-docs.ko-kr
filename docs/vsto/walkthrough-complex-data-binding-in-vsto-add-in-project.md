@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd034f4802679daa442f04b469a37f04d580ea94
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: da2ddc582c6555e8ec4567f4faace603f6f0f677
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872488"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 복합 데이터 바인딩
   VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨트롤에 데이터를 바인딩할 수 있습니다. 이 연습에서는 Microsoft Office Excel 워크시트에 컨트롤을 추가하고 런타임에 컨트롤을 데이터에 바인딩하는 방법을 보여 줍니다.
@@ -31,11 +31,11 @@ ms.locfileid: "36758942"
 
  이 연습에서는 다음 작업을 수행합니다.
 
--   추가 된 <xref:Microsoft.Office.Tools.Excel.ListObject> 런타임에 워크시트에 컨트롤입니다.
+- 추가 된 <xref:Microsoft.Office.Tools.Excel.ListObject> 런타임에 워크시트에 컨트롤입니다.
 
--   컨트롤을 데이터 집합 인스턴스에 연결하는 <xref:System.Windows.Forms.BindingSource> 만들기
+- 컨트롤을 데이터 집합 인스턴스에 연결하는 <xref:System.Windows.Forms.BindingSource> 만들기
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>전제 조건
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
@@ -66,27 +66,27 @@ ms.locfileid: "36758942"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>프로젝트에 형식화된 데이터 집합을 추가하려면
 
-1.  경우는 **데이터 원본** 창이 표시 되지 않으면, 메뉴 모음에 의해 표시 **뷰** > **기타 Windows**  >   **데이터 원본**합니다.
+1. 경우는 **데이터 원본** 창이 표시 되지 않으면, 메뉴 모음에 의해 표시 **뷰** > **기타 Windows**  >   **데이터 원본**합니다.
 
-2.  **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
+2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
 
-3.  **데이터베이스**를 클릭하고 **다음**을 클릭합니다.
+3. **데이터베이스**를 클릭하고 **다음**을 클릭합니다.
 
-4.  `AdventureWorksLT` 데이터베이스에 대한 기존 연결이 있는 경우 이 연결을 선택하고 **다음**을 클릭합니다.
+4. `AdventureWorksLT` 데이터베이스에 대한 기존 연결이 있는 경우 이 연결을 선택하고 **다음**을 클릭합니다.
 
-     그렇지 않은 경우 **새 연결**을 클릭하고 **연결 추가** 대화 상자를 사용하여 새 연결을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)합니다.
+    그렇지 않은 경우 **새 연결**을 클릭하고 **연결 추가** 대화 상자를 사용하여 새 연결을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)합니다.
 
-5.  **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지에서 **다음**을 클릭합니다.
+5. **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지에서 **다음**을 클릭합니다.
 
-6.  **데이터베이스 개체 선택** 페이지에서 **테이블** 을 확장하고 **Address(SalesLT)** 를 선택합니다.
+6. **데이터베이스 개체 선택** 페이지에서 **테이블** 을 확장하고 **Address(SalesLT)** 를 선택합니다.
 
-7.  **마침**을 클릭합니다.
+7. **마침**을 클릭합니다.
 
-     합니다 *AdventureWorksLTDataSet.xsd* 파일에 추가 됩니다 **솔루션 탐색기**합니다. 이 파일은 다음 항목을 정의합니다.
+    합니다 *AdventureWorksLTDataSet.xsd* 파일에 추가 됩니다 **솔루션 탐색기**합니다. 이 파일은 다음 항목을 정의합니다.
 
-    -   `AdventureWorksLTDataSet`라는 형식화된 데이터 집합 이 데이터 집합은 AdventureWorksLT 데이터베이스의 **Address(SalesLT)** 테이블의 내용을 나타냅니다.
+   - `AdventureWorksLTDataSet`라는 형식화된 데이터 집합 이 데이터 집합은 AdventureWorksLT 데이터베이스의 **Address(SalesLT)** 테이블의 내용을 나타냅니다.
 
-    -   라는 TableAdapter `AddressTableAdapter`합니다. 이 TableAdapter의 읽기 및 쓰기 데이터를 사용할 수는 `AdventureWorksLTDataSet`합니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)합니다.
+   - 라는 TableAdapter `AddressTableAdapter`합니다. 이 TableAdapter의 읽기 및 쓰기 데이터를 사용할 수는 `AdventureWorksLTDataSet`합니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)합니다.
 
      이 연습 뒷부분에서는 이러한 두 개체를 모두 사용합니다.
 

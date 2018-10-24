@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 252afc79d7d6d9ecdce5cf0c8a543dffcc8ebc01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d5a46f5d63e817a38808b0c48be75f750a4e2bc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865143"
 ---
 # <a name="thread-details-view---contention-data"></a>스레드 정보 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ ms.locfileid: "49275537"
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>호출 스택의 함수 소스 코드를 보거나 편집하려면  
   
--   호출 스택 창에서 함수 이름을 클릭합니다.  
+- 호출 스택 창에서 함수 이름을 클릭합니다.  
   
- 함수 소스 코드는 현재 프로젝트의 일부여야 합니다.  
+  함수 소스 코드는 현재 프로젝트의 일부여야 합니다.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>프로파일링 실행에서 모든 스레드에 포함된 리소스의 경합 이벤트를 확인하려면  
   

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853144"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>SharePoint 용 응용 프로그램 페이지 만들기
   *응용 프로그램 페이지* SharePoint 웹 사이트에서 사용 하기 위해 설계 된 ASP.NET 웹 페이지입니다. 응용 프로그램 페이지는 ASP.NET 페이지의 특수화 된 형식입니다. 응용 프로그램 페이지 및 표준 ASP.NET 페이지 간의 주요 차이점은 응용 프로그램 페이지는 SharePoint 마스터 페이지를 사용 하 여 병합 되는 콘텐츠를 포함 합니다. 마스터 페이지를는 응용 프로그램 페이지를 사이트에서 다른 페이지와 동일한 모양 및 동작을 공유할 수 있습니다.  
@@ -67,7 +67,7 @@ ms.locfileid: "36326129"
   
  Visual Studio의 다른 SharePoint 프로젝트 항목을 디버그할 때 처럼 응용 프로그램 페이지를 디버깅할 수 있습니다. Visual Studio 디버거를 시작 하면 Visual Studio에 SharePoint 사이트가 열립니다.  
   
- 응용 프로그램 페이지를 보려면 응용 프로그램 페이지의 위치로 이동 수동으로 해야 합니다 (예: http://*Server_Name*/_layouts/*Project_Name*/ApplicationPage1.aspx).  
+ 응용 프로그램 페이지를 보려면 응용 프로그램 페이지의 위치로 이동 수동으로 해야 합니다 (예: http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).  
   
  SharePoint 프로젝트를 디버깅 하는 방법에 대 한 자세한 내용은 참조 하십시오 [문제를 해결 하는 SharePoint 솔루션](../sharepoint/troubleshooting-sharepoint-solutions.md)합니다.  
   

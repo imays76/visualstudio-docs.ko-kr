@@ -15,12 +15,12 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26a60151d89ffaa89338601c4992f9c2f41b099a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812974"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>모델링 다이어그램의 제스처 처리기 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,167 +43,167 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>자체 VSIX에서 제스처 처리기를 만들려면  
   
-1.  **새 프로젝트** 대화 상자의 **모델링 프로젝트**에서 **제스처 확장**을 선택합니다.  
+1. **새 프로젝트** 대화 상자의 **모델링 프로젝트**에서 **제스처 확장**을 선택합니다.  
   
-2.  새 프로젝트에서 **.cs** 파일을 열고 `GestureExtension` 클래스를 수정하여 제스처 처리기를 구현합니다.  
+2. 새 프로젝트에서 **.cs** 파일을 열고 `GestureExtension` 클래스를 수정하여 제스처 처리기를 구현합니다.  
   
-     자세한 내용은 [제스처 처리기 구현](#Implementing)을 참조하세요.  
+    자세한 내용은 [제스처 처리기 구현](#Implementing)을 참조하세요.  
   
-3.  F5 키를 눌러 제스처 처리기를 테스트합니다. 자세한 내용은 [제스처 처리기 실행](#Executing)을 참조하세요.  
+3. F5 키를 눌러 제스처 처리기를 테스트합니다. 자세한 내용은 [제스처 처리기 실행](#Executing)을 참조하세요.  
   
-4.  다른 컴퓨터에 파일을 복사 하 여 제스처 처리기를 설치 **bin\\\*\\\*.vsix** 프로젝트에서 빌드된 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.  
+4. 다른 컴퓨터에 파일을 복사 하 여 제스처 처리기를 설치 **bin\\\*\\\*.vsix** 프로젝트에서 빌드된 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.  
   
- 다음은 대체 절차입니다.  
+   다음은 대체 절차입니다.  
   
 #### <a name="to-create-a-separate-class-library-dll-project-for-the-gesture-handler"></a>제스처 처리기에 대한 별도 클래스 라이브러리(DLL) 프로젝트를 만들려면  
   
-1.  새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션이나 기존 솔루션에서 클래스 라이브러리 프로젝트를 만듭니다.  
+1. 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션이나 기존 솔루션에서 클래스 라이브러리 프로젝트를 만듭니다.  
   
-    1.  **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
+   1.  **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
   
-    2.  **설치된 템플릿**에서 **Visual C#** 또는 **Visual Basic**을 확장하고 가운데 열에서 **클래스 라이브러리**를 선택합니다.  
+   2.  **설치된 템플릿**에서 **Visual C#** 또는 **Visual Basic**을 확장하고 가운데 열에서 **클래스 라이브러리**를 선택합니다.  
   
-2.  프로젝트에 다음 참조를 추가합니다.  
+2. 프로젝트에 다음 참조를 추가합니다.  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
   
-     `Microsoft.VisualStudio.Uml.Interfaces`  
+    `Microsoft.VisualStudio.Uml.Interfaces`  
   
-     `System.ComponentModel.Composition`  
+    `System.ComponentModel.Composition`  
   
-     `System.Windows.Forms`  
+    `System.Windows.Forms`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – 레이어 다이어그램을 확장할 경우에만 필요합니다. 자세한 내용은 [레이어 다이어그램 확장](../modeling/extend-layer-diagrams.md)합니다.  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – 레이어 다이어그램을 확장할 경우에만 필요합니다. 자세한 내용은 [레이어 다이어그램 확장](../modeling/extend-layer-diagrams.md)합니다.  
   
-3.  프로젝트에 클래스 파일을 추가하고 해당 콘텐츠를 다음 코드로 설정합니다.  
+3. 프로젝트에 클래스 파일을 추가하고 해당 콘텐츠를 다음 코드로 설정합니다.  
   
-    > [!NOTE]
-    >  원하는 대로 네임스페이스 및 클래스 이름을 변경합니다.  
+   > [!NOTE]
+   >  원하는 대로 네임스페이스 및 클래스 이름을 변경합니다.  
   
-    ```  
-    using System.ComponentModel.Composition;  
-    using System.Linq;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Modeling.Diagrams;  
-    using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
-    using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
-    using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
-    using Microsoft.VisualStudio.Modeling;  
-    using Microsoft.VisualStudio.Uml.Classes;  
-    // ADD other UML namespaces if required  
+   ```  
+   using System.ComponentModel.Composition;  
+   using System.Linq;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Modeling.Diagrams;  
+   using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
+   using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
+   using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
+   using Microsoft.VisualStudio.Modeling;  
+   using Microsoft.VisualStudio.Uml.Classes;  
+   // ADD other UML namespaces if required  
   
-    namespace MyGestureHandler // CHANGE  
-    {  
-      // DELETE any of these attributes if the handler  
-      // should not work with some types of diagram.  
-      [ClassDesignerExtension]  
-      [ActivityDesignerExtension]  
-      [ComponentDesignerExtension]  
-      [SequenceDesignerExtension]  
-      [UseCaseDesignerExtension]  
-      // [LayerDesignerExtension]  
+   namespace MyGestureHandler // CHANGE  
+   {  
+     // DELETE any of these attributes if the handler  
+     // should not work with some types of diagram.  
+     [ClassDesignerExtension]  
+     [ActivityDesignerExtension]  
+     [ComponentDesignerExtension]  
+     [SequenceDesignerExtension]  
+     [UseCaseDesignerExtension]  
+     // [LayerDesignerExtension]  
   
-      // Gesture handlers must export IGestureExtension:  
-      [Export(typeof(IGestureExtension))]  
-      // CHANGE class name  
-      public class MyGesture1 : IGestureExtension  
-      {  
-        [Import]  
-        public IDiagramContext DiagramContext { get; set; }  
+     // Gesture handlers must export IGestureExtension:  
+     [Export(typeof(IGestureExtension))]  
+     // CHANGE class name  
+     public class MyGesture1 : IGestureExtension  
+     {  
+       [Import]  
+       public IDiagramContext DiagramContext { get; set; }  
   
-        /// <summary>  
-        /// Called when the user double-clicks on the diagram  
-        /// </summary>  
-        /// <param name="targetElement"></param>  
-        /// <param name="diagramPointEventArgs"></param>  
-        public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called when the user double-clicks on the diagram  
+       /// </summary>  
+       /// <param name="targetElement"></param>  
+       /// <param name="diagramPointEventArgs"></param>  
+       public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target shape, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetElement.CreateIShape();  
+         // Get the target shape, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetElement.CreateIShape();  
   
-          // Do something...  
-        }  
+         // Do something...  
+       }  
   
-        /// <summary>  
-        /// Called repeatedly when the user drags from anywhere on the screen.  
-        /// Return value should indicate whether a drop here is allowed.  
-        /// </summary>  
-        /// <param name="targetMergeElement">References the element to be dropped on.</param>  
-        /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
-        /// <returns></returns>  
-        public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called repeatedly when the user drags from anywhere on the screen.  
+       /// Return value should indicate whether a drop here is allowed.  
+       /// </summary>  
+       /// <param name="targetMergeElement">References the element to be dropped on.</param>  
+       /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
+       /// <returns></returns>  
+       public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target element, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetMergeElement.CreateIShape();  
+         // Get the target element, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetMergeElement.CreateIShape();  
   
-          // This example allows drag of any UML elements.  
-          return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
-        }  
+         // This example allows drag of any UML elements.  
+         return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
+       }  
   
-        /// <summary>  
-        /// Execute the action to be performed on the drop.  
-        /// </summary>  
-        /// <param name="targetDropElement"></param>  
-        /// <param name="diagramDragEventArgs"></param>  
-        public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
-        }  
+       /// <summary>  
+       /// Execute the action to be performed on the drop.  
+       /// </summary>  
+       /// <param name="targetDropElement"></param>  
+       /// <param name="diagramDragEventArgs"></param>  
+       public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       }  
   
-        /// <summary>  
-        /// Retrieves UML IElements from drag arguments.  
-        /// Works for drags from UML diagrams.  
-        /// </summary>  
-        private IEnumerable<IElement> GetModelElementsFromDragEvent  
-                (DiagramDragEventArgs dragEvent)  
-        {  
-          //ElementGroupPrototype is the container for  
-          //dragged and copied elements and toolbox items.  
-          ElementGroupPrototype prototype =  
-             dragEvent.Data.  
-             GetData(typeof(ElementGroupPrototype))  
-                  as ElementGroupPrototype;  
-          // Locate the originals in the implementation store.  
-          IElementDirectory implementationDirectory =  
-             dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
+       /// <summary>  
+       /// Retrieves UML IElements from drag arguments.  
+       /// Works for drags from UML diagrams.  
+       /// </summary>  
+       private IEnumerable<IElement> GetModelElementsFromDragEvent  
+               (DiagramDragEventArgs dragEvent)  
+       {  
+         //ElementGroupPrototype is the container for  
+         //dragged and copied elements and toolbox items.  
+         ElementGroupPrototype prototype =  
+            dragEvent.Data.  
+            GetData(typeof(ElementGroupPrototype))  
+                 as ElementGroupPrototype;  
+         // Locate the originals in the implementation store.  
+         IElementDirectory implementationDirectory =  
+            dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
   
-          return prototype.ProtoElements.Select(  
-            prototypeElement =>  
-            {  
-              ModelElement element = implementationDirectory  
-                .FindElement(prototypeElement.ElementId);  
-              ShapeElement shapeElement = element as ShapeElement;  
-              if (shapeElement != null)  
-              {  
-                // Dragged from a diagram.  
-                return shapeElement.ModelElement as IElement;  
-              }  
-              else  
-              {  
-                // Dragged from UML Model Explorer.  
-                return element as IElement;  
-              }  
-            });  
-        }  
+         return prototype.ProtoElements.Select(  
+           prototypeElement =>  
+           {  
+             ModelElement element = implementationDirectory  
+               .FindElement(prototypeElement.ElementId);  
+             ShapeElement shapeElement = element as ShapeElement;  
+             if (shapeElement != null)  
+             {  
+               // Dragged from a diagram.  
+               return shapeElement.ModelElement as IElement;  
+             }  
+             else  
+             {  
+               // Dragged from UML Model Explorer.  
+               return element as IElement;  
+             }  
+           });  
+       }  
   
-      }  
-    }  
+     }  
+   }  
   
-    ```  
+   ```  
   
-     메서드에 삽입할 항목에 대한 자세한 내용은 [제스처 처리기 구현](#Implementing)을 참조하세요.  
+    메서드에 삽입할 항목에 대한 자세한 내용은 [제스처 처리기 구현](#Implementing)을 참조하세요.  
   
- 명령을 설치할 컨테이너로 사용되는 VSIX 프로젝트에 메뉴 명령을 추가해야 합니다. 필요하면 같은 VSIX에 다른 구성 요소를 포함할 수 있습니다.  
+   명령을 설치할 컨테이너로 사용되는 VSIX 프로젝트에 메뉴 명령을 추가해야 합니다. 필요하면 같은 VSIX에 다른 구성 요소를 포함할 수 있습니다.  
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>VSIX 프로젝트에 개별 제스처 처리기를 추가하려면  
   
@@ -238,25 +238,25 @@ Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어
   
 #### <a name="to-test-the-gesture-handler"></a>제스처 처리기를 테스트하려면  
   
-1.  **F5**키를 누르거나, **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.  
+1. **F5**키를 누르거나, **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다.  
   
-     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 가 시작되지 않는 경우:  
+    **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 가 시작되지 않는 경우:  
   
-    -   프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.  
+   -   프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.  
   
-    -   솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 속성을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. 시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름인지 확인합니다.  
+   -   솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 속성을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. 시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름인지 확인합니다.  
   
-         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
+        `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  실험적 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트를 열거나 만들고 모델링 다이어그램을 열거나 만듭니다. 제스처 처리기 클래스의 특성에 나열된 형식 중 하나에 속한 다이어그램을 사용합니다.  
+2. 실험적 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트를 열거나 만들고 모델링 다이어그램을 열거나 만듭니다. 제스처 처리기 클래스의 특성에 나열된 형식 중 하나에 속한 다이어그램을 사용합니다.  
   
-3.  다이어그램에서 아무 곳이나 두 번 클릭합니다. 두 번 클릭 처리기가 호출되어야 합니다.  
+3. 다이어그램에서 아무 곳이나 두 번 클릭합니다. 두 번 클릭 처리기가 호출되어야 합니다.  
   
-4.  요소를 UML 탐색기에서 다이어그램으로 끌어 놓습니다. 끌기 처리기가 호출되어야 합니다.  
+4. 요소를 UML 탐색기에서 다이어그램으로 끌어 놓습니다. 끌기 처리기가 호출되어야 합니다.  
   
- **문제 해결**: 제스처 처리기가 작동하지 않으면 다음을 확인합니다.  
+   **문제 해결**: 제스처 처리기가 작동하지 않으면 다음을 확인합니다.  
   
 -   제스처 처리기 프로젝트는 VSIX 프로젝트에서 **source.extensions.manifest** 의 **자산** 탭에 MEF 구성 요소로 나열됩니다.  
   
@@ -374,15 +374,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 #### <a name="to-uninstall-an-extension"></a>확장을 제거하려면  
   
-1.  **도구** 메뉴 모음에서 **확장 및 업데이트**를 선택합니다.  
+1. **도구** 메뉴 모음에서 **확장 및 업데이트**를 선택합니다.  
   
-2.  **설치된 확장**을 확장합니다.  
+2. **설치된 확장**을 확장합니다.  
   
-3.  확장을 선택하고 **제거**를 선택합니다.  
+3. 확장을 선택하고 **제거**를 선택합니다.  
   
- 드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제하여 확장을 제거할 수 있습니다.  
+   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제하여 확장을 제거할 수 있습니다.  
   
- *% LocalAppData %* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
+   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ##  <a name="DragExample"></a> 예제  
  다음 샘플에서는 구성 요소 다이어그램에서 끌어온 구성 요소의 파트 및 포트를 기반으로 시퀀스 다이어그램에서 수명선을 만드는 방법을 보여 줍니다.  

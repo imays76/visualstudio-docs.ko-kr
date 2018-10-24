@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb46eb1c7477f93ed63dfc4424d881886c8d0c8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e816ac9dca3c70e88ae023b4fda4edf0b99f9c96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872098"
 ---
 # <a name="locationtype"></a>LocationType
 기호에 포함 된 위치 정보의 종류를 나타냅니다.  
@@ -51,39 +51,39 @@ enum LocationType {
  위치는 정적입니다.  
   
  `LocIsTLS`  
- 스레드 로컬 저장소 위치는입니다.  
+ 스레드 로컬 저장소의 위치는입니다.  
   
  `LocIsRegRel`  
  위치는 레지스터 상대입니다.  
   
  `LocIsThisRel`  
- 위치는 `this`-상대 합니다.  
+ 위치가 `this`-상대 합니다.  
   
  `LocIsEnregistered`  
- 레지스터에 위치는입니다.  
+ 레지스터에 위치가 있습니다.  
   
  `LocIsBitField`  
- 비트 필드의 위치는입니다.  
+ 위치는 비트 필드입니다.  
   
  `LocIsSlot`  
- 위치는 언어 MSIL (Microsoft Intermediate) 슬롯입니다.  
+ 위치는 Microsoft 중간 언어 (MSIL) 슬롯입니다.  
   
  `LocIsIlRel`  
- 위치는 MSIL 상대입니다.  
+ 위치는 MSIL 상대적입니다.  
   
  `LocInMetaData`  
- 메타 데이터의 위치는입니다.  
+ 위치는 메타 데이터입니다.  
   
  `LocIsConstant`  
  위치는 상수 값입니다.  
   
  `LocTypeMax`  
- 이 열거형의 위치 유형 수입니다.  
+ 이 열거형의 위치 형식의 수입니다.  
   
 ## <a name="remarks"></a>설명  
- 사용할 수 있는 속성은 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 인터페이스 내에서 이미지 파일에서 기호 위치에 따라 달라 집니다. 자세한 내용은 참조 [기호 위치](../../debugger/debug-interface-access/symbol-locations.md)합니다.  
+ 사용할 수 있는 속성을 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 인터페이스 내 이미지 파일에서 기호 위치에 따라 달라 집니다. 자세한 내용은 [기호 위치](../../debugger/debug-interface-access/symbol-locations.md)합니다.  
   
- 이 열거형의 값에 대 한 호출에서 반환될지는 [idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) 메서드.  
+ 이 열거형의 값에는 호출에서 반환 되는 [idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: cvconst.h  

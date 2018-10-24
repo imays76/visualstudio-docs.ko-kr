@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0ed351bf15ec257f79e226958b38e46ac769d0e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865728"
 ---
 # <a name="secure-deployment"></a>안전한 배포
   Office 솔루션을 만들 때 개발 컴퓨터를 실행 하도록 프로젝트에서 코드를 허용 하도록 자동으로 업데이트 됩니다. 그러나 솔루션을 배포할 때 인증서를 사용 하 여 솔루션을 서명 하거나 사용 하 여 신뢰 결정의 기준이 되는 증명 정보 제공 해야 합니다는 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 키입니다. 자세한 내용은 [Office 솔루션에 신뢰를 부여](../vsto/granting-trust-to-office-solutions.md)합니다.  
@@ -35,17 +35,17 @@ ms.locfileid: "35673907"
 ## <a name="prevent-office-solutions-from-running-code"></a>Office 솔루션에서 코드 실행 방지  
  관리자는 레지스트리를 사용 하 여 Office 솔루션을 모든 컴퓨터에서 실행 하지 못하도록 수 있습니다. 관리 코드 확장이 있는 Office 솔루션 열릴 때, Visual Studio Tools for Office 런타임 검사에 항목이 있는지 여부를 이름의 `Disabled` 컴퓨터에서 다음 레지스트리 키 중 하나에 존재 합니다.  
   
--   **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
--   **이**  
+- **이**  
   
- Office 솔루션 코드 실행을 방지 하려면 만들기를 `Disabled` 하나 또는 둘 다 이러한 레지스트리 키 항목 다음 데이터 형식 및 값 중 하나를 지정 하 고 `Disabled`:  
+  Office 솔루션 코드 실행을 방지 하려면 만들기를 `Disabled` 하나 또는 둘 다 이러한 레지스트리 키 항목 다음 데이터 형식 및 값 중 하나를 지정 하 고 `Disabled`:  
   
--   REG_SZ 또는 REG_EXPAND_SZ "0" (영) 이외의 문자열로 설정 된 경우.  
+- REG_SZ 또는 REG_EXPAND_SZ "0" (영) 이외의 문자열로 설정 된 경우.  
   
--   0 (영) 이외의 값으로 설정 된 REG_DWORD입니다.  
+- 0 (영) 이외의 값으로 설정 된 REG_DWORD입니다.  
   
- 코드를 실행 하는 Office 솔루션을 사용 하려면 둘 다를 설정 합니다 `Disabled` 항목 0 (영)을 하거나 레지스트리 항목을 삭제 합니다.  
+  코드를 실행 하는 Office 솔루션을 사용 하려면 둘 다를 설정 합니다 `Disabled` 항목 0 (영)을 하거나 레지스트리 항목을 삭제 합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   

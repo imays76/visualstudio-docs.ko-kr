@@ -28,12 +28,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 913ade98ef643e5e962fb87dc71afdf526c92cce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e3bb3994792eef69fec52fe580904c0285f827e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874725"
 ---
 # <a name="context-operator-c"></a>컨텍스트 연산자(C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,17 +59,17 @@ C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름
     EXAMPLE.dll!SomeFunction  
     ```  
   
--   *모듈* 은 모듈의 이름입니다. 이름이 같은 여러 모듈을 구분하기 위해 전체 경로를 사용할 수 있습니다.  
+- *모듈* 은 모듈의 이름입니다. 이름이 같은 여러 모듈을 구분하기 위해 전체 경로를 사용할 수 있습니다.  
   
-     *모듈* 경로에 쉼표, 공백 또는 중괄호가 포함되어 있으면 컨텍스트 파서가 문자열을 적절하게 인식할 수 있도록 경로에 큰따옴표를 사용해야 합니다. 작은따옴표는 Windows 파일 이름의 일부로 간주되므로 큰따옴표를 사용해야 합니다. 예를 들어 개체에 적용된  
+   *모듈* 경로에 쉼표, 공백 또는 중괄호가 포함되어 있으면 컨텍스트 파서가 문자열을 적절하게 인식할 수 있도록 경로에 큰따옴표를 사용해야 합니다. 작은따옴표는 Windows 파일 이름의 일부로 간주되므로 큰따옴표를 사용해야 합니다. 예를 들어 개체에 적용된  
   
-    ```cpp  
-    {,,"a long, long, library name.dll"} g_Var  
-    ```  
+  ```cpp  
+  {,,"a long, long, library name.dll"} g_Var  
+  ```  
   
--   *식* 은 *모듈*의 함수 이름, 변수 이름 또는 포인터 주소와 같은 올바른 대상으로 확인되는 모든 유효한 C++ 식입니다.  
+- *식* 은 *모듈*의 함수 이름, 변수 이름 또는 포인터 주소와 같은 올바른 대상으로 확인되는 모든 유효한 C++ 식입니다.  
   
- 식 계산기는 식에서 기호가 나오면 다음과 같은 순서로 기호를 검색합니다.  
+  식 계산기는 식에서 기호가 나오면 다음과 같은 순서로 기호를 검색합니다.  
   
 1.  현재 블록(중괄호에 포함된 일련의 문)에서 시작하여 바깥쪽 블록의 외부로 계속되는 바깥쪽 어휘 범위. 현재 블록은 현재 위치(명령 포인터 주소)가 포함된 코드입니다.  
   

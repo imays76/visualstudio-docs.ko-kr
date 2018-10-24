@@ -31,12 +31,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 215bebb071ce707e2997e934fd58901ec2d56b8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816341"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,27 +45,27 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
   
  IntelliSense를 사용하면 다음과 같은 작업을 더욱 쉽게 완료할 수 있습니다.  
   
--   멤버 정보 찾기  
+- 멤버 정보 찾기  
   
--   코드에 언어 요소 직접 삽입  
+- 코드에 언어 요소 직접 삽입  
   
--   코드 편집기를 벗어나지 않고 컨텍스트 유지  
+- 코드 편집기를 벗어나지 않고 컨텍스트 유지  
   
--   XML 문서 주석 및 JavaScript IntelliSense 확장성을 사용하여 사용자 지정 IntelliSense를 지원합니다.  
+- XML 문서 주석 및 JavaScript IntelliSense 확장성을 사용하여 사용자 지정 IntelliSense를 지원합니다.  
   
- 이 항목에는 다음과 같은 단원이 포함되어 있습니다.  
+  이 항목에는 다음과 같은 단원이 포함되어 있습니다.  
   
--   [IntelliSense 컨텍스트 확인](#DeterminingIntelliSenseContext)  
+- [IntelliSense 컨텍스트 확인](#DeterminingIntelliSenseContext)  
   
--   [IntelliSense 정보 처리](#ProcessingIntelliSenseInformation)  
+- [IntelliSense 정보 처리](#ProcessingIntelliSenseInformation)  
   
--   [JavaScript IntelliSense 기능](#Features)  
+- [JavaScript IntelliSense 기능](#Features)  
   
--   [JavaScript IntelliSense 확장성](#Extensibility)  
+- [JavaScript IntelliSense 확장성](#Extensibility)  
   
--   [JavaScript 유효성 검사](#Validation)  
+- [JavaScript 유효성 검사](#Validation)  
   
- IntelliSense 기능에 대 한 자세한 내용은 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]를 참조 하세요 [IntelliSense를 사용 하 여](../ide/using-intellisense.md)입니다.  
+  IntelliSense 기능에 대 한 자세한 내용은 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]를 참조 하세요 [IntelliSense를 사용 하 여](../ide/using-intellisense.md)입니다.  
   
 ##  <a name="DeterminingIntelliSenseContext"></a> IntelliSense 컨텍스트 확인  
  JavaScript IntelliSense는 현재 스크립트 컨텍스트와 관련된 모든 스크립트를 기준으로 코딩 옵션을 제공합니다. 여기에는 현재 파일의 스크립팅 요소뿐만 아니라 스크립트 파일 참조, 어셈블리 스크립트 참조, 서비스 참조, 페이지 연관 참조 등 스크립트에서 직간접으로 참조되는 모든 코드가 포함됩니다.  
@@ -103,25 +103,25 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 ##  <a name="Features"></a> JavaScript IntelliSense 기능  
  JavaScript IntelliSense는 다음과 같은 개체를 지원합니다.  
   
--   [문서 개체 모델 (DOM) 요소](#HTMLDom)  
+- [문서 개체 모델 (DOM) 요소](#HTMLDom)  
   
--   [내장 개체](#IntrinsicObjects)  
+- [내장 개체](#IntrinsicObjects)  
   
--   [사용자 정의 변수, 함수 및 개체](#UserDefined)  
+- [사용자 정의 변수, 함수 및 개체](#UserDefined)  
   
--   같은 참조를 사용 하 여 외부 파일에 정의 된 개체 [스크립트 참조](#Script)를 [참조 지시문](#ReferenceDirectives), 및 [참조 그룹](#ReferenceGroups)합니다.  
+- 같은 참조를 사용 하 여 외부 파일에 정의 된 개체 [스크립트 참조](#Script)를 [참조 지시문](#ReferenceDirectives), 및 [참조 그룹](#ReferenceGroups)합니다.  
   
--   Visual Studio를 통해 다운로드된 원격 파일에서 정의된 개체입니다.  
+- Visual Studio를 통해 다운로드된 원격 파일에서 정의된 개체입니다.  
   
--   에 지정 된 개체 [XML 문서 주석](#XMLDocComments)매개 변수 및 필드 등입니다.  
+- 에 지정 된 개체 [XML 문서 주석](#XMLDocComments)매개 변수 및 필드 등입니다.  
   
--   표준 JavaScript 주석 태그(//)를 사용하여 설명되는 개체입니다. 자세한 내용은 [JavaScript IntelliSense 확장](../ide/extending-javascript-intellisense.md)합니다.  
+- 표준 JavaScript 주석 태그(//)를 사용하여 설명되는 개체입니다. 자세한 내용은 [JavaScript IntelliSense 확장](../ide/extending-javascript-intellisense.md)합니다.  
   
--   사용 하 여 지원 되는 개체를 [JavaScript IntelliSense 확장성](#Extensibility) 메커니즘입니다. 자세한 내용은 [JavaScript IntelliSense 확장](../ide/extending-javascript-intellisense.md)합니다.  
+- 사용 하 여 지원 되는 개체를 [JavaScript IntelliSense 확장성](#Extensibility) 메커니즘입니다. 자세한 내용은 [JavaScript IntelliSense 확장](../ide/extending-javascript-intellisense.md)합니다.  
   
--   [ASP.NET AJAX 개체](#ASPNet)  
+- [ASP.NET AJAX 개체](#ASPNet)  
   
- IntelliSense가 개체의 형식을 확인할 수 없는 경우 활성 문서의 식별자를 사용하여 문 완성 옵션을 제공합니다. 자세한 내용은 [식별자 문 완성](../ide/statement-completion-for-identifiers.md)합니다.  
+  IntelliSense가 개체의 형식을 확인할 수 없는 경우 활성 문서의 식별자를 사용하여 문 완성 옵션을 제공합니다. 자세한 내용은 [식별자 문 완성](../ide/statement-completion-for-identifiers.md)합니다.  
   
 ###  <a name="HTMLDom"></a> HTML DOM 요소  
  JavaScript IntelliSense는 `body`, `form` 및 `div` 같은 DHTML(Dynamic HTML) DOM 요소에 대한 프로그래밍 참조를 제공합니다. IntelliSense는 현재 문서와 마스터 페이지에 포함된 요소만 표시합니다. 또한 JavaScript IntelliSense는 `window` 및 `document` 개체와 그 멤버를 지원합니다.  
@@ -227,15 +227,15 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 ####  <a name="ReferenceGroups"></a> 참조 그룹  
  미리 정의된 참조 그룹을 사용하여 다른 JavaScript 프로젝트의 범위에 있는 특정 IntelliSense .js 파일을 지정할 수 있습니다. 다음과 같은 참조 그룹 형식을 사용할 수 있습니다.  
   
--   암시적(Windows), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱용 이 그룹에 포함된 파일은 지정된 형식의 프로젝트용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
+- 암시적(Windows), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱용 이 그룹에 포함된 파일은 지정된 형식의 프로젝트용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
   
--   암시적(웹), HTML5 프로젝트용 이 그룹에 포함된 파일은 이러한 프로젝트 형식용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
+- 암시적(웹), HTML5 프로젝트용 이 그룹에 포함된 파일은 이러한 프로젝트 형식용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.  
   
--   전용 근로자 참조 그룹, HTML5 웹 작업자용 이 그룹에 지정된 파일은 전용 근로자 참조 그룹을 명시적으로 참조하는 .js 파일 범위에 속합니다.  
+- 전용 근로자 참조 그룹, HTML5 웹 작업자용 이 그룹에 지정된 파일은 전용 근로자 참조 그룹을 명시적으로 참조하는 .js 파일 범위에 속합니다.  
   
--   일반, 다른 JavaScript 프로젝트 형식용  
+- 일반, 다른 JavaScript 프로젝트 형식용  
   
- 대부분의 시나리오에서 참조 그룹을 수정할 필요가 없습니다. 그러나 변경을 하려면 JavaScript 코드 편집기 구성 옵션을 사용하여 참조 그룹에 포함된 파일을 지정할 수 있습니다. 이 기능을 사용 하는 방법에 대 한 지침은 [옵션, 텍스트 편집기, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)합니다.  
+  대부분의 시나리오에서 참조 그룹을 수정할 필요가 없습니다. 그러나 변경을 하려면 JavaScript 코드 편집기 구성 옵션을 사용하여 참조 그룹에 포함된 파일을 지정할 수 있습니다. 이 기능을 사용 하는 방법에 대 한 지침은 [옵션, 텍스트 편집기, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)합니다.  
   
 > [!TIP]
 >  IntelliSense 참조는 일반적으로 전역 개체 및 IntelliSense에 대 한 IntelliSense 지원을 제공 하는 데 사용 됩니다 [확장](#Extensibility)합니다. 스크립트 로더를 사용하여 런타임에 로드해야 하는 스크립트에도 이 기능을 사용할 수 있습니다.  
@@ -256,13 +256,13 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
   
  IntelliSense는 다음과 같은 시나리오에서 XML 문서 주석을 표시할 수 있습니다.  
   
--   다른 .js 파일을 참조하는 .js 파일  
+- 다른 .js 파일을 참조하는 .js 파일  
   
--   .aspx 파일을 참조하는 .js 파일  
+- .aspx 파일을 참조하는 .js 파일  
   
--   .js 파일을 참조하는 .aspx 파일  
+- .js 파일을 참조하는 .aspx 파일  
   
- 한 .aspx 파일이 다른 .aspx 파일을 참조하는 경우 IntelliSense를 사용할 수 없습니다.  
+  한 .aspx 파일이 다른 .aspx 파일을 참조하는 경우 IntelliSense를 사용할 수 없습니다.  
   
 ###  <a name="ASPNet"></a> ASP.NET AJAX 개체  
  ASP.NET AJAX도 JavaScript IntelliSense를 지원합니다. ASP.NET AJAX에는 ECMAScript(JavaScript)에서 사용할 수 있는 표준 형식을 확장하는 클라이언트 프레임워크가 포함됩니다. JavaScript IntelliSense에서 ASP.NET AJAX 개체에 대한 세부 정보를 제공할 수 있도록 하기 위해 [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] 전체에 XML 문서 주석이 추가되었습니다. 이러한 XML 문서 주석은 ASP.NET AJAX 라이브러리에 들어 있는 형식과 멤버를 사용할 때 표시됩니다.  

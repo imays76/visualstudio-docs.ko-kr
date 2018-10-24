@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccdc9df86180883a5a3891563b22625fab4a2ad2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca4be9d62ee9e0261e5c08a50b53df013ad6ffcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851123"
 ---
 # <a name="cvcalle"></a>CV_call_e
-함수에 대 한 호출 규칙을 지정합니다.  
+함수의 호출 규칙을 지정 합니다.  
   
 > [!NOTE]
->  가장 일반적인 열거형 값만 여기에 설명 되어 있습니다. 전체 열거형은 cvconst.h 헤더 파일에 사용할 수 있습니다.  
+>  가장 일반적인 열거형 값만 여기에 설명 되어 있습니다. 전체 열거형 cvconst.h 헤더 파일에서 제공 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,25 +42,25 @@ typedef enum CV_call_e {
   
 ## <a name="elements"></a>요소  
  CV_CALL_NEAR_C  
- Near 오른쪽에서 왼쪽으로 푸시를 사용 하 여 함수 호출 규칙을 지정 합니다. 호출 함수의 스택을 지웁니다.  
+ 거의 오른쪽에서 왼쪽 푸시를 사용 하 여 함수 호출 규칙을 지정 합니다. 함수 호출 스택을 지웁니다.  
   
  CV_CALL_NEAR_FAST  
- 레지스터와 가까운 왼쪽에서 오른쪽 푸시를 사용 하 여 함수 호출 규칙을 지정 합니다. 호출된 된 함수 매개 변수 바이트를 사용 하 여 스택을 지웁니다.  
+ 레지스터를 사용 하 여 거의 왼쪽-오른쪽 푸시를 사용 하 여 함수 호출 규칙을 지정 합니다. 호출된 된 함수 매개 변수 바이트의 합계를 사용 하 여 스택을 지웁니다.  
   
  CV_CALL_NEAR_STD  
- Near 표준 호출 (오른쪽에서 왼쪽으로 푸시)을 사용 하는 함수 호출 규칙을 지정 합니다.  
+ 거의 표준 호출 (오른쪽에서 왼쪽 밀어넣기)를 사용 하 여 함수 호출 규칙을 지정 합니다.  
   
  CV_CALL_NEAR_SYS  
- Near 시스템 호출을 사용 하는 함수 호출 규칙을 지정 합니다.  
+ 거의 시스템 호출을 사용 하 여 함수 호출 규칙을 지정 합니다.  
   
  CV_CALL_THISCALL  
- 사용 하 여 함수 호출 규칙 지정 `this` 호출 (`this` 포인터 레지스터에서 전달).  
+ 사용 하 여 함수 호출 규칙 지정 `this` 호출 (`this` 레지스터에 전달 된 포인터).  
   
  CV_CALL_CLRCALL  
- 여는 CLR 공용 언어 런타임 () (또는 관리 되는 코드를 호출 규칙)를 사용 되는 함수 호출 규칙을 지정 합니다.  
+ 함수 호출 규칙을 사용 하 여 언어 런타임 (CLR (공용) (라고도 하며 관리 되는 코드를 호출 규칙)을 지정 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에 대 한 호출에서 반환될지는 [idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) 메서드.  
+ 이 열거형의 값에는 호출에서 반환 되는 [idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: cvconst.h  

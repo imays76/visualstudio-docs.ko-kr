@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830747"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 편집기 IntelliSense 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기�
 ## <a name="intellisense-in-an-xslt-document"></a>XSLT 문서의 IntelliSense  
  명명된 템플릿 또는 특성을 XSLT 문서에 추가한 후 IntelliSense를 사용하여 다음을 삽입할 수 있습니다.  
   
--   특성 집합 이름  
+- 특성 집합 이름  
   
--   템플릿 노드  
+- 템플릿 노드  
   
--   템플릿 이름  
+- 템플릿 이름  
   
--   제공된 노드의 매개 변수 이름  
+- 제공된 노드의 매개 변수 이름  
   
--   제공된 명명된 템플릿의 매개 변수 이름  
+- 제공된 명명된 템플릿의 매개 변수 이름  
   
- 자세한 내용은 [연습: XSLT IntelliSense를 사용 하 여](../xml-tools/walkthrough-using-xslt-intellisense.md) 항목입니다.  
+  자세한 내용은 [연습: XSLT IntelliSense를 사용 하 여](../xml-tools/walkthrough-using-xslt-intellisense.md) 항목입니다.  
   
 ## <a name="auto-completion"></a>자동 완성  
  XML 편집기에서는 필수 XML 구문이 자동으로 입력되므로 XML을 쉽게 편집할 수 있습니다. 예를 들어, 다음 시작 태그를 입력하면  
@@ -72,19 +72,19 @@ XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기�
   
  이와 마찬가지로 XML 편집기에서는 다음 XML 구문이 자동으로 삽입됩니다.  
   
--   처리 명령 종료: `?>`  
+- 처리 명령 종료: `?>`  
   
--   CDATA 블록 종료: `]]>`  
+- CDATA 블록 종료: `]]>`  
   
--   주석 종료: `-->`  
+- 주석 종료: `-->`  
   
--   DTD 선언 종료: `>`  
+- DTD 선언 종료: `>`  
   
- IntelliSense 목록에서 정규화된 네임스페이스 요소 또는 특성을 선택한 경우 해당 요소 또는 특성에 대한 네임스페이스가 아직 범위 내에 없으면 XML 편집기에서 네임스페이스 선언을 삽입할 수 있습니다.  
+  IntelliSense 목록에서 정규화된 네임스페이스 요소 또는 특성을 선택한 경우 해당 요소 또는 특성에 대한 네임스페이스가 아직 범위 내에 없으면 XML 편집기에서 네임스페이스 선언을 삽입할 수 있습니다.  
   
- 예를 들어, 문서에서 선언하지 않은 `e:Book` 네임스페이스에 접두사가 바인딩된 IntelliSense 목록에서 `http://books` 요소를 선택한 경우 XML 편집기에서 필수 네임스페이스 선언이 자동으로 삽입됩니다. 다음은 결과 XML 텍스트입니다.  
+  예를 들어, 문서에서 선언하지 않은 `e:Book` 네임스페이스에 접두사가 바인딩된 IntelliSense 목록에서 `http://books` 요소를 선택한 경우 XML 편집기에서 필수 네임스페이스 선언이 자동으로 삽입됩니다. 다음은 결과 XML 텍스트입니다.  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>중괄호 일치  
  XML 편집기에서는 중괄호 강조 기능을 제공하므로 방금 닫은 요소에 대한 피드백을 즉시 얻을 수 있습니다. 바로 가기 키(Ctrl+])를 사용하여 한 중괄호에서 짝이 되는 중괄호로 이동할 수 있습니다.  
