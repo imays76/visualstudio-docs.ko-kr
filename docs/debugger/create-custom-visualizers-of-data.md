@@ -1,5 +1,5 @@
 ---
-title: 데이터의 사용자 지정 시각화 도우미를 만드는 | Microsoft Docs
+title: 데이터의 사용자 지정 시각화 도우미 만들기 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/19/2017
 ms.technology: vs-ide-debug
@@ -21,22 +21,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a1602808cb21bd247d2bb1d249ab7ddea81524
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 859bf6493a06663a8977898ffa07d600b826d458
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854314"
 ---
 # <a name="create-custom-visualizers-of-data"></a>데이터의 사용자 지정 시각화 도우미 만들기
- 시각화 도우미는의 구성 요소는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 디버거 사용자 인터페이스입니다. A *시각화 도우미* 대화 상자나 다른 인터페이스의 데이터 형식에 적합 한 방식으로 변수나 개체를 표시 하려면를 만듭니다. 예를 들어 HTML 시각화 도우미는 HTML 문자열을 해석하고 브라우저 창에서와 마찬가지로 그 결과를 표시합니다. 비트맵 시각화 도우미는 비트맵 구조를 해석하고 그 구조가 표현하는 그래픽을 표시합니다. 일부 시각화 도우미에서는 데이터를 볼 수 있을 뿐만 아니라 수정할 수도 있습니다.
+ 시각화 도우미는 구성 요소는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 디버거 사용자 인터페이스입니다. A *시각화 도우미* 대화 상자 또는 해당 데이터 형식에 적합 한 방식으로 변수나 개체를 표시할 다른 인터페이스를 만듭니다. 예를 들어 HTML 시각화 도우미는 HTML 문자열을 해석하고 브라우저 창에서와 마찬가지로 그 결과를 표시합니다. 비트맵 시각화 도우미는 비트맵 구조를 해석하고 그 구조가 표현하는 그래픽을 표시합니다. 일부 시각화 도우미에서는 데이터를 볼 수 있을 뿐만 아니라 수정할 수도 있습니다.
 
- [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 디버거에는 6가지 표준 시각화 도우미가 포함되어 있습니다. 텍스트, HTML, XML 및 JSON 시각화 도우미, 문자열 개체에 사용 되는 WPF 트리 시각화 도우미는 WPF 개체 시각적 트리의 속성 표시 및 데이터 집합 시각화 도우미 DataSet, DataView 및 DataTable 개체에 대해 작동 합니다. 향후 Microsoft Corporation의 추가 시각화 도우미를 다운로드할 수 있으며 타사와 커뮤니티의 시각화 도우미도 사용 가능합니다. 또한 자신만의 시각화 도우미를 직접 작성하여 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 디버거에 설치할 수 있습니다.
+ [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 디버거에는 6가지 표준 시각화 도우미가 포함되어 있습니다. 텍스트, HTML, XML 및 JSON 시각화 도우미, 문자열 개체에서 사용 되는 WPF 개체 시각적 트리의; 속성을 표시 하는 것에 대 한 WPF 트리 시각화 도우미 및 DataSet, DataView 및 DataTable 개체에 대해 작동 하는 데이터 집합 시각화 도우미입니다. 향후 Microsoft Corporation의 추가 시각화 도우미를 다운로드할 수 있으며 타사와 커뮤니티의 시각화 도우미도 사용 가능합니다. 또한 자신만의 시각화 도우미를 직접 작성하여 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 디버거에 설치할 수 있습니다.
 
  > [!NOTE]
- > 네이티브 코드에 대 한 사용자 지정 시각화 도우미를 만들려면 참조 된 [SQLite 네이티브 디버거 시각화 도우미](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) 샘플. UWP 및 Windows 8.x 앱에서 사용자 지정 시각화 도우미는 지원 되지 않습니다.
+ > 네이티브 코드에 대 한 사용자 지정 시각화 도우미를 만들려면 참조 된 [SQLite 네이티브 디버거 시각화 도우미](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) 샘플입니다. UWP 및 Windows 8.x 앱에서 사용자 지정 시각화 도우미는 지원 되지 않습니다.
 
- 디버거에서 시각화 도우미 돋보기 모양의 아이콘으로 표시 됩니다 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "시각화 도우미 아이콘")합니다. 돋보기 아이콘을 표시 될 때는 **DataTip**, 같은 디버거 창에는 **조사식** 창 또는 **간략 한 조사식** 돋보기를 클릭 대화 상자 해당 개체의 데이터 형식에 적합 한 시각화 도우미를 선택 합니다.
+ 디버거 시각화 도우미 돋보기 아이콘으로 표시 됩니다 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "시각화 아이콘")합니다. 에 돋보기 모양 아이콘이 표시 되 면을 **DataTip**, 같은 디버거 창에는 **조사식** 창 또는 **간략 한 조사식** 대화 상자에서 돋보기를 클릭 수 해당 개체의 데이터 형식에 적합 한 시각화 도우미를 선택 합니다.
 
 ## <a name="overview-of-custom-visualizers"></a>사용자 지정 시각화 도우미의 개요
 
@@ -44,27 +44,27 @@ ms.locfileid: "31464838"
   
  디버거 시각화 도우미의 아키텍처는 두 부분으로 구성되어 있습니다.  
   
--   *디버거 쪽* Visual Studio 디버거 내에서 실행 됩니다. 디버거 쪽 코드에서는 시각화 도우미의 사용자 인터페이스를 만들고 표시합니다.  
+- 합니다 *디버거 쪽* Visual Studio 디버거 내에서 실행 됩니다. 디버거 쪽 코드에서는 시각화 도우미의 사용자 인터페이스를 만들고 표시합니다.  
   
--   *디버기 쪽* Visual Studio가 디버깅 하는 프로세스 내에서 실행 (의 *디버기*).  
+- 합니다 *디버기 쪽* Visual Studio가 디버깅 하는 프로세스 내에서 실행 (합니다 *디버기*).  
   
- 시각화하려는 데이터 개체(예: String 개체)는 디버기 프로세스에 있습니다. 따라서 디버기 쪽에서 디버거 쪽에 데이터 개체를 전달해야 디버거 쪽에서 작성된 사용자 인터페이스를 사용하여 이 개체를 표시할 수 있습니다.  
+  시각화하려는 데이터 개체(예: String 개체)는 디버기 프로세스에 있습니다. 따라서 디버기 쪽에서 디버거 쪽에 데이터 개체를 전달해야 디버거 쪽에서 작성된 사용자 인터페이스를 사용하여 이 개체를 표시할 수 있습니다.  
   
- 디버거 쪽에서 시각화할이 데이터 개체를 수신는 *개체 공급자* 구현 하는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 인터페이스입니다. 디버기 쪽 코드를 통해 데이터 개체를 전달 된 *개체 소스*에서 파생 된 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>합니다. 개체 공급자는 데이터를 다시 개체 소스로 전달할 수도 있습니다. 이를 통해 데이터를 표시할 뿐만 아니라 편집도 하는 시각화 도우미를 작성할 수 있습니다. 식 계산기와 통신하고 궁극적으로는 개체 소스와 통신하도록 개체 공급자를 재정의할 수 있습니다.  
+  디버거 쪽 수신에서 시각화할 데이터 개체에이 *개체 공급자* 구현 하는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 인터페이스. 디버기 쪽을 통해 데이터 개체를 전달 합니다 *개체 소스*에서 파생 된 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>합니다. 개체 공급자는 데이터를 다시 개체 소스로 전달할 수도 있습니다. 이를 통해 데이터를 표시할 뿐만 아니라 편집도 하는 시각화 도우미를 작성할 수 있습니다. 식 계산기와 통신하고 궁극적으로는 개체 소스와 통신하도록 개체 공급자를 재정의할 수 있습니다.  
   
- 디버기 쪽과 디버거 쪽에서는 <xref:System.IO.Stream>을 통해 서로 통신합니다. 데이터 개체를 <xref:System.IO.Stream>으로 serialize하고 <xref:System.IO.Stream>을 데이터 개체로 다시 deserialize하기 위한 메서드가 제공됩니다.  
+  디버기 쪽과 디버거 쪽에서는 <xref:System.IO.Stream>을 통해 서로 통신합니다. 데이터 개체를 <xref:System.IO.Stream>으로 serialize하고 <xref:System.IO.Stream>을 데이터 개체로 다시 deserialize하기 위한 메서드가 제공됩니다.  
   
- 디버기 쪽 코드는 DebuggerVisualizer 특성(<xref:System.Diagnostics.DebuggerVisualizerAttribute>)을 사용하여 지정됩니다.  
+  디버기 쪽 코드는 DebuggerVisualizer 특성(<xref:System.Diagnostics.DebuggerVisualizerAttribute>)을 사용하여 지정됩니다.  
   
- 디버거 쪽에 시각화 도우미 사용자 인터페이스를 만들려면 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>에서 상속되는 클래스를 만들고 인터페이스를 표시하도록 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 메서드를 재정의해야 합니다.  
+  디버거 쪽에 시각화 도우미 사용자 인터페이스를 만들려면 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>에서 상속되는 클래스를 만들고 인터페이스를 표시하도록 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 메서드를 재정의해야 합니다.  
   
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>를 사용하여 시각화 도우미의 Windows Forms, 대화 상자 및 컨트롤을 표시할 수 있습니다.  
+  <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>를 사용하여 시각화 도우미의 Windows Forms, 대화 상자 및 컨트롤을 표시할 수 있습니다.  
   
- 제네릭 형식에 대한 지원은 제한되어 있습니다. 제네릭 형식이 개방형 형식인 경우에만 제네릭 형식을 대상으로 하는 시각화 도우미를 작성할 수 있습니다. `DebuggerTypeProxy` 특성을 사용하는 경우에도 이 제한은 동일하게 적용됩니다. 자세한 내용은 참조 [DebuggerTypeProxy 특성 사용 하 여](../debugger/using-debuggertypeproxy-attribute.md)합니다.  
+  제네릭 형식에 대한 지원은 제한되어 있습니다. 제네릭 형식이 개방형 형식인 경우에만 제네릭 형식을 대상으로 하는 시각화 도우미를 작성할 수 있습니다. `DebuggerTypeProxy` 특성을 사용하는 경우에도 이 제한은 동일하게 적용됩니다. 자세한 내용은 참조 하세요 [DebuggerTypeProxy 특성 사용 하 여](../debugger/using-debuggertypeproxy-attribute.md)입니다.  
   
- 사용자 지정 시각화 도우미를 작성할 때는 보안 문제를 고려해야 합니다. 참조 [시각화 도우미 보안 고려 사항](../debugger/visualizer-security-considerations.md)합니다.  
+  사용자 지정 시각화 도우미를 작성할 때는 보안 문제를 고려해야 합니다. 참조 [시각화 도우미 보안 고려 사항](../debugger/visualizer-security-considerations.md)합니다.  
   
- 다음 절차에서는 시각화 도우미를 만들기 위해 수행해야 할 작업에 대한 간략한 개요를 제공합니다. 보다 자세한 설명을 참조 하십시오. [연습: C#에서 시각화 도우미 작성](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)합니다.  
+  다음 절차에서는 시각화 도우미를 만들기 위해 수행해야 할 작업에 대한 간략한 개요를 제공합니다. 자세한 내용은 참조 하세요. [연습: C#에서 시각화 도우미 작성](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)합니다.  
   
 ### <a name="to-create-the-debugger-side"></a>디버거 쪽 코드를 만들려면  
   

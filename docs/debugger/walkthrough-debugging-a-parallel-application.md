@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b675b74ef843a9a6b186149d16086df2528eab57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872644"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>연습: Visual Studio에서 병렬 응용 프로그램 디버깅
 이 연습에 사용 하는 방법을 보여 줍니다 합니다 **병렬 작업** 하 고 **병렬 스택** 병렬 응용 프로그램을 디버깅 하는 windows. 이러한 windows 이해 하 고 사용 하는 코드의 런타임 동작을 확인 하는 데 도움이 합니다 [TPL 작업 병렬 라이브러리 ()](/dotnet/standard/parallel-programming/task-parallel-library-tpl) 또는 [동시성 런타임](/cpp/parallel/concrt/concurrency-runtime)합니다. 이 연습에서는 기본 제공 중단점이 있는 샘플 코드를 제공합니다. 사용 하는 방법을 보여 줍니다 코드가 중단 후 합니다 **병렬 작업** 하 고 **병렬 스택** 검사 하는 windows.  
@@ -63,25 +63,25 @@ ms.locfileid: "39468792"
   
 #### <a name="to-create-the-sample-project"></a>샘플 프로젝트를 만들려면  
   
-1.  Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-2.  중 하나를 선택 **Visual C#** 하십시오 **Visual Basic**, 또는 **Visual c + +** 합니다. 관리되는 언어의 경우 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]이 프레임워크 상자에 표시되는지 확인합니다.  
+2. 중 하나를 선택 **Visual C#** 하십시오 **Visual Basic**, 또는 **Visual c + +** 합니다. 관리되는 언어의 경우 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]이 프레임워크 상자에 표시되는지 확인합니다.  
   
-3.  아래 **Windows 데스크톱**, 선택 **콘솔 응용 프로그램** 을 클릭 한 다음 **확인**합니다. 기본값인 Debug 구성을 유지합니다.  
+3. 아래 **Windows 데스크톱**, 선택 **콘솔 응용 프로그램** 을 클릭 한 다음 **확인**합니다. 기본값인 Debug 구성을 유지합니다.  
   
-4.  프로젝트에서 .cpp, .cs 또는 .vb 코드 파일을 엽니다. 내용을 삭제하여 빈 코드 파일을 만듭니다.  
+4. 프로젝트에서 .cpp, .cs 또는 .vb 코드 파일을 엽니다. 내용을 삭제하여 빈 코드 파일을 만듭니다.  
   
-5.  선택한 언어의 다음 코드를 빈 코드 파일에 붙여 넣습니다.  
+5. 선택한 언어의 다음 코드를 빈 코드 파일에 붙여 넣습니다.  
   
- [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
- [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
- [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
+   [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
+   [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
+   [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
   
-1.  에 **파일** 메뉴에서 클릭 **모두 저장**합니다.  
+6. 에 **파일** 메뉴에서 클릭 **모두 저장**합니다.  
   
-2.  에 **빌드할** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.  
+7. 에 **빌드할** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.  
   
-     `Debugger.Break`(C++ 샘플의 경우 `DebugBreak`)가 4번 호출됩니다. 따라서 중단점을 삽입할 필요가 없으며 응용 프로그램을 실행하기만 하면 디버거에서 응용 프로그램이 최대 4번 중단됩니다.  
+    `Debugger.Break`(C++ 샘플의 경우 `DebugBreak`)가 4번 호출됩니다. 따라서 중단점을 삽입할 필요가 없으며 응용 프로그램을 실행하기만 하면 디버거에서 응용 프로그램이 최대 4번 중단됩니다.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>병렬 스택 창 사용: 스레드 뷰  
  **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다. 첫 번째 중단점이 적중될 때까지 기다립니다.  

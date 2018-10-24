@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812506"
 ---
 # <a name="validate-your-uml-model"></a>UML 모델 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Visual Studio에서 그릴 수 있는 일부 UML 모델은 프로젝트에서 �
 ## <a name="invoking-validation"></a>유효성 검사 호출  
  유효성 검사 확장을 설치한 경우 확장이 제공하는 제약 조건이 적용될 수 있는 경우는 다음과 같습니다. 일부 제약 조건은 이러한 몇몇 사례에서만 적용되도록 설정됩니다.  
   
--   **유효성 검사 명령입니다.** 언제 든 지 유효성 검사를 호출 하려면 **UML 모델 유효성 검사** 에 **아키텍처** 메뉴.  
+- **유효성 검사 명령입니다.** 언제 든 지 유효성 검사를 호출 하려면 **UML 모델 유효성 검사** 에 **아키텍처** 메뉴.  
   
-    > [!NOTE]
-    >  유효성 검사 제약 조건이 설치된 경우에만 명령이 나타납니다.  
+  > [!NOTE]
+  >  유효성 검사 제약 조건이 설치된 경우에만 명령이 나타납니다.  
   
--   **모델을 저장 합니다.** 모델을 저장할 때 유효성 검사 제약 조건이 적용될 수 있습니다. 이들 제약 조건을 사용하면 프로젝트 해석에 따라 잘못된 모델을 저장하지 않게 할 수 있습니다.  
+- **모델을 저장 합니다.** 모델을 저장할 때 유효성 검사 제약 조건이 적용될 수 있습니다. 이들 제약 조건을 사용하면 프로젝트 해석에 따라 잘못된 모델을 저장하지 않게 할 수 있습니다.  
   
-     오류가 있으면 모델을 저장할지 묻는 메시지가 표시됩니다. 오류를 수정하거나 모델을 그대로 저장하도록 선택할 수 있습니다.  
+   오류가 있으면 모델을 저장할지 묻는 메시지가 표시됩니다. 오류를 수정하거나 모델을 그대로 저장하도록 선택할 수 있습니다.  
   
--   **모델을 열면 됩니다.** 모델을 저장할 때 있던 오류 메시지를 복원하기 위해, 모델을 열 때 유효성 검사 메서드가 적용될 수 있습니다. 모델의 다른 파트에서 작업 중인 사용자가 적용한 변경 내용 간 불일치로 인해 오류가 도입될 수도 있습니다. 자세한 내용은 [모델 및 다이어그램 내보내기 공유](../modeling/share-models-and-exporting-diagrams.md)합니다.  
+- **모델을 열면 됩니다.** 모델을 저장할 때 있던 오류 메시지를 복원하기 위해, 모델을 열 때 유효성 검사 메서드가 적용될 수 있습니다. 모델의 다른 파트에서 작업 중인 사용자가 적용한 변경 내용 간 불일치로 인해 오류가 도입될 수도 있습니다. 자세한 내용은 [모델 및 다이어그램 내보내기 공유](../modeling/share-models-and-exporting-diagrams.md)합니다.  
   
- 유효성 검사 오류는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 오류 창에 보고됩니다.  
+  유효성 검사 오류는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 오류 창에 보고됩니다.  
   
- 다이어그램에서 잘못된 요소를 선택하려면 오류를 두 번 클릭합니다. 이 방법은 잘못된 요소가 열린 다이어그램에 표시된 경우에만 사용할 수 있습니다.  
+  다이어그램에서 잘못된 요소를 선택하려면 오류를 두 번 클릭합니다. 이 방법은 잘못된 요소가 열린 다이어그램에 표시된 경우에만 사용할 수 있습니다.  
   
 ## <a name="installing-validation-constraints"></a>유효성 검사 제약 조건 설치  
  제약 조건은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장(VSIX) 파일 내에 패키지됩니다. 일반적으로 제약 조건 집합은 메뉴 명령, 프로필, 도구 상자 항목 등의 기타 정의를 포함하는 확장의 파트입니다.  

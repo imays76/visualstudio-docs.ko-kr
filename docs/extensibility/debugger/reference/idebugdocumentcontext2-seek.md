@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ba99005bfe64782bcbaf655e659ae015a6d5c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41db3997ef078976a9e419e014ae9717d2d3d019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873541"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-지정된 된 수 있는 문이나 줄의 여 문서 컨텍스트를 이동합니다.  
+문이나 줄의 지정된 된 수 만큼 문서 컨텍스트를 이동합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,13 +43,13 @@ int Seek(
   
 #### <a name="parameters"></a>매개 변수  
  `nCount`  
- [in] 문 또는 문서 컨텍스트에 따라 든, 이동 하려면 줄의 수입니다.  
+ [in] 문 또는 문서 컨텍스트에 따라 미리 이동할 줄 수입니다.  
   
  `ppDocContext`  
- [out] 새 반환 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 개체의 새 위치로 사용 합니다.  
+ [out] 반환 된 새 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 새 위치를 사용 하 여 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

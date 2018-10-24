@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b02adab3b0ba032a39ce73c08bd287213ef2ffc4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4e4e6b5471f1d36eab677d8a1d0b65ab39b7dba4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853950"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>방법: 프로그래밍 방식으로 Word에서 검색 옵션 설정
   Microsoft Office Word 문서에서 선택 항목에 대 한 검색 옵션을 설정 하는 방법은 두 가지 있습니다.  
   
--   개별 속성을 설정 된 <xref:Microsoft.Office.Interop.Word.Find> 개체입니다.  
+- 개별 속성을 설정 된 <xref:Microsoft.Office.Interop.Word.Find> 개체입니다.  
   
--   인수를 사용 합니다 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 메서드는 <xref:Microsoft.Office.Interop.Word.Find> 개체입니다.  
+- 인수를 사용 합니다 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 메서드는 <xref:Microsoft.Office.Interop.Word.Find> 개체입니다.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="use-properties-of-a-find-object"></a>찾기 개체의 속성을 사용 하 여  
  속성을 설정 하는 다음 코드는 <xref:Microsoft.Office.Interop.Word.Find> 현재 선택 영역 내에서 텍스트를 검색할 개체입니다. 검색 조건을 검색할 정방향, 래핑 및 텍스트를 검색 하는 등의 속성은는 <xref:Microsoft.Office.Interop.Word.Find> 개체입니다.  

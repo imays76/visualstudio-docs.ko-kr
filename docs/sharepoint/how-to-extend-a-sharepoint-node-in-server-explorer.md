@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1dee26ae729dedc2d38895ca84e430ffcbad875f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861841"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>방법: 서버 탐색기에서 SharePoint 노드 확장
   아래에 있는 노드를 확장할 수 있습니다 합니다 **SharePoint 연결** 노드에서 **서버 탐색기**합니다. 기존 노드에 새 자식 노드, 바로 가기 메뉴 항목 또는 속성을 추가 하려는 경우에 유용 합니다. 자세한 내용은 [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)합니다.  
@@ -40,9 +40,9 @@ ms.locfileid: "37119800"
   
 3.  <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 인터페이스를 구현하는 클래스를 만듭니다.  
   
-4.  추가 된 <xref:System.ComponentModel.Composition.ExportAttribute> 특성을 클래스입니다. 이 특성을 검색 하 고 로드 되도록 Visual Studio를 사용 하면 프로그램 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 구현 합니다. 전달 된 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 특성 생성자에는 형식입니다.  
+4.  클래스에 <xref:System.ComponentModel.Composition.ExportAttribute> 특성을 추가합니다. 이 특성을 검색 하 고 로드 되도록 Visual Studio를 사용 하면 프로그램 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 구현 합니다. 전달 된 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 특성 생성자에는 형식입니다.  
   
-5.  추가 된 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 특성을 클래스입니다. 이 특성을 확장 하려는 노드의 형식에 대 한 문자열 식별자를 지정 합니다.  
+5.  클래스에 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 특성을 추가합니다. 이 특성을 확장 하려는 노드의 형식에 대 한 문자열 식별자를 지정 합니다.  
   
      Visual Studio에서 제공 하는 기본 제공 노드 형식에 지정 하려면 다음 열거형 값 중 하나를 특성 생성자에 전달 합니다.  
   
@@ -58,17 +58,17 @@ ms.locfileid: "37119800"
   
     -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: 노드에 사용자 지정 속성을 추가 하려면이 이벤트를 처리 합니다. 속성에 표시 합니다 **속성** 창 노드를 선택 합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 코드 예제에는 두 가지 유형의 노드 확장을 만드는 방법을 보여 줍니다.  
   
--   상황에 맞는 메뉴 항목을 SharePoint 사이트 노드를 추가 하는 확장입니다. 메뉴 항목을 클릭 하면 클릭 된 노드 이름을 표시 됩니다.  
+- 상황에 맞는 메뉴 항목을 SharePoint 사이트 노드를 추가 하는 확장입니다. 메뉴 항목을 클릭 하면 클릭 된 노드 이름을 표시 됩니다.  
   
--   라는 사용자 지정 속성을 추가 하는 확장인 **ContosoExampleProperty** 명명 된 필드를 나타내는 각 노드에 **본문**합니다.  
+- 라는 사용자 지정 속성을 추가 하는 확장인 **ContosoExampleProperty** 명명 된 필드를 나타내는 각 노드에 **본문**합니다.  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
+  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
+  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- 이 확장 노드에 편집할 수 있는 문자열 속성을 추가합니다. 또한 SharePoint 서버에서 읽기 전용 데이터를 표시 하는 사용자 지정 속성을 만들 수 있습니다. 이 작업을 수행 하는 방법을 보여주는 예제를 참조 하세요 [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)합니다.  
+  이 확장 노드에 편집할 수 있는 문자열 속성을 추가합니다. 또한 SharePoint 서버에서 읽기 전용 데이터를 표시 하는 사용자 지정 속성을 만들 수 있습니다. 이 작업을 수행 하는 방법을 보여주는 예제를 참조 하세요 [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)합니다.  
   
 ## <a name="compile-the-code"></a>코드 컴파일  
  이 예제에는 다음 어셈블리에 대 한 참조가 필요합니다.  

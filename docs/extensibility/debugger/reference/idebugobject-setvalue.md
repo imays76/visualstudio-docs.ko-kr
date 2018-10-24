@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6f8f589c0dca8c97e1a9664d9eaa93bf9e8741
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b78a4513aab8a9c4d2c539a592799dffdcea53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850973"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-연속 된 일련의 바이트에서 개체의 값을 설정합니다.  
+연속 된 일련의 바이트에서 개체의 값을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,10 +49,10 @@ int SetValue(
  [in] 크기 (바이트)에서 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 배열의 값이에 복사 됩니다 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 개체를 기존 값을 대체 합니다. 새 값의 크기는 기존 값 보다 크거나 작을 수 있습니다. 이 `IDebugObject` null 참조일 수 없습니다.  
+ 배열의 값이 복사 됩니다 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 개체를 기존 값을 대체 합니다. 새 값의 크기는 기존 값 보다 작거나 클 수 있습니다. 이 `IDebugObject` null 참조일 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

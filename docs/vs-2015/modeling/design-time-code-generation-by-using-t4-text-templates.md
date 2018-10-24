@@ -20,12 +20,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859280"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,66 +82,66 @@ ms.locfileid: "49268335"
 ### <a name="regenerating-the-code"></a>코드 다시 생성  
  다음과 같은 경우에는 템플릿이 실행되어 보조 파일이 생성됩니다.  
   
--   템플릿을 편집한 다음 다른 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창으로 포커스를 변경하는 경우  
+- 템플릿을 편집한 다음 다른 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창으로 포커스를 변경하는 경우  
   
--   템플릿을 저장하는 경우  
+- 템플릿을 저장하는 경우  
   
--   클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션에서 모든 템플릿이 변형됩니다.  
+- 클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션에서 모든 템플릿이 변형됩니다.  
   
--   **솔루션 탐색기**의 바로 가기 메뉴에서 파일, 선택 **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.  
+- **솔루션 탐색기**의 바로 가기 메뉴에서 파일, 선택 **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.  
   
- 템플릿이 읽는 데이터 파일이 변경되면 템플릿이 실행되도록 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트를 설정할 수도 있습니다. 자세한 내용은 [코드를 자동으로 다시 생성](#Regenerating)합니다.  
+  템플릿이 읽는 데이터 파일이 변경되면 템플릿이 실행되도록 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트를 설정할 수도 있습니다. 자세한 내용은 [코드를 자동으로 다시 생성](#Regenerating)합니다.  
   
 ## <a name="generating-variable-text"></a>변수 텍스트 생성  
  텍스트 템플릿에서는 프로그램 코드를 사용하여 생성된 파일 내용이 바뀌도록 할 수 있습니다.  
   
 #### <a name="to-generate-text-by-using-program-code"></a>프로그램 코드를 사용하여 텍스트를 생성하려면  
   
-1.  `.tt` 파일의 내용을 다음과 같이 변경합니다.  
+1. `.tt` 파일의 내용을 다음과 같이 변경합니다.  
   
-    ```csharp  
-    <#@ template hostspecific="false" language="C#" #>  
-    <#@ output extension=".txt" #>  
-    <#int top = 10;  
+   ```csharp  
+   <#@ template hostspecific="false" language="C#" #>  
+   <#@ output extension=".txt" #>  
+   <#int top = 10;  
   
-    for (int i = 0; i<=top; i++)   
-    { #>  
+   for (int i = 0; i<=top; i++)   
+   { #>  
+      The square of <#= i #> is <#= i*i #>  
+   <# } #>  
+   ```  
+  
+   ```vb  
+   <#@ template hostspecific="false" language="VB" #>  
+   <#@ output extension=".txt" #>  
+   <#Dim top As Integer = 10  
+  
+   For i As Integer = 0 To top  
+   #>  
        The square of <#= i #> is <#= i*i #>  
-    <# } #>  
-    ```  
+   <#  
+   Next  
+   #>  
   
-    ```vb  
-    <#@ template hostspecific="false" language="VB" #>  
-    <#@ output extension=".txt" #>  
-    <#Dim top As Integer = 10  
+   ```  
   
-    For i As Integer = 0 To top  
-    #>  
-        The square of <#= i #> is <#= i*i #>  
-    <#  
-    Next  
-    #>  
+2. .tt 파일을 저장하고 생성된 .txt 파일을 다시 검사합니다. 숫자 0에서 10까지를 각각 제곱한 값이 표시됩니다.  
   
-    ```  
+   위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.  
   
-2.  .tt 파일을 저장하고 생성된 .txt 파일을 다시 검사합니다. 숫자 0에서 10까지를 각각 제곱한 값이 표시됩니다.  
-  
- 위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.  
-  
- [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.  
+   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>디자인 타임 T4 텍스트 템플릿 디버그  
  텍스트 템플릿을 디버그하려면  
   
--   먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.  
+- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.  
   
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`  
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   일반 코드에서와 같은 방식으로 템플릿에 중단점을 설정합니다.  
+- 일반 코드에서와 같은 방식으로 템플릿에 중단점을 설정합니다.  
   
--   선택할 **T4 템플릿 디버그** 솔루션 탐색기에서 텍스트 템플릿 파일의 바로 가기 메뉴에서.  
+- 선택할 **T4 템플릿 디버그** 솔루션 탐색기에서 텍스트 템플릿 파일의 바로 가기 메뉴에서.  
   
- 템플릿이 실행된 후 중단점에서 중지됩니다. 일반적인 방식으로 변수를 점검하고 코드를 단계별로 실행할 수 있습니다.  
+  템플릿이 실행된 후 중단점에서 중지됩니다. 일반적인 방식으로 변수를 점검하고 코드를 단계별로 실행할 수 있습니다.  
   
 > [!TIP]
 >  `debug="true"`를 사용하는 경우 생성된 코드에 줄 번호 매기기 지시문이 추가로 삽입되므로 해당 코드가 텍스트 템플릿에 보다 정확하게 매핑됩니다. 이 지시문이 없으면 중단점으로 인해 실행이 잘못된 상태로 중지될 수 있습니다.  
@@ -208,13 +208,13 @@ ms.locfileid: "49268335"
 ### <a name="structuring-text-templates"></a>텍스트 템플릿 구조 지정  
  실제 프로그래밍에서는 대개 템플릿 코드를 다음의 두 부분으로 구분합니다.  
   
--   변수에서 값은 설정하지만 텍스트 블록은 포함하지 않는 구성(데이터 수집) 부분. 위의 예에서 이 부분은 `properties` 초기화입니다.  
+- 변수에서 값은 설정하지만 텍스트 블록은 포함하지 않는 구성(데이터 수집) 부분. 위의 예에서 이 부분은 `properties` 초기화입니다.  
   
-     이 부분은 저장소 내 모델을 생성하며 일반적으로 모델 파일을 읽으므로 "모델" 섹션이라고 하는 경우도 있습니다.  
+   이 부분은 저장소 내 모델을 생성하며 일반적으로 모델 파일을 읽으므로 "모델" 섹션이라고 하는 경우도 있습니다.  
   
--   변수의 값을 사용하는 텍스트 생성 부분. 위의 예에서는 `foreach(...){...}`에 해당합니다.  
+- 변수의 값을 사용하는 텍스트 생성 부분. 위의 예에서는 `foreach(...){...}`에 해당합니다.  
   
- 코드를 반드시 이와 같이 분리해야 하는 것은 아니지만 이 스타일을 사용하면 텍스트를 포함하는 부분을 보다 단순하게 작성하여 템플릿을 더 쉽게 읽을 수 있습니다.  
+  코드를 반드시 이와 같이 분리해야 하는 것은 아니지만 이 스타일을 사용하면 텍스트를 포함하는 부분을 보다 단순하게 작성하여 템플릿을 더 쉽게 읽을 수 있습니다.  
   
 ## <a name="reading-files-or-other-sources"></a>파일 또는 기타 소스 읽기  
  모델 파일이나 데이터베이스에 액세스하기 위해 템플릿 코드는 System.XML 등의 어셈블리를 사용할 수 있습니다. 이러한 어셈블리에 액세스하려면 다음과 같은 지시문을 삽입해야 합니다.  

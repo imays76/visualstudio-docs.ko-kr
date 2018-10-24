@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b7ac4f7cde93d4637906202f7b4c643750d8e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9c1bd0887c8d154501a87ea9a2227e079bbb083
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872761"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-이 메서드는 해당 값이 지정 열거형 상수 이름을 가져옵니다.  
+이 메서드는 해당 값을 지정 된 열거형 상수의 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,13 +43,13 @@ int GetStringFromValue(
   
 #### <a name="parameters"></a>매개 변수  
  `value`  
- [in] 열거형의 이름을 가져오지 못했습니다 상수 값입니다.  
+ [in] 열거형의 이름을 상수 가져올 값입니다.  
   
  `pbstrValue`  
  [out] 열거형 상수의 이름을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 값에 연결 된 이름은 하거나 오류 코드를 반환 합니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 값에 연결 된 이름은 또는 오류 코드를 반환 하는 경우.  
   
 ## <a name="remarks"></a>설명  
  동일한 값과 연결 된 이름을 여러 개 있으면 열거형에 정의 된 이름이 반환 됩니다.  

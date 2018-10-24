@@ -20,15 +20,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 107248d0dddf89f63056a8a385eeb2a942ca91c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 084fd28106a3ac5af9a40d46cf687d4982f53690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834309"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider를 지정하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
@@ -48,15 +49,15 @@ ms.locfileid: "49186707"
 ## <a name="rule-description"></a>규칙 설명
  경우는 <xref:System.Globalization.CultureInfo?displayProperty=fullName> 또는 <xref:System.IFormatProvider> 개체가 제공 되지 않으면, 오버 로드 된 멤버에서 제공 하는 기본 값이 모든 로캘에서 원하는 효과 없을 수 있습니다. 또한 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 멤버 기본 culture를 선택 하 고 코드에 대해 올바르지 않을 수 있다는 가정 하에 따라 서식 지정 합니다. 코드를 시나리오에 대 한 예상 대로 작동 하는지 확인 하려면 다음 지침에 따라 문화권별 형식 정보를 제공 해야 합니다.
 
--   사용자에 게 표시할 값을 현재 문화권을 사용 합니다. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>을 참조하세요.
+- 사용자에 게 표시할 값을 현재 문화권을 사용 합니다. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>을 참조하세요.
 
--   값을 저장 하 고 (파일이 나 데이터베이스에 유지) 소프트웨어 액세스, 하는 경우 고정 문화권을 사용 합니다. <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>을 참조하세요.
+- 값을 저장 하 고 (파일이 나 데이터베이스에 유지) 소프트웨어 액세스, 하는 경우 고정 문화권을 사용 합니다. <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>을 참조하세요.
 
--   값의 대상을 알 수 없는, 데이터 소비자 했거나 공급자 문화권을 지정 합니다.
+- 값의 대상을 알 수 없는, 데이터 소비자 했거나 공급자 문화권을 지정 합니다.
 
- 사실은 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> 의 인스턴스를 사용 하 여 지역화 된 리소스를 검색할 때에 사용 되며는 <xref:System.Resources.ResourceManager?displayProperty=fullName> 클래스.
+  사실은 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> 의 인스턴스를 사용 하 여 지역화 된 리소스를 검색할 때에 사용 되며는 <xref:System.Resources.ResourceManager?displayProperty=fullName> 클래스.
 
- 오버 로드 된 멤버의 기본 동작에 맞게 적절 한 인 경우에 코드 자체 문서화 되 고 더 쉽게 유지 관리 되도록 문화권별 오버 로드를 명시적으로 호출 하는 것이 좋습니다.
+  오버 로드 된 멤버의 기본 동작에 맞게 적절 한 인 경우에 코드 자체 문서화 되 고 더 쉽게 유지 관리 되도록 문화권별 오버 로드를 명시적으로 호출 하는 것이 좋습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하는 오버 로드를 사용 하 여는 <xref:System.Globalization.CultureInfo> 또는 <xref:System.IFormatProvider> 하며 이전에 나열 된 지침에 따라 인수를 지정 합니다.

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 464c71d7caeca1b9b8c4c3455dad1737649f5ea4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ed7cde8d02706e03f98b98251f919cb5e756247
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832799"
 ---
 # <a name="scchistory-function"></a>SccHistory 함수
-이 함수에는 지정 된 파일의 기록을 표시합니다.  
+이 함수는 지정된 된 파일의 기록을 표시합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,13 +40,13 @@ SCCRTN SccHistory(
   
 #### <a name="parameters"></a>매개 변수  
  `pvContext`  
- [in] 소스 제어 플러그 인 컨텍스트 구조입니다.  
+ [in] 원본 제어 플러그 인 상황에 맞는 구조입니다.  
   
  `hWnd`  
- [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에를 부모로 사용할 수 있는 IDE 창 핸들입니다.  
+ [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.  
   
  `nFiles`  
- [in] 에 지정 된 파일의 수는 `lpFileName` 배열입니다.  
+ [in] 에 지정 된 파일 수는 `lpFileName` 배열입니다.  
   
  `lpFileName`  
  [in] 파일의 정규화 된 이름의 배열입니다.  
@@ -55,30 +55,30 @@ SCCRTN SccHistory(
  [in] 명령 플래그 (현재 사용 되지 않음)입니다.  
   
  `pvOptions`  
- [in] 소스 제어 플러그 인에 대 한 옵션입니다.  
+ [in] 원본 제어 플러그 인에 대 한 옵션입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 소스 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환:  
+ 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
 |값|설명|  
 |-----------|-----------------|  
-|SCC_OK|버전 기록 성공적으로 가져온 것입니다.|  
-|SCC_I_RELOADFILE|소스 제어 시스템 (예를 들어, 이전 버전을 가져오는)에서 기록을 인출 하는 동안 디스크에 있는 파일을 실제로 수정 하므로 IDE이이 파일을 다시 로드 해야 합니다.|  
-|SCC_E_FILENOTCONTROLLED|소스 제어에서 파일이 아닙니다.|  
+|SCC_OK|버전 기록이 가져왔습니다.|  
+|SCC_I_RELOADFILE|실제로 소스 제어 시스템 (예를 들어 여는 이전 버전), 기록을 페치하는 동안 디스크에 있는 파일을 수정 하므로 IDE이이 파일을 다시 로드 해야 합니다.|  
+|SCC_E_FILENOTCONTROLLED|소스 제어를 파일이 없습니다.|  
 |SCC_E_OPNOTSUPPORTED|소스 제어 시스템에서이 작업을 지원 하지 않습니다.|  
-|SCC_E_NOTAUTHORIZED|사용자가이 작업을 수행할 수 없습니다.|  
-|SCC_E_ACCESSFAILURE|소스 제어 시스템에 네트워크 또는 경합 문제 때문에 액세스 하는 문제가 발생 했습니다. 다시 시도 하 여 것이 좋습니다.|  
-|SCC_E_PROJNOTOPEN|프로젝트 되어 열립니다.|  
+|SCC_E_NOTAUTHORIZED|사용자는이 작업을 수행할 수 없습니다.|  
+|SCC_E_ACCESSFAILURE|소스 제어 시스템에 경합 또는 네트워크 문제로 인해 액세스 문제가 있습니다. 재시도 사용 하는 것이 좋습니다.|  
+|SCC_E_PROJNOTOPEN|되지 않은 프로젝트가 열립니다.|  
 |SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다. 파일 히스토리를 가져올 수 없습니다.|  
   
 ## <a name="remarks"></a>설명  
- 소스 제어 플러그 인 각 파일의 기록을 표시 하는 자체 대화 상자를 표시할 수를 사용 하 여 `hWnd` 부모 창으로 합니다. 또는 선택적 텍스트 출력 콜백 함수에 제공 되는 [SccOpenProject](../extensibility/sccopenproject-function.md) 지 원하는 경우 사용할 수 있습니다.  
+ 소스 제어 플러그 인 각 파일의 기록을 표시 하려면 자체 대화 상자를 표시할 수 있습니다 사용 하 여 `hWnd` 부모 창으로 합니다. 또는 선택적 텍스트 출력 콜백 함수를 제공 합니다 [SccOpenProject](../extensibility/sccopenproject-function.md) 지원 되는 경우 사용할 수 있습니다.  
   
- 참고가 특정 상황에서는이 호출을 실행 하는 동안 검사할 파일이 변경 될 수 있습니다. 예를 들어는 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 기록 명령은 사용자 파일의 이전 버전을 얻으려면 기회를 제공 합니다. 이 경우 소스 제어 플러그 인 반환 `SCC_I_RELOAD` 경고 IDE 파일 다시 로드 해야 합니다.  
+ 특정 상황에서,이 호출의 실행 하는 동안 검사할 파일이 변경 될 수 있습니다. 예를 들어를 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 기록 명령은 사용자 파일의 이전 버전을 가져올 수 있는 기회를 제공 합니다. 이러한 경우에는 소스 제어 플러그 인 반환 `SCC_I_RELOAD` 경고 IDE 파일 다시 로드 해야 합니다.  
   
 > [!NOTE]
 >  소스 제어 플러그 인 파일의 배열에 대해이 함수를 지원 하지 않으면, 첫 번째 파일에 대 한 파일 히스토리만 표시할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
+ [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

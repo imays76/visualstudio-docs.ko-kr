@@ -14,12 +14,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839325"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>도메인별 언어 도구 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ ms.locfileid: "49273262"
 ## <a name="the-dsl-tools-solution"></a>DSL 도구 솔루션  
  도메인 관련 디자이너 마법사에는 다음 솔루션 템플릿을 제공합니다.  
   
--   작업 흐름  
+- 작업 흐름  
   
--   클래스 다이어그램  
+- 클래스 다이어그램  
   
--   최소 언어  
+- 최소 언어  
   
--   구성 요소 모델  
+- 구성 요소 모델  
   
--   최소한의 WPF  
+- 최소한의 WPF  
   
--   최소 Windows.Forms  
+- 최소 Windows.Forms  
   
--   DSL 라이브러리  
+- DSL 라이브러리  
   
- 자세한 내용은 [도메인별 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)합니다.  
+  자세한 내용은 [도메인별 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)합니다.  
   
- 만들어집니다는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 다음 프로젝트가 포함 된 솔루션:  
+  만들어집니다는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 다음 프로젝트가 포함 된 솔루션:  
   
--   Dsl  
+- Dsl  
   
-     Dsl 프로젝트 도메인 특정 언어 및 해당 편집 및 처리 도구를 정의합니다.  
+   Dsl 프로젝트 도메인 특정 언어 및 해당 편집 및 처리 도구를 정의합니다.  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     DslPackage 프로젝트 언어 도구와 통합 하는 방법을 결정 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
+   DslPackage 프로젝트 언어 도구와 통합 하는 방법을 결정 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL 도구는 그래픽 인터페이스  
  도메인 특정 언어에 요소 및 관계를 추가 하려면 DSL 도구 그래픽 인터페이스를 사용할 수 있습니다. 요소를 추가 하면 셰이프에 매핑시키고 하 고 색을 사용자 지정 데코레이터를 추가 하 여 모양을 정의할 수 있습니다. 또한 도구 상자에 요소를 추가할 수 있습니다.  

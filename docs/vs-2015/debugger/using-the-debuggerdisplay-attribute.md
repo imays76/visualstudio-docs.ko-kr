@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82f72dba6b40f5b09ccc71007eb577c19cf7358e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299418"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827738"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,13 +76,13 @@ csc /t:library autoexp.cs
   
  DebuggerDisplay에서 식을 사용하면 다음과 같은 문제가 발생할 수 있습니다.  
   
--   식 계산은 디버거에서 가장 비용이 많이 드는 작업이며 식은 표시될 때마다 계산됩니다. 이는 코드를 단계별로 수행하는 동안 성능 문제를 야기할 수 있습니다. 예를 들어 컬렉션 또는 목록의 값을 표시하는 데 사용되는 복합 식은 요소 수가 많으면 매우 느려질 수 있습니다.  
+- 식 계산은 디버거에서 가장 비용이 많이 드는 작업이며 식은 표시될 때마다 계산됩니다. 이는 코드를 단계별로 수행하는 동안 성능 문제를 야기할 수 있습니다. 예를 들어 컬렉션 또는 목록의 값을 표시하는 데 사용되는 복합 식은 요소 수가 많으면 매우 느려질 수 있습니다.  
   
--   식은 식을 작성한 언어의 식 계산기가 아닌 현재 스택 프레임 언어의 식 계산기에 의해 계산됩니다. 언어가 서로 다를 경우 이로 인해 예기치 않은 결과가 발생할 수 있습니다.  
+- 식은 식을 작성한 언어의 식 계산기가 아닌 현재 스택 프레임 언어의 식 계산기에 의해 계산됩니다. 언어가 서로 다를 경우 이로 인해 예기치 않은 결과가 발생할 수 있습니다.  
   
--   식을 계산하면 응용 프로그램의 상태가 변경될 수 있습니다. 예를 들어 속성의 값을 설정하는 식은 실행 코드에서 속성 값을 변경합니다.  
+- 식을 계산하면 응용 프로그램의 상태가 변경될 수 있습니다. 예를 들어 속성의 값을 설정하는 식은 실행 코드에서 속성 값을 변경합니다.  
   
- 식 계산의 가능한 문제를 줄이는 한 가지 방법은 작업을 수행하고 문자열을 반환하는 private 속성을 만드는 것입니다. 이렇게 하면 DebuggerDisplay 특성이 private 속성 값을 표시할 수 있습니다. 다음 예제에서는 이 패턴을 구현합니다.  
+  식 계산의 가능한 문제를 줄이는 한 가지 방법은 작업을 수행하고 문자열을 반환하는 private 속성을 만드는 것입니다. 이렇게 하면 DebuggerDisplay 특성이 private 속성 값을 표시할 수 있습니다. 다음 예제에서는 이 패턴을 구현합니다.  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

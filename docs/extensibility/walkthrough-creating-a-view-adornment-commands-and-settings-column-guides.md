@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 7d0605798f5970411fa315d309807dc6f1f7a0cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872358"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>연습: 보기 장식, 명령 및 설정 (열 안내선) 만들기
 명령 및 효과 보기를 사용 하 여 Visual Studio 텍스트/코드 편집기를 확장할 수 있습니다. 이 문서는 인기 있는 확장 기능을 열 가이드를 사용 하 여 시작 하는 방법을 보여 줍니다. 열 안내선은 특정 열 너비에 코드를 관리할 수 있도록 텍스트 편집기의 보기에 그려지는 시각적으로 밝은 선입니다. 특히, 서식이 지정 된 코드 샘플 문서, 블로그 게시물에서에서 포함 또는 버그 보고서에 대해 중요할 수 있습니다.  
   
  이 연습에서는 있습니다.  
   
--   VSIX 프로젝트를 만듭니다  
+- VSIX 프로젝트를 만듭니다  
   
--   편집기 보기 adornment 추가  
+- 편집기 보기 adornment 추가  
   
--   저장 및 시작 설정 (여기서 그리기 열 안내선과 해당 색)에 대 한 지원 추가  
+- 저장 및 시작 설정 (여기서 그리기 열 안내선과 해당 색)에 대 한 지원 추가  
   
--   명령을 추가 (guides 열 추가/제거, 해당 색을 변경)  
+- 명령을 추가 (guides 열 추가/제거, 해당 색을 변경)  
   
--   편집 메뉴에 텍스트 문서 상황에 맞는 메뉴 명령을 배치합니다  
+- 편집 메뉴에 텍스트 문서 상황에 맞는 메뉴 명령을 배치합니다  
   
--   Visual Studio 명령 창에서 명령을 호출 하는 것에 대 한 지원 추가  
+- Visual Studio 명령 창에서 명령을 호출 하는 것에 대 한 지원 추가  
   
- 이 Visual Studio 갤러리를 사용 하 여 열 안내선 기능의 버전을 사용해 볼 수 있습니다[확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)합니다.  
+  이 Visual Studio 갤러리를 사용 하 여 열 안내선 기능의 버전을 사용해 볼 수 있습니다[확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)합니다.  
   
- **참고**:이 연습에서는 Visual Studio 확장 템플릿에 의해 생성 된 소수의 파일에 코드의 상당한을 붙여넣습니다. 그러나 곧이 연습에서는 참조 하는 다른 확장 프로그램 예제를 사용 하 여 github에서 완성 된 솔루션. 완성 된 코드는 generictemplate 아이콘을 사용 하는 대신 실제 명령 아이콘에는 약간 다릅니다.  
+  **참고**:이 연습에서는 Visual Studio 확장 템플릿에 의해 생성 된 소수의 파일에 코드의 상당한을 붙여넣습니다. 그러나 곧이 연습에서는 참조 하는 다른 확장 프로그램 예제를 사용 하 여 github에서 완성 된 솔루션. 완성 된 코드는 generictemplate 아이콘을 사용 하는 대신 실제 명령 아이콘에는 약간 다릅니다.  
   
 ## <a name="get-started"></a>시작  
  Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 되어 있습니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
@@ -45,21 +45,21 @@ ms.locfileid: "46496105"
 ## <a name="set-up-the-solution"></a>솔루션 설정  
  먼저 있습니다 VSIX 프로젝트를 만듭니다, 그리고 편집기 보기 adornment를 추가한 다음 추가 (추가 하는 명령은 소유 하기 위해 VSPackage) 명령입니다. 기본 아키텍처는 다음과 같습니다.  
   
--   만든 텍스트 뷰 생성 수신기가는 `ColumnGuideAdornment` 뷰당 개체입니다. 이 개체는 뷰를 변경 하는 방법에 대 한 이벤트를 수신 하거나 필요에 따라 설정 변경, 업데이트 또는 다시 그리기 열 안내 합니다.  
+- 만든 텍스트 뷰 생성 수신기가는 `ColumnGuideAdornment` 뷰당 개체입니다. 이 개체는 뷰를 변경 하는 방법에 대 한 이벤트를 수신 하거나 필요에 따라 설정 변경, 업데이트 또는 다시 그리기 열 안내 합니다.  
   
--   한 `GuidesSettingsManager` Visual Studio 설정 저장소에서 읽기와 쓰기를 처리 하는 합니다. Settings manager 역시 사용자 명령을 지 원하는 설정을 업데이트 하는 것에 대 한 작업 (열 추가, 열을 제거, 색 변경).  
+- 한 `GuidesSettingsManager` Visual Studio 설정 저장소에서 읽기와 쓰기를 처리 하는 합니다. Settings manager 역시 사용자 명령을 지 원하는 설정을 업데이트 하는 것에 대 한 작업 (열 추가, 열을 제거, 색 변경).  
   
--   사용자 명령에 있는 경우 필요한 VSIP 패키지가 이지만 명령을 구현 개체를 초기화 하는 상용구 코드 뿐입니다.  
+- 사용자 명령에 있는 경우 필요한 VSIP 패키지가 이지만 명령을 구현 개체를 초기화 하는 상용구 코드 뿐입니다.  
   
--   `ColumnGuideCommands` 명령과에 선언 된 명령에 대 한 명령 처리기를 후크 사용자를 실행 하는 개체를 *.vsct* 파일입니다.  
+- `ColumnGuideCommands` 명령과에 선언 된 명령에 대 한 명령 처리기를 후크 사용자를 실행 하는 개체를 *.vsct* 파일입니다.  
   
- **VSIX**합니다. 사용 하 여 **파일 &#124; 새로 만들기...**  프로젝트를 만드는 명령입니다. 선택 된 **확장성** 노드 아래의 **C#** 왼쪽된 탐색 창에서 선택한 **VSIX 프로젝트** 오른쪽 창에서. 이름을 입력 **ColumnGuides** 선택한 **확인** 프로젝트를 만듭니다.  
+  **VSIX**합니다. 사용 하 여 **파일 &#124; 새로 만들기...**  프로젝트를 만드는 명령입니다. 선택 된 **확장성** 노드 아래의 **C#** 왼쪽된 탐색 창에서 선택한 **VSIX 프로젝트** 오른쪽 창에서. 이름을 입력 **ColumnGuides** 선택한 **확인** 프로젝트를 만듭니다.  
   
- **Adornment 볼**합니다. 솔루션 탐색기에서 프로젝트 노드의 오른쪽 포인터 단추를 누릅니다. 선택 된 **추가 &#124; 새 항목...**  새 뷰 adornment 항목을 추가 하는 명령입니다. 선택할 **확장성 &#124; 편집기** 왼쪽된 탐색 창에서 선택한 **편집기 뷰포트 Adornment** 오른쪽 창에서. 이름을 입력 **ColumnGuideAdornment** 항목으로 이름을 지정 하 고 선택 **추가** 추가 합니다.  
+  **Adornment 볼**합니다. 솔루션 탐색기에서 프로젝트 노드의 오른쪽 포인터 단추를 누릅니다. 선택 된 **추가 &#124; 새 항목...**  새 뷰 adornment 항목을 추가 하는 명령입니다. 선택할 **확장성 &#124; 편집기** 왼쪽된 탐색 창에서 선택한 **편집기 뷰포트 Adornment** 오른쪽 창에서. 이름을 입력 **ColumnGuideAdornment** 항목으로 이름을 지정 하 고 선택 **추가** 추가 합니다.  
   
- 이 항목 템플릿을 프로젝트 (뿐만 아니라 참조 및 등) 두 개의 파일을 추가 확인할 수 있습니다: **ColumnGuideAdornment.cs** 하 고 **ColumnGuideAdornmentTextViewCreationListener.cs**합니다. 템플릿 보기에 자주색 사각형을 그립니다. 다음 섹션에서는 두 뷰 생성 수신기에 줄을 변경 하 고이의 내용을 바꿉니다 **ColumnGuideAdornment.cs**합니다.  
+  이 항목 템플릿을 프로젝트 (뿐만 아니라 참조 및 등) 두 개의 파일을 추가 확인할 수 있습니다: **ColumnGuideAdornment.cs** 하 고 **ColumnGuideAdornmentTextViewCreationListener.cs**합니다. 템플릿 보기에 자주색 사각형을 그립니다. 다음 섹션에서는 두 뷰 생성 수신기에 줄을 변경 하 고이의 내용을 바꿉니다 **ColumnGuideAdornment.cs**합니다.  
   
- **명령을**합니다. **솔루션 탐색기**, 프로젝트 노드의 오른쪽 포인터 단추를 누릅니다. 선택 된 **추가 &#124; 새 항목...**  새 뷰 adornment 항목을 추가 하는 명령입니다. 선택할 **확장성 &#124; VSPackage** 왼쪽된 탐색 창에서 선택한 **사용자 지정 명령** 오른쪽 창에서. 이름을 입력 **ColumnGuideCommands** 항목으로 이름을 지정 하 고 선택 **추가**합니다. 여러 참조 외에 명령 및 추가 패키지를 추가 **ColumnGuideCommands.cs**하십시오 **ColumnGuideCommandsPackage.cs**, 및 **ColumnGuideCommandsPackage.vsct** . 다음 섹션에서 정의 하 고 명령을 구현 첫 번째 및 마지막 파일의 내용을 대체 합니다.  
+  **명령을**합니다. **솔루션 탐색기**, 프로젝트 노드의 오른쪽 포인터 단추를 누릅니다. 선택 된 **추가 &#124; 새 항목...**  새 뷰 adornment 항목을 추가 하는 명령입니다. 선택할 **확장성 &#124; VSPackage** 왼쪽된 탐색 창에서 선택한 **사용자 지정 명령** 오른쪽 창에서. 이름을 입력 **ColumnGuideCommands** 항목으로 이름을 지정 하 고 선택 **추가**합니다. 여러 참조 외에 명령 및 추가 패키지를 추가 **ColumnGuideCommands.cs**하십시오 **ColumnGuideCommandsPackage.cs**, 및 **ColumnGuideCommandsPackage.vsct** . 다음 섹션에서 정의 하 고 명령을 구현 첫 번째 및 마지막 파일의 내용을 대체 합니다.  
   
 ## <a name="set-up-the-text-view-creation-listener"></a>텍스트 뷰 생성 수신기 설정  
  오픈 *ColumnGuideAdornmentTextViewCreationListener.cs* 편집기에서. 이 코드는 Visual Studio 텍스트 뷰를 만듭니다 때마다에 대 한 처리기를 구현 합니다. 보기의 특징에 따라 처리기가 호출 하는 경우를 제어 하는 특성이 있습니다.  

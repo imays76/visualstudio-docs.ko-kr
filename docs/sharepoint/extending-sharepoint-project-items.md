@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2be6c99f8601ae8dfaa819a3b70119a7b5921214
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b83d5f92a54d58aae2d4c7860e6648920615d63f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823634"
 ---
 # <a name="extend-sharepoint-project-items"></a>SharePoint 프로젝트 항목 확장
   Visual Studio에서 이미 설치 되어 있는 SharePoint 프로젝트 항목 형식에 기능을 추가 하려는 경우 프로젝트 항목 확장을 만듭니다. 예를 들어, 기본 제공 확장을 만들 수 있습니다 **이벤트 수신기** 하거나 **목록 정의** Visual Studio에서 프로젝트 항목 또는 사용자 지정 프로젝트 항목 형식에 대 한 확장을 만들 수 있습니다. 또한 모든 SharePoint 프로젝트 항목 형식에 대 한 확장을 만들 수 있습니다.  
@@ -32,11 +32,11 @@ ms.locfileid: "36326989"
   
  프로젝트 항목을 확장 하는 경우 프로젝트 항목에도 다음과 같은 기능을 추가할 수 있습니다.  
   
--   프로젝트 항목에 바로 가기 메뉴 항목을 추가 합니다. 메뉴 항목에서 해당 프로젝트 항목에 대 한 바로 가기 메뉴를 열면 나타납니다 **솔루션 탐색기**합니다. 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하거나 선택한 다음,이 선택 하 여 바로 가기 메뉴를 열고 합니다 **Shift**+**F10** 키입니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)합니다.  
+- 프로젝트 항목에 바로 가기 메뉴 항목을 추가 합니다. 메뉴 항목에서 해당 프로젝트 항목에 대 한 바로 가기 메뉴를 열면 나타납니다 **솔루션 탐색기**합니다. 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하거나 선택한 다음,이 선택 하 여 바로 가기 메뉴를 열고 합니다 **Shift**+**F10** 키입니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)합니다.  
   
--   프로젝트 항목에 사용자 지정 속성을 추가 합니다. 속성에 표시 된 **속성** 창에서 프로젝트 항목을 선택 하면 **솔루션 탐색기**합니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장에 속성 추가](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)합니다.  
+- 프로젝트 항목에 사용자 지정 속성을 추가 합니다. 속성에 표시 된 **속성** 창에서 프로젝트 항목을 선택 하면 **솔루션 탐색기**합니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장에 속성 추가](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)합니다.  
   
- 만들기, 배포 및 프로젝트 항목 확장을 테스트 하는 방법을 보여주는 연습을 참조 하세요 [연습: SharePoint 프로젝트 항목 형식을 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)합니다.  
+  만들기, 배포 및 프로젝트 항목 확장을 테스트 하는 방법을 보여주는 연습을 참조 하세요 [연습: SharePoint 프로젝트 항목 형식을 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)합니다.  
   
 ## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>프로젝트 항목 확장 및 프로젝트 항목 인스턴스 간의 관계를 이해
  프로젝트 항목 확장을 만들 때 연결 된 형식의 프로젝트 항목을 SharePoint 프로젝트에 추가 되 면 Visual Studio 확장을 로드 합니다. 예를 들어 확장을 만드는 **이벤트 수신기** 프로젝트 항목, Visual Studio 확장 프로그램 사용자에 추가 로드를 **이벤트 수신기** 프로젝트에 프로젝트 항목입니다. Visual Studio 연결 된 프로젝트 항목 형식의 모든 인스턴스에 대 한 확장 프로그램의 동일한 인스턴스를 사용합니다. 이전 예제에서는 사용자가 두 번째 추가 하는 경우 **이벤트 수신기** 프로젝트에 프로젝트 항목, 확장 프로그램의 동일한 인스턴스에 두 번째 프로젝트 항목을 사용 합니다.  
@@ -46,11 +46,11 @@ ms.locfileid: "36326989"
 ## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint 프로젝트 항목에 대 한 식별자
  각 SharePoint 프로젝트 항목에 해당 문자열 식별자입니다. 다음 작업을 수행 하려는 경우 프로젝트 항목에 대 한 식별자를 알고 있어야 합니다.  
   
--   프로젝트 항목에 대 한 확장을 만듭니다. 생성자로 확장 하려는 프로젝트 항목에 대 한 식별자를 전달 해야 하는 경우에 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>합니다. 모든 프로젝트 항목 형식에 대 한 확장 프로그램을 만들려면, 전달 된 **\*** 문자열 값입니다.  
+- 프로젝트 항목에 대 한 확장을 만듭니다. 생성자로 확장 하려는 프로젝트 항목에 대 한 식별자를 전달 해야 하는 경우에 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>합니다. 모든 프로젝트 항목 형식에 대 한 확장 프로그램을 만들려면, 전달 된 **\\*** 문자열 값입니다.  
   
--   프로그래밍 방식으로 프로젝트에 프로젝트 항목을 추가 합니다. 프로젝트 항목에 대 한 식별자를 전달 해야 하는 경우에 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> 메서드.  
+- 프로그래밍 방식으로 프로젝트에 프로젝트 항목을 추가 합니다. 프로젝트 항목에 대 한 식별자를 전달 해야 하는 경우에 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> 메서드.  
   
- 다음 표에서 Visual Studio에 포함 되어 있는 SharePoint 프로젝트 항목에 대 한 식별자를 나열 합니다.  
+  다음 표에서 Visual Studio에 포함 되어 있는 SharePoint 프로젝트 항목에 대 한 식별자를 나열 합니다.  
   
 |프로젝트 항목 이름|문자열 식별자|  
 |-----------------------|-----------------------|  

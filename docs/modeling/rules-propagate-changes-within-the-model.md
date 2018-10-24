@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e1abc17e9675423359c6f850056a2fedf062e01
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865975"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>규칙으로 모델 내부의 변경 내용 전파
 Visualization and Modeling SDK (VMSDK)에서 다른 요소에서 변경 전파 하는 저장소 규칙을 만들 수 있습니다. 저장소의 모든 요소에는 변경이 발생 하는 경우 규칙은 가장 바깥쪽 트랜잭션이 커밋될 때 일반적으로 실행할 예약 됩니다. 다른 유형의 여러 가지 요소를 추가 또는 삭제와 같은 이벤트에 대 한 규칙이 있습니다. 요소, 모양 또는 다이어그램의 특정 형식에 규칙을 연결할 수 있습니다. 많은 기본 제공 기능 규칙에 의해 정의 됩니다: 다이어그램 모델 변경 될 때 업데이트 되는 규칙을 확인 하는 예를 들어, 합니다. 사용자 고유의 규칙을 추가 하 여 도메인 특정 언어를 사용자 지정할 수 있습니다.
@@ -67,7 +67,6 @@ namespace ExampleNamespace
    }
  }
 }
-
 ```
 
 > [!NOTE]
@@ -75,13 +74,13 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule"></a>규칙을 정의 하려면
 
-1.  클래스 접두사로 규칙 정의 `RuleOn` 특성입니다. 특성에 도메인 클래스, 관계 또는 다이어그램 요소 중 하나를 사용 하 여 규칙을 연결합니다. 규칙은 추상 일 수 있는이 클래스의 모든 인스턴스에 적용 됩니다.
+1. 클래스 접두사로 규칙 정의 `RuleOn` 특성입니다. 특성에 도메인 클래스, 관계 또는 다이어그램 요소 중 하나를 사용 하 여 규칙을 연결합니다. 규칙은 추상 일 수 있는이 클래스의 모든 인스턴스에 적용 됩니다.
 
-2.  규칙에서 반환 된 집합에 추가 하 여 등록 `GetCustomDomainModelTypes()` 도메인 모델 클래스입니다.
+2. 규칙에서 반환 된 집합에 추가 하 여 등록 `GetCustomDomainModelTypes()` 도메인 모델 클래스입니다.
 
-3.  규칙 클래스는 추상 규칙 클래스 중 하나에서 파생 하 고 실행 메서드에 코드를 작성 합니다.
+3. 규칙 클래스는 추상 규칙 클래스 중 하나에서 파생 하 고 실행 메서드에 코드를 작성 합니다.
 
- 다음 섹션에서는 이러한 단계를 자세히 설명합니다.
+   다음 섹션에서는 이러한 단계를 자세히 설명합니다.
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>도메인 클래스에 규칙을 정의 하려면
 
@@ -129,24 +128,26 @@ namespace ExampleNamespace
 
 ### <a name="to-write-the-code-of-the-rule"></a>규칙의 코드를 작성 하려면
 
--   규칙 클래스는 다음 기본 클래스 중 하나에서 파생 됩니다.
+- 규칙 클래스는 다음 기본 클래스 중 하나에서 파생 됩니다.
 
-    |기본 클래스|트리거|
-    |----------------|-------------|
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|요소, 링크 또는 셰이프 추가 됩니다.<br /><br /> 이 사용 하 여 새 요소 외에도 새 관계를 검색 합니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|도메인 속성 값을 변경 됩니다. 메서드 인수는 이전 및 새 값을 제공합니다.<br /><br /> 모양의 경우이 규칙이 트리거된 경우 기본 제공 `AbsoluteBounds` 모양을 이동 되 면 속성 변경 합니다.<br /><br /> 대부분의 경우에서 재정의 하는 편리한 것 `OnValueChanged` 또는 `OnValueChanging` 속성 처리기에서 합니다. 이러한 메서드는 직전 및 변경 된 후 호출 됩니다. 반면 규칙은 일반적으로 트랜잭션이 끝날 때 실행 됩니다. 자세한 내용은 [도메인 속성 값 변경 처리기](../modeling/domain-property-value-change-handlers.md)합니다. **참고:** 링크를 만들거나 삭제 하는 경우이 규칙이 트리거됩니다. 대신 작성 한 `AddRule` 및 `DeleteRule` 도메인 관계에 대 한 합니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|요소 또는 링크를 삭제할 경우에 트리거됩니다. ModelElement.IsDeleting 속성은 트랜잭션이 끝날 때까지 true.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|요소 또는 링크 삭제 되었을 때 수행 됩니다. 다른 모든 규칙 실행 한 후, DeletingRules를 포함 하 여 규칙이 실행 됩니다. ModelElement.IsDeleting false 이며 ModelElement.IsDeleted 그렇습니다. 이후 실행 취소를 허용 하려면 요소가 제거 되지 않습니다 실제로 메모리에서 있지만 Store.ElementDirectory에서 제거 됩니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|요소는 다른 하나의 저장소 파티션에서 이동 됩니다.<br /><br /> (고 지는이 관련이 없는 모양의 그래픽 위치)입니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|도메인 관계에만이 규칙이 적용 됩니다. 링크의 양쪽 끝에 모델 요소를 명시적으로 할당 하는 경우 트리거됩니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|요소와 링크의 순서가 MoveBefore 또는 MoveToIndex 메서드를 사용 하 여 링크 변경 될 때 트리거됩니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|트랜잭션을 만들 때 실행 합니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|트랜잭션이 커밋할 수 되려고 할 때 실행 합니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|트랜잭션을 롤백할 수 되려고 할 때 실행 합니다.|
 
--   각 클래스에 메서드를 재정의 합니다. 형식 `override` 에서 클래스를 검색 합니다. 이 메서드의 매개 변수에 변경 되는 요소를 식별 합니다.
+  | 기본 클래스 | 트리거 |
+  |-|-|
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | 요소, 링크 또는 셰이프 추가 됩니다.<br /><br /> 이 사용 하 여 새 요소 외에도 새 관계를 검색 합니다. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | 도메인 속성 값을 변경 됩니다. 메서드 인수는 이전 및 새 값을 제공합니다.<br /><br /> 모양의 경우이 규칙이 트리거된 경우 기본 제공 `AbsoluteBounds` 모양을 이동 되 면 속성 변경 합니다.<br /><br /> 대부분의 경우에서 재정의 하는 편리한 것 `OnValueChanged` 또는 `OnValueChanging` 속성 처리기에서 합니다. 이러한 메서드는 직전 및 변경 된 후 호출 됩니다. 반면 규칙은 일반적으로 트랜잭션이 끝날 때 실행 됩니다. 자세한 내용은 [도메인 속성 값 변경 처리기](../modeling/domain-property-value-change-handlers.md)합니다. **참고:** 링크를 만들거나 삭제 하는 경우이 규칙이 트리거됩니다. 대신 작성 한 `AddRule` 및 `DeleteRule` 도메인 관계에 대 한 합니다. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | 요소 또는 링크를 삭제할 경우에 트리거됩니다. ModelElement.IsDeleting 속성은 트랜잭션이 끝날 때까지 true. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | 요소 또는 링크 삭제 되었을 때 수행 됩니다. 다른 모든 규칙 실행 한 후, DeletingRules를 포함 하 여 규칙이 실행 됩니다. ModelElement.IsDeleting false 이며 ModelElement.IsDeleted 그렇습니다. 이후 실행 취소를 허용 하려면 요소가 제거 되지 않습니다 실제로 메모리에서 있지만 Store.ElementDirectory에서 제거 됩니다. |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | 요소는 다른 하나의 저장소 파티션에서 이동 됩니다.<br /><br /> (고 지는이 관련이 없는 모양의 그래픽 위치)입니다. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | 도메인 관계에만이 규칙이 적용 됩니다. 링크의 양쪽 끝에 모델 요소를 명시적으로 할당 하는 경우 트리거됩니다. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | 요소와 링크의 순서가 MoveBefore 또는 MoveToIndex 메서드를 사용 하 여 링크 변경 될 때 트리거됩니다. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | 트랜잭션을 만들 때 실행 합니다. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | 트랜잭션이 커밋할 수 되려고 할 때 실행 합니다. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | 트랜잭션을 롤백할 수 되려고 할 때 실행 합니다. |
 
- 규칙에 대 한 다음 사항에 유의 합니다.
+
+- 각 클래스에 메서드를 재정의 합니다. 형식 `override` 에서 클래스를 검색 합니다. 이 메서드의 매개 변수에 변경 되는 요소를 식별 합니다.
+
+  규칙에 대 한 다음 사항에 유의 합니다.
 
 1.  트랜잭션에서 변경 집합이 여러 규칙을 트리거할 수 있습니다. 일반적으로 규칙은 가장 바깥쪽 트랜잭션이 커밋될 때 실행 됩니다. 지정 되지 않은 순서로 실행 됩니다.
 
@@ -162,7 +163,7 @@ namespace ExampleNamespace
 
 7.  다른 대안을 고려한 후 규칙을 사용 합니다. 예를 들어 값이 변경 될 때 속성을 업데이트 하려는 경우에 계산된 된 속성을 사용 하는 것이 좋습니다. 크기 또는 모양의 위치를 제한 하려는 경우 사용을 `BoundsRule`입니다. 속성 값 변경에 응답 하려는 경우 추가 `OnValueChanged` 처리기 속성입니다. 자세한 내용은 [에 응답 하 고 변경 내용을 전파](../modeling/responding-to-and-propagating-changes.md)합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 두 요소를 연결 하는 도메인 관계를 인스턴스화할 때 속성을 업데이트 합니다. 사용자가 링크를 다이어그램에서 뿐만 아니라 프로그램 코드 링크를 만드는 경우 때에이 아니라 규칙이 트리거됩니다.
 
  이 예제를 테스트 하려면 작업 흐름 솔루션 템플릿을 사용 하 여 DSL을 만들 수 하 고 Dsl 프로젝트의 파일에 다음 코드를 삽입 합니다. 빌드 및 솔루션을 실행 하 고 디버깅 프로젝트에서 샘플 파일을 엽니다. 주석 도형 사이 유동 요소 주석 링크를 그립니다. 주석에서 텍스트를 연결 하는 가장 최근의 요소에 대 한 보고서를 변경 합니다.
@@ -208,7 +209,6 @@ namespace Company.TaskRuleExample
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>참고 항목

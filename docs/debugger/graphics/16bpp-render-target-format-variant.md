@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832892"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 비트 렌더링 대상 형식 변형
 모든 렌더링 대상 및 백 버퍼에 대한 픽셀 형식을 DXGI_FORMAT_B5G6R5_UNORM으로 설정합니다.  
@@ -43,9 +43,9 @@ ms.locfileid: "37433330"
 2. 원본 질감으로 렌더링 대상 사용 하 여 전체 화면 쿼드를 그려 렌더링 대상을 스왑 체인 백 버퍼에 복사 합니다.
 3. 스왑 체인에서 Present를 호출 합니다.
 
- 이 전략 렌더링 대상을 스왑 체인 백 버퍼에 복사 하 여 사용 되는 것 보다 대역폭을 저장 하는 경우 렌더링 성능이 향상 됩니다.
+   이 전략 렌더링 대상을 스왑 체인 백 버퍼에 복사 하 여 사용 되는 것 보다 대역폭을 저장 하는 경우 렌더링 성능이 향상 됩니다.
 
- 타일 식된 렌더링 기술을 사용 하는 GPU 아키텍처는 16 비트 프레임 버퍼 형식을 사용 하 여 상당한 성능 이점을 확인할 수 있습니다. 이러한 향상 된이 기능 이므로 프레임 버퍼의 큰 부분이 각 타일의 로컬 프레임 버퍼 캐시에 맞출 수 있습니다. 타일식 렌더링 아키텍처는 경우에 따라 모바일 송수화기 및 태블릿 컴퓨터의 GPU에 있으므로 이 방식의 아키텍처가 이러한 위치 밖으로 드러나는 일은 거의 없습니다.  
+   타일 식된 렌더링 기술을 사용 하는 GPU 아키텍처는 16 비트 프레임 버퍼 형식을 사용 하 여 상당한 성능 이점을 확인할 수 있습니다. 이러한 향상 된이 기능 이므로 프레임 버퍼의 큰 부분이 각 타일의 로컬 프레임 버퍼 캐시에 맞출 수 있습니다. 타일식 렌더링 아키텍처는 경우에 따라 모바일 송수화기 및 태블릿 컴퓨터의 GPU에 있으므로 이 방식의 아키텍처가 이러한 위치 밖으로 드러나는 일은 거의 없습니다.  
   
 ## <a name="remarks"></a>설명  
  렌더링 대상을 만드는 `ID3D11Device::CreateTexture2D`에 대한 호출 시 마다 렌더링 대상 형식은 DXGI_FORMAT_B5G6R5_UNORM으로 다시 설정됩니다. 특히 이 형식은 pDesc에서 전달된 D3D11_TEXTURE2D_DESC 개체가 렌더링 대상을 설명하는 경우 재정의됩니다. 즉, 다음과 같은 경우입니다.  
@@ -59,7 +59,7 @@ ms.locfileid: "37433330"
 ## <a name="restrictions-and-limitations"></a>제한 사항  
  B5G6R5 형식에는 알파 채널이 없으므로 이 변형은 알파 콘텐츠를 유지하지 않습니다. 앱에서 렌더링하려면 렌더링 대상에 알파 채널이 있어야 하는 경우 간단히 B5G6R5 형식으로 전환할 수 있는 것이 아닙니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  합니다 **16 bpp 렌더링 대상 형식** 사용 하 여 만든 렌더링 대상에 대 한 변형을 재현할 수 있는 `CreateTexture2D` 다음과 같은 코드를 사용 하 여:  
   
 ```cpp

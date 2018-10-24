@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20cbb2caae9714883b76a28b21ca7ce3a2841548
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c1628def8e3bc3c322b911842215961994335c16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874477"
 ---
 # <a name="idiaenumsymbolsgetcount"></a>IDiaEnumSymbols::get_Count
 기호 수를 검색합니다.  
@@ -34,10 +34,10 @@ HRESULT get_Count (
   
 #### <a name="parameters"></a>매개 변수  
  pRetVal  
- [out] 기호의 개수를 반환합니다.  
+ [out] 기호 수를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
