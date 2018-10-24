@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f68cb2178242e5589f312f6ddc2c555da3f47a0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872826"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms 응용 프로그램에서 조회 테이블 만들기
 용어 *조회 테이블* 두 관련된 데이터 테이블에 바인딩되는 컨트롤에 설명 합니다. 이러한 조회 컨트롤에는 두 번째 테이블에서 선택한 값을 기준으로 첫 번째 테이블의 데이터를에서 표시 합니다.
@@ -52,7 +52,7 @@ ms.locfileid: "36756768"
      이제 조회 바인딩은 설정 됩니다. 컨트롤에 설정 된 특정 속성에 대해 다음 표를 참조 하세요.
 
     |속성|설정 설명|
-    |--------------|----------------------------|
+    |--------------| - |
     |**DataSource**|Visual Studio는이 속성을 설정 합니다 <xref:System.Windows.Forms.BindingSource>는 컨트롤로 끄는 테이블에 대해 생성 (아닌 사이트별로 <xref:System.Windows.Forms.BindingSource>, 컨트롤을 만들 때 생성).<br /><br /> 조정 해야 할 경우 설정 된 <xref:System.Windows.Forms.BindingSource> 표시 하려는 열이 있는 테이블의 합니다.|
     |**DisplayMember**|Visual Studio는 컨트롤로 끄는 테이블에 대해 문자열 데이터 형식을 포함하는 기본 키 다음의 첫 번째 열로 이 속성을 설정합니다.<br /><br /> 조정 해야 하는 경우 표시 하려는 열 이름으로 설정 합니다.|
     |**ValueMember**|Visual Studio는 이 속성을 기본 키에 포함되는 첫 번째 열로 설정하거나 키가 정의되어 있지 않으면 테이블의 첫 번째 열로 설정합니다.<br /><br /> 조정 해야 하는 경우 표시 하려는 열이 있는 테이블의 기본 키로 설정 합니다.|

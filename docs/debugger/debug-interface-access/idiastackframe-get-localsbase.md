@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7b7f16adbef5f60648129d80776b556b776bec7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0f86d123dc0f1eb4152f831a0717a6d3ec796454
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910916"
 ---
 # <a name="idiastackframegetlocalsbase"></a>IDiaStackFrame::get_localsBase
-지역 변수는 프레임에 대 한 기본 주소를 검색 합니다.  
+프레임에 대 한 로컬 변수의 기본 주소를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   

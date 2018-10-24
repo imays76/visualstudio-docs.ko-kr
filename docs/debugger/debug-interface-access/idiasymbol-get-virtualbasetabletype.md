@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a299b589a1104dc18559278c777e47500169a57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 864748c478b03a26affaa622e3b25cb8c7dfd78e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895078"
 ---
 # <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
-가상 기본 테이블 포인터의 유형을 검색합니다.  
+가상 기본 테이블 포인터의 형식을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,22 +39,22 @@ HRESULT get_virtualBaseTableType(
 |`pRetVal`|[out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 기본 테이블의 형식을 지정 하는 개체입니다.|  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 가상 기본 테이블 포인터 (`vbtptr`)에 대 한 숨겨진 포인터는 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 처리 가상 기본 클래스에서 상속 하 vtable 합니다. A `vbtptr` 상속 된 클래스에 따라 다양 한 크기를 가질 수 있습니다.  
+ 가상 기본 테이블 대 한 포인터 (`vbtptr`)에 대 한 숨겨진 포인터가 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable 가상 기본 클래스에서 상속을 처리 하는 합니다. `vbtptr` 상속 된 클래스에 따라 다양 한 크기를 가질 수 있습니다.  
   
- 이 메서드는 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 는 vbtptr의 크기를 결정 하는 데 사용할 수 있습니다.  
+ 이 메서드는 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 는 vbtptr의 크기를 결정 하는 데 사용할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |요구 사항|설명|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
-|버전:|DIA SDK v 8.0|  
+|버전:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

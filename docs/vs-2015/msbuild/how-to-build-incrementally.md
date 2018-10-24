@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844623"
 ---
 # <a name="how-to-build-incrementally"></a>방법: 증분 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "49275056"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>대상에 대한 입력 및 출력을 지정하려면  
   
--   `Target` 요소의 `Inputs` 및 `Outputs` 특성을 사용합니다. 예:  
+- `Target` 요소의 `Inputs` 및 `Outputs` 특성을 사용합니다. 예:  
   
-    ```  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 입력 파일의 타임스탬프를 출력 파일의 타임스탬프와 비교하고 대상을 건너뛰거나, 빌드하거나, 부분적으로 다시 빌드할지 결정할 수 있습니다. 다음 예제에서 `@(CSFile)` 항목 목록의 파일이 hello.exe 파일보다 최신 파일인 경우 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 대상을 실행합니다. 그렇지 않으면 대상을 건너뜁니다.  
+  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 입력 파일의 타임스탬프를 출력 파일의 타임스탬프와 비교하고 대상을 건너뛰거나, 빌드하거나, 부분적으로 다시 빌드할지 결정할 수 있습니다. 다음 예제에서 `@(CSFile)` 항목 목록의 파일이 hello.exe 파일보다 최신 파일인 경우 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 대상을 실행합니다. 그렇지 않으면 대상을 건너뜁니다.  
   
 ```  
 <Target Name="Build"   
@@ -67,13 +67,13 @@ ms.locfileid: "49275056"
 ## <a name="example"></a>예제  
  다음 예제에서는 가상 도움말 시스템에 대한 도움말 파일을 빌드하는 프로젝트를 사용합니다. 프로젝트는 소스 .txt 파일을 중간 .content 파일로 변환하는 방식으로 작동합니다. .content 파일은 이후 XML 메타데이터와 결합되어 도움말 시스템에서 사용되는 최종 .help 파일을 생성합니다. 프로젝트는 다음 가상 작업을 사용합니다.  
   
--   `GenerateContentFiles`: .txt 파일을 .content 파일로 변환합니다.  
+- `GenerateContentFiles`: .txt 파일을 .content 파일로 변환합니다.  
   
--   `BuildHelp`: .content 파일 및 XML 메타데이터 파일을 결합하여 최종 .help 파일을 빌드합니다.  
+- `BuildHelp`: .content 파일 및 XML 메타데이터 파일을 결합하여 최종 .help 파일을 빌드합니다.  
   
- 프로젝트는 변환을 사용하여 `GenerateContentFiles` 작업에서 입력과 출력 간의 일대일 매핑을 만듭니다. 자세한 내용은 [변환](../msbuild/msbuild-transforms.md)을 참조하세요. 또한 `Output` 요소는 자동으로 `GenerateContentFiles` 작업의 출력을 `BuildHelp` 작업의 입력으로 사용하도록 설정됩니다.  
+  프로젝트는 변환을 사용하여 `GenerateContentFiles` 작업에서 입력과 출력 간의 일대일 매핑을 만듭니다. 자세한 내용은 [변환](../msbuild/msbuild-transforms.md)을 참조하세요. 또한 `Output` 요소는 자동으로 `GenerateContentFiles` 작업의 출력을 `BuildHelp` 작업의 입력으로 사용하도록 설정됩니다.  
   
- 이 프로젝트 파일에는 `Convert` 및 `Build` 대상이 둘 다 포함됩니다. 각 대상이 증분식으로 빌드될 수 있도록 `GenerateContentFiles` 및 `BuildHelp` 작업은 각각 `Convert` 및 `Build` 대상에 배치됩니다. `Output` 요소를 사용하면 `GenerateContentFiles` 작업의 출력이 `ContentFile` 항목 목록에 배치됩니다. 이 목록에 있는 출력은 `BuildHelp` 작업의 입력으로 사용될 수 있습니다. `Output` 요소를 이 방법으로 사용하면 한 작업의 출력이 다른 작업의 입력으로 자동으로 제공되므로 각 작업에서 개별 항목 또는 항목 목록을 수동으로 나열할 필요가 없습니다.  
+  이 프로젝트 파일에는 `Convert` 및 `Build` 대상이 둘 다 포함됩니다. 각 대상이 증분식으로 빌드될 수 있도록 `GenerateContentFiles` 및 `BuildHelp` 작업은 각각 `Convert` 및 `Build` 대상에 배치됩니다. `Output` 요소를 사용하면 `GenerateContentFiles` 작업의 출력이 `ContentFile` 항목 목록에 배치됩니다. 이 목록에 있는 출력은 `BuildHelp` 작업의 입력으로 사용될 수 있습니다. `Output` 요소를 이 방법으로 사용하면 한 작업의 출력이 다른 작업의 입력으로 자동으로 제공되므로 각 작업에서 개별 항목 또는 항목 목록을 수동으로 나열할 필요가 없습니다.  
   
 > [!NOTE]
 >  `GenerateContentFiles` 대상은 증분식으로 빌드될 수 있지만 대상의 모든 출력은 항상 `BuildHelp` 대상의 입력으로 필요합니다. `Output` 요소를 사용할 경우 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 한 작업의 모든 출력을 다른 대상의 입력으로 자동으로 제공합니다.  

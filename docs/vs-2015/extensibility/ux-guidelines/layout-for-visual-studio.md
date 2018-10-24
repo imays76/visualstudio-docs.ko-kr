@@ -13,12 +13,12 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67117992e7043335152adea59d7e15f7bbdcce00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6929054fd2983fa6b08801cd35eab7148bd8100
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829445"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio에 대 한 레이아웃
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ ms.locfileid: "49254760"
   
 #### <a name="command-buttons"></a>명령 단추  
   
--   명령 단추 콘텐츠에 없는 대화 프레임에서 작동합니다. 맨 오른쪽 하며 명확 하 게 구분 단추를 설정 하려면 위의 변수 충분 한 공간이 있어야 합니다.  
+- 명령 단추 콘텐츠에 없는 대화 프레임에서 작동합니다. 맨 오른쪽 하며 명확 하 게 구분 단추를 설정 하려면 위의 변수 충분 한 공간이 있어야 합니다.  
   
--   가로 단추 대화 상자 내에서 작동 하는 경우 대체 명령 단추 구성은 오른쪽 위에 세로로 쌓입니다. 참조 [내부 명령 단추](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) 아래.  
+- 가로 단추 대화 상자 내에서 작동 하는 경우 대체 명령 단추 구성은 오른쪽 위에 세로로 쌓입니다. 참조 [내부 명령 단추](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) 아래.  
   
--   명령 단추 (왼쪽/의 아래쪽 가운데 대화 상자)의 왼쪽에 공간에는 작업 대화 상자 컨트롤의 "밴드"의 일부로 간주 됩니다. 해당 공간에 방해가 해야 하는 유일한은 전체 작업 또는 대화 상자와 관련 된 도움말 링크입니다.  
+- 명령 단추 (왼쪽/의 아래쪽 가운데 대화 상자)의 왼쪽에 공간에는 작업 대화 상자 컨트롤의 "밴드"의 일부로 간주 됩니다. 해당 공간에 방해가 해야 하는 유일한은 전체 작업 또는 대화 상자와 관련 된 도움말 링크입니다.  
   
--   명령 단추 75 x 23 픽셀 이어야 합니다.  
+- 명령 단추 75 x 23 픽셀 이어야 합니다.  
   
--   명령 단추 떨어져 6 픽셀 이어야 합니다.  
+- 명령 단추 떨어져 6 픽셀 이어야 합니다.  
   
- ![기본 단추 맞춤](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801 c_ButtonAlign")  
+  ![기본 단추 맞춤](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801 c_ButtonAlign")  
   
- **그림 08.01-c: 기본 단추 맞춤**  
+  **그림 08.01-c: 기본 단추 맞춤**  
   
 #### <a name="labels"></a>레이블  
   
@@ -110,19 +110,19 @@ ms.locfileid: "49254760"
 ####  <a name="BKMK_InteriorCommandButtons"></a> 내부 명령 단추  
  더 복잡 한 대화 상자에서 내부 컨트롤에는 대화의 커밋 단추 있는 영향을 줄 수 있는 관련된 단추 자체 있을 수 있습니다.  
   
--   사용 하 여 내부의 세로 맞춤 (열) 단추로 **확인**/**취소** 오른쪽 아래 모퉁이의 가로 방향으로 합니다.  
+- 사용 하 여 내부의 세로 맞춤 (열) 단추로 **확인**/**취소** 오른쪽 아래 모퉁이의 가로 방향으로 합니다.  
   
--   사용 하 여 내부의 가로 맞춤 (행) 단추로 **확인**/**취소** 오른쪽 위 모퉁이에서 세로 방향으로 합니다. 이 상황은 일반적이 지 않습니다.  
+- 사용 하 여 내부의 가로 맞춤 (행) 단추로 **확인**/**취소** 오른쪽 위 모퉁이에서 세로 방향으로 합니다. 이 상황은 일반적이 지 않습니다.  
   
--   내부 단추 크기 75 x 23 픽셀의 크기와 일치 하는 표준 단추 크기를 대상으로 해야 **확인**/**취소** 가능 하면 단추입니다. 단추 레이블 표준 단추 크기를 초과 하는 단추를 만드는 경우 해당 집합의 다른 단추는 광범위 한 크기를 사용 하 여 일치 해야 합니다.  
+- 내부 단추 크기 75 x 23 픽셀의 크기와 일치 하는 표준 단추 크기를 대상으로 해야 **확인**/**취소** 가능 하면 단추입니다. 단추 레이블 표준 단추 크기를 초과 하는 단추를 만드는 경우 해당 집합의 다른 단추는 광범위 한 크기를 사용 하 여 일치 해야 합니다.  
   
- ![가로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801 f_HorizOKCan")  
+  ![가로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801 f_HorizOKCan")  
   
- **가로 확인/취소를 사용 하 여 그림 08.01-f: 세로 내부 단추**  
+  **가로 확인/취소를 사용 하 여 그림 08.01-f: 세로 내부 단추**  
   
- ![세로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")  
+  ![세로 확인 및 취소 단추가](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")  
   
- **세로 확인/취소를 사용 하 여 그림 08.01-g: 가로 내부 단추**  
+  **세로 확인/취소를 사용 하 여 그림 08.01-g: 가로 내부 단추**  
   
 #### <a name="browse-button"></a>[찾아보기...] 단추  
  **[찾아보기...]**  텍스트 상자에 다음 단추 해야 줄임표를 포함 하 여 전체에서 "찾아보기..." 쓰십시오. 공간이 긴밀 하 게 또는 여러 개 있을 경우 **[찾아보기...]**  방금 줄임표 단추 화면에서 단추를 줄일 수 있습니다.  

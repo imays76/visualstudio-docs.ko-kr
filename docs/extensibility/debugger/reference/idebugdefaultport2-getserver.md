@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e4ea81da1e8f31cabd7c2dae6ca5dc3251eef8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 273e6b89ce9ca38c05034ae1b31e4eeb9fec5b86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874373"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 이 메서드는이 포트에 있는 서버에 대 한 인터페이스를 가져옵니다.  
@@ -41,13 +41,13 @@ int GetServer(
   
 #### <a name="parameters"></a>매개 변수  
  `ppServer`  
- [out] 구현 하는 개체를 반환 합니다.는 [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) 인터페이스입니다.  
+ [out] 구현 하는 개체를 반환 합니다 [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) Visual Studio에서 구현 되 고 서버에 있는 포트를 나타냅니다.  
+ 합니다 [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) Visual Studio에서 구현 되 고 포트에 있는 서버를 나타냅니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   

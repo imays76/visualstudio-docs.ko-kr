@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14421b6baede8f946a9bdfd86759e78657e1e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817433"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>방법: 프로세스 뷰에서 프로세스 검색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,24 +31,24 @@ ms.locfileid: "49222900"
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>프로세스 뷰에서 프로세스 검색 하려면  
   
-1.  따라서 창을 정렬는 Spy + + 및 활성 [프로세스 뷰에](../debugger/processes-view.md) 창이 표시 됩니다.  
+1. 따라서 창을 정렬는 Spy + + 및 활성 [프로세스 뷰에](../debugger/processes-view.md) 창이 표시 됩니다.  
   
-2.  **검색** 메뉴 선택 **프로세스 찾기**  
+2. **검색** 메뉴 선택 **프로세스 찾기**  
   
-     합니다 [프로세스 검색 대화 상자](../debugger/process-search-dialog-box.md) 열립니다.  
+    합니다 [프로세스 검색 대화 상자](../debugger/process-search-dialog-box.md) 열립니다.  
   
-3.  검색 조건으로 프로세스 ID 또는 모듈 문자열을 입력 합니다.  
+3. 검색 조건으로 프로세스 ID 또는 모듈 문자열을 입력 합니다.  
   
-4.  값을 지정 하지 않을 필드의 선택을 취소 합니다.  
+4. 값을 지정 하지 않을 필드의 선택을 취소 합니다.  
   
-    > [!TIP]
-    >  모듈을 소유 하는 모든 프로세스를 찾으려면의 선택을 취소 합니다 **프로세스** 상자 및 모듈 이름을 입력 합니다 **모듈** 상자. 사용 하 여 **다음 찾기** 프로세스에 대 한 검색을 계속 하려면.  
+   > [!TIP]
+   >  모듈을 소유 하는 모든 프로세스를 찾으려면의 선택을 취소 합니다 **프로세스** 상자 및 모듈 이름을 입력 합니다 **모듈** 상자. 사용 하 여 **다음 찾기** 프로세스에 대 한 검색을 계속 하려면.  
   
-5.  선택 **위로** 또는 **아래로** 검색 초기 방향에 대 한 합니다.  
+5. 선택 **위로** 또는 **아래로** 검색 초기 방향에 대 한 합니다.  
   
-6.  **확인**을 클릭합니다.  
+6. **확인**을 클릭합니다.  
   
- 강조 표시 된 일치 하는 프로세스가 있으면 합니다 **프로세스 뷰** 창입니다.
+   강조 표시 된 일치 하는 프로세스가 있으면 합니다 **프로세스 뷰** 창입니다.
 
 
 

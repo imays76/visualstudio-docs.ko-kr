@@ -15,12 +15,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8626a7c1c4fd38e5955a364699eb1b047bc2e5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839208"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>XML 명령 테이블 디자인 (합니다. Vsct) 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,41 +37,41 @@ XML 명령 테이블 (.vsct) 파일에는 레이아웃 및 VSPackage에 대 한 
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc 및.vsct 파일 간의 차이점  
  .Vsct 파일에서 XML 태그의 의미를.ctc 파일 형식이 더 이상 사용 되지 이제의가 동일, 구현과 약간 다릅니다.  
   
--   새  **\<extern >** 태그는 다른.h 파일을 컴파일하고 같은 참조 위치는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 도구 모음입니다.  
+- 새  **\<extern >** 태그는 다른.h 파일을 컴파일하고 같은 참조 위치는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 도구 모음입니다.  
   
--   .Vsct 파일을 지원 하지만 합니다 **/include** 문을.ctc 파일 에서처럼 기능도 제공 새 \< **가져오기 >** 요소. 차이점은 **/include** 제공 **모든** 정보의 하지만 \< **가져오기 >** 이름만에서 제공 합니다.  
+- .Vsct 파일을 지원 하지만 합니다 **/include** 문을.ctc 파일 에서처럼 기능도 제공 새 \< **가져오기 >** 요소. 차이점은 **/include** 제공 **모든** 정보의 하지만 \< **가져오기 >** 이름만에서 제공 합니다.  
   
--   .Ctc 파일에 전처리기 지시문을 정의 하는 헤더 파일을 필요에 없는.vsct 파일에 필요 합니다. 대신에 지시문에 있는 기호 테이블에 배치 합니다  **\<기호 >** .vsct 파일의 맨 아래에 있는 요소입니다.  
+- .Ctc 파일에 전처리기 지시문을 정의 하는 헤더 파일을 필요에 없는.vsct 파일에 필요 합니다. 대신에 지시문에 있는 기호 테이블에 배치 합니다  **\<기호 >** .vsct 파일의 맨 아래에 있는 요소입니다.  
   
--   .vsct 파일 기능을  **\<주석 >** 태그 정보 등도 사진 같은 모든 정보를 포함할 수 있습니다.  
+- .vsct 파일 기능을  **\<주석 >** 태그 정보 등도 사진 같은 모든 정보를 포함할 수 있습니다.  
   
--   값은 항목에는 특성으로 저장 됩니다.  
+- 값은 항목에는 특성으로 저장 됩니다.  
   
--   명령 플래그를 개별적으로 저장 하거나 누적 될 수 있습니다.  그러나 Intellisense,에서 작동 하지 않습니다 누적된 명령 플래그입니다. 명령 플래그에 대 한 자세한 내용은 참조는 [Command Flag 요소](../../extensibility/command-flag-element.md)합니다.  
+- 명령 플래그를 개별적으로 저장 하거나 누적 될 수 있습니다.  그러나 Intellisense,에서 작동 하지 않습니다 누적된 명령 플래그입니다. 명령 플래그에 대 한 자세한 내용은 참조는 [Command Flag 요소](../../extensibility/command-flag-element.md)합니다.  
   
--   분할 드롭다운, combos 등과 같은 여러 형식을 지정할 수 있습니다.  
+- 분할 드롭다운, combos 등과 같은 여러 형식을 지정할 수 있습니다.  
   
--   Guid의 유효성을 검사 하지 않습니다.  
+- Guid의 유효성을 검사 하지 않습니다.  
   
--   각 UI 요소에 함께 표시 되는 텍스트를 나타내는 문자열입니다.  
+- 각 UI 요소에 함께 표시 되는 텍스트를 나타내는 문자열입니다.  
   
--   부모는 선택 사항입니다. 생략 하면 "그룹에 알 수 없음" 값이 사용 됩니다.  
+- 부모는 선택 사항입니다. 생략 하면 "그룹에 알 수 없음" 값이 사용 됩니다.  
   
--   아이콘 인수는 선택 사항입니다.  
+- 아이콘 인수는 선택 사항입니다.  
   
--   .ctc 동일 비트맵 섹션-파일을 제외 하 고 가져온 vsct.exe 컴파일러에서 컴파일 시간에 href 통해 파일 이름을 지정할 수 있습니다.  
+- .ctc 동일 비트맵 섹션-파일을 제외 하 고 가져온 vsct.exe 컴파일러에서 컴파일 시간에 href 통해 파일 이름을 지정할 수 있습니다.  
   
--   ResID-이전 비트맵 리소스 ID를 사용할 수 있으며 여전히 동일 하 게.ctc 파일 처럼 작동 합니다.  
+- ResID-이전 비트맵 리소스 ID를 사용할 수 있으며 여전히 동일 하 게.ctc 파일 처럼 작동 합니다.  
   
--   HRef-하는 새 메서드 비트맵 리소스의 파일 이름을 지정할 수 있습니다. 사용 하는 섹션을 생략할 수는 모두를 사용 하는 가정 합니다. 컴파일러는 먼저 모든 네트워크 공유에서 파일의 로컬 리소스 및 /I 스위치에 의해 정의 된 모든 리소스에 대 한 검색 됩니다.  
+- HRef-하는 새 메서드 비트맵 리소스의 파일 이름을 지정할 수 있습니다. 사용 하는 섹션을 생략할 수는 모두를 사용 하는 가정 합니다. 컴파일러는 먼저 모든 네트워크 공유에서 파일의 로컬 리소스 및 /I 스위치에 의해 정의 된 모든 리소스에 대 한 검색 됩니다.  
   
--   Keybinding-더 이상 해야 에뮬레이터를 지정 합니다. 하나를 지정 않을 경우 컴파일러는 편집기 및 에뮬레이터 동일 합니다.  
+- Keybinding-더 이상 해야 에뮬레이터를 지정 합니다. 하나를 지정 않을 경우 컴파일러는 편집기 및 에뮬레이터 동일 합니다.  
   
--   Keychord-삭제 되었습니다. 새 형식 Mod1, Key1, Key2, Mod2입니다.  문자, 16 진수 또는 VK 상수를 지정할 수 있습니다.  
+- Keychord-삭제 되었습니다. 새 형식 Mod1, Key1, Key2, Mod2입니다.  문자, 16 진수 또는 VK 상수를 지정할 수 있습니다.  
   
- 새 컴파일러, vsct.exe,.ctc와.vsct 파일을 컴파일합니다. 그러나 이전 ctc.exe 컴파일러는 인식 아니고.vsct 파일을 컴파일합니다.  
+  새 컴파일러, vsct.exe,.ctc와.vsct 파일을 컴파일합니다. 그러나 이전 ctc.exe 컴파일러는 인식 아니고.vsct 파일을 컴파일합니다.  
   
- 기존.cto 파일.vsct 파일을 변환할 vsct.exe 컴파일러를 사용할 수 있습니다. 이 대 한 자세한 내용은 참조 하세요. [방법: 만들기를 합니다. 기존 Vsct 파일입니다. Cto 파일](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)합니다.  
+  기존.cto 파일.vsct 파일을 변환할 vsct.exe 컴파일러를 사용할 수 있습니다. 이 대 한 자세한 내용은 참조 하세요. [방법: 만들기를 합니다. 기존 Vsct 파일입니다. Cto 파일](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)합니다.  
   
 ## <a name="the-vsct-file-elements"></a>.Vsct 파일 요소  
  명령 테이블에는 다음 계층 구조 및 요소에 있습니다.  

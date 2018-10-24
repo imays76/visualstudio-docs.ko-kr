@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843649"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend에서 개체 스타일 수정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ ms.locfileid: "49240155"
   
  스타일을 만들려면 개체를 선택하고 **개체** 메뉴에서 **스타일 편집**을 선택한 후 **복사본 편집**이나 **빈 항목 만들기**를 선택합니다.  
   
--   컨트롤의 기본 스타일이나 템플릿으로 시작하려면 **복사본 편집**을 선택합니다.  
+- 컨트롤의 기본 스타일이나 템플릿으로 시작하려면 **복사본 편집**을 선택합니다.  
   
--   처음부터 다시 시작하려면 **빈 항목 만들기**를 선택합니다.  
+- 처음부터 다시 시작하려면 **빈 항목 만들기**를 선택합니다.  
   
- 합니다 **현재 편집** 스타일이 나 템플릿을 이미 만든 편집 하는 경우에 옵션이 나타납니다. 기본 시스템 템플릿을 사용하는 컨트롤에 대해서는 표시되지 않습니다.  
+  합니다 **현재 편집** 스타일이 나 템플릿을 이미 만든 편집 하는 경우에 옵션이 나타납니다. 기본 시스템 템플릿을 사용하는 컨트롤에 대해서는 표시되지 않습니다.  
   
- **스타일 리소스 만들기** 대화 상자에서 나중에 사용할 수 있도록 스타일이나 템플릿의 이름을 지정하거나 해당 유형의 모든 컨트롤에 스타일이나 템플릿을 적용할 수 있습니다.  
+  **스타일 리소스 만들기** 대화 상자에서 나중에 사용할 수 있도록 스타일이나 템플릿의 이름을 지정하거나 해당 유형의 모든 컨트롤에 스타일이나 템플릿을 적용할 수 있습니다.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  일부 유형의 컨트롤에 대해서는 스타일이나 템플릿을 만들 수는 없습니다. 컨트롤에서 스타일이나 템플릿을 지원하지 않는 경우 아트보드 위에 이동 경로 탐색 단추가 표시되지 않습니다.  

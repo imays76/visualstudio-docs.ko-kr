@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827561"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>자습서: Visual Studio를 사용 하 여 디버그 하는 방법을 알아봅니다
 
 이 문서에서는 단계별 연습에서는 Visual Studio 디버거에서의 기능을 소개 합니다. 디버거 기능 상위 수준의 뷰를 원한다 면 참조 [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)합니다. 경우 있습니다 *앱을 디버그*, 디버거가 연결 된 응용 프로그램을 실행 하는 일반적으로 의미 합니다. 디버거는 코드 수행 하는 참조 하는 방법은 많습니다 제공 이렇게 하면 실행 중입니다. 시계를 설정할 수 있습니다에 코드를 단계별로 실행 하 고 변수에 저장 된 값을 살펴보고 값이 변경 될 때를 확인 하려면 변수를 코드의 실행 경로 검사, 코드 분기의 실행 등 인지 수 있습니다. 읽을 하려는 처음 코드를 디버그 하려는 경우 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 이 문서를 진행 하기 전에 합니다.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기")  |    [비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) 비슷한 단계를 보여 주는 디버깅 합니다. |
+| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | [비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) 비슷한 단계를 보여 주는 디버깅 합니다. |
 
 데모 앱을 C# 및 c + + 있지만 기능은 Visual Basic, JavaScript 및 Visual Studio (언급 한 위치 제외) 지 원하는 다른 언어에 적용할 수 있습니다. 스크린샷은 C#의 경우
 
@@ -329,8 +329,8 @@ ms.locfileid: "49101045"
 
      ![실행 하려면 클릭을 사용 하 여 기능](../debugger/media/get-started-run-to-click.png "실행 하려면 클릭")
 
-    >  [!NOTE]
-    > 합니다 **실행 하려면 클릭** 단추에서 새로운 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]합니다. 찾을 수 없으면 녹색 화살표 단추를 사용 하 여 **F11** 이 예제의 대신 디버거가 올바른 위치로 이동 합니다.
+   > [!NOTE]
+   > 합니다 **실행 하려면 클릭** 단추에서 새로운 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]합니다. 찾을 수 없으면 녹색 화살표 단추를 사용 하 여 **F11** 이 예제의 대신 디버거가 올바른 위치로 이동 합니다.
 
 6. 클릭 합니다 **실행 하려면 클릭** 단추 ![실행 하려면 클릭](../debugger/media/dbg-tour-run-to-click.png "RunToClick")합니다.
 
@@ -408,14 +408,14 @@ ms.locfileid: "49101045"
 
 1. 일시 중지 된 동안는 `foreach` 루프 (`for` 루프에서 c + +)를 클릭 합니다 **호출 스택** 기본적으로 오른쪽 아래 창에 열려 있는 창을.
 
-1. 클릭 **F11** 를 여러 번 표시 될 때까지 디버거가 일시 중지 된 `Circle.Draw` 메서드 코드 편집기에서. 확인 합니다 **호출 스택** 창입니다.
+2. 클릭 **F11** 를 여러 번 표시 될 때까지 디버거가 일시 중지 된 `Circle.Draw` 메서드 코드 편집기에서. 확인 합니다 **호출 스택** 창입니다.
 
     ![호출 스택을 검사할](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
     합니다 **호출 스택** 창 있는 메서드 및 함수는 호출 되는 순서를 보여 줍니다. 맨 위 줄 현재 함수를 보여 줍니다 (합니다 `Circle.Draw` 또는 `Circle::Draw` 이 앱에서 메서드). 두 번째 줄을 보여 줍니다 `Circle.Draw` 에서 호출한 합니다 `Main` 메서드 (`main` c + +에서) 등입니다.
 
-    >  [!NOTE]
-    > 합니다 **호출 스택** Eclipse와 같은 일부 Ide 창에 디버그 관점 비슷합니다.
+   > [!NOTE]
+   > 합니다 **호출 스택** Eclipse와 같은 일부 Ide 창에 디버그 관점 비슷합니다.
 
     호출 스택은 좋은 점검 하 여 앱의 실행 흐름을 이해 합니다.
 

@@ -16,12 +16,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5970c7612e38b33e1f25d8e19b63a1042a9b6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841423"
 ---
 # <a name="walkthrough-using-msbuild"></a>연습: MSBuild 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49266697"
   
 MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습에서는 MSBuild의 구성 요소를 소개하고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. 학습 내용은 다음과 같습니다.  
   
--   프로젝트 파일 만들기 및 조작  
+- 프로젝트 파일 만들기 및 조작  
   
--   빌드 속성을 사용하는 방법  
+- 빌드 속성을 사용하는 방법  
   
--   빌드 항목을 사용하는 방법  
+- 빌드 항목을 사용하는 방법  
   
- Visual Studio 또는 명령 창에서 MSBuild를 실행할 수 있습니다. 이 연습에서는 Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만듭니다. Visual Studio에서 프로젝트 파일을 편집한 다음 명령 창을 사용하여 프로젝트를 빌드하고 결과를 검사할 수 있습니다.  
+  Visual Studio 또는 명령 창에서 MSBuild를 실행할 수 있습니다. 이 연습에서는 Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만듭니다. Visual Studio에서 프로젝트 파일을 편집한 다음 명령 창을 사용하여 프로젝트를 빌드하고 결과를 검사할 수 있습니다.  
   
 ## <a name="creating-an-msbuild-project"></a>MSBuild 프로젝트 만들기  
  Visual Studio 프로젝트 시스템은 MSBuild를 기반으로 합니다. 따라서 Visual Studio를 사용하여 새 프로젝트 파일을 쉽게 만들 수 있습니다. 이 섹션에서는 Visual C# 프로젝트 파일을 만듭니다. 대신 Visual Basic 프로젝트 파일을 만들도록 선택할 수도 있습니다. 이 연습의 컨텍스트에서 두 프로젝트 파일에는 큰 차이가 없습니다.  
@@ -77,20 +77,20 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
   
  응용 프로그램 빌드 작업에서는 [대상](../msbuild/target-element-msbuild.md) 및 [작업](../msbuild/task-element-msbuild.md) 요소를 사용합니다.  
   
--   작업(task)은 작업(work)의 최소 단위(빌드의 "구성 요소")이며, 입력과 출력을 포함할 수 있는 독립적인 실행 가능 구성 요소입니다. 현재 프로젝트 파일에는 참조되거나 정의된 작업(task)이 없습니다. 아래 섹션에서 프로젝트 파일에 작업(task)을 추가합니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md) 항목을 참조하세요.  
+- 작업(task)은 작업(work)의 최소 단위(빌드의 "구성 요소")이며, 입력과 출력을 포함할 수 있는 독립적인 실행 가능 구성 요소입니다. 현재 프로젝트 파일에는 참조되거나 정의된 작업(task)이 없습니다. 아래 섹션에서 프로젝트 파일에 작업(task)을 추가합니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md) 항목을 참조하세요.  
   
--   대상은 작업의 명명된 순서입니다. 프로젝트 파일의 끝에는 현재 HTML 주석으로 묶인 두 개의 대상(BeforeBuild 및 AfterBuild)이 있습니다.  
+- 대상은 작업의 명명된 순서입니다. 프로젝트 파일의 끝에는 현재 HTML 주석으로 묶인 두 개의 대상(BeforeBuild 및 AfterBuild)이 있습니다.  
   
-    ```  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
+  ```  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  ```  
   
-     자세한 내용은 [대상](../msbuild/msbuild-targets.md) 항목을 참조하세요.  
+   자세한 내용은 [대상](../msbuild/msbuild-targets.md) 항목을 참조하세요.  
   
- 프로젝트 노드에는 빌드할 기본 대상(이 연습의 경우에는 Build)을 선택하는 선택적인 DefaultTargets 특성이 있습니다.  
+  프로젝트 노드에는 빌드할 기본 대상(이 연습의 경우에는 Build)을 선택하는 선택적인 DefaultTargets 특성이 있습니다.  
   
 ```  
 <Project ToolsVersion="12.0" DefaultTargets="Build" ...  
@@ -111,28 +111,28 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
   
 #### <a name="to-add-a-target-and-a-task"></a>대상 및 작업을 추가하려면  
   
-1.  프로젝트 파일에서 Import 문 바로 뒤에 다음 줄을 추가합니다.  
+1. 프로젝트 파일에서 Import 문 바로 뒤에 다음 줄을 추가합니다.  
   
-    ```  
-    <Target Name="HelloWorld">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+   </Target>  
+   ```  
   
-     그러면 HelloWorld라는 대상이 생성됩니다. 프로젝트 파일을 편집하는 동안에는 IntelliSense가 지원됩니다.  
+    그러면 HelloWorld라는 대상이 생성됩니다. 프로젝트 파일을 편집하는 동안에는 IntelliSense가 지원됩니다.  
   
-2.  결과 섹션이 다음과 같아지도록 HelloWorld 대상에 줄을 추가합니다.  
+2. 결과 섹션이 다음과 같아지도록 HelloWorld 대상에 줄을 추가합니다.  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Hello"></Message>  <Message Text="World"></Message>  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Hello"></Message>  <Message Text="World"></Message>  
+   </Target>  
+   ```  
   
-3.  프로젝트 파일을 저장합니다.  
+3. 프로젝트 파일을 저장합니다.  
   
- 메시지 작업은 MSBuild와 함께 제공되는 여러 작업 중 하나입니다. 사용 가능한 작업 및 사용법 정보의 전체 목록은 [작업 참조](../msbuild/msbuild-task-reference.md)를 참조하세요.  
+   메시지 작업은 MSBuild와 함께 제공되는 여러 작업 중 하나입니다. 사용 가능한 작업 및 사용법 정보의 전체 목록은 [작업 참조](../msbuild/msbuild-task-reference.md)를 참조하세요.  
   
- 메시지 작업에서는 Text 특성의 문자열 값을 입력으로 사용하며 출력 장치에 해당 값을 표시합니다. HelloWorld 대상은 메시지 작업을 "Hello"와 "World"를 표시하는 데 각각 한 번씩 두 번 실행합니다.  
+   메시지 작업에서는 Text 특성의 문자열 값을 입력으로 사용하며 출력 장치에 해당 값을 표시합니다. HelloWorld 대상은 메시지 작업을 "Hello"와 "World"를 표시하는 데 각각 한 번씩 두 번 실행합니다.  
   
 ## <a name="building-the-target"></a>대상 빌드  
  **Visual Studio 명령 프롬프트**에서 MSBuild를 실행하여 위에 정의되어 있는 HelloWorld 대상을 빌드합니다. /Target 또는 /t 명령줄 스위치를 사용하여 대상을 선택합니다.  
@@ -257,19 +257,19 @@ $(PropertyName)
   
 #### <a name="to-set-a-property-value-from-the-command-line"></a>명령줄에서 속성값을 설정하려면  
   
-1.  **명령 창**에서 다음 줄을 입력하고 실행합니다.  
+1. **명령 창**에서 다음 줄을 입력하고 실행합니다.  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
+   ```  
   
-2.  출력을 검사합니다. 다음 줄이 표시됩니다.  
+2. 출력을 검사합니다. 다음 줄이 표시됩니다.  
   
-    ```  
-    Configuration is Release.  
-    ```  
+   ```  
+   Configuration is Release.  
+   ```  
   
- MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다.  
+   MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다.  
   
 ## <a name="special-characters"></a>특수 문자  
  MSBuild 프로젝트 파일에서 특정 문자는 특수한 의미로 사용됩니다. 이러한 문자의 예로는 세미콜론(;) 및 별표(*)를 들 수 있습니다. 프로젝트 파일에서 이러한 특수 문자를 리터럴로 사용하려면 %xx 구문을 사용하여 해당 문자를 지정해야 합니다. 여기서 xx는 문자의 ASCII 16진수 값을 나타냅니다.  
@@ -278,27 +278,27 @@ $(PropertyName)
   
 #### <a name="to-use-special-characters-in-the-message-task"></a>메시지 작업에 특수 문자를 사용하려면  
   
-1.  코드 편집기에서 두 메시지 작업을 모두 다음 줄로 바꿉니다.  
+1. 코드 편집기에서 두 메시지 작업을 모두 다음 줄로 바꿉니다.  
   
-    ```  
-    <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
-    ```  
+   ```  
+   <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
+   ```  
   
-2.  프로젝트 파일을 저장합니다.  
+2. 프로젝트 파일을 저장합니다.  
   
-3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.  
+3. **명령 창**에서 다음 줄을 입력하고 실행합니다.  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  출력을 검사합니다. 다음 줄이 표시됩니다.  
+4. 출력을 검사합니다. 다음 줄이 표시됩니다.  
   
-    ```  
-    $(Configuration) is "Debug"  
-    ```  
+   ```  
+   $(Configuration) is "Debug"  
+   ```  
   
- 자세한 내용은 [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md)를 참조하세요.  
+   자세한 내용은 [MSBuild 특수 문자](../msbuild/msbuild-special-characters.md)를 참조하세요.  
   
 ## <a name="build-items"></a>항목 빌드  
  항목은 빌드 시스템에 대한 입력으로 사용되는 정보 부분(일반적으로는 파일 이름)입니다. 예를 들어 소스 파일을 나타내는 항목 컬렉션을 Compile이라는 작업으로 전달하여 해당 항목을 어셈블리로 컴파일할 수 있습니다.  
@@ -338,31 +338,31 @@ $(PropertyName)
   
 #### <a name="to-examine-item-type-values"></a>항목 종류 값을 검사하려면  
   
-1.  코드 편집기에서 HelloWorld 대상 작업을 다음 코드로 바꿉니다.  
+1. 코드 편집기에서 HelloWorld 대상 작업을 다음 코드로 바꿉니다.  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Compile item type contains @(Compile)" />  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Compile item type contains @(Compile)" />  
+   </Target>  
+   ```  
   
-2.  프로젝트 파일을 저장합니다.  
+2. 프로젝트 파일을 저장합니다.  
   
-3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.  
+3. **명령 창**에서 다음 줄을 입력하고 실행합니다.  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  출력을 검사합니다. 다음과 같은 긴 줄이 표시됩니다.  
+4. 출력을 검사합니다. 다음과 같은 긴 줄이 표시됩니다.  
   
-    ```  
-    Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
-    ```  
+   ```  
+   Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
+   ```  
   
- 기본적으로 항목 종류의 값은 세미콜론으로 구분됩니다.  
+   기본적으로 항목 종류의 값은 세미콜론으로 구분됩니다.  
   
- 항목 종류의 구분 기호를 변경하려면 다음 구문을 사용합니다. 여기서 ItemType은 항목 종류이고 Separator는 하나 이상의 구분 문자를 포함하는 문자열입니다.  
+   항목 종류의 구분 기호를 변경하려면 다음 구문을 사용합니다. 여기서 ItemType은 항목 종류이고 Separator는 하나 이상의 구분 문자를 포함하는 문자열입니다.  
   
 ```  
 @(ItemType, Separator)  
@@ -491,62 +491,62 @@ $(PropertyName)
   
 #### <a name="to-examine-item-metadata"></a>항목 메타데이터를 검사하려면  
   
-1.  코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
+1. 코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
   
-    ```  
-    <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
-    ```  
+   ```  
+   <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
+   ```  
   
-2.  프로젝트 파일을 저장합니다.  
+2. 프로젝트 파일을 저장합니다.  
   
-3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.  
+3. **명령 창**에서 다음 줄을 입력하고 실행합니다.  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  출력을 검사합니다. 다음 줄이 표시됩니다.  
+4. 출력을 검사합니다. 다음 줄이 표시됩니다.  
   
-    ```  
-    Compile.DependentUpon:  
-    Compile.DependentUpon: Form1.cs  
-    Compile.DependentUpon: Resources.resx  
-    Compile.DependentUpon: Settings.settings  
-    ```  
+   ```  
+   Compile.DependentUpon:  
+   Compile.DependentUpon: Form1.cs  
+   Compile.DependentUpon: Resources.resx  
+   Compile.DependentUpon: Settings.settings  
+   ```  
   
- 위 코드에 나와 있는 것처럼 "Compile.DependentUpon" 구가 여러 번 나타납니다. 대상 내에서 이 구문이 포함된 메타데이터를 사용하면 "일괄 처리"가 수행됩니다. 일괄 처리란 대상 내의 작업이 각각의 고유 메타데이터 값에 대해 한 번씩 실행된다는 의미입니다. 이 코드는 일반적인 "for loop" 프로그래밍 구문과 동일한 MSBuild 스크립트입니다. 자세한 내용은 [일괄 처리](../msbuild/msbuild-batching.md)를 참조하세요.  
+   위 코드에 나와 있는 것처럼 "Compile.DependentUpon" 구가 여러 번 나타납니다. 대상 내에서 이 구문이 포함된 메타데이터를 사용하면 "일괄 처리"가 수행됩니다. 일괄 처리란 대상 내의 작업이 각각의 고유 메타데이터 값에 대해 한 번씩 실행된다는 의미입니다. 이 코드는 일반적인 "for loop" 프로그래밍 구문과 동일한 MSBuild 스크립트입니다. 자세한 내용은 [일괄 처리](../msbuild/msbuild-batching.md)를 참조하세요.  
   
 ### <a name="well-known-metadata"></a>잘 알려진 메타데이터  
  항목 목록에 항목을 추가할 때마다 해당 항목에는 몇 가지 잘 알려진 메타데이터가 할당됩니다. 예를 들어 %(Filename)은 모든 항목의 파일 이름을 반환합니다. 잘 알려진 메타데이터의 전체 목록은 [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조하세요.  
   
 ##### <a name="to-examine-well-known-metadata"></a>잘 알려진 메타데이터를 검사하려면  
   
-1.  코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
+1. 코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
   
-    ```  
-    <Message Text="Compile Filename: %(Compile.Filename)" />  
-    ```  
+   ```  
+   <Message Text="Compile Filename: %(Compile.Filename)" />  
+   ```  
   
-2.  프로젝트 파일을 저장합니다.  
+2. 프로젝트 파일을 저장합니다.  
   
-3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.  
+3. **명령 창**에서 다음 줄을 입력하고 실행합니다.  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  출력을 검사합니다. 다음 줄이 표시됩니다.  
+4. 출력을 검사합니다. 다음 줄이 표시됩니다.  
   
-    ```  
-    Compile Filename: Form1  
-    Compile Filename: Form1.Designer  
-    Compile Filename: Program  
-    Compile Filename: AssemblyInfo  
-    Compile Filename: Resources.Designer  
-    Compile Filename: Settings.Designer  
-    ```  
+   ```  
+   Compile Filename: Form1  
+   Compile Filename: Form1.Designer  
+   Compile Filename: Program  
+   Compile Filename: AssemblyInfo  
+   Compile Filename: Resources.Designer  
+   Compile Filename: Settings.Designer  
+   ```  
   
- 위의 두 예를 비교하면 Compile 항목 종류에서 DependentUpon 메타데이터는 일부 항목에만 포함되어 있지만 잘 알려진 Filename 메타데이터는 모든 항목에 포함되어 있음을 확인할 수 있습니다.  
+   위의 두 예를 비교하면 Compile 항목 종류에서 DependentUpon 메타데이터는 일부 항목에만 포함되어 있지만 잘 알려진 Filename 메타데이터는 모든 항목에 포함되어 있음을 확인할 수 있습니다.  
   
 ### <a name="metadata-transformations"></a>메타데이터 변환  
  항목 목록을 새 항목 목록으로 변환할 수 있습니다. 항목 목록을 변환하려면 다음 구문을 사용합니다. 여기서 ItemType은 항목 종류의 이름이고 MetadataName은 메타데이터의 이름입니다.  
@@ -559,27 +559,27 @@ $(PropertyName)
   
 ##### <a name="to-transform-items-using-metadata"></a>메타데이터를 사용하여 항목을 변환하려면  
   
-1.  코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
+1. 코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
   
-    ```  
-    <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
-    ```  
+   ```  
+   <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
+   ```  
   
-2.  프로젝트 파일을 저장합니다.  
+2. 프로젝트 파일을 저장합니다.  
   
-3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.  
+3. **명령 창**에서 다음 줄을 입력하고 실행합니다.  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  출력을 검사합니다. 다음 줄이 표시됩니다.  
+4. 출력을 검사합니다. 다음 줄이 표시됩니다.  
   
-    ```  
-    Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
-    ```  
+   ```  
+   Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
+   ```  
   
- 이 구문으로 표현되는 메타데이터로 인해 일괄 처리가 수행되지는 않습니다.  
+   이 구문으로 표현되는 메타데이터로 인해 일괄 처리가 수행되지는 않습니다.  
   
 ## <a name="whats-next"></a>새로운 기능  
  간단한 프로젝트 파일을 단계별로 만드는 방법을 알아보려면 [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 진행해 보세요.  

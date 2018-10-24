@@ -19,12 +19,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc89caf18523e57671a18884fdb6b2961d962b99
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822880"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 사용자 통합된 개발 환경 (IDE) 내에서 소스 제어 작업을 실행 하는 경우 소스 제어 플러그 인 작업에 관련 된 오류 또는 상태 메시지를 전달 하려고 합니다. 플러그 인이 목적을 위해 자체 메시지 상자를 표시할 수 있습니다. 그러나 더 원활한 통합을 위한 플러그 인에 전달할 수 문자열 상태 정보를 표시 하는 기본으로 표시 하는 IDE. 이 메커니즘은는 `LPTEXTOUTPROC` 함수 포인터입니다. IDE 오류 및 상태를 표시 하기 위한 (아래에서 자세히 설명)이이 함수를 구현 합니다.  
@@ -67,7 +67,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |SCC_MSG_RTN_OK|표시 된 문자열 또는 작업이 성공적으로 완료 되었습니다.|  
 |SCC_MSG_RTN_CANCEL|사용자 작업을 취소 하려고 합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  IDE 호출 한다고 가정 합니다 [SccGet](../extensibility/sccget-function.md) 20 파일 이름의 합니다. 소스 제어 플러그 인 파일 get 중간 작업을 취소 하지 못하게 하려고 했습니다. 호출한 후 각 파일을 가져올 `lpTextOutProc`, 각 파일에 상태 정보를 전달 하 고 보내는 `SCC_MSG_DOCANCEL` 상태가 보고서에 있으면 메시지입니다. 하는 경우 언제 든 지 플러그 인 값을 받은 반환 `SCC_MSG_RTN_CANCEL` IDE에서 취소는 get 작업이 즉시 파일이 더 이상 없습니다 검색 않도록 합니다.  
   
 ## <a name="structures"></a>구조체  

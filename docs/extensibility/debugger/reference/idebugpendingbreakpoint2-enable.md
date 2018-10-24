@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930e806616ef5f4c30aa39b8c6e8ac156ab4a1ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51309f1af6a96663e9d2ad71348a5b56a0fab6f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855484"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-보류 중인 중단점의 활성화 상태를 토글합니다.  
+보류 중인 중단점의 활성화 상태를 전환합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,18 +42,18 @@ int Enable(
   
 #### <a name="parameters"></a>매개 변수  
  `fEnable`  
- [in] 0이 아닌 값으로 설정 (`TRUE`) 보류 중인 중단점을 사용 하려면 또는 0 (`FALSE`)를 사용 하지 않도록 설정 합니다.  
+ [in] 설정에 0이 아닌 값 (`TRUE`) 보류 중인 중단점을 사용 하도록 설정 하거나 0 (`FALSE`) 사용 하지 않도록 설정 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 반환 `E_BP_DELETED` 중단점 삭제 된 경우.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_BP_DELETED` 중단점 삭제 된 경우.  
   
 ## <a name="remarks"></a>설명  
- 보류 중인 중단점을 활성화 하거나 비활성화 하는 경우 여기에서 바인딩된 모든 중단점을 동일한 상태로 설정 됩니다.  
+ 보류 중인 중단점을 사용 하도록 설정 하거나 사용 하지 않도록 설정에서 바인딩된 모든 중단점을 동일한 상태로 설정 됩니다.  
   
- 중단점은 이미 사용 하거나 사용 하지 않도록 설정 하는 경우에이 메서드를 필요한 만큼 여러 번 호출할 수 있습니다.  
+ 중단점을 이미 사용 되었거나 사용 하지 않도록 설정 하는 경우에이 메서드를 필요한 만큼 여러 번 호출할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CPendingBreakpoint` 공개 하는 개체는 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스입니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CPendingBreakpoint` 노출 하는 개체를 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    
