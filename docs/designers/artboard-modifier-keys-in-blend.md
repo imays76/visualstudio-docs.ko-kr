@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861113"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend의 아트보드 보조 키
 일부 바로 가기 키는 연결된 메뉴 항목이 없으므로 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 사용자 인터페이스를 통해 찾을 수 없습니다. 다음 표에는 개체 크기 조정 등의 작업을 수정하는 바로 가기가 나열되어 있습니다.
 
 |수행할 작업|방법|
-|-----------------------|-------------|
+| - |-------------|
 |다른 도구가 선택된 상태에서 일시적으로 **선택** 도구를 선택합니다. 이렇게 하면 **선택** 도구와 다른 도구 간에 전환하며 **도구** 패널에서 클릭해야 하는 횟수가 줄어듭니다.|**Ctrl** 키를 누른 채로 유지|
 |**선택** 도구를 선택한 상태에서 선택한 개체 조금 이동|화살표 키 누름|
 |아트보드 이동|**스페이스바**를 누른 채로 아트보드 끌기|

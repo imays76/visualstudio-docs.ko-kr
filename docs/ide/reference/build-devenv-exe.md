@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 777347ba36cf3443a509d1d6c8c44c23a86901e0
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: cdd510e523aaabc468c1f01626593e51d0ad1558
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764971"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410964"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -65,7 +65,7 @@ devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /proje
 ## <a name="see-also"></a>참고 항목
 
 - [프로젝트 및 솔루션 빌드 및 정리](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Devenv 명령줄 wwitches](../../ide/reference/devenv-command-line-switches.md)
+- [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
 - [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

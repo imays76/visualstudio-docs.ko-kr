@@ -9,20 +9,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3ec82822b2004cabb91f8c7677409acce69c199
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7c846b01634c1af9ba14e5c7ff460c279bf385a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844122"
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Visual Studio에서 프로파일링의 개요
 
 프로파일링 및 진단 도구는 메모리 및 CPU 사용량 진단 및 응용 프로그램 수준 문제 진단을 도와줍니다. 이러한 도구를 사용하여 응용 프로그램을 실행하는 시간과 같은 기간에 따른 데이터(예: 변수 값, 함수 호출, 이벤트)를 누적합니다. 코드를 실행하는 동안 여러 시점에서 응용 프로그램의 상태를 보거나 응용 프로그램 성능의 사후 분석을 수행할 수 있습니다.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기")  |    CPU 사용량 분석 방법 및 메모리 사용량 분석 방법을 보여 주는 [진단 도구 사용에 대한 비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)합니다. |
+| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | CPU 사용량 분석 방법 및 메모리 사용량 분석 방법을 보여 주는 [진단 도구 사용에 대한 비디오를 시청](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)합니다. |
 
 ## <a name="next-steps"></a>다음 단계
 

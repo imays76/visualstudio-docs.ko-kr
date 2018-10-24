@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5161f7b4878c6ef381dc26aa4689c4fe7b7cb961
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815483"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>표준 및 사용자 지정 도구 집합 구성
 MSBuild 도구 집합은 응용 프로그램 프로젝트를 빌드하는 데 사용할 수 있는 작업, 대상 및 도구에 대한 참조를 포함합니다. MSBuild는 표준 도구 집합을 포함하지만 사용자 지정 도구 집합을 만들 수도 있습니다. 도구 집합을 지정하는 방법에 대한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)을 참조하세요.  
@@ -27,7 +27,7 @@ MSBuild 도구 집합은 응용 프로그램 프로젝트를 빌드하는 데 �
  MSBuild 15.0은 다음 표준 도구 집합을 포함합니다.  
   
 |ToolsVersion|도구 집합 경로(MSBuildBinPath 또는 MSBuildToolsPath 빌드 속성에 지정된 대로)|  
-|------------------|--------------------------------------------------------------------------------------------|  
+|------------------| - |  
 |2.0|\<Windows 설치 경로>\Microsoft.Net\Framework\v2.0.50727\\|  
 |3.5|\<Windows 설치 경로>\Microsoft.NET\Framework\v3.5\\|  
 |4.0|\<Windows 설치 경로>\Microsoft.NET\Framework\v4.0.30319\\|  
@@ -39,9 +39,9 @@ MSBuild 도구 집합은 응용 프로그램 프로젝트를 빌드하는 데 �
   
 |레지스트리 키|키 이름|문자열 키 값|  
 |------------------|--------------|----------------------|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\**  |**MSBuildToolsPath**|**.NET Framework 2.0 설치 경로**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\**  |**MSBuildToolsPath**|**.NET Framework 3.5 설치 경로**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\**  |**MSBuildToolsPath**|**.NET Framework 4 설치 경로**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**.NET Framework 2.0 설치 경로**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**.NET Framework 3.5 설치 경로**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**.NET Framework 4 설치 경로**|  
   
 ### <a name="sub-toolsets"></a>하위 도구 집합  
  이전 테이블의 레지스트리 키에 하위 키가 있는 경우 MSBuild는 이를 사용하여 부모 도구 집합의 경로를 재정의하는 하위 도구 집합의 경로를 결정합니다. 다음 하위 키는 예제입니다.  
@@ -91,11 +91,11 @@ MSBuild 도구 집합은 응용 프로그램 프로젝트를 빌드하는 데 �
   
  다음 속성은 프로젝트에 사용되는 `ToolsVersion`의 값에 관련됩니다.  
   
--   **$(MSBuildBinPath)** 는 레지스트리 또는 `ToolsVersion`이 정의된 구성 파일에 지정된 `ToolsPath` 값으로 설정됩니다. 레지스트리 또는 구성 파일의 `$(MSBuildToolsPath)` 설정은 핵심 작업 및 대상의 위치를 지정합니다. 프로젝트 파일에서 $(MSBuildBinPath) 속성 및 $(MSBuildToolsPath) 속성에 매핑됩니다.  
+- **$(MSBuildBinPath)** 는 레지스트리 또는 `ToolsVersion`이 정의된 구성 파일에 지정된 `ToolsPath` 값으로 설정됩니다. 레지스트리 또는 구성 파일의 `$(MSBuildToolsPath)` 설정은 핵심 작업 및 대상의 위치를 지정합니다. 프로젝트 파일에서 $(MSBuildBinPath) 속성 및 $(MSBuildToolsPath) 속성에 매핑됩니다.  
   
--   `$(MSBuildToolsPath)`는 구성 파일에 지정된 MSBuildToolsPath 속성에서 제공되는 예약된 속성입니다. (이 속성은 `$(MSBuildBinPath)`를 대체합니다. 그러나 `$(MSBuildBinPath)`가 호환성을 위해 전달됩니다.) 사용자 지정 도구 집합은 `$(MSBuildToolsPath)` 및 `$(MSBuildBinPath)`가 동일한 값을 갖지 않는 한 둘 모두가 아닌 둘 중 하나를 정의해야 합니다.  
+- `$(MSBuildToolsPath)`는 구성 파일에 지정된 MSBuildToolsPath 속성에서 제공되는 예약된 속성입니다. (이 속성은 `$(MSBuildBinPath)`를 대체합니다. 그러나 `$(MSBuildBinPath)`가 호환성을 위해 전달됩니다.) 사용자 지정 도구 집합은 `$(MSBuildToolsPath)` 및 `$(MSBuildBinPath)`가 동일한 값을 갖지 않는 한 둘 모두가 아닌 둘 중 하나를 정의해야 합니다.  
   
- 또한 MSBuildToolsPath 속성을 추가하는 데 사용하는 동일한 구문을 사용하여 구성 파일에 ToolsVersion 관련 사용자 지정 속성을 추가할 수도 있습니다. 이러한 사용자 지정 속성을 프로젝트 파일에 사용할 수 있도록 하려면 구성 파일에 지정된 값의 이름과 동일한 이름을 사용합니다. 구성 파일에서 하위 도구 집합이 아닌 도구 집합을 정의할 수 있습니다.  
+  또한 MSBuildToolsPath 속성을 추가하는 데 사용하는 동일한 구문을 사용하여 구성 파일에 ToolsVersion 관련 사용자 지정 속성을 추가할 수도 있습니다. 이러한 사용자 지정 속성을 프로젝트 파일에 사용할 수 있도록 하려면 구성 파일에 지정된 값의 이름과 동일한 이름을 사용합니다. 구성 파일에서 하위 도구 집합이 아닌 도구 집합을 정의할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

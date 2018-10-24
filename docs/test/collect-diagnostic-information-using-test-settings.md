@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865351"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>테스트 설정을 사용하여 진단 정보 수집
 
@@ -42,7 +42,7 @@ Visual Studio를 사용하여 단위, 코딩된 UI, 웹 성능 또는 부하 테
 다음 표에서는 로컬 컴퓨터나 원격 컴퓨터 역할에 사용할 수 있는 진단 데이터 어댑터의 다양한 구성 방식을 간략하게 소개합니다.
 
 |테스트 설정에 사용되는 진단 데이터 어댑터|로컬 컴퓨터의 수동 테스트|자동화된 테스트|수동 테스트: 역할 집합과 환경을 사용하여 데이터 수집|노트|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**IntelliTrace 및 테스트 영향용 ASP.NET 클라이언트 프록시:** 이 프록시를 사용하면 IntelliTrace 및 테스트 영향 진단 데이터 어댑터와 관련하여 클라이언트에서 웹 서버로의 HTTP 호출에 대한 정보를 수집할 수 있습니다.|예|예|예|- 클라이언트 역할에 대해 IntelliTrace 또는 테스트 영향 진단 데이터 어댑터가 선택된 경우에만 사용하세요.|
 |**ASP.NET 프로파일러:** ASP.NET 웹 응용 프로그램의 성능 데이터를 수집하는 ASP.NET 프로파일링을 포함하는 테스트 설정을 만들 수 있습니다.|아니요|예(아래 설명 참조)|아니요|- 이 진단 데이터 어댑터는 Visual Studio에서 부하 테스트를 실행할 때만 지원됩니다.|
 |**코드 검사:** 테스트에서 검사하는 코드 범위를 조사하는 데 사용되는 코드 검사 정보를 포함하는 테스트 설정을 만들 수 있습니다.|아니요|예(아래 설명 참조)|아니요|- 코드 검사는 Visual Studio의 자동화된 테스트 또는 *mstest.exe*를 실행하는 경우 및 테스트를 실행하는 머신에서만 사용할 수 있습니다. 원격 컬렉션은 지원되지 않습니다.<br />- IntelliTrace 정보를 수집하도록 테스트 설정을 구성한 경우에는 코드 검사 데이터가 수집되지 않습니다. **참고:** 이 진단 데이터 어댑터는 Visual Studio 테스트 설정에만 적용할 수 있습니다. Microsoft Test Manager의 테스트 설정에는 사용되지 않습니다. 또한 이 어댑터는 Visual Studio 2010 테스트 프로젝트와의 호환성을 위해 필요합니다. **참고:** 호환성을 위해 자동 테스트가 Microsoft Test Manager 또는 레거시 MSTest Runner를 사용하는 Visual Studio의 원격 테스트 에이전트에서 실행될 때 코드 검사가 적용됩니다.|

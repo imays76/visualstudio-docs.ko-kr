@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 41008d1c2808a5a6e6428670a3e7dbbf1041caee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819341"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 데이터용 사용자 지정 편집기 만들기
 
@@ -38,128 +38,128 @@ ms.locfileid: "44320542"
 
 ## <a name="to-create-a-custom-editor-for-your-diagnostic-data-adapter"></a>진단 데이터 어댑터용 사용자 지정 편집기를 만들려면
 
-1.  프로젝트에서 진단 데이터 어댑터용 사용자 정의 컨트롤을 만듭니다.
+1. 프로젝트에서 진단 데이터 어댑터용 사용자 정의 컨트롤을 만듭니다.
 
-    1.  진단 데이터 어댑터 클래스가 포함되어 있는 코드 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음, **사용자 정의 컨트롤**을 가리킵니다.
+   1.  진단 데이터 어댑터 클래스가 포함되어 있는 코드 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음, **사용자 정의 컨트롤**을 가리킵니다.
 
-    2.  이 예제에서는 **Data File Name:** 이라는 텍스트가 있는 레이블과 **FileTextBox**라는 텍스트 상자를 양식에 추가하여 사용자가 필요한 데이터를 입력할 수 있도록 합니다.
+   2.  이 예제에서는 **Data File Name:** 이라는 텍스트가 있는 레이블과 **FileTextBox**라는 텍스트 상자를 양식에 추가하여 사용자가 필요한 데이터를 입력할 수 있도록 합니다.
 
-    > [!NOTE]
-    > 현재 Windows Forms 사용자 정의 컨트롤만 지원됩니다.
+   > [!NOTE]
+   > 현재 Windows Forms 사용자 정의 컨트롤만 지원됩니다.
 
-2.  다음 줄을 선언 섹션에 추가합니다.
+2. 다음 줄을 선언 섹션에 추가합니다.
 
-    ```csharp
-    using System.Xml;
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    ```
+   ```csharp
+   using System.Xml;
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   ```
 
-3.  이 사용자 지정 컨트롤을 사용자 지정 편집기로 만듭니다.
+3. 이 사용자 지정 컨트롤을 사용자 지정 편집기로 만듭니다.
 
-    1.  코드 프로젝트에서 사용자 정의 컨트롤을 마우스 오른쪽 단추로 클릭하고 **코드 보기**를 가리킵니다.
+   1.  코드 프로젝트에서 사용자 정의 컨트롤을 마우스 오른쪽 단추로 클릭하고 **코드 보기**를 가리킵니다.
 
-    2.  다음과 같이 클래스에서 편집기 인터페이스 <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>를 구현하도록 설정합니다.
+   2.  다음과 같이 클래스에서 편집기 인터페이스 <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>를 구현하도록 설정합니다.
 
-    ```csharp
-    public partial class MyDataConfigEditor :
-         UserControl, IDataCollectorConfigurationEditor
-    ```
+   ```csharp
+   public partial class MyDataConfigEditor :
+        UserControl, IDataCollectorConfigurationEditor
+   ```
 
-    1.  코드에서 <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>를 마우스 오른쪽 단추로 클릭하고 **인터페이스 구현** 명령을 선택합니다. 이 인터페이스에 대해 구현해야 할 메서드가 클래스에 추가됩니다.
+   1.  코드에서 <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>를 마우스 오른쪽 단추로 클릭하고 **인터페이스 구현** 명령을 선택합니다. 이 인터페이스에 대해 구현해야 할 메서드가 클래스에 추가됩니다.
 
-    2.  편집기에서 사용자 정의 컨트롤을 진단 데이터 어댑터 편집기로 식별하도록 해당 사용자 정의 컨트롤에 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>를 추가하고 **회사**, **제품** 및 **버전**을 진단 데이터 어댑터에 대한 적합한 정보로 바꿉니다.
+   2.  편집기에서 사용자 정의 컨트롤을 진단 데이터 어댑터 편집기로 식별하도록 해당 사용자 정의 컨트롤에 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>를 추가하고 **회사**, **제품** 및 **버전**을 진단 데이터 어댑터에 대한 적합한 정보로 바꿉니다.
 
-        ```csharp
-        [DataCollectorConfigurationEditorTypeUri(
-            "configurationeditor://MyCompany/MyConfigEditor/1.0")]
-        ```
+       ```csharp
+       [DataCollectorConfigurationEditorTypeUri(
+           "configurationeditor://MyCompany/MyConfigEditor/1.0")]
+       ```
 
-4.  다음과 같이 두 개의 private 변수를 추가합니다.
+4. 다음과 같이 두 개의 private 변수를 추가합니다.
 
-    ```csharp
-    private DataCollectorSettings collectorSettings;
-    private IServiceProvider ServiceProvider { get; set; }
-    ```
+   ```csharp
+   private DataCollectorSettings collectorSettings;
+   private IServiceProvider ServiceProvider { get; set; }
+   ```
 
-5.  진단 데이터 어댑터용 편집기를 초기화할 코드를 추가합니다. 설정 변수에 있는 데이터를 사용하여 사용자 정의 컨트롤의 필드에 기본값을 추가할 수 있습니다. 이는 어댑터에 대한 XML 구성 파일의 `<DefaultConfiguration>` 요소에 있는 데이터입니다.
+5. 진단 데이터 어댑터용 편집기를 초기화할 코드를 추가합니다. 설정 변수에 있는 데이터를 사용하여 사용자 정의 컨트롤의 필드에 기본값을 추가할 수 있습니다. 이는 어댑터에 대한 XML 구성 파일의 `<DefaultConfiguration>` 요소에 있는 데이터입니다.
 
-    ```csharp
-    public void Initialize(
-        IServiceProvider svcProvider,
-        DataCollectorSettings settings)
-    {
-        ServiceProvider = svcProvider;
-        collectorSettings = settings;
+   ```csharp
+   public void Initialize(
+       IServiceProvider svcProvider,
+       DataCollectorSettings settings)
+   {
+       ServiceProvider = svcProvider;
+       collectorSettings = settings;
 
-        // Display the default file name as listed in the settings file.
-        this.SuspendLayout();
-        this.FileTextBox.Text = getText(collectorSettings.Configuration);
-        this.ResumeLayout();
-    }
-    ```
+       // Display the default file name as listed in the settings file.
+       this.SuspendLayout();
+       this.FileTextBox.Text = getText(collectorSettings.Configuration);
+       this.ResumeLayout();
+   }
+   ```
 
-6.  다음과 같이 편집기에서 컨트롤의 데이터를 진단 데이터 어댑터 API에서 필요로 하는 XML 형식으로 다시 저장하는 코드를 추가합니다.
+6. 다음과 같이 편집기에서 컨트롤의 데이터를 진단 데이터 어댑터 API에서 필요로 하는 XML 형식으로 다시 저장하는 코드를 추가합니다.
 
-    ```csharp
-    public DataCollectorSettings SaveData()
-    {
-        collectorSettings.Configuration.InnerXml =
-            String.Format(
-    @"<MyCollectorName
-        xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
-      <File FullPath=""{0}"" />
-    </MyCollectorName>",
-        FileTextBox.Text);
-        return collectorSettings;
-    }
-    ```
+   ```csharp
+   public DataCollectorSettings SaveData()
+   {
+       collectorSettings.Configuration.InnerXml =
+           String.Format(
+   @"<MyCollectorName
+       xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
+     <File FullPath=""{0}"" />
+   </MyCollectorName>",
+       FileTextBox.Text);
+       return collectorSettings;
+   }
+   ```
 
-7.  `VerifyData` 메서드에서 데이터가 올바른지 확인하는 코드를 추가하는 것이 중요합니다. 또는 이 메서드에서 `true`를 반환하도록 지정할 수 있습니다.
+7. `VerifyData` 메서드에서 데이터가 올바른지 확인하는 코드를 추가하는 것이 중요합니다. 또는 이 메서드에서 `true`를 반환하도록 지정할 수 있습니다.
 
-    ```csharp
-    public bool VerifyData()
-    {
-        // Not currently verifying data
-        return true;
-    }
-    ```
+   ```csharp
+   public bool VerifyData()
+   {
+       // Not currently verifying data
+       return true;
+   }
+   ```
 
-8.  (선택 사항) 전용 `ResetToAgentDefaults()` 메서드를 사용하는 `getText()` 메서드에서 데이터를 XML 구성 파일에 제공된 초기 설정으로 다시 설정하는 코드를 추가할 수 있습니다.
+8. (선택 사항) 전용 `ResetToAgentDefaults()` 메서드를 사용하는 `getText()` 메서드에서 데이터를 XML 구성 파일에 제공된 초기 설정으로 다시 설정하는 코드를 추가할 수 있습니다.
 
-    ```csharp
-    // Reset to default value from XML configuration
-    // using a custom getText() method
-    public void ResetToAgentDefaults()
-    {
-        this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
-    }
+   ```csharp
+   // Reset to default value from XML configuration
+   // using a custom getText() method
+   public void ResetToAgentDefaults()
+   {
+       this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
+   }
 
-    // Local method to read the configuration settings
-    private string getText(XmlElement element)
-    {
-        // Setup namespace manager with our namespace
-        XmlNamespaceManager nsmgr =
-            new XmlNamespaceManager(
-                element.OwnerDocument.NameTable);
+   // Local method to read the configuration settings
+   private string getText(XmlElement element)
+   {
+       // Setup namespace manager with our namespace
+       XmlNamespaceManager nsmgr =
+           new XmlNamespaceManager(
+               element.OwnerDocument.NameTable);
 
-        // Find all the "File" elements under our configuration
-        XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
+       // Find all the "File" elements under our configuration
+       XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
 
-        string result = String.Empty;
-        if (files.Count > 0)
-        {
-            XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
-            if (pathAttribute != null &&
-                !String.IsNullOrEmpty(pathAttribute.Value))
-            {
-                result = pathAttribute.Value;
-            }
-        }
+       string result = String.Empty;
+       if (files.Count > 0)
+       {
+           XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
+           if (pathAttribute != null &&
+               !String.IsNullOrEmpty(pathAttribute.Value))
+           {
+               result = pathAttribute.Value;
+           }
+       }
 
-        return result;
-    }
-    ```
+       return result;
+   }
+   ```
 
 9. 솔루션을 빌드합니다. 진단 데이터 어댑터 어셈블리 및 XML 구성 파일(`<diagnostic data adapter name>.dll.config`)을 사용자 설치 디렉터리를 기준으로 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*에 해당하는 위치에 복사합니다.
 
@@ -184,7 +184,7 @@ ms.locfileid: "44320542"
 
      편집기에서 지정한 데이터 파일이 테스트 결과에 연결됩니다.
 
- 테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) 또는 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)을 참조하세요.
+    테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) 또는 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

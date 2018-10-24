@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384203"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853521"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -162,7 +164,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 **분기** 열에 있는 아이콘은 분기가 작업 중인 분기와 어떻게 관련되어 있는지를 보여 줍니다.
 
 |**아이콘**|**변경이 발생한 위치:**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens - 현재 분기에서 변경 아이콘](../ide/media/codelensbranchcurrenticon.png)|현재 분기|
 |![CodeLens: 부모 분기에서 변경 아이콘](../ide/media/codelensbranchparenticon.png)|부모 분기|
 |![CodeLens: 하위 분기에서 변경 아이콘](../ide/media/codelensbranchchildicon.png)|자식 분기|

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861581"
 ---
 # <a name="refactor-python-code"></a>Python 코드 리팩터링
 
@@ -30,27 +30,27 @@ Visual Studio는 Python 소스 코드를 자동으로 변환하고 정리하는 
 ## <a name="rename"></a>이름 바꾸기
 
 1. 이름을 바꿀 식별자를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택하거나, 해당 식별자에 캐럿을 배치하고 **편집** > **리팩터링** > **이름 바꾸기** 메뉴 명령(**F2**)을 선택합니다.
-1. **이름 바꾸기** 대화 상자가 표시되면 식별자의 새 이름을 입력하고 **확인**을 선택합니다.
+2. **이름 바꾸기** 대화 상자가 표시되면 식별자의 새 이름을 입력하고 **확인**을 선택합니다.
 
-  ![새 식별자 이름에 대한 프롬프트 이름 바꾸기](media/code-refactor-rename-1.png)
+   ![새 식별자 이름에 대한 프롬프트 이름 바꾸기](media/code-refactor-rename-1.png)
 
-1. 다음 대화 상자에서 이름 바꾸기를 적용할 코드의 파일과 인스턴스를 선택합니다. 특정 인스턴스를 선택하여 해당 변경 내용을 미리 봅니다.
+3. 다음 대화 상자에서 이름 바꾸기를 적용할 코드의 파일과 인스턴스를 선택합니다. 특정 인스턴스를 선택하여 해당 변경 내용을 미리 봅니다.
 
-  ![대화 상자의 이름을 변경하여 변경 내용을 적용할 위치 선택](media/code-refactor-rename-2.png)
+   ![대화 상자의 이름을 변경하여 변경 내용을 적용할 위치 선택](media/code-refactor-rename-2.png)
 
-1. **적용**을 선택하여 원본 코드 파일을 변경합니다. 이 작업은 실행 취소할 수 있습니다.
+4. **적용**을 선택하여 원본 코드 파일을 변경합니다. 이 작업은 실행 취소할 수 있습니다.
 
 ## <a name="extract-method"></a>메서드 추출
 
 1. 별도의 메서드로 추출할 코드 줄이나 식을 선택합니다.
-1. **편집** > **리팩터링** > **메서드 추출** 메뉴 명령을 선택하거나, **Ctrl**+**R** > **M**을 입력합니다.
-1. 표시되는 대화 상자에서 새 메서드 이름을 입력하고 추출할 위치를 지정한 다음 클로저 변수를 선택합니다. 클로저로 선택되지 않은 변수는 메서드 인수로 변환됩니다.
+2. **편집** > **리팩터링** > **메서드 추출** 메뉴 명령을 선택하거나, **Ctrl**+**R** > **M**을 입력합니다.
+3. 표시되는 대화 상자에서 새 메서드 이름을 입력하고 추출할 위치를 지정한 다음 클로저 변수를 선택합니다. 클로저로 선택되지 않은 변수는 메서드 인수로 변환됩니다.
 
-  ![메서드 추출 대화 상자](media/code-refactor-extract-method-1.png)
+   ![메서드 추출 대화 상자](media/code-refactor-extract-method-1.png)
 
-1. **확인**을 선택하고, 이에 따라 코드가 수정됩니다.
+4. **확인**을 선택하고, 이에 따라 코드가 수정됩니다.
 
-  ![메서드 추출 결과](media/code-refactor-extract-method-2.png)
+   ![메서드 추출 결과](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>가져오기 추가
 

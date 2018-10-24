@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de351e019c4daacc61bbbdd2757b0f0d9a46e584
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a2c189afe9051d0f85c7f5f24a928d475d0eaca9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872852"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>검색 식의 논리 및 고급 연산자
 
@@ -57,7 +57,7 @@ ms.locfileid: "31942843"
 `code:` 연산자를 사용하여 여러 프로그래밍 언어에 대한 콘텐츠를 찾을 수 있습니다. 특정 프로그래밍 언어에 대한 예제를 반환하려면 다음과 같은 프로그래밍 언어 값 중 하나를 사용합니다.
 
 |프로그래밍 언어|검색 연산자 구문|
-|--------------------|---------|
+| - |---------|
 |Visual Basic|`code:vb`<br/>`code:visualbasic`|
 |C#|`code:c#`<br/>`code:csharp`|
 |C++|`code:cpp`<br/>`code:c++`<br/>`code:cplusplus`|

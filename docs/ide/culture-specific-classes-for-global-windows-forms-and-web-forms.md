@@ -30,12 +30,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8289b44359508d788b43fa155c6f91b58d304138
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917002"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863571"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>전역 Windows Forms 및 Web Forms을 위한 문화권 관련 클래스
 
@@ -46,7 +46,7 @@ ms.locfileid: "31917002"
 
 ## <a name="using-the-culture-setting"></a>문화권 설정 사용
 
-앱 또는 **국가별 옵션** 제어판에 저장된 문화권 설정을 사용하여 런타임에 문화권 규칙을 확인하고 그에 따라 정보의 서식을 지정합니다. 문화권 설정에 대한 자세한 내용은 [방법: ASP.NET 웹 페이지 세계화를 위한 문화권 및 UI 문화권 설정](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)을 참조하세요. 문화권 설정에 따라 자동으로 정보의 서식을 지정하는 클래스를 *문화권 관련* 클래스라고 합니다. 일부 문화권 관련 메서드는
+앱 또는 **국가별 옵션** 제어판에 저장된 문화권 설정을 사용하여 런타임에 문화권 규칙을 확인하고 그에 따라 정보의 서식을 지정합니다. 문화권 설정에 대한 자세한 내용은 [방법: ASP.NET 웹 페이지 세계화를 위한 문화권 및 UI 문화권 설정](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)을 참조하세요. 문화권 설정에 따라 자동으로 정보의 서식을 지정하는 클래스를 *문화권 관련* 클래스라고 합니다. 일부 문화권 관련 메서드는
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>

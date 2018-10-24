@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847633"
 ---
 # <a name="shader-designer"></a>셰이더 디자이너
 
@@ -31,7 +31,7 @@ ms.locfileid: "47029055"
 **셰이더 디자이너**는 다음과 같은 셰이더 형식을 지원합니다.
 
 |형식 이름|파일 확장명|지원되는 작업(보기, 편집, 내보내기)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |방향이 지정된 그래프 셰이더 언어|*.dgsl*|보기, 편집|
 |HLSL 셰이더(소스 코드)|*.hlsl*|내보내기|
 |HLSL 셰이더(바이트 코드)|*.cso*|내보내기|
@@ -177,7 +177,7 @@ HLSL 소스 코드 또는 컴파일된 셰이더 바이트 코드로 셰이더�
 ## <a name="keyboard-shortcuts"></a>바로 가기 키
 
 |명령|바로 가기 키|
-|-------------|------------------------|
+|-------------| - |
 |**선택** 모드로 전환|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |**확대/축소** 모드로 전환|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |**이동** 모드로 전환|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
@@ -204,5 +204,5 @@ HLSL 소스 코드 또는 컴파일된 셰이더 바이트 코드로 셰이더�
 |제목|설명|
 |-----------|-----------------|
 |[게임 및 앱을 위한 3D 자산 작업](../designers/working-with-3-d-assets-for-games-and-apps.md)|질감 및 이미지, 3D 모델 및 셰이더 효과를 작업하는 데 사용할 수 있는 Visual Studio Tools에 대한 개요를 제공합니다.|
-|[이미지 편집기](../designers/image-editor.md)|Visual Studio 이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
+|[Image Editor](../designers/image-editor.md)|Visual Studio 이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
 |[모델 편집기](../designers/model-editor.md)|Visual Studio 모델 편집기를 사용하여 3D 모델 작업을 수행하는 방법을 설명합니다.|

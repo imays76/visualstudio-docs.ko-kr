@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 576cbb1fb9ef9210a3f22849a996fa5da14dd443
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842289"
 ---
 # <a name="change-a-method-signature-refactoring"></a>메서드 시그니처 변경 리팩터링
 
@@ -42,44 +42,44 @@ ms.locfileid: "31946327"
 
    - C#: 
 
-    ![강조 표시된 코드 C#](media/changesignature-highlight-cs.png)
+       ![강조 표시된 코드 C#](media/changesignature-highlight-cs.png)
 
    - VB:
 
-    ![강조 표시된 코드 Visual Basic](media/changesignature-highlight-vb.png)
+       ![강조 표시된 코드 Visual Basic](media/changesignature-highlight-vb.png)
 
-1. 다음 작업 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - **Ctrl+R**을 누른 다음 **Ctrl+V**를 누릅니다.  바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **시그니처 변경**을 선택합니다.
+      - **Ctrl+R**을 누른 다음 **Ctrl+V**를 누릅니다.  바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **시그니처 변경**을 선택합니다.
    - **마우스**
-     - **편집 > 리팩터링 > 매개 변수 제거**를 선택합니다.
-     - **편집 > 리팩터링 > 매개 변수 다시 정렬**을 선택합니다.
-     - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **시그니처 변경**을 선택합니다.
+      - **편집 > 리팩터링 > 매개 변수 제거**를 선택합니다.
+      - **편집 > 리팩터링 > 매개 변수 다시 정렬**을 선택합니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **시그니처 변경**을 선택합니다.
 
-1. 표시되는 **시그니처 변경** 대화 상자에서 오른쪽 단추를 사용하여 메서드 시그니처를 변경할 수 있습니다.
+3. 표시되는 **시그니처 변경** 대화 상자에서 오른쪽 단추를 사용하여 메서드 시그니처를 변경할 수 있습니다.
 
    ![시그니처 변경 대화 상자](media/changesignature-dialog-cs.png)
 
    | 단추 | 설명
    | ------ | ---
    | **위쪽/아래쪽** | 선택한 매개 변수를 목록에서 위아래로 이동합니다.
-   | **제거**  | 목록에서 선택한 매개 변수를 제거합니다.
+   | **제거** | 목록에서 선택한 매개 변수를 제거합니다.
    | **복원** | 선택한 취소선이 그어진 매개 변수를 목록으로 복원합니다.
 
    > [!TIP]
    > **참조 변경 내용 미리 보기** 확인란을 사용하여 커밋하기 전에 [결과를 확인](../../ide/preview-changes.md)합니다.
 
-1. 완료되면 **확인** 단추를 눌러 변경합니다.
+4. 완료되면 **확인** 단추를 눌러 변경합니다.
 
    - C#: 
 
-    ![시그니처 변경 결과 - C#](media/changesignature-result-cs.png)
+      ![시그니처 변경 결과 - C#](media/changesignature-result-cs.png)
 
    - Visual Basic:
 
-    ![시그니처 변경 결과 - Visual Basic](media/changesignature-result-vb.png)
+      ![시그니처 변경 결과 - Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>참고 항목
 

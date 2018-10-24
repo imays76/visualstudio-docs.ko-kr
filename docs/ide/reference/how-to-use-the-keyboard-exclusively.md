@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e849e851bdb2cfed27ff58e90c4e7248b83ed09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818265"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>방법: 단독으로 키보드 사용
 
@@ -42,15 +42,15 @@ ms.locfileid: "31949921"
 
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>키보드에서 도구 상자의 컨트롤을 디자이너에 추가하려면
 
-1.  메뉴 모음에서 **보기**, **도구 상자**를 차례로 선택합니다.
+1. 메뉴 모음에서 **보기**, **도구 상자**를 차례로 선택합니다.
 
-2.  Ctrl+위쪽 화살표 또는 Ctrl+아래쪽 화살표 키를 사용하여 현재 도구 상자 탭의 섹션 간에 이동합니다.
+2. Ctrl+위쪽 화살표 또는 Ctrl+아래쪽 화살표 키를 사용하여 현재 도구 상자 탭의 섹션 간에 이동합니다.
 
-3.  위쪽 화살표 또는 **아래쪽 화살표** 키를 사용하여 컨트롤 간에 이동합니다.
+3. 위쪽 화살표 또는 **아래쪽 화살표** 키를 사용하여 컨트롤 간에 이동합니다.
 
-4.  컨트롤이 선택된 후 Enter 키를 사용합니다.
+4. 컨트롤이 선택된 후 Enter 키를 사용합니다.
 
- 컨트롤이 폼 또는 디자이너에 추가됩니다.
+   컨트롤이 폼 또는 디자이너에 추가됩니다.
 
 ## <a name="dialog-box-options"></a>대화 상자 옵션
 

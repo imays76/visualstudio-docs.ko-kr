@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878378"
 ---
 # <a name="image-editor"></a>이미지 편집기
 
@@ -30,7 +30,7 @@ ms.locfileid: "47029123"
 **이미지 편집기**는 다음과 같은 이미지 형식을 지원합니다.
 
 |형식 이름|파일 이름 확장명|
-|-----------------|-------------------------|
+|-----------------| - |
 |PNG(Portable Network Graphics)|*.png*|
 |JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
 |DDS(Direct Draw Surface)|*.dds*|
@@ -245,7 +245,7 @@ TGA(Truevision Graphics Adapter) 이미지 형식(Targa라고도 함)으로, 최
 ## <a name="keyboard-shortcuts"></a>바로 가기 키
 
 |명령|바로 가기 키|
-|-------------|------------------------|
+|-------------| - |
 |**선택** 모드로 전환|**S**|
 |**확대/축소** 모드로 전환|**Z**|
 |**이동** 모드로 전환|**K**|

@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5f5552cb87f1c8b4501930f23765143a9e9399
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847983"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>방법: 플랫폼을 대상으로 한 프로젝트 구성
 
-Visual Studio를 사용하면 64비트 플랫폼을 비롯하여 다양한 플랫폼을 대상으로 하는 응용 프로그램을 설정할 수 있습니다. Visual Studio의 64비트 플랫폼 지원에 대한 자세한 내용은 [64비트 응용 프로그램](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)을 참조하세요.
+Visual Studio를 사용하면 64비트 플랫폼을 비롯하여 다양한 플랫폼을 대상으로 하는 응용 프로그램을 설정할 수 있습니다. Visual Studio의 64비트 플랫폼 지원에 대한 자세한 내용은 [64비트 응용 프로그램](/dotnet/framework/64-bit-apps)을 참조하세요.
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>구성 관리자에서 대상 플랫폼 지정
 
@@ -59,15 +59,15 @@ Visual Studio를 사용하면 64비트 플랫폼을 비롯하여 다양한 플�
 
 사용하고 있는 프로그래밍 언어에 따라 이 작업이 다르게 수행됩니다. 자세한 내용은 다음 링크를 참조하세요.
 
--   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트의 경우 [/platform(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform)을 참조하세요.
+- [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트의 경우 [/platform(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform)을 참조하세요.
 
--   [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트의 경우 [빌드 페이지, 프로젝트 디자이너(C#)](../ide/reference/build-page-project-designer-csharp.md)를 참조하세요.
+- [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트의 경우 [빌드 페이지, 프로젝트 디자이너(C#)](../ide/reference/build-page-project-designer-csharp.md)를 참조하세요.
 
--   [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트의 경우 [/clr(공용 언어 런타임 컴파일)](/cpp/build/reference/clr-common-language-runtime-compilation)을 참조하세요.
+- [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트의 경우 [/clr(공용 언어 런타임 컴파일)](/cpp/build/reference/clr-common-language-runtime-compilation)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 - [빌드 플랫폼 이해](../ide/understanding-build-platforms.md)
 - [/platform(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
-- [64비트 응용 프로그램](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+- [64비트 응용 프로그램](/dotnet/framework/64-bit-apps)
 - [Visual Studio IDE 64비트 지원](../ide/visual-studio-ide-64-bit-support.md)

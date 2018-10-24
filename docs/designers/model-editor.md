@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855536"
 ---
 # <a name="model-editor"></a>모델 편집기
 
@@ -31,7 +31,7 @@ ms.locfileid: "47029136"
 **모델 편집기**는 DirectX 앱 개발에 사용되는 여러 가지 3D 모델 형식을 지원합니다.
 
 |형식 이름|파일 확장명|지원되는 작업(보기, 편집, 만들기)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |AutoDesk FBX 교환 파일|*.fbx*|보기, 편집, 만들기|
 |Collada DAE 파일|*.dae*|보기, 편집(Collada DAE 파일에 대한 수정은 FBX 형식을 사용하여 저장됩니다.)|
 |OBJ|*.obj*|보기, 편집(OBJ 파일에 대한 수정은 FBX 형식을 사용하여 저장됩니다.)|
@@ -254,7 +254,7 @@ Visual Studio는 3D 축의 모든 방향을 지원하고 이를 지원하는 모
 이 장면에서 특정 개체가 다른 광원에 반응하는 방식을 수정하기 위해 재질을 사용하는 다른 개체와 상관없이 재질의 조명 속성을 변경할 수 있습니다. 이 표에서는 일반적인 조명 속성을 설명합니다.
 
 |조명 속성|설명|
-|-----------------------|-----------------|
+| - |-----------------|
 |**앰비언트**|주변 조명에 의해 표면이 어떤 영향을 받는지 설명합니다.|
 |**확산**|방향과 포인트 조명이 표면에 미치는 영향을 설명합니다.|
 |**발광**|다른 조명에 관계없이 표면이 빛을 방출하는 방법에 대해 설명합니다.|
@@ -294,7 +294,7 @@ Visual Studio는 3D 축의 모든 방향을 지원하고 이를 지원하는 모
 ## <a name="keyboard-shortcuts"></a>바로 가기 키
 
 |명령|바로 가기 키|
-|-------------|------------------------|
+|-------------| - |
 |**선택** 모드로 전환|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |**확대/축소** 모드로 전환|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |**이동** 모드로 전환|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
@@ -339,5 +339,5 @@ Visual Studio는 3D 축의 모든 방향을 지원하고 이를 지원하는 모
 |제목|설명|
 |-----------|-----------------|
 |[게임 및 앱을 위한 3D 자산 작업](../designers/working-with-3-d-assets-for-games-and-apps.md)|질감, 이미지, 3D 모델 및 셰이더 효과와 같은 그래픽 자산 작업에 사용할 수 있는 Visual Studio 도구에 대한 개요를 제공합니다.|
-|[이미지 편집기](../designers/image-editor.md)|Visual Studio 이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
+|[Image Editor](../designers/image-editor.md)|Visual Studio 이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
 |[셰이더 디자이너](../designers/shader-designer.md)|Visual Studio 셰이더 디자이너를 사용하여 셰이더 작업을 수행하는 방법을 설명합니다.|

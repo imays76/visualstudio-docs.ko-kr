@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: a94490c60a8b2ccb4513cf3c6c5c9d0de1a6f392
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0b8a2622c0b4d55376ecb0f3bc6641d41c524962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233115"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845445"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Native Activity 앱 만들기
 플랫폼 간 모바일 개발용 Visual C++ 옵션을 설치하는 경우 Visual Studio 2015를 사용하여 완벽하게 작동하는 Android Native Activity 앱을 만들 수 있습니다. Android NDK(네이티브 개발 키트)는 순수 C/C++ 코드를 사용하여 Android 앱의 대부분을 구현할 수 있게 해주는 도구 집합입니다. 일부 Java JNI 코드는 C/C++ 코드가 Android와 상호 작용할 수 있게 해주는 글루 역할을 합니다. Android NDK에서는 Android API 수준 9로 Native Activity 앱을 만들 수 있는 기능이 도입되었습니다. Native Activity 코드는 Unreal Engine 또는 OpenGL을 사용하는 게임 및 그래픽 집약적인 앱을 만드는 데 널리 사용됩니다. 이 항목에서는 OpenGL을 사용하는 간단한 Native Activity 앱을 만드는 과정을 안내합니다. 추가 항목에서는 Native Activity 코드를 편집, 빌드, 디버그 및 배포하는 개발자 수명 주기를 안내합니다.  
@@ -34,19 +34,19 @@ ms.locfileid: "39233115"
   
 #### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  Visual Studio를 엽니다. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.  
+1. Visual Studio를 엽니다. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.  
   
-2.  **새 프로젝트** 대화 상자의 **템플릿**에서 **Visual C++** > **플랫폼 간**을 차례로 선택한 후 **Native-Activity 응용 프로그램(Android)** 템플릿을 선택합니다.  
+2. **새 프로젝트** 대화 상자의 **템플릿**에서 **Visual C++** > **플랫폼 간**을 차례로 선택한 후 **Native-Activity 응용 프로그램(Android)** 템플릿을 선택합니다.  
   
-3.  앱의 이름을 `MyAndroidApp`과 같이 지정하고 **확인**를 참조하세요.  
+3. 앱의 이름을 `MyAndroidApp`과 같이 지정하고 **확인**를 참조하세요.  
   
-     ![Native Activity 프로젝트 만들기](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
+    ![Native Activity 프로젝트 만들기](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
   
-     새 솔루션이 만들어지고 솔루션 탐색기가 열립니다.  
+    새 솔루션이 만들어지고 솔루션 탐색기가 열립니다.  
   
-     ![솔루션 탐색기의 Native Activity 프로젝트](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![솔루션 탐색기의 Native Activity 프로젝트](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- 새 Android Native Activity 앱 솔루션에는 다음 두 프로젝트가 포함되어 있습니다.  
+   새 Android Native Activity 앱 솔루션에는 다음 두 프로젝트가 포함되어 있습니다.  
   
 -   `MyAndroidApp.NativeActivity`에는 앱을 Android에서 Native Activity로 실행하기 위한 참조 및 글루 코드가 포함되어 있습니다. 글루 코드의 진입점 구현은 *main.cpp*에 있습니다. 미리 컴파일된 헤더는 *pch.h*에 있습니다. 이 Native Activity 앱 프로젝트는 공유 라이브러리 *.so* 파일로 컴파일되며 패키징 프로젝트에서 이 라이브러리를 선택합니다.  
   

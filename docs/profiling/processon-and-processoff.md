@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b94001c13f5925107cecb49936ecdc5fb1e73514
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5ba91d26e038c0b0223217793f66debeeb63af85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876037"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 및 ProcessOff
 VSPerfCmd.exe **ProcessOff** 및 **ProcessOn** 하위 명령은 명령줄 프로파일링 세션에서 지정된 프로세스에 대한 프로파일링을 일시 중지하고 다시 시작합니다. **ProcessOff**는 프로세스 프로파일링을 중지하고 **ProcessOn**은 프로세스를 프로파일링을 시작합니다.  
@@ -26,11 +26,11 @@ VSPerfCmd.exe **ProcessOff** 및 **ProcessOn** 하위 명령은 명령줄 프로
   
  **ProcessOff** 및 **ProcessOn** 하위 명령은 프로파일러 API 함수에 의해 조작되는 프로세스 시작/중지에도 영향을 줍니다.  
   
--   **ProcessOff**는 프로세스 시작/중지 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
+- **ProcessOff**는 프로세스 시작/중지 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
   
--   **ProcessOn**은 프로세스 시작/중지 카운트를 즉시 1로 설정하므로 프로파일링이 다시 시작됩니다.  
+- **ProcessOn**은 프로세스 시작/중지 카운트를 즉시 1로 설정하므로 프로파일링이 다시 시작됩니다.  
   
- 자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
+  자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
   
 ## <a name="syntax"></a>구문  
   

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5af890c62cc830693cec16494eac71176743cadd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d2ff2b6660b7ef7530d3a37d251904fa54b5ce0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856199"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>클래스 디자이너의 Visual C++ 클래스
 
@@ -131,16 +131,18 @@ typedef struct
 
 **클래스 디자이너**는 템플릿 클래스의 시각화를 지원합니다. 중첩된 선언도 지원합니다. 다음 표는 몇 가지 일반적인 선언을 보여 줍니다.
 
-|Code 요소|클래스 디자이너 보기|
-|------------------|-------------------------|
-|`template <class T>`<br /><br /> `class A {};`|`A<T>`<br /><br /> 템플릿 클래스|
-|`template <class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 템플릿 클래스|
-|`template <class T, int i>`<br /><br /> `class A {};`|`A<T, i>`<br /><br /> 템플릿 클래스|
-|`template <class T, template <class K> class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 템플릿 클래스|
+
+| Code 요소 | 클래스 디자이너 보기 |
+| - | - |
+| `template <class T>`<br /><br /> `class A {};` | `A<T>`<br /><br /> 템플릿 클래스 |
+| `template <class T, class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> 템플릿 클래스 |
+| `template <class T, int i>`<br /><br /> `class A {};` | `A<T, i>`<br /><br /> 템플릿 클래스 |
+| `template <class T, template <class K> class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> 템플릿 클래스 |
+
 다음 표는 부분 특수화의 몇 가지 예를 보여 줍니다.
 
 |Code 요소|클래스 디자이너 보기|
-|------------------|-------------------------|
+|------------------| - |
 |`template<class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 템플릿 클래스|
 |`template<class T>`<br /><br /> `class A<T, T> {};`|`A<T, T>`<br /><br /> 템플릿 클래스|
 |`template <class T>`<br /><br /> `class A<T, int> {};`|`A<T, int>`<br /><br /> 템플릿 클래스|
@@ -149,13 +151,13 @@ typedef struct
 다음 표는 부분 특수화에서 상속의 몇 가지 예를 보여 줍니다.
 
 |Code 요소|클래스 디자이너 보기|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> 템플릿 클래스<br /><br /> `B`<br /><br /> 클래스<br /><br /> (클래스 A를 가리킴)<br /><br /> `C`<br /><br /> 클래스<br /><br /> (클래스 A를 가리킴)|
 
 다음 표는 부분 특수화 템플릿 함수의 몇 가지 예를 보여 줍니다.
 
 |Code 요소|클래스 디자이너 보기|
-|------------------|-------------------------|
+|------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U>(+1개 오버로드)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> 템플릿 클래스<br /><br /> `B<T2>`<br /><br /> 템플릿 클래스<br /><br /> (B는 클래스 A의 **중첩 형식**에 포함됨)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> 클래스<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> 템플릿 클래스|
@@ -163,13 +165,13 @@ typedef struct
 다음 표는 템플릿 상속의 몇 가지 예를 보여 줍니다.
 
 |Code 요소|클래스 디자이너 보기|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> 클래스<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> 클래스<br /><br /> (B는 클래스 C의 **중첩 형식**에 포함됨)<br /><br /> `C<T>`<br /><br /> 템플릿 클래스|
 
 다음 표는 정식 특수 클래스 연결의 몇 가지 예를 보여 줍니다.
 
 |Code 요소|클래스 디자이너 보기|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 클래스<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 클래스<br /><br /> `C<T>`<br /><br /> 템플릿 클래스<br /><br /> `D`<br /><br /> 클래스<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 

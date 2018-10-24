@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36d9e78a1944817d9384d0c55b9584e58a758ccc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 79b4adcfbcacc8cf342b5fc4183ae4fe27431b09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925083"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864772"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>클래스 디자이너의 Visual C++ 구조체
 
@@ -37,7 +37,7 @@ struct MyStructure
 레이블이 **구조체**를 읽고 둥근 모서리 대신 사각형 모서리를 갖고 있다는 점을 제외하고, 클래스 다이어그램에서 C++ 구조체 모양은 클래스 모양처럼 보이고 실제 그러한 작용을 합니다.
 
 |코드 요소|클래스 디자이너 보기|
-|------------------|-------------------------|
+|------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> 구조체|
 
 ## <a name="see-also"></a>참고 항목

@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 포팅, 마이그레이션 및 업그레이드
 description: 이전 버전의 Visual Studio에서 만든 프로젝트에 대한 Visual Studio 2017의 지원에 대한 참조 및 Visual Studio에서 프로젝트 마이그레이션이 필요한 경우를 결정하는 방법입니다.
-ms.date: 06/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280742"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325031"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조
 
@@ -41,7 +41,7 @@ ms.locfileid: "44280742"
 
 다음 목록에서는 이전 버전에서 만든 프로젝트에 대한 Visual Studio 2017의 지원에 대해 설명합니다.
 
-여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2015 버전](port-migrate-and-upgrade-visual-studio-projects.md)을 참조하고 이 페이지의 맨 아래에 “설명서 사용자 의견 제공” 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (응답을 원하는 경우 익명으로 “이 페이지가 도움이 되었나요?”라고 하기 보다는 설명서 사용자 의견을  사용합니다.)
+여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2015 버전](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015)을 참조하고 이 페이지의 맨 아래에 “설명서 사용자 의견 제공” 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (응답을 원하는 경우 익명으로 “이 페이지가 도움이 되었나요?”라고 하기 보다는 설명서 사용자 의견을  사용합니다.)
 
 | 프로젝트 형식 | Support(지원) |
 | --- | --- |

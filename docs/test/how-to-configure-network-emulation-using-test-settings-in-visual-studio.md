@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829289"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 
@@ -38,21 +38,21 @@ Visual Studio에서 다양한 네트워크 환경에 처한 응용 프로그램�
 
  Visual Studio는 모든 테스트 형식에 소프트웨어 기반의 진정한 네트워크 에뮬레이션을 사용합니다. 여기에는 부하 테스트가 포함됩니다. 진정한 네트워크 에뮬레이션은 네트워크 패킷을 직접 조작하여 네트워크 조건을 시뮬레이션합니다. 진정한 네트워크 에뮬레이터는 이더넷과 같은 안정적인 물리적 링크를 사용하여 유선 및 무선 네트워크 모두의 동작을 에뮬레이트할 수 있습니다. 다음과 같은 네트워크 특성이 진정한 네트워크 에뮬레이션에 통합되어 있습니다.
 
--   네트워크 왕복 시간(대기 시간)
+- 네트워크 왕복 시간(대기 시간)
 
--   사용 가능한 대역폭 양
+- 사용 가능한 대역폭 양
 
--   큐 동작
+- 큐 동작
 
--   패킷 손실
+- 패킷 손실
 
--   패킷 순서 바꾸기
+- 패킷 순서 바꾸기
 
--   오류 전파
+- 오류 전파
 
- 진정한 네트워크 에뮬레이션은 IP 주소 또는 프로토콜(예: TCP, UDP, ICMP)을 기준으로 네트워크 패킷을 유연하게 필터링할 수도 있습니다.
+  진정한 네트워크 에뮬레이션은 IP 주소 또는 프로토콜(예: TCP, UDP, ICMP)을 기준으로 네트워크 패킷을 유연하게 필터링할 수도 있습니다.
 
- 진정한 네트워크 에뮬레이션은 네트워크 기반 개발자 및 테스터가 원하는 테스트 환경을 에뮬레이트하거나, 성능을 평가하거나, 변경 효과를 예측하거나, 기술 최적화에 대한 결정을 내릴 때 사용할 수 있습니다. 하드웨어 테스트 베드와 비교했을 때 진정한 네트워크 에뮬레이션은 훨씬 비용이 적게 들고 유연한 솔루션입니다.
+  진정한 네트워크 에뮬레이션은 네트워크 기반 개발자 및 테스터가 원하는 테스트 환경을 에뮬레이트하거나, 성능을 평가하거나, 변경 효과를 예측하거나, 기술 최적화에 대한 결정을 내릴 때 사용할 수 있습니다. 하드웨어 테스트 베드와 비교했을 때 진정한 네트워크 에뮬레이션은 훨씬 비용이 적게 들고 유연한 솔루션입니다.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>테스트 설정을 사용하여 네트워크 에뮬레이션 구성
  이 절차의 단계를 수행하려면 먼저 Visual Studio에서 테스트 설정을 연 다음, **데이터 및 진단** 페이지를 선택해야 합니다.

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870057"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 그래프 뷰에서 부하 테스트 결과 분석
 
@@ -39,7 +39,7 @@ ms.locfileid: "39175750"
 다음 표에서는 부하 테스트 실행 결과를 분석하는 데 사용할 수 있는 기본 제공 그래프를 보여 줍니다.
 
 |그래프 이름|설명|
-|----------------|-----------------|
+|-|-|
 |핵심 지표|사용자 부하, 처리량 및 응답 시간과 같은 테스트 성능의 기본 특징을 설명하는 카운터입니다.|
 |테스트 응답 시간|테스트를 실행하는 데 소요된 시간에 대한 데이터입니다.|
 |페이지 응답 시간|부하 테스트 동안 액세스한 웹 페이지의 평균 응답 시간입니다.|
@@ -63,7 +63,7 @@ ms.locfileid: "39175750"
  범례에는 다음과 같은 열이 있습니다.
 
 |카운터|카운터의 이름입니다.|
-|-------------|-----------------------------|
+|-|-|
 |인스턴스|카운터 인스턴스의 이름입니다.|
 |범주|카운터 범주의 이름입니다.|
 |컴퓨터|카운터가 수집되는 컴퓨터의 이름입니다.|
@@ -77,7 +77,7 @@ ms.locfileid: "39175750"
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-|
 |**범례를 사용하여 그래프 사용자 지정:** 그래프 뷰의 범례에는 그래프와 연결된 각 성능 카운터에 대한 정보가 표시됩니다. 범례를 사용하여 성능 카운터를 제거하고, 그래프에서 성능 카운터를 강조 표시하고, 출력 옵션을 사용자 지정할 수 있습니다.|-   [그래프 뷰 범례를 사용하여 부하 테스트 분석](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**그래프에 카운터 표시:** 부하 테스트 결과 그래프에 카운터를 배치하여 해당 그래프에 다른 종류의 데이터를 추가할 수 있습니다.|-   [방법: 그래프에서 카운터 추가 및 삭제](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**그래프 확대:** 부하 테스트가 완료되면 확대/축소 막대를 사용하여 그래프의 영역으로 확대 및 스크롤할 수 있습니다. 확대하면 부하 테스트 실행 동안 생성된 데이터를 보다 자세히 검사할 수 있습니다.|-   [방법: 그래프의 영역으로 확대](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|

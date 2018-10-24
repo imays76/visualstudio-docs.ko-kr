@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 1731c47d3de9068affd4c7561e1dae94960b2b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835919"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 및 GlobalOff
 *VSPerfCmd.exe* **GlobalOff** 및 **GlobalOn** 옵션은 명령줄 프로파일링 세션에서 모든 프로세스 및 스레드에 대한 프로파일링을 일시 중지 및 재개합니다.  
@@ -28,11 +28,11 @@ ms.locfileid: "35238006"
   
  **GlobalOff** 및 **GlobalOn** 옵션은 프로파일러 API 함수에 의해 조작되는 전역 Start/Stop 카운트에도 영향을 줍니다.  
   
--   **GlobalOff**는 전역 Start/Stop 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
+- **GlobalOff**는 전역 Start/Stop 카운트를 즉시 0으로 설정하므로 프로파일링이 일시 중지됩니다.  
   
--   **GlobalOn**은 전역 Start/Stop 카운트를 즉시 1로 설정하므로 프로파일링이 재개됩니다.  
+- **GlobalOn**은 전역 Start/Stop 카운트를 즉시 1로 설정하므로 프로파일링이 재개됩니다.  
   
- 자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
+  자세한 내용은 [프로파일링 도구 API](../profiling/profiling-tools-apis.md)를 참조하세요.  
   
 ## <a name="syntax"></a>구문  
   

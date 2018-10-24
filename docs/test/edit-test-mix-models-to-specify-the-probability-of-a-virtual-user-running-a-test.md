@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816018"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>테스트 조합 모델을 편집하여 가상 사용자의 테스트 실행 가능성 지정
 
@@ -37,7 +37,7 @@ ms.locfileid: "39180443"
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-----------------------|
 |**부하 테스트의 테스트 조합 지정:** 부하 테스트를 만들 때 **부하 테스트 새로 만들기 마법사**에서 부하 테스트에 대한 설정을 지정합니다. **부하 테스트 새로 만들기 마법사**에서 초기 시나리오에 추가할 기존 웹 및 단위 테스트를 선택합니다. 시나리오에 테스트를 추가한 후 시나리오의 테스트 조합을 지정합니다.<br /><br /> 부하 모델링 옵션을 사용하여 부하 테스트를 수행하는 웹 사이트 또는 응용 프로그램의 예상 실제 사용법을 보다 정확하게 예측할 수 있습니다. 정확한 부하 모델을 기반으로 하지 않는 부하 테스트에서는 잘못된 결과가 생성될 수 있으므로 부하 모델을 사용하는 것이 중요합니다.|-   [웹 사이트 또는 응용 프로그램의 예상 실제 사용법 에뮬레이트](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**테스트 조합 모델 편집:** **부하 테스트 편집기**를 사용하여 테스트 조합 모델 중 하나를 사용하도록 부하 테스트 시나리오를 변경할 수 있습니다.||
 |**사용자 속도 테스트 조합 모델에 대한 속도 지연 구성:** 부하 테스트 시나리오가 **사용자 속도 기반 테스트 조합 모델**을 사용하도록 구성되어 있는 경우 배포 속도 지연의 구성 방식을 지정할 수 있습니다.|-   [방법: 사용자 속도 테스트 조합 모델을 사용할 때 속도 지연에 분포 적용](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|

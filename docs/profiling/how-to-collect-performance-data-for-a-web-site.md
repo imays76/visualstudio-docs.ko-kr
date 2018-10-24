@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835990"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>방법: 웹 사이트에 대한 성능 데이터 수집
 
@@ -41,7 +41,7 @@ ms.locfileid: "34815927"
 
 - 일부 사용자는 다른 모든 사용자에 대한 프로파일링에 액세스하지 못할 수 있습니다.
 
- 자세한 내용은 [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.
+  자세한 내용은 [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.
 
 ## <a name="to-profile-a-web-site-project"></a>웹 사이트 프로젝트를 프로파일링하려면
 
@@ -79,11 +79,11 @@ ms.locfileid: "34815927"
 
 5. 마법사의 세 번째 페이지에서 **웹 응용 프로그램이 실행될 URL 또는 경로** 상자에 응용 프로그램 홈 페이지에 대한 URL을 입력하고 **다음**을 클릭합니다.
 
-    - 서버(IIS) 기반 웹 사이트의 경우 **http://localhost/MySite/default.aspx**와 같은 URL을 입력합니다. 이렇게 하면 MySite의 응용 프로그램 루트에서 로컬 컴퓨터의 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되며, 해당 사이트의 default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
+   - 서버(IIS) 기반 웹 사이트의 경우 **<http://localhost/MySite/default.aspx>** 와 같은 URL을 입력합니다. 이렇게 하면 MySite의 응용 프로그램 루트에서 로컬 컴퓨터의 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되며, 해당 사이트의 default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
 
-    - 파일 기반 웹 사이트에는 file///**c:\WebSites\MySite\default.aspx**같은 경로를 입력합니다. 이렇게 하면 c:\webSites\MySite에 있는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되고 http://localhost:nnnn/MySite/default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
+   - 파일 기반 웹 사이트에는 file///**c:\WebSites\MySite\default.aspx**같은 경로를 입력합니다. 이렇게 하면 c:\webSites\MySite에 있는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되고 http://localhost:nnnn/MySite/default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
 
-    - JavaScript 데이터를 수집할 외부 사이트에는 http://www.contoso.com과 같은 URL을 입력합니다.
+   - JavaScript 데이터를 수집할 외부 사이트에는 http://www.contoso.com과 같은 URL을 입력합니다.
 
      자세한 내용은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 대상 이진에 대한 속성 페이지를 참조하세요.
 

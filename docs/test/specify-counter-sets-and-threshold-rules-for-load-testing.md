@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879846"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정
 
@@ -38,7 +38,7 @@ ms.locfileid: "39382372"
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-----------------------|
 |**부하 테스트에 대한 카운터 집합 관리:** 부하 테스트를 만든 다음, 부하 테스트 편집기에서 카운터 집합을 편집할 수 있습니다. 카운터 집합을 관리하려면 성능 데이터를 수집할 컴퓨터 집합을 선택하고 개별 컴퓨터에서 각각 수집할 카운터 집합을 할당합니다. 부하 테스트 편집기에서 카운터를 관리합니다.|-   [방법: 카운터 집합 관리](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**부하 테스트에 카운터 집합 추가:** **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 초기 카운터 집합을 추가합니다. 이때 부하 테스트에 사용할 미리 정의된 카운터 집합이 제공됩니다. 부하 테스트를 만든 후 부하 테스트 편집기를 사용하여 기존 카운터 집합에 새 카운터를 추가할 수 있습니다.|-   [방법: 카운터 집합에 카운터 추가](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [방법: 사용자 지정 카운터 집합 추가](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**부하 테스트에 대한 카운터를 사용하여 임계값 규칙 지정:** 임계값 규칙은 부하 테스트 도중 시스템 리소스 사용을 모니터링하기 위해 개별 성능 카운터에 설정되는 규칙입니다. 카운터 집합 정의에는 여러 가지 주요 성능 카운터에 대해 미리 정의된 임계값 규칙이 포함되어 있습니다. 부하 테스트에서 임계값 규칙을 통해 성능 카운터 값을 상수 값이나 다른 성능 카운터 값과 비교할 수 있습니다.|-   [방법: 임계값 규칙 추가](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
@@ -67,7 +67,7 @@ ms.locfileid: "39382372"
 다음은 샘플링 주기에 대한 몇 가지 지침입니다.
 
 |부하 테스트 지속 시간|권장 샘플링 주기|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1시간|5초|
 |1-8시간|15초|
 |8-24시간|30초|

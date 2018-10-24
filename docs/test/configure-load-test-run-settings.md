@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813864"
 ---
 # <a name="configure-load-test-run-settings"></a>부하 테스트 실행 설정 구성
 
@@ -30,7 +30,7 @@ ms.locfileid: "44283334"
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-|
 |**부하 테스트에 더 많은 실행 설정 추가:** **부하 테스트 새로 만들기 마법사**를 실행할 때 만들어진 실행 설정 외에도 여러 가지 조건에서 테스트를 실행할 수 있도록 더 많은 실행 설정을 부하 테스트에 추가할 수 있습니다.|-   [방법: 부하 테스트에 실행 설정 추가](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**부하 테스트에 사용할 활성 실행 설정 지정:** 부하 테스트 편집기를 사용하여 부하 테스트에 사용할 실행 설정을 선택할 수 있습니다. 활성 실행 설정은 "[Active]"라는 접미사로 식별됩니다.|-   [방법: 부하 테스트에 대한 활성 실행 설정 선택](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**실행 설정 속성 편집:** 로깅 옵션(아래 참조)과 같은 실행 설정 속성을 편집하여 테스트 길이, 준비 시간, 보고되는 최대 오류 정보 수, 샘플링 주기, 연결 모델(웹 성능 테스트에만 해당), 결과 저장소 형식, 유효성 검사 수준, SQL 추적 등을 결정할 수 있습니다. 실행 설정에는 부하 테스트의 목표가 반영되어야 합니다.|-   [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)<br />-   [실행 설정 속성 변경](../test/load-test-run-settings-properties.md#change-run-setting-properties)|

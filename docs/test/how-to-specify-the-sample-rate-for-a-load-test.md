@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e73e723c25d4f84b3f98f2e22f876ad82f498158
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880119"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 샘플 속도 지정
 
@@ -28,7 +28,7 @@ ms.locfileid: "39382505"
 다음은 샘플링 주기에 대한 몇 가지 지침입니다.
 
 |부하 테스트 지속 시간|권장 샘플링 주기|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1시간|5초|
 |1-8시간|15초|
 |8-24시간|30초|

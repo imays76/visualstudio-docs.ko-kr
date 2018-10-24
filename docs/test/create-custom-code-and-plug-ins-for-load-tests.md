@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 213824ff9be80a151d20b4906839969dce3be7d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826975"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기
 
@@ -27,7 +27,7 @@ ms.locfileid: "39175539"
 ## <a name="tasks"></a>작업
 
 |작업|관련 항목|
-|-----------|-----------------------|
+|-|-----------------------|
 |**부하 테스트에 대한 사용자 지정 플러그 인 만들기**: 부하 테스트 API를 사용하여 사용자 지정 플러그 인을 만들어 부하 테스트에 더 많은 기능을 추가할 수 있습니다.|-   [방법: 부하 테스트 API 사용](../test/how-to-use-the-load-test-api.md)<br />-   [방법: 부하 테스트 플러그 인 만들기](../test/how-to-create-a-load-test-plug-in.md)|
 |**웹 성능 테스트에 대한 사용자 지정 플러그 인 만들기:** 웹 성능 테스트 API를 사용하여 사용자 지정 플러그 인을 만들어 웹 성능 테스트에 요청 수준을 비롯한 더 많은 기능을 추가할 수 있습니다. 웹 서비스 테스트를 만들 수도 있습니다.<br /><br /> 또한 웹 성능 테스트가 기록된 후 웹 성능 테스트 결과 뷰어에 나타나기 전에 이 웹 성능 테스트를 수정할 수 있는 웹 레코더 플러그 인을 만들 수 있습니다.|-   [방법: 웹 성능 테스트 API 사용](../test/how-to-use-the-web-performance-test-api.md)<br />-   [방법: 웹 성능 테스트 플러그 인 만들기](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [방법: 요청 수준 플러그 인 만들기](../test/how-to-create-a-request-level-plug-in.md)<br />-   [방법: 웹 서비스 테스트 만들기](../test/how-to-create-a-web-service-test.md)<br />-   [방법: 레코더 플러그 인 만들기](../test/how-to-create-a-recorder-plug-in.md)|
 |**웹 성능 테스트 결과 뷰어에 UI 기능 추가:** Visual Studio 추가 기능을 사용하여 웹 성능 테스트 결과 뷰어에 더 많은 UI 기능을 추가할 수 있습니다.|-   [방법: 웹 성능 테스트 결과 뷰어에 대한 Visual Studio 추가 기능 만들기](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
