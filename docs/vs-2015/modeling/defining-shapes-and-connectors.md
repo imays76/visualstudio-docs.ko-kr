@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812948"
 ---
 # <a name="defining-shapes-and-connectors"></a>모양 및 연결선 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ DSL(Domain-Specific Language)에서 다이어그램에 정보를 표시하는 �
 ##  <a name="shapeTypes"></a> 모양 및 연결선의 기본 형식  
  DSL 다이어그램에는 표시의 컬렉션인 *셰이프* 선이나 또는 *커넥터*합니다.  이러한 모양에는 일반적으로 다음 사항이 적용됩니다(항상은 아님).  
   
--   모양은 모델 요소가 표시되는 표현입니다.  
+- 모양은 모델 요소가 표시되는 표현입니다.  
   
--   연결선은 참조 관계를 나타냅니다.  
+- 연결선은 참조 관계를 나타냅니다.  
   
--   다이어그램은 모델 루트 인스턴스를 나타냅니다.  
+- 다이어그램은 모델 루트 인스턴스를 나타냅니다.  
   
--   모델 요소 간의 포함 관계는 포함으로 표시됩니다. 예를 들어 구성 요소 포트를 나타내는 요소는 구성 요소에 포함됩니다.  
+- 모델 요소 간의 포함 관계는 포함으로 표시됩니다. 예를 들어 구성 요소 포트를 나타내는 요소는 구성 요소에 포함됩니다.  
   
- 이러한 패턴은 적용되는 것이 아니라 더 강력하게 지원되는 것입니다. DSL을 디자인할 때는 모델을 화면에 표시할 방식에 따라 포함 관계 디자인을 설정해야 한다는 점을 기억하세요. 반면에 참조 관계는 비즈니스 도메인의 개념을 반영해야 합니다.  
+  이러한 패턴은 적용되는 것이 아니라 더 강력하게 지원되는 것입니다. DSL을 디자인할 때는 모델을 화면에 표시할 방식에 따라 포함 관계 디자인을 설정해야 한다는 점을 기억하세요. 반면에 참조 관계는 비즈니스 도메인의 개념을 반영해야 합니다.  
   
- 다음 모양 형식을 사용할 수 있습니다.  
+  다음 모양 형식을 사용할 수 있습니다.  
   
 |모양 형식|설명|  
 |----------------|-----------------|  

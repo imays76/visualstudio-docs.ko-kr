@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dad2781a0d8231c40ad16dd2c5bd2a7a0905cd3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34ca01d77856fadabcc8e681d2be3b1eb6173c70
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813535"
 ---
 # <a name="group-element"></a>Group 요소
 VSPackage 명령 그룹을 정의합니다.  
@@ -57,7 +57,7 @@ VSPackage 명령 그룹을 정의합니다.
 |-------------|-----------------|  
 |[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```xml  
 <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  

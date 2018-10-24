@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be0fc7df23e7164371e95e92fbad1a32026284df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cc22f6bc8f7e863f0808c05b0b5cba37ba79fbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810595"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: 예약된 예외 형식을 발생시키지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -42,31 +43,31 @@ ms.locfileid: "49227075"
 ## <a name="rule-description"></a>규칙 설명
  사용자에 게 충분 한 정보를 제공 하는 일반 너무 다음 예외 형식은 다음과 같습니다.
 
--   <xref:System.Exception?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.SystemException?displayProperty=fullName>
 
- 예외 유형은 예약 되어 있으므로 공용 언어 런타임만에서 throw 되어야 합니다.
+  예외 유형은 예약 되어 있으므로 공용 언어 런타임만에서 throw 되어야 합니다.
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- **일반 예외를 Throw 하지 않습니다**
+  **일반 예외를 Throw 하지 않습니다**
 
- 와 같은 일반 예외 유형을 throw 하는 경우 <xref:System.Exception> 또는 <xref:System.SystemException> 소비자를 강제로 라이브러리 또는 프레임 워크에서 예외를 처리 하는 방법을 알지는 알 수 없는 예외를 포함 합니다.
+  와 같은 일반 예외 유형을 throw 하는 경우 <xref:System.Exception> 또는 <xref:System.SystemException> 소비자를 강제로 라이브러리 또는 프레임 워크에서 예외를 처리 하는 방법을 알지는 알 수 없는 예외를 포함 합니다.
 
- 대신 framework에서는 이미 존재 하는 많은 파생된 형식을 throw 또는에서 파생 되는 고유한 형식을 만들 <xref:System.Exception>합니다.
+  대신 framework에서는 이미 존재 하는 많은 파생된 형식을 throw 또는에서 파생 되는 고유한 형식을 만들 <xref:System.Exception>합니다.
 
- **특정 예외를 throw 합니다.**
+  **특정 예외를 throw 합니다.**
 
- 다음 표에서 매개 변수 및 매개 변수를 값 매개 변수를 포함 하 여 속성의 set 접근자의 유효성을 검사할 때 throw 하는 예외:
+  다음 표에서 매개 변수 및 매개 변수를 값 매개 변수를 포함 하 여 속성의 set 접근자의 유효성을 검사할 때 throw 하는 예외:
 
 |매개 변수 설명|예외|
 |---------------------------|---------------|

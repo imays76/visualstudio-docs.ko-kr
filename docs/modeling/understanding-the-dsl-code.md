@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813325"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
 도메인 특정 언어 (DSL) 솔루션을 읽고 Visual Studio에서 dsl 인스턴스를 업데이트 하는 데 사용할 수 있는 API를 생성 합니다. 이 API는 DSL 정의에서 생성되는 코드에서 정의됩니다. 이 항목에서는 생성되는 API에 대해 설명합니다.
@@ -110,25 +110,25 @@ ms.locfileid: "47860293"
 
  각 도메인 클래스는 다음 항목을 포함합니다.
 
--   각 도메인 속성에 대한 속성 정의 및 중첩 처리기 클래스. OnValueChanging() 및 OnValueChanged()를 재정의할 수 있습니다. 자세한 내용은 [도메인 속성 값 변경 처리기](../modeling/domain-property-value-change-handlers.md)합니다.
+- 각 도메인 속성에 대한 속성 정의 및 중첩 처리기 클래스. OnValueChanging() 및 OnValueChanged()를 재정의할 수 있습니다. 자세한 내용은 [도메인 속성 값 변경 처리기](../modeling/domain-property-value-change-handlers.md)합니다.
 
-     예제 DSL에서 `Comment` 클래스에는 `Text` 속성과 `TextPropertyHandler` 처리기 클래스가 포함되어 있습니다.
+   예제 DSL에서 `Comment` 클래스에는 `Text` 속성과 `TextPropertyHandler` 처리기 클래스가 포함되어 있습니다.
 
--   이 도메인 클래스가 참가하는 관계의 접근자 속성입니다. 역할 속성에 대한 중첩 클래스는 없습니다.
+- 이 도메인 클래스가 참가하는 관계의 접근자 속성입니다. 역할 속성에 대한 중첩 클래스는 없습니다.
 
-     예제 DSL에서 `Comment` 클래스에는 포함 관계 `ComponentModelHasComments`를 통해 부모 모델에 액세스하는 접근자가 있습니다.
+   예제 DSL에서 `Comment` 클래스에는 포함 관계 `ComponentModelHasComments`를 통해 부모 모델에 액세스하는 접근자가 있습니다.
 
--   생성자. 이러한 재정의 하려는 경우 설정할 **Has Custom Constructor** 도메인 클래스에 있습니다.
+- 생성자. 이러한 재정의 하려는 경우 설정할 **Has Custom Constructor** 도메인 클래스에 있습니다.
 
--   EGP(Element Group Prototype) 처리기 메서드. 사용자 수 하는 경우 이러한 메서드가 필요 *병합* (추가)이이 클래스의 인스턴스에 다른 요소입니다. 사용자는 일반적으로 요소 도구나 다른 모양에서 끌기 또는 붙여넣기를 통해 이 작업을 수행합니다.
+- EGP(Element Group Prototype) 처리기 메서드. 사용자 수 하는 경우 이러한 메서드가 필요 *병합* (추가)이이 클래스의 인스턴스에 다른 요소입니다. 사용자는 일반적으로 요소 도구나 다른 모양에서 끌기 또는 붙여넣기를 통해 이 작업을 수행합니다.
 
-     예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. Component
+   예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. Component
 
-     클래스의 EGP 처리기 메서드를 사용하면 Component가 Port는 수락하되 Comment는 수락하지 않도록 지정할 수 있습니다. 루트 모델 클래스의 EGP 처리기는 Comment와 Component는 수락하지만 Port는 수락하지 않습니다.
+   클래스의 EGP 처리기 메서드를 사용하면 Component가 Port는 수락하되 Comment는 수락하지 않도록 지정할 수 있습니다. 루트 모델 클래스의 EGP 처리기는 Comment와 Component는 수락하지만 Port는 수락하지 않습니다.
 
- `DomainModel.cs`
+  `DomainModel.cs`
 
- 도메인 모델을 나타내는 클래스. <xref:Microsoft.VisualStudio.Modeling.DomainModel>에서 파생됩니다.
+  도메인 모델을 나타내는 클래스. <xref:Microsoft.VisualStudio.Modeling.DomainModel>에서 파생됩니다.
 
 > [!NOTE]
 >  이 클래스는 모델의 루트 클래스와는 다릅니다.
@@ -161,31 +161,31 @@ ms.locfileid: "47860293"
 
  `SerializationHelper.cs`
 
--   같은 모니커가 두 요소를 참조하지 않는지를 확인하는 유효성 검사 메서드입니다. 자세한 내용은 [사용자 지정 파일 저장소 및 XML Serialization](../modeling/customizing-file-storage-and-xml-serialization.md)합니다.
+- 같은 모니커가 두 요소를 참조하지 않는지를 확인하는 유효성 검사 메서드입니다. 자세한 내용은 [사용자 지정 파일 저장소 및 XML Serialization](../modeling/customizing-file-storage-and-xml-serialization.md)합니다.
 
--   여러 serialization 클래스에서 공통적으로 사용하는 기능을 제공하는 SerializationHelper 클래스입니다.
+- 여러 serialization 클래스에서 공통적으로 사용하는 기능을 제공하는 SerializationHelper 클래스입니다.
 
- `Serializer.cs`
+  `Serializer.cs`
 
- 각 도메인 클래스, 관계, 모양, 연결선, 다이어그램 및 모델의 serializer 클래스입니다.
+  각 도메인 클래스, 관계, 모양, 연결선, 다이어그램 및 모델의 serializer 클래스입니다.
 
- DSL 탐색기의 설정에서 제어할 수 있습니다 이러한 클래스의 기능을 많이 **Xml 직렬화 동작**합니다.
+  DSL 탐색기의 설정에서 제어할 수 있습니다 이러한 클래스의 기능을 많이 **Xml 직렬화 동작**합니다.
 
- `Shapes.cs`
+  `Shapes.cs`
 
- DSL 정의의 모든 모양 클래스에 대한 클래스입니다. 모양은 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>에서 파생됩니다. 자세한 내용은 [사용자 지정 파일 저장소 및 XML Serialization](../modeling/customizing-file-storage-and-xml-serialization.md)합니다.
+  DSL 정의의 모든 모양 클래스에 대한 클래스입니다. 모양은 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>에서 파생됩니다. 자세한 내용은 [사용자 지정 파일 저장소 및 XML Serialization](../modeling/customizing-file-storage-and-xml-serialization.md)합니다.
 
- Partial 클래스에서 사용자 고유의 메서드를 사용 하 여 생성된 된 메서드를 재정의 하려면 설정 **Generates Double Derived** DSL 정의에서 커넥터에 대 한 합니다. 설정 생성자를 고유한 코드로 바꾸려면 **Has Custom Constructor**합니다.
+  Partial 클래스에서 사용자 고유의 메서드를 사용 하 여 생성된 된 메서드를 재정의 하려면 설정 **Generates Double Derived** DSL 정의에서 커넥터에 대 한 합니다. 설정 생성자를 고유한 코드로 바꾸려면 **Has Custom Constructor**합니다.
 
- 런타임에 색 및 기타 일부 스타일 기능 변수에 하려면 DSL 정의 다이어그램에서 클래스를 마우스 오른쪽 단추로 클릭 하 고 가리킵니다 **Add Exposed**합니다.
+  런타임에 색 및 기타 일부 스타일 기능 변수에 하려면 DSL 정의 다이어그램에서 클래스를 마우스 오른쪽 단추로 클릭 하 고 가리킵니다 **Add Exposed**합니다.
 
- 런타임 시 추가 스타일 기능이 변경되도록 하려면 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 및 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement> 예제를 참조하세요.
+  런타임 시 추가 스타일 기능이 변경되도록 하려면 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 및 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement> 예제를 참조하세요.
 
- `ToolboxHelper.cs`
+  `ToolboxHelper.cs`
 
- 요소 도구에 요소 그룹 프로토타입을 설치하여 도구 상자를 설정합니다. 사용자가 도구를 실행하면 이러한 프로토타입의 복사본이 대상 요소와 병합됩니다.
+  요소 도구에 요소 그룹 프로토타입을 설치하여 도구 상자를 설정합니다. 사용자가 도구를 실행하면 이러한 프로토타입의 복사본이 대상 요소와 병합됩니다.
 
- `CreateElementPrototype()`을 재정의하여 여러 개체의 그룹을 만드는 도구 상자 항목을 정의할 수 있습니다. 예를 들어 하위 구성 요소가 포함된 개체를 나타내는 항목을 정의할 수 있습니다. 코드를 변경한 후 도구 상자 캐시를 지우는 Visual Studio의 실험적 인스턴스 다시 설정 합니다.
+  `CreateElementPrototype()`을 재정의하여 여러 개체의 그룹을 만드는 도구 상자 항목을 정의할 수 있습니다. 예를 들어 하위 구성 요소가 포함된 개체를 나타내는 항목을 정의할 수 있습니다. 코드를 변경한 후 도구 상자 캐시를 지우는 Visual Studio의 실험적 인스턴스 다시 설정 합니다.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>DslPackage 프로젝트의 생성된 파일
  DslPackage에 결합 하 여 Visual Studio 셸에 창, 도구 상자 및 메뉴 명령을 관리 DSL 모델. 대부분의 클래스는 double에서 파생되었으므로 이러한 메서드를 모두 재정의할 수 있습니다.
@@ -274,7 +274,6 @@ namespace Company.EmbedInForm
   }
 
 }
-
 ```
 
  `EditorFactory.cs`
@@ -326,7 +325,6 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 }
 }
 }
-
 ```
 
  `ModelExplorerToolWindow.cs`
