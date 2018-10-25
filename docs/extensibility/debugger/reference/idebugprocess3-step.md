@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbc19c339e5d53bc9dde13ebd4a1bbddd214810c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b48fd74c3edc3f200ef05d143464b3e5ce79bd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872254"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-하나의 명령 또는 문을 한 단계씩 실행을 처리를 수행 합니다.  
+하나의 명령 또는 문을 실행 하는 프로세스를 하면 됩니다.  
   
 > [!NOTE]
 >  이 메서드를 대신 사용 해야 [단계](../../../extensibility/debugger/reference/idebugprogram2-step.md)합니다.  
@@ -48,7 +48,7 @@ int Step(
   
 #### <a name="parameters"></a>매개 변수  
  `pThread`  
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 도 실행 중인 스레드를 나타내는 개체입니다.  
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 단계별 중인 스레드를 나타내는 개체입니다.  
   
  `sk`  
  [in] 중 하나는 [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) 값입니다.  
@@ -57,12 +57,12 @@ int Step(
  [in] 중 하나는 [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 모든 스레드 동기화 또는 스레드 간의 통신 된 경우에 특정 스레드를 진행 하는 프로세스의 다른 스레드를 실행 해야 합니다.  
+ 발생 한 경우 모든 스레드 동기화 또는 스레드 간 통신, 특정 스레드에서 단계별로 실행할 때 프로세스의 다른 스레드를 실행 해야 합니다.  
   
- **경고** stopping 이벤트 또는 즉시 (동기) 이벤트를 보내지 않습니다 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 이 호출을 처리 하는 동안 그렇지 않은 경우 디버거가 중단 될 수 있습니다.  
+ **경고** stopping 이벤트 또는 직접 (동기) 이벤트를 전송 하지 마십시오 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 이 호출을 처리 하는 동안 그렇지 않은 경우 디버거가 중단 될 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885665"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>도메인 특정 언어 시작
 
@@ -43,11 +43,12 @@ Dsl의 주 응용 프로그램 중 프로그램 코드, 구성 파일 및 기타
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio 용 모델링 SDK||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio 용 모델링 SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -143,7 +144,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 ### <a name="the-content-of-a-model"></a>모델의 콘텐츠
 
-DSL의 인스턴스인 파일의 내용을 호출 되는 *모델*합니다. 모델에 포함 된 *모델 * * 요소* 하 고 *링크* 요소 사이입니다. DSL 정의의 모델 요소 유형을 지정 하 고 링크 된 모델에 있을 수 있습니다. 예를 들어 최소 언어 템플릿에서 만든 DSL의 모델 요소 형식 및가 한 가지 유형의 링크
+DSL의 인스턴스인 파일의 내용을 호출 되는 *모델*합니다. 모델에 포함 된 *모델*<em>요소</em> 하 고 *링크* 요소 사이입니다. DSL 정의의 모델 요소 유형을 지정 하 고 링크 된 모델에 있을 수 있습니다. 예를 들어 최소 언어 템플릿에서 만든 DSL의 모델 요소 형식 및가 한 가지 유형의 링크
 
 DSL 정의 다이어그램에 모델을 표시 하는 방법을 지정할 수 있습니다. 다양 한 모양과 연결선의 스타일에서에서 선택할 수 있습니다. 다른 셰이프 안에 일부 셰이프에 나타나는지를 지정할 수 있습니다.
 
@@ -246,39 +247,39 @@ DSL 정의 저장할 각 변경 후 클릭 **모든 템플릿 변환** 에서 **
 
 ##### <a name="to-add-properties-and-display-them"></a>속성을 추가 하 고 표시 하려면
 
-1.  속성을 추가 합니다.
+1. 속성을 추가 합니다.
 
-    1.  DSL 정의 다이어그램에서 마우스 오른쪽 단추로 클릭 합니다 **Person** 도메인 클래스를 가리킵니다 **추가**를 클릭 하 고 **도메인 속성**합니다.
+   1.  DSL 정의 다이어그램에서 마우스 오른쪽 단추로 클릭 합니다 **Person** 도메인 클래스를 가리킵니다 **추가**를 클릭 하 고 **도메인 속성**합니다.
 
-    2.  와 같은 새 속성 이름 목록을 입력 **출생** 하 고 **사망**합니다. 키를 눌러 **Enter** 각각.
+   2.  와 같은 새 속성 이름 목록을 입력 **출생** 하 고 **사망**합니다. 키를 눌러 **Enter** 각각.
 
-2.  모양에 속성을 표시 하는 데코레이터를 추가 합니다.
+2. 모양에 속성을 표시 하는 데코레이터를 추가 합니다.
 
-    1.  다이어그램의 다른 쪽에 Person 도메인 클래스에서 확장 되는 회색 선을 수행 합니다. 다이어그램 요소 맵을 이것이입니다. 도메인 클래스 모양 클래스에 연결 합니다.
+   1.  다이어그램의 다른 쪽에 Person 도메인 클래스에서 확장 되는 회색 선을 수행 합니다. 다이어그램 요소 맵을 이것이입니다. 도메인 클래스 모양 클래스에 연결 합니다.
 
-    2.  이 모양 클래스를 마우스 오른쪽 **추가**를 클릭 하 고 **텍스트 Decorator**합니다.
+   2.  이 모양 클래스를 마우스 오른쪽 **추가**를 클릭 하 고 **텍스트 Decorator**합니다.
 
-    3.  같은 이름의 두 decorator를 추가 **BirthDecorator** 하 고 **DeathDecorator**합니다.
+   3.  같은 이름의 두 decorator를 추가 **BirthDecorator** 하 고 **DeathDecorator**합니다.
 
-    4.  각 새 decorator를 선택 하 고 속성 창에서 설정 된 **위치** 필드입니다. 이 도메인 속성 값을 모양에 표시할 위치를 결정 합니다. 예를 들어 설정할 **InnerBottomLeft** 하 고 **InnerBottomRight**합니다.
+   4.  각 새 decorator를 선택 하 고 속성 창에서 설정 된 **위치** 필드입니다. 이 도메인 속성 값을 모양에 표시할 위치를 결정 합니다. 예를 들어 설정할 **InnerBottomLeft** 하 고 **InnerBottomRight**합니다.
 
-         ![구획 모양 정의](../modeling/media/familyt_compartment.png)
+        ![구획 모양 정의](../modeling/media/familyt_compartment.png)
 
-3.  Decorator는 속성에 매핑됩니다.
+3. Decorator는 속성에 매핑됩니다.
 
-    1.  DSL 세부 정보 창을 엽니다. 일반적으로 출력 창 옆에 있는 탭입니다. 볼 수 없는 경우,에 **보기** 메뉴에서 **다른 Windows**를 클릭 하 고 **DSL 정보**.
+   1.  DSL 세부 정보 창을 엽니다. 일반적으로 출력 창 옆에 있는 탭입니다. 볼 수 없는 경우,에 **보기** 메뉴에서 **다른 Windows**를 클릭 하 고 **DSL 정보**.
 
-    2.  DSL 정의 다이어그램에서 연결 하는 선을 클릭 합니다 **Person** 도메인 클래스 모양 클래스를 합니다.
+   2.  DSL 정의 다이어그램에서 연결 하는 선을 클릭 합니다 **Person** 도메인 클래스 모양 클래스를 합니다.
 
-    3.  **DSL 세부 정보**에 **Decorator 맵** 탭에서 매핑되지 않은 decorator는에 있는 확인란을 클릭 합니다. **표시 속성**, 원하는 매핑되어 도메인 속성을 선택 합니다. 예를 들어 매핑할 **BirthDecorator** 하 **출생**합니다.
+   3.  **DSL 세부 정보**에 **Decorator 맵** 탭에서 매핑되지 않은 decorator는에 있는 확인란을 클릭 합니다. **표시 속성**, 원하는 매핑되어 도메인 속성을 선택 합니다. 예를 들어 매핑할 **BirthDecorator** 하 **출생**합니다.
 
-4.  DSL을 저장 하 고, 모든 템플릿 변환을 클릭 및 F5 키를 누릅니다.
+4. DSL을 저장 하 고, 모든 템플릿 변환을 클릭 및 F5 키를 누릅니다.
 
-5.  샘플 모델 다이어그램에서 이제 선택한 위치를 클릭 하 고 수 있는 값에 입력을 확인 합니다. 또한 선택 하면를 **Person** 셰이프의 속성 창에 생일 및 사망 새 속성이 표시 됩니다.
+5. 샘플 모델 다이어그램에서 이제 선택한 위치를 클릭 하 고 수 있는 값에 입력을 확인 합니다. 또한 선택 하면를 **Person** 셰이프의 속성 창에 생일 및 사망 새 속성이 표시 됩니다.
 
-6.  .Tt 파일에서 각 사용자의 속성을 가져오는 코드를 추가할 수 있습니다.
+6. .Tt 파일에서 각 사용자의 속성을 가져오는 코드를 추가할 수 있습니다.
 
- ![패밀리 트리 다이어그램, 도구 상자 및 탐색기](../modeling/media/familyt_instance.png)
+   ![패밀리 트리 다이어그램, 도구 상자 및 탐색기](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>새 클래스를 정의 합니다.
  도메인 클래스 및 관계를 모델에 추가할 수 있습니다. 예를 들어 마을과를 나타내는 사용자를 town에서 활성 상태로 유지 새 관계를 나타내는 새 클래스를 만들 수 있습니다.

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919912"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>코드 조각을 사용하는 방법에 대한 유용한 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ ms.locfileid: "49241321"
 ## <a name="security"></a>보안  
  조각의 보안 강도는 조각이 소스 코드에서 사용되는 위치 및 코드에 삽입된 후 수정되는 방법에 따라 달라집니다. 다음 목록에 있는 몇 가지 영역을 고려해야 합니다.  
   
--   파일 및 데이터베이스 액세스  
+- 파일 및 데이터베이스 액세스  
   
--   코드 액세스 보안  
+- 코드 액세스 보안  
   
--   리소스 보호(예: 이벤트 로그, 레지스트리)  
+- 리소스 보호(예: 이벤트 로그, 레지스트리)  
   
--   암호 저장  
+- 암호 저장  
   
--   입력 확인  
+- 입력 확인  
   
--   스크립트 기술에 데이터 전달  
+- 스크립트 기술에 데이터 전달  
   
- 자세한 내용은 [응용 프로그램 보안](../ide/securing-applications.md)을 참조하세요.  
+  자세한 내용은 [응용 프로그램 보안](../ide/securing-applications.md)을 참조하세요.  
   
 ## <a name="downloaded-code-snippets"></a>다운로드된 코드 조각  
  Visual Studio에 의해 설치된 IntelliSense 코드 조각 자체에는 보안 위험이 없습니다. 하지만 이 조각 때문에 응용 프로그램에 보안 위험이 발생할 수 있습니다. 인터넷에서 다운로드된 조각은 다른 다운로드된 콘텐츠처럼 매우 주의해서 처리해야 합니다.  

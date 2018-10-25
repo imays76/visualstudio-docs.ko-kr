@@ -24,12 +24,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ec590e3c643f731a9c85bc59c0c36394988f6c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e1aa8ce06603860c2e509854edbd063de2d6f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925632"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [포트, 마�
 ## <a name="troubleshooting-project-compatibility-issues"></a>프로젝트 호환성 문제 해결  
  [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 또는 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]에서 프로젝트가 열리지 않을 경우 다음과 같은 조치를 취할 수 있습니다.  
   
--   [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 또는 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 에서 지원하지 않는 프로젝트나 연결된 Visual Studio 버전이 설치되지 않은 프로젝트를 열려고 하면 프로젝트 형식이 지원되지 않는다는 메시지가 표시되고 **지원되지 않는 프로젝트** 아래 **프로젝트 및 솔루션 변경 내용 검토**대화 상자에 프로젝트 형식이 나열될 수 있습니다. 이 문제를 해결하려면 Windows **제어판**에서 프로그램 및 기능 페이지를 열고 **Visual Studio**를 선택한 다음 **변경**, **복구**를 차례로 선택합니다. 그러면 누락된 버전을 설치할 수 있습니다.  
+- [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 또는 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 에서 지원하지 않는 프로젝트나 연결된 Visual Studio 버전이 설치되지 않은 프로젝트를 열려고 하면 프로젝트 형식이 지원되지 않는다는 메시지가 표시되고 **지원되지 않는 프로젝트** 아래 **프로젝트 및 솔루션 변경 내용 검토**대화 상자에 프로젝트 형식이 나열될 수 있습니다. 이 문제를 해결하려면 Windows **제어판**에서 프로그램 및 기능 페이지를 열고 **Visual Studio**를 선택한 다음 **변경**, **복구**를 차례로 선택합니다. 그러면 누락된 버전을 설치할 수 있습니다.  
   
--   [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]에서 데스크톱 응용 프로그램에 대한 프로젝트를 열려고 하면 오류가 발생하고 "이 버전의 Visual Studio에서는 [!INCLUDE[win81](../includes/win81-md.md)] 앱만 지원합니다." 또는 "이 프로젝트는 현재 버전의 Visual Studio와 호환되지 않습니다."와 같은 메시지 중 하나가 표시됩니다. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]는 Windows 8.1용으로 설계된 Windows 스토어 앱을 개발하고 테스팅하며 배포하는 것으로 제한됩니다. 데스크톱 응용 프로그램 프로젝트를 열려면 해당 프로젝트 형식을 지원하는 Visual Studio의 버전을 사용해야 합니다.  
+- [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]에서 데스크톱 응용 프로그램에 대한 프로젝트를 열려고 하면 오류가 발생하고 "이 버전의 Visual Studio에서는 [!INCLUDE[win81](../includes/win81-md.md)] 앱만 지원합니다." 또는 "이 프로젝트는 현재 버전의 Visual Studio와 호환되지 않습니다."와 같은 메시지 중 하나가 표시됩니다. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]는 Windows 8.1용으로 설계된 Windows 스토어 앱을 개발하고 테스팅하며 배포하는 것으로 제한됩니다. 데스크톱 응용 프로그램 프로젝트를 열려면 해당 프로젝트 형식을 지원하는 Visual Studio의 버전을 사용해야 합니다.  
   
-     Visual Studio 버전에 대한 자세한 내용은 [Microsoft Visual Studio 제품](http://go.microsoft.com/fwlink/?LinkId=254332)을 참조하세요.  
+   Visual Studio 버전에 대한 자세한 내용은 [Microsoft Visual Studio 제품](http://go.microsoft.com/fwlink/?LinkId=254332)을 참조하세요.  
   
--   [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop에서 Windows 스토어 앱 프로젝트를 열려고 시도하면 오류가 발생합니다. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop을 사용하여 Windows 스토어 앱을 빌드할 수 없습니다. Windows 스토어 앱을 빌드하려는 경우 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]도 설치할 수 있습니다. 또는 모든 Microsoft 플랫폼 및 웹 응용 프로그램을 개발하려면 Visual Studio Professional 2013을 사용해 보세요.  
+- [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop에서 Windows 스토어 앱 프로젝트를 열려고 시도하면 오류가 발생합니다. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop을 사용하여 Windows 스토어 앱을 빌드할 수 없습니다. Windows 스토어 앱을 빌드하려는 경우 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]도 설치할 수 있습니다. 또는 모든 Microsoft 플랫폼 및 웹 응용 프로그램을 개발하려면 Visual Studio Professional 2013을 사용해 보세요.  
   
--   프로젝트에 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 특정 기능이 필요할 경우 이전 버전에서 프로젝트를 열 수 없습니다.  
+- 프로젝트에 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 특정 기능이 필요할 경우 이전 버전에서 프로젝트를 열 수 없습니다.  
   
--   [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 를 사용하면서 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]에서 만든 프로젝트를 여는 경우 프로젝트 시스템을 사용자 지정하여 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]의 기능을 통합할 수 있습니다. 이 작업을 수행 하는 방법에 대 한 정보를 참조 하세요 [만드는 사용자 지정 프로젝트 버전 인식](../misc/making-custom-projects-version-aware.md)합니다.  
+- [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 를 사용하면서 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]에서 만든 프로젝트를 여는 경우 프로젝트 시스템을 사용자 지정하여 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]의 기능을 통합할 수 있습니다. 이 작업을 수행 하는 방법에 대 한 정보를 참조 하세요 [만드는 사용자 지정 프로젝트 버전 인식](../misc/making-custom-projects-version-aware.md)합니다.  
   
- 추가 문제 해결 방법을 보려면 [Visual Studio 2013 호환성](http://support.microsoft.com/kb/2863286) KB 문서를 참조하세요.  
+  추가 문제 해결 방법을 보려면 [Visual Studio 2013 호환성](http://support.microsoft.com/kb/2863286) KB 문서를 참조하세요.  
   
 ##  <a name="file"></a> 파일  
  다음 목록은 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 에서 각 파일 형식을 지원하는지 여부, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 및 Visual Studio 2010 SP1에서 파일을 열 수 있는지 여부 및 호환성을 유지하기 위해 수정해야 하는지 여부를 보여줍니다.  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900477"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>연습: Windows Form을 사용 하 여 데이터를 수집 합니다.
   이 연습에서는 Microsoft Office Excel용 문서 수준 사용자 지정에서 Windows Form을 열고 사용자로부터 정보를 수집하고 워크시트 셀에 해당 정보를 기록하는 방법을 보여 줍니다.  
@@ -70,41 +70,41 @@ ms.locfileid: "35674344"
   
 ### <a name="to-add-a-windows-form"></a>Windows Form을 추가하려면  
   
-1.  **솔루션 탐색기** 에서 **WinFormInput**프로젝트를 선택합니다.  
+1. **솔루션 탐색기** 에서 **WinFormInput**프로젝트를 선택합니다.  
   
-2.  **프로젝트** 메뉴에서 **새 Windows Form 추가**를 클릭합니다.  
+2. **프로젝트** 메뉴에서 **새 Windows Form 추가**를 클릭합니다.  
   
-3.  양식을 **GetInputString.vb** 또는 **GetInputString.cs**로 명명한 다음 **추가**를 클릭합니다.  
+3. 양식을 **GetInputString.vb** 또는 **GetInputString.cs**로 명명한 다음 **추가**를 클릭합니다.  
   
-     새 양식이 디자이너에서 열립니다.  
+    새 양식이 디자이너에서 열립니다.  
   
-4.  폼에 <xref:System.Windows.Forms.TextBox> 및 <xref:System.Windows.Forms.Button> 를 추가합니다.  
+4. 폼에 <xref:System.Windows.Forms.TextBox> 및 <xref:System.Windows.Forms.Button> 를 추가합니다.  
   
-5.  단추를 선택하고 **속성** 창에서 **Text** 속성을 찾은 다음 텍스트를 **확인**으로 변경합니다.  
+5. 단추를 선택하고 **속성** 창에서 **Text** 속성을 찾은 다음 텍스트를 **확인**으로 변경합니다.  
   
- 그런 다음 코드를 `ThisWorkbook.vb` 또는 `ThisWorkbook.cs` 에 추가하여 사용자의 정보를 수집합니다.  
+   그런 다음 코드를 `ThisWorkbook.vb` 또는 `ThisWorkbook.cs` 에 추가하여 사용자의 정보를 수집합니다.  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>Windows Form 및 수집 정보를 표시 합니다.  
  `GetInputString` Windows Form의 인스턴스를 만들어 표시한 다음 사용자의 정보를 워크시트의 임의 셀에 기록합니다.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>양식을 표시하고 정보를 수집하려면  
   
-1.  **솔루션 탐색기** 에서 **ThisWorkbook.vb** 또는 **ThisWorkbook.cs**를 마우스 오른쪽 단추로 클릭한 다음 **코드 보기**를 클릭합니다.  
+1. **솔루션 탐색기** 에서 **ThisWorkbook.vb** 또는 **ThisWorkbook.cs**를 마우스 오른쪽 단추로 클릭한 다음 **코드 보기**를 클릭합니다.  
   
-2.  <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 의 `ThisWorkbook`이벤트 처리기에서 다음 코드를 추가하여 `GetInputString` 양식에 대한 변수를 선언한 다음 양식을 표시합니다.  
+2. <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 의 `ThisWorkbook`이벤트 처리기에서 다음 코드를 추가하여 `GetInputString` 양식에 대한 변수를 선언한 다음 양식을 표시합니다.  
   
-    > [!NOTE]  
-    >  C#에서는 아래 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 이벤트에 표시된 것처럼 이벤트 처리기를 추가해야 합니다. 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
+   > [!NOTE]  
+   >  C#에서는 아래 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 이벤트에 표시된 것처럼 이벤트 처리기를 추가해야 합니다. 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)합니다.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  명명된 범위에 텍스트를 쓰는 `WriteStringToCell` 이라는 메서드를 만듭니다. 이 메서드가 양식에서 호출되고 사용자의 입력이 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`셀의 **컨트롤인**에 전달됩니다.  
+3. 명명된 범위에 텍스트를 쓰는 `WriteStringToCell` 이라는 메서드를 만듭니다. 이 메서드가 양식에서 호출되고 사용자의 입력이 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`셀의 **컨트롤인**에 전달됩니다.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- 그런 다음 양식에 코드를 추가하여 단추의 클릭 이벤트를 처리합니다.  
+   그런 다음 양식에 코드를 추가하여 단추의 클릭 이벤트를 처리합니다.  
   
 ## <a name="send-information-to-the-worksheet"></a>워크시트에 정보 보내기  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74c3361e4c254841bb58f23ad789ed7a2cad584f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857395"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>시뮬레이터에서 Windows 스토어 앱 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,35 +123,35 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
   
  네트워크 속성을 시뮬레이트하려면  
   
-1.  시뮬레이터 도구 모음에서 **네트워크 속성 변경** 단추를 선택합니다.  
+1. 시뮬레이터 도구 모음에서 **네트워크 속성 변경** 단추를 선택합니다.  
   
-2.  **네트워크 속성 설정** 대화 상자에서 **시뮬레이션된 네트워크 속성 사용**을 선택합니다.  
+2. **네트워크 속성 설정** 대화 상자에서 **시뮬레이션된 네트워크 속성 사용**을 선택합니다.  
   
-     확인란을 선택 취소하여 시뮬레이션을 제거하고 현재 연결된 인터페이스의 네트워크 속성으로 돌아갑니다.  
+    확인란을 선택 취소하여 시뮬레이션을 제거하고 현재 연결된 인터페이스의 네트워크 속성으로 돌아갑니다.  
   
-3.  시뮬레이트된 네트워크의 **프로필 이름** 을 입력합니다. [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 개체의 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 속성에서 시뮬레이션을 식별하는 데 사용할 수 있도록 고유한 이름을 사용하는 것이 좋습니다.  
+3. 시뮬레이트된 네트워크의 **프로필 이름** 을 입력합니다. [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 개체의 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 속성에서 시뮬레이션을 식별하는 데 사용할 수 있도록 고유한 이름을 사용하는 것이 좋습니다.  
   
-4.  [네트워크 비용 형식](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) 목록에서 프로필에 **NetworkCostType** 값을 선택합니다.  
+4. [네트워크 비용 형식](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) 목록에서 프로필에 **NetworkCostType** 값을 선택합니다.  
   
-5.  **데이터 한계 상태 플래그** 목록에서 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 속성이나 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)속성을 true로 설정하거나 **데이터 한계 미만** 을 선택하여 두 값을 false로 설정할 수 있습니다.  
+5. **데이터 한계 상태 플래그** 목록에서 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 속성이나 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)속성을 true로 설정하거나 **데이터 한계 미만** 을 선택하여 두 값을 false로 설정할 수 있습니다.  
   
-6.  **로밍 상태** 목록에서 [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 속성을 설정합니다.  
+6. **로밍 상태** 목록에서 [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 속성을 설정합니다.  
   
-7.  **속성 설정** 을 선택하고 포그라운드 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 이벤트 및 [NetworkStateChange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 형식의 백그라운드 **SystemTrigger**를 트리거하여 네트워크 속성을 시뮬레이트합니다.  
+7. **속성 설정** 을 선택하고 포그라운드 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 이벤트 및 [NetworkStateChange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 형식의 백그라운드 **SystemTrigger**를 트리거하여 네트워크 속성을 시뮬레이트합니다.  
   
- **네트워크 연결 관리에 대한 자세한 내용**  
+   **네트워크 연결 관리에 대한 자세한 내용**  
   
- [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [네트워크 정보 샘플](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [네트워크 정보 샘플](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [에너지 사용 분석](../profiling/analyze-energy-use-in-store-apps.md)  
+   [에너지 사용 분석](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
- [백그라운드 작업과 함께 시스템 이벤트에 응답하는 방법](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [백그라운드 작업과 함께 시스템 이벤트에 응답하는 방법](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Windows 스토어 앱에서 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Windows 스토어 앱에서 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 키보드로 시뮬레이터 탐색  
  **Ctrl+Alt+위쪽 화살표** 를 눌러 시뮬레이터 창에서 시뮬레이터 도구 모음으로 포커스를 전환하는 방식으로 시뮬레이터 도구 모음을 탐색할 수 있습니다. **위쪽 화살표** 및 **아래쪽 화살표** 를 사용하여 도구 모음 단추 간에 이동합니다.  

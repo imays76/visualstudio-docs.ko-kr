@@ -15,27 +15,27 @@ ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63e1bc230df89fe219607c20e1cce248fc2238e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9109ef312fb16b4b370a9a8428f3ffb202b272ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862868"
 ---
 # <a name="sending-events"></a>이벤트 보내기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 디버거가 디버그 엔진 (DE) 사이의 통신 메커니즘은 DCOM을 기반으로 하는 이벤트 모델. 이벤트를 COM 개체로 보내고 각 이벤트에 다음을 지정 하는 매개 변수:  
   
--   이벤트를 호출 하는 DE 합니다.  
+- 이벤트를 호출 하는 DE 합니다.  
   
--   설명 내용입니다.  
+- 설명 내용입니다.  
   
--   프로세스, 프로그램 및 스레드 정보 이벤트가 발생의 컨텍스트를 식별 하는 합니다. 프로세스는 독일에서 전송 되는 이벤트에 대 한 전송 되지 않습니다.  
+- 프로세스, 프로그램 및 스레드 정보 이벤트가 발생의 컨텍스트를 식별 하는 합니다. 프로세스는 독일에서 전송 되는 이벤트에 대 한 전송 되지 않습니다.  
   
--   동기 또는 비동기 이벤트 인지 여부를 나타내는 이벤트 형식입니다.  
+- 동기 또는 비동기 이벤트 인지 여부를 나타내는 이벤트 형식입니다.  
   
- 모든 디버그 이벤트 메서드를 사용 하 여 보내집니다 [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)합니다.  
+  모든 디버그 이벤트 메서드를 사용 하 여 보내집니다 [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [이벤트 원본](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  

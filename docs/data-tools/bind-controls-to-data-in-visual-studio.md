@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923019"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 컨트롤 바인딩
 데이터를 컨트롤에 바인딩하여 응용 프로그램 사용자에게 데이터를 표시할 수 있습니다. 항목을 끌어 데이터 바인딩된 컨트롤 이러한를 만들 수 있습니다 합니다 **데이터 원본** 창 디자인 화면 또는 Visual Studio에서 화면에서 컨트롤입니다.
@@ -30,14 +30,15 @@ ms.locfileid: "34845320"
 ## <a name="data-sources"></a>데이터 원본
  데이터 바인딩 컨텍스트, 데이터 원본 사용자 인터페이스에 바인딩할 수 있는 메모리의 데이터를 나타냅니다. 실질적으로 Entity Framework 클래스, 데이터 집합,.NET 프록시 개체, LINQ to SQL 클래스 또는 임의의.NET 개체 또는 컬렉션에 캡슐화 되어 있는 서비스 끝점을 데이터 원본 수 있습니다. 일부 데이터 원본 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수는 **데이터 원본** 창에서 다른 데이터 원본 되지 않습니다. 다음 표에서는 어떠한 데이터 소스가 지원되는지 보여 줍니다.
 
-|데이터 원본|끌어서 놓기 지원 **Windows Forms 디자이너**|끌어서 놓기 지원 **WPF 디자이너**|끌어서 놓기 지원 **Silverlight 디자이너**|
-|-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|데이터 집합|예|예|아니요|
-|엔터티 데이터 모델|예<sup>1</sup>|예|예|
-|LINQ to SQL 클래스|No<sup>2</sup>|No<sup>2</sup>|No<sup>2</sup>|
-|서비스 (포함 하 여 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF 서비스 및 웹 서비스)|예|예|예|
-|Object|예|예|예|
-|SharePoint|예|예|예|
+
+| 데이터 원본 | 끌어서 놓기 지원 **Windows Forms 디자이너** | 끌어서 놓기 지원 **WPF 디자이너** | 끌어서 놓기 지원 **Silverlight 디자이너** |
+| - | - | - | - |
+| 데이터 집합 | 예 | 예 | 아니요 |
+| 엔터티 데이터 모델 | 예<sup>1</sup> | 예 | 예 |
+| LINQ to SQL 클래스 | No<sup>2</sup> | No<sup>2</sup> | No<sup>2</sup> |
+| 서비스 (포함 하 여 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF 서비스 및 웹 서비스) | 예 | 예 | 예 |
+| Object | 예 | 예 | 예 |
+| SharePoint | 예 | 예 | 예 |
 
  1. 사용 하 여 모델을 생성 합니다 **엔터티 데이터 모델** 마법사 다음 해당 개체를 디자이너로 끌어 옵니다.
 
@@ -54,7 +55,7 @@ ms.locfileid: "34845320"
  다음 표에서 일부 데이터에 컨트롤 바인딩 하기 위해 수행 하는 가장 일반적인 작업 중입니다.
 
 |작업|추가 정보|
-|----------|----------------------|
+|----------| - |
 |엽니다는 **데이터 원본** 창입니다.|선택한 편집기에서 디자인 화면을 엽니다 **뷰** > **데이터 원본**합니다.|
 |프로젝트에 데이터 소스를 추가 합니다.|[새 데이터 소스 추가](../data-tools/add-new-data-sources.md)|
 |컨트롤에서 항목을 끌면 만들어집니다을 설정 합니다 **데이터 원본** 창에서 디자이너로 합니다.|[데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|

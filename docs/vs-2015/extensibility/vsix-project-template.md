@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927205"
 ---
 # <a name="vsix-project-template"></a>VSIX 프로젝트 템플릿
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ VSIX 프로젝트에서 하나 이상의 Visual Studio 확장을 래핑할 VSIX 
 ## <a name="uses-of-the-vsix-project-template"></a>VSIX 프로젝트 템플릿 사용  
  주요 용도 VSIX 프로젝트 템플릿:  
   
--   프로젝트 템플릿과 항목 템플릿 VSIX 지원 되지 않은 다른 확장을 배포 합니다.  
+- 프로젝트 템플릿과 항목 템플릿 VSIX 지원 되지 않은 다른 확장을 배포 합니다.  
   
--   에 하나의 배포 패키지에 여러 확장의 출력을 래핑합니다.  
+- 에 하나의 배포 패키지에 여러 확장의 출력을 래핑합니다.  
   
- VSIX 프로젝트 템플릿을 사용 하 여 Vspackage 또는 다른 종류의 지원 되는 VSIX에 이미 있는 확장을 배포할 필요가 없습니다.  
+  VSIX 프로젝트 템플릿을 사용 하 여 Vspackage 또는 다른 종류의 지원 되는 VSIX에 이미 있는 확장을 배포할 필요가 없습니다.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>빈 VSIX 프로젝트에서 확장 패키지  
  기존 확장 또는 이미 사용 하 여 빈 VSIX 프로젝트에서 지원 되는 VSIX가 없는 확장을 패키징할 수 있습니다. 래핑될 확장에서 지원 되는 형식 이어야 합니다 [VSIX 스키마](../extensibility/vsix-extension-schema-2-0-reference.md)합니다.  

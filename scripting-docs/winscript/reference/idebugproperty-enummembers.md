@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9cb57f2609fcd9a80e2a9e0dfd63637e6f700047
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07ad47ee8d0232df5f528db659def421475e7b33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924247"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
-속성의 멤버를 열거 합니다.  
+속성의 멤버를 열거합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,19 +41,19 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>매개 변수  
  `dwFieldSpec`  
- [in] 지정 된 `DBGPROP_INFO_FLAGS` 채워지도록 열거 디버그 속성 구조에서 필드를 확인 하는 상수입니다.  
+ [in] 지정 된 `DBGPROP_INFO_FLAGS` 채울 열거 디버그 속성 구조에 필드를 확인 하는 상수입니다.  
   
  `nRadix`  
  [in] 모든 숫자 정보를 해석 하는 데 사용할 기 수입니다.  
   
  `refiid`  
- [in] 이 IID 필터링 열거자에 전달 됩니다. IID는 중 하나는 `IDebugPropertyEnumType` 인터페이스에서 상속 하는 `IDebugPropertyEnumType_All`합니다.  
+ [in] 이 IID는 열거자를 필터링 하는 것에 대 한 전달 됩니다. IID는 중에 `IDebugPropertyEnumType` 인터페이스에서 상속 되는 `IDebugPropertyEnumType_All`합니다.  
   
  `ppEnum`  
  [out] 반환 된 `IEnumDebugPropertyInfo` 멤버 속성을 열거 하는 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`합니다.  
+ 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)   

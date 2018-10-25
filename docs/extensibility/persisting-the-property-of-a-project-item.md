@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: da231c924e3167a50c885cf18ef878a02b28b166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915583"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>프로젝트 항목의 속성 유지
 프로젝트 항목, 소스 파일의 작성자와 같은 추가 속성을 유지 하려는 경우. 프로젝트 파일에서 속성을 저장 하 여이 수행할 수 있습니다.
@@ -117,22 +117,22 @@ ms.locfileid: "39639352"
 
 ## <a name="to-verify-that-the-property-is-persisted"></a>속성은 유지 되도록 확인 하려면
 
-1.  시작 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 다음 열거나 솔루션을 만듭니다.
+1. 시작 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 다음 열거나 솔루션을 만듭니다.
 
-2.  프로젝트 선택 항목에서 VsPkg.cs **솔루션 탐색기**합니다.
+2. 프로젝트 선택 항목에서 VsPkg.cs **솔루션 탐색기**합니다.
 
-3.  중단점을 사용 하거나의 VSPackage를 로드 하 고 SetItemAttribute 실행 되는지 확인 합니다.
+3. 중단점을 사용 하거나의 VSPackage를 로드 하 고 SetItemAttribute 실행 되는지 확인 합니다.
 
-    > [!NOTE]
-    > UI 컨텍스트에서 VSPackage를 자동 로드 하면 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>합니다. 자세한 내용은 [부하 Vspackage](../extensibility/loading-vspackages.md)합니다.
+   > [!NOTE]
+   > UI 컨텍스트에서 VSPackage를 자동 로드 하면 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>합니다. 자세한 내용은 [부하 Vspackage](../extensibility/loading-vspackages.md)합니다.
 
-4.  닫기 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 파일을 메모장에서 엽니다. 표시는 \<작성자 > Tom 값을 사용 하 여 태그를 다음과 같이 합니다.
+4. 닫기 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 파일을 메모장에서 엽니다. 표시는 \<작성자 > Tom 값을 사용 하 여 태그를 다음과 같이 합니다.
 
-    ```xml
-    <Compile Include="VsPkg.cs">
-        <Author>Tom</Author>
-    </Compile>
-    ```
+   ```xml
+   <Compile Include="VsPkg.cs">
+       <Author>Tom</Author>
+   </Compile>
+   ```
 
 ## <a name="see-also"></a>참고자료
 

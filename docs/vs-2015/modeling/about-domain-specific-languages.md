@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894523"
 ---
 # <a name="about-domain-specific-languages"></a>도메인별 언어 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ C# 등 UML 범용 언어에서 달리 도메인 특정 언어 (DSL)는 문 특�
   
  비즈니스 및 프로젝트가 DSL을 사용 하 여 기술 할 수 있는 개념의 특별 한 집합을 사용 하 여 처리 합니다. 예를 들어, 이러한 응용 프로그램 중 하나에 대 한 DSL을 정의할 수 있습니다.  
   
--   웹 사이트의 탐색 경로 계획입니다.  
+- 웹 사이트의 탐색 경로 계획입니다.  
   
--   전자 부품에 대 한 다이어그램을 연결 합니다.  
+- 전자 부품에 대 한 다이어그램을 연결 합니다.  
   
--   컨베이어 벨트 및 수하물 처리 장비 공항에 대 한 네트워크입니다.  
+- 컨베이어 벨트 및 수하물 처리 장비 공항에 대 한 네트워크입니다.  
   
- DSL을 디자인할 때 정의 된 *도메인 클래스* 각 도메인에 웹 페이지, lamp, 또는 공항 체크인 데스크와 같은 중요 한 개념에 대 한 합니다. 정의한 *도메인 관계* 개념을 함께 연결할 컨베이어 벨트, 하이퍼링크 및 통신 등입니다.  
+  DSL을 디자인할 때 정의 된 *도메인 클래스* 각 도메인에 웹 페이지, lamp, 또는 공항 체크인 데스크와 같은 중요 한 개념에 대 한 합니다. 정의한 *도메인 관계* 개념을 함께 연결할 컨베이어 벨트, 하이퍼링크 및 통신 등입니다.  
   
- DSL의 사용자가 만들거나 *모델입니다.* 모델은 *인스턴스* DSL의 합니다. 예를 들어 특정 웹 사이트에 또는 특정 장치 또는 처리 시스템의 특정 공항 수하물 연결은 설명 합니다.  
+  DSL의 사용자가 만들거나 *모델입니다.* 모델은 *인스턴스* DSL의 합니다. 예를 들어 특정 웹 사이트에 또는 특정 장치 또는 처리 시스템의 특정 공항 수하물 연결은 설명 합니다.  
   
- 사용자가 다이어그램 또는 Windows form으로 모델을 볼 수 있습니다. 모델도 볼 수 있습니다 XML로 저장 되는 방식을 인. DSL을 정의 하는 경우 각 도메인 클래스 및 관계의 인스턴스는 사용자의 화면에 표시 되는 방식을 정의할 수 있습니다. 일반적인 DSL 아이콘 또는 사각형 화살표로 연결 된 컬렉션으로 표시 됩니다.  
+  사용자가 다이어그램 또는 Windows form으로 모델을 볼 수 있습니다. 모델도 볼 수 있습니다 XML로 저장 되는 방식을 인. DSL을 정의 하는 경우 각 도메인 클래스 및 관계의 인스턴스는 사용자의 화면에 표시 되는 방식을 정의할 수 있습니다. 일반적인 DSL 아이콘 또는 사각형 화살표로 연결 된 컬렉션으로 표시 됩니다.  
   
- 다음 그림에는 다이어그램 DSL에서 작은 모델을 보여 줍니다.  
+  다음 그림에는 다이어그램 DSL에서 작은 모델을 보여 줍니다.  
   
- ![Tudor 패밀리 트리 모델](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![Tudor 패밀리 트리 모델](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>Dsl을 사용 하 여 수행할 수 있는 작업  
  DSL의 일반적인 응용 프로그램 코드 또는 기타 아티팩트를 생성 하는 것입니다. DSL을 정의 하는 경우 정의할 수 있습니다 *텍스트 템플릿* DSL의 모델을 읽은 하 고 텍스트 파일을 생성 합니다.  

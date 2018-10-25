@@ -1,5 +1,5 @@
 ---
-title: 레거시 언어 서비스 명령 가로채 | Microsoft Docs
+title: 레거시 언어 서비스 명령 가로채기 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f025e9dab6f93d87660a59421cbd778c92165a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 669d03043ad36ad1e96084cb4cc8833ab20f0998
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832864"
 ---
-# <a name="intercepting-legacy-language-service-commands"></a>가로채 레거시 언어 서비스 명령
-와 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 텍스트 보기는 그렇지 않은 경우 처리 하는 언어 서비스 절편 명령이 있을 수 있습니다. 텍스트 보기 관리 하지 않는 언어 관련 동작에 유용 합니다. 언어 서비스에서 텍스트 보기에 하나 이상의 명령 필터를 추가 하 여 이러한 명령을 가로챌 수 있습니다.  
+# <a name="intercepting-legacy-language-service-commands"></a>레거시 언어 서비스 명령 가로채기
+사용 하 여 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 텍스트 뷰 처리할 수 있는 언어 서비스 절편 명령 할 수 있습니다. 텍스트 뷰를 관리 하지 않는 언어 관련 동작에 유용 합니다. 언어 서비스에서 하나 이상의 명령 필터 텍스트 보기에 추가 하 여 이러한 명령을 가로챌 수 있습니다.  
   
 ## <a name="getting-and-routing-the-command"></a>가져오기 및 명령 라우팅  
- 명령 필터는는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 특정 문자 시퀀스 또는 키 명령을 모니터링 하는 개체입니다. 단일 텍스트 보기를 통해 여러 명령 필터를 연결할 수 있습니다. 각 텍스트 보기 체인 of 명령 필터를 유지 관리합니다. 새 명령 필터를 만든 후에 적절 한 텍스트 보기에 대 한 체인에 필터를 추가 합니다.  
+ 명령 필터는는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 특정 문자 시퀀스 또는 키 명령을 모니터링 하는 개체입니다. 단일 텍스트 뷰를 사용 하 여 명령 필터가 여러 개 연결할 수 있습니다. 각 텍스트 보기의 명령 체인 필터를 유지 관리합니다. 새 명령 필터를 만든 후 적절 한 텍스트 보기에 대 한 체인에 필터를 추가 합니다.  
   
- 호출는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> 메서드를는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 명령 필터 체인에 추가 합니다. 호출 하는 경우 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령 필터를 처리 하지 않는 명령을 전달할 수 있는 다른 명령 필터를 반환 합니다.  
+ 호출을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> 메서드는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 명령 필터 체인에 추가할. 호출 하는 경우 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령 필터 처리 하지 않는 명령을 전달할 수 있습니다 하는 다른 명령 필터를 반환 합니다.  
   
  명령 처리에 대 한 다음과 같은 옵션이 있습니다.  
   
--   명령을 처리 하 고 체인에 있는 다음 명령 필터에 명령을 전달 합니다.  
+- 명령을 처리 하 고 체인의 다음 명령 필터에 명령을 전달 합니다.  
   
--   명령을 처리 하 고 명령 필터에 명령을 전달 하지 마십시오.  
+- 명령을 처리 하 고 명령 필터에 명령을 전달 하지 마십시오.  
   
--   명령을 처리 하지 않는 있지만 다음 명령 필터에 로그온 하는 명령을 전달 합니다.  
+- 명령을 처리 하지 않습니다 하지만 다음 명령은 필터에는 명령을 전달 합니다.  
   
--   이 명령은 무시 됩니다. 현재 필터에서 처리 하지 않는 하 고 필터에 전달 하지 마십시오.  
+- 이 명령은 무시 됩니다. 현재 필터에서 처리 하지 않습니다 하 고 필터에 전달 하지 마세요.  
   
- 언어 서비스 처리 하는 명령에 대 한 정보를 참조 하십시오. [언어 서비스 필터에 대 한 중요 한 명령을](../../extensibility/internals/important-commands-for-language-service-filters.md)합니다.
+  언어 서비스는 명령에 대 한 처리 하는 정보를 참조 하세요 [언어 서비스 필터에 대 한 중요 명령](../../extensibility/internals/important-commands-for-language-service-filters.md)입니다.

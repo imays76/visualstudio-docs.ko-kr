@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837973"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 텍스처 압축 변형
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ B8G8R8X8, B8G8R8A8 또는 R8G8B8A8의 변형인 픽셀 형식이 있는 질감�
 ## <a name="remarks"></a>설명  
  원본 질감을 만드는 `ID3DDevice::CreateTexture2D`를 호출할 때마다 블록 기반 압축 형식을 사용하여 질감을 압축합니다. 특히, 질감은 다음과 같은 경우 압축됩니다.  
   
--   `D3D11_TEXTURE2D_DESC`에서 전달된 `pDesc` 개체가 변하지 않는 셰이더를 설명하는 경우, 즉 다음과 같은 경우입니다.  
+- `D3D11_TEXTURE2D_DESC`에서 전달된 `pDesc` 개체가 변하지 않는 셰이더를 설명하는 경우, 즉 다음과 같은 경우입니다.  
   
-    -   BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우  
+  -   BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우  
   
-    -   Usage 멤버가 D3D11_USAGE_DEFAULT 또는 D3D11_USAGE_IMMUTABLE로 설정된 경우  
+  -   Usage 멤버가 D3D11_USAGE_DEFAULT 또는 D3D11_USAGE_IMMUTABLE로 설정된 경우  
   
-    -   CPUAccessFlags 멤버가 0으로 설정된 경우(CPU 액세스 없음)  
+  -   CPUAccessFlags 멤버가 0으로 설정된 경우(CPU 액세스 없음)  
   
-    -   SamplerDesc 멤버에 1로 설정된 Count 멤버가 있는 경우(MSAA(MultiSample Anti-Aliasing) 없음)  
+  -   SamplerDesc 멤버에 1로 설정된 Count 멤버가 있는 경우(MSAA(MultiSample Anti-Aliasing) 없음)  
   
--   초기 데이터가 `CreateTexture2D`에 대한 호출에 제공된 경우  
+- 초기 데이터가 `CreateTexture2D`에 대한 호출에 제공된 경우  
   
- 다음은 지원되는 원본 형식과 해당 형식의 블록 압축 형식입니다.  
+  다음은 지원되는 원본 형식과 해당 형식의 블록 압축 형식입니다.  
   
 |원래 형식(원본)|압축된 형식(대상)|  
 |------------------------------|------------------------------|  

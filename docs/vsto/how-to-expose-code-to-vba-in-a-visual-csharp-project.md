@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36bdcd7360099818ac8510d9eab87d6d3dc0f0fc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f00f668c3eac9a39251d0a4e19f98ed597c373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873489"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>방법: Visual C# 프로젝트에서 VBA로 코드 노출
   두 가지 유형의 서로 상호 작용 하는 코드를 원하는 경우 Visual C# 프로젝트에서 Visual basic Applications (VBA) 코드에 대 한 코드를 노출할 수 있습니다.  
@@ -39,56 +39,56 @@ ms.locfileid: "35257253"
   
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>에 Visual C# 프로젝트에서 VBA로 코드 노출  
   
-1.  열거나 Word 문서, Excel 통합 문서 또는 Excel 서식 파일 매크로 지원 하 고 이미 포함 하는 VBA 코드를 기반으로 하는 문서 수준 프로젝트를 만듭니다.  
+1. 열거나 Word 문서, Excel 통합 문서 또는 Excel 서식 파일 매크로 지원 하 고 이미 포함 하는 VBA 코드를 기반으로 하는 문서 수준 프로젝트를 만듭니다.  
   
-     매크로 지 원하는 문서 파일 형식에 대 한 자세한 내용은 참조 하세요. [결합 VBA 및 문서 수준 사용자 지정](../vsto/combining-vba-and-document-level-customizations.md)합니다.  
+    매크로 지 원하는 문서 파일 형식에 대 한 자세한 내용은 참조 하세요. [결합 VBA 및 문서 수준 사용자 지정](../vsto/combining-vba-and-document-level-customizations.md)합니다.  
   
-    > [!NOTE]  
-    >  이 기능은 Word 서식 파일 프로젝트에서 사용할 수 없습니다.  
+   > [!NOTE]  
+   >  이 기능은 Word 서식 파일 프로젝트에서 사용할 수 없습니다.  
   
-2.  문서의 VBA 코드는 매크로 사용 하도록 설정 하려면 사용자에 게 확인 하지 않고 실행할 수 있는지 확인 합니다. Word 또는 Excel의 보안 센터 설정에서 신뢰할 수 있는 위치 목록에 Office 프로젝트의 위치를 추가하여 VBA 코드를 실행하도록 신뢰할 수 있습니다.  
+2. 문서의 VBA 코드는 매크로 사용 하도록 설정 하려면 사용자에 게 확인 하지 않고 실행할 수 있는지 확인 합니다. Word 또는 Excel의 보안 센터 설정에서 신뢰할 수 있는 위치 목록에 Office 프로젝트의 위치를 추가하여 VBA 코드를 실행하도록 신뢰할 수 있습니다.  
   
-3.  프로젝트에서 공용 클래스를 VBA에 노출 하려는 멤버를 추가 하 고 새 멤버로 선언 **공용**합니다.  
+3. 프로젝트에서 공용 클래스를 VBA에 노출 하려는 멤버를 추가 하 고 새 멤버로 선언 **공용**합니다.  
   
-4.  다음 적용 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 고 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> VBA에 노출 되는 클래스에 특성입니다. 이러한 특성은 클래스가 COM에 표시되도록 하지만 클래스 인터페이스를 생성하지 않습니다.  
+4. 다음 적용 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 고 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> VBA에 노출 되는 클래스에 특성입니다. 이러한 특성은 클래스가 COM에 표시되도록 하지만 클래스 인터페이스를 생성하지 않습니다.  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    [System.Runtime.InteropServices.ClassInterface(  
-        System.Runtime.InteropServices.ClassInterfaceType.None)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   [System.Runtime.InteropServices.ClassInterface(  
+       System.Runtime.InteropServices.ClassInterfaceType.None)]  
+   ```  
   
-5.  재정의 된 **GetAutomationObject** VBA에 노출할 클래스의 인스턴스를 반환 하기 위해 프로젝트에서 호스트 항목 클래스의 메서드:  
+5. 재정의 된 **GetAutomationObject** VBA에 노출할 클래스의 인스턴스를 반환 하기 위해 프로젝트에서 호스트 항목 클래스의 메서드:  
   
-    -   호스트 항목 클래스를 VBA에 노출할 경우 재정의 **GetAutomationObject** 메서드는이 클래스에 속하며 클래스의 현재 인스턴스를 반환 합니다.  
+   - 호스트 항목 클래스를 VBA에 노출할 경우 재정의 **GetAutomationObject** 메서드는이 클래스에 속하며 클래스의 현재 인스턴스를 반환 합니다.  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return this;  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return this;  
+     }  
+     ```  
   
-    -   VBA에는 호스트 항목이 아닌 클래스를 제공 하는 경우 재정의 **GetAutomationObject** 메서드는 호스트의 프로젝트에서 항목 및 호스트 항목이 아닌 클래스의 인스턴스를 반환 합니다. 예를 들어, 다음 코드를 가정 라는 클래스를 노출할 `DocumentUtilities` VBA에 있습니다.  
+   - VBA에는 호스트 항목이 아닌 클래스를 제공 하는 경우 재정의 **GetAutomationObject** 메서드는 호스트의 프로젝트에서 항목 및 호스트 항목이 아닌 클래스의 인스턴스를 반환 합니다. 예를 들어, 다음 코드를 가정 라는 클래스를 노출할 `DocumentUtilities` VBA에 있습니다.  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return new DocumentUtilities();  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return new DocumentUtilities();  
+     }  
+     ```  
   
      호스트 항목에 대 한 자세한 내용은 참조 하세요. [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
   
-6.  VBA에 노출할 클래스에서 인터페이스를 추출 합니다. 에 **인터페이스 추출** 대화 상자에서 인터페이스 선언에 포함 하려는 공용 멤버를 선택 합니다. 자세한 내용은 [추출 인터페이스 리팩터링](../ide/reference/extract-interface.md)합니다.
+6. VBA에 노출할 클래스에서 인터페이스를 추출 합니다. 에 **인터페이스 추출** 대화 상자에서 인터페이스 선언에 포함 하려는 공용 멤버를 선택 합니다. 자세한 내용은 [추출 인터페이스 리팩터링](../ide/reference/extract-interface.md)합니다.
   
-7.  추가 된 **공용** 키워드를 인터페이스 선언 합니다.  
+7. 추가 된 **공용** 키워드를 인터페이스 선언 합니다.  
   
-8.  다음을 추가 하 여 인터페이스를 COM에 표시 되도록 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 특성을 인터페이스입니다.  
+8. 다음을 추가 하 여 인터페이스를 COM에 표시 되도록 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 특성을 인터페이스입니다.  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   ```  
   
 9. 디자이너에서 문서 (Word 용) 또는 (Excel 용)는 워크시트를 열고 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.  
   

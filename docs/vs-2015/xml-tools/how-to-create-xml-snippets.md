@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fbcb7254ad1cd417b8cdb90c3ea257868ab5a84
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818161"
 ---
 # <a name="how-to-create-xml-snippets"></a>방법: XML 조각 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ XML 편집기를 사용하여 새 XML 조각을 만들 수 있습니다. 이 편
   
  `Code` 요소에는 변수 3개가 포함됩니다.  
   
--   $name$은 사용자 정의 변수입니다. 이 변수는 `name` 요소를 만듭니다. 이 요소는 기본값이 "name"이며 편집 가능한 값을 가집니다. 사용자 정의 변수는 `Literal` 요소를 사용하여 정의합니다.  
+- $name$은 사용자 정의 변수입니다. 이 변수는 `name` 요소를 만듭니다. 이 요소는 기본값이 "name"이며 편집 가능한 값을 가집니다. 사용자 정의 변수는 `Literal` 요소를 사용하여 정의합니다.  
   
--   $selected$는 미리 정의된 변수입니다. 이 변수는 조각을 호출하기 전에 XML 편집기에서 선택한 텍스트를 나타냅니다. 이 변수는 선택한 텍스트를 포함하는 코드 조각에서 이 텍스트가 나타나는 위치를 결정합니다.  
+- $selected$는 미리 정의된 변수입니다. 이 변수는 조각을 호출하기 전에 XML 편집기에서 선택한 텍스트를 나타냅니다. 이 변수는 선택한 텍스트를 포함하는 코드 조각에서 이 텍스트가 나타나는 위치를 결정합니다.  
   
--   $end$는 미리 정의된 변수입니다. Enter 키를 눌러 코드 조각 필드 편집을 마치면 이 변수는 캐럿(^)이 이동되는 위치를 결정합니다.  
+- $end$는 미리 정의된 변수입니다. Enter 키를 눌러 코드 조각 필드 편집을 마치면 이 변수는 캐럿(^)이 이동되는 위치를 결정합니다.  
   
- 위의 `Code` 요소는 다음 XML 텍스트를 삽입합니다.  
+  위의 `Code` 요소는 다음 XML 텍스트를 삽입합니다.  
   
 ```  
 <test>  

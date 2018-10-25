@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674476"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811583"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>게시 마법사 (Visual Studio에서 Office 개발)
   사용 된 **게시 마법사** 솔루션 파일에 지정된 된 위치를 복사 하려면 매니페스트 파일을 만들고 설치 프로그램을 만듭니다.  
@@ -41,13 +41,13 @@ ms.locfileid: "35674476"
   
  부모 디스크 경로, 파일 공유, FTP 사이트 또는 웹 사이트 URL 위치를 입력 하거나 클릭 하는 **찾아보기** 단추 위치를 찾습니다. 이러한 형식의 경로일 수 있습니다.  
   
--   표준에서 상대 또는 절대 경로 Windows 형식으로 *C:\Deploy\MyApplication* 하거나 *\MyApplication*합니다.  
+- 표준에서 상대 또는 절대 경로 Windows 형식으로 *C:\Deploy\MyApplication* 하거나 *\MyApplication*합니다.  
   
--   범용 명명 규칙 (UNC) 경로 같은  *\\\ServerName\MyApplication\\*합니다.  
+- 범용 명명 규칙 (UNC) 경로 같은  *\\\ServerName\MyApplication\\*합니다.  
   
--   URL의 웹 사이트와 같은 http://www.microsoft.com/MyApplication합니다.  
+- URL의 웹 사이트와 같은 http://www.microsoft.com/MyApplication합니다.  
   
- 게시 위치는 기본적으로 *http://localhost/projectname/* IIS가 설치 되어 있는 경우 또는 않은 경우 publish\ 디렉터리 IIS가 설치 되지 합니다.  
+  게시 위치는 기본적으로 *http://localhost/projectname/* IIS가 설치 되어 있는 경우 또는 않은 경우 publish\ 디렉터리 IIS가 설치 되지 합니다.  
   
 > [!NOTE]  
 >  대상 컴퓨터는 Windows Vista를 실행 하는 경우 더 많은 고려 사항이 있습니다. 로컬 게시 옵션을 사용 하려면 Windows Vista 컴퓨터의 관리자 여야 합니다. 또한 기본 위치는 항상을 *게시\\*  IIS가 설치 되어 있는지 여부에 관계 없이 디렉터리입니다.  

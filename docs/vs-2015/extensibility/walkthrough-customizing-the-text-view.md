@@ -15,12 +15,12 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 661c812625856551f2f6c8194fa97e5df21efbaf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8474190b6b140883a43555f5dc35091daecebe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923201"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>연습: 텍스트 뷰 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,26 +52,26 @@ ms.locfileid: "49199045"
   
 ## <a name="defining-the-content-type"></a>콘텐츠 형식 정의  
   
-1.  클래스 파일을 추가하고 이름을 `ViewPropertyModifier`로 지정합니다.  
+1. 클래스 파일을 추가하고 이름을 `ViewPropertyModifier`로 지정합니다.  
   
-2.  다음 추가 `using` 지시문:  
+2. 다음 추가 `using` 지시문:  
   
-     [!code-csharp[VSSDKViewPropertyTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#1)]
-     [!code-vb[VSSDKViewPropertyTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#1)]  
+    [!code-csharp[VSSDKViewPropertyTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#1)]
+    [!code-vb[VSSDKViewPropertyTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#1)]  
   
-3.  이라는 클래스를 선언 `TestViewCreationListener` 에서 상속 되는 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>합니다. 이 클래스는 다음과 같은 특성을 내보냅니다.  
+3. 이라는 클래스를 선언 `TestViewCreationListener` 에서 상속 되는 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>합니다. 이 클래스는 다음과 같은 특성을 내보냅니다.  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 이 수신기가 적용 되는 콘텐츠의 형식을 지정 합니다.  
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 이 수신기가 적용 되는 콘텐츠의 형식을 지정 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 이 수신기의 역할을 지정 합니다.  
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 이 수신기의 역할을 지정 합니다.  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#2)]
      [!code-vb[VSSDKViewPropertyTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#2)]  
   
-4.  이 클래스에서 가져오기는 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>합니다.  
+4. 이 클래스에서 가져오기는 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>합니다.  
   
-     [!code-csharp[VSSDKViewPropertyTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#3)]
-     [!code-vb[VSSDKViewPropertyTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#3)]  
+    [!code-csharp[VSSDKViewPropertyTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#3)]
+    [!code-vb[VSSDKViewPropertyTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#3)]  
   
 ## <a name="changing-the-view-properties"></a>보기 속성 변경  
   

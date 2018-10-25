@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860762"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio의 일반 컨트롤 패턴
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224044"
   
 ##### <a name="visual-style"></a>비주얼 스타일  
   
--   워터 마크 해야 창 내에서 가로 방향으로 가운데에 맞춥니다.  
+- 워터 마크 해야 창 내에서 가로 방향으로 가운데에 맞춥니다.  
   
--   워터 마크 해야 가운데 맞춤 왼쪽 정렬 합니다.  
+- 워터 마크 해야 가운데 맞춤 왼쪽 정렬 합니다.  
   
--   워터 마크 세로로 가운데 되었거나 영역의 위쪽에 배치 합니다. 영역의 위쪽에 있으면 충분 한 공간이 있어야 위의 워터 마크 눈에 띄는 되도록 합니다.  
+- 워터 마크 세로로 가운데 되었거나 영역의 위쪽에 배치 합니다. 영역의 위쪽에 있으면 충분 한 공간이 있어야 위의 워터 마크 눈에 띄는 되도록 합니다.  
   
--   사용 된 `Environment.GrayText` 토큰 및 표준 환경 글꼴 색입니다. 하이퍼링크에는 공유 하는 표준 하이퍼링크 토큰을 사용 해야 합니다: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, 및 `Environment.PanelHyperlinkDisabled`합니다.  
+- 사용 된 `Environment.GrayText` 토큰 및 표준 환경 글꼴 색입니다. 하이퍼링크에는 공유 하는 표준 하이퍼링크 토큰을 사용 해야 합니다: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, 및 `Environment.PanelHyperlinkDisabled`합니다.  
   
--   백그라운드에서 워터 마크를 선택할 수 없습니다.  
+- 백그라운드에서 워터 마크를 선택할 수 없습니다.  
   
--   가능한 경우 시작 메뉴나 워터 마크에 대 한 링크를 포함 합니다.  
+- 가능한 경우 시작 메뉴나 워터 마크에 대 한 링크를 포함 합니다.  
   
- ![디자이너 창에서 텍스트를 워터 마크](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
+  ![디자이너 창에서 텍스트를 워터 마크](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
   
- ![텍스트 도구 창의 워터 마크](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
+  ![텍스트 도구 창의 워터 마크](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
   
- **Visual Studio의 워터 마크 텍스트의 예**  
+  **Visual Studio의 워터 마크 텍스트의 예**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> 단추, 하이퍼링크  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224044"
   
  명령 단추를 사용 하는 경우:  
   
--   기본 명령  
+- 기본 명령  
   
--   보조 명령 된 경우에 입력을 수집 하는 데 사용 되는 windows를 표시 하거나 선택  
+- 보조 명령 된 경우에 입력을 수집 하는 데 사용 되는 windows를 표시 하거나 선택  
   
--   파괴적 이거나 되돌릴 수 없는 작업  
+- 파괴적 이거나 되돌릴 수 없는 작업  
   
--   마법사 페이지 흐름 내에서 커밋 단추  
+- 마법사 페이지 흐름 내에서 커밋 단추  
   
- 도구 창의 명령 단추를 방지 하거나 레이블에 대 한 두 개 이상의 단어를 사용 해야 합니다. 링크에는 긴 레이블을 가질 수 있습니다.  
+  도구 창의 명령 단추를 방지 하거나 레이블에 대 한 두 개 이상의 단어를 사용 해야 합니다. 링크에는 긴 레이블을 가질 수 있습니다.  
   
- 링크를 사용 하는 경우:  
+  링크를 사용 하는 경우:  
   
--   다른 창, 문서 또는 웹 페이지에 대 한 탐색  
+- 다른 창, 문서 또는 웹 페이지에 대 한 탐색  
   
--   긴 레이블 또는 작업의 의도 설명 하는 짧은 문장 해야 하는 상황  
+- 긴 레이블 또는 작업의 의도 설명 하는 짧은 문장 해야 하는 상황  
   
--   단추는 작업은 파괴적 이거나 되돌릴 수 없는 UI를 압도 긴밀 하 게 공간  
+- 단추는 작업은 파괴적 이거나 되돌릴 수 없는 UI를 압도 긴밀 하 게 공간  
   
--   취소가 강조 상황에서는 보조 명령 있는 많은 명령  
+- 취소가 강조 상황에서는 보조 명령 있는 많은 명령  
   
 #### <a name="examples"></a>예제  
  ![다음 상태 메시지 정보 표시줄 명령 링크](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703 01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224044"
   
  짧은 줄임표 전용 단추를 사용 하는 경우:  
   
--   둘 이상의 긴 경우 **[찾아보기...]**  여러 필드 검색에 대 한 허용 되는 경우와 같은 대화 상자에서 단추입니다. 단기 사용 **[...]**  이 상황에서 만든 액세스 키를 혼동 하지 않으려면 각 단추 (**& 찾아보기** 하 고 **B & 찾아보기** 동일한 대화 상자에서).  
+- 둘 이상의 긴 경우 **[찾아보기...]**  여러 필드 검색에 대 한 허용 되는 경우와 같은 대화 상자에서 단추입니다. 단기 사용 **[...]**  이 상황에서 만든 액세스 키를 혼동 하지 않으려면 각 단추 (**& 찾아보기** 하 고 **B & 찾아보기** 동일한 대화 상자에서).  
   
--   긴밀 한 대화 상자에서 또는 긴 단추를 적절 한 장소가 없습니다.  
+- 긴밀 한 대화 상자에서 또는 긴 단추를 적절 한 장소가 없습니다.  
   
--   단추를 표 형태 컨트롤에 표시 합니다.  
+- 단추를 표 형태 컨트롤에 표시 합니다.  
   
- 단추를 사용 하는 것에 대 한 지침:  
+  단추를 사용 하는 것에 대 한 지침:  
   
--   액세스 키를 사용 하지 마세요. 키보드를 사용 하 여 액세스 하려면 사용자는 인접 한 컨트롤에서 탭 해야 합니다. 찾아보기 단추 필드를 채우도록 직후 대체 되도록 탭 순서 인지 확인 합니다. 첫 번째 기간 아래 밑줄을 사용 하지 않습니다.  
+- 액세스 키를 사용 하지 마세요. 키보드를 사용 하 여 액세스 하려면 사용자는 인접 한 컨트롤에서 탭 해야 합니다. 찾아보기 단추 필드를 채우도록 직후 대체 되도록 탭 순서 인지 확인 합니다. 첫 번째 기간 아래 밑줄을 사용 하지 않습니다.  
   
--   활성 MSAA (Microsoft Accessibility)를 설정 **이름을** 속성을 **찾아보기...**  (줄임표) 포함 하므로 화면 판독기 읽기 "찾아보기"가 "점선-점선-점선" 또는 "기간-기간별."로 관리 되는 컨트롤에 대 한이 설정을 의미 합니다 **AccessibleName** 속성.  
+- 활성 MSAA (Microsoft Accessibility)를 설정 **이름을** 속성을 **찾아보기...**  (줄임표) 포함 하므로 화면 판독기 읽기 "찾아보기"가 "점선-점선-점선" 또는 "기간-기간별."로 관리 되는 컨트롤에 대 한이 설정을 의미 합니다 **AccessibleName** 속성.  
   
--   줄임표를 사용해 서는 안 **[...]**  찾아보기 동작을 제외한 항목에 대 한 단추입니다. 예를 들어, 필요한 경우는 **[새로 만들기...]**  단추 하지만 대화 상자를 다시 디자인 해야 합니다. 그런 다음 텍스트에 대해 충분 한 공간이 없는 합니다.  
+- 줄임표를 사용해 서는 안 **[...]**  찾아보기 동작을 제외한 항목에 대 한 단추입니다. 예를 들어, 필요한 경우는 **[새로 만들기...]**  단추 하지만 대화 상자를 다시 디자인 해야 합니다. 그런 다음 텍스트에 대해 충분 한 공간이 없는 합니다.  
   
 ##### <a name="sizing-and-spacing"></a>크기 조정 및 간격  
  ![크기 조정 &#91;찾아보기... &#93; 단추](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703 06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224044"
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (트리 보기 및 그리드 보기)  
  Trid 컨트롤은 grid에서 트리 뷰를 포함 하는 복잡 한 제어 합니다. 확장, 축소 및 트리를 탐색한 다음 내용을 추가 하 여 트리 뷰로 동일한 키보드 명령을 따라야 합니다.  
   
--   **오른쪽 화살표:** 노드를 확장 합니다. 노드가 확장 된 후 지속 되는 가장 가까운 열 오른쪽으로 이동 합니다. 행의 끝에서 탐색 중지 해야 합니다.  
+- **오른쪽 화살표:** 노드를 확장 합니다. 노드가 확장 된 후 지속 되는 가장 가까운 열 오른쪽으로 이동 합니다. 행의 끝에서 탐색 중지 해야 합니다.  
   
--   **탭:** Navigates 가장 가까운 셀 오른쪽에 있습니다.  행의 끝을 탐색 다음 행으로 계속 됩니다.  
+- **탭:** Navigates 가장 가까운 셀 오른쪽에 있습니다.  행의 끝을 탐색 다음 행으로 계속 됩니다.  
   
--   **Shift + Tab:** Navigates 가장 가까운 셀 왼쪽에 있습니다.  행의 부분을 탐색 이전 행의 오른쪽에 있는 셀을 계속합니다.  
+- **Shift + Tab:** Navigates 가장 가까운 셀 왼쪽에 있습니다.  행의 부분을 탐색 이전 행의 오른쪽에 있는 셀을 계속합니다.  
   
- ![Visual Studio의 Trid 컨트롤](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
+  ![Visual Studio의 Trid 컨트롤](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
   
- **Visual Studio의 trid 컨트롤**
+  **Visual Studio의 trid 컨트롤**
 

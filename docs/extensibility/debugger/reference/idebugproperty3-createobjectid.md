@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df4e45c442745652b3305fd91146bd31ffe79e4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1514c21345356bbece6680b9ccd212d15dbfa191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920978"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 다른 모든 속성 간에 고유한 지 확인 하려면이 속성에 대 한 고유 ID를 만듭니다.  
@@ -38,15 +38,15 @@ int CreateObjectID();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 디버그 세션 관리자가 다른 모든 속성과 함께이 속성은 고유 하 게 식별 하 고 있는지 확인 하려고 할 때 호출 됩니다. 디버그 엔진 (DE) 대처 속성 이미 고유 하 게 식별 하지 않는 한이 메서드를 지원 합니다. 반환 된 DE이이 메서드를 지원 하지 않는 경우 `E_NOTIMPL`합니다.  
+ 이 메서드는 세션 디버그 관리자에서 다른 모든 속성과 함께이 속성은 고유 하 게 식별 하 고 있는지 확인 하려고 할 때 호출 됩니다. 디버그 엔진 (DE) 다룹니다 속성은 이미 고유 하 게 식별 하는 경우가 아니면이 메서드를 지원 합니다. 반환 하는 경우에 DE이이 메서드를 지원 하지 않습니다, `E_NOTIMPL`합니다.  
   
- 모든 고유 ID를 사용 하 여 만든 `CreateObjectID` 때 소멸 되는 [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) 메서드는;이 끝났음을 신호로 보냅니다.이 속성을 고유 하 게 식별 하는 데 필요 합니다.  
+ 모든 고유 ID 사용 하 여 만든 `CreateObjectID` 때 소멸 되는 [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) 메서드는;이 또한 끝난 것이 속성을 고유 하 게 식별 해야 합니다.  
   
 > [!NOTE]
->  메서드가 DE의 고유 id가 무엇이 든 수행할 수 있도록이 고유 ID를 검색할 수 없는 경우는 `CreateObjectID` 메서드를 호출 합니다.  
+>  DE 고유 Id에 대 한 원하는 모든 작업을 수행할 수 있도록이 고유 ID를 검색할 방법이 없습니다 경우는 `CreateObjectID` 메서드가 호출 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   

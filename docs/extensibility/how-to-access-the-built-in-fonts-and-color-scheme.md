@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911254"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>방법: 기본 제공 글꼴을 액세스 및 ccheme 색
 Visual Studio 통합된 개발 환경 (IDE) 편집기 창과 사용 하 여 연결 된 글꼴 및 색 구성표를 있습니다. 이 체계를 통해 액세스할 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 인터페이스입니다.
 
  기본 제공 글꼴 및 색 구성표를 사용 하려면 VSPackage 수행 해야 합니다.
 
--   기본 글꼴 및 색 서비스를 사용 하는 범주를 정의 합니다.
+- 기본 글꼴 및 색 서비스를 사용 하는 범주를 정의 합니다.
 
--   기본 글꼴 및 색 서버를 사용 하 여 범주를 등록 합니다.
+- 기본 글꼴 및 색 서버를 사용 하 여 범주를 등록 합니다.
 
--   특정 창에서는 기본 제공 항목 및 범주를 사용 하 여 IDE를 권장 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> 인터페이스입니다.
+- 특정 창에서는 기본 제공 항목 및 범주를 사용 하 여 IDE를 권장 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> 인터페이스입니다.
 
- IDE 창에 결과 범주를 사용합니다. 범주 이름이 표시 됩니다는 **설정 표시:** 드롭다운 목록 상자에는 **글꼴 및 색** 속성 페이지.
+  IDE 창에 결과 범주를 사용합니다. 범주 이름이 표시 됩니다는 **설정 표시:** 드롭다운 목록 상자에는 **글꼴 및 색** 속성 페이지.
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>기본 제공 글꼴 및 색을 사용 하 여 범주를 정의 하려면
 
@@ -58,7 +58,7 @@ Visual Studio 통합된 개발 환경 (IDE) 편집기 창과 사용 하 여 연�
 
 2.  4 개의 값이 포함 된 스톡 글꼴 및 색 구성표를 사용 하도록 레지스트리를를 채웁니다.
 
-    |name|형식|데이터|설명|
+    |이름|형식|데이터|설명|
     |----------|----------|----------|-----------------|
     |범주|REG_SZ|GUID|스톡 글꼴 및 색 구성표를 포함 하는 범주를 식별 하는 임의의 GUID입니다.|
     |패키지|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 이 GUID는 기본 글꼴 및 색 구성을 사용 하는 모든 Vspackage에서 사용 됩니다.|
@@ -67,19 +67,19 @@ Visual Studio 통합된 개발 환경 (IDE) 편집기 창과 사용 하 여 연�
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>시스템 제공 글꼴 및 색 사용을 시작 하려면
 
-1.  인스턴스를 만듭니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> 창의 구현과 초기화의 일부로 인터페이스입니다.
+1. 인스턴스를 만듭니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> 창의 구현과 초기화의 일부로 인터페이스입니다.
 
-2.  호출을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> 의 인스턴스를 가져올 방법 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> 현재 해당 인터페이스 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 인스턴스.
+2. 호출을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> 의 인스턴스를 가져올 방법 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> 현재 해당 인터페이스 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 인스턴스.
 
-3.  호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> 두 번입니다.
+3. 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> 두 번입니다.
 
-    -   사용 하 여 한 번 호출 `VSEDITPROPID_ViewGeneral_ColorCategory`인수로 합니다.
+   - 사용 하 여 한 번 호출 `VSEDITPROPID_ViewGeneral_ColorCategory`인수로 합니다.
 
-    -   사용 하 여 한 번 호출 `VSEDITPROPID_ViewGeneral_FontCategory` 인수로 합니다.
+   - 사용 하 여 한 번 호출 `VSEDITPROPID_ViewGeneral_FontCategory` 인수로 합니다.
 
      이 설정 하 고 창의 속성으로는 기본 글꼴 및 색 서비스를 제공 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 기본 제공 글꼴 및 색 사용을 시작합니다.
 
 ```cpp

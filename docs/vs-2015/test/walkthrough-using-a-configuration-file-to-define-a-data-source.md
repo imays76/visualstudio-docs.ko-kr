@@ -17,12 +17,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843043"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 통한 데이터 소스 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ ms.locfileid: "49253008"
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>app.config 파일에 사용자 지정 구성 섹션을 추가하려면  
   
-1.  app.config의 루트 요소는 `configuration` 요소여야 합니다. `configuration` 요소 내에 `configSections` 요소를 만듭니다. `configSections`는 app.config 파일의 첫 번째 요소여야 합니다.  
+1. app.config의 루트 요소는 `configuration` 요소여야 합니다. `configuration` 요소 내에 `configSections` 요소를 만듭니다. `configSections`는 app.config 파일의 첫 번째 요소여야 합니다.  
   
-2.  `configSections` 요소 내에 `section` 요소를 만듭니다.  
+2. `configSections` 요소 내에 `section` 요소를 만듭니다.  
   
-3.  `section` 요소에서 `name`이라는 특성을 추가하고 여기에 `microsoft.visualstudio.testtools` 값을 할당합니다. `type`이라는 다른 특성을 추가하고 여기에 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` 값을 할당합니다.  
+3. `section` 요소에서 `name`이라는 특성을 추가하고 여기에 `microsoft.visualstudio.testtools` 값을 할당합니다. `type`이라는 다른 특성을 추가하고 여기에 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` 값을 할당합니다.  
   
- `section` 요소는 다음과 유사하게 표시됩니다.  
+   `section` 요소는 다음과 유사하게 표시됩니다.  
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -117,15 +117,15 @@ ms.locfileid: "49253008"
 ## <a name="define-data-sources"></a>데이터 원본 정의  
  데이터 원본 섹션에는 테스트 엔진이 데이터 원본에서 데이터를 검색할 때 사용하는 4개의 특성이 포함되어 있습니다.  
   
--   `name`은 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>가 사용할 데이터 원본을 지정하는 데 사용하는 ID를 정의합니다.  
+- `name`은 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>가 사용할 데이터 원본을 지정하는 데 사용하는 ID를 정의합니다.  
   
--   `connectionString`은 이전 연결 문자열 정의 섹션에서 만든 연결 문자열을 식별합니다.  
+- `connectionString`은 이전 연결 문자열 정의 섹션에서 만든 연결 문자열을 식별합니다.  
   
--   `dataTableName`은 테스트에 사용할 데이터가 들어 있는 테이블 또는 시트를 정의합니다.  
+- `dataTableName`은 테스트에 사용할 데이터가 들어 있는 테이블 또는 시트를 정의합니다.  
   
--   `dataAccessMethod`는 데이터 원본에 있는 데이터 값에 액세스하는 기술을 정의합니다.  
+- `dataAccessMethod`는 데이터 원본에 있는 데이터 값에 액세스하는 기술을 정의합니다.  
   
- 이 섹션에서는 단위 테스트에 사용할 두 개의 데이터 원본을 정의합니다.  
+  이 섹션에서는 단위 테스트에 사용할 두 개의 데이터 원본을 정의합니다.  
   
 #### <a name="to-define-data-sources"></a>데이터 원본을 정의하려면  
   

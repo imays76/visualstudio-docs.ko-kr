@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925737"
 ---
 # <a name="msbuild-targets"></a>MSBuild 대상
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ ms.locfileid: "49288682"
 ## <a name="target-build-order"></a>대상 빌드 순서  
  단일 대상에 대한 입력이 다른 대상의 출력을 사용하는 경우에는 대상의 순서를 지정해야 합니다. 대상 실행의 순서를 지정하는 방법은 여러 가지가 있습니다.  
   
--   초기 대상  
+- 초기 대상  
   
--   기본 대상  
+- 기본 대상  
   
--   첫 번째 대상  
+- 첫 번째 대상  
   
--   대상 종속성  
+- 대상 종속성  
   
--   `BeforeTargets` 및 `AfterTargets`(MSBuild 4.0)  
+- `BeforeTargets` 및 `AfterTargets`(MSBuild 4.0)  
   
- 대상은 빌드의 후속 대상이 종속되더라도 단일 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되면 빌드 내에서 해당 대상의 역할은 완료됩니다.  
+  대상은 빌드의 후속 대상이 종속되더라도 단일 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되면 빌드 내에서 해당 대상의 역할은 완료됩니다.  
   
- 대상 빌드 순서에 대한 세부 내용 및 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.  
+  대상 빌드 순서에 대한 세부 내용 및 자세한 내용은 [대상 빌드 순서](../msbuild/target-build-order.md)를 참조하세요.  
   
 ## <a name="target-batching"></a>대상 일괄 처리  
  대상 요소에는 %(메타데이터) 형식에서 메타데이터를 지정하는 `Outputs` 특성이 있을 수 있습니다. 이 경우 MSBuild는 해당 메타데이터 값을 가진 항목을 그룹화 또는 "일괄 처리"하여 각 고유 메타데이터 값에 대해 한 번씩 대상을 실행합니다. 예를 들면 다음과 같습니다.  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289a1f7e2802fcf8187f74ec803af71cfb4a6bc0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ceee9edae9a4cc36e08d3692bea17b288d44c862
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920549"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
-프로그램에서 사용 되는 메모리 바이트 수를 검색 합니다.  
+프로그램에서 차지한 메모리 바이트를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,10 +44,10 @@ int GetMemoryBytes(
  [out] 반환 된 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 프로그램의 메모리 바이트를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 메모리 바이트 수로 표현 되는 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 개체는 메모리와 내보내지 할당 된 메모리를 프로그램이 실행 될 때에 프로그램의 이미지에 대 한 합니다.  
+ 에 표시 된 대로 메모리 바이트는 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 개체가 메모리에 프로그램이 실행 될 때 할당 된 메모리가 아닌 프로그램의 이미지에 대 한 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

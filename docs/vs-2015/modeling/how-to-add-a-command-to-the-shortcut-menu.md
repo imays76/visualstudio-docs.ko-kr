@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8230b8d37e0a853b22ac58fe1701a98728e41d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7d15c1991ee70a0b1a163c8968e42fe450b7919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833523"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49246904"
   
  요약하자면 DslPackage 프로젝트에서 다음과 같은 단계를 수행합니다.  
   
-1.  [Commands.vsct에서 명령을 선언 합니다.](#VSCT)  
+1. [Commands.vsct에서 명령을 선언 합니다.](#VSCT)  
   
-2.  [Package.tt에서 패키지 버전 번호를 업데이트](#version)합니다. Commands.vsct를 변경할 때마다 이 작업을 수행해야 합니다.  
+2. [Package.tt에서 패키지 버전 번호를 업데이트](#version)합니다. Commands.vsct를 변경할 때마다 이 작업을 수행해야 합니다.  
   
-3.  [CommandSet class에서 메서드를 작성](#CommandSet) 메뉴가 표시 되도록 하는 데 수행할 명령은 수행할 동작을 정의 합니다.  
+3. [CommandSet class에서 메서드를 작성](#CommandSet) 메뉴가 표시 되도록 하는 데 수행할 명령은 수행할 동작을 정의 합니다.  
   
- 샘플에 대 한 참조를 [Visualization and Modeling SDK 웹 사이트](http://go.microsoft.com/fwlink/?LinkID=185579)합니다.  
+   샘플에 대 한 참조를 [Visualization and Modeling SDK 웹 사이트](http://go.microsoft.com/fwlink/?LinkID=185579)합니다.  
   
 > [!NOTE]
 >  CommandSet.cs의 메서드를 재정의하여 잘라내기, 붙여넣기, 모두 선택, 인쇄 등의 몇 가지 기존 명령 동작도 수정할 수 있습니다. 자세한 내용은 [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)합니다.  
@@ -45,15 +45,15 @@ ms.locfileid: "49246904"
   
  다음과 같은 경우 이 항목에서 소개하는 메서드를 사용합니다.  
   
-1.  오른쪽 클릭 바로 가기 메뉴 이외의 메뉴 명령을 메뉴에 정의하려는 경우  
+1. 오른쪽 클릭 바로 가기 메뉴 이외의 메뉴 명령을 메뉴에 정의하려는 경우  
   
-2.  메뉴에서 특정 명령 그룹을 정의하려는 경우  
+2. 메뉴에서 특정 명령 그룹을 정의하려는 경우  
   
-3.  다른 사용자가 고유한 명령으로 DSL을 확장하지 못하도록 지정하려는 경우  
+3. 다른 사용자가 고유한 명령으로 DSL을 확장하지 못하도록 지정하려는 경우  
   
-4.  명령을 하나만 정의하려는 경우  
+4. 명령을 하나만 정의하려는 경우  
   
- 그 외의 경우에는 MEF 메서드를 사용하여 명령을 정의하는 것이 좋습니다. 자세한 내용은 [MEF를 사용 하 여 DSL 확장](../modeling/extend-your-dsl-by-using-mef.md)합니다.  
+   그 외의 경우에는 MEF 메서드를 사용하여 명령을 정의하는 것이 좋습니다. 자세한 내용은 [MEF를 사용 하 여 DSL 확장](../modeling/extend-your-dsl-by-using-mef.md)합니다.  
   
 ##  <a name="VSCT"></a> Commands.Vsct에서 명령을 선언 합니다.  
  DslPackage\Commands.vsct에서 메뉴 명령을 선언합니다. 이러한 정의는 메뉴 항목의 레이블 및 메뉴에서 항목이 표시되는 위치를 지정합니다.  
@@ -226,21 +226,21 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
  OnStatus 메서드에서는 다음 코드 조각이 유용하게 사용되는 경우가 많습니다.  
   
--   `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.  
+- `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.  
   
--   `this.IsDiagramSelected()` - `true` 사용자가 다이어그램의 빈 부분입니다.  
+- `this.IsDiagramSelected()` - `true` 사용자가 다이어그램의 빈 부분입니다.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - 사용자가 여러 개체를 선택하지 않은 경우입니다.  
+- `this.IsSingleSelection()` - 사용자가 여러 개체를 선택하지 않은 경우입니다.  
   
--   `this.SingleSelection` - 사용자가 마우스 오른쪽 단추로 클릭한 모양이나 다이어그램입니다.  
+- `this.SingleSelection` - 사용자가 마우스 오른쪽 단추로 클릭한 모양이나 다이어그램입니다.  
   
--   `shape.ModelElement as MyLanguageElement` - 모양이 나타내는 모델 요소입니다.  
+- `shape.ModelElement as MyLanguageElement` - 모양이 나타내는 모델 요소입니다.  
   
- 일반적으로는 선택한 항목에 따라 `Visible` 속성이 설정되고 선택한 요소의 상태에 따라 `Enabled` 속성이 설정되도록 지정합니다.  
+  일반적으로는 선택한 항목에 따라 `Visible` 속성이 설정되고 선택한 요소의 상태에 따라 `Enabled` 속성이 설정되도록 지정합니다.  
   
- OnStatus 메서드가 Store의 상태를 변경해서는 안 됩니다.  
+  OnStatus 메서드가 Store의 상태를 변경해서는 안 됩니다.  
   
 ### <a name="define-what-the-command-does"></a>명령을 통해 수행할 작업 정의  
  각 명령에 대해 사용자가 메뉴 명령을 클릭하면 필요한 작업을 수행하는 `OnMenu...` 메서드를 정의합니다.  
@@ -338,29 +338,29 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>문제 해결  
  **명령 메뉴에 나타나지 않습니다.**  
   
--   DSL 패키지를 설치할 때까지 명령은 Visual Studio의 디버깅 인스턴스에만 표시됩니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.  
+- DSL 패키지를 설치할 때까지 명령은 Visual Studio의 디버깅 인스턴스에만 표시됩니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.  
   
--   실험적 샘플에서 이 DSL의 파일 이름 확장명이 정확한지 확인합니다. 파일 이름 확장명을 확인하려면 Visual Studio 주 인스턴스에서 DslDefinition.dsl을 엽니다. 그런 다음 DSL 탐색기에서 편집기 노드를 마우스 오른쪽 단추로 클릭하고 속성을 클릭합니다. 속성 창에서 FileExtension 속성을 점검합니다.  
+- 실험적 샘플에서 이 DSL의 파일 이름 확장명이 정확한지 확인합니다. 파일 이름 확장명을 확인하려면 Visual Studio 주 인스턴스에서 DslDefinition.dsl을 엽니다. 그런 다음 DSL 탐색기에서 편집기 노드를 마우스 오른쪽 단추로 클릭하고 속성을 클릭합니다. 속성 창에서 FileExtension 속성을 점검합니다.  
   
--   했습니까 [패키지 버전 번호를 하나씩 늘립니다](#version)?  
+- 했습니까 [패키지 버전 번호를 하나씩 늘립니다](#version)?  
   
--   OnStatus 메서드 시작 부분에 중단점을 설정합니다. 그러면 다이어그램의 아무 곳이나 마우스 오른쪽 단추로 클릭할 때 메서드가 중단되어야 합니다.  
+- OnStatus 메서드 시작 부분에 중단점을 설정합니다. 그러면 다이어그램의 아무 곳이나 마우스 오른쪽 단추로 클릭할 때 메서드가 중단되어야 합니다.  
   
-     **OnStatus 메서드가 호출 되지 않습니다**:  
+   **OnStatus 메서드가 호출 되지 않습니다**:  
   
-    -   CommandSet 코드의 GUID 및 ID가 Commands.vsct의 Symbols 섹션에 포함된 GUID 및 ID와 일치하는지 확인합니다.  
+  -   CommandSet 코드의 GUID 및 ID가 Commands.vsct의 Symbols 섹션에 포함된 GUID 및 ID와 일치하는지 확인합니다.  
   
-    -   Commands.vsct에서 모든 Parent 노드의 GUID 및 ID가 올바른 부모 그룹을 식별하는지 확인합니다.  
+  -   Commands.vsct에서 모든 Parent 노드의 GUID 및 ID가 올바른 부모 그룹을 식별하는지 확인합니다.  
   
-    -   Visual Studio 명령 프롬프트에서 devenv /rootsuffix exp /setup을 입력합니다. 그런 다음 Visual Studio 디버깅 인스턴스를 다시 시작합니다.  
+  -   Visual Studio 명령 프롬프트에서 devenv /rootsuffix exp /setup을 입력합니다. 그런 다음 Visual Studio 디버깅 인스턴스를 다시 시작합니다.  
   
--   OnStatus 메서드를 단계별로 실행하여 command.Visible 및 command.Enabled가 true로 설정되는지 확인합니다.  
+- OnStatus 메서드를 단계별로 실행하여 command.Visible 및 command.Enabled가 true로 설정되는지 확인합니다.  
   
- **잘못 된 메뉴 텍스트가 표시 되거나 명령이 잘못 된 위치에 표시**:  
+  **잘못 된 메뉴 텍스트가 표시 되거나 명령이 잘못 된 위치에 표시**:  
   
--   GUID 및 ID 조합이 해당 명령에 대해 고유한지 확인합니다.  
+- GUID 및 ID 조합이 해당 명령에 대해 고유한지 확인합니다.  
   
--   이전 버전 패키지를 제거했는지 확인합니다.  
+- 이전 버전 패키지를 제거했는지 확인합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [도메인별 언어 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)   

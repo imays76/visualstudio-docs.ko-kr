@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ecff270a07d9f10c2a7df150989813179e58f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 64c031647382ccb9b4136fdd97d5cb60fc41997b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882374"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
-디버거에서 로드 공용 언어 런타임 (CLR)를 경로 설정 합니다.  
+CLR (공용 언어 런타임) 디버거에서 로드 경로 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,10 +43,10 @@ int SetCorPath(
  [in] 디버거에서 로드 된 CLR에 대 한 경로입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **ExpressionEvaluatorPackage** 공개 하는 개체는 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **ExpressionEvaluatorPackage** 노출 하는 개체를 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) 인터페이스입니다.  
   
 ```cpp  
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)  

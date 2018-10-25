@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891481"
 ---
 # <a name="insert-new-records-into-a-database"></a>데이터베이스에 새 레코드 삽입
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ ms.locfileid: "49297403"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>TableAdapter.Update 메서드를 사용 하 여 데이터베이스에 새 레코드를 삽입 하려면  
   
-1.  원하는에 새 레코드를 추가 <xref:System.Data.DataTable> 새 <xref:System.Data.DataRow> 에 추가 하 여 <xref:System.Data.DataTable.Rows%2A> 컬렉션입니다. 자세한 내용은 [방법: DataTable에 행 추가](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)합니다.  
+1. 원하는에 새 레코드를 추가 <xref:System.Data.DataTable> 새 <xref:System.Data.DataRow> 에 추가 하 여 <xref:System.Data.DataTable.Rows%2A> 컬렉션입니다. 자세한 내용은 [방법: DataTable에 행 추가](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)합니다.  
   
-2.  새 행에 추가 된 후의 <xref:System.Data.DataTable>를 호출 합니다 `TableAdapter.Update` 메서드. 전체에서 전달 하 여 업데이트 하는 데이터의 양을 제어할 수 있습니다 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, 배열을 <xref:System.Data.DataRow>s, 단일 <xref:System.Data.DataRow>합니다.  
+2. 새 행에 추가 된 후의 <xref:System.Data.DataTable>를 호출 합니다 `TableAdapter.Update` 메서드. 전체에서 전달 하 여 업데이트 하는 데이터의 양을 제어할 수 있습니다 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, 배열을 <xref:System.Data.DataRow>s, 단일 <xref:System.Data.DataRow>합니다.  
   
-     다음 코드는 새 레코드를 추가 하는 방법을 보여 줍니다는 <xref:System.Data.DataTable> 호출을 `TableAdapter.Update` 데이터베이스에 새 행을 저장 하는 방법입니다. (이 예제에서는 `Region` Northwind 데이터베이스의 테이블입니다.)  
+    다음 코드는 새 레코드를 추가 하는 방법을 보여 줍니다는 <xref:System.Data.DataTable> 호출을 `TableAdapter.Update` 데이터베이스에 새 행을 저장 하는 방법입니다. (이 예제에서는 `Region` Northwind 데이터베이스의 테이블입니다.)  
   
-     [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
-     [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
+    [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
+    [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
   
- 개체를 사용 하 여 데이터를 저장 하는 응용 프로그램을 사용할 수 있습니다는 `TableAdapter.Insert` 데이터베이스에 직접 새 행을 만드는 방법. `Insert` 메서드 매개 변수로 각 열에 대 한 개별 값을 받아들입니다. 데이터베이스에 전달 되는 매개 변수 값을 사용 하 여 새 레코드를 삽입 메서드를 호출 합니다.  
+   개체를 사용 하 여 데이터를 저장 하는 응용 프로그램을 사용할 수 있습니다는 `TableAdapter.Insert` 데이터베이스에 직접 새 행을 만드는 방법. `Insert` 메서드 매개 변수로 각 열에 대 한 개별 값을 받아들입니다. 데이터베이스에 전달 되는 매개 변수 값을 사용 하 여 새 레코드를 삽입 메서드를 호출 합니다.  
   
- 다음 절차에서는 `Region` 예를 들어 Northwind 데이터베이스의 테이블입니다.  
+   다음 절차에서는 `Region` 예를 들어 Northwind 데이터베이스의 테이블입니다.  
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>TableAdapter.Insert 메서드를 사용 하 여 데이터베이스에 새 레코드를 삽입 하려면  
   

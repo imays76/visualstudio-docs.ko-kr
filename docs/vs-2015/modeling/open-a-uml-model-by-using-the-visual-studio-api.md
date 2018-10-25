@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e92ece9a8097071c8d8cef5b77ca9fdb242d677f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14fa94779fc8d849bbfdb9176fdc94049078c674
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920217"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Visual Studio API를 사용하여 UML 모델 열기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,27 +35,27 @@ API를 사용하여 Visual Studio 사용자 인터페이스에서 모델 및 다
 ##  <a name="Showing"></a> Visual Studio에서 모델 및 다이어그램 열기  
  사용자 인터페이스에서 모델을 열려면 표준 Visual Studio API `EnvDTE.DTE`를 사용합니다. 모델링 프로젝트 항목에 대해 수행할 수 있는 두 가지 유용한 캐스트가 있습니다.  
   
--   프로젝트가 모델링 프로젝트이고 프로젝트가 현재 AppDomain에 로드된 경우 `EnvDTE.Project`와 `IModelingProject` 간에 캐스팅할 수 있습니다.  
+- 프로젝트가 모델링 프로젝트이고 프로젝트가 현재 AppDomain에 로드된 경우 `EnvDTE.Project`와 `IModelingProject` 간에 캐스팅할 수 있습니다.  
   
--   항목이 UML 다이어그램인 경우 `EnvDTE.ProjectItem`과 `IDiagramContext` 간에 캐스팅할 수 있습니다.  
+- 항목이 UML 다이어그램인 경우 `EnvDTE.ProjectItem`과 `IDiagramContext` 간에 캐스팅할 수 있습니다.  
   
- 다음 예제에서는 프로젝트가 아래 참조를 가져와야 합니다.  
+  다음 예제에서는 프로젝트가 아래 참조를 가져와야 합니다.  
   
--   EnvDTE  
+- EnvDTE  
   
--   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+- Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
--   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
--   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
--   Microsoft.VisualStudio.Shell.Immutable.[version]  
+- Microsoft.VisualStudio.Shell.Immutable.[version]  
   
--   Microsoft.VisualStudio.Uml.Interfaces  
+- Microsoft.VisualStudio.Uml.Interfaces  
   
--   System.ComponentModel.Composition  
+- System.ComponentModel.Composition  
   
- 이 예제에서는 Visual Studio에서 UML 모델을 엽니다.  
+  이 예제에서는 Visual Studio에서 UML 모델을 엽니다.  
   
 ```  
 using EnvDTE; // Visual Studio API for loading diagrams  

@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869056"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>연습: 밝은 전구 추천 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ ms.locfileid: "49252501"
   
  Visual C# 및 Visual Basic 편집기에서 작성 하 고 자동으로 전구를 표시 하는 작업을 사용 하 여 사용자 고유의 코드 분석기 패키지는.NET 컴파일러 플랫폼 ("Roslyn")을 사용할 수 있습니다. 자세한 내용은 다음을 참조하세요.  
   
--   [방법: C# 진단 및 코드 수정을 작성합니다](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [방법: C# 진단 및 코드 수정을 작성합니다](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [방법: Visual Basic 진단 및 코드 수정을 작성합니다](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [방법: Visual Basic 진단 및 코드 수정을 작성합니다](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- C + +와 같은 다른 언어 밖에 light bulbs 함수의 스텁 구현을 만들 하려면 같은 일부 빠른 작업에도 제공 합니다.  
+  C + +와 같은 다른 언어 밖에 light bulbs 함수의 스텁 구현을 만들 하려면 같은 일부 빠른 작업에도 제공 합니다.  
   
- 전구의 모양은 다음과 같습니다. Visual Basic 또는 Visual C# 프로젝트에서 사용할 수 없는 경우 변수 이름으로 빨간색 물결선이 나타납니다. 잘못 된 식별자 위로 마우스를 이동할 때 커서 주위 전구가 표시 됩니다.  
+  전구의 모양은 다음과 같습니다. Visual Basic 또는 Visual C# 프로젝트에서 사용할 수 없는 경우 변수 이름으로 빨간색 물결선이 나타납니다. 잘못 된 식별자 위로 마우스를 이동할 때 커서 주위 전구가 표시 됩니다.  
   
- ![전구](../extensibility/media/lightbulb.png "전구")  
+  ![전구](../extensibility/media/lightbulb.png "전구")  
   
- 전구에서 아래쪽 화살표를 클릭 하면 선택한 작업의 미리 보기와 함께 제안 된 작업 집합이 표시 됩니다. 이 경우 작업을 실행 하는 경우 코드에 적용 될 변경 내용을 보여 줍니다.  
+  전구에서 아래쪽 화살표를 클릭 하면 선택한 작업의 미리 보기와 함께 제안 된 작업 집합이 표시 됩니다. 이 경우 작업을 실행 하는 경우 코드에 적용 될 변경 내용을 보여 줍니다.  
   
- ![전구 미리 보기](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![전구 미리 보기](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- 사용자 고유의 제안 된 작업을 제공 하도록 전구를 사용할 수 있습니다. 예를 들어, 새 줄에 중괄호를 열고 이동 하거나 이전 줄의 끝에 이동 하는 작업을 제공할 수 있습니다. 다음 연습에는 현재 단어에 표시 되는 밝은 전구를 만드는 방법을 보여 줍니다 및 두 개의 제안 동작: **대문자로 변환할** 하 고 **소문자로 변환할**합니다.  
+  사용자 고유의 제안 된 작업을 제공 하도록 전구를 사용할 수 있습니다. 예를 들어, 새 줄에 중괄호를 열고 이동 하거나 이전 줄의 끝에 이동 하는 작업을 제공할 수 있습니다. 다음 연습에는 현재 단어에 표시 되는 밝은 전구를 만드는 방법을 보여 줍니다 및 두 개의 제안 동작: **대문자로 변환할** 하 고 **소문자로 변환할**합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  

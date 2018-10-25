@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58adde57c6de49a4abb0456ba5c80df27a45b069
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 716f2b13758864d5eda449967990f9e5be399a9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822844"
 ---
 # <a name="if-activity-designer"></a>If 활동 디자이너
 
@@ -28,13 +28,13 @@ ms.locfileid: "31971210"
 다음 표에서는 가장 유용한 <xref:System.Activities.Statements.If> 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.If.Condition%2A>|True|실행할 자식 활동을 결정하는 조건입니다. 설정 하는 <xref:System.Activities.Statements.If.Condition%2A>, Visual Basic 식을 입력는 **조건** 상자에 **경우** 활동 디자이너나 속성 표의 합니다.|
-|<xref:System.Activities.Statements.If.Else%2A>|False|경우에 실행할 활동은 <xref:System.Activities.Statements.If.Condition%2A> 은 **false**합니다. 실행 되는 활동을 추가 하려면는 <xref:System.Activities.Statements.If.Else%2A> 분기에서 활동을 drop는 **도구 상자** 에 **Else** 상자에 **경우** 힌트 텍스트를 사용 하 여 활동 디자이너 " 여기에 작업 놓기 "입니다.|
-|<xref:System.Activities.Statements.If.Then%2A>|False|경우에 실행할 활동은 <xref:System.Activities.Statements.If.Condition%2A> 은 **true**합니다. 실행 되는 활동을 추가 하려면는 <xref:System.Activities.Statements.If.Then%2A> 분기에서 활동을 drop는 **도구 상자** 에 **다음** 상자에 **경우** 힌트 텍스트를 사용 하 여 활동 디자이너 " 여기에 작업 놓기 "입니다.|
+|-|--------------|-|
+|<xref:System.Activities.Statements.If.Condition%2A>|True|실행할 자식 활동을 결정하는 조건입니다. 설정 하는 <xref:System.Activities.Statements.If.Condition%2A>, Visual Basic 식을 입력 합니다 **조건** 상자에 **경우** 활동 디자이너나 속성 표의.|
+|<xref:System.Activities.Statements.If.Else%2A>|False|경우에 실행할 활동입니다 합니다 <xref:System.Activities.Statements.If.Condition%2A> 됩니다 **false**합니다. 실행 되는 활동을 추가 하는 <xref:System.Activities.Statements.If.Else%2A> 분기에서의 활동를 **도구 상자** 에 **Else** 상자에 **경우** 힌트 텍스트가 있는 활동 디자이너 " 여기에 작업 놓기 "입니다.|
+|<xref:System.Activities.Statements.If.Then%2A>|False|경우에 실행할 활동입니다 합니다 <xref:System.Activities.Statements.If.Condition%2A> 됩니다 **true**합니다. 실행 되는 활동을 추가 하는 <xref:System.Activities.Statements.If.Then%2A> 분기에서의 활동를 **도구 상자** 에 **다음** 상자에 **경우** 힌트 텍스트가 있는 활동 디자이너 " 여기에 작업 놓기 "입니다.|
 
 ## <a name="see-also"></a>참고자료
 
-- [시퀀스](../workflow-designer/sequence-activity-designer.md)
-- [병렬](../workflow-designer/parallel-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)

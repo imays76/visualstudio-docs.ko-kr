@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922200"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF 및 Entity Framework 6을 사용 하 여 간단한 데이터 응용 프로그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,37 +52,37 @@ ms.locfileid: "49299184"
   
 ## <a name="create-the-model"></a>모델 만들기  
   
-1.  솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가 &#124; 새 항목**합니다. C# 노드를 아래 왼쪽된 창에서 선택 **데이터** 가운데 창에서 선택 하 고 **ADO.NET Entity Data Model**합니다.  
+1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가 &#124; 새 항목**합니다. C# 노드를 아래 왼쪽된 창에서 선택 **데이터** 가운데 창에서 선택 하 고 **ADO.NET Entity Data Model**합니다.  
   
-     ![Entity Framework 모델 새 프로젝트 항목](../data-tools/media/raddata-ef-new-project-item.png "raddata EF 새 프로젝트 항목")  
+    ![Entity Framework 모델 새 프로젝트 항목](../data-tools/media/raddata-ef-new-project-item.png "raddata EF 새 프로젝트 항목")  
   
-2.  모델을 호출 `Northwind_model` 고 확인을 선택 합니다. 그러면 합니다 **엔터티 데이터 모델 마법사**합니다. 선택할 **데이터베이스의 EF 디자이너** 을 클릭 한 다음 **다음**합니다.  
+2. 모델을 호출 `Northwind_model` 고 확인을 선택 합니다. 그러면 합니다 **엔터티 데이터 모델 마법사**합니다. 선택할 **데이터베이스의 EF 디자이너** 을 클릭 한 다음 **다음**합니다.  
   
-     ![데이터베이스에서 EF 모델](../data-tools/media/raddata-ef-model-from-database.png "raddata 데이터베이스에서 EF 모델")  
+    ![데이터베이스에서 EF 모델](../data-tools/media/raddata-ef-model-from-database.png "raddata 데이터베이스에서 EF 모델")  
   
-3.  다음 화면에서 LocalDB Northwind에 연결 하 고 선택 **다음**합니다.  
+3. 다음 화면에서 LocalDB Northwind에 연결 하 고 선택 **다음**합니다.  
   
-4.  마법사의 다음 페이지에서 테이블, 저장된 프로시저 및 다른 데이터베이스에에서 포함할 개체를 Entity Framework 모델을 선택 합니다. 트리 뷰에서 dbo 노드를 확장 하 고 고객, 주문 및 주문 세부 정보를 선택 합니다. 기본값이 선택 된 상태로 두고 클릭 **완료**합니다.  
+4. 마법사의 다음 페이지에서 테이블, 저장된 프로시저 및 다른 데이터베이스에에서 포함할 개체를 Entity Framework 모델을 선택 합니다. 트리 뷰에서 dbo 노드를 확장 하 고 고객, 주문 및 주문 세부 정보를 선택 합니다. 기본값이 선택 된 상태로 두고 클릭 **완료**합니다.  
   
-     ![모델에 대 한 데이터베이스 개체 선택](../data-tools/media/raddata-choose-ef-objects.png "raddata EF 개체 선택")  
+    ![모델에 대 한 데이터베이스 개체 선택](../data-tools/media/raddata-choose-ef-objects.png "raddata EF 개체 선택")  
   
-5.  마법사는 Entity Framework 모델을 나타내는 C# 클래스를 생성 합니다. 이전 일반 C# 클래스 이며는 것은 WPF 사용자 인터페이스에 데이터 바인딩합니다. .Edmx 파일에는 관계 및 데이터베이스의 개체를 사용 하 여 클래스를 연결 하는 다른 메타 데이터 설명 합니다.  .Tt 파일은 모델에서 동작 하 고 데이터베이스에 변경 내용을 저장 하는 코드 생성을 T4 템플릿입니다. Northwind_model 노드 아래의 솔루션 탐색기에서 이러한 모든 파일을 확인할 수 있습니다.  
+5. 마법사는 Entity Framework 모델을 나타내는 C# 클래스를 생성 합니다. 이전 일반 C# 클래스 이며는 것은 WPF 사용자 인터페이스에 데이터 바인딩합니다. .Edmx 파일에는 관계 및 데이터베이스의 개체를 사용 하 여 클래스를 연결 하는 다른 메타 데이터 설명 합니다.  .Tt 파일은 모델에서 동작 하 고 데이터베이스에 변경 내용을 저장 하는 코드 생성을 T4 템플릿입니다. Northwind_model 노드 아래의 솔루션 탐색기에서 이러한 모든 파일을 확인할 수 있습니다.  
   
-     ![솔루션 탐색기 EF 모델 파일](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata 솔루션 탐색기 EF 모델 파일")  
+    ![솔루션 탐색기 EF 모델 파일](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata 솔루션 탐색기 EF 모델 파일")  
   
-     .Edmx 파일에 대 한 디자이너 화면을 사용 하면 일부 속성 및 모델의 관계를 수정할 수 있습니다. 디자이너를 사용 하 여이 연습을 하지 않습니다.  
+    .Edmx 파일에 대 한 디자이너 화면을 사용 하면 일부 속성 및 모델의 관계를 수정할 수 있습니다. 디자이너를 사용 하 여이 연습을 하지 않습니다.  
   
-6.  .Tt 파일은 범용 및 ObservableCollections 하며 WPF 데이터 바인딩 작업 중 하나를 조정 해야 합니다.  솔루션 탐색기에서 Northwind_model.tt 찾을 때까지 Northwind_model 노드를 확장 합니다. (있는지 **하지** 에 *입니다. 상황에 맞는.tt 파일은.edmx 파일의 바로 아래).  
+6. .Tt 파일은 범용 및 ObservableCollections 하며 WPF 데이터 바인딩 작업 중 하나를 조정 해야 합니다.  솔루션 탐색기에서 Northwind_model.tt 찾을 때까지 Northwind_model 노드를 확장 합니다. (있는지 **하지** 에 *입니다. 상황에 맞는.tt 파일은.edmx 파일의 바로 아래).  
   
-    -   두 바꿀 <xref:System.Collections.ICollection> 사용 하 여 <xref:System.Collections.ObjectModel.ObservableCollection%601>입니다.  
+   -   두 바꿀 <xref:System.Collections.ICollection> 사용 하 여 <xref:System.Collections.ObjectModel.ObservableCollection%601>입니다.  
   
-    -   첫 번째 항목을 바꾸려면 <xref:System.Collections.Generic.HashSet%601> 사용 하 여 <xref:System.Collections.ObjectModel.ObservableCollection%601> 51 줄. HashSet의 두 번째 발생을 대체 하지 않습니다  
+   -   첫 번째 항목을 바꾸려면 <xref:System.Collections.Generic.HashSet%601> 사용 하 여 <xref:System.Collections.ObjectModel.ObservableCollection%601> 51 줄. HashSet의 두 번째 발생을 대체 하지 않습니다  
   
-    -   유일한 대체할 <xref:System.Collections.Generic> (줄 근처 334) 사용 하 여 <xref:System.Collections.ObjectModel>입니다.  
+   -   유일한 대체할 <xref:System.Collections.Generic> (줄 근처 334) 사용 하 여 <xref:System.Collections.ObjectModel>입니다.  
   
-7.  키를 눌러 **Ctrl + Shift + B** 프로젝트를 빌드합니다. 빌드가 완료 되 면 모델 클래스는 데이터 원본 마법사에 표시 합니다.  
+7. 키를 눌러 **Ctrl + Shift + B** 프로젝트를 빌드합니다. 빌드가 완료 되 면 모델 클래스는 데이터 원본 마법사에 표시 합니다.  
   
- 이제 XAML 페이지에이 모델에서는 보고 탐색 하 고 데이터를 수정할 수 있도록 연결 준비가 되었습니다.  
+   이제 XAML 페이지에이 모델에서는 보고 탐색 하 고 데이터를 수정할 수 있도록 연결 준비가 되었습니다.  
   
 ## <a name="databind-the-model-to-the-xaml-page"></a>Databind XAML 페이지 모델  
  사용자 고유의 데이터 바인딩 코드를 작성할 수 있지만 Visual Studio 작업을 수행할 수 있도록 훨씬 쉽습니다.  

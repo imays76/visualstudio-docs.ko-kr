@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d973c688243ce9b5923ec193edcd573770b1569
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925879"
 ---
 # <a name="target-build-order"></a>대상 빌드 순서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "49241243"
   
 단일 대상에 대한 입력이 다른 대상의 출력을 사용하는 경우에는 대상의 순서를 지정해야 합니다. 다음과 같은 특성을 사용하여 대상이 실행되는 순서를 지정할 수 있습니다.  
   
--   `InitialTargets`. 이 `Project` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다.  
+- `InitialTargets`. 이 `Project` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다.  
   
--   `DefaultTargets`. 이 `Project` 특성은 대상이 명령줄에 명시적으로 지정되어 있지 않은 경우 실행할 대상을 지정합니다.  
+- `DefaultTargets`. 이 `Project` 특성은 대상이 명령줄에 명시적으로 지정되어 있지 않은 경우 실행할 대상을 지정합니다.  
   
--   `DependsOnTargets`. 이 `Target` 특성은 이 대상을 실행하려면 먼저 실행해야 하는 대상을 지정합니다.  
+- `DependsOnTargets`. 이 `Target` 특성은 이 대상을 실행하려면 먼저 실행해야 하는 대상을 지정합니다.  
   
--   `BeforeTargets`와 `AfterTargets`을 참조하세요. 이러한 `Target` 특성은 지정된 대상 전이나 후에 이 대상을 실행해야 하도록 지정합니다(MSBuild 4.0).  
+- `BeforeTargets`와 `AfterTargets`을 참조하세요. 이러한 `Target` 특성은 지정된 대상 전이나 후에 이 대상을 실행해야 하도록 지정합니다(MSBuild 4.0).  
   
- 대상은 빌드의 후속 대상이 종속되더라도 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되고 나면 빌드 내에서 해당 대상의 역할은 완료됩니다.  
+  대상은 빌드의 후속 대상이 종속되더라도 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되고 나면 빌드 내에서 해당 대상의 역할은 완료됩니다.  
   
- 대상은 `Condition` 특성을 포함할 수 있습니다. 지정된 조건이 `false`로 평가되면 대상은 실행되지 않으며 빌드에 영향을 주지 않습니다. 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.  
+  대상은 `Condition` 특성을 포함할 수 있습니다. 지정된 조건이 `false`로 평가되면 대상은 실행되지 않으며 빌드에 영향을 주지 않습니다. 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.  
   
 ## <a name="initial-targets"></a>초기 대상  
  [Project](../msbuild/project-element-msbuild.md) 요소의 `InitialTargets` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다. 초기 대상은 대개 오류 검사용으로 사용됩니다.  

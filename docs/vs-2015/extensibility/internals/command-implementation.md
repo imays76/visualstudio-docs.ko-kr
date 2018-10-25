@@ -15,25 +15,25 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46c2a944227218db2294258081fbd1af2d5f084b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee10719fa8f0c5c45d9b45f3b1d686f454d808a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925917"
 ---
 # <a name="command-implementation"></a>명령 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 명령에서 VSPackage를 구현 하려면 다음 작업을 수행 해야 합니다.  
   
-1.  .Vsct 파일에서 명령 그룹을 설정 하 고에 명령을 추가 합니다. 자세한 내용은 참조 하세요. [Visual Studio 명령 테이블 (합니다. Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
+1. .Vsct 파일에서 명령 그룹을 설정 하 고에 명령을 추가 합니다. 자세한 내용은 참조 하세요. [Visual Studio 명령 테이블 (합니다. Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  
   
-2.  Visual Studio를 사용 하 여 명령을 등록 합니다.  
+2. Visual Studio를 사용 하 여 명령을 등록 합니다.  
   
-3.  명령을 구현 합니다.  
+3. 명령을 구현 합니다.  
   
- 다음 섹션에서는 등록 명령을 구현 하는 방법을 설명 합니다.  
+   다음 섹션에서는 등록 명령을 구현 하는 방법을 설명 합니다.  
   
 ## <a name="registering-commands-with-visual-studio"></a>Visual Studio를 사용 하 여 명령 등록  
  추가 해야 하는 경우에 명령이 메뉴에 표시 되 면는 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> VSPackage 및 메뉴의 이름 또는 해당 리소스 id입니다. 값으로 사용 하 여  
@@ -68,35 +68,35 @@ if ( null != mcs )
 ## <a name="query-status-methods"></a>쿼리 상태 메서드  
  중 하나를 구현 하는 경우는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 메서드, 명령 명령을 속한 집합의 GUID 확인 및 명령 ID입니다. 다음 지침을 따릅니다.  
   
--   GUID 인식 되지 않으면 경우 두 메서드를 구현할 반환 해야 <xref:Microsoft.VisualStudio.OLE.Interop.Constants>합니다.  
+- GUID 인식 되지 않으면 경우 두 메서드를 구현할 반환 해야 <xref:Microsoft.VisualStudio.OLE.Interop.Constants>합니다.  
   
--   메서드는 반환 해야 하거나 메서드를 구현할 GUID를 인식 하지만 실제로 명령을 구현 되지 않았습니다 경우 <xref:Microsoft.VisualStudio.OLE.Interop.Constants>합니다.  
+- 메서드는 반환 해야 하거나 메서드를 구현할 GUID를 인식 하지만 실제로 명령을 구현 되지 않았습니다 경우 <xref:Microsoft.VisualStudio.OLE.Interop.Constants>합니다.  
   
--   GUID와 명령에서 인식 하는 두 메서드를 구현할 경우 메서드는 모든 명령의 명령 플래그 필드를 설정 해야 (에 `prgCmds` 매개 변수)는 다음 플래그를 사용 하 여:  
+- GUID와 명령에서 인식 하는 두 메서드를 구현할 경우 메서드는 모든 명령의 명령 플래그 필드를 설정 해야 (에 `prgCmds` 매개 변수)는 다음 플래그를 사용 하 여:  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 경우 명령이 지원 됩니다.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 경우 명령이 지원 됩니다.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 경우 명령을 볼 수 없습니다.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 경우 명령을 볼 수 없습니다.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 명령에 설정/해제 하 고 확인 한 후에 표시.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 명령에 설정/해제 하 고 확인 한 후에 표시.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 이 명령은 사용 되 면  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 이 명령은 사용 되 면  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 바로 가기 메뉴에 표시 되는 경우 명령을 숨겨야 하는 경우.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 바로 가기 메뉴에 표시 되는 경우 명령을 숨겨야 하는 경우.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 명령 메뉴 컨트롤러가 고을 사용 하지 않는 되지만 해당 드롭다운 메뉴 목록을 비어 있지 않고 계속 사용할 수 있습니다. (이 플래그는 거의 사용 합니다.)  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 명령 메뉴 컨트롤러가 고을 사용 하지 않는 되지만 해당 드롭다운 메뉴 목록을 비어 있지 않고 계속 사용할 수 있습니다. (이 플래그는 거의 사용 합니다.)  
   
--   명령을 사용 하 여.vsct 파일에 정의 된 경우는 `TextChanges` 플래그, 다음 매개 변수를 설정 합니다.  
+- 명령을 사용 하 여.vsct 파일에 정의 된 경우는 `TextChanges` 플래그, 다음 매개 변수를 설정 합니다.  
   
-    -   설정 합니다 `rgwz` 의 요소는 `pCmdText` 명령의 새 텍스트로 매개 변수입니다.  
+  -   설정 합니다 `rgwz` 의 요소는 `pCmdText` 명령의 새 텍스트로 매개 변수입니다.  
   
-    -   설정 합니다 `cwActual` 의 요소를 `pCmdText` 매개 변수를 명령 문자열의 크기입니다.  
+  -   설정 합니다 `cwActual` 의 요소를 `pCmdText` 매개 변수를 명령 문자열의 크기입니다.  
   
- 또한 해야 현재 컨텍스트에 automation 함수 명령을 자동화 기능을 처리 하기 위한 것 하지 않는 한 합니다.  
+  또한 해야 현재 컨텍스트에 automation 함수 명령을 자동화 기능을 처리 하기 위한 것 하지 않는 한 합니다.  
   
- 특정 명령 지을 나타내기 위해 반환 <xref:Microsoft.VisualStudio.VSConstants.S_OK>합니다. 다른 모든 명령에 대 한 반환 <xref:Microsoft.VisualStudio.OLE.Interop.Constants>합니다.  
+  특정 명령 지을 나타내기 위해 반환 <xref:Microsoft.VisualStudio.VSConstants.S_OK>합니다. 다른 모든 명령에 대 한 반환 <xref:Microsoft.VisualStudio.OLE.Interop.Constants>합니다.  
   
- 다음 예에서 쿼리 상태 메서드를 먼저 확인 합니다는 컨텍스트는 automation 함수가 아닙니다 그런 다음 올바른 명령 집합 GUID 및 명령 ID를 찾습니다. 명령 자체는 사용 하도록 설정 하 고 지원 되는 수로 설정 됩니다. 다른 명령은 없으면 지원 됩니다.  
+  다음 예에서 쿼리 상태 메서드를 먼저 확인 합니다는 컨텍스트는 automation 함수가 아닙니다 그런 다음 올바른 명령 집합 GUID 및 명령 ID를 찾습니다. 명령 자체는 사용 하도록 설정 하 고 지원 되는 수로 설정 됩니다. 다른 명령은 없으면 지원 됩니다.  
   
 ```  
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  

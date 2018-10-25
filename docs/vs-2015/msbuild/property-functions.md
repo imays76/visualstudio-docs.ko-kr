@@ -16,12 +16,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bed1496eb5519b315d2a52e500cb9cfd916fa248
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0194de0a9f14186dc02b17564c77b1b2bc7441be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920188"
 ---
 # <a name="property-functions"></a>속성 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,87 +90,87 @@ ms.locfileid: "49250512"
   
  정적 속성 함수에는 다음과 같은 시스템 클래스의 모든 정적 메서드 또는 속성을 사용할 수 있습니다.  
   
--   System.Byte  
+- System.Byte  
   
--   System.Char  
+- System.Char  
   
--   System.Convert  
+- System.Convert  
   
--   System.DateTime  
+- System.DateTime  
   
--   System.Decimal  
+- System.Decimal  
   
--   System.Double  
+- System.Double  
   
--   System.Enum  
+- System.Enum  
   
--   System.Guid  
+- System.Guid  
   
--   System.Int16  
+- System.Int16  
   
--   System.Int32  
+- System.Int32  
   
--   System.Int64  
+- System.Int64  
   
--   System.IO.Path  
+- System.IO.Path  
   
--   System.Math  
+- System.Math  
   
--   System.UInt16  
+- System.UInt16  
   
--   System.UInt32  
+- System.UInt32  
   
--   System.UInt64  
+- System.UInt64  
   
--   System.SByte  
+- System.SByte  
   
--   System.Single  
+- System.Single  
   
--   System.String  
+- System.String  
   
--   System.StringComparer  
+- System.StringComparer  
   
--   System.TimeSpan  
+- System.TimeSpan  
   
--   System.Text.RegularExpressions.Regex  
+- System.Text.RegularExpressions.Regex  
   
--   Microsoft.Build.Utilities.ToolLocationHelper  
+- Microsoft.Build.Utilities.ToolLocationHelper  
   
- 또한 다음 정적 메서드 및 속성을 사용할 수 있습니다.  
+  또한 다음 정적 메서드 및 속성을 사용할 수 있습니다.  
   
--   System.Environment::CommandLine  
+- System.Environment::CommandLine  
   
--   System.Environment::ExpandEnvironmentVariables  
+- System.Environment::ExpandEnvironmentVariables  
   
--   System.Environment::GetEnvironmentVariable  
+- System.Environment::GetEnvironmentVariable  
   
--   System.Environment::GetEnvironmentVariables  
+- System.Environment::GetEnvironmentVariables  
   
--   System.Environment::GetFolderPath  
+- System.Environment::GetFolderPath  
   
--   System.Environment::GetLogicalDrives  
+- System.Environment::GetLogicalDrives  
   
--   System.IO.Directory::GetDirectories  
+- System.IO.Directory::GetDirectories  
   
--   System.IO.Directory::GetFiles  
+- System.IO.Directory::GetFiles  
   
--   System.IO.Directory::GetLastAccessTime  
+- System.IO.Directory::GetLastAccessTime  
   
--   System.IO.Directory::GetLastWriteTime  
+- System.IO.Directory::GetLastWriteTime  
   
--   System.IO.Directory::GetParent  
+- System.IO.Directory::GetParent  
   
--   System.IO.File::Exists  
+- System.IO.File::Exists  
   
--   System.IO.File::GetCreationTime  
+- System.IO.File::GetCreationTime  
   
--   System.IO.File::GetAttributes  
+- System.IO.File::GetAttributes  
   
--   System.IO.File::GetLastAccessTime  
+- System.IO.File::GetLastAccessTime  
   
--   System.IO.File::GetLastWriteTime  
+- System.IO.File::GetLastWriteTime  
   
--   System.IO.File::ReadAllText  
+- System.IO.File::ReadAllText  
   
 ###  <a name="BKMK_InstanceMethods"></a> 정적 속성에 대한 인스턴스 메서드 호출  
  개체 인스턴스를 반환하는 정적 속성에 액세스하는 경우 해당 개체의 인스턴스 메서드를 호출할 수 있습니다. 인스턴스 메서드를 호출하려면 다음 구문을 사용합니다. 여기서 *Class*는 시스템 클래스의 이름이고 *Property*는 속성의 이름이며 *Method*는 메서드의 이름이고, *(Parameters)* 는 메서드의 매개 변수 목록입니다.  

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846865"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio에서 IntelliTrace 뒤로 사용 하 여 이전 앱 상태를 검사 합니다.
 
@@ -106,17 +106,17 @@ IntelliTrace는 이벤트 및 스냅숏 모드에서 복잡 한 개체를 포함
 * Windows 10 Fall Creators Update (RS3) 보다 오래 된 Windows 버전에서 IntelliTrace 이벤트 및 스냅숏 모드를 사용 하는 경우 응용 프로그램의 디버그 플랫폼 대상이 x86으로 설정 된 경우 IntelliTrace 스냅숏을 사용 하지 않습니다.
 
     해결 방법:
-    * Windows 10 1 주년 업데이트 (RS1) 10.0.14393.2273, 버전 이하의 [KB4103720 설치](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)합니다. 
-    * 버전 10.0.15063.1112, 아래에서 Windows 10 크리에이터 업데이트 (RS2)에 있다면 [KB4103722 설치](https://support.microsoft.com/help/4103722/windows-10-update-4103722)합니다.
-    * 설치 또는 Windows 10 Fall Creators Update (RS3)로 업그레이드 합니다. 
-    * 또는: 
-        1. Visual Studio 설치 관리자에서 데스크톱(x86, x64) 구성 요소용 VC++ 2015.3 v140 도구 집합을 설치합니다.
-        2. 대상 응용 프로그램을 빌드합니다.
-        3. 명령줄에서 editbin 도구를 사용 설정 하는 `Largeaddressaware` 대상 실행 파일에 대 한 플래그입니다. 예를 들어 (경로 업데이트) 한 후이 명령을 사용할 수 있습니다: "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe"입니다.
-        4. 디버깅을 시작하려면 **F5** 키를 누릅니다. 이제 디버거 단계 및 중단점에서 스냅숏은 가져옵니다.
+  * Windows 10 1 주년 업데이트 (RS1) 10.0.14393.2273, 버전 이하의 [KB4103720 설치](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)합니다. 
+  * 버전 10.0.15063.1112, 아래에서 Windows 10 크리에이터 업데이트 (RS2)에 있다면 [KB4103722 설치](https://support.microsoft.com/help/4103722/windows-10-update-4103722)합니다.
+  * 설치 또는 Windows 10 Fall Creators Update (RS3)로 업그레이드 합니다. 
+  * 또는: 
+    1. Visual Studio 설치 관리자에서 데스크톱(x86, x64) 구성 요소용 VC++ 2015.3 v140 도구 집합을 설치합니다.
+    2. 대상 응용 프로그램을 빌드합니다.
+    3. 명령줄에서 editbin 도구를 사용 설정 하는 `Largeaddressaware` 대상 실행 파일에 대 한 플래그입니다. 예를 들어 (경로 업데이트) 한 후이 명령을 사용할 수 있습니다: "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe"입니다.
+    4. 디버깅을 시작하려면 **F5** 키를 누릅니다. 이제 디버거 단계 및 중단점에서 스냅숏은 가져옵니다.
 
-        > [!Note]
-        > `Largeaddressaware` 실행 파일 변경 하 여 다시 빌드할 때마다 플래그 설정 해야 합니다.
+       > [!Note]
+       > `Largeaddressaware` 실행 파일 변경 하 여 다시 빌드할 때마다 플래그 설정 해야 합니다.
 
 * 지속형된 메모리 매핑된 파일을 사용 하는 응용 프로그램에서 응용 프로그램의 프로세스는 스냅숏을 생성 하는 경우 스냅숏 사용 하 여 프로세스 (후에 부모 프로세스 잠금을 릴리스됨) 메모리 매핑된 파일에 대 한 단독 잠금을 보유 합니다. 다른 프로세스를 읽을 수 있지만 쓸, 메모리 매핑된 파일에 여전히 수 있습니다.
 

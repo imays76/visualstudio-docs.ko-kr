@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923786"
 ---
 # <a name="item-metadata-in-task-batching"></a>작업 일괄 처리의 항목 메타데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256986"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에는 항목 목록을 항목 메타데이터에 따라 여러 다른 범주 또는 일괄 처리로 나누고 각 일괄 처리를 사용하여 한 번에 하나의 작업을 실행하는 기능이 있습니다. 어떤 항목이 어떤 일괄 처리를 통해 전달될지 정확히 이해하는 것은 어려울 수 있습니다. 이 항목에서는 일괄 처리와 관련된 다음과 같은 일반적인 시나리오를 다룹니다.  
   
--   하나의 항목 목록을 일괄 처리로 나누기  
+- 하나의 항목 목록을 일괄 처리로 나누기  
   
--   여러 항목 목록을 일괄 처리로 나누기  
+- 여러 항목 목록을 일괄 처리로 나누기  
   
--   한 번에 하나씩 일괄 처리  
+- 한 번에 하나씩 일괄 처리  
   
--   항목 목록 필터링  
+- 항목 목록 필터링  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]를 사용한 일괄 처리에 대한 자세한 내용은 [일괄 처리](../msbuild/msbuild-batching.md)를 참조하세요.  
+  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]를 사용한 일괄 처리에 대한 자세한 내용은 [일괄 처리](../msbuild/msbuild-batching.md)를 참조하세요.  
   
 ## <a name="dividing-an-item-list-into-batches"></a>하나의 항목 목록을 일괄 처리로 나누기  
  일괄 처리를 사용하면 항목 목록이 항목 메타데이터에 따라 여러 다른 일괄 처리로 나뉜 후 각 일괄 처리가 따로 작업으로 전달될 수 있습니다. 이 방식은 위성 어셈블리를 빌드하는 데 유용합니다.  

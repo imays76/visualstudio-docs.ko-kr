@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05616ba660af188c26f192b97e29d5b60e04fe8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a6833e93e7947ee5013a8879c6a5fc949de9fb20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929467"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 검색할 메모리 컨텍스트에 대 한 정보를 지정 합니다.  
@@ -54,7 +54,7 @@ public enum enum_CONTEXT_INFO_FIELDS {
   
 ## <a name="members"></a>멤버  
  CIF_MODULEURL  
- 초기화/사용 된 `bstrModuleUrl` 필드는 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조입니다.  
+ 초기화/사용 된 `bstrModuleUrl` 필드를 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조입니다.  
   
  CIF_FUNCTION  
  초기화/사용 된 `bstrFunction` 필드는 `CONTEXT_INFO` 구조입니다.  
@@ -72,11 +72,11 @@ public enum enum_CONTEXT_INFO_FIELDS {
  초기화/사용의 모든 필드는 `CONTEXT_INFO` 구조입니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값은 매개 변수를 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) 의 필드를 나타내도록 메서드를는 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조를 초기화할 수는 있습니다.  
+ 이러한 값을 매개 변수를 전달 됩니다는 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) 의 필드를 나타내려면 메서드는 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조는 초기화할 합니다.  
   
- 이러한 플래그의 필드를 나타내기 위해 사용도 `CONTEXT_INFO` 구조는 사용 되지 않으며 유효한 구조를 반환 하는 경우.  
+ 이러한 플래그는의 필드를 나타내는 데도 `CONTEXT_INFO` 구조는 유효 하 고 사용 되는 반환 하는 경우.  
   
- 이러한 값 비트 OR 연산자와 함께 사용할 수 있습니다.  
+ 비트 OR 연산자를 사용 하 여 이러한 값을 결합할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

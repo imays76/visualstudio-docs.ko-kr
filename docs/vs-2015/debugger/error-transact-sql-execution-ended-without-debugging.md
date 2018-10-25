@@ -22,12 +22,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db777a7b35ce6576640b6ac688ae716c0e41f676
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbcd6fb78ef87992571347f6a32f18e939a00586
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241672"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892183"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>오류: 디버깅 없이 Transact-SQL 실행이 중지되었습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49241672"
   
  다음 두 가지 계정과 관련이 있습니다.  
   
--   응용 프로그램 계정은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 실행되는 사용자 계정입니다.  
+- 응용 프로그램 계정은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 실행되는 사용자 계정입니다.  
   
--   연결 계정은 SQL Server에 연결하는 데 사용되는 ID입니다. 연결에서 SQL 인증을 사용하는 경우에는 이 ID가 Visual Studio가 실행되는 ID와 달라도 무방합니다.  
+- 연결 계정은 SQL Server에 연결하는 데 사용되는 ID입니다. 연결에서 SQL 인증을 사용하는 경우에는 이 ID가 Visual Studio가 실행되는 ID와 달라도 무방합니다.  
   
- SQL 디버깅을 수행하려면 응용 프로그램 계정이 연결 계정과 일치하거나 sysadmin이어야 합니다.  
+  SQL 디버깅을 수행하려면 응용 프로그램 계정이 연결 계정과 일치하거나 sysadmin이어야 합니다.  
   
- sa 같은 SQL 로그인을 사용하는 경우 응용 프로그램 계정은 SQL Server에서 sysadmin으로 설정되어 있어야 합니다. 기본적으로 SQL Server가 실행되고 있는 컴퓨터의 관리자는 SQL Server sysadmin입니다.  
+  sa 같은 SQL 로그인을 사용하는 경우 응용 프로그램 계정은 SQL Server에서 sysadmin으로 설정되어 있어야 합니다. 기본적으로 SQL Server가 실행되고 있는 컴퓨터의 관리자는 SQL Server sysadmin입니다.  
   
- 이 오류를 해결하려면 다음 작업을 수행해야 합니다.  
+  이 오류를 해결하려면 다음 작업을 수행해야 합니다.  
   
--   권한 설정을 확인합니다. 자세한 내용은 [방법: 디버깅에 대 한 SQL Server 권한 설정](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)합니다.  
+- 권한 설정을 확인합니다. 자세한 내용은 [방법: 디버깅에 대 한 SQL Server 권한 설정](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)합니다.  
   
--   SQL 디버깅이 올바르게 설정되어 있는지 확인합니다.  
+- SQL 디버깅이 올바르게 설정되어 있는지 확인합니다.  
   
--   네트워크 또는 데이터베이스 관리자에게 문의합니다.  
+- 네트워크 또는 데이터베이스 관리자에게 문의합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [SQL 디버깅 설정](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   

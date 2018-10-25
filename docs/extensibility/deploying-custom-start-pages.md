@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926464"
 ---
 # <a name="deploy-custom-start-pages"></a>사용자 지정 시작 페이지를 배포 합니다.
 
@@ -42,17 +42,17 @@ VSIX 배포를 사용 하 여 또는 대상 컴퓨터의 올바른 위치에 파
 
  시작 페이지 프로젝트 템플릿을 사용 하지 않고 VSIX 배포를 만들려면, 먼저 만듭니다는 *.vsix* 이러한 두 가지 방법 중 하나로 시작 페이지에 대 한 파일:
 
--   사용자 지정 시작 페이지 파일 빈 VSIX 프로젝트에 추가 하 여 자세한 내용은 [VSIX 프로젝트 템플릿](../extensibility/vsix-project-template.md)합니다.
+- 사용자 지정 시작 페이지 파일 빈 VSIX 프로젝트에 추가 하 여 자세한 내용은 [VSIX 프로젝트 템플릿](../extensibility/vsix-project-template.md)합니다.
 
--   수동으로 만들어를 *.vsix* 파일입니다. 만들려는 *.vsix* 수동으로 파일:
+- 수동으로 만들어를 *.vsix* 파일입니다. 만들려는 *.vsix* 수동으로 파일:
 
-    1.  만들기는 *extension.vsixmanifest* 파일 및 *[Content_Types].xml* 새 폴더에는 파일입니다. 자세한 내용은 [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)합니다.
+  1.  만들기는 *extension.vsixmanifest* 파일 및 *[Content_Types].xml* 새 폴더에는 파일입니다. 자세한 내용은 [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)합니다.
 
-    2.  Windows 탐색기에서 두 개의 XML 파일이 포함 된 폴더를 마우스 오른쪽 단추로 클릭 합니다 **보내기**, 한 다음 압축 (zip) 폴더를 클릭 합니다. 결과 이름 바꾸기 *.zip* 파일을 *Filename.vsix*여기서 Filename은 패키지를 설치 하는 재배포 가능 파일의 이름입니다.
+  2.  Windows 탐색기에서 두 개의 XML 파일이 포함 된 폴더를 마우스 오른쪽 단추로 클릭 합니다 **보내기**, 한 다음 압축 (zip) 폴더를 클릭 합니다. 결과 이름 바꾸기 *.zip* 파일을 *Filename.vsix*여기서 Filename은 패키지를 설치 하는 재배포 가능 파일의 이름입니다.
 
- For Visual Studio 시작 페이지를 인식 하는 `Content Element` 의 VSIX 매니페스트가 포함 되어야 합니다는 `CustomExtension Element` 있는 `Type` 특성이로 설정 `"StartPage"`합니다. VSIX 배포를 사용 하 여 설치 된 시작 페이지 확장에 표시 된 **시작 페이지 사용자 지정** 목록에서 **시작** 옵션으로 페이지 **[설치 된 확장]** *확장 이름*합니다.
+  For Visual Studio 시작 페이지를 인식 하는 `Content Element` 의 VSIX 매니페스트가 포함 되어야 합니다는 `CustomExtension Element` 있는 `Type` 특성이로 설정 `"StartPage"`합니다. VSIX 배포를 사용 하 여 설치 된 시작 페이지 확장에 표시 된 **시작 페이지 사용자 지정** 목록에서 **시작** 옵션으로 페이지 **[설치 된 확장]** *확장 이름*합니다.
 
- 시작 페이지 패키지 어셈블리에 포함 된 경우 Visual Studio를 시작할 때 사용할 수 있도록 바인딩 경로 등록을 추가 해야 합니다. 이렇게 하려면 패키지에 포함 되는지 확인 한 *.pkgdef* 다음 정보가 포함 된 파일입니다.
+  시작 페이지 패키지 어셈블리에 포함 된 경우 Visual Studio를 시작할 때 사용할 수 있도록 바인딩 경로 등록을 추가 해야 합니다. 이렇게 하려면 패키지에 포함 되는지 확인 한 *.pkgdef* 다음 정보가 포함 된 파일입니다.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -85,7 +85,7 @@ VSIX 배포를 사용 하 여 또는 대상 컴퓨터의 올바른 위치에 파
      이렇게 하면 Visual Studio에서 새 시작 페이지 위치를 확인 합니다.
 
 ## <a name="file-copy-deployment"></a>파일 복사 배포
- 만들 필요가 없습니다를 *.vsix* 사용자 지정 시작 페이지를 배포 하는 파일입니다. 대신, 태그 및 사용자를 직접 지원 파일을 복사할 수 있습니다 * \StartPages\* 폴더입니다. 합니다 **시작 페이지 사용자 지정** 목록에서 **시작** 옵션 목록 페이지 마다 *.xaml* 경로 함께 해당 폴더의 파일-예를 들어 *% USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{0} 파일 이름}.xaml*합니다. 시작 페이지에서 전용 어셈블리에 대 한 참조를 포함 하는 경우 복사 하며 붙여넣습니다는 * \PrivateAssemblies\* 폴더입니다.
+ 만들 필요가 없습니다를 *.vsix* 사용자 지정 시작 페이지를 배포 하는 파일입니다. 대신, 태그 및 사용자를 직접 지원 파일을 복사할 수 있습니다 <em>\StartPages\* 폴더입니다. **시작 페이지 사용자 지정</em>*  목록에서 **시작** 옵션 목록 페이지 마다 *.xaml* 경로 함께 해당 폴더의 파일-예를 들어 *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{0} 파일 이름}.xaml*합니다. 시작 페이지에서 전용 어셈블리에 대 한 참조를 포함 하는 경우 복사 하며 붙여넣습니다는 * \PrivateAssemblies\* 폴더입니다.
 
  에 패키징하지 않고 만든 시작 페이지를 배포 하는 *.vsix* 파일 일괄 처리 스크립트 예를 들어, 기본 파일 복사 전략을 사용 하거나 좋습니다 수 있는 다른 배포 기술과의 파일을 배치 합니다 필요한 디렉터리입니다.
 

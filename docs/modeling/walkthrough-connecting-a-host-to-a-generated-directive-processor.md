@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896239"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
 
@@ -33,21 +33,22 @@ ms.locfileid: "47859941"
 
 이 연습에는 다음 작업이 포함됩니다.
 
--   사용 하 여 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 도메인 모델을 기반으로 하는 지시문 프로세서를 생성 합니다.
+- 사용 하 여 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 도메인 모델을 기반으로 하는 지시문 프로세서를 생성 합니다.
 
--   생성 된 지시문 프로세서에 사용자 지정 텍스트 템플릿 호스트를 연결합니다.
+- 생성 된 지시문 프로세서에 사용자 지정 텍스트 템플릿 호스트를 연결합니다.
 
--   생성 된 지시문 프로세서를 사용 하 여 사용자 지정 호스트를 테스트 합니다.
+- 생성 된 지시문 프로세서를 사용 하 여 사용자 지정 호스트를 테스트 합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 이 연습에서는 도메인 특정 언어 디자이너 마법사를 사용 하 여 DSLMinimalTest 솔루션에 대 한 도메인별 언어 만들기.
 
-1.  다음과 같은 특징이 있는 도메인별 언어 솔루션을 만듭니다.
+1. 다음과 같은 특징이 있는 도메인별 언어 솔루션을 만듭니다.
 
-    -   이름: DSLMinimalTest
+   -   이름: DSLMinimalTest
 
-    -   솔루션 템플릿: 최소 언어
+   -   솔루션 템플릿: 최소 언어
 
-    -   파일 확장명: min
+   -   파일 확장명: min
 
-    -   회사 이름: Fabrikam
+   -   회사 이름: Fabrikam
 
    도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 도메인별 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)합니다.
 
-2.  **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+2. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
-    > [!IMPORTANT]
-    > 이 단계는 지시문 프로세서를 생성 하 고 레지스트리에서 키에 대 한 추가 합니다.
+   > [!IMPORTANT]
+   > 이 단계는 지시문 프로세서를 생성 하 고 레지스트리에서 키에 대 한 추가 합니다.
 
-3.  **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.
+3. **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.
 
-     Visual Studio의 두 번째 인스턴스가 열립니다.
+    Visual Studio의 두 번째 인스턴스가 열립니다.
 
-4.  실험적 빌드에서 **솔루션 탐색기**, 파일을 두 번 클릭 **sample.min**합니다.
+4. 실험적 빌드에서 **솔루션 탐색기**, 파일을 두 번 클릭 **sample.min**합니다.
 
-     파일이는 디자이너에서 열립니다. 모델에 두 요소, ExampleElement1 ExampleElement2, 고 이들 간에 링크가 있는지 확인 합니다.
+    파일이는 디자이너에서 열립니다. 모델에 두 요소, ExampleElement1 ExampleElement2, 고 이들 간에 링크가 있는지 확인 합니다.
 
-5.  Visual Studio의 두 번째 인스턴스를 닫습니다.
+5. Visual Studio의 두 번째 인스턴스를 닫습니다.
 
-6.  솔루션을 저장 하 고 도메인 특정 언어 디자이너를 닫습니다.
+6. 솔루션을 저장 하 고 도메인 특정 언어 디자이너를 닫습니다.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>지시문 프로세서에 사용자 지정 텍스트 템플릿 호스트 연결
 

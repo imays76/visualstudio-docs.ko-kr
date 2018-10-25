@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b77ab2b9effc305469b3a4e489342f496a89997
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a512288d141823115361bf8eacfd179a74a1da1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876713"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 활동 디자이너
 
@@ -36,7 +36,7 @@ ms.locfileid: "36755952"
 다음 표에서는 <xref:System.Activities.Statements.WriteLine> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 편집할 수 있습니다 하 고 그 중 일부는 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.WriteLine> 활동의 이름입니다. 기본값은 WriteLine입니다. <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.WriteLine.Text%2A>|False|쓸 텍스트입니다. 속성을 설정 하려면 Visual Basic 식을 입력 합니다 **텍스트** 상자에 **WriteLine** 활동 디자이너나 속성 표의 합니다.|
 |<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|<xref:System.IO.TextWriter>이 <xref:System.Activities.Statements.WriteLine>를 쓸 대상 <xref:System.Activities.Statements.WriteLine.Text%2A>입니다. 기본값은 콘솔입니다.|
@@ -44,6 +44,6 @@ ms.locfileid: "36755952"
 ## <a name="see-also"></a>참고자료
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [할당](../workflow-designer/assign-activity-designer.md)
-- [지연](../workflow-designer/delay-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
+- [Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
