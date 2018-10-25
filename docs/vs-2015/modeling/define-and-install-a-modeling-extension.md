@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827482"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>모델링 확장 정의 및 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 ## <a name="creating-a-modeling-extension-solution"></a>모델링 확장 솔루션 만들기  
  모델링 확장을 정의하려면 다음 프로젝트를 포함하는 솔루션을 만들어야 합니다.  
   
--   VSIX([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration Extension) 프로젝트. 확장 구성 요소의 설치 관리자 역할을 하는 파일이 생성됩니다.  
+- VSIX([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration Extension) 프로젝트. 확장 구성 요소의 설치 관리자 역할을 하는 파일이 생성됩니다.  
   
--   프로그램 코드를 포함하는 구성 요소에 필요한 클래스 라이브러리 프로젝트.  
+- 프로그램 코드를 포함하는 구성 요소에 필요한 클래스 라이브러리 프로젝트.  
   
- 여러 구성 요소가 포함된 확장을 만들려는 경우 단일 솔루션으로 개발할 수 있습니다. VSIX 프로젝트 하나만 필요합니다.  
+  여러 구성 요소가 포함된 확장을 만들려는 경우 단일 솔루션으로 개발할 수 있습니다. VSIX 프로젝트 하나만 필요합니다.  
   
- 사용자 지정 도구 상자 항목 및 사용자 지정 UML 프로필과 같이 코드가 필요 없는 구성 요소는 별도의 클래스 라이브러리 프로젝트를 사용하지 않고 VSIX 프로젝트에 직접 추가할 수 있습니다. 프로그램 코드가 필요한 구성 요소는 별도의 클래스 라이브러리 프로젝트에서 보다 쉽게 정의됩니다. 코드가 필요한 구성 요소에는 제스처 처리기, 메뉴 명령 및 유효성 검사 코드가 포함됩니다.  
+  사용자 지정 도구 상자 항목 및 사용자 지정 UML 프로필과 같이 코드가 필요 없는 구성 요소는 별도의 클래스 라이브러리 프로젝트를 사용하지 않고 VSIX 프로젝트에 직접 추가할 수 있습니다. 프로그램 코드가 필요한 구성 요소는 별도의 클래스 라이브러리 프로젝트에서 보다 쉽게 정의됩니다. 코드가 필요한 구성 요소에는 제스처 처리기, 메뉴 명령 및 유효성 검사 코드가 포함됩니다.  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>메뉴 명령, 제스처 처리기 또는 유효성 검사에 대한 클래스 라이브러리 프로젝트를 만들려면  
   
@@ -133,15 +133,15 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
   
 #### <a name="to-uninstall-an-extension"></a>확장을 제거하려면  
   
-1.  **도구** 메뉴에서 **확장 및 업데이트**를 클릭합니다.  
+1. **도구** 메뉴에서 **확장 및 업데이트**를 클릭합니다.  
   
-2.  **설치된 확장**을 확장합니다.  
+2. **설치된 확장**을 확장합니다.  
   
-3.  확장을 선택하고 **제거**를 클릭합니다.  
+3. 확장을 선택하고 **제거**를 클릭합니다.  
   
- 드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수는 경우 여기서 *% LocalAppData %* 일반적으로 *DriveName*: \Users\\*사용자이름*\AppData\Local:  
+   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수는 경우 여기서 *% LocalAppData %* 일반적으로 *DriveName*: \Users\\*사용자이름*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ## <a name="see-also"></a>참고 항목  
  [UML을 확장 하는 프로필 정의](../modeling/define-a-profile-to-extend-uml.md)   

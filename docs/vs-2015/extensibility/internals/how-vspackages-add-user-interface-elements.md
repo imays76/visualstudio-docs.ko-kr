@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872449"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage에서 사용자 인터페이스 요소를 추가하는 방법
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ VSPackage는 사용자 인터페이스 (UI) 요소, 예를 들어, 메뉴, 도�
 #### <a name="menus"></a>메뉴  
  로 정의 된 각 메뉴는 [메뉴 요소](../../extensibility/menu-element.md) 에 `Menus` 섹션. 메뉴 있어야 `guid`, `id`, 및 `priority` 특성으로 `Parent` 요소 또한 다음 추가 특성 및 자식:  
   
--   `type` 메뉴 도구 모음 또는 메뉴의 일종으로 IDE에 표시될지 여부를 지정 하는 특성입니다.  
+- `type` 메뉴 도구 모음 또는 메뉴의 일종으로 IDE에 표시될지 여부를 지정 하는 특성입니다.  
   
--   [문자열 요소](../../extensibility/strings-element.md) 를 포함 하는 [ButtonText 요소](../../extensibility/buttontext-element.md), IDE의 메뉴의 제목을 지정 하는 및 [CommandName 요소](../../extensibility/commandname-element.md)는 이름을 지정 하는 에 사용 합니다 **명령** 메뉴에 액세스 하는 창입니다.  
+- [문자열 요소](../../extensibility/strings-element.md) 를 포함 하는 [ButtonText 요소](../../extensibility/buttontext-element.md), IDE의 메뉴의 제목을 지정 하는 및 [CommandName 요소](../../extensibility/commandname-element.md)는 이름을 지정 하는 에 사용 합니다 **명령** 메뉴에 액세스 하는 창입니다.  
   
--   선택적 플래그입니다. A [Command Flag 요소](../../extensibility/command-flag-element.md) 의 모양이 나 IDE에서 동작을 변경 하려면 메뉴 정의에 나타날 수 있습니다.  
+- 선택적 플래그입니다. A [Command Flag 요소](../../extensibility/command-flag-element.md) 의 모양이 나 IDE에서 동작을 변경 하려면 메뉴 정의에 나타날 수 있습니다.  
   
- 모든 `Menu` 도구 모음 같은 요소를 도킹 가능 하지 않은 요소를 부모로 그룹이 있어야 합니다. 도킹 메뉴는 해당 부모입니다. 메뉴 및 값에 대 한 자세한 내용은 합니다 `type` 특성을 참조 하십시오는 [메뉴 요소](../../extensibility/menu-element.md) 설명서.  
+  모든 `Menu` 도구 모음 같은 요소를 도킹 가능 하지 않은 요소를 부모로 그룹이 있어야 합니다. 도킹 메뉴는 해당 부모입니다. 메뉴 및 값에 대 한 자세한 내용은 합니다 `type` 특성을 참조 하십시오는 [메뉴 요소](../../extensibility/menu-element.md) 설명서.  
   
- 다음 예제에서는 Visual Studio 메뉴 모음에서 옆에 표시 되는 메뉴의 **도구** 메뉴.  
+  다음 예제에서는 Visual Studio 메뉴 모음에서 옆에 표시 되는 메뉴의 **도구** 메뉴.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  Combos에 정의 된 `Combos` 섹션입니다. 각 `Combo` 요소 IDE의 드롭다운 목록 상자를 나타냅니다. 목록 상자 수도 값에 따라 사용자가 쓸 수 없습니다는 `type` 콤보의 특성입니다. Combos 동일한 요소가 포함 하 고 단추는 동작이 다음 추가 특성을 수도 있습니다.  
   
--   `defaultWidth` 픽셀 너비를 지정 하는 특성입니다.  
+- `defaultWidth` 픽셀 너비를 지정 하는 특성입니다.  
   
--   `idCommandList` 목록 상자에 표시 되는 항목이 포함 된 목록을 지정 하는 특성입니다. 동일한 명령 목록을 선언 해야 `GuidSymbol` 콤보 들어 있는 노드입니다.  
+- `idCommandList` 목록 상자에 표시 되는 항목이 포함 된 목록을 지정 하는 특성입니다. 동일한 명령 목록을 선언 해야 `GuidSymbol` 콤보 들어 있는 노드입니다.  
   
- 다음 예제에서는 콤보 요소를 정의 합니다.  
+  다음 예제에서는 콤보 요소를 정의 합니다.  
   
 ```xml  
 <Combos>  

@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844709"
 ---
 # <a name="switchlttgt-activity-designer"></a>스위치&lt;T&gt; 활동 디자이너
 <xref:System.Activities.Statements.Switch%601> 활동은 지정된 식을 계산하고 연관된 키가 계산에서 얻은 값과 일치하는 활동 컬렉션의 활동을 실행합니다.  
@@ -50,11 +50,11 @@ ms.locfileid: "49244766"
   
  case를 삭제하는 방법은 두 가지입니다.  
   
-1.  case를 선택하여 삭제합니다.  
+1. case를 선택하여 삭제합니다.  
   
-2.  선택 된 경우 마우스 오른쪽 단추 클릭 상황에 맞는 메뉴를 표시 및 선택할 **삭제**합니다.  
+2. 선택 된 경우 마우스 오른쪽 단추 클릭 상황에 맞는 메뉴를 표시 및 선택할 **삭제**합니다.  
   
- 삭제하려면 case 자체를 선택해야 합니다. case 내의 활동을 선택하여 삭제하는 경우 case가 아닌 활동만 삭제됩니다.  
+   삭제하려면 case 자체를 선택해야 합니다. case 내의 활동을 선택하여 삭제하는 경우 case가 아닌 활동만 삭제됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [제어 흐름](../workflow-designer/control-flow-activity-designers.md)

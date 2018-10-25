@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812454"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio에서 Microsoft Unit Testing Framework for C++ 사용
 
@@ -28,20 +28,22 @@ Microsoft Unit Testing Framework for C++는 **C++를 통한 데스크톱 개발*
 
 DLL에서 내보내지 않은 함수 테스트 등, 일부 경우에는 테스트하는 프로그램과 동일한 프로젝트에서 테스트를 만들어야 합니다. 같은 프로젝트에서 단위 테스트를 작성하려면
 
-1.  단위 테스트에 필요한 헤더 및 라이브러리 파일을 포함하도록 프로젝트 속성을 수정합니다.
+1. 단위 테스트에 필요한 헤더 및 라이브러리 파일을 포함하도록 프로젝트 속성을 수정합니다.
 
-    1.  **솔루션 탐색기**에서 테스트하는 프로그램에 대한 프로젝트 노드를 마우스 오른쪽 단추로 클릭한 다음, **속성** > **구성 속성** > **VC++ 디렉터리**를 선택합니다.
+   1. **솔루션 탐색기**에서 테스트하는 프로그램에 대한 프로젝트 노드를 마우스 오른쪽 단추로 클릭한 다음, **속성** > **구성 속성** > **VC++ 디렉터리**를 선택합니다.
 
-    3.  다음 행에서 아래쪽 화살표를 클릭하고 **<Edit>** 를 선택합니다.
+   2. 다음 행에서 아래쪽 화살표를 클릭하고 **<Edit>** 를 선택합니다.
 
-        |디렉터리|속성|
-        |-|-|
-        |**포함 디렉터리**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**라이브러리 디렉터리**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  C++ 단위 테스트 파일 추가:
+      | 디렉터리 | 속성 |
+      |-| - |
+      | **포함 디렉터리** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
+      | **라이브러리 디렉터리** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-    -   **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목** > **C++ 단위 테스트**를 선택합니다.
+
+2. C++ 단위 테스트 파일 추가:
+
+   -   **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목** > **C++ 단위 테스트**를 선택합니다.
 
 ## <a name="write-the-tests"></a>테스트 작성
 
@@ -53,13 +55,13 @@ DLL에서 내보내지 않은 함수 테스트 등, 일부 경우에는 테스�
 
 ## <a name="run-the-tests"></a>테스트 실행
 
-1.  **테스트** 메뉴에서 **Windows** > **테스트 탐색기**를 선택합니다.
+1. **테스트** 메뉴에서 **Windows** > **테스트 탐색기**를 선택합니다.
 2. 창에 일부 테스트가 표시되지 않는 경우 **솔루션 탐색기**에서 노드를 마우스 오른쪽 단추로 클릭하고 **빌드** 또는 **다시 빌드**를 선택하여 테스트 프로젝트를 빌드합니다. 
 
-2.  **테스트 탐색기**에서 **모두 실행**을 선택하거나 실행하려는 특정 테스트를 선택합니다. 테스트를 마우스 오른쪽 단추로 클릭하면 중단점을 사용하는 디버그 모드에서 실행 등, 다른 옵션이 표시됩니다.
-3. **출력 창**의 드롭다운에서 **테스트**를 선택하여 `Logger` 클래스가 작성한 메시지를 확인합니다.
+3. **테스트 탐색기**에서 **모두 실행**을 선택하거나 실행하려는 특정 테스트를 선택합니다. 테스트를 마우스 오른쪽 단추로 클릭하면 중단점을 사용하는 디버그 모드에서 실행 등, 다른 옵션이 표시됩니다.
+4. **출력 창**의 드롭다운에서 **테스트**를 선택하여 `Logger` 클래스가 작성한 메시지를 확인합니다.
 
-  ![테스트 메시지를 표시하는 C++ 출력 창](media/cpp-test-output-window.png)
+   ![테스트 메시지를 표시하는 C++ 출력 창](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>그룹화를 사용하도록 설정하는 특성 정의
 
@@ -90,7 +92,7 @@ TEST_METHOD(Method1)
 `CppUnitTest.h`에는 다음의 미리 정의된 특성이 있습니다. 자세한 내용은 [Microsoft Unit Testing Framework for C++ API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)를 참조하세요.
 
 |매크로|설명|
-|-----------|-----------------|
+|-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|TEST_METHOD_ATTRIBUTE 매크로를 사용하여 특성(trait)을 정의합니다.|
 |`TEST_OWNER(ownerAlias)`|미리 정의된 소유자 특성(trait)을 사용하여 테스트 메서드의 소유자를 지정합니다.|
 |`TEST_PRIORITY(priority)`|미리 정의된 우선순위 특성(trait)을 사용하여 테스트 메서드에 상대적 우선순위를 할당합니다.|

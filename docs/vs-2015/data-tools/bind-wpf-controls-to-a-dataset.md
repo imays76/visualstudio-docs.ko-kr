@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893002"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>데이터 집합으로 WPF 컨트롤 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,30 +36,30 @@ ms.locfileid: "49289564"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   AdventureWorksLT 샘플 데이터베이스의 데이터에서 생성되는 데이터 집합 및 WPF 응용 프로그램을 만듭니다.  
+- AdventureWorksLT 샘플 데이터베이스의 데이터에서 생성되는 데이터 집합 및 WPF 응용 프로그램을 만듭니다.  
   
--   데이터 테이블을 끌어 데이터 바인딩된 컨트롤 집합을 만듭니다는 **데이터 원본** 창 WPF 디자이너의 창.  
+- 데이터 테이블을 끌어 데이터 바인딩된 컨트롤 집합을 만듭니다는 **데이터 원본** 창 WPF 디자이너의 창.  
   
--   제품 레코드를 앞뒤로 탐색하는 데 사용할 단추를 만듭니다.  
+- 제품 레코드를 앞뒤로 탐색하는 데 사용할 단추를 만듭니다.  
   
--   사용자가 제품 레코드에 대해 적용한 변경 내용을 데이터 테이블 및 기본 데이터 소스에 저장하는 단추를 만듭니다.  
+- 사용자가 제품 레코드에 대해 적용한 변경 내용을 데이터 테이블 및 기본 데이터 소스에 저장하는 단추를 만듭니다.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다 합니다 [CodePlex 웹 사이트](http://go.microsoft.com/fwlink/?linkid=87843)합니다.  
+- AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다 합니다 [CodePlex 웹 사이트](http://go.microsoft.com/fwlink/?linkid=87843)합니다.  
   
- 또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.  
+  또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.  
   
--   데이터 집합 및 TableAdapter. 자세한 내용은 [Visual Studio에서 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md) 하 고 [TableAdapter 개요](../data-tools/tableadapter-overview.md)합니다.  
+- 데이터 집합 및 TableAdapter. 자세한 내용은 [Visual Studio에서 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md) 하 고 [TableAdapter 개요](../data-tools/tableadapter-overview.md)합니다.  
   
--   WPF 디자이너 사용법. 자세한 내용은 [WPF 및 Silverlight 디자이너 개요](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)합니다.  
+- WPF 디자이너 사용법. 자세한 내용은 [WPF 및 Silverlight 디자이너 개요](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)합니다.  
   
--   WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)를 참조하세요.  
+- WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)를 참조하세요.  
   
 ## <a name="create-the-project"></a>프로젝트를 만듭니다.  
  새 WPF 프로젝트를 만듭니다. 이 프로젝트에 제품 레코드가 표시됩니다.  

@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287484"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877298"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable을 올바르게 구현하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287484"
 ## <a name="cause"></a>원인
  `IDisposable` 올바르게 구현 되지 않았습니다. 이 문제에 대 한 몇 가지 원인은 다음과 같습니다.
 
--   IDisposable은 다시 클래스에서 구현 합니다.
+- IDisposable은 다시 클래스에서 구현 합니다.
 
--   마무리 다시 재정의 됩니다.
+- 마무리 다시 재정의 됩니다.
 
--   Dispose는 재정의 됩니다.
+- Dispose는 재정의 됩니다.
 
--   Dispose () public이 아닙니다 봉인 또는 Dispose를 명명 합니다.
+- Dispose () public이 아닙니다 봉인 또는 Dispose를 명명 합니다.
 
--   Dispose (bool) 보호, 가상 또는 봉인 되지 않은 아닙니다.
+- Dispose (bool) 보호, 가상 또는 봉인 되지 않은 아닙니다.
 
--   Dispose ()는 봉인 되지 않은 형식에서 Dispose(true)을 호출 해야 합니다.
+- Dispose ()는 봉인 되지 않은 형식에서 Dispose(true)을 호출 해야 합니다.
 
--   봉인 되지 않은 형식에 대 한 Finalize 구현 중 하나 또는 모두 dispose (bool) 또는 사례 클래스 종료자를 호출 하지 않습니다.
+- 봉인 되지 않은 형식에 대 한 Finalize 구현 중 하나 또는 모두 dispose (bool) 또는 사례 클래스 종료자를 호출 하지 않습니다.
 
- 이러한 패턴 중 하나를 위반 하면이 경고가 트리거됩니다.
+  이러한 패턴 중 하나를 위반 하면이 경고가 트리거됩니다.
 
- 봉인 되지 않은 모든 루트 IDisposable 형식 자체 보호 된 가상 void dispose (bool) 메서드를 제공 해야 합니다. Dispose () 호출 Dipose(true) 및 Finalize dispose (false)를 호출 해야 합니다. 봉인 되지 않은 루트 IDisposable 형식을 만들려는 경우 dispose (bool)을 정의 하 고 호출 해야 합니다. 자세한 내용은 [관리 되지 않는 리소스 정리](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) 에 [Framework 디자인 지침](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) .NET Framework 설명서의 섹션입니다.
+  봉인 되지 않은 모든 루트 IDisposable 형식 자체 보호 된 가상 void dispose (bool) 메서드를 제공 해야 합니다. Dispose () 호출 Dipose(true) 및 Finalize dispose (false)를 호출 해야 합니다. 봉인 되지 않은 루트 IDisposable 형식을 만들려는 경우 dispose (bool)을 정의 하 고 호출 해야 합니다. 자세한 내용은 [관리 되지 않는 리소스 정리](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) 에 [Framework 디자인 지침](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) .NET Framework 설명서의 섹션입니다.
 
 ## <a name="rule-description"></a>규칙 설명
  모든 IDisposable 형식은 Dispose 패턴을 올바르게 구현해야 합니다.

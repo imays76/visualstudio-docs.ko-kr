@@ -17,12 +17,12 @@ ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 608e94419aac9ebf96237425f67da0c9a6f50668
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9254a17f0c88efa167019a1d05aa9524f9327ab1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856829"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -69,16 +69,16 @@ int Event(
  `pEvent`  
  [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 이벤트를 식별 하는 개체입니다. 가능한 이벤트는 다음과 같습니다.  
   
--   [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)  
+- [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)  
   
--   [IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)  
+- [IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)  
   
--   [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
+- [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
--   [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)  
+- [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)  
   
- `riidEvent`  
- [in] 이벤트의 GUID입니다. 이벤트는으로 캐스팅 되므로 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 이 메서드를 호출 하기 전에이 식별자를 쉽게 전송 되는 이벤트를 확인 합니다.  
+  `riidEvent`  
+  [in] 이벤트의 GUID입니다. 이벤트는으로 캐스팅 되므로 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 이 메서드를 호출 하기 전에이 식별자를 쉽게 전송 되는 이벤트를 확인 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  

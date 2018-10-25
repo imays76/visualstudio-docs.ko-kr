@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812909"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>연습: 프로그래밍 방식으로 그래픽 정보 캡처
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,18 +73,18 @@ ms.locfileid: "49298157"
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis 인터페이스를 정의하려면  
   
--   헤더 파일을 포함한 것과 동일한 파일에 IDXGraphicsAnalysis 인터페이스를 정의합니다.  
+- 헤더 파일을 포함한 것과 동일한 파일에 IDXGraphicsAnalysis 인터페이스를 정의합니다.  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- 편의를 위해 새 헤더 파일에서 이러한 단계를 수행한 다음 앱에서 필요한 위치에 이 파일을 포함할 수 있습니다.  
+  편의를 위해 새 헤더 파일에서 이러한 단계를 수행한 다음 앱에서 필요한 위치에 이 파일을 포함할 수 있습니다.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis 인터페이스 가져오기  
  DirectX 11.2에서 그래픽 정보를 캡처하려면 DXGI 디버그 인터페이스를 가져와야 합니다.  
@@ -171,23 +171,23 @@ ms.locfileid: "49298157"
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>그래픽 로그 파일의 이름 및 위치를 구성하려면  
   
--   그래픽 로그가 임시 디렉터리에 기록되지 않도록 하려면 `#include <vsgcapture.h>` 줄 앞에 다음과 같이 추가합니다.  
+- 그래픽 로그가 임시 디렉터리에 기록되지 않도록 하려면 `#include <vsgcapture.h>` 줄 앞에 다음과 같이 추가합니다.  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     작업 디렉터리에 상대적인 위치 또는 `VSG_DEFAULT_RUN_FILENAME` 의 정의가 절대 경로인 경우에는 절대 경로에 그래픽 로그를 쓰도록 이 값을 정의할 수 있습니다.  
+   작업 디렉터리에 상대적인 위치 또는 `VSG_DEFAULT_RUN_FILENAME` 의 정의가 절대 경로인 경우에는 절대 경로에 그래픽 로그를 쓰도록 이 값을 정의할 수 있습니다.  
   
--   그래픽 로그를 다른 위치에 저장하거나 그래픽 로그에 다른 파일 이름을 지정하려면 `#include <vsgcapture.h>` 줄 앞에 다음과 같이 추가합니다.  
+- 그래픽 로그를 다른 위치에 저장하거나 그래픽 로그에 다른 파일 이름을 지정하려면 `#include <vsgcapture.h>` 줄 앞에 다음과 같이 추가합니다.  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     이 단계를 수행하지 않으면 파일 이름은 default.vsglog가 됩니다. `DONT_SAVE_VSGLOG_TO_TEMP`를 정의하지 않으면 로그 파일의 위치는 임시 디렉터리에 대해 상대적입니다. 그렇지 않은 경우에는 작업 디렉터리에 대해 상대적이고 절대 파일 이름을 지정한 경우에는 다른 위치에 있습니다.  
+   이 단계를 수행하지 않으면 파일 이름은 default.vsglog가 됩니다. `DONT_SAVE_VSGLOG_TO_TEMP`를 정의하지 않으면 로그 파일의 위치는 임시 디렉터리에 대해 상대적입니다. 그렇지 않은 경우에는 작업 디렉터리에 대해 상대적이고 절대 파일 이름을 지정한 경우에는 다른 위치에 있습니다.  
   
- 에 대 한 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 임시 디렉터리의 위치는 각 사용자 및 앱 및 C:\users 같은 위치에 일반적으로 발견 되\\*username*\AppData\Local\Packages\\ *패키지 제품군 이름*\TempState\\합니다. 데스크톱 앱에 대 한 임시 디렉터리의 위치는 각 사용자에 게 특정 및 C:\Users 같은 위치에 일반적으로 발견 되\\*사용자 이름*\AppData\Local\Temp\\합니다.  
+  에 대 한 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 임시 디렉터리의 위치는 각 사용자 및 앱 및 C:\users 같은 위치에 일반적으로 발견 되\\*username*\AppData\Local\Packages\\ *패키지 제품군 이름*\TempState\\합니다. 데스크톱 앱에 대 한 임시 디렉터리의 위치는 각 사용자에 게 특정 및 C:\Users 같은 위치에 일반적으로 발견 되\\*사용자 이름*\AppData\Local\Temp\\합니다.  
   
 > [!NOTE]
 >  특정 위치에 기록하려면 해당 위치에 대한 쓰기 권한이 있어야 합니다. 그렇지 않으면 오류가 발생합니다. [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱은 데이터를 쓸 수 있는 위치에 대해 데스크톱 앱보다 더욱 제한적입니다. 그러므로 특정 위치에 쓰려면 추가 구성이 필요할 수 있습니다.  

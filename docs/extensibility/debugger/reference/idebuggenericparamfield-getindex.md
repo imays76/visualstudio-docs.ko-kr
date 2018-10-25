@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dc623eca2221c0ca9c073e830683739d048f84b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 197796549ce865733f037d99e20382ac74b8a74d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857252"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 이 제네릭 매개 변수의 인덱스를 검색합니다.  
@@ -39,16 +39,16 @@ int GetIndex(
   
 #### <a name="parameters"></a>매개 변수  
  `pIndex`  
- [out] 이 제네릭 매개 변수 인덱스 값입니다.  
+ [out] 이 제네릭 매개 변수의 인덱스 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 예를 들어 Dictionary(K,V)에 대 한 K는 인덱스 0, V는 인덱스 1입니다.  
+ 예를 들어 Dictionary(K,V), K는 인덱스 0에 V 인덱스가 1입니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugGenericParamFieldType** 공개 하는 개체는 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugGenericParamFieldType** 노출 하는 개체를 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  

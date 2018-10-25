@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892093"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>방법: 코드 분석 체크 인 정책 사용 하 여 유지 관리 가능한 코드 적용
 
@@ -47,15 +47,15 @@ Team foundation 버전 제어의 관리자는 체크 인 정책 요구 사항에
 
 2. 다음 규칙에 대 한 확인란을 선택 합니다.
 
-    -   상속 수준: **CA1501 AvoidExcessiveInheritance** -임계값: 5 개 수준 깊이에서 경고 발생
+   - 상속 수준: **CA1501 AvoidExcessiveInheritance** -임계값: 5 개 수준 깊이에서 경고 발생
 
-    -   복잡성: **CA1502 AvoidExcessiveComplexity** -임계값: 25 개가 넘는에서 경고 발생
+   - 복잡성: **CA1502 AvoidExcessiveComplexity** -임계값: 25 개가 넘는에서 경고 발생
 
-    -   유지 관리 인덱스: **CA1505 AvoidUnmaintainableCode** -임계값: 20 개 미만의에서 경고 발생
+   - 유지 관리 인덱스: **CA1505 AvoidUnmaintainableCode** -임계값: 20 개 미만의에서 경고 발생
 
-    -   : 클래스 결합 **CA1506 AvoidExcessiveClassCoupling** -임계값: 클래스에 대해 80 개 및 30 개 이상의 메서드에 대 한 경고
+   - : 클래스 결합 **CA1506 AvoidExcessiveClassCoupling** -임계값: 클래스에 대해 80 개 및 30 개 이상의 메서드에 대 한 경고
 
-    또한 성공적인 빌드를 방지 하기 위해 규칙 위반을 선택 합니다 **경고를 오류로** 규칙 설명 옆의 확인란 합니다.
+     또한 성공적인 빌드를 방지 하기 위해 규칙 위반을 선택 합니다 **경고를 오류로** 규칙 설명 옆의 확인란 합니다.
 
 3. **확인**을 클릭합니다. 새 체크 인 정책을 이제 이후의 체크 인에 적용 됩니다.
 

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b69e67bce9623c9b5b7a6fc943ace0f08ce2d7da
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bcc5d167fdd53a597fb171881ae61281c8280c8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894575"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>방법: 명령줄에서 프로파일러를 사용하여 동적으로 컴파일된 ASP.NET 웹 응용 프로그램 계측 및 자세한 타이밍 데이터 수집
 
@@ -49,24 +49,25 @@ ms.locfileid: "34815245"
 
      **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-    - **/start:trace** 옵션은 프로파일러를 초기화합니다.
+   - **/start:trace** 옵션은 프로파일러를 초기화합니다.
 
-    - **/start**에는 **/output:**`OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.*vsp*) 파일의 이름과 위치를 지정합니다.
+   - **/start**에는 **/output:**`OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.*vsp*) 파일의 이름과 위치를 지정합니다.
 
      **/start:trace** 옵션과 다음 옵션을 함께 사용할 수 있습니다.
 
-    > [!NOTE]
-    > **/user** 및 **/crosssession** 옵션은 대개 ASP.NET 응용 프로그램에 필요합니다.
+     > [!NOTE]
+     > **/user** 및 **/crosssession** 옵션은 대개 ASP.NET 응용 프로그램에 필요합니다.
 
-    |옵션|설명|
-    |------------|-----------------|
-    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|ASP.NET 작업자 프로세스를 소유한 계정의 도메인 및 사용자 이름을 지정합니다. 이 옵션은 프로세스가 로그온한 사용자 이외의 사용자로 실행 중인 경우 필요합니다. Windows 작업 관리자의 **프로세스** 탭에 있는 **사용자 이름** 열에 프로세스 소유자가 나열됩니다.|
-    |[/crosssession](../profiling/crosssession.md)|프로세스 프로파일링 기능을 다른 로그온 세션에서 사용하도록 설정합니다. 이 옵션은 ASP.NET 응용 프로그램이 다른 세션에서 실행 중인 경우 필요합니다. Windows 작업 관리자의 **프로세스** 탭에 있는 **세션 ID** 열에 세션 식별자가 나열됩니다. **/CS**를 **/crosssession**에 대한 약어로 지정할 수 있습니다.|
-    |[/globaloff](../profiling/globalon-and-globaloff.md)|데이터 수집을 일시 중지한 상태로 프로파일러를 시작합니다. [/globalon](../profiling/globalon-and-globaloff.md)을 사용하여 프로파일링을 다시 시작합니다.|
-    |[/counter](../profiling/counter.md) **:** `Config`|`Config`에 지정된 프로세서 성능 카운터에서 정보를 수집합니다. 카운터 정보는 각 프로파일링 이벤트에서 수집되는 데이터에 추가됩니다.|
-    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|프로파일링 중에 수집할 Windows 성능 카운터를 지정합니다.|
-    |[/automark](../profiling/automark.md) **:** `Interval`|**/wincounter**와 함께 사용해야 합니다. Windows 성능 카운터 수집 이벤트 사이에 경과하는 시간(밀리초)을 지정합니다. 기본값은 500ms입니다.|
-    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|프로파일링 중에 수집할 ETW(Windows용 이벤트 추적) 이벤트를 지정합니다. ETW 이벤트는 별도의 파일(.*etl*)로 수집됩니다.|
+     | 옵션 | 설명 |
+     | - | - |
+     | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | ASP.NET 작업자 프로세스를 소유한 계정의 도메인 및 사용자 이름을 지정합니다. 이 옵션은 프로세스가 로그온한 사용자 이외의 사용자로 실행 중인 경우 필요합니다. Windows 작업 관리자의 **프로세스** 탭에 있는 **사용자 이름** 열에 프로세스 소유자가 나열됩니다. |
+     | [/crosssession](../profiling/crosssession.md) | 프로세스 프로파일링 기능을 다른 로그온 세션에서 사용하도록 설정합니다. 이 옵션은 ASP.NET 응용 프로그램이 다른 세션에서 실행 중인 경우 필요합니다. Windows 작업 관리자의 **프로세스** 탭에 있는 **세션 ID** 열에 세션 식별자가 나열됩니다. **/CS**를 **/crosssession**에 대한 약어로 지정할 수 있습니다. |
+     | [/globaloff](../profiling/globalon-and-globaloff.md) | 데이터 수집을 일시 중지한 상태로 프로파일러를 시작합니다. [/globalon](../profiling/globalon-and-globaloff.md)을 사용하여 프로파일링을 다시 시작합니다. |
+     | [/counter](../profiling/counter.md) **:** `Config` | `Config`에 지정된 프로세서 성능 카운터에서 정보를 수집합니다. 카운터 정보는 각 프로파일링 이벤트에서 수집되는 데이터에 추가됩니다. |
+     | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 프로파일링 중에 수집할 Windows 성능 카운터를 지정합니다. |
+     | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter**와 함께 사용해야 합니다. Windows 성능 카운터 수집 이벤트 사이에 경과하는 시간(밀리초)을 지정합니다. 기본값은 500ms입니다. |
+     | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 프로파일링 중에 수집할 ETW(Windows용 이벤트 추적) 이벤트를 지정합니다. ETW 이벤트는 별도의 파일(.*etl*)로 수집됩니다. |
+
 
 3. 일반적인 방법으로 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램을 시작합니다.
 

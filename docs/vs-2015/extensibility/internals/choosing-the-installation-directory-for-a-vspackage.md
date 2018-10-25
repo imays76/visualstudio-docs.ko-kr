@@ -15,12 +15,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ed255d5b8a876ff29e5230c4517ab0b5e04398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266976"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843407"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>VSPackage용 설치 디렉터리 선택
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,17 +54,17 @@ VSPackage 및 해당 지원 파일을 사용자의 파일 시스템에 있어야
   
  [관리 Vspackage](../../extensibility/managing-vspackages.md) 나타냅니다는 레지스트리 항목 위치를 제어 하는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 실제로 VSPackage는 위성 DLL입니다. 그러나 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] LCID 값을 다음 순서에서에 대 한 명명 된 하위 디렉터리에 위성 DLL을 로드 하려고 합니다.  
   
-1.  기본 LCID (VS LCID 영어에 대 한 예를 들어 \1033)  
+1. 기본 LCID (VS LCID 영어에 대 한 예를 들어 \1033)  
   
-2.  기본 보조 언어를 사용 하 여 LCID 기본값입니다.  
+2. 기본 보조 언어를 사용 하 여 LCID 기본값입니다.  
   
-3.  시스템 기본값 LCID입니다.  
+3. 시스템 기본값 LCID입니다.  
   
-4.  기본 보조 언어를 사용 하 여 시스템 기본값 LCID입니다.  
+4. 기본 보조 언어를 사용 하 여 시스템 기본값 LCID입니다.  
   
-5.  미국 영어 (. \1033 또는. \0x409).  
+5. 미국 영어 (. \1033 또는. \0x409).  
   
- VSPackage DLL 리소스 및 SatelliteDll\DllName 레지스트리 진입점을 포함 하는 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 위의 순서를 로드 하려고 합니다.  
+   VSPackage DLL 리소스 및 SatelliteDll\DllName 레지스트리 진입점을 포함 하는 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 위의 순서를 로드 하려고 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [공유 및 버전 관리 Vspackage 중에서 선택](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   

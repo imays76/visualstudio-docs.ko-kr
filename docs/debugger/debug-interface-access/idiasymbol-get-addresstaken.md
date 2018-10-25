@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc5fae2b172299c79b730f75320b9b7b05c3cf4f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8244940212237ed6725017cc92d2ba005ccc0d10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822464"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
-다른 기호가이 기호이 주소를 참조 하는지 여부를 나타내는 플래그를 검색 합니다.  
+다른 기호가이 기호의 주소를 참조 하는지 여부를 나타내는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,16 +34,16 @@ HRESULT get_addressTaken (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 다른 기호에는이 주소; 참조 하는 경우는 그렇지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 다른 기호가이 주소;를 참조 하는 경우는 그렇지 않으면 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예에서 `B` 참조 `A`합니다. 따라서 기호 `A`의 `get_addressTaken` 메서드 반환 `TRUE`합니다.  
+ 다음 예에서 `B` 참조가 `A`합니다. 따라서 기호 `A`의 `get_addressTaken` 메서드가 반환 되는 `TRUE`합니다.  
   
 ```C++  
 int A  = 0;  

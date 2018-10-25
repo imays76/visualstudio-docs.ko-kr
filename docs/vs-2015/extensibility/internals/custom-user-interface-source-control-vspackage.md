@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852260"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>사용자 지정 사용자 인터페이스(소스 제어 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ VSPackage는 Visual Studio 명령 테이블 (.vsct) 파일을 통해 해당 메�
   
  다음은 소스 제어 VSPackage의 활성 상태에 영향을 받는 인터페이스를 보여 줍니다.  
   
--   프로젝트 문서 이벤트를 추적 합니다.  
+- 프로젝트 문서 이벤트를 추적 합니다.  
   
--   솔루션 이벤트입니다.  
+- 솔루션 이벤트입니다.  
   
--   솔루션 지 속성 인터페이스입니다. 비활성 상태일 때 패키지.sln 및.suo 파일에 작성 되지 해야 합니다.  
+- 솔루션 지 속성 인터페이스입니다. 비활성 상태일 때 패키지.sln 및.suo 파일에 작성 되지 해야 합니다.  
   
--   Extender 속성입니다.  
+- Extender 속성입니다.  
   
- 필수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, 또한 소스 컨트롤과 연결 된 모든 선택적 인터페이스 호출 되지 않습니다 때 소스 제어 VSPackage 활성 상태가 아닙니다.  
+  필수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, 또한 소스 컨트롤과 연결 된 모든 선택적 인터페이스 호출 되지 않습니다 때 소스 제어 VSPackage 활성 상태가 아닙니다.  
   
- 경우는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 시작 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 명령 UI 컨텍스트의 현재 기본 소스 제어 VSPackage id입니다. ID로 설정 이렇게 하면 현재 소스 제어 VSPackage를 실제로 로드 하지 않고 IDE에 표시 하기 위해 VSPackage의 정적 UI. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage 등록에 대 한 일시 중지 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 를 통해를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> VSPackage에 대 한 모든 호출 하기 전에 합니다.  
+  경우는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 시작 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 명령 UI 컨텍스트의 현재 기본 소스 제어 VSPackage id입니다. ID로 설정 이렇게 하면 현재 소스 제어 VSPackage를 실제로 로드 하지 않고 IDE에 표시 하기 위해 VSPackage의 정적 UI. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage 등록에 대 한 일시 중지 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 를 통해를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> VSPackage에 대 한 모든 호출 하기 전에 합니다.  
   
- 다음 표에서 방법에 대 한 특정 세부 정보를 설명 합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 다른 UI 항목을 숨깁니다.  
+  다음 표에서 방법에 대 한 특정 세부 정보를 설명 합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 다른 UI 항목을 숨깁니다.  
   
 |UI 항목|설명|  
 |-------------|-----------------|  

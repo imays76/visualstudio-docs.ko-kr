@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc434e35755b04054d1e24da97e8a4699af7df0e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870779"
 ---
 # <a name="content-definition-dialog-box"></a>콘텐츠 정의 대화 상자
 
@@ -26,7 +26,7 @@ ms.locfileid: "36757953"
 다음 표에 사용자 인터페이스 (UI) 요소에는 **상관 관계 초기화** 대화 상자:
 
 |UI 요소|설명|
-|----------------|-----------------|
+|-|-----------------|
 |**메시지**|메시지 콘텐츠를 지정 합니다 **메시지 데이터** 식 입력란 및 형식을 사용 하 여는 **메시지 유형을** 드롭다운 목록 상자입니다. 기본적으로 **콘텐츠 정의** 사용 하는 <xref:System.ServiceModel.Activities.ReceiveMessageContent>필요한를 <xref:System.ServiceModel.Channels.Message> 또는 메시지 계약 형식을 워크플로 서비스 정의 내에서.|
 |**매개 변수**|클릭 합니다 **매개 변수** 라디오 단추를 사용 하 여 <xref:System.ServiceModel.Activities.ReceiveParametersContent>, 필요한 데이터 계약입니다. 데이터 표를 사용하여 현재 워크플로의 가변 매개 변수에 값을 지정할 <xref:System.Activities.OutArgument> 키/값 쌍의 제네릭 컬렉션을 설정합니다.|
 

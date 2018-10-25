@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2f919e1dce6864fa25348acd9c9858f9e4022f8
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 990b55f4ba78f32acba40c325ade596f5628c54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893938"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 정의의 속성
 DslDefinition 속성 정의 *도메인별 언어* 버전 번호와 같은 정의 속성입니다. DslDefinition 속성에 표시 합니다 **속성** 창에서 다이어그램의 빈 영역을 클릭할 때 합니다 *도메인별 언어 디자이너*.
@@ -26,7 +26,7 @@ DslDefinition 속성 정의 *도메인별 언어* 버전 번호와 같은 정의
  DslDefinition 다음 표의 속성이 있습니다.
 
 |속성|설명|기본|
-|--------------|-----------------|-------------|
+|-|-|-|
 |액세스 한정자|도메인 클래스에 대 한 액세스 한정자가 public 또는 internal 인지를 결정 합니다.|public|
 |사용자 지정 특성|사용자 지정 도메인 클래스에 대 한 특성을 정의 합니다.<br /><br /> **참고** 특성을 추가 하려면 찾아보기 단추를 사용 합니다.|\<없음 >|
 |회사 이름|시스템 레지스트리에 현재 회사 이름의 이름입니다.|현재 회사 이름|

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829471"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
 디자인 타임 T4 텍스트 템플릿을 Visual Studio 프로젝트에서 프로그램 코드 및 기타 파일을 생성할 수 있습니다. 데이터에 따라 생성 되는 코드를 달라 지도록 템플릿을 작성 일반적으로 *모델*합니다. 모델은 파일 또는 응용 프로그램의 요구 사항에 대 한 키 정보가 포함 된 데이터베이스.
@@ -40,103 +40,102 @@ ms.locfileid: "47860409"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Visual Studio에서 디자인 타임 T4 텍스트 템플릿을 만들려면
 
-1.  Visual Studio 프로젝트를 만들거나 기존 항목을 엽니다.
+1. Visual Studio 프로젝트를 만들거나 기존 항목을 엽니다.
 
-     예를 들어 합니다 **파일** 메뉴에서 선택 **새로 만들기** > **프로젝트**합니다.
+    예를 들어 합니다 **파일** 메뉴에서 선택 **새로 만들기** > **프로젝트**합니다.
 
-2.  텍스트 템플릿 파일을 프로젝트에 추가 하 고 이름을 확장명을 가진 **.tt**합니다.
+2. 텍스트 템플릿 파일을 프로젝트에 추가 하 고 이름을 확장명을 가진 **.tt**합니다.
 
-     이렇게 하려면 **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴에서 선택 **추가** > **새 항목**합니다. 에 **새 항목 추가** 대화 상자 선택 **텍스트 템플릿** 가운데 창에서.
+    이렇게 하려면 **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴에서 선택 **추가** > **새 항목**합니다. 에 **새 항목 추가** 대화 상자 선택 **텍스트 템플릿** 가운데 창에서.
 
-     다음에 유의 합니다 **사용자 지정 도구** 파일의 속성은 **TextTemplatingFileGenerator**합니다.
+    다음에 유의 합니다 **사용자 지정 도구** 파일의 속성은 **TextTemplatingFileGenerator**합니다.
 
-3.  파일을 엽니다. 다음 지시문이 이미 포함되어 있습니다.
+3. 파일을 엽니다. 다음 지시문이 이미 포함되어 있습니다.
 
-    ```
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    ```
+   ```
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   ```
 
-     [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에 템플릿을 추가한 경우 언어 특성은 "`VB`"입니다.
+    [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에 템플릿을 추가한 경우 언어 특성은 "`VB`"입니다.
 
-4.  파일 끝에 원하는 텍스트를 추가합니다. 예를 들면 다음과 같습니다.
+4. 파일 끝에 원하는 텍스트를 추가합니다. 예를 들면 다음과 같습니다.
 
-    ```
-    Hello, world!
-    ```
+   ```
+   Hello, world!
+   ```
 
-5.  파일을 저장합니다.
+5. 파일을 저장합니다.
 
-     표시 될 수 있습니다는 **보안 경고** 템플릿을 실행 하려는 것인지 묻는 메시지 상자입니다. **확인**을 클릭합니다.
+    표시 될 수 있습니다는 **보안 경고** 템플릿을 실행 하려는 것인지 묻는 메시지 상자입니다. **확인**을 클릭합니다.
 
-6.  **솔루션 탐색기**, 템플릿 파일 노드를 확장 하 고 확장명을 가진 파일을 보면 **.txt**합니다. 이 파일에 템플릿에서 생성된 텍스트가 포함되어 있습니다.
+6. **솔루션 탐색기**, 템플릿 파일 노드를 확장 하 고 확장명을 가진 파일을 보면 **.txt**합니다. 이 파일에 템플릿에서 생성된 텍스트가 포함되어 있습니다.
 
-    > [!NOTE]
-    >  프로젝트는 Visual Basic 프로젝트를 클릭 해야 **모든 파일 표시** 하려면 출력 파일을 참조 하세요.
+   > [!NOTE]
+   >  프로젝트는 Visual Basic 프로젝트를 클릭 해야 **모든 파일 표시** 하려면 출력 파일을 참조 하세요.
 
 ### <a name="regenerating-the-code"></a>코드 다시 생성
  다음과 같은 경우에는 템플릿이 실행되어 보조 파일이 생성됩니다.
 
--   템플릿을 편집 하 고 다른 Visual Studio 창으로 포커스를 변경 합니다.
+- 템플릿을 편집 하 고 다른 Visual Studio 창으로 포커스를 변경 합니다.
 
--   템플릿을 저장하는 경우
+- 템플릿을 저장하는 경우
 
--   클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 작업에서는 Visual Studio 솔루션에서 모든 템플릿을 변환 합니다.
+- 클릭 **모든 템플릿 변형** 에 **빌드** 메뉴. 이 작업에서는 Visual Studio 솔루션에서 모든 템플릿을 변환 합니다.
 
--   **솔루션 탐색기**의 바로 가기 메뉴에서 파일, 선택 **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.
+- **솔루션 탐색기**의 바로 가기 메뉴에서 파일, 선택 **사용자 지정 도구 실행**합니다. 선택한 일부 템플릿을 변형하려면 이 방법을 사용합니다.
 
- 템플릿이 읽는 데이터 파일이 변경 된 경우 실행 되도록 Visual Studio 프로젝트를 설정할 수 있습니다. 자세한 내용은 [코드를 자동으로 다시 생성](#Regenerating)합니다.
+  템플릿이 읽는 데이터 파일이 변경 된 경우 실행 되도록 Visual Studio 프로젝트를 설정할 수 있습니다. 자세한 내용은 [코드를 자동으로 다시 생성](#Regenerating)합니다.
 
 ## <a name="generating-variable-text"></a>변수 텍스트 생성
  텍스트 템플릿에서는 프로그램 코드를 사용하여 생성된 파일 내용이 바뀌도록 할 수 있습니다.
 
 #### <a name="to-generate-text-by-using-program-code"></a>프로그램 코드를 사용하여 텍스트를 생성하려면
 
-1.  `.tt` 파일의 내용을 다음과 같이 변경합니다.
+1. `.tt` 파일의 내용을 다음과 같이 변경합니다.
 
-    ```csharp
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    <#int top = 10;
+   ```csharp
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   <#int top = 10;
 
-    for (int i = 0; i<=top; i++)
-    { #>
+   for (int i = 0; i<=top; i++)
+   { #>
+      The square of <#= i #> is <#= i*i #>
+   <# } #>
+   ```
+
+   ```vb
+   <#@ template hostspecific="false" language="VB" #>
+   <#@ output extension=".txt" #>
+   <#Dim top As Integer = 10
+
+   For i As Integer = 0 To top
+   #>
        The square of <#= i #> is <#= i*i #>
-    <# } #>
-    ```
+   <#
+   Next
+   #>
+   ```
 
-    ```vb
-    <#@ template hostspecific="false" language="VB" #>
-    <#@ output extension=".txt" #>
-    <#Dim top As Integer = 10
+2. .tt 파일을 저장하고 생성된 .txt 파일을 다시 검사합니다. 숫자 0에서 10까지를 각각 제곱한 값이 표시됩니다.
 
-    For i As Integer = 0 To top
-    #>
-        The square of <#= i #> is <#= i*i #>
-    <#
-    Next
-    #>
+   위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.
 
-    ```
-
-2.  .tt 파일을 저장하고 생성된 .txt 파일을 다시 검사합니다. 숫자 0에서 10까지를 각각 제곱한 값이 표시됩니다.
-
- 위의 코드에서 문은 `<#...#>` 내에 포함되어 있으며 단일 식은 `<#=...#>` 내에 포함되어 있습니다. 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.
-
- [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.
+   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 생성 코드를 작성하는 경우 `template` 지시문은 `language="VB"`를 포함해야 합니다. 기본값은 `"C#"`입니다.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>디자인 타임 T4 텍스트 템플릿 디버그
  텍스트 템플릿을 디버그하려면
 
--   먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.
+- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.
 
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
--   일반 코드에서와 같은 방식으로 템플릿에 중단점을 설정합니다.
+- 일반 코드에서와 같은 방식으로 템플릿에 중단점을 설정합니다.
 
--   선택할 **T4 템플릿 디버그** 솔루션 탐색기에서 텍스트 템플릿 파일의 바로 가기 메뉴에서.
+- 선택할 **T4 템플릿 디버그** 솔루션 탐색기에서 텍스트 템플릿 파일의 바로 가기 메뉴에서.
 
- 템플릿이 실행된 후 중단점에서 중지됩니다. 일반적인 방식으로 변수를 점검하고 코드를 단계별로 실행할 수 있습니다.
+  템플릿이 실행된 후 중단점에서 중지됩니다. 일반적인 방식으로 변수를 점검하고 코드를 단계별로 실행할 수 있습니다.
 
 > [!TIP]
 >  `debug="true"`를 사용하는 경우 생성된 코드에 줄 번호 매기기 지시문이 추가로 삽입되므로 해당 코드가 텍스트 템플릿에 보다 정확하게 매핑됩니다. 이 지시문이 없으면 중단점으로 인해 실행이 잘못된 상태로 중지될 수 있습니다.
@@ -203,13 +202,13 @@ ms.locfileid: "47860409"
 ### <a name="structuring-text-templates"></a>텍스트 템플릿 구조 지정
  실제 프로그래밍에서는 대개 템플릿 코드를 다음의 두 부분으로 구분합니다.
 
--   변수에서 값은 설정하지만 텍스트 블록은 포함하지 않는 구성(데이터 수집) 부분. 위의 예에서 이 부분은 `properties` 초기화입니다.
+- 변수에서 값은 설정하지만 텍스트 블록은 포함하지 않는 구성(데이터 수집) 부분. 위의 예에서 이 부분은 `properties` 초기화입니다.
 
-     이 부분은 저장소 내 모델을 생성하며 일반적으로 모델 파일을 읽으므로 "모델" 섹션이라고 하는 경우도 있습니다.
+   이 부분은 저장소 내 모델을 생성하며 일반적으로 모델 파일을 읽으므로 "모델" 섹션이라고 하는 경우도 있습니다.
 
--   변수의 값을 사용하는 텍스트 생성 부분. 위의 예에서는 `foreach(...){...}`에 해당합니다.
+- 변수의 값을 사용하는 텍스트 생성 부분. 위의 예에서는 `foreach(...){...}`에 해당합니다.
 
- 코드를 반드시 이와 같이 분리해야 하는 것은 아니지만 이 스타일을 사용하면 텍스트를 포함하는 부분을 보다 단순하게 작성하여 템플릿을 더 쉽게 읽을 수 있습니다.
+  코드를 반드시 이와 같이 분리해야 하는 것은 아니지만 이 스타일을 사용하면 텍스트를 포함하는 부분을 보다 단순하게 작성하여 템플릿을 더 쉽게 읽을 수 있습니다.
 
 ## <a name="reading-files-or-other-sources"></a>파일 또는 기타 소스 읽기
  모델 파일이나 데이터베이스에 액세스하기 위해 템플릿 코드는 System.XML 등의 어셈블리를 사용할 수 있습니다. 이러한 어셈블리에 액세스하려면 다음과 같은 지시문을 삽입해야 합니다.
@@ -236,7 +235,6 @@ ms.locfileid: "47860409"
 <# For Each propertyName As String In
              File.ReadLines("C:\\propertyList.txt")
 #>
-
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>상대 경로 이름을 사용하여 파일 열기
@@ -244,7 +242,6 @@ ms.locfileid: "47860409"
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
-
 ```
 
  그런 후에 다음과 같은 코드를 작성할 수 있습니다.
@@ -256,7 +253,6 @@ ms.locfileid: "47860409"
 ...
 <#  foreach (string propertyName in properties { #>
 ...
-
 ```
 
 ```vb
@@ -267,7 +263,6 @@ ms.locfileid: "47860409"
 <#   For Each propertyName As String In properties
 ...
 #>
-
 ```
 
  현재 템플릿 파일의 이름을 식별하는 `this.Host.TemplateFile`을 사용할 수도 있습니다.
@@ -287,7 +282,6 @@ ms.locfileid: "47860409"
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 > [!TIP]
@@ -326,37 +320,39 @@ Warning("A warning message");
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>기존 파일을 디자인 타임 템플릿으로 변환하려면
 
-1.  Visual Studio 프로젝트에 추가 등 생성 하려는 형식의 파일을 `.cs`, `.vb`, 또는 `.resx` 파일입니다.
+1. Visual Studio 프로젝트에 추가 등 생성 하려는 형식의 파일을 `.cs`, `.vb`, 또는 `.resx` 파일입니다.
 
-2.  새 파일을 테스트하여 작동하는지 확인합니다.
+2. 새 파일을 테스트하여 작동하는지 확인합니다.
 
-3.  솔루션 탐색기에서 파일 이름 확장명을 변경 **.tt**합니다.
+3. 솔루션 탐색기에서 파일 이름 확장명을 변경 **.tt**합니다.
 
-4.  다음 속성을 확인 합니다 **.tt** 파일:
+4. 다음 속성을 확인 합니다 **.tt** 파일:
 
-    |||
-    |-|-|
-    |**사용자 지정 도구 =**|**TextTemplatingFileGenerator**|
-    |**빌드 작업 =**|**없음**|
 
-5.  파일의 시작 부분에 다음 줄을 삽입합니다.
+   | | |
+   |-|-|
+   | **사용자 지정 도구 =** | **TextTemplatingFileGenerator** |
+   | **빌드 작업 =** | **없음** |
 
-    ```
-    <#@ template debug="false" hostspecific="false" language="C#" #>
-    <#@ output extension=".cs" #>
-    ```
 
-     [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 템플릿의 생성 코드를 작성하려면 `language` 특성을 `"VB"` 대신 `"C#"`로 설정합니다.
+5. 파일의 시작 부분에 다음 줄을 삽입합니다.
 
-     `extension` 특성을 `.cs`, `.resx`, `.xml` 등 생성하려는 파일 형식의 파일 이름 확장명으로 설정합니다.
+   ```
+   <#@ template debug="false" hostspecific="false" language="C#" #>
+   <#@ output extension=".cs" #>
+   ```
 
-6.  파일을 저장합니다.
+    [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]에서 템플릿의 생성 코드를 작성하려면 `language` 특성을 `"VB"` 대신 `"C#"`로 설정합니다.
 
-     지정한 확장명으로 보조 파일이 작성됩니다. 이 파일은 해당 파일 형식에 적절한 속성을 포함합니다. 예를 들어 합니다 **빌드 작업** .cs 파일의 속성이 **컴파일**합니다.
+    `extension` 특성을 `.cs`, `.resx`, `.xml` 등 생성하려는 파일 형식의 파일 이름 확장명으로 설정합니다.
 
-     생성된 파일의 내용이 원래 파일과 같은지 확인합니다.
+6. 파일을 저장합니다.
 
-7.  달라지도록 하려는 파일 부분을 확인합니다. 특정 상황에서만 표시되는 부분이나 반복되는 부분, 특정 값이 달라지는 부분을 예로 들 수 있습니다. 생성 코드를 삽입하고 파일을 저장한 다음 보조 파일이 올바르게 생성되는지 확인합니다. 이 단계를 반복합니다.
+    지정한 확장명으로 보조 파일이 작성됩니다. 이 파일은 해당 파일 형식에 적절한 속성을 포함합니다. 예를 들어 합니다 **빌드 작업** .cs 파일의 속성이 **컴파일**합니다.
+
+    생성된 파일의 내용이 원래 파일과 같은지 확인합니다.
+
+7. 달라지도록 하려는 파일 부분을 확인합니다. 특정 상황에서만 표시되는 부분이나 반복되는 부분, 특정 값이 달라지는 부분을 예로 들 수 있습니다. 생성 코드를 삽입하고 파일을 저장한 다음 보조 파일이 올바르게 생성되는지 확인합니다. 이 단계를 반복합니다.
 
 ## <a name="guidelines-for-code-generation"></a>코드 생성 지침
  참조 하세요 [T4 텍스트 템플릿 작성에 대 한 지침](../modeling/guidelines-for-writing-t4-text-templates.md)합니다.
@@ -364,7 +360,7 @@ Warning("A warning message");
 ## <a name="next-steps"></a>다음 단계
 
 |다음 단계|항목|
-|---------------|-----------|
+|-|-|
 |보조 함수, 포함된 파일 및 외부 데이터를 사용하는 코드로 고급 텍스트 템플릿을 작성하고 디버그합니다.|[T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)|
 |런타임에 템플릿에서 문서를 생성합니다.|[T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)|
 |Visual Studio 외부에서 텍스트 생성을 실행 합니다.|[TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)|

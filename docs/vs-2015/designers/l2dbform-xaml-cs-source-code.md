@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817539"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ ms.locfileid: "49180609"
   
  그러나 선택된 책 항목을 제거하는 핵심 작업은 다음 두 문으로만 수행됩니다.  
   
--   먼저 목록 상자에서 현재 선택된 항목과 연결된 책 요소가 검색됩니다.  
+- 먼저 목록 상자에서 현재 선택된 항목과 연결된 책 요소가 검색됩니다.  
   
-    ```  
-    XElement selBook = (XElement)lbBooks.SelectedItem;   
-    ```  
+  ```  
+  XElement selBook = (XElement)lbBooks.SelectedItem;   
+  ```  
   
--   그런 다음 이 요소가 데이터 공급자에서 삭제됩니다.  
+- 그런 다음 이 요소가 데이터 공급자에서 삭제됩니다.  
   
-    ```  
-    selBook.Remove();  
-    ```  
+  ```  
+  selBook.Remove();  
+  ```  
   
- 동적 데이터 바인딩을 통해 프로그램의 UI가 자동으로 업데이트됩니다.  
+  동적 데이터 바인딩을 통해 프로그램의 UI가 자동으로 업데이트됩니다.  
   
 ## <a name="example"></a>예제  
   

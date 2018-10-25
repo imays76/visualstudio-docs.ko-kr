@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00ad8f91e738cb98aeba93b69cb47c6ab644aa3f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883479"
 ---
 # <a name="how-to-programmatically-save-documents"></a>방법: 프로그래밍 방식으로 문서 저장
   Microsoft Office Word 문서를 저장 하는 방법은 여러 가지가 있습니다. 문서의 이름을 변경 하지 않고 문서를 저장할 수 있습니다 하거나 새 이름으로 문서를 저장할 수 있습니다.  
@@ -32,19 +32,19 @@ ms.locfileid: "35673936"
   
 ### <a name="to-save-the-document-associated-with-a-document-level-customization"></a>문서 수준 사용자 지정을 사용 하 여 연결 된 문서를 저장 하려면  
   
-1.  <xref:Microsoft.Office.Tools.Word.Document> 클래스의 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 메서드를 호출합니다. 이 코드 예제를 사용하려면 프로젝트의 `ThisDocument` 클래스에서 실행합니다.  
+1.  <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 클래스의 <xref:Microsoft.Office.Tools.Word.Document> 메서드를 호출합니다. 이 코드 예제를 사용하려면 프로젝트의 `ThisDocument` 클래스에서 실행합니다.  
   
      [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]  
   
 ### <a name="to-save-the-active-document"></a>활성 문서를 저장 하려면  
   
-1.  호출 된 <xref:Microsoft.Office.Interop.Word._Document.Save%2A> 활성 문서에 대 한 메서드. 이 코드 예제를 사용하려면 프로젝트의 `ThisDocument` 또는 `ThisAddIn` 클래스에서 실행합니다.  
+1. 호출 된 <xref:Microsoft.Office.Interop.Word._Document.Save%2A> 활성 문서에 대 한 메서드. 이 코드 예제를 사용하려면 프로젝트의 `ThisDocument` 또는 `ThisAddIn` 클래스에서 실행합니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
-     [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
+    [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
+    [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
   
- 저장 하려는 문서 활성 문서 인지 확실 하지 않은 경우 해당 이름으로를 참조할 수 있습니다.  
+   저장 하려는 문서 활성 문서 인지 확실 하지 않은 경우 해당 이름으로를 참조할 수 있습니다.  
   
 ### <a name="to-save-a-document-specified-by-name"></a>이름별로 지정 된 문서를 저장 하려면  
   

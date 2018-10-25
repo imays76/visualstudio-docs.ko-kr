@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f870468852b7de53d22a66683bc7c8f64ffcc174
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848529"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>옵션, 텍스트 편집기, JavaScript, IntelliSense
 **옵션** 대화 상자의 **IntelliSense** 페이지를 사용하여 JavaScript용 IntelliSense의 동작에 영향을 주는 설정을 수정합니다. 메뉴 모음에서 **도구** , **옵션**, **텍스트 편집기** , **IntelliSense**, **IntelliSense**, **도구.** 페이지에 액세스할 수 있습니다.
@@ -67,13 +67,13 @@ ms.locfileid: "39179751"
 
  미리 정의된 참조 그룹을 사용하여 다른 JavaScript 프로젝트의 범위에 있는 특정 IntelliSense .js 파일을 지정할 수 있습니다. 다음 네 가지 참조 그룹을 사용할 수 있습니다.
 
--   암시적(Windows *버전*), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱용 이 그룹에 포함된 파일은 JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.
+- 암시적(Windows *버전*), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱용 이 그룹에 포함된 파일은 JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.
 
--   암시적(웹), HTML5 프로젝트용 이 그룹에 포함된 파일은 이러한 프로젝트 형식용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.
+- 암시적(웹), HTML5 프로젝트용 이 그룹에 포함된 파일은 이러한 프로젝트 형식용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.
 
--   전용 작업자 참조 그룹, HTML5 웹 작업자용. 이 그룹에 지정된 파일은 전용 근로자 참조 그룹을 명시적으로 참조하는 .js 파일 범위에 속합니다.
+- 전용 작업자 참조 그룹, HTML5 웹 작업자용. 이 그룹에 지정된 파일은 전용 근로자 참조 그룹을 명시적으로 참조하는 .js 파일 범위에 속합니다.
 
--   일반, 다른 JavaScript 프로젝트 형식용
+- 일반, 다른 JavaScript 프로젝트 형식용
 
 **포함된 파일**
 

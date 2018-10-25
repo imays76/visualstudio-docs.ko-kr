@@ -19,12 +19,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850050"
 ---
 # <a name="full-text-search-tips"></a>전체 텍스트 검색 팁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ ms.locfileid: "49303435"
  여러 단어를 포함하는 검색 문자열(예: "word1 word2")을 지정하는 경우 해당 문자열은 "word1 AND word2"를 입력하는 것과 같으며, 검색 문자열의 개별 단어를 모두 포함하는 항목만 반환됩니다.  
   
 > [!IMPORTANT]
->  1.  문구 검색은 지원되지 않습니다. 검색 문자열에 여러 단어를 지정하는 경우 지정한 단어를 모두 포함하지만 지정한 정확한 문구가 아닌 항목도 반환됩니다.  
-> 2.  검색 문구에서 단어 간의 관계를 지정하려면 논리 연산자를 사용합니다. AND, OR, NOT, NEAR 등의 논리 연산자를 포함하여 검색을 구체화할 수 있습니다. 예를 들어 "declaring NEAR union"을 검색하는 경우 "declaring" 및 "union" 단어를 포함하고 그 사이에 몇 단어만 있는 항목이 검색 결과에 포함됩니다. 자세한 내용은 [검색 식의 논리 연산자](../ide/logical-operators-in-search-expressions.md)를 참조하세요.  
+> 1. 문구 검색은 지원되지 않습니다. 검색 문자열에 여러 단어를 지정하는 경우 지정한 단어를 모두 포함하지만 지정한 정확한 문구가 아닌 항목도 반환됩니다.  
+>    2.  검색 문구에서 단어 간의 관계를 지정하려면 논리 연산자를 사용합니다. AND, OR, NOT, NEAR 등의 논리 연산자를 포함하여 검색을 구체화할 수 있습니다. 예를 들어 "declaring NEAR union"을 검색하는 경우 "declaring" 및 "union" 단어를 포함하고 그 사이에 몇 단어만 있는 항목이 검색 결과에 포함됩니다. 자세한 내용은 [검색 식의 논리 연산자](../ide/logical-operators-in-search-expressions.md)를 참조하세요.  
   
 ### <a name="filters"></a>필터  
  고급 검색 연산자를 사용하여 검색 결과를 더욱 제한할 수 있습니다. 도움말에는 전체 텍스트 검색 결과를 필터링하는 데 사용할 수 있는 세 가지 범주(제목, 코드 및 키워드)가 포함되어 있습니다. 자세한 내용은 [검색 식의 고급 검색 연산자](../ide/advanced-search-operators-in-search-expressions.md)를 참조하세요.  

@@ -15,27 +15,27 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97084a1fe66bb84c56e1f6452397df9128f4d08f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdce9cb5e6499066c7e96abe895db1505f952011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826626"
 ---
 # <a name="how-to-troubleshoot-services"></a>방법: 서비스 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 서비스를 가져오려고 할 때 발생할 수 있는 몇 가지 일반적인 문제는  
   
--   서비스에 등록 되지 않았습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
+- 서비스에 등록 되지 않았습니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
   
--   서비스 유형별이 아닌 인터페이스 형식에서 서비스 요청 됩니다.  
+- 서비스 유형별이 아닌 인터페이스 형식에서 서비스 요청 됩니다.  
   
--   해당 서비스를 요청 하는 VSPackage에 배치 된 했습니다.  
+- 해당 서비스를 요청 하는 VSPackage에 배치 된 했습니다.  
   
--   잘못 된 서비스 공급자가 사용 됩니다.  
+- 잘못 된 서비스 공급자가 사용 됩니다.  
   
- 하는 경우 요청된 된 서비스를 가져올 수 없으며 호출 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> null을 반환 합니다. 서비스 요청 후 항상 null에 대 한 테스트 해야 합니다.  
+  하는 경우 요청된 된 서비스를 가져올 수 없으며 호출 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> null을 반환 합니다. 서비스 요청 후 항상 null에 대 한 테스트 해야 합니다.  
   
 ```csharp  
 IVsActivityLog log =   

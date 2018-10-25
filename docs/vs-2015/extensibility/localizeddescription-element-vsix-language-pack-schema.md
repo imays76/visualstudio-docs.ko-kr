@@ -13,12 +13,12 @@ ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d136ed60417d51a3fd1cf536ad63e5602b44a26c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbcad72308e9b78a5fcc6865c6070cc887eed06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826481"
 ---
 # <a name="localizeddescription-element-vsix-language-pack-schema"></a>LocalizedDescription 요소 (VSIX 언어 팩 스키마)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,12 +57,12 @@ ms.locfileid: "49255725"
   
 ## <a name="element-information"></a>요소 정보  
   
-|||  
-|-|-|  
-|네임스페이스|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|스키마 이름|VSIX 언어 팩 스키마|  
-|유효성 검사 파일|VSIXLanguagePackSchema.xsd|  
-|비워 둘 수 있습니다.|적용할 수 없음|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    네임스페이스    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   스키마 이름   |                 VSIX 언어 팩 스키마                 |
+| 유효성 검사 파일 |                VSIXLanguagePackSchema.xsd                 |
+|  비워 둘 수 있습니다.   |                      적용할 수 없음                       |
   
 ## <a name="see-also"></a>참고 항목  
  [VSX 언어 팩 스키마 참조](../extensibility/vsx-language-pack-schema-reference.md)   

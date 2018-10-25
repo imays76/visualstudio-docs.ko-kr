@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839611"
 ---
 # <a name="import-element-msbuild"></a>Import 요소(MSBuild)
 한 프로젝트 파일의 내용을 다른 프로젝트 파일로 가져옵니다.  
@@ -55,10 +55,10 @@ ms.locfileid: "39077492"
 
 ### <a name="parent-elements"></a>부모 요소  
 
-|요소|설명|  
-|-------------|-----------------|  
-|[프로젝트](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
-|[ImportGroup](../msbuild/importgroup-element.md)|선택적인 조건으로 그룹화된 `Import` 요소의 컬렉션을 포함합니다.|  
+| 요소 | 설명 |
+| - | - |
+| [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
+| [ImportGroup](../msbuild/importgroup-element.md) | 선택적인 조건으로 그룹화된 `Import` 요소의 컬렉션을 포함합니다. |
 
 ## <a name="remarks"></a>설명  
  `Import` 요소를 사용하면 여러 프로젝트 파일에 공통된 코드를 다시 사용할 수 있습니다. 이렇게 하면 공유 코드에 대한 업데이트가 그것을 가져오는 모든 프로젝트에 전파되므로 코드를 더 쉽게 유지 관리할 수 있습니다.  
@@ -75,7 +75,7 @@ ms.locfileid: "39077492"
 
 > [!NOTE]
 >  조건부 import 문은 명령줄 MSBuild에서 작동하지만, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE(통합 개발 환경)에서는 MSBuild와 작동하지 않습니다. 조건부 가져오기는 프로젝트를 로드할 때 설정된 구성 및 플랫폼 값을 사용하여 평가됩니다. 이후 프로젝트 파일의 조건을 재평가하도록 요구하는 변경(예: 플랫폼 변경)이 발생하는 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 는 속성 및 항목에 대한 조건은 재평가하지만 가져오기에 대한 조건은 재평가하지 않습니다. 가져오기 조건부는 재평가되지 않으므로 가져오기는 건너뜁니다.  
->   
+> 
 >  이 문제를 해결하려면 조건부 가져오기를 *.targets* 파일에 넣거나 조건부 블록(예: [Choose 요소(MSBuild)](../msbuild/choose-element-msbuild.md) 블록)에 코드를 넣습니다.  
 
 ## <a name="wildcards"></a>와일드카드  

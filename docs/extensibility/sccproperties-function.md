@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d126a4691332f1121ebfc99a84b180d1e99f3d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f8067464802899ce8966d63d702679d216b6377
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875978"
 ---
 # <a name="sccproperties-function"></a>SccProperties 함수
-이 함수는 파일이 나 프로젝트에 대 한 소스 제어 속성을 표시합니다.  
+이 함수는 파일 또는 프로젝트에 대 한 소스 제어 속성을 표시합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,30 +37,30 @@ SCCRTN SccProperties (
   
 #### <a name="parameters"></a>매개 변수  
  pvContext  
- [in] 소스 제어 플러그 인 컨텍스트 구조입니다.  
+ [in] 원본 제어 플러그 인 상황에 맞는 구조입니다.  
   
  hWnd  
- [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에를 부모로 사용할 수 있는 IDE 창 핸들입니다.  
+ [in] 소스 제어 플러그 인을 제공 하는 모든 대화 상자에 대 한 부모로 사용할 수 있는 IDE 창 핸들입니다.  
   
  lpFileName  
- [in] 파일 또는 프로젝트의 정규화 된 경로 이름입니다.  
+ [in] 프로젝트 파일의 정규화 된 경로 이름입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 소스 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환:  
+ 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
 |값|설명|  
 |-----------|-----------------|  
-|SCC_OK|속성이는 성공적으로 표시 되었습니다.|  
-|SCC_I_RELOADFILE|버전 제어 시스템이 IDE이이 파일을 다시 로드 해야 하므로 파일 속성을 수정 했습니다.|  
+|SCC_OK|속성은 성공적으로 표시 되었습니다.|  
+|SCC_I_RELOADFILE|버전 제어 시스템은 IDE이이 파일을 다시 로드 해야 하므로 파일 속성을 수정입니다.|  
 |SCC_E_PROJNOTOPEN|지정된 된 프로젝트에 소스 제어에서 열리지 않았습니다.|  
-|SCC_E_NOTAUTHORIZED|이 파일 또는 프로젝트의 속성을 보는 사용자 권한이 없습니다.|  
-|SCC_E_FILENOTCONTROLLED|지정 된 파일 또는 프로젝트 제어 하지 않는 소스입니다.|  
+|SCC_E_NOTAUTHORIZED|사용자는이 파일 또는 프로젝트의 속성을 볼 수 있는 권한이 없습니다.|  
+|SCC_E_FILENOTCONTROLLED|지정 된 파일 또는 프로젝트 아니며 소스 제어|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|알 수 없거나 일반 오류가 발생 했습니다.|  
   
 ## <a name="remarks"></a>설명  
- 소스 제어 플러그 인 대화 상자에서 속성을 표시합니다.  
+ 소스 제어 플러그 인 자체 대화 상자에서 속성을 표시합니다.  
   
- 속성 소스 제어 플러그 인 정의 되 고 플러그 인에서 플러그 인에 다를 수 있습니다. 반환 해야 하는 경우 플러그 인을 사용 하면 파일의 소스 제어 속성을 변경 하려면, `SCC_I_RELOAD` 신호를 보내이 파일 또는 프로젝트 다시 로드 해야 하는 IDE.  
+ 속성을 원본 제어 플러그 인 정의 되 고 플러그 인에서 플러그 인에 다를 수 있습니다. 반환 해야 하는 경우 플러그 인을 사용 하면 파일의 소스 제어 속성을 변경 하려면, `SCC_I_RELOAD` 이 파일 또는 프로젝트 다시 로드 해야 하는 IDE를 알립니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

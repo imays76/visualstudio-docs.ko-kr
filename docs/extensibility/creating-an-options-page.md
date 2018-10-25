@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea56cf7db42d7028856b88fb8572f5a4024fe07
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876752"
 ---
 # <a name="create-an-options-page"></a>옵션 페이지 만들기
 이 연습을 검토 하 고 속성을 설정 하려면 속성 표를 사용 하는 간단한 도구/옵션 페이지를 만듭니다.  
@@ -35,9 +35,9 @@ ms.locfileid: "39498774"
   
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>VSIX 프로젝트를 만들고 VSPackage를 추가 하려면  
   
-1.  모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트를 시작 합니다. 만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 VSIX 프로젝트 `MyToolsOptionsExtension`합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C#** > **확장성**합니다.  
+1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트를 시작 합니다. 만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 VSIX 프로젝트 `MyToolsOptionsExtension`합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C#** > **확장성**합니다.  
   
-2.  라는 이름의 Visual Studio 패키지 항목 템플릿을 추가 하 여 VSPackage를 추가할 `MyToolsOptionsPackage`합니다. 에 **솔루션 탐색기**, 프로젝트 노드를 마우스 오른쪽 단추로 **추가** > **새 항목**합니다. 에 **새 항목 추가 대화 상자**로 이동 하세요 **Visual C# 항목** > **확장성** 선택한 **Visual Studio 패키지**합니다. 에 **이름을** 대화 상자의 맨 아래에 있는 필드에 파일 이름을 `MyToolsOptionsPackage.cs`입니다. VSPackage를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [VSPackage를 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)합니다.  
+2. 라는 이름의 Visual Studio 패키지 항목 템플릿을 추가 하 여 VSPackage를 추가할 `MyToolsOptionsPackage`합니다. 에 **솔루션 탐색기**, 프로젝트 노드를 마우스 오른쪽 단추로 **추가** > **새 항목**합니다. 에 **새 항목 추가 대화 상자**로 이동 하세요 **Visual C# 항목** > **확장성** 선택한 **Visual Studio 패키지**합니다. 에 **이름을** 대화 상자의 맨 아래에 있는 필드에 파일 이름을 `MyToolsOptionsPackage.cs`입니다. VSPackage를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [VSPackage를 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)합니다.  
   
 ### <a name="to-create-the-tools-options-property-grid"></a>도구 옵션 속성 표를 만들려면  
   

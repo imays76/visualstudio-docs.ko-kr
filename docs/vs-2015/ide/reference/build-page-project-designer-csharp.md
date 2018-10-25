@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837186"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ ms.locfileid: "49280620"
   
  이 확인란은 다음 조건을 충족하는 경우에만 사용할 수 있습니다.  
   
--   **빌드 페이지**에서 **플랫폼 대상** 목록이 **임의 CPU**로 설정되어 있습니다.  
+- **빌드 페이지**에서 **플랫폼 대상** 목록이 **임의 CPU**로 설정되어 있습니다.  
   
--   **응용 프로그램 페이지**에서 **출력 형식** 목록의 프로젝트가 응용 프로그램으로 지정됩니다.  
+- **응용 프로그램 페이지**에서 **출력 형식** 목록의 프로젝트가 응용 프로그램으로 지정됩니다.  
   
--   **응용 프로그램 페이지**에서 **대상 프레임워크** 목록이 .NET Framework 4.5로 지정됩니다.  
+- **응용 프로그램 페이지**에서 **대상 프레임워크** 목록이 .NET Framework 4.5로 지정됩니다.  
   
- **안전하지 않은 코드 허용**  
- 컴파일에 [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) 키워드를 사용하는 코드를 허용합니다. 자세한 내용은 [/unsafe(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc)를 참조하세요.  
+  **안전하지 않은 코드 허용**  
+  컴파일에 [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) 키워드를 사용하는 코드를 허용합니다. 자세한 내용은 [/unsafe(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc)를 참조하세요.  
   
- **코드 최적화**  
- 컴파일러에서 더 작지만 빠르고 효율적인 출력 파일을 만들기 위해 수행하는 최적화 기능을 사용하거나 사용하지 않도록 설정합니다. 자세한 내용은 [/optimize(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0)를 참조하세요.  
+  **코드 최적화**  
+  컴파일러에서 더 작지만 빠르고 효율적인 출력 파일을 만들기 위해 수행하는 최적화 기능을 사용하거나 사용하지 않도록 설정합니다. 자세한 내용은 [/optimize(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0)를 참조하세요.  
   
 ## <a name="errors-and-warnings"></a>오류 및 경고  
  다음 설정은 빌드 프로세스에 대한 오류 및 경고 옵션을 구성하는 데 사용됩니다.  

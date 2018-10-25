@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e59c509bee1e9d9e84b4499bf3419bc129aadfa
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b2dc3e0aee42da176ee147e1d960143236cf89f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847294"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 이에 지정 된 콜백 함수는 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 디렉터리 및 (선택 사항)는 소스 제어 중인 파일 이름 컬렉션을 업데이트 하는 함수입니다.  

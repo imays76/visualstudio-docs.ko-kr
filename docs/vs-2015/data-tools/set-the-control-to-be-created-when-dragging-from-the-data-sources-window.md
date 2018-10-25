@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860359"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>데이터 소스 창에서 끌어올 때 만들 컨트롤 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49293685"
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>데이터 테이블 또는 개체에 대해 생성 될 컨트롤을 설정 하려면  
   
-1.  WPF 디자이너 또는 Windows Forms 디자이너가 열려 있는지 확인 합니다.  
+1. WPF 디자이너 또는 Windows Forms 디자이너가 열려 있는지 확인 합니다.  
   
-2.  에 **데이터 원본** 창, 데이터 테이블을 나타내는 항목을 선택 하거나 설정할 개체입니다.  
+2. 에 **데이터 원본** 창, 데이터 테이블을 나타내는 항목을 선택 하거나 설정할 개체입니다.  
   
-3.  항목에 대해 드롭다운 메뉴를 클릭 하 고 메뉴에서 다음 항목 중 하나를 클릭 합니다.  
+3. 항목에 대해 드롭다운 메뉴를 클릭 하 고 메뉴에서 다음 항목 중 하나를 클릭 합니다.  
   
-    -   별도 컨트롤에서 각 데이터 필드를 표시 하려면 클릭 **세부 정보**합니다. 디자이너에 데이터 항목을 끌면이 작업 각 열 또는 부모 데이터 테이블의 각 컨트롤에 대 한 레이블과 함께 개체 속성에 대 한 다양 한 데이터 바인딩된 컨트롤을 만듭니다.  
+   - 별도 컨트롤에서 각 데이터 필드를 표시 하려면 클릭 **세부 정보**합니다. 디자이너에 데이터 항목을 끌면이 작업 각 열 또는 부모 데이터 테이블의 각 컨트롤에 대 한 레이블과 함께 개체 속성에 대 한 다양 한 데이터 바인딩된 컨트롤을 만듭니다.  
   
-    -   모든 데이터를 단일 컨트롤에 표시 하려면 다른 컨트롤 선택 목록에서와 같은 **DataGrid** 또는 **목록** WPF 응용 프로그램, 또는 **DataGridView** Windows Forms에서 응용 프로그램입니다.  
+   - 모든 데이터를 단일 컨트롤에 표시 하려면 다른 컨트롤 선택 목록에서와 같은 **DataGrid** 또는 **목록** WPF 응용 프로그램, 또는 **DataGridView** Windows Forms에서 응용 프로그램입니다.  
   
      사용 가능한 컨트롤 목록 집니다 있는 디자이너 열기,.NET Framework의 버전은 프로젝트가 대상 및 해당 지원에 데이터 바인딩 컨트롤 여부 추가한 사용자 지정 된 **도구 상자**합니다. 만들려는 컨트롤의 사용 가능한 컨트롤 목록에 있으면 목록에 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤을 추가할](../data-tools/add-custom-controls-to-the-data-sources-window.md)합니다.  
   

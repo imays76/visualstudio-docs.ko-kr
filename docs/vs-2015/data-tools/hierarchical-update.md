@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843394"
 ---
 # <a name="hierarchical-update"></a>계층적 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ ms.locfileid: "49239384"
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>저장 전에 관련 테이블로 변경 내용을 커밋하도록 코드를 업데이트하려면  
   
-1.  두 번 클릭 합니다 **저장** 단추를 <xref:System.Windows.Forms.BindingNavigator> 열려는 **Form1** 코드 편집기에서.  
+1. 두 번 클릭 합니다 **저장** 단추를 <xref:System.Windows.Forms.BindingNavigator> 열려는 **Form1** 코드 편집기에서.  
   
-2.  `OrdersBindingSource.EndEdit` 메서드를 호출하는 줄 뒤에 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가합니다. 코드를 **저장** 단추 클릭 이벤트는 다음과 같습니다.  
+2. `OrdersBindingSource.EndEdit` 메서드를 호출하는 줄 뒤에 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가합니다. 코드를 **저장** 단추 클릭 이벤트는 다음과 같습니다.  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- 이처럼 데이터를 데이터베이스에 저장하기 전에 관련 자식 테이블에 대해 변경 내용을 커밋해야 할 뿐 아니라 새 자식 레코드를 데이터 집합에 추가하기 전에 새로 만든 부모 레코드도 커밋해야 할 수 있습니다. 다시 말해서 외래 키 제약 조건으로 인해 새 자식 레코드(Orders)를 데이터 집합에 추가할 수 있도록 설정되기 전에 새 부모 레코드(Customer)를 데이터 집합에 추가해야 할 수 있습니다. 자식 `BindingSource.AddingNew` 이벤트를 사용하면 이 작업을 수행할 수 있습니다.  
+   이처럼 데이터를 데이터베이스에 저장하기 전에 관련 자식 테이블에 대해 변경 내용을 커밋해야 할 뿐 아니라 새 자식 레코드를 데이터 집합에 추가하기 전에 새로 만든 부모 레코드도 커밋해야 할 수 있습니다. 다시 말해서 외래 키 제약 조건으로 인해 새 자식 레코드(Orders)를 데이터 집합에 추가할 수 있도록 설정되기 전에 새 부모 레코드(Customer)를 데이터 집합에 추가해야 할 수 있습니다. 자식 `BindingSource.AddingNew` 이벤트를 사용하면 이 작업을 수행할 수 있습니다.  
   
 > [!NOTE]
 >  새 부모 레코드를 적용 해야 하는지 여부를 데이터 원본에 바인딩하는 데 사용 되는 컨트롤의 유형에 따라 달라 집니다. 이 연습에서는 개별 컨트롤을 사용 하 여 부모 테이블에 바인딩합니다. 이 새 부모 레코드를 커밋하는 추가 코드가 필요 합니다. 같은 부모 레코드 대신 복잡 한 바인딩 컨트롤에서 표시 된 경우는 <xref:System.Windows.Forms.DataGridView>이 추가 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 부모 레코드가 필요 하지 않을 것에 대 한 호출 합니다. 컨트롤의 기본 데이터 바인딩 기능이 새 레코드 커밋을 처리하기 때문입니다.  

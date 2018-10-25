@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814561"
 ---
 # <a name="debugging-dll-projects"></a>DLL 프로젝트 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DLL을 만드는 템플릿은 다음과 같습니다.  
   
--   (C++, C# 및 Visual Basic): 클래스 라이브러리  
+- (C++, C# 및 Visual Basic): 클래스 라이브러리  
   
--   (C++, C# 및 Visual Basic): Windows Forms 컨트롤 라이브러리  
+- (C++, C# 및 Visual Basic): Windows Forms 컨트롤 라이브러리  
   
-     Windows 컨트롤 라이브러리는 클래스 라이브러리 프로젝트와 비슷한 방법으로 디버깅할 수 있습니다. 대부분의 경우에 다른 프로젝트에서 Windows 컨트롤을 호출하게 됩니다. 따라서 호출하는 프로젝트를 디버깅할 때 Windows 컨트롤의 코드를 단계별로 실행하고, 중단점을 설정하고, 다른 디버깅 작업을 수행할 수 있습니다. 자세한 내용은 [Windows Forms 컨트롤](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)을 참조하십시오.  
+   Windows 컨트롤 라이브러리는 클래스 라이브러리 프로젝트와 비슷한 방법으로 디버깅할 수 있습니다. 대부분의 경우에 다른 프로젝트에서 Windows 컨트롤을 호출하게 됩니다. 따라서 호출하는 프로젝트를 디버깅할 때 Windows 컨트롤의 코드를 단계별로 실행하고, 중단점을 설정하고, 다른 디버깅 작업을 수행할 수 있습니다. 자세한 내용은 [Windows Forms 컨트롤](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)을 참조하십시오.  
   
--   (C# 및 Visual Basic): 웹 컨트롤 라이브러리  
+- (C# 및 Visual Basic): 웹 컨트롤 라이브러리  
   
-     자세한 내용은 [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md)을 참조하십시오.  
+   자세한 내용은 [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md)을 참조하십시오.  
   
--   (C++): MFC ActiveX 컨트롤 및 MFC 스마트 장치 ActiveX 컨트롤  
+- (C++): MFC ActiveX 컨트롤 및 MFC 스마트 장치 ActiveX 컨트롤  
   
-     ActiveX 컨트롤은 인터넷을 통해 클라이언트 컴퓨터에 다운로드하여 웹 페이지에 표시 및 활성화할 수 있는 컨트롤입니다.  
+   ActiveX 컨트롤은 인터넷을 통해 클라이언트 컴퓨터에 다운로드하여 웹 페이지에 표시 및 활성화할 수 있는 컨트롤입니다.  
   
-     독립적으로 실행할 수 없고 HTML 웹 페이지에 포함되어야 한다는 점에서 ActiveX 컨트롤을 디버깅하는 방식은 다른 종류의 컨트롤을 디버깅하는 방식과 비슷합니다. 자세한 내용은 [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md)을 참조하십시오.  
+   독립적으로 실행할 수 없고 HTML 웹 페이지에 포함되어야 한다는 점에서 ActiveX 컨트롤을 디버깅하는 방식은 다른 종류의 컨트롤을 디버깅하는 방식과 비슷합니다. 자세한 내용은 [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md)을 참조하십시오.  
   
--   (C++): MFC 스마트 장치 DLL  
+- (C++): MFC 스마트 장치 DLL  
   
-     자세한 내용은 [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md)을 참조하세요.  
+   자세한 내용은 [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md)을 참조하세요.  
   
- 이 단원에서는 다음 항목에 대한 정보도 제공합니다.  
+  이 단원에서는 다음 항목에 대한 정보도 제공합니다.  
   
--   [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)  
+- [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)  
+- [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)  
   
- 이 항목의 다음 단원에서는 클래스 라이브러리에 대한 디버깅을 준비하는 방법에 대해 설명합니다.  
+  이 항목의 다음 단원에서는 클래스 라이브러리에 대한 디버깅을 준비하는 방법에 대해 설명합니다.  
   
--   [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [Ways to Debug the DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Ways to Debug the DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Building a Debug Version  
  어떤 방법으로 디버깅을 시작하든지 먼저 DLL의 디버그 버전을 빌드하여 응용 프로그램에서 검색할 위치에 저장해야 합니다. 만약 이 단계를 생략하면 응용 프로그램에서는 다른 DLL 버전을 찾아서 로드할 수 있습니다. 그러면 프로그램은 계속 실행되지만 중단점에는 도달하지 않습니다. 디버깅 작업을 수행할 때 디버거의 **모듈** 창을 열어 프로그램에서 로드한 DLL을 확인할 수 있습니다. **모듈** 창에는 디버깅 중인 프로세스에서 로드한 각 DLL 또는 EXE가 표시됩니다. 자세한 내용은 [How to: Use the Modules Window](../debugger/how-to-use-the-modules-window.md)을 참조하십시오.  
@@ -103,15 +103,15 @@ DLL을 만드는 템플릿은 다음과 같습니다.
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> 호출 응용 프로그램 디버깅  
  DLL을 디버깅하려면 호출 응용 프로그램 디버깅을 먼저 시작해야 합니다. 호출 응용 프로그램은 일반적으로 EXE 또는 웹 응용 프로그램입니다. 이를 디버깅하는 데는 여러 가지 방법이 있습니다.  
   
--   호출 응용 프로그램에 대한 프로젝트가 있으면 이 프로젝트를 열고 **디버그** 메뉴에서 실행 파일을 시작할 수 있습니다. 자세한 내용은 [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c)을 참조하세요.  
+- 호출 응용 프로그램에 대한 프로젝트가 있으면 이 프로젝트를 열고 **디버그** 메뉴에서 실행 파일을 시작할 수 있습니다. 자세한 내용은 [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c)을 참조하세요.  
   
--   호출 응용 프로그램이 테스트 컴퓨터나 프로덕션 컴퓨터에 이미 배포되어 실행되고 있는 기존의 프로그램인 경우 이 응용 프로그램에 연결할 수 있습니다. DLL이 Internet Explorer로 호스팅된 컨트롤이거나 웹 페이지의 컨트롤인 경우 이 방법을 사용합니다. 자세한 내용은 [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)을 참조하십시오.  
+- 호출 응용 프로그램이 테스트 컴퓨터나 프로덕션 컴퓨터에 이미 배포되어 실행되고 있는 기존의 프로그램인 경우 이 응용 프로그램에 연결할 수 있습니다. DLL이 Internet Explorer로 호스팅된 컨트롤이거나 웹 페이지의 컨트롤인 경우 이 방법을 사용합니다. 자세한 내용은 [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)을 참조하십시오.  
   
--   DLL 프로젝트에서 이를 디버깅할 수 있습니다. 자세한 내용은 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)을 참조하세요.  
+- DLL 프로젝트에서 이를 디버깅할 수 있습니다. 자세한 내용은 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)을 참조하세요.  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **직접 실행** 창에서 이를 디버깅할 수 있습니다. 이 경우 **직접 실행** 창은 응용 프로그램 역할을 수행합니다.  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **직접 실행** 창에서 이를 디버깅할 수 있습니다. 이 경우 **직접 실행** 창은 응용 프로그램 역할을 수행합니다.  
   
- 호출 응용 프로그램에 대한 디버깅을 시작하기 전에, 일반적으로 클래스 라이브러리에 중단점을 설정합니다. 자세한 내용은 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)을 참조하세요. 중단점에 도달하면 각 줄의 작업을 확인하면서 코드를 단계별로 실행하여 문제를 해결할 수 있습니다. 자세한 내용은 [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)을 참조하십시오.  
+  호출 응용 프로그램에 대한 디버깅을 시작하기 전에, 일반적으로 클래스 라이브러리에 중단점을 설정합니다. 자세한 내용은 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)을 참조하세요. 중단점에 도달하면 각 줄의 작업을 확인하면서 코드를 단계별로 실행하여 문제를 해결할 수 있습니다. 자세한 내용은 [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)을 참조하십시오.  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Controls on a Web Page  
  웹 페이지 컨트롤을 디버깅하려면 컨트롤을 포함하는 페이지가 없는 경우 컨트롤을 포함하는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 페이지를 만듭니다. 그런 다음 컨트롤 코드 및 웹 페이지 코드에 중단점을 배치합니다. 중단점을 설정한 후 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 웹 페이지를 호출합니다.  

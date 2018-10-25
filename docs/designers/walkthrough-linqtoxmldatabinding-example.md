@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567b03f9f0441e7f5eb38f4ca0e0b3a1d64cec91
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 824896a4e381a6a8d5c5e0935010b1cf224ed9b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839234"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>연습: LinqToXmlDataBinding 예제
 이 연습에서는 LinqToXmlDataBinding 예제에 대해 설명하고 두 가지 기본 소스 파일인 *L2DBForm.xaml* 및 *L2DBForm.xaml.cs*의 몇 가지 흥미로운 내용을 살펴봅니다.
@@ -26,19 +26,19 @@ ms.locfileid: "39081194"
 ## <a name="remarks"></a>설명
  LinqToXmlDataBinding 프로그램은 C# 및 XAML 소스 파일로 구성된 WPF(Windows Presentation Foundation) 응용 프로그램입니다. 이 프로그램에는 책 목록을 정의하고 사용자가 이러한 항목을 보고, 추가하고, 삭제하고, 편집할 수 있도록 하는 포함된 XML 문서가 들어 있습니다. 이 프로그램은 다음 두 가지 기본 소스 파일로 구성되어 있습니다.
 
--   *L2DBForm.xaml*에는 기본 창의 UI(사용자 인터페이스)에 대한 XAML 선언 코드가 포함되어 있습니다. 또한 책 목록에 대한 포함된 XML 문서와 데이터 공급자를 정의하는 창 리소스 섹션도 포함되어 있습니다.
+- *L2DBForm.xaml*에는 기본 창의 UI(사용자 인터페이스)에 대한 XAML 선언 코드가 포함되어 있습니다. 또한 책 목록에 대한 포함된 XML 문서와 데이터 공급자를 정의하는 창 리소스 섹션도 포함되어 있습니다.
 
--   *L2DBForm.xaml.cs*에는 UI와 연결된 초기화 및 이벤트 처리 메서드가 포함되어 있습니다.
+- *L2DBForm.xaml.cs*에는 UI와 연결된 초기화 및 이벤트 처리 메서드가 포함되어 있습니다.
 
- 기본 창은 다음 네 가지 세로 UI 섹션으로 나뉩니다.
+  기본 창은 다음 네 가지 세로 UI 섹션으로 나뉩니다.
 
--   **XML**에서는 포함된 책 목록의 원시 XML 원본이 표시됩니다.
+- **XML**에서는 포함된 책 목록의 원시 XML 원본이 표시됩니다.
 
--   **Book List**에서는 책 항목이 표준 텍스트로 표시되고 사용자가 개별 항목을 선택하고 삭제할 수 있습니다.
+- **Book List**에서는 책 항목이 표준 텍스트로 표시되고 사용자가 개별 항목을 선택하고 삭제할 수 있습니다.
 
--   **Edit Selected Book**에서는 사용자가 현재 선택된 책 항목과 연결된 값을 편집할 수 있습니다.
+- **Edit Selected Book**에서는 사용자가 현재 선택된 책 항목과 연결된 값을 편집할 수 있습니다.
 
--   **Add New Book**에서는 사용자가 입력한 값에 따라 새 책 항목을 만들 수 있습니다.
+- **Add New Book**에서는 사용자가 입력한 값에 따라 새 책 항목을 만들 수 있습니다.
 
 ## <a name="in-this-section"></a>단원 내용
 

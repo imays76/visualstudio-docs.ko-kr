@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 163fcc07318ae02ff88fda13d4ea6300d513806e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857408"
 ---
 # <a name="how-to-create-starter-kits"></a>방법: 시작 키트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "49243390"
   
  간단한 응용 프로그램 또는 플러그 인을 만드는 경우  
   
--   오류 없이 빌드되는 프로젝트를 만듭니다.  
+- 오류 없이 빌드되는 프로젝트를 만듭니다.  
   
--   추가 작업을 구현하기 위한 템플릿 코드를 추가합니다(선택 사항).  
+- 추가 작업을 구현하기 위한 템플릿 코드를 추가합니다(선택 사항).  
   
--   설명서를 준비합니다.  
+- 설명서를 준비합니다.  
   
- 학습 도구를 만드는 경우  
+  학습 도구를 만드는 경우  
   
--   오류 없이 빌드되는 프로젝트를 만듭니다.  
+- 오류 없이 빌드되는 프로젝트를 만듭니다.  
   
--   코드 조각 및 항목 템플릿 등의 리소스를 구성합니다.  
+- 코드 조각 및 항목 템플릿 등의 리소스를 구성합니다.  
   
--   설명서를 준비합니다.  
+- 설명서를 준비합니다.  
   
 ## <a name="creating-a-template"></a>템플릿 만들기  
  프로젝트와 설명서를 완료하면 시작 키트용 프로젝트 템플릿을 만들 준비가 된 것입니다. 이 프로세스는 프로젝트 템플릿을 만드는 것과 완전히 동일합니다.  

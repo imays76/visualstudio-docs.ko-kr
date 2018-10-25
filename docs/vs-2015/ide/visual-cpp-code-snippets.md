@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861366"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 코드 조각
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Visual Studio에서 코드 조각을 사용하여 일반적으로 사용되는 �
 ## <a name="inserting-a-code-snippet"></a>코드 조각 삽입  
  코드 조각을 삽입하려면 C++ 코드 파일(.cpp or .h)을 열고, 파일 내에서 아무 곳이나 클릭하고, 다음의 하나를 수행합니다.  
   
--   마우스 오른쪽 단추를 클릭하여 상황에 맞는 메뉴를 표시하고 **코드 조각 삽입**을 선택합니다.  
+- 마우스 오른쪽 단추를 클릭하여 상황에 맞는 메뉴를 표시하고 **코드 조각 삽입**을 선택합니다.  
   
--   **편집/IntelliSense** 메뉴에서 **코드 조각 삽입**을 선택합니다.  
+- **편집/IntelliSense** 메뉴에서 **코드 조각 삽입**을 선택합니다.  
   
--   바로 가기 키 **Ctrl+K+X**를 사용합니다.  
+- 바로 가기 키 **Ctrl+K+X**를 사용합니다.  
   
- **#if**로 시작하는 선택 항목 목록이 표시되어야 합니다. **#if**를 선택하면 다음 코드가 파일에 추가됩니다.  
+  **#if**로 시작하는 선택 항목 목록이 표시되어야 합니다. **#if**를 선택하면 다음 코드가 파일에 추가됩니다.  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ Visual Studio에서 코드 조각을 사용하여 일반적으로 사용되는 �
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>코드 조각을 사용하여 선택한 코드 감싸기  
  코드 조각을 사용하여 선택한 코드를 감싸려면 한 줄이나 여러 줄을 선택하고 다음의 하나를 수행합니다.  
   
-1.  마우스 오른쪽 단추를 클릭하여 상황에 맞는 메뉴를 표시하고 **코드 감싸기**를 선택합니다.  
+1. 마우스 오른쪽 단추를 클릭하여 상황에 맞는 메뉴를 표시하고 **코드 감싸기**를 선택합니다.  
   
-2.  **편집/IntelliSense** 메뉴에서 **코드 감싸기**를 선택합니다.  
+2. **편집/IntelliSense** 메뉴에서 **코드 감싸기**를 선택합니다.  
   
-3.  바로 가기 키 **Ctrl+K+S**를 사용합니다.  
+3. 바로 가기 키 **Ctrl+K+S**를 사용합니다.  
   
- **#if**를 선택합니다. 다음과 같이 표시되어야 합니다.  
+   **#if**를 선택합니다. 다음과 같이 표시되어야 합니다.  
   
 ```cpp  
 #if 0  

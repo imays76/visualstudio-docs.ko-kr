@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 259058569c2c4d2a040272d87e4621b963342ba7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826898"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>방법: VSTO 추가 기능을 사용 하 여 문서에 사용자 지정 XML 부분 추가
   VSTO 추가 기능에서 사용자 지정 XML 부분을 만들어 다음과 같은 형식의 문서에 XML 데이터를 저장할 수 있습니다.  
   
--   Microsoft Office Excel 통합 문서  
+- Microsoft Office Excel 통합 문서  
   
--   Microsoft Office Word 문서  
+- Microsoft Office Word 문서  
   
--   Microsoft Office PowerPoint 프레젠테이션  
+- Microsoft Office PowerPoint 프레젠테이션  
   
- 자세한 내용은 [사용자 지정 XML 부분 개요](../vsto/custom-xml-parts-overview.md)합니다.  
+  자세한 내용은 [사용자 지정 XML 부분 개요](../vsto/custom-xml-parts-overview.md)합니다.  
   
- **적용 대상:** 이 항목의 정보는 Excel, PowerPoint 및 Word의 응용 프로그램 수준 프로젝트에 적용됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
+  **적용 대상:** 이 항목의 정보는 Excel, PowerPoint 및 Word의 응용 프로그램 수준 프로젝트에 적용됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Excel 통합 문서에 사용자 지정 XML 부분을 추가하려면  
   

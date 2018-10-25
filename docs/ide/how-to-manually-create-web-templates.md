@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826403"
 ---
 # <a name="how-to-manually-create-web-templates"></a>방법: 수동으로 웹 템플릿 만들기
 
@@ -30,33 +30,33 @@ ms.locfileid: "39178945"
 
 1. 웹 프로젝트를 만듭니다.
 
-1. 프로젝트에서 파일을 수정 또는 삭제하거나 프로젝트에 새 파일을 추가합니다.
+2. 프로젝트에서 파일을 수정 또는 삭제하거나 프로젝트에 새 파일을 추가합니다.
 
-1. XML 파일을 만들고 *vstemplate* 파일 이름 확장명을 사용하여 프로젝트와 같은 디렉터리에 저장합니다. Visual Studio에서 프로젝트에 추가하지 마세요.
+3. XML 파일을 만들고 *vstemplate* 파일 이름 확장명을 사용하여 프로젝트와 같은 디렉터리에 저장합니다. Visual Studio에서 프로젝트에 추가하지 마세요.
 
-1. 프로젝트 템플릿 메타데이터를 제공하도록 *vstemplate* XML 파일을 편집합니다. 자세한 내용은 [다음에 나오는 예제](#example)를 참조하세요.
+4. 프로젝트 템플릿 메타데이터를 제공하도록 *vstemplate* XML 파일을 편집합니다. 자세한 내용은 [다음에 나오는 예제](#example)를 참조하세요.
 
-1. *vstemplate* 파일에서 `ProjectType` 요소를 찾고 텍스트 값을 `Web`으로 설정합니다.
+5. *vstemplate* 파일에서 `ProjectType` 요소를 찾고 텍스트 값을 `Web`으로 설정합니다.
 
-1. `ProjectType` 요소 다음에 `ProjectSubType` 요소를 추가하고 텍스트 값을 템플릿의 프로그래밍 언어로 설정합니다. 프로그래밍 언어는 다음 값 중 하나일 수 있습니다.
+6. `ProjectType` 요소 다음에 `ProjectSubType` 요소를 추가하고 텍스트 값을 템플릿의 프로그래밍 언어로 설정합니다. 프로그래밍 언어는 다음 값 중 하나일 수 있습니다.
 
-    - CSharp
-    - VisualBasic
+   - CSharp
+   - VisualBasic
 
-    예:
+     예:
 
-    ```xml
-    <TemplateData>
-        ...
-        <ProjectType>Web</ProjectType>
-        <ProjectSubType>CSharp</ProjectSubType>
-        ...
-    </TemplateData>
-    ```
+     ```xml
+     <TemplateData>
+       ...
+       <ProjectType>Web</ProjectType>
+       <ProjectSubType>CSharp</ProjectSubType>
+       ...
+     </TemplateData>
+     ```
 
-1. 템플릿(*vstemplate* 파일 포함)에 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭한 다음, **보내기** > **압축(ZIP) 폴더**를 선택합니다. 파일이 *.zip* 파일로 압축됩니다.
+7. 템플릿(*vstemplate* 파일 포함)에 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭한 다음, **보내기** > **압축(ZIP) 폴더**를 선택합니다. 파일이 *.zip* 파일로 압축됩니다.
 
-1. *.zip* 템플릿 파일을 Visual Studio 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<버전\>\ProjectTemplates*입니다.
+8. *.zip* 템플릿 파일을 Visual Studio 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<버전\>\ProjectTemplates*입니다.
 
 ## <a name="example"></a>예
 

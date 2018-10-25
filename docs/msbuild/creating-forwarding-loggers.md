@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6597bfcdcbfb5acddbbbf8804d198036c5b98c53
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179205"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880983"
 ---
 # <a name="create-forwarding-loggers"></a>전달 로거 만들기
 전달 로거는 다중 프로세서 시스템에서 프로젝트를 빌드할 때 모니터링하려는 이벤트를 선택할 수 있도록 하여 로깅 효율성을 개선합니다. 전달 로거를 사용하여 원하지 않는 이벤트가 중앙 로거를 가득 채우고, 빌드 시간이 느려지고, 로그를 어지럽히지 않도록 방지할 수 있습니다.  
@@ -35,7 +35,7 @@ ms.locfileid: "39179205"
  다중 프로세서 환경에서 이벤트 메시지는 순서 없이 수신될 가능성이 높습니다. 따라서 전달 로거에서 이벤트 처리기를 사용하여 이벤트를 계산하고 중앙 로거에 전달하기 위해 리디렉터에 전달되는 이벤트를 확인하도록 프로그래밍해야 합니다. 이를 위해 모든 메시지에 연결된 <xref:Microsoft.Build.Framework.BuildEventContext> 클래스를 사용하여 전달하려는 이벤트를 식별한 다음 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 클래스(또는 그 하위 클래스)에 이벤트의 이름을 전달할 수 있습니다. 이 방법을 사용하면 다른 특정 코딩이 이벤트를 전달해야 합니다.  
   
 ## <a name="specify-a-forwarding-logger"></a>전달 로거 지정  
- 전달 로거를 어셈블리로 컴파일한 후에 빌드하는 동안 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 사용하도록 지시해야 합니다. 이를 위해 *MSBuild.exe*와 함께 `/FileLogger`, `/FileLoggerParameters` 및 `/DistributedFileLogger` 스위치를 사용합니다. `/FileLogger` 스위치는 *MSBuild.exe*에서 로거를 직접 연결하도록 지시합니다. `/DistributedFileLogger` 스위치는 노드당 로그 파일이 있음을 의미합니다. 전달 로거에 매개 변수를 설정하려면 `/FileLoggerParameters` 스위치를 사용합니다. 해당 스위치 및 기타 *MSBuild.exe* 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.  
+ 전달 로거를 어셈블리로 컴파일한 후에 빌드하는 동안 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 사용하도록 지시해야 합니다. 이를 위해 *MSBuild.exe*와 함께 `-FileLogger`, `-FileLoggerParameters` 및 `-DistributedFileLogger` 스위치를 사용합니다. `-FileLogger` 스위치는 *MSBuild.exe*에서 로거를 직접 연결하도록 지시합니다. `-DistributedFileLogger` 스위치는 노드당 로그 파일이 있음을 의미합니다. 전달 로거에 매개 변수를 설정하려면 `-FileLoggerParameters` 스위치를 사용합니다. 해당 스위치 및 기타 *MSBuild.exe* 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.  
   
 ## <a name="multi-processor-aware-loggers"></a>다중 프로세서 인식 로거  
  다중 프로세서 시스템에서 프로젝트를 빌드할 때 각 프로세서의 빌드 메시지가 통합 시퀀스에서 자동으로 인터리브되지 않습니다. 대신 모든 메시지에 연결된 <xref:Microsoft.Build.Framework.BuildEventContext> 클래스를 사용하여 메시지 그룹화 우선 순위를 설정해야 합니다. 다중 프로세서 빌드에 대한 자세한 내용은 [다중 프로세서 환경의 로깅](../msbuild/logging-in-a-multi-processor-environment.md)을 참조하세요.  

@@ -30,12 +30,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856707"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>방법: 편집하며 계속하기 설정/해제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +48,18 @@ ms.locfileid: "49212833"
   
 #### <a name="to-enabledisable-edit-and-continue"></a>편집하며 계속하기를 사용하거나 사용하지 않도록 설정하려면  
   
-1.  디버깅 옵션 페이지 열기 (**도구 / 옵션 / 디버깅**).  
+1. 디버깅 옵션 페이지 열기 (**도구 / 옵션 / 디버깅**).  
   
-2.  아래로 스크롤하여 **편집 하며 계속 하기** 범주입니다.  
+2. 아래로 스크롤하여 **편집 하며 계속 하기** 범주입니다.  
   
-3.  를 사용 하도록 설정 하려면 선택 합니다 **편집을 사용 하도록 설정 하 고 계속** 확인란 합니다. 이 기능을 사용하지 않도록 설정하려면 이 확인란의 선택을 취소합니다.  
+3. 를 사용 하도록 설정 하려면 선택 합니다 **편집을 사용 하도록 설정 하 고 계속** 확인란 합니다. 이 기능을 사용하지 않도록 설정하려면 이 확인란의 선택을 취소합니다.  
   
-    > [!NOTE]
-    >  IntelliTrace를 사용하도록 설정되어 있고 IntelliTrace 이벤트 및 호출 정보를 모두 수집하는 경우 편집하며 계속하기를 사용하지 않도록 설정됩니다. 자세한 내용은 [IntelliTrace 구성](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)합니다.  
+   > [!NOTE]
+   >  IntelliTrace를 사용하도록 설정되어 있고 IntelliTrace 이벤트 및 호출 정보를 모두 수집하는 경우 편집하며 계속하기를 사용하지 않도록 설정됩니다. 자세한 내용은 [IntelliTrace 구성](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)합니다.  
   
-4.  **확인**을 클릭합니다.  
+4. **확인**을 클릭합니다.  
   
- 이러한 옵션에 대 한 자세한 내용은 참조 하세요. [옵션 대화 상자, 디버깅, 일반](../debugger/general-debugging-options-dialog-box.md)합니다.  
+   이러한 옵션에 대 한 자세한 내용은 참조 하세요. [옵션 대화 상자, 디버깅, 일반](../debugger/general-debugging-options-dialog-box.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [편집하며 계속하기](../debugger/edit-and-continue.md)

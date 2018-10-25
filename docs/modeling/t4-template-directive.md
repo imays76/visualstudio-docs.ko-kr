@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1c36d4d38079a74c27f41829852d3b4e242825d9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2390d71fa445366c62f5225d800f2cd4a2524e95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897201"
 ---
 # <a name="t4-template-directive"></a>T4 템플릿 지시문
 
@@ -28,7 +28,7 @@ Visual Studio T4 텍스트 템플릿을 사용 하 여 일반적으로 시작 �
 <#@ template [language="VB"] [compilerOptions="options"] [culture="code"] [debug="true"] [hostspecific="true"] [inherits="templateBaseClass"] [visibility="internal"] [linePragmas="false"] #>
 ```
 
- `template` 지시문에는 변환의 다양한 측면을 지정할 수 있도록 하는 몇 가지 특성이 있습니다. 모든 특성은 선택적입니다.
+ `template` 지시문에는 변형의 다양한 측면을 지정할 수 있도록 하는 몇 가지 특성이 있습니다. 모든 특성은 선택적입니다.
 
 ## <a name="compileroptions-attribute"></a>compilerOptions 특성
  예: `compilerOptions="optimize+"`
@@ -93,7 +93,6 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 #>
 Content of myFile is:
 <#= myFile #>
-
 ```
 
  `inherits`와 `hostspecific` 특성을 함께 사용하는 경우, 파생 클래스에 host="trueFromBase"를 지정하고 기본 클래스에는 host="true"를 지정하십시오. 이렇게 하면 생성된 코드에서 `Host` 속성의 이중 정의를 피할 수 있습니다.
@@ -121,7 +120,6 @@ Squares of numbers:
 <#
   Next number
 #>
-
 ```
 
 ## <a name="inherits-attribute"></a>inherits 특성
@@ -150,7 +148,6 @@ This is the common footer.
   protected virtual void SpecificFragment1() { }
   protected virtual void SpecificFragment2() { }
 #>
-
 ```
 
  전처리된 런타임 텍스트 템플릿 DerivedTemplate1.tt:
@@ -175,7 +172,6 @@ protected override void SpecificFragment2()
 <#+
 }
 #>
-
 ```
 
  DerivedTemplate1을 호출할 응용 프로그램 코드:

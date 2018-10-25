@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 6898fb890828a01f286f321f14de3999fdf1ca64
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: aafa410352be27084f2febecc734c68e4f316d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827963"
 ---
 # <a name="setting-up-a-git-repository"></a>Git 리포지토리 설정
 
@@ -38,7 +38,7 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 
     ![주소 보기 및 복사](media/version-control-git3.png)
 
-  Mac용 Visual Studio에서 이 리포지토리를 가리키려면 HTTPS 주소가 필요합니다.
+   Mac용 Visual Studio에서 이 리포지토리를 가리키려면 HTTPS 주소가 필요합니다.
 
 
 ## <a name="publishing-an-existing-project"></a>기존 프로젝트 게시
@@ -108,7 +108,7 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 5. 리포지토리를 복제할 디렉터리를 입력하고 **체크 아웃**을 누릅니다.
 
 > [!NOTE]
-리포지토리 크기가 4GB 이상인 경우 문제가 발생할 수 있습니다.
+> 리포지토리 크기가 4GB 이상인 경우 문제가 발생할 수 있습니다.
 
 ## <a name="troubleshooting"></a>문제 해결
 

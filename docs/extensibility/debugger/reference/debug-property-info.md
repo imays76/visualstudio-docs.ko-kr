@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4466d74d0e19b898b3c377c67a14f7c39922d915
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 612865d08142a56b2908707839ad66b60ea2de9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847099"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 디버그 속성에 대 한 정보를 포함합니다.  
@@ -53,7 +53,7 @@ public struct DEBUG_PROPERTY_INFO {
   
 ## <a name="members"></a>멤버  
  dwValidFields  
- 플래그의 조합 된 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 어떤 필드 입력을 지정 하는 열거형입니다.  
+ 플래그의 조합을 합니다 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 어떤 필드가 채워지는 지정 하는 열거형입니다.  
   
  bstrFullName  
  속성의 전체 이름입니다.  
@@ -68,15 +68,15 @@ public struct DEBUG_PROPERTY_INFO {
  서식이 지정 된 문자열 속성 값입니다.  
   
  속성  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 이 구조에서 설명 하는 개체입니다.  
+ 합니다 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 이 구조에서 설명 하는 개체입니다.  
   
  dwAttrib  
  플래그의 조합 된 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 이 속성의 특성을 설명 하는 열거형입니다.  
   
 ## <a name="remarks"></a>설명  
- 속성은 개체 이름, 형식 및 값을 가진 계층적 특성입니다. 예를 들어 지역 변수, 매개 변수, 조사식 변수 및 식과 레지스터 속성 설명 수 있습니다.  
+ 속성은 개체 이름, 형식 및 값이 있는 계층적 특성입니다. 예를 들어, 지역 변수, 매개 변수, 조사식 변수 및 식 및 레지스터 속성을 설명할 수 있습니다.  
   
- 이 구조에 전달 되는 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 으로 채워지면 메서드. 이 구조에서이 구조의 목록의 일부로 반환 됩니다는 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 차례로 호출에서 반환 되는 인터페이스는 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 및 [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) 메서드.  
+ 이 구조에 전달 되는 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 메서드 위치에서 채워집니다. 이 구조에서이 구조의 목록의 일부로 반환 됩니다 합니다 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 차례로 호출에서 반환 되는 인터페이스를 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 고 [ EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

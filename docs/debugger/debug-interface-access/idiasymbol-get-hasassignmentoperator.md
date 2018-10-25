@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f1a8799ae740566bef247238a98b7dc58ca97ac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 855f0379a416bab1f05ebec390fe54399feefba9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850011"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 사용자 정의 데이터 형식에 정의 된 모든 할당 연산자에 있는지 여부를 지정 하는 플래그를 검색 합니다.  
@@ -34,13 +34,13 @@ HRESULT get_hasAssignmentOperator (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 그렇지 않으면 반환 사용자 정의 데이터 형식에 정의 된 모든 할당 연산자가 `FALSE`합니다.  
+ [out] 반환 `TRUE` 사용자 정의 데이터 형식에 있는 경우 모든 할당 연산자를 정의 합니다; 그렇지 않으면 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815184"
 ---
 # <a name="list-memory-command"></a>메모리 목록 표시 명령
 지정된 메모리 범위의 내용을 표시합니다.
@@ -71,7 +71,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  **Debug.ListMemory** 명령에 사용할 수 있는 별칭 목록은 다음과 같습니다.
 
 |Alias|명령 및 스위치|
-|-----------|--------------------------|
+|-----------| - |
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
 |**db**|Debug.ListMemory /Format:OneByte|
@@ -94,4 +94,4 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5e954550b8d59f1d1672e1229387714ad251a38c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884916"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,37 +36,37 @@ ms.locfileid: "49204700"
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Mage.exe를 사용 하 여 데이터 파일을 포함 하려면  
   
-1.  응용 프로그램 파일의 나머지 부분을 사용 하 여 응용 프로그램 디렉터리에 데이터 파일을 추가 합니다.  
+1. 응용 프로그램 파일의 나머지 부분을 사용 하 여 응용 프로그램 디렉터리에 데이터 파일을 추가 합니다.  
   
-     일반적으로 응용 프로그램 디렉터리 배포의 현재 버전을 사용 하 여 레이블이 지정 된 디렉터리 됩니다-예를 들어 v1.0.0.0 합니다.  
+    일반적으로 응용 프로그램 디렉터리 배포의 현재 버전을 사용 하 여 레이블이 지정 된 디렉터리 됩니다-예를 들어 v1.0.0.0 합니다.  
   
-2.  데이터 파일을 나열 하 여 응용 프로그램 매니페스트를 업데이트 합니다.  
+2. 데이터 파일을 나열 하 여 응용 프로그램 매니페스트를 업데이트 합니다.  
   
-     **mage-u v1.0.0.0\Application.manifest-FromDirectory v1.0.0.0**  
+    **mage-u v1.0.0.0\Application.manifest-FromDirectory v1.0.0.0**  
   
-     이 태스크를 수행할 다시 응용 프로그램 매니페스트에 파일 목록을 만들고 해시 서명을 자동으로 생성 합니다.  
+    이 태스크를 수행할 다시 응용 프로그램 매니페스트에 파일 목록을 만들고 해시 서명을 자동으로 생성 합니다.  
   
-3.  원하는 텍스트 편집기나 XML 편집기에서 응용 프로그램 매니페스트를 열고 찾습니다는 `file` 최근에 추가 된 파일에 대 한 요소입니다.  
+3. 원하는 텍스트 편집기나 XML 편집기에서 응용 프로그램 매니페스트를 열고 찾습니다는 `file` 최근에 추가 된 파일에 대 한 요소입니다.  
   
-     이라는 XML 파일을 추가한 경우 `Data.xml`, 파일은 다음 코드 예와 유사 합니다.  
+    이라는 XML 파일을 추가한 경우 `Data.xml`, 파일은 다음 코드 예와 유사 합니다.  
   
- `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  특성을 추가 합니다 `type` 이 요소에 값을 사용 하 여 제공 `data`합니다.  
+4. 특성을 추가 합니다 `type` 이 요소에 값을 사용 하 여 제공 `data`합니다.  
   
- `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  에 키 쌍 또는 인증서를 사용 하 여 응용 프로그램 매니페스트에 다시 서명 및 배포 매니페스트에 다시 서명 합니다.  
+5. 에 키 쌍 또는 인증서를 사용 하 여 응용 프로그램 매니페스트에 다시 서명 및 배포 매니페스트에 다시 서명 합니다.  
   
-     응용 프로그램 매니페스트의 해시가 변경 되었기 때문에 배포 매니페스트에 다시 서명 해야 합니다.  
+    응용 프로그램 매니페스트의 해시가 변경 되었기 때문에 배포 매니페스트에 다시 서명 해야 합니다.  
   
-     **mage-s 응용 프로그램 매니페스트-cf cert_file-pwd 암호**  
+    **mage-s 응용 프로그램 매니페스트-cf cert_file-pwd 암호**  
   
-     **mage-u 배포 매니페스트 appm 앱 매니페스트**  
+    **mage-u 배포 매니페스트 appm 앱 매니페스트**  
   
-     **mage-s 배포 매니페스트-cf certfile-pwd 암호**  
+    **mage-s 배포 매니페스트-cf certfile-pwd 암호**  
   
-2.  
+6. 
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>MageUI.exe를 사용 하 여 데이터 파일을 포함 하려면  
   

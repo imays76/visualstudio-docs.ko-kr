@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8559f7c7d5baa5144449f67850d2fe882c379e94
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f78d72bad8cb12b72f4b51e113d23dcd64ada8fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838363"
 ---
 # <a name="idebugpropertygetparent"></a>IDebugProperty::GetParent
 속성의 부모 속성을 가져옵니다.  
@@ -41,7 +41,7 @@ HRESULT GetParent (
  [out] 반환 된 `IDebugProperty` 속성의 부모를 나타내는 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`합니다.  
+ 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1709ea21fa785a573dae03ad8c89814c9952b50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 586d7181c1a8eb3c94a8ad236d4ff40602378199
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869264"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>방법: 매개 변수의 형식 설명자 정의
   형식 설명자는 매개 변수의 데이터 형식을 설명하는 속성을 포함합니다. 형식 설명자는 필드, 엔터티 또는 엔터티 컬렉션을 정의할 수 있습니다. 자세한 내용은 [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx)합니다.  
@@ -84,43 +84,43 @@ ms.locfileid: "37119453"
   
 ### <a name="to-define-a-collection-of-entities"></a>엔터티 컬렉션을 정의하려면  
   
-1.  에 **BDC 메서드 세부 정보** 창에서 원하는 매개 변수의 형식 설명자를 선택 합니다.  
+1. 에 **BDC 메서드 세부 정보** 창에서 원하는 매개 변수의 형식 설명자를 선택 합니다.  
   
-2.  메뉴 모음에서 **뷰**하십시오 **속성 창**합니다.  
+2. 메뉴 모음에서 **뷰**하십시오 **속성 창**합니다.  
   
-3.  에 **속성** 창에서 설정 합니다 **이름** 속성을 엔터티를 설명 하는 이름 (예를 들어: **연락처**).  
+3. 에 **속성** 창에서 설정 합니다 **이름** 속성을 엔터티를 설명 하는 이름 (예를 들어: **연락처**).  
   
-4.  설정 된 **IsCollection** 속성을 **True**합니다. 이는 이 형식 설명자가 엔터티 컬렉션임을 나타냅니다.  
+4. 설정 된 **IsCollection** 속성을 **True**합니다. 이는 이 형식 설명자가 엔터티 컬렉션임을 나타냅니다.  
   
-5.  설정 된 **TypeName** 속성에 대 한 참조를 포함 하는 문자열을는 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 및 엔터티를 나타내는 형식의 정규화 된 이름입니다. 이 형식은 프로젝트의 클래스, 솔루션에서 참조하는 어셈블리에 정의된 형식 또는 BDC 개체 모델에 정의된 형식일 수 있습니다.  
+5. 설정 된 **TypeName** 속성에 대 한 참조를 포함 하는 문자열을는 <xref:System.Collections.Generic.IEnumerable%601> 인터페이스 및 엔터티를 나타내는 형식의 정규화 된 이름입니다. 이 형식은 프로젝트의 클래스, 솔루션에서 참조하는 어셈블리에 정의된 형식 또는 BDC 개체 모델에 정의된 형식일 수 있습니다.  
   
-    -   프로젝트에서 클래스에 대해 아래쪽 화살표를 옆에 선택 합니다 **TypeName** 속성을 선택 합니다 **현재 프로젝트** 나타나고 프로젝트의 클래스를 선택 하는 대화 상자에서 탭 합니다.  
+   - 프로젝트에서 클래스에 대해 아래쪽 화살표를 옆에 선택 합니다 **TypeName** 속성을 선택 합니다 **현재 프로젝트** 나타나고 프로젝트의 클래스를 선택 하는 대화 상자에서 탭 합니다.  
   
-         정규화된 이름에는 클래스의 네임스페이스 및 이름, LOB 시스템의 이름이 차례로 포함됩니다.  
+      정규화된 이름에는 클래스의 네임스페이스 및 이름, LOB 시스템의 이름이 차례로 포함됩니다.  
   
-         다음 예제에서는 값을 설정 합니다 **TypeName** 속성 프로젝트에서 클래스의 컬렉션을 합니다.  
+      다음 예제에서는 값을 설정 합니다 **TypeName** 속성 프로젝트에서 클래스의 컬렉션을 합니다.  
   
-         `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1]'  
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1]'  
   
-    -   솔루션의 어셈블리에 있는 형식인 경우 정규화된 이름에는 형식 이름, 어셈블리 이름, 버전 번호, 문화권 및 public 키 토큰이 포함됩니다.  
+   - 솔루션의 어셈블리에 있는 형식인 경우 정규화된 이름에는 형식 이름, 어셈블리 이름, 버전 번호, 문화권 및 public 키 토큰이 포함됩니다.  
   
-         다음 예제에서는 값을 설정 합니다 **TypeName** 솔루션에서 참조 하는 어셈블리에 있는 형식의 컬렉션 속성.  
+      다음 예제에서는 값을 설정 합니다 **TypeName** 솔루션에서 참조 하는 어셈블리에 있는 형식의 컬렉션 속성.  
   
-         `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, 버전 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089 =]'  
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, 버전 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089 =]'  
   
-    -   BDC 개체 모델에 정의된 형식인 경우 정규화된 이름에는 형식의 네임스페이스 및 이름만 포함됩니다.  
+   - BDC 개체 모델에 정의된 형식인 경우 정규화된 이름에는 형식의 네임스페이스 및 이름만 포함됩니다.  
   
-         다음 예제에서는 값을 설정 합니다 **TypeName** BDC 개체 모델에 정의 된 형식의 컬렉션 속성입니다.  
+      다음 예제에서는 값을 설정 합니다 **TypeName** BDC 개체 모델에 정의 된 형식의 컬렉션 속성입니다.  
   
-         `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]'  
+      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]'  
   
-6.  에 **BDC 메서드 세부 정보** 창에서 형식 설명자에 대해 표시 되는 목록 상자를 열고 선택한 **편집**합니다.  
+6. 에 **BDC 메서드 세부 정보** 창에서 형식 설명자에 대해 표시 되는 목록 상자를 열고 선택한 **편집**합니다.  
   
-     합니다 **BDC 탐색기** 창이 열립니다.  
+    합니다 **BDC 탐색기** 창이 열립니다.  
   
-7.  에 **BDC 탐색기**, 형식 설명자의 바로 가기 메뉴를 열고 선택한 후 **Typedescriptor 추가**합니다.  
+7. 에 **BDC 탐색기**, 형식 설명자의 바로 가기 메뉴를 열고 선택한 후 **Typedescriptor 추가**합니다.  
   
-     새 형식 설명자는 컬렉션 형식 설명자에 자식으로 추가됩니다. 이 형식 설명자를 엔터티로 구성합니다.  
+    새 형식 설명자는 컬렉션 형식 설명자에 자식으로 추가됩니다. 이 형식 설명자를 엔터티로 구성합니다.  
   
 ## <a name="see-also"></a>참고자료
  [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)   

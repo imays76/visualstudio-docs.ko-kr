@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880680"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>게임 또는 앱에서 3D 자산 사용
 
@@ -41,7 +41,7 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 2.  **사용 가능한 빌드 사용자 지정 파일**에서는 다음 테이블에서 설명한 대로 프로젝트에서 사용하려는 자산 형식에 해당하는 확인란을 선택합니다.
 
     |자산 형식|빌드 사용자 지정 이름|
-    |----------------|------------------------------|
+    |----------------| - |
     |질감 및 이미지|**ImageContentTask(.targets, .props)**|
     |3D 모델|**MeshContentTask(.targets, .props)**|
     |셰이더|**ShaderGraphContentTask(.targets, .props)**|
@@ -67,7 +67,7 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 세 가지 콘텐츠 파이프라인 항목 형식, 연결된 해당 원본 및 출력 파일 형식은 다음과 같습니다.
 
 |항목 형식|원본 파일 형식|출력 파일 형식|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**이미지 콘텐츠 파이프라인**|이동식 네트워크 그래픽(*.png*)<br /><br /> JPEG(*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface(*.dds*)<br /><br /> Graphics Interchange Format(*.gif*)<br /><br /> Bitmap(*.bmp*, *.dib*)<br /><br /> Tagged Image File Format(*.tif*, *.tiff*)<br /><br /> Targa(*.tga*)|DirectDraw Surface(*.dds*)|
 |**메시 콘텐츠 파이프라인**|AutoDesk FBX 교환 파일(*.fbx*)<br /><br /> Collada DAE 파일(*.dae*)<br /><br /> Wavefront OBJ 파일(*.obj*)|3D 메시 파일(*.cmo*)|
 |**셰이더 콘텐츠 파이프라인**|시각적 셰이더 그래프(*.dgsl*)|컴파일된 셰이더 출력(*.cso*)|

@@ -18,12 +18,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852533"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>연습: Windows 스토어 앱용 단위 테스트 만들기 및 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Visual Studio에는 관리되는 [!INCLUDE[win8_appname_long](../includes/win8-a
   
  Visual Studio는 다음과 같은 유닛 테스트 기능을 제공합니다.  
   
--   [단위 테스트 프로젝트 만들기](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [단위 테스트 프로젝트 만들기](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [단위 테스트 프로젝트에 대한 매니페스트 편집](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [단위 테스트 프로젝트에 대한 매니페스트 편집](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [단위 테스트 코딩](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [단위 테스트 코딩](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [단위 테스트 실행](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [단위 테스트 실행](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- 다음 절차에서는 관리되는 Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 응용 프로그램에 대한 단위 테스트를 작성, 실행 및 디버깅하는 단계를 설명합니다.  
+  다음 절차에서는 관리되는 Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 응용 프로그램에 대한 단위 테스트를 작성, 실행 및 디버깅하는 단계를 설명합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  Visual Studio  

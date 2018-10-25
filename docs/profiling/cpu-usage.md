@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1f63e4f43db3f8c4b24b43bda02cf00b52befc94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842185"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 사용량 분석
 앱 성능 문제를 검토해야 하는 경우 앱에서 CPU를 사용하는 방식을 파악하는 것부터 시작하는 것이 좋습니다. **CPU 사용량** 도구는 CPU에서 Visual C++, Visual C#/Visual Basic 및 JavaScript 코드 실행에 시간을 소모하는 상황을 보여 줍니다. Visual Studio 2015 업데이트 1부터 디버거를 종료하지 않고 CPU 사용의 기능별 분석 결과를 볼 수 있습니다. 디버그하는 동안 CPU 프로파일링을 켜고 끌 수 있으며, 실행이 중지되면(예: 중단점에서) 결과를 볼 수 있습니다.  
@@ -28,33 +28,33 @@ Windows 7 이상에서는 이 아티클에 표시된 프로파일링 도구인 [
   
 ##  <a name="collect-cpu-usage-data"></a>CPU 사용량 데이터 수집  
   
-1.  Visual Studio에서 솔루션 구성을 **릴리스** 으로 설정하고 배포 대상을 선택합니다.  
+1. Visual Studio에서 솔루션 구성을 **릴리스** 으로 설정하고 배포 대상을 선택합니다.  
   
-     ![릴리스 및 로컬 컴퓨터 선택](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![릴리스 및 로컬 컴퓨터 선택](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   **릴리스** 모드에서 앱을 실행하면 앱의 실제 성능을 더 잘 파악할 수 있습니다.  
+   -   **릴리스** 모드에서 앱을 실행하면 앱의 실제 성능을 더 잘 파악할 수 있습니다.  
   
-    -   로컬 컴퓨터에서 앱을 실행하면 설치된 앱의 실행을 가장 잘 복제합니다.  
+   -   로컬 컴퓨터에서 앱을 실행하면 설치된 앱의 실행을 가장 잘 복제합니다.  
   
-    -   원격 장치에서 데이터를 수집하는 경우 원격 데스크톱 연결을 사용하는 것이 아니라 장치에서 직접 앱을 실행합니다.  
+   -   원격 장치에서 데이터를 수집하는 경우 원격 데스크톱 연결을 사용하는 것이 아니라 장치에서 직접 앱을 실행합니다.  
   
-    -   Windows Phone 앱의 경우 **장치** 에서 직접 데이터를 수집하면 가장 정확한 데이터가 제공됩니다.  
+   -   Windows Phone 앱의 경우 **장치** 에서 직접 데이터를 수집하면 가장 정확한 데이터가 제공됩니다.  
   
-2.  **디버그** 메뉴에서 **성능 프로파일러**를 선택합니다.  
+2. **디버그** 메뉴에서 **성능 프로파일러**를 선택합니다.  
   
-3.  **CPU 사용량** 을 선택한 다음 **시작**을 선택합니다.  
+3. **CPU 사용량** 을 선택한 다음 **시작**을 선택합니다.  
   
-     ![CPU 사용량 선택](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![CPU 사용량 선택](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  앱이 시작되면 **최대 수 가져오기**를 클릭합니다. 출력이 표시되면 약 1초간 기다린 다음 **Get Max Number Async**(비동기적으로 최대 수 가져오기)를 선택합니다. 단추를 클릭하는 시간 사이에 대기하면 진단 보고서에서 단추 클릭 루틴을 좀 더 쉽게 격리할 수 있습니다.  
+4. 앱이 시작되면 **최대 수 가져오기**를 클릭합니다. 출력이 표시되면 약 1초간 기다린 다음 **Get Max Number Async**(비동기적으로 최대 수 가져오기)를 선택합니다. 단추를 클릭하는 시간 사이에 대기하면 진단 보고서에서 단추 클릭 루틴을 좀 더 쉽게 격리할 수 있습니다.  
   
-5.  두 번째 출력 줄이 나타나면 성능 및 진단 허브에서 **수집 중지** 를 선택합니다.  
+5. 두 번째 출력 줄이 나타나면 성능 및 진단 허브에서 **수집 중지** 를 선택합니다.  
   
- ![CpuUsage 데이터 컬렉션 중지](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![CpuUsage 데이터 컬렉션 중지](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU 사용량 도구에서 데이터를 분석하고 보고서를 표시합니다.  
+   CPU 사용량 도구에서 데이터를 분석하고 보고서를 표시합니다.  
   
- ![CpuUsage 보고서](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+   ![CpuUsage 보고서](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>CPU 사용량 보고서 분석  
   

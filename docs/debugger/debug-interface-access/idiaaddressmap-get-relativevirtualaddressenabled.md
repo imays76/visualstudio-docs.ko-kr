@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25159556d44ca37d7938e67e67f1b9900a05010b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa61da69f30b759ade63798d681ae8036bcd8ece
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849088"
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
-계산 및 상대 가상 주소 (RVA)의 사용을 사용할지 여부를 나타냅니다.  
+계산 및 상대 가상 주소 (RVA) 사용 하 여 사용 되는지 여부를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,15 +34,15 @@ HRESULT get_relativeVirtualAddressEnabled (
   
 #### <a name="parameters"></a>매개 변수  
  pRetVal  
- [out] 반환 `TRUE` rva가 계산에서 사용 되는 경우.  
+ [out] 반환 `TRUE` Rva 계산을 사용 하는 경우.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 세그먼트 처음 PDB 파일에서 로드 된 rva가 활성화 됩니다. Rva 사용 하는 호출 하 여 임시로 해제할 수 있습니다는 [idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) 메서드.  
+ Rva는 세그먼트는 처음에 PDB 파일에서 로드 된 경우에 활성화 됩니다. Rva 사용을 호출 하 여 일시적으로 비활성화할 수 있습니다 합니다 [idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) 메서드.  
   
- 또한 호출 하 여 새 이미지 헤더를 설정 될 수는 [idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) 메서드를 호출 하 여 뒤에 `put_relativeVirtualAddressEnabled` 메서드는 새 이미지 헤더를 사용 하 여 rva가 사용할 수 있도록 합니다.  
+ 또한 호출 하 여 새 이미지 헤더를 설정할 수 있습니다 합니다 [idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) 메서드를 호출 하 여 다음을 `put_relativeVirtualAddressEnabled` 새 이미지 헤더를 사용 하 여 rva가 사용 하도록 설정 하는 방법.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

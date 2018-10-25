@@ -17,12 +17,12 @@ ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0707544f739f934b49c6092bcb4c1c61975028ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cebe468e6325c73802ec073fc250a598f897c2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848516"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 정의 명령, 메뉴 및 그룹
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49246677"
 ## <a name="finding-environment-defined-commands"></a>환경 정의 명령 찾기  
  환경 명령 4 개.vsct 파일 집합이 정의 됩니다.  
   
--   SharedCmdDef.vsct  
+- SharedCmdDef.vsct  
   
--   SharedCmdPlace.vsct  
+- SharedCmdPlace.vsct  
   
--   ShellCmdDef.vsct  
+- ShellCmdDef.vsct  
   
--   ShellCmdPlace.vsct  
+- ShellCmdPlace.vsct  
   
- 이러한 파일이  *\<Visual Studio SDK 설치 경로 >* \VisualStudioIntegration\Common\Inc\\합니다. 이러한 파일의 정의와 메뉴 및 메뉴, 그룹 및 명령을 컨테이너로 VSPackage의 명령 테이블 (.vsct) 구성 파일에서 사용할 수 있는 그룹의 Guid를 제공 합니다.  
+  이러한 파일이  *\<Visual Studio SDK 설치 경로 >* \VisualStudioIntegration\Common\Inc\\합니다. 이러한 파일의 정의와 메뉴 및 메뉴, 그룹 및 명령을 컨테이너로 VSPackage의 명령 테이블 (.vsct) 구성 파일에서 사용할 수 있는 그룹의 Guid를 제공 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [Visual Studio 메뉴의 GUID 및 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

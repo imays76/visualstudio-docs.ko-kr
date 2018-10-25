@@ -20,12 +20,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867236"
 ---
 # <a name="application-page-project-designer-c"></a>프로젝트 디자이너, 응용 프로그램 페이지(C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,16 +94,16 @@ ms.locfileid: "49264084"
  **Manifest**  
  Windows Vista에서 UAC(사용자 계정 컨트롤)로 응용 프로그램을 실행하는 경우 매니페스트 생성 옵션을 선택합니다. 이 옵션은 다음 값을 가질 수 있습니다.  
   
--   **기본 설정으로 구성된 매니페스트 포함** Windows Vista에서 Visual Studio가 작동하는 일반적인 방식(`requestedExecutionLevel`을 `AsInvoker`로 지정하여 응용 프로그램의 실행 파일에 보안 정보 포함)을 지원합니다. 기본 옵션입니다.  
+- **기본 설정으로 구성된 매니페스트 포함** Windows Vista에서 Visual Studio가 작동하는 일반적인 방식(`requestedExecutionLevel`을 `AsInvoker`로 지정하여 응용 프로그램의 실행 파일에 보안 정보 포함)을 지원합니다. 기본 옵션입니다.  
   
--   **매니페스트 없이 응용 프로그램 만들기** 이 방법을 *가상화*라고 합니다. 이 옵션은 이전 응용 프로그램과의 호환성을 위해 사용합니다.  
+- **매니페스트 없이 응용 프로그램 만들기** 이 방법을 *가상화*라고 합니다. 이 옵션은 이전 응용 프로그램과의 호환성을 위해 사용합니다.  
   
--   **Properties\app.manifest**. 이 옵션은 ClickOnce 또는 등록이 필요하지 않은 COM에 의해 배포된 응용 프로그램에 필요합니다. ClickOnce 배포를 사용하여 응용 프로그램을 게시하면 **매니페스트**가 자동으로 이 옵션으로 설정됩니다.  
+- **Properties\app.manifest**. 이 옵션은 ClickOnce 또는 등록이 필요하지 않은 COM에 의해 배포된 응용 프로그램에 필요합니다. ClickOnce 배포를 사용하여 응용 프로그램을 게시하면 **매니페스트**가 자동으로 이 옵션으로 설정됩니다.  
   
- **리소스 파일**  
- 프로젝트에 대한 리소스 파일을 제공하는 경우 이 라디오 단추를 선택합니다. 이 옵션을 선택하면 **아이콘** 및 **매니페스트** 옵션이 사용되지 않습니다.  
+  **리소스 파일**  
+  프로젝트에 대한 리소스 파일을 제공하는 경우 이 라디오 단추를 선택합니다. 이 옵션을 선택하면 **아이콘** 및 **매니페스트** 옵션이 사용되지 않습니다.  
   
- 경로 이름을 입력하거나 찾아보기 단추(**...**)를 사용하여 Win32 리소스 파일을 프로젝트에 추가합니다.  
+  경로 이름을 입력하거나 찾아보기 단추(**...**)를 사용하여 Win32 리소스 파일을 프로젝트에 추가합니다.  
   
 ## <a name="see-also"></a>참고 항목  
 [응용 프로그램 속성 관리](../../ide/application-properties.md)  

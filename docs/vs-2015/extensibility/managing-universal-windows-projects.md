@@ -13,12 +13,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e32c55e0e159ebaa59e0a70e41a05249bb46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837947"
 ---
 # <a name="managing-universal-windows-projects"></a>유니버설 Windows 프로젝트 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -416,116 +416,116 @@ ms.locfileid: "49252813"
   
 ### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>플랫폼 프로젝트 및 공유 프로젝트의 변경 내용 검색  
   
-1.  플랫폼 프로젝트에 대 한 경우와 마찬가지로 공유 프로젝트의 변경 내용을 감지 하려면 계층 구조 및 프로젝트 이벤트를 사용할 수 있습니다. 그러나 공유 프로젝트의 프로젝트 항목 표시 되지 않습니다, 즉, 공유 프로젝트 항목이 변경 되 면 특정 이벤트가 발생 하지 않습니다.  
+1. 플랫폼 프로젝트에 대 한 경우와 마찬가지로 공유 프로젝트의 변경 내용을 감지 하려면 계층 구조 및 프로젝트 이벤트를 사용할 수 있습니다. 그러나 공유 프로젝트의 프로젝트 항목 표시 되지 않습니다, 즉, 공유 프로젝트 항목이 변경 되 면 특정 이벤트가 발생 하지 않습니다.  
   
-     프로젝트에 있는 파일의 이름이 변경 되는 이벤트 시퀀스를 고려해 야 합니다.  
+    프로젝트에 있는 파일의 이름이 변경 되는 이벤트 시퀀스를 고려해 야 합니다.  
   
-    1.  디스크에 파일 이름이 변경 됩니다.  
+   1. 디스크에 파일 이름이 변경 됩니다.  
   
-    2.  프로젝트 파일은 파일의 새 이름을 포함 하도록 업데이트 됩니다.  
+   2. 프로젝트 파일은 파일의 새 이름을 포함 하도록 업데이트 됩니다.  
   
-     계층 이벤트 (예를 들어 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 일반적으로 에서처럼 UI에 표시 하 여 변경 내용을 추적 합니다 **솔루션 탐색기**합니다. 계층 이벤트 파일 삭제 한 다음 파일 추가 구성 파일 이름 바꾸기 작업을 하는 것이 좋습니다. 그러나 보이지 않는 항목이 변경 되 면 계층 이벤트 시스템이 실행 되는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 이벤트 아닌는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 이벤트입니다. 따라서 플랫폼 프로젝트에 있는 파일의 이름을 바꾸면 얻게 둘 다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 하 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, 되지만 공유 프로젝트에 있는 파일의 이름을 바꾸면만 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>합니다.  
+      계층 이벤트 (예를 들어 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 일반적으로 에서처럼 UI에 표시 하 여 변경 내용을 추적 합니다 **솔루션 탐색기**합니다. 계층 이벤트 파일 삭제 한 다음 파일 추가 구성 파일 이름 바꾸기 작업을 하는 것이 좋습니다. 그러나 보이지 않는 항목이 변경 되 면 계층 이벤트 시스템이 실행 되는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 이벤트 아닌는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 이벤트입니다. 따라서 플랫폼 프로젝트에 있는 파일의 이름을 바꾸면 얻게 둘 다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 하 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, 되지만 공유 프로젝트에 있는 파일의 이름을 바꾸면만 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>합니다.  
   
-     프로젝트 항목에 대 한 변경 내용을 추적 하기 위해 DTE 프로젝트 항목 이벤트를 처리할 수 있습니다 (항목 있는 <xref:EnvDTE.ProjectItemsEventsClass>). 그러나 많은 이벤트를 처리 하는 경우의 이벤트를 처리 하는 더 나은 성능을 얻을 수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>입니다. 이 연습에서는 계층 이벤트만 및 DTE 이벤트를 살펴보겠습니다. 이 절차에서는 공유 프로젝트 및 플랫폼 프로젝트를 이벤트 수신기를 추가 합니다. 그런 다음 공유 프로젝트에 하나의 파일 및 플랫폼 프로젝트에서 다른 파일 이름을 바꾸는 경우 각 이름 바꾸기 작업에 대해 발생 하는 이벤트를 볼 수 있습니다.  
+      프로젝트 항목에 대 한 변경 내용을 추적 하기 위해 DTE 프로젝트 항목 이벤트를 처리할 수 있습니다 (항목 있는 <xref:EnvDTE.ProjectItemsEventsClass>). 그러나 많은 이벤트를 처리 하는 경우의 이벤트를 처리 하는 더 나은 성능을 얻을 수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>입니다. 이 연습에서는 계층 이벤트만 및 DTE 이벤트를 살펴보겠습니다. 이 절차에서는 공유 프로젝트 및 플랫폼 프로젝트를 이벤트 수신기를 추가 합니다. 그런 다음 공유 프로젝트에 하나의 파일 및 플랫폼 프로젝트에서 다른 파일 이름을 바꾸는 경우 각 이름 바꾸기 작업에 대해 발생 하는 이벤트를 볼 수 있습니다.  
   
-     이 절차에서는 공유 프로젝트 및 플랫폼 프로젝트를 이벤트 수신기를 추가 합니다. 그런 다음 공유 프로젝트에 하나의 파일 및 플랫폼 프로젝트에서 다른 파일 이름을 바꾸는 경우 각 이름 바꾸기 작업에 대해 발생 하는 이벤트를 볼 수 있습니다.  
+      이 절차에서는 공유 프로젝트 및 플랫폼 프로젝트를 이벤트 수신기를 추가 합니다. 그런 다음 공유 프로젝트에 하나의 파일 및 플랫폼 프로젝트에서 다른 파일 이름을 바꾸는 경우 각 이름 바꾸기 작업에 대해 발생 하는 이벤트를 볼 수 있습니다.  
   
-2.  이벤트 수신기를 추가 합니다. 새 클래스 파일을 프로젝트에 추가한 HierarchyEventListener.cs를 호출 합니다.  
+2. 이벤트 수신기를 추가 합니다. 새 클래스 파일을 프로젝트에 추가한 HierarchyEventListener.cs를 호출 합니다.  
   
-3.  HierarchyEventListener.cs 파일을 열고 다음을 추가 문을 사용 하 여:  
+3. HierarchyEventListener.cs 파일을 열고 다음을 추가 문을 사용 하 여:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio;  
-    using System.IO;  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio;  
+   using System.IO;  
   
-    ```  
+   ```  
   
-4.  있어야 합니다 `HierarchyEventListener` 클래스 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. 있어야 합니다 `HierarchyEventListener` 클래스 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    { }  
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   { }  
   
-    ```  
+   ```  
   
-5.  멤버를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>아래 코드 에서처럼 합니다.  
+5. 멤버를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>아래 코드 에서처럼 합니다.  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    {  
-        private IVsHierarchy hierarchy;  
-        IVsOutputWindowPane output;   
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   {  
+       private IVsHierarchy hierarchy;  
+       IVsOutputWindowPane output;   
   
-        internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
-             this.hierarchy = hierarchy;  
-             this.output = outputWindow;  
-        }  
+       internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
+            this.hierarchy = hierarchy;  
+            this.output = outputWindow;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
-    }  
+       int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
+   }  
   
-    ```  
+   ```  
   
-6.  동일한 클래스에서 DTE 이벤트에 대 한 다른 이벤트 처리기를 추가할 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, 프로젝트 항목은 이름을 바꿀 때마다 발생 합니다.  
+6. 동일한 클래스에서 DTE 이벤트에 대 한 다른 이벤트 처리기를 추가할 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, 프로젝트 항목은 이름을 바꿀 때마다 발생 합니다.  
   
-    ```csharp  
-    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
-    {  
-        output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
-             oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
-    }  
-    ```  
+   ```csharp  
+   public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
+   {  
+       output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
+            oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
+   }  
+   ```  
   
-7.  계층 이벤트에 등록 합니다. 추적 하는 모든 프로젝트에 대해 별도로 등록 해야 합니다. 다음 코드를 추가 `ShowMessageBox`, 공유 프로젝트 및 플랫폼 프로젝트 중 하나에 대 한 기타 하나입니다.  
+7. 계층 이벤트에 등록 합니다. 추적 하는 모든 프로젝트에 대해 별도로 등록 해야 합니다. 다음 코드를 추가 `ShowMessageBox`, 공유 프로젝트 및 플랫폼 프로젝트 중 하나에 대 한 기타 하나입니다.  
   
-    ```csharp  
-    // hook up the event listener for hierarchy events on the shared project  
-    HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
-    uint cookie1;  
-    sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
+   ```csharp  
+   // hook up the event listener for hierarchy events on the shared project  
+   HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
+   uint cookie1;  
+   sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
   
-    // hook up the event listener for hierarchy events on the   
-    active project  
-    HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
-    uint cookie2;  
-    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
-    ```  
+   // hook up the event listener for hierarchy events on the   
+   active project  
+   HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
+   uint cookie2;  
+   activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
+   ```  
   
-8.  DTE 프로젝트 항목 이벤트에 대 한 등록 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>합니다. 두 번째 수신기에 연결 후에 다음 코드를 추가 합니다.  
+8. DTE 프로젝트 항목 이벤트에 대 한 등록 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>합니다. 두 번째 수신기에 연결 후에 다음 코드를 추가 합니다.  
   
-    ```csharp  
-    // hook up DTE events for project items  
-    Events2 dteEvents = (Events2)dte.Events;  
-    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
+   ```csharp  
+   // hook up DTE events for project items  
+   Events2 dteEvents = (Events2)dte.Events;  
+   dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
   
-    ```  
+   ```  
   
 9. 공유 항목을 수정 합니다. 플랫폼 프로젝트에서 공유 항목을 수정할 수 없습니다. 대신, 이러한 항목의 실제 소유자가 공유 프로젝트에서 수정할 해야 있습니다. 공유 프로젝트에 해당 하는 항목 ID를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>를 공유 하는 항목의 전체 경로 제공 합니다. 그런 다음 공유 항목을 수정할 수 있습니다. 플랫폼 프로젝트에 변경 내용이 전파 됩니다.  
   

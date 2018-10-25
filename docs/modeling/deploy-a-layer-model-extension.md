@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874620"
 ---
 # <a name="deploy-a-layer-model-extension"></a>레이어 모델 확장명 배포
 
@@ -29,13 +29,13 @@ Visual Studio의 다른 사용자는 Visual Studio를 사용하여 만든 레이
 
 ### <a name="to-install-the-extension"></a>확장을 설치하려면
 
-1.  포함 하는 프로젝트에서 **source.vsix.manifest**오픈 **bin\\ \***  파일 탐색기에서.
+1. 포함 하는 프로젝트에서 **source.vsix.manifest**오픈 합니다 *bin* 파일 탐색기에서 디렉터리입니다.
 
-2.  복사 합니다  **\*.vsix** 확장을 설치 하려는 컴퓨터에는 파일입니다.
+2. 복사 합니다  **\*.vsix** 확장을 설치 하려는 컴퓨터에는 파일입니다.
 
-3.  대상 컴퓨터에서 Windows 탐색기를 통해 *.vsix 파일을 두 번 클릭합니다.
+3. 대상 컴퓨터에서 Windows 탐색기를 통해 *.vsix 파일을 두 번 클릭합니다.
 
-     VSIX 설치 관리자가 열립니다.
+    VSIX 설치 관리자가 열립니다.
 
 ### <a name="to-uninstall-the-extension"></a>확장을 제거하려면
 

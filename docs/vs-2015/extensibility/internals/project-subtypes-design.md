@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839429"
 ---
 # <a name="project-subtypes-design"></a>프로젝트 하위 형식 디자인
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Microsoft Build Engine (MSBuild)을 기준으로 프로젝트를 확장 하는 V
 ## <a name="project-subtype-design"></a>프로젝트 하위 형식 디자인  
  기본 집계 하 여 프로젝트 하위 형식의 초기화 이루어집니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> 개체입니다. 이 집계 사용을 재정의 하거나 기본 프로젝트의 기능 대부분을 향상 시키는 프로젝트 하위 형식입니다. 프로젝트 하위 형식 속성을 사용 하 여 처리를 첫 번째 기회가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>를 사용 하 여 명령 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>를 사용 하 여 프로젝트 항목 관리 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>합니다. 프로젝트 하위 형식 확장할 수도 있습니다.  
   
--   프로젝트 구성 개체입니다.  
+- 프로젝트 구성 개체입니다.  
   
--   구성에 종속 된 개체입니다.  
+- 구성에 종속 된 개체입니다.  
   
--   구성에 관계 없이 찾아보기 개체입니다.  
+- 구성에 관계 없이 찾아보기 개체입니다.  
   
--   프로젝트 자동화 개체입니다.  
+- 프로젝트 자동화 개체입니다.  
   
--   속성 컬렉션을 자동화 하는 프로젝트입니다.  
+- 속성 컬렉션을 자동화 하는 프로젝트입니다.  
   
- 확장성 프로젝트 하위 형식에 대 한 자세한 내용은 참조 하세요. [속성 및 메서드 확장 프로젝트 하위 형식](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)합니다.  
+  확장성 프로젝트 하위 형식에 대 한 자세한 내용은 참조 하세요. [속성 및 메서드 확장 프로젝트 하위 형식](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)합니다.  
   
 ##### <a name="policy-files"></a>정책 파일  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 환경에서 해당 정책 파일의 구현 프로젝트 하위 형식을 사용 하 여 기본 프로젝트 시스템 확장의 예제를 제공 합니다. 정책 파일의 모양 지정을 사용 하 여 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 솔루션 탐색기를 포함 하는 기능을 관리 하 여 환경 **프로젝트 추가** 대화 상자에서 **새 항목 추가** 대화 상자 및  **속성** 대화 상자. 정책 하위 형식을 재정의 하 고를 통해 이러한 기능을 향상 시킵니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 구현 합니다.  

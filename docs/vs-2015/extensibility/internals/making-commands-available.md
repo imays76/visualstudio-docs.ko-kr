@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f689d6a0b93ef91c181e536624bb09856c2f35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883973"
 ---
 # <a name="making-commands-available"></a>명령을 사용 가능하게 지정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이
   
  다섯 번째 주요 상황에 맞는 영역을 IDE의 UI 상태를입니다. 활성 명령 컨텍스트에서 UI 컨텍스트 식별 됩니다 `GUID`같이 s:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
- 이러한 Guid는 활성 또는 IDE의 현재 상태에 따라 비활성으로 표시 됩니다. 여러 UI 컨텍스트는 동시에 활성화할 수 있습니다.  
+  이러한 Guid는 활성 또는 IDE의 현재 상태에 따라 비활성으로 표시 됩니다. 여러 UI 컨텍스트는 동시에 활성화할 수 있습니다.  
   
 ### <a name="hiding-and-displaying-commands-based-on-context"></a>숨기기 및 컨텍스트를 기반으로 하는 명령 표시  
  표시 하거나 패키지 자체를 로드 하지 않고 IDE에서 패키지 명령을 숨길 수 있습니다. 이렇게 하려면 명령 패키지의.vsct 파일에서 사용 하 여 정의 `DefaultDisabled`, `DefaultInvisible`, 및 `DynamicVisibility` 플래그와 추가 하나 이상의 명령을 [VisibilityItem](../../extensibility/visibilityitem-element.md) 요소를 사용 하는 [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) 섹션입니다. 때 지정 된 명령 컨텍스트부터 `GUID` 가 활성화 명령이 패키지를 로드 하지 않고 표시 됩니다.  
@@ -113,13 +113,13 @@ Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이
   
  명령은 사용 하도록 설정 되어 있으면 솔루션을 때마다 표시로 설정 되어 즉, 다음 명령 컨텍스트부터 Guid 중 하나가 active 될 때마다:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
- 예제에서는 모든 명령 플래그는 별도 알 수 있습니다. [명령 플래그](../../extensibility/command-flag-element.md) 요소입니다.  
+  예제에서는 모든 명령 플래그는 별도 알 수 있습니다. [명령 플래그](../../extensibility/command-flag-element.md) 요소입니다.  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   

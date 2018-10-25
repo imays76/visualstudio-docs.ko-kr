@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1888e2244182296ad2c5375d0055583dda69e592
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b745a9e74fd4016db60883b06091a33c6d30d52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860671"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>방법: 빌드 로그 파일 보기, 저장 및 구성
 
@@ -44,7 +44,7 @@ MSBuild를 사용하여 모든 종류의 프로젝트를 빌드하는 경우 *.t
 3.  **MSBuild 프로젝트 빌드 출력 세부 정보 표시** 목록에서 다음 값 중 하나를 선택하고 **확인** 단추를 선택합니다.
 
     |세부 정보 표시 수준|설명|
-    |---------------------|-----------------|
+    | - |-----------------|
     |**자동**|빌드의 요약만을 표시합니다.|
     |**최소**|매우 중요한 항목으로 분류된 빌드 및 오류, 경고 및 메시지의 요약을 표시합니다.|
     |**표준**|매우 중요한 항목으로 분류된 빌드 및 오류, 경고 및 메시지의 요약, 빌드의 주요 단계를 표시합니다. 이 수준의 세부 정보를 가장 자주 사용합니다.|

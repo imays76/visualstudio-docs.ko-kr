@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: f152572198116a200f91672691b6a4787538063e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814794"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>속성 창에서 필드 설명 가져오기
 **속성** 창 맨 아래 설명 영역에는 선택한 속성 필드와 관련된 정보가 표시됩니다. 이 기능은 기본적으로 켜져 있습니다. 설명 필드를 숨기려면 **속성** 창을 오른쪽 단추로 클릭하고 **설명**을 클릭합니다. 그러면 메뉴 창에서 **설명** 제목 옆의 확인 표시가 사라집니다. 같은 방법으로 **설명** 을 다시 토글하면 필드가 표시됩니다.  
@@ -28,18 +28,18 @@ ms.locfileid: "49301511"
   
 ### <a name="to-specify-localized-help-strings"></a>지역화된 도움말 문자열을 지정하려면  
   
-1.  형식 라이브러리( `helpstringdll` )의 라이브러리 문에`typelib`특성을 추가합니다.  
+1. 형식 라이브러리( `helpstringdll` )의 라이브러리 문에`typelib`특성을 추가합니다.  
   
-    > [!NOTE]
-    >  형식 라이브러리가 개체 라이브러리 (.olb) 파일인 경우 이 단계는 선택 사항입니다.  
+   > [!NOTE]
+   >  형식 라이브러리가 개체 라이브러리 (.olb) 파일인 경우 이 단계는 선택 사항입니다.  
   
-2.  문자열에 대한 지정 `helpstringcontext` 특성을 지정합니다. `helpstring` 특성을 지정할 수도 있습니다.  
+2. 문자열에 대한 지정 `helpstringcontext` 특성을 지정합니다. `helpstring` 특성을 지정할 수도 있습니다.  
   
-     이러한 특성은 실제 .chm 파일 도움말 항목에 포함된 `helpfile` 및 `helpcontext` 특성과 별개입니다.  
+    이러한 특성은 실제 .chm 파일 도움말 항목에 포함된 `helpfile` 및 `helpcontext` 특성과 별개입니다.  
   
- 강조 표시 된 속성 이름에 대해 표시할 설명 정보를 검색 하는 **속성** 창 호출 <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> 선택 되어 있는 속성에 대 한 원하는 지정 `lcid` 특성는 출력 문자열입니다. 내부적으로 <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2>이(가) `helpstringdll` 특성에 지정된 .dll 파일을 찾아서 지정된 컨텍스트 및 `lcid` 특성으로 이 .dll 파일에 대해 `DLLGetDocumentation`을(를) 호출합니다.  
+   강조 표시 된 속성 이름에 대해 표시할 설명 정보를 검색 하는 **속성** 창 호출 <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> 선택 되어 있는 속성에 대 한 원하는 지정 `lcid` 특성는 출력 문자열입니다. 내부적으로 <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2>이(가) `helpstringdll` 특성에 지정된 .dll 파일을 찾아서 지정된 컨텍스트 및 `lcid` 특성으로 이 .dll 파일에 대해 `DLLGetDocumentation`을(를) 호출합니다.  
   
- `DLLGetDocumentation`의 서명 및 구현:  
+   `DLLGetDocumentation`의 서명 및 구현:  
   
 ```  
 STDAPI DLLGetDocumentation  

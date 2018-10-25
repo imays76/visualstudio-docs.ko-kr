@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839650"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>방법: Visual Basic 프로젝트에서 VBA로 코드 노출
   코드에 노출할 수 있습니다는 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 두 가지 유형의 서로 상호 작용 하는 코드를 원하는 경우 Applications (VBA) 코드에 대 한 Visual basic 프로젝트입니다.  
@@ -35,11 +35,11 @@ ms.locfileid: "35256099"
   
  이 과정은 다른 클래스에서 코드에 대 한 것 보다 코드 호스트 항목 클래스에 대 한 다릅니다.  
   
--   [호스트 항목 클래스에 코드 노출](#HostItemCode)  
+- [호스트 항목 클래스에 코드 노출](#HostItemCode)  
   
--   [호스트 항목 클래스에 없는 코드 노출](#NonHostItem)  
+- [호스트 항목 클래스에 없는 코드 노출](#NonHostItem)  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 수행 할까요 호출 VSTO 코드 VBA에서?](http://go.microsoft.com/fwlink/?LinkId=136757)합니다.  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 수행 할까요 호출 VSTO 코드 VBA에서?](http://go.microsoft.com/fwlink/?LinkId=136757)합니다.  
   
 ##  <a name="HostItemCode"></a> 호스트 항목 클래스에 코드 노출  
  호스트 항목 클래스에서 Visual Basic 코드를 호출 하는 VBA 코드를 사용 하도록 설정 하려면 설정 합니다 **EnableVbaCallers** 호스트 항목의 속성 **True**합니다.  

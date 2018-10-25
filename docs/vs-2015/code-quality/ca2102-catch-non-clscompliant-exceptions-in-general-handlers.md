@@ -19,15 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9b08b143df05ec365c069d4c6dbf7d9ed84813d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c2797b32bbcabd1c63fbfd510aec05c8bf54d21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877424"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
@@ -41,11 +42,11 @@ ms.locfileid: "49244876"
 ## <a name="rule-description"></a>규칙 설명
  처리 하는 catch 블록 <xref:System.Exception> 모든 공용 언어 사양 (CLS) 규격이 예외를 catch 합니다. 그러나 비 CLS 규격이 아닌 예외를 catch 하지 않습니다. 비-CLS 규격 예외가 네이티브 코드에서 또는 Microsoft에 의해 생성 된 관리 코드에서 throw 될 수 있습니다 중간 언어 (MSIL) 어셈블러 합니다. C# 및 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 컴파일러 CLS 규격 예외가 throw 되도록 허용 하지 않습니다 및 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 아닌 CLS 규격이 아닌 예외를 catch 하지 않습니다. Catch 블록의 목적은 모든 예외를 처리할 경우 다음 일반 catch 블록 구문을 사용 합니다.
 
--   C#: `catch {}`
+- C#: `catch {}`
 
--   C + +: `catch(...) {}` 또는 `catch(Object^) {}`
+- C + +: `catch(...) {}` 또는 `catch(Object^) {}`
 
- 처리 되지 않은 비-CLS 규격 예외가 catch 블록에서 이전에 허용 된 권한 제거 되 면 보안 문제가 됩니다. 비 CLS 규격이 아닌 예외를 발견 하지 및 때문에 비-CLS 규격 예외가 throw 되는 악성 메서드는 높은 권한으로 실행 수 없습니다.
+  처리 되지 않은 비-CLS 규격 예외가 catch 블록에서 이전에 허용 된 권한 제거 되 면 보안 문제가 됩니다. 비 CLS 규격이 아닌 예외를 발견 하지 및 때문에 비-CLS 규격 예외가 throw 되는 악성 메서드는 높은 권한으로 실행 수 없습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  모든 catch 하려는 경우이 규칙 위반 문제를 해결 하려면 예외를 대체 또는 일반 catch 블록을 추가 하거나 어셈블리 표시 `RuntimeCompatibility(WrapNonExceptionThrows = true)`합니다. Catch 블록에서 사용 권한을 제거 하는 경우 중복 기능 일반에서 catch 블록입니다. 이 모든 예외를 처리 하려는 경우를 처리 하는 catch 블록으로 바꿉니다 <xref:System.Exception> 특정 예외 형식을 처리 하는 catch 블록을 사용 하 여 합니다.

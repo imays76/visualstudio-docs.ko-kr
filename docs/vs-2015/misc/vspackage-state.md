@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895212"
 ---
 # <a name="vspackage-state"></a>VSPackage 상태
 다양 한 요인의 지속형된 값 또는 상태 집합을 결정 한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 응용 프로그램입니다.  
   
--   프로젝트 구성과 프로젝트 속성을가지고 있습니다.  
+- 프로젝트 구성과 프로젝트 속성을가지고 있습니다.  
   
--   솔루션에는 속성이 있습니다.  
+- 솔루션에는 속성이 있습니다.  
   
--   사용자 설정은 문서 창과 도구 창, 도킹 상태 바로 가기 키의 위치와 크기를 결정합니다.  
+- 사용자 설정은 문서 창과 도구 창, 도킹 상태 바로 가기 키의 위치와 크기를 결정합니다.  
   
--   응용 프로그램 사용자 설정 하는 옵션이 있을 수 있습니다.  
+- 응용 프로그램 사용자 설정 하는 옵션이 있을 수 있습니다.  
   
--   응용 프로그램을 만드는 개체는 자체 속성에 있을 수 있습니다.  
+- 응용 프로그램을 만드는 개체는 자체 속성에 있을 수 있습니다.  
   
- 다음은 몇 가지는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 응용 프로그램 상태를 관리할 수 있습니다.  
+  다음은 몇 가지는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 응용 프로그램 상태를 관리할 수 있습니다.  
   
--   프로젝트 및 솔루션 속성 페이지를 통해.  
+- 프로젝트 및 솔루션 속성 페이지를 통해.  
   
--   통해 합니다 **설정 가져오기 및 내보내기 마법사**, 사용자 설정을 컴퓨터에서 간에 이동할 수 있습니다.  
+- 통해 합니다 **설정 가져오기 및 내보내기 마법사**, 사용자 설정을 컴퓨터에서 간에 이동할 수 있습니다.  
   
--   통해 합니다 **옵션** 응용 프로그램과 관련 된 옵션을 포함 하는 대화 상자.  
+- 통해 합니다 **옵션** 응용 프로그램과 관련 된 옵션을 포함 하는 대화 상자.  
   
--   통해 합니다 **속성** 창 개체의 속성을 표시 합니다.  
+- 통해 합니다 **속성** 창 개체의 속성을 표시 합니다.  
   
--   자동화 합니다. 응용 프로그램 자동화에 노출 되는 VSPackage 및 개체 속성에 액세스할 수 있습니다.  
+- 자동화 합니다. 응용 프로그램 자동화에 노출 되는 VSPackage 및 개체 속성에 액세스할 수 있습니다.  
   
- 응용 프로그램 상태를 기본 가지 응용 프로그램 상태를 저장 하 고 복원할 수 있도록 하는 다양 한 지 속성 메커니즘이 있습니다.  
+  응용 프로그램 상태를 기본 가지 응용 프로그램 상태를 저장 하 고 복원할 수 있도록 하는 다양 한 지 속성 메커니즘이 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [상태 지속성 지원](../misc/support-for-state-persistence.md)  
