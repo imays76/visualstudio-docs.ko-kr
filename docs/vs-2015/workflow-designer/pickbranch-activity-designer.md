@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e6061918df2110599731c0ac57340ae5319a8a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f39479c9421ab87caf7c918e05be89272f0fb4de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887311"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 활동 디자이너
 <xref:System.Activities.Statements.PickBranch>는 들어오는 이벤트에 의해 트리거되는 <xref:System.Activities.Statements.Pick> 활동 내에서 이벤트 기반의 실행 경로를 제공합니다.  
@@ -34,21 +34,21 @@ ms.locfileid: "49301888"
   
  추가 하는 방법은 두 가지가 <xref:System.Activities.Statements.PickBranch> 개체의 컬렉션에는 <xref:System.Activities.Statements.Pick> 개체: 끌어서 놓기는 **PickBranch** 에서 디자이너를 **도구 상자** 또는에서 상황에 맞는 메뉴를 사용 하 여 내 합니다 **선택** 디자인 화면:  
   
-1.  **PickBranch** 디자이너 만듭니다는 <xref:System.Activities.Statements.PickBranch> 에서 끌어 올 때를 **도구 상자** 분기 중 하나를 삭제 하 고는 **선택** 활동 디자이너는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 노출 합니다. 새 <xref:System.Activities.Statements.PickBranch> 개체는 <xref:System.Activities.Statements.Pick> 디자이너 내에서 컬렉션에 이미 포함되어 있는 기존 <xref:System.Activities.Statements.PickBranch> 요소의 왼쪽 또는 오른쪽에 배치됩니다. 끌어 올 때를 **PickBranch** 디자이너를 **선택** 마우스를 사용 하 여 디자이너를 **선택** 디자이너 세로 파란색-회색 밴드를 사용 하 여 위치를 나타내기 위해는 <xref:System.Activities.Statements.PickBranch> 특정된 마우스 위치에 대 한 추가 됩니다.  
+1. **PickBranch** 디자이너 만듭니다는 <xref:System.Activities.Statements.PickBranch> 에서 끌어 올 때를 **도구 상자** 분기 중 하나를 삭제 하 고는 **선택** 활동 디자이너는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 노출 합니다. 새 <xref:System.Activities.Statements.PickBranch> 개체는 <xref:System.Activities.Statements.Pick> 디자이너 내에서 컬렉션에 이미 포함되어 있는 기존 <xref:System.Activities.Statements.PickBranch> 요소의 왼쪽 또는 오른쪽에 배치됩니다. 끌어 올 때를 **PickBranch** 디자이너를 **선택** 마우스를 사용 하 여 디자이너를 **선택** 디자이너 세로 파란색-회색 밴드를 사용 하 여 위치를 나타내기 위해는 <xref:System.Activities.Statements.PickBranch> 특정된 마우스 위치에 대 한 추가 됩니다.  
   
-2.  마우스 오른쪽 단추로 클릭 **선택** 활동 디자이너 (에서 **PickBranch** 디자이너)를 상황에 맞는 메뉴를 받은 선택 **분기 만들기** 새 <xref:System.Activities.Statements.PickBranch>합니다. 새 <xref:System.Activities.Statements.PickBranch> 기존의 오른쪽에 추가 됩니다 <xref:System.Activities.Statements.PickBranch> 개체를 **선택** 디자이너입니다.  
+2. 마우스 오른쪽 단추로 클릭 **선택** 활동 디자이너 (에서 **PickBranch** 디자이너)를 상황에 맞는 메뉴를 받은 선택 **분기 만들기** 새 <xref:System.Activities.Statements.PickBranch>합니다. 새 <xref:System.Activities.Statements.PickBranch> 기존의 오른쪽에 추가 됩니다 <xref:System.Activities.Statements.PickBranch> 개체를 **선택** 디자이너입니다.  
   
- 합니다 **PickBranch** 디자이너를 표시 하기 위해 확장할 수 있습니다 합니다 **트리거** 및 **작업** 상자 또는 해당 헤더의 오른쪽에 있는 이중 캐럿을 클릭 하 여 축소 합니다. 편집 합니다 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 및 <xref:System.Activities.Statements.PickBranch.Action%2A> 각 <xref:System.Activities.Statements.PickBranch> 활동을 끌어서 합니다 **트리거** 및 **작업** 해당 디자이너의 상자.  
+   합니다 **PickBranch** 디자이너를 표시 하기 위해 확장할 수 있습니다 합니다 **트리거** 및 **작업** 상자 또는 해당 헤더의 오른쪽에 있는 이중 캐럿을 클릭 하 여 축소 합니다. 편집 합니다 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 및 <xref:System.Activities.Statements.PickBranch.Action%2A> 각 <xref:System.Activities.Statements.PickBranch> 활동을 끌어서 합니다 **트리거** 및 **작업** 해당 디자이너의 상자.  
   
- <xref:System.Activities.Statements.PickBranch> 개체를 <xref:System.Activities.Statements.Pick.Branches%2A> 의 컬렉션을 <xref:System.Activities.Statements.Pick> 개체를 끌어서 놓아 내의 새 위치에서 다시 정렬할 수 있습니다 합니다 **선택** 디자이너. 합니다 **선택** 디자이너 세로 파란색-회색 밴드를 사용 하 여 위치를 나타내기 위해는 <xref:System.Activities.Statements.PickBranch> 는 특정된 마우스 위치에 대 한 추가 됩니다.  
+   <xref:System.Activities.Statements.PickBranch> 개체를 <xref:System.Activities.Statements.Pick.Branches%2A> 의 컬렉션을 <xref:System.Activities.Statements.Pick> 개체를 끌어서 놓아 내의 새 위치에서 다시 정렬할 수 있습니다 합니다 **선택** 디자이너. 합니다 **선택** 디자이너 세로 파란색-회색 밴드를 사용 하 여 위치를 나타내기 위해는 <xref:System.Activities.Statements.PickBranch> 는 특정된 마우스 위치에 대 한 추가 됩니다.  
   
- <xref:System.Activities.Statements.PickBranch>를 삭제하는 방법은 두 가지입니다.  
+   <xref:System.Activities.Statements.PickBranch>를 삭제하는 방법은 두 가지입니다.  
   
-1.  선택 된 **PickBranch** 디자이너를 삭제 합니다.  
+3. 선택 된 **PickBranch** 디자이너를 삭제 합니다.  
   
-2.  선택 된 **PickBranch** 디자이너를 마우스 오른쪽 단추 클릭 상황에 맞는 메뉴를 가져오고 선택 **삭제**합니다.  
+4. 선택 된 **PickBranch** 디자이너를 마우스 오른쪽 단추 클릭 상황에 맞는 메뉴를 가져오고 선택 **삭제**합니다.  
   
- 선택 해야 합니다 **PickBranch** 디자이너 내에서 작업 중 하나를 선택 하 여 해당 **트리거** 또는 **동작** 이러한 작업 중 하나는 상자 실수로 삭제 아니라 <xref:System.Activities.Statements.PickBranch> 개체입니다.  
+   선택 해야 합니다 **PickBranch** 디자이너 내에서 작업 중 하나를 선택 하 여 해당 **트리거** 또는 **동작** 이러한 작업 중 하나는 상자 실수로 삭제 아니라 <xref:System.Activities.Statements.PickBranch> 개체입니다.  
   
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>워크플로 디자이너의 PickBranch 속성  
  다음 표에서는 가장 유용한 <xref:System.Activities.Statements.PickBranch> 속성을 보여 주고 [!INCLUDE[wfd2](../includes/wfd2-md.md)]에서 이러한 속성을 사용하는 방법을 설명합니다.  

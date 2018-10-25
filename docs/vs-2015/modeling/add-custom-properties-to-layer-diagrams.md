@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 517d9f40dc0c98ca8572c31ae256e81de864171e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844417"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>레이어 다이어그램에 사용자 지정 속성 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ ms.locfileid: "49235159"
   
 > [!IMPORTANT]
 >  속성을 표시하려면 레이어 속성을 표시할 각 컴퓨터에서 다음과 같이 변경해야 합니다.  
->   
->  1.  메모장을 사용 하 여 실행할 **관리자 권한으로 실행**합니다. `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`를 엽니다.  
-> 2.  `Content` 요소 안에 다음을 추가합니다.  
->   
->     ```xml  
->     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->     ```  
-> 3.  아래는 **Visual Studio Tools** Visual Studio 응용 프로그램 시작 메뉴를 열고 부분 **개발자 명령 프롬프트**합니다.  
->   
->      다음을 입력합니다.  
->   
->      `devenv /rootSuffix /updateConfiguration`  
->   
->      `devenv /rootSuffix Exp /updateConfiguration`  
-> 4.  Visual Studio를 다시 시작합니다.  
+> 
+> 1. 메모장을 사용 하 여 실행할 **관리자 권한으로 실행**합니다. `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`를 엽니다.  
+>    2.  `Content` 요소 안에 다음을 추가합니다.  
+> 
+>    ```xml  
+>    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>    ```  
+>    3.  아래는 **Visual Studio Tools** Visual Studio 응용 프로그램 시작 메뉴를 열고 부분 **개발자 명령 프롬프트**합니다.  
+> 
+>    다음을 입력합니다.  
+> 
+>    `devenv /rootSuffix /updateConfiguration`  
+> 
+>    `devenv /rootSuffix Exp /updateConfiguration`  
+>    4.  Visual Studio를 다시 시작합니다.  
   
  **VSIX 프로젝트에서 코드 인지 확인**  
   

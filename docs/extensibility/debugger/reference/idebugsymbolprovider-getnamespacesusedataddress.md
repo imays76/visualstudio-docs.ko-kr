@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55befbc206b6b9c781c8dab75a110dbbcb6ea18d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dd9e6f2297b6aa1f9b14c2c3dbff7b7c8755a7d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864194"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-이 메서드는 디버그 주소와 연결 된 네임 스페이스에 대 한 열거자를 만듭니다.  
+이 메서드는 디버그 주소를 사용 하 여 연결 된 네임 스페이스에 대 한 열거자를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,10 +49,10 @@ int GetNamespacesUsedAtAddress(
  [out] 반환 된 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 네임 스페이스에 대 한 열거자입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 예를 들어 지정 된 디버그 주소와 연결 된 여러 네임 스페이스가 네임 스페이스 또는 다중 중첩 있을 수 있습니다 `using` 문.  
+ 예를 들어, 지정 된 디버그 주소와 연결 된 여러 네임 스페이스는 네임 스페이스 또는 여러 개의 중첩 될 수 있습니다 `using` 문입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

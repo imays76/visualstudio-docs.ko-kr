@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865785"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
@@ -55,19 +55,19 @@ ms.locfileid: "44281093"
 
 - 프록시에 기본 자격 증명을 사용하려는 경우 다음 작업을 수행할 수 있습니다.
 
-    1. **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 또는 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**를 찾습니다.
+  1. **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 또는 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**를 찾습니다.
 
-    1. 구성 파일에서 `<system.net>` 블록을 찾아 다음 코드를 추가합니다.
+  2. 구성 파일에서 `<system.net>` 블록을 찾아 다음 코드를 추가합니다.
 
-        ```xml
-        <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
-        </defaultProxy>
-        ```
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
 
-        `proxyaddress="<http://<yourproxy:port#>`에는 네트워크의 올바른 프록시 주소를 삽입해야 합니다.
+      `proxyaddress="<http://<yourproxy:port#>`에는 네트워크의 올바른 프록시 주소를 삽입해야 합니다.
 
-    또는
+     또는
 
 - 또한 [How to connect through an authenticated Web Proxy](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)(인증된 웹 프록시를 통해 연결하는 방법) 블로그 게시물의 지침에 따라 프록시 사용을 허용하는 코드를 추가할 수도 있습니다.
 
@@ -109,8 +109,8 @@ Visual Studio는 TLS(전송 계층 보안) 1.2 프로토콜을 사용하여 네�
 
 - &#42;.nuget.org(NuGet 연결의 경우)
 
- > [!NOTE]
- > 개인이 소유한 NuGet 서버 URL은 이 목록에 포함되어 있지 않을 수 있습니다. %APPData%\Nuget\NuGet.Config에서 사용 중인 NuGet 서버를 확인할 수 있습니다.
+  > [!NOTE]
+  > 개인이 소유한 NuGet 서버 URL은 이 목록에 포함되어 있지 않을 수 있습니다. %APPData%\Nuget\NuGet.Config에서 사용 중인 NuGet 서버를 확인할 수 있습니다.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

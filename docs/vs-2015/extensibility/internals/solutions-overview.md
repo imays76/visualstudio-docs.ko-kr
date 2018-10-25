@@ -15,12 +15,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7255ed981bd65e364d1028c365aab66a73a76dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816003"
 ---
 # <a name="solutions-overview"></a>솔루션 개요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "49292665"
   
  솔루션을 열 때 다음 프로세스가 이루어집니다.  
   
-1.  환경 솔루션을 읽습니다.  
+1. 환경 솔루션을 읽습니다.  
   
-2.  환경에서 발견 한 경우는 `CLSID`, 해당 VSPackage를 로드 합니다.  
+2. 환경에서 발견 한 경우는 `CLSID`, 해당 VSPackage를 로드 합니다.  
   
-3.  경우는 VSPackage가 로드 환경 `QueryInterface` 에 대 한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> VSPackage 필요로 하는 인터페이스에 대 한 인터페이스입니다.  
+3. 경우는 VSPackage가 로드 환경 `QueryInterface` 에 대 한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> VSPackage 필요로 하는 인터페이스에 대 한 인터페이스입니다.  
   
-    1.  .Sln 파일을 읽을 때 환경 호출 `QueryInterface` 에 대 한 `IVsPersistSolutionProps`합니다.  
+   1.  .Sln 파일을 읽을 때 환경 호출 `QueryInterface` 에 대 한 `IVsPersistSolutionProps`합니다.  
   
-    2.  .Suo 파일에서 읽기 환경 호출 `QueryInterface` 에 대 한 `IVsPersistSolutionOpts`합니다.  
+   2.  .Suo 파일에서 읽기 환경 호출 `QueryInterface` 에 대 한 `IVsPersistSolutionOpts`합니다.  
   
- 이러한 파일의 사용에 관련 된 특정 정보를 찾을 수 있습니다 [솔루션 (합니다. Sln) 파일](../../extensibility/internals/solution-dot-sln-file.md) 고 [솔루션 사용자 옵션 (합니다. Suo) 파일](../../extensibility/internals/solution-user-options-dot-suo-file.md)합니다.  
+   이러한 파일의 사용에 관련 된 특정 정보를 찾을 수 있습니다 [솔루션 (합니다. Sln) 파일](../../extensibility/internals/solution-dot-sln-file.md) 고 [솔루션 사용자 옵션 (합니다. Suo) 파일](../../extensibility/internals/solution-user-options-dot-suo-file.md)합니다.  
   
 > [!NOTE]
 >  세 번째 빌드에서 제외 하 고 두 프로젝트의 구성으로 구성 된 새 솔루션 구성을 만들려면 하려는 경우 속성 페이지 UI 또는 자동화를 사용 해야 합니다. 솔루션 빌드 관리자 구성 및 해당 속성은 직접 변경할 수 없지만 사용 하 여 솔루션 빌드 관리자를 조작할 수 있습니다는 `SolutionBuild` DTE 자동화 모델의 클래스입니다. 솔루션을 구성 하는 방법에 대 한 자세한 내용은 참조 하세요. [솔루션 구성](../../extensibility/internals/solution-configuration.md)합니다.  

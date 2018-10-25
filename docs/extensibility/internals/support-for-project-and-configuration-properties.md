@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c36ee7332f896ed3228166b2c729a4bc2a4df03c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 783c73cc73da188ec1be626cf54db93ca62af465
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865104"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>프로젝트 및 구성 속성 지원
 합니다 **속성** 창에는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE) 프로젝트 및 구성 속성을 표시할 수 있습니다. 사용자는 응용 프로그램에 대 한 속성을 설정할 수 있도록 고유한 프로젝트 형식에 대 한 속성 페이지를 제공할 수 있습니다.  
@@ -61,14 +61,14 @@ ms.locfileid: "46496040"
   
  합니다 `SettingsPage` 클래스 및 `Microsoft.VisualStudio.Package.ProjectNode` 클래스는 프로젝트 및 구성 속성을 유지 하기 위해 이러한 메서드를 제공 합니다.  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` 및 `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` 프로젝트 속성을 유지 합니다.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` 및 `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` 프로젝트 속성을 유지 합니다.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 및 `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` 구성 속성을 유지 합니다.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 및 `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` 구성 속성을 유지 합니다.  
   
-    > [!NOTE]
-    >  구현 합니다 `Microsoft.VisualStudio.Package.SettingsPage` 및 `Microsoft.VisualStudio.Package.ProjectNode` 클래스를 사용 하 여는 `Microsoft.Build.BuildEngine` (MSBuild) 및 메서드를 가져올 프로젝트 파일에서 프로젝트 및 구성 속성을 설정 합니다.  
+  > [!NOTE]
+  >  구현 합니다 `Microsoft.VisualStudio.Package.SettingsPage` 및 `Microsoft.VisualStudio.Package.ProjectNode` 클래스를 사용 하 여는 `Microsoft.Build.BuildEngine` (MSBuild) 및 메서드를 가져올 프로젝트 파일에서 프로젝트 및 구성 속성을 설정 합니다.  
   
- 파생 클래스 `SettingsPage` 구현 해야 합니다 `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` 및 `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` 프로젝트나 구성 속성이 프로젝트 파일의 유지 되도록 합니다.  
+  파생 클래스 `SettingsPage` 구현 해야 합니다 `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` 및 `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` 프로젝트나 구성 속성이 프로젝트 파일의 유지 되도록 합니다.  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute 및 레지스트리 경로  
  클래스에서 파생 된 `SettingsPage` 은 Vspackage를 공유할 수 있도록 합니다. VSPackage에서 파생 된 클래스를 만들 수 있도록 `SettingsPage`, 추가 `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` 에서 파생 된 클래스에 `Microsoft.VisualStudio.Shell.Package`입니다.  

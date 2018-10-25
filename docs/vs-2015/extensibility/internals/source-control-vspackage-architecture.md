@@ -15,12 +15,12 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07da336ad46cf873501e21f95bdf41ed6124e289
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846410"
 ---
 # <a name="source-control-vspackage-architecture"></a>소스 제어 VSPackage 아키텍처
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,25 +34,25 @@ ms.locfileid: "49190465"
   
  원본 제어 스텁 다음 작업을 처리합니다.  
   
--   소스 제어 패키지 등록에 필요한 일반적인 UI를 제공 합니다.  
+- 소스 제어 패키지 등록에 필요한 일반적인 UI를 제공 합니다.  
   
--   소스 제어 패키지를 로드합니다.  
+- 소스 제어 패키지를 로드합니다.  
   
--   활성/비활성으로 소스 제어 패키지를 설정합니다.  
+- 활성/비활성으로 소스 제어 패키지를 설정합니다.  
   
- 원본 제어 스텁 소스 제어 패키지에 대 한 활성 서비스를 찾아 해당 패키지에 IDE에서 들어오는 모든 서비스 호출을 라우팅합니다.  
+  원본 제어 스텁 소스 제어 패키지에 대 한 활성 서비스를 찾아 해당 패키지에 IDE에서 들어오는 모든 서비스 호출을 라우팅합니다.  
   
- 소스 제어 어댑터 패키지는 특수 한 소스 제어 패키지를 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 제공 합니다. 이 패키지는 원본 제어 플러그 인 API를 기반으로 원본 제어 플러그 인을 지원 하기 위한 핵심 구성 요소입니다. 소스 제어 플러그 인 활성 플러그 인 경우 원본 제어 스텁 소스 컨트롤 어댑터 패키지에 해당 이벤트를 보냅니다. 차례로 소스 제어 어댑터 패키지는 원본 제어 플러그 인 API를 사용 하 여 소스 제어 플러그 인을 사용 하 여 통신 하 고도 기본값 모든 원본 제어 플러그 인에 대 한 공통 되는 UI를 제공 합니다.  
+  소스 제어 어댑터 패키지는 특수 한 소스 제어 패키지를 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 제공 합니다. 이 패키지는 원본 제어 플러그 인 API를 기반으로 원본 제어 플러그 인을 지원 하기 위한 핵심 구성 요소입니다. 소스 제어 플러그 인 활성 플러그 인 경우 원본 제어 스텁 소스 컨트롤 어댑터 패키지에 해당 이벤트를 보냅니다. 차례로 소스 제어 어댑터 패키지는 원본 제어 플러그 인 API를 사용 하 여 소스 제어 플러그 인을 사용 하 여 통신 하 고도 기본값 모든 원본 제어 플러그 인에 대 한 공통 되는 UI를 제공 합니다.  
   
- 소스 제어 패키지에는 활성 패키지 되 면 다른 한편으로 원본 제어 스텁와 직접 통신 패키지를 사용 하 여는 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 소스 제어 패키지 인터페이스입니다. 소스 제어 패키지는 소스 제어 UI 자체 호스트 하는 일을 담당 합니다.  
+  소스 제어 패키지에는 활성 패키지 되 면 다른 한편으로 원본 제어 스텁와 직접 통신 패키지를 사용 하 여는 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 소스 제어 패키지 인터페이스입니다. 소스 제어 패키지는 소스 제어 UI 자체 호스트 하는 일을 담당 합니다.  
   
- ![소스 제어 아키텍처 그래픽](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
+  ![소스 제어 아키텍처 그래픽](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
- 소스 제어 패키지의 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 소스 제어 또는 통합에 대 한 API를 제공 하지 않습니다. 에 설명 된 접근 방식을 사용 하 여이 대조해 보세요 [는 원본 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md) 고정 함수 집합과 콜백을 구현 하려면 소스 제어 플러그 인에 있습니다.  
+  소스 제어 패키지의 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 소스 제어 또는 통합에 대 한 API를 제공 하지 않습니다. 에 설명 된 접근 방식을 사용 하 여이 대조해 보세요 [는 원본 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md) 고정 함수 집합과 콜백을 구현 하려면 소스 제어 플러그 인에 있습니다.  
   
- 모든 VSPackage를 같은 소스 제어 패키지는 COM 개체를 사용 하 여 만들 수 있는 `CoCreateInstance`합니다. VSPackage에서 사용할 수 있게 하는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 를 구현 하 여 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>합니다. VSPackage는 사이트 포인터를 받는 인스턴스를 만들면 및 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> VSPackage 액세스의 사용 가능한 서비스 및 IDE에서 인터페이스를 제공 하는 인터페이스입니다.  
+  모든 VSPackage를 같은 소스 제어 패키지는 COM 개체를 사용 하 여 만들 수 있는 `CoCreateInstance`합니다. VSPackage에서 사용할 수 있게 하는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 를 구현 하 여 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>합니다. VSPackage는 사이트 포인터를 받는 인스턴스를 만들면 및 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> VSPackage 액세스의 사용 가능한 서비스 및 IDE에서 인터페이스를 제공 하는 인터페이스입니다.  
   
- 소스 제어 VSPackage 기반 패키지를 작성 원본 제어 플러그 인 API 기반 작성 보다 더 많은 고급 프로그래밍 전문 필요한 플러그 인입니다.  
+  소스 제어 VSPackage 기반 패키지를 작성 원본 제어 플러그 인 API 기반 작성 보다 더 많은 고급 프로그래밍 전문 필요한 플러그 인입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

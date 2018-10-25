@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884864"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>연습: 첫 번째에 VSTO 추가 기능 프로젝트 만들기
   이 연습에서는 Microsoft Office Project 용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프로젝트에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
@@ -32,15 +32,15 @@ ms.locfileid: "35674375"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   Project VSTO 추가 기능 프로젝트 만들기  
+- Project VSTO 추가 기능 프로젝트 만들기  
   
--   새 프로젝트에 작업을 추가하기 위해 Project의 개체 모델을 사용하는 코드 작성  
+- 새 프로젝트에 작업을 추가하기 위해 Project의 개체 모델을 사용하는 코드 작성  
   
--   테스트를 위해 프로젝트 빌드 및 실행  
+- 테스트를 위해 프로젝트 빌드 및 실행  
   
--   VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 완료된 프로젝트 정리  
+- VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 완료된 프로젝트 정리  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -78,18 +78,18 @@ ms.locfileid: "35674375"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>작업을 새 프로젝트에 추가하려면  
   
-1.  ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드에 대 한 이벤트 처리기를 정의 합니다 `NewProject` 의 이벤트는 `Microsoft.Office.Interop.MSProject.Application` 클래스입니다.  
+1. ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드는 `Microsoft.Office.Interop.MSProject.Application` 클래스의 `NewProject` 이벤트에 대한 이벤트 처리기를 정의합니다.  
   
-     사용자가 새 프로젝트를 만들 때 이 이벤트 처리기는 작업을 프로젝트에 추가합니다.  
+    사용자가 새 프로젝트를 만들 때 이 이벤트 처리기는 작업을 프로젝트에 추가합니다.  
   
-     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- 프로젝트를 수정 하려면이 코드 예제에서는 다음 개체를 사용 합니다.  
+   프로젝트를 수정 하려면이 코드 예제에서는 다음 개체를 사용 합니다.  
   
--   `Application` 클래스의 `ThisAddIn` 필드. 합니다 `Application` 반환 필드는 `Microsoft.Office.Interop.MSProject.Application` 프로젝트의 현재 인스턴스를 나타내는 개체입니다.  
+-   `Application` 클래스의 `ThisAddIn` 필드. `Application` 필드는 Project의 현재 인스턴스를 나타내는 `Microsoft.Office.Interop.MSProject.Application` 개체를 반환합니다.  
   
--   `pj` NewProject 이벤트에 대 한 이벤트 처리기의 매개 변수입니다. 합니다 `pj` 매개 변수는 한 `Microsoft.Office.Interop.MSProject.Project` 프로젝트를 나타내는 개체입니다. 자세한 내용은 [솔루션 프로젝트](../vsto/project-solutions.md)합니다.  
+-   `pj` NewProject 이벤트에 대 한 이벤트 처리기의 매개 변수입니다. `pj` 매개 변수는 프로젝트를 나타내는 `Microsoft.Office.Interop.MSProject.Project` 개체입니다. 자세한 내용은 [솔루션 프로젝트](../vsto/project-solutions.md)합니다.  
   
 1.  C#을 사용하는 경우 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 연결 된 `Application_Newproject` NewProject 이벤트와 이벤트 처리기입니다.  
   

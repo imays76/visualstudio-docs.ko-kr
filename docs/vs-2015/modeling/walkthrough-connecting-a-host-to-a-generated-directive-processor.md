@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817875"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ ms.locfileid: "49251939"
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>도메인 특정 언어 도구를 사용 하 여 도메인 모델을 기반으로 하는 지시문 프로세서를 생성 하려면  
   
-1.  다음과 같은 특징이 있는 도메인별 언어 솔루션을 만듭니다.  
+1. 다음과 같은 특징이 있는 도메인별 언어 솔루션을 만듭니다.  
   
-    -   이름: DSLMinimalTest  
+   - 이름: DSLMinimalTest  
   
-    -   솔루션 템플릿: 최소 언어  
+   - 솔루션 템플릿: 최소 언어  
   
-    -   파일 확장명: min  
+   - 파일 확장명: min  
   
-    -   회사 이름: Fabrikam  
+   - 회사 이름: Fabrikam  
   
      도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 도메인별 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)합니다.  
   
-2.  **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.  
+2. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.  
   
-    > [!IMPORTANT]
-    >  이 단계는 지시문 프로세서를 생성 하 고 레지스트리에서 키에 대 한 추가 합니다.  
+   > [!IMPORTANT]
+   >  이 단계는 지시문 프로세서를 생성 하 고 레지스트리에서 키에 대 한 추가 합니다.  
   
-3.  **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.  
+3. **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.  
   
-     두 번째 인스턴스가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 열립니다.  
+    두 번째 인스턴스가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 열립니다.  
   
-4.  실험적 빌드에서 **솔루션 탐색기**, 파일을 두 번 클릭 **sample.min**합니다.  
+4. 실험적 빌드에서 **솔루션 탐색기**, 파일을 두 번 클릭 **sample.min**합니다.  
   
-     파일이는 디자이너에서 열립니다. 모델에 두 요소, ExampleElement1 ExampleElement2, 고 이들 간에 링크가 있는지 확인 합니다.  
+    파일이는 디자이너에서 열립니다. 모델에 두 요소, ExampleElement1 ExampleElement2, 고 이들 간에 링크가 있는지 확인 합니다.  
   
-5.  두 번째 인스턴스를 닫고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
+5. 두 번째 인스턴스를 닫고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
   
-6.  솔루션을 저장 하 고 도메인 특정 언어 디자이너를 닫습니다.  
+6. 솔루션을 저장 하 고 도메인 특정 언어 디자이너를 닫습니다.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>지시문 프로세서에 사용자 지정 텍스트 템플릿 호스트 연결  
  지시문 프로세서 및에서 만든 사용자 지정 텍스트 템플릿 호스트를 연결 하는 지시문 프로세서를 생성 한 후 [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)합니다.  

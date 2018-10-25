@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eee94b8d3e2b384ac645cf1178403556f0496ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b29e4e241589134c8dfa5b94e997d6603b075ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826356"
 ---
 # <a name="introduction-to-wpf"></a>WPF 소개
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ WPF(Windows Presentation Foundation)를 사용하면 시각적으로 뛰어난 �
 ##  <a name="Markup_And_Codebehind"></a> 태그 및 코드 숨김  
  WPF를 사용하면 ASP.NET 개발자에게 익숙한 환경인 *태그* 및 *코드 숨김*둘 다를 통해 응용 프로그램을 개발할 수 있습니다. 일반적으로 XAML 태그를 사용하여 응용 프로그램의 모양을 구현하고 관리되는 프로그래밍 언어(코드 숨김)를 사용하여 해당 동작을 구현합니다. 모양 및 동작의 이러한 분리는 다음과 같은 이점이 있습니다.  
   
--   모양 관련 태그가 동작 관련 코드와 밀접하게 결합되지 않으므로 개발 및 유지 관리 비용이 줄어듭니다.  
+- 모양 관련 태그가 동작 관련 코드와 밀접하게 결합되지 않으므로 개발 및 유지 관리 비용이 줄어듭니다.  
   
--   디자이너가 응용 프로그램의 동작을 구현하는 개발자와 동시에 응용 프로그램의 모양을 구현할 수 있으므로 개발이 보다 효율적입니다.  
+- 디자이너가 응용 프로그램의 동작을 구현하는 개발자와 동시에 응용 프로그램의 모양을 구현할 수 있으므로 개발이 보다 효율적입니다.  
   
--   WPF 응용 프로그램에 대한[전역화 및 지역화](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) 가 간소화됩니다.  
+- WPF 응용 프로그램에 대한[전역화 및 지역화](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) 가 간소화됩니다.  
   
- 다음은 WPF 태그 및 코드 숨김에 대한 간략한 소개입니다.  
+  다음은 WPF 태그 및 코드 숨김에 대한 간략한 소개입니다.  
   
 ### <a name="markup"></a>태그  
  XAML은 선언적으로 응용 프로그램의 모양을 구현하는 데 사용되는 XML 기반 태그 언어입니다. 일반적으로 창, 대화 상자, 페이지 및 사용자 정의 컨트롤을 만들고 컨트롤, 도형 및 그래픽으로 채우는 데 사용됩니다.  
@@ -194,23 +194,23 @@ End Namespace
   
  이 레이아웃 시스템은 기본 WPF 클래스를 통해 자식 컨트롤에 노출됩니다. 그리드, 스택 및 도킹과 같은 일반적인 레이아웃을 위해 WPF는 여러 레이아웃 컨트롤을 포함합니다.  
   
--   <xref:System.Windows.Controls.Canvas>: 자식 컨트롤이 자체 레이아웃을 제공합니다.  
+- <xref:System.Windows.Controls.Canvas>: 자식 컨트롤이 자체 레이아웃을 제공합니다.  
   
--   <xref:System.Windows.Controls.DockPanel>: 자식 컨트롤이 패널 가장자리에 맞춰집니다.  
+- <xref:System.Windows.Controls.DockPanel>: 자식 컨트롤이 패널 가장자리에 맞춰집니다.  
   
--   <xref:System.Windows.Controls.Grid>: 자식 컨트롤이 행 및 열별로 배치됩니다.  
+- <xref:System.Windows.Controls.Grid>: 자식 컨트롤이 행 및 열별로 배치됩니다.  
   
--   <xref:System.Windows.Controls.StackPanel>: 자식 컨트롤이 가로 또는 세로로 포개집니다.  
+- <xref:System.Windows.Controls.StackPanel>: 자식 컨트롤이 가로 또는 세로로 포개집니다.  
   
--   <xref:System.Windows.Controls.VirtualizingStackPanel>: 자식 컨트롤이 가상화되고 가로 또는 세로 방향인 한 줄에 정렬됩니다.  
+- <xref:System.Windows.Controls.VirtualizingStackPanel>: 자식 컨트롤이 가상화되고 가로 또는 세로 방향인 한 줄에 정렬됩니다.  
   
--   <xref:System.Windows.Controls.WrapPanel>: 자식 컨트롤이 왼쪽에서 오른쪽 순서로 배치되고 공간에 허용되는 것보다 더 많은 컨트롤이 현재 줄에 있는 경우 다음 줄로 줄 바꿈됩니다.  
+- <xref:System.Windows.Controls.WrapPanel>: 자식 컨트롤이 왼쪽에서 오른쪽 순서로 배치되고 공간에 허용되는 것보다 더 많은 컨트롤이 현재 줄에 있는 경우 다음 줄로 줄 바꿈됩니다.  
   
- 다음 예제에서는 <xref:System.Windows.Controls.DockPanel> 하나를 사용하여 여러 <xref:System.Windows.Controls.TextBox> 컨트롤을 레이아웃합니다.  
+  다음 예제에서는 <xref:System.Windows.Controls.DockPanel> 하나를 사용하여 여러 <xref:System.Windows.Controls.TextBox> 컨트롤을 레이아웃합니다.  
   
- [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
+  [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
   
- <xref:System.Windows.Controls.DockPanel> 을 사용하면 자식 <xref:System.Windows.Controls.TextBox> 컨트롤이 정렬 방법을 알려줄 수 있습니다. 이 작업을 수행하기 위해 <xref:System.Windows.Controls.DockPanel> 은 각각 도킹 스타일을 지정할 수 있도록 자식 컨트롤에 노출되는 <xref:System.Windows.Controls.DockPanel.Dock%2A> 속성을 구현합니다.  
+  <xref:System.Windows.Controls.DockPanel> 을 사용하면 자식 <xref:System.Windows.Controls.TextBox> 컨트롤이 정렬 방법을 알려줄 수 있습니다. 이 작업을 수행하기 위해 <xref:System.Windows.Controls.DockPanel> 은 각각 도킹 스타일을 지정할 수 있도록 자식 컨트롤에 노출되는 <xref:System.Windows.Controls.DockPanel.Dock%2A> 속성을 구현합니다.  
   
 > [!NOTE]
 >  자식 컨트롤에서 사용할 수 있도록 부모 컨트롤이 구현하는 속성은 [연결된 속성](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx)이라는 WPF 구문입니다.  
@@ -222,33 +222,33 @@ End Namespace
 ##  <a name="Data_Binding"></a> 데이터 바인딩  
  대부분의 응용 프로그램은 데이터를 보고 편집할 수 있는 수단을 사용자에게 제공하기 위해 생성됩니다. WPF 응용 프로그램의 경우 데이터를 저장 및 액세스하는 작업이 SQL Server 및 ADO .NET과 같은 기술에 의해 이미 제공됩니다. 데이터에 액세스하고 응용 프로그램의 관리되는 개체에 로드한 후 WPF 응용 프로그램에 대한 힘든 작업이 시작됩니다. 기본적으로 다음 두 가지가 포함됩니다.  
   
-1.  관리되는 개체에서 데이터를 표시 및 편집할 수 있는 컨트롤로 데이터 복사  
+1. 관리되는 개체에서 데이터를 표시 및 편집할 수 있는 컨트롤로 데이터 복사  
   
-2.  컨트롤을 사용한 데이터 변경 내용이 관리되는 개체에 다시 복사되는지 확인  
+2. 컨트롤을 사용한 데이터 변경 내용이 관리되는 개체에 다시 복사되는지 확인  
   
- 응용 프로그램 개발을 간소화하기 위해 WPF는 이러한 단계를 자동으로 수행하는 데이터 바인딩 엔진을 제공합니다. 데이터 바인딩 엔진의 핵심 단위는 <xref:System.Windows.Data.Binding> 클래스로, 컨트롤(바인딩 대상)을 데이터 개체(바인딩 소스)에 바인딩하는 작업을 수행합니다. 이 관계는 다음 그림에 나와 있습니다.  
+   응용 프로그램 개발을 간소화하기 위해 WPF는 이러한 단계를 자동으로 수행하는 데이터 바인딩 엔진을 제공합니다. 데이터 바인딩 엔진의 핵심 단위는 <xref:System.Windows.Data.Binding> 클래스로, 컨트롤(바인딩 대상)을 데이터 개체(바인딩 소스)에 바인딩하는 작업을 수행합니다. 이 관계는 다음 그림에 나와 있습니다.  
   
- ![기본 데이터 바인딩 다이어그램](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
+   ![기본 데이터 바인딩 다이어그램](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
   
- 다음 예제에서는 <xref:System.Windows.Controls.TextBox>를 사용자 지정 `Person` 개체의 인스턴스에 바인딩하는 방법을 보여 줍니다. `Person` 구현은 다음 코드에 나와 있습니다.  
+   다음 예제에서는 <xref:System.Windows.Controls.TextBox>를 사용자 지정 `Person` 개체의 인스턴스에 바인딩하는 방법을 보여 줍니다. `Person` 구현은 다음 코드에 나와 있습니다.  
   
- [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
- [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
+   [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
+   [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
   
- 다음 태그는 <xref:System.Windows.Controls.TextBox> 를 사용자 지정 `Person` 개체의 인스턴스에 바인딩합니다.  
+   다음 태그는 <xref:System.Windows.Controls.TextBox> 를 사용자 지정 `Person` 개체의 인스턴스에 바인딩합니다.  
   
- [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
   
- [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
- [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
+   [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
+   [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
   
- 이 예제에서 `Person` 클래스는 코드 숨김에서 인스턴스화되고 `DataBindingWindow`에 대한 데이터 컨텍스트로 설정됩니다. 태그에서 <xref:System.Windows.Controls.TextBox.Text%2A> 의 <xref:System.Windows.Controls.TextBox> 속성은 " `Person.Name` " XAML 구문을 사용하여`{Binding ... }`속성에 바인딩됩니다. 이 XAML은 창의 <xref:System.Windows.Controls.TextBox> 속성에 저장된 `Person` 개체에 <xref:System.Windows.FrameworkElement.DataContext%2A> 컨트롤을 바인딩하도록 WPF에 알립니다.  
+   이 예제에서 `Person` 클래스는 코드 숨김에서 인스턴스화되고 `DataBindingWindow`에 대한 데이터 컨텍스트로 설정됩니다. 태그에서 <xref:System.Windows.Controls.TextBox.Text%2A> 의 <xref:System.Windows.Controls.TextBox> 속성은 " `Person.Name` " XAML 구문을 사용하여`{Binding ... }`속성에 바인딩됩니다. 이 XAML은 창의 <xref:System.Windows.Controls.TextBox> 속성에 저장된 `Person` 개체에 <xref:System.Windows.FrameworkElement.DataContext%2A> 컨트롤을 바인딩하도록 WPF에 알립니다.  
   
- WPF 데이터 바인딩 엔진은 유효성 검사, 정렬, 필터링 및 그룹화를 포함하는 추가 지원을 제공합니다. 또한 데이터 바인딩은 표준 WPF 컨트롤에 의해 표시되는 사용자 인터페이스가 적절하지 않은 경우 데이터 템플릿을 사용하여 바인딩된 데이터에 대한 사용자 지정 사용자 인터페이스를 만들 수 있도록 지원합니다.  
+   WPF 데이터 바인딩 엔진은 유효성 검사, 정렬, 필터링 및 그룹화를 포함하는 추가 지원을 제공합니다. 또한 데이터 바인딩은 표준 WPF 컨트롤에 의해 표시되는 사용자 인터페이스가 적절하지 않은 경우 데이터 템플릿을 사용하여 바인딩된 데이터에 대한 사용자 지정 사용자 인터페이스를 만들 수 있도록 지원합니다.  
   
- 자세한 내용은 [데이터 바인딩 개요](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)를 참조하세요.  
+   자세한 내용은 [데이터 바인딩 개요](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)를 참조하세요.  
   
 ##  <a name="Graphics"></a> 그래픽  
  WPF는 다음과 같은 이점이 있는 광범위하고 확장 가능하며 유연한 그래픽 집합을 도입합니다.  
@@ -335,21 +335,21 @@ End Namespace
 ##  <a name="Text_and_Typography"></a> 텍스트 및 입력 체계  
  고품질 텍스트 렌더링이 용이하도록 WPF는 다음 기능을 제공합니다.  
   
--   OpenType 글꼴 지원  
+- OpenType 글꼴 지원  
   
--   ClearType 향상  
+- ClearType 향상  
   
--   하드웨어 가속을 활용하는 고성능  
+- 하드웨어 가속을 활용하는 고성능  
   
--   미디어, 그래픽 및 애니메이션과 텍스트 통합  
+- 미디어, 그래픽 및 애니메이션과 텍스트 통합  
   
--   국가별 글꼴 지원 및 대체(fallback) 메커니즘  
+- 국가별 글꼴 지원 및 대체(fallback) 메커니즘  
   
- 텍스트와 그래픽 통합의 데모로, 다음 그림에서는 텍스트 장식의 응용을 보여 줍니다.  
+  텍스트와 그래픽 통합의 데모로, 다음 그림에서는 텍스트 장식의 응용을 보여 줍니다.  
   
- ![다양한 텍스트 장식이 적용된 텍스트](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
+  ![다양한 텍스트 장식이 적용된 텍스트](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- 자세한 내용은 [Windows Presentation Foundation의 입력 체계](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx)를 참조하세요.  
+  자세한 내용은 [Windows Presentation Foundation의 입력 체계](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx)를 참조하세요.  
   
 ##  <a name="WPF_Customization"></a> WPF 응용 프로그램 사용자 지정  
  지금까지 응용 프로그램을 개발하기 위한 핵심 WPF 구성 요소를 살펴봤습니다. 응용 프로그램 모델을 사용하여 주로 컨트롤로 구성된 응용 프로그램 콘텐츠를 호스트 및 제공합니다. 사용자 인터페이스에서 컨트롤 정렬을 간소화하고 창 크기 및 디스플레이 설정이 변경되어도 정렬이 유지되도록 하기 위해 WPF 레이아웃 시스템을 사용합니다. 대부분의 응용 프로그램은 사용자의 데이터 조작을 허용하므로 데이터 바인딩을 사용하여 사용자 인터페이스와 데이터 통합 작업을 줄입니다. 응용 프로그램의 시각적 모양을 개선하려면 WPF에서 제공하는 광범위한 그래픽, 애니메이션 및 미디어 지원을 사용합니다.  
@@ -445,51 +445,51 @@ End Namespace
   
  이 예제에서는 `Window.Resources` 속성 요소를 사용하여 배경색 리소스를 구현합니다. 이 리소스는 <xref:System.Windows.Window>의 모든 자식에서 사용할 수 있습니다. 다음을 포함하여 다양한 리소스 범위가 있습니다(확인되는 순서대로 나열됨).  
   
-1.  개별 컨트롤(상속된 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 속성 사용)  
+1. 개별 컨트롤(상속된 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 속성 사용)  
   
-2.  <xref:System.Windows.Window> 또는 <xref:System.Windows.Controls.Page> (또한 상속된 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 속성 사용)  
+2. <xref:System.Windows.Window> 또는 <xref:System.Windows.Controls.Page> (또한 상속된 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 속성 사용)  
   
-3.  <xref:System.Windows.Application> ( <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> 속성 사용)  
+3. <xref:System.Windows.Application> ( <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> 속성 사용)  
   
- 다양한 범위는 리소스를 정의 및 공유하는 방법과 관련해서 유연성을 제공합니다.  
+   다양한 범위는 리소스를 정의 및 공유하는 방법과 관련해서 유연성을 제공합니다.  
   
- 리소스를 특정 범위에 직접 연결하는 대신, 응용 프로그램의 다른 부분에서 참조할 수 있는 별도 <xref:System.Windows.ResourceDictionary> 를 사용하여 하나 이상의 리소스를 패키지할 수 있습니다. 예를 들어 다음 예제에서는 리소스 사전의 기본 배경색을 정의합니다.  
+   리소스를 특정 범위에 직접 연결하는 대신, 응용 프로그램의 다른 부분에서 참조할 수 있는 별도 <xref:System.Windows.ResourceDictionary> 를 사용하여 하나 이상의 리소스를 패키지할 수 있습니다. 예를 들어 다음 예제에서는 리소스 사전의 기본 배경색을 정의합니다.  
   
- [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
   
- 다음 예제에서는 응용 프로그램 간에 공유되도록 이전 예제에서 정의된 리소스 사전을 참조합니다.  
+   다음 예제에서는 응용 프로그램 간에 공유되도록 이전 예제에서 정의된 리소스 사전을 참조합니다.  
   
- [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
   
- 리소스 및 리소스 사전은 테마 및 스킨에 대한 WPF 지원의 기반이 됩니다.  
+   리소스 및 리소스 사전은 테마 및 스킨에 대한 WPF 지원의 기반이 됩니다.  
   
- 자세한 내용은 [리소스 개요](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx)를 참조하세요.  
+   자세한 내용은 [리소스 개요](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx)를 참조하세요.  
   
 ### <a name="custom-controls"></a>사용자 지정 컨트롤  
  WPF는 다양한 사용자 지정 지원을 제공하지만 기존 WPF 컨트롤이 응용 프로그램 또는 해당 사용자의 요구를 충족하지 않는 경우가 발생할 수 있습니다. 이 오류는 다음과 같은 경우에 발생할 수 있습니다.  
   
--   기존 WPF 구현의 모양과 느낌을 사용자 지정하여 필요한 사용자 인터페이스를 만들 수 없는 경우  
+- 기존 WPF 구현의 모양과 느낌을 사용자 지정하여 필요한 사용자 인터페이스를 만들 수 없는 경우  
   
--   필요한 동작이 기존 WPF 구현에서 지원되지 않는 경우(또는 쉽게 지원되지 않는 경우)  
+- 필요한 동작이 기존 WPF 구현에서 지원되지 않는 경우(또는 쉽게 지원되지 않는 경우)  
   
- 그러나 이제 세 가지 WPF 모델 중 하나를 활용하여 새 컨트롤을 만들 수 있습니다. 각 모델은 특정 시나리오를 대상으로 하며, 특정 WPF 기본 클래스에서 사용자 지정 컨트롤을 파생시켜야 합니다. 세 가지 모델은 다음과 같습니다.  
+  그러나 이제 세 가지 WPF 모델 중 하나를 활용하여 새 컨트롤을 만들 수 있습니다. 각 모델은 특정 시나리오를 대상으로 하며, 특정 WPF 기본 클래스에서 사용자 지정 컨트롤을 파생시켜야 합니다. 세 가지 모델은 다음과 같습니다.  
   
--   **사용자 정의 컨트롤 모델**. 사용자 지정 컨트롤은 <xref:System.Windows.Controls.UserControl> 에서 파생되며 하나 이상의 다른 컨트롤로 구성됩니다.  
+- **사용자 정의 컨트롤 모델**. 사용자 지정 컨트롤은 <xref:System.Windows.Controls.UserControl> 에서 파생되며 하나 이상의 다른 컨트롤로 구성됩니다.  
   
--   **컨트롤 모델**. 사용자 지정 컨트롤은 <xref:System.Windows.Controls.Control> 에서 파생되며 대부분의 WPF 컨트롤과 마찬가지로 템플릿을 사용하여 모양과 동작을 구분하는 구현을 작성하는 데 사용됩니다. <xref:System.Windows.Controls.Control> 에서 파생시키는 경우 사용자 정의 컨트롤보다 더 자유롭게 사용자 지정 사용자 인터페이스를 만들 수 있지만 더 많은 노력이 필요할 수 있습니다.  
+- **컨트롤 모델**. 사용자 지정 컨트롤은 <xref:System.Windows.Controls.Control> 에서 파생되며 대부분의 WPF 컨트롤과 마찬가지로 템플릿을 사용하여 모양과 동작을 구분하는 구현을 작성하는 데 사용됩니다. <xref:System.Windows.Controls.Control> 에서 파생시키는 경우 사용자 정의 컨트롤보다 더 자유롭게 사용자 지정 사용자 인터페이스를 만들 수 있지만 더 많은 노력이 필요할 수 있습니다.  
   
--   **프레임워크 요소 모델**. 사용자 지정 컨트롤은 모양이 사용자 지정 렌더링 논리(템플릿 아님)에 의해 정의되는 경우 <xref:System.Windows.FrameworkElement> 에서 파생됩니다.  
+- **프레임워크 요소 모델**. 사용자 지정 컨트롤은 모양이 사용자 지정 렌더링 논리(템플릿 아님)에 의해 정의되는 경우 <xref:System.Windows.FrameworkElement> 에서 파생됩니다.  
   
- 다음 예제에서는 <xref:System.Windows.Controls.UserControl>에서 파생되는 사용자 지정 숫자 위로/아래로 컨트롤을 보여 줍니다.  
+  다음 예제에서는 <xref:System.Windows.Controls.UserControl>에서 파생되는 사용자 지정 숫자 위로/아래로 컨트롤을 보여 줍니다.  
   
- [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
+  [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
   
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
-[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
-[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
   
   
  다음 예제에서는 사용자 정의 컨트롤을 <xref:System.Windows.Window>에 통합하는 데 필요한 XAML을 보여 줍니다.  

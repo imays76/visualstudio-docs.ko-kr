@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835945"
 ---
 # <a name="t4-include-directive"></a>T4 Include 지시문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,31 +30,31 @@ ms.locfileid: "49233989"
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath`는 현재 템플릿 파일에 대해 상대적인 경로이거나 절대 경로일 수 있습니다.  
+- `filePath`는 현재 템플릿 파일에 대해 상대적인 경로이거나 절대 경로일 수 있습니다.  
   
-     또한 특정 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension에서는 포함 파일을 검색하기 위한 고유 디렉터리를 지정할 수도 있습니다. 다음 폴더가 포함 목록에 추가 됩니다 Visualization and Modeling SDK (DSL 도구)를 설치한 경우에 예를 들어: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`합니다.  
+   또한 특정 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension에서는 포함 파일을 검색하기 위한 고유 디렉터리를 지정할 수도 있습니다. 다음 폴더가 포함 목록에 추가 됩니다 Visualization and Modeling SDK (DSL 도구)를 설치한 경우에 예를 들어: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`합니다.  
   
-     이러한 추가적인 포함 폴더는 포함 파일의 파일 확장명에 따라 달라질 수 있습니다. 예를 들어 DSL 도구의 포함 폴더에서는 파일 확장명이 `.tt`인 파일이 있는 포함 파일에만 액세스할 수 있습니다.  
+   이러한 추가적인 포함 폴더는 포함 파일의 파일 확장명에 따라 달라질 수 있습니다. 예를 들어 DSL 도구의 포함 폴더에서는 파일 확장명이 `.tt`인 파일이 있는 포함 파일에만 액세스할 수 있습니다.  
   
--   `filePath`는 "%"로 구분되는 환경 변수를 포함할 수 있습니다. 예를 들어:  
+- `filePath`는 "%"로 구분되는 환경 변수를 포함할 수 있습니다. 예를 들어:  
   
-    ```  
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
-    ```  
+  ```  
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
+  ```  
   
--   포함 파일의 이름에 `".tt"` 확장명을 사용할 필요가 없습니다.  
+- 포함 파일의 이름에 `".tt"` 확장명을 사용할 필요가 없습니다.  
   
-     포함 파일에 `".t4"`와 같은 다른 확장명을 사용할 수 있습니다. 이므로 추가 하는 경우는 `.tt` 파일을 프로젝트 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 자동으로 설정 하는 해당 **사용자 지정 도구** 속성을 `TextTemplatingFileGenerator`입니다. 일반적으로 포함된 파일을 개별적으로 변형하지 않을 수 있습니다.  
+   포함 파일에 `".t4"`와 같은 다른 확장명을 사용할 수 있습니다. 이므로 추가 하는 경우는 `.tt` 파일을 프로젝트 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 자동으로 설정 하는 해당 **사용자 지정 도구** 속성을 `TextTemplatingFileGenerator`입니다. 일반적으로 포함된 파일을 개별적으로 변형하지 않을 수 있습니다.  
   
-     반면에 파일 확장명에 따라 포함 파일을 검색할 추가 폴더가 영향을 받는 경우가 있다는 사실에 유의해야 합니다. 이는 다른 파일이 들어 있는 포함된 파일이 있는 경우 중요할 수 있습니다.  
+   반면에 파일 확장명에 따라 포함 파일을 검색할 추가 폴더가 영향을 받는 경우가 있다는 사실에 유의해야 합니다. 이는 다른 파일이 들어 있는 포함된 파일이 있는 경우 중요할 수 있습니다.  
   
--   포함된 내용은 포함하는 텍스트 템플릿의 일부인 것처럼 처리됩니다. 그러나 `<#+...#>` 지시문 뒤에 일반 텍스트와 표준 제어 블록이 있는 경우에도 클래스 기능 블록 `include`이 포함된 파일을 포함할 수 있습니다.  
+- 포함된 내용은 포함하는 텍스트 템플릿의 일부인 것처럼 처리됩니다. 그러나 `<#+...#>` 지시문 뒤에 일반 텍스트와 표준 제어 블록이 있는 경우에도 클래스 기능 블록 `include`이 포함된 파일을 포함할 수 있습니다.  
   
--   템플릿이 둘 이상의 다른 포함 파일에서 호출되는 경우에도 한 번만 포함되도록 하려면 `once="true"`를 사용합니다.  
+- 템플릿이 둘 이상의 다른 포함 파일에서 호출되는 경우에도 한 번만 포함되도록 하려면 `once="true"`를 사용합니다.  
   
-     쉽게에 포함할 수 있는 재사용 가능한 T4 코드 조각 라이브러리를 구축 하는 걱정 없이이 기능을 사용 하면 다른 코드 조각에 이미 포함 합니다.  예를 들어, 템플릿 처리 및 C# 생성을 처리 하는 매우 세분화 된 코드 조각 라이브러리를 있다고 가정 합니다.  따라서 이러한 값은 모든 더 응용 프로그램별 템플릿에서 사용할 수 있는 예외를 생성 하는 등 일부 작업 관련 유틸리티에서 사용 됩니다. 종속성 그래프를 그리는 경우 일부 코드 조각이 여러 번 포함될 수 있습니다. 그러나 `once` 매개 변수가 이후에 포함되지 않도록 방지합니다.  
+   쉽게에 포함할 수 있는 재사용 가능한 T4 코드 조각 라이브러리를 구축 하는 걱정 없이이 기능을 사용 하면 다른 코드 조각에 이미 포함 합니다.  예를 들어, 템플릿 처리 및 C# 생성을 처리 하는 매우 세분화 된 코드 조각 라이브러리를 있다고 가정 합니다.  따라서 이러한 값은 모든 더 응용 프로그램별 템플릿에서 사용할 수 있는 예외를 생성 하는 등 일부 작업 관련 유틸리티에서 사용 됩니다. 종속성 그래프를 그리는 경우 일부 코드 조각이 여러 번 포함될 수 있습니다. 그러나 `once` 매개 변수가 이후에 포함되지 않도록 방지합니다.  
   
- **MyTextTemplate.tt:**  
+  **MyTextTemplate.tt:**  
   
 ```  
 <#@ output extension=".txt" #>  

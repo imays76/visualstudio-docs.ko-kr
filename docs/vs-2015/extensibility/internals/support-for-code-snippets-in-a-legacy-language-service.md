@@ -17,12 +17,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d1769b4064b92283e75c242a5abb897296c5156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847799"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 조각 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
   
  언어 서비스의 바로 가기 이름을 가져오면 호출한는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> 파일 이름 및 코드 조각 제목을 가져오는 방법입니다. 언어 서비스를 호출 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 코드 조각을 삽입 하는 클래스입니다. 지정 된 순서 대로 Visual Studio에서 다음 방법 이라고는 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 코드 조각을 삽입 하는 프로세스 중 클래스:  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- 언어 서비스에 대해 설치 된 코드 조각 목록 가져오기에 대 한 자세한 내용은 참조 하세요. [연습:는의 설치 된 코드 조각 목록 (레거시 구현)를 가져오는](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)합니다.  
+   언어 서비스에 대해 설치 된 코드 조각 목록 가져오기에 대 한 자세한 내용은 참조 하세요. [연습:는의 설치 된 코드 조각 목록 (레거시 구현)를 가져오는](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)합니다.  
   
 ## <a name="implementing-the-expansionfunction-class"></a>ExpansionFunction 클래스 구현  
  확장 기능은 코드 조각 템플릿에 포함 된 필드에 배치 될 하나 이상의 값을 반환 하는 명명된 된 함수입니다. 언어 서비스에서 확장 함수를 지원 하기 위해 클래스에서 파생 해야 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 클래스 및 구현 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> 메서드. 다음 재정의 해야 합니다는 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> 의 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 버전의 새 인스턴스를 반환 하는 클래스는 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 지 원하는 각 확장 함수에 대 한 클래스입니다. 확장 함수에서 가능한 값 목록을 지 원하는 경우 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 해당 값의 목록을 반환 하는 클래스입니다.  

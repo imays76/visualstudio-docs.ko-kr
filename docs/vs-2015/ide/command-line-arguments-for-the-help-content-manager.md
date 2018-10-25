@@ -14,27 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873411"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>도움말 콘텐츠 관리자에 대한 명령줄 인수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 도움말 콘텐츠 관리자(HlpCtntmgr.exe)의 명령줄 인수를 사용하여 로컬 도움말 콘텐츠를 배포하고 관리하는 방법을 지정할 수 있습니다. 관리자 권한으로 이 명령줄 도구에 대한 스크립트를 실행해야 하며 이러한 스크립트를 서비스로 실행할 수는 없습니다. 이 도구를 사용하여 다음과 같은 작업을 수행할 수 있습니다.  
   
--   디스크 또는 클라우드에서 로컬 도움말 콘텐츠를 추가하거나 업데이트합니다.  
+- 디스크 또는 클라우드에서 로컬 도움말 콘텐츠를 추가하거나 업데이트합니다.  
   
--   로컬 도움말 콘텐츠를 제거합니다.  
+- 로컬 도움말 콘텐츠를 제거합니다.  
   
--   로컬 도움말 콘텐츠 저장소를 이동합니다.  
+- 로컬 도움말 콘텐츠 저장소를 이동합니다.  
   
--   로컬 도움말 콘텐츠를 자동으로 추가, 업데이트, 제거 또는 이동합니다.  
+- 로컬 도움말 콘텐츠를 자동으로 추가, 업데이트, 제거 또는 이동합니다.  
   
- 구문:  
+  구문:  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

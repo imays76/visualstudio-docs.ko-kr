@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6984a89d39dc99351acaa0e37f2c3d9b1e47f1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d26b74928985feefda3acdc8594c35096fc4e0b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821326"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
-특정 프로그램에 대 한 프로그램 노드를 검색합니다.  
+특정 프로그램에 대 한 프로그램 노드를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,31 +51,31 @@ int GetProviderProgramNode(
   
 #### <a name="parameters"></a>매개 변수  
  `Flags`  
- [in] 플래그의 조합 된 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) 열거 합니다. 다음 플래그는이 호출에 대 한 일반적인:  
+ [in] 플래그의 조합 된 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) 열거형입니다. 이 호출에 대 한 일반 플래그는 다음과 같습니다.  
   
 |플래그|설명|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|호출자에 게 원격 컴퓨터에서 실행 됩니다.|  
-|`PFLAG_DEBUGGEE`|호출자에 게 현재 디버깅 중인 (각 노드에 대해 마샬링하는 작업에 대 한 추가 정보가 반환 됩니다).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|호출자에 연결 했지만 디버거에서 실행 되지 않습니다.|  
+|`PFLAG_DEBUGGEE`|호출자에 게 현재 디버깅 중인 (마샬링 하는 방법에 대 한 자세한 내용은 각 노드에 대해 반환 됩니다).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|호출자에 연결 되었지만 디버거에서 실행 되지 않습니다.|  
   
  `pPort`  
  [in] 포트는 호출 프로세스에서 실행 됩니다.  
   
  `processId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조에 프로그램을 포함 하는 프로세스의 ID를 보유 합니다.  
+ [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조에서 해당 프로그램을 포함 하는 프로세스의 ID를 보유 합니다.  
   
  `guidEngine`  
- [in] 프로그램 (있는 경우)에 연결 된 디버그 엔진의 GUID입니다.  
+ [in] GUID (해당 되는 경우) 프로그램에 연결 된 디버그 엔진입니다.  
   
  `programId`  
- [in] 프로그램을 가져올 프로그램 노드 ID입니다.  
+ [in] 프로그램 노드를 프로그램의 ID입니다.  
   
  `ppProgramNode`  
  [out] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 요청 된 프로그램이 노드를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   

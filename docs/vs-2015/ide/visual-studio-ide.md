@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852715"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,31 +116,31 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
  텍스트 편집기는 보다 효율적인 코드를 더 빠르게 작성할 수 있도록 도와주는 많은 생산성 기능이 포함된 대화형(원할 경우)입니다. 기능은 언어에 따라 달라지며, 기능을 설정하거나 해제하기 위해 언어를 사용할 필요가 없습니다(빠른 실행에서 "편집기" 입력). 몇 가지 일반적인 생산성 기능은 다음과 같습니다.
 
-1.  [Refactoring](../ide/refactoring-in-visual-studio.md) 에는 변수의 지능형 이름 바꾸기, 선택한 코드 줄을 별도 함수로 이동, 코드를 다른 위치로 이동, 함수 매개 변수 다시 정렬 등의 작업이 포함됩니다.
+1. [Refactoring](../ide/refactoring-in-visual-studio.md) 에는 변수의 지능형 이름 바꾸기, 선택한 코드 줄을 별도 함수로 이동, 코드를 다른 위치로 이동, 함수 매개 변수 다시 정렬 등의 작업이 포함됩니다.
 
-2.  *IntelliSense* 는 편집기에서 직접 코드에 대한 형식 정보를 표시하고 경우에 따라 약간의 코드를 자동으로 작성하는 인기 있는 기능 집합에 대한 포괄적인 용어입니다. IntelliSense는 별도의 도움말 창에서 형식 정보를 조회할 필요가 없도록 기본 설명서를 편집기에 인라인으로 포함하는 것과 같습니다. IntelliSense 기능은 언어에 따라 달라집니다. 자세한 내용은 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md)를 참조하세요. 다음 그림에서는 일부 IntelliSense 기능의 작동을 보여 줍니다.
+2. *IntelliSense* 는 편집기에서 직접 코드에 대한 형식 정보를 표시하고 경우에 따라 약간의 코드를 자동으로 작성하는 인기 있는 기능 집합에 대한 포괄적인 용어입니다. IntelliSense는 별도의 도움말 창에서 형식 정보를 조회할 필요가 없도록 기본 설명서를 편집기에 인라인으로 포함하는 것과 같습니다. IntelliSense 기능은 언어에 따라 달라집니다. 자세한 내용은 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md)를 참조하세요. 다음 그림에서는 일부 IntelliSense 기능의 작동을 보여 줍니다.
 
-     ![Visual Studio 멤버 목록](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Visual Studio 멤버 목록](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
-3.  **오류 표시선** 은 입력하는 동안 코드의 오류 또는 잠재적 문제를 실시간으로 경고하여 컴파일 또는 런타임 중에 오류가 검색될 때까지 기다리지 않고 즉시 수정할 수 있게 해줍니다. 오류 표시선 위로 마우스를 가져가면 오류에 대한 추가 정보가 표시됩니다. 오류를 수정하는 방법에 대한 제안 사항과 함께 전구가 왼쪽 여백에 나타날 수도 있습니다. 자세한 내용은 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)을 참조하세요.
+3. **오류 표시선** 은 입력하는 동안 코드의 오류 또는 잠재적 문제를 실시간으로 경고하여 컴파일 또는 런타임 중에 오류가 검색될 때까지 기다리지 않고 즉시 수정할 수 있게 해줍니다. 오류 표시선 위로 마우스를 가져가면 오류에 대한 추가 정보가 표시됩니다. 오류를 수정하는 방법에 대한 제안 사항과 함께 전구가 왼쪽 여백에 나타날 수도 있습니다. 자세한 내용은 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)을 참조하세요.
 
-     ![마우스로 전구](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![마우스로 전구](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
-4.  [책갈피](../ide/setting-bookmarks-in-code.md)를 사용하면 작업 중인 파일의 특정 줄로 빠르게 이동할 수 있습니다.
+4. [책갈피](../ide/setting-bookmarks-in-code.md)를 사용하면 작업 중인 파일의 특정 줄로 빠르게 이동할 수 있습니다.
 
-5.  텍스트 편집기 상황에 맞는 메뉴에서 [Call Hierarchy](../ide/reference/call-hierarchy.md) 창을 호출하여 캐럿 아래의 메서드를 호출하고 해당 메서드에 의해 호출되는 메서드를 표시할 수 있습니다.
+5. 텍스트 편집기 상황에 맞는 메뉴에서 [Call Hierarchy](../ide/reference/call-hierarchy.md) 창을 호출하여 캐럿 아래의 메서드를 호출하고 해당 메서드에 의해 호출되는 메서드를 표시할 수 있습니다.
 
-6.  **코드 렌즈** 를 사용하면 편집기 내에서 코드 참조, 코드 변경 내용, 연결된 버그, 작업 항목, 코드 검토 및 단위 테스트를 확인할 수 있습니다. 자세한 내용은 [코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)를 참조하세요.
+6. **코드 렌즈** 를 사용하면 편집기 내에서 코드 참조, 코드 변경 내용, 연결된 버그, 작업 항목, 코드 검토 및 단위 테스트를 확인할 수 있습니다. 자세한 내용은 [코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)를 참조하세요.
 
-7.  **정의 보기** 창은 현재 컨텍스트를 벗어나지 않고 메서드 또는 형식 정의를 인라인으로 표시합니다. 이제 이 창이 XAML에서도 작동합니다.
+7. **정의 보기** 창은 현재 컨텍스트를 벗어나지 않고 메서드 또는 형식 정의를 인라인으로 표시합니다. 이제 이 창이 XAML에서도 작동합니다.
 
-8.  **정의로 이동** 상황에 맞는 메뉴 옵션은 함수 또는 개체가 정의된 위치로 바로 이동합니다. 편집기에서 마우스 오른쪽 단추를 클릭하면 다른 탐색 명령도 사용할 수 있습니다.
+8. **정의로 이동** 상황에 맞는 메뉴 옵션은 함수 또는 개체가 정의된 위치로 바로 이동합니다. 편집기에서 마우스 오른쪽 단추를 클릭하면 다른 탐색 명령도 사용할 수 있습니다.
 
 9. 관련 도구인 [개체 브라우저](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)를 통해 시스템에서 .NET 또는 Windows 런타임 어셈블리를 검사하여 포함된 형식과 해당 형식이 포함하는 메서드 및 속성을 확인할 수 있습니다.
 
      ![System.Timer를 보여 주는 개체 브라우저](../ide/media/objectbrowser.png "ObjectBrowser")
 
- 편집 메뉴 및 보기 메뉴의 항목은 대부분 어떤 방식으로든 코드 편집기와 관련이 있습니다. 편집기에 대한 자세한 내용은 [코드 작성](../ide/writing-code-in-the-code-and-text-editor.md) 및 [코드 편집](https://www.visualstudio.com/features/ide-vs)을 참조하세요.
+   편집 메뉴 및 보기 메뉴의 항목은 대부분 어떤 방식으로든 코드 편집기와 관련이 있습니다. 편집기에 대한 자세한 내용은 [코드 작성](../ide/writing-code-in-the-code-and-text-editor.md) 및 [코드 편집](https://www.visualstudio.com/features/ide-vs)을 참조하세요.
 
 ## <a name="compiling-and-building-your-code"></a>코드 컴파일 및 빌드
 

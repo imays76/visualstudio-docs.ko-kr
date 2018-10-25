@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f72b67216ef0403af2e1f97208a7e33daa09b9b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72c71ae80dfd44752e03f1d4fd7fd384adc13dfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812883"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft LIP(언어 인터페이스 팩) 및 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,15 +97,15 @@ Windows LIP(언어 인터페이스 팩)를 사용하면 Windows 언어 버전을
   
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Visual Studio에서 UI 텍스트에 사용되는 언어를 설정하려면  
   
-1.  **도구** 메뉴에서 **옵션**을 클릭합니다.  
+1. **도구** 메뉴에서 **옵션**을 클릭합니다.  
   
-2.  에 **옵션** 대화 상자에서 **환경** 을 클릭 한 다음 **국가별 설정**합니다.  
+2. 에 **옵션** 대화 상자에서 **환경** 을 클릭 한 다음 **국가별 설정**합니다.  
   
-3.  에 **언어** 목록에서 개발 환경에서 UI 텍스트를 표시할 언어를 선택 합니다.  
+3. 에 **언어** 목록에서 개발 환경에서 UI 텍스트를 표시할 언어를 선택 합니다.  
   
-     가 UI 텍스트가 일치 하는 IDE에서에서 설정 하는 운영 체제 표시 언어 선택 **Microsoft Windows와 같음**합니다.  
+    가 UI 텍스트가 일치 하는 IDE에서에서 설정 하는 운영 체제 표시 언어 선택 **Microsoft Windows와 같음**합니다.  
   
- devenv 명령을 통해 UI에 사용되는 언어를 설정할 수도 있습니다. 자세한 내용은 [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md)합니다.  
+   devenv 명령을 통해 UI에 사용되는 언어를 설정할 수도 있습니다. 자세한 내용은 [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [옵션 대화 상자, 환경, 국가별 설정](../ide/reference/international-settings-environment-options-dialog-box.md)

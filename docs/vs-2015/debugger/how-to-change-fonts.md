@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2d1b2d6cf02bea494fb08583bcbc2c1e17583e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39d8638c3b0fba1c8753fd773a447863ee01be77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838623"
 ---
 # <a name="how-to-change-fonts"></a>방법: 글꼴 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "49206858"
   
 ### <a name="to-change-font-options"></a>글꼴 옵션을 변경 하려면  
   
-1.  **뷰** 메뉴 선택 **글꼴**합니다.  
+1. **뷰** 메뉴 선택 **글꼴**합니다.  
   
-2.  글꼴, 글꼴 스타일 및 글꼴 크기를 선택 합니다.  
+2. 글꼴, 글꼴 스타일 및 글꼴 크기를 선택 합니다.  
   
-3.  **확인**을 클릭합니다.  
+3. **확인**을 클릭합니다.  
   
- 선택 **글꼴을 기본값으로 저장** 이후의 모든 Spy + + 창에서이 글꼴을 사용 하면 됩니다.  
+   선택 **글꼴을 기본값으로 저장** 이후의 모든 Spy + + 창에서이 글꼴을 사용 하면 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Spy + + 사용](../debugger/using-spy-increment.md)   

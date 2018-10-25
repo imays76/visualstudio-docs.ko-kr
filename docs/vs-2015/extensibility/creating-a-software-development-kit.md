@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852018"
 ---
 # <a name="creating-a-software-development-kit"></a>소프트웨어 개발 키트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "49268354"
   
  Sdk는 다음과 같은 두 종류가 있습니다.  
   
--   플랫폼 Sdk는 플랫폼용 앱 개발을 위한 필수 구성 요소입니다. 예를 들어 합니다 [!INCLUDE[win81](../includes/win81-md.md)] 개발에 SDK가 필요 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱.  
+- 플랫폼 Sdk는 플랫폼용 앱 개발을 위한 필수 구성 요소입니다. 예를 들어 합니다 [!INCLUDE[win81](../includes/win81-md.md)] 개발에 SDK가 필요 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱.  
   
--   확장 Sdk는 선택적 구성 요소는 플랫폼을 확장 하지만 해당 플랫폼용 앱 개발을 위한 필수는 아닙니다.  
+- 확장 Sdk는 선택적 구성 요소는 플랫폼을 확장 하지만 해당 플랫폼용 앱 개발을 위한 필수는 아닙니다.  
   
- 다음 섹션에서는 Sdk 및 플랫폼 SDK를 만드는 방법의 일반적인 인프라를 설명 하 고 확장 SDK.  
+  다음 섹션에서는 Sdk 및 플랫폼 SDK를 만드는 방법의 일반적인 인프라를 설명 하 고 확장 SDK.  
   
--   [플랫폼 Sdk](#PlatformSDKs)  
+- [플랫폼 Sdk](#PlatformSDKs)  
   
--   [확장 Sdk](#ExtensionSDKs)  
+- [확장 Sdk](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> 플랫폼 Sdk  
  플랫폼 Sdk 플랫폼용 앱을 개발 해야 합니다. 예를 들어 합니다 [!INCLUDE[win81](../includes/win81-md.md)] SDK에 대 한 앱을 개발 해야 [!INCLUDE[win81](../includes/win81-md.md)]합니다.  

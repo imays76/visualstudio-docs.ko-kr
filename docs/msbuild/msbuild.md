@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de1d8777f7f4b232ed4dcc2dabe69e0c1712fdf
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876726"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]은 응용 프로그램을 빌드하기 위한 플랫폼입니다. MSBuild라고도 하는 이 엔진은 빌드 플랫폼에서 소프트웨어를 처리하고 빌드하는 방법을 제어하는 프로젝트 파일에 대한 XML 스키마를 제공합니다. Visual Studio는 MSBuild를 사용하지만 Visual Studio에 종속되지 않습니다. 프로젝트 또는 솔루션 파일에서 *msbuild.exe*를 호출하여 Visual Studio가 설치되지 않은 환경에서 제품을 조정하고 빌드할 수 있습니다.
@@ -56,7 +56,7 @@ Visual Studio IDE에서 코드를 작성하지만 MSBuild를 사용하여 빌드
  명령 프롬프트에서 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]를 실행하려면 적절한 명령줄 옵션과 함께 프로젝트 파일을 *MSBuild.exe*에 전달합니다. 명령줄 옵션을 사용하여 속성을 설정하고 특정 대상을 실행하며 빌드 프로세스를 제어하는 다른 옵션을 설정할 수 있습니다. 예를 들어 다음 명령줄 구문을 사용하여 `Configuration` 속성을 `Debug`로 설정하여 *MyProj.proj* 파일을 빌드합니다.
 
 ```cmd
-MSBuild.exe MyProj.proj /property:Configuration=Debug
+MSBuild.exe MyProj.proj -property:Configuration=Debug
 ```
 
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 명령줄 옵션에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
@@ -170,19 +170,19 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 
 ## <a name="see-also"></a>참고 항목
 
-|제목|설명|
-|-----------|-----------------|
-|[연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|텍스트 편집기만을 사용해서 기본 프로젝트 파일을 증분 방식으로 만드는 방법을 보여 줍니다.|
-|[연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)|MSBuild의 구성 요소를 소개하고 Visual Studio IDE를 닫지 않고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다.|
-|[MSBuild 개념](../msbuild/msbuild-concepts.md)|MSBuild의 네 가지 빌딩 블록인 속성, 항목, 대상 및 작업에 대해 설명합니다.|
-|[항목](../msbuild/msbuild-items.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 파일 형식의 일반 개념과 그러한 모든 개념이 서로 어떻게 연결되는지를 설명합니다.|
-|[MSBuild 속성](../msbuild/msbuild-properties.md)|속성 및 속성 컬렉션을 소개합니다. 속성은 빌드를 구성하는 데 사용될 수 있는 키/값 쌍입니다.|
-|[대상](../msbuild/msbuild-targets.md)|작업을 특정 순서로 그룹화하며 빌드 프로세스의 섹션이 명령줄에서 호출되도록 하는 방법에 대해 설명합니다.|
-|[작업](../msbuild/msbuild-tasks.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 사용할 수 있는 실행 코드 단위를 만들어 원자 빌드 작업을 수행하는 방법을 보여 줍니다.|
-|[조건](../msbuild/msbuild-conditions.md)|MSBuild 요소에서 `Condition` 특성을 사용하는 방법에 대해 설명합니다.|
-|[고급 개념](../msbuild/msbuild-advanced-concepts.md)|일괄 처리, 변환 수행, 다중 대상 지정 및 기타 고급 기술을 제공합니다.|
-|[MSBuild의 로그인](../msbuild/logging-in-msbuild.md)|빌드 이벤트, 메시지 및 오류를 기록하는 방법에 대해 설명합니다.|
-|[추가 리소스](../msbuild/additional-msbuild-resources.md)|MSBuild에 대한 자세한 정보를 볼 수 있는 커뮤니티 및 지원 리소스를 나열합니다.|
+| 제목 | 설명 |
+| - | - |
+| [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | 텍스트 편집기만을 사용해서 기본 프로젝트 파일을 증분 방식으로 만드는 방법을 보여 줍니다. |
+| [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md) | MSBuild의 구성 요소를 소개하고 Visual Studio IDE를 닫지 않고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. |
+| [MSBuild 개념](../msbuild/msbuild-concepts.md) | MSBuild의 네 가지 빌딩 블록인 속성, 항목, 대상 및 작업에 대해 설명합니다. |
+| [항목](../msbuild/msbuild-items.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 파일 형식의 일반 개념과 그러한 모든 개념이 서로 어떻게 연결되는지를 설명합니다. |
+| [MSBuild 속성](../msbuild/msbuild-properties.md) | 속성 및 속성 컬렉션을 소개합니다. 속성은 빌드를 구성하는 데 사용될 수 있는 키/값 쌍입니다. |
+| [대상](../msbuild/msbuild-targets.md) | 작업을 특정 순서로 그룹화하며 빌드 프로세스의 섹션이 명령줄에서 호출되도록 하는 방법에 대해 설명합니다. |
+| [작업](../msbuild/msbuild-tasks.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 사용할 수 있는 실행 코드 단위를 만들어 원자 빌드 작업을 수행하는 방법을 보여 줍니다. |
+| [조건](../msbuild/msbuild-conditions.md) | MSBuild 요소에서 `Condition` 특성을 사용하는 방법에 대해 설명합니다. |
+| [고급 개념](../msbuild/msbuild-advanced-concepts.md) | 일괄 처리, 변환 수행, 다중 대상 지정 및 기타 고급 기술을 제공합니다. |
+| [MSBuild의 로그인](../msbuild/logging-in-msbuild.md) | 빌드 이벤트, 메시지 및 오류를 기록하는 방법에 대해 설명합니다. |
+| [추가 리소스](../msbuild/additional-msbuild-resources.md) | MSBuild에 대한 자세한 정보를 볼 수 있는 커뮤니티 및 지원 리소스를 나열합니다. |
 
 ## <a name="reference"></a>참조
  참조 정보를 포함하는 항목에 대한 [MSBuild 참조](../msbuild/msbuild-reference.md) 링크입니다.

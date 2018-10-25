@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc610963fa1ca82fec30e04abb90583db48bdf55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83d891de330b66841b1ad48a7fc4593b1144e9e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888129"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 이 구조는 PDB 기호에서 가져온 필드 형식에 대 한 정보를 지정 합니다.  
@@ -45,16 +45,16 @@ public struct PDB_TYPE {
   
 #### <a name="parameters"></a>매개 변수  
  ulAppDomainID  
- 기호를 가져온 응용 프로그램의 ID입니다. 이 응용 프로그램의 인스턴스를 고유 하 게 식별 하기 위해 사용 됩니다.  
+ 기호 가져온 응용 프로그램의 ID입니다. 이 응용 프로그램의 인스턴스를 고유 하 게 식별에 사용 됩니다.  
   
  guidModule  
  이 필드를 포함 하는 모듈의 GUID입니다.  
   
  symid  
- 이 필드에 해당 하는 기호의 ID입니다.  
+ 이 필드에 해당 하는 기호 ID입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조체의 공용 구조체의 일부분으로 표시는 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 때 구조는 `dwKind` 필드는 `TYPE_INFO` 구조로 설정 되어 `TYPE_KIND_PDB` (의 값은 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 열거형)입니다.  
+ 이 구조체의 공용 구조체의 일부분으로 표시를 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 경우 구조체를 `dwKind` 필드를 `TYPE_INFO` 구조로 설정 되어 `TYPE_KIND_PDB` (의 값을 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 열거형)입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  

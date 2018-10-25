@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffc5d7e9c2ed492357dea01151e32b301b4d177e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854834"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>방법: SharePoint 기능에 항목 추가 및 제거
   SharePoint 솔루션을 만들 때 Visual Studio 기능에 기본 SharePoint 프로젝트 항목을 추가 합니다. 배포 하기 전에 추가 하는 SharePoint 기능을 수정 하려면 SharePoint 프로젝트 항목을 제거 합니다.  
@@ -33,17 +33,17 @@ ms.locfileid: "36756248"
   
 #### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>기능 디자이너를 사용 하 여 SharePoint 프로젝트 항목을 추가 하려면  
   
-1.  기능 디자이너를 엽니다.  
+1. 기능 디자이너를 엽니다.  
   
-     자세한 내용은 [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)합니다.  
+    자세한 내용은 [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)합니다.  
   
-2.  하나 이상의 항목을 추가 합니다 **솔루션에서 항목** 목록을 **기능의 항목** 하나 이상의 다음 단계를 수행 하 여 목록:  
+2. 하나 이상의 항목을 추가 합니다 **솔루션에서 항목** 목록을 **기능의 항목** 하나 이상의 다음 단계를 수행 하 여 목록:  
   
-    -   추가할 각 항목을 두 번 클릭합니다.  
+   - 추가할 각 항목을 두 번 클릭합니다.  
   
-    -   추가 선택한 다음 원하는 항목을 선택 합니다 **추가** 단추 (>).  
+   - 추가 선택한 다음 원하는 항목을 선택 합니다 **추가** 단추 (>).  
   
-    -   선택 된 **모두 추가** 단추 (>>).  
+   - 선택 된 **모두 추가** 단추 (>>).  
   
      SharePoint 프로젝트 항목에 표시 된 **기능의 항목** 목록입니다.  
   

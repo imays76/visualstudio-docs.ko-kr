@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839767"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>방법: 호스트 컨트롤의 데이터로 데이터 소스를 업데이트 합니다.
   호스트 컨트롤을 데이터 원본에 바인딩하고 해당 데이터 원본을 컨트롤에 있는 데이터의 변경 내용으로 업데이트할 수 있습니다. 이 프로세스는 크게 다음과 같은 두 가지 단계로 구성되어 있습니다.  
   
-1.  컨트롤에 있는 수정된 데이터로 메모리 내 데이터 원본을 업데이트합니다. 일반적으로 메모리 내 데이터 원본은 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>또는 일부 다른 데이터 개체입니다.  
+1. 컨트롤에 있는 수정된 데이터로 메모리 내 데이터 원본을 업데이트합니다. 일반적으로 메모리 내 데이터 원본은 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>또는 일부 다른 데이터 개체입니다.  
   
-2.  데이터베이스를 메모리 내 데이터 원본의 변경된 데이터로 업데이트합니다. 이 작업은 데이터 원본이 SQL Server 또는 Microsoft Office Access 데이터베이스와 같이 백 엔드 데이터베이스에 연결된 경우에만 가능합니다.  
+2. 데이터베이스를 메모리 내 데이터 원본의 변경된 데이터로 업데이트합니다. 이 작업은 데이터 원본이 SQL Server 또는 Microsoft Office Access 데이터베이스와 같이 백 엔드 데이터베이스에 연결된 경우에만 가능합니다.  
   
- 호스트 컨트롤 및 데이터 바인딩에 대 한 자세한 내용은 참조 하세요. [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md) 하 고 [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)합니다.  
+   호스트 컨트롤 및 데이터 바인딩에 대 한 자세한 내용은 참조 하세요. [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md) 하 고 [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)합니다.  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>메모리 내 데이터 원본을 업데이트합니다  
  기본적으로 단순 데이터 바인딩(Word 문서의 콘텐츠 컨트롤 또는 Excel 워크시트의 명명된 범위 컨트롤 등)을 사용하도록 설정된 호스트 컨트롤은 데이터 변경 내용을 메모리 내 데이터 원본에 저장하지 않습니다. 즉, 최종 사용자가 호스트 컨트롤에서 값을 변경한 다음 컨트롤에서 벗어나면 컨트롤의 새 값이 데이터 원본에 자동으로 저장되지 않습니다.  
@@ -57,16 +57,16 @@ ms.locfileid: "35675443"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>코드를 사용하여 메모리 내 데이터 원본을 자동으로 업데이트하도록 컨트롤을 설정하려면  
   
-1.  System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 모드를 사용 합니다 <xref:System.Windows.Forms.Binding> 데이터 소스에 컨트롤을 바인딩하는 개체입니다. 다음 두 가지 옵션으로 데이터 원본을 업데이트할 수 있습니다.  
+1. System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 모드를 사용 합니다 <xref:System.Windows.Forms.Binding> 데이터 소스에 컨트롤을 바인딩하는 개체입니다. 다음 두 가지 옵션으로 데이터 원본을 업데이트할 수 있습니다.  
   
-    -   데이터 소스 컨트롤의 유효성을 검사 하는 경우를 업데이트 하려면 System.Windows.Forms.DataSourceUpdateMode.OnValidation에이 속성을 설정 합니다.  
+   - 데이터 소스 컨트롤의 유효성을 검사 하는 경우를 업데이트 하려면 System.Windows.Forms.DataSourceUpdateMode.OnValidation에이 속성을 설정 합니다.  
   
-    -   데이터 소스 컨트롤의 데이터 바인딩된 속성의 값이 변경 될 때를 업데이트 하려면 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged에이 속성을 설정 합니다.  
+   - 데이터 소스 컨트롤의 데이터 바인딩된 속성의 값이 변경 될 때를 업데이트 하려면 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged에이 속성을 설정 합니다.  
   
-        > [!NOTE]  
-        >  Word 제품 문서-변경 또는 컨트롤 변경 알림을 하지 않으므로 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 옵션은 Word 호스트 컨트롤에 적용 되지 않습니다. 그러나 Word 문서의 Windows Forms 컨트롤에 대해서는 이 옵션을 사용할 수 있습니다.  
+     > [!NOTE]  
+     >  Word 제품 문서-변경 또는 컨트롤 변경 알림을 하지 않으므로 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 옵션은 Word 호스트 컨트롤에 적용 되지 않습니다. 그러나 Word 문서의 Windows Forms 컨트롤에 대해서는 이 옵션을 사용할 수 있습니다.  
   
-     다음 예제에서는 컨트롤의 값이 변경될 때 자동으로 데이터 원본을 업데이트하기 위해 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 구성합니다. 이 예제에서는 해당 <xref:Microsoft.Office.Tools.Excel.NamedRange> 속성이 데이터 원본의 필드에 바인딩된 `namedRange1` 이라는 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 컨트롤이 있다고 가정합니다.  
+     다음 예제에서는 컨트롤의 값이 변경될 때 자동으로 데이터 원본을 업데이트하기 위해 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 구성합니다. 이 예제에서는 해당 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성이 데이터 원본의 필드에 바인딩된 `namedRange1`이라는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 있다고 가정합니다.  
   
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  
@@ -92,7 +92,7 @@ ms.locfileid: "35675443"
   
 6.  **서식 지정 및 고급 바인딩** 대화 상자를 닫습니다.  
   
-## <a name="update-the-database"></a>데이터베이스를 업데이트 합니다.  
+## <a name="update-the-database"></a>데이터베이스 업데이트  
  메모리 내 데이터 원본이 데이터베이스와 연결된 경우 데이터베이스를 데이터 원본에 대한 변경 내용으로 업데이트해야 합니다. 데이터베이스를 업데이트 하는 방법에 대 한 자세한 내용은 참조 하세요. [데이터를 데이터베이스에 다시 저장](../data-tools/save-data-back-to-the-database.md) 하 고 [TableAdapter를 사용 하 여 데이터를 업데이트](../data-tools/update-data-by-using-a-tableadapter.md) 합니다.  
   
 ### <a name="to-update-the-database"></a>데이터베이스를 업데이트하려면  

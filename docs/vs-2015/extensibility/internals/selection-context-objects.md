@@ -16,12 +16,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3d65a1fb510daec68060261141ddb2d05822988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836855"
 ---
 # <a name="selection-context-objects"></a>선택 컨텍스트 개체
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ ms.locfileid: "49228659"
   
  Vspackage를 모니터링할 수 있는 전역 선택 컨텍스트 트리거 이벤트를 수정 합니다. Vspackage를 구현 하 여 다음 작업을 수행할 수 있습니다 `IVsTrackSelectionEx` 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> 인터페이스:  
   
--   계층에서 현재 활성 파일을 업데이트 합니다.  
+- 계층에서 현재 활성 파일을 업데이트 합니다.  
   
--   모니터는 특정 유형의 요소를 변경합니다. 예를 들어 VSPackage는 특별 한을 사용 하는 경우 **속성** 창에서 활성에서 변경 내용을 모니터링할 수 있습니다 **속성** 창 고 필요한 경우 사용자를 다시 시작 합니다.  
+- 모니터는 특정 유형의 요소를 변경합니다. 예를 들어 VSPackage는 특별 한을 사용 하는 경우 **속성** 창에서 활성에서 변경 내용을 모니터링할 수 있습니다 **속성** 창 고 필요한 경우 사용자를 다시 시작 합니다.  
   
- 다음 순서 대로 선택 영역 추적의 일반적인 과정을 보여 줍니다.  
+  다음 순서 대로 선택 영역 추적의 일반적인 과정을 보여 줍니다.  
   
 1.  IDE는 새로 열린된 창에서 선택 항목 컨텍스트를 검색 하 고 전역 선택 컨텍스트에 넣습니다. 선택 항목 컨텍스트 HIERARCHY_DONTPROPAGATE 또는 SELCONTAINER_DONTPROPAGATE을 사용 하는 경우 해당 정보는 전역 컨텍스트를 전파 되지 않습니다. 자세한 내용은 [사용자에 게 피드백](../../extensibility/internals/feedback-to-the-user.md)합니다.  
   

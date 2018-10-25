@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837569"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인별 언어에서 표준 메뉴 명령 수정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
   
  요약하자면 명령을 수정하려는 경우 다음 단계를 수행합니다.  
   
-1.  [수정할 수 있습니다 명령을 파악](#what)합니다.  
+1. [수정할 수 있습니다 명령을 파악](#what)합니다.  
   
-2.  [적절 한 명령 집합 클래스의 partial 선언을 만듭니다](#extend)합니다.  
+2. [적절 한 명령 집합 클래스의 partial 선언을 만듭니다](#extend)합니다.  
   
-3.  [ProcessOnStatus 및 ProcessOnMenu 메서드를 재정의](#override) 명령입니다.  
+3. [ProcessOnStatus 및 ProcessOnMenu 메서드를 재정의](#override) 명령입니다.  
   
- 이 항목에서는 위의 절차에 대해 설명합니다.  
+   이 항목에서는 위의 절차에 대해 설명합니다.  
   
 > [!NOTE]
 >  메뉴 명령을 직접 만들려는 경우 참조 [방법: 바로 가기 메뉴에 명령을 추가](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)합니다.  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>메서드 코드 작성  
  이러한 메서드 내에서는 다음 코드 조각이 유용하게 사용되는 경우가 많습니다.  
   
--   `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 모양 및 연결선 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.  
+- `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 모양 및 연결선 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.  
   
--   `this.IsDiagramSelected()` - `true` 사용자가 다이어그램의 빈 부분입니다.  
+- `this.IsDiagramSelected()` - `true` 사용자가 다이어그램의 빈 부분입니다.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - 사용자가 여러 모양을 선택하지 않은 경우입니다.  
+- `this.IsSingleSelection()` - 사용자가 여러 모양을 선택하지 않은 경우입니다.  
   
--   `this.SingleSelection` - 사용자가 마우스 오른쪽 단추로 클릭한 모양이나 다이어그램입니다.  
+- `this.SingleSelection` - 사용자가 마우스 오른쪽 단추로 클릭한 모양이나 다이어그램입니다.  
   
--   `shape.ModelElement as MyLanguageElement` - 모양이 나타내는 모델 요소입니다.  
+- `shape.ModelElement as MyLanguageElement` - 모양이 나타내는 모델 요소입니다.  
   
- 개체 및 링크를 만드는 방법에 대 한 요소를 이동 하는 방법에 대 한 자세한 내용은 참조 하세요 [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.  
+  개체 및 링크를 만드는 방법에 대 한 요소를 이동 하는 방법에 대 한 자세한 내용은 참조 하세요 [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ComponentModel.Design.MenuCommand>   

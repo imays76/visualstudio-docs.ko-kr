@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 21ff2211632cba63dafe2a7abf1964e7a89e87c3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6efc22f916973f292daa97bdd6b5129ac9311f04
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224069"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881074"
 ---
 # <a name="javascript-support"></a>JavaScript 지원
 
@@ -34,7 +34,7 @@ JavaScript 파일은 주로 **새 파일** 대화 상자를 통해 ASP.NET Core 
 
 ## <a name="intellisense"></a>IntelliSense
 
-Mac용 Visual Studio는 [Javascript 언어 서비스](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense)를 사용하여 코드 작성 시 지능형 코드 완성 기능, 매개 변수 정보, 멤버 목록을 지원하는 IntelliSense를 제공합니다.
+Mac용 Visual Studio는 [Javascript 언어 서비스](/visualstudio/ide/javascript-intellisense)를 사용하여 코드 작성 시 지능형 코드 완성 기능, 매개 변수 정보, 멤버 목록을 지원하는 IntelliSense를 제공합니다.
 
 Mac용 Visual Studio의 Javascript IntelliSense는 형식 유추, JSDoc 또는 Typescript 선언에 기반을 둘 수 있습니다.
 

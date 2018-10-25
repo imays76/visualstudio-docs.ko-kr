@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae63583edac9b3ff6fefef416c8c1ce19d6e88f6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c8d90883f2aac5389ec0787fee08749da363e747
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821957"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: API 디자인, XML 문서 및 XML 텍스트 판독기의 안전하지 않은 처리
+
 |||
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
@@ -29,7 +30,7 @@ ms.locfileid: "45549091"
  XMLDocument 및 XMLTextReader에서 파생된 API를 디자인할 경우 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>에 주의해야 합니다.  외부 엔터티 소스를 참조하거나 확인할 때 안전하지 않은 DTDProcessing 인스턴스를 사용하거나 XML에서 안전하지 않은 값을 설정하면 정보가 공개될 수 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- *문서 유형 정의 (DTD)* 정의 된 대로 XML 파서는 문서의 유효성을 확인할 수 있습니다 하는 두 가지 방법 중 하나인 합니다 [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)합니다. 이 규칙은 신뢰할 수 없는 데이터가 허용되는 속성 및 인스턴스를 찾아 [DoS(서비스 거부)](/dotnet/framework/wcf/feature-details/information-disclosure) 공격을 야기할 수 있는 잠재적인 [Information Disclosure](/dotnet/framework/wcf/feature-details/denial-of-service) 위협을 개발자에게 경고합니다. 다음 경우에 이 규칙이 트리거됩니다.
+ *DTD(문서 종류 정의)* 는 XML 파서가  [W3C(World Wide Web Consortium) XML(Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)에 정의된 대로 문서의 유효성을 확인할 수 있는 두 가지 방법 중 하나입니다. 이 규칙은 신뢰할 수 없는 데이터가 허용되는 속성 및 인스턴스를 찾아 [DoS(서비스 거부)](/dotnet/framework/wcf/feature-details/information-disclosure) 공격을 야기할 수 있는 잠재적인 [Information Disclosure](/dotnet/framework/wcf/feature-details/denial-of-service) 위협을 개발자에게 경고합니다. 다음 경우에 이 규칙이 트리거됩니다.
 
 - <xref:System.Xml.XmlDocument> 또는 <xref:System.Xml.XmlTextReader> 클래스는 DTD 처리를 위해 기본 해결 프로그램 값을 사용 합니다.
 

@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850427"
 ---
 # <a name="immediate-window"></a>직접 실행 창
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ ms.locfileid: "49203673"
   
 #### <a name="to-execute-a-function-at-design-time"></a>디자인 타임에 함수를 실행하려면  
   
-1.  다음 코드를 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 콘솔 응용 프로그램에 복사합니다.  
+1. 다음 코드를 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 콘솔 응용 프로그램에 복사합니다.  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  **디버그** 메뉴에서 **창**을 클릭한 다음 **즉시 실행**을 클릭합니다.  
+2. **디버그** 메뉴에서 **창**을 클릭한 다음 **즉시 실행**을 클릭합니다.  
   
-3.  **직접 실행 창**에 `?MyFunction(2)`을 입력하고 Enter 키를 누릅니다.  
+3. **직접 실행 창**에 `?MyFunction(2)`을 입력하고 Enter 키를 누릅니다.  
   
-     **직접 실행** 창이 `MyFunction`을 실행하고 `4`를 표시합니다.  
+    **직접 실행** 창이 `MyFunction`을 실행하고 `4`를 표시합니다.  
   
- 함수 또는 서브루틴에 중단점이 포함된 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]는 적절한 지점에서 실행을 중단합니다. 그런 다음 디버거 창을 사용하여 프로그램 상태를 조사할 수 있습니다. 자세한 내용은 [연습: 디자인 타임에 디버깅](../../debugger/walkthrough-debugging-at-design-time.md)을 참조하십시오.  
+   함수 또는 서브루틴에 중단점이 포함된 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]는 적절한 지점에서 실행을 중단합니다. 그런 다음 디버거 창을 사용하여 프로그램 상태를 조사할 수 있습니다. 자세한 내용은 [연습: 디자인 타임에 디버깅](../../debugger/walkthrough-debugging-at-design-time.md)을 참조하십시오.  
   
- [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] 프로젝트, 웹 프로젝트, 스마트 장치 프로젝트 및 SQL 프로젝트를 포함해 실행 환경을 시작해야 하는 프로젝트 형식에서 디자인 타임 식 평가를 사용할 수 있습니다.  
+   [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] 프로젝트, 웹 프로젝트, 스마트 장치 프로젝트 및 SQL 프로젝트를 포함해 실행 환경을 시작해야 하는 프로젝트 형식에서 디자인 타임 식 평가를 사용할 수 있습니다.  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>다중 프로젝트 솔루션에서 디자인 타임 식 계산  
  디자인 타임 식 계산에 대한 컨텍스트를 설정할 때 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]는 솔루션 탐색기에서 현재 선택된 프로젝트를 참조합니다. 솔루션 탐색기에서 선택된 프로젝트가 없는 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]는 시작 프로젝트에 대해 함수를 평가하려고 합니다. 현재 컨텍스트에서 함수를 실행할 수 없는 경우 오류 메시지를 받게 됩니다. 솔루션을 위해 시작 프로젝트가 아닌 프로젝트에서 함수를 계산하려고 하는데 오류를 받은 경우 솔루션 탐색기에서 프로젝트를 선택하고 계산을 다시 시도하세요.  

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc358ec762225ce6e5a19dac508b126a92799811
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 40919422ebdb60a6262d57958e961b1312f6fba4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861373"
 ---
 # <a name="idiasectioncontribgetread"></a>IDiaSectionContrib::get_read
 섹션을 읽을 수 있는지 여부를 나타내는 플래그를 검색 합니다.  

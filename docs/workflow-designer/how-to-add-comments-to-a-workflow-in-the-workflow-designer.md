@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883306"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 워크플로에 주석 추가
 
@@ -49,13 +49,13 @@ ms.locfileid: "39379951"
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>활동 디자이너에 주석 표시
 
-1.  활동 외부에 표시 하는 주석이 있는 활동 디자이너를 사용 하 여 클릭 합니다 **Pin** 에서 주석 표시기의 아이콘입니다.
+1. 활동 외부에 표시 하는 주석이 있는 활동 디자이너를 사용 하 여 클릭 합니다 **Pin** 에서 주석 표시기의 아이콘입니다.
 
    주석은 활동 디자이너에 표시 됩니다. 아래의 스크린샷에서 활동 디자이너에 "워크플로에서 활동 시작" 주석이 표시됩니다.
 
    ![활동 디자이너에 표시되는 주석](../workflow-designer/media/annotationindesigner.png)
 
-1. 활동 디자이너 외부에 주석을 표시할 활동 디자이너의 주석 영역을 마우스로 클릭 합니다 **고정 해제** 아이콘
+2. 활동 디자이너 외부에 주석을 표시할 활동 디자이너의 주석 영역을 마우스로 클릭 합니다 **고정 해제** 아이콘
 
    ![활동 디자이너 외부에 표시 되는 주석](../workflow-designer/media/annotationoutsidedesigner.png)
 

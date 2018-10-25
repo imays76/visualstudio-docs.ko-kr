@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813911"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
 
@@ -31,9 +31,9 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
 
 - Platform events - 특정 CPU에 연결된 CPU 이벤트입니다.
 
- Portable events에는 Instructions Retired 및 Non Halted Cycles 등의 일반적인 이벤트, CPU 버퍼 이벤트, 분기 이벤트, L2 캐시 이벤트가 포함됩니다. 사용 가능한 플랫폼 이벤트 카운터는 프로세서 제조업체에서 결정합니다.
+  Portable events에는 Instructions Retired 및 Non Halted Cycles 등의 일반적인 이벤트, CPU 버퍼 이벤트, 분기 이벤트, L2 캐시 이벤트가 포함됩니다. 사용 가능한 플랫폼 이벤트 카운터는 프로세서 제조업체에서 결정합니다.
 
- 이식 가능한 카운터와 플랫폼 카운터 간에 이벤트 범주를 공유할 수 있습니다. 예를 들어 다음 데이터 범주는 두 형식에 공통적인 경우가 많습니다.
+  이식 가능한 카운터와 플랫폼 카운터 간에 이벤트 범주를 공유할 수 있습니다. 예를 들어 다음 데이터 범주는 두 형식에 공통적인 경우가 많습니다.
 
 - 메모리 이벤트.
 
@@ -41,7 +41,7 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
 
 - 분기 이벤트.
 
- 프로파일러에서 두 가지 방법으로 성능 카운터 데이터를 수집할 수 있습니다.
+  프로파일러에서 두 가지 방법으로 성능 카운터 데이터를 수집할 수 있습니다.
 
 - 계측을 통해 프로파일링할 경우 하나 이상의 카운터에서 데이터를 수집합니다.
 

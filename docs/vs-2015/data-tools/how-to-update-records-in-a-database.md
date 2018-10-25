@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949034"
 ---
 # <a name="how-to-update-records-in-a-database"></a>방법: 데이터베이스에서 레코드 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ ms.locfileid: "49199523"
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>DataSet, DataTable, DataRow, 또는 DataRows() 받아들이는 TableAdapter.Update 메서드를 사용 하 여 데이터베이스에서 레코드를 업데이트 하려면  
   
-1.  원하는 레코드를 편집할 <xref:System.Data.DataTable> 직접 편집 하 여 합니다 <xref:System.Data.DataRow> 에 <xref:System.Data.DataTable>합니다. 자세한 내용은 [방법: DataTable에서 행 편집](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c)합니다.  
+1. 원하는 레코드를 편집할 <xref:System.Data.DataTable> 직접 편집 하 여 합니다 <xref:System.Data.DataRow> 에 <xref:System.Data.DataTable>합니다. 자세한 내용은 [방법: DataTable에서 행 편집](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c)합니다.  
   
-2.  행을 편집한 후 합니다 <xref:System.Data.DataTable>를 호출 합니다 `TableAdapter.Update` 메서드. 전체에서 전달 하 여 업데이트 하는 데이터의 양을 제어할 수 있습니다 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, 배열을 <xref:System.Data.DataRow>s, 단일 <xref:System.Data.DataRow>합니다.  
+2. 행을 편집한 후 합니다 <xref:System.Data.DataTable>를 호출 합니다 `TableAdapter.Update` 메서드. 전체에서 전달 하 여 업데이트 하는 데이터의 양을 제어할 수 있습니다 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, 배열을 <xref:System.Data.DataRow>s, 단일 <xref:System.Data.DataRow>합니다.  
   
-     다음 코드에서 레코드를 편집 하는 방법을 보여 줍니다는 <xref:System.Data.DataTable> 호출을 `TableAdapter.Update` 데이터베이스에 변경 내용을 저장 하는 방법입니다. (이 예제에서는 Northwind 데이터베이스 지역 테이블입니다.)  
+    다음 코드에서 레코드를 편집 하는 방법을 보여 줍니다는 <xref:System.Data.DataTable> 호출을 `TableAdapter.Update` 데이터베이스에 변경 내용을 저장 하는 방법입니다. (이 예제에서는 Northwind 데이터베이스 지역 테이블입니다.)  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- TableAdapter의 개체를 사용 하 여 응용 프로그램에 데이터를 저장 하는 응용 프로그램을 사용할 수 있습니다 `DBDirect` 개체에서 데이터를 데이터베이스에 직접 보내는 메서드. 이러한 메서드를 사용 하면 각 열에 대 한 개별 값 메서드 매개 변수로 전달할 수 있습니다. 이 메서드를 호출 메서드에 전달 된 열 값을 사용 하 여 데이터베이스에서 기존 레코드를 업데이트 합니다.  
+   TableAdapter의 개체를 사용 하 여 응용 프로그램에 데이터를 저장 하는 응용 프로그램을 사용할 수 있습니다 `DBDirect` 개체에서 데이터를 데이터베이스에 직접 보내는 메서드. 이러한 메서드를 사용 하면 각 열에 대 한 개별 값 메서드 매개 변수로 전달할 수 있습니다. 이 메서드를 호출 메서드에 전달 된 열 값을 사용 하 여 데이터베이스에서 기존 레코드를 업데이트 합니다.  
   
- 다음 절차에서는 Northwind `Region` 예를 들어 테이블입니다.  
+   다음 절차에서는 Northwind `Region` 예를 들어 테이블입니다.  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>열 값을 받아들이는 TableAdapter.Update 메서드를 사용 하 여 데이터베이스에서 레코드를 업데이트 하려면  
   

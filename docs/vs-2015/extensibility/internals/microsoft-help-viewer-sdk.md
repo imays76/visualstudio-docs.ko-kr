@@ -13,12 +13,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 19ef7da357cf4b920dc6aca563fcdf6d68f69077
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac5df4c8042bccb9218a7c46c1cbaa50fbbfcede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872553"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,41 +48,41 @@ ms.locfileid: "49267622"
   
  항목에는 일반적으로 두 개의 섹션이 포함 되어 있습니다.  
   
--   메타 데이터 (참조 콘텐츠 메타 데이터): 예를 들어 항목 고유 ID, 키워드 값 항목 목차 ID 항목에 대 한 데이터 부모 등의 노드 ID입니다.  
+- 메타 데이터 (참조 콘텐츠 메타 데이터): 예를 들어 항목 고유 ID, 키워드 값 항목 목차 ID 항목에 대 한 데이터 부모 등의 노드 ID입니다.  
   
--   콘텐츠 본문: (축소 가능한 영역, 코드 조각 등 콘텐츠 동작을 지원 포함 하는 W3C 기본 1.1 XHTML 호환 전체 목록은 아래 표시 됩니다).  
+- 콘텐츠 본문: (축소 가능한 영역, 코드 조각 등 콘텐츠 동작을 지원 포함 하는 W3C 기본 1.1 XHTML 호환 전체 목록은 아래 표시 됩니다).  
   
- Visual Studio 브랜딩 패키지 컨트롤을 지원 합니다.  
+  Visual Studio 브랜딩 패키지 컨트롤을 지원 합니다.  
   
--   링크  
+- 링크  
   
--   CodeSnippet  
+- CodeSnippet  
   
--   CollapsibleArea  
+- CollapsibleArea  
   
--   상속 된 멤버  
+- 상속 된 멤버  
   
--   LanguageSpecificText  
+- LanguageSpecificText  
   
- 지원 되는 언어 문자열 (없습니다 대/소문자 구분):  
+  지원 되는 언어 문자열 (없습니다 대/소문자 구분):  
   
--   javascript  
+- javascript  
   
--   csharp 또는 c#  
+- csharp 또는 c#  
   
--   cplusplus visualc + + 또는 c + +  
+- cplusplus visualc + + 또는 c + +  
   
--   jscript  
+- jscript  
   
--   visualbasic 또는 vb  
+- visualbasic 또는 vb  
   
--   f # fsharp 또는 fs  
+- f # fsharp 또는 fs  
   
--   기타 – 언어 이름을 나타내는 문자열  
+- 기타 – 언어 이름을 나타내는 문자열  
   
- **도움말 뷰어 항목을 만드는 중**  
+  **도움말 뷰어 항목을 만드는 중**  
   
- 라는 ContosoTopic4.htm, XHTML 문서를 새로 만들고 title 태그 (아래)를 포함 합니다.  
+  라는 ContosoTopic4.htm, XHTML 문서를 새로 만들고 title 태그 (아래)를 포함 합니다.  
   
 ```html  
 <html>  
@@ -99,17 +99,17 @@ ms.locfileid: "49267622"
   
  다음으로, 추가 하는 방법 항목 (자체 브랜드 여부), 표시 되는 방식을 정의 하는 데이터 등을 F1, 목차에서 해당 ID (다른 항목으로 링크 참조) 내에 있는이 항목에 대 한이 항목을 참조 합니다.  지원 되는 메타 데이터의 전체 목록은 아래 "콘텐츠 메타 데이터" 표를 참조 하세요.  
   
--   이 경우 고유한 브랜드 패키지를 Visual Studio 도움말 뷰어가 브랜드 패키지의 변형을 사용 됩니다.  
+- 이 경우 고유한 브랜드 패키지를 Visual Studio 도움말 뷰어가 브랜드 패키지의 변형을 사용 됩니다.  
   
--   F1 메타 이름 및 값을 추가 ("Microsoft.Help.F1" 콘텐츠 "ContosoTopic4" =) IDE의 propertybag에 제공된 된 F1 값을 일치 하는 됩니다.  (자세한 내용은 F1 지원 섹션을 참조 합니다.)   이 F1을 일치 하는 값은 IDE의 F1을 선택 하는 경우이 항목을 표시 하려면 ide에서 호출 합니다.  
+- F1 메타 이름 및 값을 추가 ("Microsoft.Help.F1" 콘텐츠 "ContosoTopic4" =) IDE의 propertybag에 제공된 된 F1 값을 일치 하는 됩니다.  (자세한 내용은 F1 지원 섹션을 참조 합니다.)   이 F1을 일치 하는 값은 IDE의 F1을 선택 하는 경우이 항목을 표시 하려면 ide에서 호출 합니다.  
   
--   항목 ID를 추가 합니다. 이 항목에 연결할 다른 항목에서 사용 되는 문자열입니다.  이 항목에 대 한 도움말 뷰어 ID입니다.  
+- 항목 ID를 추가 합니다. 이 항목에 연결할 다른 항목에서 사용 되는 문자열입니다.  이 항목에 대 한 도움말 뷰어 ID입니다.  
   
--   목차에 대 한이 항목에서는 TOC 노드 표시 되는 위치를 정의 하려면이 항목의 부모 노드를 추가 합니다.  
+- 목차에 대 한이 항목에서는 TOC 노드 표시 되는 위치를 정의 하려면이 항목의 부모 노드를 추가 합니다.  
   
--   이 항목에서는 노드 순서 목차에 추가 합니다. 부모 노드의 자식 노드 수가 n에 있는 경우 자식 노드 순서 대로이 항목의이 위치를 정의 합니다. 예를 들어이 항목은 4 개의 하위 항목 수가 4.)  
+- 이 항목에서는 노드 순서 목차에 추가 합니다. 부모 노드의 자식 노드 수가 n에 있는 경우 자식 노드 순서 대로이 항목의이 위치를 정의 합니다. 예를 들어이 항목은 4 개의 하위 항목 수가 4.)  
   
- 예제 메타 데이터 섹션:  
+  예제 메타 데이터 섹션:  
   
 ```html  
 <html>  
@@ -287,73 +287,73 @@ some F# code
   
  도움말 뷰어 기본 도움말 콘텐츠 소스 온라인 (브라우저에서 시작)로 설정 하면:  
   
--   Visual Studio 파트너 (VSP) 기능 (속성 모음 prefix.keyword 및 레지스트리에서 찾을 접두사에 대 한 온라인 URL) F1 propertybag에 값을 내보냅니다: F1 VSP URL + 매개 변수를 브라우저에 보냅니다.  
+- Visual Studio 파트너 (VSP) 기능 (속성 모음 prefix.keyword 및 레지스트리에서 찾을 접두사에 대 한 온라인 URL) F1 propertybag에 값을 내보냅니다: F1 VSP URL + 매개 변수를 브라우저에 보냅니다.  
   
--   Visual Studio 기능 (언어 편집기, Visual Studio 특정 메뉴 항목 등): F1 Visual Studio URL을 브라우저에 보냅니다.  
+- Visual Studio 기능 (언어 편집기, Visual Studio 특정 메뉴 항목 등): F1 Visual Studio URL을 브라우저에 보냅니다.  
   
- 도움말 뷰어 기본 도움말 콘텐츠 소스 로컬 도움말 (도움말 뷰어에서 시작)로 설정 하면:  
+  도움말 뷰어 기본 도움말 콘텐츠 소스 로컬 도움말 (도움말 뷰어에서 시작)로 설정 하면:  
   
--   VSP 기능 키워드 F1 속성 모음 및 로컬 저장소 인덱스 간에 일치 하는 위치 (속성 모음 prefix.keyword 즉, 로컬 저장소 인덱스에 있는 값 =): F1 도움말 뷰어에서 항목을 렌더링 합니다.  
+- VSP 기능 키워드 F1 속성 모음 및 로컬 저장소 인덱스 간에 일치 하는 위치 (속성 모음 prefix.keyword 즉, 로컬 저장소 인덱스에 있는 값 =): F1 도움말 뷰어에서 항목을 렌더링 합니다.  
   
--   Visual Studio 기능 (Visual Studio 기능에서 발생 하는 속성 모음의 재정의를 VSP에 대 한 옵션 없음): F1 도움말 뷰어에서 Visual Studio 항목을 렌더링 합니다.  
+- Visual Studio 기능 (Visual Studio 기능에서 발생 하는 속성 모음의 재정의를 VSP에 대 한 옵션 없음): F1 도움말 뷰어에서 Visual Studio 항목을 렌더링 합니다.  
   
- 공급 업체 도움말 콘텐츠에 대 한 F1 대체 (fallback)를 사용 하도록 설정 하려면 다음 레지스트리 값을 설정 합니다. F1 대체 (fallback)는 도움말 뷰어 F1 도움말 콘텐츠를 검색할 온라인으로 설정 하 고 공급 업체 콘텐츠 사용자의 하드 드라이브에 로컬로 설치 되어 있는지를 의미 합니다. 도움말 뷰어에서 온라인 도움말에 대 한 기본 설정은 이더라도 콘텐츠에 대 한 로컬 도움말 같아야 합니다.  
+  공급 업체 도움말 콘텐츠에 대 한 F1 대체 (fallback)를 사용 하도록 설정 하려면 다음 레지스트리 값을 설정 합니다. F1 대체 (fallback)는 도움말 뷰어 F1 도움말 콘텐츠를 검색할 온라인으로 설정 하 고 공급 업체 콘텐츠 사용자의 하드 드라이브에 로컬로 설치 되어 있는지를 의미 합니다. 도움말 뷰어에서 온라인 도움말에 대 한 기본 설정은 이더라도 콘텐츠에 대 한 로컬 도움말 같아야 합니다.  
   
-1.  설정 된 **VendorContent** 도움말 2.1 레지스트리 키 아래의 값:  
+1. 설정 된 **VendorContent** 도움말 2.1 레지스트리 키 아래의 값:  
   
-    -   32 비트 운영 체제:  
+   -   32 비트 운영 체제:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
   
-         "VendorContent" = dword: 00000001  
+        "VendorContent" = dword: 00000001  
   
-    -   64 비트 운영 체제:  
+   -   64 비트 운영 체제:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
   
-         "VendorContent" = dword: 00000001  
+        "VendorContent" = dword: 00000001  
   
-2.  도움말 2.1 레지스트리 키에서 파트너 네임 스페이스를 등록 합니다.  
+2. 도움말 2.1 레지스트리 키에서 파트너 네임 스페이스를 등록 합니다.  
   
-    -   32 비트 운영 체제:  
+   - 32 비트 운영 체제:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner*\\< 네임 스페이스\>*  
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< 네임 스페이스\></em>  
   
-         "위치" = "오프 라인"  
+      "위치" = "오프 라인"  
   
-    -   64 비트 운영 체제:  
+   - 64 비트 운영 체제:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner*\\< 네임 스페이스\>*  
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< 네임 스페이스\></em>  
   
-         "위치" = "오프 라인"  
+      "위치" = "오프 라인"  
   
- **구문 분석 하는 기본 네이티브 Namespace**  
+   **구문 분석 하는 기본 네이티브 Namespace**  
   
- 기본 네임 스페이스를 기본 구문 분석을 설정 하려면 레지스트리에 추가 새로운 DWORD의 이름으로: BaseNativeNamespaces 해당 값을 1 (아래 지원 하고자 하는 카탈로그 키)로 설정 합니다.  예를 들어, Visual Studio 카탈로그를 사용 하려면 키 경로에 추가할 수 있습니다.  
+   기본 네임 스페이스를 기본 구문 분석을 설정 하려면 레지스트리에 추가 새로운 DWORD의 이름으로: BaseNativeNamespaces 해당 값을 1 (아래 지원 하고자 하는 카탈로그 키)로 설정 합니다.  예를 들어, Visual Studio 카탈로그를 사용 하려면 키 경로에 추가할 수 있습니다.  
   
- HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
+   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
   
- 경우 헤더/메서드 발견 되는 형식에는 F1 키워드를 '/' 문자 구문 분석 됩니다, 다음 구문은 발생:  
+   경우 헤더/메서드 발견 되는 형식에는 F1 키워드를 '/' 문자 구문 분석 됩니다, 다음 구문은 발생:  
   
--   헤더: 레지스트리에 등록에 사용할 수 있는 네임 스페이스가 됩니다.  
+- 헤더: 레지스트리에 등록에 사용할 수 있는 네임 스페이스가 됩니다.  
   
--   방법: 키워드를 통해 전달 되는이 됩니다.  
+- 방법: 키워드를 통해 전달 되는이 됩니다.  
   
- 예를 들어 CustomLibrary 라는 사용자 지정 라이브러리를 및 요청 제공에 F1로 포맷할 때 MyTestMethod, 라는 메서드를 지정 된 `CustomLibrary/MyTestMethod`합니다.  
+  예를 들어 CustomLibrary 라는 사용자 지정 라이브러리를 및 요청 제공에 F1로 포맷할 때 MyTestMethod, 라는 메서드를 지정 된 `CustomLibrary/MyTestMethod`합니다.  
   
- 사용자가 다음 CustomLibrary 파트너 hive에서 네임 스페이스를 등록 하 고 원하는 모든 위치 키를 제공 하 고 쿼리를 전달 하는 키워드 MyTestMethod 됩니다.  
+  사용자가 다음 CustomLibrary 파트너 hive에서 네임 스페이스를 등록 하 고 원하는 모든 위치 키를 제공 하 고 쿼리를 전달 하는 키워드 MyTestMethod 됩니다.  
   
- **IDE에서 도구 디버깅 도움말을 사용 하도록 설정**  
+  **IDE에서 도구 디버깅 도움말을 사용 하도록 설정**  
   
- 다음 레지스트리 키와 값을 추가 합니다.  
+  다음 레지스트리 키와 값을 추가 합니다.  
   
- HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic 도움말 키: 소매 가격의 디버그 출력 표시: 예  
+  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic 도움말 키: 소매 가격의 디버그 출력 표시: 예  
   
- IDE에서 도움말 메뉴 항목의 "도움말 컨텍스트 디버그"를 선택 합니다.  
+  IDE에서 도움말 메뉴 항목의 "도움말 컨텍스트 디버그"를 선택 합니다.  
   
- **콘텐츠 메타 데이터**  
+  **콘텐츠 메타 데이터**  
   
- 다음 표에 대괄호 사이 나타나는 모든 문자열을 인식할 수 있는 값으로 대체 되어야 하는 자리 표시자입니다. 예를 들어, \<메타 name="Microsoft.Help.Locale" 콘텐츠 = "[언어 코드]" / >를 같은 "[언어 코드]" 값으로 대체 해야 합니다 "en-우리"입니다.  
+  다음 표에 대괄호 사이 나타나는 모든 문자열을 인식할 수 있는 값으로 대체 되어야 하는 자리 표시자입니다. 예를 들어, \<메타 name="Microsoft.Help.Locale" 콘텐츠 = "[언어 코드]" / >를 같은 "[언어 코드]" 값으로 대체 해야 합니다 "en-우리"입니다.  
   
 |속성 (HTML 표시)|설명|  
 |--------------------------------------|-----------------|  
@@ -377,67 +377,67 @@ some F# code
   
  브랜드 패키지는 도움말 뷰어를 포함 하는 제품으로 설치 됩니다.  Visual Studio 제품:  
   
--   대체 (fallback) 브랜드 패키지 (Branding_\<로캘 >.mshc) 도움말 뷰어 2.1 응용 프로그램 루트에 설치 됩니다 (예: C:\Program Files (x86) \Microsoft Help Viewer\v2.1) 도움말 뷰어 언어 팩을 통해.  이 패키지를 브랜딩 제품 설치 되지 않은 경우에 사용 됩니다 (콘텐츠 없음 설치) 설치 된 브랜드 패키지가 없거나 손상 되었습니다.  Note는 Visual Studio 요소 (예: 로고 및 피드백) 패키지를 브랜딩 하는 앱 루트 대체를 사용할 때 무시 됩니다.  
+- 대체 (fallback) 브랜드 패키지 (Branding_\<로캘 >.mshc) 도움말 뷰어 2.1 응용 프로그램 루트에 설치 됩니다 (예: C:\Program Files (x86) \Microsoft Help Viewer\v2.1) 도움말 뷰어 언어 팩을 통해.  이 패키지를 브랜딩 제품 설치 되지 않은 경우에 사용 됩니다 (콘텐츠 없음 설치) 설치 된 브랜드 패키지가 없거나 손상 되었습니다.  Note는 Visual Studio 요소 (예: 로고 및 피드백) 패키지를 브랜딩 하는 앱 루트 대체를 사용할 때 무시 됩니다.  
   
--   콘텐츠 패키지 서비스에서 Visual Studio 콘텐츠 설치 되 면 (첫 번째 시간 콘텐츠 설치 시나리오)에 대 한 브랜딩 패키지도 설치 됩니다.  브랜드 패키지에 대 한 업데이트 인 경우 다음 콘텐츠 업데이트 또는 추가 패키지 설치 작업을 수행 하는 경우 업데이트가 설치 됩니다.  
+- 콘텐츠 패키지 서비스에서 Visual Studio 콘텐츠 설치 되 면 (첫 번째 시간 콘텐츠 설치 시나리오)에 대 한 브랜딩 패키지도 설치 됩니다.  브랜드 패키지에 대 한 업데이트 인 경우 다음 콘텐츠 업데이트 또는 추가 패키지 설치 작업을 수행 하는 경우 업데이트가 설치 됩니다.  
   
- Microsoft 도움말 뷰어는 항목 메타 데이터에 따라 항목의 브랜딩 지원 합니다.  
+  Microsoft 도움말 뷰어는 항목 메타 데이터에 따라 항목의 브랜딩 지원 합니다.  
   
--   항목 메타 데이터 정의 브랜드 셀프 = true, 그대로 항목 렌더링 (브랜드)에 관해서는 아무 작업도 수행 합니다.  
+- 항목 메타 데이터 정의 브랜드 셀프 = true, 그대로 항목 렌더링 (브랜드)에 관해서는 아무 작업도 수행 합니다.  
   
--   = False, 브랜드 셀프 항목 메타 데이터 정의 TopicVendor 메타 데이터 값과 연결 된 브랜드 패키지를 사용 합니다.  
+- = False, 브랜드 셀프 항목 메타 데이터 정의 TopicVendor 메타 데이터 값과 연결 된 브랜드 패키지를 사용 합니다.  
   
--   콘텐츠 위치 항목 메타 데이터 정의 name="Microsoft.Help.TopicVendor" =\< MSHA 공급 업체에 브랜드 패키지 이름 >, 콘텐츠 값에 정의 된 브랜드 패키지를 사용 합니다.  
+- 콘텐츠 위치 항목 메타 데이터 정의 name="Microsoft.Help.TopicVendor" =\< MSHA 공급 업체에 브랜드 패키지 이름 >, 콘텐츠 값에 정의 된 브랜드 패키지를 사용 합니다.  
   
--   Visual Studio 카탈로그 내에서 우선 순위 응용 프로그램을 브랜딩 하는 패키지는 참고 합니다.  첫 번째 Visual Studio 기본 브랜딩 적용 되 고 그런 다음 항목 메타 데이터에 정의 및 사용 하 여 지원 되는 경우 연결 된 브랜딩 (에 정의 된 설치 msha), 패키지 브랜딩 공급 업체 정의 된 재정의로 적용 됩니다.  
+- Visual Studio 카탈로그 내에서 우선 순위 응용 프로그램을 브랜딩 하는 패키지는 참고 합니다.  첫 번째 Visual Studio 기본 브랜딩 적용 되 고 그런 다음 항목 메타 데이터에 정의 및 사용 하 여 지원 되는 경우 연결 된 브랜딩 (에 정의 된 설치 msha), 패키지 브랜딩 공급 업체 정의 된 재정의로 적용 됩니다.  
   
- 브랜딩 요소는 일반적으로 세 가지 주요 범주로 구분 됩니다.  
+  브랜딩 요소는 일반적으로 세 가지 주요 범주로 구분 됩니다.  
   
--   헤더 요소 (예를 들면 피드백 링크, 조건부 고 지 사항, 로고)  
+- 헤더 요소 (예를 들면 피드백 링크, 조건부 고 지 사항, 로고)  
   
--   동작 (예제 확장/축소 컨트롤 텍스트 요소를 포함 및 코드 조각 요소)을 콘텐츠  
+- 동작 (예제 확장/축소 컨트롤 텍스트 요소를 포함 및 코드 조각 요소)을 콘텐츠  
   
--   바닥글 요소 (예: 저작권)  
+- 바닥글 요소 (예: 저작권)  
   
- 브랜드 요소에 포함 되어 있으므로 간주 하는 항목 (이 사양에 자세히 설명).  
+  브랜드 요소에 포함 되어 있으므로 간주 하는 항목 (이 사양에 자세히 설명).  
   
--   카탈로그/제품 로고 (예제에서는 Visual Studio)  
+- 카탈로그/제품 로고 (예제에서는 Visual Studio)  
   
--   피드백 링크 및 전자 메일 요소  
+- 피드백 링크 및 전자 메일 요소  
   
--   고 지 사항 텍스트  
+- 고 지 사항 텍스트  
   
--   저작권 텍스트  
+- 저작권 텍스트  
   
- Visual Studio 도움말 뷰어가 브랜드 패키지에 지원 파일은 다음과 같습니다.  
+  Visual Studio 도움말 뷰어가 브랜드 패키지에 지원 파일은 다음과 같습니다.  
   
--   그래픽 (로고, 아이콘 등)  
+- 그래픽 (로고, 아이콘 등)  
   
--   Branding.js – 스크립트 파일 지원 콘텐츠 동작  
+- Branding.js – 스크립트 파일 지원 콘텐츠 동작  
   
--   Branding.xml – 문자열에서 일관 되 게 사용 되는 콘텐츠를 카탈로그입니다.  참고: Visual Studio는 branding.xml 지역화 텍스트 요소에 _locID 포함 = "\<고유 값 >"  
+- Branding.xml – 문자열에서 일관 되 게 사용 되는 콘텐츠를 카탈로그입니다.  참고: Visual Studio는 branding.xml 지역화 텍스트 요소에 _locID 포함 = "\<고유 값 >"  
   
--   Branding.css – 프레젠테이션 일관성에 대 한 스타일 정의  
+- Branding.css – 프레젠테이션 일관성에 대 한 스타일 정의  
   
--   Printing.css – 일관성 있는 인쇄 프레젠테이션에 대 한 스타일 정의  
+- Printing.css – 일관성 있는 인쇄 프레젠테이션에 대 한 스타일 정의  
   
- 위에서 언급 했 듯이 브랜드 패키지는 항목으로 연결:  
+  위에서 언급 했 듯이 브랜드 패키지는 항목으로 연결:  
   
--   때 SelfBranded = false 메타 데이터에 정의 된, 패키지를 브랜딩 하는 카탈로그를 상속 하는 항목  
+- 때 SelfBranded = false 메타 데이터에 정의 된, 패키지를 브랜딩 하는 카탈로그를 상속 하는 항목  
   
--   때나 SelfBranded = false, 있습니다 고유 브랜딩 패키지 정의 됩니다는 MSHA에 사용할 수 있는 콘텐츠를 설치 하는 경우  
+- 때나 SelfBranded = false, 있습니다 고유 브랜딩 패키지 정의 됩니다는 MSHA에 사용할 수 있는 콘텐츠를 설치 하는 경우  
   
- VSPs 브랜딩 사용자 지정 패키지를 구현에 대 한 (VSP 콘텐츠를 SelfBranded = True)를 계속 하는 한 가지 방법은 (도움말 뷰어를 사용 하 여 설치)를 대체 (fallback) 브랜드 패키지를 사용 하 여 시작 하 고 적절 하 게 파일의 이름을 변경 하는 것입니다.  Branding_\<로캘 >.mshc 파일이.mshc로 변경 하는 파일 확장명을 가진 zip 파일, 따라서 단순히을.zip.mshc에서 확장을 변경 하 고 압축을 풉니다.  적절 하 게 수정 하 고 브랜드 패키지 요소에 대 한 아래를 참조 하세요 (예를 들어 VSP 로고 및 Branding.xml 파일에서 로고에 대 한 참조에 로고를 변경, VSP 세부 사항 등 당 Branding.xml 업데이트) 합니다.  
+  VSPs 브랜딩 사용자 지정 패키지를 구현에 대 한 (VSP 콘텐츠를 SelfBranded = True)를 계속 하는 한 가지 방법은 (도움말 뷰어를 사용 하 여 설치)를 대체 (fallback) 브랜드 패키지를 사용 하 여 시작 하 고 적절 하 게 파일의 이름을 변경 하는 것입니다.  Branding_\<로캘 >.mshc 파일이.mshc로 변경 하는 파일 확장명을 가진 zip 파일, 따라서 단순히을.zip.mshc에서 확장을 변경 하 고 압축을 풉니다.  적절 하 게 수정 하 고 브랜드 패키지 요소에 대 한 아래를 참조 하세요 (예를 들어 VSP 로고 및 Branding.xml 파일에서 로고에 대 한 참조에 로고를 변경, VSP 세부 사항 등 당 Branding.xml 업데이트) 합니다.  
   
- 모든 수정 작업을 완료 하는 경우 원하는 브랜딩 요소를 포함 한 zip 파일 만들고.mshc 확장이 변경 합니다.  
+  모든 수정 작업을 완료 하는 경우 원하는 브랜딩 요소를 포함 한 zip 파일 만들고.mshc 확장이 변경 합니다.  
   
- 브랜딩 사용자 지정 패키지에 연결 하려면 (항목 포함) 콘텐츠 mshc 함께 브랜딩 mshc 파일에 대 한 참조를 포함 하는 MSHA를 만듭니다.  기본 MSHA를 만드는 방법에 대 한 "MSHA" 아래를 참조 하세요.  
+  브랜딩 사용자 지정 패키지에 연결 하려면 (항목 포함) 콘텐츠 mshc 함께 브랜딩 mshc 파일에 대 한 참조를 포함 하는 MSHA를 만듭니다.  기본 MSHA를 만드는 방법에 대 한 "MSHA" 아래를 참조 하세요.  
   
- Branding.xml 파일에 일관 되 게 항목을 포함 하는 경우 항목에서 특정 항목을 렌더링 하는 데 사용 하는 목록 요소가 \<메타 name="Microsoft.Help.SelfBranded" 콘텐츠 = "false" / >입니다.  Visual Studio에 대 한 목록은 Branding.xml 파일의 요소는 아래 나열 됩니다.  이 목록 템플릿으로 사용할 ISO 셸 사용자로 서 자신의 제품 브랜딩 요구에 맞게 이러한 요소 (예: 로고, 피드백 및 저작권)를 수정 하도록 되어 note 합니다.  
+  Branding.xml 파일에 일관 되 게 항목을 포함 하는 경우 항목에서 특정 항목을 렌더링 하는 데 사용 하는 목록 요소가 \<메타 name="Microsoft.Help.SelfBranded" 콘텐츠 = "false" / >입니다.  Visual Studio에 대 한 목록은 Branding.xml 파일의 요소는 아래 나열 됩니다.  이 목록 템플릿으로 사용할 ISO 셸 사용자로 서 자신의 제품 브랜딩 요구에 맞게 이러한 요소 (예: 로고, 피드백 및 저작권)를 수정 하도록 되어 note 합니다.  
   
- 참고: "{n}"에서 설명 하는 변수 코드 종속성이 있는 – 제거 하거나 이러한 값을 변경 하면 오류 및 응용 프로그램 작동이 중단 됩니다. 지역화 식별자 (예제 _locID="codesnippet.n")는 Visual Studio 브랜드 패키지에 포함 됩니다.  
+  참고: "{n}"에서 설명 하는 변수 코드 종속성이 있는 – 제거 하거나 이러한 값을 변경 하면 오류 및 응용 프로그램 작동이 중단 됩니다. 지역화 식별자 (예제 _locID="codesnippet.n")는 Visual Studio 브랜드 패키지에 포함 됩니다.  
   
- **Branding.xml**  
+  **Branding.xml**  
   
 |||  
 |-|-|  
@@ -583,15 +583,15 @@ some F# code
   
  Visual Studio 도움말 뷰어 브랜드 패키지는 일관 된 Visual Studio 도움말 콘텐츠 표시를 지원 하기 위해 두 css 파일이 포함 되어 있습니다.  
   
--   위치를 렌더링 하는 것에 대 한 css 요소를 포함 하는 Branding.css – SelfBranded = false  
+- 위치를 렌더링 하는 것에 대 한 css 요소를 포함 하는 Branding.css – SelfBranded = false  
   
--   위치를 렌더링 하는 것에 대 한 css 요소를 포함 하는 Printer.css – SelfBranded = false  
+- 위치를 렌더링 하는 것에 대 한 css 요소를 포함 하는 Printer.css – SelfBranded = false  
   
- Branding.css 파일에 Visual Studio 항목 표시에 대 한 정의가 포함 되어 있습니다 (의 branding.css는 Branding_에 포함 되도록 하는 것이 점은\<로캘 >.mshc 패키지 서비스에서 변경 될 수 있습니다).  
+  Branding.css 파일에 Visual Studio 항목 표시에 대 한 정의가 포함 되어 있습니다 (의 branding.css는 Branding_에 포함 되도록 하는 것이 점은\<로캘 >.mshc 패키지 서비스에서 변경 될 수 있습니다).  
   
- **그래픽 파일**  
+  **그래픽 파일**  
   
- Visual Studio 콘텐츠는 다른 그래픽 뿐 아니라 Visual Studio 로고를 표시합니다.  Visual Studio 도움말 뷰어가 브랜드 패키지에 그래픽 파일의 전체 목록은 다음과 같습니다.  
+  Visual Studio 콘텐츠는 다른 그래픽 뿐 아니라 Visual Studio 로고를 표시합니다.  Visual Studio 도움말 뷰어가 브랜드 패키지에 그래픽 파일의 전체 목록은 다음과 같습니다.  
   
 ||||  
 |-|-|-|  
@@ -643,15 +643,15 @@ some F# code
   
 ```  
   
-1.  "C:\SampleContent"와 같은 로컬 폴더를 만듭니다  
+1. "C:\SampleContent"와 같은 로컬 폴더를 만듭니다  
   
-2.  예를 들어 항목을 포함 하도록 MSHC 파일 사용 합니다.  MSHC를.zip에서 변경 된 파일 확장명을 가진 zip입니다. MSHC 합니다.  
+2. 예를 들어 항목을 포함 하도록 MSHC 파일 사용 합니다.  MSHC를.zip에서 변경 된 파일 확장명을 가진 zip입니다. MSHC 합니다.  
   
-3.  만들기를 텍스트 파일로 HelpContentSetup.msha 아래 (메모장 파일을 만드는 데 사용 된) 위의 기록 된 폴더에 저장 하 고 (1 단계 참조).  
+3. 만들기를 텍스트 파일로 HelpContentSetup.msha 아래 (메모장 파일을 만드는 데 사용 된) 위의 기록 된 폴더에 저장 하 고 (1 단계 참조).  
   
- "브랜딩" 존재 하 고 고유한 클래스입니다. 설치 된 콘텐츠는 브랜딩, 있고 콘텐츠 동작을 MSHCs에 포함 된 브랜드 패키지에 포함 된 적절 한 지원 요소를 갖습니다 있도록 브랜드 mshc이이 입문서에 포함 됩니다. 이렇게 하지 않으면 시스템은 지원 되지 않는 항목은 복사한 (설치)의 일부에 대 한 콘텐츠 때 오류가 발생 합니다.  
+   "브랜딩" 존재 하 고 고유한 클래스입니다. 설치 된 콘텐츠는 브랜딩, 있고 콘텐츠 동작을 MSHCs에 포함 된 브랜드 패키지에 포함 된 적절 한 지원 요소를 갖습니다 있도록 브랜드 mshc이이 입문서에 포함 됩니다. 이렇게 하지 않으면 시스템은 지원 되지 않는 항목은 복사한 (설치)의 일부에 대 한 콘텐츠 때 오류가 발생 합니다.  
   
- 패키지를 브랜딩 하는 Visual Studio를 가져오려면 C:\Program Files (x86) \Microsoft Help Viewer\v2.1\ Branding_en US.mshc 파일 작업 폴더에 복사 합니다.  
+   패키지를 브랜딩 하는 Visual Studio를 가져오려면 C:\Program Files (x86) \Microsoft Help Viewer\v2.1\ Branding_en US.mshc 파일 작업 폴더에 복사 합니다.  
   
 ```html  
 <html>  
@@ -697,107 +697,107 @@ some F# code
   
  **요구 사항**  
   
-1.  [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]  
+1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]  
   
-2.  [Visual Studio 2013 Shell 재배포 가능 패키지를 격리](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)  
+2. [Visual Studio 2013 Shell 재배포 가능 패키지를 격리](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)  
   
- **개요**  
+   **개요**  
   
- 합니다 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Shell의 버전이 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 응용 프로그램을 사용할 수 있는 IDE. 이러한 응용 프로그램 격리 셸 확장 사용자가 만든 함께 포함 합니다. 에 포함 된 격리 된 셸 프로젝트 템플릿을 사용 하 여는 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] SDK extensions를 빌드할 수 있습니다.  
+   합니다 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Shell의 버전이 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 응용 프로그램을 사용할 수 있는 IDE. 이러한 응용 프로그램 격리 셸 확장 사용자가 만든 함께 포함 합니다. 에 포함 된 격리 된 셸 프로젝트 템플릿을 사용 하 여는 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] SDK extensions를 빌드할 수 있습니다.  
   
- 격리 셸 기반 응용 프로그램 및 해당 도움말을 만들기 위한 기본 단계:  
+   격리 셸 기반 응용 프로그램 및 해당 도움말을 만들기 위한 기본 단계:  
   
-1.  가져오기는 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] ISO Shell 재배포 가능 패키지 (Microsoft 다운로드).  
+3. 가져오기는 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] ISO Shell 재배포 가능 패키지 (Microsoft 다운로드).  
   
-2.  Visual Studio에서 기반으로 하는 Isolated Shell을 예를 들어 도움말 확장,이 연습의 뒷부분에서 설명 하는 Contoso 지원 확장을 만듭니다.  
+4. Visual Studio에서 기반으로 하는 Isolated Shell을 예를 들어 도움말 확장,이 연습의 뒷부분에서 설명 하는 Contoso 지원 확장을 만듭니다.  
   
-3.  확장 및 ISO 셸을 MSI (응용 프로그램 설치) 배포에 재배포 가능 패키지를 래핑하십시오. 이 연습에서는 설치 단계를 포함 하지 않습니다.  
+5. 확장 및 ISO 셸을 MSI (응용 프로그램 설치) 배포에 재배포 가능 패키지를 래핑하십시오. 이 연습에서는 설치 단계를 포함 하지 않습니다.  
   
- Visual Studio 콘텐츠 저장소를 만듭니다. Integrated Shell 시나리오의 경우 제품 카탈로그 이름을 Visual Studio12 다음과 같이 변경 합니다.  
+   Visual Studio 콘텐츠 저장소를 만듭니다. Integrated Shell 시나리오의 경우 제품 카탈로그 이름을 Visual Studio12 다음과 같이 변경 합니다.  
   
--   C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 폴더를 만듭니다.  
+- C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 폴더를 만듭니다.  
   
--   CatalogType.xml 라는 파일을 만들고 폴더에 추가 합니다. 파일에 다음 코드 줄은 있어야 합니다.  
+- CatalogType.xml 라는 파일을 만들고 폴더에 추가 합니다. 파일에 다음 코드 줄은 있어야 합니다.  
   
-    ```  
-    <?xml version="1.0" encoding="UTF-8"?>  
-    <catalogType>UserManaged</catalogType>  
-    ```  
+  ```  
+  <?xml version="1.0" encoding="UTF-8"?>  
+  <catalogType>UserManaged</catalogType>  
+  ```  
   
- 레지스트리에서 콘텐츠 저장소를 정의 합니다. Integrated Shell에 대 한 VisualStudio12 제품 카탈로그 이름으로 변경 합니다.  
+  레지스트리에서 콘텐츠 저장소를 정의 합니다. Integrated Shell에 대 한 VisualStudio12 제품 카탈로그 이름으로 변경 합니다.  
   
--   HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
+- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
   
-     키: LocationPath 문자열 값: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\  
+   키: LocationPath 문자열 값: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\  
   
--   HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US  
+- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US  
   
-     키: CatalogName 문자열 값: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 설명서  
+   키: CatalogName 문자열 값: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 설명서  
   
- **프로젝트 만들기**  
+  **프로젝트 만들기**  
   
- 격리 셸 확장을 만들려면:  
+  격리 셸 확장을 만들려면:  
   
-1.  Visual Studio에서 아래의 **파일**, 선택 **새 프로젝트**아래에 있는 **기타 프로젝트 형식** 선택 **확장성**를 선택한 다음  **Visual Studio Shell 격리**합니다. 프로젝트 이름을 `ContosoHelpShell`) Visual Studio Isolated Shell 템플릿을 기반으로 하는 확장성 프로젝트를 만듭니다.  
+1. Visual Studio에서 아래의 **파일**, 선택 **새 프로젝트**아래에 있는 **기타 프로젝트 형식** 선택 **확장성**를 선택한 다음  **Visual Studio Shell 격리**합니다. 프로젝트 이름을 `ContosoHelpShell`) Visual Studio Isolated Shell 템플릿을 기반으로 하는 확장성 프로젝트를 만듭니다.  
   
-2.  솔루션 탐색기에서 리소스 파일 폴더에서 ContosoHelpShellUI 프로젝트에서 ApplicationCommands.vsct를 엽니다. 이 줄 ("No_Help" 검색) 주석 처리 되어 있는지 확인 합니다. `<!-- <define name=“No_HelpMenuCommands”/> -->`  
+2. 솔루션 탐색기에서 리소스 파일 폴더에서 ContosoHelpShellUI 프로젝트에서 ApplicationCommands.vsct를 엽니다. 이 줄 ("No_Help" 검색) 주석 처리 되어 있는지 확인 합니다. `<!-- <define name=“No_HelpMenuCommands”/> -->`  
   
-3.  컴파일하고 실행 하려면 F5 키 선택 **디버그**합니다. 격리 된 셸 IDE의 실험적 인스턴스를 선택 합니다 **도움말** 메뉴. 있는지 확인 합니다 **도움말 보기**를 **콘텐츠 추가 및 제거 하는 데 도움이**, 및 **도움말 기본 설정 지정** 명령을 표시 합니다.  
+3. 컴파일하고 실행 하려면 F5 키 선택 **디버그**합니다. 격리 된 셸 IDE의 실험적 인스턴스를 선택 합니다 **도움말** 메뉴. 있는지 확인 합니다 **도움말 보기**를 **콘텐츠 추가 및 제거 하는 데 도움이**, 및 **도움말 기본 설정 지정** 명령을 표시 합니다.  
   
-4.  솔루션 탐색기에서 셸 사용자 지정 폴더에서 ContosHelpShell 프로젝트에서 ContosoHelpShell.pkgdef를 엽니다. Contoso 도움말 카탈로그를 정의 하려면 다음 줄을 추가 합니다.  
+4. 솔루션 탐색기에서 셸 사용자 지정 폴더에서 ContosHelpShell 프로젝트에서 ContosoHelpShell.pkgdef를 엽니다. Contoso 도움말 카탈로그를 정의 하려면 다음 줄을 추가 합니다.  
   
-    ```  
-     [$RootKey$\Help]  
-    "Product"="Contoso"  
-    "Catalog"="Contoso"  
-    “Version"="100"  
-    "BrandingPackage"="ContosoBrandingPackage.mshc"  
-    ```  
+   ```  
+    [$RootKey$\Help]  
+   "Product"="Contoso"  
+   "Catalog"="Contoso"  
+   “Version"="100"  
+   "BrandingPackage"="ContosoBrandingPackage.mshc"  
+   ```  
   
-5.  솔루션 탐색기에서 셸 사용자 지정 폴더에서 ContosHelpShell 프로젝트에서 ContosoHelpShell.Application.pkgdef를 엽니다. F1 도움말을 사용 하려면 다음 줄을 추가 합니다.  
+5. 솔루션 탐색기에서 셸 사용자 지정 폴더에서 ContosHelpShell 프로젝트에서 ContosoHelpShell.Application.pkgdef를 엽니다. F1 도움말을 사용 하려면 다음 줄을 추가 합니다.  
   
-    ```  
-    // F1 Help Provider  
+   ```  
+   // F1 Help Provider  
   
-    [$RootKey$\HelpProviders\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]  
-    "Name"="13407"  
-    "Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"  
-    @="Help3 Provider"  
-    [$RootKey$\HelpProviders]  
-    @="{C99BDC23-FF29-46bf-9658-ADD634CCAED8}"  
-    [$RootKey$\Services\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]  
-    "Name"="Help3 Provider"  
-    @="{4A791146-19E4-11D3-B86B-00C04F79F802}"  
-    ```  
+   [$RootKey$\HelpProviders\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]  
+   "Name"="13407"  
+   "Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"  
+   @="Help3 Provider"  
+   [$RootKey$\HelpProviders]  
+   @="{C99BDC23-FF29-46bf-9658-ADD634CCAED8}"  
+   [$RootKey$\Services\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]  
+   "Name"="Help3 Provider"  
+   @="{4A791146-19E4-11D3-B86B-00C04F79F802}"  
+   ```  
   
-6.  솔루션 탐색기에서 상황에 맞는 메뉴 ContosoHelpShell 솔루션을 선택 합니다 **속성** 메뉴 항목입니다. 아래 **구성 속성**를 선택 **Configuration Manager**합니다. 에 **구성** 열에서 모든 "Debug" 값 "릴리스"로 변경 합니다.  
+6. 솔루션 탐색기에서 상황에 맞는 메뉴 ContosoHelpShell 솔루션을 선택 합니다 **속성** 메뉴 항목입니다. 아래 **구성 속성**를 선택 **Configuration Manager**합니다. 에 **구성** 열에서 모든 "Debug" 값 "릴리스"로 변경 합니다.  
   
-7.  솔루션을 빌드합니다. 다음 섹션에서 사용 되는 릴리스 폴더에 파일의 집합을 만듭니다.  
+7. 솔루션을 빌드합니다. 다음 섹션에서 사용 되는 릴리스 폴더에 파일의 집합을 만듭니다.  
   
- 배포 된 것 처럼이 테스트:  
+   배포 된 것 처럼이 테스트:  
   
-1.  컴퓨터에 다운로드 한 ISO 셸 (위)를 설치 하는 Contoso를 배포 하는 합니다.  
+8. 컴퓨터에 다운로드 한 ISO 셸 (위)를 설치 하는 Contoso를 배포 하는 합니다.  
   
-2.  폴더를 만듭니다 \\\Program Files (x86)\\, 하 고 이름을 `Contoso`입니다.  
+9. 폴더를 만듭니다 \\\Program Files (x86)\\, 하 고 이름을 `Contoso`입니다.  
   
-3.  ContosoHelpShell 릴리스 폴더에서 내용을 복사 \\\Program Files (x86) \Contoso\ 폴더입니다.  
+10. ContosoHelpShell 릴리스 폴더에서 내용을 복사 \\\Program Files (x86) \Contoso\ 폴더입니다.  
   
-4.  선택 하 여 레지스트리 편집기를 시작 **실행** 에 **시작** 메뉴 및 입력 `Regedit`합니다. 레지스트리 편집기에서 선택 **파일**를 차례로 **가져오기**합니다. ContosoHelpShell 프로젝트 폴더로 이동 합니다. ContosoHelpShell.reg ContosoHelpShell 하위 폴더를 선택 합니다.  
+11. 선택 하 여 레지스트리 편집기를 시작 **실행** 에 **시작** 메뉴 및 입력 `Regedit`합니다. 레지스트리 편집기에서 선택 **파일**를 차례로 **가져오기**합니다. ContosoHelpShell 프로젝트 폴더로 이동 합니다. ContosoHelpShell.reg ContosoHelpShell 하위 폴더를 선택 합니다.  
   
-5.  콘텐츠 저장소를 만듭니다.  
+12. 콘텐츠 저장소를 만듭니다.  
   
      ISO-셸용 Contoso 콘텐츠 저장소 C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\ContosoDev12 만들기  
   
      에 대 한 [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Integrated Shell C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 폴더 만들기  
   
-6.  CatalogType.xml 만들고 포함 하는 콘텐츠 저장소 (이전 단계)를 추가 합니다.  
+13. CatalogType.xml 만들고 포함 하는 콘텐츠 저장소 (이전 단계)를 추가 합니다.  
   
     ```  
     <?xml version="1.0" encoding="UTF-8"?>  
     <catalogType>UserManaged</catalogType>  
     ```  
   
-7.  다음 레지스트리 키를 추가 합니다.  
+14. 다음 레지스트리 키를 추가 합니다.  
   
      HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12Key LocationPath 문자열 값입니다.:  
   
@@ -811,17 +811,17 @@ some F# code
   
      키: CatalogName 문자열 값: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 설명서. ISO 셸에 대 한 카탈로그의 이름입니다.  
   
-8.  (택시 및 MSHC MSHA) 콘텐츠를 로컬 폴더로 복사 합니다.  
+15. (택시 및 MSHC MSHA) 콘텐츠를 로컬 폴더로 복사 합니다.  
   
-9. Integrated Shell 명령줄 예 콘텐츠 저장소를 테스트 합니다. ISO 셸에 대 한 제품에 맞게 적절히 카탈로그 및 launchingApp 값을 변경 합니다.  
+16. Integrated Shell 명령줄 예 콘텐츠 저장소를 테스트 합니다. ISO 셸에 대 한 제품에 맞게 적절히 카탈로그 및 launchingApp 값을 변경 합니다.  
   
-     "C:\Program 파일 (x86) \Microsoft Help Viewer\v2.1\HlpViewer.exe" /catalogName VisualStudio12 /helpQuery 메서드 = "페이지 및 id ContosoTopic0 =" Microsoft visual Studio 12.0 /launchingApp  
+      "C:\Program 파일 (x86) \Microsoft Help Viewer\v2.1\HlpViewer.exe" /catalogName VisualStudio12 /helpQuery 메서드 = "페이지 및 id ContosoTopic0 =" Microsoft visual Studio 12.0 /launchingApp  
   
-10. (Contoso 앱 루트)에서 Contoso 응용 프로그램을 시작 합니다. ISO 셸 내에서 선택는 **도움말** 메뉴 항목을 변경 합니다 **도움말 기본 설정 지정** 에 **사용 하 여 로컬 도움말**합니다.  
+17. (Contoso 앱 루트)에서 Contoso 응용 프로그램을 시작 합니다. ISO 셸 내에서 선택는 **도움말** 메뉴 항목을 변경 합니다 **도움말 기본 설정 지정** 에 **사용 하 여 로컬 도움말**합니다.  
   
-11. 셸 내에서 선택 합니다 **도움말** 메뉴 항목을 한 다음 **도움말 보기**합니다. 로컬 도움말 뷰어를 시작 해야 합니다. **콘텐츠 관리** 탭을 선택합니다. 아래 **설치 원본**를 선택 합니다 **디스크** 옵션 단추입니다. 선택 된 **...**  단추 및 (위의 단계에서 로컬 폴더로 복사) 하는 Contoso 콘텐츠가 포함 된 로컬 폴더로 이동 합니다. HelpContentSetup.msha를 선택 합니다. Contoso는 이제 책 선택에서 책으로 나타납니다. 선택 **추가**를 선택 합니다 **업데이트** 단추 (오른쪽 아래 모서리).  
+18. 셸 내에서 선택 합니다 **도움말** 메뉴 항목을 한 다음 **도움말 보기**합니다. 로컬 도움말 뷰어를 시작 해야 합니다. **콘텐츠 관리** 탭을 선택합니다. 아래 **설치 원본**를 선택 합니다 **디스크** 옵션 단추입니다. 선택 된 **...**  단추 및 (위의 단계에서 로컬 폴더로 복사) 하는 Contoso 콘텐츠가 포함 된 로컬 폴더로 이동 합니다. HelpContentSetup.msha를 선택 합니다. Contoso는 이제 책 선택에서 책으로 나타납니다. 선택 **추가**를 선택 합니다 **업데이트** 단추 (오른쪽 아래 모서리).  
   
-12. Contoso IDE 내에서 F1 기능을 테스트 하 고 F1 키를 선택 합니다.  
+19. Contoso IDE 내에서 F1 기능을 테스트 하 고 F1 키를 선택 합니다.  
   
 ### <a name="additional-resources"></a>추가 리소스  
  런타임 API를 참조 하세요 [Windows API 도움말](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx)합니다.  

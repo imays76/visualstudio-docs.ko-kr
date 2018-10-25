@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13db7f4e4f1676f46a8b0170ffeadd5cd9eb31b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817446"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>플랫폼 간 모바일 개발용 Visual C++ 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,18 +37,18 @@ ms.locfileid: "49203868"
   
 ##  <a name="Requirements"></a> 요구 사항  
   
--   설치 요구 사항은 [Visual Studio 2015 시스템 요구 사항](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)을 참조하세요.  
+- 설치 요구 사항은 [Visual Studio 2015 시스템 요구 사항](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)을 참조하세요.  
   
-    > [!IMPORTANT]
-    >  Windows 7 또는 Windows Server 2008 R2를 사용하는 경우 클래식 Windows 응용 프로그램용 코드, Android Native Activity 앱 및 라이브러리, iOS용 앱 및 코드 라이브러리를 개발할 수 있지만 Windows 스토어 또는 유니버설 Windows 앱은 개발할 수 없습니다.  
+  > [!IMPORTANT]
+  >  Windows 7 또는 Windows Server 2008 R2를 사용하는 경우 클래식 Windows 응용 프로그램용 코드, Android Native Activity 앱 및 라이브러리, iOS용 앱 및 코드 라이브러리를 개발할 수 있지만 Windows 스토어 또는 유니버설 Windows 앱은 개발할 수 없습니다.  
   
- 특정 장치 플랫폼용 앱을 빌드하려는 경우에는 다음의 몇 가지 요구 사항이 추가로 적용됩니다.  
+  특정 장치 플랫폼용 앱을 빌드하려는 경우에는 다음의 몇 가지 요구 사항이 추가로 적용됩니다.  
   
--   Windows Phone 에뮬레이터 및 Android용 Microsoft Visual Studio 에뮬레이터를 사용하려면 Hyper-V를 실행할 수 있는 컴퓨터가 필요합니다. 에뮬레이터를 설치하고 실행하려면 먼저 Windows에서 Hyper-V 기능을 사용하도록 설정해야 합니다. 자세한 내용은 에뮬레이터의 [시스템 요구 사항](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)을 참조하세요.  
+- Windows Phone 에뮬레이터 및 Android용 Microsoft Visual Studio 에뮬레이터를 사용하려면 Hyper-V를 실행할 수 있는 컴퓨터가 필요합니다. 에뮬레이터를 설치하고 실행하려면 먼저 Windows에서 Hyper-V 기능을 사용하도록 설정해야 합니다. 자세한 내용은 에뮬레이터의 [시스템 요구 사항](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)을 참조하세요.  
   
--   Android SDK와 함께 제공되는 x86 Android 에뮬레이터는 Intel HAXM 드라이버를 실행할 수 있는 컴퓨터에서 가장 잘 작동합니다. 이 드라이버를 사용하려면 VT-x 및 XD 비트(Execute Disable Bit)를 지원하는 Intel x64 프로세서가 필요합니다. 자세한 내용은 [Intel ® Hardware Accelerated Execution Manager 설치 지침 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)(영문)를 참조하세요.  
+- Android SDK와 함께 제공되는 x86 Android 에뮬레이터는 Intel HAXM 드라이버를 실행할 수 있는 컴퓨터에서 가장 잘 작동합니다. 이 드라이버를 사용하려면 VT-x 및 XD 비트(Execute Disable Bit)를 지원하는 Intel x64 프로세서가 필요합니다. 자세한 내용은 [Intel ® Hardware Accelerated Execution Manager 설치 지침 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)(영문)를 참조하세요.  
   
--   iOS용 코드를 빌드하려면 Apple ID, iOS 개발자 프로그램 계정 및 OS X Mavericks 이상 버전에서 [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) 이상을 실행할 수 있는 Mac 컴퓨터가 필요합니다. 자세한 설치 단계는 [Install tools for iOS](#InstallForiOS)를 참조하세요.  
+- iOS용 코드를 빌드하려면 Apple ID, iOS 개발자 프로그램 계정 및 OS X Mavericks 이상 버전에서 [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) 이상을 실행할 수 있는 Mac 컴퓨터가 필요합니다. 자세한 설치 단계는 [Install tools for iOS](#InstallForiOS)를 참조하세요.  
   
 ##  <a name="GetTheTools"></a> 도구 다운로드  
  플랫폼 간 모바일 개발용 Visual C++는 Visual Studio Community, Professional 및 Enterprise 버전에 포함된 설치 가능한 구성 요소입니다. Visual Studio를 다운로드하려면 [Visual Studio 2015 Downloads](http://go.microsoft.com/fwlink/p/?linkid=517106)(Visual Studio 2015 다운로드) 페이지로 이동하여 Visual Studio 2015 업데이트 2 이상을 다운로드하세요.  
@@ -101,31 +101,31 @@ ms.locfileid: "49203868"
   
  다음 정보에 따라 아래 링크를 통해 종속성을 수동으로 설치할 수 있습니다.  
   
--   [Java SE 개발 키트](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+- [Java SE 개발 키트](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
-     기본적으로 설치 관리자는 Java 도구를 C:\Program Files (x86)\Java에 넣습니다.  
+   기본적으로 설치 관리자는 Java 도구를 C:\Program Files (x86)\Java에 넣습니다.  
   
--   [Android SDK](https://developer.android.com/sdk/index.html#Other)  
+- [Android SDK](https://developer.android.com/sdk/index.html#Other)  
   
-     설치 중에 권장 옵션으로 API를 업데이트합니다. 최소한 Android 5.0 Lollipop용 SDK(API 수준 21)를 설치해야 합니다. 기본적으로 설치 관리자는 Android SDK를 C:\Program Files (x86)\Android\android-sdk에 넣습니다.  
+   설치 중에 권장 옵션으로 API를 업데이트합니다. 최소한 Android 5.0 Lollipop용 SDK(API 수준 21)를 설치해야 합니다. 기본적으로 설치 관리자는 Android SDK를 C:\Program Files (x86)\Android\android-sdk에 넣습니다.  
   
-     Android SDK 디렉터리에서 SDK Manager 앱을 다시 실행하여 SDK를 업데이트하고 선택적 도구 및 추가 API 수준을 설치할 수 있습니다. **관리자 권한으로 실행** 을 사용하여 SDK Manager 앱을 실행하지 않으면 업데이트가 설치되지 않을 수도 있습니다. Android 앱을 빌드하는 데 문제가 있는 경우 SDK Manager에서 설치된 SDK에 대한 업데이트를 확인합니다.  
+   Android SDK 디렉터리에서 SDK Manager 앱을 다시 실행하여 SDK를 업데이트하고 선택적 도구 및 추가 API 수준을 설치할 수 있습니다. **관리자 권한으로 실행** 을 사용하여 SDK Manager 앱을 실행하지 않으면 업데이트가 설치되지 않을 수도 있습니다. Android 앱을 빌드하는 데 문제가 있는 경우 SDK Manager에서 설치된 SDK에 대한 업데이트를 확인합니다.  
   
-     Android SDK와 함께 제공되는 Android 에뮬레이터 중 일부를 사용하려면 선택적 Intel HAXM 드라이버를 설치해야 합니다. Intel HAXM 드라이버를 성공적으로 설치하려면 Windows에서 Hyper-V 기능을 제거해야 할 수 있습니다. Windows Phone 에뮬레이터 및 Android용 Microsoft Visual Studio 에뮬레이터를 사용하려면 Hyper-V 기능을 복원해야 합니다.  
+   Android SDK와 함께 제공되는 Android 에뮬레이터 중 일부를 사용하려면 선택적 Intel HAXM 드라이버를 설치해야 합니다. Intel HAXM 드라이버를 성공적으로 설치하려면 Windows에서 Hyper-V 기능을 제거해야 할 수 있습니다. Windows Phone 에뮬레이터 및 Android용 Microsoft Visual Studio 에뮬레이터를 사용하려면 Hyper-V 기능을 복원해야 합니다.  
   
--   [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
-     기본적으로 설치 관리자는 C:\ProgramData\Microsoft\AndroidNDK에 Android NDK를 저장합니다. Android NDK를 다시 다운로드 및 설치하여 NDK 설치를 업데이트할 수 있습니다.  
+   기본적으로 설치 관리자는 C:\ProgramData\Microsoft\AndroidNDK에 Android NDK를 저장합니다. Android NDK를 다시 다운로드 및 설치하여 NDK 설치를 업데이트할 수 있습니다.  
   
--   [Apache Ant](http://ant.apache.org/bindownload.cgi)  
+- [Apache Ant](http://ant.apache.org/bindownload.cgi)  
   
-     기본적으로 설치 관리자는 Apache Ant를 C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps에 넣습니다.  
+   기본적으로 설치 관리자는 Apache Ant를 C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps에 넣습니다.  
   
--   [Microsoft Visual Studio Emulator for Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Microsoft Visual Studio Emulator for Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
   
-     Visual Studio 갤러리에서 Android용 Microsoft Visual Studio 에뮬레이터를 설치 및 업데이트할 수 있습니다.  
+   Visual Studio 갤러리에서 Android용 Microsoft Visual Studio 에뮬레이터를 설치 및 업데이트할 수 있습니다.  
   
- 대부분의 경우 Visual Studio는 설치된 타사 소프트웨어의 구성을 검색하고 내부 환경 변수에서 설치 경로를 유지 관리할 수 있습니다. Visual Studio IDE에서 이러한 플랫폼 간 개발 도구의 기본 경로를 재정의할 수 있습니다.  
+  대부분의 경우 Visual Studio는 설치된 타사 소프트웨어의 구성을 검색하고 내부 환경 변수에서 설치 경로를 유지 관리할 수 있습니다. Visual Studio IDE에서 이러한 플랫폼 간 개발 도구의 기본 경로를 재정의할 수 있습니다.  
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>타사 도구에 대한 경로를 설정하려면  
   

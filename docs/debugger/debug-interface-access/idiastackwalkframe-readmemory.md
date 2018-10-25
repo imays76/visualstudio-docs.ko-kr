@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d23b46f0f487bddc678814e41b5cb96331ff46c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 163895ecf16849e122c5ede042b1bc4842c2a5e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818317"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
 이미지에서 메모리를 읽습니다.  
@@ -41,19 +41,19 @@ HRESULT readMemory (
  [in] 중 하나는 [MemoryTypeEnum 열거형](../../debugger/debug-interface-access/memorytypeenum.md) 액세스 하는 메모리의 종류를 지정 하는 열거형 값입니다.  
   
  `va`  
- [in] 가상 주소 이미지 읽기를 시작할 위치입니다.  
+ [in] 읽기를 시작할 이미지의 가상 주소 위치입니다.  
   
  `cbData`  
- [in] 데이터 버퍼의 바이트의 크기입니다.  
+ [in] 바이트의 데이터 버퍼의 크기입니다.  
   
  `pcbData`  
- [out] 반환 된 바이트 수를 반환 합니다. 경우 `data` 은 `NULL`, 다음 `pcbData` 사용할 수 있는 데이터의 바이트의 총 수를 포함 합니다.  
+ [out] 반환 된 바이트 수를 반환 합니다. 하는 경우 `data` 됩니다 `NULL`, 다음 `pcbData` 사용할 수 있는 데이터의 바이트의 총 수를 포함 합니다.  
   
  `data`  
  [out] 지정된 된 위치에서 데이터를 채울 수 있는 버퍼입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813988"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
 
@@ -31,7 +31,7 @@ ms.locfileid: "39380807"
 다음 표에서는 테스트 컨트롤러와 테스트 에이전트를 배포하기 위한 권장 하드웨어 요구 사항을 보여 줍니다.
 
 |**구성**|**구성 요소**|**CPU**|**HD**|**메모리**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |가상 사용자 수 500명 미만|테스트 에이전트|2.6GHz|10GB|2GB|
 |가상 사용자 수 1000명 미만|테스트 에이전트|이중 프로세서 2.6GHz|10 GB|2 GB|
 |N x 가상 사용자 수 1000명|테스트 에이전트|각각 2.6Ghz의 이중 프로세서가 있는 N개의 에이전트로 확장|10GB|2GB|

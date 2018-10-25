@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abcb55d49b84a97ad7eae241547317d74cc6f71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942470"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863598"
 ---
 # <a name="globalizing-and-localizing-applications"></a>응용 프로그램 전역화 및 지역화
 
@@ -40,7 +40,7 @@ ms.locfileid: "31942470"
 
 ## <a name="see-also"></a>참고 항목
 
-- [지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)에서는 전 세계 대상을 위한 프로그래밍에 대한 배경 정보를 제공합니다.
+- [지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)에서는 전 세계 대상을 위한 프로그래밍에 대한 배경 정보를 제공합니다.
 - [클래스 라이브러리 개요](/dotnet/standard/class-library-overview)에서는 개발 과정을 단축하고 최적화하며 시스템 기능에 액세스할 수 있는 클래스, 인터페이스, 값 형식을 소개합니다.
 - <xref:System.Globalization>은 언어, 국가/지역, 사용하는 달력, 날짜, 통화 및 숫자 형식 패턴, 문자열 정렬 순서 등의 문화권 관련 정보를 정의하는 이 네임스페이스의 클래스를 나타냅니다.
 - <xref:System.Resources>는 응용 프로그램에 사용되는 여러 가지 문화권별 리소스를 개발자가 만들고, 저장하고, 관리할 수 있게 하는 이 네임스페이스의 클래스와 인터페이스를 나타냅니다.

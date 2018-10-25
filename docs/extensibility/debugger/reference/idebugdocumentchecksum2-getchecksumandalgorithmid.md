@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36cacd8ba313c9beb7565ebb20cbce23f7b6c12e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbb12f315bc0e83e14ad4a342443ed3207411dae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846384"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-사용 하는 바이트의 최대 수를 지정 된 문서 체크섬 및 알고리즘 식별자를 검색 합니다.  
+사용 하는 바이트의 최대 수를 지정 된 문서 체크섬과 알고리즘 식별자를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,7 +49,7 @@ public int GetChecksumAndAlgorithmId(
  [out] 체크섬 알고리즘에 대 한 고유 식별자입니다.  
   
  `cMaxBytes`  
- [in] 체크섬에 사용할 바이트의 최대 수입니다.  
+ [in] 체크섬에 사용 되는 바이트의 최대 수입니다.  
   
  `pChecksum`  
  [out] 체크섬 값입니다.  
@@ -58,10 +58,10 @@ public int GetChecksumAndAlgorithmId(
  [out] 실제 체크섬에 사용 된 바이트 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는이 방법을 사용 하 여 체크섬 및 문서에 대 한 알고리즘을 가져옵니다.  
+ 다음 예제에서는이 메서드를 사용 하 여 체크섬 및 문서에 대 한 알고리즘을 가져옵니다.  
   
 ```cpp  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  

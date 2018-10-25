@@ -9,35 +9,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f108e1385c74df7d627f35cd21e18638e50264fe
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816835"
 ---
 # <a name="image-library-viewer"></a>이미지 라이브러리 뷰어
 Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual Studio는 동일한 방식으로 조작할 수 있도록 이미지 매니페스트를 검색할 수 있습니다. 백그라운드, 크기, DPI, 고대비 등 및 기타 설정을 변경할 수 있습니다. 또한 도구는 각 이미지 매니페스트에 대 한 정보를 로드를 표시 하 고 이미지 매니페스트에서 각 이미지에 대 한 소스 정보를 표시 합니다. 이 도구에 유용합니다.  
   
-1.  오류 진단  
+1. 오류 진단  
   
-2.  사용자 지정 이미지 매니페스트에서 올바르게 보장 특성 설정  
+2. 사용자 지정 이미지 매니페스트에서 올바르게 보장 특성 설정  
   
-3.  Visual Studio 확장 Visual Studio의 스타일에 맞는 이미지를 사용할 수 있도록 Visual Studio 이미지 카탈로그에 대 한 이미지 검색  
+3. Visual Studio 확장 Visual Studio의 스타일에 맞는 이미지를 사용할 수 있도록 Visual Studio 이미지 카탈로그에 대 한 이미지 검색  
   
- ![이미지 라이브러리 뷰어 Hero](../../extensibility/internals/media/image-library-viewer-hero.png "이미지 라이브러리 뷰어 Hero")  
+   ![이미지 라이브러리 뷰어 Hero](../../extensibility/internals/media/image-library-viewer-hero.png "이미지 라이브러리 뷰어 Hero")  
   
- **이미지 모니커**  
+   **이미지 모니커**  
   
- 이미지 모니커 (또는 줄여서 모니커)는 고유 하 게 이미지 자산 또는 이미지 라이브러리에서 이미지 목록 자산을 식별 하는 guid: id 쌍.  
+   이미지 모니커 (또는 줄여서 모니커)는 고유 하 게 이미지 자산 또는 이미지 라이브러리에서 이미지 목록 자산을 식별 하는 guid: id 쌍.  
   
- **이미지 매니페스트 파일**  
+   **이미지 매니페스트 파일**  
   
- 이미지 매니페스트 (.imagemanifest) 파일은 이미지 자산, 자산 및 실제 이미지 또는 각 자산을 나타내는 이미지를 나타내는 모니커 집합을 정의 하는 XML 파일입니다. 이미지 매니페스트 독립 실행형 이미지를 정의할 수 있습니다 또는 레거시 UI 지원에 대 한 이미지를 나열 합니다. 또한, 시기 및 해당 자산을 표시 하는 방법을 변경 하려면 각각의 자산 뒤 개별 이미지 또는 자산에서 설정할 수 있는 속성이 있습니다.  
+   이미지 매니페스트 (.imagemanifest) 파일은 이미지 자산, 자산 및 실제 이미지 또는 각 자산을 나타내는 이미지를 나타내는 모니커 집합을 정의 하는 XML 파일입니다. 이미지 매니페스트 독립 실행형 이미지를 정의할 수 있습니다 또는 레거시 UI 지원에 대 한 이미지를 나열 합니다. 또한, 시기 및 해당 자산을 표시 하는 방법을 변경 하려면 각각의 자산 뒤 개별 이미지 또는 자산에서 설정할 수 있는 속성이 있습니다.  
   
- **이미지 매니페스트 스키마**  
+   **이미지 매니페스트 스키마**  
   
- 이미지 완료 매니페스트는 다음과 같습니다.  
+   이미지 완료 매니페스트는 다음과 같습니다.  
   
 ```xml  
 <ImageManifest>  

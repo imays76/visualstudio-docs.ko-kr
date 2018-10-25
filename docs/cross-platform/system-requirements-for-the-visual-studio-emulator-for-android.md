@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1ea73057992447016b1b9ac68c98b79b68f70c17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881614"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터에 대한 시스템 요구 사항
 Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화 기술인 Hyper-V에서 가상 머신으로 실행됩니다. 에뮬레이터를 실행하려면 컴퓨터가 이 항목의 설명대로 Hyper-V를 실행하기 위한 요구 사항을 충족해야 합니다.  
@@ -44,76 +44,76 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
   
  시스템 요구 사항  
   
--   Hyper-V 지원(아래 Hyper-V 요구 사항 참조)  
+- Hyper-V 지원(아래 Hyper-V 요구 사항 참조)  
   
--   6GB 이상의 RAM  
+- 6GB 이상의 RAM  
   
--   64비트 버전의 Windows 8 Pro Edition, Windows 8.1 및 Windows10 이상  
+- 64비트 버전의 Windows 8 Pro Edition, Windows 8.1 및 Windows10 이상  
   
--   SSSE3 이상을 지원하는 프로세서  
+- SSSE3 이상을 지원하는 프로세서  
   
- 네트워크 요구 사항  
+  네트워크 요구 사항  
   
--   DHCP  
+- DHCP  
   
--   자동으로 구성된 DNS 및 게이트웨이 설정  
+- 자동으로 구성된 DNS 및 게이트웨이 설정  
   
- Hyper-V 요구 사항  
+  Hyper-V 요구 사항  
   
--   BIOS에서 다음 기능을 지원해야 합니다.  
+- BIOS에서 다음 기능을 지원해야 합니다.  
   
-    -   하드웨어 지원 가상화  
+  -   하드웨어 지원 가상화  
   
-    -   SLAT(두 번째 수준 주소 변환)  
+  -   SLAT(두 번째 수준 주소 변환)  
   
-    -   하드웨어 기반 DEP(데이터 실행 방지)  
+  -   하드웨어 기반 DEP(데이터 실행 방지)  
   
--   Windows에서 Hyper-V가 활성화되어 실행 중이어야 합니다.  
+- Windows에서 Hyper-V가 활성화되어 실행 중이어야 합니다.  
   
--   로컬 Hyper-V Administrators 그룹의 구성원이어야 합니다.  
+- 로컬 Hyper-V Administrators 그룹의 구성원이어야 합니다.  
   
 ##  <a name="System"></a> 시스템 요구 사항  
  컴퓨터는 다음 요구 사항을 충족해야 합니다.  
   
--   Hyper-V 지원( [Hyper-V 요구 사항](#HyperV)참조)  
+- Hyper-V 지원( [Hyper-V 요구 사항](#HyperV)참조)  
   
--   6GB 이상의 RAM  
+- 6GB 이상의 RAM  
   
--   64비트 버전의 Windows 8 Pro Edition, Windows 8.1 및 Windows10 이상  
+- 64비트 버전의 Windows 8 Pro Edition, Windows 8.1 및 Windows10 이상  
   
- RAM 및 Windows에 대한 요구 사항을 확인하려면 제어판에서 시스템 및 보안을 선택한 다음 시스템을 선택합니다.  
+  RAM 및 Windows에 대한 요구 사항을 확인하려면 제어판에서 시스템 및 보안을 선택한 다음 시스템을 선택합니다.  
   
- ![시스템 요구 사항 확인](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+  ![시스템 요구 사항 확인](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> 네트워크 요구 사항  
  네트워크는 다음 요구 사항을 충족해야 합니다.  
   
--   DHCP  
+- DHCP  
   
-     에뮬레이터는 네트워크에서 자체 IP 주소를 갖는 별도의 장치로 구성되므로 DHCP가 필요합니다.  
+   에뮬레이터는 네트워크에서 자체 IP 주소를 갖는 별도의 장치로 구성되므로 DHCP가 필요합니다.  
   
--   자동으로 구성된 DNS 및 게이트웨이 설정  
+- 자동으로 구성된 DNS 및 게이트웨이 설정  
   
-     에뮬레이터에 대해 DNS 및 게이트웨이 설정을 수동으로 구성할 수 없습니다.  
+   에뮬레이터에 대해 DNS 및 게이트웨이 설정을 수동으로 구성할 수 없습니다.  
   
- 에뮬레이터의 네트워킹 문제를 해결하려면 다음 항목을 참조합니다.  
+  에뮬레이터의 네트워킹 문제를 해결하려면 다음 항목을 참조합니다.  
   
--   [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a> Hyper-V 요구 사항  
  BIOS의 Hyper-V 요구 사항  
   
  컴퓨터의 BIOS는 다음 요구 사항을 지원해야 하며, 해당 기능이 사용하도록 설정되어야 합니다.  
   
--   하드웨어 지원 가상화  
+- 하드웨어 지원 가상화  
   
--   SLAT(두 번째 수준 주소 변환)  
+- SLAT(두 번째 수준 주소 변환)  
   
--   하드웨어 기반 DEP(데이터 실행 방지)  
+- 하드웨어 기반 DEP(데이터 실행 방지)  
   
- Windows의 Hyper-V 요구 사항  
+  Windows의 Hyper-V 요구 사항  
   
- 컴퓨터 및 BIOS 설정이 Hyper-V를 지원하도록 이미 구성되어 있는 경우 설치 프로그램이 Hyper-V를 사용하고 시작합니다. 구성되지 않은 경우 수동으로 이 요구 사항을 설정해야 할 수도 있습니다.  
+  컴퓨터 및 BIOS 설정이 Hyper-V를 지원하도록 이미 구성되어 있는 경우 설치 프로그램이 Hyper-V를 사용하고 시작합니다. 구성되지 않은 경우 수동으로 이 요구 사항을 설정해야 할 수도 있습니다.  
   
 |요구 사항|요구 사항을 확인하고 사용하도록 설정하는 방법|  
 |-----------------|----------------------------------------------|  
@@ -127,11 +127,11 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
  아직 Hyper-V Administrators 그룹의 구성원이 아닌 경우에는 에뮬레이터를 실행하면 해당 그룹에 참여하라는 메시지가 표시됩니다(대화 상자는 Windows Phone 에뮬레이터를 참조함). 그룹에 참여하려면 관리자 권한이 필요합니다.  
   
 > [!IMPORTANT]
->  그룹에 참여한 후에는 로그오프하거나 다시 부팅하여 변경 내용을 적용합니다.  
+> 그룹에 참여한 후에는 로그오프하거나 다시 부팅하여 변경 내용을 적용합니다.  
   
  ![Hyper&#45;V 관리자 보안 그룹 가입](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
- 자신을 수동으로 그룹에 추가하려면 로컬 사용자 및 그룹 스냅인을 엽니다. 자세한 내용은 [그룹에 사용자 계정 추가](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7)를 참조하세요. (이 Windows 7 항목은 Windows 8에도 적용됩니다.)  
+ 자신을 수동으로 그룹에 추가하려면 로컬 사용자 및 그룹 스냅인을 엽니다.  
   
 ##  <a name="BootableVHD"></a> 부팅 가능한 VHD에서 에뮬레이터 실행은 지원되지 않음  
  부팅 가능한 VHD에서 Windows를 실행하는 동안 Android용 Visual Studio 에뮬레이터에서 앱을 실행하려는 경우 에뮬레이터는 일반적으로 시작되는 데 몇 분 정도 걸리거나 시작되지 않습니다. 에뮬레이터가 시작되지 못하는 경우 다음과 같은 메시지가 표시됩니다. 앱을 배포하지 못했습니다. 다시 시도하세요.  
@@ -141,15 +141,15 @@ Android용 Visual Studio 에뮬레이터는 Windows 8 이상 버전의 가상화
 ##  <a name="Files"></a> Hyper-V에 압축 및 암호화되지 않은 파일 필요  
  NTFS 파일 시스템으로 구성된 하드 드라이브에서는 Hyper-V에 사용되는 가상 하드 디스크는 압축되지 않고 암호화되지 않아야 합니다. 다음 디렉터리가 압축 또는 암호화되지 않았는지 확인합니다.  
   
--   %localappdata%\Microsoft\XDE  
+- %localappdata%\Microsoft\XDE  
   
--   C:\Program Files (x86)\Microsoft Emulator Manager  
+- C:\Program Files (x86)\Microsoft Emulator Manager  
   
--   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
+- C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
   
--   %localappdata%\Microsoft\VisualStudioEmulator  
+- %localappdata%\Microsoft\VisualStudioEmulator  
   
- ReFS 파일 시스템에서는 가상 하드 디스크 파일에 무결성 비트가 설정되어 있지 않아야 합니다.  
+  ReFS 파일 시스템에서는 가상 하드 디스크 파일에 무결성 비트가 설정되어 있지 않아야 합니다.  
   
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>하드웨어 그래픽 전달(OpenGL ES 지원) 요구 사항  
  에뮬레이터가 OpenGL ES에서 사용되는 GPU 등에 대한 호출을 에뮬레이트하기 위해서는 컴퓨터에 적절한 DirectX 드라이버와 함께 DirectX 호환 GPU가 설치되어 있어야 합니다.  

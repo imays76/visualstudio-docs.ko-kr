@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f2a2979fdc836f0204dec580d49e86ae235d5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 147d15133a2c5c682960e853defcf5965d04b1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868029"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>명령줄에서 이식 가능한 프로파일링 데이터 파일 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ ms.locfileid: "49254698"
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>프로파일링 실행에 대한 기호를 프로파일링 데이터(.vsp) 파일에 포함하려면  
   
--   명령 프롬프트 창에서 다음 명령을 입력합니다.  
+- 명령 프롬프트 창에서 다음 명령을 입력합니다.  
   
-     \<Path>**VSPerfReport \<** VSP File> **/PackSymbols**  
+   \<Path><strong>VSPerfReport \<</strong>VSP File> **/PackSymbols**  
   
-     기본적으로 .vsps 파일은 .vsp 파일의 기본 이름으로 지정됩니다. **출력** 옵션을 사용하여 다른 이름을 지정할 수 있습니다.  
+   기본적으로 .vsps 파일은 .vsp 파일의 기본 이름으로 지정됩니다. **출력** 옵션을 사용하여 다른 이름을 지정할 수 있습니다.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>요약 프로파일링 데이터 파일을 만들려면  
   
--   명령 프롬프트 창에서 다음 명령을 입력합니다.  
+- 명령 프롬프트 창에서 다음 명령을 입력합니다.  
   
-     \<Path>**VSPerfReport \<** VSP File> **/SummaryFile** [**/Output:**\<File Name>]  
+   \<Path><strong>VSPerfReport \<</strong>VSP File> **/SummaryFile** [**/Output:**\<File Name>]  
   
-     기본적으로 .vsps 파일은 .vsp 파일의 기본 이름으로 지정됩니다. **출력** 옵션을 사용하여 다른 이름을 지정할 수 있습니다.
+   기본적으로 .vsps 파일은 .vsp 파일의 기본 이름으로 지정됩니다. **출력** 옵션을 사용하여 다른 이름을 지정할 수 있습니다.
 
 
 

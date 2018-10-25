@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55a8c2c205627130e8dd6dd28f288b2d3dee9d2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 375ff5c08c481061d217fbb0b3a4fac38d1e74c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103593"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896642"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
-디스어셈블리 스트림에서 지정된 된 수의 지정된 된 위치에 상대적인 지침 읽기 포인터를 이동합니다.  
+디스어셈블리 스트림에 지정된 된 수의 지정 된 위치를 기준으로 지침 읽기 포인터를 이동합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,22 +47,22 @@ int Seek(
   
 #### <a name="parameters"></a>매개 변수  
  `dwSeekStart`  
- [in] 값은 [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) seek 프로세스를 시작 하려면 상대 위치를 지정 하는 열거형입니다.  
+ [in] 값을 [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) 검색 프로세스를 시작 하려면 상대 위치를 지정 하는 열거형입니다.  
   
  `pCodeContext`  
- [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 기준으로 seek 연산을 코드 컨텍스트를 나타내는 개체입니다. 경우에이 매개 변수는 `dwSeekStart`  =  `SEEK_START_CODECONTEXT`, 그렇지 않으면이 매개 변수는 무시 되 고 null 값이 될 수 있습니다.  
+ [in] 합니다 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 기준으로 seek 연산에는 코드 컨텍스트를 나타내는 개체입니다. 경우에이 매개 변수는 `dwSeekStart`  =  `SEEK_START_CODECONTEXT`고, 그렇지 않으면이 매개 변수는 무시 되 고 null 값이 될 수 있습니다.  
   
  `uCodeLocationId`  
- [in] 기준으로 seek 연산을 코드 위치 식별자입니다. 경우이 매개 변수는 `dwSeekStart`  =  `SEEK_START_CODELOCID`, 그렇지 않으면이 매개 변수는 무시 되 고 0으로 설정할 수 있습니다. 에 대 한 설명 섹션을 참조는 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 방법에 대 한 설명은 코드 위치 식별자입니다.  
+ [in] 코드 위치 식별자를 기준으로 seek 연산입니다. 하는 경우이 매개 변수는 `dwSeekStart`  =  `SEEK_START_CODELOCID`고, 그렇지 않으면이 매개 변수는 무시 되 고 0으로 설정할 수 있습니다. 에 대 한 설명 섹션을 참조 합니다 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 코드 위치 식별자에 대 한 메서드.  
   
  `iInstructions`  
- [in] 에 지정 된 위치를 기준으로 이동 하는 명령 수가 `dwSeekStart`합니다. 이 값 뒤로 이동 음수일 수 있습니다.  
+ [in] 에 지정 된 위치를 기준으로 이동 하는 명령 수가 `dwSeekStart`합니다. 이 값은 뒤로 이동 하려면 음수일 수 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` seek 위치 되었으면는 목록에 나오지 지점에서 사용 가능한 지침입니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 검색 위치입니다. 사용 가능한 명령의 시점 이후로 목록 되었으면 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 목록의 시작 부분 앞 위치로 seek 되었으면 읽기 위치 목록에서 첫 번째 명령으로 설정 됩니다. 목록의 끝 후 위치로 했습니다. 참조, 읽기 위치 설정 됩니다 마지막 명령 목록.  
+ 목록의 시작 부분 앞에 seek 되었으면 읽기 위치 목록에서 첫 번째 명령으로 설정 됩니다. 참조를 위치로 목록 끝 이후에 읽기 위치 설정 됩니다 마지막 명령 목록에서.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   

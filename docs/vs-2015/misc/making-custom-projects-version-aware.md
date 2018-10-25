@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833007"
 ---
 # <a name="making-custom-projects-version-aware"></a>사용자 지정 프로젝트의 버전 인식 설정
 사용자 지정 프로젝트 시스템에서 해당 형식의 프로젝트가 여러 버전의 Visual Studio에서 로드되도록 할 수 있습니다. 또한 이전 버전의 Visual Studio에서 해당 형식의 프로젝트를 로드할 수 없도록 방지할 수도 있습니다. 프로젝트를 복구, 변환 또는 사용 중단해야 하는 경우 자신을 이후 버전으로 식별하도록 해당 프로젝트를 설정할 수 있습니다.  
@@ -125,13 +125,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  이 메서드가 `pUpgradeRequired` 를 TRUE로 설정하고 `S_OK`를 반환한 경우 메서드가 업그레이드 플래그를 `VSPUVF_PROJECT_ONEWAYUPGRADE`값으로 설정한 것처럼 결과가 "업그레이드"로 간주됩니다. 자세한 내용은 이 항목 뒷부분에서 설명합니다. 다음 반환 값은 이 이전 메서드를 사용하여 지원되지만 `pUpgradeRequired`가 TRUE로 설정된 경우에만 가능합니다.  
   
-1.  `VS_S_PROJECT_SAFEREPAIRREQUIRED`. 이 반환 값은 `pUpgradeRequired` 값을 `VSPUVF_PROJECT_SAFEREPAIR`와 동일한 TRUE로 변환합니다. 자세한 내용은 이 항목의 뒷부분에서 설명합니다.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. 이 반환 값은 `pUpgradeRequired` 값을 `VSPUVF_PROJECT_SAFEREPAIR`와 동일한 TRUE로 변환합니다. 자세한 내용은 이 항목의 뒷부분에서 설명합니다.  
   
-2.  `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. 이 반환 값은 `pUpgradeRequired` 값을 `VSPUVF_PROJECT_UNSAFEREPAIR`와 동일한 TRUE로 변환합니다. 자세한 내용은 이 항목의 뒷부분에서 설명합니다.  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. 이 반환 값은 `pUpgradeRequired` 값을 `VSPUVF_PROJECT_UNSAFEREPAIR`와 동일한 TRUE로 변환합니다. 자세한 내용은 이 항목의 뒷부분에서 설명합니다.  
   
-3.  `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. 이 반환 값은 `pUpgradeRequired` 값을 `VSPUVF_PROJECT_ONEWAYUPGRADE`와 동일한 TRUE로 변환합니다. 자세한 내용은 이 항목의 뒷부분에서 설명합니다.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. 이 반환 값은 `pUpgradeRequired` 값을 `VSPUVF_PROJECT_ONEWAYUPGRADE`와 동일한 TRUE로 변환합니다. 자세한 내용은 이 항목의 뒷부분에서 설명합니다.  
   
- `IVsProjectUpgradeViaFactory4` 및 `IVsProjectFlavorUpgradeViaFactory2` 의 새 구현을 사용하면 마이그레이션 형식을 보다 정확하게 지정할 수 있습니다.  
+   `IVsProjectUpgradeViaFactory4` 및 `IVsProjectFlavorUpgradeViaFactory2` 의 새 구현을 사용하면 마이그레이션 형식을 보다 정확하게 지정할 수 있습니다.  
   
 > [!NOTE]
 >  `UpgradeProject_CheckOnly` 에 대한 후속 호출에서 사용할 수 있도록 `CreateProject`메서드를 통한 호환성 검사 결과를 캐시할 수 있습니다.  

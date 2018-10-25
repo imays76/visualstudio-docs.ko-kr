@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15456dddcb18909e514e485e749029c7dac9da9
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: bdc01eec9982f7e3a03cd84424bc56b031846a7d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858864"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>방법: 사용자 지정 디버그 엔진 디버그
 프로젝트 형식에서 디버그 엔진 (DE)를 시작 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> 메서드. 즉, 인스턴스의 제어 하는 DE 시작 되는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 형식을 제어 합니다. 그러나 해당 인스턴스의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 DE를 디버깅할 수 없습니다. 다음에 사용자 지정 DE 디버깅할 수 있도록 하는 단계는 같습니다.  
@@ -32,21 +32,21 @@ ms.locfileid: "39231917"
   
 ## <a name="debug-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 디버그  
   
-1.  시작 *msvsmon.exe*, 원격 디버깅 모니터입니다.  
+1. 시작 *msvsmon.exe*, 원격 디버깅 모니터입니다.  
   
-2.  **도구** 메뉴에서 *msvsmon.exe*를 선택 **옵션** 여는 **옵션** 대화 상자.  
+2. **도구** 메뉴에서 *msvsmon.exe*를 선택 **옵션** 여는 **옵션** 대화 상자.  
   
-3.  "인증 없음" 옵션을 선택 하 고 클릭 **확인**합니다.  
+3. "인증 없음" 옵션을 선택 하 고 클릭 **확인**합니다.  
   
-4.  인스턴스를 시작할 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 지정 DE 프로젝트를 엽니다.  
+4. 인스턴스를 시작할 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 지정 DE 프로젝트를 엽니다.  
   
-5.  두 번째 인스턴스를 시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 DE를 시작 하는 사용자 지정 프로젝트를 엽니다 (개발 하는 경우이 일반적으로 VSIP를 설치할 때 설정 된 실험 레지스트리 하이브에서).  
+5. 두 번째 인스턴스를 시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 DE를 시작 하는 사용자 지정 프로젝트를 엽니다 (개발 하는 경우이 일반적으로 VSIP를 설치할 때 설정 된 실험 레지스트리 하이브에서).  
   
-6.  이 두 번째 인스턴스의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]사용자 지정 프로젝트에서 소스 파일을 로드 하 고 디버그할 프로그램을 시작 합니다. 로드 하거나 중단점이 적중 될 때까지 대기 DE 허용 하는 데는 몇 분 정도 기다립니다.  
+6. 이 두 번째 인스턴스의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]사용자 지정 프로젝트에서 소스 파일을 로드 하 고 디버그할 프로그램을 시작 합니다. 로드 하거나 중단점이 적중 될 때까지 대기 DE 허용 하는 데는 몇 분 정도 기다립니다.  
   
-7.  첫 번째 인스턴스의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (DE 프로젝트)를 선택 **프로세스에 연결** 에서 합니다 **디버그** 메뉴.  
+7. 첫 번째 인스턴스의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (DE 프로젝트)를 선택 **프로세스에 연결** 에서 합니다 **디버그** 메뉴.  
   
-8.  에 **프로세스에 연결** 대화 상자에서 변경 합니다 **전송** 에 **원격 (네이티브만 인증 안 함)** 합니다.  
+8. 에 **프로세스에 연결** 대화 상자에서 변경 합니다 **전송** 에 **원격 (네이티브만 인증 안 함)** 합니다.  
   
 9. 변경 된 **한정자** 컴퓨터의 이름 (참고:는 항목의 기록을 있으므로이 이름을 한 번만 입력 해야) 합니다.  
   
@@ -58,21 +58,21 @@ ms.locfileid: "39231917"
   
 ## <a name="debug-a-custom-project-type"></a>사용자 지정 프로젝트 형식의 디버깅  
   
-1.  시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 일반 레지스트리 하이브 및 부하 프로젝트가 프로젝트 (이 원본인, 프로젝트 형식에서 프로젝트 형식의 인스턴스화 없습니다)를 입력 합니다.  
+1. 시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 일반 레지스트리 하이브 및 부하 프로젝트가 프로젝트 (이 원본인, 프로젝트 형식에서 프로젝트 형식의 인스턴스화 없습니다)를 입력 합니다.  
   
-2.  프로젝트 속성을 열고 다음으로 이동 합니다 **디버그** 페이지입니다. 에 대 한는 **명령**, 경로를 입력 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (이것이 기본적으로 *[드라이브]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2. 프로젝트 속성을 열고 다음으로 이동 합니다 **디버그** 페이지입니다. 에 대 한는 **명령**, 경로를 입력 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (이것이 기본적으로 *[드라이브]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
-3.  에 대 한 합니다 **명령 인수**, 형식 `/rootsuffix exp` 실험 레지스트리 하이브에서 (VSIP를 설치할 때 만든)에 대 한 합니다.  
+3. 에 대 한 합니다 **명령 인수**, 형식 `/rootsuffix exp` 실험 레지스트리 하이브에서 (VSIP를 설치할 때 만든)에 대 한 합니다.  
   
-4.  **확인** 을 클릭하여 변경 내용을 수락합니다.  
+4. **확인** 을 클릭하여 변경 내용을 수락합니다.  
   
-5.  프로젝트 형식 키를 눌러 시작 **F5**합니다. 그러면 두 번째 인스턴스가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  
+5. 프로젝트 형식 키를 눌러 시작 **F5**합니다. 그러면 두 번째 인스턴스가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]합니다.  
   
-6.  이 시점에서 프로젝트 형식 소스 코드에서 중단점을 배치할 수 있습니다.  
+6. 이 시점에서 프로젝트 형식 소스 코드에서 중단점을 배치할 수 있습니다.  
   
-7.  두 번째 인스턴스의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 로드 또는 프로젝트 형식의 새 인스턴스를 만듭니다. 로드 또는 생성 하는 동안 중단점에 도달할 수 있습니다.  
+7. 두 번째 인스턴스의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 로드 또는 프로젝트 형식의 새 인스턴스를 만듭니다. 로드 또는 생성 하는 동안 중단점에 도달할 수 있습니다.  
   
-8.  프로젝트 형식을 디버그 합니다.  
+8. 프로젝트 형식을 디버그 합니다.  
   
 9. DE 시작 프로세스를 디버깅 하려는 경우를 시작한 후에 독일에 연결 하는 "사용자 지정 디버그 엔진 디버그" 절차의 단계를 수행할 수 있습니다. 이렇게 하면 세 개의 인스턴스가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 실행: 인스턴스화된 프로젝트 형식 및 사용자 장치에 연결 된 세 번째에 대 한 두 번째 프로젝트 형식이 소스에 하나입니다.  
   

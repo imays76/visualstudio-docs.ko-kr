@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830667"
 ---
 # <a name="options-text-editor-general"></a>일반, 텍스트 편집기, 옵션
 
@@ -88,7 +88,7 @@ ms.locfileid: "34747817"
 이 옵션을 선택하면 편집기 텍스트 영역의 왼쪽 가장자리를 따라 세로 여백이 표시됩니다. 이 여백을 클릭하여 전체 텍스트 줄을 선택하거나 클릭하고 끌어서 연속 텍스트 줄을 선택할 수 있습니다.
 
 |선택 영역 여백 켜기|선택 영역 여백 끄기|
-|-------------------------|--------------------------|
+| - | - |
 |![HTMLpageSelectionMarginOn 스크린 샷](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff 스크린 샷](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>표시기 여백

@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892690"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 멤버 완성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ IntelliSense 멤버 완성이 클래스, 구조체, 열거형 또는 네임 스�
 ## <a name="how-it-works"></a>작동 방법  
  다음은 두 가지 방법으로는 멤버 목록이 MPF 클래스를 사용 하 여 표시 됩니다.  
   
--   멤버 완성 문자 이후로 식별자에 캐럿을 배치 하 고 선택 **멤버 목록** 에서 합니다 **IntelliSense** 메뉴.  
+- 멤버 완성 문자 이후로 식별자에 캐럿을 배치 하 고 선택 **멤버 목록** 에서 합니다 **IntelliSense** 메뉴.  
   
--   합니다 <xref:Microsoft.VisualStudio.Package.IScanner> 스캐너 멤버 완성 문자를 검색 하 고 토큰 트리거 설정 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 해당 문자에 대 한 합니다.  
+- 합니다 <xref:Microsoft.VisualStudio.Package.IScanner> 스캐너 멤버 완성 문자를 검색 하 고 토큰 트리거 설정 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 해당 문자에 대 한 합니다.  
   
- 멤버 완료 문자 따라야 하는 클래스, 구조체 또는 열거형의 멤버 임을 나타냅니다. 예를 들어 C# 또는 Visual Basic 멤버 완성 문자는는 `.`인 반면 c + +에서 문자는를 `.` 또는 `->`합니다. 트리거 값에는 멤버 선택 문자를 검색할 때 설정 됩니다.  
+  멤버 완료 문자 따라야 하는 클래스, 구조체 또는 열거형의 멤버 임을 나타냅니다. 예를 들어 C# 또는 Visual Basic 멤버 완성 문자는는 `.`인 반면 c + +에서 문자는를 `.` 또는 `->`합니다. 트리거 값에는 멤버 선택 문자를 검색할 때 설정 됩니다.  
   
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense 멤버 목록 표시 명령  
  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 명령에 대 한 호출을 시작 합니다 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를를 <xref:Microsoft.VisualStudio.Package.Source> 클래스 및 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를 호출 하는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드 파서를 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다.  

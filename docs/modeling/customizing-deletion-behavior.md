@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7c05d76aa74e32695d20b2d5e9ed4f030e65813
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849153"
 ---
 # <a name="customizing-deletion-behavior"></a>삭제 동작 사용자 지정
 일반적으로 요소를 삭제하면 관련 요소도 삭제됩니다. 해당 요소에 연결된 모든 관계와 모든 자식 요소도 삭제됩니다. 이 동작은 라고 *삭제 전파*합니다. 예를 들어 삭제 전파를 사용자 지정하여 추가 관련 요소도 삭제되도록 지정할 수 있습니다. 프로그램 코드를 작성하면 모델 상태에 따라 삭제 전파가 수행되도록 지정할 수 있습니다. 또한 삭제에 응답하여 다른 변경도 수행되도록 할 수 있습니다.
@@ -57,19 +57,19 @@ ms.locfileid: "47859811"
 
 #### <a name="to-set-delete-propagation"></a>삭제 전파를 설정하려면
 
-1.  DSL 정의 다이어그램에서 선택 합니다 *역할* 를 삭제를 전파 합니다. 역할은 도메인 관계 상자 왼쪽이나 오른쪽의 선으로 표시됩니다.
+1. DSL 정의 다이어그램에서 선택 합니다 *역할* 를 삭제를 전파 합니다. 역할은 도메인 관계 상자 왼쪽이나 오른쪽의 선으로 표시됩니다.
 
-     예를 들어 앨범을 삭제할 때마다 관련 아티스트도 삭제되도록 지정하려면 Artist 도메인 클래스에 연결된 역할을 선택합니다.
+    예를 들어 앨범을 삭제할 때마다 관련 아티스트도 삭제되도록 지정하려면 Artist 도메인 클래스에 연결된 역할을 선택합니다.
 
-2.  속성 창에서 설정 된 **Propagates Delete** 속성입니다.
+2. 속성 창에서 설정 된 **Propagates Delete** 속성입니다.
 
-3.  F5 키를 누르고 다음 사항을 확인합니다.
+3. F5 키를 누르고 다음 사항을 확인합니다.
 
-    -   이 관계의 인스턴스를 삭제하면 선택한 역할의 요소도 삭제됩니다.
+   -   이 관계의 인스턴스를 삭제하면 선택한 역할의 요소도 삭제됩니다.
 
-    -   반대쪽 역할의 요소를 삭제하면 이 관계 인스턴스가 삭제되며 이 역할에서 관련된 요소도 삭제됩니다.
+   -   반대쪽 역할의 요소를 삭제하면 이 관계 인스턴스가 삭제되며 이 역할에서 관련된 요소도 삭제됩니다.
 
- 확인할 수도 있습니다는 **Propagates Delete** 옵션을 **DSL 정보** 창입니다. 도메인 클래스를 선택 하 고 DSL 세부 정보 창에서 엽니다는 **Delete Behavior** 옆쪽 창에 단추를 클릭 하 여 페이지입니다. 합니다 **전파** 각 관계의 반대 역할에 대 한 옵션이 표시 됩니다. **스타일 삭제** 열에 표시 여부를 합니다 **전파** 옵션 기본 설정 되어 있지만 별도 영향을 주지 없습니다.
+   확인할 수도 있습니다는 **Propagates Delete** 옵션을 **DSL 정보** 창입니다. 도메인 클래스를 선택 하 고 DSL 세부 정보 창에서 엽니다는 **Delete Behavior** 옆쪽 창에 단추를 클릭 하 여 페이지입니다. 합니다 **전파** 각 관계의 반대 역할에 대 한 옵션이 표시 됩니다. **스타일 삭제** 열에 표시 여부를 합니다 **전파** 옵션 기본 설정 되어 있지만 별도 영향을 주지 없습니다.
 
 ## <a name="delete-propagation-by-using-program-code"></a>프로그램 코드를 사용하여 삭제 전파
  DSL 정의 파일의 옵션을 사용하는 경우 삭제가 바로 인접한 항목으로 전파되는지 여부만을 선택할 수 있습니다. 더 복잡한 삭제 전파 체계를 구현하려는 경우에는 프로그램 코드를 작성하면 됩니다.
@@ -123,7 +123,6 @@ partial class MusicLibDeleteClosure
     }
   }
 }
-
 ```
 
  Closure 기술을 사용하면 삭제가 시작되기 전에 삭제할 요소 및 링크 집합을 확인할 수 있습니다. 또한 워커는 Closure의 결과와 모델의 다른 부분 결과를 결합합니다.
@@ -133,17 +132,17 @@ partial class MusicLibDeleteClosure
 ## <a name="ondeleting"></a> OnDeleting 및 OnDeleted 사용
  도메인 클래스나 도메인 관계에서 `OnDeleting()` 또는 `OnDeleted()`를 재정의할 수 있습니다.
 
-1.  요소를 삭제하려고 하면 해당 관계가 끊기기 전에 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>이 호출됩니다. 이 시점에서는 해당 요소와 다른 요소 간에 계속 이동할 수 있으며 해당 요소는 아직 `store.ElementDirectory`에 있습니다.
+1. 요소를 삭제하려고 하면 해당 관계가 끊기기 전에 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>이 호출됩니다. 이 시점에서는 해당 요소와 다른 요소 간에 계속 이동할 수 있으며 해당 요소는 아직 `store.ElementDirectory`에 있습니다.
 
-     여러 요소를 동시에 삭제하는 경우에는 삭제를 수행하기 전에 모든 요소에 대해 OnDeleting이 호출됩니다.
+    여러 요소를 동시에 삭제하는 경우에는 삭제를 수행하기 전에 모든 요소에 대해 OnDeleting이 호출됩니다.
 
-     `IsDeleting`이 true가 됩니다.
+    `IsDeleting`이 true가 됩니다.
 
-2.  요소가 삭제되면 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>가 호출됩니다. 삭제된 요소는 필요 시 Undo를 수행할 수 있도록 CLR 힙에 남아 있지만 다른 요소에서 연결이 해제되며 `store.ElementDirectory`에서 제거됩니다. 관계에 대 한 역할은 이전 역할 수행자를 계속 참조 합니다.`IsDeleted` 그렇습니다.
+2. 요소가 삭제되면 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>가 호출됩니다. 삭제된 요소는 필요 시 Undo를 수행할 수 있도록 CLR 힙에 남아 있지만 다른 요소에서 연결이 해제되며 `store.ElementDirectory`에서 제거됩니다. 관계에 대 한 역할은 이전 역할 수행자를 계속 참조 합니다.`IsDeleted` 그렇습니다.
 
-3.  사용자가 요소를 만든 후 Undo를 호출할 때와 Redo에서 이전 삭제를 반복할 때 OnDeleting 및 OnDeleted가 호출됩니다. 이러한 경우 store 요소를 업데이트하지 않으려면 `this.Store.InUndoRedoOrRollback`을 사용합니다. 자세한 내용은 [방법: 트랜잭션을 사용 하 여 모델 업데이트](../modeling/how-to-use-transactions-to-update-the-model.md)합니다.
+3. 사용자가 요소를 만든 후 Undo를 호출할 때와 Redo에서 이전 삭제를 반복할 때 OnDeleting 및 OnDeleted가 호출됩니다. 이러한 경우 store 요소를 업데이트하지 않으려면 `this.Store.InUndoRedoOrRollback`을 사용합니다. 자세한 내용은 [방법: 트랜잭션을 사용 하 여 모델 업데이트](../modeling/how-to-use-transactions-to-update-the-model.md)합니다.
 
- 예를 들어 다음 코드는 마지막 자식 Song을 삭제하면 Album을 삭제합니다.
+   예를 들어 다음 코드는 마지막 자식 Song을 삭제하면 Album을 삭제합니다.
 
 ```
 
@@ -164,7 +163,6 @@ partial class AlbumHasSongs
       {
         this.Album.Delete();
 } } } }
-
 ```
 
  삭제는 역할 요소보다 관계 삭제에서 트리거하는 것이 더 유용한 경우가 많습니다. 이 방식은 요소를 삭제할 때와 관계 자체를 삭제할 때 모두 작동하기 때문입니다. 그러나 참조 관계의 경우 관련 요소가 삭제될 때 삭제를 전파하되 관계 자체를 삭제할 때는 전파되지 않도록 하는 것이 좋을 수 있습니다. 이 예에서는 마지막 참여 Artist를 삭제하면 Album을 삭제하되 관계를 삭제할 때는 전파가 응답하지 않도록 설정합니다.
@@ -192,7 +190,6 @@ partial class Artist
     {
       album.Delete();
 } } }
-
 ```
 
  요소에 대해 <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A>를 수행하면 OnDeleting 및 OnDeleted가 호출됩니다. 이러한 메서드는 항상 인라인으로 수행할된-즉, 실제 삭제 직전 전후. 코드가 둘 이상의 요소를 삭제하는 경우에는 모든 요소에 대해 OnDeleting 및 OnDeleted가 번갈아 가며 호출됩니다.
@@ -247,7 +244,6 @@ public partial class MusicLibDomainModel
     return types.ToArray();
   }
 }
-
 ```
 
 ### <a name="example-deleted-event"></a>예제 Deleted 이벤트
@@ -284,7 +280,6 @@ partial class NestedShapesSampleDocData
     }
   }
 }
-
 ```
 
 ## <a name="unmerge"></a> UnMerge

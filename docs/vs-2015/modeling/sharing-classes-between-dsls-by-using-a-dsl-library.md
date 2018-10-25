@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2c0192aca40c6f58468fba35ee1fd174b0445bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed469b4621205539e3f7a2ce59878bd318ba556f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860038"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL 라이브러리를 사용하여 DSL 간에 클래스 공유
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,21 +52,21 @@ ms.locfileid: "49241523"
   
 #### <a name="to-import-a-dsl-library"></a>DSL 라이브러리를 가져오려면  
   
-1.  다른 DSL 정의에서 **DSL 탐색기**에서 DSL의 루트 클래스를 마우스 오른쪽 단추로 클릭 하 고 클릭 **새 DslLibrary 가져오기 추가**합니다.  
+1. 다른 DSL 정의에서 **DSL 탐색기**에서 DSL의 루트 클래스를 마우스 오른쪽 단추로 클릭 하 고 클릭 **새 DslLibrary 가져오기 추가**합니다.  
   
-2.  속성 창에서 설정 된 **파일 경로** 라이브러리입니다. 상대 경로 또는 절대 경로 사용할 수 있습니다.  
+2. 속성 창에서 설정 된 **파일 경로** 라이브러리입니다. 상대 경로 또는 절대 경로 사용할 수 있습니다.  
   
-     가져온된 라이브러리는 읽기 전용 모드에서 DSL 탐색기에 나타납니다.  
+    가져온된 라이브러리는 읽기 전용 모드에서 DSL 탐색기에 나타납니다.  
   
-3.  가져온된 클래스를 기본 클래스로 사용할 수 있습니다. 가져오기 DSL에서 도메인 클래스를 만들고 속성 창의 설정 **기본 클래스** 가져온 클래스입니다.  
+3. 가져온된 클래스를 기본 클래스로 사용할 수 있습니다. 가져오기 DSL에서 도메인 클래스를 만들고 속성 창의 설정 **기본 클래스** 가져온 클래스입니다.  
   
-4.  모든 템플릿 변환 하는 클릭 합니다.  
+4. 모든 템플릿 변환 하는 클릭 합니다.  
   
-5.  DSL 라이브러리 프로젝트에서 빌드된 어셈블리 (DLL)에 대 한 참조를 DSL 프로젝트에 추가 합니다.  
+5. DSL 라이브러리 프로젝트에서 빌드된 어셈블리 (DLL)에 대 한 참조를 DSL 프로젝트에 추가 합니다.  
   
-6.  솔루션을 빌드합니다.  
+6. 솔루션을 빌드합니다.  
   
- DSL 라이브러리는 다른 라이브러리를 가져올 수 있습니다. 라이브러리를 가져올 때 해당 import도 자동으로 DSL 탐색기에 나타납니다.  
+   DSL 라이브러리는 다른 라이브러리를 가져올 수 있습니다. 라이브러리를 가져올 때 해당 import도 자동으로 DSL 탐색기에 나타납니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)

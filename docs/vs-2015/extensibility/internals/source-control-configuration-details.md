@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0c663e521e113de69e749a68bf3d81bfd523687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884162"
 ---
 # <a name="source-control-configuration-details"></a>소스 제어 구성 세부 정보
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "49297819"
   
  에 대 한 응답을 `IVsQueryEditQuerySave2::QueryEditFiles` 호출 환경에는 다음을 수행할 수:  
   
--   있는 경우 편집기 또는 프로젝트에에서 있어야 합니다 (클린) 상태로 변경 호출을 거부 합니다.  
+- 있는 경우 편집기 또는 프로젝트에에서 있어야 합니다 (클린) 상태로 변경 호출을 거부 합니다.  
   
--   문서 데이터를 다시 로드할지를 나타냅니다. 프로젝트의 경우 환경을 프로젝트에 대 한 데이터를 다시 로드 됩니다. 편집기를 통해 디스크에서 데이터를 다시 로드 해야 해당 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> 구현 합니다. 두 경우 모두에서 프로젝트 또는 편집기의 컨텍스트에서 데이터 다시 로드 되 면 변경할 수 있습니다.  
+- 문서 데이터를 다시 로드할지를 나타냅니다. 프로젝트의 경우 환경을 프로젝트에 대 한 데이터를 다시 로드 됩니다. 편집기를 통해 디스크에서 데이터를 다시 로드 해야 해당 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> 구현 합니다. 두 경우 모두에서 프로젝트 또는 편집기의 컨텍스트에서 데이터 다시 로드 되 면 변경할 수 있습니다.  
   
- 적절 한 개/보수를 복잡 하 고 어려운 작업은 `IVsQueryEditQuerySave2::QueryEditFiles` 기존 코드 베이스를 호출 합니다. 결과적으로, 프로젝트 또는 편집기를 만드는 동안 이러한 호출을 통합 해야 합니다.  
+  적절 한 개/보수를 복잡 하 고 어려운 작업은 `IVsQueryEditQuerySave2::QueryEditFiles` 기존 코드 베이스를 호출 합니다. 결과적으로, 프로젝트 또는 편집기를 만드는 동안 이러한 호출을 통합 해야 합니다.  
   
 ## <a name="request-permission-to-save-a-file"></a>파일을 저장할 수 있는 권한을 요청  
  프로젝트 또는 편집기 파일을 저장 하기 전에 호출 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>합니다. 프로젝트 파일에 대 한 프로젝트 파일을 저장 하는 시기는 솔루션에서 이러한 호출은 자동으로 완료할 수 있습니다. 편집기는 하지 않는 한 이러한 호출에 대 한 편집기 구현의 `IVsPersistDocData2` 도우미 함수를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>입니다. 편집기를 구현 하는 경우 `IVsPersistDocData2` 이 이렇게 하면 다음에 대 한 호출에서 `IVsQueryEditQuerySave2::QuerySaveFile` 또는 `IVsQueryEditQuerySave2::QuerySaveFiles` 수행 됩니다.  

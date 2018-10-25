@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25939a2ab8c98830c00c19b3e7c76c686a2a28ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50075d46edcf6ffc73ccdcdedb0daf42c8ff6e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827599"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>방법: Visual Studio의 특정 릴리스 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,20 +49,20 @@ ms.locfileid: "49289926"
   
 > [!IMPORTANT]
 >  사용하려는 언어에 따라 "enu"(영어)를 다음 값 중 하나로 바꾸세요.  
->   
->  -   chs(중국어 간체)  
-> -   cht(중국어 번체)  
-> -   csy(체코어)  
-> -   deu(독일어)  
-> -   esn(스페인어)  
-> -   fra(프랑스어)  
-> -   ita(이탈리아어)  
-> -   jpa(일본어)  
-> -   kor(한국어)  
-> -   plk(폴란드어)  
-> -   ptb(포르투갈어)  
-> -   rus(러시아어)  
-> -   trk(터키어)  
+> 
+> - chs(중국어 간체)  
+>   -   cht(중국어 번체)  
+>   -   csy(체코어)  
+>   -   deu(독일어)  
+>   -   esn(스페인어)  
+>   -   fra(프랑스어)  
+>   -   ita(이탈리아어)  
+>   -   jpa(일본어)  
+>   -   kor(한국어)  
+>   -   plk(폴란드어)  
+>   -   ptb(포르투갈어)  
+>   -   rus(러시아어)  
+>   -   trk(터키어)  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 관리자 가이드](../install/visual-studio-administrator-guide.md)

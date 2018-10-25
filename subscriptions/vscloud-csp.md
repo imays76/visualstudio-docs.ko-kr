@@ -9,12 +9,12 @@ description: 고객에 대한 Visual Studio 클라우드 구독 구입 및 관�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899463"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>고객에 대한 Visual Studio 클라우드 구독 구입 및 관리
 
@@ -75,6 +75,7 @@ Visual Studio 구독을 다른 사용자에게 다시 할당하려면 현재 구
 CSP 파트너에 대한 Visual Studio 가격 책정을 보려면 [파트너 센터](https://partnercenter.microsoft.com)에 로그인합니다.  왼쪽 탐색 창에서 **가격 책정 및 제품**을 선택합니다.  오른쪽 상단의 **사용량 기반 서비스**에서 현재 달 가격 책정 파일을 선택합니다. Excel 스프레드시트를 다운로드한 후 **Azure 가격 목록** 시트로 이동하여 **미터 범주** 열을 **Visual Studio**로 필터링합니다.
 
 이 스프레드시트에 나타나는 것을 해석하는 방법은 다음과 같습니다.
+
 | 미터 범주    |   name                 |  단위                                |           뭐냐 하면                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | 엔터프라이즈             |  구독                         | Visual Studio Enterprise 월간 구독   |
@@ -127,4 +128,4 @@ CSP 파트너에 대한 Visual Studio 가격 책정을 보려면 [파트너 센�
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>질문: CSP에 대한 Azure 개발/테스트 가격 책정 옵션이 있습니까?
 
-답변: 현재는 없습니다. 고객은 [Azure 개발/테스트 가격 책정](http://aka.ms/azuredevtestpricing)을 이용할 수 있지만 특히 CSP에 대해서는 아무것도 없습니다.
+답변: 현재는 없습니다. 고객은 [Azure 개발/테스트 가격 책정](http://aka.ms/azuredevtestpricing)을 이용할 수 있지만 특히 CSP에 대해서는 아무 것도 없습니다.

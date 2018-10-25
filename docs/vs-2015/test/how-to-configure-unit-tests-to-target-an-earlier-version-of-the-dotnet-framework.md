@@ -13,12 +13,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892794"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
   
  .NET Framework의 특정 버전을 대상으로 지정하는 단위 테스트 프로젝트를 만들 수 있습니다. 대상으로 지정된 버전은 3.5 이상이어야 하며 클라이언트 버전일 수 없습니다. Visual Studio를 통해 특정 버전을 대상으로 지정하는 단위 테스트에 대한 다음과 같은 기본 지원을 제공할 수 있습니다.  
   
--   단위 테스트 프로젝트를 만들고 .NET Framework의 특정 버전을 프로젝트 대상으로 지정할 수 있습니다.  
+- 단위 테스트 프로젝트를 만들고 .NET Framework의 특정 버전을 프로젝트 대상으로 지정할 수 있습니다.  
   
--   로컬 컴퓨터의 Visual Studio에서 .NET Framework의 특정 버전을 대상으로 지정하는 단위 테스트를 실행할 수 있습니다.  
+- 로컬 컴퓨터의 Visual Studio에서 .NET Framework의 특정 버전을 대상으로 지정하는 단위 테스트를 실행할 수 있습니다.  
   
--   명령 프롬프트에서 MSTest.exe를 사용하여 .NET Framework의 특정 버전을 대상으로 지정하는 단위 테스트를 실행할 수 있습니다.  
+- 명령 프롬프트에서 MSTest.exe를 사용하여 .NET Framework의 특정 버전을 대상으로 지정하는 단위 테스트를 실행할 수 있습니다.  
   
--   빌드 에이전트에서 단위 테스트를 빌드의 일부로 실행할 수 있습니다.  
+- 빌드 에이전트에서 단위 테스트를 빌드의 일부로 실행할 수 있습니다.  
   
- **SharePoint 응용 프로그램 테스트**  
+  **SharePoint 응용 프로그램 테스트**  
   
- 위에 나열된 기능을 통해 Visual Studio를 사용하는 SharePoint 응용 프로그램에 대한 단위 테스트 및 통합 테스트를 작성할 수 있습니다. [!INCLUDE[crabout](../includes/crabout-md.md)] Visual Studio를 사용하여 SharePoint 응용 프로그램을 개발하는 방법은 [SharePoint 솔루션 만들기](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [SharePoint 솔루션 빌드 및 디버깅](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) 및 [SharePoint 코드 확인 및 디버깅](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)을 참조하세요.  
+  위에 나열된 기능을 통해 Visual Studio를 사용하는 SharePoint 응용 프로그램에 대한 단위 테스트 및 통합 테스트를 작성할 수 있습니다. [!INCLUDE[crabout](../includes/crabout-md.md)] Visual Studio를 사용하여 SharePoint 응용 프로그램을 개발하는 방법은 [SharePoint 솔루션 만들기](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [SharePoint 솔루션 빌드 및 디버깅](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) 및 [SharePoint 코드 확인 및 디버깅](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)을 참조하세요.  
   
- **제한 사항**  
+  **제한 사항**  
   
- .NET Framework의 이전 버전을 사용하기 위해 테스트 프로젝트의 대상으로 다시 지정할 경우 다음 제한 사항에 적용됩니다.  
+  .NET Framework의 이전 버전을 사용하기 위해 테스트 프로젝트의 대상으로 다시 지정할 경우 다음 제한 사항에 적용됩니다.  
   
--   .NET Framework 3.5에서는 단위 테스트만 포함된 테스트 프로젝트에 대해 여러 대상을 지정할 수 있습니다. .NET Framework 3.5에서는 코딩된 UI 또는 로드 테스트 등의 다른 테스트 형식을 지원하지 않습니다. 단위 테스트 이외의 테스트 형식에 대한 대상은 다시 지정할 수 없습니다.  
+- .NET Framework 3.5에서는 단위 테스트만 포함된 테스트 프로젝트에 대해 여러 대상을 지정할 수 있습니다. .NET Framework 3.5에서는 코딩된 UI 또는 로드 테스트 등의 다른 테스트 형식을 지원하지 않습니다. 단위 테스트 이외의 테스트 형식에 대한 대상은 다시 지정할 수 없습니다.  
   
--   .NET Framework의 이전 버전이 대상으로 지정된 테스트는 기본 호스트 어댑터에서만 실행할 수 있습니다. ASP.NET 호스트 어댑터에서는 이 기능이 지원되지 않습니다. ASP.NET 개발 서버 컨텍스트에서 실행해야 하는 ASP.NET 응용 프로그램은 .NET Framework의 현재 버전과 호환되어야 합니다.  
+- .NET Framework의 이전 버전이 대상으로 지정된 테스트는 기본 호스트 어댑터에서만 실행할 수 있습니다. ASP.NET 호스트 어댑터에서는 이 기능이 지원되지 않습니다. ASP.NET 개발 서버 컨텍스트에서 실행해야 하는 ASP.NET 응용 프로그램은 .NET Framework의 현재 버전과 호환되어야 합니다.  
   
--   .NET Framework 3.5 멀티 타기팅을 지원하는 테스트를 실행할 경우 데이터 수집 지원이 사용하지 않도록 설정됩니다. Visual Studio 명령줄 도구를 사용하여 코드 검사를 실행할 수 있습니다.  
+- .NET Framework 3.5 멀티 타기팅을 지원하는 테스트를 실행할 경우 데이터 수집 지원이 사용하지 않도록 설정됩니다. Visual Studio 명령줄 도구를 사용하여 코드 검사를 실행할 수 있습니다.  
   
--   .NET Framework 3.5를 사용하는 단위 테스트는 원격 컴퓨터에서 실행할 수 없습니다.  
+- .NET Framework 3.5를 사용하는 단위 테스트는 원격 컴퓨터에서 실행할 수 없습니다.  
   
--   프레임워크의 이전 클라이언트 버전을 단위 테스트의 대상으로 지정할 수 없습니다.  
+- 프레임워크의 이전 클라이언트 버전을 단위 테스트의 대상으로 지정할 수 없습니다.  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Visual Basic 단위 테스트 프로젝트용 특정 버전 .NET Framework로 대상 다시 지정  
   

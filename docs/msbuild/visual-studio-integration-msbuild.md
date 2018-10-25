@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65dd8415dc57c026d2a913b209340e381b07bc6a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875478"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
 Visual Studio는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 를 호스팅하여 관리되는 프로젝트를 로드하고 빌드합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 에서 프로젝트를 관리하므로 프로젝트가 다른 도구에서 작성되어 사용자 지정된 빌드 프로세스를 가지더라도 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 형식의 프로젝트는 대부분 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용될 수 있습니다.  
@@ -68,9 +68,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>In-Process 컴파일러  
  가능한 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서는 성능 향상을 위해 in-process 버전의 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 컴파일러를 사용하려고 시도합니다. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]에는 적용되지 않습니다. 이러한 시도는 다음 조건이 충족되어야 제대로 작동합니다.  
   
--   프로젝트 대상에 `Vbc` 프로젝트에 대한 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 작업이 있어야 합니다.  
+- 프로젝트 대상에 `Vbc` 프로젝트에 대한 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 작업이 있어야 합니다.  
   
--   작업의 `UseHostCompilerIfAvailable` 매개 변수가 true로 설정되어 있어야 합니다.  
+- 작업의 `UseHostCompilerIfAvailable` 매개 변수가 true로 설정되어 있어야 합니다.  
   
 ## <a name="design-time-intellisense"></a>디자인 타임 IntelliSense  
  빌드에서 출력 어셈블리를 생성하기 전에 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 IntelliSense 지원을 받으려면 다음 조건이 충족되어야 합니다.  
@@ -157,23 +157,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>참조 확인  
  참조 확인은 프로젝트 파일에 저장된 참조 항목을 사용하여 실제 어셈블리를 찾는 과정입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서는 **속성** 창에 각 참조에 대한 자세한 속성을 표시하기 위해 참조 확인을 트리거해야 합니다. 다음 목록에서는 세 가지 참조 형식과 참조 확인 방법을 설명합니다.  
   
--   어셈블리 참조:  
+- 어셈블리 참조:  
   
-     프로젝트 시스템에서 잘 알려진 이름이 `ResolveAssemblyReferences`인 대상을 호출합니다. 이 대상은 항목 형식 이름이 `ReferencePath`인 항목을 출력해야 합니다. 이러한 항목에는 각각 참조에 대한 전체 경로를 포함하는 항목 사양(항목의 `Include` 특성 값)이 있어야 합니다. 항목에는 다음과 같은 새 메타데이터 외에 전달된 입력 항목의 모든 메타데이터가 있어야 합니다.  
+   프로젝트 시스템에서 잘 알려진 이름이 `ResolveAssemblyReferences`인 대상을 호출합니다. 이 대상은 항목 형식 이름이 `ReferencePath`인 항목을 출력해야 합니다. 이러한 항목에는 각각 참조에 대한 전체 경로를 포함하는 항목 사양(항목의 `Include` 특성 값)이 있어야 합니다. 항목에는 다음과 같은 새 메타데이터 외에 전달된 입력 항목의 모든 메타데이터가 있어야 합니다.  
   
-    -   `CopyLocal`: 어셈블리를 출력 폴더로 복사할지 여부를 true 또는 false로 설정하여 나타냅니다.  
+  - `CopyLocal`: 어셈블리를 출력 폴더로 복사할지 여부를 true 또는 false로 설정하여 나타냅니다.  
   
-    -   `OriginalItemSpec`: 참조의 원본 항목 사양이 포함되어 있습니다.  
+  - `OriginalItemSpec`: 참조의 원본 항목 사양이 포함되어 있습니다.  
   
-    -   `ResolvedFrom`: [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 디렉터리에서 확인된 경우 "{TargetFrameworkDirectory}"로 설정됩니다.  
+  - `ResolvedFrom`: [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 디렉터리에서 확인된 경우 "{TargetFrameworkDirectory}"로 설정됩니다.  
   
--   COM 참조:  
+- COM 참조:  
   
-     프로젝트 시스템에서 잘 알려진 이름이 `ResolveCOMReferences`인 대상을 호출합니다. 이 대상은 항목 형식 이름이 `ComReferenceWrappers`인 항목을 출력해야 합니다. 이러한 항목에는 각각 COM 참조에 대해 Interop 어셈블리의 전체 경로를 포함하는 항목 사양이 있어야 합니다. 항목에는 전달된 입력 항목의 모든 메타데이터와 함께, 어셈블리를 출력 폴더로 복사할지 여부를 true 또는 false로 설정하여 나타내는 `CopyLocal`이라는 이름의 새 메타데이터가 있어야 합니다.  
+   프로젝트 시스템에서 잘 알려진 이름이 `ResolveCOMReferences`인 대상을 호출합니다. 이 대상은 항목 형식 이름이 `ComReferenceWrappers`인 항목을 출력해야 합니다. 이러한 항목에는 각각 COM 참조에 대해 Interop 어셈블리의 전체 경로를 포함하는 항목 사양이 있어야 합니다. 항목에는 전달된 입력 항목의 모든 메타데이터와 함께, 어셈블리를 출력 폴더로 복사할지 여부를 true 또는 false로 설정하여 나타내는 `CopyLocal`이라는 이름의 새 메타데이터가 있어야 합니다.  
   
--   네이티브 참조  
+- 네이티브 참조  
   
-     프로젝트 시스템에서 잘 알려진 이름이 `ResolveNativeReferences`인 대상을 호출합니다. 이 대상은 항목 형식 이름이 `NativeReferenceFile`인 항목을 출력해야 합니다. 항목에는 전달된 입력 항목의 모든 메타데이터와 함께, 참조의 원본 항목 사양이 포함되어 있는 `OriginalItemSpec`이라는 새로운 메타데이터 부분이 있어야 합니다.  
+   프로젝트 시스템에서 잘 알려진 이름이 `ResolveNativeReferences`인 대상을 호출합니다. 이 대상은 항목 형식 이름이 `NativeReferenceFile`인 항목을 출력해야 합니다. 항목에는 전달된 입력 항목의 모든 메타데이터와 함께, 참조의 원본 항목 사양이 포함되어 있는 `OriginalItemSpec`이라는 새로운 메타데이터 부분이 있어야 합니다.  
   
 ## <a name="performance-shortcuts"></a>성능 바로 가기  
  Visual Studio UI에서 디버깅을 시작하는 경우(F5 키를 선택하거나 메뉴 모음에서 **디버그** > **디버깅 시작** 선택), 빌드 프로세스는 성능 향상을 위해 빠른 업데이트 검사를 사용합니다. 사용자 지정된 빌드가 이후에 다시 빌드되는 파일을 생성하는 경우, 빠른 업데이트 검사에서 변경된 파일이 올바르게 식별되지 않습니다. 보다 철저한 업데이트 검사가 필요한 프로젝트에서는 환경 변수 `DISABLEFASTUPTODATECHECK=1`을 설정하여 빠른 검사를 해제할 수 있습니다. 또는 프로젝트에서 이 항목을 프로젝트의 또는 프로젝트가 가져오는 파일의 MSBuild 속성으로 설정할 수 있습니다.  

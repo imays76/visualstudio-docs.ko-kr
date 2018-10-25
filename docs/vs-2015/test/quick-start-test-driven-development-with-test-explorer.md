@@ -13,12 +13,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 335219920a10816535f19e7fc21d856b1eb1cd06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831694"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>퀵 스타트: 테스트 탐색기를 사용한 테스트 기반 개발
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,33 +38,33 @@ ms.locfileid: "49212344"
   
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트를 실행하려면  
   
-1.  선택한 테스트 프레임워크를 사용하는 단위 테스트를 만듭니다.  
+1. 선택한 테스트 프레임워크를 사용하는 단위 테스트를 만듭니다.  
   
-     예를 들어, MSTest Framework를 사용하는 테스트를 만듭니다.  
+    예를 들어, MSTest Framework를 사용하는 테스트를 만듭니다.  
   
-    1.  테스트 프로젝트를 만듭니다.  
+   1.  테스트 프로젝트를 만듭니다.  
   
-         **새 프로젝트** 대화 상자에서 **Visual Basic**, **Visual C#** 또는 **Visual C++** 를 확장한 다음 **테스트**를 선택합니다.  
+        **새 프로젝트** 대화 상자에서 **Visual Basic**, **Visual C#** 또는 **Visual C++** 를 확장한 다음 **테스트**를 선택합니다.  
   
-         **단위 테스트 프로젝트**를 선택합니다.  
+        **단위 테스트 프로젝트**를 선택합니다.  
   
-    2.  각 단위 테스트를 메서드로 작성합니다. 각 테스트 메서드 앞에 `[TestMethod]` 특성을 접두사로 지정합니다.  
+   2.  각 단위 테스트를 메서드로 작성합니다. 각 테스트 메서드 앞에 `[TestMethod]` 특성을 접두사로 지정합니다.  
   
-2.  개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.  
+2. 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.  
   
-3.  메뉴 모음에서 **테스트**, **단위 테스트 실행**, **모든 테스트**를 선택합니다.  
+3. 메뉴 모음에서 **테스트**, **단위 테스트 실행**, **모든 테스트**를 선택합니다.  
   
-     솔루션이 빌드되고 테스트가 실행됩니다.  
+    솔루션이 빌드되고 테스트가 실행됩니다.  
   
-     테스트 탐색기가 열리고 결과 요약이 표시됩니다.  
+    테스트 탐색기가 열리고 결과 요약이 표시됩니다.  
   
- **전체 테스트 목록을 보려면** 아무 범주에서나 **모두 표시** 를 선택합니다.  
+   **전체 테스트 목록을 보려면** 아무 범주에서나 **모두 표시** 를 선택합니다.  
   
- **테스트 결과의 세부 정보를 보려면** 세부 정보 창에서 예외 메시지와 같은 세부 정보를 표시할 테스트를 테스트 탐색기에서 선택합니다.  
+   **테스트 결과의 세부 정보를 보려면** 세부 정보 창에서 예외 메시지와 같은 세부 정보를 표시할 테스트를 테스트 탐색기에서 선택합니다.  
   
- **테스트 코드로 이동하려면** 테스트 탐색기에서 테스트를 두 번 클릭하거나 바로 가기 메뉴에서 **테스트 열기** 를 선택합니다.  
+   **테스트 코드로 이동하려면** 테스트 탐색기에서 테스트를 두 번 클릭하거나 바로 가기 메뉴에서 **테스트 열기** 를 선택합니다.  
   
- **테스트를 디버깅하려면** 하나 이상의 테스트에 대한 바로 가기를 열고 나서 **선택한 테스트 디버그**를 선택합니다.  
+   **테스트를 디버깅하려면** 하나 이상의 테스트에 대한 바로 가기를 열고 나서 **선택한 테스트 디버그**를 선택합니다.  
   
 > [!IMPORTANT]
 >  표시되는 결과는 최근 실행에 대한 결과입니다. 결과 색상 막대에는 실행된 테스트에 대한 결과만 표시됩니다. 예를 들어, 여러 테스트를 실행했지만 그 중 일부가 실패하고 성공한 테스트만 실행할 경우 결과 모음에 모두 녹색으로 표시됩니다.  
@@ -77,61 +77,61 @@ ms.locfileid: "49212344"
   
 #### <a name="creating-the-test-and-method"></a>테스트 및 메서드 만들기  
   
-1.  Visual C# 클래스 라이브러리 프로젝트를 만듭니다. 이 프로젝트에는 전달할 코드가 포함됩니다. 이 예제에서는 `MyMath`이라는 이름으로 지정됩니다.  
+1. Visual C# 클래스 라이브러리 프로젝트를 만듭니다. 이 프로젝트에는 전달할 코드가 포함됩니다. 이 예제에서는 `MyMath`이라는 이름으로 지정됩니다.  
   
-2.  테스트 프로젝트를 만듭니다.  
+2. 테스트 프로젝트를 만듭니다.  
   
-    -   **새 프로젝트** 대화 상자에서 **Visual C#** 을 선택하고 **테스트** 를 선택한 다음 **단위 테스트 프로젝트**를 선택합니다.  
+   -   **새 프로젝트** 대화 상자에서 **Visual C#** 을 선택하고 **테스트** 를 선택한 다음 **단위 테스트 프로젝트**를 선택합니다.  
   
-         ![새 코드 및 테스트 프로젝트](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
+        ![새 코드 및 테스트 프로젝트](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
-3.  기본 테스트 메서드를 작성합니다. 특정 입력에 대해 얻은 결과를 확인합니다.  
+3. 기본 테스트 메서드를 작성합니다. 특정 입력에 대해 얻은 결과를 확인합니다.  
   
-    ```csharp  
+   ```csharp  
   
-    [TestMethod]  
-    public void BasicRooterTest()  
-    {  
-      // Create an instance to test:  
-      Rooter rooter = new Rooter();  
-      // Define a test input and output value:  
-      double expectedResult = 2.0;  
-      double input = expectedResult * expectedResult;  
-      // Run the method under test:  
-      double actualResult = rooter.SquareRoot(input);  
-      // Verify the result:  
-      Assert.AreEqual(expectedResult, actualResult,  
-          delta: expectedResult / 100);  
-    }  
-    ```  
+   [TestMethod]  
+   public void BasicRooterTest()  
+   {  
+     // Create an instance to test:  
+     Rooter rooter = new Rooter();  
+     // Define a test input and output value:  
+     double expectedResult = 2.0;  
+     double input = expectedResult * expectedResult;  
+     // Run the method under test:  
+     double actualResult = rooter.SquareRoot(input);  
+     // Verify the result:  
+     Assert.AreEqual(expectedResult, actualResult,  
+         delta: expectedResult / 100);  
+   }  
+   ```  
   
-4.  테스트에서 메서드를 생성합니다.  
+4. 테스트에서 메서드를 생성합니다.  
   
-    1.  커서를 `Rooter`에 놓고 나서 바로 가기 메뉴에서 **생성**, **새 형식**을 선택합니다.  
+   1.  커서를 `Rooter`에 놓고 나서 바로 가기 메뉴에서 **생성**, **새 형식**을 선택합니다.  
   
-    2.  **새 형식 생성** 대화 상자에서 **프로젝트** 를 클래스 라이브러리 프로젝트로 설정합니다. 이 예제에서는 `MyMath`입니다.  
+   2.  **새 형식 생성** 대화 상자에서 **프로젝트** 를 클래스 라이브러리 프로젝트로 설정합니다. 이 예제에서는 `MyMath`입니다.  
   
-    3.  커서를 `SquareRoot`에 놓고 나서 바로 가기 메뉴에서 **생성**, **메서드 스텁**을 선택합니다.  
+   3.  커서를 `SquareRoot`에 놓고 나서 바로 가기 메뉴에서 **생성**, **메서드 스텁**을 선택합니다.  
   
-5.  단위 테스트를 실행합니다.  
+5. 단위 테스트를 실행합니다.  
   
-    1.  **테스트** 메뉴에서 **단위 테스트 실행**, **모든 테스트**를 선택합니다.  
+   1.  **테스트** 메뉴에서 **단위 테스트 실행**, **모든 테스트**를 선택합니다.  
   
-         솔루션이 빌드되고 실행됩니다.  
+        솔루션이 빌드되고 실행됩니다.  
   
-         테스트 탐색기가 열리고 결과가 표시됩니다.  
+        테스트 탐색기가 열리고 결과가 표시됩니다.  
   
-         **실패한 테스트**에 테스트가 나타납니다.  
+        **실패한 테스트**에 테스트가 나타납니다.  
   
-6.  테스트의 이름을 선택합니다.  
+6. 테스트의 이름을 선택합니다.  
   
-     테스트의 세부 정보가 테스트 탐색기 아래 부분에 나타납니다.  
+    테스트의 세부 정보가 테스트 탐색기 아래 부분에 나타납니다.  
   
-7.  **스택 추적** 에서 테스트가 실패한 위치를 확인할 항목을 선택합니다.  
+7. **스택 추적** 에서 테스트가 실패한 위치를 확인할 항목을 선택합니다.  
   
- ![실패한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![실패한 테스트를 보여 주는 단위 테스트 탐색기.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
- 이제 테스트를 만들었으며 테스트를 통과하도록 수정할 스텁을 만들었습니다.  
+   이제 테스트를 만들었으며 테스트를 통과하도록 수정할 스텁을 만들었습니다.  
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>변경할 때마다 모든 테스트를 통과하도록 만들기  
   

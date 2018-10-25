@@ -17,12 +17,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824284"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용 하 여 간단한 데이터 응용 프로그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,41 +52,41 @@ ms.locfileid: "49204311"
 ## <a name="prerequisites"></a>전제 조건  
  응용 프로그램을 만들려면 다음이 필요 합니다.  
   
--   Visual Studio Community Edition입니다.  
+- Visual Studio Community Edition입니다.  
   
--   SQL Server Express LocalDB입니다.  
+- SQL Server Express LocalDB입니다.  
   
--   단계를 수행 하 여 만든 작은 예제 데이터베이스 [스크립트를 사용 하 여 SQL 데이터베이스를 만들](../data-tools/create-a-sql-database-by-using-a-script.md)합니다.  
+- 단계를 수행 하 여 만든 작은 예제 데이터베이스 [스크립트를 사용 하 여 SQL 데이터베이스를 만들](../data-tools/create-a-sql-database-by-using-a-script.md)합니다.  
   
--   데이터베이스에 대해 설정한 연결 문자열입니다. 열어이 값을 찾을 수 있습니다 **SQL Server 개체 탐색기**데이터베이스에 대 한 바로 가기 메뉴를 열고, 선택 **속성**, 고 다음으로 스크롤 하는 **ConnectionString** 속성입니다.  
+- 데이터베이스에 대해 설정한 연결 문자열입니다. 열어이 값을 찾을 수 있습니다 **SQL Server 개체 탐색기**데이터베이스에 대 한 바로 가기 메뉴를 열고, 선택 **속성**, 고 다음으로 스크롤 하는 **ConnectionString** 속성입니다.  
   
- 이 항목에서는 사용자가 Visual Studio IDE의 기본 기능에 익숙하고 Windows Forms 응용 프로그램 작성, 프로젝트에 폼 추가, 폼에 단추 및 기타 컨트롤 배치, 이러한 컨트롤의 속성 설정 및 간단한 이벤트 코드 작성을 수행할 수 있다고 가정합니다. 이러한 작업에 익숙하지 경우 완료 하는 것이 좋습니다 합니다 [Getting Started with Visual C# 및 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) 이 항목에서는 시작 하기 전에 합니다.  
+  이 항목에서는 사용자가 Visual Studio IDE의 기본 기능에 익숙하고 Windows Forms 응용 프로그램 작성, 프로젝트에 폼 추가, 폼에 단추 및 기타 컨트롤 배치, 이러한 컨트롤의 속성 설정 및 간단한 이벤트 코드 작성을 수행할 수 있다고 가정합니다. 이러한 작업에 익숙하지 경우 완료 하는 것이 좋습니다 합니다 [Getting Started with Visual C# 및 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) 이 항목에서는 시작 하기 전에 합니다.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> 샘플 데이터베이스 설정  
  이 연습의 샘플 데이터베이스는 고객 및 주문 테이블로 구성되어 있습니다. 테이블에는 처음에 데이터가 없지만 사용자가 만드는 응용 프로그램을 실행할 때 데이터가 추가됩니다. 데이터베이스에는 5개의 간단한 저장 프로시저도 있습니다. [스크립트를 사용 하 여 SQL database 만들기](../data-tools/create-a-sql-database-by-using-a-script.md) 테이블, 기본 및 외래 키, 제약 조건 및 저장된 프로시저를 만드는 TRANSACT-SQL 스크립트가 들어 있습니다.  
   
 ##  <a name="BKMK_createtheformsandaddcontrols"></a> 폼 만들기 및 컨트롤 추가  
   
-1.  Windows Forms 응용 프로그램의 경우 프로젝트를 만들고 SimpleDataApp 이름입니다.  
+1. Windows Forms 응용 프로그램의 경우 프로젝트를 만들고 SimpleDataApp 이름입니다.  
   
-     Visual Studio에서 프로젝트와 Form1이라는 빈 Windows 폼을 포함한 여러 파일을 만듭니다.  
+    Visual Studio에서 프로젝트와 Form1이라는 빈 Windows 폼을 포함한 여러 파일을 만듭니다.  
   
-2.  세 개의 폼을 갖도록 두 개의 Windows forms 프로젝트에 추가 하 고 다음과 같은 이름 지정:  
+2. 세 개의 폼을 갖도록 두 개의 Windows forms 프로젝트에 추가 하 고 다음과 같은 이름 지정:  
   
-    -   탐색  
+   -   탐색  
   
-    -   NewCustomer  
+   -   NewCustomer  
   
-    -   FillOrCancel  
+   -   FillOrCancel  
   
-3.  각 폼에 대해 다음 그림에 나오는 텍스트 상자, 단추 및 기타 컨트롤을 추가합니다. 각 컨트롤에 대해 테이블이 설명하는 속성을 설정합니다.  
+3. 각 폼에 대해 다음 그림에 나오는 텍스트 상자, 단추 및 기타 컨트롤을 추가합니다. 각 컨트롤에 대해 테이블이 설명하는 속성을 설정합니다.  
   
-    > [!NOTE]
-    >  그룹 상자 및 레이블 컨트롤도 선명성을 더해 주지만 코드에서는 사용하지 않습니다.  
+   > [!NOTE]
+   >  그룹 상자 및 레이블 컨트롤도 선명성을 더해 주지만 코드에서는 사용하지 않습니다.  
   
- **Navigation 폼**  
+   **Navigation 폼**  
   
- ![탐색 대화 상자](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+   ![탐색 대화 상자](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
 |Navigation 폼 컨트롤|속성|  
 |--------------------------------------|----------------|  

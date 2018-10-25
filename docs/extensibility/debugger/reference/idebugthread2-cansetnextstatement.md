@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0482f460e86944d80f7ae1988fa97118071466c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af14a59251aecf7e54d156d777db0f1d799348a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891325"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 지정 된 스택 프레임에 현재 명령 포인터를 설정할 수 있는지 여부를 결정 합니다.  
@@ -43,16 +43,16 @@ int CanSetNextStatement (
   
 #### <a name="parameters"></a>매개 변수  
  `pStackFrame`  
- 나중에 사용 됩니다. null 값으로 설정 합니다. Null 값 이면 현재 스택 프레임을 사용 합니다.  
+ 사용 하도록 예약 됩니다. null 값으로 설정 합니다. Null 값 이면 현재 스택 프레임을 사용 합니다.  
   
  `pCodeContext`  
  [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 실행 될 코드 위치를 설명 하는 개체 및 컨텍스트.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드가 반환 하는 경우 `S_OK`, 다음 호출에서 [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) 메서드를 실제로 다음 문 설정 합니다.  
+ 이 메서드가 반환 하는 경우 `S_OK`를 호출 합니다 [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) 실제로 다음 문 설정 하는 방법입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

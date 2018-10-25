@@ -15,25 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10c21ef1ced2e5237ac0cf940d7561d39e863d4f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 675831a8e094728a142bebf0432838030ae8791d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883486"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 또는.NET Framework 4.5로 마이그레이션하는 Office 프로젝트를 실행 하는 필요한 변경
   Office 프로젝트의 대상 프레임 워크를 변경 된 경우는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 나중에.NET Framework의 이전 버전에서 수행 해야 솔루션을 개발 컴퓨터에 최종 사용자 컴퓨터에서 실행할 수 있도록 다음 작업을 합니다.  
   
--   Visual Studio 2008에서 업그레이드한 경우 프로젝트에서 <xref:System.Security.SecurityTransparentAttribute>를 제거합니다.  
+- Visual Studio 2008에서 업그레이드한 경우 프로젝트에서 <xref:System.Security.SecurityTransparentAttribute>를 제거합니다.  
   
--   수행 된 **정리** 실행 하거나 개발 컴퓨터에서 프로젝트를 디버깅할 수 있으려면 Visual Studio에서 명령을 합니다.  
+- 수행 된 **정리** 실행 하거나 개발 컴퓨터에서 프로젝트를 디버깅할 수 있으려면 Visual Studio에서 명령을 합니다.  
   
--   프로젝트에 대한 .NET Framework 필수 조건을 업데이트합니다.  
+- 프로젝트에 대한 .NET Framework 필수 조건을 업데이트합니다.  
   
--   또한 대상 프레임워크를 변경하기 전에 ClickOnce를 사용하여 이전에 배포한 경우 최종 사용자가 솔루션을 다시 설치해야 합니다.  
+- 또한 대상 프레임워크를 변경하기 전에 ClickOnce를 사용하여 이전에 배포한 경우 최종 사용자가 솔루션을 다시 설치해야 합니다.  
   
- 이러한 각 작업에 대한 자세한 내용은 아래 해당 섹션을 참조하세요.  
+  이러한 각 작업에 대한 자세한 내용은 아래 해당 섹션을 참조하세요.  
   
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Visual Studio 2008에서 업그레이드 하는 프로젝트에서 SecurityTransparent 특성 제거  
  Visual Studio 2008에서 Office 프로젝트를 업그레이드하고 프로젝트의 대상 프레임워크가 이후에 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상 버전으로 변경되는 경우 프로젝트에서 <xref:System.Security.SecurityTransparentAttribute>를 제거해야 합니다. Visual Studio에서 자동으로 이 특성을 제거하지 않습니다. 이 특성을 제거하지 않으면 프로젝트를 컴파일할 때 오류 메시지가 수신됩니다.  

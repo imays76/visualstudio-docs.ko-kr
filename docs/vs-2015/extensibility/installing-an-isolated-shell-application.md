@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880513"
 ---
 # <a name="installing-an-isolated-shell-application"></a>격리 셸 응용 프로그램 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 셸 앱을 설치 하려면 다음 단계를 수행 해야 합니다.  
   
--   솔루션을 준비 합니다.  
+- 솔루션을 준비 합니다.  
   
--   응용 프로그램에 대 한 Windows Installer (MSI) 패키지를 만듭니다.  
+- 응용 프로그램에 대 한 Windows Installer (MSI) 패키지를 만듭니다.  
   
--   설치 프로그램 부트스트래퍼를 만듭니다.  
+- 설치 프로그램 부트스트래퍼를 만듭니다.  
   
- 이 문서의 예제에서는 코드를 모두 제공 되는 [셸 배포 샘플](http://go.microsoft.com/fwlink/?LinkId=262245), MSDN 웹 사이트 코드 갤러리에서 다운로드할 수 있습니다. 샘플은 이러한 각 단계를 수행 하는 결과 보여줍니다.  
+  이 문서의 예제에서는 코드를 모두 제공 되는 [셸 배포 샘플](http://go.microsoft.com/fwlink/?LinkId=262245), MSDN 웹 사이트 코드 갤러리에서 다운로드할 수 있습니다. 샘플은 이러한 각 단계를 수행 하는 결과 보여줍니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 항목에 설명 된 절차를 수행 하려면 다음 도구는 컴퓨터에 설치 되어야 합니다.  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
--   합니다 [Windows Installer XML 도구 집합](http://go.microsoft.com/fwlink/?LinkId=82720) 버전 3.6  
+- 합니다 [Windows Installer XML 도구 집합](http://go.microsoft.com/fwlink/?LinkId=82720) 버전 3.6  
   
- 이 샘플은 Microsoft Visualization and Modeling SDK를 모든 셸에 필요한에 필요 합니다.  
+  이 샘플은 Microsoft Visualization and Modeling SDK를 모든 셸에 필요한에 필요 합니다.  
   
 ## <a name="preparing-your-solution"></a>솔루션 준비  
  기본적으로 셸 템플릿을 VSIX 패키지를 빌드 하지만이 문제는 주로 디버깅용으로 사용 합니다. 셸 응용 프로그램을 배포 하는 경우 설치 하는 동안 다시 시작 하 고 레지스트리 액세스를 허용 하도록 MSI 패키지를 사용 해야 합니다. MSI 배포에 대 한 응용 프로그램을 준비 하려면 다음 단계를 수행 합니다.  

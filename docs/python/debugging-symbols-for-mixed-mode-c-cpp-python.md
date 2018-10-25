@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ddb171a32af89e384122a733208f92d70ad624b5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e551ee503fc0083c81db44327c50965ea45d0c21
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547960"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411029"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Python 인터프리터에 대한 디버깅 기호 설치
 
@@ -77,6 +77,7 @@ Visual Studio는 기호가 필요한 경우(일반적으로 혼합 모드 디버
 | 3.3.2 | [32비트](https://www.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64비트](https://www.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
 | 3.3.1 | [32비트](https://www.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64비트](https://www.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
 | 3.3.0 | [32비트](https://www.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64비트](https://www.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 2.7.12 | [32비트](https://www.python.org/ftp/python/2.7.12/python-2.7.12-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.12/python-2.7.12.amd64-pdb.zip) |
 | 2.7.11 | [32비트](https://www.python.org/ftp/python/2.7.11/python-2.7.11-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.11/python-2.7.11.amd64-pdb.zip) |
 | 2.7.10 | [32비트](https://www.python.org/ftp/python/2.7.10/python-2.7.10-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64-pdb.zip) |
 | 2.7.9 | [32비트](https://www.python.org/ftp/python/2.7.9/python-2.7.9-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64-pdb.zip) |

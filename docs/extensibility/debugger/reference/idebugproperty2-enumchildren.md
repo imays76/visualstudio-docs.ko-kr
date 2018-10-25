@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9631ee89dc9d241932b745db4ce094799a899bad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79ac095f5e988b98d55b2837e70a1c0d3832b855
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847034"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 속성의 자식 목록을 검색합니다.  
@@ -53,25 +53,25 @@ int EnumChildren (
   
 #### <a name="parameters"></a>매개 변수  
  `dwFields`  
- [in] 플래그의 조합을 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 에 열거 된 필드를 지정 하는 열거형 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체가을 입력 합니다.  
+ [in] 플래그의 조합을 합니다 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 열거형의 열거 된 필드를 지정 하는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 채울 구조체가 합니다.  
   
  `dwRadix`  
  [in] 모든 숫자 정보를 서식 지정 하는 데 사용할 기 수를 지정 합니다.  
   
  `guidFilter`  
- [in] 사용 하는 필터의 GUID는 `dwAttribFilter` 및 `pszNameFilter` 매개 변수를 선택할 `DEBUG_PROPERTY_INFO` 자식 항목을 열거할 수는 있습니다. 예를 들어 `guidFilterLocals` 지역 변수에 대 한 필터입니다.  
+ [in] 사용 하 여 사용 하는 필터의 GUID를 `dwAttribFilter` 및 `pszNameFilter` 매개 변수는 선택 `DEBUG_PROPERTY_INFO` 열거할 자식은 합니다. 예를 들어 `guidFilterLocals` 로컬 변수에 대 한 필터입니다.  
   
  `dwAttribFilter`  
- [in] 플래그의 조합 된 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 예를 들어 열거할 개체의 유형을 지정 하는 열거형 `DBG_ATTRIB_METHOD` 이 속성의 자식일 수 있는 모든 메서드에 대 한 합니다. 와 함께 사용 된 `guidFilter` 및 `pszNameFilter` 매개 변수입니다.  
+ [in] 플래그의 조합을 합니다 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 열거할 예를 들어 개체의 유형을 지정 하는 열거형 `DBG_ATTRIB_METHOD` 이 속성의 자식일 수 있는 모든 메서드에 대 한 합니다. 와 함께 사용 합니다 `guidFilter` 고 `pszNameFilter` 매개 변수입니다.  
   
  `pszNameFilter`  
- [in] 함께 사용할 필터의 이름을 `guidFilter` 및 `dwAttribFilter` 매개 변수를 선택할 `DEBUG_PROPERTY_INFO` 자식 항목을 열거할 수는 있습니다. 예를 들어 "MyX" 이름 가진 모든 자식에 대 한 "MyX" 필터에이 매개 변수를 설정  
+ [in] 사용한 필터의 이름을 합니다 `guidFilter` 및 `dwAttribFilter` 매개 변수는 선택 `DEBUG_PROPERTY_INFO` 자식은을 열거할 수. 예를 들어, "MyX" 필터 "MyX." 라는 이름의 모든 자식에 대 한이 매개 변수를 설정  
   
  `dwTimeout`  
- [in] 이 메서드로부터 반환 하기 전에 대기할 밀리초 단위로 최대 시간을 지정 합니다. 사용 하 여 `INFINITE` 무기한 대기를 나타냅니다.  
+ [in] 이 메서드에서 반환 되기 전에 대기할 밀리초 단위로 최대 시간을 지정 합니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.  
   
  `ppEnum`  
- [out] 반환 된 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 자식 속성 목록이 포함 된 개체입니다.  
+ [out] 반환 된 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 자식 속성의 목록을 포함 하는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.  
