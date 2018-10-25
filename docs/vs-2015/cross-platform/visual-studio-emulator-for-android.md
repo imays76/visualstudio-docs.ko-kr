@@ -13,12 +13,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 403f27609b5af0556412ccac3f13009aab4638c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d8acf315322a7dfdac70a158bd78f69aebbde15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867873"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,26 +63,26 @@ Android용 Visual Studio 에뮬레이터는 Android 장치를 에뮬레이트하
 ##  <a name="Requirements"></a> 시스템 요구 사항 및 이전 버전과의 호환성  
  Android용 Visual Studio 에뮬레이터의 하드웨어, 소프트웨어 및 구성 요구 사항에 대한 중요한 내용을 보려면 다음 항목을 참조하세요.  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
- Android용 Visual Studio 에뮬레이터를 사용하려면 Visual Studio 2015가 필요합니다. 이전 버전의 Visual Studio와 호환되지 않습니다.  
+  Android용 Visual Studio 에뮬레이터를 사용하려면 Visual Studio 2015가 필요합니다. 이전 버전의 Visual Studio와 호환되지 않습니다.  
   
- 이전 버전 위에 새로운 버전의 에뮬레이터가 설치됩니다(일부 경우 이전 이미지를 바꾸고 해당 이미지에 설치되어 있던 해당 설정, 앱, 파일을 취소함).  
+  이전 버전 위에 새로운 버전의 에뮬레이터가 설치됩니다(일부 경우 이전 이미지를 바꾸고 해당 이미지에 설치되어 있던 해당 설정, 앱, 파일을 취소함).  
   
 ##  <a name="Networking"></a> Visual Studio Emulator for Android의 네트워킹  
  Android용 Visual Studio 에뮬레이터의 네트워킹 연결은 데스크톱 컴퓨터의 연결과 비슷하게 동작하며 다음과 같은 특징이 있습니다.  
   
--   에뮬레이터는 네트워크에서 자체 IP 주소를 가진 별도 장치로 나타납니다.  
+- 에뮬레이터는 네트워크에서 자체 IP 주소를 가진 별도 장치로 나타납니다.  
   
--   에뮬레이터에 이미 설치되어 있지 않은 추가 네트워킹 소프트웨어를 요구하지 않습니다.  
+- 에뮬레이터에 이미 설치되어 있지 않은 추가 네트워킹 소프트웨어를 요구하지 않습니다.  
   
--   Windows 도메인에 가입하지 않습니다.  
+- Windows 도메인에 가입하지 않습니다.  
   
- 에뮬레이터의 네트워크 연결 기능을 이해하려면 Android 휴대폰에서 동일 네트워크로 연결되는 Wi-Fi 연결과 비슷하다고 생각하면 됩니다. 휴대폰에서 실행 중인 앱이 Wi-Fi 연결을 통해 네트워크 리소스를 액세스할 수 있는 경우, 에뮬레이터에서 실행 중인 앱도 동일한 네트워크 리소스에 액세스할 수 있습니다.  
+  에뮬레이터의 네트워크 연결 기능을 이해하려면 Android 휴대폰에서 동일 네트워크로 연결되는 Wi-Fi 연결과 비슷하다고 생각하면 됩니다. 휴대폰에서 실행 중인 앱이 Wi-Fi 연결을 통해 네트워크 리소스를 액세스할 수 있는 경우, 에뮬레이터에서 실행 중인 앱도 동일한 네트워크 리소스에 액세스할 수 있습니다.  
   
- 네트워크 요구 사항에 대한 자세한 내용은 [Visual Studio Emulator for Android에 대한 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)을 참조하세요.  
+  네트워크 요구 사항에 대한 자세한 내용은 [Visual Studio Emulator for Android에 대한 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)을 참조하세요.  
   
- 네트워킹 문제 해결에 대한 자세한 내용은 [Visual Studio Emulator for Android 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요.  
+  네트워킹 문제 해결에 대한 자세한 내용은 [Visual Studio Emulator for Android 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요.  
   
 ##  <a name="Configuring"></a> Visual Studio Emulator for Android 구성  
  다양한 Android 하드웨어에서 Android 앱의 호환성을 테스트하기는 어려울 수 있습니다. 출시된 Android 휴대폰 및 태블릿은 버전과 화면 크기가 매우 다양하며 많은 하드웨어 구성(RAM, CPU, 아키텍처 등)으로 제공됩니다. Android 용 Visual Studio 에뮬레이터는 장치 프로필을 사용하여 이러한 조건을 단순화합니다. Microsoft가 제공하는 일련의 장치 프로필은 시장에 나와 있는 가장 인기 있는 하드웨어(삼성, Motorola, Sony, LG 등의 장치 포함)를 대표합니다.  

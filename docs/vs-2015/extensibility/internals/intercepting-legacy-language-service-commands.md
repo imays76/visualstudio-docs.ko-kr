@@ -16,12 +16,12 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45f0084d060e9727f30ba39233ec5b92818d9205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829887"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>레거시 언어 서비스 명령 가로채기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "49190010"
   
  명령 처리에 대 한 다음과 같은 옵션이 있습니다.  
   
--   명령을 처리 하 고 체인의 다음 명령 필터에 명령을 전달 합니다.  
+- 명령을 처리 하 고 체인의 다음 명령 필터에 명령을 전달 합니다.  
   
--   명령을 처리 하 고 명령 필터에 명령을 전달 하지 마십시오.  
+- 명령을 처리 하 고 명령 필터에 명령을 전달 하지 마십시오.  
   
--   명령을 처리 하지 않습니다 하지만 다음 명령은 필터에는 명령을 전달 합니다.  
+- 명령을 처리 하지 않습니다 하지만 다음 명령은 필터에는 명령을 전달 합니다.  
   
--   이 명령은 무시 됩니다. 현재 필터에서 처리 하지 않습니다 하 고 필터에 전달 하지 마세요.  
+- 이 명령은 무시 됩니다. 현재 필터에서 처리 하지 않습니다 하 고 필터에 전달 하지 마세요.  
   
- 언어 서비스는 명령에 대 한 처리 하는 정보를 참조 하세요 [언어 서비스 필터에 대 한 중요 명령](../../extensibility/internals/important-commands-for-language-service-filters.md)입니다.
+  언어 서비스는 명령에 대 한 처리 하는 정보를 참조 하세요 [언어 서비스 필터에 대 한 중요 명령](../../extensibility/internals/important-commands-for-language-service-filters.md)입니다.
 

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3376db379e4e911bcaa8e865a16c63d1251229f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40a8bd1719ec69f78a5697f089062d86211542c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858318"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
-어떤 종류의 정보를 프로세스에 대 한 검색을 지정 합니다.  
+프로세스에 대 한 검색할 정보의 종류를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -58,7 +58,7 @@ public enum enum_PROCESS_INFO_FIELDS {
   
 ## <a name="members"></a>멤버  
  PIF_FILE_NAME  
- 초기화/사용 된 `bstrFileName` 필드는 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조입니다.  
+ 초기화/사용 된 `bstrFileName` 필드를 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조입니다.  
   
  PIF_BASE_NAME  
  초기화/사용 된 `bstrBaseName` 필드는 `PROCESS_INFO` 구조입니다.  
@@ -85,11 +85,11 @@ public enum enum_PROCESS_INFO_FIELDS {
  모든 필드를 채웁니다.  
   
 ## <a name="remarks"></a>설명  
- 에 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 의 필드를 나타내도록 메서드를는 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조를 초기화할 수는 있습니다.  
+ 에 전달 합니다 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 의 필드를 표시 하는 방법을 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조는 초기화할 합니다.  
   
- 에 사용 `Fields` 필드는 `PROCESS_INFO` 구조에는 필드는 사용 되지 않으며 유효한 합니다.  
+ 에서도 사용 됩니다 `Fields` 필드는 `PROCESS_INFO` 에 유효 하 고 사용 되는 필드는 구조체.  
   
- 이러한 플래그 비트와 함께 `OR`합니다.  
+ 이러한 플래그는 비트과 결합 될 수 `OR`입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

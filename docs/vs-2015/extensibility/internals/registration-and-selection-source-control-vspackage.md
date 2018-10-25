@@ -16,12 +16,12 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bf98c263f3452e0383f5891116849e85140b763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818765"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>등록 및 선택(소스 제어 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "49305788"
 ### <a name="registry-entries"></a>레지스트리 항목  
  소스 제어 패키지를 개인 guid가 세 개 필요합니다.  
   
--   패키지 GUID: 소스 제어 구현 (이 단원의 ID_Package 라고 함)를 포함 하는 패키지에 대 한 기본 GUID입니다.  
+- 패키지 GUID: 소스 제어 구현 (이 단원의 ID_Package 라고 함)를 포함 하는 패키지에 대 한 기본 GUID입니다.  
   
--   소스 제어 GUID:이 소스 제어는 Visual Studio 원본 제어 스텁을 등록 하는 데 사용 되는 VSPackage에 대 한 GUID 및 명령 UI 컨텍스트의 GUID로도 사용 됩니다. 원본 제어 서비스 GUID를 GUID 소스 제어에 등록 됩니다. 예제에서는 소스 제어 GUID ID_SccProvider 라고 합니다.  
+- 소스 제어 GUID:이 소스 제어는 Visual Studio 원본 제어 스텁을 등록 하는 데 사용 되는 VSPackage에 대 한 GUID 및 명령 UI 컨텍스트의 GUID로도 사용 됩니다. 원본 제어 서비스 GUID를 GUID 소스 제어에 등록 됩니다. 예제에서는 소스 제어 GUID ID_SccProvider 라고 합니다.  
   
--   원본 제어 서비스에서 GUID: 개인 서비스 (이 단원의 SID_SccPkgService 라고 함)는 Visual Studio에서 사용 되는 GUID입니다. 그 뿐 아니라 소스 제어 패키지 하 고 Vspackage에서 도구 창에 대 한 다른 Guid를 정의 해야 합니다.  
+- 원본 제어 서비스에서 GUID: 개인 서비스 (이 단원의 SID_SccPkgService 라고 함)는 Visual Studio에서 사용 되는 GUID입니다. 그 뿐 아니라 소스 제어 패키지 하 고 Vspackage에서 도구 창에 대 한 다른 Guid를 정의 해야 합니다.  
   
- 다음 레지스트리 항목을 소스 제어 VSPackage에서 이루어져야 합니다.  
+  다음 레지스트리 항목을 소스 제어 VSPackage에서 이루어져야 합니다.  
   
 |키 이름|항목|  
 |--------------|-------------|  
@@ -58,13 +58,13 @@ ms.locfileid: "49305788"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 다음 작업 중 하나를 수행할 때 소스 제어 VSPackage를 로드 합니다.  
   
--   솔루션 (솔루션은 소스 제어에서) 하는 경우 열려 있습니다.  
+- 솔루션 (솔루션은 소스 제어에서) 하는 경우 열려 있습니다.  
   
-     솔루션 또는 소스 제어에서 프로젝트를 열 때 IDE 하면 소스 제어 VSPackage 로드 되도록 해당 솔루션에 대해 지정 되었습니다.  
+   솔루션 또는 소스 제어에서 프로젝트를 열 때 IDE 하면 소스 제어 VSPackage 로드 되도록 해당 솔루션에 대해 지정 되었습니다.  
   
--   소스 제어 VSPackage의 메뉴 명령 실행 됩니다.  
+- 소스 제어 VSPackage의 메뉴 명령 실행 됩니다.  
   
- (지연 된 로드로 라고도)를 사용 하는 소스 제어 VSPackage를 실제로 하는 경우에 필요한 모든 구성 요소를 로드 해야 합니다.  
+  (지연 된 로드로 라고도)를 사용 하는 소스 제어 VSPackage를 실제로 하는 경우에 필요한 모든 구성 요소를 로드 해야 합니다.  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>자동 솔루션 기반 VSPackage 교환  
  소스 제어 Vspackage를 수동으로 바꿀 수 있습니다 통해 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **옵션** 대화 상자의 합니다 **소스 제어** 범주입니다. 자동 솔루션 기반 패키지를 특정 솔루션에 대 한 지정 된 소스 제어 패키지를 해당 솔루션을 열 때 자동으로 활성으로 설정 되는 의미를 교환 합니다. 모든 원본 제어 패키지를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>입니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 둘 다 전환 처리 원본 제어 플러그 인 (소스 제어 플러그 인 API를 구현) 및 소스 제어 Vspackage입니다.  
@@ -76,15 +76,15 @@ ms.locfileid: "49305788"
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Visual Studio 패키지 선택 및 전환에 대 한 UI  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 플러그 인 선택 항목을 소스 제어 VSPackage에 대 한 UI를 제공 합니다 **옵션** 대화 상자의 합니다 **소스 제어** 범주입니다. VSPackage를 사용자가 현재 소스 제어 플러그 인을 선택할 수 있습니다. 드롭다운 목록에 포함 됩니다.  
   
--   모든 소스 제어 패키지 설치  
+- 모든 소스 제어 패키지 설치  
   
--   모든 원본 제어 플러그 인 설치  
+- 모든 원본 제어 플러그 인 설치  
   
--   "None" 옵션을 소스 코드 제어를 사용 하지 않도록 설정 하는  
+- "None" 옵션을 소스 코드 제어를 사용 하지 않도록 설정 하는  
   
- 현재 소스 제어 선택 UI만 표시 됩니다. VSPackage 선택 UI를 숨기고 이전 VSPackage에 대 한 새 UI를 보여 줍니다. 활성 VSPackage에서 사용자별으로 선택 됩니다. 사용자의 여러 복사본이 있으면 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 동시에 열을 각각 다른 활성 VSPackage를 사용할 수 있습니다. 각 사용자의 개별 인스턴스를 가질 수 있습니다 여러 사용자가 동일한 컴퓨터에 로그온 하는 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 각각 다른 활성 VSPackage를 사용 하 여 엽니다. 때의 여러 인스턴스 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 소스 제어 VSPackage 마지막 열려 있는 솔루션은 기본 소스 제어 VSPackage를 다시 시작 시 활성 설정에 대 한 활성화 된 사용자가 닫힙니다.  
+  현재 소스 제어 선택 UI만 표시 됩니다. VSPackage 선택 UI를 숨기고 이전 VSPackage에 대 한 새 UI를 보여 줍니다. 활성 VSPackage에서 사용자별으로 선택 됩니다. 사용자의 여러 복사본이 있으면 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 동시에 열을 각각 다른 활성 VSPackage를 사용할 수 있습니다. 각 사용자의 개별 인스턴스를 가질 수 있습니다 여러 사용자가 동일한 컴퓨터에 로그온 하는 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 각각 다른 활성 VSPackage를 사용 하 여 엽니다. 때의 여러 인스턴스 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 소스 제어 VSPackage 마지막 열려 있는 솔루션은 기본 소스 제어 VSPackage를 다시 시작 시 활성 설정에 대 한 활성화 된 사용자가 닫힙니다.  
   
- 이전 버전과 달리 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], IDE 다시 시작을 소스 제어 Vspackage를 전환 하려면 유일한 방법은 더 이상. 자동으로 VSPackage 선택이 됩니다. 패키지를 전환 하려면 Windows 사용자 권한 (관리자 또는 Power User 없습니다) 해야 합니다.  
+  이전 버전과 달리 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], IDE 다시 시작을 소스 제어 Vspackage를 전환 하려면 유일한 방법은 더 이상. 자동으로 VSPackage 선택이 됩니다. 패키지를 전환 하려면 Windows 사용자 권한 (관리자 또는 Power User 없습니다) 해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   

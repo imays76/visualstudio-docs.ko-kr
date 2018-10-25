@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3743c31aeca3c6e34afa84ed8c9ee3ddd59d98a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836959"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9단계: 코드 검토, 주석 처리 및 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,29 +28,29 @@ ms.locfileid: "49300406"
   
  이제 아직 완성되지는 않았지만 그림을 로드할 수 있는 프로그램이 빌드되었습니다. 코드에 주석을 추가하고 테스트하려면 먼저 이러한 작업에 자주 사용될 다음과 같은 코드 개념을 알아야 합니다.  
   
--   Windows Forms 디자이너에서 **그림 표시** 단추를 두 번 클릭하면 IDE에서 자동으로 *메서드*를 프로그램의 코드에 추가합니다.  
+- Windows Forms 디자이너에서 **그림 표시** 단추를 두 번 클릭하면 IDE에서 자동으로 *메서드*를 프로그램의 코드에 추가합니다.  
   
--   메서드는 코드 구성 방법, 즉 코드 그룹화 방법을 결정합니다.  
+- 메서드는 코드 구성 방법, 즉 코드 그룹화 방법을 결정합니다.  
   
--   대부분의 경우 메서드는 특정 순서로 적은 수의 작업을 수행합니다. 예를 들어 `showButton_Click()` 메서드는 대화 상자를 연 다음 그림을 로드합니다.  
+- 대부분의 경우 메서드는 특정 순서로 적은 수의 작업을 수행합니다. 예를 들어 `showButton_Click()` 메서드는 대화 상자를 연 다음 그림을 로드합니다.  
   
--   메서드는 코드*문* 또는 코드 줄로 구성됩니다. 메서드는 여러 개의 코드 문을 하나로 묶는 기능으로 간주될 수 있습니다.  
+- 메서드는 코드*문* 또는 코드 줄로 구성됩니다. 메서드는 여러 개의 코드 문을 하나로 묶는 기능으로 간주될 수 있습니다.  
   
--   메서드가 실행되거나 *호출*되면 해당 메서드의 문이 첫 번째 문부터 차례대로 실행됩니다.  
+- 메서드가 실행되거나 *호출*되면 해당 메서드의 문이 첫 번째 문부터 차례대로 실행됩니다.  
   
-     다음은 문의 예제입니다.  
+   다음은 문의 예제입니다.  
   
-    ```csharp  
-    pictureBox1.Load(openFileDialog1.FileName);  
-    ```  
+  ```csharp  
+  pictureBox1.Load(openFileDialog1.FileName);  
+  ```  
   
-    ```vb  
-    pictureBox1.Load(openFileDialog1.FileName)  
-    ```  
+  ```vb  
+  pictureBox1.Load(openFileDialog1.FileName)  
+  ```  
   
-     문은 특정 작업을 수행하도록 프로그램에 지시합니다. Visual C#에서는 문이 항상 세미콜론으로 끝나고, Visual Basic에서는 줄의 끝이 문의 끝입니다. Visual Basic에서는 세미콜론이 필요하지 않습니다. 위의 문은 사용자가 **OpenFileDialog** 구성 요소를 사용하여 선택한 파일을 로드하도록 `PictureBox` 컨트롤에 지시합니다.  
+   문은 특정 작업을 수행하도록 프로그램에 지시합니다. Visual C#에서는 문이 항상 세미콜론으로 끝나고, Visual Basic에서는 줄의 끝이 문의 끝입니다. Visual Basic에서는 세미콜론이 필요하지 않습니다. 위의 문은 사용자가 **OpenFileDialog** 구성 요소를 사용하여 선택한 파일을 로드하도록 `PictureBox` 컨트롤에 지시합니다.  
   
- ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 5](http://go.microsoft.com/fwlink/?LinkId=205216) 또는 [자습서 1: C#에서 사진 뷰어 만들기 - 비디오 5](http://go.microsoft.com/fwlink/?LinkId=205206)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.  
+  ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 5](http://go.microsoft.com/fwlink/?LinkId=205216) 또는 [자습서 1: C#에서 사진 뷰어 만들기 - 비디오 5](http://go.microsoft.com/fwlink/?LinkId=205206)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.  
   
 ### <a name="to-add-comments"></a>주석을 추가하려면  
   

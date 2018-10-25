@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4630c6a277c6d9698c7fd1d65b5a292862dc3438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863167"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>프로그램 코드에서 모델 탐색 및 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,46 +223,46 @@ using (Transaction t =
   
  이 예제 요소 만들기에 대 한 이러한 필수 사항입니다.  
   
--   저장소의 특정 파티션에서 새 요소를 만듭니다. 모델 요소 및 관계에 있지만 모양은 만들 수 없습니다,이 일반적으로 기본 파티션에 합니다.  
+- 저장소의 특정 파티션에서 새 요소를 만듭니다. 모델 요소 및 관계에 있지만 모양은 만들 수 없습니다,이 일반적으로 기본 파티션에 합니다.  
   
--   포함 관계의 대상으로 확인 합니다. 이 예제의 DslDefinition에서 각 사용자는 포함 FamilyTreeHasPeople 관계의 대상 이어야 합니다. 이 위해에서는 Person 개체의 FamilyTreeModel 역할 속성을 설정 하거나 FamilyTreeModel 개체의 사용자 역할 속성에는 사용자를 추가 합니다.  
+- 포함 관계의 대상으로 확인 합니다. 이 예제의 DslDefinition에서 각 사용자는 포함 FamilyTreeHasPeople 관계의 대상 이어야 합니다. 이 위해에서는 Person 개체의 FamilyTreeModel 역할 속성을 설정 하거나 FamilyTreeModel 개체의 사용자 역할 속성에는 사용자를 추가 합니다.  
   
--   특히 속성의 새 요소의 속성 설정 `IsName` 는 DslDefinition에도 마찬가지입니다. 이 플래그는 해당 소유자 내에서 고유 요소를 식별 하는 데 사용 되는 속성을 표시 합니다. 이 경우 Name 속성에는 플래그가 있습니다.  
+- 특히 속성의 새 요소의 속성 설정 `IsName` 는 DslDefinition에도 마찬가지입니다. 이 플래그는 해당 소유자 내에서 고유 요소를 식별 하는 데 사용 되는 속성을 표시 합니다. 이 경우 Name 속성에는 플래그가 있습니다.  
   
--   이 DSL의 DSL 정의 저장소에 로드 해야 합니다. 메뉴 명령 등 확장을 작성 하는 경우 일반적으로 됩니다 이미 true. 다른 경우 명시적으로 저장소 모델을 로드 하거나 수 사용 하 여 <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> 로드 하는 것입니다. 자세한 내용은 [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)합니다.  
+- 이 DSL의 DSL 정의 저장소에 로드 해야 합니다. 메뉴 명령 등 확장을 작성 하는 경우 일반적으로 됩니다 이미 true. 다른 경우 명시적으로 저장소 모델을 로드 하거나 수 사용 하 여 <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> 로드 하는 것입니다. 자세한 내용은 [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)합니다.  
   
- 이러한 방식으로 요소를 만든 (DSL 다이어그램 있으면) 셰이프를 자동으로 생성 됩니다. 기본 모양, 색 및 기타 기능을 사용 하 여 자동으로 할당 된 위치를 표시 됩니다. 내용은 관련된 셰이프가 표시 되는 위치와 방법을 제어 하려는 경우 [요소를 만들고 모양을](#merge)합니다.  
+  이러한 방식으로 요소를 만든 (DSL 다이어그램 있으면) 셰이프를 자동으로 생성 됩니다. 기본 모양, 색 및 기타 기능을 사용 하 여 자동으로 할당 된 위치를 표시 됩니다. 내용은 관련된 셰이프가 표시 되는 위치와 방법을 제어 하려는 경우 [요소를 만들고 모양을](#merge)합니다.  
   
 ##  <a name="links"></a> 관계 링크 만들기  
  예제 DSL 정의에서 정의 된 두 개의 관계가 있습니다. 각 관계 정의 *역할 속성* 클래스 관계의 양쪽 끝에 있습니다.  
   
  세 가지 방법으로 관계의 인스턴스를 만들 수 있습니다. 이러한 세 가지 방법 중 각에 동일한 효과가 있습니다.  
   
--   소스 역할 수행자의 속성을 설정 합니다. 예를 들어:  
+- 소스 역할 수행자의 속성을 설정 합니다. 예를 들어:  
   
-    -   `familyTree.People.Add(edward);`  
+  -   `familyTree.People.Add(edward);`  
   
-    -   `edward.Parents.Add(henry);`  
+  -   `edward.Parents.Add(henry);`  
   
--   대상 역할 수행자의 속성을 설정 합니다. 예를 들어:  
+- 대상 역할 수행자의 속성을 설정 합니다. 예를 들어:  
   
-    -   `edward.familyTreeModel = familyTree;`  
+  -   `edward.familyTreeModel = familyTree;`  
   
-         이 역할의 복합성이 `1..1`이므로 값을 할당 합니다.  
+       이 역할의 복합성이 `1..1`이므로 값을 할당 합니다.  
   
-    -   `henry.Children.Add(edward);`  
+  -   `henry.Children.Add(edward);`  
   
-         이 역할의 복합성이 `0..*`이므로 컬렉션에 추가 합니다.  
+       이 역할의 복합성이 `0..*`이므로 컬렉션에 추가 합니다.  
   
--   관계의 인스턴스를 명시적으로 생성 합니다. 예를 들어:  
+- 관계의 인스턴스를 명시적으로 생성 합니다. 예를 들어:  
   
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
   
- 마지막 방법은 관계 자체의 속성을 설정 하려는 경우에 유용 합니다.  
+  마지막 방법은 관계 자체의 속성을 설정 하려는 경우에 유용 합니다.  
   
- 이러한 방식으로 요소를 만들 때 다이어그램에 커넥터를 자동으로 만들어진 했으나 기본 셰이프, 색 및 기타 기능입니다. 관련된 된 커넥터를 만드는 방법은 컨트롤을 참조 하세요 [요소를 만들고 모양을](#merge)합니다.  
+  이러한 방식으로 요소를 만들 때 다이어그램에 커넥터를 자동으로 만들어진 했으나 기본 셰이프, 색 및 기타 기능입니다. 관련된 된 커넥터를 만드는 방법은 컨트롤을 참조 하세요 [요소를 만들고 모양을](#merge)합니다.  
   
 ##  <a name="deleteelements"></a> 요소 삭제  
  호출 하 여 요소를 삭제할 `Delete()`:  
@@ -271,21 +271,21 @@ using (Transaction t =
   
  이 작업은 또한 삭제 됩니다.  
   
--   요소 간의 관계 링크 합니다. 예를 들어 `edward.Parents` 더 이상 사용 될 `henry`합니다.  
+- 요소 간의 관계 링크 합니다. 예를 들어 `edward.Parents` 더 이상 사용 될 `henry`합니다.  
   
--   요소는 역할을 `PropagatesDelete` 플래그는 true입니다. 예를 들어 모양은 요소를 표시 하는 삭제 됩니다.  
+- 요소는 역할을 `PropagatesDelete` 플래그는 true입니다. 예를 들어 모양은 요소를 표시 하는 삭제 됩니다.  
   
- 기본적으로 모든 포함 관계에 `PropagatesDelete` 대상 역할에 true입니다. 삭제 `henry` 삭제 되지 않습니다는 `familyTree`, 되지만 `familyTree.Delete()` 모두 삭제 됩니다는 `Persons`합니다. 자세한 내용은 [삭제 동작 사용자 지정](../modeling/customizing-deletion-behavior.md)합니다.  
+  기본적으로 모든 포함 관계에 `PropagatesDelete` 대상 역할에 true입니다. 삭제 `henry` 삭제 되지 않습니다는 `familyTree`, 되지만 `familyTree.Delete()` 모두 삭제 됩니다는 `Persons`합니다. 자세한 내용은 [삭제 동작 사용자 지정](../modeling/customizing-deletion-behavior.md)합니다.  
   
- 기본적으로 `PropagatesDelete` 참조 관계의 역할에는 그렇지 않습니다.  
+  기본적으로 `PropagatesDelete` 참조 관계의 역할에는 그렇지 않습니다.  
   
- 개체를 삭제할 때 특정 전파를 생략 하려면 삭제 규칙이 발생할 수 있습니다. 다른 하나의 요소를 대체 하는 경우에 유용 합니다. 수 없는 삭제 전파 되지 않아야 하는 하나 이상의 역할의 GUID를 제공 합니다. 관계 클래스에서 GUID는 가져올 수 있습니다.  
+  개체를 삭제할 때 특정 전파를 생략 하려면 삭제 규칙이 발생할 수 있습니다. 다른 하나의 요소를 대체 하는 경우에 유용 합니다. 수 없는 삭제 전파 되지 않아야 하는 하나 이상의 역할의 GUID를 제공 합니다. 관계 클래스에서 GUID는 가져올 수 있습니다.  
   
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
   
- (이 특정 예제는 아무런 영향이 없습니다 때문 `PropagatesDelete` 됩니다 `false` 의 역할에 대해는 `ParentsHaveChildren` 관계.)  
+  (이 특정 예제는 아무런 영향이 없습니다 때문 `PropagatesDelete` 됩니다 `false` 의 역할에 대해는 `ParentsHaveChildren` 관계.)  
   
- 경우에 따라 삭제 전파 하 여 삭제 되는 요소 또는 요소에서 잠금의 존재 여부에 따라 방지 됩니다. 사용할 수 있습니다 `element.CanDelete()` 요소를 삭제할 수 있는지 여부를 확인 합니다.  
+  경우에 따라 삭제 전파 하 여 삭제 되는 요소 또는 요소에서 잠금의 존재 여부에 따라 방지 됩니다. 사용할 수 있습니다 `element.CanDelete()` 요소를 삭제할 수 있는지 여부를 확인 합니다.  
   
 ##  <a name="deletelinks"></a> 관계 링크를 삭제합니다.  
  역할 속성에서 요소를 제거 하 여 링크 관계를 삭제할 수 있습니다.  
@@ -467,11 +467,11 @@ FamilyTreeDiagram diagram =
   
  이 방법:  
   
--   요소 이름으로 속성을 할당 하는 경우 이름으로 설정 합니다.  
+- 요소 이름으로 속성을 할당 하는 경우 이름으로 설정 합니다.  
   
--   DSL 정의에서 지정한 모든 요소 병합 지시문을 관찰 합니다.  
+- DSL 정의에서 지정한 모든 요소 병합 지시문을 관찰 합니다.  
   
- 이 예제에서는 사용자가 다이어그램을 두 번 클릭 마우스 위치에 셰이프를 만듭니다. 이 샘플에서는 DSL 정의에 `FillColor` 속성의 `ExampleShape` 노출 된 합니다.  
+  이 예제에서는 사용자가 다이어그램을 두 번 클릭 마우스 위치에 셰이프를 만듭니다. 이 샘플에서는 DSL 정의에 `FillColor` 속성의 `ExampleShape` 노출 된 합니다.  
   
 ```  
   

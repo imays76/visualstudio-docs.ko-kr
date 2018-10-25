@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862179"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 항목 템플릿은 하나의 항목만 지정할 수 있지만 항목이 여러 파일로 구성되는 경우가 있습니다. 예를 들어 Visual Basic용 Windows Forms 항목 템플릿에는 다음 3개 파일이 필요합니다.  
   
--   양식에 대한 코드가 들어 있는 .vb 파일  
+- 양식에 대한 코드가 들어 있는 .vb 파일  
   
--   양식에 대한 디자이너 정보가 들어 있는 .designer.vb 파일  
+- 양식에 대한 디자이너 정보가 들어 있는 .designer.vb 파일  
   
--   양식에 대한 포함 리소스가 들어 있는 .resx 파일  
+- 양식에 대한 포함 리소스가 들어 있는 .resx 파일  
   
- 다중 파일 항목 템플릿에는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 항목을 만들 때 올바른 파일 이름 확장명을 사용하도록 매개 변수가 필요합니다. **템플릿 내보내기** 마법사를 사용하여 항목 템플릿을 만드는 경우 이러한 매개 변수가 자동으로 생성되므로 더 이상 편집할 필요가 없습니다. 다음 단계에서는 매개 변수를 사용하여 올바른 파일 이름 확장명을 만드는 방법을 설명합니다.  
+  다중 파일 항목 템플릿에는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 항목을 만들 때 올바른 파일 이름 확장명을 사용하도록 매개 변수가 필요합니다. **템플릿 내보내기** 마법사를 사용하여 항목 템플릿을 만드는 경우 이러한 매개 변수가 자동으로 생성되므로 더 이상 편집할 필요가 없습니다. 다음 단계에서는 매개 변수를 사용하여 올바른 파일 이름 확장명을 만드는 방법을 설명합니다.  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>다중 파일 항목 템플릿을 수동으로 만들려면  
   

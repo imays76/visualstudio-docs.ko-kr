@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b73a625e21da8e8ba026df140e437e96bdeb1ff5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ceb6c85c510269877dfe34e091d50095dc7a50c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821684"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 중단점의 위치를 설명 하는 데 사용 하는 구조체의 형식을 지정 합니다.  
@@ -55,45 +55,45 @@ public struct BP_LOCATION {
   
 ## <a name="members"></a>멤버  
  `bpLocationType`  
- 값은 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 해석 하는 데 사용 하는 열거형은 `bpLocation` union 또는 `unionmemberX` 멤버입니다.  
+ 값을 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 해석 하는 데 사용 하는 열거형을 `bpLocation` union 또는 `unionmemberX` 멤버.  
   
  `bpLocation`.`bplocCodeFileLine`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) 경우 구조체 `bpLocationType`  =  `BPLT_CODE_FILE_LINE`합니다.  
+ [C + + 전용] 포함 된 [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_FILE_LINE`합니다.  
   
  `bpLocation.bplocCodeFuncOffset`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) 경우 구조체 `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`합니다.  
+ [C + + 전용] 포함 된 [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`합니다.  
   
  `bpLocation.bplocCodeContext`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) 경우 구조체 `bpLocationType`  =  `BPLT_CODE_CONTEXT`합니다.  
+ [C + + 전용] 포함 된 [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_CONTEXT`합니다.  
   
  `bpLocation.bplocCodeString`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) 경우 구조체 `bpLocationType`  =  `BPLT_CODE_STRING`합니다.  
+ [C + + 전용] 포함 된 [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_STRING`합니다.  
   
  `bpLocation.bplocCodeAddress`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) 경우 구조체 `bpLocationType`  =  `BPLT_CODE_ADDRESS`합니다.  
+ [C + + 전용] 포함 된 [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_ADDRESS`합니다.  
   
  `bpLocation.bplocDataString`  
- [C + + 전용] 포함 된 [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) 경우 구조체 `bpLocationType`  =  `BPLT_DATA_STRING`합니다.  
+ [C + + 전용] 포함 된 [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_DATA_STRING`합니다.  
   
  `bpLocation.bplocResolution`  
- [C + + 전용] 포함 된 [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) 경우 구조체 `bpLocationType`  =  `BPLT_RESOLUTION`합니다.  
+ [C + + 전용] 포함 된 [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_RESOLUTION`합니다.  
   
  `unionmember1`  
- [C#] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember2`  
- [C#] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember3`  
- [C#] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
  `unionmember4`  
- [C#] 해석 하는 방법에 대 한 설명을 참조 하세요.  
+ [C#만 해당] 해석 하는 방법에 대 한 설명을 참조 하세요.  
   
 ## <a name="remarks"></a>설명  
- 이 구조는의 구성원은 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 및 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 구조입니다.  
+ 이 구조체의 멤버인 합니다 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 하 고 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 구조입니다.  
   
- [C#] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열에 대 한 살펴보면는 `bpLocationType` 값 다음 무엇 인지 확인 하려면 다른 열에 걸쳐 보기 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조의 일부를 해석 하는 방법에 대 한 예제를 참조 하십시오.  
+ [C#만 해당] `unionmemberX` 멤버는 다음 표에 따라 해석 됩니다. 왼쪽된 열을 살펴보면 합니다 `bpLocationType` 무엇 인지를 확인 하려면 다른 열에서 다음 값 `unionmemberX` 마샬링 및 멤버 나타냅니다는 `unionmemberX` 적절 하 게 합니다. C#에서이 구조의 일부를 해석 하는 방법에 대 한 예제를 참조 하세요.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -101,12 +101,12 @@ public struct BP_LOCATION {
 |`BPLT_CODE_FUNC_OFFSET`|`string` (컨텍스트)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|  
 |`BPLT_CODE_CONTEXT`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|  
 |`BPLT_CODE_STRING`|`string` (컨텍스트)|`string` (조건부 식)|-|-|  
-|`BPLT_CODE_ADDRESS`|`string` (컨텍스트)|`string` (모듈 URL)|`string` 함수 이름|`string` (주소)|  
+|`BPLT_CODE_ADDRESS`|`string` (컨텍스트)|`string` (모듈 URL)|`string` (함수 이름)|`string` (주소)|  
 |`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (컨텍스트)|`string` (데이터 식)|`uint` (요소 수)|  
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>예제  
- 해석 하는 방법을 보여 주는이 예제는 `BP_LOCATION` 구조에 대 한 C#에서 `BPLT_DATA_STRING` 유형입니다. 이 특정 형식에 모든 4를 해석 하는 방법을 보여 줍니다 `unionmemberX` 모든 가능한 형식이 (개체, 문자열 및 숫자)의 멤버입니다.  
+ 해석 하는 방법을 보여 주는이 예제는 `BP_LOCATION` C#에 대 한 구조는 `BPLT_DATA_STRING` 형식입니다. 이 특정 형식에 4 모두를 해석 하는 방법을 보여 줍니다 `unionmemberX` 가능한 모든 형식 (개체, 문자열 및 숫자)의 멤버입니다.  
   
 ```csharp  
 using System;  

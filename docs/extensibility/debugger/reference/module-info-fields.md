@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcc6bd76a4a9aecade72347613ed4f36968c65eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf01cb2573922adb5d8b5b4bc26b10b839009dda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832856"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 디버그 모듈 정보에 대 한 플래그를 지정합니다.  
@@ -69,7 +69,7 @@ public enum enum_MODULE_INFO_FIELDS {
  구조에 필드를 초기화/사용 합니다.  
   
  MIF_NAME  
- 초기화/사용 된 `m_bstrName` 필드에 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조입니다.  
+ 초기화/사용 된 `m_bstrName` 필드를 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조입니다.  
   
  MIF_URL  
  초기화/사용 된 `m_bstrUrl` 필드에 `MODULE_INFO` 구조입니다.  
@@ -102,14 +102,14 @@ public enum enum_MODULE_INFO_FIELDS {
  초기화/사용 된 `m_dwModuleFlags` 필드에 `MODULE_INFO` 구조입니다.  
   
  MIF_ALLFIELDS  
- 초기화/사용의 모든 필드에는 `MODULE_INFO` 구조입니다.  
+ 모든 필드의 초기화/사용 된 `MODULE_INFO` 구조입니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에 대 한 인수로 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 의 필드를 나타내도록 메서드를는 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조를 초기화할 수는 있습니다.  
+ 이러한 값을 인수로 전달 됩니다는 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 의 필드를 나타내려면 메서드는 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 구조는 초기화할 합니다.  
   
- 이러한 값에도 사용 되는 `MODULE_INFO` 구조에는 필드는 사용 되지 않으며 유효한 합니다.  
+ 이러한 값에도 사용 됩니다는 `MODULE_INFO` 에 유효 하 고 사용 되는 필드는 구조체.  
   
- 이러한 플래그 비트와 함께 `OR`합니다.  
+ 이러한 플래그는 비트과 결합 될 수 `OR`입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 96cde88c86552b7fad16a58839dc190d421b2bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857863"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: 범위를 벗어나기 전에 개체를 삭제하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,17 +81,17 @@ ms.locfileid: "49190881"
   
  OpenPort2 메서드 두 SerialPort 개체에는 null이 선언 된 및로 설정:  
   
--   `tempPort`에 테스트 메서드 작업을 수행 하는 데 사용 됩니다.  
+- `tempPort`에 테스트 메서드 작업을 수행 하는 데 사용 됩니다.  
   
--   `port`메서드의 반환 값에 사용 됩니다.  
+- `port`메서드의 반환 값에 사용 됩니다.  
   
- 합니다 `tempPort` 생성 되 고 열을 `try` 블록 및 기타 필요한 동일한 작업을 수행 `try` 블록입니다. 끝에 `try` 열린된 포트 블록에 할당 되는 `port` 반환 되는 개체 및 `tempPort` 개체로 설정 됩니다 `null`합니다.  
+  합니다 `tempPort` 생성 되 고 열을 `try` 블록 및 기타 필요한 동일한 작업을 수행 `try` 블록입니다. 끝에 `try` 열린된 포트 블록에 할당 되는 `port` 반환 되는 개체 및 `tempPort` 개체로 설정 됩니다 `null`합니다.  
   
- 합니다 `finally` 의 값을 확인 하는 블록 `tempPort`합니다. Null 인 경우 메서드는 작업이 실패 하 고 `tempPort` 모든 리소스가 해제 되도록 닫혀 있습니다. 반환 된 포트 개체는 작업이 실패 한 경우 null 됩니다 메서드의 작업이 성공한 경우 열려 있는 SerialPort 개체를 포함 됩니다.  
+  합니다 `finally` 의 값을 확인 하는 블록 `tempPort`합니다. Null 인 경우 메서드는 작업이 실패 하 고 `tempPort` 모든 리소스가 해제 되도록 닫혀 있습니다. 반환 된 포트 개체는 작업이 실패 한 경우 null 됩니다 메서드의 작업이 성공한 경우 열려 있는 SerialPort 개체를 포함 됩니다.  
   
- [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
+  [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
   
 ## <a name="example"></a>예제  
  기본적으로 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 컴파일러 오버플로 검사 하는 모든 산술 연산자를 포함 합니다. 모든 Visual Basic 산술 연산은 throw 할 수 있습니다 따라서는 <xref:System.OverflowException>합니다. 이 규칙 CA2000 등에서 예기치 않은 위반이 발생할 수 있습니다. 예를 들어, 다음 CreateReader1 함수는 Visual Basic 컴파일러를 표시 하 고 삭제할 필요가 StreamReader를 발생 시키는 예외를 throw 할 수 있는 추가 대 한 지침을 확인 하는 오버플로 때문에 CA2000 위반을 생성 합니다.  

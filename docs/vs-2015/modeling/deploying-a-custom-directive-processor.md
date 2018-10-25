@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836400"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>사용자 지정 지시문 처리기 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ ms.locfileid: "49251955"
   
  이러한 방법은 다음과 같습니다.  
   
--   [Visual Studio 확장 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)합니다. 자신이 사용하는 컴퓨터와 다른 컴퓨터 둘 다에 지시문 프로세서를 설치하고 제거하는 방법을 제공합니다. 일반적으로 동일한 VSIX에 다른 기능을 패키지할 수도 있습니다.  
+- [Visual Studio 확장 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)합니다. 자신이 사용하는 컴퓨터와 다른 컴퓨터 둘 다에 지시문 프로세서를 설치하고 제거하는 방법을 제공합니다. 일반적으로 동일한 VSIX에 다른 기능을 패키지할 수도 있습니다.  
   
--   [VSPackage](../extensibility/internals/vspackages.md)합니다. 지시문 프로세서 외에 다른 기능이 포함된 VSPackage를 정의하는 경우 지시문 프로세서를 등록하는 간편한 방법이 있습니다.  
+- [VSPackage](../extensibility/internals/vspackages.md)합니다. 지시문 프로세서 외에 다른 기능이 포함된 VSPackage를 정의하는 경우 지시문 프로세서를 등록하는 간편한 방법이 있습니다.  
   
--   레지스트리 키 설정. 이 방법에서는 지시문 프로세서에 대한 레지스트리 항목을 추가합니다.  
+- 레지스트리 키 설정. 이 방법에서는 지시문 프로세서에 대한 레지스트리 항목을 추가합니다.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 또는 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서 텍스트 템플릿을 변환하려는 경우에만 이러한 방법 중 하나를 사용해야 합니다. 응용 프로그램에서 사용자 지정 호스트를 사용하는 경우 사용자 지정 호스트는 각 지시문의 지시문 프로세서를 찾는 작업을 담당합니다.  
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 또는 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서 텍스트 템플릿을 변환하려는 경우에만 이러한 방법 중 하나를 사용해야 합니다. 응용 프로그램에서 사용자 지정 호스트를 사용하는 경우 사용자 지정 호스트는 각 지시문의 지시문 프로세서를 찾는 작업을 담당합니다.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX로 지시문 프로세서 배포  
  사용자 지정 지시문 프로세서를 추가할 수 있습니다는 [Visual Studio 확장 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)합니다.  
   
  다음 두 항목이 .vsix 파일에 포함되어 있는지 확인해야 합니다.  
   
--   사용자 지정 지시문 프로세서 클래스가 포함된 어셈블리(.dll)  
+- 사용자 지정 지시문 프로세서 클래스가 포함된 어셈블리(.dll)  
   
--   지시문 프로세서를 등록하는 .pkgdef 파일. 이 파일의 루트 이름은 어셈블리와 동일해야 합니다. 예를 들어, 파일의 이름을 CDP.dll 및 CDP.pkgdef로 지정할 수 있습니다.  
+- 지시문 프로세서를 등록하는 .pkgdef 파일. 이 파일의 루트 이름은 어셈블리와 동일해야 합니다. 예를 들어, 파일의 이름을 CDP.dll 및 CDP.pkgdef로 지정할 수 있습니다.  
   
- .vsix 파일의 내용을 검사하거나 변경하려면 파일 확장명을 .zip으로 변경한 다음 파일을 엽니다. 내용을 편집한 후 파일 이름을 다시 .vsix로 변경합니다.  
+  .vsix 파일의 내용을 검사하거나 변경하려면 파일 확장명을 .zip으로 변경한 다음 파일을 엽니다. 내용을 편집한 후 파일 이름을 다시 .vsix로 변경합니다.  
   
- 여러 가지 방법으로 .vsix 파일을 만들 수 있습니다. 다음 절차에서는 한 가지 방법을 설명합니다.  
+  여러 가지 방법으로 .vsix 파일을 만들 수 있습니다. 다음 절차에서는 한 가지 방법을 설명합니다.  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>VSIX 프로젝트에서 사용자 지정 지시문 프로세서를 개발하려면  
   
@@ -167,27 +167,27 @@ ms.locfileid: "49251955"
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>레지스트리 키를 설정하여 지시문 프로세서를 등록하려면  
   
-1.  `regedit`를 실행합니다.  
+1. `regedit`를 실행합니다.  
   
-2.  regedit에서 다음 레지스트리 키로 이동합니다.  
+2. regedit에서 다음 레지스트리 키로 이동합니다.  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 버전에서 지시문 프로세서를 설치하려면 "11.0" 뒤에 ."Exp"를 삽입합니다.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 버전에서 지시문 프로세서를 설치하려면 "11.0" 뒤에 ."Exp"를 삽입합니다.  
   
-3.  지시문 프로세서 클래스와 이름이 같은 레지스트리 키를 추가합니다.  
+3. 지시문 프로세서 클래스와 이름이 같은 레지스트리 키를 추가합니다.  
   
-    -   레지스트리 트리에서 마우스 오른쪽 단추로 클릭 합니다 **DirectiveProcessors** 가리킨 **새로 만들기**를 클릭 하 고 **키**합니다.  
+   -   레지스트리 트리에서 마우스 오른쪽 단추로 클릭 합니다 **DirectiveProcessors** 가리킨 **새로 만들기**를 클릭 하 고 **키**합니다.  
   
-4.  새 노드에서 다음 표에 따라 Class와 CodeBase 또는 Assembly의 문자열 값을 추가합니다.  
+4. 새 노드에서 다음 표에 따라 Class와 CodeBase 또는 Assembly의 문자열 값을 추가합니다.  
   
-    1.  사용자가 만든 노드를 마우스 오른쪽 **새로 만들기**를 클릭 하 고 **문자열 값**합니다.  
+   1.  사용자가 만든 노드를 마우스 오른쪽 **새로 만들기**를 클릭 하 고 **문자열 값**합니다.  
   
-    2.  값의 이름을 편집합니다.  
+   2.  값의 이름을 편집합니다.  
   
-    3.  이름을 두 번 클릭하고 데이터를 편집합니다.  
+   3.  이름을 두 번 클릭하고 데이터를 편집합니다.  
   
- 사용자 지정 지시문 프로세서가 GAC에 없는 경우 레지스트리 하위 키는 다음 표와 같습니다.  
+   사용자 지정 지시문 프로세서가 GAC에 없는 경우 레지스트리 하위 키는 다음 표와 같습니다.  
   
 |이름|형식|데이터|  
 |----------|----------|----------|  

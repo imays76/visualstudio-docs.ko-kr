@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbcd41c44392ee342bfa26def5fbb60cd030d48b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3210d152001b7c2bf65103d3f846749676786f3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109600"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814833"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
-에 대 한이 별칭은 개체를 가져옵니다.  
+이 별칭에 대 한 개체를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,10 +41,10 @@ int GetObject(
   
 #### <a name="parameters"></a>매개 변수  
  `ppObject`  
- [out] [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 이 별칭을 나타냅니다.  
+ [out] 합니다 [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 이 별칭을 나타냅니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)   

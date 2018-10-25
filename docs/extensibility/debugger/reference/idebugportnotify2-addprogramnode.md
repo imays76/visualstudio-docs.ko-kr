@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54726a332bd27d01a0229a9127480d2871360d47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6724d33a10f766ac30d8211b656710c8a9f900da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860535"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
-실행 되는 포트를 디버깅할 수 있는 프로그램을 등록 합니다.  
+실행 되는 포트를 사용 하 여 디버깅할 수 있는 프로그램을 등록 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,13 +41,13 @@ int AddProgramNode(
   
 #### <a name="parameters"></a>매개 변수  
  `pProgramNode`  
- [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 등록할 수 있도록 프로그램을 나타내는 개체입니다.  
+ [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 등록 프로그램을 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 프로그램 노드 등록 취소할 수 있습니다 포트에서 호출 하 여는 [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 메서드.  
+ 프로그램 노드를 등록 취소할 수 있습니다 포트에서 호출 하 여 합니다 [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   

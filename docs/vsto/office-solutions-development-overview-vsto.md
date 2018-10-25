@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842666"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 솔루션 개발 개요 (VSTO)
   Microsoft Office를 솔루션의 프런트 엔드로 사용하여 Word의 워드 프로세싱 기능, Excel의 데이터 분석 기능 및 Outlook의 전자 메일 관리 기능과 같은 익숙한 Microsoft Office 사용자 인터페이스 및 도구를 활용할 수 있습니다. Visual Studio에서 솔루션을 개발하여 Office 응용 프로그램을 사용자 지정하고 비즈니스 프로세스에 필요한 특정 기능을 추가할 수 있습니다. 예를 들어 편집 가능하거나 편집 가능하지 않게 만들 수 있는 기존 부분에서 계약을 구성하는 계약 생성기로 Word를 전환할 수 있습니다. Excel을 사용하여 다양한 프로젝트에 대해 사용자 지정된 자동화된 예산 워크시트를 만들 수 있습니다. 또한 사용자가 Office 솔루션을 오프라인으로 전환하여 복잡한 솔루션을 웹 기반 아키텍처를 사용하는 경우보다 실용적으로 만들 수도 있습니다.  
@@ -31,13 +31,13 @@ ms.locfileid: "35674386"
 ## <a name="choose-an-office-project-type"></a>Office 프로젝트 형식 선택  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 VSTO 기반 Office 개발을 위해 다음과 같은 형식의 프로젝트 템플릿을 제공합니다.  
   
--   **문서 수준 사용자 지정** 은 특정 문서와 연결됩니다.  
+- **문서 수준 사용자 지정** 은 특정 문서와 연결됩니다.  
   
--   **VSTO Add-ins** 은 응용 프로그램 자체와 연결됩니다.  
+- **VSTO Add-ins** 은 응용 프로그램 자체와 연결됩니다.  
   
- 이러한 프로젝트 형식 중 솔루션에 가장 적합한 것을 결정하려면 특정 문서가 열려 있을 때만 코드가 실행되도록 할지 여부나 응용 프로그램이 실행 중일 때 코드를 항상 사용할 수 있도록 할지 여부에 대해 고려합니다. 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)합니다.  
+  이러한 프로젝트 형식 중 솔루션에 가장 적합한 것을 결정하려면 특정 문서가 열려 있을 때만 코드가 실행되도록 할지 여부나 응용 프로그램이 실행 중일 때 코드를 항상 사용할 수 있도록 할지 여부에 대해 고려합니다. 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)합니다.  
   
- 만들 수 있는 프로젝트의 형식은 개발 컴퓨터에 설치한 Office 응용 프로그램에 따라 다릅니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
+  만들 수 있는 프로젝트의 형식은 개발 컴퓨터에 설치한 Office 응용 프로그램에 따라 다릅니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
   
 ### <a name="document-level-customizations"></a>문서 수준 사용자 지정  
  문서 수준 사용자 지정은 Microsoft Office Word 또는 Microsoft Office Excel의 단일 문서, 통합 문서 또는 서식 파일과 연결된 어셈블리로 구성됩니다. 어셈블리는 연결된 문서가 열릴 때 로드됩니다. 사용자 지정에서 만든 기능은 연결된 문서가 열려 있을 때만 사용할 수 있습니다. 사용자 지정에서는 문서가 열려 있을 때 새 메뉴 항목이나 리본 탭을 표시하는 것과 같은 응용 프로그램 범위의 변경을 할 수 없습니다.  
@@ -91,7 +91,7 @@ ms.locfileid: "35674386"
 ## <a name="see-also"></a>참고자료  
  [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [문서 수준 사용자 지정 아키텍처](../vsto/architecture-of-document-level-customizations.md)   
- [Vsto 추가 기능의 아키텍처](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Excel 용 문서 수준 사용자 지정 프로그래밍 시작](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Word 용 문서 수준 사용자 지정 프로그래밍 시작](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)  

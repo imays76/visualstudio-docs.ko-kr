@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813429"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio에서 ASP.NET 또는 ASP.NET Core 앱 디버그
 
@@ -121,29 +121,29 @@ ASP.NET 프로젝트 *web.config* 기본적으로 정보가 포함 된 파일 �
   
 3. 있는지 확인 합니다 `debug` 특성을 `compilation` 로 설정 된 `true`. (경우 합니다 `compilation` 요소를 포함 하지 않습니다는 `debug` 특성, 추가 및로 설정 `true`.) 
   
-  로컬 IIS 기본 IIS Express 서버 대신를 사용 하는 경우 확인 합니다 `targetFramework` 특성 값에는 `compilation` IIS 서버에서 프레임 워크를 일치 하는 요소가 합니다.
+   로컬 IIS 기본 IIS Express 서버 대신를 사용 하는 경우 확인 합니다 `targetFramework` 특성 값에는 `compilation` IIS 서버에서 프레임 워크를 일치 하는 요소가 합니다.
   
-  `compilation` 의 요소를 *web.config* 파일은 다음과 같이 표시 합니다.
+   `compilation` 의 요소를 *web.config* 파일은 다음과 같이 표시 합니다.
 
-  > [!NOTE]
-  > 이 예제는 부분 *web.config* 파일입니다. 일반적으로 추가 XML 섹션은는 `configuration` 하 고 `system.web` 요소 및 `compilation` 특성 및 요소가 다른 요소를 포함할 수도 있습니다.
+   > [!NOTE]
+   > 이 예제는 부분 *web.config* 파일입니다. 일반적으로 추가 XML 섹션은는 `configuration` 하 고 `system.web` 요소 및 `compilation` 특성 및 요소가 다른 요소를 포함할 수도 있습니다.
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 자동으로 변경 내용을 감지한 *web.config* 파일 및 새 구성 설정을 적용 합니다. 컴퓨터나 변경 내용을 적용 하려면 IIS 서버를 다시 시작할 필요가 없습니다.  
   
 웹 사이트를 사용 하 여 여러 가상 디렉터리 및 하위 디렉터리를 포함할 수 있습니다 *web.config* 각각에서 파일입니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 앱 구성 설정을 상속할 *web.config* 파일 URL 경로의 상위 수준에 있습니다. 계층적 *web.config* 파일 설정은 모든 적용 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 그 아래의 계층 구조에서 앱. 다른 구성에서 설정 된 *web.config* 계층 구조의 하위 파일은 더 높은 파일의 설정을 재정의 합니다.  
   
-예를 들어 지정 하는 경우 `debug="true"` 에 *www.microsoft.com/aaa/web.config*, 모든 앱에는 *aaa* 폴더 또는 하위 폴더에 *aaa* 해당 설정을 상속 이러한 앱 중 하나를 고유한 설정을 재정의 하는 경우를 제외 하 고 *web.config* 파일입니다.  
+예를 들어 지정 하는 경우 `debug="true"` 에 <em>www.microsoft.com/aaa/web.config</em>, 모든 앱에는 *aaa* 폴더 또는 하위 폴더에 *aaa* 해당 설정을 상속 이러한 앱 중 하나를 고유한 설정을 재정의 하는 경우를 제외 하 고 *web.config* 파일입니다.  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>파일 시스템을 사용 하 여 디버그 모드에서 게시
 

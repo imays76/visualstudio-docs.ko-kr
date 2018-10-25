@@ -14,12 +14,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1dbbf44a4adfe20f1940da32540eaad81c97251b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 882d2c8d0dec5e4673b24436067bd6255c2052be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853157"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform 명령
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ DslTextTransform.cmd은 TextTransform.exe를 호출 하 고 일반 옵션을 사
   
  DslTextTransform.cmd 입력으로는 다음 인수를 지정할 수 있습니다.  
   
--   도메인 모델 프로젝트의 출력 디렉터리입니다.  
+- 도메인 모델 프로젝트의 출력 디렉터리입니다.  
   
--   디자이너 정의 프로젝트의 출력 디렉터리입니다.  
+- 디자이너 정의 프로젝트의 출력 디렉터리입니다.  
   
--   텍스트 템플릿 파일의 위치입니다.  
+- 텍스트 템플릿 파일의 위치입니다.  
   
- DslTextTransform.cmd 기본 지시문 프로세서 및 어셈블리를 사용 하 여 지정 된 텍스트 템플릿 파일을 처리 합니다. 사용자 지정 지시문 프로세서를 만드는 경우 TextTransform.exe를 호출 하는 일괄 처리 파일을 만들 수 있습니다. 이 배치 파일에서 어셈블리 및 연관 된 사용자 지정 지시문 프로세서를 지정할 수 있습니다.
+  DslTextTransform.cmd 기본 지시문 프로세서 및 어셈블리를 사용 하 여 지정 된 텍스트 템플릿 파일을 처리 합니다. 사용자 지정 지시문 프로세서를 만드는 경우 TextTransform.exe를 호출 하는 일괄 처리 파일을 만들 수 있습니다. 이 배치 파일에서 어셈블리 및 연관 된 사용자 지정 지시문 프로세서를 지정할 수 있습니다.
 
 
 

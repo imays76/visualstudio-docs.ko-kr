@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859670"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>규칙 집합을 사용하여 실행할 C++ 규칙 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "49230888"
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>단일 기존 규칙 집합에서 사용자 지정 규칙을 만들려면  
   
-1.  솔루션 탐색기에서 프로젝트에 대 한 바로 가기 메뉴를 열고 선택한 후 **속성**합니다.  
+1. 솔루션 탐색기에서 프로젝트에 대 한 바로 가기 메뉴를 열고 선택한 후 **속성**합니다.  
   
-2.  에 **속성** 탭에서 **코드 분석**합니다.  
+2. 에 **속성** 탭에서 **코드 분석**합니다.  
   
-3.  에 **규칙 집합** 드롭 다운 목록에서 다음 중 하나를 수행 합니다.  
+3. 에 **규칙 집합** 드롭 다운 목록에서 다음 중 하나를 수행 합니다.  
   
-    -   사용자 지정하려는 규칙 집합을 선택합니다.  
+   - 사용자 지정하려는 규칙 집합을 선택합니다.  
   
      \- 또는 -  
   
-    -   선택할  **\<찾아보기... >** 목록에 없는 기존 규칙 집합을 지정 하려면.  
+   - 선택할  **\<찾아보기... >** 목록에 없는 기존 규칙 집합을 지정 하려면.  
   
-4.  선택할 **열려** 규칙 규칙 집합 편집기에 표시를 합니다.  
+4. 선택할 **열려** 규칙 규칙 집합 편집기에 표시를 합니다.  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>규칙을 수정 하려면 규칙 집합 편집기에서 설정  
   

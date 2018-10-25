@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2886e454e9986e63cbc3496d3ef5b0664e85dede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851597"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>프로필을 정의하여 UML 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49221262"
   
  사용자 고유의 프로필을 정의하여 비즈니스 영역 또는 아키텍처에 맞게 UML을 조정 및 확장할 수 있습니다. 예:  
   
--   웹 사이트를 자주 정의하는 경우 클래스 다이어그램의 클래스에 적용할 수 있는 «WebPage» 스테레오타입을 제공하는 고유한 프로필을 정의할 수 있습니다. 그런 다음 클래스 다이어그램을 사용하여 웹 사이트를 계획할 수 있습니다. 모든 «WebPage» 클래스에 페이지 콘텐츠, 스타일 등에 대한 추가 속성이 있습니다.  
+- 웹 사이트를 자주 정의하는 경우 클래스 다이어그램의 클래스에 적용할 수 있는 «WebPage» 스테레오타입을 제공하는 고유한 프로필을 정의할 수 있습니다. 그런 다음 클래스 다이어그램을 사용하여 웹 사이트를 계획할 수 있습니다. 모든 «WebPage» 클래스에 페이지 콘텐츠, 스타일 등에 대한 추가 속성이 있습니다.  
   
--   뱅킹 소프트웨어를 개발하는 경우 «Account» 스테레오타입을 제공하는 프로필을 정의할 수 있습니다. 그런 다음 클래스 다이어그램을 사용하여 다양한 계정 형식을 정의하고 형식 간의 관계를 표시할 수 있습니다.  
+- 뱅킹 소프트웨어를 개발하는 경우 «Account» 스테레오타입을 제공하는 프로필을 정의할 수 있습니다. 그런 다음 클래스 다이어그램을 사용하여 다양한 계정 형식을 정의하고 형식 간의 관계를 표시할 수 있습니다.  
   
- 팀에 고유한 프로필을 배포할 수 있습니다. 각 팀 멤버가 프로필을 설치할 수 있습니다. 이렇게 하면 해당 스테레오타입을 사용하는 모델을 만들고 편집할 수 있습니다.  
+  팀에 고유한 프로필을 배포할 수 있습니다. 각 팀 멤버가 프로필을 설치할 수 있습니다. 이렇게 하면 해당 스테레오타입을 사용하는 모델을 만들고 편집할 수 있습니다.  
   
 > [!NOTE]
 >  편집 중인 모델에 프로필의 스테레오타입을 적용한 후 다른 사용자와 모델을 공유하는 경우 자신의 컴퓨터에 동일한 프로필을 설치해야 합니다. 그렇지 않으면 사용된 스테레오타입을 볼 수 없습니다.  
@@ -83,56 +83,56 @@ ms.locfileid: "49221262"
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>새 Visual Studio 확장에서 프로필을 정의하려면  
   
-1.  Visual Studio 확장 프로젝트를 만듭니다.  
+1. Visual Studio 확장 프로젝트를 만듭니다.  
   
-    > [!NOTE]
-    >  이 절차를 사용하려면 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]가 설치되어 있어야 합니다.  
+   > [!NOTE]
+   >  이 절차를 사용하려면 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]가 설치되어 있어야 합니다.  
   
-    1.  **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
+   1.  **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-    2.  에 **새 프로젝트** 대화 상자의 **설치 된 템플릿**를 확장 **Visual C#**, 클릭 **확장성**, 클릭및 **VSIX 프로젝트**합니다. 프로젝트 이름을 설정 하 고 클릭 **확인**합니다.  
+   2.  에 **새 프로젝트** 대화 상자의 **설치 된 템플릿**를 확장 **Visual C#**, 클릭 **확장성**, 클릭및 **VSIX 프로젝트**합니다. 프로젝트 이름을 설정 하 고 클릭 **확인**합니다.  
   
-2.  프로젝트에 프로필을 추가합니다.  
+2. 프로젝트에 프로필을 추가합니다.  
   
-    -   솔루션 탐색기에서 프로젝트를 마우스 오른쪽 **추가**를 클릭 하 고 **기존 항목**합니다. 대화 상자에서 프로필 파일을 찾습니다.  
+   -   솔루션 탐색기에서 프로젝트를 마우스 오른쪽 **추가**를 클릭 하 고 **기존 항목**합니다. 대화 상자에서 프로필 파일을 찾습니다.  
   
-3.  프로필 파일의 설정 **출력 디렉터리로 복사** 속성입니다.  
+3. 프로필 파일의 설정 **출력 디렉터리로 복사** 속성입니다.  
   
-    1.  솔루션 탐색기에서 프로필 파일을 마우스 오른쪽 단추로 클릭 **속성**합니다.  
+   1.  솔루션 탐색기에서 프로필 파일을 마우스 오른쪽 단추로 클릭 **속성**합니다.  
   
-    2.  속성 창에서 설정 된 **출력 디렉터리로 복사** 속성을 **항상 복사**합니다.  
+   2.  속성 창에서 설정 된 **출력 디렉터리로 복사** 속성을 **항상 복사**합니다.  
   
-4.  솔루션 탐색기에서 `source.extension.vsixmanifest`를 엽니다.  
+4. 솔루션 탐색기에서 `source.extension.vsixmanifest`를 엽니다.  
   
-     파일이 확장 매니페스트 편집기에서 열립니다.  
+    파일이 확장 매니페스트 편집기에서 열립니다.  
   
-5.  에 **자산** 페이지에서 프로필을 설명 하는 행을 추가 합니다.  
+5. 에 **자산** 페이지에서 프로필을 설명 하는 행을 추가 합니다.  
   
-    -   **새로 만들기**를 클릭합니다. 필드를 설정 합니다 **새 자산 추가** 다음과 같은 대화 합니다.  
+   -   **새로 만들기**를 클릭합니다. 필드를 설정 합니다 **새 자산 추가** 다음과 같은 대화 합니다.  
   
-    -   설정할 **형식** 를 `Microsoft.VisualStudio.UmlProfile`  
+   -   설정할 **형식** 를 `Microsoft.VisualStudio.UmlProfile`  
   
-         이것은 드롭다운 선택 항목 중 하나가 아니므로 키보드에서 이 이름을 입력합니다.  
+        이것은 드롭다운 선택 항목 중 하나가 아니므로 키보드에서 이 이름을 입력합니다.  
   
-    -   클릭 **파일 시스템의 파일** 선택한 프로필 파일의 이름을 예를 들어 `MyProfile.profile`  
+   -   클릭 **파일 시스템의 파일** 선택한 프로필 파일의 이름을 예를 들어 `MyProfile.profile`  
   
-6.  프로젝트를 빌드합니다.  
+6. 프로젝트를 빌드합니다.  
   
-7.  **프로필 디버그**, F5 키를 누릅니다.  
+7. **프로필 디버그**, F5 키를 누릅니다.  
   
-     Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 모델링 프로젝트를 엽니다. UML 탐색기에서 모델의 루트 요소를 선택하고 속성 창에서 프로필을 선택합니다. 그런 다음 모델 내의 요소를 선택하고 요소에 대해 정의한 스테레오타입을 설정합니다.  
+    Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 모델링 프로젝트를 엽니다. UML 탐색기에서 모델의 루트 요소를 선택하고 속성 창에서 프로필을 선택합니다. 그런 다음 모델 내의 요소를 선택하고 요소에 대해 정의한 스테레오타입을 설정합니다.  
   
-8.  **배포를 위해 VSIX를 추출 하려면**  
+8. **배포를 위해 VSIX를 추출 하려면**  
   
-    1.  Windows 탐색기에서 폴더를 엽니다 **.\bin\Debug** 하거나 **.\bin\Release** 찾으려고 합니다 **.vsix** 파일. 이 파일은 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장 파일입니다. 컴퓨터에 설치하고 다른 Visual Studio 사용자에게 보낼 수 있습니다.  
+   1.  Windows 탐색기에서 폴더를 엽니다 **.\bin\Debug** 하거나 **.\bin\Release** 찾으려고 합니다 **.vsix** 파일. 이 파일은 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장 파일입니다. 컴퓨터에 설치하고 다른 Visual Studio 사용자에게 보낼 수 있습니다.  
   
-    2.  확장을 설치하려면  
+   2.  확장을 설치하려면  
   
-        1.  `.vsix` 파일을 두 번 클릭합니다. Visual Studio 확장 설치 관리자가 시작됩니다.  
+       1.  `.vsix` 파일을 두 번 클릭합니다. Visual Studio 확장 설치 관리자가 시작됩니다.  
   
-        2.  실행 중인 Visual Studio 인스턴스를 다시 시작합니다.  
+       2.  실행 중인 Visual Studio 인스턴스를 다시 시작합니다.  
   
- [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]를 설치하지 않은 경우 소규모 설치에는 다음 절차를 대신 사용할 수 있습니다.  
+   [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]를 설치하지 않은 경우 소규모 설치에는 다음 절차를 대신 사용할 수 있습니다.  
   
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>Visual Studio SDK를 사용하지 않고 프로필 확장을 정의하려면  
   
@@ -348,24 +348,24 @@ ms.locfileid: "49221262"
  UML 모델을 열면 다음 오류가 표시 됩니다: **VS1707: serialization 오류가 발생 했기 때문에 다음 프로필을 로드할 수 없습니다: MyProfile.profile**  
  1.  .profile의 기본 XML 구문이 올바른지 확인합니다.  
   
-2.  각 모니커 이름이 /profileName/nodeName 형식인지 확인합니다. profileName은 루트 프로필 노드의 name 특성 값입니다. nodeName은 메타클래스, externalType 또는 enumerationType의 name 특성 값입니다.  
+2. 각 모니커 이름이 /profileName/nodeName 형식인지 확인합니다. profileName은 루트 프로필 노드의 name 특성 값입니다. nodeName은 메타클래스, externalType 또는 enumerationType의 name 특성 값입니다.  
   
-3.  여기에 설명 된 대로 및와 같이 구문을 확인 _드라이브_**: Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles \Program Files\Microsoft\\** .  
+3. 여기에 설명 된 대로 및와 같이 구문을 확인 _드라이브_**: Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles \Program Files\Microsoft\\** .  
   
-4.  오류가 발생한 확장을 제거합니다. **도구** 메뉴에서 **확장 및 업데이트**를 클릭합니다.  
+4. 오류가 발생한 확장을 제거합니다. **도구** 메뉴에서 **확장 및 업데이트**를 클릭합니다.  
   
-    -   확장이 나타나지 않는 경우 다음 항목을 참조하세요.  
+   -   확장이 나타나지 않는 경우 다음 항목을 참조하세요.  
   
-5.  VSIX 파일을 다시 빌드하고 Windows 탐색기에서 열어 다시 설치합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.  
+5. VSIX 파일을 다시 빌드하고 Windows 탐색기에서 열어 다시 설치합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.  
   
- 확장 확장 관리자에 표시 되지 않지만 다시 설치 하려고 할 때 다음 메시지가 나타납니다: **확장 적용 가능한 모든 제품에 이미 설치 되어 있습니다.**  
- 1.  하위 폴더에서 확장 파일을 제거 *LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
+   확장 확장 관리자에 표시 되지 않지만 다시 설치 하려고 할 때 다음 메시지가 나타납니다: **확장 적용 가능한 모든 제품에 이미 설치 되어 있습니다.**  
+   1.  하위 폴더에서 확장 파일을 제거 *LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
   
-    -   보려는 *LocalAppData*, Windows 탐색기 폴더 옵션의 보기 탭에서 숨김 파일 및 폴더 표시를 설정 해야 합니다.  
+   -   보려는 *LocalAppData*, Windows 탐색기 폴더 옵션의 보기 탭에서 숨김 파일 및 폴더 표시를 설정 해야 합니다.  
   
-    -   *LocalAppData* 는 일반적으로 C:\Users\\*userName*\AppData\Local\  
+   -   *LocalAppData* 는 일반적으로 C:\Users\\*userName*\AppData\Local\  
   
-2.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [UML 모델 요소에 스테레오 타입 추가](../modeling/add-stereotypes-to-uml-model-elements.md)   

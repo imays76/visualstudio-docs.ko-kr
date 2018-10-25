@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c3e74f66edc0a8b33ad1fe8205cc02cd0e80054
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866157"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>DSL 정의에 확장 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ DSL 정의 확장을 사용 하면 도메인 특정 언어 (DSL)에 대 한 확�
   
  추가 기능을 다음과 같습니다.  
   
--   모델 및 프레젠테이션 요소에 대 한 속성  
+- 모델 및 프레젠테이션 요소에 대 한 속성  
   
--   모양 및 연결선에 대 한 decorator  
+- 모양 및 연결선에 대 한 decorator  
   
--   클래스, 관계, 모양 및 연결선  
+- 클래스, 관계, 모양 및 연결선  
   
--   유효성 검사 제약 조건  
+- 유효성 검사 제약 조건  
   
--   도구 상자 항목 및 탭  
+- 도구 상자 항목 및 탭  
   
- 확장된을 사용 하는 DSL의 사용자 만들고 추가 기능의 인스턴스가 포함 된 모델을 저장할 수 있으며 적절 한 확장명 설치 되어 있는 다른 사용자가 읽을 수 있습니다. 확장을 설치 하지 않은 사용자는 추가 기능을 사용할 수 없습니다 하지만 업데이트 하 고 추가 기능을 손실 하지 않고 모델을 저장할 수 있습니다.  
+  확장된을 사용 하는 DSL의 사용자 만들고 추가 기능의 인스턴스가 포함 된 모델을 저장할 수 있으며 적절 한 확장명 설치 되어 있는 다른 사용자가 읽을 수 있습니다. 확장을 설치 하지 않은 사용자는 추가 기능을 사용할 수 없습니다 하지만 업데이트 하 고 추가 기능을 손실 하지 않고 모델을 저장할 수 있습니다.  
   
- 샘플 코드와이 기능에 대 한 자세한 정보에 대 한 참조를 [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) 웹 사이트입니다.  
+  샘플 코드와이 기능에 대 한 자세한 정보에 대 한 참조를 [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) 웹 사이트입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)

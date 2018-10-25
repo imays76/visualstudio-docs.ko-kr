@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839143"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>레거시 언어 서비스의 탐색 모음 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  선택 유형 드롭다운 목록에서에서 변경 되 면 멤버 목록 새 유형을 반영 하도록 업데이트 되어야 합니다. 멤버 목록에 표시 된 항목 일 수 있습니다.  
   
--   현재 형식에 대 한 멤버의 목록입니다.  
+- 현재 형식에 대 한 멤버의 목록입니다.  
   
--   원본에서 사용할 수 있는 모든 멤버 파일에 있지만 현재 형식에 없는 모든 멤버가 포함 된 회색 텍스트로 표시 합니다. 빠른 탐색을 위해 사용할 수 있지만 색은 없음을 나타냅니다 현재 선택 된 형식의 일부로 회색 멤버를 여전히 선택할 수 있습니다.  
+- 원본에서 사용할 수 있는 모든 멤버 파일에 있지만 현재 형식에 없는 모든 멤버가 포함 된 회색 텍스트로 표시 합니다. 빠른 탐색을 위해 사용할 수 있지만 색은 없음을 나타냅니다 현재 선택 된 형식의 일부로 회색 멤버를 여전히 선택할 수 있습니다.  
   
- 구현 된 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 메서드는 일반적으로 다음 단계를 수행 합니다.  
+  구현 된 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> 메서드는 일반적으로 다음 단계를 수행 합니다.  
   
 1.  소스 파일에 대 한 현재 선언의 목록을 가져옵니다.  
   

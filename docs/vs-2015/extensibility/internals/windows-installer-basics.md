@@ -16,12 +16,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 281dfa7a8c671923dd64eb8ecaee0629d4b8e224
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23f633b57a677996a5f286ca1f5ac4b911b3cdda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829315"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 기본 사항
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Windows 설치 관리자를 설치 하 고 Windows 설치 관리자 구성 요�
 ## <a name="authoring-a-vspackage"></a>VSPackage를 작성합니다.  
  Windows 설치 관리자는 Windows Installer 설치, 제거 또는 제품을 복구 하는 데 설치 사용자 인터페이스 (UI)를 실행 해야 하는 정보가 포함 된 설치 패키지를 사용 합니다. 각 설치 패키지에는 데이터베이스를 설치, 요약 정보 스트림 및 다양 한 부분 설치에 대 한 데이터 스트림을 포함 하는.msi 파일을 포함 합니다. 설치 관리자를 사용 하려면 설치를 작성 해야 합니다. 설치 관리자 구성 요소 개념의 설치를 구성 하 고 관계형 데이터베이스의 설치에 대 한 정보를 저장, 때문에 광범위 하 게 설치 패키지를 작성 하려면 해야 다음 단계:  
   
-1.  Side-by-side-전략과 버전 관리를 지원 하기 위해 제작 설치를 계획 합니다.  
+1. Side-by-side-전략과 버전 관리를 지원 하기 위해 제작 설치를 계획 합니다.  
   
-2.  사용자에 게 표시 기능을 식별 합니다.  
+2. 사용자에 게 표시 기능을 식별 합니다.  
   
-3.  구성 요소에는 VSPackage 및 종속성을 구성 합니다.  
+3. 구성 요소에는 VSPackage 및 종속성을 구성 합니다.  
   
-4.  정보를 사용 하 여 설치 데이터베이스를 채웁니다.  
+4. 정보를 사용 하 여 설치 데이터베이스를 채웁니다.  
   
-5.  설치 패키지의 유효성을 검사 합니다.  
+5. 설치 패키지의 유효성을 검사 합니다.  
   
- 이 설명서는 프로세스의 첫 번째 및 세 번째 단계를 사용 하 여 주로 관련이 있습니다. 이러한 단계를 구성 하면 VSPackage 기능 WICs 버전 및 서비스의 후속 버전에 대 한 계정에 대 한 전략 프레임 수 있도록 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]입니다. 나머지 세 단계를 Platform SDK의 Windows Installer 설명서에서 자세히 설명 되어 있습니다.  
+   이 설명서는 프로세스의 첫 번째 및 세 번째 단계를 사용 하 여 주로 관련이 있습니다. 이러한 단계를 구성 하면 VSPackage 기능 WICs 버전 및 서비스의 후속 버전에 대 한 계정에 대 한 전략 프레임 수 있도록 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]입니다. 나머지 세 단계를 Platform SDK의 Windows Installer 설명서에서 자세히 설명 되어 있습니다.  
   
 ## <a name="key-terms"></a>주요 용어  
  다음은 Windows Installer 기술과 관련 된 주요 용어의 정의 합니다.  

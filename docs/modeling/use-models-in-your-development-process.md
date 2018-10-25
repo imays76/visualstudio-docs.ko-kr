@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824298"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 
@@ -123,7 +123,7 @@ Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는
 각 종류의 다이어그램은 서로 다른 추상화 수준에서 디자인을 설명하는 데 유용합니다. 대부분의 다이어그램 형식은 두 개 이상의 수준에서 유용합니다. 이 표에서는 각 다이어그램 형식을 사용할 수 있는 방법을 보여 줍니다.
 
 |디자인 수준|다이어그램 형식|
-|------------------|-------------------|
+|-|-|
 |비즈니스 프로세스<br /><br /> 시스템이 사용되는 컨텍스트를 이해하면 사용자가 시스템에서 요구하는 사항을 이해하는 데 도움이 됩니다.|-개념적 클래스 다이어그램 비즈니스 프로세스 내에서 사용 되는 비즈니스 개념을 설명 합니다.|
 |사용자 요구 사항<br /><br /> 사용자가 시스템에서 요구하는 사항의 정의입니다.|비즈니스 규칙 및 서비스 품질 요구 사항 별도 문서에서 설명할 수 있습니다.|
 |개략적인 디자인<br /><br /> 시스템의 전체 구조: 주요 구성 요소 및 결합 방식입니다.|종속성 다이어그램 시스템이 상호 종속적인 파트로 구성 되는 방식을 설명 합니다. 아키텍처를 준수 하는지 확인 하는 종속성 다이어그램에 대해 프로그램 코드를 확인할 수 있습니다.|
@@ -132,9 +132,9 @@ Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는
 ## <a name="external-resources"></a>외부 리소스
 
 |**범주**|**링크**|
-|------------------|---------------|
+|-|-|
 |**비디오**|![비디오 링크](../data-tools/media/playvideo.gif) [MSDN How Do I Video: 만들기 및 사용 하 여 UML 모델 및 다이어그램 (Visual Studio 2010 Ultimate) 하는 방법](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010을 사용한 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif) [MSDN 어떻게 할까요? 시리즈: UML 도구 및 확장성 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**포럼**|- [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 시각화 및 모델링 SDK (DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**포럼**|- [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)|
 

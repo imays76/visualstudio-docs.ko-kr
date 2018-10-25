@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fbe84371deb7306300c69f4890398fd43c3061f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12a2b5c056dd34ebba9690306134e20e78b94bcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842809"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
-이 나타내는 개체를 소유 하는 프로세스의 ID를 검색 [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) 인터페이스입니다.  
+이 나타내는 개체를 소유 하는 프로세스의 ID를 가져옵니다 [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,7 +44,7 @@ int GetProcessID (
  [out] 프로세스 id입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

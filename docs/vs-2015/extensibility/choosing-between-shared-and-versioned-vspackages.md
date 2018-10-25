@@ -17,12 +17,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75bc095ba4e9fc12033787b64dd516459e574b26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859938"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>공유 및 버전 관리 VSPackage 중에서 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ ms.locfileid: "49263694"
 ## <a name="binary-compatibility"></a>이진 호환성  
  일반적으로 이진 호환성에는 이전 버전의 Visual Studio의 이후 버전에서 실행 하려면 Visual Studio를 사용 하 여 개발 하는 네이티브 코드로 Vspackage 수 있습니다. 그러나는 세 가지 중요 한 예외가 있습니다.  
   
--   VSPackage는 특정 버전의 공용 언어 런타임의 경우의 어떤 버전을 확인 해야 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실행 됩니다.  
+- VSPackage는 특정 버전의 공용 언어 런타임의 경우의 어떤 버전을 확인 해야 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실행 됩니다.  
   
--   VSPackage 다른 VSPackage 또는 다른 제품의 특정 기능에 대해 종속성이 있을 수 있습니다. 결과적으로 VSPackage 종속성은 충족 하는 위치에 실행할 수 있습니다.  
+- VSPackage 다른 VSPackage 또는 다른 제품의 특정 기능에 대해 종속성이 있을 수 있습니다. 결과적으로 VSPackage 종속성은 충족 하는 위치에 실행할 수 있습니다.  
   
--   VSPackage의 보안 수정 영향을 받을 수는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 서비스 팩 또는 최신 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 이러한 경우 VSPackage의 이전 버전을 사용 하 여 개발 된 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 버전에서 실행 되지 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 보안 수정이 적용 된 후입니다. 그러나 최신 버전을 사용 하 여 패키지를 다시 작성할 수 있으며 이전 버전에서 실행할 수도 있습니다.  
+- VSPackage의 보안 수정 영향을 받을 수는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 서비스 팩 또는 최신 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 이러한 경우 VSPackage의 이전 버전을 사용 하 여 개발 된 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 버전에서 실행 되지 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 보안 수정이 적용 된 후입니다. 그러나 최신 버전을 사용 하 여 패키지를 다시 작성할 수 있으며 이전 버전에서 실행할 수도 있습니다.  
   
- 관리 되는 Vspackage의 버전을 사용 하 여 빌드해야 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 하며 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 의 대상 버전을 일치 하는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
+  관리 되는 Vspackage의 버전을 사용 하 여 빌드해야 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 하며 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 의 대상 버전을 일치 하는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
   
- VSPackage 이진 파일에 대 한 이진 호환성에 대 한 계획 하는 것 외에도 또한 사항과 고려해 야 솔루션 프로젝트 파일 형식입니다. VSPackage는 새 프로젝트 형식을 만듭니다, 하는 경우 버전을 하나만 또는 여러 버전의 실행할 수 있는지 여부를 결정 해야 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 자세한 내용은 [사용자 지정 프로젝트 업그레이드](../misc/upgrading-custom-projects.md)합니다.  
+  VSPackage 이진 파일에 대 한 이진 호환성에 대 한 계획 하는 것 외에도 또한 사항과 고려해 야 솔루션 프로젝트 파일 형식입니다. VSPackage는 새 프로젝트 형식을 만듭니다, 하는 경우 버전을 하나만 또는 여러 버전의 실행할 수 있는지 여부를 결정 해야 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 자세한 내용은 [사용자 지정 프로젝트 업그레이드](../misc/upgrading-custom-projects.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Windows Installer를 사용 하 여 Vspackage 설치](../extensibility/internals/installing-vspackages-with-windows-installer.md)   

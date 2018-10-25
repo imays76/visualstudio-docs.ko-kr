@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942935"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 
@@ -90,21 +90,21 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 
    ![메뉴 항목 게시 스크린 샷](media/k8s-tools-publish-project.png)
 
-1. 에 **게시** 화면에서 선택 **Container Registry** 게시와 대상 및 지시에 따라 컨테이너 레지스트리를 선택 합니다. 컨테이너 레지스트리를 아직 없는 경우 선택할 **새 Azure Container Registry 만들기** Visual Studio에서 만들어야 합니다. 자세한 내용은 [Azure Container Registry에 컨테이너를 게시](#publish-your-container-to-azure-container-registry)합니다.
+2. 에 **게시** 화면에서 선택 **Container Registry** 게시와 대상 및 지시에 따라 컨테이너 레지스트리를 선택 합니다. 컨테이너 레지스트리를 아직 없는 경우 선택할 **새 Azure Container Registry 만들기** Visual Studio에서 만들어야 합니다. 자세한 내용은 [Azure Container Registry에 컨테이너를 게시](#publish-your-container-to-azure-container-registry)합니다.
 
    ![게시 대상 화면 선택 스크린샷](media/k8s-tools-publish-to-acr.png)
 
-1. 솔루션 탐색기에서 다시 마우스 오른쪽 단추로 클릭 하 *솔루션* 클릭 **Azure AKS에 게시**합니다.
+3. 솔루션 탐색기에서 다시 마우스 오른쪽 단추로 클릭 하 *솔루션* 클릭 **Azure AKS에 게시**합니다.
 
    ![스크린 샷의 게시할 Azure AKS 메뉴 항목](media/k8s-tools-publish-solution.png)
 
-1. ACR과 함께 방금 만든 프로필을 게시, 구독 및 AKS 클러스터를 선택 합니다. 그런 다음 **확인**을 클릭합니다.
+4. ACR과 함께 방금 만든 프로필을 게시, 구독 및 AKS 클러스터를 선택 합니다. 그런 다음 **확인**을 클릭합니다.
 
    ![스크린 샷의 게시할 AKS 화면](media/k8s-tools-publish-to-aks.png)
 
    로 이동 합니다 **AKS Azure에 게시** 화면.
 
-1.  선택 된 **Helm 구성** Helm 차트를 서버에 설치 하는 데 사용 된 명령줄을 업데이트 하려면 연결 합니다.
+5. 선택 된 **Helm 구성** Helm 차트를 서버에 설치 하는 데 사용 된 명령줄을 업데이트 하려면 연결 합니다.
 
    ![링크 구성 Helm 스크린 샷](media/k8s-tools-configure-helm.png)
 
@@ -112,7 +112,7 @@ Visual Studio Kubernetes 도구 도움말 Kubernetes를 대상으로 하는 컨�
 
    ![스크린샷의 Helm 구성 화면](media/k8s-tools-helm-configure-screen.png)
 
-1. 배포할 준비가 되 면 클릭 합니다 **게시** AKS에 응용 프로그램을 게시 하는 단추입니다.
+6. 배포할 준비가 되 면 클릭 합니다 **게시** AKS에 응용 프로그램을 게시 하는 단추입니다.
 
    ![Azure AKS 화면에 게시의 스크린샷](media/k8s-tools-publish-screen.png)
 
