@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1c04066099b385b03c1b81bc4d85c7fb13e329
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898059"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint 패키징 및 배포 문제 해결
   이 항목에서는 SharePoint 솔루션을 패키지하고 배포할 때 발생할 수 있는 다양한 문제에 대해 설명합니다.
@@ -59,13 +59,13 @@ ms.locfileid: "37119501"
 ## <a name="differences-between-f5-deployment"></a>F5 배포 간의 차이점
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 사용하여 테스트 및 디버깅을 위해 SharePoint 프로젝트를 로컬 SharePoint 서버에 배포하는 경우 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 몇 가지 추가 단계가 수행됩니다.
 
-1.  배포 단계 중에 IIS(인터넷 정보 서비스)를 다시 설정합니다.
+1. 배포 단계 중에 IIS(인터넷 정보 서비스)를 다시 설정합니다.
 
-2.  워크플로를 자동으로 연결합니다.
+2. 워크플로를 자동으로 연결합니다.
 
-3.  패키지 디자이너의 계층 구조에 따라 기능 활성화 순서를 설정합니다.
+3. 패키지 디자이너의 계층 구조에 따라 기능 활성화 순서를 설정합니다.
 
- 추가 변경에 사용자 지정 배포 단계를 추가할 수 있습니다 합니다 **F5** 동작 합니다. 자세한 내용은 [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)합니다.
+   추가 변경에 사용자 지정 배포 단계를 추가할 수 있습니다 합니다 **F5** 동작 합니다. 자세한 내용은 [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)합니다.
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>SharePoint 페이지 표시 지연 비주얼 웹 파트를 배포 하는 경우
  비주얼 웹 파트를 [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 또는 [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]의 Bin 폴더에 배포할 경우 SharePoint 페이지가 나타나는 데 오래 소요됩니다. Bin 디렉터리와 같은 최상위 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 디렉터리에서 파일을 변경하는 경우 전체 웹 응용 프로그램이 다시 컴파일됩니다. 이로 인해 SharePoint 페이지가 렌더링되는 데 최대 25초가 지연될 수 있습니다.

@@ -24,12 +24,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f265bf63890cfe2dcc9ecb9ef845803ef1c858cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840651"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>방법: 웹 사이트에 대한 성능 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ ms.locfileid: "49185915"
   
  관리자가 사용 가능하도록 설정한 사용자 액세스 권한 설정에 따라 개별 사용자는 ASP.NET 프로세스를 호스트하는 컴퓨터에서 프로파일러 세션을 만들 수 있는 보안 권한을 갖거나 갖지 못할 수 있습니다. 다음 예제에서는 사용자 간에 가능한 차이점을 보여 줍니다.  
   
--   관리자가 드라이버 및 서비스를 시작하도록 설정한 경우 일부 사용자는 고급 프로파일링 기능에 액세스할 수 있습니다.  
+- 관리자가 드라이버 및 서비스를 시작하도록 설정한 경우 일부 사용자는 고급 프로파일링 기능에 액세스할 수 있습니다.  
   
--   도메인 사용자는 샘플 프로파일링에만 액세스가 가능할 수 있습니다.  
+- 도메인 사용자는 샘플 프로파일링에만 액세스가 가능할 수 있습니다.  
   
--   일부 사용자는 다른 모든 사용자에 대한 프로파일링에 액세스하지 못할 수 있습니다.  
+- 일부 사용자는 다른 모든 사용자에 대한 프로파일링에 액세스하지 못할 수 있습니다.  
   
- 자세한 내용은 [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.  
+  자세한 내용은 [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.  
   
 ### <a name="to-profile-a-web-site-project"></a>웹 사이트 프로젝트를 프로파일링하려면  
   
@@ -75,33 +75,33 @@ ms.locfileid: "49185915"
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Visual Studio에서 프로젝트를 열지 않고 웹 사이트를 프로파일링하려면  
   
-1.  [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 또는 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]를 엽니다.  
+1. [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 또는 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]를 엽니다.  
   
-2.  **분석** 메뉴에서 **성능 마법사 시작**을 클릭합니다.  
+2. **분석** 메뉴에서 **성능 마법사 시작**을 클릭합니다.  
   
-3.  마법사의 첫 번째 페이지에서 프로파일링 방법을 선택하고 **다음**을 클릭합니다. 자세한 내용은 [성능 컬렉션 메서드 이해](../profiling/understanding-performance-collection-methods.md)를 참조하세요.  
+3. 마법사의 첫 번째 페이지에서 프로파일링 방법을 선택하고 **다음**을 클릭합니다. 자세한 내용은 [성능 컬렉션 메서드 이해](../profiling/understanding-performance-collection-methods.md)를 참조하세요.  
   
-4.  마법사의 두 번째 페이지에서 **ASP.NET 또는 JavaScript 응용 프로그램 프로파일링** 옵션을 선택하고 **다음**을 클릭합니다.  
+4. 마법사의 두 번째 페이지에서 **ASP.NET 또는 JavaScript 응용 프로그램 프로파일링** 옵션을 선택하고 **다음**을 클릭합니다.  
   
-5.  마법사의 세 번째 페이지에서 **웹 응용 프로그램이 실행될 URL 또는 경로** 상자에 응용 프로그램 홈 페이지에 대한 URL을 입력하고 **다음**을 클릭합니다.  
+5. 마법사의 세 번째 페이지에서 **웹 응용 프로그램이 실행될 URL 또는 경로** 상자에 응용 프로그램 홈 페이지에 대한 URL을 입력하고 **다음**을 클릭합니다.  
   
-    -   서버(IIS) 기반 웹 사이트의 경우 **http://localhost/MySite/default.aspx**와 같은 URL을 입력합니다. 이렇게 하면 MySite의 응용 프로그램 루트에서 로컬 컴퓨터의 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램이 프로파일링되며, 해당 사이트의 default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.  
+   - 서버(IIS) 기반 웹 사이트의 경우 **http://localhost/MySite/default.aspx**와 같은 URL을 입력합니다. 이렇게 하면 MySite의 응용 프로그램 루트에서 로컬 컴퓨터의 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램이 프로파일링되며, 해당 사이트의 default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.  
   
-    -   파일 기반 웹 사이트에는 file///**c:\WebSites\MySite\default.aspx**같은 경로를 입력합니다. 이렇게 하면 c:\webSites\MySite에 있는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램이 프로파일링되고 http://localhost:nnnn/MySite/default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.  
+   - 파일 기반 웹 사이트에는 file///**c:\WebSites\MySite\default.aspx**같은 경로를 입력합니다. 이렇게 하면 c:\webSites\MySite에 있는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램이 프로파일링되고 http://localhost:nnnn/MySite/default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.  
   
-    -   JavaScript 데이터를 수집할 외부 사이트에는 http://www.contoso.com과 같은 URL을 입력합니다.  
+   - JavaScript 데이터를 수집할 외부 사이트에는 http://www.contoso.com과 같은 URL을 입력합니다.  
   
      자세한 내용은 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 대상 이진에 대한 속성 페이지를 참조하세요.  
   
-6.  마법사의 세 번째 페이지에서 TIP(계층 상호 작용 프로파일링) 데이터, 웹 페이지에서 실행 중인 JavaScript의 데이터 또는 둘 모두를 선택할 수 있습니다.  
+6. 마법사의 세 번째 페이지에서 TIP(계층 상호 작용 프로파일링) 데이터, 웹 페이지에서 실행 중인 JavaScript의 데이터 또는 둘 모두를 선택할 수 있습니다.  
   
-    -   계층 상호 작용을 수집하려면 **계층 상호 작용 프로파일링 사용** 확인란을 선택합니다.  
+   -   계층 상호 작용을 수집하려면 **계층 상호 작용 프로파일링 사용** 확인란을 선택합니다.  
   
-    -   웹 페이지에서 실행 중인 JavaScript에서 데이터를 수집하려면 **JavaScript 프로파일링** 확인란을 선택합니다.  
+   -   웹 페이지에서 실행 중인 JavaScript에서 데이터를 수집하려면 **JavaScript 프로파일링** 확인란을 선택합니다.  
   
-7.  **다음**을 클릭합니다.  
+7. **다음**을 클릭합니다.  
   
-8.  마법사의 네 번째 페이지에서 **마침**을 클릭합니다.  
+8. 마법사의 네 번째 페이지에서 **마침**을 클릭합니다.  
   
 9. ASP.NET 앱에 대한 성능 세션이 만들어지고 브라우저에서 웹 사이트가 시작됩니다. 프로파일링을 수행할 기능을 실행하고 브라우저를 닫습니다.  
   

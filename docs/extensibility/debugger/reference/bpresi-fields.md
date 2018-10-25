@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6ecfd729762944bcf26814e735c4c73841e2d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b25c979870b21b802cd3c32f02bc649347159857
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908615"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 중단점을 해결 하는 방법에 대 한 검색할 정보를 지정 합니다.  
@@ -48,7 +48,7 @@ public enum enum_BPRESI_FIELDS {
   
 ## <a name="members"></a>멤버  
  BPRESI_BPRESLOCATION  
- 초기화/사용 된 `bpResLocation` 의 (중단점 해상도 위치) 필드는 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조입니다.  
+ 초기화/사용 합니다 `bpResLocation` (중단점 해결 위치) 필드를 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조입니다.  
   
  BPRESI_PROGRAM  
  초기화/사용 된 `pProgram` 필드는 `BP_RESOLUTION_INFO` 구조입니다.  
@@ -60,11 +60,11 @@ public enum enum_BPRESI_FIELDS {
  모든 필드를 지정합니다.  
   
 ## <a name="remarks"></a>설명  
- 에 전달 되는 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 의 필드를 나타내도록 메서드를는 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조를 초기화할 수는 있습니다.  
+ 에 전달 합니다 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 의 필드를 표시 하는 방법을 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조는 초기화할 합니다.  
   
- 이러한 플래그의 필드를 나타내기 위해 사용도 `BP_RESOLUTION_INFO` 구조는 사용 되지 않으며 유효한 해당 구조를 반환 하는 경우.  
+ 이러한 플래그는의 필드를 나타내는 데도 `BP_RESOLUTION_INFO` 구조는 유효 하 고 사용 되는 해당 구조를 반환할 때.  
   
- 이러한 값에 비트와 함께 사용할 수 있습니다 `OR`합니다.  
+ 이러한 값을 비트 결합할 수 있습니다 `OR`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

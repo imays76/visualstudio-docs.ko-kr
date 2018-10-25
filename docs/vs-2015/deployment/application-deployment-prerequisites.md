@@ -25,12 +25,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891000"
 ---
 # <a name="application-deployment-prerequisites"></a>응용 프로그램 배포 필수 구성 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "49217934"
 ## <a name="bootstrapping-and-clickonce-deployment"></a>부트스트래핑 및 ClickOnce 배포  
  클라이언트 컴퓨터에 응용 프로그램을 설치하기 전에 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]에서 클라이언트가 응용 프로그램 매니페스트에 지정된 특정 요구 사항을 포함하는지를 검사합니다. 이러한 요구 사항은 다음과 같습니다.  
   
--   필요한 최소 버전의 공용 언어 런타임. 응용 프로그램 매니페스트에서 어셈블리 종속성으로 지정합니다.  
+- 필요한 최소 버전의 공용 언어 런타임. 응용 프로그램 매니페스트에서 어셈블리 종속성으로 지정합니다.  
   
--   응용 프로그램에 필요한 Windows 운영 체제의 최소 버전. `<osVersionInfo>` 요소를 사용하여 응용 프로그램 매니페스트에서 지정합니다. (참조 [ \<종속성 > 요소](../deployment/dependency-element-clickonce-application.md))  
+- 응용 프로그램에 필요한 Windows 운영 체제의 최소 버전. `<osVersionInfo>` 요소를 사용하여 응용 프로그램 매니페스트에서 지정합니다. (참조 [ \<종속성 > 요소](../deployment/dependency-element-clickonce-application.md))  
   
--   GAC(전역 어셈블리 캐시)에 미리 설치해야 하는 모든 어셈블리의 최소 버전. 어셈블리 매니페스트에서 어셈블리 종속성 선언을 통해 지정합니다.  
+- GAC(전역 어셈블리 캐시)에 미리 설치해야 하는 모든 어셈블리의 최소 버전. 어셈블리 매니페스트에서 어셈블리 종속성 선언을 통해 지정합니다.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 누락 된 필수 구성 요소를 검색할 수 있습니다 하 고 부트스트래퍼를 사용 하 여 필수 구성 요소를 설치할 수 있습니다. 자세한 내용은 [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)합니다.  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 누락 된 필수 구성 요소를 검색할 수 있습니다 하 고 부트스트래퍼를 사용 하 여 필수 구성 요소를 설치할 수 있습니다. 자세한 내용은 [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)합니다.  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 및 MageUI.exe와 같은 도구를 통해 생성된 매니페스트의 값을 변경하려면 텍스트 편집기에서 응용 프로그램 매니페스트를 편집한 다음 응용 프로그램 및 배포 매니페스트를 모두 다시 서명해야 합니다. 자세한 내용은 [방법: 응용 프로그램 및 배포 매니페스트에 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)을 참조하세요.  

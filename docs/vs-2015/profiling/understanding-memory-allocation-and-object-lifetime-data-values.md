@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c18a7c078e647f6feef152d3f4f185cb6026c32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23b4330c3eb020080f593c564cf47f4e91c4bc83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824492"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>메모리 할당 및 개체 수명 데이터 값 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "49194222"
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 메모리 프로파일러는 프로파일링된 응용 프로그램에서 .NET Framework 개체를 할당할 때마다 컴퓨터 프로세서를 중단시킵니다. 개체 수명 데이터도 수집되는 경우 프로파일러는 각 .NET Framework 가비지 수집 후에 프로세서를 중단합니다. 데이터는 프로파일링된 각 함수와 각 개체 유형에 대해 집계됩니다.  
+  메모리 프로파일러는 프로파일링된 응용 프로그램에서 .NET Framework 개체를 할당할 때마다 컴퓨터 프로세서를 중단시킵니다. 개체 수명 데이터도 수집되는 경우 프로파일러는 각 .NET Framework 가비지 수집 후에 프로세서를 중단합니다. 데이터는 프로파일링된 각 함수와 각 개체 유형에 대해 집계됩니다.  
   
 ## <a name="allocation-data"></a>할당 데이터  
  메모리 이벤트가 발생하면 할당되거나 삭제된 메모리 개체의 총 개수와 크기가 증가합니다.  

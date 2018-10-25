@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8e7a90925c4e7a86b39ca8e3d998055d09400e7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926548"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Guid 및 Id의 Visual Studio 명령
 Visual Studio 통합된 개발 환경 (IDE)에 포함 된 명령의 GUID 및 ID 값은 Visual Studio SDK의 일부로 설치 되는.vsct 파일에서 정의 됩니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  
@@ -34,23 +34,23 @@ Visual Studio 통합된 개발 환경 (IDE)에 포함 된 명령의 GUID 및 ID 
   
 ### <a name="to-locate-a-command-definition"></a>명령 정의 찾을 수  
   
-1.  Visual Studio에서 다음 파일을 엽니다는 *< Visual Studio SDK 설치 경로\>\VisualStudioIntegration\Common\Inc\\*  폴더: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*하십시오 *VsDbgCmdUsed.vsct*하십시오 *Venusmenu.vsct*합니다.  
+1. Visual Studio에서 다음 파일을 엽니다는 *< Visual Studio SDK 설치 경로\>\VisualStudioIntegration\Common\Inc\\*  폴더: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*하십시오 *VsDbgCmdUsed.vsct*하십시오 *Venusmenu.vsct*합니다.  
   
-     대부분의 Visual Studio 명령에 정의 된 *SharedCmdDef.vsct* 하 고 *ShellCmdDef.vsct*합니다. *VsDbgCmdUsed.vsct* 디버거를 관련 된 명령 정의 하 고 *Venusmenu.vsct* 웹 개발에 관련 된 명령을 정의 합니다.  
+    대부분의 Visual Studio 명령에 정의 된 *SharedCmdDef.vsct* 하 고 *ShellCmdDef.vsct*합니다. *VsDbgCmdUsed.vsct* 디버거를 관련 된 명령 정의 하 고 *Venusmenu.vsct* 웹 개발에 관련 된 명령을 정의 합니다.  
   
-2.  명령 메뉴 항목을 이면 메뉴 항목의 정확한 텍스트를 note 합니다. 명령 모음의 단추 이면 note에서 멈출 때 표시 되는 도구 설명 텍스트입니다.  
+2. 명령 메뉴 항목을 이면 메뉴 항목의 정확한 텍스트를 note 합니다. 명령 모음의 단추 이면 note에서 멈출 때 표시 되는 도구 설명 텍스트입니다.  
   
-3.  키를 눌러 **Ctrl**+**F** 열려는 합니다 **찾기** 대화 상자.  
+3. 키를 눌러 **Ctrl**+**F** 열려는 합니다 **찾기** 대화 상자.  
   
-4.  에 **찾을 내용** 상자에 2 단계에서 적어둔 텍스트를 입력 합니다.  
+4. 에 **찾을 내용** 상자에 2 단계에서 적어둔 텍스트를 입력 합니다.  
   
-5.  확인 **모든 열린 문서** 에 표시 되는 **찾는 위치** 상자입니다.  
+5. 확인 **모든 열린 문서** 에 표시 되는 **찾는 위치** 상자입니다.  
   
-6.  클릭는 **다음 찾기** 텍스트에서 선택 될 때까지 단추를 `<Strings>` 섹션을 [단추 요소](../../extensibility/button-element.md).  
+6. 클릭는 **다음 찾기** 텍스트에서 선택 될 때까지 단추를 `<Strings>` 섹션을 [단추 요소](../../extensibility/button-element.md).  
   
-     `<Button>` 명령에 표시 되는 요소는 명령을 정의 합니다.  
+    `<Button>` 명령에 표시 되는 요소는 명령을 정의 합니다.  
   
- 명령 정의 발견 하면에 넣을 수 명령의 복사본이 다른 메뉴 또는 도구 모음을 만들어를 [CommandPlacement 요소](../../extensibility/commandplacement-element.md) 는 동일 `guid` 고 `id` 명령으로 값입니다. 자세한 내용은 [단추의 다시 사용할 수 있는 그룹을 만들](../../extensibility/creating-reusable-groups-of-buttons.md)합니다.  
+   명령 정의 발견 하면에 넣을 수 명령의 복사본이 다른 메뉴 또는 도구 모음을 만들어를 [CommandPlacement 요소](../../extensibility/commandplacement-element.md) 는 동일 `guid` 고 `id` 명령으로 값입니다. 자세한 내용은 [단추의 다시 사용할 수 있는 그룹을 만들](../../extensibility/creating-reusable-groups-of-buttons.md)합니다.  
   
 ### <a name="special-cases"></a>특별 한 경우  
  다음 경우에 메뉴 텍스트 또는 도구 설명 텍스트를 다 명령 정의에 포함 된 내용입니다.  

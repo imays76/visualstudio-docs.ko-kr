@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a0fb267e2a3e4c0a2b8f5a1e5ce95e986e4c1ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5458fea42c799289554df7761fbc3056b423c592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880472"
 ---
 # <a name="idiasectioncontribgetaddresssection"></a>IDiaSectionContrib::get_addressSection
-섹션에 대 한 부분이 차지 하는 주소를 검색합니다.  
+섹션에 대 한 부분에 대 한 기여도 주소를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,7 +34,7 @@ HRESULT get_addressSection (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 섹션에 대 한 부분이 차지 하는 주소를 반환합니다.  
+ [out] 섹션에 대 한 부분에 대 한 기여도 주소를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  

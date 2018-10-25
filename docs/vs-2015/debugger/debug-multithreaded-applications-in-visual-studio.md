@@ -27,12 +27,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897500"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio에서 다중 스레드 응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,16 +99,16 @@ ms.locfileid: "49298144"
  [중단점 사용](../debugger/using-breakpoints.md)  
  -   개별 스레드에 중단점을 배치하려는 경우 중단점 필터를 사용하는 방법을 보여 줍니다.  
   
--   추적점을 통해 프로그램 실행을 중단 없이 추적할 수 있습니다. 이 기능은 교착 상태와 같은 문제를 파악할 때 유용합니다.  
+- 추적점을 통해 프로그램 실행을 중단 없이 추적할 수 있습니다. 이 기능은 교착 상태와 같은 문제를 파악할 때 유용합니다.  
   
- [스레딩](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 프로그래밍의 스레드 개념에 대해 설명하며, 예제 코드가 포함되어 있습니다.  
+  [스레딩](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 프로그래밍의 스레드 개념에 대해 설명하며, 예제 코드가 포함되어 있습니다.  
   
- [구성 요소에서 다중 스레딩](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 구성 요소에서 다중 스레드를 사용하는 방법에 대해 설명합니다.  
+  [구성 요소에서 다중 스레딩](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 구성 요소에서 다중 스레드를 사용하는 방법에 대해 설명합니다.  
   
- [이전 코드를 위한 다중 스레드 지원(Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- MFC를 사용하는 C++ 프로그래머를 위한 스레드 개념 및 예제 코드가 들어 있습니다.  
+  [이전 코드를 위한 다중 스레드 지원(Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  MFC를 사용하는 C++ 프로그래머를 위한 스레드 개념 및 예제 코드가 들어 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [스레드 및 프로세스 디버깅](../debugger/debug-threads-and-processes.md)   

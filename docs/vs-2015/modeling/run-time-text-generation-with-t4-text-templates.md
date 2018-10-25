@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920133"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>상속 패턴: 기본 메서드의 조각  
  패턴의 예제에 사용 되는 경우 다음 사항에 유의 합니다.  
   
--   기본 클래스 `SharedFragments` 메서드를 클래스 기능 블록 내에서 정의 `<#+ ... #>`합니다.  
+- 기본 클래스 `SharedFragments` 메서드를 클래스 기능 블록 내에서 정의 `<#+ ... #>`합니다.  
   
--   기본 클래스 없음 자유 텍스트를 포함합니다. 대신, 모든 텍스트 블록 클래스 기능 메서드 내에서 발생합니다.  
+- 기본 클래스 없음 자유 텍스트를 포함합니다. 대신, 모든 텍스트 블록 클래스 기능 메서드 내에서 발생합니다.  
   
--   파생된 클래스에 정의 된 메서드를 호출 `SharedFragments`합니다.  
+- 파생된 클래스에 정의 된 메서드를 호출 `SharedFragments`합니다.  
   
--   응용 프로그램이 호출 된 `TextTransform()` 파생된 클래스 메서드의 기본 클래스를 변환 하지 않습니다 하지만 `SharedFragments`합니다.  
+- 응용 프로그램이 호출 된 `TextTransform()` 파생된 클래스 메서드의 기본 클래스를 변환 하지 않습니다 하지만 `SharedFragments`합니다.  
   
--   기본 및 파생 클래스는 런타임 텍스트 템플릿: 즉, 합니다 **사용자 지정 도구** 속성이 **TextTemplatingFilePreprocessor**합니다.  
+- 기본 및 파생 클래스는 런타임 텍스트 템플릿: 즉, 합니다 **사용자 지정 도구** 속성이 **TextTemplatingFilePreprocessor**합니다.  
   
- **SharedFragments.tt:**  
+  **SharedFragments.tt:**  
   
 ```csharp  
 <#@ template language="C#" #>  

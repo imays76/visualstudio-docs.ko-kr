@@ -37,12 +37,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 197418bc1a4f8049c0388af005ef36eff287a856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915934"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services
 Visual Studio는 Windows Communication Foundation (WCF)를 사용 하 여 작업에 대 한 도구를 제공 하 고 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], 분산 응용 프로그램을 만들기 위한 Microsoft 기술입니다. 이 항목에서는 Visual Studio의 관점에서 서비스를 소개 합니다. 전체 설명서를 참조 하세요 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)합니다.
@@ -234,16 +234,16 @@ Windows Communication Foundation (WCF) 서비스에서 대부분의 메서드는
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
-|-----------|-----------------|
-|[연습: Windows Forms에서 간단한 WCF 서비스 만들기](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|만들고 Visual Studio에서 WCF 서비스를 사용 하는 단계별 데모를 제공 합니다.|
-|[연습: WPF 및 Entity Framework를 사용 하 여 WCF 데이터 서비스 만들기](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|만들기 및 사용 하는 방법의 단계별 데모를 제시 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Visual Studio에서.|
-|[WCF 개발 도구를 사용 하 여](/dotnet/framework/wcf/using-the-wcf-development-tools)|만들고 Visual Studio에서 WCF 서비스를 테스트 하는 방법을 설명 합니다.|
-||[방법: 추가, 업데이트 또는 WCF 데이터 서비스 참조를 제거 합니다.](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|참조 하 고 사용 하는 방법을 설명 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Visual Studio에서.|
-|[서비스 참조 문제 해결](../data-tools/troubleshooting-service-references.md)|서비스 참조 및 방지 하는 방법을 사용 하 여 발생할 수 있는 몇 가지 일반적인 오류를 표시 합니다.|
-|[WCF 서비스 디버그](../debugger/debugging-wcf-services.md)|일반적인 디버깅 문제와 WCF 서비스를 디버깅할 때 발생할 수 있는 기술에 설명 합니다.|
-|[연습: n 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|형식화된 데이터 집합을 만들고 TableAdapter 및 데이터 집합 코드를 여러 프로젝트로 분리하는 단계별 지침을 제공합니다.|
-|[서비스 참조 구성 대화 상자](../data-tools/configure-service-reference-dialog-box.md)|사용자 인터페이스 요소에 설명 합니다 **서비스 참조 구성** 대화 상자.|
+| 제목 | 설명 |
+| - | - |
+| [연습: Windows Forms에서 간단한 WCF 서비스 만들기](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 만들고 Visual Studio에서 WCF 서비스를 사용 하는 단계별 데모를 제공 합니다. |
+| [연습: WPF 및 Entity Framework를 사용 하 여 WCF 데이터 서비스 만들기](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 만들기 및 사용 하는 방법의 단계별 데모를 제시 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Visual Studio에서. |
+| [WCF 개발 도구를 사용 하 여](/dotnet/framework/wcf/using-the-wcf-development-tools) | 만들고 Visual Studio에서 WCF 서비스를 테스트 하는 방법을 설명 합니다. |
+| | [방법: 추가, 업데이트 또는 WCF 데이터 서비스 참조를 제거 합니다.](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| [서비스 참조 문제 해결](../data-tools/troubleshooting-service-references.md) | 서비스 참조 및 방지 하는 방법을 사용 하 여 발생할 수 있는 몇 가지 일반적인 오류를 표시 합니다. |
+| [WCF 서비스 디버그](../debugger/debugging-wcf-services.md) | 일반적인 디버깅 문제와 WCF 서비스를 디버깅할 때 발생할 수 있는 기술에 설명 합니다. |
+| [연습: n 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 형식화된 데이터 집합을 만들고 TableAdapter 및 데이터 집합 코드를 여러 프로젝트로 분리하는 단계별 지침을 제공합니다. |
+| [서비스 참조 구성 대화 상자](../data-tools/configure-service-reference-dialog-box.md) | 사용자 인터페이스 요소에 설명 합니다 **서비스 참조 구성** 대화 상자. |
 
 ## <a name="reference"></a>참조
 

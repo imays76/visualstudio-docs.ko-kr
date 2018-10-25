@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b909c1df4aa776f0f92d72c679ecdacb42227c18
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0650a437b4e703405ee9e8a06bfbbf9ac6c5a247
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926789"
 ---
 # <a name="register-an-expression-evaluator"></a>식 계산기 등록
 > [!IMPORTANT]
@@ -33,7 +33,7 @@ ms.locfileid: "39510492"
  기본 클래스의 메서드를 사용 하 여 표시할지 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, com DLL이 등록 될 때 호출 되는 메서드를 나타내는 이 등록 메서드를 자주 호출 `RegisterClass`, Visual Studio를 사용 하 여 DLL을 등록 하는 작업을 수행 합니다. 해당 `UnregisterClass` (표시 합니다 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>)를 수행한 `RegisterClass` DLL을 제거 하는 경우.  
  동일한 레지스트리 항목을 관리 되지 않는 코드에서 작성 하는 EE와 이루어집니다. 유일한 차이점은 있는지 도우미 함수가 같은 `SetEEMetric` 에 작업을 수행 합니다. 다음은 등록 및 등록 취소 프로세스의 예입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 함수는 EE 관리 되는 코드를 등록 하 고 Visual Studio를 사용 하 여 자체 등록을 취소 하는 방법을 보여 줍니다.  
   
 ```csharp  
@@ -125,7 +125,7 @@ namespace EEMC
   
 3.  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 아래에 키를 만들어 Visual Studio를 사용 하 여 등록\\*X.Y*여기서 *X.Y* 등록 하도록 Visual Studio의 버전입니다.  
   
-### <a name="example"></a>예  
+### <a name="example"></a>예제  
  다음 함수에는 관리 되지 않는 코드 (c + +) EE 등록 하 고 Visual Studio를 사용 하 여 자체 등록을 취소 하는 방법을 보여 줍니다.  
   
 ```cpp  

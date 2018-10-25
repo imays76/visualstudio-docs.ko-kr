@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823504"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>매개 변수가 있는 TableAdapter 쿼리 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,41 +65,41 @@ ms.locfileid: "49225259"
   
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>기존 데이터 바인딩된 폼에 쿼리를 추가하려면  
   
-1.  **Windows Forms 디자이너**에서 폼을 엽니다.  
+1. **Windows Forms 디자이너**에서 폼을 엽니다.  
   
-2.  에 **데이터** 메뉴에서**쿼리 추가**또는**데이터 스마트 태그**합니다.  
+2. 에 **데이터** 메뉴에서**쿼리 추가**또는**데이터 스마트 태그**합니다.  
   
-    > [!NOTE]
-    >  하는 경우 **쿼리 추가** 에서 사용할 수 없는 합니다 **데이터** 메뉴, 매개 변수화를 추가 하는 데이터 소스가 표시 하면 양식의 컨트롤을 선택 합니다. 예를 들어 폼의 <xref:System.Windows.Forms.DataGridView> 컨트롤에 데이터가 표시되는 경우 해당 컨트롤을 선택합니다. 폼의 개별 컨트롤에 데이터가 표시되는 경우에는 데이터 바인딩된 컨트롤을 선택합니다.  
+   > [!NOTE]
+   >  하는 경우 **쿼리 추가** 에서 사용할 수 없는 합니다 **데이터** 메뉴, 매개 변수화를 추가 하는 데이터 소스가 표시 하면 양식의 컨트롤을 선택 합니다. 예를 들어 폼의 <xref:System.Windows.Forms.DataGridView> 컨트롤에 데이터가 표시되는 경우 해당 컨트롤을 선택합니다. 폼의 개별 컨트롤에 데이터가 표시되는 경우에는 데이터 바인딩된 컨트롤을 선택합니다.  
   
-3.  에 **선택한 데이터 원본 테이블** 영역에서 선택 하려는 tablethat 매개 변수화를 추가 합니다.  
+3. 에 **선택한 데이터 원본 테이블** 영역에서 선택 하려는 tablethat 매개 변수화를 추가 합니다.  
   
-4.  에 이름을 입력 합니다 **새 쿼리 이름** 새 쿼리를 만드는 경우 상자입니다.  
+4. 에 이름을 입력 합니다 **새 쿼리 이름** 새 쿼리를 만드는 경우 상자입니다.  
   
-     또는  
+    또는  
   
-     쿼리를 선택 합니다 **기존 쿼리 이름** 상자입니다.  
+    쿼리를 선택 합니다 **기존 쿼리 이름** 상자입니다.  
   
-5.  에 **쿼리 텍스트** 상자, 매개 변수를 사용 하는 쿼리를 입력 합니다.  
+5. 에 **쿼리 텍스트** 상자, 매개 변수를 사용 하는 쿼리를 입력 합니다.  
   
-6.  선택**확인**합니다.  
+6. 선택**확인**합니다.  
   
-     매개 변수를 입력 하는 컨트롤 및 **부하** 폼에 단추 추가 됩니다을 <xref:System.Windows.Forms.ToolStrip> 제어 합니다.  
+    매개 변수를 입력 하는 컨트롤 및 **부하** 폼에 단추 추가 됩니다을 <xref:System.Windows.Forms.ToolStrip> 제어 합니다.  
   
- TableAdapter 매개 변수가 현재 값이 없는 레코드를 쿼리 하려는 경우 null 값 할당할 수 있습니다. 예를 들어 포함 된 다음 쿼리에 `ShippedDate` 매개 변수에서 해당 `WHERE` 절:  
+   TableAdapter 매개 변수가 현재 값이 없는 레코드를 쿼리 하려는 경우 null 값 할당할 수 있습니다. 예를 들어 포함 된 다음 쿼리에 `ShippedDate` 매개 변수에서 해당 `WHERE` 절:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+   `SELECT CustomerID, OrderDate, ShippedDate`  
   
- `FROM Orders`  
+   `FROM Orders`  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+   `WHERE (ShippedDate = @ShippedDate) OR`  
   
- `(ShippedDate IS NULL)`  
+   `(ShippedDate IS NULL)`  
   
- TableAdapter에 대 한 쿼리 인 경우 다음 코드를 사용 하 여 운송 하지 않았다고 하는 모든 주문에 대해 쿼리할 수 있습니다.  
+   TableAdapter에 대 한 쿼리 인 경우 다음 코드를 사용 하 여 운송 하지 않았다고 하는 모든 주문에 대해 쿼리할 수 있습니다.  
   
- [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
- [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
+   [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>Null 값을 허용 하도록 쿼리를 사용 하도록 설정 하려면  
   

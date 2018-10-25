@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63b5938131713c32f410f89c80a3efefa8b6c346
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a171613c4bd6f34b826869214d11d247c9c59a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924007"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 메모리 할당 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49268244"
   
  형식 행의 데이터는 프로파일링 실행 시에 생성된 형식의 개체의 총 수 및 해당 형식의 개체에 대해 할당된 바이트의 총 수를 표시합니다. 형식에 대한 포괄 값과 제외 값은 항상 동일합니다.  
   
--   포괄 값은 함수의 인스턴스에서 생성된 개체 및 호출 트리의 부모 함수에 의해 호출된 해당 자식 함수에 대한 것입니다.  
+- 포괄 값은 함수의 인스턴스에서 생성된 개체 및 호출 트리의 부모 함수에 의해 호출된 해당 자식 함수에 대한 것입니다.  
   
--   제외 값은 부모 함수에 의해 호출된 경우 함수에서 직접 만든 개체에 대한 것입니다. 자식 함수에서 만든 개체는 포함되지 않습니다.  
+- 제외 값은 부모 함수에 의해 호출된 경우 함수에서 직접 만든 개체에 대한 것입니다. 자식 함수에서 만든 개체는 포함되지 않습니다.  
   
- 함수에 대한 데이터는 부모 형식의 개체에 대해 만든 개체의 수 및 할당된 바이트 수를 표시합니다.  
+  함수에 대한 데이터는 부모 형식의 개체에 대해 만든 개체의 수 및 할당된 바이트 수를 표시합니다.  
   
 ## <a name="highlighting-the-execution-hot-path"></a>실행 부하 과다 경로 강조 표시  
  부모 유형의 대부분의 개체를 생성한 호출 트리의 실행 경로를 찾을 수 있습니다.  

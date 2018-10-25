@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 001393a856dc374d92e11ff2d4707346a35aea12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887425"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 디버깅의 제한 사항
 다음 세 가지 방법으로 WCF 서비스의 디버깅을 시작할 수 있습니다.  
   
--   서비스를 호출하는 클라이언트 프로세스를 디버깅합니다. 디버거가 서비스를 한 단계씩 실행합니다. 서비스가 클라이언트 응용 프로그램과 같은 솔루션에 있지 않아도 됩니다.  
+- 서비스를 호출하는 클라이언트 프로세스를 디버깅합니다. 디버거가 서비스를 한 단계씩 실행합니다. 서비스가 클라이언트 응용 프로그램과 같은 솔루션에 있지 않아도 됩니다.  
   
--   서비스를 요청하는 클라이언트 프로세스를 디버깅합니다. 서비스가 솔루션의 일부여야 합니다.  
+- 서비스를 요청하는 클라이언트 프로세스를 디버깅합니다. 서비스가 솔루션의 일부여야 합니다.  
   
--   사용할 **프로세스에 연결** 현재 실행 중인 서비스에 연결 합니다. 디버깅이 서비스 내에서 시작됩니다.  
+- 사용할 **프로세스에 연결** 현재 실행 중인 서비스에 연결 합니다. 디버깅이 서비스 내에서 시작됩니다.  
   
- 이 항목에서는 이러한 시나리오에 적용되는 제한 사항에 대해 설명합니다.  
+  이 항목에서는 이러한 시나리오에 적용되는 제한 사항에 대해 설명합니다.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>서비스를 한 단계씩 실행하는 경우의 제한 사항  
  디버깅할 클라이언트 응용 프로그램에서 서비스를 한 단계씩 실행하려면 다음 조건이 충족되어야 합니다.  
@@ -61,19 +61,19 @@ ms.locfileid: "44280652"
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>서비스에 자동으로 연결하는 경우의 제한 사항  
  서비스에 자동으로 연결할 때는 다음과 같은 제한 사항이 적용됩니다.  
   
--   서비스가 디버깅하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 일부여야 합니다.  
+- 서비스가 디버깅하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션의 일부여야 합니다.  
   
--   서비스가 호스팅되어야 합니다. 웹 사이트 프로젝트 (파일 시스템 및 HTTP), 웹 응용 프로그램 프로젝트 (파일 시스템 및 HTTP) 또는 WCF 서비스 라이브러리 프로젝트의 일부일 수 있습니다. WCF 서비스 라이브러리 프로젝트는 서비스 라이브러리 또는 워크플로 서비스 라이브러리일 수 있습니다.  
+- 서비스가 호스팅되어야 합니다. 웹 사이트 프로젝트 (파일 시스템 및 HTTP), 웹 응용 프로그램 프로젝트 (파일 시스템 및 HTTP) 또는 WCF 서비스 라이브러리 프로젝트의 일부일 수 있습니다. WCF 서비스 라이브러리 프로젝트는 서비스 라이브러리 또는 워크플로 서비스 라이브러리일 수 있습니다.  
   
--   서비스가 WCF 클라이언트에서 호출되어야 합니다.  
+- 서비스가 WCF 클라이언트에서 호출되어야 합니다.  
   
--   app.config 또는 Web.config 파일에서 다음 코드를 사용하여 디버깅을 사용하도록 설정해야 합니다.  
+- app.config 또는 Web.config 파일에서 다음 코드를 사용하여 디버깅을 사용하도록 설정해야 합니다.  
   
-    ```xml
-    <system.web>  
-      <compilation debug="true" />  
-    <system.web>  
-    ```  
+  ```xml
+  <system.web>  
+    <compilation debug="true" />  
+  <system.web>  
+  ```  
   
 ## <a name="self-hosting"></a>자체 호스팅  
  A *호스 티 드 서비스를 자체* 는 IIS, WCF 서비스 호스트 내에서 실행 하지 않는 WCF 서비스 또는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 개발 서버입니다. 자체 호스팅된 서비스를 디버깅 하는 방법에 대 한 정보를 참조 하세요 [방법: 자체 호스팅 WCF 서비스 디버그](../debugger/how-to-debug-a-self-hosted-wcf-service.md)합니다.  

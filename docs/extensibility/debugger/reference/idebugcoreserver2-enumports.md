@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 805d42a460adb40fffa94d6b0c6ab1881546ccc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd974f625f011819b8360ddcd327cffec602dac0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926074"
 ---
 # <a name="idebugcoreserver2enumports"></a>IDebugCoreServer2::EnumPorts
-사용 가능한 모든 포트의 목록을 검색합니다.  
+모든 사용 가능한 포트 목록을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,7 +44,7 @@ int EnumPorts(
  [out] 반환 된 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) 포트의 모든 공급 업체에서 모든 포트의 목록을 포함 하는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

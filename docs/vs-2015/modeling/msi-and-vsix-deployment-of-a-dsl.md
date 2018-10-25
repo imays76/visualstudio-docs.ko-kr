@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7c1ad9b9790a7d7fda27bab0d409480f8114d3a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 81b027e9834fccadcc572cad8fae4d721be9dd56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922044"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ ms.locfileid: "49258299"
   
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>VSX를 사용 하 여 설치 된 DSL을 제거 하려면  
   
-1.  에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.  
+1. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.  
   
-2.  **설치된 확장**을 확장합니다.  
+2. **설치된 확장**을 확장합니다.  
   
-3.  DSL 정의 되어 있는 확장 하 고 클릭 한 다음 선택 **제거**합니다.  
+3. DSL 정의 되어 있는 확장 하 고 클릭 한 다음 선택 **제거**합니다.  
   
- 드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제하여 확장을 제거할 수 있습니다.  
+   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제하여 확장을 제거할 수 있습니다.  
   
- *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
+   *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
 ##  <a name="msi"></a> DSL의 MSI 배포합니다.  
  DSL에 대해 MSI (Windows Installer) 파일에 정의 하 여 사용자가 Windows 탐색기에서 DSL 파일을 열 수를 허용할 수 있습니다. 파일 이름 확장명을 사용 하 여 아이콘 및 간단한 설명을 연결할 수 있습니다. 또한 MSI DSL 파일 유효성 검사에 사용할 수 있는 XSD가 설치할 수 있습니다. 원한다 면 동시에 설치할 MSI에 다른 구성 요소를 추가할 수 있습니다.  
@@ -78,47 +78,47 @@ ms.locfileid: "49258299"
   
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>DSL의 MSI 배포 하려면  
   
-1.  설정 `InstalledByMsi` 확장 매니페스트에서 합니다. 이 설치 하 고 제외 하 고 MSI가 제거 되는 VSX 방지 합니다. 이 MSI에 다른 구성 요소를 포함 하는 경우 중요 합니다.  
+1. 설정 `InstalledByMsi` 확장 매니페스트에서 합니다. 이 설치 하 고 제외 하 고 MSI가 제거 되는 VSX 방지 합니다. 이 MSI에 다른 구성 요소를 포함 하는 경우 중요 합니다.  
   
-    1.  Open DslPackage\source.extension.tt  
+   1.  Open DslPackage\source.extension.tt  
   
-    2.  앞에 다음 줄을 삽입 `<SupportedProducts>`:  
+   2.  앞에 다음 줄을 삽입 `<SupportedProducts>`:  
   
-        ```  
-        <InstalledByMsi>true</InstalledByMsi>  
-        ```  
+       ```  
+       <InstalledByMsi>true</InstalledByMsi>  
+       ```  
   
-2.  만들거나 Windows 탐색기에서 DSL에 나타내는 아이콘을 편집 합니다. 예를 들어 편집 **DslPackage\Resources\File.ico**  
+2. 만들거나 Windows 탐색기에서 DSL에 나타내는 아이콘을 편집 합니다. 예를 들어 편집 **DslPackage\Resources\File.ico**  
   
-3.  DSL의 다음 특성을 올바른지 확인 합니다.  
+3. DSL의 다음 특성을 올바른지 확인 합니다.  
   
-    -   DSL 탐색기의 루트 노드를 클릭 하 고 속성 창에서 검토 합니다.  
+   -   DSL 탐색기의 루트 노드를 클릭 하 고 속성 창에서 검토 합니다.  
   
-        -   설명  
+       -   설명  
   
-        -   버전  
+       -   버전  
   
-    -   클릭 합니다 **편집기** 노드의 속성 창에서 클릭 **아이콘**합니다. 아이콘 파일에서 참조할 값을 설정 **DslPackage\Resources**와 같은 **File.ico**  
+   -   클릭 합니다 **편집기** 노드의 속성 창에서 클릭 **아이콘**합니다. 아이콘 파일에서 참조할 값을 설정 **DslPackage\Resources**와 같은 **File.ico**  
   
-    -   에 **빌드** 메뉴를 열고 **Configuration Manager**, 같은 빌드 하려는 구성을 선택 하 고 **릴리스** 또는 **디버그** .  
+   -   에 **빌드** 메뉴를 열고 **Configuration Manager**, 같은 빌드 하려는 구성을 선택 하 고 **릴리스** 또는 **디버그** .  
   
-4.  로 이동 [Visualization and Modeling SDK 홈 페이지](http://go.microsoft.com/fwlink/?LinkID=186128), 및를 **다운로드** 탭에서 다운로드 **CreateMsiSetupProject.tt**합니다.  
+4. 로 이동 [Visualization and Modeling SDK 홈 페이지](http://go.microsoft.com/fwlink/?LinkID=186128), 및를 **다운로드** 탭에서 다운로드 **CreateMsiSetupProject.tt**합니다.  
   
-5.  추가 **CreateMsiSetupProject.tt** Dsl 프로젝트에 있습니다.  
+5. 추가 **CreateMsiSetupProject.tt** Dsl 프로젝트에 있습니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 라는 파일을 만듭니다 **CreateMsiSetupProject.vdproj**합니다.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 라는 파일을 만듭니다 **CreateMsiSetupProject.vdproj**합니다.  
   
-6.  Windows 탐색기에서 Dsl 복사\\새 폴더로 *.vdproj 라는 설치 합니다.  
+6. Windows 탐색기에서 Dsl 복사\\새 폴더로 *.vdproj 라는 설치 합니다.  
   
-     (원하는 경우 이제 제외할 수 있습니다 CreateMsiSetupProject.tt Dsl 프로젝트에서.)  
+    (원하는 경우 이제 제외할 수 있습니다 CreateMsiSetupProject.tt Dsl 프로젝트에서.)  
   
-7.  **솔루션 탐색기**에 추가 **설치\\\*.vdproj** 기존 프로젝트로 합니다.  
+7. **솔루션 탐색기**에 추가 **설치\\\*.vdproj** 기존 프로젝트로 합니다.  
   
-8.  에 **프로젝트** 메뉴에서 클릭 **프로젝트 종속성**합니다.  
+8. 에 **프로젝트** 메뉴에서 클릭 **프로젝트 종속성**합니다.  
   
-     에 **프로젝트 종속성** 대화 상자, 설치 프로젝트를 선택 합니다.  
+    에 **프로젝트 종속성** 대화 상자, 설치 프로젝트를 선택 합니다.  
   
-     선택 상자 옆 **DslPackage**합니다.  
+    선택 상자 옆 **DslPackage**합니다.  
   
 9. 솔루션을 다시 빌드합니다.  
   
@@ -132,7 +132,7 @@ ms.locfileid: "49258299"
   
     -   파일을 두 번 클릭 하면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL 편집기에서 DSL 파일을 열어서 시작 합니다.  
   
- 원한다 면 텍스트 템플릿을 사용 하는 대신 수동으로 설치 프로젝트를 만들 수 있습니다. 이 절차를 포함 하는 연습은의 5 장 참조를 [Visualization and Modeling SDK 랩](http://go.microsoft.com/fwlink/?LinkId=208878)합니다.  
+    원한다 면 텍스트 템플릿을 사용 하는 대신 수동으로 설치 프로젝트를 만들 수 있습니다. 이 절차를 포함 하는 연습은의 5 장 참조를 [Visualization and Modeling SDK 랩](http://go.microsoft.com/fwlink/?LinkId=208878)합니다.  
   
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>MSI에서 설치 된 DSL을 제거 하려면  
   

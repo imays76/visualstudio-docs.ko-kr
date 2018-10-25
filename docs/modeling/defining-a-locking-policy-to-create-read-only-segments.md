@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828679"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
 Visual Studio Visualization and Modeling SDK의 불변성 API는 프로그램을을 읽을 수 있지만 변경 되지 않도록 도메인 특정 언어 (DSL) 모델의 전체 또는 일부를 잠글 수 있습니다. 이 읽기 전용 옵션이 사용할 수 있습니다, 예를 들어 사용자 동료 들이 주석 달기 및 DSL 모델 검토를 요청할 수 있지만 원래 변경에서 차단할 수 있습니다.
@@ -71,14 +71,14 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>잠금 값
  잠금은 저장소, 파티션 또는 개별 ModelElement에서 설정할 수 있습니다. 잠금이 0이 `Flags` 열거형: 사용 하 여 해당 값을 결합할 수 '&#124;'.
 
--   이 클래스는 ModelElement의 잠금에는 항상 해당 파티션의 잠금이 포함합니다.
+- 이 클래스는 ModelElement의 잠금에는 항상 해당 파티션의 잠금이 포함합니다.
 
--   파티션의 잠금에는 항상 저장소의 잠금이 포함합니다.
+- 파티션의 잠금에는 항상 저장소의 잠금이 포함합니다.
 
- 파티션에서 잠금을 설정 하 고 또는 저장 하 고, 동시에 개별 요소에 대 한 잠금을 사용 하지 않도록 설정 수 없습니다.
+  파티션에서 잠금을 설정 하 고 또는 저장 하 고, 동시에 개별 요소에 대 한 잠금을 사용 하지 않도록 설정 수 없습니다.
 
 |값|즉 경우 `IsLocked(Value)` true|
-|-----------|------------------------------------------|
+|-|-|
 |없음|제한이 없습니다.|
 |속성|요소의 도메인 속성을 변경할 수 없습니다. 이 관계의 도메인 클래스의 역할에서 생성 되는 속성에 적용 되지 않습니다.|
 |추가|파티션의 새 요소 및 링크를 만들 수 없습니다 하거나 저장 합니다.<br /><br /> 적용할 수 없는 `ModelElement`합니다.|
@@ -142,7 +142,6 @@ namespace Company.YourDsl.DslPackage // Change
       return Environment.UserName == "aUser"
            ? proposedLocks : Locks.All;
     }
-
 ```
 
  다른 코드를 호출 하는 경우에 사용자는 요소를 삭제할 수 있는지 확인 하려면 `SetLocks(Lock.Delete):`

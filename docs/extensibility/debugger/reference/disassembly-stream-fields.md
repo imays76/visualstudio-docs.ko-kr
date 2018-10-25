@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a8735992574699ba2b108fc493e9003ca52c9b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9489b8c4399ae72bf7f6a70011eec347d870ca80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928336"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-검색할 디스어셈블리 필드에 대 한 정보를 지정 합니다.  
+디스어셈블리 필드에 대 한 검색 정보를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -87,7 +87,7 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
  초기화/사용 된 `uCodeLocationId` 필드입니다.  
   
  DSF_POSITION  
- 초기화/사용 된 `posBeg` 및 `posEnd` 필드입니다.  
+ 초기화/사용 된 `posBeg` 고 `posEnd` 필드입니다.  
   
  DSF_DOCUMENTURL  
  초기화/사용 된 `bstrDocumentUrl` 필드입니다.  
@@ -105,11 +105,11 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
  디스어셈블리 스트림에 대 한 모든 필드를 지정합니다.  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 매개 변수로 전달 되는 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 의 필드를 나타내도록 메서드를는 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 구조를 초기화할 수는 있습니다.  
+ 매개 변수로 전달 합니다 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 의 필드를 표시 하는 방법 합니다 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 구조는 초기화할.  
   
- 에 사용 되는 `dwFields` 의 멤버는 `DisassemblyData` 구조에는 필드는 사용 되지 않으며 유효한 구조를 반환 하는 경우.  
+ 에 사용 되는 합니다 `dwFields` 의 멤버는 `DisassemblyData` 구조 반환 되 면 유효 하 고 사용 되는 필드는 구조체.  
   
- 이러한 값에 비트와 함께 사용할 수 있습니다 `OR`합니다.  
+ 이러한 값을 비트 결합할 수 있습니다 `OR`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

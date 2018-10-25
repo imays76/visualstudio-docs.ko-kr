@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5da750b3f33127fdcfdf2e2a76d4df1556561b2
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 4d7288de9b0724d8ff4ef7b6174f59e747a9879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870265"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 요소
 CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹 또는 메뉴에 포함 될 수 있습니다. CommandPlacement 요소를 사용 하 여 사용자 인터페이스의 모양을 수정 하려면 이러한 항목을 완전히 다시 정의할 필요가 없습니다.  
@@ -58,7 +58,7 @@ CommandPlacement 요소에는 단추, 그룹 및 메뉴 둘 이상의 그룹 또
 |-------------|-----------------|  
 |[CommandPlacements 요소](../extensibility/commandplacements-element.md)|CommandPlacements 및 CommandPlacement 요소 그룹을 지정합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```  
 <CommandPlacements>  

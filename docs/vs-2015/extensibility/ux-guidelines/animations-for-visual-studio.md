@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f1769f4d94df0621e06eb01d3dad55598cc810c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824401"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio의 애니메이션
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ ms.locfileid: "49178427"
   
 #### <a name="do-not"></a>안 함:  
   
--   작은 이동 (적으며 이동을)를 사용을 선호 페이드 변경 통해 개체를 이동 합니다.  
+- 작은 이동 (적으며 이동을)를 사용을 선호 페이드 변경 통해 개체를 이동 합니다.  
   
--   화면 부동산의 큰 영역을 통해 수행 되는 애니메이션을 사용 합니다. 크기에 관계 없이 애니메이션의이 스타일은 사용자에 게 불필요 합니다.  
+- 화면 부동산의 큰 영역을 통해 수행 되는 애니메이션을 사용 합니다. 크기에 관계 없이 애니메이션의이 스타일은 사용자에 게 불필요 합니다.  
   
--   사용자에 현재 포커스 된 개체 또는 상호 작용 하는 애니메이션을 사용 합니다.  
+- 사용자에 현재 포커스 된 개체 또는 상호 작용 하는 애니메이션을 사용 합니다.  
   
--   사용자가 깜박임을 중지 하려면 깜박이 알림에 응답 하는 등의 상태를 다시 설정 하려면 사용자가 개입 해야 하는 애니메이션을 사용 합니다. 어떤 방식으로든에서 상호 작용을 해제 하는 데 충분 해야 합니다.  
+- 사용자가 깜박임을 중지 하려면 깜박이 알림에 응답 하는 등의 상태를 다시 설정 하려면 사용자가 개입 해야 하는 애니메이션을 사용 합니다. 어떤 방식으로든에서 상호 작용을 해제 하는 데 충분 해야 합니다.  
   
- 이러한 모범 사례에 대 한 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [애니메이션 패턴](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns)합니다.  
+  이러한 모범 사례에 대 한 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [애니메이션 패턴](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns)합니다.  
   
 ### <a name="animation-metrics"></a>애니메이션 메트릭  
   
@@ -205,21 +205,21 @@ ms.locfileid: "49178427"
 ### <a name="overview"></a>개요  
  Visual Studio에서 애니메이션은 특정 기능을 제공 하 여 사용자 생산성을 방해 하지 것입니다. 포함 하도록 준수 일반 애니메이션 특징:  
   
--   작고 비간섭  
+- 작고 비간섭  
   
--   자연스럽 고 현실적인  
+- 자연스럽 고 현실적인  
   
--   미묘 하 고 게 당한 후  
+- 미묘 하 고 게 당한 후  
   
--   빠르고 효율적으로  
+- 빠르고 효율적으로  
   
--   완화 되지 hurried  
+- 완화 되지 hurried  
   
- 다음 그림에서는 Visual Studio에서 사용 하기 위해 권장 되는 애니메이션 스타일을 보여 줍니다. 미묘한 애니메이션 없고 애니메이션 같은 페이드 인/페이드 아웃을 적용은 가장 자주 사용 됩니다. 와 같은 확장 및 축소 애니메이션 이동 제한 application, X 및 Y 위치 변경 및 회전 합니다.  
+  다음 그림에서는 Visual Studio에서 사용 하기 위해 권장 되는 애니메이션 스타일을 보여 줍니다. 미묘한 애니메이션 없고 애니메이션 같은 페이드 인/페이드 아웃을 적용은 가장 자주 사용 됩니다. 와 같은 확장 및 축소 애니메이션 이동 제한 application, X 및 Y 위치 변경 및 회전 합니다.  
   
- ![Visual Studio에 대 한 권장 되는 애니메이션 스타일](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
+  ![Visual Studio에 대 한 권장 되는 애니메이션 스타일](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
   
- **Visual Studio에 대 한 권장 되는 애니메이션 스타일**  
+  **Visual Studio에 대 한 권장 되는 애니메이션 스타일**  
   
 #### <a name="appear-and-disappear"></a>사라질  
  이 패턴을 사용 하 여 요소 축소의 보기를 전환 애니메이션 없이 다시 표시를 전환합니다.  
@@ -363,65 +363,65 @@ ms.locfileid: "49178427"
   
 #### <a name="tab-open"></a>탭 열기  
   
--   Style: 표시  
+- Style: 표시  
   
--   0 초 기간:  
+- 0 초 기간:  
   
- ![Visual Studio에서 열기 애니메이션 탭](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
+  ![Visual Studio에서 열기 애니메이션 탭](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
   
 #### <a name="tab-close"></a>탭 닫기  
   
--   Style: X 위치 변경  
+- Style: X 위치 변경  
   
--   기간: 200 시간 (밀리초)  
+- 기간: 200 시간 (밀리초)  
   
- ![Visual Studio에서 닫기 애니메이션 탭](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
+  ![Visual Studio에서 닫기 애니메이션 탭](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
   
 #### <a name="tab-reorder"></a>탭 순서 변경  
   
--   Style: X 위치 변경  
+- Style: X 위치 변경  
   
--   기간: 200 시간 (밀리초)  
+- 기간: 200 시간 (밀리초)  
   
- ![Visual Studio에서 순서 바꾸기 애니메이션 탭](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
+  ![Visual Studio에서 순서 바꾸기 애니메이션 탭](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
   
 #### <a name="close-floating-document"></a>부동 문서 닫기  
   
--   Style: 표시  
+- Style: 표시  
   
--   기간: 200 시간 (밀리초)  
+- 기간: 200 시간 (밀리초)  
   
- ![Visual Studio에서 문서 애니메이션 부동 닫기를](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
+  ![Visual Studio에서 문서 애니메이션 부동 닫기를](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
   
 #### <a name="window-state-transition"></a>창 상태 전환  
   
--   Style: 일관 되도록 다른 창, 문서 닫기 애니메이션을 정의 현재 운영 체제에 알려야 합니다.  
+- Style: 일관 되도록 다른 창, 문서 닫기 애니메이션을 정의 현재 운영 체제에 알려야 합니다.  
   
--   기간: 200 시간 (밀리초)  
+- 기간: 200 시간 (밀리초)  
   
- ![Visual Studio에서 창 상태 전환 애니메이션](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
+  ![Visual Studio에서 창 상태 전환 애니메이션](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
   
 #### <a name="menu-open"></a>메뉴 열기  
   
--   Style: 페이드 인  
+- Style: 페이드 인  
   
--   기간: 200 시간 (밀리초)  
+- 기간: 200 시간 (밀리초)  
   
- ![Visual Studio에서 메뉴 열기 애니메이션](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
+  ![Visual Studio에서 메뉴 열기 애니메이션](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
   
 #### <a name="menu-close"></a>메뉴 닫기  
   
--   Style: 페이드 아웃  
+- Style: 페이드 아웃  
   
--   기간: 200 시간 (밀리초)  
+- 기간: 200 시간 (밀리초)  
   
- ![Visual Studio에서 메뉴 닫기 애니메이션](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
+  ![Visual Studio에서 메뉴 닫기 애니메이션](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
   
 #### <a name="auto-hide-tool-window-reveal"></a>자동 숨기기 도구 창 표시  
   
--   Style: 표시  
+- Style: 표시  
   
--   0 초 기간:  
+- 0 초 기간:  
   
- ![자동&#45;Visual Studio에서 도구 창 애니메이션을 숨기려면](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
+  ![자동&#45;Visual Studio에서 도구 창 애니메이션을 숨기려면](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
 

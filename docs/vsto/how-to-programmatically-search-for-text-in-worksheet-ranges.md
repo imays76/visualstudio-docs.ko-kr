@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba3c4cea78e2c5c32d1bb7159243155e18fd01ce
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920081"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색
   합니다 <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> 메서드는 <xref:Microsoft.Office.Interop.Excel.Range> 개체 범위 내에서 텍스트를 검색할 수 있습니다. 이 텍스트와 같은 워크시트 셀에 표시 될 수 있는 오류 문자열 중 하나 일 수도 있습니다 `#NULL!` 또는 `#VALUE!`합니다. 오류 문자열에 대 한 자세한 내용은 참조 하세요. [오류 값을 셀](http://msdn.microsoft.com/library/office/ff839168.aspx)합니다.  
@@ -38,42 +38,42 @@ ms.locfileid: "35674440"
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>워크시트 범위에서 텍스트를 검색 하려면  
   
-1.  전체 범위, 첫 번째는 발견된 범위 및 현재 검색된 범위를 추적 하는 것에 대 한 변수를 선언 합니다.  
+1. 전체 범위, 첫 번째는 발견된 범위 및 현재 검색된 범위를 추적 하는 것에 대 한 변수를 선언 합니다.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
-     [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
+    [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
   
-2.  다음 검색에 있는 셀을 제외한 모든 매개 변수를 지정 하 여 첫 번째 일치 항목을 검색 합니다.  
+2. 다음 검색에 있는 셀을 제외한 모든 매개 변수를 지정 하 여 첫 번째 일치 항목을 검색 합니다.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
-     [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
+    [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
   
-3.  계속으로 일치 하는 항목이 검색 합니다.  
+3. 계속으로 일치 하는 항목이 검색 합니다.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
-     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
+    [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
   
-4.  첫 번째 검색된 범위를 비교 (`firstFind`)를 **Nothing**합니다. 하는 경우 `firstFind` 에 저장 됩니다 값, 검색된 범위 (`currentFind`).  
+4. 첫 번째 검색된 범위를 비교 (`firstFind`)를 **Nothing**합니다. 하는 경우 `firstFind` 에 저장 됩니다 값, 검색된 범위 (`currentFind`).  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
-     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
+    [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]  
   
-5.  찾은 범위의 주소를 찾은 첫 번째 범위의 주소와 일치 하는 경우에 루프를 종료 합니다.  
+5. 찾은 범위의 주소를 찾은 첫 번째 범위의 주소와 일치 하는 경우에 루프를 종료 합니다.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
-     [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
+    [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]  
   
-6.  검색된 범위의 모양을 설정 합니다.  
+6. 검색된 범위의 모양을 설정 합니다.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
-     [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
+    [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]  
   
-7.  다른 검색을 수행 합니다.  
+7. 다른 검색을 수행 합니다.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
-     [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
+    [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]  
   
- 다음 예제에서는 전체 메서드를 보여 줍니다.  
+   다음 예제에서는 전체 메서드를 보여 줍니다.  
   
 ## <a name="example"></a>예제  
  [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f3a19073c13415a2e1dd021911c391e63f87ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: adaae62196328c6f396a5fbb9b42727f540ead6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917715"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 포함 된 단어나 가장 가까운 지정된 된 주소에 지정 된 기호 형식을 검색 합니다.  
@@ -37,19 +37,19 @@ HRESULT findSymbolByAddr (
   
 #### <a name="parameters"></a>매개 변수  
  `isect`  
- [in] 섹션 구성 요소 주소를 지정 합니다.  
+ [in] 주소 섹션 구성 요소를 지정합니다.  
   
  `offset`  
- [in] 주소 오프셋된 구성 요소를 지정합니다.  
+ [in] 주소의 오프셋된 구성 요소를 지정합니다.  
   
  `symtag`  
- [in] 찾을 기호 형식입니다. 값에서 가져옵니다는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거 합니다.  
+ [in] 찾을 기호 형식입니다. 값에서 수행 되는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거형입니다.  
   
  `ppSymbol`  
  [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 기호를 나타내는 개체를 검색 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
   

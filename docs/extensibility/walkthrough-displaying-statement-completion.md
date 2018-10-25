@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa6a1547a604e5d073c4e45c7769c68e0674d74
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879326"
 ---
 # <a name="walkthrough-display-statement-completion"></a>연습: 문 완성을 표시
 완성 기능을 제공 하려는 식별자를 정의 하 고 다음 완료 세션을 트리거 언어 기반 문 완성을 구현할 수 있습니다. 언어 서비스의 컨텍스트에서 문 완성을 정의 하 고, 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고, 해당 형식만 완성 표시 수 있습니다. 또는 기존 콘텐츠 형식에 대 한 완료를 트리거할 수 있습니다-예를 들어 일반 "텍스트"입니다. 이 연습에서는 텍스트 파일의 콘텐츠 형식인 "일반 텍스트" 콘텐츠 형식에 대 한 문 완성을 트리거하는 방법을 보여 줍니다. "Text" 콘텐츠 형식은 코드 및 XML 파일을 포함 하 여 모든 콘텐츠 형식, 상위 항목입니다.  
@@ -34,7 +34,7 @@ ms.locfileid: "39497744"
   
 #### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `CompletionTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `CompletionTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "39497744"
   
 ### <a name="to-implement-the-completion-source"></a>완료 소스를 구현 하려면  
   
-1.  클래스 파일을 추가 하 고 이름을 `TestCompletionSource`입니다.  
+1.  클래스 파일을 추가하고 이름을 `TestCompletionSource`로 지정합니다.  
   
 2.  이러한 가져오기를 추가 합니다.  
   
@@ -148,48 +148,48 @@ ms.locfileid: "39497744"
   
 #### <a name="to-implement-the-completion-command-handler"></a>완료 명령 처리기를 구현 하려면  
   
-1.  라는 클래스를 추가 `TestCompletionCommandHandler` 구현 하는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. 라는 클래스를 추가 `TestCompletionCommandHandler` 구현 하는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
-     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
+    [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
+    [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2.  다음 명령 처리기 (하려는 전달할 명령), 텍스트 뷰 (이 통해 다양 한 서비스에 대 한 액세스) 명령 처리기 공급자를 개인 필드를 추가 및 완료 세션:  
+2. 다음 명령 처리기 (하려는 전달할 명령), 텍스트 뷰 (이 통해 다양 한 서비스에 대 한 액세스) 명령 처리기 공급자를 개인 필드를 추가 및 완료 세션:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
-     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
+    [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
+    [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
   
-3.  텍스트 뷰 및 공급자 필드를 설정 하 고 명령 체인에 명령을 추가 하는 생성자를 추가 합니다.  
+3. 텍스트 뷰 및 공급자 필드를 설정 하 고 명령 체인에 명령을 추가 하는 생성자를 추가 합니다.  
   
-     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
-     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
+    [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
+    [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
   
-4.  구현 된 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 따라 명령을 전달 하 여 메서드:  
+4. 구현 된 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 따라 명령을 전달 하 여 메서드:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
-     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
+    [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
+    [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
   
-5.  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 메서드를 구현합니다. 이 메서드는 키 입력을 받으면 이러한 작업 중 하나를 수행 해야 합니다.  
+5. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 메서드를 구현합니다. 이 메서드는 키 입력을 받으면 이러한 작업 중 하나를 수행 해야 합니다.  
   
-    -   문자 버퍼에 쓸 수 및 트리거해야 하거나 완료를 필터링 할 수 있습니다. (인쇄 문자가 작업을 수행 합니다.)  
+   - 문자 버퍼에 쓸 수 및 트리거해야 하거나 완료를 필터링 할 수 있습니다. (인쇄 문자가 작업을 수행 합니다.)  
   
-    -   가 완료 되 면 커밋 있지만 버퍼에 쓸 문자를 허용 하지 마십시오. (공백 **탭**, 및 **Enter** 완료 세션 표시 되 면이 작업을 수행 합니다.)  
+   - 가 완료 되 면 커밋 있지만 버퍼에 쓸 문자를 허용 하지 마십시오. (공백 **탭**, 및 **Enter** 완료 세션 표시 되 면이 작업을 수행 합니다.)  
   
-    -   명령 다음 처리기에 전달할 수 있습니다. (모든 기타 명령입니다.)  
+   - 명령 다음 처리기에 전달할 수 있습니다. (모든 기타 명령입니다.)  
   
      이 메서드는 UI를 표시할 수 있으므로 호출 <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> automation 컨텍스트에서 호출 되지 않습니다 있도록 합니다.  
   
      [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
      [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
   
-6.  다음이 코드는 완료 세션을 트리거하는 전용 메서드입니다.  
+6. 다음이 코드는 완료 세션을 트리거하는 전용 메서드입니다.  
   
-     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
-     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
+    [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
+    [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
   
-7.  다음 예제에서 구독을 취소 하는 개인 메서드는는 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> 이벤트:  
+7. 다음 예제에서 구독을 취소 하는 개인 메서드는는 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> 이벤트:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
-     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
+    [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
+    [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
   
 ## <a name="build-and-test-the-code"></a>빌드 및 코드를 테스트 합니다.  
  이 코드를 테스트 하려면 CompletionTest 솔루션 빌드하고 실험적 인스턴스에서 실행 합니다.  

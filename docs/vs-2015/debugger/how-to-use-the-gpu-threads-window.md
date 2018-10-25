@@ -24,12 +24,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c58bed9dd25cc9d25ad122b4c4c42f72ddf60f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0bf63fb2eedc03b62af46f3ecdf746aaee6dde09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848672"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>방법: GPU 스레드 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,25 +38,25 @@ GPU 스레드 창에서 디버깅 중인 응용 프로그램의 GPU에서 실행
   
  GPU 스레드 창에는 각 행이 모든 열에서 값이 동일한 GPU 스레드의 집합을 나타내는 테이블이 포함되어 있습니다. 열에 있는 항목의 정렬, 순서 변경, 제거 및 그룹화를 수행할 수 있습니다. GPU 스레드 창에서 스레드에 플래그를 지정하거나 해제할 수 있으며 스레드를 중지(일시 중단)하거나 재개(다시 시작)할 수 있습니다. 다음과 같은 열이 GPU 스레드 창에 표시됩니다.  
   
--   특히 주의할 스레드를 표시할 수 있는 플래그 열  
+- 특히 주의할 스레드를 표시할 수 있는 플래그 열  
   
--   활성 스레드 열 - 노란색 화살표는 활성 스레드를 나타냅니다. 화살표는 실행이 중단되고 디버거가 실행된 스레드를 나타냅니다.  
+- 활성 스레드 열 - 노란색 화살표는 활성 스레드를 나타냅니다. 화살표는 실행이 중단되고 디버거가 실행된 스레드를 나타냅니다.  
   
--   합니다 **Thread Count** 동일한 위치에 있는 스레드 수를 표시 하는 열입니다.  
+- 합니다 **Thread Count** 동일한 위치에 있는 스레드 수를 표시 하는 열입니다.  
   
--   합니다 **줄** 열-각 스레드 그룹이 위치한 코드 줄을 표시 합니다.  
+- 합니다 **줄** 열-각 스레드 그룹이 위치한 코드 줄을 표시 합니다.  
   
--   합니다 **주소** 열-각 스레드 그룹이 위치한 명령 주소를 표시 합니다. 기본적으로 이 열은 숨겨집니다.  
+- 합니다 **주소** 열-각 스레드 그룹이 위치한 명령 주소를 표시 합니다. 기본적으로 이 열은 숨겨집니다.  
   
--   합니다 **위치** 소스 코드의 위치를 나타내는 열입니다.  
+- 합니다 **위치** 소스 코드의 위치를 나타내는 열입니다.  
   
--   합니다 **상태** 열-스레드가 active, 차단, 시작 되지 않았는지 또는 완료 되었는지 여부를 표시 합니다.  
+- 합니다 **상태** 열-스레드가 active, 차단, 시작 되지 않았는지 또는 완료 되었는지 여부를 표시 합니다.  
   
--   합니다 **타일** 열 행의 스레드에 대 한 타일 인덱스를 보여 줍니다.  
+- 합니다 **타일** 열 행의 스레드에 대 한 타일 인덱스를 보여 줍니다.  
   
- 테이블의 머리글은 표시되고 있는 타일과 스레드를 보여 줍니다.  
+  테이블의 머리글은 표시되고 있는 타일과 스레드를 보여 줍니다.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>GPU 스레드 창을 표시하려면  
   

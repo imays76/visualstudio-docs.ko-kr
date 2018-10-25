@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbd4fc3abcee9cc7cdea9c078abfaba0b6df5ba7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c9fae6967cc9b37938b83f61a10f8a6a85804a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920432"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-지정된 된 토큰을 지정 된 해당 메타 데이터 개체와 연결 된 이름을 반환 합니다.  
+해당 메타 데이터 개체를 지정 하는 지정된 된 토큰을 사용 하 여 연결 된 이름을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,16 +47,16 @@ int GetNameFromToken (
  [in] 메타 데이터 정보를 포함 하는 개체입니다.  
   
  `dwToken`  
- [in] 이름을 지정 하는 경우 토큰입니다.  
+ [in] 이름을 지정 하는 토큰입니다.  
   
  `pbstrName`  
  [out] 토큰에 해당 하는 이름입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 공개 하는 개체는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetNameFromToken(  

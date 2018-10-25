@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926191"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 식
 Visual Studio 디버거에는 **간략한 조사식** 대화 상자, **조사식** 창 또는 **직접 실행** 창에 식을 입력할 때 사용되는 식 계산기가 포함되어 있습니다. 식 계산기는 **중단점** 창과 디버거의 여러 가지 다른 부분에서도 사용됩니다.
@@ -91,13 +91,13 @@ int main()
   
  디버거 내장 함수의 특징은 다음과 같습니다.  
   
--   안전이 보장됩니다. 디버거 내장 함수를 실행하는 경우 디버깅 중인 프로세스가 손상되지 않습니다.  
+- 안전이 보장됩니다. 디버거 내장 함수를 실행하는 경우 디버깅 중인 프로세스가 손상되지 않습니다.  
   
--   모든 식에서 허용됩니다. 파생 작업과 함수 실행이 허용되지 않는 시나리오에서도 허용됩니다.  
+- 모든 식에서 허용됩니다. 파생 작업과 함수 실행이 허용되지 않는 시나리오에서도 허용됩니다.  
   
--   미니덤프 디버깅과 같이 일반 함수 호출이 가능하지 않은 시나리오에서 작동합니다.  
+- 미니덤프 디버깅과 같이 일반 함수 호출이 가능하지 않은 시나리오에서 작동합니다.  
   
- 디버거 내장 함수를 사용하면 식 계산도 보다 편리해질 수 있습니다. 예를 들어 `strncmp(str, "asd")` 는 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`보다 중단점 조건에서 작성하기가 훨씬 쉽습니다. )  
+  디버거 내장 함수를 사용하면 식 계산도 보다 편리해질 수 있습니다. 예를 들어 `strncmp(str, "asd")` 는 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`보다 중단점 조건에서 작성하기가 훨씬 쉽습니다. )  
   
 |영역|내장 함수|  
 |----------|-------------------------|  
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - 지원되지 않는 식  
   
 ### <a name="dynamic-objects"></a>동적 개체  
- 디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. 구현 하는 경우 개체는 <xref:System.Dynamic.IDynamicMetaObjectProvider> 동적 뷰 노드가 추가 됩니다는 조사식 창에서 계산 됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.  
+ 디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. <xref:System.Dynamic.IDynamicMetaObjectProvider>를 구현하는 개체가 조사식 창에서 평가될 때 동적 뷰 노드가 추가됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.  
   
  동적 개체의 다음 기능은 지원되지 않습니다.  
   
@@ -208,6 +208,6 @@ int main()
   
 ## <a name="see-also"></a>참고 항목  
  [C + +의 형식 지정자](../debugger/format-specifiers-in-cpp.md)   
- [컨텍스트 연산자 (c + +)](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)   
  [의사 변수](../debugger/pseudovariables.md)

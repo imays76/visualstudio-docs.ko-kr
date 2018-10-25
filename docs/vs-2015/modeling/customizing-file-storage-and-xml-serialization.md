@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867449"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>파일 저장소 및 XML Serialization 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ ms.locfileid: "49183022"
 ## <a name="understanding-monikers"></a>이해 모니커  
  모니커는 모델 및 다이어그램 파일의 다른 부분 간의 상호 참조를 나타내는 데 사용 됩니다. 에 사용 되는 `.diagram` 모델 파일에 있는 노드를 가리키도록 파일. 두 가지 방법으로 모니커:  
   
--   *Id 모니커* 대상 요소의 GUID를 인용 합니다. 예를 들어:  
+- *Id 모니커* 대상 요소의 GUID를 인용 합니다. 예를 들어:  
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *키 모니커 정규화* 모니커 키 라는 지정 된 도메인 속성의 값에 따라 대상 요소를 식별 합니다. 대상 요소의 모니커는 모니커가 포함 관계 트리의 부모 요소의 접두사로 추가 됩니다.  
+- *키 모니커 정규화* 모니커 키 라는 지정 된 도메인 속성의 값에 따라 대상 요소를 식별 합니다. 대상 요소의 모니커는 모니커가 포함 관계 트리의 부모 요소의 접두사로 추가 됩니다.  
   
-     다음 예제는 DSL 있습니다은 명명 된 Song 클래스는 도메인 관계에 포함 된 같이 Album 이라는 도메인 클래스에서 수행 됩니다.  
+   다음 예제는 DSL 있습니다은 명명 된 Song 클래스는 도메인 관계에 포함 된 같이 Album 이라는 도메인 클래스에서 수행 됩니다.  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     대상 클래스는 도메인에 대 한 속성이 있는 경우 정규화 된 키 모니커를 사용할지 옵션 **모니커 키가** 로 설정 된 `true` 에서 **Xml 직렬화 동작**합니다. 예제에서는이 옵션은 도메인 클래스 "앨범" 및 "Song"에서 "Title" 이라는 도메인 속성에 대 한 설정 됩니다.  
+   대상 클래스는 도메인에 대 한 속성이 있는 경우 정규화 된 키 모니커를 사용할지 옵션 **모니커 키가** 로 설정 된 `true` 에서 **Xml 직렬화 동작**합니다. 예제에서는이 옵션은 도메인 클래스 "앨범" 및 "Song"에서 "Title" 이라는 도메인 속성에 대 한 설정 됩니다.  
   
- 정규화 된 키 모니커는 ID 모니커 보다 읽기 쉬울입니다. 사용자가 읽을 수 있도록 모델 파일의 XML을 하려는 경우에 정규화 된 키 모니커를 사용 하 여 하는 것이 좋습니다. 그러나 동일한 모니커 키가 둘 이상의 요소를 설정 하는 사용자에 대 한 가능한 것입니다. 중복 키 파일이 올바르게 다시 로드 하지 발생할 수 있습니다. 따라서 정규화 된 키 모니커를 사용 하 여 참조 되는 도메인 클래스를 정의 하는 경우 중복 된 모니커를 가진 파일을 저장 하는 중에서 사용자를 방지 하는 방법으로 고려해 야 합니다.  
+  정규화 된 키 모니커는 ID 모니커 보다 읽기 쉬울입니다. 사용자가 읽을 수 있도록 모델 파일의 XML을 하려는 경우에 정규화 된 키 모니커를 사용 하 여 하는 것이 좋습니다. 그러나 동일한 모니커 키가 둘 이상의 요소를 설정 하는 사용자에 대 한 가능한 것입니다. 중복 키 파일이 올바르게 다시 로드 하지 발생할 수 있습니다. 따라서 정규화 된 키 모니커를 사용 하 여 참조 되는 도메인 클래스를 정의 하는 경우 중복 된 모니커를 가진 파일을 저장 하는 중에서 사용자를 방지 하는 방법으로 고려해 야 합니다.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>도메인 클래스 ID 모니커를 참조할 수를 설정 하려면  
   

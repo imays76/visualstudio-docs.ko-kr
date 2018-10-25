@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86a31893a62391c0da1041402e3806c7a1e997e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d8b9c31f5d681c80c1fe961fac039f8f9a6b5b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920640"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 이 문서 컨텍스트와 연결 된 언어를 가져옵니다.  
@@ -46,13 +46,13 @@ int GetLanguageInfo(
  [out] 이 문서의 컨텍스트에서 코드를 구현 하는 언어의 이름을 반환 합니다.  
   
  `pguidLanguage`  
- [out] 이 문서의 컨텍스트에서 코드를 구현 하는 언어의 GUID를 반환 합니다. 예를 들어 `guidVBScriptLang` 또는 `guidCPPLang`로 이름을 지정할 수 있습니다. 이 GUID는에서 제공 하는 언어로 국한 되지 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]합니다.  
+ [out] 이 문서의 컨텍스트에서 코드를 구현 하는 언어의 GUID를 반환 합니다. 예를 들어 `guidVBScriptLang` 또는 `guidCPPLang`로 이름을 지정할 수 있습니다. 이 GUID가 제공한 언어로 국한 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugContext` 공개 하는 개체는 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스입니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugContext` 노출 하는 개체를 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)    

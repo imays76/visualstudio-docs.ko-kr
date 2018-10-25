@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923448"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Visual Studio "15"에 대 한 사용자 지정 프로젝트 및 항목 템플릿 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>와 함께 설치 된 확장에 대 한 업그레이드를 합니다. MSI  
  다음과 같은 일반적인 템플릿 위치에 템플릿을 배포 하는 일부 MSI 기반 확장 합니다.  
   
--   **\<Visual Studio 설치 디렉터리 > \Common7\IDE\\< ProjectTemplates/Itemtemplate >**  
+- **\<Visual Studio 설치 디렉터리 > \Common7\IDE\\< ProjectTemplates/Itemtemplate >**  
   
--   **\<Visual Studio 설치 디렉터리 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 프로젝트/Itemtemplate >**  
+- **\<Visual Studio 설치 디렉터리 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 프로젝트/Itemtemplate >**  
   
- MSI 기반 배포를 수행 하는 확장 프로그램을 하는 경우 템플릿 매니페스트를 수동으로 생성 및 확장 설치에 포함 되어 있는지 확인 해야 합니다. 위에 나열 된.vstman 예제 비교 해야 하며 [Visual Studio 템플릿 매니페스트 스키마 참조](../extensibility/visual-studio-template-manifest-schema-reference.md)합니다. 포함 해야 하는 항목을 보려면  
+  MSI 기반 배포를 수행 하는 확장 프로그램을 하는 경우 템플릿 매니페스트를 수동으로 생성 및 확장 설치에 포함 되어 있는지 확인 해야 합니다. 위에 나열 된.vstman 예제 비교 해야 하며 [Visual Studio 템플릿 매니페스트 스키마 참조](../extensibility/visual-studio-template-manifest-schema-reference.md)합니다. 포함 해야 하는 항목을 보려면  
   
- 프로젝트 및 항목 템플릿에 대 한 별도 매니페스트를 만들어야 하 고 루트 템플릿 지정 된 대로 위의 디렉터리를 가리키도록 해야 합니다. 확장 및 로캘 당 하나의 매니페스트를 만들어야 합니다.  
+  프로젝트 및 항목 템플릿에 대 한 별도 매니페스트를 만들어야 하 고 루트 템플릿 지정 된 대로 위의 디렉터리를 가리키도록 해야 합니다. 확장 및 로캘 당 하나의 매니페스트를 만들어야 합니다.  
   
 ## <a name="troubleshooting-template-installation"></a>문제 해결 템플릿 설치  
  프로젝트 또는 항목 템플릿을 배포 하는 문제에 봉착 한 경우에 진단 로깅을 활성화할 수 있습니다.  
   
-1.  로깅을 사용 하도록 설정 하는 레지스트리 키를 설정 하려면 다음 명령을 실행 합니다.  
+1. 로깅을 사용 하도록 설정 하는 레지스트리 키를 설정 하려면 다음 명령을 실행 합니다.  
   
-     **reg은 HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1 추가**  
+    **reg은 HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1 추가**  
   
-2.  Visual Studio를 시작 하 고 새 프로젝트를 새 항목 대화 상자 템플릿 양쪽 트리에 모두 초기화를 시작 합니다. 서식 파일 로그에 나타납니다 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**합니다. 이 로그에 항목을 추가 하는 각 템플릿 트리 초기화 합니다.  
+2. Visual Studio를 시작 하 고 새 프로젝트를 새 항목 대화 상자 템플릿 양쪽 트리에 모두 초기화를 시작 합니다. 서식 파일 로그에 나타납니다 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**합니다. 이 로그에 항목을 추가 하는 각 템플릿 트리 초기화 합니다.  
   
- 로그 파일에는 다음 열을 포함 합니다.  
+   로그 파일에는 다음 열을 포함 합니다.  
   
 -   **FullPathToTemplate**에 다음 값입니다.  
   

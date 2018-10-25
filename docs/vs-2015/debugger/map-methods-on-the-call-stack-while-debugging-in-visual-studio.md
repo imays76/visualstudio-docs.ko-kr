@@ -35,12 +35,12 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 0841670c1dfe65f1ad542f931267c310d0ef711a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6995255125de6bf78fbdd8718ffb836b9ed42dde
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922135"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio에서 디버깅하는 동안 호출 스택의 맵 메서드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ ms.locfileid: "49194885"
   
  필요한 사항:  
   
--   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
+- [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   Visual C# .NET, Visual Basic .NET, C++, JavaScript, X++ 등 디버그할 수 있는 코드  
+- Visual C# .NET, Visual Basic .NET, C++, JavaScript, X++ 등 디버그할 수 있는 코드  
   
- 다음을 참조 하세요 [비디오: 코드 맵 디버거 통합 (채널 9)를 사용 하 여 시각적으로 디버그](http://go.microsoft.com/fwlink/?LinkId=293418) • [호출 스택을 매핑합니다](#MapStack) • [코드에 대해 메모 하기](#MakeNotes) • [지도를 업데이트 합니다 다음 호출 스택과](#UpdateMap) • [맵에 관련된 코드 추가](#AddRelatedCode) • [지도 사용 하 여 버그를 찾기](#FindBugs) • [질문 및 답변](#QA)  
+  다음을 참조 하세요 [비디오: 코드 맵 디버거 통합 (채널 9)를 사용 하 여 시각적으로 디버그](http://go.microsoft.com/fwlink/?LinkId=293418) • [호출 스택을 매핑합니다](#MapStack) • [코드에 대해 메모 하기](#MakeNotes) • [지도를 업데이트 합니다 다음 호출 스택과](#UpdateMap) • [맵에 관련된 코드 추가](#AddRelatedCode) • [지도 사용 하 여 버그를 찾기](#FindBugs) • [질문 및 답변](#QA)  
   
- 명령 및 코드 맵으로 작업할 때 사용할 수 있는 작업의 세부 정보를 참조 하세요 [찾아보기 및 다시 정렬 코드 맵](../modeling/browse-and-rearrange-code-maps.md)합니다.  
+  명령 및 코드 맵으로 작업할 때 사용할 수 있는 작업의 세부 정보를 참조 하세요 [찾아보기 및 다시 정렬 코드 맵](../modeling/browse-and-rearrange-code-maps.md)합니다.  
   
 ##  <a name="MapStack"></a> 호출 스택 매핑  
   
@@ -122,53 +122,53 @@ ms.locfileid: "49194885"
   
 ##  <a name="QA"></a> Q & A  
   
--   **모든 호출이 지도에 표시 됩니다. 이유**  
+- **모든 호출이 지도에 표시 됩니다. 이유**  
   
-     기본적으로 맵에는 고유한 코드만 나타납니다. 외부 코드를 보려면 설정는 **호출 스택** 창:  
+   기본적으로 맵에는 고유한 코드만 나타납니다. 외부 코드를 보려면 설정는 **호출 스택** 창:  
   
-     ![호출 스택 창을 사용 하 여 외부 코드 표시](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")  
+   ![호출 스택 창을 사용 하 여 외부 코드 표시](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")  
   
-     설정 또는 해제 **내 코드만** Visual Studio 디버깅 옵션에서에서:  
+   설정 또는 해제 **내 코드만** Visual Studio 디버깅 옵션에서에서:  
   
-     ![옵션 대화 상자를 사용 하 여 외부 코드 표시](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")  
+   ![옵션 대화 상자를 사용 하 여 외부 코드 표시](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")  
   
--   **맵을 변경 영향이 코드 있습니까?**  
+- **맵을 변경 영향이 코드 있습니까?**  
   
-     맵 변경은 어떤 방식으로도 코드에 영향을 미치지 않습니다. 맵에서 이름 바꾸기, 이동 또는 제거 기능을 자유롭게 사용할 수 있습니다.  
+   맵 변경은 어떤 방식으로도 코드에 영향을 미치지 않습니다. 맵에서 이름 바꾸기, 이동 또는 제거 기능을 자유롭게 사용할 수 있습니다.  
   
--   **이 메시지가 의미: "다이어그램이 코드의 이전 버전에서 기반 있습니다"?**  
+- **이 메시지가 의미: "다이어그램이 코드의 이전 버전에서 기반 있습니다"?**  
   
-     지도를 마지막으로 업데이트한 후 코드가 변경되었을 수 있습니다. 예를 들어 맵에 대한 호출이 더 이상 코드에 없는 경우가 있습니다. 메시지를 닫은 다음 맵을 다시 업데이트하기 전에 솔루션 다시 빌드를 시도합니다.  
+   지도를 마지막으로 업데이트한 후 코드가 변경되었을 수 있습니다. 예를 들어 맵에 대한 호출이 더 이상 코드에 없는 경우가 있습니다. 메시지를 닫은 다음 맵을 다시 업데이트하기 전에 솔루션 다시 빌드를 시도합니다.  
   
--   **맵 레이아웃을 제어 하는 방법**  
+- **맵 레이아웃을 제어 하는 방법**  
   
-     엽니다는 **레이아웃** 맵 도구 모음의 메뉴:  
+   엽니다는 **레이아웃** 맵 도구 모음의 메뉴:  
   
-    -   기본 레이아웃을 변경합니다.  
+  -   기본 레이아웃을 변경합니다.  
   
-    -   지도 자동으로 다시 정렬를 중지 하려면 해제 **디버깅 시 자동으로 레이아웃**합니다.  
+  -   지도 자동으로 다시 정렬를 중지 하려면 해제 **디버깅 시 자동으로 레이아웃**합니다.  
   
-    -   항목을 추가할 때 맵을 가능한 적게 다시 정렬 하려면 해제 **증분 레이아웃**합니다.  
+  -   항목을 추가할 때 맵을 가능한 적게 다시 정렬 하려면 해제 **증분 레이아웃**합니다.  
   
--   **다른 사용자와 맵을 공유할 수 있습니까?**  
+- **다른 사용자와 맵을 공유할 수 있습니까?**  
   
-     맵을 내보내고 다른 사용자에게 전송하거나(Microsoft Outlook이 있는 경우) 솔루션에 저장하여 Team Foundation 버전 제어로 체크 인할 수 있습니다.  
+   맵을 내보내고 다른 사용자에게 전송하거나(Microsoft Outlook이 있는 경우) 솔루션에 저장하여 Team Foundation 버전 제어로 체크 인할 수 있습니다.  
   
-     ![다른 사용자와 공유 호출 스택 코드 맵의](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")  
+   ![다른 사용자와 공유 호출 스택 코드 맵의](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")  
   
--   **맵에 새 호출 스택이 자동으로 추가 중지 하는 방법**  
+- **맵에 새 호출 스택이 자동으로 추가 중지 하는 방법**  
   
-     선택할 ![단추 &#45; 자동으로 코드 맵에 표시 호출 스택](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") 맵 도구 모음의 합니다. 현재 호출 스택을 맵에 수동으로 추가 하려면 다음을 누릅니다 **Ctrl** + **Shift** + **`** 합니다.  
+   선택할 ![단추 &#45; 자동으로 코드 맵에 표시 호출 스택](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") 맵 도구 모음의 합니다. 현재 호출 스택을 맵에 수동으로 추가 하려면 다음을 누릅니다 **Ctrl** + **Shift** + **`** 합니다.  
   
-     디버깅하는 동안 맵은 기존 호출 스택을 맵에 계속해서 강조표시를 합니다.  
+   디버깅하는 동안 맵은 기존 호출 스택을 맵에 계속해서 강조표시를 합니다.  
   
--   **항목 아이콘 및 화살표의 의미**  
+- **항목 아이콘 및 화살표의 의미**  
   
-     항목에 대한 자세한 정보를 얻으려면 항목을 마우스 포인터로 가리켜 항목의 도구 설명을 확인합니다. 찾아볼 수도 있습니다는 **범례** 에 각 아이콘의 의미에 대해 알아봅니다.  
+   항목에 대한 자세한 정보를 얻으려면 항목을 마우스 포인터로 가리켜 항목의 도구 설명을 확인합니다. 찾아볼 수도 있습니다는 **범례** 에 각 아이콘의 의미에 대해 알아봅니다.  
   
-     ![호출 스택 코드 맵의 아이콘은 무엇을 의미 하나요? ](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")  
+   ![호출 스택 코드 맵의 아이콘은 무엇을 의미 하나요? ](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")  
   
- 다음을 참조 하세요 [호출 스택을 매핑합니다](#MapStack) • [코드에 대해 메모 하기](#MakeNotes) • [다음 호출 스택과 함께 맵 업데이트](#UpdateMap) • [맵에 관련된 코드 추가](#AddRelatedCode) •[ 지도 사용 하 여 버그 찾기](#FindBugs)  
+  다음을 참조 하세요 [호출 스택을 매핑합니다](#MapStack) • [코드에 대해 메모 하기](#MakeNotes) • [다음 호출 스택과 함께 맵 업데이트](#UpdateMap) • [맵에 관련된 코드 추가](#AddRelatedCode) •[ 지도 사용 하 여 버그 찾기](#FindBugs)  
   
 ## <a name="see-also"></a>참고 항목  
  [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)   

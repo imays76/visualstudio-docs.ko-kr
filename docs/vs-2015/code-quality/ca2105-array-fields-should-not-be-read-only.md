@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a310957f1552e289993643d39965d8a6a8693fe2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894978"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: 배열 필드는 읽기 전용이면 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
@@ -47,11 +48,11 @@ ms.locfileid: "49207950"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙에 의해 식별 되는 보안 취약점을 해결 하려면 자제 내용의 공개적으로 액세스할 수 있는 읽기 전용 배열입니다. 다음 절차 중 하나를 사용 하는 것이 좋습니다.
 
--   변경할 수 없는 강력한 형식의 컬렉션을 사용 하 여 배열을 대체 합니다. 자세한 내용은 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>을 참조하십시오.
+- 변경할 수 없는 강력한 형식의 컬렉션을 사용 하 여 배열을 대체 합니다. 자세한 내용은 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>을 참조하십시오.
 
--   Public 필드를 private 배열의 복제본을 반환 하는 메서드로 대체 합니다. 코드 복제본에 의존 하지 않습니다, 이므로 위험이 없는 요소를 수정할 경우.
+- Public 필드를 private 배열의 복제본을 반환 하는 메서드로 대체 합니다. 코드 복제본에 의존 하지 않습니다, 이므로 위험이 없는 요소를 수정할 경우.
 
- 두 번째 방법은 했다면 바꾸지 마세요 필드 속성을 사용 하 여 부정적인 배열을 반환 하는 속성에는 성능에 영향을 합니다. 자세한 내용은 [CA1819: 속성은 배열을 반환 해서는](../code-quality/ca1819-properties-should-not-return-arrays.md)합니다.
+  두 번째 방법은 했다면 바꾸지 마세요 필드 속성을 사용 하 여 부정적인 배열을 반환 하는 속성에는 성능에 영향을 합니다. 자세한 내용은 [CA1819: 속성은 배열을 반환 해서는](../code-quality/ca1819-properties-should-not-return-arrays.md)합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서 경고를 제외 것이 좋습니다. 거의 없는 시나리오는 읽기 전용 필드의 내용을 중요 하지 않은 발생 합니다. 이 시나리오를 사용 하 여이 경우 제거를 `readonly` 메시지를 제외 하는 대신 한정자입니다.

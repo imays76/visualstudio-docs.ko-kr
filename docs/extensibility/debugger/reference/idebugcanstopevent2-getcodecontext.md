@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a771345d9c3cf0cbfb7324e82eb9519069499eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05cd4729635042d67f063bbba412c19a4a2f89f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103047"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818343"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 이 이벤트의 위치를 설명 하는 코드 컨텍스트를 가져옵니다.  
@@ -44,12 +44,12 @@ int GetCodeContext(
  [out] 반환 된 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 현재 코드 위치를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 대부분의 런타임 아키텍처에 대 한 코드 컨텍스트 프로그램의 실행 스트림의 특정 명령을 가리키는 주소로 생각할 수 있습니다.  
+ 대부분의 런타임 아키텍처에 대 한 코드 컨텍스트를 특정 지침을 가리키는 프로그램의 실행 스트림에서 주소로 생각할 수 있습니다.  
   
- 소스 코드 줄을 향하고 인 문서 컨텍스트를 호출 하는 [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) 메서드.  
+ 소스 코드 줄을 향하도록 인 문서 컨텍스트를 가져오려면 호출 합니다 [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   

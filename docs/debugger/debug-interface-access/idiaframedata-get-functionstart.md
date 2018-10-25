@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a54fd51b63bb53521b9f1e9c75f75e49d771b0ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6be173020e4aeb3b69197a038b4bc6d66c7eedc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908303"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
-블록 함수의 진입점에 포함 되는지 여부를 나타내는 플래그를 검색 합니다.  
+블록 함수의 진입점을 포함 하는지 여부를 나타내는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_functionStart (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 블록에 진입점; 같지 않으면 반환 `FALSE`합니다.  
+ [out] 반환 `TRUE` 블록에 대 한 진입점; 있으면 그렇지 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 프레임은 인라인 메서드 또는 함수에 삽입 하는 함수를 나타내기 때문에 함수를 시작할 수 없는 스택 프레임에 대 한 것 같습니다.  
+ 프레임은 인라인 메서드 또는 함수 삽입 함수를 나타내므로 함수의 시작 되지 스택 프레임에 대 한 것 같습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

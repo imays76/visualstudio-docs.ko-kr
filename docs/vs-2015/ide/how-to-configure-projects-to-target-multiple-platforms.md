@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4056a390bf2ed486df6391d48fd17c1d0af2cdad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921836"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>방법: 여러 플랫폼을 대상으로 한 프로젝트 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "49194742"
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>한 번에 여러 솔루션 구성을 빌드하려면  
   
-1.  **Configuration Manager**를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.  
+1. **Configuration Manager**를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.  
   
-2.  **일괄 빌드** 창을 사용하여 한 번에 여러 솔루션 구성을 빌드합니다.  
+2. **일괄 빌드** 창을 사용하여 한 번에 여러 솔루션 구성을 빌드합니다.  
   
- 예를 들어 솔루션 수준 플랫폼을 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)](으)로 설정하고 동일한 플랫폼을 대상으로 하는 솔루션 내에 프로젝트가 없도록 할 수 있습니다. 사용자 솔루션에는 각각 다른 플랫폼을 대상으로 하는 여러 프로젝트를 포함할 수 있습니다. 이러한 상황 중 하나가 발생하면 혼동을 피하기 위해 설명적인 이름으로 새 구성을 만드는 것이 좋습니다.  
+   예를 들어 솔루션 수준 플랫폼을 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)](으)로 설정하고 동일한 플랫폼을 대상으로 하는 솔루션 내에 프로젝트가 없도록 할 수 있습니다. 사용자 솔루션에는 각각 다른 플랫폼을 대상으로 하는 여러 프로젝트를 포함할 수 있습니다. 이러한 상황 중 하나가 발생하면 혼동을 피하기 위해 설명적인 이름으로 새 구성을 만드는 것이 좋습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)   

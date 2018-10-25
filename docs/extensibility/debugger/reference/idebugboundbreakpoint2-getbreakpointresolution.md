@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35337b26053876c9009be124bba9791743f53009
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d58c58dbbaad6d57518c8f13620029034ae4b76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920393"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 이 중단점을 설명 하는 중단점 해상도를 가져옵니다.  
@@ -44,18 +44,18 @@ int GetBreakpointResolution(
  `ppBPResolution`  
  [out] 반환 된 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 다음 중 하나를 나타내는 인터페이스입니다.  
   
--   코드 중단점이 바인딩 되었음을 코드의 위치를 설명 하는 중단점 해결 개체입니다.  
+-   코드 중단점에 바인딩된 코드의 위치를 설명 하는 중단점 해결 개체입니다.  
   
--   데이터 중단점에 바인딩된 하는 데이터 위치입니다.  
+-   데이터 중단점에 바인딩되는 위치 데이터 위치입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 반환 `E_BP_DELETED` 바인딩된 중단점 개체의 상태로 설정 됩니다 `BPS_DELETED` (의 일부는 [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거형)입니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_BP_DELETED` 바인딩된 중단점 개체의 상태 설정 됩니다 `BPS_DELETED` (부분 합니다 [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거형)입니다.  
   
 ## <a name="remarks"></a>설명  
- 호출 된 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 코드나 데이터에 대 한 중단점 해상도 인지 확인 하는 메서드.  
+ 호출 된 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 코드나 데이터에 대 한 중단점 해결 인지 확인 하는 방법입니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CBoundBreakpoint` 공개 하는 개체는 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스입니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CBoundBreakpoint` 노출 하는 개체를 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스입니다.  
   
 ```  
 HRESULT CBoundBreakpoint::GetBreakpointResolution(  

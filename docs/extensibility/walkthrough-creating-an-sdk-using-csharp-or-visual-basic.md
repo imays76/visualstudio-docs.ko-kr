@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835159"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>연습: C# 또는 Visual Basic을 사용 하 여 SDK 만들기
 이 연습에서는 Visual C#을 사용 하 여 간단한 수학 라이브러리 SDK를 만들고 다음 SDK는 Visual Studio 확장 (VSIX)로 패키지 하는 방법에 알아봅니다. 다음 절차를 완료 합니다.  
@@ -31,29 +31,29 @@ ms.locfileid: "46495949"
   
 ##  <a name="createClassLibrary"></a> SimpleMath Windows 런타임 구성 요소를 만들려면  
   
-1.  메뉴 모음에서 선택 **파일** > **새로 만들기** > **새 프로젝트**합니다.  
+1. 메뉴 모음에서 선택 **파일** > **새로 만들기** > **새 프로젝트**합니다.  
   
-2.  템플릿 목록에서 확장 **Visual C#** 또는 **Visual Basic**를 선택 합니다 **Windows 스토어** 노드를 선택한 후는 **Windows 런타임 구성 요소** 템플릿.  
+2. 템플릿 목록에서 확장 **Visual C#** 또는 **Visual Basic**를 선택 합니다 **Windows 스토어** 노드를 선택한 후는 **Windows 런타임 구성 요소** 템플릿.  
   
-3.  에 **이름** 상자에서 지정 **SimpleMath**를 선택한 후는 **확인** 단추입니다.  
+3. 에 **이름** 상자에서 지정 **SimpleMath**를 선택한 후는 **확인** 단추입니다.  
   
-4.  **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **SimpleMath** 프로젝트 노드를 선택한 후 **속성**합니다.  
+4. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **SimpleMath** 프로젝트 노드를 선택한 후 **속성**합니다.  
   
-5.  이름 바꾸기 **Class1.cs** 하 **Arithmetic.cs** 다음 코드와 일치 하도록 업데이트 합니다.  
+5. 이름 바꾸기 **Class1.cs** 하 **Arithmetic.cs** 다음 코드와 일치 하도록 업데이트 합니다.  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
-6.  **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **솔루션 'SimpleMath'** 노드를 선택한 후 **Configuration Manager**합니다.  
+6. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **솔루션 'SimpleMath'** 노드를 선택한 후 **Configuration Manager**합니다.  
   
-     합니다 **Configuration Manager** 대화 상자가 열립니다.  
+    합니다 **Configuration Manager** 대화 상자가 열립니다.  
   
-7.  에 **활성 솔루션 구성** 목록에서 선택 **릴리스**합니다.  
+7. 에 **활성 솔루션 구성** 목록에서 선택 **릴리스**합니다.  
   
-8.  에 **구성** 열 되어 있는지 확인 **SimpleMath** 행으로 설정 됩니다 **릴리스**를 선택한 후는 **닫기** 단추를는 변경 내용입니다.  
+8. 에 **구성** 열 되어 있는지 확인 **SimpleMath** 행으로 설정 됩니다 **릴리스**를 선택한 후는 **닫기** 단추를는 변경 내용입니다.  
   
-    > [!IMPORTANT]
-    >  SimpleMath 구성 요소에 대 한 SDK에는 하나의 구성만 포함 됩니다. 이 구성은 릴리스 빌드의 경우 해야 합니다. 또는 구성 요소를 사용 하는 앱에 대 한 인증을 전달 하지는[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]합니다.  
+   > [!IMPORTANT]
+   >  SimpleMath 구성 요소에 대 한 SDK에는 하나의 구성만 포함 됩니다. 이 구성은 릴리스 빌드의 경우 해야 합니다. 또는 구성 요소를 사용 하는 앱에 대 한 인증을 전달 하지는[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]합니다.  
   
 9. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **SimpleMath** 프로젝트 노드를 선택한 후 **빌드**합니다.  
   
@@ -154,23 +154,23 @@ ms.locfileid: "46495949"
   
 ##  <a name="createSample"></a> 클래스 라이브러리를 사용 하는 샘플 앱을 만들려면  
   
-1.  메뉴 모음에서 선택 **파일** > **새로 만들기** > **새 프로젝트**합니다.  
+1. 메뉴 모음에서 선택 **파일** > **새로 만들기** > **새 프로젝트**합니다.  
   
-2.  템플릿 목록에서 확장 **Visual C#** 또는 **Visual Basic**를 선택한 후는 **Windows 스토어** 노드.  
+2. 템플릿 목록에서 확장 **Visual C#** 또는 **Visual Basic**를 선택한 후는 **Windows 스토어** 노드.  
   
-3.  선택 합니다 **비어 있는 앱** 서식 파일을 프로젝트의 이름 **ArithmeticUI**를 선택한 후는 **확인** 단추입니다.  
+3. 선택 합니다 **비어 있는 앱** 서식 파일을 프로젝트의 이름 **ArithmeticUI**를 선택한 후는 **확인** 단추입니다.  
   
-4.  **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **ArithmeticUI** 프로젝트를 선택한 후 **추가** > **참조**.  
+4. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **ArithmeticUI** 프로젝트를 선택한 후 **추가** > **참조**.  
   
-5.  참조 형식의 목록에서 확장 **Windows**를 선택한 후 **확장**합니다.  
+5. 참조 형식의 목록에서 확장 **Windows**를 선택한 후 **확장**합니다.  
   
-6.  세부 정보 창에서 선택 합니다 **간단한 수학 SDK** 확장 합니다.  
+6. 세부 정보 창에서 선택 합니다 **간단한 수학 SDK** 확장 합니다.  
   
-     SDK에 대 한 추가 정보가 표시 됩니다. 선택할 수 있습니다는 **자세한 정보** 열려면 링크 https://msdn.microsoft.com/처럼이 연습의 앞부분에서 SDKManifest.xml 파일에 지정 합니다.  
+    SDK에 대 한 추가 정보가 표시 됩니다. 선택할 수 있습니다는 **자세한 정보** 열려면 링크 https://msdn.microsoft.com/처럼이 연습의 앞부분에서 SDKManifest.xml 파일에 지정 합니다.  
   
-7.  **참조 관리자** 대화 상자를 선택 합니다 **간단한 수학 SDK** 확인란을 선택한 후는 **확인** 단추.  
+7. **참조 관리자** 대화 상자를 선택 합니다 **간단한 수학 SDK** 확인란을 선택한 후는 **확인** 단추.  
   
-8.  메뉴 모음에서 선택 **뷰** > **개체 브라우저**합니다.  
+8. 메뉴 모음에서 선택 **뷰** > **개체 브라우저**합니다.  
   
 9. 에 **찾아보기** 목록에서 선택 **간단한 수학**합니다.  
   
@@ -239,7 +239,7 @@ ms.locfileid: "46495949"
   
      올바른 결과 표시 합니다.  
   
- 성공적으로 만들고 확장명 SDK를 사용 합니다.  
+    성공적으로 만들고 확장명 SDK를 사용 합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [연습: c + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

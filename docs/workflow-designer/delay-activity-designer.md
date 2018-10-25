@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b632177ba941ad0e5ddb5700ae430573fd817d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0bce0be0f6c7953c44601edd090b1e1e7d3b6f6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832994"
 ---
 # <a name="delay-activity-designer"></a>Delay 활동 디자이너
 
@@ -38,14 +38,14 @@ ms.locfileid: "36758455"
 다음 표는 <xref:System.Activities.Statements.Delay> 속성 디자이너에서 사용 하는 방법을 설명 합니다. 이러한 속성은 속성 표에서 편집할 수 있습니다 하 고 그 중 일부는 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Delay> 활동의 이름입니다. 기본값은 Delay입니다. 하지만 <xref:System.Activities.Activity.DisplayName%2A> 값에는 반드시 필요 하지 않습니다., 하나를 사용 하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|True|워크플로를 지연할 시간입니다. 이 속성은 속성 표에서 설정합니다. 리터럴 <xref:System.TimeSpan>을 00:00:00 형식으로 입력하거나 Visual Basic 식을 입력하여 시간을 지정합니다.|
 
 ## <a name="see-also"></a>참고자료
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
-- [할당](../workflow-designer/assign-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
 - [Delay 활동 디자이너](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

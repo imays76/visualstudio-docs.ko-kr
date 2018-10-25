@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cb7c842d6fdcc024b4146981ece251fb5189652
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2956d5f5ce4cf8f210466f7b7006a158eee6ce43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885059"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>스레드 및 프로세스 동시성 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,22 +31,22 @@ ms.locfileid: "49234431"
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 다음 절차 중 하나를 사용하여 동시성 프로파일링 방법을 지정할 수 있습니다.  
+  다음 절차 중 하나를 사용하여 동시성 프로파일링 방법을 지정할 수 있습니다.  
   
--   프로파일링 마법사의 첫 번째 페이지에서 **동시성**을 클릭합니다.  
+- 프로파일링 마법사의 첫 번째 페이지에서 **동시성**을 클릭합니다.  
   
--   성능 세션에 대한 속성 대화 상자의 **일반** 페이지에서 **동시성**을 선택합니다.  
+- 성능 세션에 대한 속성 대화 상자의 **일반** 페이지에서 **동시성**을 선택합니다.  
   
--   **성능 탐색기** 도구 모음의 **메서드** 목록에서 **동시성**을 클릭합니다.  
+- **성능 탐색기** 도구 모음의 **메서드** 목록에서 **동시성**을 클릭합니다.  
   
 ## <a name="common-tasks"></a>일반 작업  
  성능 세션의 _성능 세션_**속성 페이지** 대화 상자에서 추가 옵션을 지정할 수 있습니다. 이 대화 상자를 열려면  
   
--   **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
+- **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
   
- 다음 표의 작업에서는 동시성 방법을 사용하여 프로파일링할 때 _성능 세션_**속성 페이지** 대화 상자에서 지정할 수 있는 옵션을 설명합니다.  
+  다음 표의 작업에서는 동시성 방법을 사용하여 프로파일링할 때 _성능 세션_**속성 페이지** 대화 상자에서 지정할 수 있는 옵션을 설명합니다.  
   
 |작업|관련 내용|  
 |----------|---------------------|  

@@ -17,12 +17,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 073245be91c1689d0dd70d30207dc4dd809c578e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d032863677a24f377da8068b4a6e5565c5a2241c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830680"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage의 리소스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,28 +31,28 @@ ms.locfileid: "49188581"
   
  Vspackage의 일부의 리소스를 포함할 수 없습니다. 관리 되는 유형은 포함할 수 있습니다.  
   
--   문자열  
+- 문자열  
   
--   패키지 로드 키 (또한 문자열)  
+- 패키지 로드 키 (또한 문자열)  
   
--   도구 창 아이콘  
+- 도구 창 아이콘  
   
--   컴파일된 명령 테이블 출력 (CTO) 파일  
+- 컴파일된 명령 테이블 출력 (CTO) 파일  
   
--   CTO 비트맵  
+- CTO 비트맵  
   
--   명령줄 도움말  
+- 명령줄 도움말  
   
--   대화 상자 데이터에 대 한  
+- 대화 상자 데이터에 대 한  
   
- 리소스 관리 되는 패키지의 리소스 id 선택 예외는 CTO 파일이 며, CTMENU 이름을 지정 해야 합니다. CTO 파일 리소스 테이블에 표시 해야 합니다는 `byte[]`합니다. 다른 모든 리소스 항목 유형으로 식별 됩니다.  
+  리소스 관리 되는 패키지의 리소스 id 선택 예외는 CTO 파일이 며, CTMENU 이름을 지정 해야 합니다. CTO 파일 리소스 테이블에 표시 해야 합니다는 `byte[]`합니다. 다른 모든 리소스 항목 유형으로 식별 됩니다.  
   
- 사용할 수는 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 특성에 알리기 위해 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 관리 되는 리소스는 사용할 수 있습니다.  
+  사용할 수는 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 특성에 알리기 위해 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 관리 되는 리소스는 사용할 수 있습니다.  
   
- [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
- [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
+  [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
+  [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
- 설정 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 나타냅니다 이렇게에서 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 검색할 때 리소스에 대 한 예를 들어, 사용 하 여 관리 되지 않는 위성 Dll을 무시할지 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>합니다. 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 동일한 리소스 id는 두 개 이상의 리소스를 발견 하면 찾은 첫 번째 리소스를 사용 합니다.  
+  설정 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 나타냅니다 이렇게에서 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 검색할 때 리소스에 대 한 예를 들어, 사용 하 여 관리 되지 않는 위성 Dll을 무시할지 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>합니다. 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 동일한 리소스 id는 두 개 이상의 리소스를 발견 하면 찾은 첫 번째 리소스를 사용 합니다.  
   
 ## <a name="example"></a>예제  
  다음 예제는 관리 되는 도구 창 아이콘을 표시 합니다.  

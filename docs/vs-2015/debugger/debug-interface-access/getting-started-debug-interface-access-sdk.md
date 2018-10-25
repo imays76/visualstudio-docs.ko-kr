@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d24d4b1fe15656f074ce580a809fe394d861a71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bde835248c6f837b27958f13085c4cb832c25e9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928479"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>시작(디버그 인터페이스 액세스 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49252488"
   
  가장 DIA SDK를 사용 하려면 다음을 사용 하 여 알아두어야 하 합니다.  
   
--   C + + 프로그래밍 언어  
+- C + + 프로그래밍 언어  
   
--   COM 프로그래밍  
+- COM 프로그래밍  
   
--   Visual Studio 통합된 개발 환경 (IDE) 예제를 컴파일하기 위해  
+- Visual Studio 통합된 개발 환경 (IDE) 예제를 컴파일하기 위해  
   
- DIA SDK가 Visual Studio를 사용 하 여 정상적으로 설치 및 해당 기본 위치가 *[드라이브]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK. 설치의 일부로, DIA SDK를 구현 하는 msdia90.dll를 자동으로 등록 됩니다 있으므로 포함 하는 것이 사용 하기 위해 수행 해야 하는 모든 `dia2.h` 프로그램에 대 한 링크 `diaguids.lib`합니다.  
+  DIA SDK가 Visual Studio를 사용 하 여 정상적으로 설치 및 해당 기본 위치가 *[드라이브]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK. 설치의 일부로, DIA SDK를 구현 하는 msdia90.dll를 자동으로 등록 됩니다 있으므로 포함 하는 것이 사용 하기 위해 수행 해야 하는 모든 `dia2.h` 프로그램에 대 한 링크 `diaguids.lib`합니다.  
   
- 헤더: include\dia2.h  
+  헤더: include\dia2.h  
   
- 라이브러리: lib\diaguids.lib  
+  라이브러리: lib\diaguids.lib  
   
- DLL: bin\msdia80.dll  
+  DLL: bin\msdia80.dll  
   
- IDL: idl\dia2.idl  
+  IDL: idl\dia2.idl  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [개요](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  

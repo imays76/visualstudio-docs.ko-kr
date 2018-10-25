@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924230"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>방법: 읽기 가능 및 문서 속성에 쓰기
   문서와 함께 문서 속성을 저장할 수 있습니다. Office 응용 프로그램은 작성자, 제목 및 주제와 같은 다양한 기본 제공 속성을 제공합니다. 이 항목에서는 Microsoft Office Excel 및 Microsoft Office Word에서 문서 속성을 설정하는 방법을 보여 줍니다.  
@@ -35,13 +35,13 @@ ms.locfileid: "35675419"
 ## <a name="set-document-properties-in-excel"></a>Excel에서 문서 속성 설정  
  Excel에서 기본 제공 속성으로 작업하려면 다음 속성을 사용합니다.  
   
--   문서 수준 프로젝트에서는 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 클래스의 `ThisWorkbook` 속성을 사용합니다.  
+- 문서 수준 프로젝트에서는 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 클래스의 `ThisWorkbook` 속성을 사용합니다.  
   
--   VSTO 추가 기능 프로젝트에서는 <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> 개체의 <xref:Microsoft.Office.Interop.Excel.Workbook> 속성을 사용합니다.  
+- VSTO 추가 기능 프로젝트에서는 <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> 개체의 <xref:Microsoft.Office.Interop.Excel.Workbook> 속성을 사용합니다.  
   
- 이러한 속성은 <xref:Microsoft.Office.Core.DocumentProperty> 개체 컬렉션인 <xref:Microsoft.Office.Core.DocumentProperties> 개체를 반환합니다. 컬렉션의 `Item` 속성을 사용하여 이름 또는 컬렉션 내의 인덱스로 특정 속성을 검색할 수 있습니다.  
+  이러한 속성은 <xref:Microsoft.Office.Core.DocumentProperty> 개체 컬렉션인 <xref:Microsoft.Office.Core.DocumentProperties> 개체를 반환합니다. 컬렉션의 `Item` 속성을 사용하여 이름 또는 컬렉션 내의 인덱스로 특정 속성을 검색할 수 있습니다.  
   
- 다음 코드 예제에서는 문서 수준 프로젝트에서 기본 제공 **Revision Number** 속성을 변경하는 방법을 보여 줍니다.  
+  다음 코드 예제에서는 문서 수준 프로젝트에서 기본 제공 **Revision Number** 속성을 변경하는 방법을 보여 줍니다.  
   
 ### <a name="to-change-the-revision-number-property-in-excel"></a>Excel에서 수정 번호 속성을 변경하려면  
   
@@ -58,13 +58,13 @@ ms.locfileid: "35675419"
 ## <a name="set-document-properties-in-word"></a>Word에서 문서 속성 설정  
  Word에서 기본 제공 속성으로 작업하려면 다음 속성을 사용합니다.  
   
--   문서 수준 프로젝트에서는 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 클래스의 `ThisDocument` 속성을 사용합니다.  
+- 문서 수준 프로젝트에서는 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 클래스의 `ThisDocument` 속성을 사용합니다.  
   
--   VSTO 추가 기능 프로젝트에서는 <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> 개체의 <xref:Microsoft.Office.Interop.Word.Document> 속성을 사용합니다.  
+- VSTO 추가 기능 프로젝트에서는 <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> 개체의 <xref:Microsoft.Office.Interop.Word.Document> 속성을 사용합니다.  
   
- 이러한 속성은 <xref:Microsoft.Office.Core.DocumentProperty> 개체 컬렉션인 <xref:Microsoft.Office.Core.DocumentProperties> 개체를 반환합니다. 컬렉션의 `Item` 속성을 사용하여 이름 또는 컬렉션 내의 인덱스로 특정 속성을 검색할 수 있습니다.  
+  이러한 속성은 <xref:Microsoft.Office.Core.DocumentProperty> 개체 컬렉션인 <xref:Microsoft.Office.Core.DocumentProperties> 개체를 반환합니다. 컬렉션의 `Item` 속성을 사용하여 이름 또는 컬렉션 내의 인덱스로 특정 속성을 검색할 수 있습니다.  
   
- 다음 코드 예제에서는 문서 수준 프로젝트에서 기본 제공 **Subject** 속성을 변경하는 방법을 보여 줍니다.  
+  다음 코드 예제에서는 문서 수준 프로젝트에서 기본 제공 **Subject** 속성을 변경하는 방법을 보여 줍니다.  
   
 ### <a name="to-change-the-subject-property"></a>Subject 속성을 변경하려면  
   

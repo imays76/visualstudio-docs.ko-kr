@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dcc182664832775f2aa3878fb3320e01d3901dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840105"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>방법: 코드 분석 사전 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ ms.locfileid: "49227920"
 ## <a name="custom-dictionary-elements"></a>사용자 지정 사전 요소  
  사용자 지정 사전의 다음 요소의 내부 텍스트와 용어를 추가 하 여 코드 분석 사전의 동작을 수정할 수 있습니다.  
   
--   [사전 및 단어/인식/단어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
+- [사전 및 단어/인식/단어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
   
--   [사전 및 단어/인식할 수 없는/단어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
+- [사전 및 단어/인식할 수 없는/단어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
--   [사전/단어/사용 되지 않음/용어 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [사전/단어/사용 되지 않음/용어 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
--   [사전/단어/복합/용어 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [사전/단어/복합/용어 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
--   [사전/단어/DiscreteExceptions/용어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
+- [사전/단어/DiscreteExceptions/용어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
--   [사전/머리 글자어/CasingExceptions/머리글자어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [사전/머리 글자어/CasingExceptions/머리글자어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> 사전 및 단어/인식/단어  
  용어와 철자가 코드 분석을 식별 하는 용어 목록에 포함 하려면 사전 및 단어/인식/단어 요소의 내부 텍스트와 용어를 추가 합니다. 사전 및 단어/인식/단어 요소에서 대/소문자 구분 없는 합니다.  
@@ -154,11 +154,11 @@ ms.locfileid: "49227920"
   
  경고에서 제안된 된 대체 용어를 포함 하려면 대체 용어 요소의 PreferredAlternate 특성에 지정 합니다. 대체를 제안 하지 않으려는 경우 특성 값을를 비워 둘 수 있습니다.  
   
--   사전/단어의 사용 되지 않는 용어 사용 되지 않음/용어 요소는 대/소문자 구분 하지 않습니다.  
+- 사전/단어의 사용 되지 않는 용어 사용 되지 않음/용어 요소는 대/소문자 구분 하지 않습니다.  
   
--   PreferredAlternate 특성 값은 대/소문자 구분입니다. 복합 대체에 대 한 파스칼식 대 / 소문자를 사용 합니다.  
+- PreferredAlternate 특성 값은 대/소문자 구분입니다. 복합 대체에 대 한 파스칼식 대 / 소문자를 사용 합니다.  
   
- **예제**  
+  **예제**  
   
 ```  
 <Dictionary>  
@@ -189,11 +189,11 @@ ms.locfileid: "49227920"
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 사전/단어/복합/용어 [@CompoundAlternate]  
  기본 제공 사전 복합 용어 보다는 단일, discrete 조건으로 몇 가지 용어를 식별합니다. 코드 분석 복합 단어를 식별 하는 단어 목록에서 용어를 포함 하 고 조건의 올바른 대/소문자를 지정할 사전/단어/복합/용어 요소의 내부 텍스트와 용어를 추가 합니다. 용어 요소의 CompoundAlternate 특성에 (파스칼식 대 / 소문자)는 개별 단어의 첫 글자를 활용 하 여 복합 용어를 구성 하는 개별 단어를 지정 합니다. Note 내부 텍스트에 지정 된 용어 사전/단어/DiscreteExceptions 목록에 자동으로 추가 됩니다.  
   
--   사전/단어의 사용 되지 않는 용어 사용 되지 않음/용어 요소는 대/소문자 구분 하지 않습니다.  
+- 사전/단어의 사용 되지 않는 용어 사용 되지 않음/용어 요소는 대/소문자 구분 하지 않습니다.  
   
--   PreferredAlternate 특성 값은 대/소문자 구분입니다. 복합 대체에 대 한 파스칼식 대 / 소문자를 사용 합니다.  
+- PreferredAlternate 특성 값은 대/소문자 구분입니다. 복합 대체에 대 한 파스칼식 대 / 소문자를 사용 합니다.  
   
- **예제**  
+  **예제**  
   
 ```  
 <Dictionary>  

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f03dc4ea85fe0f44ea2253da9544ace9b0068abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922473"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: 비주얼 스타일을 사용하여 WPF 응용 프로그램 게시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "49250213"
   
  오류를 해결 하 고 솔루션을 게시 하려면 다음 작업을 수행 해야 합니다.  
   
--   [비주얼 스타일을 사용 하지 않고 솔루션을 게시할](#BKMK_publishsolwovs)합니다.  
+- [비주얼 스타일을 사용 하지 않고 솔루션을 게시할](#BKMK_publishsolwovs)합니다.  
   
--   [매니페스트 파일을 만듭니다](#BKMK_CreateManifest)합니다.  
+- [매니페스트 파일을 만듭니다](#BKMK_CreateManifest)합니다.  
   
--   [게시 된 솔루션의 실행 파일에 매니페스트 파일을 포함](#BKMK_embedmanifest)합니다.  
+- [게시 된 솔루션의 실행 파일에 매니페스트 파일을 포함](#BKMK_embedmanifest)합니다.  
   
--   [응용 프로그램 및 배포 매니페스트에 서명](#BKMK_signappdeplyman)합니다.  
+- [응용 프로그램 및 배포 매니페스트에 서명](#BKMK_signappdeplyman)합니다.  
   
- 그런 다음 최종 사용자가 응용 프로그램을 설치 하려는 위치에 게시 된 파일을 이동할 수 있습니다.  
+  그런 다음 최종 사용자가 응용 프로그램을 설치 하려는 위치에 게시 된 파일을 이동할 수 있습니다.  
   
 ##  <a name="BKMK_publishsolwovs"></a> 비주얼 스타일을 사용 하지 않고 솔루션을 게시 합니다.  
   
@@ -100,72 +100,72 @@ ms.locfileid: "49250213"
   
 ##  <a name="BKMK_embedmanifest"></a> 게시 된 솔루션의 실행 파일에 매니페스트 파일을 포함  
   
-1.  엽니다는 **Visual Studio 명령 프롬프트**합니다.  
+1. 엽니다는 **Visual Studio 명령 프롬프트**합니다.  
   
-     여는 방법에 대 한 자세한를 **Visual Studio 명령 프롬프트**를 참조 하세요 [명령 프롬프트](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)합니다.  
+    여는 방법에 대 한 자세한를 **Visual Studio 명령 프롬프트**를 참조 하세요 [명령 프롬프트](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)합니다.  
   
-    > [!NOTE]
-    >  나머지 단계를 솔루션에 대 한 다음과 같은 가정을 확인합니다.  
-    >   
-    >  -   솔루션의 이름은 **MyWPFProject**합니다.  
-    > -   솔루션은 다음 디렉터리에 있는: `%UserProfile%\Documents\Visual Studio 2010\Projects\`합니다.  
-    >   
-    >      솔루션은 다음 디렉터리에 게시: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`합니다.  
-    > -   게시 된 응용 프로그램 파일의 최신 버전은 다음 디렉터리에 있습니다. `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  이름이 나 위에서 설명한 디렉터리 위치를 사용할 필요가 없습니다. 이름 및 위치를 위에서 설명한 솔루션을 게시 하는 데 필요한 단계를 설명 하기 위해 사용 됩니다.  
+   > [!NOTE]
+   >  나머지 단계를 솔루션에 대 한 다음과 같은 가정을 확인합니다.  
+   > 
+   > - 솔루션의 이름은 **MyWPFProject**합니다.  
+   >   -   솔루션은 다음 디렉터리에 있는: `%UserProfile%\Documents\Visual Studio 2010\Projects\`합니다.  
+   > 
+   >   솔루션은 다음 디렉터리에 게시: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`합니다.  
+   >   -   게시 된 응용 프로그램 파일의 최신 버전은 다음 디렉터리에 있습니다. `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   이름이 나 위에서 설명한 디렉터리 위치를 사용할 필요가 없습니다. 이름 및 위치를 위에서 설명한 솔루션을 게시 하는 데 필요한 단계를 설명 하기 위해 사용 됩니다.  
   
-2.  명령 프롬프트에서 게시 된 응용 프로그램 파일의 최신 버전이 포함 된 디렉터리 경로 변경 합니다. 다음 예제에서는이 단계를 보여 줍니다.  
+2. 명령 프롬프트에서 게시 된 응용 프로그램 파일의 최신 버전이 포함 된 디렉터리 경로 변경 합니다. 다음 예제에서는이 단계를 보여 줍니다.  
   
-    ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  명령 프롬프트에서 응용 프로그램의 실행 파일에 매니페스트 파일을 포함 하려면 다음 명령을 실행 합니다.  
+3. 명령 프롬프트에서 응용 프로그램의 실행 파일에 매니페스트 파일을 포함 하려면 다음 명령을 실행 합니다.  
   
-    ```  
-    mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ##  <a name="BKMK_signappdeplyman"></a> 응용 프로그램 및 배포 매니페스트 서명  
   
-1.  명령 프롬프트에서 제거 하려면 다음 명령을 실행 합니다 `.deploy` 현재 디렉터리에서 실행 파일에서 확장 합니다.  
+1. 명령 프롬프트에서 제거 하려면 다음 명령을 실행 합니다 `.deploy` 현재 디렉터리에서 실행 파일에서 확장 합니다.  
   
-    ```  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  이 예제에서는 하나의 파일에 있다고 가정 합니다 `.deploy` 파일 확장명입니다. 이 디렉터리에 있는 모든 파일 이름을 바꿔야 하는 `.deploy` 파일 확장명입니다.  
+   > [!NOTE]
+   >  이 예제에서는 하나의 파일에 있다고 가정 합니다 `.deploy` 파일 확장명입니다. 이 디렉터리에 있는 모든 파일 이름을 바꿔야 하는 `.deploy` 파일 확장명입니다.  
   
-2.  명령 프롬프트에서 응용 프로그램 매니페스트에 서명 하려면 다음 명령을 실행 합니다.  
+2. 명령 프롬프트에서 응용 프로그램 매니페스트에 서명 하려면 다음 명령을 실행 합니다.  
   
-    ```  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  이 예제를 사용 하 여 매니페스트에 서명 하는 것으로 가정 합니다 `.pfx` 프로젝트의 파일입니다. 매니페스트를 서명 하지 않는 경우는 생략할 수 있습니다는 `–cf` 이 예제에 사용 되는 매개 변수입니다. 암호에 필요한 인증서를 사용 하 여 매니페스트에 서명 하는 경우 지정 된 `–password` 옵션 (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
+   > [!NOTE]
+   >  이 예제를 사용 하 여 매니페스트에 서명 하는 것으로 가정 합니다 `.pfx` 프로젝트의 파일입니다. 매니페스트를 서명 하지 않는 경우는 생략할 수 있습니다는 `–cf` 이 예제에 사용 되는 매개 변수입니다. 암호에 필요한 인증서를 사용 하 여 매니페스트에 서명 하는 경우 지정 된 `–password` 옵션 (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
   
-3.  명령 프롬프트에서 다음 명령을 추가 하 여 `.deploy` 이 절차의 이전 단계에서 이름을 바꾼 파일의 이름으로 확장 합니다.  
+3. 명령 프롬프트에서 다음 명령을 추가 하 여 `.deploy` 이 절차의 이전 단계에서 이름을 바꾼 파일의 이름으로 확장 합니다.  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  이 예에서는 하나의 파일만 가정 했습니다는 `.deploy` 파일 확장명입니다. 이전에이 디렉터리의 모든 파일 이름을 바꿔야 하는 `.deploy` 파일 이름 확장명입니다.  
+   > [!NOTE]
+   >  이 예에서는 하나의 파일만 가정 했습니다는 `.deploy` 파일 확장명입니다. 이전에이 디렉터리의 모든 파일 이름을 바꿔야 하는 `.deploy` 파일 이름 확장명입니다.  
   
-4.  명령 프롬프트에서 배포 매니페스트에 서명 하려면 다음 명령을 실행 합니다.  
+4. 명령 프롬프트에서 배포 매니페스트에 서명 하려면 다음 명령을 실행 합니다.  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  이 예제를 사용 하 여 매니페스트에 서명 하는 것으로 가정 합니다 `.pfx` 프로젝트의 파일입니다. 매니페스트를 서명 하지 않는 경우는 생략할 수 있습니다는 `–cf` 이 예제에 사용 되는 매개 변수입니다. 암호에 필요한 인증서를 사용 하 여 매니페스트에 서명 하는 경우 지정 된 `–password` 이 예제와 같이 옵션을:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`합니다.  
+   > [!NOTE]
+   >  이 예제를 사용 하 여 매니페스트에 서명 하는 것으로 가정 합니다 `.pfx` 프로젝트의 파일입니다. 매니페스트를 서명 하지 않는 경우는 생략할 수 있습니다는 `–cf` 이 예제에 사용 되는 매개 변수입니다. 암호에 필요한 인증서를 사용 하 여 매니페스트에 서명 하는 경우 지정 된 `–password` 이 예제와 같이 옵션을:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`합니다.  
   
- 다음이 단계를 수행한 후에 최종 사용자가 응용 프로그램을 설치 하려는 위치에 게시 된 파일을 이동할 수 있습니다. 솔루션을 종종 업데이트 하려는 경우 이러한 명령을 스크립트에 이동할 수 있으며 새 버전을 게시할 때마다 스크립트를 실행 수 있습니다.  
+   다음이 단계를 수행한 후에 최종 사용자가 응용 프로그램을 설치 하려는 위치에 게시 된 파일을 이동할 수 있습니다. 솔루션을 종종 업데이트 하려는 경우 이러한 명령을 스크립트에 이동할 수 있으며 새 버전을 게시할 때마다 스크립트를 실행 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   

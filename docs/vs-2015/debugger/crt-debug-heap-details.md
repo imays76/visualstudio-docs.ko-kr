@@ -80,12 +80,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a97054db575d1d92f2077efe46d89573fba02dfd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 900127801a232ed41f119def930f8bbfe8e93550
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923006"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 디버그 힙 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,19 +214,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **디버그 힙을 사용 하려면**  
   
--   C 런타임 라이브러리의 디버그 버전을 사용하여 응용 프로그램의 디버그 빌드를 연결합니다.  
+- C 런타임 라이브러리의 디버그 버전을 사용하여 응용 프로그램의 디버그 빌드를 연결합니다.  
   
- **하나 이상의 _crtDbgFlag 비트 필드를 변경 하 여 플래그에 대 한 새로운 상태를 만들려면**  
+  **하나 이상의 _crtDbgFlag 비트 필드를 변경 하 여 플래그에 대 한 새로운 상태를 만들려면**  
   
-1.  현재 `_CrtSetDbgFlag` 상태를 가져오기 위해 `newFlag` 매개 변수를 `_CRTDBG_REPORT_FLAG`로 설정한 상태로 `_crtDbgFlag`를 호출하고 반환된 값을 임시 변수에 저장합니다.  
+1. 현재 `_CrtSetDbgFlag` 상태를 가져오기 위해 `newFlag` 매개 변수를 `_CRTDBG_REPORT_FLAG`로 설정한 상태로 `_crtDbgFlag`를 호출하고 반환된 값을 임시 변수에 저장합니다.  
   
-2.  모든 비트를 설정 `OR`연산 (비트 &#124; 기호)의 해당 비트 마스크 (응용 프로그램 코드에서 상수로 표시)를 사용 하 여 임시 변수입니다.  
+2. 모든 비트를 설정 `OR`연산 (비트 &#124; 기호)의 해당 비트 마스크 (응용 프로그램 코드에서 상수로 표시)를 사용 하 여 임시 변수입니다.  
   
-3.  적절한 비트 마스크의 `AND` 연산(비트 ~ 기호)으로 변수를 `NOT` 연산(비트 & 기호)하여 나머지 비트를 해제합니다.  
+3. 적절한 비트 마스크의 `AND` 연산(비트 ~ 기호)으로 변수를 `NOT` 연산(비트 & 기호)하여 나머지 비트를 해제합니다.  
   
-4.  `_CrtSetDbgFlag`에 대해 새로운 상태를 만들기 위해 임시 변수로 저장한 값에 설정한 `newFlag` 매개 변수를 사용하여 `_crtDbgFlag`를 호출합니다.  
+4. `_CrtSetDbgFlag`에 대해 새로운 상태를 만들기 위해 임시 변수로 저장한 값에 설정한 `newFlag` 매개 변수를 사용하여 `_crtDbgFlag`를 호출합니다.  
   
- 예를 들어, 다음 코드의 줄에서는 자동 누수 탐지를 설정하고 `_CRT_BLOCK` 형식의 블록 확인을 해제합니다.  
+   예를 들어, 다음 코드의 줄에서는 자동 누수 탐지를 설정하고 `_CRT_BLOCK` 형식의 블록 확인을 해제합니다.  
   
 ```  
 // Get current flag  

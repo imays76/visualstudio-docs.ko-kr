@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919860"
 ---
 # <a name="accessing-models-from-text-templates"></a>텍스트 템플릿에서 모델에 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "49257194"
   
  텍스트 템플릿에서 모델 액세스:  
   
--   템플릿 지시문의 상속 속성을 설정 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>합니다. 이 저장소에 대 한 액세스를 제공합니다.  
+- 템플릿 지시문의 상속 속성을 설정 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>합니다. 이 저장소에 대 한 액세스를 제공합니다.  
   
--   액세스 하려는 DSL에 대 한 지시문 프로세서를 지정 합니다. 이 텍스트 템플릿의 코드에서 해당 도메인 클래스, 속성 및 관계를 사용할 수 있도록 DSL에 대 한 어셈블리를 로드 합니다. 또한 지정 된 모델 파일을 로드 합니다.  
+- 액세스 하려는 DSL에 대 한 지시문 프로세서를 지정 합니다. 이 텍스트 템플릿의 코드에서 해당 도메인 클래스, 속성 및 관계를 사용할 수 있도록 DSL에 대 한 어셈블리를 로드 합니다. 또한 지정 된 모델 파일을 로드 합니다.  
   
- A `.tt` 만들면 새 디버깅 프로젝트에서 파일이 다음 예제와 비슷한 만들어집니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션 템플릿에서 DSL 최소 언어입니다.  
+  A `.tt` 만들면 새 디버깅 프로젝트에서 파일이 다음 예제와 비슷한 만들어집니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션 템플릿에서 DSL 최소 언어입니다.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  다음 사항을 참고하세요.  
   
-1.  합니다 `filename` 및 `validation` 매개 변수는 사용 하 여 구분 ";"이 고 다른 구분 기호 또는 공백 이어야 합니다.  
+1. 합니다 `filename` 및 `validation` 매개 변수는 사용 하 여 구분 ";"이 고 다른 구분 기호 또는 공백 이어야 합니다.  
   
-2.  유효성 검사 범주 목록 유효성 검사 메서드를 실행할 수를 결정 합니다. 여러 범주를 사용 하 여 구분 해야 "&#124;"이 고 다른 구분 기호 또는 공백 이어야 합니다.  
+2. 유효성 검사 범주 목록 유효성 검사 메서드를 실행할 수를 결정 합니다. 여러 범주를 사용 하 여 구분 해야 "&#124;"이 고 다른 구분 기호 또는 공백 이어야 합니다.  
   
- 오류가 있으면 오류 창에 보고 됩니다 하 고 결과 파일에는 오류 메시지가 포함 됩니다.  
+   오류가 있으면 오류 창에 보고 됩니다 하 고 결과 파일에는 오류 메시지가 포함 됩니다.  
   
 ##  <a name="Multiple"></a> 텍스트 템플릿에서 여러 모델에 액세스  
   

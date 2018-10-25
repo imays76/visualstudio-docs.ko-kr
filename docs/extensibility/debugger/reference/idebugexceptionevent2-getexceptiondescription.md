@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35baacc0eca2919e12a9056b902ab551e7f824bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61dcc2d961281b620d6670c7355f026b6207554b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891611"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
-예외에 대 한 표시할 수 있는 설명을 가져옵니다.  
+예외의 표시할 수 있는 설명을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,13 +41,13 @@ int GetExceptionDescription(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstrDescription`  
- [out] 예외에 표시할 수 있는 설명을 반환합니다.  
+ [out] 예외의 표시할 수 있는 설명을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드에서 반환 된 문자열은 일반적으로 예외 이름 및에 표시 되는지는 **출력** 창 예외가 발생 합니다.  
+ 이 메서드에서 반환 된 문자열은 일반적으로 예외 이름 및에 표시 됩니다는 **출력** 창 예외가 발생 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

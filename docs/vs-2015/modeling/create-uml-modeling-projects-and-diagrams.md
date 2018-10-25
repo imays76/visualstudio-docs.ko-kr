@@ -28,12 +28,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5b7f053a2a63830e80247eeeeadcf34e2a6a351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926100"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML 모델링 프로젝트 및 다이어그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,29 +50,29 @@ UML 모델링은 소프트웨어 시스템을 이해하고 토론하며 디자�
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>다이어그램을 만들고 프로젝트에 추가하려면  
   
-1.  에 **아키텍처** 메뉴 선택 **새 UML 또는 레이어 다이어그램**합니다.  
+1. 에 **아키텍처** 메뉴 선택 **새 UML 또는 레이어 다이어그램**합니다.  
   
-2.  에 **새 다이어그램 추가** 대화 상자에서 원하는 모델링 다이어그램의 유형을 클릭 합니다.  
+2. 에 **새 다이어그램 추가** 대화 상자에서 원하는 모델링 다이어그램의 유형을 클릭 합니다.  
   
-     ![새 다이어그램 대화 상자를 추가](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
+    ![새 다이어그램 대화 상자를 추가](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
   
-3.  새 다이어그램의 이름을 입력합니다.  
+3. 새 다이어그램의 이름을 입력합니다.  
   
-4.  에 **모델링 프로젝트에 추가** 상자:  
+4. 에 **모델링 프로젝트에 추가** 상자:  
   
-    -   솔루션에 이미 있는 모델링 프로젝트를 선택한 다음 클릭 **확인**합니다.  
+   - 솔루션에 이미 있는 모델링 프로젝트를 선택한 다음 클릭 **확인**합니다.  
   
      \- 또는 -  
   
-    1.  선택 **새 모델링 프로젝트를 만듭니다**를 클릭 하 고 **확인**합니다.  
+   1.  선택 **새 모델링 프로젝트를 만듭니다**를 클릭 하 고 **확인**합니다.  
   
-    2.  에 **새 모델링 프로젝트 만들기** 대화 상자에서 이름 및 새 프로젝트에 대 한 위치를 입력 한 다음 **확인**합니다.  
+   2.  에 **새 모델링 프로젝트 만들기** 대화 상자에서 이름 및 새 프로젝트에 대 한 위치를 입력 한 다음 **확인**합니다.  
   
-         ![새 모델링 프로젝트 대화 상자를 만들](../modeling/media/uml-createmodel.png "UML_CreateModel")  
+        ![새 모델링 프로젝트 대화 상자를 만들](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
-         솔루션이 열려 있으면 새 프로젝트가 솔루션에 추가됩니다. 열려 있는 솔루션이 없는 경우 새 솔루션의 이름을 입력할 수 있습니다.  
+        솔루션이 열려 있으면 새 프로젝트가 솔루션에 추가됩니다. 열려 있는 솔루션이 없는 경우 새 솔루션의 이름을 입력할 수 있습니다.  
   
- 모델링 프로젝트가 이미 있는 경우 다음 절차를 사용할 수도 있습니다.  
+   모델링 프로젝트가 이미 있는 경우 다음 절차를 사용할 수도 있습니다.  
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>기존 모델링 프로젝트에 다이어그램을 추가하려면  
   

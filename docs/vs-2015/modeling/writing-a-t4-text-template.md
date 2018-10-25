@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897799"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49231636"
   
  텍스트 템플릿은 다음 부분으로 구성됩니다.  
   
--   **지시문** -템플릿을 처리 되는 방식을 제어 하는 요소입니다.  
+- **지시문** -템플릿을 처리 되는 방식을 제어 하는 요소입니다.  
   
--   **텍스트 블록** -출력에 직접 복사 되는 내용입니다.  
+- **텍스트 블록** -출력에 직접 복사 되는 내용입니다.  
   
--   **제어 블록** -텍스트를 변수 값을 삽입 하 고 텍스트의 조건부 또는 반복 부분을 제어 하는 프로그램 코드입니다.  
+- **제어 블록** -텍스트를 변수 값을 삽입 하 고 텍스트의 조건부 또는 반복 부분을 제어 하는 프로그램 코드입니다.  
   
- 이 항목의 예제를 실행 하려면 복사 하 여 템플릿 파일에 설명 된 대로 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다. 템플릿 파일을 편집한 후 저장 하 고 출력을 검사할 **.txt** 파일입니다.  
+  이 항목의 예제를 실행 하려면 복사 하 여 템플릿 파일에 설명 된 대로 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다. 템플릿 파일을 편집한 후 저장 하 고 출력을 검사할 **.txt** 파일입니다.  
   
 ## <a name="directives"></a>지시문  
  텍스트 템플릿 지시문은 변환 코드 및 출력 파일 생성 방법에 대한 일반 명령을 텍스트 템플릿 생성 엔진에 제공합니다.  
