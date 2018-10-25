@@ -2,7 +2,8 @@
 # [IDE 둘러보기](ide-tour.md)
 
 # [설치](installation.md)
-## [미리 보기 설치](install-preview.md)
+## [방화벽 또는 프록시에서 설치 및 사용](install-behind-a-firewall-or-proxy-server.md)
+## [미리 보기 릴리스 설치](install-preview.md)
 ## [업데이트](update.md)
 ## [제거](uninstall.md)
 
