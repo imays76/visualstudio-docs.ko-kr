@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774590"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866898"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>연습: 워크플로에 응용 프로그램 페이지 추가
   이 연습에서는 워크플로 프로젝트에는 워크플로에서 파생 된 데이터를 표시 하는 응용 프로그램 페이지를 추가 하는 방법에 설명 합니다. 항목에서 설명한 프로젝트 기반 [연습: 연결 및 초기화 폼을 사용 하 여 워크플로 만드는](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)합니다.
 
  이 연습에서는 다음 작업을 수행합니다.
 
--   SharePoint 워크플로 프로젝트에는 ASPX 응용 프로그램 페이지를 추가 합니다.
+- SharePoint 워크플로 프로젝트에는 ASPX 응용 프로그램 페이지를 추가 합니다.
 
--   워크플로 프로젝트에서 데이터 가져오기 및 조작 합니다.
+- 워크플로 프로젝트에서 데이터 가져오기 및 조작 합니다.
 
--   응용 프로그램 페이지의 테이블에 데이터를 표시 합니다.
+- 응용 프로그램 페이지의 테이블에 데이터를 표시 합니다.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>전제 조건
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
@@ -305,23 +305,23 @@ ms.locfileid: "43774590"
 
 #### <a name="to-test-the-application-page"></a>응용 프로그램 페이지를 테스트 하려면
 
-1.  선택 된 **F5** 키를 실행 하 고 sharepoint 프로젝트를 배포 합니다.
+1. 선택 된 **F5** 키를 실행 하 고 sharepoint 프로젝트를 배포 합니다.
 
-2.  선택 합니다 **홈** 단추를 선택한 후는 **Shared Documents** SharePoint 사이트에서 공유 문서 목록을 표시 하려면 빠른 실행 모음에 대 한 링크입니다.
+2. 선택 합니다 **홈** 단추를 선택한 후는 **Shared Documents** SharePoint 사이트에서 공유 문서 목록을 표시 하려면 빠른 실행 모음에 대 한 링크입니다.
 
-3.  이 예제에 대 한 경비 보고서를 나타내기 위해 몇 가지 새 문서 문서 목록에 선택 하 여 업로드 합니다 **문서** 링크를 **라이브러리** 합니다 선택페이지의맨위에있는탭 **문서 업로드** 도구 리본에서 단추입니다.
+3. 이 예제에 대 한 경비 보고서를 나타내기 위해 몇 가지 새 문서 문서 목록에 선택 하 여 업로드 합니다 **문서** 링크를 **라이브러리** 합니다 선택페이지의맨위에있는탭 **문서 업로드** 도구 리본에서 단추입니다.
 
-4.  일부 문서를 업로드 한 후 선택 하 여 워크플로 인스턴스화하는 **라이브러리** 링크를 합니다 **라이브러리** 페이지 및 다음 선택의 맨 위에 있는 탭을 **라이브러리 설정**도구 리본에서 단추입니다.
+4. 일부 문서를 업로드 한 후 선택 하 여 워크플로 인스턴스화하는 **라이브러리** 링크를 합니다 **라이브러리** 페이지 및 다음 선택의 맨 위에 있는 탭을 **라이브러리 설정**도구 리본에서 단추입니다.
 
-5.  에 **문서 라이브러리 설정** 페이지를 선택 합니다 **워크플로 설정** 링크를 **사용 권한 및 관리** 섹션.
+5. 에 **문서 라이브러리 설정** 페이지를 선택 합니다 **워크플로 설정** 링크를 **사용 권한 및 관리** 섹션.
 
-6.  에 **워크플로 설정** 페이지를 선택 합니다 **워크플로 추가** 링크.
+6. 에 **워크플로 설정** 페이지를 선택 합니다 **워크플로 추가** 링크.
 
-7.  에 **워크플로 추가** 페이지를 선택 합니다 **ExpenseReport-Workflow1** 워크플로 같은 워크플로 이름을 입력 **ExpenseTest**를 선택한 다음을 **다음** 단추입니다.
+7. 에 **워크플로 추가** 페이지를 선택 합니다 **ExpenseReport-Workflow1** 워크플로 같은 워크플로 이름을 입력 **ExpenseTest**를 선택한 다음을 **다음** 단추입니다.
 
-     워크플로 연결 폼에 표시 됩니다. 비용 제한을 금액을 보고 하는 데 사용할.
+    워크플로 연결 폼에 표시 됩니다. 비용 제한을 금액을 보고 하는 데 사용할.
 
-8.  연결 양식에서 입력 **1000** 에 **자동 승인 제한** 상자를 선택한 후는 **워크플로 연결** 단추입니다.
+8. 연결 양식에서 입력 **1000** 에 **자동 승인 제한** 상자를 선택한 후는 **워크플로 연결** 단추입니다.
 
 9. 선택 된 **홈** 단추 SharePoint 홈 페이지로 돌아갑니다.
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774590"
 
 14. 공유 문서 목록에 다른 문서를 사용 하 여 11-13 단계를 반복 합니다. (문서의 수를 정확 하 게 중요 하지 않습니다.)
 
-15. 웹 브라우저에서 다음 URL을 열면 비용 보고서 응용 프로그램 요약 페이지를 표시 합니다. **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. 웹 브라우저에서 다음 URL을 열면 비용 보고서 응용 프로그램 요약 페이지를 표시 합니다. **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      경비 보고서 요약 페이지에 할당 된 금액을 초과 하는 경비 보고서에서 초과 금액 및 금액 모든 보고서의 모든를 나열 합니다.
 

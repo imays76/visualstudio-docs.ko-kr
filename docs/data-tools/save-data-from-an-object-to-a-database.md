@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d5e118e4d998a5abf87920ee54401bf53d4adfa
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 210d7ade5e54f9f76e40eaf577e7818db85176e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897891"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>개체에서 데이터베이스로 데이터 저장
 TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 여 데이터베이스 개체에서 데이터를 저장할 수 있습니다 (예를 들어 `TableAdapter.Insert`). 자세한 내용은 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)합니다.
@@ -35,7 +35,7 @@ TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 
 >  TableAdapter를 구성 하는 경우 주 쿼리의 충분 한 정보를 제공 해야 합니다는 `DBDirect` 메서드를 만들 수 있습니다. 예를 들어 TableAdapter를 정의 하는 기본 키 열이 없는 테이블에서 데이터를 쿼리 하 구성 된 경우를 생성 하지 않습니다 `DBDirect` 메서드.
 
 |TableAdapter DBDirect 메서드|설명|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|데이터베이스에 새 레코드를 추가 하 고 개별 열 값을 메서드 매개 변수로 전달할 수 있습니다.|
 |`TableAdapter.Update`|기존 데이터베이스에서 레코드를 업데이트 합니다. `Update` 메서드는 원래 및 새 열 값을 메서드 매개 변수로 사용 합니다. 원래 값을 원래 레코드를 찾는 데 사용 되 고 새 값은 해당 레코드를 업데이트 하는 데 사용 됩니다.<br /><br /> 합니다 `TableAdapter.Update` 메서드는 또한 수행 하 여 데이터 집합의 변경 내용을 데이터베이스로 다시 조정 하는 데 사용 됩니다는 <xref:System.Data.DataSet>를 <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, 또는 배열을 <xref:System.Data.DataRow>메서드 매개 변수로 합니다.|
 |`TableAdapter.Delete`|메서드 매개 변수로 전달 되는 원래 열 값에 따라 데이터베이스에서 기존 레코드를 삭제 합니다.|

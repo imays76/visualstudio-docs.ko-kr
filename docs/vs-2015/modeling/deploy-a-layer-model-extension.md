@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907250"
 ---
 # <a name="deploy-a-layer-model-extension"></a>레이어 모델 확장명 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Visual Studio의 다른 사용자는 Visual Studio를 사용하여 만든 레이
   
 #### <a name="to-install-the-extension"></a>확장을 설치하려면  
   
-1.  포함 하는 프로젝트에서 **source.vsix.manifest**오픈 **bin\\ \***  파일 탐색기에서.  
+1. 포함 하는 프로젝트에서 **source.vsix.manifest**오픈 **bin\\\\*** 파일 탐색기에서.  
   
-2.  복사 합니다  **\*.vsix** 확장을 설치 하려는 컴퓨터에는 파일입니다.  
+2. 복사 합니다  **\*.vsix** 확장을 설치 하려는 컴퓨터에는 파일입니다.  
   
-3.  대상 컴퓨터에서 Windows 탐색기를 통해 *.vsix 파일을 두 번 클릭합니다.  
+3. 대상 컴퓨터에서 Windows 탐색기를 통해 *.vsix 파일을 두 번 클릭합니다.  
   
-     VSIX 설치 관리자가 열립니다.  
+    VSIX 설치 관리자가 열립니다.  
   
 #### <a name="to-uninstall-the-extension"></a>확장을 제거하려면  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889817"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 끊어진 암호화 알고리즘 사용 안 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233742"
   
  암호화 알고리즘의 경우:  
   
--   <xref:System.Security.Cryptography.DES> 암호화는 하루 미만의 무차별 암호 대입 공격일 수 있는 작은 키 크기를 포함합니다.  
+- <xref:System.Security.Cryptography.DES> 암호화는 하루 미만의 무차별 암호 대입 공격일 수 있는 작은 키 크기를 포함합니다.  
   
--   <xref:System.Security.Cryptography.RC2> 암호화는 공격자가 모든 키 값 간의 수학적 관계를 찾는 관련 키 공격에 취약합니다.  
+- <xref:System.Security.Cryptography.RC2> 암호화는 공격자가 모든 키 값 간의 수학적 관계를 찾는 관련 키 공격에 취약합니다.  
   
- 이 규칙은 소스 코드에서 위의 암호화 기능을 발견할 때 트리거되며 사용자에게 경고를 throw합니다.  
+  이 규칙은 소스 코드에서 위의 암호화 기능을 발견할 때 트리거되며 사용자에게 경고를 throw합니다.  
   
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법  
  보다 강력한 암호화 옵션을 사용합니다.  

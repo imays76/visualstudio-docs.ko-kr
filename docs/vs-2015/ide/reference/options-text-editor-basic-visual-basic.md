@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902479"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>옵션, 텍스트 편집기, 기본(Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ ms.locfileid: "49227840"
  **코드 서식 다시 적용**  
  텍스트 편집기는 적절하게 코드의 서식을 다시 지정합니다. 이 옵션을 선택하면 코드 편집기는 다음을 수행합니다.  
   
--   올바른 탭 위치에 코드 정렬  
+- 올바른 탭 위치에 코드 정렬  
   
--   키워드, 변수 및 개체를 올바른 대소문자로 다시 지정  
+- 키워드, 변수 및 개체를 올바른 대소문자로 다시 지정  
   
--   `If...Then` 문에 누락된 `Then` 추가  
+- `If...Then` 문에 누락된 `Then` 추가  
   
--   함수 호출에 괄호를 추가합니다.  
+- 함수 호출에 괄호를 추가합니다.  
   
--   문자열에 누락된 끝 따옴표 추가  
+- 문자열에 누락된 끝 따옴표 추가  
   
--   지수 표기법 서식 다시 지정  
+- 지수 표기법 서식 다시 지정  
   
--   날짜 서식 다시 지정  
+- 날짜 서식 다시 지정  
   
- **태그 개요 사용**  
- 코드 편집기에서 파일을 열면 개요 모드에서 문서를 볼 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요. 이 옵션을 선택하고 파일을 열면 개요 기능이 활성화됩니다.  
+  **태그 개요 사용**  
+  코드 편집기에서 파일을 열면 개요 모드에서 문서를 볼 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요. 이 옵션을 선택하고 파일을 열면 개요 기능이 활성화됩니다.  
   
- **Interface 및 MustOverride 멤버 자동 삽입**  
- 클래스에 대한 `Implements` 문 또는 `Inherits` 문을 커밋하면 텍스트 편집기는 구현 또는 재정의해야 하는 멤버에 대한 프로토타입을 각각 삽입합니다.  
+  **Interface 및 MustOverride 멤버 자동 삽입**  
+  클래스에 대한 `Implements` 문 또는 `Inherits` 문을 커밋하면 텍스트 편집기는 구현 또는 재정의해야 하는 멤버에 대한 프로토타입을 각각 삽입합니다.  
   
- **프로시저 줄 구분선 표시**  
- 텍스트 편집기가 프로시저의 시각적 범위를 표시합니다. 다음 표에 나열된 위치에서 프로젝트의 .vb 소스 파일에 줄이 그려집니다.  
+  **프로시저 줄 구분선 표시**  
+  텍스트 편집기가 프로시저의 시각적 범위를 표시합니다. 다음 표에 나열된 위치에서 프로젝트의 .vb 소스 파일에 줄이 그려집니다.  
   
 |.vb 소스 파일 내 위치|선 위치의 예|  
 |---------------------------------|------------------------------|  

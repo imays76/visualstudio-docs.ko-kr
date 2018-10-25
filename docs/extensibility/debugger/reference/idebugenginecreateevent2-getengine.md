@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cea15ed51cfcd81c208ef73e359058711bfdc5c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d4fc7147b53826d988a0e9100c4e5224d377234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908199"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
-새로 만든된 디버그 엔진 (DE)을 나타내는 개체를 검색 합니다.  
+새로 만든된 디버그 엔진 (DE)를 나타내는 개체를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,7 +44,7 @@ int GetEngine(
  [out] 반환 된 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 새로 만든된 DE를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)   

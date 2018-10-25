@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c1c9337fac3cde818fd8af298813c89c8c13daf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917650"
 ---
 # <a name="create-and-configure-tableadapters"></a>TableAdapter 만들기 및 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Tableadapter 응용 프로그램과 데이터베이스 간에 통신을 제공�
   
  다음 작업 중 하나를 수행 하는 경우에 Tableadapter는 만들어집니다.  
   
--   실행 된 [데이터 소스 구성 마법사](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) 중 하나를 선택 하 고는 **데이터베이스** 또는 **웹 서비스** 데이터 원본 유형입니다.  
+- 실행 된 [데이터 소스 구성 마법사](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) 중 하나를 선택 하 고는 **데이터베이스** 또는 **웹 서비스** 데이터 원본 유형입니다.  
   
--   데이터베이스 개체를 끌어 [서버 탐색기](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) 에 **데이터 집합 디자이너**합니다.  
+- 데이터베이스 개체를 끌어 [서버 탐색기](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) 에 **데이터 집합 디자이너**합니다.  
   
- 새 TableAdapter를 만들를 도구 상자에서 TableAdapter의 빈 영역을 끌어 데이터 원본으로 구성 합니다 **데이터 집합 디자이너** 화면.  
+  새 TableAdapter를 만들를 도구 상자에서 TableAdapter의 빈 영역을 끌어 데이터 원본으로 구성 합니다 **데이터 집합 디자이너** 화면.  
   
- Tableadapter 소개를 참조 하세요 [Tableadapter를 사용 하 여 데이터 집합 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)합니다.  
+  Tableadapter 소개를 참조 하세요 [Tableadapter를 사용 하 여 데이터 집합 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)합니다.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="use-the-tableadapter-configuration-wizard"></a>TableAdapter 구성 마법사를 사용 합니다.  
  실행 합니다 **TableAdapter 구성 마법사** 만들거나 Tableadapter 및 관련된 Datatable을 편집 합니다. 마우스 오른쪽 단추로 클릭 하 여 기존 TableAdapter를 구성할 수 있습니다 합니다 **데이터 집합 디자이너**합니다.  

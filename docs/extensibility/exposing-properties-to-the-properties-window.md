@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7901c0acaf9500673b9b6cfc551ed3151e1b3c5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888413"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>속성 창에 속성 노출
 이 연습에서는 개체의 공용 속성을 노출 합니다 **속성** 창입니다. 이러한 속성에 변경 내용이 반영 합니다 **속성** 창입니다.  
@@ -33,72 +33,72 @@ ms.locfileid: "39637765"
   
 ### <a name="to-expose-properties-to-the-properties-window"></a>속성 창에 속성을 노출 하려면  
   
-1.  모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트를 시작 합니다. 만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 VSIX 프로젝트 `MyObjectPropertiesExtension`합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C#** > **확장성**합니다.  
+1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트를 시작 합니다. 만들기는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 라는 VSIX 프로젝트 `MyObjectPropertiesExtension`합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C#** > **확장성**합니다.  
   
-2.  명명 된 사용자 지정 도구 창을 항목 템플릿을 추가 하 여 도구 창을 추가 `MyToolWindow`합니다. 에 **솔루션 탐색기**, 프로젝트 노드를 마우스 오른쪽 단추로 **추가** > **새 항목**합니다. 에 **새 항목 추가 대화 상자**로 이동 하세요 **Visual C# 항목** > **확장성** 선택한 **사용자 지정 도구 창을**합니다. 에 **이름을** 대화 상자의 맨 아래에 있는 필드에 파일 이름을 *MyToolWindow.cs*합니다. 사용자 지정 도구 창을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [도구 창으로 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-tool-window.md)합니다.  
+2. 명명 된 사용자 지정 도구 창을 항목 템플릿을 추가 하 여 도구 창을 추가 `MyToolWindow`합니다. 에 **솔루션 탐색기**, 프로젝트 노드를 마우스 오른쪽 단추로 **추가** > **새 항목**합니다. 에 **새 항목 추가 대화 상자**로 이동 하세요 **Visual C# 항목** > **확장성** 선택한 **사용자 지정 도구 창을**합니다. 에 **이름을** 대화 상자의 맨 아래에 있는 필드에 파일 이름을 *MyToolWindow.cs*합니다. 사용자 지정 도구 창을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [도구 창으로 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-tool-window.md)합니다.  
   
-3.  오픈 *MyToolWindow.cs* 추가한 다음 문을 사용 하 여:  
+3. 오픈 *MyToolWindow.cs* 추가한 다음 문을 사용 하 여:  
   
-    ```csharp  
-    using System.Collections;  
-    using System.ComponentModel;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    ```  
+   ```csharp  
+   using System.Collections;  
+   using System.ComponentModel;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   ```  
   
-4.  이제 다음 필드를 추가 합니다 `MyToolWindow` 클래스입니다.  
+4. 이제 다음 필드를 추가 합니다 `MyToolWindow` 클래스입니다.  
   
-    ```csharp  
-    private ITrackSelection trackSel;  
-    private SelectionContainer selContainer;  
+   ```csharp  
+   private ITrackSelection trackSel;  
+   private SelectionContainer selContainer;  
   
-    ```  
+   ```  
   
-5.  `MyToolWindow` 클래스에 다음 코드를 추가합니다.  
+5. `MyToolWindow` 클래스에 다음 코드를 추가합니다.  
   
-    ```csharp  
-    private ITrackSelection TrackSelection  
-    {  
-        get  
-        {  
-            if (trackSel == null)  
-                trackSel =  
-                   GetService(typeof(STrackSelection)) as ITrackSelection;  
-            return trackSel;  
-        }  
-    }  
+   ```csharp  
+   private ITrackSelection TrackSelection  
+   {  
+       get  
+       {  
+           if (trackSel == null)  
+               trackSel =  
+                  GetService(typeof(STrackSelection)) as ITrackSelection;  
+           return trackSel;  
+       }  
+   }  
   
-    public void UpdateSelection()  
-    {  
-        ITrackSelection track = TrackSelection;  
-        if (track != null)  
-            track.OnSelectChange((ISelectionContainer)selContainer);  
-    }  
+   public void UpdateSelection()  
+   {  
+       ITrackSelection track = TrackSelection;  
+       if (track != null)  
+           track.OnSelectChange((ISelectionContainer)selContainer);  
+   }  
   
-    public void SelectList(ArrayList list)  
-    {  
-        selContainer = new SelectionContainer(true, false);  
-        selContainer.SelectableObjects = list;  
-        selContainer.SelectedObjects = list;  
-        UpdateSelection();  
-    }  
+   public void SelectList(ArrayList list)  
+   {  
+       selContainer = new SelectionContainer(true, false);  
+       selContainer.SelectableObjects = list;  
+       selContainer.SelectedObjects = list;  
+       UpdateSelection();  
+   }  
   
-    public override void OnToolWindowCreated()  
-    {  
-        ArrayList listObjects = new ArrayList();  
-        listObjects.Add(this);  
-        SelectList(listObjects);  
-    }  
-    ```  
+   public override void OnToolWindowCreated()  
+   {  
+       ArrayList listObjects = new ArrayList();  
+       listObjects.Add(this);  
+       SelectList(listObjects);  
+   }  
+   ```  
   
-     합니다 `TrackSelection` 속성에서 사용 하 `GetService` 가져오려고는 `STrackSelection` 제공 하는 서비스는 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 인터페이스입니다. 합니다 `OnToolWindowCreated` 이벤트 처리기 및 `SelectList` 메서드는 함께 도구 창 창 개체 자체를 포함 하는 선택한 개체의 목록을 만듭니다. 합니다 `UpdateSelection` 메서드의 지시에 따라 합니다 **속성** 창에 도구 창의 공용 속성을 표시 합니다.  
+    합니다 `TrackSelection` 속성에서 사용 하 `GetService` 가져오려고는 `STrackSelection` 제공 하는 서비스는 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 인터페이스입니다. 합니다 `OnToolWindowCreated` 이벤트 처리기 및 `SelectList` 메서드는 함께 도구 창 창 개체 자체를 포함 하는 선택한 개체의 목록을 만듭니다. 합니다 `UpdateSelection` 메서드의 지시에 따라 합니다 **속성** 창에 도구 창의 공용 속성을 표시 합니다.  
   
-6.  프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 표시 됩니다.  
+6. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 표시 됩니다.  
   
-7.  경우는 **속성** 창이 표시 되지 않으면, 키를 눌러 엽니다 **F4**합니다.  
+7. 경우는 **속성** 창이 표시 되지 않으면, 키를 눌러 엽니다 **F4**합니다.  
   
-8.  엽니다는 **MyToolWindow** 창입니다. 찾을 수 있습니다 **뷰** > **기타 Windows**합니다.  
+8. 엽니다는 **MyToolWindow** 창입니다. 찾을 수 있습니다 **뷰** > **기타 Windows**합니다.  
   
-     창이 열리고에서 창의 공용 속성에 표시 된 **속성** 창입니다.  
+    창이 열리고에서 창의 공용 속성에 표시 된 **속성** 창입니다.  
   
 9. 변경 합니다 **캡션** 속성에는 **속성** 창을 **내 개체 속성**합니다.  
   

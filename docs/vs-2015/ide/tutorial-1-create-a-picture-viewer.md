@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884968"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>자습서 1: 사진 뷰어 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 자습서에서는 파일에서 그림을 로드하여 창에 표시하는 프로그램을 빌드합니다. 또한 단추와 그림 상자 같은 컨트롤을 폼으로 끌어서 놓고, 이러한 컨트롤의 속성을 설정하고, 컨테이너를 사용하여 폼의 크기를 자연스럽게 조정하는 방법에 대해 배우고 코드 작성을 시작합니다. 여기에서는 다음과 같은 작업을 수행하는 방법에 대해 배우게 됩니다.  
   
--   새 프로젝트를 만듭니다.  
+- 새 프로젝트를 만듭니다.  
   
--   응용 프로그램을 테스트(디버깅)합니다.  
+- 응용 프로그램을 테스트(디버깅)합니다.  
   
--   확인란과 단추 같은 기본 컨트롤을 폼에 추가합니다.  
+- 확인란과 단추 같은 기본 컨트롤을 폼에 추가합니다.  
   
--   레이아웃을 사용하여 폼에 컨트롤을 배치합니다.  
+- 레이아웃을 사용하여 폼에 컨트롤을 배치합니다.  
   
--   폼에 **파일 열기** 및 **색** 대화 상자를 추가합니다.  
+- 폼에 **파일 열기** 및 **색** 대화 상자를 추가합니다.  
   
--   IntelliSense 및 코드 조각을 사용하여 코드를 작성합니다.  
+- IntelliSense 및 코드 조각을 사용하여 코드를 작성합니다.  
   
--   이벤트 처리기 메서드를 작성합니다.  
+- 이벤트 처리기 메서드를 작성합니다.  
   
- 자습서 실행이 끝나면 프로그램이 다음 그림과 같이 만들어집니다.  
+  자습서 실행이 끝나면 프로그램이 다음 그림과 같이 만들어집니다.  
   
- ![이 자습서에서 만드는 사진](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-이 자습서에서 만드는 사진  
+  ![이 자습서에서 만드는 사진](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  이 자습서에서 만드는 사진  
   
- 샘플의 전체 버전을 다운로드하려면 [전체 사진 뷰어 자습서 샘플](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)을 참조하세요.  
+  샘플의 전체 버전을 다운로드하려면 [전체 사진 뷰어 자습서 샘플](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)을 참조하세요.  
   
- ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")이 항목의 비디오 버전을 보려면 [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207)(방법: Visual Basic에서 사진 뷰어 만들기) 또는 [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198)(방법: C#에서 사진 뷰어 만들기)를 참조하세요.  
+  ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")이 항목의 비디오 버전을 보려면 [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207)(방법: Visual Basic에서 사진 뷰어 만들기) 또는 [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198)(방법: C#에서 사진 뷰어 만들기)를 참조하세요.  
   
 > [!NOTE]
 >  이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다. 이 자습서에는 Visual C#과 Visual Basic이 둘 다 설명되어 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.  

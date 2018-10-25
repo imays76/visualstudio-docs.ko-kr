@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5877bcf4501125968e2fb14f56c41c1ccbc9e561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885137"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비: Windows Forms 응용 프로그램
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,23 +56,23 @@ Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>C#, F# 또는 Visual Basic Windows Forms 응용 프로그램을 디버깅하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 프로젝트를 엽니다.  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 프로젝트를 엽니다.  
   
-2.  필요한 중단점을 만듭니다.  
+2. 필요한 중단점을 만듭니다.  
   
-     Windows Forms 응용 프로그램은 이벤트 구동 응용 프로그램이므로 중단점은 이벤트 처리기 코드에 배치되거나 이벤트 처리기 코드에서 호출하는 메서드에 배치됩니다. 중단점이 배치되는 일반적인 이벤트는 다음과 같습니다.  
+    Windows Forms 응용 프로그램은 이벤트 구동 응용 프로그램이므로 중단점은 이벤트 처리기 코드에 배치되거나 이벤트 처리기 코드에서 호출하는 메서드에 배치됩니다. 중단점이 배치되는 일반적인 이벤트는 다음과 같습니다.  
   
-    1.  Click, Enter 같이 컨트롤에 연결된 이벤트  
+   1. Click, Enter 같이 컨트롤에 연결된 이벤트  
   
-    2.  Load, Activated 같이 응용 프로그램 시작 및 종료에 연결된 이벤트  
+   2. Load, Activated 같이 응용 프로그램 시작 및 종료에 연결된 이벤트  
   
-    3.  포커스 및 유효성 검사 이벤트  
+   3. 포커스 및 유효성 검사 이벤트  
   
-     자세한 내용은 [Windows Forms에서 이벤트 처리기 만들기](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)를 참조하세요.  
+      자세한 내용은 [Windows Forms에서 이벤트 처리기 만들기](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)를 참조하세요.  
   
-3.  에 **디버그** 메뉴에서 클릭 **시작**합니다.  
+3. 에 **디버그** 메뉴에서 클릭 **시작**합니다.  
   
-4.  에 설명 된 기술을 사용 하 여 디버깅할 [디버거 기본 사항](../debugger/debugger-basics.md)합니다.  
+4. 에 설명 된 기술을 사용 하 여 디버깅할 [디버거 기본 사항](../debugger/debugger-basics.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) (관리 코드 디버그)  

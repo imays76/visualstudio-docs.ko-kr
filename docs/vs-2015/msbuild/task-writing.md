@@ -18,12 +18,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914712"
 ---
 # <a name="task-writing"></a>작업 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49254899"
   
  작업을 구현할 때 다음 두 가지 방법을 사용할 수 있습니다.  
   
--   <xref:Microsoft.Build.Framework.ITask> 인터페이스를 직접 구현합니다.  
+- <xref:Microsoft.Build.Framework.ITask> 인터페이스를 직접 구현합니다.  
   
--   도우미 클래스 <xref:Microsoft.Build.Utilities.Task>에서 클래스를 파생합니다. 이 클래스는 Microsoft.Build.Utilities.dll 어셈블리에서 정의됩니다. 작업은 ITask를 구현하고 일부 ITask 멤버의 기본 구현을 제공합니다. 또한 로깅이 쉽습니다.  
+- 도우미 클래스 <xref:Microsoft.Build.Utilities.Task>에서 클래스를 파생합니다. 이 클래스는 Microsoft.Build.Utilities.dll 어셈블리에서 정의됩니다. 작업은 ITask를 구현하고 일부 ITask 멤버의 기본 구현을 제공합니다. 또한 로깅이 쉽습니다.  
   
- 두 경우 모두 작업이 실행될 때 호출되는 방법인 `Execute`라는 메서드를 클래스에 추가해야 합니다. 이 메서드는 매개 변수를 사용하지 않으며 `Boolean` 값을 반환합니다. 작업이 성공하는 경우 `true`, 실패하는 경우 `false`를 반환합니다. 다음 예제는 아무 작업도 수행하지 않고 `true`를 반환하는 작업을 보여 줍니다.  
+  두 경우 모두 작업이 실행될 때 호출되는 방법인 `Execute`라는 메서드를 클래스에 추가해야 합니다. 이 메서드는 매개 변수를 사용하지 않으며 `Boolean` 값을 반환합니다. 작업이 성공하는 경우 `true`, 실패하는 경우 `false`를 반환합니다. 다음 예제는 아무 작업도 수행하지 않고 `true`를 반환하는 작업을 보여 줍니다.  
   
 ```  
 using System;  

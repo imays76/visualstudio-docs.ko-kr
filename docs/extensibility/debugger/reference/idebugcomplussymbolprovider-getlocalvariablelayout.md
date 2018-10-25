@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1675fe871849247d2c9f9da2bda3c7445356aaea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a691030ca2113acd0800ee11ca125884a7f4da8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916922"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
-지역 변수는 메서드 집합에 대 한 레이아웃을 검색합니다.  
+레이아웃의 지역 변수는 메서드 집합을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -54,19 +54,19 @@ int GetLocalVariablelayout(
  [in] 모듈의 고유 식별자입니다.  
   
  `cMethods`  
- [in] 토큰 방법의 수는 `rgMethodTokens` 배열입니다.  
+ [in] 메서드의 수에 토큰을 `rgMethodTokens` 배열입니다.  
   
  `rgMethodTokens`  
  [in] 배열 메서드 토큰입니다.  
   
  `pStreamLayout`  
- [out] 변수 레이아웃을 포함 하는 텍스트 스트림.  
+ [out] 변수 레이아웃이 들어 있는 텍스트 스트림.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 공개 하는 개체는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  

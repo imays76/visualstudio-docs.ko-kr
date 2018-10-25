@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0005dd52c9c70edf41c9fc32c51e555748c78bfc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878013"
 ---
 # <a name="word-object-model-overview"></a>Word 개체 모델 개요
   Visual Studio에서 Word 솔루션을 개발하는 경우 Word 개체 모델을 조작합니다. 이 개체 모델은 Word용 주 interop 어셈블리에 제공되고 <xref:Microsoft.Office.Interop.Word> 네임스페이스에서 제공되는 클래스 및 인터페이스로 구성됩니다.  
@@ -53,17 +53,17 @@ ms.locfileid: "35258456"
   
  다음 섹션에서는 최상위 개체 및 최상위 개체가 서로 상호 작용하는 방식을 간략하게 설명합니다. 이러한 개체에는 다음 다섯 가지가 있습니다.  
   
--   Application 개체  
+- Application 개체  
   
--   Document 개체  
+- Document 개체  
   
--   Selection 개체  
+- Selection 개체  
   
--   Range 개체  
+- Range 개체  
   
--   Bookmark 개체  
+- Bookmark 개체  
   
- Word 개체 모델 외에도 Visual Studio의 Office 프로젝트는 Word 개체 모델에서 일부 개체를 확장하는 *호스트 항목* 및 *호스트 컨트롤* 을 제공합니다. 호스트 항목 및 호스트 컨트롤은 확장되는 Word 개체처럼 동작하지만 데이터 바인딩 기능과 같은 추가 기능 및 추가 이벤트도 제공합니다. 자세한 내용은 [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md) 하 고 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
+  Word 개체 모델 외에도 Visual Studio의 Office 프로젝트는 Word 개체 모델에서 일부 개체를 확장하는 *호스트 항목* 및 *호스트 컨트롤* 을 제공합니다. 호스트 항목 및 호스트 컨트롤은 확장되는 Word 개체처럼 동작하지만 데이터 바인딩 기능과 같은 추가 기능 및 추가 이벤트도 제공합니다. 자세한 내용은 [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md) 하 고 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
   
 ### <a name="application-object"></a>Application 개체  
  <xref:Microsoft.Office.Interop.Word.Application> 개체는 Word 응용 프로그램을 나타내며 다른 모든 개체의 부모입니다. 멤버는 일반적으로 전체 Word에 적용됩니다. 속성 및 메서드를 사용하여 Word 환경을 제어할 수 있습니다.  
@@ -90,17 +90,17 @@ ms.locfileid: "35258456"
 ### <a name="range-object"></a>Range 개체  
  <xref:Microsoft.Office.Interop.Word.Range> 개체는 문서에서 인접한 영역을 나타내며 시작 문자 위치와 끝 문자 위치로 정의됩니다. 단일 <xref:Microsoft.Office.Interop.Word.Range> 개체로 제한되지 않습니다. 같은 문서에서 여러 <xref:Microsoft.Office.Interop.Word.Range> 개체를 정의할 수 있습니다. <xref:Microsoft.Office.Interop.Word.Range> 개체에는 다음과 같은 특징이 있습니다.  
   
--   삽입 지점만으로 구성되거나 텍스트 범위 또는 전체 문서로 구성될 수 있습니다.  
+- 삽입 지점만으로 구성되거나 텍스트 범위 또는 전체 문서로 구성될 수 있습니다.  
   
--   공백, 탭 문자 및 단락 표시와 같은 인쇄할 수 없는 문자가 포함됩니다.  
+- 공백, 탭 문자 및 단락 표시와 같은 인쇄할 수 없는 문자가 포함됩니다.  
   
--   현재 선택 영역이 나타내는 영역이거나 현재 선택 영역과 다른 영역을 나타낼 수 있습니다.  
+- 현재 선택 영역이 나타내는 영역이거나 현재 선택 영역과 다른 영역을 나타낼 수 있습니다.  
   
--   항상 표시되는 선택 영역과 달리 문서에 표시되지 않습니다.  
+- 항상 표시되는 선택 영역과 달리 문서에 표시되지 않습니다.  
   
--   문서와 함께 저장되지 않고 코드가 실행되는 동안에만 존재합니다.  
+- 문서와 함께 저장되지 않고 코드가 실행되는 동안에만 존재합니다.  
   
- 범위의 끝에 텍스트를 삽입하면 Word에서 자동으로 범위를 확장하여 삽입된 텍스트를 포함합니다.  
+  범위의 끝에 텍스트를 삽입하면 Word에서 자동으로 범위를 확장하여 삽입된 텍스트를 포함합니다.  
   
 ### <a name="content-control-objects"></a>콘텐츠 컨트롤 개체  
  <xref:Microsoft.Office.Interop.Word.ContentControl> 은 Word 문서에서 텍스트 및 다른 콘텐츠 형식의 입력 및 프레젠테이션을 제어할 수 있는 방법을 제공합니다. <xref:Microsoft.Office.Interop.Word.ContentControl> 은 서식 있는 텍스트 컨트롤, 날짜 선택, 콤보 상자 등 Word 문서에서 사용하도록 최적화된 여러 형식의 UI를 표시할 수 있습니다. <xref:Microsoft.Office.Interop.Word.ContentControl> 을 사용하여 사용자가 문서 또는 템플릿의 섹션을 편집하지 못하도록 할 수도 있습니다.  
@@ -110,13 +110,13 @@ ms.locfileid: "35258456"
 ### <a name="bookmark-object"></a>Bookmark 개체  
  <xref:Microsoft.Office.Interop.Word.Bookmark> 개체는 시작 위치와 끝 위치를 사용하여 문서에서 인접한 영역을 나타냅니다. 책갈피를 사용하여 문서의 한 위치를 표시하거나 문서의 텍스트에 대한 컨테이너로 사용할 수 있습니다. <xref:Microsoft.Office.Interop.Word.Bookmark> 개체는 삽입 지점으로 구성되거나 전체 문서만큼 클 수 있습니다. <xref:Microsoft.Office.Interop.Word.Bookmark> 에는 <xref:Microsoft.Office.Interop.Word.Range> 개체와 차별화하는 다음과 같은 특징이 있습니다.  
   
--   디자인 타임에 책갈피에 이름을 지정할 수 있습니다.  
+- 디자인 타임에 책갈피에 이름을 지정할 수 있습니다.  
   
--   <xref:Microsoft.Office.Interop.Word.Bookmark> 개체는 문서와 함께 저장되므로 코드 실행이 중지되거나 문서를 닫을 때 삭제되지 않습니다.  
+- <xref:Microsoft.Office.Interop.Word.Bookmark> 개체는 문서와 함께 저장되므로 코드 실행이 중지되거나 문서를 닫을 때 삭제되지 않습니다.  
   
--   책갈피를 숨기 거 나 설정 하 여 표시할 수는 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 의 속성을 <xref:Microsoft.Office.Interop.Word.View> 개체를 **false** 또는 **true**합니다.  
+- 책갈피를 숨기 거 나 설정 하 여 표시할 수는 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 의 속성을 <xref:Microsoft.Office.Interop.Word.View> 개체를 **false** 또는 **true**합니다.  
   
- Visual Studio는 <xref:Microsoft.Office.Interop.Word.Bookmark> 호스트 컨트롤을 제공하여 <xref:Microsoft.Office.Tools.Word.Bookmark> 개체를 확장합니다. <xref:Microsoft.Office.Tools.Word.Bookmark> 호스트 컨트롤은 네이티브 <xref:Microsoft.Office.Interop.Word.Bookmark>처럼 동작하지만 추가 이벤트 및 데이터 바인딩 기능이 있습니다. Windows Form의 텍스트 상자 컨트롤에 데이터를 바인딩하는 것과 동일한 방식으로 문서의 책갈피 컨트롤에 데이터를 바인딩할 수 있습니다. 자세한 내용은 [Bookmark 컨트롤](../vsto/bookmark-control.md)합니다.  
+  Visual Studio는 <xref:Microsoft.Office.Interop.Word.Bookmark> 호스트 컨트롤을 제공하여 <xref:Microsoft.Office.Tools.Word.Bookmark> 개체를 확장합니다. <xref:Microsoft.Office.Tools.Word.Bookmark> 호스트 컨트롤은 네이티브 <xref:Microsoft.Office.Interop.Word.Bookmark>처럼 동작하지만 추가 이벤트 및 데이터 바인딩 기능이 있습니다. Windows Form의 텍스트 상자 컨트롤에 데이터를 바인딩하는 것과 동일한 방식으로 문서의 책갈피 컨트롤에 데이터를 바인딩할 수 있습니다. 자세한 내용은 [Bookmark 컨트롤](../vsto/bookmark-control.md)합니다.  
   
 ##  <a name="WordOMDocumentation"></a> Word 개체 모델 설명서 사용  
  Word 개체 모델에 대한 자세한 내용은 Word PIA(주 interop 어셈블리) 참조 및 VBA(Visual Basic for Applications) 개체 모델 참조를 참조할 수 있습니다.  

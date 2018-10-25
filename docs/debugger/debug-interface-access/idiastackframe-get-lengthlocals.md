@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe821ea0cc0e2258377218046464441c5b9cd7b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c14046edc62c91b47ab02ec5e78905fd07c5c55b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903012"
 ---
 # <a name="idiastackframegetlengthlocals"></a>IDiaStackFrame::get_lengthLocals
-지역 변수를 스택에 푸시한의 바이트 수를 검색 합니다.  
+스택에 있는 지역 변수의 바이트 수를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   

@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0adab4da28cffa3f56cb68ef4b2fd703b1d3c71f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862975"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>개념적 모델 (WCF Data Services)를 사용 하 여 작동 합니다.
 
@@ -27,10 +27,11 @@ ms.locfileid: "37116837"
 
  WCF Data Services 응용 프로그램과 함께 개념적 모델을 사용할 수 있습니다. 다음 항목에는 개념적 모델을 통해 데이터를 쿼리 하는 방법을 보여 줍니다.
 
-|항목|설명|
-|-----------|-----------------|
-|[방법: 데이터 서비스 쿼리 실행](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|데이터 서비스를 쿼리 하는 방법을 보여 줍니다는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 응용 프로그램입니다.|
-|[방법: 프로젝트 쿼리 결과](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|데이터 서비스 쿼리를 통해 반환 되는 데이터 양을 줄이는 방법을 보여 줍니다.|
+
+| 항목 | 설명 |
+| - | - |
+| [방법: 데이터 서비스 쿼리 실행](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | 데이터 서비스를 쿼리 하는 방법을 보여 줍니다는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 응용 프로그램입니다. |
+| [방법: 프로젝트 쿼리 결과](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | 데이터 서비스 쿼리를 통해 반환 되는 데이터 양을 줄이는 방법을 보여 줍니다. |
 
  개념적 모델을 사용 하면 어떤 유형의 데이터 도메인을 일치 하는 언어에서 유효 정의할 수 있습니다. 모델에서 올바른 데이터를 정의할 수 있습니다 또는 엔터티 또는 데이터 서비스에서 수행 하는 작업에 유효성 검사를 추가할 수 있습니다.
 

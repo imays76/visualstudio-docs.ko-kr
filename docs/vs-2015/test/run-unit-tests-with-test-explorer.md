@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846839"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ ms.locfileid: "49218350"
 ###  <a name="BKMK_Run_tests"></a> 테스트 실행  
  솔루션의 모든 테스트, 그룹의 모든 테스트 또는 선택한 테스트 집합을 실행할 수 있습니다. 다음 작업 중 하나를 수행합니다.  
   
--   솔루션의 모든 테스트를 실행하려면 **모두 실행**을 선택합니다.  
+- 솔루션의 모든 테스트를 실행하려면 **모두 실행**을 선택합니다.  
   
--   기본 그룹의 모든 테스트를 실행하려면 **실행...** 을 선택한 다음 메뉴에서 그룹을 선택합니다.  
+- 기본 그룹의 모든 테스트를 실행하려면 **실행...** 을 선택한 다음 메뉴에서 그룹을 선택합니다.  
   
--   실행할 개별 테스트를 선택하고 선택한 테스트에 대한 상황에 맞는 메뉴를 연 다음 **선택한 테스트 실행**을 선택합니다.  
+- 실행할 개별 테스트를 선택하고 선택한 테스트에 대한 상황에 맞는 메뉴를 연 다음 **선택한 테스트 실행**을 선택합니다.  
   
--   개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.  
+- 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.  
   
- 테스트가 실행되면 테스트 탐색기 창 위쪽의 통과/실패 표시줄에 애니메이션 효과가 적용됩니다. 테스트 실행이 끝날 때 통과/실패 표시줄은 모든 테스트가 통과했으면 녹색이 되고 실패한 테스트가 있으면 빨간색이 됩니다.  
+  테스트가 실행되면 테스트 탐색기 창 위쪽의 통과/실패 표시줄에 애니메이션 효과가 적용됩니다. 테스트 실행이 끝날 때 통과/실패 표시줄은 모든 테스트가 통과했으면 녹색이 되고 실패한 테스트가 있으면 빨간색이 됩니다.  
   
- ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
+  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> 각 빌드 후 테스트 실행  
   
@@ -102,19 +102,19 @@ ms.locfileid: "49218350"
   
  테스트 정보 창에는 다음 정보가 표시됩니다.  
   
--   테스트 메서드의 소스 파일 이름 및 줄 번호  
+- 테스트 메서드의 소스 파일 이름 및 줄 번호  
   
--   테스트의 상태입니다.  
+- 테스트의 상태입니다.  
   
--   테스트 메서드가 실행되는 데 걸린 시간  
+- 테스트 메서드가 실행되는 데 걸린 시간  
   
- 테스트가 실패할 경우 세부 정보 창에는 다음과 같은 정보도 표시됩니다.  
+  테스트가 실패할 경우 세부 정보 창에는 다음과 같은 정보도 표시됩니다.  
   
--   단위 테스트 프레임워크에서 테스트에 대해 반환된 메시지  
+- 단위 테스트 프레임워크에서 테스트에 대해 반환된 메시지  
   
--   테스트 실패 시의 스택 추적  
+- 테스트 실패 시의 스택 추적  
   
- ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
+  ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> 테스트 메서드의 소스 코드 보기  
  Visual Studio 편집기에서 테스트 메서드의 소스 코드를 표시하려면 테스트를 선택한 다음 상황에 맞는 메뉴에서 **테스트 열기** (키보드: F12)를 선택합니다.  
@@ -197,13 +197,13 @@ TEST_METHOD(Method1)
   
  다른 기준으로 필터링하려면  
   
-1.  검색 상자 오른쪽에 있는 드롭다운 목록을 엽니다.  
+1. 검색 상자 오른쪽에 있는 드롭다운 목록을 엽니다.  
   
-2.  새 조건을 선택합니다.  
+2. 새 조건을 선택합니다.  
   
-3.  필터 값을 따옴표 사이에 입력합니다.  
+3. 필터 값을 따옴표 사이에 입력합니다.  
   
- ![테스트 탐색기에서 테스트 필터링](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![테스트 탐색기에서 테스트 필터링](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  검색은 대/소문자를 구분하지 않으며 지정된 문자열이 조건 값의 어느 부분에라도 일치하는지 확인합니다.  
@@ -255,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a> 단위 테스트 디버그  
  테스트 탐색기를 사용하여 테스트에 대한 디버깅 세션을 시작할 수 있습니다. Visual Studio 디버거에서 코드를 단계별로 실행하면 단위 테스트 및 테스트 중인 프로젝트 간을 앞뒤로 매끄럽게 이동할 수 있습니다. 디버깅을 시작하려면  
   
-1.  Visual Studio 편집기에서 디버그하려는 하나 이상의 테스트 메서드에서 중단점을 설정합니다.  
+1. Visual Studio 편집기에서 디버그하려는 하나 이상의 테스트 메서드에서 중단점을 설정합니다.  
   
-    > [!NOTE]
-    >  테스트 메서드는 순서에 관계 없이 실행할 수 있기 때문에 디버그하려는 모든 테스트 메서드에 중단점을 설정합니다.  
+   > [!NOTE]
+   >  테스트 메서드는 순서에 관계 없이 실행할 수 있기 때문에 디버그하려는 모든 테스트 메서드에 중단점을 설정합니다.  
   
-2.  테스트 탐색기에서 테스트 메서드를 선택한 다음 상황에 맞는 메뉴에서 **선택한 테스트 디버그** 를 선택합니다.  
+2. 테스트 탐색기에서 테스트 메서드를 선택한 다음 상황에 맞는 메뉴에서 **선택한 테스트 디버그** 를 선택합니다.  
   
- 디버거에 대한 자세한 내용은 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)항목을 참조하세요.  
+   디버거에 대한 자세한 내용은 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)항목을 참조하세요.  
   
- ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
+   ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> 테스트 메서드 성능 문제 진단  
  테스트 메서드에 너무 많은 시간이 소요되는 이유를 진단하려면 테스트 탐색기에서 메서드를 선택하고 상황에 맞는 메뉴에서 프로필을 선택합니다. [성능 탐색기](../profiling/performance-explorer.md)를 참조하세요.  
@@ -278,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  솔루션에서 테스트 메서드에 대한 코드 검사를 실행하려면  
   
-1.  Visual Studio 메뉴에서 **테스트** 를 선택한 다음 **코드 검사 분석**을 선택합니다.  
+1. Visual Studio 메뉴에서 **테스트** 를 선택한 다음 **코드 검사 분석**을 선택합니다.  
   
-2.  하위 메뉴에서 다음 명령 중 하나를 선택합니다.  
+2. 하위 메뉴에서 다음 명령 중 하나를 선택합니다.  
   
-    -   **선택한 테스트** 는 테스트 탐색기에서 선택한 테스트 메서드를 실행합니다.  
+   -   **선택한 테스트** 는 테스트 탐색기에서 선택한 테스트 메서드를 실행합니다.  
   
-    -   **모든 테스트** 는 솔루션의 모든 테스트 메서드를 실행합니다.  
+   -   **모든 테스트** 는 솔루션의 모든 테스트 메서드를 실행합니다.  
   
- 코드 검사 결과 창에는 실행된 제품 코드 블록의 백분율이 줄, 함수, 클래스, 네임스페이스 및 모듈별로 표시됩니다.  
+   코드 검사 결과 창에는 실행된 제품 코드 블록의 백분율이 줄, 함수, 클래스, 네임스페이스 및 모듈별로 표시됩니다.  
   
- 자세한 내용은 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.  
+   자세한 내용은 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.  
   
- ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
+   ![맨 위로 이동](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> 외부 리소스  
   

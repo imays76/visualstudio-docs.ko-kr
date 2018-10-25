@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870187"
 ---
 # <a name="command-window"></a>명령 창
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  이 예제에서,  
   
--   `Edit.ReplaceInFiles`는 명령입니다.  
+- `Edit.ReplaceInFiles`는 명령입니다.  
   
--   `/case` 및 `/pattern:regex`는 스위치입니다(앞에 슬래시[/] 문자가 추가됨).  
+- `/case` 및 `/pattern:regex`는 스위치입니다(앞에 슬래시[/] 문자가 추가됨).  
   
--   `regex`는 `/pattern` 스위치의 값이고, `/case` 스위치에는 값이 없습니다.  
+- `regex`는 `/pattern` 스위치의 값이고, `/case` 스위치에는 값이 없습니다.  
   
--   `var[1-3]+` 및 `oldpar`은 매개 변수입니다.  
+- `var[1-3]+` 및 `oldpar`은 매개 변수입니다.  
   
-    > [!NOTE]
-    >  공백이 포함된 명령, 매개 변수, 스위치 또는 값에는 양쪽에 큰따옴표가 있어야 합니다.  
+  > [!NOTE]
+  >  공백이 포함된 명령, 매개 변수, 스위치 또는 값에는 양쪽에 큰따옴표가 있어야 합니다.  
   
- 스위치 및 매개 변수의 위치는 명령줄에서 자유롭게 서로 바꿀 수 있습니다. 단, 스위치와 매개 변수가 특정 순서로 사용되어야 하는 [셸](../../ide/reference/shell-command.md) 명령은 예외입니다.  
+  스위치 및 매개 변수의 위치는 명령줄에서 자유롭게 서로 바꿀 수 있습니다. 단, 스위치와 매개 변수가 특정 순서로 사용되어야 하는 [셸](../../ide/reference/shell-command.md) 명령은 예외입니다.  
   
- 명령이 지원하는 거의 모든 스위치에는 짧은(단일 문자) 형식 및 긴 형식이 있습니다. 여러 개의 짧은 형식 스위치를 그룹으로 결합할 수 있습니다. 예를 들어 `/p /g /m`은 대신 `/pgm`으로 표현될 수 있습니다.  
+  명령이 지원하는 거의 모든 스위치에는 짧은(단일 문자) 형식 및 긴 형식이 있습니다. 여러 개의 짧은 형식 스위치를 그룹으로 결합할 수 있습니다. 예를 들어 `/p /g /m`은 대신 `/pgm`으로 표현될 수 있습니다.  
   
- 짧은 형식 스위치를 그룹으로 결합하고 값을 지정하면 해당 값이 모든 스위치에 적용됩니다. 예를 들어 `/pgm:123`은 `/p:123 /g:123 /m:123`과 같습니다. 그룹에 있는 스위치가 값을 허용하지 않으면 오류가 발생합니다.  
+  짧은 형식 스위치를 그룹으로 결합하고 값을 지정하면 해당 값이 모든 스위치에 적용됩니다. 예를 들어 `/pgm:123`은 `/p:123 /g:123 /m:123`과 같습니다. 그룹에 있는 스위치가 값을 허용하지 않으면 오류가 발생합니다.  
   
 ## <a name="escape-characters"></a>이스케이프 문자  
  명령줄의 캐럿(^) 문자는 캐럿 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예를 들면 다음과 같습니다.  

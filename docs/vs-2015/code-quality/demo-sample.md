@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1332c335387342d381c1e0030c3c66003c3528b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bcdb1e026808071167b23b829597a4d28775c02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880665"
 ---
 # <a name="demo-sample"></a>데모 샘플
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 절차의 예제를 만드는 방법을 보여 줍니다. [연습: C/c + + 코드 오류에 대 한 분석](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)합니다. 프로시저를 만듭니다.  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CppDemo 라는 솔루션입니다.  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CppDemo 라는 솔루션입니다.  
   
--   정적 라이브러리 프로젝트 이름이 CodeDefects입니다.  
+- 정적 라이브러리 프로젝트 이름이 CodeDefects입니다.  
   
--   정적 라이브러리 프로젝트 이름이 주석입니다.  
+- 정적 라이브러리 프로젝트 이름이 주석입니다.  
   
- 또한 절차는 정적 라이브러리에 대 한 헤더 및.cpp 파일에 대 한 코드를 제공합니다.  
+  또한 절차는 정적 라이브러리에 대 한 헤더 및.cpp 파일에 대 한 코드를 제공합니다.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo 솔루션 및 CodeDefects 프로젝트 만들기  
   

@@ -27,12 +27,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891130"
 ---
 # <a name="validate-data-in-datasets"></a>데이터 집합의 데이터 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,21 +47,21 @@ ms.locfileid: "49279021"
 ## <a name="validate-data"></a>데이터 유효성 검사  
  다음과 같은 방법으로 데이터 집합 내에서 유효성 검사를 수행할 수 있습니다.  
   
--   변경 하는 동안 개별 데이터 열에 값을 확인할 수 있는 사용자 고유의 응용 프로그램별 유효성 검사를 만듭니다.  자세한 내용은 [방법: 열 변경 하는 동안 데이터의 유효성을 검사](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)합니다.  
+- 변경 하는 동안 개별 데이터 열에 값을 확인할 수 있는 사용자 고유의 응용 프로그램별 유효성 검사를 만듭니다.  자세한 내용은 [방법: 열 변경 하는 동안 데이터의 유효성을 검사](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)합니다.  
   
--   데이터 값은 전체 데이터를 확인할 수 있는 응용 프로그램별 유효성 검사를 직접 만들어 행 변경 됩니다. 자세한 내용은 [방법: 행 변경 중 데이터의 유효성을 검사](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)합니다.  
+- 데이터 값은 전체 데이터를 확인할 수 있는 응용 프로그램별 유효성 검사를 직접 만들어 행 변경 됩니다. 자세한 내용은 [방법: 행 변경 중 데이터의 유효성을 검사](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)합니다.  
   
--   데이터 집합의 실제 스키마 정의의 일부로 등 unique 제약 조건 키를 만듭니다. 스키마 정의에 유효성 검사를 통합 하는 방법에 대 한 자세한 내용은 참조 하세요. [고유 값 포함 DataColumn 제한](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)합니다.  
+- 데이터 집합의 실제 스키마 정의의 일부로 등 unique 제약 조건 키를 만듭니다. 스키마 정의에 유효성 검사를 통합 하는 방법에 대 한 자세한 내용은 참조 하세요. [고유 값 포함 DataColumn 제한](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)합니다.  
   
--   속성을 설정 하 여는 <xref:System.Data.DataColumn> 개체를 같은 <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, 및 <xref:System.Data.DataColumn.Unique%2A>합니다.  
+- 속성을 설정 하 여는 <xref:System.Data.DataColumn> 개체를 같은 <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, 및 <xref:System.Data.DataColumn.Unique%2A>합니다.  
   
- 여러 이벤트가 발생 된 <xref:System.Data.DataTable> 변경 레코드에서 발생 하는 경우 개체:  
+  여러 이벤트가 발생 된 <xref:System.Data.DataTable> 변경 레코드에서 발생 하는 경우 개체:  
   
--   합니다 <xref:System.Data.DataTable.ColumnChanging> 및 <xref:System.Data.DataTable.ColumnChanged> 도중 및 이후에 개별 열을 변경할 때마다 이벤트가 발생 합니다. <xref:System.Data.DataTable.ColumnChanging> 이벤트는 특정 열에서 변경의 유효성을 검사 하려는 경우에 유용 합니다. 제안된 된 변경에 대 한 정보는 이벤트를 사용 하 여 인수로 전달 됩니다. 자세한 내용은 [방법: 열 변경 하는 동안 데이터의 유효성을 검사](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)합니다.  
+- 합니다 <xref:System.Data.DataTable.ColumnChanging> 및 <xref:System.Data.DataTable.ColumnChanged> 도중 및 이후에 개별 열을 변경할 때마다 이벤트가 발생 합니다. <xref:System.Data.DataTable.ColumnChanging> 이벤트는 특정 열에서 변경의 유효성을 검사 하려는 경우에 유용 합니다. 제안된 된 변경에 대 한 정보는 이벤트를 사용 하 여 인수로 전달 됩니다. 자세한 내용은 [방법: 열 변경 하는 동안 데이터의 유효성을 검사](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)합니다.  
   
--   합니다 <xref:System.Data.DataTable.RowChanging> 및 <xref:System.Data.DataTable.RowChanged> 이벤트가 도중 및 이후에 모든 행에서 변경 합니다. <xref:System.Data.DataTable.RowChanging> 이벤트는 보다 일반적인 합니다. 변경 행에서 어딘가에 수행 되는 열 변경에 알 수 없는 나타냅니다. 자세한 내용은 [방법: 행 변경 중 데이터의 유효성을 검사](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)합니다.  
+- 합니다 <xref:System.Data.DataTable.RowChanging> 및 <xref:System.Data.DataTable.RowChanged> 이벤트가 도중 및 이후에 모든 행에서 변경 합니다. <xref:System.Data.DataTable.RowChanging> 이벤트는 보다 일반적인 합니다. 변경 행에서 어딘가에 수행 되는 열 변경에 알 수 없는 나타냅니다. 자세한 내용은 [방법: 행 변경 중 데이터의 유효성을 검사](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)합니다.  
   
- 기본적으로 각 열에 4 개의 이벤트가 발생 합니다. 첫 번째는 <xref:System.Data.DataTable.ColumnChanging> 및 <xref:System.Data.DataTable.ColumnChanged> 변경 되는 열에 대해서는 이벤트입니다. 다음은 <xref:System.Data.DataTable.RowChanging> 고 <xref:System.Data.DataTable.RowChanged> 이벤트입니다. 행에 여러 변경 사항이 되 고, 각 변경에 대 한 이벤트를 발생 합니다.  
+  기본적으로 각 열에 4 개의 이벤트가 발생 합니다. 첫 번째는 <xref:System.Data.DataTable.ColumnChanging> 및 <xref:System.Data.DataTable.ColumnChanged> 변경 되는 열에 대해서는 이벤트입니다. 다음은 <xref:System.Data.DataTable.RowChanging> 고 <xref:System.Data.DataTable.RowChanged> 이벤트입니다. 행에 여러 변경 사항이 되 고, 각 변경에 대 한 이벤트를 발생 합니다.  
   
 > [!NOTE]
 >  데이터 행의 <xref:System.Data.DataRow.BeginEdit%2A> 메서드를 해제 합니다 <xref:System.Data.DataTable.RowChanging> 및 <xref:System.Data.DataTable.RowChanged> 각 개별 열 변경 이벤트. 이 경우 이벤트까지 발생 하지 않습니다는 <xref:System.Data.DataRow.EndEdit%2A> 메서드는 호출 될 때 합니다 <xref:System.Data.DataTable.RowChanging> 및 <xref:System.Data.DataTable.RowChanged> 이벤트는 한 번만 발생 합니다. 자세한 내용은 [데이터 집합을 채우는 동안 제약 조건 해제](../data-tools/turn-off-constraints-while-filling-a-dataset.md)합니다.  
@@ -94,13 +94,13 @@ ms.locfileid: "49279021"
   
  데이터 열의 값이 변경에 응답 하 여 데이터를 확인할 수 있습니다는 <xref:System.Data.DataTable.ColumnChanging> 이벤트입니다. 이 이벤트는 이벤트 인수를 전달 발생 하면 (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) 현재 열에 대해 제안 되는 값이 들어 있는입니다. 내용에 따라 `e.ProposedValue`를 할 수 있습니다.  
   
--   아무 것도 수행 하 여 제안 된 값을 수락 합니다.  
+- 아무 것도 수행 하 여 제안 된 값을 수락 합니다.  
   
--   열이 오류를 설정 하 여 제안 된 값을 거부 (<xref:System.Data.DataRow.SetColumnError%2A>)에서 열 변경 이벤트 처리기 내에서.  
+- 열이 오류를 설정 하 여 제안 된 값을 거부 (<xref:System.Data.DataRow.SetColumnError%2A>)에서 열 변경 이벤트 처리기 내에서.  
   
--   필요에 따라 사용 하 여는 <xref:System.Windows.Forms.ErrorProvider> 컨트롤을 사용자에 게 오류 메시지를 표시 합니다. 자세한 내용은 [ErrorProvider 구성 요소](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6)합니다.  
+- 필요에 따라 사용 하 여는 <xref:System.Windows.Forms.ErrorProvider> 컨트롤을 사용자에 게 오류 메시지를 표시 합니다. 자세한 내용은 [ErrorProvider 구성 요소](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6)합니다.  
   
- 하는 동안 유효성 검사를 수행할 수도 있습니다는 <xref:System.Data.DataTable.RowChanging> 이벤트입니다. 자세한 내용은 [방법: 행 변경 중 데이터의 유효성을 검사](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)합니다.  
+  하는 동안 유효성 검사를 수행할 수도 있습니다는 <xref:System.Data.DataTable.RowChanging> 이벤트입니다. 자세한 내용은 [방법: 행 변경 중 데이터의 유효성을 검사](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)합니다.  
   
 ## <a name="validate-data-during-row-changes"></a>행 변경 중 데이터 유효성 검사  
  응용 프로그램의 요구 사항을 충족 하는 데이터의 유효성을 검사 하려는 각 열에 포함 되어 있는지 확인 하는 코드를 작성할 수 있습니다. 제안 된 값을 수용할 수 없으면 오류가 있음을 나타내도록 열을 설정 하 여이 작업을 수행 합니다. 다음 예제에서는 설정 열 오류 때는 `Quantity` 열이 0 보다 작거나. 행 변경 이벤트 처리기에는 다음 예제에서는 유사 합니다.  

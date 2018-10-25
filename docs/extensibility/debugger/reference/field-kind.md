@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a603310986f42141a04f38c7ce26db0d7326fe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df29c9bd876a437dbcf8d797f1dcc51fb05a296f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868198"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 에 포함 된 필드의 종류를 지정 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다.  
@@ -126,19 +126,19 @@ public enum enum_FIELD_KIND {
   
 ## <a name="members"></a>멤버  
  FIELD_KIND_TYPE  
- 필드 형식에만 임을 나타냅니다.  
+ 필드에만 형식 인지를 나타냅니다.  
   
  FIELD_KIND_SYMBOL  
- 필드 형식, 이름 및 기타 정보에 대 한 기호를 나타냅니다.  
+ 필드 형식, 이름 및 기타 정보를 사용 하 여 기호를 나타냅니다.  
   
  FIELD_TYPE_PRIMITIVE  
- 기본 데이터 형식을 필드 임을 나타냅니다.  
+ 필드는 기본 데이터 형식을 나타냅니다.  
   
  FIELD_TYPE_STRUCT  
  필드는 구조체 임을 나타냅니다.  
   
  FIELD_TYPE_CLASS  
- 필드는 클래스 임을 나타냅니다.  
+ 필드는 클래스를 나타냅니다.  
   
  FIELD_TYPE_INTERFACE  
  인터페이스 필드 임을 나타냅니다.  
@@ -147,13 +147,13 @@ public enum enum_FIELD_KIND {
  공용 구조체 필드 임을 나타냅니다.  
   
  FIELD_TYPE_ARRAY  
- 배열 필드 임을 나타냅니다.  
+ 필드는 배열 임을 나타냅니다.  
   
  FIELD_TYPE_METHOD  
- 메서드는 필드 임을 나타냅니다.  
+ 필드는 메서드를 나타냅니다.  
   
  FIELD_TYPE_BLOCK  
- 필드는 블록 임을 나타냅니다.  
+ 블록 필드 임을 나타냅니다.  
   
  FIELD_TYPE_POINTER  
  필드에 대 한 포인터 임을 나타냅니다.  
@@ -168,19 +168,19 @@ public enum enum_FIELD_KIND {
  필드는 typedef 임을 나타냅니다.  
   
  FIELD_TYPE_BITFIELD  
- 필드가 비트 필드 임을 나타냅니다.  
+ 필드는 비트 필드 임을 나타냅니다.  
   
  FIELD_TYPE_NAMESPACE  
- 필드는 네임 스페이스 임을 나타냅니다.  
+ 네임 스페이스 필드 임을 나타냅니다.  
   
  FIELD_TYPE_MODULE  
- 필드는 모듈을 나타냅니다.  
+ 필드는 모듈 임을 나타냅니다.  
   
  FIELD_TYPE_DYNAMIC  
  동적 필드 임을 나타냅니다.  
   
  FIELD_TYPE_PROP  
- 속성 필드 임을 나타냅니다.  
+ 필드 속성 임을 나타냅니다.  
   
  FIELD_TYPE_INNERCLASS  
  필드는 내부 클래스를 나타냅니다.  
@@ -192,22 +192,22 @@ public enum enum_FIELD_KIND {
  나중에 사용하기 위해 예약되어 있습니다.  
   
  FIELD_SYM_MEMBER  
- 필드 멤버 임을 나타냅니다.  
+ 멤버가 필드 임을 나타냅니다.  
   
  FIELD_SYM_LOCAL  
  로컬 필드 임을 나타냅니다.  
   
  FIELD_SYM_PARAMETER  
- 필드는 매개 변수를 나타냅니다.  
+ 매개 변수 필드 임을 나타냅니다.  
   
  FIELD_SYM_THIS  
- 필드에 "this"이 포인터 임을 나타냅니다.  
+ 필드 "this"이 포인터 임을 나타냅니다.  
   
  FIELD_SYM_GLOBAL  
  전역 필드 임을 나타냅니다.  
   
  FIELD_SYM_PROP_GETTER  
- 필드 속성을 검색을 나타냅니다.  
+ 필드 속성을 검색 합니다를 나타냅니다.  
   
  FIELD_SYM_PROP_SETTER  
  필드 속성을 설정 함을 나타냅니다.  
@@ -225,9 +225,9 @@ public enum enum_FIELD_KIND {
  기호 정보에 대 한 마스크를 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 호출에서 반환 되는 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 메서드.  
+ 호출에서 반환 된 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 메서드.  
   
- 필드의 종류에 따라 [QueryInterface](/cpp/atl/queryinterface) 에서 호출할 수는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스의 보다 구체적인 형태에 대 한 인터페이스입니다. 예를 들어 경우 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 반환 `FIELD_TYPE_METHOD`를 호출할 수 있습니다 `QueryInterface` I에`DebugField` 가져올 수는 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 인터페이스입니다.  
+ 필드의 종류에 따라 [QueryInterface](/cpp/atl/queryinterface) 에 대해 호출할 수는 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스의 구체적인 형식에 대 한 인터페이스입니다. 예를 들어 경우 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 반환 `FIELD_TYPE_METHOD`를 호출할 수 있습니다 `QueryInterface` 필자에`DebugField` 가져오려고 합니다 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 인터페이스입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  

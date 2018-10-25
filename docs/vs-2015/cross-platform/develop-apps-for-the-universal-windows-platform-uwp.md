@@ -14,12 +14,12 @@ caps.latest.revision: 50
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1235416a411935d811f3747fa5127cc395ef0f29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 682ae7d410f80d3ba5e960d485c144b2f7495141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909057"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)용 앱 개발
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,21 +44,21 @@ ms.locfileid: "49287094"
   
  필요한 소프트웨어 목록은 다음과 같습니다.  
   
--   [Windows 10](http://windows.microsoft.com/windows/downloads)  
+- [Windows 10](http://windows.microsoft.com/windows/downloads)  
   
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). 유니버설 Windows 앱 개발 도구가 선택적 기능 목록에서 선택되었는지 확인합니다. 이러한 도구가 없으면 유니버설 앱을 만들 수 없습니다.  
+- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). 유니버설 Windows 앱 개발 도구가 선택적 기능 목록에서 선택되었는지 확인합니다. 이러한 도구가 없으면 유니버설 앱을 만들 수 없습니다.  
   
- 이 소프트웨어를 설치한 후에 개발에 대해 [Windows 10 장치를 사용하도록 설정](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) (영문)해야 합니다. 각 Windows 10 장치에 대한 개발자 라이선스는 더 이상 필요하지 않습니다.  
+  이 소프트웨어를 설치한 후에 개발에 대해 [Windows 10 장치를 사용하도록 설정](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) (영문)해야 합니다. 각 Windows 10 장치에 대한 개발자 라이선스는 더 이상 필요하지 않습니다.  
   
- **Windows 8.1 및 Windows 7 지원**  
+  **Windows 8.1 및 Windows 7 지원**  
   
- Windows 10 이외의 플랫폼에서 Visual Studio 2015를 사용하여 유니버설 Windows 앱을 개발하기로 선택한 경우 다음과 같은 제한 사항이 적용됩니다.  
+  Windows 10 이외의 플랫폼에서 Visual Studio 2015를 사용하여 유니버설 Windows 앱을 개발하기로 선택한 경우 다음과 같은 제한 사항이 적용됩니다.  
   
--   Windows 8.1: 앱을 로컬로 실행할 수 없습니다(원격 Windows 10 장치에서만). Visual Studio에서 에뮬레이터를 사용할 수 있지만 시뮬레이터는 사용할 수 없습니다.  
+- Windows 8.1: 앱을 로컬로 실행할 수 없습니다(원격 Windows 10 장치에서만). Visual Studio에서 에뮬레이터를 사용할 수 있지만 시뮬레이터는 사용할 수 없습니다.  
   
--   Windows 7: 앱을 로컬로 실행할 수 없습니다(원격 Windows 10 장치에서만). Visual Studio에서 에뮬레이터나 시뮬레이터 중 하나만 사용할 수 있습니다.  
+- Windows 7: 앱을 로컬로 실행할 수 없습니다(원격 Windows 10 장치에서만). Visual Studio에서 에뮬레이터나 시뮬레이터 중 하나만 사용할 수 있습니다.  
   
- 개발 플랫폼이 Windows 10인 경우에만 XAML 디자이너를 사용할 수 있습니다.  
+  개발 플랫폼이 Windows 10인 경우에만 XAML 디자이너를 사용할 수 있습니다.  
   
 ## <a name="universal-windows-apps"></a>유니버설 Windows 앱  
  C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정 개발 언어를 선택하여 [Windows 10 장치용 유니버설 Windows 앱을 만드세요](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). 또는 [이 시작 동영상](http://channel9.msdn.com/Series/ConnectOn-Demand/229)을 시청하세요.  

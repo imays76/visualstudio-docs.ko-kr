@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811752"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>MSBuild를 사용하여 빌드 로그 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ MSBuild에서 스위치를 사용하면 검토할 빌드 데이터의 양과 하
 ## <a name="setting-the-level-of-detail"></a>세부 수준 설정  
  정보 수준을 지정하지 않고 MSBuild를 사용하여 프로젝트를 빌드할 때는 출력 로그에 다음 정보가 표시됩니다.  
   
--   매우 중요한 항목으로 분류된 오류, 경고 및 메시지  
+- 매우 중요한 항목으로 분류된 오류, 경고 및 메시지  
   
--   일부 상태 이벤트  
+- 일부 상태 이벤트  
   
--   빌드의 요약  
+- 빌드의 요약  
   
- **/verbosity**(**/v**) 스위치를 사용하면 출력 로그에 표시되는 데이터의 양을 제어할 수 있습니다. 문제 해결에 사용하려는 경우 대부분의 정보를 제공하는 `detailed`(`d`) 또는 `diagnostic`(`diag`)를 세부 정보 표시 수준으로 사용합니다.  
+  **/verbosity**(**/v**) 스위치를 사용하면 출력 로그에 표시되는 데이터의 양을 제어할 수 있습니다. 문제 해결에 사용하려는 경우 대부분의 정보를 제공하는 `detailed`(`d`) 또는 `diagnostic`(`diag`)를 세부 정보 표시 수준으로 사용합니다.  
   
- **/verbosity**를 `detailed`로 설정하면 빌드 프로세스의 속도가 느려질 수 있으며, **/verbosity**를 `diagnostic`으로 설정하면 속도가 더욱 느려집니다.  
+  **/verbosity**를 `detailed`로 설정하면 빌드 프로세스의 속도가 느려질 수 있으며, **/verbosity**를 `diagnostic`으로 설정하면 속도가 더욱 느려집니다.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

@@ -15,12 +15,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c239206f78c84eafcf96ed936231731f7f2d4aaa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd08e17349008760fd029887c0bc17554ef4c7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848685"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>연습: 편집기 확장에서 바로 가기 키 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ ms.locfileid: "49232416"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>MEF(Managed Extensibility Framework) 프로젝트 만들기  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `KeyBindingTest`로 지정합니다.  
+1. C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `KeyBindingTest`로 지정합니다.  
   
-2.  편집기 텍스트 장식 항목 템플릿을 프로젝트에 추가 하 고 이름을 `KeyBindingTest`입니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
+2. 편집기 텍스트 장식 항목 템플릿을 프로젝트에 추가 하 고 이름을 `KeyBindingTest`입니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
-3.  다음 참조를 추가 하 고 설정 **CopyLocal** 에 `false`:  
+3. 다음 참조를 추가 하 고 설정 **CopyLocal** 에 `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- KeyBindingTest 클래스 파일에서 클래스 이름을 PurpleCornerBox를 변경 합니다. 왼쪽된 여백에 표시 되는 전구를 사용 하 여 적절 하 게 다른 변경. 생성자 내부 adornment 계층의 이름을 변경할 **KeyBindingTest** 하 **PurpleCornerBox**:  
+   KeyBindingTest 클래스 파일에서 클래스 이름을 PurpleCornerBox를 변경 합니다. 왼쪽된 여백에 표시 되는 전구를 사용 하 여 적절 하 게 다른 변경. 생성자 내부 adornment 계층의 이름을 변경할 **KeyBindingTest** 하 **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  

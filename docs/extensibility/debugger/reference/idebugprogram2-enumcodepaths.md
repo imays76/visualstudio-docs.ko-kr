@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56cc9580ec2e434066d1c0a3ce674a4111e433af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9ccfd7ceeaf63ca385c9c4b1e6ac4d734ade0f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912866"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
-소스 파일에서 지정된 된 위치에 대 한 코드 경로 목록을 검색합니다.  
+소스 파일에서 지정된 된 위치에 대 한 코드 경로의 목록을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,28 +51,28 @@ int EnumCodePaths(
   
 #### <a name="parameters"></a>매개 변수  
  `pszHint`  
- [in] 커서 아래 단어는 **소스** 또는 **디스어셈블리** IDE에서 보기.  
+ [in] 커서 아래에 있는 단어를 **원본** 하거나 **디스어셈블리** IDE에서 보기.  
   
  `pStart`  
  [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 현재 코드 컨텍스트를 나타내는 개체입니다.  
   
  `pFrame`  
- [in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 현재 중단점와 관련 된 스택 프레임을 나타내는 개체입니다.  
+ [in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 현재 중단점을 사용 하 여 연결 된 스택 프레임을 나타내는 개체입니다.  
   
  `fSource`  
- [in] 0이 아닌 (`TRUE`) 있는 경우는 **소스** 뷰 또는 0 (`FALSE`) 경우에는 **디스어셈블리** 보기.  
+ [in] 0이 아닌 (`TRUE`)에 있는 경우는 **소스** 뷰 또는 0 (`FALSE`)에 있는 경우는 **디스어셈블리** 보기.  
   
  `ppEnum`  
  [out] 반환 된 [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) 코드 경로 목록을 포함 하는 개체입니다.  
   
  `ppSafety`  
- [out] 반환 된 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 건너뜁니다를 코드 경로 선택한 경우에 중단점으로 설정할 수는 추가 코드 컨텍스트를 나타내는 개체입니다. 예를 들어 short-circuited 부울 식의 경우 발생할 수 있습니다 이러한.  
+ [out] 반환 된 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 건너뜁니다 코드 경로 선택한 경우 중단점으로 설정 하도록 추가 코드 컨텍스트를 나타내는 개체입니다. 예를 들어 대해서는 처리가 단축된 부울 식의 경우 발생할 수 있습니다이 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 코드 경로가 메서드 또는 프로그램 실행의 현재 위치에 액세스할 호출 된 함수 이름을 설명 합니다. 코드 경로 목록에는 호출 스택을 나타냅니다.  
+ 코드 경로 메서드 또는 프로그램 실행의 현재 위치를 이동 하려면 호출 된 함수의 이름을 설명 합니다. 코드 경로의 목록에는 호출 스택을 나타냅니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

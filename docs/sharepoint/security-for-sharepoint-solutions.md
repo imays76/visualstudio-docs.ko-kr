@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878767"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 솔루션 보안
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 응용 프로그램의 보안을 강화 하는 데 도움이 되는 다음과 같은 기능이 통합 되어 있습니다.
@@ -34,7 +34,7 @@ ms.locfileid: "42626135"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers 특성
  기본적으로 런타임 코드 액세스 보안 (CA) 시스템에서 완전히 신뢰할 수 있는 응용 프로그램만 공유 관리 코드 어셈블리를 액세스할 수 있습니다. AllowPartiallyTrustedCallers 특성을 사용 하 여 완전 신뢰 어셈블리를 표시 합니다. 부분적으로 신뢰할 수 있는 어셈블리를 액세스할 수 있습니다.
 
- AllowPartiallyTrustedCallers 특성 시스템 전역 어셈블리 캐시에 배포 되지 않은 모든 SharePoint 솔루션에 추가 됩니다 ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). 샌드박스 솔루션 또는 SharePoint 응용 프로그램 Bin 디렉터리에 배포 된 솔루션 포함. 자세한 내용은 [for Microsoft.NET Framework 버전 1 보안 변경 내용](http://go.microsoft.com/fwlink/?LinkId=177515) 하 고 [SharePoint Foundation에서 웹 파트 배포](http://go.microsoft.com/fwlink/?LinkId=177509)합니다.
+ AllowPartiallyTrustedCallers 특성 시스템 전역 어셈블리 캐시에 배포 되지 않은 모든 SharePoint 솔루션에 추가 됩니다 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). 샌드박스 솔루션 또는 SharePoint 응용 프로그램 Bin 디렉터리에 배포 된 솔루션 포함. 자세한 내용은 [for Microsoft.NET Framework 버전 1 보안 변경 내용](http://go.microsoft.com/fwlink/?LinkId=177515) 하 고 [SharePoint Foundation에서 웹 파트 배포](http://go.microsoft.com/fwlink/?LinkId=177509)합니다.
 
 ## <a name="safe-against-script-property"></a>스크립트 속성에 대해 안전
  *삽입 스크립트* 컨트롤이 나 웹 페이지에 악성 코드 삽입 됩니다. 스크립트 삽입에 대 한 SharePoint 2010 사이트를 보호 하기 위해, 참가자 보거나 기본적으로 웹 파트 또는 해당 속성을 편집할 수 없습니다. 이 동작은 SafeAgainstScript 호출 SafeControl 특성에 의해 제어 됩니다. [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 프로젝트 항목의에이 특성을 설정 **안전 컨트롤 항목** 하위 **스크립트에 대해 안전**합니다. 자세한 내용은 참조 하세요. [프로젝트 항목에 패키지 및 배포 정보를 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) 하 고 [방법: 안전 컨트롤로 표시 제어](../sharepoint/how-to-mark-controls-as-safe-controls.md)입니다.

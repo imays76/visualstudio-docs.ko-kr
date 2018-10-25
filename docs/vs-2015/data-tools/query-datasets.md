@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890571"
 ---
 # <a name="query-datasets"></a>데이터 집합 쿼리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ ms.locfileid: "49219299"
   
  다음 코드 예제에서는 형식화 된 데이터 집합의 관계 위/아래로 이동 하는 방법을 보여 줍니다. 형식화 된 코드 예 사용 <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) 및 생성 된 `FindBy` *PrimaryKey* (`FindByCustomerID`) 메서드를 원하는 행을 찾아 관련된 레코드를 반환 합니다. 예제를 컴파일하고 있는 경우에 올바르게 실행:  
   
--   명명 된 데이터 집합의 인스턴스에 `NorthwindDataSet` 사용 하 여를 `Customers` 테이블입니다.  
+- 명명 된 데이터 집합의 인스턴스에 `NorthwindDataSet` 사용 하 여를 `Customers` 테이블입니다.  
   
--   `Orders` 테이블입니다.  
+- `Orders` 테이블입니다.  
   
--   명명 된 관계 `FK_Orders_Customers`코드의 범위에 사용할 수 있는 두 테이블 관련  
+- 명명 된 관계 `FK_Orders_Customers`코드의 범위에 사용할 수 있는 두 테이블 관련  
   
- 또한 두 테이블 반환할 모든 레코드에 대 한 데이터를 사용 하 여 입력 해야 합니다.  
+  또한 두 테이블 반환할 모든 레코드에 대 한 데이터를 사용 하 여 입력 해야 합니다.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>자식 선택한 부모 레코드의 레코드를 반환 하려면  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2077e9ff3e4e637e0dbc27b8976a9205556b74a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867073"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,52 +36,52 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
   
  각 도구를 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
--   사용자의 요구 사항 및 비즈니스 프로세스를 분명하게 설명합니다.  
+- 사용자의 요구 사항 및 비즈니스 프로세스를 분명하게 설명합니다.  
   
--   기존 코드를 시각화하고 탐색합니다.  
+- 기존 코드를 시각화하고 탐색합니다.  
   
--   기존 시스템의 변경 내용을 설명합니다.  
+- 기존 시스템의 변경 내용을 설명합니다.  
   
--   시스템이 요구 사항을 충족하는지 확인합니다.  
+- 시스템이 요구 사항을 충족하는지 확인합니다.  
   
--   코드와 디자인의 일관성을 유지합니다.  
+- 코드와 디자인의 일관성을 유지합니다.  
   
- 이 연습의 내용은 다음과 같습니다.  
+  이 연습의 내용은 다음과 같습니다.  
   
--   어떻게 하면 이러한 도구를 소프트웨어 프로젝트에 유용하게 사용할 수 있는지 설명합니다.  
+- 어떻게 하면 이러한 도구를 소프트웨어 프로젝트에 유용하게 사용할 수 있는지 설명합니다.  
   
--   개발 접근 방식과 관계없이 예제 시나리오에서 이러한 도구를 사용하는 방법을 보여 줍니다.  
+- 개발 접근 방식과 관계없이 예제 시나리오에서 이러한 도구를 사용하는 방법을 보여 줍니다.  
   
- 이러한 도구 및 도구가 지원하는 시나리오에 대한 자세한 내용은 다음을 참조하세요.  
+  이러한 도구 및 도구가 지원하는 시나리오에 대한 자세한 내용은 다음을 참조하세요.  
   
--   [아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)  
+- [아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)  
   
--   [코드 시각화](../modeling/visualize-code.md)  
+- [코드 시각화](../modeling/visualize-code.md)  
   
--   [앱용 모델 만들기](../modeling/create-models-for-your-app.md)  
+- [앱용 모델 만들기](../modeling/create-models-for-your-app.md)  
   
 ##  <a name="ScenarioOverview"></a> 시나리오 개요  
  이 시나리오에서는 Dinner Now 및 Lucerne Publishing이라는 가상 회사 두 개의 소프트웨어 개발 수명 주기에 따른 에피소드를 설명합니다. Dinner Now는 시애틀에서 웹 기반 음식 배달 서비스를 제공합니다. 고객은 Dinner Now 웹 사이트에서 음식을 주문하고 결제할 수 있습니다. 주문은 배달을 위해 해당 현지 음식점에 전송됩니다. 뉴욕에 있는 회사인 Lucerne Publishing은 오프라인과 온라인으로 여러 가지 비즈니스를 운영합니다. 예를 들어 고객이 음식점 리뷰를 게시할 수 있는 웹 사이트를 운영합니다.  
   
  Lucerne은 최근에 Dinner Now를 인수했고, 다음과 같이 변경하고자 합니다.  
   
--   Dinner Now에 음식점 리뷰 기능을 추가하여 웹 사이트를 통합합니다.  
+- Dinner Now에 음식점 리뷰 기능을 추가하여 웹 사이트를 통합합니다.  
   
--   Dinner Now의 결제 시스템을 Lucerne 시스템으로 바꿉니다.  
+- Dinner Now의 결제 시스템을 Lucerne 시스템으로 바꿉니다.  
   
--   전체 지역으로 Dinner Now 서비스를 확장합니다.  
+- 전체 지역으로 Dinner Now 서비스를 확장합니다.  
   
- Dinner Now는 SCRUM 및 eXtreme 프로그래밍을 사용합니다. 강도 높은 테스트 검사를 수행하지만 지원되지 않는 코드가 거의 없습니다. 작지만 실제로 작동하는 시스템 버전을 만들고, 기능을 점차 추가하여 위험을 최소화합니다. 짧게 자주 반복하는 방식으로 코드를 개발합니다. 이를 통해 변경 사항을 자신 있게 포함하고, 코드를 자주 리팩터링하며, "BDUF(Big Design Up Front)"를 피합니다.  
+  Dinner Now는 SCRUM 및 eXtreme 프로그래밍을 사용합니다. 강도 높은 테스트 검사를 수행하지만 지원되지 않는 코드가 거의 없습니다. 작지만 실제로 작동하는 시스템 버전을 만들고, 기능을 점차 추가하여 위험을 최소화합니다. 짧게 자주 반복하는 방식으로 코드를 개발합니다. 이를 통해 변경 사항을 자신 있게 포함하고, 코드를 자주 리팩터링하며, "BDUF(Big Design Up Front)"를 피합니다.  
   
- Lucerne은 매우 크고 복잡한 시스템 모음을 유지 관리하며 시스템의 일부는 40년 이상 사용하고 있습니다. 레거시 코드의 복잡성과 범위 때문에 변경하는 데 매우 신중합니다. 더 철저한 개발 프로세스를 따르면서 기본적으로 세부 솔루션을 디자인하고 개발 중에 발생하는 디자인 및 변경을 문서화하고자 합니다.  
+  Lucerne은 매우 크고 복잡한 시스템 모음을 유지 관리하며 시스템의 일부는 40년 이상 사용하고 있습니다. 레거시 코드의 복잡성과 범위 때문에 변경하는 데 매우 신중합니다. 더 철저한 개발 프로세스를 따르면서 기본적으로 세부 솔루션을 디자인하고 개발 중에 발생하는 디자인 및 변경을 문서화하고자 합니다.  
   
- 두 팀에서는 모두 사용자의 요구를 충족하는 시스템을 개발하도록 도와주는 Visual Studio의 모델링 다이어그램을 사용합니다. 작업을 계획, 구성 및 관리하도록 도와주는 다른 도구와 함께 Team Foundation Server를 사용합니다.  
+  두 팀에서는 모두 사용자의 요구를 충족하는 시스템을 개발하도록 도와주는 Visual Studio의 모델링 다이어그램을 사용합니다. 작업을 계획, 구성 및 관리하도록 도와주는 다른 도구와 함께 Team Foundation Server를 사용합니다.  
   
- Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.  
+  Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.  
   
--   [작업 계획 및 추적](#PlanningTracking)  
+- [작업 계획 및 추적](#PlanningTracking)  
   
--   [업데이트된 코드 테스트, 유효성 검사 및 체크 인](#TestValidateCheckInCode)  
+- [업데이트된 코드 테스트, 유효성 검사 및 체크 인](#TestValidateCheckInCode)  
   
 ##  <a name="ModelingDiagramsTools"></a> 소프트웨어 개발에서 아키텍처 및 모델링 다이어그램의 역할  
  다음 표에서는 소프트웨어 개발 수명 주기의 여러 다양한 단계에서 이들 도구가 수행할 수 있는 역할에 대해 설명합니다.  
@@ -102,73 +102,73 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
   
  참조  
   
--   [UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)  
+- [UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)  
   
--   [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)  
+- [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)  
+- [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
--   [Visual Studio용 모델링 SDK - 도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+- [Visual Studio용 모델링 SDK - 도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
   
- 아키텍처의 대체 뷰를 표시하기 위해 서로 다른 여러 다이어그램에서 같은 모델의 특정 요소를 다시 사용할 수 있습니다. 예를 들어 행위자로 작동할 수 있도록 구성 요소를 다른 구성 요소 다이어그램 또는 시퀀스 다이어그램으로 끌 수 있습니다. 참조 [편집 UML 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md)합니다.  
+  아키텍처의 대체 뷰를 표시하기 위해 서로 다른 여러 다이어그램에서 같은 모델의 특정 요소를 다시 사용할 수 있습니다. 예를 들어 행위자로 작동할 수 있도록 구성 요소를 다른 구성 요소 다이어그램 또는 시퀀스 다이어그램으로 끌 수 있습니다. 참조 [편집 UML 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md)합니다.  
   
- 두 팀에서는 모두 레이어 유효성 검사를 사용하여 개발 중인 코드와 디자인의 일관성이 유지되는지 확인합니다.  
+  두 팀에서는 모두 레이어 유효성 검사를 사용하여 개발 중인 코드와 디자인의 일관성이 유지되는지 확인합니다.  
   
- 참조  
+  참조  
   
--   [코드와 디자인의 일관성 유지](#ValidatingCode)  
+- [코드와 디자인의 일관성 유지](#ValidatingCode)  
   
--   [논리적 아키텍처를 설명: 레이어 다이어그램](#DescribeLayers)  
+- [논리적 아키텍처를 설명: 레이어 다이어그램](#DescribeLayers)  
   
--   [레이어 다이어그램에 대해 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)  
+- [레이어 다이어그램에 대해 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)  
   
-    > [!NOTE]
-    >  일부 Visual Studio 버전에서는 시각화 및 모델링을 위해 코드 맵과 UML 다이어그램의 레이어 유효성 검사 및 읽기 전용 버전을 지원합니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
+  > [!NOTE]
+  >  일부 Visual Studio 버전에서는 시각화 및 모델링을 위해 코드 맵과 UML 다이어그램의 레이어 유효성 검사 및 읽기 전용 버전을 지원합니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
 ##  <a name="UnderstandingCommunicating"></a> 시스템에 대한 정보 이해 및 전달  
  Visual Studio 모델링 다이어그램을 사용하는 데는 미리 정의된 순서가 없으므로 요구나 접근 방식에 맞게 사용할 수 있습니다. 일반적으로 팀에서는 프로젝트 내내 모델을 반복적으로 자주 다시 확인합니다. 각 다이어그램은 개발 중인 시스템의 다양한 측면을 이해, 설명 및 전달하도록 도와주는 특정 기능을 제공합니다.  
   
  Dinner Now 및 Lucerne은 다이어그램을 공통 언어로 사용하여 서로 소통하고 프로젝트 이해 관계자와 소통합니다. 예를 들어 Dinner Now는 다이어그램을 사용하여 다음 작업을 수행합니다.  
   
--   기존 코드를 시각화합니다.  
+- 기존 코드를 시각화합니다.  
   
--   신규 또는 업데이트된 사용자 스토리에 대해 Lucerne과 소통합니다.  
+- 신규 또는 업데이트된 사용자 스토리에 대해 Lucerne과 소통합니다.  
   
--   신규 또는 업데이트된 사용자 스토리를 지원하는 데 필요한 변경 사항을 파악합니다.  
+- 신규 또는 업데이트된 사용자 스토리를 지원하는 데 필요한 변경 사항을 파악합니다.  
   
- Lucerne은 다이어그램을 사용하여 다음 작업을 수행합니다.  
+  Lucerne은 다이어그램을 사용하여 다음 작업을 수행합니다.  
   
--   Dinner Now의 비즈니스 프로세스를 알아봅니다.  
+- Dinner Now의 비즈니스 프로세스를 알아봅니다.  
   
--   시스템 디자인을 이해합니다.  
+- 시스템 디자인을 이해합니다.  
   
--   신규 또는 업데이트된 사용자 요구 사항에 대해 Dinner Now와 소통합니다.  
+- 신규 또는 업데이트된 사용자 요구 사항에 대해 Dinner Now와 소통합니다.  
   
--   시스템에 대한 업데이트를 문서화합니다.  
+- 시스템에 대한 업데이트를 문서화합니다.  
   
- 다이어그램은 Team Foundation Server와 통합되므로 팀에서는 작업을 더 쉽게 계획, 관리 및 추적할 수 있습니다. 예를 들어 모델을 사용하여 테스트 사례 및 개발 작업을 식별하고 작업을 예측합니다. Lucerne은 Team Foundation Server 작업 항목을 모델 요소에 연결하여 진행 상황을 모니터링하고 시스템이 사용자 요구 사항을 충족하는지 확인할 수 있습니다. 예를 들어 사용 사례를 테스트 사례 작업 항목에 연결하여 모든 테스트를 통과할 때 사용 사례가 처리되는지 확인할 수 있습니다.  
+  다이어그램은 Team Foundation Server와 통합되므로 팀에서는 작업을 더 쉽게 계획, 관리 및 추적할 수 있습니다. 예를 들어 모델을 사용하여 테스트 사례 및 개발 작업을 식별하고 작업을 예측합니다. Lucerne은 Team Foundation Server 작업 항목을 모델 요소에 연결하여 진행 상황을 모니터링하고 시스템이 사용자 요구 사항을 충족하는지 확인할 수 있습니다. 예를 들어 사용 사례를 테스트 사례 작업 항목에 연결하여 모든 테스트를 통과할 때 사용 사례가 처리되는지 확인할 수 있습니다.  
   
- 팀에서는 변경 내용을 체크 인하기 전에 레이어 유효성 검사 및 자동화된 테스트를 포함하는 빌드를 실행하여 테스트 및 디자인에 대해 코드의 유효성을 검사합니다. 이렇게 하면 업데이트된 코드가 디자인과 충돌하지 않고 코드로 인해 이전에 작동한 기능이 중단되지 않는지 확인할 수 있습니다.  
+  팀에서는 변경 내용을 체크 인하기 전에 레이어 유효성 검사 및 자동화된 테스트를 포함하는 빌드를 실행하여 테스트 및 디자인에 대해 코드의 유효성을 검사합니다. 이렇게 하면 업데이트된 코드가 디자인과 충돌하지 않고 코드로 인해 이전에 작동한 기능이 중단되지 않는지 확인할 수 있습니다.  
   
- 참조  
+  참조  
   
--   [비즈니스 프로세스에서 시스템의 역할 이해](#UnderstandingBPMandSystemDesign)  
+- [비즈니스 프로세스에서 시스템의 역할 이해](#UnderstandingBPMandSystemDesign)  
   
--   [새롭거나 업데이트 된 사용자 요구 사항 설명](#DescribingURM)  
+- [새롭거나 업데이트 된 사용자 요구 사항 설명](#DescribingURM)  
   
--   [모델에서 테스트 만들기](#CreatingTests)  
+- [모델에서 테스트 만들기](#CreatingTests)  
   
--   [기존 시스템에 대한 변경 식별](#DeterminingChanges)  
+- [기존 시스템에 대한 변경 식별](#DeterminingChanges)  
   
--   [Keeping code consistent with the design](#ValidatingCode)  
+- [Keeping code consistent with the design](#ValidatingCode)  
   
--   [모델 만들기 및 사용에 대한 일반적인 팁](#GeneralTips)  
+- [모델 만들기 및 사용에 대한 일반적인 팁](#GeneralTips)  
   
--   [작업 계획 및 추적](#PlanningTracking)  
+- [작업 계획 및 추적](#PlanningTracking)  
   
--   [업데이트된 코드 테스트, 유효성 검사 및 체크 인](#TestValidateCheckInCode)  
+- [업데이트된 코드 테스트, 유효성 검사 및 체크 인](#TestValidateCheckInCode)  
   
 ###  <a name="UnderstandingBPMandSystemDesign"></a> 비즈니스 프로세스에서 시스템의 역할 이해  
  Lucerne은 Dinner Now의 비즈니스 프로세스를 자세히 알아보고자 합니다. 다음 다이어그램을 만들어 Dinner Now의 현재 상태를 더 쉽고 분명하게 설명합니다.  
@@ -227,19 +227,19 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 ###  <a name="CreatingTests"></a> 모델에서 테스트 만들기  
  두 팀에서는 모두 변경하기 전에 시스템 및 해당 구성 요소에 대한 전체 테스트가 필요하다는 데 동의합니다. Lucerne에는 시스템 및 구성 요소 수준 테스트를 수행하는 특수 팀이 있습니다. Dinner Now에서 만든 테스트를 다시 사용하고 UML 다이어그램을 사용하여 해당 테스트를 구성합니다.  
   
--   각 사용 사례는 하나 이상의 테스트로 표현됩니다. 사용 사례 다이어그램의 요소는 Team Foundation Server의 테스트 사례 작업 항목에 연결됩니다.  
+- 각 사용 사례는 하나 이상의 테스트로 표현됩니다. 사용 사례 다이어그램의 요소는 Team Foundation Server의 테스트 사례 작업 항목에 연결됩니다.  
   
--   동작 다이어그램 또는 시스템 수준 시퀀스 다이어그램의 각 흐름은 하나 이상의 테스트에 연결됩니다. 테스트 팀에서는 동작 다이어그램을 통해 가능한 모든 경로를 테스트하는지 체계적으로 확인합니다.  
+- 동작 다이어그램 또는 시스템 수준 시퀀스 다이어그램의 각 흐름은 하나 이상의 테스트에 연결됩니다. 테스트 팀에서는 동작 다이어그램을 통해 가능한 모든 경로를 테스트하는지 체계적으로 확인합니다.  
   
--   테스트를 설명하는 데 사용된 용어는 사용 사례, 클래스 및 동작 다이어그램에 정의된 용어를 기준으로 합니다.  
+- 테스트를 설명하는 데 사용된 용어는 사용 사례, 클래스 및 동작 다이어그램에 정의된 용어를 기준으로 합니다.  
   
- 요구 사항이 변경되고 다이어그램이 업데이트되어 해당 변경 내용을 반영하면 테스트도 업데이트됩니다. 요구 사항은 테스트에 통과할 때만 충족된 것으로 간주합니다. 가능하거나 적합할 경우 테스트는 구현이 시작되기 전에 정의되며 UML 다이어그램을 기반으로 합니다.  
+  요구 사항이 변경되고 다이어그램이 업데이트되어 해당 변경 내용을 반영하면 테스트도 업데이트됩니다. 요구 사항은 테스트에 통과할 때만 충족된 것으로 간주합니다. 가능하거나 적합할 경우 테스트는 구현이 시작되기 전에 정의되며 UML 다이어그램을 기반으로 합니다.  
   
- 참조  
+  참조  
   
--   [모델에서 테스트 개발](../modeling/develop-tests-from-a-model.md)  
+- [모델에서 테스트 개발](../modeling/develop-tests-from-a-model.md)  
   
--   [UML 모델 유효성 검사](../modeling/validate-your-uml-model.md)  
+- [UML 모델 유효성 검사](../modeling/validate-your-uml-model.md)  
   
 ###  <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
  Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 합니다. 비용은 부분적으로 이 변경이 시스템의 다른 부분에 얼마나 영향을 미치는지에 따라 달라집니다. 이 흐름을 이해하는 데 도움이 되도록 Dinner Now 개발자 한 명이 기존 코드에서 다음 맵 및 다이어그램을 만듭니다.  
@@ -310,144 +310,144 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
   
 ###  <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
--   대부분 다이어그램은 선으로 연결된 노드로 구성됩니다. 각 다이어그램 유형에 대한 도구 상자에서는 다양한 도구 및 선을 제공합니다.  
+- 대부분 다이어그램은 선으로 연결된 노드로 구성됩니다. 각 다이어그램 유형에 대한 도구 상자에서는 다양한 도구 및 선을 제공합니다.  
   
-     도구 상자를 열려면 **보기** 메뉴에서 **도구 상자**를 클릭합니다.  
+   도구 상자를 열려면 **보기** 메뉴에서 **도구 상자**를 클릭합니다.  
   
--   노드를 만들려면 도구 상자에서 다이어그램으로 노드를 끌어옵니다. 특정 노드 종류는 기존 노드에 끌어서 놓아야 합니다. 예를 들어 구성 요소 다이어그램에서 새 포트는 기존 구성 요소에 추가해야 합니다.  
+- 노드를 만들려면 도구 상자에서 다이어그램으로 노드를 끌어옵니다. 특정 노드 종류는 기존 노드에 끌어서 놓아야 합니다. 예를 들어 구성 요소 다이어그램에서 새 포트는 기존 구성 요소에 추가해야 합니다.  
   
--   선 또는 연결을 만들려면 도구 상자에서 해당 도구를 클릭하고 소스 노드, 대상 노드를 차례로 클릭합니다. 일부 선은 특정 노드 종류 사이에서만 만들 수 있습니다. 포인터를 가능한 소스 또는 대상 위로 이동하면 포인터가 연결을 만들 수 있는지 여부를 표시합니다.  
+- 선 또는 연결을 만들려면 도구 상자에서 해당 도구를 클릭하고 소스 노드, 대상 노드를 차례로 클릭합니다. 일부 선은 특정 노드 종류 사이에서만 만들 수 있습니다. 포인터를 가능한 소스 또는 대상 위로 이동하면 포인터가 연결을 만들 수 있는지 여부를 표시합니다.  
   
--   UML 다이어그램에서 항목을 만들면 해당 항목이 일반 모델에도 추가됩니다. 모델링 프로젝트의 UML 다이어그램은 해당 모델의 뷰입니다. 레이어 다이어그램의 항목은 일반 모델에 저장되지 않더라도 모델링 프로젝트에 포함됩니다.  
+- UML 다이어그램에서 항목을 만들면 해당 항목이 일반 모델에도 추가됩니다. 모델링 프로젝트의 UML 다이어그램은 해당 모델의 뷰입니다. 레이어 다이어그램의 항목은 일반 모델에 저장되지 않더라도 모델링 프로젝트에 포함됩니다.  
   
-     모델을 확인하려면 **아키텍처** 메뉴에서  **Windows**를 가리키고 **UML 모델 탐색기**를 클릭합니다.  
+   모델을 확인하려면 **아키텍처** 메뉴에서  **Windows**를 가리키고 **UML 모델 탐색기**를 클릭합니다.  
   
--   경우에 따라 특정 항목을 **UML 모델 탐색기** 에서 UML 다이어그램에 끌어서 놓을 수 있습니다. 아키텍처의 대체 뷰를 표시하기 위해 같은 모델 내의 일부 요소가 서로 다른 여러 다이어그램에서 사용될 수 있습니다. 예를 들어 행위자로 사용할 구성 요소를 다른 구성 요소 다이어그램 또는 시퀀스 다이어그램으로 끌 수 있습니다.  
+- 경우에 따라 특정 항목을 **UML 모델 탐색기** 에서 UML 다이어그램에 끌어서 놓을 수 있습니다. 아키텍처의 대체 뷰를 표시하기 위해 같은 모델 내의 일부 요소가 서로 다른 여러 다이어그램에서 사용될 수 있습니다. 예를 들어 행위자로 사용할 구성 요소를 다른 구성 요소 다이어그램 또는 시퀀스 다이어그램으로 끌 수 있습니다.  
   
--   Visual Studio에서는 UML 2.1.2를 지원합니다. 이 개요에서는 이 릴리스의 UML 다이어그램에 대한 주요 기능만 설명하지만 UML 및 해당 사용에 대해 자세히 설명하는 다양한 문서가 있습니다.  
+- Visual Studio에서는 UML 2.1.2를 지원합니다. 이 개요에서는 이 릴리스의 UML 다이어그램에 대한 주요 기능만 설명하지만 UML 및 해당 사용에 대해 자세히 설명하는 다양한 문서가 있습니다.  
   
- 참조 [앱에 대 한 모델을 만들](../modeling/create-models-for-your-app.md)합니다.  
+  참조 [앱에 대 한 모델을 만들](../modeling/create-models-for-your-app.md)합니다.  
   
 ###  <a name="PlanningTracking"></a> Planning and Tracking Work  
  Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되므로 작업을 더 쉽게 계획, 관리 및 추적할 수 있습니다. 두 팀에서는 모두 모델을 사용하여 테스트 사례 및 개발 작업을 식별하고 작업을 예측합니다. Lucerne은 Team Foundation Server 작업 항목을 만들고 사용 사례 및 구성 요소 등의 모델 요소에 연결합니다. 이렇게 하면 진행 상황을 모니터링하고 작업을 다시 사용자 요구 사항에 맞춰 추적할 수 있습니다. 이를 통해 변경 내용이 해당 요구 사항을 계속 충족하는지 확인할 수 있습니다.  
   
  작업이 진행됨에 따라 팀에서는 작업 항목을 업데이트하여 작업에 걸린 시간을 반영합니다. 다음 Team Foundation Server 기능을 사용하여 작업 상태를 모니터링 및 보고합니다.  
   
--   일일 *번다운(Burndown) 보고서* - 계획된 작업을 예상 시간 안에 완료할지를 보여 줍니다. Team Foundation Server에서 기타 비슷한 보고서를 생성하여 버그 진행 상황을 추적합니다.  
+- 일일 *번다운(Burndown) 보고서* - 계획된 작업을 예상 시간 안에 완료할지를 보여 줍니다. Team Foundation Server에서 기타 비슷한 보고서를 생성하여 버그 진행 상황을 추적합니다.  
   
--   *반복 워크시트* - Microsoft Excel을 사용하여 팀에서 구성원 간의 작업 부하를 모니터링하고 균형을 맞추도록 도와줍니다. 이 워크시트는 Team Foundation Server에 연결되고 정기적인 진행 회의 중에 논의할 중점 사안을 제공합니다.  
+- *반복 워크시트* - Microsoft Excel을 사용하여 팀에서 구성원 간의 작업 부하를 모니터링하고 균형을 맞추도록 도와줍니다. 이 워크시트는 Team Foundation Server에 연결되고 정기적인 진행 회의 중에 논의할 중점 사안을 제공합니다.  
   
--   *개발 대시보드* - Office Project를 사용하여 중요한 프로젝트 정보를 팀에 지속적으로 제공합니다.  
+- *개발 대시보드* - Office Project를 사용하여 중요한 프로젝트 정보를 팀에 지속적으로 제공합니다.  
   
- 참조  
+  참조  
   
--   [Visual Studio Team Services 또는 Team Foundation Server를 사용하여 작업 추적](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Visual Studio Team Services 또는 Team Foundation Server를 사용하여 작업 추적](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
--   [모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)  
+- [모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)  
   
--   [Visual Studio ALM용 차트, 대시보드 및 보고서](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Visual Studio ALM용 차트, 대시보드 및 보고서](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
--   [Project를 사용하여 백로그 및 작업 만들기](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Project를 사용하여 백로그 및 작업 만들기](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ###  <a name="TestValidateCheckInCode"></a> 코드 테스트, 유효성 검사 및 체크 인  
  팀에서 각 작업을 완료하면 코드를 Team Foundation 버전 제어에 체크 인하고 잊지 않도록 Team Foundation Server에서 미리 알림을 수신합니다. Team Foundation Server가 체크 인을 승인하기 전에 팀에서는 단위 테스트 및 레이어 유효성 검사를 실행하여 테스트 사례 및 디자인에 대해 코드를 확인합니다. Team Foundation Server를 사용하여 빌드, 자동화된 단위 테스트 및 레이어 유효성 검사를 정기적으로 실행합니다. 이렇게 하면 코드가 다음 기준을 충족하는지 확인할 수 있습니다.  
   
--   예상대로 작동합니다.  
+- 예상대로 작동합니다.  
   
--   이전에 작동한 코드가 중단되지 않습니다.  
+- 이전에 작동한 코드가 중단되지 않습니다.  
   
--   디자인과 충돌하지 않습니다.  
+- 디자인과 충돌하지 않습니다.  
   
- Dinner Now의 자동화된 대규모 테스트 컬렉션은 지금도 거의 모두 적용되고 있기 때문에 Lucerne이 다시 사용할 수 있습니다. Lucerne은 이들 테스트를 기반으로 빌드하고 새 기능을 다루는 새 테스트를 추가할 수 있습니다. 두 팀에서는 모두 Visual Studio를 사용한 수동 테스트도 실행합니다.  
+  Dinner Now의 자동화된 대규모 테스트 컬렉션은 지금도 거의 모두 적용되고 있기 때문에 Lucerne이 다시 사용할 수 있습니다. Lucerne은 이들 테스트를 기반으로 빌드하고 새 기능을 다루는 새 테스트를 추가할 수 있습니다. 두 팀에서는 모두 Visual Studio를 사용한 수동 테스트도 실행합니다.  
   
- 코드가 디자인을 따르는지 확인하기 위해 팀에서는 Team Foundation Build에서 해당 빌드를 구성하여 레이어 유효성 검사를 포함합니다. 충돌이 발생하면 세부 정보가 포함된 보고서가 생성됩니다.  
+  코드가 디자인을 따르는지 확인하기 위해 팀에서는 Team Foundation Build에서 해당 빌드를 구성하여 레이어 유효성 검사를 포함합니다. 충돌이 발생하면 세부 정보가 포함된 보고서가 생성됩니다.  
   
- 참조  
+  참조  
   
--   [응용 프로그램 테스트](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [응용 프로그램 테스트](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
--   [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)  
+- [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)  
   
--   [버전 제어 사용](http://go.microsoft.com/fwlink/?LinkID=525605)  
+- [버전 제어 사용](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
--   [응용 프로그램 빌드](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [응용 프로그램 빌드](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne과 Dinner Now는 결제 시스템을 통합해야 합니다. 다음 섹션에서는 이 작업을 하는 데 도움이 되는 Visual Studio의 모델링 다이어그램을 보여 줍니다.  
   
--   [사용자 요구 사항을 이해: 사용 사례 다이어그램](#UnderstandUseCases)  
+- [사용자 요구 사항을 이해: 사용 사례 다이어그램](#UnderstandUseCases)  
   
--   [비즈니스 프로세스 이해: 동작 다이어그램](#UnderstandActivities)  
+- [비즈니스 프로세스 이해: 동작 다이어그램](#UnderstandActivities)  
   
--   [시스템 구조 설명: 구성 요소 다이어그램](#DescribeComponents)  
+- [시스템 구조 설명: 구성 요소 다이어그램](#DescribeComponents)  
   
--   [상호 작용 설명: 시퀀스 다이어그램](#DescribeSequence)  
+- [상호 작용 설명: 시퀀스 다이어그램](#DescribeSequence)  
   
--   [기존 코드 시각화: 코드 맵](#VisualizeCode)  
+- [기존 코드 시각화: 코드 맵](#VisualizeCode)  
   
--   [형식 용어집 정의: 클래스 다이어그램](#DefineClasses)  
+- [형식 용어집 정의: 클래스 다이어그램](#DefineClasses)  
   
--   [논리적 아키텍처를 설명: 레이어 다이어그램](#DescribeLayers)  
+- [논리적 아키텍처를 설명: 레이어 다이어그램](#DescribeLayers)  
   
- 참조  
+  참조  
   
--   [앱용 모델 만들기](../modeling/create-models-for-your-app.md)  
+- [앱용 모델 만들기](../modeling/create-models-for-your-app.md)  
   
--   [코드 시각화](../modeling/visualize-code.md)  
+- [코드 시각화](../modeling/visualize-code.md)  
   
--   [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)  
+- [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)  
   
--   [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)  
+- [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)  
   
--   [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)  
+- [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)  
   
 ###  <a name="UnderstandUseCases"></a> 사용자 요구 사항을 이해: 사용 사례 다이어그램  
  사용 사례 다이어그램에서는 시스템에서 지원하는 동작 및 해당 동작을 수행하는 사람을 간략히 설명합니다. Lucerne은 사용 사례 다이어그램을 사용하여 Dinner Now 시스템에 대한 다음 정보를 알아봅니다.  
   
--   고객이 주문을 작성합니다.  
+- 고객이 주문을 작성합니다.  
   
--   음식점이 주문을 받습니다.  
+- 음식점이 주문을 받습니다.  
   
--   Dinner Now 결제 시스템에서 결제 유효성을 검사하는 데 사용하는 외부 결제 프로세서 게이트웨이는 웹 사이트 범위를 벗어납니다.  
+- Dinner Now 결제 시스템에서 결제 유효성을 검사하는 데 사용하는 외부 결제 프로세서 게이트웨이는 웹 사이트 범위를 벗어납니다.  
   
- 다이어그램에는 일부 주요 사용 사례가 더 작은 사용 사례로 어떻게 나뉘는지도 보여 줍니다. Lucerne은 자체 결제 시스템을 사용하고자 합니다. 변경이 필요함을 나타내려고 Process Payment 사용 사례를 다른 색으로 강조 표시합니다.  
+  다이어그램에는 일부 주요 사용 사례가 더 작은 사용 사례로 어떻게 나뉘는지도 보여 줍니다. Lucerne은 자체 결제 시스템을 사용하고자 합니다. 변경이 필요함을 나타내려고 Process Payment 사용 사례를 다른 색으로 강조 표시합니다.  
   
- ![사용 사례 다이어그램에서 Process Payment 강조 표시](../modeling/media/uml-processpay.png "UML_ProcessPay")  
+  ![사용 사례 다이어그램에서 Process Payment 강조 표시](../modeling/media/uml-processpay.png "UML_ProcessPay")  
   
- **사용 사례 다이어그램에서 Process Payment 강조 표시**  
+  **사용 사례 다이어그램에서 Process Payment 강조 표시**  
   
- 개발 기간이 짧으면 팀에서 고객이 음식점에 직접 결제하게 할지를 논의할 수 있습니다. 이를 표시하기 위해 Process Payment 사용 사례를 Dinner Now 시스템 경계를 벗어난 사용 사례로 바꿉니다. 그리고 고객을 직접 음식점에 연결하여 Dinner Now가 주문 처리만 수행한다는 것을 나타냅니다.  
+  개발 기간이 짧으면 팀에서 고객이 음식점에 직접 결제하게 할지를 논의할 수 있습니다. 이를 표시하기 위해 Process Payment 사용 사례를 Dinner Now 시스템 경계를 벗어난 사용 사례로 바꿉니다. 그리고 고객을 직접 음식점에 연결하여 Dinner Now가 주문 처리만 수행한다는 것을 나타냅니다.  
   
- ![사용 사례 다이어그램의 식당 지불 범위 조정](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")  
+  ![사용 사례 다이어그램의 식당 지불 범위 조정](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")  
   
- **사용 사례 다이어그램의 식당 지불 범위 조정**  
+  **사용 사례 다이어그램의 식당 지불 범위 조정**  
   
- 참조  
+  참조  
   
--   [UML 사용 사례 다이어그램: 참조](../modeling/uml-use-case-diagrams-reference.md)  
+- [UML 사용 사례 다이어그램: 참조](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-use-case-diagram"></a>사용 사례 다이어그램 그리기  
  사용 사례 다이어그램의 주요 기능은 다음과 같습니다.  
   
--   *행위자* 는 개인, 조직, 컴퓨터 또는 소프트웨어 시스템이 수행하는 역할을 나타냅니다. 예를 들어 고객, 음식점 및 Dinner Now 결제 시스템은 행위자입니다.  
+- *행위자* 는 개인, 조직, 컴퓨터 또는 소프트웨어 시스템이 수행하는 역할을 나타냅니다. 예를 들어 고객, 음식점 및 Dinner Now 결제 시스템은 행위자입니다.  
   
--   *사용 사례* 는 행위자와 개발 중인 시스템 간 상호 작용을 나타냅니다.  단일 마우스 클릭 또는 메시지부터 여러 날 이상 연장되는 트랜잭션까지 모든 규모의 상호 작용을 나타낼 수 있습니다.  
+- *사용 사례* 는 행위자와 개발 중인 시스템 간 상호 작용을 나타냅니다.  단일 마우스 클릭 또는 메시지부터 여러 날 이상 연장되는 트랜잭션까지 모든 규모의 상호 작용을 나타낼 수 있습니다.  
   
--   *연결* 은 행위자를 사용 사례에 연결합니다.  
+- *연결* 은 행위자를 사용 사례에 연결합니다.  
   
--   더 큰 사용 사례에는 더 작은 사용 사례가 *포함* 될 수 있습니다. 예를 들어 주문 작성에는 음식점 선택이 포함됩니다. 사용 사례를 *확장* 하고, 목표 단계를 확장된 사용 사례에 추가하여 사용 사례가 특정 조건에서만 발생하도록 지정할 수 있습니다. 사용 사례가 서로 상속할 수도 있습니다.  
+- 더 큰 사용 사례에는 더 작은 사용 사례가 *포함* 될 수 있습니다. 예를 들어 주문 작성에는 음식점 선택이 포함됩니다. 사용 사례를 *확장* 하고, 목표 단계를 확장된 사용 사례에 추가하여 사용 사례가 특정 조건에서만 발생하도록 지정할 수 있습니다. 사용 사례가 서로 상속할 수도 있습니다.  
   
--   *하위 시스템* 은 개발 중인 소프트웨어 시스템 또는 해당 구성 요소 하나를 나타냅니다. 사용 사례를 포함하는 큰 상자입니다. 사용 사례 다이어그램에서는 하위 시스템 경계 내부 또는 외부에 있는 항목을 분명히 설명합니다. 사용자가 특정 목표를 다른 방법으로 달성하도록 지정하려면 해당 사용 사례를 하위 시스템 경계 외부에서 그립니다.  
+- *하위 시스템* 은 개발 중인 소프트웨어 시스템 또는 해당 구성 요소 하나를 나타냅니다. 사용 사례를 포함하는 큰 상자입니다. 사용 사례 다이어그램에서는 하위 시스템 경계 내부 또는 외부에 있는 항목을 분명히 설명합니다. 사용자가 특정 목표를 다른 방법으로 달성하도록 지정하려면 해당 사용 사례를 하위 시스템 경계 외부에서 그립니다.  
   
--   *아티팩트* 는 다이어그램의 요소를 다른 다이어그램 또는 문서에 연결합니다.  
+- *아티팩트* 는 다이어그램의 요소를 다른 다이어그램 또는 문서에 연결합니다.  
   
- 참조  
+  참조  
   
--   [UML 사용 사례 다이어그램: 참조](../modeling/uml-use-case-diagrams-reference.md)  
+- [UML 사용 사례 다이어그램: 참조](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-use-case-diagrams"></a>요약: 사용 사례 다이어그램의 장점  
  사용 사례 다이어그램을 통해 시각화할 수 있는 것은 다음과 같습니다.  
@@ -492,27 +492,27 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 #### <a name="drawing-an-activity-diagram"></a>동작 다이어그램 그리기  
  동작 다이어그램의 주요 기능은 다음과 같습니다.  
   
--   *초기 노드* - 동작의 첫 번째 작업을 나타냅니다.  
+- *초기 노드* - 동작의 첫 번째 작업을 나타냅니다.  
   
-     다이어그램에는 항상 이러한 노드 하나가 있어야 합니다.  
+   다이어그램에는 항상 이러한 노드 하나가 있어야 합니다.  
   
--   *작업* - 사용자 또는 소프트웨어가 작업을 수행하는 단계를 설명합니다.  
+- *작업* - 사용자 또는 소프트웨어가 작업을 수행하는 단계를 설명합니다.  
   
--   *제어 흐름* - 작업 간 흐름을 보여 줍니다.  
+- *제어 흐름* - 작업 간 흐름을 보여 줍니다.  
   
--   *의사 결정 노드* - 흐름에서 조건부 분기를 나타냅니다.  
+- *의사 결정 노드* - 흐름에서 조건부 분기를 나타냅니다.  
   
--   *분기 노드* - 단일 흐름을 동시 흐름으로 나눕니다.  
+- *분기 노드* - 단일 흐름을 동시 흐름으로 나눕니다.  
   
--   *동작 최종 노드* - 동작의 끝을 보여 줍니다.  
+- *동작 최종 노드* - 동작의 끝을 보여 줍니다.  
   
-     이들 노드는 선택 사항이지만 다이어그램에 포함하면 동작이 끝나는 위치를 표시할 수 있습니다.  
+   이들 노드는 선택 사항이지만 다이어그램에 포함하면 동작이 끝나는 위치를 표시할 수 있습니다.  
   
- 참조  
+  참조  
   
--   [UML 동작 다이어그램: 참조](../modeling/uml-activity-diagrams-reference.md)  
+- [UML 동작 다이어그램: 참조](../modeling/uml-activity-diagrams-reference.md)  
   
--   [UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)  
+- [UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-activity-diagrams"></a>요약: 동작 다이어그램의 장점  
  동작 다이어그램을 통해 비즈니스, 시스템 또는 프로그램의 작업 간의 제어 흐름 및 정보를 시각화하고 설명할 수 있습니다. 이 간단하고 유용한 방법으로 다른 사용자와 소통할 때 워크플로를 설명합니다.  
@@ -539,50 +539,50 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
   
  다음 다이어그램에서는 Dinner Now 웹 사이트에 대한 구성 요소의 특정 구성을 보여 줍니다. 이 구성은 웹 사이트 인스턴스가 다음 4개 *파트*로 구성됨을 나타냅니다.  
   
--   CustomerProcessing  
+- CustomerProcessing  
   
--   OrderProcessing  
+- OrderProcessing  
   
--   ReviewProcessing  
+- ReviewProcessing  
   
--   PaymentProcessing  
+- PaymentProcessing  
   
- 이들 파트는 지정된 구성 요소 형식의 인스턴스이고 다음과 같이 연결됩니다.  
+  이들 파트는 지정된 구성 요소 형식의 인스턴스이고 다음과 같이 연결됩니다.  
   
- ![Dinner Now 웹 사이트 내부의 구성 요소](../modeling/media/uml-dinnernow.png "UML_DinnerNow")  
+  ![Dinner Now 웹 사이트 내부의 구성 요소](../modeling/media/uml-dinnernow.png "UML_DinnerNow")  
   
- **구성 요소 내 Dinner Now 웹 사이트**  
+  **구성 요소 내 Dinner Now 웹 사이트**  
   
- Dinner Now 웹 사이트는 웹 사이트의 기능을 처리하는 동작을 이들 파트에 위임합니다. 부모 구성 요소와 해당 구성원 구성 요소 사이에 있는 화살표는 부모가 인터페이스를 통해 받고 보낸 메시지를 처리하는 파트를 지정하는 *위임* 을 보여 줍니다.  
+  Dinner Now 웹 사이트는 웹 사이트의 기능을 처리하는 동작을 이들 파트에 위임합니다. 부모 구성 요소와 해당 구성원 구성 요소 사이에 있는 화살표는 부모가 인터페이스를 통해 받고 보낸 메시지를 처리하는 파트를 지정하는 *위임* 을 보여 줍니다.  
   
- 이 구성에서 PaymentProcessing 구성 요소는 고객 결제를 처리합니다. 따라서 Lucerne 결제 시스템과 통합하도록 업데이트되어야 합니다. 다른 시나리오에서는 구성 요소 형식의 여러 인스턴스가 같은 부모 구성 요소에 있을 수 있습니다.  
+  이 구성에서 PaymentProcessing 구성 요소는 고객 결제를 처리합니다. 따라서 Lucerne 결제 시스템과 통합하도록 업데이트되어야 합니다. 다른 시나리오에서는 구성 요소 형식의 여러 인스턴스가 같은 부모 구성 요소에 있을 수 있습니다.  
   
- 참조  
+  참조  
   
--   [UML 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)  
+- [UML 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)  
   
--   [UML 구성 요소 다이어그램: 지침](../modeling/uml-component-diagrams-guidelines.md)  
+- [UML 구성 요소 다이어그램: 지침](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-component-diagram"></a>구성 요소 다이어그램 그리기  
  구성 요소 다이어그램의 주요 기능은 다음과 같습니다.  
   
--   *구성 요소* - 시스템 기능의 분리 가능한 부분을 나타냅니다.  
+- *구성 요소* - 시스템 기능의 분리 가능한 부분을 나타냅니다.  
   
--   *제공된 인터페이스 포트* - 구성 요소가 구현하고 다른 구성 요소나 외부 시스템에서 사용되는 메시지 또는 호출의 그룹을 나타냅니다.  
+- *제공된 인터페이스 포트* - 구성 요소가 구현하고 다른 구성 요소나 외부 시스템에서 사용되는 메시지 또는 호출의 그룹을 나타냅니다.  
   
--   *필요한 인터페이스 포트* - 구성 요소가 다른 구성 요소나 외부 시스템에 보내는 메시지 또는 호출의 그룹을 나타냅니다. 이 포트 종류는 구성 요소가 다른 구성 요소나 외부 시스템에서 최소한으로 예상하는 작업을 설명합니다.  
+- *필요한 인터페이스 포트* - 구성 요소가 다른 구성 요소나 외부 시스템에 보내는 메시지 또는 호출의 그룹을 나타냅니다. 이 포트 종류는 구성 요소가 다른 구성 요소나 외부 시스템에서 최소한으로 예상하는 작업을 설명합니다.  
   
--   *파트* 는 구성 요소의 구성원이며 일반적으로 다른 구성 요소의 인스턴스입니다. 파트는 부모 구성 요소의 내부 디자인 조각입니다.  
+- *파트* 는 구성 요소의 구성원이며 일반적으로 다른 구성 요소의 인스턴스입니다. 파트는 부모 구성 요소의 내부 디자인 조각입니다.  
   
--   *종속성* - 구성 요소에 다른 구성 요소의 기능이 필요함을 나타냅니다.  
+- *종속성* - 구성 요소에 다른 구성 요소의 기능이 필요함을 나타냅니다.  
   
--   *위임* - 구성 요소 파트가 부모 구성 요소에서 보내거나 받는 메시지를 처리함을 나타냅니다.  
+- *위임* - 구성 요소 파트가 부모 구성 요소에서 보내거나 받는 메시지를 처리함을 나타냅니다.  
   
- 참조  
+  참조  
   
--   [UML 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)  
+- [UML 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)  
   
--   [UML 구성 요소 다이어그램: 지침](../modeling/uml-component-diagrams-guidelines.md)  
+- [UML 구성 요소 다이어그램: 지침](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-component-diagrams"></a>요약: 구성 요소 다이어그램의 장점  
  구성 요소 다이어그램을 통해 다음을 시각화할 수 있습니다.  
@@ -604,41 +604,41 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 ###  <a name="VisualizeCode"></a> 기존 코드 시각화: 코드 맵  
  코드 맵은 코드의 현재 구성 및 관계를 보여 줍니다. 항목은 맵에서 *노드* 로 표시되고 관계는 *링크*로 표시됩니다. 코드 맵을 통해 다음과 같은 작업을 수행할 수 있습니다.  
   
--   친숙하지 않은 코드를 살펴봅니다.  
+- 친숙하지 않은 코드를 살펴봅니다.  
   
--   제안된 변경이 기존 코드에 영향을 미칠 수 있는 경우 및 방식을 이해합니다.  
+- 제안된 변경이 기존 코드에 영향을 미칠 수 있는 경우 및 방식을 이해합니다.  
   
--   복잡성, 일반 레이어 또는 패턴의 영역이나 향상된 기능을 활용할 수 있는 기타 영역을 찾습니다.  
+- 복잡성, 일반 레이어 또는 패턴의 영역이나 향상된 기능을 활용할 수 있는 기타 영역을 찾습니다.  
   
- 예를 들어 Dinner Now는 PaymentProcessing 구성 요소 업데이트 비용을 예측해야 합니다. 비용은 부분적으로 이 변경이 시스템의 다른 부분에 얼마나 영향을 미치는지에 따라 달라집니다. 이 흐름을 이해하는 데 도움이 되도록 Dinner Now 개발자의 한 명이 코드에서 코드 맵을 생성하고 변경이 영향을 미칠 수 있는 영역에서 범위 초점을 조정합니다.  
+  예를 들어 Dinner Now는 PaymentProcessing 구성 요소 업데이트 비용을 예측해야 합니다. 비용은 부분적으로 이 변경이 시스템의 다른 부분에 얼마나 영향을 미치는지에 따라 달라집니다. 이 흐름을 이해하는 데 도움이 되도록 Dinner Now 개발자의 한 명이 코드에서 코드 맵을 생성하고 변경이 영향을 미칠 수 있는 영역에서 범위 초점을 조정합니다.  
   
- 다음 맵은 PaymentProcessing 클래스와 선택된 것으로 표시되는 Dinner Now 시스템 다른 파트 간의 종속성을 보여 줍니다.  
+  다음 맵은 PaymentProcessing 클래스와 선택된 것으로 표시되는 Dinner Now 시스템 다른 파트 간의 종속성을 보여 줍니다.  
   
- ![Dinner Now 결제 시스템에 대 한 종속성 그래프](../modeling/media/dep-dnpayment.png "Dep_DNPayment")  
+  ![Dinner Now 결제 시스템에 대 한 종속성 그래프](../modeling/media/dep-dnpayment.png "Dep_DNPayment")  
   
- **Dinner Now 결제 시스템에 대한 코드 맵**  
+  **Dinner Now 결제 시스템에 대한 코드 맵**  
   
- 개발자는 PaymentProcessing 클래스를 확장하고 해당 구성원을 선택하여 영향을 받을 수 있는 영역을 확인하는 방식으로 맵을 살펴봅니다.  
+  개발자는 PaymentProcessing 클래스를 확장하고 해당 구성원을 선택하여 영향을 받을 수 있는 영역을 확인하는 방식으로 맵을 살펴봅니다.  
   
- ![PaymentProcessing 내부 메서드 및 종속성](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")  
+  ![PaymentProcessing 내부 메서드 및 종속성](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")  
   
- **PaymentProcessing 클래스 내부 메서드 및 해당 종속성**  
+  **PaymentProcessing 클래스 내부 메서드 및 해당 종속성**  
   
- Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서드 및 종속성을 검사합니다. 팀에서는 Lucerne 시스템에 Dinner Now의 다른 부분과 상호 작용하기 위해 작업이 필요한지를 확인합니다.  
+  Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서드 및 종속성을 검사합니다. 팀에서는 Lucerne 시스템에 Dinner Now의 다른 부분과 상호 작용하기 위해 작업이 필요한지를 확인합니다.  
   
- ![Lucerne 결제 시스템에 대 한 종속성 그래프](../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")  
+  ![Lucerne 결제 시스템에 대 한 종속성 그래프](../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")  
   
- **Lucerne 결제 시스템에 대한 코드 맵**  
+  **Lucerne 결제 시스템에 대한 코드 맵**  
   
- 두 팀이 모두 협력하여 두 시스템을 통합하는 데 필요한 변경 내용을 결정합니다. 더 쉽게 업데이트할 수 있게 일부 코드를 리팩터링하도록 결정합니다. PaymentApprover 클래스는 DinnerNow.Business 네임스페이스로 이동하며 몇 가지 새로운 메서드가 필요합니다. 트랜잭션을 처리하는 Dinner Now 클래스에는 자체 네임스페이스가 있습니다. 팀에서는 작업 항목을 만들고 사용하여 작업을 계획, 구성 및 추적합니다. 필요할 경우 작업 항목을 모델 요소에 연결합니다.  
+  두 팀이 모두 협력하여 두 시스템을 통합하는 데 필요한 변경 내용을 결정합니다. 더 쉽게 업데이트할 수 있게 일부 코드를 리팩터링하도록 결정합니다. PaymentApprover 클래스는 DinnerNow.Business 네임스페이스로 이동하며 몇 가지 새로운 메서드가 필요합니다. 트랜잭션을 처리하는 Dinner Now 클래스에는 자체 네임스페이스가 있습니다. 팀에서는 작업 항목을 만들고 사용하여 작업을 계획, 구성 및 추적합니다. 필요할 경우 작업 항목을 모델 요소에 연결합니다.  
   
- 코드를 재구성하고 나서 팀에서는 새 코드 맵을 생성하여 업데이트된 구조와 관계를 확인합니다.  
+  코드를 재구성하고 나서 팀에서는 새 코드 맵을 생성하여 업데이트된 구조와 관계를 확인합니다.  
   
- ![재구성된 한 코드를 사용 하 여 종속성 그래프](../modeling/media/depgraph-integrated.png "DepGraph_Integrated")  
+  ![재구성된 한 코드를 사용 하 여 종속성 그래프](../modeling/media/depgraph-integrated.png "DepGraph_Integrated")  
   
- **코드를 재구성한 코드 맵**  
+  **코드를 재구성한 코드 맵**  
   
- 이 맵은 PaymentApprover 클래스가 현재 DinnerNow.Business 네임스페이스에 있고 몇 가지 새로운 메서드를 포함한다는 것을 보여 줍니다. Dinner Now 트랜잭션 클래스에는 현재 자체 PaymentSystem 네임스페이스가 있고 이를 통해 나중에 해당 코드를 더 쉽게 처리할 수 있습니다.  
+  이 맵은 PaymentApprover 클래스가 현재 DinnerNow.Business 네임스페이스에 있고 몇 가지 새로운 메서드를 포함한다는 것을 보여 줍니다. Dinner Now 트랜잭션 클래스에는 현재 자체 PaymentSystem 네임스페이스가 있고 이를 통해 나중에 해당 코드를 더 쉽게 처리할 수 있습니다.  
   
 #### <a name="creating-a-code-map"></a>코드 맵 만들기  
   
@@ -696,21 +696,21 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 #### <a name="drawing-a-sequence-diagram"></a>시퀀스 다이어그램 그리기  
  시퀀스 다이어그램의 주요 기능은 다음과 같습니다.  
   
--   세로 *수명선* - 소프트웨어 개체의 행위자 또는 인스턴스를 나타냅니다.  
+- 세로 *수명선* - 소프트웨어 개체의 행위자 또는 인스턴스를 나타냅니다.  
   
-     참가자가 개발 중인 시스템 외부에 있음을 나타내는 행위자 기호를 추가하려면 수명선을 클릭합니다. **속성** 창에서 **행위자** 를 **True**로 설정합니다. **속성** 창이 열리지 않으면 **F4**키를 누릅니다.  
+   참가자가 개발 중인 시스템 외부에 있음을 나타내는 행위자 기호를 추가하려면 수명선을 클릭합니다. **속성** 창에서 **행위자** 를 **True**로 설정합니다. **속성** 창이 열리지 않으면 **F4**키를 누릅니다.  
   
--   가로 *메시지* - 메서드 호출, 웹 서비스 메시지 또는 일부 기타 통신을 나타냅니다. *실행 빈도* - 수명선에 나타나는 세로 음영이 있는 사각형이며 수신하는 개체가 호출을 처리하는 기간을 나타냅니다.  
+- 가로 *메시지* - 메서드 호출, 웹 서비스 메시지 또는 일부 기타 통신을 나타냅니다. *실행 빈도* - 수명선에 나타나는 세로 음영이 있는 사각형이며 수신하는 개체가 호출을 처리하는 기간을 나타냅니다.  
   
--   중에 *동기* 메시지 sender 개체를 컨트롤에 대 한 대기 <\<반환 >> 일반 함수 호출 처럼. *비동기* 메시지 중에 sender는 즉시 계속 진행할 수 있습니다.  
+- 중에 *동기* 메시지 sender 개체를 컨트롤에 대 한 대기 <\<반환 >> 일반 함수 호출 처럼. *비동기* 메시지 중에 sender는 즉시 계속 진행할 수 있습니다.  
   
--   사용 하 여 <\<만들기 >> 메시지를 다른 개체에서 개체의 생성을 표시 합니다. 개체에 전송된 첫 번째 메시지여야 합니다.  
+- 사용 하 여 <\<만들기 >> 메시지를 다른 개체에서 개체의 생성을 표시 합니다. 개체에 전송된 첫 번째 메시지여야 합니다.  
   
- 참조  
+  참조  
   
--   [UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)  
+- [UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [UML 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [UML 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-sequence-diagrams"></a>요약: 시퀀스 다이어그램의 장점  
  시퀀스 다이어그램을 통해 다음을 시각화할 수 있습니다.  
@@ -753,43 +753,43 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 #### <a name="drawing-a-class-diagram"></a>클래스 다이어그램 그리기  
  클래스 다이어그램의 주요 기능은 다음과 같습니다.  
   
--   클래스, 인터페이스 및 열거형 등의 형식:  
+- 클래스, 인터페이스 및 열거형 등의 형식:  
   
-    -   *클래스* 는 특정 구조 또는 동작 특성을 공유하는 개체의 정의입니다.  
+  -   *클래스* 는 특정 구조 또는 동작 특성을 공유하는 개체의 정의입니다.  
   
-    -   *인터페이스* 는 개체의 외부적으로 표시되는 동작 파트를 정의합니다.  
+  -   *인터페이스* 는 개체의 외부적으로 표시되는 동작 파트를 정의합니다.  
   
-    -   *열거형* 은 리터럴 값 목록을 포함하는 분류자입니다.  
+  -   *열거형* 은 리터럴 값 목록을 포함하는 분류자입니다.  
   
--   *특성* 은 *분류자*의 각 인스턴스를 설명하는 특정 형식 값입니다. 분류자는 형식, 구성 요소, 사용 사례 및 행위자의 일반 이름입니다.  
+- *특성* 은 *분류자*의 각 인스턴스를 설명하는 특정 형식 값입니다. 분류자는 형식, 구성 요소, 사용 사례 및 행위자의 일반 이름입니다.  
   
--   *작업* 은 분류자의 인스턴스가 수행할 수 있는 메서드 또는 함수입니다.  
+- *작업* 은 분류자의 인스턴스가 수행할 수 있는 메서드 또는 함수입니다.  
   
--   *연결* 은 두 분류자 간의 몇 가지 관계를 나타냅니다.  
+- *연결* 은 두 분류자 간의 몇 가지 관계를 나타냅니다.  
   
-    -   *집합체* 는 분류자 간에 공유되는 소유권을 나타내는 연결입니다.  
+  - *집합체* 는 분류자 간에 공유되는 소유권을 나타내는 연결입니다.  
   
-    -   *컴퍼지션* 은 분류자 간에 전체-부분 관계를 나타내는 연결입니다.  
+  - *컴퍼지션* 은 분류자 간에 전체-부분 관계를 나타내는 연결입니다.  
   
-     집합체 또는 컴퍼지션을 표시하려면 연결에서 **집합체** 속성을 설정합니다. **공유** 는 집합체를 표시하고 **복합** 은 컴퍼지션을 표시합니다.  
+    집합체 또는 컴퍼지션을 표시하려면 연결에서 **집합체** 속성을 설정합니다. **공유** 는 집합체를 표시하고 **복합** 은 컴퍼지션을 표시합니다.  
   
--   *종속성* 은 한 분류자의 정의를 변경하면 다른 분류자의 정의가 변경될 수 있음을 나타냅니다.  
+- *종속성* 은 한 분류자의 정의를 변경하면 다른 분류자의 정의가 변경될 수 있음을 나타냅니다.  
   
--   *일반화* 는 특정 분류자가 일반 분류자에서 정의 파트를 상속함을 나타냅니다. *인식*은 클래스가 인터페이스에서 제공된 작업 및 특성을 구현함을 나타냅니다.  
+- *일반화* 는 특정 분류자가 일반 분류자에서 정의 파트를 상속함을 나타냅니다. *인식*은 클래스가 인터페이스에서 제공된 작업 및 특성을 구현함을 나타냅니다.  
   
-     이들 관계를 만들려면 **상속** 도구를 사용합니다. 인식이 *롤리팝*으로 표시될 수도 있습니다.  
+   이들 관계를 만들려면 **상속** 도구를 사용합니다. 인식이 *롤리팝*으로 표시될 수도 있습니다.  
   
--   *패키지* 는 분류자, 연결, 수명선, 구성 요소 및 기타 패키지의 그룹입니다. *가져오기* 관계는 한 패키지에 다른 패키지의 모든 정의가 포함됨을 나타냅니다.  
+- *패키지* 는 분류자, 연결, 수명선, 구성 요소 및 기타 패키지의 그룹입니다. *가져오기* 관계는 한 패키지에 다른 패키지의 모든 정의가 포함됨을 나타냅니다.  
   
- 기존 클래스를 살펴보고 논의하려면 먼저 클래스 디자이너를 사용하여 코드에서 클래스 다이어그램을 만듭니다.  
+  기존 클래스를 살펴보고 논의하려면 먼저 클래스 디자이너를 사용하여 코드에서 클래스 다이어그램을 만듭니다.  
   
- 참조  
+  참조  
   
--   [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)  
+- [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>요약: 클래스 다이어그램의 장점  
  클래스 다이어그램을 통해 다음을 정의할 수 있습니다.  
@@ -839,35 +839,35 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 #### <a name="drawing-a-layer-diagram"></a>레이어 다이어그램 그리기  
  레이어 다이어그램의 주요 기능은 다음과 같습니다.  
   
--   *레이어* - 아티팩트의 논리 그룹을 설명합니다.  
+- *레이어* - 아티팩트의 논리 그룹을 설명합니다.  
   
--   *링크* - 레이어와 아티팩트 간 연결입니다.  
+- *링크* - 레이어와 아티팩트 간 연결입니다.  
   
-     아티팩트에서 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 또는 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리고 아티팩트에 연결하려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하여 레이어를 만들고 항목을 해당 레이어에 끌어옵니다.  
+   아티팩트에서 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 또는 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리고 아티팩트에 연결하려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하여 레이어를 만들고 항목을 해당 레이어에 끌어옵니다.  
   
-     레이어의 숫자는 해당 레이어에 연결된 아티팩트의 수를 나타냅니다. 이들 아티팩트는 네임스페이스, 프로젝트, 클래스, 메서드 등에 해당할 수 있습니다. 레이어의 아티팩트 수를 해석할 때 다음을 고려하세요.  
+   레이어의 숫자는 해당 레이어에 연결된 아티팩트의 수를 나타냅니다. 이들 아티팩트는 네임스페이스, 프로젝트, 클래스, 메서드 등에 해당할 수 있습니다. 레이어의 아티팩트 수를 해석할 때 다음을 고려하세요.  
   
-    -   레이어가 직접 연결되지 않은 다른 아티팩트를 포함하는 아티팩트에 연결된 경우 연결된 아티팩트만 숫자에 포함됩니다. 그러나 레이어 유효성 검사 중에는 직접 연결되지 않은 다른 아티팩트도 분석을 위해 포함됩니다.  
+  - 레이어가 직접 연결되지 않은 다른 아티팩트를 포함하는 아티팩트에 연결된 경우 연결된 아티팩트만 숫자에 포함됩니다. 그러나 레이어 유효성 검사 중에는 직접 연결되지 않은 다른 아티팩트도 분석을 위해 포함됩니다.  
   
-         예를 들어 레이어가 단일 네임스페이스에 연결된 경우 해당 네임스페이스에 클래스가 들어 있더라도 연결된 아티팩트의 수는 1입니다. 레이어가 네임스페이스의 각 클래스에도 연결되어 있으면 연결된 클래스가 숫자에 포함됩니다.  
+     예를 들어 레이어가 단일 네임스페이스에 연결된 경우 해당 네임스페이스에 클래스가 들어 있더라도 연결된 아티팩트의 수는 1입니다. 레이어가 네임스페이스의 각 클래스에도 연결되어 있으면 연결된 클래스가 숫자에 포함됩니다.  
   
-    -   레이어가 아티팩트에 연결된 다른 레이어를 포함하면 컨테이너 레이어가 이 아티팩트에도 연결됩니다. 단, 컨테이너 레이어의 숫자에는 이러한 아티팩트가 포함되지 않습니다.  
+  - 레이어가 아티팩트에 연결된 다른 레이어를 포함하면 컨테이너 레이어가 이 아티팩트에도 연결됩니다. 단, 컨테이너 레이어의 숫자에는 이러한 아티팩트가 포함되지 않습니다.  
   
-     레이어에 연결된 아티팩트를 확인하려면 레이어를 마우스 오른쪽 단추로 클릭하고 **링크 보기** 를 클릭하여 **레이어 탐색기**를 엽니다.  
+    레이어에 연결된 아티팩트를 확인하려면 레이어를 마우스 오른쪽 단추로 클릭하고 **링크 보기** 를 클릭하여 **레이어 탐색기**를 엽니다.  
   
--   *종속성* 은 한 레이어에서 다른 레이어의 기능을 사용할 수 있지만 반대의 경우는 불가능함을 나타냅니다. *양방향 종속성* 은 한 레이어에서 다른 레이어의 기능을 사용할 수 있고 반대 방향으로도 가능함을 나타냅니다.  
+- *종속성* 은 한 레이어에서 다른 레이어의 기능을 사용할 수 있지만 반대의 경우는 불가능함을 나타냅니다. *양방향 종속성* 은 한 레이어에서 다른 레이어의 기능을 사용할 수 있고 반대 방향으로도 가능함을 나타냅니다.  
   
-     레이어 다이어그램에 기존 종속성을 표시하려면 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 설명하려면 새 종속성을 그립니다.  
+   레이어 다이어그램에 기존 종속성을 표시하려면 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 설명하려면 새 종속성을 그립니다.  
   
- 참조  
+  참조  
   
--   [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)  
+- [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md)  
+- [레이어 다이어그램: 참조](../modeling/layer-diagrams-reference.md)  
   
--   [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)  
+- [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)  
   
--   [레이어 다이어그램에 대해 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)  
+- [레이어 다이어그램에 대해 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)  
   
 #### <a name="summary-strengths-of-layer-diagrams"></a>요약: 레이어 다이어그램의 장점  
  레이어 다이어그램을 통해 다음을 수행할 수 있습니다.  

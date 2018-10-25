@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e436999b16a89f4956f0fef48a8878a7f609d1f9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b8b70e1446894d93aa29024dada76af29b818eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889635"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>모양 및 연결선을 업데이트하여 모델 반영
 
@@ -82,7 +82,6 @@ DSL 정의에서 모양 클래스를 마우스 오른쪽 **Add Exposed**, 다음
       return types.ToArray();
     }
   }
-
 ```
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured 모양 속성을 초기화 하는 데
@@ -107,7 +106,6 @@ partial class MyLanguageDiagram
     // else deal with other types of shapes and connectors.
   }
 }
-
 ```
 
 이 메서드는 모두 도메인 속성 및 도형의 크기와 같은 비 저장소 기능을 사용할 수 있습니다.

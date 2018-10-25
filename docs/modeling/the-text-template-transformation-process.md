@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919158"
 ---
 # <a name="the-text-template-transformation-process"></a>텍스트 템플릿 변형 프로세스
 텍스트 템플릿 변형 프로세스의 입력으로 텍스트 템플릿 파일을 출력으로 새 텍스트 파일을 생성 합니다. 예를 들어 텍스트 템플릿을 사용 하 여 Visual Basic 또는 C# 코드를 생성 하거나 HTML 보고서를 생성할 수 있습니다.
@@ -28,7 +28,7 @@ ms.locfileid: "47860227"
 ## <a name="components"></a>구성 요소
 
 |구성 요소|설명|사용자 지정 가능한 (예/아니요)|
-|---------------|-----------------|------------------------------|
+|-|-|-|
 |엔진|텍스트 템플릿 변형 프로세스를 제어 하는 엔진 구성 요소|아니요.|
 |호스트|호스트는 엔진에서 사용자 환경 사이의 인터페이스입니다. Visual Studio는 텍스트 변환 프로세스의 호스트입니다.|예. 사용자 지정 호스트를 작성할 수 있습니다.|
 |지시문 프로세서|지시문 프로세서는 텍스트 템플릿에서 지시문을 처리 하는 클래스입니다. 텍스트 템플릿에 입력된 원본에서 데이터를 제공 하도록 지시문을 사용할 수 있습니다.|예. 사용자 지정 지시문 프로세서를 작성할 수 있습니다.|

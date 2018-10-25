@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c97e9fc7e5505578533c9e7b958a73dc8d2380
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b283ecf3a21f5a5b9246a628a959b4a271c884b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866664"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 이 메서드는 요청 된 서비스를 반환합니다.  
@@ -47,22 +47,22 @@ Int GetEEService(
   
 #### <a name="parameters"></a>매개 변수  
  `vendor`  
- [in] `GUID` (null 값이 허용 가능한) 공급 업체의 합니다.  
+ [in] `GUID` (null 값이 허용) 공급 업체입니다.  
   
  `language`  
- [in] `GUID` (null 값이 허용) 하는 언어의 합니다.  
+ [in] `GUID` 언어 (null 값이 허용).  
   
  `iid`  
  [in] `IID` 가져오기 위해 서비스입니다.  
   
  `ppService`  
- [out] 요청된 된 서비스를 사용 하는 인터페이스입니다.  
+ [out] 요청 된 서비스에 사용 되는 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 전달 된 `IID` 에 대 한는 [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) 인터페이스 (`IID_IEEVisualizerServiceProvider`) 형식 시각화 도우미 서비스를 사용할 수 있는지를 합니다. 식 계산기를 얻을 수 있는 경우는 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 인터페이스 형식 시각화 도우미를 지원 하도록 합니다. 참조 [Visualizing 및 데이터 보기](../../../extensibility/debugger/visualizing-and-viewing-data.md) 대 한 자세한 내용은 합니다.  
+ 전달 된 `IID` 에 대 한는 [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) 인터페이스 (`IID_IEEVisualizerServiceProvider`) 형식 시각화 도우미 서비스를 사용할 경우 참조를 합니다. 식 계산기를 얻을 수 있는 경우는 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 인터페이스 형식 시각화 도우미를 지원 하도록 합니다. 참조 [시각화 및 데이터 보기](../../../extensibility/debugger/visualizing-and-viewing-data.md) 세부 정보에 대 한 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

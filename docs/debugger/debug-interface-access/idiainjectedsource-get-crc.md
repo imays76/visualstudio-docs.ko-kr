@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa3aba392769465b03aecafc7e135a15e748879e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f99c48af26f2b40969ec818743ec8f4d220f8404
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900620"
 ---
 # <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
 소스 코드의 바이트에서 계산 된 순환 중복 검사 (CRC)를 검색 합니다.  
@@ -34,7 +34,7 @@ HRESULT get_crc (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 소스 코드의 바이트에서 계산 된 CRC 반환 합니다.  
+ [out] 반환 된 CRC 바이트의 소스 코드에서 계산 됩니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  

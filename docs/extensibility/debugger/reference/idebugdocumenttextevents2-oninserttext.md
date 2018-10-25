@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92d8a4bf94d821aa9732a4d908424c502f110be9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 357aec9f55cfb38fd05e6c0405bfa17f4e6e274f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825740"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
-문서에 삽입 된 텍스트 디버그 패키지에 알립니다.  
+텍스트 문서에 삽입 되었음을 디버그 패키지에 알립니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,7 +49,7 @@ int onInsert(
  [in] 삽입 된 텍스트의 문자 수를 지정 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   

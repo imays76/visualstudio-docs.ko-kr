@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a09e4346c84982bdac6fa740c53dedf6444f9268
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b765efcfc01384a14bba6eb46cbaadd915e7752
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914270"
 ---
 # <a name="xml-document-validation"></a>XML 문서 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ XML 편집기에서는 XML 1.0 구문을 검사하고 데이터를 입력할 때
   
  컴파일된 스키마의 `targetNamespace`와 요소의 xmlns 선언을 비교하여 유효성 검사에 사용된 스키마를 찾을 수 있습니다. 우선 순위에 따라 나열된 다음 위치 중 하나에서 컴파일된 스키마가 로드됩니다.  
   
--   지정 된 파일 이름을 사용 합니다 **스키마** 문서 속성 창의 필드입니다.  
+- 지정 된 파일 이름을 사용 합니다 **스키마** 문서 속성 창의 필드입니다.  
   
--   인라인 스키마 또는 DTD  
+- 인라인 스키마 또는 DTD  
   
--   외부 DTD 또는 `xsd:schemaLocation` 및 `xsd:noNamespaceSchemaLocation` 특성  
+- 외부 DTD 또는 `xsd:schemaLocation` 및 `xsd:noNamespaceSchemaLocation` 특성  
   
--   "x 스키마" XDR 스키마 네임스페이스 URI  
+- "x 스키마" XDR 스키마 네임스페이스 URI  
   
- 스키마에 비어 있지 않은 대상 네임스페이스가 있을 경우 다음 추가 위치에서 스키마를 찾을 수도 있습니다.  
+  스키마에 비어 있지 않은 대상 네임스페이스가 있을 경우 다음 추가 위치에서 스키마를 찾을 수도 있습니다.  
   
--   스키마가 포함된 다른 편집기 창  
+- 스키마가 포함된 다른 편집기 창  
   
--   현재 솔루션의 스키마  
+- 현재 솔루션의 스키마  
   
--   스키마 캐시 디렉터리의 스키마  
+- 스키마 캐시 디렉터리의 스키마  
   
 ## <a name="xslt-files"></a>XSLT 파일  
  XSLT 파일을 편집할 때 스키마 캐시에 있는 xslt.xsd 파일을 사용하여 유효성이 검사됩니다. 유효성 검사 오류는 파란색 물결 무늬 밑줄로 표시되고 XSLT 컴파일러 오류는 빨간색 물결 무늬 밑줄로 표시됩니다.  

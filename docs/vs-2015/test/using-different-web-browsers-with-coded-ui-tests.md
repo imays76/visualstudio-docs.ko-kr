@@ -13,12 +13,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893236"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ ms.locfileid: "49210381"
   
  **요구 사항**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
--   운영 체제  
+- 운영 체제  
   
-    -   Microsoft Windows 7  
+  -   Microsoft Windows 7  
   
-    -   Microsoft Windows 8  
+  -   Microsoft Windows 8  
   
-    -   Microsoft Windows Server 2008 R2 SP1  
+  -   Microsoft Windows Server 2008 R2 SP1  
   
--   웹 브라우저 버전:  
+- 웹 브라우저 버전:  
   
-    -   Windows Internet Explorer 9  
+  -   Windows Internet Explorer 9  
   
-    -   Windows Internet Explorer 10  
+  -   Windows Internet Explorer 10  
   
-    -   Mozilla Firefox 및 Google Chrome의 지원되는 버전을 확인하려면 [여기](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)로 이동하세요.  
+  -   Mozilla Firefox 및 Google Chrome의 지원되는 버전을 확인하려면 [여기](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)로 이동하세요.  
   
--   [코딩된 UI 다중 브라우저용 Selenium 구성 요소](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)를 설치합니다.  
+- [코딩된 UI 다중 브라우저용 Selenium 구성 요소](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)를 설치합니다.  
   
- **모든 웹 브라우저에 어떤 기능이 지원됩니까?**  
+  **모든 웹 브라우저에 어떤 기능이 지원됩니까?**  
   
--   속성, 검색, 재생 대기자 등 [기능 제어를 위한 사용자 지정 코드를 추가](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx)합니다.  
+- 속성, 검색, 재생 대기자 등 [기능 제어를 위한 사용자 지정 코드를 추가](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx)합니다.  
   
--   팝업 및 대화 상자  
+- 팝업 및 대화 상자  
   
--   [반환 형식이 없는 기본 JavaScript 실행](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
+- [반환 형식이 없는 기본 JavaScript 실행](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
   
--   검색 복원력(스마트 매치 사용) 및 [성능 향상](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
+- 검색 복원력(스마트 매치 사용) 및 [성능 향상](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
   
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>여러 웹 브라우저 형식에 코딩된 UI 테스트를 사용해야 하는 이유는 무엇입니까?  
  다양한 웹 브라우저 종류로 웹 응용 프로그램을 테스트하면 다양한 브라우저를 실행하는 사용자의 UI 환경을 더 잘 에뮬레이션할 수 있습니다. 예를 들어, 응용 프로그램에 다른 웹 브라우저와 호환되지 않는 Internet Explorer의 컨트롤 또는 코드를 포함할 수 있습니다. 다른 브라우저에서 코딩된 UI 테스트를 실행하면 고객에게 영향을 미치기 전에 문제를 발견하고 수정할 수 있습니다.  
@@ -74,16 +74,16 @@ ms.locfileid: "49210381"
   
 #### <a name="installing-selenium-components"></a>Selenium 구성 요소 설치  
   
-1.  **도구** 메뉴 모음에서 **확장 및 업데이트**를 선택합니다.  
+1. **도구** 메뉴 모음에서 **확장 및 업데이트**를 선택합니다.  
   
-2.  [확장] 및 [업데이트] 대화 상자에서 `Selenium components for Cross Browser Testing`을 검색합니다.  
+2. [확장] 및 [업데이트] 대화 상자에서 `Selenium components for Cross Browser Testing`을 검색합니다.  
   
-3.  확장명을 강조 표시하고 **다운로드**를 선택합니다.  
+3. 확장명을 강조 표시하고 **다운로드**를 선택합니다.  
   
-    > [!TIP]
-    >  또한 [여기](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)에서 코딩된 UI 다중 브라우저 테스트용 Selenium 구성 요소를 다운로드할 수 있습니다.  
+   > [!TIP]
+   >  또한 [여기](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)에서 코딩된 UI 다중 브라우저 테스트용 Selenium 구성 요소를 다운로드할 수 있습니다.  
   
- 코딩된 UI 테스트를 만들고 사용하는 방법은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)를 참조하세요.  
+   코딩된 UI 테스트를 만들고 사용하는 방법은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)를 참조하세요.  
   
 ### <a name="enable-debugging"></a>디버깅 사용  
  웹 응용 프로그램을 디버깅하려면 다음 구성 옵션을 완료해야 합니다.  
@@ -106,29 +106,29 @@ ms.locfileid: "49210381"
  *그 외 무엇을 알아야 하나요?*  
  **참고**  
   
--   ![필수 조건](../test/media/prereq.png "필수 조건") Apple Safari 웹 브라우저는 지원되지 않습니다.  
+- ![필수 조건](../test/media/prereq.png "필수 조건") Apple Safari 웹 브라우저는 지원되지 않습니다.  
   
--   ![필수 조건](../test/media/prereq.png "필수 조건") 웹 브라우저를 시작하는 작업은 코딩된 UI 테스트에 포함되어야 합니다.  
+- ![필수 조건](../test/media/prereq.png "필수 조건") 웹 브라우저를 시작하는 작업은 코딩된 UI 테스트에 포함되어야 합니다.  
   
-     웹 브라우저가 이미 열려 있는 상태에서는 Internet Explorer를 사용하지 않는 이상 단계를 실행하려고 해도 재생이 실패합니다. 따라서 코딩된 UI 테스트에 웹 브라우저 시작을 포함하는 것이 좋습니다.  
+   웹 브라우저가 이미 열려 있는 상태에서는 Internet Explorer를 사용하지 않는 이상 단계를 실행하려고 해도 재생이 실패합니다. 따라서 코딩된 UI 테스트에 웹 브라우저 시작을 포함하는 것이 좋습니다.  
   
--   ![필수 조건](../test/media/prereq.png "필수 조건") 최대화, 최소화, 복원 등의 브라우저별 기본 UI 작업은 자동화할 수 없습니다.  
+- ![필수 조건](../test/media/prereq.png "필수 조건") 최대화, 최소화, 복원 등의 브라우저별 기본 UI 작업은 자동화할 수 없습니다.  
   
- **팁**  
+  **팁**  
   
--   ![팁](../test/media/tip.png "팁") 출력을 구성하여 코딩된 UI 로그에 스크린 샷을 포함할 수 있습니다. 이렇게 하려면 QTAgent32.exe.config 파일에 일부 구성 설정을 설정해야 합니다. 기본적으로 이 파일은 다음 디렉터리에 설치됩니다.  
+- ![팁](../test/media/tip.png "팁") 출력을 구성하여 코딩된 UI 로그에 스크린 샷을 포함할 수 있습니다. 이렇게 하려면 QTAgent32.exe.config 파일에 일부 구성 설정을 설정해야 합니다. 기본적으로 이 파일은 다음 디렉터리에 설치됩니다.  
   
-     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
+   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
-     다음 값을 설정합니다.  
+   다음 값을 설정합니다.  
   
-    -   `EqtTraceLevel` 섹션의 `system.diagnostics`  
+  - `EqtTraceLevel` 섹션의 `system.diagnostics`  
   
-    -   `<add name="EqtTraceLevel" value="4" />`  
+  - `<add name="EqtTraceLevel" value="4" />`  
   
-         값을 3 이상으로 설정하면 각 작업에 대한 스크린 샷이 캡처됩니다. 값을 1 또는 2로 설정할 경우에는 스크린 샷이 오류 작업에 대해서만 캡처됩니다.  
+     값을 3 이상으로 설정하면 각 작업에 대한 스크린 샷이 캡처됩니다. 값을 1 또는 2로 설정할 경우에는 스크린 샷이 오류 작업에 대해서만 캡처됩니다.  
   
-     자세한 내용은 [코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)을 참조하세요.  
+    자세한 내용은 [코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)을 참조하세요.  
   
 ## <a name="external-resources"></a>외부 리소스  
   

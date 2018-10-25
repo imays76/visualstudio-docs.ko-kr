@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7eb0ae4fd357b5a021bee0f885af5586048033e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899294"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,52 +34,52 @@ Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual St
   
  [Visual Studio IDE에서 Windows 8 데스크톱 또는 Windows Server 2012에서 실행되는 앱에 대한 데이터 수집](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
--   [Visual Studio IDE에서 샘플링을 사용하여 Windows 8 데스크톱 또는 Windows Server 2012에서 실행되는 앱에 대한 데이터 수집](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
+- [Visual Studio IDE에서 샘플링을 사용하여 Windows 8 데스크톱 또는 Windows Server 2012에서 실행되는 앱에 대한 데이터 수집](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
   
- [명령줄에서 프로파일링](#BKMK_Profiling_from_the_command_line)  
+  [명령줄에서 프로파일링](#BKMK_Profiling_from_the_command_line)  
   
- [TIP(계층 상호 작용) 데이터 수집](#BKMK_Collecting_tier_interaction__TIP__data)  
+  [TIP(계층 상호 작용) 데이터 수집](#BKMK_Collecting_tier_interaction__TIP__data)  
   
 ##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Visual Studio IDE에서 Windows 스토어 앱에 대한 데이터 수집  
  JavaScript 및 HTML 5로 작성된 Windows 스토어 앱을 프로파일링하는 경우 JavaScript 코드에 대한 계측 데이터를 수집합니다. Visual C++, Visual C# 또는 Visual Basic으로 작성된 Windows 스토어 앱 또는 구성 요소를 프로파일링하는 경우 네이티브 코드 및 관리 코드에 대한 샘플링 데이터를 수집합니다. 로컬이나 원격 컴퓨터에서 앱을 프로파일링할 수 있습니다.  
   
  Windows 스토어 앱을 프로파일링하는 경우 다음 프로파일링 기능과 옵션은 지원되지 않습니다.  
   
--   샘플링 방법을 사용하여 JavaScript 앱 프로파일링  
+- 샘플링 방법을 사용하여 JavaScript 앱 프로파일링  
   
--   계측 방법을 사용하여 관리 코드 및 네이티브 코드 프로파일링  
+- 계측 방법을 사용하여 관리 코드 및 네이티브 코드 프로파일링  
   
--   동시성 프로파일링  
+- 동시성 프로파일링  
   
--   .NET 메모리 프로파일링  
+- .NET 메모리 프로파일링  
   
--   TIP(계층 상호 작용 프로파일링)  
+- TIP(계층 상호 작용 프로파일링)  
   
--   샘플링 이벤트 및 타이밍 간격 설정 또는 추가 성능 카운터 데이터 수집과 같은 샘플링 옵션  
+- 샘플링 이벤트 및 타이밍 간격 설정 또는 추가 성능 카운터 데이터 수집과 같은 샘플링 옵션  
   
--   성능 및 Windows 카운터 데이터 수집 또는 추가 명령줄 옵션 지정과 같은 계측 옵션  
+- 성능 및 Windows 카운터 데이터 수집 또는 추가 명령줄 옵션 지정과 같은 계측 옵션  
   
- Windows 스토어 앱을 프로파일링하는 방법에 대한 자세한 내용은 Windows 개발자 센터에서 다음 항목을 참조하세요.  
+  Windows 스토어 앱을 프로파일링하는 방법에 대한 자세한 내용은 Windows 개발자 센터에서 다음 항목을 참조하세요.  
   
- [로컬 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+  [로컬 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [원격 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+  [원격 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
- [앱 성능 분석](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [앱 성능 분석](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
--   [JavaScript 함수 타이밍](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [JavaScript 함수 타이밍](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
--   [원격 장치에서 JavaScript 함수 타이밍](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [원격 장치에서 JavaScript 함수 타이밍](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
--   [JavaScript 함수 타이밍 데이터 분석](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [JavaScript 함수 타이밍 데이터 분석](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
--   [로컬 컴퓨터의 Windows 스토어 앱에서 Visual C++, Visual C# 및 Visual Basic 코드 프로파일링](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [로컬 컴퓨터의 Windows 스토어 앱에서 Visual C++, Visual C# 및 Visual Basic 코드 프로파일링](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [원격 장치의 Windows 스토어 앱에서 Visual C++, Visual C# 및 Visual Basic 코드 프로파일링](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [원격 장치의 Windows 스토어 앱에서 Visual C++, Visual C# 및 Visual Basic 코드 프로파일링](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [Windows 스토어 앱의 Visual C++, Visual C# 및 Visual Basic 코드에 대한 성능 데이터 분석](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Windows 스토어 앱의 Visual C++, Visual C# 및 Visual Basic 코드에 대한 성능 데이터 분석](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
- [항목 내용](#BKMK_In_this_topic)  
+  [항목 내용](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Visual Studio IDE에서 Windows 8 데스크톱 또는 Windows Server 2012에서 실행되는 앱에 대한 데이터 수집  
  Windows 8에서는 계측 방법을 사용한 프로파일링이 변경되지 않았습니다.  
@@ -129,25 +129,25 @@ Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual St
   
  **Windows 8 및 Windows Server 2012**  
   
-1.  Windows 8 데스크톱 또는 Windows Server 2012에서 실행되는 앱에서 계층 상호 작용 데이터를 수집하려면 계측 방법을 사용해야 합니다.  
+1. Windows 8 데스크톱 또는 Windows Server 2012에서 실행되는 앱에서 계층 상호 작용 데이터를 수집하려면 계측 방법을 사용해야 합니다.  
   
-2.  Windows 스토어 앱에 대한 계층 상호 작용 데이터는 수집할 수 없습니다.  
+2. Windows 스토어 앱에 대한 계층 상호 작용 데이터는 수집할 수 없습니다.  
   
-3.  지원되는 다른 Windows 버전의 모든 프로파일링 방법에 계층 상호 작용 데이터를 포함할 수 있습니다.  
+3. 지원되는 다른 Windows 버전의 모든 프로파일링 방법에 계층 상호 작용 데이터를 포함할 수 있습니다.  
   
- **성능 마법사 및 성능 탐색기**  
+   **성능 마법사 및 성능 탐색기**  
   
- 성능 탐색기에서 프로파일링 실행에 계층 상호 작용 데이터 수집 옵션을 추가해야 합니다. 또한 성능 탐색기의 대상 노드에 프로젝트, 실행 파일 또는 웹 사이트를 추가해야 합니다. [계층 상호 작용 데이터 수집](../profiling/collecting-tier-interaction-data.md)을 참조하세요.  
+   성능 탐색기에서 프로파일링 실행에 계층 상호 작용 데이터 수집 옵션을 추가해야 합니다. 또한 성능 탐색기의 대상 노드에 프로젝트, 실행 파일 또는 웹 사이트를 추가해야 합니다. [계층 상호 작용 데이터 수집](../profiling/collecting-tier-interaction-data.md)을 참조하세요.  
   
- **원격 컴퓨터에서 TIP 데이터 수집**  
+   **원격 컴퓨터에서 TIP 데이터 수집**  
   
- 원격 컴퓨터에서 계층 상호 작용 데이터를 수집 하려면 복사 해야 합니다 **vs\_프로파일러\_**_\<플랫폼 >_ **\_**  _\<언어 >_**.exe** 에서 파일을 _% VSInstallDir %_**tools\performance Tools\Setups**폴더의 Visual Studio 컴퓨터를 원격 컴퓨터를 설치 합니다. [Visual Studio 원격 도구](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 다운로드 패키지의 프로파일링 도구를 사용할 수 없습니다.  
+   원격 컴퓨터에서 계층 상호 작용 데이터를 수집 하려면 복사 해야 합니다 **vs\_프로파일러\_**_\<플랫폼 >_ **\_**  _\<언어 >_**.exe** 에서 파일을 _% VSInstallDir %_**tools\performance Tools\Setups**폴더의 Visual Studio 컴퓨터를 원격 컴퓨터를 설치 합니다. [Visual Studio 원격 도구](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 다운로드 패키지의 프로파일링 도구를 사용할 수 없습니다.  
   
- [VSPerfCmd](../profiling/vsperfcmd.md) 또는 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)를 사용하여 프로파일링 데이터를 수집할 수 있습니다.  
+   [VSPerfCmd](../profiling/vsperfcmd.md) 또는 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)를 사용하여 프로파일링 데이터를 수집할 수 있습니다.  
   
- **TIP 보고서**  
+   **TIP 보고서**  
   
- 계층 상호 작용 데이터는 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 또는 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md)를 통한 파일 기반 계층 상호 작용 보고서는 사용할 수 없습니다.  
+   계층 상호 작용 데이터는 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 또는 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md)를 통한 파일 기반 계층 상호 작용 보고서는 사용할 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [성능 탐색기](../profiling/performance-explorer.md)   

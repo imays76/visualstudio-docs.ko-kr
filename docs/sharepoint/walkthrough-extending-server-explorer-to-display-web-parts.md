@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc6b015058445ddf35e5d247847a40d01e691047
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915817"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>연습: 웹 파트를 표시 하려면 서버 탐색기를 확장 합니다.
   Visual Studio에서 사용할 수 있습니다 합니다 **SharePoint 연결** 노드의 **서버 탐색기** SharePoint 사이트에서 구성 요소를 볼 수 있습니다. 그러나 **서버 탐색기** 기본적으로 일부 구성 요소를 표시 하지 않습니다. 이 연습에서는 확장할 예정 **서버 탐색기** SharePoint 사이트를 연결 된 각 웹 파트 갤러리에 표시 되도록 합니다.  
@@ -48,26 +48,26 @@ ms.locfileid: "42634740"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료 하려면 개발 컴퓨터의 다음 구성 요소가 필요 합니다.  
   
--   Windows, SharePoint, Visual Studio의 버전을 지원 합니다.  
+- Windows, SharePoint, Visual Studio의 버전을 지원 합니다.  
   
--   Visual Studio SDK입니다. 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
+- Visual Studio SDK입니다. 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
- 다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
+  다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
   
--   SharePoint에 대 한 서버 개체 모델을 사용합니다. 자세한 내용은 [SharePoint Foundation Server 쪽 개체 모델을 사용 하 여](http://go.microsoft.com/fwlink/?LinkId=177796)입니다.  
+- SharePoint에 대 한 서버 개체 모델을 사용합니다. 자세한 내용은 [SharePoint Foundation Server 쪽 개체 모델을 사용 하 여](http://go.microsoft.com/fwlink/?LinkId=177796)입니다.  
   
--   SharePoint 솔루션에서 웹 파트입니다. 자세한 내용은 [웹 파트 개요](http://go.microsoft.com/fwlink/?LinkId=177803)합니다.  
+- SharePoint 솔루션에서 웹 파트입니다. 자세한 내용은 [웹 파트 개요](http://go.microsoft.com/fwlink/?LinkId=177803)합니다.  
   
 ## <a name="create-the-projects"></a>프로젝트 만들기
  이 연습을 완료 하려면 세 개의 프로젝트를 만들어야 합니다.  
   
--   확장을 배포 하려면 VSIX 패키지를 만들려면 VSIX 프로젝트입니다.  
+- 확장을 배포 하려면 VSIX 패키지를 만들려면 VSIX 프로젝트입니다.  
   
--   확장을 구현 하는 클래스 라이브러리 프로젝트. 이 프로젝트는.NET Framework 4.5를 대상으로 해야 합니다.  
+- 확장을 구현 하는 클래스 라이브러리 프로젝트. 이 프로젝트는.NET Framework 4.5를 대상으로 해야 합니다.  
   
--   사용자 지정 SharePoint 명령을 정의 하는 클래스 라이브러리 프로젝트. 이 프로젝트는 the.NET Framework 3.5를 대상 해야 합니다.  
+- 사용자 지정 SharePoint 명령을 정의 하는 클래스 라이브러리 프로젝트. 이 프로젝트는 the.NET Framework 3.5를 대상 해야 합니다.  
   
- 프로젝트를 만들어 연습을 시작 합니다.  
+  프로젝트를 만들어 연습을 시작 합니다.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX 프로젝트를 만들려면  
   

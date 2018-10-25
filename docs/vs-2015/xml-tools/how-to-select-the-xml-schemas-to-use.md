@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863726"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>방법: 사용할 XML 스키마 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,23 +36,23 @@ XML 편집기에서는 %InstallDir%\Xml\Schemas 디렉터리에 있는 스키마
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>스키마 캐시에서 XML 스키마를 선택하려면  
   
-1.  XML 편집기에서 파일을 엽니다.  
+1. XML 편집기에서 파일을 엽니다.  
   
-2.  문서 속성 창에서에서 단추를 클릭 합니다 **스키마** 필드입니다.  
+2. 문서 속성 창에서에서 단추를 클릭 합니다 **스키마** 필드입니다.  
   
-     합니다 **XML 스키마** 대화 상자가 표시 됩니다. 대화 상자 (catalog.xml 파일에서 참조 하는 스키마 포함), 스키마 캐시에서 확장명이.xsd 인 모든 스키마를 나열 하 고 현재 솔루션에 있는 모든 스키마에서 참조 하는 Visual Studio에서 열 수도 있는 `xsd:schemaLocation` 특성 또는 참조 합니다 **스키마** 속성입니다.  
+    합니다 **XML 스키마** 대화 상자가 표시 됩니다. 대화 상자 (catalog.xml 파일에서 참조 하는 스키마 포함), 스키마 캐시에서 확장명이.xsd 인 모든 스키마를 나열 하 고 현재 솔루션에 있는 모든 스키마에서 참조 하는 Visual Studio에서 열 수도 있는 `xsd:schemaLocation` 특성 또는 참조 합니다 **스키마** 속성입니다.  
   
-3.  다음 중 하나를 수행하여 유효성 검사에 사용할 스키마를 선택합니다.  
+3. 다음 중 하나를 수행하여 유효성 검사에 사용할 스키마를 선택합니다.  
   
-    -   에 나열 된 스키마를 선택 합니다 **XML 스키마** 대화 상자에서 클릭 합니다 **사용 하 여** 열을 선택한 후 **이 스키마를 사용 하 여**입니다.  
+   - 에 나열 된 스키마를 선택 합니다 **XML 스키마** 대화 상자에서 클릭 합니다 **사용 하 여** 열을 선택한 후 **이 스키마를 사용 하 여**입니다.  
   
      또는  
   
-    -   에 나열 된 여러 스키마를 선택 합니다 **XML 스키마** 대화 상자를 마우스 오른쪽 단추로 **이 스키마를 사용 하 여**입니다.  
+   - 에 나열 된 여러 스키마를 선택 합니다 **XML 스키마** 대화 상자를 마우스 오른쪽 단추로 **이 스키마를 사용 하 여**입니다.  
   
-4.  **확인**을 클릭합니다.  
+4. **확인**을 클릭합니다.  
   
-     선택한 스키마의 목록으로 다시 복사 되는 **스키마** 문서 속성입니다.  
+    선택한 스키마의 목록으로 다시 복사 되는 **스키마** 문서 속성입니다.  
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>스키마 캐시에 XML 스키마를 추가하려면  
   

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95262fb5cc9afce25e9f4120b981543939e5be
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0209a715ece3e1fa760080ad7ccf0803d11950df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834593"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
-프레임 컴파일러 관련 유형을 검색합니다.  
+컴파일러 별 프레임 형식을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,7 +34,7 @@ HRESULT get_type (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 값을 반환는 [StackFrameTypeEnum 열거형](../../debugger/debug-interface-access/stackframetypeenum.md) 컴파일러 별 프레임 유형을 나타내는 열거형입니다.  
+ [out] 값을 반환 합니다 [StackFrameTypeEnum 열거형](../../debugger/debug-interface-access/stackframetypeenum.md) 컴파일러 별 프레임 형식을 나타내는 열거형입니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  

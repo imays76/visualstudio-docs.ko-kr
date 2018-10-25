@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73267319733dd6e31b21a0a47796f9766250bb89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 51be3e86f1f19cc3701dd456b3085d3e8993b7a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915557"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 스키마 참조
 각 요소 및 특성 명령 테이블 컴파일러 스키마 요소의 표 허용 되는 자식을 사용 하 여 제공합니다.  
@@ -36,11 +36,11 @@ ms.locfileid: "39586836"
   
  모든 GUID 및 ID 값을 기호화 된 이름을 사용 하 여 정의 되어야 합니다. 이러한 이름은 VSCT 또는 헤더 파일에서 정의할 수 있습니다 \<기호 > 섹션입니다. 기호화 된 이름을 로컬 이어야를 통해 포함 \<Include > 요소에서 참조 또는 \<Extern > 요소입니다. 기호화 된 이름에 지정 된 헤더 파일에서 가져온는 \<Extern > 요소의 단순 패턴을 따릅니다.이 경우 #define 기호 값입니다. 값으로 해당 기호 이전에 정의 된 다른 기호를 수 있습니다. GUID 정의 OLE 또는 c + + 형식을 따라야 합니다. ID 값은 다음 줄에 표시 된 대로 10 진수 또는 16 진수 0 x 뒤에 나오는 수 있습니다.  
   
--   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
+- {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
--   {0x6d484634, 0xe53d 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- {0x6d484634, 0xe53d 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
   
- XML 주석을 사용할 수 있지만 라운드트립 그래픽 사용자 인터페이스 (GUI) 도구를 삭제 될 수 있습니다. 내용을 \<주석 > 요소 형식에 관계 없이 유지 관리 되도록 보장 됩니다.  
+  XML 주석을 사용할 수 있지만 라운드트립 그래픽 사용자 인터페이스 (GUI) 도구를 삭제 될 수 있습니다. 내용을 \<주석 > 요소 형식에 관계 없이 유지 관리 되도록 보장 됩니다.  
   
 ## <a name="schema-hierarchy"></a>스키마 계층 구조  
  .Vsct 파일에 다음과 같은 주요 요소가 있습니다.  

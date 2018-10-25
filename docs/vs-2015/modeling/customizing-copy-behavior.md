@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5e57f5d7b3ab3fa7f956516879f687ff9ac7491
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844092"
 ---
 # <a name="customizing-copy-behavior"></a>복사 동작 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "49286470"
   
  기본적으로 사용자가 요소를 클립보드에 복사하면 다음 요소도 복사됩니다.  
   
--   선택한 요소의 포함된 종속 항목 이러한 항목은 복사한 요소를 소스로 사용하는 포함 관계의 대상인 요소입니다.  
+- 선택한 요소의 포함된 종속 항목 이러한 항목은 복사한 요소를 소스로 사용하는 포함 관계의 대상인 요소입니다.  
   
--   복사한 요소 간의 관계 링크  
+- 복사한 요소 간의 관계 링크  
   
- 이 규칙은 복사한 요소와 링크에 재귀적으로 적용됩니다.  
+  이 규칙은 복사한 요소와 링크에 재귀적으로 적용됩니다.  
   
- ![복사 하 여 요소를 붙여넣을](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
+  ![복사 하 여 요소를 붙여넣을](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
   
- 복사한 요소와 링크는 serialize되어 클립보드에 배치되는 EGP(<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>)에 저장됩니다.  
+  복사한 요소와 링크는 serialize되어 클립보드에 배치되는 EGP(<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>)에 저장됩니다.  
   
- 복사한 요소의 이미지도 클립보드에 배치됩니다. 따라서 사용자가 Word 등의 다른 응용 프로그램에 해당 이미지를 붙여넣을 수 있습니다.  
+  복사한 요소의 이미지도 클립보드에 배치됩니다. 따라서 사용자가 Word 등의 다른 응용 프로그램에 해당 이미지를 붙여넣을 수 있습니다.  
   
- 사용자는 DSL 정의에 따라 요소를 수락할 수 있는 대상에 복사한 요소를 붙여넣을 수 있습니다. 예를 들어 구성 요소 솔루션 템플릿에서 생성된 DSL에서 사용자는 포트를 구성 요소에는 붙여넣을 수 있지만 다이어그램에는 붙여넣을 수 없으며, 구성 요소를 다이어그램에는 붙여넣을 수 있지만 다른 구성 요소에는 붙여넣을 수 없습니다.  
+  사용자는 DSL 정의에 따라 요소를 수락할 수 있는 대상에 복사한 요소를 붙여넣을 수 있습니다. 예를 들어 구성 요소 솔루션 템플릿에서 생성된 DSL에서 사용자는 포트를 구성 요소에는 붙여넣을 수 있지만 다이어그램에는 붙여넣을 수 없으며, 구성 요소를 다이어그램에는 붙여넣을 수 있지만 다른 구성 요소에는 붙여넣을 수 없습니다.  
   
 ## <a name="customizing-copy-and-paste-behavior"></a>복사 및 붙여넣기 동작 사용자 지정  
  프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.  
@@ -227,15 +227,15 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
  다음과 같은 세 가지 값이 있습니다.  
   
--   Do not propagate copy  
+- Do not propagate copy  
   
--   Propagate copy to link only - 그룹을 붙여넣을 때 이 링크의 새 복사본이 링크 반대쪽의 기존 요소를 참조합니다.  
+- Propagate copy to link only - 그룹을 붙여넣을 때 이 링크의 새 복사본이 링크 반대쪽의 기존 요소를 참조합니다.  
   
--   Propagate copy to link and opposite role player - 복사한 그룹에 링크 반대쪽의 요소 복사본이 포함됩니다.  
+- Propagate copy to link and opposite role player - 복사한 그룹에 링크 반대쪽의 요소 복사본이 포함됩니다.  
   
- ![PropagateCopyToLinkOnly를 사용 하 여 복사 미치는](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
+  ![PropagateCopyToLinkOnly를 사용 하 여 복사 미치는](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
   
- 수행하는 변경 내용은 복사된 이미지와 요소에 모두 적용됩니다.  
+  수행하는 변경 내용은 복사된 이미지와 요소에 모두 적용됩니다.  
   
 ## <a name="programming-copy-and-paste-behavior"></a>복사 및 붙여넣기 동작 프로그래밍  
  개체 복사, 붙여넣기, 만들기, 삭제와 관련한 대부분의 DSL 동작 측면은 다이어그램에 연결되는 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 인스턴스를 통해 규정됩니다. <xref:Microsoft.VisualStudio.Modeling.ElementOperations>에서 고유한 클래스를 파생시키고 다이어그램 클래스의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 속성을 재정의하여 DSL 동작을 수정할 수 있습니다.  
@@ -249,13 +249,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
 #### <a name="to-define-your-own-elementoperations"></a>고유 ElementOperations를 정의하려면  
   
-1.  DSL 프로젝트의 새 파일에서 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>로부터 파생되는 클래스를 만듭니다.  
+1. DSL 프로젝트의 새 파일에서 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>로부터 파생되는 클래스를 만듭니다.  
   
-2.  다이어그램 클래스에 대한 partial 클래스 정의를 추가합니다. 이 클래스의 이름에서 찾을 수 있습니다 **Dsl\GeneratedCode\Diagrams.cs**합니다.  
+2. 다이어그램 클래스에 대한 partial 클래스 정의를 추가합니다. 이 클래스의 이름에서 찾을 수 있습니다 **Dsl\GeneratedCode\Diagrams.cs**합니다.  
   
-     다이어그램 클래스에서 ElementOperations 서브클래스 인스턴스를 반환하도록 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>를 재정의합니다. 모든 호출에서 같은 인스턴스를 반환해야 합니다.  
+    다이어그램 클래스에서 ElementOperations 서브클래스 인스턴스를 반환하도록 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>를 재정의합니다. 모든 호출에서 같은 인스턴스를 반환해야 합니다.  
   
- DslPackage 프로젝트의 사용자 지정 코드 파일에 이 코드를 추가합니다.  
+   DslPackage 프로젝트의 사용자 지정 코드 파일에 이 코드를 추가합니다.  
   
 ```csharp  
   

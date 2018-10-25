@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f318f6092c24c58399b40c7a20c967a89ca5219
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6140ecf03802e283d8880a9c198e3a26667723f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191635"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899697"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>방법: Visual Studio 빌드 프로세스 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,25 +41,25 @@ ms.locfileid: "49191635"
   
 #### <a name="to-override-a-predefined-target"></a>미리 정의된 대상을 재정의하려면  
   
-1.  재정의하려는 Microsoft.Common.targets에서 미리 정의된 대상을 식별합니다. 안전하게 재정의할 수 있는 대상의 전체 목록은 아래 표를 참조하세요.  
+1. 재정의하려는 Microsoft.Common.targets에서 미리 정의된 대상을 식별합니다. 안전하게 재정의할 수 있는 대상의 전체 목록은 아래 표를 참조하세요.  
   
-2.  `</Project>` 태그 바로 앞에, 프로젝트 파일의 끝에 하나 이상의 대상을 정의합니다. 예를 들어:  
+2. `</Project>` 태그 바로 앞에, 프로젝트 파일의 끝에 하나 이상의 대상을 정의합니다. 예를 들어:  
   
-    ```  
-    <Project>  
-        ...  
-        <Target Name="BeforeBuild">  
-            <!-- Insert tasks to run before build here -->  
-        </Target>  
-        <Target Name="AfterBuild">  
-            <!-- Insert tasks to run after build here -->  
-        </Target>  
-    </Project>  
-    ```  
+   ```  
+   <Project>  
+       ...  
+       <Target Name="BeforeBuild">  
+           <!-- Insert tasks to run before build here -->  
+       </Target>  
+       <Target Name="AfterBuild">  
+           <!-- Insert tasks to run after build here -->  
+       </Target>  
+   </Project>  
+   ```  
   
-3.  프로젝트 파일을 빌드합니다.  
+3. 프로젝트 파일을 빌드합니다.  
   
- 다음 표는 안전하게 재정의할 수 있는 Microsoft.Common.targets에서 모든 대상을 표시합니다.  
+   다음 표는 안전하게 재정의할 수 있는 Microsoft.Common.targets에서 모든 대상을 표시합니다.  
   
 |대상 이름|설명|  
 |-----------------|-----------------|  

@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da31c33288489c3dbaef8a51b5c3fe2fe96d818b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c832686cbe56bb9d2a3b9f31206dada8043e7b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918638"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio에서 개체 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Visual Studio 응용 프로그램에서 데이터 원본으로 사용자 지정 
 ### <a name="loaddata-into-objects"></a>개체로 Loaddata  
  예를 들어 Tableadapter를 사용 하 여 개체에 데이터를 로드 합니다. Tableadapter는 기본적으로 두 가지는 데이터베이스에서 데이터를 인출 하 고 데이터 테이블 채우는 메서드를 사용 하 여 생성 됩니다.  
   
--   `TableAdapter.Fill` 메서드는 반환 되는 데이터를 사용 하 여 기존 데이터 테이블을 채웁니다.  
+- `TableAdapter.Fill` 메서드는 반환 되는 데이터를 사용 하 여 기존 데이터 테이블을 채웁니다.  
   
--   `TableAdapter.GetData` 메서드는 데이터로 채워진 새 데이터 테이블을 반환 합니다.  
+- `TableAdapter.GetData` 메서드는 데이터로 채워진 새 데이터 테이블을 반환 합니다.  
   
- 호출 하는 가장 쉬운 방법은 데이터를 사용 하 여 사용자 지정 개체를 로드 하는 것은 `TableAdapter.GetData` 메서드, 반환 된 데이터 테이블에 있는 행의 컬렉션을 반복 하 고 각 행의 값을 사용 하 여 각 개체를 채웁니다. 만들 수는 `GetData` TableAdapter에 추가 하는 모든 쿼리에 대해 채워진된 데이터 테이블을 반환 하는 메서드입니다.  
+  호출 하는 가장 쉬운 방법은 데이터를 사용 하 여 사용자 지정 개체를 로드 하는 것은 `TableAdapter.GetData` 메서드, 반환 된 데이터 테이블에 있는 행의 컬렉션을 반복 하 고 각 행의 값을 사용 하 여 각 개체를 채웁니다. 만들 수는 `GetData` TableAdapter에 추가 하는 모든 쿼리에 대해 채워진된 데이터 테이블을 반환 하는 메서드입니다.  
   
 > [!NOTE]
 >  Visual Studio에는 TableAdapter 쿼리 이름을 `Fill` 고 `GetData` 기본적으로 모든 유효한 메서드 이름에 해당 이름을 변경할 수 있지만.  

@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911605"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>방법: 실패한 Visual Studio 프로젝트 업그레이드 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ ms.locfileid: "49176119"
   
 #### <a name="to-resolve-incorrect-references"></a>잘못된 참조를 해결하려면  
   
-1.  텍스트 편집기에서 프로젝트 파일을 엽니다.  
+1. 텍스트 편집기에서 프로젝트 파일을 엽니다.  
   
-2.  프로젝트 속성을 엽니다.  
+2. 프로젝트 속성을 엽니다.  
   
-3.  올바른 **대상 프레임 워크** 값입니다. 또는 프로젝트 파일에서 `<TargetFrameworkVersion>` 요소의 값을 직접 수정할 수 있습니다.  
+3. 올바른 **대상 프레임 워크** 값입니다. 또는 프로젝트 파일에서 `<TargetFrameworkVersion>` 요소의 값을 직접 수정할 수 있습니다.  
   
- 프로젝트를 업그레이드된 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에서 실행하려면 프로젝트에 대한 참조를 업데이트하고 참조를 호출하는 `Imports` 또는 `Using` 문도 업데이트해야 합니다. IDE에서 프로젝트를 로드 하는 경우를 사용 하 여 참조를 업데이트할 수 있습니다 **솔루션 탐색기** 또는 **참조 관리자** 대화 상자.  
+   프로젝트를 업그레이드된 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에서 실행하려면 프로젝트에 대한 참조를 업데이트하고 참조를 호출하는 `Imports` 또는 `Using` 문도 업데이트해야 합니다. IDE에서 프로젝트를 로드 하는 경우를 사용 하 여 참조를 업데이트할 수 있습니다 **솔루션 탐색기** 또는 **참조 관리자** 대화 상자.  
   
 ## <a name="see-also"></a>참고 항목  
  [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   

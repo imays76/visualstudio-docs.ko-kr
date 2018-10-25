@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eaa8ae8c5e073d4c83ae6489cd32953b0959072f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c656a9e83e3ec50c24e6bb7006bbdc4d102e9f6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919119"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>샘플링을 사용하여 성능 통계 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ ms.locfileid: "49223700"
 ## <a name="common-tasks"></a>일반 작업  
  성능 세션의 _성능 세션_**속성 페이지** 대화 상자에서 추가 옵션을 지정할 수 있습니다. 이 대화 상자를 열려면  
   
--   **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
+- **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
   
- 다음 표의 작업에서는 샘플링 방법을 사용하여 프로파일링할 때 _성능 세션_**속성 페이지** 대화 상자에서 지정할 수 있는 옵션을 설명합니다.  
+  다음 표의 작업에서는 샘플링 방법을 사용하여 프로파일링할 때 _성능 세션_**속성 페이지** 대화 상자에서 지정할 수 있는 옵션을 설명합니다.  
   
 |작업|관련 내용|  
 |----------|---------------------|  

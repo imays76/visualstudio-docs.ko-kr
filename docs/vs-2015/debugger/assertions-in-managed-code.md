@@ -31,12 +31,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feae495e83e4f78fcd627bec25dd5e988962cec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917702"
 ---
 # <a name="assertions-in-managed-code"></a>관리 코드에 어설션 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,19 +153,19 @@ Debug.Assert ( temp != 0 );
   
  그 밖의 경우에 <xref:System.Diagnostics.Trace> 메서드가 작동하려면 프로그램의 소스 파일 맨 위에 다음 중 하나가 있어야 합니다.  
   
--   Visual Basic에서는 `#Const TRACE = True`  
+- Visual Basic에서는 `#Const TRACE = True`  
   
--   Visual C# 및 C++에서는 `#define TRACE`  
+- Visual C# 및 C++에서는 `#define TRACE`  
   
- 또는 다음과 같은 TRACE 옵션을 사용하여 프로그램을 빌드해야 합니다.  
+  또는 다음과 같은 TRACE 옵션을 사용하여 프로그램을 빌드해야 합니다.  
   
--   Visual Basic에서는 `/d:TRACE=True`  
+- Visual Basic에서는 `/d:TRACE=True`  
   
--   Visual C# 및 C++에서는 `/d:TRACE`  
+- Visual C# 및 C++에서는 `/d:TRACE`  
   
- C# 또는 Visual Basic 릴리스 빌드에서 Debug 메서드를 사용해야 하는 경우 릴리스 구성에서 디버그 기호를 정의해야 합니다.  
+  C# 또는 Visual Basic 릴리스 빌드에서 Debug 메서드를 사용해야 하는 경우 릴리스 구성에서 디버그 기호를 정의해야 합니다.  
   
- C++는 <xref:System.Diagnostics.Debug> 클래스 메서드를 지원하지 않습니다. 사용 하 여 동일한 효과 얻을 수 있습니다 합니다 <xref:System.Diagnostics.Trace> 와 같은 클래스에 조건부 컴파일을 `#ifdef DEBUG`... `#endif`. 이러한 기호를 정의할 수 있습니다 합니다  **\<프로젝트 > 속성 페이지** 대화 상자. 자세한 내용은 [Visual Basic 디버그 구성에 대 한 프로젝트 설정 변경](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) 또는 [C 또는 c + + 디버그 구성에 대 한 프로젝트 설정 변경](../debugger/project-settings-for-a-cpp-debug-configuration.md)합니다.  
+  C++는 <xref:System.Diagnostics.Debug> 클래스 메서드를 지원하지 않습니다. 사용 하 여 동일한 효과 얻을 수 있습니다 합니다 <xref:System.Diagnostics.Trace> 와 같은 클래스에 조건부 컴파일을 `#ifdef DEBUG`... `#endif`. 이러한 기호를 정의할 수 있습니다 합니다  **\<프로젝트 > 속성 페이지** 대화 상자. 자세한 내용은 [Visual Basic 디버그 구성에 대 한 프로젝트 설정 변경](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) 또는 [C 또는 c + + 디버그 구성에 대 한 프로젝트 설정 변경](../debugger/project-settings-for-a-cpp-debug-configuration.md)합니다.  
   
 ##  <a name="BKMK_Assert_arguments"></a> Assert 인수  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 및 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>에는 세 가지 인수가 사용됩니다. 첫 번째 인수는 확인할 조건으로, 필수 인수입니다. 호출 하는 경우 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> 또는 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> 하나의 인수를 사용 합니다 `Assert` 메서드 조건을 확인 하 고, 결과가 false 인 경우에 호출 스택의 내용을 출력 합니다 **출력** 창. 다음 예제에서는 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> 및 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>를 보여 줍니다.  

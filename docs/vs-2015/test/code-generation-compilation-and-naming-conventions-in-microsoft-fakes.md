@@ -13,12 +13,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93d08695a891aeda0d4f153fa2f3e6738d647b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1de284c8d4fdfe5cb84a474641b880590c2094aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895329"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49200020"
 ##  <a name="BKMK_In_this_topic"></a> 항목 내용  
  [코드 생성 및 컴파일](#BKMK_Code_generation_and_compilation)  
   
--   [스텁의 코드 생성 구성](#BKMK_Configuring_code_generation_of_stubs) • [형식 필터링](#BKMK_Type_filtering) • [구체적인 클래스 및 가상 메서드 스텁](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [내부 형식](#BKMK_Internal_types) • [빌드 시간 최적화](#BKMK_Optimizing_build_times) • [어셈블리 이름 충돌 방지](#BKMK_Avoiding_assembly_name_clashing)  
+- [스텁의 코드 생성 구성](#BKMK_Configuring_code_generation_of_stubs) • [형식 필터링](#BKMK_Type_filtering) • [구체적인 클래스 및 가상 메서드 스텁](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [내부 형식](#BKMK_Internal_types) • [빌드 시간 최적화](#BKMK_Optimizing_build_times) • [어셈블리 이름 충돌 방지](#BKMK_Avoiding_assembly_name_clashing)  
   
- [Fakes 명명 규칙](#BKMK_Fakes_naming_conventions)  
+  [Fakes 명명 규칙](#BKMK_Fakes_naming_conventions)  
   
--   [Shim 형식 및 스텁 형식 명명 규칙](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Shim 대리자 속성 또는 스텁 대리자 필드 명명 규칙](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [매개 변수 형식 명명 규칙](#BKMK_Parameter_type_naming_conventions) • [재귀 규칙](#BKMK_Recursive_rules)  
+- [Shim 형식 및 스텁 형식 명명 규칙](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Shim 대리자 속성 또는 스텁 대리자 필드 명명 규칙](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [매개 변수 형식 명명 규칙](#BKMK_Parameter_type_naming_conventions) • [재귀 규칙](#BKMK_Recursive_rules)  
   
- [외부 리소스](#BKMK_External_resources)  
+  [외부 리소스](#BKMK_External_resources)  
   
--   [지침](#BKMK_Guidance)  
+- [지침](#BKMK_Guidance)  
   
 ##  <a name="BKMK_Code_generation_and_compilation"></a> 코드 생성 및 컴파일  
   
@@ -127,21 +127,21 @@ ms.locfileid: "49200020"
   
  shim된 어셈블리에 강력한 이름을 지정하고 어셈블리의 내부 형식에 액세스하려는 경우:  
   
--   테스트 어셈블리와 Fakes 어셈블리에 모두 강력한 이름을 지정해야 합니다.  
+- 테스트 어셈블리와 Fakes 어셈블리에 모두 강력한 이름을 지정해야 합니다.  
   
--   테스트 및 Fakes 어셈블리의 공용 키를 shim된 어셈블리의 **InternalsVisibleToAttribute** 특성에 추가해야 합니다. 다음은 shim된 어셈블리에 강력한 이름을 지정할 경우 shim된 어셈블리 코드의 예제 특성이 표시되는 모양입니다.  
+- 테스트 및 Fakes 어셈블리의 공용 키를 shim된 어셈블리의 **InternalsVisibleToAttribute** 특성에 추가해야 합니다. 다음은 shim된 어셈블리에 강력한 이름을 지정할 경우 shim된 어셈블리 코드의 예제 특성이 표시되는 모양입니다.  
   
-    ```csharp  
-    // FileSystem\AssemblyInfo.cs  
-    [assembly: InternalsVisibleTo("FileSystem.Fakes",  
-        PublicKey=<Fakes_assembly_public_key>)]  
-    [assembly: InternalsVisibleTo("FileSystem.Tests",  
-        PublicKey=<Test_assembly_public_key>)]  
-    ```  
+  ```csharp  
+  // FileSystem\AssemblyInfo.cs  
+  [assembly: InternalsVisibleTo("FileSystem.Fakes",  
+      PublicKey=<Fakes_assembly_public_key>)]  
+  [assembly: InternalsVisibleTo("FileSystem.Tests",  
+      PublicKey=<Test_assembly_public_key>)]  
+  ```  
   
- shim된 어셈블리에 강력한 이름을 지정하는 경우 Fakes 프레임워크는 생성된 Fakes 어셈블리에 자동으로 강력하게 설명합니다. 테스트 어셈블리에 강력하게 서명해야 합니다. [강력한 이름의 어셈블리 만들기 및 사용](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)을 참조하세요.  
+  shim된 어셈블리에 강력한 이름을 지정하는 경우 Fakes 프레임워크는 생성된 Fakes 어셈블리에 자동으로 강력하게 설명합니다. 테스트 어셈블리에 강력하게 서명해야 합니다. [강력한 이름의 어셈블리 만들기 및 사용](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)을 참조하세요.  
   
- Fakes 프레임워크는 동일한 키를 사용하여 생성된 모든 어셈블리에 서명하므로 이 코드 조각을 시작 지점으로 사용하여 fakes 어셈블리에 대한 **InternalsVisibleTo** 특성을 shim된 어셈블리 코드에 추가할 수 있습니다.  
+  Fakes 프레임워크는 동일한 키를 사용하여 생성된 모든 어셈블리에 서명하므로 이 코드 조각을 시작 지점으로 사용하여 fakes 어셈블리에 대한 **InternalsVisibleTo** 특성을 shim된 어셈블리 코드에 추가할 수 있습니다.  
   
 ```csharp  
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]  
@@ -211,38 +211,38 @@ attribute of the Assembly element in the .fakes:
 ###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> shim 형식 및 스텁 형식 명명 규칙  
  **네임스페이스**  
   
--   네임스페이스에 .Fakes 접미사를 추가합니다.  
+- 네임스페이스에 .Fakes 접미사를 추가합니다.  
   
-     예를 들어 `System.Fakes` 네임스페이스에는 System 네임스페이스의 shim 형식이 포함됩니다.  
+   예를 들어 `System.Fakes` 네임스페이스에는 System 네임스페이스의 shim 형식이 포함됩니다.  
   
--   Global.Fakes에는 빈 네임스페이스의 shim 형식이 포함됩니다.  
+- Global.Fakes에는 빈 네임스페이스의 shim 형식이 포함됩니다.  
   
- **형식 이름**  
+  **형식 이름**  
   
--   Shim 접두사를 형식 이름에 추가하여 shim 형식 이름을 작성합니다.  
+- Shim 접두사를 형식 이름에 추가하여 shim 형식 이름을 작성합니다.  
   
-     예를 들어 ShimExample은 Example 형식의 shim 형식입니다.  
+   예를 들어 ShimExample은 Example 형식의 shim 형식입니다.  
   
--   스텁 접두사를 형식 이름에 추가하여 스텁 형식 이름을 작성합니다.  
+- 스텁 접두사를 형식 이름에 추가하여 스텁 형식 이름을 작성합니다.  
   
-     예를 들어 StubIExample은 IExample 형식의 스텁 형식입니다.  
+   예를 들어 StubIExample은 IExample 형식의 스텁 형식입니다.  
   
- **형식 인수 및 중첩된 형식 구조**  
+  **형식 인수 및 중첩된 형식 구조**  
   
--   제네릭 형식 인수가 복사됩니다.  
+- 제네릭 형식 인수가 복사됩니다.  
   
--   중첩된 형식 구조는 shim 형식에 대해 복사됩니다.  
+- 중첩된 형식 구조는 shim 형식에 대해 복사됩니다.  
   
 ###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> shim 대리자 속성 또는 스텁 대리자 필드 명명 규칙  
  필드 명명에 대한 **기본 규칙**이며, 빈 이름에서 시작합니다.  
   
--   메서드 이름을 추가합니다.  
+- 메서드 이름을 추가합니다.  
   
--   메서드 이름이 명시적 인터페이스 구현인 경우 점이 제거됩니다.  
+- 메서드 이름이 명시적 인터페이스 구현인 경우 점이 제거됩니다.  
   
--   메서드가 제네릭인 경우 `Of`*n*이 추가됩니다. 여기서 *n*은 제네릭 메서드 인수 수입니다.  
+- 메서드가 제네릭인 경우 `Of`*n*이 추가됩니다. 여기서 *n*은 제네릭 메서드 인수 수입니다.  
   
- getter 또는 setter 속성과 같은 **특수 메서드 이름**은 다음 표에 설명된 대로 처리됩니다.  
+  getter 또는 setter 속성과 같은 **특수 메서드 이름**은 다음 표에 설명된 대로 처리됩니다.  
   
 |메서드 특성...|예제|추가되는 메서드 이름|  
 |-------------------|-------------|--------------------------|  

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899957"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 요소 (Visual Studio 프로젝트 템플릿)
 프로젝트 템플릿에 포함 된 파일을 지정 합니다.  
@@ -53,14 +53,14 @@ ms.locfileid: "39637184"
   
 ### <a name="attributes"></a>특성  
   
-|특성|설명|  
-|---------------|-----------------|  
-|`TargetFileName`|선택적 특성입니다.<br /><br /> 프로젝트를 템플릿에서 만들면 프로젝트 항목의 경로 이름을 지정 합니다. 이 특성은 템플릿에서 디렉터리 구조와에서 다른 디렉터리 구조를 만드는 데 유용한 *.zip* 파일 또는 항목 이름을 만드는 데 사용 되는 매개 변수를 대체 합니다.|  
-|`ReplaceParameters`|선택적 특성입니다.<br /><br /> 항목 템플릿에서 프로젝트를 만들 때 대체 되어야 하는 매개 변수 값에 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다.|  
-|`OpenInEditor`|선택적 특성입니다.<br /><br /> 항목을에서 각각의 편집기에서 열 수 있는지 여부를 지정 하는 부울 값 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 템플릿에서 프로젝트를 만들면 됩니다.<br /><br /> `OpenInWebBrowser` 하 고 `OpenInHelpBrowser` 사용 하 여 항목의 특성은 무시 됩니다는 `OpenInEditor` 값 `true`.<br /><br /> 기본값은 `false`입니다.|  
-|`OpenInWebBrowser`|선택적 특성입니다.<br /><br /> 항목은 열 수 있는지 웹 브라우저 템플릿에서 프로젝트를 만들 때 지정 하는 부울 값입니다.<br /><br /> 웹 브라우저에서 HTML 파일 및 로컬 프로젝트에 있는 텍스트 파일을 열 수 있습니다. 이 특성을 사용 하 여 외부 Url은 열 수 없습니다.<br /><br /> 기본값은 `false`입니다.|  
-|`OpenInHelpBrowser`|선택적 특성입니다.<br /><br /> 프로젝트를 템플릿에서 만들면 도움말 뷰어에서 항목을 열 해야 하는지 여부를 지정 하는 부울 값입니다.<br /><br /> 도움말 브라우저에서 HTML 파일 및 로컬 프로젝트에 있는 텍스트 파일을 열 수 있습니다. 이 특성을 사용 하 여 외부 Url은 열 수 없습니다.<br /><br /> 기본값은 `false`입니다.|  
-|`OpenOrder`|선택적 특성입니다.<br /><br /> 항목을 각각의 편집기에서 열립니다는 순서를 나타내는 숫자 값을 지정 합니다. 모든 값에 10의 배수 여야 합니다. 높은 항목을 `OpenOrder` 값 먼저 열립니다.|  
+| 특성 | 설명 |
+|---------------------| - |
+| `TargetFileName` | 선택적 특성입니다.<br /><br /> 프로젝트를 템플릿에서 만들면 프로젝트 항목의 경로 이름을 지정 합니다. 이 특성은 템플릿에서 디렉터리 구조와에서 다른 디렉터리 구조를 만드는 데 유용한 *.zip* 파일 또는 항목 이름을 만드는 데 사용 되는 매개 변수를 대체 합니다. |
+| `ReplaceParameters` | 선택적 특성입니다.<br /><br /> 항목 템플릿에서 프로젝트를 만들 때 대체 되어야 하는 매개 변수 값에 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다. |
+| `OpenInEditor` | 선택적 특성입니다.<br /><br /> 항목을에서 각각의 편집기에서 열 수 있는지 여부를 지정 하는 부울 값 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 템플릿에서 프로젝트를 만들면 됩니다.<br /><br /> `OpenInWebBrowser` 하 고 `OpenInHelpBrowser` 사용 하 여 항목의 특성은 무시 됩니다는 `OpenInEditor` 값 `true`.<br /><br /> 기본값은 `false`입니다. |
+| `OpenInWebBrowser` | 선택적 특성입니다.<br /><br /> 항목은 열 수 있는지 웹 브라우저 템플릿에서 프로젝트를 만들 때 지정 하는 부울 값입니다.<br /><br /> 웹 브라우저에서 HTML 파일 및 로컬 프로젝트에 있는 텍스트 파일을 열 수 있습니다. 이 특성을 사용 하 여 외부 Url은 열 수 없습니다.<br /><br /> 기본값은 `false`입니다. |
+| `OpenInHelpBrowser` | 선택적 특성입니다.<br /><br /> 프로젝트를 템플릿에서 만들면 도움말 뷰어에서 항목을 열 해야 하는지 여부를 지정 하는 부울 값입니다.<br /><br /> 도움말 브라우저에서 HTML 파일 및 로컬 프로젝트에 있는 텍스트 파일을 열 수 있습니다. 이 특성을 사용 하 여 외부 Url은 열 수 없습니다.<br /><br /> 기본값은 `false`입니다. |
+| `OpenOrder` | 선택적 특성입니다.<br /><br /> 항목을 각각의 편집기에서 열립니다는 순서를 나타내는 숫자 값을 지정 합니다. 모든 값에 10의 배수 여야 합니다. 높은 항목을 `OpenOrder` 값 먼저 열립니다. |
   
 ### <a name="child-elements"></a>자식 요소  
  없음  
@@ -91,29 +91,29 @@ ms.locfileid: "39637184"
   
 ### <a name="to-rename-files-with-parameters"></a>매개 변수를 사용 하 여 파일 이름을 바꾸려면  
   
-1.  다음 XML을 사용 합니다 *.vstemplate* 파일:  
+1. 다음 XML을 사용 합니다 *.vstemplate* 파일:  
   
-    ```xml  
-    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
-    ```  
+   ```xml  
+   <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
+   ```  
   
-2.  프로젝트 파일을 엽니다 (*.vbproj* 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트) 텍스트 편집기에서 또는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  
+2. 프로젝트 파일을 엽니다 (*.vbproj* 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트) 텍스트 편집기에서 또는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]합니다.  
   
-3.  다음 XML과 유사한 프로젝트 파일의 줄을 찾습니다.  
+3. 다음 XML과 유사한 프로젝트 파일의 줄을 찾습니다.  
   
-    ```xml  
-    <Compile Include="MyFile.vb">  
-    ```  
+   ```xml  
+   <Compile Include="MyFile.vb">  
+   ```  
   
-4.  다음 XML 코드 줄을 바꿉니다.  
+4. 다음 XML 코드 줄을 바꿉니다.  
   
-    ```xml  
-    <Compile Include="$safeprojectname$.vb">  
-    ```  
+   ```xml  
+   <Compile Include="$safeprojectname$.vb">  
+   ```  
   
-     파일 이름은에 사용자 입력에 기반 합니다이 템플릿에서 프로젝트를 만들면 합니다 **새 프로젝트** 대화 상자에서 모든 안전 하지 않은 문자 및 공백을 제거 합니다. 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)합니다.  
+    파일 이름은에 사용자 입력에 기반 합니다이 템플릿에서 프로젝트를 만들면 합니다 **새 프로젝트** 대화 상자에서 모든 안전 하지 않은 문자 및 공백을 제거 합니다. 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램입니다.  
   
 ```  

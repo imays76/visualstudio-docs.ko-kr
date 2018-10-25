@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ba120513d188f0a945ff18331b37062c08018f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917184"
 ---
 # <a name="design-and-create-office-solutions"></a>Office 솔루션을 만들고 디자인
   Visual Studio에서는 몇 가지 유형의 Office 솔루션을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 설명서의 이 섹션에서는 프로젝트 템플릿에 대해 설명하고 Office 프로젝트를 만드는 지침을 제공합니다. 프로젝트를 만든 후 코드 및 사용자 인터페이스 사용자 지정을 구현 하는 방법에 대 한 정보를 참조 하세요 [개발 Office 솔루션](../vsto/developing-office-solutions.md)합니다.  
@@ -41,19 +41,19 @@ ms.locfileid: "35674746"
 ## <a name="choose-a-net-framework-version"></a>.NET Framework 버전을 선택 합니다.  
  요구 사항에 가장 적합한 프로젝트 형식을 선택한 후 개발 프로세스에서 사용할 .NET Framework의 버전을 선택할 수 있습니다. Office 프로젝트에서는 다음과 같은 .NET Framework 버전을 대상으로 지정할 수 있습니다.  
   
--   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
   
--   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+- [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
--   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+- [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
   
- 프로젝트에 대해 선택한.NET Framework 버전을 실행 하 여 솔루션에 대 한 최종 사용자 컴퓨터에 필요 합니다. 예를 들어 경우 프로젝트의 대상이 합니다 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 최종 사용자 컴퓨터에 필요 합니다. 이 예제에서는.NET Framework 3.5가 최종 사용자 컴퓨터에 설치 된 경우 솔루션이 실행 되지 않습니다.  
+  프로젝트에 대해 선택한.NET Framework 버전을 실행 하 여 솔루션에 대 한 최종 사용자 컴퓨터에 필요 합니다. 예를 들어 경우 프로젝트의 대상이 합니다 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 최종 사용자 컴퓨터에 필요 합니다. 이 예제에서는.NET Framework 3.5가 최종 사용자 컴퓨터에 설치 된 경우 솔루션이 실행 되지 않습니다.  
   
- .NET Framework 3.5를 대상으로 하는 VSTO 추가 기능 프로젝트를 마이그레이션하는 경우 Visual Studio에서는 설치한 Office 버전에 따라 프로젝트의 대상 프레임워크를 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상으로 변경합니다.  
+  .NET Framework 3.5를 대상으로 하는 VSTO 추가 기능 프로젝트를 마이그레이션하는 경우 Visual Studio에서는 설치한 Office 버전에 따라 프로젝트의 대상 프레임워크를 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상으로 변경합니다.  
   
- 그러나 Visual Studio에서 대상 프레임워크를 변경한 후 특정 기능을 사용하는 프로젝트의 일부 코드를 수정해야 할 수 있습니다. 대상 프레임 워크를 변경 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법:.NET Framework의 버전을 대상](../ide/how-to-target-a-version-of-the-dotnet-framework.md)합니다. 프로젝트에서 필요할 수 있는 변경 내용에 대 한 자세한 정보를 참조 하세요. [.NET Framework 4 이상으로 마이그레이션 Office 솔루션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)합니다.  
+  그러나 Visual Studio에서 대상 프레임워크를 변경한 후 특정 기능을 사용하는 프로젝트의 일부 코드를 수정해야 할 수 있습니다. 대상 프레임 워크를 변경 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법:.NET Framework의 버전을 대상](../ide/how-to-target-a-version-of-the-dotnet-framework.md)합니다. 프로젝트에서 필요할 수 있는 변경 내용에 대 한 자세한 정보를 참조 하세요. [.NET Framework 4 이상으로 마이그레이션 Office 솔루션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)합니다.  
   
- Visual Studio 프로젝트의 대상.NET Framework를 변경 하 고 ClickOnce를 사용 하 여 솔루션을 배포 하는 경우 확인에.NET Framework의 해당 버전도 선택 해야 합니다 **필수 구성 요소** 대화 상자. 이 선택은 프로젝트의 대상 프레임워크를 변경할 때 자동으로 변경되지 않습니다. 자세한 내용은 [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에서 필수 구성 요소 설치](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)합니다.  
+  Visual Studio 프로젝트의 대상.NET Framework를 변경 하 고 ClickOnce를 사용 하 여 솔루션을 배포 하는 경우 확인에.NET Framework의 해당 버전도 선택 해야 합니다 **필수 구성 요소** 대화 상자. 이 선택은 프로젝트의 대상 프레임워크를 변경할 때 자동으로 변경되지 않습니다. 자세한 내용은 [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에서 필수 구성 요소 설치](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)합니다.  
   
 > [!NOTE]  
 >  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]을 사용하여 만드는 Office 프로젝트에서 .NET Framework 3.5 또는 이전 버전을 대상으로 지정할 수 없습니다. [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]을 사용하여 만드는 Office 프로젝트에는 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]에서 처음 도입된 기능이 필요합니다.  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a61e8a3cadeeadf0657ca6fe293a527113505a0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e49933c0bdc5b9a98c165aebd8e263bca2a2be5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867522"
 ---
 # <a name="namematch"></a>NAME_MATCH
-이름 일치에 대 한 사례 옵션을 선택 합니다.  
+이름과 일치 하는 경우 옵션을 선택 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,13 +48,13 @@ public enum NameMatchOptions {
  지정된 옵션이 없습니다.  
   
  nmCaseSensitive  
- 일치 시킬 이름 대/소문자 구분 함을 나타냅니다.  
+ 일치 시킬 이름 대/소문자 구분 됨을 나타냅니다.  
   
  nmCaseInsensitive  
- 일치 시킬 이름이 대/소문자 구분 되지 않는지를 나타냅니다.  
+ 이름 일치는 대/소문자 구분을 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
- 다음 방법에 대해 인수로 전달 합니다.  
+ 다음 메서드에 인수로 전달 합니다.  
   
 -   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   

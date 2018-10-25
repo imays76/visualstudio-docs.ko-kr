@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846983"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>방법: 기존 형식 보기(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49305289"
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>클래스 다이어그램에서 프로젝트의 형식을 보려면  
   
-1.  솔루션 탐색기의 프로젝트에서 기존 클래스 다이어그램(.cd) 파일을 엽니다. 또는 클래스 다이어그램이 없으면 프로젝트에 새 클래스 다이어그램을 추가합니다. [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.  
+1. 솔루션 탐색기의 프로젝트에서 기존 클래스 다이어그램(.cd) 파일을 엽니다. 또는 클래스 다이어그램이 없으면 프로젝트에 새 클래스 다이어그램을 추가합니다. [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.  
   
-2.  솔루션 탐색기의 프로젝트에서 소스 코드 파일을 클래스 다이어그램으로 끌어 놓습니다.  
+2. 솔루션 탐색기의 프로젝트에서 소스 코드 파일을 클래스 다이어그램으로 끌어 놓습니다.  
   
-    > [!WARNING]
-    >  여러 앱 간에 코드를 공유하는 프로젝트가 솔루션에 포함되어 있는 경우 다음 소스에서만 파일이나 코드를 클래스 다이어그램으로 끌어 올 수 있습니다.  
-    >   
-    >  -   다이어그램을 포함하는 앱 프로젝트  
-    > -   앱 프로젝트로 가져온 공유 프로젝트  
-    > -   참조된 프로젝트  
-    > -   어셈블리  
+   > [!WARNING]
+   >  여러 앱 간에 코드를 공유하는 프로젝트가 솔루션에 포함되어 있는 경우 다음 소스에서만 파일이나 코드를 클래스 다이어그램으로 끌어 올 수 있습니다.  
+   > 
+   > - 다이어그램을 포함하는 앱 프로젝트  
+   >   -   앱 프로젝트로 가져온 공유 프로젝트  
+   >   -   참조된 프로젝트  
+   >   -   어셈블리  
   
-     소스 코드 파일에 정의된 형식을 나타내는 모양은 다이어그램에서 파일을 끌어 놓은 위치에 표시됩니다.  
+    소스 코드 파일에 정의된 형식을 나타내는 모양은 다이어그램에서 파일을 끌어 놓은 위치에 표시됩니다.  
   
- 클래스 뷰의 프로젝트 노드에서 클래스 다이어그램으로 하나 이상의 형식을 끌어 놓아 프로젝트에 있는 형식을 볼 수도 있습니다.  
+   클래스 뷰의 프로젝트 노드에서 클래스 다이어그램으로 하나 이상의 형식을 끌어 놓아 프로젝트에 있는 형식을 볼 수도 있습니다.  
   
 > [!TIP]
 >  클래스 뷰가 열려 있지 않으면 **보기** 메뉴에서 클래스 뷰를 엽니다. 클래스 뷰에 대한 자세한 내용은 [클래스 및 해당 멤버 보기](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)를 참조하세요.  

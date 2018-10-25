@@ -16,29 +16,29 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897773"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>조건 선택 대화 상자(레거시)
 에 대해 설명 하는 방법을 사용 하 여는 **조건 선택** 레거시 대화 상자 [!INCLUDE[wfd1](../includes/wfd1-md.md)]합니다. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.  
   
  합니다 **조건 선택** 대화 상자는 활동의 조건 속성에 할당 될 선언적 규칙 조건을 선택 하는 데 사용 됩니다. 이러한 규칙 조건은 기본적으로 제공되는 다음과 같은 Windows Workflow Foundation 활동에 대한 속성으로 나타납니다.  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
- 액세스 하는 방법에 대 한 자세한 합니다 **조건 선택** 대화 상자, 참조 [방법: 선언적 규칙 조건 만들기 (레거시)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)합니다.  
+  액세스 하는 방법에 대 한 자세한 합니다 **조건 선택** 대화 상자, 참조 [방법: 선언적 규칙 조건 만들기 (레거시)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)합니다.  
   
- 다음 표에 사용자 인터페이스 (UI) 요소에는 **조건 선택** 대화 상자.  
+  다음 표에 사용자 인터페이스 (UI) 요소에는 **조건 선택** 대화 상자.  
   
 |UI 요소|설명|  
 |----------------|-----------------|  

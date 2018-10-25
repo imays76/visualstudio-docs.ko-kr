@@ -32,12 +32,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b311954172038d20327ab92283812a8b157a0d06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac5c208478147e0b264165383df7deea23720c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867899"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 디버깅 기술
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,23 +51,23 @@ ms.locfileid: "49303916"
   
  [MFC의 메모리 누수 탐지](#BKMK_Memory_leak_detection_in_MFC)  
   
--   [메모리 할당 추적](#BKMK_Tracking_memory_allocations)  
+- [메모리 할당 추적](#BKMK_Tracking_memory_allocations)  
   
--   [메모리 진단 사용](#BKMK_Enabling_memory_diagnostics)  
+- [메모리 진단 사용](#BKMK_Enabling_memory_diagnostics)  
   
--   [메모리 스냅숏 만들기](#BKMK_Taking_memory_snapshots)  
+- [메모리 스냅숏 만들기](#BKMK_Taking_memory_snapshots)  
   
--   [메모리 통계 보기](#BKMK_Viewing_memory_statistics)  
+- [메모리 통계 보기](#BKMK_Viewing_memory_statistics)  
   
--   [개체 덤프 수행](#BKMK_Taking_object_dumps)  
+- [개체 덤프 수행](#BKMK_Taking_object_dumps)  
   
-    -   [메모리 덤프 해석](#BKMK_Interpreting_memory_dumps)  
+  - [메모리 덤프 해석](#BKMK_Interpreting_memory_dumps)  
   
-    -   [개체 덤프 사용자 지정](#BKMK_Customizing_object_dumps)  
+  - [개체 덤프 사용자 지정](#BKMK_Customizing_object_dumps)  
   
-     [MFC 디버그 빌드 크기 줄이기](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
+    [MFC 디버그 빌드 크기 줄이기](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
   
-    -   [선택한 모듈의 디버그 정보를 사용하여 MFC 응용 프로그램 빌드](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
+  - [선택한 모듈의 디버그 정보를 사용하여 MFC 응용 프로그램 빌드](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC를 사용하면 소스 코드의 하드 코드 중단점에 특별한 [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 함수를 사용할 수 있습니다.  
@@ -145,62 +145,62 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **메모리 진단을 활성화하거나 비활성화하려면**  
   
--   전역 함수 [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 을 호출하여 진단 메모리 할당자를 활성화하거나 비활성화합니다. 디버그 라이브러리에서는 메모리 진단이 기본적으로 활성화되어 있기 때문에 일반적으로 이 기능을 사용하여 일시적으로 비활성화하며 이는 프로그램 실행 속도를 높이고 진단 결과를 줄입니다.  
+- 전역 함수 [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 을 호출하여 진단 메모리 할당자를 활성화하거나 비활성화합니다. 디버그 라이브러리에서는 메모리 진단이 기본적으로 활성화되어 있기 때문에 일반적으로 이 기능을 사용하여 일시적으로 비활성화하며 이는 프로그램 실행 속도를 높이고 진단 결과를 줄입니다.  
   
- **afxMemDF로 특정 메모리 진단 기능을 선택하려면**  
+  **afxMemDF로 특정 메모리 진단 기능을 선택하려면**  
   
--   메모리 진단 기능을 보다 자세히 제어하려면 MFC 전역 함수 [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)의 값을 설정하여 각 메모리 진단 기능 사용 여부를 지정할 수 있습니다. 이 변수는 열거 형식 **afxMemDF**가 지정한 대로 다음과 같은 값을 가질 수 있습니다.  
+- 메모리 진단 기능을 보다 자세히 제어하려면 MFC 전역 함수 [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)의 값을 설정하여 각 메모리 진단 기능 사용 여부를 지정할 수 있습니다. 이 변수는 열거 형식 **afxMemDF**가 지정한 대로 다음과 같은 값을 가질 수 있습니다.  
   
-    |값|설명|  
-    |-----------|-----------------|  
-    |**allocMemDF**|진단 메모리 할당자를 사용합니다(기본값).|  
-    |**delayFreeMemDF**|`delete` 또는 `free` 를 호출할 경우 프로그램이 종료될 때까지 메모리 해제를 지연시킵니다. 이렇게 하면 프로그램이 가능한 최대 메모리를 할당하게 됩니다.|  
-    |**checkAlwaysMemDF**|메모리를 할당하거나 해제할 때마다 [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) 를 호출합니다.|  
+  |값|설명|  
+  |-----------|-----------------|  
+  |**allocMemDF**|진단 메모리 할당자를 사용합니다(기본값).|  
+  |**delayFreeMemDF**|`delete` 또는 `free` 를 호출할 경우 프로그램이 종료될 때까지 메모리 해제를 지연시킵니다. 이렇게 하면 프로그램이 가능한 최대 메모리를 할당하게 됩니다.|  
+  |**checkAlwaysMemDF**|메모리를 할당하거나 해제할 때마다 [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) 를 호출합니다.|  
   
-     논리적 OR 연산을 수행하면 다음과 같이 이 값들을 조합하여 사용할 수 있습니다.  
+   논리적 OR 연산을 수행하면 다음과 같이 이 값들을 조합하여 사용할 수 있습니다.  
   
-    ```cpp  
-    afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
-    ```  
+  ```cpp  
+  afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
+  ```  
   
- [항목 내용](#BKMK_In_this_topic)  
+  [항목 내용](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 메모리 스냅숏 만들기  
   
-1.  [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체를 만들고 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 멤버 함수를 호출합니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
+1. [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 개체를 만들고 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 멤버 함수를 호출합니다. 그러면 첫 번째 메모리 스냅숏이 만들어집니다.  
   
-2.  프로그램이 메모리 할당 작업과 할당 취소 작업을 수행하면 다른 `CMemoryState` 개체를 만들고 해당 개체에 대해 `Checkpoint` 를 호출합니다. 그러면 메모리 사용에 대한 두 번째 스냅숏이 만들어집니다.  
+2. 프로그램이 메모리 할당 작업과 할당 취소 작업을 수행하면 다른 `CMemoryState` 개체를 만들고 해당 개체에 대해 `Checkpoint` 를 호출합니다. 그러면 메모리 사용에 대한 두 번째 스냅숏이 만들어집니다.  
   
-3.  세 번째 `CMemoryState` 개체를 만들고 이전의 두 [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 개체를 인수로 제공하여 `CMemoryState` 멤버 함수를 호출합니다. 두 메모리 상태가 서로 다르면 `Difference` 함수가 0이 아닌 값을 반환합니다. 이것은 할당이 취소되지 않은 메모리 블록이 있음을 나타냅니다.  
+3. 세 번째 `CMemoryState` 개체를 만들고 이전의 두 [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 개체를 인수로 제공하여 `CMemoryState` 멤버 함수를 호출합니다. 두 메모리 상태가 서로 다르면 `Difference` 함수가 0이 아닌 값을 반환합니다. 이것은 할당이 취소되지 않은 메모리 블록이 있음을 나타냅니다.  
   
-     다음 예제는 해당 코드의 내용을 보여 줍니다.  
+    다음 예제는 해당 코드의 내용을 보여 줍니다.  
   
-    ```  
-    // Declare the variables needed  
-    #ifdef _DEBUG  
-        CMemoryState oldMemState, newMemState, diffMemState;  
-        oldMemState.Checkpoint();  
-    #endif  
+   ```  
+   // Declare the variables needed  
+   #ifdef _DEBUG  
+       CMemoryState oldMemState, newMemState, diffMemState;  
+       oldMemState.Checkpoint();  
+   #endif  
   
-        // Do your memory allocations and deallocations.  
-        CString s("This is a frame variable");  
-        // The next object is a heap object.  
-       CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
+       // Do your memory allocations and deallocations.  
+       CString s("This is a frame variable");  
+       // The next object is a heap object.  
+      CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
   
-    #ifdef _DEBUG  
-        newMemState.Checkpoint();  
-        if( diffMemState.Difference( oldMemState, newMemState ) )  
-        {  
-            TRACE( "Memory leaked!\n" );  
-        }  
-    #endif  
-    ```  
+   #ifdef _DEBUG  
+       newMemState.Checkpoint();  
+       if( diffMemState.Difference( oldMemState, newMemState ) )  
+       {  
+           TRACE( "Memory leaked!\n" );  
+       }  
+   #endif  
+   ```  
   
-     메모리를 검사하는 문은 프로그램의 디버그 버전에서만 컴파일되도록 `#ifdef`[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** 블록으로 묶어야 합니다.  
+    메모리를 검사하는 문은 프로그램의 디버그 버전에서만 컴파일되도록 `#ifdef`[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** 블록으로 묶어야 합니다.  
   
-     이제 메모리 누수가 확인되었으므로 다른 멤버 함수인 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 를 사용하여 해당 위치를 찾을 수 있습니다.  
+    이제 메모리 누수가 확인되었으므로 다른 멤버 함수인 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 를 사용하여 해당 위치를 찾을 수 있습니다.  
   
- [항목 내용](#BKMK_In_this_topic)  
+   [항목 내용](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> 메모리 통계 보기  
  [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 함수는 두 메모리 상태 개체를 살펴 상태의 시작과 끝 사이의 힙에서 할당 취소되지 않은 모든 개체를 검색합니다. 메모리 스냅숏을 만들고 `CMemoryState::Difference`를 사용하여 스냅숏을 비교한 후 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 를 호출하여 할당이 취소되지 않은 개체에 대한 정보를 가져올 수 있습니다.  
@@ -424,72 +424,72 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> MFC 디버그 빌드 크기 줄이기  
  대형 MFC 응용 프로그램의 디버그 정보는 디스크 공간을 많이 차지할 수 있습니다. 다음 절차 중 하나를 사용하여 크기를 줄일 수 있습니다.  
   
-1.  사용 하 여 MFC 라이브러리를 다시 작성 합니다 [/z7, /Zi, /ZI (디버그 정보 형식)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 옵션을 대신 **/z7**합니다. 이 옵션은 전체 라이브러리의 디버그 정보가 있는 프로그램 데이터베이스(PDB) 파일 하나를 빌드하여 중복을 없애고 공간을 절약합니다.  
+1. 사용 하 여 MFC 라이브러리를 다시 작성 합니다 [/z7, /Zi, /ZI (디버그 정보 형식)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 옵션을 대신 **/z7**합니다. 이 옵션은 전체 라이브러리의 디버그 정보가 있는 프로그램 데이터베이스(PDB) 파일 하나를 빌드하여 중복을 없애고 공간을 절약합니다.  
   
-2.  디버그 정보 없이 MFC 라이브러리를 다시 작성 (없습니다 [/z7, /Zi, /ZI (디버그 정보 형식)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 옵션). 이 경우 디버그 정보가 부족하여 MFC 라이브러리 코드의 디버거 기능을 대부분 사용할 수 없지만 MFC 라이브러리는 이미 모두 디버깅된 상태이므로 문제가 되지 않습니다.  
+2. 디버그 정보 없이 MFC 라이브러리를 다시 작성 (없습니다 [/z7, /Zi, /ZI (디버그 정보 형식)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 옵션). 이 경우 디버그 정보가 부족하여 MFC 라이브러리 코드의 디버거 기능을 대부분 사용할 수 없지만 MFC 라이브러리는 이미 모두 디버깅된 상태이므로 문제가 되지 않습니다.  
   
-3.  아래에 설명된 대로 선택한 모듈의 디버그 정보로 사용자 고유의 응용 프로그램을 빌드합니다.  
+3. 아래에 설명된 대로 선택한 모듈의 디버그 정보로 사용자 고유의 응용 프로그램을 빌드합니다.  
   
- [항목 내용](#BKMK_In_this_topic)  
+   [항목 내용](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 선택한 모듈의 디버그 정보를 사용하여 MFC 응용 프로그램 빌드  
  MFC 디버그 라이브러리를 사용하여 선택한 모듈을 빌드하면 이 모듈에서 단계별 실행 및 다른 디버그 기능을 사용할 수 있습니다. 이 프로시저는 Visual C++ 메이크파일의 디버그 모드와 릴리스 모드를 모두 사용하기 때문에 다음 단계와 같이 변경해야 하며 전체 릴리스 빌드가 필요한 경우에는 "모두 다시 빌드"해야 합니다.  
   
-1.  솔루션 탐색기에서 프로젝트를 선택합니다.  
+1. 솔루션 탐색기에서 프로젝트를 선택합니다.  
   
-2.  **보기** 메뉴에서 **속성 페이지**를 선택합니다.  
+2. **보기** 메뉴에서 **속성 페이지**를 선택합니다.  
   
-3.  먼저 새 프로젝트 구성을 만듭니다.  
+3. 먼저 새 프로젝트 구성을 만듭니다.  
   
-    1.  에  **\<프로젝트 > 속성 페이지** 대화 상자에서 클릭 합니다 **Configuration Manager** 단추입니다.  
+   1.  에  **\<프로젝트 > 속성 페이지** 대화 상자에서 클릭 합니다 **Configuration Manager** 단추입니다.  
   
-    2.  [구성 관리자 대화 상자](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)의 표에서 원하는 프로젝트를 찾습니다. 에 **Configuration** 열에서 선택  **\<새로 만들기... >** 합니다.  
+   2.  [구성 관리자 대화 상자](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)의 표에서 원하는 프로젝트를 찾습니다. 에 **Configuration** 열에서 선택  **\<새로 만들기... >** 합니다.  
   
-    3.  [새 프로젝트 구성 대화 상자](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)의 **새 프로젝트 구성** 상자에 새 구성의 이름을 ?부분 디버그?등과 같이 입력합니다.  
+   3.  [새 프로젝트 구성 대화 상자](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)의 **새 프로젝트 구성** 상자에 새 구성의 이름을 ?부분 디버그?등과 같이 입력합니다.  
   
-    4.  **다음에서 설정 복사** 목록에서 **릴리스**를 선택합니다.  
+   4.  **다음에서 설정 복사** 목록에서 **릴리스**를 선택합니다.  
   
-    5.  **확인** 을 클릭하여 **새 프로젝트 구성**대화 상자를 닫습니다.  
+   5.  **확인** 을 클릭하여 **새 프로젝트 구성**대화 상자를 닫습니다.  
   
-    6.  **구성 관리자** 대화 상자를 닫습니다.  
+   6.  **구성 관리자** 대화 상자를 닫습니다.  
   
-4.  이제 전체 프로젝트의 옵션을 설정합니다.  
+4. 이제 전체 프로젝트의 옵션을 설정합니다.  
   
-    1.  **속성 페이지** 대화 상자에서 **구성 속성** 폴더의 **일반** 범주를 선택합니다.  
+   1.  **속성 페이지** 대화 상자에서 **구성 속성** 폴더의 **일반** 범주를 선택합니다.  
   
-    2.  필요한 경우 프로젝트 설정 표에서 **프로젝트 기본값** 을 확장합니다.  
+   2.  필요한 경우 프로젝트 설정 표에서 **프로젝트 기본값** 을 확장합니다.  
   
-    3.  **프로젝트 기본값**에서 **MFC 사용**을 찾습니다. 현재 설정이 표의 오른쪽 열에 표시됩니다. 현재 설정을 클릭하여 **정적 라이브러리에서 MFC 사용**으로 변경합니다.  
+   3.  **프로젝트 기본값**에서 **MFC 사용**을 찾습니다. 현재 설정이 표의 오른쪽 열에 표시됩니다. 현재 설정을 클릭하여 **정적 라이브러리에서 MFC 사용**으로 변경합니다.  
   
-    4.  **속성 페이지** 대화 상자의 왼쪽 창에서 **C/C++** 폴더를 열고 **전처리기**를 선택합니다. 속성 표에서 **전처리기 정의** 를 찾아 "NDEBUG"를 "_DEBUG"로 대체합니다.  
+   4.  **속성 페이지** 대화 상자의 왼쪽 창에서 **C/C++** 폴더를 열고 **전처리기**를 선택합니다. 속성 표에서 **전처리기 정의** 를 찾아 "NDEBUG"를 "_DEBUG"로 대체합니다.  
   
-    5.  **속성 페이지** 대화 상자의 왼쪽 창에서 **링커** 폴더를 열고 **입력** 범주를 선택합니다. 속성 표에서 **추가 종속성**을 찾습니다. **추가 종속성** 설정에 "NAFXCWD.LIB" 및 "LIBCMT"를 입력합니다.  
+   5.  **속성 페이지** 대화 상자의 왼쪽 창에서 **링커** 폴더를 열고 **입력** 범주를 선택합니다. 속성 표에서 **추가 종속성**을 찾습니다. **추가 종속성** 설정에 "NAFXCWD.LIB" 및 "LIBCMT"를 입력합니다.  
   
-    6.  **확인** 을 클릭하여 새 빌드 옵션을 저장하고 **속성 페이지** 대화 상자를 닫습니다.  
+   6.  **확인** 을 클릭하여 새 빌드 옵션을 저장하고 **속성 페이지** 대화 상자를 닫습니다.  
   
-5.  **빌드** 메뉴에서 **다시 빌드**를 선택합니다. 그러면 모듈에서 모든 디버그 정보가 제거되지만 MFC 라이브러리에 영향을 주지는 않습니다.  
+5. **빌드** 메뉴에서 **다시 빌드**를 선택합니다. 그러면 모듈에서 모든 디버그 정보가 제거되지만 MFC 라이브러리에 영향을 주지는 않습니다.  
   
-6.  이제 응용 프로그램의 선택한 모듈에 디버그 정보를 다시 추가해야 합니다. 디버그 정보로 컴파일한 모듈에서만 중단점을 설정하고 다른 디버거 기능을 사용할 수 있다는 점을 기억하십시오. 디버그 정보를 추가할 각 프로젝트 파일에 대해 다음 작업을 수행하십시오.  
+6. 이제 응용 프로그램의 선택한 모듈에 디버그 정보를 다시 추가해야 합니다. 디버그 정보로 컴파일한 모듈에서만 중단점을 설정하고 다른 디버거 기능을 사용할 수 있다는 점을 기억하십시오. 디버그 정보를 추가할 각 프로젝트 파일에 대해 다음 작업을 수행하십시오.  
   
-    1.  솔루션 탐색기 창에서 해당 프로젝트 아래의 **소스 파일** 폴더를 엽니다.  
+   1.  솔루션 탐색기 창에서 해당 프로젝트 아래의 **소스 파일** 폴더를 엽니다.  
   
-    2.  디버그 정보를 설정할 파일을 선택합니다.  
+   2.  디버그 정보를 설정할 파일을 선택합니다.  
   
-    3.  **보기** 메뉴에서 **속성 페이지**를 선택합니다.  
+   3.  **보기** 메뉴에서 **속성 페이지**를 선택합니다.  
   
-    4.  **속성 페이지** 대화 상자의 **구성 속성** 폴더에서 **C/C++** 폴더를 연 다음 **일반** 범주를 선택합니다.  
+   4.  **속성 페이지** 대화 상자의 **구성 속성** 폴더에서 **C/C++** 폴더를 연 다음 **일반** 범주를 선택합니다.  
   
-    5.  속성 표에서 찾을 **디버그 정보 형식입니다.**  
+   5.  속성 표에서 찾을 **디버그 정보 형식입니다.**  
   
-    6.  **디버깅 정보 형식** 설정을 클릭하고 디버그 정보에 대해 원하는 옵션(대개 **/ZI**)을 선택합니다.  
+   6.  **디버깅 정보 형식** 설정을 클릭하고 디버그 정보에 대해 원하는 옵션(대개 **/ZI**)을 선택합니다.  
   
-    7.  응용 프로그램 마법사로 만든 응용 프로그램을 사용하거나 헤더를 미리 컴파일한 경우, 다른 모듈을 컴파일하기 전에 미리 컴파일한 헤더를 사용하지 않도록 하거나 다시 컴파일해야 합니다. 그렇지 않으면 경고 C4650과 오류 메시지 C2855를 받게 됩니다. 변경 하 여 미리 컴파일된 헤더를 해제할 수 있습니다 합니다 **미리 컴파일된 헤더 만들기/사용** 에서 설정 된  **\<프로젝트 > 속성** 대화 상자 (**구성 속성**  폴더를 **C/c + +** 하위 폴더를 **미리 컴파일된 헤더** 범주).  
+   7.  응용 프로그램 마법사로 만든 응용 프로그램을 사용하거나 헤더를 미리 컴파일한 경우, 다른 모듈을 컴파일하기 전에 미리 컴파일한 헤더를 사용하지 않도록 하거나 다시 컴파일해야 합니다. 그렇지 않으면 경고 C4650과 오류 메시지 C2855를 받게 됩니다. 변경 하 여 미리 컴파일된 헤더를 해제할 수 있습니다 합니다 **미리 컴파일된 헤더 만들기/사용** 에서 설정 된  **\<프로젝트 > 속성** 대화 상자 (**구성 속성**  폴더를 **C/c + +** 하위 폴더를 **미리 컴파일된 헤더** 범주).  
   
-7.  **빌드** 메뉴에서 **빌드** 를 선택하여 날짜가 지난 프로젝트 파일을 다시 빌드합니다.  
+7. **빌드** 메뉴에서 **빌드** 를 선택하여 날짜가 지난 프로젝트 파일을 다시 빌드합니다.  
   
- 이 항목에서 설명한 기술 대신 외부 메이크파일을 사용하여 파일마다 개별적인 옵션을 정의할 수도 있습니다. 이 경우에 MFC 디버그 라이브러리와 링크하려면 각 모듈에 [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) 플래그를 정의해야 합니다. MFC 릴리스 라이브러리를 사용하려면 NDEBUG를 정의해야 합니다. 외부 메이크파일 작성에 대한 자세한 내용은 [NMAKE 참조](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)를 참조하십시오.  
+   이 항목에서 설명한 기술 대신 외부 메이크파일을 사용하여 파일마다 개별적인 옵션을 정의할 수도 있습니다. 이 경우에 MFC 디버그 라이브러리와 링크하려면 각 모듈에 [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) 플래그를 정의해야 합니다. MFC 릴리스 라이브러리를 사용하려면 NDEBUG를 정의해야 합니다. 외부 메이크파일 작성에 대한 자세한 내용은 [NMAKE 참조](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)를 참조하십시오.  
   
- [항목 내용](#BKMK_In_this_topic)  
+   [항목 내용](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual C++ 디버깅](../debugger/debugging-native-code.md)

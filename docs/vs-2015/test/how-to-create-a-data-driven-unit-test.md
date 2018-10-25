@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889362"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>방법: 데이터 기반 단위 테스트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ ms.locfileid: "49177673"
   
  이 항목에는 다음과 같은 단원이 포함되어 있습니다.  
   
--   [테스트 중인 메서드](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [테스트 중인 메서드](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [데이터 소스 만들기](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [데이터 소스 만들기](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [테스트 클래스에 TestContext 추가](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [테스트 클래스에 TestContext 추가](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [테스트 메서드 작성](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [테스트 메서드 작성](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [DataSourceAttribute 지정](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [DataSourceAttribute 지정](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [TestContext.DataRow를 사용하여 데이터 액세스](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [TestContext.DataRow를 사용하여 데이터 액세스](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [테스트 실행 및 결과 보기](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [테스트 실행 및 결과 보기](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- 데이터 기반 단위 테스트를 만드는 단계는 다음과 같습니다.  
+  데이터 기반 단위 테스트를 만드는 단계는 다음과 같습니다.  
   
 1.  테스트 메서드에서 사용할 값이 포함된 데이터 소스를 만듭니다. 테스트를 실행할 컴퓨터에 등록된 모든 형식을 데이터 소스로 사용할 수 있습니다.  
   
@@ -61,17 +61,17 @@ ms.locfileid: "49177673"
 ##  <a name="BKMK_The_method_under_test"></a> 테스트 중인 메서드  
  예를 들어 다음 항목을 만들었다고 가정해 보세요.  
   
-1.  다양한 형식의 계좌에 대한 트랜잭션을 수락하고 처리하는 `MyBank` 솔루션.  
+1. 다양한 형식의 계좌에 대한 트랜잭션을 수락하고 처리하는 `MyBank` 솔루션.  
   
-2.  계좌에 대한 트랜잭션을 관리하는 `MyBank`의 `BankDb` 프로젝트.  
+2. 계좌에 대한 트랜잭션을 관리하는 `MyBank`의 `BankDb` 프로젝트.  
   
-3.  모든 트랜잭션이 은행에 이로운지 확인하기 위해 수학적 함수를 실행하는 `DbBank` 프로젝트의 `Maths` 클래스.  
+3. 모든 트랜잭션이 은행에 이로운지 확인하기 위해 수학적 함수를 실행하는 `DbBank` 프로젝트의 `Maths` 클래스.  
   
-4.  `BankDb` 구성 요소의 동작을 테스트하기 위한 `BankDbTests` 단위 테스트 프로젝트.  
+4. `BankDb` 구성 요소의 동작을 테스트하기 위한 `BankDbTests` 단위 테스트 프로젝트.  
   
-5.  `Maths` 클래스의 동작을 확인하기 위한 `MathsTests` 단위 테스트 클래스.  
+5. `Maths` 클래스의 동작을 확인하기 위한 `MathsTests` 단위 테스트 클래스.  
   
- 루프를 사용하여 두 개의 정수를 더하는 `Maths`의 메서드를 테스트하게 됩니다.  
+   루프를 사용하여 두 개의 정수를 더하는 `Maths`의 메서드를 테스트하게 됩니다.  
   
 ```  
 public int AddIntegers(int first, int second)  

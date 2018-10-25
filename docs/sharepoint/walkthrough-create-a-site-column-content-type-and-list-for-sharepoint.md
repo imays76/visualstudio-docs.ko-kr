@@ -24,29 +24,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635657"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900126"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기
   다음 절차에는 사용자 지정 SharePoint 사이트 열을 만드는 방법을 보여 줍니다-또는 *필드*-사이트 열을 사용 하는 콘텐츠 형식 및 합니다. 또한 새 콘텐츠 형식을 사용 하는 목록을 만드는 방법을 보여 줍니다.  
   
  이 연습에는 다음 작업이 포함됩니다.  
   
--   [사용자 지정 사이트 열을 만드는](#BKMK_CreatingCustSiteCols)합니다.  
+- [사용자 지정 사이트 열을 만드는](#BKMK_CreatingCustSiteCols)합니다.  
   
--   [사용자 지정 콘텐츠 형식을 만들](#BKMK_CreateCustContType)합니다.  
+- [사용자 지정 콘텐츠 형식을 만들](#BKMK_CreateCustContType)합니다.  
   
--   [목록 만들기](#BKMK_CreateList)합니다.  
+- [목록 만들기](#BKMK_CreateList)합니다.  
   
--   [목록 만들기](#BKMK_CreateList)합니다.  
+- [목록 만들기](#BKMK_CreateList)합니다.  
   
--   [응용 프로그램 테스트](#BKMK_TestApp)합니다.  
+- [응용 프로그램 테스트](#BKMK_TestApp)합니다.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
