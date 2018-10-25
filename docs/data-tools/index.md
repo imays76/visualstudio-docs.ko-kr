@@ -10,12 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948410"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Visual Studio에서 데이터 도구를 사용하여 데이터 솔루션 개발
 
@@ -33,7 +33,7 @@ Visual Studio에서 데이터 도구를 사용하여 SQL Server, Azure Data Lake
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>데이터 응용 프로그램 개발에 대한 Visual Studio와 .NET Framework의 도구 및 API 지원에 대한 자세한 정보</h3>
+                        <h3>데이터 응용 프로그램 개발을 위한 Visual Studio와 .NET Framework의 도구 및 API 지원에 대한 자세한 정보</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ Visual Studio에서 데이터 도구를 사용하여 SQL Server, Azure Data Lake
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>디자인, 배포 및 SQL Server Data tools는 데이터베이스 유지 관리 하는 방법에 대 한 자세한 내용은</h3>
+                        <h3>SQL Server Data Tools를 통한 데이터베이스 디자인, 배포 및 유지 관리에 대한 자세한 정보</h3>
                     </div>
                 </div>
             </div>
