@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90afe268a68d6a72e4444dd78a5748d30ddf7b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddd3f6f3fe06b0a02a1df992561428aa04895748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902518"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 소스 파일에서 지정된 된 위치에 대 한 코드 컨텍스트의 목록을 검색합니다.  
@@ -43,16 +43,16 @@ int EnumCodeContexts(
   
 #### <a name="parameters"></a>매개 변수  
  `pDocPos`  
- [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) IDE에 알려진 소스 파일에는 추상 위치를 나타내는 개체입니다.  
+ [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) IDE에 알려진 소스 파일에서 추상 위치를 나타내는 개체입니다.  
   
  `ppEnum`  
  [out] 반환 된 [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) 코드 컨텍스트의 목록을 포함 하는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 방법을 사용 하면 세션 디버그 (SDM) 관리자 또는 IDE를 코드 위치에 원본 파일 위치를 매핑할 수 있습니다. 둘 이상의 코드 컨텍스트는 소스 코드 (예를 들어 c + + 템플릿)의 여러 개의 블록을 생성 하는 경우 반환 됩니다.  
+ 이 방법을 사용 하면 세션 디버그 관리자 (SDM) 또는 IDE에서 코드 위치에 원본 파일 위치를 매핑합니다. 둘 이상의 코드 컨텍스트는 소스 코드 (예: c + + 템플릿)의 여러 요소를 생성 하는 경우 반환 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

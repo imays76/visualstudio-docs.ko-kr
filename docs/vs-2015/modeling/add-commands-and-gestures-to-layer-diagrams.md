@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889791"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>레이어 다이어그램에 명령 및 제스처 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>프로젝트 템플릿을 사용하여 확장을 정의하려면  
   
-1.  **파일** 메뉴에서 **새 프로젝트** 명령을 사용하여 새 솔루션에서 프로젝트를 만듭니다.  
+1. **파일** 메뉴에서 **새 프로젝트** 명령을 사용하여 새 솔루션에서 프로젝트를 만듭니다.  
   
-2.  **새 프로젝트** 대화 상자의 **프로젝트 모델링**에서 **레이어 디자이너 명령 확장** 또는 **레이어 디자이너 제스처 확장**을 선택합니다.  
+2. **새 프로젝트** 대화 상자의 **프로젝트 모델링**에서 **레이어 디자이너 명령 확장** 또는 **레이어 디자이너 제스처 확장**을 선택합니다.  
   
-     템플릿에서 작은 작업 예제가 포함된 프로젝트를 만듭니다.  
+    템플릿에서 작은 작업 예제가 포함된 프로젝트를 만듭니다.  
   
-3.  확장을 테스트하려면 **Ctrl+F5** 또는 **F5**키를 누릅니다.  
+3. 확장을 테스트하려면 **Ctrl+F5** 또는 **F5**키를 누릅니다.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다. 이 인스턴스에서 레이어 다이어그램을 만듭니다. 이 다이어그램에서 명령 또는 제스처 확장이 작동해야 합니다.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다. 이 인스턴스에서 레이어 다이어그램을 만듭니다. 이 다이어그램에서 명령 또는 제스처 확장이 작동해야 합니다.  
   
-4.  실험적 인스턴스를 닫고 샘플 코드를 수정합니다. 자세한 내용은 [탐색 및 업데이트 프로그램 코드에서 모델 계층](../modeling/navigate-and-update-layer-models-in-program-code.md)합니다.  
+4. 실험적 인스턴스를 닫고 샘플 코드를 수정합니다. 자세한 내용은 [탐색 및 업데이트 프로그램 코드에서 모델 계층](../modeling/navigate-and-update-layer-models-in-program-code.md)합니다.  
   
-5.  동일한 프로젝트에 명령 또는 제스처 처리기를 더 추가할 수 있습니다. 자세한 내용은 다음 섹션 중 하나를 참조하세요.  
+5. 동일한 프로젝트에 명령 또는 제스처 처리기를 더 추가할 수 있습니다. 자세한 내용은 다음 섹션 중 하나를 참조하세요.  
   
-     [메뉴 명령 정의](#command)  
+    [메뉴 명령 정의](#command)  
   
-     [제스처 처리기 정의](#gesture)  
+    [제스처 처리기 정의](#gesture)  
   
-6.  기본 인스턴스에서 확장을 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 또는 다른 컴퓨터에서 찾을 합니다 **.vsix** 파일 **bin\\\*** 합니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.  
+6. 기본 인스턴스에서 확장을 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 또는 다른 컴퓨터에서 찾을 합니다 **.vsix** 파일 *bin\\*합니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>별도 VSIX에 명령 또는 제스처 추가  
  명령, 레이어 유효성 검사기 및 기타 확장이 포함된 하나의 VSIX를 만들려면 VSIX를 정의하는 프로젝트 하나와 처리기에 대한 개별 프로젝트를 만드는 것이 좋습니다. 모델링 확장의 다른 형식에 대 한 정보를 참조 하세요 [확장: UML 모델 및 다이어그램](../modeling/extend-uml-models-and-diagrams.md)합니다.  
@@ -116,37 +116,37 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
 ##  <a name="command"></a> 메뉴 명령 정의  
  기존 제스처 또는 명령 프로젝트에 메뉴 명령 정의를 더 추가할 수 있습니다. 각 명령은 다음과 같은 특징이 있는 클래스에 의해 정의됩니다.  
   
--   클래스는 다음과 같이 선언됩니다.  
+- 클래스는 다음과 같이 선언됩니다.  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   네임스페이스 및 클래스 이름은 중요하지 않습니다.  
+- 네임스페이스 및 클래스 이름은 중요하지 않습니다.  
   
--   `ICommandExtension` 을 구현하는 메서드는 다음과 같습니다.  
+- `ICommandExtension` 을 구현하는 메서드는 다음과 같습니다.  
   
-    -   `string Text {get;}` - 메뉴에 표시되는 레이블입니다.  
+  -   `string Text {get;}` - 메뉴에 표시되는 레이블입니다.  
   
-    -   `void QueryStatus(IMenuCommand command)` - 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때 호출되며 사용자의 현재 선택 항목에 대해 명령이 표시되고 사용할 수 있어야 하는지 여부를 확인합니다.  
+  -   `void QueryStatus(IMenuCommand command)` - 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때 호출되며 사용자의 현재 선택 항목에 대해 명령이 표시되고 사용할 수 있어야 하는지 여부를 확인합니다.  
   
-    -   `void Execute(IMenuCommand command)` - 사용자가 명령을 선택할 때 호출됩니다.  
+  -   `void Execute(IMenuCommand command)` - 사용자가 명령을 선택할 때 호출됩니다.  
   
--   현재 선택 항목을 확인하기 위해 `IDiagramContext`를 가져올 수 있습니다.  
+- 현재 선택 항목을 확인하기 위해 `IDiagramContext`를 가져올 수 있습니다.  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- 자세한 내용은 [탐색 및 업데이트 프로그램 코드에서 모델 계층](../modeling/navigate-and-update-layer-models-in-program-code.md)합니다.  
+  자세한 내용은 [탐색 및 업데이트 프로그램 코드에서 모델 계층](../modeling/navigate-and-update-layer-models-in-program-code.md)합니다.  
   
- 새 명령을 추가하려면 다음 샘플을 포함하는 새 코드 파일을 만듭니다. 그런 다음 파일을 테스트하고 편집합니다.  
+  새 명령을 추가하려면 다음 샘플을 포함하는 새 코드 파일을 만듭니다. 그런 다음 파일을 테스트하고 편집합니다.  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  제스처 처리기와 관련하여 다음 사항에 주의하세요.  
   
--   `IGestureExtension` 의 멤버는 다음과 같습니다.  
+- `IGestureExtension` 의 멤버는 다음과 같습니다.  
   
-     **OnDoubleClick** - 사용자가 다이어그램을 두 번 클릭할 때 호출됩니다.  
+   **OnDoubleClick** - 사용자가 다이어그램을 두 번 클릭할 때 호출됩니다.  
   
-     **CanDragDrop** - 사용자가 항목을 다이어그램으로 끄는 동안 마우스를 이동할 때 반복적으로 호출됩니다. 신속하게 작동해야 합니다.  
+   **CanDragDrop** - 사용자가 항목을 다이어그램으로 끄는 동안 마우스를 이동할 때 반복적으로 호출됩니다. 신속하게 작동해야 합니다.  
   
-     **OnDragDrop** - 사용자가 다이어그램에 항목을 놓을 때 호출됩니다.  
+   **OnDragDrop** - 사용자가 다이어그램에 항목을 놓을 때 호출됩니다.  
   
--   각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예:  
+- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예:  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   일부 형식의 끌어온 항목에 대한 처리기는 이미 정의되었습니다. 예를 들어 사용자가 솔루션 탐색기에서 레이어 다이어그램으로 항목을 끌어올 수 있습니다. 이러한 형식의 항목에 대한 끌기 처리기는 정의할 수 없습니다. 이 경우 `DragDrop` 메서드가 호출되지 않습니다.  
+- 일부 형식의 끌어온 항목에 대한 처리기는 이미 정의되었습니다. 예를 들어 사용자가 솔루션 탐색기에서 레이어 다이어그램으로 항목을 끌어올 수 있습니다. 이러한 형식의 항목에 대한 끌기 처리기는 정의할 수 없습니다. 이 경우 `DragDrop` 메서드가 호출되지 않습니다.  
   
- 다이어그램으로 끌어올 때 다른 항목을 디코드 하는 방법에 대 한 자세한 내용은 참조 하세요. [모델링 다이어그램의 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)합니다.  
+  다이어그램으로 끌어올 때 다른 항목을 디코드 하는 방법에 대 한 자세한 내용은 참조 하세요. [모델링 다이어그램의 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [프로그램 코드에서 레이어 모델 탐색 및 업데이트](../modeling/navigate-and-update-layer-models-in-program-code.md)   

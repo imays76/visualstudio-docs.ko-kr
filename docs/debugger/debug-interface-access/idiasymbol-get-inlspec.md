@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b408007b5b9b9eb1046b4c7d82af4063376f82
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4e1ad19cbd667bfe1513b6126956c36440709138
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468959"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818460"
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
-이 함수는 함수를 인라인으로 표시 여부를 나타내는 플래그를 가져옵니다 (중 하나를 사용 하는 [인라인, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) 특성).  
+이 함수는 함수를 인라인으로 표시 여부를 나타내는 플래그를 가져옵니다 (중 하나를 사용 합니다 [__inline 인라인 \__forceinline](/cpp/cpp/inline-functions-cpp) 특성).  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,20 +34,20 @@ HRESULT get_inlSpec(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 반환 `TRUE` 그렇지 않으면 반환 함수가 인라인;으로 표시 된 경우 `FALSE`합니다.  
+ [out] 반환 `TRUE` 함수를 인라인으로;로 표시 되어 있으면 반환이 고, 그렇지 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |요구 사항|설명|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
-|버전:|DIA SDK v 8.0|  
+|버전:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

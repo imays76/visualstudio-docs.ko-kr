@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e87eb61c70f3c3be28058c2acbc39f24d919c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 98febaa0d72071ac990cb88cec2d56845b3e9d67
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911826"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
 OEM 기호의 데이터 바이트를 검색합니다.  
@@ -36,19 +36,19 @@ HRESULT get_dataBytes (
   
 #### <a name="parameters"></a>매개 변수  
  `cbData`  
- [in] 데이터를 보유 하는 버퍼의 크기입니다.  
+ [in] 데이터를 저장할 버퍼의 크기입니다.  
   
  `pcbData`  
- [out] 쓰여진 바이트 수를 반환 하거나, 있는 경우는 `data` 매개 변수는 `NULL`, 사용 가능한 바이트의 수를 반환 합니다.  
+ [out] 쓰여진 바이트 수를 반환 또는 합니다 `data` 매개 변수는 `NULL`, 사용 가능한 바이트의 수를 반환 합니다.  
   
  `data[]`  
  [out] 데이터 바이트를 사용 하 여 입력 되는 버퍼입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

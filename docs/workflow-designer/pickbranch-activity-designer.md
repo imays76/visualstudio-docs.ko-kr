@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c2a36392f3f83f533c2d072398800e105727b0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e45c8ec2d7af5f1bfde5e145607728d3ff0bc85d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831785"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 활동 디자이너
 
@@ -55,7 +55,7 @@ ms.locfileid: "36755561"
 다음 표에서 가장 유용한 <xref:System.Activities.Statements.PickBranch> 속성 워크플로 디자이너에서 사용 하는 방법을 설명 합니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|헤더에 표시 되는 친숙 한 이름 합니다 **PickBranch** 디자이너입니다. 기본값은 분기입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|각 <xref:System.Activities.Statements.PickBranch>에는 <xref:System.Activities.Statements.PickBranch.Trigger%2A>을 호출할 수 있는 <xref:System.Activities.Statements.PickBranch.Action%2A> 활동이 포함되어 있습니다.|
 |<xref:System.Activities.Statements.PickBranch.Action%2A>|False|각 <xref:System.Activities.Statements.PickBranch>에는 트리거될 경우 실행되는 <xref:System.Activities.Statements.PickBranch.Action%2A>이 포함되어 있습니다.|

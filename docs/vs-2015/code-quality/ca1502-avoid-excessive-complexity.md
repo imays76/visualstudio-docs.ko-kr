@@ -20,15 +20,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f81efa03c3955114561e923c232e8ee81dd2af6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b582d4679aee10010741994117b8b17f47b23aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890584"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: 지나치게 복잡하게 만들지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
@@ -59,11 +60,11 @@ ms.locfileid: "49259079"
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>순환 복잡성 계산 되는 방법
  순환 복잡성 다음과 1을 더하여 계산 됩니다.
 
--   분기 수 (같은 `if`, `while`, 및 `do`)
+- 분기 수 (같은 `if`, `while`, 및 `do`)
 
--   수가 `case` 문에서 `switch`
+- 수가 `case` 문에서 `switch`
 
- 다음 예제에서는 다양 한 순환 복잡성을 가진 메서드를 보여 줍니다.
+  다음 예제에서는 다양 한 순환 복잡성을 가진 메서드를 보여 줍니다.
 
 ## <a name="example"></a>예제
  **1의 순환 복잡성**

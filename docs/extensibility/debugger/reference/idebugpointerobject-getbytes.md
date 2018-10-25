@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1459a0f99dd4b0ea9c9e998404b1ffe1733cb3bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 106472037873045b0b30381e6ce901c89b342bae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916551"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-연속 된 바이트의 계열로 가리키는 값을 가져옵니다.  
+일련의 연속 된 바이트를 가리키는 값을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,22 +47,22 @@ int GetBytes(
   
 #### <a name="parameters"></a>매개 변수  
  `dwStart`  
- [in] 개체의 시작 부분부터 바이트 오프셋을 가리키는입니다.  
+ [in] 개체의 시작 부분에서 바이트 오프셋을 지정 합니다.  
   
  `dwCount`  
  [in] 검색할 바이트 수입니다.  
   
  `pBytes`  
- [out에서] 일련의 연속 된 바이트 값을 사용 하 여 입력은 배열, 가리키는 개체에서 지정된 된 오프셋에서 시작 합니다.  
+ [out에서] 일련의 연속 된 바이트 값을 사용 하 여 입력은 배열에서 가리키는 개체에서 지정 된 오프셋에서 시작 합니다.  
   
  `pdwBytes`  
- [out] 실제 검색 바이트 수를 반환 합니다.  
+ [out] 실제로 검색 하는 바이트 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 경우이 메서드는 사용이 표시 된 대로 포인터 [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) 기본 형식 또는 기본 형식 (즉, 단순한 바이트 시퀀스를 나타낼 수 있는 배열)의 간단한 배열을 가리킵니다.  
+ 이 메서드는 경우 사용이 나타낸 마우스 포인터 [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) 기본 형식 또는 기본 형식 (즉, 간단한 바이트 시퀀스를 나타낼 수 있는 배열)의 간단한 배열을 가리킵니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   

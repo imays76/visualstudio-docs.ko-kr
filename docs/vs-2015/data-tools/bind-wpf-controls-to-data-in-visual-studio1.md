@@ -25,12 +25,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3852a02015ba175b49a8e94adf8991003707a497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914686"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,26 +68,26 @@ ms.locfileid: "49237018"
 ### <a name="datasets"></a>데이터 집합  
  테이블 또는 열을 끌어다 놓으면 합니다 **데이터 원본** 창에서 디자이너로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 생성 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 다음을 수행 하는:  
   
--   항목을 끌어 온 컨테이너의 리소스에 데이터 집합과 새 <xref:System.Windows.Data.CollectionViewSource>를 추가합니다. <xref:System.Windows.Data.CollectionViewSource>는 데이터 집합에 있는 데이터를 탐색하고 표시하는 데 사용할 수 있는 개체입니다.  
+- 항목을 끌어 온 컨테이너의 리소스에 데이터 집합과 새 <xref:System.Windows.Data.CollectionViewSource>를 추가합니다. <xref:System.Windows.Data.CollectionViewSource>는 데이터 집합에 있는 데이터를 탐색하고 표시하는 데 사용할 수 있는 개체입니다.  
   
--   컨트롤에 대한 데이터 바인딩을 만듭니다. 디자이너의 기존 컨트롤로 항목을 끌면 XAML이 컨트롤을 항목에 바인딩합니다. 컨테이너에 항목을 끌면는 XAML 끌어 온된 항목에 대해 선택 된 컨트롤 만들고 항목 컨트롤에 바인딩합니다. 이 컨트롤은 새로운 <xref:System.Windows.Controls.Grid> 내에 만들어집니다.  
+- 컨트롤에 대한 데이터 바인딩을 만듭니다. 디자이너의 기존 컨트롤로 항목을 끌면 XAML이 컨트롤을 항목에 바인딩합니다. 컨테이너에 항목을 끌면는 XAML 끌어 온된 항목에 대해 선택 된 컨트롤 만들고 항목 컨트롤에 바인딩합니다. 이 컨트롤은 새로운 <xref:System.Windows.Controls.Grid> 내에 만들어집니다.  
   
- 또한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 코드 숨김 파일에 대해 다음과 같은 변경 작업도 수행합니다.  
+  또한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 코드 숨김 파일에 대해 다음과 같은 변경 작업도 수행합니다.  
   
--   이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 이벤트 처리기를 만듭니다. 이 이벤트 처리기는 테이블을 데이터로 채우고 컨테이너의 리소스에서 <xref:System.Windows.Data.CollectionViewSource>를 검색한 다음 첫 번째 데이터 항목을 현재 항목으로 설정합니다. 경우는 <xref:System.Windows.FrameworkElement.Loaded> 이벤트 처리기가 이미 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기존 이벤트 처리기에이 코드를 추가 합니다.  
+- 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 이벤트 처리기를 만듭니다. 이 이벤트 처리기는 테이블을 데이터로 채우고 컨테이너의 리소스에서 <xref:System.Windows.Data.CollectionViewSource>를 검색한 다음 첫 번째 데이터 항목을 현재 항목으로 설정합니다. 경우는 <xref:System.Windows.FrameworkElement.Loaded> 이벤트 처리기가 이미 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기존 이벤트 처리기에이 코드를 추가 합니다.  
   
 ### <a name="entity-data-models"></a>엔터티 데이터 모델  
  엔터티 또는 엔터티 속성에서 끌 때 합니다 **데이터 원본** 창에서 디자이너로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 생성 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 다음을 수행 하는:  
   
--   항목을 끌어 온 컨테이너의 리소스에 새 <xref:System.Windows.Data.CollectionViewSource>를 추가합니다. <xref:System.Windows.Data.CollectionViewSource>는 엔터티에 있는 데이터를 탐색하고 표시하는 데 사용할 수 있는 개체입니다.  
+- 항목을 끌어 온 컨테이너의 리소스에 새 <xref:System.Windows.Data.CollectionViewSource>를 추가합니다. <xref:System.Windows.Data.CollectionViewSource>는 엔터티에 있는 데이터를 탐색하고 표시하는 데 사용할 수 있는 개체입니다.  
   
--   컨트롤에 대한 데이터 바인딩을 만듭니다. 디자이너의 기존 컨트롤로 항목을 끌면 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]이 컨트롤을 항목에 바인딩합니다. 컨테이너에 항목을 끌면는 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 컨트롤을 만듭니다는 끌어 온된 항목에 대해 선택 하 고 항목 컨트롤에 바인딩합니다. 이 컨트롤은 새로운 <xref:System.Windows.Controls.Grid> 내에 만들어집니다.  
+- 컨트롤에 대한 데이터 바인딩을 만듭니다. 디자이너의 기존 컨트롤로 항목을 끌면 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]이 컨트롤을 항목에 바인딩합니다. 컨테이너에 항목을 끌면는 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 컨트롤을 만듭니다는 끌어 온된 항목에 대해 선택 하 고 항목 컨트롤에 바인딩합니다. 이 컨트롤은 새로운 <xref:System.Windows.Controls.Grid> 내에 만들어집니다.  
   
- 또한 Visual Studio에서는 코드 숨김 파일에 대해 다음과 같은 변경 작업도 수행합니다.  
+  또한 Visual Studio에서는 코드 숨김 파일에 대해 다음과 같은 변경 작업도 수행합니다.  
   
--   디자이너로 끌어 온 엔터티(또는 디자이너로 끌어 온 속성이 들어 있는 엔터티)에 대한 쿼리를 반환하는 새 메서드를 추가합니다. 새 메서드의 이름은 Get에*EntityName*쿼리, 여기서 *EntityName* 엔터티의 이름입니다.  
+- 디자이너로 끌어 온 엔터티(또는 디자이너로 끌어 온 속성이 들어 있는 엔터티)에 대한 쿼리를 반환하는 새 메서드를 추가합니다. 새 메서드의 이름은 Get에*EntityName*쿼리, 여기서 *EntityName* 엔터티의 이름입니다.  
   
--   이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 이벤트 처리기를 만듭니다. Get을 호출 하는 이벤트 처리기*EntityName*Query 메서드를 검색 데이터를 사용 하 여 엔터티를 채우고는 <xref:System.Windows.Data.CollectionViewSource> 컨테이너의 리소스를 한 다음에서 첫 번째 데이터 항목을 현재 항목입니다. 경우는 <xref:System.Windows.FrameworkElement.Loaded> 이벤트 처리기가 이미 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기존 이벤트 처리기에이 코드를 추가 합니다.  
+- 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 이벤트 처리기를 만듭니다. Get을 호출 하는 이벤트 처리기*EntityName*Query 메서드를 검색 데이터를 사용 하 여 엔터티를 채우고는 <xref:System.Windows.Data.CollectionViewSource> 컨테이너의 리소스를 한 다음에서 첫 번째 데이터 항목을 현재 항목입니다. 경우는 <xref:System.Windows.FrameworkElement.Loaded> 이벤트 처리기가 이미 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기존 이벤트 처리기에이 코드를 추가 합니다.  
   
 ### <a name="services"></a>서비스  
  서비스 개체나 속성을 끌면 합니다 **데이터 원본** 창에서 디자이너로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 생성 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 는 데이터 바인딩된 컨트롤을 만듭니다 (또는 기존 컨트롤을 개체나 속성에 바인딩하). 그러나 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 프록시 서비스 개체를 데이터로 채우는 코드를 생성하지 않기 때문에 이 코드를 직접 작성해야 합니다. 이 작업을 수행 하는 방법을 보여주는 예제를 참조 하세요 [WCF 데이터 서비스에 WPF 바인딩 컨트롤](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)합니다.  

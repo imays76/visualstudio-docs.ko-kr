@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e38514b2c65fb5db557d49b1ae2a7daf0b932dd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c80404320f399139a18d863d71147d33a11ce86d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885202"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +52,11 @@ ms.locfileid: "49277864"
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>읽기 전용 모드에서 수행할 수 있는 변경 내용  
  모델 생성을 지원하지 않는 Visual Studio 버전에서 모델 및 다이어그램을 열면 모델을 변경할 수 없습니다. 즉, 다이어그램이나 모델 탐색기에 표시되는 요소 및 관계를 변경할 수 없습니다. 그러나 다음과 같이 다이어그램의 레이아웃을 일부 변경할 수 있습니다.  
   
--   다이어그램에서 모양 및 연결선을 다시 정렬합니다.  
+- 다이어그램에서 모양 및 연결선을 다시 정렬합니다.  
   
--   모양을 확장 및 축소합니다.  
+- 모양을 확장 및 축소합니다.  
   
- 이러한 변경 내용을 저장할 수 있습니다. 업데이트 된 변경 내용을 다른 사용자에 게 표시 하려는 경우 전송 이상 해야 **.layout** 파일입니다.  
+  이러한 변경 내용을 저장할 수 있습니다. 업데이트 된 변경 내용을 다른 사용자에 게 표시 하려는 경우 전송 이상 해야 **.layout** 파일입니다.  
   
 ##  <a name="RelatedTopics"></a> 관련된 항목  
   

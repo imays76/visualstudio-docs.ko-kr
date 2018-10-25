@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9379d474f135c5d6bbe82fd3391e7e4d8241f1b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5f747185dd696f6d70cc4c514f54eaddef5bfa7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864442"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-이 속성의 값을 설정 하 고 필요한 경우 오류 메시지를 반환 합니다.  
+이 속성의 값을 설정 하 고 필요한 경우에 오류 메시지를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -53,19 +53,19 @@ int SetValueAsStringWithError(
  [in] 기 수 설정 되는 값입니다.  
   
  `dwTimeout`  
- [in] 값을 설정할 수에 대 한 대기 하는 시간 길이 (`INFINITE` 의미 무기한 대기).  
+ [in] 설정할 값에 대 한 대기 시간의 길이 (`INFINITE` 의미 무기한 대기).  
   
  `errorString`  
- [out] 값을 설정 하는 동안 오류가 발생 했으면이 실패 한 이유를 보유 합니다.  
+ [out] 값을 설정할 때 오류가 발생에 발생 한 경우이 오류가 발생 한 이유를 보유 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
  들어오는 값 식을 계산할 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CProperty** 공개 하는 개체는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CProperty** 노출 하는 개체를 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   

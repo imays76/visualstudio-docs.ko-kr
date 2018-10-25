@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907484"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 분석기 및 ImmutableArrays에 대 한 코드 인식 라이브러리
 
@@ -27,7 +27,7 @@ ms.locfileid: "46495923"
 이 예제를 빌드하려면 다음이 필요 합니다.
 
 * Visual Studio 2015 (하지는 Express Edition) 또는 이후 버전입니다.  무료 따르면 [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
-* [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  Visual Studio를 설치 하는 경우를 확인할 수도 있습니다 **Visual Studio 확장성 도구** 아래에서 **일반 도구** 동시에 SDK를 설치 합니다.  Visual Studio를 이미 설치한 경우 설치할 수도 있습니다이 SDK 주 메뉴로 이동 하 여 **파일** > **새로 만들기** > **프로젝트**, 선택 **C#** 왼쪽된 탐색 창에서을 차례로 선택 **확장성**합니다.  선택 하는 경우는 "**Visual Studio 확장성 도구를 설치할**" 이동 경로 탐색 프로젝트 템플릿을 묻는 다운로드 하 여 SDK를 설치 합니다.
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Visual Studio를 설치 하는 경우를 확인할 수도 있습니다 **Visual Studio 확장성 도구** 아래에서 **일반 도구** 동시에 SDK를 설치 합니다.  Visual Studio를 이미 설치한 경우 설치할 수도 있습니다이 SDK 주 메뉴로 이동 하 여 **파일** > **새로 만들기** > **프로젝트**, 선택 **C#** 왼쪽된 탐색 창에서을 차례로 선택 **확장성**합니다.  선택 하는 경우는 "**Visual Studio 확장성 도구를 설치할**" 이동 경로 탐색 프로젝트 템플릿을 묻는 다운로드 하 여 SDK를 설치 합니다.
 * [.NET 컴파일러 플랫폼 ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)합니다.  주 메뉴로 이동 하 여이 SDK를 설치할 수도 있습니다 **파일** > **새로 만들기** > **프로젝트**, 선택 **C#** 왼쪽된 탐색 창에서을 차례로 선택 **확장성**합니다.  선택 하는 경우 "**.NET Compiler Platform SDK 다운로드**" 이동 경로 탐색 프로젝트 템플릿을 묻는 다운로드 하 여 SDK를 설치 합니다.  이 SDK에 포함 된 [Roslyn 구문 시각화 도우미](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)합니다.  코드 모델 유형을 파악이 매우 유용한 도구를 사용 하면 확인 해야 할 사용자 분석기에서입니다.  분석기 인프라 코드만 필요한 경우를 실행 하 고 관련 코드 분석에 집중할 수 있도록 특정 코드 모델 형식에 대 한 코드를 호출 합니다.
 
 ## <a name="whats-the-problem"></a>문제가 뭔가요?
@@ -82,7 +82,6 @@ C# 코드를 대상으로 하는 Visual Basic을 사용 하 여 분석기를 구
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 이 컨텍스트에서 메서드 및 형식"." 새 줄을 엽니다 에 IntelliSense 완성 목록을 참조 하세요.  여러 완성 목록에서 볼 수 `Register...` 다양 한 종류의 이벤트를 처리 하는 방법입니다.  예를 들어, 첫 번째 `RegisterCodeBlockAction`에 일반적으로 중괄호 사이 코드 블록에 대 한 코드를 다시 호출 합니다.  블록에 대 한 등록도 다시 호출 코드에는 필드, 특성에 지정 된 값 또는 선택적 매개 변수 값의 이니셜라이저에 대 한 합니다.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Out 스텁 멤버를 파생 합니다.** 이제는 식별자에 편집기 캐럿을 배치 `CodeFixProvider` 키를 누릅니다 **Ctrl**+**합니다.** (마침표)이 추상 기본 클래스에 대 한 구현을 스텁 하 합니다.  이 속성 및 메서드를 생성합니다.

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899281"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>연습: 내 첫 WPF 데스크톱 응용 프로그램
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -958,27 +958,27 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
  WPF 아키텍처 및 프로그래밍 모델에 대한 자세한 내용은 다음 항목을 참조하세요.  
   
--   [WPF 아키텍처](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
+- [WPF 아키텍처](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
   
--   [XAML 개요](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
+- [XAML 개요](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
   
--   [종속성 속성 개요](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
+- [종속성 속성 개요](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
   
--   [레이아웃 시스템](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
+- [레이아웃 시스템](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
   
--   [스타일 및 템플릿](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
+- [스타일 및 템플릿](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
- 응용 프로그램을 만드는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.  
+  응용 프로그램을 만드는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.  
   
--   [응용 프로그램 개발 개요](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
+- [응용 프로그램 개발 개요](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
--   [컨트롤 개요](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
+- [컨트롤 개요](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
   
--   [데이터 바인딩 개요](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
+- [데이터 바인딩 개요](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
   
--   [WPF 그래픽, 애니메이션 및 미디어 개요](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
+- [WPF 그래픽, 애니메이션 및 미디어 개요](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
   
--   [WPF의 문서](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
+- [WPF의 문서](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>참고 항목  
  [연습: Azure 모바일 서비스에 연결된 WPF 데스크톱 응용 프로그램 만들기](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   

@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4888733abf142f6582706406decbea0bf84ce519
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4f7df36c05de0d8dc2f68ab8e41afa11366276b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856303"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 요소
-다른.vsct 파일에 정의 된 명령에 액세스 하기 위해 VSPackage를 수 있습니다. 예를 들어 VSPackage는 표준을 사용 하 여 **복사** 문자로 정의 되는 명령에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 셸 명령을 추가할 수 있습니다는 메뉴 또는 도구 모음을 다시 구현 하지 않고도 합니다.  
+다른.vsct 파일에 정의 된 명령에 액세스 하기 위해 VSPackage를 사용 하도록 설정 합니다. 예를 들어 VSPackage는 표준을 **복사본** 명령에 정의 된는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 셸을 추가할 수 명령을 메뉴나 도구 모음을 다시 구현 하지 않고도 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,10 +51,10 @@ ms.locfileid: "31139070"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[UsedCommands 요소](../extensibility/usedcommands-element.md)|UsedCommand 요소 그룹 및 다른 UsedCommands 그룹화 합니다.|  
+|[UsedCommands 요소](../extensibility/usedcommands-element.md)|UsedCommand 요소를 그룹화 하 고 기타 UsedCommands 그룹화 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 에 명령을 추가 하 여는 `<UsedCommands>` 요소, VSPackage 알립니다는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage 명령이 필요 하다는 환경입니다. 추가 해야는 `<UsedCommand>` 요소 패키지에 필요한 모든 명령에 대 한 모든 버전 및 Visual Studio의 구성에 포함 되어 있지 않습니다. 예를 들어 패키지는 Visual c + +에만 적용 되는 명령의 호출할 경우 명령이 제공 됩니다 Visual Web Developer의 사용자에 게 포함 하지 않으면는 `<UsedCommand>` 명령에 대 한 요소입니다.  
+ 명령을 추가 하 여는 `<UsedCommands>` 요소인 VSPackage 알립니다는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 환경 VSPackage의 명령에 필요 합니다. 추가 해야는 `<UsedCommand>` 요소는 패키지에 필요한 모든 명령에 대 한 모든 버전 및 Visual Studio의 구성에 포함 되지 않을 수 있습니다. 예를 들어, Visual c + +에 관련 된 명령을 호출 하는 패키지를 하는 경우 명령이 제공 되지 Visual Web Developer의 사용자에 게 포함 하지 않으면는 `<UsedCommand>` 명령에 대 한 요소입니다.  
   
 ## <a name="example"></a>예제  
   

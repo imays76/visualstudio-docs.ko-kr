@@ -20,12 +20,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890181"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>연습: N 계층 데이터 응용 프로그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ N-계층 * 데이터 응용 프로그램은 여러 논리 계층으로 분리 �
   
  이 연습에서는 다음 단계를 수행합니다.  
   
--   여러 프로젝트가 포함된 새 N 계층 솔루션을 만듭니다.  
+- 여러 프로젝트가 포함된 새 N 계층 솔루션을 만듭니다.  
   
--   N 계층 솔루션에 클래스 라이브러리 프로젝트 두 개를 추가합니다.  
+- N 계층 솔루션에 클래스 라이브러리 프로젝트 두 개를 추가합니다.  
   
--   사용 하 여 형식화 된 데이터 집합을 만들 합니다 **데이터 소스 구성 마법사**합니다.  
+- 사용 하 여 형식화 된 데이터 집합을 만들 합니다 **데이터 소스 구성 마법사**합니다.  
   
--   생성 된 구분 [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) 및 데이터 집합 코드를 별도 프로젝트로 합니다.  
+- 생성 된 구분 [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) 및 데이터 집합 코드를 별도 프로젝트로 합니다.  
   
--   데이터 액세스 계층으로 호출할 WCF(Windows Communication Foundation) 서비스를 만듭니다.  
+- 데이터 액세스 계층으로 호출할 WCF(Windows Communication Foundation) 서비스를 만듭니다.  
   
--   데이터 액세스 계층에서 데이터를 검색하기 위한 함수를 서비스에서 만듭니다.  
+- 데이터 액세스 계층에서 데이터를 검색하기 위한 함수를 서비스에서 만듭니다.  
   
--   표시 계층으로 사용할 Windows Forms 응용 프로그램을 만듭니다.  
+- 표시 계층으로 사용할 Windows Forms 응용 프로그램을 만듭니다.  
   
--   데이터 소스에 바인딩되는 Windows Forms 컨트롤을 만듭니다.  
+- 데이터 소스에 바인딩되는 Windows Forms 컨트롤을 만듭니다.  
   
--   데이터 테이블을 채우는 코드를 작성합니다.  
+- 데이터 테이블을 채우는 코드를 작성합니다.  
   
- ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo") 이 항목의 비디오 버전을 참조 하세요. [Video How to: N 계층 데이터 응용 프로그램을 만드는](http://go.microsoft.com/fwlink/?LinkId=115188)합니다.  
+  ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo") 이 항목의 비디오 버전을 참조 하세요. [Video How to: N 계층 데이터 응용 프로그램을 만드는](http://go.microsoft.com/fwlink/?LinkId=115188)합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 사항이 필요합니다.  
@@ -144,17 +144,17 @@ N-계층 * 데이터 응용 프로그램은 여러 논리 계층으로 분리 �
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>데이터 집합에서 TableAdapters를 분리하려면  
   
-1.  두 번 클릭 **NorthwindDataSet.xsd** 에 **솔루션 탐색기** 에서 데이터 집합을 여는 **데이터 집합 디자이너**합니다.  
+1. 두 번 클릭 **NorthwindDataSet.xsd** 에 **솔루션 탐색기** 에서 데이터 집합을 여는 **데이터 집합 디자이너**합니다.  
   
-2.  디자이너의 빈 영역을 클릭합니다.  
+2. 디자이너의 빈 영역을 클릭합니다.  
   
-3.  찾을 합니다 **데이터 집합 프로젝트** 에서 노드를 **속성** 창입니다.  
+3. 찾을 합니다 **데이터 집합 프로젝트** 에서 노드를 **속성** 창입니다.  
   
-4.  에 **데이터 집합 프로젝트** 목록에서 클릭 **DataEntityTier**합니다.  
+4. 에 **데이터 집합 프로젝트** 목록에서 클릭 **DataEntityTier**합니다.  
   
-5.  **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.  
+5. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.  
   
- 데이터 집합 및 TableAdapters가 두 클래스 라이브러리 프로젝트로 분리됩니다. 원래 전체 데이터 집합(DataAccessTier)이 포함되었던 프로젝트에 이제는 TableAdapters만이 포함됩니다. 에 지정 된 프로젝트를 **데이터 집합 프로젝트** 형식화 된 데이터 집합을 포함 하는 속성 (DataEntityTier): 집합인 NorthwindDataSet.Dataset.Designer.vb (또는 NorthwindDataSet.Dataset.Designer.cs).  
+   데이터 집합 및 TableAdapters가 두 클래스 라이브러리 프로젝트로 분리됩니다. 원래 전체 데이터 집합(DataAccessTier)이 포함되었던 프로젝트에 이제는 TableAdapters만이 포함됩니다. 에 지정 된 프로젝트를 **데이터 집합 프로젝트** 형식화 된 데이터 집합을 포함 하는 속성 (DataEntityTier): 집합인 NorthwindDataSet.Dataset.Designer.vb (또는 NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
 >  데이터 집합 및 TableAdapters를 분리할 때는 (설정 하 여 합니다 **데이터 집합 프로젝트** 속성), 프로젝트의 기존 부분 데이터 집합 클래스가 자동으로 이동 되지 것입니다. 따라서 데이터 집합 프로젝트로 기존 데이터 집합 부분 클래스를 수동으로 이동해야 합니다.  

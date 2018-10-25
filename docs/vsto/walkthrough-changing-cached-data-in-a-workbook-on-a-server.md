@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32596ecb33b016e8e51e58797e944f343c0e6526
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4bfb7848039c0081528f1b0b05a0b63db9925603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887601"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>연습: 서버의 통합 문서에서 캐시 된 데이터를 변경 합니다.
   이 연습에서는 Microsoft Office Excel 통합 문서에 사용 하 여 Excel을 시작 하지 않고 캐시 된 데이터 집합을 수정 하는 방법에 설명 합니다 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스입니다.
@@ -33,17 +33,17 @@ ms.locfileid: "36758926"
 
  이 연습에서는 다음 작업을 수행합니다.
 
--   AdventureWorksLT 데이터베이스에서 데이터를 포함 하는 데이터 집합을 정의 합니다.
+- AdventureWorksLT 데이터베이스에서 데이터를 포함 하는 데이터 집합을 정의 합니다.
 
--   Excel 통합 문서 프로젝트를 콘솔 응용 프로그램 프로젝트에 데이터 집합의 인스턴스를 만드는 중입니다.
+- Excel 통합 문서 프로젝트를 콘솔 응용 프로그램 프로젝트에 데이터 집합의 인스턴스를 만드는 중입니다.
 
--   만들기를 <xref:Microsoft.Office.Tools.Excel.ListObject> 통합 문서에서 데이터 집합에 바인딩된 쉽고 채우는 <xref:Microsoft.Office.Tools.Excel.ListObject> 통합 문서가 열릴 때 데이터를 사용 하 여 합니다.
+- 만들기를 <xref:Microsoft.Office.Tools.Excel.ListObject> 통합 문서에서 데이터 집합에 바인딩된 쉽고 채우는 <xref:Microsoft.Office.Tools.Excel.ListObject> 통합 문서가 열릴 때 데이터를 사용 하 여 합니다.
 
--   통합 문서의 데이터 캐시에 데이터 집합을 추가 합니다.
+- 통합 문서의 데이터 캐시에 데이터 집합을 추가 합니다.
 
--   Excel을 시작 하지 않고 콘솔 응용 프로그램에서 코드를 실행 하 여 캐시 된 데이터 집합의 데이터 열을 수정 합니다.
+- Excel을 시작 하지 않고 콘솔 응용 프로그램에서 코드를 실행 하 여 캐시 된 데이터 집합의 데이터 열을 수정 합니다.
 
- 이 연습에서는 개발 컴퓨터에서 코드를 실행 하는 가정 하지만이 연습에서 보여 주는 코드 Excel이 설치 되어 있지 않은 서버에서 사용할 수 있습니다.
+  이 연습에서는 개발 컴퓨터에서 코드를 실행 하는 가정 하지만이 연습에서 보여 주는 코드 Excel이 설치 되어 있지 않은 서버에서 사용할 수 있습니다.
 
 > [!NOTE]
 >  일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
@@ -93,29 +93,29 @@ ms.locfileid: "36758926"
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>클래스 라이브러리 프로젝트에서 형식화 된 데이터 집합을 정의 하려면
 
-1.  **솔루션 탐색기**를 클릭 합니다 **AdventureWorksDataSet** 프로젝트입니다.
+1. **솔루션 탐색기**를 클릭 합니다 **AdventureWorksDataSet** 프로젝트입니다.
 
-2.  경우는 **데이터 원본** 창이 표시 되지 않으면, 메뉴 모음에 의해 표시 **뷰** > **기타 Windows**  >   **데이터 원본**합니다.
+2. 경우는 **데이터 원본** 창이 표시 되지 않으면, 메뉴 모음에 의해 표시 **뷰** > **기타 Windows**  >   **데이터 원본**합니다.
 
-3.  **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
+3. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
 
-4.  **데이터베이스**를 클릭하고 **다음**을 클릭합니다.
+4. **데이터베이스**를 클릭하고 **다음**을 클릭합니다.
 
-5.  AdventureWorksLT 데이터베이스에 대 한 기존 연결을 사용 하는 경우이 연결을 선택 하 고 클릭 **다음**합니다.
+5. AdventureWorksLT 데이터베이스에 대 한 기존 연결을 사용 하는 경우이 연결을 선택 하 고 클릭 **다음**합니다.
 
-     그렇지 않은 경우 **새 연결**을 클릭하고 **연결 추가** 대화 상자를 사용하여 새 연결을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)합니다.
+    그렇지 않은 경우 **새 연결**을 클릭하고 **연결 추가** 대화 상자를 사용하여 새 연결을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)합니다.
 
-6.  **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지에서 **다음**을 클릭합니다.
+6. **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지에서 **다음**을 클릭합니다.
 
-7.  에 **데이터베이스 개체 선택** 페이지에서 **테이블** 선택한 **Product (SalesLT)** 합니다.
+7. 에 **데이터베이스 개체 선택** 페이지에서 **테이블** 선택한 **Product (SalesLT)** 합니다.
 
-8.  **마침**을 클릭합니다.
+8. **마침**을 클릭합니다.
 
-     *AdventureWorksLTDataSet.xsd* 파일에 추가 되는 **AdventureWorksDataSet** 프로젝트. 이 파일은 다음 항목을 정의합니다.
+    *AdventureWorksLTDataSet.xsd* 파일에 추가 되는 **AdventureWorksDataSet** 프로젝트. 이 파일은 다음 항목을 정의합니다.
 
-    -   `AdventureWorksLTDataSet`라는 형식화된 데이터 집합 이 데이터 집합은 AdventureWorksLT 데이터베이스의 Product 테이블의 내용을 나타냅니다.
+   - `AdventureWorksLTDataSet`라는 형식화된 데이터 집합 이 데이터 집합은 AdventureWorksLT 데이터베이스의 Product 테이블의 내용을 나타냅니다.
 
-    -   라는 TableAdapter `ProductTableAdapter`합니다. 이 TableAdapter의 읽기 및 쓰기 데이터를 사용할 수는 `AdventureWorksLTDataSet`합니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)합니다.
+   - 라는 TableAdapter `ProductTableAdapter`합니다. 이 TableAdapter의 읽기 및 쓰기 데이터를 사용할 수는 `AdventureWorksLTDataSet`합니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)합니다.
 
      이 연습 뒷부분에서는 이러한 두 개체를 모두 사용합니다.
 
@@ -182,7 +182,7 @@ ms.locfileid: "36758926"
 
 3.  끌기 합니다 **제품** A1 셀에는 테이블입니다.
 
-     A <xref:Microsoft.Office.Tools.Excel.ListObject> 제어 라는 `productListObject` A1 셀부터 워크시트에 만들어집니다. 동시에 데이터 집합 개체인 `adventureWorksLTDataSet` 와 <xref:System.Windows.Forms.BindingSource> 라는 `productBindingSource` 프로젝트에 추가 됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 가 <xref:System.Windows.Forms.BindingSource>에 바인딩된 다음 데이터 집합 개체에 바인딩됩니다.
+     A <xref:Microsoft.Office.Tools.Excel.ListObject> 제어 라는 `productListObject` A1 셀부터 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet` 라는 데이터 집합 개체와 <xref:System.Windows.Forms.BindingSource> 라는 `productBindingSource` 가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 가 <xref:System.Windows.Forms.BindingSource>에 바인딩된 다음 데이터 집합 개체에 바인딩됩니다.
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>데이터 캐시에 데이터 집합을 추가 합니다.
  통합 문서에서 데이터 집합에 액세스 하려면 Excel 통합 문서 프로젝트 외부에서 코드를 사용 하려면 데이터 캐시에 데이터 집합을 추가 해야 합니다. 데이터 캐시에 대 한 자세한 내용은 참조 하세요. [문서 수준 사용자 지정에서 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md) 하 고 [데이터를 캐시](../vsto/caching-data.md)합니다.
@@ -246,46 +246,46 @@ ms.locfileid: "36758926"
 
 ### <a name="to-change-data-in-the-cached-dataset"></a>캐시 된 데이터 집합의 데이터를 변경 하려면
 
-1.  **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **DataWriter** 프로젝트 및 클릭 **참조 추가**합니다.
+1. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **DataWriter** 프로젝트 및 클릭 **참조 추가**합니다.
 
-2.  에 **.NET** 탭을 선택 **Microsoft.VisualStudio.Tools.Applications**합니다.
+2. 에 **.NET** 탭을 선택 **Microsoft.VisualStudio.Tools.Applications**합니다.
 
-3.  **확인**을 클릭합니다.
+3. **확인**을 클릭합니다.
 
-4.  **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **DataWriter** 프로젝트 및 클릭 **참조 추가**합니다.
+4. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **DataWriter** 프로젝트 및 클릭 **참조 추가**합니다.
 
-5.  에 **프로젝트** 탭을 선택 **AdventureWorksDataSet**를 클릭 하 고 **확인**합니다.
+5. 에 **프로젝트** 탭을 선택 **AdventureWorksDataSet**를 클릭 하 고 **확인**합니다.
 
-6.  엽니다는 *Program.cs* 또는 *Module1.vb* 파일이 코드 편집기에서.
+6. 엽니다는 *Program.cs* 또는 *Module1.vb* 파일이 코드 편집기에서.
 
-7.  다음을 추가 합니다 **를 사용 하 여** (에 대 한 C#) 또는 **Imports** (Visual Basic의 경우)에 대 한 문을 코드 파일의 맨 위에 있습니다.
+7. 다음을 추가 합니다 **를 사용 하 여** (에 대 한 C#) 또는 **Imports** (Visual Basic의 경우)에 대 한 문을 코드 파일의 맨 위에 있습니다.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
+    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
-8.  `Main` 메서드에 다음 코드를 추가합니다. 이 코드는 다음 개체를 선언합니다.
+8. `Main` 메서드에 다음 코드를 추가합니다. 이 코드는 다음 개체를 선언합니다.
 
-    -   인스턴스를 `AdventureWorksLTDataSet` 에 정의 된 형식에는 **AdventureWorksDataSet** 프로젝트.
+   - 인스턴스를 `AdventureWorksLTDataSet` 에 정의 된 형식에는 **AdventureWorksDataSet** 프로젝트.
 
-    -   빌드 폴더에서 AdventureWorksReport 통합 문서에 대 한 경로 **AdventureWorksReport** 프로젝트입니다.
+   - 빌드 폴더에서 AdventureWorksReport 통합 문서에 대 한 경로 **AdventureWorksReport** 프로젝트입니다.
 
-    -   <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 통합 문서의 데이터 캐시에 액세스 하는 데 사용할 개체입니다.
+   - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 통합 문서의 데이터 캐시에 액세스 하는 데 사용할 개체입니다.
 
-        > [!NOTE]
-        >  다음 코드를 통합 문서를 사용 하는 것으로 가정 합니다 *.xlsx* 파일 확장명입니다. 프로젝트에서 통합 문서를 다른 파일 확장명을 가진, 경우에 필요에 따라 경로 수정 합니다.
+     > [!NOTE]
+     >  다음 코드를 통합 문서를 사용 하는 것으로 가정 합니다 *.xlsx* 파일 확장명입니다. 프로젝트에서 통합 문서를 다른 파일 확장명을 가진, 경우에 필요에 따라 경로 수정 합니다.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]
 
 9. 다음 코드를 추가 합니다 `Main` 메서드, 이전 단계에서 추가한 코드입니다. 이 코드는 다음 작업을 수행합니다.
 
-    -   사용 하 여는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 의 속성을 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 통합 문서에서 캐시 된 데이터 집합에 액세스 하는 클래스입니다.
+   - 사용 하 여는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 의 속성을 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 통합 문서에서 캐시 된 데이터 집합에 액세스 하는 클래스입니다.
 
-    -   로컬 데이터 집합에 캐시 된 데이터 집합에서 데이터를 읽습니다.
+   - 로컬 데이터 집합에 캐시 된 데이터 집합에서 데이터를 읽습니다.
 
-    -   변경 된 `ListPrice` 데이터 집합의 Product 테이블에서 각 제품의 값입니다.
+   - 변경 된 `ListPrice` 데이터 집합의 Product 테이블에서 각 제품의 값입니다.
 
-    -   통합 문서에서 캐시 된 데이터 집합에 변경 내용을 저장합니다.
+   - 통합 문서에서 캐시 된 데이터 집합에 변경 내용을 저장합니다.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#7)]
      [!code-vb[Trin_CachedDataWalkthroughs#7](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#7)]

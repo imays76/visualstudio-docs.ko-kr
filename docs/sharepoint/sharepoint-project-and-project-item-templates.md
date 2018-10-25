@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccff01afcb2556469453d4227b14ebe3b897de50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6e38a3e709a8d49d29d598e7eabd55e7be154836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896447"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 프로젝트 및 프로젝트 항목 템플릿
   다음 섹션에서는 사용할 수 있는 SharePoint 프로젝트에 설명 하 고 프로젝트 항목 템플릿 및 사용 방법에 있습니다. 
@@ -41,7 +41,7 @@ ms.locfileid: "37119520"
  SharePoint 기본 사항에 대 한 정보를 참조 하세요 [SharePoint Foundation 구성 요소](http://go.microsoft.com/fwlink/?LinkId=179404)합니다. 고급 사용자는 사용자 지정 프로젝트 및 프로젝트 항목 템플릿을 만들 수 있습니다. 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)합니다.  
   
 ## <a name="project-templates"></a>프로젝트 템플릿
- 다음은 SharePoint 프로젝트 템플릿 목록입니다. Visual Studio에서 SharePoint 프로젝트 템플릿을 보려면 합니다 **새 프로젝트** 대화 상자에서 합니다 **SharePoint** 노드 아래의 **Visual C#** 또는  **Visual Basic**를 선택한 후 **2010**합니다.  
+ 다음은 SharePoint 프로젝트 템플릿 목록입니다. Visual Studio에서 SharePoint 프로젝트 템플릿을 보려면 합니다 **새 프로젝트** 대화 상자에서 합니다 **SharePoint** 노드 아래의 **Visual C#**  또는  **Visual Basic**를 선택한 후 **2010**합니다.  
   
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010 프로젝트
  콘텐츠를 *SharePoint 2010 프로젝트* 모든 SharePoint 프로젝트 템플릿에 포함 됩니다. SharePoint 2010 프로젝트에는 다음이 포함 됩니다.  
@@ -95,17 +95,17 @@ ms.locfileid: "37119520"
 ### <a name="event-receiver"></a>이벤트 수신기
  *이벤트 수신기* 항목 목록에 추가 되는 경우, 웹 항목을 삭제 하는 경우 또는 워크플로 시작 하는 경우 같은 SharePoint 사이트에서 항목에 대 한 이벤트를 처리 합니다. 이벤트 수신기 프로젝트 항목 템플릿을 처리할 수 있습니다.  
   
--   이벤트 목록  
+- 이벤트 목록  
   
--   목록 항목 이벤트  
+- 목록 항목 이벤트  
   
--   전자 메일 이벤트 목록  
+- 전자 메일 이벤트 목록  
   
--   웹 이벤트  
+- 웹 이벤트  
   
--   목록 워크플로 이벤트  
+- 목록 워크플로 이벤트  
   
- 이벤트 수신기 프로젝트 항목을 만듭니다는 **이벤트 수신기** 에서 프로젝트를 만들 때 지정한으로 모든 이벤트에 대 한 이벤트 처리기를 포함 하는 단일 클래스 파일을 사용 하 여 폴더를 **SharePoint 사용자 지정 마법사**합니다. 이벤트 수신기 클래스 파일, 필드, 항목, 목록, 첨부 파일, 웹 파트, 워크플로 등 항목을 추가, 업데이트, 삭제 또는 제거 하는 경우 SharePoint 사이트에서 발생 하는 이벤트를 처리할 수 있습니다. 자세한 내용은 참조 하세요. [방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md) 하 고 [문서 블록: 이벤트 처리](http://go.microsoft.com/fwlink/?LinkId=179416)합니다.  
+  이벤트 수신기 프로젝트 항목을 만듭니다는 **이벤트 수신기** 에서 프로젝트를 만들 때 지정한으로 모든 이벤트에 대 한 이벤트 처리기를 포함 하는 단일 클래스 파일을 사용 하 여 폴더를 **SharePoint 사용자 지정 마법사**합니다. 이벤트 수신기 클래스 파일, 필드, 항목, 목록, 첨부 파일, 웹 파트, 워크플로 등 항목을 추가, 업데이트, 삭제 또는 제거 하는 경우 SharePoint 사이트에서 발생 하는 이벤트를 처리할 수 있습니다. 자세한 내용은 참조 하세요. [방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md) 하 고 [문서 블록: 이벤트 처리](http://go.microsoft.com/fwlink/?LinkId=179416)합니다.  
   
 ### <a name="list"></a>목록  
  목록에는 재사용 가능한 기본 SharePoint 목록 정의 일정 또는 작업 목록 등의 인스턴스입니다. 목록에 솔루션을 추가한 후 목록 디자이너를 사용 하면 목록에 사이트 열을 추가 하 고 사용자 지정 목록 열을 만들 수 있습니다. 이 콘텐츠 형식에서 사이트 열을 포함합니다. 지정할 수 있습니다 합니다 *보기* 목록에 나타나는 열 목록에 대 한 결정 합니다. 자세한 내용은 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) 하 고 [문서 블록: 목록과 문서 라이브러리](http://go.microsoft.com/fwlink/?LinkId=179421)합니다.  
@@ -125,13 +125,13 @@ ms.locfileid: "37119520"
 ### <a name="site-definition-farm-solution-only"></a>사이트 정의 (팜 솔루션에만 해당)
  *사이트 정의* 다음 파일이 포함 된 사이트 정의 폴더를 포함 하는 프로젝트 항목:  
   
--   사이트에 대 한 기본 웹 페이지와 사용 되는 기본.aspx 페이지가 있습니다.  
+- 사이트에 대 한 기본 웹 페이지와 사용 되는 기본.aspx 페이지가 있습니다.  
   
--   *onet.xml* 사이트의 구성 요소를 정의 하는 파일입니다.  
+- *onet.xml* 사이트의 구성 요소를 정의 하는 파일입니다.  
   
--   Webtemp xml 파일에 표시 되는 사이트 정의 구성을 지정 하는 **템플릿 선택** 섹션을 **새 SharePoint 사이트** 페이지.  
+- Webtemp xml 파일에 표시 되는 사이트 정의 구성을 지정 하는 **템플릿 선택** 섹션을 **새 SharePoint 사이트** 페이지.  
   
- 사이트 정의 추가한 후 코드 및 기능을 소개 하기 위해 파일을 추가 합니다. 이 프로젝트 항목은 팜 솔루션 에서만에서 사용할 수 있습니다. 팜 솔루션에만이 프로젝트 항목을 추가할 수 있습니다. 자세한 내용은 [SharePoint 용 사이트 정의 만들기](../sharepoint/creating-site-definitions-for-sharepoint.md) 하 고 [사이트 정 및 구성](http://go.microsoft.com/fwlink/?LinkId=260554)합니다.  
+  사이트 정의 추가한 후 코드 및 기능을 소개 하기 위해 파일을 추가 합니다. 이 프로젝트 항목은 팜 솔루션 에서만에서 사용할 수 있습니다. 팜 솔루션에만이 프로젝트 항목을 추가할 수 있습니다. 자세한 내용은 [SharePoint 용 사이트 정의 만들기](../sharepoint/creating-site-definitions-for-sharepoint.md) 하 고 [사이트 정 및 구성](http://go.microsoft.com/fwlink/?LinkId=260554)합니다.  
   
 ### <a name="state-machine-workflow-farm-solution-only"></a>상태 시스템 워크플로 (팜 솔루션에만 해당)
  A *상태 시스템 워크플로* 는 비즈니스 논리 상태, 전환 및 동작의 집합입니다. 상태 시스템 워크플로에서 단계 시퀀스에서 수행 되지 않습니다. 대신, 작업 및 상태에 의해 트리거되는 합니다. 순차 워크플로 처럼 상태 시스템 워크플로 목록 및 문서와 같은 SharePoint 항목에 연결 됩니다. 다시 한번, 사이트 수준 (전역) 워크플로 또는 목록 수준 (local) 워크플로 만들 수 있습니다. 자동 또는 수동으로 워크플로 시작 하는지 여부를 선택할 수 있습니다. 이 프로젝트 항목은 팜 솔루션 에서만에서 사용할 수 있습니다. 팜 솔루션에만이 프로젝트 항목을 추가할 수 있습니다. 자세한 내용은 [만들 SharePoint 워크플로 솔루션](../sharepoint/creating-sharepoint-workflow-solutions.md)를 [SharePoint Server 2010에서 워크플로](http://go.microsoft.com/fwlink/?LinkId=260555), 및 [What's New: 워크플로 기능 향상](http://go.microsoft.com/fwlink/?LinkId=179418)합니다.  

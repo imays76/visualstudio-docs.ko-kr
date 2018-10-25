@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888103"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 디버깅의 제한 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 다음 세 가지 방법으로 WCF 서비스의 디버깅을 시작할 수 있습니다.  
   
--   서비스를 호출하는 클라이언트 프로세스를 디버깅합니다. 디버거가 서비스를 한 단계씩 실행합니다. 서비스가 클라이언트 응용 프로그램과 같은 솔루션에 있지 않아도 됩니다.  
+- 서비스를 호출하는 클라이언트 프로세스를 디버깅합니다. 디버거가 서비스를 한 단계씩 실행합니다. 서비스가 클라이언트 응용 프로그램과 같은 솔루션에 있지 않아도 됩니다.  
   
--   서비스를 요청하는 클라이언트 프로세스를 디버깅합니다. 서비스가 솔루션의 일부여야 합니다.  
+- 서비스를 요청하는 클라이언트 프로세스를 디버깅합니다. 서비스가 솔루션의 일부여야 합니다.  
   
--   사용할 **프로세스에 연결** 현재 실행 중인 서비스에 연결 합니다. 디버깅이 서비스 내에서 시작됩니다.  
+- 사용할 **프로세스에 연결** 현재 실행 중인 서비스에 연결 합니다. 디버깅이 서비스 내에서 시작됩니다.  
   
- 이 항목에서는 이러한 시나리오에 적용되는 제한 사항에 대해 설명합니다.  
+  이 항목에서는 이러한 시나리오에 적용되는 제한 사항에 대해 설명합니다.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>서비스를 한 단계씩 실행하는 경우의 제한 사항  
  디버깅할 클라이언트 응용 프로그램에서 서비스를 한 단계씩 실행하려면 다음 조건이 충족되어야 합니다.  

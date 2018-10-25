@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ae4e4de3d3f81f335609201ce510b64a4b0f385
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f1b06773cbc160c683c87c0ec2cd8b4f54436f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910669"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ struct DiaAddressMapEntry {
   
  주소를 변환할 `addrA`, 주소는 그림과에서 `addrB`, B 이미지에서 다음 단계를 수행:  
   
-1.  검색 항목에 대 한 맵을 `e`, 가장 큰 값을 사용 하 여 `rva` 보다 작거나 같음 `addrA`합니다.  
+1. 검색 항목에 대 한 맵을 `e`, 가장 큰 값을 사용 하 여 `rva` 보다 작거나 같음 `addrA`합니다.  
   
-2.  설정 `delta = addrA – e.rva`합니다.  
+2. 설정 `delta = addrA – e.rva`합니다.  
   
-3.  설정 `addrB = e.rvaTo + delta`합니다.  
+3. 설정 `addrB = e.rvaTo + delta`합니다.  
   
- 배열을 `DiaAddressMapEntry` 구조에 전달 되는 [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 메서드.  
+   배열을 `DiaAddressMapEntry` 구조에 전달 되는 [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: dia2.h  

@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c190606c860a2a9d9711f0636420c34a38c8d52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813598"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,60 +46,60 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 디버깅하는 동안 프로파일링 데이터 수집  
  다음 섹션에서는 로컬 디버그에 대해 설명합니다. 장치에서의 디버그 또는 원격 디버그에 대해서는 뒤의 섹션에서 확인할 수 있습니다.  
   
-1.  디버그할 프로젝트를 연 다음 **디버그 / 디버깅 시작** 을 클릭합니다(또는 도구 모음에서 **시작** 을 클릭하거나 **F5**사용).  
+1. 디버그할 프로젝트를 연 다음 **디버그 / 디버깅 시작** 을 클릭합니다(또는 도구 모음에서 **시작** 을 클릭하거나 **F5**사용).  
   
-2.  끄지 않았다면 **진단 도구** 가 자동으로 나타납니다. 창을 다시 표시하려면 **디버그/Windows/진단 도구 표시**를 클릭합니다.  
+2. 끄지 않았다면 **진단 도구** 가 자동으로 나타납니다. 창을 다시 표시하려면 **디버그/Windows/진단 도구 표시**를 클릭합니다.  
   
-3.  데이터를 수집할 시나리오를 실행합니다.  
+3. 데이터를 수집할 시나리오를 실행합니다.  
   
-     세션을 실행하는 동안 이벤트, 프로세스 메모리 및 CPU 사용률에 대한 정보를 볼 수 있습니다.  
+    세션을 실행하는 동안 이벤트, 프로세스 메모리 및 CPU 사용률에 대한 정보를 볼 수 있습니다.  
   
-     다음 그림에서는 Visual Studio 2015 업데이트 1의 **진단 도구** 창을 보여 줍니다.  
+    다음 그림에서는 Visual Studio 2015 업데이트 1의 **진단 도구** 창을 보여 줍니다.  
   
-     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  도구 모음의 **도구 선택** 설정을 사용하여 **메모리 사용** 또는 **CPU 사용** 중 하나를 표시하거나 둘 다 표시하도록 선택할 수 있습니다. Visual Studio Enterprise를 실행 중인 경우 **도구/옵션/IntelliTrace**에서 IntelliTrace를 사용하거나 사용하지 않도록 설정할 수 있습니다.  
+4. 도구 모음의 **도구 선택** 설정을 사용하여 **메모리 사용** 또는 **CPU 사용** 중 하나를 표시하거나 둘 다 표시하도록 선택할 수 있습니다. Visual Studio Enterprise를 실행 중인 경우 **도구/옵션/IntelliTrace**에서 IntelliTrace를 사용하거나 사용하지 않도록 설정할 수 있습니다.  
   
-5.  디버그를 중지하면 진단 세션이 종료됩니다.  
+5. 디버그를 중지하면 진단 세션이 종료됩니다.  
   
- Visual Studio 2015 업데이트 1에서 **진단 도구** 창을 사용하면 관심 있는 이벤트에 보다 쉽게 집중할 수 있습니다.   이제는 이벤트 이름이 **제스처**, **프로그램 출력**, **중단점**, **파일** 등의 범주 접두사와 함께 표시됩니다. 그러므로 목록에서 지정된 범주를 빠르게 찾거나 확인할 필요가 없는 범주를 건너뛸 수 있습니다.  
+   Visual Studio 2015 업데이트 1에서 **진단 도구** 창을 사용하면 관심 있는 이벤트에 보다 쉽게 집중할 수 있습니다.   이제는 이벤트 이름이 **제스처**, **프로그램 출력**, **중단점**, **파일** 등의 범주 접두사와 함께 표시됩니다. 그러므로 목록에서 지정된 범주를 빠르게 찾거나 확인할 필요가 없는 범주를 건너뛸 수 있습니다.  
   
- 이제 이벤트 목록의 모든 위치에서 특정 문자열을 찾을 수 있도록 창에 검색 상자가 있습니다. 예를 들어 다음 그림에서는 4개의 이벤트와 일치한 "설치" 문자열에 대한 검색 결과를 보여 줍니다.  
+   이제 이벤트 목록의 모든 위치에서 특정 문자열을 찾을 수 있도록 창에 검색 상자가 있습니다. 예를 들어 다음 그림에서는 4개의 이벤트와 일치한 "설치" 문자열에 대한 검색 결과를 보여 줍니다.  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- 창에서 보기 내부 및 외부 이벤트를 필터링할 수도 있습니다. **필터** 드롭다운에서 특정 이벤트 범주를 선택하거나 선택 취소할 수 있습니다. 범주 이름은 접두사 이름과 동일합니다.  
+   창에서 보기 내부 및 외부 이벤트를 필터링할 수도 있습니다. **필터** 드롭다운에서 특정 이벤트 범주를 선택하거나 선택 취소할 수 있습니다. 범주 이름은 접두사 이름과 동일합니다.  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- 자세한 내용은 [진단 도구 창의 이벤트 탭 검색 및 필터링](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)을 참조하세요.  
+   자세한 내용은 [진단 도구 창의 이벤트 탭 검색 및 필터링](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)을 참조하세요.  
   
 ## <a name="collect-profiling-data-without-debugging"></a>디버깅을 사용하지 않고 프로파일링 데이터 수집  
  일부 프로파일링 도구를 실행하려면 관리자 권한이 필요합니다. 관리자 권한으로 Visual Studio를 시작할 수도 있고, 진단 세션을 시작할 때 관리자 권한으로 도구를 실행하도록 선택할 수 있습니다.  
   
-1.  Visual Studio에서 프로젝트를 엽니다.  
+1. Visual Studio에서 프로젝트를 엽니다.  
   
-2.  **디버그** 메뉴에서 **성능 프로파일러...** 를 선택합니다(바로 가기 키: Alt+F2).  
+2. **디버그** 메뉴에서 **성능 프로파일러...** 를 선택합니다(바로 가기 키: Alt+F2).  
   
-3.  진단 시작 페이지에서, 세션에서 실행할 하나 이상의 도구를 선택합니다. 프로젝트 형식, 운영 체제 및 프로그래밍 언어에 적용되는 도구만 표시됩니다. 진단 도구를 선택하면 같은 진단 세션에서 실행할 수 없는 도구 선택을 사용할 수 없게 설정됩니다. C# Windows 유니버설 앱의 경우 선택 항목이 다음과 같이 표시될 수 있습니다.  
+3. 진단 시작 페이지에서, 세션에서 실행할 하나 이상의 도구를 선택합니다. 프로젝트 형식, 운영 체제 및 프로그래밍 언어에 적용되는 도구만 표시됩니다. 진단 도구를 선택하면 같은 진단 세션에서 실행할 수 없는 도구 선택을 사용할 수 없게 설정됩니다. C# Windows 유니버설 앱의 경우 선택 항목이 다음과 같이 표시될 수 있습니다.  
   
-     ![진단 도구 선택](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![진단 도구 선택](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
-4.  진단 세션을 시작하려면 **시작**을 클릭합니다.  
+4. 진단 세션을 시작하려면 **시작**을 클릭합니다.  
   
-5.  데이터를 수집할 시나리오를 실행합니다.  
+5. 데이터를 수집할 시나리오를 실행합니다.  
   
-     세션을 실행하는 동안 일부 도구는 진단 도구 시작 페이지에 실시간 데이터의 그래프를 표시합니다.  
+    세션을 실행하는 동안 일부 도구는 진단 도구 시작 페이지에 실시간 데이터의 그래프를 표시합니다.  
   
-     ![성능 및 진단 페이지에서 데이터 수집](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![성능 및 진단 페이지에서 데이터 수집](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
-6.  진단 세션을 종료하려면 **컬렉션 중지**를 클릭합니다.  
+6. 진단 세션을 종료하려면 **컬렉션 중지**를 클릭합니다.  
   
- 진단 세션에서 데이터 수집을 중지하면 데이터가 분석되고 보고서가 진단 페이지에 표시됩니다.  
+   진단 세션에서 데이터 수집을 중지하면 데이터가 분석되고 보고서가 진단 페이지에 표시됩니다.  
   
- 진단 도구 시작 페이지의 최근에 열어 본 목록에서 저장된 진단 세션 파일을 열 수도 있습니다.  
+   진단 도구 시작 페이지의 최근에 열어 본 목록에서 저장된 진단 세션 파일을 열 수도 있습니다.  
   
- ![저장된 진단 세션 파일 열기](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![저장된 진단 세션 파일 열기](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>프로파일링 보고서  
  ![진단 도구 보고서](../profiling/media/diag-report.png "DIAG_Report")  

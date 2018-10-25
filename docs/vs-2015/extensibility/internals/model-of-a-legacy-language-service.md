@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907705"
 ---
 # <a name="model-of-a-legacy-language-service"></a>레거시 언어 서비스 모델
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ ms.locfileid: "49294036"
 ## <a name="a-minimal-language-service"></a>최소 언어 서비스  
  가장 기본적인 언어 서비스는 다음과 같은 두 개체가 포함 되어 있습니다.  
   
--   합니다 *언어 서비스* 구현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 인터페이스입니다. 언어 서비스를 사용 하면 이름, 파일 이름 확장명을 코드 창 관리자 colorizer 등 언어에 대 한 정보가 있습니다.  
+- 합니다 *언어 서비스* 구현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 인터페이스입니다. 언어 서비스를 사용 하면 이름, 파일 이름 확장명을 코드 창 관리자 colorizer 등 언어에 대 한 정보가 있습니다.  
   
--   합니다 *colorizer* 구현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 인터페이스입니다.  
+- 합니다 *colorizer* 구현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 인터페이스입니다.  
   
- 다음 개념적 그리기 기본적인 언어 서비스의 모델을 보여 줍니다.  
+  다음 개념적 그리기 기본적인 언어 서비스의 모델을 보여 줍니다.  
   
- ![언어 서비스 모델 그래픽](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-기본 언어 서비스 모델  
+  ![언어 서비스 모델 그래픽](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  기본 언어 서비스 모델  
   
- 문서 창 호스트는 *문서 뷰* 이 경우 편집기의는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 핵심 편집기입니다. 편집기에서 문서 보기 및 텍스트 버퍼를 소유 합니다. 이러한 개체를 작업할 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 라는 특수 문서 창을 통해를 *코드 창*합니다. 코드 창에 포함 된는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> 생성 및 IDE에 의해 제어 되는 개체입니다.  
+  문서 창 호스트는 *문서 뷰* 이 경우 편집기의는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 핵심 편집기입니다. 편집기에서 문서 보기 및 텍스트 버퍼를 소유 합니다. 이러한 개체를 작업할 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 라는 특수 문서 창을 통해를 *코드 창*합니다. 코드 창에 포함 된는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> 생성 및 IDE에 의해 제어 되는 개체입니다.  
   
- 편집기에서는 해당 확장과 관련 된 언어 서비스를 찾고 및 전달 하 여 코드 창을 호출 하 여 지정된 된 확장을 사용 하 여 파일을 로드 되 면를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> 메서드. 언어 서비스는 *코드 창 관리자*를 구현 하는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> 인터페이스.  
+  편집기에서는 해당 확장과 관련 된 언어 서비스를 찾고 및 전달 하 여 코드 창을 호출 하 여 지정된 된 확장을 사용 하 여 파일을 로드 되 면를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> 메서드. 언어 서비스는 *코드 창 관리자*를 구현 하는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> 인터페이스.  
   
- 다음 표에서 모델에서 개체의 개요를 제공합니다.  
+  다음 표에서 모델에서 개체의 개요를 제공합니다.  
   
 |구성 요소|Object|기능|  
 |---------------|------------|--------------|  

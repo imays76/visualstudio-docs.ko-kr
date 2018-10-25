@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a2188b412572b69abcf8bd3966c66e93d98ae2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 554be793ba1e41a5a8540d67c1b3f0585ad8664e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916395"
 ---
 # <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
-레지스터의 값을 설정합니다.  
+레지스터의 값을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,13 +35,13 @@ HRESULT put_registerValue (
   
 #### <a name="parameters"></a>매개 변수  
  `index`  
- [in] 값은 [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md) 에 쓸 수는 레지스터를 지정 하는 열거형입니다.  
+ [in] 값을 [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md) 쓸 레지스터를 지정 하는 열거형입니다.  
   
  `NewVal`  
- [in] 새 레지스터 값입니다.  
+ [in] 새 값을 등록합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   

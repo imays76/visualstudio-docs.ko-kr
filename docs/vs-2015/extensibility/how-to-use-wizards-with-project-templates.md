@@ -19,12 +19,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19fa248641d8df0fd19cd6f5baec7e86fa0c51c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee48fbf33513878626553d8703b44c8b2ed8f252
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899047"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>방법: 프로젝트 템플릿에 마법사 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,171 +60,171 @@ Visual Studio에서는 사용자가 템플릿을 사용하여 프로젝트를 �
 ## <a name="creating-a-custom-template-wizard"></a>사용자 지정 템플릿 마법사 만들기  
  이 항목에는 프로젝트를 만들기 전에 Windows 폼을 사용자 지정 마법사를 만드는 방법을 보여 줍니다. 폼을 사용 하면 프로젝트를 만드는 동안 소스 코드에 추가 되는 사용자 지정 매개 변수 값을 추가할 수 있습니다.  
   
-1.  어셈블리를 만들 수 있도록 하려면 VSIX 프로젝트를 설정 합니다.  
+1. 어셈블리를 만들 수 있도록 하려면 VSIX 프로젝트를 설정 합니다.  
   
-2.  에 **솔루션 탐색기**, VSIX 프로젝트 노드를 선택 합니다. 솔루션 탐색기 아래 표시 된 **속성** 창입니다. 이렇게 하지 않으면 경우 선택 **보기 / 속성 창**를 누르거나 **F4**합니다. 속성 창에서 다음 필드를 선택 `true`:  
+2. 에 **솔루션 탐색기**, VSIX 프로젝트 노드를 선택 합니다. 솔루션 탐색기 아래 표시 된 **속성** 창입니다. 이렇게 하지 않으면 경우 선택 **보기 / 속성 창**를 누르거나 **F4**합니다. 속성 창에서 다음 필드를 선택 `true`:  
   
-    -   **IncludeAssemblyInVSIXContainer**  
+   -   **IncludeAssemblyInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInVSIXContainer**  
+   -   **IncludeDebugSymbolsInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
-3.  VSIX 프로젝트에 자산으로 어셈블리를 추가 합니다. Source.extension.vsixmanifest 파일을 열고 선택 합니다 **자산** 탭 합니다. 에 **새 자산 추가** 창에 대 한 **유형** 선택 **Microsoft.VisualStudio.Assembly**에 대 한 **원본** 선택 **는 현재 솔루션의 프로젝트**, 및 **프로젝트** 선택 **MyTemplateWizard**합니다.  
+3. VSIX 프로젝트에 자산으로 어셈블리를 추가 합니다. Source.extension.vsixmanifest 파일을 열고 선택 합니다 **자산** 탭 합니다. 에 **새 자산 추가** 창에 대 한 **유형** 선택 **Microsoft.VisualStudio.Assembly**에 대 한 **원본** 선택 **는 현재 솔루션의 프로젝트**, 및 **프로젝트** 선택 **MyTemplateWizard**합니다.  
   
-4.  VSIX 프로젝트에 다음 참조를 추가 합니다. (에 **솔루션 탐색기**, VSIX에서 프로젝트 노드 선택 **참조**를 마우스 오른쪽 단추로 **참조 추가**.) 에 **참조 추가** 대화의를 **프레임 워크** 탭, 찾기는 **System.Windows Forms** 어셈블리 선택 합니다. 이제 선택 된 **확장** 탭 찾기는 **EnvDTE** 어셈블리 선택 합니다. 찾을 수도 합니다 **Microsoft.VisualStudio.TemplateWizardInterface** 어셈블리를 선택 합니다. **확인**을 클릭합니다.  
+4. VSIX 프로젝트에 다음 참조를 추가 합니다. (에 **솔루션 탐색기**, VSIX에서 프로젝트 노드 선택 **참조**를 마우스 오른쪽 단추로 **참조 추가**.) 에 **참조 추가** 대화의를 **프레임 워크** 탭, 찾기는 **System.Windows Forms** 어셈블리 선택 합니다. 이제 선택 된 **확장** 탭 찾기는 **EnvDTE** 어셈블리 선택 합니다. 찾을 수도 합니다 **Microsoft.VisualStudio.TemplateWizardInterface** 어셈블리를 선택 합니다. **확인**을 클릭합니다.  
   
-5.  마법사 구현에 대 한 클래스를 VSIX 프로젝트를 추가 합니다. (솔루션 탐색기에서 VSIX 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가**, 한 다음 **새 항목**, 한 다음 **클래스**.) 클래스의 이름을 **WizardImplementation**합니다.  
+5. 마법사 구현에 대 한 클래스를 VSIX 프로젝트를 추가 합니다. (솔루션 탐색기에서 VSIX 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가**, 한 다음 **새 항목**, 한 다음 **클래스**.) 클래스의 이름을 **WizardImplementation**합니다.  
   
-6.  코드를 대체 합니다 **WizardImplementationClass.cs** 를 다음 코드로 파일:  
+6. 코드를 대체 합니다 **WizardImplementationClass.cs** 를 다음 코드로 파일:  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.TemplateWizard;  
-    using System.Windows.Forms;  
-    using EnvDTE;  
+   ```csharp  
+   using System;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.TemplateWizard;  
+   using System.Windows.Forms;  
+   using EnvDTE;  
   
-    namespace MyProjectWizard  
-    {  
-        public class WizardImplementation:IWizard  
-        {  
-            private UserInputForm inputForm;  
-            private string customMessage;  
+   namespace MyProjectWizard  
+   {  
+       public class WizardImplementation:IWizard  
+       {  
+           private UserInputForm inputForm;  
+           private string customMessage;  
   
-            // This method is called before opening any item that   
-            // has the OpenInEditor attribute.  
-            public void BeforeOpeningFile(ProjectItem projectItem)  
-            {  
-            }  
+           // This method is called before opening any item that   
+           // has the OpenInEditor attribute.  
+           public void BeforeOpeningFile(ProjectItem projectItem)  
+           {  
+           }  
   
-            public void ProjectFinishedGenerating(Project project)  
-            {  
-            }  
+           public void ProjectFinishedGenerating(Project project)  
+           {  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public void ProjectItemFinishedGenerating(ProjectItem   
-                projectItem)  
-            {  
-            }  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public void ProjectItemFinishedGenerating(ProjectItem   
+               projectItem)  
+           {  
+           }  
   
-            // This method is called after the project is created.  
-            public void RunFinished()  
-            {  
-            }  
+           // This method is called after the project is created.  
+           public void RunFinished()  
+           {  
+           }  
   
-            public void RunStarted(object automationObject,  
-                Dictionary<string, string> replacementsDictionary,  
-                WizardRunKind runKind, object[] customParams)  
-            {  
-                try  
-                {  
-                    // Display a form to the user. The form collects   
-                    // input for the custom message.  
-                    inputForm = new UserInputForm();  
-                    inputForm.ShowDialog();  
+           public void RunStarted(object automationObject,  
+               Dictionary<string, string> replacementsDictionary,  
+               WizardRunKind runKind, object[] customParams)  
+           {  
+               try  
+               {  
+                   // Display a form to the user. The form collects   
+                   // input for the custom message.  
+                   inputForm = new UserInputForm();  
+                   inputForm.ShowDialog();  
   
-                    customMessage = UserInputForm.CustomMessage;  
+                   customMessage = UserInputForm.CustomMessage;  
   
-                    // Add custom parameters.  
-                    replacementsDictionary.Add("$custommessage$",   
-                        customMessage);  
-                }  
-                catch (Exception ex)  
-                {  
-                    MessageBox.Show(ex.ToString());  
-                }  
-            }  
+                   // Add custom parameters.  
+                   replacementsDictionary.Add("$custommessage$",   
+                       customMessage);  
+               }  
+               catch (Exception ex)  
+               {  
+                   MessageBox.Show(ex.ToString());  
+               }  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public bool ShouldAddProjectItem(string filePath)  
-            {  
-                return true;  
-            }          
-        }  
-    }  
-    ```  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public bool ShouldAddProjectItem(string filePath)  
+           {  
+               return true;  
+           }          
+       }  
+   }  
+   ```  
   
-     합니다 **된 userinputform은** 이 참조 코드는 나중에 구현 됩니다.  
+    합니다 **된 userinputform은** 이 참조 코드는 나중에 구현 됩니다.  
   
-     합니다 `WizardImplementation` 클래스의 모든 멤버에 대 한 메서드 구현을 포함 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>합니다. 이 예제에서는는 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 메서드 작업을 수행 합니다. 다른 모든 메서드 또는 아무 작업도 수행 하지 반환 `true`합니다.  
+    합니다 `WizardImplementation` 클래스의 모든 멤버에 대 한 메서드 구현을 포함 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>합니다. 이 예제에서는는 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 메서드 작업을 수행 합니다. 다른 모든 메서드 또는 아무 작업도 수행 하지 반환 `true`합니다.  
   
-     <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 메서드는 4 개의 매개 변수:  
+    <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 메서드는 4 개의 매개 변수:  
   
-    -   <xref:System.Object> 루트에 캐스팅할 수 있는 매개 변수 <xref:EnvDTE._DTE> 개체 프로젝트를 사용자 지정할 수 있도록 합니다.  
+   - <xref:System.Object> 루트에 캐스팅할 수 있는 매개 변수 <xref:EnvDTE._DTE> 개체 프로젝트를 사용자 지정할 수 있도록 합니다.  
   
-    -   <xref:System.Collections.Generic.Dictionary%602> 템플릿에서 미리 정의 된 모든 매개 변수의 컬렉션을 포함 하는 매개 변수입니다. 템플릿 매개 변수에 대 한 자세한 내용은 참조 하세요. [템플릿 매개 변수](../ide/template-parameters.md)합니다.  
+   - <xref:System.Collections.Generic.Dictionary%602> 템플릿에서 미리 정의 된 모든 매개 변수의 컬렉션을 포함 하는 매개 변수입니다. 템플릿 매개 변수에 대 한 자세한 내용은 참조 하세요. [템플릿 매개 변수](../ide/template-parameters.md)합니다.  
   
-    -   <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> 서식 파일의 종류를 사용 하는 방법에 대 한 정보를 포함 하는 매개 변수입니다.  
+   - <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> 서식 파일의 종류를 사용 하는 방법에 대 한 정보를 포함 하는 매개 변수입니다.  
   
-    -   <xref:System.Object> Visual Studio에서 마법사에 전달 된 매개 변수 집합을 포함 하는 배열입니다.  
+   - <xref:System.Object> Visual Studio에서 마법사에 전달 된 매개 변수 집합을 포함 하는 배열입니다.  
   
      사용자 입력된 폼에서 매개 변수 값을 추가 하는이 예제는 <xref:System.Collections.Generic.Dictionary%602> 매개 변수입니다. 모든 인스턴스는 `$custommessage$` 프로젝트의 매개 변수를 사용자가 입력 한 텍스트를 사용 하 여 바뀝니다. 프로젝트에 다음 어셈블리를 추가해야 합니다.  
   
-7.  이제 만들 합니다 **된 userinputform은**합니다. 에 **WizardImplementation.cs** 파일, 종료 된 후 다음 코드를 추가 합니다 **WizardImplementation** 클래스.  
+7. 이제 만들 합니다 **된 userinputform은**합니다. 에 **WizardImplementation.cs** 파일, 종료 된 후 다음 코드를 추가 합니다 **WizardImplementation** 클래스.  
   
-    ```csharp  
-    public partial class UserInputForm : Form  
-        {  
-            private static string customMessage;  
-            private TextBox textBox1;  
-            private Button button1;  
+   ```csharp  
+   public partial class UserInputForm : Form  
+       {  
+           private static string customMessage;  
+           private TextBox textBox1;  
+           private Button button1;  
   
-            public UserInputForm()  
-            {  
-                this.Size = new System.Drawing.Size(155, 265);   
+           public UserInputForm()  
+           {  
+               this.Size = new System.Drawing.Size(155, 265);   
   
-                button1 = new Button();  
-                button1.Location = new System.Drawing.Point(90, 25);  
-                button1.Size = new System.Drawing.Size(50, 25);  
-                button1.Click += button1_Click;  
-                this.Controls.Add(button1);  
+               button1 = new Button();  
+               button1.Location = new System.Drawing.Point(90, 25);  
+               button1.Size = new System.Drawing.Size(50, 25);  
+               button1.Click += button1_Click;  
+               this.Controls.Add(button1);  
   
-                textBox1 = new TextBox();  
-                textBox1.Location = new System.Drawing.Point(10, 25);  
-                textBox1.Size = new System.Drawing.Size(70, 20);  
-                this.Controls.Add(textBox1);  
-            }  
-            public static string CustomMessage  
-            {  
-                get  
-                {  
-                    return customMessage;  
-                }  
-                set  
-                {  
-                    customMessage = value;  
-                }     
-            }  
-            private void button1_Click(object sender, EventArgs e)  
-            {  
-                customMessage = textBox1.Text;  
-            }  
-        }  
-    ```  
+               textBox1 = new TextBox();  
+               textBox1.Location = new System.Drawing.Point(10, 25);  
+               textBox1.Size = new System.Drawing.Size(70, 20);  
+               this.Controls.Add(textBox1);  
+           }  
+           public static string CustomMessage  
+           {  
+               get  
+               {  
+                   return customMessage;  
+               }  
+               set  
+               {  
+                   customMessage = value;  
+               }     
+           }  
+           private void button1_Click(object sender, EventArgs e)  
+           {  
+               customMessage = textBox1.Text;  
+           }  
+       }  
+   ```  
   
-     사용자 입력된 폼을 사용자 지정 매개 변수를 입력 하는 것에 대 한 간단한 양식을 제공 합니다. 라는 텍스트 상자를 포함 하는 폼 `textBox1` 이라는 단추가 `button1`합니다. 입력란의 텍스트에 저장 됩니다 단추를 클릭할 때는 `customMessage` 매개 변수입니다.  
+    사용자 입력된 폼을 사용자 지정 매개 변수를 입력 하는 것에 대 한 간단한 양식을 제공 합니다. 라는 텍스트 상자를 포함 하는 폼 `textBox1` 이라는 단추가 `button1`합니다. 입력란의 텍스트에 저장 됩니다 단추를 클릭할 때는 `customMessage` 매개 변수입니다.  
   
 ## <a name="connect-the-wizard-to-the-custom-template"></a>마법사 사용자 지정 템플릿에 연결  
  사용자 지정 마법사를 사용 하 여 사용자 지정 프로젝트 템플릿에 대 한 순서 대로 마법사 어셈블리를 서명 하 고 새 프로젝트를 만들 때 마법사 구현을 찾을 수 있는 위치를 알 수 있도록 사용자 지정 프로젝트 템플릿에 일부 줄을 추가 해야 합니다.  
   
-1.  어셈블리에 서명 합니다. 에 **솔루션 탐색기**를 선택 하 고 VSIX 프로젝트를 마우스 오른쪽 단추를 선택 **프로젝트 속성**합니다.  
+1. 어셈블리에 서명 합니다. 에 **솔루션 탐색기**를 선택 하 고 VSIX 프로젝트를 마우스 오른쪽 단추를 선택 **프로젝트 속성**합니다.  
   
-2.  에 **프로젝트 속성** 창에서를 **서명** 탭에는 **서명** 탭 **어셈블리에 서명 합니다**. 에 **강력한 이름 키 파일 선택** 필드를 선택한  **\<새로 만들기 >** 합니다. 에 **강력한 이름 키 만들기** 창에서 합니다 **키 파일 이름** 필드에 입력 **key.snk**합니다. 선택 취소 합니다 **암호로 내 키 파일 보호** 필드입니다.  
+2. 에 **프로젝트 속성** 창에서를 **서명** 탭에는 **서명** 탭 **어셈블리에 서명 합니다**. 에 **강력한 이름 키 파일 선택** 필드를 선택한  **\<새로 만들기 >** 합니다. 에 **강력한 이름 키 만들기** 창에서 합니다 **키 파일 이름** 필드에 입력 **key.snk**합니다. 선택 취소 합니다 **암호로 내 키 파일 보호** 필드입니다.  
   
-3.  에 **솔루션 탐색기**VSIX 프로젝트를 선택 하 고 찾기, 합니다 **속성** 창.  
+3. 에 **솔루션 탐색기**VSIX 프로젝트를 선택 하 고 찾기, 합니다 **속성** 창.  
   
-4.  설정 된 **복사 빌드 출력에 출력 디렉터리** 필드를 **true**합니다. 이 어셈블리를 솔루션이 다시 빌드될 때 출력 디렉터리로 복사할 수 있습니다. .Vsix 파일에 여전히 포함 되어 있습니다. 해당 서명 키를 알기 위해 어셈블리를 참조 해야 합니다.  
+4. 설정 된 **복사 빌드 출력에 출력 디렉터리** 필드를 **true**합니다. 이 어셈블리를 솔루션이 다시 빌드될 때 출력 디렉터리로 복사할 수 있습니다. .Vsix 파일에 여전히 포함 되어 있습니다. 해당 서명 키를 알기 위해 어셈블리를 참조 해야 합니다.  
   
-5.  솔루션을 다시 빌드합니다.  
+5. 솔루션을 다시 빌드합니다.  
   
-6.  이제 key.snk 파일로 MyProjectWizard 프로젝트 디렉터리에 있습니다 (**\<디스크 위치 > \MyProjectTemplate\MyProjectWizard\key.snk**). Key.snk 파일로 복사 합니다.  
+6. 이제 key.snk 파일로 MyProjectWizard 프로젝트 디렉터리에 있습니다 (**\<디스크 위치 > \MyProjectTemplate\MyProjectWizard\key.snk**). Key.snk 파일로 복사 합니다.  
   
-7.  출력 디렉터리로 이동 하 고 어셈블리를 찾습니다 (**\<디스크 위치 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). 여기에 key.snk 파일을 붙여 넣습니다. (반드시 필요 하지 않습니다 하지만는 다음 단계를 쉽게 가져옵니다.)  
+7. 출력 디렉터리로 이동 하 고 어셈블리를 찾습니다 (**\<디스크 위치 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). 여기에 key.snk 파일을 붙여 넣습니다. (반드시 필요 하지 않습니다 하지만는 다음 단계를 쉽게 가져옵니다.)  
   
-8.  명령 창을 열고 있는 어셈블리를 만든 디렉터리로 변경 합니다.  
+8. 명령 창을 열고 있는 어셈블리를 만든 디렉터리로 변경 합니다.  
   
 9. 찾을 합니다 **sn.exe** 도구를 서명 합니다. 예를 들어, Windows 10 64 비트 운영 체제에서 일반적인 경로 다음과 같습니다.  
   
@@ -264,17 +264,17 @@ Visual Studio에서는 사용자가 템플릿을 사용하여 프로젝트를 �
 ## <a name="adding-the-custom-parameter-to-the-template"></a>템플릿에 사용자 지정 매개 변수를 추가합니다.  
  이 예제에서는 프로젝트를 템플릿으로 사용 되는 사용자 지정 마법사의 사용자 입력된 폼에서 지정 된 메시지를 표시 합니다.  
   
-1.  솔루션 탐색기에서로 이동 합니다 **MyProjectTemplate** 프로젝트를 열고 **Class1.cs**합니다.  
+1. 솔루션 탐색기에서로 이동 합니다 **MyProjectTemplate** 프로젝트를 열고 **Class1.cs**합니다.  
   
-2.  에 `Main` 응용 프로그램의 메서드는 다음 코드 줄을 추가 합니다.  
+2. 에 `Main` 응용 프로그램의 메서드는 다음 코드 줄을 추가 합니다.  
   
-    ```  
-    Console.WriteLine("$custommessage$");  
-    ```  
+   ```  
+   Console.WriteLine("$custommessage$");  
+   ```  
   
-     매개 변수 `$custommessage$` 템플릿에서 프로젝트를 만들 때 사용자 입력된 폼에 입력 된 텍스트로 바뀝니다.  
+    매개 변수 `$custommessage$` 템플릿에서 프로젝트를 만들 때 사용자 입력된 폼에 입력 된 텍스트로 바뀝니다.  
   
- 템플릿으로 내보내기 전에 전체 코드 파일을 다음과 같습니다.  
+   템플릿으로 내보내기 전에 전체 코드 파일을 다음과 같습니다.  
   
 ```csharp  
 using System;  

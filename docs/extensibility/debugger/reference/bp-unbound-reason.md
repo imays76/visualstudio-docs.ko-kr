@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65398ac0c4bde18dc772d75ceea203bdbfe3b189
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e1e344ff5adb51d118370f81de10ba01c8950e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904221"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-중단점 바인딩된 없습니다. 이유를 제공 합니다.  
+중단점이 바인딩된 없습니다. 이유를 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,19 +48,19 @@ public enum enum_BP_UNBOUND_REASON {
   
 ## <a name="members"></a>멤버  
  BPUR_UNKNOWN  
- 이유를 알 수 없습니다.  
+ 알 수 없는 이유입니다.  
   
  BPUR_CODE_UNLOADED  
  중단점을 포함 하는 코드는 언로드 되었습니다.  
   
  BPUR_BREAKPOINT_REBIND  
- 중단점을 다른 위치로 다시 바인딩. 이 편집 후 발생 하 고, 이동 또는 중단점을 더 이상 사용할 경로와 파일에 바인딩되어 있을 때 작업을 계속 수 없습니다.  
+ 다른 위치에 다시 바인딩 중단점. 이 편집 후 발생 하 고 중단점 움직이면 또는 더 이상 유효 경로 사용 하 여 파일 중단점이 바인딩될 때 작업을 계속 수 없습니다.  
   
  BPUR_ BREAKPOINT_ERROR  
- 중단점이 바인딩된 후 오류에 있는 것으로 결정 됩니다. 이 관리 되는 중단점 인 조건이 더 이상 유효에 발생 합니다.  
+ 중단점이 바인딩된 후 오류에 포함 되도록 결정 됩니다. 이 관리 되는 중단점 조건이 더 이상 유효 합니다.  
   
 ## <a name="remarks"></a>설명  
- 반환 되는 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 메서드.  
+ 반환 된 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

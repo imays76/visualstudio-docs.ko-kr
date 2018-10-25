@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812428"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ ms.locfileid: "49251838"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   AdventureWorksLT 샘플 데이터베이스의 데이터에서 생성되는 엔터티 데이터 모델을 만듭니다.  
+- AdventureWorksLT 샘플 데이터베이스의 데이터에서 생성되는 엔터티 데이터 모델을 만듭니다.  
   
--   만들기는 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] WPF 응용 프로그램 엔터티 데이터 모델의 데이터를 노출 합니다.  
+- 만들기는 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] WPF 응용 프로그램 엔터티 데이터 모델의 데이터를 노출 합니다.  
   
--   항목을 끌어 데이터 바인딩된 컨트롤의 집합을 만드는 합니다 **데이터 원본** 창에서 WPF 디자이너로 합니다.  
+- 항목을 끌어 데이터 바인딩된 컨트롤의 집합을 만드는 합니다 **데이터 원본** 창에서 WPF 디자이너로 합니다.  
   
--   고객 레코드를 앞뒤로 탐색하는 데 사용할 단추를 만듭니다.  
+- 고객 레코드를 앞뒤로 탐색하는 데 사용할 단추를 만듭니다.  
   
--   컨트롤의 데이터 변경 내용을 저장 하는 단추 만들기는 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 및 기본 데이터 원본입니다.  
+- 컨트롤의 데이터 변경 내용을 저장 하는 단추 만들기는 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 및 기본 데이터 원본입니다.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다 합니다 [CodePlex 웹 사이트](http://go.microsoft.com/fwlink/?linkid=87843)합니다.  
+- AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다 합니다 [CodePlex 웹 사이트](http://go.microsoft.com/fwlink/?linkid=87843)합니다.  
   
- 또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.  
+  또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.  
   
--   WCF Data Services. 자세한 내용은 [개요](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)합니다.  
+- WCF Data Services. 자세한 내용은 [개요](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)합니다.  
   
--   [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]의 데이터 모델  
+- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]의 데이터 모델  
   
--   엔터티 데이터 모델 및 ADO.NET Entity Framework 자세한 내용은 [Entity Framework 개요](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)합니다.  
+- 엔터티 데이터 모델 및 ADO.NET Entity Framework 자세한 내용은 [Entity Framework 개요](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)합니다.  
   
--   WPF 디자이너 사용법. 자세한 내용은 [WPF 및 Silverlight 디자이너 개요](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)합니다.  
+- WPF 디자이너 사용법. 자세한 내용은 [WPF 및 Silverlight 디자이너 개요](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)합니다.  
   
--   WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)를 참조하세요.  
+- WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)를 참조하세요.  
   
 ## <a name="create-the-service-project"></a>서비스 프로젝트를 만들려면  
  이 연습에서는 먼저 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]용 프로젝트를 만듭니다.  
@@ -207,39 +207,39 @@ ms.locfileid: "49251838"
   
 #### <a name="to-create-the-data-bound-controls"></a>데이터 바인딩된 컨트롤을 만들려면  
   
-1.  에 **데이터 원본** 창 드롭다운 메뉴를 클릭 합니다 **SalesOrderHeaders** 노드를 선택한 **세부 정보**합니다.  
+1. 에 **데이터 원본** 창 드롭다운 메뉴를 클릭 합니다 **SalesOrderHeaders** 노드를 선택한 **세부 정보**합니다.  
   
-2.  확장 된 **SalesOrderHeaders** 노드.  
+2. 확장 된 **SalesOrderHeaders** 노드.  
   
-3.  예를 들어 일부 필드 표시 되지 것입니다, 따라서 다음 노드 옆에 있는 드롭다운 메뉴를 클릭 하 고 선택 **None**:  
+3. 예를 들어 일부 필드 표시 되지 것입니다, 따라서 다음 노드 옆에 있는 드롭다운 메뉴를 클릭 하 고 선택 **None**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **수정한 날짜**  
+   - **수정한 날짜**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **rowguid**  
+   - **rowguid**  
   
      이 작업을 수행하면 다음 단계에서 이러한 노드에 대해 데이터 바인딩된 컨트롤이 작성되지 않습니다. 이 연습에서는 최종 사용자는이 데이터를 볼 필요가 없습니다를 가정 합니다.  
   
-4.  **데이터 원본** 창에서 끌어 합니다 **SalesOrderHeaders** 단추가 포함 된 행 아래 표에서 행으로 노드.  
+4. **데이터 원본** 창에서 끌어 합니다 **SalesOrderHeaders** 단추가 포함 된 행 아래 표에서 행으로 노드.  
   
-     Visual Studio에서 XAML 및 데이터에 바인딩되는 컨트롤 집합을 만드는 코드를 생성 합니다 **제품** 테이블입니다. 생성 된 XAML 및 코드에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 데이터를 바인딩할 WPF 컨트롤](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)합니다.  
+    Visual Studio에서 XAML 및 데이터에 바인딩되는 컨트롤 집합을 만드는 코드를 생성 합니다 **제품** 테이블입니다. 생성 된 XAML 및 코드에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 데이터를 바인딩할 WPF 컨트롤](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)합니다.  
   
-5.  디자이너에서 텍스트 상자 옆에 클릭 합니다 **고객 ID** 레이블.  
+5. 디자이너에서 텍스트 상자 옆에 클릭 합니다 **고객 ID** 레이블.  
   
-6.  에 **속성** 창에서 옆에 확인란 합니다 **IsReadOnly** 속성.  
+6. 에 **속성** 창에서 옆에 확인란 합니다 **IsReadOnly** 속성.  
   
-7.  설정 된 **IsReadOnly** 각 다음 텍스트 상자에 대 한 속성:  
+7. 설정 된 **IsReadOnly** 각 다음 텍스트 상자에 대 한 속성:  
   
-    -   **구매 주문 번호**  
+   -   **구매 주문 번호**  
   
-    -   **판매 주문 ID**  
+   -   **판매 주문 ID**  
   
-    -   **판매 주문 번호**  
+   -   **판매 주문 번호**  
   
 ## <a name="load-the-data-from-the-service"></a>서비스에서 데이터를 로드 합니다.  
  서비스 프록시 개체를 사용 하 여 서비스에서 판매 데이터를 로드 합니다. 그런 다음 반환된 된 데이터에 대 한 데이터 원본에 할당 된 <xref:System.Windows.Data.CollectionViewSource> WPF 창에서.  

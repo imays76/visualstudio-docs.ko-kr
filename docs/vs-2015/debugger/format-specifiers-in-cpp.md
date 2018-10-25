@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894055"
 ---
 # <a name="format-specifiers-in-c"></a>C++의 형식 지정자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ ms.locfileid: "49249823"
   
 > [!NOTE]
 >  Visual Studio 네이티브 디버거가 새로운 디버깅 엔진으로 변경되었습니다. 이 변경의 일부로 새로운 형식 지정자가 일부 추가되고 기존 형식 지정자가 일부 제거되었습니다. C++/CLI를 사용하여 interop(혼합 네이티브 및 관리) 디버깅을 수행할 때 이전 디버거가 계속 사용됩니다. 이 항목의 다음 섹션에서는 각 디버그 엔진에 대한 형식 지정자를 보여 줍니다.  
->   
->  -   [형식 지정자](#BKMK_Visual_Studio_2012_format_specifiers) 에서는 새로운 디버깅 엔진의 형식 지정자에 대해 설명합니다.  
-> -   [C++/CLI를 사용하는 interop 디버깅의 형식 지정자](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 에서는 이전 디버깅 엔진의 형식 지정자에 대해 설명합니다.  
+> 
+> - [형식 지정자](#BKMK_Visual_Studio_2012_format_specifiers) 에서는 새로운 디버깅 엔진의 형식 지정자에 대해 설명합니다.  
+>   -   [C++/CLI를 사용하는 interop 디버깅의 형식 지정자](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 에서는 이전 디버깅 엔진의 형식 지정자에 대해 설명합니다.  
   
 ## <a name="using-format-specifiers"></a>형식 지정자 사용  
  다음과 같은 코드를 가정해 봅니다.  

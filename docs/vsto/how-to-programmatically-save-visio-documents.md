@@ -16,44 +16,44 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4171f0237b7735748da567bd9482856c013759bc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3d763209d60440066df758b6c1eca087dea9b03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906678"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>방법: 프로그래밍 방식으로 Visio 문서 저장
   여러 가지 방법을 사용하여 Microsoft Office Visio 문서를 저장할 수 있습니다.  
   
--   변경 내용을 기존 문서에 저장합니다.  
+- 변경 내용을 기존 문서에 저장합니다.  
   
--   새 문서를 저장하거나 새 이름으로 문서를 저장합니다.  
+- 새 문서를 저장하거나 새 이름으로 문서를 저장합니다.  
   
--   지정된 인수와 함께 문서를 저장합니다.  
+- 지정된 인수와 함께 문서를 저장합니다.  
   
- 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) 메서드, [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) 메서드 및 [Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) 메서드를 참조하세요.  
+  자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) 메서드, [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) 메서드 및 [Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) 메서드를 참조하세요.  
   
 ## <a name="save-an-existing-document"></a>기존 문서 저장  
   
 ### <a name="to-save-a-document"></a>문서를 저장하려면  
   
--   호출을 `Microsoft.Office.Interop.Visio.Document.Save` 메서드는 `Microsoft.Office.Tools.Visio.Document` 클래스에서 이전에 저장 된 문서입니다.  
+-   이전에 저장한 문서에서 `Microsoft.Office.Tools.Visio.Document` 클래스의 `Microsoft.Office.Interop.Visio.Document.Save` 메서드를 호출합니다.  
   
      이 코드 예제를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.  
   
     > [!NOTE]  
-    >  `Microsoft.Office.Interop.Visio.Document.Save` 메서드는 새 Visio 문서 아직 저장 되지 않은 경우 예외를 throw 합니다.  
+    >  새 Visio 문서가 아직 저장되지 않은 경우 `Microsoft.Office.Interop.Visio.Document.Save` 메서드에서 예외를 throw합니다.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]  
   
 ## <a name="save-a-document-with-a-new-name"></a>새 이름으로 문서를 저장 합니다.  
- 사용 된 `Microsoft.Office.Interop.Visio.Document.SaveAs` 새 문서 또는 새 이름이 있는 문서를 저장 하는 방법입니다. 이 메서드를 사용하려면 새 파일 이름을 지정해야 합니다.  
+ `Microsoft.Office.Interop.Visio.Document.SaveAs` 메서드를 사용하여 새 문서를 저장하거나 새 이름으로 문서를 저장합니다. 이 메서드를 사용하려면 새 파일 이름을 지정해야 합니다.  
   
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>활성 Visio 문서를 새 이름으로 저장하려면  
   
--   호출을 `Microsoft.Office.Interop.Visio.Document.SaveAs` 메서드의 `Microsoft.Office.Tools.Visio.Document` 파일 이름을 포함 한 정규화 된 경로 사용 하 여 저장 되도록 합니다. 해당 이름의 파일이 폴더에 이미 있으면 자동으로 덮어씁니다.  
+-   파일 이름까지 포함한 정규화된 경로를 사용하여 저장하려는 `Microsoft.Office.Tools.Visio.Document`의 `Microsoft.Office.Interop.Visio.Document.SaveAs` 메서드를 호출합니다. 해당 이름의 파일이 폴더에 이미 있으면 자동으로 덮어씁니다.  
   
      이 코드 예제를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.  
   
@@ -61,11 +61,11 @@ ms.locfileid: "35675107"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]  
   
 ## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>새 이름 및 지정 된 인수를 사용 하 여 문서를 저장 합니다.  
- 사용 된 `Microsoft.Office.Interop.Visio.Document.SaveAsEx` 메서드를 새 이름으로 문서를 저장 하 고 문서에 적용할 인수를 지정 합니다.  
+ `Microsoft.Office.Interop.Visio.Document.SaveAsEx` 메서드를 사용하여 새 이름으로 문서를 저장하고 문서에 적용할 인수를 지정합니다.  
   
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>새 이름 및 지정된 인수를 사용하여 문서를 저장하려면  
   
--   호출을 `Microsoft.Office.Interop.Visio.Document.SaveAsEx` 메서드의 `Microsoft.Office.Tools.Visio.Document` 파일 이름을 포함 한 정규화 된 경로 사용 하 여 저장 되도록 합니다. 해당 이름의 파일이 폴더에 이미 있으면 예외가 throw됩니다.  
+-   파일 이름까지 포함한 정규화된 경로를 사용하여 저장하려는 `Microsoft.Office.Tools.Visio.Document`의 `Microsoft.Office.Interop.Visio.Document.SaveAsEx` 메서드를 호출합니다. 해당 이름의 파일이 폴더에 이미 있으면 예외가 throw됩니다.  
   
      다음 코드 예제에서는 활성 문서를 새 이름으로 저장하고 문서를 읽기 전용으로 표시하며 가장 최근에 사용됨 문서 목록에 문서를 표시합니다. 이 코드 예제를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.  
   

@@ -15,12 +15,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a421ba2278c177eeb0fdba8571497e50ba71b39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894237"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>새 항목 추가 대화 상자에 항목 추가
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ ms.locfileid: "49223108"
 ## <a name="filtering-project-items"></a>프로젝트 항목 필터링  
  `IVsFilterAddProjectItemDlg2` 요소 트리 (왼쪽) 및 프로젝트 파일 (오른쪽 창)에서 다음과 같은 방법으로 필터링을 제공 합니다.  
   
--   제공한 지역화 된 이름 (.vsdir 파일에 포함 된 대화 상자에서 표시 되는 캡션)으로 `IVsFilterAddProjectItemDlg`입니다.  
+- 제공한 지역화 된 이름 (.vsdir 파일에 포함 된 대화 상자에서 표시 되는 캡션)으로 `IVsFilterAddProjectItemDlg`입니다.  
   
--   파일 및 디스크에 폴더의 실제 이름으로 (지역화 되지 않은-.vsdir 파일 없음) 제공한 `IVsFilterAddProjectItemDlg`합니다.  
+- 파일 및 디스크에 폴더의 실제 이름으로 (지역화 되지 않은-.vsdir 파일 없음) 제공한 `IVsFilterAddProjectItemDlg`합니다.  
   
--   제공한 범주별 `IVsFilterAddProjectItemDlg2`합니다.  
+- 제공한 범주별 `IVsFilterAddProjectItemDlg2`합니다.  
   
- 를 범주별으로 필터링 하려면 범주 문자열 "Web form" 같은.vsdir 파일의 항목 또는 Visual Basic의 "클라이언트 항목"을 제공 합니다. 대화 상자 코드.vsdir 파일에서 범주 분류를 검색 하 고를 전달 합니다. 구현에 다음 정보를 전달할 수 있습니다 `IVsFilterAddProjectItemDlg2` 필터링 하는 **새 항목 추가** 범주별 대화 상자. 또한 클라이언트 Win32 응용 프로그램의 경우 또는 웹 페이지에 대 한 항목을 필터링 할 수 있습니다. 또한 식별할 수 있습니다 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Microsoft Foundation 클래스 (MFC) 또는 액티브 템플릿 라이브러리 (ATL) 항목으로 항목을 태그 합니다. 이러한 항목을 식별 하는 경우 시스템은 범주 및 분류에 따라 필터링 할 수 있도록 프로젝트 시스템 자체 분류를 정의할 수 있습니다.  
+  를 범주별으로 필터링 하려면 범주 문자열 "Web form" 같은.vsdir 파일의 항목 또는 Visual Basic의 "클라이언트 항목"을 제공 합니다. 대화 상자 코드.vsdir 파일에서 범주 분류를 검색 하 고를 전달 합니다. 구현에 다음 정보를 전달할 수 있습니다 `IVsFilterAddProjectItemDlg2` 필터링 하는 **새 항목 추가** 범주별 대화 상자. 또한 클라이언트 Win32 응용 프로그램의 경우 또는 웹 페이지에 대 한 항목을 필터링 할 수 있습니다. 또한 식별할 수 있습니다 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Microsoft Foundation 클래스 (MFC) 또는 액티브 템플릿 라이브러리 (ATL) 항목으로 항목을 태그 합니다. 이러한 항목을 식별 하는 경우 시스템은 범주 및 분류에 따라 필터링 할 수 있도록 프로젝트 시스템 자체 분류를 정의할 수 있습니다.  
   
- 이 필터 기능을 구현 하는 경우 테이블은 숨겨야 하는 모든 항목을 매핑할 필요가 없습니다. 단순히 항목 유형으로 분류 하 고.vsdir 파일 또는 파일에 분류를 배치할 수 있습니다. 그런 다음 인터페이스를 구현 하 여 특정 분류를이 있는 항목 중 하나를 숨길 수 있습니다. 이러한 방식으로 항목을 만들 수 있습니다 합니다 **새 항목 추가** 프로젝트 내에서 상태를 기반으로 대화 상자 동적입니다.  
+  이 필터 기능을 구현 하는 경우 테이블은 숨겨야 하는 모든 항목을 매핑할 필요가 없습니다. 단순히 항목 유형으로 분류 하 고.vsdir 파일 또는 파일에 분류를 배치할 수 있습니다. 그런 다음 인터페이스를 구현 하 여 특정 분류를이 있는 항목 중 하나를 숨길 수 있습니다. 이러한 방식으로 항목을 만들 수 있습니다 합니다 **새 항목 추가** 프로젝트 내에서 상태를 기반으로 대화 상자 동적입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

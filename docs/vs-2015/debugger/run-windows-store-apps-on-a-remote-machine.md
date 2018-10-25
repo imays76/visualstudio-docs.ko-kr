@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f031e81911c9a36cd2c48abf7bd2b092bb5940f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886281"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>원격 컴퓨터에서 Windows 스토어 앱 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Windows에만 적용] (.. /Image/windows_only_content.png "windows_only_content"
   
  [원격 디버깅을 위해 Visual Studio 프로젝트 구성](#BKMK_ConnectVS)  
   
--   [C# 및 Visual Basic 프로젝트에 사용할 원격 장치 선택](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [C# 및 Visual Basic 프로젝트에 사용할 원격 장치 선택](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [JavaScript 및 C++ 프로젝트에 사용할 원격 장치 선택](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [JavaScript 및 C++ 프로젝트에 사용할 원격 장치 선택](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [원격 디버깅 세션 실행](#BKMK_RunRemoteDebug)  
+  [원격 디버깅 세션 실행](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> 필수 구성 요소  
  원격 장치에서 디버깅하려면  
@@ -123,20 +123,20 @@ Windows에만 적용] (.. /Image/windows_only_content.png "windows_only_content"
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> 원격 디버거 구성  
  두 도구를 사용하여 원격 디버거의 구성을 수정할 수 있습니다.  
   
-1.  **Visual Studio 원격 디버깅 모니터** 의 **도구**메뉴에서 다음 작업을 수행합니다.  
+1. **Visual Studio 원격 디버깅 모니터** 의 **도구**메뉴에서 다음 작업을 수행합니다.  
   
-    1.  **옵션** 을 선택하여 원격 디버거의 포트 번호, 인증 모드 또는 시간 제한 간격을 변경합니다.  
+   1.  **옵션** 을 선택하여 원격 디버거의 포트 번호, 인증 모드 또는 시간 제한 간격을 변경합니다.  
   
-    2.  **사용 권한** 을 선택하여 원격 디버깅에 대한 사용 권한이 있는 사용자를 추가하거나 제거합니다.  
+   2.  **사용 권한** 을 선택하여 원격 디버깅에 대한 사용 권한이 있는 사용자를 추가하거나 제거합니다.  
   
-        > [!NOTE]
-        >  사용 권한은 원격으로 디버깅하는 모든 사용자 계정에 부여해야 합니다.  
+       > [!NOTE]
+       >  사용 권한은 원격으로 디버깅하는 모든 사용자 계정에 부여해야 합니다.  
   
- **원격 디버거 구성 마법사** 를 사용하여 원격 디버거에 대한 고급 옵션을 설정합니다. 마법사를 열려면 시작 화면에서 **원격 디버거 구성 마법사** 를 선택합니다.  
+   **원격 디버거 구성 마법사** 를 사용하여 원격 디버거에 대한 고급 옵션을 설정합니다. 마법사를 열려면 시작 화면에서 **원격 디버거 구성 마법사** 를 선택합니다.  
   
-1.  **Visual Studio 원격 디버거 구성** 페이지에서 원격 디버거를 서비스로 실행할 수 있습니다. 대부분의 경우 서비스로 실행할 필요는 없습니다.  
+2. **Visual Studio 원격 디버거 구성** 페이지에서 원격 디버거를 서비스로 실행할 수 있습니다. 대부분의 경우 서비스로 실행할 필요는 없습니다.  
   
-2.  **디버깅할 수 있도록 Windows 방화벽 구성** 페이지에서 원격 디버거가 연결할 네트워크의 형식을 추가하거나 제거할 수 있습니다. 현재 장치가 연결되어 있는 네트워크만 사용할 수 있습니다. 네트워크를 하나 이상 선택해야 합니다.  
+3. **디버깅할 수 있도록 Windows 방화벽 구성** 페이지에서 원격 디버거가 연결할 네트워크의 형식을 추가하거나 제거할 수 있습니다. 현재 장치가 연결되어 있는 네트워크만 사용할 수 있습니다. 네트워크를 하나 이상 선택해야 합니다.  
   
 ##  <a name="BKMK_ConnectVS"></a> 원격 디버깅을 위해 Visual Studio 프로젝트 구성  
  프로젝트 속성에서 연결할 원격 장치를 지정합니다. 절차는 프로그래밍 언어에 따라 다릅니다. 원격 장치의 네트워크 이름을 입력하거나 원격 디버거 연결 선택 대화 상자에서 해당 이름을 선택할 수 있습니다.  

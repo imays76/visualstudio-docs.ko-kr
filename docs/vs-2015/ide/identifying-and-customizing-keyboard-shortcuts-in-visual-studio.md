@@ -24,35 +24,35 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 908d5094ad36a6f907c781987fba1fd053d673dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 64c663e423d0d87fa0b710b65f60b4890a836d88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830940"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Visual Studio에서 바로 가기 키 식별 및 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 가기 키를 사용자 지정하고, 다른 사용자가 사용하도록 내보낼 수 있습니다. 대부분의 바로 가기는 항상 동일한 명령을 호출하지만, 바로 가기 동작은 다음 조건에 따라 달라질 수 있습니다.  
   
--   일반 개발 환경 설정 또는 Visual C# 환경 설정 등의 Visual Studio를 처음으로 실행했을 때 선택한 기본 환경 설정 종류  
+- 일반 개발 환경 설정 또는 Visual C# 환경 설정 등의 Visual Studio를 처음으로 실행했을 때 선택한 기본 환경 설정 종류  
   
--   바로 가기의 동작의 사용자 지정 여부  
+- 바로 가기의 동작의 사용자 지정 여부  
   
--   바로 가기를 선택한 컨텍스트 위치. 예를 들어, F2 바로 가기는 설정 디자이너를 사용 중인 경우 Edit.EditCell 명령을 호출하고, 팀 탐색기를 사용 중인 경우 File.Rename 명령을 호출합니다.  
+- 바로 가기를 선택한 컨텍스트 위치. 예를 들어, F2 바로 가기는 설정 디자이너를 사용 중인 경우 Edit.EditCell 명령을 호출하고, 팀 탐색기를 사용 중인 경우 File.Rename 명령을 호출합니다.  
   
- 설정, 사용자 지정 여부 및 컨텍스트에 관계없이 언제든지 **옵션** 대화 상자에서 바로 가기 키를 찾아 변경할 수 있습니다. 또한 [자주 사용되는 명령의 기본 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)에서 수십 가지 명령에 대한 기본 바로 가기 키를 확인할 수 있으며, 모든 기본 바로 가기의 전체 목록(일반 개발 설정 기준)은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)에서 찾을 수 있습니다.  
+  설정, 사용자 지정 여부 및 컨텍스트에 관계없이 언제든지 **옵션** 대화 상자에서 바로 가기 키를 찾아 변경할 수 있습니다. 또한 [자주 사용되는 명령의 기본 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)에서 수십 가지 명령에 대한 기본 바로 가기 키를 확인할 수 있으며, 모든 기본 바로 가기의 전체 목록(일반 개발 설정 기준)은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)에서 찾을 수 있습니다.  
   
- **항목 내용**  
+  **항목 내용**  
   
--   [바로 가기 키 식별](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
+- [바로 가기 키 식별](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
   
--   [바로 가기 키 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
+- [바로 가기 키 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
   
--   [사용자 지정 바로 가기 키 공유](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
+- [사용자 지정 바로 가기 키 공유](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
   
- 바로 가기가 전역 컨텍스트의 명령에 할당되었고 기타 컨텍스트가 없는 경우, 해당 바로 가기는 항상 해당 명령을 호출합니다. 하지만 바로 가기가 전역 컨텍스트에서 한 명령에 할당되고 특정 컨텍스트에서는 다른 명령에 할당될 수도 있습니다. 특정 컨텍스트에서 이러한 바로 가기를 사용하는 경우, 바로 가기는 전역 컨텍스트가 아닌 특정 컨텍스트의 명령을 호출합니다.  
+  바로 가기가 전역 컨텍스트의 명령에 할당되었고 기타 컨텍스트가 없는 경우, 해당 바로 가기는 항상 해당 명령을 호출합니다. 하지만 바로 가기가 전역 컨텍스트에서 한 명령에 할당되고 특정 컨텍스트에서는 다른 명령에 할당될 수도 있습니다. 특정 컨텍스트에서 이러한 바로 가기를 사용하는 경우, 바로 가기는 전역 컨텍스트가 아닌 특정 컨텍스트의 명령을 호출합니다.  
   
 > [!NOTE]
 >  사용자 설정 및 Visual Studio 버전에 따라 메뉴 명령과 대화 상자에 표시되는 옵션의 이름 및 위치가 변경될 수 있습니다. 이 항목에서는 **일반 개발 설정**을 기반으로 합니다.  

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901556"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>스토어 앱의 Visual C# 코드 유닛 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ ms.locfileid: "49245442"
   
 > [!NOTE]
 >  Visual Studio Community, Enterprise 및 Professional에서는 단위 테스트를 위한 추가 기능을 제공합니다.  
->   
->  -   Microsoft 테스트 탐색기에 대한 추가 어댑터를 만든 타사 및 오픈 소스 단위 테스트 프레임워크를 사용합니다. 또한 테스트에 대한 코드 검사 정보를 분석하고 표시할 수도 있습니다.  
-> -   빌드할 때마다 빌드 후 테스트를 실행합니다.  
-> -   VS Enterprise에는 관리 코드에 대한 격리 프레임워크인 Microsoft Fakes도 포함되어 있습니다. Microsoft Fakes는 시스템 및 타사 기능을 테스트 코드로 대체하여 자체 코드에 대한 테스트에 집중하는 데 도움이 됩니다.  
->   
->  자세한 내용은 MSDN 라이브러리의 [단위 테스트를 사용하여 코드 확인](http://msdn.microsoft.com/library/dd264975.aspx)을 참조하세요.  
+> 
+> - Microsoft 테스트 탐색기에 대한 추가 어댑터를 만든 타사 및 오픈 소스 단위 테스트 프레임워크를 사용합니다. 또한 테스트에 대한 코드 검사 정보를 분석하고 표시할 수도 있습니다.  
+>   -   빌드할 때마다 빌드 후 테스트를 실행합니다.  
+>   -   VS Enterprise에는 관리 코드에 대한 격리 프레임워크인 Microsoft Fakes도 포함되어 있습니다. Microsoft Fakes는 시스템 및 타사 기능을 테스트 코드로 대체하여 자체 코드에 대한 테스트에 집중하는 데 도움이 됩니다.  
+> 
+>   자세한 내용은 MSDN 라이브러리의 [단위 테스트를 사용하여 코드 확인](http://msdn.microsoft.com/library/dd264975.aspx)을 참조하세요.  
   
 ##  <a name="BKMK_In_this_topic"></a> 항목 내용  
  [솔루션 및 단위 테스트 프로젝트 만들기](#BKMK_Create_the_solution_and_the_unit_test_project)  
@@ -152,48 +152,48 @@ ms.locfileid: "49245442"
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> 응용 프로그램 프로젝트에 테스트 프로젝트 연결  
   
-1.  Maths 응용 프로그램에 대한 참조를 RooterTests 프로젝트에 추가합니다.  
+1. Maths 응용 프로그램에 대한 참조를 RooterTests 프로젝트에 추가합니다.  
   
-    1.  솔루션 탐색기에서 **RooterTests** 프로젝트를 선택한 다음 바로 가기 메뉴에서 **참조 추가...** 를 선택합니다.  
+   1.  솔루션 탐색기에서 **RooterTests** 프로젝트를 선택한 다음 바로 가기 메뉴에서 **참조 추가...** 를 선택합니다.  
   
-    2.  **참조 추가 - RooterTests** 대화 상자에서 **솔루션**을 확장하고 **프로젝트**를 선택한 다음 **Maths** 항목을 선택합니다.  
+   2.  **참조 추가 - RooterTests** 대화 상자에서 **솔루션**을 확장하고 **프로젝트**를 선택한 다음 **Maths** 항목을 선택합니다.  
   
-         ![Maths 프로젝트에 참조 추가](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
+        ![Maths 프로젝트에 참조 추가](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
-2.  using 문을 UnitTest1.cs 파일에 추가합니다.  
+2. using 문을 UnitTest1.cs 파일에 추가합니다.  
   
-    1.  **UnitTest1.cs**를 엽니다.  
+   1.  **UnitTest1.cs**를 엽니다.  
   
-    2.  `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` 줄 아래에 다음 코드를 추가합니다.  
+   2.  `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` 줄 아래에 다음 코드를 추가합니다.  
   
-        ```csharp  
-        using Maths;  
-        ```  
+       ```csharp  
+       using Maths;  
+       ```  
   
-3.  Rooter 함수를 사용하는 테스트를 추가합니다. **UnitTest1.cpp**에 다음 코드를 추가합니다.  
+3. Rooter 함수를 사용하는 테스트를 추가합니다. **UnitTest1.cpp**에 다음 코드를 추가합니다.  
   
-    ```csharp  
-    [TestMethod]  
-    public void BasicTest()  
-    {  
-        Maths.Rooter rooter = new Rooter();  
-        double expected = 0.0;  
-        double actual = rooter.SquareRoot(expected * expected);  
-        double tolerance = .001;  
-        Assert.AreEqual(expected, actual, tolerance);  
-    }  
+   ```csharp  
+   [TestMethod]  
+   public void BasicTest()  
+   {  
+       Maths.Rooter rooter = new Rooter();  
+       double expected = 0.0;  
+       double actual = rooter.SquareRoot(expected * expected);  
+       double tolerance = .001;  
+       Assert.AreEqual(expected, actual, tolerance);  
+   }  
   
-    ```  
+   ```  
   
-4.  솔루션을 빌드합니다.  
+4. 솔루션을 빌드합니다.  
   
-     새 테스트가 테스트 탐색기의 **실행하지 않은 테스트** 노드에 표시됩니다.  
+    새 테스트가 테스트 탐색기의 **실행하지 않은 테스트** 노드에 표시됩니다.  
   
-5.  테스트 탐색기에서 **모두 실행**을 선택합니다.  
+5. 테스트 탐색기에서 **모두 실행**을 선택합니다.  
   
-     ![기본 테스트 통과](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![기본 테스트 통과](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- 테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.  
+   테스트 및 코드 프로젝트를 설정하고 코드 프로젝트에서 함수를 실행하는 테스트를 실행할 수 있는지 확인했습니다. 이제 실제 테스트 및 코드 작성을 시작할 수 있습니다.  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> 반복적으로 테스트를 확장하고 통과하도록 만들기  
   
@@ -256,70 +256,70 @@ ms.locfileid: "49245442"
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> 실패한 테스트 디버그  
   
-1.  **UnitTest1.cs**  
+1. **UnitTest1.cs**  
   
-    ```csharp  
-    // Verify that negative inputs throw an exception.  
-    [TestMethod]  
-    public void NegativeRangeTest()  
-    {  
-        string message;  
-        Rooter rooter = new Rooter();  
-        for (double v = -0.1; v > -3.0; v = v - 0.5)  
-        {  
-            try  
-            {  
-                // Should raise an exception:  
-                double actual = rooter.SquareRoot(v);  
+   ```csharp  
+   // Verify that negative inputs throw an exception.  
+   [TestMethod]  
+   public void NegativeRangeTest()  
+   {  
+       string message;  
+       Rooter rooter = new Rooter();  
+       for (double v = -0.1; v > -3.0; v = v - 0.5)  
+       {  
+           try  
+           {  
+               // Should raise an exception:  
+               double actual = rooter.SquareRoot(v);  
   
-                message = String.Format("No exception for input {0}", v);  
-                Assert.Fail(message);  
-            }  
-            catch (ArgumentOutOfRangeException ex)  
-            {  
-                continue; // Correct exception.  
-            }  
-            catch (Exception e)  
-            {  
-                message = String.Format("Incorrect exception for {0}", v);  
-                Assert.Fail(message);  
-            }  
-        }  
-    }  
+               message = String.Format("No exception for input {0}", v);  
+               Assert.Fail(message);  
+           }  
+           catch (ArgumentOutOfRangeException ex)  
+           {  
+               continue; // Correct exception.  
+           }  
+           catch (Exception e)  
+           {  
+               message = String.Format("Incorrect exception for {0}", v);  
+               Assert.Fail(message);  
+           }  
+       }  
+   }  
   
-    ```  
+   ```  
   
-2.  테스트 탐색기에서 **모두 실행**을 선택합니다.  
+2. 테스트 탐색기에서 **모두 실행**을 선택합니다.  
   
-     테스트가 실패합니다. 테스트 탐색기에서 테스트 이름을 선택합니다. 실패한 어설션이 강조 표시됩니다. 오류 메시지는 테스트 탐색기의 세부 정보 창에 표시됩니다.  
+    테스트가 실패합니다. 테스트 탐색기에서 테스트 이름을 선택합니다. 실패한 어설션이 강조 표시됩니다. 오류 메시지는 테스트 탐색기의 세부 정보 창에 표시됩니다.  
   
-     ![NegativeRangeTest 실패](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+    ![NegativeRangeTest 실패](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
-3.  테스트가 실패한 이유를 확인하려면 함수를 단계별로 실행합니다.  
+3. 테스트가 실패한 이유를 확인하려면 함수를 단계별로 실행합니다.  
   
-    1.  `SquareRoot` 함수의 시작 부분에 중단점을 설정합니다.  
+   1.  `SquareRoot` 함수의 시작 부분에 중단점을 설정합니다.  
   
-    2.  실패한 테스트의 바로 가기 메뉴에서 **선택한 테스트 디버그**를 선택합니다.  
+   2.  실패한 테스트의 바로 가기 메뉴에서 **선택한 테스트 디버그**를 선택합니다.  
   
-         중단점에서 실행이 중지되면 코드를 단계별로 실행합니다.  
+        중단점에서 실행이 중지되면 코드를 단계별로 실행합니다.  
   
-    3.  예외를 catch하기 위해 코드를 Rooter 메서드에 추가합니다.  
+   3.  예외를 catch하기 위해 코드를 Rooter 메서드에 추가합니다.  
   
-        ```csharp  
-        public double SquareRoot(double x)  
-        {  
-            if (x < 0.0)  
-            {  
-                throw new ArgumentOutOfRangeException();  
-        }  
+       ```csharp  
+       public double SquareRoot(double x)  
+       {  
+           if (x < 0.0)  
+           {  
+               throw new ArgumentOutOfRangeException();  
+       }  
   
-        ```  
+       ```  
   
-    1.  테스트 탐색기에서 **모두 실행**을 선택하여 수정된 메서드를 테스트하고 실패가 재발하지 않는지 확인합니다.  
+   1.  테스트 탐색기에서 **모두 실행**을 선택하여 수정된 메서드를 테스트하고 실패가 재발하지 않는지 확인합니다.  
   
- 이제 모든 테스트가 통과합니다.  
+   이제 모든 테스트가 통과합니다.  
   
- ![모든 테스트 통과](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+   ![모든 테스트 통과](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_"></a> 코드 리팩터링  
  **SquareRoot 함수에서 중앙 계산을 간소화합니다.**  

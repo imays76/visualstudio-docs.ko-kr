@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903818"
 ---
 # <a name="how-to--with-text-templates"></a>텍스트 템플릿 사용 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ ms.locfileid: "49231506"
 ### <a name="invoke-methods-from-a-template"></a>템플릿에서 메서드를 호출 합니다.  
  메서드가 이미 있는 경우, 예를 들어 표준 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 클래스:  
   
--   사용 합니다 \<#@assembly#> 어셈블리를 로드 하 고 사용 하는 지시문 \<#@import#> 네임 스페이스 컨텍스트를 설정 합니다. 자세한 내용은 [T4 Import 지시문](../modeling/t4-import-directive.md)합니다.  
+- 사용 합니다 \<#@assembly#> 어셈블리를 로드 하 고 사용 하는 지시문 \<#@import#> 네임 스페이스 컨텍스트를 설정 합니다. 자세한 내용은 [T4 Import 지시문](../modeling/t4-import-directive.md)합니다.  
   
-     자주 어셈블리의 동일한 집합을 사용 하 고 import 지시문, 경우에 지시문 프로세서를 작성 하는 것이 좋습니다. 각 템플릿에 모델 파일과 어셈블리를 로드 하 고 네임 스페이스 컨텍스트를 설정할 수는 지시문 프로세서를 호출할 수 있습니다. 자세한 내용은 [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)합니다.  
+   자주 어셈블리의 동일한 집합을 사용 하 고 import 지시문, 경우에 지시문 프로세서를 작성 하는 것이 좋습니다. 각 템플릿에 모델 파일과 어셈블리를 로드 하 고 네임 스페이스 컨텍스트를 설정할 수는 지시문 프로세서를 호출할 수 있습니다. 자세한 내용은 [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)합니다.  
   
- 작성 하는 경우 메서드를 직접.  
+  작성 하는 경우 메서드를 직접.  
   
--   런타임 텍스트 템플릿을 작성 하는 경우에 런타임 텍스트 템플릿에 같은 이름을 가진 partial 클래스 정의 작성 합니다. 이 클래스에 추가 메서드를 추가 합니다.  
+- 런타임 텍스트 템플릿을 작성 하는 경우에 런타임 텍스트 템플릿에 같은 이름을 가진 partial 클래스 정의 작성 합니다. 이 클래스에 추가 메서드를 추가 합니다.  
   
--   클래스 기능 제어 블록 쓰기 `<#+ ... #>` 를 선언할 수 있는 메서드, 속성 및 개인 클래스에 있습니다. 텍스트 템플릿이 컴파일되면 클래스로 변환 합니다. 표준 제어 블록 `<#...#>` 텍스트는 단일 메서드를 변환 하 고 클래스 기능 블록은 별도 구성원으로 삽입 됩니다. 자세한 내용은 [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)합니다.  
+- 클래스 기능 제어 블록 쓰기 `<#+ ... #>` 를 선언할 수 있는 메서드, 속성 및 개인 클래스에 있습니다. 텍스트 템플릿이 컴파일되면 클래스로 변환 합니다. 표준 제어 블록 `<#...#>` 텍스트는 단일 메서드를 변환 하 고 클래스 기능 블록은 별도 구성원으로 삽입 됩니다. 자세한 내용은 [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)합니다.  
   
-     메서드 정의 클래스 기능 포함 된 텍스트 블록을 포함할 수도 있습니다.  
+   메서드 정의 클래스 기능 포함 된 텍스트 블록을 포함할 수도 있습니다.  
   
-     클래스 기능 수 있는 별도 파일에 배치 하는 것이 좋습니다. `<#@include#>` 하나 이상의 템플릿 파일에 있습니다.  
+   클래스 기능 수 있는 별도 파일에 배치 하는 것이 좋습니다. `<#@include#>` 하나 이상의 템플릿 파일에 있습니다.  
   
--   별도 어셈블리 (클래스 라이브러리)에 메서드를 작성 하 고 템플릿에서 호출 합니다. 사용 된 `<#@assembly#>` 어셈블리를 로드 하는 지시문 및 `<#@import#>` 네임 스페이스 컨텍스트를 설정 합니다. 어셈블리를 디버깅 하는 동안 다시 작성 하기 위해 해야 중지 했다가 다시 시작 하는 참고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 자세한 내용은 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md)합니다.  
+- 별도 어셈블리 (클래스 라이브러리)에 메서드를 작성 하 고 템플릿에서 호출 합니다. 사용 된 `<#@assembly#>` 어셈블리를 로드 하는 지시문 및 `<#@import#>` 네임 스페이스 컨텍스트를 설정 합니다. 어셈블리를 디버깅 하는 동안 다시 작성 하기 위해 해야 중지 했다가 다시 시작 하는 참고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다. 자세한 내용은 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md)합니다.  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>한 모델 스키마에서 여러 파일 생성  
  종종 동일한 XML 또는 데이터베이스 스키마가 모델에서 파일 생성:  

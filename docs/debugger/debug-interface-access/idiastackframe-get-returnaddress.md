@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f16b82cf448a177a99dfea8cc7b44c1ce69806f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fdc3e14560dd53bb4de170c9d87e6fc17ea64523
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462017"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900113"
 ---
 # <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
 프레임의 반환 주소를 검색합니다.  

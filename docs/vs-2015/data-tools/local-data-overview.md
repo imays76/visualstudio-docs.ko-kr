@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885579"
 ---
 # <a name="local-data-overview"></a>로컬 데이터 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ ms.locfileid: "49210485"
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   솔루션 탐색기에서 솔루션 노드를 클릭 하 고 선택 하 여 SQL Server 데이터베이스 프로젝트를 만듭니다 **추가 &#124; 새 프로젝트**합니다.  왼쪽된 창에서 선택 **SQL Server &#124; 데이터베이스** 프로젝트 및 확인을 클릭 합니다. 솔루션 탐색기에서 로컬 데이터베이스 파일을 가져오려면 데이터베이스 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 프로젝트에서 생성 한 데이터베이스에 연결 하는 응용 프로그램을 개발 합니다. 개발 하 고 동시에 응용 프로그램을 개발 하는 경우 데이터베이스 스키마를 수정 하는 경우 적합 합니다.  
+- 솔루션 탐색기에서 솔루션 노드를 클릭 하 고 선택 하 여 SQL Server 데이터베이스 프로젝트를 만듭니다 **추가 &#124; 새 프로젝트**합니다.  왼쪽된 창에서 선택 **SQL Server &#124; 데이터베이스** 프로젝트 및 확인을 클릭 합니다. 솔루션 탐색기에서 로컬 데이터베이스 파일을 가져오려면 데이터베이스 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 프로젝트에서 생성 한 데이터베이스에 연결 하는 응용 프로그램을 개발 합니다. 개발 하 고 동시에 응용 프로그램을 개발 하는 경우 데이터베이스 스키마를 수정 하는 경우 적합 합니다.  
   
-     ![데이터베이스를 데이터베이스 프로젝트로 가져올](../data-tools/media/raddata-import-database-into-database-project.png "데이터베이스 프로젝트로 raddata 데이터베이스 가져오기")  
+   ![데이터베이스를 데이터베이스 프로젝트로 가져올](../data-tools/media/raddata-import-database-into-database-project.png "데이터베이스 프로젝트로 raddata 데이터베이스 가져오기")  
   
--   새 데이터베이스를 만드는 경우 먼저 추가 된 **서비스 기반 데이터베이스 파일** 프로젝트 (**프로젝트 &#124; 새 항목 추가)** 합니다. 이 기본적으로 (localdb) \MSSQLocalDB 로컬 컴퓨터에서 기본 SQL Server 인스턴스에 연결 된 새.mdf 파일을 만듭니다. 데이터베이스 서버 탐색기에 표시 됩니다. 노드를 확장 하 고 테이블, 뷰, 함수 등 새 데이터베이스 개체를 추가할 노드를 마우스 오른쪽 단추로 클릭 합니다.  
+- 새 데이터베이스를 만드는 경우 먼저 추가 된 **서비스 기반 데이터베이스 파일** 프로젝트 (**프로젝트 &#124; 새 항목 추가)** 합니다. 이 기본적으로 (localdb) \MSSQLocalDB 로컬 컴퓨터에서 기본 SQL Server 인스턴스에 연결 된 새.mdf 파일을 만듭니다. 데이터베이스 서버 탐색기에 표시 됩니다. 노드를 확장 하 고 테이블, 뷰, 함수 등 새 데이터베이스 개체를 추가할 노드를 마우스 오른쪽 단추로 클릭 합니다.  
   
- SQL Server Express LocalDB에 대 한 자세한 내용은 참조 하세요. [Introducing LocalDB, an Improved SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) 하 고 [LocalDB: Where is My Database?](http://go.microsoft.com/fwlink/?LinkId=234376) Microsoft 웹 사이트입니다.  
+  SQL Server Express LocalDB에 대 한 자세한 내용은 참조 하세요. [Introducing LocalDB, an Improved SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) 하 고 [LocalDB: Where is My Database?](http://go.microsoft.com/fwlink/?LinkId=234376) Microsoft 웹 사이트입니다.  
   
- 다음 표에서는 응용 프로그램을 로컬 데이터에 연결하는 방법을 설명하는 항목에 대한 링크를 제공합니다.  
+  다음 표에서는 응용 프로그램을 로컬 데이터에 연결하는 방법을 설명하는 항목에 대한 링크를 제공합니다.  
   
 |항목|설명|  
 |-----------|-----------------|  

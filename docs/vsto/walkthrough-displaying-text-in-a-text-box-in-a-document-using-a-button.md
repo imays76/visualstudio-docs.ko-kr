@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44cbabd41e40c0e157a75fa260985752e3d5e016
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822567"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>연습: 단추를 사용 하 여 문서에서 텍스트 상자에 텍스트를 표시 합니다.
   이 연습에서는 Microsoft Office Word에 대한 문서 수준 사용자 지정에서 단추 및 텍스트 상자를 사용하는 방법을 보여 줍니다.  
@@ -29,11 +29,11 @@ ms.locfileid: "35257913"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   디자인 타임에 문서 수준 프로젝트의 Word 문서에 컨트롤 추가  
+- 디자인 타임에 문서 수준 프로젝트의 Word 문서에 컨트롤 추가  
   
--   단추를 클릭할 때 텍스트 상자 채우기  
+- 단추를 클릭할 때 텍스트 상자 채우기  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -58,25 +58,25 @@ ms.locfileid: "35257913"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>단추 및 텍스트 상자를 추가하려면  
   
-1.  Visual Studio 디자이너에서 문서가 열려 있는지 확인합니다.  
+1. Visual Studio 디자이너에서 문서가 열려 있는지 확인합니다.  
   
-2.  **공용 컨트롤** 탭의 **도구 상자**, 끌어를 <xref:Microsoft.Office.Tools.Word.Controls.TextBox> 컨트롤을 문서.  
+2. **공용 컨트롤** 탭의 **도구 상자**, 끌어를 <xref:Microsoft.Office.Tools.Word.Controls.TextBox> 컨트롤을 문서.  
   
-    > [!NOTE]  
-    >  Word에서는 기본적으로 컨트롤이 텍스트와 인라인으로 놓입니다. 방식으로 컨트롤을 수정할 수 있습니다 및 기본값을 변경 하 여 도형 개체가 삽입 되는 **편집** 탭의 **옵션** Word에서 대화 상자.  
+   > [!NOTE]  
+   >  Word에서는 기본적으로 컨트롤이 텍스트와 인라인으로 놓입니다. 방식으로 컨트롤을 수정할 수 있습니다 및 기본값을 변경 하 여 도형 개체가 삽입 되는 **편집** 탭의 **옵션** Word에서 대화 상자.  
   
-3.  **보기** 메뉴에서 **속성 창**을 클릭합니다.  
+3. **보기** 메뉴에서 **속성 창**을 클릭합니다.  
   
-4.  찾을 **TextBox1** 에 **속성** 창 드롭다운 상자 및 변경 합니다 **이름** 입력란의 속성 **displayText**합니다.  
+4. 찾을 **TextBox1** 에 **속성** 창 드롭다운 상자 및 변경 합니다 **이름** 입력란의 속성 **displayText**합니다.  
   
-5.  끌어서를 **단추** 컨트롤을 문서 및 다음 속성을 변경 합니다.  
+5. 끌어서를 **단추** 컨트롤을 문서 및 다음 속성을 변경 합니다.  
   
-    |속성|값|  
-    |--------------|-----------|  
-    |**이름**|**insertText**|  
-    |**텍스트**|**텍스트 삽입**|  
+   |속성|값|  
+   |--------------|-----------|  
+   |**이름**|**insertText**|  
+   |**텍스트**|**텍스트 삽입**|  
   
- 이제 단추를 클릭할 때 실행되는 코드를 작성할 수 있습니다.  
+   이제 단추를 클릭할 때 실행되는 코드를 작성할 수 있습니다.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>단추를 클릭할 때 텍스트 상자 채우기  
  사용자가 단추를 클릭할 때마다 **Hello World!** 텍스트 상자에 추가 됩니다.  

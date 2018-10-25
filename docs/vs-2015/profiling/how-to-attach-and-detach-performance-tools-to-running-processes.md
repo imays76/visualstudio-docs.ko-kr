@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51ac98095f8b0dc6e303a0fc4135e022e9de5011
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee38f210585124f8492f6aed9f062003602f287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895322"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>방법: 실행 중인 프로세스에 성능 도구 연결 및 분리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ ms.locfileid: "49272157"
   
  프로파일링할 수 있는 프로세스는 컴퓨터의 관리자가 설정한 사용자 액세스 권한에 따라 결정됩니다. 예를 들어 사용자 계정에 다음에 대한 사용 권한이 있을 수 있습니다.  
   
--   관리자가 드라이버 및 서비스를 시작하도록 설정한 경우 고급 프로파일링 기능.  
+- 관리자가 드라이버 및 서비스를 시작하도록 설정한 경우 고급 프로파일링 기능.  
   
--   샘플 프로파일링만(도메인 사용자).  
+- 샘플 프로파일링만(도메인 사용자).  
   
--   모든 사용자에게 프로파일링 액세스 거부.  
+- 모든 사용자에게 프로파일링 액세스 거부.  
   
- 자세한 내용은 [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.  
+  자세한 내용은 [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md) 및 [VSPerfCmd](../profiling/vsperfcmd.md)의 ADMIN 옵션을 참조하세요.  
   
 ### <a name="to-attach-to-a-running-process"></a>실행 중인 프로세스에 연결하려면  
   

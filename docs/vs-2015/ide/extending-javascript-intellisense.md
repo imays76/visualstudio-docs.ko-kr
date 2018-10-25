@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867080"
 ---
 # <a name="extending-javascript-intellisense"></a>JavaScript IntelliSense 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  확장 프로그램 코드에서 사용 하 여 다음 이벤트 유형에 대 한 처리기를 만들 수 있습니다 `addEventListener`:  
   
--   `statementcompletion`문 완료 이벤트에 대 한 처리기를 추가 합니다. 문 완성 또는 마침표 (.), 같은 특수 문자를 입력 한 후 표시 되는 특정 형식에 대 한 멤버 목록을 입력 하는 동안 또는 CTRL + j. 키를 누를 때 표시 되는 식별자의 목록을 제공합니다 처리기 형식의 이벤트 개체를 받는 `CompletionEvent`, 다음 멤버를 지 원하는: [속성 항목](#Items), [대상 속성](#Target)를 [targetName 속성](#TargetName), 및 [범위 속성](#Scope)합니다.  
+- `statementcompletion`문 완료 이벤트에 대 한 처리기를 추가 합니다. 문 완성 또는 마침표 (.), 같은 특수 문자를 입력 한 후 표시 되는 특정 형식에 대 한 멤버 목록을 입력 하는 동안 또는 CTRL + j. 키를 누를 때 표시 되는 식별자의 목록을 제공합니다 처리기 형식의 이벤트 개체를 받는 `CompletionEvent`, 다음 멤버를 지 원하는: [속성 항목](#Items), [대상 속성](#Target)를 [targetName 속성](#TargetName), 및 [범위 속성](#Scope)합니다.  
   
--   `signaturehelp`에서 IntelliSense 매개 변수 정보에 대 한 처리기를 추가 합니다. 매개 변수 정보는 개수, 이름 및 함수에 필요한 매개 변수의 형식에 대 한 정보를 제공 합니다. 처리기 형식의 이벤트 개체를 받는 `SignatureHelpEvent`, 다음 멤버를 지 원하는: [대상 속성](#Target), [parentObject 속성](#ParentObject), [functionComments속성](#FunctionComments)하십시오 [functionHelp 속성](#FunctionHelp)합니다.  
+- `signaturehelp`에서 IntelliSense 매개 변수 정보에 대 한 처리기를 추가 합니다. 매개 변수 정보는 개수, 이름 및 함수에 필요한 매개 변수의 형식에 대 한 정보를 제공 합니다. 처리기 형식의 이벤트 개체를 받는 `SignatureHelpEvent`, 다음 멤버를 지 원하는: [대상 속성](#Target), [parentObject 속성](#ParentObject), [functionComments속성](#FunctionComments)하십시오 [functionHelp 속성](#FunctionHelp)합니다.  
   
--   `statementcompletionhint`에서 IntelliSense 요약 정보에 대 한 처리기를 추가 합니다. 요약 정보 팝업 상자 코드에서 식별자에 대 한 전체 선언을 보여 줍니다. 처리기 형식의 이벤트 개체를 받는 `CompletionHintEvent`, 다음 멤버를 지 원하는: [completionItem 속성](#CompletionItem), 및 [symbolHelp 속성](#SymbolHelp)합니다.  
+- `statementcompletionhint`에서 IntelliSense 요약 정보에 대 한 처리기를 추가 합니다. 요약 정보 팝업 상자 코드에서 식별자에 대 한 전체 선언을 보여 줍니다. 처리기 형식의 이벤트 개체를 받는 `CompletionHintEvent`, 다음 멤버를 지 원하는: [completionItem 속성](#CompletionItem), 및 [symbolHelp 속성](#SymbolHelp)합니다.  
   
- 문 완성, 매개 변수 정보 및 요약 정보 같은 IntelliSense 기능을 보여 주는 예제를 보려면 [IntelliSense를 사용 하 여](../ide/using-intellisense.md)입니다.  
+  문 완성, 매개 변수 정보 및 요약 정보 같은 IntelliSense 기능을 보여 주는 예제를 보려면 [IntelliSense를 사용 하 여](../ide/using-intellisense.md)입니다.  
   
 > [!NOTE]
 >  JavaScript에서 요약 정보를 완성 목록이 오른쪽에 표시 되는 팝업 상자 가리킵니다. 요약 정보를 수동으로 호출할 수 없습니다.  

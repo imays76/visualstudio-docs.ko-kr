@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a04a505b694d5ed4081b12a39815256ed68d3e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d293971cfcd0723485d4a5b21d4e431de64ddd65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822737"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 이 함수는이 기호의 부모/컨테이너를 나타내는 기호에 대 한 포인터를 검색 합니다.  
@@ -34,20 +34,20 @@ HRESULT get_container(
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 에 대 한 포인터를 반환 합니다.는 `IDiaSymbol` 이 기호의 컨테이너에 대 한 정보가 들어 있는입니다.  
+ [out] 에 대 한 포인터를 반환 합니다.는 `IDiaSymbol` 이 기호의 컨테이너에 대 한 정보를 포함 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않으면 S_FALSE 또는 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 S_FALSE 또는 오류 코드를 반환합니다.  
   
 > [!NOTE]
->  반환 값이 S_FALSE 속성이 해당 기호를 사용할 수 없다는 것을 의미 합니다.  
+>  S_FALSE 반환 값 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   
 |요구 사항|설명|  
 |-----------------|-----------------|  
 |헤더:|dia2.h|  
-|버전:|DIA SDK v 8.0|  
+|버전:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

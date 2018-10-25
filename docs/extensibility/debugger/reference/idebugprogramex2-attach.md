@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c58f576a0126472ad60ceeb5fc5289b668bd54dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ac2e86c25f9f74b7be4b9606e6e1ec721743878
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906912"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 프로그램에 세션을 연결 합니다.  
@@ -49,19 +49,19 @@ int Attach(
  [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 연결 된 디버그 엔진 이벤트를 전송 하는 콜백 함수를 나타내는 개체입니다.  
   
  `dwReason`  
- [in] 값은 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 연결 작업에 대 한 이유를 설명 하는 열거형입니다.  
+ [in] 값을 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 연결 작업에 대 한 이유를 설명 하는 열거형입니다.  
   
  `pSession`  
- [in] 이 프로그램에 연결 하는 세션을 고유 하 게 식별 하는 값입니다.  
+ [in] 프로그램에 연결 된 세션을 고유 하 게 식별 하는 값입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드가 반환 됩니다. 이 메서드를 반환 하도록 `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` 프로그램 이미 연결 된 경우.  
+ 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 이 메서드에서 반환 해야 `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` 프로그램 이미 연결 된 경우.  
   
 ## <a name="remarks"></a>설명  
- 프로그램을 포함 하는 포트에 값을 사용할 수 `pSession` 는 세션에서 프로그램에 연결 하려고 합니다. 확인 하려면. 예를 들어 프로세스에 연결 하는 한 번에 하나만 디버그 세션을 허용 하는 포트를 포트 같은 세션 프로세스에서 다른 프로그램에 이미 연결 되어 있는지 확인할 수입니다.  
+ 프로그램을 포함 하는 포트에 값을 사용할 수 `pSession` 세션 프로그램에 연결 하려고 합니다. 확인 하려면. 예를 들어, 포트를 프로세스에 연결 하는 한 번에 하나만 디버그 세션을 허용 하는 경우 포트 동일한 세션 프로세스에서 다른 프로그램에 이미 연결 되어 있는지 확인할 수 있습니다.  
   
 > [!NOTE]
->  인터페이스에 전달 `pSession` 쿠키, 세션 디버그 관리자;이 프로그램에 연결을 고유 하 게 식별 하는 값 으로만 간주 하는 것에 제공 된 인터페이스 메서드는 작동 합니다.  
+>  인터페이스에 전달 된 `pSession` 쿠키를 고유 하 게이 프로그램에 연결 하 여 세션 디버그 관리자를 식별 하는 값으로 서만 처리할지 제공 된 인터페이스의 메서드는 작동 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

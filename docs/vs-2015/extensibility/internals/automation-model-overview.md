@@ -16,12 +16,12 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e85e0a56ac11baf93ad743569d57152601077599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815925"
 ---
 # <a name="automation-model-overview"></a>자동화 모델 개요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ Visual Studio 자동화 개체
   
  환경의 자동화 모델 확장을 고려할 수 있는 위치:  
   
--   프로젝트  
+- 프로젝트  
   
--   문서  
+- 문서  
   
--   코드  
+- 코드  
   
--   빌드  
+- 빌드  
   
- Automation에 대 한 자세한 내용은 참조 하세요. [Visual Studio의 자동화 및 확장성](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6)합니다. 이 문서 및 문서 링크, VSPackage에 대 한 자동화를 제공 해야 하는 방법에 대 한 결정을 내릴 수 있도록 제공 합니다.  
+  Automation에 대 한 자세한 내용은 참조 하세요. [Visual Studio의 자동화 및 확장성](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6)합니다. 이 문서 및 문서 링크, VSPackage에 대 한 자동화를 제공 해야 하는 방법에 대 한 결정을 내릴 수 있도록 제공 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 추가 기능 만들기](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

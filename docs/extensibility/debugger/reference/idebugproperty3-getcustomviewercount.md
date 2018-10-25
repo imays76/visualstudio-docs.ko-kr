@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb04a772a9ca2a6bf63861c02e3c65870639da56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e609451af16d202828fac30cd0da133bf3bea73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898878"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
-이 속성에 사용할 수 있는 사용자 지정 뷰어 중 수를 가져옵니다.  
+이 속성에 사용할 수 있는 사용자 지정 뷰어에 수를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,18 +41,18 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>매개 변수  
  `pcelt`  
- [out] 이 속성에 사용할 수 있는 사용자 지정 뷰어 중 수입니다.  
+ [out] 이 속성에 사용할 수 있는 사용자 지정 뷰어 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 형식 시각화 도우미를 지원 하려면이 메서드는 호출을 전달는 [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) 메서드. 또한 식 계산기는이 속성의이 형식에 대 한 사용자 지정 뷰어를 지원,이 메서드 반환된 값에 사용자 지정 뷰어의 수를 추가 합니다.  
+ 형식 시각화 도우미를 지원 하기 위해이 메서드는 호출을 전달 합니다 [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) 메서드. 식 계산기는이 속성의이 형식에 대 한 사용자 지정 뷰어도 지원 합니다 하는 경우이 메서드는 사용자 지정 뷰어 수가 반환된 된 값에 추가 합니다.  
   
- 형식 시각화 도우미와 사용자 지정 뷰어의 차이점에 대 한 자세한 내용은 참조 하십시오. [형식 시각화 도우미와 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)합니다.  
+ 형식 시각화 도우미 및 사용자 지정 뷰어 간의 차이점에 대 한 자세한 내용은 [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CProperty** 공개 하는 개체는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CProperty** 노출 하는 개체를 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스입니다.  
   
 ```cpp  
 STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)  

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813899"
 ---
 # <a name="customizing-the-properties-window"></a>속성 창 사용자 지정
 도메인 특정 언어 (DSL) Visual Studio에서의 모양 및 동작의 속성 창 사용자 지정할 수 있습니다. DSL 정의에서 각 도메인 클래스에 도메인 속성을 정의합니다. 기본적으로 모델 탐색기 또는 다이어그램에서 클래스의 인스턴스를 선택 하면 속성 창에서 모든 도메인 속성 나열 됩니다. 이 수 다이어그램에서 셰이프 필드에 매핑되지 않은 하는 경우에 하 고 도메인 속성의 값을 편집 합니다.
@@ -28,11 +28,11 @@ ms.locfileid: "47859304"
 
  **설명**합니다. 도메인 속성 설명은 두 곳에 나타납니다.
 
--   속성을 선택 하면 속성 창의 맨 아래입니다. 속성이 무엇을 나타내는지 사용자에 게 설명 하기 위해 사용할 수 있습니다.
+- 속성을 선택 하면 속성 창의 맨 아래입니다. 속성이 무엇을 나타내는지 사용자에 게 설명 하기 위해 사용할 수 있습니다.
 
--   생성 된 프로그램 코드입니다. API 설명서를 추출 하려면 설명서 기능을 사용 하는 경우 API에서이 속성의 설명으로 표시 됩니다.
+- 생성 된 프로그램 코드입니다. API 설명서를 추출 하려면 설명서 기능을 사용 하는 경우 API에서이 속성의 설명으로 표시 됩니다.
 
- **범주**. 범주는 속성 창의 제목입니다.
+  **범주**. 범주는 속성 창의 제목입니다.
 
 ## <a name="exposing-style-features"></a>스타일 기능을 노출합니다.
  그래픽 요소 동적 기능 중 일부를 나타낼 수 있습니다 또는 *노출* 도메인 속성으로. 사용자가이 방식으로 노출 된 기능을 업데이트할 수 있습니다 하 고 더 쉽게 업데이트할 수 있습니다 프로그램 코드입니다.
@@ -67,67 +67,67 @@ ms.locfileid: "47859304"
 
 ##### <a name="to-forward-a-property-from-another-element"></a>다른 요소에서 속성을 전달 하도록
 
-1.  만들기는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 이 예에서 이라고 하는 두 개 이상의 클래스를 포함 하는 솔루션 **책** 하 고 **작성자**합니다. 간의 두 종류의 관계가 없어야 **책** 하 고 **작성자**합니다.
+1. 만들기는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 이 예에서 이라고 하는 두 개 이상의 클래스를 포함 하는 솔루션 **책** 하 고 **작성자**합니다. 간의 두 종류의 관계가 없어야 **책** 하 고 **작성자**합니다.
 
-     소스 역할의 복합성 (에서 역할에는 **책** 쪽) 0..1 또는 1.. 1로, 해야 하므로 각 **책** 하나에 **작성자**합니다.
+    소스 역할의 복합성 (에서 역할에는 **책** 쪽) 0..1 또는 1.. 1로, 해야 하므로 각 **책** 하나에 **작성자**합니다.
 
-2.  **DSL 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **책** 도메인 클래스 및 클릭 **새의 DomainTypeDescriptor 추가**합니다.
+2. **DSL 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **책** 도메인 클래스 및 클릭 **새의 DomainTypeDescriptor 추가**합니다.
 
-     라는 노드가 **사용자 지정 속성 설명자 경로** 아래에 표시 됩니다는 **사용자 지정 형식 설명자** 노드.
+    라는 노드가 **사용자 지정 속성 설명자 경로** 아래에 표시 됩니다는 **사용자 지정 형식 설명자** 노드.
 
-3.  마우스 오른쪽 단추로 클릭 합니다 **사용자 지정 형식 설명자** 노드를 차례로 클릭 한 다음 **새 PropertyPath 추가**합니다.
+3. 마우스 오른쪽 단추로 클릭 합니다 **사용자 지정 형식 설명자** 노드를 차례로 클릭 한 다음 **새 PropertyPath 추가**합니다.
 
-     새 속성 경로 아래에 표시 됩니다는 **사용자 지정 속성 설명자 경로** 노드.
+    새 속성 경로 아래에 표시 됩니다는 **사용자 지정 속성 설명자 경로** 노드.
 
-4.  새 속성 경로 선택 및를 **속성** 창에서 **속성의 경로를** 적절 한 모델 요소의 경로에 있습니다.
+4. 새 속성 경로 선택 및를 **속성** 창에서 **속성의 경로를** 적절 한 모델 요소의 경로에 있습니다.
 
-     이 속성의 오른쪽에 있는 아래쪽 화살표를 클릭 하 여 트리 뷰의 경로 편집할 수 있습니다. 도메인 경로 대 한 자세한 내용은 참조 하세요. [도메인 경로 구문](../modeling/domain-path-syntax.md)합니다. 경로 편집한 경우와 유사 **BookReferencesAuthor.Author/! 작성자**합니다.
+    이 속성의 오른쪽에 있는 아래쪽 화살표를 클릭 하 여 트리 뷰의 경로 편집할 수 있습니다. 도메인 경로 대 한 자세한 내용은 참조 하세요. [도메인 경로 구문](../modeling/domain-path-syntax.md)합니다. 경로 편집한 경우와 유사 **BookReferencesAuthor.Author/! 작성자**합니다.
 
-5.  설정 **속성** 에 **이름** 의 도메인 속성 **작성자**합니다.
+5. 설정 **속성** 에 **이름** 의 도메인 속성 **작성자**합니다.
 
-6.  설정할 **표시 이름** 하 **이름을 작성**합니다.
+6. 설정할 **표시 이름** 하 **이름을 작성**합니다.
 
-7.  모든 템플릿 변환 빌드하고 DSL을 실행 합니다.
+7. 모든 템플릿 변환 빌드하고 DSL을 실행 합니다.
 
-8.  모델 다이어그램에서 책, 저자 만들고 참조 관계를 사용 하 여 연결 합니다. Book 요소를 선택 하 고 속성 창에서 책 외에도 작성자 이름이 표시 됩니다. 연결된 작성자의 이름을 변경 하거나 다른 작성자, 책 연결할 하 고 책의 저자 이름이 변경를 관찰 합니다.
+8. 모델 다이어그램에서 책, 저자 만들고 참조 관계를 사용 하 여 연결 합니다. Book 요소를 선택 하 고 속성 창에서 책 외에도 작성자 이름이 표시 됩니다. 연결된 작성자의 이름을 변경 하거나 다른 작성자, 책 연결할 하 고 책의 저자 이름이 변경를 관찰 합니다.
 
 ## <a name="custom-property-editors"></a>사용자 지정 속성 편집기
  속성 창에는 편집 환경을 각 도메인 속성의 형식에 대 한 적절 한 기본값을 제공 합니다. 예를 들어, 열거 형식에 대 한 드롭 다운 목록을 사용자에 게 표시 및 사용자 숫자 속성에 대 한 숫자를 입력할 수 있습니다. 기본 제공 형식에만 그렇습니다. 외부 형식을 지정 하면, 사용자 속성의 값을 표시 하지만 편집할 수는 없습니다 수 됩니다.
 
  그러나 다음 편집기 및 형식을 지정할 수 있습니다.
 
-1.  표준 형식으로 사용 되는 다른 편집기입니다. 예를 들어 문자열 속성에 대 한 파일 경로 편집기를 지정할 수 있습니다.
+1. 표준 형식으로 사용 되는 다른 편집기입니다. 예를 들어 문자열 속성에 대 한 파일 경로 편집기를 지정할 수 있습니다.
 
-2.  도메인 속성에 대 한 편집기에는 외부 형식입니다.
+2. 도메인 속성에 대 한 편집기에는 외부 형식입니다.
 
-3.  파일 경로 편집기 등.NET 편집기를 사용자 고유의 사용자 지정 속성 편집기를 만들 수 있습니다.
+3. 파일 경로 편집기 등.NET 편집기를 사용자 고유의 사용자 지정 속성 편집기를 만들 수 있습니다.
 
-     외부 형식 및 문자열 기본 편집기에는 같은 형식 간에 변환 합니다.
+    외부 형식 및 문자열 기본 편집기에는 같은 형식 간에 변환 합니다.
 
- DSL에는 *외부 형식* 해당 하는 단순 형식 (예: 부울 또는 Int32) 또는 문자열 중 하나가 아닙니다.
+   DSL에는 *외부 형식* 해당 하는 단순 형식 (예: 부울 또는 Int32) 또는 문자열 중 하나가 아닙니다.
 
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>도메인 속성을 정의 하는 외부 형식 포함
 
-1.  **솔루션 탐색기**, 외부 형식에 포함 된 어셈블리 (DLL)에 대 한 참조를 추가 합니다 **Dsl** 프로젝트입니다.
+1. **솔루션 탐색기**, 외부 형식에 포함 된 어셈블리 (DLL)에 대 한 참조를 추가 합니다 **Dsl** 프로젝트입니다.
 
-     어셈블리는.NET 어셈블리 또는 사용자가 제공 하는 어셈블리 수 있습니다.
+    어셈블리는.NET 어셈블리 또는 사용자가 제공 하는 어셈블리 수 있습니다.
 
-2.  형식을 추가 합니다 **도메인 형식** 있습니다 아직 하지 않는 한 목록입니다.
+2. 형식을 추가 합니다 **도메인 형식** 있습니다 아직 하지 않는 한 목록입니다.
 
-    1.  DslDefinition.dsl을 엽니다 및 **DSL 탐색기**루트 노드를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **새 외부 형식 추가**합니다.
+   1.  DslDefinition.dsl을 엽니다 및 **DSL 탐색기**루트 노드를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **새 외부 형식 추가**합니다.
 
-         아래에 새 항목이 표시 됩니다는 **도메인 형식** 노드.
+        아래에 새 항목이 표시 됩니다는 **도메인 형식** 노드.
 
-        > [!WARNING]
-        >  메뉴 항목은 DSL 루트 노드에서 아닙니다 합니다 **도메인 형식** 노드.
+       > [!WARNING]
+       >  메뉴 항목은 DSL 루트 노드에서 아닙니다 합니다 **도메인 형식** 노드.
 
-    2.  속성 창에서 이름 및 새 형식의 네임 스페이스를 설정 합니다.
+   2.  속성 창에서 이름 및 새 형식의 네임 스페이스를 설정 합니다.
 
-3.  일반적인 방법으로 도메인 클래스에 도메인 속성을 추가 합니다.
+3. 일반적인 방법으로 도메인 클래스에 도메인 속성을 추가 합니다.
 
-     속성 창에서 드롭 다운 목록에서 외부 형식을 선택 합니다 **형식** 필드입니다.
+    속성 창에서 드롭 다운 목록에서 외부 형식을 선택 합니다 **형식** 필드입니다.
 
- 이 단계에서는 사용자 속성의 값을 볼 수 있지만 편집할 수 없습니다. 표시 된 값에서 가져온는 `ToString()` 함수입니다. 명령 또는 규칙의 예를 들어 속성의 값을 설정 하는 프로그램 코드를 작성할 수 있습니다.
+   이 단계에서는 사용자 속성의 값을 볼 수 있지만 편집할 수 없습니다. 표시 된 값에서 가져온는 `ToString()` 함수입니다. 명령 또는 규칙의 예를 들어 속성의 값을 설정 하는 프로그램 코드를 작성할 수 있습니다.
 
 ### <a name="setting-a-property-editor"></a>속성 편집기를 설정합니다.
  도메인 속성에 다음과 같은 형태로 CLR 특성을 추가 합니다.
@@ -136,7 +136,6 @@ ms.locfileid: "47859304"
 [System.ComponentModel.Editor (
    typeof(AnEditor),
    typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  사용 하 여 속성에 특성을 설정할 수는 **사용자 지정 특성** 속성 창에서 항목입니다.
@@ -173,11 +172,11 @@ ms.locfileid: "47859304"
 
  편집기에서 파생 된 클래스를 작성 하 여 정의한 <xref:System.Drawing.Design.UITypeEditor>합니다. 클래스를 재정의 해야 합니다.
 
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>를 사용자와 상호 작용 하 여 속성 값을 업데이트 합니다.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>를 사용자와 상호 작용 하 여 속성 값을 업데이트 합니다.
 
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>를 편집기 대화 상자를 엽니다는 또는 드롭 다운 메뉴를 제공 하는지 여부를 지정할 수 있습니다.
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>를 편집기 대화 상자를 엽니다는 또는 드롭 다운 메뉴를 제공 하는지 여부를 지정할 수 있습니다.
 
- 또한 그래픽으로 표현한 속성 표에 표시 되는 속성의 값을 제공할 수 있습니다. 이 작업을 수행 하려면 재정의 `GetPaintValueSupported`, 및 `PaintValue`합니다.  자세한 내용은 <xref:System.Drawing.Design.UITypeEditor>을 참조하세요.
+  또한 그래픽으로 표현한 속성 표에 표시 되는 속성의 값을 제공할 수 있습니다. 이 작업을 수행 하려면 재정의 `GetPaintValueSupported`, 및 `PaintValue`합니다.  자세한 내용은 <xref:System.Drawing.Design.UITypeEditor>을 참조하세요.
 
 > [!NOTE]
 >  별도 코드 파일에서 코드를 추가 합니다 **Dsl** 프로젝트입니다.
@@ -194,7 +193,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
     openFileDialog.Title = "Select a text file";
   }
 }
-
 ```
 
  이 편집기를 사용 하려면 설정 합니다 **사용자 지정 특성** 도메인 속성:
@@ -203,7 +201,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 [System.ComponentModel.Editor (
    typeof(MyNamespace.TextFileNameEditor)
    , typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  자세한 내용은 <xref:System.Drawing.Design.UITypeEditor>을 참조하세요.
@@ -219,7 +216,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
-
 ```
 
  <xref:System.ComponentModel.TypeConverter>에서 파생된 클래스를 정의합니다. 별도 파일에 코드를 추가 합니다 **Dsl** 프로젝트입니다. 예를 들어:
@@ -313,7 +309,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>참고 항목

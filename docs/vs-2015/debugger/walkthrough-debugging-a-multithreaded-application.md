@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884903"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>연습: 다중 스레드 응용 프로그램 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>스레드 마커를 찾으려면  
   
-1.  마우스 오른쪽 단추로 클릭 합니다 **스레드** 창에서 클릭 **소스의 스레드 표시**합니다.  
+1. 마우스 오른쪽 단추로 클릭 합니다 **스레드** 창에서 클릭 **소스의 스레드 표시**합니다.  
   
-2.  창 왼쪽의 여백을 확인합니다. 이 줄에는 실 모양 아이콘 두 개가 있습니다. 하나는 빨간색이고 다른 하나는 파란색입니다. 스레드 마커는 이 위치에서 스레드가 중지되었음을 나타냅니다. 스레드가 이 위치에서 중지되었을 수 있습니다.  
+2. 창 왼쪽의 여백을 확인합니다. 이 줄에는 실 모양 아이콘 두 개가 있습니다. 하나는 빨간색이고 다른 하나는 파란색입니다. 스레드 마커는 이 위치에서 스레드가 중지되었음을 나타냅니다. 스레드가 이 위치에서 중지되었을 수 있습니다.  
   
-3.  스레드 마커에 포인터를 올려 놓습니다. DataTip이 나타납니다. DataTip을 통해 중지된 각 스레드의 이름과 스레드 ID 번호를 알 수 있습니다. 이 경우 이름이 `<noname>`인 스레드 한 개만 있습니다.  
+3. 스레드 마커에 포인터를 올려 놓습니다. DataTip이 나타납니다. DataTip을 통해 중지된 각 스레드의 이름과 스레드 ID 번호를 알 수 있습니다. 이 경우 이름이 `<noname>`인 스레드 한 개만 있습니다.  
   
-4.  스레드 마커를 마우스 오른쪽 단추로 클릭합니다. 바로 가기 메뉴에서 선택 내용을 확인합니다.  
+4. 스레드 마커를 마우스 오른쪽 단추로 클릭합니다. 바로 가기 메뉴에서 선택 내용을 확인합니다.  
   
- 이 아이콘은는 *스레드 마커*:  
+   이 아이콘은는 *스레드 마커*:  
   
- ![스레드 마커](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![스레드 마커](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>스레드에 플래그 지정 및 해제  
  [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)]에서는 특히 주의할 스레드에 플래그를 지정할 수 있습니다. 스레드에 플래그를 지정하면 중요한 스레드를 추적하고 중요하지 않은 스레드는 무시할 수 있습니다.  

@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59589c0db502ac5ddbf7c204968ca0684340f685
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4582516126cad72c5b2939ef4c12fd59cc6fbcb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909891"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-지정 된 데이터 스트림에서 디버그 기호를 로드는 **ICorDebugModule** 개체입니다.  
+지정 된 데이터 스트림에서 디버그 기호를 로드 합니다 **ICorDebugModule** 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -59,19 +59,19 @@ int LoadSymbolsFromStreamWithCorModule(
  [in] 기본 메모리 주소입니다.  
   
  `pUnkMetadataImport`  
- [in] 기호 메타 데이터를 포함 하는 개체입니다.  
+ [in] 기호 메타 데이터가 포함 된 개체입니다.  
   
  `pUnkCorDebugModule`  
- [in] 구현 하는 개체는 [ICorDebugModule 인터페이스](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)합니다.  
+ [in] 구현 하는 개체를 [ICorDebugModule 인터페이스](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)합니다.  
   
  `pStream`  
- [in] 디버그 기호 로드를 포함 하는 데이터 스트림.  
+ [in] 로드 하는 디버그 기호를 포함 하는 데이터 스트림.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에 대 한이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 공개 하는 개체는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스입니다.  
+ 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(  

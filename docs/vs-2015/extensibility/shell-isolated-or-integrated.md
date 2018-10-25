@@ -19,12 +19,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01a16f7711b35d8c1062117d486fdf00ab998566
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835997"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (격리 또는 통합)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "49266125"
   
 > [!IMPORTANT]
 >  합니다 [최종 사용자 사용권 계약 (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) 셸 데이터 수집에 대 한 섹션이 포함 Visual Studio 통합 및 격리에 대 한 (**섹션 3입니다. 데이터**).  사용자의 통합 또는 isolated shell 소프트웨어 응용 프로그램을 작성 하는 Microsoft에서 수집 될 수 있습니다는 고객 사용 데이터를 설명 합니다. 자세한 내용은 [Microsoft Visual Studio 제품 제품군 개인정보취급방침](https://www.visualstudio.com/en-us/dn948229)합니다.  
->   
+> 
 >  응용 프로그램을 통해 고객의 별도 사용 현황 데이터를 수집 하는 경우에 수집 하 여 응용 프로그램의 사용자에 게 적절 한 통지를 제공 해야 합니다.  Visual Studio 소프트웨어 개발 키트 라이선스에 따라 응용 프로그램의 일부로 통합 또는 격리 된 셸 소프트웨어를 배포 하는 경우 다음 중 하나를 포함 해야 합니다.  
->   
->  -   응용 프로그램 라이선스의 일부로 최종 사용자 사용권 계약  
-> -   Visual Studio를 보호 하는 조건에 동의 하도록 고객에 게 필요한 사용자 고유의 EULA 통합 또는 격리 셸은 적어도 shell 소프트웨어에 대 한 Microsoft 최종 사용자 사용 조건으로  
+> 
+> - 응용 프로그램 라이선스의 일부로 최종 사용자 사용권 계약  
+>   -   Visual Studio를 보호 하는 조건에 동의 하도록 고객에 게 필요한 사용자 고유의 EULA 통합 또는 격리 셸은 적어도 shell 소프트웨어에 대 한 Microsoft 최종 사용자 사용 조건으로  
   
 ## <a name="additional-resources"></a>추가 리소스  
  재배포 가능 패키지에 대 한 자세한 내용은 참조는 [Visual Studio 확장 다운로드](http://go.microsoft.com/fwlink/?LinkID=119298) 웹 사이트입니다.  

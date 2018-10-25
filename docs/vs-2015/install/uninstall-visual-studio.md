@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25fbfec12299cecf265437baa04a3dd86093f30b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ec83128682a874a5491d62762b424045f11c4b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849855"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual Studi
 ##  <a name="uninstalling"></a>   
 #### <a name="to-uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>"표준" 제거 방법을 사용 하 여 Visual Studio를 제거 하려면  
   
-1.  **Control Panel**의 **프로그램 및 기능** 페이지에서 제품 버전을 제거 하 고 선택한 **변경**합니다.  
+1. **Control Panel**의 **프로그램 및 기능** 페이지에서 제품 버전을 제거 하 고 선택한 **변경**합니다.  
   
-2.  설치 마법사에서 선택 **제거**, 선택 **예**, 한 다음 마법사의 나머지 지시를 따릅니다.  
+2. 설치 마법사에서 선택 **제거**, 선택 **예**, 한 다음 마법사의 나머지 지시를 따릅니다.  
   
- 이 표준 또는 기본 방법을 남습니다 일부 Visual Studio를 처음 설치 (예를 들어는 Microsoft.NET Framework, Microsoft Visual c + + 재배포 가능 패키지, Microsoft SQL Server 등)의 첫 번째 설치 되었던 항목입니다.   다른 여러 응용 프로그램에 종속 되어 있으므로 설치 상태로 유지 합니다. 하지만 항목도 제거 하려는 경우 해당 항목을 선택 **프로그램 및 기능**, 각각 개별적으로 제거 합니다.  
+   이 표준 또는 기본 방법을 남습니다 일부 Visual Studio를 처음 설치 (예를 들어는 Microsoft.NET Framework, Microsoft Visual c + + 재배포 가능 패키지, Microsoft SQL Server 등)의 첫 번째 설치 되었던 항목입니다.   다른 여러 응용 프로그램에 종속 되어 있으므로 설치 상태로 유지 합니다. 하지만 항목도 제거 하려는 경우 해당 항목을 선택 **프로그램 및 기능**, 각각 개별적으로 제거 합니다.  
   
 #### <a name="to-uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Visual Studio 및 다른 모든 관련된 파일을 제거 하려면 (즉, 거의 모든 항목을 제거 하려면)  
   
@@ -66,18 +66,18 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual Studi
   
 #### <a name="to-roll-back-to-a-previous-version-or-release-of--visual-studio"></a>이전 버전 또는 Visual Studio 릴리스의 롤백하려면  
   
-1.  이 항목에 나열 된 방법 중 하나를 사용 하 여 Visual Studio를 제거 합니다.  
+1. 이 항목에 나열 된 방법 중 하나를 사용 하 여 Visual Studio를 제거 합니다.  
   
-    > [!WARNING]
-    >  Visual Studio (또는 Visual Studio 업데이트)의 현재 릴리스를 제거 하 고 다음 이전 릴리스를 설치할 예상 대로 작동 하지 않을 수 있습니다.  
-    >   
-    >  결과 종속 버전 또는 릴리스로 Visual Studio를 설치한 후 해당 구성 요소는 버전을 설치할 설치 된 제품 종속 될 수 있는 하거나 Visual Studio 릴리스 또는 구성 요소에의 한 마지막으로, 이전 Visual Studio 버전 하려고 하거나 다시 설치 합니다.  이러한 모든 변수 때문에 표준 제거는 종종 되었던 구성 요소가 Visual Studio 이전 버전 또는 릴리스에서 작동 하지 않을 수 합니다.  
-    >   
-    >  따라서 최상의 결과 좋습니다를 사용 하 여 [Visual Studio 제거 프로그램 도구](https://github.com/Microsoft/VisualStudioUninstaller/releases)합니다.  
+   > [!WARNING]
+   >  Visual Studio (또는 Visual Studio 업데이트)의 현재 릴리스를 제거 하 고 다음 이전 릴리스를 설치할 예상 대로 작동 하지 않을 수 있습니다.  
+   >   
+   >  결과 종속 버전 또는 릴리스로 Visual Studio를 설치한 후 해당 구성 요소는 버전을 설치할 설치 된 제품 종속 될 수 있는 하거나 Visual Studio 릴리스 또는 구성 요소에의 한 마지막으로, 이전 Visual Studio 버전 하려고 하거나 다시 설치 합니다.  이러한 모든 변수 때문에 표준 제거는 종종 되었던 구성 요소가 Visual Studio 이전 버전 또는 릴리스에서 작동 하지 않을 수 합니다.  
+   >   
+   >  따라서 최상의 결과 좋습니다를 사용 하 여 [Visual Studio 제거 프로그램 도구](https://github.com/Microsoft/VisualStudioUninstaller/releases)합니다.  
   
-2.  설치 또는 사용 하려는 Visual Studio의 이전 버전을 다시 설치 합니다.  
+2. 설치 또는 사용 하려는 Visual Studio의 이전 버전을 다시 설치 합니다.  
   
- 이전 버전의 Visual Studio를 설치 하는 경우에 설치 프로그램을 최신 버전 사용 또는 사용 가능한 경우 해제 하려고 시도할 수 있습니다. 자세한 내용은 참조는 [방법: 특정 버전의 Visual Studio 설치](../install/how-to-install-a-specific-release-of-visual-studio.md) 항목입니다.  
+   이전 버전의 Visual Studio를 설치 하는 경우에 설치 프로그램을 최신 버전 사용 또는 사용 가능한 경우 해제 하려고 시도할 수 있습니다. 자세한 내용은 참조는 [방법: 특정 버전의 Visual Studio 설치](../install/how-to-install-a-specific-release-of-visual-studio.md) 항목입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 설치](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

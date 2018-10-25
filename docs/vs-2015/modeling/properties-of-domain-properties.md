@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fa5e2f46f3fa5cce9a795c2353148d2bd3f47351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 977594493279d52154de3cb5ef7bce56d4d8f985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836842"
 ---
 # <a name="properties-of-domain-properties"></a>도메인 속성의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ A *도메인 속성* 값을 보유할 수 있는 모델 요소의 기능입니�
   
  대부분의 도메인 속성은 일반 CLR 속성으로 구현됩니다. 그러나 프로그래밍 측면에서 도메인 속성은 일반 프로그램 속성보다 많은 기능을 포함합니다.  
   
--   속성 상태를 모니터링하는 규칙과 이벤트를 정의할 수 있습니다. 자세한 내용은 [에 응답 하 고 변경 내용을 전파](../modeling/responding-to-and-propagating-changes.md)합니다.  
+- 속성 상태를 모니터링하는 규칙과 이벤트를 정의할 수 있습니다. 자세한 내용은 [에 응답 하 고 변경 내용을 전파](../modeling/responding-to-and-propagating-changes.md)합니다.  
   
--   트랜잭션을 통해 상태 불일치를 방지할 수 있습니다. 자세한 내용은 [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.  
+- 트랜잭션을 통해 상태 불일치를 방지할 수 있습니다. 자세한 내용은 [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.  
   
- 다이어그램 또는 DSL 탐색기에서 도메인 속성을 선택하면 속성 창에서 다음 항목을 확인할 수 있습니다. 이러한 항목을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.  
+  다이어그램 또는 DSL 탐색기에서 도메인 속성을 선택하면 속성 창에서 다음 항목을 확인할 수 있습니다. 이러한 항목을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.  
   
 |속성|설명|기본값|  
 |--------------|-----------------|-------------------|  

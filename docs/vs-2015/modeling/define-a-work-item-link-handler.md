@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25143390085ec0b4d7ab56e0fef9920d7d5eceb8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914550"
 ---
 # <a name="define-a-work-item-link-handler"></a>작업 항목 링크 처리기 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,11 +92,11 @@ ms.locfileid: "49290422"
 ### <a name="import-the-work-item-namespace"></a>작업 항목 네임스페이스 가져오기  
  사용자 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 **참조**, 다음 어셈블리에 대 한 참조를 추가 합니다.  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
--   Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
+- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
   
- 프로그램 코드에서 다음 네임스페이스를 가져옵니다.  
+  프로그램 코드에서 다음 네임스페이스를 가져옵니다.  
   
 ```  
 using System.ComponentModel.Composition;  
@@ -282,21 +282,21 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
   
  다음은 각 문자에 대한 설명입니다.  
   
--   서버의 URI는 다음과 같습니다.  
+- 서버의 URI는 다음과 같습니다.  
   
-     `http://tfServer:8080/tfs/projectCollection`  
+   `http://tfServer:8080/tfs/projectCollection`  
   
-     `projectCollection`에서는 사례가 중요합니다.  
+   `projectCollection`에서는 사례가 중요합니다.  
   
--   `RepositoryGuid`는 TFS 연결에서 가져올 수 있습니다.  
+- `RepositoryGuid`는 TFS 연결에서 가져올 수 있습니다.  
   
-    ```csharp  
-    TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
-    RepositoryGuid= tpc.InstanceId;  
+  ```csharp  
+  TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
+  RepositoryGuid= tpc.InstanceId;  
   
-    ```  
+  ```  
   
- 참조에 대 한 자세한 내용은 참조 하세요. [UML에 참조 문자열 연결 모델 요소](../modeling/attach-reference-strings-to-uml-model-elements.md)합니다.  
+  참조에 대 한 자세한 내용은 참조 하세요. [UML에 참조 문자열 연결 모델 요소](../modeling/attach-reference-strings-to-uml-model-elements.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore?displayProperty=fullName>   

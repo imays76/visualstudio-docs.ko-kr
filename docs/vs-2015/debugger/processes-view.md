@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2053083ed5e39422deeeb87f34aaf9e13aff6e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288992"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891071"
 ---
 # <a name="processes-view"></a>프로세스 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ ms.locfileid: "49288992"
   
 #### <a name="to-open-the-processes-view"></a>프로세스 보기를 열려면  
   
-1.  **Spy** 메뉴 선택 **프로세스**합니다.  
+1. **Spy** 메뉴 선택 **프로세스**합니다.  
   
- ![Spy&#43; &#43; 프로세스 뷰](../debugger/media/spy-processes.png "Spy + + _Processes")  
-Spy++ 프로세스 뷰  
+   ![Spy&#43; &#43; 프로세스 뷰](../debugger/media/spy-processes.png "Spy + + _Processes")  
+   Spy++ 프로세스 뷰  
   
- 위의 그림 확장 하는 프로세스 및 스레드 노드와 프로세스 뷰를 보여 줍니다.  
+   위의 그림 확장 하는 프로세스 및 스레드 노드와 프로세스 뷰를 보여 줍니다.  
   
 ### <a name="in-this-section"></a>섹션 내용  
  [프로세스 뷰에서 프로세스 검색](../debugger/how-to-search-for-a-process-in-processes-view.md)  

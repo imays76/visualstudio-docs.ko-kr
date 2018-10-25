@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91d23cdd92943a40dfa649e82964b101f68739d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32c8fa5c6f3cd8ec3cf1cead397eadadb99e050d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909943"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-컴파일 대상와 이름으로 소스 파일을 검색 합니다.  
+컴파일 대상 이름으로 소스 파일을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,19 +37,19 @@ HRESULT findFile (
   
 #### <a name="parameters"></a>매개 변수  
  `pCompiland`  
- [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) compiland 검색에 사용할 컨텍스트를 나타내는 개체입니다. 이 매개 변수를 설정 `NULL` 모든 컴파일 대상에 소스 파일을 찾을 수 있습니다.  
+ [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 검색에 대 한 컨텍스트로 사용할 compiland를 나타내는 개체입니다. 이 매개 변수를 설정 `NULL` 모든 컴파일 대상에서 원본 파일을 찾아야 합니다.  
   
  `name`  
- [in] 검색할 원본 파일의 이름을 지정 합니다. 이 매개 변수를 설정 `NULL` 에 모든 소스 파일을 검색할 수 있습니다.  
+ [in] 검색할 소스 파일의 이름을 지정 합니다. 이 매개 변수를 설정 `NULL` 모든 소스 파일을 검색할 수 있습니다.  
   
  `option`  
- [in] 이름 검색에 적용 된 비교 옵션을 지정 합니다. 값의 [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형 따로 또는 함께 사용할 수 있습니다.  
+ [in] 이름 검색에 적용할 비교 옵션을 지정 합니다. 값을 [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형 따로 또는 함께 사용할 수 있습니다.  
   
  `ppResult`  
- [out] 반환 된 [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) 소스 파일의 목록을 포함 하는 개체를 검색 합니다.  
+ [out] 반환 된 [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) 원본 파일의 목록을 포함 하는 개체 검색 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
   

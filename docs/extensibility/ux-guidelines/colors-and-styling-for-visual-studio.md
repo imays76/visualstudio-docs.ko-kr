@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028c88e1c2cd88736cf98a1f513654692ee50daf
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918027"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>색 및 Visual Studio에 대 한 스타일 지정
 
@@ -425,7 +425,7 @@ VSPackage를 표시 하는 텍스트의 색 지정을 올바르게 지원 하려
 
 - **IDE에서 생성 된 이벤트를 처리할** 를 구현 하 여 합니다 [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) 인터페이스입니다. IDE 글꼴 및 색 페이지의 사용자 수정 다음 적절 한 메서드를 호출 합니다. 예를 들어 호출을 [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) 새 글꼴을 선택 하는 경우 메서드.
 
- **OR**
+  **OR**
 
 - **변경 내용에 대 한 IDE를 폴링할**합니다. 시스템이 구현 통해 수행할 수 있습니다 [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스입니다. 하지만 주로 지원용 지 속성을 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 메서드 표시 항목에 대 한 글꼴 및 색 정보를 가져올 수 있습니다. 글꼴 및 색 설정에 대 한 자세한 내용은 MSDN 문서를 참조 하세요 [에 액세스 하는 저장 된 글꼴 및 색 설정](../accessing-stored-font-and-color-settings.md)합니다.
 

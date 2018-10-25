@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17cd40938d177f3ea74af13bd84fcf1b873dd650
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40ee5cb4bf552b04683c4c2119a8c43a595b2105
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900308"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
-검색할 파일의 이름 유형을 지정 합니다.  
+검색할 파일 이름 형식을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -54,7 +54,7 @@ public enum enum_GETNAME_TYPE {
   
 ## <a name="members"></a>멤버  
  GN_NAME  
- 문서 또는 상황에 맞는의 이름을 지정합니다.  
+ 문서 또는 상황에 맞는 이름을 지정합니다.  
   
  GN_FILENAME  
  문서 또는 상황에 맞는의 전체 경로 지정합니다.  
@@ -63,19 +63,19 @@ public enum enum_GETNAME_TYPE {
  문서 또는 상황에 맞는의 전체 경로 대신 기본 파일 이름을 지정합니다.  
   
  GN_MONIKERNAME  
- 모니커 형식의 문서 또는 상황에 맞는의 고유한 이름을 지정합니다.  
+ 모니커의 형식 문서 또는 상황에 맞는의 고유한 이름을 지정합니다.  
   
  GN_URL  
- 문서 또는 상황에 맞는의 URL 이름을 지정합니다.  
+ 문서 또는 컨텍스트 URL 이름을 지정합니다.  
   
  GN_TITLE  
- 있는 경우는 문서의 제목을 지정 합니다.  
+ 있을 경우 문서의 제목을 지정 합니다.  
   
  GN_STARTPAGEURL  
  프로세스에 대 한 시작 페이지 URL을 가져옵니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값을 매개 변수로 전달 되는 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), 및 [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 이름의 종류를 지정 하는 방법입니다.  
+ 이러한 값을 매개 변수로 전달 되는 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)를 [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), 및 [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 반환할 이름의 종류를 지정 하는 방법입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

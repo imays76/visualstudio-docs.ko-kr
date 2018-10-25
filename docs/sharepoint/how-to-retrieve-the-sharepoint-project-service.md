@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e2dc633621734740065b8e0c80dd34795eac830
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880600"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>방법: SharePoint 프로젝트 서비스 검색
   SharePoint 프로젝트 서비스는 다음 형식의 솔루션에 액세스할 수 있습니다.  
@@ -96,11 +96,11 @@ ms.locfileid: "37119908"
   
  Vspackage를 요청할 수 있습니다는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 다음 방법 중 하나를 사용 하 여 개체:  
   
--   합니다 <xref:System.IServiceProvider.GetService%2A> 에서 파생 되는 관리 되는 VSPackage의 메서드는 <xref:Microsoft.VisualStudio.Shell.Package> 클래스입니다. 자세한 내용은 [방법: 서비스 가져오기](../extensibility/how-to-get-a-service.md)합니다.  
+- 합니다 <xref:System.IServiceProvider.GetService%2A> 에서 파생 되는 관리 되는 VSPackage의 메서드는 <xref:Microsoft.VisualStudio.Shell.Package> 클래스입니다. 자세한 내용은 [방법: 서비스 가져오기](../extensibility/how-to-get-a-service.md)합니다.  
   
--   정적 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 메서드. 자세한 내용은 [사용 하 여 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)합니다.  
+- 정적 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 메서드. 자세한 내용은 [사용 하 여 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)합니다.  
   
- 액세스할 수 있는 Visual Studio 확장에서를 <xref:EnvDTE80.DTE2> 개체를 요청할 수 있습니다는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 사용 하 여 개체를 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> 메서드의 <xref:Microsoft.VisualStudio.Shell.ServiceProvider> 개체입니다. 자세한 내용은 [DTE 개체에서 서비스를 가져오는](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)합니다.  
+  액세스할 수 있는 Visual Studio 확장에서를 <xref:EnvDTE80.DTE2> 개체를 요청할 수 있습니다는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 사용 하 여 개체를 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> 메서드의 <xref:Microsoft.VisualStudio.Shell.ServiceProvider> 개체입니다. 자세한 내용은 [DTE 개체에서 서비스를 가져오는](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)합니다.  
   
 ## <a name="see-also"></a>참고자료
  [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)   

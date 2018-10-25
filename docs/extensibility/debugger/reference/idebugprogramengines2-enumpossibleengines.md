@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30eb28398569aa3d14b4a7dd363abac785f352c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f5977e7dbac34e247838efe1e8d0036e60f0416
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887674"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
-모든 가능한 있는 디버그 엔진 (DE)이이 프로그램을 디버깅할 수에 대 한 Guid를 반환 합니다.  
+모든 가능한 디버그 엔진 (DE)이이 프로그램을 디버그할 수 있는 Guid를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,7 +45,7 @@ int EnumPossibleEngines(
   
 #### <a name="parameters"></a>매개 변수  
  `celtBuffer`  
- [in] 반환할 DE Guid 수입니다. 최대 크기 지정은 `rgguidEngines` 배열입니다.  
+ [in] 반환할 DE Guid 수입니다. 이 또한의 최대 크기를 지정 된 `rgguidEngines` 배열입니다.  
   
  `rgguidEngines`  
  [out에서] 배열 채울 DE Guid입니다.  
@@ -54,10 +54,10 @@ int EnumPossibleEngines(
  [out] 반환 되는 DE Guid의 실제 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. [C + +] 반환 `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` 또는 [C#] 0x8007007A 버퍼가 충분히 큰 경우.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. [C + +] 반환 `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` 또는 [C#] 0x8007007A 버퍼 크기가 충분 하지 않은 경우.  
   
 ## <a name="remarks"></a>설명  
- 엔진 수를 확인 하기 위해 한 번이 메서드를 호출 하는 `celtBuffer` 매개 변수를 0으로 설정 및 `rgguidEngines` 매개 변수는 null 값으로 설정 합니다. 반환 합니다. `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (C#에 대 한 0x8007007A) 및 `pceltEngines` 매개 변수 버퍼의 필요한 크기를 반환 합니다.  
+ 엔진 수를 확인 하기 위해 사용 하 여 한 번이 메서드를 호출 합니다 `celtBuffer` 매개 변수가 0으로 설정 및 `rgguidEngines` 매개 변수가 null 값으로 설정 합니다. 반환 합니다. `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (C#에 대 한 0x8007007A) 및 `pceltEngines` 매개 변수 버퍼의 필요한 크기를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)
