@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893885"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 확장 스키마 2.0 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ VSIX 배포 매니페스트 파일에는 VSIX 패키지의 내용을 설명합�
 ### <a name="assets-element"></a>자산 요소  
  이 요소 목록을 포함 `<Asset>` 이 패키지에서 각 확장 또는 콘텐츠 요소에 대 한 태그를 표시 합니다.  
   
--   `<Asset>` -이 요소는 다음과 같은 특성 및 요소가 포함 되어 있습니다.  
+- `<Asset>` -이 요소는 다음과 같은 특성 및 요소가 포함 되어 있습니다.  
   
-    -   `Type` – 확장 또는이 요소가 나타내는 콘텐츠 형식입니다. 각 `<Asset>` 요소는 단일 있어야 합니다. `Type`를 여러 개 있지만 `<Asset>` 동일한 요소가 있을 수 있습니다 `Type`. 네임 스페이스 규칙에 따라 정규화 된 이름으로이 특성을 나타내야 합니다. 알려진 형식은 다음과 같습니다.  
+  - `Type` – 확장 또는이 요소가 나타내는 콘텐츠 형식입니다. 각 `<Asset>` 요소는 단일 있어야 합니다. `Type`를 여러 개 있지만 `<Asset>` 동일한 요소가 있을 수 있습니다 `Type`. 네임 스페이스 규칙에 따라 정규화 된 이름으로이 특성을 나타내야 합니다. 알려진 형식은 다음과 같습니다.  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         고유한 형식을 만들고 고유한 이름을 부여할 수 있습니다. Visual Studio 내에서 실행 시 코드를 열거 하 고 확장 관리자 API를 통해 이러한 사용자 지정 형식에 액세스할 수 있습니다.  
+       고유한 형식을 만들고 고유한 이름을 부여할 수 있습니다. Visual Studio 내에서 실행 시 코드를 열거 하 고 확장 관리자 API를 통해 이러한 사용자 지정 형식에 액세스할 수 있습니다.  
   
-    -   경로-파일 또는 자산을 포함 하는 패키지 내의 폴더에 상대 경로입니다.  
+  - 경로-파일 또는 자산을 포함 하는 패키지 내의 폴더에 상대 경로입니다.  
   
-    -   `AnyAttribute*` -개방형 집합 이름-값 쌍 사전으로 런타임에 노출 될 수 있는 특성입니다.  
+  - `AnyAttribute*` -개방형 집합 이름-값 쌍 사전으로 런타임에 노출 될 수 있는 특성입니다.  
   
-         `<AnyElement>*` – 모든 구조화 된 콘텐츠 간 허용 되는 `<Asset>` 시작 및 끝 태그입니다. 모든 요소는 XmlElement 개체의 목록으로 노출 됩니다. VSIX 확장 매니페스트 파일에서 구조화 된 형식별 메타 데이터를 정의 하 고 런타임 시이 열거할 수 있습니다.  
+     `<AnyElement>*` – 모든 구조화 된 콘텐츠 간 허용 되는 `<Asset>` 시작 및 끝 태그입니다. 모든 요소는 XmlElement 개체의 목록으로 노출 됩니다. VSIX 확장 매니페스트 파일에서 구조화 된 형식별 메타 데이터를 정의 하 고 런타임 시이 열거할 수 있습니다.  
   
 ### <a name="sample-manifest"></a>샘플 매니페스트  
   

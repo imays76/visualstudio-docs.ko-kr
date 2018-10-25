@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c25a1c83f91de1e97dd4f328ea68c572867f0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a98ccf6e211233aed6099f554733a51f40c3363
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106632"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875271"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-이 해결 방법을 나타내는 중단점의 형식을 가져옵니다.  
+이 확인을 나타내는 중단점의 형식을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,16 +41,16 @@ int GetBreakpointType(
   
 #### <a name="parameters"></a>매개 변수  
  `pBPType`  
- [out] 값을 반환 된 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 이 중단점의 형식을 지정 하는 열거형입니다.  
+ [out] 값을 반환 합니다 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 이 중단점의 형식을 지정 하는 열거형입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드가 반환 됩니다. E_FAIL을 반환 하는 경우는 `bpResLocation` 은 연결 된 필드 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조가 잘못 되었습니다.  
+ 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. E_FAIL을 반환 하는 경우는 `bpResLocation` 연결 된 필드 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조가 잘못 되었습니다.  
   
 ## <a name="remarks"></a>설명  
  예를 들어 중단점은 코드나 데이터 중단점을 수 있습니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugBreakpointResolution` 공개 하는 개체는 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스입니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CDebugBreakpointResolution` 노출 하는 개체를 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스입니다.  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)    

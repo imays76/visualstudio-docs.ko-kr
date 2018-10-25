@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9425cabbc024e445df97d9b909f1803b7a972571
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 24fcd6970d368bfee739e47f9b7e0407f5cd6307
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918547"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: 정적 생성자는 private이어야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
@@ -47,11 +48,11 @@ ms.locfileid: "49267321"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  위반은 일반적으로 다음 작업 중 하나에 의해 발생 됩니다.
 
--   유형에 대 한 정적 생성자를 정의 하 고 이루어지지 않았다는 개인입니다.
+- 유형에 대 한 정적 생성자를 정의 하 고 이루어지지 않았다는 개인입니다.
 
--   프로그래밍 언어 컴파일러는 형식에는 기본 정적 생성자를 추가 하 고 이루어지지 않았다는 개인.
+- 프로그래밍 언어 컴파일러는 형식에는 기본 정적 생성자를 추가 하 고 이루어지지 않았다는 개인.
 
- 위반의 첫 번째 종류를 해결 하려면 정적 생성자를 비공개로 설정 합니다. 두 번째 종류를 해결 하려면 형식에는 개인 정적 생성자를 추가 합니다.
+  위반의 첫 번째 종류를 해결 하려면 정적 생성자를 비공개로 설정 합니다. 두 번째 종류를 해결 하려면 형식에는 개인 정적 생성자를 추가 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이러한 위반은 표시 하지 마십시오. 정적 생성자를 명시적으로 호출 해야 하는 소프트웨어 디자인에 호스팅되고 디자인 심각한 결함을 포함 하 고 검토 해야 합니다.

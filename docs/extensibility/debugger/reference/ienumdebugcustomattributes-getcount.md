@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 223f453f427fe90764262bac55f2591d4fdf5646
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c90eb242485ecdb3d4939ac227d344402799280b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119973"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899853"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 열거자의 사용자 지정 특성의 수를 가져옵니다.  
@@ -41,13 +41,13 @@ int GetCount(
   
 #### <a name="parameters"></a>매개 변수  
  `pcelt`  
- [out] 열거의 요소 수를 반환합니다.  
+ [out] 열거형의 요소 수를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 항목만 지정 하는 일반적인 COM 열거형 인터페이스에 속하지 않습니다. `Next`, `Clone`, `Skip`, 및 `Reset` 구현 되어야 합니다.  
+ 이 메서드는 항목만 지정 하는 일반적인 COM 열거형 인터페이스의 일부가 아닙니다 `Next`, `Clone`를 `Skip`, 및 `Reset` 구현 해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

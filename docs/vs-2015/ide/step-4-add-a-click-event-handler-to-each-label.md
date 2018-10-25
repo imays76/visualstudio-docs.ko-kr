@@ -14,25 +14,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923383"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>4단계: 각 레이블에 클릭 이벤트 처리기 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 일치 게임은 다음과 같은 방식으로 진행됩니다.  
   
-1.  플레이어가 아이콘이 숨겨져 있는 사각형 중 하나를 선택하면 프로그램에서 아이콘 색을 검은색으로 변경하여 플레이어에게 해당 아이콘을 보여 줍니다.  
+1. 플레이어가 아이콘이 숨겨져 있는 사각형 중 하나를 선택하면 프로그램에서 아이콘 색을 검은색으로 변경하여 플레이어에게 해당 아이콘을 보여 줍니다.  
   
-2.  플레이어가 다른 숨겨진 아이콘을 선택합니다.  
+2. 플레이어가 다른 숨겨진 아이콘을 선택합니다.  
   
-3.  아이콘이 일치하면 해당 아이콘이 표시되고 일치하지 않으면 두 아이콘 모두 다시 숨겨집니다.  
+3. 아이콘이 일치하면 해당 아이콘이 표시되고 일치하지 않으면 두 아이콘 모두 다시 숨겨집니다.  
   
- 프로그램이 이런 방식으로 작동하게 하려면 선택한 레이블의 색을 변경하는 Click 이벤트 처리기를 추가해야 합니다.  
+   프로그램이 이런 방식으로 작동하게 하려면 선택한 레이블의 색을 변경하는 Click 이벤트 처리기를 추가해야 합니다.  
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>각 레이블에 Click 이벤트 처리기를 추가하려면  
   

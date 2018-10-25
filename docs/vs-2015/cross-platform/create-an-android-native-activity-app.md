@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69ba9f13b9fc651fc68c4ed36f704abc17c5ad76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899931"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Native Activity 앱 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ ms.locfileid: "49174007"
   
 #### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면  
   
-1.  Visual Studio를 엽니다. 메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
+1. Visual Studio를 엽니다. 메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
   
-2.  **새 프로젝트** 대화 상자의 **템플릿**에서 **Visual C++**, **플랫폼 간**을 차례로 선택한 후 **Native-Activity 응용 프로그램(Android)** 템플릿을 선택합니다.  
+2. **새 프로젝트** 대화 상자의 **템플릿**에서 **Visual C++**, **플랫폼 간**을 차례로 선택한 후 **Native-Activity 응용 프로그램(Android)** 템플릿을 선택합니다.  
   
-3.  앱의 이름을 `MyAndroidApp`과 같이 지정한 후 **확인**을 선택합니다.  
+3. 앱의 이름을 `MyAndroidApp`과 같이 지정한 후 **확인**을 선택합니다.  
   
-     ![Native Activity 프로젝트 만들기](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Native Activity 프로젝트 만들기](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-     새 솔루션이 만들어지고 솔루션 탐색기가 열립니다.  
+    새 솔루션이 만들어지고 솔루션 탐색기가 열립니다.  
   
-     ![솔루션 탐색기의 Native Activity 프로젝트](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![솔루션 탐색기의 Native Activity 프로젝트](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- 새 Android Native Activity 앱 솔루션에는 다음 두 프로젝트가 포함되어 있습니다.  
+   새 Android Native Activity 앱 솔루션에는 다음 두 프로젝트가 포함되어 있습니다.  
   
 -   **MyAndroidApp.NativeActivity** 에는 앱을 Android에서 Native Activity로 실행하기 위한 참조 및 붙이기 코드가 포함되어 있습니다. 붙이기 코드의 진입점 구현은 main.cpp에 있습니다. 미리 컴파일된 헤더는 pch.h에 있습니다. 이 Native Activity 앱 프로젝트는 공유 라이브러리 .so 파일로 컴파일되며 패키징 프로젝트에서 이 라이브러리를 선택합니다.  
   

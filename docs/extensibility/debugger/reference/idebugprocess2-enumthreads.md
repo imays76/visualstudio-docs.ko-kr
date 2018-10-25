@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 786a3b4b5988b66e1fccc624154eeef67285ec84
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c916e8b176444a8af81cb874c394e9eb832a01b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939711"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 프로세스에서 실행 중인 모든 스레드의 목록을 검색 합니다.  
@@ -41,15 +41,15 @@ int EnumThreads(
   
 #### <a name="parameters"></a>매개 변수  
  `ppEnum`  
- [out] 반환 된 [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) 프로세스의 모든 응용 프로그램에서 모든 스레드의 목록을 포함 하는 개체입니다.  
+ [out] 반환 된 [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) 프로세스에서 모든 프로그램에서 모든 스레드의 목록을 포함 하는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 각 프로그램에서 실행 중인 스레드를 열거 하 고 결합 하 여 스레드는 프로세스 보기. 여러 프로그램; 단일 스레드가 실행 될 수 있습니다. 이 메서드는 한 번만 해당 스레드를 열거합니다.  
+ 이 메서드는 각 프로그램에서 실행 중인 스레드를 열거 하 고 결합 하 여 스레드는 프로세스 보기. 여러 프로그램에 단일 스레드를 실행할 수 있습니다. 이 메서드는 스레드를 한 번만 열거합니다.  
   
- 이 메서드는 중복 없이 프로세스의 스레드가 목록을 제공 합니다. 그렇지 않은 경우 사용할 특정 프로그램에서 실행 중인 스레드를 열거 하는 [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 메서드.  
+ 이 메서드는 중복 항목 없이 프로세스의 스레드 목록을 표시합니다. 그렇지 않은 경우 특정 프로그램에서 실행 중인 스레드를 열거 하려면 사용 합니다 [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

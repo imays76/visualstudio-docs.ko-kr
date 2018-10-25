@@ -1,5 +1,5 @@
 ---
-title: '방법: 플래그 지정 및 스레드의 플래그를 해제 | Microsoft Docs'
+title: '방법: 플래그를 지정 및 스레드의 | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,27 +17,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 052c9d65e833152c0d3d3f67eda41742119eccaf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 09d26c87867e071b7dafce80d95e4bc46cb88bb8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891377"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>방법: 스레드에 플래그 지정 및 스레드의 플래그 해제
-스레드를 사용할 때 특히 주의에서 아이콘으로 표시 하 여 제공 하려는 플래그를 설정할 수 있습니다는 **스레드**, **병렬 스택** (스레드 뷰) **병렬 조사식**, 및  **GPU 스레드** windows 합니다. 이 아이콘은 플래그 설정된 스레드를 다른 스레드와 구분하는 데 도움이 됩니다.  
+아이콘 표시 하 여 특별 한 주의가 하려는 스레드에 플래그를 수는 **스레드**를 **병렬 스택** (스레드 뷰) **병렬 조사식**, 및  **GPU 스레드** windows. 이 아이콘은 플래그 설정된 스레드를 다른 스레드와 구분하는 데 도움이 됩니다.  
   
-플래그가 지정 된 스레드에서 특수 처리가 발생 하기도 **스레드** 목록에 **디버그 위치** 도구 모음 및 다른 다중 스레드 디버깅 창에서. 모든 스레드나 플래그에 플래그가 지정 된 스레드만 표시할 수 있습니다는 **스레드** 목록 또는 다른 창에서.
+플래그가 지정 된 스레드 권한도에서 별도로 처리 합니다 **스레드** 목록에서 **디버그 위치** 도구 모음 및 다른 다중 스레드 디버깅 창에서. 모든 스레드 또는에서 플래그가 지정 된 스레드만 표시할 수 있습니다 합니다 **스레드** 목록 또는 다른 창에서.
   
 ### <a name="to-flag-or-unflag-a-thread"></a>스레드에 플래그를 지정하거나 해제하려면 
   
--   에 **스레드** 또는 **병렬 조사식** 창에서 원하는 스레드를 찾아를 선택 하거나 플래그 지우기 플래그 아이콘을 클릭 합니다. 
--   에 **병렬 스택** 창, 스레드 또는 스레드를 선택 하는 그룹에 오른쪽 클릭 **플래그 / <thread>**  또는 **플래그 해제 / <thread>** 합니다.
+- 에 **스레드** 하거나 **병렬 조사식** 창에서 원하는 스레드를 찾아 선택 하 고 플래그를 지우려면 플래그 아이콘을 클릭 합니다. 
+- 에 **병렬 스택** 창에서 스레드 또는 스레드 선택한 그룹을 마우스 오른쪽 단추로 클릭 **플래그 / <thread>**  하거나 **플래그 해제 / <thread>** 합니다.
   
 ### <a name="to-unflag-all-threads"></a>모든 스레드의 플래그를 해제하려면  
   
 -   에 **스레드** 창에서 스레드를 마우스 오른쪽 단추로 클릭 하 고 클릭 **모든 스레드 플래그 해제**합니다.
--   에 **병렬 조사식** 창에서 플래그가 지정 된 모든 스레드, 한 다음 마우스 오른쪽 단추로 클릭 하 고 선택 **플래그 해제**합니다.  
+-   에 **병렬 조사식** 창에서 모든 플래그가 지정 된 스레드만, 그런 다음 마우스 오른쪽 단추로 클릭 하 고 선택 **플래그 해제**합니다.  
   
 ### <a name="to-display-only-flagged-threads"></a>플래그가 지정된 스레드만 표시하려면  
   
@@ -45,15 +45,15 @@ ms.locfileid: "31477604"
   
 ### <a name="to-flag-just-my-code"></a>내 코드만 플래그를 설정하려면  
   
-1.  맨 위에 있는 도구 모음에서는 **스레드** 창에서 플래그 아이콘을 클릭 합니다.  
+1.  맨 위에 있는 도구 모음에는 **스레드** 창 플래그 아이콘을 클릭 합니다.  
   
 2.  드롭다운 목록에서 클릭 **내 코드만 플래그**합니다.  
   
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>선택한 모듈과 연결된 스레드에 플래그를 설정하려면  
   
-1.  도구 모음에서 **스레드** 창에서 플래그 아이콘을 클릭 합니다.  
+1.  도구 모음에서의 **스레드** 창에서 플래그 아이콘을 클릭 합니다.  
   
-2.  드롭다운 목록에서 클릭 **사용자 지정 모듈 선택 영역 플래그 지정**합니다.  
+2.  드롭다운 목록에서 클릭 **사용자 지정 모듈 선택 영역 플래그**합니다.  
   
 3.  에 **모듈 선택** 대화 상자에서 원하는 모듈을 선택 합니다.  
   
@@ -63,5 +63,5 @@ ms.locfileid: "31477604"
   
 ## <a name="see-also"></a>참고 항목  
  [다중 스레드 응용 프로그램 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [다중 스레드 응용 프로그램 디버깅을 시작](../debugger/get-started-debugging-multithreaded-apps.md)  
- [연습: 스레드 창 사용 하는 다중 스레드 응용 프로그램 디버깅](../debugger/how-to-use-the-threads-window.md)
+ [다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)  
+ [연습: 스레드 창 사용 하는 다중 스레드 응용 프로그램 디버그](../debugger/how-to-use-the-threads-window.md)

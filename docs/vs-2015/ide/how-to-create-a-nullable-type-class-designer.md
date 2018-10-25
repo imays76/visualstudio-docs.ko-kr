@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941947"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>방법: Nullable 형식 만들기(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "49179428"
   
  Nullable 형식은 <xref:System.Nullable%601> 구조체의 인스턴스입니다. Nullable 형식의 각 인스턴스에는 두 개의 public 읽기 전용 속성 `HasValue` 및 `Value`가 포함됩니다.  
   
--   `HasValue`는 `bool` 형식이고 변수에 정의된 값이 포함되는지 여부를 나타냅니다. `True`는 변수에 null이 아닌 값이 포함됨을 의미합니다. `if (x.HasValue)` 또는 `if (y != null)` 등의 문을 사용하여 정의된 값을 테스트할 수 있습니다.  
+- `HasValue`는 `bool` 형식이고 변수에 정의된 값이 포함되는지 여부를 나타냅니다. `True`는 변수에 null이 아닌 값이 포함됨을 의미합니다. `if (x.HasValue)` 또는 `if (y != null)` 등의 문을 사용하여 정의된 값을 테스트할 수 있습니다.  
   
--   `Value`는 기본 형식과 같은 형식입니다. `HasValue`가 `True`이면 `Value`에는 의미 있는 값이 포함됩니다. `HasValue`가 `False`일 경우 `Value`에 액세스하면 잘못된 작업 예외가 throw됩니다.  
+- `Value`는 기본 형식과 같은 형식입니다. `HasValue`가 `True`이면 `Value`에는 의미 있는 값이 포함됩니다. `HasValue`가 `False`일 경우 `Value`에 액세스하면 잘못된 작업 예외가 throw됩니다.  
   
- 기본적으로 변수를 nullable 형식으로 선언하면 기본 값 형식의 기본값 외에 정의된 값(`HasValue`가 `False`임)이 포함되지 않습니다.  
+  기본적으로 변수를 nullable 형식으로 선언하면 기본 값 형식의 기본값 외에 정의된 값(`HasValue`가 `False`임)이 포함되지 않습니다.  
   
- 클래스 디자이너에는 nullable 형식이 기본 형식이 표시되는 것처럼 표시됩니다.  
+  클래스 디자이너에는 nullable 형식이 기본 형식이 표시되는 것처럼 표시됩니다.  
   
- Visual C#의 nullable 형식에 대한 자세한 내용은 [Nullable 형식](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)을 참조하세요. Visual Basic의 nullable 형식에 대한 자세한 내용은 [Nullable 값 형식](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)을 참조하세요.  
+  Visual C#의 nullable 형식에 대한 자세한 내용은 [Nullable 형식](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)을 참조하세요. Visual Basic의 nullable 형식에 대한 자세한 내용은 [Nullable 값 형식](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)을 참조하세요.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>클래스 디자이너를 사용하여 nullable 형식을 추가하려면  
   

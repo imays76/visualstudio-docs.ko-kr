@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd1aa9c73fad40d07be371ad7f9b3108464aeb34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6d42a7c5e9247359abfcdb4d65db5a4e0de247e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916402"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 디스어셈블리에 대 한 플래그를 지정합니다.  
@@ -52,27 +52,27 @@ public enum enum_DISASSEMBLY_FLAGS {
   
 ## <a name="members"></a>멤버  
  DF_DOCUMENTCHANGE  
- 이 명령은 이전 보다 다른 문서에 임을 나타냅니다.  
+ 이 명령은 이전 보다 다른 문서의 임을 나타냅니다.  
   
  DF_DISABLED  
- 이 명령은 실행 되지 않습니다 나타냅니다.  
+ 이 명령이 실행 되지 않도록 나타냅니다.  
   
  DF_INSTRUCTION_ACTIVE  
- 이 명령을 실행 하려면 다음 지침 중 하나 임을 나타냅니다 (있을 수 있습니다 하나 이상).  
+ 이 명령을 실행 하려면 다음 지침 중 하나 임을 나타냅니다 (있을 둘 이상).  
   
  DF_DATA  
- 실제로이 명령이 데이터 (코드) 임을 나타냅니다.  
+ 실제로이 명령이 데이터 (코드 아님) 임을 나타냅니다.  
   
  DF_HASSOURCE  
- 이 명령은 소스에 있음을 나타냅니다. 프로 파일링 또는 가비지 컬렉션 번호와 같은 몇 가지 지침 있어야 해당 원본에 없습니다.  
+ 이 명령은 소스에 있음을 나타냅니다. 프로 파일링 또는 가비지 컬렉션 코드와 같은 몇 가지 지침을 해당 하는 소스가 없는 경우  
   
  DF_DOCUMENT_CHECKSUM  
- 나타냅니다 `bstrDocumentUrl` 필드 문서 URL 후 체크섬 데이터를 포함 합니다. 설명 부분 참조는 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 체크섬 데이터가 저장 되는 방식에 대 한 구조입니다.  
+ 나타내는 `bstrDocumentUrl` 필드 문서 URL 후 체크섬 데이터를 포함 합니다. 에 대 한 설명 섹션을 참조 합니다 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 체크섬 데이터가 저장 되는 방법에 대 한 구조입니다.  
   
 ## <a name="remarks"></a>설명  
- 로 사용 된 `dwFlags` 의 멤버는 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 구조입니다.  
+ 로 사용 합니다 `dwFlags` 의 멤버는 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 구조입니다.  
   
- 이러한 플래그 비트와 함께 `OR`합니다.  
+ 이러한 플래그는 비트과 결합 될 수 `OR`입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

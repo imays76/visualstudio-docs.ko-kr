@@ -46,39 +46,39 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1efa6852a9bb1c2ec6cd4cabf63ca761506cad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca6d6d1e4a3ad6705890efdc40171857781e6d12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892937"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 기능 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual C++에서는 네이티브 [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) 를 사용하여 다음과 같은 일반적인 런타임 오류를 catch할 수 있습니다.  
   
--   스택 포인터 손상  
+- 스택 포인터 손상  
   
--   지역 배열의 오버런  
+- 지역 배열의 오버런  
   
--   스택 손상  
+- 스택 손상  
   
--   초기화되지 않은 지역 변수에 대한 종속성  
+- 초기화되지 않은 지역 변수에 대한 종속성  
   
--   Short형 변수에 할당한 경우 발생한 데이터 손실  
+- Short형 변수에 할당한 경우 발생한 데이터 손실  
   
- **/RTC** 를 최적화된 빌드(**/O**)와 함께 사용하면 컴파일러 오류가 발생합니다. 최적화된 빌드에는 `runtime_checks` pragma를 사용해도 적용되지 않습니다.  
+  **/RTC** 를 최적화된 빌드(**/O**)와 함께 사용하면 컴파일러 오류가 발생합니다. 최적화된 빌드에는 `runtime_checks` pragma를 사용해도 적용되지 않습니다.  
   
- 런타임 검사가 활성화된 상태에서 프로그램을 디버깅하면 런타임 오류가 발생한 경우 기본적으로 프로그램을 중지하고 디버거를 중단합니다. 모든 런타임 검사의 기본 동작은 변경할 수 있습니다. 자세한 내용은 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)합니다.  
+  런타임 검사가 활성화된 상태에서 프로그램을 디버깅하면 런타임 오류가 발생한 경우 기본적으로 프로그램을 중지하고 디버거를 중단합니다. 모든 런타임 검사의 기본 동작은 변경할 수 있습니다. 자세한 내용은 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)합니다.  
   
- 다음 절차에서는 디버그 빌드에서 네이티브 런타임 검사 기능을 활성화하는 방법과 네이티브 런타임 검사 동작을 수정하는 방법에 대해 설명합니다.  
+  다음 절차에서는 디버그 빌드에서 네이티브 런타임 검사 기능을 활성화하는 방법과 네이티브 런타임 검사 동작을 수정하는 방법에 대해 설명합니다.  
   
- 이 섹션의 다른 항목에서는 다음 내용에 대해 설명합니다.  
+  이 섹션의 다른 항목에서는 다음 내용에 대해 설명합니다.  
   
--   [C 런타임 라이브러리와 함께 런타임 검사 사용자 지정](../debugger/native-run-time-checks-customization.md)  
+- [C 런타임 라이브러리와 함께 런타임 검사 사용자 지정](../debugger/native-run-time-checks-customization.md)  
   
--   [C 런타임 라이브러리 없이 런타임 검사 사용](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
+- [C 런타임 라이브러리 없이 런타임 검사 사용](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>디버그 빌드에 네이티브 런타임 검사 기능을 사용하려면  
   

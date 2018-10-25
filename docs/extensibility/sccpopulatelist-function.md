@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26e7bbb4a99c3cd649eedb7638feb5b6170b3b59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73cc3886fe486498f7d0fbe89d0b68cf873c9d0b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903571"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 함수
-이 함수는 특정 소스 제어 명령에 대 한 파일의 목록을 업데이트 하 고 지정 된 모든 파일에 소스 제어 상태를 제공 합니다.  
+이 함수는 특정 원본 제어 명령 위한 파일의 목록을 업데이트 하 고 모든 지정 된 파일에 소스 제어 상태를 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,31 +42,31 @@ SCCRTN SccPopulateList (
   
 #### <a name="parameters"></a>매개 변수  
  pvContext  
- [in] 소스 제어 플러그 인 컨텍스트 구조입니다.  
+ [in] 원본 제어 플러그 인 상황에 맞는 구조입니다.  
   
  된 명령  
- [in] 모든 파일에 적용 될 원본 제어 명령을 `lpFileNames` 배열 (참조 [명령 코드](../extensibility/command-code-enumerator.md) 가능한 명령 목록을).  
+ [in] 모든 파일에 적용 될 원본 제어 명령을 합니다 `lpFileNames` 배열 (참조 [명령 코드](../extensibility/command-code-enumerator.md) 가능한 명령 목록에 대 한).  
   
  nFiles  
- [in] 파일 수는 `lpFileNames` 배열입니다.  
+ [in] 에 있는 파일 수는 `lpFileNames` 배열입니다.  
   
  lpFileNames  
- [in] 파일 이름에는 IDE의 배열입니다.  
+ [in] IDE에 알려진 파일 이름의 배열입니다.  
   
  pfnPopulate  
- [in] 파일 추가 및 제거에 대 한 호출 하는 IDE 콜백 함수 (참조 [POPLISTFUNC](../extensibility/poplistfunc.md) 세부 정보에 대 한).  
+ [in] 파일 추가 및 제거 하기 위해 호출할 IDE 콜백 함수 (참조 [POPLISTFUNC](../extensibility/poplistfunc.md) 세부 정보에 대 한).  
   
  pvCallerData  
- [in] 콜백 함수에 전달 될 값을 변경 되지 않습니다.  
+ [in] 콜백 함수에 전달할 값을 변경 되지 않습니다.  
   
  lpStatus  
  [out에서] 각 파일에 대 한 상태 플래그를 반환 하는 플러그 인 소스 제어에 대 한 배열입니다.  
   
- fOptions  
- [in] 명령 플래그 (의 "PopulateList 플래그" 섹션을 참조 [에서 특정 명령을 사용 하는 비트](../extensibility/bitflags-used-by-specific-commands.md) 세부 정보에 대 한).  
+ 옵션이  
+ [in] 명령 플래그 ("PopulateList 플래그" 섹션을 참조 하세요 [비트는 특정 명령에 사용](../extensibility/bitflags-used-by-specific-commands.md) 세부 정보에 대 한).  
   
 ## <a name="return-value"></a>반환 값  
- 소스 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환:  
+ 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -74,19 +74,19 @@ SCCRTN SccPopulateList (
 |SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 함수는 현재 상태에 대 한 파일 목록을 검사합니다. 사용 하 여는 `pfnPopulate` 파일에 대 한 조건을 일치 하지 않는 경우 호출자에 게 알리기 위해 콜백 함수는 `nCommand`합니다. 예를 들어, 명령이 실행 되 면 `SCC_COMMAND_CHECKIN` 목록의 파일 체크 아웃을 포함 하지 않은 힙이고 콜백을 호출자를 알리는 데 사용 됩니다. 때때로, 소스 제어 플러그 인에 추가 하 고 명령 수 있는 다른 파일을 찾을 수 있습니다. 이 사용 하면 예를 들어 Visual Basic 사용자가 자신의 프로젝트에 사용 되는 Visual Basic 프로젝트 파일에 나타나지 않으면.bmp 파일을 체크 아웃 합니다. 사용자가 선택 하는 **가져오기** IDE에 명령 합니다. IDE는 사용자를 가져올 수 있어야 할 모든 파일의 목록을 표시 되었으나의 목록이 표시 됩니다는 `SccPopulateList` 함수 표시 되는 목록을 최신 상태 인지 확인 하기 위해 호출 됩니다.  
+ 이 함수는 현재 상태에 대 한 파일 목록을 검사합니다. 사용 된 `pfnPopulate` 파일에 대 한 조건과 일치 하지 않는 경우 호출자에 알리기 위해 콜백 함수는 `nCommand`합니다. 예를 들어, 명령이 실행 되 면 `SCC_COMMAND_CHECKIN` 목록에서 파일을 체크 아웃 되지 않습니다 하 고 콜백을 호출자를 알리는 데 사용 됩니다. 경우에 따라 소스 제어 플러그 인에 추가 하 고 명령의 일부를 수 있는 다른 파일을 찾을 수 있습니다. 이 사용 하면 예를 들어, Visual Basic 사용자가 자신의 프로젝트에 사용 되는 Visual Basic 프로젝트 파일에 나타나지 않으면.bmp 파일을 체크 아웃 합니다. 사용자가 선택 하는 **가져올** IDE에서 명령을 합니다. IDE를 가져올 수는 모든 파일 목록이 표시 됩니다 목록 표시 되며, 전에 `SccPopulateList` 함수가 호출 되어 표시할 목록이 최신 상태 인지 확인 합니다.  
   
 ## <a name="example"></a>예제  
- IDE는 사용자를 가져올 수 있어야 할 파일의 목록을 작성 합니다. 이 목록을 표시 하기 전에 호출 된 `SccPopulateList` 함수를 추가 하 고 목록에서 파일을 삭제 합니다. 소스 제어 플러그 인 기회를 제공 합니다. 지정된 된 콜백 함수를 호출 하 여 플러그 인 목록을 수정 (참조 [POPLISTFUNC](../extensibility/poplistfunc.md) 자세한 세부 정보에 대 한).  
+ IDE를 가져올 수는 파일의 목록을 작성 합니다. 이 목록에 표시 하기 전에 호출 된 `SccPopulateList` 함수를 추가 하 고 목록에서 파일을 삭제 합니다. 소스 제어 플러그 인 기회를 제공 합니다. 지정된 된 콜백 함수를 호출 하 여 플러그 인 수정 목록 (참조 [POPLISTFUNC](../extensibility/poplistfunc.md) 자세한).  
   
- 플러그 인을 계속 호출 하는 `pfnPopulate` 추가 하 고가 완료 되 고 다음에서 반환 될 때까지 파일을 삭제 하는 함수는 `SccPopulateList` 함수입니다. IDE의 목록 그런 다음 표시할 수 있습니다. `lpStatus` 배열은 IDE에 의해 전달 된 원래 목록에 있는 모든 파일을 나타냅니다. 콜백 함수의 시키기 위한 뿐만 아니라 파일 이러한 모든 상태에서 플러그 인 채우기를 사용 합니다.  
+ 플러그 인을 계속 호출 하는 `pfnPopulate` 함수를 추가 하 고 완료 되 고 다음에서 반환 될 때까지 파일을 삭제 합니다 `SccPopulateList` 함수입니다. 그런 다음 IDE 목록을 표시할 수 있습니다. `lpStatus` 배열 IDE에 의해 전달 된 원래 목록의 모든 파일을 나타냅니다. 상황을 위해 이러한 파일 뿐만 아니라 모든의 플러그 인 채우기 콜백 함수를 사용 합니다.  
   
 > [!NOTE]
->  소스 제어 플러그 인에 항상 이므로 목록에 그대로 두고이 함수에서 바로 반환 하는 옵션을 있습니다. 플러그 인이 함수를 구현,이 설정 하 여 나타낼 수는 `SCC_CAP_POPULATELIST` 기능 비트 플래그에 대 한 첫 번째 호출에서는 [SccInitialize](../extensibility/sccinitialize-function.md)합니다. 기본적으로 플러그 인 고 항상 가정해 야 모든 항목에 전달 되는 파일입니다. 그러나 IDE 설정 하는 경우는 `SCC_PL_DIR` 에 플래그가 지정는 `fOptions` 매개 변수를 전달 되는 모든 항목 디렉터리로 간주 됩니다. 플러그 인는 디렉터리에 속하는 모든 파일을 추가 해야 합니다. IDE 파일 및 디렉터리의 혼합에 전달 하면 됩니다.  
+>  항상 소스 제어 플러그 인 이므로 목록 두면이 함수에서 바로 반환 하는 옵션을 가집니다. 플러그 인이 함수를 구현,이 설정 하 여 나타낼 수 있습니다 합니다 `SCC_CAP_POPULATELIST` 첫 번째 호출에서 기능 비트 플래그를 [SccInitialize](../extensibility/sccinitialize-function.md)합니다. 기본적으로 플러그 인 항상 가정해 야 모든 항목에 전달 되는 파일입니다. 그러나 IDE 설정 하는 경우는 `SCC_PL_DIR` 플래그를 `fOptions` 디렉터리 간주 되기 위해 매개 변수에 전달 되는 모든 항목은입니다. 플러그 인는 디렉터리에 속하는 모든 파일을 추가 해야 합니다. IDE 전달 하지는 않지만 파일 및 디렉터리의 혼합입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
+ [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
- [특정 명령에서 사용 하는 비트](../extensibility/bitflags-used-by-specific-commands.md)   
+ [특정 명령에 사용 되는 비트](../extensibility/bitflags-used-by-specific-commands.md)   
  [명령 코드](../extensibility/command-code-enumerator.md)

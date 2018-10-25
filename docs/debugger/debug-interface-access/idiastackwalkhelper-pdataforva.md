@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eb500539184d6ac5e7e3cb00e753a00f3585057
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ec11596091f7039d9f711acc0d96510340a77c6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901426"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
-가상 주소와 연결 된 PDATA 데이터 블록을 반환 합니다.  
+가상 주소에 연결 된 PDATA 데이터 블록을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,24 +37,24 @@ HRESULT pdataForVA(
   
 #### <a name="parameters"></a>매개 변수  
  `va`  
- [in] 데이터를 가져올 가상 주소를 지정 합니다.  
+ [in] 가져올 데이터의 가상 주소를 지정 합니다.  
   
  `cbData`  
- [in] 데이터의에서 바이트를 가져올의 크기입니다.  
+ [in] 크기 (바이트)를 가져올 데이터입니다.  
   
  `pcbData`  
- [out] 데이터의 실제 크기 (바이트)를 눌러 반환 합니다.  
+ [out] (바이트)를 가져온 데이터의 실제 크기를 반환 합니다.  
   
  `pbData`  
  [out에서] 요청된 된 데이터를 사용 하 여 입력 되는 버퍼입니다. 일 수 없습니다 `NULL`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 이면 지정된 된 주소에 대 한 PDATA 없습니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 없습니다 PDATA 지정된 된 주소에 대 한 경우. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- PDATA (".pdata" 라는 섹션)는 컴파일 대상의 예외 처리 함수에 대 한 정보를 포함 합니다.  
+ PDATA (".pdata" 라는 섹션 참조)는 컴파일 대상의 예외 처리 함수에 대 한 정보를 포함 합니다.  
   
- 호출자에 게 데이터 양을 반환 하 여 호출자에 게 데이터의 크기는 사용할 수 있는 요청 하지 않아도 되므로 하는 것을 알고 있습니다. 따라서 것이 오류를 반환 하는 경우이 메서드의 구현에서 허용 되는 `pbData` 매개 변수는 `NULL`합니다.  
+ 호출자가 호출자에 게 얼마나 많은 데이터를 사용할 수를 요청 하지 않아도 되므로 반환할 얼마나 많은 데이터를 알고 있습니다. 따라서 것이 오류를 반환 하는 경우이 메서드의 구현을 허용 되는 `pbData` 매개 변수는 `NULL`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

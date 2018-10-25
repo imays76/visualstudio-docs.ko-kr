@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887568"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>레거시 언어 서비스의 매개 변수 정보
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>파서에서 매개 변수 정보 도구 설명이 지원  
  합니다 <xref:Microsoft.VisualStudio.Package.Source> 클래스의 내용에 대 한 가정을 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 및 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 매개 변수 정보 도구 설명이 표시 되 고 업데이트 하는 경우 클래스입니다.  
   
--   파서를 지정 하는 <xref:Microsoft.VisualStudio.Package.ParseReason> 매개 변수 목록 시작 문자를 입력 하는 경우.  
+- 파서를 지정 하는 <xref:Microsoft.VisualStudio.Package.ParseReason> 매개 변수 목록 시작 문자를 입력 하는 경우.  
   
--   지정 된 위치는 <xref:Microsoft.VisualStudio.Package.ParseRequest> 개체가 매개 변수 목록 시작 문자 직후입니다. 파서를 배치 하 고 사용 중인 버전에서 목록에 저장 하는 모든 메서드 선언에서 사용할 수 있는 서명을 수집 해야 합니다는 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 개체입니다. 이 목록에 메서드 이름, 메서드 형식 (또는 반환 형식) 및 가능한 매개 변수 목록입니다. 이 목록은 메서드 서명 또는 서명 매개 변수 정보 도구 설명에 표시할 나중에 검색 됩니다.  
+- 지정 된 위치는 <xref:Microsoft.VisualStudio.Package.ParseRequest> 개체가 매개 변수 목록 시작 문자 직후입니다. 파서를 배치 하 고 사용 중인 버전에서 목록에 저장 하는 모든 메서드 선언에서 사용할 수 있는 서명을 수집 해야 합니다는 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 개체입니다. 이 목록에 메서드 이름, 메서드 형식 (또는 반환 형식) 및 가능한 매개 변수 목록입니다. 이 목록은 메서드 서명 또는 서명 매개 변수 정보 도구 설명에 표시할 나중에 검색 됩니다.  
   
- 파서가 다음 지정한 줄을 구문 분석 해야 합니다는 <xref:Microsoft.VisualStudio.Package.ParseRequest> 사용자까지 진행 뿐만 아니라 입력 되는 메서드의 이름을 수집 하는 개체는 매개 변수를 입력 합니다. 메서드의 이름을 전달 하 여 이렇게를 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> 메서드를 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 개체를 호출 하 고는 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> 메서드 매개 변수 목록 시작 문자는 구문 분석 호출를 <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> 메서드 때 매개 변수 목록 다음 문자는 구문 분석 되 고 및 마지막으로 호출 된 <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> 메서드 매개 변수 목록 끝 문자를 구문 분석할 때. 사용 하는 이러한 메서드 호출의 결과 <xref:Microsoft.VisualStudio.Package.Source> 매개 변수 정보 도구 설명을 적절 하 게 업데이트 하는 클래스입니다.  
+  파서가 다음 지정한 줄을 구문 분석 해야 합니다는 <xref:Microsoft.VisualStudio.Package.ParseRequest> 사용자까지 진행 뿐만 아니라 입력 되는 메서드의 이름을 수집 하는 개체는 매개 변수를 입력 합니다. 메서드의 이름을 전달 하 여 이렇게를 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> 메서드를 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 개체를 호출 하 고는 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> 메서드 매개 변수 목록 시작 문자는 구문 분석 호출를 <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> 메서드 때 매개 변수 목록 다음 문자는 구문 분석 되 고 및 마지막으로 호출 된 <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> 메서드 매개 변수 목록 끝 문자를 구문 분석할 때. 사용 하는 이러한 메서드 호출의 결과 <xref:Microsoft.VisualStudio.Package.Source> 매개 변수 정보 도구 설명을 적절 하 게 업데이트 하는 클래스입니다.  
   
 ### <a name="example"></a>예제  
  사용자가 입력 하는 텍스트 줄을 다음과 같습니다. 아래 줄 번호 (구문 분석 이동 왼쪽에서 오른쪽으로 가정) 줄의 해당 위치에 파서에서 단계를 수행 하는 것을 나타냅니다. 가정 하는 줄 앞에 나오는 모든 이미 구문 분석 되었습니다 "testfunc" 메서드 시그니처를 포함 하 여 메서드 서명에입니다.  

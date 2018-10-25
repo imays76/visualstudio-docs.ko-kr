@@ -16,12 +16,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e502f78698d830c916b09968e8fa2cfbcd74fbf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915778"
 ---
 # <a name="configuration-options-overview"></a>구성 옵션 개요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ ms.locfileid: "49294296"
   
  이전 다이어그램에 관련 된 몇 가지 참고 사항:  
   
--   `IDispatch` 구성 개체에 대 한 옵션으로 표시 됩니다. 구체적으로 찾아보기 개체에 대 한 구성 인터페이스가 선택 사항입니다.  
+- `IDispatch` 구성 개체에 대 한 옵션으로 표시 됩니다. 구체적으로 찾아보기 개체에 대 한 구성 인터페이스가 선택 사항입니다.  
   
--   `IVsDebuggableProjectCfg` 구성 개체의 선택적 표시 되어 있지만 디버깅 지원을 위해 필요 합니다.  
+- `IVsDebuggableProjectCfg` 구성 개체의 선택적 표시 되어 있지만 디버깅 지원을 위해 필요 합니다.  
   
--   `IVsProjectCfg2` 구성 개체의 경우 선택 사항으로 표시 하지만 지원 그룹화 하는 출력에 대 한 필요 합니다.  
+- `IVsProjectCfg2` 구성 개체의 경우 선택 사항으로 표시 하지만 지원 그룹화 하는 출력에 대 한 필요 합니다.  
   
--   `Config Provider` 개체는 선택적 개체로 표시 되어 있지만를 구현 하는 옵션입니다. 프로젝트 개체 또는 별도 개체에 개체를 구현할 수 있습니다.  
+- `Config Provider` 개체는 선택적 개체로 표시 되어 있지만를 구현 하는 옵션입니다. 프로젝트 개체 또는 별도 개체에 개체를 구현할 수 있습니다.  
   
--   `IVsCfgProvider2` 지원 되는 플랫폼 및 구성 편집에 대 한 필요 합니다. `IVsCfgProvider` 해당 기능을 구현 하는 경우에 충분 합니다.  
+- `IVsCfgProvider2` 지원 되는 플랫폼 및 구성 편집에 대 한 필요 합니다. `IVsCfgProvider` 해당 기능을 구현 하는 경우에 충분 합니다.  
   
--   동일한 클래스 실제로 어디서 든 별도 개체를 결합할 수 있으며 다이어그램에 표시 하는 이러한 개체 중 일부는 특정 디자인 요구 사항에 기반 합니다. 이 섹션의 다른 항목에서 단, 개체 및 해당 개체와 연결 된 인터페이스를 살펴봅니다 다이어그램에서 설명 하는 시나리오에 따라 합니다.  
+- 동일한 클래스 실제로 어디서 든 별도 개체를 결합할 수 있으며 다이어그램에 표시 하는 이러한 개체 중 일부는 특정 디자인 요구 사항에 기반 합니다. 이 섹션의 다른 항목에서 단, 개체 및 해당 개체와 연결 된 인터페이스를 살펴봅니다 다이어그램에서 설명 하는 시나리오에 따라 합니다.  
   
--   특정 개체를 개별적으로 구현 됩니다. 예를 들어, 프로젝트 및 솔루션 빌드 별도 스레드 및 빌드에 대 한 구성을 설명 하는 개체에서 빌드 생활 편의 별도로 관리 하는 개체에서 발생 합니다.  
+- 특정 개체를 개별적으로 구현 됩니다. 예를 들어, 프로젝트 및 솔루션 빌드 별도 스레드 및 빌드에 대 한 구성을 설명 하는 개체에서 빌드 생활 편의 별도로 관리 하는 개체에서 발생 합니다.  
   
- 자세한 내용은 사용 하 여 구성 개체 인터페이스에는 이전 다이어그램의 구성 공급자 개체 인터페이스를 참조 하세요 [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)합니다. 또한 [건물에 대 한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md) 구성 작성기 및 빌드 종속성 개체 인터페이스에서 자세한 정보를 제공 하 고 [배포 관리에 대 한 프로젝트 구성을](../../extensibility/internals/project-configuration-for-managing-deployment.md) 추가 구성 배포자 및 배포 종속성 개체에 연결 된 인터페이스를 설명 합니다. 마지막으로, [출력에 대 한 프로젝트 구성을](../../extensibility/internals/project-configuration-for-output.md) 출력 그룹 및 출력 개체 인터페이스 및 구성에 종속 된 속성 보기 및 설정에 대 한 속성 페이지의 사용에 설명 합니다.  
+  자세한 내용은 사용 하 여 구성 개체 인터페이스에는 이전 다이어그램의 구성 공급자 개체 인터페이스를 참조 하세요 [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)합니다. 또한 [건물에 대 한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md) 구성 작성기 및 빌드 종속성 개체 인터페이스에서 자세한 정보를 제공 하 고 [배포 관리에 대 한 프로젝트 구성을](../../extensibility/internals/project-configuration-for-managing-deployment.md) 추가 구성 배포자 및 배포 종속성 개체에 연결 된 인터페이스를 설명 합니다. 마지막으로, [출력에 대 한 프로젝트 구성을](../../extensibility/internals/project-configuration-for-output.md) 출력 그룹 및 출력 개체 인터페이스 및 구성에 종속 된 속성 보기 및 설정에 대 한 속성 페이지의 사용에 설명 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

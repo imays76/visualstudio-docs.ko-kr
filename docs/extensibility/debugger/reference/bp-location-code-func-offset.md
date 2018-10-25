@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d312824bb88022cba9b58945cb5f3e78c13b837
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a1828a7cea62893ecddec6d28f44ca6475352dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911397"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
-코드의 함수에 중단점의 오프셋된 위치에 설명합니다.  
+코드의 함수 중단점의 오프셋된 위치를 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -36,13 +36,13 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
   
 ## <a name="members"></a>멤버  
  `bstrContext`  
- 중단점의 컨텍스트, 일반적으로 호출 스택에 보듯이 메서드 또는 함수 이름입니다.  
+ 중단점의 컨텍스트에서, 일반적으로 호출 스택에 표시 된 메서드 또는 함수의 이름입니다.  
   
  `pFuncPos`  
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) 함수 이름과 함수 시작 부분에서 상대 위치를 설명 하는 개체입니다.  
+ 합니다 [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) 함수 이름과 함수 시작 부분에서 상대 위치를 설명 하는 개체입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조는의 구성원은 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 공용 구조체의 일부로 구조입니다.  
+ 이 구조체의 멤버인 합니다 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 공용 구조체의 일부로 구조입니다.  
   
  `pFuncPos` 멤버 함수 중단점을 설정 하는 위치를 나타냅니다.  
   

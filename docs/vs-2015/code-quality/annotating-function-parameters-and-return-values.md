@@ -131,12 +131,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900165"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,92 +304,92 @@ ms.locfileid: "49297169"
   
  **주석 및 설명**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     매개 변수는 null 일 수 및 사후 상태에서 가리키는 위치 null 일 수 없으며 유효 해야 합니다.  
+   매개 변수는 null 일 수 및 사후 상태에서 가리키는 위치 null 일 수 없으며 유효 해야 합니다.  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     매개 변수는 null 일 수 있지만 사후 상태에서 가리키는 위치 null 일 수 없으며 유효 해야 합니다.  
+   매개 변수는 null 일 수 있지만 사후 상태에서 가리키는 위치 null 일 수 없으며 유효 해야 합니다.  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     매개 변수는 null 일 수 및 사후 상태에서 가리키는 위치 null 일 수 있습니다.  
+   매개 변수는 null 일 수 및 사후 상태에서 가리키는 위치 null 일 수 있습니다.  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     매개 변수는 null 일 수 및 사후 상태에서 가리키는 위치 null 일 수 있습니다.  
+   매개 변수는 null 일 수 및 사후 상태에서 가리키는 위치 null 일 수 있습니다.  
   
- 다음 표에 추가 부분 문자열은 추가로 주석의 의미를 한 정하는 데 주석 이름에 삽입 됩니다.  다양 한 부분 문자열은 `_z`, `_COM_`를 `_buffer_`합니다 `_bytebuffer_`, 및 `_to_`합니다.  
+  다음 표에 추가 부분 문자열은 추가로 주석의 의미를 한 정하는 데 주석 이름에 삽입 됩니다.  다양 한 부분 문자열은 `_z`, `_COM_`를 `_buffer_`합니다 `_bytebuffer_`, 및 `_to_`합니다.  
   
 > [!IMPORTANT]
 >  주석을 다는 인터페이스를 COM에 경우에 이러한 주석의 COM 형식을 사용 합니다. 다른 형식의 인터페이스를 사용 하 여 COM 주석을 사용 하지 마세요.  
   
  **주석 및 설명**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     반환 된 포인터에는 `_Null_terminated_` 주석입니다.  
+   반환 된 포인터에는 `_Null_terminated_` 주석입니다.  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     반환된 된 포인터 COM 의미 체계 및 전달 하므로 `_On_failure_` 후 반환된 된 포인터는 null을 조건입니다.  
+   반환된 된 포인터 COM 의미 체계 및 전달 하므로 `_On_failure_` 후 반환된 된 포인터는 null을 조건입니다.  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     반환된 된 포인터 크기의 유효한 버퍼를 가리키는 `s` 요소나 바이트입니다.  
+   반환된 된 포인터 크기의 유효한 버퍼를 가리키는 `s` 요소나 바이트입니다.  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     반환된 된 포인터 크기의 버퍼를 가리키는 `s` 요소나 (바이트)는 첫 번째 `c` 유효 합니다.  
+   반환된 된 포인터 크기의 버퍼를 가리키는 `s` 요소나 (바이트)는 첫 번째 `c` 유효 합니다.  
   
- 특정 인터페이스 규칙 실패 시 출력 매개 변수는 무효화를 가정 합니다.  다음 표에서 양식이 명시적으로 COM 코드를 제외 하 고 기본 설정 됩니다.  COM 코드 등 코드에 대 한 이전 섹션에 나와 있는 해당 COM 폼을 사용 합니다.  
+  특정 인터페이스 규칙 실패 시 출력 매개 변수는 무효화를 가정 합니다.  다음 표에서 양식이 명시적으로 COM 코드를 제외 하 고 기본 설정 됩니다.  COM 코드 등 코드에 대 한 이전 섹션에 나와 있는 해당 COM 폼을 사용 합니다.  
   
- **주석 및 설명**  
+  **주석 및 설명**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     다른 주석을 수정합니다. 결과는 함수가 실패 한 경우 null로 설정 됩니다.  
+   다른 주석을 수정합니다. 결과는 함수가 실패 한 경우 null로 설정 됩니다.  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     다른 주석을 수정합니다. 함수가 실패 한 경우 결과 0으로 설정 됩니다.  
+   다른 주석을 수정합니다. 함수가 실패 한 경우 결과 0으로 설정 됩니다.  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     함수가 실패 하면 함수가 성공 하면 유효한 버퍼 또는 null로 반환 된 포인터가 가리킵니다. 이 주석은 필수 매개 변수입니다.  
+   함수가 실패 하면 함수가 성공 하면 유효한 버퍼 또는 null로 반환 된 포인터가 가리킵니다. 이 주석은 필수 매개 변수입니다.  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     함수가 실패 하면 함수가 성공 하면 유효한 버퍼 또는 null로 반환 된 포인터가 가리킵니다. 이 주석은 선택적 매개 변수입니다.  
+   함수가 실패 하면 함수가 성공 하면 유효한 버퍼 또는 null로 반환 된 포인터가 가리킵니다. 이 주석은 선택적 매개 변수입니다.  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     함수가 실패 하면 함수가 성공 하면 유효한 버퍼 또는 null로 반환 된 포인터가 가리킵니다. 이 주석은 참조 매개 변수입니다.  
+   함수가 실패 하면 함수가 성공 하면 유효한 버퍼 또는 null로 반환 된 포인터가 가리킵니다. 이 주석은 참조 매개 변수입니다.  
   
 ## <a name="output-reference-parameters"></a>참조 매개 변수 출력  
  참조 매개 변수의 일반적인 용도 출력 매개 변수입니다.  간단한 출력 참조 매개 변수-예를 들어 `int&`-`_Out_` 올바른 의미 체계를 제공 합니다.  그러나 출력 값에 대 한 포인터는-예를 들어 `int *&`-해당 포인터 주석을 같은 `_Outptr_ int **` 올바른 의미 체계를 제공 하지 않습니다.  포인터 형식에 대 한 출력 참조 매개 변수의 의미 체계를 간결 하 게 express 복합 이러한 주석을 사용 합니다.  

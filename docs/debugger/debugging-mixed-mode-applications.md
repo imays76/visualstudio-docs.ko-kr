@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 795b1bf9f2c3d2014e1fa2c4ccd25254a07a70a8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f06a1da269fec2cf1966b17b9497e840808b6c73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887620"
 ---
 # <a name="debugging-mixed-mode-applications"></a>혼합 모드 응용 프로그램 디버깅
 혼합 모드 응용 프로그램은 네이티브 코드(C++)와 관리 코드(Visual Basic, Visual C# 또는 C++처럼 공용 언어 런타임에서 실행되는 코드)가 결합된 응용 프로그램입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 혼합 모드 응용 프로그램의 디버깅이 대부분 투명하게 이루어지며 단일 모드 응용 프로그램을 디버깅할 때와 크게 다르지 않습니다. 그러나 특별히 몇 가지 사항을 고려해야 합니다.  
@@ -48,13 +48,13 @@ C + + 용 편집 하며 계속 하기를 사용 하려면 [을 사용 하도록 
   
 #### <a name="to-turn-off-property-evaluation"></a>속성 확인을 해제하려면  
   
-1.  **도구** 메뉴에서 **옵션**을 선택합니다.  
+1. **도구** 메뉴에서 **옵션**을 선택합니다.  
   
-2.  에 **옵션** 대화 상자를 엽니다는 **디버깅** 폴더를 선택 합니다 **일반** 범주입니다.  
+2. 에 **옵션** 대화 상자를 엽니다는 **디버깅** 폴더를 선택 합니다 **일반** 범주입니다.  
   
-3.  선택을 취소 합니다 **속성 확인 및 기타 암시적 함수 호출** 확인란 합니다.  
+3. 선택을 취소 합니다 **속성 확인 및 기타 암시적 함수 호출** 확인란 합니다.  
   
- 네이티브 호출 스택과 관리되는 호출 스택이 서로 다르기 때문에 디버거는 혼합 코드에 대한 완전한 호출 스택을 항상 제공할 수는 없습니다. 네이티브 코드가 관리 코드를 호출할 경우 약간 다를 수 있습니다. 자세한 내용은 [혼합 코드 및 호출 스택 창에서 누락 된 정보](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)합니다.  
+   네이티브 호출 스택과 관리되는 호출 스택이 서로 다르기 때문에 디버거는 혼합 코드에 대한 완전한 호출 스택을 항상 제공할 수는 없습니다. 네이티브 코드가 관리 코드를 호출할 경우 약간 다를 수 있습니다. 자세한 내용은 [혼합 코드 및 호출 스택 창에서 누락 된 정보](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [관리 코드 디버그](../debugger/debugging-managed-code.md)

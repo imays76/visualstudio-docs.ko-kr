@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d45145da27d019b0750202a38c24ecb1e147d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881692"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거를 사용한 예외 관리
 
@@ -217,7 +217,7 @@ public class GenericException<T> : Exception
 
    ![예외에 대 한 추가 조건을](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 각 상태 줄에 대 한 모듈의 이름을 입력 하 고 비교 연산자 목록 변경 **Equals** 또는 **Not Equals**합니다. 와일드 카드를 지정할 수 있습니다 (**\***) 모듈을 둘 이상 지정 하려면 이름에 있습니다.
+3. 각 상태 줄에 대 한 모듈의 이름을 입력 하 고 비교 연산자 목록 변경 **Equals** 또는 **Not Equals**합니다. 와일드 카드를 지정할 수 있습니다 (* *\\* * *) 모듈을 둘 이상 지정 하려면 이름에 있습니다.
 
 4. 조건을 삭제 해야 할 경우 선택 합니다 **X** 조건 줄의 끝입니다.
 

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a38971aa15cca2dc1e2fe780b603ea885cba0a3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 898c5b1b9de186a7ac704b4987fb090de5381f07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884773"
 ---
 # <a name="sccdiff-function"></a>SccDiff 함수
 이 함수 표시 (또는 확인만 필요한 경우)에서 차이점 (로컬 디스크)의 현재 파일 및 해당 마지막 체크 인 버전 원본 제어 시스템입니다.  

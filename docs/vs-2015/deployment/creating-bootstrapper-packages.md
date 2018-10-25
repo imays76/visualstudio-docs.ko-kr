@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910929"
 ---
 # <a name="creating-bootstrapper-packages"></a>부트스트래퍼 패키지 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,37 +45,37 @@ ms.locfileid: "49208915"
   
  부트스트래퍼 패키지를 만들려면 EXE 또는 MSI 파일 형식의 재배포 가능 파일을 부트스트래퍼 매니페스트 생성기에 제공해야 합니다. 그러면 부트스트래퍼 매니페스트 생성기에서 다음 파일을 만듭니다.  
   
--   언어와 무관한 패키지용 메타데이터가 포함된 제품 매니페스트 product.xml. 여기에는 재배포 가능 구성 요소의 지역화된 모든 버전에 공통적으로 적용되는 메타데이터가 포함됩니다.  
+- 언어와 무관한 패키지용 메타데이터가 포함된 제품 매니페스트 product.xml. 여기에는 재배포 가능 구성 요소의 지역화된 모든 버전에 공통적으로 적용되는 메타데이터가 포함됩니다.  
   
--   언어별 메타데이터가 포함된 패키지 매니페스트 package.xml. 일반적으로 지역화된 오류 메시지가 포함됩니다. 구성 요소에는 해당 구성 요소의 각 지역화된 버전에 대한 패키지 매니페스트가 하나 이상 있어야 합니다.  
+- 언어별 메타데이터가 포함된 패키지 매니페스트 package.xml. 일반적으로 지역화된 오류 메시지가 포함됩니다. 구성 요소에는 해당 구성 요소의 각 지역화된 버전에 대한 패키지 매니페스트가 하나 이상 있어야 합니다.  
   
- 이러한 파일을 만든 후 제품 매니페스트 파일을 사용자 지정 부트스트래퍼에 대해 이름이 지정된 폴더에 저장합니다. 패키지 매니페스트 파일은 로캘에 대해 이름이 지정된 폴더에 저장합니다. 예를 들어 영어 재배포용 패키지 매니페스트 파일은 en 폴더에 저장합니다. 각 로캘(예: 일본어는 ja, 독일어는 de)에 대해 이 프로세스를 반복합니다. 최종 사용자 지정 부트스트래퍼 패키지는 다음과 같은 폴더 구조일 수 있습니다.  
+  이러한 파일을 만든 후 제품 매니페스트 파일을 사용자 지정 부트스트래퍼에 대해 이름이 지정된 폴더에 저장합니다. 패키지 매니페스트 파일은 로캘에 대해 이름이 지정된 폴더에 저장합니다. 예를 들어 영어 재배포용 패키지 매니페스트 파일은 en 폴더에 저장합니다. 각 로캘(예: 일본어는 ja, 독일어는 de)에 대해 이 프로세스를 반복합니다. 최종 사용자 지정 부트스트래퍼 패키지는 다음과 같은 폴더 구조일 수 있습니다.  
   
- `CustomBootstrapperPackage`  
+  `CustomBootstrapperPackage`  
   
- `product.xml`  
+  `product.xml`  
   
- `CustomBootstrapper.msi`  
+  `CustomBootstrapper.msi`  
   
- `de`  
+  `de`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `en`  
+  `en`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `ja`  
+  `ja`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- 마지막으로 재배포 가능 파일을 부트스트래퍼 폴더 위치에 복사합니다. 자세한 내용은 [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md)을 참조하세요.  
+  마지막으로 재배포 가능 파일을 부트스트래퍼 폴더 위치에 복사합니다. 자세한 내용은 [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md)을 참조하세요.  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e90fb2d4ce258560c3588a6dd9b4379c76441773
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c8786d53e1ba3001bc882580c03005377d476a47
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918976"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 인덱스를 사용 하 여 기호를 검색합니다.  
@@ -35,13 +35,13 @@ HRESULT Item (
   
 #### <a name="parameters"></a>매개 변수  
  인덱스입니다.  
- [in] 인덱스는 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 검색할 개체입니다. 인덱스는 0에서 범위에 `count`-1로, 여기서 `count` 에서 반환 되는 [idiaenumsymbols:: Get_count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) 메서드.  
+ [in] 인덱스를 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 검색 된 개체입니다. 인덱스는 0에서 범위 `count`-1로, 여기서 `count` 반환한를 [idiaenumsymbols:: Get_count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) 메서드.  
   
  기호  
  [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 원하는 기호를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   

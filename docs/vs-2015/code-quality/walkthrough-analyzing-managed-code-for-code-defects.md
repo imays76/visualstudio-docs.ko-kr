@@ -18,12 +18,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912892"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>연습: 관리 코드의 코드 오류 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,81 +98,81 @@ ms.locfileid: "49217487"
   
 4.  경고를 해결 하려면 다음을 사용 합니다.  
   
--   [CA1014: CLSCompliantAttribute로 어셈블리 표시](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: '데모'를 CLSCompliantAttribute로 표시 해야 하 고 해당 값은 true 여야 합니다.  
+- [CA1014: CLSCompliantAttribute로 어셈블리 표시](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: '데모'를 CLSCompliantAttribute로 표시 해야 하 고 해당 값은 true 여야 합니다.  
   
-    -   코드를 추가 `using``System;` AssemblyInfo.cs 파일에 있습니다.  
+  -   코드를 추가 `using``System;` AssemblyInfo.cs 파일에 있습니다.  
   
-         다음으로 코드를 추가 `[assembly: CLSCompliant(true)]` AssemblyInfo.cs 파일의 끝에 있습니다.  
+       다음으로 코드를 추가 `[assembly: CLSCompliant(true)]` AssemblyInfo.cs 파일의 끝에 있습니다.  
   
-         프로젝트를 다시 빌드합니다.  
+       프로젝트를 다시 빌드합니다.  
   
--   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 공용 demo(String)  
+- [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 공용 demo(String)  
   
-    -   생성자를 추가 합니다 `public demo (String s) : base(s) { }` 클래스에 `demo`입니다.  
+  -   생성자를 추가 합니다 `public demo (String s) : base(s) { }` 클래스에 `demo`입니다.  
   
--   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 공용 데모 (String, 예외)  
+- [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 공용 데모 (String, 예외)  
   
-    -   생성자를 추가 합니다 `public demo (String s, Exception e) : base(s, e) { }` 클래스에 `demo`입니다.  
+  -   생성자를 추가 합니다 `public demo (String s, Exception e) : base(s, e) { }` 클래스에 `demo`입니다.  
   
--   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 데모 (SerializationInfo, StreamingContext) 보호  
+- [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 데모 (SerializationInfo, StreamingContext) 보호  
   
-    -   코드를 추가 `using System.Runtime.Serialization;` Class1.cs 파일의 시작 부분에 있습니다.  
+  -   코드를 추가 `using System.Runtime.Serialization;` Class1.cs 파일의 시작 부분에 있습니다.  
   
-         그런 다음 생성자를 추가 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
+       그런 다음 생성자를 추가 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
   
-         프로젝트를 다시 빌드합니다.  
+       프로젝트를 다시 빌드합니다.  
   
--   [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 공용 demo()  
+- [CA1032: 표준 예외 생성자를 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design:이 클래스에 다음 생성자를 추가 합니다: 공용 demo()  
   
-    -   생성자를 추가 합니다 `public demo () : base() { }` 클래스에 `demo` **합니다.**  
+  -   생성자를 추가 합니다 `public demo () : base() { }` 클래스에 `demo` **합니다.**  
   
-         프로젝트를 다시 빌드합니다.  
+       프로젝트를 다시 빌드합니다.  
   
--   [CA1709: 식별자는 대/소문자 올바르게](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'TestCode'로 변경 하 여 네임 스페이스 이름 'testCode'의 대/소문자를 수정 합니다.  
+- [CA1709: 식별자는 대/소문자 올바르게](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'TestCode'로 변경 하 여 네임 스페이스 이름 'testCode'의 대/소문자를 수정 합니다.  
   
-    -   네임 스페이스의 대/소문자를 변경 `testCode` 에 `TestCode`입니다.  
+  -   네임 스페이스의 대/소문자를 변경 `testCode` 에 `TestCode`입니다.  
   
--   [CA1709: 식별자는 대/소문자 올바르게](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: '데모'로 변경 하 여 형식 이름 '데모'의 대/소문자를 수정 합니다.  
+- [CA1709: 식별자는 대/소문자 올바르게](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: '데모'로 변경 하 여 형식 이름 '데모'의 대/소문자를 수정 합니다.  
   
-    -   멤버의 이름을 변경 `Demo`합니다.  
+  -   멤버의 이름을 변경 `Demo`합니다.  
   
--   [CA1709: 식별자는 대/소문자 올바르게](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Item'로 변경 하 여 멤버 이름 'item'의 대/소문자를 수정 합니다.  
+- [CA1709: 식별자는 대/소문자 올바르게](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Item'로 변경 하 여 멤버 이름 'item'의 대/소문자를 수정 합니다.  
   
-    -   멤버의 이름을 변경 `Item`합니다.  
+  -   멤버의 이름을 변경 `Item`합니다.  
   
--   [: Ca1710 식별자에는 올바른 접미사 사용 해야 합니다.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: '예외' 종료 'testCode.demo' 이름 바꾸기.  
+- [: Ca1710 식별자에는 올바른 접미사 사용 해야 합니다.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: '예외' 종료 'testCode.demo' 이름 바꾸기.  
   
-    -   클래스 및 해당 생성자의 이름을 변경 `DemoException`합니다.  
+  -   클래스 및 해당 생성자의 이름을 변경 `DemoException`합니다.  
   
--   [: Ca2210 어셈블리에는 올바른 강력한 이름을 사용 해야 합니다.](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): 'ManagedDemo' 강력한 이름 키를 사용 하 여 로그인 합니다.  
+- [: Ca2210 어셈블리에는 올바른 강력한 이름을 사용 해야 합니다.](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): 'ManagedDemo' 강력한 이름 키를 사용 하 여 로그인 합니다.  
   
-    -   에 **프로젝트** 메뉴에서 클릭 **ManagedDemo 속성**합니다.  
+  -   에 **프로젝트** 메뉴에서 클릭 **ManagedDemo 속성**합니다.  
   
-         프로젝트 속성이 표시 됩니다.  
+       프로젝트 속성이 표시 됩니다.  
   
-         클릭 **서명**합니다.  
+       클릭 **서명**합니다.  
   
-         선택 된 **어셈블리에 서명할** 확인란 합니다.  
+       선택 된 **어셈블리에 서명할** 확인란 합니다.  
   
-         에 **강력한 이름 키 파일 선택** 목록에서  **\<새로 만들기... >** 합니다.  
+       에 **강력한 이름 키 파일 선택** 목록에서  **\<새로 만들기... >** 합니다.  
   
-         합니다 **강력한 이름 키 만들기** 대화 상자가 나타납니다.  
+       합니다 **강력한 이름 키 만들기** 대화 상자가 나타납니다.  
   
-         에 **키 파일 이름**, TestKey를 입력 합니다.  
+       에 **키 파일 이름**, TestKey를 입력 합니다.  
   
-         암호를 입력 한 다음 클릭 **확인**합니다.  
+       암호를 입력 한 다음 클릭 **확인**합니다.  
   
-         에 **파일** 메뉴에서 클릭 **선택한 항목 저장**, 한 다음 속성 페이지를 닫습니다.  
+       에 **파일** 메뉴에서 클릭 **선택한 항목 저장**, 한 다음 속성 페이지를 닫습니다.  
   
-         프로젝트를 다시 빌드합니다.  
+       프로젝트를 다시 빌드합니다.  
   
--   [CA2237: ISerializable 형식을 SerializableAttribute로 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: ISerializable을 구현 하는이 형식의 '데모' 형식으로 [Serializable] 특성을 추가 합니다.  
+- [CA2237: ISerializable 형식을 SerializableAttribute로 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: ISerializable을 구현 하는이 형식의 '데모' 형식으로 [Serializable] 특성을 추가 합니다.  
   
-    -   추가 된 `[Serializable ()]` 특성을 클래스 `demo`합니다.  
+  -   추가 된 `[Serializable ()]` 특성을 클래스 `demo`합니다.  
   
-         프로젝트를 다시 빌드합니다.  
+       프로젝트를 다시 빌드합니다.  
   
- 변경을 완료한 후 Class1.cs 파일은 다음과 같습니다.  
+  변경을 완료한 후 Class1.cs 파일은 다음과 같습니다.  
   
 ```  
 //CodeAnalysisManagedDemo  
@@ -202,17 +202,17 @@ namespace TestCode
   
 #### <a name="to-exclude-code-defect-warnings"></a>코드 오류 경고를 제외 하려면  
   
-1.  나머지 경고 각각에 대해 다음을 수행합니다.  
+1. 나머지 경고 각각에 대해 다음을 수행합니다.  
   
-    1.  코드 분석 창에서 경고를 선택합니다.  
+   1. 코드 분석 창에서 경고를 선택합니다.  
   
-    2.  선택 **동작**, 선택한 **메시지 표시 안 함**를 선택한 후 **프로젝트 비 표시 오류 파일의**합니다.  
+   2. 선택 **동작**, 선택한 **메시지 표시 안 함**를 선택한 후 **프로젝트 비 표시 오류 파일의**합니다.  
   
-     자세한 내용은 참조 하세요. [방법: 메뉴 항목을 사용 하 여 경고 표시 안 함](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      자세한 내용은 참조 하세요. [방법: 메뉴 항목을 사용 하 여 경고 표시 안 함](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
-2.  프로젝트를 다시 빌드합니다.  
+2. 프로젝트를 다시 빌드합니다.  
   
-     프로젝트 경고 또는 오류 없이 빌드됩니다.
+    프로젝트 경고 또는 오류 없이 빌드됩니다.
 
 
 

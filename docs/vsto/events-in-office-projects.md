@@ -35,12 +35,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10cd0e1740aa53902d266ed0af6820b500a453e9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949684"
 ---
 # <a name="events-in-office-projects"></a>Office 프로젝트의 이벤트
   각 Office 프로젝트 템플릿은 몇 가지 이벤트 처리기를 자동으로 생성합니다. 문서 수준 사용자 지정의 이벤트 처리기는 VSTO 추가 기능의 이벤트 처리기와 약간 다릅니다.  
@@ -51,7 +51,7 @@ ms.locfileid: "34448716"
  Visual Studio에서는 문서 수준 사용자 지정의 신규 또는 기존 문서나 워크시트 뒤에서 생성된 코드를 제공합니다. 이 코드에서는 두 가지 이벤트인 **Startup** 및 **Shutdown**을 발생시킵니다.  
   
 ### <a name="startup-event"></a>Startup 이벤트  
- **Startup** 이벤트는 문서가 실행 중이고 어셈블리의 모든 초기화 코드가 실행된 후 각 호스트 항목(문서, 통합 문서 또는 워크시트)에 대해 발생합니다. 이 이벤트는 코드가 실행되고 있는 클래스의 생성자에서 실행될 마지막 항목입니다. 호스트 항목에 대 한 자세한 내용은 참조 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
+ **Startup** 이벤트는 문서가 실행 중이고 어셈블리의 모든 초기화 코드가 실행된 후 각 호스트 항목(문서, 통합 문서 또는 워크시트)에 대해 발생합니다. 이 이벤트는 코드가 실행되고 있는 클래스의 생성자에서 실행될 마지막 항목입니다. 호스트 항목에 대 한 자세한 내용은 참조 하세요. [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)합니다.  
   
  문서 수준 프로젝트를 만드는 경우 Visual Studio에서는 생성된 코드 파일에서 **Startup** 이벤트에 대한 이벤트 처리기를 만듭니다.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "34448716"
  다음 코드 예제에서는 Excel용 문서 수준 프로젝트의 기본 이벤트 처리기를 보여 줍니다.  
   
 > [!NOTE]  
->  다음 코드 예제에서는 `Sheet1` 클래스의 이벤트 처리기를 보여 줍니다. 다른 호스트 항목 클래스의 이벤트 처리기 이름은 클래스 이름에 해당합니다. 예를 들어 `Sheet2` 클래스에서 **Startup** 이벤트 처리기의 이름은 `Sheet2_Startup`을 발생시킵니다. 에 `ThisWorkbook` 클래스는 **시작** 이벤트 처리기의 이름은 `ThisWorkbook_Startup`합니다.  
+>  다음 코드 예제에서는 `Sheet1` 클래스의 이벤트 처리기를 보여 줍니다. 다른 호스트 항목 클래스의 이벤트 처리기 이름은 클래스 이름에 해당합니다. 예를 들어 `Sheet2` 클래스에서 **Startup** 이벤트 처리기의 이름은 `Sheet2_Startup`을 발생시킵니다. 에 `ThisWorkbook` 클래스를 **시작** 이벤트 처리기의 이름은 `ThisWorkbook_Startup`합니다.  
   
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]  
@@ -106,29 +106,29 @@ ms.locfileid: "34448716"
 ### <a name="order-of-events-in-document-level-excel-projects"></a>문서 수준 Excel 프로젝트의 이벤트 순서  
  Excel 프로젝트의 **Startup** 이벤트 처리기는 다음 순서로 호출됩니다.  
   
-1.  `ThisWorkbook_Startup`.  
+1. `ThisWorkbook_Startup`.  
   
-2.  `Sheet1_Startup`.  
+2. `Sheet1_Startup`.  
   
-3.  `Sheet2_Startup`.  
+3. `Sheet2_Startup`.  
   
-4.  `Sheet3_Startup`.  
+4. `Sheet3_Startup`.  
   
-5.  순서에 있는 다른 시트  
+5. 순서에 있는 다른 시트  
   
- 통합 문서 솔루션의 **Shutdown** 이벤트 처리기는 다음 순서로 호출됩니다.  
+   통합 문서 솔루션의 **Shutdown** 이벤트 처리기는 다음 순서로 호출됩니다.  
   
-1.  `ThisWorkbook_Shutdown`.  
+6. `ThisWorkbook_Shutdown`.  
   
-2.  `Sheet1_Shutdown`.  
+7. `Sheet1_Shutdown`.  
   
-3.  `Sheet2_Shutdown`.  
+8. `Sheet2_Shutdown`.  
   
-4.  `Sheet3_Shutdown`.  
+9. `Sheet3_Shutdown`.  
   
-5.  순서에 있는 다른 시트  
+10. 순서에 있는 다른 시트  
   
- 순서는 프로젝트가 컴파일될 때 결정됩니다. 사용자는 런타임에 시트를 다시 정렬, 하는 경우 다음에 통합 문서를 열거나 닫을 이벤트가 순서는 변경 되지 않습니다.  
+    순서는 프로젝트가 컴파일될 때 결정됩니다. 사용자가 런타임에 시트를 재배열 하더라도, 이벤트가 다음 통합 문서를 열거나 닫을 때 발생 하는 순서는 변경 되지 않습니다.  
   
 ## <a name="vsto-add-in-projects"></a>VSTO 추가 기능 프로젝트  
  Visual Studio에서는 VSTO 추가 기능에서 생성된 코드를 제공합니다. 이 코드에서는 두 가지 이벤트인 <xref:Microsoft.Office.Tools.AddInBase.Startup> 및 <xref:Microsoft.Office.Tools.AddInBase.Shutdown>을 발생시킵니다.  
@@ -138,9 +138,9 @@ ms.locfileid: "34448716"
   
  VSTO 추가 기능이 `ThisAddIn_Startup` 메서드를 재정의하지 않는 한 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 이벤트 처리기의 코드는 실행할 첫 번째 사용자 코드입니다. 이 경우에 `ThisAddIn_Startup` 이벤트 처리기는 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>뒤에 호출됩니다.  
   
- 코드를 추가 하지는 `ThisAdd-In_Startup` 이벤트 처리기 코드를 실행 하려면 문서를 열어야 하는 경우. 대신 사용자가 문서를 만들거나 열 때 Office 응용 프로그램에서 발생하는 이벤트에 해당 코드를 추가합니다. 자세한 내용은 참조 [Office 응용 프로그램이 시작 될 때 문서 액세스](../vsto/programming-vsto-add-ins.md#AccessingDocuments)합니다.  
+ 코드를 추가 하지는 `ThisAdd-In_Startup` 이벤트 처리기 코드는 문서를 열어야 하는 데 필요한 경우. 대신 사용자가 문서를 만들거나 열 때 Office 응용 프로그램에서 발생하는 이벤트에 해당 코드를 추가합니다. 자세한 내용은 [문서를 시작 하면 Office 응용 프로그램 액세스](../vsto/programming-vsto-add-ins.md#AccessingDocuments)합니다.  
   
- VSTO 추가 기능의 시작 시퀀스에 대 한 자세한 내용은 참조 [아키텍처의 VSTO 추가 기능](../vsto/architecture-of-vsto-add-ins.md)합니다.  
+ VSTO 추가 기능의 시작 시퀀스에 대 한 자세한 내용은 참조 [Architecture of VSTO add-ins](../vsto/architecture-of-vsto-add-ins.md)합니다.  
   
 ### <a name="shutdown-event"></a>Shutdown 이벤트  
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트는 코드가 로드된 응용 프로그램 도메인이 언로드되려고 할 때 발생합니다. 이 이벤트는 생성된 코드 파일의 `ThisAddIn_Shutdown` 메서드에서 처리됩니다. 이 이벤트 처리기는 VSTO 추가 기능이 언로드될 때 실행할 마지막 사용자 코드입니다.  
@@ -153,7 +153,7 @@ ms.locfileid: "34448716"
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 개체의 <xref:Microsoft.Office.Interop.Outlook.Explorer> 이벤트  
   
 > [!NOTE]  
->  레지스트리를 수정하여 Outlook이 종료될 때 Outlook에서 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트를 강제로 발생시킬 수 있습니다. 그러나 관리자가 이 설정을 되돌리는 경우 `ThisAddIn_Shutdown` 메서드에 추가하는 모든 코드가 Outlook이 종료될 때 더 이상 실행되지 않습니다. 자세한 내용은 참조 [Outlook 2010의 종료 변경](http://go.microsoft.com/fwlink/?LinkID=184614)합니다.  
+>  레지스트리를 수정하여 Outlook이 종료될 때 Outlook에서 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트를 강제로 발생시킬 수 있습니다. 그러나 관리자가 이 설정을 되돌리는 경우 `ThisAddIn_Shutdown` 메서드에 추가하는 모든 코드가 Outlook이 종료될 때 더 이상 실행되지 않습니다. 자세한 내용은 [Outlook 2010의 종료 변경](http://go.microsoft.com/fwlink/?LinkID=184614)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [Office 솔루션 개발](../vsto/developing-office-solutions.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871292"
 ---
 # <a name="help-viewer-administrator-guide"></a>도움말 뷰어 관리자 가이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ ms.locfileid: "49256960"
   
  요구 사항:  
   
--   클라이언트 컴퓨터가 인터넷에 액세스할 수 있어야 합니다.  
+- 클라이언트 컴퓨터가 인터넷에 액세스할 수 있어야 합니다.  
   
--   사용자가 로컬 도움말 콘텐츠가 설치된 후 해당 콘텐츠를 업데이트, 추가 또는 설치하려면 관리자 권한을 갖고 있어야 합니다.  
+- 사용자가 로컬 도움말 콘텐츠가 설치된 후 해당 콘텐츠를 업데이트, 추가 또는 설치하려면 관리자 권한을 갖고 있어야 합니다.  
   
- 주의 사항:  
+  주의 사항:  
   
--   도움말에 대한 기본 원본은 여전히 온라인입니다.  
+- 도움말에 대한 기본 원본은 여전히 온라인입니다.  
   
-    > [!TIP]
-    >  HKEY_LOCAL_MACHINE\SoftwareHKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 레지스트리 키를 수정하여 도움말에 대한 기본 원본을 변경할 수 있습니다. 자세한 내용은 [도움말 콘텐츠 관리자 재정의](../ide/help-content-manager-overrides.md)를 참조하세요.  
+  > [!TIP]
+  >  HKEY_LOCAL_MACHINE\SoftwareHKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 레지스트리 키를 수정하여 도움말에 대한 기본 원본을 변경할 수 있습니다. 자세한 내용은 [도움말 콘텐츠 관리자 재정의](../ide/help-content-manager-overrides.md)를 참조하세요.  
   
--   클라이언트에서 Visual Studio를 처음 시작할 때 기본 도움말 콘텐츠를 설치하라는 메시지가 계속 표시됩니다. HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 레지스트리 키를 수정하여 이 메시지가 표시되지 않도록 설정할 수 있습니다.  
+- 클라이언트에서 Visual Studio를 처음 시작할 때 기본 도움말 콘텐츠를 설치하라는 메시지가 계속 표시됩니다. HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 레지스트리 키를 수정하여 이 메시지가 표시되지 않도록 설정할 수 있습니다.  
   
 ### <a name="example"></a>예제  
  다음 예제에서는 클라이언트 컴퓨터에 Visual Studio에 대한 영어 콘텐츠를 설치합니다.  
@@ -78,47 +78,47 @@ ms.locfileid: "49256960"
   
  요구 사항:  
   
--   콘텐츠 집합을 설치하는 컴퓨터에서 인터넷에 액세스할 수 있어야 합니다.  
+- 콘텐츠 집합을 설치하는 컴퓨터에서 인터넷에 액세스할 수 있어야 합니다.  
   
--   사용자가 로컬 도움말 콘텐츠가 설치된 후 해당 콘텐츠를 업데이트, 추가 또는 설치하려면 관리자 권한을 갖고 있어야 합니다.  
+- 사용자가 로컬 도움말 콘텐츠가 설치된 후 해당 콘텐츠를 업데이트, 추가 또는 설치하려면 관리자 권한을 갖고 있어야 합니다.  
   
-    > [!TIP]
-    >  사용자에게 관리자 권한이 없는 경우 도움말 뷰어에서 콘텐츠 관리 탭을 사용하지 않도록 설정하는 것이 좋습니다. 자세한 내용은 [도움말 콘텐츠 관리자 재정의](../ide/help-content-manager-overrides.md)를 참조하세요.  
+  > [!TIP]
+  >  사용자에게 관리자 권한이 없는 경우 도움말 뷰어에서 콘텐츠 관리 탭을 사용하지 않도록 설정하는 것이 좋습니다. 자세한 내용은 [도움말 콘텐츠 관리자 재정의](../ide/help-content-manager-overrides.md)를 참조하세요.  
   
- 주의 사항:  
+  주의 사항:  
   
--   사용자에게 관리자 권한이 없는 경우 도움말 뷰어에서 콘텐츠 관리 탭을 사용하지 않도록 설정하는 것이 좋습니다. 자세한 내용은 [도움말 콘텐츠 관리자 재정의](../ide/help-content-manager-overrides.md)를 참조하세요.  
+- 사용자에게 관리자 권한이 없는 경우 도움말 뷰어에서 콘텐츠 관리 탭을 사용하지 않도록 설정하는 것이 좋습니다. 자세한 내용은 [도움말 콘텐츠 관리자 재정의](../ide/help-content-manager-overrides.md)를 참조하세요.  
   
--   도움말에 대한 기본 원본은 여전히 온라인입니다.  
+- 도움말에 대한 기본 원본은 여전히 온라인입니다.  
   
--   클라이언트에서 Visual Studio를 처음 시작할 때 기본 도움말 콘텐츠를 설치하라는 메시지가 계속 표시됩니다. 자세한 내용은 [도움말 콘텐츠 관리자 재정의](../ide/help-content-manager-overrides.md)를 참조하세요.  
+- 클라이언트에서 Visual Studio를 처음 시작할 때 기본 도움말 콘텐츠를 설치하라는 메시지가 계속 표시됩니다. 자세한 내용은 [도움말 콘텐츠 관리자 재정의](../ide/help-content-manager-overrides.md)를 참조하세요.  
   
 ### <a name="create-the-content-set"></a>콘텐츠 집합 만들기  
  기본 콘텐츠 집합을 만들기 전에 먼저 대상 컴퓨터에서 모든 로컬 Visual Studio 콘텐츠를 제거해야 합니다.  
   
 ##### <a name="to-uninstall-local-help"></a>로컬 도움말을 제거하려면  
   
-1.  도움말 뷰어에서 **콘텐츠 관리** 탭을 선택합니다.  
+1. 도움말 뷰어에서 **콘텐츠 관리** 탭을 선택합니다.  
   
-2.  아래 **사용 가능한 설명서**, Visual Studio 문서 집합으로 이동 합니다.  
+2. 아래 **사용 가능한 설명서**, Visual Studio 문서 집합으로 이동 합니다.  
   
-3.  각 하위 항목 옆의 **제거**를 선택합니다.  
+3. 각 하위 항목 옆의 **제거**를 선택합니다.  
   
-4.  선택할 **시작** 제거 하려면  
+4. 선택할 **시작** 제거 하려면  
   
-5.  이동할 *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 폴더 catalogType.xml 파일만 포함 되어 있는지 확인 합니다.  
+5. 이동할 *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 폴더 catalogType.xml 파일만 포함 되어 있는지 확인 합니다.  
   
- 이전에 설치한 로컬 Visual Studio 도움말 콘텐츠를 모두 제거하면 기본 콘텐츠 집합을 다운로드할 준비가 됩니다.  
+   이전에 설치한 로컬 Visual Studio 도움말 콘텐츠를 모두 제거하면 기본 콘텐츠 집합을 다운로드할 준비가 됩니다.  
   
 ##### <a name="to-download-the-content"></a>콘텐츠를 다운로드하려면  
   
-1.  도움말 뷰어에서 **콘텐츠 관리** 탭을 선택합니다.  
+1. 도움말 뷰어에서 **콘텐츠 관리** 탭을 선택합니다.  
   
-2.  아래 **사용 가능한 설명서**를 다운로드 하 고 선택 하려는 설명서 집합으로 이동 **추가**합니다.  
+2. 아래 **사용 가능한 설명서**를 다운로드 하 고 선택 하려는 설명서 집합으로 이동 **추가**합니다.  
   
-3.  **시작**을 선택합니다.  
+3. **시작**을 선택합니다.  
   
- 이제 클라이언트 컴퓨터에 배포할 수 있도록 콘텐츠를 패키지해야 합니다.  
+   이제 클라이언트 컴퓨터에 배포할 수 있도록 콘텐츠를 패키지해야 합니다.  
   
 ##### <a name="to-package-the-content"></a>콘텐츠를 패키지하려면  
   

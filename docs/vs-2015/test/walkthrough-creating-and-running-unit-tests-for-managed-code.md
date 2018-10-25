@@ -19,12 +19,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e50cfc446bf13e93258e28877f9706a3ccd86ae7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874503"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,17 +39,17 @@ ms.locfileid: "49270636"
   
  [테스트 클래스 만들기](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_test_class)  
   
--   [테스트 클래스 요구 사항](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
+- [테스트 클래스 요구 사항](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
   
- [첫 번째 테스트 메서드 만들기](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_first_test_method)  
+  [첫 번째 테스트 메서드 만들기](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_first_test_method)  
   
--   [테스트 메서드 요구 사항](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
+- [테스트 메서드 요구 사항](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
   
- [테스트 빌드 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)  
+  [테스트 빌드 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)  
   
- [코드를 수정하고 테스트 다시 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
+  [코드를 수정하고 테스트 다시 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
   
- [단위 테스트를 사용하여 코드 개선](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
+  [단위 테스트를 사용하여 코드 개선](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
 >  이 연습에서는 관리 코드에 Microsoft 단위 테스트 프레임워크를 사용합니다. 테스트 탐색기에서는 테스트 탐색기용 어댑터가 포함된 타사 단위 테스트 프레임워크의 테스트도 실행할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.  
@@ -63,37 +63,37 @@ ms.locfileid: "49270636"
   
 ##  <a name="BKMK_Prepare_the_walkthrough"></a> 연습 준비  
   
-1.  Visual Studio를 엽니다.  
+1. Visual Studio를 엽니다.  
   
-2.  **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트**를 클릭합니다.  
+2. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-     **새 프로젝트** 대화 상자가 나타납니다.  
+    **새 프로젝트** 대화 상자가 나타납니다.  
   
-3.  **설치된 템플릿**에서 **Visual C#** 을 클릭합니다.  
+3. **설치된 템플릿**에서 **Visual C#** 을 클릭합니다.  
   
-4.  응용 프로그램 형식 목록에서 **클래스 라이브러리**를 클릭합니다.  
+4. 응용 프로그램 형식 목록에서 **클래스 라이브러리**를 클릭합니다.  
   
-5.  In the **이름** 상자에 `Bank` 를 가리킨 다음 **확인**을 참조하세요.  
+5. In the **이름** 상자에 `Bank` 를 가리킨 다음 **확인**을 참조하세요.  
   
-    > [!NOTE]
-    >  "Bank"라는 이름이 이미 사용되고 있으면 프로젝트에 대해 다른 이름을 선택합니다.  
+   > [!NOTE]
+   >  "Bank"라는 이름이 이미 사용되고 있으면 프로젝트에 대해 다른 이름을 선택합니다.  
   
-     새 Bank 프로젝트가 만들어져 솔루션 탐색기에 표시되고 코드 편집기에 Class1.cs 파일이 열립니다.  
+    새 Bank 프로젝트가 만들어져 솔루션 탐색기에 표시되고 코드 편집기에 Class1.cs 파일이 열립니다.  
   
-    > [!NOTE]
-    >  Class1.cs 파일이 코드 편집기에서 열리지 않으면 솔루션 탐색기에서 Class1.cs 파일을 두 번 클릭하여 엽니다.  
+   > [!NOTE]
+   >  Class1.cs 파일이 코드 편집기에서 열리지 않으면 솔루션 탐색기에서 Class1.cs 파일을 두 번 클릭하여 엽니다.  
   
-6.  [단위 테스트를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-unit-tests.md)에서 소스 코드를 복사합니다.  
+6. [단위 테스트를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-unit-tests.md)에서 소스 코드를 복사합니다.  
   
-7.  Class1.cs의 원래 내용을 [단위 테스트를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-unit-tests.md)의 코드로 바꿉니다.  
+7. Class1.cs의 원래 내용을 [단위 테스트를 만들기 위한 샘플 프로젝트](../test/sample-project-for-creating-unit-tests.md)의 코드로 바꿉니다.  
   
-8.  파일을 BankAccount.cs로 저장합니다.  
+8. 파일을 BankAccount.cs로 저장합니다.  
   
 9. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.  
   
- 이제 Bank라는 프로젝트가 준비되었습니다. 이 프로젝트에는 테스트할 소스 코드와 테스트에 사용할 도구가 들어 있습니다. Bank에 대한 네임스페이스 **BankAccountNS**에는 다음 절차에서 테스트할 메서드가 포함된 공용 클래스인 **BankAccount**가 있습니다.  
+   이제 Bank라는 프로젝트가 준비되었습니다. 이 프로젝트에는 테스트할 소스 코드와 테스트에 사용할 도구가 들어 있습니다. Bank에 대한 네임스페이스 **BankAccountNS**에는 다음 절차에서 테스트할 메서드가 포함된 공용 클래스인 **BankAccount**가 있습니다.  
   
- 신속한 시작으로 사용자는 `Debit` 메서드에 집중합니다. 현금 인출 시 Debit 메서드가 호출되며 다음 코드가 포함됩니다.  
+   신속한 시작으로 사용자는 `Debit` 메서드에 집중합니다. 현금 인출 시 Debit 메서드가 호출되며 다음 코드가 포함됩니다.  
   
 ```csharp  
 // method under test  
@@ -171,52 +171,52 @@ using BankAccountNS;
 ###  <a name="BKMK_Test_class_requirements"></a> 테스트 클래스 요구 사항  
  테스트 클래스의 최소 요구 사항은 다음과 같습니다.  
   
--   `[TestClass]` 특성은 테스트 탐색기에서 실행하려는 단위 테스트 메서드가 포함된 모든 클래스의 관리 코드에 대한 Microsoft 단위 테스트 프레임워크에 필요합니다.  
+- `[TestClass]` 특성은 테스트 탐색기에서 실행하려는 단위 테스트 메서드가 포함된 모든 클래스의 관리 코드에 대한 Microsoft 단위 테스트 프레임워크에 필요합니다.  
   
--   테스트 탐색기에서 실행하려는 각 테스트 메서드에는 `[TestMethod]`특성이 있어야 합니다.  
+- 테스트 탐색기에서 실행하려는 각 테스트 메서드에는 `[TestMethod]`특성이 있어야 합니다.  
   
- `[TestClass]` 특성이 없는 단위 테스트 프로젝트에 다른 클래스를 사용하거나 `[TestMethod]` 특성이 없는 테스트 클래스에 다른 메서드를 사용할 수 있습니다. 테스트 메서드에서 이러한 다른 클래스와 메서드를 사용할 수 있습니다.  
+  `[TestClass]` 특성이 없는 단위 테스트 프로젝트에 다른 클래스를 사용하거나 `[TestMethod]` 특성이 없는 테스트 클래스에 다른 메서드를 사용할 수 있습니다. 테스트 메서드에서 이러한 다른 클래스와 메서드를 사용할 수 있습니다.  
   
 ##  <a name="BKMK_Create_the_first_test_method"></a> 첫 번째 테스트 메서드 만들기  
  이 절차에서는 단위 테스트 메서드를 작성하여 `Debit` 클래스의 `BankAccount` 메서드 동작을 확인합니다. 이 메서드가 위에 나열되어 있습니다.  
   
  테스트 중인 메서드를 분석한 결과, 세 가지 이상의 동작을 확인하기로 결정했습니다.  
   
-1.  메서드에서 throw [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) 대변 금액이 잔액 보다 큰 경우.  
+1. 메서드에서 throw [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) 대변 금액이 잔액 보다 큰 경우.  
   
-2.  또한 대변 금액이 0보다 작을 경우에도 `ArgumentOutOfRangeException` 을 발생시킵니다.  
+2. 또한 대변 금액이 0보다 작을 경우에도 `ArgumentOutOfRangeException` 을 발생시킵니다.  
   
-3.  1)과 2)의 검사가 충족될 경우 이 메서드는 계정 잔액에서 금액을 뺍니다.  
+3. 1)과 2)의 검사가 충족될 경우 이 메서드는 계정 잔액에서 금액을 뺍니다.  
   
- 첫 번째 테스트에서는 유효 금액(계정 잔액보다 작고 0보다 큰 값)이 계정으로부터 올바른 금액을 인출하는지 확인합니다.  
+   첫 번째 테스트에서는 유효 금액(계정 잔액보다 작고 0보다 큰 값)이 계정으로부터 올바른 금액을 인출하는지 확인합니다.  
   
 #### <a name="to-create-a-test-method"></a>테스트 메서드를 만들려면  
   
-1.  using `BankAccountNS;` 문을 BankAccountTests.cs 파일에 추가합니다.  
+1. using `BankAccountNS;` 문을 BankAccountTests.cs 파일에 추가합니다.  
   
-2.  다음 메서드를 `BankAccountTests` 클래스에 추가합니다.  
+2. 다음 메서드를 `BankAccountTests` 클래스에 추가합니다.  
   
-    ```csharp  
-    // unit test code  
-    [TestMethod]  
-    public void Debit_WithValidAmount_UpdatesBalance()  
-    {  
-        // arrange  
-        double beginningBalance = 11.99;  
-        double debitAmount = 4.55;  
-        double expected = 7.44;  
-        BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);  
+   ```csharp  
+   // unit test code  
+   [TestMethod]  
+   public void Debit_WithValidAmount_UpdatesBalance()  
+   {  
+       // arrange  
+       double beginningBalance = 11.99;  
+       double debitAmount = 4.55;  
+       double expected = 7.44;  
+       BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);  
   
-        // act  
-        account.Debit(debitAmount);  
+       // act  
+       account.Debit(debitAmount);  
   
-        // assert  
-        double actual = account.Balance;  
-        Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");  
-    }  
-    ```  
+       // assert  
+       double actual = account.Balance;  
+       Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");  
+   }  
+   ```  
   
- 이 메서드는 상당히 간단합니다. 기초 잔액으로 새 `BankAccount` 개체를 만든 다음 유효한 금액을 인출합니다. 관리 코드 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> 메서드에 Microsoft 단위 테스트 프레임워크를 사용하여 마감 잔액이 기대한 것과 같은지 확인합니다.  
+   이 메서드는 상당히 간단합니다. 기초 잔액으로 새 `BankAccount` 개체를 만든 다음 유효한 금액을 인출합니다. 관리 코드 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> 메서드에 Microsoft 단위 테스트 프레임워크를 사용하여 마감 잔액이 기대한 것과 같은지 확인합니다.  
   
 ###  <a name="BKMK_Test_method_requirements"></a> 테스트 메서드 요구 사항  
  테스트 메서드는 다음 요구 사항을 충족해야 합니다.  
@@ -242,7 +242,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> 코드를 수정하고 테스트 다시 실행  
  **테스트 결과 분석**  
   
- 테스트 결과에 실패를 설명하는 메시지가 포함됩니다. `AreEquals` 메서드의 경우 메시지에 예상 값(**Expected\<*XXX*>** 매개 변수)과 실제 값(**Actual\<*YYY*>** 매개 변수)이 표시됩니다. 기초 잔액보다 줄어든 잔액을 예상했지만, 인출액만큼 늘어났습니다.  
+ 테스트 결과에 실패를 설명하는 메시지가 포함됩니다. `AreEquals` 메서드의 경우 메시지에 예상 값(<strong>Expected\<*XXX*></strong> 매개 변수)과 실제 값(**Actual\<*YYY*>** 매개 변수)이 표시됩니다. 기초 잔액보다 줄어든 잔액을 예상했지만, 인출액만큼 늘어났습니다.  
   
  다시 검사한 Debit 코드에 단위 테스트를 통해 버그를 찾는 데 성공한 것으로 나타납니다. 차감해야 할 경우 계정 잔액에 인출금이 추가됩니다.  
   
@@ -271,13 +271,13 @@ m_balance -= amount;
   
  테스트 메서드를 만들어 `Debit` 메서드에서 유효한 금액이 정확하게 차감된 것을 확인한 후에는 원래 분석의 나머지 사례를 살펴볼 수 있습니다.  
   
-1.  이 메서드는 대변 금액이 잔액보다 큰 경우 `ArgumentOutOfRangeException` 을 발생시킵니다.  
+1. 이 메서드는 대변 금액이 잔액보다 큰 경우 `ArgumentOutOfRangeException` 을 발생시킵니다.  
   
-2.  또한 대변 금액이 0보다 작을 경우에도 `ArgumentOutOfRangeException` 을 발생시킵니다.  
+2. 또한 대변 금액이 0보다 작을 경우에도 `ArgumentOutOfRangeException` 을 발생시킵니다.  
   
- **테스트 메서드 만들기**  
+   **테스트 메서드 만들기**  
   
- 테스트 메서드를 만들어 이러한 문제를 해결하려는 첫 번째 시도가 성공할 가능성이 높습니다.  
+   테스트 메서드를 만들어 이러한 문제를 해결하려는 첫 번째 시도가 성공할 가능성이 높습니다.  
   
 ```csharp  
 //unit test method  
@@ -300,21 +300,21 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> 특성을 사용하여 올바른 예외가 throw되었음을 어설션합니다. `ArgumentOutOfRangeException` 을 throw되는 경우가 아니면 이 특성으로 인해 테스트에 실패합니다. 양수 및 음수 `debitAmount` 값을 모두 사용하여 테스트를 실행한 후 금액이 0보다 작은 경우 제네릭 <xref:System.ApplicationException> 을 throw하는 테스트를 위해 메서드를 일시적으로 수정하면 테스트가 올바르게 작동함을 알 수 있습니다. 인출한 금액이 잔액보다 많을 경우를 테스트하려면 다음을 수행해야 합니다.  
   
-1.  `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`라는 새 테스트 메서드를 만듭니다.  
+1. `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`라는 새 테스트 메서드를 만듭니다.  
   
-2.  `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` 의 메서드 본문을 새 메서드로 복사합니다.  
+2. `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` 의 메서드 본문을 새 메서드로 복사합니다.  
   
-3.  `debitAmount` 를 잔액보다 큰 값으로 설정합니다.  
+3. `debitAmount` 를 잔액보다 큰 값으로 설정합니다.  
   
- **테스트 실행**  
+   **테스트 실행**  
   
- `debitAmount` 에 대한 값이 서로 다른 두 메서드를 실행하여 테스트에서 나머지 경우가 적절히 처리되는지 확인할 수 있습니다. 세 테스트를 모두 실행하면 원래 분석의 모든 경우가 올바르게 검사되는지 확인할 수 있습니다.  
+   `debitAmount` 에 대한 값이 서로 다른 두 메서드를 실행하여 테스트에서 나머지 경우가 적절히 처리되는지 확인할 수 있습니다. 세 테스트를 모두 실행하면 원래 분석의 모든 경우가 올바르게 검사되는지 확인할 수 있습니다.  
   
- **분석 계속 수행**  
+   **분석 계속 수행**  
   
- 하지만 마지막 두 테스트 메서드는 다소 문제가 있습니다. 각 테스트를 실행할 때 테스트 중인 코드의 어떤 조건이 throw되는지 확실히 알 수 없습니다. 두 조건을 구분하는 몇 가지 방법이 유용합니다. 즉, 위반한 조건을 확실히 알면 테스트에 대한 자신감이 증가합니다. 이 정보는 테스트 중인 메서드에 의해 throw되는 예외를 처리하는 프로덕션 메커니즘에도 유용할 것입니다. 메서드가 throw할 때 자세한 정보가 생성되면 관련된 모든 문제에 도움이 되지만 `ExpectedException` 특성은 이 정보를 제공할 수 없습니다.  
+   하지만 마지막 두 테스트 메서드는 다소 문제가 있습니다. 각 테스트를 실행할 때 테스트 중인 코드의 어떤 조건이 throw되는지 확실히 알 수 없습니다. 두 조건을 구분하는 몇 가지 방법이 유용합니다. 즉, 위반한 조건을 확실히 알면 테스트에 대한 자신감이 증가합니다. 이 정보는 테스트 중인 메서드에 의해 throw되는 예외를 처리하는 프로덕션 메커니즘에도 유용할 것입니다. 메서드가 throw할 때 자세한 정보가 생성되면 관련된 모든 문제에 도움이 되지만 `ExpectedException` 특성은 이 정보를 제공할 수 없습니다.  
   
- 테스트 중인 메서드를 살펴보면 인수 이름을 매개 변수로 받는 `ArgumentOutOfRangeException` 생성자가 두 조건문 모두에 사용된다는 사실을 알 수 있습니다.  
+   테스트 중인 메서드를 살펴보면 인수 이름을 매개 변수로 받는 `ArgumentOutOfRangeException` 생성자가 두 조건문 모두에 사용된다는 사실을 알 수 있습니다.  
   
 ```csharp  
 throw new ArgumentOutOfRangeException("amount");  
@@ -353,13 +353,13 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
   
  테스트 메서드에서 먼저 `ExpectedException` 특성을 제거합니다. 해당 위치에서 throw된 예외를 catch하고 올바른 조건 문에서 throw되었는지 확인합니다. 그러나 두 옵션 중 하나를 결정하여 나머지 조건을 확인해야 합니다. 예를 들어, `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 메서드에서 다음 중 한 가지 작업을 수행할 수 있습니다.  
   
--   예외의 `ActualValue` 속성( `ArgumentOutOfRangeException` 생성자의 두 번째 매개 변수)이 기초 잔액보다 크다고 어셜션합니다. 이 옵션을 사용하려면 테스트 메서드의 `ActualValue` 변수에 대해 예외의 `beginningBalance` 속성을 테스트해야 하고, `ActualValue` 가 0보다 큰지도 확인해야 합니다.  
+- 예외의 `ActualValue` 속성( `ArgumentOutOfRangeException` 생성자의 두 번째 매개 변수)이 기초 잔액보다 크다고 어셜션합니다. 이 옵션을 사용하려면 테스트 메서드의 `ActualValue` 변수에 대해 예외의 `beginningBalance` 속성을 테스트해야 하고, `ActualValue` 가 0보다 큰지도 확인해야 합니다.  
   
--   메시지(생성자의 세 번째 매개 변수)에 `DebitAmountExceedsBalanceMessage` 가 `BankAccount` 클래스에 정의되어 있음을 어셜션합니다.  
+- 메시지(생성자의 세 번째 매개 변수)에 `DebitAmountExceedsBalanceMessage` 가 `BankAccount` 클래스에 정의되어 있음을 어셜션합니다.  
   
- Microsoft 단위 테스트 프레임워크에서 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 메서드를 사용하면 첫 번째 옵션에서 필요한 계산 없이도 두 번째 옵션을 확인할 수 있습니다.  
+  Microsoft 단위 테스트 프레임워크에서 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 메서드를 사용하면 첫 번째 옵션에서 필요한 계산 없이도 두 번째 옵션을 확인할 수 있습니다.  
   
- `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 를 수정하는 두 번째 시도의 예를 들면 다음과 같습니다.  
+  `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 를 수정하는 두 번째 시도의 예를 들면 다음과 같습니다.  
   
 ```csharp  
 [TestMethod]  
@@ -387,15 +387,15 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
   
  테스트 메서드를 다른 값으로 다시 테스트하면 다음과 같은 사실이 발생합니다.  
   
-1.  `debitAmount` 가 잔액보다 큰 어설션을 사용하여 올바른 오류를 catch하는 경우 `Contains` 어설션이 통과하고, 예외가 무시되어 테스트 메서드를 통과하게 됩니다. 이것이 바로 우리가 원하는 동작입니다.  
+1. `debitAmount` 가 잔액보다 큰 어설션을 사용하여 올바른 오류를 catch하는 경우 `Contains` 어설션이 통과하고, 예외가 무시되어 테스트 메서드를 통과하게 됩니다. 이것이 바로 우리가 원하는 동작입니다.  
   
-2.  0보다 작은 `debitAmount` 를 사용할 경우 잘못된 오류 메시지가 반환되어 어설션이 실패합니다. 테스트 코드 경로 아래 메서드의 다른 지점에서 임시 `ArgumentOutOfRange` 예외를 유도하는 경우에도 어설션이 실패합니다. 이 점 역시 좋습니다.  
+2. 0보다 작은 `debitAmount` 를 사용할 경우 잘못된 오류 메시지가 반환되어 어설션이 실패합니다. 테스트 코드 경로 아래 메서드의 다른 지점에서 임시 `ArgumentOutOfRange` 예외를 유도하는 경우에도 어설션이 실패합니다. 이 점 역시 좋습니다.  
   
-3.  `debitAmount` 값이 유효하면(예: 잔액보다 작지만 0보다 큼) 예외가 catch되지 않으므로 어설션이 절대로 catch되지 않습니다. 테스트 메서드를 통과합니다. 예외가 throw되지 않는 경우에도 테스트 메서드가 실패하지 않아야 하므로 이 방법은 좋지 않습니다.  
+3. `debitAmount` 값이 유효하면(예: 잔액보다 작지만 0보다 큼) 예외가 catch되지 않으므로 어설션이 절대로 catch되지 않습니다. 테스트 메서드를 통과합니다. 예외가 throw되지 않는 경우에도 테스트 메서드가 실패하지 않아야 하므로 이 방법은 좋지 않습니다.  
   
- 세 번째 사실은 테스트 메서드의 버그입니다. 여기서는 문제를 해결하기 위해 테스트 메서드 끝에 예외가 throw되지 않은 경우를 처리하도록 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션을 추가합니다.  
+   세 번째 사실은 테스트 메서드의 버그입니다. 여기서는 문제를 해결하기 위해 테스트 메서드 끝에 예외가 throw되지 않은 경우를 처리하도록 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션을 추가합니다.  
   
- 하지만 재테스트를 통해 올바른 예외가 catch되면 테스트가 실패한다는 점이 확인되었습니다. catch 문이 예외를 다시 설정하고 메서드가 계속 실행되어 새 어설션에서 실패합니다. 새 문제를 해결하기 위해 `return` 다음에 `StringAssert`문을 추가합니다. 재테스트를 통해 문제를 해결한 것을 확인합니다. `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 의 최종 버전은 다음과 같습니다.  
+   하지만 재테스트를 통해 올바른 예외가 catch되면 테스트가 실패한다는 점이 확인되었습니다. catch 문이 예외를 다시 설정하고 메서드가 계속 실행되어 새 어설션에서 실패합니다. 새 문제를 해결하기 위해 `return` 다음에 `StringAssert`문을 추가합니다. 재테스트를 통해 문제를 해결한 것을 확인합니다. `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 의 최종 버전은 다음과 같습니다.  
   
 ```csharp  
 [TestMethod]  

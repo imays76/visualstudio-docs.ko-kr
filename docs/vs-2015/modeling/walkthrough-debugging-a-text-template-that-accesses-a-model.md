@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8fd24f6c1e9b0427746296efa9a839bf46ed7ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924891"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>연습: 모델에 액세스하는 텍스트 템플릿 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ ms.locfileid: "49220092"
 ## <a name="creating-a-domain-specific-language-solution"></a>도메인별 언어 솔루션 만들기  
  이 절차에서는 다음과 같은 특징이 있는 도메인별 언어 솔루션을 만들 수 있습니다.  
   
--   이름: DebuggingTestLanguage  
+- 이름: DebuggingTestLanguage  
   
--   솔루션 템플릿: 최소 언어  
+- 솔루션 템플릿: 최소 언어  
   
--   파일 확장명:.ddd  
+- 파일 확장명:.ddd  
   
--   회사 이름: Fabrikam  
+- 회사 이름: Fabrikam  
   
- 도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 도메인별 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)합니다.  
+  도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 도메인별 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)합니다.  
   
 ## <a name="creating-a-text-template"></a>텍스트 템플릿 만들기  
  텍스트 템플릿은 솔루션에 추가 합니다.  

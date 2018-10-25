@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b61cb7304f6fed3e2f3da55b94450c58bfc53334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39d50c7a6bb7f7101bfb7bb1860319d8c0dbdfe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949528"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 사용자 지정 특성의 이름이 지정 된 사용자 지정 특성 (바이트)를 가져옵니다.  
@@ -51,17 +51,17 @@ int GetCustomAttributeByName(
  [out에서] 사용자 지정 특성 (바이트)를 사용 하 여 입력은 배열입니다.  
   
  `pdwLen`  
- [out에서] 반환 하는 바이트의 최대 수를 지정 된 `ppBlob` 배열 및 배열에 실제로 쓴 바이트 수를 반환 합니다.  
+ [out에서] 반환할 바이트의 최대 수를 지정 된 `ppBlob` 배열 및 배열에 실제로 기록 된 바이트 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 하거나 사용자 지정 특성 존재 하지 않는 경우 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공 하면 S_OK를 반환 하거나 사용자 지정 특성이 없으면 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 설정의 `ppBlob` 매개 변수 개수를 반환 하려면 null 값으로 특성을 사용할 수 있는 바이트입니다. 그런 다음 배열을 할당 하 고에 대 한 해당 배열에 전달 된 `ppBlob` 매개 변수입니다.  
+ 설정 된 `ppBlob` 매개 변수 개수를 반환 하려면 null 값에 사용할 수 있는 바이트 특성입니다. 그런 다음 배열을 할당 하 고 해당 배열에 전달 된 `ppBlob` 매개 변수입니다.  
   
  특성 바이트는 사용자 지정 특성의 원시 데이터를 나타냅니다.  
   
- 경우는 `ppBlob` 및 `pdwLen` 매개 변수가 null 값으로 설정, 사용자 지정 특성 단순히 있는지 확인 하기 위해이 메서드를 사용할 수 있습니다. 그러나 호출 하는 보다 쉽게 대신는 [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) 메서드.  
+ 경우는 `ppBlob` 고 `pdwLen` 매개 변수가 null 값으로 설정, 사용자 지정 특성 단순히 있는지 확인 하기 위해이 메서드를 사용할 수 있습니다. 쉬운 대 안으로 것 인데, 호출 하 여 [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   

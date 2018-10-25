@@ -16,39 +16,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd8eff41b0e76816114e9c634f5ad61b6db58baf
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 810f65cbb021845c4fa659cd785e83e8c979376d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888673"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>방법: 문서의 범위 프로그래밍 방식으로 확장
   Microsoft Office Word 문서에서 <xref:Microsoft.Office.Interop.Word.Range> 개체를 정의한 후 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 및 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드를 사용하여 해당 개체의 시작점과 끝점을 변경합니다. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 하 고 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드는 동일한 두 개의 인수를 *단위* 및 *개수*합니다. 합니다 *개수* 인수는 이동할 단위의 수와 *단위* 인수는 다음 중 하나일 수 있습니다 <xref:Microsoft.Office.Interop.Word.WdUnits> 값:  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdWord>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdWord>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdSentence>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdSentence>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdParagraph>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdParagraph>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdSection>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdSection>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdStory>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdStory>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCell>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdCell>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdColumn>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdColumn>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdRow>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdRow>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdTable>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdTable>  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- 다음 예제에서 일곱 개의 문자로 구성된 범위를 정의합니다. 그런 다음 범위의 시작 위치를 원래 시작 위치에서 일곱 문자 뒤로 이동합니다. 범위의 끝 위치는 원래 시작 위치에서 일곱 문자 뒤에 있으므로 범위를 변경한 결과에는 문자가 포함되지 않습니다. 그런 다음 이 코드에서는 끝 위치를 현재 끝 위치에서 일곱 문자 뒤로 이동합니다.  
+  다음 예제에서 일곱 개의 문자로 구성된 범위를 정의합니다. 그런 다음 범위의 시작 위치를 원래 시작 위치에서 일곱 문자 뒤로 이동합니다. 범위의 끝 위치는 원래 시작 위치에서 일곱 문자 뒤에 있으므로 범위를 변경한 결과에는 문자가 포함되지 않습니다. 그런 다음 이 코드에서는 끝 위치를 현재 끝 위치에서 일곱 문자 뒤로 이동합니다.  
   
 ## <a name="to-extend-a-range"></a>범위를 확장하려면  
   

@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b272a7db4bfc5c7405493759d5e9c1864eaaa07d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 148d18f86ee88190aa1cf2a5a89807eb343c5d94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903486"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
-디버그 엔진을을 초기화 하는 동안 콜백을 식 계산기에 전달할 수 있습니다.  
+디버그 엔진을 초기화 하는 동안 콜백을 식 계산기에 전달할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,7 +43,7 @@ int SetIDebugIDECallback (
  [in] 콜백에 대 한 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

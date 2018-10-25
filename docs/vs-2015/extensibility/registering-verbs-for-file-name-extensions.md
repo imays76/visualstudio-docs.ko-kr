@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923409"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>파일 이름 확장명에 대한 동사 등록
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "49196328"
 ## <a name="registering-standard-verbs"></a>표준 동사 등록  
  운영 체제는 다음 표준 동사를 인식합니다.  
   
--   열기  
+- 열기  
   
--   편집  
+- 편집  
   
--   재생  
+- 재생  
   
--   용  
+- 용  
   
--   미리 보기  
+- 미리 보기  
   
- 가능 하면 표준 동사를 등록 합니다. 가장 일반적인 선택은 Open 동사입니다. 지우기 차이가 파일을 열고 파일을 편집 하는 경우에 편집 동사를 사용 합니다. 예를 들어,.htm 파일을 열면 표시 브라우저에서 HTML 편집기를 시작 하는.htm 파일을 편집 하는 반면 합니다. 표준 동사는 운영 체제 로캘을 사용 하 여 지역화 되어 있습니다.  
+  가능 하면 표준 동사를 등록 합니다. 가장 일반적인 선택은 Open 동사입니다. 지우기 차이가 파일을 열고 파일을 편집 하는 경우에 편집 동사를 사용 합니다. 예를 들어,.htm 파일을 열면 표시 브라우저에서 HTML 편집기를 시작 하는.htm 파일을 편집 하는 반면 합니다. 표준 동사는 운영 체제 로캘을 사용 하 여 지역화 되어 있습니다.  
   
 > [!NOTE]
 >  표준 동사를 등록할 때 열린 키에 대 한 기본값을 설정 하지 마십시오. 메뉴의 표시 문자열을 포함 하는 기본값입니다. 운영 체제 표준 동사에 대 한이 문자열을 제공합니다.  

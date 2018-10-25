@@ -11,57 +11,57 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d8fb0a2e5d218b76e972fc97a53afcd2f8ef3e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4fdcdbead361a189d6b99a32ba09063e784aa5e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892924"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>방법: 현재 선택 항목 액세스 및 제약
 
-도메인 특정 언어에 대 한 명령 또는 제스처 처리기를 작성 하는 경우 사용자 마우스 오른쪽 단추로 클릭 하는 요소를 확인할 수 있습니다. 또한 일부 셰이프나 필드를 선택할 방지할 수 있습니다. 예를 들어 아이콘 데코레이터를 클릭할 때 포함 된 셰이프 대신 선택 되도록 정렬할 수 있습니다. 이런이 방식으로 선택 영역을 제한 하면를 작성 해야 하는 처리기가 줄어듭니다. 또한 하면 손쉽게 decorator를 방지 하기 위해 필요 없이 도형에서 아무 곳 이나 클릭 수 있는 사용자에 대 한 합니다.
+도메인 특정 언어에 대 한 명령 또는 제스처 처리기를 작성 하는 경우 사용자를 마우스 오른쪽 단추로 클릭 하는 요소를 확인할 수 있습니다. 또한 일부 셰이프나 필드 선택에서 방지할 수 있습니다. 예를 들어, 사용자는 아이콘 decorator가 때 모양을 포함 하는 대신 선택 되도록 정렬할 수 있습니다. 이 방식으로 선택 제한 작성 해야 하는 처리기의 수를 줄입니다. 또한 쉽게 decorator를 방지 하지 않고도 셰이프에서 아무 곳 이나 클릭 수 있는 사용자에 대 한 합니다.
 
 ## <a name="access-the-current-selection-from-a-command-handler"></a>명령 처리기에서 현재 선택 영역에 액세스
 
-도메인 특정 언어에 대 한 명령 집합 클래스에 사용자 지정 명령에 대 한 명령 처리기를 포함합니다. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> , 도메인 특정 언어에 대 한 명령 집합 클래스 파생 되는 클래스, 현재 선택 영역에 액세스 하기 위한 몇 가지 멤버를 제공 합니다.
+도메인 특정 언어에 대 한 명령 집합 클래스에 사용자 지정 명령에 대 한 명령 처리기를 포함합니다. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> , 도메인 특정 언어에 대 한 명령 집합 클래스 파생 되는 클래스, 현재 선택 영역에 액세스 하기 위한 몇 명의 멤버를 제공 합니다.
 
-명령에 따라 명령 처리기 모델 디자이너, 모델 탐색기 또는 활성 창에서 선택을 해야 합니다.
+명령에 따라 명령 처리기는 모델 디자이너, 모델 탐색기 또는 활성 창에 선택을 해야 합니다.
 
-### <a name="to-access-selection-information"></a>선택 영역 정보에 액세스 하려면
+### <a name="to-access-selection-information"></a>선택 정보에 액세스 하려면
 
-1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 는 현재 선택 영역에 액세스 하는 데 사용할 수 있는 다음과 같은 멤버를 정의 하는 클래스입니다.
+1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 클래스는 현재 선택 영역에 액세스 하는 다음 멤버를 정의 합니다.
 
     |멤버|설명|
-    |------------|-----------------|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> 메서드|반환 `true` 구획 모양; 모델 디자이너에서 선택 된 요소 중 하나라도 있으면 `false`합니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> 메서드|반환 `true` 다이어그램이 고, 그렇지 않으면 모델 디자이너에서 선택한 `false`합니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> 메서드|반환 `true` 요소가 정확히 하나이 고, 그렇지 않으면 모델 디자이너에서 선택한 `false`합니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> 메서드|반환 `true` 요소가 정확히 하나이 고, 그렇지 않으면 현재 창에서 선택한 `false`합니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> 속성|모델 디자이너에서 선택 된 요소의 읽기 전용 컬렉션을 가져옵니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> 속성|현재 창에서 선택 된 요소의 읽기 전용 컬렉션을 가져옵니다.|
+    |-|-|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> 메서드|반환 `true` 모델 디자이너에서 선택한 요소 중 하나라도 구획 모양을;이 고, 그렇지 `false`합니다.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> 메서드|반환 `true` 다이어그램이 모델 디자이너에서 선택 되었으면이 고, 그렇지 않은 경우 `false`합니다.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> 메서드|반환 `true` 정확히 한 개의 요소가 고, 그렇지 않으면 모델 디자이너에서 선택한 `false`합니다.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> 메서드|반환 `true` 정확히 한 개의 요소가 고, 그렇지 않으면 현재 창에서 선택한 `false`합니다.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> 속성|모델 디자이너에서 선택한 요소의 읽기 전용 컬렉션을 가져옵니다.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> 속성|활성 창에서 선택한 요소의 읽기 전용 컬렉션을 가져옵니다.|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> 속성|모델 디자이너에서 선택 항목의 기본 요소를 가져옵니다.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> 속성|활성 창에 선택 항목의 기본 요소를 가져옵니다.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> 속성|활성 창에 있는 선택 항목의 기본 요소를 가져옵니다.|
 
-2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> 의 속성은 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 클래스에 대 한 액세스를 제공는 <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> 모델 디자이너에서 선택한 요소 추가 액세스를 제공 합니다. 모델 디자이너 창을 나타내는 개체입니다.
+2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> 의 속성을 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 클래스에 대 한 액세스를 제공는 <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> 모델 디자이너 창을 나타내는 모델 디자이너에서 선택한 요소에 추가 액세스를 제공 하는 개체.
 
 3.  또한 생성된 된 코드 탐색기 도구 창 속성을 정의 하 고 명령에는 속성 탐색기 선택 도메인 특정 언어에 대 한 클래스를 설정 합니다.
 
-    -   탐색기 도구 창 속성이 도메인 특정 언어에 대 한 탐색기 도구 창 클래스의 인스턴스를 반환 합니다. 탐색기 도구 창 클래스에서 파생 된 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> 클래스 및 도메인 특정 언어에 대 한 모델 탐색기를 나타냅니다.
+    -   탐색기 도구 창 속성 도메인별 언어 탐색기 도구 창 클래스의 인스턴스를 반환 합니다. 탐색기 도구 창 클래스에서 파생 되는 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> 클래스 및 도메인 특정 언어에 대 한 모델 탐색기를 나타냅니다.
 
     -   `ExplorerSelection` 속성 도메인 특정 언어에 대 한 모델 탐색기 창에서 선택한 요소를 반환 합니다.
 
 ## <a name="determine-which-window-is-active"></a>어떤 창이 활성 창인지 확인
 
-<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 인터페이스 포함 셸에서 현재 선택 영역 상태에 대 한 액세스를 제공 하는 멤버를 정의 합니다. 가져올 수는 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 패키지 클래스 또는 통해 도메인 특정 언어에 대 한 명령 집합 클래스 중 하나에서 개체는 `MonitorSelection` 각각의 기본 클래스에 정의 된 속성입니다. 패키지 클래스에서 파생 되는 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> 클래스 및 명령 클래스에서 파생 되는 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 클래스입니다.
+<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 인터페이스 포함 shell에서 현재 선택 상태에 대 한 액세스를 제공 하는 멤버를 정의 합니다. 가져올 수 있습니다는 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 패키지 클래스 또는 통해 도메인 특정 언어에 대 한 명령 집합 클래스에서 개체를 `MonitorSelection` 각각의 기본 클래스에 정의 된 속성입니다. 패키지 클래스에서 파생 되는 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> 클래스 및 명령 집합 클래스에서 파생 되는 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 클래스입니다.
 
-### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>어떤 유형의 창이 활성화 되어 명령 처리기에서 확인 하려면
+### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>어떤 유형의 창이 활성 명령 처리기에서 확인 하려면
 
-1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> 의 속성은 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 반환 클래스는 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 셸에서 현재 선택 영역 상태에 대 한 액세스를 제공 하는 개체입니다.
+1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> 의 속성을 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 반환 클래스는 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> shell에서 현재 선택 상태에 대 한 액세스를 제공 하는 개체입니다.
 
-2.  <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> 의 속성은 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 인터페이스 활성 창과 다를 수 있는 현재 선택 컨테이너를 가져옵니다.
+2.  합니다 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> 의 속성을 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 인터페이스 활성 창에서 다를 수 있는 활성 선택 영역 컨테이너를 가져옵니다.
 
-3.  명령에 다음 속성으로 설정 클래스 활성 창의 유형을 확인 하려면 도메인 특정 언어를 추가 합니다.
+3.  명령에는 설정 클래스를 활성 창 유형을 확인 하려면 도메인 특정 언어를 추가 합니다.
 
     ```csharp
     // using Microsoft.VisualStudio.Modeling.Shell;
@@ -91,27 +91,27 @@ ms.locfileid: "31952364"
 
 ## <a name="constrain-the-selection"></a>선택 영역을 제한 합니다.
 
-사용자가 모델에서 요소를 선택할 때 어떤 요소를 선택 합니다. 선택 규칙을 추가 하 여 제어할 수 있습니다. 예를 들어 사용자 수의 요소를 하나의 단위로 처리할 수 있도록 선택 규칙을 사용할 수 있습니다.
+선택 규칙을 추가 하 여 사용자가 모델에서 요소를 선택할 때에 요소가 선택 되어 제어할 수 있습니다. 예를 들어, 사용자 수의 요소를 하나의 단위로 처리할 수 있도록 선택 규칙을 사용할 수 있습니다.
 
-### <a name="to-create-a-selection-rule"></a>선택 영역 규칙을 만들려면
+### <a name="to-create-a-selection-rule"></a>선택 규칙을 만들려면
 
 1.  DSL 프로젝트에 사용자 지정 코드 파일을 만듭니다
 
-2.  선택 영역 규칙 클래스에서 파생 된 정의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> 클래스입니다.
+2.  파생 되는 선택 규칙 클래스를 정의 합니다 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> 클래스입니다.
 
-3.  재정의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> 선택 조건을 적용 하려면 선택 규칙 클래스의 메서드.
+3.  재정의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> 선택 조건을 적용할 선택 규칙 클래스의 메서드.
 
 4.  사용자 지정 코드 파일에 ClassDiagram 클래스에 대 한 partial 클래스 정의 추가 합니다.
 
-     `ClassDiagram` 클래스에서 파생 된 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 클래스 및 생성 된 코드 파일에서 Diagram.cs, DSL 프로젝트에서 정의 됩니다.
+     합니다 `ClassDiagram` 클래스에서 파생 되는 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 클래스 및 생성 된 코드 파일에서 Diagram.cs, DSL 프로젝트에서 정의 됩니다.
 
-5.  재정의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 의 속성은 `ClassDiagram` 클래스를 사용자 지정 선택 규칙을 반환 합니다.
+5.  재정의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 의 속성을 `ClassDiagram` 사용자 지정 선택 규칙을 반환 하는 클래스입니다.
 
-     기본 구현에서 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 속성 선택 영역을 수정 하지 않는 선택 규칙 개체를 가져옵니다.
+     기본 구현 된 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 속성 선택 영역을 수정 하지 않는 선택 규칙 개체를 가져옵니다.
 
 ### <a name="example"></a>예제
 
-다음 코드 파일에는 기본적으로 선택 되어 도메인 도형의의 모든 인스턴스를 포함 하려면 선택 영역을 확장 하는 선택 규칙을 만듭니다.
+다음 코드 파일에는 처음에 선택 된 도메인 도형의 모든 인스턴스를 포함 하도록 선택을 확장 선택 규칙을 만듭니다.
 
 ```csharp
 using System;

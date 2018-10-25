@@ -13,12 +13,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cc643f8bd8addefc2bec4c62645e8091aaedc11c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 68f083bf6aa99177f6b9e697be8affa5d29804a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889609"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,71 +32,71 @@ ms.locfileid: "49291241"
 ##  <a name="BKMK_In_this_topic"></a> 항목 내용  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
--   [테스트 클래스와 메서드 만들기](#BKMK_Create_test_classes_and_methods)  
+- [테스트 클래스와 메서드 만들기](#BKMK_Create_test_classes_and_methods)  
   
--   [초기화 및 정리](#BKMK_Initialize_and_cleanup)  
+- [초기화 및 정리](#BKMK_Initialize_and_cleanup)  
   
-    -   [테스트 메서드](#BKMK_Test_methods)  
+  -   [테스트 메서드](#BKMK_Test_methods)  
   
-    -   [테스트 클래스](#BKMK_Test_classes)  
+  -   [테스트 클래스](#BKMK_Test_classes)  
   
-    -   [테스트 모듈](#BKMK_Test_modules)  
+  -   [테스트 모듈](#BKMK_Test_modules)  
   
--   [테스트 특성 만들기](#BKMK_Create_test_attributes)  
+- [테스트 특성 만들기](#BKMK_Create_test_attributes)  
   
-    -   [테스트 메서드 특성](#BKMK_Test_method_attributes)  
+  - [테스트 메서드 특성](#BKMK_Test_method_attributes)  
   
-    -   [테스트 클래스 특성](#BKMK_Test_class_attributes)  
+  - [테스트 클래스 특성](#BKMK_Test_class_attributes)  
   
-    -   [테스트 모듈 특성](#BKMK_Test_module_attributes)  
+  - [테스트 모듈 특성](#BKMK_Test_module_attributes)  
   
-    -   [미리 정의된 특성](#BKMK_Pre_defined_attributes)  
+  - [미리 정의된 특성](#BKMK_Pre_defined_attributes)  
   
-     [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
+    [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
   
-    -   [일반 어설션](#BKMK_General_Asserts)  
+  - [일반 어설션](#BKMK_General_Asserts)  
   
-        -   [AreEqual](#BKMK_General_Are_Equal)  
+    -   [AreEqual](#BKMK_General_Are_Equal)  
   
-        -   [AreNotEqual](#BKMK_General_Are_Not_Equal)  
+    -   [AreNotEqual](#BKMK_General_Are_Not_Equal)  
   
-        -   [AreSame](#BKMK_General_Are_Same)  
+    -   [AreSame](#BKMK_General_Are_Same)  
   
-        -   [AreNotSame](#BKMK_General_Are_Not_Same)  
+    -   [AreNotSame](#BKMK_General_Are_Not_Same)  
   
-        -   [IsNull](#BKMK_General_Is_Null)  
+    -   [IsNull](#BKMK_General_Is_Null)  
   
-        -   [IsNotNull](#BKMK_General_Is_Not_Null)  
+    -   [IsNotNull](#BKMK_General_Is_Not_Null)  
   
-        -   [IsTrue](#BKMK_General_Is_True)  
+    -   [IsTrue](#BKMK_General_Is_True)  
   
-        -   [IsFalse](#BKMK_General_Is_False)  
+    -   [IsFalse](#BKMK_General_Is_False)  
   
-        -   [Fail](#BKMK_General_Fail)  
+    -   [Fail](#BKMK_General_Fail)  
   
-    -   [Windows 런타임 어설션](#BKMK_WinRT_Asserts)  
+  - [Windows 런타임 어설션](#BKMK_WinRT_Asserts)  
   
-        -   [AreEqual](#BKMK_WinRT_Are_Equal)  
+    -   [AreEqual](#BKMK_WinRT_Are_Equal)  
   
-        -   [AreSame](#BKMK_WinRT_Are_Same)  
+    -   [AreSame](#BKMK_WinRT_Are_Same)  
   
-        -   [AreNotEqual](#BKMK_WinRT_Are_Not_Equal)  
+    -   [AreNotEqual](#BKMK_WinRT_Are_Not_Equal)  
   
-        -   [AreNotSame](#BKMK_WinRT_Are_Not_Same)  
+    -   [AreNotSame](#BKMK_WinRT_Are_Not_Same)  
   
-        -   [IsNull](#BKMK_WinRT_Is_Null)  
+    -   [IsNull](#BKMK_WinRT_Is_Null)  
   
-        -   [IsNotNull](#BKMK_WinRT_Is_Not_Null)  
+    -   [IsNotNull](#BKMK_WinRT_Is_Not_Null)  
   
-    -   [예외 어설션](#BKMK_Exception_Asserts)  
+  - [예외 어설션](#BKMK_Exception_Asserts)  
   
-        -   [EXPECTEXCEPTION](#BKMK_Expect_Exception)  
+    - [EXPECTEXCEPTION](#BKMK_Expect_Exception)  
   
-         [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
+      [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
   
-        -   [Logger](#BKMK_Logger)  
+    - [Logger](#BKMK_Logger)  
   
-        -   [메시지 작성](#BKMK_Write_Message)  
+    - [메시지 작성](#BKMK_Write_Message)  
   
 ##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   

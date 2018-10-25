@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52f9c4ffef27b7b17bbcb75d734b4d0b7e41a3ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a57f84901f2ac6bc691c50fa6d1e3c8b94db6c50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939908"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;필드&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,44 +52,44 @@ ms.locfileid: "49271650"
  `type`  
  선택 사항입니다. 필드의 데이터 형식입니다. 형식에는 다음 중 하나일 수 있습니다.  
   
--   ECMAScript 5 사양에는 ECMAScript 언어와 같은 입력 `Number` 고 `Object`입니다.  
+- ECMAScript 5 사양에는 ECMAScript 언어와 같은 입력 `Number` 고 `Object`입니다.  
   
--   DOM 개체로 `HTMLElement`, `Window`, 및 `Document`합니다.  
+- DOM 개체로 `HTMLElement`, `Window`, 및 `Document`합니다.  
   
--   JavaScript 생성자 함수입니다.  
+- JavaScript 생성자 함수입니다.  
   
- `integer`  
- 선택 사항입니다. 하는 경우 `type` 는 `Number`, 필드는 정수 인지 여부를 지정 합니다. 로 `true` 필드는 정수; 임을 나타내려면이 고, 그렇지로 `false`합니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
+  `integer`  
+  선택 사항입니다. 하는 경우 `type` 는 `Number`, 필드는 정수 인지 여부를 지정 합니다. 로 `true` 필드는 정수; 임을 나타내려면이 고, 그렇지로 `false`합니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
   
- `domElement`  
- 선택 사항입니다. 이 특성은 사용 되지 않습니다. `type` 특성이이 특성 보다 우선 합니다. 이 특성은 문서화 된 필드는 DOM 요소 인지 여부를 지정 합니다. 로 `true` 필드는 DOM 요소를 지정 하려면이 고, 그렇지로 `false`합니다. 경우는 `type` 특성이 설정 되지 않은 및 `domElement` 로 설정 된 `true`, IntelliSense를 문서화 된 필드를 처리는 `HTMLElement` 문 완성 기능을 수행 하는 경우.  
+  `domElement`  
+  선택 사항입니다. 이 특성은 사용 되지 않습니다. `type` 특성이이 특성 보다 우선 합니다. 이 특성은 문서화 된 필드는 DOM 요소 인지 여부를 지정 합니다. 로 `true` 필드는 DOM 요소를 지정 하려면이 고, 그렇지로 `false`합니다. 경우는 `type` 특성이 설정 되지 않은 및 `domElement` 로 설정 된 `true`, IntelliSense를 문서화 된 필드를 처리는 `HTMLElement` 문 완성 기능을 수행 하는 경우.  
   
- `mayBeNull`  
- 선택 사항입니다. 문서화 된 필드를 설정할 수 있는지 여부를 지정 하려면 null입니다. 로 `true` 로 필드에 null이 고 그렇지 않으면 설정할 수 있도록 나타내려면 `false`합니다. 기본값은 `false`입니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
+  `mayBeNull`  
+  선택 사항입니다. 문서화 된 필드를 설정할 수 있는지 여부를 지정 하려면 null입니다. 로 `true` 로 필드에 null이 고 그렇지 않으면 설정할 수 있도록 나타내려면 `false`합니다. 기본값은 `false`입니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
   
- `elementType`  
- 선택 사항입니다. 하는 경우 `type` 는 `Array`,이 특성 배열의 요소 형식을 지정 합니다.  
+  `elementType`  
+  선택 사항입니다. 하는 경우 `type` 는 `Array`,이 특성 배열의 요소 형식을 지정 합니다.  
   
- `elementInteger`  
- 선택 사항입니다. 경우 `type` 는 `Array` 하 고 `elementType` 는 `Number`,이 특성은 요소 배열에서 정수 되는지 여부를 지정 합니다. 로 `true` 나타내려면 배열의 요소는가 정수인;로 고, 그렇지는 `false`합니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
+  `elementInteger`  
+  선택 사항입니다. 경우 `type` 는 `Array` 하 고 `elementType` 는 `Number`,이 특성은 요소 배열에서 정수 되는지 여부를 지정 합니다. 로 `true` 나타내려면 배열의 요소는가 정수인;로 고, 그렇지는 `false`합니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
   
- `elementDomElement`  
- 선택 사항입니다. 이 특성은 사용 되지 않습니다. `elementType` 특성이이 특성 보다 우선 합니다. 하는 경우 `type` 는 `Array`,이 특성은 배열에 요소가 DOM 요소가 있는지 여부를 지정 합니다. 로 `true` 지정 하는 요소는 DOM 요소가 고, 그렇지로 `false`합니다. 경우는 `elementType` 특성이 설정 되지 않은 및 `elementDomElement` 로 설정 된 `true`, IntelliSense와 배열의 각 요소를 처리는 `HTMLElement` 문 완성 기능을 수행 하는 경우.  
+  `elementDomElement`  
+  선택 사항입니다. 이 특성은 사용 되지 않습니다. `elementType` 특성이이 특성 보다 우선 합니다. 하는 경우 `type` 는 `Array`,이 특성은 배열에 요소가 DOM 요소가 있는지 여부를 지정 합니다. 로 `true` 지정 하는 요소는 DOM 요소가 고, 그렇지로 `false`합니다. 경우는 `elementType` 특성이 설정 되지 않은 및 `elementDomElement` 로 설정 된 `true`, IntelliSense와 배열의 각 요소를 처리는 `HTMLElement` 문 완성 기능을 수행 하는 경우.  
   
- `elementMayBeNull`  
- 선택 사항입니다. 하는 경우 `type` 는 `Array`, 배열의 요소를 설정할 수 있는지 여부를 지정 합니다. null로 합니다. 로 `true` 설정에 null이 고 그렇지 않으면 배열의 요소를 설정할 수 있도록 나타내려면 `false`합니다. 기본값은 `false`입니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
+  `elementMayBeNull`  
+  선택 사항입니다. 하는 경우 `type` 는 `Array`, 배열의 요소를 설정할 수 있는지 여부를 지정 합니다. null로 합니다. 로 `true` 설정에 null이 고 그렇지 않으면 배열의 요소를 설정할 수 있도록 나타내려면 `false`합니다. 기본값은 `false`입니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
   
- `helpKeyword`  
- 선택 사항입니다. 에 대 한 F1 도움말 키워드입니다.  
+  `helpKeyword`  
+  선택 사항입니다. 에 대 한 F1 도움말 키워드입니다.  
   
- `locid`  
- 선택 사항입니다. 필드에 대 한 지역화 정보에 대 한 식별자입니다. 식별자는 멤버에 해당 하는 ID 또는를 `name` 특성 OpenAjax 메타 데이터에 의해 정의 된 메시지 묶음의 값입니다. 식별자 형식에 지정 된 형식에 따라 달라 집니다 합니다 [ \<loc >](../ide/loc-javascript.md) 태그입니다.  
+  `locid`  
+  선택 사항입니다. 필드에 대 한 지역화 정보에 대 한 식별자입니다. 식별자는 멤버에 해당 하는 ID 또는를 `name` 특성 OpenAjax 메타 데이터에 의해 정의 된 메시지 묶음의 값입니다. 식별자 형식에 지정 된 형식에 따라 달라 집니다 합니다 [ \<loc >](../ide/loc-javascript.md) 태그입니다.  
   
- `value`  
- 선택 사항입니다. 함수 코드 자체 대신 IntelliSense에서 사용 하기 위해 평가 되어야 하는 코드를 지정 합니다. 에 대 한 `<field>`,이 특성 생성자 함수에 대 한 지원 되지만 개체 리터럴에 대 한 지원 되지 않습니다. 이 사용 하 여 특성 필드 형식이 정의 된 형식 정보를 제공 하는 것입니다. 예를 들어 사용할 수 있습니다 `value=’1’` 필드 형식을 숫자로 처리 하도록 합니다.  
+  `value`  
+  선택 사항입니다. 함수 코드 자체 대신 IntelliSense에서 사용 하기 위해 평가 되어야 하는 코드를 지정 합니다. 에 대 한 `<field>`,이 특성 생성자 함수에 대 한 지원 되지만 개체 리터럴에 대 한 지원 되지 않습니다. 이 사용 하 여 특성 필드 형식이 정의 된 형식 정보를 제공 하는 것입니다. 예를 들어 사용할 수 있습니다 `value=’1’` 필드 형식을 숫자로 처리 하도록 합니다.  
   
- `description`  
- 선택 사항입니다. 필드에 대 한 설명입니다.  
+  `description`  
+  선택 사항입니다. 필드에 대 한 설명입니다.  
   
 ## <a name="remarks"></a>설명  
  `name` 특성은 생성자 함수에서 필드를 문서화 하는 경우에 필요 합니다. 다른 모든 시나리오에 대 한 모든 특성이 `<field>` 요소는 선택 사항입니다.  

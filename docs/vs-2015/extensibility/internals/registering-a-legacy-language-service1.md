@@ -15,12 +15,12 @@ ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4177507e8633fa5596da07f5df349df28a66f2a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bdbe118669022f0aef9fb296623deea43b43b234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940660"
 ---
 # <a name="registering-a-legacy-language-service"></a>레거시 언어 서비스 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ VSPackage에서 제공 되는 언어 서비스에서 관리 되는 패키지 프
 ## <a name="register-the-language-service-by-using-attributes"></a>특성을 사용 하 여 언어 서비스 등록  
  언어 서비스를 등록 하는 다음과 같은 특성이 사용 됩니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
   
- 이러한 특성은 아래에서 설명  
+  이러한 특성은 아래에서 설명  
   
 ### <a name="provideserviceattribute"></a>ProvideServiceAttribute  
  이 특성을 서비스로 언어 서비스를 등록합니다.  

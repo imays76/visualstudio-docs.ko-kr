@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea20b2e7cbb1136fb0738e381f312472d48f80f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a6630ecb01bd16584eae7b87f42a11958906ef6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880658"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
-서버 이름을 검색합니다.  
+서버의 이름을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,16 +41,16 @@ int GetServerName(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstrName`  
- [out] 서버 이름을 반환합니다.  
+ [out] 서버의 이름을 반환합니다.  
   
 > [!NOTE]
 >  호출자는 문자열을 해제 하는 일을 담당 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드를 반환 합니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 친숙 한 서버 이름에 대 한 호출에서 [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) 메서드.  
+ 친숙 한 서버 이름에 대 한 호출을 [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

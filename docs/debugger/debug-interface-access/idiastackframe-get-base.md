@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e59059380ab2ad4010fcce524d2323c02ab47ed7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 728c9af4470cfaa96d333cd41d119a342bc680ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931053"
 ---
 # <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
-프레임의 기본 주소를 검색 합니다.  
+프레임의 기본 주소를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   

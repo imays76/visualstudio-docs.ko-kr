@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896840"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>코드 맵 찾아보기 및 다시 정렬
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ ms.locfileid: "49281439"
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>기존 코드 요소 간에 링크 추가  
   
-1.  소스 코드 요소를 선택합니다. 도구 모음이 코드 요소 위에 나타납니다.  
+1. 소스 코드 요소를 선택합니다. 도구 모음이 코드 요소 위에 나타납니다.  
   
-     ![종속성 그래프 도구 모음](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![종속성 그래프 도구 모음](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  도구 모음에서 첫 번째 아이콘을 선택 **새 링크 만들기가 노드에서 다음에 클릭 하는 노드로**합니다.  
+2. 도구 모음에서 첫 번째 아이콘을 선택 **새 링크 만들기가 노드에서 다음에 클릭 하는 노드로**합니다.  
   
-3.  대상 코드 요소를 선택합니다. 두 코드 요소 사이에 링크가 나타납니다.  
+3. 대상 코드 요소를 선택합니다. 두 코드 요소 사이에 링크가 나타납니다.  
   
- \- 또는 -  
+   \- 또는 -  
   
-1.  맵에서 소스 코드 요소를 선택합니다.  
+4. 맵에서 소스 코드 요소를 선택합니다.  
   
-2.  마우스가 설치되어 있는 경우 마우스 포인터를 맵 경계 밖으로 이동합니다.  
+5. 마우스가 설치되어 있는 경우 마우스 포인터를 맵 경계 밖으로 이동합니다.  
   
-3.  코드 요소의 바로 가기 메뉴를 열고 **편집할**를 **추가**를 **제네릭 링크**합니다.  
+6. 코드 요소의 바로 가기 메뉴를 열고 **편집할**를 **추가**를 **제네릭 링크**합니다.  
   
-4.  Tab 키를 눌러 링크의 대상 코드 요소로 이동한 다음 선택합니다.  
+7. Tab 키를 눌러 링크의 대상 코드 요소로 이동한 다음 선택합니다.  
   
-5.  **RETURN**키를 누릅니다.  
+8. **RETURN**키를 누릅니다.  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>맵의 기존 노드에 주석 추가  

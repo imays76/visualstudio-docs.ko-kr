@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894820"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>사용자 지정 지시문 처리기 배포
 
@@ -154,7 +154,7 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변형 하려는 경�
 
  .pkgdef 파일이 빌드 폴더에 나타나는지 확인합니다. 빌드 폴더는 대개 bin\Debug 또는 bin\Release입니다. 이 파일이 나타나지 않으면 텍스트 편집기에서 .csproj 파일을 열고 `<GeneratePkgDefFile>false</GeneratePkgDefFile>` 노드를 제거합니다.
 
- 자세한 내용은 [Vspackage](../extensibility/internals/vspackages.md)합니다.
+ 자세한 내용은 [VSPackages](../extensibility/internals/vspackages.md)을 참조하세요.
 
 ## <a name="setting-a-registry-key"></a>레지스트리 키 설정
  사용자 지정 지시문 프로세서를 설치하는 이 방법은 가장 선호되지 않는 방법입니다. 이 방법으로는 간편하게 지시문 프로세서를 사용하거나 사용하지 않도록 설정할 수 없으며 지시문 프로세서를 다른 사용자에게 배포할 수 없습니다.
@@ -164,38 +164,38 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변형 하려는 경�
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>레지스트리 키를 설정하여 지시문 프로세서를 등록하려면
 
-1.  `regedit`를 실행합니다.
+1. `regedit`를 실행합니다.
 
-2.  regedit에서 다음 레지스트리 키로 이동합니다.
+2. regedit에서 다음 레지스트리 키로 이동합니다.
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     Visual Studio의 실험적 버전에서 지시문 프로세서를 설치 하려는 경우 "Exp" "11.0" 뒤에 삽입 합니다.
+    Visual Studio의 실험적 버전에서 지시문 프로세서를 설치 하려는 경우 "Exp" "11.0" 뒤에 삽입 합니다.
 
-3.  지시문 프로세서 클래스와 이름이 같은 레지스트리 키를 추가합니다.
+3. 지시문 프로세서 클래스와 이름이 같은 레지스트리 키를 추가합니다.
 
-    -   레지스트리 트리에서 마우스 오른쪽 단추로 클릭 합니다 **DirectiveProcessors** 가리킨 **새로 만들기**를 클릭 하 고 **키**합니다.
+   -   레지스트리 트리에서 마우스 오른쪽 단추로 클릭 합니다 **DirectiveProcessors** 가리킨 **새로 만들기**를 클릭 하 고 **키**합니다.
 
-4.  새 노드에서 다음 표에 따라 Class와 CodeBase 또는 Assembly의 문자열 값을 추가합니다.
+4. 새 노드에서 다음 표에 따라 Class와 CodeBase 또는 Assembly의 문자열 값을 추가합니다.
 
-    1.  사용자가 만든 노드를 마우스 오른쪽 **새로 만들기**를 클릭 하 고 **문자열 값**합니다.
+   1.  사용자가 만든 노드를 마우스 오른쪽 **새로 만들기**를 클릭 하 고 **문자열 값**합니다.
 
-    2.  값의 이름을 편집합니다.
+   2.  값의 이름을 편집합니다.
 
-    3.  이름을 두 번 클릭하고 데이터를 편집합니다.
+   3.  이름을 두 번 클릭하고 데이터를 편집합니다.
 
- 사용자 지정 지시문 프로세서가 GAC에 없는 경우 레지스트리 하위 키는 다음 표와 같습니다.
+   사용자 지정 지시문 프로세서가 GAC에 없는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|name|형식|데이터|
-|----------|----------|----------|
+|이름|형식|데이터|
+|-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
 |클래스|REG_SZ|**\<Namespace 이름 >. \<클래스 이름 >**|
 |CodeBase|REG_SZ|**\<경로 >\\< 어셈블리 이름\>**|
 
  어셈블리가 GAC에 있는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|name|형식|데이터|
-|----------|----------|----------|
+|이름|형식|데이터|
+|-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
 |클래스|REG_SZ|\<**정규화 된 클래스 이름**>|
 |Assembly|REG_SZ|\<**GAC에 어셈블리 이름**>|

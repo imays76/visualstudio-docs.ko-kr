@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da09f01e602f2d30288bc9f872f761d0bee4fc42
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c328925fd558e01138354427a80db7a692753710
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924917"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>연습: 텍스트 뷰 사용자 지정
 편집기 서식 맵에에서 다음 속성 중 하나를 수정 하 여 텍스트 뷰를 사용자 지정할 수 있습니다.  
@@ -40,7 +40,7 @@ ms.locfileid: "39498408"
   
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `ViewPropertyTest`입니다.  
+1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `ViewPropertyTest`로 지정합니다.  
   
 2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
@@ -48,26 +48,26 @@ ms.locfileid: "39498408"
   
 ## <a name="define-the-content-type"></a>콘텐츠 형식 정의  
   
-1.  클래스 파일을 추가 하 고 이름을 `ViewPropertyModifier`입니다.  
+1. 클래스 파일을 추가하고 이름을 `ViewPropertyModifier`로 지정합니다.  
   
-2.  다음 추가 `using` 지시문:  
+2. 다음 추가 `using` 지시문:  
   
-     [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
-     [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
+    [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
   
-3.  이라는 클래스를 선언 `TestViewCreationListener` 에서 상속 되는 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>합니다. 이 클래스는 다음과 같은 특성을 내보냅니다.  
+3. 이라는 클래스를 선언 `TestViewCreationListener` 에서 상속 되는 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>합니다. 이 클래스는 다음과 같은 특성을 내보냅니다.  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 이 수신기가 적용 되는 콘텐츠의 형식을 지정 합니다.  
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 이 수신기가 적용 되는 콘텐츠의 형식을 지정 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 이 수신기의 역할을 지정 합니다.  
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 이 수신기의 역할을 지정 합니다.  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]  
   
-4.  이 클래스에서 가져오기는 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>합니다.  
+4. 이 클래스에서 가져오기는 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>합니다.  
   
-     [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
-     [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
+    [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
   
 ## <a name="change-the-view-properties"></a>보기 속성 변경  
   

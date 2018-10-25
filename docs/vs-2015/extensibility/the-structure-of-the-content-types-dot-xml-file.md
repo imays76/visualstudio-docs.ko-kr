@@ -18,12 +18,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f89a928af01ad006b2a051c4ff583dcefcb061de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a33a1d8b82c03b2c8a45c63f5479011ab7249aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218298"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903142"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>구조는 Content_types].xml 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ VSIX 패키지에서 원하는 콘텐츠 종류에 대 한 정보를 포함합�
   
 ### <a name="attribute-name-attribute"></a>{0} 특성 이름} 특성  
   
-|값|설명|  
-|-----------|-----------------|  
-|http://schemas.openformats.org/package/2006/content-types|콘텐츠 형식 스키마의 위치입니다.|  
+|                           값                           |                설명                |
+|-----------------------------------------------------------|-------------------------------------------|
+| http://schemas.openformats.org/package/2006/content-types | 콘텐츠 형식 스키마의 위치입니다. |
   
 ### <a name="child-elements"></a>자식 요소  
  합니다 `Types` 요소를 포함할 수 있는 모든 수 `Default` 요소입니다.  

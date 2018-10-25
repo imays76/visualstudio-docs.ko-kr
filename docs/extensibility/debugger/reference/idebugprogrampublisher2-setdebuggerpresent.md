@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5725d6e143f10cd3a3fae18398ec0cb08729fa34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e53fa8c1adcf9e66b06fb2b3c286c74dbc4ab7dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942116"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-디버거는 존재 하 고 실행 하는 프로그램의 게시자를 지시 합니다.  
+디버거는 실행 되 고 있는 프로그램 게시자를 알려줍니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,13 +41,13 @@ int SetDebuggerPresent(
   
 #### <a name="parameters"></a>매개 변수  
  `fDebuggerPresent`  
- [in] 0이 아닌 (`TRUE`) 디버거가 있는 경우에 0 (`FALSE`) 없는 경우.  
+ [in] 0이 아닌 (`TRUE`)는 디버거가 있는 경우에 0 (`FALSE`) 없는 경우.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 디버거가의 유무에서 반환 된 데이터에 반영 됩니다는 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 메서드: 있습니다 반환 되는 값 설정 되었거나 이전 호출 하 여 삭제는 `SetDebuggerPresent` 메서드.  
+ 디버거 유무에서 반환 되는 데이터에 반영 됩니다 합니다 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 메서드: 있습니다 반환 되는 값 설정 되었거나 이전 호출 하 여 삭제를 `SetDebuggerPresent` 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

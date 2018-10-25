@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950396"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>절반/분기 텍스처 크기 변형
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "49228509"
 ## <a name="remarks"></a>설명  
  원본 질감을 만드는 `ID3D11Device::CreateTexture2D`를 호출할 때마다 질감 크기가 줄어듭니다. `pDesc`에서 전달되는 D3D11_TEXTURE2D_DESC 개체가 렌더링 시 사용된 질감을 설명하는 경우 특히 질감 크기가 줄어듭니다. 즉, 다음과 같은 경우입니다.  
   
--   BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우  
+- BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우  
   
--   MiscFlags 멤버에 D3D11_RESOURCE_MISC_TILE_POOL 플래그 또는 D3D11_RESOURCE_MISC_TILED 플래그 집합이 없는 경우(타일식 리소스의 크기가 조정되지 않음)  
+- MiscFlags 멤버에 D3D11_RESOURCE_MISC_TILE_POOL 플래그 또는 D3D11_RESOURCE_MISC_TILED 플래그 집합이 없는 경우(타일식 리소스의 크기가 조정되지 않음)  
   
--   D3D11_FORMAT_SUPPORT_RENDER_TARGET(질감 크기를 줄이는 데 필요)에 따라 결정된 대로 질감 형식이 렌더링 대상으로 지원되는 경우 렌더링 대상으로 지원되지는 않지만 BC1, BC2 및 BC3 형식도 지원됩니다.  
+- D3D11_FORMAT_SUPPORT_RENDER_TARGET(질감 크기를 줄이는 데 필요)에 따라 결정된 대로 질감 형식이 렌더링 대상으로 지원되는 경우 렌더링 대상으로 지원되지는 않지만 BC1, BC2 및 BC3 형식도 지원됩니다.  
   
- 응용 프로그램에서 초기 데이터를 제공하는 경우 이 변형은 질감 데이터를 질감을 만들기 전에 해당하는 크기로 조절합니다. BC1, BC2 또는 BC3와 같은 블록 압축 형식으로 초기 데이터가 제공되는 경우 초기 데이터는 더 작은 질감을 만드는 데 사용되기 전에 디코딩 및 비율 크기 조정 후 다시 인코딩됩니다. 블록 기반 압축의 특성은 추가 디코딩-비율 크기 조정-인코딩 프로세스는 이전에 인코딩되지 않은 질감의 비율 크기 조정된 버전에서 블록 압축 질감이 생성되는 경우보다 거의 항상 이미지 품질이 낮습니다.  
+  응용 프로그램에서 초기 데이터를 제공하는 경우 이 변형은 질감 데이터를 질감을 만들기 전에 해당하는 크기로 조절합니다. BC1, BC2 또는 BC3와 같은 블록 압축 형식으로 초기 데이터가 제공되는 경우 초기 데이터는 더 작은 질감을 만드는 데 사용되기 전에 디코딩 및 비율 크기 조정 후 다시 인코딩됩니다. 블록 기반 압축의 특성은 추가 디코딩-비율 크기 조정-인코딩 프로세스는 이전에 인코딩되지 않은 질감의 비율 크기 조정된 버전에서 블록 압축 질감이 생성되는 경우보다 거의 항상 이미지 품질이 낮습니다.  
   
- 질감에 Mip 맵을 사용하는 경우 변형은 Mip 수준의 수를 적절하게 줄입니다. 절반 크기로 조정하는 경우 한 수준 낮게, 4분의 1 크기로 조정하는 경우에는 두 수준 낮게 줄입니다.  
+  질감에 Mip 맵을 사용하는 경우 변형은 Mip 수준의 수를 적절하게 줄입니다. 절반 크기로 조정하는 경우 한 수준 낮게, 4분의 1 크기로 조정하는 경우에는 두 수준 낮게 줄입니다.  
   
 ## <a name="example"></a>예제  
  이러한 변형은 `CreateTexture2D` 호출 전 런타임에 질감의 크기를 조정합니다. 전체 크기 질감은 더 많은 디스크 공간을 사용하고 인코딩에 상당한 계산 리소스가 필요한 압축된 질감의 경우, 특히 추가 단계에서 앱에서의 로드 시간이 길어질 수 있기 때문에 프로덕션 코드에는 이러한 접근 방식을 사용하는 것이 좋습니다. 대신 빌드 파이프라인의 일부인 이미지 편집기 또는 이미지 프로세서를 사용하여 질감의 크기를 오프라인으로 조정하는 것이 좋습니다. 이러한 접근 방식은 디스크 공간 요구 사항을 줄이고 앱에서 런타임 오버헤드를 없애며 더 긴 처리 시간을 허용하므로 최상의 이미지 품질을 유지하면서 동시에 질감을 축소 또는 압축할 수 있습니다.  

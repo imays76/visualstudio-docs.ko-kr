@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9ca1917d71ff2ef0961e9f5c99839759c7decff3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926750"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>방법: 모양 또는 데코레이터 클릭 가로채기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,17 +126,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>가 가로챈 CompartmentShape 목록에 끌어 놓습니다.  
  다음 샘플에서는 끌어 구획 도형에서 항목 순서 수가 있습니다. 이 코드를 실행 합니다.  
   
-1.  새 DSL 솔루션을 사용 하 여 만들 합니다 **클래스 다이어그램** 솔루션 템플릿.  
+1. 새 DSL 솔루션을 사용 하 여 만들 합니다 **클래스 다이어그램** 솔루션 템플릿.  
   
-     구획 모양을 포함 하는 자신만의 솔루션으로 작업할 수 있습니다. 이 코드 셰이프를 나타내는 모델 요소와 구획 목록 항목에 표시 된 요소 간의 포함 관계가 있다고 가정 합니다.  
+    구획 모양을 포함 하는 자신만의 솔루션으로 작업할 수 있습니다. 이 코드 셰이프를 나타내는 모델 요소와 구획 목록 항목에 표시 된 요소 간의 포함 관계가 있다고 가정 합니다.  
   
-2.  설정 된 **Generates Double Derived** 구획 모양의 속성입니다.  
+2. 설정 된 **Generates Double Derived** 구획 모양의 속성입니다.  
   
-3.  이 코드의 파일에 추가 합니다 **Dsl** 프로젝트입니다.  
+3. 이 코드의 파일에 추가 합니다 **Dsl** 프로젝트입니다.  
   
-4.  고유한 DSL에 맞게이 코드의 도메인 클래스 및 셰이프 이름을 조정 합니다.  
+4. 고유한 DSL에 맞게이 코드의 도메인 클래스 및 셰이프 이름을 조정 합니다.  
   
- 요약 하자면, 코드는 다음과 같이 작동합니다. 이 예제에서는 `ClassShape` 구획 모양의 이름입니다.  
+   요약 하자면, 코드는 다음과 같이 작동합니다. 이 예제에서는 `ClassShape` 구획 모양의 이름입니다.  
   
 -   마우스 이벤트 처리기의 집합을 만들 때 각 구획 인스턴스에 연결 됩니다.  
   

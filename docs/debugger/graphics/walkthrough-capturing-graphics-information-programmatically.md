@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50bf9d042cd89a8f53cf63208c485682d46e68f4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933289"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>연습: 프로그래밍 방식으로 그래픽 정보 캡처
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 Direct3D 앱에서 그래픽 정보를 프로그래밍 방식으로 캡처할 수 있습니다.  
@@ -69,24 +69,24 @@ ms.locfileid: "39510428"
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis 인터페이스를 가져오려면  
   
--   다음 코드를 사용하여 IDXGraphicsAnalysis 인터페이스를 DXGI 디버그 인터페이스에 연결합니다.  
+- 다음 코드를 사용하여 IDXGraphicsAnalysis 인터페이스를 DXGI 디버그 인터페이스에 연결합니다.  
   
-    ```cpp
-    IDXGraphicsAnalysis* pGraphicsAnalysis;  
-    HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
-    ```  
+  ```cpp
+  IDXGraphicsAnalysis* pGraphicsAnalysis;  
+  HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
+  ```  
   
-     확인 해야 합니다 `HRESULT` 반환한 [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) 사용 하기 전에 올바른 인터페이스를 표시 하도록:  
+   확인 해야 합니다 `HRESULT` 반환한 [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) 사용 하기 전에 올바른 인터페이스를 표시 하도록:  
   
-    ```cpp
-    if (FAILED(getAnalysis))  
-    {  
-        // Abort program or disable programmatic capture in your app.  
-    }  
-    ```  
+  ```cpp
+  if (FAILED(getAnalysis))  
+  {  
+      // Abort program or disable programmatic capture in your app.  
+  }  
+  ```  
   
-    > [!NOTE]
-    >  경우 `DXGIGetDebugInterface1` 반환 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), 그래픽 진단 모드로 앱이 실행 중인지 확인 하십시오 (Alt + F5에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
+  > [!NOTE]
+  >  `DXGIGetDebugInterface1` 이 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`)를 반환하는 경우 앱이 그래픽 진단에서 실행되고 있는지 확인합니다( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]의 Alt+F5)로 앱을 실행해야 합니다.  
   
 ### <a name="capturing-graphics-information"></a>그래픽 정보 캡처  
  이제 유효한 `IDXGraphicsAnalysis` 인터페이스가 있으므로 `BeginCapture` 및 `EndCapture` 를 사용하여 그래픽 정보를 캡처할 수 있습니다.  
@@ -118,5 +118,5 @@ ms.locfileid: "39510428"
   
 ## <a name="see-also"></a>참고 항목  
  [연습: 그래픽 정보 캡처](walkthrough-capturing-graphics-information.md)   
- [그래픽 정보 캡처](capturing-graphics-information.md)   
+ [Capturing Graphics Information](capturing-graphics-information.md)   
  [명령줄 캡처 도구](command-line-capture-tool.md)

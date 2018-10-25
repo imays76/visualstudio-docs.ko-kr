@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b09b5d3a6bb279291df64c0de720ba03f2eee16d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 052c4c59b72d5d7f5c4722fc32efc9ecedb0556b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921966"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>고급 설정 대화 상자(동시성 시각화 도우미)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ ms.locfileid: "49204434"
 ## <a name="files"></a>파일  
  **파일** 탭에서는 추적이 수집될 때마다 저장되는 추적 파일의 디렉터리를 지정할 수 있습니다.  동시성 시각화 도우미는 수집하는 각 추적에 대해 4개의 파일을 생성합니다.  
   
--   커널 모드 ETL(이벤트 추적 로그) 파일(*. kernel.etl)  
+- 커널 모드 ETL(이벤트 추적 로그) 파일(*. kernel.etl)  
   
--   사용자 모드 이벤트 추적 로그 파일(*. user.etl)  
+- 사용자 모드 이벤트 추적 로그 파일(*. user.etl)  
   
--   동시성 시각화 도우미 데이터 파일(*.CVData)  
+- 동시성 시각화 도우미 데이터 파일(*.CVData)  
   
--   동시성 시각화 도우미 추적 파일(*.CVTrace)  
+- 동시성 시각화 도우미 추적 파일(*.CVTrace)  
   
- 두 ETL 파일에는 원시 추적 데이터가 저장되고, 두 동시성 시각화 도우미 파일에는 처리된 데이터가 저장됩니다.  추적이 처리된 다음에는 일반적으로 원시 ETL 파일이 사용되지 않습니다.  **분석 후 ETL(이벤트 추적 로그) 파일 삭제** 확인란을 선택하면 디스크에 저장되는 추적 파일의 양이 줄어듭니다.  
+  두 ETL 파일에는 원시 추적 데이터가 저장되고, 두 동시성 시각화 도우미 파일에는 처리된 데이터가 저장됩니다.  추적이 처리된 다음에는 일반적으로 원시 ETL 파일이 사용되지 않습니다.  **분석 후 ETL(이벤트 추적 로그) 파일 삭제** 확인란을 선택하면 디스크에 저장되는 추적 파일의 양이 줄어듭니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [내 코드만](../profiling/just-my-code-threads-view.md)   

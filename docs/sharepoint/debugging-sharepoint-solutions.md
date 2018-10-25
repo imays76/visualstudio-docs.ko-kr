@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903155"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint 솔루션 디버깅
   사용 하 여 SharePoint 솔루션을 디버깅할 수는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거. 디버깅을 시작할 때 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 서버에 프로젝트 파일을 배포 하 고 다음 웹 브라우저에서 SharePoint 사이트의 인스턴스를 엽니다. 다음 섹션에서는 SharePoint 응용 프로그램에 디버그 하는 방법에 설명 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.  
@@ -43,13 +43,13 @@ ms.locfileid: "36327169"
 ## <a name="enable-debugging"></a>디버깅 사용
  먼저 SharePoint 솔루션에 디버그할 때 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], 대화 상자를 알려 줍니다 web.config 파일에 디버깅을 사용 하도록 하지 않습니다. (Web.config 파일을 SharePoint 서버를 설치할 때 생성 됩니다. 자세한 내용은 [Web.config 파일을 사용 하 여 작업](http://go.microsoft.com/fwlink/?LinkID=149266).) 대화 상자는 디버깅을 사용 하려면 디버깅 하거나 web.config 파일을 수정 하지 않고 프로젝트를 실행 하는의 옵션을 제공 합니다. 첫 번째 옵션을 선택하면 프로젝트가 정상적으로 실행됩니다. 두 번째 옵션을 선택하면 web.config 파일이 다음과 같이 구성됩니다.  
   
--   호출 스택에 있는 설정 (`CallStack="true"`)  
+- 호출 스택에 있는 설정 (`CallStack="true"`)  
   
--   사용자 지정 오류가 비활성화 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
+- 사용자 지정 오류가 비활성화 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
   
--   컴파일 디버깅 사용 (`<compilation debug="true">`)  
+- 컴파일 디버깅 사용 (`<compilation debug="true">`)  
   
- 결과 web.config 파일을 따릅니다.  
+  결과 web.config 파일을 따릅니다.  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -89,24 +89,24 @@ ms.locfileid: "36327169"
 ## <a name="f5-debug-and-deployment-process"></a>F5 디버깅 및 배포 프로세스
  디버그 모드에서 SharePoint 프로젝트를 실행 하는 경우 SharePoint 배포 프로세스는 다음 작업을 수행 합니다.  
   
-1.  사용자 지정 가능한 배포 전 명령을 실행합니다.  
+1. 사용자 지정 가능한 배포 전 명령을 실행합니다.  
   
-2.  사용 하 여 웹 솔루션 패키지 (.wsp) 파일을 만듭니다 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 명령입니다. .Wsp 파일에 모든 필요한 파일 및 기능이 포함 됩니다. 자세한 내용은 [솔루션 개요](http://go.microsoft.com/fwlink/?LinkID=128154)합니다.  
+2. 사용 하 여 웹 솔루션 패키지 (.wsp) 파일을 만듭니다 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 명령입니다. .Wsp 파일에 모든 필요한 파일 및 기능이 포함 됩니다. 자세한 내용은 [솔루션 개요](http://go.microsoft.com/fwlink/?LinkID=128154)합니다.  
   
-3.  SharePoint 솔루션은 팜 솔루션 경우 재생 되는 [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] 지정된 된 사이트에 대 한 응용 프로그램 풀 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]합니다. 이 단계에서 잠긴 파일을 해제 합니다 [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] 작업자 프로세스입니다.  
+3. SharePoint 솔루션은 팜 솔루션 경우 재생 되는 [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] 지정된 된 사이트에 대 한 응용 프로그램 풀 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]합니다. 이 단계에서 잠긴 파일을 해제 합니다 [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] 작업자 프로세스입니다.  
   
-4.  패키지의 이전 버전이 이미 있는 경우 이전 버전의 기능 및.wsp 파일의 파일을 제거 합니다. 이 단계에서는 기능을 비활성화 솔루션 패키지를 제거한 후 SharePoint 서버에 솔루션 패키지를 삭제 합니다.  
+4. 패키지의 이전 버전이 이미 있는 경우 이전 버전의 기능 및.wsp 파일의 파일을 제거 합니다. 이 단계에서는 기능을 비활성화 솔루션 패키지를 제거한 후 SharePoint 서버에 솔루션 패키지를 삭제 합니다.  
   
-5.  .Wsp 파일에서 기능 및 파일의 현재 버전을 설치합니다. 이 단계를 추가 하 고 SharePoint 서버에서 솔루션을 설치 합니다.  
+5. .Wsp 파일에서 기능 및 파일의 현재 버전을 설치합니다. 이 단계를 추가 하 고 SharePoint 서버에서 솔루션을 설치 합니다.  
   
-6.  워크플로의 경우 워크플로 어셈블리를 설치 합니다. 사용 하 여 해당 위치를 변경할 수는 *어셈블리 위치* 속성입니다.  
+6. 워크플로의 경우 워크플로 어셈블리를 설치 합니다. 사용 하 여 해당 위치를 변경할 수는 *어셈블리 위치* 속성입니다.  
   
-7.  사이트 또는 웹 범위인 경우 SharePoint에서 프로젝트의 기능을 활성화 합니다. 팜 및 웹 응용 프로그램 범위에서 기능이 활성화 되지 않습니다.  
+7. 사이트 또는 웹 범위인 경우 SharePoint에서 프로젝트의 기능을 활성화 합니다. 팜 및 웹 응용 프로그램 범위에서 기능이 활성화 되지 않습니다.  
   
-8.  워크플로의 경우 SharePoint 라이브러리, 목록 또는에서 선택한 사이트를 사용 하 여 워크플로 연결 합니다 **SharePoint 사용자 지정 마법사**합니다.  
+8. 워크플로의 경우 SharePoint 라이브러리, 목록 또는에서 선택한 사이트를 사용 하 여 워크플로 연결 합니다 **SharePoint 사용자 지정 마법사**합니다.  
   
-    > [!NOTE]  
-    >  이 연결을 선택한 경우에 발생 **자동으로 연결 워크플로** 마법사에서.  
+   > [!NOTE]  
+   >  이 연결을 선택한 경우에 발생 **자동으로 연결 워크플로** 마법사에서.  
   
 9. 사용자 지정 가능한 배포 후 명령을 실행합니다.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "36327169"
   
 12. 웹 브라우저에서 적절 한 라이브러리, 목록 또는 사이트 페이지를 표시합니다.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 각 작업이 완료 된 후 출력 창에 상태 메시지를 표시 합니다. 작업을 완료할 수 없는 경우 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 오류 목록 창에서 오류 메시지를 표시 합니다.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 각 작업이 완료 된 후 출력 창에 상태 메시지를 표시 합니다. 작업을 완료할 수 없는 경우 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 오류 목록 창에서 오류 메시지를 표시 합니다.  
   
 ## <a name="sharepoint-project-features"></a>SharePoint 프로젝트 기능이
  기능은 이식 가능한 모듈식 단위 사이트 정의 사용 하 여 사이트 수정을 간소화 하는 기능입니다. 패키지 이기도 [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 특정 범위에 대해 활성화 될 수 고 사용자가 특정 목표 또는 작업을 수행 하는 (WSS) 요소입니다. 템플릿 기능으로 배포 됩니다.  
@@ -128,8 +128,8 @@ ms.locfileid: "36327169"
 ## <a name="debug-workflows"></a>워크플로 디버깅
  워크플로 프로젝트를 디버깅할 때 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 목록 또는 라이브러리 (해당 유형)에 따라 워크플로 템플릿을 추가 합니다. 그런 다음 수동으로 또는 추가 하거나 업데이트 하 여 항목 워크플로 서식 파일을 시작할 수 있습니다. 사용할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 워크플로 디버깅 합니다.  
   
-> [!NOTE]  
->  다른 어셈블리에 대 한 참조를 추가 하는 경우 해당 어셈블리를 전역 어셈블리 캐시에 설치 되어 있는지 확인 하십시오 ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). 그렇지 않은 경우 워크플로 솔루션 실패 합니다. 어셈블리를 설치 하는 방법에 대 한 정보를 참조 하세요 [수동으로 문서 또는 항목에서 워크플로 시작](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)합니다.  
+> [!NOTE]
+>  다른 어셈블리에 대 한 참조를 추가 하는 경우 해당 어셈블리를 전역 어셈블리 캐시에 설치 되어 있는지 확인 하십시오 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). 그렇지 않은 경우 워크플로 솔루션 실패 합니다. 어셈블리를 설치 하는 방법에 대 한 정보를 참조 하세요 [수동으로 문서 또는 항목에서 워크플로 시작](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)합니다.  
   
  그러나 배포 프로세스는 워크플로 시작 하지 않습니다. SharePoint 웹 사이트에서 워크플로 시작 해야 합니다. 또한 Microsoft Office Word 2010 같은 클라이언트 응용 프로그램을 사용 하 여 또는 별도 서버 쪽 코드를 사용 하 여 워크플로 시작할 수 있습니다. 에 지정 된 방법 중 하나를 사용 합니다 **SharePoint 사용자 지정 마법사**합니다.  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920668"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML 모델에 대한 유효성 검사 제약 조건 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ ms.locfileid: "49176542"
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>자체 VSIX에서 유효성 검사 확장을 만들려면  
   
-1.  **새 프로젝트** 대화 상자의 **모델링 프로젝트**에서 **유효성 검사 확장**을 선택합니다.  
+1. **새 프로젝트** 대화 상자의 **모델링 프로젝트**에서 **유효성 검사 확장**을 선택합니다.  
   
-2.  새 프로젝트에서 **.cs** 파일을 열고 클래스를 수정하여 유효성 검사 제약 조건을 구현합니다.  
+2. 새 프로젝트에서 **.cs** 파일을 열고 클래스를 수정하여 유효성 검사 제약 조건을 구현합니다.  
   
-     자세한 내용은 [유효성 검사 제약 조건 평가](#Implementing)를 참조하세요.  
+    자세한 내용은 [유효성 검사 제약 조건 평가](#Implementing)를 참조하세요.  
   
-    > [!IMPORTANT]
-    >  **.cs** 파일에 다음 `using` 문이 포함되어 있는지 확인합니다.  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  **.cs** 파일에 다음 `using` 문이 포함되어 있는지 확인합니다.  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  새 메서드를 정의하여 다른 제약 조건을 추가할 수 있습니다. 메서드를 유효성 검사 메서드로 식별하려면 초기 유효성 검사 메서드와 동일한 방식으로 특성을 사용하여 태그를 지정해야 합니다.  
+3. 새 메서드를 정의하여 다른 제약 조건을 추가할 수 있습니다. 메서드를 유효성 검사 메서드로 식별하려면 초기 유효성 검사 메서드와 동일한 방식으로 특성을 사용하여 태그를 지정해야 합니다.  
   
-4.  F5 키를 눌러 제약 조건을 테스트합니다. 자세한 내용은 [유효성 검사 제약 조건 실행](#Executing)을 참조하세요.  
+4. F5 키를 눌러 제약 조건을 테스트합니다. 자세한 내용은 [유효성 검사 제약 조건 실행](#Executing)을 참조하세요.  
   
-5.  파일을 복사 하 여 메뉴 명령을 다른 컴퓨터에 설치 **bin\\\*\\\*.vsix** 프로젝트에서 빌드된 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.  
+5. 파일을 복사 하 여 메뉴 명령을 다른 컴퓨터에 설치 **bin\\\*\\\*.vsix** 프로젝트에서 빌드된 합니다. 자세한 내용은 [확장 설치 및 제거](#Installing)를 참조하세요.  
   
- 다른 **.cs** 파일을 추가하는 경우 일반적으로 다음 `using` 문이 필요합니다.  
+   다른 **.cs** 파일을 추가하는 경우 일반적으로 다음 `using` 문이 필요합니다.  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 오류 목록에 `"error string"`이 표시됩니다.  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 오류 목록에 `"error string"`이 표시됩니다.  
   
--   `errorCode`는 오류의 고유 식별자여야 하는 문자열입니다.  
+- `errorCode`는 오류의 고유 식별자여야 하는 문자열입니다.  
   
--   `elementsWithError`는 모델의 요소를 식별합니다. 사용자가 오류 보고서를 두 번 클릭하면 이 요소를 나타내는 모양이 선택됩니다.  
+- `elementsWithError`는 모델의 요소를 식별합니다. 사용자가 오류 보고서를 두 번 클릭하면 이 요소를 나타내는 모양이 선택됩니다.  
   
- `LogError(),` `LogWarning()` 및 `LogMessage()`는 오류 목록의 서로 다른 섹션에 메시지를 배치합니다.  
+  `LogError(),` `LogWarning()` 및 `LogMessage()`는 오류 목록의 서로 다른 섹션에 메시지를 배치합니다.  
   
 ## <a name="how-validation-methods-are-applied"></a>유효성 검사 메서드가 적용되는 방법  
  유효성 검사는 클래스의 특성 및 작업의 매개 변수와 같은 더 큰 요소의 부분과 관계를 포함하여 모델의 모든 요소에 적용됩니다.  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>확장을 제거하려면  
   
-1.  **도구** 메뉴 모음에서 **확장 및 업데이트**를 선택합니다.  
+1. **도구** 메뉴 모음에서 **확장 및 업데이트**를 선택합니다.  
   
-2.  **설치된 확장**을 확장합니다.  
+2. **설치된 확장**을 확장합니다.  
   
-3.  확장을 선택하고 **제거**를 선택합니다.  
+3. 확장을 선택하고 **제거**를 선택합니다.  
   
- 드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수는 경우 여기서 *% LocalAppData %* 일반적으로 *DriveName*: \Users\\*사용자이름*\AppData\Local:  
+   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수는 경우 여기서 *% LocalAppData %* 일반적으로 *DriveName*: \Users\\*사용자이름*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ##  <a name="Example"></a> 예제  
  이 예제에서는 요소 간 종속성 관계에서 루프를 찾습니다.  
