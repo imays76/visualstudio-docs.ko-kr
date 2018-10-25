@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898826"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity 사용
 
@@ -33,31 +33,31 @@ Unity 엔진은 MonoBehaviour 스크립트에 메시지를 전송하므로 개�
 
 그러나 Mac용 Visual Studio Tools for Unity는 IntelliSense 기능을 Unity 메시지로 확장합니다. 따라서 MonoBehaviour 스크립트에서 Unity 메시지를 쉽게 구현하고 Unity API를 원활하게 학습할 수 있습니다. Unity 메시지에 대해 IntelliSense를 사용하는 방법은 다음과 같습니다.
 
-1.  MonoBehaviour에서 파생된 클래스 본문 안에서 새 줄에 커서를 놓습니다.
+1. MonoBehaviour에서 파생된 클래스 본문 안에서 새 줄에 커서를 놓습니다.
 
-2.  `OnTriggerEnter`와 같은 Unity 메시지 이름을 입력합니다.
+2. `OnTriggerEnter`와 같은 Unity 메시지 이름을 입력합니다.
 
-3.  글자 “**ont**”를 입력하면 IntelliSense 제안 목록이 나타납니다.
+3. 글자 “**ont**”를 입력하면 IntelliSense 제안 목록이 나타납니다.
 
-  ![IntelliSense 사용](media/using-vsmac-tools-unity-image2.png)
+   ![IntelliSense 사용](media/using-vsmac-tools-unity-image2.png)
 
-4.  세 가지 방법으로 목록의 선택 항목을 변경할 수 있습니다.
+4. 세 가지 방법으로 목록의 선택 항목을 변경할 수 있습니다.
 
-    * **위쪽** 및 **아래쪽** 화살표 키를 사용합니다.
+   * **위쪽** 및 **아래쪽** 화살표 키를 사용합니다.
 
-    * 원하는 항목을 마우스로 클릭합니다.
+   * 원하는 항목을 마우스로 클릭합니다.
 
-    * 원하는 항목의 이름을 계속 입력합니다.
+   * 원하는 항목의 이름을 계속 입력합니다.
 
-5.  IntelliSense에서는 다음과 같은 방법으로 필요한 매개 변수를 모두 포함하는 선택한 Unity 메시지를 삽입할 수 있습니다.
+5. IntelliSense에서는 다음과 같은 방법으로 필요한 매개 변수를 모두 포함하는 선택한 Unity 메시지를 삽입할 수 있습니다.
 
-    * **Tab** 키를 누릅니다.
+   * **Tab** 키를 누릅니다.
 
-    * **Return** 키를 누릅니다.
+   * **Return** 키를 누릅니다.
 
-    * 선택한 항목을 두 번 클릭합니다.
+   * 선택한 항목을 두 번 클릭합니다.
 
-  ![IntelliSense에서 Unity 메시지 삽입](media/using-vsmac-tools-unity-image3.png)
+   ![IntelliSense에서 Unity 메시지 삽입](media/using-vsmac-tools-unity-image3.png)
 
 ## <a name="adding-new-unity-files-and-folders"></a>새 Unity 파일 및 폴더 추가
 
@@ -93,22 +93,22 @@ Mac용 Visual Studio로 Unity 프로젝트를 디버그할 수 있습니다.
 
 디버깅을 시작하려면
 
-1.  **재생** 단추를 클릭하거나 **Command+Return** 또는 **F5** 키를 눌러 Visual Studio를 Unity에 연결합니다.
+1. **재생** 단추를 클릭하거나 **Command+Return** 또는 **F5** 키를 눌러 Visual Studio를 Unity에 연결합니다.
 
-  ![Visual Studio에서 [재생] 클릭](media/using-vsmac-tools-unity-image5.png)
+   ![Visual Studio에서 [재생] 클릭](media/using-vsmac-tools-unity-image5.png)
 
-2.  Unity로 전환하고 **Play**(플레이) 단추를 클릭하여 편집기에서 게임을 실행합니다.
+2. Unity로 전환하고 **Play**(플레이) 단추를 클릭하여 편집기에서 게임을 실행합니다.
 
-  ![Unity에서 Play([플레이]) 클릭](media/using-vsmac-tools-unity-image6.png)
+   ![Unity에서 Play([플레이]) 클릭](media/using-vsmac-tools-unity-image6.png)
 
-3.  Visual Studio에 연결된 Unity 편집기에서 게임을 실행하면 중단점에 도달할 때 게임 실행이 일시 중지되고 게임이 중단점에 도달한 코드 줄이 Mac용 Visual Studio에 표시됩니다.
+3. Visual Studio에 연결된 Unity 편집기에서 게임을 실행하면 중단점에 도달할 때 게임 실행이 일시 중지되고 게임이 중단점에 도달한 코드 줄이 Mac용 Visual Studio에 표시됩니다.
 
 ### <a name="stop-debugging"></a>디버깅 중지
 
 디버깅을 중지하려면
 
-1.  Mac용 Visual Studio에서 **중지** 단추를 클릭하거나 **Shift+Command+Return**을 누릅니다.
+1. Mac용 Visual Studio에서 **중지** 단추를 클릭하거나 **Shift+Command+Return**을 누릅니다.
 
-  ![Visual Studio에서 [중지] 클릭](media/using-vsmac-tools-unity-image7.png)
+   ![Visual Studio에서 [중지] 클릭](media/using-vsmac-tools-unity-image7.png)
 
 Mac용 Visual Studio의 디버깅에 대한 자세한 내용은 [Using the debugger](https://docs.microsoft.com/visualstudio/mac/debugging)(디버거 사용)를 참조하세요.

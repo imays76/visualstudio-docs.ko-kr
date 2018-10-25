@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f99c761eb10a80fa8a32413b03b42840a752540
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6cd80b00cc6c22a4e683f1ba329665de332bf299
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926568"
 ---
 # <a name="keybindings-element"></a>KeyBindings 요소
 KeyBindings 요소 그룹 KeyBinding 요소 및 다른 KeyBindings 그룹화 합니다.  
@@ -57,7 +57,7 @@ KeyBindings 요소 그룹 KeyBinding 요소 및 다른 KeyBindings 그룹화 합
 |-------------|-----------------|  
 |[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의 합니다.|  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```xml  
 <KeyBindings>  

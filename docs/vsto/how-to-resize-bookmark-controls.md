@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924839"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>방법: 책갈피 컨트롤 크기 조정
   Microsoft Office Word 문서에 추가할 때 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤의 크기를 설정합니다. 나중에 크기를 조정할 수도 있습니다.  
@@ -30,21 +30,21 @@ ms.locfileid: "35673955"
   
  책갈피의 크기를 조정하는 방법은 세 가지가 있습니다.  
   
--   <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤에서 텍스트를 추가하거나 제거합니다.  
+- <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤에서 텍스트를 추가하거나 제거합니다.  
   
-     책갈피에서 텍스트를 추가할 때마다 새 텍스트를 포함하기 위해 책갈피의 크기가 자동으로 커집니다. 텍스트를 삭제하면 책갈피의 크기가 자동으로 줄어듭니다.  
+   책갈피에서 텍스트를 추가할 때마다 새 텍스트를 포함하기 위해 책갈피의 크기가 자동으로 커집니다. 텍스트를 삭제하면 책갈피의 크기가 자동으로 줄어듭니다.  
   
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 컨트롤의 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 및 <xref:Microsoft.Office.Tools.Word.Bookmark> 속성을 바꿉니다.  
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 컨트롤의 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 및 <xref:Microsoft.Office.Tools.Word.Bookmark> 속성을 바꿉니다.  
   
-     이 방법은 몇 개의 문자만으로 크기를 변경하는 경우 유용합니다.  
+   이 방법은 몇 개의 문자만으로 크기를 변경하는 경우 유용합니다.  
   
--   <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 다시 만듭니다.  
+- <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 다시 만듭니다.  
   
-     이 방법은 책갈피의 크기 또는 위치를 대폭 변경할 경우 유용합니다.  
+   이 방법은 책갈피의 크기 또는 위치를 대폭 변경할 경우 유용합니다.  
   
- 문서 수준 프로젝트에서 디자인 타임 또는 런타임에 프로젝트의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가할 수 있습니다. VSTO 추가 기능 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Bookmark> 런타임에 열려 있는 문서에 컨트롤입니다. 자세한 내용은 [방법: Word 문서에 책갈피 추가 제어](../vsto/how-to-add-bookmark-controls-to-word-documents.md)입니다.  
+  문서 수준 프로젝트에서 디자인 타임 또는 런타임에 프로젝트의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가할 수 있습니다. VSTO 추가 기능 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Bookmark> 런타임에 열려 있는 문서에 컨트롤입니다. 자세한 내용은 [방법: Word 문서에 책갈피 추가 제어](../vsto/how-to-add-bookmark-controls-to-word-documents.md)입니다.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="change-the-start-and-end-properties"></a>Start 및 end 속성 변경  
   

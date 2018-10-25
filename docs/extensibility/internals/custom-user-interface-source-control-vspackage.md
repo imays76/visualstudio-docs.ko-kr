@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0de4c08857fd1d25c3dabdcdf06daad362dd13ad
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bc8158325d975aec4bd522fddad2375001d2f72e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919353"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>사용자 지정 사용자 인터페이스 (소스 제어 VSPackage)
 VSPackage는 해당 메뉴 항목 및 Visual Studio 명령 테이블을 통해 기본 상태로 선언 (*.vsct*) 파일입니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE)는 VSPackage가 로드 될 때까지 기본 상태로 메뉴 항목을 표시 합니다. 이후에 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메뉴 항목을 사용할지 여부를 호출 합니다.  
@@ -38,25 +38,25 @@ VSPackage는 해당 메뉴 항목 및 Visual Studio 명령 테이블을 통해 �
   
  다음은 소스 제어 VSPackage의 활성 상태에 영향을 받는 인터페이스를 보여 줍니다.  
   
--   프로젝트 문서 이벤트를 추적 합니다.  
+- 프로젝트 문서 이벤트를 추적 합니다.  
   
--   솔루션 이벤트입니다.  
+- 솔루션 이벤트입니다.  
   
--   솔루션 지 속성 인터페이스입니다. 비활성 하는 경우 패키지를 작성 하지 말아야 *.sln* 하 고 *.suo* 파일입니다.  
+- 솔루션 지 속성 인터페이스입니다. 비활성 하는 경우 패키지를 작성 하지 말아야 *.sln* 하 고 *.suo* 파일입니다.  
   
--   Extender 속성입니다.  
+- Extender 속성입니다.  
   
- 필수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, 또한 소스 컨트롤과 연결 된 모든 선택적 인터페이스 호출 되지 않습니다 때 소스 제어 VSPackage 활성 상태가 아닙니다.  
+  필수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, 또한 소스 컨트롤과 연결 된 모든 선택적 인터페이스 호출 되지 않습니다 때 소스 제어 VSPackage 활성 상태가 아닙니다.  
   
- 경우는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령 UI 컨텍스트의 현재 기본 소스 제어 VSPackage id입니다. ID로 설정 이렇게 하면 현재 소스 제어 VSPackage를 실제로 로드 하지 않고 IDE에 표시 하기 위해 VSPackage의 정적 UI. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage 등록에 대 한 일시 중지 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 를 통해를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> VSPackage에 대 한 모든 호출 하기 전에 합니다.  
+  경우는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령 UI 컨텍스트의 현재 기본 소스 제어 VSPackage id입니다. ID로 설정 이렇게 하면 현재 소스 제어 VSPackage를 실제로 로드 하지 않고 IDE에 표시 하기 위해 VSPackage의 정적 UI. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage 등록에 대 한 일시 중지 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 를 통해를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> VSPackage에 대 한 모든 호출 하기 전에 합니다.  
   
- 다음 표에서 방법에 대 한 특정 세부 정보를 설명 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 다른 UI 항목을 숨깁니다.  
+  다음 표에서 방법에 대 한 특정 세부 정보를 설명 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 다른 UI 항목을 숨깁니다.  
   
-|UI 항목|설명|  
-|-------------|-----------------|  
-|메뉴 및 도구 모음|소스 제어 패키지에서 원본 제어 패키지 ID를 초기 메뉴 및 도구 모음 표시 상태를 설정 해야 합니다는 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) 섹션을 *.vsct* 파일입니다. 그러면 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage를 로드 하 고의 구현을 호출 하지 않고 메뉴 항목의 상태를 적절 하 게 설정 하는 IDE를 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드.|  
-|도구 창|소스 제어 VSPackage 비활성 만들어질 경우 소유 하 고 있는 모든 도구 창을 숨깁니다.|  
-|소스 제어 VSPackage 별 옵션 페이지|레지스트리 키 **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** 있습니다 VSPackage 해당 옵션 페이지가 표시 되도록이 필요로 하는 컨텍스트를 설정 합니다. 이 키에서 레지스트리 항목을 소스 제어 서비스의 ID (SID) 서비스를 사용 하 여 1의 DWORD 값을 할당 하 여 만들 수 것입니다. VSPackage는 UI 이벤트가 발생할 때마다 컨텍스트에서 소스 제어 VSPackage 등록 된 활성 상태인 경우 호출 됩니다.|  
+| UI 항목 | 설명 |
+| - | - |
+| 메뉴 및 도구 모음 | 소스 제어 패키지에서 원본 제어 패키지 ID를 초기 메뉴 및 도구 모음 표시 상태를 설정 해야 합니다는 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) 섹션을 *.vsct* 파일입니다. 그러면 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage를 로드 하 고의 구현을 호출 하지 않고 메뉴 항목의 상태를 적절 하 게 설정 하는 IDE를 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드. |
+| 도구 창 | 소스 제어 VSPackage 비활성 만들어질 경우 소유 하 고 있는 모든 도구 창을 숨깁니다. |
+| 소스 제어 VSPackage 별 옵션 페이지 | 레지스트리 키 **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** 있습니다 VSPackage 해당 옵션 페이지가 표시 되도록이 필요로 하는 컨텍스트를 설정 합니다. 이 키에서 레지스트리 항목을 소스 제어 서비스의 ID (SID) 서비스를 사용 하 여 1의 DWORD 값을 할당 하 여 만들 수 것입니다. VSPackage는 UI 이벤트가 발생할 때마다 컨텍스트에서 소스 제어 VSPackage 등록 된 활성 상태인 경우 호출 됩니다. |
   
 ## <a name="see-also"></a>참고자료  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>   

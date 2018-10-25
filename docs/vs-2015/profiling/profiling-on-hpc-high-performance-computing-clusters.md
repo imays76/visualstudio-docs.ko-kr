@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920367"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC(High Performance Computing) 클러스터에서 프로파일링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "49178947"
 ## <a name="prerequisites"></a>전제 조건  
  HPC 컴퓨터 노드에서 프로파일링하려면 다음을 수행해야 합니다.  
   
--   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]과 같은 컴퓨터에 Microsoft HPC 팩 2008을 설치합니다. 컴퓨터는 HPC 클러스터의 일부분이 아니어도 됩니다. HPC 팩은 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=177414)에서 설치할 수 있습니다.  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]과 같은 컴퓨터에 Microsoft HPC 팩 2008을 설치합니다. 컴퓨터는 HPC 클러스터의 일부분이 아니어도 됩니다. HPC 팩은 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=177414)에서 설치할 수 있습니다.  
   
--   [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 및 독립 실행형 버전의 프로파일링 도구를 HPC 컴퓨터 노드에 설치합니다. [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 및 독립 실행형 프로파일러의 설치 프로그램은 모두 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 설치 미디어에 포함되어 있습니다. **참고** [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]를 설치한 후 프로파일링 도구를 설치하기 전에 컴퓨터를 다시 시작해야 합니다.  
+- [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 및 독립 실행형 버전의 프로파일링 도구를 HPC 컴퓨터 노드에 설치합니다. [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 및 독립 실행형 프로파일러의 설치 프로그램은 모두 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 설치 미디어에 포함되어 있습니다. **참고** [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]를 설치한 후 프로파일링 도구를 설치하기 전에 컴퓨터를 다시 시작해야 합니다.  
   
- 활성 HPC 컴퓨터 노드에 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 및 독립 실행형 프로파일링 도구를 설치하고 클러스터 컴퓨터에 대한 프로파일링을 활성화하려면 다음 단계를 수행합니다.  
+  활성 HPC 컴퓨터 노드에 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 및 독립 실행형 프로파일링 도구를 설치하고 클러스터 컴퓨터에 대한 프로파일링을 활성화하려면 다음 단계를 수행합니다.  
   
 1.  HPC 팩과 함께 설치된 명령 프롬프트 창을 엽니다.  
   

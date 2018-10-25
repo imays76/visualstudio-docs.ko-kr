@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d62c68bfc8e43370105a94818437bb0cfa2221e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b707f63aaf9e4873fe851c9b9db1d175fdb51ce2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926477"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-디버그 엔진 (DEs) 및 세션 디버그 관리자 (SDM)를 사용할 수에서 지정 된 프로그램 노드를 제거 합니다.  
+가용성을 디버그 엔진 (DEs) 및 세션 디버그 관리자 (SDM)에서 지정한 프로그램 노드를 제거 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,15 +41,15 @@ int UnpublishProgramNode(
   
 #### <a name="parameters"></a>매개 변수  
  `pProgramNode`  
- [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 제거 하 고 프로그램 노드를 나타내는 개체입니다.  
+ [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 제거할 프로그램 노드를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 제거 되 면 프로그램 노드는 프로그램 정보를 쿼리할 수 없습니다.  
+ 제거 되 면 프로그램 노드가 더 이상 사용할 수 프로그램 정보를 쿼리할 수 없습니다.  
   
- 호출 프로그램 노드를 사용 하려면는 [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) 메서드.  
+ 프로그램 노드를 사용할 수 있도록 호출을 [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

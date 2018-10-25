@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919342"
 ---
 # <a name="develop-tests-from-a-model"></a>모델에서 테스트 개발
 요구 사항 및 아키텍처 모델을 사용하여 시스템 및 해당 구성 요소의 테스트를 구성하도록 지원할 수 있습니다. 이렇게 하면 사용자 및 기타 이해 관계자에게 중요한 요구 사항을 테스트하는지 확인할 수 있고 요구 사항이 변경될 때 테스트를 빠르게 업데이트할 수 있습니다. [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]를 사용하는 경우 모델과 테스트 간의 링크를 유지할 수도 있습니다.
@@ -59,19 +59,19 @@ ms.locfileid: "47859785"
 
 ###### <a name="to-link-tests-to-a-use-case"></a>사용 사례에 테스트를 연결하려면
 
-1.  [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다.
+1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다.
 
-     만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목을 Team Foundation을 사용 하 여 프로젝트를 사용 하는 프로세스 템플릿에 따라 수 있습니다. 자세한 내용은 [에 대 한 Agile 도구 및 Agile 프로젝트 관리](/azure/devops/boards/backlogs/overview?view=vsts)합니다.
+    만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목을 Team Foundation을 사용 하 여 프로젝트를 사용 하는 프로세스 템플릿에 따라 수 있습니다. 자세한 내용은 [에 대 한 Agile 도구 및 Agile 프로젝트 관리](/azure/devops/boards/backlogs/overview?view=vsts)합니다.
 
-2.  모델에서 하나 이상의 사용 사례에 요구 사항 작업 항목을 연결합니다.
+2. 모델에서 하나 이상의 사용 사례에 요구 사항 작업 항목을 연결합니다.
 
-     사용 사례 다이어그램에서 사용 사례를 마우스 오른쪽 단추로 클릭 하 고 클릭 **작업 항목에 링크**합니다.
+    사용 사례 다이어그램에서 사용 사례를 마우스 오른쪽 단추로 클릭 하 고 클릭 **작업 항목에 링크**합니다.
 
-3.  테스트 도구 모음에 사용 사례를 확인하는 테스트 사례를 추가합니다.
+3. 테스트 도구 모음에 사용 사례를 확인하는 테스트 사례를 추가합니다.
 
- 일반적으로 각 사용자 스토리 또는 요구 사항 작업 항목은 모델의 여러 사용 사례에 연결되며, 각 사용 사례는 여러 사용자 스토리 또는 요구 사항에 연결됩니다. 이는 각 사용자 스토리 또는 요구 사항이 여러 사용 사례를 개발하는 작업 집합을 포함하기 때문입니다. 예를 들어 프로젝트의 초기 반복에서 고객이 카탈로그에서 항목을 선택하고 배달시킬 수 있는 기본 사용자 스토리를 개발할 수 있습니다. 이후 반복에서는 사용자가 주문을 완료할 때 대금을 지불하고 공급자가 상품을 보낸 후 돈을 받는 스토리일 수 있습니다.  각 스토리에서 상품 주문 사용 사례의 사후 조건에 절을 추가합니다.
+   일반적으로 각 사용자 스토리 또는 요구 사항 작업 항목은 모델의 여러 사용 사례에 연결되며, 각 사용 사례는 여러 사용자 스토리 또는 요구 사항에 연결됩니다. 이는 각 사용자 스토리 또는 요구 사항이 여러 사용 사례를 개발하는 작업 집합을 포함하기 때문입니다. 예를 들어 프로젝트의 초기 반복에서 고객이 카탈로그에서 항목을 선택하고 배달시킬 수 있는 기본 사용자 스토리를 개발할 수 있습니다. 이후 반복에서는 사용자가 주문을 완료할 때 대금을 지불하고 공급자가 상품을 보낸 후 돈을 받는 스토리일 수 있습니다.  각 스토리에서 상품 주문 사용 사례의 사후 조건에 절을 추가합니다.
 
- 사용 사례 다이어그램의 별도 주석에 이러한 절을 작성하여 요구 사항과 사후 조건의 절 간에 별도의 링크를 만들 수 있습니다. 각 주석을 요구 사항 작업 항목에 연결하고, 주석을 다이어그램의 사용 사례에 연결할 수 있습니다.
+   사용 사례 다이어그램의 별도 주석에 이러한 절을 작성하여 요구 사항과 사후 조건의 절 간에 별도의 링크를 만들 수 있습니다. 각 주석을 요구 사항 작업 항목에 연결하고, 주석을 다이어그램의 사용 사례에 연결할 수 있습니다.
 
 ### <a name="base-tests-on-the-requirements-types"></a>요구 사항 형식에 따른 테스트
  요구 사항 모델의 형식, 즉 클래스, 인터페이스 및 열거형은 사용자가 비즈니스에 대해 생각하고 전달하는 방식과 관련해서 개념 및 관계를 설명합니다. 시스템의 내부 디자인에만 관련된 형식은 제외됩니다.
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>모델 요소 또는 관계에 테스트를 연결하려면
 
-1.  [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다.
+1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다.
 
-     만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목을 Team Foundation을 사용 하 여 프로젝트를 사용 하는 프로세스 템플릿에 따라 수 있습니다. 자세한 내용은 [에 대 한 Agile 도구 및 Agile 프로젝트 관리](/azure/devops/boards/backlogs/overview?view=vsts)합니다.
+    만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목을 Team Foundation을 사용 하 여 프로젝트를 사용 하는 프로세스 템플릿에 따라 수 있습니다. 자세한 내용은 [에 대 한 Agile 도구 및 Agile 프로젝트 관리](/azure/devops/boards/backlogs/overview?view=vsts)합니다.
 
-2.  모델에서 하나 이상의 요소에 요구 사항 작업 항목을 연결합니다.
+2. 모델에서 하나 이상의 요소에 요구 사항 작업 항목을 연결합니다.
 
-     모델링 다이어그램에서 요소, 주석 또는 관계를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **작업 항목에 링크**합니다.
+    모델링 다이어그램에서 요소, 주석 또는 관계를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **작업 항목에 링크**합니다.
 
-3.  모델 요소에서 표현된 요구 사항을 확인하는 테스트 사례를 테스트 도구 모음에 추가합니다.
+3. 모델 요소에서 표현된 요구 사항을 확인하는 테스트 사례를 테스트 도구 모음에 추가합니다.
 
 ## <a name="see-also"></a>참고 항목
 

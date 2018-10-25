@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bbf07e4b8475c45f5f9ea1818a51b5670e23454
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fb00f8a0986d5ead81e36888a9b714244d1230c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928446"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: 리터럴의 철자가 맞아야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
@@ -42,15 +43,15 @@ ms.locfileid: "49200359"
 ## <a name="rule-description"></a>규칙 설명
  매개 변수 또는 경우에 속성 값으로 전달 되는 리터럴 문자열을 검사 하는이 규칙 또는 다음 경우 중 더 그렇습니다.
 
--   <xref:System.ComponentModel.LocalizableAttribute> 매개 변수 또는 속성의 특성은 설정을 true로 합니다.
+- <xref:System.ComponentModel.LocalizableAttribute> 매개 변수 또는 속성의 특성은 설정을 true로 합니다.
 
--   "Text", "Message" 또는 "캡션"를 포함 하는 매개 변수 또는 속성 이름입니다.
+- "Text", "Message" 또는 "캡션"를 포함 하는 매개 변수 또는 속성 이름입니다.
 
--   Console.Write 또는 Console.WriteLine 메서드에 전달 되는 문자열 매개 변수의 이름이 "value" 또는 "format"입니다.
+- Console.Write 또는 Console.WriteLine 메서드에 전달 되는 문자열 매개 변수의 이름이 "value" 또는 "format"입니다.
 
- 이 규칙 복합 단어를 토큰화 리터럴 문자열을 구문 분석 하 고 각 단어/토큰의 맞춤법을 검사 합니다. 구문 분석 알고리즘에 대 한 자세한 내용은 [CA1704: 식별자에는 정확한 철자를 사용 해야](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)합니다.
+  이 규칙 복합 단어를 토큰화 리터럴 문자열을 구문 분석 하 고 각 단어/토큰의 맞춤법을 검사 합니다. 구문 분석 알고리즘에 대 한 자세한 내용은 [CA1704: 식별자에는 정확한 철자를 사용 해야](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)합니다.
 
- 기본적으로 영어 (en) 버전의 맞춤법 검사기 사용 됩니다.
+  기본적으로 영어 (en) 버전의 맞춤법 검사기 사용 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하는 단어의 철자를 수정 하거나 사용자 지정 사전에 단어를 추가 합니다. 사용자 지정 사전을 사용 하는 방법에 대 한 정보를 참조 하세요 [방법: 코드 분석 사전 사용자 지정](../code-quality/how-to-customize-the-code-analysis-dictionary.md)합니다.

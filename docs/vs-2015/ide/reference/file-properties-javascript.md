@@ -31,12 +31,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909735"
 ---
 # <a name="file-properties-javascript"></a>파일 속성, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ ms.locfileid: "49286290"
 ### <a name="package-action"></a>패키지 작업  
  **패키지 작업** 속성은 빌드가 실행될 때 Visual Studio가 파일로 수행하는 작업을 지정합니다. **패키지 작업**에는 다음과 같은 여러 값 중 하나가 포함될 수 있습니다.  
   
--   **없음** - 파일이 패키지 매니페스트에 포함되지 않습니다. 예를 들어 추가 정보 파일과 같은 문서가 포함된 텍스트 파일이 있습니다.  
+- **없음** - 파일이 패키지 매니페스트에 포함되지 않습니다. 예를 들어 추가 정보 파일과 같은 문서가 포함된 텍스트 파일이 있습니다.  
   
--   **콘텐츠** - 파일이 패키지 매니페스트에 포함됩니다. 예를 들어 이 설정은 .htm, .js, .css, 이미지, 오디오 또는 비디오 파일의 기본값입니다.  
+- **콘텐츠** - 파일이 패키지 매니페스트에 포함됩니다. 예를 들어 이 설정은 .htm, .js, .css, 이미지, 오디오 또는 비디오 파일의 기본값입니다.  
   
--   **매니페스트** –의 파일이 패키지 매니페스트에 포함 되지 않습니다. 대신에 패키지 매니페스트를 생성할 때 파일이 입력에 사용됩니다. 이 값은 package.appxmanifest 파일의 기본값입니다.  
+- **매니페스트** –의 파일이 패키지 매니페스트에 포함 되지 않습니다. 대신에 패키지 매니페스트를 생성할 때 파일이 입력에 사용됩니다. 이 값은 package.appxmanifest 파일의 기본값입니다.  
   
--   **리소스** - 파일이 패키지 매니페스트에 포함되지 않습니다. 대신에 파일 콘텐츠가 패키지 매니페스트로 이동되는 PRI(패키지 리소스 인덱스)로 인덱싱됩니다. 일반적으로 리소스 파일에 사용됩니다.  
+- **리소스** - 파일이 패키지 매니페스트에 포함되지 않습니다. 대신에 파일 콘텐츠가 패키지 매니페스트로 이동되는 PRI(패키지 리소스 인덱스)로 인덱싱됩니다. 일반적으로 리소스 파일에 사용됩니다.  
   
- **패키지 작업**의 기본값은 솔루션에 추가하는 파일의 확장명에 따라 달라집니다.  
+  **패키지 작업**의 기본값은 솔루션에 추가하는 파일의 확장명에 따라 달라집니다.  
   
 ### <a name="file-name-property"></a>파일 이름 속성  
  파일 이름을 읽기 전용 값으로 표시합니다. 파일 이름을 바꾸려면 솔루션 탐색기를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택합니다.  

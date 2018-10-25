@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902874"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE의 선택 및 통화
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,15 +52,15 @@ ms.locfileid: "49270936"
 ### <a name="window-types-and-selection"></a>창 유형 및 선택  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE는 두 가지 일반 유형으로 windows를 구성 합니다.  
   
--   계층 유형을 windows  
+- 계층 유형을 windows  
   
--   도구 및 문서 창 등의 프레임 창  
+- 도구 및 문서 창 등의 프레임 창  
   
- IDE는 다른 방식으로 이러한 각 유형의 창에 대 한 통화를 추적합니다.  
+  IDE는 다른 방식으로 이러한 각 유형의 창에 대 한 통화를 추적합니다.  
   
- 가장 일반적인 프로젝트 형식 IDE 제어 하는 솔루션 탐색기입니다. 현재 계층 구조를 확인 하려면 사용자의 선택 창 사용 및 프로젝트 형식 창 글로벌 계층 및 ItemID 전역 선택 컨텍스트를 추적 합니다. 환경을 프로젝트 형식 창에 대 한 글로벌 서비스를 제공 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>을 통해 어떤 Vspackage 열기 요소에 대 한 현재 값을 모니터링할 수 있습니다. 환경에서 검색 속성은이 글로벌 서비스에 의해 좌우 됩니다.  
+  가장 일반적인 프로젝트 형식 IDE 제어 하는 솔루션 탐색기입니다. 현재 계층 구조를 확인 하려면 사용자의 선택 창 사용 및 프로젝트 형식 창 글로벌 계층 및 ItemID 전역 선택 컨텍스트를 추적 합니다. 환경을 프로젝트 형식 창에 대 한 글로벌 서비스를 제공 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>을 통해 어떤 Vspackage 열기 요소에 대 한 현재 값을 모니터링할 수 있습니다. 환경에서 검색 속성은이 글로벌 서비스에 의해 좌우 됩니다.  
   
- 반면, 프레임 창 선택 영역 컨텍스트 값 (계층/ItemID/SelectionContainer 다음과)에 적용할 DocObject 프레임 창 내에서 사용 합니다. . 서비스를 사용 하는 프레임 창 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 이 목적입니다. ItemID 변경, MDI 자식 문서에 대 한 일반적인 그대로 및 DocObject 푸시할 수 선택 컨테이너에 대 한 값만 계층 구조에 대 한 로컬 값을 유지 합니다.  
+  반면, 프레임 창 선택 영역 컨텍스트 값 (계층/ItemID/SelectionContainer 다음과)에 적용할 DocObject 프레임 창 내에서 사용 합니다. . 서비스를 사용 하는 프레임 창 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 이 목적입니다. ItemID 변경, MDI 자식 문서에 대 한 일반적인 그대로 및 DocObject 푸시할 수 선택 컨테이너에 대 한 값만 계층 구조에 대 한 로컬 값을 유지 합니다.  
   
 ### <a name="events-and-currency"></a>이벤트 및 통화  
  두 가지 유형의 이벤트는 통화의 환경의 개념에 영향을 주는 발생할 수 있습니다.  

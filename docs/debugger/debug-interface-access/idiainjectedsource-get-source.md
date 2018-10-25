@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8331086fff33f247ab030e3736e1e598c3af477d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2966405dfe3bb7e6134f5ef35e55b30ef6c66c6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909910"
 ---
 # <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
 소스 코드 바이트를 검색합니다.  
@@ -36,10 +36,10 @@ HRESULT get_source (
   
 #### <a name="parameters"></a>매개 변수  
  `cbData`  
- [in] 데이터 버퍼의 크기를 나타내는 바이트 수입니다.  
+ [in] 데이터 버퍼의 크기를 나타내는 바이트의 수입니다.  
   
  `pcbData`  
- [out] 반환 된 바이트를 나타내는 바이트 수가 반환 됩니다. 경우 `data` 은 `NULL`, 다음 `pcbData` 는 데이터의 바이트의 총 수를 사용할 수 있는 합니다.  
+ [out] 반환 바이트를 나타내는 바이트 수를 반환 합니다. 하는 경우 `data` 됩니다 `NULL`, 다음 `pcbData` 은 총 데이터의 바이트를 사용할 수 있습니다.  
   
  `data[]`  
  [out] 소스 바이트를 채울 수 있는 버퍼입니다.  

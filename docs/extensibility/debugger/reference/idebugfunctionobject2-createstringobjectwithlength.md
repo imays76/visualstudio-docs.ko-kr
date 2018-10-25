@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01accfb86161880be3d155a0f1751ebd9ac0a5a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e21d89c7c674cd3e7056b5244b7d8b50ae18db6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928219"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-지정 된 길이가 있는 문자열 개체를 만듭니다.  
+지정 된 길이가 지정 된 문자열 개체를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,16 +44,16 @@ int CreateStringObjectWithLength (
   
 #### <a name="parameters"></a>매개 변수  
  `pcstrString`  
- [in] 문자열 개체에 대 한 문자열 값입니다.  
+ [in] 문자열 개체의 문자열 값입니다.  
   
  `uiLength`  
- [in] 바이트에서 문자열의 길이입니다.  
+ [in] 바이트의 문자열 길이입니다.  
   
  `ppObject`  
  [out] 반환 된 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 새로 생성된 된 문자열 개체를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)
