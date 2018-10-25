@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 852bf01278829616a2e8592a8c6ffcbaa87d3628
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72f638a17fd6d49157f13d54a6ec1deba0e2bf27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891195"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>방법: 작업의 오류 무시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "49232468"
   
  `ContinueOnError` 특성은 다음 값 중 하나를 포함할 수 있습니다.  
   
--   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.  
+- **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.  
   
--   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.  
+- **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.  
   
--   **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.  
+- **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.  
   
- .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.  
+  .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.  
   
- `ContinueOnError`의 기본값은 `ErrorAndStop`입니다. 특성을 `ErrorAndStop`으로 설정하면 프로젝트 파일을 읽는 모든 사용자에게 동작이 명시적으로 제시됩니다.  
+  `ContinueOnError`의 기본값은 `ErrorAndStop`입니다. 특성을 `ErrorAndStop`으로 설정하면 프로젝트 파일을 읽는 모든 사용자에게 동작이 명시적으로 제시됩니다.  
   
 #### <a name="to-ignore-an-error-in-a-task"></a>작업의 오류를 무시하려면  
   

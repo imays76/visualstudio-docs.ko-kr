@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b79262762b1841a52be0b401e28217e7b6059c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5a617b4df57cb8b8bc18933ff463d2cba655039a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825396"
 ---
 # <a name="idiasectioncontribgetvirtualaddress"></a>IDiaSectionContrib::get_virtualAddress
-가상 주소 VA 기여도 검색합니다.  
+에 대 한 기여도의 가상 주소 (VA)를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   

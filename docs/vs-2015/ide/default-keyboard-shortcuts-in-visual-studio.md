@@ -20,12 +20,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75ec3e300b0d85b066692a9d67c1bcce39198a79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867379"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio의 기본 바로 가기 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -799,113 +799,113 @@ ms.locfileid: "49247184"
   
 ##  <a name="bkmk_TextEditor"></a> 텍스트 편집기  
   
-|명령|바로 가기 키|  
-|--------------|------------------------|  
-|편집.구분선|Enter 키<br /><br /> 또는<br /><br /> Shift+Enter|  
-|편집.왼쪽문자로|왼쪽 화살표|  
-|편집.왼쪽문자까지선택|Shift+왼쪽 화살표|  
-|편집.왼쪽문자까지열확장선택|Shift+Alt+왼쪽 화살표|  
-|편집.오른쪽문자로|오른쪽 화살표|  
-|편집.오른쪽문자까지선택|Shift+오른쪽 화살표|  
-|편집.오른쪽문자까지열확장선택|Shift+Alt+오른쪽 화살표|  
-|편집.문자바꾸기|Ctrl+T|  
-|편집.책갈피지우기|Ctrl+K, Ctrl+L|  
-|편집.전체개요축소|Ctrl+M, Ctrl+A|  
-|편집.현재영역축소|Ctrl+M, Ctrl+S|  
-|편집.태그축소|Ctrl+M, Ctrl+T|  
-|편집.정의부분만보이기|Ctrl+M, Ctrl+O|  
-|편집.선택영역을주석으로처리|Ctrl+K, Ctrl+C|  
-|편집.단어자동완성|Ctrl+스페이스바<br /><br /> 또는<br /><br /> Alt+오른쪽 화살표|  
-|편집.매개변수팁복사|Ctrl+Shift+Alt+C|  
-|편집.필터수준낮춤|Alt+,|  
-|편집.뒤로삭제|백스페이스<br /><br /> 또는<br /><br /> Shift+백스페이스|  
-|편집.가로공백삭제|Ctrl+K, Ctrl+\|  
-|편집.문서끝으로|Ctrl+End|  
-|편집.문서끝까지선택|Ctrl+Shift+End|  
-|편집.문서시작으로|Ctrl+Home|  
-|편집.문서시작까지선택|Ctrl+Shift+Home|  
-|편집.전체개요확장|Ctrl+M, Ctrl+X|  
-|편집.현재영역확장|Ctrl+M, Ctrl+E|  
-|편집.문서서식|Ctrl+K, Ctrl+D|  
-|편집.선택영역서식|Ctrl+K, Ctrl+F|  
-|Edit.GotoBrace|Ctrl+]|  
-|편집.중괄호로이동확장|Ctrl+Shift+]|  
-|편집.선택영역숨기기|Ctrl+M, Ctrl+H|  
-|편집.필터수준높임|Alt+.|  
-|편집.증분검색|Ctrl+I|  
-|편집.탭삽입|탭|  
-|편집.줄잘라내기|Ctrl+L|  
-|편집.줄삭제|Ctrl+Shift+L|  
-|편집.줄아래로|아래쪽 화살표|  
-|편집.한줄아래까지선택|Shift+아래쪽 화살표|  
-|편집.한줄아래까지열확장선택|Shift+Alt+아래쪽 화살표|  
-|편집.줄끝으로|끝|  
-|편집.줄끝까지선택|Shift+End|  
-|편집.줄끝까지열확장선택|Shift+Alt+End|  
-|편집.위쪽줄열기|Ctrl+Enter|  
-|편집.아래쪽줄열기|Ctrl+Shift+Enter|  
-|편집.줄시작으로|홈|  
-|편집.줄시작까지선택|Shift+Home|  
-|편집.줄시작까지열확장선택|Shift+Alt+Home|  
-|편집.줄바꾸기|Shift+Alt+T|  
-|편집.줄위로|위쪽 화살표|  
-|편집.한줄위까지선택|Shift+위쪽 화살표|  
-|편집.한줄위까지열확장선택|Shift+Alt+위쪽 화살표|  
-|편집.멤버목록|Ctrl+J|  
-|편집.소문자로|Ctrl+U|  
-|편집.대문자로|Ctrl+Shift+U|  
-|Edit.MoveSelectedLinesDown|Alt+아래쪽 화살표|  
-|Edit.MoveSelectedLinesUp|Alt+위쪽 화살표|  
-|편집.다음강조표시참조|Ctrl+Shift+아래쪽 화살표|  
-|편집.겹쳐쓰기모드|Insert|  
-|편집.페이지아래로|PgDn|  
-|편집.한페이지아래까지선택|Shift+PgDn|  
-|편집.페이지위로|PgUp|  
-|편집.한페이지위까지선택|Shift+PgUp|  
-|편집.매개변수정보|Ctrl+Shift+스페이스바|  
-|편집.매개변수팁붙여넣기|Ctrl+Shift+Alt+P|  
-|Edit.PeekBackward|Ctrl+Alt+-|  
-|Edit.PeekDefinition|Alt+F12|  
-|Edit.PeekForward|Ctrl+Alt+=|  
-|편집.이전강조표시참조|Ctrl+Shift+위쪽 화살표|  
-|편집.요약정보|Ctrl+K, Ctrl+I|  
-|편집.역방향증분검색|Ctrl+Shift+I|  
-|편집.아래로줄스크롤|Ctrl+아래쪽 화살표|  
-|편집.위로줄스크롤|Ctrl+위쪽 화살표|  
-|편집.현재단어선택|Ctrl+W|  
-|편집.선택취소|이스케이프|  
-|편집.이전위치까지선택|Ctrl+=|  
-|Edit.ShowCodeLensMenu|Alt+`|  
-|편집.현재숨기기중지|Ctrl+M, Ctrl+U|  
-|편집.개요표시중지|Ctrl+M, Ctrl+P|  
-|편집.앵커바꾸기|Ctrl+K, Ctrl+A|  
-|편집.왼쪽으로탭이동|Shift+Tab 키|  
-|편집.전체개요표시숨기기|Ctrl+M, Ctrl+L|  
-|편집.책갈피설정해제|Ctrl+K, Ctrl+K|  
-|편집.완료모드설정/해제|Ctrl+Alt+스페이스바|  
-|편집.개요확장축소|Ctrl+M, Ctrl+M|  
-|편집.작업목록바로가기설정해제|Ctrl+K, Ctrl+H|  
-|편집.자동줄바꿈설정해제|Ctrl+E, Ctrl+W|  
-|편집.선택영역의주석처리제거|Ctrl+K, Ctrl+U|  
-|편집.뷰맨아래로|Ctrl+PgDn|  
-|편집.뷰맨아래까지선택|Ctrl+Shift+PgDn|  
-|편집.뷰맨위로|Ctrl+PgUp|  
-|편집.뷰맨위까지선택|Ctrl+Shift+PgUp|  
-|편집.공백보기|Ctrl+R, Ctrl+W|  
-|편집.끝까지단어삭제|Ctrl+Delete|  
-|편집.시작까지단어삭제|Ctrl+백스페이스|  
-|편집.다음단어로|Ctrl+오른쪽 화살표|  
-|편집.다음단어까지선택|Ctrl+Shift+오른쪽 화살표|  
-|편집.다음단어까지열확장선택|Ctrl+Shift+Alt+오른쪽 화살표|  
-|편집.이전단어로|Ctrl+왼쪽 화살표|  
-|편집.이전단어까지선택|Ctrl+Shift+왼쪽 화살표|  
-|편집.이전단어까지열확장선택|Ctrl+Shift+Alt+왼쪽 화살표|  
-|편집.단어바꾸기|Ctrl+Shift+T|  
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|Alt+Enter|  
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|Alt+'|  
-|OtherContextMenus.HTMLContext.ViewinPageInspector|Ctrl+K, Ctrl+G|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+PgUp|  
+|                             명령                              |                  바로 가기 키                   |
+|-------------------------------------------------------------------|-------------------------------------------------------|
+|                          편집.구분선                           |     Enter 키<br /><br /> 또는<br /><br /> Shift+Enter      |
+|                           편집.왼쪽문자로                           |                      왼쪽 화살표                       |
+|                        편집.왼쪽문자까지선택                        |                   Shift+왼쪽 화살표                    |
+|                     편집.왼쪽문자까지열확장선택                     |                 Shift+Alt+왼쪽 화살표                  |
+|                          편집.오른쪽문자로                           |                      오른쪽 화살표                      |
+|                       편집.오른쪽문자까지선택                        |                   Shift+오른쪽 화살표                   |
+|                    편집.오른쪽문자까지열확장선택                     |                 Shift+Alt+오른쪽 화살표                 |
+|                        편집.문자바꾸기                         |                        Ctrl+T                         |
+|                        편집.책갈피지우기                        |                    Ctrl+K, Ctrl+L                     |
+|                     편집.전체개요축소                     |                    Ctrl+M, Ctrl+A                     |
+|                    편집.현재영역축소                     |                    Ctrl+M, Ctrl+S                     |
+|                         편집.태그축소                          |                    Ctrl+M, Ctrl+T                     |
+|                    편집.정의부분만보이기                     |                    Ctrl+M, Ctrl+O                     |
+|                       편집.선택영역을주석으로처리                       |                    Ctrl+K, Ctrl+C                     |
+|                         편집.단어자동완성                         | Ctrl+스페이스바<br /><br /> 또는<br /><br /> Alt+오른쪽 화살표 |
+|                       편집.매개변수팁복사                       |                   Ctrl+Shift+Alt+C                    |
+|                     편집.필터수준낮춤                      |                         Alt+,                         |
+|                       편집.뒤로삭제                        |   백스페이스<br /><br /> 또는<br /><br /> Shift+백스페이스   |
+|                  편집.가로공백삭제                  |                    Ctrl+K, Ctrl+\                     |
+|                         편집.문서끝으로                          |                       Ctrl+End                        |
+|                      편집.문서끝까지선택                       |                    Ctrl+Shift+End                     |
+|                        편집.문서시작으로                         |                       Ctrl+Home                       |
+|                     편집.문서시작까지선택                      |                    Ctrl+Shift+Home                    |
+|                      편집.전체개요확장                      |                    Ctrl+M, Ctrl+X                     |
+|                     편집.현재영역확장                      |                    Ctrl+M, Ctrl+E                     |
+|                        편집.문서서식                        |                    Ctrl+K, Ctrl+D                     |
+|                       편집.선택영역서식                        |                    Ctrl+K, Ctrl+F                     |
+|                          Edit.GotoBrace                           |                        Ctrl+]                         |
+|                       편집.중괄호로이동확장                        |                     Ctrl+Shift+]                      |
+|                        편집.선택영역숨기기                         |                    Ctrl+M, Ctrl+H                     |
+|                     편집.필터수준높임                      |                         Alt+.                         |
+|                      편집.증분검색                       |                        Ctrl+I                         |
+|                          편집.탭삽입                           |                          탭                          |
+|                           편집.줄잘라내기                            |                        Ctrl+L                         |
+|                          편집.줄삭제                          |                     Ctrl+Shift+L                      |
+|                           편집.줄아래로                           |                      아래쪽 화살표                       |
+|                        편집.한줄아래까지선택                        |                   Shift+아래쪽 화살표                    |
+|                     편집.한줄아래까지열확장선택                     |                 Shift+Alt+아래쪽 화살표                  |
+|                           편집.줄끝으로                            |                          끝                          |
+|                        편집.줄끝까지선택                         |                       Shift+End                       |
+|                     편집.줄끝까지열확장선택                      |                     Shift+Alt+End                     |
+|                        편집.위쪽줄열기                         |                      Ctrl+Enter                       |
+|                        편집.아래쪽줄열기                         |                   Ctrl+Shift+Enter                    |
+|                          편집.줄시작으로                           |                         홈                          |
+|                       편집.줄시작까지선택                        |                      Shift+Home                       |
+|                    편집.줄시작까지열확장선택                     |                    Shift+Alt+Home                     |
+|                        편집.줄바꾸기                         |                      Shift+Alt+T                      |
+|                            편집.줄위로                            |                       위쪽 화살표                        |
+|                         편집.한줄위까지선택                         |                    Shift+위쪽 화살표                     |
+|                      편집.한줄위까지열확장선택                      |                  Shift+Alt+위쪽 화살표                   |
+|                         편집.멤버목록                          |                        Ctrl+J                         |
+|                        편집.소문자로                         |                        Ctrl+U                         |
+|                        편집.대문자로                         |                     Ctrl+Shift+U                      |
+|                    Edit.MoveSelectedLinesDown                     |                    Alt+아래쪽 화살표                     |
+|                     Edit.MoveSelectedLinesUp                      |                     Alt+위쪽 화살표                      |
+|                   편집.다음강조표시참조                   |                 Ctrl+Shift+아래쪽 화살표                 |
+|                         편집.겹쳐쓰기모드                         |                        Insert                         |
+|                           편집.페이지아래로                           |                         PgDn                          |
+|                        편집.한페이지아래까지선택                        |                      Shift+PgDn                       |
+|                            편집.페이지위로                            |                         PgUp                          |
+|                         편집.한페이지위까지선택                         |                      Shift+PgUp                       |
+|                        편집.매개변수정보                         |                  Ctrl+Shift+스페이스바                  |
+|                      편집.매개변수팁붙여넣기                       |                   Ctrl+Shift+Alt+P                    |
+|                         Edit.PeekBackward                         |                      Ctrl+Alt+-                       |
+|                        Edit.PeekDefinition                        |                        Alt+F12                        |
+|                         Edit.PeekForward                          |                      Ctrl+Alt+=                       |
+|                 편집.이전강조표시참조                 |                  Ctrl+Shift+위쪽 화살표                  |
+|                          편집.요약정보                           |                    Ctrl+K, Ctrl+I                     |
+|                   편집.역방향증분검색                   |                     Ctrl+Shift+I                      |
+|                        편집.아래로줄스크롤                        |                    Ctrl+아래쪽 화살표                    |
+|                         편집.위로줄스크롤                         |                     Ctrl+위쪽 화살표                     |
+|                      편집.현재단어선택                       |                        Ctrl+W                         |
+|                       편집.선택취소                        |                        이스케이프                         |
+|                      편집.이전위치까지선택                      |                        Ctrl+=                         |
+|                       Edit.ShowCodeLensMenu                       |                        Alt +\`                         |
+|                      편집.현재숨기기중지                       |                    Ctrl+M, Ctrl+U                     |
+|                        편집.개요표시중지                         |                    Ctrl+M, Ctrl+P                     |
+|                          편집.앵커바꾸기                          |                    Ctrl+K, Ctrl+A                     |
+|                           편집.왼쪽으로탭이동                            |                       Shift+Tab 키                       |
+|                      편집.전체개요표시숨기기                      |                    Ctrl+M, Ctrl+L                     |
+|                        편집.책갈피설정해제                        |                    Ctrl+K, Ctrl+K                     |
+|                     편집.완료모드설정/해제                     |                    Ctrl+Alt+스페이스바                     |
+|                   편집.개요확장축소                   |                    Ctrl+M, Ctrl+M                     |
+|                    편집.작업목록바로가기설정해제                    |                    Ctrl+K, Ctrl+H                     |
+|                        편집.자동줄바꿈설정해제                        |                    Ctrl+E, Ctrl+W                     |
+|                      편집.선택영역의주석처리제거                      |                    Ctrl+K, Ctrl+U                     |
+|                          편집.뷰맨아래로                          |                       Ctrl+PgDn                       |
+|                       편집.뷰맨아래까지선택                       |                    Ctrl+Shift+PgDn                    |
+|                           편집.뷰맨위로                            |                       Ctrl+PgUp                       |
+|                        편집.뷰맨위까지선택                         |                    Ctrl+Shift+PgUp                    |
+|                        편집.공백보기                        |                    Ctrl+R, Ctrl+W                     |
+|                       편집.끝까지단어삭제                        |                      Ctrl+Delete                      |
+|                      편집.시작까지단어삭제                       |                    Ctrl+백스페이스                     |
+|                           편집.다음단어로                           |                   Ctrl+오른쪽 화살표                    |
+|                        편집.다음단어까지선택                        |                Ctrl+Shift+오른쪽 화살표                 |
+|                     편집.다음단어까지열확장선택                     |              Ctrl+Shift+Alt+오른쪽 화살표               |
+|                         편집.이전단어로                         |                    Ctrl+왼쪽 화살표                    |
+|                      편집.이전단어까지선택                      |                 Ctrl+Shift+왼쪽 화살표                 |
+|                   편집.이전단어까지열확장선택                   |               Ctrl+Shift+Alt+왼쪽 화살표               |
+|                        편집.단어바꾸기                         |                     Ctrl+Shift+T                      |
+|        EditorContextMenus.CodeWindow.ExecuteInInteractive         |                       Alt+Enter                       |
+|      EditorContextMenus.CodeWindow.ExecuteLineInInteractive       |                         Alt+'                         |
+|         OtherContextMenus.HTMLContext.ViewinPageInspector         |                    Ctrl+K, Ctrl+G                     |
+|   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+PgUp                        |
   
 ##  <a name="bkmk_UMLactivityDiagram"></a> UML 동작 다이어그램  
   

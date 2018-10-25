@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ebe9a7d566c1e5b7748f02817564a58fa7eae934
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6d869e3e6be26db871deb3afc7bc398025cc15d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862361"
 ---
 # <a name="how-to-stop-code-changes"></a>방법: 코드 변경 중지
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "49306347"
   
 ### <a name="to-stop-applying-code-changes"></a>코드 변경 내용의 적용을 중지하려면  
   
--   선택할 **코드 변경 내용 적용 중지** 에서 합니다 **디버그** 메뉴.  
+- 선택할 **코드 변경 내용 적용 중지** 에서 합니다 **디버그** 메뉴.  
   
- 이 메뉴 항목은 코드 변경 내용을 적용하는 동안에만 표시됩니다.  
+  이 메뉴 항목은 코드 변경 내용을 적용하는 동안에만 표시됩니다.  
   
- 이 옵션을 선택하면 코드 변경 내용이 커밋되지 않습니다.  
+  이 옵션을 선택하면 코드 변경 내용이 커밋되지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [편집 하며 계속 하기](../debugger/edit-and-continue.md)   

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76648e128db23415d6a986a7d0087968c549bd13
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 56e714f910a2421a909cba6714e65d21b66991ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835841"
 ---
 # <a name="extend-sharepoint-projects"></a>SharePoint 프로젝트 확장
   SharePoint 프로젝트의 프로젝트 수준 기능을 사용자 지정 하려는 경우 프로젝트 확장을 만듭니다. 예를 들어, 사용자 지정 프로젝트 속성을 추가할 수도 있고 사용자는 Visual Studio에서 SharePoint 솔루션을 개발 하는 경우 발생 하는 프로젝트 수준 이벤트에 응답할 수 있습니다.  
@@ -32,11 +32,11 @@ ms.locfileid: "36326010"
   
  프로젝트 확장을 만들 때 SharePoint 프로젝트에도 다음과 같은 기능을 추가할 수 있습니다.  
   
--   바로 가기 메뉴 항목을 추가 합니다. 메뉴 항목에서 SharePoint 프로젝트 노드에 대 한 바로 가기 메뉴를 열면 나타납니다 **솔루션 탐색기** 노드를 마우스 오른쪽 단추로 클릭 하거나 선택 하 고 선택 합니다 **Shift** +  **F10** 키입니다. 자세한 내용은 [방법: SharePoint 프로젝트 바로 가기 메뉴 항목을 추가할](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)합니다.  
+- 바로 가기 메뉴 항목을 추가 합니다. 메뉴 항목에서 SharePoint 프로젝트 노드에 대 한 바로 가기 메뉴를 열면 나타납니다 **솔루션 탐색기** 노드를 마우스 오른쪽 단추로 클릭 하거나 선택 하 고 선택 합니다 **Shift** +  **F10** 키입니다. 자세한 내용은 [방법: SharePoint 프로젝트 바로 가기 메뉴 항목을 추가할](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)합니다.  
   
--   사용자 지정 속성을 추가 합니다. 속성에 표시 된 **속성** 창에서 SharePoint 프로젝트를 선택 하면 **솔루션 탐색기**합니다. 자세한 내용은 [방법: SharePoint 프로젝트에 속성 추가](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)합니다.  
+- 사용자 지정 속성을 추가 합니다. 속성에 표시 된 **속성** 창에서 SharePoint 프로젝트를 선택 하면 **솔루션 탐색기**합니다. 자세한 내용은 [방법: SharePoint 프로젝트에 속성 추가](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)합니다.  
   
- 만들기, 배포 및 프로젝트 확장을 테스트 하는 방법을 보여주는 연습을 참조 하세요 [연습: SharePoint 프로젝트 확장명 만들기](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)합니다.  
+  만들기, 배포 및 프로젝트 확장을 테스트 하는 방법을 보여주는 연습을 참조 하세요 [연습: SharePoint 프로젝트 확장명 만들기](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)합니다.  
   
 ## <a name="understand-the-relationship-between-project-extensions-and-project-instances"></a>프로젝트 확장 및 프로젝트 인스턴스 간의 관계를 이해
  확장 로드에서 모든 종류의 SharePoint 프로젝트를 열면 프로젝트 확장을 만들면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 목록 정의 콘텐츠 형식 및 이벤트 수신기와 같은 여러 SharePoint 프로젝트 템플릿이 포함 되어 있습니다. 그러나 SharePoint 프로젝트 유형이 하나만 있습니다. 에 표시 되는 프로젝트 형식은 합니다 **새 프로젝트** 대화 상자는 하나 이상의 SharePoint 프로젝트 항목을 묶어 템플릿만 합니다. 하나의 SharePoint 프로젝트 형식에 있기 때문에 하나의 프로젝트에 대해 생성 하는 확장 모든 SharePoint 프로젝트에 적용 됩니다. 예를 들어만 적용 되는 확장을 만들 수는 없습니다는 **Content-type** 프로젝트입니다.  

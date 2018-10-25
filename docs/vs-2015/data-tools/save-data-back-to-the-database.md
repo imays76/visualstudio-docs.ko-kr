@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829646"
 ---
 # <a name="save-data-back-to-the-database"></a>데이터를 다시 데이터베이스에 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215165"
   
 데이터 집합에는 데이터의 메모리 내 복사본입니다. 해당 데이터를 수정할 경우 해당 변경 내용을 다시 데이터베이스에 저장 하는 것이 좋습니다. 이렇게 하면 세 가지 방법 중 하나에서:  
   
--   하나를 호출 하 여 `Update` TableAdapter의 메서드  
+- 하나를 호출 하 여 `Update` TableAdapter의 메서드  
   
--   TableAdapter의 DBDirect 메서드 중 하나를 호출 하 여  
+- TableAdapter의 DBDirect 메서드 중 하나를 호출 하 여  
   
--   UpdateAll 메서드를 호출 하 여는 `TableAdapterManager` 데이터 집합에 데이터 집합의 다른 테이블에 관련 테이블을 포함 하는 경우 Visual Studio를 생성 하는  
+- UpdateAll 메서드를 호출 하 여는 `TableAdapterManager` 데이터 집합에 데이터 집합의 다른 테이블에 관련 테이블을 포함 하는 경우 Visual Studio를 생성 하는  
   
- 데이터에 바인딩하는 경우 데이터 집합 테이블을 Windows Form 또는 XAML 페이지 컨트롤에 데이터 바인딩 아키텍처를 모든 작업을 수행 합니다.  
+  데이터에 바인딩하는 경우 데이터 집합 테이블을 Windows Form 또는 XAML 페이지 컨트롤에 데이터 바인딩 아키텍처를 모든 작업을 수행 합니다.  
   
- Tableadapter에 익숙한 경우에 다음이 항목 중 하나에 직접 이동할 수 있습니다.  
+  Tableadapter에 익숙한 경우에 다음이 항목 중 하나에 직접 이동할 수 있습니다.  
   
 |항목|설명|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ ms.locfileid: "49215165"
   
  중간 제약 조건 위반을 방지 하기 위해 업데이트 제약 조건을 일시적으로 중단할 수 있습니다. 이 두 가지 용도로 사용 됩니다.  
   
--   오류가 발생 한 열을 업데이트를 완료 하지만 다른 업데이트를 시작 하지 않은 throw 되지 않도록 합니다.  
+- 오류가 발생 한 열을 업데이트를 완료 하지만 다른 업데이트를 시작 하지 않은 throw 되지 않도록 합니다.  
   
--   특정 업데이트 하는 것을 방지 되는 이벤트 발생 (유효성 검사를 위해 자주 사용 되는 이벤트).  
+- 특정 업데이트 하는 것을 방지 되는 이벤트 발생 (유효성 검사를 위해 자주 사용 되는 이벤트).  
   
- 업데이트를 완료 한 후 다시 활성화할 수 있습니다 제약 조건 검사 이벤트를 발생 시킨 및는 다시 업데이트 이벤트를 사용 하도록 설정 합니다.  
+  업데이트를 완료 한 후 다시 활성화할 수 있습니다 제약 조건 검사 이벤트를 발생 시킨 및는 다시 업데이트 이벤트를 사용 하도록 설정 합니다.  
   
 > [!NOTE]
 >  Datagrid에 기본 제공 되는 데이터 바인딩 아키텍처는 Windows Forms에서 제약 조건 검사 포커스를 행 외부로 이동 하 고 명시적으로 호출할 필요가 없습니다 될 때까지 일시 중단 합니다 <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, 또는 <xref:System.Data.DataRow.CancelEdit%2A> 메서드.  
@@ -177,33 +177,33 @@ ms.locfileid: "49215165"
   
  데이터 소스의 현재 상태를 반영 하는 변경 내용을, 하는 경우이 정보를 유지 관리 해야 하는 더 이상. 일반적으로 두 번 데이터 집합 및 해당 원본에서 동기화는 경우  
   
--   즉시 원본에서 데이터를 읽을 때와 같은 데이터 집합에 정보를 로드 해야 합니다.  
+- 즉시 원본에서 데이터를 읽을 때와 같은 데이터 집합에 정보를 로드 해야 합니다.  
   
--   데이터 집합에서 변경 내용을 데이터 원본에 보내는 후 (전이 아니라 데이터베이스에 변경 내용을 전송 하는 데 필요한 변경 내용은 잃게 되므로).  
+- 데이터 집합에서 변경 내용을 데이터 원본에 보내는 후 (전이 아니라 데이터베이스에 변경 내용을 전송 하는 데 필요한 변경 내용은 잃게 되므로).  
   
- 호출 하 여 데이터 집합에 보류 중인 변경 내용을 커밋할 수 있습니다는 <xref:System.Data.DataSet.AcceptChanges%2A> 메서드. 일반적으로 <xref:System.Data.DataSet.AcceptChanges%2A> 다음 응용 프로그램 시간 중에 호출 됩니다.  
+  호출 하 여 데이터 집합에 보류 중인 변경 내용을 커밋할 수 있습니다는 <xref:System.Data.DataSet.AcceptChanges%2A> 메서드. 일반적으로 <xref:System.Data.DataSet.AcceptChanges%2A> 다음 응용 프로그램 시간 중에 호출 됩니다.  
   
--   한 후 데이터 집합을 로드 합니다. TableAdapter를 호출 하 여 데이터 집합을 로드 하는 경우 `Fill` 메서드를 다음 어댑터 자동으로 변경 내용을 커밋하고 있습니다. 그러나 다른 데이터 집합을 병합 하 여 데이터 집합을 로드 하는 경우 다음 해야 수동으로 변경 내용을 커밋해야 합니다.  
+- 한 후 데이터 집합을 로드 합니다. TableAdapter를 호출 하 여 데이터 집합을 로드 하는 경우 `Fill` 메서드를 다음 어댑터 자동으로 변경 내용을 커밋하고 있습니다. 그러나 다른 데이터 집합을 병합 하 여 데이터 집합을 로드 하는 경우 다음 해야 수동으로 변경 내용을 커밋해야 합니다.  
   
-    > [!NOTE]
-    >  호출할 때 변경 내용을 자동으로 커밋할 어댑터를 방지할 수 있습니다 합니다 `Fill` 설정 하 여 메서드를 `AcceptChangesDuringFill` 어댑터의 속성 `false`합니다. 로 설정 된 경우 `false`, 해당 <xref:System.Data.DataRow.RowState%2A> 로 설정 되어 채우기 중에 삽입 되는 각 행의 <xref:System.Data.DataRowState>합니다.  
+  > [!NOTE]
+  >  호출할 때 변경 내용을 자동으로 커밋할 어댑터를 방지할 수 있습니다 합니다 `Fill` 설정 하 여 메서드를 `AcceptChangesDuringFill` 어댑터의 속성 `false`합니다. 로 설정 된 경우 `false`, 해당 <xref:System.Data.DataRow.RowState%2A> 로 설정 되어 채우기 중에 삽입 되는 각 행의 <xref:System.Data.DataRowState>합니다.  
   
--   한 후 데이터 집합 변경 내용을 XML 웹 서비스와 같은 다른 프로세스에 보냅니다.  
+- 한 후 데이터 집합 변경 내용을 XML 웹 서비스와 같은 다른 프로세스에 보냅니다.  
   
-    > [!CAUTION]
-    >  이 방법은 변경을 커밋한 변경 정보가 지워집니다. 데이터 집합의 어떤 변경 사항이 생겼는지 알아야 응용 프로그램 필요로 하는 작업을 수행 하지 커밋 변경 될 때까지 한 후 완료 수행 합니다.  
+  > [!CAUTION]
+  >  이 방법은 변경을 커밋한 변경 정보가 지워집니다. 데이터 집합의 어떤 변경 사항이 생겼는지 알아야 응용 프로그램 필요로 하는 작업을 수행 하지 커밋 변경 될 때까지 한 후 완료 수행 합니다.  
   
- 이 메서드는 다음을 수행합니다.  
+  이 메서드는 다음을 수행합니다.  
   
--   기록 합니다 <xref:System.Data.DataRowVersion> 버전에는 레코드의 해당 <xref:System.Data.DataRowVersion> 버전 원래 버전을 덮어씁니다.  
+- 기록 합니다 <xref:System.Data.DataRowVersion> 버전에는 레코드의 해당 <xref:System.Data.DataRowVersion> 버전 원래 버전을 덮어씁니다.  
   
--   모든 행을 제거 위치를 <xref:System.Data.DataRow.RowState%2A> 속성이 <xref:System.Data.DataRowState>합니다.  
+- 모든 행을 제거 위치를 <xref:System.Data.DataRow.RowState%2A> 속성이 <xref:System.Data.DataRowState>합니다.  
   
--   설정 된 <xref:System.Data.DataRow.RowState%2A> 는 레코드의 속성 <xref:System.Data.DataRowState>합니다.  
+- 설정 된 <xref:System.Data.DataRow.RowState%2A> 는 레코드의 속성 <xref:System.Data.DataRowState>합니다.  
   
- <xref:System.Data.DataSet.AcceptChanges%2A> 메서드는 세 가지 수준에서 사용할 수 있습니다. 호출할 수 있습니다는 <xref:System.Data.DataRow> 해당 행에 대 한 커밋 개체를 변경 합니다. 호출할 수도 <xref:System.Data.DataTable> 테이블의 모든 행을 커밋하는 개체입니다. 마지막으로,에서 호출할 수는 <xref:System.Data.DataSet> 데이터 집합의 모든 테이블의 모든 레코드의 모든 보류 중인 변경 내용을 커밋하는 개체입니다.  
+  <xref:System.Data.DataSet.AcceptChanges%2A> 메서드는 세 가지 수준에서 사용할 수 있습니다. 호출할 수 있습니다는 <xref:System.Data.DataRow> 해당 행에 대 한 커밋 개체를 변경 합니다. 호출할 수도 <xref:System.Data.DataTable> 테이블의 모든 행을 커밋하는 개체입니다. 마지막으로,에서 호출할 수는 <xref:System.Data.DataSet> 데이터 집합의 모든 테이블의 모든 레코드의 모든 보류 중인 변경 내용을 커밋하는 개체입니다.  
   
- 다음 표에서 변경 내용이 커밋되기에서 메서드는 개체에 따라 설명 합니다.  
+  다음 표에서 변경 내용이 커밋되기에서 메서드는 개체에 따라 설명 합니다.  
   
 |메서드|결과|  
 |------------|------------|  
@@ -221,16 +221,16 @@ ms.locfileid: "49215165"
   
  여러 가지 방법으로 데이터를 확인할 수 있습니다.  
   
--   비즈니스 계층에서 데이터의 유효성을 검사 하도록 응용 프로그램 코드를 추가 하 여 합니다. 데이터 집합을 한 곳이 수행할 수 있습니다. 데이터 집합을 백 엔드 유효성 검사의 장점 중 일부를 제공 합니다.-열 및 행 값을 변경 하는 변경의 유효성을 검사 하는 기능과 같은 합니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)합니다.  
+- 비즈니스 계층에서 데이터의 유효성을 검사 하도록 응용 프로그램 코드를 추가 하 여 합니다. 데이터 집합을 한 곳이 수행할 수 있습니다. 데이터 집합을 백 엔드 유효성 검사의 장점 중 일부를 제공 합니다.-열 및 행 값을 변경 하는 변경의 유효성을 검사 하는 기능과 같은 합니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)합니다.  
   
--   프레젠테이션 레이어의 양식에 유효성 검사를 추가 하 여 합니다. 자세한 내용은 [Windows Forms에서 사용자 입력 유효성 검사](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)합니다.  
+- 프레젠테이션 레이어의 양식에 유효성 검사를 추가 하 여 합니다. 자세한 내용은 [Windows Forms에서 사용자 입력 유효성 검사](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)합니다.  
   
--   데이터 원본에 데이터를 전송 하 여 백 엔드에서 데이터에서-예를 들어 데이터베이스-수락 하거나 데이터를 거부할 수 있도록 지원 합니다. 복잡 한 데이터 유효성 검사 및 오류 정보를 제공 하는 기능에는 데이터베이스를 사용 하 여 작업 하는 경우에서 제공 되는 위치에 관계 없이 데이터의 유효성을 검사 하기 때문에 실질적인 방법이 될 수 있습니다. 그러나이 방법은 응용 프로그램별 유효성 검사 요구 사항을 허용 하지 않을 수 있습니다. 또한 데이터 소스 데이터의 유효성을 검사 수 발생할 다양 한 왕복에 응용 프로그램 백 엔드에 의해 발생 하는 유효성 검사 오류 확인을 용이 하 게 하는 방법에 따라 데이터 원본에 합니다.  
+- 데이터 원본에 데이터를 전송 하 여 백 엔드에서 데이터에서-예를 들어 데이터베이스-수락 하거나 데이터를 거부할 수 있도록 지원 합니다. 복잡 한 데이터 유효성 검사 및 오류 정보를 제공 하는 기능에는 데이터베이스를 사용 하 여 작업 하는 경우에서 제공 되는 위치에 관계 없이 데이터의 유효성을 검사 하기 때문에 실질적인 방법이 될 수 있습니다. 그러나이 방법은 응용 프로그램별 유효성 검사 요구 사항을 허용 하지 않을 수 있습니다. 또한 데이터 소스 데이터의 유효성을 검사 수 발생할 다양 한 왕복에 응용 프로그램 백 엔드에 의해 발생 하는 유효성 검사 오류 확인을 용이 하 게 하는 방법에 따라 데이터 원본에 합니다.  
   
-    > [!IMPORTANT]
-    >  데이터 명령을 사용 하는 경우는 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 로 설정 된 속성 <xref:System.Data.CommandType>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 송신 하려고 할 수 있습니다 (삽입) 하기 위해 무단으로 액세스 하거나 데이터베이스를 손상 시키는 SQL 문을 수정 또는 추가 합니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다. 자세한 내용은 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)를 참조하세요.  
+  > [!IMPORTANT]
+  >  데이터 명령을 사용 하는 경우는 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 로 설정 된 속성 <xref:System.Data.CommandType>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 송신 하려고 할 수 있습니다 (삽입) 하기 위해 무단으로 액세스 하거나 데이터베이스를 손상 시키는 SQL 문을 수정 또는 추가 합니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다. 자세한 내용은 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)를 참조하세요.  
   
- 데이터 집합을 변경한 후에 데이터 원본에 변경 내용을 전송할 수 있습니다. 가장 일반적으로이 호출 하 여 수행 된 `Update` TableAdapter (또는 데이터 어댑터) 메서드. 데이터 테이블의 각 레코드 메서드 반복 어떤 유형의 업데이트가 필요한 확인 (업데이트, 삽입 또는 삭제), 한 다음 적절 한 명령을 실행 합니다.  
+  데이터 집합을 변경한 후에 데이터 원본에 변경 내용을 전송할 수 있습니다. 가장 일반적으로이 호출 하 여 수행 된 `Update` TableAdapter (또는 데이터 어댑터) 메서드. 데이터 테이블의 각 레코드 메서드 반복 어떤 유형의 업데이트가 필요한 확인 (업데이트, 삽입 또는 삭제), 한 다음 적절 한 명령을 실행 합니다.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>데이터 원본에 전송 업데이트  
  업데이트를 적용 하는 방법을 보여 줍니다, 응용 프로그램에서 단일 데이터 테이블을 포함 하는 데이터 집합을 사용 한다고 가정 합니다. 응용 프로그램 데이터베이스에서 두 개의 행을 인출 합니다. 검색이 수행 된 후 메모리 내 데이터 테이블은 다음과 같습니다.  

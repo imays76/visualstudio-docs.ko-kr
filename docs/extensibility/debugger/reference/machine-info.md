@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be6ee66149acb970287628289a15574894b8b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e548552b5acda6a3334b6d7df90b2aeab80c2e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847229"
 ---
 # <a name="machineinfo"></a>MACHINE_INFO
-특정 컴퓨터에 설명합니다.  
+특정 컴퓨터를 설명합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,16 +45,16 @@ public struct MACHINE_INFO {
   
 ## <a name="members"></a>멤버  
  `Fields`  
- 플래그의 조합 된 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 초기화 되는 구조체의 필드를 지정 하는 열거형입니다.  
+ 플래그의 조합을 합니다 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 초기화 되는 구조체의 필드를 지정 하는 열거형입니다.  
   
  `bstrName`  
- 컴퓨터 이름입니다. 호출에 해당 [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)합니다.  
+ 컴퓨터 이름입니다. 호출할 때와 동일한 [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)합니다.  
   
  `Flags`  
  플래그의 조합 된 [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) 컴퓨터 특성을 설명 하는 열거형입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 대 한 호출에서 반환 된 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 메서드.  
+ 이 구조에 대 한 호출에서 반환 되는 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

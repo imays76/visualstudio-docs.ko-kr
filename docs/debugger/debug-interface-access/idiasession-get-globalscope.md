@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c8777ad9309f97c1339b03124bd4bb073df7b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5e52f966a129490907615f6c40f52c7710c09ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850375"
 ---
 # <a name="idiasessiongetglobalscope"></a>IDiaSession::get_globalScope
 전역 범위에 대 한 참조를 검색합니다.  
@@ -37,9 +37,9 @@ HRESULT get_globalScope (
  [out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 전역 범위를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Exe](../../debugger/debug-interface-access/exe.md)   
+ [exe](../../debugger/debug-interface-access/exe.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

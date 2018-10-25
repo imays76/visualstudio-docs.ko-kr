@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873976"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정
   Visual Studio의 Office 개발 도구에는 많은 구현 세부 사항을 처리하는 클래스와 디자이너가 제공되며, 이를 사용하여 VSTO 추가 기능에 사용자 지정 작업창, 리본 사용자 지정, Outlook 양식 영역을 만들 수 있습니다. 하지만 특별한 요구 사항이 있는 경우 각각의 기능에 대한 *확장성 인터페이스* 를 직접 구현할 수도 있습니다.  
@@ -61,17 +61,17 @@ ms.locfileid: "35674789"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>확장성 인터페이스를 구현 하는 예제  
  다음 코드 예제에서는 사용자 지정 작업창을 만들기 위한 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 인터페이스의 간단한 구현을 보여 줍니다. 이 예제에서는 다음 두 개의 클래스를 정의합니다.  
   
--   `TaskPaneHelper` 클래스는 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 를 구현하여 사용자 지정 작업창을 만들고 표시합니다.  
+- `TaskPaneHelper` 클래스는 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 를 구현하여 사용자 지정 작업창을 만들고 표시합니다.  
   
--   `TaskPaneUI` 클래스에서는 작업창의 UI를 제공합니다. `TaskPaneUI` 클래스의 특성은 클래스를 COM에 노출하여 Microsoft Office 응용 프로그램에서 클래스를 검색할 수 있도록 합니다. 이 예제에서 UI는 빈 <xref:System.Windows.Forms.UserControl>이지만 코드를 수정하여 컨트롤을 추가할 수 있습니다.  
+- `TaskPaneUI` 클래스에서는 작업창의 UI를 제공합니다. `TaskPaneUI` 클래스의 특성은 클래스를 COM에 노출하여 Microsoft Office 응용 프로그램에서 클래스를 검색할 수 있도록 합니다. 이 예제에서 UI는 빈 <xref:System.Windows.Forms.UserControl>이지만 코드를 수정하여 컨트롤을 추가할 수 있습니다.  
   
-    > [!NOTE]  
-    >  `TaskPaneUI` 클래스를 COM에 노출하려면 프로젝트에 대해 **COM interop 등록** 속성도 설정해야 합니다.  
+  > [!NOTE]  
+  >  `TaskPaneUI` 클래스를 COM에 노출하려면 프로젝트에 대해 **COM interop 등록** 속성도 설정해야 합니다.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- 구현에 대 한 자세한 내용은 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>를 참조 하세요 [2007 Office system에서 사용자 지정 작업창을 만드는](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) Microsoft Office 설명서에서.  
+  구현에 대 한 자세한 내용은 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>를 참조 하세요 [2007 Office system에서 사용자 지정 작업창을 만드는](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) Microsoft Office 설명서에서.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>RequestService 메서드를 재정의 하는 예  
  다음 코드 예제에서는 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 메서드를 재정의하여 이전 코드 예제의 `TaskPaneHelper` 클래스 인스턴스를 반환하는 방법을 보여 줍니다. 또한 *serviceGuid* 매개 변수 값을 확인하여 요청되는 인터페이스를 파악한 후 이 인터페이스를 구현하는 개체를 반환합니다.  

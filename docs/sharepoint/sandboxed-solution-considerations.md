@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890038"
 ---
 # <a name="sandboxed-solution-considerations"></a>샌드박스 솔루션 고려 사항
   *샌드박스 솔루션* 는 사이트 컬렉션 사용자가 자신의 사용자 지정 코드 솔루션을 업로드할 수 있도록 Microsoft SharePoint 2010의 기능입니다. 일반적인 샌드박스가 적용 된 솔루션은 사용자가 자신의 웹 파트를 업로드 합니다.  
@@ -81,66 +81,66 @@ ms.locfileid: "37119781"
 ## <a name="sandboxed-solution-limitations"></a>샌드박스 솔루션의 제한 사항
  샌드박스 솔루션을 배포 하면 SharePoint 기능을 사용할 수 있는 배열의 있을 보안 취약점을 줄이는 데 도움이 제한 됩니다. 이러한 제한 중 일부는 다음과 같습니다.  
   
--   샌드박스 솔루션 배포 가능한 솔루션 요소에 사용 가능한 제한 된 하위 집합을 포함 합니다. 사이트 정의 워크플로 등의 잠재적으로 취약 한 SharePoint 프로젝트 템플릿은 제공 되지 않습니다.  
+- 샌드박스 솔루션 배포 가능한 솔루션 요소에 사용 가능한 제한 된 하위 집합을 포함 합니다. 사이트 정의 워크플로 등의 잠재적으로 취약 한 SharePoint 프로젝트 템플릿은 제공 되지 않습니다.  
   
--   프로세스에서 샌드박스 솔루션 코드를 실행 하는 SharePoint (*SPUCWorkerProcess.exe*) 주 별도로 [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] 응용 프로그램 풀 (*w3wp.exe*) 프로세스입니다.  
+- 프로세스에서 샌드박스 솔루션 코드를 실행 하는 SharePoint (*SPUCWorkerProcess.exe*) 주 별도로 [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] 응용 프로그램 풀 (*w3wp.exe*) 프로세스입니다.  
   
--   프로젝트에 매핑된 폴더를 추가할 수 없습니다.  
+- 프로젝트에 매핑된 폴더를 추가할 수 없습니다.  
   
--   형식은 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 어셈블리 Microsoft.Office.Server 샌드박스 솔루션에서 사용할 수 없습니다. 또한의 형식만 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 어셈블리 Microsoft.SharePoint 샌드박스 솔루션에서 사용할 수 있습니다.  
+- 형식은 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 어셈블리 Microsoft.Office.Server 샌드박스 솔루션에서 사용할 수 없습니다. 또한의 형식만 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 어셈블리 Microsoft.SharePoint 샌드박스 솔루션에서 사용할 수 있습니다.  
   
- 지정 하면 SharePoint 솔루션을 SharePoint 서버에 영향을 미치지 않습니다를 샌드박스 솔루션으로 반드시 SharePoint 프로젝트에서 SharePoint에 배포 되는 방식을 결정만 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어떤 어셈블리에 바인딩합니다. 생성 된 변경 되지 않습니다 *.wsp* 파일 및 *.wsp* 파일에 직접 상관 관계에 있는 데이터가 없습니다. 합니다 *샌드박스 솔루션* 속성입니다.  
+  지정 하면 SharePoint 솔루션을 SharePoint 서버에 영향을 미치지 않습니다를 샌드박스 솔루션으로 반드시 SharePoint 프로젝트에서 SharePoint에 배포 되는 방식을 결정만 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어떤 어셈블리에 바인딩합니다. 생성 된 변경 되지 않습니다 *.wsp* 파일 및 *.wsp* 파일에 직접 상관 관계에 있는 데이터가 없습니다. 합니다 *샌드박스 솔루션* 속성입니다.  
   
 ## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>샌드박스 솔루션의 기능 및 요소
  샌드박스 솔루션은 다음 기능과 요소를 지원합니다.  
   
--   콘텐츠 형식/필드  
+- 콘텐츠 형식/필드  
   
--   사용자 지정 작업  
+- 사용자 지정 작업  
   
--   선언적 워크플로  
+- 선언적 워크플로  
   
--   이벤트 수신자  
+- 이벤트 수신자  
   
--   기능 설명선  
+- 기능 설명선  
   
--   목록 정의  
+- 목록 정의  
   
--   목록 인스턴스  
+- 목록 인스턴스  
   
--   모듈/파일  
+- 모듈/파일  
   
--   탐색  
+- 탐색  
   
--   *onet.xml*  
+- *onet.xml*  
   
--   SPItemEventReceiver  
+- SPItemEventReceiver  
   
--   SPListEventReceiver  
+- SPListEventReceiver  
   
--   SPWebEventReceiver  
+- SPWebEventReceiver  
   
--   파생 되는 모든 웹 파트에 대 한 지원 `System.Web.UI.WebControls.WebParts.WebPart`  
+- 파생 되는 모든 웹 파트에 대 한 지원 `System.Web.UI.WebControls.WebParts.WebPart`  
   
--   웹 파트  
+- 웹 파트  
   
--   기능 요소 웹 서식 파일 (대신 *Webtemp.xml*)  
+- 기능 요소 웹 서식 파일 (대신 *Webtemp.xml*)  
   
--   비주얼 웹 파트  
+- 비주얼 웹 파트  
   
- 샌드박스 솔루션은 다음 기능과 요소를 지원 하지 않습니다.  
+  샌드박스 솔루션은 다음 기능과 요소를 지원 하지 않습니다.  
   
--   응용 프로그램 페이지  
+- 응용 프로그램 페이지  
   
--   사용자 지정 작업 그룹  
+- 사용자 지정 작업 그룹  
   
--   팜 범위 기능  
+- 팜 범위 기능  
   
--   `HideCustomAction` 요소  
+- `HideCustomAction` 요소  
   
--   웹 응용 프로그램 범위 기능  
+- 웹 응용 프로그램 범위 기능  
   
--   코드를 사용 하 여 워크플로  
+- 코드를 사용 하 여 워크플로  
   
 ## <a name="see-also"></a>참고자료
  [차이점 샌드박스 솔루션과 팜 솔루션](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   

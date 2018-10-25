@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852416"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML로 WPF 데이터 바인딩 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "49247275"
   
  XAML과 LINQ to XML은 다음 두 가지 주요 방식으로 상호 작용할 수 있습니다.  
   
--   XAML 파일이 제대로 구성된 XML이기 때문에 LINQ to XML과 같은 XML 기술을 통해 XAML 파일을 쿼리하고 조작할 수 있습니다.  
+- XAML 파일이 제대로 구성된 XML이기 때문에 LINQ to XML과 같은 XML 기술을 통해 XAML 파일을 쿼리하고 조작할 수 있습니다.  
   
--   LINQ to XML 쿼리가 데이터 소스를 나타내기 때문에 이러한 쿼리를 WPF UI 요소의 데이터 바인딩에 대한 데이터 소스로 사용할 수 있습니다.  
+- LINQ to XML 쿼리가 데이터 소스를 나타내기 때문에 이러한 쿼리를 WPF UI 요소의 데이터 바인딩에 대한 데이터 소스로 사용할 수 있습니다.  
   
- 이 문서에서는 두 번째 시나리오에 대해 설명합니다.  
+  이 문서에서는 두 번째 시나리오에 대해 설명합니다.  
   
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Windows Presentation Foundation의 데이터 바인딩  
  WPF 데이터 바인딩을 통해 UI 요소에서 속성 중 하나를 데이터 소스와 연결할 수 있습니다. 이에 대한 간단한 예는 사용자 정의 개체에서 public 속성의 값을 제공하는 텍스트가 포함된 <xref:System.Windows.Controls.Label>입니다. WPF 데이터 바인딩은 다음 구성 요소를 사용합니다.  
@@ -52,13 +52,13 @@ ms.locfileid: "49247275"
 ### <a name="dynamic-data-binding-in-wpf"></a>WPF의 동적 데이터 바인딩  
  기본적으로 데이터 바인딩은 대상 UI 요소가 초기화될 때만 발생합니다. 이를 *일회성* 바인딩이라고 합니다. 일회성 바인딩은 대부분의 목적에 충분하지만 일반적으로 데이터 바인딩 솔루션에서는 변경 내용이 다음 중 하나를 사용하여 런타임에 동적으로 전파되어야 합니다.  
   
--   *단방향* 바인딩에서는 한 쪽의 변경 내용이 자동으로 전파됩니다. 원본의 변경 내용이 대상에 반영되는 경우가 가장 일반적이지만 때때로 그 반대의 경우가 유용할 수 있습니다.  
+- *단방향* 바인딩에서는 한 쪽의 변경 내용이 자동으로 전파됩니다. 원본의 변경 내용이 대상에 반영되는 경우가 가장 일반적이지만 때때로 그 반대의 경우가 유용할 수 있습니다.  
   
--   *양방향* 바인딩에서는 원본의 변경 내용이 대상에 자동으로 전파되고 대상의 변경 내용이 원본에 자동으로 전파됩니다.  
+- *양방향* 바인딩에서는 원본의 변경 내용이 대상에 자동으로 전파되고 대상의 변경 내용이 원본에 자동으로 전파됩니다.  
   
- 단방향 또는 양방향 바인딩이 발생하려면 소스에서 <xref:System.ComponentModel.INotifyPropertyChanged> 인터페이스를 구현하거나 지원되는 각 속성의 *PropertyNameChanged* 패턴을 사용하는 등의 방법으로 변경 알림 메커니즘을 구현해야 합니다.  
+  단방향 또는 양방향 바인딩이 발생하려면 소스에서 <xref:System.ComponentModel.INotifyPropertyChanged> 인터페이스를 구현하거나 지원되는 각 속성의 *PropertyNameChanged* 패턴을 사용하는 등의 방법으로 변경 알림 메커니즘을 구현해야 합니다.  
   
- WPF의 데이터 바인딩에 대한 자세한 내용은 [데이터 바인딩(WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)을 참조하세요.  
+  WPF의 데이터 바인딩에 대한 자세한 내용은 [데이터 바인딩(WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)을 참조하세요.  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>LINQ to XML 클래스의 동적 속성  
  대부분의 LINQ to XML 클래스는 적절한 WPF 동적 데이터 소스로 적합하지 않습니다. 가장 유용한 정보 중 일부는 속성이 아니라 메서드를 통해서만 사용할 수 있으며 이러한 클래스의 속성은 변경 알림을 구현하지 않습니다. WPF 데이터 바인딩을 지원하기 위해 LINQ to XML에서는 *동적 속성*의 집합을 노출합니다.  
@@ -71,13 +71,13 @@ ms.locfileid: "49247275"
 ### <a name="accessing-dynamic-properties"></a>동적 속성 액세스  
  <xref:System.Xml.Linq.XAttribute> 및 <xref:System.Xml.Linq.XElement> 클래스의 동적 속성에는 표준 속성의 경우처럼 액세스할 수 없습니다. 예를 들어, C#과 같은 CLR 규격 언어에서 동적 속성에는 다음과 같은 특징이 있습니다.  
   
--   컴파일 타임에 직접 액세스할 수 없습니다. 동적 속성은 컴파일러와 Visual Studio IntelliSense에 표시되지 않습니다.  
+- 컴파일 타임에 직접 액세스할 수 없습니다. 동적 속성은 컴파일러와 Visual Studio IntelliSense에 표시되지 않습니다.  
   
--   .NET 리플렉션을 사용하여 런타임에 검색하거나 액세스할 수 없습니다. 런타임에도 동적 속성은 기본 CLR 의미에서 속성이 아닙니다.  
+- .NET 리플렉션을 사용하여 런타임에 검색하거나 액세스할 수 없습니다. 런타임에도 동적 속성은 기본 CLR 의미에서 속성이 아닙니다.  
   
- C#에서는 <xref:System.ComponentModel> 네임스페이스에서 제공하는 기능을 통해 런타임에만 동적 속성에 액세스할 수 있습니다.  
+  C#에서는 <xref:System.ComponentModel> 네임스페이스에서 제공하는 기능을 통해 런타임에만 동적 속성에 액세스할 수 있습니다.  
   
- 그러나 XML 원본에서는 이와 대조적으로 다음과 같은 형태의 간단한 표기법을 통해 동적 속성에 액세스할 수 있습니다.  
+  그러나 XML 원본에서는 이와 대조적으로 다음과 같은 형태의 간단한 표기법을 통해 동적 속성에 액세스할 수 있습니다.  
   
 ```  
 <object>.<dynamic-property>  

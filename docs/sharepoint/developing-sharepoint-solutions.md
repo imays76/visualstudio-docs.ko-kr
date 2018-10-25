@@ -18,30 +18,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be2a91408202ce42d7371154d0201e778381300
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889999"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint 솔루션 개발
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 여러 가지 SharePoint 프로젝트 형식 템플릿을 사용하여 SharePoint 사이트와 사이트 요소를 만들 수 있습니다. 사용 가능한 프로젝트 형식 목록을 참조 하세요 [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)합니다. SharePoint 프로젝트의 요소와 속성에 대한 설명은 다음과 같습니다.  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 여러 가지 SharePoint 프로젝트 형식 템플릿을 사용하여 SharePoint 사이트와 사이트 요소를 만들 수 있습니다. 사용 가능한 프로젝트 형식 목록을 참조 하세요 [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)합니다. SharePoint 프로젝트의 요소와 속성에 대한 설명은 다음과 같습니다.  
   
  SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) 및 [SharePoint 추가 기능 빌드](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx)를 참조하세요.  
   
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 프로젝트의 요소
- SharePoint 프로젝트 아래에 있는 노드를 *SharePoint 항목*이라고 합니다. SharePoint 항목 이라고 하나 이상의 하위 포함 될 수도 있습니다 *SharePoint 항목 파일*와 같은 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 구성 파일,.aspx 양식 등입니다.  
+ SharePoint 프로젝트 아래에 있는 노드를 *SharePoint 항목*이라고 합니다. SharePoint 항목에는 *SharePoint 항목 파일*이라는 하위 파일이 하나 이상 포함될 수 있습니다(예: [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 구성 파일, .aspx 양식 등).  
   
  프로젝트 항목 파일로 채워져 있는 프로젝트 템플릿을 사용하여 프로젝트를 만드는 대신, **빈 프로젝트** 템플릿을 사용하여 빈 SharePoint 프로젝트를 만들고 프로젝트 항목을 수동으로 추가할 수 있습니다. SharePoint 프로젝트에는 선택적으로 SharePoint에서 활성화에 사용되는 기능 파일 하나 이상과 프로젝트를 배포할 패키지 파일이 포함될 수 있습니다.  
   
 ### <a name="special-nodes"></a>특수 노드
  모든 SharePoint 프로젝트에는 프로젝트에서 이름을 바꾸거나, 삭제하거나, 잘라내거나, 복사하거나, 끌어서 놓을 수 없는 노드 두 개가 포함됩니다. 이들 노드는 다음과 같습니다.  
   
--   기능    
--   Package  
+- 기능    
+- Package  
   
- 프로젝트에 대한 기능이나 패키지가 정의되지 않더라도 두 노드는 모두 항상 모든 SharePoint 프로젝트에 표시됩니다.  
+  프로젝트에 대한 기능이나 패키지가 정의되지 않더라도 두 노드는 모두 항상 모든 SharePoint 프로젝트에 표시됩니다.  
   
 #### <a name="features-node"></a>기능 노드
  **기능** 노드에는 SharePoint 프로젝트 기능이 하나 이상 포함됩니다. 기능은 SharePoint용 확장의 컨테이너입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 사이트에서 SharePoint 관리자가 기능을 사이트 정의에 포함하거나 개별적으로 활성화할 수 있습니다. 자세한 내용은 [기능 작업](http://go.microsoft.com/fwlink/?LinkID=147704)을 참조하세요.  
@@ -53,7 +53,7 @@ ms.locfileid: "36327257"
  기능이 SharePoint 프로젝트에 추가되면 **솔루션 탐색기** 에 기본 이름인 Feature*x*.feature를 사용한 노드로 표시됩니다. 여기서 *x* 는 고유 번호입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 관리자가 기능을 활성화하여 SharePoint 사이트 사용자가 사용 가능하도록 설정할 수 있습니다.  
   
 #### <a name="package-node"></a>패키지 노드
- **패키지** 노드에는 SharePoint 프로젝트에 대한 배포 메커니즘으로 사용하는 단일 파일이 포함됩니다. 라고도 하는이 파일을 *솔루션 패키지*, 됩니다. CAB를 기반으로 한 합니다. WSP 확장입니다. 솔루션 패키지는 SharePoint 사이트에 적용되는 기능 집합, 사이트 정의 및 어셈블리가 포함되고 개별적으로 사용하거나 사용하지 않도록 설정할 수 있는 배포 가능하고 재사용 가능한 파일입니다. **패키지** 노드에 항상 Package.wspdef 라는 파일이 포함 된 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 패키지 정의 파일입니다. 패키지가 SharePoint를 실행하는 서버에 배포되고 나면 SharePoint 관리자가 패키지를 설치하고 해당 기능을 활성화할 수 있습니다.  
+ **패키지** 노드에는 SharePoint 프로젝트에 대한 배포 메커니즘으로 사용하는 단일 파일이 포함됩니다. 라고도 하는이 파일을 *솔루션 패키지*, 됩니다. CAB를 기반으로 한 합니다. WSP 확장입니다. 솔루션 패키지는 SharePoint 사이트에 적용되는 기능 집합, 사이트 정의 및 어셈블리가 포함되고 개별적으로 사용하거나 사용하지 않도록 설정할 수 있는 배포 가능하고 재사용 가능한 파일입니다. **패키지** 노드에는 항상 패키지에 대한 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 정의 파일인 Package.wspdef라는 파일이 포함됩니다. 패키지가 SharePoint를 실행하는 서버에 배포되고 나면 SharePoint 관리자가 패키지를 설치하고 해당 기능을 활성화할 수 있습니다.  
   
  보거나 패키지 노드를 두 번 클릭 하거나 해당 바로 가기 메뉴를 열고 선택 하 여 패키지 디자이너에서 패키지의 콘텐츠를 변경할 수 있습니다 **열려**합니다. 자세한 내용은 [만들 SharePoint 솔루션 패키지](../sharepoint/creating-sharepoint-solution-packages.md)합니다.  
   
@@ -72,11 +72,11 @@ ms.locfileid: "36327257"
 |구성 편집|프로젝트에 사용할 배포 구성을 지정합니다. 자세한 내용은 참조 하세요. [방법: SharePoint 배포 구성 편집](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) 하 고 [배포를 게시 및 SharePoint 솔루션 패키지를 업그레이드](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
 |스크립트 디버깅 대신 Silverlight 디버깅 사용|이 옵션을 선택하면 Silverlight 디버거가 디버깅 프로세스에 연결됩니다. 이 옵션의 선택을 취소하면 스크립트 디버거가 디버깅 프로세스에 연결됩니다. 자세한 내용은 [Silverlight 디버깅 개요](http://go.microsoft.com/fwlink/?LinkId=179826)를 참조하세요.|  
 |패키지에 어셈블리 포함|빌드 시간에 프로젝트 어셈블리를 패키지할지를 지정합니다.|  
-|배포 후 명령줄|SharePoint 솔루션을 배포한 후에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [방법: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)합니다.|  
-|배포 전 명령줄|SharePoint 솔루션을 배포하기 전에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [방법: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)합니다.|  
+|배포 후 명령줄|SharePoint 솔루션을 배포한 후에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)을 참조하세요.|  
+|배포 전 명령줄|SharePoint 솔루션을 배포하기 전에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)을 참조하세요.|  
 |프로젝트 파일|빌드, 구성 및 기타 프로젝트 정보가 들어 있는 파일의 이름입니다.|  
 |프로젝트 폴더|시스템에서 프로젝트 파일의 위치입니다. 읽기 전용입니다.|  
-|Sandboxed Solution|프로젝트를 *사용자가 만든 솔루션*이라고도 하는 *샌드박스 솔루션*으로 배포할지를 지정합니다. 샌드박스 솔루션을 신뢰할 수 있어야 할 필요는 없습니다. **true** 값은 프로젝트가 샌드박스 솔루션으로 배포됨을 의미하고 **false** 값은 프로젝트가 팜 솔루션으로 배포됨을 의미합니다. 자세한 내용은 [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md) 하 고 [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)합니다.|  
+|Sandboxed Solution|프로젝트를 *사용자가 만든 솔루션*이라고도 하는 *샌드박스 솔루션*으로 배포할지를 지정합니다. 샌드박스 솔루션을 신뢰할 수 있어야 할 필요는 없습니다. **true** 값은 프로젝트가 샌드박스 솔루션으로 배포됨을 의미하고 **false** 값은 프로젝트가 팜 솔루션으로 배포됨을 의미합니다. 자세한 내용은 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) 및 [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)를 참조하세요.|  
 |사이트 URL|이 프로젝트에 대한 대상 사이트의 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]을(를) 지정합니다.|  
 |시작 항목|프로젝트에서 실행할 첫 번째 항목을 지정합니다.|  
   
@@ -86,12 +86,12 @@ ms.locfileid: "36327257"
   
 |속성 이름|설명|  
 |-------------------|-----------------|  
-|배포 충돌 해결|서버에 있는 항목의 속성과 일치하는 속성을 가진 프로젝트 항목을 배포할 때 수행할 작업을 지정합니다. 자세한 내용은 [Troubleshooting SharePoint Packaging and 배포](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)합니다.|  
-|기능 속성|SharePoint에 배포될 때 기능과 함께 제공되는 값 집합(키/값 쌍으로 저장됨)을 지정합니다. 기능이 배포되고 나서 코드에서 속성 값에 액세스할 수 있습니다. 자세한 내용은 [Providing Packaging and 배포 Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)합니다.|  
-|기능 수신기|프로젝트 항목의 포함 기능에 대한 특정 이벤트가 발생할 때 실행되는 코드를 제공합니다. 자세한 내용은 [Providing Packaging and 배포 Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)합니다.|  
+|배포 충돌 해결|서버에 있는 항목의 속성과 일치하는 속성을 가진 프로젝트 항목을 배포할 때 수행할 작업을 지정합니다. 자세한 내용은 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)을 참조하세요.|  
+|기능 속성|SharePoint에 배포될 때 기능과 함께 제공되는 값 집합(키/값 쌍으로 저장됨)을 지정합니다. 기능이 배포되고 나서 코드에서 속성 값에 액세스할 수 있습니다. 자세한 내용은 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
+|기능 수신기|프로젝트 항목의 포함 기능에 대한 특정 이벤트가 발생할 때 실행되는 코드를 제공합니다. 자세한 내용은 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
 |폴더 이름|SharePoint 프로젝트 항목 폴더의 이름입니다.|  
-|프로젝트 출력 참조|프로젝트 항목이 실행해야 하는 어셈블리 등의 종속성을 지정합니다. 자세한 내용은 [Providing Packaging and 배포 Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)합니다.|  
-|안전 컨트롤 항목|신뢰할 수 없는 사용자가 편집할 안전한 컨트롤을 지정합니다. 자세한 내용은 [Providing Packaging and 배포 Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)합니다.|  
+|프로젝트 출력 참조|프로젝트 항목이 실행해야 하는 어셈블리 등의 종속성을 지정합니다. 자세한 내용은 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
+|안전 컨트롤 항목|신뢰할 수 없는 사용자가 편집할 안전한 컨트롤을 지정합니다. 자세한 내용은 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조하세요.|  
   
 ### <a name="project-item-file-properties"></a>프로젝트 항목 파일 속성
   

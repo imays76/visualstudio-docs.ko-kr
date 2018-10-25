@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865364"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>IntelliTrace를 사용 하 여 배포 후 문제 진단
 
@@ -66,7 +66,7 @@ Visual Studio 2017을 다루지 않습니다 합니다 *BuildInfo.config* 파일
 
      ![TFS 2013 빌드 파이프라인의 기호 경로 설정](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     기호에 대 한 자세한 내용은 참조 하세요 [기호 데이터 게시](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)합니다.
+     기호에 대한 자세한 내용은 [기호 데이터 게시](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)를 참조하세요.
 
 4.  이 MSBuild 인수를 추가하여 TFS 및 기호 위치를 빌드 매니페스트 파일에 포함합니다.
 
@@ -156,12 +156,12 @@ Visual Studio 2017을 다루지 않습니다 합니다 *BuildInfo.config* 파일
  **/p:BuildSymbolStorePath =**\<*기호 경로*>
 
 ##  <a name="DeployRelease"></a> 2 단계: 앱 릴리스
- 사용 하는 경우는 [Web.Deploy 패키지](https://msdn.microsoft.com/library/dd394698.aspx) 앱을 배포 하려면 빌드 프로세스에서 생성 된을 빌드 매니페스트는 자동으로 "*ProjectName*합니다. "BuildInfo.config" BuildInfo.config"웹 서버에서 앱의 Web.config 파일과 동일한 폴더에 저장 됩니다.
+ 빌드 프로세스에서 만들어진 [Web.Deploy 패키지](https://msdn.microsoft.com/library/dd394698.aspx) 를 사용하여 앱을 배포할 경우 빌드 매니페스트는 자동으로 "*ProjectName*.BuildInfo.config"에서 "BuildInfo.config"라는 이름으로 바뀌어 웹 서버에서 앱의 Web.config 파일과 같은 폴더에 저장됩니다.
 
  다른 방법을 사용하여 앱을 배포할 경우에는 빌드 매니페스트가 "*ProjectName*.BuildInfo.config"에서 "BuildInfo.config"라는 이름으로 바뀌어 웹 서버에서 앱의 Web.config 파일과 같은 폴더에 저장되었는지 확인해야 합니다.
 
 ## <a name="step-3-monitor-your-app"></a>3단계: 앱 모니터링
- 앱의 문제를 모니터링하고 진단 이벤트를 기록하고 해당 이벤트를 IntelliTrace 로그 파일에 저장할 수 있도록 웹 서버에 응용 프로그램 성능 모니터링을 설정합니다. 참조 [배포 문제에 대해 릴리스 모니터링](../debugger/using-the-intellitrace-stand-alone-collector.md)합니다.
+ 앱의 문제를 모니터링하고 진단 이벤트를 기록하고 해당 이벤트를 IntelliTrace 로그 파일에 저장할 수 있도록 웹 서버에 응용 프로그램 성능 모니터링을 설정합니다. [배포 문제에 대해 릴리스 모니터링](../debugger/using-the-intellitrace-stand-alone-collector.md)을 참조하세요.
 
 ##  <a name="InvestigateEvents"></a> 4 단계: 문제 찾기
  IntelliTrace를 사용하여 기록된 이벤트를 검토하고 코드를 디버그하려면 개발 컴퓨터 또는 다른 컴퓨터에 Visual Studio Enterprise가 있어야 합니다. 문제 진단을 도와주는 CodeLens, 디버거 지도 및 코드 맵 등의 도구를 사용할 수도 있습니다.
@@ -238,7 +238,7 @@ Visual Studio 2017을 다루지 않습니다 합니다 *BuildInfo.config* 파일
 
 ###  <a name="WhatElse"></a> 여기에서 다른 어떻게 해야 합니까?
 
--   [이 코드에 대 한 자세한 내용을 보려면](../ide/find-code-changes-and-other-history-with-codelens.md)합니다. 이 코드에 대 한 참조를 찾으려면 해당 변경 내용, 관련된 버그, 작업 항목, 코드 검토 또는 단위 테스트-편집기 내에서 모두-편집기에서 CodeLens 지표를 사용 합니다.
+-   [이 코드에 대한 자세한 정보를 알아봅니다](../ide/find-code-changes-and-other-history-with-codelens.md). 이 코드에 대 한 참조를 찾으려면 해당 변경 내용, 관련된 버그, 작업 항목, 코드 검토 또는 단위 테스트-편집기 내에서 모두-편집기에서 CodeLens 지표를 사용 합니다.
 
      ![CodeLens &#45; 이 코드에 대 한 참조를 보려면](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
@@ -264,100 +264,100 @@ Visual Studio 2017을 다루지 않습니다 합니다 *BuildInfo.config* 파일
 
 3.  필요한 정보가 파일에 포함되어 있는지 확인합니다.
 
--   **ProjectName**
+- **ProjectName**
 
-     Visual Studio에서의 프로젝트의 이름입니다. 예를 들어:
+   Visual Studio에서의 프로젝트의 이름입니다. 예를 들어:
+
+  ```xml
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+  ```
+
+- **했습니다. SourceControl**
+
+- 소스 제어 시스템 및 다음의 필수 속성에 대한 정보입니다.
+
+  - **TFS**
+
+    - **ProjectCollectionUri**: Team Foundation Server 및 프로젝트 컬렉션의 URI
+
+    - **ProjectItemSpec**: 앱 프로젝트 파일(.csproj 또는 .vbproj)의 경로
+
+    - **ProjectVersionSpec**: 프로젝트 버전
+
+      예를 들어:
 
     ```xml
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+    <SourceControl type="TFS">
+       <TfsSourceControl>
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
+       </TfsSourceControl>
+    </SourceControl>
     ```
 
--   **했습니다. SourceControl**
+  - **Git**
 
--   소스 제어 시스템 및 다음의 필수 속성에 대한 정보입니다.
+    - **GitSourceControl**: **GitSourceControl** 스키마의 위치
 
-    -   **TFS**
+    - **RepositoryUrl**: Team Foundation Server, 프로젝트 컬렉션 및 Git 리포지토리의 URI
 
-        -   **ProjectCollectionUri**: Team Foundation Server 및 프로젝트 컬렉션의 URI
+    - **ProjectPath**: 앱 프로젝트 파일(.csproj 또는 .vbproj)의 경로
 
-        -   **ProjectItemSpec**: 앱 프로젝트 파일(.csproj 또는 .vbproj)의 경로
+    - **CommitId**: 커밋 id
 
-        -   **ProjectVersionSpec**: 프로젝트 버전
+      예를 들어:
 
-         예를 들어:
+    ```xml
+    <SourceControl type="Git">
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
+       </GitSourceControl>
+    </SourceControl>
+    ```
 
-        ```xml
-        <SourceControl type="TFS">
-           <TfsSourceControl>
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
-           </TfsSourceControl>
-        </SourceControl>
-        ```
+- **빌드**
 
-    -   **Git**
+   빌드 시스템( `"TeamBuild"` 또는 `"MSBuild"`) 및 다음의 필수 속성에 대한 정보입니다.
 
-        -   **GitSourceControl**: **GitSourceControl** 스키마의 위치
+  - **BuildLabel** (TeamBuild용): 빌드 이름 및 번호입니다. 이 레이블은 배포 이벤트의 이름으로도 사용됩니다. 빌드 번호에 대한 자세한 내용은 [빌드 번호를 사용하여 완료된 빌드에 의미 있는 이름 지정](/azure/devops/pipelines/build/options?view=vsts)을 참조하세요.
 
-        -   **RepositoryUrl**: Team Foundation Server, 프로젝트 컬렉션 및 Git 리포지토리의 URI
+  - **SymbolPath** (권장): 세미콜론으로 구분한 기호(PDB 파일) 위치 URI 목록입니다. 이러한 URI는 URL 또는 UNC일 수 있습니다. 이 정보를 통해 Visual Studio에서는 사용자가 디버깅을 손쉽게 할 수 있도록 일치하는 기호를 쉽게 찾을 수 있습니다.
 
-        -   **ProjectPath**: 앱 프로젝트 파일(.csproj 또는 .vbproj)의 경로
+  - **BuildReportUrl** (TeamBuild용): TFS 내 빌드 보고서의 위치
 
-        -   **CommitId**: 커밋 id
+  - **BuildId** (TeamBuild용): TFS 내 빌드 세부 정보의 URI 이 URI는 배포 이벤트의 ID로도 사용됩니다. TeamBuild를 사용하지 않을 경우 고유 ID여야 합니다.
 
-         예를 들어:
+  - **BuiltSolution**: Visual Studio에서 일치하는 솔루션을 찾고 열기 위해 사용하는 솔루션 파일의 경로입니다. **SolutionPath** MsBuild 속성의 내용입니다.
 
-        ```xml
-        <SourceControl type="Git">
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
-           </GitSourceControl>
-        </SourceControl>
-        ```
+    예를 들어:
 
--   **빌드**
+  - **TFS**
 
-     빌드 시스템( `"TeamBuild"` 또는 `"MSBuild"`) 및 다음의 필수 속성에 대한 정보입니다.
+    ```xml
+    <Build type="TeamBuild">
+       <MsBuild>
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MsBuild>
+    </Build>
+    ```
 
-    -   **BuildLabel** (TeamBuild용): 빌드 이름 및 번호입니다. 이 레이블은 배포 이벤트의 이름으로도 사용됩니다. 빌드 번호에 대 한 자세한 내용은 참조 하세요. [사용 하 여 빌드 번호 완료 된 빌드에 의미 있는 이름을 부여](/azure/devops/pipelines/build/options?view=vsts)합니다.
+  - **Git**
 
-    -   **SymbolPath** (권장): 세미콜론으로 구분한 기호(PDB 파일) 위치 URI 목록입니다. 이러한 URI는 URL 또는 UNC일 수 있습니다. 이 정보를 통해 Visual Studio에서는 사용자가 디버깅을 손쉽게 할 수 있도록 일치하는 기호를 쉽게 찾을 수 있습니다.
-
-    -   **BuildReportUrl** (TeamBuild용): TFS 내 빌드 보고서의 위치
-
-    -   **BuildId** (TeamBuild용): TFS 내 빌드 세부 정보의 URI 이 URI는 배포 이벤트의 ID로도 사용됩니다. TeamBuild를 사용하지 않을 경우 고유 ID여야 합니다.
-
-    -   **BuiltSolution**: Visual Studio에서 일치하는 솔루션을 찾고 열기 위해 사용하는 솔루션 파일의 경로입니다. **SolutionPath** MsBuild 속성의 내용입니다.
-
-     예를 들어:
-
-    -   **TFS**
-
-        ```xml
-        <Build type="TeamBuild">
-           <MsBuild>
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MsBuild>
-        </Build>
-        ```
-
-    -   **Git**
-
-        ```xml
-        <Build type="MSBuild">
-           <MSBuild>
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MSBuild>
-        </Build>
-        ```
+    ```xml
+    <Build type="MSBuild">
+       <MSBuild>
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MSBuild>
+    </Build>
+    ```
 
 ####  <a name="IneligibleWorkspace"></a> Q:에서는 Visual Studio 의견 내가 선택한 작업 영역이 적합 하지 않습니다.
  **A:** 선택된 작업 영역에는 소스 제어 폴더와 로컬 폴더 간의 매핑이 없습니다. 이 작업 영역에 대한 매핑을 만들려면 **관리**를 선택합니다. 그렇지 않으면, 이미 매핑된 작업 영역을 선택하거나 새 작업 영역 만듭니다.
@@ -382,7 +382,7 @@ Visual Studio 2017을 다루지 않습니다 합니다 *BuildInfo.config* 파일
      ![소스 제어에서 열기 &#45; 마이그레이션된](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> Q: 작업 영역 이란?
- **A:** 프로그램 [작업 영역은 소스 사본을 저장](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) 개발 하 고이 개별적으로 테스트 하기 전에 확인 작업의 수 있도록 합니다. 발견된 솔루션 또는 프로젝트에 특별히 매핑된 작업 영역이 아직 없는 경우 Visual Studio는 사용 가능한 작업 영역을 선택하거나 기본 작업 영역 이름으로 사용자 컴퓨터 이름을 사용하는 새 작업 영역을 만들 것인지 묻는 메시지를 표시합니다.
+ **A:** [작업 영역은 소스 사본을 저장](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) 하므로 작업을 체크 인하기 전에 개별적으로 개발하고 테스트할 수 있습니다. 발견된 솔루션 또는 프로젝트에 특별히 매핑된 작업 영역이 아직 없는 경우 Visual Studio는 사용 가능한 작업 영역을 선택하거나 기본 작업 영역 이름으로 사용자 컴퓨터 이름을 사용하는 새 작업 영역을 만들 것인지 묻는 메시지를 표시합니다.
 
 ####  <a name="UntrustedSymbols"></a> 신뢰할 수 없는 기호에 대 한이 메시지는 q: 하나요?
  ![신뢰할 수 없는 기호 경로 사용 하 여 디버그? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

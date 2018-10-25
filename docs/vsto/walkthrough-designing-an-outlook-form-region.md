@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5969d47ff6ecb7af60a8d008c4a7a82405be8c8e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813689"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>연습: Outlook 양식 영역 디자인
   사용자 지정 양식 영역은 표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장합니다. 이 연습에서는 연락처 항목의 검사기 창에 새 페이지로 표시되는 사용자 지정 양식 영역을 디자인합니다. 이 양식 영역은 Windows Live 로컬 검색 웹 사이트에 주소 정보를 전송하여 연락처에 대해 나열된 각 주소의 지도를 표시합니다. 양식 영역에 대 한 자세한 내용은 [만들 Outlook 양식 영역](../vsto/creating-outlook-form-regions.md)합니다.  
@@ -45,11 +45,11 @@ ms.locfileid: "35674747"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 또는 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]  
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 또는 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 이 항목의 비디오 버전을 참조 하세요. [비디오 방법: Outlook 양식 영역 디자인](http://go.microsoft.com/fwlink/?LinkID=140824)합니다.  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 이 항목의 비디오 버전을 참조 하세요. [비디오 방법: Outlook 양식 영역 디자인](http://go.microsoft.com/fwlink/?LinkID=140824)합니다.  
   
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>새 Outlook VSTO 추가 기능에서 프로젝트 만들기  
  먼저 기본 VSTO 추가 기능 프로젝트를 만듭니다.  
@@ -117,24 +117,24 @@ ms.locfileid: "35674747"
   
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>양식 영역의 동작을 사용자 지정하려면  
   
-1.  **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 *MapIt.cs* 또는 *MapIt.vb*를 클릭 하 고 **코드 보기**합니다.  
+1. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 *MapIt.cs* 또는 *MapIt.vb*를 클릭 하 고 **코드 보기**합니다.  
   
-     *MapIt.cs* 나 *MapIt.vb* 코드 편집기에서 열립니다.  
+    *MapIt.cs* 나 *MapIt.vb* 코드 편집기에서 열립니다.  
   
-2.  확장 된 **양식 영역 팩터리** 코드 영역.  
+2. 확장 된 **양식 영역 팩터리** 코드 영역.  
   
-     `MapItFactory`라는 양식 영역 팩터리 클래스가 노출됩니다.  
+    `MapItFactory`라는 양식 영역 팩터리 클래스가 노출됩니다.  
   
-3.  다음 코드를 `MapItFactory_FormRegionInitializing` 이벤트 처리기에 추가합니다. 이 이벤트 처리기는 사용자가 연락처 항목을 열 때 호출됩니다. 다음 코드는 연락처 항목에 주소가 포함되어 있는지 여부를 확인합니다. 이 코드를 설정 하는 연락처 항목에 주소를 찾을 수 없는 경우는 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 의 속성을 <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> 클래스를 **true** 양식 영역이 표시 되지 않습니다. 그렇지 않은 경우 VSTO 추가 기능에서 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 이벤트가 발생하고 양식 영역이 표시됩니다.  
+3. 다음 코드를 `MapItFactory_FormRegionInitializing` 이벤트 처리기에 추가합니다. 이 이벤트 처리기는 사용자가 연락처 항목을 열 때 호출됩니다. 다음 코드는 연락처 항목에 주소가 포함되어 있는지 여부를 확인합니다. 이 코드를 설정 하는 연락처 항목에 주소를 찾을 수 없는 경우는 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 의 속성을 <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> 클래스를 **true** 양식 영역이 표시 되지 않습니다. 그렇지 않은 경우 VSTO 추가 기능에서 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 이벤트가 발생하고 양식 영역이 표시됩니다.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-4.  다음 코드를 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 이벤트 처리기에 추가합니다. 이 코드는 다음 작업을 수행합니다.  
+4. 다음 코드를 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 이벤트 처리기에 추가합니다. 이 코드는 다음 작업을 수행합니다.  
   
-    -   연락처 항목의 각 주소를 연결하고 URL 문자열을 만듭니다.  
+   - 연락처 항목의 각 주소를 연결하고 URL 문자열을 만듭니다.  
   
-    -   <xref:System.Windows.Forms.WebBrowser> 개체의 <xref:System.Windows.Forms.WebBrowser.Navigate%2A> 메서드를 호출하고 URL 문자열을 매개 변수로 전달합니다.  
+   - <xref:System.Windows.Forms.WebBrowser> 개체의 <xref:System.Windows.Forms.WebBrowser.Navigate%2A> 메서드를 호출하고 URL 문자열을 매개 변수로 전달합니다.  
   
      로컬 검색 웹 사이트가 Map It 양식 영역에 나타나고 각 주소를 스크래치 패드에 표시합니다.  
   

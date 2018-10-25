@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0cb8a2237bf8689244f53fe4763be7f78c16892
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 2e7bb911734ee4240d61a5fbb132a7e0c67b535c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821216"
 ---
 # <a name="register-the-program"></a>등록 프로그램
 디버그 엔진에 대 한 포트를을 가져온 후 표시를 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 인터페이스는 프로그램을 디버깅을 사용 하도록 설정 하는 다음 단계는 포트를 등록 합니다. 등록 되 면 프로그램은 다음 방법 중 하나에서 디버깅을 위해 제공 됩니다.  

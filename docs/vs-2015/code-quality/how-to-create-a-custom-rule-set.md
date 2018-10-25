@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812467"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>방법: 사용자 지정 규칙 집합 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ ms.locfileid: "49255504"
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>단일 기존 규칙 집합에서 사용자 지정 규칙을 만들려면  
   
-1.  솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택한 **속성**합니다.  
+1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택한 **속성**합니다.  
   
-2.  에 **속성** 탭을 클릭 **코드 분석**합니다.  
+2. 에 **속성** 탭을 클릭 **코드 분석**합니다.  
   
-3.  에 **규칙 집합** 드롭 다운 목록에서 다음 중 하나를 수행 합니다.  
+3. 에 **규칙 집합** 드롭 다운 목록에서 다음 중 하나를 수행 합니다.  
   
-    -   사용자 지정 하려는 규칙 집합을 선택 합니다.  
+   - 사용자 지정 하려는 규칙 집합을 선택 합니다.  
   
      \- 또는 -  
   
-    -   선택  **\<찾아보기... >** 목록에 없는 기존 규칙 집합을 지정 하려면.  
+   - 선택  **\<찾아보기... >** 목록에 없는 기존 규칙 집합을 지정 하려면.  
   
-4.  클릭 **열고** 규칙 규칙 집합 편집기에 표시를 합니다.  
+4. 클릭 **열고** 규칙 규칙 집합 편집기에 표시를 합니다.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>사용자 지정 규칙을 만드는 여러 기존 규칙 집합에서 설정  
   

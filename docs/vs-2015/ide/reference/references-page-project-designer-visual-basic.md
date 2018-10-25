@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859059"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>참조 페이지, 프로젝트 디자이너(Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "49254711"
   
 > [!NOTE]
 >  프로젝트 시스템이 어셈블리 참조를 찾으면 시스템에서는 다음 순서로 다음 위치를 확인하여 참조를 확인합니다.  
->   
->  1.  프로젝트 폴더. 프로젝트 폴더 파일은 **모든 파일 표시**가 적용되지 않을 경우 **솔루션 탐색기**에 표시됩니다.  
-> 2.  **참조 경로** 대화 상자에 지정된 폴더.  
-> 3.  **참조 추가** 대화 상자에 파일을 표시하는 폴더.  
-> 4.  프로젝트의 obj 폴더. COM 참조를 프로젝트에 추가하면 하나 이상의 어셈블리가 프로젝트의 obj 폴더에 추가될 수 있습니다.  
+> 
+> 1. 프로젝트 폴더. 프로젝트 폴더 파일은 **모든 파일 표시**가 적용되지 않을 경우 **솔루션 탐색기**에 표시됩니다.  
+>    2.  **참조 경로** 대화 상자에 지정된 폴더.  
+>    3.  **참조 추가** 대화 상자에 파일을 표시하는 폴더.  
+>    4.  프로젝트의 obj 폴더. COM 참조를 프로젝트에 추가하면 하나 이상의 어셈블리가 프로젝트의 obj 폴더에 추가될 수 있습니다.  
   
  **참조**  
  이 목록에는 프로젝트에 있는 사용되거나 사용되지 않은 모든 참조가 표시됩니다.  

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e14b41fe3e7595ef56364fa92b0153f4f457fdd6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2e2f3713407ad17f468e125a1592ee8d684d27d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869745"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
-지정 된 상대 가상 주소 (RVA)를 포함 하는 지정 된 컴파일 대상에 줄을 검색 합니다.  
+지정 된 상대 가상 주소 RVA ()를 포함 하는 지정 된 compiland에서 줄을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,13 +39,13 @@ HRESULT findLinesByRVA (
  [in] RVA로 주소를 지정합니다.  
   
  `length`  
- [in] 이 쿼리를 포함 하는 주소 범위의 바이트 수를 지정 합니다.  
+ [in] 이 쿼리를 처리 하기 위해 주소 범위의 바이트 수를 지정 합니다.  
   
  `ppResult`  
- [out] 반환 된 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 모든 줄의 목록을 포함 하는 개체 번호는 커버 지정 된 주소 범위입니다.  
+ [out] 반환 된 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 모든 줄의 목록을 포함 하는 개체 번호 규정 하는 지정된 된 주소 범위입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
  이 예제에서는 함수의 상대 가상 주소 및 길이 사용 하 여 지정된 된 함수에 포함 된 모든 줄 번호를 가져오는 함수를 보여 줍니다.  

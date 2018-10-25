@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 04ffdd5d0256ae0fc42b89dfa850fb0ae2d36748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818668"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Visual Studio에서 DLL 프로젝트 디버깅
 다음 Visual Studio 템플릿은 Dll을 만듭니다.  
@@ -54,24 +54,24 @@ ms.locfileid: "37057400"
 ##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Ways to debug the DLL  
  이 단원의 각 프로젝트에서는 DLL을 만듭니다. DLL은 직접 실행할 수 없습니다. DLL은 일반적으로 EXE와 같은 응용 프로그램에서 호출해야 합니다. 자세한 내용은 [Creating and Managing Visual C++ Projects](/cpp/ide/creating-and-managing-visual-cpp-projects)을 참조하세요. 호출 응용 프로그램은 다음 기준 중 하나에 부합해야 합니다.  
   
--   동일한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션에서 클래스 라이브러리를 포함한 다른 프로젝트에 내장된 응용 프로그램  
+- 동일한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션에서 클래스 라이브러리를 포함한 다른 프로젝트에 내장된 응용 프로그램  
   
--   테스트 컴퓨터나 프로덕션 컴퓨터에 이미 배포된 기존 응용 프로그램  
+- 테스트 컴퓨터나 프로덕션 컴퓨터에 이미 배포된 기존 응용 프로그램  
   
--   웹에 설치되어 URL을 통해 액세스할 수 있는 응용 프로그램  
+- 웹에 설치되어 URL을 통해 액세스할 수 있는 응용 프로그램  
   
--   DLL을 포함하는 웹 페이지가 들어 있는 웹 응용 프로그램  
+- DLL을 포함하는 웹 페이지가 들어 있는 웹 응용 프로그램  
   
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugging the calling application  
 DLL을 디버깅하려면 호출 응용 프로그램 디버깅을 먼저 시작해야 합니다. 호출 응용 프로그램은 일반적으로 EXE 또는 웹 응용 프로그램입니다. 이를 디버깅하는 데는 여러 가지 방법이 있습니다.  
   
--   호출 응용 프로그램에 대한 프로젝트가 있으면 이 프로젝트를 열고 **디버그** 메뉴에서 실행 파일을 시작할 수 있습니다. 자세한 내용은 [디버거를 사용 하 여 시작](../debugger/getting-started-with-the-debugger.md)합니다.  
+- 호출 응용 프로그램에 대한 프로젝트가 있으면 이 프로젝트를 열고 **디버그** 메뉴에서 실행 파일을 시작할 수 있습니다. 자세한 내용은 [디버거를 사용 하 여 시작](../debugger/getting-started-with-the-debugger.md)합니다.  
   
--   호출 응용 프로그램이 테스트 컴퓨터나 프로덕션 컴퓨터에 이미 배포되어 실행되고 있는 기존의 프로그램인 경우 이 응용 프로그램에 연결할 수 있습니다. DLL이 Internet Explorer로 호스팅된 컨트롤이거나 웹 페이지의 컨트롤인 경우 이 방법을 사용합니다. 자세한 내용은 [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)을 참조하십시오.  
+- 호출 응용 프로그램이 테스트 컴퓨터나 프로덕션 컴퓨터에 이미 배포되어 실행되고 있는 기존의 프로그램인 경우 이 응용 프로그램에 연결할 수 있습니다. DLL이 Internet Explorer로 호스팅된 컨트롤이거나 웹 페이지의 컨트롤인 경우 이 방법을 사용합니다. 자세한 내용은 [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)을 참조하십시오.  
   
--   DLL 프로젝트에서 이를 디버깅할 수 있습니다. 자세한 내용은 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)을 참조하세요.  
+- DLL 프로젝트에서 이를 디버깅할 수 있습니다. 자세한 내용은 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)을 참조하세요.  
   
--   이 디버깅할 수는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [직접 실행 창](#vxtskdebuggingdllprojectstheimmediatewindow)합니다. 이 경우 **직접 실행** 창은 응용 프로그램 역할을 수행합니다.  
+- 이 디버깅할 수는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [직접 실행 창](#vxtskdebuggingdllprojectstheimmediatewindow)합니다. 이 경우 **직접 실행** 창은 응용 프로그램 역할을 수행합니다.  
   
 호출 응용 프로그램에 대한 디버깅을 시작하기 전에, 일반적으로 클래스 라이브러리에 중단점을 설정합니다. 자세한 내용은 [Using Breakpoints](../debugger/using-breakpoints.md)을 참조하세요. 중단점에 도달하면 각 줄의 작업을 확인하면서 코드를 단계별로 실행하여 문제를 해결할 수 있습니다. 자세한 내용은 [디버거에서 코드를 탐색](../debugger/navigating-through-code-with-the-debugger.md)합니다.
   
@@ -110,7 +110,7 @@ DLL을 디버깅하려면 호출 응용 프로그램 디버깅을 먼저 시작�
 
 프로젝트가는 DLL 및 디버깅에 사용 되는.pdb 파일을 찾을 수 있어야 합니다. 이러한 파일을 복사 하는 사용자 지정 빌드 작업을 만들 수 있습니다 합니다  **\<프로젝트 폴더 > \Debug** 하거나 출력 폴더 파일을 복사할 수 출력 폴더로 수동으로.
 
-속성 페이지에서 *.lib 파일과 헤더 파일의 위치를 쉽게 설정할 수 있습니다 (c + + 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성 보기**를 선택한 후 **모든 구성**) 복사할 필요 없이 출력 폴더에 해당 합니다.
+헤더 파일의 위치를 쉽게 설정할 수 있습니다 하 고 <em>속성 페이지에서.lib 파일 (c + + 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 * * 속성 보기</em><em>를 선택한 후 **모든 구성</em>* ) 출력 폴더에 복사 하지 않고도:
 
 - C/c + + 폴더 (일반 범주)-헤더 파일을 포함 하는 폴더를 지정 합니다 **Additional Include Directories** 필드입니다.
 - 링커 폴더 (일반 범주)-.lib 파일이 포함 된 폴더를 지정 합니다 **추가 라이브러리 디렉터리** 필드입니다. 

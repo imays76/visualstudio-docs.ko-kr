@@ -38,12 +38,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37b815543332ff61a275fed8fdfba06c91a433b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813676"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>디버거를 사용한 예외 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,86 +78,86 @@ ms.locfileid: "49285924"
   
  주어진 예외를 선택하는 경우, 이 예외가 발생할 때마다 예외가 처리되었는지 여부에 관계없이 디버거 실행이 중단됩니다. 여기서 이 예외를 첫째 예외라고 합니다. 예를 들어 다음은 몇 가지 시나리오입니다.  
   
-1.  다음 C# 콘솔 응용 프로그램에서 Main 메서드는 **try/catch** 블록 내부에서 `try/catch` 예외를 발생시킵니다.  
+1. 다음 C# 콘솔 응용 프로그램에서 Main 메서드는 **try/catch** 블록 내부에서 `try/catch` 예외를 발생시킵니다.  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        try  
-        {  
-            throw new AccessViolationException();  
-            Console.WriteLine("here");  
-        }  
-        catch (Exception e)  
-        {  
-            Console.WriteLine("caught exception");  
-        }  
-        Console.WriteLine("goodbye");  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       try  
+       {  
+           throw new AccessViolationException();  
+           Console.WriteLine("here");  
+       }  
+       catch (Exception e)  
+       {  
+           Console.WriteLine("caught exception");  
+       }  
+       Console.WriteLine("goodbye");  
+   }  
+   ```  
   
-     **try/catch** 에서 **예외 설정**을 선택한 이 코드를 디버거에서 실행하면 `throw` 줄에서 실행이 중단됩니다. 그런 다음 실행을 계속할 수 있습니다. 콘솔에 다음 두 줄이 모두 표시됩니다.  
+    **try/catch** 에서 **예외 설정**을 선택한 이 코드를 디버거에서 실행하면 `throw` 줄에서 실행이 중단됩니다. 그런 다음 실행을 계속할 수 있습니다. 콘솔에 다음 두 줄이 모두 표시됩니다.  
   
-    ```  
-    caught exception  
-    goodbye  
-    ```  
+   ```  
+   caught exception  
+   goodbye  
+   ```  
   
-     그러나 `here` 줄은 표시되지 않습니다.  
+    그러나 `here` 줄은 표시되지 않습니다.  
   
-2.  C# 콘솔 응용 프로그램은 예외를 발생시키고 처리하는 메서드, 동일한 예외를 발생시키고 처리하지 않는 메서드 등 두 개의 메서드를 가진 클래스를 사용하여 클래스 라이브러리를 참조합니다.  
+2. C# 콘솔 응용 프로그램은 예외를 발생시키고 처리하는 메서드, 동일한 예외를 발생시키고 처리하지 않는 메서드 등 두 개의 메서드를 가진 클래스를 사용하여 클래스 라이브러리를 참조합니다.  
   
-    ```vb  
-    public class Class1  
-    {  
-        public void ThrowHandledException()  
-        {  
-            try  
-            {  
-                throw new AccessViolationException();  
-            }  
-            catch (AccessViolationException ave)  
-            {  
-                Console.WriteLine("caught exception" + ave.Message);  
-            }  
-        }  
+   ```vb  
+   public class Class1  
+   {  
+       public void ThrowHandledException()  
+       {  
+           try  
+           {  
+               throw new AccessViolationException();  
+           }  
+           catch (AccessViolationException ave)  
+           {  
+               Console.WriteLine("caught exception" + ave.Message);  
+           }  
+       }  
   
-        public void ThrowUnhandledException()  
-        {  
-            throw new AccessViolationException();  
-        }  
-    }  
-    ```  
+       public void ThrowUnhandledException()  
+       {  
+           throw new AccessViolationException();  
+       }  
+   }  
+   ```  
   
-     다음은 콘솔 응용 프로그램의 Main() 메서드입니다.  
+    다음은 콘솔 응용 프로그램의 Main() 메서드입니다.  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        Class1 class1 = new Class1();  
-        class1.ThrowHandledException();  
-        class1.ThrowUnhandledException();  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       Class1 class1 = new Class1();  
+       class1.ThrowHandledException();  
+       class1.ThrowUnhandledException();  
+   }  
+   ```  
   
-     있다면 **AccessViolationException** 체크 **예외 설정**를 디버거에서 실행이 코드를 실행 하면 중단 됩니다는 `throw` 줄에서  **ThrowHandledException()** 하 고 **ThrowUnhandledException()** 합니다.  
+    있다면 **AccessViolationException** 체크 **예외 설정**를 디버거에서 실행이 코드를 실행 하면 중단 됩니다는 `throw` 줄에서  **ThrowHandledException()** 하 고 **ThrowUnhandledException()** 합니다.  
   
- 예외 설정을 기본값으로 복원하려는 경우에는 도구 모음에서 **복원** 단추를 클릭하면 됩니다.  
+   예외 설정을 기본값으로 복원하려는 경우에는 도구 모음에서 **복원** 단추를 클릭하면 됩니다.  
   
- ![예외 설정에서 기본값 복원](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![예외 설정에서 기본값 복원](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
 ###  <a name="BKMK_UserUnhandled"></a> 사용자가 처리 하지 않은 예외에 대해 계속 하도록 디버거 설정  
  [Just My Code](../debugger/just-my-code.md)옵션을 사용하여 .NET 또는 JavaScript 코드를 디버그하는 경우 사용자 코드에서 처리되지 않았지만 다른 위치에서는 처리된 예외가 발견되면 실행을 중단하지 않도록 디버거에 지시할 수 있습니다.  
   
-1.  **예외 설정** 창에서 창 내부를 마우스 오른쪽 단추로 클릭한 다음 **열 표시**를 선택하여 상황에 맞는 메뉴를 엽니다. ( **내 코드만**을 해제한 경우에는 이 명령이 표시되지 않습니다.)  
+1. **예외 설정** 창에서 창 내부를 마우스 오른쪽 단추로 클릭한 다음 **열 표시**를 선택하여 상황에 맞는 메뉴를 엽니다. ( **내 코드만**을 해제한 경우에는 이 명령이 표시되지 않습니다.)  
   
-2.  **추가 작업**이라는 또 하나의 열이 표시됩니다. 이 열에는 특정 예외에 대해 **사용자 코드에서 처리되지 않은 경우 계속** 이 표시됩니다. 이는 예외가 사용자 코드에서 처리되지 않았지만 외부 코드에서는 처리된 경우 디버거가 중단되지 않음을 의미합니다.  
+2. **추가 작업**이라는 또 하나의 열이 표시됩니다. 이 열에는 특정 예외에 대해 **사용자 코드에서 처리되지 않은 경우 계속** 이 표시됩니다. 이는 예외가 사용자 코드에서 처리되지 않았지만 외부 코드에서는 처리된 경우 디버거가 중단되지 않음을 의미합니다.  
   
-3.  특정 예외에 대해서나(예외를 선택하고 마우스 오른쪽 단추를 클릭한 후 **사용자 코드에서 처리되지 않은 경우 계속**선택/선택 취소) 전체 예외 범주(예: 모든 공용 언어 런타임 예외)에 대해 이 설정을 변경할 수 있습니다.  
+3. 특정 예외에 대해서나(예외를 선택하고 마우스 오른쪽 단추를 클릭한 후 **사용자 코드에서 처리되지 않은 경우 계속**선택/선택 취소) 전체 예외 범주(예: 모든 공용 언어 런타임 예외)에 대해 이 설정을 변경할 수 있습니다.  
   
- 예를 들어 ASP.NET 웹 응용 프로그램은 예외를 HTTP 500 상태 코드([ASP.NET API의 예외 처리](http://www.asp.net/web-api/overview/error-handling/exception-handling))로 변환하여 예외를 처리하며, 이에 따라 예외의 소스를 확인하는 데 도움이 되지 않을 수도 있습니다. 아래 예제에서는 사용자 코드가 `String.Format()` 을 발생시키는 <xref:System.FormatException>을 호출합니다. 다음과 같이 실행이 중단됩니다.  
+   예를 들어 ASP.NET 웹 응용 프로그램은 예외를 HTTP 500 상태 코드([ASP.NET API의 예외 처리](http://www.asp.net/web-api/overview/error-handling/exception-handling))로 변환하여 예외를 처리하며, 이에 따라 예외의 소스를 확인하는 데 도움이 되지 않을 수도 있습니다. 아래 예제에서는 사용자 코드가 `String.Format()` 을 발생시키는 <xref:System.FormatException>을 호출합니다. 다음과 같이 실행이 중단됩니다.  
   
- ![사용자에서 중단&#45;처리 하지 않은 예외](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![사용자에서 중단&#45;처리 하지 않은 예외](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>예외 추가 및 삭제  
  예외를 추가하거나 삭제할 수 있습니다. 어느 범주에서나 어떤 형식의 예외든 삭제할 수 있습니다. 예외를 선택하고 **예외 설정** 도구 모음에서 **삭제** 단추(빼기 기호)를 클릭하거나 예외를 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 **삭제** 를 선택하면 됩니다. 예외를 삭제하는 것은 예외를 선택 취소하는 것과 같은 효과를 가집니다. 즉, 해당 예외가 발생해도 디버거가 실행을 중단하지 않습니다.  

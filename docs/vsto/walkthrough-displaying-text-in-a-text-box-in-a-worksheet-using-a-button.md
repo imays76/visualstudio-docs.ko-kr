@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840287"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>연습: 단추를 사용 하 여 워크시트에 텍스트 상자에 텍스트를 표시 합니다.
   이 연습에서는 Visual Studio에서 Office 개발 도구를 사용 하 여 Excel 프로젝트를 만드는 방법과 Microsoft Office Excel 워크시트에서 단추 및 텍스트 상자를 사용 하는 기본 사항을 보여 줍니다. 결과 전체 샘플을 보려면 Excel 컨트롤 샘플을 참조 하세요 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)합니다.  
@@ -62,22 +62,22 @@ ms.locfileid: "35258443"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>단추 및 텍스트 상자를 추가하려면  
   
-1.  있는지 확인 합니다 **내 Excel Button.xlsx** Visual Studio 디자이너에 통합 문서가 열려와 `Sheet1` 표시 합니다.  
+1. 있는지 확인 합니다 **내 Excel Button.xlsx** Visual Studio 디자이너에 통합 문서가 열려와 `Sheet1` 표시 합니다.  
   
-2.  **공용 컨트롤** 끌어서 도구 상자 탭을 <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> 에 `Sheet1`입니다.  
+2. **공용 컨트롤** 끌어서 도구 상자 탭을 <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> 에 `Sheet1`입니다.  
   
-3.  **뷰** 메뉴에서 **속성 창**합니다.  
+3. **뷰** 메뉴에서 **속성 창**합니다.  
   
-4.  있는지 확인 **TextBox1** 에 표시 되는 **속성** 창 드롭다운 상자 및 변경 합니다 **이름** 입력란의 속성 **displayText**.  
+4. 있는지 확인 **TextBox1** 에 표시 되는 **속성** 창 드롭다운 상자 및 변경 합니다 **이름** 입력란의 속성 **displayText**.  
   
-5.  끌어서를 **단추** 컨트롤을 `Sheet1` 다음 속성을 변경 합니다.  
+5. 끌어서를 **단추** 컨트롤을 `Sheet1` 다음 속성을 변경 합니다.  
   
-    |속성|값|  
-    |--------------|-----------|  
-    |**이름**|**insertText**|  
-    |**텍스트**|**텍스트 삽입**|  
+   |속성|값|  
+   |--------------|-----------|  
+   |**이름**|**insertText**|  
+   |**텍스트**|**텍스트 삽입**|  
   
- 이제 단추를 클릭할 때 실행할 코드를 작성 합니다.  
+   이제 단추를 클릭할 때 실행할 코드를 작성 합니다.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>단추를 클릭할 때 텍스트 상자 채우기  
  사용자가 단추를 클릭할 때마다 **Hello World!** 텍스트 상자에 추가 됩니다.  

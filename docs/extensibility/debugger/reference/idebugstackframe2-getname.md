@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4b4e5a6ac925762e23766938141dfcddb3fe598
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbfaefd685b61491db326f2c2edb82a38b66f639
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887715"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 스택 프레임의 이름을 가져옵니다.  
@@ -44,7 +44,7 @@ int GetName (
  [out] 스택 프레임의 이름을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
  스택 프레임의 이름은 일반적으로 실행 중인 메서드의 이름입니다.  

@@ -17,33 +17,33 @@ ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1f13f3a9008d86812b0e1e11886cdc66457271e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5603450bdc761626a55f34813dc46cb8141da7be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811869"
 ---
 # <a name="debugger-components"></a>디버거 구성 요소
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 디버거는 VSPackage로 구현 되었으며 전체 디버그 세션을 관리 합니다. 디버그 세션에는 다음 요소가 구성 됩니다.  
   
--   **디버그 패키지:** 는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 디버거는 디버깅 중인 항목에 관계 없이 동일한 사용자 인터페이스를 제공 합니다.  
+- **디버그 패키지:** 는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 디버거는 디버깅 중인 항목에 관계 없이 동일한 사용자 인터페이스를 제공 합니다.  
   
--   **세션 디버그 관리자 (SDM):** 일관 된 프로그래밍 인터페이스를 제공 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 다양 한 디버그 엔진의 관리에 대 한 디버거. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
+- **세션 디버그 관리자 (SDM):** 일관 된 프로그래밍 인터페이스를 제공 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 다양 한 디버그 엔진의 관리에 대 한 디버거. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
   
--   **프로세스 디버그 관리자 (PDM):** 의 모든 실행 중인 인스턴스에 대 한 관리 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]을 수 있는 디버깅 중인 모든 프로그램의 목록입니다. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
+- **프로세스 디버그 관리자 (PDM):** 의 모든 실행 중인 인스턴스에 대 한 관리 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]을 수 있는 디버깅 중인 모든 프로그램의 목록입니다. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.  
   
--   **디버그 엔진 (DE):** 디버깅 중인 프로그램을 모니터링 하는 SDM을 PDM, 실행 중인 프로그램의 상태를 통신 하 고 실시간으로 분석할 수 있도록 식 계산기 및 기호 공급자와 상호 작용 합니다 프로그램의 메모리 및 변수의 상태입니다. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (에 지 원하는 언어) 및 자체 실행된 시간을 지원 하려는 타사 공급 업체입니다.  
+- **디버그 엔진 (DE):** 디버깅 중인 프로그램을 모니터링 하는 SDM을 PDM, 실행 중인 프로그램의 상태를 통신 하 고 실시간으로 분석할 수 있도록 식 계산기 및 기호 공급자와 상호 작용 합니다 프로그램의 메모리 및 변수의 상태입니다. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (에 지 원하는 언어) 및 자체 실행된 시간을 지원 하려는 타사 공급 업체입니다.  
   
--   **식 계산기 (EE):** 변수와 프로그램 특정 지점에서 중지 되었을 때 사용자가 제공한 식을 동적으로 평가 하는 것에 대 한 지원을 제공 합니다. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (에 지 원하는 언어) 및 자신의 언어를 지원 하려는 타사 공급 업체입니다.  
+- **식 계산기 (EE):** 변수와 프로그램 특정 지점에서 중지 되었을 때 사용자가 제공한 식을 동적으로 평가 하는 것에 대 한 지원을 제공 합니다. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (에 지 원하는 언어) 및 자신의 언어를 지원 하려는 타사 공급 업체입니다.  
   
--   **기호 공급자 (SP):** 라고도 기호 처리기를 프로그램의 디버깅 기호는 사용자를 매핑하여 프로그램의 실행 인스턴스 (예: 소스 코드 수준 디버깅 및 식 평가)는 의미 있는 정보를 제공할 수 있습니다. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (공용 언어 런타임 [CLR]에 대 한 기호 및 프로그램 데이터베이스 [PDB] 기호 파일 형식) 및 디버깅 정보를 저장 하는 방법이 자신의 소유 하는 타사 공급 업체입니다.  
+- **기호 공급자 (SP):** 라고도 기호 처리기를 프로그램의 디버깅 기호는 사용자를 매핑하여 프로그램의 실행 인스턴스 (예: 소스 코드 수준 디버깅 및 식 평가)는 의미 있는 정보를 제공할 수 있습니다. 에 의해 구현 됩니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (공용 언어 런타임 [CLR]에 대 한 기호 및 프로그램 데이터베이스 [PDB] 기호 파일 형식) 및 디버깅 정보를 저장 하는 방법이 자신의 소유 하는 타사 공급 업체입니다.  
   
- 다음 다이어그램은 Visual Studio 디버거에서의 이러한 구성 요소 간의 관계를 보여줍니다.  
+  다음 다이어그램은 Visual Studio 디버거에서의 이러한 구성 요소 간의 관계를 보여줍니다.  
   
- ![디버깅 구성 요소 개요](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
+  ![디버깅 구성 요소 개요](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [패키지 디버그](../../extensibility/debugger/debug-package.md)  

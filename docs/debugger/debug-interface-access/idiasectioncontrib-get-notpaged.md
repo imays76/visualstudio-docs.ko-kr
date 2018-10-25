@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2db3836cceb020dba95703c40f8f450ae0bcbdea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 28f494767820c59e7ece714768979b1778b79a8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869641"
 ---
 # <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
-메모리 부족 섹션 호출 될 수 없습니다 있는지 여부를 나타내는 플래그를 검색 합니다.  
+메모리가 부족 섹션 호출 될 수 없습니다 여부를 나타내는 플래그를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,7 +34,7 @@ HRESULT get_notPaged (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out, retval] 반환 `TRUE` 섹션으로, 그렇지 않으면 호출 될 수 없습니다, 반환 `FALSE`합니다.  
+ [out, retval] 반환 `TRUE` 이 고, 그렇지 않으면 섹션을 페이징할 수 없는 경우 반환 `FALSE`합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  

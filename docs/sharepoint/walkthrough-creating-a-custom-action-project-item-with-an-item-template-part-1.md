@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878065"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기
   고유한 프로젝트 항목 형식을 생성 하 여 Visual Studio에서 SharePoint 프로젝트 시스템을 확장할 수 있습니다. 이 연습에서는 SharePoint 사이트에서 사용자 지정 작업을 만들려면 SharePoint 프로젝트에 추가할 수 있는 프로젝트 항목을 만들게 됩니다. 사용자 지정 작업에 메뉴 항목을 추가 합니다 **사이트 작업** SharePoint 사이트의 메뉴.  
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   사용자 지정 작업에 대 한 SharePoint 프로젝트 항목의 새 형식을 정의 하는 Visual Studio 확장을 만들 합니다. 새 프로젝트 항목 형식과 여러 가지 사용자 지정 기능을 구현합니다.  
+- 사용자 지정 작업에 대 한 SharePoint 프로젝트 항목의 새 형식을 정의 하는 Visual Studio 확장을 만들 합니다. 새 프로젝트 항목 형식과 여러 가지 사용자 지정 기능을 구현합니다.  
   
-    -   Visual Studio에서 사용자 지정 작업에 대 한 디자이너를 표시 하는 등 프로젝트 항목을 관련 된 추가 작업에 대 한 시작 점으로 사용 되는 바로 가기 메뉴입니다.  
+  -   Visual Studio에서 사용자 지정 작업에 대 한 디자이너를 표시 하는 등 프로젝트 항목을 관련 된 추가 작업에 대 한 시작 점으로 사용 되는 바로 가기 메뉴입니다.  
   
-    -   개발자는 프로젝트 항목 및 포함 하는 프로젝트의 특정 속성을 변경할 때 실행 되는 코드입니다.  
+  -   개발자는 프로젝트 항목 및 포함 하는 프로젝트의 특정 속성을 변경할 때 실행 되는 코드입니다.  
   
-    -   프로젝트 항목 옆에 나타나는 사용자 지정 아이콘 **솔루션 탐색기**합니다.  
+  -   프로젝트 항목 옆에 나타나는 사용자 지정 아이콘 **솔루션 탐색기**합니다.  
   
--   프로젝트 항목에 대 한 Visual Studio 항목 템플릿 만들기.  
+- 프로젝트 항목에 대 한 Visual Studio 항목 템플릿 만들기.  
   
--   프로젝트 항목 템플릿 및 확장 프로그램 어셈블리를 배포 하는 Visual Studio 확장 (VSIX) 패키지를 빌드합니다.  
+- 프로젝트 항목 템플릿 및 확장 프로그램 어셈블리를 배포 하는 Visual Studio 확장 (VSIX) 패키지를 빌드합니다.  
   
--   디버깅 및 프로젝트 항목을 테스트 합니다.  
+- 디버깅 및 프로젝트 항목을 테스트 합니다.  
   
- 독립 실행형 연습입니다. 이 연습을 완료 한 후 마법사 항목 템플릿을 추가 하 여 프로젝트 항목을 개선할 수 있습니다. 자세한 내용은 [연습: 항목 템플릿, 2 부를 사용 하 여 사용자 지정 작업 프로젝트 항목을 만들어](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)합니다.  
+  독립 실행형 연습입니다. 이 연습을 완료 한 후 마법사 항목 템플릿을 추가 하 여 프로젝트 항목을 개선할 수 있습니다. 자세한 내용은 [연습: 항목 템플릿, 2 부를 사용 하 여 사용자 지정 작업 프로젝트 항목을 만들어](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)합니다.  
   
 > [!NOTE]  
 >  샘플을 다운로드할 수 있습니다 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 워크플로에 대 한 사용자 지정 활동을 만드는 방법을 보여 주는 합니다.  
@@ -52,26 +52,26 @@ ms.locfileid: "42635332"
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료 하려면 개발 컴퓨터의 다음 구성 요소가 필요 합니다.  
   
--   Microsoft Windows, SharePoint, Visual Studio의 버전을 지원 합니다.
+- Microsoft Windows, SharePoint, Visual Studio의 버전을 지원 합니다.
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 이 연습에서는 합니다 **VSIX 프로젝트** 템플릿 프로젝트 항목을 배포 하려면 VSIX 패키지를 만들려면 sdk에서. 자세한 내용은 [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)합니다.  
   
- 다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
+  다음 개념을 이해에 도움이 필요 하지는 않지만, 연습을 완료 하는:  
   
--   SharePoint에서 사용자 지정 동작입니다. 자세한 내용은 [사용자 지정 동작](http://go.microsoft.com/fwlink/?LinkId=177800)합니다.  
+- SharePoint에서 사용자 지정 동작입니다. 자세한 내용은 [사용자 지정 동작](http://go.microsoft.com/fwlink/?LinkId=177800)합니다.  
   
--   Visual Studio에서 항목 템플릿입니다. 자세한 내용은 [프로젝트 템플릿 및 항목 템플릿 만들기](/visualstudio/ide/creating-project-and-item-templates)를 참조하세요.  
+- Visual Studio에서 항목 템플릿입니다. 자세한 내용은 [프로젝트 템플릿 및 항목 템플릿 만들기](/visualstudio/ide/creating-project-and-item-templates)를 참조하세요.  
   
 ## <a name="create-the-projects"></a>프로젝트 만들기
  이 연습을 완료 하려면 세 개의 프로젝트를 만들려면:  
   
--   VSIX 프로젝트입니다. 이 프로젝트에는 SharePoint 프로젝트 항목을 배포 하려면 VSIX 패키지를 만듭니다.  
+- VSIX 프로젝트입니다. 이 프로젝트에는 SharePoint 프로젝트 항목을 배포 하려면 VSIX 패키지를 만듭니다.  
   
--   항목 템플릿 프로젝트입니다. 이 프로젝트는 SharePoint 프로젝트에 SharePoint 프로젝트 항목을 추가할 수 있는 항목 템플릿을 만듭니다.  
+- 항목 템플릿 프로젝트입니다. 이 프로젝트는 SharePoint 프로젝트에 SharePoint 프로젝트 항목을 추가할 수 있는 항목 템플릿을 만듭니다.  
   
--   클래스 라이브러리 프로젝트입니다. 이 프로젝트는 SharePoint 프로젝트 항목의 동작을 정의 하는 Visual Studio 확장을 구현 합니다.  
+- 클래스 라이브러리 프로젝트입니다. 이 프로젝트는 SharePoint 프로젝트 항목의 동작을 정의 하는 Visual Studio 확장을 구현 합니다.  
   
- 프로젝트를 만들어 연습을 시작 합니다.  
+  프로젝트를 만들어 연습을 시작 합니다.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX 프로젝트를 만들려면  
   

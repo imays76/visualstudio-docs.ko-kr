@@ -15,25 +15,25 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0da7344c474fa653a63d0b134511a9b9d280492f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21140a070c59eead834dbb4c03443dd5157d2018
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845339"
 ---
 # <a name="how-to-provide-context-for-editors"></a>방법: 편집기에 대 한 컨텍스트를 제공 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 편집기에 대 한는 컨텍스트는 편집기에 포커스가 또는 도구 창에 포커스를 이동 된 직전 포커스가 있던 경우에 활성화 됩니다. 다음을 수행 하 여 편집기에 대 한 컨텍스트를 제공할 수 있습니다.  
   
-1.  컨텍스트 모음을 만듭니다.  
+1. 컨텍스트 모음을 만듭니다.  
   
-2.  컨텍스트 모음 선택 요소 식별자 (SEID)에 게시 합니다.  
+2. 컨텍스트 모음 선택 요소 식별자 (SEID)에 게시 합니다.  
   
-3.  모음에 컨텍스트를 유지 합니다.  
+3. 모음에 컨텍스트를 유지 합니다.  
   
- 이러한 작업은 다음 절차에 포함 됩니다. 컨텍스트를 제공 하는 방법에 대 한 자세한 내용은 참조 하세요. **강력한 프로그래밍** 이 항목의에서 뒷부분에 있습니다.  
+   이러한 작업은 다음 절차에 포함 됩니다. 컨텍스트를 제공 하는 방법에 대 한 자세한 내용은 참조 하세요. **강력한 프로그래밍** 이 항목의에서 뒷부분에 있습니다.  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>편집기 또는 디자이너에 대 한 상황에 맞는 모음을 만들려면  
   

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f419716901d35ea667f5e99a0c452d6e1b4d186c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eaa9f5f1a822660d38f954f4f6bd2ee383cd9a2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867483"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
-지정된 된 수의 기호 열거형 시퀀스를 검색합니다.  
+지정된 된 개수의 열거형 시퀀스에서 기호를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,13 +39,13 @@ HRESULT Next (
  [in] 검색할 열거자의 기호 수입니다.  
   
  rgelt  
- [out] 사용 하 여 입력할 수 있는 배열은 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 원하는 기호를 나타내는 개체입니다.  
+ [out] 배열을 사용 하 여 채울 합니다 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 원하는 기호를 나타내는 개체입니다.  
   
  pceltFetched  
- [out] 인출 된 열거자에 기호 수를 반환합니다.  
+ [out] 페치된 열거자의 기호 수를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 더 많은 기호가 없는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 자세한 기호가 없는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="example"></a>예제  
   

@@ -14,35 +14,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fadabf4becdf53453b24a4bc60e7b4e3a6cd21e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: e3c73b118f7e137847c1342fb9949c3d7dd6dd0b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863247"
 ---
 # <a name="handle-specialized-deployment"></a>특수 배포 처리
 배포에는 프로젝트에 대 한 선택적 작업입니다. 예를 들어, 웹 프로젝트를 웹 서버를 업데이트 하는 프로젝트에 있도록 배포를 지원 합니다. 마찬가지로, 한 **스마트 장치** 프로젝트는 대상 장치에 빌드된 응용 프로그램을 복사 하는 배포를 지원 합니다. 프로젝트 하위 형식 구현 하 여 특수 한 배포 동작을 제공할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 인터페이스입니다. 이 인터페이스에는 배포 작업의 전체 집합을 정의합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- 실제 배포 작업을 확인 하려면 별도 스레드에서 수행 해야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 더욱 사용자 상호 작용에 응답 합니다. 제공 하는 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 의해 비동기적으로 호출 된 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 및 필요한 경우 언제 든 지 배포 작업의 상태를 쿼리 또는 작업을 중지 하려면 환경 수 있도록 백그라운드에서 작동 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 배포 명령을 선택할 때 인터페이스 배포 작업 환경에 의해 호출 됩니다.  
+  실제 배포 작업을 확인 하려면 별도 스레드에서 수행 해야 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 더욱 사용자 상호 작용에 응답 합니다. 제공 하는 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 의해 비동기적으로 호출 된 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 및 필요한 경우 언제 든 지 배포 작업의 상태를 쿼리 또는 작업을 중지 하려면 환경 수 있도록 백그라운드에서 작동 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 배포 명령을 선택할 때 인터페이스 배포 작업 환경에 의해 호출 됩니다.  
   
- 배포 작업이 시작 또는 종료 하는 환경 알림 프로젝트 하위 형식 호출 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> 하며 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> 메서드.  
+  배포 작업이 시작 또는 종료 하는 환경 알림 프로젝트 하위 형식 호출 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> 하며 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> 메서드.  
   
   
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>하위 프로젝트에서 특수 배포 처리 하려면  

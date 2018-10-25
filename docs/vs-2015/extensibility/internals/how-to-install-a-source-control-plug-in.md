@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292983"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812987"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>방법: 소스 제어 플러그 인 설치
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ ms.locfileid: "49292983"
 ## <a name="how-an-ide-locates-the-dll"></a>IDE에서 DLL을 찾는 하는 방법  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE에는 두 개의 플러그 인 DLL을 제어 하는 소스를 찾는 방법.  
   
--   기본 소스 제어 플러그 인 찾아 자동으로 연결 합니다.  
+- 기본 소스 제어 플러그 인 찾아 자동으로 연결 합니다.  
   
--   찾을 등록 된 모든 원본 제어 플러그 인을 올 사용자 하나를 선택 합니다.  
+- 찾을 등록 된 모든 원본 제어 플러그 인을 올 사용자 하나를 선택 합니다.  
   
- 첫 번째 방법은에서 DLL을 찾으려고 IDE ProviderRegKey 엔트리의 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider 하위 키 아래에서 찾습니다. 이 항목의 값이 다른 하위 키를 가리킵니다. 그런 다음 IDE는 SccServerPath HKEY_LOCAL_MACHINE 아래에 두 번째 하위 키에 이름이 지정 된 항목에 대 한 "를 찾습니다. 이 항목의 값이 DLL을 IDE를 가리킵니다.  
+  첫 번째 방법은에서 DLL을 찾으려고 IDE ProviderRegKey 엔트리의 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider 하위 키 아래에서 찾습니다. 이 항목의 값이 다른 하위 키를 가리킵니다. 그런 다음 IDE는 SccServerPath HKEY_LOCAL_MACHINE 아래에 두 번째 하위 키에 이름이 지정 된 항목에 대 한 "를 찾습니다. 이 항목의 값이 DLL을 IDE를 가리킵니다.  
   
 > [!NOTE]
 >  IDE는 상대 경로 (예를 들어.\NewProvider.DLL)에서 Dll을 로드 하지 않습니다. DLL에 전체 경로 지정 해야 합니다 (예를 들어 c:\Providers\NewProvider.DLL). 이 무단 또는 가장 플러그 인 Dll의 로드를 방지 하 여 IDE의 보안을 강화 합니다.  
   
- 두 번째 방법은 해당 DLL을 찾을 IDE 기능에서는 모든 항목에 대해 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 하위 키 아래*합니다.* 각 항목에는 이름 및 값입니다. IDE 사용자에 게 이러한 이름 목록을 표시*합니다.* 사용자 이름을 선택 하는 경우 IDE는 하위 키를 가리키는 선택한 이름에 대 한 값을 찾습니다. IDE는 SccServerPath HKEY_LOCAL_MACHINE 아래의 해당 하위 키에서 명명 된 항목을 찾습니다. 해당 항목의 값이 올바른 DLL을 IDE를 가리킵니다.  
+ 두 번째 방법은 해당 DLL을 찾을 IDE 기능에서는 모든 항목에 대해 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 하위 키 아래<em>합니다.</em> 각 항목에는 이름 및 값입니다. IDE 사용자에 게 이러한 이름 목록을 표시<em>합니다.</em> 사용자 이름을 선택 하는 경우 IDE는 하위 키를 가리키는 선택한 이름에 대 한 값을 찾습니다. IDE는 SccServerPath HKEY_LOCAL_MACHINE 아래의 해당 하위 키에서 명명 된 항목을 찾습니다. 해당 항목의 값이 올바른 DLL을 IDE를 가리킵니다.  
   
  소스 제어 플러그 인 DLL을 찾는 한 가지 방법을 모두 지원 하 고 따라서 ProviderRegKey, 이전 설정을 덮어쓰기를 설정 해야 합니다. 무엇 보다도 자체 있도록에 추가 해야 InstalledSccProviders 목록을 사용자에는 사용 하는 소스 제어 플러그 인 중에서 선택할 수 있습니다.  
   

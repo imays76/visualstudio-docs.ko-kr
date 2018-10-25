@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aa50d16f0661b3c4baa40fae24fbee24f6fa7bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8d6a28acea085fad99549739a0c4ab132169a436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889780"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: COM 노출 형식을 만들 수 있어야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|

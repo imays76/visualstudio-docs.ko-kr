@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848789"
 ---
 # <a name="trusted-application-deployment-overview"></a>신뢰할 수 있는 응용 프로그램 배포 개요
 이 항목에서는 신뢰할 수 있는 응용 프로그램 배포 기술을 사용하여, 관리자 권한이 있는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 배포하는 방법에 대한 개요를 제공합니다.  
@@ -51,21 +51,21 @@ ms.locfileid: "39152684"
   
  더 큰 조직에서는 게시자와 배포자가 두 개의 개별 엔터티인 경우가 많습니다.  
   
--   게시자는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 만드는 그룹입니다.  
+- 게시자는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 만드는 그룹입니다.  
   
--   배포자는 일반적으로 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 회사의 엔터프라이즈 데스크톱 컴퓨터에 배포하는 IT(정보 기술) 부서인 그룹입니다.  
+- 배포자는 일반적으로 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 회사의 엔터프라이즈 데스크톱 컴퓨터에 배포하는 IT(정보 기술) 부서인 그룹입니다.  
   
 신뢰할 수 있는 응용 프로그램 배포를 활용하려면 다음 단계에 따라야 합니다.  
   
-1.  게시자에 대한 인증서를 가져옵니다.  
+1. 게시자에 대한 인증서를 가져옵니다.  
   
-2.  모든 클라이언트의 신뢰할 수 있는 게시자 저장소에 게시자를 추가합니다.  
+2. 모든 클라이언트의 신뢰할 수 있는 게시자 저장소에 게시자를 추가합니다.  
   
-3.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 만듭니다.  
+3. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 만듭니다.  
   
-4.  게시자의 인증서를 사용하여 배포 매니페스트에 서명합니다.  
+4. 게시자의 인증서를 사용하여 배포 매니페스트에 서명합니다.  
   
-5.  클라이언트 컴퓨터에 응용 프로그램 배포를 게시합니다.  
+5. 클라이언트 컴퓨터에 응용 프로그램 배포를 게시합니다.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>게시자를 위한 인증서 가져오기  
  디지털 인증서는 Microsoft Authenticode 인증 및 보안 시스템의 핵심 구성 요소입니다. Authenticode는 Windows 운영 체제의 표준 파트입니다. 모든 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 신뢰할 수 있는 응용 프로그램 배포에 참여하는지와 관계없이 디지털 인증서로 서명되어야 합니다. Authenticode를 사용 하는 방법의 전체 설명을 보려면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]를 참조 하세요 [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)합니다.  

@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890168"
 ---
 # <a name="customizing-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,40 +27,40 @@ ms.locfileid: "49281751"
   
  코드 검사 동작을 사용자 지정하기 전에 몇 가지 다른 방법을 고려하세요.  
   
--   *코드 검사 결과에서 테스트 코드를 제외하고 응용 프로그램 코드만 포함하려고 합니다.*  
+- *코드 검사 결과에서 테스트 코드를 제외하고 응용 프로그램 코드만 포함하려고 합니다.*  
   
-     테스트 클래스에 `ExcludeFromCodeCoverage Attribute`를 추가합니다.  
+   테스트 클래스에 `ExcludeFromCodeCoverage Attribute`를 추가합니다.  
   
--   *솔루션에 속하지 않는 어셈블리를 포함하려고 합니다.*  
+- *솔루션에 속하지 않는 어셈블리를 포함하려고 합니다.*  
   
-     이러한 어셈블리에 대한 .pdb 파일을 얻어서 어셈블리 .dll 파일과 동일한 폴더에 복사합니다.  
+   이러한 어셈블리에 대한 .pdb 파일을 얻어서 어셈블리 .dll 파일과 동일한 폴더에 복사합니다.  
   
- 코드 검사 동작을 사용자 지정하려면 [이 항목 끝 부분에 있는 샘플](#sample)을 복사한 다음 .runsettings 파일 확장명을 사용하여 솔루션에 추가합니다. 자신의 요구 사항에 맞게 편집한 다음 **테스트** 메뉴에서 **테스트 설정**, **테스트 설정 선택** 파일을 선택합니다. 이 항목의 나머지 부분에서는 이 절차에 대해 자세히 설명합니다.  
+  코드 검사 동작을 사용자 지정하려면 [이 항목 끝 부분에 있는 샘플](#sample)을 복사한 다음 .runsettings 파일 확장명을 사용하여 솔루션에 추가합니다. 자신의 요구 사항에 맞게 편집한 다음 **테스트** 메뉴에서 **테스트 설정**, **테스트 설정 선택** 파일을 선택합니다. 이 항목의 나머지 부분에서는 이 절차에 대해 자세히 설명합니다.  
   
 ## <a name="the-runsettings-file"></a>.runsettings 파일  
  고급 코드 검사 설정은 .runsettings 파일에서 지정합니다. 이 파일은 유닛 테스트 도구에서 사용하는 구성 파일입니다. [이 항목의 끝 부분에 있는 샘플](#sample)을 복사한 다음 자신의 요구 사항에 맞게 편집하는 것이 좋습니다.  
   
--   *Visual Studio 2010에서 사용한 .testsettings 파일은 어떻게 됩니까?*  
+- *Visual Studio 2010에서 사용한 .testsettings 파일은 어떻게 됩니까?*  
   
-     Visual Studio 2010에서 .testsettings 파일은 MSTest 프레임워크에 따라 단위 테스트에만 적용됩니다. Visual Studio 2012 테스트 도구는 MSTest뿐만 아니라 NUnit, xUnit.net 등 다른 프레임워크에도 적용됩니다. .testsettings 파일은 여기에서 사용할 수 없습니다. .runsettings 파일은 모든 테스트 프레임워크에서 사용할 수 있는 테스트 도구를 사용자 지정할 수 있도록 설계되었습니다.  
+   Visual Studio 2010에서 .testsettings 파일은 MSTest 프레임워크에 따라 단위 테스트에만 적용됩니다. Visual Studio 2012 테스트 도구는 MSTest뿐만 아니라 NUnit, xUnit.net 등 다른 프레임워크에도 적용됩니다. .testsettings 파일은 여기에서 사용할 수 없습니다. .runsettings 파일은 모든 테스트 프레임워크에서 사용할 수 있는 테스트 도구를 사용자 지정할 수 있도록 설계되었습니다.  
   
- 코드 검사를 사용자 지정하려면 .runsettings 파일을 솔루션에 추가해야 합니다.  
+  코드 검사를 사용자 지정하려면 .runsettings 파일을 솔루션에 추가해야 합니다.  
   
-1.  .xml 파일을 `.runsettings` 확장명으로 솔루션 항목으로 추가합니다.  
+1. .xml 파일을 `.runsettings` 확장명으로 솔루션 항목으로 추가합니다.  
   
-     솔루션 탐색기의 솔루션 바로 가기 메뉴에서 **추가**, **새 항목**, **XML 파일**을 차례로 선택합니다. 파일을 `CodeCoverage.runsettings`로 끝나는 이름으로 저장합니다.  
+    솔루션 탐색기의 솔루션 바로 가기 메뉴에서 **추가**, **새 항목**, **XML 파일**을 차례로 선택합니다. 파일을 `CodeCoverage.runsettings`로 끝나는 이름으로 저장합니다.  
   
-2.  이 항목 끝 부분에 있는 샘플의 콘텐츠를 추가한 다음 다음 섹션에 설명된 대로 각자의 요구 사항에 맞게 사용자 지정합니다.  
+2. 이 항목 끝 부분에 있는 샘플의 콘텐츠를 추가한 다음 다음 섹션에 설명된 대로 각자의 요구 사항에 맞게 사용자 지정합니다.  
   
-3.  **테스트** 메뉴에서 **테스트 설정**, **테스트 설정 파일 선택**을 차례로 선택하고 파일을 선택합니다.  
+3. **테스트** 메뉴에서 **테스트 설정**, **테스트 설정 파일 선택**을 차례로 선택하고 파일을 선택합니다.  
   
-4.  이제 **코드 검사 분석**을 실행하면 `.runsettings` 파일이 해당 동작을 제어합니다. 코드 검사를 반드시 다시 실행해야 합니다. 테스트를 실행하거나 코드를 업데이트하면 이전 검사 결과 및 코드 강조가 자동으로 숨겨지지 않습니다.  
+4. 이제 **코드 검사 분석**을 실행하면 `.runsettings` 파일이 해당 동작을 제어합니다. 코드 검사를 반드시 다시 실행해야 합니다. 테스트를 실행하거나 코드를 업데이트하면 이전 검사 결과 및 코드 강조가 자동으로 숨겨지지 않습니다.  
   
-5.  사용자 지정 설정을 해제했다 다시 사용하도록 설정하려면 **테스트**, **테스트 설정** 메뉴에서 파일을 선택 취소 또는 선택합니다.  
+5. 사용자 지정 설정을 해제했다 다시 사용하도록 설정하려면 **테스트**, **테스트 설정** 메뉴에서 파일을 선택 취소 또는 선택합니다.  
   
- ![사용자 지정 설정 파일이 있는 테스트 설정 메뉴](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
+   ![사용자 지정 설정 파일이 있는 테스트 설정 메뉴](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
   
- 유닛 테스트의 다른 측면은 동일한 .runsettings 파일에서 구성할 수 있습니다. 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요.  
+   유닛 테스트의 다른 측면은 동일한 .runsettings 파일에서 구성할 수 있습니다. 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요.  
   
 ### <a name="specifying-symbol-search-paths"></a>기호 검색 경로 지정  
  어셈블리가 존재하려면 코드 검사에 기호(.pdb 파일)가 필요합니다. 솔루션에서 빌드한 어셈블리의 경우 기호 파일은 일반적으로 이진 파일과 함께 있으며 코드 검사는 자동으로 실행됩니다. 하지만 코드 검사 분석에 참조된 어셈블리를 포함하려는 경우가 있습니다. 이런 경우에 .pdb 파일이 이진 파일과 가깝지 않을 수 있지만 .runsettings 파일에서 기호 검색 경로를 지정할 수 있습니다.  
@@ -106,21 +106,21 @@ ms.locfileid: "49281751"
 ### <a name="regular-expressions"></a>정규식  
  Include 및 exclude 노드는 정규식을 사용합니다. 자세한 내용은 [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)을 참조하세요. 정규식은 와일드 카드와 다릅니다. 특히 다음과 같습니다.  
   
-1.  **\.\*** 모든 문자의 문자열과 일치합니다.  
+1. **\.\\*** 모든 문자의 문자열과 일치합니다.  
   
-2.  **\\.** 점 “.”과 일치합니다.  
+2. **\\.** 점 “.”과 일치합니다.  
   
-3.  **\\(   \\)** 는 괄호 “(  )”와 일치합니다.  
+3. **\\(   \\)** 는 괄호 “(  )”와 일치합니다.  
   
-4.  **\\\\**파일 경로 구분 기호 “\\”와 일치합니다.  
+4. **\\\\**파일 경로 구분 기호 “\\”와 일치합니다.  
   
-5.  **^** 는 문자열의 시작과 일치합니다.  
+5. **^** 는 문자열의 시작과 일치합니다.  
   
-6.  **$** 는 문자열의 끝과 일치합니다.  
+6. **$** 는 문자열의 끝과 일치합니다.  
   
- 모든 일치 항목은 대소문자를 구분하지 않습니다.  
+   모든 일치 항목은 대소문자를 구분하지 않습니다.  
   
- 예를 들면 다음과 같습니다.  
+   예를 들면 다음과 같습니다.  
   
 ```xml  
 <ModulePaths>  
@@ -144,25 +144,25 @@ ms.locfileid: "49281751"
 ### <a name="other-ways-to-include-or-exclude-elements"></a>요소를 포함 또는 제외하는 다른 방법  
  예제를 보려면 [이 항목의 끝 부분에 있는 샘플](#sample)을 참조하세요.  
   
--   `ModulePath` - 어셈블리 파일 경로로 지정한 어셈블리  
+- `ModulePath` - 어셈블리 파일 경로로 지정한 어셈블리  
   
--   `CompanyName` – 어셈블리를 회사 특성으로 일치시킵니다.  
+- `CompanyName` – 어셈블리를 회사 특성으로 일치시킵니다.  
   
--   `PublicKeyToken` – 서명된 어셈블리를 공개 키 토큰으로 일치시킵니다. 예를 들어, 모든 Visual Studio 구성 요소 및 확장과 일치시키려면 `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`을 사용합니다.  
+- `PublicKeyToken` – 서명된 어셈블리를 공개 키 토큰으로 일치시킵니다. 예를 들어, 모든 Visual Studio 구성 요소 및 확장과 일치시키려면 `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`을 사용합니다.  
   
--   `Source` – 요소를 소스 파일이 정의된 경로 이름으로 일치시킵니다.  
+- `Source` – 요소를 소스 파일이 정의된 경로 이름으로 일치시킵니다.  
   
--   `Attribute` – 특정 특성이 연결된 요소에 일치시킵니다. 이름 끝의 "특성"을 포함하여 특성의 전체 이름을 지정합니다.  
+- `Attribute` – 특정 특성이 연결된 요소에 일치시킵니다. 이름 끝의 "특성"을 포함하여 특성의 전체 이름을 지정합니다.  
   
--   `Function` – 정규화된 이름으로 절차, 함수 또는 메서드를 일치시킵니다.  
+- `Function` – 정규화된 이름으로 절차, 함수 또는 메서드를 일치시킵니다.  
   
- **함수 이름 일치**  
+  **함수 이름 일치**  
   
- 정규식은 네임스페이스, 클래스 이름, 메서드 이름, 매개 변수 목록을 포함한 함수의 정규화된 이름과 일치해야 합니다. 예를 들면 다음과 같습니다.  
+  정규식은 네임스페이스, 클래스 이름, 메서드 이름, 매개 변수 목록을 포함한 함수의 정규화된 이름과 일치해야 합니다. 예를 들면 다음과 같습니다.  
   
--   C# 또는 Visual Basic의 경우: `Fabrikam.Math.LocalMath.SquareRoot(double)`입니다.  
+- C# 또는 Visual Basic의 경우: `Fabrikam.Math.LocalMath.SquareRoot(double)`입니다.  
   
--   C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`  
+- C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`  
   
 ```xml  
 <Functions>  
@@ -201,17 +201,17 @@ ms.locfileid: "49281751"
   
  ![빌드 정의에 runsettings 지정](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
   
-1.  .runsettings 파일이 체크 인되었는지 확인하세요.  
+1. .runsettings 파일이 체크 인되었는지 확인하세요.  
   
-2.  팀 탐색기에서 **빌드**를 연 다음 빌드 정의를 추가하거나 편집합니다.  
+2. 팀 탐색기에서 **빌드**를 연 다음 빌드 정의를 추가하거나 편집합니다.  
   
-3.  **프로세스** 페이지에서 **자동화된 테스트**, **테스트 소스**, **실행 설정**을 확장합니다. **.runsettings** 파일을 선택합니다.  
+3. **프로세스** 페이지에서 **자동화된 테스트**, **테스트 소스**, **실행 설정**을 확장합니다. **.runsettings** 파일을 선택합니다.  
   
-    -   *하지만 **테스트 소스**대신 **테스트 어셈블리**가 나타납니다. **실행 설정** 필드를 설정하려고 하면 .testsettings 파일만 선택할 수 있습니다.*  
+   - <em>하지만 **테스트 어셈블리</em>* 대신 나타납니다 **테스트 소스**합니다. 실행 설정** 필드를 설정하려고 하면 .testsettings 파일만 선택할 수 있습니다.*  
   
-         **자동화된 테스트**에서 **테스트 어셈블리**를 선택한 다음 줄 끝에서 **[...]** 를 선택합니다. **테스트 실행 추가/편집** 대화 상자에서 **Test Runner**를 **Visual Studio Test Runner**로 설정합니다.  
+      **자동화된 테스트**에서 **테스트 어셈블리**를 선택한 다음 줄 끝에서 **[...]** 를 선택합니다. **테스트 실행 추가/편집** 대화 상자에서 **Test Runner**를 **Visual Studio Test Runner**로 설정합니다.  
   
- 빌드 보고서의 요약 섹션에 결과가 표시됩니다.  
+   빌드 보고서의 요약 섹션에 결과가 표시됩니다.  
   
 ##  <a name="sample"></a> 샘플 .runsettings 파일  
  이 코드를 복사하고 자신의 필요에 따라 편집합니다. 이 파일은 기본 .runsettings 파일입니다.  

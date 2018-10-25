@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890676"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에서 SharePoint 도구 확장
   Visual Studio에서 SharePoint 도구에는 많은 응용 프로그램 개발 시나리오의 요구 사항을 충족 합니다. 그러나 사용자 또는 다른 개발자가 필요로 하는 기능 제공 하지 않는 경우를 발견할 수 있습니다. 이러한 경우에는 필요한 기능을 만들 수 있는 SharePoint 도구를 확장할 수 있습니다.
@@ -38,11 +38,11 @@ ms.locfileid: "42625926"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>서버 탐색기에서 SharePoint 연결 노드 확장
  Visual Studio에서 사용할 수 있습니다는 **SharePoint 연결** 에서 노드를 **서버 탐색기** 계층적 트리 뷰에서 여러 구성 요소 중 하나 이상의 로컬 SharePoint 사이트에는 창입니다. 확장할 수도 있습니다는 **SharePoint 연결** 다음과 같은 방법으로 노드:
 
--   고유한 노드를 추가 합니다. 기본적으로 표시 되지 않는 SharePoint 사이트의 구성 요소를 표시 하려는 경우에 유용 합니다.
+- 고유한 노드를 추가 합니다. 기본적으로 표시 되지 않는 SharePoint 사이트의 구성 요소를 표시 하려는 경우에 유용 합니다.
 
--   기존 노드를 확장 합니다. 예를 들어, 기존 노드는 새 자식 노드를 추가할 수 있습니다 또는 노드에 바로 가기 메뉴 항목을 추가 하 고 개발자가 메뉴 항목을 클릭할 때 작업을 수행할 수 있습니다.
+- 기존 노드를 확장 합니다. 예를 들어, 기존 노드는 새 자식 노드를 추가할 수 있습니다 또는 노드에 바로 가기 메뉴 항목을 추가 하 고 개발자가 메뉴 항목을 클릭할 때 작업을 수행할 수 있습니다.
 
- 자세한 내용은 [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)합니다.
+  자세한 내용은 [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)합니다.
 
 ## <a name="development-computer-requirements"></a>개발 컴퓨터 요구 사항
  SharePoint 도구의 확장을 만들려면 개발 컴퓨터에는 Visual Studio에서 SharePoint 솔루션 만들기에 대 한 동일한 요구 사항을 충족 해야 합니다.

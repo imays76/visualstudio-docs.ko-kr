@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823530"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49287692"
 ## <a name="superior-debugging"></a>뛰어난 디버깅 기능  
  독립형으로 실행되거나 Unity 편집기에서 실행되는 것에 관계없이 Visual Studio의 강력한 디버거를 Unity 게임에 연결하여 C# 스크립트 및 DLL을 디버그합니다. Visual Studio에서 기대하는 모든 디버깅 기능을 사용할 수 있습니다.  
   
--   조건부 중단점을 포함하는 중단점입니다.  
+- 조건부 중단점을 포함하는 중단점입니다.  
   
--   조사식 창에서 복잡한 식을 평가합니다.  
+- 조사식 창에서 복잡한 식을 평가합니다.  
   
--   변수 및 인수 값을 조사하고 수정합니다.  
+- 변수 및 인수 값을 조사하고 수정합니다.  
   
--   복잡한 개체 및 데이터 구조로 드릴다운합니다.  
+- 복잡한 개체 및 데이터 구조로 드릴다운합니다.  
   
- 네트워크에 연결된 다른 컴퓨터에서 실행되는 동안 Unity 게임을 디버그할 수도 있습니다.  
+  네트워크에 연결된 다른 컴퓨터에서 실행되는 동안 Unity 게임을 디버그할 수도 있습니다.  
   
 ## <a name="productivity"></a>생산성  
  C#에서의 코드 작성 및 리팩터링을 위한 Visual Studio의 설정된 생산성 기능 외에도 Visual Studio Tools for Unity는 Unity 개발자를 위한 추가 생산성 기능을 제공합니다.  
