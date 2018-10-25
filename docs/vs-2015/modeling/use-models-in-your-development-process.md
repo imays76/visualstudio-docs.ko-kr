@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e731803e58ac641034699719a9fb0cbfe3cb6f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872286"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는
 ## <a name="how-to-use-models"></a>모델을 사용하는 방법  
  모델은 다음과 같은 여러 방식에서 유용할 수 있습니다.  
   
--   모델링 다이어그램을 그리면 요구 사항, 아키텍처 및 전반적인 디자인에 관련된 개념을 명확하게 설명할 수 있습니다. 자세한 내용은 [사용자 요구 사항 모델](../modeling/model-user-requirements.md)합니다.  
+- 모델링 다이어그램을 그리면 요구 사항, 아키텍처 및 전반적인 디자인에 관련된 개념을 명확하게 설명할 수 있습니다. 자세한 내용은 [사용자 요구 사항 모델](../modeling/model-user-requirements.md)합니다.  
   
--   모델로 작업하면 요구 사항 불일치를 노출할 수 있습니다.  
+- 모델로 작업하면 요구 사항 불일치를 노출할 수 있습니다.  
   
--   모델을 사용하여 커뮤니케이션하면 중요한 개념을 자연어보다 더 명확하게 전달할 수 있습니다. 자세한 내용은 [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)합니다.  
+- 모델을 사용하여 커뮤니케이션하면 중요한 개념을 자연어보다 더 명확하게 전달할 수 있습니다. 자세한 내용은 [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)합니다.  
   
--   때로는 모델을 사용하여 코드 또는 데이터베이스 스키마나 문서와 같은 기타 아티팩트를 생성할 수 있습니다. 예를 들어 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]의 모델링 구성 요소는 모델에서 생성됩니다.  자세한 내용은 [생성 및 모델에서 앱 구성](../modeling/generate-and-configure-your-app-from-models.md)합니다.  
+- 때로는 모델을 사용하여 코드 또는 데이터베이스 스키마나 문서와 같은 기타 아티팩트를 생성할 수 있습니다. 예를 들어 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]의 모델링 구성 요소는 모델에서 생성됩니다.  자세한 내용은 [생성 및 모델에서 앱 구성](../modeling/generate-and-configure-your-app-from-models.md)합니다.  
   
- 매우 민첩한 프로세스부터 격식 있는 프로세스에 이르기까지 다양한 프로세스에 모델을 사용할 수 있습니다.  
+  매우 민첩한 프로세스부터 격식 있는 프로세스에 이르기까지 다양한 프로세스에 모델을 사용할 수 있습니다.  
   
 ### <a name="use-models-to-reduce-ambiguity"></a>모델을 사용하여 모호성 감소  
  모델링 언어는 자연어보다 명확하므로 일반적으로 소프트웨어 개발 중에 필요한 아이디어를 표현하는 데 사용됩니다.  

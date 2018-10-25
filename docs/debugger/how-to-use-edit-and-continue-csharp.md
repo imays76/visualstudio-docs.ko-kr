@@ -1,7 +1,7 @@
 ---
-title: '방법: 편집 하며 계속 하기 (C#) | Microsoft Docs'
+title: '방법: 편집을 사용 하 고 계속 하기 (C#) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -17,39 +17,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1f073d401ddc1a99e365245f2a8c1b66b13fb8a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 41e97f488344e3d34ce326a3d35880d94da4ad9a
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475186"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382807"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>방법: 편집하며 계속하기 사용(C#)
-C#에서 편집하며 계속하기를 사용하면 디버깅하는 동안 중단 모드에서 코드를 변경할 수 있습니다. 디버깅 세션을 중지하고 다시 시작하지 않고도 변경 내용을 적용할 수 있습니다.  
+편집 하며 계속 하기를 사용 하 여를 중지 하 고 디버깅 세션을 다시 시작 하지 않고도 디버깅 하는 동안 중단 모드에서 코드 변경 내용을 적용 합니다.  
+
+편집 하며 계속 하기 C# 중단 모드에서 코드를 변경한 다음 사용 하 여 디버깅을 계속할 때 자동으로 이루어짐 **계속**합니다 **단계**, 또는 **다음 문 설정**, 또는 디버거 창에서 함수를 계산 합니다.  
+
+자세한 내용은 [편집 하며 계속 하기 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)합니다.
+
+>[!NOTE]
+>편집 하며 계속 액세스에 최적화 된, 지원 되지 않습니다 혼합 또는 SQL Server 공용 언어 런타임 (CLR) 통합 코드입니다. 다른 지원 되지 않는 시나리오에 대 한 자세한 내용은 [코드 변경 내용을 지원 (C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)합니다. 편집 하 고 이러한 시나리오 중 하나를 사용 하 여 계속 하려는 경우 편집 하며 계속 하기가 지원 되지 않음을 알리는 메시지 상자가 나타납니다.  
   
- 편집 하며 계속 하기는 자동으로 호출 중단 모드에 필요한 내용을 변경한 다음 디버거 실행을 선택할 때와 같은 명령을 **계속**, **단계**, 또는 **다음 문 설정**, 하거나 디버거 창에서 함수입니다.  
+**편집 하며 계속 하기를 사용할지 설정 합니다.**  
+   
+1. 디버깅 세션의 경우 디버깅을 중지 (**디버깅할** > **디버깅 중지** 하거나 **Shift**+**F5**) .
+   
+1. **도구가** > **옵션** (또는 **디버그** > **옵션**) > **디버깅**  >  **일반**을 선택 하거나 선택을 취소 합니다 **편집을 사용 하도록 설정 하 고 계속** 확인란 합니다.  
   
-> [!NOTE]
->  최적화 된 코드, 혼합된 네이티브/관리 코드 또는 SQL Server 공용 언어 런타임 (CLR) 통합 코드를 디버깅할 때는 편집 하며 계속 하기가 지원 되지 않습니다. 기타 지원 되지 않는 시나리오에 대 한 자세한 내용은 참조 [지원 코드 변경 내용 (C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)합니다. 않는다는 대화 상자 편집 하며 계속 하기는 지원 되지 않습니다 디버거에 표시 되는 경우 이러한 시나리오 중 하나에서 코드 변경 내용을 적용 하려고 합니다.  
-  
-### <a name="to-invoke-edit-and-continue-automatically"></a>편집을 호출 하 고 자동으로 계속  
-  
-1.  중단 모드에서 소스 코드를 변경을 합니다.  
-  
-2.  **디버그** 메뉴를 클릭 하 여 **계속**, **단계**, 또는 **다음 문 설정** 하거나 디버거 창에서 함수.  
-  
-     새 코드는 컴파일됩니다 하 고 새 코드와 함께 계속 디버깅 합니다. 일부 변경 내용이 편집 하며 계속 하기에서 지원 되지 않습니다. 자세한 내용은 참조 [지원 코드 변경 내용 (C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)합니다.  
-  
-### <a name="to-enabledisable-edit-and-continue"></a>편집하며 계속하기를 사용하거나 사용하지 않도록 설정하려면  
-  
-1.  **도구** 메뉴에서 **옵션**을 클릭합니다.  
-  
-2.  에 **옵션** 대화 상자에서 **디버깅** 노드를 선택한 **편집 하며 계속 하기**합니다.  
-  
-3.  에 **옵션** 대화 상자 **편집 하며 계속 하기** 페이지를 선택 하거나 선택을 취소는 **사용 편집 하며 계속 하기** 확인란 합니다.  
-  
-     이 설정은 디버깅 세션을 다시 시작할 때 적용이 됩니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [편집 하며 계속 하기 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [지원 되는 코드 변경 내용 (C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)   
+설정 하거나 디버깅 세션을 다시 시작할 때 적용이 됩니다.  
+
+**편집 하며 계속 하기:**  
+   
+1. 중단 모드에서 디버깅 하는 동안 소스 코드 변경 내용을 확인 합니다.  
+   
+1. **디버그** 메뉴에서 클릭 **계속**를 **단계**, 또는 **다음 문 설정**, 디버거 창에서 함수 또는 합니다.  
+   
+   새, 컴파일된 코드를 사용 하 여 계속 디버깅 합니다. 
+
+몇 가지 유형의 코드 변경은 편집 하며 계속 하기에서 지원 되지 않습니다. 자세한 내용은 [코드 변경 내용을 지원 (C# 및 Visual Basic)](../debugger/supported-code-changes-csharp.md)합니다.   

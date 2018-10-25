@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831135"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio 확장명 찾기 및 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Visual Studio 확장은 Visual Studio 내에서 실행되고 새로운 기능 �
 ## <a name="sample-master-copies-and-working-copies"></a>샘플 마스터 복사본 및 작업 복사본  
  온라인 샘플을 설치하면 솔루션은 다음 두 위치에 저장됩니다.  
   
--   작업 복사본은 **새 프로젝트** 대화 상자에 지정된 위치에 저장됩니다.  
+- 작업 복사본은 **새 프로젝트** 대화 상자에 지정된 위치에 저장됩니다.  
   
--   별도의 마스터 복사본은 컴퓨터에 저장됩니다.  
+- 별도의 마스터 복사본은 컴퓨터에 저장됩니다.  
   
- **확장 및 업데이트** 대화 상자를 사용하여 이러한 샘플 관련 작업을 수행할 수 있습니다.  
+  **확장 및 업데이트** 대화 상자를 사용하여 이러한 샘플 관련 작업을 수행할 수 있습니다.  
   
--   설치한 샘플의 마스터 복사본을 나열합니다.  
+- 설치한 샘플의 마스터 복사본을 나열합니다.  
   
--   샘플의 마스터 복사본을 사용하지 않거나 제거합니다.  
+- 샘플의 마스터 복사본을 사용하지 않거나 제거합니다.  
   
--   기술이나 기능과 관련된 샘플의 모음인 샘플 팩을 설치합니다.  
+- 기술이나 기능과 관련된 샘플의 모음인 샘플 팩을 설치합니다.  
   
--   개별 온라인 샘플을 설치합니다. ( **새 프로젝트** 대화 상자에서도 할 수 있습니다.)  
+- 개별 온라인 샘플을 설치합니다. ( **새 프로젝트** 대화 상자에서도 할 수 있습니다.)  
   
--   설치된 샘플에 대해 소스 코드 변경 내용이 게시되면 업데이트 알림을 봅니다.  
+- 설치된 샘플에 대해 소스 코드 변경 내용이 게시되면 업데이트 알림을 봅니다.  
   
--   업데이트 알림이 있는 경우 설치된 샘플의 마스터 복사본을 업데이트합니다.  
+- 업데이트 알림이 있는 경우 설치된 샘플의 마스터 복사본을 업데이트합니다.  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>확장 및 업데이트 대화 상자를 사용하지 않고 설치  
  .vsix 파일에 패키지된 확장은 Visual Studio Gallery 이외의 위치에서 사용될 수 있습니다. **확장 및 업데이트** 대화 상자는 이러한 파일을 검색할 수 없지만, .vsix 파일을 두 번 클릭하거나 이 파일을 선택하고 ENTER 키를 눌러 해당 파일을 설치할 수 있습니다. 그런 다음, 지침을 따르세요. 확장이 설치되면 **확장 및 업데이트** 대화 상자를 사용하여 사용, 사용 안 함으로 설정하거나 제거할 수 있습니다.  

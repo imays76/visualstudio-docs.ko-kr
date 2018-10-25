@@ -15,12 +15,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ae3c50d33cefe6074f42e5923b5a0bf49cc2f22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b707e92c3d7b576368b5d00459c2b329928a242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843173"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>중첩된 프로젝트에 대한 명령 처리 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,27 +36,27 @@ IDE를 통해 전달 되는 명령에 전달할 수는 <xref:Microsoft.VisualStu
   
 #### <a name="to-implement-command-handling"></a>명령 처리를 구현 하려면  
   
-1.  때 사용자는 중첩 된 프로젝트에서 중첩 된 프로젝트 또는 노드를 선택 합니다.  
+1. 때 사용자는 중첩 된 프로젝트에서 중첩 된 프로젝트 또는 노드를 선택 합니다.  
   
-    1.  호출 하 여 IDE <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드.  
+   1. 호출 하 여 IDE <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드.  
   
-     — 또는 —  
+      — 또는 —  
   
-    1.  IDE를 호출 하는 명령이 솔루션 탐색기에서 바로 가기 메뉴 명령 등의 계층 구조 창에서 발생 하는 경우는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 메서드를 프로젝트의 부모입니다.  
+   2. IDE를 호출 하는 명령이 솔루션 탐색기에서 바로 가기 메뉴 명령 등의 계층 구조 창에서 발생 하는 경우는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 메서드를 프로젝트의 부모입니다.  
   
-2.  부모 프로젝트에 전달할 매개 변수를 검사할 수 있습니다 `QueryStatus`와 같은 `pguidCmdGroup` 및 `prgCmds`을 부모 프로젝트 명령을 필터링 해야 하는지 여부를 결정 합니다. 부모 프로젝트 명령을 필터링 할 구현 된 경우 설정 해야 합니다.  
+2. 부모 프로젝트에 전달할 매개 변수를 검사할 수 있습니다 `QueryStatus`와 같은 `pguidCmdGroup` 및 `prgCmds`을 부모 프로젝트 명령을 필터링 해야 하는지 여부를 결정 합니다. 부모 프로젝트 명령을 필터링 할 구현 된 경우 설정 해야 합니다.  
   
-    ```  
-    prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
-    // make sure it is disabled  
-    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
-    ```  
+   ```  
+   prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
+   // make sure it is disabled  
+   prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
+   ```  
   
-     부모 프로젝트 반환 해야 `S_OK`합니다.  
+    부모 프로젝트 반환 해야 `S_OK`합니다.  
   
-     방금 반환할 경우 부모 프로젝트에는 명령을 필터링 하지 않습니다, `S_OK`합니다. 이 경우 IDE 자식 프로젝트에 명령을 자동으로 라우팅합니다.  
+    방금 반환할 경우 부모 프로젝트에는 명령을 필터링 하지 않습니다, `S_OK`합니다. 이 경우 IDE 자식 프로젝트에 명령을 자동으로 라우팅합니다.  
   
-     부모 프로젝트 명령을 자식 프로젝트에 라우팅할 수 없습니다. 이 작업을 수행 하는 IDE...  
+    부모 프로젝트 명령을 자식 프로젝트에 라우팅할 수 없습니다. 이 작업을 수행 하는 IDE...  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831824"
 ---
 # <a name="core-interfaces"></a>Core 인터페이스
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ ms.locfileid: "49217739"
 ## <a name="discussion"></a>토론  
  이러한 인터페이스는 디버그 엔진 (DE)을 만들려면 주로 사용 됩니다. 여기에 범주별으로 구성 됩니다.  
   
--   [중단점](#Breakpoints)  
+- [중단점](#Breakpoints)  
   
--   [컨텍스트](#Contexts)  
+- [컨텍스트](#Contexts)  
   
--   [핵심 서버](#CoreServer)  
+- [핵심 서버](#CoreServer)  
   
--   [디버그 엔진](#DebugEngines)  
+- [디버그 엔진](#DebugEngines)  
   
--   [문서](#Documents)  
+- [문서](#Documents)  
   
--   [이벤트](#Events)  
+- [이벤트](#Events)  
   
--   [식](#Expressions)  
+- [식](#Expressions)  
   
--   [메모리](#Memory)  
+- [메모리](#Memory)  
   
--   [모듈](#Modules)  
+- [모듈](#Modules)  
   
--   [포트](#Ports)  
+- [포트](#Ports)  
   
--   [프로세스](#Processes)  
+- [프로세스](#Processes)  
   
--   [프로그램](#Programs)  
+- [프로그램](#Programs)  
   
--   [속성](#Properties)  
+- [속성](#Properties)  
   
--   [스택 프레임](#StackFrames)  
+- [스택 프레임](#StackFrames)  
   
--   [스레드](#Threads)  
+- [스레드](#Threads)  
   
--   [형식 시각화 도우미](#TypeVisualizers)  
+- [형식 시각화 도우미](#TypeVisualizers)  
   
- 인터페이스를 구현할 수 있는 엔터티는:  
+  인터페이스를 구현할 수 있는 엔터티는:  
   
--   디버그 엔진 (DE)  
+- 디버그 엔진 (DE)  
   
--   포트 공급자 (PS)  
+- 포트 공급자 (PS)  
   
--   식 계산기 (EE)  
+- 식 계산기 (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> 중단점  
  이러한 인터페이스와 관련 된 중단점의 추적을 구현 합니다.  

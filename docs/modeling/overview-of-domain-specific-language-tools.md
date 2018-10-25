@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 873c377b4b2262df6b12f581f1cdac901d27ffce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871747"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>도메인별 언어 도구 개요
 Visual Studio에서 호스팅되는 도메인 특정 언어 도구 (DSL 도구)를 사용 하 여 도메인 특정 언어의 디자인과 생성 하는 모든 사용자에 게 필요한 언어를 기반으로 하는 모델을 만들 수 있습니다.
@@ -34,31 +34,31 @@ Visual Studio에서 호스팅되는 도메인 특정 언어 도구 (DSL 도구)�
 ## <a name="the-dsl-tools-solution"></a>DSL 도구 솔루션
  도메인 관련 디자이너 마법사에는 다음 솔루션 템플릿을 제공합니다.
 
--   작업 흐름
+- 작업 흐름
 
--   클래스 다이어그램
+- 클래스 다이어그램
 
--   최소 언어
+- 최소 언어
 
--   구성 요소 모델
+- 구성 요소 모델
 
--   최소한의 WPF
+- 최소한의 WPF
 
--   최소 Windows.Forms
+- 최소 Windows.Forms
 
--   DSL 라이브러리
+- DSL 라이브러리
 
- 자세한 내용은 [도메인별 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)합니다.
+  자세한 내용은 [도메인별 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)합니다.
 
- 마법사는 다음 프로젝트가 있는 Visual Studio 솔루션을 만듭니다.
+  마법사는 다음 프로젝트가 있는 Visual Studio 솔루션을 만듭니다.
 
--   Dsl
+- Dsl
 
-     Dsl 프로젝트 도메인 특정 언어 및 해당 편집 및 처리 도구를 정의합니다.
+   Dsl 프로젝트 도메인 특정 언어 및 해당 편집 및 처리 도구를 정의합니다.
 
--   **DslPackage**
+- **DslPackage**
 
-     DslPackage 프로젝트 언어 도구 Visual Studio와 통합 하는 방법을 결정 합니다.
+   DslPackage 프로젝트 언어 도구 Visual Studio와 통합 하는 방법을 결정 합니다.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL 도구는 그래픽 인터페이스
  도메인 특정 언어에 요소 및 관계를 추가 하려면 DSL 도구 그래픽 인터페이스를 사용할 수 있습니다. 요소를 추가 하면 셰이프에 매핑시키고 하 고 색을 사용자 지정 데코레이터를 추가 하 여 모양을 정의할 수 있습니다. 또한 도구 상자에 요소를 추가할 수 있습니다.

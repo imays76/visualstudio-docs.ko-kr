@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03fbc1499372221a815eb639442af586f7020cf1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3eaf98fe0c60a23f519bd6ec86ae6c674ac3b4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877038"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
-디버그 패키지가 현재 수행 하기 위해 사용 되는 문서에서 위치를 설명 하는 문서 컨텍스트를 가져옵니다.  
+디버그 패키지가 현재 수에 있는 문서의 위치를 설명 하는 문서 컨텍스트를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,13 +42,13 @@ int GetDocumentContext (
   
 #### <a name="parameters"></a>매개 변수  
  `ppDocContext`  
- [out] 반환 된 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 소스 파일 문서의 위치를 나타내는 개체입니다.  
+ [out] 반환 된 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 원본 파일 문서의 위치를 나타내는 개체입니다.  
   
 ## <a name="remarks"></a>설명  
  예를 들어 캐럿을 표시 하려면이 위치를 사용할 수 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)   

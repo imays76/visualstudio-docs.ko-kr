@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4788e872e18d5db9c6d7c4452defc415290188
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886502"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>연습: 편집기 확장을 사용 하 여 바로 가기 키 사용
 편집기 확장에서 바로 가기 키에 대응할 수 있습니다. 다음 연습에는 바로 가기 키를 사용 하 여 보기 장식 텍스트 뷰를 추가 하는 방법을 보여 줍니다. 이 연습에서는 뷰포트 adornment 편집기 템플릿을 기준으로 하며 장식을 사용 하 여 추가할 수 있도록는 + 문자입니다.  
@@ -28,21 +28,21 @@ ms.locfileid: "39566566"
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) 프로젝트 만들기  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션 이름을 `KeyBindingTest`입니다.  
+1. C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `KeyBindingTest`로 지정합니다.  
   
-2.  편집기 텍스트 장식 항목 템플릿을 프로젝트에 추가 하 고 이름을 `KeyBindingTest`입니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
+2. 편집기 텍스트 장식 항목 템플릿을 프로젝트에 추가 하 고 이름을 `KeyBindingTest`입니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
-3.  다음 참조를 추가 하 고 설정 **CopyLocal** 에 `false`:  
+3. 다음 참조를 추가 하 고 설정 **CopyLocal** 에 `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- KeyBindingTest 클래스 파일에서 클래스 이름을 PurpleCornerBox를 변경 합니다. 왼쪽된 여백에 표시 되는 전구를 사용 하 여 적절 하 게 다른 변경. 생성자 내부 adornment 계층의 이름을 변경할 **KeyBindingTest** 하 **PurpleCornerBox**:  
+   KeyBindingTest 클래스 파일에서 클래스 이름을 PurpleCornerBox를 변경 합니다. 왼쪽된 여백에 표시 되는 전구를 사용 하 여 적절 하 게 다른 변경. 생성자 내부 adornment 계층의 이름을 변경할 **KeyBindingTest** 하 **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
@@ -64,7 +64,7 @@ Visual Studio 2017 버전 15.6 편집기 확장에서 명령을 처리 하는 �
 
  명령 필터는의 구현 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, 장식 인스턴스화하여 명령을 처리 합니다.  
   
-1.  클래스 파일을 추가 하 고 이름을 `KeyBindingCommandFilter`입니다.  
+1.  클래스 파일을 추가하고 이름을 `KeyBindingCommandFilter`로 지정합니다.  
   
 2.  다음 using 문을 추가합니다.  
   
@@ -204,73 +204,73 @@ Visual Studio 2017 버전 15.6 편집기 확장에서 명령을 처리 하는 �
 
 명령 처리기는의 구현 <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, 장식 인스턴스화하여 명령을 처리 합니다.  
   
-1.  클래스 파일을 추가 하 고 이름을 `KeyBindingCommandHandler`입니다.  
+1. 클래스 파일을 추가하고 이름을 `KeyBindingCommandHandler`로 지정합니다.  
   
-2.  다음 using 문을 추가합니다.  
+2. 다음 using 문을 추가합니다.  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Commanding;
-    using Microsoft.VisualStudio.Text.Editor;
-    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
-    using Microsoft.VisualStudio.Utilities;
-    using System.ComponentModel.Composition;   
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Commanding;
+   using Microsoft.VisualStudio.Text.Editor;
+   using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+   using Microsoft.VisualStudio.Utilities;
+   using System.ComponentModel.Composition;   
+   ```  
   
-3.  KeyBindingCommandHandler 이라는 클래스에서 상속 해야 `ICommandHandler<TypeCharCommandArgs>`, 및로 내보내기 <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3. KeyBindingCommandHandler 이라는 클래스에서 상속 해야 `ICommandHandler<TypeCharCommandArgs>`, 및로 내보내기 <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
   
-    ```csharp  
-    [Export(typeof(ICommandHandler))]
-    [ContentType("text")]
-    [Name("KeyBindingTest")]
-    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
-    ```  
+   ```csharp  
+   [Export(typeof(ICommandHandler))]
+   [ContentType("text")]
+   [Name("KeyBindingTest")]
+   internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+   ```  
   
-4.  명령 처리기의 표시 이름을 추가 합니다.  
+4. 명령 처리기의 표시 이름을 추가 합니다.  
   
-    ```csharp  
-    public string DisplayName => "KeyBindingTest";
-    ```  
+   ```csharp  
+   public string DisplayName => "KeyBindingTest";
+   ```  
     
-5.  구현 된 `GetCommandState()` 같이 메서드. 이 명령 처리기 코어 편집기 TYPECHAR 명령 처리를 하기 때문에 핵심 편집기 명령 사용 하도록 설정 하면이 위임할 수 있습니다.
+5. 구현 된 `GetCommandState()` 같이 메서드. 이 명령 처리기 코어 편집기 TYPECHAR 명령 처리를 하기 때문에 핵심 편집기 명령 사용 하도록 설정 하면이 위임할 수 있습니다.
   
-    ```csharp  
-    public CommandState GetCommandState(TypeCharCommandArgs args)
-    {
-        return CommandState.Unspecified;
-    } 
-    ```  
+   ```csharp  
+   public CommandState GetCommandState(TypeCharCommandArgs args)
+   {
+       return CommandState.Unspecified;
+   } 
+   ```  
   
-6.  구현 합니다 `ExecuteCommand()` 메서드를 추가 하도록 자주색 상자 보기로 더하기 기호 (**+**) 문자를 입력 합니다. 
+6. 구현 합니다 `ExecuteCommand()` 메서드를 추가 하도록 자주색 상자 보기로 더하기 기호 (**+**) 문자를 입력 합니다. 
   
-    ```csharp  
-    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
-    {
-        if (args.TypedChar == '+')
-        {
-            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
-                "KeyBindingTextAdorned", out bool adorned) && adorned;
-            if (!alreadyAdorned)
-            {
-                new PurpleCornerBox((IWpfTextView)args.TextView);
-                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
-            }
-        }
+   ```csharp  
+   public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+   {
+       if (args.TypedChar == '+')
+       {
+           bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+               "KeyBindingTextAdorned", out bool adorned) && adorned;
+           if (!alreadyAdorned)
+           {
+               new PurpleCornerBox((IWpfTextView)args.TextView);
+               args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+           }
+       }
 
-        return false;
-    }
-    ```  
- 7. Adornment 계층 정의에서 복사한 *KeyBindingTestTextViewCreationListener.cs* 파일을 합니다 *KeyBindingCommandHandler.cs* 하 고 delete  *KeyBindingTestTextViewCreationListener.cs* 파일:
+       return false;
+   }
+   ```  
+   7. Adornment 계층 정의에서 복사한 *KeyBindingTestTextViewCreationListener.cs* 파일을 합니다 *KeyBindingCommandHandler.cs* 하 고 delete  *KeyBindingTestTextViewCreationListener.cs* 파일:
  
-    ```csharp  
-    /// <summary>
-    /// Defines the adornment layer for the adornment. This layer is ordered
-    /// after the selection layer in the Z-order.
-    /// </summary>
-    [Export(typeof(AdornmentLayerDefinition))]
-    [Name("PurpleCornerBox")]
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
-    private AdornmentLayerDefinition editorAdornmentLayer;    
-    ```  
+   ```csharp  
+   /// <summary>
+   /// Defines the adornment layer for the adornment. This layer is ordered
+   /// after the selection layer in the Z-order.
+   /// </summary>
+   [Export(typeof(AdornmentLayerDefinition))]
+   [Name("PurpleCornerBox")]
+   [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+   private AdornmentLayerDefinition editorAdornmentLayer;    
+   ```  
 
 ## <a name="make-the-adornment-appear-on-every-line"></a>모든 줄에 나타날 adornment 확인  
 

@@ -29,12 +29,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832734"
 ---
 # <a name="install-and-manage-local-content"></a>로컬 콘텐츠 설치 및 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
   
 #### <a name="to-update-local-content"></a>로컬 콘텐츠를 업데이트하려면  
   
--   상태 표시줄의 오른쪽 아래에서 **지금 다운로드하려면 여기를 클릭하세요.** 링크를 선택합니다.  
+- 상태 표시줄의 오른쪽 아래에서 **지금 다운로드하려면 여기를 클릭하세요.** 링크를 선택합니다.  
   
- 업데이트 시간은 각기 다를 수 있지만 상태 표시줄에서 업데이트 진행률을 볼 수 있습니다.  
+  업데이트 시간은 각기 다를 수 있지만 상태 표시줄에서 업데이트 진행률을 볼 수 있습니다.  
   
 ## <a name="moving-local-content"></a>로컬 콘텐츠 이동  
  설치된 콘텐츠를 로컬 컴퓨터에서 네트워크 공유나 로컬 컴퓨터의 다른 파티션으로 이동하여 디스크 공간을 절약할 수 있습니다.  

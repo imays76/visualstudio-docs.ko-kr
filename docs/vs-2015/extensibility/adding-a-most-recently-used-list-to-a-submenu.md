@@ -17,12 +17,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327d312ec13e449f0e116a11f920f17a439f569c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818107"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>하위 메뉴에 가장 최근에 사용한 메뉴 목록 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "49223735"
   
 ## <a name="creating-an-extension"></a>확장 만들기  
   
--   절차를 따릅니다 [하위 메뉴에 추가](../extensibility/adding-a-submenu-to-a-menu.md) 다음 절차의 수정 된 하위 메뉴를 만들려면.  
+- 절차를 따릅니다 [하위 메뉴에 추가](../extensibility/adding-a-submenu-to-a-menu.md) 다음 절차의 수정 된 하위 메뉴를 만들려면.  
   
- 이 연습의 절차에서는 VSPackage 이름이 가정 `TopLevelMenu`에 사용 되는 이름입니다 [Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)합니다.  
+  이 연습의 절차에서는 VSPackage 이름이 가정 `TopLevelMenu`에 사용 되는 이름입니다 [Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)합니다.  
   
 ## <a name="creating-a-dynamic-item-list-command"></a>동적 항목 목록 명령 만들기  
   

@@ -18,12 +18,12 @@ ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a67e25b06f9b33f184280d0182cf96bfcda154db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 278d7b723bde187fc765c610bd8bc470bb2b2059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823585"
 ---
 # <a name="adding-command-line-switches"></a>명령줄 스위치 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Devenv.exe를 실행할 때 VSPackage에 적용 되는 명령줄 스위치를 �
 ## <a name="retrieving-command-line-switches"></a>명령줄 스위치를 검색합니다.  
  패키지 로드 되 면 다음 단계를 완료 하 여 명령줄 스위치를 검색할 수 있습니다.  
   
-1.  VSPackage의의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 구현, 호출 `QueryService` 온 <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> 가져오려고는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> 인터페이스.  
+1. VSPackage의의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 구현, 호출 `QueryService` 온 <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> 가져오려고는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> 인터페이스.  
   
-2.  호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> 에 사용자가 입력 한 명령줄 스위치를 검색 합니다.  
+2. 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> 에 사용자가 입력 한 명령줄 스위치를 검색 합니다.  
   
- 다음 코드에는 사용자가 myswitch 인 명령줄 스위치를 입력 한 여부를 확인 하는 방법을 보여 줍니다.  
+   다음 코드에는 사용자가 myswitch 인 명령줄 스위치를 입력 한 여부를 확인 하는 방법을 보여 줍니다.  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884890"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 자습서에서는 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드합니다. 여기에서는 다음과 같은 작업을 수행하는 방법에 대해 배우게 됩니다.  
   
--   `Random` 클래스를 사용하여 난수를 생성합니다.  
+- `Random` 클래스를 사용하여 난수를 생성합니다.  
   
--   **Timer** 컨트롤을 사용하여 이벤트가 특정 시간에 발생하도록 이벤트를 트리거합니다.  
+- **Timer** 컨트롤을 사용하여 이벤트가 특정 시간에 발생하도록 이벤트를 트리거합니다.  
   
--   `if else` 문을 사용하여 프로그램 흐름을 제어합니다.  
+- `if else` 문을 사용하여 프로그램 흐름을 제어합니다.  
   
--   코드에서 기본 산술 연산을 수행합니다.  
+- 코드에서 기본 산술 연산을 수행합니다.  
   
- 자습서를 완료하면 숫자가 다른 것을 제외하면 퀴즈가 다음 그림과 같이 만들어집니다.  
+  자습서를 완료하면 숫자가 다른 것을 제외하면 퀴즈가 다음 그림과 같이 만들어집니다.  
   
- ![네 개의 문제가 있는 수학 퀴즈](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-이 자습서에서 만드는 퀴즈  
+  ![네 개의 문제가 있는 수학 퀴즈](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  이 자습서에서 만드는 퀴즈  
   
- 퀴즈의 전체 버전을 다운로드하려면 [전체 수학 퀴즈 자습서 샘플](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)을 참조하세요.  
+  퀴즈의 전체 버전을 다운로드하려면 [전체 수학 퀴즈 자습서 샘플](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)을 참조하세요.  
   
 > [!NOTE]
 >  이 자습서에서는 Visual C#과 Visual Basic 모두에 대해 다루고 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.  

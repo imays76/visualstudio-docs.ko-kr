@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac76a294c8f6b536da93f06afe6e423ca593b84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824167"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>방법: Code Center Premium의 소스 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49248269"
   
 ### <a name="to-prepare-for-debugging-with-code-center-premium"></a>Code Center Premium을 사용하여 디버깅할 수 있도록 준비하려면  
   
-1.  스마트 카드 판독기를 연결하고 Shared Source Initiative에서 받은 카드를 삽입합니다.  
+1. 스마트 카드 판독기를 연결하고 Shared Source Initiative에서 받은 카드를 삽입합니다.  
   
-2.  Visual Studio를 실행합니다.  
+2. Visual Studio를 실행합니다.  
   
-3.  **도구** 메뉴에서 **옵션**을 클릭합니다.  
+3. **도구** 메뉴에서 **옵션**을 클릭합니다.  
   
-4.  에 **옵션** 대화 상자를 열고 합니다 **디버깅** 노드를 클릭 **일반**.  
+4. 에 **옵션** 대화 상자를 열고 합니다 **디버깅** 노드를 클릭 **일반**.  
   
-5.  선택을 취소 합니다 **내 코드만 사용 (관리 전용)** 확인란 합니다.  
+5. 선택을 취소 합니다 **내 코드만 사용 (관리 전용)** 확인란 합니다.  
   
-6.  선택 **소스 서버 지원 사용**합니다.  
+6. 선택 **소스 서버 지원 사용**합니다.  
   
-7.  명확한 **원래 버전과 정확 하 게 일치 원본 파일 필요한**합니다.  
+7. 명확한 **원래 버전과 정확 하 게 일치 원본 파일 필요한**합니다.  
   
-8.  아래는 **디버깅** 노드를 클릭 **기호**합니다.  
+8. 아래는 **디버깅** 노드를 클릭 **기호**합니다.  
   
 9. 에 **기호 파일 (.pdb) 위치** 상자에서 지우기 합니다 **Microsoft 기호 서버** 확인란을 선택 하 고 다음 위치를 추가:  
   
@@ -60,18 +60,18 @@ ms.locfileid: "49248269"
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  후행 슬래시를 포함 해야**/** 경로의 끝입니다.  
+   > [!NOTE]
+   >  후행 슬래시를 포함 해야<strong>/</strong> 경로의 끝입니다.  
   
      이러한 위치를 목록의 맨 위로 이동하여 해당 기호가 가장 먼저 로드되도록 합니다.  
   
-    > [!NOTE]
-    >  이러한 Code Center Premium 위치는 가장 먼저 나열되어야 처음으로 로드되는 위치가 됩니다. Visual Studio 2010에서 위의 모든 서버를 이동할 수 없습니다는 **Microsoft 기호 서버** 항목 확인란의 선택을 취소 해야 하는 이유입니다.  
-    >   
-    >  디버그 세션 중에 Microsoft 기호에서 기호를 로드하려면 다음을 수행합니다.  
-    >   
-    >  1.  에 **디버그** 메뉴 선택 **Windows** 를 선택한 후 **모듈**합니다.  
-    > 2.  기호를 원하는 모듈을 선택하고 바로 가기 메뉴를 엽니다. 선택할 **에서 기호 로드** 를 선택한 후 **Microsoft 기호 서버**합니다.  
+   > [!NOTE]
+   >  이러한 Code Center Premium 위치는 가장 먼저 나열되어야 처음으로 로드되는 위치가 됩니다. Visual Studio 2010에서 위의 모든 서버를 이동할 수 없습니다는 **Microsoft 기호 서버** 항목 확인란의 선택을 취소 해야 하는 이유입니다.  
+   > 
+   >  디버그 세션 중에 Microsoft 기호에서 기호를 로드하려면 다음을 수행합니다.  
+   > 
+   > 1. 에 **디버그** 메뉴 선택 **Windows** 를 선택한 후 **모듈**합니다.  
+   >    2.  기호를 원하는 모듈을 선택하고 바로 가기 메뉴를 엽니다. 선택할 **에서 기호 로드** 를 선택한 후 **Microsoft 기호 서버**합니다.  
   
 10. 에 **이 디렉터리의 기호 서버에서 기호 캐시** 상자와 같은 위치를 입력 합니다 `C:\symbols` Code Center Premium 위치 기호를 캐시할 수 있습니다. 기호를 캐시하면 디버깅 중 성능이 상당히 개선됩니다.  
   
@@ -109,22 +109,22 @@ ms.locfileid: "49248269"
   
 ### <a name="to-debug-source-code-from-an-existing-solution"></a>기존 솔루션에서 소스 코드를 디버깅하려면  
   
-1.  **솔루션 탐색기**선택한를 솔루션에 대 한 바로 가기 메뉴를 열고 **속성**합니다.  
+1. **솔루션 탐색기**선택한를 솔루션에 대 한 바로 가기 메뉴를 열고 **속성**합니다.  
   
-2.  솔루션 속성 페이지 대화 상자에서 선택 **소스 파일 디버그** 에 **공용 속성** 노드.  
+2. 솔루션 속성 페이지 대화 상자에서 선택 **소스 파일 디버그** 에 **공용 속성** 노드.  
   
-3.  다음 위치에 추가 합니다 **소스 파일이 포함 된 디렉터리** 목록:  
+3. 다음 위치에 추가 합니다 **소스 파일이 포함 된 디렉터리** 목록:  
   
-     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
+    `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  후행 슬래시를 포함 해야**/** 경로의 끝입니다.  
+   > [!NOTE]
+   >  후행 슬래시를 포함 해야<strong>/</strong> 경로의 끝입니다.  
   
-4.  솔루션의 관리되는 프로젝트 각각에 대해 다음을 수행합니다.  
+4. 솔루션의 관리되는 프로젝트 각각에 대해 다음을 수행합니다.  
   
-    1.  솔루션 탐색기에서 프로젝트에 대 한 바로 가기 메뉴를 열고 선택한 후 **속성**합니다.  
+   1.  솔루션 탐색기에서 프로젝트에 대 한 바로 가기 메뉴를 열고 선택한 후 **속성**합니다.  
   
-    2.  선택 **디버깅할** 를 선택한 후 **비관리 코드 디버깅 사용**합니다.  
+   2.  선택 **디버깅할** 를 선택한 후 **비관리 코드 디버깅 사용**합니다.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Code Center Premium 소스로 솔루션을 디버깅하려면  
   

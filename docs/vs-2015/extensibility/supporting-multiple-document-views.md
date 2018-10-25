@@ -15,23 +15,23 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91becc7afb7c236ebe9d6e08c1b8a221cb9f90fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826547"
 ---
 # <a name="supporting-multiple-document-views"></a>여러 문서 보기 지원
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 편집기에 대 한 별도 문서 데이터 및 문서 보기 개체를 만들어 문서 둘 이상의 뷰를 제공할 수 있습니다. 추가 문서 보기를는 유용할 수 있는 경우에 따라 다음과 같습니다.  
   
--   새 창 지원: 편집기에서 엽니다 기간이 이미 사용자를 선택 하 여 새 창을 열 수 있도록 원하는 편집기는 동일한 형식의 두 개 이상의 보기를 제공 하는 **새 창** 명령을 **창** 메뉴.  
+- 새 창 지원: 편집기에서 엽니다 기간이 이미 사용자를 선택 하 여 새 창을 열 수 있도록 원하는 편집기는 동일한 형식의 두 개 이상의 보기를 제공 하는 **새 창** 명령을 **창** 메뉴.  
   
--   폼과 코드 보기 지원: 다양 한 종류의 보기를 제공 하 여 편집기를 원하는 합니다. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]예를 들어 폼 보기와 코드 보기를 제공 합니다.  
+- 폼과 코드 보기 지원: 다양 한 종류의 보기를 제공 하 여 편집기를 원하는 합니다. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]예를 들어 폼 보기와 코드 보기를 제공 합니다.  
   
- 이 대 한 자세한 내용은 Visual Studio 패키지 템플릿을 만든 사용자 지정 편집기 프로젝트 EditorFactory.cs 파일에서 CreateEditorInstance 절차를 참조 합니다. 이 프로젝트에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 편집기 만들기](../extensibility/walkthrough-creating-a-custom-editor.md)합니다.  
+  이 대 한 자세한 내용은 Visual Studio 패키지 템플릿을 만든 사용자 지정 편집기 프로젝트 EditorFactory.cs 파일에서 CreateEditorInstance 절차를 참조 합니다. 이 프로젝트에 대 한 자세한 내용은 참조 하세요. [연습: 사용자 지정 편집기 만들기](../extensibility/walkthrough-creating-a-custom-editor.md)합니다.  
   
 ## <a name="synchronizing-views"></a>뷰를 동기화합니다.  
  여러 뷰를 구현 하는 경우 문서 데이터 개체는 데이터와 동기화 하는 모든 보기를 유지 하는 일을 담당 합니다. 인터페이스에서 처리 하는 이벤트를 사용 하 여 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 여러 뷰 데이터와 동기화 합니다.  

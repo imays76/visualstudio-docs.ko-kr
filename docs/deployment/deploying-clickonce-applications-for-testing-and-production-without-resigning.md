@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8e84397a5c08a00b704bc571ca1eba3361bfd6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: abfa170fe0f30cbc4fac941a6d77d0ac8b407f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846592"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>다시 서명 하지 않고 테스트 및 프로덕션 서버용 ClickOnce 응용 프로그램 배포
 이 문서에서는 clickonce 매니페스트 다시 서명 하거나 ClickOnce를 변경 하지 않고 여러 네트워크 위치에서 ClickOnce 응용 프로그램 배포를 사용할 수 있는 버전 3.5는.NET Framework에 도입 된 기능을 설명 합니다.  
@@ -54,11 +54,11 @@ ms.locfileid: "39081399"
   
  이 시점을 명확 하 게 두 가지 예는 다음과 같습니다. 첫 번째 예에서는 되지 않는 ClickOnce 응용 프로그램을 게시할 `deploymentProvider` 와 같은 태그에서 설치 하는 사용자 요청 http://www.adatum.com/MyApplication/합니다. 응용 프로그램의 다음 업데이트를 게시 하려는 경우 결정 http://subdomain.adatum.com/MyApplication/에 상주 하는 배포 매니페스트의이 나타내는 방법이 있는 http://www.adatum.com/MyApplication/합니다. 두 가지 중 하나를 수행할 수 있습니다.  
   
--   이전 버전을 제거 하려면 사용자에 게 알릴 하 고 새 위치에서 새 버전을 설치 합니다.  
+- 이전 버전을 제거 하려면 사용자에 게 알릴 하 고 새 위치에서 새 버전을 설치 합니다.  
   
--   에 대 한 업데이트를 포함 http://www.adatum.com/MyApplication/ 포함 하는 한 `deploymentProvider` 가리키는 http://www.adatum.com/MyApplication/합니다. 그런 다음 사용 하 여 나중에 다른 업데이트를 릴리스 `deploymentProvider` 가리키는 http://subdomain.adatum.com/MyApplication/합니다.  
+- 에 대 한 업데이트를 포함 http://www.adatum.com/MyApplication/ 포함 하는 한 `deploymentProvider` 가리키는 http://www.adatum.com/MyApplication/합니다. 그런 다음 사용 하 여 나중에 다른 업데이트를 릴리스 `deploymentProvider` 가리키는 http://subdomain.adatum.com/MyApplication/합니다.  
   
- 두 번째 예제에서는 지정 하는 ClickOnce 응용 프로그램을 게시할 `deploymentProvider`, 후 제거 하려는 경우. 사용 하지 않는 새 버전에 한 번 `deploymentProvider` 다운로드는 클라이언트 응용 프로그램의 버전을 해제할 때까지 업데이트를 사용 하는 경로 리디렉션할 수 없습니다 `deploymentProvider` 복원 합니다. 첫 번째 예제에서와 마찬가지로 `deploymentProvider` 현재 업데이트 위치를 새 위치가 아니라 처음 가리켜야 합니다. 삽입 하려고 하면이 경우는 `deploymentProvider` 을 참조 하는 http://subdomain.adatum.com/MyApplication/, 다음 업데이트에 실패 합니다.  
+  두 번째 예제에서는 지정 하는 ClickOnce 응용 프로그램을 게시할 `deploymentProvider`, 후 제거 하려는 경우. 사용 하지 않는 새 버전에 한 번 `deploymentProvider` 다운로드는 클라이언트 응용 프로그램의 버전을 해제할 때까지 업데이트를 사용 하는 경로 리디렉션할 수 없습니다 `deploymentProvider` 복원 합니다. 첫 번째 예제에서와 마찬가지로 `deploymentProvider` 현재 업데이트 위치를 새 위치가 아니라 처음 가리켜야 합니다. 삽입 하려고 하면이 경우는 `deploymentProvider` 을 참조 하는 http://subdomain.adatum.com/MyApplication/, 다음 업데이트에 실패 합니다.  
   
 ## <a name="create-a-deployment"></a>배포 만들기  
  다른 네트워크 위치에서 배포할 수 있는 배포를 만드는 단계별 지침을 참조 하세요. [연습: 수동으로 다시 서명 필요 하지 않은 없고 브랜드 정보가를유지하는ClickOnce응용프로그램을배포](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  

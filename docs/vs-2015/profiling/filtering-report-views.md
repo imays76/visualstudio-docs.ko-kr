@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878455"
 ---
 # <a name="filtering-report-views"></a>보고서 뷰 필터링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ ms.locfileid: "49238292"
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>표시 보고서 뷰에서 프로파일러 보고서 필터를 만들려면  
   
-1.  성능 보고서 뷰 도구 모음의 **현재 뷰** 목록에서 **표시**를 선택합니다.  
+1. 성능 보고서 뷰 도구 모음의 **현재 뷰** 목록에서 **표시**를 선택합니다.  
   
-     표시 프로파일러 보고서가 표시됩니다.  
+    표시 프로파일러 보고서가 표시됩니다.  
   
-2.  보고서의 시작 지점으로 사용할 ETW 또는 샘플링을 선택합니다.  
+2. 보고서의 시작 지점으로 사용할 ETW 또는 샘플링을 선택합니다.  
   
-3.  Ctrl 키를 누른 채 보고서의 끝 지점으로 사용할 이벤트를 클릭합니다.  
+3. Ctrl 키를 누른 채 보고서의 끝 지점으로 사용할 이벤트를 클릭합니다.  
   
-4.  마우스 오른쪽 단추로 클릭한 후 다음 옵션 중 하나를 클릭합니다.  
+4. 마우스 오른쪽 단추로 클릭한 후 다음 옵션 중 하나를 클릭합니다.  
   
-    -   **표시에 대한 필터 추가**를 선택하면 표시 열을 필터 필드로 사용하는 필터 절이 만들어집니다.  
+   - **표시에 대한 필터 추가**를 선택하면 표시 열을 필터 필드로 사용하는 필터 절이 만들어집니다.  
   
-    -   **타임스탬프에 대한 필터 추가**를 선택하면 타임스탬프(밀리초) 열을 필터 필드로 사용하는 필터 절이 만들어집니다.  
+   - **타임스탬프에 대한 필터 추가**를 선택하면 타임스탬프(밀리초) 열을 필터 필드로 사용하는 필터 절이 만들어집니다.  
   
      두 옵션은 동일한 시작점과 끝점에서 현재 데이터 파일을 필터링합니다. 다른 보고서에서 사용할 필터를 내보내는 경우 두 옵션 중 하나가 더 나을 수 있습니다.  
   

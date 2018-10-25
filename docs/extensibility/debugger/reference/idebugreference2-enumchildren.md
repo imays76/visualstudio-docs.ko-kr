@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366c7e368b5ebf72f075026eebde022853017a4c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4515a5834b5ffbad6718a3fec3bd1db48cb45805
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840976"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 선택한 자식 참조의 목록을 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.  
@@ -51,19 +51,19 @@ int EnumChildren (
   
 #### <a name="parameters"></a>매개 변수  
  `dwFields`  
- [in] 플래그의 조합을 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 에 열거 된 필드를 지정 하는 열거형 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체가을 입력 합니다.  
+ [in] 플래그의 조합을 합니다 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 열거형의 열거 된 필드를 지정 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 채울 구조체가 합니다.  
   
  `dwRadix`  
  [in] 모든 숫자 정보를 서식 지정 하는 데 사용할 기 수입니다.  
   
  `dwAttribFilter`  
- [in] 플래그의 조합을 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 함께에서 필터로 사용 되는 열거형은 `pszNameFilter` 선택할을 열거할 수 있는 구조는 매개 변수를 합니다.  
+ [in] 플래그의 조합을 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 함께에서 필터로 사용 되는 열거형을 `pszNameFilter` 매개 변수를 열거할 수 있는 구조는 합니다.  
   
  `pszNameFilter`  
- [in] 와 함께에서 사용 되는 "MyX" 등의 필터를 지정 하는 문자열은 `dwAttribFilter` 매개 변수를 열거할 구조를 선택 합니다.  
+ [in] "MyX"을 함께 사용 하는 등 필터를 지정 하는 문자열을 `dwAttribFilter` 매개 변수를 열거할 구조를 선택 합니다.  
   
  `dwTimeout`  
- [in] 이 메서드로부터 반환 하기 전에 대기할 밀리초에서는 최대 시간입니다. 사용 하 여 `INFINITE` 무기한 대기를 나타냅니다.  
+ [in] 이 메서드에서 반환 되기 전에 대기할 밀리초에서는 최대 시간입니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.  
   
  `ppEnum`  
  [out] 반환 된 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 요청 된 자식 속성의 목록을 포함 하는 개체입니다.  

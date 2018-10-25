@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818330"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>퀵 스타트: 콘솔을 사용하여 Debug JavaScript 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
  JavaScript 콘솔 창에서는 다음 작업을 수행할 수 있습니다.  
   
--   앱에서 콘솔 창으로 개체, 값 및 메시지를 전송합니다.  
+- 앱에서 콘솔 창으로 개체, 값 및 메시지를 전송합니다.  
   
--   실행 중인 앱에서 로컬 및 전역 변수의 값을 보고 수정합니다.  
+- 실행 중인 앱에서 로컬 및 전역 변수의 값을 보고 수정합니다.  
   
--   개체 시각화 도우미를 봅니다.  
+- 개체 시각화 도우미를 봅니다.  
   
--   현재 스크립트 컨텍스트에서 실행되는 JavaScript 코드를 실행합니다.  
+- 현재 스크립트 컨텍스트에서 실행되는 JavaScript 코드를 실행합니다.  
   
--   DOM(Document Object Model) 및 Windows 런타임 오류 외에도 JavaScript 오류 및 예외를 봅니다.  
+- DOM(Document Object Model) 및 Windows 런타임 오류 외에도 JavaScript 오류 및 예외를 봅니다.  
   
--   화면을 지우는 등의 다른 작업을 수행합니다. 전체 명령 목록을 보려면 [JavaScript Console commands](../debugger/javascript-console-commands.md) 을 참조하세요.  
+- 화면을 지우는 등의 다른 작업을 수행합니다. 전체 명령 목록을 보려면 [JavaScript Console commands](../debugger/javascript-console-commands.md) 을 참조하세요.  
   
- 항목 내용:  
+  항목 내용:  
   
--   [JavaScript 콘솔 창을 사용하여 디버깅](#InteractiveConsole)  
+- [JavaScript 콘솔 창을 사용하여 디버깅](#InteractiveConsole)  
   
--   [대화형 디버깅 및 중단 모드](#InteractiveDebuggingBreakMode)  
+- [대화형 디버깅 및 중단 모드](#InteractiveDebuggingBreakMode)  
   
--   [JavaScript 콘솔 창의 한 줄 모드 및 여러 줄 모드](#SinglelineMultilineMode)  
+- [JavaScript 콘솔 창의 한 줄 모드 및 여러 줄 모드](#SinglelineMultilineMode)  
   
--   [스크립트 실행 컨텍스트 전환](#Switching)  
+- [스크립트 실행 컨텍스트 전환](#Switching)  
   
 > [!TIP]
 >  JavaScript 콘솔 창이 닫힌 경우 **디버그**>**창** > **JavaScript 콘솔** 을 사용하여 다시 엽니다. 창은 스크립트 디버깅 세션 중에만 표시됩니다.  

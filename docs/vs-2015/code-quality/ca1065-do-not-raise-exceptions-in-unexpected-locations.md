@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887609"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284689"
 ## <a name="rule-description"></a>규칙 설명
  예외를 throw 되지 않는 메서드를 다음과 같이 분류할 수 있습니다.
 
--   속성 Get 메서드
+- 속성 Get 메서드
 
--   이벤트 접근자 메서드
+- 이벤트 접근자 메서드
 
--   Equals 메서드
+- Equals 메서드
 
--   GetHashCode 메서드
+- GetHashCode 메서드
 
--   ToString 메서드
+- ToString 메서드
 
--   정적 생성자
+- 정적 생성자
 
--   종료자
+- 종료자
 
--   Dispose 메서드
+- Dispose 메서드
 
--   같음 연산자
+- 같음 연산자
 
--   암시적 캐스트 연산자
+- 암시적 캐스트 연산자
 
- 다음 섹션에서는 이러한 메서드 형식에 설명 합니다.
+  다음 섹션에서는 이러한 메서드 형식에 설명 합니다.
 
 ### <a name="property-get-methods"></a>속성 Get 메서드
  속성은 기본적으로 스마트 필드입니다. 따라서은 최대한 필드 처럼 동작 해야 합니다. 예외를 throw 하지 않습니다 필드와 속성. 예외를 throw 하는 속성에 있는 경우에 메서드를 수행 하는 것이 좋습니다.
@@ -91,22 +92,22 @@ ms.locfileid: "49284689"
 ### <a name="equals-methods"></a>Equals 메서드
  다음 **Equals** 메서드는 예외를 throw 하지 않아야 합니다.
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- **Equals** 메서드를 반환할지 `true` 또는 `false` 예외를 throw 하는 대신 합니다. 예를 들어, Equals 두 유형을 가지 므로 전달 되는 경우만 반환할 `false` throw 하는 대신는 <xref:System.ArgumentException>합니다.
+  **Equals** 메서드를 반환할지 `true` 또는 `false` 예외를 throw 하는 대신 합니다. 예를 들어, Equals 두 유형을 가지 므로 전달 되는 경우만 반환할 `false` throw 하는 대신는 <xref:System.ArgumentException>합니다.
 
 ### <a name="gethashcode-methods"></a>GetHashCode 메서드
  다음 **GetHashCode** 메서드 일반적으로 예외 throw 하지 않아야 합니다.
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode** 항상 값을 반환 해야 합니다. 그렇지 않으면 해시 테이블에서 항목을 잃을 수 있습니다.
+  **GetHashCode** 항상 값을 반환 해야 합니다. 그렇지 않으면 해시 테이블에서 항목을 잃을 수 있습니다.
 
- 버전의 **GetHashCode** 사용 하는 인수를 throw 할 수는 <xref:System.ArgumentException>합니다. 그러나 **Object.GetHashCode** 예외가 throw 되지 않습니다.
+  버전의 **GetHashCode** 사용 하는 인수를 throw 할 수는 <xref:System.ArgumentException>합니다. 그러나 **Object.GetHashCode** 예외가 throw 되지 않습니다.
 
 ### <a name="tostring-methods"></a>ToString 메서드
  디버거를 사용 하 여 <xref:System.Object.ToString%2A?displayProperty=fullName> 문자열 형식의 개체에 대 한 정보를 표시 하는 데 있습니다. 따라서 **ToString** 개체의 상태를 변경 하지 않아야 하 고 예외를 throw 하지 않아야 합니다.

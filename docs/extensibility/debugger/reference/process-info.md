@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35b94b6153b65672453ed8b4e7d2c0d9c2bd5eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2a8f07cfb99ac42704d3829c30dbf5adbb16e9d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864623"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 프로세스에 대 한 정보를 포함합니다.  
@@ -60,16 +60,16 @@ public struct PROCESS_INFO {
  플래그의 조합 된 [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) 채워진 필드를 지정 하는 열거형입니다.  
   
  bstrFileName  
- 프로세스의 전체 경로 이름입니다. 호출에 해당 하는 [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 메서드 매개 변수와 함께 `GN_FILENAME`합니다.  
+ 프로세스의 전체 경로 이름입니다. 호출에 해당 하는 [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 매개 변수를 사용 하 여 메서드 `GN_FILENAME`합니다.  
   
  bstrBaseName  
- 파일 이름 및 프로세스의 확장입니다. 호출에 해당 하는 `IDebugProcess2::Getname` 메서드 매개 변수와 함께 `GN_BASENAME`합니다.  
+ 파일 이름 및 프로세스의 확장입니다. 호출에 해당 하는 `IDebugProcess2::Getname` 매개 변수를 사용 하 여 메서드 `GN_BASENAME`합니다.  
   
  bstrTitle  
- 있는 경우에 프로세스의 제목입니다. 호출에 해당 하는 `IDebugProcess2::Getname` 메서드 매개 변수와 함께 `GN_TITLE`합니다.  
+ 있는 경우 프로세스의 제목입니다. 호출에 해당 하는 `IDebugProcess2::Getname` 매개 변수를 사용 하 여 메서드 `GN_TITLE`합니다.  
   
  ProcessId  
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 프로세스를 식별 하는 구조입니다. 호출에 해당 하는 [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) 메서드.  
+ 합니다 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 프로세스 식별 하는 구조입니다. 호출에 해당 하는 [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) 메서드.  
   
  dwSessionId  
  이 프로세스에서 실행 되는 디버그 세션의 식별자입니다.  
@@ -84,7 +84,7 @@ public struct PROCESS_INFO {
  플래그의 조합 된 [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) 프로세스의 속성을 지정 하는 열거형입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 으로 채워지면 메서드.  
+ 이 구조에 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 메서드 위치에서 채워집니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

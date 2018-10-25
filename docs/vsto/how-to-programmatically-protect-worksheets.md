@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b737fc8b589d746a5fa733c835d64c4af30a221b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867184"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 보호
   Microsoft Office Excel의 보호 기능은 사용자 및 코드가 워크시트의 개체를 수정할 수 없도록 차단합니다. 기본적으로 보호를 설정하면 모든 셀이 잠깁니다.  
@@ -39,11 +39,11 @@ ms.locfileid: "35675478"
   
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>디자이너에서 워크시트를 보호하려면  
   
-1.  에 **변경 내용을** 그룹을 **검토** 탭을 클릭 **시트 보호**합니다.  
+1. 에 **변경 내용을** 그룹을 **검토** 탭을 클릭 **시트 보호**합니다.  
   
-     합니다 **시트 보호** 대화 상자가 나타납니다. 암호를 설정할 수 있으며, 필요에 따라 셀 서식 지정 또는 행 삽입과 같이 사용자가 워크시트에서 수행할 수 있는 특정 작업을 지정할 수 있습니다.  
+    합니다 **시트 보호** 대화 상자가 나타납니다. 암호를 설정할 수 있으며, 필요에 따라 셀 서식 지정 또는 행 삽입과 같이 사용자가 워크시트에서 수행할 수 있는 특정 작업을 지정할 수 있습니다.  
   
- 사용자가 보호된 워크시트에서 특정 범위를 편집하도록 허용할 수도 있습니다.  
+   사용자가 보호된 워크시트에서 특정 범위를 편집하도록 허용할 수도 있습니다.  
   
 ### <a name="to-allow-editing-in-specific-ranges"></a>특정 범위에서 편집을 허용하려면  
   

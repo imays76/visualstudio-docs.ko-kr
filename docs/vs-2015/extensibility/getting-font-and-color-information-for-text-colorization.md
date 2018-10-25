@@ -16,12 +16,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 49a787dd67691c581383713a7c98a80816762599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832721"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>글꼴 및 텍스트 색 지정에 대 한 색 정보 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "49274250"
   
  색을 지정 하는 VSPackage 현재 가져와야 **글꼴 및 색** 설정 합니다. VSPackage는 다음과 같은 방법으로 요구 사항에 따라이 수행할 수 있습니다.:  
   
--   저장 또는 현재 상태를 검색 하는 글꼴 및 색 지 속성 메커니즘을 사용 합니다. 자세한 내용은 [에 액세스 하는 저장 된 글꼴 및 색 설정](../extensibility/accessing-stored-font-and-color-settings.md)합니다.  
+- 저장 또는 현재 상태를 검색 하는 글꼴 및 색 지 속성 메커니즘을 사용 합니다. 자세한 내용은 [에 액세스 하는 저장 된 글꼴 및 색 설정](../extensibility/accessing-stored-font-and-color-settings.md)합니다.  
   
--   사용 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> 글꼴 및 색 데이터의 인스턴스를 제공 하는 서비스의 인터페이스 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>경우 VSPackage 에서도 글꼴 및 색 공급자가 아닙니다.  
+- 사용 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> 글꼴 및 색 데이터의 인스턴스를 제공 하는 서비스의 인터페이스 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>경우 VSPackage 에서도 글꼴 및 색 공급자가 아닙니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 인터페이스를 구현합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 인터페이스를 구현합니다.  
   
- 되었는지 확인 하려면 폴링을 통해 얻은 결과 최대 날짜는 데 유용할 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> 업데이트의 검색 메서드를 호출 하기 전에 필요한 경우를 결정 하는 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 인터페이스입니다.  
+  되었는지 확인 하려면 폴링을 통해 얻은 결과 최대 날짜는 데 유용할 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> 업데이트의 검색 메서드를 호출 하기 전에 필요한 경우를 결정 하는 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 인터페이스입니다.  
   
- 한 후 정보를 얻은 글꼴 및 색, 색 지정을 요구 하는 요소를 식별 하 게 표시 될 텍스트를 구문 분석 및 적절 한 글꼴 및 색을 사용 하는 창에 텍스트를 표시 합니다.  
+  한 후 정보를 얻은 글꼴 및 색, 색 지정을 요구 하는 요소를 식별 하 게 표시 될 텍스트를 구문 분석 및 적절 한 글꼴 및 색을 사용 하는 창에 텍스트를 표시 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   

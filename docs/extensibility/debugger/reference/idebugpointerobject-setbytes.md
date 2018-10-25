@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8234117d7965c4f2e471855d39ed0c3cee1f88c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f3a496eb0212863f2ed08479216ac6ca546009f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891507"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 일련의 연속 된 바이트를 가리키는 값을 설정 합니다.  
@@ -47,22 +47,22 @@ int SetBytes(
   
 #### <a name="parameters"></a>매개 변수  
  `dwStart`  
- [in] 개체의 시작 부분부터 바이트 오프셋을 가리키는입니다.  
+ [in] 개체의 시작 부분에서 바이트 오프셋을 지정 합니다.  
   
  `dwCount`  
  [in] 설정 하는 바이트 수입니다.  
   
  `pBytes`  
- [in] 새 값을 나타내는 바이트 배열입니다. 이 값은 지정된 된 오프셋에서 시작 하는 개체에 저장 됩니다.  
+ [in] 새 값을 나타내는 바이트 배열입니다. 이 값은 지정 된 오프셋에서 시작 하는 개체에 저장 됩니다.  
   
  `pdwBytes`  
- [out] 실제로 설정 된 바이트 수를 반환 합니다.  
+ [out] 실제로 집합 바이트 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 경우이 메서드는 사용이 표시 된 대로 포인터 [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) 기본 형식 또는 기본 형식 (즉, 단순한 바이트 시퀀스를 나타낼 수 있는 배열)의 간단한 배열을 가리킵니다. 이 `IDebugPointerObject` 개체는 null 참조 (가리켜야 메모리에 있는 주소) 일 수 없습니다.  
+ 이 메서드는 경우 사용이 나타낸 마우스 포인터 [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) 기본 형식 또는 기본 형식 (즉, 간단한 바이트 시퀀스를 나타낼 수 있는 배열)의 간단한 배열을 가리킵니다. 이 `IDebugPointerObject` 개체는 null 참조 (메모리의 주소를 가리키도록 해야 합니다) 일 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)   

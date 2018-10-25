@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 207bb804c7ba0a10db0d210290534d0b77d60046
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8deecb817079bfb1a0bfdd83371ef1944f3ce455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888155"
 ---
 # <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
 이 세그먼트에 매핑되는 섹션 번호를 검색 합니다.  

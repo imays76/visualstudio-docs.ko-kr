@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfe1b5fb517ed7b886e681081ac7910cfe717cc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867171"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  프로파일링 요소의 이름입니다. 다음의 경우 이름이 잘못되었습니다(NameProfileA에서 NAME_ERROR_INVALID_NAME 반환).  
   
--   NameProfileA로 전달된 포인터가 NULL 값인 경우  
+- NameProfileA로 전달된 포인터가 NULL 값인 경우  
   
--   pszName의 문자열 데이터가 숫자로 시작하는 경우  
+- pszName의 문자열 데이터가 숫자로 시작하는 경우  
   
--   pszName의 문자열 데이터에 공백이 포함된 경우  
+- pszName의 문자열 데이터에 공백이 포함된 경우  
   
--   pszName의 문자열 데이터에 ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>> 문자 중 하나가 포함된 경우  
+- pszName의 문자열 데이터에 ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>> 문자 중 하나가 포함된 경우  
   
- `Level`  
+  `Level`  
   
- 성능 데이터 수집을 적용할 수 있는 프로필 수준을 나타냅니다. 다음 **PROFILE_CONTROL_LEVEL** 값은 성능 데이터 수집을 적용할 수 있는 세 가지 수준 중 하나를 나타내는 데 사용될 수 있습니다.  
+  성능 데이터 수집을 적용할 수 있는 프로필 수준을 나타냅니다. 다음 **PROFILE_CONTROL_LEVEL** 값은 성능 데이터 수집을 적용할 수 있는 세 가지 수준 중 하나를 나타내는 데 사용될 수 있습니다.  
   
 |열거자|설명|  
 |----------------|-----------------|  

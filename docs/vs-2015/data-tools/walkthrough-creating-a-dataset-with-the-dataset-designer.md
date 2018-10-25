@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868263"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>연습: 데이터 집합 디자이너를 사용하여 데이터 집합 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "49287367"
   
  이 연습에서 설명하는 작업은 다음과 같습니다.  
   
--   새로 만들 **Windows 응용 프로그램** 프로젝트입니다.  
+- 새로 만들 **Windows 응용 프로그램** 프로젝트입니다.  
   
--   추가 빈 **데이터 집합** 프로젝트 항목입니다.  
+- 추가 빈 **데이터 집합** 프로젝트 항목입니다.  
   
--   만들기 및 사용 하 여 데이터 집합을 작성 하 여 응용 프로그램에서 데이터 원본을 구성 합니다 **데이터 집합 디자이너**합니다.  
+- 만들기 및 사용 하 여 데이터 집합을 작성 하 여 응용 프로그램에서 데이터 원본을 구성 합니다 **데이터 집합 디자이너**합니다.  
   
--   Northwind 데이터베이스에 연결을 만드는 **서버 탐색기**합니다.  
+- Northwind 데이터베이스에 연결을 만드는 **서버 탐색기**합니다.  
   
--   데이터베이스의 테이블을 기반으로 데이터 집합에서 Tableadapter를 사용 하 여 테이블을 만듭니다.  
+- 데이터베이스의 테이블을 기반으로 데이터 집합에서 Tableadapter를 사용 하 여 테이블을 만듭니다.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 사항이 필요합니다.  

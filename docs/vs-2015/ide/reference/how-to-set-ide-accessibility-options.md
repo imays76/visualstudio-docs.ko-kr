@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5701efe5da55ebd85d683da55f90f41223220c91
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867288"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>방법: IDE 내게 필요한 옵션 설정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "49205896"
  편집기에서 텍스트, 여백 표시기, 공백 및 코드 요소의 기본색을 변경할 수도 있습니다.  
   
 > [!NOTE]
->  운영 체제의 모든 응용 프로그램 창에 고대비 색을 사용하려면 왼쪽 **ALT+** 왼쪽 **SHIFT+PRINT SCREEN**을 누릅니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]가 열릴 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]를 닫았다 열면 고대비 색이 완전히 구현됩니다.  
+>  운영 체제의 모든 응용 프로그램 창에 고대비 색을 사용하려면 왼쪽 <strong>ALT+</strong>왼쪽 **SHIFT+PRINT SCREEN**을 누릅니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]가 열릴 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]를 닫았다 열면 고대비 색이 완전히 구현됩니다.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>편집기에서 항목의 색을 변경하려면  
   

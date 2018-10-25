@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855818"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 언어 팩 스키마 2.0 참조
 
@@ -34,6 +34,7 @@ VSIX 언어 팩 스키마 VSIX 패키지에 대 한 지역화 된 설치 정보�
 ### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest 요소
 
 내는 `<PackageLanguagePackManifest>` 요소는 다음과 같은 요소가 있어야 합니다.
+
 |제목|설명|
 |-----------|-----------------|
 |`<Metadata>`| 모든 지역화 된 패키지 메타 데이터를 포함 하는 요소
@@ -41,6 +42,7 @@ VSIX 언어 팩 스키마 VSIX 패키지에 대 한 지역화 된 설치 정보�
 ### <a name="metadata-element"></a>메타 데이터 요소
 
 내는 `<Metadata>` 요소는 다음과 같은 요소가 있습니다.
+
 |제목|설명|
 |-----------|-----------------|
 |`<DisplayName>`|확장을 설치의 지역화 된 이름|

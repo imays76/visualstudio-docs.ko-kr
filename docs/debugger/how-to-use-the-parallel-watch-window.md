@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857954"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Visual Studio에서 병렬 스레드 수는 변수에 대 한 조사식 설정
 병렬 조사식 창에서 한 식이 여러 스레드에서 보유하는 값을 동시에 표시할 수 있습니다. 각 행은 응용 프로그램에서 실행 중인 스레드를 나타냅니다. 스레드는 여러 행에 나타날 수도 있습니다. 보다 구체적으로 말하자면, 각 행은 함수 시그니처가 현재 스택 프레임의 함수와 일치하는 함수 호출을 나타냅니다. 열에 있는 항목의 정렬, 순서 변경, 제거 및 그룹화를 수행할 수 있습니다. 스레드에 플래그를 지정하거나 해제할 수 있으며 스레드를 중지(일시 중단)하거나 재개(다시 시작)할 수 있습니다. 다음 열에 표시 되는 **병렬 조사식** 창:  
   
--   특히 주의할 스레드를 표시할 수 있는 플래그 열  
+- 특히 주의할 스레드를 표시할 수 있는 플래그 열  
   
--   현재 스레드 열 노란색 화살표는 현재 스레드를 나타냅니다 (끝이 굽은 녹색 화살표가 현재 디버거 컨텍스트는 현재 스레드가 아닌에 나타냄).  
+- 현재 스레드 열 노란색 화살표는 현재 스레드를 나타냅니다 (끝이 굽은 녹색 화살표가 현재 디버거 컨텍스트는 현재 스레드가 아닌에 나타냄).  
   
--   컴퓨터, 프로세스, 타일, 작업 및 스레드를 표시할 수 있는 구성 가능한 열  
+- 컴퓨터, 프로세스, 타일, 작업 및 스레드를 표시할 수 있는 구성 가능한 열  
   
-    > [!TIP]
-    >  표시 작업 정보에는 **병렬 조사식** 먼저 열어야 창 합니다 **작업** 창.  
+  > [!TIP]
+  >  표시 작업 정보에는 **병렬 조사식** 먼저 열어야 창 합니다 **작업** 창.  
   
--   빈 칸 *조사식 추가* 열에서 조사할 식을 입력할 수 있습니다.  
+- 빈 칸 *조사식 추가* 열에서 조사할 식을 입력할 수 있습니다.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>병렬 조사식 창을 표시하려면  
   

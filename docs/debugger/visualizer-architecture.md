@@ -15,29 +15,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b20572409ac49451f58584be20fbabfdab39a3ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836608"
 ---
 # <a name="visualizer-architecture"></a>시각화 도우미 아키텍처
 디버거 시각화 도우미의 아키텍처는 두 부분으로 구성되어 있습니다.  
   
--   *디버거 쪽* Visual Studio 디버거 내에서 실행 됩니다. 디버거 쪽 코드에서는 시각화 도우미의 사용자 인터페이스를 만들고 표시합니다.  
+- 합니다 *디버거 쪽* Visual Studio 디버거 내에서 실행 됩니다. 디버거 쪽 코드에서는 시각화 도우미의 사용자 인터페이스를 만들고 표시합니다.  
   
--   *디버기 쪽* Visual Studio가 디버깅 하는 프로세스 내에서 실행 (의 *디버기*).  
+- 합니다 *디버기 쪽* Visual Studio가 디버깅 하는 프로세스 내에서 실행 (합니다 *디버기*).  
   
- 시각화 도우미는 디버거를 표시할 수 있도록 하는 디버거 구성 요소 (*시각화*) 의미 있고 이해할 수 있는 형태로 데이터 개체의 내용입니다. 일부 시각화 도우미에서는 데이터 개체를 편집할 수도 있습니다. 사용자 지정 시각화 도우미를 작성하면 고유한 사용자 지정 데이터 형식을 처리하도록 디버거를 확장할 수 있습니다.  
+  시각화 도우미는 디버거에서 표시할 수 있도록 하는 디버거 구성 요소 (*시각화*) 의미 있고 이해할 수 있는 형식에 데이터 개체의 콘텐츠입니다. 일부 시각화 도우미에서는 데이터 개체를 편집할 수도 있습니다. 사용자 지정 시각화 도우미를 작성하면 고유한 사용자 지정 데이터 형식을 처리하도록 디버거를 확장할 수 있습니다.  
   
- 시각화할 데이터 개체는 디버깅할 프로세스 내에 상주 (의 *디버기* 프로세스). 데이터를 표시하는 사용자 인터페이스는 Visual Studio 디버거 프로세스 내에서 만들어집니다.  
+  시각화할 데이터 개체는 디버깅할 프로세스 내에 상주 (합니다 *디버기* 프로세스). 데이터를 표시하는 사용자 인터페이스는 Visual Studio 디버거 프로세스 내에서 만들어집니다.  
   
 |디버거 프로세스|디버기 프로세스|  
 |----------------------|----------------------|  
 |디버거 사용자 인터페이스(DataTip, 조사식 창, 간략한 조사식)|시각화할 데이터 개체|  
   
- 디버거 인터페이스 내에서 데이터 개체를 시각화하려면 두 프로세스 사이에서 통신하는 코드가 필요합니다. 따라서 시각화 도우미 아키텍처 두 부분으로 구성: *디버거 쪽* 코드 및 *디버기 쪽* 코드입니다.  
+ 디버거 인터페이스 내에서 데이터 개체를 시각화하려면 두 프로세스 사이에서 통신하는 코드가 필요합니다. 시각화 도우미 아키텍처 두 부분으로 이루어져 따라서: *디버거 쪽* 코드 및 *디버기 쪽* 코드입니다.  
   
  디버거 쪽 코드에서는 DataTip, 조사식 창, 간략한 조사식 등의 디버거 인터페이스에서 호출할 수 있는 자체 사용자 인터페이스를 만듭니다. 시각화 도우미 인터페이스는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 클래스와 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 인터페이스를 사용하여 만들어집니다. 모든 시각화 도우미 API와 마찬가지로 DialogDebuggerVisualizer 및 IDialogVisualizerService는 <xref:Microsoft.VisualStudio.DebuggerVisualizers> 네임스페이스에 있습니다.  
   

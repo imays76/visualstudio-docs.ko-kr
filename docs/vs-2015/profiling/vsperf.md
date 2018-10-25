@@ -14,23 +14,23 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b36e33bb589e2866a14acd9dc253af78d7d9c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 094c59f1ef7acd1105cdefc4f556a50fb7e8a161
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851039"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **VsPerf** 명령줄 도구를 사용하면 다음을 수행할 수 있습니다.  
   
-1.  장치에 Visual Studio가 설치되어 있지 않으면 명령줄에서 Windows 스토어 앱을 프로파일링합니다.  
+1. 장치에 Visual Studio가 설치되어 있지 않으면 명령줄에서 Windows 스토어 앱을 프로파일링합니다.  
   
-2.  샘플링 프로파일링 방법을 사용하여 Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램을 프로파일링합니다.  
+2. 샘플링 프로파일링 방법을 사용하여 Windows 8 데스크톱 응용 프로그램 및 Windows Server 2012 응용 프로그램을 프로파일링합니다.  
   
- 프로 파일링 옵션에 대한 자세한 내용은 [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
+   프로 파일링 옵션에 대한 자세한 내용은 [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
   
 ##  <a name="BKMK_In_this_topic"></a> 항목 내용  
  이 항목에서는 `vsperf.exe` 명령줄 도구와 함께 사용할 수 있는 옵션에 대해 설명합니다. 이 항목에는 다음과 같은 단원이 포함되어 있습니다.  

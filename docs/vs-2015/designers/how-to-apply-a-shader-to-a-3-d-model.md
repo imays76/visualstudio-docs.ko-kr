@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3268bd37a0fd0038901e3e815dba290a605638c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 804e7c0a2e7a9a710071cc6050249bf408bc8230
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862855"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>방법: 3차원 모델에 셰이더 적용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "49212695"
   
 #### <a name="to-apply-a-shader-to-a-3-d-model"></a>3D 모델에 셰이더를 적용하려면  
   
-1.  하나 이상의 모델이 포함된 3D 장면으로 시작합니다. 적합한 3D 장면이 없으면 [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)에 설명된 대로 장면을 만듭니다. 모델에 적용할 수 있는 DGSL 셰이더가 준비되어 있어야 합니다. 적합한 셰이더가 없으면 [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)에 설명된 대로 셰이더를 만들고 계속하기 전에 파일에 저장했는지 확인합니다.  
+1. 하나 이상의 모델이 포함된 3D 장면으로 시작합니다. 적합한 3D 장면이 없으면 [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)에 설명된 대로 장면을 만듭니다. 모델에 적용할 수 있는 DGSL 셰이더가 준비되어 있어야 합니다. 적합한 셰이더가 없으면 [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)에 설명된 대로 셰이더를 만들고 계속하기 전에 파일에 저장했는지 확인합니다.  
   
-2.  **선택** 모드에서 셰이더를 적용할 모델을 선택하고 **속성** 창에 있는 **효과** 속성 그룹의 **파일 이름** 속성에서 모델에 적용할 DGSL 셰이더를 지정합니다.  
+2. **선택** 모드에서 셰이더를 적용할 모델을 선택하고 **속성** 창에 있는 **효과** 속성 그룹의 **파일 이름** 속성에서 모델에 적용할 DGSL 셰이더를 지정합니다.  
   
- 다음은 기본 색 효과가 적용된 모델입니다.  
+   다음은 기본 색 효과가 적용된 모델입니다.  
   
- ![기본 색 효과를 보여 주는 3D 장면](../designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
+   ![기본 색 효과를 보여 주는 3D 장면](../designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
   
- 모델에 셰이더를 적용한 후 모델을 선택하고 **속성** 창에 있는 **효과** 속성 그룹의 **(고급)** 속성에서 말줄임표(**...**) 단추를 선택하여 셰이더 디자이너에서 모델을 열 수 있습니다.  
+   모델에 셰이더를 적용한 후 모델을 선택하고 **속성** 창에 있는 **효과** 속성 그룹의 **(고급)** 속성에서 말줄임표(**...**) 단추를 선택하여 셰이더 디자이너에서 모델을 열 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)   

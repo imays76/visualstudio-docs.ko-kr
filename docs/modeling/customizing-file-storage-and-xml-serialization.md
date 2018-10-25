@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886463"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>파일 저장소 및 XML Serialization 사용자 지정
 
@@ -301,7 +301,7 @@ Xml 속성 노드 클래스 노드에 있습니다.
 데이터 노드 역할은 원본 클래스 노드에 있습니다.
 
 |속성|설명|
-|--------------|-----------------|
+|-|-|
 |사용자 지정 모니커는|사용자 고유의 코드를 생성 하 고이 관계를 트래버스하는 모니커 확인을 제공 하려는 경우 true로 설정 합니다.<br /><br /> 자세한 내용은 솔루션을 빌드하고 오류 메시지를 두 번 클릭 합니다.|
 |도메인 관계|이러한 옵션은 적용 하려는 관계를 지정 합니다. 읽기 전용입니다.|
 |요소를 생략 합니다.|True 이면 소스 역할에 해당 하는 XML 노드의 스키마에서 생략 됩니다.<br /><br /> 원본 및 대상 클래스 간에 둘 이상의 관계가 없으면이 역할 노드 두 관계에 속해 있는 링크를 구분 합니다. 따라서는 설정 하지 않으면이 옵션이 경우에 것이 좋습니다.|

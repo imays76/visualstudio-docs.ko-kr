@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cce4be924b1defcd840fe2f23019d27d22ebf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee114498abec5146e9f63d9f98112e80fc140c35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257883"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826853"
 ---
 # <a name="how-to-set-the-current-session"></a>방법: 현재 세션 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "49257883"
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 세션을 현재 세션으로 설정한 후 **성능 탐색기** 도구 모음에서 **시작**을 클릭하면 현재 세션의 프로파일링이 시작됩니다.  
+  세션을 현재 세션으로 설정한 후 **성능 탐색기** 도구 모음에서 **시작**을 클릭하면 현재 세션의 프로파일링이 시작됩니다.  
   
 ### <a name="to-set-current-performance-session"></a>현재 성능 세션을 설정하려면  
   

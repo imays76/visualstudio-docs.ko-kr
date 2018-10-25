@@ -13,12 +13,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890147"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>코딩된 UI 테스트를 사용하여 Windows UWP 및 8.1 Phone 앱 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,37 +85,37 @@ ms.locfileid: "49285937"
 
 [UWP(유니버설 Windows 플랫폼) 앱을 위한 코딩된 UI 테스트를 만들려면 어떻게 하나요?](#uwpapps)
   
-1.  Windows Phone 앱을 사용하여 솔루션에 새로 코딩된 UI 테스트 프로젝트를 추가합니다.  
+1. Windows Phone 앱을 사용하여 솔루션에 새로 코딩된 UI 테스트 프로젝트를 추가합니다.  
   
-     ![Windows Phone용으로 새로 코딩된 UI 테스트 만들기](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
+    ![Windows Phone용으로 새로 코딩된 UI 테스트 만들기](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
   
-2.  십자선 도구를 사용하여 UI 맵을 편집하도록 선택합니다.  
+2. 십자선 도구를 사용하여 UI 맵을 편집하도록 선택합니다.  
   
-     ![십자선 도구를 사용하여 코딩된 UI 테스트 생성](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![십자선 도구를 사용하여 코딩된 UI 테스트 생성](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  십자선 도구를 사용하여 앱을 선택한 다음 나중에 테스트에서 앱을 시작하는 데 사용하게 될 앱의 **AutomationId** 속성 값을 복사합니다.  
+3. 십자선 도구를 사용하여 앱을 선택한 다음 나중에 테스트에서 앱을 시작하는 데 사용하게 될 앱의 **AutomationId** 속성 값을 복사합니다.  
   
-     ![앱의 AutomationId 값 복사](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
+    ![앱의 AutomationId 값 복사](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
   
-4.  에뮬레이터에서 앱을 시작하고 십자선 도구를 사용하여 단추 컨트롤을 선택합니다. 그런 다음 UI 컨트롤 맵에 단추 컨트롤을 추가합니다.  
+4. 에뮬레이터에서 앱을 시작하고 십자선 도구를 사용하여 단추 컨트롤을 선택합니다. 그런 다음 UI 컨트롤 맵에 단추 컨트롤을 추가합니다.  
   
-     ![십자선 도구를 사용하여 컨트롤 매핑](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
+    ![십자선 도구를 사용하여 컨트롤 매핑](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
   
-5.  UI 컨트롤 맵에 textbox 컨트롤을 추가하려면 이전 단계를 반복합니다.  
+5. UI 컨트롤 맵에 textbox 컨트롤을 추가하려면 이전 단계를 반복합니다.  
   
-     ![십자선 도구 및 맵 textbox 컨트롤 사용](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
+    ![십자선 도구 및 맵 textbox 컨트롤 사용](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
   
-6.  코드를 생성하여 UI 컨트롤 맵 변경을 위한 코드를 작성합니다.  
+6. 코드를 생성하여 UI 컨트롤 맵 변경을 위한 코드를 작성합니다.  
   
-     ![작성기에서 코드 생성](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
+    ![작성기에서 코드 생성](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
   
-7.  십자선 도구를 사용하여 textbox 컨트롤을 선택한 다음 **텍스트** 속성을 선택합니다.  
+7. 십자선 도구를 사용하여 textbox 컨트롤을 선택한 다음 **텍스트** 속성을 선택합니다.  
   
-     ![Text 속성 선택](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
+    ![Text 속성 선택](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
   
-8.  어설션을 추가합니다. 이 어설션은 값이 올바른지 확인하는 테스트에 사용됩니다.  
+8. 어설션을 추가합니다. 이 어설션은 값이 올바른지 확인하는 테스트에 사용됩니다.  
   
-     ![테스트에 어설션 추가](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
+    ![테스트에 어설션 추가](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
   
 9. assert 메서드에 대한 코드를 추가하고 생성합니다.  
   
@@ -223,37 +223,37 @@ ms.locfileid: "49285937"
   
 11. 솔루션 탐색기에서 CodedUITest1.cs 또는 CodedUITest1.vb 파일을 엽니다. 이제 테스트 실행에 필요한 작업을 위한 CodedUTTestMethod1 메서드에 코드를 추가할 수 있습니다. UIMap에 추가한 컨트롤을 사용하여 다음과 같이 코드를 추가합니다.  
   
-    1.  이전에 클립보드에 복사한 AutomationId 속성을 사용하여 Windows Phone 앱을 시작합니다.  
+    1. 이전에 클립보드에 복사한 AutomationId 속성을 사용하여 Windows Phone 앱을 시작합니다.  
   
-        ```csharp  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```csharp  
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-        ```vb  
-        XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  다음과 같이 단추 컨트롤을 누르는 제스처를 추가합니다.  
+    2. 다음과 같이 단추 컨트롤을 누르는 제스처를 추가합니다.  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
+       ```  
   
-    3.  앱과 단추 탭하기 제스처 시작 후 자동으로 생성된 assert 메서드가 호출되는지 확인합니다.  
+    3. 앱과 단추 탭하기 제스처 시작 후 자동으로 생성된 assert 메서드가 호출되는지 확인합니다.  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     코드가 추가된 후 CodedUITestMethod1 테스트 메서드의 모양은 다음과 같아야 합니다.  
+       코드가 추가된 후 CodedUITestMethod1 테스트 메서드의 모양은 다음과 같아야 합니다.  
   
     ```csharp  
     [TestMethod]  
@@ -340,11 +340,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>Q: UWP(유니버설 Windows 플랫폼) 앱을 위한 코딩된 UI 테스트를 만들려면 어떻게 하나요?  
  **A**: UWP 앱을 테스트하는 플랫폼에 따라 다음 중 한 가지 방법으로 코딩된 UI 테스트 프로젝트를 만듭니다.  
   
--   로컬 컴퓨터에서 실행 중인 UWP 앱이 스토어 앱으로 실행되는 경우. 이를 테스트하려면 **코딩된 UI 테스트 프로젝트(Windows)** 템플릿을 사용해야 합니다. 새 프로젝트를 만들 때 이 템플릿을 찾으려면 **Windows**, **범용** 노드로 이동합니다. 또는 **Windows**, **Windows 8**, **Windows** 노드로 이동합니다.  
+- 로컬 컴퓨터에서 실행 중인 UWP 앱이 스토어 앱으로 실행되는 경우. 이를 테스트하려면 **코딩된 UI 테스트 프로젝트(Windows)** 템플릿을 사용해야 합니다. 새 프로젝트를 만들 때 이 템플릿을 찾으려면 **Windows**, **범용** 노드로 이동합니다. 또는 **Windows**, **Windows 8**, **Windows** 노드로 이동합니다.  
   
--   모바일 장치 또는 에뮬레이터에서 실행 중인 UWP 앱이 휴대폰 앱으로 실행되는 경우. 이를 테스트하려면 **코딩된 UI 테스트 프로젝트(Windows Phone)** 템플릿을 사용해야 합니다. 새 프로젝트를 만들 때 이 템플릿을 찾으려면 **Windows**, **범용** 노드로 이동합니다. 또는 **Windows**, **Windows 8**, **Windows Phone** 노드로 이동합니다.  
+- 모바일 장치 또는 에뮬레이터에서 실행 중인 UWP 앱이 휴대폰 앱으로 실행되는 경우. 이를 테스트하려면 **코딩된 UI 테스트 프로젝트(Windows Phone)** 템플릿을 사용해야 합니다. 새 프로젝트를 만들 때 이 템플릿을 찾으려면 **Windows**, **범용** 노드로 이동합니다. 또는 **Windows**, **Windows 8**, **Windows Phone** 노드로 이동합니다.  
   
- 프로젝트를 만든 후의 테스트 작성은 이전과 동일합니다.  
+  프로젝트를 만든 후의 테스트 작성은 이전과 동일합니다.  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>Q: 에뮬레이터 외부에 있는 컨트롤을 선택할 수 있나요?  
  **A**: 아니요, 빌더가 이러한 컨트롤은 검색하지 않습니다.  

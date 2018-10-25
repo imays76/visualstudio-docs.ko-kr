@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878188"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>연습: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
   SharePoint 2010 OData를 사용 하 여 해당 목록 데이터를 노출합니다. SharePoint에서 OData 서비스는 RESTful 서비스 ListData.svc에 의해 구현 됩니다. 이 연습에서는 Silverlight 응용 프로그램을 호스트 하는 SharePoint 웹 파트를 만드는 방법을 보여 줍니다. Silverlight 응용 프로그램 ListData.svc를 사용 하 여 SharePoint 알림 목록 정보를 표시 합니다. 자세한 내용은 [SharePoint Foundation REST 인터페이스](http://go.microsoft.com/fwlink/?LinkId=225999) 하 고 [개방형 데이터 프로토콜](http://go.microsoft.com/fwlink/?LinkId=226000)합니다.  
@@ -42,25 +42,25 @@ ms.locfileid: "42626167"
   
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Silverlight 웹 파트를 Silverlight 응용 프로그램을 만들려면
   
-1.  메뉴 모음에서 선택 **파일** > **새로 만들기** > **프로젝트** 표시 하는 **새 프로젝트** 대화 상자.  
+1. 메뉴 모음에서 선택 **파일** > **새로 만들기** > **프로젝트** 표시 하는 **새 프로젝트** 대화 상자.  
   
-2.  확장 합니다 **SharePoint** 노드 아래 **Visual C#** 또는 **Visual Basic**를 선택한 후는 **2010** 노드.  
+2. 확장 합니다 **SharePoint** 노드 아래 **Visual C#** 또는 **Visual Basic**를 선택한 후는 **2010** 노드.  
   
-3.  템플릿 창에서 선택 합니다 **SharePoint 2010 Silverlight 웹 파트** 템플릿.  
+3. 템플릿 창에서 선택 합니다 **SharePoint 2010 Silverlight 웹 파트** 템플릿.  
   
-4.  에 **이름** 상자에 입력 합니다 **SLWebPartTest** 를 선택한 후는 **확인** 단추입니다.  
+4. 에 **이름** 상자에 입력 합니다 **SLWebPartTest** 를 선택한 후는 **확인** 단추입니다.  
   
-     합니다 **SharePoint 사용자 지정 마법사** 대화 상자가 나타납니다.  
+    합니다 **SharePoint 사용자 지정 마법사** 대화 상자가 나타납니다.  
   
-5.  에 **디버깅에 대 한 사이트 및 보안 수준을 지정할** 페이지에서 사이트 정의 디버그 하려는 SharePoint 서버 사이트의 URL을 입력 하거나 기본 위치를 사용 하 여 (http://*시스템 이름*/) .  
+5. 에 **디버깅에 대 한 사이트 및 보안 수준을 지정할** 페이지에서 사이트 정의 디버그 하려는 SharePoint 서버 사이트의 URL을 입력 하거나 기본 위치를 사용 하 여 (http://<em>시스템 이름</em>/) .  
   
-6.  에 **이 SharePoint 솔루션의 신뢰 수준을?** 섹션을 선택 합니다 **팜 솔루션으로 배포** 옵션 단추입니다.  
+6. 에 **이 SharePoint 솔루션의 신뢰 수준을?** 섹션을 선택 합니다 **팜 솔루션으로 배포** 옵션 단추입니다.  
   
-     이 예제에서는 팜 솔루션을 팜 또는 샌드박스 솔루션으로 Silverlight 웹 파트 프로젝트를 배포할 수 있습니다. 샌드박스 솔루션과 팜 솔루션에 대 한 자세한 내용은 참조 하세요. [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)합니다.  
+    이 예제에서는 팜 솔루션을 팜 또는 샌드박스 솔루션으로 Silverlight 웹 파트 프로젝트를 배포할 수 있습니다. 샌드박스 솔루션과 팜 솔루션에 대 한 자세한 내용은 참조 하세요. [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)합니다.  
   
-7.  에 **Silverlight 웹 파트를 연결 하 시겠습니까** 부분을 **Silverlight 구성 정보를 지정** 페이지를 선택는 **새 Silverlight 프로젝트 만들기 및 웹 파트와 연결할** 옵션 단추입니다.  
+7. 에 **Silverlight 웹 파트를 연결 하 시겠습니까** 부분을 **Silverlight 구성 정보를 지정** 페이지를 선택는 **새 Silverlight 프로젝트 만들기 및 웹 파트와 연결할** 옵션 단추입니다.  
   
-8.  변경 합니다 **이름** 하 **SLApplication**설정 **언어** 를 **Visual Basic** 또는 **Visual C#**, 설정한 후 **Silverlight 버전** 하 **Silverlight 4.0**합니다.  
+8. 변경 합니다 **이름** 하 **SLApplication**설정 **언어** 를 **Visual Basic** 또는 **Visual C#**, 설정한 후 **Silverlight 버전** 하 **Silverlight 4.0**합니다.  
   
 9. 선택 된 **완료** 단추입니다. 프로젝트에 나타납니다 **솔루션 탐색기**합니다.  
   

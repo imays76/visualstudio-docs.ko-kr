@@ -16,27 +16,27 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1abb0905e276c2e9a2c5fc99b7d77edffedbb2d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3067f9d54a91c02df63d3c22afda19da3b5707ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242597"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818018"
 ---
 # <a name="creating-custom-editors-and-designers"></a>사용자 지정 편집기 및 디자이너 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 통합된 개발 환경 (IDE)는 다양 한 유형의 편집기를 호스팅할 수 있습니다.  
   
--   Visual Studio 핵심 편집기  
+- Visual Studio 핵심 편집기  
   
--   사용자 지정 편집기  
+- 사용자 지정 편집기  
   
--   외부 편집기  
+- 외부 편집기  
   
--   디자이너  
+- 디자이너  
   
- 다음 정보를 해야 하는 편집기 유형의 방법을 선택할 수 있습니다.  
+  다음 정보를 해야 하는 편집기 유형의 방법을 선택할 수 있습니다.  
   
 ## <a name="types-of-editor"></a>편집기의 형식  
  Visual Studio 핵심 편집기에 대 한 정보를 참조 하세요 [편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md)합니다.  

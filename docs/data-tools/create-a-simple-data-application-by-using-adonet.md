@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891013"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용 하 여 간단한 데이터 응용 프로그램 만들기
 
 데이터베이스의 데이터를 조작 하는 응용 프로그램을 만들면 연결 문자열 정의 데이터를 삽입 및 저장된 프로시저를 실행 하는 등의 기본 작업 수행 합니다. 이 항목에 따라 Visual C# 또는 Visual Basic 및 ADO.NET을 사용 하 여 간단한 Windows Forms "데이터 폼" 응용 프로그램 내에서 데이터베이스와 상호 작용 하는 방법을 확인할 수 있습니다.  모든.NET 데이터 기술-LINQ to SQL과 Entity Framework 데이터 집합을 포함 하 여, 궁극적으로이 문서에 나와 있는 것과 매우 유사한 단계를 수행 합니다.
 
- 이 문서는 데이터베이스에서 데이터를 빠른 방식으로 참여 하는 간단한 방법을 보여 줍니다. 응용 프로그램을 trivial이 아닌 방법으로 데이터를 수정 하 고 데이터베이스를 업데이트 하는 경우에 Entity Framework를 사용 하 여 및 데이터 바인딩 기본 데이터의 변경 내용에 사용자 인터페이스 컨트롤을 자동으로 동기화를 사용 해야 합니다.
+이 문서는 데이터베이스에서 데이터를 빠른 방식으로 참여 하는 간단한 방법을 보여 줍니다. 응용 프로그램을 trivial이 아닌 방법으로 데이터를 수정 하 고 데이터베이스를 업데이트 하는 경우에 Entity Framework를 사용 하 여 및 데이터 바인딩 기본 데이터의 변경 내용에 사용자 인터페이스 컨트롤을 자동으로 동기화를 사용 해야 합니다.
 
 > [!IMPORTANT]
 > 코드를 간단히 유지 하기 것 프로덕션이 준비 된 예외 처리를 포함 하지 않습니다.
@@ -65,29 +65,29 @@ ms.locfileid: "36758485"
 
 ## <a name="create-the-forms-and-add-controls"></a>폼 만들기 및 컨트롤 추가
 
-1.  Windows Forms 응용 프로그램의 경우 프로젝트를 만들고 다음 이름을 **SimpleDataApp**합니다.
+1. Windows Forms 응용 프로그램의 경우 프로젝트를 만들고 다음 이름을 **SimpleDataApp**합니다.
 
-     Visual Studio 프로젝트 및 이라고 하는 빈 Windows 폼을 포함 하 여 여러 파일을 만듭니다 **Form1**합니다.
+    Visual Studio 프로젝트 및 이라고 하는 빈 Windows 폼을 포함 하 여 여러 파일을 만듭니다 **Form1**합니다.
 
-2.  세 개의 폼을 갖도록 두 개의 Windows forms 프로젝트에 추가 하 고 다음과 같은 이름 지정:
+2. 세 개의 폼을 갖도록 두 개의 Windows forms 프로젝트에 추가 하 고 다음과 같은 이름 지정:
 
-    -   **탐색**
+   -   **탐색**
 
-    -   **NewCustomer**
+   -   **NewCustomer**
 
-    -   **FillOrCancel**
+   -   **FillOrCancel**
 
-3.  각 폼에 대해 다음 그림에 나오는 텍스트 상자, 단추 및 기타 컨트롤을 추가합니다. 각 컨트롤에 대해 테이블이 설명하는 속성을 설정합니다.
+3. 각 폼에 대해 다음 그림에 나오는 텍스트 상자, 단추 및 기타 컨트롤을 추가합니다. 각 컨트롤에 대해 테이블이 설명하는 속성을 설정합니다.
 
-    > [!NOTE]
-    >  그룹 상자 및 레이블 컨트롤도 선명성을 더해 주지만 코드에서는 사용하지 않습니다.
+   > [!NOTE]
+   > 그룹 상자 및 레이블 컨트롤도 선명성을 더해 주지만 코드에서는 사용하지 않습니다.
 
- **Navigation 폼**
+   **Navigation 폼**
 
- ![검색 대화 상자](../data-tools/media/simpleappnav.png)
+   ![검색 대화 상자](../data-tools/media/simpleappnav.png)
 
 |Navigation 폼 컨트롤|속성|
-|--------------------------------------|----------------|
+| - |----------------|
 |단추|Name = btnGoToAdd|
 |단추|Name = btnGoToFillOrCancel|
 |단추|Name = btnExit|
@@ -97,7 +97,7 @@ ms.locfileid: "36758485"
  ![새 고객을 추가하고 주문하기](../data-tools/media/simpleappnewcust.png)
 
 |NewCustomer 폼 컨트롤|속성|
-|---------------------------------------|----------------|
+| - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
 |단추|Name = btnCreateAccount|
@@ -112,7 +112,7 @@ ms.locfileid: "36758485"
  ![주문 입력 또는 취소](../data-tools/media/simpleappcancelfill.png)
 
 |FillOrCancel 폼 컨트롤|속성|
-|----------------------------------------|----------------|
+| - |----------------|
 |TextBox|Name = txtOrderID|
 |단추|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|

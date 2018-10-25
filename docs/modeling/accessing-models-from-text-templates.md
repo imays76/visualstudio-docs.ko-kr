@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6c05befbfa59063956d0df37a7aa57d955503ec5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882524"
 ---
 # <a name="accessing-models-from-text-templates"></a>텍스트 템플릿에서 모델에 액세스
 텍스트 템플릿을 사용 하 여 보고서 파일, 소스 코드 파일 및 도메인 특정 언어 모델을 기반으로 하는 기타 텍스트 파일을 만들 수 있습니다. 텍스트 템플릿에 대 한 기본 정보를 참조 하세요. [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)합니다. 텍스트 템플릿 DSL을 디버깅할 때 실험적 모드에서 작동 하 고 DSL를 배포한 컴퓨터 에서도 작동 합니다.
@@ -26,11 +26,11 @@ ms.locfileid: "47860344"
 
  텍스트 템플릿에서 모델 액세스:
 
--   템플릿 지시문의 상속 속성을 설정 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>합니다. 이 저장소에 대 한 액세스를 제공합니다.
+- 템플릿 지시문의 상속 속성을 설정 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>합니다. 이 저장소에 대 한 액세스를 제공합니다.
 
--   액세스 하려는 DSL에 대 한 지시문 프로세서를 지정 합니다. 이 텍스트 템플릿의 코드에서 해당 도메인 클래스, 속성 및 관계를 사용할 수 있도록 DSL에 대 한 어셈블리를 로드 합니다. 또한 지정 된 모델 파일을 로드 합니다.
+- 액세스 하려는 DSL에 대 한 지시문 프로세서를 지정 합니다. 이 텍스트 템플릿의 코드에서 해당 도메인 클래스, 속성 및 관계를 사용할 수 있도록 DSL에 대 한 어셈블리를 로드 합니다. 또한 지정 된 모델 파일을 로드 합니다.
 
- `.tt` 최소 언어 DSL 템플릿에서 새 Visual Studio 솔루션을 만들 때 디버깅 프로젝트에 다음 예제와 비슷한 파일이 만들어집니다.
+  `.tt` 최소 언어 DSL 템플릿에서 새 Visual Studio 솔루션을 만들 때 디버깅 프로젝트에 다음 예제와 비슷한 파일이 만들어집니다.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -50,22 +50,21 @@ Here is a list of elements in the model:
 <#
   }
 #>
-
 ```
 
  이 템플릿에 대 한 다음 사항에 유의 합니다.
 
--   도메인 클래스, 속성 및 관계 DSL 정의에 정의 된 템플릿을 사용할 수 있습니다.
+- 도메인 클래스, 속성 및 관계 DSL 정의에 정의 된 템플릿을 사용할 수 있습니다.
 
--   서식 파일에 지정 된 모델 파일을 로드 합니다 `requires` 속성입니다.
+- 서식 파일에 지정 된 모델 파일을 로드 합니다 `requires` 속성입니다.
 
--   속성에서 `this` 루트 요소를 포함 합니다. 여기에서 코드 모델의 다른 요소와 이동할 수 있습니다. 속성의 이름은 일반적으로 DSL의 루트 도메인 클래스와 동일 합니다. 이 예제에서는 `this.ExampleModel`입니다.
+- 속성에서 `this` 루트 요소를 포함 합니다. 여기에서 코드 모델의 다른 요소와 이동할 수 있습니다. 속성의 이름은 일반적으로 DSL의 루트 도메인 클래스와 동일 합니다. 이 예제에서는 `this.ExampleModel`입니다.
 
--   코드 조각을 작성 되는 언어는 C#, 하지만 모든 종류의 텍스트를 생성할 수 있습니다. 또는 코드를 작성할 수 있습니다 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 속성을 추가 하 여 `language="VB"` 에 `template` 지시문입니다.
+- 코드 조각을 작성 되는 언어는 C#, 하지만 모든 종류의 텍스트를 생성할 수 있습니다. 또는 코드를 작성할 수 있습니다 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 속성을 추가 하 여 `language="VB"` 에 `template` 지시문입니다.
 
--   서식 파일을 디버깅 하려면 추가 `debug="true"` 에 `template` 지시문입니다. 예외가 발생 하는 경우에 템플릿을 Visual Studio의 다른 인스턴스에서 열립니다. 코드에서 특정 지점에서 디버거를 중단 하려는 경우 insert 문 `System.Diagnostics.Debugger.Break();`
+- 서식 파일을 디버깅 하려면 추가 `debug="true"` 에 `template` 지시문입니다. 예외가 발생 하는 경우에 템플릿을 Visual Studio의 다른 인스턴스에서 열립니다. 코드에서 특정 지점에서 디버거를 중단 하려는 경우 insert 문 `System.Diagnostics.Debugger.Break();`
 
-     자세한 내용은 [T4 텍스트 템플릿 디버깅](../modeling/debugging-a-t4-text-template.md)합니다.
+   자세한 내용은 [T4 텍스트 템플릿 디버깅](../modeling/debugging-a-t4-text-template.md)합니다.
 
 ## <a name="about-the-dsl-directive-processor"></a>DSL 지시문 프로세서에 대 한
  템플릿은 DSL 정의에 정의 된 도메인 클래스를 사용할 수 있습니다. 서식 파일의 시작 부분에 일반적으로 나타나는 지시문에 대 한이 상태로 만듭니다. 이전 예제에서는 다음과 같습니다.
@@ -87,16 +86,15 @@ Here is a list of elements in the model:
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
-
 ```
 
  다음 사항을 참고하세요.
 
-1.  합니다 `filename` 및 `validation` 매개 변수는 사용 하 여 구분 ";"이 고 다른 구분 기호 또는 공백 이어야 합니다.
+1. 합니다 `filename` 및 `validation` 매개 변수는 사용 하 여 구분 ";"이 고 다른 구분 기호 또는 공백 이어야 합니다.
 
-2.  유효성 검사 범주 목록 유효성 검사 메서드를 실행할 수를 결정 합니다. 여러 범주를 사용 하 여 구분 해야 "&#124;"이 고 다른 구분 기호 또는 공백 이어야 합니다.
+2. 유효성 검사 범주 목록 유효성 검사 메서드를 실행할 수를 결정 합니다. 여러 범주를 사용 하 여 구분 해야 "&#124;"이 고 다른 구분 기호 또는 공백 이어야 합니다.
 
- 오류가 있으면 오류 창에 보고 됩니다 하 고 결과 파일에는 오류 메시지가 포함 됩니다.
+   오류가 있으면 오류 창에 보고 됩니다 하 고 결과 파일에는 오류 메시지가 포함 됩니다.
 
 ## <a name="Multiple"></a> 텍스트 템플릿에서 여러 모델에 액세스
 
@@ -173,7 +171,6 @@ For Each element As ExampleElement In Me.WorkModel.Elements
    // Here you generate more content derived from the element.
   }
 #>
-
 ```
 
  `LoopSplitter.tt` 호출 `LoopTemplate.t4`, 그런 다음 해당 세그먼트로 결과 파일을 분할 합니다. 모델을 읽지 못하는 때문에이 템플릿에 모델링 템플릿으로 되도록 되어 있지 않습니다 확인 합니다.
@@ -215,5 +212,4 @@ For Each element As ExampleElement In Me.WorkModel.Elements
      File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);
   }
 #>
-
 ```
