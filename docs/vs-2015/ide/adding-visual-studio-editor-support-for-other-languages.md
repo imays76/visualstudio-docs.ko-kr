@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5fc84272c7041c2d761b4f4ec96add898659049
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0a978470a307c46805e902db85cd5a638c0d83f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823777"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
   
  구문 색 지정 및 기본 문 완성 기능 외에도 Visual Studio에는 [탐색](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/) 기능이 있습니다. 이 기능을 사용하면 코드 파일, 파일 경로 및 코드 기호를 빠르게 검색할 수 있습니다. Visual Studio는 다음 언어에 대해 탐색 기능을 지원합니다.  
   
--   이동  
+- 이동  
   
--   Java  
+- Java  
   
--   JavaScript  
+- JavaScript  
   
--   PHP  
+- PHP  
   
--   TypeScript  
+- TypeScript  
   
--   Visual Basic  
+- Visual Basic  
   
--   Visual C++  
+- Visual C++  
   
--   Visual C#  
+- Visual C#  
   
- 지정된 언어에 대한 지원이 아직 설치되지 않은 경우에도 이러한 모든 파일 형식에는 앞에서 설명한 기능이 있습니다. 일부 언어에 대한 특수 지원을 설치하면 IntelliSense 등의 추가 언어 지원이나 전구 등의 기타 고급 언어 기능이 제공됩니다.  
+  지정된 언어에 대한 지원이 아직 설치되지 않은 경우에도 이러한 모든 파일 형식에는 앞에서 설명한 기능이 있습니다. 일부 언어에 대한 특수 지원을 설치하면 IntelliSense 등의 추가 언어 지원이나 전구 등의 기타 고급 언어 기능이 제공됩니다.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>지원되지 않는 언어에 대한 지원 추가  
  Visual Studio 2015 업데이트 1 이상 버전에서는 [TextMate 문법](https://manual.macromates.com/en/language_grammars)을 사용하여 편집기의 언어 지원을 제공합니다. 자주 사용하는 프로그래밍 언어가 현재 Visual Studio 편집기에서 지원되지 않는 경우 먼저 웹을 검색하세요. 해당 언어에 대한 TextMate 번들이 있을 수도 있습니다. 해당 번들이 없는 경우 Visual Studio 2015 업데이트 1 이상에서는 언어 문법과 코드 조각에 대한 TextMate 번들 모델을 만들어 직접 지원을 추가할 수 있습니다.  

@@ -13,12 +13,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a918b8077693ea199c20e776eaddc57c79b3975a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77243f69cedbd340ee91354ef49651e31605e04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845370"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 응용 프로그램의
   
  Fakes는 두 가지 버전이 있습니다.  
   
--   [스텁](#stubs)은 클래스를 동일한 인터페이스를 구현하는 작은 대안으로 바뀝니다.  스텁을 사용하려면 각 구성 요소가 다른 구성 요소에 종속되는 것이 아니라 인터페이스에만 종속되도록 응용 프로그램을 설계해야 합니다. ("구성 요소"란 함께 설계되어 업데이트되고 대개 하나의 어셈블리에 포함되는 클래스 또는 클래스의 그룹을 의미합니다.)  
+- [스텁](#stubs)은 클래스를 동일한 인터페이스를 구현하는 작은 대안으로 바뀝니다.  스텁을 사용하려면 각 구성 요소가 다른 구성 요소에 종속되는 것이 아니라 인터페이스에만 종속되도록 응용 프로그램을 설계해야 합니다. ("구성 요소"란 함께 설계되어 업데이트되고 대개 하나의 어셈블리에 포함되는 클래스 또는 클래스의 그룹을 의미합니다.)  
   
--   [shim](#shims)은 지정된 메서드 콜을 실행하는 대신 테스트에서 제공하는 shim 코드를 실행할 수 있도록 런타임에 응용 프로그램의 컴파일된 코드를 수정합니다. shim은 .NET 어셈블리와 같이 수정할 수 없는 어셈블리에 대한 호출을 바꾸는 데 사용할 수 있습니다.  
+- [shim](#shims)은 지정된 메서드 콜을 실행하는 대신 테스트에서 제공하는 shim 코드를 실행할 수 있도록 런타임에 응용 프로그램의 컴파일된 코드를 수정합니다. shim은 .NET 어셈블리와 같이 수정할 수 없는 어셈블리에 대한 호출을 바꾸는 데 사용할 수 있습니다.  
   
- ![다른 구성 요소를 대체하는 Fakes](../test/media/fakes-2.png "Fakes-2")  
+  ![다른 구성 요소를 대체하는 Fakes](../test/media/fakes-2.png "Fakes-2")  
   
- **요구 사항**  
+  **요구 사항**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="choosing-between-stub-and-shim-types"></a>스텁 및 shim 형식 중에 선택  
  일반적으로 이러한 클래스를 동시에 개발하고 업데이트했으므로 Visual Studio 프로젝트를 구성 요소라고 생각할 수 있습니다. 프로젝트가 솔루션의 다른 프로젝트에 대해 만드는 호출 또는 프로젝트가 참조하는 다른 어셈블리에 대해 만드는 호출에 스텁 또는 shim을 사용하는 것을 고려할 수 있습니다.  
@@ -168,76 +168,76 @@ Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 응용 프로그램의
   
  shim을 사용하려면 응용 프로그램 코드를 수정하거나 특정 방식으로 쓰지 않아도 됩니다.  
   
-1.  **Fakes 어셈블리 추가**  
+1. **Fakes 어셈블리 추가**  
   
-     솔루션 탐색기에서 단위 테스트 프로젝트의 참조를 열고 모조하려는 메서드가 포함된 어셈블리에 대한 참조를 선택합니다. 이 예제에서 `DateTime` 클래스는 **System.dll**에 있습니다.  Visual Basic 프로젝트에서 참조를 보려면 **모든 파일 표시**를 클릭합니다.  
+    솔루션 탐색기에서 단위 테스트 프로젝트의 참조를 열고 모조하려는 메서드가 포함된 어셈블리에 대한 참조를 선택합니다. 이 예제에서 `DateTime` 클래스는 **System.dll**에 있습니다.  Visual Basic 프로젝트에서 참조를 보려면 **모든 파일 표시**를 클릭합니다.  
   
-     **Fakes 어셈블리 추가**를 선택합니다.  
+    **Fakes 어셈블리 추가**를 선택합니다.  
   
-2.  **ShimsContext에 shim 삽입**  
+2. **ShimsContext에 shim 삽입**  
   
-    ```csharp  
-    [TestClass]  
-    public class TestClass1  
-    {   
-            [TestMethod]  
-            public void TestCurrentYear()  
-            {  
-                int fixedYear = 2000;  
+   ```csharp  
+   [TestClass]  
+   public class TestClass1  
+   {   
+           [TestMethod]  
+           public void TestCurrentYear()  
+           {  
+               int fixedYear = 2000;  
   
-                // Shims can be used only in a ShimsContext:  
-                using (ShimsContext.Create())  
-                {  
-                  // Arrange:  
-                    // Shim DateTime.Now to return a fixed date:  
-                    System.Fakes.ShimDateTime.NowGet =   
-                    () =>  
-                    { return new DateTime(fixedYear, 1, 1); };  
+               // Shims can be used only in a ShimsContext:  
+               using (ShimsContext.Create())  
+               {  
+                 // Arrange:  
+                   // Shim DateTime.Now to return a fixed date:  
+                   System.Fakes.ShimDateTime.NowGet =   
+                   () =>  
+                   { return new DateTime(fixedYear, 1, 1); };  
   
-                    // Instantiate the component under test:  
-                    var componentUnderTest = new MyComponent();  
+                   // Instantiate the component under test:  
+                   var componentUnderTest = new MyComponent();  
   
-                  // Act:  
-                    int year = componentUnderTest.GetTheCurrentYear();  
+                 // Act:  
+                   int year = componentUnderTest.GetTheCurrentYear();  
   
-                  // Assert:   
-                    // This will always be true if the component is working:  
-                    Assert.AreEqual(fixedYear, year);  
-                }  
-            }  
-    }  
+                 // Assert:   
+                   // This will always be true if the component is working:  
+                   Assert.AreEqual(fixedYear, year);  
+               }  
+           }  
+   }  
   
-    ```  
+   ```  
   
-    ```vb  
-    <TestClass()> _  
-    Public Class TestClass1  
-        <TestMethod()> _  
-        Public Sub TestCurrentYear()  
-            Using s = Microsoft.QualityTools.Testing.Fakes.ShimsContext.Create()  
-                Dim fixedYear As Integer = 2000  
-                ' Arrange:  
-                ' Detour DateTime.Now to return a fixed date:  
-                System.Fakes.ShimDateTime.NowGet = _  
-                    Function() As DateTime  
-                        Return New DateTime(fixedYear, 1, 1)  
-                    End Function  
+   ```vb  
+   <TestClass()> _  
+   Public Class TestClass1  
+       <TestMethod()> _  
+       Public Sub TestCurrentYear()  
+           Using s = Microsoft.QualityTools.Testing.Fakes.ShimsContext.Create()  
+               Dim fixedYear As Integer = 2000  
+               ' Arrange:  
+               ' Detour DateTime.Now to return a fixed date:  
+               System.Fakes.ShimDateTime.NowGet = _  
+                   Function() As DateTime  
+                       Return New DateTime(fixedYear, 1, 1)  
+                   End Function  
   
-                ' Instantiate the component under test:  
-                Dim componentUnderTest = New MyComponent()  
-                ' Act:  
-                Dim year As Integer = componentUnderTest.GetTheCurrentYear  
-                ' Assert:   
-                ' This will always be true if the component is working:  
-                Assert.AreEqual(fixedYear, year)  
-            End Using  
-        End Sub  
-    End Class  
-    ```  
+               ' Instantiate the component under test:  
+               Dim componentUnderTest = New MyComponent()  
+               ' Act:  
+               Dim year As Integer = componentUnderTest.GetTheCurrentYear  
+               ' Assert:   
+               ' This will always be true if the component is working:  
+               Assert.AreEqual(fixedYear, year)  
+           End Using  
+       End Sub  
+   End Class  
+   ```  
   
-     shim 클래스 이름은 원래 형식 이름에 `Fakes.Shim` 접두사를 추가하여 구성합니다. 매개 변수 이름이 메서드 이름에 추가됩니다. (System.Fakes에는 어셈블리 참조를 추가할 필요가 없습니다.)  
+    shim 클래스 이름은 원래 형식 이름에 `Fakes.Shim` 접두사를 추가하여 구성합니다. 매개 변수 이름이 메서드 이름에 추가됩니다. (System.Fakes에는 어셈블리 참조를 추가할 필요가 없습니다.)  
   
- 이전 예제에서는 정적 메서드에 대해 shim을 사용합니다. 인스턴스 메서드에 shim을 사용하려면 형식 이름과 메서드 이름 사이에 `AllInstances`를 씁니다.  
+   이전 예제에서는 정적 메서드에 대해 shim을 사용합니다. 인스턴스 메서드에 shim을 사용하려면 형식 이름과 메서드 이름 사이에 `AllInstances`를 씁니다.  
   
 ```  
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  

@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837765"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49253551"
   
  다음 예제에서는 Visual Studio IDE 대신 MSBuild 명령줄을 사용하여 빌드를 실행할 수 있는 경우를 보여 줍니다.  
   
--   Visual Studio가 설치되지 않은 경우.  
+- Visual Studio가 설치되지 않은 경우.  
   
--   64비트 버전의 MSBuild를 사용하려는 경우. 이 버전의 MSBuild는 일반적으로 필요하지 않지만 MSBuild에서 더 많은 메모리에 액세스할 수 있도록 합니다.  
+- 64비트 버전의 MSBuild를 사용하려는 경우. 이 버전의 MSBuild는 일반적으로 필요하지 않지만 MSBuild에서 더 많은 메모리에 액세스할 수 있도록 합니다.  
   
--   여러 프로세스에서 빌드를 실행하려는 경우. 그러나 C++ 및 C#으로 작성한 프로젝트에서는 IDE를 사용하여 동일한 결과를 얻을 수 있습니다.  
+- 여러 프로세스에서 빌드를 실행하려는 경우. 그러나 C++ 및 C#으로 작성한 프로젝트에서는 IDE를 사용하여 동일한 결과를 얻을 수 있습니다.  
   
--   빌드 시스템을 수정하려는 경우. 예를 들어 다음과 같은 작업을 사용하도록 설정할 수 있습니다.  
+- 빌드 시스템을 수정하려는 경우. 예를 들어 다음과 같은 작업을 사용하도록 설정할 수 있습니다.  
   
-    -   컴파일러에 도달하기 전에 파일을 전처리합니다.  
+  -   컴파일러에 도달하기 전에 파일을 전처리합니다.  
   
-    -   빌드 출력을 다른 위치로 복사합니다.  
+  -   빌드 출력을 다른 위치로 복사합니다.  
   
-    -   빌드 출력에서 압축 파일을 만듭니다.  
+  -   빌드 출력에서 압축 파일을 만듭니다.  
   
-    -   후처리 단계를 수행합니다. 예를 들어 다른 버전으로 어셈블리에 스탬프를 지정할 수 있습니다.  
+  -   후처리 단계를 수행합니다. 예를 들어 다른 버전으로 어셈블리에 스탬프를 지정할 수 있습니다.  
   
- Visual Studio IDE에서 코드를 작성하지만 MSBuild를 사용하여 빌드를 실행할 수 있습니다. 또는 개발 컴퓨터의 IDE에서 코드를 빌드하지만 MSBuild 명령줄을 사용하여 여러 개발자로부터 통합된 코드를 빌드할 수 있습니다.  
+  Visual Studio IDE에서 코드를 작성하지만 MSBuild를 사용하여 빌드를 실행할 수 있습니다. 또는 개발 컴퓨터의 IDE에서 코드를 빌드하지만 MSBuild 명령줄을 사용하여 여러 개발자로부터 통합된 코드를 빌드할 수 있습니다.  
   
 > [!NOTE]
 >  Team Foundation Build를 사용하여 응용 프로그램을 자동으로 컴파일, 테스트 및 배포할 수 있습니다. 개발자가 코드를 체크 인할 때(예: 연속 통합 전략의 일부로) 또는 일정에 따라(예: 야간 빌드 확인 테스트 빌드) 빌드 시스템에서 빌드를 자동으로 실행할 수 있습니다. Team Foundation Build는 MSBuild를 사용하여 코드를 컴파일합니다. 자세한 내용은 [응용 프로그램 빌드](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)를 참조하세요.  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  다중 대상 지정에는 다음과 같은 이점이 있습니다.  
   
--   .NET Framework의 이전 버전(예: 2.0, 3.0 및 3.5)을 대상으로 하는 응용 프로그램을 개발할 수 있습니다.  
+- .NET Framework의 이전 버전(예: 2.0, 3.0 및 3.5)을 대상으로 하는 응용 프로그램을 개발할 수 있습니다.  
   
--   .NET Framework 외에 Silverlight 등의 다른 프레임워크를 대상으로 지정할 수 있습니다.  
+- .NET Framework 외에 Silverlight 등의 다른 프레임워크를 대상으로 지정할 수 있습니다.  
   
--   대상 프레임워크의 미리 정의된 하위 집합인 *프레임워크 프로필*을 대상으로 지정할 수 있습니다.  
+- 대상 프레임워크의 미리 정의된 하위 집합인 *프레임워크 프로필*을 대상으로 지정할 수 있습니다.  
   
--   현재 버전의 .NET Framework용 서비스 팩이 릴리스될 경우 해당 서비스 팩을 대상으로 지정할 수 있습니다.  
+- 현재 버전의 .NET Framework용 서비스 팩이 릴리스될 경우 해당 서비스 팩을 대상으로 지정할 수 있습니다.  
   
--   다중 대상 지정은 대상 프레임워크 및 플랫폼에서 사용 가능한 기능만 응용 프로그램에서 사용되도록 합니다.  
+- 다중 대상 지정은 대상 프레임워크 및 플랫폼에서 사용 가능한 기능만 응용 프로그램에서 사용되도록 합니다.  
   
- 자세한 내용은 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요.  
+  자세한 내용은 [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)을 참조하세요.  
   
 ## <a name="related-topics"></a>관련 항목  
   

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861282"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>모델, 클래스 및 관계 이해
 도메인 특정 언어 (DSL) 작성할 수 있는 모든 사용자 지정 프로그램 코드와 함께 해당 DSL 정의 파일에서 정의 됩니다. DSL 솔루션에 있는 프로그램 코드의 대부분은이 파일에서 생성 됩니다.
@@ -135,7 +135,7 @@ ms.locfileid: "47860526"
  다이어그램에서 입력 하거나 수정 하 여 역할의 복합성을 구성 합니다 `Multiplicity` 속성에는 **속성** 창입니다. 다음 표에서이 속성에 대 한 설정을 설명합니다.
 
 |복합성 형식|설명|
-|-----------------------|-----------------|
+|-|-|
 |0.. * (0 개 또는 여러)|도메인 클래스의 각 인스턴스는 관계의 여러 인스턴스 또는 관계의 인스턴스가 있을 수 있습니다.|
 |0..1 (영 대)|도메인 클래스의 각 인스턴스는 관계의 둘 이상의 인스턴스 또는 관계의 인스턴스가 있을 수 있습니다.|
 |1.. 1 인 (1 개)|도메인 클래스의 각 인스턴스는 관계의 하나의 인스턴스만이 있을 수 있습니다. 이 관계의 인스턴스가 둘 이상 역할 클래스의 모든 인스턴스를 만들 수 없습니다. 유효성 검사를 사용 하는 경우 역할 클래스의 모든 인스턴스는 관계의 인스턴스가 없는 경우 유효성 검사 오류가 표시 됩니다.|

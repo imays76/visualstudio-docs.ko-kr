@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4080a0d868f154136b11058abdf29948a353b0ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ed3ddbbbffb6e1a92e4c5038fad8f901ecf303e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834034"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
-스택 프레임에 설명합니다.  
+스택 프레임을 설명합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -65,16 +65,16 @@ public struct FRAMEINFO {
   
 ## <a name="members"></a>멤버  
  m_dwValidFields  
- 플래그의 조합 된 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 어떤 필드 입력을 지정 하는 열거형입니다.  
+ 플래그의 조합을 합니다 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 어떤 필드가 채워지는 지정 하는 열거형입니다.  
   
  m_bstrFuncName  
- 스택 프레임와 관련 된 함수 이름입니다.  
+ 스택 프레임과 연결 된 함수 이름입니다.  
   
  m_bstrReturnType  
- 스택 프레임와 관련 된 반환 형식입니다.  
+ 스택 프레임을 연관 된 형식을 반환 합니다.  
   
  m_bstrArgs  
- 인수는 스택 프레임을 연관 된 함수입니다.  
+ 스택 프레임과 연결 된 함수에 인수입니다.  
   
  m_bstrLanguage  
  함수를 구현 하는 언어입니다.  
@@ -89,22 +89,22 @@ public struct FRAMEINFO {
  최대 물리적 스택 주소입니다.  
   
  m_pFrame  
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 이 스택 프레임을 나타내는 개체입니다.  
+ 합니다 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 이 스택 프레임을 나타내는 개체입니다.  
   
  m_pFrame  
- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) 이 스택 프레임을 포함 하는 모듈을 나타내는 개체입니다.  
+ 합니다 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) 이 스택 프레임을 포함 하는 모듈을 나타내는 개체입니다.  
   
  m_fHasDebugInfo  
- 0이 아닌 (`TRUE`) 특정된 프레임에 디버그 정보가 있는 경우.  
+ 0이 아닌 (`TRUE`) 디버그 정보를 지정 된 프레임에 있는 경우.  
   
  m_fHasDebugInfo  
- 0이 아닌 (`TRUE`) 스택 프레임은 더 이상 코드와 연결 하는 경우.  
+ 0이 아닌 (`TRUE`) 스택 프레임은 더 이상 유효 하지는 코드와 연결 하는 경우.  
   
  m_fHasDebugInfo  
- 0이 아닌 (`TRUE`) 스택 프레임 세션 디버그 관리자 (SDM) 주석을 처리 하는 경우.  
+ 0이 아닌 (`TRUE`) 스택 프레임 (SDM) 세션 디버그 관리자에서 주석을 처리 하는 경우.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) 메서드를 입력 합니다. 이 구조에 포함 된 목록에도 포함 됩니다는 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 차례로 호출에서 반환 되는 인터페이스는 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 메서드.  
+ 이 구조에 전달 되는 [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) 메서드를 채울 수 있습니다. 이 구조에 포함 된 목록에도 포함 되는 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 차례로 호출에서 반환 되는 인터페이스를 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

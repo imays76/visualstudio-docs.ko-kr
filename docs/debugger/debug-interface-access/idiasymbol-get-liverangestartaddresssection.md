@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e598a6c6414194da487fe90d39a7f7bb2f0e7a7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f41415954439d299c0c69585141ffc678d332dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864246"
 ---
 # <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 로컬 기호의 유효 범위 시작 주소 섹션 부분을 반환 합니다.  
@@ -34,16 +34,16 @@ HRESULT get_liveRangeStartAddressSection (
   
 #### <a name="parameters"></a>매개 변수  
  `section`  
- [out] 시작 주소 범위의 섹션 부분을 반환 합니다.  
+ [out] 시작 주소 범위의 섹션 부분을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 > [!NOTE]
->  반환 된 오류 코드는 기호 라이브 범위 정보가 없는 것을 의미 합니다.  
+>  반환 된 오류 코드 기호 라이브 범위 정보가 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 오프셋 및는 섹션으로 구성 된 주소는 기호의 유효 범위 시작.  
+ 섹션과 오프셋 하 여 만든 주소가 기호가 유효한 범위의 시작입니다.  
   
  주소의 오프셋된 부분을 사용 [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md)합니다.  
   

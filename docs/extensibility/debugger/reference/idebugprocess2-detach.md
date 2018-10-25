@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fce67b16d8de1e70e308fd107af3c26012e752c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de18df907c8a30235fcfc3391fe6879afdcaa1f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854301"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-모든 프로그램 프로세스에서 분리 하 여이 프로세스에서 디버거를 분리 합니다.  
+모든 프로세스에서 프로그램을 분리 하 여이 프로세스에서 디버거를 분리 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,10 +38,10 @@ int Detach();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 모든 프로그램 및 프로세스에는 계속 실행 되지만 더 이상 디버그 세션의 일부가 됩니다. 후 분리 작업을 완전 하 고 더 이상 디버그가이 프로세스 (및 그 프로그램)에 대 한 이벤트를 전송 됩니다.  
+ 모든 프로그램 및 프로세스를 계속 실행 되지만 더 이상 디버그 세션의 일부입니다. 분리 한 후 작업이이 프로세스 (및 해당 프로그램)에 대 한 이벤트를 전송 하는 완전 하 고 더 이상 디버그 중입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825623"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>방법: ASP.NET 프로세스의 이름 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 실행 중인 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 응용 프로그램에 연결하려면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스의 이름을 알고 있어야 합니다.  
   
--   IIS 6.0 또는 IIS 7.0을 실행하는 경우 이 이름은 w3wp.exe입니다.  
+- IIS 6.0 또는 IIS 7.0을 실행하는 경우 이 이름은 w3wp.exe입니다.  
   
--   이전 버전의 IIS를 실행하는 경우 이 이름은 aspnet_wp.exe입니다.  
+- 이전 버전의 IIS를 실행하는 경우 이 이름은 aspnet_wp.exe입니다.  
   
- 사용 하 여 빌드된 응용 프로그램에 대 한 [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 이상 버전는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 코드 파일 시스템에 상주 하 고 WebDev.WebServer.exe 테스트 서버에서 실행할 수 있습니다. 이 경우 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스가 아닌 WebDev.WebServer.exe에 연결해야 합니다. 이 시나리오는 로컬 디버깅에만 적용됩니다.  
+  사용 하 여 빌드된 응용 프로그램에 대 한 [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 이상 버전는 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 코드 파일 시스템에 상주 하 고 WebDev.WebServer.exe 테스트 서버에서 실행할 수 있습니다. 이 경우 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 프로세스가 아닌 WebDev.WebServer.exe에 연결해야 합니다. 이 시나리오는 로컬 디버깅에만 적용됩니다.  
   
- 이전 버전의 ASP 응용 프로그램은 in-process로 실행되는 경우 IIS 프로세스 inetinfo.exe 내에서 실행됩니다.  
+  이전 버전의 ASP 응용 프로그램은 in-process로 실행되는 경우 IIS 프로세스 inetinfo.exe 내에서 실행됩니다.  
   
 > [!NOTE]
 >  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  

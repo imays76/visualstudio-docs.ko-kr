@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd734d287a4740a25840d93b4724b45396c7dd87
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 476e4d01ed6e092936fc2d9bc7b8e264215e21dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950058"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 테이블의 지정된 된 항목에 대 한 참조를 검색합니다.  
@@ -35,18 +35,18 @@ HRESULT Item (
   
 #### <a name="parameters"></a>매개 변수  
  `index`  
- [in] 범위는 0에서의 테이블 항목의 인덱스 `count`-1로, 여기서 `count` 에서 반환 되는 [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)메서드.  
+ [in] 범위의 0 테이블 항목의 인덱스 `count`-1로, 여기서 `count` 반환한를 [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)메서드.  
   
  `element`  
- [out] 반환 된 `IUnknown` 지정한 테이블 항목을 나타내는 개체입니다.  
+ [out] 반환 된 `IUnknown` 지정 된 테이블 항목을 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 테이블 개체의 컬렉션을 나타냅니다. 이러한 개체에 따라 요소 매개 변수를 적절 한 인터페이스를 캐스팅할 수 있습니다. 예를 들어 테이블에 대 한 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) 개체에 요소 매개 변수를 캐스팅할 수는 `IDiaSegment` 인터페이스입니다.  
+ 테이블 개체의 컬렉션을 나타냅니다. 이러한 개체에 따라 요소 매개 변수를 적절 한 인터페이스에 캐스팅할 수 있습니다. 예를 들어 테이블에 대 한 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) element 매개 변수를 캐스팅할 수 다음 개체는 `IDiaSegment` 인터페이스입니다.  
   
- 호출 하는 보다 일반적인 방법은 이기는 `QueryInterface` 에서 메서드는 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 적절 한 열거자 인터페이스에 대 한 인터페이스를 테이블 내용에 액세스 하는 열거자의 특정 메서드를 사용 합니다. 참조는 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 예에 대 한 인터페이스입니다.  
+ 호출 하는 보다 일반적인이 방식은 합니다 `QueryInterface` 에서 메서드를 [IDiaTable](../../debugger/debug-interface-access/idiatable.md) 적절 한 열거자 인터페이스에 대 한 인터페이스 및 열거자의 특정 메서드를 사용 하 여 테이블 내용을 액세스. 참조 된 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 예제에 대 한 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   

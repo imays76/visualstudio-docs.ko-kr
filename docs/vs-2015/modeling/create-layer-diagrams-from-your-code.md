@@ -17,12 +17,12 @@ caps.latest.revision: 64
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 21b014e4b13544a7fe2a672674bccc34320d0083
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27fb58e0219dd05c623a553c65e577834ee4a05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833488"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>코드에서 레이어 다이어그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ ms.locfileid: "49196133"
 > [!NOTE]
 >  일부 아티팩트 종류의 경우 종속성을 리버스 엔지니어링할 수 없습니다. 예를 들어 텍스트 파일에 연결된 레이어를 소스 또는 대상으로 하는 종속성은 리버스 엔지니어링되지 않습니다. 리버스 엔지니어링할 수 있는 종속성이 있는 아티팩트를 확인 하려면 하나 이상의 계층에 대 한 바로 가기 메뉴를 열고 선택한 후 **보기 링크**합니다. **레이어 탐색기**를 검사 합니다 **유효성 검사 지원** 열입니다. 종속성이이 열에서 표시 하는 아티팩트에 대 한 리버스 엔지니어링 되지 것입니다 **False**합니다.  
   
--   하나 또는 여러 개의 레이어를 선택 하 고, 선택한 계층에 대 한 바로 가기 메뉴를 열고, 선택한 **종속성 생성**합니다.  
+- 하나 또는 여러 개의 레이어를 선택 하 고, 선택한 계층에 대 한 바로 가기 메뉴를 열고, 선택한 **종속성 생성**합니다.  
   
- 일반적으로 존재할 수 없는 일부 종속성이 나타나는데, 이러한 종속성을 편집하여 계획된 디자인에 맞출 수 있습니다.  
+  일반적으로 존재할 수 없는 일부 종속성이 나타나는데, 이러한 종속성을 편집하여 계획된 디자인에 맞출 수 있습니다.  
   
 ##  <a name="EditDependencies"></a> 편집 레이어 및 종속성을 의도 한 디자인 표시  
  시스템에 대해 변경할 내용 또는 계획된 아키텍처를 나타내려는 경우 레이어 다이어그램을 편집합니다.  

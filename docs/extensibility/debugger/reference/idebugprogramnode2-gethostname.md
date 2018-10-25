@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80b26d0113e9d627a567a1381ec04eec54b062b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e47b8a18c631fe99b67020a4805d019b29fc234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816797"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
-프로그램을 호스트 하는 프로세스의 이름을 가져옵니다.  
+프로그램을 호스팅하는 프로세스의 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -43,16 +43,16 @@ int GetHostName (
   
 #### <a name="parameters"></a>매개 변수  
  `dwHostNameType`  
- [in] 값은 [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) 반환할 이름의 형식을 지정 하는 열거형입니다.  
+ [in] 값을 [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) 반환할 이름의 형식을 지정 하는 열거형입니다.  
   
  `pbstrHostName`  
  [out] 호스팅 프로세스의 이름을 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` 공개 하는 개체는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스입니다. 이 예제에서는 무시는 `dwHostNameType` 매개 변수는 모듈의 파일 경로의 기본 이름에서 가져온 대로 프로그램의 이름만 반환 합니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` 노출 하는 개체를 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스입니다. 이 예제에서는 무시는 `dwHostNameType` 매개 변수에서 모듈의 파일 경로의 기본 이름에서 가져온 대로 프로그램의 이름만 반환 합니다.  
   
 ```cpp  
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {    

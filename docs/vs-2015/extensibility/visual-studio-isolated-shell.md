@@ -19,12 +19,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15d8d4cfb1f3a9067d3fc18933a508ecf60794e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849049"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 격리 셸
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Visual Studio isolated shell을 사용 하면-나란히 실행할 수 있는 독
 ## <a name="working-with-the-isolated-shell"></a>격리 셸 사용  
  Visual Studio 격리 셸 응용 프로그램을 Visual Studio services에 대 한 전체 액세스 권한이 및 특별 한 사용자 지정 및 브랜딩 지원 합니다. 여러 가지 방법으로 격리 셸 응용 프로그램을 사용자 지정할 수 있습니다.  
   
--   다른 Visual Studio 확장에서 사용 하는 것 처럼 격리 셸 응용 프로그램을 확장 하려면 Vspackage 및 Managed Extensibility Framework (MEF) 구성 요소를 사용할 수 있습니다. 자세한 내용은 [격리 셸 확장](../extensibility/extending-the-isolated-shell.md)합니다.  
+- 다른 Visual Studio 확장에서 사용 하는 것 처럼 격리 셸 응용 프로그램을 확장 하려면 Vspackage 및 Managed Extensibility Framework (MEF) 구성 요소를 사용할 수 있습니다. 자세한 내용은 [격리 셸 확장](../extensibility/extending-the-isolated-shell.md)합니다.  
   
--   Visual Studio 기능 및 메뉴 명령 그룹 사용 가능 여부를 확인, 응용 프로그램의 사용자 인터페이스 (UI) 프로젝트에.vsct 파일을 업데이트 합니다.  
+- Visual Studio 기능 및 메뉴 명령 그룹 사용 가능 여부를 확인, 응용 프로그램의 사용자 인터페이스 (UI) 프로젝트에.vsct 파일을 업데이트 합니다.  
   
--   제거할 **옵션** 페이지나 응용 프로그램에서 다른 Visual Studio 셸 구성 요소 응용 프로그램의.pkgundef 파일을 업데이트 합니다.  
+- 제거할 **옵션** 페이지나 응용 프로그램에서 다른 Visual Studio 셸 구성 요소 응용 프로그램의.pkgundef 파일을 업데이트 합니다.  
   
--   모양의 다른 측면 또는 shell의 문제를 수정 하려면 응용 프로그램의.pkgdef 파일을 업데이트 합니다.  
+- 모양의 다른 측면 또는 shell의 문제를 수정 하려면 응용 프로그램의.pkgdef 파일을 업데이트 합니다.  
   
--   셸에 몇 가지 응용 프로그램이 시작 될 때 지정할 수 있습니다. 이 작업을 수행 하는 appenvstub.dll의 시작 진입점에 대 한 호출의 매개 변수를 업데이트 합니다.  
+- 셸에 몇 가지 응용 프로그램이 시작 될 때 지정할 수 있습니다. 이 작업을 수행 하는 appenvstub.dll의 시작 진입점에 대 한 호출의 매개 변수를 업데이트 합니다.  
   
- 사용자 지정할 수 있는 다양 한 요소에 대 한 자세한 내용은 참조 하세요. [격리 셸의 요소](../extensibility/elements-of-the-isolated-shell.md)합니다.  
+  사용자 지정할 수 있는 다양 한 요소에 대 한 자세한 내용은 참조 하세요. [격리 셸의 요소](../extensibility/elements-of-the-isolated-shell.md)합니다.  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>격리 셸의 표준 기능  
  다음 기능은 Visual Studio의 모든 버전에 표준입니다.  

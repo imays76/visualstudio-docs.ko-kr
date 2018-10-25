@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251461"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812324"
 ---
 # <a name="incremental-builds"></a>증분 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ ms.locfileid: "49251461"
   
  여기에는 세 가지 경우가 있습니다.  
   
--   대상에 `false`로 평가되는 `Condition` 특성이 있습니다. 이 경우 대상이 실행되지 않으며 빌드에는 아무 영향이 없습니다.  
+- 대상에 `false`로 평가되는 `Condition` 특성이 있습니다. 이 경우 대상이 실행되지 않으며 빌드에는 아무 영향이 없습니다.  
   
--   대상에 오래된 출력이 있으며 최신 상태가 되도록 실행됩니다.  
+- 대상에 오래된 출력이 있으며 최신 상태가 되도록 실행됩니다.  
   
--   대상에 오래된 출력이 없으며 건너뜁니다. MSBuild는 대상을 평가하고 대상이 실행된 것처럼 항목 및 속성에 변경 내용을 만듭니다.  
+- 대상에 오래된 출력이 없으며 건너뜁니다. MSBuild는 대상을 평가하고 대상이 실행된 것처럼 항목 및 속성에 변경 내용을 만듭니다.  
   
- 증분 컴파일을 지원하기 위해 작업은 모든 `Output` 요소의 `TaskParameter` 특성 값이 작업 입력 매개 변수와 동일한지 확인해야 합니다. 다음은 몇 가지 예입니다.  
+  증분 컴파일을 지원하기 위해 작업은 모든 `Output` 요소의 `TaskParameter` 특성 값이 작업 입력 매개 변수와 동일한지 확인해야 합니다. 다음은 몇 가지 예입니다.  
   
 ```  
 <CreateProperty Value="123">  

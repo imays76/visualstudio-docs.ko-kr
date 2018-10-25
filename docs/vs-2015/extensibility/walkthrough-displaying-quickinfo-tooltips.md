@@ -15,12 +15,12 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c217426d4186477f22a21c9348ff30e181faa840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863284"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>연습: QuickInfo 도구 설명 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "49237655"
   
  이 연습의 QuickInfo 예제 메서드 이름을 위로 포인터를 이동할 때 도구 설명을 표시 합니다. 이 디자인에서는 이러한 네 가지 인터페이스를 구현 해야 합니다.  
   
--   소스 인터페이스  
+- 소스 인터페이스  
   
--   원본 공급자 인터페이스  
+- 원본 공급자 인터페이스  
   
--   컨트롤러 인터페이스  
+- 컨트롤러 인터페이스  
   
--   컨트롤러 공급자 인터페이스  
+- 컨트롤러 공급자 인터페이스  
   
- 원본 및 컨트롤러 공급자 Framework MEF (Managed Extensibility) 구성 요소 부분으로 된 원본 및 컨트롤러 클래스 내보내기에 대 한 책임이 고 가져오기 서비스 broker와 같은 <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, 도구 설명 텍스트를 만듭니다 버퍼 및 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, 작업을 트리거하는 QuickInfo 세션입니다.  
+  원본 및 컨트롤러 공급자 Framework MEF (Managed Extensibility) 구성 요소 부분으로 된 원본 및 컨트롤러 클래스 내보내기에 대 한 책임이 고 가져오기 서비스 broker와 같은 <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, 도구 설명 텍스트를 만듭니다 버퍼 및 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, 작업을 트리거하는 QuickInfo 세션입니다.  
   
- 이 예제에서는 QuickInfo 원본 목록을 사용 하 여 하드 코드 된 메서드 이름 및 설명 하지만 전체 구현 언어 서비스 및 언어 설명서에는 해당 콘텐츠를 제공 하는 일을 담당 합니다.  
+  이 예제에서는 QuickInfo 원본 목록을 사용 하 여 하드 코드 된 메서드 이름 및 설명 하지만 전체 구현 언어 서비스 및 언어 설명서에는 해당 콘텐츠를 제공 하는 일을 담당 합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  

@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851831"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 도구 집합(ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ MSBuild는 응용 프로그램을 빌드하기 위한 작업, 대상 및 도구�
 ## <a name="toolset-implementation"></a>도구 집합 구현  
  도구 집합을 구성하는 다양한 도구, 대상 및 작업의 경로를 선택하여 도구 집합을 구현합니다. MSBuild가 정의하는 도구 집합의 도구는 다음 소스에서 가져옵니다.  
   
--   .NET Framework 폴더  
+- .NET Framework 폴더  
   
--   추가 관리되는 도구  
+- 추가 관리되는 도구  
   
- 관리되는 도구에는 ResGen.exe 및 TlbImp.exe가 포함됩니다.  
+  관리되는 도구에는 ResGen.exe 및 TlbImp.exe가 포함됩니다.  
   
- MSBuild는 다음과 같이 도구 집합에 액세스하는 두 가지 방법을 제공합니다.  
+  MSBuild는 다음과 같이 도구 집합에 액세스하는 두 가지 방법을 제공합니다.  
   
--   도구 집합 속성 사용  
+- 도구 집합 속성 사용  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper> 메서드 사용  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper> 메서드 사용  
   
- 도구 집합 속성은 도구의 경로를 지정합니다. MSBuild는 프로젝트 파일의 `ToolsVersion` 특성 값을 사용하여 해당 레지스트리 키를 찾은 다음 레지스트리 키의 정보를 사용하여 도구 집합 속성을 설정합니다. 예를 들어, `ToolsVersion`의 값이 `12.0`인 경우 MSBuild는 HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0 레지스트리 키에 따라 도구 집합 속성을 설정합니다.  
+  도구 집합 속성은 도구의 경로를 지정합니다. MSBuild는 프로젝트 파일의 `ToolsVersion` 특성 값을 사용하여 해당 레지스트리 키를 찾은 다음 레지스트리 키의 정보를 사용하여 도구 집합 속성을 설정합니다. 예를 들어, `ToolsVersion`의 값이 `12.0`인 경우 MSBuild는 HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0 레지스트리 키에 따라 도구 집합 속성을 설정합니다.  
   
- 다음은 도구 집합 속성입니다.  
+  다음은 도구 집합 속성입니다.  
   
--   `MSBuildToolsPath`는 MSBuild 이진의 경로를 지정합니다.  
+- `MSBuildToolsPath`는 MSBuild 이진의 경로를 지정합니다.  
   
--   `SDK40ToolsPath`는 MSBuild 4.x(4.0 또는 4.5일 수 있음)용 추가 관리되는 도구의 경로를 지정합니다.  
+- `SDK40ToolsPath`는 MSBuild 4.x(4.0 또는 4.5일 수 있음)용 추가 관리되는 도구의 경로를 지정합니다.  
   
--   `SDK35ToolsPath`는 MSBuild 3.5용 추가 관리되는 도구의 경로를 지정합니다.  
+- `SDK35ToolsPath`는 MSBuild 3.5용 추가 관리되는 도구의 경로를 지정합니다.  
   
- 또는 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 클래스의 메서드를 호출하여 프로그래밍 방식으로 도구 집합을 확인할 수 있습니다. 이 클래스에는 다음과 같은 메서드가 포함되어 있습니다.  
+  또는 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 클래스의 메서드를 호출하여 프로그래밍 방식으로 도구 집합을 확인할 수 있습니다. 이 클래스에는 다음과 같은 메서드가 포함되어 있습니다.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A>는 .NET Framework 폴더의 경로를 반환합니다.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A>는 .NET Framework 폴더의 경로를 반환합니다.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A>은 .NET Framework 폴더에 있는 파일의 경로를 반환합니다.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A>은 .NET Framework 폴더에 있는 파일의 경로를 반환합니다.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A>는 관리되는 도구 폴더의 경로를 반환합니다.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A>는 관리되는 도구 폴더의 경로를 반환합니다.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A>은 일반적으로 관리되는 도구 폴더에 있는 파일의 경로를 반환합니다.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A>은 일반적으로 관리되는 도구 폴더에 있는 파일의 경로를 반환합니다.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A>는 빌드 도구의 경로를 반환합니다.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A>는 빌드 도구의 경로를 반환합니다.  
   
 ### <a name="sub-toolsets"></a>하위 도구 집합  
  이 항목의 앞부분에서 설명한 것처럼, MSBuild는 레지스트리 키를 사용하여 기본 도구의 경로를 지정합니다. 키에 하위 키가 포함된 경우 MSBuild는 하위 키를 사용하여 추가 도구가 포함되어 있는 하위 도구 집합의 경로를 지정합니다. 이 경우 도구 집합은 두 키 모두에 정의되어 있는 속성 정의를 결합하여 정의됩니다.  
@@ -107,19 +107,19 @@ MSBuild는 응용 프로그램을 빌드하기 위한 작업, 대상 및 도구�
   
  하위 도구 집합은 `VisualStudioVersion` 빌드 속성이 있을 때 활성화됩니다. 이 속성은 다음 값 중 하나를 사용할 수 있습니다.  
   
--   “10.0”은 .NET Framework 4 하위 도구 집합을 지정합니다.  
+- “10.0”은 .NET Framework 4 하위 도구 집합을 지정합니다.  
   
--   “11.0”은 .NET Framework 4.5 하위 도구 집합을 지정합니다.  
+- “11.0”은 .NET Framework 4.5 하위 도구 집합을 지정합니다.  
   
--   “12.0”은 .NET Framework 4.5.1 하위 도구 집합을 지정합니다.  
+- “12.0”은 .NET Framework 4.5.1 하위 도구 집합을 지정합니다.  
   
- 하위 도구 집합 10.0 및 11.0은 ToolsVersion 4.0과 함께 사용되어야 합니다. 나중 버전에서는 하위 도구 집합 버전과 ToolsVersion이 일치해야 합니다.  
+  하위 도구 집합 10.0 및 11.0은 ToolsVersion 4.0과 함께 사용되어야 합니다. 나중 버전에서는 하위 도구 집합 버전과 ToolsVersion이 일치해야 합니다.  
   
- 빌드 중에 MSBuild는 자동으로 `VisualStudioVersion` 속성의 기본값을 확인하여 설정합니다(아직 정의되지 않은 경우).  
+  빌드 중에 MSBuild는 자동으로 `VisualStudioVersion` 속성의 기본값을 확인하여 설정합니다(아직 정의되지 않은 경우).  
   
- MSBuild는 `ToolLocationHelper` 열거형 값을 매개 변수로 추가하는 `VisualStudioVersion` 메서드에 대한 오버로드를 제공합니다.  
+  MSBuild는 `ToolLocationHelper` 열거형 값을 매개 변수로 추가하는 `VisualStudioVersion` 메서드에 대한 오버로드를 제공합니다.  
   
- 하위 도구 집합은 .NET Framework 4.5에서 도입되었습니다.  
+  하위 도구 집합은 .NET Framework 4.5에서 도입되었습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)   

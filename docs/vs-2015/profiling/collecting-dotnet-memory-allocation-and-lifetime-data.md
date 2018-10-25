@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e0bda22a63b5286db9336bc0924ce11bc05e2bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844577"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>.NET 메모리 할당 및 수명 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구는 .NET 메모리 할당 및 개체 수명 데이터의 수집을 지원하므로, 응용 프로그램에서 메모리 관련 성능 문제를 감지하는 데 도움이 됩니다.  
   
--   .NET 메모리 할당에 대한 데이터에는 할당된 .NET Framework 메모리 개체의 크기와 수가 포함됩니다.  
+- .NET 메모리 할당에 대한 데이터에는 할당된 .NET Framework 메모리 개체의 크기와 수가 포함됩니다.  
   
--   개체 수명 데이터에는 3개의 가비지 수집 세대에서 회수된 .NET Framework 메모리 개체의 크기와 수가 포함됩니다.  
+- 개체 수명 데이터에는 3개의 가비지 수집 세대에서 회수된 .NET Framework 메모리 개체의 크기와 수가 포함됩니다.  
   
- **요구 사항**  
+  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. Windows 스토어 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
@@ -64,9 +64,9 @@ ms.locfileid: "49245561"
 ## <a name="common-tasks"></a>일반 작업  
  성능 세션의 _성능 세션_**속성 페이지** 대화 상자에서 추가 옵션을 지정할 수 있습니다. 이 대화 상자를 열려면  
   
--   **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
+- **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.  
   
- 다음 표의 작업에서는 .NET 메모리 데이터를 수집할 때 _성능 세션_**속성 페이지** 대화 상자에 지정할 수 있는 옵션을 설명합니다.  
+  다음 표의 작업에서는 .NET 메모리 데이터를 수집할 때 _성능 세션_**속성 페이지** 대화 상자에 지정할 수 있는 옵션을 설명합니다.  
   
 |작업|관련 내용|  
 |----------|---------------------|  

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0701706deee68cf2dde522d48f9aa62b9a00142
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a92e0fa81bdfc7c33e790c5022c2fbe341d632be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847712"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 썽크 형식을 지정합니다.  
@@ -45,7 +45,7 @@ typedef enum THUNK_ORDINAL {
  표준 썽크 합니다.  
   
  THUNK_ORDINAL_ADJUSTOR  
- A `this` 조정기 썽크 합니다.  
+ `this` 조정기 썽크 합니다.  
   
  THUNK_ORDINAL_VCALL  
  가상 호출 썽크 합니다.  
@@ -57,13 +57,13 @@ typedef enum THUNK_ORDINAL {
  지연 로드 썽크 합니다.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- 증분 trampoline 썽크 (trampoline 썽크는 다른 메모리 공간에서 호출 bounce에 사용 됨).  
+ 증분 trampoline 썽크 (trampoline 썽크를 다른 메모리 공간에서 호출 반송에 사용 됨).  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
  분기 지점 trampoline 썽크 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값에 대 한 호출에서 반환될지는 [idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) 메서드.  
+ 이 열거형의 값에 대 한 호출에서 반환 되는 [idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: cvconst.h  

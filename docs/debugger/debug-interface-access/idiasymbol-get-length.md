@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d58442f0b6e95732dab5a2bc5702e6c500d70a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9f99a2012d0c3f009540c988df6e41b0a7d0cf4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844525"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
-이 기호를 나타내는 개체에 의해 사용 되는 메모리의 바이트 또는 비트 수를 검색 합니다.  
+이 기호를 나타내는 개체에 사용 중인 메모리의 바이트 또는 비트 수를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,16 +34,16 @@ HRESULT get_length (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 바이트 수 또는이 기호를 나타내는 개체에 의해 사용 되는 메모리의 비트를 반환 합니다.  
+ [out] 바이트 수 또는이 기호를 나타내는 개체에 의해 사용 된 메모리의 비트를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 의미는 속성은 해당 기호를 사용할 수 없습니다.  
+>  반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
- 경우는 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 기호는 `LocIsBitField`,이 메서드에 의해 반환 된 길이 비트에서 이며 그렇지 않은 경우 길이 다른 모든 위치 형식에 대 한 바이트 단위입니다.  
+ 경우는 [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md) 기호의 `LocIsBitField`,이 메서드에서 반환 된 길이 비트에서는 다른 모든 위치 형식에 대 한 바이트에서 길이가 고, 그렇지 합니다.  
   
 ## <a name="example"></a>예제  
   

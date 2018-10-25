@@ -16,12 +16,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f98fe27812235d742d5a116f930ab8e70b2cd0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a38410c1b64a455f12d91cd8460f5f04d369275
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847307"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio 확장 개발 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ ms.locfileid: "49224161"
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>어떤 종류의 Visual Studio 확장을 사용 하 여 합니까?  
  무궁무진 하더라도 다른 Visual Studio 확장을 상상 일 뿐입니다. 물론, 대부분의 확장 코드를 작성 하는와 관련이 없지만 경우 없는 합니다. 종류의 확장을 만들 수 있는 몇 가지 예는 다음과 같습니다.  
   
--   구문 색 지정, IntelliSense 및 컴파일러 및 디버그 지원을 사용 하 여 Visual Studio에 포함 되지 않은 언어에 대 한 지원  
+- 구문 색 지정, IntelliSense 및 컴파일러 및 디버그 지원을 사용 하 여 Visual Studio에 포함 되지 않은 언어에 대 한 지원  
   
--   추가 템플릿, 코드 리팩터링, 새 대화 상자 또는 도구 창을 사용 하 여 핵심을 확장 하는 생산성 도구 IDE 환경  
+- 추가 템플릿, 코드 리팩터링, 새 대화 상자 또는 도구 창을 사용 하 여 핵심을 확장 하는 생산성 도구 IDE 환경  
   
--   데이터 디자인 또는 클라우드 지원 등의 시나리오에 대 한 도메인 관련 디자이너  
+- 데이터 디자인 또는 클라우드 지원 등의 시나리오에 대 한 도메인 관련 디자이너  
   
- 확장의 예제를 확인 합니다 [Visual Studio 갤러리](https://visualstudiogallery.msdn.microsoft.com/)합니다. 또한 살펴보겠습니다 수 [Visual Studio 오픈 소스 확장](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md)합니다.  
+  확장의 예제를 확인 합니다 [Visual Studio 갤러리](https://visualstudiogallery.msdn.microsoft.com/)합니다. 또한 살펴보겠습니다 수 [Visual Studio 오픈 소스 확장](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md)합니다.  
   
 ## <a name="which-visual-studio-features-can-i-extend"></a>Visual Studio 기능을 확장할 수 있나요?  
  이론적으로 Visual Studio의 거의 모든 부분을 확장할 수 있습니다: 메뉴, 도구 모음, 명령, windows, 솔루션, 프로젝트, 편집기 및 등입니다.  

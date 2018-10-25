@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848491"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ ms.locfileid: "49281400"
   
 ### <a name="to-disable-the-hosting-process"></a>호스팅 프로세스를 사용하지 않도록 설정하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 실행 가능 프로젝트를 엽니다. 실행 파일을 생성하지 않는 프로젝트(예: 클래스 라이브러리 또는 서비스 프로젝트)에는 이 옵션이 없습니다.  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 실행 가능 프로젝트를 엽니다. 실행 파일을 생성하지 않는 프로젝트(예: 클래스 라이브러리 또는 서비스 프로젝트)에는 이 옵션이 없습니다.  
   
-2.  **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
+2. **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
   
-3.  **디버그** 탭을 클릭합니다.  
+3. **디버그** 탭을 클릭합니다.  
   
-4.  **Visual Studio 호스팅 프로세스 사용** 확인란을 선택 취소합니다.  
+4. **Visual Studio 호스팅 프로세스 사용** 확인란을 선택 취소합니다.  
   
- 호스팅 프로세스가 사용하지 않도록 설정되면 여러 디버깅 기능을 사용할 수 없으며 성능 저하가 발생합니다. 자세한 내용은 [디버깅 및 호스팅 프로세스](../debugger/debugging-and-the-hosting-process.md)를 참조하세요.  
+   호스팅 프로세스가 사용하지 않도록 설정되면 여러 디버깅 기능을 사용할 수 없으며 성능 저하가 발생합니다. 자세한 내용은 [디버깅 및 호스팅 프로세스](../debugger/debugging-and-the-hosting-process.md)를 참조하세요.  
   
- 일반적으로 호스팅 프로세스는 사용하지 않습니다.  
+   일반적으로 호스팅 프로세스는 사용하지 않습니다.  
   
 -   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 응용 프로그램 디버깅을 시작하는 데 필요한 시간이 증가합니다.  
   

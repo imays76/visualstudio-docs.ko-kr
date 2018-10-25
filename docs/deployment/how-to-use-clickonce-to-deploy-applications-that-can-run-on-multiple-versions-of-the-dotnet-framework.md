@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eb4d8696755a70005923833625c72a95e5f1e80a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7a5262814f6ccfb28ba796140e52175e2fe940a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842770"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>방법: 여러 버전의.NET framework에서 실행할 수 있는 응용 프로그램 배포를 사용 하 여 ClickOnce
 ClickOnce 배포 기술을 사용 하 여 여러 버전의.NET Framework를 대상으로 하는 응용 프로그램을 배포할 수 있습니다. 그러려면 생성 하 고 응용 프로그램 및 배포 매니페스트를 업데이트 합니다.  
@@ -82,23 +82,23 @@ ClickOnce 배포 기술을 사용 하 여 여러 버전의.NET Framework를 대�
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>.NET Framework 어셈블리와 종속 어셈블리를 표시 하기 위해 응용 프로그램 매니페스트를 변경 하려면  
   
-1.  게시 디렉터리에서 Visual Studio에서 XML 편집기를 사용 하 여 응용 프로그램 매니페스트를 엽니다. 배포 매니페스트에 합니다 *.manifest* 파일 이름 확장명입니다.  
+1. 게시 디렉터리에서 Visual Studio에서 XML 편집기를 사용 하 여 응용 프로그램 매니페스트를 엽니다. 배포 매니페스트에 합니다 *.manifest* 파일 이름 확장명입니다.  
   
-2.  추가 `group="framework"` sentinel 어셈블리에 대 한 종속성 XML (`System.Core`, `WindowsBase`합니다 `Sentinel.v3.5Client`, 및 `System.Data.Entity`). 예를 들어, XML은 다음과 같아야 합니다.  
+2. 추가 `group="framework"` sentinel 어셈블리에 대 한 종속성 XML (`System.Core`, `WindowsBase`합니다 `Sentinel.v3.5Client`, 및 `System.Data.Entity`). 예를 들어, XML은 다음과 같아야 합니다.  
   
-    ```xml  
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
-    ```  
+   ```xml  
+   <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
+   ```  
   
-3.  버전 번호를 업데이트 합니다 `<assemblyIdentity>` 최소 공통 분모는.NET Framework의 버전 번호를 Microsoft.Windows.CommonLanguageRuntime에 대 한 요소입니다. 예를 들어, 응용 프로그램이.NET Framework 3.5를 대상으로 하는 경우 및 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], 2.0.50727.0 사용 하 여 버전 번호 및 XML은 다음과 같습니다.  
+3. 버전 번호를 업데이트 합니다 `<assemblyIdentity>` 최소 공통 분모는.NET Framework의 버전 번호를 Microsoft.Windows.CommonLanguageRuntime에 대 한 요소입니다. 예를 들어, 응용 프로그램이.NET Framework 3.5를 대상으로 하는 경우 및 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], 2.0.50727.0 사용 하 여 버전 번호 및 XML은 다음과 같습니다.  
   
-    ```xml  
-    <dependency>  
-      <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
-        <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  
-      </dependentAssembly>  
-    </dependency>  
-    ```  
+   ```xml  
+   <dependency>  
+     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
+       <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  
+     </dependentAssembly>  
+   </dependency>  
+   ```  
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>매니페스트를 업데이트 하 고 응용 프로그램 및 배포에 다시 서명  
   

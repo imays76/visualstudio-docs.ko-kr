@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f0fa4a3848fedae642c6471dd001933ca1b7d011
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90668c751005e697c4b78d0f3caf58f8a85db925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812026"
 ---
 # <a name="text-template-control-blocks"></a>텍스트 템플릿 제어 블록
 제어 블록을 사용하면 다양한 출력을 생성하기 위해 텍스트 템플릿에 코드를 작성할 수 있습니다. 다음과 같은 세 가지 종류의 제어 블록이 있으며 각각 여는 대괄호로 구분됩니다.
@@ -64,7 +64,7 @@ Found another one!
 ```
 
 > [!WARNING]
->  항상 {...}를 사용 하 여 포함 하는 중첩 문은 일반 텍스트를 포함 합니다. 다음 예제는 제대로 작동하지 않을 수 있습니다.
+>  항상 {...}를 사용 하 여 포함 된 중첩 문은 일반 텍스트를 포함 합니다. 다음 예제는 제대로 작동하지 않을 수 있습니다.
 >
 >  `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -80,7 +80,6 @@ Some text.
 <#
  }
 #>
-
 ```
 
 ## <a name="expression-control-block"></a>식 제어 블록
@@ -144,11 +143,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>제어 블록을 사용하는 방법
- 단일 템플릿의 모든 표준 및 식 제어 블록에 있는 모든 코드(포함된 템플릿의 모든 코드 포함)가 결합되어 생성된 코드의 `TransformText()` 메서드를 형성합니다. (으로 다른 텍스트 템플릿을 포함 하는 방법에 대 한 자세한 내용은 `include` 지시문 참조 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md).)
+ 단일 템플릿의 모든 표준 및 식 제어 블록에 있는 모든 코드(포함된 템플릿의 모든 코드 포함)가 결합되어 생성된 코드의 `TransformText()` 메서드를 형성합니다. (사용 하 여 다른 텍스트 템플릿을 포함 하는 방법에 대 한 자세한 내용은 합니다 `include` 지시문을 참조 하십시오 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md).)
 
  제어 블록을 사용할 때는 다음 사항을 고려해야 합니다.
 
--   **언어입니다.** 텍스트 템플릿에서 C# 또는 Visual Basic 코드를 사용할 수 있습니다. 기본 언어는 C#이지만 `template` 지시문의 `language` 매개 변수를 사용하여 Visual Basic을 지정할 수 있습니다. (에 대 한 자세한 내용은 `template` 지시문 참조 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md).)
+-   **언어입니다.** 텍스트 템플릿에서 C# 또는 Visual Basic 코드를 사용할 수 있습니다. 기본 언어는 C#이지만 `template` 지시문의 `language` 매개 변수를 사용하여 Visual Basic을 지정할 수 있습니다. (에 대 한 자세한 내용은 합니다 `template` 지시문을 참조 하십시오 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md).)
 
      제어 블록에서 사용하는 언어는 텍스트 템플릿에서 생성하는 텍스트의 언어 또는 형식과 관련이 없습니다. Visual Basic 코드를 사용하여 C#을 생성할 수 있으며 그 반대로도 생성할 수 있습니다.
 
@@ -158,7 +157,7 @@ Some text.
 
      특히 여러 텍스트 템플릿을 포함하는 경우 로컬 변수를 선언할 때 적절한 값으로 초기화하는 것도 좋은 방법입니다.
 
--   **제어 블록의 중첩 합니다.** 제어 블록은 다른 제어 블록 안에 중첩될 수 없습니다. 다른 제어 블록을 열기 전에 주어진 제어 블록을 항상 종료해야 합니다. 예를 들어, 다음은 표준 제어 블록의 일부로 식 블록의 텍스트를 인쇄하는 방법을 보여 줍니다.
+-   **제어 블록의 중첩.** 제어 블록은 다른 제어 블록 안에 중첩될 수 없습니다. 다른 제어 블록을 열기 전에 주어진 제어 블록을 항상 종료해야 합니다. 예를 들어, 다음은 표준 제어 블록의 일부로 식 블록의 텍스트를 인쇄하는 방법을 보여 줍니다.
 
     ```
     <#

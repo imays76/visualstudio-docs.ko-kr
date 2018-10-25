@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7adf836854d0012fcdd70d7657bb359bdb81dbe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 594e945a0805e9d14a358d98cfeb9a207e3da76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856043"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
-다음 프로그램 즉이 프로세스에서 코드를 실행 하는 요청을 중지 하 고 보낼는 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 이벤트 개체입니다.  
+다음 프로그램 즉이 프로세스에서 코드를 실행 하는 요청 중지 및 보내기는 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 이벤트 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,7 +38,7 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

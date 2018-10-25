@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce3ef7b1d5fe975fdc2edc21a3dbe94fa873e96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813297"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Windows 스토어 앱에 대한 Visual Studio 디버그 세션에서 스토어 앱의 실행 제어(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,28 +55,28 @@ ms.locfileid: "49275524"
   
  [지역 창의 변수 데이터 보기](#BKMK_View_variable_data_in_the_Locals_window)  
   
--   [개체의 변수 데이터 및 프로토타입 체인 보기](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
+- [개체의 변수 데이터 및 프로토타입 체인 보기](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
   
--   [범위 체인 데이터 검사](#BKMK_Examine_scope_chain_data)  
+- [범위 체인 데이터 검사](#BKMK_Examine_scope_chain_data)  
   
- [호출 스택 창을 사용하여 코드로 이동](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
+  [호출 스택 창을 사용하여 코드로 이동](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
   
 ##  <a name="BKMK_Create_the_sample_app"></a> 샘플 앱 만들기  
  디버깅은 코드와 관련이 있으므로 샘플 앱에서는 Windows 스토어 앱의 프레임워크만 사용하여 디버그 세션 탐색의 작동 방식 및 프로그램 상태를 검사하는 방법을 확인할 수 있는 소스 파일을 만듭니다. 호출하게 될 모든 코드는 default.js 파일의 `module` 함수에서 호출됩니다. 컨트롤이 추가되지 않으며 이벤트도 처리되지 않습니다.  
   
-1.  **빈 JavaScript Windows 스토어 앱을 만듭니다.** Visual Studio를 엽니다. 홈페이지에서 **새 프로젝트** 링크를 선택합니다. **새 프로젝트** 대화 상자의 **설치됨** 목록에서 **JavaScript** 를 선택한 다음 **Windows 스토어**를 선택합니다. 프로젝트 템플릿 목록에서 **새 응용 프로그램**을 선택합니다. Visual Studio에서 새 솔루션 및 프로젝트를 만들고 코드 편집기에 default.htm 파일을 표시합니다.  
+1. **빈 JavaScript Windows 스토어 앱을 만듭니다.** Visual Studio를 엽니다. 홈페이지에서 **새 프로젝트** 링크를 선택합니다. **새 프로젝트** 대화 상자의 **설치됨** 목록에서 **JavaScript** 를 선택한 다음 **Windows 스토어**를 선택합니다. 프로젝트 템플릿 목록에서 **새 응용 프로그램**을 선택합니다. Visual Studio에서 새 솔루션 및 프로젝트를 만들고 코드 편집기에 default.htm 파일을 표시합니다.  
   
-     스크립트 파일이 페이지에 로드됩니다.  
+    스크립트 파일이 페이지에 로드됩니다.  
   
-    -   `base.js` 및 `ui.js` 파일은 **JavaScript용 Windows 라이브러리**를 만듭니다. JavaScript용 Windows 라이브러리는 JavaScript를 사용하여 Windows 스토어 앱을 더 쉽게 만들 수 있도록 하는 JavaScript 및 CSS 파일 집합입니다. HTML, CSS 및 Windows 런타임과 함께 사용하여 앱을 만듭니다.  
+   -   `base.js` 및 `ui.js` 파일은 **JavaScript용 Windows 라이브러리**를 만듭니다. JavaScript용 Windows 라이브러리는 JavaScript를 사용하여 Windows 스토어 앱을 더 쉽게 만들 수 있도록 하는 JavaScript 및 CSS 파일 집합입니다. HTML, CSS 및 Windows 런타임과 함께 사용하여 앱을 만듭니다.  
   
-    -   코드는 `default.js`  파일에서 시작됩니다.  
+   -   코드는 `default.js`  파일에서 시작됩니다.  
   
-2.  **default.js 소스 파일을 엽니다.** 솔루션 탐색기에서 **js** 노드를 열고 `default.js`이라고 합니다.  
+2. **default.js 소스 파일을 엽니다.** 솔루션 탐색기에서 **js** 노드를 열고 `default.js`이라고 합니다.  
   
-3.  **페이지 내용을 샘플 코드로 바꿉니다.** `default.js` 파일에서 시작됩니다. 이 [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)링크를 따라 이동한 다음 JavaScript 섹션에 나열된 코드를 클립보드에 복사합니다. (선택 **다시** 브라우저 또는 도움말 뷰어가 빠른 시작 페이지로 돌아갑니다.) Visual Studio 편집기에서 코드를 현재 비어 있는 `default.js`에 붙여 넣습니다. **Ctrl+S** 를 선택하여 파일을 저장합니다.  
+3. **페이지 내용을 샘플 코드로 바꿉니다.** `default.js` 파일에서 시작됩니다. 이 [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)링크를 따라 이동한 다음 JavaScript 섹션에 나열된 코드를 클립보드에 복사합니다. (선택 **다시** 브라우저 또는 도움말 뷰어가 빠른 시작 페이지로 돌아갑니다.) Visual Studio 편집기에서 코드를 현재 비어 있는 `default.js`에 붙여 넣습니다. **Ctrl+S** 를 선택하여 파일을 저장합니다.  
   
- 이제 이 항목의 예제도 함께 수행할 수 있습니다.  
+   이제 이 항목의 예제도 함께 수행할 수 있습니다.  
   
 ##  <a name="BKMK_Set_and_run_to_a_breakpoint__step_into_a_function__and_examine_program_data"></a> 중단점을 설정하고 중단점까지 실행, 함수 한 단계씩 코드 실행 및 프로그램 데이터 검사  
  디버그 세션을 시작하는 가장 일반적인 방법은 **디버그** 메뉴에서 **디버깅 시작** (키보드: F5)을 선택하는 것입니다. 앱이 시작되고 중단점에 도달하거나, 실행을 수동으로 일시 중단하거나, 예외가 발생하거나, 앱이 종료될 때까지 계속 실행됩니다.  
@@ -88,45 +88,45 @@ ms.locfileid: "49275524"
 ###  <a name="BKMK_Example_1"></a> 예제 1  
  이 예제에서는 사용자 문을 처음 호출할 때 `module` 에서 `default.js` 함수의 본문에 중단점을 설정합니다. 그런 다음 함수를 한 단계씩 실행하고 디버거 데이터 팁에서 변수 값을 확인한 후 디버깅을 중지합니다.  
   
-1.  **중단점을 설정합니다.** `app.start()` 호출 직후에 발생되는 `callTrack = "module function";` 문에서 중단점을 설정합니다. 소스 코드 편집기의 음영 처리된 여백에서 줄을 선택합니다(키보드: 줄에 커서를 놓고 **F9** 키 선택).  
+1. **중단점을 설정합니다.** `app.start()` 호출 직후에 발생되는 `callTrack = "module function";` 문에서 중단점을 설정합니다. 소스 코드 편집기의 음영 처리된 여백에서 줄을 선택합니다(키보드: 줄에 커서를 놓고 **F9** 키 선택).  
   
-     ![Example1에 중단점을 설정](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
+    ![Example1에 중단점을 설정](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
   
-     여백에 중단점 아이콘이 나타납니다.  
+    여백에 중단점 아이콘이 나타납니다.  
   
-2.  **중단점까지 실행합니다.** **디버그** on the **디버깅 시작** (키보드: F5)을 선택하는 것입니다.  
+2. **중단점까지 실행합니다.** **디버그** on the **디버깅 시작** (키보드: F5)을 선택하는 것입니다.  
   
-     앱이 실행되기 시작하고 중단점을 설정한 문 바로 앞에서 실행을 일시 중단합니다. 여백에 있는 현재 줄 아이콘은 위치를 식별하고 현재 문이 강조 표시됩니다.  
+    앱이 실행되기 시작하고 중단점을 설정한 문 바로 앞에서 실행을 일시 중단합니다. 여백에 있는 현재 줄 아이콘은 위치를 식별하고 현재 문이 강조 표시됩니다.  
   
-     ![중단점까지 실행](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
+    ![중단점까지 실행](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
   
-     이제 앱의 실행을 제어하고 프로그램 문을 단계별로 실행하면서 프로그램 상태를 검사할 수 있습니다.  
+    이제 앱의 실행을 제어하고 프로그램 문을 단계별로 실행하면서 프로그램 상태를 검사할 수 있습니다.  
   
-3.  **함수를 한 단계씩 코드 실행합니다.** On the **디버깅 시작** 메뉴에서 **한 단계씩 코드 실행** 을 선택합니다(키보드: **F11**).  
+3. **함수를 한 단계씩 코드 실행합니다.** On the **디버깅 시작** 메뉴에서 **한 단계씩 코드 실행** 을 선택합니다(키보드: **F11**).  
   
-     ![코드 줄을 한 단계씩](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
+    ![코드 줄을 한 단계씩](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
   
-     디버거가 `example1` 함수를 호출하는 다음 줄로 이동합니다. **한 단계씩 코드 실행** 을 다시 선택합니다. 디버거가 `example1` 함수의 첫 번째 코드 줄로 이동합니다. 강조 표시된 줄은 실행되지 않았지만 함수가 호출 스택에 로드되고 지역 변수에 대한 메모리가 할당되었습니다.  
+    디버거가 `example1` 함수를 호출하는 다음 줄로 이동합니다. **한 단계씩 코드 실행** 을 다시 선택합니다. 디버거가 `example1` 함수의 첫 번째 코드 줄로 이동합니다. 강조 표시된 줄은 실행되지 않았지만 함수가 호출 스택에 로드되고 지역 변수에 대한 메모리가 할당되었습니다.  
   
-4.  코드 줄을 한 단계씩 코드 실행하면 디버거가 다음 작업 중 하나를 수행합니다.  
+4. 코드 줄을 한 단계씩 코드 실행하면 디버거가 다음 작업 중 하나를 수행합니다.  
   
-    -   다음 문이 솔루션의 함수를 호출하지 않을 경우 디버거는 문을 실행하고 다음 문으로 이동한 후 실행을 일시 중단합니다.  
+   - 다음 문이 솔루션의 함수를 호출하지 않을 경우 디버거는 문을 실행하고 다음 문으로 이동한 후 실행을 일시 중단합니다.  
   
-    -   문이 솔루션의 함수를 호출할 경우 디버거는 호출된 함수의 첫 번째 줄로 이동한 후 실행을 일시 중단합니다.  
+   - 문이 솔루션의 함수를 호출할 경우 디버거는 호출된 함수의 첫 번째 줄로 이동한 후 실행을 일시 중단합니다.  
   
      끝내기 점에 도달할 때까지 `example1` 문의 한 단계씩 코드 실행을 계속합니다. 디버거는 함수의 닫는 중괄호를 강조 표시합니다.  
   
-5.  **데이터 팁에서 변수 값을 확인합니다.** 끝내기 점에 도달할 때까지 `example1` 문의 한 단계씩 코드 실행을 계속합니다. 디버거는 함수의 닫는 중괄호를 강조 표시합니다. 변수 이름에서 마우스를 일시 중지하면 변수의 이름과 값이 데이터 팁에 표시됩니다.  
+5. **데이터 팁에서 변수 값을 확인합니다.** 끝내기 점에 도달할 때까지 `example1` 문의 한 단계씩 코드 실행을 계속합니다. 디버거는 함수의 닫는 중괄호를 강조 표시합니다. 변수 이름에서 마우스를 일시 중지하면 변수의 이름과 값이 데이터 팁에 표시됩니다.  
   
-     ![데이터 팁에서 변수 값을 확인](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
+    ![데이터 팁에서 변수 값을 확인](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
   
-6.  **CallTrack 변수에 대한 조사식을 추가합니다.** 함수의 `callTrack` 변수는 빠른 시작 전체에서 예제의 호출된 함수를 표시하는 데 사용됩니다. 변수의 값을 더 쉽게 확인하려면 조사식 창에 추가합니다. 편집기에서 변수 이름을 선택한 다음 바로 가기 메뉴에서 **조사식 추가** 를 선택합니다.  
+6. **CallTrack 변수에 대한 조사식을 추가합니다.** 함수의 `callTrack` 변수는 빠른 시작 전체에서 예제의 호출된 함수를 표시하는 데 사용됩니다. 변수의 값을 더 쉽게 확인하려면 조사식 창에 추가합니다. 편집기에서 변수 이름을 선택한 다음 바로 가기 메뉴에서 **조사식 추가** 를 선택합니다.  
   
-     ![변수 조사](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
+    ![변수 조사](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
   
-     조사식 창에서 여러 변수를 조사할 수 있습니다. 데이터 팁 창의 값과 같이 조사 변수의 값은 실행이 일시 중단될 때마다 업데이트됩니다. 조사 변수는 디버그 세션 전체에 저장됩니다.  
+    조사식 창에서 여러 변수를 조사할 수 있습니다. 데이터 팁 창의 값과 같이 조사 변수의 값은 실행이 일시 중단될 때마다 업데이트됩니다. 조사 변수는 디버그 세션 전체에 저장됩니다.  
   
-7.  **디버깅을 중지합니다.** On the **디버깅 시작** 메뉴에서 **디버깅 중지** 을 선택합니다(키보드: **Shift+F5**). 이렇게 하면 디버그 세션이 종료됩니다.  
+7. **디버깅을 중지합니다.** On the **디버깅 시작** 메뉴에서 **디버깅 중지** 을 선택합니다(키보드: **Shift+F5**). 이렇게 하면 디버그 세션이 종료됩니다.  
   
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> 함수 한 단계씩 코드 실행, 프로시저 단위 실행 및 프로시저 나가기  
  부모 함수에 의해 호출된 함수를 한 단계씩 코드 실행하는 것과 달리 함수를 프로시저 단위로 실행하면 자식 함수가 실행된 다음 부모가 다시 시작될 때 함수 호출에서 실행이 일시 중단됩니다. 함수 작동 방식을 잘 알고 있고 함수 실행이 조사하고 있는 문제에 영향을 주지 않을 것을 확신하는 경우 함수를 프로시저 단위로 실행할 수 있습니다.  
@@ -241,13 +241,13 @@ ms.locfileid: "49275524"
 ##  <a name="BKMK_Examine_scope_chain_data"></a> 범위 체인 데이터 검사  
  함수의 *범위 체인* 에는 활성 상태이고 함수에서 연결할 수 있는 모든 변수가 포함됩니다. 전역 변수는 현재 실행 중인 함수를 정의하는 함수에 정의된 모든 개체(함수 포함)이므로 범위 체인의 일부입니다. 예를 들어 `callTrack` 의 `module` 함수에 정의된 `default.js` 변수는 `module` 함수에 정의된 모든 함수에서 연결할 수 있습니다. 각 범위는 지역 창에 별도로 나열됩니다.  
   
--   현재 실행 중인 함수의 변수는 창의 맨 위에 나열됩니다.  
+- 현재 실행 중인 함수의 변수는 창의 맨 위에 나열됩니다.  
   
--   범위 체인에 있는 각 함수 범위의 변수는 함수에 대한 **[Scope]** 노드 아래에 나열됩니다. 범위 함수는 체인에서의 순서에 따라 현재 함수를 정의하는 함수에서 체인의 가장 바깥쪽 함수순으로 나열됩니다.  
+- 범위 체인에 있는 각 함수 범위의 변수는 함수에 대한 **[Scope]** 노드 아래에 나열됩니다. 범위 함수는 체인에서의 순서에 따라 현재 함수를 정의하는 함수에서 체인의 가장 바깥쪽 함수순으로 나열됩니다.  
   
--   **[Globals]** 노드에는 함수 외부에 정의된 전역 개체가 나열됩니다.  
+- **[Globals]** 노드에는 함수 외부에 정의된 전역 개체가 나열됩니다.  
   
- 범위 체인은 혼동될 수 있으며 예제를 통해 가장 잘 확인할 수 있습니다. 다음 예제에서는 `module` 함수에서 고유한 범위를 만드는 방법 및 클로저를 만들어 또 다른 수준의 범위를 만드는 방법을 확인할 수 있습니다.  
+  범위 체인은 혼동될 수 있으며 예제를 통해 가장 잘 확인할 수 있습니다. 다음 예제에서는 `module` 함수에서 고유한 범위를 만드는 방법 및 클로저를 만들어 또 다른 수준의 범위를 만드는 방법을 확인할 수 있습니다.  
   
 ###  <a name="BKMK_Example_4"></a> 예제 4  
   

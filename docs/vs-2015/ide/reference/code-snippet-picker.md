@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845304"
 ---
 # <a name="code-snippet-picker"></a>코드 조각 선택
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49213325"
   
  **코드 조각 선택**을 표시하는 프로시저는 사용 중인 언어에 따라 달라집니다.  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입**을 선택합니다.  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입**을 선택합니다.  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)] - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입** 또는 **코드 감싸기**를 클릭합니다.  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입** 또는 **코드 감싸기**를 클릭합니다.  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - **코드 조각 선택**을 사용할 수 없습니다.  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - **코드 조각 선택**을 사용할 수 없습니다.  
   
--   Visual F# - **코드 조각 선택**을 사용할 수 없습니다.  
+- Visual F# - **코드 조각 선택**을 사용할 수 없습니다.  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입** 또는 **코드 감싸기**를 클릭합니다.  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입** 또는 **코드 감싸기**를 클릭합니다.  
   
--   XML - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입** 또는 **코드 감싸기**를 클릭합니다.  
+- XML - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입** 또는 **코드 감싸기**를 클릭합니다.  
   
--   HTML - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입** 또는 **코드 감싸기**를 클릭합니다.  
+- HTML - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입** 또는 **코드 감싸기**를 클릭합니다.  
   
--   SQL - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입**을 클릭합니다.  
+- SQL - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입**을 클릭합니다.  
   
- 대부분의 Visual Studio 개발 언어에서 **코드 조각 관리자**를 사용하여 **코드 조각 선택**이 XML 코드 조각 파일을 검사하는 **폴더 목록**에 폴더를 추가할 수 있습니다. 또한 사용자 고유의 조각을 만들어 목록에 추가할 수 있습니다. 자세한 내용은 [연습: 코드 조각 만들기](../../ide/walkthrough-creating-a-code-snippet.md)를 참조하세요.  
+  대부분의 Visual Studio 개발 언어에서 **코드 조각 관리자**를 사용하여 **코드 조각 선택**이 XML 코드 조각 파일을 검사하는 **폴더 목록**에 폴더를 추가할 수 있습니다. 또한 사용자 고유의 조각을 만들어 목록에 추가할 수 있습니다. 자세한 내용은 [연습: 코드 조각 만들기](../../ide/walkthrough-creating-a-code-snippet.md)를 참조하세요.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  
  항목 이름  

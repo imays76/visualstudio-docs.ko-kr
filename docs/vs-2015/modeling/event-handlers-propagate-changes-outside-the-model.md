@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823699"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>이벤트 처리기로 모델 외부의 변경 내용 전파
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ Visualization and Modeling SDK에서와 같은 비 저장소 변수, 파일, 다
   
 ### <a name="to-define-a-store-event"></a>저장소 이벤트를 정의 하려면  
   
-1.  모니터링 하려는 이벤트의 유형을 선택 합니다. 속성 전체 목록을 살펴볼 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>합니다. 각 속성은 이벤트의 형식에 해당 합니다. 가장 자주 유형은 이벤트를 사용 합니다.  
+1. 모니터링 하려는 이벤트의 유형을 선택 합니다. 속성 전체 목록을 살펴볼 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>합니다. 각 속성은 이벤트의 형식에 해당 합니다. 가장 자주 유형은 이벤트를 사용 합니다.  
   
-    -   `ElementAdded` – 트리거될 때 모델 요소 링크 관계, 모양 또는 커넥터 생성 됩니다.  
+   -   `ElementAdded` – 트리거될 때 모델 요소 링크 관계, 모양 또는 커넥터 생성 됩니다.  
   
-    -   ElementPropertyChanged – 트리거되는 경우의 값을 `Normal` 도메인 속성이 변경 될 합니다. 이전 및 새 값을 같지 않은 경우에 이벤트가 트리거될 수 있습니다. 이 이벤트는 계산 및 사용자 지정 저장소 속성에 적용할 수 없습니다.  
+   -   ElementPropertyChanged – 트리거되는 경우의 값을 `Normal` 도메인 속성이 변경 될 합니다. 이전 및 새 값을 같지 않은 경우에 이벤트가 트리거될 수 있습니다. 이 이벤트는 계산 및 사용자 지정 저장소 속성에 적용할 수 없습니다.  
   
-         관계 링크에 해당 하는 역할 속성에 적용할 수 없습니다. 대신 `ElementAdded` 도메인 관계를 모니터링 합니다.  
+        관계 링크에 해당 하는 역할 속성에 적용할 수 없습니다. 대신 `ElementAdded` 도메인 관계를 모니터링 합니다.  
   
-    -   `ElementDeleted` – 모델 요소 후에 트리거된, 관계, 모양 또는 커넥터 삭제 되었습니다. 요소의 속성 값을 계속 액세스할 수 있습니다 하지만 관계가 없으면 다른 요소에 더 합니다.  
+   -   `ElementDeleted` – 모델 요소 후에 트리거된, 관계, 모양 또는 커넥터 삭제 되었습니다. 요소의 속성 값을 계속 액세스할 수 있습니다 하지만 관계가 없으면 다른 요소에 더 합니다.  
   
-2.  에 대 한 partial 클래스 정의 추가 _YourDsl_**DocData** 별도 코드 파일에는 **DslPackage** 프로젝트입니다.  
+2. 에 대 한 partial 클래스 정의 추가 _YourDsl_**DocData** 별도 코드 파일에는 **DslPackage** 프로젝트입니다.  
   
-3.  다음 예제와 같이 메서드로 이벤트의 코드를 작성 합니다. 하기란 `static`에 액세스 하려는 경우가 아니면 `DocData`합니다.  
+3. 다음 예제와 같이 메서드로 이벤트의 코드를 작성 합니다. 하기란 `static`에 액세스 하려는 경우가 아니면 `DocData`합니다.  
   
-4.  재정의 `OnDocumentLoaded()` 처리기를 등록 합니다. 둘 이상의 처리기에 있는 경우에 같은 위치에 모두 등록할 수 있습니다.  
+4. 재정의 `OnDocumentLoaded()` 처리기를 등록 합니다. 둘 이상의 처리기에 있는 경우에 같은 위치에 모두 등록할 수 있습니다.  
   
- 등록 코드의 위치는 중요 하지 않습니다. `DocView.LoadView()` 대체 위치는입니다.  
+   등록 코드의 위치는 중요 하지 않습니다. `DocView.LoadView()` 대체 위치는입니다.  
   
 ```  
 using System;  

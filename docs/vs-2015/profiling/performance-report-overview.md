@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845851"
 ---
 # <a name="performance-report-overview"></a>성능 보고서 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Visual Studio Team System Development Edition IDE(통합 개발 환경)의 **성
 ### <a name="callercallee-view"></a>호출자/호출 수신자 뷰  
  호출자/호출 수신자 뷰에는 개별 함수의 호출 트리가 표시됩니다. 이 뷰는 세 부분으로 구분됩니다.  
   
--   대상 함수는 뷰의 가운데에 표시됩니다.  
+- 대상 함수는 뷰의 가운데에 표시됩니다.  
   
--   함수를 호출한 함수(호출자)는 대상 함수 위에 표시됩니다.  
+- 함수를 호출한 함수(호출자)는 대상 함수 위에 표시됩니다.  
   
--   대상 함수에 의해 호출된 함수(호출 수신자)는 대상 아래에 표시됩니다.  
+- 대상 함수에 의해 호출된 함수(호출 수신자)는 대상 아래에 표시됩니다.  
   
- 호출한 목록 또는 호출 수신자 목록에서 함수를 두 번 클릭하여 다른 함수를 선택할 수 있습니다. 자세한 내용은 [호출자/호출 수신자 뷰](../profiling/caller-callee-view.md)를 참조하세요.  
+  호출한 목록 또는 호출 수신자 목록에서 함수를 두 번 클릭하여 다른 함수를 선택할 수 있습니다. 자세한 내용은 [호출자/호출 수신자 뷰](../profiling/caller-callee-view.md)를 참조하세요.  
   
 ### <a name="call-tree-view"></a>호출 트리 뷰  
  호출 트리 뷰에는 프로파일링 된 응용 프로그램에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 응용 프로그램이나 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 성능 데이터가 나열됩니다.  

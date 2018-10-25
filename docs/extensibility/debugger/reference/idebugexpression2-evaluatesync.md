@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5fc3fb1ad607eb7efb1ba20265545c18b1c1b46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b288d9995797a000f16533fcee9dafd85171722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864611"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 이 메서드는 동기적으로 식을 계산 합니다.  
@@ -50,27 +50,27 @@ int EvaluateSync(
  [in] 플래그의 조합 된 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 식 계산을 제어 하는 열거형입니다.  
   
  `dwTimeout`  
- [in] 이 메서드로부터 반환 하기 전에 대기할 밀리초에서는 최대 시간입니다. 사용 하 여 `INFINITE` 무기한 대기를 나타냅니다.  
+ [in] 이 메서드에서 반환 되기 전에 대기할 밀리초에서는 최대 시간입니다. 사용 하 여 `INFINITE` 무기한 대기 합니다.  
   
  `pExprCallback`  
- [in] 이 매개 변수는 항상 null 값을 표시 합니다.  
+ [in] 이 매개 변수는 항상 null 값입니다.  
   
  `ppResult`  
- [out] 반환 된 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 식 평가의 결과 포함 하는 개체입니다.  
+ [out] 반환 된 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 식 계산의 결과 포함 하는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드가 반환 됩니다. 몇 가지 일반적인 오류 코드:  
+ 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 몇 가지 일반적인 오류 코드:  
   
-|오류|설명|  
+|Error|설명|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|다른 식을 평가 되 고 현재 및 동시 식 계산이 지원 되지 않습니다.|  
-|E_EVALUATE_TIMEOUT|평가 제한 시간이 초과 되었습니다.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|다른 식이 계산 되는 현재 및 동시 식 계산에 사용할 수 없습니다.|  
+|E_EVALUATE_TIMEOUT|평가 시간이 초과 되었습니다.|  
   
 ## <a name="remarks"></a>설명  
- 동기 평가 대 한 이벤트 평가 완료 되 면 Visual Studio로 다시 보내는 필요 없는 합니다.  
+ 동기 계산에 대 한 평가가 완료 되 면 Visual Studio로 돌아가서 이벤트를 전송 하려면 필요 없는 합니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CExpression` 구현 하는 개체는 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스입니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CExpression` 를 구현 하는 개체를 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  
