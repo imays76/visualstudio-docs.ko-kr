@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56f14b399a904c2584e81c2b6c8f344654b69a18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 587104668449fe9c2ec0dd36fe20e76fec6be6fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837505"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 세션 디버그 관리자 (SDM) 프로세스에 연결 합니다.  
@@ -50,27 +50,27 @@ int Attach(
  [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 디버그 이벤트 알림에 사용 되는 개체입니다.  
   
  `rgguidSpecificEngines`  
- [in] 배열 하는 프로세스에서 실행 중인 프로그램을 디버깅 하는 데 사용할 디버그 엔진의 Guid입니다. 이 매개 변수에 null 값이 될 수 있습니다. 자세한 내용은 설명 부분을 참조 하십시오.  
+ [in] 배열 프로세스에서 실행 되는 프로그램을 디버그 하는 데 사용할 디버그 엔진의 Guid입니다. 이 매개 변수는 null 값일 수 있습니다. 세부 정보에 대 한 설명을 참조 하세요.  
   
  `celtSpecificEngines`  
- [in] 디버그 수 있는 엔진은 `rgguidSpecificEngines` 배열과의 크기는 `rghrEngineAttach` 배열입니다.  
+ [in] 수가 디버그 엔진에 `rgguidSpecificEngines` 배열과의 크기는 `rghrEngineAttach` 배열입니다.  
   
  `rghrEngineAttach`  
- [out에서] 디버그 엔진에서 반환 된 HRESULT 코드의 배열입니다. 에 지정 된이 배열의 크기는 `celtSpecificEngines` 매개 변수입니다. 각 코드는 일반적으로 하나 `S_OK` 또는 `S_ATTACH_DEFERRED`합니다. 후자는 DE 현재 프로그램에 연결 되어 있는지 나타냅니다.  
+ [out에서] 디버그 엔진에서 반환 된 HRESULT 코드의 배열입니다. 에 지정 된이 배열의 크기는 `celtSpecificEngines` 매개 변수입니다. 각 코드는 일반적으로 `S_OK` 또는 `S_ATTACH_DEFERRED`합니다. 후자는 DE 없는 프로그램에 현재 연결 되어 있는지 나타냅니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 다음 표에서 가능한 다른 값을 보여 줍니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 다음 표에서 가능한 다른 값을 보여 줍니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|지정된 된 프로세스 디버거가 이미 연결 되어 있습니다.|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Attach는 동안 보안 위반이 발생 했습니다.|  
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|데스크톱 프로세스 디버거에 연결할 수 없습니다.|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|연결 절차 동안 보안 위반이 발생 했습니다.|  
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|데스크톱 프로세스는 디버거에 연결할 수 없습니다.|  
   
 ## <a name="remarks"></a>설명  
- 에 지정 된 디버그 엔진 (DE) 하 여 디버깅할 수 있는 해당 프로세스에서 실행 되는 모든 프로그램은 SDM 연결 프로세스에 연결 하는 `rgguidSpecificEngines` 배열입니다. 설정의 `rgguidSpecificEngines` 매개 변수를 null로 값 또는 포함 `GUID_NULL` 배열의 프로세스의 모든 프로그램에 연결 합니다.  
+ 에 지정 된 디버그 엔진 (DE)에서 디버깅할 수 있는 해당 프로세스에서 실행 중인 모든 프로그램 SDM 연결 프로세스에 연결 하는 `rgguidSpecificEngines` 배열입니다. 설정 합니다 `rgguidSpecificEngines` 매개 변수를 null 값 또는 포함 `GUID_NULL` 프로세스에서 모든 프로그램에 연결 된 배열의 합니다.  
   
- 프로세스에서 발생 하는 모든 디버그 이벤트에 게 보내집니다는 주어진 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다. 이 `IDebugEventCallback2` 개체는 SDM이이 메서드를 호출할 때 제공 됩니다.  
+ 프로세스에서 발생 하는 모든 디버그 이벤트가 전송 되는 지정 된 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다. 이 `IDebugEventCallback2` SDM이이 메서드를 호출 하는 경우 개체는 제공 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

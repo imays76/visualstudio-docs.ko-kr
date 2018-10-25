@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 16ec8cdb2402546f2059053495a8e656427783e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937332"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Visual Studio에서 XAML 디자인
 
@@ -61,7 +61,7 @@ Visual Studio와 Blend for Visual Studio 간에 전환할 수 있으며, 둘 다
 생산성을 향상시키려면 다음과 같은 작업에 Blend for Visual Studio를 사용하는 것이 좋습니다. 이러한 영역에 대해 Blend for Visual Studio는 Visual Studio 디자이너나 코드를 단독으로 사용할 때보다 빠른 속도와 더 많은 기능을 제공합니다.
 
 |대상|Visual Studio|Blend for Visual Studio|추가 정보|
-|--------|-------------------|-----------------------------|----------------------|
+|--------|-------------------| - | - |
 |**애니메이션 만들기**|애니메이션을 만들 수 있는 디자인 도구가 없습니다. 프로그래밍 방식으로 애니메이션을 만들어야 합니다. 따라서 WPF의 애니메이션, 타이밍 시스템 및 광범위한 코딩 전문 기술을 이해하고 있어야 합니다.|애니메이션을 시각적으로 만들고 Blend for Visual Studio에서 미리 볼 수 있습니다. 코드로 애니메이션을 빌드하는 것보다 더 빠르고 정확합니다. 사용자 상호 작용을 처리하는 트리거를 추가하고 이벤트 처리기 및 기타 기능을 추가하는 코드로 전환할 수 있습니다.|[개체에 애니메이션 적용](../designers/animate-objects-in-xaml-designer.md)|
 |**보다 쉽게 조작할 수 있도록 도형 및 텍스트를 패스로 변환**|지원되지 않습니다.|도형을 패스(더 우수한 편집 컨트롤 제공)로 변환하여 도형(예: 사각형 및 타원)에 대해 미세하거나 큰 변경을 수행할 수 있습니다. 패스 모양을 변경하거나 패스를 결합하고 여러 도형에서 복합형 패스를 만들 수 있습니다.<br /><br /> 또한 텍스트 블록을 패스로 변환하여 벡터 이미지로 조작할 수 있습니다.|[도형 및 패스 그리기](../designers/draw-shapes-and-paths.md)|
 |**UI 디자인에 대화형 작업 추가**|C#, Visual Basic 또는 C++ 코드가 필요합니다.|정적 디자인에 대화형 작업을 추가하려면 동작을 컨트롤에 끌어다 놓습니다. 동작은 끌어서 놓기, 확대/축소 및 시각적 상태 변경 등의 기능을 캡슐화하는, 즉시 사용 가능한 코드 조각입니다. 선택할 수 있는 동작 집합이 계속 추가되고 있으며, 자신만의 동작을 만들 수 있습니다.<br /><br /> 그런 다음 Blend for Visual Studio에서 해당 속성을 변경하거나 코드에서 이벤트 처리기를 추가하여 각 동작을 사용자 지정할 수 있습니다.|[컨트롤을 삽입하고 해당 동작을 수정](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)|

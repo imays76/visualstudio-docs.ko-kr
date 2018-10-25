@@ -16,27 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942064"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>InfoPath에 대 한 리본을 사용자 지정
   Microsoft Office InfoPath에서 리본을 사용자 지정할 경우 응용 프로그램에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 에서는 다음 세 가지 유형의 InfoPath 응용 프로그램 창에서 리본을 표시할 수 있습니다.  
   
--   디자인 모드에서 열린 양식 템플릿을 표시하는 창입니다.  
+- 디자인 모드에서 열린 양식 템플릿을 표시하는 창입니다.  
   
--   양식 템플릿에 기반을 둔 양식을 표시하는 창입니다.  
+- 양식 템플릿에 기반을 둔 양식을 표시하는 창입니다.  
   
--   인쇄 미리 보기 창입니다.  
+- 인쇄 미리 보기 창입니다.  
   
- **적용 대상:** 이 항목의 정보는 InfoPath 2010의 VSTO 추가 기능 프로젝트에 적용됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
+  **적용 대상:** 이 항목의 정보는 InfoPath 2010의 VSTO 추가 기능 프로젝트에 적용됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능](../vsto/features-available-by-office-application-and-project-type.md)합니다.  
   
- 사용자와 디자이너는 디자이너 모드에서 양식 템플릿을 열고 템플릿의 모양과 레이아웃을 수정합니다. 사용자는 양식 템플릿에 기반을 둔 양식을 열고 콘텐츠를 추가합니다.  
+  사용자와 디자이너는 디자이너 모드에서 양식 템플릿을 열고 템플릿의 모양과 레이아웃을 수정합니다. 사용자는 양식 템플릿에 기반을 둔 양식을 열고 콘텐츠를 추가합니다.  
   
- 인쇄 미리 보기 창을 통해 디자이너와 사용자는 양식이나 양식 템플릿을 인쇄하기 전에 해당 페이지를 미리 볼 수 있습니다.  
+  인쇄 미리 보기 창을 통해 디자이너와 사용자는 양식이나 양식 템플릿을 인쇄하기 전에 해당 페이지를 미리 볼 수 있습니다.  
   
 > [!NOTE]  
 >  인쇄 미리 보기 창에는 **추가 기능** 탭이 나타나지 않습니다. 인쇄 미리 보기 창에 사용자 지정 탭을 표시하려면 탭의 **OfficeId** 속성을 **TabAddIns**로 설정하지 않았는지 확인합니다.  
@@ -68,6 +68,6 @@ ms.locfileid: "35674302"
  [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)   
  [리본 개요](../vsto/ribbon-overview.md)   
  [리본 디자이너](../vsto/ribbon-designer.md)   
- [리본 XML](../vsto/ribbon-xml.md)  
+ [Ribbon XML](../vsto/ribbon-xml.md)  
   
   

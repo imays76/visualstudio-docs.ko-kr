@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f16f4dc94a5019fa66425f55c8f7706db566db9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 75bb1bc0adb63a3c606b03cafc0b8a8c92d956df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934316"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 기본 인덱서의 이름을 가져옵니다.  
@@ -41,13 +41,13 @@ int GetDefaultIndexer(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstrIndexer`  
- [out] 기본 인덱서의 이름을 포함 하는 문자열을 반환 합니다.  
+ [out] 기본 인덱서 이름을 포함 하는 문자열을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 하거나 인덱서가 없습니다. 기본 경우 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공 하면 S_OK를 반환 하거나 기본 인덱서가 없습니다 S_FALSE를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- 클래스의 기본 인덱서는로 표시 된 속성은 `Default` 배열 액세스에 대 한 속성. 이 관련 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]합니다. 에 선언 된 기본 인덱서의 예로 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 와 사용 방법입니다.  
+ 로 표시 된 속성인 클래스의 기본 인덱서는 `Default` 배열 액세스에 대 한 속성입니다. 관련 된 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]합니다. 선언에서 기본 인덱서에의 예로 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 사용 방법.  
   
 ```vb  
 Imports System.Collections;  

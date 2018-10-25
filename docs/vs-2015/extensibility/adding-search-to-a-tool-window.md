@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939269"
 ---
 # <a name="adding-search-to-a-tool-window"></a>도구 창에 검색 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 를 작성 하거나 도구 창 확장 프로그램에서 업데이트할 때 Visual Studio에서 다른 곳에 표시 되는 동일한 검색 기능을 추가할 수 있습니다. 이 기능에는 다음 기능이 포함 됩니다.  
   
--   도구 모음 사용자 지정 영역에 항상 있는 검색 상자입니다.  
+- 도구 모음 사용자 지정 영역에 항상 있는 검색 상자입니다.  
   
--   자체 검색 상자에 중첩 하는 진행률 표시기입니다.  
+- 자체 검색 상자에 중첩 하는 진행률 표시기입니다.  
   
--   각 문자 (빠른 검색)을 입력 하는 즉시 또는 Enter 키 (요청 시 검색)를 선택한 후에 결과 표시할 수 있습니다.  
+- 각 문자 (빠른 검색)을 입력 하는 즉시 또는 Enter 키 (요청 시 검색)를 선택한 후에 결과 표시할 수 있습니다.  
   
--   한 가장 최근에 검색 용어를 보여 주는 목록입니다.  
+- 한 가장 최근에 검색 용어를 보여 주는 목록입니다.  
   
--   특정 필드 또는 검색 대상의 측면에서 검색을 필터링 할 수 있습니다.  
+- 특정 필드 또는 검색 대상의 측면에서 검색을 필터링 할 수 있습니다.  
   
- 이 연습을 수행 하 여 다음 작업을 수행 하는 방법을 알아봅니다.  
+  이 연습을 수행 하 여 다음 작업을 수행 하는 방법을 알아봅니다.  
   
 1.  VSPackage 프로젝트를 만듭니다.  
   

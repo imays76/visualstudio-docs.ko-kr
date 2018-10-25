@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941245"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015의 문제를 보고하는 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Visual Studio 2015를 사용 하 여 문제가 발생 하면 그에 관해 진�
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  Visual Studio 내의 올바른 팀에게 전달될 수 있도록 문제에 대한 설명이 포함된 제목을 입력합니다.  
+1. Visual Studio 내의 올바른 팀에게 전달될 수 있도록 문제에 대한 설명이 포함된 제목을 입력합니다.  
   
-2.  추가 세부 정보와 문제를 재현을 위한 단계(가능한 경우)를 제공합니다.  
+2. 추가 세부 정보와 문제를 재현을 위한 단계(가능한 경우)를 제공합니다.  
   
-3.  드롭다운에서 문제 영역을 선택합니다. 확실하지 않은 경우 최대한 추측하여 선택합니다.  
+3. 드롭다운에서 문제 영역을 선택합니다. 확실하지 않은 경우 최대한 추측하여 선택합니다.  
   
- ![문제 보고 대화 상자](../ide/media/report-a-problem-dialog.png "문제 보고 대화 상자")  
+   ![문제 보고 대화 상자](../ide/media/report-a-problem-dialog.png "문제 보고 대화 상자")  
   
 ## <a name="provide-a-screenshot-optional"></a>스크린샷 제공(선택 사항)  
  현재 화면을 Microsoft로 보내려면 **스크린샷 포함**을 선택합니다. 이 도구를 사용하면 화면에서 문제가 있는 부분만 표시되도록 이미지를 자를 수 있습니다. **추가 파일 첨부** 단추를 클릭하여 추가 스크린샷 또는 다른 파일을 첨부할 수 있습니다.  

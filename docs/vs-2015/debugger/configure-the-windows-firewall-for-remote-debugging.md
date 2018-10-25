@@ -14,37 +14,37 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96b4e4cc929dc7941fac5e8a7f090e701fe2810f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935395"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>원격 디버깅을 위해 Windows 방화벽 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에서는 다음 운영 체제를 실행하는 컴퓨터에서 원격 디버깅을 사용하도록 방화벽을 구성하는 방법을 설명합니다.  
   
--   Windows 7  
+- Windows 7  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 10  
+- Windows 10  
   
--   Windows Server 2008(R2)  
+- Windows Server 2008(R2)  
   
--   Windows Server 2012  
+- Windows Server 2012  
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
   
- 디버그 중인 네트워크가 방화벽으로 보호되지 않는 경우에는 이 구성이 필요하지 않습니다. 그렇지 않은 경우 Visual Studio를 호스트하는 컴퓨터와 디버그해야 하는 원격 컴퓨터 둘 다에서 방화벽 구성을 변경해야 합니다.  
+  디버그 중인 네트워크가 방화벽으로 보호되지 않는 경우에는 이 구성이 필요하지 않습니다. 그렇지 않은 경우 Visual Studio를 호스트하는 컴퓨터와 디버그해야 하는 원격 컴퓨터 둘 다에서 방화벽 구성을 변경해야 합니다.  
   
- **IPSec** 네트워크에서 IPSec을 사용하여 통신을 수행해야 하는 경우 Visual Studio 호스트 컴퓨터와 원격 컴퓨터 둘 다에서 추가 포트를 열어야 합니다.  
+  **IPSec** 네트워크에서 IPSec을 사용하여 통신을 수행해야 하는 경우 Visual Studio 호스트 컴퓨터와 원격 컴퓨터 둘 다에서 추가 포트를 열어야 합니다.  
   
- **웹 서버** 원격 웹 서버를 디버그하는 경우 원격 컴퓨터에서 추가 포트를 열어야 합니다.  
+  **웹 서버** 원격 웹 서버를 디버그하는 경우 원격 컴퓨터에서 추가 포트를 열어야 합니다.  
   
- 두 컴퓨터에서 동일한 운영 체제를 실행할 필요는 없습니다. 예를 들어 Visual Studio 컴퓨터는 Windows 10을 실행하고 원격 컴퓨터는 Windows Server 2012 R2를 실행할 수 있습니다.  
+  두 컴퓨터에서 동일한 운영 체제를 실행할 필요는 없습니다. 예를 들어 Visual Studio 컴퓨터는 Windows 10을 실행하고 원격 컴퓨터는 Windows Server 2012 R2를 실행할 수 있습니다.  
   
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>Visual Studio 컴퓨터에서 Windows 방화벽을 구성하려면  
  Windows 방화벽을 구성하기 위한 지침은 운영 체제마다 약간 다릅니다. Windows 7 또는 Windows Server 2008에서는 **프로그램** 이란 단어가 사용되고, Windows 8/8.1, Windows 10 및 Windows Server 2012에서는 **앱** 이란 단어가 사용됩니다.  다음 단계에서는 **앱**이란 단어를 사용합니다.  

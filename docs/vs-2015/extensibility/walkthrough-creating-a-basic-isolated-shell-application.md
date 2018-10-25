@@ -17,12 +17,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a23acf29b0ffc3a763b34ca12e08abd5a81b5d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942573"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>연습: 기본 격리 셸 응용 프로그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ ms.locfileid: "49199539"
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>기본 웹 브라우저 홈 페이지를 사용자 지정 하려면  
   
-1.  MyVSShellStub.Application.pkgdef 파일에서 변경 된 `DefaultHomePage` 요소 값을 "http://www.microsoft.com"입니다.  
+1. MyVSShellStub.Application.pkgdef 파일에서 변경 된 `DefaultHomePage` 요소 값을 "<http://www.microsoft.com>"입니다.  
   
-2.  MyVSShellStub 프로젝트를 다시 작성 합니다.  
+2. MyVSShellStub 프로젝트를 다시 작성 합니다.  
   
-3.  솔루션을 빌드하고 디버깅을 시작합니다.  
+3. 솔루션을 빌드하고 디버깅을 시작합니다.  
   
-4.  **보기 / 기타 Windows**, 클릭 **웹 브라우저**합니다. 합니다 **웹 브라우저** 창에는 Microsoft Corporation 홈 페이지가 표시 됩니다.  
+4. **보기 / 기타 Windows**, 클릭 **웹 브라우저**합니다. 합니다 **웹 브라우저** 창에는 Microsoft Corporation 홈 페이지가 표시 됩니다.  
   
 ## <a name="removing-the-print-command"></a>인쇄 명령 제거  
  격리 셸 UI 프로젝트에서.vsct 파일 형식의 선언 집합을 이루어져 `<Define name=No_` *요소*`>`여기서 *요소* 표준 Visual Studio 메뉴 중 하나인 및 명령입니다.  
@@ -173,26 +173,26 @@ ms.locfileid: "49199539"
 ## <a name="deploying-the-isolated-shell-application"></a>격리 셸 응용 프로그램 배포  
  설치 프로젝트를 만들어 대상 컴퓨터에 격리 셸 응용 프로그램을 배포 합니다. 이러한 작업을 지정 해야 합니다.  
   
--   대상 컴퓨터에서 파일과 폴더의 레이아웃입니다.  
+- 대상 컴퓨터에서 파일과 폴더의 레이아웃입니다.  
   
--   .NET Framework 및 Visual Studio 셸 런타임 있는지을 보장 하는 시작 조건은 대상 컴퓨터에 설치 됩니다.  
+- .NET Framework 및 Visual Studio 셸 런타임 있는지을 보장 하는 시작 조건은 대상 컴퓨터에 설치 됩니다.  
   
- 다음 절차에서는 컴퓨터에 InstallShield Limited Edition을 설치 해야 합니다.  
+  다음 절차에서는 컴퓨터에 InstallShield Limited Edition을 설치 해야 합니다.  
   
 #### <a name="to-create-the-setup-project"></a>설치 프로젝트를 만들려면  
   
-1.  **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 클릭 **새 프로젝트 추가**합니다.  
+1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 클릭 **새 프로젝트 추가**합니다.  
   
-2.  에 **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 선택한 후 **설치 및 배포**합니다. InstallShield 템플릿을 선택 합니다. 새 프로젝트의 이름을 `MySetup` 을 클릭 한 다음 **확인**합니다.  
+2. 에 **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 선택한 후 **설치 및 배포**합니다. InstallShield 템플릿을 선택 합니다. 새 프로젝트의 이름을 `MySetup` 을 클릭 한 다음 **확인**합니다.  
   
-3.  InstallShield Limited Edition이 이미 설치 되어 다음 단계로 이동 합니다.  
+3. InstallShield Limited Edition이 이미 설치 되어 다음 단계로 이동 합니다.  
   
-     InstallShield Limited Edition 이미 설치 되어 있지 않으면, InstallShield 다운로드 페이지가 나타납니다. 다운로드 하 고 Visual Studio 버전과 호환 되는 InstallShield의 버전을 선택 하면 제품 설치 지침을 따릅니다. InstallShield 설치를 등록 하거나 평가판으로 사용할 것인지 결정 해야 합니다. 설치를 완료 한 후에 Visual Studio를 다시 시작 해야 합니다.  
+    InstallShield Limited Edition 이미 설치 되어 있지 않으면, InstallShield 다운로드 페이지가 나타납니다. 다운로드 하 고 Visual Studio 버전과 호환 되는 InstallShield의 버전을 선택 하면 제품 설치 지침을 따릅니다. InstallShield 설치를 등록 하거나 평가판으로 사용할 것인지 결정 해야 합니다. 설치를 완료 한 후에 Visual Studio를 다시 시작 해야 합니다.  
   
-    > [!IMPORTANT]
-    >  InstallShield 프로젝트를 만들려면 관리자 권한으로 Visual Studio를 시작 해야 합니다. 이렇게 하지 않는 경우 프로젝트를 빌드할 때 오류가 받습니다.  
+   > [!IMPORTANT]
+   >  InstallShield 프로젝트를 만들려면 관리자 권한으로 Visual Studio를 시작 해야 합니다. 이렇게 하지 않는 경우 프로젝트를 빌드할 때 오류가 받습니다.  
   
- 다음 단계에는 설치 프로젝트를 구성 하는 방법을 보여 줍니다.  
+   다음 단계에는 설치 프로젝트를 구성 하는 방법을 보여 줍니다.  
   
 > [!IMPORTANT]
 >  설치 프로젝트를 구성 하기 전에 한 번 이상 격리 된 셸 프로젝트의 릴리스 구성은 빌드 되었는지 확인 합니다.  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949792723135c21f6554a98403cfa58554b60185
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7341c88bdf4039f16d87cdd137081c0c7bac5ba2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937540"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 속성의 값에 대 한 참조를 반환합니다.  
@@ -44,7 +44,7 @@ int GetReference(
  [out] 반환 된 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 속성의 값에 대 한 참조를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 에 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가, 일반적으로 반환 `E_NOTIMPL` 또는 `E_GETREFERENCE_NO_REFERENCE`합니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 오류 코드를 일반적으로 반환 `E_NOTIMPL` 또는 `E_GETREFERENCE_NO_REFERENCE`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

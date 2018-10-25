@@ -14,25 +14,25 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933549"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 그림 단추 이벤트 처리기 표시를 위한 코드 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 단계에서는 **사진 표시** 단추가 다음과 같이 작동하도록 합니다.  
   
--   사용자가 이 단추를 선택하면 프로그램에서 **파일 열기** 대화 상자가 열립니다.  
+- 사용자가 이 단추를 선택하면 프로그램에서 **파일 열기** 대화 상자가 열립니다.  
   
--   사용자가 그림 파일을 열면 프로그램의 PictureBox에 해당 그림이 표시됩니다.  
+- 사용자가 그림 파일을 열면 프로그램의 PictureBox에 해당 그림이 표시됩니다.  
   
- IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있습니다. 코드 입력을 시작하면 입력한 부분 단어에 대한 완성 단어를 제시하는 상자가 IDE에서 열립니다. IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사용자가 마지막으로 선택한 항목으로 자동으로 이동합니다. 위쪽 또는 아래쪽 화살표를 사용하여 목록에서 이동하거나 문자를 계속 입력하여 선택 범위를 좁힐 수 있습니다. 원하는 선택 항목이 있으면 Tab 키를 선택해서 항목을 선택합니다. 원하는 항목이 없는 경우 제시되는 항목을 무시할 수도 있습니다.  
+  IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있습니다. 코드 입력을 시작하면 입력한 부분 단어에 대한 완성 단어를 제시하는 상자가 IDE에서 열립니다. IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사용자가 마지막으로 선택한 항목으로 자동으로 이동합니다. 위쪽 또는 아래쪽 화살표를 사용하여 목록에서 이동하거나 문자를 계속 입력하여 선택 범위를 좁힐 수 있습니다. 원하는 선택 항목이 있으면 Tab 키를 선택해서 항목을 선택합니다. 원하는 항목이 없는 경우 제시되는 항목을 무시할 수도 있습니다.  
   
- ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")이 항목의 비디오 버전을 보려면 [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 4) 또는 [Tutorial 1: Create a Picture Viewer in C# - Video 4](http://go.microsoft.com/fwlink/?LinkId=205203)(자습서 1: C#에서 사진 뷰어 만들기 - 비디오 4)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.  
+  ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")이 항목의 비디오 버전을 보려면 [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215)(자습서 1: Visual Basic에서 사진 뷰어 만들기 - 비디오 4) 또는 [Tutorial 1: Create a Picture Viewer in C# - Video 4](http://go.microsoft.com/fwlink/?LinkId=205203)(자습서 1: C#에서 사진 뷰어 만들기 - 비디오 4)를 참조하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>그림 표시 단추 이벤트 처리기를 위한 코드를 작성하려면  
   
