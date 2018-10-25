@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f28748914566162cbe070dd3d2e606eb8ce118
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b69f90633c08eda3b27c0292be44743b2cd38509
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948371"
 ---
 # <a name="stepkind"></a>STEPKIND
-단계별 코드 실행 단계 종류를 지정 합니다.  
+단계별 실행에 대 한 단계 종류를 지정합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,16 +51,16 @@ public enum enum_STEPKIND {
  함수 한 단계씩 실행 합니다.  
   
  STEP_OVER  
- 함수 프로시저 단위로 실행 합니다.  
+ 함수를 건너뜁니다.  
   
  STEP_OUT  
- 함수의 프로시저에서 나갑니다.  
+ 함수에서 나갑니다.  
   
  STEP_BACKWARDS  
- 테이블 반환 함수는 이전 버전과 단계입니다.  
+ 함수에 이전 버전과 단계입니다.  
   
 ## <a name="remarks"></a>설명  
- 에 대 한 인수로 전달 되는 [단계](../../../extensibility/debugger/reference/idebugprocess3-step.md) 메서드.  
+ 인수로 전달 된 [단계](../../../extensibility/debugger/reference/idebugprocess3-step.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

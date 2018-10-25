@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937891"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 ## <a name="document-outline-window"></a>문서 개요 창  
  XAML 디자이너의 문서 개요 창은 이러한 작업을 수행하는 데 도움이 됩니다.  
   
--   아트보드의 모든 요소에 대한 계층 구조를 표시합니다.  
+- 아트보드의 모든 요소에 대한 계층 구조를 표시합니다.  
   
--   요소를 수정(계층 구조에서 이동, 아트보드에서 수정, 속성 창에서 속성 설정 등)할 수 있도록 선택합니다. 자세한 내용은 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)을 참조하십시오.  
+- 요소를 수정(계층 구조에서 이동, 아트보드에서 수정, 속성 창에서 속성 설정 등)할 수 있도록 선택합니다. 자세한 내용은 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)을 참조하십시오.  
   
--   컨트롤인 요소의 템플릿을 만들고 수정합니다.  
+- 컨트롤인 요소의 템플릿을 만들고 수정합니다.  
   
--   선택한 요소에 대한 상황에 맞는 메뉴를 사용합니다. 아트보드에서 선택한 요소에 대해서도 동일한 메뉴를 사용할 수 있습니다.  
+- 선택한 요소에 대한 상황에 맞는 메뉴를 사용합니다. 아트보드에서 선택한 요소에 대해서도 동일한 메뉴를 사용할 수 있습니다.  
   
- 문서 개요 창을 보려면 메뉴 모음에서 **보기**, **다른 창**, **문서 개요**를 선택합니다.  
+  문서 개요 창을 보려면 메뉴 모음에서 **보기**, **다른 창**, **문서 개요**를 선택합니다.  
   
- ![문서 개요 창](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![문서 개요 창](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- 다음은 문서 개요 창에서 사용할 수 있는 옵션입니다.  
+  다음은 문서 개요 창에서 사용할 수 있는 옵션입니다.  
   
- **문서 개요**  
- 문서 개요 창의 주 보기에는 트리 구조의 문서 계층 구조가 표시됩니다. 문서 개요의 계층적 특성을 사용하여 다양한 수준의 세부 정보에서 문서를 검사하고 단독으로 또는 그룹으로 요소를 잠그고 숨길 수 있습니다.  
+  **문서 개요**  
+  문서 개요 창의 주 보기에는 트리 구조의 문서 계층 구조가 표시됩니다. 문서 개요의 계층적 특성을 사용하여 다양한 수준의 세부 정보에서 문서를 검사하고 단독으로 또는 그룹으로 요소를 잠그고 숨길 수 있습니다.  
   
- **표시/숨기기**  
- 문서 개요의 항목에 해당하는 아트보드 요소를 표시하거나 숨깁니다. 표시되면 눈 기호가 나타나는 **표시/숨기기** 단추를 사용합니다. 또는 요소를 숨기려면 Ctrl+H를 누르고, 요소를 표시하려면 Shift+Ctrl+H를 누릅니다.  
+  **표시/숨기기**  
+  문서 개요의 항목에 해당하는 아트보드 요소를 표시하거나 숨깁니다. 표시되면 눈 기호가 나타나는 **표시/숨기기** 단추를 사용합니다. 또는 요소를 숨기려면 Ctrl+H를 누르고, 요소를 표시하려면 Shift+Ctrl+H를 누릅니다.  
   
- **잠금/잠금해제**  
- 문서 개요의 항목에 해당하는 아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. 잠기면 자물쇠가 나타나는 **잠금/잠금해제** 단추를 사용합니다. 또는 요소를 잠그려면 Ctrl+L을 누르고, 잠금 해제하려면 Shift+Ctrl+L을 누릅니다.  
+  **잠금/잠금해제**  
+  문서 개요의 항목에 해당하는 아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. 잠기면 자물쇠가 나타나는 **잠금/잠금해제** 단추를 사용합니다. 또는 요소를 잠그려면 Ctrl+L을 누르고, 잠금 해제하려면 Shift+Ctrl+L을 누릅니다.  
   
- **범위를 pageRoot로 되돌립니다.**  
- 문서 개요 창의 위쪽에 있는 옵션은 위쪽 화살표 기호를 표시하며 문서 개요를 이전 범위로 반환합니다. 범위 상향 지정은 스타일이나 템플릿의 범위에 있을 경우에만 적용할 수 있습니다.  
+  **범위를 pageRoot로 되돌립니다.**  
+  문서 개요 창의 위쪽에 있는 옵션은 위쪽 화살표 기호를 표시하며 문서 개요를 이전 범위로 반환합니다. 범위 상향 지정은 스타일이나 템플릿의 범위에 있을 경우에만 적용할 수 있습니다.  
   
 ## <a name="properties-window"></a>속성 창  
  속성 창을 사용하면 컨트롤에 대한 속성 값을 설정할 수 있습니다. 다음과 같이 나타납니다.  

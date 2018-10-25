@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c95007ed5b740812ca2b1a269390fbad6ffbc2ba
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 42c1a9cd2d1c9d1349b07e06d65a8da6a41b4245
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938227"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Visual Studio 메뉴 모음에 메뉴 추가
 이 연습에서는 Visual Studio 통합된 개발 환경 (IDE)의 메뉴 모음에 메뉴를 추가 하는 방법을 보여 줍니다. IDE 메뉴 모음에 메뉴 범주와 같은 **파일**를 **편집**를 **뷰**를 **창**, 및 **도움말** .  
@@ -41,48 +41,48 @@ ms.locfileid: "39079535"
   
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>IDE 메뉴 모음의 메뉴 만들기  
   
-1.  **솔루션 탐색기**오픈 *TestCommandPackage.vsct*합니다.  
+1. **솔루션 탐색기**오픈 *TestCommandPackage.vsct*합니다.  
   
-     파일 끝에는 \<기호 > 몇 가지를 포함 하는 노드 \<GuidSymbol > 노드. GuidTestCommandPackageCmdSet 노드에서 새 기호를 다음과 같이 추가 합니다.  
+    파일 끝에는 \<기호 > 몇 가지를 포함 하는 노드 \<GuidSymbol > 노드. GuidTestCommandPackageCmdSet 노드에서 새 기호를 다음과 같이 추가 합니다.  
   
-    ```xml  
-    <IDSymbol name="TopLevelMenu" value="0x1021"/>  
-    ```  
+   ```xml  
+   <IDSymbol name="TopLevelMenu" value="0x1021"/>  
+   ```  
   
-2.  빈 \<메뉴 >에서 노드를 \<명령 > 노드를 직전 \<그룹 >입니다. 에 \<메뉴 > 노드를 추가 \<메뉴 > 다음과 같은 노드:  
+2. 빈 \<메뉴 >에서 노드를 \<명령 > 노드를 직전 \<그룹 >입니다. 에 \<메뉴 > 노드를 추가 \<메뉴 > 다음과 같은 노드:  
   
-    ```xml  
-    <Menus>  
-          <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
-            <Parent guid="guidSHLMainMenu"  
-                    id="IDG_VS_MM_TOOLSADDINS" />  
-            <Strings>  
-              <ButtonText>TestMenu</ButtonText>  
-              <CommandName>TestMenu</CommandName>  
-            </Strings>  
-        </Menu>  
-    </Menus>  
-    ```  
+   ```xml  
+   <Menus>  
+         <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
+           <Parent guid="guidSHLMainMenu"  
+                   id="IDG_VS_MM_TOOLSADDINS" />  
+           <Strings>  
+             <ButtonText>TestMenu</ButtonText>  
+             <CommandName>TestMenu</CommandName>  
+           </Strings>  
+       </Menu>  
+   </Menus>  
+   ```  
   
-     합니다 `guid` 고 `id` 명령 집합의 명령 집합 및 특정 메뉴를 지정 하는 메뉴의 값입니다.  
+    합니다 `guid` 고 `id` 명령 집합의 명령 집합 및 특정 메뉴를 지정 하는 메뉴의 값입니다.  
   
-     합니다 `guid` 고 `id` 부모 값의 도구 및 추가 기능 메뉴를 포함 하는 Visual Studio 메뉴 모음 섹션에는 메뉴의 위치입니다.  
+    합니다 `guid` 고 `id` 부모 값의 도구 및 추가 기능 메뉴를 포함 하는 Visual Studio 메뉴 모음 섹션에는 메뉴의 위치입니다.  
   
-     값을 `CommandName` 문자열 텍스트를 메뉴 항목에 표시 되도록 지정 합니다.  
+    값을 `CommandName` 문자열 텍스트를 메뉴 항목에 표시 되도록 지정 합니다.  
   
-3.  에 \<그룹 > 섹션을 찾습니다 합니다 \<그룹 > 변경를 \<부모 > 방금 추가한 메뉴를 가리키도록 요소:  
+3. 에 \<그룹 > 섹션을 찾습니다 합니다 \<그룹 > 변경를 \<부모 > 방금 추가한 메뉴를 가리키도록 요소:  
   
-    ```csharp  
-    <Groups>  
-          <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
-            <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
-          </Group>  
-        </Groups>  
-    ```  
+   ```csharp  
+   <Groups>  
+         <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
+           <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
+         </Group>  
+       </Groups>  
+   ```  
   
-     이렇게 하면 새 메뉴 그룹 부분입니다.  
+    이렇게 하면 새 메뉴 그룹 부분입니다.  
   
-4.  찾기는 `Buttons` 섹션입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 패키지 템플릿은 생성에 `Button` 로 설정 하는 부모 요소 `MyMenuGroup`합니다. 결과적으로,이 명령을 메뉴에 표시 됩니다.  
+4. 찾기는 `Buttons` 섹션입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 패키지 템플릿은 생성에 `Button` 로 설정 하는 부모 요소 `MyMenuGroup`합니다. 결과적으로,이 명령을 메뉴에 표시 됩니다.  
   
 ## <a name="build-and-test-the-extension"></a>빌드 및 확장 테스트  
   

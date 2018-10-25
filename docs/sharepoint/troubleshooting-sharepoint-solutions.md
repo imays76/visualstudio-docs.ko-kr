@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928960"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
   다음 문제 또는 경고를 사용 하 여 SharePoint 솔루션을 디버깅할 때 발생할 수 있습니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거. 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버깅](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)합니다.
@@ -53,21 +53,21 @@ ms.locfileid: "37119472"
 ### <a name="resolution"></a>해결  
  SharePoint 프로젝트 및 프로젝트 항목 이름의 경우 다음 문자만 사용합니다.  
   
--   영숫자 ASCII 문자  
+- 영숫자 ASCII 문자  
   
--   공백  
+- 공백  
   
--   마침표 (입니다.)  
+- 마침표 (입니다.)  
   
--   쉼표 ()  
+- 쉼표 ()  
   
--   밑줄 (_)  
+- 밑줄 (_)  
   
--   대시 (-)  
+- 대시 (-)  
   
--   백슬래시(\\)  
+- 백슬래시(\\)  
   
- 프로젝트가 패키지될 때 유효성 검사 규칙은 배포 중인 각 파일의 배포 경로 속성에 이러한 유효한 문자만 포함되어 있는지 확인합니다.  
+  프로젝트가 패키지될 때 유효성 검사 규칙은 배포 중인 각 파일의 배포 경로 속성에 이러한 유효한 문자만 포함되어 있는지 확인합니다.  
   
 ## <a name="errors-when-creating-custom-fields"></a>사용자 지정 필드를 만들 때 오류 발생
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 사용자 지정 필드는 XML로 정의됩니다. 필드가 정의되어 있지 않거나 특정 형식을 사용하여 참조되는 경우 오류가 발생할 수 있습니다.  
@@ -147,15 +147,15 @@ ms.locfileid: "37119472"
 ### <a name="resolution"></a>해결  
  이 문제는 기능 범위가 사이트 수준 이벤트를 처리 하는 "사이트" 해야 합니다. 하지만 이벤트 수신기가 프로젝트에 대 한 기본 기능 범위는 "Web" 때문에 발생 합니다. 영향을 받는 웹 이벤트 다음과 같습니다.  
   
--   사이트를 삭제 (WebDeleting)  
+- 사이트를 삭제 (WebDeleting)  
   
--   사이트 삭제 됨 (WebDeleted)  
+- 사이트 삭제 됨 (WebDeleted)  
   
--   사이트를 이동 (WebMoving)  
+- 사이트를 이동 (WebMoving)  
   
--   사이트 이동 됨 (WebMoved)  
+- 사이트 이동 됨 (WebMoved)  
   
- 이 문제를 해결 하려면 이벤트 수신기의 기능 범위를 다음과 같이 변경 합니다.  
+  이 문제를 해결 하려면 이벤트 수신기의 기능 범위를 다음과 같이 변경 합니다.  
   
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>이벤트 수신기의 기능 범위를 변경 하려면  
   
@@ -215,7 +215,7 @@ ms.locfileid: "37119472"
  가져온된 목록 인스턴스에 이름을 바꾼 후에서 실행 하는 경우이 문제가 발생 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.  
   
 ### <a name="error-message"></a>오류 메시지
- 빌드 오류: 기능 활성화 ' 배포 단계에서 오류가 발생 했습니다: 파일 Template\Features\\[*프로젝트를 가져와서**기능**이름*] \Files\Lists\\[*이전 * * 목록 이름*] \Schema.xml 존재 하지 않습니다.  
+ 빌드 오류: 기능 활성화 ' 배포 단계에서 오류가 발생 했습니다: 파일 Template\Features\\[*프로젝트를 가져와서*<em>기능</em>*이름*] \Files\Lists \\[*이전*<em>목록 이름</em>] \Schema.xml 존재 하지 않습니다.  
   
 ### <a name="resolution"></a>해결  
  목록 인스턴스를 가져올 때 CustomSchema 이라는 특성 목록 인스턴스의 Elements.xml 파일에 추가 됩니다. Elements.xml 목록 인스턴스에 대 한 사용자 지정 schema.xml의 경로 포함 합니다. 목록 인스턴스 이름을 바꾸면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], 사용자 지정 schema.xml에 대 한 배포 경로 변경 하지만 CustomSchema 특성의 경로 값이 업데이트 되지 않습니다. 결과적으로 목록 인스턴스를 찾을 수 없습니다는 *schema.xml* 기능이 활성화 되 면 CustomSchema 특성으로 지정 된 이전 경로에 파일입니다.  

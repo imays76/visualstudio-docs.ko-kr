@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 0f18aaff185e6591d43f10c979c00b654d5608a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949385"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 
@@ -52,13 +52,13 @@ ms.locfileid: "39582397"
 
 또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.
 
--   WCF Data Services. 자세한 내용은 [개요](/dotnet/framework/data/wcf/wcf-data-services-overview)합니다.
+- WCF Data Services. 자세한 내용은 [개요](/dotnet/framework/data/wcf/wcf-data-services-overview)합니다.
 
--   [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]의 데이터 모델
+- [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]의 데이터 모델
 
--   엔터티 데이터 모델 및 ADO.NET Entity Framework 자세한 내용은 [Entity Framework 개요](/dotnet/framework/data/adonet/ef/overview)합니다.
+- 엔터티 데이터 모델 및 ADO.NET Entity Framework 자세한 내용은 [Entity Framework 개요](/dotnet/framework/data/adonet/ef/overview)합니다.
 
--   WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)합니다.
+- WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)합니다.
 
 ## <a name="create-the-service-project"></a>서비스 프로젝트를 만들려면
 
@@ -171,23 +171,23 @@ WCF 데이터 서비스에서 데이터를 표시 하려면 서비스를 기반�
 
 WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니다. 이 연습 뒷부분에서 사용자가 이러한 단추를 사용해 판매 레코드를 보고 업데이트할 수 있도록 하는 코드를 추가합니다.
 
-1.  **솔루션 탐색기**를 두 번 클릭 **MainWindow.xaml**합니다.
+1. **솔루션 탐색기**를 두 번 클릭 **MainWindow.xaml**합니다.
 
-     WPF 디자이너에서 창이 열립니다.
+    WPF 디자이너에서 창이 열립니다.
 
-2.  디자이너의 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 뷰에서 `<Grid>` 태그 사이에 다음 코드를 추가합니다.
+2. 디자이너의 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 뷰에서 `<Grid>` 태그 사이에 다음 코드를 추가합니다.
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="525" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="525" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  프로젝트를 빌드합니다.
+3. 프로젝트를 빌드합니다.
 
 ## <a name="create-the-data-bound-controls"></a>데이터 바인딩된 컨트롤 만들기
 

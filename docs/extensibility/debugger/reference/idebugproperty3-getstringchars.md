@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f7d5430326f57acf686b90f911445cc36dbf02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d6df39bcd02fe74e2c6ada24d341cd3d2fdfb75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932938"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-이 속성과 연결 된 문자열을 검색 하 고 사용자가 제공한 버퍼에 저장 합니다.  
+이 속성을 사용 하 여 연결 된 문자열을 검색 하 고 사용자가 제공한 버퍼에 저장 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -45,24 +45,24 @@ int GetStringChars(
   
 #### <a name="parameters"></a>매개 변수  
  `buflen`  
- [in] 최대 문자 수는 사용자가 제공한 버퍼를 보유할 수 있습니다.  
+ [in] 최대 문자 수는 사용자가 제공한 버퍼를 포함할 수 있습니다.  
   
  `rgString`  
- [out] 문자열을 반환 합니다.  
+ [out] 문자열을 반환합니다.  
   
- [C + +만], `rgString` 문자열의 유니코드 문자를 받는 버퍼에 대 한 포인터입니다. 이 버퍼 이상 이어야 합니다 `buflen` 크기의 문자 (바이트 아님).  
+ [C + +만] `rgString` 문자열의 유니코드 문자를 받는 버퍼에 대 한 포인터입니다. 이 버퍼 이상 이어야 합니다 `buflen` 크기에서 (바이트 아님) 문자입니다.  
   
  `pceltFetched`  
- [out] 여기서 실제 버퍼에 저장 되는 문자 수가 반환 됩니다. (수 `NULL` c + +에서.)  
+ [out] 여기서 실제로 버퍼에 저장 하는 문자 수가 반환 됩니다. (수 `NULL` c + +에서.)  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- C + +에서 주의 해야 버퍼 이상 인지를 보장 하는 데 `buflen` 자의 유니코드 문자입니다. 유니코드 문자가 2 바이트 길이 인지 확인 합니다.  
+ C + +에서는 기울여야 버퍼 이상 인지 확인 `buflen` 자의 유니코드 문자입니다. 2 바이트 유니코드 문자는 참고 합니다.  
   
 > [!NOTE]
->  C + +에서는 반환 된 문자열에는 null 종결 문자 포함 되지 않습니다. 를 지정 하는 경우 `pceltFetched` 문자열의 문자 수를 지정 합니다.  
+>  C + +에서 반환된 된 문자열에는 null 종결 문자 포함 되지 않습니다. 주어진 경우 `pceltFetched` 문자열의 문자 수를 지정 합니다.  
   
 ## <a name="example"></a>예제  
  

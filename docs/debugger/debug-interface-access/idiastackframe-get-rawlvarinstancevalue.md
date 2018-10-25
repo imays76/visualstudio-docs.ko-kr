@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c50b1db74674158d4c7304bbacb4105f387cd56
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7f5e34b766e27693326aba34b7b7259042870f00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933497"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 이 메서드는 원시 바이트로 지정 된 지역 변수 값을 검색합니다.  
@@ -37,19 +37,19 @@ HRESULT get_rawLVarInstanceValue(
   
 #### <a name="parameters"></a>매개 변수  
  `pInstance`  
- [in] `IDiaLVarInstance` 지역 변수 값을 가져올의 인스턴스를 나타내는 개체입니다.  
+ [in] `IDiaLVarInstance` 에 대 한 값을 가져올 로컬 변수의 인스턴스를 나타내는 개체입니다.  
   
  `cbDataMax`  
- [in] 최대 버퍼의 바이트 수로 가리키는 `pbData`합니다. 이 최대 8 바이트 수 (`sizeof(ULONGLONG)`).  
+ [in] 최대 버퍼의 바이트 수로 가리키는 `pbData`합니다. 8 바이트의 최대 수 (`sizeof(ULONGLONG)`).  
   
  `pcbData`  
- [out] 버퍼에 저장 된 바이트의 실제 수를 반환 합니다.  
+ [out] 실제 버퍼에 저장 된 바이트 수를 반환 합니다.  
   
  `pbData`  
- [out] 데이터를 채울 수 버퍼입니다. 이 될 수 없습니다 `NULL`합니다.  
+ [out] 데이터를 입력할 버퍼입니다. 이는 `NULL`이 될 수 없습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

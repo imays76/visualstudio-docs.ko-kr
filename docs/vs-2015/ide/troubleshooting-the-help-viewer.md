@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29c7ee223bbfbeb2dd7b262c33d6c00ea3c41411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245546"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934238"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>도움말 뷰어 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ ms.locfileid: "49245546"
 ## <a name="additional-resources"></a>추가 리소스  
  다음 리소스를 사용하여 도움말 뷰어에 대한 추가 정보를 얻고 피드백을 제공할 수 있습니다.  
   
--   피드백을 제공 하려면 Microsoft 웹 사이트에서 [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983)를 참조하거나 [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com)으로 이메일을 보내십시오.  
+- 피드백을 제공 하려면 Microsoft 웹 사이트에서 [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983)를 참조하거나 [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com)으로 이메일을 보내십시오.  
   
--   자세한 내용은 참조는 [Developer Documentation and Help System](http://go.microsoft.com/fwlink/?LinkId=232741) 포럼 및 [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) 블로그.  
+- 자세한 내용은 참조는 [Developer Documentation and Help System](http://go.microsoft.com/fwlink/?LinkId=232741) 포럼 및 [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743) 블로그.  
   
 ## <a name="see-also"></a>참고 항목  
  [도움말 뷰어 2.1 관리자 가이드](http://go.microsoft.com/fwlink/?LinkId=243985)

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6ca9fd11e56631061d86c35f9e6bd686b8750b50
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928661"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform 유틸리티를 사용 하 여 파일 생성
 
@@ -51,11 +51,11 @@ TextTransform [<options>] <templateName>
 ### <a name="parameters"></a>매개 변수
 
 |**인수**|**설명**|
-|------------------|---------------------|
+|-|-|
 |`templateName`|변환 하려는 템플릿 파일의 이름을 식별 합니다.|
 
 |**옵션**|**설명**|
-|----------------|---------------------|
+|-|-|
 |**-out** \<filename>|변환의 출력을 쓸 파일입니다.|
 |**-r** \<assembly>|컴파일 및 텍스트 템플릿을 실행에 사용 되는 어셈블리입니다.|
 |**-u** \<namespace>|서식 파일을 컴파일하는 데 사용 되는 네임 스페이스입니다.|
@@ -68,7 +68,7 @@ TextTransform [<options>] <templateName>
 ## <a name="related-topics"></a>관련 항목
 
 |작업|항목|
-|----------|-----------|
+|-|-|
 |Visual Studio 솔루션에서 파일을 생성 합니다.|[T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |고유한 데이터 소스를 변형하는 지시문 프로세서를 작성합니다.|[T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)|
 |텍스트 템플릿을 사용자 고유의 응용 프로그램에서 호출할 수 있는 텍스트 템플릿 호스트를 작성 합니다.|[사용자 지정 호스트를 사용하여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)|

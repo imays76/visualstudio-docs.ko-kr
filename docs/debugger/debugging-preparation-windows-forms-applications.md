@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec3fff82fcdc8db8328d1129a860495d081be2e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7c4dc7cb560e6ae652474d16e003eafb352643ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951069"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비: Windows Forms 응용 프로그램
 Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만듭니다. 이러한 형식의 응용 프로그램은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 쉽게 디버깅할 수 있습니다. 자세한 내용은 [Windows 응용 프로그램 프로젝트를 만드는](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))합니다.  
@@ -47,23 +47,23 @@ Windows Forms 프로젝트 템플릿은 Windows Forms 응용 프로그램을 만
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>C#, F# 또는 Visual Basic Windows Forms 응용 프로그램을 디버깅하려면  
   
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 프로젝트를 엽니다.  
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 프로젝트를 엽니다.  
   
-2.  필요한 중단점을 만듭니다.  
+2. 필요한 중단점을 만듭니다.  
   
-     Windows Forms 응용 프로그램은 이벤트 구동 응용 프로그램이므로 중단점은 이벤트 처리기 코드에 배치되거나 이벤트 처리기 코드에서 호출하는 메서드에 배치됩니다. 중단점이 배치되는 일반적인 이벤트는 다음과 같습니다.  
+    Windows Forms 응용 프로그램은 이벤트 구동 응용 프로그램이므로 중단점은 이벤트 처리기 코드에 배치되거나 이벤트 처리기 코드에서 호출하는 메서드에 배치됩니다. 중단점이 배치되는 일반적인 이벤트는 다음과 같습니다.  
   
-    1.  Click, Enter 같이 컨트롤에 연결된 이벤트  
+   1. Click, Enter 같이 컨트롤에 연결된 이벤트  
   
-    2.  Load, Activated 같이 응용 프로그램 시작 및 종료에 연결된 이벤트  
+   2. Load, Activated 같이 응용 프로그램 시작 및 종료에 연결된 이벤트  
   
-    3.  포커스 및 유효성 검사 이벤트  
+   3. 포커스 및 유효성 검사 이벤트  
   
-     자세한 내용은 [Windows Forms에서 이벤트 처리기 만들기](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms)를 참조하세요.  
+      자세한 내용은 [Windows Forms에서 이벤트 처리기 만들기](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms)를 참조하세요.  
   
-3.  에 **디버그** 메뉴에서 클릭 **시작**합니다.  
+3. 에 **디버그** 메뉴에서 클릭 **시작**합니다.  
   
-4.  에 설명 된 기술을 사용 하 여 디버깅할 [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)합니다.  
+4. 에 설명 된 기술을 사용 하 여 디버깅할 [디버거 기본 사항](../debugger/getting-started-with-the-debugger.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) (관리 코드 디버그)  

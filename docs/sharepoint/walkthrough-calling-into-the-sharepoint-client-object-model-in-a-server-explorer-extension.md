@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934680"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출
   이 연습에 대 한 확장에서 SharePoint 클라이언트 개체 모델을 호출 하는 방법에 설명 합니다 **SharePoint 연결** 노드에서 **서버 탐색기**합니다. SharePoint 클라이언트 개체 모델을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)합니다.  
@@ -57,11 +57,11 @@ ms.locfileid: "42635270"
 ## <a name="create-the-projects"></a>프로젝트 만들기
  이 연습을 완료 하려면 두 개의 프로젝트를 만들어야 합니다.  
   
--   VSIX 패키지 배포를 만들려면 VSIX 프로젝트를 **서버 탐색기** 확장 합니다.  
+- VSIX 패키지 배포를 만들려면 VSIX 프로젝트를 **서버 탐색기** 확장 합니다.  
   
--   구현 하는 클래스 라이브러리 프로젝트를 **서버 탐색기** 확장 합니다.  
+- 구현 하는 클래스 라이브러리 프로젝트를 **서버 탐색기** 확장 합니다.  
   
- 프로젝트를 만들어 연습을 시작 합니다.  
+  프로젝트를 만들어 연습을 시작 합니다.  
   
 #### <a name="to-create-the-vsix-project"></a>VSIX 프로젝트를 만들려면  
   

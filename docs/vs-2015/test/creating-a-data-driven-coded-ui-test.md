@@ -15,12 +15,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 09cf6f69348c08ec284e074feea8d9a33c488f0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932626"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>데이터 기반의 코딩된 UI 테스트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,13 +204,13 @@ ms.locfileid: "49229470"
   
 #### <a name="step-5--run-the-data-driven-test"></a>5단계 – 데이터 기반 테스트 실행  
   
-1.  테스트를 다시 실행하여 이제 테스트가 데이터 기반인지를 확인합니다.  
+1. 테스트를 다시 실행하여 이제 테스트가 데이터 기반인지를 확인합니다.  
   
-     .csv 파일의 값을 사용하여 3회 반복 실행되는 테스트를 확인할 수 있습니다. 유효성 검사도 작동해야 하며, 테스트 탐색기에서 테스트가 통과로 표시되어야 합니다.  
+    .csv 파일의 값을 사용하여 3회 반복 실행되는 테스트를 확인할 수 있습니다. 유효성 검사도 작동해야 하며, 테스트 탐색기에서 테스트가 통과로 표시되어야 합니다.  
   
- **지침**  
+   **지침**  
   
- 자세한 내용은 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)(Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트) 및 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)(Visual Studio 2012를 사용한 연속 배달 테스트 - 5장: 시스템 테스트 자동화)를 참조하세요.  
+   자세한 내용은 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)(Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트) 및 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)(Visual Studio 2012를 사용한 연속 배달 테스트 - 5장: 시스템 테스트 자동화)를 참조하세요.  
   
 ## <a name="q--a"></a>Q & A  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3868838c72b2d9a50f2a1b3dc8eedaa3d36ac67c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4447ab5e5c0ced7852d0cb7dae3a4c0c7e3b3e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928180"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>단추의 다시 사용할 수 있는 그룹 만들기
 명령 그룹은 항상 함께 나타나는 메뉴 또는 도구 모음의 명령 모음입니다. CommandPlacements 부분에서 다른 부모 메뉴에 할당 하 여 다시 사용할 수 있는 명령 그룹을 *.vsct* 파일입니다.  
@@ -88,37 +88,37 @@ ms.locfileid: "39498856"
   
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>다시 사용할 수 있는 단추 그룹 메뉴에 추가할  
   
-1.  에 항목을 생성 합니다 `CommandPlacements` 섹션입니다. GUID 및 ID를 설정 합니다 `CommandPlacement` 요소를 해당 그룹의 GUID 및 ID의 대상 위치는 부모를 설정 합니다.  
+1. 에 항목을 생성 합니다 `CommandPlacements` 섹션입니다. GUID 및 ID를 설정 합니다 `CommandPlacement` 요소를 해당 그룹의 GUID 및 ID의 대상 위치는 부모를 설정 합니다.  
   
-     CommandPlacements 섹션 명령 섹션 직후 배치 해야 합니다.  
+    CommandPlacements 섹션 명령 섹션 직후 배치 해야 합니다.  
   
-    ```xml  
-    <CommandTable>  
-    ...  
-      <Commands>... </Commands>  
-      <CommandPlacements>... </CommandPlacements>  
-    ...   
-    </CommandTable>  
-    ```  
+   ```xml  
+   <CommandTable>  
+   ...  
+     <Commands>... </Commands>  
+     <CommandPlacements>... </CommandPlacements>  
+   ...   
+   </CommandTable>  
+   ```  
   
-     둘 이상의 메뉴 명령 그룹을 포함할 수 있습니다. 부모 메뉴 하나일 수 있습니다 만든에서 제공 하는 하나 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (에 설명 된 대로 *ShellCmdDef.vsct* 또는 *SharedCmdDef.vsct*), 또는 다른 VSPackage에서 정의 됩니다. 부모 메뉴를 연결할 최종적으로 부모/자식 관리 계층의 수는 무제한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 또는 VSPackage에 표시 되는 바로 가기 메뉴에 있습니다.  
+    둘 이상의 메뉴 명령 그룹을 포함할 수 있습니다. 부모 메뉴 하나일 수 있습니다 만든에서 제공 하는 하나 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (에 설명 된 대로 *ShellCmdDef.vsct* 또는 *SharedCmdDef.vsct*), 또는 다른 VSPackage에서 정의 됩니다. 부모 메뉴를 연결할 최종적으로 부모/자식 관리 계층의 수는 무제한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 또는 VSPackage에 표시 되는 바로 가기 메뉴에 있습니다.  
   
-     다음 예제 그룹을 넣습니다 합니다 **솔루션 탐색기** 다른 단추의 오른쪽 도구 모음입니다.  
+    다음 예제 그룹을 넣습니다 합니다 **솔루션 탐색기** 다른 단추의 오른쪽 도구 모음입니다.  
   
-    ```xml  
-    <CommandPlacements>  
-        <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
-          <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
-        </CommandPlacement>  
-    </CommandPlacements>  
-    ```  
+   ```xml  
+   <CommandPlacements>  
+       <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
+         <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
+       </CommandPlacement>  
+   </CommandPlacements>  
+   ```  
   
-    ```xml  
-    <CommandPlacements>  
-      <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
-          priority="0x605">  
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
-      </CommandPlacement>  
-    </CommandPlacements>  
+   ```xml  
+   <CommandPlacements>  
+     <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
+         priority="0x605">  
+       <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
+     </CommandPlacement>  
+   </CommandPlacements>  
   
-    ```
+   ```

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932314"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ ms.locfileid: "49286093"
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Visual Basic에 대한 특정 경고를 표시하지 않으려면  
   
-1.  **솔루션 탐색기**에서 경고를 표시하지 않으려는 프로젝트를 선택합니다.  
+1. **솔루션 탐색기**에서 경고를 표시하지 않으려는 프로젝트를 선택합니다.  
   
-2.  메뉴 모음에서 **프로젝트**, **프로젝트 언로드**를 선택합니다.  
+2. 메뉴 모음에서 **프로젝트**, **프로젝트 언로드**를 선택합니다.  
   
-3.  **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **편집**_ProjectName_**.vbproj**를 선택합니다.  
+3. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **편집**_ProjectName_**.vbproj**를 선택합니다.  
   
-     프로젝트 파일이 코드 편집기에서 열립니다.  
+    프로젝트 파일이 코드 편집기에서 열립니다.  
   
-4.  빌드에 사용 중인 빌드 구성에서 `<NoWarn></NoWarn>` 요소를 찾습니다.  
+4. 빌드에 사용 중인 빌드 구성에서 `<NoWarn></NoWarn>` 요소를 찾습니다.  
   
-     다음 예제에서는 x86 플랫폼의 디버그 빌드 구성에 대한 `<NoWarn></NoWarn>` 요소를 굵은 텍스트로 표시합니다.  
+    다음 예제에서는 x86 플랫폼의 디버그 빌드 구성에 대한 `<NoWarn></NoWarn>` 요소를 굵은 텍스트로 표시합니다.  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  하나 이상의 경고 번호를 `<NoWarn>` 요소의 값으로 추가합니다. 여러 경고 번호를 지정하는 경우 다음 예제와 같이 쉼표로 구분합니다.  
+5. 하나 이상의 경고 번호를 `<NoWarn>` 요소의 값으로 추가합니다. 여러 경고 번호를 지정하는 경우 다음 예제와 같이 쉼표로 구분합니다.  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  변경 내용을 .vbproj 파일에 저장합니다.  
+6. 변경 내용을 .vbproj 파일에 저장합니다.  
   
-7.  메뉴 모음에서 **프로젝트**, **프로젝트 다시 로드**를 선택합니다.  
+7. 메뉴 모음에서 **프로젝트**, **프로젝트 다시 로드**를 선택합니다.  
   
-8.  메뉴 모음에서 **빌드**, **솔루션 다시 빌드**를 선택합니다.  
+8. 메뉴 모음에서 **빌드**, **솔루션 다시 빌드**를 선택합니다.  
   
-     지정한 경고가 **출력** 창에 더 이상 표시되지 않습니다.  
+    지정한 경고가 **출력** 창에 더 이상 표시되지 않습니다.  
   
- 자세한 내용은 [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)을 참조하세요.  
+   자세한 내용은 [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md)   

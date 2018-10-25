@@ -15,18 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10685adb27c9bf2e962beccb7e68f19ce5c27eeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 489a641e0f42f6e8e1720929775d8da3df08eeb8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948345"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 단계를 수행합니다.  
   
 > [!NOTE]
->  이 메서드는 사용 되지 않습니다. 사용 하 여 [단계](../../../extensibility/debugger/reference/idebugprocess3-step.md) 메서드 대신 합니다.  
+>  이 메서드는 사용 되지 않습니다. 사용 된 [단계](../../../extensibility/debugger/reference/idebugprocess3-step.md) 메서드 대신 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,22 +48,22 @@ int Step(
   
 #### <a name="parameters"></a>매개 변수  
  `pThread`  
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 도 실행 중인 스레드를 나타내는 개체입니다.  
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 단계별 중인 스레드를 나타내는 개체입니다.  
   
  `sk`  
- [in] 값은 [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) 단계의 종류를 지정 하는 열거형입니다.  
+ [in] 값을 [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) 단계의 종류를 지정 하는 열거형입니다.  
   
  `step`  
- [in] 값은 [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) (예를 들어 하 여 문 또는 명령)의 단계 단위를 지정 하는 열거형입니다.  
+ [in] 값을 [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) 지정 열거형 단계의 단위 (예를 들어, 문 또는 명령).  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 모든 스레드 동기화 또는 스레드 간의 통신 된 경우에 특정 스레드를 진행 하는 프로그램의 다른 스레드를 실행 해야 합니다.  
+ 발생 한 경우 모든 스레드 동기화 또는 스레드 간 통신, 특정 스레드에서 단계별로 실행할 때 프로그램의 다른 스레드를 실행 해야 합니다.  
   
 > [!WARNING]
->  Stopping 이벤트 또는 즉시 (동기) 이벤트를 보내지 않음 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 이 호출을 처리 하는 동안 그렇지 않은 경우 디버거가 중단 될 수 있습니다.  
+>  Stopping 이벤트 또는 직접 (동기) 이벤트를 전송 하지 마십시오 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 이 호출을 처리 하는 동안 그렇지 않은 경우 디버거가 중단 될 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

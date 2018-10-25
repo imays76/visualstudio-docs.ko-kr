@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929974"
 ---
 # <a name="customizing-the-model-explorer"></a>모델 탐색기 사용자 지정
 변경할 수 있습니다 탐색기의 동작과 모양을 도메인별 언어 디자이너에 대 한 다음과 같습니다.
@@ -42,23 +42,23 @@ ms.locfileid: "47859902"
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>탐색기 노드에 아이콘을 추가 하려면
 
-1.  만들기는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 작업 흐름 솔루션 템플릿을 사용 하 여 솔루션입니다.
+1. 만들기는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 작업 흐름 솔루션 템플릿을 사용 하 여 솔루션입니다.
 
-2.  에 16 x 16 픽셀 아이콘을 포함 하는.bmp 파일을 저장 합니다 **Dsl\Resources** 솔루션에서 폴더.
+2. 에 16 x 16 픽셀 아이콘을 포함 하는.bmp 파일을 저장 합니다 **Dsl\Resources** 솔루션에서 폴더.
 
-3.  에 **DSL 탐색기**를 마우스 오른쪽 단추로 클릭 **탐색기 동작** 클릭 하 고 **새 탐색기 노드 설정을 추가**합니다.
+3. 에 **DSL 탐색기**를 마우스 오른쪽 단추로 클릭 **탐색기 동작** 클릭 하 고 **새 탐색기 노드 설정을 추가**합니다.
 
-     **ExplorerNodeSettings** 노드 아래에 나타납니다 합니다 **사용자 지정 노드 설정** 노드.
+    **ExplorerNodeSettings** 노드 아래에 나타납니다 합니다 **사용자 지정 노드 설정** 노드.
 
-4.  선택 **ExplorerNodeSettings**, 한 다음는 **속성** 창에서 **클래스** 하 **행위자**합니다.
+4. 선택 **ExplorerNodeSettings**, 한 다음는 **속성** 창에서 **클래스** 하 **행위자**합니다.
 
-5.  설정할 **아이콘을 표시 하려면** 아이콘 파일의 경로입니다.
+5. 설정할 **아이콘을 표시 하려면** 아이콘 파일의 경로입니다.
 
-6.  모든 템플릿 변환 하 고 빌드 후 솔루션을 실행 합니다.
+6. 모든 템플릿 변환 하 고 빌드 후 솔루션을 실행 합니다.
 
-7.  생성된 된 디자이너에서 샘플 다이어그램을 엽니다.
+7. 생성된 된 디자이너에서 샘플 다이어그램을 엽니다.
 
-     세 가지 탐색기에 표시 됩니다 **행위자** 아이콘에 있는 노드.
+    세 가지 탐색기에 표시 됩니다 **행위자** 아이콘에 있는 노드.
 
 > [!NOTE]
 >  생성 된 탐색기에 표시 되는 모든 요소에 대 한 노드 아이콘을 사용 하도록 설정한 경우 모든 탐색기 노드 아이콘이 표시 됩니다. 아이콘 없음에 설정한 경우 노드는 기본 아이콘이 표시 됩니다.

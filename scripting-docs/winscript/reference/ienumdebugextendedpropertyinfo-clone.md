@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d873ba29ea2dc327cd6499613abb66d2a728008c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 03e4dcd79d90806eab0d664b2a0cba428c03207c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935330"
 ---
 # <a name="ienumdebugextendedpropertyinfoclone"></a>IEnumDebugExtendedPropertyInfo::Clone
-현재 열거자와 동일한 열거 상태가 포함 하는 열거자를 만듭니다.  
+현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,10 +38,10 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>매개 변수  
  `ppEnum`  
- [out] 복제 된 반환 `IEnumDebugExtendedPropertyInfo` 인터페이스입니다.  
+ [out] 복제 된 반환 `IEnumDebugExtendedPropertyInfo` 인터페이스.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`합니다.  
+ 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
   
 ## <a name="see-also"></a>참고 항목  
  [IEnumDebugExtendedPropertyInfo 인터페이스](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)

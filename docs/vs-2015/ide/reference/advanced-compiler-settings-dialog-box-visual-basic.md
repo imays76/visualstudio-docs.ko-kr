@@ -18,12 +18,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f64f5510974af133100a355656bf3689d928869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd910b0e0295ca12807b96af189032ffec766429
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949827"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>고급 컴파일러 설정 대화 상자(Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "49261588"
   
 ### <a name="to-access-this-dialog-box"></a>이 대화 상자에 액세스하려면  
   
-1.  **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다.  
+1. **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다.  
   
-2.  **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너**가 나타나면 **컴파일** 탭을 클릭합니다.  
+2. **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너**가 나타나면 **컴파일** 탭을 클릭합니다.  
   
-3.  [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)에서 **구성** 및 **플랫폼**을 선택합니다. 단순화된 빌드 구성에서 **구성** 및 **플랫폼** 목록이 표시되지 않습니다. 자세한 내용은 [디버그 및 릴리스 프로젝트 구성](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)을 참조하세요.  
+3. [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)에서 **구성** 및 **플랫폼**을 선택합니다. 단순화된 빌드 구성에서 **구성** 및 **플랫폼** 목록이 표시되지 않습니다. 자세한 내용은 [디버그 및 릴리스 프로젝트 구성](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)을 참조하세요.  
   
-4.  **고급 컴파일 옵션**을 클릭합니다.  
+4. **고급 컴파일 옵션**을 클릭합니다.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
   
 ## <a name="optimizations"></a>최적화  
  다음 옵션은 경우에 따라 프로그램 파일을 축소하고, 프로그램을 신속하게 실행하고, 빌드 프로세스를 가속화할 수 있도록 최적화를 지정합니다.  

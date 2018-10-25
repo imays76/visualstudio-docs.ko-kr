@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949905"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>연습: Excel 용 첫 VSTO 추가 기능에 만들기
   이 소개용 연습에서는 Microsoft Office Excel의 응용 프로그램 수준 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 통합 문서에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다.  
@@ -32,15 +32,15 @@ ms.locfileid: "38797801"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   Excel용 Excel VSTO 추가 기능 프로젝트 만들기  
+- Excel용 Excel VSTO 추가 기능 프로젝트 만들기  
   
--   Excel의 개체 모델을 사용하여 통합 문서가 저장될 때 통합 문서에 텍스트를 추가하는 코드 작성  
+- Excel의 개체 모델을 사용하여 통합 문서가 저장될 때 통합 문서에 텍스트를 추가하는 코드 작성  
   
--   테스트를 위해 프로젝트 빌드 및 실행  
+- 테스트를 위해 프로젝트 빌드 및 실행  
   
--   VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 완료된 프로젝트 정리  
+- VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 완료된 프로젝트 정리  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -78,20 +78,20 @@ ms.locfileid: "38797801"
   
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>저장된 통합 문서에 텍스트 줄을 추가하려면  
   
-1.  ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 새 코드에서는 통합 문서가 저장될 때 발생하는 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 이벤트의 이벤트 처리기를 정의합니다.  
+1. ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 새 코드에서는 통합 문서가 저장될 때 발생하는 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 이벤트의 이벤트 처리기를 정의합니다.  
   
-     사용자가 통합 문서를 저장하면 이벤트 처리기는 현재 워크시트의 시작 부분에 새 텍스트를 추가합니다.  
+    사용자가 통합 문서를 저장하면 이벤트 처리기는 현재 워크시트의 시작 부분에 새 텍스트를 추가합니다.  
   
-     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  C#을 사용하는 경우 필요한 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 `Application_WorkbookBeforeSave` 이벤트 처리기를 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 이벤트와 연결하는 데 사용됩니다.  
+2. C#을 사용하는 경우 필요한 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 `Application_WorkbookBeforeSave` 이벤트 처리기를 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 이벤트와 연결하는 데 사용됩니다.  
   
-     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
- 통합 문서가 저장될 때 통합 문서를 수정하기 위해 앞의 코드 예제에서는 다음 개체를 사용합니다.  
+   통합 문서가 저장될 때 통합 문서를 수정하기 위해 앞의 코드 예제에서는 다음 개체를 사용합니다.  
   
--   `Application` 클래스의 `ThisAddIn` 필드. `Application` 필드는 Excel의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.Excel.Application> 개체를 반환합니다.  
+-   `ThisAddIn` 클래스의 `Application` 필드. `Application` 필드는 Excel의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.Excel.Application> 개체를 반환합니다.  
   
 -   `Wb` 이벤트에 대한 이벤트 처리기의 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 매개 변수입니다. `Wb` 매개 변수는 저장된 통합 문서를 나타내는 <xref:Microsoft.Office.Interop.Excel.Workbook> 개체입니다. 자세한 내용은 [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)합니다.  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940959"
 ---
 # <a name="how-to-choose-collection-methods"></a>방법: 컬렉션 방법 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "49274419"
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 성능 세션 **Method** 속성을 사용하여 응용 프로그램에 가장 적절한 수집 방법을 지정할 수 있습니다. 성능 마법사, 성능 탐색기 또는 성능 세션의 속성 페이지에서 수집 방법을 설정할 수 있습니다. 명령줄 도구를 사용할 경우 자세한 내용은 [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)을 참조하세요.  
+  성능 세션 **Method** 속성을 사용하여 응용 프로그램에 가장 적절한 수집 방법을 지정할 수 있습니다. 성능 마법사, 성능 탐색기 또는 성능 세션의 속성 페이지에서 수집 방법을 설정할 수 있습니다. 명령줄 도구를 사용할 경우 자세한 내용은 [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)을 참조하세요.  
   
 ## <a name="performance-wizard"></a>성능 마법사  
   

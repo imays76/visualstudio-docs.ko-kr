@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74f39ce8e9e350c791371f20b7401d685fb1d18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 78ea2148290402f2a8e5c08474de125fc52bca47
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936513"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-검색할에 대 한 정보를 지정 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다.  
+에 대 한 검색 정보를 지정 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -52,7 +52,7 @@ public enum enum_FIELD_INFO_FIELDS {
   
 ## <a name="members"></a>멤버  
  FIF_FULLNAME  
- 초기화/사용 된 `bstrFullName` 필드에 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조입니다.  
+ 초기화/사용 된 `bstrFullName` 필드를 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조입니다.  
   
  FIF_NAME  
  초기화/사용 된 `bstrName` 필드에 `FIELD_INFO` 구조입니다.  
@@ -64,11 +64,11 @@ public enum enum_FIELD_INFO_FIELDS {
  초기화/사용 된 `bstrModifiers` 필드에 `FIELD_INFO` 구조입니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값에 인수로 전달도 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 의 필드를 지정 하는 메서드는 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조를 초기화할 수는 있습니다.  
+ 이러한 값을 인수로 전달도 됩니다는 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 의 필드를 지정 하는 메서드는 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조는 초기화할.  
   
- 이러한 값에도 사용 됩니다는 `dwFields` 의 멤버는 `FIELD_INFO` 구조에는 필드는 사용 되지 않으며 유효한 합니다.  
+ 이러한 값에도 사용 됩니다 합니다 `dwFields` 의 멤버는 `FIELD_INFO` 에 유효 하 고 사용 되는 필드는 구조체.  
   
- 이러한 플래그 비트와 함께 `OR`합니다.  
+ 이러한 플래그는 비트과 결합 될 수 `OR`입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8241ab85ad705200e256b4facccaecd0a50a1de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1249e6b435f7cd396ea7912cb7aebf8d78cf94f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948384"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
-예외를 가로챌 때 수행할 동작을 지정 합니다.  
+예외를 가로챌 때 수행할 작업을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,10 +44,10 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
   
 #### <a name="parameters"></a>매개 변수  
  IEA_INTERCEPT  
- 현재 예외를 가로챌 수 있습니다. 현재 지원 되는 유일한 값 이므로 지정 해야 합니다.  
+ 현재 예외를 가로챌 수 있습니다. 현재 지원 되는 유일한 값 이며 지정 해야 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값은로 전달 되는 [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 메서드.  
+ 이러한 값에 전달 되는 [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

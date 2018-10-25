@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48772ed5835daeff9d47773e6e48526993fa425
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bbefc02a05d03dc966c05941ca08c05cce0a5a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947916"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
-예외 또는 디버깅 중인 프로그램에 의해 throw 되는 런타임 오류를 설명 합니다.  
+디버그 중인 프로그램에서 throw 된 런타임 오류 또는 예외를 설명 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,7 +51,7 @@ public struct EXCEPTION_INFO {
   
 ## <a name="members"></a>멤버  
  pProgram  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 예외가 발생 한 프로그램을 나타내는 개체입니다.  
+ 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 예외가 발생 한 프로그램을 나타내는 개체입니다.  
   
  bstrProgramName  
  예외가 발생 한 프로그램의 이름입니다.  
@@ -63,13 +63,13 @@ public struct EXCEPTION_INFO {
  예외 또는 런타임 오류에 대 한 id 코드입니다.  
   
  dwState  
- 값은 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 예외 상태를 정의 하는 열거형입니다.  
+ 값을 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 예외 상태를 정의 하는 열거형입니다.  
   
  guidType  
  GUID 언어 식별자를 `guidLang` 또는 `guidEng`합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 구조에 대 한 매개 변수로 전달 되는 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) 및 [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) 메서드. 이 구조에 전달 됩니다는 [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) 메서드를 입력 합니다.  
+ 이 구조에 대 한 매개 변수로 전달 되는 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) 하며 [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) 메서드. 이 구조에 전달 되는 [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) 채워야 하는 방법입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

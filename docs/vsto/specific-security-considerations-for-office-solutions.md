@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c3bf48cf5f8acd24661adf2d9ae36324fadfd72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951394"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office 솔루션에 대 한 특정 보안 고려 사항
   Microsoft .NET Framework 및 Microsoft Office에서 제공된 보안 기능을 통해 다양한 보안 위협에 대해 Office 솔루션을 보호할 수 있습니다. 이 항목에서는 이러한 위협 중 일부에 대해 설명하고 이러한 위협으로부터 보호하기 위한 권장 사항을 제공합니다. 또한 Office 솔루션에 영향을 주는 Microsoft Office 보안 설정에 대한 정보를 포함합니다.  
@@ -55,23 +55,23 @@ ms.locfileid: "35674429"
   
  개체 모델 보호는 Outlook이 Microsoft Exchange Server와 함께 사용되는지 여부에 따라 여러 가지 방법으로 VSTO 추가 기능에 영향을 줄 수 있습니다.  
   
--   Outlook이 Exchange와 함께 사용되지 않는 경우 관리자는 컴퓨터의 모든 VSTO 추가 기능에 대해 개체 모델 보호를 사용하거나 사용하지 않도록 설정할 수 있습니다.  
+- Outlook이 Exchange와 함께 사용되지 않는 경우 관리자는 컴퓨터의 모든 VSTO 추가 기능에 대해 개체 모델 보호를 사용하거나 사용하지 않도록 설정할 수 있습니다.  
   
--   Outlook이 Exchange와 함께 사용되는 경우 관리자는 컴퓨터의 모든 VSTO 추가 기능에 대해 개체 모델 보호를 사용 또는 사용하지 않도록 설정하거나, 개체 모델 보호 발생 없이 특정 VSTO 추가 기능을 실행할 수 있도록 지정할 수 있습니다. 또한 관리자는 개체 모델의 특정 영역에 대해 개체 모델 보호 동작을 수정할 수도 있습니다. 예를 들어, 관리자 개체 모델 보호가 설정 된 경우에 VSTO 추가 기능을 프로그래밍 방식으로 이메일을 자동으로 허용할 수 있습니다.  
+- Outlook이 Exchange와 함께 사용되는 경우 관리자는 컴퓨터의 모든 VSTO 추가 기능에 대해 개체 모델 보호를 사용 또는 사용하지 않도록 설정하거나, 개체 모델 보호 발생 없이 특정 VSTO 추가 기능을 실행할 수 있도록 지정할 수 있습니다. 또한 관리자는 개체 모델의 특정 영역에 대해 개체 모델 보호 동작을 수정할 수도 있습니다. 예를 들어, 관리자 개체 모델 보호가 설정 된 경우에 VSTO 추가 기능을 프로그래밍 방식으로 이메일을 자동으로 허용할 수 있습니다.  
   
- Outlook 2007부터 Outlook 보안을 유지하면서 개발자 및 사용자 환경을 개선하도록 개체 모델 보호 동작이 변경되었습니다. 자세한 내용은 [Outlook 2007의 보안 변경 내용 코드](http://go.microsoft.com/fwlink/?LinkId=73429)합니다.  
+  Outlook 2007부터 Outlook 보안을 유지하면서 개발자 및 사용자 환경을 개선하도록 개체 모델 보호 동작이 변경되었습니다. 자세한 내용은 [Outlook 2007의 보안 변경 내용 코드](http://go.microsoft.com/fwlink/?LinkId=73429)합니다.  
   
 ### <a name="minimize-object-model-guard-warnings"></a>개체 모델 보호 경고 최소화  
  제한된 속성 및 메서드 사용 시 보안 경고가 표시되지 않도록 하려면 VSTO 추가 기능에서 프로젝트에 `Application` 클래스의 `ThisAddIn` 필드에서 Outlook 개체를 가져와야 합니다. 이 필드에 대 한 자세한 내용은 참조 하세요. [프로그램 VSTO 추가 기능](../vsto/programming-vsto-add-ins.md)합니다.  
   
- 이 개체에서 가져온 Outlook 개체만 개체 모델 보호에서 신뢰할 수 있습니다. 반면, 새에서 가져온 개체 `Microsoft.Office.Interop.Outlook.Application` 개체 이며, 신뢰할 수 있는 제한 된 속성 및 메서드 개체 모델 보호에 사용 하는 경우 보안 경고를 발생 합니다.  
+ 이 개체에서 가져온 Outlook 개체만 개체 모델 보호에서 신뢰할 수 있습니다. 반면, 개체 모델 보호를 사용하도록 설정할 경우 새 `Microsoft.Office.Interop.Outlook.Application` 개체에서 가져온 개체는 신뢰할 수 없으며 제한된 속성 및 메서드는 보안 경고를 발생시킵니다.  
   
- 개체 모델 보호를 사용하도록 설정할 경우 다음 코드 예제는 보안 경고를 표시합니다. 합니다 `To` 의 속성을 `Microsoft.Office.Interop.Outlook.MailItem` 클래스 개체 모델 보호에 의해 제한 됩니다. `Microsoft.Office.Interop.Outlook.MailItem` 코드 가져와에서 개체를 신뢰할 수 없습니다를 `Microsoft.Office.Interop.Outlook.Application` 를 사용 하 여 만든 합니다 **새** 에서 가져온 것 대신 연산자는 `Application` 필드.  
+ 개체 모델 보호를 사용하도록 설정할 경우 다음 코드 예제는 보안 경고를 표시합니다. `Microsoft.Office.Interop.Outlook.MailItem` 클래스의 `To` 속성은 개체 모델 보호에 의해 제한됩니다. `Microsoft.Office.Interop.Outlook.MailItem` 코드 가져와에서 개체를 신뢰할 수 없습니다를 `Microsoft.Office.Interop.Outlook.Application` 를 사용 하 여 만든 합니다 **새** 에서 가져온 것 대신 연산자는 `Application` 필드.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- 다음 코드 예제에서는 제한 된 속성을 사용 하는 방법에 설명 된 `Microsoft.Office.Interop.Outlook.MailItem` 개체 모델 보호에서 신뢰할 수 있는 개체입니다. 코드를 사용 하 여 신뢰할 수 있는 `Application` 가져올 필드를 `Microsoft.Office.Interop.Outlook.MailItem`입니다.  
+ 다음 코드 예제에서는 제한 된 속성을 사용 하는 방법에 설명 된 `Microsoft.Office.Interop.Outlook.MailItem` 개체 모델 보호에서 신뢰할 수 있는 개체입니다. 이 코드에서는 신뢰할 수 있는 `Application` 필드를 사용하여 `Microsoft.Office.Interop.Outlook.MailItem`을 가져옵니다.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
@@ -94,15 +94,15 @@ ms.locfileid: "35674429"
   
  사용자가 **보안 센터**를 사용하여 VSTO 추가 기능이 로드되지 않도록 방지한 경우 다음 형식의 VSTO 추가 기능이 로드되지 않습니다.  
   
--   관리되는/관리되지 않는 COM VSTO 추가 기능  
+- 관리되는/관리되지 않는 COM VSTO 추가 기능  
   
--   관리되는/관리되지 않는 스마트 문서  
+- 관리되는/관리되지 않는 스마트 문서  
   
--   관리되는/관리되지 않는 자동화 VSTO 추가 기능  
+- 관리되는/관리되지 않는 자동화 VSTO 추가 기능  
   
--   관리되는/관리되지 않는 실시간 데이터 구성 요소  
+- 관리되는/관리되지 않는 실시간 데이터 구성 요소  
   
- 다음 절차에서는 사용자가 **보안 센터** 를 사용하여 VSTO 추가 기능이 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 및 Microsoft Office 2010에서 로드되지 않도록 제한하는 방법을 설명합니다. 이러한 절차는 Visual Studio의 Office 개발을 사용하여 만든 사용자 지정 또는 VSTO 추가 기능에 영향을 주지 않습니다.  
+  다음 절차에서는 사용자가 **보안 센터** 를 사용하여 VSTO 추가 기능이 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 및 Microsoft Office 2010에서 로드되지 않도록 제한하는 방법을 설명합니다. 이러한 절차는 Visual Studio의 Office 개발을 사용하여 만든 사용자 지정 또는 VSTO 추가 기능에 영향을 주지 않습니다.  
   
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Microsoft Office 2010 및 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 응용 프로그램에서 VSTO 추가 기능을 사용하지 않으려면  
   

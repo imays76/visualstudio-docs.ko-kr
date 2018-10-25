@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7622dc9b926124d0ed2b2ae759beafcbac3a475a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 40adf006b141e930a522a2b80787f8f4dfed0a8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950571"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 활동 디자이너
 
@@ -36,7 +36,7 @@ ms.locfileid: "36755800"
 다음 표에서는 <xref:System.Activities.Statements.TransactionScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 합니다 <xref:System.Activities.Activity.DisplayName%2A> 고 <xref:System.Activities.Statements.TransactionScope.Body%2A> 속성을 워크플로 디자이너 화면에서 편집할 수 있습니다. 그러나 다른 속성은 속성 표에서 편집해야 합니다.
 
 |속성 이름|필수|용도|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TransactionScope> 활동의 선택적 이름입니다. 기본값은 TransactionScope입니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|단일 트랜잭션에서 실행할 활동을 지정합니다. 추가할를 <xref:System.Activities.Statements.TransactionScope.Body%2A> 활동에서 활동을 **도구 상자** 에 **본문** 상자에 **TransactionScope** 활동 디자이너를 "드롭 작업 힌트 텍스트가 있는 여기에 "입니다.|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|이 <xref:System.Transactions.IsolationLevel>의 <xref:System.Activities.Statements.TransactionScope>을 지정합니다.|
@@ -48,5 +48,5 @@ ms.locfileid: "36755800"
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
-- [보정](../workflow-designer/compensate-activity-designer.md)
-- [확인](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)

@@ -19,25 +19,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933445"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 추가 기능의 아키텍처
   Visual Studio에서 Office 개발자 도구를 사용하여 만든 VSTO 추가 기능에는 안정성과 보안을 강조하고 Microsoft Office와 긴밀하게 작업할 수 있도록 하는 아키텍처 기능이 있습니다. 이 항목에서는 다음과 같은 VSTO 추가 기능의 측면에 대해 설명합니다.  
   
--   [VSTO 추가 기능 이해](#UnderstandingAddIns)  
+- [VSTO 추가 기능 이해](#UnderstandingAddIns)  
   
--   [VSTO 추가 기능의 구성 요소](#AddinComponents)  
+- [VSTO 추가 기능의 구성 요소](#AddinComponents)  
   
--   [VSTO 추가 기능이 Microsoft Office 응용 프로그램과 작동하는 방식](#HowAddinsWork)  
+- [VSTO 추가 기능이 Microsoft Office 응용 프로그램과 작동하는 방식](#HowAddinsWork)  
   
- [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
+  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- VSTO 추가 기능을 만드는 방법에 대 한 일반적인 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) 하 고 [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md).  
+  VSTO 추가 기능을 만드는 방법에 대 한 일반적인 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) 하 고 [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md).  
   
 ##  <a name="UnderstandingAddIns"></a> VSTO 추가 기능 이해  
  Visual Studio에서 Office 개발자 도구를 사용 하 여 VSTO 추가 기능 작성 하는 경우 Microsoft Office 응용 프로그램에서 로드 되는 관리 코드 어셈블리를 만듭니다. 어셈블리가 로드된 후 VSTO 추가 기능은 응용 프로그램에서 발생하는 이벤트(예: 사용자가 메뉴 항목을 클릭할 때)에 응답할 수 있습니다. VSTO 추가 기능은 응용 프로그램을 자동화하고 확장하기 위해 개체 모델을 호출할 수도 있으며 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]의 클래스 중 하나를 사용할 수 있습니다.  

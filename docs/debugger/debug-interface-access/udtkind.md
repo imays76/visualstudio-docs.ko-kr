@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b95d8bfeda0cd8d5efdaab6d0c2fd13a34c8407c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 49ea6a46825bbb94d55b0e9f9a4c052a1c12ae5f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936565"
 ---
 # <a name="udtkind"></a>UdtKind
-다양 한 사용자 정의 형식 (UDT)에 대해 설명합니다.  
+다양을 한 사용자 정의 형식 (UDT)에 대해 설명합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,19 +37,19 @@ enum UdtKind {
   
 ## <a name="elements"></a>요소  
  UdtStruct  
- UDT는 구조체입니다.  
+ UDT에는 구조입니다.  
   
  UdtClass  
- UDT 클래스가 생성 됩니다.  
+ UDT는 클래스입니다.  
   
  UdtUnion  
  UDT는 공용 구조체입니다.  
   
  UdtInterface  
- UDT는 인터페이스입니다.  
+ UDT 인터페이스입니다.  
   
 ## <a name="remarks"></a>설명  
- 이 열거형의 값을 반환 된 [idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) 메서드.  
+ 이 열거형의 값에서 반환 되는 [idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) 메서드.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: cvconst.h  
