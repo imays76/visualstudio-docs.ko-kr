@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914504"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 모델 디자인 도구 개요
   BDC 디자이너를 사용 하 여 비즈니스 데이터 연결 (BDC) 모델을 디자인할 수는 **BDC 메서드 세부 정보** 창 및 **BDC 탐색기**합니다.  
@@ -43,13 +43,13 @@ ms.locfileid: "36326220"
 ## <a name="bdc-designer"></a>BDC 디자이너
  BDC 디자이너를 사용 하면 모델의 엔터티를 정의 하는 데 서로 간의 관계를 시각적으로 정렬할 수 있습니다. BDC 디자이너를 사용 하 여 다음 작업을 수행 합니다.  
   
--   모델에 엔터티를 추가 합니다.  
+- 모델에 엔터티를 추가 합니다.  
   
--   모델에서 엔터티를 제거 합니다.  
+- 모델에서 엔터티를 제거 합니다.  
   
--   엔터티 간의 관계를 정의 합니다.  
+- 엔터티 간의 관계를 정의 합니다.  
   
- BDC 디자이너를 열려면 프로젝트에 모델 파일을 두 번 클릭 하거나 모델 파일에 대 한 바로 가기 메뉴를 열고 선택한 후 **엽니다**합니다. 끌거나 복사 하 여 모델에 엔터티 추가 **엔터티** 에서 합니다 **도구 상자** 디자이너로 합니다. 두 엔터티 간의 연결을 만들려면 선택 합니다 **연결** 에서 제어를 **도구 상자**, 첫 번째 엔터티를 선택한 다음 두 번째 엔터티를 선택 합니다.  
+  BDC 디자이너를 열려면 프로젝트에 모델 파일을 두 번 클릭 하거나 모델 파일에 대 한 바로 가기 메뉴를 열고 선택한 후 **엽니다**합니다. 끌거나 복사 하 여 모델에 엔터티 추가 **엔터티** 에서 합니다 **도구 상자** 디자이너로 합니다. 두 엔터티 간의 연결을 만들려면 선택 합니다 **연결** 에서 제어를 **도구 상자**, 첫 번째 엔터티를 선택한 다음 두 번째 엔터티를 선택 합니다.  
   
 ## <a name="bdc-method-details-window"></a>BDC 메서드 세부 정보 창
  사용 된 **BDC 메서드 세부 정보** 인스턴스 매개 변수를 정의 하 고 필터 설명자 메서드 창입니다.  

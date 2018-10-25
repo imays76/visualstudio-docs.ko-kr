@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8bdc7a4ea9ac59ee0956226618402b397844b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e86cae45298b3f137e2ebca65fa8c531c6d86457
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109992"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908446"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-사용자 지정 뷰어를 식별 하는 구조체 하거나 시각화 도우미를 입력 합니다.  
+사용자 지정 뷰어를 식별 하는 구조체 시각화 도우미를 입력 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -51,13 +51,13 @@ public struct DEBUG_CUSTOM_VIEWER {
   
 ## <a name="members"></a>멤버  
  dwID  
- 여러 뷰어 또는 하나 구현한 시각화 도우미를 구분 하는 ID `GUID`합니다.  
+ 여러 뷰어 또는 하나에 의해 구현 되는 시각화 도우미를 구분 하기 위해 ID `GUID`합니다.  
   
  bstrMenuName  
- 드롭다운 메뉴에 표시 되는 텍스트입니다.  
+ 드롭다운 메뉴에 나타나는 텍스트입니다.  
   
  bstrDescription  
- 사용자 지정 뷰어 또는 형식 시각화 도우미 (이어야 함 null 값을 사용 되지 않는 경우)의 설명입니다.  
+ 사용자 지정 뷰어 또는 형식 시각화 도우미 (이어야 함 null 값을 사용 하지 않는 경우)의 설명입니다.  
   
  guidLang  
  제공 하는 식 계산기의 언어입니다.  
@@ -69,7 +69,7 @@ public struct DEBUG_CUSTOM_VIEWER {
  메트릭 사용자 지정 뷰어 또는 형식 시각화 도우미 `CLSID` 저장 됩니다.  
   
 ## <a name="remarks"></a>설명  
- 호출 하 여이 구조체의 목록이 반환 됩니다는 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 메서드 (및 확장에 의해는 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 메서드).  
+ 호출 하 여이 구조체의 목록이 반환 됩니다 합니다 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 메서드 (및 확장에 의해 합니다 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 메서드).  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

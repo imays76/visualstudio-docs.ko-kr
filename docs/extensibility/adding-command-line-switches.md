@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901049"
 ---
 # <a name="add-command-line-switches"></a>명령줄 스위치를 추가 합니다.
 VSPackage에 적용 되는 명령줄 스위치를 추가할 수 있습니다 때 *devenv.exe* 실행 됩니다. 사용 하 여 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> 스위치와 해당 속성의 이름을 선언 합니다. 이 예제에서는 myswitch 인 스위치 라는 VSPackage의 서브 클래스에 대 한 항목이 **AddCommandSwitchPackage** 인수 없이 및 자동으로 로드 하는 VSPackage를 사용 하 여 합니다.  
@@ -36,9 +36,9 @@ VSPackage에 적용 되는 명령줄 스위치를 추가할 수 있습니다 때
 |-|-|-|-|
 | 매개 변수 | 설명|
 | 인수 | 스위치에 대 한 인수의 수입니다. 수 "*", 또는 인수 목록입니다. |
-| DemandLoad |  그렇지 않으면 0으로 설정 하는 1로 설정 된 경우에 VSPackage를 자동으로 로드 합니다. |  
+| DemandLoad | 그렇지 않으면 0으로 설정 하는 1로 설정 된 경우에 VSPackage를 자동으로 로드 합니다. |  
 | HelpString | 도움말 문자열 또는 리소스 문자열의 ID를 사용 하 여 표시할 **devenv /?** 합니다. |
-| name | 스위치입니다. |
+| 이름 | 스위치입니다. |
 | PackageGuid | 패키지의 GUID입니다. |  
   
  인수의 첫 번째 값은 일반적으로 0 또는 1입니다. 특수 한 값인 ' *' 전체 나머지 명령줄 인수 임을 나타내는 데 사용할 수 있습니다. 이 디버깅 여기서 사용자 디버거 명령 문자열을 전달 해야 하는 시나리오에 유용할 수 있습니다.  
@@ -54,11 +54,11 @@ VSPackage에 적용 되는 명령줄 스위치를 추가할 수 있습니다 때
 ## <a name="retrieve-command-line-switches"></a>명령줄 스위치를 검색 합니다.  
  패키지 로드 되 면 다음 단계를 완료 하 여 명령줄 스위치를 검색할 수 있습니다.  
   
-1.  VSPackage의의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 구현, 호출 `QueryService` 온 <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> 가져오려고는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> 인터페이스.  
+1. VSPackage의의 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 구현, 호출 `QueryService` 온 <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> 가져오려고는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> 인터페이스.  
   
-2.  호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> 에 사용자가 입력 한 명령줄 스위치를 검색 합니다.  
+2. 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> 에 사용자가 입력 한 명령줄 스위치를 검색 합니다.  
   
- 다음 코드에는 사용자가 myswitch 인 명령줄 스위치를 입력 한 여부를 확인 하는 방법을 보여 줍니다.  
+   다음 코드에는 사용자가 myswitch 인 명령줄 스위치를 입력 한 여부를 확인 하는 방법을 보여 줍니다.  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

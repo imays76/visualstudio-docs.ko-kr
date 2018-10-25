@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 340531f9c943052c1abd51203f3937ccd111e314
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a44fa73a51f1f6da073c63be0873fbefc669b15d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910513"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
-프로그램 공급자에서 가져와야 원하는 속성을 지정 합니다.  
+프로그램 공급자에서 가져와야 desired 속성을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -57,33 +57,33 @@ public enum enum_PROVIDER_FLAGS {
  지정 된 플래그가 없습니다.  
   
  PFLAG_REMOTE_PORT  
- 호출자가 다른 컴퓨터에 있는 프로그램 목록을 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]합니다.  
+ 호출자가 다른 컴퓨터에서 프로그램의 목록을 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]합니다.  
   
  PFLAG_DEBUGGEE  
- 프로세스의이 인스턴스에서 현재 디버깅 중인 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]합니다.  
+ 프로세스의이 인스턴스가 현재 디버깅 중인 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]합니다.  
   
  PFLAG_ATTACH_TODEBUGGEE  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 디버깅 중인 프로그램에 연결 되어 있지만 시작 하지 못했습니다.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 디버그 중인 프로그램에 연결 되어 있지만 시작 하지 못했습니다.  
   
  PFLAG_REASON_WATCH  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 가 이벤트를 감시 합니다.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 이벤트에 대 한 보고 됩니다.  
   
  PFLAG_GET_PROGRAM_NODES  
- 호출자가는 `ProgramNodes` 필드는 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 구조입니다.  
+ 호출자가 합니다 `ProgramNodes` 필드를 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 구조입니다.  
   
  PFLAG_GET_IS_DEBUGGER_PRESENT  
- 호출자가는 `fIsTheDebuggerPresent` 필드는 `PROVIDER_PROCESS_DATA` 구조입니다.  
+ 호출자가 합니다 `fIsTheDebuggerPresent` 필드는 `PROVIDER_PROCESS_DATA` 구조입니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 플래그는 다음 방법에 전달 됩니다.  
+ 이러한 플래그는 다음 메서드에 전달 됩니다.  
   
--   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
--   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
--   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
- 이러한 값에 비트와 함께 사용할 수 있습니다 `OR`합니다.  
+  이러한 값을 비트 결합할 수 있습니다 `OR`합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  

@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924202"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF 응용 프로그램에서 조회 테이블 만들기
 용어 *조회 표* (라고도 *조회 바인딩을*) 다른 테이블의 외래 키 필드의 값을 기반으로 하는 하나의 데이터 테이블의에서 정보를 표시 하는 컨트롤에 설명 합니다. 부모 테이블의 기본 노드 드래그 하 여 조회 테이블을 만들 수도 있고 개체를 **데이터 원본** 열 또는 관련된 자식 테이블의 속성에 이미 바인딩된 컨트롤을 창입니다.
@@ -83,7 +83,7 @@ ms.locfileid: "39176130"
      Visual Studio 조회 바인딩을 구성 하는 컨트롤에 일부 속성을 설정 합니다. 다음 표에서 Visual Studio를 수정 하는 속성을 보여 줍니다. 경우 필요에 따라 변경할 수 있습니다는 XAML 또는 이러한 속성을 **속성** 창입니다.
 
     |속성|설정 설명|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|이 속성에는 컬렉션 또는 컨트롤에 표시 되는 데이터를 가져오는 데 사용 되는 바인딩을 지정 합니다. 이 속성을 설정 하는 visual Studio는 <xref:System.Windows.Data.CollectionViewSource> 컨트롤을 끌어 부모 데이터에 대 한 합니다.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|이 속성을 컨트롤에 표시 되는 데이터 항목의 경로 지정 합니다. Visual Studio를 사용 하면 첫 번째 열 또는 부모 데이터의 속성에이 속성을 설정 하는 문자열 데이터 형식을 갖는 키 후 합니다.<br /><br /> 부모 데이터에 다른 열 또는 속성을 표시 하려는 경우이 속성을 다른 속성의 경로를 변경 합니다.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio 디자이너에 끌어 자식 데이터의 속성에이 속성에 바인딩합니다. 부모 데이터에 외래 키입니다.|

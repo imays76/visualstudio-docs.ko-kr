@@ -28,12 +28,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4958785f2db12dada9bcf062d3865b6b1ae19869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917559"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "49258182"
   
 #### <a name="to-add-a-reference"></a>참조를 추가하려면  
   
-1.  **솔루션 탐색기**에서 참조 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.  
+1. **솔루션 탐색기**에서 참조 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.  
   
-2.  추가할 참조를 지정한 다음 **확인** 단추를 선택합니다.  
+2. 추가할 참조를 지정한 다음 **확인** 단추를 선택합니다.  
   
- **참조 관리자**가 열리고 사용 가능한 참조 목록이 그룹별로 나열됩니다. 프로젝트 형식에 따라 표시되는 다음 그룹이 결정됩니다.  
+   **참조 관리자**가 열리고 사용 가능한 참조 목록이 그룹별로 나열됩니다. 프로젝트 형식에 따라 표시되는 다음 그룹이 결정됩니다.  
   
 -   어셈블리, 프레임워크 및 확장 하위 그룹 포함  
   
@@ -69,29 +69,29 @@ ms.locfileid: "49258182"
   
  어셈블리 탭은 다음 두 개의 하위 탭으로 구성됩니다.  
   
-1.  프레임워크 하위 탭은 대상 프레임워크를 구성하는 모든 어셈블리를 나열합니다.  
+1. 프레임워크 하위 탭은 대상 프레임워크를 구성하는 모든 어셈블리를 나열합니다.  
   
-    -   보급된 어셈블리는 전체 프레임워크에 있으며 프로젝트가 대상 프레임워크의 프로필을 대상으로 지정하는 경우 프레임워크 목록에 열거됩니다. 보급된 어셈블리는 프로젝트의 대상 프레임워크 프로필에 있는 어셈블리와 구분하기 위해 회색으로 표시됩니다. 예를 들어, 프로젝트가 .NET Framework 4 클라이언트를 대상으로 지정하는 경우 프레임워크 목록에는 .NET Framework 4에서 보급된 어셈블리가 표시됩니다. 사용자가 보급된 어셈블리를 추가하면 사용자는 **참조 관리자** 대화 상자가 닫힌 후에 프로젝트의 대상이 .NET Framework 4로 변경되고 보급된 어셈블리가 추가되었음을 알게 됩니다.  
+   -   보급된 어셈블리는 전체 프레임워크에 있으며 프로젝트가 대상 프레임워크의 프로필을 대상으로 지정하는 경우 프레임워크 목록에 열거됩니다. 보급된 어셈블리는 프로젝트의 대상 프레임워크 프로필에 있는 어셈블리와 구분하기 위해 회색으로 표시됩니다. 예를 들어, 프로젝트가 .NET Framework 4 클라이언트를 대상으로 지정하는 경우 프레임워크 목록에는 .NET Framework 4에서 보급된 어셈블리가 표시됩니다. 사용자가 보급된 어셈블리를 추가하면 사용자는 **참조 관리자** 대화 상자가 닫힌 후에 프로젝트의 대상이 .NET Framework 4로 변경되고 보급된 어셈블리가 추가되었음을 알게 됩니다.  
   
-    -   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱용 프로젝트에는 프로젝트 생성 시 기본적으로 대상 [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)]의 모든 어셈블리에 대한 참조가 포함됩니다. 관리 프로젝트에서 **솔루션 탐색기**의 참조 폴더 아래에 있는 읽기 전용 노드는 전체 프레임워크에 대한 참조를 나타냅니다. 따라서 프레임워크 탭은 프레임워크의 어떠한 어셈블리도 열거하지 않고 대신 다음과 같은 메시지를 표시합니다. "모든 Framework 어셈블리가 이미 참조되었습니다. [개체 브라우저]를 사용하여 Framework에서 참조를 탐색하십시오." 데스크톱 프로젝트의 경우, 프레임워크 탭은 대상 프레임워크의 어셈블리를 열거하고 사용자는 응용 프로그램에 필요한 참조를 추가해야 합니다.  
+   -   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱용 프로젝트에는 프로젝트 생성 시 기본적으로 대상 [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)]의 모든 어셈블리에 대한 참조가 포함됩니다. 관리 프로젝트에서 **솔루션 탐색기**의 참조 폴더 아래에 있는 읽기 전용 노드는 전체 프레임워크에 대한 참조를 나타냅니다. 따라서 프레임워크 탭은 프레임워크의 어떠한 어셈블리도 열거하지 않고 대신 다음과 같은 메시지를 표시합니다. "모든 Framework 어셈블리가 이미 참조되었습니다. [개체 브라우저]를 사용하여 Framework에서 참조를 탐색하십시오." 데스크톱 프로젝트의 경우, 프레임워크 탭은 대상 프레임워크의 어셈블리를 열거하고 사용자는 응용 프로그램에 필요한 참조를 추가해야 합니다.  
   
-2.  확장 하위 탭은 구성 요소 및 컨트롤의 외부 공급업체가 개발하고 대상 프레임워크를 확장한 모든 어셈블리를 나열합니다. 사용자 응용 프로그램의 목적에 따라 이러한 어셈블리가 필요할 수 있습니다.  
+2. 확장 하위 탭은 구성 요소 및 컨트롤의 외부 공급업체가 개발하고 대상 프레임워크를 확장한 모든 어셈블리를 나열합니다. 사용자 응용 프로그램의 목적에 따라 이러한 어셈블리가 필요할 수 있습니다.  
   
-    -   확장명 하위 탭은 다음 위치에 등록된 어셈블리를 열거하여 채워집니다.  
+   -   확장명 하위 탭은 다음 위치에 등록된 어셈블리를 열거하여 채워집니다.  
   
-        ```  
-        32-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        64-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        And older versions of the [Target Framework Identifier]  
-        ```  
+       ```  
+       32-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       64-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       And older versions of the [Target Framework Identifier]  
+       ```  
   
-         예를 들어, 프로젝트가 32비트 컴퓨터에서 .NET Framework 4를 대상으로 지정하는 경우, 확장명 하위 탭은 \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ 및 \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\에서 등록된 어셈블리를 열거합니다.  
+        예를 들어, 프로젝트가 32비트 컴퓨터에서 .NET Framework 4를 대상으로 지정하는 경우, 확장명 하위 탭은 \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\, \Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ 및 \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\에서 등록된 어셈블리를 열거합니다.  
   
- 프로젝트의 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에 따라 목록의 일부 구성 요소는 표시되지 않을 수 있습니다. 이 비동기화는 다음과 같은 경우에 발생할 수 있습니다.  
+   프로젝트의 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 버전에 따라 목록의 일부 구성 요소는 표시되지 않을 수 있습니다. 이 비동기화는 다음과 같은 경우에 발생할 수 있습니다.  
   
 -   최신 버전의 .NET Framework를 사용하는 구성 요소는 이전 버전의 .NET Framework를 대상으로 하는 프로젝트와 호환되지 않습니다.  
   
@@ -108,35 +108,35 @@ ms.locfileid: "49258182"
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>참조 추가 대화 상자에서 어셈블리를 표시하려면  
   
--   다음 위치 중 하나로 어셈블리를 이동하거나 복사합니다.  
+- 다음 위치 중 하나로 어셈블리를 이동하거나 복사합니다.  
   
-    -   현재 프로젝트 디렉터리. 이 어셈블리는 **찾아보기** 탭을 통해 찾을 수 있습니다.  
+  - 현재 프로젝트 디렉터리. 이 어셈블리는 **찾아보기** 탭을 통해 찾을 수 있습니다.  
   
-    -   같은 솔루션에 있는 다른 프로젝트 디렉터리. 이 어셈블리는 **프로젝트** 탭을 통해 찾을 수 있습니다.  
+  - 같은 솔루션에 있는 다른 프로젝트 디렉터리. 이 어셈블리는 **프로젝트** 탭을 통해 찾을 수 있습니다.  
   
-     \- 또는 -  
+    \- 또는 -  
   
--   표시할 어셈블리의 위치를 지정하는 레지스트리 키를 설정합니다.  
+- 표시할 어셈블리의 위치를 지정하는 레지스트리 키를 설정합니다.  
   
-     32비트 운영 체제의 경우 다음 레지스트리 키 중 하나를 추가합니다.  
+   32비트 운영 체제의 경우 다음 레지스트리 키 중 하나를 추가합니다.  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     64비트 운영 체제의 경우에는 32비트 레지스트리 하이브에 포함된 다음 레지스트리 키 중 하나를 추가합니다.  
+    64비트 운영 체제의 경우에는 32비트 레지스트리 하이브에 포함된 다음 레지스트리 키 중 하나를 추가합니다.  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"  
   
-     *VersionMinimum*은 적용되는 최하위 .NET Framework 버전입니다. *VersionMinimum*이 v3.0인 경우 AssemblyFoldersEx에 지정된 폴더는 .NET Framework 3.0 이상을 대상으로 하는 프로젝트에 적용됩니다.  
+    *VersionMinimum*은 적용되는 최하위 .NET Framework 버전입니다. *VersionMinimum*이 v3.0인 경우 AssemblyFoldersEx에 지정된 폴더는 .NET Framework 3.0 이상을 대상으로 하는 프로젝트에 적용됩니다.  
   
-     *AssemblyLocation*은 **참조 추가** 대화 상자에 표시하려는 어셈블리의 디렉터리(예: C:\MyAssemblies\\)입니다.  
+    *AssemblyLocation*은 **참조 추가** 대화 상자에 표시하려는 어셈블리의 디렉터리(예: C:\MyAssemblies\\)입니다.  
   
-     HKEY_LOCAL_MACHINE 노드 아래에 레지스트리 키를 만들면 모든 사용자가 **참조 추가** 대화 상자에서 지정된 위치의 어셈블리를 볼 수 있습니다. HKEY_CURRENT_USER 노드 아래에 레지스트리 키를 만들면 현재 사용자에 대한 설정에만 영향을 줍니다.  
+    HKEY_LOCAL_MACHINE 노드 아래에 레지스트리 키를 만들면 모든 사용자가 **참조 추가** 대화 상자에서 지정된 위치의 어셈블리를 볼 수 있습니다. HKEY_CURRENT_USER 노드 아래에 레지스트리 키를 만들면 현재 사용자에 대한 설정에만 영향을 줍니다.  
   
-     **참조 추가** 대화 상자를 다시 엽니다. 어셈블리가 **.NET** 탭에 나타나야 합니다. 어셈블리가 나타나지 않으면 지정된 *AssemblyLocation* 디렉터리에 어셈블리가 있는지 확인하고 Visual Studio를 다시 시작한 후 다시 시도합니다.  
+    **참조 추가** 대화 상자를 다시 엽니다. 어셈블리가 **.NET** 탭에 나타나야 합니다. 어셈블리가 나타나지 않으면 지정된 *AssemblyLocation* 디렉터리에 어셈블리가 있는지 확인하고 Visual Studio를 다시 시작한 후 다시 시도합니다.  
   
 ## <a name="com-tab"></a>COM 탭  
  COM 탭은 참조에 사용할 수 있는 COM 구성 요소를 모두 나열합니다. 내부 매니페스트가 포함된 등록 COM DLL에 참조를 추가하려는 경우 해당 DLL의 등록을 먼저 해제합니다. 그렇지 않으면 네이티브 DLL 대신 ActiveX 컨트롤 같은 어셈블리 참조가 추가됩니다.  
@@ -159,11 +159,11 @@ ms.locfileid: "49258182"
   
  다음 두 가지 방법으로 Visual Studio의 WinMD 파일을 생성할 수 있습니다.  
   
--   **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 관리 프로젝트**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 프로젝트는 프로젝트 속성 &#124; 출력 형식 = WinMD 파일로 설정하여 WinMD 이진 파일을 출력할 수 있습니다. WinMD 파일 이름은 안에 있는 모든 네임스페이스의 상위 네임스페이스여야 합니다. 예를 들어, 프로젝트가 네임스페이스 A.B 및 A.B.C로 구성된 경우 해당 출력 WinMD의 가능한 이름은 A.winmd 및 A.B.winmd입니다. 사용자가 프로젝트의 네임스페이스 집합과 연결되지 않은 "프로젝트 속성 &#124; 어셈블리 이름" 또는 "프로젝트 속성 &#124; 네임스페이스" 값을 입력하거나, 프로젝트 내에 상위 네임스페이스가 없는 경우, 다음과 같은 빌드 경고가 발생합니다. 'A.winmd'은(는) 이 어셈블리에 올바른 .winmd 파일 이름이 아닙니다. Windows 메타데이터 파일 내의 모든 형식은 파일 이름의 하위 네임스페이스에 있어야 합니다. 파일 이름의 하위 네임스페이스에 없는 형식은 런타임에 찾을 수 없습니다. 이 어셈블리에서 가장 작은 공통 네임스페이스는 'CSWSClassLibrary1'입니다. Visual Basic 또는 Visual C# 데스크톱 프로젝트는 자사 WinMD로 알려진 [!INCLUDE[win8](../includes/win8-md.md)] SDK를 사용하여 생성된 WinMD만 사용할 수 있으며, WinMD를 생성할 수 없습니다.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 관리 프로젝트**: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 프로젝트는 프로젝트 속성 &#124; 출력 형식 = WinMD 파일로 설정하여 WinMD 이진 파일을 출력할 수 있습니다. WinMD 파일 이름은 안에 있는 모든 네임스페이스의 상위 네임스페이스여야 합니다. 예를 들어, 프로젝트가 네임스페이스 A.B 및 A.B.C로 구성된 경우 해당 출력 WinMD의 가능한 이름은 A.winmd 및 A.B.winmd입니다. 사용자가 프로젝트의 네임스페이스 집합과 연결되지 않은 "프로젝트 속성 &#124; 어셈블리 이름" 또는 "프로젝트 속성 &#124; 네임스페이스" 값을 입력하거나, 프로젝트 내에 상위 네임스페이스가 없는 경우, 다음과 같은 빌드 경고가 발생합니다. 'A.winmd'은(는) 이 어셈블리에 올바른 .winmd 파일 이름이 아닙니다. Windows 메타데이터 파일 내의 모든 형식은 파일 이름의 하위 네임스페이스에 있어야 합니다. 파일 이름의 하위 네임스페이스에 없는 형식은 런타임에 찾을 수 없습니다. 이 어셈블리에서 가장 작은 공통 네임스페이스는 'CSWSClassLibrary1'입니다. Visual Basic 또는 Visual C# 데스크톱 프로젝트는 자사 WinMD로 알려진 [!INCLUDE[win8](../includes/win8-md.md)] SDK를 사용하여 생성된 WinMD만 사용할 수 있으며, WinMD를 생성할 수 없습니다.  
   
--   **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 네이티브 프로젝트**: 네이티브 WinMD 파일은 메타데이터만으로 구성됩니다. 해당 구현은 별도 DLL 파일에 있습니다. **새 프로젝트** 대화 상자의 Windows 런타임 구성 요소 프로젝트 템플릿을 선택하거나, 빈 프로젝트에서 시작해 프로젝트 속성을 수정하여 WinMD 파일을 생성함으로써 네이티브 이진 파일을 만들 수 있습니다. 프로젝트가 연결되지 않은 네임스페이스로 구성된 경우, 빌드 오류로부터 그러한 네임스페이스를 결합하거나 MSMerge 도구를 실행하는 사용자를 확인할 수 있습니다.  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 네이티브 프로젝트**: 네이티브 WinMD 파일은 메타데이터만으로 구성됩니다. 해당 구현은 별도 DLL 파일에 있습니다. **새 프로젝트** 대화 상자의 Windows 런타임 구성 요소 프로젝트 템플릿을 선택하거나, 빈 프로젝트에서 시작해 프로젝트 속성을 수정하여 WinMD 파일을 생성함으로써 네이티브 이진 파일을 만들 수 있습니다. 프로젝트가 연결되지 않은 네임스페이스로 구성된 경우, 빌드 오류로부터 그러한 네임스페이스를 결합하거나 MSMerge 도구를 실행하는 사용자를 확인할 수 있습니다.  
   
- Windows 탭은 다음 두 개의 하위 그룹으로 구성됩니다.  
+  Windows 탭은 다음 두 개의 하위 그룹으로 구성됩니다.  
   
 ### <a name="core-subgroup"></a>핵심 하위 그룹  
  핵심 하위 그룹은 대상 버전의 Windows용 SDK에 있는 WinMD(Windows 런타임 요소용)를 모두 나열합니다.  

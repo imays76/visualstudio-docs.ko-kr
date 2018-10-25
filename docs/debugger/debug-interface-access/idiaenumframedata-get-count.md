@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a15df11cbdc5cc13aa991e5a7704929e65e29875
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 34cf638b9d0448adc6ec06a09f41a93e65fdc362
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923857"
 ---
 # <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
 프레임 데이터 요소의 수를 검색합니다.  
@@ -37,7 +37,7 @@ HRESULT get_Count (
  [out] 프레임 데이터 요소의 수를 반환합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

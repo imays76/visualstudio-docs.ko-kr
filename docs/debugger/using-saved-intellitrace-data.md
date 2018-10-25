@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3afcfc29dcb01de307f0aefc3a943626bc213d
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912970"
 ---
 # <a name="using-saved-intellitrace-data"></a>저장된 IntelliTrace 데이터 사용
 IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프로그램 실행의 특정 지점으로 이동합니다. 이 파일에는 응용 프로그램이 실행되는 동안 IntelliTrace가 기록하는 성능 이벤트, 예외, 스레드, 테스트 단계 및 기타 시스템 정보가 포함될 수 있습니다.
@@ -159,25 +159,25 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
 
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>SharePoint 상관 관계 ID로 디버깅 시작
 
-1.  해당 소스에서 SharePoint 상관 관계 ID를 복사합니다.
+1. 해당 소스에서 SharePoint 상관 관계 ID를 복사합니다.
 
-     예를 들어:
+    예를 들어:
 
-     ![IntelliTrace &#45; SharePoint 오류 &#45; 상관 관계 ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![IntelliTrace &#45; SharePoint 오류 &#45; 상관 관계 ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
-2.  일치하는 웹 요청 및 기록된 이벤트를 검토하려면 iTrace 파일을 연 다음 **분석** 으로 이동하여 SharePoint 상관 관계 ID를 입력합니다.
+2. 일치하는 웹 요청 및 기록된 이벤트를 검토하려면 iTrace 파일을 연 다음 **분석** 으로 이동하여 SharePoint 상관 관계 ID를 입력합니다.
 
-     ![IntelliTrace 로그 &#45; 입력 SharePoint 상관 관계 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![IntelliTrace 로그 &#45; 입력 SharePoint 상관 관계 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3.  **이벤트 요청**에서 이벤트를 검사합니다. 위에서 시작하여 이벤트가 발생하는 순서대로 나타납니다.
+3. **이벤트 요청**에서 이벤트를 검사합니다. 위에서 시작하여 이벤트가 발생하는 순서대로 나타납니다.
 
-    1.  이벤트를 선택하여 세부 정보를 확인합니다.
+   1. 이벤트를 선택하여 세부 정보를 확인합니다.
 
-    2.  이벤트가 발생한 지점에서 디버깅을 시작하려면 **디버깅 시작** 을 선택합니다.
+   2. 이벤트가 발생한 지점에서 디버깅을 시작하려면 **디버깅 시작** 을 선택합니다.
 
-     ![IntelliTrace 로그 파일 &#45; 웹 요청 보기 &#43; 이벤트](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![IntelliTrace 로그 파일 &#45; 웹 요청 보기 &#43; 이벤트](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
- 이러한 종류의 SharePoint 이벤트를 IntelliTrace 이벤트와 함께 볼 수 있습니다.
+   이러한 종류의 SharePoint 이벤트를 IntelliTrace 이벤트와 함께 볼 수 있습니다.
 
 -   **사용자 프로필 이벤트**
 
@@ -199,28 +199,28 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>처리되지 않은 예외에서 디버깅 시작
 
-1.  예외에 대한 SharePoint 상관 관계 ID를 선택합니다. 예외는 유형과 호출 스택별로 그룹화됩니다.
+1. 예외에 대한 SharePoint 상관 관계 ID를 선택합니다. 예외는 유형과 호출 스택별로 그룹화됩니다.
 
-2.  (선택 사항) 예외의 그룹에 대한 호출 스택을 보려면 **호출 스택** 을 확장합니다.
+2. (선택 사항) 예외의 그룹에 대한 호출 스택을 보려면 **호출 스택** 을 확장합니다.
 
-3.  예외가 발생한 위치와 시간에 디버깅을 시작하려면 **예외 디버그** 를 선택합니다.
+3. 예외가 발생한 위치와 시간에 디버깅을 시작하려면 **예외 디버그** 를 선택합니다.
 
-     ![IntelliTrace 로그 &#45; SharePoint 처리 되지 않은 예외](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![IntelliTrace 로그 &#45; SharePoint 처리 되지 않은 예외](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
- 연습을 참조 하세요 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)합니다. 에이전트에서 기록에 표시 되는 데이터의 종류에 대 한 [IntelliTrace 기능](../debugger/intellitrace-features.md)합니다.
+   연습을 참조 하세요 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)합니다. 에이전트에서 기록에 표시 되는 데이터의 종류에 대 한 [IntelliTrace 기능](../debugger/intellitrace-features.md)합니다.
 
 ###  <a name="ThreadsList"></a> 스레드 목록
  대상 프로세스에서 실행하는 기록된 스레드를 검사합니다. 선택한 스레드에서 첫 번째로 유효한 IntelliTrace 이벤트부터 디버깅을 시작할 수 있습니다.
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>특정 스레드에서 디버깅을 시작하려면
 
-1.  **스레드 목록**에서 스레드를 선택합니다.
+1. **스레드 목록**에서 스레드를 선택합니다.
 
-2.  **스레드 목록**아래쪽에서 **디버깅 시작**을 선택합니다. 스레드를 두 번 클릭할 수도 있습니다.
+2. **스레드 목록**아래쪽에서 **디버깅 시작**을 선택합니다. 스레드를 두 번 클릭할 수도 있습니다.
 
-     응용 프로그램의 시작 지점에서 디버깅을 시작하려면 **주 스레드**를 두 번 클릭합니다. 참조 [IntelliTrace 기능](../debugger/intellitrace-features.md)합니다.
+    응용 프로그램의 시작 지점에서 디버깅을 시작하려면 **주 스레드**를 두 번 클릭합니다. 참조 [IntelliTrace 기능](../debugger/intellitrace-features.md)합니다.
 
- 사용자가 만드는 스레드 데이터는 서버가 만들고 IIS를 호스트하는 웹 응용 프로그램을 관리하는 스레드보다 더 유용할 수 있습니다.
+   사용자가 만드는 스레드 데이터는 서버가 만들고 IIS를 호스트하는 웹 응용 프로그램을 관리하는 스레드보다 더 유용할 수 있습니다.
 
 |**열**|**표시**|
 |----------------|-------------------|
@@ -258,7 +258,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 응용 프�
 |----------------|-------------------|
 |**모듈 이름**|모듈 파일 이름|
 |**모듈 경로**|모듈이 로드된 디스크 위치|
-|**모듈 ID**|버전별로 다르고 일치하는 기호(PDB) 파일에 적용되는 모듈의 고유 식별자. 참조 [기호 (.pdb) 파일 및 소스 파일 찾기](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)합니다.|
+|**모듈 ID**|버전별로 다르고 일치하는 기호(PDB) 파일에 적용되는 모듈의 고유 식별자. [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)를 참조하세요.|
 
 ### <a name="where-can-i-get-more-information"></a>추가 정보는 어디서 확인할 수 있나요?
  [IntelliTrace 독립 실행형 수집기 사용](../debugger/using-the-intellitrace-stand-alone-collector.md)

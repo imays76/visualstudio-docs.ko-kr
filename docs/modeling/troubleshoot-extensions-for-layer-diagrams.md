@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ab3e3c2f299adb8a2f0ec5703f81b14fe5fc4ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899645"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>종속성 다이어그램의 확장 문제 해결
 
@@ -25,22 +25,22 @@ ms.locfileid: "47860357"
 
 ## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>My 확장을 디버그 하려면 f5 키를 누르면 내 명령, 제스처 처리기, 유효성 검사 확장 또는 사용자 지정 속성에 나타나지 않습니다 Visual Studio의 실험적 인스턴스에서 종속성 다이어그램
 
-1.  Visual Studio의 실험적 인스턴스에서 확장 솔루션을 엽니다는 **빌드할** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.
+1. Visual Studio의 실험적 인스턴스에서 확장 솔루션을 엽니다는 **빌드할** 메뉴에서 클릭 **솔루션 다시 빌드**합니다.
 
-2.  키를 눌러 **F5** 또는 **ctrl+f5** Visual Studio의 실험적 인스턴스를 시작 합니다. 종속성 다이어그램을 열어 확장을 테스트 합니다.
+2. 키를 눌러 **F5** 또는 **ctrl+f5** Visual Studio의 실험적 인스턴스를 시작 합니다. 종속성 다이어그램을 열어 확장을 테스트 합니다.
 
- 필요한 경우 다음 절차를 계속 진행합니다.
+   필요한 경우 다음 절차를 계속 진행합니다.
 
 ## <a name="an-old-version-of-my-extension-runs"></a>이전 버전의 확장이 실행됩니다.
 
-1.  Visual Studio의 실험적 인스턴스가 실행 되 고 있는지 확인 하십시오.
+1. Visual Studio의 실험적 인스턴스가 실행 되 고 있는지 확인 하십시오.
 
-2.  폴더를 삭제 합니다: %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache
+2. 폴더를 삭제 합니다: %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache
 
-    > [!NOTE]
-    > % LocalAppData %는 일반적으로 *DriveName*: \Users\\*UserName*\AppData\Local입니다.
+   > [!NOTE]
+   > % LocalAppData %는 일반적으로 *DriveName*: \Users\\*UserName*\AppData\Local입니다.
 
- 필요한 경우 다음 절차를 계속 진행합니다.
+   필요한 경우 다음 절차를 계속 진행합니다.
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>이전 버전의 유효성 검사 결과가 나타나거나, 내 유효성 검사 메서드가 호출되지 않습니다.
 

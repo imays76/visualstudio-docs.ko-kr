@@ -16,23 +16,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f67419240b8632c3032bd3877894d871245e55e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2212d9eb38487bf824fd8df3c497d9f256379c10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907809"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>명령 및 Interop 어셈블리를 사용 하는 메뉴
 Interop 어셈블리를 사용 하 여 도구 모음 및 메뉴 명령을 구현 하는 VSPackage는 다음 작업을 수행 해야 합니다.  
   
--   알릴는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 지 원하는 명령 및 현재 사용 여부에 대 한 통합된 개발 환경 (IDE)입니다.  
+- 알릴는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 지 원하는 명령 및 현재 사용 여부에 대 한 통합된 개발 환경 (IDE)입니다.  
   
--   명령 처리에 대 한 규칙 (계약)을 준수 합니다.  
+- 명령 처리에 대 한 규칙 (계약)을 준수 합니다.  
   
--   명시적으로 사용 하 여 명령 처리를 구현 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스입니다.  
+- 명시적으로 사용 하 여 명령 처리를 구현 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스입니다.  
   
- 다음 섹션에는 이러한 작업을 수행 하는 방법을 설명 합니다.  
+  다음 섹션에는 이러한 작업을 수행 하는 방법을 설명 합니다.  
   
 ## <a name="in-this-section"></a>단원 내용  
  [Interop 어셈블리를 사용 하 여 명령 상태를 확인 합니다.](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

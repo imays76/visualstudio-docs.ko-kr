@@ -21,12 +21,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8b6d5d7b6196b78bfaa68d944b9e652dabf54b85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd1bd7965f0277ce1d3d900be6ee10db097eeb3f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909109"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>방법: ClickOnce 응용 프로그램에 대한 파일 연결 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,31 +35,31 @@ ms.locfileid: "49300963"
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>ClickOnce 응용 프로그램에 대 한 파일 연결을 만들려면  
   
-1.  만들기는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 일반적으로 사용 하 여 기존 또는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램입니다.  
+1. 만들기는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 일반적으로 사용 하 여 기존 또는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램입니다.  
   
-2.  응용 프로그램 매니페스트를 텍스트 편집기 또는 메모장과 같은 XML 편집기를 엽니다.  
+2. 응용 프로그램 매니페스트를 텍스트 편집기 또는 메모장과 같은 XML 편집기를 엽니다.  
   
-3.  `assembly` 요소를 찾습니다. 자세한 내용은 [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)를 참조하세요.  
+3. `assembly` 요소를 찾습니다. 자세한 내용은 [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)를 참조하세요.  
   
-4.  자식으로는 `assembly` 요소를 추가 `fileAssociation` 요소입니다. `fileAssociation` 요소에는 네 개의 특성이:  
+4. 자식으로는 `assembly` 요소를 추가 `fileAssociation` 요소입니다. `fileAssociation` 요소에는 네 개의 특성이:  
   
-    -   `extension`응용 프로그램을 사용 하 여 연결 하려는: 파일 이름 확장명.  
+   - `extension`응용 프로그램을 사용 하 여 연결 하려는: 파일 이름 확장명.  
   
-    -   `description`: Windows 셸에 표시 되는 파일 형식의 설명입니다.  
+   - `description`: Windows 셸에 표시 되는 파일 형식의 설명입니다.  
   
-    -   `progid`: 레지스트리에서 표시할 파일 형식을 고유 하 게 식별 문자열입니다.  
+   - `progid`: 레지스트리에서 표시할 파일 형식을 고유 하 게 식별 문자열입니다.  
   
-    -   `defaultIcon`이 파일 형식에 대해 사용할: 아이콘입니다. 아이콘은 응용 프로그램 매니페스트에서 파일 리소스로 추가 되어야 합니다. 자세한 내용은 [방법: ClickOnce 응용 프로그램에 데이터 파일 포함](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)을 참조하세요.  
+   - `defaultIcon`이 파일 형식에 대해 사용할: 아이콘입니다. 아이콘은 응용 프로그램 매니페스트에서 파일 리소스로 추가 되어야 합니다. 자세한 내용은 [방법: ClickOnce 응용 프로그램에 데이터 파일 포함](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)을 참조하세요.  
   
      예는 `file` 하 고 `fileAssociation` 요소를 참조 하세요 [ \<fileAssociation > 요소](../deployment/fileassociation-element-clickonce-application.md)합니다.  
   
-5.  응용 프로그램을 사용 하 여 둘 이상의 파일 형식 연결 하려는 경우 추가 `fileAssociation` 요소입니다. `progid` 특성 마다 달라 야 합니다.  
+5. 응용 프로그램을 사용 하 여 둘 이상의 파일 형식 연결 하려는 경우 추가 `fileAssociation` 요소입니다. `progid` 특성 마다 달라 야 합니다.  
   
-6.  응용 프로그램 매니페스트를 사용 하 여 마친 후에 매니페스트에 다시 서명 합니다. Mage.exe를 사용 하 여 명령줄에서 수행할 수 있습니다.  
+6. 응용 프로그램 매니페스트를 사용 하 여 마친 후에 매니페스트에 다시 서명 합니다. Mage.exe를 사용 하 여 명령줄에서 수행할 수 있습니다.  
   
-     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
+    `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-     자세한 내용은 참조 하세요. [Mage.exe (매니페스트 생성 및 편집 도구)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
+    자세한 내용은 참조 하세요. [Mage.exe (매니페스트 생성 및 편집 도구)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
   
 ## <a name="see-also"></a>참고 항목  
  [\<fileAssociation > 요소](../deployment/fileassociation-element-clickonce-application.md)   

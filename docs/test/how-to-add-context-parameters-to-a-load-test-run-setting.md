@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905904"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
 
@@ -36,19 +36,19 @@ ms.locfileid: "39203756"
 
 또한 다음과 같이 다른 부하 테스트 실행 설정에서 동일한 이름을 사용하는 컨텍스트 매개 변수에 다른 값을 할당하면 부하 테스트를 다른 환경에서 실행할 수 있습니다.
 
--   회사 스테이징 웹 서버 실행 설정: `WebServer1=http://CorporateStagingWebServer`라는 컨텍스트 매개 변수
+- 회사 스테이징 웹 서버 실행 설정: `WebServer1=http://CorporateStagingWebServer`라는 컨텍스트 매개 변수
 
--   회사 프로덕션 웹 서버 실행 설정: `WebServer1=http://CorporateProductionWebServer`라는 컨텍스트 매개 변수
+- 회사 프로덕션 웹 서버 실행 설정: `WebServer1=http://CorporateProductionWebServer`라는 컨텍스트 매개 변수
 
- **명령줄에서 실행 설정 변경**
+  **명령줄에서 실행 설정 변경**
 
- 명령줄에서 다른 실행 설정을 사용하여 컨텍스트 매개 변수 전략을 활용하려면 다음 명령을 사용합니다.
+  명령줄에서 다른 실행 설정을 사용하여 컨텍스트 매개 변수 전략을 활용하려면 다음 명령을 사용합니다.
 
- **Set Test.UseRunSetting= CorporateStagingWebServer**
+  **Set Test.UseRunSetting= CorporateStagingWebServer**
 
- 및
+  및
 
- **mstest /testcontainer:loadtest1.loadtest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>컨텍스트 매개 변수를 실행 설정에 추가하려면
 

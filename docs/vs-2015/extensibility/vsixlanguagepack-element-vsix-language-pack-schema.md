@@ -13,12 +13,12 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8cc63f24f50f8ed0fecb9640ae4b2a5d2ec669be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a3ff92a52613910f481492c744116c8be04463d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908069"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack 요소 (VSIX 언어 팩 스키마)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,12 +68,12 @@ ms.locfileid: "49224746"
   
 ## <a name="element-information"></a>요소 정보  
   
-|||  
-|-|-|  
-|네임스페이스|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|스키마 이름|VSIX 언어 팩 스키마|  
-|유효성 검사 파일|VSIXLanguagePackSchema.xsd|  
-|비워 둘 수 있습니다.|아니요|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    네임스페이스    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   스키마 이름   |                 VSIX 언어 팩 스키마                 |
+| 유효성 검사 파일 |                VSIXLanguagePackSchema.xsd                 |
+|  비워 둘 수 있습니다.   |                            아니요                             |
   
 ## <a name="see-also"></a>참고 항목  
  [VSX 언어 팩 스키마 참조](../extensibility/vsx-language-pack-schema-reference.md)   
