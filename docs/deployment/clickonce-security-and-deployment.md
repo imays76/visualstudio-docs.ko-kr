@@ -19,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c90d70af60b6bd1f2399847447c1d49785ebb0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: dd089b57fb50d20c8805c932b0043bb8c0dba82e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926451"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 보안 및 배포
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 설치 하 고 최소한의 사용자 상호 작용을 사용 하 여 실행할 수 있는 자동 업데이트 Windows 기반 응용 프로그램을 만들 수 있게 해 주는 배포 기술입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 게시 및 Visual Basic 및 Visual C#을 사용 하 여 프로젝트를 개발한 경우 ClickOnce 기술을 사용 하 여 배포 된 응용 프로그램 업데이트에 대 한 전체 지원을 제공 합니다. Visual c + + 응용 프로그램을 배포 하는 방법에 대 한 내용은 [Visual c + + 응용 프로그램에 대 한 ClickOnce 배포](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)합니다.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포는 배포에서 세 가지 주요 문제를 극복 합니다.  
   
--   **응용 프로그램을 업데이트의 어려움입니다.** Microsoft Windows Installer 배포를 사용 하 여 응용 프로그램 업데이트 될 때마다 사용자 msp 파일을 업데이트를 설치 하는 설치 된 제품에 적용 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 업데이트를 자동으로 제공할 수 있습니다. 응용 프로그램의 변경 된 부분만 다운로드 하 고 전체 업데이트 된 응용 프로그램이 새 side-by-side-폴더에서 다음 다시 설치 합니다.  
+- **응용 프로그램을 업데이트의 어려움입니다.** Microsoft Windows Installer 배포를 사용 하 여 응용 프로그램 업데이트 될 때마다 사용자 msp 파일을 업데이트를 설치 하는 설치 된 제품에 적용 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 업데이트를 자동으로 제공할 수 있습니다. 응용 프로그램의 변경 된 부분만 다운로드 하 고 전체 업데이트 된 응용 프로그램이 새 side-by-side-폴더에서 다음 다시 설치 합니다.  
   
--   **사용자의 컴퓨터에 영향을 미칩니다.** Windows Installer 배포를 사용 하 여 응용 프로그램 사용 되는 버전 충돌;에 대 한 가능성을 사용 하 여 공유 구성 요소 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포의 경우 각 응용 프로그램은 독립적 이며 다른 응용 프로그램을 방해할 수 없습니다.  
+- **사용자의 컴퓨터에 영향을 미칩니다.** Windows Installer 배포를 사용 하 여 응용 프로그램 사용 되는 버전 충돌;에 대 한 가능성을 사용 하 여 공유 구성 요소 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포의 경우 각 응용 프로그램은 독립적 이며 다른 응용 프로그램을 방해할 수 없습니다.  
   
--   **보안 권한입니다.** Windows Installer 배포 관리자 권한이 필요 하며 제한 된 사용자 설치만 허용 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 관리자가 아닌 사용자가 설치를 사용 하도록 설정 및 응용 프로그램에 필요한 코드 액세스 보안 권한만 부여 합니다.  
+- **보안 권한입니다.** Windows Installer 배포 관리자 권한이 필요 하며 제한 된 사용자 설치만 허용 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 관리자가 아닌 사용자가 설치를 사용 하도록 설정 및 응용 프로그램에 필요한 코드 액세스 보안 권한만 부여 합니다.  
   
- 과거에는 이러한 문제로 인해 개발자를 Windows 기반 응용 프로그램을 쉽게 설치에 대 한 풍부한 사용자 인터페이스를 희생 하는 대신 웹 응용 프로그램을 만들어야 합니다. 사용 하 여 배포 된 응용 프로그램을 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], 두 기술의 장점을 모두 활용할 수 있습니다.  
+  과거에는 이러한 문제로 인해 개발자를 Windows 기반 응용 프로그램을 쉽게 설치에 대 한 풍부한 사용자 인터페이스를 희생 하는 대신 웹 응용 프로그램을 만들어야 합니다. 사용 하 여 배포 된 응용 프로그램을 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], 두 기술의 장점을 모두 활용할 수 있습니다.  
   
 ## <a name="what-is-a-clickonce-application"></a>ClickOnce 응용 프로그램 이란?  
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 모든 Windows Presentation Foundation (*.xbap*), Windows Forms (*.exe*), 콘솔 응용 프로그램 (*.exe*), 또는 Office 솔루션 (*.dll*)를 사용 하 여 게시 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 기술 합니다. 게시할 수는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 세 가지 방법으로 응용 프로그램: 웹 페이지, 네트워크 파일 공유 또는 CD-ROM 같은 미디어에서. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 최종 사용자의 컴퓨터에 설치 하 고 컴퓨터를 오프 라인으로 또는 영구적으로 최종 사용자의 컴퓨터에 아무것도 설치 하지 않고 온라인 전용 모드에서 실행할 수 있습니다 하는 경우에 로컬로 실행할 수 있습니다. 자세한 내용은 [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)합니다.  

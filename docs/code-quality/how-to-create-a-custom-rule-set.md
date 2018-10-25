@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884188"
 ---
 # <a name="customize-a-rule-set"></a>규칙 집합을 사용자 지정
 
@@ -34,11 +34,11 @@ ms.locfileid: "39204117"
 
 3. 에 **이 규칙 집합 실행** 드롭 다운 목록에서 다음 중 하나를 수행 합니다.
 
-    - 사용자 지정 하려는 규칙 집합을 선택 합니다.
+   - 사용자 지정 하려는 규칙 집합을 선택 합니다.
 
      \- 또는 -
 
-    - 선택  **\<찾아보기... >** 목록에 없는 기존 규칙 집합을 지정 하려면.
+   - 선택  **\<찾아보기... >** 목록에 없는 기존 규칙 집합을 지정 하려면.
 
 4. 선택 **열고** 규칙 규칙 집합 편집기에 표시를 합니다.
 

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881666"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입
   Microsoft Office Word 문서에 텍스트를 삽입하는 기본 방법에는 다음 세 가지가 있습니다.  
@@ -94,39 +94,39 @@ ms.locfileid: "35257214"
   
 ### <a name="to-insert-text-using-the-typetext-method"></a>TypeText 메서드를 사용하여 텍스트를 삽입하려면  
   
-1.  <xref:Microsoft.Office.Interop.Word.Selection> 개체 변수를 선언합니다.  
+1. <xref:Microsoft.Office.Interop.Word.Selection> 개체 변수를 선언합니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
-     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
+    [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
+    [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
   
-2.  **Overtype** 옵션이 설정된 경우 해제합니다.  
+2. **Overtype** 옵션이 설정된 경우 해제합니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
-     [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
+    [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
+    [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
   
-3.  현재 선택 영역이 삽입 지점인지 테스트합니다.  
+3. 현재 선택 영역이 삽입 지점인지 테스트합니다.  
   
-     삽입 지점이면 코드가 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>를 사용하여 문장을 삽입하고 <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> 메서드를 사용하여 단락 표시를 삽입합니다.  
+    삽입 지점이면 코드가 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>를 사용하여 문장을 삽입하고 <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> 메서드를 사용하여 단락 표시를 삽입합니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
-     [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
+    [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
+    [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
   
-4.  **ElseIf** 블록의 코드에서는 선택이 일반 선택인지 테스트합니다. 일반 선택이면 다른 **If** 블록에서 **ReplaceSelection** 옵션이 설정되었는지 테스트합니다. 일반 선택이면 코드에서 선택 영역의 <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> 메서드를 사용하여 선택 영역을 선택한 텍스트 블록의 시작 부분에 있는 삽입 지점으로 축소합니다. 텍스트와 단락 표시를 삽입합니다.  
+4. **ElseIf** 블록의 코드에서는 선택이 일반 선택인지 테스트합니다. 일반 선택이면 다른 **If** 블록에서 **ReplaceSelection** 옵션이 설정되었는지 테스트합니다. 일반 선택이면 코드에서 선택 영역의 <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> 메서드를 사용하여 선택 영역을 선택한 텍스트 블록의 시작 부분에 있는 삽입 지점으로 축소합니다. 텍스트와 단락 표시를 삽입합니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
-     [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
+    [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
+    [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
   
-5.  선택 영역이 삽입 지점 또는 선택한 텍스트 블록이 아니면 **Else** 블록의 코드에서 아무 작업도 수행하지 않습니다.  
+5. 선택 영역이 삽입 지점 또는 선택한 텍스트 블록이 아니면 **Else** 블록의 코드에서 아무 작업도 수행하지 않습니다.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
-     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
+    [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
+    [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- 사용할 수도 있습니다는 <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> 메서드를 <xref:Microsoft.Office.Interop.Word.Selection> 의 기능을 모방 하는 개체를 **백스페이스** 키보드의 키. 그러나 텍스트 삽입 및 조작의 경우 <xref:Microsoft.Office.Interop.Word.Range> 개체가 더 많은 제어를 제공합니다.  
+   사용할 수도 있습니다는 <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> 메서드를 <xref:Microsoft.Office.Interop.Word.Selection> 의 기능을 모방 하는 개체를 **백스페이스** 키보드의 키. 그러나 텍스트 삽입 및 조작의 경우 <xref:Microsoft.Office.Interop.Word.Range> 개체가 더 많은 제어를 제공합니다.  
   
- 다음 예제에서는 전체 코드를 보여 줍니다. 이 예제를 사용하려면 프로젝트의 `ThisDocument` 또는 `ThisAddIn` 클래스에서 코드를 실행합니다.  
+   다음 예제에서는 전체 코드를 보여 줍니다. 이 예제를 사용하려면 프로젝트의 `ThisDocument` 또는 `ThisAddIn` 클래스에서 코드를 실행합니다.  
   
- [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
- [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
+   [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
+   [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>참고자료  
  [방법: 프로그래밍 방식으로 문서의 텍스트 서식 지정](../vsto/how-to-programmatically-format-text-in-documents.md)   

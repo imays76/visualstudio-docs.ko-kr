@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934927"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>시작에서 확장 영향 측정
 
@@ -169,11 +169,11 @@ PerfView 자세한 분석을 위해 자체 도움말 메뉴에서 시간 스택 
 
 1. IO를 사용 하 여 `System.IO` 클래스: 파일 IO 속도 차이 컴퓨터에서 달라질 수 있으므로 문제의 잠재적 원인이 될 수는 있지만 이러한 프레임 포괄 비용 추적에 많은 비용이 소요 되지 않을 수 있습니다.
 
-  ![시스템 io 프레임](media/perfview-system-io-frames.png)
+   ![시스템 io 프레임](media/perfview-system-io-frames.png)
 
 2. 다른 비동기 작업에서 대기 하는 호출을 차단 합니다:이 경우 포괄 시간은 비동기 작업 완료 시 주 스레드는 차단 시간을 나타냅니다.
 
-  ![차단 호출 프레임](media/perfview-blocking-call-frames.png)
+   ![차단 호출 프레임](media/perfview-blocking-call-frames.png)
 
 영향을 확인 하는 데 도움이 됩니다 추적의 다른 보기 중 하나는 **이미지 로드 스택**합니다. 에 적용 될 때 동일한 필터를 적용할 수 있습니다 **스레드 시간 스택** 자동 로드 패키지에서 실행 되는 코드 때문에 로드 된 모든 어셈블리를 찾아 보고 합니다.
 

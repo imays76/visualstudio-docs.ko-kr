@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d9090732e44a3c94874b6effb130e4fc0c29580
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6b5339c0d7db827338953d5bfe94c38ef29dc17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889752"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,16 +116,16 @@ console.log(user.first, user.last);
   
  다음과 같은 대체 패턴이 지원됩니다.  
   
--   %s - 문자열  
-     %i - 정수  
-     %d - 정수  
-     %f - float  
-     %o - 개체  
-     %b - 이진  
-     %x - 16진수  
-     %e - 지수  
+- %s - 문자열  
+   %i - 정수  
+   %d - 정수  
+   %f - float  
+   %o - 개체  
+   %b - 이진  
+   %x - 16진수  
+   %e - 지수  
   
- 다음은 `console.log`에 대체 패턴을 사용하는 몇 가지 예제입니다.  
+  다음은 `console.log`에 대체 패턴을 사용하는 몇 가지 예제입니다.  
   
 ```javascript  
 var user = new Object();  

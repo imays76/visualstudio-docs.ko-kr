@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e4040a5b370674e7794b09e4d1cae68f424c7792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887373"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>워크플로 디자이너의 바로 가기 키
 
@@ -32,7 +32,7 @@ Visual Studio 내에서 전역 바로 가기와 디버깅 바로 가기가 워�
 다음 표에서 워크플로 디자이너 명령에 할당 된 기본 바로 가기 키를 보여 줍니다.
 
 |바로 가기|용도|
-|--------------|-------------|
+|-|-------------|
 |Ctrl+E, A|인수 디자이너를 표시하거나 숨깁니다.|
 |Ctrl+E, C|현재 위치에서 선택한 활동을 축소합니다.|
 |Ctrl+E, E|현재 위치에서 선택한 활동을 확장합니다.|

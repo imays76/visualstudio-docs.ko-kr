@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acfe9f80a5125ef13996e7cd8ec88a35cfb83211
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 9c6b5a12b37509e6e5113c704ef2c3ff931ea32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886411"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 템플릿 디자이너
 
@@ -44,20 +44,21 @@ ms.locfileid: "36756388"
 
 다음 표에서는 <xref:System.ServiceModel.Activities.SendReply> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 편집할 수 있습니다 하 고 일부는 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필수|용도|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.SendReply> 활동의 선택적 이름입니다. 기본값은 SendReplyToReceive입니다.<br /><br /> 하지만 기본이 아닌 값의 식별 사용 <xref:System.Activities.Activity.DisplayName%2A> 은 꼭 필요 하지 이러한 값을 사용 하는 것이 좋습니다.|
-|<xref:System.ServiceModel.Activities.SendReply.Request%2A>|True|이 <xref:System.ServiceModel.Activities.Receive> 활동과 한 쌍을 이루는 <xref:System.ServiceModel.Activities.SendReply> 활동에 대한 참조입니다. 이 속성은 아니어야 **null**합니다. <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 활동은 서버에서 요청/응답 메시징 패턴을 모델링하는 데 함께 사용됩니다. 이 속성은 쌍을 이루는 <xref:System.ServiceModel.Activities.Send> 활동을 지정합니다. 디자이너에서 편집할 수 없습니다를 자동으로 바인딩되어 있기 때문에이 속성을 <xref:System.ServiceModel.Activities.Send> 를 만든 활동은 <xref:System.ServiceModel.Activities.SendReply> 활동.|
-|<xref:System.ServiceModel.Activities.SendReply.Content%2A>|False|받을 메시지 또는 매개 변수 콘텐츠를 지정합니다. <xref:System.ServiceModel.Activities.ReceiveMessageContent> 활동이거나 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 활동일 수 있습니다. 옆에 있는 줄임표 단추를 클릭 하 여이 속성을 편집 합니다 **콘텐츠** 클릭 하 여 또는 속성 표의 필드를 **정의** 단추 옆에 **콘텐츠** 레이블 합니다  **수신** activity designer 화면. 모두 표시 합니다 **콘텐츠 정의** 대화 합니다. 이 상자를 사용 하는 방법에 대 한 자세한 내용은 참조는 [콘텐츠 정의 대화 상자](../workflow-designer/content-definition-dialog-box.md) 항목입니다.|
-|<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>|False|워크플로 내에서 이 <xref:System.ServiceModel.Activities.CorrelationInitializer> 활동을 구성하는 <xref:System.ServiceModel.Activities.CorrelationHandle> 개체를 여러 개 초기화하는 <xref:System.ServiceModel.Activities.Receive> 개체 컬렉션을 지정합니다. 다음 줄임표 단추를 클릭 합니다 <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> 열려면 속성 표에서 속성을 **상관 관계 이니셜라이저 추가** 대화 상자. 이 상자를 사용 하는 방법에 대 한 자세한 내용은 참조는 [상관 관계 이니셜라이저 추가 대화 상자](../workflow-designer/add-correlationinitializers-dialog-box.md) 항목입니다.|
-|<xref:System.ServiceModel.Activities.SendReply.Action%2A>|False|메시지의 동작 헤더를 지정합니다. 명시적으로 설정 된 경우 기본값:<br /><br /> **https://tempuri.org/{service 계약 네임 스페이스} / {서비스 계약 이름} /} /{operation name}**|
-|<xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A>|False|회신 메시지를 보내기 전에 워크플로 인스턴스를 유지할지 여부를 지정합니다. 기본값은 **false**입니다.|
+
+| 속성 이름 | 필수 | 용도 |
+|-|----------|-|
+| <xref:System.Activities.Activity.DisplayName%2A> | False | <xref:System.ServiceModel.Activities.SendReply> 활동의 선택적 이름입니다. 기본값은 SendReplyToReceive입니다.<br /><br /> 하지만 기본이 아닌 값의 식별 사용 <xref:System.Activities.Activity.DisplayName%2A> 은 꼭 필요 하지 이러한 값을 사용 하는 것이 좋습니다. |
+| <xref:System.ServiceModel.Activities.SendReply.Request%2A> | True | 이 <xref:System.ServiceModel.Activities.Receive> 활동과 한 쌍을 이루는 <xref:System.ServiceModel.Activities.SendReply> 활동에 대한 참조입니다. 이 속성은 아니어야 **null**합니다. <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 활동은 서버에서 요청/응답 메시징 패턴을 모델링하는 데 함께 사용됩니다. 이 속성은 쌍을 이루는 <xref:System.ServiceModel.Activities.Send> 활동을 지정합니다. 디자이너에서 편집할 수 없습니다를 자동으로 바인딩되어 있기 때문에이 속성을 <xref:System.ServiceModel.Activities.Send> 를 만든 활동은 <xref:System.ServiceModel.Activities.SendReply> 활동. |
+| <xref:System.ServiceModel.Activities.SendReply.Content%2A> | False | 받을 메시지 또는 매개 변수 콘텐츠를 지정합니다. <xref:System.ServiceModel.Activities.ReceiveMessageContent> 활동이거나 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 활동일 수 있습니다. 옆에 있는 줄임표 단추를 클릭 하 여이 속성을 편집 합니다 **콘텐츠** 클릭 하 여 또는 속성 표의 필드를 **정의** 단추 옆에 **콘텐츠** 레이블 합니다  **수신** activity designer 화면. 모두 표시 합니다 **콘텐츠 정의** 대화 합니다. 이 상자를 사용 하는 방법에 대 한 자세한 내용은 참조는 [콘텐츠 정의 대화 상자](../workflow-designer/content-definition-dialog-box.md) 항목입니다. |
+| <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> | False | 워크플로 내에서 이 <xref:System.ServiceModel.Activities.CorrelationInitializer> 활동을 구성하는 <xref:System.ServiceModel.Activities.CorrelationHandle> 개체를 여러 개 초기화하는 <xref:System.ServiceModel.Activities.Receive> 개체 컬렉션을 지정합니다. 다음 줄임표 단추를 클릭 합니다 <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> 열려면 속성 표에서 속성을 **상관 관계 이니셜라이저 추가** 대화 상자. 이 상자를 사용 하는 방법에 대 한 자세한 내용은 참조는 [상관 관계 이니셜라이저 추가 대화 상자](../workflow-designer/add-correlationinitializers-dialog-box.md) 항목입니다. |
+| <xref:System.ServiceModel.Activities.SendReply.Action%2A> | False | 메시지의 동작 헤더를 지정합니다. 명시적으로 설정 된 경우 기본값:<br /><br /> <strong>https://tempuri.org/{service 계약 네임 스페이스} / {서비스 계약 이름} /} /{operation name}</strong> |
+| <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | False | 회신 메시지를 보내기 전에 워크플로 인스턴스를 유지할지 여부를 지정합니다. 기본값은 **false**입니다. |
 
 ## <a name="see-also"></a>참고자료
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [수신](../workflow-designer/receive-activity-designer.md)
-- [보내기](../workflow-designer/send-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

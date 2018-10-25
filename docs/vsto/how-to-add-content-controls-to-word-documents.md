@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d3cce301d5d49a7660751ee1580c99794c16d38
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936968"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>방법: 콘텐츠를 추가 합니다. Word 문서에 컨트롤
   문서 수준 Word 프로젝트에서는 있습니다 콘텐츠 컨트롤을 추가할 수 문서 프로젝트에서 디자인 타임 또는 런타임 시. Word VSTO 추가 기능 프로젝트에서는 런타임에 열려 있는 문서에 콘텐츠 컨트롤을 추가할 수 있습니다.  
@@ -43,24 +43,24 @@ ms.locfileid: "35674381"
   
  이 항목에서는 다음 작업에 대해 설명합니다.  
   
--   [디자인 타임에 콘텐츠 컨트롤 추가](#designtime)  
+- [디자인 타임에 콘텐츠 컨트롤 추가](#designtime)  
   
--   [문서 수준 프로젝트에서 런타임에 콘텐츠 컨트롤을 추가 합니다.](#runtimedoclevel)  
+- [문서 수준 프로젝트에서 런타임에 콘텐츠 컨트롤을 추가 합니다.](#runtimedoclevel)  
   
--   [런타임에 VSTO 추가 기능 프로젝트에서 콘텐츠 컨트롤 추가](#runtimeaddin)  
+- [런타임에 VSTO 추가 기능 프로젝트에서 콘텐츠 컨트롤 추가](#runtimeaddin)  
   
- 콘텐츠 컨트롤에 대 한 정보를 참조 하세요 [콘텐츠 컨트롤](../vsto/content-controls.md)합니다.  
+  콘텐츠 컨트롤에 대 한 정보를 참조 하세요 [콘텐츠 컨트롤](../vsto/content-controls.md)합니다.  
   
 ##  <a name="designtime"></a> 콘텐츠 추가 디자인 타임에 컨트롤  
  디자인 타임에 문서 수준 프로젝트의 문서에 콘텐츠 컨트롤을 추가하는 여러 가지 방법이 있습니다.  
   
--   **도구 상자** 의 **Word 컨트롤**탭에서 콘텐츠 컨트롤을 추가합니다.  
+- **도구 상자** 의 **Word 컨트롤**탭에서 콘텐츠 컨트롤을 추가합니다.  
   
--   Word에서 네이티브 콘텐츠 컨트롤을 추가하는 것과 동일한 방식으로 문서에 콘텐츠 컨트롤을 추가합니다.  
+- Word에서 네이티브 콘텐츠 컨트롤을 추가하는 것과 동일한 방식으로 문서에 콘텐츠 컨트롤을 추가합니다.  
   
--   **데이터 소스** 창에서 콘텐츠 컨트롤을 문서로 끌어옵니다. 이 기능은 컨트롤을 만들 때 컨트롤을 데이터에 바인딩하려는 경우에 유용합니다. 자세한 내용은 참조 하세요. [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md) 하 고 [방법: 데이터베이스의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-a-database.md)합니다.  
+- **데이터 소스** 창에서 콘텐츠 컨트롤을 문서로 끌어옵니다. 이 기능은 컨트롤을 만들 때 컨트롤을 데이터에 바인딩하려는 경우에 유용합니다. 자세한 내용은 참조 하세요. [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md) 하 고 [방법: 데이터베이스의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-a-database.md)합니다.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>도구 상자를 사용하여 문서에 콘텐츠 컨트롤을 추가하려면  
   
@@ -100,13 +100,13 @@ ms.locfileid: "35674381"
 ##  <a name="runtimedoclevel"></a> 문서 수준 프로젝트에서 런타임에 콘텐츠 컨트롤을 추가 합니다.  
  수 있으므로 메서드를 사용 하 여 런타임에 문서에 콘텐츠 컨트롤을 프로그래밍 방식으로 추가할 수 있습니다는 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 의 속성을 `ThisDocument` 프로젝트에서 클래스입니다. 각 메서드에 다음과 같은 방법으로 콘텐츠 컨트롤을 추가하는 데 사용할 수 있는 세 개의 오버로드가 있습니다.  
   
--   현재 선택 영역에 컨트롤을 추가합니다.  
+- 현재 선택 영역에 컨트롤을 추가합니다.  
   
--   지정된 범위에 컨트롤을 추가합니다.  
+- 지정된 범위에 컨트롤을 추가합니다.  
   
--   문서의 네이티브 콘텐츠 컨트롤을 기반으로 하는 컨트롤을 추가합니다.  
+- 문서의 네이티브 콘텐츠 컨트롤을 기반으로 하는 컨트롤을 추가합니다.  
   
- 동적으로 생성된 콘텐츠 컨트롤은 문서를 닫을 때 문서에 유지되지 않습니다. 그러나 네이티브 콘텐츠 컨트롤은 문서에 남아 있습니다. 다음에 문서를 열 때 네이티브 콘텐츠 컨트롤을 기반으로 하는 콘텐츠 컨트롤을 다시 만들 수 있습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
+  동적으로 생성된 콘텐츠 컨트롤은 문서를 닫을 때 문서에 유지되지 않습니다. 그러나 네이티브 콘텐츠 컨트롤은 문서에 남아 있습니다. 다음에 문서를 열 때 네이티브 콘텐츠 컨트롤을 기반으로 하는 콘텐츠 컨트롤을 다시 만들 수 있습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)합니다.  
   
 > [!NOTE]  
 >  Word 2010 프로젝트에서 문서에 확인란 콘텐츠 컨트롤을 추가하려면 <xref:Microsoft.Office.Tools.Word.ContentControl> 개체를 만들어야 합니다. 자세한 내용은 [콘텐츠 컨트롤](../vsto/content-controls.md)합니다.  
@@ -141,15 +141,15 @@ ms.locfileid: "35674381"
 ##  <a name="runtimeaddin"></a> 런타임에 VSTO 추가 기능 프로젝트에서 콘텐츠 컨트롤 추가  
  있습니다 수 추가 콘텐츠 컨트롤 프로그래밍 방식으로 런타임에 열려 있는 문서에 VSTO 추가 기능을 사용 하 여 합니다. 이렇게 하려면 열려 있는 문서를 기반으로 하는 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목을 생성한 다음 이 호스트 항목의 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 속성 메서드를 사용합니다. 각 메서드에 다음과 같은 방법으로 콘텐츠 컨트롤을 추가하는 데 사용할 수 있는 세 개의 오버로드가 있습니다.  
   
--   현재 선택 영역에 컨트롤을 추가합니다.  
+- 현재 선택 영역에 컨트롤을 추가합니다.  
   
--   지정된 범위에 컨트롤을 추가합니다.  
+- 지정된 범위에 컨트롤을 추가합니다.  
   
--   문서의 네이티브 콘텐츠 컨트롤을 기반으로 하는 컨트롤을 추가합니다.  
+- 문서의 네이티브 콘텐츠 컨트롤을 기반으로 하는 컨트롤을 추가합니다.  
   
- 동적으로 생성된 콘텐츠 컨트롤은 문서를 닫을 때 문서에 유지되지 않습니다. 그러나 네이티브 콘텐츠 컨트롤은 문서에 남아 있습니다. 다음에 문서를 열 때 네이티브 콘텐츠 컨트롤을 기반으로 하는 콘텐츠 컨트롤을 다시 만들 수 있습니다. 자세한 내용은 [Office 문서에서 동적 컨트롤 유지](../vsto/persisting-dynamic-controls-in-office-documents.md)합니다.  
+  동적으로 생성된 콘텐츠 컨트롤은 문서를 닫을 때 문서에 유지되지 않습니다. 그러나 네이티브 콘텐츠 컨트롤은 문서에 남아 있습니다. 다음에 문서를 열 때 네이티브 콘텐츠 컨트롤을 기반으로 하는 콘텐츠 컨트롤을 다시 만들 수 있습니다. 자세한 내용은 [Office 문서에서 동적 컨트롤 유지](../vsto/persisting-dynamic-controls-in-office-documents.md)합니다.  
   
- VSTO 추가 기능 프로젝트에서 호스트 항목을 생성 하는 방법에 대 한 자세한 내용은 참조 하세요. [확장 Word 문서 및 Excel 통합 런타임에 VSTO 추가 기능에서](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
+  VSTO 추가 기능 프로젝트에서 호스트 항목을 생성 하는 방법에 대 한 자세한 내용은 참조 하세요. [확장 Word 문서 및 Excel 통합 런타임에 VSTO 추가 기능에서](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)합니다.  
   
 > [!NOTE]  
 >  문서에 확인란 콘텐츠 컨트롤을 추가하려면 <xref:Microsoft.Office.Tools.Word.ContentControl> 개체를 만들어야 합니다. 자세한 내용은 [콘텐츠 컨트롤](../vsto/content-controls.md)합니다.  

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0645d2364712769a6b4f18ef14fbbcb503a51888
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 66b8f904ac8add69db0c6d1760b5427cb8c802ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918358"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 스택 해제를 수행 하 고 스택 워크 프레임 인터페이스에서 결과 반환 합니다.  
@@ -34,20 +34,20 @@ HRESULT execute (
   
 #### <a name="parameters"></a>매개 변수  
  `frame`  
- [in] [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 프레임 레지스터의 상태를 유지 하는 개체입니다.  
+ [in] [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 프레임 레지스터의 상태를 보유 하는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 다음 표에서이 메서드에 대 한 가능한 반환 값을 보여 줍니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 다음 표에서이 메서드에 대 한 가능한 반환 값을 보여 줍니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |E_DIA_INPROLOG|프롤로그 코드에서 스택 프레임을 실행할 수 없습니다.|  
 |E_DIA_SYNTAX|프레임 프로그램에서 발생 한 오류를 구문 분석 합니다.|  
-|E_DIA_FRAME_ACCESS|메모리 액세스 레지스터 수 없습니다.|  
-|E_DIA_VALUE|계산 값 (예를 들어 0으로 나누기)에 오류가 발생 했습니다.|  
+|E_DIA_FRAME_ACCESS|메모리 액세스 등록 수 없습니다.|  
+|E_DIA_VALUE|값 (예: 0으로 나누기)의 계산에서 오류가 발생 했습니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 디버깅 중 스택 해제에 호출 됩니다. [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 개체는 레지스터에 업데이트를 수신 하 고 사용 되는 메서드를 제공 하는 클라이언트 응용 프로그램에 의해 구현 됩니다는 `execute` 메서드.  
+ 이 메서드는 스택 해제를 디버깅 하는 동안 호출 됩니다. 합니다 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) 개체는 레지스터에 업데이트를 수신 하는 데 사용 되는 메서드를 제공 합니다. 클라이언트 응용 프로그램에 의해 구현 됩니다는 `execute` 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

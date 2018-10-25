@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8ef8f2ae6ed1f198fc5f7661b79764d0a790bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: da23fa30b3266d9ce8eaae1356a92a583d7b940f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876921"
 ---
 # <a name="publish-clickonce-applications"></a>ClickOnce 응용 프로그램 게시
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 처음으로 게시할 때는 게시 마법사를 사용하여 게시 속성을 설정할 수 있습니다. 마법사에서는 일부 속성만 사용 가능하며 기타 모든 설정은 기본값으로 설정됩니다.  
@@ -37,15 +37,15 @@ ms.locfileid: "44279815"
 ## <a name="publish-wizard"></a>게시 마법사  
  게시 마법사를 사용하여 응용 프로그램 게시를 위한 기본 설정을 지정할 수 있습니다. 여기에는 다음과 같은 게시 속성이 포함됩니다.  
   
--   게시 폴더 위치 - Visual Studio에서 파일을 복사하는 위치(로컬 컴퓨터, 네트워크 파일 공유, FTP 서버 또는 웹 사이트)  
+- 게시 폴더 위치 - Visual Studio에서 파일을 복사하는 위치(로컬 컴퓨터, 네트워크 파일 공유, FTP 서버 또는 웹 사이트)  
   
--   설치 폴더 위치 - 최종 사용자가 설치하는 위치(네트워크 파일 공유, FTP 서버, 웹 사이트, CD/DVD)  
+- 설치 폴더 위치 - 최종 사용자가 설치하는 위치(네트워크 파일 공유, FTP 서버, 웹 사이트, CD/DVD)  
   
--   온라인 또는 오프라인 사용 가능 여부 - 최종 사용자가 네트워크에 연결하지 않고 응용 프로그램에 액세스할 수 있는지 여부  
+- 온라인 또는 오프라인 사용 가능 여부 - 최종 사용자가 네트워크에 연결하지 않고 응용 프로그램에 액세스할 수 있는지 여부  
   
--   업데이트 빈도 - 응용 프로그램에서 새 업데이트를 확인하는 빈도  
+- 업데이트 빈도 - 응용 프로그램에서 새 업데이트를 확인하는 빈도  
   
- 자세한 내용은 [방법: ClickOnce 응용 프로그램 게시 마법사를 사용 하 여 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)합니다.  
+  자세한 내용은 [방법: ClickOnce 응용 프로그램 게시 마법사를 사용 하 여 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)합니다.  
   
 ## <a name="publish-page"></a>게시 페이지  
  **프로젝트 디자이너** 의 **게시** 페이지를 통해 ClickOnce 배포를 위한 속성을 구성합니다. 다음 표에서 항목을 나열합니다.  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4781533d533228e07b4268f5c92b662cf7cda122
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98cd9db7785d7d7867e48f0bd56a2f5ab657a344
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942760"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 이 스레드에 대 한 스택 프레임의 목록을 검색합니다.  
@@ -45,19 +45,19 @@ int EnumFrameInfo (
   
 #### <a name="parameters"></a>매개 변수  
  `dwFieldSpec`  
- [in] 플래그의 조합을 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 의 필드를 지정 하는 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조는 데이터를 입력할 수 있습니다. 지정 된 `FIF_FUNCNAME_FORMAT` 함수 이름은 단일 문자열로 서식을 지정 하는 플래그입니다.  
+ [in] 플래그의 조합을 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 의 필드를 지정 하는 열거형을 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 구조체가를 채워야 합니다. 지정 된 `FIF_FUNCNAME_FORMAT` 함수 이름의 단일 문자열로 서식을 지정 하는 플래그입니다.  
   
  `nRadix`  
- [in] 열거자의 숫자 정보를 서식 지정에 사용 되는 기 수입니다.  
+ [in] 열거자의 숫자 정보를 서식 지정에 사용 하는 기 수입니다.  
   
  `ppEnum`  
- [out] 반환 된 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 의 목록을 포함 하는 개체 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 스택 프레임을 설명 하는 구조입니다.  
+ [out] 반환 된 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 개체의 목록을 포함 하는 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 스택 프레임을 설명 하는 구조입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 스레드 프레임 가장 먼저 열거 현재 프레임 및 가장 오래 된 프레임 마지막 열거 순서에 열거 됩니다.  
+ 스레드의 프레임 순서로 먼저 열거할 현재 프레임 및 마지막으로 열거 하는 가장 오래 된 프레임을 사용 하 여 열거 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

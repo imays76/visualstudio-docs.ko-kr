@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917529"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>데이터 집합으로 WPF 컨트롤 바인딩
 
@@ -58,15 +58,15 @@ ms.locfileid: "39131962"
 
 제품 레코드를 표시 하려면 새 WPF 프로젝트를 만듭니다.
 
-1.  Visual Studio를 시작합니다.
+1. Visual Studio를 시작합니다.
 
-2.  **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 선택합니다.
+2. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 선택합니다.
 
-3.  확장 **Visual Basic** 하거나 **Visual C#** 를 선택한 후 **Windows**합니다.
+3. 확장 **Visual Basic** 하거나 **Visual C#** 를 선택한 후 **Windows**합니다.
 
-4.  선택 된 **WPF 응용 프로그램** 프로젝트 템플릿.
+4. 선택 된 **WPF 응용 프로그램** 프로젝트 템플릿.
 
-5.  에 **이름을** 상자에 입력 합니다 **AdventureWorksProductsEditor** 선택한 후 **확인**합니다.
+5. 에 **이름을** 상자에 입력 합니다 **AdventureWorksProductsEditor** 선택한 후 **확인**합니다.
 
    Visual Studio AdventureWorksProductsEditor 프로젝트를 만듭니다.
 
@@ -126,23 +126,23 @@ ms.locfileid: "39131962"
 
 WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니다. 이 연습 뒷부분에서 사용자가 이러한 단추를 사용해 제품 레코드를 스크롤하고 변경 내용을 저장할 수 있도록 하는 코드를 추가합니다.
 
-1.  **솔루션 탐색기**를 두 번 클릭 *MainWindow.xaml*합니다.
+1. **솔루션 탐색기**를 두 번 클릭 *MainWindow.xaml*합니다.
 
-     창이 열립니다는 **WPF 디자이너**합니다.
+    창이 열립니다는 **WPF 디자이너**합니다.
 
-2.  디자이너의 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 뷰에서 `<Grid>` 태그 사이에 다음 코드를 추가합니다.
+2. 디자이너의 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 뷰에서 `<Grid>` 태그 사이에 다음 코드를 추가합니다.
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="625" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="625" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  프로젝트를 빌드합니다.
+3. 프로젝트를 빌드합니다.
 
 ## <a name="create-data-bound-controls"></a>데이터 바인딩된 컨트롤 만들기
 

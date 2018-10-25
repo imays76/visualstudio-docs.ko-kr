@@ -13,12 +13,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f5a8ec02368c5a05587665f1e41b55b2daba409
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886398"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio의 시각적 언어 사전
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Visual Studio의 해당도 해 및 다른 이미지의 구성 요소는 개념�
   
  **일반 지침**  
   
--   이러한 visual 개념 해당 사전 정의 사용 하 여 일관 되 게 사용 해야 합니다. 그렇지 않은 경우 의미가 일치 하기 위해 공통 요소를 예상 하는 사용자를 혼동할 위험이 있습니다.  
+- 이러한 visual 개념 해당 사전 정의 사용 하 여 일관 되 게 사용 해야 합니다. 그렇지 않은 경우 의미가 일치 하기 위해 공통 요소를 예상 하는 사용자를 혼동할 위험이 있습니다.  
   
--   이미지를 정한 되어 쉽게 구분할 수 있도록 프로그램 아이콘에서 사용에 대 한 가장 관련성이 높거나 중요 한 개념을 선택 합니다.  
+- 이미지를 정한 되어 쉽게 구분할 수 있도록 프로그램 아이콘에서 사용에 대 한 가장 관련성이 높거나 중요 한 개념을 선택 합니다.  
   
--   각 이미지에서 하나 이상의 개념을 사용 합니다.  
+- 각 이미지에서 하나 이상의 개념을 사용 합니다.  
   
--   디자인 아이콘에 대 한 자세한 전략을 참조 하세요 [아이콘 디자인](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)합니다.  
+- 디자인 아이콘에 대 한 자세한 전략을 참조 하세요 [아이콘 디자인](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)합니다.  
   
- **섹션으로 이동 합니다.**  
+  **섹션으로 이동 합니다.**  
   
 1.  [개념 ㄱ-ㅎ](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)  
   

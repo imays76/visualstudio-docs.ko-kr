@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877649"
 ---
 # <a name="editing-tableadapters"></a>Tableadapter 편집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ ms.locfileid: "49288407"
 ## <a name="create-new-stored-procedures"></a>새 저장 프로시저 만들기  
  이 섹션을 완료 하는 방법에 설명 합니다 **TableAdapter 쿼리 구성 마법사** 선택 하는 경우를 **새 저장된 프로시저 만들기** 옵션입니다.  
   
-1.  에 **저장 프로시저 생성** 페이지에서 저장된 프로시저를 호출할 때 실행할 SQL 문을 입력 합니다.  
+1. 에 **저장 프로시저 생성** 페이지에서 저장된 프로시저를 호출할 때 실행할 SQL 문을 입력 합니다.  
   
-    > [!NOTE]
-    >  마법사에 대 한 액세스를 제공 합니다 **쿼리 작성기**, SQL 쿼리를 작성 하는 비주얼 도구입니다. 를 열려면 클릭 합니다 **쿼리 작성기** 단추입니다.  
+   > [!NOTE]
+   >  마법사에 대 한 액세스를 제공 합니다 **쿼리 작성기**, SQL 쿼리를 작성 하는 비주얼 도구입니다. 를 열려면 클릭 합니다 **쿼리 작성기** 단추입니다.  
   
-2.  에 **저장된 프로시저 만들기** 페이지에서 다음을 수행 합니다.  
+2. 에 **저장된 프로시저 만들기** 페이지에서 다음을 수행 합니다.  
   
-    1.  새 저장 프로시저의 이름을 입력합니다.  
+   1. 새 저장 프로시저의 이름을 입력합니다.  
   
-    2.  기본 데이터베이스에서 저장 프로시저를 만들지 여부를 지정합니다.  
+   2. 기본 데이터베이스에서 저장 프로시저를 만들지 여부를 지정합니다.  
   
-        > [!NOTE]
-        >  특정 데이터베이스의 보안 설정에 따라 해당 데이터베이스에서 저장 프로시저를 만들 수 있는지 여부가 결정됩니다.  
+      > [!NOTE]
+      >  특정 데이터베이스의 보안 설정에 따라 해당 데이터베이스에서 저장 프로시저를 만들 수 있는지 여부가 결정됩니다.  
   
-     합니다 **마법사 결과 보기** 페이지는 TableAdapter 쿼리 만들기 결과 보여 줍니다. 마법사에 문제가 발생하는 경우 이 페이지에서 오류 정보가 제공됩니다.  
+      합니다 **마법사 결과 보기** 페이지는 TableAdapter 쿼리 만들기 결과 보여 줍니다. 마법사에 문제가 발생하는 경우 이 페이지에서 오류 정보가 제공됩니다.  
   
 ## <a name="use-existing-stored-procedures"></a>기존 저장 프로시저 사용  
  이 섹션을 완료 하는 방법에 설명 합니다 **TableAdapter 쿼리 구성 마법사** 선택 하는 경우를 **기존 저장된 프로시저를 사용 하 여** 옵션.  

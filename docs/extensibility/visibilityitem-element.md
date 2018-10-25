@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f0dd09d963fe28cafb611947f2c542c4b78ba39
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3abf3a93db79ac347931acf9275065eb0d085ca4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920198"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 요소
 `VisibilityItem` 요소 도구 모음 및 명령 정적 표시 여부를 결정 합니다. 모든 항목에는 명령 또는 메뉴 및 연결 된 명령 UI 컨텍스트를 식별합니다. Visual Studio 명령, 메뉴 및 도구 모음 및 표시 여부를 정의 하는 Vspackage를 로드 하지 않고 검색 합니다. IDE를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 명령 UI 컨텍스트의 활성 상태 인지 여부를 결정 하는 방법.  
@@ -63,7 +63,7 @@ ms.locfileid: "39586263"
 ## <a name="remarks"></a>설명  
  에 정의 된 표준 Visual Studio UI 컨텍스트는 *Visual Studio SDK 설치 경로*\VisualStudioIntegration\Common\Inc\vsshlids.h 파일도 에서처럼 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> 및 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 클래스입니다. UI 컨텍스트의 전체 집합에 정의 되어는 <xref:Microsoft.VisualStudio.VSConstants> 클래스입니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
   
 ```xml  
 <VisibilityConstraints>  

@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d8e3a39c79b5dee339c8835c78143277f3015f6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 95d84442b4aba74dbc44b7aacc97d0a965162150
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924969"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 메서드(O/R 디자이너)
 
@@ -34,13 +34,13 @@ ms.locfileid: "36756131"
 
 DataContext 메서드는 데이터베이스의 저장 프로시저와 함수에 매핑되는 메서드로 만들고에 DataContext 메서드를 추가할 수는 **메서드** 창의 합니다 **O/R 디자이너**합니다. 두 가지 유형의 가지 <xref:System.Data.Linq.DataContext> ; 하나 이상의 결과 집합을 반환 하는 메서드와 그렇지 않은 것:
 
--   결과 집합을 하나 이상 반환하는 <xref:System.Data.Linq.DataContext> 메서드
+- 결과 집합을 하나 이상 반환하는 <xref:System.Data.Linq.DataContext> 메서드
 
-     응용 프로그램이 저장 프로시저 및 함수를 데이터베이스에서 실행하고 결과를 반환하는 작업만 수행할 때 이 <xref:System.Data.Linq.DataContext> 메서드를 만듭니다. 자세한 내용은 [방법: 저장된 프로시저 및 함수 (O/R 디자이너)에 매핑된 DataContext 만들기 메서드](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System.Data.Linq.ISingleResult\<T >를 및 <xref:System.Data.Linq.IMultipleResults>합니다.
+   응용 프로그램이 저장 프로시저 및 함수를 데이터베이스에서 실행하고 결과를 반환하는 작업만 수행할 때 이 <xref:System.Data.Linq.DataContext> 메서드를 만듭니다. 자세한 내용은 [방법: 저장된 프로시저 및 함수 (O/R 디자이너)에 매핑된 DataContext 만들기 메서드](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System.Data.Linq.ISingleResult\<T >를 및 <xref:System.Data.Linq.IMultipleResults>합니다.
 
--   특정 엔터티 클래스에 대한 Inserts, Updates, Deletes 등과 같이 결과 집합을 반환하지 않는 <xref:System.Data.Linq.DataContext> 메서드
+- 특정 엔터티 클래스에 대한 Inserts, Updates, Deletes 등과 같이 결과 집합을 반환하지 않는 <xref:System.Data.Linq.DataContext> 메서드
 
-     이 유형의 만들려면 <xref:System.Data.Linq.DataContext> 기본값을 사용 하는 대신 저장된 프로시저를 실행할 수 있는 응용 프로그램에서 메서드 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 저장에 대 한 동작 엔터티 클래스와 데이터베이스 간에 데이터를 수정 합니다. 자세한 내용은 [방법: 업데이트, 삽입 및 삭제 (O/R 디자이너)를 수행 하는 저장된 프로시저를 할당](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)합니다.
+   이 유형의 만들려면 <xref:System.Data.Linq.DataContext> 기본값을 사용 하는 대신 저장된 프로시저를 실행할 수 있는 응용 프로그램에서 메서드 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 저장에 대 한 동작 엔터티 클래스와 데이터베이스 간에 데이터를 수정 합니다. 자세한 내용은 [방법: 업데이트, 삽입 및 삭제 (O/R 디자이너)를 수행 하는 저장된 프로시저를 할당](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)합니다.
 
 ## <a name="return-types-of-datacontext-methods"></a>DataContext 메서드의 반환 형식
 
@@ -56,7 +56,7 @@ DataContext 메서드는 데이터베이스의 저장 프로시저와 함수에 
 - [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [저장된 프로시저](/dotnet/framework/data/adonet/sql/linq/stored-procedures)
-- [방법: 저장된 프로시저 및 함수 (O/R 디자이너)에 매핑된 DataContext 메서드 만들기](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
-- [방법: 업데이트, 삽입 및 삭제 (O/R 디자이너)를 수행 하는 저장된 프로시저를 할당 합니다.](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [방법: 저장 프로시저 및 함수에 매핑된 DataContext 메서드 만들기(O/R 디자이너)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+- [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [연습: 엔터티 클래스의 삽입, 업데이트 및 삭제 동작을 사용자 지정](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
 - [연습:는 LINQ to SQL 클래스 (O-r 디자이너) 만들기](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

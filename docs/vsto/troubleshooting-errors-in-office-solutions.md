@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917104"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office 솔루션의 오류 문제 해결
   Visual Studio에서 Office 솔루션을 개발하는 동안 다음 작업을 수행할 때 문제가 발생할 수 있습니다.  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  이 코드를 실행하면 다음과 같은 컴파일 오류가 발생합니다.  
   
--   Visual Basic의 경우: "'있으면 DocumentClass' 클래스에 대 한 참조가 허용 되지 않습니다 해당 어셈블리가 NO-PIA 모드를 사용 하 여 연결 되는 경우."  
+- Visual Basic의 경우: "'있으면 DocumentClass' 클래스에 대 한 참조가 허용 되지 않습니다 해당 어셈블리가 NO-PIA 모드를 사용 하 여 연결 되는 경우."  
   
--   Visual C#: "Interop 형식 'Microsoft.Office.Interop.Word.DocumentClass'를 포함할 수 없습니다. 적용 가능한 인터페이스를 대신 사용하세요."  
+- Visual C#: "Interop 형식 'Microsoft.Office.Interop.Word.DocumentClass'를 포함할 수 없습니다. 적용 가능한 인터페이스를 대신 사용하세요."  
   
- 이 오류를 해결하려면 대신 해당하는 인터페이스를 참조하도록 코드를 수정합니다. 예를 들어 <xref:Microsoft.Office.Interop.Word.DocumentClass> 개체를 참조하는 대신 <xref:Microsoft.Office.Interop.Word.Document> 인터페이스의 인스턴스를 참조합니다.  
+  이 오류를 해결하려면 대신 해당하는 인터페이스를 참조하도록 코드를 수정합니다. 예를 들어 <xref:Microsoft.Office.Interop.Word.DocumentClass> 개체를 참조하는 대신 <xref:Microsoft.Office.Interop.Word.Document> 인터페이스의 인스턴스를 참조합니다.  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

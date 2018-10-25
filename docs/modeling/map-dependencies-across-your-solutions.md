@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896943"
 ---
 # <a name="map-dependencies-with-code-maps"></a>코드 맵 사용 하 여 종속성 매핑
 
@@ -138,15 +138,15 @@ Visual Studio 2017에서 코드 맵을 만들려면 먼저 설치 합니다 **�
 
 10. 복잡한 솔루션 맵에서 포커스를 지정하는  또 다른 방법은 기존 맵을 기반을 선택한 항목이 포함된 새 맵을 생성하는 것입니다. 보유할 **Ctrl** 집중 하려는 항목을 선택 하는 동안 바로 가기 메뉴를 열고 선택 **선택 영역의 새 그래프**합니다.
 
-   ![선택한 항목을 새 코드 맵에 표시](../modeling/media/codemapsshowonnewmap.png)
+    ![선택한 항목을 새 코드 맵에 표시](../modeling/media/codemapsshowonnewmap.png)
 
 11. 포함하는 컨텍스트가 새 맵에 전달됩니다. 솔루션 폴더와 사용 하지 않으려는 모든 다른 컨테이너를 숨기려면 합니다 **필터** 창입니다.
 
-   ![뷰를 단순화하기 위해 컨테이너 필터링](../modeling/media/codemapsexpandnewgroups.png)
+    ![뷰를 단순화하기 위해 컨테이너 필터링](../modeling/media/codemapsexpandnewgroups.png)
 
 12. 그룹을 확장하고 맵에서 관계를 볼 항목을 선택합니다.
 
-   ![관계를 볼 항목 선택](../modeling/media/codemapsviewnewrelationships.png)
+    ![관계를 볼 항목 선택](../modeling/media/codemapsviewnewrelationships.png)
 
 다음 항목도 참조하세요.
 
@@ -242,7 +242,7 @@ Visual Studio 2017에서 코드 맵을 만들려면 먼저 설치 합니다 **�
 
 - [동영상: Visual Studio 2015 코드 맵으로 코드의 디자인 이해](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)
-- [디버깅 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+- [디버그하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)
 - [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

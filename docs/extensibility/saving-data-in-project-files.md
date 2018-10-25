@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717cff683f5f16f8f42f967c5f3b90ff2fe1e3fc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: adc7d06b8479da4aef7042fd64702cff5ca3be60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900659"
 ---
 # <a name="save-data-in-project-files"></a>프로젝트 파일에서 데이터를 저장 합니다.
 프로젝트 하위 형식 저장 하 고 프로젝트 파일에서 하위 형식의 특정 데이터를 검색할 수 있습니다. 관리 패키지 프레임 워크 (MPF)는이 작업을 수행 하는 두 가지 인터페이스를 제공 합니다.  
   
--   합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 인터페이스의 액세스 속성 값을 허용 합니다 **MSBuild** 프로젝트 파일의 섹션입니다. 제공 하는 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 로드 하거나 저장 된 사용자가 관련된 데이터를 빌드할 때마다 사용자가 호출할 수 있습니다.  
+- 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 인터페이스의 액세스 속성 값을 허용 합니다 **MSBuild** 프로젝트 파일의 섹션입니다. 제공 하는 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 로드 하거나 저장 된 사용자가 관련된 데이터를 빌드할 때마다 사용자가 호출할 수 있습니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 자유 형식 xml에서 비 빌드 관련된 데이터를 유지 하는 데 사용 됩니다. 제공 하는 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 이 호출한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 때마다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 아닌 빌드 프로젝트 파일의 관련된 데이터를 유지 해야 합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 자유 형식 xml에서 비 빌드 관련된 데이터를 유지 하는 데 사용 됩니다. 제공 하는 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 이 호출한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 때마다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 아닌 빌드 프로젝트 파일의 관련된 데이터를 유지 해야 합니다.  
   
- 빌드 및 비 빌드 관련된 데이터를 유지 하는 방법에 대 한 자세한 내용은 참조 하세요. [MSBuild 프로젝트 파일에서 데이터를 유지할](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)합니다.  
+  빌드 및 비 빌드 관련된 데이터를 유지 하는 방법에 대 한 자세한 내용은 참조 하세요. [MSBuild 프로젝트 파일에서 데이터를 유지할](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)합니다.  
   
 ## <a name="save-and-retrieve-build-related-data"></a>빌드 관련된 데이터 저장 및 검색  
   

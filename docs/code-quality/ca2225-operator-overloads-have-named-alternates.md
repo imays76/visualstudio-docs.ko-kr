@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83dc61c31d2951d230c04fb52d7d1e6ffd932a03
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a12060752317a2b4c23ec2eba7e96e945be00db0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914582"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.
+
 |||
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|

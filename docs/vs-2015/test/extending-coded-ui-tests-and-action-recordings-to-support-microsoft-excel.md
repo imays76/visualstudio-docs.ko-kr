@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872982"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ ms.locfileid: "49202893"
   
  **요구 사항**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- 이 단원에서는 Excel 워크시트의 테스트를 기록하고 재생할 수 있는 코딩된 UI 테스트 확장을 제공합니다. 확장의 각 부분은 이 단원과 그러한 확장을 생성하려는 개발자를 위한 코드 설명에서 설명됩니다.  
+  이 단원에서는 Excel 워크시트의 테스트를 기록하고 재생할 수 있는 코딩된 UI 테스트 확장을 제공합니다. 확장의 각 부분은 이 단원과 그러한 확장을 생성하려는 개발자를 위한 코드 설명에서 설명됩니다.  
   
- ![UI 테스트 아키텍처](../test/media/ui-testarch.png "UI_TestArch")  
-아키텍처 개요  
+  ![UI 테스트 아키텍처](../test/media/ui-testarch.png "UI_TestArch")  
+  아키텍처 개요  
   
 ## <a name="download-the-sample"></a>샘플 다운로드  
  이 샘플은 `CodedUIExtensibilitySample.sln` 솔루션에서 네 개의 프로젝트로 구성되어 있습니다.  
   
--   CodedUIextensibilitySample  
+- CodedUIextensibilitySample  
   
--   ExcelCodedUIAddInHelper  
+- ExcelCodedUIAddInHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- 이 [블로그 게시물](http://go.microsoft.com/fwlink/?LinkID=185592)에서 샘플을 다운로드하세요.  
+  이 [블로그 게시물](http://go.microsoft.com/fwlink/?LinkID=185592)에서 샘플을 다운로드하세요.  
   
 > [!NOTE]
 >  샘플은 Microsoft Excel 2010에서 사용하도록 제공됩니다. 다른 버전의 Microsoft Excel에서도 샘플이 작동할 수 있지만 현재 지원되지 않습니다.  

@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898150"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>디버거로 코드 탐색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ ms.locfileid: "49186162"
   
  동작에 대 한 일부 내용은 다음과 같습니다 **단계씩**:  
   
--   중첩된 함수 호출인 경우 **한 단계씩 코드 실행** 명령은 가장 안쪽에 중첩된 함수를 한 단계씩 실행합니다. **와 같은 호출에** 한 단계씩 코드 실행 `Func1(Func2())`을 사용하면 디버거에서 함수 `Func2`를 한 단계씩 실행합니다.  
+- 중첩된 함수 호출인 경우 **한 단계씩 코드 실행** 명령은 가장 안쪽에 중첩된 함수를 한 단계씩 실행합니다. **와 같은 호출에** 한 단계씩 코드 실행 `Func1(Func2())`을 사용하면 디버거에서 함수 `Func2`를 한 단계씩 실행합니다.  
   
--   실제로 디버거는 실제 줄이 아닌 코드 문을 단계별로 실행합니다. 예를 들어 한 줄에 `if` 절을 작성할 수 있습니다.  
+- 실제로 디버거는 실제 줄이 아닌 코드 문을 단계별로 실행합니다. 예를 들어 한 줄에 `if` 절을 작성할 수 있습니다.  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     이 줄을 한 단계씩 실행하면 디버거는 조건을 한 단계로 처리하고 결과를 다른 단계로 처리합니다(이 예에서는 조건이 참임).  
+   이 줄을 한 단계씩 실행하면 디버거는 조건을 한 단계로 처리하고 결과를 다른 단계로 처리합니다(이 예에서는 조건이 참임).  
   
- 함수를 한 단계씩 실행 하는 동안 호출 스택을 시각적으로 추적을 참조 하세요 [디버깅 하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)합니다.  
+  함수를 한 단계씩 실행 하는 동안 호출 스택을 시각적으로 추적을 참조 하세요 [디버깅 하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)합니다.  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> 함수를 건너뛰는 중 코드를 단계별로 실행  
  디버거에서 코드를 실행 하는 경우 종종 얻게 될 특정 함수에 어떻게 필요가 없습니다 (신경쓰지 않아도 또는 알고 작동 같은 검증된 라이브러리 코드). 이러한 명령을 사용 하 여 코드를 통해 건너뜁니다 (함수는 계속 실행 되기는 물론 있지만 디버거는 해당 건너뜁니다).  
@@ -146,20 +146,20 @@ ms.locfileid: "49186162"
   
 > [!CAUTION]
 >  다음 문을 설정하면 프로그램 카운터가 새 위치로 바로 이동하게 됩니다. 이 명령은 주의해서 사용해야 합니다.  
->   
->  -   기존 실행 위치와 새 실행 위치 사이에서는 명령이 실행되지 않습니다.  
-> -   실행 위치를 뒤로 이동하면 그 사이에서 실행된 명령이 실행 취소되지 않습니다.  
-> -   다음 문을 다른 함수나 범위로 이동하면 호출 스택이 손상되어 런타임 오류나 예외가 발생할 수 있습니다. 다음 문을 다른 범위로 이동하려고 하면 디버거에서 대화 상자가 열리고 여기서 작업을 취소할 수 있습니다. Visual Basic의 경우 다음 문을 다른 범위나 함수로 이동할 수 없습니다.  
-> -   네이티브 C++에서 런타임 검사를 활성화한 경우 다음 문을 설정하면 실행이 메서드의 끝에 도달할 때 예외가 throw될 수 있습니다.  
-> -   편집하며 계속하기를 활성화한 경우 편집하며 계속하기에서 즉시 다시 매핑할 수 없는 종류의 편집을 수행하면 **다음 문 설정** 이 실패합니다. 예를 들어 catch 블록 내의 코드를 편집하면 이 문제가 발생합니다. 이 경우 작업이 지원되지 않음을 알리는 오류 메시지가 나타납니다.  
-  
+> 
+> - 기존 실행 위치와 새 실행 위치 사이에서는 명령이 실행되지 않습니다.  
+>   -   실행 위치를 뒤로 이동하면 그 사이에서 실행된 명령이 실행 취소되지 않습니다.  
+>   -   다음 문을 다른 함수나 범위로 이동하면 호출 스택이 손상되어 런타임 오류나 예외가 발생할 수 있습니다. 다음 문을 다른 범위로 이동하려고 하면 디버거에서 대화 상자가 열리고 여기서 작업을 취소할 수 있습니다. Visual Basic의 경우 다음 문을 다른 범위나 함수로 이동할 수 없습니다.  
+>   -   네이티브 C++에서 런타임 검사를 활성화한 경우 다음 문을 설정하면 실행이 메서드의 끝에 도달할 때 예외가 throw될 수 있습니다.  
+>   -   편집하며 계속하기를 활성화한 경우 편집하며 계속하기에서 즉시 다시 매핑할 수 없는 종류의 편집을 수행하면 **다음 문 설정** 이 실패합니다. 예를 들어 catch 블록 내의 코드를 편집하면 이 문제가 발생합니다. 이 경우 작업이 지원되지 않음을 알리는 오류 메시지가 나타납니다.  
+> 
 > [!NOTE]
 >  관리 코드의 경우 다음과 같은 조건에서는 다음 문을 이동할 수 없습니다.  
->   
->  -   다음 문이 현재 문과 다른 메서드에 있는 경우  
-> -   Just-In-Time 디버깅을 사용하여 디버깅을 시작한 경우  
-> -   호출 스택 해제를 진행 중인 경우  
-> -   System.StackOverflowException 또는 System.Threading.ThreadAbortException 예외가 throw된 경우  
+> 
+> - 다음 문이 현재 문과 다른 메서드에 있는 경우  
+>   -   Just-In-Time 디버깅을 사용하여 디버깅을 시작한 경우  
+>   -   호출 스택 해제를 진행 중인 경우  
+>   -   System.StackOverflowException 또는 System.Threading.ThreadAbortException 예외가 throw된 경우  
   
  응용 프로그램을 실행하는 동안에는 다음 문을 설정할 수 없습니다. 다음에 실행할 문을 설정하려면 디버거가 중단 모드에 있어야 합니다.  
   

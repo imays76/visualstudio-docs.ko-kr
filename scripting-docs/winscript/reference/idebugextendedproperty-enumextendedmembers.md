@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b1cbb9b36d7ae237551aad2677f9480c615b88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 400145cf3981b7266a796f66576eb12f979d2750
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949841"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
-확장된 속성의 멤버를 열거 합니다.  
+확장된 속성의 멤버를 열거합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,7 +40,7 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>매개 변수  
  `dwFieldSpec`  
- [in] 필드에 열거 된 확장 디버그 속성 구조를 결정 하는 EX_DBGPROP_INFO_FLAGS 상수는 채워지도록 지정 합니다.  
+ [in] 채울 필드에 열거 된 확장 디버그 속성 구조를 결정 하는 EX_DBGPROP_INFO_FLAGS 상수를 지정 합니다.  
   
  `nRadix`  
  [in] 모든 숫자 정보를 해석 하는 데 사용할 기 수입니다.  
@@ -49,7 +49,7 @@ HRESULT EnumExtendedMembers(
  [out] 반환 된 `IEnumDebugExtendedPropertyInfo` 멤버 속성을 열거 하는 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`합니다.  
+ 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugExtendedProperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)   

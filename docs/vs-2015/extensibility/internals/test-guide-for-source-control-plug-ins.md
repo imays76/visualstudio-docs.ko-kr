@@ -19,12 +19,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1893a30ff46470949fb5aa534f61f590e7ba2d95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873554"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>소스 제어 플러그 인에 대한 테스트 가이드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,19 +46,19 @@ ms.locfileid: "49219585"
  웹 프로젝트  
  웹 프로젝트의 네 가지가: 파일 시스템, 로컬 IIS, 원격 사이트 및 FTP.  
   
--   파일 시스템 프로젝트는 로컬 경로에서 만들어지지만 정보 서비스 (IIS (인터넷) UNC 경로 통해 내부적으로 액세스 하 고 클라이언트 프로젝트와 마찬가지로 IDE 내에서 소스 제어에 배치할 수 설치할 필요가 없습니다.  
+- 파일 시스템 프로젝트는 로컬 경로에서 만들어지지만 정보 서비스 (IIS (인터넷) UNC 경로 통해 내부적으로 액세스 하 고 클라이언트 프로젝트와 마찬가지로 IDE 내에서 소스 제어에 배치할 수 설치할 필요가 없습니다.  
   
--   로컬 IIS 프로젝트는 로컬 컴퓨터를 가리키는 URL 사용 하 여 동일한 컴퓨터에 설치 되 고 액세스 하는 IIS를 사용 하 여 작동 합니다.  
+- 로컬 IIS 프로젝트는 로컬 컴퓨터를 가리키는 URL 사용 하 여 동일한 컴퓨터에 설치 되 고 액세스 하는 IIS를 사용 하 여 작동 합니다.  
   
--   IIS 서비스에서 원격 사이트 프로젝트를 만들 수도 있지만 소스 제어 아닌 IIS 서버 컴퓨터에 배치 됩니다 내는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
+- IIS 서비스에서 원격 사이트 프로젝트를 만들 수도 있지만 소스 제어 아닌 IIS 서버 컴퓨터에 배치 됩니다 내는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
--   FTP 프로젝트 원격 FTP 서버를 통해 액세스할 수 있지만 소스 제어에서 배치할 수 없습니다.  
+- FTP 프로젝트 원격 FTP 서버를 통해 액세스할 수 있지만 소스 제어에서 배치할 수 없습니다.  
   
- 인 리스트 먼 트  
- 소스 제어에서 프로젝트를 솔루션에 대 한 다른 용어입니다.  
+  인 리스트 먼 트  
+  소스 제어에서 프로젝트를 솔루션에 대 한 다른 용어입니다.  
   
- 버전 저장소  
- 원본 제어 플러그 인 API를 통해 액세스 되는 소스 제어 데이터베이스입니다.  
+  버전 저장소  
+  원본 제어 플러그 인 API를 통해 액세스 되는 소스 제어 데이터베이스입니다.  
   
 ## <a name="test-areas-covered-in-this-section"></a>이 섹션에서 다루는 영역 테스트  
   

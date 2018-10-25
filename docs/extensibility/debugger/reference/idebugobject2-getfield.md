@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e58ef7e706ff23edf28cefbf375d5f79a548b9a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d602aa7da2f82258a7f0d9b0ba7d1d803d05cc7d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926334"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 이 개체의 형식을 가져옵니다.  
@@ -41,13 +41,13 @@ int GetField(
   
 #### <a name="parameters"></a>매개 변수  
  `ppField`  
- [out] 반환 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 개체 하지 않은 경우 null 값입니다.  
+ [out] 반환 된 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) null 값이 없으면 개체.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 필드 개체의 형식을 설명합니다.  
+ 필드에는 개체의 유형을 설명합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   

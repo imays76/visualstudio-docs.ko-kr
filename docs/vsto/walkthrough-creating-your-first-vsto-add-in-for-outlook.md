@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25155e6dee56fd816425f795a5082667c90c242a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950965"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>연습: 첫 번째 VSTO 추가 기능에 Outlook에 대 한 만들기
   이 연습에서는 Microsoft Office Outlook용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 Outlook 항목에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
@@ -32,15 +32,15 @@ ms.locfileid: "38778130"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   Outlook용 Outlook VSTO 추가 기능 프로젝트 만들기  
+- Outlook용 Outlook VSTO 추가 기능 프로젝트 만들기  
   
--   Outlook 개체 모델을 사용하여 새 메일 메시지의 제목 및 본문에 텍스트를 추가하는 코드 작성  
+- Outlook 개체 모델을 사용하여 새 메일 메시지의 제목 및 본문에 텍스트를 추가하는 코드 작성  
   
--   테스트를 위해 프로젝트 빌드 및 실행  
+- 테스트를 위해 프로젝트 빌드 및 실행  
   
--   VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 완료된 프로젝트 정리  
+- VSTO 추가 기능이 개발 컴퓨터에서 더 이상 자동으로 실행되지 않도록 하기 위해 완료된 프로젝트 정리  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  
@@ -78,24 +78,24 @@ ms.locfileid: "38778130"
   
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>새 메일 메시지의 제목과 본문에 각각 텍스트를 추가하려면  
   
-1.  ThisAddIn 코드 파일의 `inspectors` 클래스에서 `ThisAddIn` 라는 필드를 선언합니다. `inspectors` 필드는 현재 Outlook 인스턴스의 검사기 창 컬렉션에 대한 참조를 유지 관리합니다. 이 참조는 가비지 수집기가 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 이벤트에 대한 이벤트 처리기가 포함된 메모리를 해제할 수 없게 합니다.  
+1. ThisAddIn 코드 파일의 `inspectors` 클래스에서 `ThisAddIn` 라는 필드를 선언합니다. `inspectors` 필드는 현재 Outlook 인스턴스의 검사기 창 컬렉션에 대한 참조를 유지 관리합니다. 이 참조는 가비지 수집기가 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 이벤트에 대한 이벤트 처리기가 포함된 메모리를 해제할 수 없게 합니다.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  `ThisAddIn_Startup` 메서드를 다음 코드로 바꿉니다. 이 코드는 이벤트 처리기를 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 이벤트에 연결합니다.  
+2. `ThisAddIn_Startup` 메서드를 다음 코드로 바꿉니다. 이 코드는 이벤트 처리기를 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 이벤트에 연결합니다.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
+    [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
   
-3.  ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드는 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 이벤트에 대한 이벤트 처리기를 정의합니다.  
+3. ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드는 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 이벤트에 대한 이벤트 처리기를 정의합니다.  
   
-     사용자가 새 메일 메시지를 만드는 경우 이 이벤트 처리기는 메시지의 제목 줄과 본문에 텍스트를 추가합니다.  
+    사용자가 새 메일 메시지를 만드는 경우 이 이벤트 처리기는 메시지의 제목 줄과 본문에 텍스트를 추가합니다.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
+    [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
+    [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
   
- 각각의 새 메일 메시지를 수정하기 위해 이전 코드 예제에서는 다음 개체를 사용합니다.  
+   각각의 새 메일 메시지를 수정하기 위해 이전 코드 예제에서는 다음 개체를 사용합니다.  
   
 -   `Application` 클래스의 `ThisAddIn` 필드. `Application` 필드는 Outlook의 현재 인스턴스를 나타내는 <xref:Microsoft.Office.Interop.Outlook.Application> 개체를 반환합니다.  
   

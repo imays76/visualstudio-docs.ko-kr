@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8034ae225707ec6030daba39ed09bab3bd161c4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926685"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 도메인별 언어 만들기
 DSL 다이어그램을 사용 하는 대신, 도메인 특정 언어 (DSL) 모델의 상태를 표시 하려면 Windows Forms를 사용할 수 있습니다. 이 항목에서는 Visual Studio Visualization and Modeling SDK를 사용 하 여 DSL을 Windows Form 바인딩을 통해 안내 합니다.
@@ -26,30 +26,32 @@ DSL 다이어그램을 사용 하는 대신, 도메인 특정 언어 (DSL) 모�
 
 #### <a name="to-create-a-minimal-winforms-dsl"></a>최소 WinForms DSL을 만들려면
 
-1.  DSL을 만들 수는 **최소 WinForm Designer** 템플릿.
+1. DSL을 만들 수는 **최소 WinForm Designer** 템플릿.
 
-     이 연습에서는 다음 이름은 것으로 간주 됩니다.
+    이 연습에서는 다음 이름은 것으로 간주 됩니다.
 
-    |||
-    |-|-|
-    |솔루션 이름과 DSL|FarmApp|
-    |네임스페이스|Company.FarmApp|
 
-2.  템플릿을 제공 하는 초기 예제를 사용 하 여 실험 합니다.
+   | | |
+   |-|-|
+   | 솔루션 이름과 DSL | FarmApp |
+   | 네임스페이스 | Company.FarmApp |
 
-    1.  모든 템플릿 변환 합니다.
 
-    2.  빌드 및 실행 샘플 (**ctrl+f5**).
+2. 템플릿을 제공 하는 초기 예제를 사용 하 여 실험 합니다.
 
-    3.  Visual Studio의 실험적 인스턴스에서 엽니다는 `Sample` 디버깅 프로젝트의 파일입니다.
+   1.  모든 템플릿 변환 합니다.
 
-         Windows Forms 컨트롤에 표시 되는지 확인 합니다.
+   2.  빌드 및 실행 샘플 (**ctrl+f5**).
 
-         또한 탐색기에 표시 하는 모델의 요소를 볼 수 있습니다.
+   3.  Visual Studio의 실험적 인스턴스에서 엽니다는 `Sample` 디버깅 프로젝트의 파일입니다.
 
-         폼 또는 탐색기의 일부 요소를 추가 하 고 다른 표시에 표시 되는지 확인 합니다.
+        Windows Forms 컨트롤에 표시 되는지 확인 합니다.
 
- Visual Studio의 기본 인스턴스에서 DSL 솔루션에 대 한 다음 사항에 유의 합니다.
+        또한 탐색기에 표시 하는 모델의 요소를 볼 수 있습니다.
+
+        폼 또는 탐색기의 일부 요소를 추가 하 고 다른 표시에 표시 되는지 확인 합니다.
+
+   Visual Studio의 기본 인스턴스에서 DSL 솔루션에 대 한 다음 사항에 유의 합니다.
 
 -   `DslDefinition.dsl` 다이어그램 요소를 포함합니다. 즉,이 DSL의 인스턴스 모델 보기를 DSL 다이어그램을 사용 하지 것입니다. 대신 Windows 폼 모델 바인딩될 하 고 폼에서 요소가 모델에 표시 됩니다.
 
@@ -132,30 +134,30 @@ DSL 다이어그램을 사용 하는 대신, 도메인 특정 언어 (DSL) 모�
 
 #### <a name="to-connect-your-model-to-a-form"></a>폼에 모델 연결
 
-1.  에 **UI** 프로젝트에서 기존의 모든.cs 파일을 삭제 합니다.
+1. 에 **UI** 프로젝트에서 기존의 모든.cs 파일을 삭제 합니다.
 
-2.  새 **사용자 정의 컨트롤** 파일인 `FarmControl` 에 **UI** 프로젝트.
+2. 새 **사용자 정의 컨트롤** 파일인 `FarmControl` 에 **UI** 프로젝트.
 
-3.  에 **데이터 원본** 드롭 다운 메뉴에서 창 **팜**, 선택 **세부 정보**합니다.
+3. 에 **데이터 원본** 드롭 다운 메뉴에서 창 **팜**, 선택 **세부 정보**합니다.
 
-     다른 속성에 대 한 기본 설정을 그대로 둡니다.
+    다른 속성에 대 한 기본 설정을 그대로 둡니다.
 
-4.  디자인 뷰에서 FarmControl.cs를 엽니다.
+4. 디자인 뷰에서 FarmControl.cs를 엽니다.
 
-     끌기 **팜** FarmControl 데이터 소스 창에서.
+    끌기 **팜** FarmControl 데이터 소스 창에서.
 
-     컨트롤 집합이 나타나면 각 속성에 대 한 합니다. 관계 속성 컨트롤을 생성 하지 않습니다.
+    컨트롤 집합이 나타나면 각 속성에 대 한 합니다. 관계 속성 컨트롤을 생성 하지 않습니다.
 
-5.  삭제할 **farmBindingNavigator**합니다. 자동으로 생성 됩니다는 `FarmControl` 디자이너 하지만이 응용 프로그램에 유용 하지 않습니다.
+5. 삭제할 **farmBindingNavigator**합니다. 자동으로 생성 됩니다는 `FarmControl` 디자이너 하지만이 응용 프로그램에 유용 하지 않습니다.
 
-6.  도구 상자를 사용 하 여의 두 인스턴스를 만듭니다 **DataGridView**, 하 고 이름을 `AnimalGridView` 고 `FieldGridView`합니다.
+6. 도구 상자를 사용 하 여의 두 인스턴스를 만듭니다 **DataGridView**, 하 고 이름을 `AnimalGridView` 고 `FieldGridView`합니다.
 
-    > [!NOTE]
-    >  컨트롤에 데이터 소스 창에서 동물 및 필드 항목을 끌어 하는 대체 단계가입니다. 이 작업에는 자동으로 데이터 표 및 그리드 보기와 데이터 원본 간의 바인딩을 만듭니다. 그러나이 바인딩 Dsl에 대 한 제대로 작동 하지 않습니다. 데이터 표 및 바인딩을 만들려면 향상 되므로 수동으로.
+   > [!NOTE]
+   >  컨트롤에 데이터 소스 창에서 동물 및 필드 항목을 끌어 하는 대체 단계가입니다. 이 작업에는 자동으로 데이터 표 및 그리드 보기와 데이터 원본 간의 바인딩을 만듭니다. 그러나이 바인딩 Dsl에 대 한 제대로 작동 하지 않습니다. 데이터 표 및 바인딩을 만들려면 향상 되므로 수동으로.
 
-7.  도구 상자에 없는 경우는 **ModelingBindingSource** 도구를 추가 합니다. 바로 가기 메뉴에는 **데이터** 탭을 선택 **선택 항목**합니다. 에 **도구 상자 항목 선택** 대화 상자에서 **ModelingBindingSource** 에서 합니다 **.NET 프레임 워크 탭**합니다.
+7. 도구 상자에 없는 경우는 **ModelingBindingSource** 도구를 추가 합니다. 바로 가기 메뉴에는 **데이터** 탭을 선택 **선택 항목**합니다. 에 **도구 상자 항목 선택** 대화 상자에서 **ModelingBindingSource** 에서 합니다 **.NET 프레임 워크 탭**합니다.
 
-8.  도구 상자를 사용 하 여의 두 인스턴스를 만듭니다 **ModelingBindingSource**, 하 고 이름을 `AnimalBinding` 고 `FieldBinding`합니다.
+8. 도구 상자를 사용 하 여의 두 인스턴스를 만듭니다 **ModelingBindingSource**, 하 고 이름을 `AnimalBinding` 고 `FieldBinding`합니다.
 
 9. 설정 합니다 **데이터 원본** 각각의 속성 **ModelingBindingSource** 에 **farmBindingSource**합니다.
 
@@ -165,15 +167,15 @@ DSL 다이어그램을 사용 하는 대신, 도메인 특정 언어 (DSL) 모�
 
 11. 프로그램 경험해 팜 컨트롤의 레이아웃을 조정 합니다.
 
- 합니다 **ModelingBindingSource** Dsl에 관련 된 몇 가지 기능을 수행 하는 어댑터:
+    합니다 **ModelingBindingSource** Dsl에 관련 된 몇 가지 기능을 수행 하는 어댑터:
 
--   VMSDK 저장소 트랜잭션에서 업데이트를 래핑합니다.
+- VMSDK 저장소 트랜잭션에서 업데이트를 래핑합니다.
 
-     예를 들어, 데이터 보기 그리드에서 행을 삭제 하는 사용자를 하는 경우 일반 바인딩을 트랜잭션 예외를 초래 합니다.
+   예를 들어, 데이터 보기 그리드에서 행을 삭제 하는 사용자를 하는 경우 일반 바인딩을 트랜잭션 예외를 초래 합니다.
 
--   사용자가 행을 선택 하면 속성 창 데이터 표 행 대신 해당 모델 요소의 속성을 표시, 보장 합니다.
+- 사용자가 행을 선택 하면 속성 창 데이터 표 행 대신 해당 모델 요소의 속성을 표시, 보장 합니다.
 
- ![DslWpf4](../modeling/media/dslwpf4.png) 스키마의 데이터 원본 뷰 사이 링크 합니다.
+  ![DslWpf4](../modeling/media/dslwpf4.png) 스키마의 데이터 원본 뷰 사이 링크 합니다.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>DSL에 대 한 바인딩을 완료
 
@@ -247,62 +249,60 @@ DSL 다이어그램을 사용 하는 대신, 도메인 특정 언어 (DSL) 모�
 
 #### <a name="to-provide-add-buttons"></a>추가 단추를 제공 합니다.
 
-1.  FarmControl.cs의 디자인 뷰에서 폼에 단추를 만들려면 도구 상자를 사용 합니다.
+1. FarmControl.cs의 디자인 뷰에서 폼에 단추를 만들려면 도구 상자를 사용 합니다.
 
-     이름과 단추의 텍스트를 예를 들어 편집 `New Sheep`합니다.
+    이름과 단추의 텍스트를 예를 들어 편집 `New Sheep`합니다.
 
-2.  여는 단추 뒤에 있는 코드 (예를 들어 두 번 클릭)입니다.
+2. 여는 단추 뒤에 있는 코드 (예를 들어 두 번 클릭)입니다.
 
-     다음과 같이 편집 합니다.
+    다음과 같이 편집 합니다.
 
-    ```csharp
-    private void NewSheepButton_Click(object sender, EventArgs e)
-    {
-      using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
-      {
-        elementOperations.MergeElementGroup(farm,
-          new ElementGroup(new Sheep(farm.Partition)));
-        t.Commit();
-      }
-    }
+   ```csharp
+   private void NewSheepButton_Click(object sender, EventArgs e)
+   {
+     using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
+     {
+       elementOperations.MergeElementGroup(farm,
+         new ElementGroup(new Sheep(farm.Partition)));
+       t.Commit();
+     }
+   }
 
-    // The following code is shared with other add buttons:
-    private ElementOperations operationsCache = null;
-    private ElementOperations elementOperations
-    {
-      get
-      {
-        if (operationsCache == null)
-        {
-          operationsCache = new ElementOperations(farm.Store, farm.Partition);
-        }
-        return operationsCache;
-      }
-    }
-    private Farm farm
-    {
-      get { return this.farmBindingSource.DataSource as Farm; }
-    }
+   // The following code is shared with other add buttons:
+   private ElementOperations operationsCache = null;
+   private ElementOperations elementOperations
+   {
+     get
+     {
+       if (operationsCache == null)
+       {
+         operationsCache = new ElementOperations(farm.Store, farm.Partition);
+       }
+       return operationsCache;
+     }
+   }
+   private Farm farm
+   {
+     get { return this.farmBindingSource.DataSource as Farm; }
+   }
+   ```
 
-    ```
+    또한 다음 지시문을 삽입 해야 합니다.
 
-     또한 다음 지시문을 삽입 해야 합니다.
+   ```csharp
 
-    ```csharp
+   using Microsoft.VisualStudio.Modeling;
+   ```
 
-    using Microsoft.VisualStudio.Modeling;
+3. 염소 및 필드에 대 한 유사한 단추를 추가 합니다.
 
-    ```
+4. 솔루션을 빌드하고 실행합니다.
 
-3.  염소 및 필드에 대 한 유사한 단추를 추가 합니다.
+5. 항목을 추가 하는 새 단추를 확인 합니다. 적절 한 데이터 그리드 보기에 모두 FarmApp 탐색기에서 새 항목이 표시 됩니다.
 
-4.  솔루션을 빌드하고 실행합니다.
+    데이터 그리드 보기의 요소 이름을 편집할 수 있어야 합니다. 여기에서 삭제할 수 있습니다.
 
-5.  항목을 추가 하는 새 단추를 확인 합니다. 적절 한 데이터 그리드 보기에 모두 FarmApp 탐색기에서 새 항목이 표시 됩니다.
-
-     데이터 그리드 보기의 요소 이름을 편집할 수 있어야 합니다. 여기에서 삭제할 수 있습니다.
-
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>요소를 추가 하는 코드에 대 한
  새 요소 단추에 대 한 다음 대체 코드는 좀 더 간단 합니다.
@@ -316,7 +316,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
     t.Commit();
   }
 }
-
 ```
 
  그러나이 코드는 새 항목에 대 한 기본 이름을 설정 하지 않습니다. 에 정의 된 모든 사용자 지정 된 병합 실행 되지 않습니다 합니다 **요소 병합 지시문** DSL의 정의 했을 수 있는 모든 사용자 지정 병합 코드를 실행 되지 않습니다.

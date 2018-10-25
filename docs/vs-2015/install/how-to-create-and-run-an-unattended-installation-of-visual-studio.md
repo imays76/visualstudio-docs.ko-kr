@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a72c907bf08ce534a61eb4ab7e4667135f104149
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885611"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ ms.locfileid: "49173851"
   
 #### <a name="to-run-an-unattended-installation-on-a-client-computer"></a>클라이언트 컴퓨터에서 무인 설치를 실행하려면  
   
--   열기를 **시작** 메뉴에서 선택 **실행**를 입력 \\ \\ *ServerName*\IDEinstall\vs_*제품*.exe /adminfile *PathOfTheAdmindeployment.xmlFile**AdditionalParametersAsNeeded*  
+- 열기를 **시작** 메뉴에서 선택 **실행**를 입력 \\ \\ *ServerName*\IDEinstall\vs_*제품*.exe /adminfile *PathOfTheAdmindeployment.xmlFile*<em>AdditionalParametersAsNeeded</em>  
   
-     예를 들어 `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart` 명령줄을 지정할 수 있습니다.  
+   예를 들어 `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart` 명령줄을 지정할 수 있습니다.  
   
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>클라이언트가 미리 정의된 설정을 사용하여 Visual Studio를 수동으로 설치할 수 있도록 하려면  
   
@@ -115,59 +115,59 @@ ms.locfileid: "49173851"
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Visual Studio가 설치된 후 클라이언트 컴퓨터에서 AdminDeployment 설정을 변경하려면  
   
-1.  필요에 따라 AdminDeployment.xml을 업데이트합니다.  
+1. 필요에 따라 AdminDeployment.xml을 업데이트합니다.  
   
-2.  **시작** 메뉴를 열고 **실행**을 선택합니다.  
+2. **시작** 메뉴를 열고 **실행**을 선택합니다.  
   
-3.  다음 텍스트를 입력 합니다. \\ \\ *ServerName*\IDEinstall\vs_*제품*.exe /AdminFile PathToAdmindeployment.xml 파일  
+3. 다음 텍스트를 입력 합니다. \\ \\ *ServerName*\IDEinstall\vs_*제품*.exe /AdminFile PathToAdmindeployment.xml 파일  
   
-     AdditionalParametersAsNeeded  
+    AdditionalParametersAsNeeded  
   
-     예를 들어 `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart` 명령줄을 지정할 수 있습니다.  
+    예를 들어 `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart` 명령줄을 지정할 수 있습니다.  
   
- Visual Studio가 설치된 후에는 복구가 기본 매개 변수입니다. 업데이트 된 /AdminFile로 Visual Studio를 복구 하는 경우 업데이트 된 AdminDeployment.xml 파일을 호출 하는 사람과 현재 관리자 배포 설정을 덮어씁니다.  
+   Visual Studio가 설치된 후에는 복구가 기본 매개 변수입니다. 업데이트 된 /AdminFile로 Visual Studio를 복구 하는 경우 업데이트 된 AdminDeployment.xml 파일을 호출 하는 사람과 현재 관리자 배포 설정을 덮어씁니다.  
   
 ## <a name="updating-an-installation"></a>설치 업데이트  
  Microsoft Visual Studio 2015에 대 한 여러 업데이트를 출시 했습니다. 이 섹션에서는 업데이트를 포함 하도록 Visual Studio 2015의 무인된 설치 이미지를 업데이트 하는 방법에 설명 합니다.  
   
 #### <a name="to-update-an-unattended-installation-of-visual-studio"></a>Visual Studio의 무인된 설치를 업데이트 하려면  
   
-1.  기존 네트워크 그림과에서 Product.exe 파일을 찾습니다 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성**합니다.  
+1. 기존 네트워크 그림과에서 Product.exe 파일을 찾습니다 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성**합니다.  
   
-2.  클릭 합니다 **세부 정보** 탭을 선택한 다음의 참고를 확인 합니다 **제품 버전** 속성.  
+2. 클릭 합니다 **세부 정보** 탭을 선택한 다음의 참고를 확인 합니다 **제품 버전** 속성.  
   
-     ![Visual Studio의 무인된 설치에서 속성 대화 상자의 예가](../install/media/unattended-install-properties-dialog-box.PNG "무인 설치-속성 대화 상자")  
+    ![Visual Studio의 무인된 설치에서 속성 대화 상자의 예가](../install/media/unattended-install-properties-dialog-box.PNG "무인 설치-속성 대화 상자")  
   
-3.  ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>제품 버전 14.0.24720.0 또는 14.0.24720.1 인 경우 다음이 단계를 수행 합니다.  
-4.  1.  실행할 *Product.exe* /Layout *드라이브:* \IDEinstall 인터넷에 연결 하는 컴퓨터에서. (예를 들어, 실행: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
+3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>제품 버전 14.0.24720.0 또는 14.0.24720.1 인 경우 다음이 단계를 수행 합니다.  
+4. 1.  실행할 *Product.exe* /Layout *드라이브:* \IDEinstall 인터넷에 연결 하는 컴퓨터에서. (예를 들어, 실행: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  /Layout 완료 되 면 새 이미지를 새 위치로 복사 합니다.  
+   2.  /Layout 완료 되 면 새 이미지를 새 위치로 복사 합니다.  
   
-    3.  만들고 AdminDeployment.xml 파일을 수정 합니다. 이 작업을 수행 하려면 사용 합니다 `/CreateAdminFile`  *\<파일 위치 >* 명령줄 매개 변수입니다. (자세한 내용은이 문서의 "무인 모드로 Visual Studio 배포" 섹션 참조).  
+   3.  만들고 AdminDeployment.xml 파일을 수정 합니다. 이 작업을 수행 하려면 사용 합니다 `/CreateAdminFile`  *\<파일 위치 >* 명령줄 매개 변수입니다. (자세한 내용은이 문서의 "무인 모드로 Visual Studio 배포" 섹션 참조).  
   
-    4.  클라이언트 컴퓨터에서 이전에 설치한 Visual Studio의 복사본을 업데이트 하려면 다음 명령을 실행 합니다. "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /norestart /quiet "입니다.  
+   4.  클라이언트 컴퓨터에서 이전에 설치한 Visual Studio의 복사본을 업데이트 하려면 다음 명령을 실행 합니다. "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /norestart /quiet "입니다.  
   
-         예를 들어, 실행 합니다. `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
-5.  ###### <a name="for-other-product-version-values-follow-these-steps"></a>다른 제품 버전 값에 대 한이 단계를 수행 합니다.  
-6.  1.  실행할 *Product.exe* /Layout *드라이브:* \IDEinstall 인터넷에 연결 하는 컴퓨터에서. (예를 들어 실행 `vs-enterprise.exe /Layout d:\IDEinstall`.)  
+        예를 들어, 실행 합니다. `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+5. ###### <a name="for-other-product-version-values-follow-these-steps"></a>다른 제품 버전 값에 대 한이 단계를 수행 합니다.  
+6. 1.  실행할 *Product.exe* /Layout *드라이브:* \IDEinstall 인터넷에 연결 하는 컴퓨터에서. (예를 들어 실행 `vs-enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  /Layout 완료 되 면 새 이미지를 새 위치로 복사 합니다. (또는 기존 네트워크 이미지 대신 재정의할 수 있습니다.)  
+   2.  /Layout 완료 되 면 새 이미지를 새 위치로 복사 합니다. (또는 기존 네트워크 이미지 대신 재정의할 수 있습니다.)  
   
-    3.  페이지를 만들고 AdminDeployment.xml 파일을 수정 합니다. 이 작업을 수행 하려면 사용 합니다 `/CreateAdminFile`  *\<파일 위치 >* 명령줄 매개 변수입니다. (자세한 내용은이 문서의 "무인 모드로 Visual Studio 배포" 섹션 참조).  
+   3.  페이지를 만들고 AdminDeployment.xml 파일을 수정 합니다. 이 작업을 수행 하려면 사용 합니다 `/CreateAdminFile`  *\<파일 위치 >* 명령줄 매개 변수입니다. (자세한 내용은이 문서의 "무인 모드로 Visual Studio 배포" 섹션 참조).  
   
-    4.  이전에 설치한 Visual Studio의 복사본을 업데이트 하려면 클라이언트 컴퓨터에서 다음 명령을 실행 해야 이미지를 새 위치로 복사 하는 경우: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /norestart /quiet "입니다.  
+   4.  이전에 설치한 Visual Studio의 복사본을 업데이트 하려면 클라이언트 컴퓨터에서 다음 명령을 실행 해야 이미지를 새 위치로 복사 하는 경우: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /norestart /quiet "입니다.  
   
-         예를 들어, 실행 합니다. `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+        예를 들어, 실행 합니다. `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
   
-    5.  기존 네트워크 이미지를 재정의 하는 경우 이전 단계에 나열 된 명령을 실행할 수 있습니다 또는 다음을 수행할 수 있습니다.  
+   5.  기존 네트워크 이미지를 재정의 하는 경우 이전 단계에 나열 된 명령을 실행할 수 있습니다 또는 다음을 수행할 수 있습니다.  
   
-    6.  1.  **제어판**을 열고 **프로그램 및 기능**을 선택합니다.  
+   6.  1.  **제어판**을 열고 **프로그램 및 기능**을 선택합니다.  
   
-        2.  선택할 **Visual Studio**를 선택한 후 **변경**합니다.  
+       2.  선택할 **Visual Studio**를 선택한 후 **변경**합니다.  
   
-        3.  Visual Studio를 유지 관리 모드로 시작 된 후 클릭 **수정**합니다.  
+       3.  Visual Studio를 유지 관리 모드로 시작 된 후 클릭 **수정**합니다.  
   
-        4.  최신 업데이트는 기능 페이지에 표시 됩니다. 설치, 클릭 하려는 다른 기능을 선택 **다음**를 클릭 하 고 **업데이트** 업데이트와 새로운 기능을 설치 합니다.  
+       4.  최신 업데이트는 기능 페이지에 표시 됩니다. 설치, 클릭 하려는 다른 기능을 선택 **다음**를 클릭 하 고 **업데이트** 업데이트와 새로운 기능을 설치 합니다.  
   
 ## <a name="registering-the-product"></a>제품 등록  
  설치가 완료된 후 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 내에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 복사본을 등록할 수 있습니다.  

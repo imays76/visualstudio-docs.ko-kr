@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07d2f374890d6a87b5fe45304d098acfb05065b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901322"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>언어 서비스 및 편집기 확장 시작
 고유한 프로그래밍 언어 또는 모든 콘텐츠 형식에 개요, 중괄호 일치, IntelliSense 및 light bulbs와 같은 언어 서비스 기능을 추가 하려면 편집기 확장을 사용할 수 있습니다. Visual Studio 편집기에서 색 지정, 여백, 프로그램 및 기타 시각적 요소 예를 들어 텍스트의 동작과 모양을 사용자 지정할 수도 있습니다. 또한 고유한 형식의 콘텐츠를 정의 하 고 콘텐츠에 표시 되는 텍스트 보기의 동작과 모양을 지정할 수 있습니다.  
@@ -44,17 +44,17 @@ ms.locfileid: "39498382"
   
  다음은 일부 편집기 확장의 기본 종류입니다.  
   
--   여백 및 스크롤 막대  
+- 여백 및 스크롤 막대  
   
--   Tags  
+- Tags  
   
--   선의 도구 영역  
+- 선의 도구 영역  
   
--   옵션  
+- 옵션  
   
--   IntelliSense  
+- IntelliSense  
   
- 편집기 확장 지점에 대 한 자세한 내용은 참조 하세요. [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)합니다.  
+  편집기 확장 지점에 대 한 자세한 내용은 참조 하세요. [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)합니다.  
   
 ## <a name="deploying-editor-extensions"></a>편집기 확장 배포  
  Visual Studio에서는 라는 메타 데이터 파일을 추가 하 여 편집기 확장 배포 *source.extension.vsixmanifest* 를 솔루션에 솔루션을 구축 하 고 알려져 있는 폴더에 이진 파일 및 매니페스트의 복사본 추가 Visual studio입니다. 매니페스트 파일 (예를 들어, 이름, 작성자, 버전 및 유형의 콘텐츠) 확장에 대 한 기본적인 사항을 정의합니다. VSIX 매니페스트 파일 및 확장을 배포 하는 방법에 대 한 자세한 내용은 참조 하세요. [Ship Visual Studio 확장](../extensibility/shipping-visual-studio-extensions.md)합니다.  

@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612a065286723e3c2b68a9ce5bd31c850d030959
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e3989ef8c79e4304e3bda3e99418da1973e6e0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912950"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
-지정된 된 위치에서 시작 하는 바이트의 시퀀스를 읽습니다.  
+지정된 된 위치에서 시작 하는 바이트 시퀀스를 읽습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,7 +50,7 @@ int ReadAt(
   
 #### <a name="parameters"></a>매개 변수  
  `pStartContext`  
- [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 바이트 읽기를 시작할 위치를 지정 하는 개체입니다.  
+ [in] 합니다 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 바이트를 읽기 시작할 위치를 지정 하는 개체입니다.  
   
  `dwCount`  
  [in] 읽을 바이트 수입니다. 또한의 길이 지정 된 `rgbMemory` 배열입니다.  
@@ -59,22 +59,22 @@ int ReadAt(
  [out에서] 실제로 읽은 바이트를 사용 하 여 입력 하는 배열입니다.  
   
  `pdwRead`  
- [out] 실제로 읽는 연속 된 바이트 수를 반환 합니다.  
+ [out] 실제로 읽은 연속 된 바이트 수를 반환 합니다.  
   
  `pdwUnreadable`  
- [out에서] 읽을 수 없는 바이트 수를 반환합니다. 클라이언트가 읽을 수 없는 바이트 수에 관심이 있으면 null 값이 될 수 있습니다.  
+ [out에서] 읽을 수 없는 바이트 수를 반환합니다. 클라이언트가 읽을 수 없는 바이트 수를 원하는 경우 null 값이 될 수 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고; 반환 그렇지 않은 경우 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
   
 ## <a name="remarks"></a>설명  
- 100 바이트 요청 및 첫 번째 50을 읽을 수, 다음 20 개 읽을 수는 않으며 나머지 30 대가 읽을 수 있는,이 메서드를 반환 합니다.  
+ 경우 100 바이트 요청 및 처음 50 개의 읽을 수 있는, 다음 20 개를 읽을 수 없는 되며 나머지 30 읽을 수 있는,이 메서드를 반환 합니다.  
   
  *`pdwRead` = 50  
   
  *`pdwUnreadable` = 20  
   
- 이 경우 때문에 `*pdwRead + *pdwUnreadable < dwCount`, 호출자에 게 요청 된 원래 100의 나머지 30 바이트를 읽으려고 추가 호출 해야 합니다. 및 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 에 전달 된 개체는 `pStartContext` 매개 변수 이동 70입니다.  
+ 이 경우 때문에 `*pdwRead + *pdwUnreadable < dwCount`를 호출자에 게 요청 된 원래 100의 나머지 30 바이트 읽기를 추가로 호출 해야 합니다. 및 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 전달 된 개체는 `pStartContext` 매개 변수 이동 70입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   

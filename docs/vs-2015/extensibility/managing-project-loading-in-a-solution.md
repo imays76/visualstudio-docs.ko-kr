@@ -15,12 +15,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f7df8c667753c13a5b69935a31755a72d232a96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914258"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>솔루션의 프로젝트 로드 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,23 +100,23 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>검색 및 관리 솔루션 및 프로젝트 로드  
  프로젝트 및 솔루션 로드 상태를 검색 하기 위해 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> 다음 값을 사용 하 여:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 솔루션과 해당 프로젝트가 모두 로드 되 면, 그렇지 않으면 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 솔루션과 해당 프로젝트가 모두 로드 되 면, 그렇지 않으면 `false`합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 하는 경우 프로젝트의 일괄 처리 현재 로드할 백그라운드 그렇지 않으면 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 하는 경우 프로젝트의 일괄 처리 현재 로드할 백그라운드 그렇지 않으면 `false`합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 하는 경우 프로젝트의 일괄 처리는 현재 로드 하 고 동기적으로 사용자 명령 또는 기타 명시적 로드의 결과로 고, 그렇지 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 하는 경우 프로젝트의 일괄 처리는 현재 로드 하 고 동기적으로 사용자 명령 또는 기타 명시적 로드의 결과로 고, 그렇지 `false`합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` 반환 `true` 닫혀 있는 경우 솔루션 현재 되 고 그렇지 않으면 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` 반환 `true` 닫혀 있는 경우 솔루션 현재 되 고 그렇지 않으면 `false`합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` 반환 `true` 솔루션을 현재을 여는 그렇지 않은 경우 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` 반환 `true` 솔루션을 현재을 여는 그렇지 않은 경우 `false`합니다.  
   
- 다음 방법 중 하나를 호출 하 여 (조건이 무엇이 든 지 프로젝트 로드 우선 순위) 프로젝트 및 솔루션 로드 됩니다을 보장할 수도 있습니다.  
+  다음 방법 중 하나를 호출 하 여 (조건이 무엇이 든 지 프로젝트 로드 우선 순위) 프로젝트 및 솔루션 로드 됩니다을 보장할 수도 있습니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: 메서드가 반환 되기 전에 로드 하기 위해 솔루션의 프로젝트를 강제로이 메서드를 호출 합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: 메서드가 반환 되기 전에 로드 하기 위해 솔루션의 프로젝트를 강제로이 메서드를 호출 합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: 프로젝트를 강제로이 메서드를 호출 `guidProject` 메서드가 반환 되기 전에 로드 합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: 프로젝트를 강제로이 메서드를 호출 `guidProject` 메서드가 반환 되기 전에 로드 합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>:에서 프로젝트를 강제로이 메서드를 호출 `guidProjectID` 메서드가 반환 되기 전에 로드 합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>:에서 프로젝트를 강제로이 메서드를 호출 `guidProjectID` 메서드가 반환 되기 전에 로드 합니다.  
   
 > [!NOTE]
 >  . 기본적으로 요청 하는 프로젝트만 로드 및 이루어지지만 백그라운드 부하 우선 순위 로드 되는 <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> 플래그는 메서드에 전달 된, 명시적으로 로드 하는 것으로 표시 된 것을 제외한 모든 프로젝트가 로드 됩니다.

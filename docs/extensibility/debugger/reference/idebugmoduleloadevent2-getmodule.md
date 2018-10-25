@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6188ba6842a922fa0758a21c0f496f50889f8b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0a043b3842805357de685484fcc4daf935aefcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906836"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 되는 모듈을 가져옵니다 로드 또는 언로드 합니다.  
@@ -48,13 +48,13 @@ int GetModule(
  [out] 반환 된 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) 로드 하거나 언로드하는 모듈을 나타내는 개체입니다.  
   
  `pbstrDebugMessage`  
- [out에서] 이 이벤트를 설명 하는 선택적 메시지를 반환 합니다. 이 매개 변수는 null 값을 메시지 없이 요청 됩니다.  
+ [out에서] 이 이벤트를 설명 하는 선택적 메시지를 반환 합니다. 이 매개 변수는 null 값을, 메시지 없이 요청 됩니다.  
   
  `pbLoad`  
- [out에서] 0이 아닌 (`TRUE`) 모듈 로드 하 고 0 이면 (`FALSE`) 모듈의 언로드 작업이 수행 하는 경우. 이 매개 변수는 null 값, 상태가 요청 됩니다.  
+ [out에서] 0이 아닌 값 (`TRUE`) 모듈을 로드 하 고 0 이면 (`FALSE`) 경우 모듈을 언로드하는 중입니다. 이 매개 변수는 null 값, 상태 없음 요청 됩니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)   

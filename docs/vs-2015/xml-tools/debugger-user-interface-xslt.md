@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891858"
 ---
 # <a name="debugger-user-interface-xslt"></a>디버거 사용자 인터페이스(XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,13 +90,13 @@ ms.locfileid: "49300185"
   
  다음 목록에서는 XPath 식 계산에 대한 몇 가지 제한 사항을 설명합니다.  
   
--   기본 제공 XPath 함수만 사용할 수 있습니다.  
+- 기본 제공 XPath 함수만 사용할 수 있습니다.  
   
--   `document()`, `key()` 등의 기본 제공 XSLT 함수는 사용할 수 없습니다.  
+- `document()`, `key()` 등의 기본 제공 XSLT 함수는 사용할 수 없습니다.  
   
--   사용자 정의 함수는 사용할 수 없습니다.  
+- 사용자 정의 함수는 사용할 수 없습니다.  
   
- 자세한 내용은 [방법: XPath 식 계산](../xml-tools/how-to-evaluate-an-xpath-expression.md)합니다.  
+  자세한 내용은 [방법: XPath 식 계산](../xml-tools/how-to-evaluate-an-xpath-expression.md)합니다.  
   
 ## <a name="disassembly-window"></a>디스어셈블리 창  
  디스어셈블리 창에는 XSLT 컴파일러에서 생성된 어셈블리 코드가 표시됩니다. 다른 모든 Visual Studio 디스어셈블리 창과 같은 방법으로 이 창을 사용할 수 있습니다.  

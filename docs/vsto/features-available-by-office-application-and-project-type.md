@@ -22,21 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929857"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office 응용 프로그램 및 프로젝트 형식으로 사용할 수 있는 기능
   Visual Studio에는 다음과 같은 형식을 비롯하여 Microsoft Office 응용 프로그램에 대한 다양한 비즈니스 시나리오를 지원하는 몇 가지 프로젝트 템플릿 형식이 있습니다.  
   
--   문서 수준 사용자 지정  
+- 문서 수준 사용자 지정  
   
--   VSTO 추가 기능  
+- VSTO 추가 기능  
   
- 모든 응용 프로그램이 모든 프로젝트 형식을 사용할 수 있는 것은 아닙니다. 예를 들어 문서 수준 프로젝트는 Microsoft Office Word 및 Microsoft Office Excel에만 사용할 수 있습니다. 마찬가지로 일부 기능은 특정 프로젝트 또는 응용 프로그램 형식에만 사용할 수 있습니다. 예를 들어 작업창은 문서 수준 프로젝트에서만 사용할 수 있으며 리본 확장은 일부 응용 프로그램에만 사용할 수 있습니다. 다른 프로젝트 형식에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
+  모든 응용 프로그램이 모든 프로젝트 형식을 사용할 수 있는 것은 아닙니다. 예를 들어 문서 수준 프로젝트는 Microsoft Office Word 및 Microsoft Office Excel에만 사용할 수 있습니다. 마찬가지로 일부 기능은 특정 프로젝트 또는 응용 프로그램 형식에만 사용할 수 있습니다. 예를 들어 작업창은 문서 수준 프로젝트에서만 사용할 수 있으며 리본 확장은 일부 응용 프로그램에만 사용할 수 있습니다. 다른 프로젝트 형식에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
   
 > [!NOTE]  
 >  Office 프로젝트 템플릿은 일부 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 버전에서만 사용할 수 있습니다. 자세한 내용은 [Office 솔루션을 개발 하도록 컴퓨터를 구성](../vsto/configuring-a-computer-to-develop-office-solutions.md)합니다.  
