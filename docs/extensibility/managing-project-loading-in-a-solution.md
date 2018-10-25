@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc824c11bca3202ecce915144909b527a2f6946a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950201"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>솔루션의 프로젝트 로드 관리
 Visual Studio 솔루션을 다 수의 프로젝트를 포함할 수 있습니다. 기본 Visual Studio 동작은 솔루션을 열 때 솔루션의 모든 프로젝트를 로드 하 고 사용자가 프로젝트 모두 로드 작업이 완료 될 때까지 액세스할 수 없도록 합니다. 프로젝트 로드 하는 과정은 2 분 이상 지속 로드 되는 프로젝트의 수와 프로젝트의 총 수를 보여 주는 진행률 표시줄이 표시 됩니다. 사용자는 여러 프로젝트가 포함 된 솔루션에서 작업 하는 동안 프로젝트를 언로드할 수 있지만이 절차에 몇 가지 단점이 있습니다: 언로드된 프로젝트에는 솔루션 다시 빌드 명령의 일부로 빌드되지 않는 닫은 IntelliSense 설명은 형식 및 멤버 프로젝트 표시 되지 않습니다.  
@@ -77,20 +77,20 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="detect-and-manage-solution-and-project-loading"></a>검색 및 관리 솔루션 및 프로젝트 로드  
  프로젝트 및 솔루션 로드 상태를 검색 하기 위해 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> 다음 값을 사용 하 여:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 솔루션과 해당 프로젝트가 모두 로드 되 면, 그렇지 않으면 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 솔루션과 해당 프로젝트가 모두 로드 되 면, 그렇지 않으면 `false`합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 하는 경우 프로젝트의 일괄 처리 현재 로드 되는 백그라운드에서이 고, 그렇지 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 하는 경우 프로젝트의 일괄 처리 현재 로드 되는 백그라운드에서이 고, 그렇지 `false`합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 경우 프로젝트의 일괄 처리는 현재으로 로드 되는 사용자 명령 또는 기타 명시적 로드의 결과로 고, 그렇지 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` 반환 `true` 경우 프로젝트의 일괄 처리는 현재으로 로드 되는 사용자 명령 또는 기타 명시적 로드의 결과로 고, 그렇지 `false`합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` 반환 `true` 닫혀 있는 경우 솔루션 현재 되 고 그렇지 않으면 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` 반환 `true` 닫혀 있는 경우 솔루션 현재 되 고 그렇지 않으면 `false`합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` 반환 `true` 솔루션을 현재을 여는 그렇지 않은 경우 `false`합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` 반환 `true` 솔루션을 현재을 여는 그렇지 않은 경우 `false`합니다.  
   
- 또한 다음 방법 중 하나를 호출 하 여 프로젝트 및 솔루션 로드 되었음을 확인할 수 있습니다.  
+  또한 다음 방법 중 하나를 호출 하 여 프로젝트 및 솔루션 로드 되었음을 확인할 수 있습니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: 메서드가 반환 되기 전에 로드 하기 위해 솔루션의 프로젝트를 강제로이 메서드를 호출 합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: 메서드가 반환 되기 전에 로드 하기 위해 솔루션의 프로젝트를 강제로이 메서드를 호출 합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: 프로젝트를 강제로이 메서드를 호출 `guidProject` 메서드가 반환 되기 전에 로드 합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: 프로젝트를 강제로이 메서드를 호출 `guidProject` 메서드가 반환 되기 전에 로드 합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>:에서 프로젝트를 강제로이 메서드를 호출 `guidProjectID` 메서드가 반환 되기 전에 로드 합니다.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>:에서 프로젝트를 강제로이 메서드를 호출 `guidProjectID` 메서드가 반환 되기 전에 로드 합니다.  

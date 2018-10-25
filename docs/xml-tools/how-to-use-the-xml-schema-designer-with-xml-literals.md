@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dd0f709e53a3595437bc432a1d1db9a4d6d5c79
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9858768da0096c98ffb3014f0a52936adbf39019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931118"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>방법: XML 리터럴과 함께 XML 스키마 디자이너 사용
 
@@ -43,35 +43,35 @@ ms.locfileid: "39379516"
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>프로젝트에 포함된 XSD 파일을 기반으로 XML 리터럴이 있는 Visual Basic 코드를 추가하려면
 
-1.  코드를 바꿔 *Module1.vb* 를 다음 코드로 파일:
+1. 코드를 바꿔 *Module1.vb* 를 다음 코드로 파일:
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
 
    Module Module1
-       Sub Main()
+      Sub Main()
 
-           Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
-                                <ns:ShipTo country="US">
-                                    <ns:name>name1</ns:name>
-                                    <ns:street>street1</ns:street>
-                                    <ns:city>city1</ns:city>
-                                    <ns:state>state1</ns:state>
-                                    <ns:zip>1</ns:zip>
-                                </ns:ShipTo>
-                                <ns:BillTo country="US">
-                                    <ns:name>name1</ns:name>
-                                    <ns:street>street1</ns:street>
-                                    <ns:city>city1</ns:city>
-                                    <ns:state>state1</ns:state>
-                                    <ns:zip>1</ns:zip>
-                                </ns:BillTo>
-                            </ns:PurchaseOrder>
+          Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
+                               <ns:ShipTo country="US">
+                                   <ns:name>name1</ns:name>
+                                   <ns:street>street1</ns:street>
+                                   <ns:city>city1</ns:city>
+                                   <ns:state>state1</ns:state>
+                                   <ns:zip>1</ns:zip>
+                               </ns:ShipTo>
+                               <ns:BillTo country="US">
+                                   <ns:name>name1</ns:name>
+                                   <ns:street>street1</ns:street>
+                                   <ns:city>city1</ns:city>
+                                   <ns:state>state1</ns:state>
+                                   <ns:zip>1</ns:zip>
+                               </ns:BillTo>
+                           </ns:PurchaseOrder>
 
-       End Sub
+      End Sub
    End Module
    ```
 
-2.  XML 리터럴 또는 XML 네임 스페이스 가져오기에서 XML 노드를 마우스 오른쪽 단추로 누르고 **스키마 탐색기에 표시**합니다.
+2. XML 리터럴 또는 XML 네임 스페이스 가져오기에서 XML 노드를 마우스 오른쪽 단추로 누르고 **스키마 탐색기에 표시**합니다.
 
-     합니다 **XML 스키마 탐색기** XML 스키마 집합과 연결 된 XML 리터럴이 있는 Visual Basic 파일과 나란히 표시 됩니다.
+    합니다 **XML 스키마 탐색기** XML 스키마 집합과 연결 된 XML 리터럴이 있는 Visual Basic 파일과 나란히 표시 됩니다.

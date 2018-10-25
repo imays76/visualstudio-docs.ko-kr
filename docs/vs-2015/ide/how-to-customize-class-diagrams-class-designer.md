@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950978"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>방법: 클래스 다이어그램 사용자 지정(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ ms.locfileid: "49296181"
   
 ##  <a name="DisplayAssociationAndInheritance"></a> 숨겨진 관계 표시  
   
-1.  클래스 디자이너에서 클래스 다이어그램 파일을 열고 선택합니다.  
+1. 클래스 디자이너에서 클래스 다이어그램 파일을 열고 선택합니다.  
   
-2.  숨겨진 형식 연결 또는 형식 상속이 있는 형식을 마우스 오른쪽 단추로 클릭합니다.  
+2. 숨겨진 형식 연결 또는 형식 상속이 있는 형식을 마우스 오른쪽 단추로 클릭합니다.  
   
- 형식 연결 선에 대해 **모든 멤버 표시**를 클릭하고 형식 상속 선에 대해 **기본 클래스 표시** 또는 **파생 클래스 표시**를 클릭합니다.  
+   형식 연결 선에 대해 **모든 멤버 표시**를 클릭하고 형식 상속 선에 대해 **기본 클래스 표시** 또는 **파생 클래스 표시**를 클릭합니다.  
   
 ##  <a name="RemoveCodeAndShape"></a> 클래스 다이어그램에서 도형 제거  
  형식의 내부 코드에 영향을 주지 않으면서도 클래스 다이어그램에서 형식 모양을 제거할 수 있습니다. 클래스 다이어그램에서 형식 모양을 제거하면 해당 다이어그램만 영향을 받습니다. 해당 형식을 정의하는 기본 코드와 해당 형식을 표시하는 다른 다이어그램은 영향을 받지 않습니다.  

@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1069316d0a027678b1161a948765bb81f1de68de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67fa52a674b9e3d77d7e3eed7493bf28c1b2514d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948787"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: 비교 가능한 형식에 메서드를 재정의하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
@@ -45,15 +46,15 @@ ms.locfileid: "49202828"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 재정의 <xref:System.Object.Equals%2A>합니다. 프로그래밍 언어가 연산자 오버 로드를 지 원하는 경우에 다음 연산자를 제공 합니다.
 
--   op_Equality
+- op_Equality
 
--   op_Inequality
+- op_Inequality
 
--   op_LessThan
+- op_LessThan
 
--   op_GreaterThan
+- op_GreaterThan
 
- C#에서는 이러한 연산자를 나타내는 데 사용 되는 토큰은 다음과 같습니다: = =,! =, \<, 및 >입니다.
+  C#에서는 이러한 연산자를 나타내는 데 사용 되는 토큰은 다음과 같습니다: = =,! =, \<, 및 >입니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  누락 된 연산자로 위반이 발생 하며 Visual Basic.NET을 사용한 경우 처럼 프로그래밍 언어가 연산자 오버 로드를 지원 하지 않습니다 하는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다. Op_Equality 연산자를 구현 하는 경우 이해 되지 않는 응용 프로그램 컨텍스트에서 이외의 같음 연산자에서 발생 하면이 규칙에서 경고를 표시 하지 않아도 안전 이기도 합니다. 그러나 해야 항상 op_Equality 통해 및 Object.Equals를 재정의 하는 경우 = = 연산자입니다.

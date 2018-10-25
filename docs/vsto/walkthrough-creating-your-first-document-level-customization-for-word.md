@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928817"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>연습: Word 용 첫 문서 수준 사용자 지정 만들기
   이 소개용 연습에서는 Microsoft Office Word에 대한 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 특정 문서가 열려 있는 경우에만 사용할 수 있습니다. 문서가 열려 있을 때 새 리본 탭 표시와 같은 응용 프로그램 수준 변경은 문서 수준 사용자 지정을 사용하여 수행할 수 없습니다.  
@@ -31,17 +31,17 @@ ms.locfileid: "38778109"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   Word 문서 프로젝트 만들기  
+- Word 문서 프로젝트 만들기  
   
--   Visual Studio 디자이너에 호스트된 문서에 텍스트 추가  
+- Visual Studio 디자이너에 호스트된 문서에 텍스트 추가  
   
--   Word의 개체 모델을 사용하여 사용자 지정 문서가 열릴 때 문서에 텍스트를 추가하는 코드 작성  
+- Word의 개체 모델을 사용하여 사용자 지정 문서가 열릴 때 문서에 텍스트를 추가하는 코드 작성  
   
--   테스트를 위해 프로젝트 빌드 및 실행  
+- 테스트를 위해 프로젝트 빌드 및 실행  
   
--   프로젝트를 정리하여 개발 컴퓨터에서 불필요한 빌드 파일 및 보안 설정 제거  
+- 프로젝트를 정리하여 개발 컴퓨터에서 불필요한 빌드 파일 및 보안 설정 제거  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  

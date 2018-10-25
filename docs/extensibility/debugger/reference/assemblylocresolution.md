@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 331df62dabcdb919f2d8489de02ab7f2f815ef40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03d05cf8c224a24d143feb3d22df4357d623d308
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933211"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-어셈블리는 위치를 지정 합니다.  
+어셈블리 찾을 위치를 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -60,7 +60,7 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
  어셈블리는 원격 디렉터리에 있습니다.  
   
 ## <a name="remarks"></a>설명  
- 이러한 값을 반환 된 [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) 및 [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) 메서드.  
+ 이러한 값에서 반환 되는 [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) 및 [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) 메서드.  
   
  이러한 값을 결합할 수는 `OR` 작업 합니다.  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 75df1e1f2bbc5bc5c3bdd56b8c16f0587f18751b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263642"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950800"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>도메인별 언어에서 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
 ## <a name="running-validation"></a>유효성 검사 실행  
  사용자는 모델, 즉 DSL 인스턴스를 편집할 때 다음 작업을 통해 유효성 검사를 실행할 수 있습니다.  
   
--   선택한 다이어그램을 마우스 오른쪽 단추로 클릭 **모두 유효성 검사**합니다.  
+- 선택한 다이어그램을 마우스 오른쪽 단추로 클릭 **모두 유효성 검사**합니다.  
   
--   선택한 서버 DSL 탐색기에서 최상위 노드를 마우스 오른쪽 단추로 클릭 **모두 유효성 검사**  
+- 선택한 서버 DSL 탐색기에서 최상위 노드를 마우스 오른쪽 단추로 클릭 **모두 유효성 검사**  
   
--   모델을 저장합니다.  
+- 모델을 저장합니다.  
   
--   모델을 엽니다.  
+- 모델을 엽니다.  
   
--   또한 메뉴 명령의 일부분이나 변경에 대한 응답 등으로 유효성 검사를 실행하는 프로그램 코드를 작성할 수도 있습니다.  
+- 또한 메뉴 명령의 일부분이나 변경에 대한 응답 등으로 유효성 검사를 실행하는 프로그램 코드를 작성할 수도 있습니다.  
   
- 모든 유효성 검사 오류가 표시 됩니다는 **오류 목록** 창입니다. 사용자는 오류 메시지를 두 번 클릭하여 오류의 원인인 모델 요소를 선택할 수 있습니다.  
+  모든 유효성 검사 오류가 표시 됩니다는 **오류 목록** 창입니다. 사용자는 오류 메시지를 두 번 클릭하여 오류의 원인인 모델 요소를 선택할 수 있습니다.  
   
 ## <a name="defining-validation-constraints"></a>유효성 검사 제약 조건 정의  
  DSL 관계 또는 도메인 클래스에 유효성 검사 메서드를 추가하여 유효성 검사 제약 조건을 정의합니다. 유효성 검사가 사용자에 의해 또는 프로그램 제어 하에서 실행되면 일부 또는 전체 유효성 검사 메서드가 실행됩니다. 각 메서드는 해당 클래스의 각 인스턴스에 적용되며 각 클래스에는 여러 유효성 검사 메서드가 있을 수 있습니다.  
@@ -59,37 +59,37 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
   
 #### <a name="to-define-a-validation-constraint"></a>유효성 검사 제약 조건을 정의하려면  
   
-1.  유효성 검사를 사용 하도록 설정 합니다 **Editor\Validation** 노드:  
+1. 유효성 검사를 사용 하도록 설정 합니다 **Editor\Validation** 노드:  
   
-    1.  오픈 **Dsl\DslDefinition.dsl**합니다.  
+   1.  오픈 **Dsl\DslDefinition.dsl**합니다.  
   
-    2.  DSL 탐색기에서 확장을 **편집기** 노드와 선택 **유효성 검사**합니다.  
+   2.  DSL 탐색기에서 확장을 **편집기** 노드와 선택 **유효성 검사**합니다.  
   
-    3.  속성 창에서 설정 된 **사용 하 여** 속성을 `true`입니다. 이러한 속성을 모두 설정하는 것이 가장 편리합니다.  
+   3.  속성 창에서 설정 된 **사용 하 여** 속성을 `true`입니다. 이러한 속성을 모두 설정하는 것이 가장 편리합니다.  
   
-    4.  클릭 **모든 템플릿 변환** 솔루션 탐색기 도구 모음에서입니다.  
+   4.  클릭 **모든 템플릿 변환** 솔루션 탐색기 도구 모음에서입니다.  
   
-2.  도메인 클래스 또는 도메인 관계 하나 이상에 대해 부분 클래스 정의를 작성합니다. 새 코드 파일에 이러한 정의 작성 합니다 **Dsl** 프로젝트입니다.  
+2. 도메인 클래스 또는 도메인 관계 하나 이상에 대해 부분 클래스 정의를 작성합니다. 새 코드 파일에 이러한 정의 작성 합니다 **Dsl** 프로젝트입니다.  
   
-3.  각 클래스에 다음 특성을 접두사로 추가합니다.  
+3. 각 클래스에 다음 특성을 접두사로 추가합니다.  
   
-    ```csharp  
-    [ValidationState(ValidationState.Enabled)]  
-    ```  
+   ```csharp  
+   [ValidationState(ValidationState.Enabled)]  
+   ```  
   
-    -   기본적으로 이 특성을 추가하면 파생된 클래스에 대해서도 유효성 검사가 사용하도록 설정됩니다. 특정 파생된 클래스에 대해 유효성 검사를 사용하지 않도록 설정하려는 경우에는 `ValidationState.Disabled`를 사용하면 됩니다.  
+   -   기본적으로 이 특성을 추가하면 파생된 클래스에 대해서도 유효성 검사가 사용하도록 설정됩니다. 특정 파생된 클래스에 대해 유효성 검사를 사용하지 않도록 설정하려는 경우에는 `ValidationState.Disabled`를 사용하면 됩니다.  
   
-4.  클래스에 유효성 검사 메서드를 추가합니다. 각 유효성 검사 메서드의 이름은 원하는 대로 지정할 수 있지만 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>는 하나 포함되어야 합니다.  
+4. 클래스에 유효성 검사 메서드를 추가합니다. 각 유효성 검사 메서드의 이름은 원하는 대로 지정할 수 있지만 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>는 하나 포함되어야 합니다.  
   
-     또한 하나 이상의 `ValidationMethod` 특성을 접두사로 추가해야 합니다.  
+    또한 하나 이상의 `ValidationMethod` 특성을 접두사로 추가해야 합니다.  
   
-    ```csharp  
-    [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
-    ```  
+   ```csharp  
+   [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
+   ```  
   
-     ValidationCategories는 메서드가 실행되는 시기를 지정합니다.  
+    ValidationCategories는 메서드가 실행되는 시기를 지정합니다.  
   
- 예를 들면 다음과 같습니다.  
+   예를 들면 다음과 같습니다.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -132,21 +132,21 @@ public partial class ParentsHaveChildren
   
  이 코드에서는 다음 사항에 주의하세요.  
   
--   도메인 클래스나 도메인 관계에 유효성 검사 메서드를 추가할 수 있습니다. 이러한 형식에 대 한 코드가 **Dsl\Generated Code\Domain\*.cs**합니다.  
+- 도메인 클래스나 도메인 관계에 유효성 검사 메서드를 추가할 수 있습니다. 이러한 형식에 대 한 코드가 **Dsl\Generated Code\Domain\*.cs**합니다.  
   
--   각 유효성 검사 메서드는 해당 클래스와 하위 클래스의 모든 인스턴스에 적용됩니다. 도메인 관계의 경우 각 인스턴스는 두 모델 요소 간의 링크입니다.  
+- 각 유효성 검사 메서드는 해당 클래스와 하위 클래스의 모든 인스턴스에 적용됩니다. 도메인 관계의 경우 각 인스턴스는 두 모델 요소 간의 링크입니다.  
   
--   유효성 검사 메서드는 지정된 순서로 적용되지 않으며 각 메서드는 예측 가능한 순서로 해당 클래스 인스턴스에 적용되지 않습니다.  
+- 유효성 검사 메서드는 지정된 순서로 적용되지 않으며 각 메서드는 예측 가능한 순서로 해당 클래스 인스턴스에 적용되지 않습니다.  
   
--   일반적으로는 유효성 검사 메서드를 통해 저장소 콘텐츠를 업데이트하지 않는 것이 좋습니다. 이렇게 하면 결과가 일치하지 않기 때문입니다. 대신 메서드가 `context.LogError`, `LogWarning` 또는 `LogInfo`를 호출하여 오류를 보고해야 합니다.  
+- 일반적으로는 유효성 검사 메서드를 통해 저장소 콘텐츠를 업데이트하지 않는 것이 좋습니다. 이렇게 하면 결과가 일치하지 않기 때문입니다. 대신 메서드가 `context.LogError`, `LogWarning` 또는 `LogInfo`를 호출하여 오류를 보고해야 합니다.  
   
--   LogError 호출에서는 사용자가 오류 메시지를 두 번 클릭하면 선택되는 모델 요소 또는 관계 링크 목록을 제공할 수 있습니다.  
+- LogError 호출에서는 사용자가 오류 메시지를 두 번 클릭하면 선택되는 모델 요소 또는 관계 링크 목록을 제공할 수 있습니다.  
   
--   프로그램 코드에서 모델을 읽는 방법에 대 한 자세한 내용은 [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.  
+- 프로그램 코드에서 모델을 읽는 방법에 대 한 자세한 내용은 [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.  
   
- 아래 예는 다음 도메인 모델에 적용됩니다. ParentsHaveChildren 관계에는 Child와 Parent라는 역할이 있습니다.  
+  아래 예는 다음 도메인 모델에 적용됩니다. ParentsHaveChildren 관계에는 Child와 Parent라는 역할이 있습니다.  
   
- ![DSL 정의 다이어그램 &#45; 패밀리 트리 모델](../modeling/media/familyt-person.png "FamilyT_Person")  
+  ![DSL 정의 다이어그램 &#45; 패밀리 트리 모델](../modeling/media/familyt-person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>유효성 검사 범주  
  <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 특성에서는 유효성 검사 메서드를 실행할 시기를 지정합니다.  
@@ -202,7 +202,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
   
  도메인 관계 역할의 복합성을 1..* 또는 1..1로 설정했는데 사용자가 이 관계의 링크를 만들지 않으면 유효성 검사 오류 메시지가 표시됩니다.  
   
- DSL에 Person 및 Town PersonLivesInTown 관계가 있으면 관계를 사용 하 여 클래스 하는 예를 들어 **1..\***  Town 역할을 다음에 Town이 없는 각 Person에 대 한 오류 메시지가 표시 됩니다.  
+ DSL에 Person 및 Town PersonLivesInTown 관계가 있으면 관계를 사용 하 여 클래스 하는 예를 들어 **1..\\** * Town 역할을 다음에 Town이 없는 각 Person에 대 한 오류 메시지가 표시 됩니다.  
   
 ## <a name="running-validation-from-program-code"></a>프로그램 코드에서 유효성 검사 실행  
  ValidationController를 만들거나 액세스하여 유효성 검사를 실행할 수 있습니다. 오류 창을 통해 사용자에게 오류를 표시하려면 다이어그램의 DocData에 연결된 ValidationController를 사용합니다. 예를 들어 메뉴 명령을 작성하는 경우에는 명령 집합 클래스에서 `CurrentDocData.ValidationController`를 사용할 수 있습니다.  

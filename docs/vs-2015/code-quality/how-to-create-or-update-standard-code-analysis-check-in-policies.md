@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939438"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49301563"
   
  코드 분석 체크 인 정책 팀 프로젝트 설정에서 설정 되 고 팀 프로젝트의 각 코드 프로젝트에 적용 합니다. 코드 분석 실행 코드 프로젝트에 대 한 프로젝트 (.xxproj) 파일에서 코드 프로젝트에 대해 구성 됩니다. 코드 분석 실행은 로컬 컴퓨터에서 수행 됩니다. 팀 프로젝트 설정의 규칙은 컴퓨터에서 수행 해야 코드 분석 체크 인 정책을 사용 하면, 체크 인 된 코드 프로젝트의 파일은 마지막 편집 후 컴파일해야 및 최소한의 코드 분석 실행을 포함 하는 경우 여기서 c hanges가 이루어졌습니다.  
   
--   관리 되는 코드를 지정 하 여 체크 인 정책 설정 된 *규칙 집합* 코드 분석 규칙의 하위 집합을 포함 하는 합니다.  
+- 관리 되는 코드를 지정 하 여 체크 인 정책 설정 된 *규칙 집합* 코드 분석 규칙의 하위 집합을 포함 하는 합니다.  
   
--   C/c + + 코드에 대 한 모든 코드 분석 규칙이 실행 되는 체크 인 정책 필요 합니다. 팀 프로젝트의 개별 코드 프로젝트에 대 한 특정 규칙을 사용 하지 않도록 설정 하는 전처리기 지시문을 추가할 수 있습니다.  
+- C/c + + 코드에 대 한 모든 코드 분석 규칙이 실행 되는 체크 인 정책 필요 합니다. 팀 프로젝트의 개별 코드 프로젝트에 대 한 특정 규칙을 사용 하지 않도록 설정 하는 전처리기 지시문을 추가할 수 있습니다.  
   
- 관리 코드에 대 한 체크 인 정책을 지정한 후 팀 멤버는 팀 프로젝트 정책 설정이 코드 프로젝트에 대 한 코드 분석 설정을 동기화 할 수 있습니다.  
+  관리 코드에 대 한 체크 인 정책을 지정한 후 팀 멤버는 팀 프로젝트 정책 설정이 코드 프로젝트에 대 한 코드 분석 설정을 동기화 할 수 있습니다.  
   
 ### <a name="to-open-the-check-in-policy-editor"></a>체크 인 정책 편집기를 열려면  
   

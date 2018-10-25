@@ -14,23 +14,23 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e34be1203ba97c23302bd28dcf7578ba6cffd2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa16c4c02f92f71d3288896d56b94a6d570c7dd4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930416"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>방법: 여러 구성 동시 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **일괄 빌드** 대화 상자를 통해 여러 빌드 구성 또는 모든 빌드 구성을 동시에 사용하여 대부분의 프로젝트 형식을 빌드할 수 있습니다. 그러나 다음과 같은 유형의 프로젝트는 여러 빌드 구성에서 동시에 빌드할 수 없습니다.  
   
-1.  JavaScript를 사용하여 빌드된 Windows용 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱  
+1. JavaScript를 사용하여 빌드된 Windows용 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱  
   
-2.  모든 Visual Basic 프로젝트  
+2. 모든 Visual Basic 프로젝트  
   
- 빌드 구성에 대한 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.  
+   빌드 구성에 대한 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md)를 참조하세요.  
   
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>여러 빌드 구성에서 프로젝트를 빌드하려면  
   

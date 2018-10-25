@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04624f7a2b42fa50360841b91db4cb70b5e15ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1182158852e978cb78096eec6e60783317f1cc0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930466"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 프로그램 노드를 사용할 수 있도록 디버그 엔진 (DEs)에서 사용 되 고 세션 디버그 관리자 (SDM).  
@@ -44,12 +44,12 @@ int PublishProgramNode(
  [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 사용할 수 있도록 프로그램 노드를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 선택 하 고 디버깅을 위해이 시작 하기 전에 정보에 대 한 쿼리할 수 있습니다.  
+ 이 메서드를 선택 하 고 디버깅을 시작 하기 전에 정보를 쿼리할 수 있습니다.  
   
- 가용성에서 프로그램 노드를 제거 하려면 호출는 [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) 메서드.  
+ 노드를 제거 프로그램의 가용성을 호출 합니다 [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

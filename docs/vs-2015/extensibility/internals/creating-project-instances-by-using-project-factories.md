@@ -16,12 +16,12 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f66e32be2625347f413f3a796396a313b02aad7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949235"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>프로젝트 팩터리를 사용하여 프로젝트 인스턴스 만들기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ ms.locfileid: "49288342"
 ## <a name="creating-an-owned-project"></a>소유 프로젝트 만들기  
  소유자는 두 단계로 소유 프로젝트를 만듭니다.  
   
-1.  호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> 메서드. 소유 프로젝트 입력 제어에 따라 집계 된 프로젝트 개체를 만들 수 있는 기회를 이렇게 `IUnknown`합니다. 소유 프로젝트 내부 전달 `IUnknown` 및 소유자 프로젝트에 다시 집계 된 개체입니다. 소유 프로젝트 내부에 저장할 수 있는 기회를 이렇게 `IUnknown`합니다.  
+1. 호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> 메서드. 소유 프로젝트 입력 제어에 따라 집계 된 프로젝트 개체를 만들 수 있는 기회를 이렇게 `IUnknown`합니다. 소유 프로젝트 내부 전달 `IUnknown` 및 소유자 프로젝트에 다시 집계 된 개체입니다. 소유 프로젝트 내부에 저장할 수 있는 기회를 이렇게 `IUnknown`합니다.  
   
-2.  호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> 메서드. 호출 하는 대신이 메서드가 호출 될 때 소유 프로젝트에 모든 인스턴스화하지 않습니다 `IVsProjectFactory::CreateProject` 처럼 소유 하지 않는 프로젝트에 대 한 사례입니다. 입력 `VSOWNEDPROJECTOBJECT` 열거형은 일반적으로 집계 된 소유 프로젝트입니다. 소유 프로젝트가이 변수를 사용 하 여 해당 프로젝트 개체가 이미 생성 되었는지 여부를 결정할 수 있습니다 (쿠키 NULL를 동일 하지 않음) 또는 (쿠키 같음 NULL)를 만들어야 합니다.  
+2. 호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> 메서드. 호출 하는 대신이 메서드가 호출 될 때 소유 프로젝트에 모든 인스턴스화하지 않습니다 `IVsProjectFactory::CreateProject` 처럼 소유 하지 않는 프로젝트에 대 한 사례입니다. 입력 `VSOWNEDPROJECTOBJECT` 열거형은 일반적으로 집계 된 소유 프로젝트입니다. 소유 프로젝트가이 변수를 사용 하 여 해당 프로젝트 개체가 이미 생성 되었는지 여부를 결정할 수 있습니다 (쿠키 NULL를 동일 하지 않음) 또는 (쿠키 같음 NULL)를 만들어야 합니다.  
   
- 프로젝트 형식 GUID cocreatable COM 개체의 CLSID 비슷합니다는 고유한 프로젝트도 식별 됩니다. 일반적으로 한 프로젝트 팩터리를 가질 수 있지만 단일 프로젝트 형식의 인스턴스를 만드는 프로젝트 팩터리 핸들 둘 이상의 프로젝트 형식 GUID를 처리 합니다.  
+   프로젝트 형식 GUID cocreatable COM 개체의 CLSID 비슷합니다는 고유한 프로젝트도 식별 됩니다. 일반적으로 한 프로젝트 팩터리를 가질 수 있지만 단일 프로젝트 형식의 인스턴스를 만드는 프로젝트 팩터리 핸들 둘 이상의 프로젝트 형식 GUID를 처리 합니다.  
   
- 프로젝트 형식은 특정 파일 이름 확장명을 사용 하 여 연결 됩니다. 사용자를 기존 프로젝트 파일을 열려고 시도 또는 템플릿을 복제 하 여 새 프로젝트를 만들려고 시도 하는 경우 IDE 확장 파일에 사용할지 해당 프로젝트 GUID를 확인할 수 있습니다.  
+   프로젝트 형식은 특정 파일 이름 확장명을 사용 하 여 연결 됩니다. 사용자를 기존 프로젝트 파일을 열려고 시도 또는 템플릿을 복제 하 여 새 프로젝트를 만들려고 시도 하는 경우 IDE 확장 파일에 사용할지 해당 프로젝트 GUID를 확인할 수 있습니다.  
   
- IDE 여부를 결정 하기 해야 새 프로젝트를 만들 특정 형식의 기존 프로젝트를 엽니다, 즉시 IDE를 사용 하 여 정보 시스템 레지스트리의 [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects] 아래에 해당 하는 검색 VSPackage에 필요한 프로젝트 팩터리를 구현합니다. IDE는이 VSPackage를 로드합니다. 에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> VSPackage 메서드를 호출 하 여 IDE를 사용 하 여 해당 프로젝트 팩터리를 등록 해야 합니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> 메서드.  
+   IDE 여부를 결정 하기 해야 새 프로젝트를 만들 특정 형식의 기존 프로젝트를 엽니다, 즉시 IDE를 사용 하 여 정보 시스템 레지스트리의 [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects] 아래에 해당 하는 검색 VSPackage에 필요한 프로젝트 팩터리를 구현합니다. IDE는이 VSPackage를 로드합니다. 에 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> VSPackage 메서드를 호출 하 여 IDE를 사용 하 여 해당 프로젝트 팩터리를 등록 해야 합니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> 메서드.  
   
- 기본 메서드를 `IVsProjectFactory` 인터페이스는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 두 가지 시나리오를 처리 해야 하는: 기존 프로젝트를 열고 새 프로젝트 만들기. 대부분의 프로젝트는 프로젝트 파일에서 해당 프로젝트 상태를 저장합니다. 템플릿 파일의 복사본이 전달 활용 하 여 새 프로젝트를 만들 일반적으로 `CreateProject` 메서드와 여는 복사본입니다. 에 전달 된 프로젝트 파일을 열고 직접 기존 프로젝트에서 인스턴스화된 `CreateProject` 메서드. `CreateProject` 메서드는 필요에 따라 사용자에 게 추가 UI 기능을 표시할 수 있습니다.  
+   기본 메서드를 `IVsProjectFactory` 인터페이스는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 두 가지 시나리오를 처리 해야 하는: 기존 프로젝트를 열고 새 프로젝트 만들기. 대부분의 프로젝트는 프로젝트 파일에서 해당 프로젝트 상태를 저장합니다. 템플릿 파일의 복사본이 전달 활용 하 여 새 프로젝트를 만들 일반적으로 `CreateProject` 메서드와 여는 복사본입니다. 에 전달 된 프로젝트 파일을 열고 직접 기존 프로젝트에서 인스턴스화된 `CreateProject` 메서드. `CreateProject` 메서드는 필요에 따라 사용자에 게 추가 UI 기능을 표시할 수 있습니다.  
   
- 프로젝트 수 없는 파일을 사용할 수도 대신, 데이터베이스 또는 웹 서버를 같은 파일 시스템 이외의 저장소 메커니즘에는 프로젝트 상태를 저장 합니다. 파일 이름 매개 변수를 전달 하는 경우는 `CreateProject` 메서드는 파일 시스템 경로 실제로 아니라 고유한 문자열-URL-프로젝트 데이터를 확인 합니다. 에 전달 되는 템플릿 파일을 복사할 필요가 없습니다 `CreateProject` 실행할 적절 한 생성 시퀀스를 트리거할 수 있습니다.  
+   프로젝트 수 없는 파일을 사용할 수도 대신, 데이터베이스 또는 웹 서버를 같은 파일 시스템 이외의 저장소 메커니즘에는 프로젝트 상태를 저장 합니다. 파일 이름 매개 변수를 전달 하는 경우는 `CreateProject` 메서드는 파일 시스템 경로 실제로 아니라 고유한 문자열-URL-프로젝트 데이터를 확인 합니다. 에 전달 되는 템플릿 파일을 복사할 필요가 없습니다 `CreateProject` 실행할 적절 한 생성 시퀀스를 트리거할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   

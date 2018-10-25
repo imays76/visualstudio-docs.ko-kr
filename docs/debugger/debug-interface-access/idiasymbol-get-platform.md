@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db35057ba5926c8732e61940f043119e08c7f51d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 328fcbd071fcacc8ef8d749c9ffcef1cc13e6520
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936526"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
-컴파일 대상 컴파일한 플랫폼 형식을 검색 합니다.  
+컴파일 대상 컴파일된 플랫폼 형식을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ HRESULT get_platform (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 값을 반환 된 [CV_CPU_TYPE_e 열거형](../../debugger/debug-interface-access/cv-cpu-type-e.md) 컴파일 대상 컴파일 되었습니다에 대 한 플랫폼을 지정 하는 열거형을 입력 합니다.  
+ [out] 값을 반환 합니다 [CV_CPU_TYPE_e 열거형](../../debugger/debug-interface-access/cv-cpu-type-e.md) 컴파일 대상 컴파일 시에 대 한 플랫폼을 지정 하는 열거형 형식입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
 > [!NOTE]
->  반환 값이 `S_FALSE` 속성이 해당 기호를 사용할 수 있음을 의미 합니다.  
+>  반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

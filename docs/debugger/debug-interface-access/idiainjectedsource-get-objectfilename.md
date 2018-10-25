@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75dd11bde98d345d88b700aef6f4c86d80133714
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b3bb9297ab7a572572a35df3521236267ebd87e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932528"
 ---
 # <a name="idiainjectedsourcegetobjectfilename"></a>IDiaInjectedSource::get_objectFilename
-소스 컴파일한 개체 파일 이름을 검색 합니다.  
+원본 컴파일된 개체 파일 이름을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,7 +34,7 @@ HRESULT get_objectFilename (
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 소스 컴파일한 개체 파일 이름을 반환 합니다.  
+ [out] 원본 컴파일된 개체 파일 이름을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  

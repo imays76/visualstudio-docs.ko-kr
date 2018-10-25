@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a0e51725cf809e5c224fd438e507bcfde6ca2c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3528b4c323f1fee68a5ed17368646608e63e6fbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947866"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 이 프로그램에서 실행 중인 프로세스를 가져옵니다.  
@@ -44,12 +44,12 @@ int GetProcess(
  [out] 반환 된 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 프로세스를 나타내는 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 디버그 엔진 (DE) 구현 하지 않는 한는 [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) 인터페이스,이 메서드는 DE 구현 항상 반환 `E_NOTIMPL` 는 DE 스레드와 실행 되는 프로세스 수 없습니다. 확인할 수 없으므로 이 메서드의 구현을 충족 합니다.  
+ 디버그 엔진 (DE) 구현 하지 않는 한 합니다 [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) 인터페이스는 DE이이 메서드 구현은 항상 반환 `E_NOTIMPL` 는 DE 수 없습니다. 따라서와 실행 중인 프로세스를 확인할 수 없으므로 이 메서드의 구현을 충족 합니다.  
   
- 구현는 `IDebugEngineLaunch2` 인터페이스는 DE 프로세스를 만드는 방법을 알고 있어야 한다는 의미의 DE의 구현에 따라서는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스에서 실행 중인 프로세스에 알아야 수는 있습니다.  
+ 구현 합니다 `IDebugEngineLaunch2` 인터페이스는 DE 프로세스를 만드는 방법을 알고 있어야 한다는 의미 따라서는 DE 구현의 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스는 프로세스에서 실행 중인 것을 알 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

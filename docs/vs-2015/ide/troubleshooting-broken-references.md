@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950669"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 응용 프로그램에서 끊어진 참조를 사용하려고 하면 예외 오류가 생성됩니다. 참조된 구성 요소를 찾을 수 없는 것이 오류의 주된 원인이지만, 참조가 끊어진 것으로 간주되는 여러 상황이 있습니다. 다음 목록에 이러한 경우가 나와 있습니다.  
   
--   프로젝트의 참조 경로가 잘못되었거나 불완전합니다.  
+- 프로젝트의 참조 경로가 잘못되었거나 불완전합니다.  
   
--   참조되는 파일이 삭제되었습니다.  
+- 참조되는 파일이 삭제되었습니다.  
   
--   참조되는 파일의 이름이 바뀌었습니다.  
+- 참조되는 파일의 이름이 바뀌었습니다.  
   
--   네트워크 연결 또는 인증에 실패했습니다.  
+- 네트워크 연결 또는 인증에 실패했습니다.  
   
--   컴퓨터에 설치되지 않은 COM 구성 요소에 대한 참조입니다.  
+- 컴퓨터에 설치되지 않은 COM 구성 요소에 대한 참조입니다.  
   
- 이러한 문제에 대한 해결 방법은 다음과 같습니다.  
+  이러한 문제에 대한 해결 방법은 다음과 같습니다.  
   
 > [!NOTE]
 >  어셈블리의 파일이 프로젝트 파일의 절대 경로를 사용하여 참조됩니다. 따라서 복수 개발자 환경에서 작업하는 사용자는 로컬 환경에서 참조되는 어셈블리를 놓치고 있을 수 있습니다. 이 오류를 피하려면 이러한 경우에 프로젝트 간 참조를 추가하는 것이 좋습니다. 자세한 내용은 [NIB 방법: 참조 추가 대화 상자를 사용하여 참조 추가 또는 제거](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) 및 [어셈블리를 사용한 프로그래밍](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)을 참조하세요.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 834edb926142637a250cf4a695d5d1d54e103977
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 236d9a0be82885bdf8040c97601429279e74dd15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949645"
 ---
 # <a name="create-options-pages"></a>옵션 페이지 만들기
 에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 관리 패키지 프레임 워크 클래스에서 파생 된 <xref:Microsoft.VisualStudio.Shell.DialogPage> 확장을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 추가 하 여 IDE **옵션** 아래 페이지를 **도구** 메뉴.  
@@ -47,19 +47,19 @@ ms.locfileid: "39499480"
 ## <a name="implement-dialogpage-class"></a>DialogPage 클래스 구현  
  VSPackage의 구현을 제공 하는 개체는 <xref:Microsoft.VisualStudio.Shell.DialogPage>-파생된 형식 상속 된 다음 기능을 활용을 걸릴 수 있습니다.  
   
--   기본 사용자 인터페이스 창입니다.  
+- 기본 사용자 인터페이스 창입니다.  
   
--   기본 지 속성 메커니즘을 사용할 수 있는 경우 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 클래스에 적용 됩니다 또는 경우에는 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> 속성이로 설정 되어 `true` 에 대 한는 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 클래스에 적용 되는 합니다.  
+- 기본 지 속성 메커니즘을 사용할 수 있는 경우 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 클래스에 적용 됩니다 또는 경우에는 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> 속성이로 설정 되어 `true` 에 대 한는 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 클래스에 적용 되는 합니다.  
   
--   자동화 지원 합니다.  
+- 자동화 지원 합니다.  
   
- 구현 하는 개체에 대 한 최소 요구 사항을 **도구 옵션** 페이지를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.DialogPage> 추가 public 속성입니다.  
+  구현 하는 개체에 대 한 최소 요구 사항을 **도구 옵션** 페이지를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.DialogPage> 추가 public 속성입니다.  
   
- 클래스도 올바르게 등록 하는 경우를 **도구 옵션** 공용 속성에 사용할 수 있는 공급자 페이지는 **옵션** 섹션을 **도구** 형식의 메뉴를 속성 표입니다.  
+  클래스도 올바르게 등록 하는 경우를 **도구 옵션** 공용 속성에 사용할 수 있는 공급자 페이지는 **옵션** 섹션을 **도구** 형식의 메뉴를 속성 표입니다.  
   
- 이러한 모든 기본 기능을 재정의할 수 있습니다. 예를 들어, 더 복잡 한 사용자를 만들려면 인터페이스를 사용 하려면의 기본 구현만 재정의 <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>합니다.  
+  이러한 모든 기본 기능을 재정의할 수 있습니다. 예를 들어, 더 복잡 한 사용자를 만들려면 인터페이스를 사용 하려면의 기본 구현만 재정의 <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>합니다.  
   
-## <a name="example"></a>예  
+## <a name="example"></a>예제  
  그 뒤에 나오는 옵션 페이지의 간단한 "Hello world" 구현입니다. Visual Studio 패키지 템플릿을 사용 하 여 만든 기본 프로젝트에 다음 코드를 추가 합니다 **메뉴 명령을** 옵션을 선택 옵션 페이지 기능을 보여 줍니다 적절 하 게 됩니다.  
   
 ### <a name="description"></a>설명  

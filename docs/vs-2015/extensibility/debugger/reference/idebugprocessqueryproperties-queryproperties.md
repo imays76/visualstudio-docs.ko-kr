@@ -15,12 +15,12 @@ ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0717927c615cc667e55ac15d202885b8566f42f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89bdd8106b0c80c0c598bfd4eec6ce296bb2b4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948267"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,14 +50,14 @@ int QueryProperties(
  `dwPropType`  
  [in] 쿼리 속성 정의가 포함 된 배열입니다. 가능한 값은 다음과 같습니다.  
   
--   PROCESS_PROPERTY_COMMAND_LINE = 1  
+- PROCESS_PROPERTY_COMMAND_LINE = 1  
   
--   PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
   
--   PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
- `pvarPropValue`  
- [out] 속성 값이 포함 된 배열입니다.  
+  `pvarPropValue`  
+  [out] 속성 값이 포함 된 배열입니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  

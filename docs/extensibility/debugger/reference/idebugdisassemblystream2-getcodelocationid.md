@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86682bb64f041cd8ee1b08bbec02c28492cac7a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f3a1cd9cf0035dddc11bfe7c6fa3f3c1b51a083d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932704"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 특정 코드 컨텍스트에 대 한 코드 위치 식별자를 반환합니다.  
@@ -49,12 +49,12 @@ int GetCodeLocationId(
  [out] 코드 위치 식별자를 반환합니다. 설명 부분을 참조하세요.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 반환 `E_CODE_CONTEXT_OUT_OF_SCOPE` 코드 컨텍스트가 유효 하지만 범위 밖에 있습니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_CODE_CONTEXT_OUT_OF_SCOPE` 코드 컨텍스트에 유효 하지만 범위 밖에 있습니다.  
   
 ## <a name="remarks"></a>설명  
- 코드 위치 식별자 디스어셈블리를 지 원하는 디버그 엔진 (DE)에 해당 됩니다. 이 위치 식별자 코드의 위치를 추적 하는 DE에서 내부적으로 사용 이며 일반적으로 된 주소 또는 특정 종류의 오프셋입니다. 유일한 요구 사항은 있으면를 한 곳의 코드 컨텍스트 코드 컨텍스트를 다른 위치를 보다 작은 경우 해당 코드 위치 식별자의 첫 번째 코드 컨텍스트의 두 번째 코드 컨텍스트의 코드 위치 식별자 보다 작을 수 또한 해야 합니다.  
+ 코드 위치 식별자 디스어셈블리를 지 원하는 디버그 엔진 (DE)와 관련이 있습니다. 이 위치 식별자 코드의 위치를 추적 하는 DE에서 내부적으로 사용 및는 일반적으로 주소 또는 일종의 오프셋입니다. 유일한 요구 사항은 한 위치의 코드 컨텍스트를 사용 하면 다른 위치의 코드 컨텍스트 보다 작으면 첫 번째 코드 컨텍스트에서의 해당 코드 위치 식별자도 보다 작아야 두 번째 코드 컨텍스트의 코드 위치 식별자를 합니다.  
   
- 코드 위치 식별자의 코드 컨텍스트를 검색 하려면는 [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) 메서드.  
+ 코드 위치 식별자의 코드 컨텍스트를 검색 하려면 호출을 [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   

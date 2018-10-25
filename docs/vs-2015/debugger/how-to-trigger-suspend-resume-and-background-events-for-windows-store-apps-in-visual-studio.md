@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938385"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Visual Studio에서 Windows 스토어 앱에 대한 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "49214762"
   
  [백그라운드 작업 트리거](#BKMK_Trigger_background_tasks)  
   
--   [표준 디버그 세션에서 백그라운드 작업 이벤트 트리거](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [표준 디버그 세션에서 백그라운드 작업 이벤트 트리거](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [응용 프로그램이 실행 중이지 않을 때 백그라운드 작업 트리거](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [응용 프로그램이 실행 중이지 않을 때 백그라운드 작업 트리거](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [설치된 응용 프로그램에서 프로세스 수명 관리 이벤트 및 백그라운드 작업 트리거](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [설치된 응용 프로그램에서 프로세스 수명 관리 이벤트 및 백그라운드 작업 트리거](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [백그라운드 작업 활성화 오류 진단](#BKMK_Diagnosing_background_task_activation_errors)  
+  [백그라운드 작업 활성화 오류 진단](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 프로세스 수명 관리 이벤트 트리거  
  사용자가 응용 프로그램에서 벗어나거나 Windows가 절전 상태로 들어갈 때 응용 프로그램이 일시 중단될 수 있습니다. `Suspending` 이벤트에 응답하여 관련 응용 프로그램 및 사용자 데이터를 영구 저장소에 저장하고 리소스를 해제할 수 있습니다. 응용 프로그램은 **일시 중단됨** 상태에서 다시 시작되는 경우 **실행 중** 상태가 되고 일시 중단되었을 때의 위치에서 계속됩니다. `Resuming` 이벤트에 응답하여 응용 프로그램 상태를 복원하거나 새로 고치고 리소스를 회수할 수 있습니다.  

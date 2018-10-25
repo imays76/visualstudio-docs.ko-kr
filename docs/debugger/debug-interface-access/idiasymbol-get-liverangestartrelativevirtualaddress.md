@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94041c195d608b0641ab500dc8ab066adc87db36
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 872547326edb54fc5b843bdd74a8035e1119dca0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948072"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-로컬 기호는 유효한 주소 범위의 시작 부분을 반환 합니다.  
+로컬 기호 유효 주소 범위의 시작 부분을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,10 +37,10 @@ HRESULT get_liveRangeStartRelativeVirtualAddress (
  [out] 주소 범위의 시작 날짜를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 반환 되는 상대 가상 주소에는 기호가 유효한 범위의 시작입니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 하는 상대 가상 주소에는 기호가 유효한 범위의 시작입니다.  
   
 > [!NOTE]
->  반환 된 오류 코드는 기호 라이브 범위 정보가 없는 것을 의미 합니다.  
+>  반환 된 오류 코드 기호 라이브 범위 정보가 없는 것을 의미 합니다.  
   
 ## <a name="remarks"></a>설명  
   

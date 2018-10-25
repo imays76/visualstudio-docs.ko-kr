@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0040795564aa1d1d599a55928b888ec7cfcfd97e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6403beec680341416940a2cb4f65476408e095be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949086"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 필드 형식에 대 한 한정자를 지정합니다.  
@@ -106,16 +106,16 @@ public enum enum_FIELD_MODIFIERS {
   
 ## <a name="members"></a>멤버  
  FIELD_MOD_ACCESS_TYPE  
- 필드에 액세스할 수 없습니다 것을 나타냅니다.  
+ 필드에 액세스할 수 없습니다 나타냅니다.  
   
  FIELD_MOD_ACCESS_PUBLIC  
- 필드에 대 한 공용 액세스 있음을 나타냅니다.  
+ 필드에 대 한 공용 액세스에 있음을 나타냅니다.  
   
  FIELD_MOD_ACCESS_PROTECTED  
  필드에 보호 된 액세스 권한을 나타냅니다.  
   
  FIELD_MOD_ACCESS_PRIVATE  
- 필드에 대 한 개인 권한을 나타냅니다.  
+ 필드에 대 한 개인 액세스 있음을 나타냅니다.  
   
  FIELD_MOD_NOMODIFIERS  
  필드 한정자가 없습니다에 있음을 나타냅니다.  
@@ -139,7 +139,7 @@ public enum enum_FIELD_MODIFIERS {
  기본 필드 임을 나타냅니다.  
   
  FIELD_MOD_SYNCHRONIZED  
- 필드 동기화 되었음을 나타냅니다.  
+ 필드는 동기화 하는 것을 나타냅니다.  
   
  FIELD_MOD_VIRTUAL  
  가상 필드 임을 나타냅니다.  
@@ -148,10 +148,10 @@ public enum enum_FIELD_MODIFIERS {
  인터페이스 필드 임을 나타냅니다.  
   
  FIELD_MOD_FINAL  
- 최종 필드 임을 나타냅니다.  
+ 마지막 필드 임을 나타냅니다.  
   
  FIELD_MOD_SENTINEL  
- 센티널 필드 임을 나타냅니다.  
+ 필드는 sentinel 임을 나타냅니다.  
   
  FIELD_MOD_INNERCLASS  
  필드는 내부 클래스를 나타냅니다.  
@@ -163,19 +163,19 @@ public enum enum_FIELD_MODIFIERS {
  필드 참조 인수 임을 나타냅니다. 이 특히 메서드 인수입니다.  
   
  FIELD_MOD_HIDDEN  
- 되었음을 나타냅니다 필드 해야 숨겨져; 다른 컨텍스트에서 표시 예를 들어 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 정적 지역 변수입니다.  
+ 필드 또는 숨겨진 다른 컨텍스트에 나오는 수 해야 나타냅니다. 예를 들어 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 정적 지역 변수입니다.  
   
  FIELD_MOD_MARSHALASOBJECT  
- 필드 개체를 나타낸다는 것을 의미는 `IUnknown` 인터페이스입니다.  
+ 필드를 사용 하 여 개체를 나타냄을 `IUnknown` 인터페이스입니다.  
   
  FIELD_MOD_SPECIAL_NAME  
- 필드에 특수 한 이름이 예를 들어 `.ctor` 생성자 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 만).  
+ 필드에는 특별 한 이름, 예를 들어 나타냅니다 `.ctor` 생성자에 대 한 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 만).  
   
  FIELD_MOD_HIDEBYSIG  
- 필드에는 `Overloads` 에 적용 된 키워드 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 만).  
+ 필드에 있음을 나타냅니다 합니다 `Overloads` 적용할 키워드 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 만).  
   
  FIELD_MOD_WRITEONLY  
- 쓰기 전용 필드 임을 나타냅니다. 이 값에 포함 되지 않은 `FIELD_MOD_ALL`, 이러한 쓰기 전용 필드를 사용 하는 유일한은 함수 실행을 위한 것입니다. 사용자에 대 한 명시적으로 요청 해야 `FIELD_MOD_WRITEONLY` 필드입니다.  
+ 쓰기 전용 필드 임을 나타냅니다. 이 값에 포함 되지 않습니다 `FIELD_MOD_ALL`함수 실행에만 이러한 쓰기 전용 필드를 사용 하는 합니다. 사용자에 대 한 명시적으로 요청 해야 `FIELD_MOD_WRITEONLY` 필드입니다.  
   
  FIELD_MOD_ACCESS_MASK  
  필드 액세스에 대 한 마스크를 나타냅니다.  
@@ -184,9 +184,9 @@ public enum enum_FIELD_MODIFIERS {
  필드 한정자에 대 한 마스크를 나타냅니다.  
   
 ## <a name="remarks"></a>설명  
- 에 사용 되는 `dwModifiers` 의 멤버는 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조입니다.  
+ 에 사용 되는 합니다 `dwModifiers` 의 멤버는 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조입니다.  
   
- 이러한 값은 또한에 전달 되는 [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) 특정 필드에 대 한 필터링 하는 메서드.  
+ 이러한 값은 또한 전달 된 [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) 특정 필드에 대해 필터링 하는 방법입니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  

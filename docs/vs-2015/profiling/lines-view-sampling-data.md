@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a972d529b93445c1c66e9418b7d8f3e068b005c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73a50b3daf77fdd1a1e0a058bd64ddd068467c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932990"
 ---
 # <a name="lines-view---sampling-data"></a>줄 뷰 - 샘플링 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49289941"
   
  소스 파일에서는 하나의 문이 소스 파일의 여러 줄에 걸쳐 있거나 한 줄에 여러 문이 포함될 수 있습니다. 문은 다음에 의해 식별됩니다.  
   
--   함수 문이 포함된 소스 파일.  
+- 함수 문이 포함된 소스 파일.  
   
--   문이 포함된 함수.  
+- 문이 포함된 함수.  
   
--   문이 시작되는 소스 줄.  
+- 문이 시작되는 소스 줄.  
   
--   문이 시작되는 소스 줄의 문자.  
+- 문이 시작되는 소스 줄의 문자.  
   
--   문이 끝나는 소스 줄.  
+- 문이 끝나는 소스 줄.  
   
--   문이 끝나는 소스 줄의 문자.  
+- 문이 끝나는 소스 줄의 문자.  
   
- 줄 이름 열은 식별자 데이터의 정렬 가능한 연결을 제공합니다.  
+  줄 이름 열은 식별자 데이터의 정렬 가능한 연결을 제공합니다.  
   
- 정의에 따라 문은 다른 함수를 호출하지 않습니다. 따라서 전용 값만 나열됩니다.  
+  정의에 따라 문은 다른 함수를 호출하지 않습니다. 따라서 전용 값만 나열됩니다.  
   
 |열|설명|  
 |------------|-----------------|  

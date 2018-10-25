@@ -29,12 +29,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76abbde711e73598eb8c7bcfde052335222d0822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931840"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 웹 브라우저
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ ms.locfileid: "49175606"
  다음에서 소스 보기  
  내부 웹 브라우저를 통해 페이지에서 **소스 보기**를 선택할 때 웹 페이지를 여는 데 사용되는 편집기를 설정합니다.  
   
--   **소스 편집기** [코드 작성](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.  
+- **소스 편집기** [코드 작성](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.  
   
--   **HTML 편집기** [HTML 디자이너](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 디자인 뷰 또는 표준 텍스트 기반 소스 뷰 중 하나에서 웹 페이지를 편집하려면 이 선택을 사용합니다.  
+- **HTML 편집기** [HTML 디자이너](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 디자인 뷰 또는 표준 텍스트 기반 소스 뷰 중 하나에서 웹 페이지를 편집하려면 이 선택을 사용합니다.  
   
--   **외부 편집기** 다른 편집기에서 소스를 보려면 선택합니다. Notepad.exe 등 선택한 편집기의 경로를 지정합니다.  
+- **외부 편집기** 다른 편집기에서 소스를 보려면 선택합니다. Notepad.exe 등 선택한 편집기의 경로를 지정합니다.  
   
- Internet Explorer 옵션  
- **인터넷 속성** 대화 상자에서 Internet Explorer에 대한 옵션을 변경하려면 클릭합니다. 이 대화 상자에서 변경한 내용은 내부 웹 브라우저 및 Visual Studio IDE 외부에서(예: [시작] 메뉴에서) 시작된 Internet Explorer 인스턴스에 둘 다 영향을 미칩니다.  
+  Internet Explorer 옵션  
+  **인터넷 속성** 대화 상자에서 Internet Explorer에 대한 옵션을 변경하려면 클릭합니다. 이 대화 상자에서 변경한 내용은 내부 웹 브라우저 및 Visual Studio IDE 외부에서(예: [시작] 메뉴에서) 시작된 Internet Explorer 인스턴스에 둘 다 영향을 미칩니다.  
   
 > [!NOTE]
 >  다른 외부 웹 브라우저를 사용하여 Internet Explorer의 한 버전인 Visual Studio 내부 웹 브라우저를 바꾸려면 [브라우저 선택] 대화 상자를 사용합니다.  

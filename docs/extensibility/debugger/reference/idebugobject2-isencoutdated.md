@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab51e2dbc75de33bcafe28295b5e47e4b4358538
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6ec1e09628b2bd1da23bda6baaa1fa157dfbf08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928102"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
-이 메서드는이 개체 또는 부모 컨테이너의 편집 하며 계속 하기 상태 최신 인지 확인 합니다. 사용자 지정 식 계산기가 메서드와 항상 반환 구현 하지 않는 `E_NOTIMPL`합니다.  
+이 메서드는 부모 컨테이너 또는이 개체의 편집 하며 계속 하기 상태 최신 인지 확인 합니다. 이 메서드와 항상 반환을 사용자 지정 식 계산기 구현 하지 않는 `E_NOTIMPL`합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,10 +41,10 @@ int IsEncOutdated(
   
 #### <a name="parameters"></a>매개 변수  
  `pfEncOutdated`  
- [out] 0이 아닌 (`TRUE`) 편집 하며 계속 하기 상태를 오래 된 경우에 0 (`FALSE`) 없는 경우.  
+ [out] 0이 아닌 값 (`TRUE`) 편집 하며 계속 하기 상태를 오래 된 경우에 0 (`FALSE`) 없는 경우.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 > [!NOTE]
 >  사용자 지정 식 계산기는 항상 반환 `E_NOTIMPL`합니다.  

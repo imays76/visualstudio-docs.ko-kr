@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938619"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>방법: 데이터베이스에서 레코드 삭제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ ms.locfileid: "49210186"
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>TableAdapter.Update 메서드를 사용 하 여 데이터베이스에서 레코드를 삭제 하려면  
   
--   원하는에서 레코드를 삭제할 <xref:System.Data.DataTable> 삭제 하 여 <xref:System.Data.DataRow> 테이블의 개체입니다. 자세한 내용은 [방법: DataTable에서 행 삭제](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e)합니다. 행에서 삭제 된 후의 <xref:System.Data.DataTable>를 호출 합니다 `TableAdapter.Update` 메서드. 전체 전달 하 여 업데이트 하는 데이터의 양을 제어할 수 있습니다 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, 배열을 <xref:System.Data.DataRow>s, 단일 <xref:System.Data.DataRow>합니다. 다음 코드에서 레코드를 삭제 하는 방법을 보여 줍니다는 <xref:System.Data.DataTable> 호출을 `TableAdapter.Update` 변경 내용을 전달 및 데이터베이스에서 행을 삭제 하는 메서드. (이 예제에서는 Northwind 데이터베이스의 `Region` 테이블입니다.)  
+- 원하는에서 레코드를 삭제할 <xref:System.Data.DataTable> 삭제 하 여 <xref:System.Data.DataRow> 테이블의 개체입니다. 자세한 내용은 [방법: DataTable에서 행 삭제](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e)합니다. 행에서 삭제 된 후의 <xref:System.Data.DataTable>를 호출 합니다 `TableAdapter.Update` 메서드. 전체 전달 하 여 업데이트 하는 데이터의 양을 제어할 수 있습니다 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, 배열을 <xref:System.Data.DataRow>s, 단일 <xref:System.Data.DataRow>합니다. 다음 코드에서 레코드를 삭제 하는 방법을 보여 줍니다는 <xref:System.Data.DataTable> 호출을 `TableAdapter.Update` 변경 내용을 전달 및 데이터베이스에서 행을 삭제 하는 메서드. (이 예제에서는 Northwind 데이터베이스의 `Region` 테이블입니다.)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- 개체를 사용 하 여 응용 프로그램에 데이터를 저장 하는 응용 프로그램을 데이터베이스에서 직접 데이터를 삭제 하려면 TableAdapter의 DBDirect 메서드를 사용할 수 있습니다. 호출 된 `Delete` 메서드는 전달 된 매개 변수 값을 기반으로 데이터베이스에서 레코드를 제거 합니다.  
+  개체를 사용 하 여 응용 프로그램에 데이터를 저장 하는 응용 프로그램을 데이터베이스에서 직접 데이터를 삭제 하려면 TableAdapter의 DBDirect 메서드를 사용할 수 있습니다. 호출 된 `Delete` 메서드는 전달 된 매개 변수 값을 기반으로 데이터베이스에서 레코드를 제거 합니다.  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>TableAdapter.Delete 메서드를 사용 하 여 데이터베이스에서 레코드를 삭제 하려면  
   

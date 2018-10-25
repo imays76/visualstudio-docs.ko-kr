@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 453b8b8ef4667b7f049fbd4b62dbdc582c0a84ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942883"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio 잠금을 해제하는 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ ms.locfileid: "49198863"
   
  이 메시지는 구독이 여전히 유효할 수 있지만 Visual Studio에서 구독을 최신으로 유지하는 데 사용하는 라이선스 토큰이 새로 고쳐지지 않았으므로 다음 이유 중 하나로 인해 부실해졌음을 나타냅니다.  
   
-1.  Visual Studio를 사용한 적이 없거나 오랫동안 인터넷에 연결되지 않았습니다.  
+1. Visual Studio를 사용한 적이 없거나 오랫동안 인터넷에 연결되지 않았습니다.  
   
-2.  Visual Studio에서 로그아웃했습니다.  
+2. Visual Studio에서 로그아웃했습니다.  
   
- 라이선스 토큰이 부실해지기 전에 Visual Studio에서 먼저 자격 증명을 다시 입력하라는 경고 메시지를 표시합니다.  
+   라이선스 토큰이 부실해지기 전에 Visual Studio에서 먼저 자격 증명을 다시 입력하라는 경고 메시지를 표시합니다.  
   
- 자격 증명을 다시 입력하지 않으면 토큰이 부실해집니다. 이 경우 계정 설정 대화 상자에서 토큰이 완전히 만료될 때까지 남은 기간(일)을 표시합니다. 토큰이 만료된 후 위의 다른 방법으로 이 계정 또는 라이선스에 대한 자격 증명을 다시 입력해야 Visual Studio를 계속 사용할 수 있습니다.  
+   자격 증명을 다시 입력하지 않으면 토큰이 부실해집니다. 이 경우 계정 설정 대화 상자에서 토큰이 완전히 만료될 때까지 남은 기간(일)을 표시합니다. 토큰이 만료된 후 위의 다른 방법으로 이 계정 또는 라이선스에 대한 자격 증명을 다시 입력해야 Visual Studio를 계속 사용할 수 있습니다.  
   
 > [!IMPORTANT]
 >  인터넷 연결이 제한되거나 인터넷에 연결되지 않는 환경에서 오랫동안 Visual Studio를 사용하는 경우 작업이 중단되지 않도록 제품 키를 사용하여 Visual Studio의 잠금을 해제해야 합니다.  

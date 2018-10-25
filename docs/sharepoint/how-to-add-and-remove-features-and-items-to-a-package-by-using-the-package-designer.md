@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a2307a870487a3cc62a60b4162245db57653d452
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d58fbaf598e4844d4b76898e17dac5331a8b2e54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935070"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>방법: 추가 및 패키지 디자이너를 사용 하 여 패키지에 기능과 항목 제거
   SharePoint 솔루션을 만들 때 Visual Studio 솔루션의 패키지에 기본 SharePoint 기능을 추가 합니다. 최종 배포 하기 전에 추가할 수 있으며 SharePoint 프로젝트 항목 및 SharePoint 패키지를 수정 하는 기능을 제거할 수 있습니다.  
@@ -36,21 +36,21 @@ ms.locfileid: "36756095"
   
 #### <a name="to-add-sharepoint-features-with-the-package-designer"></a>패키지 디자이너를 사용 하 여 SharePoint 기능을 추가 하려면
   
-1.  엽니다는 **패키지 디자이너**합니다.  
+1. 엽니다는 **패키지 디자이너**합니다.  
   
-     자세한 내용은 [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)합니다.  
+    자세한 내용은 [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)합니다.  
   
-2.  다음 단계 중 하나 이상을 수행 하 여 하나 이상의 SharePoint 기능을 추가 합니다.  
+2. 다음 단계 중 하나 이상을 수행 하 여 하나 이상의 SharePoint 기능을 추가 합니다.  
   
-    1.  각 항목을 두 번 클릭 합니다 **솔루션에서 항목** 추가 하려는 목록입니다.  
+   1. 각 항목을 두 번 클릭 합니다 **솔루션에서 항목** 추가 하려는 목록입니다.  
   
-    2.  추가 선택한 다음 원하는 항목을 선택 합니다 **추가** 단추 (>).  
+   2. 추가 선택한 다음 원하는 항목을 선택 합니다 **추가** 단추 (>).  
   
-    3.  선택 합니다 **모두 추가** 단추 (>>) 한 번에 모든 항목을 추가 합니다.  
+   3. 선택 합니다 **모두 추가** 단추 (>>) 한 번에 모든 항목을 추가 합니다.  
   
-     항목에 두 번 예를 들어를 **솔루션에서 항목** 목록에 추가 합니다 **패키지에 항목** 목록입니다.  
+      항목에 두 번 예를 들어를 **솔루션에서 항목** 목록에 추가 합니다 **패키지에 항목** 목록입니다.  
   
-     SharePoint 프로젝트 항목 및 기능에 표시 합니다 **패키지에 항목** 목록입니다.  
+      SharePoint 프로젝트 항목 및 기능에 표시 합니다 **패키지에 항목** 목록입니다.  
   
 ## <a name="remove-features-from-a-sharepoint-package"></a>SharePoint 패키지의 기능을 제거 합니다.  
  패키지 디자이너를 사용 하 여 SharePoint 패키지에 기능을 제거할 수 있습니다.  

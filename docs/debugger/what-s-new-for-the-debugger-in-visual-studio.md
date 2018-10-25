@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943143"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>디버거의 새로운 기능 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -35,8 +35,8 @@ ms.locfileid: "46542440"
 
     스냅숏 컬렉션은 Azure App Service에서 실행되는 다음 웹앱에서 사용할 수 있습니다.
 
-    * .NET Framework 4.6.1 이상에서 실행되는 ASP.NET 응용 프로그램
-    * Windows의 .NET Core 2.0 이상에서 실행되는 ASP.NET Core 응용 프로그램
+  * .NET Framework 4.6.1 이상에서 실행되는 ASP.NET 응용 프로그램
+  * Windows의 .NET Core 2.0 이상에서 실행되는 ASP.NET Core 응용 프로그램
 
     자세한 내용은 [스냅숏 디버거를 사용 하 여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)합니다.
 

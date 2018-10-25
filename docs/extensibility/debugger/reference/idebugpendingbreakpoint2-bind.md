@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4170fce2fad18abdf54508ee7377c96367f3bf83
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e822686cf331794ff221c94ccdbd3ddd25e2f6bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933705"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
-이 보류 중인 중단점 하나 이상의 코드 위치로 바인딩합니다.  
+하나 이상의 코드 위치로이 보류 중인 중단점에 바인딩합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,12 +39,12 @@ int Bind();
 ```  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 반환 `E_BP_DELETED` 중단점 삭제 된 경우.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_BP_DELETED` 중단점 삭제 된 경우.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 호출할 때이 보류 중인 중단점 일치 하는 모든 코드 위치로 바인딩합니다 디버그 엔진 (DE) 않아야 합니다.  
+ 이 메서드를 호출 하는 경우 디버그 엔진 (DE)와 일치 하는 모든 코드 위치에이 보류 중인 중단점을 바인딩하지 하려고 해야 합니다.  
   
- 호출자를 호출 하는 보류 중인 중단점에 바인딩된 또는 가정 하기 전에 오류가 발생 하는 이벤트에 대 한 대기 해야이 메서드에서 반환 된 후의 [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) 또는 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)메서드와 각각 모든 오류 또는 중단점을 열거 합니다.  
+ 호출자를 호출 하는 나타내거나 보류 중인 중단점에 바인딩된 가정 하기 전에 오류가 발생 하는 이벤트를 대기 해야이 메서드에서 반환 된 후의 [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) 또는 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)메서드와 모든 바인딩 또는 오류 중단점을 각각 열거 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

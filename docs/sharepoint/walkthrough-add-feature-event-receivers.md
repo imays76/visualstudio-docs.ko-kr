@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948781"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>연습: 기능 이벤트 수신자 추가
   기능 이벤트 수신기는 SharePoint의 다음 기능 관련 이벤트 중 하나가 발생할 때 실행 하는 메서드:
 
--   기능 설치 됩니다.
+- 기능 설치 됩니다.
 
--   기능을 활성화 합니다.
+- 기능을 활성화 합니다.
 
--   기능이 비활성화 됩니다.
+- 기능이 비활성화 됩니다.
 
--   기능 제거 됩니다.
+- 기능 제거 됩니다.
 
- 이 연습에는 SharePoint 프로젝트의 기능 이벤트 수신기를 추가 하는 방법을 보여 줍니다. 다음 작업을 보여 줍니다.
+  이 연습에는 SharePoint 프로젝트의 기능 이벤트 수신기를 추가 하는 방법을 보여 줍니다. 다음 작업을 보여 줍니다.
 
--   기능 이벤트 수신기를 사용 하 여 빈 프로젝트를 만드는 중입니다.
+- 기능 이벤트 수신기를 사용 하 여 빈 프로젝트를 만드는 중입니다.
 
--   처리를 **FeatureDeactivating** 메서드.
+- 처리를 **FeatureDeactivating** 메서드.
 
--   공지 알림 목록에 추가할 SharePoint 프로젝트 개체 모델을 사용 합니다.
+- 공지 알림 목록에 추가할 SharePoint 프로젝트 개체 모델을 사용 합니다.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>전제 조건
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.

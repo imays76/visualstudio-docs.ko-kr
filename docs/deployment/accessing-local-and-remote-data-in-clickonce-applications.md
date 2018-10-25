@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943052"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce 응용 프로그램의 로컬 및 원격 데이터에 액세스
 대부분 응용 프로그램에서는 데이터를 사용하거나 생성합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서는 로컬에서 또는 원격으로 데이터를 읽고 쓰는 다양한 옵션을 제공합니다.  
@@ -30,11 +30,11 @@ ms.locfileid: "39081240"
 ## <a name="local-data"></a>로컬 데이터  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]에서는 다음 메서드의 하나를 사용하여 데이터를 로컬에서 로드 및 저장할 수 있습니다.  
   
--   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 데이터 디렉터리  
+- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 데이터 디렉터리  
   
--   격리된 저장소  
+- 격리된 저장소  
   
--   기타 로컬 파일  
+- 기타 로컬 파일  
   
 ### <a name="clickonce-data-directory"></a>ClickOnce 데이터 디렉터리  
  로컬 컴퓨터에 설치된 모든 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에는 사용자의 Documents and Settings 폴더에 저장된 데이터 디렉터리가 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에 포함되고 “데이터" 파일로 표시된 모든 파일은 응용 프로그램이 설치될 때 이 디렉터리에 복사됩니다. 데이터 파일의 파일 형식은 가장 자주 사용되는 텍스트, XML 및 데이터베이스 파일(예: Microsoft Access .mdb 파일)이 될 수 있습니다.  

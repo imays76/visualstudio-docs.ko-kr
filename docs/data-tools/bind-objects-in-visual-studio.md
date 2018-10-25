@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d69167189c24d2a78a5ba02a34f6d95268d72e5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950142"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio에서 데이터 원본으로 개체 바인딩
 
@@ -137,7 +137,7 @@ TableAdapter의 DBDirect 메서드를 개체에서 값을 전달 하 여 데이�
 Visual Studio 데이터베이스에 대해 직접 실행할 수 있는 DBDirect 메서드를 만듭니다. 이러한 메서드는 DataSet 또는 DataTable 개체를 필요 하지 않습니다.
 
 |TableAdapter DBDirect 메서드|설명|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|개별 열 값을 메서드 매개 변수로 전달할 수 있도록 데이터베이스에 새 레코드를 추가 합니다.|
 |`TableAdapter.Update`|기존 데이터베이스에서 레코드를 업데이트 합니다. Update 메서드는 메서드 매개 변수로 원래 및 새 열 값입니다. 원래 값을 원래 레코드를 찾는 데 사용 되 고 새 값은 해당 레코드를 업데이트 하는 데 사용 됩니다.<br /><br /> 합니다 `TableAdapter.Update` 메서드는 또한 수행 하 여 데이터 집합의 변경 내용을 데이터베이스로 다시 조정 하는 데 사용 됩니다는 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, 또는 배열을 <xref:System.Data.DataRow>메서드 매개 변수로 합니다.|
 |`TableAdapter.Delete`|메서드 매개 변수로 전달 되는 원래 열 값에 따라 데이터베이스에서 기존 레코드를 삭제 합니다.|

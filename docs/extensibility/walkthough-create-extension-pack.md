@@ -13,12 +13,12 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943104"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>연습: 확장 팩 만들기
 
@@ -40,8 +40,8 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
   
 3. 다음 코드를 포함 하는 ExtensionPack1.vsext 파일이 추가 됩니다.
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. 확장 팩에 포함 된 확장의 vsixid 복지부 합니다 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)합니다. 포함 하 고 클릭 하려는 확장을 찾을 **복사 ID**합니다. 기존 업데이트할 수 있습니다 **vsixId** 위의 파일 또는 목록에 다른 확장을 추가 합니다.
 

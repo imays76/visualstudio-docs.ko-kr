@@ -1,5 +1,5 @@
 ---
-title: Throw 따라야 할 식에서 같은 소스 줄에서 | Microsoft Docs
+title: Throw 따라야 식에서 같은 소스 줄에서 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951056"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>같은 소스 줄에서 throw 뒤에는 식이 와야 합니다.
-사용한는 `throw` 키워드를 따르지 않은 것 하는 식으로 같은 소스 줄에 있지만 합니다. A `throw` 문의 두 부분으로 구성:는 `throw` 키워드와 throw 될 식입니다. 예:  
+사용 된 `throw` 키워드를 따르지이 식을 사용 하 여 같은 소스 줄에 있지만. A `throw` 문의 두 부분으로 이루어져:는 `throw` throw 식 뒤에 키워드를 합니다. 예를 들어:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -36,13 +36,13 @@ if (denominator == 0) {
 }  
 ```  
   
- 이 두 구성 요소 분할할 수 없습니다.  
+ 이러한 두 구성 요소 분할할 수 없습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   다음 사항을 확인는 `throw` 키워드와 throw 식이 같은 줄에 나타납니다.  
+-   확인을 `throw` 키워드와 throw 식 동일한 줄에 나타납니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Error 개체](../../javascript/reference/error-object-javascript.md)   
- [throw 문](../../javascript/reference/throw-statement-javascript.md)   
+ [Throw 문](../../javascript/reference/throw-statement-javascript.md)   
  [try...catch...finally 문](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

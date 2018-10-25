@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b9145cff487ebb97894d9b93ad5e1ec54d5b4b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb2e66378b2a7b906b6bf9e0efe4e718316ade54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948293"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-이 중단점이 보류 중인 가상화 된 상태를 토글합니다. 보류 중인 중단점 가상화 되는 새 코드를 프로그램에 로드 될 때마다 바인딩할 디버그 엔진 시도 합니다.  
+중단점 보류 중인이 가상화 된 상태를 토글합니다. 보류 중인 중단점은 가상화 된 경우 새 코드를 프로그램에 로드 될 때마다 사용자에 게 바인딩하지 디버그 엔진 시도가입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,16 +42,16 @@ int Virtualize(
   
 #### <a name="parameters"></a>매개 변수  
  `fVirtualize`  
- [in] 에 0이 아닌 설정 (`TRUE`) 보류 중인 중단점을 가상화 할 또는 0 (`FALSE`) 가상화 사용 하지 않으려면입니다.  
+ [in] 설정에 0이 아닌 값 (`TRUE`) 보류 중인 중단점, 가상화 또는 0 (`FALSE`) 가상화를 해제 하려면.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`, 그러지 않으면 오류 코드가 반환 됩니다. 반환 `E_BP_DELETED` 중단점 삭제 된 경우.  
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_BP_DELETED` 중단점 삭제 된 경우.  
   
 ## <a name="remarks"></a>설명  
- 가상화 된 중단점은 코드가 로드 될 때마다 바인딩되어 있습니다.  
+ 가상화 된 중단점은 코드가 로드 될 때마다 바인딩됩니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 간단한에이 메서드를 구현 하는 방법을 보여 줍니다 `CPendingBreakpoint` 공개 하는 개체는 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스입니다.  
+ 다음 예제에서는 간단한에 대 한이 메서드를 구현 하는 방법을 보여 줍니다 `CPendingBreakpoint` 노출 하는 개체를 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스입니다.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    

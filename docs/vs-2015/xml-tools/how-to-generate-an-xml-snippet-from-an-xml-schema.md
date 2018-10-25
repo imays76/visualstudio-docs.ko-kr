@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7911a23530a8aea7aa93e52f23f4aeb473e35c6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951472"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>방법: XML 스키마에서 XML 조각 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각�
   
  이 기능은 요소에서만 사용할 수 있으며 다음 규칙이 적용됩니다.  
   
--   요소에 연결된 스키마 형식이 있어야 합니다. 즉, 연결된 스키마에 따라 요소가 유효해야 합니다. 스키마 형식은 추상적일 수 없으며 형식에 필수 특성 및/또는 필수 자식 요소가 포함되어야 합니다.  
+- 요소에 연결된 스키마 형식이 있어야 합니다. 즉, 연결된 스키마에 따라 요소가 유효해야 합니다. 스키마 형식은 추상적일 수 없으며 형식에 필수 특성 및/또는 필수 자식 요소가 포함되어야 합니다.  
   
--   편집기에서 현재 요소는 특성 없이 비어 있어야 합니다. 예를 들어, 다음은 모두 유효합니다.  
+- 편집기에서 현재 요소는 특성 없이 비어 있어야 합니다. 예를 들어, 다음은 모두 유효합니다.  
   
-    -   `<Account`  
+  -   `<Account`  
   
-    -   `<Account>`  
+  -   `<Account>`  
   
-    -   `<Account></Account>`  
+  -   `<Account></Account>`  
   
--   요소 이름의 바로 오른쪽에 커서가 있어야 합니다.  
+- 요소 이름의 바로 오른쪽에 커서가 있어야 합니다.  
   
- 생성된 조각에는 모든 필수 특성 및 요소가 포함됩니다. `minOccurs`가 1보다 큰 경우 해당 요소의 최소 필수 인스턴스 수(최대 100개)가 조각에 포함됩니다. 스키마에 고정 값이 있으면 조각에도 고정 값이 포함됩니다. `xsd:any` 및 `xsd:anyAttribute` 요소는 무시되며 그 결과로 추가 조각 구문은 없습니다.  
+  생성된 조각에는 모든 필수 특성 및 요소가 포함됩니다. `minOccurs`가 1보다 큰 경우 해당 요소의 최소 필수 인스턴스 수(최대 100개)가 조각에 포함됩니다. 스키마에 고정 값이 있으면 조각에도 고정 값이 포함됩니다. `xsd:any` 및 `xsd:anyAttribute` 요소는 무시되며 그 결과로 추가 조각 구문은 없습니다.  
   
- 기본값이 생성되고 편집 가능한 값으로 표시됩니다. 스키마에서 기본값을 지정하면 이 기본값이 사용됩니다. 그러나 스키마 기본값이 빈 문자열인 경우 편집기에서 다음 방법으로 기본값이 생성됩니다.  
+  기본값이 생성되고 편집 가능한 값으로 표시됩니다. 스키마에서 기본값을 지정하면 이 기본값이 사용됩니다. 그러나 스키마 기본값이 빈 문자열인 경우 편집기에서 다음 방법으로 기본값이 생성됩니다.  
   
--   union 형식의 멤버를 통해 직접 또는 간접적으로 스키마 형식에 열거형 패싯이 포함된 경우 스키마 개체 모델에서 첫 번째 열거형 값이 기본값으로 사용됩니다.  
+- union 형식의 멤버를 통해 직접 또는 간접적으로 스키마 형식에 열거형 패싯이 포함된 경우 스키마 개체 모델에서 첫 번째 열거형 값이 기본값으로 사용됩니다.  
   
--   스키마 형식이 atomic 형식인 경우 편집기에서 atomic 형식을 가져오고 atomic 형식 이름을 삽입합니다. 파생된 단순 형식의 경우 기본 단순 형식이 사용됩니다. list 형식의 경우 atomic 형식은 `itemType`입니다. union의 경우 atomic 형식은 첫 번째 `memberType`의 atomic 형식입니다.  
+- 스키마 형식이 atomic 형식인 경우 편집기에서 atomic 형식을 가져오고 atomic 형식 이름을 삽입합니다. 파생된 단순 형식의 경우 기본 단순 형식이 사용됩니다. list 형식의 경우 atomic 형식은 `itemType`입니다. union의 경우 atomic 형식은 첫 번째 `memberType`의 atomic 형식입니다.  
   
 ## <a name="example"></a>예제  
  이 단원의 단계에서는 XML 편집기의 스키마에 의해 생성된 XML 조각 기능을 사용하는 방법을 보여 줍니다.  

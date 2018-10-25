@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942896"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>연습: n 계층 데이터 응용 프로그램 만들기
 *N 계층* 데이터 응용 프로그램은 여러 논리 계층으로 분리 되어 데이터에 액세스 하는 응용 프로그램 또는 *계층*합니다. 응용 프로그램 구성 요소를 개별 계층으로 분리하면 응용 프로그램의 확장성과 유지 관리 가능성이 높아집니다. 이는 전체 솔루션을 다시 설계하지 않고도 단일 계층에 적용할 수 있는 새로운 기술을 보다 쉽게 도입할 수 있기 때문입니다. N 계층 아키텍처에는 표시 계층, 중간 계층 및 데이터 계층이 포함됩니다. 중간 계층에는 대개 데이터 액세스 계층, 비즈니스 논리 계층 및 인증, 유효성 검사 등의 공유 구성 요소가 포함됩니다. 데이터 계층에는 관계형 데이터베이스가 포함됩니다. 표시 계층에 액세스하는 최종 사용자로부터 격리된 상태를 유지하기 위해 N 계층 응용 프로그램에서는 보통 중요한 정보가 중간 계층의 데이터 액세스 계층에 저장됩니다. 자세한 내용은 [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)합니다.
@@ -73,7 +73,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
  이 연습의 첫 단계에서는 솔루션과 클래스 라이브러리 프로젝트 두 개를 만듭니다. 데이터 집합을 보유 하는 첫 번째 클래스 라이브러리 (생성 된 형식의 `DataSet` 클래스 및 응용 프로그램의 데이터를 보유 하는 Datatable)입니다. 이 프로젝트는 응용 프로그램의 데이터 엔터티 계층으로 사용되며 대개 중간 계층에 배치됩니다. 데이터 집합을 초기 데이터 집합을 만들면 하 고 자동으로 두 클래스 라이브러리로 코드를 구분 합니다.
 
 > [!NOTE]
->  클릭 하기 전에 프로젝트 및 솔루션의 올바르게 이름은 **확인**합니다. 그러면 이 연습을 보다 쉽게 완료할 수 있습니다.
+> 클릭 하기 전에 프로젝트 및 솔루션의 올바르게 이름은 **확인**합니다. 그러면 이 연습을 보다 쉽게 완료할 수 있습니다.
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>N 계층 솔루션 및 DataEntityTier 클래스 라이브러리를 만들려면
 
@@ -106,7 +106,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
  다음 단계에서는 형식화된 데이터 집합을 만듭니다. Dataset 클래스를 사용 하 여 형식화 된 데이터 집합을 만듭니다 (포함 `DataTables` 클래스) 및 `TableAdapter` 단일 프로젝트에서 클래스입니다. 모든 클래스는 단일 파일로 생성됩니다. Dataset 클래스는 그대로 두고, 다른 프로젝트를 이동 하는 것이 데이터 집합 및 Tableadapter를 다른 프로젝트로 분리 하면는 `TableAdapter` 원래 프로젝트에서 클래스입니다. 따라서 궁극적으로 Tableadapter (DataAccessTier 프로젝트) 포함 하는 프로젝트에서 데이터 집합을 만듭니다. 사용 하 여 데이터 집합을 만들려면 합니다 **데이터 소스 구성 마법사**합니다.
 
 > [!NOTE]
->  연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스를 설정 하는 방법에 대 한 정보를 참조 하세요 [방법: 샘플 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)합니다.
+> 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스를 설정 하는 방법에 대 한 정보를 참조 하세요 [방법: 샘플 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)합니다.
 
 ### <a name="to-create-the-dataset"></a>데이터 집합을 만들려면
 
@@ -129,7 +129,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
 6.  데이터베이스에서 암호를 요구 하는 경우 중요 한 데이터를 포함 하 여 선택한 옵션을 선택 **다음**합니다.
 
     > [!NOTE]
-    >  SQL Server에 연결하는 대신 로컬 데이터베이스 파일을 선택한 경우 프로젝트에 파일을 추가할지를 묻는 메시지가 표시될 수 있습니다. 선택할 **예** 데이터베이스 파일을 프로젝트에 추가 합니다.
+    > SQL Server에 연결하는 대신 로컬 데이터베이스 파일을 선택한 경우 프로젝트에 파일을 추가할지를 묻는 메시지가 표시될 수 있습니다. 선택할 **예** 데이터베이스 파일을 프로젝트에 추가 합니다.
 
 7.  선택 **다음** 에 **응용 프로그램 구성 파일에 연결 문자열 저장** 페이지입니다.
 
@@ -144,20 +144,20 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>데이터 집합에서 TableAdapters를 분리하려면
 
-1.  두 번 클릭 **NorthwindDataSet.xsd** 에 **솔루션 탐색기** 에서 데이터 집합을 여는 **데이터 집합 디자이너**합니다.
+1. 두 번 클릭 **NorthwindDataSet.xsd** 에 **솔루션 탐색기** 에서 데이터 집합을 여는 **데이터 집합 디자이너**합니다.
 
-2.  디자이너의 빈 영역을 선택 합니다.
+2. 디자이너의 빈 영역을 선택 합니다.
 
-3.  찾을 합니다 **데이터 집합 프로젝트** 에서 노드를 **속성** 창입니다.
+3. 찾을 합니다 **데이터 집합 프로젝트** 에서 노드를 **속성** 창입니다.
 
-4.  에 **데이터 집합 프로젝트** 목록에서 **DataEntityTier**합니다.
+4. 에 **데이터 집합 프로젝트** 목록에서 **DataEntityTier**합니다.
 
-5.  **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
+5. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
 
- 데이터 집합 및 TableAdapters가 두 클래스 라이브러리 프로젝트로 분리됩니다. 원래 전체 데이터 집합을 포함 하는 프로젝트 (`DataAccessTier`) 이제는 TableAdapters만 포함 되어 있습니다. 에 지정 된 프로젝트를 **데이터 집합 프로젝트** 속성 (`DataEntityTier`) 형식화 된 데이터 집합을 포함 합니다. *집합인 NorthwindDataSet.Dataset.Designer.vb* (또는  *NorthwindDataSet.Dataset.Designer.cs*).
+   데이터 집합 및 TableAdapters가 두 클래스 라이브러리 프로젝트로 분리됩니다. 원래 전체 데이터 집합을 포함 하는 프로젝트 (`DataAccessTier`) 이제는 TableAdapters만 포함 되어 있습니다. 에 지정 된 프로젝트를 **데이터 집합 프로젝트** 속성 (`DataEntityTier`) 형식화 된 데이터 집합을 포함 합니다. *집합인 NorthwindDataSet.Dataset.Designer.vb* (또는  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
->  데이터 집합 및 TableAdapters를 분리할 때는 (설정 하 여 합니다 **데이터 집합 프로젝트** 속성), 프로젝트의 기존 부분 데이터 집합 클래스가 자동으로 이동 되지 것입니다. 따라서 데이터 집합 프로젝트로 기존 데이터 집합 부분 클래스를 수동으로 이동해야 합니다.
+> 데이터 집합 및 TableAdapters를 분리할 때는 (설정 하 여 합니다 **데이터 집합 프로젝트** 속성), 프로젝트의 기존 부분 데이터 집합 클래스가 자동으로 이동 되지 것입니다. 따라서 데이터 집합 프로젝트로 기존 데이터 집합 부분 클래스를 수동으로 이동해야 합니다.
 
 ## <a name="create-a-new-service-application"></a>새 서비스 응용 프로그램 만들기
 이 연습에는 WCF 서비스를 사용 하 여 데이터 액세스 계층에 액세스 하려면 새 WCF 서비스 응용 프로그램을 만들어 보겠습니다 방법을 보여 줍니다.
@@ -224,7 +224,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
  이제 데이터 액세스 계층에 데이터를 반환하는 메서드가 포함되었으므로 데이터 서비스에 데이터 액세스 계층의 메서드를 호출하는 메서드를 만듭니다.
 
 > [!NOTE]
->  C# 프로젝트의 경우 다음 코드가 컴파일하도록 할 `System.Data.DataSetExtensions` 어셈블리에 대한 참조를 추가해야 합니다.
+> C# 프로젝트의 경우 다음 코드가 컴파일하도록 할 `System.Data.DataSetExtensions` 어셈블리에 대한 참조를 추가해야 합니다.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>데이터 서비스에서 GetCustomers 및 GetOrders 함수를 만들려면
 
@@ -323,7 +323,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
 3.  선택 **Service1** 선택한 **확인**합니다.
 
     > [!NOTE]
-    >  여러 서비스를 현재 컴퓨터의 경우이 연습에서 이전에 만든 서비스를 선택 (포함 하는 서비스를 `GetCustomers` 고 `GetOrders` 메서드).
+    > 여러 서비스를 현재 컴퓨터의 경우이 연습에서 이전에 만든 서비스를 선택 (포함 하는 서비스를 `GetCustomers` 고 `GetOrders` 메서드).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Datagridview를 폼에 데이터 서비스에서 반환 된 데이터 표시 추가
  데이터 서비스에 대 한 서비스 참조를 추가 합니다 **데이터 원본** 창 서비스에서 반환 되는 데이터를 사용 하 여 자동으로 채워집니다.
@@ -361,7 +361,7 @@ N 계층 응용 프로그램의 여러 계층을 분리하는 방법 중 하나�
 에 대 한 기본값 `maxReceivedMessageSize` 에서 검색할 데이터를 저장 하기에 충분히 크지 않은 합니다 `Customers` 및 `Orders` 테이블입니다. 다음 단계에서는 값을 6553600으로 늘릴 수 있습니다. 서비스 참조를 자동으로 업데이트 하는 클라이언트에서 값을 변경 하는 경우.
 
 > [!NOTE]
->  기본값이 작은 이유는 DoS(서비스 거부) 공격에 대한 노출을 제한하기 위해서입니다. 자세한 내용은 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>을 참조하십시오.
+> 기본값이 작은 이유는 DoS(서비스 거부) 공격에 대한 노출을 제한하기 위해서입니다. 자세한 내용은 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>을 참조하십시오.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>maxReceivedMessageSize 값을 늘리려면
 

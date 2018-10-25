@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942831"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>글꼴 및 Visual Studio에 대 한 서식 지정
 ##  <a name="BKMK_TheEnvironmentFont"></a> 환경 글꼴
@@ -325,13 +325,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>첫 글자를 대문자로  
  첫 글자를 대문자로 대부분 또는 모든 구 내에서 단어의 첫 글자를 대문자로 작성 하는 스타일입니다. Visual Studio에서 첫 글자를 대문자로 비롯 한 여러 항목에 대 한 사용 됩니다.  
   
--   **Tooltips.** 예: "선택한 항목 미리 보기"  
+- **Tooltips.** 예: "선택한 항목 미리 보기"  
   
--   **열 헤더입니다.** 예: "시스템 응답"  
+- **열 헤더입니다.** 예: "시스템 응답"  
   
--   **메뉴 항목입니다.** 예: "모두 저장"  
+- **메뉴 항목입니다.** 예: "모두 저장"  
   
- 첫 글자를 대문자로 사용 하는 경우 이러한은 단어를 활용 하는 경우 및 소문자 상태로 유지 하는 경우에 대 한 지침입니다.  
+  첫 글자를 대문자로 사용 하는 경우 이러한은 단어를 활용 하는 경우 및 소문자 상태로 유지 하는 경우에 대 한 지침입니다.  
   
 |대문자|설명 및 예제|  
 |---------------|---------------------------|  

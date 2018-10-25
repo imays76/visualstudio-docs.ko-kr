@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65626bc483d7794c2adae141903783238a97eddd
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468467"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933562"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>연습: 스레드 창을 사용 하 여 Visual Studio에서 다중 스레드 응용 프로그램 디버그
 Visual Studio에서 제공 된 **스레드** 창 및 기타 사용자 인터페이스 요소를 다중 스레드 응용 프로그램을 디버깅할 수 있도록 합니다. 이 자습서에서는 사용 하는 **스레드** 창 및 **디버그 위치** 도구 모음입니다. 다른 도구에 대 한 자세한 내용은 [다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)합니다. 이 자습서는 몇 분 정도 걸리지만 완료 익힐 수 다중 스레드 응용 프로그램 디버깅에 대 한 기능을 사용 하 여.   
@@ -72,29 +72,29 @@ Visual Studio에서 제공 된 **스레드** 창 및 기타 사용자 인터페�
   
 #### <a name="to-start-debugging"></a>디버깅을 시작하려면  
   
-1.  왼쪽된 여백을 클릭을 `Console.WriteLine` 문을 새 중단점을 삽입 합니다.  
+1. 왼쪽된 여백을 클릭을 `Console.WriteLine` 문을 새 중단점을 삽입 합니다.  
   
-     소스 코드 편집기의 왼쪽에 여백에 빨간색 원이 나타납니다. 이 공은 이 위치에 중단점이 설정되었음을 나타냅니다.  
+    소스 코드 편집기의 왼쪽에 여백에 빨간색 원이 나타납니다. 이 공은 이 위치에 중단점이 설정되었음을 나타냅니다.  
   
-2.  에 **디버그** 메뉴에서 클릭 **디버깅 시작** (**F5**).  
+2. 에 **디버그** 메뉴에서 클릭 **디버깅 시작** (**F5**).  
   
-     디버깅을 시작하면 콘솔 응용 프로그램이 실행되다가 중단점에서 중지됩니다.  
+    디버깅을 시작하면 콘솔 응용 프로그램이 실행되다가 중단점에서 중지됩니다.  
   
-3.  이때 콘솔 응용 프로그램 창에 포커스가 있으면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 창을 클릭하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]로 포커스를 되돌립니다.  
+3. 이때 콘솔 응용 프로그램 창에 포커스가 있으면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 창을 클릭하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]로 포커스를 되돌립니다.  
   
-4.  소스 코드 편집기에서 다음 코드를 포함 하는 줄을 찾습니다.  
+4. 소스 코드 편집기에서 다음 코드를 포함 하는 줄을 찾습니다.  
   
-    ```VB  
-    Thread.Sleep(5000)   
-    ```  
+   ```VB  
+   Thread.Sleep(5000)   
+   ```  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    Thread::Sleep(3000);  
-    ```
+   ```C++  
+   Thread::Sleep(3000);  
+   ```
   
 #### <a name="to-discover-the-thread-marker"></a>스레드 마커를 찾으려면  
 

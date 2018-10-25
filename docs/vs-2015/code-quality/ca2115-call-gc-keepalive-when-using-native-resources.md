@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c48ad201a780c31fed5f324ff96a91bd21989522
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8f45b188945febcd3c81fc4be6a9427d8fe94ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948748"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
@@ -50,11 +51,11 @@ ms.locfileid: "49213350"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙은 거짓 긍정을 야기할 수 있는 몇 가지 사항을 가정 합니다. 안전 하 게 하는 경우이 규칙에서 경고를 무시할 수 있습니다.
 
--   종료자의 콘텐츠를 해제 하지 않는 합니다 <xref:System.IntPtr> 또는 <xref:System.UIntPtr> 메서드에서 참조 되는 필드입니다.
+- 종료자의 콘텐츠를 해제 하지 않는 합니다 <xref:System.IntPtr> 또는 <xref:System.UIntPtr> 메서드에서 참조 되는 필드입니다.
 
--   메서드를 통과 하지 못한 합니다 <xref:System.IntPtr> 또는 <xref:System.UIntPtr> 비관리 코드로 필드입니다.
+- 메서드를 통과 하지 못한 합니다 <xref:System.IntPtr> 또는 <xref:System.UIntPtr> 비관리 코드로 필드입니다.
 
- 신중 하 게 제외 하기 전에 다른 메시지를 검토 합니다. 이 규칙 재현 하 고 디버그 하기 어려운 오류를 감지 합니다.
+  신중 하 게 제외 하기 전에 다른 메시지를 검토 합니다. 이 규칙 재현 하 고 디버그 하기 어려운 오류를 감지 합니다.
 
 ## <a name="example"></a>예제
  다음 예제에서 `BadMethod`에는 `GC.KeepAlive`에 대한 호출이 포함되지 않으므로 규칙을 위반합니다. `GoodMethod` 수정 된 코드를 포함합니다.

@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949314"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ ms.locfileid: "49225565"
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>누락 된 VSPackage 나 해당 종속성 중 하나를 해결 하려면  
   
-1.  관리 코드에 대 한 참조 경로가 올바른지 확인 합니다.  
+1. 관리 코드에 대 한 참조 경로가 올바른지 확인 합니다.  
   
-    1.  **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
+   1.  **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
   
-    2.  선택 합니다 **참조** 탭에 **속성 페이지** 모든 경로 올바른 대화 상자 하 고 있는지 확인 합니다. 사용할 수 있습니다 합니다 **개체 브라우저** 참조 된 개체를 찾아볼 수 있습니다.  
+   2.  선택 합니다 **참조** 탭에 **속성 페이지** 모든 경로 올바른 대화 상자 하 고 있는지 확인 합니다. 사용할 수 있습니다 합니다 **개체 브라우저** 참조 된 개체를 찾아볼 수 있습니다.  
   
-         관리 코드에 대해 사용할 수 있습니다 합니다 [Fuslogvw.exe (어셈블리 바인딩 로그 뷰어)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) 실패 한 어셈블리 로드의 세부 정보를 표시 합니다.  
+        관리 코드에 대해 사용할 수 있습니다 합니다 [Fuslogvw.exe (어셈블리 바인딩 로그 뷰어)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) 실패 한 어셈블리 로드의 세부 정보를 표시 합니다.  
   
-2.  비관리 코드에서 VSPackage의 CLSID를 찾기는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 레지스트리 노드:  
+2. 비관리 코드에서 VSPackage의 CLSID를 찾기는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 레지스트리 노드:  
   
-     Studio HKLM\Software\Microsoft\Visual\\*\<버전 >* \CLSID  
+    Studio HKLM\Software\Microsoft\Visual\\*\<버전 >* \CLSID  
   
- InprocServer32 항목 VSPackage dll의 올바른 경로가 있는지 확인 합니다.  
+   InprocServer32 항목 VSPackage dll의 올바른 경로가 있는지 확인 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [VSPackage](../extensibility/internals/vspackages.md)

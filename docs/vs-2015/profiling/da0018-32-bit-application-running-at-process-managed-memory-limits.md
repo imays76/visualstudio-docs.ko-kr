@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928765"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 응용 프로그램
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ ms.locfileid: "49269583"
   
  관리되는 메모리의 과도한 오버헤드가 문제인 경우 다음 옵션 중 하나를 고려하세요.  
   
--   응용 프로그램의 관리되는 메모리 리소스 사용 최적화  
+- 응용 프로그램의 관리되는 메모리 리소스 사용 최적화  
   
-     또는  
+   또는  
   
--   32비트 프로세스의 최대 가상 메모리 크기에 대한 아키텍처 제약 조건을 완화하는 단계 수행  
+- 32비트 프로세스의 최대 가상 메모리 크기에 대한 아키텍처 제약 조건을 완화하는 단계 수행  
   
- 응용 프로그램의 관리되는 메모리 리소스 사용을 최적화하려면 .NET 메모리 할당 프로파일링 실행에서 관리되는 메모리 할당 데이터를 수집합니다. [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md) 보고서를 검토하여 응용 프로그램의 메모리 할당 패턴을 파악합니다.  
+  응용 프로그램의 관리되는 메모리 리소스 사용을 최적화하려면 .NET 메모리 할당 프로파일링 실행에서 관리되는 메모리 할당 데이터를 수집합니다. [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md) 보고서를 검토하여 응용 프로그램의 메모리 할당 패턴을 파악합니다.  
   
- [개체 수명 뷰](../profiling/object-lifetime-view.md)를 사용하여 프로그램의 어떤 데이터 개체가 세대로 생존하고 세대에서 회수되는지 확인합니다.  
+  [개체 수명 뷰](../profiling/object-lifetime-view.md)를 사용하여 프로그램의 어떤 데이터 개체가 세대로 생존하고 세대에서 회수되는지 확인합니다.  
   
- [할당 뷰](../profiling/dotnet-memory-allocations-view.md)를 사용하여 이러한 할당이 시작된 실행 경로를 확인합니다.  
+  [할당 뷰](../profiling/dotnet-memory-allocations-view.md)를 사용하여 이러한 할당이 시작된 실행 경로를 확인합니다.  
   
- 가비지 수집 성능을 향상시키는 방법에 대한 자세한 내용은 MSDN 웹 사이트에서 .NET Framework 기술 문서, [가비지 수집기 기본 및 성능 힌트](http://go.microsoft.com/fwlink/?LinkId=177946)를 참조하세요.  
+  가비지 수집 성능을 향상시키는 방법에 대한 자세한 내용은 MSDN 웹 사이트에서 .NET Framework 기술 문서, [가비지 수집기 기본 및 성능 힌트](http://go.microsoft.com/fwlink/?LinkId=177946)를 참조하세요.  
   
- 프로세스 주소 공간 중 전용 부분 크기에 대한 가상 메모리 제약 조건을 구조적으로 완화하려면 64비트 컴퓨터에서 이 32비트 프로세스를 실행해 보세요.  64비트 컴퓨터에서 32비트 프로세스를 실행하면 전용 가상 메모리를 4GB까지 확보할 수 있습니다.  
+  프로세스 주소 공간 중 전용 부분 크기에 대한 가상 메모리 제약 조건을 구조적으로 완화하려면 64비트 컴퓨터에서 이 32비트 프로세스를 실행해 보세요.  64비트 컴퓨터에서 32비트 프로세스를 실행하면 전용 가상 메모리를 4GB까지 확보할 수 있습니다.  
   
- 64비트 컴퓨터에서 64비트 프로세스를 실행하면 가상 메모리를 8TB까지 확보할 수 있습니다. 네이티브 64비트 응용 프로그램으로 실행되도록 응용 프로그램을 다시 컴파일해 보세요. 이 규칙은 참고용으로만 제공되며 정정 작업이 필요하지 않습니다.
+  64비트 컴퓨터에서 64비트 프로세스를 실행하면 가상 메모리를 8TB까지 확보할 수 있습니다. 네이티브 64비트 응용 프로그램으로 실행되도록 응용 프로그램을 다시 컴파일해 보세요. 이 규칙은 참고용으로만 제공되며 정정 작업이 필요하지 않습니다.
 
 
 
