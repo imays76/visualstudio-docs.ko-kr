@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938606"
 ---
 # <a name="graphics-pipeline-stages"></a>그래픽 파이프라인 단계
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ ms.locfileid: "49267464"
 ### <a name="links-to-related-graphics-objects"></a>관련 그래픽 개체에 대한 링크  
  경우에 따라 그리기 호출이 특정 방식으로 그래픽 파이프라인과 상호 작용하는 이유를 확인하려면 추가 컨텍스트가 필요합니다. 이 추가 컨텍스트를 쉽게 찾을 수 있도록 그래픽 파이프라인 단계 창은 그래픽 파이프라인에서 발생하는 상황과 관련된 추가 컨텍스트를 제공하는 하나 이상의 개체에 연결됩니다.  
   
--   Direct3D 12에서 이 개체는 일반적으로 명령 목록입니다.  
+- Direct3D 12에서 이 개체는 일반적으로 명령 목록입니다.  
   
--   Direct3D 11에서 이 개체는 일반적으로 그래픽 장치 컨텍스트입니다.  
+- Direct3D 11에서 이 개체는 일반적으로 그래픽 장치 컨텍스트입니다.  
   
- 이러한 링크는 그래픽 파이프라인 단계 창의 왼쪽 위 모서리에 있는 현재 그래픽 이벤트 서명의 일부입니다. 개체에 대한 추가 정보를 검토하려면 다음 링크를 클릭하세요.  
+  이러한 링크는 그래픽 파이프라인 단계 창의 왼쪽 위 모서리에 있는 현재 그래픽 이벤트 서명의 일부입니다. 개체에 대한 추가 정보를 검토하려면 다음 링크를 클릭하세요.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>셰이더 코드 보기 및 디버그  
  파이프라인 단계 창에서 각 단계 아래쪽에 있는 컨트롤을 사용하여 꼭짓점, 헐, 도메인, 기하 도형 및 픽셀 셰이더에 대한 코드를 검사하고 디버그할 수 있습니다.  

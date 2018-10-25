@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3c7ed095d0efe756e7a23409cd5a54f9e6dcda8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933185"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터 바인딩
   VSTO 추가 기능 프로젝트에서 호스트 컨트롤에 데이터를 바인딩할 수 있습니다. 이 연습에서는 Microsoft Office Word 문서에 컨트롤을 추가하고, MSDN 콘텐츠 서비스에서 검색된 데이터에 컨트롤을 바인딩하고, 런타임에 이벤트에 응답하는 방법을 보여 줍니다.  
@@ -31,13 +31,13 @@ ms.locfileid: "38808659"
   
  이 연습에서는 다음 작업을 수행합니다.  
   
--   추가 된 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 런타임에 문서에 컨트롤입니다.  
+- 추가 된 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 런타임에 문서에 컨트롤입니다.  
   
--   바인딩는 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 웹 서비스에서 데이터를 제어 합니다.  
+- 바인딩는 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 웹 서비스에서 데이터를 제어 합니다.  
   
--   <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 컨트롤의 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 이벤트에 응답  
+- <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 컨트롤의 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 이벤트에 응답  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.  

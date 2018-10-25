@@ -18,12 +18,12 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69fd91f60750da0f6301527bb7a7c4a9ba97bb6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938918"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace 독립 실행형 수집기 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,22 +39,22 @@ ms.locfileid: "49267477"
   
  **요구 사항**  
   
--   .NET Framework 3.5, 4 또는 4.5  
+- .NET Framework 3.5, 4 또는 4.5  
   
--   .iTrace 파일을 열기 위한 개발 컴퓨터 또는 다른 컴퓨터의 Visual Studio Enterprise(Professional 또는 Community Edition 아님)  
+- .iTrace 파일을 열기 위한 개발 컴퓨터 또는 다른 컴퓨터의 Visual Studio Enterprise(Professional 또는 Community Edition 아님)  
   
-    > [!NOTE]
-    >  기호(.pdb) 파일을 저장해야 합니다. IntelliTrace를 사용하여 코드를 디버그하고 단계별로 실행하려면 일치하는 소스 파일과 기호 파일이 있어야 합니다. 참조 [배포 후 문제 진단](../debugger/diagnose-problems-after-deployment.md)합니다.  
+  > [!NOTE]
+  >  기호(.pdb) 파일을 저장해야 합니다. IntelliTrace를 사용하여 코드를 디버그하고 단계별로 실행하려면 일치하는 소스 파일과 기호 파일이 있어야 합니다. 참조 [배포 후 문제 진단](../debugger/diagnose-problems-after-deployment.md)합니다.  
   
- **FAQ**  
+  **FAQ**  
   
--   [컬렉터를 사용할 수 있는 앱](#WhatApps)  
+- [컬렉터를 사용할 수 있는 앱](#WhatApps)  
   
--   [시작하는 방법](#GetStarted)  
+- [시작하는 방법](#GetStarted)  
   
--   [앱 속도를 그대로 유지하면서 데이터를 최대한 수집하는 방법](#Minimizing)  
+- [앱 속도를 그대로 유지하면서 데이터를 최대한 수집하는 방법](#Minimizing)  
   
--   [IntelliTrace 데이터를 가져올 수 있는 다른 위치](#WhereElse)  
+- [IntelliTrace 데이터를 가져올 수 있는 다른 위치](#WhereElse)  
   
 ##  <a name="WhatApps"></a> 컬렉터를 사용할 수 있는 앱  
   
@@ -84,40 +84,40 @@ ms.locfileid: "49267477"
   
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 수집기 설치  
   
-1.  앱 서버에서 **C:\IntelliTraceCollector**와 같은 수집기 디렉터리를 만듭니다.  
+1. 앱 서버에서 **C:\IntelliTraceCollector**와 같은 수집기 디렉터리를 만듭니다.  
   
-2.  Microsoft 다운로드 센터 또는 Visual Studio 2013 Update 3 설치 폴더에서 수집기를 다운로드하거나 가져옵니다. [Visual Studio 2013 Update 4을 위한 IntelliTrace 수집기](https://www.microsoft.com/download/details.aspx?id=44909)::  
+2. Microsoft 다운로드 센터 또는 Visual Studio 2013 Update 3 설치 폴더에서 수집기를 다운로드하거나 가져옵니다. [Visual Studio 2013 Update 4을 위한 IntelliTrace 수집기](https://www.microsoft.com/download/details.aspx?id=44909)::  
   
-    -   **Microsoft 다운로드 센터**:  
+   - **Microsoft 다운로드 센터**:  
   
-        1.  **IntelliTraceCollector.exe**옆의 **다운로드**를 선택합니다.  
+     1. **IntelliTraceCollector.exe**옆의 **다운로드**를 선택합니다.  
   
-        2.  IntelliTraceCollector.exe를 **C:\IntelliTraceCollector**와 같은 수집기 디렉터리에 저장합니다.  
+     2. IntelliTraceCollector.exe를 **C:\IntelliTraceCollector**와 같은 수집기 디렉터리에 저장합니다.  
   
-        3.  IntelliTraceCollector.exe를 실행합니다. 그러면 IntelliTraceCollection.cab 파일이 추출됩니다.  
+     3. IntelliTraceCollector.exe를 실행합니다. 그러면 IntelliTraceCollection.cab 파일이 추출됩니다.  
   
-         \- 또는 -  
+        \- 또는 -  
   
-    -   **Visual Studio 설치 폴더**:  
+   - **Visual Studio 설치 폴더**:  
   
-        1.  IntelliTraceCollection.cab를 다음 폴더에 복사합니다.  
+     1.  IntelliTraceCollection.cab를 다음 폴더에 복사합니다.  
   
-             **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
   
-        2.  IntelliTraceCollection.cab를 **C:\IntelliTraceCollector**와 같은 수집기 디렉터리에 저장합니다.  
+     2.  IntelliTraceCollection.cab를 **C:\IntelliTraceCollector**와 같은 수집기 디렉터리에 저장합니다.  
   
-3.  다음 단계를 수행하여 IntelliTraceCollection.cab를 확장합니다.  
+3. 다음 단계를 수행하여 IntelliTraceCollection.cab를 확장합니다.  
   
-    1.  앱 서버에서 관리자 권한으로 명령 프롬프트 창을 엽니다.  
+   1.  앱 서버에서 관리자 권한으로 명령 프롬프트 창을 엽니다.  
   
-    2.  **C:\IntelliTraceCollector**와 같은 수집기 디렉터리로 이동합니다.  
+   2.  **C:\IntelliTraceCollector**와 같은 수집기 디렉터리로 이동합니다.  
   
-    3.  끝의 마침표( **.** )를 포함한 다음**expand**명령을 사용하여 IntelliTraceCollection.cab를 확장합니다.  
+   3.  끝의 마침표( **.** )를 포함한 다음**expand**명령을 사용하여 IntelliTraceCollection.cab를 확장합니다.  
   
-         `expand  /f:* IntelliTraceCollection.cab .`  
+        `expand  /f:* IntelliTraceCollection.cab .`  
   
-        > [!NOTE]
-        >  마침표(**.**)는 지역화된 수집 계획을 포함하는 하위 폴더를 보존합니다.  
+       > [!NOTE]
+       >  마침표(**.**)는 지역화된 수집 계획을 포함하는 하위 폴더를 보존합니다.  
   
 ##  <a name="ConfigurePermissionsRunningCollector"></a> 수집기 디렉터리에 대한 사용 권한 설정  
   
@@ -173,47 +173,47 @@ ms.locfileid: "49267477"
   
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> .iTrace 파일 디렉터리에 대한 사용 권한 설정  
   
-1.  앱 서버에서 **C:\IntelliTraceLogFiles**와 같은 .iTrace 파일 디렉터리를 만듭니다.  
+1. 앱 서버에서 **C:\IntelliTraceLogFiles**와 같은 .iTrace 파일 디렉터리를 만듭니다.  
   
-    > [!NOTE]
-    >  -   앱 속도 저하를 방지하려면 사용량이 많지 않은 로컬 고속 디스크의 위치를 선택합니다.  
-    > -   .ITrace 파일과 수집기 파일은 같은 위치에 배치할 수 있습니다. 그러나 웹앱 또는 SharePoint 응용 프로그램이 있는 경우에는 이 위치가 응용 프로그램을 호스트하는 디렉터리 외부에 있어야 합니다.  
+   > [!NOTE]
+   > - 앱 속도 저하를 방지하려면 사용량이 많지 않은 로컬 고속 디스크의 위치를 선택합니다.  
+   >   -   .ITrace 파일과 수집기 파일은 같은 위치에 배치할 수 있습니다. 그러나 웹앱 또는 SharePoint 응용 프로그램이 있는 경우에는 이 위치가 응용 프로그램을 호스트하는 디렉터리 외부에 있어야 합니다.  
+   > 
+   > [!IMPORTANT]
+   > - .ITrace 파일 디렉터리는 수집기에서 사용해야 하는 ID만으로 제한합니다. IntelliTrace는 메서드 매개 변수로 또는 반환 값으로 전달되는 데이터를 기록할 수 있으므로 .iTrace 파일은 사용자, 데이터베이스, 기타 소스 정보 및 연결 문자열의 데이터와 같은 중요한 정보를 포함할 수 있습니다.  
+   >   -   .ITrace 파일을 열 수 있는 사용자에게 중요한 데이터를 볼 수 있는 권한이 있는지 확인합니다. .ITrace 파일을 공유할 때는 주의해야 합니다. 다른 사람이 액세스해야 하는 파일은 안전한 공유 위치에 복사합니다.  
   
-    > [!IMPORTANT]
-    >  -   .ITrace 파일 디렉터리는 수집기에서 사용해야 하는 ID만으로 제한합니다. IntelliTrace는 메서드 매개 변수로 또는 반환 값으로 전달되는 데이터를 기록할 수 있으므로 .iTrace 파일은 사용자, 데이터베이스, 기타 소스 정보 및 연결 문자열의 데이터와 같은 중요한 정보를 포함할 수 있습니다.  
-    > -   .ITrace 파일을 열 수 있는 사용자에게 중요한 데이터를 볼 수 있는 권한이 있는지 확인합니다. .ITrace 파일을 공유할 때는 주의해야 합니다. 다른 사람이 액세스해야 하는 파일은 안전한 공유 위치에 복사합니다.  
+2. 웹앱 또는 SharePoint 응용 프로그램의 경우에는 .iTrace 파일 디렉터리에 대한 모든 권한을 해당 응용 프로그램 풀에 제공합니다. Windows **icacls** 명령이나 Windows 탐색기 또는 파일 탐색기를 사용할 수 있습니다.  
   
-2.  웹앱 또는 SharePoint 응용 프로그램의 경우에는 .iTrace 파일 디렉터리에 대한 모든 권한을 해당 응용 프로그램 풀에 제공합니다. Windows **icacls** 명령이나 Windows 탐색기 또는 파일 탐색기를 사용할 수 있습니다.  
+    예를 들어:  
   
-     예를 들어:  
+   - Windows **icacls** 명령을 통해 사용 권한을 설정하려면 다음 명령을 사용합니다.  
   
-    -   Windows **icacls** 명령을 통해 사용 권한을 설정하려면 다음 명령을 사용합니다.  
+     - **DefaultAppPool** 응용 프로그램 풀의 웹앱:  
   
-        -   **DefaultAppPool** 응용 프로그램 풀의 웹앱:  
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`  
   
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`  
+     - **SharePoint - 80** 응용 프로그램 풀의 SharePoint 응용 프로그램:  
   
-        -   **SharePoint - 80** 응용 프로그램 풀의 SharePoint 응용 프로그램:  
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
+       또는  
   
-         또는  
+   - Windows 탐색기 또는 파일 탐색기를 통해 사용 권한을 설정하려면 다음 단계를 수행합니다.  
   
-    -   Windows 탐색기 또는 파일 탐색기를 통해 사용 권한을 설정하려면 다음 단계를 수행합니다.  
+     1.  .iTrace 파일 디렉터리의 **속성** 을 엽니다.  
   
-        1.  .iTrace 파일 디렉터리의 **속성** 을 엽니다.  
+     2.  **보안** 탭에서 **편집**, **추가**를 차례로 선택합니다.  
   
-        2.  **보안** 탭에서 **편집**, **추가**를 차례로 선택합니다.  
+     3.  **개체 유형을 선택하세요.** 상자에 **기본 제공 보안 계정** 이 표시되는지 확인하고 표시되지 않으면 **개체 형식** 을 선택하여 추가합니다.  
   
-        3.  **개체 유형을 선택하세요.** 상자에 **기본 제공 보안 계정** 이 표시되는지 확인하고 표시되지 않으면 **개체 형식** 을 선택하여 추가합니다.  
+     4.  **찾을 위치를 선택하세요.** 상자에 로컬 컴퓨터가 표시되는지 확인하고 표시되지 않으면 **위치** 를 선택하여 변경합니다.  
   
-        4.  **찾을 위치를 선택하세요.** 상자에 로컬 컴퓨터가 표시되는지 확인하고 표시되지 않으면 **위치** 를 선택하여 변경합니다.  
+     5.  **선택할 개체 이름을 입력하세요.** 상자에 웹앱 또는 SharePoint 응용 프로그램의 응용 프로그램 풀을 추가합니다.  
   
-        5.  **선택할 개체 이름을 입력하세요.** 상자에 웹앱 또는 SharePoint 응용 프로그램의 응용 프로그램 풀을 추가합니다.  
+     6.  **이름 확인** 을 선택하여 이름을 확인합니다. **확인**을 선택합니다.  
   
-        6.  **이름 확인** 을 선택하여 이름을 확인합니다. **확인**을 선택합니다.  
-  
-        7.  응용 프로그램 풀에 **모든 권한**이 있는지 확인합니다.  
+     7.  응용 프로그램 풀에 **모든 권한**이 있는지 확인합니다.  
   
 ##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 웹 응용 프로그램 또는 SharePoint 응용 프로그램에서 데이터 수집  
   
@@ -297,92 +297,92 @@ ms.locfileid: "49267477"
   
  앱 속도를 그대로 유지하면서 대부분의 데이터를 가져올 수 있는 몇 가지 방법은 다음과 같습니다.  
   
--   문제가 있다고 생각되거나 문제를 재현할 수 있는 경우에만 수집기를 실행합니다.  
+- 문제가 있다고 생각되거나 문제를 재현할 수 있는 경우에만 수집기를 실행합니다.  
   
-     수집을 시작하고 문제를 재현한 다음 수집을 중지합니다. Visual Studio Enterprise에서 .iTrace 파일을 열고 데이터를 검사합니다. 참조 [Visual Studio Enterprise에서.iTrace 파일을 열고](#BKMK_View_IntelliTrace_Log_Files)합니다.  
+   수집을 시작하고 문제를 재현한 다음 수집을 중지합니다. Visual Studio Enterprise에서 .iTrace 파일을 열고 데이터를 검사합니다. 참조 [Visual Studio Enterprise에서.iTrace 파일을 열고](#BKMK_View_IntelliTrace_Log_Files)합니다.  
   
--   웹앱 및 SharePoint 응용 프로그램의 경우 수집기는 지정한 응용 프로그램 풀을 공유하는 모든 앱에 대한 데이터를 기록합니다. 수집 계획에서는 단일 앱에 대한 모듈만 지정할 수 있지만, 이로 인해 같은 응용 프로그램 풀을 공유하는 앱의 속도가 느려질 수 있습니다.  
+- 웹앱 및 SharePoint 응용 프로그램의 경우 수집기는 지정한 응용 프로그램 풀을 공유하는 모든 앱에 대한 데이터를 기록합니다. 수집 계획에서는 단일 앱에 대한 모듈만 지정할 수 있지만, 이로 인해 같은 응용 프로그램 풀을 공유하는 앱의 속도가 느려질 수 있습니다.  
   
-     수집기로 인해 다른 앱의 속도가 느려지지 않도록 하려면 자체 응용 프로그램 풀에서 각 앱을 호스트합니다.  
+   수집기로 인해 다른 앱의 속도가 느려지지 않도록 하려면 자체 응용 프로그램 풀에서 각 앱을 호스트합니다.  
   
--   IntelliTrace가 데이터를 수집하는 이벤트를 수집 계획에서 검토합니다. 수집 계획을 편집하여 관련이나 필요가 없는 이벤트를 사용하지 않도록 설정합니다.  
+- IntelliTrace가 데이터를 수집하는 이벤트를 수집 계획에서 검토합니다. 수집 계획을 편집하여 관련이나 필요가 없는 이벤트를 사용하지 않도록 설정합니다.  
   
-     이벤트를 사용하지 않도록 설정하려면 `enabled` 요소의 `<DiagnosticEventSpecification>` 특성을 `false`로 설정합니다.  
+   이벤트를 사용하지 않도록 설정하려면 `enabled` 요소의 `<DiagnosticEventSpecification>` 특성을 `false`로 설정합니다.  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     `enabled` 특성이 없으면 이벤트는 사용하도록 설정됩니다.  
+   `enabled` 특성이 없으면 이벤트는 사용하도록 설정됩니다.  
   
-     *이러한 방법을 통해 성능을 개선하는 방식*  
+   *이러한 방법을 통해 성능을 개선하는 방식*  
   
-    -   앱에 관련이 없는 이벤트를 사용하지 않도록 설정하여 시작 시간을 단축할 수 있습니다. 예를 들어 Windows 워크플로를 사용하지 않는 앱에 대해 Windows 워크플로 이벤트를 사용하지 않도록 설정합니다.  
+  -   앱에 관련이 없는 이벤트를 사용하지 않도록 설정하여 시작 시간을 단축할 수 있습니다. 예를 들어 Windows 워크플로를 사용하지 않는 앱에 대해 Windows 워크플로 이벤트를 사용하지 않도록 설정합니다.  
   
-    -   레지스트리에 액세스하기는 하지만 레지스트리 설정에 문제가 표시되지 않는 앱에 대해 레지스트리 이벤트를 사용하지 않도록 설정하면 시작 및 런타임 성능을 모두 개선할 수 있습니다.  
+  -   레지스트리에 액세스하기는 하지만 레지스트리 설정에 문제가 표시되지 않는 앱에 대해 레지스트리 이벤트를 사용하지 않도록 설정하면 시작 및 런타임 성능을 모두 개선할 수 있습니다.  
   
--   IntelliTrace가 데이터를 수집하는 모듈을 수집 계획에서 검토하고, 다음 단계를 수행하여 관련이 있는 모듈만 포함하도록 수집 계획을 편집합니다.  
+- IntelliTrace가 데이터를 수집하는 모듈을 수집 계획에서 검토하고, 다음 단계를 수행하여 관련이 있는 모듈만 포함하도록 수집 계획을 편집합니다.  
   
-    1.  수집 계획을 엽니다. `<ModuleList>` 요소를 찾습니다.  
+  1. 수집 계획을 엽니다. `<ModuleList>` 요소를 찾습니다.  
   
-    2.  `<ModuleList>`에서 `isExclusionList` 특성을 `false`로 설정합니다.  
+  2. `<ModuleList>`에서 `isExclusionList` 특성을 `false`로 설정합니다.  
   
-    3.  `<Name>` 요소를 사용하여 파일 이름, 문자열 값(이름에 해당 문자열이 들어 있는 모듈이 포함됨) 또는 공개 키 중 하나로 각 모듈을 지정합니다.  
+  3. `<Name>` 요소를 사용하여 파일 이름, 문자열 값(이름에 해당 문자열이 들어 있는 모듈이 포함됨) 또는 공개 키 중 하나로 각 모듈을 지정합니다.  
   
      예를 들어 Fabrikam Fiber 웹앱의 기본 웹 모듈에서만 데이터를 수집하려면 다음과 같은 목록을 만듭니다.  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     이름에 "Fabrikam"이 포함되어 있는 모든 모듈에서 데이터를 수집하려면 다음과 같은 목록을 만듭니다.  
+   이름에 "Fabrikam"이 포함되어 있는 모든 모듈에서 데이터를 수집하려면 다음과 같은 목록을 만듭니다.  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     공개 키 토큰을 지정하여 모듈에서 데이터를 수집하려면 다음과 같은 목록을 만듭니다.  
+   공개 키 토큰을 지정하여 모듈에서 데이터를 수집하려면 다음과 같은 목록을 만듭니다.  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     *이러한 방법을 통해 성능을 개선하는 방식*  
+   *이러한 방법을 통해 성능을 개선하는 방식*  
   
-     이 작업을 수행하면 앱이 시작되어 실행될 때 IntelliTrace가 수집하는 메서드 호출 정보 및 기타 계측 데이터의 양을 줄일 수 있습니다. 이 데이터를 통해 다음 작업을 수행할 수 있습니다.  
+   이 작업을 수행하면 앱이 시작되어 실행될 때 IntelliTrace가 수집하는 메서드 호출 정보 및 기타 계측 데이터의 양을 줄일 수 있습니다. 이 데이터를 통해 다음 작업을 수행할 수 있습니다.  
   
-    -   데이터 수집 후 코드를 단계별로 실행합니다.  
+  - 데이터 수집 후 코드를 단계별로 실행합니다.  
   
-    -   함수 호출에서 전달 및 반환된 값을 검사합니다.  
+  - 함수 호출에서 전달 및 반환된 값을 검사합니다.  
   
-     *모듈을 제외하지 않는 이유*  
+    *모듈을 제외하지 않는 이유*  
   
-     기본적으로 수집 계획에서는 `isExclusionList` 특성을 `true`로 설정하여 모듈을 제외합니다. 그러나 모듈을 제외해도 목록 기준을 충족하지 않으며 관련이 없는 모듈(예: 타사 또는 오픈 소스 모듈)에서 데이터가 수집될 수 있습니다.  
+    기본적으로 수집 계획에서는 `isExclusionList` 특성을 `true`로 설정하여 모듈을 제외합니다. 그러나 모듈을 제외해도 목록 기준을 충족하지 않으며 관련이 없는 모듈(예: 타사 또는 오픈 소스 모듈)에서 데이터가 수집될 수 있습니다.  
   
--   *IntelliTrace에서 수집하지 않는 데이터*  
+- *IntelliTrace에서 수집하지 않는 데이터*  
   
-     성능에 대한 영향을 줄이기 위해 IntelliTrace는 데이터 수집 시 메서드에서 전달 및 반환되는 기본 데이터 형식의 값과 메서드에서 전달 및 반환되는 최상위 개체의 필드에 포함된 기본 데이터 형식의 값만 수집합니다.  
+   성능에 대한 영향을 줄이기 위해 IntelliTrace는 데이터 수집 시 메서드에서 전달 및 반환되는 기본 데이터 형식의 값과 메서드에서 전달 및 반환되는 최상위 개체의 필드에 포함된 기본 데이터 형식의 값만 수집합니다.  
   
-     예를 들어 `AlterEmployee` 메서드 서명이 정수 `id` 및 `Employee` 개체 `oldemployee`를 허용한다고 가정해 보겠습니다.  
+   예를 들어 `AlterEmployee` 메서드 서명이 정수 `id` 및 `Employee` 개체 `oldemployee`를 허용한다고 가정해 보겠습니다.  
   
-     `public Employee AlterEmployee(int id, Employee oldemployee)`  
+   `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
-     `Employee` 형식에는 `Id`, `Name`및 `HomeAddress`특성이 있습니다. 그리고 `Employee` 및 `Address` 형식 간에는 연결 관계가 있습니다.  
+   `Employee` 형식에는 `Id`, `Name`및 `HomeAddress`특성이 있습니다. 그리고 `Employee` 및 `Address` 형식 간에는 연결 관계가 있습니다.  
   
-     ![직원과 주소의 관계](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+   ![직원과 주소의 관계](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
-     수집기는 `id`메서드에서 반환되는 `Employee.Id`, `Employee.Name` , `Employee` 및 `AlterEmployee` 개체의 값을 기록합니다. 그러나 `Address` 개체에 대한 정보는 null인지 여부를 제외하고는 기록하지 않습니다. 또한 `AlterEmployee` 메서드의 로컬 변수에 대한 데이터도 기록하지 않습니다. 단, 다른 메서드가 해당 로컬 변수를 매개 변수로 사용하는 경우에는 로컬 변수가 메서드 매개 변수로 기록됩니다.  
+   수집기는 `id`메서드에서 반환되는 `Employee.Id`, `Employee.Name` , `Employee` 및 `AlterEmployee` 개체의 값을 기록합니다. 그러나 `Address` 개체에 대한 정보는 null인지 여부를 제외하고는 기록하지 않습니다. 또한 `AlterEmployee` 메서드의 로컬 변수에 대한 데이터도 기록하지 않습니다. 단, 다른 메서드가 해당 로컬 변수를 매개 변수로 사용하는 경우에는 로컬 변수가 메서드 매개 변수로 기록됩니다.  
   
 ##  <a name="WhereElse"></a> IntelliTrace 데이터를 가져올 수 있는 다른 위치  
   

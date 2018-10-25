@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: df6fce197a184167b66025191f43b07ebd08ffa7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819591"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 함수는 지정된 프로세스 또는 스레드에 문자열을 할당합니다.  
@@ -39,17 +39,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  프로파일링 요소의 이름입니다. 다음의 경우 이름이 잘못되었습니다(NameProfileA에서 NAME_ERROR_INVALID_NAME 반환).  
   
--   NameProfileA로 전달된 포인터가 NULL 값인 경우  
+- NameProfileA로 전달된 포인터가 NULL 값인 경우  
   
--   pszName의 문자열 데이터가 숫자로 시작하는 경우  
+- pszName의 문자열 데이터가 숫자로 시작하는 경우  
   
--   pszName의 문자열 데이터에 공백이 포함된 경우  
+- pszName의 문자열 데이터에 공백이 포함된 경우  
   
--   pszName의 문자열 데이터에 ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>> 문자 중 하나가 포함된 경우  
+- pszName의 문자열 데이터에 ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>> 문자 중 하나가 포함된 경우  
   
- `Level`  
+  `Level`  
   
- 성능 데이터 수집을 적용할 수 있는 프로필 수준을 나타냅니다. 다음 **PROFILE_CONTROL_LEVEL** 값은 성능 데이터 수집을 적용할 수 있는 세 가지 수준 중 하나를 나타내는 데 사용될 수 있습니다.  
+  성능 데이터 수집을 적용할 수 있는 프로필 수준을 나타냅니다. 다음 **PROFILE_CONTROL_LEVEL** 값은 성능 데이터 수집을 적용할 수 있는 세 가지 수준 중 하나를 나타내는 데 사용될 수 있습니다.  
   
 |열거자|설명|  
 |----------------|-----------------|  

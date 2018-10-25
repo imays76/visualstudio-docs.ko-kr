@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939518"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -100,7 +100,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 ### <a name="test-explorer-groups"></a>테스트 탐색기 그룹
 
 |그룹화|설명|
-|-----------|-----------------|
+|-|-----------------|
 |**기간**|실행 시간을 기준으로 **빠름**, **보통**, **느림**으로 테스트를 그룹화합니다.|
 |**결과**|실행 결과를 기준으로 **실패한 테스트**, **건너뛴 테스트**, **통과한 테스트**로 테스트를 그룹화합니다.|
 |**특성**|정의한 범주/값 쌍을 기준으로 테스트를 그룹화합니다. 특성(trait) 범주 및 값을 지정하는 구문은 단위 테스트 프레임워크에 의해 정의됩니다.|
@@ -115,7 +115,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
  관리되는 앱에 대한 Microsoft 단위 테스트 프레임워크에서 특성(trait) 이름/값 쌍을  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 특성에 정의합니다. 테스트 프레임워크에는 다음과 같은 미리 정의된 특성(trait)이 있습니다.
 
 |특성|설명|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|소유자 범주는 단위 테스트 프레임워크에 의해 정의되며, 소유자의 문자열 값을 제공해야 합니다.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|우선순위 범주는 단위 테스트 프레임워크에 의해 정의되며, 우선순위의 정수 값을 제공해야 합니다.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 특성을 사용하면 값이 없는 범주를 제공할 수 있습니다. TestCategory 특성으로 정의된 범주는 TestProperty 특성의 범주도 될 수 있습니다.|
@@ -143,7 +143,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 > 검색은 대/소문자를 구분하지 않으며 지정된 문자열이 조건 값의 어느 부분에라도 일치하는지 확인합니다.
 
 |한정자|설명|
-|---------------|-----------------|
+|-|-----------------|
 |**특성**|특성(trait) 범주와 일치 항목의 값을 검색합니다. 특성(trait) 범주와 값을 지정하는 구문은 단위 테스트 프레임워크에 의해 정의됩니다.|
 |**프로젝트**|테스트 프로젝트 이름에서 일치 항목을 검색합니다.|
 |**오류 메시지**|어설션 오류에 의해 반환되는 사용자 정의 오류 메시지에서 일치 항목을 검색합니다.|
@@ -187,7 +187,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 2. 테스트 탐색기에서 테스트 메서드를 선택한 다음 상황에 맞는 메뉴에서 **선택한 테스트 디버그** 를 선택합니다.
 
- 디버거에 대한 자세한 내용은 [Visual Studio에서 디버그](../debugger/debugging-in-visual-studio.md)를 참조하세요.
+   디버거에 대한 자세한 내용은 [Visual Studio에서 디버그](../debugger/debugging-in-visual-studio.md)를 참조하세요.
 
 ### <a name="diagnose-test-method-performance-issues"></a>테스트 메서드 성능 문제 진단
 
@@ -216,7 +216,7 @@ Visual Studio 코드 검사 도구를 사용하여 실제로 단위 테스트를
 테스트 코드 편집기에서 마우스 오른쪽 단추로 클릭하고 **테스트 실행**을 선택하거나 또는 Visual Studio에서 기본 [테스트 탐색기 바로 가기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)를 사용하여 **테스트 탐색기**에서 테스트를 실행할 수 있습니다. 바로 가기 중 일부는 컨텍스트를 기반으로 합니다. 이는 바로 가기가 코드 편집기에서 커서의 위치에 따라 테스트를 디버그하거나 실행하는 것을 의미합니다. 커서가 테스트 메서드 내에 있는 경우 해당 테스트 메서드가 실행됩니다. 커서가 클래스 수준에 있는 경우 해당 클래스의 모든 테스트가 실행됩니다. 이는 네임스페이스 수준에 대해서도 동일합니다.
 
 |자주 사용하는 명령| 바로 가기 키|
-|--------------|------------------------|
+|-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
 

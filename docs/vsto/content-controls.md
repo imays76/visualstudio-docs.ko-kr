@@ -41,25 +41,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940231"
 ---
 # <a name="content-controls"></a>콘텐츠 컨트롤
   콘텐츠 컨트롤은 다음과 같은 기능이 있는 문서와 템플릿을 디자인하는 방법을 제공합니다.  
   
--   양식과 같은 제어된 입력이 있는 UI(사용자 인터페이스).  
+- 양식과 같은 제어된 입력이 있는 UI(사용자 인터페이스).  
   
--   사용자가 문서 또는 템플릿의 보호된 섹션을 편집하지 못하도록 하는 제한. 자세한 내용은 [콘텐츠 컨트롤을 사용 하 여 문서 부분 보호](#Protection)합니다.  
+- 사용자가 문서 또는 템플릿의 보호된 섹션을 편집하지 못하도록 하는 제한. 자세한 내용은 [콘텐츠 컨트롤을 사용 하 여 문서 부분 보호](#Protection)합니다.  
   
--   데이터 소스에 대한 데이터 바인딩. 자세한 내용은 [콘텐츠 컨트롤에 데이터 바인딩](#DataBinding)합니다.  
+- 데이터 소스에 대한 데이터 바인딩. 자세한 내용은 [콘텐츠 컨트롤에 데이터 바인딩](#DataBinding)합니다.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [Word 2007에 데이터 바인딩 컨트롤 (3.0) Office system 용 Visual Studio Tools를 사용 하 여 콘텐츠](http://go.microsoft.com/fwlink/?LinkId=136785)합니다.  
+  ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [Word 2007에 데이터 바인딩 컨트롤 (3.0) Office system 용 Visual Studio Tools를 사용 하 여 콘텐츠](http://go.microsoft.com/fwlink/?LinkId=136785)합니다.  
   
 ## <a name="overview-of-content-controls"></a>콘텐츠 컨트롤 개요  
  콘텐츠 컨트롤은 사용자 입력 및 인쇄 둘 다에 최적화된 UI를 제공합니다. 문서에 콘텐츠 컨트롤을 추가하는 경우 컨트롤은 테두리, 제목 및 사용자에게 지침을 제공할 수 있는 임시 텍스트로 식별됩니다. 컨트롤의 테두리와 제목은 인쇄 버전의 문서에 표시되지 않습니다.  
@@ -68,11 +68,11 @@ ms.locfileid: "35675184"
   
  콘텐츠 컨트롤은 다음 작업을 수행하는 데에도 도움이 됩니다.  
   
--   사용자가 문서의 일부를 편집 또는 삭제하지 못하도록 합니다. 이 기능은 사용자가 읽을 수 있지만 편집할 수 없어야 하는 정보가 문서 또는 템플릿에 있는 경우 또는 사용자가 콘텐츠 컨트롤을 편집할 수 있지만 삭제할 수 없도록 하려는 경우에 유용합니다.  
+- 사용자가 문서의 일부를 편집 또는 삭제하지 못하도록 합니다. 이 기능은 사용자가 읽을 수 있지만 편집할 수 없어야 하는 정보가 문서 또는 템플릿에 있는 경우 또는 사용자가 콘텐츠 컨트롤을 편집할 수 있지만 삭제할 수 없도록 하려는 경우에 유용합니다.  
   
--   문서 또는 템플릿 부분을 데이터에 바인딩합니다. 데이터베이스 필드, [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]의 관리되는 개체, 문서에 저장된 XML 요소 및 기타 데이터 소스에 콘텐츠 컨트롤을 바인딩할 수 있습니다.  
+- 문서 또는 템플릿 부분을 데이터에 바인딩합니다. 데이터베이스 필드, [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]의 관리되는 개체, 문서에 저장된 XML 요소 및 기타 데이터 소스에 콘텐츠 컨트롤을 바인딩할 수 있습니다.  
   
- 문서 수준 프로젝트에서는 디자인 타임 또는 런타임에 콘텐츠 컨트롤을 문서에 추가할 수 있습니다. VSTO 추가 기능 프로젝트에서는 런타임에 열려 있는 임의 문서에 콘텐츠 컨트롤을 추가할 수 있습니다. 자세한 내용은 [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)합니다.  
+  문서 수준 프로젝트에서는 디자인 타임 또는 런타임에 콘텐츠 컨트롤을 문서에 추가할 수 있습니다. VSTO 추가 기능 프로젝트에서는 런타임에 열려 있는 임의 문서에 콘텐츠 컨트롤을 추가할 수 있습니다. 자세한 내용은 [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)합니다.  
   
 > [!NOTE]  
 >  Open XML 형식으로 저장 된 문서 에서만에서 콘텐츠 컨트롤을 사용할 수 있습니다. Word 97-2003 문서에 저장 된 문서에 콘텐츠 컨트롤을 사용할 수 없습니다 (*.doc*) 형식입니다.  
@@ -133,11 +133,11 @@ ms.locfileid: "35675184"
   
  보호하려는 영역이 콘텐츠 컨트롤 안에 있는 경우 콘텐츠 컨트롤의 속성을 사용하여 사용자가 컨트롤을 편집 또는 삭제하지 못하도록 할 수 있습니다.  
   
--   합니다 **LockContents** 속성에서 콘텐츠를 편집할 수 없습니다.  
+- 합니다 **LockContents** 속성에서 콘텐츠를 편집할 수 없습니다.  
   
--   합니다 **LockContentControl** 속성을 사용자가 컨트롤을 삭제 하지 않습니다.  
+- 합니다 **LockContentControl** 속성을 사용자가 컨트롤을 삭제 하지 않습니다.  
   
- 보호하려는 영역이 콘텐츠 컨트롤 안에 없거나 콘텐츠 컨트롤 및 다른 형식의 콘텐츠를 포함하는 영역을 보호하려는 경우 <xref:Microsoft.Office.Tools.Word.GroupContentControl>에 전체 영역을 넣을 수 있습니다. 다른 콘텐츠 컨트롤과 달리 <xref:Microsoft.Office.Tools.Word.GroupContentControl>은 사용자에게 표시되는 UI를 제공하지 않습니다. 사용자가 편집할 수 없는 영역을 정의하는 용도로만 사용됩니다.  
+  보호하려는 영역이 콘텐츠 컨트롤 안에 없거나 콘텐츠 컨트롤 및 다른 형식의 콘텐츠를 포함하는 영역을 보호하려는 경우 <xref:Microsoft.Office.Tools.Word.GroupContentControl>에 전체 영역을 넣을 수 있습니다. 다른 콘텐츠 컨트롤과 달리 <xref:Microsoft.Office.Tools.Word.GroupContentControl>은 사용자에게 표시되는 UI를 제공하지 않습니다. 사용자가 편집할 수 없는 영역을 정의하는 용도로만 사용됩니다.  
   
 > [!NOTE]  
 >  포함된 콘텐츠 컨트롤을 포함하는 <xref:Microsoft.Office.Tools.Word.GroupContentControl>을 만드는 경우 포함된 콘텐츠 컨트롤은 자동으로 보호되지 않습니다. 사용 해야 합니다 **LockContents** 각 속성이 내용을 편집 하지 못하게 하려면 컨트롤을 포함 합니다.  
@@ -149,11 +149,11 @@ ms.locfileid: "35675184"
   
  콘텐츠 컨트롤은 다음과 같은 데이터 바인딩 옵션을 제공합니다.  
   
--   Windows Forms과 동일한 데이터 바인딩 모델을 사용하여 데이터베이스 필드 또는 관리되는 개체에 콘텐츠 컨트롤을 바인딩할 수 있습니다.  
+- Windows Forms과 동일한 데이터 바인딩 모델을 사용하여 데이터베이스 필드 또는 관리되는 개체에 콘텐츠 컨트롤을 바인딩할 수 있습니다.  
   
--   XML 부분에 요소에 콘텐츠 컨트롤을 바인딩할 수 있습니다 (라고도 *사용자 지정 XML 부분*) 문서에 포함 되어 있습니다.  
+- XML 부분에 요소에 콘텐츠 컨트롤을 바인딩할 수 있습니다 (라고도 *사용자 지정 XML 부분*) 문서에 포함 되어 있습니다.  
   
- Office 솔루션에서 호스트 컨트롤 데이터 바인딩 개요를 참조 하세요 [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)합니다.  
+  Office 솔루션에서 호스트 컨트롤 데이터 바인딩 개요를 참조 하세요 [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)합니다.  
   
 ### <a name="use-the-windows-forms-data-binding-model"></a>Windows Forms 데이터 바인딩 모델을 사용 하 여  
  대부분의 콘텐츠 컨트롤은 Windows Forms에서 사용하는 단순 데이터 바인딩 모델을 지원합니다. 단순 데이터 바인딩은 컨트롤이 데이터 테이블의 열 값과 같은 단일 데이터 요소에 바인딩됨을 의미합니다. 자세한 내용은 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)합니다.  

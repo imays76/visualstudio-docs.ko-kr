@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933432"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>생성된 클래스 재정의 및 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ DSL 정의 플랫폼은 강력한 도메인 특정 언어를 기반으로 하는
   
  예를 들어, 예제의 Library.dsl, 합니다 `CirculationBook` 도메인 클래스에는 `Generates``Double Derived` 속성이로 설정 `true`. 해당 도메인 클래스에 대해 생성된 된 코드에는 두 개의 클래스가 들어 있습니다.  
   
--   `CirculationBookBase`에 추상 이며 모든 속성과 메서드를 포함 하는 합니다.  
+- `CirculationBookBase`에 추상 이며 모든 속성과 메서드를 포함 하는 합니다.  
   
--   `CirculationBook`에서 파생 된 `CirculationBookBase`합니다. 빈 생성자를 제외 하 고는 것입니다.  
+- `CirculationBook`에서 파생 된 `CirculationBookBase`합니다. 빈 생성자를 제외 하 고는 것입니다.  
   
- 모든 메서드를 재정의 하는 파생된 클래스의 부분 정의 같은 만들 `CirculationBook`합니다. 생성된 된 메서드와 모델링 프레임 워크에서 상속 된 메서드를 재정의할 수 있습니다.  
+  모든 메서드를 재정의 하는 파생된 클래스의 부분 정의 같은 만들 `CirculationBook`합니다. 생성된 된 메서드와 모델링 프레임 워크에서 상속 된 메서드를 재정의할 수 있습니다.  
   
- 모든 유형의 모델 요소, 관계, 모양, 다이어그램 및 커넥터를 포함 하 여 요소를 사용 하 여이 메서드를 사용할 수 있습니다. 또한 다른 생성 된 클래스의 메서드를 재정의할 수 있습니다. 일부 같은 ToolboxHelper는 항상 double에서 파생 된 클래스 생성 됩니다.  
+  모든 유형의 모델 요소, 관계, 모양, 다이어그램 및 커넥터를 포함 하 여 요소를 사용 하 여이 메서드를 사용할 수 있습니다. 또한 다른 생성 된 클래스의 메서드를 재정의할 수 있습니다. 일부 같은 ToolboxHelper는 항상 double에서 파생 된 클래스 생성 됩니다.  
   
 ### <a name="custom-constructors"></a>사용자 지정 생성자  
  생성자를 재정의할 수 없습니다. Double에서 파생 된 클래스 에서도 파생된 클래스에서 생성자 여야 합니다.  

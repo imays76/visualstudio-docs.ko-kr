@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938476"
 ---
 # <a name="historical-debugging"></a>기록 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ private static int AddInt(int add)
   
  `AddAll()`을 호출한 후 `resultInt`의 예상 값을 20으로 가정하겠습니다(`testInt`를 20회 증분한 결과). (또한 `AddInt()`에서 버그를 볼 수 없다고 가정하겠습니다.) 그러나 결과는 실제로 44입니다. `AddAll()`을 단계적으로 10회 실행하지 않고도 버그를 찾으려면 어떻게 할까요? 기록 디버깅을 사용하여 더 빠르고 쉽게 버그를 찾을 수 있습니다. 방법은 다음과 같습니다.  
   
-1.  도구 / 옵션 / IntelliTrace / 일반에서 IntelliTrace가 사용하도록 설정되어 있는지 확인하고 IntelliTrace 이벤트 및 호출 정보 옵션을 선택합니다. 이 옵션을 선택하지 않으면 탐색 여백(아래 설명)을 볼 수 없습니다.  
+1. 도구 / 옵션 / IntelliTrace / 일반에서 IntelliTrace가 사용하도록 설정되어 있는지 확인하고 IntelliTrace 이벤트 및 호출 정보 옵션을 선택합니다. 이 옵션을 선택하지 않으면 탐색 여백(아래 설명)을 볼 수 없습니다.  
   
-2.  `Console.WriteLine(resultInt);` 줄에 중단점을 설정합니다.  
+2. `Console.WriteLine(resultInt);` 줄에 중단점을 설정합니다.  
   
-3.  디버깅을 시작합니다. 코드가 중단점까지 실행됩니다. 에 **지역** 창에서 볼 수 있습니다 값 `resultInt` 44입니다.  
+3. 디버깅을 시작합니다. 코드가 중단점까지 실행됩니다. 에 **지역** 창에서 볼 수 있습니다 값 `resultInt` 44입니다.  
   
-4.  엽니다는 **진단 도구** 창 (**표시 / 디버그 진단 도구**). 코드 창이 다음과 같이 나타납니다.  
+4. 엽니다는 **진단 도구** 창 (**표시 / 디버그 진단 도구**). 코드 창이 다음과 같이 나타납니다.  
   
-     ![중단점에서 코드 창](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![중단점에서 코드 창](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  중단점 바로 위 왼쪽 여백 옆에 이중 화살표가 표시됩니다. 이 영역은 탐색 여백이라고 하며 기록 디버깅에 사용됩니다. 화살표를 클릭합니다.  
+5. 중단점 바로 위 왼쪽 여백 옆에 이중 화살표가 표시됩니다. 이 영역은 탐색 여백이라고 하며 기록 디버깅에 사용됩니다. 화살표를 클릭합니다.  
   
-     코드 창에서 위 코드 줄(`int resultInt = AddIterative(testInt);`)에 분홍색이 지정된 것을 확인할 수 있습니다. 창 위에는 현재 기록 디버깅 중임을 알리는 메시지가 표시됩니다.  
+    코드 창에서 위 코드 줄(`int resultInt = AddIterative(testInt);`)에 분홍색이 지정된 것을 확인할 수 있습니다. 창 위에는 현재 기록 디버깅 중임을 알리는 메시지가 표시됩니다.  
   
-     이제 코드 창의 모양은 다음과 같습니다.  
+    이제 코드 창의 모양은 다음과 같습니다.  
   
-     ![기록 디버깅 모드에 있는 코드 창을](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![기록 디버깅 모드에 있는 코드 창을](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  이제 한 단계씩 실행할 수는 `AddAll()` 메서드 (**F11**, 또는 **단계씩** 탐색 여백에 있는 단추입니다. 앞으로 가기 (**F10**, 또는 **다음 호출로 이동** 탐색 여백의 합니다. 분홍색 줄이 `j = AddInt(j);` 줄에 표시됩니다. **F10** 이 경우 코드의 다음 줄으로 진행 하지 않습니다. 대신, 다음 함수 호출로 이동합니다. 기록 디버깅은 여러 호출을 탐색하며 함수 호출이 포함되지 않은 코드 줄을 건너뜁니다.  
+6. 이제 한 단계씩 실행할 수는 `AddAll()` 메서드 (**F11**, 또는 **단계씩** 탐색 여백에 있는 단추입니다. 앞으로 가기 (**F10**, 또는 **다음 호출로 이동** 탐색 여백의 합니다. 분홍색 줄이 `j = AddInt(j);` 줄에 표시됩니다. **F10** 이 경우 코드의 다음 줄으로 진행 하지 않습니다. 대신, 다음 함수 호출로 이동합니다. 기록 디버깅은 여러 호출을 탐색하며 함수 호출이 포함되지 않은 코드 줄을 건너뜁니다.  
   
-7.  이제 `AddInt()` 메서드를 한 단계씩 실행합니다. 이 코드의 버그가 즉시 표시됩니다.  
+7. 이제 `AddInt()` 메서드를 한 단계씩 실행합니다. 이 코드의 버그가 즉시 표시됩니다.  
   
- 이 절차에서는 기록 디버깅으로 수행할 수 있는 작업을 기초적으로만 설명했습니다. 다양 한 설정 및 탐색 여백에 있는 여러 단추의 효과 대 한 자세한 내용을 참조 하세요 [IntelliTrace 기능](../debugger/intellitrace-features.md)합니다.
+   이 절차에서는 기록 디버깅으로 수행할 수 있는 작업을 기초적으로만 설명했습니다. 다양 한 설정 및 탐색 여백에 있는 여러 단추의 효과 대 한 자세한 내용을 참조 하세요 [IntelliTrace 기능](../debugger/intellitrace-features.md)합니다.
 
 
 

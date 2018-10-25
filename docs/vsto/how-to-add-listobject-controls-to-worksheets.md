@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949255"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>방법: 워크시트에 ListObject 컨트롤 추가
   추가할 수 있습니다 <xref:Microsoft.Office.Tools.Excel.ListObject> 디자인 타임 및 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 컨트롤입니다.  
@@ -32,13 +32,13 @@ ms.locfileid: "35674716"
   
  이 항목에서는 다음 작업에 대해 설명합니다.  
   
--   [디자인 타임에 ListObject 컨트롤 추가](#designtime)  
+- [디자인 타임에 ListObject 컨트롤 추가](#designtime)  
   
--   [런타임에 문서 수준 프로젝트에서 ListObject 컨트롤 추가](#runtimedoclevel)  
+- [런타임에 문서 수준 프로젝트에서 ListObject 컨트롤 추가](#runtimedoclevel)  
   
--   [런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 추가](#runtimeaddin)  
+- [런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 추가](#runtimeaddin)  
   
- 에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 참조 하세요 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.  
+  에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 참조 하세요 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.  
   
 ##  <a name="designtime"></a> 디자인 타임에 ListObject 컨트롤 추가  
  디자인 타임에 문서 수준 프로젝트에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 추가하기 위한 여러 가지 방법이 있습니다. 즉, Excel, Visual Studio **도구 상자**및 **데이터 원본** 창에서 추가할 수 있습니다.  

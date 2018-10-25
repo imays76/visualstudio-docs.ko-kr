@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea93f5c575afc96af188ab2e92e2ee12b929549
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 61485e50c61580b69c1dfcb5434849ea9122bde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942337"
 ---
 # <a name="troubleshoot-snippets"></a>코드 조각 문제 해결
 
@@ -27,9 +27,9 @@ IntelliSense 코드 조각 문제는 코드 조각 파일이 손상되었거나 
 
 ## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>코드 조각은 파일 탐색기에서 Visual Studio 소스 파일로 끌어올 수 없습니다.
 
--   코드 조각 파일의 XML은 손상되었을 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **XML 편집기**는 XML 구조에서 문제를 찾을 수 있습니다.
+- 코드 조각 파일의 XML은 손상되었을 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **XML 편집기**는 XML 구조에서 문제를 찾을 수 있습니다.
 
--   코드 조각 파일은 코드 조각 스키마를 준수하지 않을 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **XML 편집기**는 XML 구조에서 문제를 찾을 수 있습니다.
+- 코드 조각 파일은 코드 조각 스키마를 준수하지 않을 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **XML 편집기**는 XML 구조에서 문제를 찾을 수 있습니다.
 
 ## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>코드에는 강조 표시되지 않는 컴파일러 오류가 있습니다.
 

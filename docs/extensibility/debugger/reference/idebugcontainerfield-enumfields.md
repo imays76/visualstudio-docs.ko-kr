@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0af939253de7b592e7c0ec35be9ea2b9bbff2b0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49874de9166310fc4b9a887fd1fc6d6355682c7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942688"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 컨테이너의 필드에 대 한 열거자를 만듭니다.  
@@ -49,25 +49,25 @@ int EnumFields(
   
 #### <a name="parameters"></a>매개 변수  
  `dwKindFilter`  
- [in] 조합을 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 필드 열거를 선택 하는 상수입니다. 필드 종류는 저장소 유형, 클래스 또는 기본 형식에서 또는 특정 정보 같은, 로컬, 매개 변수 또는 "this"이 포인터 등을 설명할 수 있습니다.  
+ [in] 조합을 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 열거할 필드를 선택 하는 상수입니다. 필드 종류는 저장소 유형, 클래스 또는 기본 형식 또는 특정 정보와 같은, 로컬, 매개 변수를 "this"이 포인터 등을 설명할 수 있습니다.  
   
  `dwModifiersFilter`  
- [in] 조합을 [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) 필드 열거를 선택 하는 상수입니다. 필드 한정자에는 액세스 권한을 public 또는 private, 가상, 정적으로 또는 최종 같은 저장소 정보 등과 같이 될 수 있습니다.  
+ [in] 조합을 [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) 열거할 필드를 선택 하는 상수입니다. 필드 한정자에는 공용 또는 개인 또는 가상, 정적 또는 최종 등의 저장소 정보 등의 액세스 권한을 수 있습니다.  
   
  `pszNameFilter`  
- [in] 열거할 필드의 이름입니다. 이 경우 반환 되는 모든 필드가 null 값을 수 있습니다.  
+ [in] 열거할 필드의 이름입니다. 모든 필드는 반환 될 경우 null 값을이 수 있습니다.  
   
  `nameMatch`  
- [in] 값은 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 여부를 검색 하 고 있는지 여부를 제어 하는 열거형은 대/소문자 구분 합니다.  
+ [in] 값을 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 여부를 검색 하는지 여부를 제어 하는 열거형은 대/소문자 구분 합니다.  
   
  `ppEnum`  
  [out] 반환 된 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 필드 목록을 나타내는 개체입니다. 필드가 없는 경우 null 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 s_ok이 고 또는 반환 S_FALSE 필드가 없는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공 하면 S_OK 또는 반환 S_FALSE 필드가 없는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
- `dwKindFilter`, `dwModifiersFilter`, 및 `pszNameFilter` 매개 변수 조합 수 있습니다, 예를 들어 "변수" 된 모든 공용 가상 메서드를 선택 합니다.  
+ 합니다 `dwKindFilter`, `dwModifiersFilter`, 및 `pszNameFilter` 매개 변수 결합할 수 있습니다, 예를 들어, "MyMethod" 라는 모든 공용 가상 메서드를 선택 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   

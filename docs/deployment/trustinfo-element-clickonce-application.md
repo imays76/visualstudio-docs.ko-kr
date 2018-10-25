@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941234"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 요소 (ClickOnce 응용 프로그램)
 응용 프로그램을 클라이언트 컴퓨터에서 실행하는 데 필요한 최소 보안 권한을 설명합니다.  
@@ -142,21 +142,21 @@ ms.locfileid: "39151066"
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  선택 사항입니다. 응용 프로그램 요청이 실행되는 보안 수준을 알려 줍니다. 이 요소에는 자식이 없으며 다음과 같은 특성이 있습니다.  
   
--   `Level`  
+- `Level`  
   
-     필수. 응용 프로그램이 요청하는 보안 수준을 나타냅니다. 가능한 값은 다음과 같습니다.  
+   필수. 응용 프로그램이 요청하는 보안 수준을 나타냅니다. 가능한 값은 다음과 같습니다.  
   
-     `asInvoker`, 추가 권한을 요청하지 않습니다. 이 수준에서는 추가 신뢰 프롬프트를 요구하지 않습니다.  
+   `asInvoker`, 추가 권한을 요청하지 않습니다. 이 수준에서는 추가 신뢰 프롬프트를 요구하지 않습니다.  
   
-     `highestAvailable`, 부모 프로세스에 사용할 수 있는 가장 높은 권한을 요청합니다.  
+   `highestAvailable`, 부모 프로세스에 사용할 수 있는 가장 높은 권한을 요청합니다.  
   
-     `requireAdministrator`, 전체 관리자 권한을 요청합니다.  
+   `requireAdministrator`, 전체 관리자 권한을 요청합니다.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 `asInvoker`의 값으로만 설치됩니다. 다른 모든 값을 사용하는 설치는 실패합니다.  
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 `asInvoker`의 값으로만 설치됩니다. 다른 모든 값을 사용하는 설치는 실패합니다.  
   
--   `uiAccess`  
+- `uiAccess`  
   
-     선택 사항입니다. 응용 프로그램에서 보호된 사용자 인터페이스 요소에 대한 액세스를 필요로 하는지 여부를 나타냅니다. 값은 `true` 또는 `false`이며, 기본값은 false입니다. 서명된 응용 프로그램만 true 값을 가집니다.  
+   선택 사항입니다. 응용 프로그램에서 보호된 사용자 인터페이스 요소에 대한 액세스를 필요로 하는지 여부를 나타냅니다. 값은 `true` 또는 `false`이며, 기본값은 false입니다. 서명된 응용 프로그램만 true 값을 가집니다.  
   
 ## <a name="remarks"></a>설명  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램에서 클라이언트 컴퓨터에서 기본적으로 부여하는 권한보다 많은 권한을 요청하는 경우, 공용 언어 런타임의 트러스트 관리자는 응용 프로그램에 이 관리자 권한 수준의 트러스트를 부여할지를 사용자에게 묻습니다. 관리자 권한 수준의 트러스트를 부여하지 않는 경우 응용 프로그램은 실행되지 않으며, 부여하는 경우 요청된 권한으로 실행됩니다.  

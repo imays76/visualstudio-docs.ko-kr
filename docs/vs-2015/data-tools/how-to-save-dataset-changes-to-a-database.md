@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60bb855202cfb333820fe2292fedc0b31608c5c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949021"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>방법: 데이터베이스에 데이터 집합 변경 내용 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,15 +69,15 @@ ms.locfileid: "49202282"
 ## <a name="updating-two-related-tables-in-a-dataset"></a>데이터 집합에서 두 개의 관련된 테이블을 업데이트합니다.  
  데이터 집합의 관련된 테이블을 업데이트할 때 참조 무결성 제약 조건 위반 가능성을 줄이기 위해 적절 한 순서로 업데이트 해야 합니다. 명령 실행의 순서는 인덱스를 따릅니다도 <xref:System.Data.DataRowCollection> 데이터 집합의 합니다. 데이터 무결성 오류 발생을 방지 하려면 가장 좋은 방법은 다음 시퀀스에서 데이터베이스를 업데이트 하는:  
   
-1.  자식 테이블: 레코드를 삭제 합니다.  
+1. 자식 테이블: 레코드를 삭제 합니다.  
   
-2.  부모 테이블: 삽입, 업데이트 및 레코드를 삭제 합니다.  
+2. 부모 테이블: 삽입, 업데이트 및 레코드를 삭제 합니다.  
   
-3.  자식 테이블: 레코드 삽입 및 업데이트 합니다.  
+3. 자식 테이블: 레코드 삽입 및 업데이트 합니다.  
   
- 여러 테이블에서 데이터 저장에 대 한 자세한 내용은 참조 하세요. [(여러 테이블) 데이터베이스에 데이터를 저장](../data-tools/save-data-to-a-database-multiple-tables.md)합니다.  
+   여러 테이블에서 데이터 저장에 대 한 자세한 내용은 참조 하세요. [(여러 테이블) 데이터베이스에 데이터를 저장](../data-tools/save-data-to-a-database-multiple-tables.md)합니다.  
   
- 둘 이상의 관련된 테이블을 업데이트 하는 경우 트랜잭션 내에서 모든 업데이트 논리를 포함 해야 합니다. 트랜잭션은 변경 내용을 커밋하기 전에 데이터베이스에 대한 모든 관련 변경 사항이 정상적으로 수행되었는지를 확인하는 프로세스입니다. 자세한 내용은 참조 하십시오 [트랜잭션 및 동시성](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)합니다.  
+   둘 이상의 관련된 테이블을 업데이트 하는 경우 트랜잭션 내에서 모든 업데이트 논리를 포함 해야 합니다. 트랜잭션은 변경 내용을 커밋하기 전에 데이터베이스에 대한 모든 관련 변경 사항이 정상적으로 수행되었는지를 확인하는 프로세스입니다. 자세한 내용은 참조 하십시오 [트랜잭션 및 동시성](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)합니다.  
   
 #### <a name="to-update-two-related-tables-using-a-tableadapter"></a>TableAdapter를 사용 하 여 두 개의 관련된 테이블을 업데이트 하려면  
   
