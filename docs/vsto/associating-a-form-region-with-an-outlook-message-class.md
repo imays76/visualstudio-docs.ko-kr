@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892001"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050264"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 메시지 클래스를 사용 하 여 양식 영역을 연결 합니다.
   각 항목의 메시지 클래스를 사용 하 여 양식 영역을 연결 하 여 양식 영역을 표시 하는 Microsoft Office Outlook 항목을 지정할 수 있습니다. 예를 들어, 메일 항목의 맨 아래에 양식 영역을 추가 하려는 경우 양식 영역을 연결할 수는 `IPM.Note` message 클래스입니다.  
@@ -111,7 +111,7 @@ ms.locfileid: "49892001"
  [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)   
  [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Outlook 양식 영역 만들기 지침](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [형식 이름 및 메시지 클래스 개요](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Outlook 양식 항목과 함께 작동](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [형식 이름 및 메시지 클래스 개요](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
+ [Outlook 양식 항목과 함께 작동](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
   
   

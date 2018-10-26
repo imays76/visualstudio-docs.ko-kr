@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883356"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050185"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>연습: 명령줄을 통해 Visual Studio 확장 기능 게시
 
@@ -38,7 +38,7 @@ VsixPublisher.exe는 Marketplace에 게시 Visual Studio 확장에 대 한 명�
 |페이로드 (필수) | 에 대 한 경로일 게시할 페이로드 또는 "자세한 정보 URL"로 사용 하는 링크입니다. |
 |publishManifest (필수) | 사용할 파일을 매니페스트 하는 게시에 대 한 경로입니다. |
 |ignoreWarnings | 확장을 게시할 때 무시할 경고의 목록입니다. 이러한 경고는 확장을 게시할 때 명령줄 메시지로 표시 됩니다. (예를 들어, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken | 개인용 액세스 토큰을 게시자를 인증 하는 데 사용 됩니다. 지정 하지 않으면 pat에 로그인 한 사용자 로부터 획득 됩니다. |
+|personalAccessToken | 개인 액세스 토큰 (PAT) 게시자를 인증 하는 데 사용 되는 합니다. 지정 하지 않으면 PAT에 로그인 한 사용자 로부터 획득 됩니다. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
