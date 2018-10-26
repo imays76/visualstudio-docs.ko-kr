@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908251"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Visual Studio (UWP)에 설치 된 앱 패키지 디버그
 
@@ -78,25 +78,25 @@ ms.locfileid: "44279561"
 
      컴퓨터 이름을 사용 하 여 연결할 수 없습니다 하는 경우 (선택한 후 **시작**), IP 주소를 대신 사용 합니다. XBox, HoloLens, IoT 장치에 대 한 IP 주소를 사용 합니다.
 
-5. 옵션을 선택 하 여 인증 하는 방법 선택 **인증 모드**합니다.
+6. 옵션을 선택 하 여 인증 하는 방법 선택 **인증 모드**합니다.
 
     대부분의 앱에 대 한 기본값을 유지 **유니버설 (암호화 되지 않은 프로토콜)** 합니다.
 
-6. 디버깅 하려는 앱의 이름을 선택 **실행** 또는 **실행 되 고 있지** 선택한 **시작** (에 대 한 실행 중인 응용 프로그램) 또는 **연결**합니다.
+7. 디버깅 하려는 앱의 이름을 선택 **실행** 또는 **실행 되 고 있지** 선택한 **시작** (에 대 한 실행 중인 응용 프로그램) 또는 **연결**합니다.
 
      선택 하는 경우 **시작 하지 않음 시작 시 코드를 디버그**, 이렇게 하면 Visual Studio 디버거는 사용자 지정 시간에 시작할 때 앱 패키지를 연결할 수 있습니다. 제어 경로에서 디버그 하는 효과적인 방법입니다 [다른 시작 방법](/windows/uwp/xbox-apps/automate-launching-uwp-apps), 같은 사용자 지정 매개 변수를 사용 하 여 프로토콜 활성화 합니다.
 
      처음으로 연결된 된 XBox, HoloLens, IoT 장치에서 설치 된 앱 패키지를 디버깅할 때 Visual Studio 원격 디버거 대상 장치에 대 한 올바른 버전을 설치 합니다. 약간의 시간이 걸릴 수 있습니다 하 고 메시지가 표시 됩니다 ``Starting remote debugger`` 이 문제가 발생 하는 동안.
 
      > [!NOTE]
-> 제공 하 고, XBox 또는 HoloLens 장치 디버거가 이미 실행 중인 경우 연결 된 앱을 다시 시작 됩니다.
+   > 제공 하 고, XBox 또는 HoloLens 장치 디버거가 이미 실행 중인 경우 연결 된 앱을 다시 시작 됩니다.
 
 UWP 앱의 원격 배포에 대 한 고급 옵션에 대 한 자세한 내용은 [배포 및 디버깅 UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)을 참조 하세요. 
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio의 디버깅](../debugger/index.md)  
  [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)  
- [원격 디버깅](../debugger/remote-debugging.md)  
+ [Remote Debugging](../debugger/remote-debugging.md)  
  [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
  [원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)
