@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 32abf9a2c11a8381b5f204a2388a85f7fd5d8230
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548805"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143127"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: 식별자에 형식 이름을 포함하면 안 됩니다.
 
@@ -138,7 +138,7 @@ ms.locfileid: "45548805"
  해당 의미, 언어에 관계 없이 해당 하는, 'value'와 같은 보다 일반적인 용어를 더 잘 설명 하는 용어를 사용 하 여 멤버 이름의 언어 특정 데이터 형식 식별자를 대체 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 형식 기반 매개 변수 및 멤버 이름의 가끔 사용 적절할 수 있습니다. 그러나 새로운 개발에 알려져 있지 않습니다에 대 한 시나리오 발생이 규칙에서 경고를 표시 해야 하는 위치입니다. 가 이전 함께 제공 되는 라이브러리에 대 한이 규칙에서 경고를 표시 해야 합니다.
+ 형식 기반 매개 변수 및 멤버 이름의 가끔 사용 적절할 수 있습니다. 그러나 새로운 개발에 알려져 있지 않습니다에 대 한 시나리오 발생이 규칙에서 경고를 표시 해야 하는 위치입니다. 에 이전에 제공 된 라이브러리에 대 한이 규칙에서 경고를 표시 해야 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
  [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
