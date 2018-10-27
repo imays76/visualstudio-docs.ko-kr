@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d18e7c2e4c57e867cac47d0c8927eadbc357286
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 350ff6d481c3f7cffc47519a252b1cb65d2748ba
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923097"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143179"
 ---
 # <a name="walkthrough-building-an-application"></a>연습: 응용 프로그램 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ ms.locfileid: "49923097"
   
 3.  **빌드** 페이지를 선택하고 **경고 표시 안 함** 상자에서 경고 번호 `1762`를 지정합니다.  
   
-     ![프로젝트 디자이너, 빌드 페이지](../ide/media/buildwalk-csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
+     ![프로젝트 디자이너, 빌드 페이지](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")  
   
      자세한 내용은 [프로젝트 디자이너, 빌드 페이지(C#)](../ide/reference/build-page-project-designer-csharp.md)를 참조하세요.  
   
@@ -162,7 +162,7 @@ ms.locfileid: "49923097"
   
 3. **컴파일** 페이지에서 **모든 경고 사용 안 함** 확인란을 선택합니다.  
   
-    ![프로젝트 디자이너, 컴파일 페이지](../ide/media/buildwalk-vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
+    ![프로젝트 디자이너, 컴파일 페이지](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")  
   
     자세한 내용은 [Visual Basic에서 경고 구성](../ide/configuring-warnings-in-visual-basic.md)을 참조하세요.  
   

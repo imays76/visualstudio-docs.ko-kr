@@ -1,6 +1,6 @@
 ---
-title: '방법: 관리 코드에 대한 자동 코드 분석 활성화 및 비활성화'
-ms.date: 09/28/2018
+title: 코드 분석을 사용할지 설정 합니다.
+ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,22 +9,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3113143b07ccb6f765cd0cf1735b34be6e952c72
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 71a1c44ee775060a25946f79d7c23194e19f0ae9
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443547"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143400"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 자동 코드 분석 활성화 및 비활성화
 
-관리 코드 프로젝트의 각 빌드 후 실행할 코드 분석을 구성할 수 있습니다. 있습니다 수 다른 코드를 각 빌드 구성에 대 한 분석 속성 설정, 예를 들어, 디버그 및 릴리스 합니다.
+관리 코드 프로젝트의 각 빌드 후 실행할 (정적) 코드 분석을 구성할 수 있습니다. 있습니다 수 다른 코드를 각 빌드 구성에 대 한 분석 속성 설정, 예를 들어, 디버그 및 릴리스 합니다.
+
+이 문서에만 정적 코드 분석 및 사용 하 여 하지 라이브 코드 분석 적용 됩니다 [Roslyn 코드 분석기](roslyn-analyzers-overview.md)합니다.
 
 ## <a name="to-enable-or-disable-automatic-code-analysis"></a>자동 코드 분석을 사용할지 설정 합니다.
 
 1. **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 선택 **속성**합니다.
 
 1. 프로젝트에 대 한 속성 대화 상자를 선택 합니다 **코드 분석** 탭 합니다.
+
+   > [!TIP]
+   > .NET Core 및.NET Standard 응용 프로그램은 같은 최신 프로젝트 형식에 **코드 분석** 탭 합니다. 정적 코드 분석을 이러한 프로젝트 형식에 대 한 제공 되지 않지만 여전히 사용 하 여 라이브 코드 분석을 얻을 수 있습니다 [Roslyn 코드 분석기](roslyn-analyzers-overview.md)합니다. Roslyn 코드 분석기에서 발생 한 경고를 표시 하지 않으려면이 문서의 뒷부분에 나오는 참고를 참조 하세요.
 
 1. 빌드 형식 지정 **Configuration** 및 대상 플랫폼 **플랫폼**합니다.
 

@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 296bc30089d4c0f4b2b739e1dd977fd66cba1ace
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852018"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143296"
 ---
 # <a name="creating-a-software-development-kit"></a>소프트웨어 개발 키트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "49852018"
 |DesignTime 폴더|사전-run/디버깅 타임에만 필요한 파일이 포함 됩니다. XML 문서, 라이브러리, 헤더, 도구 상자 디자인 타임 이진 파일, MSBuild 아티팩트 등을 포함 될 수 있습니다 이러한<br /><br /> XML 문서와 마찬가지로 이상적으로 \DesignTime 폴더에 배치할 수 있지만 Visual Studio에서 참조 파일과 함께 배치할 참조에 대 한 XML 문서를 계속 합니다. 예를 들어, XML 문서에 대 한 참조 \References\\[구성]\\[arch]\sample.dll \References 됩니다\\[구성]\\[arch]\sample.xml, 및는 doc의 지역화 된 버전 \References됩니다\\[구성]\\[arch]\\[locale]\sample.xml 합니다.|  
 |구성 폴더|만 세 개의 폴더가 있을 수 있습니다: 디버그, 소매 및 CommonConfiguration 합니다. SDK 소비자의 대상이 되는 구성에 관계 없이 동일한 SDK 파일 집합에 사용할 수 해야 하는 경우 SDK 작성자 CommonConfiguration에서 해당 파일을 배치할 수 있습니다.|  
 |아키텍처 폴더|모든 지원 되는 아키텍처 폴더 존재할 수 있습니다. Visual Studio는 다음 아키텍처를 지원 합니다: x86, x64, ARM 및 neutral입니다. 참고: Win32, x86에 매핑되고 AnyCPU 중립에 매핑됩니다.<br /><br /> MSBuild는 플랫폼 Sdk \CommonConfiguration\neutral에만 찾습니다.|  
-|SDKManifest.xml|이 파일은 Visual Studio SDK를 사용 해야 하는 방법을 설명 합니다. SDK 매니페스트에서 살펴봅니다 [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = “Windows”             PlatformIdentity = “Windows, version=8.1”             TargetFramework = “.NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1”             MinVSVersion = “14.0”>              <File Reference = “Windows.winmd”>                <ToolboxItems VSCategory = “Toolbox.Default” />             </File> </FileList>`<br /><br /> **표시 이름:** 개체 브라우저 찾아보기 목록에 표시 하는 값입니다.<br /><br /> **PlatformIdentity:** 이 특성의 존재 여부 지시 Visual Studio 및 MSBuild SDK 플랫폼 SDK는 및에서 추가 된 참조를 복사 하지 않아야 함을 로컬로 합니다.<br /><br /> **TargetFramework:** 만 투영 하는이 값에 지정 된 대로 동일한 프레임 워크를 대상으로 하는 되도록 Visual Studio에서이 특성은 사용 특성 SDK를 사용할 수 있습니다.<br /><br /> **MinVSVersion:** 에 적용 되는 Sdk만을 사용 하려면이 특성은 Visual Studio에서 사용 합니다.<br /><br /> **참조:** 이 특성 컨트롤을 포함 하는 참조만 지정 해야 합니다. 에 대 한 참조를 컨트롤에 포함 되는지 여부를 지정 하는 방법에 대 한 내용은 아래 참조 합니다.|  
+|SDKManifest.xml|이 파일은 Visual Studio SDK를 사용 해야 하는 방법을 설명 합니다. SDK 매니페스트에서 살펴봅니다 [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **표시 이름:** 개체 브라우저 찾아보기 목록에 표시 하는 값입니다.<br /><br /> **PlatformIdentity:** 이 특성의 존재 여부 지시 Visual Studio 및 MSBuild SDK 플랫폼 SDK는 및에서 추가 된 참조를 복사 하지 않아야 함을 로컬로 합니다.<br /><br /> **TargetFramework:** 만 투영 하는이 값에 지정 된 대로 동일한 프레임 워크를 대상으로 하는 되도록 Visual Studio에서이 특성은 사용 특성 SDK를 사용할 수 있습니다.<br /><br /> **MinVSVersion:** 에 적용 되는 Sdk만을 사용 하려면이 특성은 Visual Studio에서 사용 합니다.<br /><br /> **참조:** 이 특성 컨트롤을 포함 하는 참조만 지정 해야 합니다. 에 대 한 참조를 컨트롤에 포함 되는지 여부를 지정 하는 방법에 대 한 내용은 아래 참조 합니다.|  
   
 ##  <a name="ExtensionSDKs"></a> 확장 Sdk  
  다음 섹션에서는 확장 SDK를 배포 하기 위해 수행 해야 합니다.  
@@ -142,22 +142,22 @@ ms.locfileid: "49852018"
   
 ```  
 <FileList>  
-DisplayName = “My SDK”  
-ProductFamilyName = “My SDKs”  
-TargetFramework = “.NETCore, version=v4.5.1; .NETFramework, version=v4.5.1”  
-MinVSVersion = “14.0”  
+DisplayName = "My SDK"  
+ProductFamilyName = "My SDKs"  
+TargetFramework = ".NETCore, version=v4.5.1; .NETFramework, version=v4.5.1"  
+MinVSVersion = "14.0"  
 MaxPlatformVersion = "8.1"  
 AppliesTo = "WindowsAppContainer + WindowsXAML"  
-SupportPrefer32Bit = “True”  
-SupportedArchitectures = “x86;x64;ARM”  
-SupportsMultipleVersions = “Error”  
-CopyRedistToSubDirectory = “.”  
-DependsOn = “SDKB, version=2.0”  
-MoreInfo = “http://msdn.microsoft.com/MySDK”>  
-<File Reference = “MySDK.Sprint.winmd” Implementation = “XNASprintImpl.dll”>  
-<Registration Type = “Flipper” Implementation = “XNASprintFlipperImpl.dll” />  
-<Registration Type = “Flexer” Implementation = “XNASprintFlexerImpl.dll” />  
-<ToolboxItems VSCategory = “Toolbox.Default” />  
+SupportPrefer32Bit = "True"  
+SupportedArchitectures = "x86;x64;ARM"  
+SupportsMultipleVersions = "Error"  
+CopyRedistToSubDirectory = "."  
+DependsOn = "SDKB, version=2.0"  
+MoreInfo = "http://msdn.microsoft.com/MySDK">  
+<File Reference = "MySDK.Sprint.winmd" Implementation = "XNASprintImpl.dll">  
+<Registration Type = "Flipper" Implementation = "XNASprintFlipperImpl.dll" />  
+<Registration Type = "Flexer" Implementation = "XNASprintFlexerImpl.dll" />  
+<ToolboxItems VSCategory = "Toolbox.Default" />  
 </File>  
 </FileList>  
 ```  
@@ -204,26 +204,26 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 1.  도구 상자 기본 범주에 컨트롤을 배치 합니다.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.Default”/>       
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.Default"/>       
     </File>  
     ```  
   
 2.  특정 범주 이름으로 컨트롤을 배치 합니다.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory= “MyCategoryName”/>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory= "MyCategoryName"/>  
     </File>  
     ```  
   
 3.  특정 범주 이름 아래에서 컨트롤을 배치 합니다.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph">  
         <ToolboxItems/>  
-        <ToolboxItems VSCategory = “Data”>  
+        <ToolboxItems VSCategory = "Data">  
         <ToolboxItems />  
     </File>  
     ```  
@@ -232,8 +232,8 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
   
     ```  
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph” BlendCategory = “Controls/sample/Graph”>   
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph" BlendCategory = "Controls/sample/Graph">   
         <ToolboxItems />  
     </File>  
     ```  
@@ -241,10 +241,10 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 5.  Blend 및 Visual Studio에서 다르게 특정 컨트롤을 열거 합니다.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph">  
         <ToolboxItems/>  
-        <ToolboxItems BlendCategory = “Controls/sample/Graph”>  
+        <ToolboxItems BlendCategory = "Controls/sample/Graph">  
         <ToolboxItems/>  
     </File>  
     ```  
@@ -252,10 +252,10 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 6.  특정 컨트롤을 열거 하 고 모든 컨트롤 그룹 또는 Visual Studio 일반 경로 아래에 배치 합니다.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.Common”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.Common">  
         <ToolboxItems />  
-        <ToolboxItems VSCategory = “Toolbox.All”>  
+        <ToolboxItems VSCategory = "Toolbox.All">  
         <ToolboxItems />  
     </File>  
     ```  
@@ -263,8 +263,8 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 7.  특정 컨트롤을 열거 하 고 없으면 ChooseItems의 특정 집합에만 표시 도구 상자에 있는 것입니다.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.ChooseItemsOnly”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.ChooseItemsOnly">  
         <ToolboxItems />  
     </File>  
     ```  
