@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c6b2a9fa289bacaad783f70cd85365b7b0628f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951998"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459792"
 ---
 # <a name="signing-page-project-designer"></a>프로젝트 디자이너, 서명 페이지
 **프로젝트 디자이너**의 **서명** 페이지를 사용하여 응용 프로그램 및 배포 매니페스트에 서명하고 어셈블리에도 서명합니다(강력한 이름 서명).
@@ -73,7 +73,7 @@ ms.locfileid: "31951998"
 
  어셈블리에 서명하고 강력한 이름 키 파일을 만들려면 이 확인란을 선택합니다. **프로젝트 디자이너**를 사용하여 어셈블리에 서명하는 방법에 대한 자세한 내용은 [방법: 어셈블리 서명(Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)을 참조하세요.
 
- 이 옵션은 [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)에서 제공된 Al.exe 도구를 사용하여 어셈블리에 서명합니다.
+ 이 옵션은 Windows SDK(소프트웨어 개발 키트)에서 제공된 Al.exe 도구를 사용하여 어셈블리에 서명합니다. Al.exe에 대한 자세한 내용은 [방법: 강력한 이름으로 어셈블리 서명](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)을 참조하세요.
 
  **강력한 이름 키 파일 선택** 목록
 
