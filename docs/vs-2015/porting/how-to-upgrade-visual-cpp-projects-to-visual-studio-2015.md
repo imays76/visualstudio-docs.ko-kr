@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a8673d2d1648acad973ebfa339e0334a5c1fd769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dea8f8ff1354ac2729c7c11b6ff575b90837af66
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188573"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220071"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>방법: Visual C++ 프로젝트를 Visual Studio 2015로 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual c + + 포팅 및 업그레이드 가이드](https://docs.microsoft.com/en-us/cpp/porting/visual-cpp-porting-and-upgrading-guide)합니다.
+Visual Studio 2017에 대 한 최신 설명서를 참조 하세요 [Visual c + + 포팅 및 업그레이드 가이드](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide)합니다.
 
 이전 버전의 Visual Studio에서 만든 Visual C++ 프로젝트를 처음 열면 프로젝트를 업데이트해야 한다는 메시지가 표시될 수 있습니다. 최신 버전의 Visual C++ 컴파일러와 라이브러리로 업그레이드할 것인지 묻는 메시지가 나타납니다. 업그레이드하는 방법은 프로젝트를 만드는 데 사용한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전에 따라 달라집니다.  
   

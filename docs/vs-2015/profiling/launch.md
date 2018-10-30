@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f9d3b735eb0633c5faf9b4b43ba15f6ec4a2d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d340a858c152b371c296883c19309c79f77aba1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195886"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218748"
 ---
 # <a name="launch"></a>Launch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Start:** `Method`  
  명령줄 프로파일러 세션을 초기화하고 지정된 프로파일링 방법을 설정합니다.  
   
- **GlobalOn** 및 **GlobalOff**  
+ **GlobalOn** 고 **GlobalOff**  
  프로파일링을 다시 시작(**GlobalOn**)하거나 일시 중지(**GlobalOff**)하지만 프로파일링 세션을 종료하지 않습니다.  
   
  **ProcessOn:** `PID` 및 **ProcessOff**:`PID`  

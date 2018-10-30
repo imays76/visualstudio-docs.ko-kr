@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79710dca958bbc895e5366e4ab316f1a1e4fa64c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58f92f082ec4e7934e8eb7597832a6a58d23a1ca
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234472"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219746"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>TableAdapter의 기능 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ TableAdapter의 partial 클래스 파일에 코드를 추가 하 여 TableAdapte
   
 2.  클래스 이름을 `CustomersTableAdapterExtended`로 지정합니다.  
   
-3.  선택**추가**합니다.  
+3.  **추가**를 선택합니다.  
   
 4.  프로젝트에 대 한 partial 클래스 이름과 올바른 네임 스페이스를 사용 하 여 코드를 다음과 같이 바꿉니다.  
   

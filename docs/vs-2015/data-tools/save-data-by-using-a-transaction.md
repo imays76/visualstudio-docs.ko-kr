@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d84780565d1761e75de7be9e5996a908d399f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c73dd654a2d48be963e592d94685c74d3a16057
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233788"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219577"
 ---
 # <a name="save-data-by-using-a-transaction"></a>트랜잭션을 사용하여 데이터 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "49233788"
   
 1.  에 **프로젝트** 메뉴에서 **참조 추가**합니다.  
   
-2.  에 **.NET** 탭 (**SQL Server** SQL Server 프로젝트에 대 한 탭)을 선택 **System.Transactions**, 및 thenselect**확인**합니다.  
+2.  에 **.NET** 탭 (**SQL Server** SQL Server 프로젝트에 대 한 탭)을 선택 **System.Transactions**를 선택한 후 **확인**합니다.  
   
      System.Transactions.dll에 대 한 참조를 프로젝트에 추가 됩니다.  
   

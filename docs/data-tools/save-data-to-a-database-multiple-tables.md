@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d4183a5bcfac62e9f6a1ad1509078bc6e534e68
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174399"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220341"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>데이터베이스에 데이터 저장(여러 테이블)
 응용 프로그램 개발에서 가장 일반적인 시나리오는 Windows 응용 프로그램의 폼에 데이터를 표시하고 데이터를 편집한 다음 업데이트된 데이터를 데이터베이스로 다시 보내는 것입니다. 이 연습에서는 두 관련 테이블의 데이터를 표시하는 폼을 만들고, 레코드를 편집한 다음 변경 내용을 데이터베이스에 다시 저장하는 방법을 보여줍니다. 이 예에서는 Northwind 샘플 데이터베이스의 `Customers` 및 `Orders` 테이블을 사용합니다.
@@ -86,7 +86,7 @@ ms.locfileid: "37174399"
 
 1.  에 **데이터** 메뉴에서 **데이터 소스 표시**합니다.
 
-2.  에 **데이터 원본** 창에서**새 데이터 소스 추가** 시작 하는 **데이터 소스 구성 마법사**합니다.
+2.  에 **데이터 원본** 창에서 **새 데이터 소스 추가** 시작 하는 **데이터 소스 구성 마법사**합니다.
 
 3.  에 **데이터 소스 형식 선택** 화면에서 **데이터베이스**를 선택한 후 **다음**합니다.
 
@@ -102,7 +102,7 @@ ms.locfileid: "37174399"
 
 6.  에 **응용 프로그램 구성 파일에 연결 문자열을 저장**를 선택 **다음**합니다.
 
-7.  에 **데이터베이스 개체 선택**화면에서 확장 된 **테이블** 노드.
+7.  에 **데이터베이스 개체 선택** 화면에서 확장 된 **테이블** 노드.
 
 8.  선택 합니다 **고객** 하 고 **주문** 테이블을 선택한 후 **마침**.
 

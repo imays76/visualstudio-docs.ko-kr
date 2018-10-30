@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893002"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219798"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>데이터 집합으로 WPF 컨트롤 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "49893002"
   
 2.  **데이터 소스** 창에서 **새 데이터 소스 추가**를 클릭합니다.  
   
-     합니다 **데이터 원본 구성**마법사가 열립니다.  
+     합니다 **데이터 원본 구성** 마법사가 열립니다.  
   
 3.  에 **데이터 소스 형식 선택** 페이지에서 **데이터베이스**를 클릭 하 고 **다음**합니다.  
   
@@ -122,7 +122,7 @@ ms.locfileid: "49893002"
   
 2.  디자이너에서 마우스 오른쪽 단추로 클릭 합니다 **Fill,GetData()** 쿼리하고 선택 **구성**합니다.  
   
-     합니다 **TableAdapter 구성**마법사가 열립니다.  
+     합니다 **TableAdapter 구성** 마법사가 열립니다.  
   
 3.  에 **SQL 문을 입력** 페이지, 후 다음과 같은 WHERE 절을 추가 합니다 `SELECT` 텍스트 상자에 문을.  
   

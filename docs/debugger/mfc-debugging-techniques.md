@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac52f3b393c411f58c27091fbbf3940f20f5dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930832"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219941"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 디버깅 기술
 다음은 MFC 프로그램을 디버깅하는 데 유용한 디버깅 기술입니다.  
@@ -440,7 +440,7 @@ pMyPerson->Dump( afxDump );
 
    4.  **다음에서 설정 복사** 목록에서 **릴리스**를 선택합니다.  
 
-   5.  **확인** 을 클릭하여 **새 프로젝트 구성**대화 상자를 닫습니다.  
+   5.  클릭 **확인** 닫으려면 합니다 **새 프로젝트 구성** 대화 상자.  
 
    6.  **구성 관리자** 대화 상자를 닫습니다.  
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865364"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219915"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>IntelliTrace를 사용 하 여 배포 후 문제 진단
 
@@ -44,7 +44,7 @@ IntelliTrace를 사용하여 배포한 후 ASP.NET 웹앱의 문제를 진단하
 
 Visual Studio 2017을 다루지 않습니다 합니다 *BuildInfo.config* 파일 사용 되지 않으며 다음 제거 되었습니다. 배포 후 ASP.NET 웹 앱을 디버깅 하려면 다음 방법 중 하나를 사용 합니다.
 
-* 사용 하 여 Azure에 배포용 [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/)합니다.
+* 사용 하 여 Azure에 배포용 [Application Insights](https://docs.microsoft.com/azure/application-insights/)합니다.
 
 * IntelliTrace를 사용 하는 경우 Visual Studio에서 프로젝트를 열고 하 고 일치 하는 빌드 기호 파일이 로드 합니다. 기호 파일을 로드할 수 있습니다 합니다 **모듈** 창 또는 기호를 구성 하 여 **도구** > **옵션** > **디버깅**   >  **기호**합니다.
 

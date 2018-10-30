@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933562"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219889"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>연습: 스레드 창을 사용 하 여 Visual Studio에서 다중 스레드 응용 프로그램 디버그
 Visual Studio에서 제공 된 **스레드** 창 및 기타 사용자 인터페이스 요소를 다중 스레드 응용 프로그램을 디버깅할 수 있도록 합니다. 이 자습서에서는 사용 하는 **스레드** 창 및 **디버그 위치** 도구 모음입니다. 다른 도구에 대 한 자세한 내용은 [다중 스레드 응용 프로그램 디버깅 시작](../debugger/get-started-debugging-multithreaded-apps.md)합니다. 이 자습서는 몇 분 정도 걸리지만 완료 익힐 수 다중 스레드 응용 프로그램 디버깅에 대 한 기능을 사용 하 여.   
@@ -37,7 +37,7 @@ Visual Studio에서 제공 된 **스레드** 창 및 기타 사용자 인터페�
   
      **새 프로젝트** 대화 상자가 나타납니다.  
   
-2.  에 **프로젝트 형식**s 상자 사용자가 선택한 언어를 클릭 합니다: **Visual Basic**를 **Visual C#**, 또는 **Visual c + +** 합니다.  
+2.  에 **프로젝트 형식** 상자에서 원하는 언어를 클릭: **Visual Basic**, **시각적 C#** , 또는 **Visual c + +**.  
   
 3.  아래 **Windows 바탕 화면**, 선택 **콘솔 앱**합니다.  
   

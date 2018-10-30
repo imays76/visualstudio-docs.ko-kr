@@ -22,12 +22,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf3d47c4e14606a4d3cc3006735fbe04af809600
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6906e68c74bbb718f9bfc041ab35075b3f9b0aa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195613"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220188"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio에서 데이터 바인딩된 컨트롤에 대한 캡션을 만드는 방식 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,15 +83,15 @@ ms.locfileid: "49195613"
   
 10. 마우스 오른쪽 단추로 클릭 합니다 **데이터 디자이너** 노드를 새로 만들고 **문자열 값** 라는 `SmartCaptionSuffix`.  
   
-11. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionExpression** 선택한 항목을**수정**합니다.  
+11. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionExpression** 선택한 항목을 **수정**합니다.  
   
 12. 원하는 정규식을 입력 합니다 **데이터 원본** 기간을 합니다.  
   
-13. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionReplacement** 선택한 항목을**수정**합니다.  
+13. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionReplacement** 선택한 항목을 **수정**합니다.  
   
 14. 대체 입력 정규식에서 일치 하는 패턴을 원하는 방식으로 형식이 지정 된 문자열입니다.  
   
-15. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionSuffix** 선택한 항목을**수정**합니다.  
+15. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionSuffix** 선택한 항목을 **수정**합니다.  
   
 16. 캡션의 끝에 표시할 모든 문자를 입력 합니다.  
   
@@ -119,11 +119,11 @@ ms.locfileid: "49195613"
   
 10. 마우스 오른쪽 단추로 클릭 합니다 **데이터 디자이너** 노드를 새로 만들고 **문자열 값** 라는 `SmartCaptionSuffix`.  
   
-11. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionExpression** 선택한 항목을**수정**합니다.  
+11. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionExpression** 선택한 항목을 **수정**합니다.  
   
 12. 입력 `(.*)` 값입니다. 이 전체 문자열을 일치 합니다.  
   
-13. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionReplacement** 선택한 항목을**수정**합니다.  
+13. 마우스 오른쪽 단추로 클릭 합니다 **SmartCaptionReplacement** 선택한 항목을 **수정**합니다.  
   
 14. 입력 `$1` 값입니다. 이 문자열을 변경 되지 않은 상태로 남아 있도록 전체 문자열 일치 하는 값을 바꿉니다.  
   

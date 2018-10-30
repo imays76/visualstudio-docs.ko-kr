@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949437"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220237"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 글꼴 및 색
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -153,7 +153,7 @@ ms.locfileid: "49949437"
 |**키워드**|지정된 예약어에 대한 키워드입니다. 예를 들면 클래스와 네임스페이스입니다.|  
 |**메모리 주소**|**메모리** 창에 주소 열을 표시하는 데 사용되는 텍스트 색입니다.|  
 |**메모리 변경**|**메모리** 창에 변경된 데이터를 표시하는 데 사용되는 텍스트 색입니다.|  
-|**메모리 데이터**|**메모리** 창에 데이터를 표시하는 데 사용되는 텍스트 색입니다.|  
+|**메모리 데이터**|데이터를 표시 하는 데 사용 되는 텍스트의 색을 **메모리** 창입니다.|  
 |**읽을 수 없는 메모리**|**메모리** 창에 읽을 수 없는 메모리 영역을 표시하는 데 사용되는 텍스트 색입니다.|  
 |**숫자**|실제 숫자 값을 나타내는 코드 내 숫자입니다.|  
 |**Operator**|+, - 및 !=와 같은 연산자입니다.|  

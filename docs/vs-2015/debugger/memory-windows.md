@@ -32,19 +32,19 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 140d3e0fb721c9913de6feb6f1ed9249c8b75cfa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925504"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219525"
 ---
 # <a name="memory-windows"></a>메모리 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 합니다 **메모리** 창 응용 프로그램에서 사용 되는 메모리 공간을 볼 수 있습니다. 합니다 **Watch** 창 **간략 한 조사식** 대화 상자에서 **자동** 창 및 **지역** 창에는 변수의 내용을 표시 메모리의 특정 위치에 저장 합니다. 하지만 **메모리** 창 큰 그림을 보여 줍니다. 이 뷰는 다른 창들에는 잘 표시되지 않는 버퍼나 큰 문자열 등의 큰 데이터를 검사하는 데 편리합니다. 그러나 합니다 **메모리** 창 데이터 표시로 제한 되지 않습니다. 메모리 창에는 메모리 공간의 할당되지 않은 메모리에 데이터, 코드 또는 임의 가비지 비트 중 어떤 내용이 있든 관계없이 메모리 공간의 모든 내용이 표시됩니다.  
   
- 합니다 **메모리** 기간은 주소 수준 디버깅을 활성화 하는 경우에 사용할 수 있습니다 합니다 **옵션**대화 상자에서**디버깅** 노드. 합니다 **메모리** 기간은 메모리 개념을 인식 하지 못하는 언어인 SQL 스크립트에 사용할 수 있습니다.  
+ 합니다 **메모리** 기간은 주소 수준 디버깅을 활성화 하는 경우에 사용할 수 있습니다 합니다 **옵션** 대화 상자에서**디버깅** 노드. 합니다 **메모리** 기간은 메모리 개념을 인식 하지 못하는 언어인 SQL 스크립트에 사용할 수 있습니다.  
   
 ## <a name="opening-a-memory-window"></a>메모리 창 열기  
   

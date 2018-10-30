@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e1779ab1d39a28e750cab757c94717d496b98ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231668"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219486"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>조회 데이터 바인딩을 지 원하는 Windows Forms 사용자 컨트롤 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Windows Forms에서 데이터를 표시할 때 기존 컨트롤에서 선택할 
 3.  **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.  
   
 ## <a name="create-a-data-source-from-your-database"></a>데이터베이스에서 데이터 원본 만들기  
- 이 단계에서는 사용 하 여 데이터 소스를 **데이터 소스 구성**를 기반으로 마법사를 `Customers` 및 `Orders` Northwind 샘플 데이터베이스의 테이블입니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스 설정에 대 한 내용은 참조 하세요 [Install SQL Server 예제 데이터베이스](../data-tools/install-sql-server-sample-databases.md)합니다.  
+ 이 단계에서는 사용 하 여 데이터 소스를 **데이터 소스 구성** 를 기반으로 마법사를 `Customers` 및 `Orders` Northwind 샘플 데이터베이스의 테이블입니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스 설정에 대 한 내용은 참조 하세요 [Install SQL Server 예제 데이터베이스](../data-tools/install-sql-server-sample-databases.md)합니다.  
   
 #### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면  
   

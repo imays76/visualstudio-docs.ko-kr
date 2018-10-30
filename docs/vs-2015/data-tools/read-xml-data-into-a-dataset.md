@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a4f5a7497e24ccd8e769198938dbd20a6bdf0f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284559"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219733"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 데이터를 Dataset에 읽어오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
   
 2.  프로젝트 이름을 `ReadingXML`로 지정합니다.  
   
-3.  선택 **Windows 응용 프로그램**를 선택한 후**확인**합니다. 자세한 내용은 [클라이언트 응용 프로그램](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)합니다.  
+3.  선택 **Windows 응용 프로그램**를 선택한 후 **확인**합니다. 자세한 내용은 [클라이언트 응용 프로그램](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)합니다.  
   
      합니다 **ReadingXML** 프로젝트에 추가한 생성 **솔루션 탐색기**합니다.  
   
@@ -74,7 +74,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
   
 1.  에 **프로젝트** 메뉴에서**새 항목 추가**합니다.  
   
-2.  선택 **XML 파일**, 파일 이름을 `authors.xml`를 선택한 후**추가**합니다.  
+2.  선택 **XML 파일**, 파일 이름을 `authors.xml`를 선택한 후 **추가**합니다.  
   
      XML 파일을 디자이너에 로드 하 고 편집 하기 위해 준비가 됩니다.  
   
@@ -187,7 +187,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
   
 2.  [도구 상자, 데이터 탭](../ide/reference/toolbox-data-tab.md)를 끌어를 **데이터 집합** 끌어다 **Form1**합니다.  
   
-3.  에 **데이터 집합 추가** 대화 상자에서 **형식화 되지 않은 데이터 집합**를 선택한 후**확인**합니다.  
+3.  에 **데이터 집합 추가** 대화 상자에서 **형식화 되지 않은 데이터 집합**를 선택한 후 **확인**합니다.  
   
      **DataSet1** 구성 요소 트레이에 추가 됩니다.  
   
@@ -232,7 +232,7 @@ ADO.NET에는 XML 데이터로 작업 하기 위한 간단한 방법을 제공 �
   
 #### <a name="to-test-the-form"></a>폼을 테스트 하려면  
   
-1.  선택**F5** 응용 프로그램을 실행 합니다.  
+1.  선택 **F5** 응용 프로그램을 실행 합니다.  
   
 2.  선택 된 **읽기 XML** 단추입니다.  
   

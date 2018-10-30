@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928960"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219785"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
   다음 문제 또는 경고를 사용 하 여 SharePoint 솔루션을 디버깅할 때 발생할 수 있습니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거. 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버깅](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)합니다.
@@ -136,7 +136,7 @@ ms.locfileid: "49928960"
   
 -   [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]을 설치합니다.  
   
--   SharePoint 웹 사이트에 관리자 액세스할 수 있는지 확인 합니다. 자세한 내용은 참조는 [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 온라인 문서 [할당 하거나 SharePoint Server의 서비스 응용 프로그램의 관리자가 제거](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications)합니다.  
+-   SharePoint 웹 사이트에 관리자 액세스할 수 있는지 확인 합니다. 자세한 내용은 참조는 [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 온라인 문서 [할당 하거나 SharePoint Server의 서비스 응용 프로그램의 관리자가 제거](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)합니다.  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>이벤트 수신기가 프로젝트의 사이트 삭제 웹 이벤트가 발생 하지 않습니다.
  이벤트 수신기 프로젝트를 만들고 "사이트 삭제 되 고"와 같은 특정 웹 이벤트를 선택 하면 이벤트가 발생 하지 않습니다.  

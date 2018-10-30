@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928713"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220110"
 ---
 # <a name="properties-of-image-shapes"></a>이미지 모양의 속성
+
 도메인 클래스가 생성된 된 디자이너에서 표시 하는 방법을 지정 하려면 이미지 셰이프를 사용할 수 있습니다. 이미지 모양을 설정 하 여 정의 된 `Image` 미리 정의 된 이미지 파일을 클래스의 속성입니다. 다음 형식이 지원 됩니다.
 
 - .gif
@@ -38,11 +39,11 @@ ms.locfileid: "49928713"
 
 - .png
 
-  기본적으로 이미지 파일 같은 디자이너 리소스 파일에 위치한 합니다 **리소스**폴더에는 **Dsl** 프로젝트입니다.
+기본적으로 이미지 파일 같은 디자이너 리소스 파일에 위치한 합니다 **리소스** 폴더에는 **Dsl** 프로젝트입니다.
 
-  자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.
+자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.
 
-  이미지 모양의 다음 표에 나열 된 속성을 가집니다.
+이미지 모양의 다음 표에 나열 된 속성을 가집니다.
 
 |속성|설명|기본|
 |-|-|-|

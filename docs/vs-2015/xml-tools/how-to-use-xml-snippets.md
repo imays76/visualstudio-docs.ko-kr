@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245858"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219616"
 ---
 # <a name="how-to-use-xml-snippets"></a>방법: XML 조각 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML �
   
  Enter 키 또는 Esc 키를 누르면 필드 편집이 취소되고 편집기가 일반 상태로 돌아갑니다.  
   
- 코드 조각 필드 설정을 수정 하 여 편집할 수 있는 코드 조각 필드에 대 한 기본 색을 변경할 수 있습니다는 **글꼴 및 색** 창 합니다 **옵션**의대화 상자. 자세한 내용은 [방법: 글꼴 및 색 편집기에서 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)합니다.  
+ 코드 조각 필드 설정을 수정 하 여 편집할 수 있는 코드 조각 필드에 대 한 기본 색을 변경할 수 있습니다는 **글꼴 및 색** 창의 합니다 **옵션** 대화 상자. 자세한 내용은 [방법: 글꼴 및 색 편집기에서 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [XML 조각](../xml-tools/xml-snippets.md)   

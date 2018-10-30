@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822107"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219642"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
 바로 가기 키 사용자 지정 메뉴 명령을 바인딩할 항목을 방금 추가 된 *.vsct* 파일 패키지에 대 한 합니다. 이 항목에서는 바로 가기 키 사용자 지정 단추, 메뉴 항목 또는 도구 모음 명령에 매핑하는 방법 및 기본 편집기에서 키보드 매핑을 적용 하거나 사용자 지정 편집기를 제한 하는 방법을 설명 합니다.  
@@ -78,7 +78,7 @@ ms.locfileid: "49822107"
   
    대부분의 경우 **Shift** 해서는 안 두 번째 한정자 없이 이미를 눌러 하므로 대부분의 영숫자 키 대문자 또는 기호를 입력 합니다.  
   
-   가상 키 코드를 사용 하면 함수 키 예를 들어, 그와 관련 된 문자를 갖지 않는 특수 키에 액세스 하며 **백스페이스** 키입니다. 자세한 내용은 [가상 키 코드로](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes)입니다.  
+   가상 키 코드를 사용 하면 함수 키 예를 들어, 그와 관련 된 문자를 갖지 않는 특수 키에 액세스 하며 **백스페이스** 키입니다. 자세한 내용은 [가상 키 코드로](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes)입니다.  
   
    명령을 사용할 수 있도록 Visual studio에서 편집기를 설정 합니다 `editor` 특성을 `guidVSStd97`입니다.  
   
