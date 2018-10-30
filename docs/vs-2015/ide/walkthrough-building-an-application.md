@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 350ff6d481c3f7cffc47519a252b1cb65d2748ba
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143179"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220210"
 ---
 # <a name="walkthrough-building-an-application"></a>연습: 응용 프로그램 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "50143179"
   
 4. **활성 솔루션 플랫폼** 목록에서 **새로 만들기**를 선택합니다.  
   
-5. **새 솔루션 플랫폼** 대화 상자에서 **x64**를 선택하지만 x86 플랫폼에서 설정을 복사하지 않습니다.  
+5. 에 **새 솔루션 플랫폼** 대화 상자에서 **x64**, x86에서 설정을 복사 하지 않습니다 플랫폼입니다.  
   
     ![새 솔루션 플랫폼 대화 상자](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   

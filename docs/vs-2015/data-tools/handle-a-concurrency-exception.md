@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812935"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220419"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "49812935"
   
 3.  에 **템플릿을** 창 **Windows 응용 프로그램**합니다.  
   
-4.  프로젝트 이름을 `ConcurrencyWalkthrough`를 선택한 후**확인**합니다.  
+4.  프로젝트 이름을 `ConcurrencyWalkthrough`를 선택한 후 **확인**합니다.  
   
      Visual Studio 프로젝트를 추가 합니다 **솔루션 탐색기** 디자이너에서 새 폼이 표시 됩니다.  
   
@@ -96,7 +96,7 @@ ms.locfileid: "49812935"
   
 5.  확장을 **테이블** 노드를 선택 합니다 `Customers` 테이블입니다. 데이터 집합에 대 한 기본 이름을 해야 `NorthwindDataSet`합니다.  
   
-6.  선택**완료** 데이터 집합 프로젝트에 추가 합니다.  
+6.  선택 **완료** 데이터 집합 프로젝트에 추가 합니다.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>데이터 바인딩된 DataGridView 컨트롤 만들기  
  만든이 섹션에서는 <xref:System.Windows.Forms.DataGridView> 끌어서를 **고객** 에서 항목을 **데이터 원본** 창에서 Windows 폼으로 합니다.  
@@ -107,7 +107,7 @@ ms.locfileid: "49812935"
   
 2.  에 **데이터 원본** 창 확장 합니다 **NorthwindDataSet** 노드를 선택한 후는 **고객** 테이블.  
   
-3.  테이블 노드의 아래쪽 화살표를 선택 하 고 선택한 **DataGridView**드롭 다운 목록에서.  
+3.  테이블 노드의 아래쪽 화살표를 선택 하 고 선택한 **DataGridView** 드롭 다운 목록에서.  
   
 4.  폼의 빈 영역으로 테이블을 끕니다.  
   
@@ -118,7 +118,7 @@ ms.locfileid: "49812935"
   
 #### <a name="to-test-the-form"></a>폼을 테스트 하려면  
   
-1.  선택**F5** 응용 프로그램을 실행 하려면  
+1.  선택 **F5** 응용 프로그램을 실행 하려면  
   
      폼이 표시는 <xref:System.Windows.Forms.DataGridView> 데이터로 채워진에 컨트롤을 `Customers` 테이블입니다.  
   
@@ -192,7 +192,7 @@ ms.locfileid: "49812935"
   
 #### <a name="to-test-the-form"></a>폼을 테스트 하려면  
   
-1.  선택**F5** 응용 프로그램을 실행 합니다.  
+1.  선택 **F5** 응용 프로그램을 실행 합니다.  
   
 2.  폼에 나타납니다. 계속 해 서 실행 후 Visual Studio IDE로 전환 합니다.  
   
@@ -215,8 +215,8 @@ ms.locfileid: "49812935"
   
      동시성 오류가 발생 하 고 메시지 상자가 나타납니다.  
   
-10. 선택**No** 업데이트를 취소 하 고 현재 데이터베이스에 있는 값을 사용 하 여 데이터 집합을 업데이트 합니다. 선택**예** 제안 된 값이 데이터베이스에 기록 합니다.  
+10. 선택 **No** 업데이트를 취소 하 고 현재 데이터베이스에 있는 값을 사용 하 여 데이터 집합을 업데이트 합니다. 선택 **예** 제안 된 값이 데이터베이스에 기록 합니다.
   
-## <a name="see-also"></a>참고 항목  
- [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>참고 항목
 
+- [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

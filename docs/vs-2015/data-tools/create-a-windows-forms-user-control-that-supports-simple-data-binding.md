@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f761f28ebbe069d3fe0b0d0c468194247a36dafa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 607c324e11591211593522957dcd08747d230279
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260899"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219830"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>단순 데이터 바인딩을 지 원하는 Windows Forms 사용자 컨트롤 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ Windows 응용 프로그램에서 폼에 데이터를 표시할 때 기존 컨�
 3.  **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.  
   
 ## <a name="create-a-data-source-from-your-database"></a>데이터베이스에서 데이터 원본 만들기  
- 이 단계에서는 합니다 **데이터 소스 구성**기반으로 하는 데이터 원본을 만들려면 마법사를 `Customers` Northwind 샘플 데이터베이스의 테이블입니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스 설정에 대 한 내용은 참조 하세요 [방법: 샘플 데이터베이스 설치](../data-tools/how-to-install-sample-databases.md)합니다.  
+ 이 단계에서는 합니다 **데이터 소스 구성** 기반으로 하는 데이터 원본을 만들려면 마법사를 `Customers` Northwind 샘플 데이터베이스의 테이블입니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스 설정에 대 한 내용은 참조 하세요 [방법: 샘플 데이터베이스 설치](../data-tools/how-to-install-sample-databases.md)합니다.  
   
 #### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면  
   

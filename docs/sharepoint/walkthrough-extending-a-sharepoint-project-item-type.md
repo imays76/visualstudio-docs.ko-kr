@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844518"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220328"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>연습: SharePoint 프로젝트 항목 형식 확장
   사용할 수는 **비즈니스 데이터 연결 모델** SharePoint에서 비즈니스 데이터 연결 (BDC) 서비스에 대 한 모델을 만드는 프로젝트 항목입니다. 기본적으로이 프로젝트 항목을 사용 하 여 모델을 만들 때 모델의 데이터 표시 되지 않습니다 사용자. 사용자가 데이터를 볼 수 있도록 SharePoint에 외부 목록도 만들어야 합니다.  
@@ -220,7 +220,7 @@ ms.locfileid: "49844518"
   
 5.  에 **이름** 상자에 입력 합니다 **SharePointProjectTestBDC**를 선택한 후는 **확인** 단추입니다.  
   
-6.  SharePoint 사용자 지정 마법사에서에서 디버깅을 위해 사용 하려는 사이트의 URL을 입력 **팜 솔루션으로 배포**를 선택한 후 합니다 **마침**단추입니다.  
+6.  SharePoint 사용자 지정 마법사에서에서 디버깅을 위해 사용 하려는 사이트의 URL을 입력 **팜 솔루션으로 배포**를 선택한 후 합니다 **마침** 단추입니다.  
   
 7.  SharePointProjectTestBDC 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 후 **새 항목**합니다.  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220819"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219720"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect 메서드를 사용하여 데이터 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "49220819"
   
 2.  프로젝트 이름을 **TableAdapterDbDirectMethodsWalkthrough**합니다.  
   
-3.  선택 **Windows 응용 프로그램**, 및 thenselect**확인**합니다. 자세한 내용은 [클라이언트 응용 프로그램](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)합니다.  
+3.  선택 **Windows 응용 프로그램**를 선택한 후 **확인**합니다. 자세한 내용은 [클라이언트 응용 프로그램](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)합니다.  
   
      합니다 **TableAdapterDbDirectMethodsWalkthrough** 프로젝트에 추가한 생성 **솔루션 탐색기**합니다.  
   
@@ -70,13 +70,13 @@ ms.locfileid: "49220819"
   
 #### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면  
   
-1.  에 **데이터** 메뉴에서**데이터 소스 표시**합니다.  
+1.  에 **데이터** 메뉴에서 **데이터 소스 표시**합니다.  
   
 2.  에 **데이터 원본** 창에서 **새 데이터 소스 추가** 시작 하는 **데이터 소스 구성 마법사**합니다.  
   
-3.  에 **데이터 소스 형식 선택**화면에서 **데이터베이스**를 선택한 후**다음**합니다.  
+3.  에 **데이터 소스 형식 선택** 화면에서 **데이터베이스**를 선택한 후 **다음**합니다.  
   
-4.  에 **데이터 연결 선택**화면에서 다음 중 하나를 수행 합니다.  
+4.  에 **데이터 연결 선택** 화면에서 다음 중 하나를 수행 합니다.  
   
     -   Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.  
   
@@ -84,13 +84,13 @@ ms.locfileid: "49220819"
   
     -   선택 **새 연결** 시작 하는 **연결 추가/수정** 대화 상자.  
   
-5.  데이터베이스에서 암호를 요구 하는 경우 중요 한 데이터를 포함 하 여 선택한 옵션을 선택**다음**합니다.  
+5.  데이터베이스에서 암호를 요구 하는 경우 중요 한 데이터를 포함 하 여 선택한 옵션을 선택 **다음**합니다.  
   
-6.  에 **응용 프로그램 구성 파일에 연결 문자열을 저장**화면에서 **다음**합니다.  
+6.  에 **응용 프로그램 구성 파일에 연결 문자열을 저장** 화면에서 **다음**합니다.  
   
-7.  에 **데이터베이스 개체 선택**화면에서 확장 된 **테이블** 노드.  
+7.  에 **데이터베이스 개체 선택** 화면에서 확장 된 **테이블** 노드.  
   
-8.  선택 된 `Region` 테이블을 선택한 후**완료**합니다.  
+8.  선택 된 `Region` 테이블을 선택한 후 **완료**합니다.  
   
      **NorthwindDataSet** 프로젝트에 추가 됩니다 및 `Region` 테이블에 표시 합니다 **데이터 원본** 창입니다.  
   
@@ -117,7 +117,7 @@ ms.locfileid: "49220819"
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>데이터베이스에 새 레코드를 삽입하는 코드를 추가하려면  
   
-1.  선택**InsertButton** click 이벤트에 대 한 이벤트 처리기를 만들고 코드 편집기에서 폼을 엽니다.  
+1.  선택 **InsertButton** click 이벤트에 대 한 이벤트 처리기를 만들고 코드 편집기에서 폼을 엽니다.  
   
 2.  `InsertButton_Click` 이벤트 처리기를 다음 코드로 바꿉니다.  
   
@@ -135,7 +135,7 @@ ms.locfileid: "49220819"
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>데이터베이스에서 레코드를 삭제 하는 코드를 추가 하려면  
   
-1.  선택**DeleteButton** click 이벤트에 대 한 이벤트 처리기를 만들고 코드 편집기에서 폼을 엽니다.  
+1.  선택 **DeleteButton** click 이벤트에 대 한 이벤트 처리기를 만들고 코드 편집기에서 폼을 엽니다.  
   
 2.  `DeleteButton_Click` 이벤트 처리기를 다음 코드로 바꿉니다.  
   
@@ -146,7 +146,7 @@ ms.locfileid: "49220819"
   
 #### <a name="to-run-the-application"></a>응용 프로그램을 실행하려면  
   
--   선택**F5** 응용 프로그램을 실행 합니다.  
+-   선택 **F5** 응용 프로그램을 실행 합니다.  
   
 -   선택 된 **삽입** 단추 및 새 레코드를 모눈에 표시 되는지 확인 합니다.  
   

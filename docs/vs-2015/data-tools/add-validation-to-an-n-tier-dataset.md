@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7b9955cf71b1d8862274d4b3501cee35ddd080f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212385"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220536"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>n 계층 데이터 집합에 유효성 검사 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ End Sub
   
 3.  확인 코드를 추가 `e.ProposedValue` 응용 프로그램의 요구 사항을 충족 하는 데이터를 포함 합니다. 제안 된 값을 수용할 수 없으면 오류가 있음을 나타내도록 열을 설정 합니다.  
   
-     다음 코드 예제는 유효성을 검사 합니다 **수량** 0 개 이상의 열을 포함 합니다. 하는 경우**수량** 보다 작거나 0으로 열이 설정 된 오류입니다. 합니다 `Else` 경우 절에서 오류를 지웁니다**수량** 0 보다 크면 합니다. 열 변경 이벤트 처리기의 코드는 다음과 같아야 합니다.  
+     다음 코드 예제는 유효성을 검사 합니다 **수량** 0 개 이상의 열을 포함 합니다. 하는 경우 **수량** 보다 작거나 0으로 열이 설정 된 오류입니다. 합니다 `Else` 경우 절에서 오류를 지웁니다 **수량** 0 보다 크면 합니다. 열 변경 이벤트 처리기의 코드는 다음과 같아야 합니다.  
   
     ```vb  
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then  

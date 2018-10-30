@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271052"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219993"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>옵션, 텍스트 편집기, JavaScript, 서식
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "49271052"
 |**컨트롤 블록의 여는 중괄호를 새 줄에 배치**|이 옵션을 선택하면 코드 편집기는 컨트롤 블록(예:`if` 및 `while` 컨트롤 블록) 과 연결된 여는 중괄호를 새 줄로 이동합니다.|  
   
 ## <a name="spacing"></a>간격  
- 이 옵션은 **소스** 보기에서 공백이 삽입되는 방식을 결정합니다.  
+ 이러한 옵션에 공백을 삽입 하는 방법을 결정 **원본** 보기.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874646"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219304"
 ---
 # <a name="save-data-in-a-transaction"></a>트랜잭션에 데이터 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "49874646"
   
 2.  프로젝트 이름을 **SavingDataInATransactionWalkthrough**합니다.  
   
-3.  선택 **Windows 응용 프로그램**를 선택한 후**확인**합니다. 자세한 내용은 [클라이언트 응용 프로그램](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)합니다.  
+3.  선택 **Windows 응용 프로그램**를 선택한 후 **확인**합니다. 자세한 내용은 [클라이언트 응용 프로그램](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)합니다.  
   
      합니다 **SavingDataInATransactionWalkthrough** 프로젝트에 추가한 생성 **솔루션 탐색기**합니다.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "49874646"
   
 2.  에 **데이터 원본** 창에서 **새 데이터 소스 추가** 시작 하는 **데이터 소스 구성 마법사**합니다.  
   
-3.  에 **데이터 소스 형식 선택**화면에서 **데이터베이스**를 선택한 후**다음**합니다.  
+3.  에 **데이터 소스 형식 선택**화면에서 **데이터베이스**를 선택한 후 **다음**합니다.  
   
 4.  에 **데이터 연결 선택**화면 작업 중 하나를 수행 합니다.  
   
@@ -71,13 +71,13 @@ ms.locfileid: "49874646"
   
     -   선택 **새 연결** 시작 하는 **연결 추가/수정** 대화 상자를 Northwind 데이터베이스에 대 한 연결을 만듭니다.  
   
-5.  데이터베이스에서 암호를 요구 하는 경우 중요 한 데이터를 포함 하 여 선택한 옵션을 선택**다음**합니다.  
+5.  데이터베이스에서 암호를 요구 하는 경우 중요 한 데이터를 포함 하 여 선택한 옵션을 선택 **다음**합니다.  
   
-6.  에 **응용 프로그램 구성 파일에 연결 문자열을 저장** 화면에서**다음**합니다.  
+6.  에 **응용 프로그램 구성 파일에 연결 문자열을 저장** 화면에서 **다음**합니다.  
   
 7.  에 **데이터베이스 개체 선택** 화면에서 확장 된 **테이블** 노드.  
   
-8.  선택 된 `Customers` 하 고 `Orders` 테이블을 선택한 후**완료**합니다.  
+8.  선택 된 `Customers` 하 고 `Orders` 테이블을 선택한 후 **완료**합니다.  
   
      **NorthwindDataSet** 프로젝트에 추가 됩니다 및 `Customers` 및 `Orders` 의 테이블에 표시 된 **데이터 원본** 창.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "49874646"
   
 1.  에 **프로젝트** 메뉴에서**참조 추가**합니다.  
   
-2.  선택 **System.Transactions**(에 **.NET** 탭)을 선택한 후**확인**합니다.  
+2.  선택 **System.Transactions**(에 **.NET** 탭)을 선택한 후 **확인**합니다.  
   
      에 대 한 참조가 **System.Transactions** 프로젝트에 추가 됩니다.  
   
@@ -161,7 +161,7 @@ ms.locfileid: "49874646"
   
 #### <a name="to-run-the-application"></a>응용 프로그램을 실행하려면  
   
--   선택**F5** 응용 프로그램을 실행 합니다.  
+-   선택 **F5** 응용 프로그램을 실행 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

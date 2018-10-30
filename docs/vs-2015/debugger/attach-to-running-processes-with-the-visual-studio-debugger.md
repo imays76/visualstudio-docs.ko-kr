@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 604c9834594c14e8c1cc6b2c310f96cb68321931
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825706"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220006"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "49825706"
   
    2. **한정자** 목록 상자 옆에 있는 드롭다운 화살표를 클릭하고 드롭다운 목록에서 컴퓨터 이름을 선택합니다.  
   
-   3. **한정자** 목록 옆에 있는**찾기** 단추를 클릭하여 **원격 디버거 연결 선택** 대화 상자를 엽니다. **원격 디버거 연결 선택** 대화 상자에는 로컬 서브넷에 있는 모든 장치와 이더넷 케이블을 통해 컴퓨터에 직접 연결된 모든 장치가 나열됩니다. 원하는 컴퓨터 또는 장치를 클릭한 다음 **선택**을 클릭합니다. 
+   3. 클릭 합니다 **찾을** 단추 옆에 **한정자** 열려면 목록을 **원격 디버거 연결 선택** 대화 상자. **원격 디버거 연결 선택** 대화 상자에는 로컬 서브넷에 있는 모든 장치와 이더넷 케이블을 통해 컴퓨터에 직접 연결된 모든 장치가 나열됩니다. 원하는 컴퓨터 또는 장치를 클릭한 다음 **선택**을 클릭합니다. 
   
       **한정자** 설정은 해당 한정자를 사용하여 디버깅 연결에 성공한 경우에만 디버깅 세션 간에 유지됩니다.
      

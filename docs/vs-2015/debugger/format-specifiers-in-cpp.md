@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 20b27a232c0e707751f8dd8111989d761635e9e6
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894055"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220315"
 ---
 # <a name="format-specifiers-in-c"></a>C++의 형식 지정자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ int main() {
 |---------------|------------|---------------------------|---------------------|  
 |n|10진수 또는 **16진수** 정수|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|`pBuffer` 를 요소가 32개인 배열로 표시합니다.|  
 |**[exp]**|정수로 확인되는 유효한 C++ 식입니다.|pBuffer,[bufferSize]|PBuffer를 `bufferSize` 요소의 배열로 표시합니다.|  
-|**expand(n)**|정수로 확인되는 유효한 C++ 식입니다.|pBuffer, expand(2)| `pBuffer`|  
+|**expand(n)**|정수로 확인되는 유효한 C++ 식입니다.|pBuffer, expand(2)|  `pBuffer`|  
   
 ##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> C++/CLI를 사용하는 interop 디버깅의 형식 지정자  
  **굵게** 표시된 지정자는 네이티브 및 C++/CLI 코드 디버깅에 대해서만 지원됩니다.  
@@ -120,7 +120,7 @@ int main() {
 |**l,h**|d, i, u, o, x, X에 대한 long 또는 short 접두사|00406042|0x0c22|  
 |**f**|부호 있는 부동 소수점|(3./2.), f|1.500000|  
 |**e**|부호 있는 과학적 표기법|(3.0/2.0)|1.500000e+000|  
-|**g**g|부호 있는 부동 소수점 또는 부호 있는 과학적 표기법 중에서 짧은 형식|(3.0/2.0)|1.5|  
+|**g**|부호 있는 부동 소수점 또는 부호 있는 과학적 표기법 중에서 짧은 형식|(3.0/2.0)|1.5|  
 |c|단일 문자|\<location>|101 'e'|  
 |s|const char*|\<location>|"hello world"|  
 |su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  

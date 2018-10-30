@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812428"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220380"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ ms.locfileid: "49812428"
   
 3.  이름을 변경할 `AdventureWorksModel.edmx`, 클릭 **추가**합니다.  
   
-     합니다 **엔터티 데이터 모델**마법사가 열립니다.  
+     합니다 **엔터티 데이터 모델** 마법사가 열립니다.  
   
 4.  에 **Model 콘텐츠 선택** 페이지에서 클릭 **데이터베이스에서 생성**, 클릭 **다음**합니다.  
   
@@ -161,7 +161,7 @@ ms.locfileid: "49812428"
   
 6.  **데이터 소스** 창에서 **새 데이터 소스 추가**를 클릭합니다.  
   
-     합니다 **데이터 원본 구성**마법사가 열립니다.  
+     합니다 **데이터 원본 구성** 마법사가 열립니다.  
   
 7.  에 **데이터 소스 형식 선택** 마법사의 페이지 **서비스**를 클릭 하 고 **다음**합니다.  
   

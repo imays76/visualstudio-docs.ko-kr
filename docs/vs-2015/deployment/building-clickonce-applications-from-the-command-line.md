@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836790"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220019"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>명령줄에서 ClickOnce 응용 프로그램 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "49836790"
   
 5. `msbuild /target:publish`를 입력합니다.  
   
-   위의 단계는 전체를 생성 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] p 프로젝트의 하위 폴더에 응용 프로그램 배포**ublish**합니다. CmdLineDemo.application 되는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 매니페스트 합니다. 폴더 CmdLineDemo_1.0.0.0 CmdLineDemo.exe 및 CmdLineDemo.exe.manifest, 파일이 포함 된 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 매니페스트 합니다. Setup.exe가 기본적으로 설치 하도록 구성 된 부트스트래퍼를 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]입니다. DotNetFX 폴더에 대 한 재배포 가능 패키지를 포함 합니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]합니다. 웹을 통해 또는 UNC 또는 CD/DVD를 통해 응용 프로그램을 배포 하는 데 필요한 파일의 전체 집합입니다.  
+   위의 단계는 전체를 생성 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 라는 프로젝트의 하위 폴더에 응용 프로그램 배포 **게시**합니다. CmdLineDemo.application 되는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 매니페스트 합니다. 폴더 CmdLineDemo_1.0.0.0 CmdLineDemo.exe 및 CmdLineDemo.exe.manifest, 파일이 포함 된 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 매니페스트 합니다. Setup.exe가 기본적으로 설치 하도록 구성 된 부트스트래퍼를 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]입니다. DotNetFX 폴더에 대 한 재배포 가능 패키지를 포함 합니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]합니다. 웹을 통해 또는 UNC 또는 CD/DVD를 통해 응용 프로그램을 배포 하는 데 필요한 파일의 전체 집합입니다.  
   
 ## <a name="publishing-properties"></a>게시 속성  
  위 절차의 응용 프로그램을 게시할 때 다음 속성을 게시 마법사가 프로젝트 파일에 삽입 됩니다. 이러한 속성에 직접 영향을 하는 방법을 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 생성 됩니다.  

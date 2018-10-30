@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9ea239fcdef2c9b2e5eccc82fd162e0b940bdf44
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843485"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219967"
 ---
 # <a name="properties-of-image-shapes"></a>이미지 모양의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "49843485"
   
 - .png  
   
-  기본적으로 이미지 파일 같은 디자이너 리소스 파일에 위치한 합니다 **리소스**폴더에는 **Dsl** 프로젝트입니다.  
+  기본적으로 이미지 파일 같은 디자이너 리소스 파일에 위치한 합니다 **리소스** 폴더에는 **Dsl** 프로젝트입니다.  
   
   자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.  
   

@@ -27,12 +27,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6035e9024b7c81d3d9d5fc7b4d482aa2aae7c06
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb9b6924f5d11e3d857308e3a1bcf1e1644f78bc
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844720"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220250"
 ---
 # <a name="cl-task"></a>CL 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Visual C++ 컴파일러 도구 cl.exe를 래핑합니다. 컴파일러는 실행
   
    자세한 내용은 [컴파일러 옵션](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)을 참조하세요.  
   
-- **AdditionalUsingDirectories**선택적 String[] 매개 변수입니다.  
+- **AdditionalUsingDirectories** 선택적 String 매개 변수입니다.  
   
    **#using** 지시문에 전달된 파일 참조를 확인하기 위해 컴파일러가 검색할 디렉터리를 지정합니다.  
   

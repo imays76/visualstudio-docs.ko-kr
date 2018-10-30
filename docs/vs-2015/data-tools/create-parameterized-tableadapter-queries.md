@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823504"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218901"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>매개 변수가 있는 TableAdapter 쿼리 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +67,10 @@ ms.locfileid: "49823504"
   
 1. **Windows Forms 디자이너**에서 폼을 엽니다.  
   
-2. 에 **데이터** 메뉴에서**쿼리 추가**또는**데이터 스마트 태그**합니다.  
+2. 에 **데이터** 메뉴에서 **쿼리 추가** 또는 **데이터 스마트 태그**합니다.  
   
    > [!NOTE]
-   >  하는 경우 **쿼리 추가** 에서 사용할 수 없는 합니다 **데이터** 메뉴, 매개 변수화를 추가 하는 데이터 소스가 표시 하면 양식의 컨트롤을 선택 합니다. 예를 들어 폼의 <xref:System.Windows.Forms.DataGridView> 컨트롤에 데이터가 표시되는 경우 해당 컨트롤을 선택합니다. 폼의 개별 컨트롤에 데이터가 표시되는 경우에는 데이터 바인딩된 컨트롤을 선택합니다.  
+   > 하는 경우 **쿼리 추가** 에서 사용할 수 없는 합니다 **데이터** 메뉴, 매개 변수화를 추가 하는 데이터 소스가 표시 하면 양식의 컨트롤을 선택 합니다. 예를 들어 폼의 <xref:System.Windows.Forms.DataGridView> 컨트롤에 데이터가 표시되는 경우 해당 컨트롤을 선택합니다. 폼의 개별 컨트롤에 데이터가 표시되는 경우에는 데이터 바인딩된 컨트롤을 선택합니다.  
   
 3. 에 **선택한 데이터 원본 테이블** 영역에서 선택 하려는 tablethat 매개 변수화를 추가 합니다.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "49823504"
   
 5. 에 **쿼리 텍스트** 상자, 매개 변수를 사용 하는 쿼리를 입력 합니다.  
   
-6. 선택**확인**합니다.  
+6. **확인**을 선택합니다.  
   
     매개 변수를 입력 하는 컨트롤 및 **부하** 폼에 단추 추가 됩니다을 <xref:System.Windows.Forms.ToolStrip> 제어 합니다.  
   
@@ -105,7 +105,7 @@ ms.locfileid: "49823504"
   
 1.  에 **데이터 집합 디자이너**, null 매개 변수 값을 허용 해야 하는 TableAdapter 쿼리를 선택 합니다.  
   
-2.  에 **속성** 창에서**매개 변수**합니다. 줄임표를 누릅니다 (**...** ) 버튼을 클릭 하 여 **매개 변수 컬렉션 편집기**합니다.  
+2.  에 **속성** 창에서 **매개 변수**합니다. 줄임표를 누릅니다 (**...** ) 버튼을 클릭 하 여 **매개 변수 컬렉션 편집기**합니다.  
   
 3.  Null 값을 허용 하는 매개 변수를 선택 하 고 설정 합니다 **AllowDbNull** 속성을 `true`입니다.  
   

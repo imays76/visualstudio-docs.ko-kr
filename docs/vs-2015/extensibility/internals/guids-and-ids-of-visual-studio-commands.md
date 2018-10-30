@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868583"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219837"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 명령의 GUID 및 ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Visual Studio 통합된 개발 환경 (IDE)에 포함 된 명령의 GUID 및 ID 
   
 -   같은 밑줄이 그어진 문자를 포함 하는 메뉴 항목의 **인쇄** 명령을 **파일** 메뉴, P 밑줄이 표시 됩니다.  
   
-     메뉴 항목 이름에 '&' 문자 뒤에 나오는 문자는 표시는 밑줄이 있습니다. .Vsct 파일 특수 문자를 나타내기 위해 '&' 문자를 사용 하며 철자 표시 되는 앰퍼샌드를 입력 해야 하는 XML로 작성 됩니다 있지만 '&amp;'. 따라서.vsct 파일에에서는 **P**인쇄 명령으로 표시 됩니다. '&amp;인쇄 '.  
+     메뉴 항목 이름에 '&' 문자 뒤에 나오는 문자는 표시는 밑줄이 있습니다. .Vsct 파일 특수 문자를 나타내기 위해 '&' 문자를 사용 하며 철자 표시 되는 앰퍼샌드를 입력 해야 하는 XML로 작성 됩니다 있지만 '&amp;'. 따라서.vsct 파일에에서는 **인쇄** 명령으로 표시 됩니다. '&amp;인쇄 '.  
   
 -   명령와 같은 동적 텍스트입니다 **저장** *현재 파일 이름을*, 및 동적 메뉴 항목, 항목 등에서 생성 합니다 **최근에 사용한 파일** 목록.  
   

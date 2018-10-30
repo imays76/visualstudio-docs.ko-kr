@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d0176f203f7decb701d678a110856acdad36750b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843394"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220181"
 ---
 # <a name="hierarchical-update"></a>계층적 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ ms.locfileid: "49843394"
   
 1.  `OrdersBindingSource.AddingNew` 이벤트에 대한 이벤트 처리기를 만듭니다.  
   
-    -   오픈 **Form1** 디자인 뷰에서 선택**OrdersBindingSource** 구성 요소 트레이에 선택 **이벤트** 에 **속성** 창 및 다음 두 번 클릭 합니다 **AddingNew** 이벤트입니다.  
+    -   오픈 **Form1** 디자인 뷰에서 선택 **OrdersBindingSource** 구성 요소 트레이에 선택 **이벤트** 에 **속성** 창 및 다음 두 번 클릭 합니다 **AddingNew** 이벤트입니다.  
   
 2.  호출 하는 이벤트 처리기에 코드 줄을 추가 합니다 `CustomersBindingSource.EndEdit` 메서드. `OrdersBindingSource_AddingNew` 이벤트 처리기의 코드는 다음과 같습니다.  
   

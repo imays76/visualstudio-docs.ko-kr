@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234483"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218421"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>데이터베이스에 데이터 저장(여러 테이블)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "49234483"
   
 2.  프로젝트 이름을 `UpdateMultipleTablesWalkthrough`로 지정합니다.  
   
-3.  선택 **Windows 응용 프로그램**를 선택한 후**확인**합니다. 자세한 내용은 [클라이언트 응용 프로그램](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)합니다.  
+3.  선택 **Windows 응용 프로그램**를 선택한 후 **확인**합니다. 자세한 내용은 [클라이언트 응용 프로그램](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)합니다.  
   
      합니다 **UpdateMultipleTablesWalkthrough** 프로젝트에 추가한 생성 **솔루션 탐색기**합니다.  
   
@@ -81,7 +81,7 @@ ms.locfileid: "49234483"
   
 2.  에 **데이터 원본** 창에서**새 데이터 소스 추가** 시작 하는 **데이터 소스 구성 마법사**합니다.  
   
-3.  에 **데이터 소스 형식 선택**화면에서 **데이터베이스**를 선택한 후**다음**합니다.  
+3.  에 **데이터 소스 형식 선택**화면에서 **데이터베이스**를 선택한 후 **다음**합니다.  
   
 4.  에 **데이터 연결 선택**화면 작업 중 하나를 수행 합니다.  
   
@@ -91,9 +91,9 @@ ms.locfileid: "49234483"
   
     -   선택 **새 연결** 열려는 합니다 **연결 추가/수정** 대화 상자.  
   
-5.  데이터베이스에서 암호를 요구 하는 경우 중요 한 데이터를 포함 하 여 선택한 옵션을 선택**다음**합니다.  
+5.  데이터베이스에서 암호를 요구 하는 경우 중요 한 데이터를 포함 하 여 선택한 옵션을 선택 **다음**합니다.  
   
-6.  에 **응용 프로그램 구성 파일에 연결 문자열을 저장**를 선택**다음**합니다.  
+6.  에 **응용 프로그램 구성 파일에 연결 문자열을 저장**를 선택 **다음**합니다.  
   
 7.  에 **데이터베이스 개체 선택**화면에서 확장 된 **테이블** 노드.  
   
@@ -127,7 +127,7 @@ ms.locfileid: "49234483"
      <xref:System.Windows.Forms.DataGridView> 컨트롤과 레코드 탐색에 사용되는 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>가 폼에 나타납니다. [OrdersTableAdapter](../data-tools/tableadapter-overview.md) 고 <xref:System.Windows.Forms.BindingSource> 구성 요소 트레이에 나타납니다.  
   
 ## <a name="addcode-to-update-the-database"></a>데이터베이스를 업데이트 하려면 Addcode  
- 호출 하 여 데이터베이스를 업데이트할 수는 `Update` 의 메서드를 **고객** 및 **주문** Tableadapter. 기본적으로 대 한 이벤트 처리기를**저장** 단추를<xref:System.Windows.Forms.BindingNavigator> 데이터베이스로 업데이트를 보내는 폼의 코드에 추가 됩니다. 이 절차에서는 올바른 순서로 업데이트를 보내는 코드를 수정 합니다. 이 참조 무결성 오류 발생 가능성을 제거 합니다. 또한 이 코드는 try-catch 블록에서 업데이트 호출을 래핑하여 오류 처리를 구현합니다. 응용 프로그램의 요구 사항에 맞게 코드를 수정할 수 있습니다.  
+ 호출 하 여 데이터베이스를 업데이트할 수는 `Update` 의 메서드를 **고객** 및 **주문** Tableadapter. 기본적으로 대 한 이벤트 처리기를 **저장** 단추를<xref:System.Windows.Forms.BindingNavigator> 데이터베이스로 업데이트를 보내는 폼의 코드에 추가 됩니다. 이 절차에서는 올바른 순서로 업데이트를 보내는 코드를 수정 합니다. 이 참조 무결성 오류 발생 가능성을 제거 합니다. 또한 이 코드는 try-catch 블록에서 업데이트 호출을 래핑하여 오류 처리를 구현합니다. 응용 프로그램의 요구 사항에 맞게 코드를 수정할 수 있습니다.  
   
 > [!NOTE]
 >  이해를 돕기 위해이 연습에는 트랜잭션을 사용 하지 않습니다. 그러나 두 업데이트 하는 경우 테이블 관련 트랜잭션 내에서 모든 업데이트 논리를 포함 합니다. 트랜잭션은 모든 변경 내용이 커밋되기 전에 모든 관련된 변경 내용이 데이터베이스에는 성공적으로 만드는 프로세스입니다. 자세한 내용은 [트랜잭션 및 동시성](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)합니다.  
@@ -145,7 +145,7 @@ ms.locfileid: "49234483"
   
 #### <a name="to-test-the-application"></a>응용 프로그램을 테스트하려면  
   
-1.  선택**F5**합니다.  
+1.  선택 **F5**합니다.  
   
 2.  각 테이블에 포함된 레코드 하나 이상의 데이터를 변경해 봅니다.  
   

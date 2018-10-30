@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926548"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220162"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Guid 및 Id의 Visual Studio 명령
 Visual Studio 통합된 개발 환경 (IDE)에 포함 된 명령의 GUID 및 ID 값은 Visual Studio SDK의 일부로 설치 되는.vsct 파일에서 정의 됩니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)합니다.  
@@ -57,7 +57,7 @@ Visual Studio 통합된 개발 환경 (IDE)에 포함 된 명령의 GUID 및 ID 
   
 -   같은 밑줄이 그어진 문자를 포함 하는 메뉴 항목의 **인쇄** 명령을 **파일** 나타나는 메뉴에서를 *P* 밑줄이 표시 됩니다.  
   
-     앰퍼샌드 뒤에 나오는 문자 (&) 문자 메뉴 항목 이름에 표시 되는 밑줄이 있습니다. 그러나 *.vsct* 파일은 xml에서는 앰퍼샌드 (&) 문자를 사용 하 여 특수 문자를 표시 하 고 표시할 앰퍼샌드로 철자가 같아야는 필요한  *&amp;amp;* 합니다. 따라서를 *.vsct* 파일을 **P**인쇄 명령으로 표시 됩니다  *&amp;a m p; 인쇄*합니다.  
+     앰퍼샌드 뒤에 나오는 문자 (&) 문자 메뉴 항목 이름에 표시 되는 밑줄이 있습니다. 그러나 *.vsct* 파일은 xml에서는 앰퍼샌드 (&) 문자를 사용 하 여 특수 문자를 표시 하 고 표시할 앰퍼샌드로 철자가 같아야는 필요한  *&amp;amp;* 합니다. 따라서를 *.vsct* 파일을 **인쇄** 명령으로 표시 됩니다  *&amp;a m p; 인쇄*합니다.  
   
 -   명령와 같은 동적 텍스트입니다 **저장** \<현재 파일 이름을\>, 및 동적 메뉴 항목, 항목 등에서 생성 합니다 **최근에 사용한 파일** 목록.  
   
