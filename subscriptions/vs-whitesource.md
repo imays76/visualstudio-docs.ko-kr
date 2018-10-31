@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 WhiteSource Bolt 구독을 활성
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 981d6a655a203a7d44728fa7d12761fba2918d76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935780"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 구독의 WhiteSource Bolt
 
@@ -22,49 +22,51 @@ ms.locfileid: "46542353"
 
 ## <a name="activation-steps"></a>활성화 단계
 
-1.  WhiteSource Bolt 혜택을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인하세요.
+1. WhiteSource Bolt 혜택을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인하세요.
 
-2.  도구 섹션에서 WhiteSource Bolt 타일을 찾고 혜택 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 혜택 타일](_img\vs-whitesource\vs-whitesource-tile.png)
+2. 도구 섹션에서 WhiteSource Bolt 타일을 찾고 혜택 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource 혜택 타일](_img/vs-whitesource/vs-whitesource-tile.png)
 
-2.  활성화 코드가 표시된 알림을 받게 됩니다.  **클립보드에 코드를 복사**한 다음 **활성화**를 클릭합니다.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 혜택 코드](_img\vs-whitesource\vs-whitesource-code.png)
+3. 활성화 코드가 표시된 알림을 받게 됩니다.  **클립보드에 코드를 복사**한 다음 **활성화**를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource 혜택 코드](_img/vs-whitesource/vs-whitesource-code.png)
 
-3.  WhiteSource 웹 페이지에서 **활성화** 단추를 클릭하거나 페이지의 **계정 활성화** 섹션까지 아래로 스크롤합니다.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 혜택 활성화](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
+4. WhiteSource 웹 페이지에서 **활성화** 단추를 클릭하거나 페이지의 **계정 활성화** 섹션까지 아래로 스크롤합니다.
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource 혜택 활성화](_img/vs-whitesource/vs-whitesource-activate-page-cropped.png)
 
-4.  페이지의 **계정 활성화** 섹션에서 4개 단계를 안내받습니다.
+5. 페이지의 **계정 활성화** 섹션에서 4개 단계를 안내받습니다.
 
-    - Microsoft Visual Studio 마켓플레이스에서 WhiteSource Bolt 확장을 [설치](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt)합니다. 확장을 설치할 수 있는 권한이 없는 경우 [Azure DevOps Services용 무료 확장 설치](/azure/devops/marketplace/install-vsts-extension?view=vsts)를 참조하세요.
+   - Microsoft Visual Studio 마켓플레이스에서 WhiteSource Bolt 확장을 [설치](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt)합니다. 확장을 설치할 수 있는 권한이 없는 경우 [Azure DevOps Services용 무료 확장 설치](/azure/devops/marketplace/install-vsts-extension?view=vsts)를 참조하세요.
 
 
-    Azure DevOps Services를 사용하는 경우 녹색 **설치** 단추를 클릭하거나 Team Foundation Server인 경우 **다운로드** 단추를 클릭합니다.  이 예에서는 Azure DevOps Services가 사용됩니다.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 혜택 확장 설치](_img\vs-whitesource\vs-whitesource-download-install.png)
+~~~
+Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - 다음으로, 사용할 Azure DevOps 조직을 선택하고 **확인**을 클릭합니다.  (아직 Azure DevOps Services를 설정하지 않은 경우 [혜택](https://my.visualstudio.com/benefits) 페이지에서 Azure DevOps Services 혜택을 활성화합니다.)
+- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
 
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 혜택 계정 확인](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
-    - 확장이 설치되어 사용할 준비가 되었는지 확인하는 메시지가 표시됩니다.  **시작**을 클릭하여 WhiteSource Bolt 페이지로 돌아가고 계속합니다.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 혜택 설치 완료](_img\vs-whitesource\vs-whitesource-install-complete.png)
+- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
+~~~
 
-5.  Azure DevOps 프로젝트 대시보드를 열고 **Azure Pipelines** 메뉴를 클릭한 후 **WhiteSource Bolt**를 선택합니다.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 혜택 확장 추가](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
+5. Azure DevOps 프로젝트 대시보드를 열고 **Azure Pipelines** 메뉴를 클릭한 후 **WhiteSource Bolt**를 선택합니다.
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource 혜택 확장 추가](_img/vs-whitesource/vs-whitesource-installed-cropped.png)
 
 6. WhiteSource Bolt 혜택 타일에서 활성화 코드를 붙여넣고 **활성화**를 클릭합니다. 각 활성화 코드는 하나의 프로젝트만 활성화하는 데 사용할 수 있습니다.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 혜택 활성화 코드](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource 혜택 활성화 코드](_img/vs-whitesource/vs-whitesource-activate-code-cropped.png)
 
-7.  이제 활성화가 완료되었으며, 남아 있는 구독 기간은 180일입니다.
+7. 이제 활성화가 완료되었으며, 남아 있는 구독 기간은 180일입니다.
 
-8.  WhiteSource Bolt 확장을 빌드 단계 중 하나로 추가해야 합니다.  [WhiteSource Bolt 페이지](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate)에서 사용 방법을 보여 주는 비디오가 제공됩니다.
+8. WhiteSource Bolt 확장을 빌드 단계 중 하나로 추가해야 합니다.  [WhiteSource Bolt 페이지](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate)에서 사용 방법을 보여 주는 비디오가 제공됩니다.
 
 9. 빌드를 실행하면 다음과 같은 포괄적인 보고서와 대시보드가 자동으로 생성됩니다.
     - 보안 취약성 대시보드
@@ -84,7 +86,7 @@ ms.locfileid: "46542353"
 | Visual Studio Dev Essentials | 해당 없음  | 사용할 수 없음 |해당 없음 |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup>  *포함:  Microsoft 파트너 네트워크(Enterprise).  제외: 기타 NFR(전매금지), VSIP(Visual Studio 업계 파트너), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Microsoft Valued Partner), RD(Region Director), MCT Software & Services, Microsoft 파트너 네트워크(Professional).*
+<sup>1</sup>  *포함:  Microsoft 파트너 네트워크(Enterprise).  제외: 기타 NFR(전매금지), VSIP(Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP(Microsoft Valued Professional), RD(Region Director), MCT Software & Services, Microsoft 파트너 네트워크(Professional).*
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 

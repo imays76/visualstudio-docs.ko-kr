@@ -1,7 +1,7 @@
 ---
 title: Python 코드 디버깅
 description: 중단점 설정, 단계별 실행, 값 검사, 예외 확인, 대화형 창에서 디버깅을 포함하여 특히 Python 코드에 대한 Visual Studio의 디버깅 기능 연습입니다.
-ms.date: 08/14/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626766"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101162"
 ---
 # <a name="debug-your-python-code"></a>Python 코드 디버그
 
@@ -25,7 +25,6 @@ Visual Studio에서는 실행 중인 프로세스에 연결하고, **조사식**
 또한 다음 시나리오별 디버깅 문서를 참조하세요.
 
 - [Linux 원격 디버깅](debugging-python-code-on-remote-linux-machines.md)
-- [Azure 원격 디버깅](debugging-remote-python-code-on-azure.md)
 - [Python/C++ 혼합 모드 디버깅](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [혼합 모드 디버깅 기호](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
@@ -227,9 +226,45 @@ ptvsd 설치를 관리하려면:
 
 1. 버전이 4.1.1a9(Visual Studio에서 번들된 버전)보다 낮은 경우 패키지의 오른쪽에 있는 **X**를 선택하여 이전 버전을 제거합니다. 그러면 Visual Studio는 번들된 버전을 사용합니다. (`pip uninstall ptvsd`를 사용하여 PowerShell에서 제거할 수도 있습니다.)
 
-1. 또는 ptvsd 패키지를 최신 버전으로 업데이트할 수 있습니다. 검색 상자에서 `ptvsd --upgrade -pre`를 입력한 다음, **명령 실행: pip install ptvsd --upgrade -pre**를 선택합니다. (PowerShell에서 동일한 명령을 사용할 수도 있습니다.)
+1. 또는 [문제 해결](#troubleshooting) 섹션의 지침에 따라 ptvsd 패키지를 최신 버전으로 업데이트할 수 있습니다.
 
-    ![Python 환경 창에서 업그레이드 명령 제공](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>문제 해결
+
+디버거에 문제가 있는 경우 먼저 다음과 같이 ptvsd의 버전을 업그레이드합니다.
+
+1. **Python 환경** 창에서 **패키지** 탭으로 이동합니다.
+
+1. 검색 상자에 `ptvsd --upgrade`를 입력한 다음, **명령 실행: pip install ptvsd --upgrade**를 선택합니다. (PowerShell에서 동일한 명령을 사용할 수도 있습니다.)
+
+    ![Python 환경 창에서 ptvsd upgrade 명령 제공](media/debugging-experimental-upgrade-ptvsd.png)
+
+문제가 계속되면 [PTVS GitHub 리포지토리](https://github.com/Microsoft/ptvs/issues)에 문제를 보고하세요.
+
+### <a name="enable-debugger-logging"></a>디버거 로깅 사용
+
+디버거 문제를 조사하는 동안 Microsoft에서 진단에 도움이 되는 디버거 로그를 사용하고 수집하도록 요청할 수 있습니다.
+
+다음 단계를 수행하면 현재 Visual Studio 세션에서 디버깅을 사용하도록 설정할 수 있습니다.
+
+1. **보기** > **다른 창** > **명령 창** 메뉴 명령을 사용하여 Visual Studio에서 명령 창을 엽니다.
+
+1. 다음 명령을 입력합니다.
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. 디버깅을 시작하고 문제를 재현하는 데 필요한 모든 단계를 진행합니다. 이 시간 동안 디버그 로그는 **출력** 창의 **디버그 어댑터 호스트 로그** 아래에 나타납니다. 그런 다음, 해당 창에서 로그를 복사하여 GitHub 문제, 전자 메일 등에 붙여넣을 수 있습니다.
+
+    ![출력 창의 디버거 로깅 출력](media/debugger-logging-output.png)
+
+1. Visual Studio가 중단되거나 달리 **출력** 창에 액세스할 수 없는 경우 Visual Studio를 다시 시작한 다음, 명령 창을 열고 다음 명령을 입력합니다.
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. 디버깅을 시작하고 문제를 다시 재현합니다. 그러면 `%temp%\DebugAdapterHostLog.txt`에서 디버거 로그를 찾을 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

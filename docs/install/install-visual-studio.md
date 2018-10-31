@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856173"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017 설치
 
@@ -63,11 +63,11 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 
 1. **다운로드** 폴더에서 다음 파일 중 하나와 일치하거나 비슷한 부트스트래퍼 파일을 두 번 클릭합니다.
 
-  * Visual Studio Enterprise용 **vs_enterprise.exe**
-  * Visual Studio Professional용 **vs_professional.exe**
-  * Visual Studio Community용 **vs_community.exe**  <br><br>
+   * Visual Studio Enterprise용 **vs_enterprise.exe**
+   * Visual Studio Professional용 **vs_professional.exe**
+   * Visual Studio Community용 **vs_community.exe**  <br><br>
 
-  사용자 계정 컨트롤 알림을 받으면 **예**를 클릭합니다.
+   사용자 계정 컨트롤 알림을 받으면 **예**를 클릭합니다.
 
 2. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://privacy.microsoft.com/privacystatement)에 동의하도록 요청하는 메시지가 표시됩니다. **계속**을 클릭합니다.
 
@@ -79,7 +79,7 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 
 1. **Visual Studio 설치** 화면에서 원하는 작업을 찾습니다.
 
- ![Visual Studio 2017 설정 대화 상자에서 작업을 선택합니다.](../install/media/install-visual-studio-community.png)
+   ![Visual Studio 2017 설정 대화 상자에서 작업을 선택합니다.](../install/media/install-visual-studio-community.png)
 
      예를 들어 ".NET 데스크톱 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
@@ -130,15 +130,17 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 
 ## <a name="step-8---start-developing"></a>8단계 - 개발 시작
 
-1. Visual Studio 설치가 완료되면 **시작** 단추를 클릭하여 [Visual Studio에서 개발을 시작](../ide/get-started-developing-with-visual-studio.md)합니다.
+1. Visual Studio 설치가 완료되면 **시작** 단추를 클릭하여 Visual Studio에서 개발을 시작합니다.
 
 2. **파일**, **새 프로젝트**를 차례로 클릭합니다.
 
-3. 프로젝트 형식을 선택합니다. <br><br>
-   예를 들어 [C++ 앱을 빌드](../ide/getting-started-with-cpp-in-visual-studio.md)하려면 **설치됨**을 클릭하고, **Visual C++** 를 펼친 다음, 빌드할 C++ 프로젝트 형식을 선택합니다. <br><br>
-   [C# 앱을 빌드](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)하려면 **설치됨**을 클릭하고, **Visual C#** 을 펼친 다음, 빌드할 C# 프로젝트 형식을 선택합니다.
+3. 프로젝트 형식을 선택합니다.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
+   예를 들어 [C++ 앱을 빌드](../ide/getting-started-with-cpp-in-visual-studio.md)하려면 **설치됨**을 클릭하고, **Visual C++** 를 확장한 다음, 빌드할 C++ 프로젝트 형식을 선택합니다.
+
+   [C# 앱을 빌드](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)하려면 **설치됨**을 클릭하고, **Visual C#** 을 확장한 다음, 빌드할 C# 프로젝트 형식을 선택합니다.
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 

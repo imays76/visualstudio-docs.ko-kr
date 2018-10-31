@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882394"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI에서 AI 모델 학습
 
@@ -27,16 +27,15 @@ Visual Studio Tools for AI에 통합되므로 Azure에서 동적으로 학습 �
 
 1. Visual Studio를 실행합니다. **AI 도구** 메뉴를 열고 **클러스터 선택**을 선택하여 **서버 탐색기**를 엽니다.
 
-    ![클러스터 선택기](media\train-model\select-cluster.png)
-
+    ![클러스터 선택기](media/train-model/select-cluster.png)
 
 2. **AI 도구**를 확장합니다. 사용자가 보유한 모든 Batch AI 리소스가 자동 검색되어 서버 탐색기에 표시됩니다.
 
-    ![샘플 갤러리](media\train-model\batchai.png)
+    ![샘플 갤러리](media/train-model/batchai.png)
 
 3. **보기 > 팀 탐색기...** 를 선택하여 GitHub 또는 Azure DevOps에 연결하거나 리포지토리를 복제할 수 있는 **팀 탐색기** 창을 엽니다.
 
-    ![Azure DevOps, GitHub를 표시하고 리포지토리를 복제하는 팀 탐색기 창](media\train-model\team-explorer.png)
+    ![Azure DevOps, GitHub를 표시하고 리포지토리를 복제하는 팀 탐색기 창](media/train-model/team-explorer.png)
 
 4. **로컬 Git 리포지토리** 아래의 URL 필드에 `https://github.com/Microsoft/samples-for-ai`를 입력하고, 복제된 파일에 대한 폴더를 입력하고, **복제**를 선택합니다.
 
@@ -45,20 +44,19 @@ Visual Studio Tools for AI에 통합되므로 Azure에서 동적으로 학습 �
 
 5. 복제가 완료되면 클릭 **파일 > 솔루션 열기 > 프로젝트 / 솔루션**을 클릭합니다.
 
-    ![샘플 갤러리](media\train-model\open-solution.png)
+    ![샘플 갤러리](media/train-model/open-solution.png)
 
-5. 리포지토리를 복제한 디렉터리에서 **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln**을 엽니다.
+6. 리포지토리를 복제한 디렉터리에서 **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln**을 엽니다.
 
-    ![샘플 갤러리](media\train-model\tensorflowexamples.png)
+    ![샘플 갤러리](media/train-model/tensorflowexamples.png)
 
-5. MNIST 프로젝트를 **시작 프로젝트**로 설정
+7. MNIST 프로젝트를 **시작 프로젝트**로 설정
 
-    ![샘플 갤러리](media\train-model\mnist-startup.png)
+    ![샘플 갤러리](media/train-model/mnist-startup.png)
 
-1. ** **MNIST 프로젝트를 마우스 오른쪽 단추로 클릭하고 **작업 제출**
+8. <strong>**MNIST 프로젝트를 마우스 오른쪽 단추로 클릭하고 **작업 제출</strong>
 
-    ![샘플 갤러리](media\train-model\submit-job.png)
+    ![샘플 갤러리](media/train-model/submit-job.png)
+9. **Azure Batch AI** 클러스터를 선택한 다음 **가져오기**를 클릭합니다. `AzureBatchAI_TF_MNIST.json` 파일을 선택하여 사용할 Docker Image 같은 일부 기본 값을 신속하게 입력합니다. 그런 다음 **제출**을 클릭합니다.
 
-1. **Azure Batch AI** 클러스터를 선택한 다음 **가져오기**를 클릭합니다. `AzureBatchAI_TF_MNIST.json` 파일을 선택하여 사용할 Docker Image 같은 일부 기본 값을 신속하게 입력합니다. 그런 다음 **제출**을 클릭합니다.
-
-    ![샘플 갤러리](media\train-model\submit-batch.png)
+    ![샘플 갤러리](media/train-model/submit-batch.png)

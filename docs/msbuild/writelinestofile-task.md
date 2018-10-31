@@ -1,7 +1,7 @@
 ---
 title: WriteLinesToFile 작업 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341812"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228840"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 작업
 지정된 항목의 경로를 지정된 텍스트 파일에 씁니다.  
@@ -38,8 +38,9 @@ ms.locfileid: "39341812"
 |`File`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 항목을 쓸 파일을 지정합니다.|  
 |`Lines`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 파일에 쓸 항목을 지정합니다.|  
 |`Overwrite`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업에서 파일의 모든 기존 내용을 덮어씁니다.|  
-|`Encoding`|선택적 `String` 매개 변수입니다.<br /><br /> 문자 인코딩을 선택합니다(예: "Unicode").  <xref:System.Text.Encoding>을 참조하십시오.|  
-  
+|`Encoding`|선택적 `String` 매개 변수입니다.<br /><br /> 문자 인코딩을 선택합니다(예: "Unicode").  <xref:System.Text.Encoding>을 참조하세요.|  
+|`WriteOnlyWhenDifferent`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면, 지정한 대상 파일(있는 경우)을 먼저 읽고 작업에서 기록했어야 하는 내용과 비교합니다. 동일한 경우 파일이 디스크에 기록되지 않고 타임스탬프가 유지됩니다.|  
+
 ## <a name="remarks"></a>설명  
  `Overwrite`가 `true`인 경우 새 파일을 만들고 파일에 내용을 쓴 다음 파일을 닫습니다. 대상 파일이 이미 있으면 덮어씁니다. `Overwrite`가 `false`인 경우 콘텐츠를 파일에 추가합니다. 대상 파일이 아직 없으면 만듭니다.  
   

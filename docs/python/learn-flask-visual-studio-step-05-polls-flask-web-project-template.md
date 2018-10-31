@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909006"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5단계: 설문조사 Flask 웹 프로젝트 템플릿 사용
 
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-`repository.add_sample_polls()`에 대한 호출은 선택한 데이터 저장소의 특정 `Repository` 구현 중 하나에서 종료됩니다. 각 구현에서는 *models\__init__.py*에 있는 `_load_samples_json` 메서드를 호출하여 *models\samples.json* 파일을 메모리에 로드한 다음, 해당 데이터를 반복하여 데이터 저장소에 필요한 `Poll` 및 `Choice` 개체를 만듭니다.
+`repository.add_sample_polls()`에 대한 호출은 선택한 데이터 저장소의 특정 `Repository` 구현 중 하나에서 종료됩니다. 각 구현에서는 *models\_\_init\_\_.py*에 있는 `_load_samples_json` 메서드를 호출하여 *models\samples.json* 파일을 메모리에 로드한 다음, 해당 데이터를 반복하여 데이터 저장소에 필요한 `Poll` 및 `Choice` 개체를 만듭니다.
 
 해당 프로세스가 완료되면 `seed` 메서드의 `redirect('/')` 문이 홈 페이지로 다시 이동합니다. 이제 `repository.get_polls`가 데이터 개체를 반환하므로 *templates\index.html*의 조건부 태그에서 설문 조사가 포함된 테이블을 렌더링합니다.
 
@@ -352,11 +352,8 @@ def results(key):
 
 개발 컴퓨터에서 웹앱을 실행하는 것은 고객에게 앱을 제공하기 위한 과정의 한 단계일 뿐입니다. 다음 단계에는 다음과 같은 작업이 포함될 수 있습니다.
 
-- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. Flask 앱에 필요한 특정 변경 내용이 포함된 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
+- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
 
 - PostgreSQL, MySQL 및 SQL Server와 같은 다른 프로덕션 수준 데이터 저장소(모두 Azure에서 호스팅할 수 있음)를 사용하는 리포지토리 구현을 추가합니다. 또한 [Python용 Azure SDK](azure-sdk-for-python.md)를 사용하여 Cosmos DB뿐만 아니라 테이블 및 Blob과 같은 Azure 저장소 서비스 작업을 수행할 수도 있습니다.
 
-- Azure Pipelines와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등에서의 소스 제어 작업 외에 Azure Test Plans에서 릴리스의 필수 구성 요소로 단위 테스트를 자동으로 실행하도록 하고, 프로덕션에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps Services는 App Insights와 같은 모니터링 솔루션과 통합되며 Agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 다음을 참조하세요.
-
-  - [Create a CI/CD pipeline for Python with Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)(Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기)
-  - [Python development in Azure with Visual Studio Team Services (video, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)(Visual Studio Team Services를 사용하여 Azure에서 Python 개발(비디오, 11분 21초)).
+- VSTS(Visual Studio Team Services)와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. VSTS, GitHub 등에서의 소스 제어 작업 외에 VSTS에서 릴리스의 필수 구성 요소로 단위 테스트를 자동으로 실행하도록 하고, 프로덕션에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 VSTS는 App Insights와 같은 모니터링 솔루션과 통합되며 Agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts)를 참조하세요.

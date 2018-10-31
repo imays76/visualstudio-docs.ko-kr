@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ad905581252bd2af7307292d617669d00320c398
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029029"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101006"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 응용 프로그램 프로젝트 템플릿
 
@@ -34,7 +34,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 앞에서 설명한 일반 **웹 프로젝트** 템플릿은 코드가 없고 Python 프로젝트라는 사실 외에 다른 가정이 없는 빈 Visual Studio 프로젝트만 제공합니다. **Azure Cloud Service** 템플릿에 대한 자세한 내용은 [Python용 Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요.
 
-다른 모든 템플릿은 Bottle, Flask 또는 Django 웹 프레임워크를 기반으로 하며, 다음 섹션에 설명된 대로 세 개의 일반 그룹으로 나뉩니다. 이러한 템플릿으로 만든 앱에는 충분한 코드가 포함되어 로컬에서 앱을 실행하고 디버그할 수 있습니다. 또한 각 항목은 [Azure App Service에 배포](publishing-python-web-applications-to-azure-from-visual-studio.md)하는 데 필요한.[WSGI 앱 개체](http://www.python.org/dev/peps/pep-3333/)(python.org)를 제공합니다.
+다른 모든 템플릿은 Bottle, Flask 또는 Django 웹 프레임워크를 기반으로 하며, 다음 섹션에 설명된 대로 세 개의 일반 그룹으로 나뉩니다. 이러한 템플릿으로 만든 앱에는 충분한 코드가 포함되어 로컬에서 앱을 실행하고 디버그할 수 있습니다. 또한 각 항목은 프로덕션 웹 서버에서 사용하는 데 필요한 [WSGI 앱 개체](http://www.python.org/dev/peps/pep-3333/)(python.org)를 제공합니다.
 
 ### <a name="blank-group"></a>빈 그룹
 

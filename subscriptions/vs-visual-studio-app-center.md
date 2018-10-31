@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Visual Studio App Center 혜택�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940985"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Visual Studio App Center
 
@@ -41,6 +41,7 @@ Visual Studio App Center를 시작하는 것은 간단합니다.
     > ![VS App Center 포털](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>자격
+
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 연간 클라우드, 월간 클라우드)   | VL, Azure, 일반 정품, NFR<sup>1</sup> | Included       |  예          |
@@ -50,7 +51,7 @@ Visual Studio App Center를 시작하는 것은 간단합니다.
 | Visual Studio Dev Essentials | 해당 없음  | Included                                                            |예 |
 
 
-<sup>1</sup> *포함: NFR(전매금지), FTE, VSIP(Visual Studio 업계 파트너), Imagine, MPN(Microsoft 파트너 네트워크), MCT Software & Services, MCT Software & Services Developer, BizSpark,  MVP(Microsoft Valued Partner), RD(Region Director).*
+<sup>1</sup> 포함: NFR(전매금지), FTE, VSIP(Visual Studio Industry Partner), Imagine, MPN(Microsoft 파트너 네트워크), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP(Microsoft Valued Professional), RD(Region Director).
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 

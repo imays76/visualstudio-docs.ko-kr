@@ -1,24 +1,32 @@
 ---
 title: C++ IntelliSense
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124907"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879852"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense 기능
 
 IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 이름입니다. IntelliSense for C++는 C++ 프로젝트의 일부인 파일의 경우와 마찬가지로 독립 실행형 파일에도 사용할 수 있습니다. 플랫폼 간 프로젝트에서는 Android 또는 iOS 컨텍스트에 있는 경우에도 공유 코드 프로젝트의 *.cpp* 및 *.c* 파일에서 일부 IntelliSense 기능을 사용할 수 있습니다.
+
+이 문서에서는 C++ IntelliSense 기능을 간략하게 설명합니다. IntelliSense에 대한 프로젝트 구성 방법 및 문제 해결 방법에 대한 자세한 내용은 [IntelliSense에 대한 C++ 프로젝트 구성](visual-cpp-intellisense-configuration.md)을 참조하세요.
+
+## <a name="intellisense-features-in-c"></a>C++의 IntelliSense 기능
+
+IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 이름입니다. 사람마다 편리성에 대한 생각이 다르기 때문에 거의 모든 IntelliSense 기능은 **텍스트 편집기** > **C/C++** > **고급** 아래에 있는 **옵션** 대화 상자에서 사용하거나 사용하지 않도록 설정할 수 있습니다. **옵션** 대화 상자는 메뉴 모음의 **도구** 메뉴에서 사용할 수 있습니다.
+
+![도구 옵션 대화 상자](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 다음 이미지에 표시된 메뉴 항목 및 바로 가기 키를 사용하여 IntelliSense에 액세스할 수 있습니다.
 
@@ -101,3 +109,4 @@ Android로 활성 프로젝트를 변경한 경우 물결 기호가 변경됩니
 ## <a name="see-also"></a>참고 항목
 
 - [IntelliSense 사용](../ide/using-intellisense.md)
+- [IntelliSense에 대한 C++ 프로젝트 구성](visual-cpp-intellisense-configuration.md)

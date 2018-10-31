@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 EditorConfig에 대한 .NET 코딩 규칙 설정
+title: EditorConfig에 대한 .NET 코딩 규칙 설정
 ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
@@ -18,18 +18,20 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a9b1b03050081659cac08c1b2c92c49f2c72273d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: e4cb16af7fe70388f85fa5b3beb48ee97f897f72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863780"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig에 대한 .NET 코딩 규칙 설정
 
 Visual Studio 2017에서는 [EditorConfig](../ide/create-portable-custom-editor-options.md) 파일을 사용하여 코드베이스에서 일관된 코드 스타일을 정의하고 유지 관리할 수 있습니다. EditorConfig에는 `indent_style` 및 `indent_size`와 같은 여러 가지 주요 서식 지정 속성이 포함됩니다. Visual Studio에서 EditorConfig 파일을 사용하여 .NET 코딩 규칙 설정을 구성할 수도 있습니다. EditorConfig 파일을 사용하면 개별 .NET 코딩 규칙을 활성화 또는 비활성화하고 (심각도 수준을 통해) 규칙을 적용하려는 수준을 구성할 수 있습니다. EditorConfig를 사용하여 코드 베이스에 일관성을 적용하는 방법에 대한 자세한 내용을 보려면 [휴대용, 사용자 지정 편집기 옵션 만들기](../ide/create-portable-custom-editor-options.md)를 참고하세요.
 
-예제 .editorconfig에 대해서는 이 문서의 뒷부분을 참조하세요.
+[예제 .editorconfig 파일](#example-editorconfig-file)은 이 문서의 끝부분을 참조하세요.
+
+## <a name="convention-categories"></a>규칙 범주
 
 지원되는 .NET 코딩 규칙 범주에는 세 가지가 있습니다.
 
@@ -63,7 +65,7 @@ Visual Studio 2017에서는 [EditorConfig](../ide/create-portable-custom-editor-
 `warning` | 이 스타일 규칙을 위반하는 경우 컴파일러 경고가 표시됩니다.
 `error` | 이 스타일 규칙을 위반하는 경우 컴파일러 오류가 표시됩니다.
 
-다음 목록에서는 허용되는 언어 규칙을 보여줍니다.
+다음 목록에서는 허용되는 언어 규칙을 보여 줍니다.
 
 - .NET 코드 스타일 설정
     - ["This." 및 "Me." 한정자](#this_and_me)
@@ -132,7 +134,7 @@ Visual Studio 2017에서는 [EditorConfig](../ide/create-portable-custom-editor-
 
 이 스타일 규칙(규칙 ID IDE0003 및 IDE0009)은 필드, 속성, 메서드 또는 이벤트에 적용할 수 있습니다. 값이 **true**이면 C#에서 `this.` 또는 Visual Basic에서 `Me.`를 코드 기호 앞에 추가하는 것이 좋습니다. 값이 **false**이면 `this.` 또는 `Me.`을 코드 요소 앞에 추가하지 _않는_ 것이 좋습니다.
 
-다음 표에서는 규칙 이름, 적용 가능한 프로그래밍 언어 및 기본값을 보여줍니다.
+다음 표에서는 규칙 이름, 적용 가능한 프로그래밍 언어 및 기본값을 보여 줍니다.
 
 | 규칙 이름 | 해당 언어 | Visual Studio 기본값 |
 | ----------- | -------------------- | ----------------------|
@@ -248,7 +250,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 지역 변수, 메서드 매개 변수 및 클래스 멤버 또는 멤버 액세스 식을 입력할 별도 규칙으로 이 스타일 규칙을 적용할 수 있습니다. 값이 **true**인 경우 자신을 나타내는 키워드를 가진 형식에 형식 이름(예: `Int32`) 대신 언어 키워드(예: `int` 또는 `Integer`)를 사용하는 것이 좋습니다. 값이 **false**인 경우 언어 키워드 대신 형식 이름을 사용하는 것이 좋습니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어 및 기본값을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어 및 기본값을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 |
 | --------- | ------- | -------------------- | ----------------------|
@@ -314,10 +316,10 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 이 섹션의 스타일 규칙은 액세스 가능성 한정자 요구, 원하는 한정자 정렬 순서 지정 및 읽기 전용 한정자 요구를 포함한 한정자 기본 설정과 관련이 있습니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | dotnet_style_require_accessibility_modifiers | IDE0040 | C# 및 Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | 공용, 개인, 보호됨, 내부, 고정, 외부, 새로운, 가상, 추상, 봉인됨, 재정의, 읽기 전용, 안전하지 않음, 변동, 비동기: 없음 | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | 부분, 기본, 개인, 보호됨, 공용, 친구, NotOverridable, 재정의 가능, MustOverride, 오버로드, 재정의, MustInherit, NotInheritable, 고정, 공유, 그림자, 읽기 전용, 쓰기 전용, 차원, Const, WithEvents, 확대, 축소, 사용자 지정, 비동기: 없음 | 15.5 |
@@ -422,7 +424,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 이 섹션의 스타일 규칙은 산술, 관계형 및 기타 이진 연산자의 괄호 사용을 비롯한 괄호 기본 설정과 관련이 있습니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
 | --------- | ------- | -------------------- | ----------------------| ---- |
@@ -456,7 +458,7 @@ Dim v = a + b * c
 
 **dotnet\_style\_parentheses\_in\_relational\_binary_operators**
 
-- 이 규칙이 **always_for_clarity**로 설정된 경우 관계형 연산자(`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) 우선 순위를 명확하게 지정하도록 괄호를 사용하는 것이 좋습니다.
+- 이 규칙이 **always_for_clarity**로 설정된 경우 괄호를 사용하여 관계 연산자(`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) 우선 순위를 명확하게 지정하는 것이 좋습니다.
 - 이 규칙이 **never_if_unnecessary**로 설정된 경우 관계형 연산자(`>`, `<`, `<=`, `>=`, `is`, `as`, `==`, `!=`) 우선 순위가 명확하면 괄호를 포함하지 않도록 하는 것이 좋습니다.
 
 코드 예제:
@@ -538,7 +540,7 @@ dotnet_style_parentheses_in_other_operators = never_if_unnecessary:none
 
 이 섹션의 스타일 규칙은 개체 이니셜라이저, 컬렉션 이니셜라이저, 명시적 또는 유추된 튜플 이름 및 유추된 익명의 형식을 사용하는 식 수준 기본 설정에 대해 다룹니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
 | --------- | ------- | -------------------- | ----------------------| ---- |
@@ -669,7 +671,6 @@ var anon = new { age, name };
 
 // dotnet_style_prefer_inferred_anonymous_type_member_names = false
 var anon = new { age = age, name = name };
-
 ```
 
 ```vb
@@ -678,13 +679,12 @@ Dim anon = New With {name, age}
 
 ' dotnet_style_prefer_inferred_anonymous_type_member_names = false
 Dim anon = New With {.name = name, .age = age}
-
 ```
 
 **dotnet\_style\_prefer\_auto\_properties**
 
-- 이 규칙이 **true**로 설정된 경우 개인 지원 필드가 있는 속성보다 자동 속성을 선호합니다.
-- 이 규칙이 **false**로 설정된 경우 자동 속성보다 개인 지원 필드가 있는 속성을 선호합니다.
+- 이 규칙이 **true**로 설정된 경우 개인 지원 필드가 있는 속성보다 자동 속성을 사용하는 것이 좋습니다.
+- 이 규칙이 **false**로 설정된 경우 자동 속성보다 개인 지원 필드가 있는 속성을 사용하는 것이 좋습니다.
 
 코드 예제:
 
@@ -838,7 +838,7 @@ dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 
 이 섹션에서 스타일 규칙은 Null 검사 기본 설정과 관련이 있습니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 프로그래밍 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
 | --------- | ------- | -------------------- | ----------------------| ---- |
@@ -912,7 +912,7 @@ dotnet_style_null_propagation = true:suggestion
 
 이 섹션의 스타일 규칙(규칙 ID IDE0007 및 IDE0008)은 [var](/dotnet/csharp/language-reference/keywords/var) 키워드 및 변수 선언에서 명시적 형식을 사용하는 방법을 다룹니다. 이 규칙은 형식이 명확할 때 기본 제공 형식 및 다른 위치에 개별적으로 적용할 수 있습니다.
 
-다음 표에서는 규칙 이름, 적용 가능한 프로그래밍 언어 및 기본값을 보여줍니다.
+다음 표에서는 규칙 이름, 적용 가능한 프로그래밍 언어 및 기본값을 보여 줍니다.
 
 | 규칙 이름 | 해당 언어 | Visual Studio 기본값 |
 | ----------- | -------------------- | ----------------------|
@@ -979,10 +979,10 @@ csharp_style_var_elsewhere = true:suggestion
 
 이 섹션의 스타일 규칙은 논리가 단일 식으로 구성되는 경우 [식 본문 멤버](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members)를 사용하는 방법을 다룹니다. 이 규칙은 메서드, 생성자, 연산자, 속성, 인덱서 및 접근자에 적용할 수 있습니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | 15.3 |
 | csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | 15.3 |
 | csharp_style_expression_bodied_operators | IDE0023 및 IDE0024 | C# 7.0+ | false:none | 15.3 |
@@ -1129,7 +1129,7 @@ csharp_style_expression_bodied_accessors = true:suggestion
 
 이 섹션의 스타일 규칙은 C#에서 [패턴 일치](/dotnet/csharp/pattern-matching)를 사용하는 방법을 다룹니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전 및 기본값을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전 및 기본값을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 |
 | --------- | ------- | -------------------- | ----------------------|
@@ -1180,7 +1180,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
 이 스타일 규칙은 `out` 변수가 인라인을 선언했는지 여부에 대해 다룹니다. C# 7부터 별도 변수 선언이 아니라 [메서드 호출의 인수 목록에서 out 변수를 선언](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument)할 수 있습니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전 및 기본값을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전 및 기본값을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 |
 | --------- | -------- | -------------------- | ----------------------|
@@ -1214,10 +1214,10 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 이 섹션의 스타일 규칙은 [기본 식](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), 분해된 변수 및 익명 함수에 대한 로컬 함수의 사용을 비롯한 식 수준 기본 설정과 관련이 있습니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1+ | true:suggestion | 15.3 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0+ | true:suggestion | 15.5 |
 | csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0+ | true:suggestion | 15.5 |
@@ -1298,7 +1298,7 @@ csharp_style_pattern_local_over_anonymous_function = true:suggestion
 
 이러한 스타일 규칙은 `throw` 식 또는 `throw` 문 사용을 비롯한 `null` 검사 관련 구문 및 [람다 식](/dotnet/csharp/lambda-expressions)을 호출할 때를 null 검사를 수행하거나 조건부 병합 연산자(`?.`)를 사용할지에 대해 다룹니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전 및 기본값을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전 및 기본값을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 |
 | --------- | ------- | -------------------- | ----------------------|
@@ -1349,10 +1349,10 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 이 스타일 규칙은 코드 블록을 묶는 데 중괄호 `{ }`를 사용하는 방법을 다룹니다.
 
-다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 규칙 ID, 적용 가능한 언어 버전, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 규칙 ID | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_braces | IDE0011 | C# | true:none | 15.3 |
 
 **csharp\_prefer\_braces**
@@ -1386,7 +1386,7 @@ csharp_prefer_braces = true:none
 
 **true**(이 스타일 선호) 또는 **false**(이 스타일 선호하지 않음)를 지정합니다. 심각도를 지정하지 않습니다. 몇 가지 규칙의 경우 true 또는 false 대신 규칙을 적용할 시기와 위치를 설명하는 다른 값을 지정합니다.
 
-다음 목록은 Visual Studio에서 사용할 수 있는 서식 지정 규칙을 보여줍니다.
+다음 목록은 Visual Studio에서 사용할 수 있는 서식 지정 규칙을 보여 줍니다.
 
 - .NET 서식 지정 설정
     - [using 구성](#usings)
@@ -1428,11 +1428,11 @@ csharp_prefer_braces = true:none
 
 이 서식 설정 규칙은 다른 using 지시문과 관련하여 System.* using 지시문의 배치를 다룹니다.
 
-다음 표에서는 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| dotnet_sort_system_directives_first |  C# 및 Visual Basic | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| dotnet_sort_system_directives_first | C# 및 Visual Basic | true | 15.3 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1469,17 +1469,17 @@ dotnet_sort_system_directives_first = true
 
 이러한 서식 지정 규칙은 코드의 서식을 지정하기 위해 새 줄을 사용합니다.
 
-다음 표에서는 "새 줄" 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 "새 줄" 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_new_line_before_open_brace |  C# | 모두 | 15.3  |
-| csharp_new_line_before_else |  C# | true | 15.3  |
-| csharp_new_line_before_catch |  C# | true | 15.3  |
-| csharp_new_line_before_finally |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_object_initializers |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_anonymous_types |  C# | true | 15.3  |
-| csharp_new_line_between_query_expression_clauses |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_new_line_before_open_brace | C# | 모두 | 15.3 |
+| csharp_new_line_before_else | C# | true | 15.3 |
+| csharp_new_line_before_catch | C# | true | 15.3 |
+| csharp_new_line_before_finally | C# | true | 15.3 |
+| csharp_new_line_before_members_in_object_initializers | C# | true | 15.3 |
+| csharp_new_line_before_members_in_anonymous_types | C# | true | 15.3 |
+| csharp_new_line_between_query_expression_clauses | C# | true | 15.3 |
 
 **csharp\_new\_line\_before\_open_brace**
 
@@ -1590,7 +1590,7 @@ try {
 
 **csharp\_new\_line\_before\_members\_in\_object_initializers**
 
-- 이 규칙을 **true**로 설정하면 개체 이니셜라이저의 멤버를 별도 줄에 배치해야 합니다.
+- 이 규칙이 **true**로 설정된 경우 개체 이니셜라이저의 멤버를 별도 줄에 배치해야 합니다.
 - 이 규칙을 **false**로 설정하면 개체 이니셜라이저의 멤버를 동일한 줄에 배치해야 합니다.
 
 코드 예제:
@@ -1668,13 +1668,13 @@ csharp_new_line_between_query_expression_clauses = true
 
 이러한 서식 지정 규칙은 코드의 서식을 지정하기 위해 들여쓰기를 사용합니다.
 
-다음 표에서는 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_indent_case_contents |  C# | true | 15.3  |
-| csharp_indent_switch_labels |  C# | true | 15.3  |
-| csharp_indent_labels |  C# | no_change | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_indent_case_contents | C# | true | 15.3 |
+| csharp_indent_switch_labels | C# | true | 15.3 |
+| csharp_indent_labels | C# | no_change | 15.3 |
 
 **csharp\_indent\_case_contents**
 
@@ -1813,21 +1813,21 @@ csharp_indent_labels = flush_left
 
 이러한 서식 지정 규칙은 코드의 서식을 지정하기 위해 공백 문자를 사용합니다.
 
-다음 표에서는 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_space_after_cast |  C# | False | 15.3  |
-| csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
-| csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | False | 15.3  |
-| csharp_space_between_method_call_parameter_list_parentheses |  C# | False | 15.3  |
-| csharp_space_between_parentheses |  C# | False | 15.3  |
-| csharp_space_before_colon_in_inheritance_clause |  C# | true | 15.7  |
-| csharp_space_after_colon_in_inheritance_clause |  C# | true | 15.7  |
-| csharp_space_around_binary_operators |  C# | before_and_after | 15.7  |
-| csharp_space_between_method_declaration_empty_parameter_list_parentheses |  C# | False | 15.7  |
-| csharp_space_between_method_call_name_and_opening_parenthesis |  C# | False | 15.7  |
-| csharp_space_between_method_call_empty_parameter_list_parentheses |  C# | False | 15.7  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_space_after_cast | C# | False | 15.3 |
+| csharp_space_after_keywords_in_control_flow_statements | C# | true | 15.3 |
+| csharp_space_between_method_declaration_parameter_ list_parentheses | C# | False | 15.3 |
+| csharp_space_between_method_call_parameter_list_parentheses | C# | False | 15.3 |
+| csharp_space_between_parentheses | C# | False | 15.3 |
+| csharp_space_before_colon_in_inheritance_clause | C# | true | 15.7 |
+| csharp_space_after_colon_in_inheritance_clause | C# | true | 15.7 |
+| csharp_space_around_binary_operators | C# | before_and_after | 15.7 |
+| csharp_space_between_method_declaration_empty_parameter_list_parentheses | C# | False | 15.7 |
+| csharp_space_between_method_call_name_and_opening_parenthesis | C# | False | 15.7 |
+| csharp_space_between_method_call_empty_parameter_list_parentheses | C# | False | 15.7 |
 
 **csharp\_space\_after_cast**
 
@@ -2116,12 +2116,12 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 
 이러한 서식 설정 규칙은 문 및 코드 블록에 단일 줄 및 별도 줄을 사용하는 것을 다룹니다.
 
-다음 표에서는 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여줍니다.
+다음 표에서는 규칙 이름, 적용 가능한 언어, 기본값 및 먼저 지원되는 Visual Studio의 버전을 보여 줍니다.
 
 | 규칙 이름 | 해당 언어 | Visual Studio 기본값 | Visual Studio 2017 버전 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_preserve_single_line_statements |  C# | true | 15.3  |
-| csharp_preserve_single_line_blocks |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_preserve_single_line_statements | C# | true | 15.3 |
+| csharp_preserve_single_line_blocks | C# | true | 15.3 |
 
 **csharp_preserve_single_line_statements**
 
@@ -2222,8 +2222,8 @@ dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
-dotnet_prefer_inferred_tuple_names = true:suggestion
-dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_conditional_expression_over_assignment = true:silent
 dotnet_style_prefer_conditional_expression_over_return = true:silent

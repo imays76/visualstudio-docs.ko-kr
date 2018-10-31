@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: feedf1789e4ee3f6b7e04966d945a5a2638242c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821112"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 도구 집합(ToolsVersion)
 MSBuild는 응용 프로그램을 빌드하기 위한 작업, 대상 및 도구로 구성된 도구 집합을 사용합니다. 일반적으로 MSBuild 도구 집합에는 *microsoft.common.tasks* 파일, *microsoft.common.targets* 파일 및 컴파일러(예: *csc.exe* 및 *vbc.exe*)가 포함되어 있습니다. 대부분의 도구 집합을 사용하여 응용 프로그램을 둘 이상의 .NET Framework 버전 및 둘 이상의 시스템 플랫폼으로 컴파일할 수 있습니다. 그러나 MSBuild 2.0 도구 집합을 사용해서는 .NET Framework 2.0만 대상으로 할 수 있습니다.  
@@ -40,7 +40,7 @@ MSBuild는 응용 프로그램을 빌드하기 위한 작업, 대상 및 도구�
   
  `ToolsVersion` 값이 프로젝트 파일에 정의되면 MSBuild는 해당 값을 사용하여 프로젝트에 사용 가능한 도구 집합 속성의 값을 확인합니다. 도구 집합 속성 하나는 `$(MSBuildToolsPath)`이며, 이 속성은 .NET Framework 도구의 경로를 지정합니다. 이 도구 집합 속성(또는 `$(MSBuildBinPath)`)만 필수입니다.  
   
- Visual Studio 2013부터 MSBuild 도구 집합 버전은 Visual Studio 버전 번호와 동일합니다. MSBuild는 프로젝트 파일에 지정된 도구 집합 버전과 관계없이 Visual Studio 내에서와 명령줄에서 기본값인 이 도구 집합으로 설정됩니다.  /ToolsVersion 플래그를 사용하여 이 동작을 재정의할 수 있습니다. 자세한 내용은 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.  
+ Visual Studio 2013부터 MSBuild 도구 집합 버전은 Visual Studio 버전 번호와 동일합니다. MSBuild는 프로젝트 파일에 지정된 도구 집합 버전과 관계없이 Visual Studio 내에서와 명령줄에서 기본값인 이 도구 집합으로 설정됩니다.  -ToolsVersion 플래그를 사용하여 이 동작을 재정의할 수 있습니다. 자세한 내용은 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.  
   
  다음 예제에서 MSBuild는 예약된 속성 `MSBuildToolsPath`를 사용하여 *Microsoft.CSharp.targets* 파일을 찾습니다.  
   
@@ -61,9 +61,9 @@ MSBuild는 응용 프로그램을 빌드하기 위한 작업, 대상 및 도구�
 ## <a name="toolset-implementation"></a>도구 집합 구현  
  도구 집합을 구성하는 다양한 도구, 대상 및 작업의 경로를 선택하여 도구 집합을 구현합니다. MSBuild가 정의하는 도구 집합의 도구는 다음 소스에서 가져옵니다.  
   
--   .NET Framework 폴더  
+- .NET Framework 폴더  
   
--   추가 관리되는 도구  
+- 추가 관리되는 도구  
   
   관리되는 도구에는 *ResGen.exe* 및 *TlbImp.exe*가 포함됩니다.  
 

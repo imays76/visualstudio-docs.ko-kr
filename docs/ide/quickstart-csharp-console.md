@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2766af365625890a0769f298d1801179da9c7e07
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029340"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443417"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 C# 콘솔 앱 만들기
 
@@ -29,7 +29,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-먼저 C# 응용 프로그램 프로젝트를 만듭니다. 아무것도 추가하지 않아도 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
+먼저 C# 응용 프로그램 프로젝트를 만듭니다. 아무 것도 추가하지 않아도 필요한 모든 템플릿 파일과 함께 프로젝트 형식이 제공됩니다.
 
 1. Visual Studio 2017을 엽니다.
 
@@ -39,9 +39,9 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 
    ![Visual Studio IDE의 새 프로젝트 대화 상자의 콘솔 앱(.NET Core) 프로젝트 템플릿](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     **콘솔 앱(.NET Core)** 템플릿 프로젝트가 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다.
+     **콘솔 앱(.NET Core)** 템플릿 프로젝트가 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 선택합니다.
 
-   ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크를 클릭합니다.](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
+   ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크 선택](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
      Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
@@ -75,9 +75,9 @@ C# 프로젝트 템플릿을 선택하고 프로젝트 이름을 지정한 후�
 
 ## <a name="run-the-application"></a>응용 프로그램 실행
 
-1. 도구 모음에서 **HelloWorld** 단추를 클릭하여 응용 프로그램을 디버그 모드로 실행합니다. 또는 **F5** 키를 누르면 됩니다.
+1. 도구 모음에서 **HelloWorld** 단추를 선택하여 응용 프로그램을 디버그 모드로 실행합니다. 또는 **F5** 키를 누르면 됩니다.
 
-   ![Hello World 단추를 클릭하여 도구 모음에서 프로그램을 실행합니다.](../ide/media/csharp-console-hello-world-button.png)
+   ![Hello World 단추를 선택하여 도구 모음에서 앱을 실행합니다.](../ide/media/csharp-console-hello-world-button.png)
 
 1. 콘솔 창에 앱을 표시합니다.
 
@@ -98,4 +98,4 @@ C# 프로젝트 템플릿을 선택하고 프로젝트 이름을 지정한 후�
 이 빠른 시작을 완료한 것을 축하 드립니다! C# 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 자세히 알아보려면 다음 자습서를 계속 진행하세요.
 
 > [!div class="nextstepaction"]
-> [C# 자습서](/dotnet/csharp/tutorials/)
+> [Visual Studio에서 C# 콘솔 앱 시작](tutorial-csharp-console.md)

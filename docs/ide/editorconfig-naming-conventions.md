@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626681"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443586"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig에 대한 .NET 명명 규칙
 
@@ -88,11 +88,14 @@ ms.locfileid: "42626681"
 
 허용 가능한 값은 아래와 같으며, 이러한 값을 쉼표로 구분하여 여러 값을 지정할 수 있습니다.
 
-- abstract or must_inherit
-- async
-- const
-- readonly
-- static or shared
+- `abstract` 또는 `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` 또는 `shared`
+
+   > [!NOTE]
+   > `static` 또는 `shared` 기호에 대한 명명 규칙이 있는 경우 암시적으로 static인 `const` 기호에도 적용됩니다. `static` 명명 규칙을 `const` 기호에 적용하지 않으려면 `const` 기호에 대한 별도의 명명 규칙을 만듭니다.
 
 `required_modifiers`는 선택적 속성입니다. 이 속성을 생략하는 경우 명명 규칙이 모든 한정자에 적용됩니다.
 
@@ -145,7 +148,7 @@ ms.locfileid: "42626681"
 
 `dotnet_naming_rule.<namingRuleTitle>.severity = <value>`
 
-다음 표에서는 허용될 수 있는 심각도 값 및 해당 의미를 보여줍니다.
+다음 표에서는 허용될 수 있는 심각도 값 및 해당 의미를 보여 줍니다.
 
 심각도 | 효과
 ------------ | -------------
@@ -175,7 +178,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-다음 스크린샷에서는 편집기에서 이 명명 규칙의 영향을 보여줍니다. 두 공용 변수의 이름은 첫 번째 문자를 대문자로 시작하지 않고 지정되었습니다. 한 변수는 `const`이고 다른 변수는 `readonly`입니다. 명명 규칙이 `readonly` 기호에만 적용되므로 `readonly` 변수는 명명 규칙 제안만을 보여줍니다.
+다음 스크린샷에서는 편집기에서 이 명명 규칙의 영향을 보여 줍니다. 두 공용 변수의 이름은 첫 번째 문자를 대문자로 시작하지 않고 지정되었습니다. 한 변수는 `const`이고 다른 변수는 `readonly`입니다. 명명 규칙이 `readonly` 기호에만 적용되므로 `readonly` 변수는 명명 규칙 제안만을 보여 줍니다.
 
 ![명명 규칙 제안](media/editorconfig-naming-rule-suggestion.png)
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551664"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101136"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>프로젝트에 사용되는 Python 환경을 할당하는 방법
 
@@ -50,7 +50,7 @@ Visual Studio의 모든 새로운 Python 프로젝트는 초기에 **솔루션 �
 
 가상 환경을 사용하는 이점은 시간이 지남에 따라 프로젝트를 개발하는 경우 가상 환경이 프로젝트의 정확한 종속성을 항상 반영한다는 점입니다. 반면에 공유 전역 환경에는 프로젝트에서 사용하는지 여부에 관계없이 여러 개의 라이브러리가 포함됩니다. 가상 환경에서 쉽게 *requirements.txt* 파일을 만들 수 있습니다. 그런 다음, 다른 개발 또는 프로덕션 컴퓨터에서 해당 종속성을 다시 설치하는 데 사용합니다. 자세한 내용은 [requirements.txt를 사용하여 필수 패키지 관리](managing-required-packages-with-requirements-txt.md)를 참조하세요.
 
-Visual Studio에서 *requirements.txt* 파일이 포함된 프로젝트를 여는 경우 가상 환경을 다시 만드는 옵션이 자동으로 제공됩니다. Azure App Service와 같이 Visual Studio가 설치되지 않은 컴퓨터에서 `pip install -r requirements.txt`를 사용하여 패키지를 복원할 수 있습니다(이 프로세스는 [Azure App Service에서 Python 관리](managing-python-on-azure-app-service.md)에 설명됨).
+Visual Studio에서 *requirements.txt* 파일이 포함된 프로젝트를 여는 경우 가상 환경을 다시 만드는 옵션이 자동으로 제공됩니다. Visual Studio가 설치되지 않은 컴퓨터에서 `pip install -r requirements.txt`를 사용하여 패키지를 복원할 수 있습니다.
 
 가상 환경에 하드 코드된 기본 인터프리터 경로가 포함되어 있고, *requirements.txt*를 사용하여 환경을 다시 만들 수 있기 때문에 일반적으로 소스 제어에서 전체 가상 환경 폴더를 생략합니다.
 

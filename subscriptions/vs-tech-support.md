@@ -9,32 +9,32 @@ description: Visual Studio 구독에 포함된 기술 지원 혜택을 활성화
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950072"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 기술 지원 혜택 활성화
 
 프로덕션이 아닌 환경에서 고장 수리 문제를 해결해 보세요. 혜택을 활성화해야만 지원 요청을 제출할 수 있습니다. Visual Studio Enterprise 표준 및 연간 클라우드 구독은 네 개의 인시던트를 받고, Visual Studio Professional 표준 및 연간 클라우드 구독은 두 개의 인시던트를 받습니다.
 
-   > [!NOTE]
-   > 지정된 수준의 일부 구독은 지원 인시던트를 받을 수 없습니다. FTE, NFR, MPN, MCT 및 기타 프로그램을 통해 취득한 구독은 지원 인시던트를 받을 수 없습니다. 구독에 기술 지원 인시던트를 받을 자격이 없는 경우 기술 지원 타일이 사용 가능한 혜택에 나타나지 않습니다.
-
+> [!NOTE]
+> 지정된 수준의 일부 구독은 지원 인시던트를 받을 수 없습니다. FTE, NFR, MPN, MCT 및 기타 프로그램을 통해 취득한 구독은 지원 인시던트를 받을 수 없습니다. 구독에 기술 지원 인시던트를 받을 자격이 없는 경우 기술 지원 타일이 사용 가능한 혜택에 나타나지 않습니다.
+> 
 > [!div class="mx-imgBorder"]
-> ![기술 지원 혜택 타일](_img\vs-tech-support\vs-tech-support-tile.png)
+> ![기술 지원 혜택 타일](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1.  기술 지원 혜택을 사용하려면 기술 지원 타일에서 **활성화할 채팅**을 클릭합니다. 
-2.  그러면 계약 ID 및 액세스 ID를 만들고 사용자에게 제공할 수 있는 담당자와 채팅 세션이 시작됩니다. 
-3.  프로세스를 완료하려면 담당자에게 다음을 제공해야 합니다.
-    - 구독에 로그인하는 데 사용하는 전자 메일 주소
-    - [구독](https://my.visualstudio.com/subscriptions) 탭에서 찾을 수 있는 구독 ID입니다.
+1. 기술 지원 혜택을 사용하려면 기술 지원 타일에서 **활성화할 채팅**을 클릭합니다. 
+2. 그러면 계약 ID 및 액세스 ID를 만들고 사용자에게 제공할 수 있는 담당자와 채팅 세션이 시작됩니다. 
+3. 프로세스를 완료하려면 담당자에게 다음을 제공해야 합니다.
+   - 구독에 로그인하는 데 사용하는 전자 메일 주소
+   - [구독](https://my.visualstudio.com/subscriptions) 탭에서 찾을 수 있는 구독 ID입니다.
 
-    > [!div class="mx-imgBorder"]
-    > ![기술 지원 혜택 구독 ID 찾기](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+   > [!div class="mx-imgBorder"]
+   > ![기술 지원 혜택 구독 ID 찾기](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
 
 > [!NOTE]
@@ -47,28 +47,28 @@ ms.locfileid: "44701769"
 
 ### <a name="submit-an-incident-online"></a>온라인으로 인시던트 제출
 
-1.  [인시던트를 온라인으로 제출](http://support.microsoft.com/oas/)하려면 지원이 필요한 제품을 지정합니다. 다양한 목록에서 선택하거나 이름으로 검색할 수 있습니다. 예를 들어 Visual Studio Enterprise 2017에 대한 인시던트를 제출하려면 **개발자 도구** 그룹에서 **Visual Studio**를 클릭합니다.
-    > [!div class="mx-imgBorder"]    
-    > ![기술 지원 혜택 인시던트 제품 선택](_img\vs-tech-support\vs-tech-support-select-product.png)
+1. [인시던트를 온라인으로 제출](http://support.microsoft.com/oas/)하려면 지원이 필요한 제품을 지정합니다. 다양한 목록에서 선택하거나 이름으로 검색할 수 있습니다. 예를 들어 Visual Studio Enterprise 2017에 대한 인시던트를 제출하려면 **개발자 도구** 그룹에서 **Visual Studio**를 클릭합니다.
+   > [!div class="mx-imgBorder"]    
+   > ![기술 지원 혜택 인시던트 제품 선택](_img/vs-tech-support/vs-tech-support-select-product.png)
 
-2.  지원이 필요한 제품을 선택합니다. (예를 들어 Visual Studio 제품 목록에서 **Visual Studio Enterprise 2017**을 클릭합니다.)
-3.  **인시던트 만들기** 페이지의 드롭다운 목록에서 해당 문제 유형을 선택합니다. 이 예에서는 **IDE(Integrated Development Environment)** 를 선택합니다.
-    > [!div class="mx-imgBorder"]    
-    > ![기술 지원 혜택 인시던트 만들기](_img\vs-tech-support\vs-tech-support-create-incident.png)
+2. 지원이 필요한 제품을 선택합니다. (예를 들어 Visual Studio 제품 목록에서 **Visual Studio Enterprise 2017**을 클릭합니다.)
+3. **인시던트 만들기** 페이지의 드롭다운 목록에서 해당 문제 유형을 선택합니다. 이 예에서는 **IDE(Integrated Development Environment)** 를 선택합니다.
+   > [!div class="mx-imgBorder"]    
+   > ![기술 지원 혜택 인시던트 만들기](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
-4.  그런 다음 질문/문제에 가장 적합한 **범주**를 선택합니다. 이 예에서는 **도구 설계**를 선택합니다.
-5.  **요청 시작**을 클릭합니다.
-6.  다음 페이지에서 결제 옵션을 선택하라는 메시지가 표시됩니다.
-    - **Use my Visual Studio Subscription**(내 Visual Studio 구독 사용)을 선택합니다.
-    - **다른 계약 사용**을 클릭합니다.
-    - 액세스 ID와 계약 ID를 입력합니다.
-    - **추가**를 클릭합니다.
-7.  지원 계약이 추가되면 전문가 지원 계약 목록에 표시됩니다. 해당 항목을 선택하고 **계속**을 클릭합니다.
-    > [!div class="mx-imgBorder"]     
-    > ![기술 지원 혜택 결제](_img\vs-tech-support\vs-tech-support-payment.png)
+4. 그런 다음 질문/문제에 가장 적합한 **범주**를 선택합니다. 이 예에서는 **도구 설계**를 선택합니다.
+5. **요청 시작**을 클릭합니다.
+6. 다음 페이지에서 결제 옵션을 선택하라는 메시지가 표시됩니다.
+   - **Use my Visual Studio Subscription**(내 Visual Studio 구독 사용)을 선택합니다.
+   - **다른 계약 사용**을 클릭합니다.
+   - 액세스 ID와 계약 ID를 입력합니다.
+   - **추가**를 클릭합니다.
+7. 지원 계약이 추가되면 전문가 지원 계약 목록에 표시됩니다. 해당 항목을 선택하고 **계속**을 클릭합니다.
+   > [!div class="mx-imgBorder"]     
+   > ![기술 지원 혜택 결제](_img/vs-tech-support/vs-tech-support-payment.png)
 
-8.  연락처 정보와 기본 설정된 연락 방법을 제공하고 **계속**을 클릭합니다.
-9.  지원 인시던트에 대한 제목을 제공한 다음 문제를 설명합니다.
+8. 연락처 정보와 기본 설정된 연락 방법을 제공하고 **계속**을 클릭합니다.
+9. 지원 인시던트에 대한 제목을 제공한 다음 문제를 설명합니다.
 10. 간단한 일련의 질문에 대답하여 문제의 심각도를 결정합니다.
 11. 확인란을 클릭하여 서비스 약관에 동의합니다.
 12. **제출**을 클릭하여 해당 문제를 제출합니다.
@@ -102,6 +102,6 @@ Azure와 관련된 문제에 대해 Visual Studio 구독 기술 지원 혜택을
 | Visual Studio Dev Essentials | 해당 없음 | 사용할 수 없음 |해당 없음|
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup> *포함: Imagine Premium. 제외: NFR(전매금지), VSIP(Visual Studio 업계 파트너), MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP(Microsoft Valued Partner), RD(Region Director), MCT Software & Services.*
+<sup>1</sup> *포함: Imagine Premium. 제외: NFR(전매금지), VSIP(Visual Studio Industry Partner), MPN(Microsoft 파트너 네트워크), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP(Microsoft Valued Professional), RD(Region Director), MCT Software & Services.*
 
 <sup>2</sup> *포함: Imagine Standard.*

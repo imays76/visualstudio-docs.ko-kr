@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 337badd0f32dad5c6bbf87dd981dc47de0cb87d3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223942"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228866"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Mac용 Visual Studio 둘러보기
 
@@ -39,7 +39,7 @@ Mac용 Visual Studio를 시작하면 ‘시작 화면’이 표시됩니다.
 
 ## <a name="solutions-and-projects"></a>솔루션 및 프로젝트
 
-다음 이미지는 응용 프로그램이 로드된 Mac용 Visual Studio를 보여줍니다.
+다음 이미지는 응용 프로그램이 로드된 Mac용 Visual Studio를 보여 줍니다.
 
 ![응용 프로그램이 로드된 Mac용 Visual Studio](media/ide-tour-image17.png)
 

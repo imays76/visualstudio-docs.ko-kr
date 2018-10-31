@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c282bdbfbfad589418c48d6caa65dedfdc7a53b2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776037"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100941"
 ---
 # <a name="python-item-templates"></a>Python 항목 템플릿
 
@@ -42,15 +42,10 @@ ms.locfileid: "43776037"
 | **IronPython WPF 창** | 두 개의 병렬 파일(빈 `<Grid>` 요소로 `<Window>`를 정의하는 *.xaml* 파일과 `wpf` 라이브러리를 사용하여 XAML 파일을 로드하는 연결된 *.py* 파일)로 구성된 WPF 창. 일반적으로 IronPython 프로젝트 템플릿 중 하나를 사용하여 만든 프로젝트 내에서 사용됩니다. [Python 프로젝트 관리 - 프로젝트 템플릿](managing-python-projects-in-visual-studio.md#project-templates)을 참조하세요. |
 | **웹 역할 지원 파일** | 프로젝트 루트(프로젝트에서 선택한 폴더와 관계없음)의 *bin* 폴더. 이 폴더에는 Azure Cloud Service 웹 역할에 대한 기본 배포 스크립트와 *web.config* 파일이 포함됩니다. 템플릿에는 세부 정보를 설명하는 *readme.html* 파일도 포함되어 있습니다. |
 | **작업자 역할 지원 파일** | 프로젝트 루트(프로젝트에서 선택한 폴더와 관계없음)의 *bin* 폴더. 이 폴더에는 *web.config* 파일과 함께 Azure Cloud Service 작업자 역할에 대한 기본 배포 및 시작 스크립트가 포함됩니다. 템플릿에는 세부 정보를 설명하는 *readme.html* 파일도 포함되어 있습니다. |
-| **Azure web.config(FastCGI)** | [WSGI](https://wsgi.readthedocs.io/en/latest/) 개체를 사용하여 들어오는 연결을 처리하는 앱에 대한 항목이 포함된 *web.config* 파일. 이 파일은 일반적으로 Azure App Service와 같이 IIS를 실행하는 웹 서버의 루트에 배포됩니다. 자세한 내용은 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요. |
-| **Azure web.config(HttpPlatformHandler)** | 소켓에서 들어오는 연결을 수신 대기하는 앱에 대한 항목이 포함된 *web.config* 파일. 이 파일은 일반적으로 Azure App Service와 같이 IIS를 실행하는 웹 서버의 루트에 배포됩니다. 자세한 내용은 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요. |
-| **Azure 정적 파일 web.config** | 일반적으로 *static* 폴더(또는 정적 항목을 포함하는 다른 폴더)에 추가되어 해당 폴더에 대한 Python 처리를 사용하지 않도록 설정하는 *web.config* 파일. 이 구성 파일은 위의 FastCGI 또는 HttpPlatformHandler 구성 파일 중 하나와 함께 작동합니다. 자세한 내용은 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요. |
-| **Azure 원격 디버깅 web.config** | 원격 디버깅을 사용하도록 설정하기 위해 서버에 배포할 모듈이 포함된 *Microsoft.PythonTools.WebRole.dll* 및 *ptvsd* 폴더와 함께 WebSocket을 통해 원격 디버깅을 사용하도록 설정하는 *web.config.debug* 파일. 일반적으로 이 항목은 *web.config* 파일과 동일한 위치에 만듭니다. 자세한 내용은 [Azure에서 Python 코드 원격 디버그](debugging-remote-python-code-on-azure.md)를 참조하세요. 아래의 참고도 참조하세요. |
-
-> [!Note]
-> 프로젝트에 디버깅 *web.config* 템플릿을 추가하고 Python 원격 디버깅을 사용하려는 경우 **디버그** 구성에서 사이트를 게시해야 합니다. 이 설정은 현재 활성 솔루션 구성과 별개이며 항상 기본값인 **릴리스**로 설정됩니다. 이를 변경하려면 **게시** 마법사에서 **설정** 탭을 열고 **구성** 콤보 상자를 사용합니다. Azure Web Apps 만들기 및 배포에 대한 자세한 내용은 [Azure 설명서](https://azure.microsoft.com/develop/python/)를 참조하세요.
->
-> ![게시 구성 변경](media/template-web-publish-config.png)
+| **Azure web.config(FastCGI)** | [WSGI](https://wsgi.readthedocs.io/en/latest/) 개체를 사용하여 들어오는 연결을 처리하는 앱에 대한 항목이 포함된 *web.config* 파일. 이 파일은 일반적으로 IIS를 실행하는 웹 서버의 루트에 배포됩니다. 자세한 내용은 [IIS에 대한 앱 구성](configure-web-apps-for-iis-windows.md)을 참조하세요. |
+| **Azure web.config(HttpPlatformHandler)** | 소켓에서 들어오는 연결을 수신 대기하는 앱에 대한 항목이 포함된 *web.config* 파일. 이 파일은 일반적으로 Azure App Service와 같이 IIS를 실행하는 웹 서버의 루트에 배포됩니다. 자세한 내용은 [IIS에 대한 앱 구성](configure-web-apps-for-iis-windows.md)을 참조하세요. |
+| **Azure 정적 파일 web.config** | 일반적으로 *static* 폴더(또는 정적 항목을 포함하는 다른 폴더)에 추가되어 해당 폴더에 대한 Python 처리를 사용하지 않도록 설정하는 *web.config* 파일. 이 구성 파일은 위의 FastCGI 또는 HttpPlatformHandler 구성 파일 중 하나와 함께 작동합니다. 자세한 내용은 [IIS에 대한 앱 구성](configure-web-apps-for-iis-windows.md)을 참조하세요. |
+| **Azure 원격 디버깅 web.config** | 사용되지 않습니다(더 이상 지원되지 않는 Windows용 Azure App Service의 원격 디버깅에 사용됨). |
 
 ## <a name="see-also"></a>참고 항목
 

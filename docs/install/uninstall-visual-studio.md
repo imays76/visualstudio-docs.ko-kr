@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0b8d2de1cad4f4575ca9ee7f35713383149314
-ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
+ms.openlocfilehash: 0760c101ce669dc2e44527ea18b8f213a12df973
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43288985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817745"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio 제거
 
@@ -28,12 +28,12 @@ ms.locfileid: "43288985"
 
 1. 컴퓨터에서 Visual Studio 설치 관리자를 찾습니다.
 
-     예를 들어, Windows 10 1주년 업데이트를 실행하는 컴퓨터에서 **시작**을 선택하고 **V** 문자로 스크롤하면 여기에서 **Visual Studio 설치 관리자**로 나열됩니다.
+     예를 들어 Windows 10 1주년 업데이트 이상을 실행하는 컴퓨터에서 **시작**을 선택하고 **V** 문자로 스크롤하면 **Visual Studio 설치 관리자**로 나열됩니다.
 
      ![Visual Studio 설치 관리자](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio 설치 관리자 찾기")
 
-     >[!NOTE]
-     일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > [!NOTE]
+   >   일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. 설치 관리자를 클릭하여 시작하고 ![세부 정보 아이콘](media/vs2017uninstall-UninstallIcon.png "옵션 선택 아이콘") 아이콘을 클릭한 다음 **제거**를 클릭합니다.
 

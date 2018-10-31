@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 생성자 생성
+title: 생성자 생성 빠른 작업
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926737"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio에서 생성자 생성
 
@@ -47,10 +47,10 @@ ms.locfileid: "44124985"
 1. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
-     - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-     - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
+      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
 
    ![생성자 생성 미리 보기](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ ms.locfileid: "44124985"
 1. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
-     - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-     - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
+      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
 
-     ![생성자 생성 미리 보기](media/constructor2-preview-cs.png)
+      ![생성자 생성 미리 보기](media/constructor2-preview-cs.png)
 
 1. 드롭다운 메뉴에서 **생성자 'TypeName(...)' 생성**을 선택합니다.
 
@@ -97,24 +97,24 @@ ms.locfileid: "44124985"
 
    - C#: 
 
-    ![강조 표시된 코드 C#](media/constructor-highlight-cs.png)
+       ![강조 표시된 코드 C#](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-    ![강조 표시된 코드 VB](media/constructor-highlight-vb.png)
+       ![강조 표시된 코드 VB](media/constructor-highlight-vb.png)
 
-1. 다음 작업 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
-     - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-     - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
-     - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
+      - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
 
-    ![생성자 생성 미리 보기](media/constructor-preview-cs.png)
+      ![생성자 생성 미리 보기](media/constructor-preview-cs.png)
 
-1. 드롭다운 메뉴에서 **'*TypeName*'에 생성**을 선택합니다.
+3. 드롭다운 메뉴에서 **'*TypeName*'에 생성**을 선택합니다.
 
    > [!TIP]
    > 미리 보기 창 맨 아래에 있는 **변경 내용 미리 보기** 링크를 사용하여 선택하기 전에 적용될 [모든 변경 내용을 확인](../../ide/preview-changes.md)합니다.
@@ -123,36 +123,38 @@ ms.locfileid: "44124985"
 
    - C#: 
 
-      ![메서드 생성 결과 C#](media/constructor-result-cs.png)
+       ![메서드 생성 결과 C#](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-      ![메서드 생성 결과 VB](media/constructor-result-vb.png)
+       ![메서드 생성 결과 VB](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> 기존 생성자에 매개 변수 추가(C#만 해당)
 
 1. 기존 생성자 호출에 매개 변수를 추가합니다.
 
-1. 존재하지 않는 생성자를 사용했음을 나타내는 빨간색 구부러진 곡선이 있는 줄에 커서를 놓습니다.
+2. 존재하지 않는 생성자를 사용했음을 나타내는 빨간색 구부러진 곡선이 있는 줄에 커서를 놓습니다.
 
     ![생성자 생성 강조 표시](media/constructor4-highlight-cs.png)
 
-1. 다음 작업 중 하나를 수행합니다.
+3. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
-     - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-     - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
-     - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
+      - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
 
-    ![생성자 생성 미리 보기](media/constructor4-preview-cs.png)
+      ![생성자 생성 미리 보기](media/constructor4-preview-cs.png)
 
-1. 드롭다운 메뉴에서 **'TypeName(...)'에 매개 변수 추가**를 선택합니다.
+4. 드롭다운 메뉴에서 **'TypeName(...)'에 매개 변수 추가**를 선택합니다.
 
    매개 변수는 해당 사용에서 추론된 형식을 사용하여 생성자에 추가됩니다.
 
    ![생성자 생성 결과](media/constructor4-result-cs.png)
+
+기존 메서드에 매개 변수를 추가할 수도 있습니다. 자세한 내용은 [메서드에 매개 변수 추가](add-parameter.md)를 참조하세요.
 
 ## <a id="create"></a> 생성자 매개 변수에서 필드 또는 속성 만들기 및 초기화(C#만 해당)
 
@@ -165,10 +167,10 @@ ms.locfileid: "44124985"
 1. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
-     - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-     - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
+      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
 
    ![생성자 생성 미리 보기](media/constructor5-preview-cs.png)
 

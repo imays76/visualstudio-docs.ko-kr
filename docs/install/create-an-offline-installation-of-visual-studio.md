@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2b9378f64bce3c1da95120b6456767f12b34d379
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028951"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859573"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017의 오프라인 설치 만들기
 
@@ -60,6 +60,9 @@ Visual Studio 2017은 다양한 네트워크 및 컴퓨터 구성에서 제대�
 ### <a name="step-2---create-a-local-install-cache"></a>2다계 - 로컬 설치 캐시 만들기
 
 이 단계를 완료하려면 인터넷 연결이 있어야 합니다.
+
+> [!IMPORTANT]
+> Visual Studio Community 2017을 설치하는 경우 설치 후 30일 이내에 활성화해야 합니다. 활성화하려면 인터넷 연결이 필요합니다.
 
 명령 프롬프트를 열고 다음 예제의 명령 중 하나를 사용합니다. 여기에 나열된 예제에서는 Visual Studio의 Community Edition을 사용한다고 가정합니다. 사용 중인 버전에 맞게 명령을 조정하세요.
 

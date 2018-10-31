@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284052"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>자습서: Visual Studio에서 C# 및 ASP.NET Core 시작
 
@@ -131,7 +131,7 @@ Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자�
 
 1. 브라우저 창을 열어둔 상태에서 Visual Studio로 돌아갑니다.
 
-1. Visual Studio에서 **About.cshtml**을 선택합니다. 그런 다음, _changed_ 단어를 삭제하고 이 위치에 _file and directory_ 단어를 추가합니다.
+1. Visual Studio에서 **About.cshtml**을 선택합니다. 그런 다음, _additional_ 단어를 삭제하고 이 위치에 _file and directory_ 단어를 추가합니다.
 
     ![About.cshtml 파일에서 텍스트 변경](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +197,4 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual Studio를 사용하여 Azure App Service에 웹앱 게시](..//deployment/quickstart-deploy-to-azure.md)
+[Visual Studio를 사용하여 Azure App Service에 웹앱 게시](../deployment/quickstart-deploy-to-azure.md)
