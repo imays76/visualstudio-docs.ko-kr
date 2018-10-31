@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942220"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143192"
 ---
 # <a name="walkthrough-build-an-application"></a>연습: 응용 프로그램 빌드
 
@@ -100,7 +100,7 @@ ms.locfileid: "49942220"
 
 1. **빌드** 페이지를 선택하고 **경고 표시 안 함** 상자에서 경고 번호 **0168**을 지정합니다.
 
-     ![프로젝트 디자이너, 빌드 페이지](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![프로젝트 디자이너, 빌드 페이지](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      자세한 내용은 [프로젝트 디자이너, 빌드 페이지(C#)](../ide/reference/build-page-project-designer-csharp.md)를 참조하세요.
 
@@ -120,7 +120,7 @@ ms.locfileid: "49942220"
 
 3. **컴파일** 페이지에서 **모든 경고 사용 안 함** 확인란을 선택합니다.
 
-     ![프로젝트 디자이너, 컴파일 페이지](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![프로젝트 디자이너, 컴파일 페이지](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      자세한 내용은 [Visual Basic에서 경고 구성](../ide/configuring-warnings-in-visual-basic.md)을 참조하세요.
 

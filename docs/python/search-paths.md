@@ -1,7 +1,7 @@
 ---
 title: Python 검색 경로를 적용하는 방법
 description: Visual Studio가 환경 및 프로젝트 모두에서 Python 검색 경로를 사용하는 방법 개요.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2a02bf78d731764b0725c03cefb4959451a40b9c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: e3a52579a5b22308c4255cbe41617bc37f47bbab
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626627"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219980"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio에서 Python 검색 경로를 사용하는 방법
 

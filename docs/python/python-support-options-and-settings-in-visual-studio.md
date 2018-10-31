@@ -1,7 +1,7 @@
 ---
 title: Python에서 옵션 및 설정
 description: Python 코드 및 프로젝트와 관련된 Visual Studio의 다양한 설정에 대한 참조입니다.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b158955c9730898c3624c9a832f5cc75c62ba338
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f5b8c6b3860641dafccac28b24a4be141d90eae5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549653"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220058"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio의 Python 옵션
 

@@ -5,7 +5,7 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- vs.toolsoptionspages.text_editor.file_extension
+- VS.ToolsOptionsPages.Text_Editor.File_Extension
 helpviewer_keywords:
 - file extensions, associating to editor
 - Editing Experience
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5fc6249477cdab9a4c13608a260820a801e081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eacb43dfa414d29f614c1ee188c38467ba288b33
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945742"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218445"
 ---
 # <a name="options-text-editor-file-extension"></a>옵션, 텍스트 편집기, 파일 확장명
 이 [옵션] 대화 상자에서는 특정 파일 확장명을 가진 모든 파일이 Visual Studio IDE(통합 개발 환경)에서 처리되는 방법을 지정할 수 있습니다. 입력하는 각 **확장명**에 대해 편집 환경을 선택할 수 있습니다. 이렇게 하면 특정 형식의 문서가 열리는 IDE 편집기 또는 디자이너를 선택할 수 있습니다. 이러한 옵션을 표시하려면 **도구** 메뉴에서 **옵션**을 선택하고, **텍스트 편집기** 노드를 확장하고, **파일 확장명**을 선택합니다.
