@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio 설명서 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: 6381432e452d78fd786bb744437627f53f433fc3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7816ba239b0624aaf46792bcb0c62aefa4809c4
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831031"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244361"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -89,12 +89,12 @@ ms.locfileid: "49831031"
                                             <div class="cardText">
                                                 <h3>Visual Studio를 사용하는 방법 알아보기</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img  src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />둘러보기 시작</a></li>
-                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img  src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />코드 작성 및 편집</a></li>
-                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img  src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />코드 빌드</a></li>
-                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img  src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />코드 디버그</a></li>
-                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img  src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />코드 테스트</a></li>
-                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img  src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />로컬로 또는 클라우드에서 데이터에 액세스</a></li>
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />둘러보기 시작</a></li>
+                                                    <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />코드 작성 및 편집</a></li>
+                                                    <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />코드 빌드</a></li>
+                                                    <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />코드 디버그</a></li>
+                                                    <li><a class="barLink" href="test/getting-started-with-unit-testing.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_test.svg" alt="Science flask icon" />코드 테스트</a></li>
+                                                    <li><a class="barLink" href="data-tools/create-a-sql-database-by-using-a-designer.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_generic-database.svg" alt="Database icon" />로컬로 또는 클라우드에서 데이터에 액세스</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -175,6 +175,7 @@ F# </a>
                                                                     <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
                                                                         <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB logo">
 Visual Basic </a>
+                                                                </li>
                                                             </ul>
                                                         </td>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
@@ -196,7 +197,6 @@ Node.js </a>
                                                                 </li>
                                                             </ul>
                                                         </td>
-                                                        </td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -213,7 +213,7 @@ Node.js </a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>또는 개발할 항목을 선택합니다.</h3>
-                                                 <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
+                                                <table cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top-color:transparent!important;padding-left:0;">
                                                 <ul class="noBullet">
                                                     <li>
                                                         <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
@@ -241,7 +241,8 @@ Unity 게임</a>
                                                             <img src="https://docs.microsoft.com/media/logos/logo_NET.svg" alt=".NET logo">
 ASP.NET Core를 사용한 웹앱</a>
                                                     </li>
-                                                </ul></td></tr></table>
+                                                </ul></td></tr>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -1034,6 +1035,8 @@ ASP.NET Core를 사용한 웹앱</a>
                         </ul>
                     </li>
                 </ul>
+            </li>
+            </li>
             </li>
         </ul>
     </div>

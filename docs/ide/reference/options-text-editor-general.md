@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830667"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219161"
 ---
 # <a name="options-text-editor-general"></a>일반, 텍스트 편집기, 옵션
 
@@ -94,14 +94,6 @@ ms.locfileid: "49830667"
 ### <a name="indicator-margin"></a>표시기 여백
 
 이 옵션을 선택하면 편집기 텍스트 영역의 왼쪽 가장자리 외부에 세로 여백이 표시됩니다. 이 여백을 클릭하면 텍스트에 관련된 아이콘 및 도구 설명이 나타납니다. 예를 들어 중단점 또는 작업 목록 바로 가기가 표시기 여백에 나타납니다. 표시기 여백 정보는 인쇄되지 않습니다.
-
-### <a name="vertical-scroll-bar"></a>세로 스크롤 막대
-
-이 옵션을 선택하면 위아래로 스크롤하여 편집기의 보기 영역을 벗어나는 요소를 볼 수 있도록 세로 스크롤 막대가 표시됩니다. 세로 스크롤 막대를 사용할 수 없는 경우 Page Up, Page Down 및 커서 키를 사용하여 스크롤할 수 있습니다.
-
-### <a name="horizontal-scroll-bar"></a>가로 스크롤 막대
-
-이 옵션을 선택하면 좌우로 스크롤하여 편집기의 보기 영역을 벗어나는 요소를 볼 수 있도록 가로 스크롤 막대가 표시됩니다. 가로 스크롤 막대를 사용할 수 없는 경우 커서 키를 사용하여 스크롤할 수 있습니다.
 
 ### <a name="highlight-current-line"></a>현재 줄 강조 표시
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812623"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기
 
@@ -36,7 +36,7 @@ ms.locfileid: "43776157"
 
 1. 프로젝트 폴더에서 `HelloFlask`라는 앱 폴더를 만듭니다(**솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 폴더**를 선택함).
 
-1. *HelloFlask* 폴더에서 다음 콘텐츠가 포함된 *\_\_init\_\_.py*라는 파일을 만듭니다. 이 파일은 `Flask` 인스턴스를 만들고 앱의 보기를 로드합니다(다음 단계에서 생성).
+2. *HelloFlask* 폴더에서 다음 콘텐츠가 포함된 *\_\_init\_\_.py*라는 파일을 만듭니다. 이 파일은 `Flask` 인스턴스를 만들고 앱의 보기를 로드합니다(다음 단계에서 생성).
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ ms.locfileid: "43776157"
     import HelloFlask.views
     ```
 
-1. *HelloFlask* 폴더에서 다음 콘텐츠가 포함된 *views.py*라는 파일을 만듭니다. *\_\_init\_\_.py* 내에서 `import HelloFlask.views`를 사용했기 때문에 *views.py*이라는 이름은 중요합니다. 이름이 일치하지 않으면 런타임에 오류가 표시됩니다.
+3. *HelloFlask* 폴더에서 다음 콘텐츠가 포함된 *views.py*라는 파일을 만듭니다. *\_\_init\_\_.py* 내에서 `import HelloFlask.views`를 사용했기 때문에 *views.py*이라는 이름은 중요합니다. 이름이 일치하지 않으면 런타임에 오류가 표시됩니다.
 
     ```python
     from flask import Flask
@@ -59,9 +59,9 @@ ms.locfileid: "43776157"
 
     이 코드는 함수의 이름과 경로를 `home`으로 변경하는 것 외에도 *app.py*의 페이지 렌더링 코드를 포함하고 *\_\_init\_\_.py*에 선언된 `app` 개체를 가져옵니다.
 
-1. *HelloFlask*에 *templates*라는 하위 폴더를 만듭니다. 이 폴더는 현재 비어 있습니다.
+4. *HelloFlask*에 *templates*라는 하위 폴더를 만듭니다. 이 폴더는 현재 비어 있습니다.
 
-1. 프로젝트의 루트 폴더에서 *app.py*의 이름을 *runserver.py*로 바꾸고, 콘텐츠를 다음 코드와 일치시킵니다.
+5. 프로젝트의 루트 폴더에서 *app.py*의 이름을 *runserver.py*로 바꾸고, 콘텐츠를 다음 코드와 일치시킵니다.
 
     ```python
     import os
@@ -77,17 +77,17 @@ ms.locfileid: "43776157"
 
         app.run(HOST, PORT)
     ```
-1. 전체 프로젝트 구조는 다음 이미지와 같아야 합니다.
+6. 전체 프로젝트 구조는 다음 이미지와 같아야 합니다.
 
     ![코드 리팩터링 후 프로젝트 구조](media/flask/step02-project-structure.png)
 
-1. **디버그** > **디버깅 시작**(**F5**)을 선택하거나 도구 모음의 **웹 서버** 단추를 사용(표시되는 브라우저가 다를 수 있음)하여 앱을 시작하고 브라우저를 엽니다. / 및 /home URL 경로를 둘 다 시도해 봅니다.
+7. **디버그** > **디버깅 시작**(**F5**)을 선택하거나 도구 모음의 **웹 서버** 단추를 사용(표시되는 브라우저가 다를 수 있음)하여 앱을 시작하고 브라우저를 엽니다. / 및 /home URL 경로를 둘 다 시도해 봅니다.
 
-1. 또한 코드의 여러 부분에서 중단점을 설정하고 앱을 다시 시작하여 시작 시퀀스를 따를 수 있습니다. 예를 들어 *runserver.py* 및 *HelloFlask\__init__.py*의 첫 번째 줄 및 *views.py*의 `return "Hello Flask!"` 줄에 중단점을 설정합니다. 그런 다음, 앱을 다시 시작(**디버그** > **다시 시작**, **Ctrl**+**F5** 또는 아래 표시된 도구 모음 단추)하고 코드를 단계별로 실행(**F10**)하거나 **F5** 키를 사용하여 각 중단점에서 실행합니다.
+8. 또한 코드의 여러 부분에서 중단점을 설정하고 앱을 다시 시작하여 시작 시퀀스를 따를 수 있습니다. 예를 들어 *runserver.py* 및 *HelloFlask\_* init *_.py*의 첫 번째 줄 및 *views.py*의 `return "Hello Flask!"` 줄에 중단점을 설정합니다. 그런 다음, 앱을 다시 시작(**디버그** > **다시 시작**, **Ctrl**+**F5** 또는 아래 표시된 도구 모음 단추)하고 코드를 단계별로 실행(**F10**)하거나 **F5** 키를 사용하여 각 중단점에서 실행합니다.
 
     ![Visual Studio 디버깅 도구 모음의 다시 시작 단추](media/debugging-restart-toolbar-button.png)
 
-1. 완료되면 앱을 중지합니다.
+9. 완료되면 앱을 중지합니다.
 
 ### <a name="commit-to-source-control"></a>소스 제어에 커밋
 
@@ -159,7 +159,7 @@ ms.locfileid: "43776157"
             content = "<strong>Hello, Flask!</strong> on " + formatted_now)
     ```
 
-1. 앱을 실행하여 결과를 확인하고, 템플레이팅 엔진(Jinja)이 HTML 콘텐츠를 자동으로 이스케이프하므로 `content` 값의 인라인 HTML이 HTML*로* 렌더링되지 않는지 확인합니다. 자동 이스케이프는 주입 공격에 대한 우발적인 취약성을 방지합니다. 개발자는 종종 한 페이지에서 입력을 수집하고 템플릿 자리 표시자를 통해 다른 페이지의 값으로 사용합니다. 이스케이프는 HTML을 코드에 넣지 않는 것이 최선이라는 것을 다시 한 번 상기시켜 주는 역할도 합니다.
+1. 앱을 실행하여 결과를 확인하고, 템플레이팅 엔진(Jinja)이 HTML 콘텐츠를 자동으로 이스케이프하므로 `content` 값의 인라인 HTML이 HTML*로* 렌더링되지 않는지 확인합니다. 자동 이스케이프는 주입 공격에 대한 우발적인 취약성을 방지합니다. 개발자는 종종 한 페이지에서 입력을 수집하고 템플릿 자리 표시자를 통해 다른 페이지의 값으로 사용합니다. 이스케이프는 HTML을 코드에 넣지 않는 것이 최선이라는 것을 다시 한번 상기시켜 주는 역할도 합니다.
 
     따라서 *templates\index.html*을 검토하여 태그 내의 각 데이터 조각마다 고유한 자리 표시자를 포함하도록 합니다.
 

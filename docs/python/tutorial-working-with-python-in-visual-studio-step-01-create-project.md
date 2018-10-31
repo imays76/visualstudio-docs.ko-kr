@@ -1,7 +1,7 @@
 ---
 title: Python 작업 자습서, 1단계, 프로젝트 만들기
 description: 필수 구성 요소 및 새 Python 프로젝트 만들기를 포함하여 Visual Studio의 Python 기능에 대한 핵심 연습의 개요 및 1단계입니다.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 215dbce2ccfdce88b6e24fd1802c91fe0f1a6936
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2eb9871aeda7134f6d488b7efe55c5ec149677a5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547895"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220084"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>자습서: Visual Studio에서 Python 작업
 

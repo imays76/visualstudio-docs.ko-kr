@@ -1,20 +1,20 @@
 ---
 title: Visual Studio에서 C/C++에 대한 단위 테스트 작성
-ms.date: 11/04/2017
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341374"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879228"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -31,6 +31,10 @@ Visual Studio에는 다음 C++ 테스트 기능이 포함되어 있으며 추가
 - CTest
 
 설치 된 프레임워크 외에도 Visual Studio 내에서 사용하려는 프레임워크에 대해 자체 테스트 어댑터를 작성할 수 있습니다. 테스트 어댑터는 **테스트 탐색기** 창에 단위 테스트를 통합할 수 있습니다. 몇 가지 타사 어댑터를 [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 제공하고 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](install-third-party-unit-test-frameworks.md)를 참조하세요.
+
+**Visual Studio 2017 버전 15.7(Professional 및 Enterprise)**
+
+C++ 단위 테스트 프로젝트는 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)를 지원합니다.
 
 **Visual Studio 2017 버전 15.5**
 
@@ -80,13 +84,14 @@ TEST_CLASS 및 TEST_METHOD는 [Microsoft Native Test Framework](microsoft-visual
 TEST_METHOD는 void를 반환합니다. 테스트 결과를 내려면 `Assert` 클래스에서 고정 메서드를 사용하여 예상되는 항목에 대해 실제 결과를 테스트합니다. 다음 예제에서는 `MyClass`에 `std::string`을 취하는 생성자가 있다고 가정합니다. 생성자가 예상대로 클래스를 초기화하는지 테스트할 수 있습니다.
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-        {
-            std::string name = "Bill";
-            MyClass mc(name);
-            Assert::AreEqual(name, mc.GetName());
-        }
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 이전 예에서 `Assert::AreEqual` 호출의 결과가 테스트 통과 또는 실패 여부를 결정합니다. Assert 클래스에는 실제 결과와 예상 결과를 비교하는 여러 다른 메서드가 있습니다.
 
 *특성*을 테스트 메서드에 추가하여 테스트 소유자, 우선 순위 및 기타 정보를 지정할 수 있습니다. 그런 다음 이 값을 사용하여 **테스트 탐색기**에서 테스트를 정렬하고 그룹화할 수 있습니다. 자세한 내용은 [테스트 탐색기를 사용하여 단위 테스트 실행](run-unit-tests-with-test-explorer.md)을 참조하세요.
@@ -111,6 +116,22 @@ TEST_METHOD는 void를 반환합니다. 테스트 결과를 내려면 `Assert` �
 **테스트 탐색기**에 대한 자세한 내용은 [테스트 탐색기를 사용하여 단위 테스트 실행](run-unit-tests-with-test-explorer.md)을 참조하세요.
 
 단위 테스트와 관련한 모범 사례는 [단위 테스트 기본 사항](unit-test-basics.md)을 참조하세요.
+
+## <a name="use-codelens"></a>CodeLens 사용
+
+**Visual Studio 2017 버전 15.7 Professional 및 Enterprise Edition에만 해당**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)를 사용하면 코드 편집기에서 나가지 않고도 단위 테스트의 상태를 빠르게 확인할 수 있습니다. 다음 방법 중 하나로 C++ 단위 테스트 프로젝트에 대한 CodeLens를 초기화할 수 있습니다.
+
+- 테스트 프로젝트 또는 솔루션을 편집하고 빌드합니다.
+- 프로젝트 또는 솔루션을 다시 빌드합니다.
+- **테스트 탐색기** 창에서 테스트를 실행합니다.
+
+**CodeLens**가 초기화되면 각 단위 테스트 위에서 테스트 상태 아이콘을 볼 수 있습니다.
+
+![C++ CodeLens 아이콘](media/cpp-test-codelens-icons.png)
+
+ 자세한 정보를 보거나 단위 테스트를 실행 또는 디버그하려면 아이콘을 클릭합니다.
+
+![C++ CodeLens 실행 및 디버그](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>참고 항목
 

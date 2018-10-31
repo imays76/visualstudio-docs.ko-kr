@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548793"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100915"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>requirements.txt를 사용하여 필수 패키지 관리
 
-빌드 시스템을 사용하여 다른 사람과 프로젝트를 공유하거나 [Microsoft Azure에 게시](python-azure-cloud-service-project-template.md)할 계획인 경우 프로젝트에 필요한 외부 패키지를 지정해야 합니다. 권장되는 방법은 필요한 종속 패키지 버전을 설치하는 pip 명령 목록이 들어 있는 [requirements.txt 파일](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files)(readthedocs.org)을 사용하는 것입니다.
+빌드 시스템을 사용하여 다른 사람과 프로젝트를 공유하거나 환경을 복원해야 하는 다른 위치에 배포하려는 경우 프로젝트에 필요한 외부 패키지를 지정해야 합니다. 권장되는 방법은 필요한 종속 패키지 버전을 설치하는 pip 명령 목록이 들어 있는 [requirements.txt 파일](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files)(readthedocs.org)을 사용하는 것입니다.
 
 기술적으로, 파일 이름을 사용하여 요구 사항을 추적할 수 있으나(패키지 설치 시 `-r <full path to file>` 사용) Visual Studio에서 *requirements.txt*에 대한 구체적인 지원을 제공합니다.
 

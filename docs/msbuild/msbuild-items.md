@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204130"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443599"
 ---
 # <a name="msbuild-items"></a>MSBuild 항목
 MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파일을 나타냅니다(파일은 `Include` 특성에 지정됨). 항목은 해당 요소 이름에 따라 항목 종류로 그룹화됩니다. 항목 종류는 작업의 매개 변수로 사용할 수 있는 명명된 항목 목록입니다. 작업은 항목 값을 사용하여 빌드 프로세스의 단계를 수행합니다.  
@@ -35,7 +35,7 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
 </ItemGroup>  
 ```  
   
- *file2.cs* 항목이 *file1.cs* 항목으로 바뀌지는 않으며, 대신 `Compile` 항목 종류의 값 목록에 파일 이름이 추가됩니다. 빌드의 평가 단계 중에는 항목 종류에서 항목을 제거할 수 없습니다.  
+ *file2.cs* 항목이 *file1.cs* 항목으로 바뀌지는 않으며, 대신 `Compile` 항목 종류의 값 목록에 파일 이름이 추가됩니다.
   
  다음 XML은 `Include` 특성 하나에서 두 파일을 모두 선언하여 같은 항목 종류를 만듭니다. 파일 이름은 세미콜론으로 구분됩니다.  
   
@@ -60,25 +60,26 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
  기본적으로 항목 종류를 확장하면 해당 항목이 세미콜론(;)으로 구분됩니다. @(\<ItemType>, '\<separator>') 구문을 사용하면 기본값이 아닌 구분 기호를 지정할 수 있습니다. 자세한 내용은 [방법: 항목 목록을 쉼표로 구분하여 표시](../msbuild/how-to-display-an-item-list-separated-with-commas.md)를 참조하세요.  
   
 ##  <a name="use-wildcards-to-specify-items"></a>와일드카드를 사용하여 항목 지정  
- **, \* 및 ? 와일드카드 문자를 사용하여 각 파일을 개별적으로 나열하는 대신 파일 그룹을 빌드의 입력으로 지정할 수 있습니다.  
-  
--   ? 와일드카드 문자는 단일 문자를 찾습니다.  
-  
--   \* 와일드카드 문자는 0개 이상의 문자를 찾습니다.  
-  
--   \*\* 와일드카드 문자 시퀀스는 부분 경로를 찾습니다.  
 
-예를 들어 프로젝트 파일에서 다음 요소를 사용하여 프로젝트 파일이 포함된 디렉터리의 모든 *.cs* 파일을 지정할 수 있습니다.  
+`**`, `*` 및 `?` 와일드카드 문자를 사용하여 각 파일을 개별적으로 나열하는 대신 파일 그룹을 빌드의 입력으로 지정할 수 있습니다.
+  
+- `?` 와일드카드 문자는 단일 문자를 찾습니다.
+- `*` 와일드카드 문자는 0개 이상의 문자를 찾습니다.
+- `**` 와일드카드 문자 시퀀스는 부분 경로를 찾습니다.
+
+예를 들어 프로젝트 파일에서 다음 요소를 사용하여 프로젝트 파일이 포함된 디렉터리의 모든 `.cs` 파일을 지정할 수 있습니다.
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-다음 요소는 *D:* 드라이브에 있는 모든 *.vb* 파일을 선택합니다.  
+다음 요소는 `D:` 드라이브에 있는 모든 `.vb` 파일을 선택합니다.
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+와일드카드 확장 없이 항목에 리터럴 `*` 또는 `?` 문자를 포함하려면 [와일드카드 문자를 이스케이프](../msbuild/how-to-escape-special-characters-in-msbuild.md)해야 합니다.
 
 와일드카드 문자에 대한 자세한 내용은 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)을 참조하세요.  
 
@@ -180,7 +181,7 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
  .NET Framework 3.5부터는 `Target` 요소가 항목 요소가 들어 있을 수 있는 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 요소를 포함할 수 있습니다. 이 섹션의 특성은 `Target`에 있는 `ItemGroup`에서 항목에 대해 지정되는 경우 유효합니다.  
   
 ###  <a name="BKMK_RemoveAttribute"></a> 특성 제거  
- 대상의 `ItemGroup`에 있는 항목은 `Remove` 특성을 포함할 수 있습니다. 이 특성은 항목 종류에서 특정 항목(파일)을 제거합니다. 이 특성은 .NET Framework 3.5에서 도입되었습니다.  
+ `Remove` 특성은 항목 종류에서 특정 항목(파일)을 제거합니다. 이 특성은 .NET Framework 3.5에서 도입되었지만 MSBuild 15.0까지 대상 내에서만 지원되었습니다.
   
  다음 예제에서는 컴파일 항목 종류에서 모든 *.config* 파일을 제거합니다.  
   

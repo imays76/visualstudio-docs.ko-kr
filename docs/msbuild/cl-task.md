@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f23a23f1dbdb8dc66a46e1eb1e0b9f1156182e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c239dc78d152e9060d176ebe1d4abd3b981a57d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922408"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220367"
 ---
 # <a name="cl-task"></a>CL 작업
 Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행(*.exe*) 파일, 동적 연결 라이브러리(*.dll*) 파일 또는 코드 모듈(*.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.  
@@ -52,7 +52,9 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
   
    자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.  
   
-- **AdditionalUsingDirectories**선택적 String[] 매개 변수입니다.  
+- **AdditionalUsingDirectories**
+
+   선택적 String[] 매개 변수입니다.  
   
    **#using** 지시문에 전달된 파일 참조를 확인하기 위해 컴파일러가 검색할 디렉터리를 지정합니다.  
   

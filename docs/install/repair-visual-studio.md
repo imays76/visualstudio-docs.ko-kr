@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 825131bff8d6ed3466a6418bb1aac98787a2daea
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9a7717a9ef889ee575afb3cc0b01fbb573a54f1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880451"
 ---
 # <a name="repair-visual-studio-2017"></a>Visual Studio 2017 복구
 
@@ -24,10 +24,10 @@ ms.locfileid: "43139057"
 
 1. 컴퓨터에서 Visual Studio 설치 관리자를 찾습니다.
 
-     예를 들어 Windows 10 1주년 업데이트를 실행하는 컴퓨터에서 **시작**을 선택한 다음 **V** 문자로 스크롤하면 **Visual Studio 설치 관리자**로 나열됩니다.
+     예를 들어 Windows 10 1주년 업데이트 이상을 실행하는 컴퓨터에서 **시작**을 선택한 다음, **V** 문자로 스크롤하면 **Visual Studio 설치 관리자**로 나열됩니다.
 
-     >[!NOTE]
-     일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > [!NOTE]
+   >   일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. 설치 관리자를 클릭하거나 탭한 다음 **자세히**, 그런 다음 **복구**를 선택합니다.
 

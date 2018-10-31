@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6afc2acab36be88b4eb554d1900e6b314e395bd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849885"
 ---
 # <a name="extract-an-interface-refactoring"></a>인터페이스 추출 리팩터링
 
@@ -41,44 +41,44 @@ ms.locfileid: "31948173"
 
    - C#: 
 
-    ![강조 표시된 코드 - C#](media/extractinterface-highlight-cs.png)
+       ![강조 표시된 코드 - C#](media/extractinterface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![강조 표시된 코드 - Visual Basic](media/extractinterface-highlight-vb.png)
+       ![강조 표시된 코드 - Visual Basic](media/extractinterface-highlight-vb.png)
 
-1. 다음 작업 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-     - **Ctrl+R**을 누른 다음 **Ctrl+I**를 누릅니다. 바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
-     - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **인터페이스 추출**을 선택합니다.
+      - **Ctrl+R**을 누른 다음 **Ctrl+I**를 누릅니다. 바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **인터페이스 추출**을 선택합니다.
    - **마우스**
-     - **편집 > 리팩터링 > 인터페이스 추출**을 선택합니다.
-     - 클래스 이름을 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **인터페이스 추출**을 선택합니다.
+      - **편집 > 리팩터링 > 인터페이스 추출**을 선택합니다.
+      - 클래스 이름을 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **인터페이스 추출**을 선택합니다.
 
-1. 표시되는 **인터페이스 추출** 대화 상자에서 요청된 정보를 입력합니다.
+3. 표시되는 **인터페이스 추출** 대화 상자에서 요청된 정보를 입력합니다.
 
    ![인터페이스 추출](media/extractinterface-dialog-cs.png)
 
+
    | 필드 | 설명 |
-   | --- | --- |
+   | - | - |
    | **새 인터페이스 이름** | 만들려는 인터페이스의 이름입니다. 이는 기본적으로 I*ClassName*으로 설정됩니다. 여기서 *ClassName*은 위에서 선택한 클래스의 이름입니다. |
    | **새 파일 이름** | 인터페이스를 포함하도록 생성할 파일의 이름입니다. 인터페이스 이름과 마찬가지로 기본적으로 I*ClassName*으로 설정됩니다. 여기서 *ClassName*은 위에서 선택한 클래스의 이름입니다. |
    | **인터페이스를 구성할 공용 멤버 선택** | 인터페이스로 추출할 항목입니다. 원하는 만큼 선택할 수 있습니다. |
 
-1. **확인**을 선택합니다.
+
+4. **확인**을 선택합니다.
 
    지정된 이름의 파일에 인터페이스가 만들어집니다. 또한 선택한 클래스가 해당 인터페이스를 구현합니다.
 
    - C#: 
 
-    ![결과 클래스 - C#](media/extractinterface-class-cs.png)
-    ![결과 인터페이스 - C#](media/extractinterface-interface-cs.png)
+      ![결과 클래스 - C#](media/extractinterface-class-cs.png) ![결과 인터페이스 - C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-    ![결과 클래스 - Visual Basic](media/extractinterface-class-vb.png)
-    ![결과 인터페이스 - Visual Basic](media/extractinterface-interface-vb.png)
+      ![결과 클래스 - Visual Basic](media/extractinterface-class-vb.png)![결과 인터페이스 - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>참고 항목
 

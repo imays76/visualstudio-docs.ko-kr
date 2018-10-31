@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 Enterprise Mobility + Security �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930117"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio의 EMS(Enterprise Mobility + Security)
 
@@ -27,31 +27,32 @@ Visual Studio Enterprise의 연간 클라우드 및 표준 구독에는 EMS(Ente
 
 EMS를 사용하려면 기존 계정을 사용하여 계정을 설정하거나 로그인해야 합니다.
 
-1.  [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
+1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
-2.  도구 섹션에서 Enterprise Mobility & Security 타일을 찾고 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.   코드가 성공적으로 검색되었다는 알림 메시지를 받게 됩니다.  **활성화**를 클릭합니다.
-    > [!div class="mx-imgBorder"]
-    > ![EMS 혜택 타일](_img\vs-ems\vs-ems-tile.png)
+2. 도구 섹션에서 Enterprise Mobility & Security 타일을 찾고 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.   코드가 성공적으로 검색되었다는 알림 메시지를 받게 됩니다.  **활성화**를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![EMS 혜택 타일](_img/vs-ems/vs-ems-tile.png)
 
-2.  Enterprise Mobility + Security E5 페이지에서 기존 구독으로 로그인하거나 새 구독을 만들 수 있습니다.  새 구독을 만들려면 요청받은 정보를 완성하고 **다음**을 클릭합니다.
-    > [!div class="mx-imgBorder"]
-    > ![EMS 혜택 계정 만들기](_img\vs-ems\vs-ems-create-account-cropped.png)
+3. Enterprise Mobility + Security E5 페이지에서 기존 구독으로 로그인하거나 새 구독을 만들 수 있습니다.  새 구독을 만들려면 요청받은 정보를 완성하고 **다음**을 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![EMS 혜택 계정 만들기](_img/vs-ems/vs-ems-create-account-cropped.png)
 
-3. 사용자 ID와 암호를 만듭니다.  **내 계정 만들기**를 클릭하여 계속합니다.
-    > [!div class="mx-imgBorder"]
-    > ![EMS 혜택 UserID 만들기](_img\vs-ems\vs-ems-userID-cropped.png)
+4. 사용자 ID와 암호를 만듭니다.  **내 계정 만들기**를 클릭하여 계속합니다.
+   > [!div class="mx-imgBorder"]
+   > ![EMS 혜택 UserID 만들기](_img/vs-ems/vs-ems-userID-cropped.png)
 
-4.  그런 다음 전화 또는 문자 메시지로 인증 코드를 받을 전화 번호를 입력합니다.  코드를 입력하고 **다음**을 클릭합니다.
-    > [!div class="mx-imgBorder"]
-    > ![EMS 혜택 확인](_img\vs-ems\vs-ems-robot-cropped.png)
+5. 그런 다음 전화 또는 문자 메시지로 인증 코드를 받을 전화 번호를 입력합니다.  코드를 입력하고 **다음**을 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![EMS 혜택 확인](_img/vs-ems/vs-ems-robot-cropped.png)
 
-5.  다음 페이지에서 로그인 페이지와 사용자 ID가 표시됩니다.  나중에 사용하기 위해 해당 정보를 저장합니다.  **사용할 준비가 되었습니다...** 를 클릭합니다.
-    > [!div class="mx-imgBorder"]
-    > ![EMS 혜택 계정 만들기 완료](_img\vs-ems\vs-ems-save-info-cropped.png)
+6. 다음 페이지에서 로그인 페이지와 사용자 ID가 표시됩니다.  나중에 사용하기 위해 해당 정보를 저장합니다.  **사용할 준비가 되었습니다...** 를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![EMS 혜택 계정 만들기 완료](_img/vs-ems/vs-ems-save-info-cropped.png)
 
-6.  EMS를 사용하려면 Microsoft [Azure Portal](https://azure.microsoft.com)에 액세스해야 합니다.  EMS 방문 페이지의 세 가지 단계에 따라 Azure 구독을 활성화하고, 사용자를 추가하고, EMS를 구성합니다.
+7. EMS를 사용하려면 Microsoft [Azure Portal](https://azure.microsoft.com)에 액세스해야 합니다.  EMS 방문 페이지의 세 가지 단계에 따라 Azure 구독을 활성화하고, 사용자를 추가하고, EMS를 구성합니다.
 
 ## <a name="eligibility"></a>자격
+
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  예          |
@@ -61,7 +62,7 @@ EMS를 사용하려면 기존 계정을 사용하여 계정을 설정하거나 �
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 | Visual Studio Dev Essentials | N/A  | 사용할 수 없음 |N/A |
 
-<sup>1</sup> *포함: NFR(전매금지), VSIP(Visual Studio 업계 파트너), MPN(Microsoft 파트너 네트워크), FTE, MCT 소프트웨어 및 서비스 개발자, BizSpark.  제외: MVP(Microsoft Valued Partner), RD(Region Director), MCT 소프트웨어 및 서비스, Imagine, Microsoft 파트너 네트워크(Professional).*
+<sup>1</sup> *포함: NFR(전매금지), VSIP(Visual Studio 업계 파트너), MPN(Microsoft 파트너 네트워크), FTE, MCT 소프트웨어 및 서비스 개발자, BizSpark.  제외: MVP(Microsoft Valued Professional), RD(Region Director), MCT Software & Services, Imagine, Microsoft 파트너 네트워크(Professional).*
 
 <sup>2</sup> *제외: Microsoft 파트너 네트워크(Professional)*
 

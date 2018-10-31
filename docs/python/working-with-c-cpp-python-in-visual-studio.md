@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549471"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443651"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python용 C++ 확장 만들기
 
@@ -409,6 +409,7 @@ Visual Studio는 디버깅 Python 및 C++ 코드를 함께 지원합니다. 이 
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 컴파일 안 함, 광범위한 가용성. | 번거로운 C 구조체 액세스 및 변경과 오류 발생 가능성. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 한 번에 여러 언어에 대한 바인딩 생성. | Python이 유일한 대상일 경우 과도한 오버헤드. |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | 간편한 통합, PyPy 호환성. | 더 새롭고 완성도 낮음. |
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | C++를 사용한 cffi와 유사합니다. | 최신 기능이며, VS 2017에서는 몇 가지 문제가 발생할 수 있습니다. |  
 
 ## <a name="see-also"></a>참고 항목
 

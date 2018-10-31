@@ -10,15 +10,24 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abec2e0d2485b99d5cde020bffc5ad0b2dd473ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775386"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120681"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="3807"></a>3.8.0.7
+ 릴리스 날짜: 2018년 9월 20일
+ 
+### <a name="bug-fixes"></a>버그 수정
+
+-   **디버거:**
+
+    -   특히 ‘Unity에 연결’을 누르거나 게임을 다시 시작할 때, Unity의 디버거 엔진과 통신하는 데 사용되는 라이브러리에서 교착 상태가 발생하여 Visual Studio 또는 Unity를 동결시키는 문제가 해결되었습니다.
 
 ## <a name="3806"></a>3.8.0.6
  릴리스 날짜: 2018년 8월 27일

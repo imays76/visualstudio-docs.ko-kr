@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 702c1124e3b14f8bfec4f514edd8e1e7def6b776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915848"
 ---
 # <a name="install-and-manage-local-content"></a>로컬 콘텐츠 설치 및 관리
 
@@ -51,7 +51,7 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 
 2.  다음 단계 중 하나를 수행합니다.
 
-    -   *.msha* 파일의 경로 또는 서비스 끝점의 URL을 입력합니다.
+    -   *.msha* 파일의 경로 또는 서비스 엔드포인트의 URL을 입력합니다.
 
     -   찾아보기(**...**) 단추를 선택하여 *.msha* 파일로 이동합니다.
 
@@ -110,9 +110,9 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 
 ### <a name="to-update-local-content"></a>로컬 콘텐츠를 업데이트하려면
 
--   상태 표시줄의 오른쪽 아래에서 **지금 다운로드하려면 여기를 클릭하세요.** 링크를 선택합니다.
+- 상태 표시줄의 오른쪽 아래에서 **지금 다운로드하려면 여기를 클릭하세요.** 링크를 선택합니다.
 
- 업데이트 시간은 각기 다를 수 있지만 상태 표시줄에서 업데이트 진행률을 볼 수 있습니다.
+업데이트 시간은 각기 다를 수 있지만 상태 표시줄에서 업데이트 진행률을 볼 수 있습니다.
 
 ## <a name="move-local-content"></a>로컬 콘텐츠 이동
 

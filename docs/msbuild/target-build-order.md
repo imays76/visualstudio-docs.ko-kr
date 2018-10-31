@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812662"
 ---
 # <a name="target-build-order"></a>대상 빌드 순서
 단일 대상에 대한 입력이 다른 대상의 출력을 사용하는 경우에는 대상의 순서를 지정해야 합니다. 다음과 같은 특성을 사용하여 대상이 실행되는 순서를 지정할 수 있습니다.  
   
--   `InitialTargets`. 이 `Project` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다.  
+- `InitialTargets`. 이 `Project` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다.  
   
--   `DefaultTargets`. 이 `Project` 특성은 대상이 명령줄에 명시적으로 지정되어 있지 않은 경우 실행할 대상을 지정합니다.  
+- `DefaultTargets`. 이 `Project` 특성은 대상이 명령줄에 명시적으로 지정되어 있지 않은 경우 실행할 대상을 지정합니다.  
   
--   `DependsOnTargets`. 이 `Target` 특성은 이 대상을 실행하려면 먼저 실행해야 하는 대상을 지정합니다.  
+- `DependsOnTargets`. 이 `Target` 특성은 이 대상을 실행하려면 먼저 실행해야 하는 대상을 지정합니다.  
   
--   `BeforeTargets`와 `AfterTargets`을 참조하세요. 이러한 `Target` 특성은 지정된 대상 전이나 후에 이 대상을 실행해야 하도록 지정합니다(MSBuild 4.0).  
+- `BeforeTargets`와 `AfterTargets`을 참조하세요. 이러한 `Target` 특성은 지정된 대상 전이나 후에 이 대상을 실행해야 하도록 지정합니다(MSBuild 4.0).  
   
- 대상은 빌드의 후속 대상이 종속되더라도 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되고 나면 빌드 내에서 해당 대상의 역할은 완료됩니다.  
+  대상은 빌드의 후속 대상이 종속되더라도 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되고 나면 빌드 내에서 해당 대상의 역할은 완료됩니다.  
   
- 대상은 `Condition` 특성을 포함할 수 있습니다. 지정된 조건이 `false`로 평가되면 대상은 실행되지 않으며 빌드에 영향을 주지 않습니다. 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.  
+  대상은 `Condition` 특성을 포함할 수 있습니다. 지정된 조건이 `false`로 평가되면 대상은 실행되지 않으며 빌드에 영향을 주지 않습니다. 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.  
   
 ## <a name="initial-targets"></a>초기 대상  
  [Project](../msbuild/project-element-msbuild.md) 요소의 `InitialTargets` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다. 초기 대상은 대개 오류 검사용으로 사용됩니다.  
@@ -56,9 +56,9 @@ ms.locfileid: "43774947"
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- 명령줄에서 **/target** 스위치를 사용하여 기본 대상을 재정의할 수 있습니다. 다음 예제에서는 `Build` 대상이 실행된 후에 `Report` 대상이 실행됨을 지정합니다. 이 방식으로 대상을 지정하면 기본 대상은 무시됩니다.  
+ 명령줄에서 **-target** 스위치를 사용하여 기본 대상을 재정의할 수 있습니다. 다음 예제에서는 `Build` 대상이 실행된 후에 `Report` 대상이 실행됨을 지정합니다. 이 방식으로 대상을 지정하면 기본 대상은 무시됩니다.  
   
- `msbuild /target:Build;Report`  
+ `msbuild -target:Build;Report`  
   
  초기 대상과 기본 대상을 모두 지정하고 명령줄 대상은 지정하지 않는 경우 MSBuild는 초기 대상을 먼저 실행한 후에 기본 대상을 실행합니다.  
   
@@ -108,7 +108,7 @@ ms.locfileid: "43774947"
   
 1.  `InitialTargets` 대상이 실행됩니다.  
   
-2.  **/target** 스위치를 통해 명령줄에 지정된 대상이 실행됩니다. 명령줄에서 대상을 지정하지 않으면 `DefaultTargets` 대상이 실행됩니다. 이 두 대상이 모두 없으면 처음으로 나오는 대상이 실행됩니다.  
+2.  **-target** 스위치를 통해 명령줄에 지정된 대상이 실행됩니다. 명령줄에서 대상을 지정하지 않으면 `DefaultTargets` 대상이 실행됩니다. 이 두 대상이 모두 없으면 처음으로 나오는 대상이 실행됩니다.  
   
 3.  대상의 `Condition` 특성을 평가합니다. `Condition` 특성이 있고 `false`로 평가되는 경우 대상은 실행되지 않으며 빌드에 영향을 주지 않습니다.
 

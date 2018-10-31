@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 MSDN Magazine 구독을 받기 �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941271"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 MSDN Magazine 혜택
 
@@ -31,23 +31,24 @@ ms.locfileid: "44283589"
 2.  전문적인 개발 섹션에서 MSDN Magazine 타일을 찾고 **액세스**를 클릭합니다.
 
 ### <a name="printed-edition"></a>인쇄 버전
-1.  MSDN Magazine 구독을 수신하기 시작하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인
-2.  전문적인 개발 섹션에서 MSDN Magazine 타일을 찾고 MSDN Magazine 구독 타일에서 **구독**을 클릭합니다. (디지털 버전에 액세스하려면 타일의 오른쪽 아래에 있는 “!”를 클릭합니다.)
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine 혜택 타일](_img\vs-msdn\vs-msdn-tile.png)
+1. MSDN Magazine 구독을 수신하기 시작하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인
+2. 전문적인 개발 섹션에서 MSDN Magazine 타일을 찾고 MSDN Magazine 구독 타일에서 **구독**을 클릭합니다. (디지털 버전에 액세스하려면 타일의 오른쪽 아래에 있는 “!”를 클릭합니다.)
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine 혜택 타일](_img/vs-msdn/vs-msdn-tile.png)
 
 
-3.  MSDN Magazine 페이지에서 기본 설정된 구독 유형을 선택합니다.  디지털 버전은 어디에 거주하든 무료로 선택할 수 있습니다.  인쇄 버전은 미국 거주자에게 무료로 제공됩니다.  미국이 아닌 주소로 보내는 인쇄 버전의 경우 배송 요금이 부과됩니다.
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine 혜택 구독](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+3. MSDN Magazine 페이지에서 기본 설정된 구독 유형을 선택합니다.  디지털 버전은 어디에 거주하든 무료로 선택할 수 있습니다.  인쇄 버전은 미국 거주자에게 무료로 제공됩니다.  미국이 아닌 주소로 보내는 인쇄 버전의 경우 배송 요금이 부과됩니다.
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine 혜택 구독](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4.  요청받은 연락처 정보를 제공하고 **제출**을 클릭합니다.  (선택한 잡지의 버전이 MSDN Magazine 구독 섹션에 표시됩니다.  인쇄 버전을 선택한 경우 **예!  MSDN Magazine을 1년(12회) 동안 무료로 받고 싶습니다.** 라는 첫 번째 옵션을 읽습니다.
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine 혜택 프로필](_img\vs-msdn\vs-msdn-profile.png)
+4. 요청받은 연락처 정보를 제공하고 **제출**을 클릭합니다.  (선택한 잡지의 버전이 MSDN Magazine 구독 섹션에 표시됩니다.  인쇄 버전을 선택한 경우 **예!  MSDN Magazine을 1년(12회) 동안 무료로 받고 싶습니다.** 라는 첫 번째 옵션을 읽습니다.
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine 혜택 프로필](_img/vs-msdn/vs-msdn-profile.png)
 
-5.  이것이 전부입니다!  선택한 잡지의 버전에 따라 인쇄된 잡지 또는 다음 버전이 포함된 최신 온라인 버전에 대한 링크가 있는 전자 메일을 받기 시작합니다.  즐겨보세요!
+5. 이것이 전부입니다!  선택한 잡지의 버전에 따라 인쇄된 잡지 또는 다음 버전이 포함된 최신 온라인 버전에 대한 링크가 있는 전자 메일을 받기 시작합니다.  즐겨보세요!
 
 ## <a name="eligibility"></a>자격
+
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> |인쇄 버전       |  아니요.  새 구독자만 사용할 수 있음          |
@@ -59,7 +60,7 @@ ms.locfileid: "44283589"
 
 <sup>1</sup> *인쇄 버전: NFR(전매 금지), VSIP(Visual Studio 업계 파트너), FTE, Microsoft 파트너 네트워크(Enterprise), Imagine(프리미엄).*
 
-*디지털 버전: MCT Software & Services, Microsoft Valued Partner(Professional), RD(Region Director).*
+디지털 버전: MCT Software & Services, Microsoft Valued Professional(Professional), RD(Region Director).
 
 *제외: Imagine(표준), BizSpark, MCT Software & Services Developer*
 

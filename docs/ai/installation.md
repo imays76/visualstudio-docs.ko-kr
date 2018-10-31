@@ -1,6 +1,6 @@
 ---
-title: AI Tools for Visual Studio 설치
-description: AI Tools for Visual Studio 설치
+title: AI 도구 설치
+description: Visual Studio용 AI 도구를 설치하는 방법을 설명합니다.
 keywords: AI, Visual Studio
 author: lisawong19
 ms.author: liwong
@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4785bc8362d7e50b5fb48bf88df29313ddfcc0c8
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303111"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459766"
 ---
 # <a name="installation"></a>설치
 
@@ -27,19 +27,20 @@ Visual Studio Tools for AI는 64비트 운영 체제에 설치할 수 있습니�
 
 이 확장 프로그램은 Visual Studio 2015 및 Visual Studio 2017, Community Edition 이상에서 작동합니다.
 
-설치하려면 [Visual Studio Marketplace](http://aka.ms/vstoolsforai) 또는 Visual Studio 내에서 다운로드
+[Visual Studio Marketplace](http://aka.ms/vstoolsforai) 또는 Visual Studio 내에서 도구를 다운로드할 수 있습니다.
 
-1. **도구** > **확장 및 업데이트**
+1. **도구** > **확장 및 업데이트**를 선택합니다.
 
-![Windows에 CUDA 설치](media\installation\extensions.png)
+   ![Visual Studio의 확장 및 업데이트 메뉴](media/installation/extensions.png)
 
-1. 오른쪽 상단 모서리에서 "Tools for AI" **검색**
-2. **Visual Studio Tools for AI** 정보
-3. **다운로드** 클릭
+2. **확장 및 업데이트** 대화 상자의 왼쪽에서 **온라인**을 선택합니다.
+3. 오른쪽 위에 있는 검색 상자에 “AI 도구”를 입력합니다.
+4. 결과에서 **Visual Studio Tools for AI**를 선택합니다.
+5. **다운로드**를 클릭합니다.
 
 ## <a name="prepare-your-local-machine"></a>로컬 머신 준비
 
-로컬 컴퓨터에서 심층 학습 모델을 교육하기 전에 해당하는 최신 필수 조건을 설치해야 합니다. 여기에는 NVIDIA GPU용 최신 드라이버 및 라이브러리가 포함됩니다(해당하는 경우). Python 및 Python 라이브러리(예: NumPy, SciPy 등)와, 프로젝트에서 사용하려는 적합한 심층 학습 프레임워크(예: Microsoft CNTK(Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch 및/또는 Chainer 등)도 설치해야 합니다.
+로컬 컴퓨터에서 심층 학습 모델을 교육하기 전에 해당하는 필수 구성 요소가 설치되어 있는지 확인합니다. 여기에는 NVIDIA GPU용 최신 드라이버 및 라이브러리가 있는지 확인하는 작업도 포함됩니다(해당하는 경우). Python 및 Python 라이브러리(예: NumPy, SciPy 등)와, 프로젝트에서 사용하려는 적합한 심층 학습 프레임워크(예: Microsoft CNTK(Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch, Chainer 등)를 설치했는지도 확인해야 합니다.
 
 > [!NOTE]
 > 다음 하위 섹션의 소프트웨어 소개는 해당 홈 페이지에서 발췌한 것입니다.
@@ -50,9 +51,7 @@ Visual Studio Tools for AI는 64비트 운영 체제에 설치할 수 있습니�
 
 ### <a name="cuda"></a>CUDA
 
-[CUDA](https://developer.nvidia.com/cuda-zone)는 NVIDIA가 개발한 병렬 컴퓨팅 플랫폼 및 프로그래밍 모델입니다.
-GPU 기능을 활용하여 컴퓨팅 성능을 획기적으로 증대할 수 있습니다.
-현재 심층 학습 프레임워크에서는 CUDA Toolkit 8.0이 필요합니다.
+[CUDA](https://developer.nvidia.com/cuda-zone)는 NVIDIA가 개발한 병렬 컴퓨팅 플랫폼 및 프로그래밍 모델입니다. GPU 기능을 활용하여 컴퓨팅 성능을 획기적으로 증대할 수 있습니다. 현재 심층 학습 프레임워크에서는 CUDA Toolkit 8.0이 필요합니다.
 
 CUDA를 설치하려면
 
@@ -60,7 +59,7 @@ CUDA를 설치하려면
 - CUDA 런타임 라이브러리를 설치한 다음 CUDA 이진 경로를 %PATH% 또는 $Path 환경 변수에 추가합니다.
 - Windows에서 기본적으로 이 경로는 "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin"입니다.
 
-![Windows에 CUDA 설치](media\installation\install_cuda_win.png)
+![Windows에 CUDA 설치](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -86,7 +85,7 @@ Python은 심층 학습 응용 프로그램의 기본 프로그래밍 언어입�
 
 심층 학습 프레임워크는 자체 설치에 pip를 사용합니다.
 
-![Windows에 Python 설치 ](media\installation\install_python_win.png)
+![Windows에 Python 설치](media/installation/install_python_win.png)
 
 이제 Python 3.5가 제대로 설치되었는지 확인하고 터미널에서 다음 명령을 실행하여 pip를 최신 버전으로 업그레이드합니다.
 
