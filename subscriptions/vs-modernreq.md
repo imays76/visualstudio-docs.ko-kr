@@ -9,12 +9,12 @@ description: 선택한 Visual Studio Enterprise 구독에 포함된 ModernRequir
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1c080b19694495057243c2d8df9ee505bd650cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942870"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 MODERNRequirements4TFS 혜택
 
@@ -22,69 +22,70 @@ ms.locfileid: "44279026"
 
 
 ## <a name="activation-steps"></a>활성화 단계
-1.  MODERNRequirementsTFS 혜택을 사용하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
-2.  도구 섹션에서 MODERNRequirements4TFS 타일을 찾고 타일 왼쪽 아래에 있는 **코드 얻기** 링크를 클릭합니다.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements 혜택 타일](_img\vs-modernreq\vs-modernreq-tile.png)
+1. MODERNRequirementsTFS 혜택을 사용하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
+2. 도구 섹션에서 MODERNRequirements4TFS 타일을 찾고 타일 왼쪽 아래에 있는 **코드 얻기** 링크를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements 혜택 타일](_img/vs-modernreq/vs-modernreq-tile.png)
 
-2.  코드가 성공적으로 검색되었다는 알림 메시지를 받게 됩니다.  **활성화**를 클릭합니다.
+3. 코드가 성공적으로 검색되었다는 알림 메시지를 받게 됩니다.  **활성화**를 클릭합니다.
 
-3.  ModernRequirements 웹 사이트로 리디렉션되어 계정을 만들고 소프트웨어를 다운로드할 수 있습니다.  방문 페이지에서 요청받은 연락처 정보를 제공하고 **라이선스 키 가져오기 및 다운로드**를 클릭합니다.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements 방문 페이지](_img\vs-modernreq\vs-modernreq-landing.png)
-
-
-4.  다음 페이지에는 라이선스 키가 포함되어 있습니다.  페이지에서 제공하는 설치에 대한 정보를 검토한 다음, 페이지 중간에 있는 파란색 **소프트웨어를 다운로드하려면 여기를 클릭하십시오.** 링크를 클릭합니다.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements 라이선스 키](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+4. ModernRequirements 웹 사이트로 리디렉션되어 계정을 만들고 소프트웨어를 다운로드할 수 있습니다.  방문 페이지에서 요청받은 연락처 정보를 제공하고 **라이선스 키 가져오기 및 다운로드**를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements 방문 페이지](_img/vs-modernreq/vs-modernreq-landing.png)
 
 
-5.  다운로드 페이지에서 MODERNRequirements 제품군을 설치하거나 SMARTOffice4TFS 제품군에서 개별 모듈을 설치할 수 있습니다.  사용자에게 적합한 옵션은 설치한 TFS 버전 및 자신의 기본 설정에 따라 달라집니다.  올바른 버전의 제품을 선택할 수 있도록 페이지에 있는 정보를 숙지해야 합니다.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirement 다운로드 옵션](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+5. 다음 페이지에는 라이선스 키가 포함되어 있습니다.  페이지에서 제공하는 설치에 대한 정보를 검토한 다음, 페이지 중간에 있는 파란색 **소프트웨어를 다운로드하려면 여기를 클릭하십시오.** 링크를 클릭합니다.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements 라이선스 키](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
 
-6.  이 예에서는 SMARTOffice4TFS를 선택합니다.  .zip 파일을 다운로드하고 저장하는 세 가지 옵션을 제공하는 다운로드 대화 상자가 표시됩니다.  **저장**을 선택하여 PC의 [다운로드] 폴더에 패키지 복사본을 보관합니다.
 
-7.  **SmartOffice4TFS_Online.zip** 다운로드가 완료되면 **폴더 열기**를 클릭합니다.
+6. 다운로드 페이지에서 MODERNRequirements 제품군을 설치하거나 SMARTOffice4TFS 제품군에서 개별 모듈을 설치할 수 있습니다.  사용자에게 적합한 옵션은 설치한 TFS 버전 및 자신의 기본 설정에 따라 달라집니다.  올바른 버전의 제품을 선택할 수 있도록 페이지에 있는 정보를 숙지해야 합니다.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirement 다운로드 옵션](_img/vs-modernreq/vs-modernreq-download-page-new.png)
 
-8.  "SmartOffice4TFS_Online" 폴더를 엽니다.
+7. 이 예에서는 SMARTOffice4TFS를 선택합니다.  .zip 파일을 다운로드하고 저장하는 세 가지 옵션을 제공하는 다운로드 대화 상자가 표시됩니다.  **저장**을 선택하여 PC의 [다운로드] 폴더에 패키지 복사본을 보관합니다.
 
-9.  "SmartOffice4TFS_Online" 하위 폴더를 엽니다.
+8. **SmartOffice4TFS_Online.zip** 다운로드가 완료되면 **폴더 열기**를 클릭합니다.
 
-10. 이 폴더에는 다음 네 가지 설치 관리자 응용 프로그램이 하나씩 포함되어 있습니다.
+9. "SmartOffice4TFS_Online" 폴더를 엽니다.
+
+10. "SmartOffice4TFS_Online" 하위 폴더를 엽니다.
+
+11. 이 폴더에는 다음 네 가지 설치 관리자 응용 프로그램이 하나씩 포함되어 있습니다.
     - SmartExcel4TFS_Online
     - SmartOutlook4TFS_Online
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
     > [!div class="mx-imgBorder"]
-    > ![ModernRequirement 다운로드 옵션](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > ![ModernRequirement 다운로드 옵션](_img/vs-modernreq/vs-modernreq-downloaded-cropped.png)
 
-11. 폴더에서 마우스 오른쪽 단추를 클릭하고 **모두 추출**을 선택합니다.  파일을 추출하려는 위치를 지정하고 **추출**을 클릭합니다.
+12. 폴더에서 마우스 오른쪽 단추를 클릭하고 **모두 추출**을 선택합니다.  파일을 추출하려는 위치를 지정하고 **추출**을 클릭합니다.
 
-12. 제품 중 하나를 설치하려면 [다운로드] 폴더에서 해당 응용 프로그램을 시작합니다.  이 예에서는 SmartWord4TFS를 설치합니다.  사용자 계정 컨트롤 대화 상자가 열리면 **예**를 클릭하여 응용 프로그램을 시작합니다.
+13. 제품 중 하나를 설치하려면 [다운로드] 폴더에서 해당 응용 프로그램을 시작합니다.  이 예에서는 SmartWord4TFS를 설치합니다.  사용자 계정 컨트롤 대화 상자가 열리면 **예**를 클릭하여 응용 프로그램을 시작합니다.
 
-13. 설치 마법사가 시작됩니다.  **다음** 을 클릭하여 계속합니다.
+14. 설치 마법사가 시작됩니다.  **다음** 을 클릭하여 계속합니다.
 
-14. **동의함** 라디오 단추를 클릭하여 약관에 동의하고 **다음**을 클릭합니다.
+15. **동의함** 라디오 단추를 클릭하여 약관에 동의하고 **다음**을 클릭합니다.
 
-15. 응용 프로그램을 설치하려는 위치를 선택하고, 모든 사용자 또는 자신만 사용할지 여부를 지정합니다.  **다음**을 클릭합니다.
+16. 응용 프로그램을 설치하려는 위치를 선택하고, 모든 사용자 또는 자신만 사용할지 여부를 지정합니다.  **다음**을 클릭합니다.
 
-16. SmartWord를 [작성자 모드] 또는 [검토자 모드]로 설치할지 여부를 선택합니다.  이러한 모드에 대한 자세한 내용은 [MODERNRequirements 지원](http://www.modernrequirements.com/support-2/)에 문의하세요.  **다음**을 클릭합니다.
+17. SmartWord를 [작성자 모드] 또는 [검토자 모드]로 설치할지 여부를 선택합니다.  이러한 모드에 대한 자세한 내용은 [MODERNRequirements 지원](http://www.modernrequirements.com/support-2/)에 문의하세요.  **다음**을 클릭합니다.
 
-17. 다음으로 템플릿을 설치할지 여부를 선택하고 **다음**을 클릭합니다.
+18. 다음으로 템플릿을 설치할지 여부를 선택하고 **다음**을 클릭합니다.
 
-18. **다음**을 다시 클릭하여 설치를 시작합니다.
+19. **다음**을 다시 클릭하여 설치를 시작합니다.
 
-19. [사용자 계정 컨트롤] 대화 상자가 표시되면 **예**를 클릭합니다.
+20. [사용자 계정 컨트롤] 대화 상자가 표시되면 **예**를 클릭합니다.
 
-20. 설치가 완료되면 **닫기**를 클릭합니다.
+21. 설치가 완료되면 **닫기**를 클릭합니다.
 
-21. 다음 번에 Microsoft Word를 시작하면 SmartWord4TFS 추가 기능을 설치할지 확인하는 Microsoft Office 사용자 지정 설치 관리자 대화 상자가 표시됩니다.  **설치**를 클릭합니다.
+22. 다음 번에 Microsoft Word를 시작하면 SmartWord4TFS 추가 기능을 설치할지 확인하는 Microsoft Office 사용자 지정 설치 관리자 대화 상자가 표시됩니다.  **설치**를 클릭합니다.
 
-22. Word가 열리면 추가된 SmartWord4TFS 탭이 표시됩니다. 이 탭을 클릭하여 SmartWord4TFS 도구 집합을 표시합니다.
+23. Word가 열리면 추가된 SmartWord4TFS 탭이 표시됩니다. 이 탭을 클릭하여 SmartWord4TFS 도구 집합을 표시합니다.
 
 ## <a name="eligibility"></a>자격
+
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 6개월       |  아니요.  새 구독자만 사용할 수 있음          |
@@ -94,7 +95,7 @@ ms.locfileid: "44279026"
 | Visual Studio Dev Essentials | 해당 없음  |사용할 수 없음                                                          |해당 없음     |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup> *포함: NFR(전매 금지), VSIP(Visual Studio 업계 파트너), Microsoft 파트너 네트워크(Enterprise), FTE.  제외: Microsoft 파트너 네트워크(Professional), MCT 소프트웨어 및 서비스 개발자, BizSpark, Imagine, MVP(Microsoft Valued Partner), RD(Region Director).  MCT 소프트웨어 및 서비스.*
+<sup>1</sup> *포함: NFR(전매 금지), VSIP(Visual Studio 업계 파트너), Microsoft 파트너 네트워크(Enterprise), FTE.  제외: Microsoft 파트너 네트워크(Professional), MCT Software & Services Developer, BizSpark, Imagine, MVP(Microsoft Valued Professional), RD(Region Director).  MCT 소프트웨어 및 서비스.*
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 

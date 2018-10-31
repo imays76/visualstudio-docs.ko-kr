@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: abc61f0e07ed1e22d0ec3b2c8fb15d66c9eea3cd
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151017"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220450"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>방법: MSBuild 프로젝트 SDK 사용
 
@@ -101,7 +101,7 @@ ms.locfileid: "39151017"
    이 확인자는 제품의 일부인 `Microsoft.NET.Sdk` 및 `Microsoft.NET.Sdk.Web`와 같은 프로젝트 SDK를 찾습니다.
 3. MSBuild에 설치된 SDK를 확인하는 기본 확인자.
 
-NuGet 기반 SDK 확인자는 개별 프로젝트 각각이 아닌 한 곳에서 프로젝트 SDK 버전을 제어할 수 있는 [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json)에서 버전을 지정하도록 지원합니다.
+NuGet 기반 SDK 확인자는 개별 프로젝트 각각이 아닌 한 곳에서 프로젝트 SDK 버전을 제어할 수 있는 [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json)에서 버전을 지정하도록 지원합니다.
 
 ```json
 {

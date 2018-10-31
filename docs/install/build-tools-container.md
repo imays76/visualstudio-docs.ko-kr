@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bf1427e71c21fecb0cd3822469b143b9d42df5
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 08026b744cc6b71e31179666c5f85102a4093843
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138653"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411016"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools를 컨테이너에 설치
 
@@ -57,7 +57,7 @@ Visual Studio Build Tools(및 상위 수준의 Visual Studio)에서 설치하는
 
 **Windows 10**:
 
-1. 시스템 트레이에 있는 [Windows용 Docker 아이콘을 마우스 오른쪽 단추로 클릭](https://docs.docker.com/docker-for-windows/#docker-settings)하고 **설정...** 을 클릭합니다.
+1. 시스템 트레이에 있는 [Windows용 Docker 아이콘을 마우스 오른쪽 단추로 클릭](https://docs.docker.com/docker-for-windows/#docker-settings)하고 **설정**을 클릭합니다.
 2. [디먼 섹션을 클릭](https://docs.docker.com/docker-for-windows/#docker-daemon)합니다.
 3. [**기본** 단추를 **고급**으로 전환](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file)합니다.
 4. 다음 JSON 배열 속성을 추가하여 디스크 공간을 120GB(Build Tools의 확장도 수용할 만큼 충분한 크기 이상)로 늘립니다.

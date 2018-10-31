@@ -1,7 +1,7 @@
 ---
 title: 원격 Linux 컴퓨터에서 Python 코드 디버깅
 description: 필요한 구성 단계, 보안 및 문제 해결을 포함해서 Visual Studio를 사용하여 원격 Linux 컴퓨터에서 실행 중인 Python 코드를 디버그하는 방법입니다.
-ms.date: 09/03/2018
+ms.date: 10/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549313"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356771"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Linux에서 Python 코드 원격 디버그
 
@@ -68,16 +68,14 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 1. `pip3 install ptvsd`를 사용하여 사용자 환경에 `ptvsd` 패키지를 설치합니다. 
    >[!NOTE]
-   >문제 해결에 필요한 경우를 대비하여 ptvsd 버전을 기록해 두는 것이 좋습니다. [ptvsd 목록](https://pypi.python.org/pypi/ptvsd)은 사용 가능한 버전도 보여줍니다.
+   >문제 해결에 필요한 경우를 대비하여 ptvsd 버전을 기록해 두는 것이 좋습니다. [ptvsd 목록](https://pypi.python.org/pypi/ptvsd)은 사용 가능한 버전도 보여 줍니다.
 
 1. *guessing-game.py*에서 가능한 가장 빠른 지점에 다른 코드보다 먼저 해당 코드를 추가하여 원격 디버깅을 사용하도록 설정합니다. (엄격한 요구 사항은 아니지만, `enable_attach` 함수를 호출하기 전에 생성된 모든 백그라운드 스레드를 디버그할 수는 없습니다.)
 
    ```python
    import ptvsd
-   ptvsd.enable_attach('my_secret')
+   ptvsd.enable_attach()
    ```
-
-   `enable_attach`에 전달되는 첫 번째 인수(“secret”이라고 함)는 실행 중인 스크립트에 대한 액세스를 제한하며, 사용자는 원격 디버거를 연결할 때 이 비밀을 입력하게 됩니다. (권장되지는 않지만, `enable_attach(secret=None)`를 사용하여 모든 사용자가 연결할 수 있도록 허용할 수 있습니다.)
 
 1. 파일을 저장하고 `python3 guessing-game.py`를 실행합니다. `enable_attach`에 대한 호출이 백그라운드에서 실행되고, 달리 프로그램과 상호 작용하지 않으면 들어오는 연결을 기다립니다. 원하는 경우 디버거가 연결될 때까지 `enable_attach` 뒤에 `wait_for_attach` 함수를 호출하여 프로그램을 차단할 수 있습니다.
 
@@ -96,10 +94,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 1. 나타나는 **프로세스에 연결** 대화 상자에서 **연결 형식**을 **Python remote (ptvsd)**(Python 원격(ptvsd))로 설정합니다. (이전 버전의 Visual Studio에서는 명령 이름이 **전송** 및 **Python 원격 디버깅**이었습니다.)
 
-1. **연결 대상** 필드(이전 버전의 경우 **한정자**)에 `tcp://<secret>@<ip_address>:5678`을 입력합니다. 여기서 `<secret>`은 Python 코드에서 전달된 문자열 `enable_attach`이고, `<ip_address>`는 원격 컴퓨터의 IP 주소이며(명시적 주소 또는 myvm.cloudapp.net과 같은 이름일 수 있음), `:5678`은 원격 디버깅 포트 번호입니다.
-
-    > [!Warning]
-    > 공용 인터넷으로 연결하는 경우 `tcps`를 대신 사용하고 [SSL를 사용하여 디버거 연결 보호](#secure-the-debugger-connection-with-ssl)에 대한 아래 지침을 따라야 합니다.
+1. **연결 대상** 필드(이전 버전의 경우 **한정자**)에 `tcp://<ip_address>:5678`을 입력합니다. 여기서 `<ip_address>`는 원격 컴퓨터의 IP 주소이고(명시적 주소 또는 myvm.cloudapp.net과 같은 이름일 수 있음), `:5678`은 원격 디버깅 포트 번호입니다.
 
 1. **Enter** 키를 눌러 해당 컴퓨터에서 사용할 수 있는 ptvsd 프로세스의 목록을 채웁니다.
 
@@ -121,7 +116,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 1. **연결 대상**(또는 **한정자**)의 암호가 원격 코드의 암호와 정확히 일치하는지 확인합니다.
 1. **연결 대상**(또는 **한정자**)의 IP 주소가 원격 컴퓨터의 IP 주소와 일치하는지 확인합니다.
 1. 원격 컴퓨터에서 원격 디버깅 포트를 열었는지와 연결 대상에 `:5678`과 같은 포트 접미사를 포함했는지 확인합니다.
-    - 다른 포트를 사용해야 하는 경우 `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`에서처럼 `enable_attach` 호출에서 `address` 인수를 사용하여 지정할 수 있습니다. 이 경우 방화벽에서 해당 특정 포트를 엽니다.
+    - 다른 포트를 사용해야 하는 경우 `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`에서처럼 `enable_attach` 호출에서 `address` 인수를 사용하여 지정할 수 있습니다. 이 경우 방화벽에서 해당 특정 포트를 엽니다.
 1. `pip3 list`로 반환된, 원격 컴퓨터에 설치된 ptvsd 버전이 Visual Studio에서 사용 중인 Python 도구 버전에서 사용되는 ptvsd 버전과 일치하는지 아래 표에서 확인합니다. 필요한 경우 원격 컴퓨터에서 ptvsd를 업데이트합니다.
 
     | Visual Studio 버전 | Python 도구/ptvsd 버전 |
@@ -136,9 +131,15 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="secure-the-debugger-connection-with-ssl"></a>SSL를 사용하여 디버거 연결 보호
+## <a name="using-ptvsd-3x"></a>ptvsd 3.x 사용
 
-기본적으로 ptvsd 원격 디버그 서버에 대한 연결은 암호로만 보호되고 모든 데이터는 일반 텍스트로 전달됩니다. 더 안전한 연결을 위해 ptvsd는 다음과 같이 설정하는 SSL을 지원합니다.
+다음 정보는 ptvsd 4.x에서 제거된 특정 기능을 포함하는 ptvsd 3.x를 사용한 원격 디버깅에만 적용됩니다.
+
+1. ptvsd 3.x에서 `enable_attach` 함수를 사용하려면 실행 중인 스크립트에 대한 액세스를 제한하는 첫 번째 인수로 “secret”을 전달해야 했습니다. 원격 디버거를 연결할 때 이 비밀을 입력합니다. (권장되지는 않지만, `enable_attach(secret=None)`를 사용하여 모든 사용자의 연결을 허용할 수 있습니다.)
+
+1. 연결 대상 URL은 `tcp://<secret>@<ip_address>:5678`입니다. 여기서 `<secret>`은 Python 코드의 `enable_attach`에 전달된 문자열입니다.
+
+기본적으로 ptvsd 3.x 원격 디버그 서버에 대한 연결은 비밀로만 보호되고 모든 데이터는 일반 텍스트로 전달됩니다. 보다 안전한 연결을 위해 ptvsd 3.x에서는 다음과 같이 설정하는 `tcsp` 프로토콜을 사용하여 SSL을 지원합니다.
 
 1. 원격 컴퓨터에서 다음과 같이 openssl을 사용하여 별도의 자체 서명된 인증서 및 키 파일을 생성합니다.
 
@@ -171,17 +172,12 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
     ![SSL로 원격 디버깅 전송 선택](media/remote-debugging-qualifier-ssl.png)
 
-### <a name="warnings"></a>경고
+1. SSL을 통해 연결하면 Visual Studio에서 잠재적인 인증서 문제에 대한 메시지를 표시합니다. 경고를 무시하고 계속할 수 있지만, 채널이 여전히 도청으로부터 암호화되더라도 메시지 가로채기(man-in-the-middle) 공격에 개방될 수 있습니다.
 
-아래에 설명한 대로 SSL을 통해 연결하면 Visual Studio에서 잠재적인 인증서 문제에 대한 메시지를 표시합니다. 경고를 무시하고 계속할 수 있지만, 채널이 여전히 도청으로부터 암호화되더라도 메시지 가로채기(man-in-the-middle) 공격에 개방될 수 있습니다.
+    1. 아래의 **원격 인증서를 신뢰할 수 없습니다.** 경고가 표시되는 경우 신뢰할 수 있는 루트 CA에 인증서를 제대로 추가하지 않았음을 의미합니다. 해당 단계를 확인하고 다시 시도합니다.
 
-1. 아래의 **원격 인증서를 신뢰할 수 없습니다.** 경고가 표시되는 경우 신뢰할 수 있는 루트 CA에 인증서를 제대로 추가하지 않았음을 의미합니다. 해당 단계를 확인하고 다시 시도합니다.
+        ![SSL 인증서를 신뢰할 수 있습니다. 경고](media/remote-debugging-ssl-warning.png)
 
-    ![SSL 인증서를 신뢰할 수 있습니다. 경고](media/remote-debugging-ssl-warning.png)
+    1. 아래의 **원격 인증서 이름이 호스트 이름과 일치하지 않습니다.** 경고가 표시되는 경우 인증서를 만들 때 **일반 이름**으로 올바른 호스트 이름 또는 IP 주소를 사용하지 않았음을 의미합니다.
 
-1. 아래의 **원격 인증서 이름이 호스트 이름과 일치하지 않습니다.** 경고가 표시되는 경우 인증서를 만들 때 **일반 이름**으로 올바른 호스트 이름 또는 IP 주소를 사용하지 않았음을 의미합니다.
-
-    ![SSL 인증서 호스트 이름 경고](media/remote-debugging-ssl-warning2.png)
-
-> [!Warning]
-> 현재는 이러한 경고를 무시할 경우 Visual Studio 2017의 작동이 중단됩니다. 연결하기 전에 모든 문제를 해결해야 합니다.
+        ![SSL 인증서 호스트 이름 경고](media/remote-debugging-ssl-warning2.png)

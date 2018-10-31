@@ -1,7 +1,7 @@
 ---
 title: '빠른 시작: Visual Studio를 사용하여 Python 웹앱 만들기'
 description: 이 빠른 시작에서 Visual Studio 및 Flask 프레임워크를 사용하여 Python에서 간단한 웹앱을 빌드합니다.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877116"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219278"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기
 

@@ -1,7 +1,7 @@
 ---
 title: Python 인터프리터 선택 및 설치
 description: 설치 관리자를 찾을 위치에 대한 간단한 지침이 포함된 Visual Studio에서 지원되는 Python 인터프리터의 전체 목록입니다.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548969"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324979"
 ---
 # <a name="install-python-interpreters"></a>Python 인터프리터 설치
 
 기본적으로 Visual Studio 2017에 Python 개발 워크로드를 설치하면 Python 3(64비트)도 설치됩니다. 필요한 경우 [설치](installing-python-support-in-visual-studio.md)에 설명된 대로 32비트 및 64비트 버전의 Python 2, Python 3, Anaconda 2 및 Anaconda 3을 설치하도록 선택할 수 있습니다.
 
-Visual Studio 설치 관리자 외부에서 아래 표에 나열된 인터프리터를 수동으로 설치할 수도 있습니다. 예를 들어 Visual Studio를 설치하기 전에 Anaconda 3을 설치한 경우 Visual Studio 설치 관리자를 통해 다시 설치할 필요가 없습니다.
+Visual Studio 설치 관리자 외부에서 아래 표에 나열된 인터프리터를 수동으로 설치할 수도 있습니다. 예를 들어 Visual Studio를 설치하기 전에 Anaconda 3을 설치한 경우 Visual Studio 설치 관리자를 통해 다시 설치할 필요가 없습니다. 예를 들어 Visual Studio 설치 관리자에 아직 표시되지 않는 사용 가능한 인터프리터의 최신 버전이 있는 경우에도 인터프리터를 수동으로 설치할 수 있습니다.
 
 **Visual Studio 2015 이하**의 경우 인터프리터 중 하나를 수동으로 설치해야 합니다.
 

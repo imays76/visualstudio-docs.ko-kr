@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748220"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143192"
 ---
 # <a name="walkthrough-build-an-application"></a>연습: 응용 프로그램 빌드
 
@@ -100,7 +100,7 @@ ms.locfileid: "34748220"
 
 1. **빌드** 페이지를 선택하고 **경고 표시 안 함** 상자에서 경고 번호 **0168**을 지정합니다.
 
-     ![프로젝트 디자이너, 빌드 페이지](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![프로젝트 디자이너, 빌드 페이지](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      자세한 내용은 [프로젝트 디자이너, 빌드 페이지(C#)](../ide/reference/build-page-project-designer-csharp.md)를 참조하세요.
 
@@ -114,23 +114,23 @@ ms.locfileid: "34748220"
 
 1. **솔루션 탐색기**에서 최상위 프로젝트 노드를 선택합니다.
 
-1. 메뉴 모음에서 **보기** > **속성 페이지**를 선택합니다.
+2. 메뉴 모음에서 **보기** > **속성 페이지**를 선택합니다.
 
      **프로젝트 디자이너**가 열립니다.
 
-1. **컴파일** 페이지에서 **모든 경고 사용 안 함** 확인란을 선택합니다.
+3. **컴파일** 페이지에서 **모든 경고 사용 안 함** 확인란을 선택합니다.
 
-     ![프로젝트 디자이너, 컴파일 페이지](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![프로젝트 디자이너, 컴파일 페이지](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      자세한 내용은 [Visual Basic에서 경고 구성](../ide/configuring-warnings-in-visual-basic.md)을 참조하세요.
 
-1. 솔루션을 빌드합니다.
+4. 솔루션을 빌드합니다.
 
- **출력** 창에는 빌드에 대한 요약 정보만 표시됩니다.
+   **출력** 창에는 빌드에 대한 요약 정보만 표시됩니다.
 
- ![출력 창, Visual Basic 빌드 경고](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![출력 창, Visual Basic 빌드 경고](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- 자세한 내용은 [방법: 컴파일러 경고 표시 안 함](../ide/how-to-suppress-compiler-warnings.md)을 참조하세요.
+   자세한 내용은 [방법: 컴파일러 경고 표시 안 함](../ide/how-to-suppress-compiler-warnings.md)을 참조하세요.
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>출력 창에 추가 빌드 세부 정보 표시
 
@@ -138,7 +138,6 @@ ms.locfileid: "34748220"
 
 > [!IMPORTANT]
 > 추가 정보를 표시하면 빌드를 완료하는 데 더 오랜 시간이 걸립니다.
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>[출력] 창에서 정보의 양 변경
 
@@ -221,7 +220,7 @@ ms.locfileid: "34748220"
 
    실행 파일이 지정한 네트워크 경로에 복사됩니다. 해당 경로는 `\\myserver\builds\\FileName.exe`입니다.
 
-축하합니다. 이 연습을 완료했습니다.
+지금까지 이 연습을 완료했습니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854483"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio의 기본 바로 가기 키
 
@@ -47,20 +47,20 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_analyze"></a> 분석
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Analyze.NavigateBackward|**Shift+Alt+3**|
 |Analyze.NavigateForward|**Shift+Alt+4**|
 
 ###  <a name="bkmk_architecture"></a> 아키텍처
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Architecture.NewDiagram|**Ctrl+\\, Ctrl+N**|
 
 ###  <a name="bkmk_build"></a> 빌드
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |빌드.솔루션빌드|**Ctrl+Shift+B**|
 |빌드.취소|**Ctrl+Break**|
 |빌드.컴파일|**Ctrl+F7**|
@@ -69,13 +69,13 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_classview"></a> 클래스 뷰 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Enter**|
 
 ###  <a name="bkmk_debug"></a> 디버그
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |디버그.코드변경내용적용|**Alt+F10**|
 |디버그.자동|**Ctrl+Alt+V, A**|
 |디버그.모두중단|**Ctrl+Alt+Break**|
@@ -143,7 +143,7 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_debugger"></a> 디버거 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |디버거상황에맞는메뉴.중단점창.삭제|**Alt+F9, D**|
 |디버거상황에맞는메뉴.중단점창.디스어셈블리로이동|**Alt+F9, A**|
 |디버거상황에맞는메뉴.중단점창.소스코드로이동|**Alt+F9, S**|
@@ -151,7 +151,7 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_diagnostics"></a> 진단 허브
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
 ###  <a name="bkmk_edit"></a> 편집
@@ -216,25 +216,25 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_editorContext"></a> 편집기 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**Alt+F9, L**|
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**Ctrl+`**|
 |EditorContextMenus.CodeWindow.Execute|**Ctrl+Alt+F5**|
 |EditorContextMenus.CodeWindow.GoToView|**Ctrl+M, Ctrl+G**|
-|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K, Ctrl+O**|
+|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K, Ctrl+O**(문자 ‘O’)|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> 또는<br /><br /> **Ctrl+K, T**|
 
 ###  <a name="bkmk_file"></a> 파일
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |File.Exit|**Alt+F4**|
 |파일.새파일|**Ctrl+N**|
 |파일.새프로젝트|**Ctrl+Shift+N**|
 |파일.새웹사이트|**Shift+Alt+N**|
-|파일.파일열기|**Ctrl+O**|
-|파일.프로젝트열기|**Ctrl+Shift+O**|
-|파일.웹사이트열기|**Shift+Alt+O**|
+|파일.파일열기|**Ctrl+O**(문자 ‘O’)|
+|파일.프로젝트열기|**Ctrl+Shift+O**(문자 ‘O’)|
+|파일.웹사이트열기|**Shift+Alt+O**(문자 ‘O’)|
 |파일.인쇄|**Ctrl+P**|
 |파일.모두저장|**Ctrl+Shift+S**|
 |파일.선택한항목저장|**Ctrl+S**|
@@ -243,7 +243,7 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_help"></a> 도움말
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Help.AddandRemoveHelpContent|**Ctrl+Alt+F1**|
 |도움말.F1도움말|**F1**|
 |도움말.도움말보기|**Ctrl+F1**|
@@ -252,88 +252,88 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_loadtest"></a> 부하 테스트
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R, Q**|
 
 ###  <a name="bkmk_otherContext"></a> 기타 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**삽입**|
 
 ###  <a name="bkmk_project"></a> 프로젝트
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |프로젝트.기존항목추가|**Shift+Alt+A**|
 |프로젝트.새항목추가|**Ctrl+Shift+A**|
 |Project.ClassWizard|**Ctrl+Shift+A**|
 |프로젝트.재정의|**Ctrl+Alt+Ins**|
-|Project.Previewchanges|**Alt+;, Alt+C**|
-|Project.Publishselectedfiles|**Alt+;, Alt+P**|
-|Project.Replaceselectedfilesfromserver|**Alt+;, Alt+R**|
+|Project.Previewchanges|**Alt+;**, **Alt+C**|
+|Project.Publishselectedfiles|**Alt+;**, **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**Alt+;**, **Alt+R**|
 
 ###  <a name="bkmk_projectContext"></a> 프로젝트 및 솔루션 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+아래쪽 화살표**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+위쪽 화살표**|
 
 ###  <a name="bkmk_refactor"></a> 리팩터링
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |리팩터링.필드캡슐화|**Ctrl+R, Ctrl+E**|
 |리팩터링.인터페이스추출|**Ctrl+R, Ctrl+I**|
 |리팩터링.메서드추출|**Ctrl+R, Ctrl+M**|
 |리팩터링.매개변수제거|**Ctrl+R, Ctrl+V**|
 |리팩터링.이름바꾸기|**Ctrl+R, Ctrl+R**|
-|리팩터링.매개변수다시정렬|**Ctrl+R, Ctrl+O**|
+|리팩터링.매개변수다시정렬|**Ctrl+R, Ctrl+O**(문자 ‘O’)|
 
 ###  <a name="bkmk_solutionexplorerGLOBAL"></a> 솔루션 탐색기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
-|SolutionExplorer.OpenFilesFilter|**Ctrl+[, O**<br /><br /> 또는<br /><br /> **Ctrl+[, Ctrl+O**|
-|SolutionExplorer.PendingChangesFilter|**Ctrl+[, P**<br /><br /> 또는<br /><br /> **Ctrl+[, Ctrl+P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[, S**<br /><br /> 또는<br /><br /> **Ctrl+[, Ctrl+S**|
+|--------------| - |
+|SolutionExplorer.OpenFilesFilter|**Ctrl+[**, **O**(문자 ‘O’)<br /><br /> 또는<br /><br /> **Ctrl+[**, **Ctrl+O**(문자 ‘O’)|
+|SolutionExplorer.PendingChangesFilter|**Ctrl+[**, **P**<br /><br /> 또는<br /><br /> **Ctrl+[**, **Ctrl+P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**, **S**<br /><br /> 또는<br /><br /> **Ctrl+[**, **Ctrl+S**|
 
 ###  <a name="bkmk_team"></a> 팀
 
 |명령|바로 가기 키|
-|--------------|------------------------|
-|Team.Git.GoToGitBranches|**Ctrl+0, Ctrl+N**<br /><br /> 또는<br /><br /> **Ctrl+0, N**|
-|Team.Git.GoToGitChanges|**Ctrl+0, Ctrl+G**<br /><br /> 또는<br /><br /> **Ctrl+0, G**|
-|Team.Git.GoToGitCommits|**Ctrl+0, Ctrl+O**<br /><br /> 또는<br /><br /> **Ctrl+0, O**|
+|--------------| - |
+|Team.Git.GoToGitBranches|**Ctrl+0**(영), **Ctrl+N**<br /><br /> 또는<br /><br /> **Ctrl+0, N**|
+|Team.Git.GoToGitChanges|**Ctrl+0**(영), **Ctrl+G**<br /><br /> 또는<br /><br /> **Ctrl+0, G**|
+|Team.Git.GoToGitCommits|**Ctrl+0**(영), **Ctrl+O**(문자 ‘O’)<br /><br /> 또는<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**Ctrl+'**|
 
 ###  <a name="bkmk_TFcontext"></a> Team Foundation 상황에 맞는 메뉴
 
 |명령|바로 가기 키|
-|--------------|------------------------|
-|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl+0, Ctrl+B**<br /><br /> 또는<br /><br /> **Ctrl+0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl+0, Ctrl+C**<br /><br /> 또는<br /><br /> **Ctrl+0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl+0, Ctrl+D**<br /><br /> 또는<br /><br /> **Ctrl+0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl+0, Ctrl+H**<br /><br /> 또는<br /><br /> **Ctrl+0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl+0, Ctrl+M**<br /><br /> 또는<br /><br /> **Ctrl+0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl+0, Ctrl+P**<br /><br /> 또는<br /><br /> **Ctrl+0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl+0, Ctrl+R**<br /><br /> 또는<br /><br /> **Ctrl+0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl+0, Ctrl+S**<br /><br /> 또는<br /><br /> **Ctrl+0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0, Ctrl+A**<br /><br /> 또는<br /><br /> **Ctrl+0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0, Ctrl+W**<br /><br /> 또는<br /><br /> **Ctrl+0, W**|
+|--------------| - |
+|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl+0**(영), **Ctrl+B**<br /><br /> 또는<br /><br /> **Ctrl+0, B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl+0**(영), **Ctrl+C**<br /><br /> 또는<br /><br /> **Ctrl+0, C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl+0**(영), **Ctrl+D**<br /><br /> 또는<br /><br /> **Ctrl+0, D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl+0**(영), **Ctrl+H**<br /><br /> 또는<br /><br /> **Ctrl+0, H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl+0**(영), **Ctrl+M**<br /><br /> 또는<br /><br /> **Ctrl+0, M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl+0**(영), **Ctrl+P**<br /><br /> 또는<br /><br /> **Ctrl+0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl+0**(영), **Ctrl+R**<br /><br /> 또는<br /><br /> **Ctrl+0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl+0**(영), **Ctrl+S**<br /><br /> 또는<br /><br /> **Ctrl+0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0**(영), **Ctrl+A**<br /><br /> 또는<br /><br /> **Ctrl+0, A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0**(영), **Ctrl+W**<br /><br /> 또는<br /><br /> **Ctrl+0, W**|
 
 ###  <a name="bkmk_test"></a> 테스트
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl+\\, Ctrl+C**|
 |Test.UseExistingActionRecording|**Ctrl+\\, Ctrl+A**|
 
 ###  <a name="bkmk_testexplorerGLOBAL"></a> 테스트 탐색기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |TestExplorer.DebugAllTests|**Ctrl+R, Ctrl+A**|
 |TestExplorer.DebugAllTestsInContext|**Ctrl+R, Ctrl+T**|
 |TestExplorer.RepeatLastRun|**Ctrl+R, L**|
@@ -343,7 +343,7 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_tools"></a> 도구
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P**|
 |도구.코드조각관리자|**Ctrl+K, Ctrl+B**|
 |Tools.ForceGC|**Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12**|
@@ -352,7 +352,7 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_view"></a> 보기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |View.AllWindows|**Shift+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+\\, Ctrl+R**|
 |View.Backward|**Alt+왼쪽 화살표**|
@@ -379,7 +379,7 @@ ms.locfileid: "46371162"
 |View.Notifications|**Ctrl+W, N**<br /><br /> 또는<br /><br /> **Ctrl+W, Ctrl+N**|
 |보기.개체브라우저|**Ctrl+Alt+J**|
 |보기.개체브라우저검색콤보상자로이동|**Ctrl+K, Ctrl+R**|
-|보기.출력|**Ctrl+Alt+O**|
+|보기.출력|**Ctrl+Alt+O**(문자 ‘O’)|
 |View.PopBrowseContex|**Ctrl+Shift+8**|
 |보기.속성창|**F4**|
 |보기.속성페이지|**Shift+F4**|
@@ -401,7 +401,7 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_window"></a> 창
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |창.문서창활성화|**Esc**|
 |Window.AddTabtoSelection|**Ctrl+Shift+Alt+스페이스바**|
 |창.문서창닫기|**Ctrl+F4**|
@@ -432,14 +432,14 @@ ms.locfileid: "46371162"
 ###  <a name="bkmk_windowsazure"></a> Azure
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl+Num \*, Ctrl+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl+Num \*, Ctrl+D**|
 
 ##  <a name="adonet-entity-data-model-designer"></a>ADO.NET 엔터티 데이터 모델 디자이너
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**Alt+아래쪽 화살표**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**Alt+PgDn**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**Alt+End**|
@@ -454,7 +454,7 @@ ms.locfileid: "46371162"
 ##  <a name="class-diagram"></a>클래스 다이어그램
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |클래스다이어그램.축소|**Num -**|
 |클래스다이어그램.확장|**Num +**|
 |편집.삭제|**Ctrl+Del**|
@@ -466,7 +466,7 @@ ms.locfileid: "46371162"
 ##  <a name="coded-ui-test-editor"></a>코딩된 UI 테스트 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**Ctrl+C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**Ctrl+Alt+D**|
 |OtherContextMenus.UITestEditorContextMenu.LocateAll|**Shift+Alt+L**|
@@ -477,14 +477,14 @@ ms.locfileid: "46371162"
 ##  <a name="dataset-editor"></a>데이터 집합 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |기타상황에맞는메뉴.열컨텍스트.열삽입|**삽입**|
 |기타상황에맞는메뉴.DB테이블컨텍스트.추가.열|**Ctrl+L**|
 
 ##  <a name="difference-viewer"></a>차이점 뷰어
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Diff.IgnoreTrimWhitespace|**Ctrl+\\, Ctrl+스페이스바**|
 |Diff.InlineView|**Ctrl+\\, Ctrl+1**|
 |Diff.LeftOnlyView|**Ctrl+\\, Ctrl+3**|
@@ -500,7 +500,7 @@ ms.locfileid: "46371162"
 ##  <a name="dom-explorer"></a>DOM 탐색기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |DOMExplorer.Refresh|**F5**|
 |DOMExplorer.SelectElement|**Ctrl+B**|
 |DOMExplorer.ShowLayout|**Ctrl+Shift+I**|
@@ -508,13 +508,13 @@ ms.locfileid: "46371162"
 ##  <a name="f-interactive"></a>F# 대화형
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl+Break**|
 
 ##  <a name="graph-document-editor"></a>그래프 문서 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**삽입**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
@@ -526,13 +526,13 @@ ms.locfileid: "46371162"
 ##  <a name="graphics-diagnostics"></a>그래픽 진단
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Debug.Graphics.CaptureFrame|없음|
 |Graphics.MovePixelSelectionDown|**Shift+Alt+아래쪽 화살표**|
 |Graphics.MovePixelSelectionLeft|**Shift+Alt+왼쪽 화살표**|
 |Graphics.MovePixelSelectionRight|**Shift+Alt+오른쪽 화살표**|
 |Graphics.MovePixelSelectionUp|**Shift+Alt+위쪽 화살표**|
-|Graphics.ZoomToActualSize|**Shift+Alt+0**|
+|Graphics.ZoomToActualSize|**Shift+Alt+0**(영)|
 |Graphics.ZoomToFitInWindow|**Shift+Alt+9**|
 |Graphics.ZoomIn|**Shift+Alt+=**|
 |Graphics.ZoomOut|**Shift+Alt+-**|
@@ -540,13 +540,13 @@ ms.locfileid: "46371162"
 ##  <a name="html-editor"></a>HTML 편집기
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 
 ##  <a name="html-editor-design-view"></a>HTML 편집기 디자인 뷰
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |편집.컨트롤아래로이동|**Ctrl+아래쪽 화살표**|
 |편집.컨트롤위로이동|**Ctrl+위쪽 화살표**|
 |서식.굵게|**Ctrl+B**|
@@ -569,7 +569,7 @@ ms.locfileid: "46371162"
 ##  <a name="html-editor-source-view"></a>HTML 편집기 소스 뷰
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 |보기.다음뷰|**Ctrl+PgDn**|
 |View.SynchronizeViews|**Ctrl+Shift+Y**|
@@ -579,13 +579,13 @@ ms.locfileid: "46371162"
 ##  <a name="layer-diagram"></a>레이어 다이어그램
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |편집.삭제|**Shift+Delete**|
 
 ##  <a name="managed-resources-editor"></a>관리되는 리소스 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |편집.셀편집|**F2**|
 |편집.제거|**삭제**|
 |편집.행제거|**Ctrl+Delete**|
@@ -600,7 +600,7 @@ ms.locfileid: "46371162"
 ##  <a name="merge-editor-window"></a>병합 편집기 창
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow|**Alt+1**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
@@ -608,7 +608,7 @@ ms.locfileid: "46371162"
 ##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, 스키마 비교
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |SQL.SSDTSchemaCompareCompare|**Shift+Alt+C**|
 |SQL.SSDTSchemaCompareGenerateScript|**Shift+Alt+G**|
 |SQL.SSDTSchemaCompareNextChange|**Shift+Alt+.**|
@@ -619,7 +619,7 @@ ms.locfileid: "46371162"
 ##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, 테이블 디자이너
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**Shift+Alt+U**|
 |SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> 또는<br /><br /> **Ctrl+R, Ctrl+E**|
 |SQL.FullyqualifyNames|**Ctrl+R, Q**<br /><br /> 또는<br /><br /> **Ctrl+R, Ctrl+Q**|
@@ -630,7 +630,7 @@ ms.locfileid: "46371162"
 ##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, T-SQL 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**Shift+Alt+U**|
 |SQL.ExecuteWithDebugger|**Alt+F5**|
 |SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> 또는<br /><br /> **Ctrl+R, Ctrl+E**|
@@ -651,7 +651,7 @@ ms.locfileid: "46371162"
 ##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, T-SQL PDW 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |SQL.TSqlEditorCancelQuery|**Alt+Break**|
 |SQL.TSqlEditorExecuteQuery|**Ctrl+Shift+E**|
 |SQL.TSqlEditorResultsAsFile|**Ctrl+D, F**|
@@ -666,13 +666,13 @@ ms.locfileid: "46371162"
 ##  <a name="page-inspector"></a>페이지 검사기
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |PageInspector.Minimize|**F12**|
 
 ##  <a name="query-designer"></a>쿼리 디자이너
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |쿼리디자이너.데이터검색취소|**Ctrl+T**|
 |쿼리디자이너.조건|**Ctrl+2**|
 |쿼리디자이너.다이어그램|**Ctrl+1**|
@@ -685,7 +685,7 @@ ms.locfileid: "46371162"
 ##  <a name="query-results"></a>쿼리 결과
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |SQL.QueryResultsNewRow|**Alt+End**|
 |SQL.QueryResultsRefresh|**Shift+Alt+R**|
 |SQL.QueryResultsStop|**Alt+Break**|
@@ -693,7 +693,7 @@ ms.locfileid: "46371162"
 ##  <a name="report-designer"></a>보고서 디자이너
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |편집.구분선|**Enter**|
 |편집.왼쪽문자로|**왼쪽 화살표**|
 |편집.왼쪽문자까지선택|**Shift+왼쪽 화살표**|
@@ -719,14 +719,14 @@ ms.locfileid: "46371162"
 ##  <a name="sequence-diagram"></a>시퀀스 다이어그램
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |편집.삭제|**Shift+Del**|
 
 ##  <a name="settings-designer"></a>설정 디자이너
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |편집.셀편집|**F2**|
 |편집.행제거|**Ctrl+Delete**|
 |편집.선택취소|**Esc**|
@@ -735,18 +735,18 @@ ms.locfileid: "46371162"
 ##  <a name="solution-explorer"></a>솔루션 탐색기
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
 
 ##  <a name="team-explorer"></a>팀 탐색기
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |편집.삭제|**삭제**|
 |파일.이름바꾸기|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt+Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt+아래쪽 화살표**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt+0**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt+0**(영)|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**Alt+위쪽 화살표**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**Alt+1**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**Alt+2**|
@@ -766,154 +766,154 @@ ms.locfileid: "46371162"
 ##  <a name="test-explorer"></a>테스트 탐색기
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
 ##  <a name="text-editor"></a>텍스트 편집기
 
-|명령|바로 가기 키|
-|--------------|------------------------|
-|편집.구분선|**Enter**<br /><br /> 또는<br /><br /> **Shift+Enter**|
-|편집.왼쪽문자로|**왼쪽 화살표**|
-|편집.왼쪽문자까지선택|**Shift+왼쪽 화살표**|
-|편집.왼쪽문자까지열확장선택|**Shift+Alt+왼쪽 화살표**|
-|편집.오른쪽문자로|**오른쪽 화살표**|
-|편집.오른쪽문자까지선택|**Shift+오른쪽 화살표**|
-|편집.오른쪽문자까지열확장선택|**Shift+Alt+오른쪽 화살표**|
-|편집.문자바꾸기|**Ctrl+T**|
-|편집.책갈피지우기|**Ctrl+K, Ctrl+L**|
-|편집.전체개요축소|**Ctrl+M, Ctrl+A**|
-|편집.현재영역축소|**Ctrl+M, Ctrl+S**|
-|편집.태그축소|**Ctrl+M, Ctrl+T**|
-|편집.정의부분만보이기|**Ctrl+M, Ctrl+O**|
-|편집.선택영역을주석으로처리|**Ctrl+K, Ctrl+C**|
-|편집.단어자동완성|**Ctrl+스페이스바**<br /><br /> 또는<br /><br /> **Alt+오른쪽 화살표**|
-|편집.매개변수팁복사|**Ctrl+Shift+Alt+C**|
-|편집.필터수준낮춤|**Alt+,**|
-|편집.뒤로삭제|**백스페이스**<br /><br /> 또는<br /><br /> **Shift+Bkspce**|
-|편집.가로공백삭제|**Ctrl+K, Ctrl+\**|
-|편집.문서끝으로|**Ctrl+End**|
-|편집.문서끝까지선택|**Ctrl+Shift+End**|
-|편집.문서시작으로|**Ctrl+Home**|
-|편집.문서시작까지선택|**Ctrl+Shift+Home**|
-|편집.전체개요확장|**Ctrl+M, Ctrl+X**|
-|편집.현재영역확장|**Ctrl+M, Ctrl+E**|
-|편집.문서서식|**Ctrl+K, Ctrl+D**|
-|편집.선택영역서식|**Ctrl+K, Ctrl+F**|
-|Edit.GotoBrace|**Ctrl+]**|
-|편집.중괄호로이동확장|**Ctrl+Shift+]**|
-|편집.선택영역숨기기|**Ctrl+M, Ctrl+H**|
-|편집.필터수준높임|**Alt+.**|
-|편집.증분검색|**Ctrl+I**|
-|편집.탭삽입|**Tab**|
-|편집.줄잘라내기|**Ctrl+L**|
-|편집.줄삭제|**Ctrl+Shift+L**|
-|편집.줄아래로|**아래쪽 화살표**|
-|편집.한줄아래까지선택|**Shift+아래쪽 화살표**|
-|편집.한줄아래까지열확장선택|**Shift+Alt+아래쪽 화살표**|
-|편집.줄끝으로|**End**|
-|편집.줄끝까지선택|**Shift+End**|
-|편집.줄끝까지열확장선택|**Shift+Alt+End**|
-|편집.위쪽줄열기|**Ctrl+Enter**|
-|편집.아래쪽줄열기|**Ctrl+Shift+Enter**|
-|편집.줄시작으로|**Home**|
-|편집.줄시작까지선택|**Shift+Home**|
-|편집.줄시작까지열확장선택|**Shift+Alt+Home**|
-|편집.줄바꾸기|**Shift+Alt+T**|
-|편집.줄위로|**위쪽 화살표**|
-|편집.한줄위까지선택|**Shift+위쪽 화살표**|
-|편집.한줄위까지열확장선택|**Shift+Alt+위쪽 화살표**|
-|편집.멤버목록|**Ctrl+J**|
-|편집.소문자로|**Ctrl+U**|
-|편집.대문자로|**Ctrl+Shift+U**|
-|Edit.MoveSelectedLinesDown|**Alt+아래쪽 화살표**|
-|Edit.MoveSelectedLinesUp|**Alt+위쪽 화살표**|
-|편집.다음강조표시참조|**Ctrl+Shift+아래쪽 화살표**|
-|편집.겹쳐쓰기모드|**삽입**|
-|편집.페이지아래로|**PgDn**|
-|편집.한페이지아래까지선택|**Shift+PgDn**|
-|편집.페이지위로|**PgUp**|
-|편집.한페이지위까지선택|**Shift+PgUp**|
-|편집.매개변수정보|**Ctrl+Shift+스페이스바**|
-|편집.매개변수팁붙여넣기|**Ctrl+Shift+Alt+P**|
-|Edit.PeekBackward|**Ctrl+Alt+-**|
-|Edit.PeekDefinition|**Alt+F12**|
-|Edit.PeekForward|**Ctrl+Alt+=**|
-|편집.이전강조표시참조|**Ctrl+Shift+위쪽 화살표**|
-|편집.요약정보|**Ctrl+K, Ctrl+I**|
-|편집.역방향증분검색|**Ctrl+Shift+I**|
-|편집.아래로줄스크롤|**Ctrl+아래쪽 화살표**|
-|편집.위로줄스크롤|**Ctrl+위쪽 화살표**|
-|편집.현재단어선택|**Ctrl+W**|
-|편집.선택취소|**Esc**|
-|편집.이전위치까지선택|**Ctrl+=**|
-|Edit.ShowCodeLensMenu|**Alt+`**|
-|편집.현재숨기기중지|**Ctrl+M, Ctrl+U**|
-|편집.개요표시중지|**Ctrl+M, Ctrl+P**|
-|편집.앵커바꾸기|**Ctrl+K, Ctrl+A**|
-|편집.왼쪽으로탭이동|**Shift+Tab**|
-|편집.전체개요표시숨기기|**Ctrl+M, Ctrl+L**|
-|편집.책갈피설정해제|**Ctrl+K, Ctrl+K**|
-|편집.완료모드설정/해제|**Ctrl+Alt+스페이스바**|
-|편집.개요확장축소|**Ctrl+M, Ctrl+M**|
-|편집.작업목록바로가기설정해제|**Ctrl+K, Ctrl+H**|
-|편집.자동줄바꿈설정해제|**Ctrl+E, Ctrl+W**|
-|편집.선택영역의주석처리제거|**Ctrl+K, Ctrl+U**|
-|편집.뷰맨아래로|**Ctrl+PgDn**|
-|편집.뷰맨아래까지선택|**Ctrl+Shift+PgDn**|
-|편집.뷰맨위로|**Ctrl+PgUp**|
-|편집.뷰맨위까지선택|**Ctrl+Shift+PgUp**|
-|편집.공백보기|**Ctrl+R, Ctrl+W**|
-|편집.끝까지단어삭제|**Ctrl+Delete**|
-|편집.시작까지단어삭제|**Ctrl+백스페이스**|
-|편집.다음단어로|**Ctrl+오른쪽 화살표**|
-|편집.다음단어까지선택|**Ctrl+Shift+오른쪽 화살표**|
-|편집.다음단어까지열확장선택|**Ctrl+Shift+Alt+오른쪽 화살표**|
-|편집.이전단어로|**Ctrl+왼쪽 화살표**|
-|편집.이전단어까지선택|**Ctrl+Shift+왼쪽 화살표**|
-|편집.이전단어까지열확장선택|**Ctrl+Shift+Alt+왼쪽 화살표**|
-|편집.단어바꾸기|**Ctrl+Shift+T**|
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|**Alt+Enter**|
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|**Alt+'**|
-|OtherContextMenus.HTMLContext.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|**Alt+PgDn**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|**Alt+PgUp**|
+| 명령 | 바로 가기 키 |
+| - | - |
+| 편집.구분선 | **Enter**<br /><br /> 또는<br /><br /> **Shift+Enter** |
+| 편집.왼쪽문자로 | **왼쪽 화살표** |
+| 편집.왼쪽문자까지선택 | **Shift+왼쪽 화살표** |
+| 편집.왼쪽문자까지열확장선택 | **Shift+Alt+왼쪽 화살표** |
+| 편집.오른쪽문자로 | **오른쪽 화살표** |
+| 편집.오른쪽문자까지선택 | **Shift+오른쪽 화살표** |
+| 편집.오른쪽문자까지열확장선택 | **Shift+Alt+오른쪽 화살표** |
+| 편집.문자바꾸기 | **Ctrl+T** |
+| 편집.책갈피지우기 | **Ctrl+K, Ctrl+L** |
+| 편집.전체개요축소 | **Ctrl+M, Ctrl+A** |
+| 편집.현재영역축소 | **Ctrl+M, Ctrl+S** |
+| 편집.태그축소 | **Ctrl+M, Ctrl+T** |
+| 편집.정의부분만보이기 | **Ctrl+M, Ctrl+O**(문자 ‘O’) |
+| 편집.선택영역을주석으로처리 | **Ctrl+K, Ctrl+C** |
+| 편집.단어자동완성 | **Ctrl+스페이스바**<br /><br /> 또는<br /><br /> **Alt+오른쪽 화살표** |
+| 편집.매개변수팁복사 | **Ctrl+Shift+Alt+C** |
+| 편집.필터수준낮춤 | **Alt+,** |
+| 편집.뒤로삭제 | **백스페이스**<br /><br /> 또는<br /><br /> **Shift+Bkspce** |
+| 편집.가로공백삭제 | **Ctrl+K, Ctrl+\\** |
+| 편집.문서끝으로 | **Ctrl+End** |
+| 편집.문서끝까지선택 | **Ctrl+Shift+End** |
+| 편집.문서시작으로 | **Ctrl+Home** |
+| 편집.문서시작까지선택 | **Ctrl+Shift+Home** |
+| 편집.전체개요확장 | **Ctrl+M, Ctrl+X** |
+| 편집.현재영역확장 | **Ctrl+M, Ctrl+E** |
+| 편집.문서서식 | **Ctrl+K, Ctrl+D** |
+| 편집.선택영역서식 | **Ctrl+K, Ctrl+F** |
+| Edit.GotoBrace | **Ctrl+]** |
+| 편집.중괄호로이동확장 | **Ctrl+Shift+]** |
+| 편집.선택영역숨기기 | **Ctrl+M, Ctrl+H** |
+| 편집.필터수준높임 | **Alt+.** |
+| 편집.증분검색 | **Ctrl+I** |
+| 편집.탭삽입 | **Tab** |
+| 편집.줄잘라내기 | **Ctrl+L** |
+| 편집.줄삭제 | **Ctrl+Shift+L** |
+| 편집.줄아래로 | **아래쪽 화살표** |
+| 편집.한줄아래까지선택 | **Shift+아래쪽 화살표** |
+| 편집.한줄아래까지열확장선택 | **Shift+Alt+아래쪽 화살표** |
+| 편집.줄끝으로 | **End** |
+| 편집.줄끝까지선택 | **Shift+End** |
+| 편집.줄끝까지열확장선택 | **Shift+Alt+End** |
+| 편집.위쪽줄열기 | **Ctrl+Enter** |
+| 편집.아래쪽줄열기 | **Ctrl+Shift+Enter** |
+| 편집.줄시작으로 | **Home** |
+| 편집.줄시작까지선택 | **Shift+Home** |
+| 편집.줄시작까지열확장선택 | **Shift+Alt+Home** |
+| 편집.줄바꾸기 | **Shift+Alt+T** |
+| 편집.줄위로 | **위쪽 화살표** |
+| 편집.한줄위까지선택 | **Shift+위쪽 화살표** |
+| 편집.한줄위까지열확장선택 | **Shift+Alt+위쪽 화살표** |
+| 편집.멤버목록 | **Ctrl+J** |
+| 편집.소문자로 | **Ctrl+U** |
+| 편집.대문자로 | **Ctrl+Shift+U** |
+| Edit.MoveSelectedLinesDown | **Alt+아래쪽 화살표** |
+| Edit.MoveSelectedLinesUp | **Alt+위쪽 화살표** |
+| 편집.다음강조표시참조 | **Ctrl+Shift+아래쪽 화살표** |
+| 편집.겹쳐쓰기모드 | **삽입** |
+| 편집.페이지아래로 | **PgDn** |
+| 편집.한페이지아래까지선택 | **Shift+PgDn** |
+| 편집.페이지위로 | **PgUp** |
+| 편집.한페이지위까지선택 | **Shift+PgUp** |
+| 편집.매개변수정보 | **Ctrl+Shift+스페이스바** |
+| 편집.매개변수팁붙여넣기 | **Ctrl+Shift+Alt+P** |
+| Edit.PeekBackward | **Ctrl+Alt+-** |
+| Edit.PeekDefinition | **Alt+F12** |
+| Edit.PeekForward | **Ctrl+Alt+=** |
+| 편집.이전강조표시참조 | **Ctrl+Shift+위쪽 화살표** |
+| 편집.요약정보 | **Ctrl+K, Ctrl+I** |
+| 편집.역방향증분검색 | **Ctrl+Shift+I** |
+| 편집.아래로줄스크롤 | **Ctrl+아래쪽 화살표** |
+| 편집.위로줄스크롤 | **Ctrl+위쪽 화살표** |
+| 편집.현재단어선택 | **Ctrl+W** |
+| 편집.선택취소 | **Esc** |
+| 편집.이전위치까지선택 | **Ctrl+=** |
+| Edit.ShowCodeLensMenu | **Alt+\`** |
+| 편집.현재숨기기중지 | **Ctrl+M, Ctrl+U** |
+| 편집.개요표시중지 | **Ctrl+M, Ctrl+P** |
+| 편집.앵커바꾸기 | **Ctrl+K, Ctrl+A** |
+| 편집.왼쪽으로탭이동 | **Shift+Tab** |
+| 편집.전체개요표시숨기기 | **Ctrl+M, Ctrl+L** |
+| 편집.책갈피설정해제 | **Ctrl+K, Ctrl+K** |
+| 편집.완료모드설정/해제 | **Ctrl+Alt+스페이스바** |
+| 편집.개요확장축소 | **Ctrl+M, Ctrl+M** |
+| 편집.작업목록바로가기설정해제 | **Ctrl+K, Ctrl+H** |
+| 편집.자동줄바꿈설정해제 | **Ctrl+E, Ctrl+W** |
+| 편집.선택영역의주석처리제거 | **Ctrl+K, Ctrl+U** |
+| 편집.뷰맨아래로 | **Ctrl+PgDn** |
+| 편집.뷰맨아래까지선택 | **Ctrl+Shift+PgDn** |
+| 편집.뷰맨위로 | **Ctrl+PgUp** |
+| 편집.뷰맨위까지선택 | **Ctrl+Shift+PgUp** |
+| 편집.공백보기 | **Ctrl+R, Ctrl+W** |
+| 편집.끝까지단어삭제 | **Ctrl+Delete** |
+| 편집.시작까지단어삭제 | **Ctrl+백스페이스** |
+| 편집.다음단어로 | **Ctrl+오른쪽 화살표** |
+| 편집.다음단어까지선택 | **Ctrl+Shift+오른쪽 화살표** |
+| 편집.다음단어까지열확장선택 | **Ctrl+Shift+Alt+오른쪽 화살표** |
+| 편집.이전단어로 | **Ctrl+왼쪽 화살표** |
+| 편집.이전단어까지선택 | **Ctrl+Shift+왼쪽 화살표** |
+| 편집.이전단어까지열확장선택 | **Ctrl+Shift+Alt+왼쪽 화살표** |
+| 편집.단어바꾸기 | **Ctrl+Shift+T** |
+| EditorContextMenus.CodeWindow.ExecuteInInteractive | **Alt+Enter** |
+| EditorContextMenus.CodeWindow.ExecuteLineInInteractive | **Alt+'** |
+| OtherContextMenus.HTMLContext.ViewinPageInspector | **Ctrl+K, Ctrl+G** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+PgDn** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+PgUp** |
 
 ##  <a name="uml-activity-diagram"></a>UML 동작 다이어그램
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |편집.삭제|**Shift+Del**|
 
 ##  <a name="uml-class-diagram"></a>UML 클래스 다이어그램
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ##  <a name="uml-component-diagram"></a>UML 구성 요소 다이어그램
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ##  <a name="uml-use-case-diagram"></a>UML 사용 사례 다이어그램
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ##  <a name="vc-accelerator-editor"></a>VC 액셀러레이터 키 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Edit.NewAccelerator|**삽입**|
 |Edit.NextKeyTyped|**Ctrl+W**|
 
 ##  <a name="vc-dialog-editor"></a>VC 대화 상자 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |편집.컨트롤아래로이동|**아래쪽 화살표**|
 |편집.컨트롤왼쪽으로이동|**왼쪽 화살표**|
 |편집.컨트롤오른쪽으로이동|**오른쪽 화살표**|
@@ -947,7 +947,7 @@ ms.locfileid: "46371162"
 ##  <a name="vc-image-editor"></a>VC 이미지 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |이미지.에어브러시도구|**Ctrl+A**|
 |이미지.브러시도구|**Ctrl+B**|
 |이미지.선택항목복사및윤곽선그리기|**Ctrl+Shift+U**|
@@ -989,13 +989,13 @@ ms.locfileid: "46371162"
 ##  <a name="vc-string-editor"></a>VC 문자열 편집기
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.NewString|**삽입**|
 
 ##  <a name="view-designer"></a>뷰 디자이너
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |쿼리디자이너.데이터검색취소|**Ctrl+T**|
 |쿼리디자이너.조건|**Ctrl+2**|
 |쿼리디자이너.다이어그램|**Ctrl+1**|
@@ -1008,13 +1008,13 @@ ms.locfileid: "46371162"
 ##  <a name="visual-studio"></a>Visual Studio
 
 |명령|바로 가기 키|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl+1**|
 
 ##  <a name="windows-forms-designer"></a>Windows Forms 디자이너
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |편집.구분선|**Enter**|
 |편집.왼쪽문자로|**왼쪽 화살표**|
 |편집.왼쪽문자까지선택|**Shift+왼쪽 화살표**|
@@ -1043,7 +1043,7 @@ ms.locfileid: "46371162"
 ##  <a name="work-item-editor"></a>작업 항목 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**Shift+Alt+C**|
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Shift+Alt+L**|
@@ -1051,7 +1051,7 @@ ms.locfileid: "46371162"
 ##  <a name="work-item-query-view"></a>작업 항목 쿼리 뷰
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**Shift+Alt+C**|
 |Edit.Indent|**Shift+Alt+오른쪽 화살표**|
 |Edit.Outdent|**Shift+Alt+왼쪽 화살표**|
@@ -1062,7 +1062,7 @@ ms.locfileid: "46371162"
 ##  <a name="work-item-results-view"></a>작업 항목 결과 뷰
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**Shift+Alt+C**|
 |Edit.Indent|**Shift+Alt+오른쪽 화살표**|
 |Edit.Outdent|**Shift+Alt+왼쪽 화살표**|
@@ -1075,7 +1075,7 @@ ms.locfileid: "46371162"
 ##  <a name="workflow-designer"></a>Workflow Designer
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |편집.단어자동완성|**Ctrl+K, W**<br /><br /> 또는<br /><br /> **Ctrl+K, Ctrl+W**<br /><br /> 또는<br /><br /> **Ctrl+스페이스바**<br /><br /> 또는<br /><br /> **Alt+오른쪽 화살표**|
 |편집.필터수준낮춤|**Alt+,**|
 |편집.필터수준높임|**Alt+.**|
@@ -1094,7 +1094,7 @@ ms.locfileid: "46371162"
 |WorkflowDesigner.Restore|**Ctrl+E, Ctrl+R**<br /><br /> 또는<br /><br /> **Ctrl+E, R**|
 |WorkflowDesigner.ShowHideArgumentDesigner|**Ctrl+E, Ctrl+A**<br /><br /> 또는<br /><br /> **Ctrl+E, A**|
 |WorkflowDesigner.ShowHideImportsDesigner|**Ctrl+E, Ctrl+I**<br /><br /> 또는<br /><br /> **Ctrl+E, I**|
-|WorkflowDesigner.ShowHideOverviewMap|**Ctrl+E, Ctrl+O**<br /><br /> 또는<br /><br /> **Ctrl+E, O**|
+|WorkflowDesigner.ShowHideOverviewMap|**Ctrl+E, Ctrl+O**(문자 ‘O’)<br /><br /> 또는<br /><br /> **Ctrl+E, O**|
 |WorkflowDesigner.ShowHideVariableDesigner|**Ctrl+E, Ctrl+V**<br /><br /> 또는<br /><br /> **Ctrl+E, V**|
 |WorkflowDesigner.ToggleSelection|**Ctrl+E, Ctrl+S**<br /><br /> 또는<br /><br /> **Ctrl+E, S**|
 |WorkflowDesigner.ZoomIn|**Ctrl+Num +**|
@@ -1103,8 +1103,8 @@ ms.locfileid: "46371162"
 ##  <a name="xaml-ui-designer"></a>XAML 디자이너
 
 |명령|바로 가기 키|
-|--------------|------------------------|
-|Design.FitAll|**Ctrl+0**|
+|--------------| - |
+|Design.FitAll|**Ctrl+0**(영)|
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**Ctrl+Alt+=**|
 |Design.ZoomOut|**Ctrl+Alt+-**|
@@ -1125,14 +1125,14 @@ ms.locfileid: "46371162"
 ##  <a name="xml-text-editor"></a>XML(텍스트) 편집기
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |XML.StartXSLTDebugging|**Alt+F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
 ##  <a name="xml-schema-designer"></a>XML 스키마 디자이너
 
 |명령|바로 가기 키|
-|--------------|------------------------|
+|--------------| - |
 |GraphView.BottomtoTop|**Alt+위쪽 화살표**|
 |GraphView.LefttoRight|**Alt+오른쪽 화살표**|
 |GraphView.RighttoLeft|**Alt+왼쪽 화살표**|

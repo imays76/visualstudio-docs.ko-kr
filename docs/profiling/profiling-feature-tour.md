@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320841"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356797"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>빠른 시작: 프로파일링 도구 살펴보기
 
@@ -28,13 +28,14 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 
 ![진단 도구 창](../profiling/media/prof-tour-diagnostic-tools.png "진단 도구")
 
-디버그하는 동안 **진단 도구** 창을 사용하여 CPU 및 메모리 사용을 분석하고 성능 관련 정보를 보여주는 이벤트를 확인할 수 있습니다.
+디버그하는 동안 **진단 도구** 창을 사용하여 CPU 및 메모리 사용을 분석하고 성능 관련 정보를 보여 주는 이벤트를 확인할 수 있습니다.
 
 ![진단 도구 요약 뷰](../profiling/media/prof-tour-cpu-and-memory-graph.gif "진단 도구 요약")
 
 기본적으로 **진단 도구** 창을 사용하여 앱을 프로파일링하지만 릴리스 빌드의 경우 앱에 대한 post-mortem 분석을 대신 수행할 수도 있습니다. 다른 방법에 대한 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요. 다양한 앱 유형에 대한 프로파일링 도구를 보려면 [사용해야 하는 도구](#which-tool-should-i-use)를 참조하세요.
 
-> ![NOTE] Windows 7 이상에서 사후 분석 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
+> [!NOTE]
+> Windows 7 이상에서 사후 분석 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
 
 ## <a name="analyze-cpu-usage"></a>CPU 사용 분석
 
@@ -119,7 +120,7 @@ Direct3D 앱(Direct3D 구성 요소가 C++에 있어야 함)에서 GPU에 대한
 
 또한 그래프를 사용하여 CPU 바인딩 또는 GPU 바인딩 성능 병목 현상이 있는지 여부를 확인할 수 있습니다.
 
-## <a name="analyze-performance-javascript"></a>성능 분석(JavaScript)
+## <a name="analyze-performance-javascript-uwp"></a>성능 분석(JavaScript UWP)
 
 UWP 앱의 경우 JavaScript 메모리 도구 및 HTML UI 응답성 도구를 사용할 수 있습니다.
 
@@ -155,8 +156,8 @@ CPU 사용량 또는 메모리 사용량 도구에 현재 표시되지 않는 �
   
 |성능 도구|Windows 바탕 화면|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[메모리 사용량](../profiling/memory-usage.md)|예|예|예| 
 |[CPU 사용량](../profiling/cpu-usage.md)|예|예|예|
+|[메모리 사용량](../profiling/memory-usage.md)|예|예|예| 
 |[GPU 사용량](../debugger/gpu-usage.md)|예|예|no| 
 |[응용 프로그램 타임라인](../profiling/application-timeline.md)|예|예|아니요|
 |[PerfTips](../profiling/perftips.md)|예|XAML은 예, HTML은 no|예|

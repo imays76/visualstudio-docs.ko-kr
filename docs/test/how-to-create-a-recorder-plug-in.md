@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909779"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>방법: 레코더 플러그 인 만들기
 
@@ -87,11 +87,11 @@ ms.locfileid: "39382067"
 
 ### <a name="deploy-the-recorder-plug-in"></a>레코더 플러그 인 배포
 
-레코더 플러그 인을 컴파일한 후 결과 DLL을 다음 두 위치 중 하나에 배치해야 합니다.
+레코더 플러그 인을 컴파일한 후 결과 DLL을 다음 두 위치 중 하나에 배치합니다.
 
--   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[version]\\[edition]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* version *>\WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [version]\WebTestPlugins*
 
 > [!WARNING]
 > 레코더 플러그 인을 두 위치 중 하나에 복사한 후 Visual Studio를 다시 시작해야 레코더 플러그 인이 등록됩니다.
@@ -113,17 +113,17 @@ ms.locfileid: "39382067"
     >
     > 이 오류는 플러그 인의 코드를 변경하고 새 DLL 버전 **(버전=0.0.0.0)** 을 만들었지만 해당 플러그 인이 계속해서 원래 플러그 인 버전을 참조하는 경우에 발생합니다. 이 문제를 해결하려면 다음 단계를 수행합니다.
     >
-    > 1.  웹 성능 및 부하 테스트 프로젝트에서는 참조에 경고가 표시됩니다. 참조를 제거했다가 플러그 인 DLL에 다시 추가합니다.
-    > 2.  테스트 또는 적절한 위치에서 플러그 인을 제거했다가 다시 추가합니다.
+    > 1. 웹 성능 및 부하 테스트 프로젝트에서는 참조에 경고가 표시됩니다. 참조를 제거했다가 플러그 인 DLL에 다시 추가합니다.
+    > 2. 테스트 또는 적절한 위치에서 플러그 인을 제거했다가 다시 추가합니다.
 
 ## <a name="example"></a>예
 
-이 샘플에서는 사용자 지정된 웹 성능 테스트 레코더 플러그 인을 만들어 사용자 지정 동적 매개 변수 상관 관계 연결을 수행하는 방법을 보여줍니다.
+이 샘플에서는 사용자 지정된 웹 성능 테스트 레코더 플러그 인을 만들어 사용자 지정 동적 매개 변수 상관 관계 연결을 수행하는 방법을 보여 줍니다.
 
 > [!NOTE]
 > 전체 샘플 코드 목록은 이 항목의 맨 아래에 있습니다.
 
- **샘플 코드 검토**
+**샘플 코드 검토**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>결과를 반복하여 ReportSession이 있는 첫 번째 페이지 찾기
 

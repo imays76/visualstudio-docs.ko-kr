@@ -21,16 +21,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69e301f61ddf6acca9d90b8410630cbf7acd65d6
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: e72482dce3df2ceaa5d5131838ce08b13a05cd90
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138856"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382768"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio 제거
 
-치명적인 오류가 발생하고 Visual Studio를 복구 또는 제거할 수 없는 경우 `InstallCleanup.exe` 도구를 실행하여 설치 파일 및 제품 정보를 제거할 수 있습니다. 이 도구는 복구 또는 제거가 실패할 경우 마지막 수단으로 실행해야 하며 복구가 필요한 다른 Visual Studio 설치 또는 기타 제품에서 기능을 제거할 수 있습니다.
+치명적인 오류가 발생하고 Visual Studio를 복구 또는 제거할 수 없는 경우 `InstallCleanup.exe` 도구를 실행하여 설치된 모든 Visual Studio 2017 및 최신 버전 인스턴스에 대한 설치 파일 및 제품 정보를 제거할 수 있습니다. 이 도구는 복구 또는 제거가 실패할 경우 마지막 수단으로 실행해야 하며 복구가 필요한 다른 Visual Studio 설치 또는 기타 제품에서 기능을 제거할 수 있습니다.
 
 아래 지침에서는 다음과 같은 동작의 다른 명령줄 스위치로 도구를 실행할 수 있습니다.
 

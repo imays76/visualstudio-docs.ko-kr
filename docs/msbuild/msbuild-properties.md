@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080752"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879201"
 ---
 # <a name="msbuild-properties"></a>MSBuild 속성
 빌드를 구성하는 데 사용될 수 있는 이름/값 쌍인 속성은 작업에 값을 전달하고, 조건을 평가하고, 프로젝트 파일 전체에서 참조할 값을 저장하는 데 유용합니다.  
@@ -84,12 +84,12 @@ $(registry:Hive\MyKey\MySubKey)
 ```  
   
 ## <a name="global-properties"></a>전역 속성  
- MSBuild는 **/property** 또는 **/p** 스위치를 사용하여 명령줄에서 속성을 설정할 수 있습니다. 이러한 전역 속성값은 프로젝트 파일에서 설정되는 속성값을 재정의합니다. 여기에는 환경 속성이 포함되지만 변경할 수 없는 예약된 속성은 포함되지 않습니다.  
+ MSBuild는 **-property** 또는 **-p** 스위치를 사용하여 명령줄에서 속성을 설정할 수 있습니다. 이러한 전역 속성값은 프로젝트 파일에서 설정되는 속성값을 재정의합니다. 여기에는 환경 속성이 포함되지만 변경할 수 없는 예약된 속성은 포함되지 않습니다.  
   
  다음 예제에서는 전역 `Configuration` 속성을 `DEBUG`로 설정합니다.  
   
 ```cmd  
-msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+msbuild.exe MyProj.proj -p:Configuration=DEBUG  
 ```  
   
  MSBuild 작업의 `Properties` 특성을 사용하여 다중 프로젝트 빌드의 자식 프로젝트에 대해 전역 속성을 설정하거나 수정할 수도 있습니다. MSBuild 작업의 `RemoveProperties` 특성을 사용하여 전달하지 않을 속성 목록을 지정하지 않을 경우 전역 속성도 자식 프로젝트로 전달됩니다. 자세한 내용은 [MSBuild 작업](../msbuild/msbuild-task.md)을 참조하세요.

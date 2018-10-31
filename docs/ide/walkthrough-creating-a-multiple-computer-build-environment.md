@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e77f5bbcdc09e44018e1a10c861e9875c569f65
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 2dc88c3861adb8b1d9f239d6ceedee2b76bc2e25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951615"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>연습: 여러 컴퓨터 빌드 환경 만들기
 
@@ -55,7 +55,7 @@ ms.locfileid: "46371071"
 
 1. 호스트 컴퓨터에 Visual Studio를 설치합니다.
 
-2. 빌드 컴퓨터에 .NET Framework 4.5를 설치합니다. 설치되었는지 확인하려면 레지스트리 키 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version**의 값이 “4.5”로 시작하는지 확인합니다.
+2. 빌드 컴퓨터에 .NET Framework 4.5 이상을 설치합니다. 설치되어 있는지 확인하려면 레지스트리 하위 키 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full**의 **버전** 항목 값이 **4.5** 이상인지 확인합니다.
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사
 
@@ -73,29 +73,29 @@ ms.locfileid: "46371071"
 
 1. Windows SDK for Windows 8만 설치되어 있는 경우 호스트 컴퓨터에서 빌드 컴퓨터로 다음 폴더를 재귀적으로 복사합니다.
 
-    - %ProgramFiles%\Windows Kits\8.0\bin\
+   - %ProgramFiles%\Windows Kits\8.0\bin\
 
-    - %ProgramFiles%\Windows Kits\8.0\Catalogs\
+   - %ProgramFiles%\Windows Kits\8.0\Catalogs\
 
-    - %ProgramFiles%\Windows Kits\8.0\DesignTime\
+   - %ProgramFiles%\Windows Kits\8.0\DesignTime\
 
-    - %ProgramFiles%\Windows Kits\8.0\include\
+   - %ProgramFiles%\Windows Kits\8.0\include\
 
-    - %ProgramFiles%\Windows Kits\8.0\Lib\
+   - %ProgramFiles%\Windows Kits\8.0\Lib\
 
-    - %ProgramFiles%\Windows Kits\8.0\Redist\
+   - %ProgramFiles%\Windows Kits\8.0\Redist\
 
-    - %ProgramFiles%\Windows Kits\8.0\References\
+   - %ProgramFiles%\Windows Kits\8.0\References\
 
-    다음과 같은 기타 Windows 8 키트도 있을 경우
+     다음과 같은 기타 Windows 8 키트도 있을 경우
 
-    - Microsoft Windows 평가 및 배포 키트
+   - Microsoft Windows 평가 및 배포 키트
 
-    - Microsoft Windows 드라이버 키트
+   - Microsoft Windows 드라이버 키트
 
-    - Microsoft Windows 하드웨어 인증 키트
+   - Microsoft Windows 하드웨어 인증 키트
 
-    이전 단계에 나열된 *%ProgramFiles%\Windows Kits\8.0* 폴더에 여러 파일이 설치되었을 수 있으며, 해당 사용 약관에 따라 해당 파일에 대한 빌드 서버 권한이 허용되지 않을 수 있습니다. 설치된 모든 Windows 키트에 대한 사용 약관에서 파일을 빌드 컴퓨터로 복사할 수 있는지 여부를 확인합니다. 사용 약관에 따라 빌드 서버 권한이 허용되지 않으면 빌드 컴퓨터에서 파일을 제거합니다.
+     이전 단계에 나열된 *%ProgramFiles%\Windows Kits\8.0* 폴더에 여러 파일이 설치되었을 수 있으며, 해당 사용 약관에 따라 해당 파일에 대한 빌드 서버 권한이 허용되지 않을 수 있습니다. 설치된 모든 Windows 키트에 대한 사용 약관에서 파일을 빌드 컴퓨터로 복사할 수 있는지 여부를 확인합니다. 사용 약관에 따라 빌드 서버 권한이 허용되지 않으면 빌드 컴퓨터에서 파일을 제거합니다.
 
 2. 호스트 컴퓨터에서 빌드 컴퓨터로 다음 폴더를 재귀적으로 복사합니다.
 
@@ -202,53 +202,53 @@ MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어�
 
 2. 빌드 컴퓨터에서 다음 레지스트리 항목을 만듭니다. 이러한 항목은 모두 문자열(레지스트리에서 종류=“REG_SZ”)입니다. 다음 항목의 값을 호스트 컴퓨터에 있는 유사 항목의 값과 동일하게 설정합니다.
 
-    - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(기본값)**
+   - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(기본값)**
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-    - **%RegistryRoot%\VisualStudio\11.0@Source 디렉터리**
+   - **%RegistryRoot%\VisualStudio\11.0@Source 디렉터리**
 
-    - **%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir**
+   - <strong>%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-    - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
-    - **%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot**
+   - <strong>%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
-    x64 빌드 컴퓨터에서는 다음 레지스트리 항목도 만들고 호스트 컴퓨터를 참조하여 설정 방법을 확인합니다.
+   x64 빌드 컴퓨터에서는 다음 레지스트리 항목도 만들고 호스트 컴퓨터를 참조하여 설정 방법을 확인합니다.
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
 
-    빌드 컴퓨터가 x64이고 64비트 버전의 MSBuild를 사용하려고 하거나 x64 컴퓨터에서 Team Foundation Server 빌드 서비스를 사용하고 있는 경우 네이티브 64비트 레지스트리에서 다음 레지스트리 항목을 만들어야 합니다. 호스트 컴퓨터를 참조하여 다음 항목을 설정하는 방법을 확인합니다.
+   빌드 컴퓨터가 x64이고 64비트 버전의 MSBuild를 사용하려고 하거나 x64 컴퓨터에서 Team Foundation Server 빌드 서비스를 사용하고 있는 경우 네이티브 64비트 레지스트리에서 다음 레지스트리 항목을 만듭니다. 호스트 컴퓨터를 참조하여 다음 항목을 설정하는 방법을 확인합니다.
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
 ## <a name="set-environment-variables-on-the-build-computer"></a>빌드 컴퓨터에서 환경 변수 설정
 
@@ -261,7 +261,7 @@ MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어�
 다음 표에서는 *vcvarsall.bat*에 대해 지원되는 인수를 설명합니다.
 
 |Vcvarsall.bat 인수|컴파일러|빌드 컴퓨터 아키텍처|출력 아키텍처 빌드|
-|----------------------------|--------------|---------------------------------|-------------------------------|
+| - |--------------| - | - |
 |x86(기본값)|32비트 네이티브|x86, x64|x86|
 |x86_amd64|x64 크로스|x86, x64|X64|
 |amd64|x64 네이티브|X64|X64|
@@ -276,17 +276,17 @@ MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어�
 
 2. 선택적으로 보다 쉽게 MSBuild를 사용하여 솔루션을 빌드할 수 있도록 PATH 변수에 다음 경로를 추가할 수도 있습니다.
 
-    네이티브 32비트 MSBuild를 사용하려면 PATH 변수에 다음 경로를 추가합니다.
+   네이티브 32비트 MSBuild를 사용하려면 PATH 변수에 다음 경로를 추가합니다.
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
 
-    - %windir%\Microsoft.NET\Framework\v4.0.30319
+   - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-    네이티브 64비트 MSBuild를 사용하려면 PATH 변수에 다음 경로를 추가합니다.
+   네이티브 64비트 MSBuild를 사용하려면 PATH 변수에 다음 경로를 추가합니다.
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
-    - %windir%\Microsoft.NET\Framework64\v4.0.30319
+   - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
 ## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치
 

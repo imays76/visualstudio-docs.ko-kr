@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 77cce33aa8dd5a0f265aadcfa1cd1a751a34aa3d
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548233"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101058"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
 **이전 단계: [Django에서 사용자 인증](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
-Visual Studio의 “Django 웹 프로젝트” 템플릿을 이해했으면 이제 동일한 코드베이스를 기반으로 하고 데이터베이스 작업을 보여주는 “설문 조사 Django 웹 프로젝트”라는 세 번째 Django 템플릿을 살펴볼 수 있습니다.
+Visual Studio의 “Django 웹 프로젝트” 템플릿을 이해했으면 이제 동일한 코드베이스를 기반으로 하고 데이터베이스 작업을 보여 주는 “설문 조사 Django 웹 프로젝트”라는 세 번째 Django 템플릿을 살펴볼 수 있습니다.
 
 이 단계에서는 다음 방법을 학습합니다.
 
@@ -55,7 +55,7 @@ Visual Studio의 “Django 웹 프로젝트” 템플릿을 이해했으면 이�
 
     ![설문 조사 Django 웹 프로젝트 앱의 전체 브라우저 보기](media/django/step06-full-app-view.png)
 
-1. 또한 탐색 모음에서 **관리** 링크를 선택하면 인증된 관리자에게만 관리 인터페이스에 대한 권한이 부여되었음을 보여주는 로그인 화면이 표시됩니다. 슈퍼 사용자 자격 증명을 사용하면 이 프로젝트 템플릿을 사용할 때 기본적으로 사용되는 “/admin” 페이지로 라우팅됩니다.
+1. 또한 탐색 모음에서 **관리** 링크를 선택하면 인증된 관리자에게만 관리 인터페이스에 대한 권한이 부여되었음을 보여 주는 로그인 화면이 표시됩니다. 슈퍼 사용자 자격 증명을 사용하면 이 프로젝트 템플릿을 사용할 때 기본적으로 사용되는 “/admin” 페이지로 라우팅됩니다.
 
     ![설문 조사 Django 웹 프로젝트 앱의 관리 보기](media/django/step06-polls-administrative-interface.png)
 
@@ -368,7 +368,7 @@ admin.site.register(Poll, PollAdmin)
 
 개발 컴퓨터에서 웹앱을 실행하는 것은 고객에게 앱을 제공하기 위한 과정의 한 단계일 뿐입니다. 다음 단계에는 다음과 같은 작업이 포함될 수 있습니다.
 
-- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. Django 앱에 필요한 특정 변경 내용이 포함된 [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
+- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
 
 - *templates/404.html*이라는 템플릿을 만들어 404페이지를 사용자 지정합니다. 이미 있는 경우 Django는 기본 템플릿 대신 이 템플릿을 사용합니다. 자세한 내용은 Django 설명서의 [Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)(오류 보기)를 참조하세요.
 
@@ -376,8 +376,4 @@ admin.site.register(Poll, PollAdmin)
 
 - 앱을 SQLite에서 PostgreSQL, MySQL 및 SQL Server와 같은 프로덕션 수준 데이터 저장소(모두 Azure에서 호스트할 수 있음)로 변경합니다. [When to use SQLite](https://www.sqlite.org/whentouse.html)(SQLite를 사용하는 경우)(sqlite.org)에 설명된 대로 SQLite는 일별 방문 횟수가 100K보다 적은, 트래픽이 낮거나 중간 정도인 사이트에서 제대로 작동하지만 더 큰 볼륨에는 권장되지 않습니다. 또한 단일 컴퓨터로 제한되므로 부하 분산 및 지역에서 복제와 같은 모든 다중 서버 시나리오에서는 사용할 수 없습니다. Django의 다른 데이터베이스 지원에 대한 자세한 내용은 [데이터베이스 설치](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)를 참조하세요. 또한 [Python용 Azure SDK](azure-sdk-for-python.md)를 사용하여 테이블 및 Blob과 같은 Azure Storage 서비스 작업을 수행할 수도 있습니다.
 
-- Azure Pipelines와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등에서의 소스 제어 작업 외에 Azure Test Plans에서 릴리스의 필수 구성 요소로 단위 테스트를 자동으로 실행하도록 하고, 프로덕션에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps Services는 App Insights와 같은 모니터링 솔루션과 통합되며 Agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 다음을 참조하세요.
-
-  - [Create a CI/CD pipeline for Python with Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)(Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기)
-  - [Python development in Azure with Visual Studio Team Services (video, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)(Visual Studio Team Services를 사용하여 Azure에서 Python 개발(비디오, 11분 21초)).
-
+- VSTS(Visual Studio Team Services)와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. VSTS, GitHub 등에서의 소스 제어 작업 외에 VSTS에서 릴리스의 필수 구성 요소로 단위 테스트를 자동으로 실행하도록 하고, 프로덕션에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 VSTS는 App Insights와 같은 모니터링 솔루션과 통합되며 Agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts)를 참조하세요.

@@ -4,18 +4,18 @@ description: Mac용 Visual Studio를 사용하는 동안 경험한 제안 사항
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 10/11/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 98b9b2f346c169d6b992f0d65a1454e3de9e814d
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 410444e584307c468b61eb4a478fed0d8df09b2e
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223925"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101123"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 문제를 보고하는 방법
 
-Mac용 Visual Studio에서 문제가 발생할 경우 Microsoft에서 문제를 진단하여 해결할 수 있도록 알려주시기 바랍니다. 
+Mac용 Visual Studio에 문제가 발생하는 경우와 관련하여 자세히 알려고 합니다. 진단하고 해결할 수 있도록 [개발자 커뮤니티](https://developercommunity.visualstudio.com/)에 대한 문제를 보고하는 방법은 다음과 같습니다.
 
 ## <a name="how-to-report-a-problem"></a>문제 보고 방법
 

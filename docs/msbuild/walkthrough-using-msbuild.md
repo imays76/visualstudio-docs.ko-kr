@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178520"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880151"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
 MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습에서는 MSBuild의 구성 요소를 소개하고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. 학습 내용은 다음과 같습니다.
@@ -116,7 +116,7 @@ MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되�
 메시지 작업에서는 Text 특성의 문자열 값을 입력으로 사용하며 출력 장치에 해당 값을 표시합니다. HelloWorld 대상은 메시지 작업을 "Hello"와 "World"를 표시하는 데 각각 한 번씩 두 번 실행합니다.
 
 ## <a name="build-the-target"></a>대상 빌드
- **Visual Studio 명령 프롬프트**에서 MSBuild를 실행하여 위에 정의되어 있는 HelloWorld 대상을 빌드합니다. /Target 또는 /t 명령줄 스위치를 사용하여 대상을 선택합니다.
+ **Visual Studio 명령 프롬프트**에서 MSBuild를 실행하여 위에 정의되어 있는 HelloWorld 대상을 빌드합니다. -target 또는 -t 명령줄 스위치를 사용하여 대상을 선택합니다.
 
 > [!NOTE]
 >  이하 섹션에서는 **Visual Studio 명령 프롬프트**를 **명령 창**으로 지칭하겠습니다.
@@ -127,10 +127,10 @@ MSBuild는 빌드의 대상을 추적하며 각 대상이 여러 번 빌드되�
 
 2.  명령 창에서 프로젝트 파일을 포함하는 폴더(이 연습의 경우 *D:\BuildApp\BuildApp*)로 이동합니다.
 
-3.  명령 스위치 /t:HelloWorld를 사용하여 msbuild를 실행합니다. 그러면 HelloWorld 대상이 선택 및 빌드됩니다.
+3.  명령 스위치 -t:HelloWorld를 사용하여 msbuild를 실행합니다. 그러면 HelloWorld 대상이 선택 및 빌드됩니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  **명령 창**에서 출력을 검사합니다. "Hello" 및 "World"의 두 줄이 표시됩니다.
@@ -200,7 +200,7 @@ $(PropertyName)
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  출력을 검사합니다. 다음과 같은 두 줄이 표시됩니다. 사용 중인 .NET Framework 버전은 이 줄과 다를 수 있습니다.
@@ -231,14 +231,14 @@ $(PropertyName)
  프로젝트 파일의 환경 변수는 빌드 속성과 같은 방식으로 참조할 수 있습니다. 예를 들어 프로젝트 파일에서 PATH 환경 변수를 사용하려면 $(Path)를 사용합니다. 프로젝트에 환경 변수와 이름이 같은 속성 정의가 포함되어 있으면 프로젝트의 속성이 환경 변수의 값을 재정의합니다. 자세한 내용은 [방법: 빌드 시 환경 변수 사용](../msbuild/how-to-use-environment-variables-in-a-build.md)을 참조하세요.
 
 ## <a name="set-properties-from-the-command-line"></a>명령줄에서 속성 설정
- /property 또는 /p 명령줄 스위치를 사용하여 명령줄에서 속성을 정의할 수 있습니다. 명령줄에서 수신된 속성값은 프로젝트 파일 및 환경 변수에 설정되어 있는 속성값을 재정의합니다.
+ -property 또는 -p 명령줄 스위치를 사용하여 명령줄에서 속성을 정의할 수 있습니다. 명령줄에서 수신된 속성값은 프로젝트 파일 및 환경 변수에 설정되어 있는 속성값을 재정의합니다.
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>명령줄에서 속성값을 설정하려면
 
 1.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  출력을 검사합니다. 다음 줄이 표시됩니다.
@@ -267,7 +267,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  출력을 검사합니다. 다음 줄이 표시됩니다.
@@ -329,7 +329,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  출력을 검사합니다. 다음과 같은 긴 줄이 표시됩니다.
@@ -361,7 +361,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  출력을 검사합니다. 다음 줄이 표시됩니다.
@@ -441,7 +441,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
 4.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  출력을 검사합니다. 다음 줄이 표시됩니다.
@@ -482,7 +482,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  출력을 검사합니다. 다음 줄이 표시됩니다.
@@ -512,7 +512,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  출력을 검사합니다. 다음 줄이 표시됩니다.
@@ -550,7 +550,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
 3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  출력을 검사합니다. 다음 줄이 표시됩니다.

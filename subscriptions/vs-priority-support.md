@@ -9,12 +9,12 @@ description: Visual Studio 구독에 포함된 우선 순위 지원 혜택을 �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866742"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio 구독의 우선 순위 지원
 
@@ -37,10 +37,10 @@ ms.locfileid: "44282952"
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [Cloud Services(웹 및 작업자 역할)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
-   - [Azure Storage](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
+   - [Azure 저장소](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
 
    - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=hdinsight)
 
@@ -229,6 +229,7 @@ ms.locfileid: "44282952"
 
 
 ## <a name="eligibility"></a>자격
+
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 연간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | Included       |  예          |
@@ -238,7 +239,7 @@ ms.locfileid: "44282952"
 | Visual Studio Dev Essentials | 해당 없음  | Included                                                            |예 |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 
-<sup>1</sup> *포함: NFR(전매 금지), FTE, VSIP(Visual Studio 업계 파트너), Imagine.  제외: MPN(Microsoft 파트너 네트워크), MCT 소프트웨어 및 서비스, MCT 소프트웨어 및 서비스 개발자, BizSpark, MVP(Microsoft Valued Partner), RD(Region Director).*
+<sup>1</sup> 포함: NFR(전매 금지), FTE, VSIP(Visual Studio 업계 파트너), Imagine.  제외: MPN(Microsoft 파트너 네트워크), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP(Microsoft Valued Professional), RD(Region Director).
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 

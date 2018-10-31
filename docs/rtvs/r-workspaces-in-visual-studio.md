@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 859e44c912ed98a50d5127675eb2c1bed699ede6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 11b5086c934b433d4e28095c1d50471ea44e15a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919301"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>작업 영역에서 R 코드가 실행되는 위치 제어
 
@@ -37,7 +37,7 @@ RTVS(Visual Studio용 R 도구)의 작업 영역에서는 R 세션이 실행되�
 
 로컬 작업 영역 목록에는 컴퓨터에 설치한 모든 R 인터프리터가 표시됩니다. 
 
-Visual Studio는 시작될 때 **HKEY_LOCAL_MACHINE\Software\R-Core\** 레지스트리 키를 검색하여 설치한 R 버전을 모두 자동으로 탐지하려고 합니다. 이 확인은 시작 시에만 수행되므로 새 R 인터프리터를 설치할 경우 Visual Studio를 다시 시작해야 합니다.
+Visual Studio는 시작될 때 **HKEY_LOCAL_MACHINE\Software\R-Core\\** 레지스트리 키를 검색하여 설치한 R 버전을 모두 자동으로 탐지하려고 합니다. 이 확인은 시작 시에만 수행되므로 새 R 인터프리터를 설치할 경우 Visual Studio를 다시 시작해야 합니다.
 
 RTVS에서는 비표준 방법으로 설치된 R 인터프리터를 검색할 수 없습니다(예를 들어 설치 관리자를 실행하지 않고 단순히 파일을 폴더에 복사할 경우). 이 경우 다음과 같이 새 로컬 R 작업 영역을 수동으로 만듭니다.
 

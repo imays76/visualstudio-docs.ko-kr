@@ -1,7 +1,7 @@
 ---
 title: Python 작업 자습서, 2단계, 코드 작성 및 실행
 description: Visual Studio의 Python 기능에 대한 핵심 연습의 2단계로, 코드 편집 및 프로젝트 실행을 포함합니다.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91e30cbc9db895b75c909f5c68d12347d5145ece
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 780e829591a63573599bafe7c729def7b6384342
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549978"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219421"
 ---
 # <a name="step-2-write-and-run-code"></a>2단계: 작성 및 코드 실행
 

@@ -7,16 +7,16 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 9771040b9e60b7942810335967b3c5478c4c72d9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: db90e2d4a1c6d80e579c125668b48c057595cc18
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224452"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991538"
 ---
-# <a name="installing-preview-releases"></a>미리 보기 릴리스 설치
+# <a name="install-a-preview-release"></a>미리 보기 릴리스 설치
 
-Mac용 Visual Studio 새 버전의 공식 릴리스 이전에는 미리 보기로 릴리스됩니다. 미리 보기 릴리스에서는 새로운 기능이 제품에 완전히 통합되기 전에 사용해 보고 버그 수정을 받을 수 있습니다.
+Mac용 Visual Studio의 새 버전이 공식적으로 릴리스되기 전에 미리 보기로 사용할 수 있습니다. 미리 보기 릴리스에서는 새로운 기능이 제품에 완전히 통합되기 전에 사용해 보고 버그 수정을 받을 수 있습니다.
 
 Mac용 Visual Studio에 대한 미리 보기 릴리스는 별도 다운로드가 아닌 업데이트 형태로 배포됩니다. Mac용 visual Studio에는 [업데이트](update.md) 문서에서 설명한 대로 안정성, 베타 및 알파 등의 세 업데이트 채널이 있습니다.
 

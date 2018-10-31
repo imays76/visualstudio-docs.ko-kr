@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3822e7d3c4ac027dbb010c642de6d9bf0ff1d13a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138926"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050367"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>명령줄 매개 변수를 사용하여 Visual Studio 2017 설치
 
@@ -33,9 +33,9 @@ ms.locfileid: "43138926"
 
 명령줄 옵션은 다운로드 프로세스를 시작하는 작은(약 1MB) 파일인 설치 부트스트래퍼와 함께 사용됩니다. 부트스트래퍼는 Visual Studio 사이트에서 다운로드할 때 첫 번째로 실행되는 실행 파일입니다. 다음 링크를 사용하여 설치 중인 제품 버전에 대한 최신 릴리스 부트스트래퍼에 직접 연결된 링크를 가져옵니다.
 
-* [Visual Studio 2017 Enterprise](https://aka.ms/vs/15/release/vs_enterprise.exe)
-* [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
-* [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
 ## <a name="list-of-command-line-parameters"></a>명령줄 매개 변수 목록
 
@@ -149,7 +149,7 @@ Visual Studio 제품별로 정렬된 워크로드 및 구성 요소 ID 목록은
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 2017 설치에 대한 명령줄 매개 변수 예](command-line-parameter-examples.md)
-* [Visual Studio 2017의 오프라인 설치 만들기](create-an-offline-installation-of-visual-studio.md)
-* [지시 파일을 사용하여 Visual Studio 설치 자동화](automated-installation-with-response-file.md)
-* [Visual Studio 2017 워크로드 및 구성 요소 ID](workload-and-component-ids.md)
+- [Visual Studio 2017 설치에 대한 명령줄 매개 변수 예](command-line-parameter-examples.md)
+- [Visual Studio 2017의 오프라인 설치 만들기](create-an-offline-installation-of-visual-studio.md)
+- [지시 파일을 사용하여 Visual Studio 설치 자동화](automated-installation-with-response-file.md)
+- [Visual Studio 2017 워크로드 및 구성 요소 ID](workload-and-component-ids.md)

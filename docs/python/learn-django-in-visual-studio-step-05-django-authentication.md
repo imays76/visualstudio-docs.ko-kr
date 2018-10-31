@@ -1,4 +1,4 @@
----
+﻿---
 title: 자습서 - Visual Studio의 Django 알아보기, 5단계
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, Django 웹 프로젝트 템플릿에서 제공하는 인증 기능을 구체적으로 설명합니다.
 ms.date: 08/13/2018
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627267"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120357"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>5단계: Django에서 사용자 인증
 
@@ -198,7 +198,7 @@ ms.locfileid: "42627267"
 
 1. 모든 작업이 완료되면 서버를 중지하고 다시 한번 변경 내용을 소스 제어에 커밋합니다.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>질문: \<form\> 요소에 나타나는 {% csrf_token %} 태그의 용도는 무엇인가요?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>질문: \<form\> 요소에 나타나는 {% csrf_token %} 태그의 용도는 무엇인가요?
 
 대답: `{% csrf_token %}` 태그에는 Django의 기본 제공 [CSRF(교차 사이트 요청 위조) 보호](https://docs.djangoproject.com/en/2.0/ref/csrf/)(Django 문서)가 포함됩니다. 일반적으로 양식과 같이 POST, PUT 또는 DELETE 요청 메서드를 포함하는 요소에 이 태그를 추가합니다. 그런 다음, 템플릿 렌더링 함수(`render`)에서 필요한 보호를 삽입합니다.
 

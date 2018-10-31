@@ -1,7 +1,7 @@
 ---
 title: VS 디버거 없이 메모리 사용 분석 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827737"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Visual Studio 디버거 없이 메모리 사용 분석
 디버그하지 않고 **메모리 사용량** 도구를 사용하여 다음을 수행할 수 있습니다.  
   
--   시나리오를 개발하는 동안 Visual Studio에서 직접 앱의 메모리 사용 권한을 모니터링합니다.  
+- 시나리오를 개발하는 동안 Visual Studio에서 직접 앱의 메모리 사용 권한을 모니터링합니다.  
   
--   앱의 메모리 상태에 대한 자세한 스냅숏을 만듭니다.  
+- 앱의 메모리 상태에 대한 자세한 스냅숏을 만듭니다.  
   
--   스냅숏을 비교하여 메모리 문제의 근본 원인을 찾습니다.  
+- 스냅숏을 비교하여 메모리 문제의 근본 원인을 찾습니다.  
   
- 이 항목에서는 메모리 사용량 도구를 사용하여 UWP XAML 앱을 분석하는 방법에 대해 설명합니다. JavaScript 및 HTML을 사용하는 UWP 앱에서 메모리 사용을 분석하려는 경우 [메모리 사용 분석(JavaScript)](../profiling/javascript-memory.md)을 참조하세요.  
+  현재 .NET Core 앱의 메모리 사용량을 측정하려면 디버거를 연결해서 도구를 사용해야 합니다. 다른 관리되는 앱과 네이티브 앱의 경우 디버거를 연결하거나 연결하지 않고 도구를 사용할 수 있습니다. 이 항목의 스크린샷은 UWP XAML 앱을 보여 줍니다. JavaScript 및 HTML을 사용하는 UWP 앱에서 메모리 사용을 분석하려는 경우 [메모리 사용 분석(JavaScript)](../profiling/javascript-memory.md)을 참조하세요.
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>메모리 사용량 진단 세션 시작  
   
@@ -69,13 +69,13 @@ ms.locfileid: "35669420"
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> 메모리 사용량 스냅숏 뷰  
  스냅숏 뷰를 사용하여 새 Visual Studio 창에서 자세한 보고서를 엽니다. 다음과 같은 두 종류의 스냅숏 뷰가 있습니다.  
   
--   [스냅숏 정보 보고서](#snapshot-reports)에서는 한 스냅숏의 형식 및 인스턴스를 보여 줍니다.  
+- [스냅숏 정보 보고서](#snapshot-reports)에서는 한 스냅숏의 형식 및 인스턴스를 보여 줍니다.  
   
--   [스냅숏 차이(diff) 보고서](#snapshot-difference-diff-reports)에서는 두 스냅숏의 형식 및 인스턴스를 비교합니다.  
+- [스냅숏 차이(diff) 보고서](#snapshot-difference-diff-reports)에서는 두 스냅숏의 형식 및 인스턴스를 비교합니다.  
   
- ![스냅숏 보기 링크](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![스냅숏 보기 링크](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- 스냅숏 뷰 그림에서 번호가 있는 항목은 메모리 사용량 보고서 뷰를 여는 링크입니다.  
+  스냅숏 뷰 그림에서 번호가 있는 항목은 메모리 사용량 보고서 뷰를 여는 링크입니다.  
   
 |||  
 |-|-|  
