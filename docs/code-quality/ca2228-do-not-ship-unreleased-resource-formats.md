@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19f903ae02413bf18474aa2d95d71d765c288fa9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71667a9d00dd1935e8eaeb281c5f0c6834208702
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900633"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244400"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: 릴리스되지 않은 리소스 형식을 제공하지 마십시오.
 
@@ -39,7 +39,7 @@ ms.locfileid: "49900633"
  .NET Framework의 시험판 버전을 사용 하 여 빌드된 리소스 파일은 지원 되는 버전의.NET Framework에서 사용 하지 못할 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 지원 되는.NET Frameworkk 버전을 사용 하 여 리소스를 작성 합니다.
+ 이 규칙 위반 문제를 해결 하려면 지원 되는.NET Framework 버전을 사용 하 여 리소스를 작성 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
  이 규칙에서는 경고를 표시해야 합니다.

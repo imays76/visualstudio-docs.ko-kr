@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e60a3c478da3e9c54dc0a43643305719c69d2fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01bd342dd41d88b891a8d36cba066340f2330c8
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241191"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244439"
 ---
 # <a name="xml-editor-tasks"></a>XML 편집기 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "49241191"
  새 XML 조각을 만드는 방법을 보여 줍니다.  
   
  [연습: XSLT IntelliSense 사용](../xml-tools/walkthrough-using-xslt-intellisense.md)  
- XSLT IntelliSence 기능을 사용하는 방법을 보여 줍니다.  
+ XSLT IntelliSense 기능을 사용 하는 방법을 보여 줍니다.  
   
  [연습: XSLT 계층 구조 사용](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  참조된 스타일시트를 디버깅하는 방법을 보여 줍니다.  
