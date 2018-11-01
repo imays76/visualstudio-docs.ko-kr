@@ -17,12 +17,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951270"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>코딩된 UI 테스트 편집기를 사용하여 코딩된 UI 테스트 편집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ UI 작업 속성 편집
   
  UI 작업에 대한 속성을 수정하려면 **UI 작업** 창에서 속성을 편집하려는 UI 작업이 포함된 테스트 메서드를 확장하고, 해당 UI 작업을 선택한 다음, 속성 창을 사용해 속성을 수정합니다.  
   
- 예를 들어, 서버를 사용할 수 없는 및 웹 브라우저와 관련 된 UI 작업이 있는 경우에 없다는 **웹 페이지로 이동 'http://Contoso1/default.aspx'**, URL을 변경할 수 있습니다 `‘ http://Contoso2/default.aspx’`합니다.  
+ 예를 들어 서버를 사용할 수 없는 상황이며 웹 브라우저에 나오는 **웹 페이지 '<http://Contoso1/default.aspx’>'로 이동**과 관련된 UI 작업이 있는 경우 이 URL을 `‘ http://Contoso2/default.aspx’`로 변경할 수 있습니다.  
   
  ![컨트롤 속성](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 컨트롤 속성 편집  
@@ -125,19 +125,19 @@ UI 작업 속성 편집
  *그 외 무엇을 알아야 하나요?*  
  **중요한 문제**  
   
--   ![주의 아이콘](../test/media/caution.gif "주의") **경고:** 메서드를 분할하는 경우, 해당 UI 작업을 포함하기를 원한다면 기존 메서드를 호출하는 코드가 새로 만들어지는 메서드도 호출하도록 코드를 수정해야 합니다. 메서드를 분할할 때 Microsoft Visual Studio 대화 상자가 표시됩니다. 여기에, 기존 메서드를 호출하는 코드가 새로 만들어지는 메서드도 호출하도록 코드를 수정해야 한다는 경고가 나타납니다. **예**를 선택합니다.  
+- ![주의 아이콘](../test/media/caution.gif "주의") **경고:** 메서드를 분할하는 경우, 해당 UI 작업을 포함하기를 원한다면 기존 메서드를 호출하는 코드가 새로 만들어지는 메서드도 호출하도록 코드를 수정해야 합니다. 메서드를 분할할 때 Microsoft Visual Studio 대화 상자가 표시됩니다. 여기에, 기존 메서드를 호출하는 코드가 새로 만들어지는 메서드도 호출하도록 코드를 수정해야 한다는 경고가 나타납니다. **예**를 선택합니다.  
   
- **팁**  
+  **팁**  
   
--   ![팁](../test/media/tip.png "팁") 분할을 실행 취소하려면 **편집** 메뉴에서 **실행 취소**를 선택하거나 Ctrl+Z를 누릅니다.  
+- ![팁](../test/media/tip.png "팁") 분할을 실행 취소하려면 **편집** 메뉴에서 **실행 취소**를 선택하거나 Ctrl+Z를 누릅니다.  
   
--   ![팁](../test/media/tip.png "팁") 새 메서드의 이름을 바꿀 수 있습니다. UI 작업 창에서 메서드를 선택하고 코딩된 UI 테스트 편집기 도구 모음에서 **이름 바꾸기** 단추를 선택합니다.  
+- ![팁](../test/media/tip.png "팁") 새 메서드의 이름을 바꿀 수 있습니다. UI 작업 창에서 메서드를 선택하고 코딩된 UI 테스트 편집기 도구 모음에서 **이름 바꾸기** 단추를 선택합니다.  
   
-     또는  
+   또는  
   
-     새 테스트 메서드에 대한 바로 가기 메뉴를 열고 **이름 바꾸기**를 선택합니다.  
+   새 테스트 메서드에 대한 바로 가기 메뉴를 열고 **이름 바꾸기**를 선택합니다.  
   
-     Microsoft Visual Studio 대화 상자가 표시됩니다. 해당 메서드를 참조하는 코드를 수정해야 한다는 경고가 나타납니다. **예**를 선택합니다.  
+   Microsoft Visual Studio 대화 상자가 표시됩니다. 해당 메서드를 참조하는 코드를 수정해야 한다는 경고가 나타납니다. **예**를 선택합니다.  
   
 ##  <a name="CodedUITestEditor_MoveMethods"></a> 테스트 메서드를 UIMap 파일로 이동하여 사용자 지정 지원  
  코딩된 UI 테스트의 테스트 메서드 중 하나에 사용자 지정 코드가 필요하다고 판단하는 경우 해당 메서드를 UIMap.cs 또는 UIMap.vb 파일로 이동해야 합니다. 이동하지 않으면, 코딩된 UI 테스트가 다시 컴파일될 때마다 코드를 덮어쓰게 됩니다. 메서드를 이동하지 않으면 테스트가 다시 컴파일될 때마다 사용자 지정 코드를 덮어쓰게 됩니다.  
@@ -149,11 +149,11 @@ UI 작업 속성 편집
  *그 외 무엇을 알아야 하나요?*  
  **중요한 문제**  
   
--   ![주의 아이콘](../test/media/caution.gif "주의") **경고:** 메서드를 이동하면 더 이상 코딩된 UI 테스트 편집기를 사용하여 편집할 수 없습니다. 코드 편집기를 사용하여 사용자 지정 코드를 추가하고 유지 관리해야 합니다. 메서드를 이동할 때 Microsoft Visual Studio 대화 상자가 표시됩니다. 메서드가 UIMap.uitest 파일에서 UIMap.cs 또는 UIMap.vb 파일로 이동하며 더 이상 코딩된 UI 테스트 편집기를 사용하여 메서드를 편집할 수 없다는 경고가 나타납니다. **예**를 선택합니다.  
+- ![주의 아이콘](../test/media/caution.gif "주의") **경고:** 메서드를 이동하면 더 이상 코딩된 UI 테스트 편집기를 사용하여 편집할 수 없습니다. 코드 편집기를 사용하여 사용자 지정 코드를 추가하고 유지 관리해야 합니다. 메서드를 이동할 때 Microsoft Visual Studio 대화 상자가 표시됩니다. 메서드가 UIMap.uitest 파일에서 UIMap.cs 또는 UIMap.vb 파일로 이동하며 더 이상 코딩된 UI 테스트 편집기를 사용하여 메서드를 편집할 수 없다는 경고가 나타납니다. **예**를 선택합니다.  
   
- **팁**  
+  **팁**  
   
--   ![팁](../test/media/tip.png "팁") 이동을 실행 취소하려면 **편집** 메뉴에서 **실행 취소**를 선택하거나 Ctrl+Z를 누릅니다. 하지만 그런 다음에 반드시 수동으로 UIMap.cs 또는 UIMap.vb 파일에서 코드를 제거해야 합니다.  
+- ![팁](../test/media/tip.png "팁") 이동을 실행 취소하려면 **편집** 메뉴에서 **실행 취소**를 선택하거나 Ctrl+Z를 누릅니다. 하지만 그런 다음에 반드시 수동으로 UIMap.cs 또는 UIMap.vb 파일에서 코드를 제거해야 합니다.  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> 테스트 중인 응용 프로그램에서 UI 컨트롤 찾기  
  경우에 따라 테스트 중인 응용 프로그램의 UI에서 컨트롤이 위치한 지점을 시각화하기 어려울 수 있습니다. 코딩된 UI 테스트 편집기의 기능 중 하나를 사용하면, UI 컨트롤 맵에 나열된 컨트롤을 선택하고 테스트 중인 응용 프로그램에서 해당 컨트롤의 위치를 볼 수 있습니다. 테스트 중인 응용 프로그램의 **UI 컨트롤 찾기** 기능을 사용해서도 컨트롤의 검색 속성 수정 사항을 확인할 수 있습니다.  
@@ -167,11 +167,11 @@ UI 작업 속성 편집
  *그 외 무엇을 알아야 하나요?*  
  **중요한 문제**  
   
--   ![주의 아이콘](../test/media/caution.gif "주의") **경고:** UI 컨트롤을 찾기 전에 먼저, 테스트에 연결된 응용 프로그램이 실행 중인지 확인합니다.  
+- ![주의 아이콘](../test/media/caution.gif "주의") **경고:** UI 컨트롤을 찾기 전에 먼저, 테스트에 연결된 응용 프로그램이 실행 중인지 확인합니다.  
   
- **팁**  
+  **팁**  
   
--   ![팁](../test/media/tip.png "팁") 또는 **모두 찾기** 옵션을 사용하여 컨테이너 아래의 모든 컨트롤을 제대로 찾을 수 있는지 확인합니다. 이 옵션에 대해서는 다음 섹션에서 설명합니다.  
+- ![팁](../test/media/tip.png "팁") 또는 **모두 찾기** 옵션을 사용하여 컨테이너 아래의 모든 컨트롤을 제대로 찾을 수 있는지 확인합니다. 이 옵션에 대해서는 다음 섹션에서 설명합니다.  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> 컨트롤 및 해당 하위 요소 찾기  
  테스트 중인 응용 프로그램의 UI에서 컨테이너 아래의 모든 컨트롤을 제대로 찾을 수 있는지 확인할 수 있습니다. 이 기능은 컨테이너에 대해 수행한 검색 속성 변경을 확인하는 데 유용할 수 있습니다. 또한 테스트 중인 응용 프로그램의 UI에 중요한 변경 내용이 있는 경우에는 기존 컨트롤 검색 속성이 여전히 올바른지 확인할 수 있습니다.  
@@ -201,11 +201,11 @@ UI 작업 속성 편집
  *그 외 무엇을 알아야 하나요?*  
  **참고**  
   
--   ![필수 조건](../test/media/prereq.png "필수 조건") UI 작업 앞에 특정 컨트롤을 사용할 수 있도록 만들어야 하는 경우 테스트 메서드에 사용자 지정 코드를 추가해야 합니다. 이때 적절한 UITestControl.WaitForControlXXX() 메서드를 사용하면 됩니다. [!INCLUDE[crdefault](../includes/crdefault-md.md)][코딩된 UI 테스트가 재생 중 특정 이벤트를 기다리도록 지정](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+- ![필수 조건](../test/media/prereq.png "필수 조건") UI 작업 앞에 특정 컨트롤을 사용할 수 있도록 만들어야 하는 경우 테스트 메서드에 사용자 지정 코드를 추가해야 합니다. 이때 적절한 UITestControl.WaitForControlXXX() 메서드를 사용하면 됩니다. [!INCLUDE[crdefault](../includes/crdefault-md.md)][코딩된 UI 테스트가 재생 중 특정 이벤트를 기다리도록 지정](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
- **팁**  
+  **팁**  
   
--   ![팁](../test/media/tip.png "팁") 속성 창이 표시되지 않으면 F4 키를 누르거나 Alt 키를 누른 채로 Enter 키를 누릅니다.  
+- ![팁](../test/media/tip.png "팁") 속성 창이 표시되지 않으면 F4 키를 누르거나 Alt 키를 누른 채로 Enter 키를 누릅니다.  
   
 ## <a name="external-resources"></a>외부 리소스  
   
