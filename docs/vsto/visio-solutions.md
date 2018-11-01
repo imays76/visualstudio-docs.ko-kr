@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 248fa3051a3d639798f37270dc7957a759e20d6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7fc3f699cd33f2bb45487ca1329d812cfbeb950
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941986"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671549"
 ---
 # <a name="visio-solutions"></a>Visio 솔루션
   Visual Studio에서는 Microsoft Office Visio용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 Visio를 자동화하거나, Visio 기능을 확장하거나, Visio UI(사용자 인터페이스)를 사용자 지정할 수 있습니다.  
@@ -66,7 +66,7 @@ ms.locfileid: "49941986"
 |----------|--------------------------|  
 |리본 메뉴 사용자 지정|[리본 개요](../vsto/ribbon-overview.md)|  
   
- Visio UI를 사용자 지정하는 방법에 대한 자세한 내용은 [Visio.UIObject](https://msdn.microsoft.com/library/office/ff765763.aspx) 클래스에 대한 VBA 참조 설명서를 참조하세요.  
+ Visio UI를 사용자 지정하는 방법에 대한 자세한 내용은 [Visio.UIObject](/office/vba/api/Visio.UIObject) 클래스에 대한 VBA 참조 설명서를 참조하세요.  
   
 ## <a name="see-also"></a>참고자료  
  [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)   

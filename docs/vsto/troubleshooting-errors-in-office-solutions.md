@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917104"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672953"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office 솔루션의 오류 문제 해결
   Visual Studio에서 Office 솔루션을 개발하는 동안 다음 작업을 수행할 때 문제가 발생할 수 있습니다.  
@@ -124,7 +124,7 @@ ms.locfileid: "49917104"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- Office Pia의 이벤트 인터페이스에 대 한 자세한 내용은 참조 하세요. [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5)합니다.  
+ Office Pia의 이벤트 인터페이스에 대 한 자세한 내용은 참조 하세요. [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](/previous-versions/office/office-12//ms247299(v=office.12))합니다.  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>수 없습니다. Office PIA 참조의에서 클래스를 프로젝트 대상으로 하는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]를 대상으로 하는 프로젝트에서는 Office PIA에 정의된 클래스를 참조하는 코드가 기본적으로 컴파일되지 않습니다. 명명 규칙을 사용 하는 Pia에서 클래스 *objectname*클래스와 같이 <xref:Microsoft.Office.Interop.Word.DocumentClass> 고 <xref:Microsoft.Office.Interop.Excel.WorkbookClass>입니다. 예를 들어 Word VSTO 추가 기능 프로젝트의 다음 코드는 컴파일되지 않습니다.  

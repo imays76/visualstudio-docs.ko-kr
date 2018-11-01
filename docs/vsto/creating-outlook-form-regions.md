@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866430"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673083"
 ---
 # <a name="create-outlook-form-regions"></a>Outlook 양식 영역 만들기
   양식 영역을 사용하여 Microsoft Office Outlook 양식을 사용자 지정할 수 있습니다. Visual Studio는 양식 영역을 쉽게 디자인, 개발 및 디버그할 수 있도록 하는 고급 도구를 제공합니다.  
@@ -60,7 +60,7 @@ ms.locfileid: "49866430"
   
 - 읽기 창과 검사기에 사용자 지정 UI를 표시합니다.  
   
-  자세한 내용은 [양식 페이지 및 양식 영역을 사용자 지정](http://msdn.microsoft.com/library/office/ff869060.aspx)합니다.  
+  자세한 내용은 [양식 페이지 및 양식 영역을 사용자 지정](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions)합니다.  
   
 ##  <a name="Adding"></a> 프로젝트에 Outlook 양식 영역 추가  
  사용할 수는 **새 Outlook 양식 영역** 새 양식 영역을 디자인 하거나 Outlook에서 디자인 된 양식 영역 가져오기 마법사. 또한 다른 Outlook VSTO 추가 기능 프로젝트에서 사용한 양식 영역이 있는 경우 기존 양식 영역을 다시 사용할 수 있습니다.  

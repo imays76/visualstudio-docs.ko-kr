@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917184"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671249"
 ---
 # <a name="design-and-create-office-solutions"></a>Office 솔루션을 만들고 디자인
   Visual Studio에서는 몇 가지 유형의 Office 솔루션을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 설명서의 이 섹션에서는 프로젝트 템플릿에 대해 설명하고 Office 프로젝트를 만드는 지침을 제공합니다. 프로젝트를 만든 후 코드 및 사용자 인터페이스 사용자 지정을 구현 하는 방법에 대 한 정보를 참조 하세요 [개발 Office 솔루션](../vsto/developing-office-solutions.md)합니다.  
@@ -53,7 +53,7 @@ ms.locfileid: "49917184"
   
   그러나 Visual Studio에서 대상 프레임워크를 변경한 후 특정 기능을 사용하는 프로젝트의 일부 코드를 수정해야 할 수 있습니다. 대상 프레임 워크를 변경 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법:.NET Framework의 버전을 대상](../ide/how-to-target-a-version-of-the-dotnet-framework.md)합니다. 프로젝트에서 필요할 수 있는 변경 내용에 대 한 자세한 정보를 참조 하세요. [.NET Framework 4 이상으로 마이그레이션 Office 솔루션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)합니다.  
   
-  Visual Studio 프로젝트의 대상.NET Framework를 변경 하 고 ClickOnce를 사용 하 여 솔루션을 배포 하는 경우 확인에.NET Framework의 해당 버전도 선택 해야 합니다 **필수 구성 요소** 대화 상자. 이 선택은 프로젝트의 대상 프레임워크를 변경할 때 자동으로 변경되지 않습니다. 자세한 내용은 [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에서 필수 구성 요소 설치](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)합니다.  
+  Visual Studio 프로젝트의 대상.NET Framework를 변경 하 고 ClickOnce를 사용 하 여 솔루션을 배포 하는 경우 확인에.NET Framework의 해당 버전도 선택 해야 합니다 **필수 구성 요소** 대화 상자. 이 선택은 프로젝트의 대상 프레임워크를 변경할 때 자동으로 변경되지 않습니다. 자세한 내용은 [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에서 필수 구성 요소 설치](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)합니다.  
   
 > [!NOTE]  
 >  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]을 사용하여 만드는 Office 프로젝트에서 .NET Framework 3.5 또는 이전 버전을 대상으로 지정할 수 없습니다. [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]을 사용하여 만드는 Office 프로젝트에는 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]에서 처음 도입된 기능이 필요합니다.  
@@ -61,7 +61,7 @@ ms.locfileid: "49917184"
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Office Pia가 최종 사용자 컴퓨터에서 필요한 경우 이해  
  기본적으로 Office Pia (주 interop 어셈블리) 않아도 최종 사용자 컴퓨터에 설치 되어야 합니다 **Interop 형식 포함** 프로젝트에서 각 Office PIA 참조의 속성이로 설정 되어 **True**, 기본 값입니다. 이 시나리오에서는 솔루션에서 사용되는 PIA 형식에 대한 형식 정보가 프로젝트를 빌드할 때 솔루션 어셈블리에 포함됩니다. 런타임 시 Office 응용 프로그램의 COM 기반 개체 모델을 호출에 포함된 된 형식 정보는 Pia 대신 사용 됩니다. 솔루션에 Pia의 형식이 포함 되는 방법에 대 한 자세한 내용은 참조 하세요. [형식 동등성 및 포함 된 interop 형식](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)합니다.  
   
- 경우는 **Interop 형식 포함** 프로젝트에서 각 Office PIA 참조의 속성이로 설정 되어 **False**, Office Pia를 설치 하 고 각 최종 사용자 컴퓨터에서 전역 어셈블리 캐시에 등록 해야 하는 솔루션을 실행 합니다. 대부분의 경우 PIA는 Office와 함께 기본적으로 설치되지만 PIA 재배포 가능 파일을 솔루션에 대한 필수 구성 요소로 포함할 수도 있습니다. 자세한 내용은 [Office 솔루션 배포 필수 조건](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)합니다.  
+ 경우는 **Interop 형식 포함** 프로젝트에서 각 Office PIA 참조의 속성이로 설정 되어 **False**, Office Pia를 설치 하 고 각 최종 사용자 컴퓨터에서 전역 어셈블리 캐시에 등록 해야 하는 솔루션을 실행 합니다. 대부분의 경우 PIA는 Office와 함께 기본적으로 설치되지만 PIA 재배포 가능 파일을 솔루션에 대한 필수 구성 요소로 포함할 수도 있습니다. 자세한 내용은 [Office 솔루션 배포 필수 조건](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)합니다.  
   
 ### <a name="understand-the-client-profile"></a>Client profile 이해  
  .NET Framework Client Profile은 전체 .NET Framework의 하위 집합입니다. .NET Framework의 클라이언트 기능만 사용해야 하고 Office 솔루션에 대한 가장 빠른 배포 환경을 제공하려는 경우 .NET Framework Client Profile을 대상으로 지정할 수 있습니다. 자세한 내용은 [.NET Framework 클라이언트 프로필](/dotnet/framework/deployment/client-profile)합니다.  

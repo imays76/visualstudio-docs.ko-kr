@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940231"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672901"
 ---
 # <a name="content-controls"></a>콘텐츠 컨트롤
   콘텐츠 컨트롤은 다음과 같은 기능이 있는 문서와 템플릿을 디자인하는 방법을 제공합니다.  
@@ -81,7 +81,7 @@ ms.locfileid: "49940231"
  문서에 추가할 수 있는 9가지 형식의 콘텐츠 컨트롤이 있습니다. 대부분의 콘텐츠 컨트롤은 <xref:Microsoft.Office.Tools.Word> 네임스페이스에 해당 형식이 있습니다. 사용 가능한 콘텐츠 컨트롤 중 하나를 나타낼 수 있는 제네릭 <xref:Microsoft.Office.Tools.Word.ContentControl>을 사용할 수도 있습니다. 각 사용 가능한 콘텐츠 컨트롤을 사용 하는 방법을 보여 주는 연습을 참조 하세요 [연습: 콘텐츠 컨트롤을 사용 하 여 템플릿을 만드는](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)합니다.  
   
 ### <a name="build-block-gallery"></a>블록 갤러리를 빌드  
- 문서 블록 갤러리의 목록에서 선택할 수 있습니다 *문서 블록* 를 문서에 삽입 합니다. 문서 블록은 일반적인 표지, 서식이 지정된 표 또는 머리글과 같이 여러 번 사용하기 위해 생성된 콘텐츠입니다. 자세한 내용은 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 형식을 참조하세요. 구성 요소에 대 한 자세한 내용은 참조 하세요. [Word 2007에서 개발자를 위한 새로운](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84)합니다.  
+ 문서 블록 갤러리의 목록에서 선택할 수 있습니다 *문서 블록* 를 문서에 삽입 합니다. 문서 블록은 일반적인 표지, 서식이 지정된 표 또는 머리글과 같이 여러 번 사용하기 위해 생성된 콘텐츠입니다. 자세한 내용은 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 형식을 참조하세요. 구성 요소에 대 한 자세한 내용은 참조 하세요. [Word 2007에서 개발자를 위한 새로운](/previous-versions/office/developer/office-2007/bb266218(v=office.12))합니다.  
   
 ### <a name="check-box"></a>확인란  
  확인란은 이진 상태(선택됨 또는 선택 취소됨)를 나타내는 UI를 제공합니다.  

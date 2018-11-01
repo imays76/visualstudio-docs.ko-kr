@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675221"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744940"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office 솔루션에 대 한 응용 프로그램 매니페스트
   응용 프로그램 매니페스트는 Microsoft Office 솔루션에 로드된 어셈블리를 설명하는 XML 파일입니다. Visual Studio에서 Microsoft Office 개발 도구를 사용 합니다 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 에 정의 된 응용 프로그램 매니페스트 스키마를 [ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest) 참조 합니다.  
@@ -96,7 +96,7 @@ ms.locfileid: "35675221"
  Office 솔루션의 응용 프로그램 및 배포 매니페스트를 수동으로 편집할 수 있습니다. 그런 다음 응용 프로그램에 다시 서명 해야 하 고 매니페스트 생성 및 편집 도구를 사용 하 여 배포 매니페스트 (*mage.exe* 하 고 *mageui.exe*). 자세한 내용은 [방법: 응용 프로그램 및 배포 매니페스트 다시 서명](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests)합니다.  
   
 ## <a name="file-location"></a>파일 위치  
- 응용 프로그램 매니페스트는 솔루션의 단일 버전에 따라 다릅니다. 이러한 이유로 응용 프로그램 매니페스트를 배포 매니페스트와 분리하여 저장해야 합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 있는 관련된 버전 하위 디렉터리에는 버전별 파일을 저장 합니다 *응용 프로그램 파일* publish 폴더에 하위 디렉터리입니다.  
+ 응용 프로그램 매니페스트는 솔루션의 단일 버전에 따라 다릅니다. 이러한 이유로 응용 프로그램 매니페스트를 배포 매니페스트와 분리하여 저장해야 합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 는 버전별 파일을 게시 폴더의 *응용 프로그램 파일* 하위 디렉터리에 있는 관련 버전을 따라 명명된 하위 디렉터리에 배치합니다.  
   
 ## <a name="file-name-syntax"></a>파일 이름 구문  
  식별 한 대로 응용 프로그램 매니페스트 파일의 이름을 전체 이름 및 응용 프로그램의 확장을 이어야 합니다는 **assemblyIdentity** 요소 뒤에 확장명이 *.manifest*합니다. 예를 들어, 응용 프로그램 매니페스트를 참조 하는 *OutlookAddIn1.dll* 사용자 지정 다음 파일 이름 구문을 사용 합니다.  

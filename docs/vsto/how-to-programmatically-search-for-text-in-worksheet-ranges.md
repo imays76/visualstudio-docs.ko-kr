@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920081"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671965"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색
-  합니다 <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> 메서드는 <xref:Microsoft.Office.Interop.Excel.Range> 개체 범위 내에서 텍스트를 검색할 수 있습니다. 이 텍스트와 같은 워크시트 셀에 표시 될 수 있는 오류 문자열 중 하나 일 수도 있습니다 `#NULL!` 또는 `#VALUE!`합니다. 오류 문자열에 대 한 자세한 내용은 참조 하세요. [오류 값을 셀](http://msdn.microsoft.com/library/office/ff839168.aspx)합니다.  
+  합니다 <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> 메서드는 <xref:Microsoft.Office.Interop.Excel.Range> 개체 범위 내에서 텍스트를 검색할 수 있습니다. 이 텍스트와 같은 워크시트 셀에 표시 될 수 있는 오류 문자열 중 하나 일 수도 있습니다 `#NULL!` 또는 `#VALUE!`합니다. 오류 문자열에 대 한 자세한 내용은 참조 하세요. [오류 값을 셀](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)합니다.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   

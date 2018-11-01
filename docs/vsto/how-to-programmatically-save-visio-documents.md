@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3d763209d60440066df758b6c1eca087dea9b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9f065a32fc26d372b97a31eb70836451b31fa00
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906678"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670730"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>방법: 프로그래밍 방식으로 Visio 문서 저장
   여러 가지 방법을 사용하여 Microsoft Office Visio 문서를 저장할 수 있습니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "49906678"
   
 - 지정된 인수와 함께 문서를 저장합니다.  
   
-  자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) 메서드, [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) 메서드 및 [Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) 메서드를 참조하세요.  
+  자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Document.Save](/office/vba/api/Visio.Document.Save) 메서드, [Microsoft.Office.Interop.Visio.Document.SaveAs](/office/vba/api/Visio.Document.SaveAs) 메서드 및 [Microsoft.Office.Interop.Visio.Document.SaveAsEx](/office/vba/api/Visio.Document.SaveAsEx) 메서드를 참조하세요.  
   
 ## <a name="save-an-existing-document"></a>기존 문서 저장  
   

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53a54c0d3ead9670f745258260461c86849cf0b9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a07545fb9a7ddb2fc70ba5053ad131d2e214636
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674753"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671315"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>방법: Office 솔루션을 개발 하도록 컴퓨터를 구성 합니다.
   Visual Studio의 Microsoft Office 개발자 도구를 사용할 수 있도록 개발 컴퓨터를 구성하려면 이 항목의 지침을 따릅니다. 이러한 단계를 수행하려면 개발 컴퓨터에 대한 관리자 권한이 있어야 합니다.  
@@ -37,7 +37,7 @@ ms.locfileid: "35674753"
 3.  영어 버전의 Visual Studio를 갖지만 Windows 영어 이외의 설정을 사용 하는 경우 설치할 수 있습니다 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 보려는 언어 팩 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Windows와 동일한 언어로 메시지입니다. 영어가 아닌 버전의 Visual Studio에서는 해당 언어 팩을 자동으로 설치합니다. 사용 가능한 언어 팩은는 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=140386)합니다.  
   
 ## <a name="see-also"></a>참고자료  
- [Office 개발의 새로운 기능](http://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
+ [Office 개발의 새로운 기능](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
  [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [방법: 설치 Office 주 interop 어셈블리](../vsto/how-to-install-office-primary-interop-assemblies.md)  

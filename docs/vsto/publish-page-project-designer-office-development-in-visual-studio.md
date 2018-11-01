@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e945dbafbf7107b616a654d952bd8690bf72788a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4d315a00f527953500b47095ee4080b4eafd4cc
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904715"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672719"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>게시 페이지, 프로젝트 디자이너 (Visual Studio에서 Office 개발)
   **프로젝트 디자이너** 의 **게시** 페이지를 통해 배포를 위한 속성을 구성합니다.  
@@ -32,7 +32,7 @@ ms.locfileid: "49904715"
  이 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트를 선택한 다음 **프로젝트** 메뉴에서 *Projectname* **속성**을 선택합니다. **게시** 페이지가 표시되지 않으면 **게시** 탭을 선택합니다.  
   
 > [!NOTE]  
->  게시 위치를 **게시 마법사**에서 설정할 수도 있습니다. 자세한 내용은 [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)합니다.  
+>  게시 위치를 **게시 마법사**에서 설정할 수도 있습니다. 자세한 내용은 [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)합니다.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  
  **폴더 위치 게시(웹 사이트, ftp 서버 또는 파일 경로)**  
@@ -55,7 +55,7 @@ ms.locfileid: "49904715"
   
  설치 파일이 CD 옵션 사용과 같이 문서 또는 설치 프로그램의 상대적인 위치에 있는 경우 이 상자를 비워 둡니다.  
   
- 이 값은 관리자가 나중에 할당할 수 있습니다. 자세한 내용은 [방법: Office 솔루션의 설치 경로 변경](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)합니다.  
+ 이 값은 관리자가 나중에 할당할 수 있습니다. 자세한 내용은 [방법: Office 솔루션의 설치 경로 변경](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)합니다.  
   
  **필수 구성 요소**  
  필수 조건은 설치 프로그램에 포함되거나 설치하는 동안 필요에 따라 다운로드할 수 있습니다.  
@@ -113,6 +113,6 @@ ms.locfileid: "49904715"
 ## <a name="see-also"></a>참고자료  
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
  [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Office 솔루션 배포 필수 조건](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Office 솔루션 배포 필수 조건](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

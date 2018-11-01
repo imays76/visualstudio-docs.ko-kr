@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3933400c1cf8ecd27c1c2f1a9bb0328dfa80d1e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 25a306300b1f5bf477a5435be58aca71ba5d70de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674399"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671289"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>보안 및 배포 연습
   다음 항목에는 Office 솔루션을 배포 하는 방법 및 솔루션 실행을 허용 하도록 보안 정책을 설정 하는 방법을 보여 줍니다.  
@@ -36,25 +36,25 @@ ms.locfileid: "35674399"
  구성 하는 방법에 설명 합니다 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 컨트롤에 최종 사용자에 게 Office 솔루션을 설치 하는 옵션이 제공 됩니다 여부.  
   
 ## <a name="deployment-topics"></a>배포 항목  
- [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
+ [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
  사용 하는 방법에 대 한 정보를 제공 합니다 **게시 마법사** 또는 **게시** Office 솔루션을 게시 하려면 프로젝트 디자이너의 페이지입니다.  
   
- [방법: ClickOnce를 사용 하 여 SharePoint 서버에 문서 수준 Office 솔루션 게시](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
+ [방법: ClickOnce를 사용 하 여 SharePoint 서버에 문서 수준 Office 솔루션 게시](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
  SharePoint 서버에 배포 하는 단계를 설명 합니다.  
   
- [방법: ClickOnce Office 솔루션 설치](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
+ [방법: ClickOnce Office 솔루션 설치](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
  게시 프로세스를 하는 동안 생성 되는 설치 프로그램을 실행 하 여 Office 솔루션을 설치 하는 방법에 대해 설명 배포 매니페스트 파일 열기 또는 사용자 지정된 문서 또는 통합 문서를 엽니다.  
   
- [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에 필수 구성 요소 설치](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
+ [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에 필수 구성 요소 설치](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
  솔루션 구성 요소를 설치 하기 전에 필수 구성 요소를 검사 하는 설치 프로그램을 만들 수는 방법을 설명 합니다.  
   
- [방법: Office 솔루션 배포를 위해 IIS 준비](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
+ [방법: Office 솔루션 배포를 위해 IIS 준비](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
  배포 매니페스트에 대 한 MIME 형식을 Microsoft 인터넷 정보 서비스 (IIS)를 구성 하는 방법을 설명 합니다.  
   
- [방법: 업데이트에는 Office 솔루션 배포](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
+ [방법: 업데이트에는 Office 솔루션 배포](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
  사용 하 여 Office 솔루션을 업데이트 하는 방법에 대 한 정보를 제공 합니다 **게시 마법사**합니다.  
   
- [방법: Office 솔루션의 설치 경로 변경](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
+ [방법: Office 솔루션의 설치 경로 변경](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
  Office 솔루션의 설치 경로 변경 하는 방법에 대 한 정보를 제공 합니다.  
   
 ## <a name="related-sections"></a>관련 단원  

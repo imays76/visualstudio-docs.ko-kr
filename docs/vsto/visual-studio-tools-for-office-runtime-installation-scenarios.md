@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670899"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office 런타임 설치 시나리오
   Visual Studio 2010 Tools for Office 런타임 세 가지 방법으로 설치할 수 있습니다.  
@@ -60,14 +60,14 @@ ms.locfileid: "49857850"
   
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]용 Office 확장은 Office와 함께 설치됩니다. 최종 사용자는 Windows 업데이트를 설치하여 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]용 Office 확장을 가져올 수 있습니다.  
   
- 사용자가 응용 프로그램을 사용 하는 데 필요한 확장을 위해 Visual Studio 2010 Tools for Office 런타임에서 솔루션에 대 한 필수 조건으로 재배포 가능 패키지의 최신 버전을 포함 합니다. 필수 구성 요소에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 배포 필수 조건](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)합니다.  
+ 사용자가 응용 프로그램을 사용 하는 데 필요한 확장을 위해 Visual Studio 2010 Tools for Office 런타임에서 솔루션에 대 한 필수 조건으로 재배포 가능 패키지의 최신 버전을 포함 합니다. 필수 구성 요소에 대 한 자세한 내용은 참조 하세요. [Office 솔루션 배포 필수 조건](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)합니다.  
   
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>재배포 가능한 런타임을 사용 하 여 런타임을 설치합니다  
  Visual Studio 2010 Tools for Office 런타임 재배포 가능 패키지를 수동으로 실행 하거나 Office 솔루션을 배포할 때 재배포 가능 필수 구성 요소로 포함 하 여 런타임을 설치할 수 있습니다.  
   
  Visual Studio 2010 Tools for Office runtime 재배포 가능 패키지,.NET Framework 3.5 용 Office 확장명과 용 Office 확장 사용 하 여 런타임을 설치할 때의 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 경우 나중에 설치 되어 해당 버전의.NET 프레임 워크는 컴퓨터에 이미 있습니다. 런타임이 설치될 때 컴퓨터에 이러한 .NET Framework 버전 중 하나가 없는 경우 없는 .NET Framework 버전용 Office 확장이 해당 시점에 설치되지 않습니다. 나중에 없는 .NET Framework 버전을 설치하는 경우 다음번에 해당 Office 확장을 필요로 하는 솔루션이 설치되거나(런타임이 ClickOnce를 사용하여 배포된 솔루션과 함께 설치된 경우) 로드될 때(런타임이 Windows Installer를 사용하여 배포된 솔루션과 함께 설치된 경우) 런타임은 해당 Office 확장을 자동으로 설치합니다.  
   
- ClickOnce 솔루션에 필수 구성 요소를 포함 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에 필수 구성 요소 설치](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)합니다. 재배포 가능 패키지에서 런타임을 수동으로 설치 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)합니다.  
+ ClickOnce 솔루션에 필수 구성 요소를 포함 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Office 솔루션을 실행 하려면 최종 사용자 컴퓨터에 필수 구성 요소 설치](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)합니다. 재배포 가능 패키지에서 런타임을 수동으로 설치 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)합니다.  
   
 ## <a name="see-also"></a>참고자료  
  [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

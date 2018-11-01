@@ -18,11 +18,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: 86426e9741e38fb2cbd782659878562e395a2cf1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675539"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744849"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio에서 Office 솔루션의 아키텍처
   이 섹션의 항목에서는 Visual Studio에서 Office 개발자 도구를 사용하여 만든 솔루션의 작동 방식에 대한 정보를 제공합니다.  

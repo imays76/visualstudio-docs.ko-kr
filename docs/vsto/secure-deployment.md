@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 852e66bb4e29e732093cdac6b44c6791ad9b772d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865728"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671082"
 ---
 # <a name="secure-deployment"></a>안전한 배포
   Office 솔루션을 만들 때 개발 컴퓨터를 실행 하도록 프로젝트에서 코드를 허용 하도록 자동으로 업데이트 됩니다. 그러나 솔루션을 배포할 때 인증서를 사용 하 여 솔루션을 서명 하거나 사용 하 여 신뢰 결정의 기준이 되는 증명 정보 제공 해야 합니다는 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 신뢰 프롬프트 키입니다. 자세한 내용은 [Office 솔루션에 신뢰를 부여](../vsto/granting-trust-to-office-solutions.md)합니다.  
@@ -49,7 +49,7 @@ ms.locfileid: "49865728"
   
 ## <a name="see-also"></a>참고자료  
  [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)   
- [실행 하거나 Office 솔루션을 호스트 하는 컴퓨터 준비](http://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
+ [실행 하거나 Office 솔루션을 호스트 하는 컴퓨터 준비](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [Office 솔루션 보안](../vsto/securing-office-solutions.md)  
   
   

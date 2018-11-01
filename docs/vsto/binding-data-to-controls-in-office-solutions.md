@@ -22,11 +22,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: f329680d4e469d5009c8659e7a2047c87f906105
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674722"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744873"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Office 솔루션의 컨트롤에 데이터 바인딩
   컨트롤이 자동으로 데이터를 표시할 수 있도록 Windows Forms 컨트롤 및 Microsoft Office Word 문서 또는 Microsoft Office Excel 워크시트의 *호스트 컨트롤* 을 데이터 원본에 바인딩할 수 있습니다. 응용 프로그램 수준과 문서 수준 프로젝트 둘 다 데이터를 컨트롤에 바인딩할 수 있습니다.  
@@ -42,7 +42,7 @@ ms.locfileid: "35674722"
 ## <a name="simple-data-binding"></a>단순 데이터 바인딩  
  단순 데이터 바인딩은 컨트롤 속성이 데이터 테이블의 값 등 단일 데이터 요소에 바인딩될 때 존재합니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 데이터 집합의 필드로 바인딩될 수 있는 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성을 가집니다. 데이터 집합의 필드가 변경되면 명명된 범위의 값도 변경됩니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤을 제외한 모든 호스트 컨트롤은 단일 데이터 바인딩을 지원합니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤은 컬렉션이므로 데이터 바인딩을 지원하지 않습니다.  
   
- 호스트 컨트롤에 대 한 단순 데이터 바인딩을 수행 하려면 추가 <xref:System.Windows.Forms.Binding> 에 `DataBindings` 컨트롤의 속성입니다. <xref:System.Windows.Forms.Binding> 개체는 컨트롤의 속성 값과 데이터 요소 값 사이의 단순 바인딩을 나타냅니다.  
+ 호스트 컨트롤에 대한 단순 데이터 바인딩을 수행하려면 <xref:System.Windows.Forms.Binding>을 해당 컨트롤의 `DataBindings` 속성에 추가합니다. <xref:System.Windows.Forms.Binding> 개체는 컨트롤의 속성 값과 데이터 요소 값 사이의 단순 바인딩을 나타냅니다.  
   
  다음 예제에서는 문서 수준 프로젝트에서 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성을 데이터 요소에 바인딩하는 방법에 대해 설명합니다.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "35674722"
 ## <a name="complex-data-binding"></a>복합 데이터 바인딩  
  복합 데이터 바인딩은 컨트롤 속성이 데이터 테이블의 여러 열과 같이 둘 이상의 데이터 요소에 바인딩될 때 존재합니다. Excel용 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤은 복합 데이터 바인딩을 지원하는 유일한 호스트 컨트롤입니다. 또한 <xref:System.Windows.Forms.DataGridView> 컨트롤 같이 복합 데이터 바인딩을 지원하는 많은 Windows Forms 컨트롤이 있을 수 있습니다.  
   
- 복합 데이터 바인딩을 수행 하려면 설정의 `DataSource` 복합 데이터 바인딩에서 지원 되는 데이터 원본 개체를 컨트롤의 속성입니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 컨트롤의 <xref:Microsoft.Office.Tools.Excel.ListObject> 속성은 데이터 테이블의 여러 열에 바인딩될 수 있습니다. 데이터 테이블의 모든 데이터는 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤에 나타나며 데이터 테이블의 데이터가 변경되면 <xref:Microsoft.Office.Tools.Excel.ListObject> 역시 변경됩니다. 복합 데이터 바인딩에 사용할 수 있는 데이터 원본의 목록을 보려면 참조 [Windows Forms에서 지 원하는 데이터 원본](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)합니다.  
+ 복합 데이터 바인딩을 수행하려면 컨트롤의 `DataSource` 속성을 복합 데이터 바인딩에서 지원되는 데이터 원본 개체로 설정합니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤의 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 속성은 데이터 테이블의 여러 열에 바인딩될 수 있습니다. 데이터 테이블의 모든 데이터는 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤에 나타나며 데이터 테이블의 데이터가 변경되면 <xref:Microsoft.Office.Tools.Excel.ListObject> 역시 변경됩니다. 복합 데이터 바인딩에 사용할 수 있는 데이터 원본의 목록을 보려면 참조 [Windows Forms에서 지 원하는 데이터 원본](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)합니다.  
   
  다음 코드 예제는 두 개의 <xref:System.Data.DataSet> 개체를 사용하여 <xref:System.Data.DataTable> 를 만들고 테이블 중 하나를 데이터로 채웁니다. 그런 다음 코드가 <xref:Microsoft.Office.Tools.Excel.ListObject> 를 데이터가 포함된 테이블에 바인딩합니다. 이 예제는 Excel 문서 수준 프로젝트에 대한 것입니다.  
   

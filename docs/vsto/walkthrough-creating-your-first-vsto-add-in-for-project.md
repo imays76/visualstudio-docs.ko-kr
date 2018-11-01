@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884864"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671419"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>연습: 첫 번째에 VSTO 추가 기능 프로젝트 만들기
   이 연습에서는 Microsoft Office Project 용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프로젝트에 관계없이 응용 프로그램 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)합니다.  
@@ -103,7 +103,7 @@ ms.locfileid: "49884864"
   
 1.  **F5** 키를 눌러 프로젝트를 빌드하고 실행합니다. Microsoft Project가 시작되고 새 빈 프로젝트가 자동으로 열립니다.  
   
-     프로젝트를 빌드하면 코드가 프로젝트의 빌드 출력 폴더에 포함된 어셈블리로 컴파일됩니다. 또한 Visual Studio에서는 Project에서 VSTO 추가 기능을 검색하고 로드할 수 있도록 하는 레지스트리 항목 집합을 만들고 VSTO 추가 기능이 실행될 수 있도록 개발 컴퓨터에서 보안 설정을 구성합니다. 자세한 내용은 [Office 솔루션 빌드 프로세스 개요](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee)합니다.  
+     프로젝트를 빌드하면 코드가 프로젝트의 빌드 출력 폴더에 포함된 어셈블리로 컴파일됩니다. 또한 Visual Studio에서는 Project에서 VSTO 추가 기능을 검색하고 로드할 수 있도록 하는 레지스트리 항목 집합을 만들고 VSTO 추가 기능이 실행될 수 있도록 개발 컴퓨터에서 보안 설정을 구성합니다. 자세한 내용은 [Office 솔루션 빌드 프로세스 개요](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100))합니다.  
   
 2.  새 작업이 빈 프로젝트에 추가되었는지 확인합니다.  
   

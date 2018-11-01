@@ -24,7 +24,7 @@ ms.locfileid: "34335709"
 
 ## <a name="cursor-position"></a>커서 위치
 
-키워드 또는 API 이름에 대한 F1 도움말을 찾고 있는 경우 **F1** 키를 누르기 전에 커서가 단어 내부 또는 바로 오른쪽에 있어야 합니다. 작동하지 않는 경우 [유용한 링크](#useful-links) 목록 중에 선택하거나 https://docs.microsoft.com에서 검색합니다.
+키워드 또는 API 이름에 대한 F1 도움말을 찾고 있는 경우 **F1** 키를 누르기 전에 커서가 단어 내부 또는 바로 오른쪽에 있어야 합니다. 작동하지 않는 경우 [유용한 링크](#useful-links) 목록 중에 선택하거나 https://docs.microsoft.com 에서 검색합니다.
 
 ## <a name="useful-links"></a>유용한 링크
 

@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio 설명서 | Microsoft Docs
 description: Visual Studio 2017을 사용하여 플랫폼 및 장치에 대해 선택한 언어로 응용 프로그램, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
 ms.topic: hub-page
-ms.openlocfilehash: b7816ba239b0624aaf46792bcb0c62aefa4809c4
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: b16114bd175be4c8e13c0418494c730ed58b9d12
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244361"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672871"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -685,7 +685,7 @@ ASP.NET Core를 사용한 웹앱</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833086">
+                                <a href="/visualstudio/azure">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
