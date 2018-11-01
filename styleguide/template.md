@@ -330,7 +330,7 @@ docs.microsoft는 GitHub Flavored Markdown에 대해 몇 가지 추가 확장을
 > [!div class="button"]
 [단추 링크](../docs/core/index.md)
 
-[Intune 문서](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices)에서 작동 중인 단추의 예를 확인할 수 있습니다. 
+[Intune 문서](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices)에서 작동 중인 단추의 예를 확인할 수 있습니다. 
 
 ### <a name="selectors"></a>선택기
 
@@ -338,7 +338,7 @@ docs.microsoft는 GitHub Flavored Markdown에 대해 몇 가지 추가 확장을
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
-[Intune 문서](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps)에서 작동 중인 선택기의 예를 확인할 수 있습니다.
+[Intune 문서](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps)에서 작동 중인 선택기의 예를 확인할 수 있습니다.
 
 ### <a name="step-by-steps"></a>단계별 작업
 
@@ -346,4 +346,4 @@ docs.microsoft는 GitHub Flavored Markdown에 대해 몇 가지 추가 확장을
 [이전](../docs/csharp/expression-trees-interpreting.md)
 [다음](../docs/csharp/expression-trees-translating.md)
 
-[Advanced Threat Analytics 문서](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2)에서 작동 중인 단계별 작업의 예를 확인할 수 있습니다.
+[Advanced Threat Analytics 문서](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2)에서 작동 중인 단계별 작업의 예를 확인할 수 있습니다.
